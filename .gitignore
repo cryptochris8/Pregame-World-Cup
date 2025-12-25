@@ -1,0 +1,33 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+*.iml
+.idea/
+*.log
+
+# Platform-specific
+*.jks
+*.keystore
+local.properties
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment/secrets (keep these out of git)
+.env
+.env.*
+*.env
+
+# Node modules (for Firebase functions)
+node_modules/
+
+# Misc
+nul
+*.bak

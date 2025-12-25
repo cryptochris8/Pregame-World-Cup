@@ -1,0 +1,186 @@
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'master'
+          include: true
+          source: true
+    integrations:
+      app_store_connect: Pregame
+    environment:
+      ios_signing:
+        provisioning_profiles:
+          - pregame_app_store_profile
+        certificates:
+          - Pregame-iOS-Distribution
+      groups:
+        - apple_developer
+      vars:
+        BUNDLE_ID: "com.christophercampbell.pregame"
+        XCODE_WORKSPACE: "Runner.xcworkspace"
+        XCODE_SCHEME: "Runner"
+      flutter: stable
+      cocoapods: default
+    scripts:
+      - name: Test Environment Variables
+        script: |
+          echo "🧪 Testing Environment Variables..."
+          echo "----------------------------------------"
+          echo "GOOGLE_PLACES_API_KEY: ${GOOGLE_PLACES_API_KEY:0:15}..."
+          echo "OPENAI_API_KEY: ${OPENAI_API_KEY:0:15}..."
+          echo "CLAUDE_API_KEY: ${CLAUDE_API_KEY:0:15}..."
+          echo "STRIPE_PUBLISHABLE_KEY: ${STRIPE_PUBLISHABLE_KEY:0:15}..."
+          echo "BUNDLE_ID: $BUNDLE_ID"
+          echo "----------------------------------------"
+          if [ -z "$GOOGLE_PLACES_API_KEY" ]; then
+              echo "❌ GOOGLE_PLACES_API_KEY is missing!"
+              exit 1
+          else
+              echo "✅ GOOGLE_PLACES_API_KEY is loaded"
+          fi
+          if [ -z "$OPENAI_API_KEY" ]; then
+              echo "❌ OPENAI_API_KEY is missing!"
+              exit 1
+          else
+              echo "✅ OPENAI_API_KEY is loaded"
+          fi
+          if [ -z "$CLAUDE_API_KEY" ]; then
+              echo "❌ CLAUDE_API_KEY is missing!"
+              exit 1
+          else
+              echo "✅ CLAUDE_API_KEY is loaded"
+          fi
+          if [ -z "$STRIPE_PUBLISHABLE_KEY" ]; then
+              echo "❌ STRIPE_PUBLISHABLE_KEY is missing!"
+              exit 1
+          else
+              echo "✅ STRIPE_PUBLISHABLE_KEY is loaded"
+          fi
+          echo "🎉 All environment variables are loaded correctly!"
+          
+      - name: Set up local.properties
+        script: |
+          echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
+          
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+          
+      - name: Clean build directory
+        script: |
+          flutter clean
+          cd ios && pod deintegrate && cd ..
+          
+      - name: Install pods
+        script: |
+          find . -name "Podfile" -execdir pod install --verbose \;
+          
+      - name: Set up code signing settings on Xcode project
+        script: |
+          xcode-project use-profiles
+          
+      - name: Flutter build ipa
+        script: |
+          flutter build ipa --release \
+            --build-name=1.0.$BUILD_NUMBER \
+            --build-number=$BUILD_NUMBER \
+            --dart-define=ENVIRONMENT=production \
+            --dart-define=SPORTSDATA_API_KEY=6e3df81431824100c937f360f16251267 \
+            --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
+            --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
+            --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
+            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net \
+            --export-options-plist=/Users/builder/export_options.plist
+            
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - flutter_drive.log
+      
+    publishing:
+      email:
+        recipients:
+          - chriscam8@gmail.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        # Explicitly disable App Store submission
+        submit_to_app_store: false
+
+  android-workflow:
+    name: Android Workflow
+    max_build_duration: 120
+    instance_type: linux_x2
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'master'
+          include: true
+          source: true
+    environment:
+      android_signing:
+        - keystore_reference
+      groups:
+        - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS)
+      vars:
+        PACKAGE_NAME: "com.christophercampbell.pregame"
+      flutter: stable
+    scripts:
+      - name: Set up local.properties
+        script: |
+          echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
+          
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+          
+      - name: Build APK with Flutter
+        script: |
+          flutter build apk --release \
+            --build-name=1.0.$BUILD_NUMBER \
+            --build-number=$BUILD_NUMBER \
+            --dart-define=ENVIRONMENT=production \
+            --dart-define=SPORTSDATA_API_KEY=6e3df81431824100c937f360f16251267 \
+            --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
+            --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
+            --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
+            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
+            
+      - name: Build App Bundle for Google Play
+        script: |
+          flutter build appbundle --release \
+            --build-name=1.0.$BUILD_NUMBER \
+            --build-number=$BUILD_NUMBER \
+            --dart-define=ENVIRONMENT=production \
+            --dart-define=SPORTSDATA_API_KEY=6e3df81431824100c937f360f16251267 \
+            --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
+            --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
+            --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
+            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
+            
+    artifacts:
+      - build/app/outputs/**/*.apk
+      - build/app/outputs/**/*.aab
+      - build/app/outputs/**/mapping.txt
+      - flutter_drive.log
+      
+    publishing:
+      email:
+        recipients:
+          - chriscam8@gmail.com
+        notify:
+          success: true
+          failure: true
+      google_play:
+        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal
+        submit_as_draft: true

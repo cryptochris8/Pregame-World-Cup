@@ -1,0 +1,157 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../social/domain/entities/user_profile.dart';
+import '../../../social/domain/services/social_service.dart';
+import '../../../../core/services/logging_service.dart';
+
+class AuthService {
+  final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final SocialService _socialService = SocialService();
+
+  // Stream to listen to authentication state changes
+  Stream<User?> get authStateChanges => _firebaseAuth.authStateChanges();
+
+  // Get current user
+  User? get currentUser => _firebaseAuth.currentUser;
+
+  // Sign up with email and password
+  Future<UserCredential?> signUpWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      
+      // Create user profile after successful signup
+      if (userCredential.user != null) {
+        await _createUserProfile(userCredential.user!);
+      }
+      
+      return userCredential;
+    } on FirebaseAuthException catch (e) {
+      // Consider mapping e.code to user-friendly messages
+      LoggingService.error('FirebaseAuthException on sign up: ${e.message}', tag: 'AuthService');
+      throw Exception(e.message); // Rethrow or handle more gracefully
+    } catch (e) {
+      LoggingService.error('Unexpected error on sign up: $e', tag: 'AuthService');
+      throw Exception('An unexpected error occurred during sign up.');
+    }
+  }
+
+  // Sign in with email and password
+  Future<UserCredential?> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      return await _firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+    } on FirebaseAuthException catch (e) {
+      LoggingService.error('FirebaseAuthException on sign in: ${e.message}', tag: 'AuthService');
+      throw Exception(e.message);
+    } catch (e) {
+      LoggingService.error('Unexpected error on sign in: $e', tag: 'AuthService');
+      throw Exception('An unexpected error occurred during sign in.');
+    }
+  }
+
+  // Sign out
+  Future<void> signOut() async {
+    try {
+      await _firebaseAuth.signOut();
+    } catch (e) {
+      LoggingService.error('Error signing out: $e', tag: 'AuthService');
+      // Optionally handle error more gracefully
+    }
+  }
+
+  // Development helper: Create or sign in test user
+  Future<UserCredential?> createOrSignInTestUser() async {
+    const testEmail = 'test@pregame.dev';
+    const testPassword = 'testuser123';
+    
+    try {
+      // Try to sign in first
+      return await signInWithEmailAndPassword(
+        email: testEmail,
+        password: testPassword,
+      );
+    } catch (e) {
+      // If sign in fails, try to create the user
+      try {
+        LoggingService.info('Creating test user for development', tag: 'AuthService');
+        return await signUpWithEmailAndPassword(
+          email: testEmail,
+          password: testPassword,
+        );
+      } catch (createError) {
+        LoggingService.error('Failed to create test user: $createError', tag: 'AuthService');
+        rethrow;
+      }
+    }
+  }
+
+  // Get user's favorite teams
+  Future<List<String>> getFavoriteTeams(String userId) async {
+    try {
+      final docSnapshot = await _firestore.collection('userFavorites').doc(userId).get();
+      if (docSnapshot.exists && docSnapshot.data() != null) {
+        final data = docSnapshot.data()!;
+        // Ensure 'favoriteTeamNames' exists and is a list of strings
+        if (data.containsKey('favoriteTeamNames') && data['favoriteTeamNames'] is List) {
+          return List<String>.from(data['favoriteTeamNames']);
+        }
+      }
+      return []; // Return empty list if no document or no valid field
+    } catch (e) {
+      LoggingService.error('Error fetching favorite teams: $e', tag: 'AuthService');
+      throw Exception('Could not fetch favorite teams.');
+    }
+  }
+
+  // Update user's favorite teams
+  Future<void> updateFavoriteTeams(String userId, List<String> teamNames) async {
+    try {
+      await _firestore.collection('userFavorites').doc(userId).set({
+        'favoriteTeamNames': teamNames,
+        'lastUpdated': FieldValue.serverTimestamp(), // Optional: track last update
+      }, SetOptions(merge: true)); // Use merge to avoid overwriting other potential fields
+    } catch (e) {
+      LoggingService.error('Error updating favorite teams: $e', tag: 'AuthService');
+      throw Exception('Could not update favorite teams.');
+    }
+  }
+
+  // Create user profile for new users
+  Future<void> _createUserProfile(User user) async {
+    try {
+      await _socialService.initialize();
+      
+      // Check if profile already exists
+      final existingProfile = await _socialService.getUserProfile(user.uid);
+      if (existingProfile != null) {
+        return; // Profile already exists
+      }
+      
+      // Create new user profile
+      final userProfile = UserProfile.create(
+        userId: user.uid,
+        displayName: user.displayName ?? 'Anonymous User',
+        email: user.email,
+        favoriteTeams: const [],
+      );
+      
+      await _socialService.saveUserProfile(userProfile);
+      LoggingService.info('User profile created for ${user.uid}', tag: 'AuthService');
+    } catch (e) {
+      LoggingService.error('Error creating user profile: $e', tag: 'AuthService');
+      // Don't throw error here to avoid blocking signup
+    }
+  }
+} 

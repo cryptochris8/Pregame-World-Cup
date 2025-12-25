@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Pregame WC26</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Pregame WC26</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	
+	<!-- Location Services -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for FIFA World Cup 2026.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for FIFA World Cup 2026.</string>
+	
+	<!-- Camera and Photo Library -->
+	<key>NSCameraUsageDescription</key>
+	<string>Pregame World Cup needs camera access to let you share photos from World Cup matches and fan zones.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Pregame World Cup needs photo library access to let you share photos from World Cup matches and fan zones.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Pregame World Cup needs photo library access to save photos from World Cup matches and fan zones.</string>
+	
+	<!-- Microphone for voice messages -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Pregame World Cup needs microphone access to record voice messages for your fellow fans.</string>
+	
+	<!-- Network Usage -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>collegefootballdata.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.0</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<!-- Background Modes -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	
+	<!-- Firebase URL Schemes -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<key>CFBundleURLName</key>
+		<string>REVERSED_CLIENT_ID</string>
+		<key>CFBundleURLSchemes</key>
+		<array>
+			<string>com.googleusercontent.apps.942034010384-c3264211ef6ee5a799a595</string>
+		</array>
+	</array>
+	
+	<!-- Minimum iOS Version -->
+	<key>MinimumOSVersion</key>
+	<string>12.0</string>
+</dict>
+</plist>

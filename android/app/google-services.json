@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "942034010384",
+    "project_id": "pregame-b089e",
+    "storage_bucket": "pregame-b089e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942034010384:android:3993b21444e45b1399a595",
+        "android_client_info": {
+          "package_name": "com.christophercampbell.pregame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJekX1uke82tjvL27uTvWUdirs_DQviWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

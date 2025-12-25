@@ -1,0 +1,432 @@
+import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import '../../domain/entities/activity_feed.dart';
+import '../../domain/services/activity_feed_service.dart';
+import '../widgets/activity_feed_item_widget.dart';
+import '../widgets/create_activity_bottom_sheet.dart';
+import '../../../../config/app_theme.dart';
+import '../../../../core/animations/animated_button.dart';
+import '../../../../core/utils/team_logo_helper.dart';
+
+class ActivityFeedScreen extends StatefulWidget {
+  const ActivityFeedScreen({super.key});
+
+  @override
+  State<ActivityFeedScreen> createState() => _ActivityFeedScreenState();
+}
+
+class _ActivityFeedScreenState extends State<ActivityFeedScreen>
+    with SingleTickerProviderStateMixin {
+  final ActivityFeedService _activityService = ActivityFeedService();
+  
+  List<ActivityFeedItem> _activities = [];
+  bool _isLoading = true;
+  bool _isRefreshing = false;
+  late TabController _tabController;
+  
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 2, vsync: this);
+    _initializeAndLoadFeed();
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _initializeAndLoadFeed() async {
+    try {
+      print('🔄 Initializing ActivityFeedService...');
+      await _activityService.initialize();
+      print('✅ ActivityFeedService initialized');
+      
+      await _loadActivityFeed();
+    } catch (e) {
+      print('❌ Error initializing activity feed: $e');
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  Future<void> _loadActivityFeed() async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) {
+      print('❌ No current user found');
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+      return;
+    }
+    
+    print('🔄 Loading activity feed for user: ${currentUser.uid}');
+    if (mounted) {
+      setState(() => _isLoading = true);
+    }
+    
+    try {
+      final activities = await _activityService.getActivityFeed(currentUser.uid);
+      print('✅ Loaded ${activities.length} activities');
+      
+      if (mounted) {
+        setState(() {
+          _activities = activities;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      print('❌ Error loading activity feed: $e');
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  Future<void> _refreshFeed() async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) {
+      print('❌ No current user found for refresh');
+      return;
+    }
+    
+    print('🔄 Refreshing activity feed...');
+    if (mounted) {
+      setState(() => _isRefreshing = true);
+    }
+    
+    try {
+      final activities = await _activityService.getActivityFeed(currentUser.uid);
+      print('✅ Refreshed ${activities.length} activities');
+      
+      if (mounted) {
+        setState(() {
+          _activities = activities;
+          _isRefreshing = false;
+        });
+      }
+    } catch (e) {
+      print('❌ Error refreshing feed: $e');
+      if (mounted) {
+        setState(() => _isRefreshing = false);
+      }
+    }
+  }
+
+  Future<void> _loadUserActivities() async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) {
+      print('❌ No current user found for user activities');
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+      return;
+    }
+    
+    print('🔄 Loading user activities...');
+    if (mounted) {
+      setState(() => _isLoading = true);
+    }
+    
+    try {
+      final activities = await _activityService.getUserActivities(currentUser.uid);
+      print('✅ Loaded ${activities.length} user activities');
+      
+      if (mounted) {
+        setState(() {
+          _activities = activities;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      print('❌ Error loading user activities: $e');
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  void _showCreateActivityBottomSheet() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => CreateActivityBottomSheet(
+        onActivityCreated: (activity) {
+          _activityService.createActivity(activity);
+          _refreshFeed();
+        },
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: Row(
+          children: [
+            TeamLogoHelper.getPregameLogo(height: 32),
+            const SizedBox(width: 8),
+            const Text(
+              'Activity Feed',
+              style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                fontSize: 20,
+                color: Colors.white,
+                    letterSpacing: -0.5,
+              ),
+            ),
+          ],
+        ),
+            backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.white),
+        bottom: TabBar(
+          controller: _tabController,
+              indicatorColor: Colors.white,
+          indicatorWeight: 3,
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.white70,
+          labelStyle: const TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 16,
+          ),
+          onTap: (index) {
+            if (index == 0) {
+              _loadActivityFeed();
+            } else {
+              _loadUserActivities();
+            }
+          },
+          tabs: const [
+            Tab(text: 'Feed'),
+            Tab(text: 'Your Posts'),
+          ],
+        ),
+      ),
+      body: _buildBody(),
+          floatingActionButton: Container(
+            decoration: AppTheme.buttonGradientDecoration,
+            child: FloatingActionButton(
+        heroTag: "activity_feed_fab",
+        onPressed: _showCreateActivityBottomSheet,
+              backgroundColor: Colors.transparent,
+        foregroundColor: Colors.white,
+              elevation: 0,
+        child: const Icon(Icons.add, size: 28),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBody() {
+    if (_isLoading) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
+              strokeWidth: 3,
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Loading activities...',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white70,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    if (_activities.isEmpty) {
+      return _buildEmptyState();
+    }
+
+    return RefreshIndicator(
+      onRefresh: _refreshFeed,
+      color: AppTheme.primaryOrange,
+      backgroundColor: AppTheme.backgroundCard,
+      strokeWidth: 3,
+      child: TabBarView(
+        controller: _tabController,
+        children: [
+          _buildActivityList(),
+          _buildActivityList(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActivityList() {
+    return ListView.builder(
+      padding: const EdgeInsets.all(16),
+      itemCount: _activities.length,
+      itemBuilder: (context, index) {
+        final activity = _activities[index];
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 16),
+          child: ActivityFeedItemWidget(
+            activity: activity,
+            onLike: (activityId) => _handleLike(activityId, activity),
+            onComment: (activityId, comment) => _handleComment(activityId, comment, activity),
+            onShare: (activity) => _handleShare(activity),
+            onUserPressed: (userId) => _navigateToProfile(userId),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildEmptyState() {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            Icons.dynamic_feed,
+            size: 80,
+            color: AppTheme.primaryOrange,
+          ),
+          const SizedBox(height: 24),
+          const Text(
+            'No activities yet',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            'Be the first to share something!\nConnect with friends to see their activities.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.white70,
+            ),
+          ),
+          const SizedBox(height: 32),
+          Container(
+            decoration: AppTheme.buttonGradientDecoration,
+            child: ElevatedButton.icon(
+            onPressed: _showCreateActivityBottomSheet,
+            style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.transparent,
+              foregroundColor: Colors.white,
+                shadowColor: Colors.transparent,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 24,
+                vertical: 12,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25),
+              ),
+                elevation: 0,
+            ),
+            icon: const Icon(Icons.add),
+            label: const Text(
+              'Create Activity',
+              style: TextStyle(
+                fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _handleLike(String activityId, ActivityFeedItem activity) async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    try {
+      final hasLiked = await _activityService.hasUserLikedActivity(activityId, currentUser.uid);
+      
+      if (hasLiked) {
+        await _activityService.unlikeActivity(activityId, currentUser.uid);
+      } else {
+        await _activityService.likeActivity(activityId, currentUser.uid, currentUser.displayName ?? 'Anonymous');
+      }
+      
+      // Refresh the specific activity
+      _refreshFeed();
+      
+    } catch (e) {
+      print('Error handling like: $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Failed to update like'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _handleComment(String activityId, String comment, ActivityFeedItem activity) async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    try {
+      await _activityService.commentOnActivity(
+        activityId,
+        currentUser.uid,
+        currentUser.displayName ?? 'Anonymous',
+        comment,
+        userProfileImage: currentUser.photoURL,
+      );
+      
+      // Refresh the feed
+      _refreshFeed();
+      
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Comment added!'),
+          backgroundColor: Colors.green,
+        ),
+      );
+      
+    } catch (e) {
+      print('Error adding comment: $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Failed to add comment'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+  }
+
+  void _handleShare(ActivityFeedItem activity) {
+    // TODO: Implement sharing functionality
+    print('Sharing activity: ${activity.activityId}');
+    
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Sharing feature coming soon!'),
+        backgroundColor: Colors.blue,
+      ),
+    );
+  }
+
+  void _navigateToProfile(String userId) {
+    // TODO: Navigate to user profile
+    print('Navigate to profile: $userId');
+  }
+} 

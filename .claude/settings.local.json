@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(robocopy:*)",
+      "Bash(xcopy:*)",
+      "Bash(cmd.exe /c 'xcopy \"\"C:\\\\Users\\\\chris\\\\Pregame\\\\lib\"\" \"\"C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\lib\\\\\"\" /E /I /Q /Y')",
+      "Bash(powershell -Command:*)",
+      "Bash(flutter pub get:*)",
+      "Bash(flutter test:*)",
+      "Bash(powershell:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter build:*)",
+      "Bash(flutter devices:*)",
+      "Bash(flutter run:*)",
+      "Bash(timeout:*)",
+      "Bash(find:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "hytopia-mcp"
+  ]
+}
