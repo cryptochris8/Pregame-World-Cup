@@ -1,0 +1,322 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../domain/models/manager.dart';
+
+/// Service for fetching manager data from Firestore
+class ManagerService {
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  static const String _collectionName = 'managers';
+
+  /// Get all managers (48 managers total)
+  Future<List<Manager>> getAllManagers() async {
+    try {
+      print('👔 ManagerService: Fetching all managers from Firestore collection: $_collectionName');
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .orderBy('fifaCode')
+          .get();
+
+      print('✅ ManagerService: Found ${snapshot.docs.length} managers');
+      return snapshot.docs
+          .map((doc) => Manager.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('❌ ManagerService: Error fetching all managers: $e');
+      print('❌ ManagerService: Error type: ${e.runtimeType}');
+      return [];
+    }
+  }
+
+  /// Get manager by team (FIFA code)
+  Future<Manager?> getManagerByTeam(String fifaCode) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .where('fifaCode', isEqualTo: fifaCode)
+          .limit(1)
+          .get();
+
+      if (snapshot.docs.isNotEmpty) {
+        return Manager.fromFirestore(snapshot.docs.first);
+      }
+      return null;
+    } catch (e) {
+      print('Error fetching manager for $fifaCode: $e');
+      return null;
+    }
+  }
+
+  /// Get single manager by ID
+  Future<Manager?> getManagerById(String managerId) async {
+    try {
+      final DocumentSnapshot doc = await _firestore
+          .collection(_collectionName)
+          .doc(managerId)
+          .get();
+
+      if (doc.exists) {
+        return Manager.fromFirestore(doc);
+      }
+      return null;
+    } catch (e) {
+      print('Error fetching manager $managerId: $e');
+      return null;
+    }
+  }
+
+  /// Get most experienced managers (by years of experience)
+  Future<List<Manager>> getMostExperiencedManagers({int limit = 10}) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .orderBy('yearsOfExperience', descending: true)
+          .limit(limit)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => Manager.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('Error fetching most experienced managers: $e');
+      return [];
+    }
+  }
+
+  /// Get youngest managers
+  Future<List<Manager>> getYoungestManagers({int limit = 10}) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .orderBy('age')
+          .limit(limit)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => Manager.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('Error fetching youngest managers: $e');
+      return [];
+    }
+  }
+
+  /// Get oldest managers
+  Future<List<Manager>> getOldestManagers({int limit = 10}) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .orderBy('age', descending: true)
+          .limit(limit)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => Manager.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('Error fetching oldest managers: $e');
+      return [];
+    }
+  }
+
+  /// Get managers with highest win percentage
+  Future<List<Manager>> getTopWinningManagers({int limit = 10}) async {
+    try {
+      final managers = await getAllManagers();
+
+      // Sort by win percentage locally since we need to access nested field
+      managers.sort((a, b) =>
+          b.stats.winPercentage.compareTo(a.stats.winPercentage));
+
+      return managers.take(limit).toList();
+    } catch (e) {
+      print('Error fetching top winning managers: $e');
+      return [];
+    }
+  }
+
+  /// Get managers with most titles
+  Future<List<Manager>> getMostSuccessfulManagers({int limit = 10}) async {
+    try {
+      final managers = await getAllManagers();
+
+      // Sort by titles won locally
+      managers.sort((a, b) =>
+          b.stats.titlesWon.compareTo(a.stats.titlesWon));
+
+      return managers.take(limit).toList();
+    } catch (e) {
+      print('Error fetching most successful managers: $e');
+      return [];
+    }
+  }
+
+  /// Get managers with most matches managed
+  Future<List<Manager>> getMostExperiencedByMatches({int limit = 10}) async {
+    try {
+      final managers = await getAllManagers();
+
+      // Sort by matches managed locally
+      managers.sort((a, b) =>
+          b.stats.matchesManaged.compareTo(a.stats.matchesManaged));
+
+      return managers.take(limit).toList();
+    } catch (e) {
+      print('Error fetching most experienced managers by matches: $e');
+      return [];
+    }
+  }
+
+  /// Get managers by nationality
+  Future<List<Manager>> getManagersByNationality(String nationality) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .where('nationality', isEqualTo: nationality)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => Manager.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('Error fetching managers by nationality $nationality: $e');
+      return [];
+    }
+  }
+
+  /// Get controversial managers (those with controversies)
+  Future<List<Manager>> getControversialManagers() async {
+    try {
+      final managers = await getAllManagers();
+
+      // Filter managers with controversies
+      return managers.where((m) => m.isControversial).toList();
+    } catch (e) {
+      print('Error fetching controversial managers: $e');
+      return [];
+    }
+  }
+
+  /// Search managers by name
+  Future<List<Manager>> searchManagers(String query) async {
+    try {
+      // Get all managers and filter locally
+      final allManagers = await getAllManagers();
+
+      final lowerQuery = query.toLowerCase();
+      return allManagers.where((manager) {
+        return manager.fullName.toLowerCase().contains(lowerQuery) ||
+               manager.commonName.toLowerCase().contains(lowerQuery) ||
+               manager.currentTeam.toLowerCase().contains(lowerQuery);
+      }).toList();
+    } catch (e) {
+      print('Error searching managers: $e');
+      return [];
+    }
+  }
+
+  /// Stream all managers (real-time updates)
+  Stream<List<Manager>> streamAllManagers() {
+    return _firestore
+        .collection(_collectionName)
+        .orderBy('fifaCode')
+        .snapshots()
+        .map((snapshot) => snapshot.docs
+            .map((doc) => Manager.fromFirestore(doc))
+            .toList());
+  }
+
+  /// Stream manager by team (real-time updates)
+  Stream<Manager?> streamManagerByTeam(String fifaCode) {
+    return _firestore
+        .collection(_collectionName)
+        .where('fifaCode', isEqualTo: fifaCode)
+        .limit(1)
+        .snapshots()
+        .map((snapshot) {
+          if (snapshot.docs.isNotEmpty) {
+            return Manager.fromFirestore(snapshot.docs.first);
+          }
+          return null;
+        });
+  }
+
+  /// Get manager statistics summary
+  Future<Map<String, dynamic>> getManagerStatistics() async {
+    try {
+      final managers = await getAllManagers();
+
+      return {
+        'totalManagers': managers.length,
+        'averageAge': managers.fold<double>(
+          0,
+          (sum, manager) => sum + manager.age
+        ) / managers.length,
+        'averageExperience': managers.fold<double>(
+          0,
+          (sum, manager) => sum + manager.yearsOfExperience
+        ) / managers.length,
+        'totalMatches': managers.fold<int>(
+          0,
+          (sum, manager) => sum + manager.stats.matchesManaged
+        ),
+        'totalTitles': managers.fold<int>(
+          0,
+          (sum, manager) => sum + manager.stats.titlesWon
+        ),
+        'averageWinPercentage': managers.fold<double>(
+          0,
+          (sum, manager) => sum + manager.stats.winPercentage
+        ) / managers.length,
+        'managersWithControversies': managers.where((m) => m.isControversial).length,
+        'managersByNationality': _groupManagersByNationality(managers),
+      };
+    } catch (e) {
+      print('Error fetching manager statistics: $e');
+      return {};
+    }
+  }
+
+  /// Helper: Group managers by nationality
+  Map<String, int> _groupManagersByNationality(List<Manager> managers) {
+    final Map<String, int> nationalityCounts = {};
+
+    for (final manager in managers) {
+      nationalityCounts[manager.nationality] =
+          (nationalityCounts[manager.nationality] ?? 0) + 1;
+    }
+
+    return nationalityCounts;
+  }
+
+  /// Get managers by tactical style
+  Future<List<Manager>> getManagersByTacticalStyle(String style) async {
+    try {
+      final managers = await getAllManagers();
+
+      // Simple contains search for tactical style
+      return managers.where((manager) =>
+          manager.tacticalStyle.toLowerCase().contains(style.toLowerCase()))
+          .toList();
+    } catch (e) {
+      print('Error fetching managers by tactical style: $e');
+      return [];
+    }
+  }
+
+  /// Get World Cup winning managers
+  Future<List<Manager>> getWorldCupWinningManagers() async {
+    try {
+      final managers = await getAllManagers();
+
+      // Filter managers with World Cup in their honors
+      return managers.where((manager) =>
+          manager.honors.any((honor) =>
+              honor.toLowerCase().contains('world cup') &&
+              !honor.toLowerCase().contains('runner') &&
+              !honor.toLowerCase().contains('place')))
+          .toList();
+    } catch (e) {
+      print('Error fetching World Cup winning managers: $e');
+      return [];
+    }
+  }
+}

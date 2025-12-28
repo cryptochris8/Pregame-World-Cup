@@ -276,18 +276,21 @@ Future<void> _clearOld2024CacheData() async {
 /// PRODUCTION FIX: Disable Firestore offline persistence to prevent old cached data
 Future<void> _disableFirestoreOfflinePersistence() async {
   try {
-    print('🔥 FIRESTORE: Disabling offline persistence to prevent old cached schedule data');
-    
+    print('🔥 FIRESTORE: Skipping offline persistence disable - needed for World Cup data');
+
+    // DISABLED: This was preventing players/managers from loading from Firestore
+    // The disableNetwork() call was making Firestore unavailable
+
     // Import Firestore here to avoid issues if Firebase isn't initialized yet
-    final FirebaseFirestore firestore = FirebaseFirestore.instance;
-    
+    // final FirebaseFirestore firestore = FirebaseFirestore.instance;
+
     // Disable offline persistence - this prevents the app from using cached data
     // when it can't reach the Firestore backend
-    await firestore.disableNetwork();
-    await firestore.clearPersistence();
-    await firestore.enableNetwork();
-    
-    print('✅ FIRESTORE: Offline persistence disabled - no more cached 2024 data');
+    // await firestore.disableNetwork();
+    // await firestore.clearPersistence();
+    // await firestore.enableNetwork();
+
+    print('✅ FIRESTORE: Network enabled - World Cup data can now be fetched');
   } catch (e) {
     print('⚠️ FIRESTORE: Error disabling offline persistence: $e');
     // Continue anyway - this is not critical for app functionality

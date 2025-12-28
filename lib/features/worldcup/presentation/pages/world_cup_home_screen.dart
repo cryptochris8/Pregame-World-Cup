@@ -7,6 +7,8 @@ import '../widgets/widgets.dart';
 import 'match_detail_page.dart';
 import 'team_detail_page.dart';
 import 'predictions_page.dart';
+import '../../../../presentation/screens/player_spotlight_screen.dart';
+import '../../../../presentation/screens/manager_profiles_screen.dart';
 
 /// Main World Cup screen with internal tab navigation
 /// This screen is embedded in the main app navigation
@@ -26,6 +28,8 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
     Tab(icon: Icon(Icons.grid_view), text: 'Groups'),
     Tab(icon: Icon(Icons.account_tree), text: 'Bracket'),
     Tab(icon: Icon(Icons.flag), text: 'Teams'),
+    Tab(icon: Icon(Icons.person), text: 'Players'),
+    Tab(icon: Icon(Icons.sports), text: 'Managers'),
     Tab(icon: Icon(Icons.favorite), text: 'Favorites'),
   ];
 
@@ -145,6 +149,8 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
               _TeamsTab(
                 onTeamTap: (team) => _navigateToTeamDetail(context, team),
               ),
+              const PlayerSpotlightScreen(),
+              const ManagerProfilesScreen(),
               _FavoritesTab(
                 onMatchTap: (match) => _navigateToMatchDetail(context, match),
                 onTeamTap: (team) => _navigateToTeamDetail(context, team),
