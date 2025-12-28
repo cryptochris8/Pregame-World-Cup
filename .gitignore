@@ -31,3 +31,4 @@ node_modules/
 # Misc
 nul
 *.bak
+service-account-key.json

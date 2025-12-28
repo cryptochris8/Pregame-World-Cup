@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../domain/models/manager.dart';
 import '../../data/services/manager_service.dart';
+import '../widgets/manager_photo.dart';
 
 /// Manager Profiles Screen
 /// Displays all 48 World Cup 2026 managers with filtering and search
@@ -293,19 +294,12 @@ class _ManagerCard extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Row(
             children: [
-              // Manager photo placeholder
-              Container(
-                width: 80,
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  shape: BoxShape.circle,
-                ),
-                child: Icon(
-                  Icons.person,
-                  size: 40,
-                  color: Colors.grey[400],
-                ),
+              // Manager photo from Firebase Storage
+              ManagerPhoto(
+                photoUrl: manager.photoUrl,
+                managerName: manager.fullName,
+                size: 80,
+                circular: true,
               ),
 
               const SizedBox(width: 16),
@@ -436,19 +430,13 @@ class ManagerDetailScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    // Manager photo placeholder
-                    Container(
-                      width: 120,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        shape: BoxShape.circle,
-                      ),
-                      child: Icon(
-                        Icons.person,
-                        size: 60,
-                        color: Colors.grey[400],
-                      ),
+                    // Manager photo from Firebase Storage
+                    CircularManagerPhoto(
+                      photoUrl: manager.photoUrl,
+                      managerName: manager.fullName,
+                      size: 120,
+                      borderColor: Theme.of(context).primaryColor,
+                      borderWidth: 3,
                     ),
                     const SizedBox(height: 16),
                     Text(

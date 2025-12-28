@@ -204,6 +204,34 @@ class WorldCupMockData {
     ),
   ];
 
+  // FIFA code to ISO country code mapping for flag URLs
+  static const Map<String, String> _fifaToIsoCode = {
+    // CONCACAF
+    'USA': 'us', 'MEX': 'mx', 'CAN': 'ca', 'CRC': 'cr', 'JAM': 'jm',
+    'HON': 'hn', 'PAN': 'pa',
+    // CONMEBOL
+    'BRA': 'br', 'ARG': 'ar', 'URU': 'uy', 'COL': 'co', 'ECU': 'ec',
+    'CHI': 'cl', 'PER': 'pe',
+    // UEFA
+    'FRA': 'fr', 'ENG': 'gb-eng', 'ESP': 'es', 'GER': 'de', 'NED': 'nl',
+    'POR': 'pt', 'BEL': 'be', 'ITA': 'it', 'CRO': 'hr', 'DEN': 'dk',
+    'SUI': 'ch', 'AUT': 'at', 'POL': 'pl', 'SRB': 'rs', 'UKR': 'ua',
+    'WAL': 'gb-wls',
+    // AFC
+    'JPN': 'jp', 'KOR': 'kr', 'AUS': 'au', 'IRN': 'ir', 'KSA': 'sa',
+    'QAT': 'qa', 'UAE': 'ae', 'CHN': 'cn',
+    // CAF
+    'MAR': 'ma', 'SEN': 'sn', 'NGA': 'ng', 'EGY': 'eg', 'GHA': 'gh',
+    'CMR': 'cm', 'CIV': 'ci', 'ALG': 'dz', 'TUN': 'tn',
+    // OFC
+    'NZL': 'nz',
+  };
+
+  /// Get ISO country code from FIFA code for flag URL
+  static String _getIsoCode(String fifaCode) {
+    return _fifaToIsoCode[fifaCode] ?? fifaCode.toLowerCase();
+  }
+
   // Helper methods
   static NationalTeam _team(
     String code,
@@ -215,11 +243,12 @@ class WorldCupMockData {
     int titles,
     bool isHost,
   ) {
+    final isoCode = _getIsoCode(code);
     return NationalTeam(
       fifaCode: code,
       countryName: name,
       shortName: shortName,
-      flagUrl: 'https://flagcdn.com/w80/${code.toLowerCase()}.png',
+      flagUrl: 'https://flagcdn.com/w80/$isoCode.png',
       confederation: conf,
       fifaRanking: ranking,
       group: group,
@@ -296,9 +325,11 @@ class WorldCupMockData {
     int gf,
     int ga,
   ) {
+    final isoCode = _getIsoCode(code);
     return GroupTeamStanding(
       teamCode: code,
       teamName: name,
+      flagUrl: 'https://flagcdn.com/w80/$isoCode.png',
       position: position,
       played: played,
       won: won,

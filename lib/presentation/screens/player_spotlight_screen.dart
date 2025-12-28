@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../domain/models/player.dart';
 import '../../data/services/player_service.dart';
+import '../widgets/player_photo.dart';
 
 /// Player Spotlight Screen
 /// Displays all 260 World Cup 2026 players with filtering and search
@@ -297,16 +298,14 @@ class _PlayerCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Player photo placeholder
+            // Player photo from Firebase Storage
             Expanded(
               flex: 3,
-              child: Container(
+              child: SizedBox(
                 width: double.infinity,
-                color: Colors.grey[200],
-                child: Icon(
-                  Icons.person,
-                  size: 80,
-                  color: Colors.grey[400],
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                  child: _buildPlayerImage(player),
                 ),
               ),
             ),
@@ -377,6 +376,52 @@ class _PlayerCard extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildPlayerImage(Player player) {
+    final photoUrl = player.photoUrl;
+
+    // Check if it's a valid network URL
+    if (photoUrl.isNotEmpty && (photoUrl.startsWith('http://') || photoUrl.startsWith('https://'))) {
+      return Image.network(
+        photoUrl,
+        fit: BoxFit.cover,
+        errorBuilder: (context, error, stackTrace) => _buildPlaceholder(player),
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return _buildPlaceholder(player);
+        },
+      );
+    }
+
+    return _buildPlaceholder(player);
+  }
+
+  Widget _buildPlaceholder(Player player) {
+    final initials = _getInitials(player.commonName);
+    return Container(
+      color: Colors.grey[200],
+      child: Center(
+        child: Text(
+          initials,
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Colors.grey[600],
+          ),
+        ),
+      ),
+    );
+  }
+
+  String _getInitials(String name) {
+    final parts = name.trim().split(' ');
+    if (parts.length >= 2) {
+      return '${parts.first[0]}${parts.last[0]}'.toUpperCase();
+    } else if (parts.isNotEmpty && parts.first.isNotEmpty) {
+      return parts.first[0].toUpperCase();
+    }
+    return '?';
+  }
 }
 
 /// Player Detail Screen
@@ -402,19 +447,13 @@ class PlayerDetailScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    // Player photo placeholder
-                    Container(
-                      width: 120,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        shape: BoxShape.circle,
-                      ),
-                      child: Icon(
-                        Icons.person,
-                        size: 60,
-                        color: Colors.grey[400],
-                      ),
+                    // Player photo from Firebase Storage
+                    CircularPlayerPhoto(
+                      photoUrl: player.photoUrl,
+                      playerName: player.commonName,
+                      size: 120,
+                      borderColor: Theme.of(context).primaryColor,
+                      borderWidth: 3,
                     ),
                     const SizedBox(height: 16),
                     Text(
