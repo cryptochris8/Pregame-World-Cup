@@ -6,24 +6,75 @@ class ManagerService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static const String _collectionName = 'managers';
 
+  // Caching
+  List<Manager>? _allManagersCache;
+  DateTime? _cacheTimestamp;
+  static const Duration _cacheDuration = Duration(minutes: 30);
+
   /// Get all managers (48 managers total)
-  Future<List<Manager>> getAllManagers() async {
+  /// With optional pagination support
+  Future<List<Manager>> getAllManagers({int? limit, int? offset}) async {
     try {
-      print('👔 ManagerService: Fetching all managers from Firestore collection: $_collectionName');
-      final QuerySnapshot snapshot = await _firestore
+      // Check cache first if no pagination is used
+      if (limit == null && offset == null && _isCacheValid()) {
+        print('✅ ManagerService: Returning cached managers');
+        return _allManagersCache!;
+      }
+
+      print('👔 ManagerService: Fetching managers from Firestore collection: $_collectionName');
+      print('   Limit: $limit, Offset: $offset');
+
+      Query query = _firestore
           .collection(_collectionName)
-          .orderBy('fifaCode')
-          .get();
+          .orderBy('fifaCode');
+
+      // Apply pagination if specified
+      if (offset != null && offset > 0) {
+        final allDocs = await query
+            .limit(offset + (limit ?? 20))
+            .get();
+
+        return allDocs.docs
+            .skip(offset)
+            .map((doc) => Manager.fromFirestore(doc))
+            .toList();
+      } else if (limit != null) {
+        query = query.limit(limit);
+      }
+
+      final QuerySnapshot snapshot = await query.get();
 
       print('✅ ManagerService: Found ${snapshot.docs.length} managers');
-      return snapshot.docs
+      final managers = snapshot.docs
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
+
+      // Cache all managers if no pagination
+      if (limit == null && offset == null) {
+        _allManagersCache = managers;
+        _cacheTimestamp = DateTime.now();
+      }
+
+      return managers;
     } catch (e) {
-      print('❌ ManagerService: Error fetching all managers: $e');
+      print('❌ ManagerService: Error fetching managers: $e');
       print('❌ ManagerService: Error type: ${e.runtimeType}');
       return [];
     }
+  }
+
+  /// Check if cache is valid
+  bool _isCacheValid() {
+    if (_allManagersCache == null || _cacheTimestamp == null) {
+      return false;
+    }
+    return DateTime.now().difference(_cacheTimestamp!) < _cacheDuration;
+  }
+
+  /// Clear cache (useful for refresh)
+  void clearCache() {
+    _allManagersCache = null;
+    _cacheTimestamp = null;
   }
 
   /// Get manager by team (FIFA code)

@@ -95,22 +95,25 @@ class WorldCupMockData {
 
   /// Sample live match for testing
   static WorldCupMatch get liveMatch => WorldCupMatch(
-    matchId: 'live_1',
+    matchId: 'group_A_1',
     matchNumber: 1,
     stage: MatchStage.groupStage,
     group: 'A',
     groupMatchDay: 1,
-    homeTeamCode: 'USA',
-    homeTeamName: 'United States',
-    awayTeamCode: 'MEX',
-    awayTeamName: 'Mexico',
+    homeTeamCode: 'MEX',
+    homeTeamName: 'Mexico',
+    homeTeamFlagUrl: 'https://flagcdn.com/w80/mx.png',
+    awayTeamCode: 'PER',
+    awayTeamName: 'Peru',
+    awayTeamFlagUrl: 'https://flagcdn.com/w80/pe.png',
     status: MatchStatus.inProgress,
-    homeScore: 1,
+    homeScore: 2,
     awayScore: 1,
-    minute: 67,
-    dateTime: DateTime.now(),
-    homeGoalScorers: ['Pulisic 23\''],
-    awayGoalScorers: ['Lozano 45\''],
+    minute: 73,
+    dateTime: DateTime(2026, 6, 11, 20, 0),
+    venue: 'Estadio Azteca',
+    homeGoalScorers: ['Lozano 12\'', 'Herrera 55\''],
+    awayGoalScorers: ['Carrillo 38\''],
   );
 
   /// Sample group standings
@@ -155,8 +158,9 @@ class WorldCupMockData {
     );
   }
 
-  /// Sample venues
+  /// All 16 official World Cup 2026 venues
   static List<WorldCupVenue> get venues => [
+    // USA Venues (12)
     const WorldCupVenue(
       venueId: 'v1',
       name: 'MetLife Stadium',
@@ -185,6 +189,88 @@ class WorldCupMockData {
       longitude: -97.0945,
     ),
     const WorldCupVenue(
+      venueId: 'v6',
+      name: 'Arrowhead Stadium',
+      city: 'Kansas City',
+      country: HostCountry.usa,
+      capacity: 76416,
+      latitude: 39.0489,
+      longitude: -94.4852,
+    ),
+    const WorldCupVenue(
+      venueId: 'v7',
+      name: 'Mercedes-Benz Superdome',
+      city: 'New Orleans',
+      country: HostCountry.usa,
+      capacity: 73208,
+      latitude: 29.9511,
+      longitude: -90.0807,
+    ),
+    const WorldCupVenue(
+      venueId: 'v8',
+      name: 'NRG Stadium',
+      city: 'Houston',
+      country: HostCountry.usa,
+      capacity: 72220,
+      latitude: 29.6847,
+      longitude: -95.4095,
+    ),
+    const WorldCupVenue(
+      venueId: 'v9',
+      name: 'Levi\'s Stadium',
+      city: 'Santa Clara',
+      country: HostCountry.usa,
+      capacity: 75000,
+      latitude: 37.4050,
+      longitude: -121.9690,
+    ),
+    const WorldCupVenue(
+      venueId: 'v10',
+      name: 'Lincoln Financial Field',
+      city: 'Philadelphia',
+      country: HostCountry.usa,
+      capacity: 69176,
+      latitude: 39.9012,
+      longitude: -75.1676,
+    ),
+    const WorldCupVenue(
+      venueId: 'v11',
+      name: 'Hard Rock Stadium',
+      city: 'Miami',
+      country: HostCountry.usa,
+      capacity: 65326,
+      latitude: 25.9581,
+      longitude: -80.2388,
+    ),
+    const WorldCupVenue(
+      venueId: 'v12',
+      name: 'Empower Field at Mile High',
+      city: 'Denver',
+      country: HostCountry.usa,
+      capacity: 76125,
+      latitude: 39.7397,
+      longitude: -104.9903,
+    ),
+    const WorldCupVenue(
+      venueId: 'v13',
+      name: 'Allegiant Stadium',
+      city: 'Las Vegas',
+      country: HostCountry.usa,
+      capacity: 61629,
+      latitude: 36.0899,
+      longitude: -115.1833,
+    ),
+    const WorldCupVenue(
+      venueId: 'v14',
+      name: 'Lumen Field',
+      city: 'Seattle',
+      country: HostCountry.usa,
+      capacity: 69000,
+      latitude: 47.5952,
+      longitude: -122.3316,
+    ),
+    // Mexico Venues (3)
+    const WorldCupVenue(
       venueId: 'v4',
       name: 'Estadio Azteca',
       city: 'Mexico City',
@@ -193,6 +279,25 @@ class WorldCupMockData {
       latitude: 19.3029,
       longitude: -99.1505,
     ),
+    const WorldCupVenue(
+      venueId: 'v15',
+      name: 'Estadio BBVA',
+      city: 'Monterrey',
+      country: HostCountry.mexico,
+      capacity: 72711,
+      latitude: 25.6938,
+      longitude: -100.2539,
+    ),
+    const WorldCupVenue(
+      venueId: 'v16',
+      name: 'Estadio Akron',
+      city: 'Guadalajara',
+      country: HostCountry.mexico,
+      capacity: 46420,
+      latitude: 20.5933,
+      longitude: -103.3091,
+    ),
+    // Canada Venues (1)
     const WorldCupVenue(
       venueId: 'v5',
       name: 'BMO Field',
@@ -267,17 +372,30 @@ class WorldCupMockData {
       WorldCupMockData.teams.firstWhere((t) => t.fifaCode == code)
     ).toList();
 
-    // Match day 1
-    matches.add(_createGroupMatch(startMatchNumber, group, 1, teams[0], teams[1], DateTime(2026, 6, 11, 18, 0)));
-    matches.add(_createGroupMatch(startMatchNumber + 1, group, 1, teams[2], teams[3], DateTime(2026, 6, 11, 21, 0)));
+    // Group A: June 11, 15, 19 (Host nation Mexico)
+    // Group B: June 12, 16, 20
+    // Group C: June 13, 17, 21
+    // Group D: June 14, 18, 22
 
-    // Match day 2
-    matches.add(_createGroupMatch(startMatchNumber + 2, group, 2, teams[0], teams[2], DateTime(2026, 6, 15, 18, 0)));
-    matches.add(_createGroupMatch(startMatchNumber + 3, group, 2, teams[1], teams[3], DateTime(2026, 6, 15, 21, 0)));
+    int dayOffset = group == 'A' ? 0 : group == 'B' ? 1 : group == 'C' ? 2 : 3;
 
-    // Match day 3
-    matches.add(_createGroupMatch(startMatchNumber + 4, group, 3, teams[0], teams[3], DateTime(2026, 6, 19, 21, 0)));
-    matches.add(_createGroupMatch(startMatchNumber + 5, group, 3, teams[1], teams[2], DateTime(2026, 6, 19, 21, 0)));
+    // Match day 1 - June 11-14
+    matches.add(_createGroupMatch(startMatchNumber, group, 1, teams[0], teams[1],
+      DateTime(2026, 6, 11 + dayOffset, 18, 0), MatchStatus.completed, 2, 1, ['${teams[0].shortName.split(' ')[0]} 23\'', '${teams[0].shortName.split(' ')[0]} 67\''], ['${teams[1].shortName.split(' ')[0]} 45\'']));
+    matches.add(_createGroupMatch(startMatchNumber + 1, group, 1, teams[2], teams[3],
+      DateTime(2026, 6, 11 + dayOffset, 21, 0), MatchStatus.scheduled, 0, 0, [], []));
+
+    // Match day 2 - June 15-18
+    matches.add(_createGroupMatch(startMatchNumber + 2, group, 2, teams[0], teams[2],
+      DateTime(2026, 6, 15 + dayOffset, 18, 0), MatchStatus.completed, 1, 1, ['${teams[0].shortName.split(' ')[0]} 12\''], ['${teams[2].shortName.split(' ')[0]} 89\'']));
+    matches.add(_createGroupMatch(startMatchNumber + 3, group, 2, teams[1], teams[3],
+      DateTime(2026, 6, 15 + dayOffset, 21, 0), MatchStatus.scheduled, 0, 0, [], []));
+
+    // Match day 3 - June 19-22 (Simultaneous kickoff times)
+    matches.add(_createGroupMatch(startMatchNumber + 4, group, 3, teams[0], teams[3],
+      DateTime(2026, 6, 19 + dayOffset, 20, 0), MatchStatus.scheduled, 0, 0, [], []));
+    matches.add(_createGroupMatch(startMatchNumber + 5, group, 3, teams[1], teams[2],
+      DateTime(2026, 6, 19 + dayOffset, 20, 0), MatchStatus.scheduled, 0, 0, [], []));
 
     return matches;
   }
@@ -289,6 +407,11 @@ class WorldCupMockData {
     NationalTeam home,
     NationalTeam away,
     DateTime dateTime,
+    MatchStatus status,
+    int homeScore,
+    int awayScore,
+    List<String> homeGoalScorers,
+    List<String> awayGoalScorers,
   ) {
     return WorldCupMatch(
       matchId: 'group_${group}_$matchNumber',
@@ -303,7 +426,11 @@ class WorldCupMockData {
       awayTeamName: away.countryName,
       awayTeamFlagUrl: away.flagUrl,
       dateTime: dateTime,
-      status: MatchStatus.scheduled,
+      status: status,
+      homeScore: homeScore,
+      awayScore: awayScore,
+      homeGoalScorers: homeGoalScorers,
+      awayGoalScorers: awayGoalScorers,
     );
   }
 
@@ -393,6 +520,28 @@ class WorldCupMockData {
     String awayCode,
     String awayName,
   ) {
+    // Calculate realistic knockout stage dates
+    DateTime dateTime;
+    if (stage == MatchStage.roundOf32) {
+      // Round of 32: June 29 - July 6, 2026
+      dateTime = DateTime(2026, 6, 28).add(Duration(days: (matchNumberInStage / 2).ceil()));
+    } else if (stage == MatchStage.roundOf16) {
+      // Round of 16: July 2-5, 2026
+      dateTime = DateTime(2026, 7, 1).add(Duration(days: (matchNumberInStage / 2).ceil()));
+    } else if (stage == MatchStage.quarterFinal) {
+      // Quarter Finals: July 8-9, 2026
+      dateTime = DateTime(2026, 7, 7).add(Duration(days: (matchNumberInStage / 2).ceil()));
+    } else if (stage == MatchStage.semiFinal) {
+      // Semi Finals: July 12-13, 2026
+      dateTime = DateTime(2026, 7, 11).add(Duration(days: matchNumberInStage));
+    } else if (stage == MatchStage.thirdPlace) {
+      // Third Place: July 18, 2026
+      dateTime = DateTime(2026, 7, 18, 18, 0);
+    } else {
+      // Final: July 19, 2026 at MetLife Stadium
+      dateTime = DateTime(2026, 7, 19, 19, 0);
+    }
+
     return BracketMatch(
       matchId: matchId,
       matchNumber: matchNumber,
@@ -415,7 +564,7 @@ class WorldCupMockData {
         isConfirmed: true,
       ),
       status: MatchStatus.scheduled,
-      dateTime: DateTime(2026, 7, 1).add(Duration(days: matchNumberInStage)),
+      dateTime: dateTime,
     );
   }
 }

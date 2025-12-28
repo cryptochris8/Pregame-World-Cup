@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   # Firebase
   firebase_core: ^3.13.1
@@ -87,9 +89,11 @@ dev_dependencies:
   json_serializable: ^6.7.1  # For JSON code generation
   bloc_test: ^9.1.5  # For testing BLoC/Cubit
   mocktail: ^1.0.1  # For mocking in tests
+  fake_cloud_firestore: ^3.0.2  # For testing Firestore integration
 
 flutter:
   uses-material-design: true
+  generate: true
 
   # To add assets to your application, add an assets section, like this:
   assets:

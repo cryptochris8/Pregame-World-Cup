@@ -14,12 +14,19 @@ class ManagerProfilesScreen extends StatefulWidget {
 
 class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
   final ManagerService _managerService = ManagerService();
+  final ScrollController _scrollController = ScrollController();
 
   List<Manager> _allManagers = [];
   List<Manager> _displayedManagers = [];
   bool _isLoading = true;
+  bool _isLoadingMore = false;
+  bool _hasMore = true;
   String _selectedFilter = 'All Managers';
   final TextEditingController _searchController = TextEditingController();
+
+  // Pagination
+  static const int _pageSize = 20;
+  int _currentOffset = 0;
 
   // Filter options
   final List<String> _filterOptions = [
@@ -60,22 +67,46 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
   void initState() {
     super.initState();
     _loadManagers();
+    _scrollController.addListener(_onScroll);
   }
 
   @override
   void dispose() {
     _searchController.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
+  void _onScroll() {
+    if (_isLoadingMore || !_hasMore) return;
+
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.position.pixels;
+
+    // Load more when user is 80% down the list
+    if (currentScroll >= maxScroll * 0.8) {
+      _loadMoreManagers();
+    }
+  }
+
   Future<void> _loadManagers() async {
-    setState(() => _isLoading = true);
+    setState(() {
+      _isLoading = true;
+      _currentOffset = 0;
+      _hasMore = true;
+      _displayedManagers = [];
+    });
 
     try {
-      final managers = await _managerService.getAllManagers();
+      final managers = await _managerService.getAllManagers(
+        limit: _pageSize,
+        offset: 0,
+      );
+
       setState(() {
-        _allManagers = managers;
         _displayedManagers = managers;
+        _currentOffset = managers.length;
+        _hasMore = managers.length >= _pageSize;
         _isLoading = false;
       });
     } catch (e) {
@@ -88,36 +119,80 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
     }
   }
 
+  Future<void> _loadMoreManagers() async {
+    if (_isLoadingMore || !_hasMore || _selectedFilter != 'All Managers') return;
+
+    setState(() => _isLoadingMore = true);
+
+    try {
+      final moreManagers = await _managerService.getAllManagers(
+        limit: _pageSize,
+        offset: _currentOffset,
+      );
+
+      setState(() {
+        _displayedManagers.addAll(moreManagers);
+        _currentOffset += moreManagers.length;
+        _hasMore = moreManagers.length >= _pageSize;
+        _isLoadingMore = false;
+      });
+    } catch (e) {
+      setState(() => _isLoadingMore = false);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error loading more managers: $e')),
+        );
+      }
+    }
+  }
+
   Future<void> _applyFilter(String filter) async {
     setState(() {
       _selectedFilter = filter;
       _isLoading = true;
+      _currentOffset = 0;
+      _hasMore = true;
     });
 
     try {
       List<Manager> filteredManagers;
 
       if (filter == 'All Managers') {
-        filteredManagers = await _managerService.getAllManagers();
+        // Use pagination for all managers
+        filteredManagers = await _managerService.getAllManagers(
+          limit: _pageSize,
+          offset: 0,
+        );
+        _currentOffset = filteredManagers.length;
+        _hasMore = filteredManagers.length >= _pageSize;
       } else if (_teamCodes.containsKey(filter)) {
         final manager = await _managerService.getManagerByTeam(_teamCodes[filter]!);
         filteredManagers = manager != null ? [manager] : [];
+        _hasMore = false;
       } else if (filter == 'Most Experienced') {
         filteredManagers = await _managerService.getMostExperiencedManagers(limit: 20);
+        _hasMore = false;
       } else if (filter == 'Youngest') {
         filteredManagers = await _managerService.getYoungestManagers(limit: 20);
+        _hasMore = false;
       } else if (filter == 'Oldest') {
         filteredManagers = await _managerService.getOldestManagers(limit: 20);
+        _hasMore = false;
       } else if (filter == 'Highest Win %') {
         filteredManagers = await _managerService.getTopWinningManagers(limit: 20);
+        _hasMore = false;
       } else if (filter == 'Most Titles') {
         filteredManagers = await _managerService.getMostSuccessfulManagers(limit: 20);
+        _hasMore = false;
       } else if (filter == 'WC Winners') {
         filteredManagers = await _managerService.getWorldCupWinningManagers();
+        _hasMore = false;
       } else if (filter == 'Controversial') {
         filteredManagers = await _managerService.getControversialManagers();
+        _hasMore = false;
       } else {
-        filteredManagers = _allManagers;
+        filteredManagers = [];
+        _hasMore = false;
       }
 
       setState(() {
@@ -248,9 +323,20 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
                 : _displayedManagers.isEmpty
                     ? const Center(child: Text('No managers found'))
                     : ListView.builder(
+                        controller: _scrollController,
                         padding: const EdgeInsets.all(16),
-                        itemCount: _displayedManagers.length,
+                        itemCount: _displayedManagers.length + (_isLoadingMore ? 1 : 0),
                         itemBuilder: (context, index) {
+                          // Loading indicator at the end
+                          if (index >= _displayedManagers.length) {
+                            return const Center(
+                              child: Padding(
+                                padding: EdgeInsets.all(16.0),
+                                child: CircularProgressIndicator(),
+                              ),
+                            );
+                          }
+
                           final manager = _displayedManagers[index];
                           return _ManagerCard(
                             manager: manager,

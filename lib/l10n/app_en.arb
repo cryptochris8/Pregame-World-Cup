@@ -1,0 +1,455 @@
+{
+  "@@locale": "en",
+
+  "playerSpotlight": "Player Spotlight",
+  "@playerSpotlight": {
+    "description": "Title for Player Spotlight screen"
+  },
+  "players": "Players",
+  "@players": {
+    "description": "Label for players"
+  },
+  "searchPlayers": "Search players...",
+  "@searchPlayers": {
+    "description": "Hint text for player search field"
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Refresh button tooltip"
+  },
+  "allTeams": "All Teams",
+  "@allTeams": {
+    "description": "Filter option for all teams"
+  },
+  "goalkeepers": "Goalkeepers",
+  "@goalkeepers": {
+    "description": "Filter option for goalkeepers"
+  },
+  "defenders": "Defenders",
+  "@defenders": {
+    "description": "Filter option for defenders"
+  },
+  "midfielders": "Midfielders",
+  "@midfielders": {
+    "description": "Filter option for midfielders"
+  },
+  "forwards": "Forwards",
+  "@forwards": {
+    "description": "Filter option for forwards"
+  },
+  "topValue": "Top Value",
+  "@topValue": {
+    "description": "Filter option for top value players"
+  },
+  "topScorers": "Top Scorers",
+  "@topScorers": {
+    "description": "Filter option for top scorers"
+  },
+  "mostCapped": "Most Capped",
+  "@mostCapped": {
+    "description": "Filter option for most capped players"
+  },
+  "playersCount": "{count} players",
+  "@playersCount": {
+    "description": "Number of players displayed",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "clearFilters": "Clear filters",
+  "@clearFilters": {
+    "description": "Button to clear all filters"
+  },
+  "noPlayersFound": "No players found",
+  "@noPlayersFound": {
+    "description": "Message when no players are found"
+  },
+  "careerStatistics": "Career Statistics",
+  "@careerStatistics": {
+    "description": "Section title for career statistics"
+  },
+  "internationalCaps": "International Caps",
+  "@internationalCaps": {
+    "description": "Label for international caps"
+  },
+  "internationalGoals": "International Goals",
+  "@internationalGoals": {
+    "description": "Label for international goals"
+  },
+  "internationalAssists": "International Assists",
+  "@internationalAssists": {
+    "description": "Label for international assists"
+  },
+  "worldCupAppearances": "World Cup Appearances",
+  "@worldCupAppearances": {
+    "description": "Label for World Cup appearances"
+  },
+  "worldCupGoals": "World Cup Goals",
+  "@worldCupGoals": {
+    "description": "Label for World Cup goals"
+  },
+  "previousWorldCups": "Previous World Cups",
+  "@previousWorldCups": {
+    "description": "Label for previous World Cups"
+  },
+  "honors": "Honors",
+  "@honors": {
+    "description": "Section title for honors"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Section title for profile"
+  },
+  "strengths": "Strengths:",
+  "@strengths": {
+    "description": "Label for strengths"
+  },
+  "weaknesses": "Weaknesses:",
+  "@weaknesses": {
+    "description": "Label for weaknesses"
+  },
+  "playStyle": "Play Style",
+  "@playStyle": {
+    "description": "Section title for play style"
+  },
+  "keyMoment": "Key Moment",
+  "@keyMoment": {
+    "description": "Section title for key moment"
+  },
+  "comparisonToLegend": "Comparison to Legend",
+  "@comparisonToLegend": {
+    "description": "Section title for comparison to legend"
+  },
+  "worldCup2026Prediction": "World Cup 2026 Prediction",
+  "@worldCup2026Prediction": {
+    "description": "Section title for World Cup 2026 prediction"
+  },
+  "funFacts": "Fun Facts",
+  "@funFacts": {
+    "description": "Section title for fun facts"
+  },
+
+  "managerProfiles": "Manager Profiles",
+  "@managerProfiles": {
+    "description": "Title for Manager Profiles screen"
+  },
+  "managers": "Managers",
+  "@managers": {
+    "description": "Label for managers"
+  },
+  "searchManagers": "Search managers...",
+  "@searchManagers": {
+    "description": "Hint text for manager search field"
+  },
+  "allManagers": "All Managers",
+  "@allManagers": {
+    "description": "Filter option for all managers"
+  },
+  "mostExperienced": "Most Experienced",
+  "@mostExperienced": {
+    "description": "Filter option for most experienced managers"
+  },
+  "youngest": "Youngest",
+  "@youngest": {
+    "description": "Filter option for youngest managers"
+  },
+  "oldest": "Oldest",
+  "@oldest": {
+    "description": "Filter option for oldest managers"
+  },
+  "highestWinPercentage": "Highest Win %",
+  "@highestWinPercentage": {
+    "description": "Filter option for highest win percentage"
+  },
+  "mostTitles": "Most Titles",
+  "@mostTitles": {
+    "description": "Filter option for most titles"
+  },
+  "wcWinners": "WC Winners",
+  "@wcWinners": {
+    "description": "Filter option for World Cup winners"
+  },
+  "controversial": "Controversial",
+  "@controversial": {
+    "description": "Filter option for controversial managers"
+  },
+  "managersCount": "{count} managers",
+  "@managersCount": {
+    "description": "Number of managers displayed",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noManagersFound": "No managers found",
+  "@noManagersFound": {
+    "description": "Message when no managers are found"
+  },
+  "managerialRecord": "Managerial Record",
+  "@managerialRecord": {
+    "description": "Section title for managerial record"
+  },
+  "matchesManaged": "Matches Managed",
+  "@matchesManaged": {
+    "description": "Label for matches managed"
+  },
+  "recordWDL": "Record (W-D-L)",
+  "@recordWDL": {
+    "description": "Label for win-draw-loss record"
+  },
+  "winPercentage": "Win Percentage",
+  "@winPercentage": {
+    "description": "Label for win percentage"
+  },
+  "titlesWon": "Titles Won",
+  "@titlesWon": {
+    "description": "Label for titles won"
+  },
+  "careerStarted": "Career Started",
+  "@careerStarted": {
+    "description": "Label for career started year"
+  },
+  "yearsInCurrentRole": "Years in Current Role",
+  "@yearsInCurrentRole": {
+    "description": "Label for years in current role"
+  },
+  "tacticalApproach": "Tactical Approach",
+  "@tacticalApproach": {
+    "description": "Section title for tactical approach"
+  },
+  "formation": "Formation:",
+  "@formation": {
+    "description": "Label for formation"
+  },
+  "philosophy": "Philosophy:",
+  "@philosophy": {
+    "description": "Label for philosophy"
+  },
+  "honorsAchievements": "Honors & Achievements",
+  "@honorsAchievements": {
+    "description": "Section title for honors and achievements"
+  },
+  "profileAnalysis": "Profile Analysis",
+  "@profileAnalysis": {
+    "description": "Section title for profile analysis"
+  },
+  "managerStyle": "Manager Style",
+  "@managerStyle": {
+    "description": "Section title for manager style"
+  },
+  "definingMoment": "Defining Moment",
+  "@definingMoment": {
+    "description": "Section title for defining moment"
+  },
+  "famousQuote": "Famous Quote",
+  "@famousQuote": {
+    "description": "Section title for famous quote"
+  },
+  "worldCup2026Outlook": "World Cup 2026 Outlook",
+  "@worldCup2026Outlook": {
+    "description": "Section title for World Cup 2026 outlook"
+  },
+  "previousClubs": "Previous Clubs",
+  "@previousClubs": {
+    "description": "Section title for previous clubs"
+  },
+  "controversies": "Controversies",
+  "@controversies": {
+    "description": "Section title for controversies"
+  },
+  "didYouKnow": "Did You Know?",
+  "@didYouKnow": {
+    "description": "Section title for trivia"
+  },
+  "tacticalStyle": "Tactical Style",
+  "@tacticalStyle": {
+    "description": "Label for tactical style"
+  },
+
+  "matches": "Matches",
+  "@matches": {
+    "description": "Tab label for matches"
+  },
+  "groups": "Groups",
+  "@groups": {
+    "description": "Tab label for groups"
+  },
+  "bracket": "Bracket",
+  "@bracket": {
+    "description": "Tab label for bracket"
+  },
+  "teams": "Teams",
+  "@teams": {
+    "description": "Tab label for teams"
+  },
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Tab label for favorites"
+  },
+  "fifaWorldCup": "FIFA World Cup",
+  "@fifaWorldCup": {
+    "description": "Title for FIFA World Cup"
+  },
+  "live": "Live",
+  "@live": {
+    "description": "Label for live matches"
+  },
+  "liveCount": "{count} Live",
+  "@liveCount": {
+    "description": "Live matches count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noMatchesScheduledToday": "No matches scheduled for today",
+  "@noMatchesScheduledToday": {
+    "description": "Message when no matches scheduled for today"
+  },
+  "noLiveMatchesRightNow": "No live matches right now",
+  "@noLiveMatchesRightNow": {
+    "description": "Message when no live matches"
+  },
+  "noUpcomingMatches": "No upcoming matches",
+  "@noUpcomingMatches": {
+    "description": "Message when no upcoming matches"
+  },
+  "noCompletedMatchesYet": "No completed matches yet",
+  "@noCompletedMatchesYet": {
+    "description": "Message when no completed matches"
+  },
+  "noMatchesFound": "No matches found",
+  "@noMatchesFound": {
+    "description": "Message when no matches found"
+  },
+  "noFavoriteMatchesYet": "No favorite matches yet",
+  "@noFavoriteMatchesYet": {
+    "description": "Message when no favorite matches"
+  },
+  "noGroupDataAvailable": "No group data available",
+  "@noGroupDataAvailable": {
+    "description": "Message when no group data available"
+  },
+  "knockoutBracketNotAvailableYet": "Knockout bracket not available yet",
+  "@knockoutBracketNotAvailableYet": {
+    "description": "Message when knockout bracket not available"
+  },
+  "checkBackAfterGroupStage": "Check back after group stage",
+  "@checkBackAfterGroupStage": {
+    "description": "Message to check back after group stage"
+  },
+  "noFavoriteTeamsYet": "No favorite teams yet",
+  "@noFavoriteTeamsYet": {
+    "description": "Message when no favorite teams"
+  },
+  "tapHeartIconToAddFavorites": "Tap the heart icon on any team to add it to your favorites",
+  "@tapHeartIconToAddFavorites": {
+    "description": "Instruction to add favorites"
+  },
+  "teamsCount": "{count} of 48 teams",
+  "@teamsCount": {
+    "description": "Teams count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "clear": "Clear",
+  "@clear": {
+    "description": "Button to clear filters"
+  },
+  "noFavoritesYet": "No Favorites Yet",
+  "@noFavoritesYet": {
+    "description": "Message when no favorites"
+  },
+  "tapHeartIconMessage": "Tap the heart icon on any match or team\nto add them to your favorites",
+  "@tapHeartIconMessage": {
+    "description": "Message to add favorites"
+  },
+  "browseMatches": "Browse Matches",
+  "@browseMatches": {
+    "description": "Button to browse matches"
+  },
+  "browseTeams": "Browse Teams",
+  "@browseTeams": {
+    "description": "Button to browse teams"
+  },
+  "viewAllPredictions": "View All Predictions",
+  "@viewAllPredictions": {
+    "description": "Button to view all predictions"
+  },
+  "favoriteMatches": "Favorite Matches",
+  "@favoriteMatches": {
+    "description": "Section title for favorite matches"
+  },
+  "favoriteTeams": "Favorite Teams",
+  "@favoriteTeams": {
+    "description": "Section title for favorite teams"
+  },
+
+  "loading": "Loading",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error message"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button"
+  },
+  "noDataFound": "No data found",
+  "@noDataFound": {
+    "description": "No data found message"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search label"
+  },
+  "filter": "Filter",
+  "@filter": {
+    "description": "Filter label"
+  },
+  "errorLoadingPlayers": "Error loading players: {error}",
+  "@errorLoadingPlayers": {
+    "description": "Error message when loading players fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorFilteringPlayers": "Error filtering players: {error}",
+  "@errorFilteringPlayers": {
+    "description": "Error message when filtering players fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingManagers": "Error loading managers: {error}",
+  "@errorLoadingManagers": {
+    "description": "Error message when loading managers fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorFilteringManagers": "Error filtering managers: {error}",
+  "@errorFilteringManagers": {
+    "description": "Error message when filtering managers fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  }
+}

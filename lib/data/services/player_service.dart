@@ -6,13 +6,54 @@ class PlayerService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static const String _collectionName = 'players';
 
+  // Caching
+  List<Player>? _allPlayersCache;
+  DateTime? _cacheTimestamp;
+  static const Duration _cacheDuration = Duration(minutes: 30);
+
   /// Get all players (260 players total)
-  Future<List<Player>> getAllPlayers() async {
+  /// With optional pagination support
+  Future<List<Player>> getAllPlayers({int? limit, int? offset}) async {
     try {
-      print('🏃 PlayerService: Fetching all players from Firestore collection: $_collectionName');
-      final QuerySnapshot snapshot = await _firestore
-          .collection(_collectionName)
-          .get();
+      // Check cache first if no pagination is used
+      if (limit == null && offset == null && _isCacheValid()) {
+        print('✅ PlayerService: Returning cached players');
+        return _allPlayersCache!;
+      }
+
+      print('🏃 PlayerService: Fetching players from Firestore collection: $_collectionName');
+      print('   Limit: $limit, Offset: $offset');
+
+      Query query = _firestore.collection(_collectionName);
+
+      // Apply pagination if specified
+      if (offset != null && offset > 0) {
+        // For offset, we need to get all documents up to offset + limit
+        // Then skip the first offset items
+        // Note: This is not the most efficient approach for large offsets
+        // For production, consider using startAfter with DocumentSnapshot
+        final allDocs = await query
+            .limit(offset + (limit ?? 50))
+            .get();
+
+        final players = allDocs.docs
+            .skip(offset)
+            .map((doc) => Player.fromFirestore(doc))
+            .toList();
+
+        // Sort locally
+        players.sort((a, b) {
+          final codeCompare = a.fifaCode.compareTo(b.fifaCode);
+          if (codeCompare != 0) return codeCompare;
+          return a.jerseyNumber.compareTo(b.jerseyNumber);
+        });
+
+        return players;
+      } else if (limit != null) {
+        query = query.limit(limit);
+      }
+
+      final QuerySnapshot snapshot = await query.get();
 
       print('✅ PlayerService: Found ${snapshot.docs.length} players');
       final players = snapshot.docs
@@ -26,12 +67,32 @@ class PlayerService {
         return a.jerseyNumber.compareTo(b.jerseyNumber);
       });
 
+      // Cache all players if no pagination
+      if (limit == null && offset == null) {
+        _allPlayersCache = players;
+        _cacheTimestamp = DateTime.now();
+      }
+
       return players;
     } catch (e) {
-      print('❌ PlayerService: Error fetching all players: $e');
+      print('❌ PlayerService: Error fetching players: $e');
       print('❌ PlayerService: Error type: ${e.runtimeType}');
       return [];
     }
+  }
+
+  /// Check if cache is valid
+  bool _isCacheValid() {
+    if (_allPlayersCache == null || _cacheTimestamp == null) {
+      return false;
+    }
+    return DateTime.now().difference(_cacheTimestamp!) < _cacheDuration;
+  }
+
+  /// Clear cache (useful for refresh)
+  void clearCache() {
+    _allPlayersCache = null;
+    _cacheTimestamp = null;
   }
 
   /// Get players by team (FIFA code)
@@ -76,7 +137,7 @@ class PlayerService {
   }
 
   /// Get players by position category (Defender, Midfielder, Forward, Goalkeeper)
-  Future<List<Player>> getPlayersByCategory(String category) async {
+  Future<List<Player>> getPlayersByCategory(String category, {int? limit, int? offset}) async {
     try {
       List<String> positions;
 
@@ -97,11 +158,23 @@ class PlayerService {
           return [];
       }
 
-      final QuerySnapshot snapshot = await _firestore
+      Query query = _firestore
           .collection(_collectionName)
           .where('position', whereIn: positions)
-          .orderBy('marketValue', descending: true)
-          .get();
+          .orderBy('marketValue', descending: true);
+
+      // Apply pagination
+      if (offset != null && offset > 0) {
+        final allDocs = await query.limit(offset + (limit ?? 50)).get();
+        return allDocs.docs
+            .skip(offset)
+            .map((doc) => Player.fromFirestore(doc))
+            .toList();
+      } else if (limit != null) {
+        query = query.limit(limit);
+      }
+
+      final QuerySnapshot snapshot = await query.get();
 
       return snapshot.docs
           .map((doc) => Player.fromFirestore(doc))

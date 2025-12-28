@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../domain/models/player.dart';
 import '../../data/services/player_service.dart';
 import '../widgets/player_photo.dart';
@@ -14,12 +16,19 @@ class PlayerSpotlightScreen extends StatefulWidget {
 
 class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
   final PlayerService _playerService = PlayerService();
+  final ScrollController _scrollController = ScrollController();
 
   List<Player> _allPlayers = [];
   List<Player> _displayedPlayers = [];
   bool _isLoading = true;
+  bool _isLoadingMore = false;
+  bool _hasMore = true;
   String _selectedFilter = 'All Teams';
   final TextEditingController _searchController = TextEditingController();
+
+  // Pagination
+  static const int _pageSize = 50;
+  int _currentOffset = 0;
 
   // Filter options
   final List<String> _filterOptions = [
@@ -60,29 +69,82 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
   void initState() {
     super.initState();
     _loadPlayers();
+    _scrollController.addListener(_onScroll);
   }
 
   @override
   void dispose() {
     _searchController.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
+  void _onScroll() {
+    if (_isLoadingMore || !_hasMore) return;
+
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.position.pixels;
+
+    // Load more when user is 80% down the list
+    if (currentScroll >= maxScroll * 0.8) {
+      _loadMorePlayers();
+    }
+  }
+
   Future<void> _loadPlayers() async {
-    setState(() => _isLoading = true);
+    setState(() {
+      _isLoading = true;
+      _currentOffset = 0;
+      _hasMore = true;
+      _displayedPlayers = [];
+    });
 
     try {
-      final players = await _playerService.getAllPlayers();
+      final players = await _playerService.getAllPlayers(
+        limit: _pageSize,
+        offset: 0,
+      );
+
       setState(() {
-        _allPlayers = players;
         _displayedPlayers = players;
+        _currentOffset = players.length;
+        _hasMore = players.length >= _pageSize;
         _isLoading = false;
       });
     } catch (e) {
       setState(() => _isLoading = false);
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading players: $e')),
+          SnackBar(content: Text(l10n.errorLoadingPlayers(e.toString()))),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadMorePlayers() async {
+    if (_isLoadingMore || !_hasMore || _selectedFilter != 'All Teams') return;
+
+    setState(() => _isLoadingMore = true);
+
+    try {
+      final morePlayers = await _playerService.getAllPlayers(
+        limit: _pageSize,
+        offset: _currentOffset,
+      );
+
+      setState(() {
+        _displayedPlayers.addAll(morePlayers);
+        _currentOffset += morePlayers.length;
+        _hasMore = morePlayers.length >= _pageSize;
+        _isLoadingMore = false;
+      });
+    } catch (e) {
+      setState(() => _isLoadingMore = false);
+      if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.errorLoadingPlayers(e.toString()))),
         );
       }
     }
@@ -92,31 +154,48 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
     setState(() {
       _selectedFilter = filter;
       _isLoading = true;
+      _currentOffset = 0;
+      _hasMore = true;
     });
 
     try {
       List<Player> filteredPlayers;
 
       if (filter == 'All Teams') {
-        filteredPlayers = await _playerService.getAllPlayers();
+        // Use pagination for all teams
+        filteredPlayers = await _playerService.getAllPlayers(
+          limit: _pageSize,
+          offset: 0,
+        );
+        _currentOffset = filteredPlayers.length;
+        _hasMore = filteredPlayers.length >= _pageSize;
       } else if (_teamCodes.containsKey(filter)) {
         filteredPlayers = await _playerService.getPlayersByTeam(_teamCodes[filter]!);
+        _hasMore = false; // Team filters don't support pagination
       } else if (filter == 'Goalkeepers') {
-        filteredPlayers = await _playerService.getPlayersByCategory('Goalkeeper');
+        filteredPlayers = await _playerService.getPlayersByCategory('Goalkeeper', limit: _pageSize);
+        _hasMore = false;
       } else if (filter == 'Defenders') {
-        filteredPlayers = await _playerService.getPlayersByCategory('Defender');
+        filteredPlayers = await _playerService.getPlayersByCategory('Defender', limit: _pageSize);
+        _hasMore = false;
       } else if (filter == 'Midfielders') {
-        filteredPlayers = await _playerService.getPlayersByCategory('Midfielder');
+        filteredPlayers = await _playerService.getPlayersByCategory('Midfielder', limit: _pageSize);
+        _hasMore = false;
       } else if (filter == 'Forwards') {
-        filteredPlayers = await _playerService.getPlayersByCategory('Forward');
+        filteredPlayers = await _playerService.getPlayersByCategory('Forward', limit: _pageSize);
+        _hasMore = false;
       } else if (filter == 'Top Value') {
         filteredPlayers = await _playerService.getTopPlayersByValue(limit: 50);
+        _hasMore = false;
       } else if (filter == 'Top Scorers') {
         filteredPlayers = await _playerService.getTopScorers(limit: 50);
+        _hasMore = false;
       } else if (filter == 'Most Capped') {
         filteredPlayers = await _playerService.getMostCappedPlayers(limit: 50);
+        _hasMore = false;
       } else {
-        filteredPlayers = _allPlayers;
+        filteredPlayers = [];
+        _hasMore = false;
       }
 
       setState(() {
@@ -126,8 +205,9 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
     } catch (e) {
       setState(() => _isLoading = false);
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error filtering players: $e')),
+          SnackBar(content: Text(l10n.errorFilteringPlayers(e.toString()))),
         );
       }
     }
@@ -152,16 +232,41 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
     }
   }
 
+  String _getLocalizedFilterName(String filter, AppLocalizations l10n) {
+    switch (filter) {
+      case 'All Teams':
+        return l10n.allTeams;
+      case 'Goalkeepers':
+        return l10n.goalkeepers;
+      case 'Defenders':
+        return l10n.defenders;
+      case 'Midfielders':
+        return l10n.midfielders;
+      case 'Forwards':
+        return l10n.forwards;
+      case 'Top Value':
+        return l10n.topValue;
+      case 'Top Scorers':
+        return l10n.topScorers;
+      case 'Most Capped':
+        return l10n.mostCapped;
+      default:
+        return filter; // Keep team names as-is (Brazil, Argentina, etc.)
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Player Spotlight'),
+        title: Text(l10n.playerSpotlight),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: _loadPlayers,
-            tooltip: 'Refresh',
+            tooltip: l10n.refresh,
           ),
         ],
       ),
@@ -173,7 +278,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Search players...',
+                hintText: l10n.searchPlayers,
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: _searchController.text.isNotEmpty
                     ? IconButton(
@@ -206,7 +311,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
                 return Padding(
                   padding: const EdgeInsets.only(right: 8.0),
                   child: FilterChip(
-                    label: Text(filter),
+                    label: Text(_getLocalizedFilterName(filter, l10n)),
                     selected: isSelected,
                     onSelected: (selected) {
                       if (selected) _applyFilter(filter);
@@ -226,13 +331,13 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '${_displayedPlayers.length} players',
+                  l10n.playersCount(_displayedPlayers.length),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 if (_selectedFilter != 'All Teams')
                   TextButton(
                     onPressed: () => _applyFilter('All Teams'),
-                    child: const Text('Clear filters'),
+                    child: Text(l10n.clearFilters),
                   ),
               ],
             ),
@@ -245,8 +350,9 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
             child: _isLoading
                 ? const Center(child: CircularProgressIndicator())
                 : _displayedPlayers.isEmpty
-                    ? const Center(child: Text('No players found'))
+                    ? Center(child: Text(l10n.noPlayersFound))
                     : GridView.builder(
+                        controller: _scrollController,
                         padding: const EdgeInsets.all(16),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
@@ -254,8 +360,18 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
                         ),
-                        itemCount: _displayedPlayers.length,
+                        itemCount: _displayedPlayers.length + (_isLoadingMore ? 1 : 0),
                         itemBuilder: (context, index) {
+                          // Loading indicator at the end
+                          if (index >= _displayedPlayers.length) {
+                            return const Center(
+                              child: Padding(
+                                padding: EdgeInsets.all(16.0),
+                                child: CircularProgressIndicator(),
+                              ),
+                            );
+                          }
+
                           final player = _displayedPlayers[index];
                           return _PlayerCard(
                             player: player,
@@ -279,7 +395,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
   }
 }
 
-/// Player Card Widget
+/// Player Card Widget - Optimized with const where possible
 class _PlayerCard extends StatelessWidget {
   final Player player;
   final VoidCallback onTap;
@@ -291,6 +407,8 @@ class _PlayerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final greyColor = Colors.grey[600];
+
     return Card(
       clipBehavior: Clip.antiAlias,
       child: InkWell(
@@ -303,9 +421,9 @@ class _PlayerCard extends StatelessWidget {
               flex: 3,
               child: SizedBox(
                 width: double.infinity,
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
-                  child: _buildPlayerImage(player),
+                child: const ClipRRect(
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(4)),
+                  child: _PlayerImageWidget(),
                 ),
               ),
             ),
@@ -335,14 +453,14 @@ class _PlayerCard extends StatelessWidget {
                           '${player.fifaCode} • #${player.jerseyNumber}',
                           style: TextStyle(
                             fontSize: 12,
-                            color: Colors.grey[600],
+                            color: greyColor,
                           ),
                         ),
                         Text(
                           player.position,
                           style: TextStyle(
                             fontSize: 12,
-                            color: Colors.grey[600],
+                            color: greyColor,
                           ),
                         ),
                       ],
@@ -362,7 +480,7 @@ class _PlayerCard extends StatelessWidget {
                           '${player.age}y',
                           style: TextStyle(
                             fontSize: 12,
-                            color: Colors.grey[600],
+                            color: greyColor,
                           ),
                         ),
                       ],
@@ -376,20 +494,34 @@ class _PlayerCard extends StatelessWidget {
       ),
     );
   }
+}
 
   Widget _buildPlayerImage(Player player) {
     final photoUrl = player.photoUrl;
 
     // Check if it's a valid network URL
     if (photoUrl.isNotEmpty && (photoUrl.startsWith('http://') || photoUrl.startsWith('https://'))) {
-      return Image.network(
-        photoUrl,
+      return CachedNetworkImage(
+        imageUrl: photoUrl,
         fit: BoxFit.cover,
-        errorBuilder: (context, error, stackTrace) => _buildPlaceholder(player),
-        loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) return child;
-          return _buildPlaceholder(player);
-        },
+        placeholder: (context, url) => Container(
+          color: Colors.grey[200],
+          child: Center(
+            child: SizedBox(
+              width: 30,
+              height: 30,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.grey[400]!),
+              ),
+            ),
+          ),
+        ),
+        errorWidget: (context, url, error) => _buildPlaceholder(player),
+        fadeInDuration: const Duration(milliseconds: 200),
+        fadeOutDuration: const Duration(milliseconds: 200),
+        memCacheWidth: 400, // Optimize memory by caching smaller version
+        maxHeightDiskCache: 400,
       );
     }
 
@@ -432,6 +564,8 @@ class PlayerDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(player.commonName),
@@ -486,17 +620,17 @@ class PlayerDetailScreen extends StatelessWidget {
 
             // Stats section
             _SectionCard(
-              title: 'Career Statistics',
+              title: l10n.careerStatistics,
               child: Column(
                 children: [
-                  _StatRow(label: 'International Caps', value: '${player.caps}'),
-                  _StatRow(label: 'International Goals', value: '${player.goals}'),
-                  _StatRow(label: 'International Assists', value: '${player.assists}'),
-                  _StatRow(label: 'World Cup Appearances', value: '${player.worldCupAppearances}'),
-                  _StatRow(label: 'World Cup Goals', value: '${player.worldCupGoals}'),
+                  _StatRow(label: l10n.internationalCaps, value: '${player.caps}'),
+                  _StatRow(label: l10n.internationalGoals, value: '${player.goals}'),
+                  _StatRow(label: l10n.internationalAssists, value: '${player.assists}'),
+                  _StatRow(label: l10n.worldCupAppearances, value: '${player.worldCupAppearances}'),
+                  _StatRow(label: l10n.worldCupGoals, value: '${player.worldCupGoals}'),
                   if (player.previousWorldCups.isNotEmpty)
                     _StatRow(
-                      label: 'Previous World Cups',
+                      label: l10n.previousWorldCups,
                       value: player.previousWorldCups.join(', '),
                     ),
                 ],
@@ -506,7 +640,7 @@ class PlayerDetailScreen extends StatelessWidget {
             // Honors
             if (player.honors.isNotEmpty)
               _SectionCard(
-                title: 'Honors',
+                title: l10n.honors,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: player.honors.map((honor) =>
@@ -526,11 +660,11 @@ class PlayerDetailScreen extends StatelessWidget {
 
             // Strengths & Weaknesses
             _SectionCard(
-              title: 'Profile',
+              title: l10n.profile,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Strengths:', style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text(l10n.strengths, style: const TextStyle(fontWeight: FontWeight.bold)),
                   const SizedBox(height: 4),
                   Wrap(
                     spacing: 8,
@@ -543,7 +677,7 @@ class PlayerDetailScreen extends StatelessWidget {
                     ).toList(),
                   ),
                   const SizedBox(height: 16),
-                  const Text('Weaknesses:', style: TextStyle(fontWeight: FontWeight.bold)),
+                  Text(l10n.weaknesses, style: const TextStyle(fontWeight: FontWeight.bold)),
                   const SizedBox(height: 4),
                   Wrap(
                     spacing: 8,
@@ -561,32 +695,32 @@ class PlayerDetailScreen extends StatelessWidget {
 
             // Play style
             _SectionCard(
-              title: 'Play Style',
+              title: l10n.playStyle,
               child: Text(player.playStyle),
             ),
 
             // Key moment
             _SectionCard(
-              title: 'Key Moment',
+              title: l10n.keyMoment,
               child: Text(player.keyMoment),
             ),
 
             // Legend comparison
             _SectionCard(
-              title: 'Comparison to Legend',
+              title: l10n.comparisonToLegend,
               child: Text(player.comparisonToLegend),
             ),
 
             // World Cup 2026 prediction
             _SectionCard(
-              title: 'World Cup 2026 Prediction',
+              title: l10n.worldCup2026Prediction,
               child: Text(player.worldCup2026Prediction),
             ),
 
             // Trivia
             if (player.trivia.isNotEmpty)
               _SectionCard(
-                title: 'Fun Facts',
+                title: l10n.funFacts,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: player.trivia.asMap().entries.map((entry) =>

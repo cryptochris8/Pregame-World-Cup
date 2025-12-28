@@ -11,7 +11,12 @@
     "logs": "firebase functions:log",
     "fetch-player-photos": "ts-node src/fetch-player-photos.ts",
     "fetch-manager-photos": "ts-node src/fetch-manager-photos.ts",
-    "fetch-all-photos": "npm run fetch-player-photos && npm run fetch-manager-photos"
+    "fetch-all-photos": "npm run fetch-player-photos && npm run fetch-manager-photos",
+    "fetch-player-photos-v2": "ts-node src/fetch-player-photos-v2.ts",
+    "fetch-manager-photos-v2": "ts-node src/fetch-manager-photos-v2.ts",
+    "fetch-all-photos-v2": "npm run fetch-player-photos-v2 && npm run fetch-manager-photos-v2",
+    "check-photos": "ts-node src/check-photos.ts",
+    "check-photos-v2": "ts-node src/check-photos-v2.ts"
   },
   "engines": {
     "node": "22"
