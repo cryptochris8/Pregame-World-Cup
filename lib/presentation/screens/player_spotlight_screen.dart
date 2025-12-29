@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import '../../l10n/app_localizations.dart';
 import '../../domain/models/player.dart';
 import '../../data/services/player_service.dart';
 import '../widgets/player_photo.dart';
@@ -421,9 +421,12 @@ class _PlayerCard extends StatelessWidget {
               flex: 3,
               child: SizedBox(
                 width: double.infinity,
-                child: const ClipRRect(
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(4)),
-                  child: _PlayerImageWidget(),
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                  child: PlayerPhoto.fromPlayer(
+                    player,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
@@ -493,66 +496,6 @@ class _PlayerCard extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-  Widget _buildPlayerImage(Player player) {
-    final photoUrl = player.photoUrl;
-
-    // Check if it's a valid network URL
-    if (photoUrl.isNotEmpty && (photoUrl.startsWith('http://') || photoUrl.startsWith('https://'))) {
-      return CachedNetworkImage(
-        imageUrl: photoUrl,
-        fit: BoxFit.cover,
-        placeholder: (context, url) => Container(
-          color: Colors.grey[200],
-          child: Center(
-            child: SizedBox(
-              width: 30,
-              height: 30,
-              child: CircularProgressIndicator(
-                strokeWidth: 2,
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.grey[400]!),
-              ),
-            ),
-          ),
-        ),
-        errorWidget: (context, url, error) => _buildPlaceholder(player),
-        fadeInDuration: const Duration(milliseconds: 200),
-        fadeOutDuration: const Duration(milliseconds: 200),
-        memCacheWidth: 400, // Optimize memory by caching smaller version
-        maxHeightDiskCache: 400,
-      );
-    }
-
-    return _buildPlaceholder(player);
-  }
-
-  Widget _buildPlaceholder(Player player) {
-    final initials = _getInitials(player.commonName);
-    return Container(
-      color: Colors.grey[200],
-      child: Center(
-        child: Text(
-          initials,
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-            color: Colors.grey[600],
-          ),
-        ),
-      ),
-    );
-  }
-
-  String _getInitials(String name) {
-    final parts = name.trim().split(' ');
-    if (parts.length >= 2) {
-      return '${parts.first[0]}${parts.last[0]}'.toUpperCase();
-    } else if (parts.isNotEmpty && parts.first.isNotEmpty) {
-      return parts.first[0].toUpperCase();
-    }
-    return '?';
   }
 }
 

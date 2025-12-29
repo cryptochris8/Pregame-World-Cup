@@ -111,7 +111,18 @@ class WorldCupMockData {
     awayScore: 1,
     minute: 73,
     dateTime: DateTime(2026, 6, 11, 20, 0),
-    venue: 'Estadio Azteca',
+    dateTimeUtc: DateTime.utc(2026, 6, 12, 1, 0), // UTC time (Mexico City is UTC-5 during summer)
+    venue: const WorldCupVenue(
+      venueId: 'azteca',
+      name: 'Estadio Azteca',
+      city: 'Mexico City',
+      country: HostCountry.mexico,
+      capacity: 87523,
+      latitude: 19.3029,
+      longitude: -99.1506,
+      timeZone: 'America/Mexico_City',
+      utcOffset: -5,
+    ),
     homeGoalScorers: ['Lozano 12\'', 'Herrera 55\''],
     awayGoalScorers: ['Carrillo 38\''],
   );
@@ -413,6 +424,13 @@ class WorldCupMockData {
     List<String> homeGoalScorers,
     List<String> awayGoalScorers,
   ) {
+    // Mock times are in US Eastern Time (EDT during summer = UTC-4)
+    // Convert to UTC by adding 4 hours
+    final utcTime = dateTime.add(const Duration(hours: 4));
+
+    // Assign a default venue based on group
+    final venue = _getVenueForGroup(group);
+
     return WorldCupMatch(
       matchId: 'group_${group}_$matchNumber',
       matchNumber: matchNumber,
@@ -426,12 +444,80 @@ class WorldCupMockData {
       awayTeamName: away.countryName,
       awayTeamFlagUrl: away.flagUrl,
       dateTime: dateTime,
+      dateTimeUtc: utcTime,
+      venue: venue,
       status: status,
       homeScore: homeScore,
       awayScore: awayScore,
       homeGoalScorers: homeGoalScorers,
       awayGoalScorers: awayGoalScorers,
     );
+  }
+
+  /// Get a venue for a given group (for mock data)
+  static WorldCupVenue _getVenueForGroup(String group) {
+    switch (group) {
+      case 'A':
+        return const WorldCupVenue(
+          venueId: 'metlife',
+          name: 'MetLife Stadium',
+          city: 'East Rutherford',
+          country: HostCountry.usa,
+          capacity: 82500,
+          latitude: 40.8135,
+          longitude: -74.0745,
+          timeZone: 'America/New_York',
+          utcOffset: -4, // EDT
+        );
+      case 'B':
+        return const WorldCupVenue(
+          venueId: 'sofi',
+          name: 'SoFi Stadium',
+          city: 'Inglewood',
+          country: HostCountry.usa,
+          capacity: 70240,
+          latitude: 33.9535,
+          longitude: -118.3392,
+          timeZone: 'America/Los_Angeles',
+          utcOffset: -7, // PDT
+        );
+      case 'C':
+        return const WorldCupVenue(
+          venueId: 'att',
+          name: 'AT&T Stadium',
+          city: 'Arlington',
+          country: HostCountry.usa,
+          capacity: 80000,
+          latitude: 32.7473,
+          longitude: -97.0945,
+          timeZone: 'America/Chicago',
+          utcOffset: -5, // CDT
+        );
+      case 'D':
+        return const WorldCupVenue(
+          venueId: 'azteca',
+          name: 'Estadio Azteca',
+          city: 'Mexico City',
+          country: HostCountry.mexico,
+          capacity: 87523,
+          latitude: 19.3029,
+          longitude: -99.1506,
+          timeZone: 'America/Mexico_City',
+          utcOffset: -5, // CDT
+        );
+      default:
+        return const WorldCupVenue(
+          venueId: 'metlife',
+          name: 'MetLife Stadium',
+          city: 'East Rutherford',
+          country: HostCountry.usa,
+          capacity: 82500,
+          latitude: 40.8135,
+          longitude: -74.0745,
+          timeZone: 'America/New_York',
+          utcOffset: -4,
+        );
+    }
   }
 
   static WorldCupGroup _createGroup(String letter, List<GroupTeamStanding> standings) {

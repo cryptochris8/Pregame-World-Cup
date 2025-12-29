@@ -30,6 +30,7 @@ import 'features/schedule/domain/usecases/get_upcoming_games.dart';
 import 'features/schedule/domain/repositories/schedule_repository.dart';
 import 'core/entities/cached_venue_data.dart';
 import 'core/entities/cached_geocoding_data.dart';
+import 'features/worldcup/utils/timezone_utils.dart';
 
 /// ANDROID DIAGNOSTIC MODE
 /// Set to true to enable detailed logging for Android issues
@@ -114,6 +115,18 @@ Future<void> main() async {
     print('❌ INIT STEP 5: Cache Service - FAILED: $e');
     if (ANDROID_DIAGNOSTIC_MODE) {
       print('🔍 DIAGNOSTIC: Cache service failed. App will continue without caching.');
+    }
+  }
+
+  // Step 5.5: Timezone Database Initialization
+  print('🚀 INIT STEP 5.5: Timezone Database');
+  try {
+    await TimezoneUtils.initialize();
+    print('✅ INIT STEP 5.5: Timezone Database - SUCCESS');
+  } catch (e) {
+    print('❌ INIT STEP 5.5: Timezone Database - FAILED: $e');
+    if (ANDROID_DIAGNOSTIC_MODE) {
+      print('🔍 DIAGNOSTIC: Timezone database failed. Match times may not convert correctly.');
     }
   }
 

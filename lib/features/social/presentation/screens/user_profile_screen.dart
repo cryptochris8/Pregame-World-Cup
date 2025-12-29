@@ -7,6 +7,7 @@ import '../../../../core/services/logging_service.dart';
 import '../../../../config/app_theme.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
+import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
 
 class UserProfileScreen extends StatefulWidget {
   final String? userId;
@@ -139,12 +140,25 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                         textAlign: _isCurrentUser ? TextAlign.center : TextAlign.left,
                       ),
                     ),
-                    if (_isCurrentUser)
+                    if (_isCurrentUser) ...[
+                      IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const TimezoneSettingsScreen(),
+                            ),
+                          );
+                        },
+                        icon: const Icon(Icons.schedule, color: Colors.white),
+                        tooltip: 'Timezone Settings',
+                      ),
                       IconButton(
                         onPressed: _signOut,
                         icon: const Icon(Icons.logout, color: Colors.white),
                         tooltip: 'Sign Out',
                       ),
+                    ],
                   ],
                 ),
               ),

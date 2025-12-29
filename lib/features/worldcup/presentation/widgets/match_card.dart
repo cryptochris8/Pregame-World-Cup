@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../../config/app_theme.dart';
 import '../../domain/entities/entities.dart';
+import '../../utils/timezone_utils.dart';
 import '../bloc/bloc.dart';
 import 'live_indicator.dart';
 import 'team_flag.dart';
@@ -299,11 +300,6 @@ class MatchCard extends StatelessWidget {
   }
 
   String _formatDateTime() {
-    if (match.dateTime == null) return 'TBD';
-
-    final now = DateTime.now();
-    final matchDate = match.dateTime!;
-
     if (match.status == MatchStatus.inProgress) {
       return match.minute != null ? "${match.minute}'" : 'In Progress';
     }
@@ -315,6 +311,28 @@ class MatchCard extends StatelessWidget {
     if (match.status == MatchStatus.completed) {
       return 'Final';
     }
+
+    // Use UTC time if available, otherwise fall back to venue local time
+    final utcTime = match.dateTimeUtc;
+    final venueTime = match.dateTime;
+
+    if (utcTime == null && venueTime == null) return 'TBD';
+
+    // Get venue timezone (default to America/New_York for US venues)
+    final venueTimezone = match.venue?.timeZone ?? 'America/New_York';
+
+    // If we have UTC time, convert to user's local timezone
+    if (utcTime != null) {
+      return TimezoneUtils.formatRelativeDate(
+        utcDateTime: utcTime,
+        venueTimezone: venueTimezone,
+        mode: TimezoneDisplayMode.local,
+      );
+    }
+
+    // Fallback: use venue local time as-is (less accurate but functional)
+    final matchDate = venueTime!;
+    final now = DateTime.now();
 
     // Check if today
     if (matchDate.year == now.year &&
@@ -447,9 +465,7 @@ class MatchRow extends StatelessWidget {
           ],
         ),
         subtitle: Text(
-          match.dateTime != null
-              ? DateFormat('MMM d, h:mm a').format(match.dateTime!)
-              : 'TBD',
+          _formatMatchRowDateTime(match),
           style: const TextStyle(fontSize: 12, color: Colors.white60),
         ),
         trailing: showFavoriteButton
@@ -461,6 +477,29 @@ class MatchRow extends StatelessWidget {
             : null,
       ),
     );
+  }
+
+  /// Format date/time for MatchRow with timezone support
+  String _formatMatchRowDateTime(WorldCupMatch match) {
+    final utcTime = match.dateTimeUtc;
+    final venueTime = match.dateTime;
+
+    if (utcTime == null && venueTime == null) return 'TBD';
+
+    // Get venue timezone (default to America/New_York for US venues)
+    final venueTimezone = match.venue?.timeZone ?? 'America/New_York';
+
+    // If we have UTC time, convert to user's local timezone
+    if (utcTime != null) {
+      return TimezoneUtils.formatMatchDateTime(
+        utcDateTime: utcTime,
+        venueTimezone: venueTimezone,
+        mode: TimezoneDisplayMode.local,
+      );
+    }
+
+    // Fallback: use venue local time as-is
+    return DateFormat('MMM d, h:mm a').format(venueTime!);
   }
 }
 
