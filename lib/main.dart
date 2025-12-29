@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -7,6 +8,8 @@ import 'dart:developer' as developer;
 import 'package:flutter/foundation.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
+import 'l10n/app_localizations.dart';
 
 import 'services/payment_service.dart';
 import 'features/schedule/presentation/bloc/schedule_bloc.dart';
@@ -343,6 +346,14 @@ class PregameApp extends StatelessWidget {
       ),
       child: MaterialApp(
         title: 'Pregame',
+        // Localization support
+        localizationsDelegates: const [
+          AppLocalizations.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: AppLocalizations.supportedLocales,
         // Use the beautiful gradient dark theme by default
         theme: AppTheme.darkTheme,
         darkTheme: AppTheme.darkTheme,
