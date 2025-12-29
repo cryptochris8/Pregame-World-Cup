@@ -15,6 +15,7 @@ import AnalyticsDashboard from './screens/venue/AnalyticsDashboard';
 import FanEngagement from './screens/venue/FanEngagement';
 import VenueSubscriptionSimple from './screens/venue/VenueSubscriptionSimple';
 import BillingSuccess from './screens/venue/BillingSuccess';
+import VenueSignupWizard from './screens/venue/VenueSignupWizard';
 
 // Layout wrapper component
 function AppLayout({ children }: { children: React.ReactNode }) {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/inventory" element={<InventoryScreen />} />
           
           {/* Venue Owner Portal Routes */}
+          <Route path="/venue/signup" element={<VenueSignupWizard />} />
           <Route path="/venue" element={<VenueOwnerDashboard />} />
           <Route path="/venue/profile" element={<VenueProfile />} />
           <Route path="/venue/livestream" element={<LiveStreamManager />} />

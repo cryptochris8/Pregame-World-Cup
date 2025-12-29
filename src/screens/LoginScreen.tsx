@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import PregameLogo from '../assets/pregame_logo.png';
 
 const LoginScreen: React.FC = () => {
@@ -179,9 +179,9 @@ const LoginScreen: React.FC = () => {
           <div className="text-center">
             <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
               Don't have an account?{' '}
-              <a href="#" className="font-medium hover:underline" style={{ color: 'var(--pregame-orange)' }}>
-                Contact us to get started
-              </a>
+              <Link to="/venue/signup" className="font-medium hover:underline" style={{ color: 'var(--pregame-orange)' }}>
+                Create your venue account
+              </Link>
             </p>
           </div>
         </div>
