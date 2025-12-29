@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../../../config/api_keys.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/services/venue_photo_service.dart';
 import '../../data/services/nearby_venues_service.dart';
 import '../bloc/nearby_venues_cubit.dart';
 
@@ -284,11 +286,54 @@ class NearbyVenuesWidget extends StatelessWidget {
   }
 }
 
-/// Card displaying a single nearby venue
-class _NearbyVenueCard extends StatelessWidget {
+/// Card displaying a single nearby venue with photo and reviews
+class _NearbyVenueCard extends StatefulWidget {
   final NearbyVenueResult venue;
 
   const _NearbyVenueCard({required this.venue});
+
+  @override
+  State<_NearbyVenueCard> createState() => _NearbyVenueCardState();
+}
+
+class _NearbyVenueCardState extends State<_NearbyVenueCard> {
+  final VenuePhotoService _photoService = VenuePhotoService();
+  String? _photoUrl;
+  bool _isLoadingPhoto = true;
+  bool _photoLoadAttempted = false;
+
+  NearbyVenueResult get venue => widget.venue;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPhoto();
+  }
+
+  Future<void> _loadPhoto() async {
+    if (_photoLoadAttempted) return;
+    _photoLoadAttempted = true;
+
+    try {
+      await _photoService.initialize();
+      final url = await _photoService.getPrimaryPhotoUrl(
+        venue.place.placeId,
+        apiKey: ApiKeys.googlePlaces,
+        maxWidth: 200,
+      );
+      if (mounted) {
+        setState(() {
+          _photoUrl = url;
+          _isLoadingPhoto = false;
+        });
+      }
+    } catch (e) {
+      debugPrint('Error loading venue photo: $e');
+      if (mounted) {
+        setState(() => _isLoadingPhoto = false);
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -308,21 +353,8 @@ class _NearbyVenueCard extends StatelessWidget {
             padding: const EdgeInsets.all(12),
             child: Row(
               children: [
-                // Type icon
-                Container(
-                  width: 48,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: AppTheme.primaryPurple.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Center(
-                    child: Text(
-                      venue.typeIcon,
-                      style: const TextStyle(fontSize: 24),
-                    ),
-                  ),
-                ),
+                // Photo or type icon
+                _buildPhotoSection(),
                 const SizedBox(width: 12),
                 // Venue info
                 Expanded(
@@ -340,17 +372,19 @@ class _NearbyVenueCard extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(height: 4),
+                      // Type row
+                      Text(
+                        venue.primaryType,
+                        style: const TextStyle(
+                          color: Colors.white54,
+                          fontSize: 12,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      // Rating and price row
                       Row(
                         children: [
-                          Text(
-                            venue.primaryType,
-                            style: const TextStyle(
-                              color: Colors.white54,
-                              fontSize: 12,
-                            ),
-                          ),
                           if (venue.place.rating != null) ...[
-                            const SizedBox(width: 8),
                             const Icon(Icons.star, color: AppTheme.accentGold, size: 14),
                             const SizedBox(width: 2),
                             Text(
@@ -361,6 +395,18 @@ class _NearbyVenueCard extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
+                            // Review count
+                            if (venue.place.userRatingsTotal != null &&
+                                venue.place.userRatingsTotal! > 0) ...[
+                              const SizedBox(width: 4),
+                              Text(
+                                '(${_formatReviewCount(venue.place.userRatingsTotal!)})',
+                                style: const TextStyle(
+                                  color: Colors.white38,
+                                  fontSize: 11,
+                                ),
+                              ),
+                            ],
                           ],
                           if (venue.place.priceLevel != null) ...[
                             const SizedBox(width: 8),
@@ -419,6 +465,73 @@ class _NearbyVenueCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Widget _buildPhotoSection() {
+    return Container(
+      width: 72,
+      height: 72,
+      decoration: BoxDecoration(
+        color: AppTheme.primaryPurple.withOpacity(0.2),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: _isLoadingPhoto
+            ? Center(
+                child: SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    color: AppTheme.primaryPurple.withOpacity(0.5),
+                  ),
+                ),
+              )
+            : _photoUrl != null
+                ? Image.network(
+                    _photoUrl!,
+                    fit: BoxFit.cover,
+                    width: 72,
+                    height: 72,
+                    loadingBuilder: (context, child, loadingProgress) {
+                      if (loadingProgress == null) return child;
+                      return Center(
+                        child: SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: AppTheme.primaryPurple.withOpacity(0.5),
+                            value: loadingProgress.expectedTotalBytes != null
+                                ? loadingProgress.cumulativeBytesLoaded /
+                                    loadingProgress.expectedTotalBytes!
+                                : null,
+                          ),
+                        ),
+                      );
+                    },
+                    errorBuilder: (_, __, ___) => _buildFallbackIcon(),
+                  )
+                : _buildFallbackIcon(),
+      ),
+    );
+  }
+
+  Widget _buildFallbackIcon() {
+    return Center(
+      child: Text(
+        venue.typeIcon,
+        style: const TextStyle(fontSize: 28),
+      ),
+    );
+  }
+
+  String _formatReviewCount(int count) {
+    if (count >= 1000) {
+      return '${(count / 1000).toStringAsFixed(1)}k';
+    }
+    return count.toString();
   }
 
   Future<void> _openInMaps() async {
