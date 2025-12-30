@@ -11,3 +11,4 @@ export 'bracket.dart';
 export 'user_preferences.dart';
 export 'match_prediction.dart';
 export 'ai_match_prediction.dart';
+export 'head_to_head.dart';
