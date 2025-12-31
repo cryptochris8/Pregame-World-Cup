@@ -16,7 +16,8 @@
     "fetch-manager-photos-v2": "ts-node src/fetch-manager-photos-v2.ts",
     "fetch-all-photos-v2": "npm run fetch-player-photos-v2 && npm run fetch-manager-photos-v2",
     "check-photos": "ts-node src/check-photos.ts",
-    "check-photos-v2": "ts-node src/check-photos-v2.ts"
+    "check-photos-v2": "ts-node src/check-photos-v2.ts",
+    "seed-team-players": "ts-node src/seed-team-players.ts"
   },
   "engines": {
     "node": "22"

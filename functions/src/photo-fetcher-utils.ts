@@ -104,20 +104,6 @@ export class TheSportsDBService {
 
 const WIKIPEDIA_API_URL = 'https://en.wikipedia.org/w/api.php';
 
-interface WikiImageInfo {
-  url: string;
-}
-
-interface WikiPageImages {
-  query?: {
-    pages: {
-      [key: string]: {
-        imageinfo?: WikiImageInfo[];
-      };
-    };
-  };
-}
-
 interface WikiSearchResult {
   query?: {
     search: Array<{
@@ -249,9 +235,9 @@ export class ImageDownloadService {
 // ============================================================================
 
 export class FirebaseStorageService {
-  private bucket: admin.storage.Bucket;
+  private bucket: any;
 
-  constructor(bucket: admin.storage.Bucket) {
+  constructor(bucket: any) {
     this.bucket = bucket;
   }
 
@@ -357,7 +343,7 @@ export class PhotoFetcher {
   private rateDelayMs: number;
 
   constructor(
-    bucket: admin.storage.Bucket,
+    bucket: any,
     db: admin.firestore.Firestore,
     rateDelayMs: number = 500
   ) {
@@ -462,7 +448,7 @@ export class PhotoFetcher {
       entityType,
       entityId,
       fifaCode,
-      { source: fetchResult.source }
+      fetchResult.source ? { source: fetchResult.source } : undefined
     );
 
     if (!uploadResult.success) {
