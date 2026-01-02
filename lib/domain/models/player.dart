@@ -25,7 +25,12 @@ class Player {
   final int assists;
   final int worldCupAppearances;
   final int worldCupGoals;
+  final int worldCupAssists;
   final List<int> previousWorldCups;
+  final List<WorldCupTournamentStats> worldCupTournamentStats;
+  final List<String> worldCupAwards;
+  final List<String> memorableMoments;
+  final int worldCupLegacyRating;
   final PlayerStats stats;
   final List<String> honors;
   final List<String> strengths;
@@ -60,7 +65,12 @@ class Player {
     required this.assists,
     required this.worldCupAppearances,
     required this.worldCupGoals,
+    this.worldCupAssists = 0,
     required this.previousWorldCups,
+    this.worldCupTournamentStats = const [],
+    this.worldCupAwards = const [],
+    this.memorableMoments = const [],
+    this.worldCupLegacyRating = 0,
     required this.stats,
     required this.honors,
     required this.strengths,
@@ -100,7 +110,14 @@ class Player {
       assists: data['assists'] ?? 0,
       worldCupAppearances: data['worldCupAppearances'] ?? 0,
       worldCupGoals: data['worldCupGoals'] ?? 0,
+      worldCupAssists: data['worldCupAssists'] ?? 0,
       previousWorldCups: List<int>.from(data['previousWorldCups'] ?? []),
+      worldCupTournamentStats: (data['worldCupTournamentStats'] as List<dynamic>?)
+          ?.map((s) => WorldCupTournamentStats.fromMap(s as Map<String, dynamic>))
+          .toList() ?? const [],
+      worldCupAwards: List<String>.from(data['worldCupAwards'] ?? []),
+      memorableMoments: List<String>.from(data['memorableMoments'] ?? []),
+      worldCupLegacyRating: data['worldCupLegacyRating'] ?? 0,
       stats: PlayerStats.fromMap(data['stats'] ?? {}),
       honors: List<String>.from(data['honors'] ?? []),
       strengths: List<String>.from(data['strengths'] ?? []),
@@ -139,7 +156,12 @@ class Player {
       'assists': assists,
       'worldCupAppearances': worldCupAppearances,
       'worldCupGoals': worldCupGoals,
+      'worldCupAssists': worldCupAssists,
       'previousWorldCups': previousWorldCups,
+      'worldCupTournamentStats': worldCupTournamentStats.map((s) => s.toMap()).toList(),
+      'worldCupAwards': worldCupAwards,
+      'memorableMoments': memorableMoments,
+      'worldCupLegacyRating': worldCupLegacyRating,
       'stats': stats.toMap(),
       'honors': honors,
       'strengths': strengths,
@@ -338,5 +360,58 @@ class SocialMedia {
       return '${(followers / 1000).toStringAsFixed(0)}K';
     }
     return followers.toString();
+  }
+}
+
+/// World Cup tournament statistics for a specific year
+class WorldCupTournamentStats {
+  final int year;
+  final int matches;
+  final int goals;
+  final int assists;
+  final int? yellowCards;
+  final int? redCards;
+  final int? minutesPlayed;
+  final String stage;
+  final String? keyMoment;
+
+  WorldCupTournamentStats({
+    required this.year,
+    required this.matches,
+    required this.goals,
+    required this.assists,
+    this.yellowCards,
+    this.redCards,
+    this.minutesPlayed,
+    required this.stage,
+    this.keyMoment,
+  });
+
+  factory WorldCupTournamentStats.fromMap(Map<String, dynamic> map) {
+    return WorldCupTournamentStats(
+      year: map['year'] ?? 0,
+      matches: map['matches'] ?? 0,
+      goals: map['goals'] ?? 0,
+      assists: map['assists'] ?? 0,
+      yellowCards: map['yellowCards'],
+      redCards: map['redCards'],
+      minutesPlayed: map['minutesPlayed'],
+      stage: map['stage'] ?? '',
+      keyMoment: map['keyMoment'],
+    );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'year': year,
+      'matches': matches,
+      'goals': goals,
+      'assists': assists,
+      'yellowCards': yellowCards,
+      'redCards': redCards,
+      'minutesPlayed': minutesPlayed,
+      'stage': stage,
+      'keyMoment': keyMoment,
+    };
   }
 }

@@ -642,6 +642,8 @@ class PlayerDetailScreen extends StatelessWidget {
                   _StatRow(label: l10n.internationalAssists, value: '${player.assists}'),
                   _StatRow(label: l10n.worldCupAppearances, value: '${player.worldCupAppearances}'),
                   _StatRow(label: l10n.worldCupGoals, value: '${player.worldCupGoals}'),
+                  if (player.worldCupAssists > 0)
+                    _StatRow(label: 'World Cup Assists', value: '${player.worldCupAssists}'),
                   if (player.previousWorldCups.isNotEmpty)
                     _StatRow(
                       label: l10n.previousWorldCups,
@@ -650,6 +652,12 @@ class PlayerDetailScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            // World Cup History section
+            if (player.worldCupTournamentStats.isNotEmpty ||
+                player.worldCupAwards.isNotEmpty ||
+                player.memorableMoments.isNotEmpty)
+              _WorldCupHistorySection(player: player),
 
             // Honors
             if (player.honors.isNotEmpty)
@@ -825,6 +833,269 @@ class _InfoChip extends StatelessWidget {
     return Chip(
       label: Text(label, style: const TextStyle(fontSize: 12)),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+    );
+  }
+}
+
+/// World Cup History Section - displays tournament stats, awards, and memorable moments
+class _WorldCupHistorySection extends StatelessWidget {
+  final Player player;
+
+  const _WorldCupHistorySection({required this.player});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Header with trophy icon
+            Row(
+              children: [
+                const Icon(Icons.emoji_events, color: Colors.amber, size: 24),
+                const SizedBox(width: 8),
+                const Text(
+                  'World Cup History',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Spacer(),
+                if (player.worldCupLegacyRating > 0)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: _getLegacyColor(player.worldCupLegacyRating),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      '${player.worldCupLegacyRating}/10',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 16),
+
+            // Tournament Stats
+            if (player.worldCupTournamentStats.isNotEmpty) ...[
+              const Text(
+                'Tournament History',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              ),
+              const SizedBox(height: 8),
+              ...player.worldCupTournamentStats.map((stats) =>
+                _TournamentStatsCard(stats: stats),
+              ),
+              const SizedBox(height: 12),
+            ],
+
+            // World Cup Awards
+            if (player.worldCupAwards.isNotEmpty) ...[
+              const Text(
+                'World Cup Awards',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              ),
+              const SizedBox(height: 8),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: player.worldCupAwards.map((award) =>
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [Colors.amber[700]!, Colors.amber[400]!],
+                      ),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(Icons.military_tech, size: 16, color: Colors.white),
+                        const SizedBox(width: 4),
+                        Text(
+                          award,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ).toList(),
+              ),
+              const SizedBox(height: 12),
+            ],
+
+            // Memorable Moments
+            if (player.memorableMoments.isNotEmpty) ...[
+              const Text(
+                'Memorable Moments',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              ),
+              const SizedBox(height: 8),
+              ...player.memorableMoments.asMap().entries.map((entry) =>
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.star, size: 14, color: Colors.amber),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          entry.value,
+                          style: const TextStyle(fontSize: 13),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Color _getLegacyColor(int rating) {
+    if (rating >= 9) return Colors.amber[700]!;
+    if (rating >= 7) return Colors.green[600]!;
+    if (rating >= 5) return Colors.blue[600]!;
+    return Colors.grey[600]!;
+  }
+}
+
+/// Tournament Stats Card - shows individual World Cup performance
+class _TournamentStatsCard extends StatelessWidget {
+  final WorldCupTournamentStats stats;
+
+  const _TournamentStatsCard({required this.stats});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.grey[100],
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: Colors.grey[300]!),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Year and Stage
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'World Cup ${stats.year}',
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: _getStageColor(stats.stage),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  stats.stage,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          // Stats row
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _MiniStat(label: 'Matches', value: stats.matches),
+              _MiniStat(label: 'Goals', value: stats.goals),
+              _MiniStat(label: 'Assists', value: stats.assists),
+            ],
+          ),
+          // Key moment
+          if (stats.keyMoment != null) ...[
+            const SizedBox(height: 8),
+            Text(
+              stats.keyMoment!,
+              style: TextStyle(
+                fontSize: 12,
+                fontStyle: FontStyle.italic,
+                color: Colors.grey[700],
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Color _getStageColor(String stage) {
+    final stageLower = stage.toLowerCase();
+    if (stageLower.contains('winner') || stageLower == 'final') {
+      return Colors.amber[700]!;
+    } else if (stageLower.contains('third')) {
+      return Colors.brown[400]!;
+    } else if (stageLower.contains('semi')) {
+      return Colors.purple[400]!;
+    } else if (stageLower.contains('quarter')) {
+      return Colors.blue[400]!;
+    } else if (stageLower.contains('round of 16')) {
+      return Colors.teal[400]!;
+    } else {
+      return Colors.grey[500]!;
+    }
+  }
+}
+
+/// Mini stat display for tournament cards
+class _MiniStat extends StatelessWidget {
+  final String label;
+  final int value;
+
+  const _MiniStat({required this.label, required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          '$value',
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          ),
+        ),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 11,
+            color: Colors.grey[600],
+          ),
+        ),
+      ],
     );
   }
 }
