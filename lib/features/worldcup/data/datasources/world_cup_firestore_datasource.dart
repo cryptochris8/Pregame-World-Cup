@@ -13,6 +13,9 @@ class WorldCupFirestoreDataSource {
   static const String _groupsCollection = 'worldcup_groups';
   static const String _bracketCollection = 'worldcup_bracket';
   static const String _venuesCollection = 'worldcup_venues';
+  static const String _headToHeadCollection = 'headToHead';
+  static const String _worldCupHistoryCollection = 'worldCupHistory';
+  static const String _worldCupRecordsCollection = 'worldCupRecords';
 
   WorldCupFirestoreDataSource({
     FirebaseFirestore? firestore,
@@ -527,6 +530,190 @@ class WorldCupFirestoreDataSource {
     } catch (e) {
       debugPrint('Firestore error clearing data: $e');
       throw Exception('Failed to clear data: $e');
+    }
+  }
+
+  // ==================== HEAD TO HEAD ====================
+
+  /// Fetches head-to-head record between two teams
+  Future<HeadToHead?> getHeadToHead(String team1Code, String team2Code) async {
+    try {
+      // Sort codes alphabetically for consistent document ID
+      final codes = [team1Code.toUpperCase(), team2Code.toUpperCase()]..sort();
+      final docId = '${codes[0]}_${codes[1]}';
+
+      final doc = await _firestore
+          .collection(_headToHeadCollection)
+          .doc(docId)
+          .get();
+
+      if (doc.exists && doc.data() != null) {
+        return HeadToHead.fromMap(doc.data()!);
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Firestore error fetching head-to-head: $e');
+      return null;
+    }
+  }
+
+  /// Fetches all head-to-head records for a team
+  Future<List<HeadToHead>> getHeadToHeadForTeam(String teamCode) async {
+    try {
+      final code = teamCode.toUpperCase();
+
+      // Query both team1Code and team2Code
+      final team1Query = await _firestore
+          .collection(_headToHeadCollection)
+          .where('team1Code', isEqualTo: code)
+          .get();
+
+      final team2Query = await _firestore
+          .collection(_headToHeadCollection)
+          .where('team2Code', isEqualTo: code)
+          .get();
+
+      final results = <HeadToHead>[];
+      for (final doc in team1Query.docs) {
+        if (doc.data() != null) {
+          results.add(HeadToHead.fromMap(doc.data()));
+        }
+      }
+      for (final doc in team2Query.docs) {
+        if (doc.data() != null) {
+          results.add(HeadToHead.fromMap(doc.data()));
+        }
+      }
+
+      return results;
+    } catch (e) {
+      debugPrint('Firestore error fetching head-to-head records: $e');
+      return [];
+    }
+  }
+
+  /// Fetches all head-to-head records
+  Future<List<HeadToHead>> getAllHeadToHead() async {
+    try {
+      final snapshot = await _firestore
+          .collection(_headToHeadCollection)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => HeadToHead.fromMap(doc.data()))
+          .toList();
+    } catch (e) {
+      debugPrint('Firestore error fetching all head-to-head: $e');
+      return [];
+    }
+  }
+
+  // ==================== WORLD CUP HISTORY ====================
+
+  /// Fetches all historical World Cup tournaments
+  Future<List<WorldCupTournament>> getAllWorldCupHistory() async {
+    try {
+      final snapshot = await _firestore
+          .collection(_worldCupHistoryCollection)
+          .orderBy('year', descending: true)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => WorldCupTournament.fromFirestore(doc.data()))
+          .toList();
+    } catch (e) {
+      debugPrint('Firestore error fetching World Cup history: $e');
+      return [];
+    }
+  }
+
+  /// Fetches a specific World Cup tournament by year
+  Future<WorldCupTournament?> getWorldCupByYear(int year) async {
+    try {
+      final doc = await _firestore
+          .collection(_worldCupHistoryCollection)
+          .doc('wc_$year')
+          .get();
+
+      if (doc.exists && doc.data() != null) {
+        return WorldCupTournament.fromFirestore(doc.data()!);
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Firestore error fetching World Cup $year: $e');
+      return null;
+    }
+  }
+
+  /// Fetches World Cups won by a specific team
+  Future<List<WorldCupTournament>> getWorldCupsByWinner(String teamCode) async {
+    try {
+      final snapshot = await _firestore
+          .collection(_worldCupHistoryCollection)
+          .where('winnerCode', isEqualTo: teamCode.toUpperCase())
+          .orderBy('year', descending: true)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => WorldCupTournament.fromFirestore(doc.data()))
+          .toList();
+    } catch (e) {
+      debugPrint('Firestore error fetching World Cups by winner: $e');
+      return [];
+    }
+  }
+
+  // ==================== WORLD CUP RECORDS ====================
+
+  /// Fetches all World Cup records
+  Future<List<WorldCupRecord>> getAllWorldCupRecords() async {
+    try {
+      final snapshot = await _firestore
+          .collection(_worldCupRecordsCollection)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => WorldCupRecord.fromFirestore(doc.data(), doc.id))
+          .toList();
+    } catch (e) {
+      debugPrint('Firestore error fetching World Cup records: $e');
+      return [];
+    }
+  }
+
+  /// Fetches World Cup records by holder type
+  Future<List<WorldCupRecord>> getWorldCupRecordsByType(String holderType) async {
+    try {
+      final snapshot = await _firestore
+          .collection(_worldCupRecordsCollection)
+          .where('holderType', isEqualTo: holderType)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => WorldCupRecord.fromFirestore(doc.data(), doc.id))
+          .toList();
+    } catch (e) {
+      debugPrint('Firestore error fetching World Cup records by type: $e');
+      return [];
+    }
+  }
+
+  /// Fetches a specific World Cup record by category
+  Future<WorldCupRecord?> getWorldCupRecordByCategory(String category) async {
+    try {
+      final docId = category.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '_');
+      final doc = await _firestore
+          .collection(_worldCupRecordsCollection)
+          .doc(docId)
+          .get();
+
+      if (doc.exists && doc.data() != null) {
+        return WorldCupRecord.fromFirestore(doc.data()!, doc.id);
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Firestore error fetching World Cup record: $e');
+      return null;
     }
   }
 }

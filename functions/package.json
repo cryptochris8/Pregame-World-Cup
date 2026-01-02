@@ -17,7 +17,12 @@
     "fetch-all-photos-v2": "npm run fetch-player-photos-v2 && npm run fetch-manager-photos-v2",
     "check-photos": "ts-node src/check-photos.ts",
     "check-photos-v2": "ts-node src/check-photos-v2.ts",
-    "seed-team-players": "ts-node src/seed-team-players.ts"
+    "seed-team-players": "ts-node src/seed-team-players.ts",
+    "seed-managers": "ts-node src/seed-managers.ts",
+    "seed-head-to-head": "ts-node src/seed-head-to-head.ts",
+    "seed-world-cup-history": "ts-node src/seed-world-cup-history.ts",
+    "seed-player-wc-stats": "ts-node src/seed-player-world-cup-stats.ts",
+    "seed-all": "npm run seed-team-players && npm run seed-managers && npm run seed-head-to-head && npm run seed-world-cup-history && npm run seed-player-wc-stats"
   },
   "engines": {
     "node": "22"

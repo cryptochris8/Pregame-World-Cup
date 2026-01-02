@@ -576,41 +576,18 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
   }
 
   Widget _buildHeadToHeadSection() {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppTheme.backgroundCard,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Row(
-              children: [
-                Icon(Icons.compare_arrows, color: Colors.white),
-                SizedBox(width: 8),
-                Text(
-                  'Head to Head',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            const Center(
-              child: Text(
-                'Historical data coming soon',
-                style: TextStyle(color: Colors.white38),
-              ),
-            ),
-          ],
-        ),
-      ),
+    // Only show if both teams have valid codes
+    if (match.homeTeamCode == null || match.awayTeamCode == null) {
+      return const SizedBox.shrink();
+    }
+
+    return MatchupPreviewWidget(
+      team1Code: match.homeTeamCode!,
+      team2Code: match.awayTeamCode!,
+      team1Name: match.homeTeamName,
+      team2Name: match.awayTeamName,
+      team1FlagUrl: match.homeTeamFlagUrl,
+      team2FlagUrl: match.awayTeamFlagUrl,
     );
   }
 
