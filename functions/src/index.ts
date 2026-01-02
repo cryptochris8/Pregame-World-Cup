@@ -24,7 +24,7 @@ const db = admin.firestore();
 functions.logger.info("Firestore instance obtained. Project ID from Admin SDK config:", admin.app().options.projectId);
 
 const SPORTSDATA_API_KEY = process.env.SPORTSDATA_KEY;
-const PLACES_API_KEY = process.env.PLACES_API_KEY;
+const PLACES_API_KEY = process.env.PLACES_API_KEY || functions.config().places?.api_key || functions.config().google?.places_api_key;
 
 // Enhanced function to fetch schedule data using SportsData.io SDK
 async function fetchScheduleFromApi(season: string): Promise<any[]> {
@@ -281,6 +281,17 @@ export const testSportsDataSDK = functions.https.onRequest(async (request, respo
 });
 
 export const getNearbyVenuesHttp = functions.https.onRequest(async (request, response) => {
+  // Set CORS headers
+  response.set('Access-Control-Allow-Origin', '*');
+  response.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  response.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Handle preflight OPTIONS request
+  if (request.method === 'OPTIONS') {
+    response.status(204).send('');
+    return;
+  }
+
   functions.logger.info("getNearbyVenuesHttp function triggered!");
 
   const lat = request.query.lat?.toString();
@@ -322,6 +333,9 @@ export const getNearbyVenuesHttp = functions.https.onRequest(async (request, res
         const places = placesResponse.data.results;
         for (const place of places) {
           if (place.place_id && place.name && !fetchedPlaceIds.has(place.place_id)) {
+            // Get the first photo reference if available
+            const photoReference = place.photos?.[0]?.photo_reference || null;
+
             allResults.push({
               placeId: place.place_id,
               name: place.name,
@@ -331,6 +345,8 @@ export const getNearbyVenuesHttp = functions.https.onRequest(async (request, res
               types: place.types,
               latitude: place.geometry?.location?.lat,
               longitude: place.geometry?.location?.lng,
+              priceLevel: place.price_level,
+              photoReference: photoReference,
             });
             fetchedPlaceIds.add(place.place_id);
           }
@@ -353,6 +369,56 @@ export const getNearbyVenuesHttp = functions.https.onRequest(async (request, res
       functions.logger.error("Google Places API Full Error Response:", error.response.status, error.response.data);
     }
     response.status(500).send("Failed to fetch data from Google Places API.");
+  }
+});
+
+
+// Cloud Function to proxy Google Places photo requests (avoids CORS issues in browser)
+// Using v1 (Gen 1) functions for simpler deployment without Cloud Run container issues
+export const placePhotoProxy = functionsV1.https.onRequest(async (request, response) => {
+  // Set CORS headers
+  response.set('Access-Control-Allow-Origin', '*');
+  response.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  response.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Handle preflight OPTIONS request
+  if (request.method === 'OPTIONS') {
+    response.status(204).send('');
+    return;
+  }
+
+  const photoReference = request.query.photoReference?.toString();
+  const maxWidth = request.query.maxWidth?.toString() || '400';
+
+  if (!photoReference) {
+    response.status(400).send("Missing photoReference query parameter.");
+    return;
+  }
+
+  if (!PLACES_API_KEY) {
+    functions.logger.error("PLACES_API_KEY not configured");
+    response.status(500).send("API key configuration error.");
+    return;
+  }
+
+  try {
+    const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?photo_reference=${photoReference}&maxwidth=${maxWidth}&key=${PLACES_API_KEY}`;
+
+    // Fetch the photo from Google and stream it back
+    const photoResponse = await axios.get(photoUrl, {
+      responseType: 'arraybuffer',
+      maxRedirects: 5,
+      timeout: 10000,
+    });
+
+    // Set appropriate headers for the image
+    response.set('Content-Type', photoResponse.headers['content-type'] || 'image/jpeg');
+    response.set('Cache-Control', 'public, max-age=86400'); // Cache for 24 hours
+    response.send(photoResponse.data);
+
+  } catch (error: any) {
+    functions.logger.error("Error fetching place photo:", error.message);
+    response.status(500).send("Failed to fetch photo.");
   }
 });
 

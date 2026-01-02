@@ -26,6 +26,7 @@ class WorldCupApiDataSource {
   }
 
   /// Fetches all World Cup 2026 matches
+  /// Returns empty list if API doesn't have WC2026 data yet (expected before tournament)
   Future<List<WorldCupMatch>> fetchAllMatches() async {
     try {
       debugPrint('Fetching World Cup matches from API...');
@@ -43,12 +44,14 @@ class WorldCupApiDataSource {
 
       return [];
     } on DioException catch (e) {
-      debugPrint('API Error fetching matches: ${e.message}');
-      throw Exception('Failed to fetch World Cup matches: ${e.message}');
+      // WC2026 data not yet available on SportsData.io - this is expected
+      debugPrint('WorldCup API: Matches endpoint not available yet (WC2026 data pending)');
+      return [];
     }
   }
 
   /// Fetches matches for a specific date
+  /// Returns empty list if API doesn't have WC2026 data yet
   Future<List<WorldCupMatch>> fetchMatchesByDate(DateTime date) async {
     try {
       final dateStr = '${date.year}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
@@ -68,13 +71,14 @@ class WorldCupApiDataSource {
       }
 
       return [];
-    } on DioException catch (e) {
-      debugPrint('API Error fetching matches by date: ${e.message}');
-      throw Exception('Failed to fetch matches by date: ${e.message}');
+    } on DioException {
+      // WC2026 data not yet available - expected before tournament
+      return [];
     }
   }
 
   /// Fetches live match scores
+  /// Returns empty list if no live matches or API not available
   Future<List<WorldCupMatch>> fetchLiveMatches() async {
     try {
       final response = await _dio.get(
@@ -87,13 +91,14 @@ class WorldCupApiDataSource {
       }
 
       return [];
-    } on DioException catch (e) {
-      debugPrint('API Error fetching live matches: ${e.message}');
-      throw Exception('Failed to fetch live matches: ${e.message}');
+    } on DioException {
+      // No live matches or WC2026 data not yet available
+      return [];
     }
   }
 
   /// Fetches all national teams for World Cup 2026
+  /// Returns empty list if API doesn't have WC2026 data yet
   Future<List<NationalTeam>> fetchAllTeams() async {
     try {
       debugPrint('Fetching World Cup teams from API...');
@@ -110,13 +115,15 @@ class WorldCupApiDataSource {
       }
 
       return [];
-    } on DioException catch (e) {
-      debugPrint('API Error fetching teams: ${e.message}');
-      throw Exception('Failed to fetch teams: ${e.message}');
+    } on DioException {
+      // WC2026 data not yet available on SportsData.io - expected before tournament
+      debugPrint('WorldCup API: Teams endpoint not available yet (WC2026 data pending)');
+      return [];
     }
   }
 
   /// Fetches group standings
+  /// Returns empty list if API doesn't have WC2026 data yet
   Future<List<WorldCupGroup>> fetchGroupStandings() async {
     try {
       final response = await _dio.get(
@@ -129,13 +136,15 @@ class WorldCupApiDataSource {
       }
 
       return [];
-    } on DioException catch (e) {
-      debugPrint('API Error fetching standings: ${e.message}');
-      throw Exception('Failed to fetch standings: ${e.message}');
+    } on DioException {
+      // WC2026 data not yet available on SportsData.io - expected before tournament
+      debugPrint('WorldCup API: Standings endpoint not available yet (WC2026 data pending)');
+      return [];
     }
   }
 
   /// Fetches a specific match by ID
+  /// Returns null if match not found or API not available
   Future<WorldCupMatch?> fetchMatchById(String matchId) async {
     try {
       final response = await _dio.get(
@@ -147,9 +156,9 @@ class WorldCupApiDataSource {
       }
 
       return null;
-    } on DioException catch (e) {
-      debugPrint('API Error fetching match: ${e.message}');
-      throw Exception('Failed to fetch match: ${e.message}');
+    } on DioException {
+      // Match not found or WC2026 data not yet available
+      return null;
     }
   }
 

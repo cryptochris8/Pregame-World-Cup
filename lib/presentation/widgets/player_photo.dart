@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../domain/models/player.dart';
 
 /// Reusable widget for displaying player photos with caching and error handling.
@@ -118,20 +119,17 @@ class PlayerPhoto extends StatelessWidget {
     return Container(
       color: Colors.grey[200],
       child: Center(
-        child: playerName != null && playerName!.isNotEmpty
-            ? Text(
-                _getInitials(playerName!),
-                style: TextStyle(
-                  fontSize: size * 0.3,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[600],
-                ),
-              )
-            : Icon(
-                Icons.person,
-                size: size * 0.5,
-                color: Colors.grey[400],
-              ),
+        child: Padding(
+          padding: EdgeInsets.all(size * 0.1),
+          child: SvgPicture.asset(
+            'assets/images/player_silhouette.svg',
+            fit: BoxFit.contain,
+            colorFilter: ColorFilter.mode(
+              Colors.grey[400]!,
+              BlendMode.srcIn,
+            ),
+          ),
+        ),
       ),
     );
   }

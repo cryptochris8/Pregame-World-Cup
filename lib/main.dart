@@ -166,9 +166,9 @@ Future<void> main() async {
   _initializeAIServicesBackground();
 
   // Step 7.6: AI Knowledge Base Initialization (Background)
-  print('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
-  // Initialize AI knowledge base in the background to avoid blocking the UI
-  _initializeAIKnowledgeBaseBackground();
+  // DISABLED: College football AI knowledge base not needed for World Cup app
+  // print('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
+  // _initializeAIKnowledgeBaseBackground();
 
   // Step 8: Launch App
   print('🚀 INIT STEP 8: Launching App');

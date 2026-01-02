@@ -1,0 +1,18 @@
+  Widget _buildPlaceholder() {
+    return Container(
+      color: Colors.grey[200],
+      child: Center(
+        child: Padding(
+          padding: EdgeInsets.all(size * 0.1),
+          child: SvgPicture.asset(
+            'assets/images/player_silhouette.svg',
+            fit: BoxFit.contain,
+            colorFilter: ColorFilter.mode(
+              Colors.grey[400]!,
+              BlendMode.srcIn,
+            ),
+          ),
+        ),
+      ),
+    );
+  }

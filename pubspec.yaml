@@ -39,6 +39,7 @@ dependencies:
   url_launcher: ^6.2.1 # For opening external links (e.g., map directions)
   image_picker: ^1.0.4 # For photo sharing in social features
   cached_network_image: ^3.3.0 # For efficient image loading
+  flutter_svg: ^2.0.9 # For SVG support (player silhouettes)
   flutter_rating_bar: ^4.0.1 # For venue ratings
   geolocator: ^10.1.0 # For location services
   permission_handler: ^11.1.0 # For handling permissions
@@ -99,6 +100,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/logos/
+    - assets/images/
     # Temporarily removed dialogflow credentials
     # - assets/credentials/dialogflow_credentials.json
     # - images/a_dot_ham.jpeg

@@ -68,6 +68,9 @@ export class TheSportsDBService {
       const url = `${SPORTSDB_BASE_URL}/searchplayers.php?p=${encodeURIComponent(name)}`;
       const response = await axios.get<SportsDBResponse>(url, {
         timeout: THESPORTSDB_TIMEOUT,
+        headers: {
+          'User-Agent': 'PregameWorldCup/1.0 (https://pregame.app; contact@pregame.app)',
+        },
       });
 
       if (response.data.player && response.data.player.length > 0) {
@@ -125,6 +128,9 @@ export class WikipediaService {
 
       const searchResponse = await axios.get<WikiSearchResult>(searchUrl.toString(), {
         timeout: THESPORTSDB_TIMEOUT,
+        headers: {
+          'User-Agent': 'PregameWorldCup/1.0 (https://pregame.app; contact@pregame.app)',
+        },
       });
 
       if (!searchResponse.data.query?.search || searchResponse.data.query.search.length === 0) {
@@ -143,6 +149,9 @@ export class WikipediaService {
 
       const imageResponse = await axios.get(imageUrl.toString(), {
         timeout: THESPORTSDB_TIMEOUT,
+        headers: {
+          'User-Agent': 'PregameWorldCup/1.0 (https://pregame.app; contact@pregame.app)',
+        },
       });
 
       const pages = imageResponse.data.query?.pages;
@@ -178,6 +187,9 @@ export class WikipediaService {
 
       const response = await axios.get(commonsUrl.toString(), {
         timeout: THESPORTSDB_TIMEOUT,
+        headers: {
+          'User-Agent': 'PregameWorldCup/1.0 (https://pregame.app; contact@pregame.app)',
+        },
       });
 
       const pages = response.data.query?.pages;

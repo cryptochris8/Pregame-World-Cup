@@ -6,12 +6,13 @@ class Place extends Equatable {
   final String? vicinity; // Address or general area
   final double? rating;
   final int? userRatingsTotal;
-  final List<String>? types; // e.g., ["restaurant", "bar", "point_of_interest"]
+  final List<String>? types; // e.g., [restaurant, bar, point_of_interest]
   final double? latitude;
   final double? longitude;
   final int? priceLevel;
   final OpeningHours? openingHours;
   final Geometry? geometry;
+  final String? photoReference; // Google Places photo reference
   // Add other fields as needed, like photo references, opening hours, etc.
 
   const Place({
@@ -26,6 +27,7 @@ class Place extends Equatable {
     this.priceLevel,
     this.openingHours,
     this.geometry,
+    this.photoReference,
   });
 
   @override
@@ -41,28 +43,35 @@ class Place extends Equatable {
     priceLevel,
     openingHours,
     geometry,
+    photoReference,
   ];
 
   // Basic factory for parsing from Google Places API Nearby Search result
-  // This will need to be adjusted based on the exact structure of the API response
+  // Supports both snake_case (direct Google API) and camelCase (Cloud Function) formats
   factory Place.fromJson(Map<String, dynamic> json) {
     return Place(
-      // Provide fallbacks for required String fields to prevent cast errors
-      placeId: json['place_id'] ?? '',
+      // Handle both place_id (Google API) and placeId (Cloud Function)
+      placeId: json['place_id'] ?? json['placeId'] ?? '',
       name: json['name'] ?? 'Unknown Place',
       vicinity: json['vicinity'] as String?,
       rating: (json['rating'] as num?)?.toDouble(),
-      userRatingsTotal: json['user_ratings_total'] as int?,
+      // Handle both user_ratings_total and userRatingsTotal
+      userRatingsTotal: (json['user_ratings_total'] ?? json['userRatingsTotal']) as int?,
       types: (json['types'] as List<dynamic>?)?.cast<String>(),
-      latitude: (json['geometry']?['location']?['lat'] as num?)?.toDouble(),
-      longitude: (json['geometry']?['location']?['lng'] as num?)?.toDouble(),
-      priceLevel: json['price_level'] as int?,
-      openingHours: json['opening_hours'] != null 
+      // Handle both flat latitude/longitude (Cloud Function) and nested geometry (Google API)
+      latitude: (json['latitude'] as num?)?.toDouble() ??
+          (json['geometry']?['location']?['lat'] as num?)?.toDouble(),
+      longitude: (json['longitude'] as num?)?.toDouble() ??
+          (json['geometry']?['location']?['lng'] as num?)?.toDouble(),
+      // Handle both price_level and priceLevel
+      priceLevel: (json['price_level'] ?? json['priceLevel']) as int?,
+      openingHours: json['opening_hours'] != null
           ? OpeningHours.fromJson(json['opening_hours'])
           : null,
-      geometry: json['geometry'] != null 
+      geometry: json['geometry'] != null
           ? Geometry.fromJson(json['geometry'])
           : null,
+      photoReference: json['photoReference'] as String? ?? json['photo_reference'] as String?,
     );
   }
 
@@ -78,6 +87,7 @@ class Place extends Equatable {
       'price_level': priceLevel,
       'opening_hours': openingHours?.toJson(),
       'geometry': geometry?.toJson(),
+      'photoReference': photoReference,
     };
   }
 }
@@ -107,7 +117,7 @@ class Geometry {
 
   factory Geometry.fromJson(Map<String, dynamic> json) {
     return Geometry(
-      location: json['location'] != null 
+      location: json['location'] != null
           ? Location.fromJson(json['location'])
           : null,
     );
@@ -139,4 +149,4 @@ class Location {
       'lng': lng,
     };
   }
-} 
+}

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../../../config/api_keys.dart';
 import '../../../../config/app_theme.dart';
-import '../../../../core/services/venue_photo_service.dart';
 import '../../data/services/nearby_venues_service.dart';
 import '../bloc/nearby_venues_cubit.dart';
 
@@ -297,41 +295,28 @@ class _NearbyVenueCard extends StatefulWidget {
 }
 
 class _NearbyVenueCardState extends State<_NearbyVenueCard> {
-  final VenuePhotoService _photoService = VenuePhotoService();
   String? _photoUrl;
-  bool _isLoadingPhoto = true;
-  bool _photoLoadAttempted = false;
 
   NearbyVenueResult get venue => widget.venue;
 
   @override
   void initState() {
     super.initState();
-    _loadPhoto();
+    _buildPhotoUrl();
   }
 
-  Future<void> _loadPhoto() async {
-    if (_photoLoadAttempted) return;
-    _photoLoadAttempted = true;
-
-    try {
-      await _photoService.initialize();
-      final url = await _photoService.getPrimaryPhotoUrl(
-        venue.place.placeId,
-        apiKey: ApiKeys.googlePlaces,
-        maxWidth: 200,
-      );
-      if (mounted) {
-        setState(() {
-          _photoUrl = url;
-          _isLoadingPhoto = false;
-        });
-      }
-    } catch (e) {
-      debugPrint('Error loading venue photo: $e');
-      if (mounted) {
-        setState(() => _isLoadingPhoto = false);
-      }
+  void _buildPhotoUrl() {
+    // Use photoReference from the place if available
+    // Route through our Cloud Function proxy to avoid CORS issues in browser
+    final photoRef = venue.place.photoReference;
+    debugPrint('PHOTO DEBUG: ${venue.place.name} - photoRef: ${photoRef != null && photoRef.length > 20 ? photoRef.substring(0, 20) : photoRef ?? "NULL"}...');
+    if (photoRef != null && photoRef.isNotEmpty) {
+      // Use Cloud Function proxy to avoid CORS blocking from browser
+      _photoUrl = 'https://us-central1-pregame-b089e.cloudfunctions.net/placePhotoProxy'
+          '?photoReference=$photoRef&maxWidth=200';
+      debugPrint('PHOTO DEBUG: Built proxy URL for ${venue.place.name}');
+    } else {
+      debugPrint('PHOTO DEBUG: No photoRef for ${venue.place.name}');
     }
   }
 
@@ -477,43 +462,32 @@ class _NearbyVenueCardState extends State<_NearbyVenueCard> {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
-        child: _isLoadingPhoto
-            ? Center(
-                child: SizedBox(
-                  width: 20,
-                  height: 20,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2,
-                    color: AppTheme.primaryPurple.withOpacity(0.5),
-                  ),
-                ),
+        child: _photoUrl != null
+            ? Image.network(
+                _photoUrl!,
+                fit: BoxFit.cover,
+                width: 72,
+                height: 72,
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return Center(
+                    child: SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: AppTheme.primaryPurple.withOpacity(0.5),
+                        value: loadingProgress.expectedTotalBytes != null
+                            ? loadingProgress.cumulativeBytesLoaded /
+                                loadingProgress.expectedTotalBytes!
+                            : null,
+                      ),
+                    ),
+                  );
+                },
+                errorBuilder: (_, __, ___) => _buildFallbackIcon(),
               )
-            : _photoUrl != null
-                ? Image.network(
-                    _photoUrl!,
-                    fit: BoxFit.cover,
-                    width: 72,
-                    height: 72,
-                    loadingBuilder: (context, child, loadingProgress) {
-                      if (loadingProgress == null) return child;
-                      return Center(
-                        child: SizedBox(
-                          width: 20,
-                          height: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppTheme.primaryPurple.withOpacity(0.5),
-                            value: loadingProgress.expectedTotalBytes != null
-                                ? loadingProgress.cumulativeBytesLoaded /
-                                    loadingProgress.expectedTotalBytes!
-                                : null,
-                          ),
-                        ),
-                      );
-                    },
-                    errorBuilder: (_, __, ___) => _buildFallbackIcon(),
-                  )
-                : _buildFallbackIcon(),
+            : _buildFallbackIcon(),
       ),
     );
   }
