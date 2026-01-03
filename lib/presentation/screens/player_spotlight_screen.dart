@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import '../../config/app_theme.dart';
 import '../../l10n/app_localizations.dart';
 import '../../domain/models/player.dart';
 import '../../data/services/player_service.dart';
@@ -687,27 +687,53 @@ class PlayerDetailScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(l10n.strengths, style: const TextStyle(fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: 8),
                   Wrap(
                     spacing: 8,
                     runSpacing: 8,
                     children: player.strengths.map((s) =>
-                      Chip(
-                        label: Text(s, style: const TextStyle(fontSize: 12)),
-                        backgroundColor: Colors.green[100],
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [AppTheme.secondaryEmerald, Color(0xFF059669)],
+                          ),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Text(
+                          s,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
                     ).toList(),
                   ),
                   const SizedBox(height: 16),
                   Text(l10n.weaknesses, style: const TextStyle(fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: 8),
                   Wrap(
                     spacing: 8,
                     runSpacing: 8,
                     children: player.weaknesses.map((w) =>
-                      Chip(
-                        label: Text(w, style: const TextStyle(fontSize: 12)),
-                        backgroundColor: Colors.red[100],
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [AppTheme.primaryOrange, AppTheme.primaryRed],
+                          ),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Text(
+                          w,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
                     ).toList(),
                   ),
@@ -990,9 +1016,9 @@ class _TournamentStatsCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.grey[100],
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: Colors.grey[300]!),
+        color: AppTheme.backgroundElevated,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.white.withOpacity(0.1)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1006,13 +1032,16 @@ class _TournamentStatsCard extends StatelessWidget {
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
+                  color: Colors.white,
                 ),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 decoration: BoxDecoration(
-                  color: _getStageColor(stats.stage),
-                  borderRadius: BorderRadius.circular(8),
+                  gradient: LinearGradient(
+                    colors: _getStageGradient(stats.stage),
+                  ),
+                  borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
                   stats.stage,
@@ -1025,7 +1054,7 @@ class _TournamentStatsCard extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 12),
           // Stats row
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -1037,13 +1066,13 @@ class _TournamentStatsCard extends StatelessWidget {
           ),
           // Key moment
           if (stats.keyMoment != null) ...[
-            const SizedBox(height: 8),
+            const SizedBox(height: 10),
             Text(
               stats.keyMoment!,
               style: TextStyle(
                 fontSize: 12,
                 fontStyle: FontStyle.italic,
-                color: Colors.grey[700],
+                color: Colors.white.withOpacity(0.7),
               ),
             ),
           ],
@@ -1052,20 +1081,20 @@ class _TournamentStatsCard extends StatelessWidget {
     );
   }
 
-  Color _getStageColor(String stage) {
+  List<Color> _getStageGradient(String stage) {
     final stageLower = stage.toLowerCase();
     if (stageLower.contains('winner') || stageLower == 'final') {
-      return Colors.amber[700]!;
+      return [AppTheme.accentGold, const Color(0xFFD97706)];
     } else if (stageLower.contains('third')) {
-      return Colors.brown[400]!;
+      return [const Color(0xFF92400E), const Color(0xFF78350F)];
     } else if (stageLower.contains('semi')) {
-      return Colors.purple[400]!;
+      return [AppTheme.primaryPurple, AppTheme.secondaryPurple];
     } else if (stageLower.contains('quarter')) {
-      return Colors.blue[400]!;
+      return [AppTheme.primaryBlue, const Color(0xFF1D4ED8)];
     } else if (stageLower.contains('round of 16')) {
-      return Colors.teal[400]!;
+      return [const Color(0xFF0D9488), const Color(0xFF0F766E)];
     } else {
-      return Colors.grey[500]!;
+      return [AppTheme.backgroundElevated, const Color(0xFF475569)];
     }
   }
 }
@@ -1085,14 +1114,15 @@ class _MiniStat extends StatelessWidget {
           '$value',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 16,
+            fontSize: 18,
+            color: Colors.white,
           ),
         ),
         Text(
           label,
           style: TextStyle(
             fontSize: 11,
-            color: Colors.grey[600],
+            color: Colors.white.withOpacity(0.6),
           ),
         ),
       ],

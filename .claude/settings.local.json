@@ -66,7 +66,9 @@
       "Bash(functions/src/seed-world-cup-history.ts )",
       "Bash(functions/src/seed-player-world-cup-stats.ts )",
       "Bash(functions/src/seed-managers.ts )",
-      "Bash(functions/package.json)"
+      "Bash(functions/package.json)",
+      "WebFetch(domain:www.fifa.com)",
+      "WebFetch(domain:www.mlssoccer.com)"
     ]
   },
   "enableAllProjectMcpServers": true,

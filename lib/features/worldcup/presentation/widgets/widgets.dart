@@ -15,3 +15,4 @@ export 'prediction_dialog.dart';
 export 'ai_match_insights_widget.dart';
 export 'nearby_venues_widget.dart';
 export 'matchup_preview_widget.dart';
+export 'ai_match_summary_widget.dart';

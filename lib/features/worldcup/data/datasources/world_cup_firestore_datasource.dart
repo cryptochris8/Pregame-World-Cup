@@ -16,6 +16,7 @@ class WorldCupFirestoreDataSource {
   static const String _headToHeadCollection = 'headToHead';
   static const String _worldCupHistoryCollection = 'worldCupHistory';
   static const String _worldCupRecordsCollection = 'worldCupRecords';
+  static const String _matchSummariesCollection = 'matchSummaries';
 
   WorldCupFirestoreDataSource({
     FirebaseFirestore? firestore,
@@ -714,6 +715,46 @@ class WorldCupFirestoreDataSource {
     } catch (e) {
       debugPrint('Firestore error fetching World Cup record: $e');
       return null;
+    }
+  }
+
+  // ==================== MATCH SUMMARIES ====================
+
+  /// Fetches AI match summary for a matchup between two teams
+  Future<MatchSummary?> getMatchSummary(String team1Code, String team2Code) async {
+    try {
+      // Sort codes alphabetically for consistent document ID
+      final codes = [team1Code.toUpperCase(), team2Code.toUpperCase()]..sort();
+      final docId = '${codes[0]}_${codes[1]}';
+
+      final doc = await _firestore
+          .collection(_matchSummariesCollection)
+          .doc(docId)
+          .get();
+
+      if (doc.exists && doc.data() != null) {
+        return MatchSummary.fromFirestore(doc.data()!, doc.id);
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Firestore error fetching match summary: $e');
+      return null;
+    }
+  }
+
+  /// Fetches all match summaries
+  Future<List<MatchSummary>> getAllMatchSummaries() async {
+    try {
+      final snapshot = await _firestore
+          .collection(_matchSummariesCollection)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => MatchSummary.fromFirestore(doc.data(), doc.id))
+          .toList();
+    } catch (e) {
+      debugPrint('Firestore error fetching all match summaries: $e');
+      return [];
     }
   }
 }

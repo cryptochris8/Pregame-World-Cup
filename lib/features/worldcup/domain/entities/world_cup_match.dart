@@ -416,7 +416,23 @@ class WorldCupMatch extends Equatable {
       venueId: data['venueId'] as String?,
       venue: data['venue'] != null
           ? WorldCupVenue.fromMap(data['venue'] as Map<String, dynamic>)
-          : null,
+          : (data['venueName'] != null
+              ? WorldCupVenue(
+                  venueId: 'unknown',
+                  name: data['venueName'] as String,
+                  city: data['venueCity'] as String? ?? '',
+                  country: HostCountry.usa,
+                  capacity: 0,
+                  yearOpened: 0,
+                  latitude: 0,
+                  longitude: 0,
+                  timeZone: '',
+                  utcOffset: 0,
+                  homeTeams: const [],
+                  sports: const [],
+                  hasRoof: false,
+                )
+              : null),
       broadcastChannels: (data['broadcastChannels'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList() ?? [],

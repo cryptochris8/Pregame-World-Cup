@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart' as di;
+import '../../data/datasources/world_cup_firestore_datasource.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/nearby_venues_cubit.dart';
 import '../widgets/widgets.dart';
@@ -22,31 +23,80 @@ class MatchDetailPage extends StatefulWidget {
 
 class _MatchDetailPageState extends State<MatchDetailPage> {
   WorldCupVenue? _matchVenue;
+  MatchSummary? _matchSummary;
+  bool _isLoadingSummary = false;
+  bool _showAllNearbyVenues = false;
+  static const int _defaultNearbyVenuesCount = 4;
 
   @override
   void initState() {
     super.initState();
     _findMatchVenue();
+    _loadMatchSummary();
+  }
+
+  /// Load AI match summary from Firestore
+  Future<void> _loadMatchSummary() async {
+    debugPrint('🔍 Loading match summary for ${widget.match.homeTeamCode} vs ${widget.match.awayTeamCode}');
+
+    if (widget.match.homeTeamCode == null || widget.match.awayTeamCode == null) {
+      debugPrint('❌ Match summary: Team codes are null');
+      return;
+    }
+
+    setState(() => _isLoadingSummary = true);
+
+    try {
+      final datasource = WorldCupFirestoreDataSource();
+      final summary = await datasource.getMatchSummary(
+        widget.match.homeTeamCode!,
+        widget.match.awayTeamCode!,
+      );
+
+      debugPrint('📊 Match summary result: ${summary != null ? "FOUND" : "NOT FOUND"}');
+
+      if (mounted) {
+        setState(() {
+          _matchSummary = summary;
+          _isLoadingSummary = false;
+        });
+      }
+    } catch (e) {
+      debugPrint('❌ Match summary error: $e');
+      if (mounted) {
+        setState(() => _isLoadingSummary = false);
+      }
+    }
   }
 
   /// Find the WorldCupVenue matching this match's venue name
   void _findMatchVenue() {
-    if (widget.match.venueName == null) return;
+    if (widget.match.venueName == null) {
+      debugPrint('🏟️ Venue matching: venueName is null');
+      return;
+    }
 
     // Try to find venue by matching name or city
     final venueName = widget.match.venueName!.toLowerCase();
     final venueCity = widget.match.venueCity?.toLowerCase() ?? '';
+
+    debugPrint('🏟️ Venue matching: Looking for "$venueName" in ${venueCity}');
 
     for (final venue in WorldCupVenues.all) {
       if (venue.name.toLowerCase().contains(venueName) ||
           venueName.contains(venue.name.toLowerCase()) ||
           venue.worldCupName?.toLowerCase().contains(venueName) == true ||
           venue.city.toLowerCase() == venueCity) {
+        debugPrint('🏟️ Venue MATCHED: ${venue.name} in ${venue.city}');
         setState(() {
           _matchVenue = venue;
         });
         break;
       }
+    }
+
+    if (_matchVenue == null) {
+      debugPrint('🏟️ Venue NOT FOUND for: $venueName');
     }
   }
 
@@ -252,12 +302,19 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
                   // Nearby venues (bars, restaurants near stadium)
                   if (_matchVenue != null) ...[
                     const SizedBox(height: 24),
-                    const NearbyVenuesWidget(),
+                    NearbyVenuesWidget(
+                      maxItems: _showAllNearbyVenues ? null : _defaultNearbyVenuesCount,
+                    ),
+                    _buildShowMoreNearbyVenuesButton(),
                   ],
 
                   // Head to head (placeholder)
                   const SizedBox(height: 16),
                   _buildHeadToHeadSection(),
+
+                  // AI Match Summary
+                  const SizedBox(height: 16),
+                  _buildAIMatchSummarySection(),
 
                   // Match stats (placeholder)
                   if (match.status == MatchStatus.completed ||
@@ -575,6 +632,45 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     );
   }
 
+  Widget _buildShowMoreNearbyVenuesButton() {
+    return BlocBuilder<NearbyVenuesCubit, NearbyVenuesState>(
+      builder: (context, state) {
+        final totalVenues = state.filteredVenues.length;
+
+        // Don't show button if there are fewer venues than the limit
+        if (totalVenues <= _defaultNearbyVenuesCount) {
+          return const SizedBox.shrink();
+        }
+
+        return Padding(
+          padding: const EdgeInsets.only(top: 12),
+          child: Center(
+            child: TextButton.icon(
+              onPressed: () {
+                setState(() {
+                  _showAllNearbyVenues = !_showAllNearbyVenues;
+                });
+              },
+              icon: Icon(
+                _showAllNearbyVenues ? Icons.expand_less : Icons.expand_more,
+                color: AppTheme.primaryPurple,
+              ),
+              label: Text(
+                _showAllNearbyVenues
+                    ? 'Show less'
+                    : 'Show all $totalVenues venues',
+                style: const TextStyle(
+                  color: AppTheme.primaryPurple,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildHeadToHeadSection() {
     // Only show if both teams have valid codes
     if (match.homeTeamCode == null || match.awayTeamCode == null) {
@@ -588,6 +684,35 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       team2Name: match.awayTeamName,
       team1FlagUrl: match.homeTeamFlagUrl,
       team2FlagUrl: match.awayTeamFlagUrl,
+    );
+  }
+
+  Widget _buildAIMatchSummarySection() {
+    // Show loading indicator while fetching
+    if (_isLoadingSummary) {
+      return Container(
+        padding: const EdgeInsets.all(32),
+        decoration: BoxDecoration(
+          color: AppTheme.backgroundElevated,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: const Center(
+          child: CircularProgressIndicator(
+            color: AppTheme.primaryPurple,
+          ),
+        ),
+      );
+    }
+
+    // Show nothing if no summary available
+    if (_matchSummary == null) {
+      return const SizedBox.shrink();
+    }
+
+    // Show the AI Match Summary widget
+    return AIMatchSummaryWidget(
+      summary: _matchSummary!,
+      initiallyExpanded: false,
     );
   }
 
