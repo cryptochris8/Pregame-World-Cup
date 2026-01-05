@@ -654,6 +654,14 @@ export {
   createFanCheckoutSession
 } from './stripe-simple';
 
+// Export Watch Party Payment functions
+export {
+  createVirtualAttendancePayment,
+  handleVirtualAttendancePayment,
+  requestVirtualAttendanceRefund,
+  refundAllVirtualAttendees
+} from './watch-party-payments';
+
 // // Example of how to define a scheduled function (we'll configure the schedule later)
 // export const scheduledUpdateSchedule = functions.pubsub.schedule("every 24 hours")
 //   .onRun(async (context) => {

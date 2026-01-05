@@ -7,6 +7,8 @@ import '../../data/datasources/world_cup_firestore_datasource.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/nearby_venues_cubit.dart';
 import '../widgets/widgets.dart';
+import '../../../watch_party/presentation/bloc/watch_party_bloc.dart';
+import '../../../watch_party/presentation/screens/screens.dart';
 
 /// Detailed view of a World Cup match
 class MatchDetailPage extends StatefulWidget {
@@ -307,6 +309,10 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
                     ),
                     _buildShowMoreNearbyVenuesButton(),
                   ],
+
+                  // Watch Parties section
+                  const SizedBox(height: 16),
+                  _buildWatchPartiesSection(),
 
                   // Head to head (placeholder)
                   const SizedBox(height: 16),
@@ -817,6 +823,104 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
           ],
         ),
       ],
+    );
+  }
+
+  Widget _buildWatchPartiesSection() {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            AppTheme.primaryPurple.withOpacity(0.2),
+            AppTheme.secondaryRose.withOpacity(0.2),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppTheme.primaryPurple.withOpacity(0.3)),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => _navigateToWatchParties(),
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                Container(
+                  width: 56,
+                  height: 56,
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [AppTheme.primaryPurple, AppTheme.secondaryRose],
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Icon(
+                    Icons.groups,
+                    color: Colors.white,
+                    size: 28,
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Watch Parties',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Find or create a watch party for this match',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.7),
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppTheme.primaryPurple.withOpacity(0.3),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_forward,
+                    color: Colors.white,
+                    size: 20,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToWatchParties() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => BlocProvider(
+          create: (context) => di.sl<WatchPartyBloc>()
+            ..add(LoadPublicWatchPartiesEvent(gameId: match.matchId)),
+          child: WatchPartiesDiscoveryScreen(
+            gameId: match.matchId,
+            gameName: '${match.homeTeamName ?? match.homeTeamCode ?? 'TBD'} vs ${match.awayTeamName ?? match.awayTeamCode ?? 'TBD'}',
+            gameDateTime: match.dateTime,
+          ),
+        ),
+      ),
     );
   }
 

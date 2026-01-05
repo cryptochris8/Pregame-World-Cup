@@ -76,6 +76,11 @@ import 'features/worldcup/data/services/world_cup_ai_service.dart';
 import 'features/worldcup/data/services/nearby_venues_service.dart';
 import 'features/worldcup/presentation/bloc/nearby_venues_cubit.dart';
 
+// Watch Party Feature
+import 'features/watch_party/domain/services/watch_party_service.dart';
+import 'features/watch_party/domain/services/watch_party_payment_service.dart';
+import 'features/watch_party/presentation/bloc/watch_party_bloc.dart';
+
 // TODO: Token Feature - disabled pending legal review
 // import 'features/token/token.dart';
 
@@ -220,6 +225,18 @@ Future<void> setupLocator() async {
       print('⚠️ DI STEP 9: World Cup 2026 Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
         print('🔍 DIAGNOSTIC: World Cup services failed but app will continue');
+      }
+    }
+
+    // STEP 10: Watch Party Services
+    print('🔧 DI STEP 10: Watch Party Services');
+    try {
+      _registerWatchPartyServices();
+      print('✅ DI STEP 10: Watch Party Services - SUCCESS');
+    } catch (e) {
+      print('⚠️ DI STEP 10: Watch Party Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        print('🔍 DIAGNOSTIC: Watch Party services failed but app will continue');
       }
     }
 
@@ -478,6 +495,19 @@ void _registerWorldCupServices() {
   //     print('🔍 DIAGNOSTIC: Token services failed but app will continue');
   //   }
   // }
+}
+
+/// Register Watch Party services
+void _registerWatchPartyServices() {
+  // Services (Singleton - maintain state across app)
+  sl.registerLazySingleton<WatchPartyService>(() => WatchPartyService());
+  sl.registerLazySingleton<WatchPartyPaymentService>(() => WatchPartyPaymentService());
+
+  // BLoC (Factory - fresh instance per screen)
+  sl.registerFactory<WatchPartyBloc>(() => WatchPartyBloc(
+    watchPartyService: sl(),
+    paymentService: sl(),
+  ));
 }
 
 // TODO: Token Feature - disabled pending legal review

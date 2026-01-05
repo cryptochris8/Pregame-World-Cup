@@ -9,6 +9,9 @@ import 'team_detail_page.dart';
 import 'predictions_page.dart';
 import '../../../../presentation/screens/player_spotlight_screen.dart';
 import '../../../../presentation/screens/manager_profiles_screen.dart';
+import '../../../../injection_container.dart' as di;
+import '../../../watch_party/presentation/bloc/watch_party_bloc.dart';
+import '../../../watch_party/presentation/screens/screens.dart';
 
 /// Main World Cup screen with internal tab navigation
 /// This screen is embedded in the main app navigation
@@ -91,6 +94,12 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
         ),
         centerTitle: true,
         actions: [
+          // Watch Parties button
+          IconButton(
+            icon: const Icon(Icons.groups, color: Colors.white),
+            tooltip: 'Watch Parties',
+            onPressed: () => _navigateToWatchParties(context),
+          ),
           // Live matches indicator
           BlocBuilder<MatchListCubit, MatchListState>(
             builder: (context, state) {
@@ -184,6 +193,18 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
     if (team != null) {
       _navigateToTeamDetail(context, team);
     }
+  }
+
+  void _navigateToWatchParties(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => BlocProvider(
+          create: (context) => di.sl<WatchPartyBloc>()
+            ..add(LoadPublicWatchPartiesEvent()),
+          child: const MyWatchPartiesScreen(),
+        ),
+      ),
+    );
   }
 }
 
