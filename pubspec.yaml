@@ -21,6 +21,7 @@ dependencies:
   firebase_storage: ^12.3.8 # For storing user photos and media
   cloud_functions: ^5.5.1 # For calling Cloud Functions later
   firebase_app_check: ^0.3.1+4 # For API protection and abuse prevention
+  firebase_messaging: ^15.1.6 # For push notifications
 
   # State Management
   bloc: ^8.1.4

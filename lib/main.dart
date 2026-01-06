@@ -28,12 +28,24 @@ import 'config/app_theme.dart';
 import 'core/services/firebase_app_check_service.dart';
 import 'config/api_keys.dart';
 import 'core/services/logging_service.dart';
+import 'core/services/push_notification_service.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
 import 'features/schedule/domain/repositories/schedule_repository.dart';
 import 'core/entities/cached_venue_data.dart';
 import 'core/entities/cached_geocoding_data.dart';
 import 'features/worldcup/utils/timezone_utils.dart';
+
+/// Background message handler - must be top-level function
+@pragma('vm:entry-point')
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  // Initialize Firebase if needed (usually already done)
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  print('📬 Background message received: ${message.messageId}');
+}
 
 /// ANDROID DIAGNOSTIC MODE
 /// Set to true to enable detailed logging for Android issues
@@ -57,11 +69,14 @@ Future<void> main() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-    
+
+    // Register background message handler for FCM
+    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
     // PRODUCTION FIX: Disable Firestore offline persistence to prevent old cached schedule data
     // This ensures the app doesn't fall back to cached 2024 data when offline
     await _disableFirestoreOfflinePersistence();
-    
+
     print('✅ INIT STEP 2: Firebase Core - SUCCESS');
   } catch (e) {
     print('❌ INIT STEP 2: Firebase Core - FAILED: $e');
@@ -384,12 +399,33 @@ class AuthenticationWrapper extends StatefulWidget {
 
 class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
   late Stream<User?> _authStream;
-  
+  bool _pushNotificationsInitialized = false;
+
   @override
   void initState() {
     super.initState();
     // Initialize the auth stream
     _authStream = FirebaseAuth.instance.authStateChanges();
+  }
+
+  /// Initialize push notifications for the authenticated user
+  void _initializePushNotifications() {
+    // Only initialize once per session
+    if (_pushNotificationsInitialized) return;
+    _pushNotificationsInitialized = true;
+
+    // Initialize in background to avoid blocking UI
+    Future.microtask(() async {
+      try {
+        print('📱 PUSH: Initializing push notifications for authenticated user');
+        final pushService = di.sl<PushNotificationService>();
+        await pushService.initialize();
+        print('✅ PUSH: Push notifications initialized successfully');
+      } catch (e) {
+        print('⚠️ PUSH: Failed to initialize push notifications: $e');
+        // Non-critical - app continues to work without push notifications
+      }
+    });
   }
 
   @override
@@ -425,6 +461,8 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
         
         // Show main app if user is authenticated
         if (snapshot.hasData && snapshot.data != null) {
+          // Initialize push notifications when user is authenticated
+          _initializePushNotifications();
           return const MainNavigationScreen();
         }
         

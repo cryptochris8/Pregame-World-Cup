@@ -26,6 +26,9 @@ import 'features/recommendations/domain/usecases/get_geocoded_location.dart';
 // Import for Auth feature
 import 'features/auth/domain/services/auth_service.dart';
 
+// Push Notifications
+import 'core/services/push_notification_service.dart';
+
 // Social features
 import 'features/social/data/datasources/social_datasource.dart';
 import 'features/social/domain/services/social_service.dart';
@@ -112,6 +115,7 @@ Future<void> setupLocator() async {
     sl.registerLazySingleton(() => CacheService.instance);
     sl.registerLazySingleton(() => AuthService());
     sl.registerLazySingleton(() => PresenceService());
+    sl.registerLazySingleton(() => PushNotificationService());
     print('✅ DI STEP 2: Core Services - SUCCESS');
 
     // STEP 3: Basic Analysis Services (Important but not critical)

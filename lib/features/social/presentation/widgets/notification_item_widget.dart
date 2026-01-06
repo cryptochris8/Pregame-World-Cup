@@ -222,6 +222,8 @@ class NotificationItemWidget extends StatelessWidget {
         return Icons.emoji_events;
       case NotificationType.systemUpdate:
         return Icons.info;
+      case NotificationType.watchPartyInvite:
+        return Icons.celebration;
     }
   }
 
@@ -247,6 +249,8 @@ class NotificationItemWidget extends StatelessWidget {
         return Colors.amber;
       case NotificationType.systemUpdate:
         return Colors.grey;
+      case NotificationType.watchPartyInvite:
+        return Colors.deepOrange;
     }
   }
 } 
