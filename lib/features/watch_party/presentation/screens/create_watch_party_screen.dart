@@ -5,6 +5,8 @@ import 'package:intl/intl.dart';
 import '../bloc/watch_party_bloc.dart';
 import '../widgets/visibility_badge.dart';
 import '../../domain/entities/watch_party.dart';
+import 'game_selector_screen.dart';
+import 'venue_selector_screen.dart';
 
 /// Screen for creating a new watch party
 class CreateWatchPartyScreen extends StatefulWidget {
@@ -340,19 +342,39 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
   }
 
   void _selectGame() async {
-    // TODO: Navigate to game selector and get result
-    // For now, show a placeholder
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Game selector coming soon')),
+    final result = await Navigator.push<Map<String, dynamic>>(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const GameSelectorScreen(),
+      ),
     );
+
+    if (result != null && mounted) {
+      setState(() {
+        _gameId = result['gameId'] as String?;
+        _gameName = result['gameName'] as String?;
+        _gameDateTime = result['gameDateTime'] as DateTime?;
+      });
+    }
   }
 
   void _selectVenue() async {
-    // TODO: Navigate to venue selector and get result
-    // For now, show a placeholder
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Venue selector coming soon')),
+    final result = await Navigator.push<Map<String, dynamic>>(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const VenueSelectorScreen(),
+      ),
     );
+
+    if (result != null && mounted) {
+      setState(() {
+        _venueId = result['venueId'] as String?;
+        _venueName = result['venueName'] as String?;
+        _venueAddress = result['venueAddress'] as String?;
+        _venueLatitude = result['venueLatitude'] as double?;
+        _venueLongitude = result['venueLongitude'] as double?;
+      });
+    }
   }
 
   void _createWatchParty() {

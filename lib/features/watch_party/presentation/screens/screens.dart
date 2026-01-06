@@ -5,3 +5,4 @@ export 'watch_party_detail_screen.dart';
 export 'create_watch_party_screen.dart';
 export 'venue_selector_screen.dart';
 export 'invite_friends_screen.dart';
+export 'game_selector_screen.dart';
