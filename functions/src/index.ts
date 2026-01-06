@@ -662,6 +662,13 @@ export {
   refundAllVirtualAttendees
 } from './watch-party-payments';
 
+// Export Watch Party Notification functions
+export {
+  onWatchPartyInviteCreated,
+  onWatchPartyInviteUpdated,
+  onWatchPartyCancelled
+} from './watch-party-notifications';
+
 // // Example of how to define a scheduled function (we'll configure the schedule later)
 // export const scheduledUpdateSchedule = functions.pubsub.schedule("every 24 hours")
 //   .onRun(async (context) => {

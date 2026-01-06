@@ -856,8 +856,8 @@ class WatchPartyService {
           .doc(invite.inviteId)
           .set(invite.toFirestore());
 
-      // Create notification for invitee
-      await _createInviteNotification(invite);
+      // Note: Cloud Function (onWatchPartyInviteCreated) handles push notification
+      // and in-app notification creation automatically when invite is created
 
       PerformanceMonitor.endApiCall('send_invite', success: true);
       return true;

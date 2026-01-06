@@ -396,7 +396,33 @@ class NotificationService {
       activityId: activityId,
       comment: comment,
     );
-    
+
+    return await sendNotification(notification);
+  }
+
+  Future<bool> sendWatchPartyInviteNotification({
+    required String userId,
+    required String fromUserId,
+    required String fromUserName,
+    String? fromUserImage,
+    required String watchPartyId,
+    required String watchPartyName,
+    required String gameName,
+    required DateTime gameDateTime,
+    String? personalMessage,
+  }) async {
+    final notification = SocialNotification.watchPartyInvite(
+      userId: userId,
+      fromUserId: fromUserId,
+      fromUserName: fromUserName,
+      fromUserImage: fromUserImage,
+      watchPartyId: watchPartyId,
+      watchPartyName: watchPartyName,
+      gameName: gameName,
+      gameDateTime: gameDateTime,
+      personalMessage: personalMessage,
+    );
+
     return await sendNotification(notification);
   }
 

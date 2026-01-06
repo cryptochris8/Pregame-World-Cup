@@ -190,6 +190,40 @@ class SocialNotification extends Equatable {
     );
   }
 
+  factory SocialNotification.watchPartyInvite({
+    required String userId,
+    required String fromUserId,
+    required String fromUserName,
+    String? fromUserImage,
+    required String watchPartyId,
+    required String watchPartyName,
+    required String gameName,
+    required DateTime gameDateTime,
+    String? personalMessage,
+  }) {
+    return SocialNotification(
+      notificationId: 'watch_party_invite_${DateTime.now().millisecondsSinceEpoch}',
+      userId: userId,
+      fromUserId: fromUserId,
+      fromUserName: fromUserName,
+      fromUserImage: fromUserImage,
+      type: NotificationType.watchPartyInvite,
+      title: 'Watch Party Invitation',
+      message: personalMessage != null && personalMessage.isNotEmpty
+          ? '$fromUserName invited you to "$watchPartyName": $personalMessage'
+          : '$fromUserName invited you to watch $gameName together',
+      createdAt: DateTime.now(),
+      data: {
+        'watchPartyId': watchPartyId,
+        'watchPartyName': watchPartyName,
+        'gameName': gameName,
+        'gameDateTime': gameDateTime.toIso8601String(),
+      },
+      actionUrl: '/watch-party/$watchPartyId',
+      priority: NotificationPriority.high,
+    );
+  }
+
   SocialNotification copyWith({
     bool? isRead,
     Map<String, dynamic>? data,
@@ -255,33 +289,36 @@ class SocialNotification extends Equatable {
 enum NotificationType {
   @HiveField(0)
   friendRequest,
-  
+
   @HiveField(1)
   friendRequestAccepted,
-  
+
   @HiveField(2)
   activityLike,
-  
+
   @HiveField(3)
   activityComment,
-  
+
   @HiveField(4)
   gameInvite,
-  
+
   @HiveField(5)
   venueRecommendation,
-  
+
   @HiveField(6)
   newFollower,
-  
+
   @HiveField(7)
   groupInvite,
-  
+
   @HiveField(8)
   achievement,
-  
+
   @HiveField(9)
   systemUpdate,
+
+  @HiveField(10)
+  watchPartyInvite,
 }
 
 @HiveType(typeId: 18)
@@ -415,6 +452,8 @@ class NotificationPreferences extends Equatable {
         return achievements;
       case NotificationType.systemUpdate:
         return systemUpdates;
+      case NotificationType.watchPartyInvite:
+        return gameInvites; // Use gameInvites preference for watch party invites
     }
   }
 
