@@ -77,6 +77,7 @@ import 'core/services/presence_service.dart';
 import 'features/worldcup/worldcup.dart';
 import 'features/worldcup/data/services/world_cup_ai_service.dart';
 import 'features/worldcup/data/services/nearby_venues_service.dart';
+import 'features/worldcup/data/services/match_reminder_service.dart';
 import 'features/worldcup/presentation/bloc/nearby_venues_cubit.dart';
 
 // Watch Party Feature
@@ -486,6 +487,9 @@ void _registerWorldCupServices() {
   sl.registerFactory(() => NearbyVenuesCubit(
     service: sl<NearbyVenuesService>(),
   ));
+
+  // Match Reminder Service
+  sl.registerLazySingleton(() => MatchReminderService());
 
   // TODO: Token Services - disabled pending legal review
   // When re-enabling, uncomment the following:

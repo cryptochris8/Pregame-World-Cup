@@ -224,6 +224,36 @@ class SocialNotification extends Equatable {
     );
   }
 
+  factory SocialNotification.matchReminder({
+    required String userId,
+    required String matchId,
+    required String matchName,
+    required DateTime matchDateTime,
+    required String timingDisplay,
+    String? homeTeamCode,
+    String? awayTeamCode,
+    String? venueName,
+  }) {
+    return SocialNotification(
+      notificationId: 'match_reminder_${DateTime.now().millisecondsSinceEpoch}',
+      userId: userId,
+      type: NotificationType.matchReminder,
+      title: 'Match Starting Soon',
+      message: '$matchName kicks off in $timingDisplay${venueName != null ? ' at $venueName' : ''}',
+      createdAt: DateTime.now(),
+      data: {
+        'matchId': matchId,
+        'matchName': matchName,
+        'matchDateTime': matchDateTime.toIso8601String(),
+        'homeTeamCode': homeTeamCode,
+        'awayTeamCode': awayTeamCode,
+        'venueName': venueName,
+      },
+      actionUrl: '/match/$matchId',
+      priority: NotificationPriority.high,
+    );
+  }
+
   SocialNotification copyWith({
     bool? isRead,
     Map<String, dynamic>? data,
@@ -319,6 +349,9 @@ enum NotificationType {
 
   @HiveField(10)
   watchPartyInvite,
+
+  @HiveField(11)
+  matchReminder,
 }
 
 @HiveType(typeId: 18)
@@ -454,6 +487,8 @@ class NotificationPreferences extends Equatable {
         return systemUpdates;
       case NotificationType.watchPartyInvite:
         return gameInvites; // Use gameInvites preference for watch party invites
+      case NotificationType.matchReminder:
+        return gameInvites; // Use gameInvites preference for match reminders
     }
   }
 

@@ -176,6 +176,8 @@ class NotificationTypeAdapter extends TypeAdapter<NotificationType> {
         return NotificationType.systemUpdate;
       case 10:
         return NotificationType.watchPartyInvite;
+      case 11:
+        return NotificationType.matchReminder;
       default:
         return NotificationType.friendRequest;
     }
@@ -216,6 +218,9 @@ class NotificationTypeAdapter extends TypeAdapter<NotificationType> {
         break;
       case NotificationType.watchPartyInvite:
         writer.writeByte(10);
+        break;
+      case NotificationType.matchReminder:
+        writer.writeByte(11);
         break;
     }
   }

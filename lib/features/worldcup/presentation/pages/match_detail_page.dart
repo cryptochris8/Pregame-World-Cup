@@ -132,6 +132,16 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
             pinned: true,
             backgroundColor: Colors.transparent,
             iconTheme: const IconThemeData(color: Colors.white),
+            actions: [
+              // Reminder button for scheduled matches
+              if (match.status == MatchStatus.scheduled)
+                ReminderButton(
+                  match: match,
+                  iconSize: 24,
+                  activeColor: Colors.amber,
+                  inactiveColor: Colors.white70,
+                ),
+            ],
             flexibleSpace: FlexibleSpaceBar(
               background: Container(
                 decoration: BoxDecoration(

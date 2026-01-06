@@ -9,6 +9,7 @@ import 'live_indicator.dart';
 import 'team_flag.dart';
 import 'favorite_button.dart';
 import 'prediction_dialog.dart';
+import 'reminder_button.dart';
 
 /// Card displaying a World Cup match
 class MatchCard extends StatelessWidget {
@@ -24,6 +25,9 @@ class MatchCard extends StatelessWidget {
 
   /// Whether to show the favorite button
   final bool showFavoriteButton;
+
+  /// Whether to show the reminder button
+  final bool showReminderButton;
 
   /// Current prediction for this match
   final MatchPrediction? prediction;
@@ -54,6 +58,7 @@ class MatchCard extends StatelessWidget {
     this.isFavorite = false,
     this.onFavoriteToggle,
     this.showFavoriteButton = true,
+    this.showReminderButton = true,
     this.prediction,
     this.onPrediction,
     this.showPredictionButton = true,
@@ -178,6 +183,17 @@ class MatchCard extends StatelessWidget {
               color: Colors.white38,
             ),
           ),
+
+        // Reminder button (only for scheduled matches)
+        if (showReminderButton && match.status == MatchStatus.scheduled) ...[
+          const SizedBox(width: 4),
+          ReminderButton(
+            match: match,
+            iconSize: compact ? 18 : 20,
+            activeColor: Colors.amber,
+            inactiveColor: Colors.white38,
+          ),
+        ],
 
         // Favorite button
         if (showFavoriteButton) ...[

@@ -224,6 +224,8 @@ class NotificationItemWidget extends StatelessWidget {
         return Icons.info;
       case NotificationType.watchPartyInvite:
         return Icons.celebration;
+      case NotificationType.matchReminder:
+        return Icons.alarm;
     }
   }
 
@@ -251,6 +253,8 @@ class NotificationItemWidget extends StatelessWidget {
         return Colors.grey;
       case NotificationType.watchPartyInvite:
         return Colors.deepOrange;
+      case NotificationType.matchReminder:
+        return Colors.green;
     }
   }
 } 

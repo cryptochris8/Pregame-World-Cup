@@ -14,3 +14,4 @@ export 'ai_match_prediction.dart';
 export 'head_to_head.dart';
 export 'world_cup_history.dart';
 export 'match_summary.dart';
+export 'match_reminder.dart';
