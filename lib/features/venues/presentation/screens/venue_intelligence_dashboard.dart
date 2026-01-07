@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pregame_world_cup/services/espn_service.dart';
+import 'package:pregame_world_cup/features/venue_portal/venue_portal.dart';
+import 'package:pregame_world_cup/injection_container.dart' as di;
 
 /// Enhanced venue dashboard powered by ESPN API
 /// Provides actionable intelligence for game day planning
@@ -51,6 +54,22 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
     }
   }
 
+  void _openVenuePortal() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<VenueEnhancementCubit>()
+            ..loadEnhancement(widget.venueId, venueName: widget.venueName),
+          child: VenuePortalHomeScreen(
+            venueId: widget.venueId,
+            venueName: widget.venueName,
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,6 +94,11 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: _loadGameIntelligence,
+          ),
+          IconButton(
+            icon: const Icon(Icons.settings),
+            tooltip: 'Venue Portal',
+            onPressed: _openVenuePortal,
           ),
         ],
       ),
@@ -150,8 +174,13 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
               ),
             ),
             
+            const SizedBox(height: 16),
+
+            // Venue Portal CTA
+            _buildVenuePortalCard(),
+
             const SizedBox(height: 24),
-            
+
             const Text('ESPN Game Intelligence', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
             const SizedBox(height: 16),
             
@@ -275,6 +304,56 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
             child: Text(text, style: TextStyle(color: color, fontSize: 12)),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildVenuePortalCard() {
+    return GestureDetector(
+      onTap: _openVenuePortal,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.amber.withOpacity(0.2), Colors.orange.withOpacity(0.1)],
+          ),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.amber.withOpacity(0.3)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.amber.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Icon(Icons.store, color: Colors.amber, size: 28),
+            ),
+            const SizedBox(width: 16),
+            const Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Venue Owner Portal',
+                    style: TextStyle(
+                      color: Colors.amber,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    'Manage broadcasts, specials, TV setup & more',
+                    style: TextStyle(color: Colors.white70, fontSize: 12),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.arrow_forward_ios, color: Colors.amber, size: 16),
+          ],
+        ),
       ),
     );
   }
