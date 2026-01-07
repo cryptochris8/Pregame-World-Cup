@@ -226,6 +226,8 @@ class NotificationItemWidget extends StatelessWidget {
         return Icons.celebration;
       case NotificationType.matchReminder:
         return Icons.alarm;
+      case NotificationType.favoriteTeamMatch:
+        return Icons.star;
     }
   }
 
@@ -255,6 +257,8 @@ class NotificationItemWidget extends StatelessWidget {
         return Colors.deepOrange;
       case NotificationType.matchReminder:
         return Colors.green;
+      case NotificationType.favoriteTeamMatch:
+        return Colors.amber;
     }
   }
 } 

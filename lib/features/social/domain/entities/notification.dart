@@ -254,6 +254,38 @@ class SocialNotification extends Equatable {
     );
   }
 
+  factory SocialNotification.favoriteTeamMatch({
+    required String userId,
+    required String matchId,
+    required String homeTeamName,
+    required String awayTeamName,
+    required DateTime matchDateTime,
+    required String teamDescription,
+    String? homeTeamCode,
+    String? awayTeamCode,
+    String? venueName,
+  }) {
+    return SocialNotification(
+      notificationId: 'favorite_team_${matchId}_${DateTime.now().millisecondsSinceEpoch}',
+      userId: userId,
+      type: NotificationType.favoriteTeamMatch,
+      title: 'Your Team Plays Tomorrow!',
+      message: '$teamDescription has a match - $homeTeamName vs $awayTeamName',
+      createdAt: DateTime.now(),
+      data: {
+        'matchId': matchId,
+        'homeTeamName': homeTeamName,
+        'awayTeamName': awayTeamName,
+        'matchDateTime': matchDateTime.toIso8601String(),
+        'homeTeamCode': homeTeamCode,
+        'awayTeamCode': awayTeamCode,
+        'venueName': venueName,
+      },
+      actionUrl: '/match/$matchId',
+      priority: NotificationPriority.normal,
+    );
+  }
+
   SocialNotification copyWith({
     bool? isRead,
     Map<String, dynamic>? data,
@@ -352,6 +384,9 @@ enum NotificationType {
 
   @HiveField(11)
   matchReminder,
+
+  @HiveField(12)
+  favoriteTeamMatch,
 }
 
 @HiveType(typeId: 18)
@@ -489,6 +524,8 @@ class NotificationPreferences extends Equatable {
         return gameInvites; // Use gameInvites preference for watch party invites
       case NotificationType.matchReminder:
         return gameInvites; // Use gameInvites preference for match reminders
+      case NotificationType.favoriteTeamMatch:
+        return gameInvites; // Use gameInvites preference for favorite team matches
     }
   }
 

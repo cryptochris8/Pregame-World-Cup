@@ -233,6 +233,16 @@ class PushNotificationService {
           );
         }
         break;
+      case 'match_reminder':
+      case 'favorite_team_match':
+        final matchId = data['matchId'] as String?;
+        if (matchId != null) {
+          LoggingService.info(
+            'Should navigate to match: $matchId',
+            tag: _logTag,
+          );
+        }
+        break;
       default:
         LoggingService.info('Unknown notification type: $type', tag: _logTag);
     }

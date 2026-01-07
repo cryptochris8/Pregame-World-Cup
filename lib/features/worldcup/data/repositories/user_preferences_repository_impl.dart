@@ -1,14 +1,21 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../domain/entities/entities.dart';
 import '../../domain/repositories/user_preferences_repository.dart';
+import '../../../../core/services/logging_service.dart';
 
 /// Implementation of UserPreferencesRepository using SharedPreferences
+/// Also syncs favorite teams to Firestore for Cloud Functions access
 class UserPreferencesRepositoryImpl implements UserPreferencesRepository {
   static const String _preferencesKey = 'world_cup_user_preferences';
+  static const String _logTag = 'UserPreferencesRepo';
 
   final SharedPreferences _sharedPreferences;
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
   final StreamController<UserPreferences> _preferencesController =
       StreamController<UserPreferences>.broadcast();
 
@@ -16,7 +23,11 @@ class UserPreferencesRepositoryImpl implements UserPreferencesRepository {
 
   UserPreferencesRepositoryImpl({
     required SharedPreferences sharedPreferences,
-  }) : _sharedPreferences = sharedPreferences;
+    FirebaseFirestore? firestore,
+    FirebaseAuth? auth,
+  })  : _sharedPreferences = sharedPreferences,
+        _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
 
   @override
   Future<UserPreferences> getPreferences() async {
@@ -45,6 +56,37 @@ class UserPreferencesRepositoryImpl implements UserPreferencesRepository {
     final jsonString = json.encode(preferences.toMap());
     await _sharedPreferences.setString(_preferencesKey, jsonString);
     _preferencesController.add(preferences);
+
+    // Sync to Firestore for Cloud Functions access
+    await _syncToFirestore(preferences);
+  }
+
+  /// Syncs favorite teams and notification settings to Firestore
+  /// This allows Cloud Functions to query users with favorite teams
+  Future<void> _syncToFirestore(UserPreferences preferences) async {
+    final user = _auth.currentUser;
+    if (user == null) {
+      LoggingService.info('No user signed in, skipping Firestore sync', tag: _logTag);
+      return;
+    }
+
+    try {
+      await _firestore.collection('users').doc(user.uid).set({
+        'favoriteTeamCodes': preferences.favoriteTeamCodes,
+        'notifyFavoriteTeamMatches': preferences.notifyFavoriteTeamMatches,
+        'notifyLiveUpdates': preferences.notifyLiveUpdates,
+        'notifyGoals': preferences.notifyGoals,
+        'preferencesUpdatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+
+      LoggingService.info(
+        'Synced preferences to Firestore: ${preferences.favoriteTeamCodes.length} teams',
+        tag: _logTag,
+      );
+    } catch (e) {
+      LoggingService.error('Error syncing preferences to Firestore: $e', tag: _logTag);
+      // Don't throw - local save succeeded, Firestore sync is best-effort
+    }
   }
 
   @override
