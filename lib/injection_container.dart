@@ -85,6 +85,9 @@ import 'features/watch_party/domain/services/watch_party_service.dart';
 import 'features/watch_party/domain/services/watch_party_payment_service.dart';
 import 'features/watch_party/presentation/bloc/watch_party_bloc.dart';
 
+// Venue Portal Feature
+import 'features/venue_portal/venue_portal.dart';
+
 // TODO: Token Feature - disabled pending legal review
 // import 'features/token/token.dart';
 
@@ -490,6 +493,17 @@ void _registerWorldCupServices() {
 
   // Match Reminder Service
   sl.registerLazySingleton(() => MatchReminderService());
+
+  // Venue Enhancement Services
+  sl.registerLazySingleton(() => VenueEnhancementService());
+
+  sl.registerFactory(() => VenueEnhancementCubit(
+    service: sl<VenueEnhancementService>(),
+  ));
+
+  sl.registerFactory(() => VenueFilterCubit(
+    service: sl<VenueEnhancementService>(),
+  ));
 
   // TODO: Token Services - disabled pending legal review
   // When re-enabling, uncomment the following:

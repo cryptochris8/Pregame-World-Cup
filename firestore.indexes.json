@@ -247,6 +247,48 @@
           "arrayConfig": "CONTAINS"
         }
       ]
+    },
+    {
+      "collectionGroup": "venue_enhancements",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscriptionTier",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "showsMatches",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "venue_enhancements",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "subscriptionTier",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "updatedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "venue_enhancements",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ownerId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "updatedAt",
+          "order": "DESCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": []
