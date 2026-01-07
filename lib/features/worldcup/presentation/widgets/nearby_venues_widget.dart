@@ -21,7 +21,17 @@ class NearbyVenuesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<NearbyVenuesCubit, NearbyVenuesState>(
+    // Try to get VenueFilterCubit if available
+    final filterCubit = context.read<VenueFilterCubit?>();
+
+    return BlocConsumer<NearbyVenuesCubit, NearbyVenuesState>(
+      listener: (context, venuesState) {
+        // Load enhancements when venues change
+        if (filterCubit != null && venuesState.venues.isNotEmpty) {
+          final venueIds = venuesState.venues.map((v) => v.place.placeId).toList();
+          filterCubit.loadEnhancementsForVenues(venueIds);
+        }
+      },
       builder: (context, venuesState) {
         if (venuesState.isLoading) {
           return _buildLoading();
@@ -35,8 +45,6 @@ class NearbyVenuesWidget extends StatelessWidget {
           return _buildEmpty();
         }
 
-        // Try to get VenueFilterCubit if available
-        final filterCubit = context.read<VenueFilterCubit?>();
         if (filterCubit == null) {
           // No filter cubit, render without enhancement filters
           return Column(

@@ -383,6 +383,11 @@ class VenueEnhancementService {
   ) async {
     if (venueIds.isEmpty) return {};
 
+    LoggingService.debug(
+      'Loading enhancements for ${venueIds.length} venues',
+      tag: _logTag,
+    );
+
     try {
       final results = <String, VenueEnhancement>{};
 
@@ -396,6 +401,11 @@ class VenueEnhancementService {
         }
       }
 
+      LoggingService.debug(
+        'Found ${results.length} cached, fetching ${uncachedIds.length} from Firestore',
+        tag: _logTag,
+      );
+
       // Fetch uncached items (Firestore limits whereIn to 10 items)
       for (var i = 0; i < uncachedIds.length; i += 10) {
         final batch = uncachedIds.skip(i).take(10).toList();
@@ -403,6 +413,11 @@ class VenueEnhancementService {
             .collection(_collection)
             .where(FieldPath.documentId, whereIn: batch)
             .get();
+
+        LoggingService.debug(
+          'Firestore batch query returned ${snapshot.docs.length} enhancements',
+          tag: _logTag,
+        );
 
         for (final doc in snapshot.docs) {
           final enhancement =
@@ -412,6 +427,10 @@ class VenueEnhancementService {
         }
       }
 
+      LoggingService.info(
+        'Loaded ${results.length} venue enhancements total',
+        tag: _logTag,
+      );
       return results;
     } catch (e) {
       LoggingService.error('Error getting enhancements for venues: $e', tag: _logTag);
