@@ -9,6 +9,7 @@ import '../bloc/nearby_venues_cubit.dart';
 import '../widgets/widgets.dart';
 import '../../../watch_party/presentation/bloc/watch_party_bloc.dart';
 import '../../../watch_party/presentation/screens/screens.dart';
+import '../../../venue_portal/venue_portal.dart';
 
 /// Detailed view of a World Cup match
 class MatchDetailPage extends StatefulWidget {
@@ -106,13 +107,20 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
 
   @override
   Widget build(BuildContext context) {
-    // Wrap with BlocProvider for NearbyVenuesCubit if we have a venue
+    // Wrap with BlocProviders for NearbyVenuesCubit and VenueFilterCubit if we have a venue
     Widget page = _buildPage(context);
 
     if (_matchVenue != null) {
-      return BlocProvider(
-        create: (context) => di.sl<NearbyVenuesCubit>()
-          ..loadNearbyVenues(_matchVenue!),
+      return MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) => di.sl<NearbyVenuesCubit>()
+              ..loadNearbyVenues(_matchVenue!),
+          ),
+          BlocProvider(
+            create: (context) => di.sl<VenueFilterCubit>(),
+          ),
+        ],
         child: page,
       );
     }
@@ -316,6 +324,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
                     const SizedBox(height: 24),
                     NearbyVenuesWidget(
                       maxItems: _showAllNearbyVenues ? null : _defaultNearbyVenuesCount,
+                      matchId: match.matchId,
                     ),
                     _buildShowMoreNearbyVenuesButton(),
                   ],
