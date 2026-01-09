@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/entities.dart';
+import '../../../worldcup/domain/services/world_cup_payment_service.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
 import '../widgets/premium_feature_gate.dart';
@@ -409,41 +410,13 @@ class VenuePortalHomeScreen extends StatelessWidget {
   void _showUpgradeDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Row(
-          children: [
-            const Icon(Icons.star, color: Colors.amber),
-            const SizedBox(width: 8),
-            const Text('Upgrade to Premium'),
-          ],
-        ),
-        content: const Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Premium features include:'),
-            SizedBox(height: 12),
-            _FeatureListItem(text: 'Specific match scheduling'),
-            _FeatureListItem(text: 'TV & screen configuration'),
-            _FeatureListItem(text: 'Game day specials & deals'),
-            _FeatureListItem(text: 'Atmosphere & vibe settings'),
-            _FeatureListItem(text: 'Real-time capacity updates'),
-            _FeatureListItem(text: 'Priority listing in searches'),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Not Now'),
-          ),
-          FilledButton(
-            onPressed: () {
-              Navigator.pop(context);
-              // TODO: Navigate to payment/subscription flow
-            },
-            child: const Text('Upgrade'),
-          ),
-        ],
+      builder: (dialogContext) => _VenuePremiumUpgradeDialog(
+        venueId: venueId,
+        venueName: venueName,
+        onPurchaseComplete: () {
+          // Refresh the enhancement data after purchase
+          context.read<VenueEnhancementCubit>().refresh();
+        },
       ),
     );
   }
@@ -544,6 +517,201 @@ class _FeatureListItem extends StatelessWidget {
           Text(text),
         ],
       ),
+    );
+  }
+}
+
+/// Dialog for upgrading to Venue Premium
+class _VenuePremiumUpgradeDialog extends StatefulWidget {
+  final String venueId;
+  final String venueName;
+  final VoidCallback? onPurchaseComplete;
+
+  const _VenuePremiumUpgradeDialog({
+    required this.venueId,
+    required this.venueName,
+    this.onPurchaseComplete,
+  });
+
+  @override
+  State<_VenuePremiumUpgradeDialog> createState() =>
+      _VenuePremiumUpgradeDialogState();
+}
+
+class _VenuePremiumUpgradeDialogState
+    extends State<_VenuePremiumUpgradeDialog> {
+  final WorldCupPaymentService _paymentService = WorldCupPaymentService();
+  bool _isPurchasing = false;
+  WorldCupPricing? _pricing;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPricing();
+  }
+
+  Future<void> _loadPricing() async {
+    final pricing = await _paymentService.getPricing();
+    if (mounted) {
+      setState(() => _pricing = pricing);
+    }
+  }
+
+  Future<void> _startPurchase() async {
+    setState(() => _isPurchasing = true);
+
+    try {
+      final success = await _paymentService.openVenuePremiumCheckout(
+        venueId: widget.venueId,
+        venueName: widget.venueName,
+        context: context,
+      );
+
+      if (success && mounted) {
+        Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text(
+              'Complete your purchase in the browser. Return here when done.',
+            ),
+            duration: Duration(seconds: 5),
+          ),
+        );
+        widget.onPurchaseComplete?.call();
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _isPurchasing = false);
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final price = _pricing?.venuePremium.displayPrice ?? '\$99.00';
+
+    return AlertDialog(
+      title: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.amber.withOpacity(0.2),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: const Icon(Icons.star, color: Colors.amber),
+          ),
+          const SizedBox(width: 12),
+          const Expanded(
+            child: Text('Upgrade to Premium'),
+          ),
+        ],
+      ),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Price
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    theme.colorScheme.primary,
+                    theme.colorScheme.tertiary,
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    price,
+                    style: theme.textTheme.headlineMedium?.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    'One-time payment for World Cup 2026',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: Colors.white.withOpacity(0.9),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+
+            Text(
+              'Premium features include:',
+              style: theme.textTheme.titleSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 12),
+            const _FeatureListItem(text: 'Specific match scheduling'),
+            const _FeatureListItem(text: 'TV & screen configuration'),
+            const _FeatureListItem(text: 'Game day specials & deals'),
+            const _FeatureListItem(text: 'Atmosphere & vibe settings'),
+            const _FeatureListItem(text: 'Real-time capacity updates'),
+            const _FeatureListItem(text: 'Priority listing in searches'),
+            const _FeatureListItem(text: 'Analytics dashboard'),
+
+            const SizedBox(height: 16),
+
+            // Tournament info
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.surfaceContainerHighest,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.info_outline,
+                    size: 18,
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Valid for the entire tournament (June 11 - July 19, 2026)',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: _isPurchasing ? null : () => Navigator.pop(context),
+          child: const Text('Not Now'),
+        ),
+        FilledButton.icon(
+          onPressed: _isPurchasing ? null : _startPurchase,
+          icon: _isPurchasing
+              ? const SizedBox(
+                  width: 18,
+                  height: 18,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    color: Colors.white,
+                  ),
+                )
+              : const Icon(Icons.shopping_cart, size: 18),
+          label: Text(_isPurchasing ? 'Processing...' : 'Upgrade Now'),
+        ),
+      ],
     );
   }
 }

@@ -678,8 +678,20 @@ export {
 // Export Favorite Team Notification functions
 export {
   sendFavoriteTeamNotifications,
-  cleanupSentNotificationRecords
+  cleanupSentNotificationRecords,
+  testFavoriteTeamNotificationsHttp
 } from './favorite-team-notifications';
+
+// Export World Cup Payment functions
+export {
+  createFanPassCheckout,
+  getFanPassStatus,
+  createVenuePremiumCheckout,
+  getVenuePremiumStatus,
+  handleWorldCupPaymentWebhook,
+  checkFanPassAccess,
+  getWorldCupPricing
+} from './world-cup-payments';
 
 // // Example of how to define a scheduled function (we'll configure the schedule later)
 // export const scheduledUpdateSchedule = functions.pubsub.schedule("every 24 hours")

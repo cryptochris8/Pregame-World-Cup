@@ -4,6 +4,7 @@ import '../../../../config/app_theme.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
+import '../screens/fan_pass_screen.dart';
 import 'match_detail_page.dart';
 import 'team_detail_page.dart';
 import 'predictions_page.dart';
@@ -94,6 +95,15 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
         ),
         centerTitle: true,
         actions: [
+          // Fan Pass button
+          IconButton(
+            icon: const Icon(Icons.star, color: Colors.amber),
+            tooltip: 'Fan Pass',
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const FanPassScreen()),
+            ),
+          ),
           // Watch Parties button
           IconButton(
             icon: const Icon(Icons.groups, color: Colors.white),
