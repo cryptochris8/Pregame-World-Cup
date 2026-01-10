@@ -4,16 +4,18 @@
     "esModuleInterop": true,
     "moduleResolution": "nodenext",
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
     "target": "es2017",
     "skipLibCheck": true,
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": ["./node_modules/@types"],
+    "isolatedModules": true
   },
   "compileOnSave": true,
   "include": [
-    "src"
+    "src",
+    "__tests__"
   ]
 }

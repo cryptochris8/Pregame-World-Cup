@@ -9,6 +9,11 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --reporters=default --reporters=jest-junit",
+    "test:verbose": "jest --verbose",
     "fetch-player-photos": "ts-node src/fetch-player-photos.ts",
     "fetch-manager-photos": "ts-node src/fetch-manager-photos.ts",
     "fetch-all-photos": "npm run fetch-player-photos && npm run fetch-manager-photos",
@@ -38,14 +43,18 @@
     "stripe": "^18.2.1"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.25.4",
     "firebase-functions-test": "^3.1.0",
-    "typescript": "^4.9.0",
-    "ts-node": "^10.9.2"
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.4"
   },
   "private": true
 }
