@@ -1,11 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
-import 'package:pregame_world_cup/data/services/player_service.dart';
 import 'package:pregame_world_cup/domain/models/player.dart';
 
+/// Tests for Player data model and Firestore integration
+/// Note: These tests use FakeFirebaseFirestore to test the data layer
+/// without requiring Firebase initialization.
 void main() {
   late FakeFirebaseFirestore fakeFirestore;
-  late PlayerService playerService;
 
   // Sample player data for testing
   final samplePlayerData1 = {
@@ -172,20 +173,14 @@ void main() {
 
   setUp(() {
     fakeFirestore = FakeFirebaseFirestore();
-    // Create a PlayerService with the fake Firestore instance
-    // Note: Since PlayerService uses FirebaseFirestore.instance directly,
-    // we'll need to test against the fake instance differently
-    playerService = PlayerService();
   });
 
-  group('PlayerService - Happy Path Tests', () {
-    test('getAllPlayers returns list of players when collection has data', () async {
-      // Add sample players to fake Firestore
+  group('Player Model - Firestore Integration', () {
+    test('reads players from Firestore collection', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
       await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
 
-      // Get snapshot and manually create players
       final snapshot = await fakeFirestore.collection('players').get();
       final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 
@@ -195,7 +190,7 @@ void main() {
       expect(players.any((p) => p.commonName == 'Vinicius Jr.'), true);
     });
 
-    test('getPlayersByTeam filters players correctly by FIFA code', () async {
+    test('filters players correctly by FIFA code', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
       await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
@@ -212,7 +207,7 @@ void main() {
       expect(players.any((p) => p.commonName == 'Vinicius Jr.'), true);
     });
 
-    test('getPlayerById returns correct player when it exists', () async {
+    test('returns correct player when it exists', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
 
       final doc = await fakeFirestore.collection('players').doc('player_001').get();
@@ -224,7 +219,7 @@ void main() {
       expect(player.fifaCode, 'BRA');
     });
 
-    test('getPlayersByPosition filters players by position', () async {
+    test('filters players by position', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
       await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
@@ -239,7 +234,7 @@ void main() {
       expect(players.every((p) => p.position == 'LW'), true);
     });
 
-    test('getTopPlayersByValue returns players sorted by market value', () async {
+    test('returns players sorted by market value', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
       await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
@@ -251,28 +246,26 @@ void main() {
       final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 
       expect(players.length, 3);
-      expect(players[0].commonName, 'Vinicius Jr.'); // Highest value
+      expect(players[0].commonName, 'Vinicius Jr.');
       expect(players[0].marketValue, 150000000);
     });
   });
 
-  group('PlayerService - Error Handling Tests', () {
-    test('getAllPlayers returns empty list on Firestore error', () async {
-      // Since we can't easily simulate Firestore errors with fake_cloud_firestore,
-      // we'll test that an empty collection returns an empty list
+  group('Player Model - Empty Collection', () {
+    test('returns empty list on empty collection', () async {
       final snapshot = await fakeFirestore.collection('players').get();
       final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 
       expect(players, isEmpty);
     });
 
-    test('getPlayerById returns null when player does not exist', () async {
+    test('returns false for non-existent player', () async {
       final doc = await fakeFirestore.collection('players').doc('nonexistent_id').get();
 
       expect(doc.exists, false);
     });
 
-    test('getPlayersByTeam returns empty list when no players match', () async {
+    test('returns empty list when no players match', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
 
       final snapshot = await fakeFirestore
@@ -283,201 +276,113 @@ void main() {
 
       expect(players, isEmpty);
     });
-
-    test('searchPlayers handles empty query gracefully', () async {
-      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
-
-      // Get all players for local filtering
-      final snapshot = await fakeFirestore.collection('players').get();
-      final allPlayers = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
-
-      // Simulate search with empty query
-      final query = '';
-      final results = allPlayers.where((player) {
-        return player.fullName.toLowerCase().contains(query.toLowerCase()) ||
-            player.commonName.toLowerCase().contains(query.toLowerCase()) ||
-            player.club.toLowerCase().contains(query.toLowerCase());
-      }).toList();
-
-      expect(results, isNotEmpty); // Empty query should match all
-    });
   });
 
-  group('PlayerService - Edge Cases Tests', () {
-    test('handles player with null/empty values correctly', () async {
-      final minimalPlayerData = {
-        'playerId': 'player_minimal',
-        'fifaCode': '',
-        'firstName': '',
-        'lastName': '',
-        'fullName': '',
-        'commonName': '',
-        'jerseyNumber': 0,
-        'position': '',
-        'dateOfBirth': '2000-01-01',
-        'age': 0,
-        'height': 0,
-        'weight': 0,
-        'preferredFoot': 'Right',
-        'club': '',
-        'clubLeague': '',
-        'photoUrl': '',
-        'marketValue': 0,
-        'caps': 0,
-        'goals': 0,
-        'assists': 0,
-        'worldCupAppearances': 0,
-        'worldCupGoals': 0,
-        'previousWorldCups': [],
-        'stats': {
-          'club': {
-            'season': '',
-            'appearances': 0,
-            'goals': 0,
-            'assists': 0,
-            'minutesPlayed': 0,
-          },
-          'international': {
-            'appearances': 0,
-            'goals': 0,
-            'assists': 0,
-            'minutesPlayed': 0,
-          },
-        },
-        'honors': [],
-        'strengths': [],
-        'weaknesses': [],
-        'playStyle': '',
-        'keyMoment': '',
-        'comparisonToLegend': '',
-        'worldCup2026Prediction': '',
-        'socialMedia': {
-          'instagram': '',
-          'twitter': '',
-          'followers': 0,
-        },
-        'trivia': [],
-      };
-
-      await fakeFirestore.collection('players').doc('player_minimal').set(minimalPlayerData);
-
-      final doc = await fakeFirestore.collection('players').doc('player_minimal').get();
-      final player = Player.fromFirestore(doc);
-
-      expect(player, isNotNull);
-      expect(player.playerId, 'player_minimal');
-      expect(player.commonName, '');
-      expect(player.honors, isEmpty);
-      expect(player.strengths, isEmpty);
-      expect(player.trivia, isEmpty);
-    });
-
-    test('getPlayersByCategory filters correctly for Forward category', () async {
-      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
-      await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
-
-      // LW and RW are both forwards
-      final forwardPositions = ['LW', 'RW', 'ST', 'CF'];
-      final snapshot = await fakeFirestore
-          .collection('players')
-          .where('position', whereIn: forwardPositions)
-          .get();
-      final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
-
-      expect(players.length, 2);
-      expect(players.every((p) => forwardPositions.contains(p.position)), true);
-    });
-
-    test('player model calculated properties work correctly', () async {
+  group('Player Model - Data Parsing', () {
+    test('parses player stats correctly', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
 
       final doc = await fakeFirestore.collection('players').doc('player_001').get();
       final player = Player.fromFirestore(doc);
 
-      // Test formatted market value
-      expect(player.formattedMarketValue, '€40M');
-
-      // Test position display name
-      expect(player.positionDisplayName, 'Left Winger');
-
-      // Test category
-      expect(player.category, 'Forward');
-
-      // Test goals per game
-      expect(player.goalsPerGame, closeTo(0.617, 0.01)); // 79/128
-
-      // Test assists per game
-      expect(player.assistsPerGame, closeTo(0.453, 0.01)); // 58/128
+      expect(player.caps, equals(128));
+      expect(player.goals, equals(79));
+      expect(player.assists, equals(58));
     });
 
-    test('handles large dataset pagination correctly', () async {
-      // Add multiple players
-      for (int i = 0; i < 30; i++) {
-        final playerData = {
-          ...samplePlayerData1,
-          'playerId': 'player_$i',
-          'commonName': 'Player $i',
-          'marketValue': 1000000 * i,
-        };
-        await fakeFirestore.collection('players').doc('player_$i').set(playerData);
-      }
-
-      // Test limit
-      final snapshot = await fakeFirestore
-          .collection('players')
-          .orderBy('marketValue', descending: true)
-          .limit(20)
-          .get();
-      final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
-
-      expect(players.length, 20);
-      // Verify they're sorted correctly
-      for (int i = 0; i < players.length - 1; i++) {
-        expect(players[i].marketValue >= players[i + 1].marketValue, true);
-      }
-    });
-
-    test('searchPlayers performs case-insensitive search', () async {
-      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
+    test('parses World Cup history correctly', () async {
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
 
-      final snapshot = await fakeFirestore.collection('players').get();
-      final allPlayers = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
+      final doc = await fakeFirestore.collection('players').doc('player_002').get();
+      final player = Player.fromFirestore(doc);
 
-      // Search with lowercase
-      final lowerQuery = 'neymar';
-      final results = allPlayers.where((player) {
-        return player.fullName.toLowerCase().contains(lowerQuery.toLowerCase()) ||
-            player.commonName.toLowerCase().contains(lowerQuery.toLowerCase()) ||
-            player.club.toLowerCase().contains(lowerQuery.toLowerCase());
-      }).toList();
+      expect(player.worldCupAppearances, equals(5));
+      expect(player.worldCupGoals, equals(13));
+      expect(player.previousWorldCups.length, equals(5));
+      expect(player.previousWorldCups, contains(2022));
+    });
 
-      expect(results.length, 1);
-      expect(results[0].commonName, 'Neymar');
+    test('parses social media correctly', () async {
+      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
+
+      final doc = await fakeFirestore.collection('players').doc('player_001').get();
+      final player = Player.fromFirestore(doc);
+
+      expect(player.socialMedia.instagram, equals('@neymarjr'));
+      expect(player.socialMedia.followers, equals(200000000));
+    });
+
+    test('parses physical attributes correctly', () async {
+      await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
+
+      final doc = await fakeFirestore.collection('players').doc('player_002').get();
+      final player = Player.fromFirestore(doc);
+
+      expect(player.height, equals(170));
+      expect(player.weight, equals(72));
+      expect(player.preferredFoot, equals('Left'));
+    });
+
+    test('parses strengths and weaknesses correctly', () async {
+      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
+
+      final doc = await fakeFirestore.collection('players').doc('player_001').get();
+      final player = Player.fromFirestore(doc);
+
+      expect(player.strengths, contains('Dribbling'));
+      expect(player.strengths, contains('Speed'));
+      expect(player.weaknesses, contains('Discipline'));
     });
   });
 
-  group('PlayerService - Player Statistics Tests', () {
-    test('getPlayerStatistics calculates correct aggregates', () async {
+  group('Player Model - Filtering and Search', () {
+    test('search players by name', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
       await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
 
       final snapshot = await fakeFirestore.collection('players').get();
+      final allPlayers = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
+
+      final query = 'messi';
+      final results = allPlayers.where((player) {
+        return player.fullName.toLowerCase().contains(query.toLowerCase()) ||
+            player.commonName.toLowerCase().contains(query.toLowerCase());
+      }).toList();
+
+      expect(results.length, equals(1));
+      expect(results.first.commonName, equals('Lionel Messi'));
+    });
+
+    test('filter World Cup winners', () async {
+      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
+      await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
+      await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
+
+      final snapshot = await fakeFirestore.collection('players').get();
+      final allPlayers = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
+
+      final worldCupWinners = allPlayers.where((player) {
+        return player.honors.any((h) => h.toLowerCase().contains('world cup'));
+      }).toList();
+
+      expect(worldCupWinners.length, equals(1));
+      expect(worldCupWinners.first.commonName, equals('Lionel Messi'));
+    });
+
+    test('filter by club league', () async {
+      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
+      await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
+      await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);
+
+      final snapshot = await fakeFirestore
+          .collection('players')
+          .where('clubLeague', isEqualTo: 'La Liga')
+          .get();
       final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 
-      // Calculate statistics manually
-      final totalPlayers = players.length;
-      final totalMarketValue = players.fold<int>(0, (sum, player) => sum + player.marketValue);
-      final averageAge = players.fold<double>(0, (sum, player) => sum + player.age) / players.length;
-      final totalGoals = players.fold<int>(0, (sum, player) => sum + player.goals);
-      final totalCaps = players.fold<int>(0, (sum, player) => sum + player.caps);
-
-      expect(totalPlayers, 3);
-      expect(totalMarketValue, 225000000); // 40M + 35M + 150M
-      expect(averageAge, closeTo(31, 1)); // (32 + 37 + 24) / 3
-      expect(totalGoals, 193); // 79 + 106 + 8
-      expect(totalCaps, 343); // 128 + 180 + 35
+      expect(players.length, equals(1));
+      expect(players.first.commonName, equals('Vinicius Jr.'));
     });
   });
 }

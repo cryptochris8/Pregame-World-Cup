@@ -4,16 +4,24 @@ import 'package:pregame_world_cup/features/worldcup/domain/entities/entities.dar
 import 'package:pregame_world_cup/features/worldcup/presentation/widgets/widgets.dart';
 
 import '../../presentation/bloc/mock_repositories.dart';
+import '../../../../test_helpers/test_setup.dart';
 
 void main() {
-  // Ignore overflow errors in widget tests
+  // Set up GetIt mocks before tests
   setUp(() {
+    setUpTestGetIt();
+
+    // Ignore overflow errors in widget tests
     FlutterError.onError = (FlutterErrorDetails details) {
       if (details.toString().contains('overflowed')) {
         return; // Ignore overflow errors
       }
       FlutterError.presentError(details);
     };
+  });
+
+  tearDown(() {
+    tearDownTestGetIt();
   });
 
   group('MatchCard', () {
