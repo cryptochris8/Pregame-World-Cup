@@ -25,7 +25,7 @@ void main() {
 
     test('Can read national teams from Firestore', () async {
       // Arrange: Add sample team to fake Firestore
-      await fakeFirestore.collection('national_teams').doc('USA').set({
+      await fakeFirestore.collection('worldcup_teams').doc('USA').set({
         'fifaCode': 'USA',
         'countryName': 'United States',
         'shortName': 'USA',
@@ -61,7 +61,7 @@ void main() {
 
     test('Can read World Cup matches from Firestore', () async {
       // Arrange: Add sample match
-      await fakeFirestore.collection('world_cup_matches').doc('wc2026_001').set({
+      await fakeFirestore.collection('worldcup_matches').doc('wc2026_001').set({
         'matchId': 'wc2026_001',
         'matchNumber': 1,
         'stage': 'groupStage',
@@ -91,7 +91,7 @@ void main() {
 
     test('Can read venues from Firestore', () async {
       // Arrange: Add sample venue
-      await fakeFirestore.collection('world_cup_venues').doc('metlife').set({
+      await fakeFirestore.collection('worldcup_venues').doc('metlife').set({
         'venueId': 'metlife',
         'name': 'MetLife Stadium',
         'city': 'East Rutherford',
@@ -118,13 +118,13 @@ void main() {
 
     test('Can filter matches by stage', () async {
       // Arrange: Add matches at different stages
-      await fakeFirestore.collection('world_cup_matches').doc('wc_group_1').set({
+      await fakeFirestore.collection('worldcup_matches').doc('wc_group_1').set({
         'matchNumber': 1,
         'stage': 'groupStage',
         'status': 'scheduled',
       });
 
-      await fakeFirestore.collection('world_cup_matches').doc('wc_final').set({
+      await fakeFirestore.collection('worldcup_matches').doc('wc_final').set({
         'matchNumber': 104,
         'stage': 'final_',
         'status': 'scheduled',
@@ -142,19 +142,19 @@ void main() {
 
     test('Can get teams by confederation', () async {
       // Arrange: Add teams from different confederations
-      await fakeFirestore.collection('national_teams').doc('USA').set({
+      await fakeFirestore.collection('worldcup_teams').doc('USA').set({
         'fifaCode': 'USA',
         'countryName': 'United States',
         'confederation': 'concacaf',
       });
 
-      await fakeFirestore.collection('national_teams').doc('BRA').set({
+      await fakeFirestore.collection('worldcup_teams').doc('BRA').set({
         'fifaCode': 'BRA',
         'countryName': 'Brazil',
         'confederation': 'conmebol',
       });
 
-      await fakeFirestore.collection('national_teams').doc('GER').set({
+      await fakeFirestore.collection('worldcup_teams').doc('GER').set({
         'fifaCode': 'GER',
         'countryName': 'Germany',
         'confederation': 'uefa',
@@ -174,19 +174,19 @@ void main() {
 
     test('Can get teams by group', () async {
       // Arrange: Add teams in Group A
-      await fakeFirestore.collection('national_teams').doc('USA').set({
+      await fakeFirestore.collection('worldcup_teams').doc('USA').set({
         'fifaCode': 'USA',
         'countryName': 'United States',
         'group': 'A',
       });
 
-      await fakeFirestore.collection('national_teams').doc('BRA').set({
+      await fakeFirestore.collection('worldcup_teams').doc('BRA').set({
         'fifaCode': 'BRA',
         'countryName': 'Brazil',
         'group': 'A',
       });
 
-      await fakeFirestore.collection('national_teams').doc('ARG').set({
+      await fakeFirestore.collection('worldcup_teams').doc('ARG').set({
         'fifaCode': 'ARG',
         'countryName': 'Argentina',
         'group': 'B',
