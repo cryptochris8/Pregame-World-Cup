@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:pregame_world_cup/presentation/screens/manager_profiles_screen.dart';
 import 'package:pregame_world_cup/domain/models/manager.dart';
@@ -494,13 +495,13 @@ void main() {
 }
 
 // Helper class to create fake document snapshots for testing
-class FakeDocumentSnapshot implements DocumentSnapshot {
+class FakeDocumentSnapshot implements DocumentSnapshot<Object?> {
   final Map<String, dynamic> _data;
 
   FakeDocumentSnapshot(this._data);
 
   @override
-  Map<String, dynamic> data() => _data;
+  Object? data() => _data;
 
   @override
   bool get exists => true;
@@ -509,5 +510,14 @@ class FakeDocumentSnapshot implements DocumentSnapshot {
   String get id => _data['managerId'] ?? '';
 
   @override
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+  DocumentReference<Object?> get reference => throw UnimplementedError();
+
+  @override
+  SnapshotMetadata get metadata => throw UnimplementedError();
+
+  @override
+  dynamic operator [](Object field) => _data[field as String];
+
+  @override
+  dynamic get(Object field) => _data[field as String];
 }
