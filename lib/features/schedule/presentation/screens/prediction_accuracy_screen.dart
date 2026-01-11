@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/services/game_prediction_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../config/theme_helper.dart';
+import '../../../worldcup/presentation/widgets/fan_pass_feature_gate.dart';
 
 /// Screen displaying prediction accuracy statistics and leaderboards
 class PredictionAccuracyScreen extends StatefulWidget {
@@ -167,6 +168,15 @@ class _PredictionAccuracyScreenState extends State<PredictionAccuracyScreen>
   }
 
   Widget _buildAIPerformanceTab() {
+    // Gate AI Performance insights behind Superfan Pass
+    return FanPassFeatureGate(
+      feature: FanPassFeature.aiMatchInsights,
+      customMessage: 'Unlock detailed AI prediction performance analysis and accuracy tracking with Superfan Pass.',
+      child: _buildAIPerformanceContent(),
+    );
+  }
+
+  Widget _buildAIPerformanceContent() {
     if (_accuracyStats?.aiAccuracy == null) {
       return _buildNoDataWidget('No AI prediction data available yet');
     }
@@ -543,6 +553,15 @@ class _PredictionAccuracyScreenState extends State<PredictionAccuracyScreen>
   }
 
   Widget _buildLeaderboardTab() {
+    // Gate leaderboard behind Fan Pass (advanced social features)
+    return FanPassFeatureGate(
+      feature: FanPassFeature.advancedSocialFeatures,
+      customMessage: 'See how you rank against other predictors! Unlock the leaderboard with Fan Pass.',
+      child: _buildLeaderboardContent(),
+    );
+  }
+
+  Widget _buildLeaderboardContent() {
     if (_leaderboard.isEmpty) {
       return _buildNoDataWidget('No leaderboard data available yet.\nBe the first to make predictions!');
     }
