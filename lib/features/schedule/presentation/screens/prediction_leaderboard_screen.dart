@@ -5,6 +5,7 @@ import '../../../../services/prediction_service.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../config/theme_helper.dart';
+import '../../../worldcup/presentation/widgets/fan_pass_feature_gate.dart';
 
 /// Screen showing prediction leaderboard and stats
 class PredictionLeaderboardScreen extends StatefulWidget {
@@ -117,6 +118,15 @@ class _PredictionLeaderboardScreenState extends State<PredictionLeaderboardScree
   }
 
   Widget _buildLeaderboardTab() {
+    // Gate leaderboard behind Fan Pass (advanced social features)
+    return FanPassFeatureGate(
+      feature: FanPassFeature.advancedSocialFeatures,
+      customMessage: 'See how you rank against other fans! Unlock the full leaderboard with Fan Pass.',
+      child: _buildLeaderboardContent(),
+    );
+  }
+
+  Widget _buildLeaderboardContent() {
     if (_leaderboard.isEmpty) {
       return Center(
         child: Column(
@@ -159,7 +169,7 @@ class _PredictionLeaderboardScreenState extends State<PredictionLeaderboardScree
           final stats = entry['stats'] as PredictionStats;
           final rank = entry['rank'] as int;
           final userId = entry['userId'] as String;
-          
+
           return _buildLeaderboardEntry(rank, userId, stats);
         },
       ),
