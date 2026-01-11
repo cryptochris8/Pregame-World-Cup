@@ -524,7 +524,7 @@ The key for the Netherlands is to bypass Japan's press and find spaces in transi
   // ========== SPAIN vs SAUDI ARABIA ==========
   {
     team1Code: 'ESP',
-    team2Code: 'KSA',
+    team2Code: 'SAU',
     team1Name: 'Spain',
     team2Name: 'Saudi Arabia',
     historicalAnalysis: `Spain and Saudi Arabia's World Cup history is limited to one meeting: the 2006 World Cup in Germany, where Spain won 1-0 with a hard-fought victory. However, the context of this 2026 encounter is transformed by Saudi Arabia's stunning 2022 World Cup upset over Argentina in their opening match—a 2-1 victory that ranks among the greatest shocks in tournament history.
@@ -547,7 +547,7 @@ Spain, meanwhile, won the 2024 European Championship in dominant fashion, confir
       },
       {
         name: 'Salem Al-Dawsari',
-        teamCode: 'KSA',
+        teamCode: 'SAU',
         position: 'Winger',
         reason: 'Scored that stunning goal against Argentina in 2022',
       },
@@ -559,7 +559,7 @@ Spain, meanwhile, won the 2024 European Championship in dominant fashion, confir
       },
       {
         name: 'Mohammed Al-Owais',
-        teamCode: 'KSA',
+        teamCode: 'SAU',
         position: 'Goalkeeper',
         reason: 'Shot-stopper who was exceptional against Argentina',
       },
