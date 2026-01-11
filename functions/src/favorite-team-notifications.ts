@@ -4,6 +4,158 @@ import * as admin from 'firebase-admin';
 const db = admin.firestore();
 
 /**
+ * HTTP endpoint for testing favorite team notifications locally
+ * Call: curl https://us-central1-pregame-b089e.cloudfunctions.net/testFavoriteTeamNotifications
+ */
+export const testFavoriteTeamNotificationsHttp = functions.https.onRequest(async (req, res) => {
+  const results: any = {
+    timestamp: new Date().toISOString(),
+    steps: [],
+  };
+
+  try {
+    // Step 1: Check for scheduled matches
+    const allMatchesSnapshot = await db
+      .collection('worldcup_matches')
+      .where('status', '==', 'scheduled')
+      .limit(10)
+      .get();
+
+    results.steps.push({
+      step: 1,
+      name: 'Scheduled matches check',
+      count: allMatchesSnapshot.size,
+      sample: allMatchesSnapshot.docs.slice(0, 3).map(doc => {
+        const m = doc.data();
+        const dateTimeUtc = m.dateTimeUtc && typeof m.dateTimeUtc.toDate === 'function'
+          ? m.dateTimeUtc.toDate().toISOString()
+          : m.dateTimeUtc;
+        return {
+          id: doc.id,
+          match: `${m.homeTeamName || m.homeTeamCode} vs ${m.awayTeamName || m.awayTeamCode}`,
+          dateTimeUtc,
+        };
+      }),
+    });
+
+    // Step 2: Check matches in notification window (24-48 hours)
+    const now = admin.firestore.Timestamp.now();
+    const in24Hours = admin.firestore.Timestamp.fromMillis(now.toMillis() + 24 * 60 * 60 * 1000);
+    const in48Hours = admin.firestore.Timestamp.fromMillis(now.toMillis() + 48 * 60 * 60 * 1000);
+
+    const upcomingMatchesSnapshot = await db
+      .collection('worldcup_matches')
+      .where('status', '==', 'scheduled')
+      .where('dateTimeUtc', '>=', in24Hours)
+      .where('dateTimeUtc', '<=', in48Hours)
+      .get();
+
+    results.steps.push({
+      step: 2,
+      name: 'Matches in 24-48 hour window',
+      count: upcomingMatchesSnapshot.size,
+      matches: upcomingMatchesSnapshot.docs.map(doc => {
+        const m = doc.data();
+        return {
+          id: doc.id,
+          match: `${m.homeTeamName} vs ${m.awayTeamName}`,
+          homeTeamCode: m.homeTeamCode,
+          awayTeamCode: m.awayTeamCode,
+        };
+      }),
+    });
+
+    // Step 3: Check users with favorite teams enabled
+    const usersSnapshot = await db
+      .collection('users')
+      .where('notifyFavoriteTeamMatches', '==', true)
+      .limit(20)
+      .get();
+
+    results.steps.push({
+      step: 3,
+      name: 'Users with notifications enabled',
+      count: usersSnapshot.size,
+      users: usersSnapshot.docs.map(doc => {
+        const u = doc.data();
+        return {
+          id: doc.id.substring(0, 8) + '...',
+          favoriteTeams: u.favoriteTeamCodes || [],
+          hasFcmToken: !!u.fcmToken,
+        };
+      }),
+    });
+
+    // Step 4: Simulate matching for each upcoming match
+    const matchResults: any[] = [];
+    for (const matchDoc of upcomingMatchesSnapshot.docs) {
+      const match = matchDoc.data();
+      const homeTeamCode = match.homeTeamCode?.toUpperCase();
+      const awayTeamCode = match.awayTeamCode?.toUpperCase();
+
+      if (!homeTeamCode || !awayTeamCode) continue;
+
+      const matchingUsersSnapshot = await db
+        .collection('users')
+        .where('notifyFavoriteTeamMatches', '==', true)
+        .where('favoriteTeamCodes', 'array-contains-any', [homeTeamCode, awayTeamCode])
+        .get();
+
+      matchResults.push({
+        matchId: matchDoc.id,
+        match: `${match.homeTeamName} vs ${match.awayTeamName}`,
+        usersToNotify: matchingUsersSnapshot.size,
+        users: matchingUsersSnapshot.docs.map(doc => ({
+          id: doc.id.substring(0, 8) + '...',
+          favorites: doc.data().favoriteTeamCodes,
+        })),
+      });
+    }
+
+    results.steps.push({
+      step: 4,
+      name: 'Users matched to upcoming matches',
+      matchResults,
+    });
+
+    // Step 5: Check sent notifications
+    const sentSnapshot = await db
+      .collection('sent_notifications')
+      .orderBy('sentAt', 'desc')
+      .limit(5)
+      .get();
+
+    results.steps.push({
+      step: 5,
+      name: 'Recent sent notification records',
+      count: sentSnapshot.size,
+      records: sentSnapshot.docs.map(doc => {
+        const data = doc.data();
+        const sentAt = data.sentAt && typeof data.sentAt.toDate === 'function'
+          ? data.sentAt.toDate().toISOString()
+          : data.sentAt;
+        return {
+          id: doc.id,
+          matchId: data.matchId,
+          homeTeamCode: data.homeTeamCode,
+          awayTeamCode: data.awayTeamCode,
+          usersNotified: data.usersNotified,
+          sentAt,
+        };
+      }),
+    });
+
+    results.success = true;
+    res.status(200).json(results);
+
+  } catch (error: any) {
+    results.success = false;
+    results.error = error.message;
+    res.status(500).json(results);
+  }
+});
+
+/**
  * Scheduled function that runs twice daily to notify users about upcoming
  * matches of their favorite teams (24 hours before kickoff)
  */
