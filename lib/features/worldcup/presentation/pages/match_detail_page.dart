@@ -734,50 +734,59 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       return const SizedBox.shrink();
     }
 
-    // Show the AI Match Summary widget
-    return AIMatchSummaryWidget(
-      summary: _matchSummary!,
-      initiallyExpanded: false,
+    // Gate AI Match Insights behind Superfan Pass
+    return FanPassFeatureGate(
+      feature: FanPassFeature.aiMatchInsights,
+      customMessage: 'Get AI-powered match analysis, historical insights, and key player matchups with Superfan Pass.',
+      child: AIMatchSummaryWidget(
+        summary: _matchSummary!,
+        initiallyExpanded: false,
+      ),
     );
   }
 
   Widget _buildMatchStatsSection() {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppTheme.backgroundCard,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Row(
-              children: [
-                Icon(Icons.bar_chart, color: Colors.white),
-                SizedBox(width: 8),
-                Text(
-                  'Match Statistics',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.white,
+    // Gate Advanced Stats behind Fan Pass
+    return FanPassFeatureGate(
+      feature: FanPassFeature.advancedStats,
+      customMessage: 'Unlock detailed match statistics including possession, shots, corners, and more.',
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppTheme.backgroundCard,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.white.withOpacity(0.1)),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Row(
+                children: [
+                  Icon(Icons.bar_chart, color: Colors.white),
+                  SizedBox(width: 8),
+                  Text(
+                    'Match Statistics',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            _buildStatBar('Possession', 55, 45),
-            const SizedBox(height: 12),
-            _buildStatBar('Shots', 12, 8),
-            const SizedBox(height: 12),
-            _buildStatBar('Shots on Target', 5, 3),
-            const SizedBox(height: 12),
-            _buildStatBar('Corners', 6, 4),
-            const SizedBox(height: 12),
-            _buildStatBar('Fouls', 10, 14),
-          ],
+                ],
+              ),
+              const SizedBox(height: 16),
+              _buildStatBar('Possession', 55, 45),
+              const SizedBox(height: 12),
+              _buildStatBar('Shots', 12, 8),
+              const SizedBox(height: 12),
+              _buildStatBar('Shots on Target', 5, 3),
+              const SizedBox(height: 12),
+              _buildStatBar('Corners', 6, 4),
+              const SizedBox(height: 12),
+              _buildStatBar('Fouls', 10, 14),
+            ],
+          ),
         ),
       ),
     );

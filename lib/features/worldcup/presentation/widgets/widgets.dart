@@ -17,3 +17,4 @@ export 'nearby_venues_widget.dart';
 export 'matchup_preview_widget.dart';
 export 'ai_match_summary_widget.dart';
 export 'reminder_button.dart';
+export 'fan_pass_feature_gate.dart';
