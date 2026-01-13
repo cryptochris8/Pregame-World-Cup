@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../domain/services/world_cup_payment_service.dart';
+import 'transaction_history_screen.dart';
 
 /// Fan Pass purchase screen
 /// Displays tier comparison and handles checkout
@@ -85,6 +86,17 @@ class _FanPassScreenState extends State<FanPassScreen> {
         title: const Text('World Cup 2026 Pass'),
         backgroundColor: const Color(0xFF1E3A8A),
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => const TransactionHistoryScreen(),
+              ),
+            ),
+            icon: const Icon(Icons.receipt_long),
+            tooltip: 'Transaction History',
+          ),
+        ],
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -201,30 +213,61 @@ class _FanPassScreenState extends State<FanPassScreen> {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: const Color(0xFF059669)),
       ),
-      child: Row(
+      child: Column(
         children: [
-          const Icon(Icons.check_circle, color: Color(0xFF059669), size: 28),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+          Row(
+            children: [
+              const Icon(Icons.check_circle, color: Color(0xFF059669), size: 28),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'You have ${passType.displayName}',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Color(0xFF059669),
+                      ),
+                    ),
+                    if (_currentStatus?.purchasedAt != null)
+                      Text(
+                        'Purchased ${_formatDate(_currentStatus!.purchasedAt!)}',
+                        style: TextStyle(
+                          color: Colors.grey[600],
+                          fontSize: 12,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          InkWell(
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => const TransactionHistoryScreen(),
+              ),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Icon(
+                  Icons.receipt_long,
+                  size: 16,
+                  color: Colors.grey[600],
+                ),
+                const SizedBox(width: 6),
                 Text(
-                  'You have ${passType.displayName}',
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Color(0xFF059669),
+                  'View Transaction History',
+                  style: TextStyle(
+                    color: Colors.grey[600],
+                    fontSize: 13,
+                    decoration: TextDecoration.underline,
                   ),
                 ),
-                if (_currentStatus?.purchasedAt != null)
-                  Text(
-                    'Purchased ${_formatDate(_currentStatus!.purchasedAt!)}',
-                    style: TextStyle(
-                      color: Colors.grey[600],
-                      fontSize: 12,
-                    ),
-                  ),
               ],
             ),
           ),

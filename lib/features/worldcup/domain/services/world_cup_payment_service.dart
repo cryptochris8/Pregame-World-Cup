@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -258,6 +259,126 @@ class WorldCupPaymentService {
   }
 
   // ============================================================================
+  // TRANSACTION HISTORY
+  // ============================================================================
+
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  /// Get transaction history for current user
+  Future<List<PaymentTransaction>> getTransactionHistory() async {
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+      if (user == null) return [];
+
+      final List<PaymentTransaction> transactions = [];
+
+      // Get fan pass purchases
+      final fanPassDoc = await _firestore
+          .collection('world_cup_fan_passes')
+          .doc(user.uid)
+          .get();
+
+      if (fanPassDoc.exists) {
+        final data = fanPassDoc.data()!;
+        if (data['status'] == 'active') {
+          transactions.add(PaymentTransaction(
+            id: fanPassDoc.id,
+            type: TransactionType.fanPass,
+            productName: data['passType'] == 'superfan_pass'
+                ? 'Superfan Pass'
+                : 'Fan Pass',
+            amount: data['passType'] == 'superfan_pass' ? 2999 : 1499,
+            currency: 'usd',
+            status: TransactionStatus.completed,
+            createdAt: (data['purchasedAt'] as Timestamp?)?.toDate() ??
+                DateTime.now(),
+            metadata: {
+              'passType': data['passType'],
+              'stripeSessionId': data['stripeSessionId'],
+            },
+          ));
+        }
+      }
+
+      // Get venue premium purchases
+      final venuePurchases = await _firestore
+          .collection('world_cup_venue_purchases')
+          .where('userId', isEqualTo: user.uid)
+          .orderBy('purchasedAt', descending: true)
+          .get();
+
+      for (final doc in venuePurchases.docs) {
+        final data = doc.data();
+        transactions.add(PaymentTransaction(
+          id: doc.id,
+          type: TransactionType.venuePremium,
+          productName: 'Venue Premium',
+          amount: 9900,
+          currency: 'usd',
+          status: TransactionStatus.completed,
+          createdAt: (data['purchasedAt'] as Timestamp?)?.toDate() ??
+              DateTime.now(),
+          metadata: {
+            'venueId': data['venueId'],
+            'venueName': data['venueName'],
+            'stripeSessionId': data['stripeSessionId'],
+          },
+        ));
+      }
+
+      // Get virtual attendance payments
+      final virtualPayments = await _firestore
+          .collection('watch_party_virtual_payments')
+          .where('userId', isEqualTo: user.uid)
+          .orderBy('createdAt', descending: true)
+          .limit(50)
+          .get();
+
+      for (final doc in virtualPayments.docs) {
+        final data = doc.data();
+        transactions.add(PaymentTransaction(
+          id: doc.id,
+          type: TransactionType.virtualAttendance,
+          productName: 'Virtual Attendance',
+          amount: (data['amount'] as num?)?.toInt() ?? 0,
+          currency: data['currency'] ?? 'usd',
+          status: _parseTransactionStatus(data['status']),
+          createdAt: (data['createdAt'] as Timestamp?)?.toDate() ??
+              DateTime.now(),
+          metadata: {
+            'watchPartyId': data['watchPartyId'],
+            'watchPartyName': data['watchPartyName'],
+          },
+        ));
+      }
+
+      // Sort all transactions by date descending
+      transactions.sort((a, b) => b.createdAt.compareTo(a.createdAt));
+
+      return transactions;
+    } catch (e) {
+      LoggingService.error('Error getting transaction history: $e', tag: _logTag);
+      return [];
+    }
+  }
+
+  TransactionStatus _parseTransactionStatus(String? status) {
+    switch (status) {
+      case 'completed':
+      case 'succeeded':
+        return TransactionStatus.completed;
+      case 'pending':
+        return TransactionStatus.pending;
+      case 'refunded':
+        return TransactionStatus.refunded;
+      case 'failed':
+        return TransactionStatus.failed;
+      default:
+        return TransactionStatus.pending;
+    }
+  }
+
+  // ============================================================================
   // UI HELPERS
   // ============================================================================
 
@@ -484,4 +605,142 @@ class PriceInfo {
     name: map['name'] ?? '',
     description: map['description'] ?? '',
   );
+}
+
+// ============================================================================
+// TRANSACTION HISTORY MODELS
+// ============================================================================
+
+/// Transaction types
+enum TransactionType {
+  fanPass,
+  venuePremium,
+  virtualAttendance,
+  tip,
+  ticket;
+
+  String get displayName {
+    switch (this) {
+      case TransactionType.fanPass:
+        return 'Fan Pass';
+      case TransactionType.venuePremium:
+        return 'Venue Premium';
+      case TransactionType.virtualAttendance:
+        return 'Virtual Attendance';
+      case TransactionType.tip:
+        return 'Tip';
+      case TransactionType.ticket:
+        return 'Ticket';
+    }
+  }
+
+  IconData get icon {
+    switch (this) {
+      case TransactionType.fanPass:
+        return Icons.star;
+      case TransactionType.venuePremium:
+        return Icons.store;
+      case TransactionType.virtualAttendance:
+        return Icons.videocam;
+      case TransactionType.tip:
+        return Icons.favorite;
+      case TransactionType.ticket:
+        return Icons.confirmation_number;
+    }
+  }
+
+  Color get color {
+    switch (this) {
+      case TransactionType.fanPass:
+        return const Color(0xFFFFB300); // Gold
+      case TransactionType.venuePremium:
+        return const Color(0xFF7C4DFF); // Purple
+      case TransactionType.virtualAttendance:
+        return const Color(0xFF00BCD4); // Cyan
+      case TransactionType.tip:
+        return const Color(0xFFE91E63); // Pink
+      case TransactionType.ticket:
+        return const Color(0xFF4CAF50); // Green
+    }
+  }
+}
+
+/// Transaction status
+enum TransactionStatus {
+  pending,
+  completed,
+  failed,
+  refunded;
+
+  String get displayName {
+    switch (this) {
+      case TransactionStatus.pending:
+        return 'Pending';
+      case TransactionStatus.completed:
+        return 'Completed';
+      case TransactionStatus.failed:
+        return 'Failed';
+      case TransactionStatus.refunded:
+        return 'Refunded';
+    }
+  }
+
+  Color get color {
+    switch (this) {
+      case TransactionStatus.pending:
+        return const Color(0xFFFFA000); // Amber
+      case TransactionStatus.completed:
+        return const Color(0xFF4CAF50); // Green
+      case TransactionStatus.failed:
+        return const Color(0xFFF44336); // Red
+      case TransactionStatus.refunded:
+        return const Color(0xFF9E9E9E); // Grey
+    }
+  }
+}
+
+/// Payment transaction record
+class PaymentTransaction {
+  final String id;
+  final TransactionType type;
+  final String productName;
+  final int amount; // in cents
+  final String currency;
+  final TransactionStatus status;
+  final DateTime createdAt;
+  final Map<String, dynamic> metadata;
+
+  PaymentTransaction({
+    required this.id,
+    required this.type,
+    required this.productName,
+    required this.amount,
+    required this.currency,
+    required this.status,
+    required this.createdAt,
+    this.metadata = const {},
+  });
+
+  /// Format amount for display (e.g., "$14.99")
+  String get displayAmount {
+    final dollars = amount / 100;
+    final symbol = currency.toUpperCase() == 'USD' ? '\$' : currency;
+    return '$symbol${dollars.toStringAsFixed(2)}';
+  }
+
+  /// Get a subtitle based on metadata
+  String? get subtitle {
+    if (type == TransactionType.virtualAttendance) {
+      return metadata['watchPartyName'] as String?;
+    }
+    if (type == TransactionType.venuePremium) {
+      return metadata['venueName'] as String?;
+    }
+    if (type == TransactionType.fanPass) {
+      final passType = metadata['passType'] as String?;
+      if (passType == 'superfan_pass') return 'World Cup 2026';
+      return 'World Cup 2026';
+    }
+    return null;
+  }
 }
