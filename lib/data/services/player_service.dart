@@ -312,6 +312,67 @@ class PlayerService {
     }
   }
 
+  /// Get top World Cup goal scorers (career World Cup goals)
+  Future<List<Player>> getWorldCupTopScorers({int limit = 20}) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .orderBy('worldCupGoals', descending: true)
+          .limit(limit)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => Player.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('Error fetching World Cup top scorers: $e');
+      return [];
+    }
+  }
+
+  /// Get top World Cup assist providers (career World Cup assists)
+  Future<List<Player>> getWorldCupTopAssists({int limit = 20}) async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(_collectionName)
+          .orderBy('worldCupAssists', descending: true)
+          .limit(limit)
+          .get();
+
+      return snapshot.docs
+          .map((doc) => Player.fromFirestore(doc))
+          .toList();
+    } catch (e) {
+      print('Error fetching World Cup top assists: $e');
+      return [];
+    }
+  }
+
+  /// Get top players by goals per World Cup appearance ratio
+  Future<List<Player>> getWorldCupBestRatios({int limit = 20}) async {
+    try {
+      // Fetch players with World Cup experience
+      final allPlayers = await getAllPlayers();
+
+      // Filter to players with at least 3 World Cup appearances
+      final wcPlayers = allPlayers
+          .where((p) => p.worldCupAppearances >= 3 && p.worldCupGoals > 0)
+          .toList();
+
+      // Sort by goals per appearance ratio
+      wcPlayers.sort((a, b) {
+        final ratioA = a.worldCupGoals / a.worldCupAppearances;
+        final ratioB = b.worldCupGoals / b.worldCupAppearances;
+        return ratioB.compareTo(ratioA);
+      });
+
+      return wcPlayers.take(limit).toList();
+    } catch (e) {
+      print('Error fetching World Cup best ratios: $e');
+      return [];
+    }
+  }
+
   /// Get players by club
   /// Useful for showing which clubs are most represented
   Future<List<Player>> getPlayersByClub(String club) async {

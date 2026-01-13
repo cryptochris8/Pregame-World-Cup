@@ -5,6 +5,7 @@ import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 import '../screens/fan_pass_screen.dart';
+import '../screens/tournament_leaderboards_screen.dart';
 import 'match_detail_page.dart';
 import 'team_detail_page.dart';
 import 'predictions_page.dart';
@@ -95,6 +96,15 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
         ),
         centerTitle: true,
         actions: [
+          // Leaderboards button
+          IconButton(
+            icon: const Icon(Icons.emoji_events, color: AppTheme.accentGold),
+            tooltip: 'Leaderboards',
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const TournamentLeaderboardsScreen()),
+            ),
+          ),
           // Fan Pass button
           IconButton(
             icon: const Icon(Icons.star, color: Colors.amber),
