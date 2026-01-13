@@ -82,7 +82,7 @@ class AIMatchPrediction extends Equatable {
     required this.quickInsight,
     required this.provider,
     required this.generatedAt,
-    this.ttlMinutes = 30,
+    this.ttlMinutes = 1440, // 24 hours for persistent caching
   });
 
   @override
@@ -147,7 +147,7 @@ class AIMatchPrediction extends Equatable {
       generatedAt: map['generatedAt'] != null
           ? DateTime.parse(map['generatedAt'] as String)
           : DateTime.now(),
-      ttlMinutes: map['ttlMinutes'] as int? ?? 30,
+      ttlMinutes: map['ttlMinutes'] as int? ?? 1440, // 24 hours default
     );
   }
 

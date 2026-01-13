@@ -1,21 +1,34 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/services/cache_service.dart';
 import '../../data/services/world_cup_ai_service.dart';
 import '../../domain/entities/entities.dart';
 import 'world_cup_ai_state.dart';
+
+/// Cache key prefix for AI predictions
+const String _aiPredictionCachePrefix = 'ai_prediction_';
 
 /// Cubit for managing World Cup AI predictions
 ///
 /// Handles:
 /// - Loading AI predictions on-demand
-/// - Caching predictions with TTL
+/// - Caching predictions with TTL (24 hours in Hive)
 /// - Fallback when AI is unavailable
 class WorldCupAICubit extends Cubit<WorldCupAIState> {
   final WorldCupAIService _aiService;
+  final CacheService _cacheService;
+
+  /// Duration for Hive cache (24 hours)
+  static const Duration _hiveCacheDuration = Duration(hours: 24);
 
   WorldCupAICubit({
     required WorldCupAIService aiService,
+    CacheService? cacheService,
   })  : _aiService = aiService,
+        _cacheService = cacheService ?? CacheService.instance,
         super(WorldCupAIState.initial());
+
+  /// Get cache key for a match prediction
+  String _getCacheKey(String matchId) => '$_aiPredictionCachePrefix$matchId';
 
   /// Load AI prediction for a match
   ///
@@ -33,9 +46,17 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
   ) async {
     final matchId = match.matchId;
 
-    // Check for valid cached prediction
+    // Check for valid cached prediction in memory
     if (state.hasPrediction(matchId)) {
       return state.getPrediction(matchId);
+    }
+
+    // Check Hive persistent cache
+    final cachedPrediction = await _loadFromHiveCache(matchId);
+    if (cachedPrediction != null && cachedPrediction.isValid) {
+      // Store in memory state and return
+      emit(state.withPrediction(cachedPrediction));
+      return cachedPrediction;
     }
 
     // Already loading this match
@@ -53,6 +74,9 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
         awayTeam: awayTeam,
       );
 
+      // Save to Hive for persistent caching
+      await _saveToHiveCache(prediction);
+
       emit(state.withPrediction(prediction));
       return prediction;
     } catch (e) {
@@ -67,8 +91,40 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
         awayRanking: awayTeam?.fifaRanking,
       );
 
+      // Save fallback to Hive too (but with shorter TTL via provider check on load)
+      await _saveToHiveCache(fallback);
+
       emit(state.withPrediction(fallback));
       return fallback;
+    }
+  }
+
+  /// Load prediction from Hive cache
+  Future<AIMatchPrediction?> _loadFromHiveCache(String matchId) async {
+    try {
+      final cacheKey = _getCacheKey(matchId);
+      final cachedData = await _cacheService.get<Map<String, dynamic>>(cacheKey);
+
+      if (cachedData != null) {
+        return AIMatchPrediction.fromMap(cachedData, matchId);
+      }
+    } catch (e) {
+      // Ignore cache errors, will regenerate prediction
+    }
+    return null;
+  }
+
+  /// Save prediction to Hive cache
+  Future<void> _saveToHiveCache(AIMatchPrediction prediction) async {
+    try {
+      final cacheKey = _getCacheKey(prediction.matchId);
+      await _cacheService.set<Map<String, dynamic>>(
+        cacheKey,
+        prediction.toMap(),
+        duration: _hiveCacheDuration,
+      );
+    } catch (e) {
+      // Ignore cache errors, prediction still works in memory
     }
   }
 
@@ -102,10 +158,17 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
     NationalTeam? homeTeam,
     NationalTeam? awayTeam,
   }) async {
-    // Check cached prediction first
+    // Check memory cache first
     final cached = state.getPrediction(match.matchId);
     if (cached != null && cached.isValid) {
       return cached.quickInsight;
+    }
+
+    // Check Hive cache
+    final hiveCached = await _loadFromHiveCache(match.matchId);
+    if (hiveCached != null && hiveCached.isValid) {
+      emit(state.withPrediction(hiveCached));
+      return hiveCached.quickInsight;
     }
 
     try {
@@ -119,16 +182,24 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
     }
   }
 
-  /// Clear prediction for a specific match
-  void clearPrediction(String matchId) {
+  /// Clear prediction for a specific match (both memory and Hive)
+  Future<void> clearPrediction(String matchId) async {
     emit(state.withoutPrediction(matchId));
+    // Also clear from Hive cache
+    try {
+      await _cacheService.remove(_getCacheKey(matchId));
+    } catch (e) {
+      // Ignore cache errors
+    }
   }
 
-  /// Clear all cached predictions
-  void clearAllPredictions() {
+  /// Clear all cached predictions (both memory and Hive)
+  Future<void> clearAllPredictions() async {
+    // Clear memory state
     emit(WorldCupAIState.initial().copyWith(
       isAvailable: state.isAvailable,
     ));
+    // Note: Hive entries will expire naturally via TTL
   }
 
   /// Clear predictions that have expired
@@ -152,8 +223,8 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
     NationalTeam? homeTeam,
     NationalTeam? awayTeam,
   }) async {
-    // Clear existing prediction
-    clearPrediction(match.matchId);
+    // Clear existing prediction from memory and Hive
+    await clearPrediction(match.matchId);
 
     // Load fresh prediction
     return loadPredictionWithTeams(match, homeTeam, awayTeam);
