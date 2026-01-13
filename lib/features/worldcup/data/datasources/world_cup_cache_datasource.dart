@@ -9,14 +9,20 @@ class WorldCupCacheDataSource {
 
   // Cache keys
   static const String _matchesKey = 'worldcup_matches';
+  static const String _matchesTodayKey = 'worldcup_matches_today';
+  static const String _matchesCompletedKey = 'worldcup_matches_completed';
+  static const String _matchesUpcomingKey = 'worldcup_matches_upcoming';
   static const String _teamsKey = 'worldcup_teams';
   static const String _groupsKey = 'worldcup_groups';
   static const String _bracketKey = 'worldcup_bracket';
   static const String _venuesKey = 'worldcup_venues';
 
-  // Cache durations
-  static const Duration _matchesCacheDuration = Duration(minutes: 5);
-  static const Duration _liveMatchesCacheDuration = Duration(seconds: 30);
+  // Cache durations - optimized for match freshness needs
+  static const Duration _matchesCacheDuration = Duration(hours: 2); // Non-live matches
+  static const Duration _liveMatchesCacheDuration = Duration(seconds: 30); // Live matches need frequent updates
+  static const Duration _todaysMatchesCacheDuration = Duration(minutes: 15); // Today's matches need moderate freshness
+  static const Duration _completedMatchesCacheDuration = Duration(hours: 24); // Completed matches rarely change
+  static const Duration _upcomingMatchesCacheDuration = Duration(hours: 1); // Upcoming matches moderate freshness
   static const Duration _teamsCacheDuration = Duration(hours: 24);
   static const Duration _groupsCacheDuration = Duration(minutes: 15);
   static const Duration _bracketCacheDuration = Duration(minutes: 15);
@@ -115,6 +121,102 @@ class WorldCupCacheDataSource {
       );
     } catch (e) {
       debugPrint('Cache error saving live matches: $e');
+    }
+  }
+
+  /// Gets cached today's matches
+  Future<List<WorldCupMatch>?> getCachedTodaysMatches() async {
+    try {
+      final cached = await _cacheService.get<List<dynamic>>(_matchesTodayKey);
+      if (cached != null) {
+        debugPrint('Cache HIT: Found ${cached.length} cached today matches');
+        return cached
+            .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
+            .toList();
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Cache error getting today matches: $e');
+      return null;
+    }
+  }
+
+  /// Caches today's matches with moderate duration
+  Future<void> cacheTodaysMatches(List<WorldCupMatch> matches) async {
+    try {
+      final data = matches.map((m) => m.toMap()).toList();
+      await _cacheService.set(
+        _matchesTodayKey,
+        data,
+        duration: _todaysMatchesCacheDuration,
+      );
+      debugPrint('Cached ${matches.length} today matches');
+    } catch (e) {
+      debugPrint('Cache error saving today matches: $e');
+    }
+  }
+
+  /// Gets cached completed matches
+  Future<List<WorldCupMatch>?> getCachedCompletedMatches() async {
+    try {
+      final cached = await _cacheService.get<List<dynamic>>(_matchesCompletedKey);
+      if (cached != null) {
+        debugPrint('Cache HIT: Found ${cached.length} cached completed matches');
+        return cached
+            .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
+            .toList();
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Cache error getting completed matches: $e');
+      return null;
+    }
+  }
+
+  /// Caches completed matches with long duration (they don't change)
+  Future<void> cacheCompletedMatches(List<WorldCupMatch> matches) async {
+    try {
+      final data = matches.map((m) => m.toMap()).toList();
+      await _cacheService.set(
+        _matchesCompletedKey,
+        data,
+        duration: _completedMatchesCacheDuration,
+      );
+      debugPrint('Cached ${matches.length} completed matches');
+    } catch (e) {
+      debugPrint('Cache error saving completed matches: $e');
+    }
+  }
+
+  /// Gets cached upcoming matches
+  Future<List<WorldCupMatch>?> getCachedUpcomingMatches() async {
+    try {
+      final cached = await _cacheService.get<List<dynamic>>(_matchesUpcomingKey);
+      if (cached != null) {
+        debugPrint('Cache HIT: Found ${cached.length} cached upcoming matches');
+        return cached
+            .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
+            .toList();
+      }
+      return null;
+    } catch (e) {
+      debugPrint('Cache error getting upcoming matches: $e');
+      return null;
+    }
+  }
+
+  /// Caches upcoming matches with moderate duration
+  Future<void> cacheUpcomingMatches(List<WorldCupMatch> matches) async {
+    try {
+      final data = matches.map((m) => m.toMap()).toList();
+      await _cacheService.set(
+        _matchesUpcomingKey,
+        data,
+        duration: _upcomingMatchesCacheDuration,
+      );
+      debugPrint('Cached ${matches.length} upcoming matches');
+    } catch (e) {
+      debugPrint('Cache error saving upcoming matches: $e');
     }
   }
 
@@ -302,6 +404,9 @@ class WorldCupCacheDataSource {
     try {
       await _cacheService.remove(_matchesKey);
       await _cacheService.remove('${_matchesKey}_live');
+      await _cacheService.remove(_matchesTodayKey);
+      await _cacheService.remove(_matchesCompletedKey);
+      await _cacheService.remove(_matchesUpcomingKey);
       await _cacheService.remove(_teamsKey);
       await _cacheService.remove(_groupsKey);
       await _cacheService.remove(_bracketKey);

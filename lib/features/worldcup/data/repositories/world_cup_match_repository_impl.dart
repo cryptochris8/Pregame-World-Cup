@@ -152,7 +152,19 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
   @override
   Future<List<WorldCupMatch>> getUpcomingMatches({int limit = 10}) async {
     try {
-      return await _firestoreDataSource.getUpcomingMatches(limit: limit);
+      // Try cache first
+      final cached = await _cacheDataSource.getCachedUpcomingMatches();
+      if (cached != null && cached.isNotEmpty) {
+        debugPrint('Returning ${cached.length} upcoming matches from cache');
+        return cached.take(limit).toList();
+      }
+
+      // Fetch from Firestore and cache
+      final matches = await _firestoreDataSource.getUpcomingMatches(limit: limit);
+      if (matches.isNotEmpty) {
+        await _cacheDataSource.cacheUpcomingMatches(matches);
+      }
+      return matches;
     } catch (e) {
       debugPrint('Error getting upcoming matches: $e');
       return [];
@@ -192,12 +204,37 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
   @override
   Future<List<WorldCupMatch>> getTodaysMatches() async {
-    return getMatchesByDate(DateTime.now());
+    try {
+      // Try cache first
+      final cached = await _cacheDataSource.getCachedTodaysMatches();
+      if (cached != null && cached.isNotEmpty) {
+        debugPrint('Returning ${cached.length} today matches from cache');
+        return cached;
+      }
+
+      // Get from date filter and cache
+      final matches = await getMatchesByDate(DateTime.now());
+      if (matches.isNotEmpty) {
+        await _cacheDataSource.cacheTodaysMatches(matches);
+      }
+      return matches;
+    } catch (e) {
+      debugPrint('Error getting today matches: $e');
+      return [];
+    }
   }
 
   @override
   Future<List<WorldCupMatch>> getCompletedMatches({int limit = 10}) async {
     try {
+      // Try cache first (24-hour cache for completed matches)
+      final cached = await _cacheDataSource.getCachedCompletedMatches();
+      if (cached != null && cached.isNotEmpty) {
+        debugPrint('Returning ${cached.length} completed matches from cache');
+        return cached.take(limit).toList();
+      }
+
+      // Fetch and compute
       final allMatches = await getAllMatches();
       final completed = allMatches
           .where((m) => m.status == MatchStatus.completed)
@@ -210,6 +247,11 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
         if (b.dateTime == null) return -1;
         return b.dateTime!.compareTo(a.dateTime!);
       });
+
+      // Cache all completed matches (they don't change)
+      if (completed.isNotEmpty) {
+        await _cacheDataSource.cacheCompletedMatches(completed);
+      }
 
       return completed.take(limit).toList();
     } catch (e) {
@@ -270,6 +312,9 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
   Future<void> clearCache() async {
     await _cacheDataSource.clearCache('worldcup_matches');
     await _cacheDataSource.clearCache('worldcup_matches_live');
+    await _cacheDataSource.clearCache('worldcup_matches_today');
+    await _cacheDataSource.clearCache('worldcup_matches_completed');
+    await _cacheDataSource.clearCache('worldcup_matches_upcoming');
   }
 
   @override
