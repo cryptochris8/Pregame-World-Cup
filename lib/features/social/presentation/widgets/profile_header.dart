@@ -41,27 +41,50 @@ class ProfileHeader extends StatelessWidget {
           // Avatar and basic info
           Row(
             children: [
-              // Profile Avatar
-              Container(
-                width: 80,
-                height: 80,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: const Color(0xFF8B4513),
-                    width: 3,
+              // Profile Avatar with online status indicator
+              Stack(
+                children: [
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: const Color(0xFF8B4513),
+                        width: 3,
+                      ),
+                    ),
+                    child: ClipOval(
+                      child: profile.profileImageUrl != null
+                          ? Image.network(
+                              profile.profileImageUrl!,
+                              fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) =>
+                                  _buildDefaultAvatar(),
+                            )
+                          : _buildDefaultAvatar(),
+                    ),
                   ),
-                ),
-                child: ClipOval(
-                  child: profile.profileImageUrl != null
-                      ? Image.network(
-                          profile.profileImageUrl!,
-                          fit: BoxFit.cover,
-                          errorBuilder: (context, error, stackTrace) =>
-                              _buildDefaultAvatar(),
-                        )
-                      : _buildDefaultAvatar(),
-                ),
+                  // Online status indicator
+                  if (!isCurrentUser && profile.shouldShowOnlineStatus)
+                    Positioned(
+                      bottom: 2,
+                      right: 2,
+                      child: Container(
+                        width: 18,
+                        height: 18,
+                        decoration: BoxDecoration(
+                          color: profile.isOnline
+                              ? Colors.green
+                              : profile.isRecentlyActive
+                                  ? Colors.orange
+                                  : Colors.grey,
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.white, width: 3),
+                        ),
+                      ),
+                    ),
+                ],
               ),
               
               const SizedBox(width: 16),
@@ -79,9 +102,43 @@ class ProfileHeader extends StatelessWidget {
                         color: Color(0xFF2D1810),
                       ),
                     ),
-                    
+
+                    // Online status text (for other users only)
+                    if (!isCurrentUser && profile.shouldShowOnlineStatus) ...[
+                      const SizedBox(height: 2),
+                      Row(
+                        children: [
+                          Container(
+                            width: 8,
+                            height: 8,
+                            decoration: BoxDecoration(
+                              color: profile.isOnline
+                                  ? Colors.green
+                                  : profile.isRecentlyActive
+                                      ? Colors.orange
+                                      : Colors.grey,
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            profile.lastSeenText,
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: profile.isOnline
+                                  ? Colors.green[700]
+                                  : Colors.grey[600],
+                              fontWeight: profile.isOnline
+                                  ? FontWeight.w600
+                                  : FontWeight.normal,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+
                     const SizedBox(height: 4),
-                    
+
                     // Level badge
                     Container(
                       padding: const EdgeInsets.symmetric(

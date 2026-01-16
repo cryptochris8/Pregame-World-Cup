@@ -207,26 +207,49 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             ),
             child: Column(
               children: [
-                // Profile Avatar
-                Container(
-                  width: 100,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: AppTheme.buttonGradient,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.orange.withOpacity(0.3),
-                        blurRadius: 20,
-                        offset: const Offset(0, 5),
+                // Profile Avatar with online status indicator
+                Stack(
+                  children: [
+                    Container(
+                      width: 100,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: AppTheme.buttonGradient,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.orange.withOpacity(0.3),
+                            blurRadius: 20,
+                            offset: const Offset(0, 5),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                  child: const Icon(
-                    Icons.person,
-                    size: 50,
-                    color: Colors.white,
-                  ),
+                      child: const Icon(
+                        Icons.person,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                    ),
+                    // Online status indicator (for other users only)
+                    if (!_isCurrentUser && _profile != null && _profile!.shouldShowOnlineStatus)
+                      Positioned(
+                        bottom: 2,
+                        right: 2,
+                        child: Container(
+                          width: 22,
+                          height: 22,
+                          decoration: BoxDecoration(
+                            color: _profile!.isOnline
+                                ? Colors.green
+                                : _profile!.isRecentlyActive
+                                    ? Colors.orange
+                                    : Colors.grey,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 3),
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
                 
                 const SizedBox(height: 16),
@@ -240,9 +263,44 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                
+
+                // Online status text (for other users only)
+                if (!_isCurrentUser && _profile != null && _profile!.shouldShowOnlineStatus) ...[
+                  const SizedBox(height: 6),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 8,
+                        height: 8,
+                        decoration: BoxDecoration(
+                          color: _profile!.isOnline
+                              ? Colors.green
+                              : _profile!.isRecentlyActive
+                                  ? Colors.orange
+                                  : Colors.grey[400],
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                      const SizedBox(width: 6),
+                      Text(
+                        _profile!.lastSeenText,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: _profile!.isOnline
+                              ? Colors.green[300]
+                              : Colors.white.withOpacity(0.7),
+                          fontWeight: _profile!.isOnline
+                              ? FontWeight.w600
+                              : FontWeight.normal,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+
                 const SizedBox(height: 8),
-                
+
                 // User Email
                 Text(
                   _profile?.email ?? currentUser?.email ?? '',
