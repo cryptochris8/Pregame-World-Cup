@@ -1,77 +1,83 @@
-// World Cup 2026 Teams Data
+// World Cup 2026 Teams Data (using ISO country codes for flag images)
 const worldCupTeams = [
     // CONCACAF
-    { name: 'USA', flag: '🇺🇸', confederation: 'CONCACAF' },
-    { name: 'Mexico', flag: '🇲🇽', confederation: 'CONCACAF' },
-    { name: 'Canada', flag: '🇨🇦', confederation: 'CONCACAF' },
-    { name: 'Costa Rica', flag: '🇨🇷', confederation: 'CONCACAF' },
-    { name: 'Jamaica', flag: '🇯🇲', confederation: 'CONCACAF' },
-    { name: 'Panama', flag: '🇵🇦', confederation: 'CONCACAF' },
-    { name: 'Honduras', flag: '🇭🇳', confederation: 'CONCACAF' },
+    { name: 'USA', code: 'us', confederation: 'CONCACAF' },
+    { name: 'Mexico', code: 'mx', confederation: 'CONCACAF' },
+    { name: 'Canada', code: 'ca', confederation: 'CONCACAF' },
+    { name: 'Costa Rica', code: 'cr', confederation: 'CONCACAF' },
+    { name: 'Jamaica', code: 'jm', confederation: 'CONCACAF' },
+    { name: 'Panama', code: 'pa', confederation: 'CONCACAF' },
+    { name: 'Honduras', code: 'hn', confederation: 'CONCACAF' },
 
     // UEFA (Europe)
-    { name: 'England', flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', confederation: 'UEFA' },
-    { name: 'France', flag: '🇫🇷', confederation: 'UEFA' },
-    { name: 'Spain', flag: '🇪🇸', confederation: 'UEFA' },
-    { name: 'Germany', flag: '🇩🇪', confederation: 'UEFA' },
-    { name: 'Portugal', flag: '🇵🇹', confederation: 'UEFA' },
-    { name: 'Netherlands', flag: '🇳🇱', confederation: 'UEFA' },
-    { name: 'Belgium', flag: '🇧🇪', confederation: 'UEFA' },
-    { name: 'Italy', flag: '🇮🇹', confederation: 'UEFA' },
-    { name: 'Croatia', flag: '🇭🇷', confederation: 'UEFA' },
-    { name: 'Denmark', flag: '🇩🇰', confederation: 'UEFA' },
-    { name: 'Switzerland', flag: '🇨🇭', confederation: 'UEFA' },
-    { name: 'Poland', flag: '🇵🇱', confederation: 'UEFA' },
-    { name: 'Serbia', flag: '🇷🇸', confederation: 'UEFA' },
-    { name: 'Austria', flag: '🇦🇹', confederation: 'UEFA' },
+    { name: 'England', code: 'gb-eng', confederation: 'UEFA' },
+    { name: 'France', code: 'fr', confederation: 'UEFA' },
+    { name: 'Spain', code: 'es', confederation: 'UEFA' },
+    { name: 'Germany', code: 'de', confederation: 'UEFA' },
+    { name: 'Portugal', code: 'pt', confederation: 'UEFA' },
+    { name: 'Netherlands', code: 'nl', confederation: 'UEFA' },
+    { name: 'Belgium', code: 'be', confederation: 'UEFA' },
+    { name: 'Italy', code: 'it', confederation: 'UEFA' },
+    { name: 'Croatia', code: 'hr', confederation: 'UEFA' },
+    { name: 'Denmark', code: 'dk', confederation: 'UEFA' },
+    { name: 'Switzerland', code: 'ch', confederation: 'UEFA' },
+    { name: 'Poland', code: 'pl', confederation: 'UEFA' },
+    { name: 'Serbia', code: 'rs', confederation: 'UEFA' },
+    { name: 'Austria', code: 'at', confederation: 'UEFA' },
 
     // CONMEBOL (South America)
-    { name: 'Brazil', flag: '🇧🇷', confederation: 'CONMEBOL' },
-    { name: 'Argentina', flag: '🇦🇷', confederation: 'CONMEBOL' },
-    { name: 'Uruguay', flag: '🇺🇾', confederation: 'CONMEBOL' },
-    { name: 'Colombia', flag: '🇨🇴', confederation: 'CONMEBOL' },
-    { name: 'Chile', flag: '🇨🇱', confederation: 'CONMEBOL' },
-    { name: 'Ecuador', flag: '🇪🇨', confederation: 'CONMEBOL' },
-    { name: 'Peru', flag: '🇵🇪', confederation: 'CONMEBOL' },
+    { name: 'Brazil', code: 'br', confederation: 'CONMEBOL' },
+    { name: 'Argentina', code: 'ar', confederation: 'CONMEBOL' },
+    { name: 'Uruguay', code: 'uy', confederation: 'CONMEBOL' },
+    { name: 'Colombia', code: 'co', confederation: 'CONMEBOL' },
+    { name: 'Chile', code: 'cl', confederation: 'CONMEBOL' },
+    { name: 'Ecuador', code: 'ec', confederation: 'CONMEBOL' },
+    { name: 'Peru', code: 'pe', confederation: 'CONMEBOL' },
 
     // CAF (Africa)
-    { name: 'Senegal', flag: '🇸🇳', confederation: 'CAF' },
-    { name: 'Morocco', flag: '🇲🇦', confederation: 'CAF' },
-    { name: 'Tunisia', flag: '🇹🇳', confederation: 'CAF' },
-    { name: 'Nigeria', flag: '🇳🇬', confederation: 'CAF' },
-    { name: 'Cameroon', flag: '🇨🇲', confederation: 'CAF' },
-    { name: 'Ghana', flag: '🇬🇭', confederation: 'CAF' },
-    { name: 'Egypt', flag: '🇪🇬', confederation: 'CAF' },
-    { name: 'Algeria', flag: '🇩🇿', confederation: 'CAF' },
-    { name: 'Ivory Coast', flag: '🇨🇮', confederation: 'CAF' },
+    { name: 'Senegal', code: 'sn', confederation: 'CAF' },
+    { name: 'Morocco', code: 'ma', confederation: 'CAF' },
+    { name: 'Tunisia', code: 'tn', confederation: 'CAF' },
+    { name: 'Nigeria', code: 'ng', confederation: 'CAF' },
+    { name: 'Cameroon', code: 'cm', confederation: 'CAF' },
+    { name: 'Ghana', code: 'gh', confederation: 'CAF' },
+    { name: 'Egypt', code: 'eg', confederation: 'CAF' },
+    { name: 'Algeria', code: 'dz', confederation: 'CAF' },
+    { name: 'Ivory Coast', code: 'ci', confederation: 'CAF' },
 
     // AFC (Asia)
-    { name: 'Japan', flag: '🇯🇵', confederation: 'AFC' },
-    { name: 'South Korea', flag: '🇰🇷', confederation: 'AFC' },
-    { name: 'Iran', flag: '🇮🇷', confederation: 'AFC' },
-    { name: 'Saudi Arabia', flag: '🇸🇦', confederation: 'AFC' },
-    { name: 'Australia', flag: '🇦🇺', confederation: 'AFC' },
-    { name: 'Qatar', flag: '🇶🇦', confederation: 'AFC' },
+    { name: 'Japan', code: 'jp', confederation: 'AFC' },
+    { name: 'South Korea', code: 'kr', confederation: 'AFC' },
+    { name: 'Iran', code: 'ir', confederation: 'AFC' },
+    { name: 'Saudi Arabia', code: 'sa', confederation: 'AFC' },
+    { name: 'Australia', code: 'au', confederation: 'AFC' },
+    { name: 'Qatar', code: 'qa', confederation: 'AFC' },
 
     // OFC (Oceania)
-    { name: 'New Zealand', flag: '🇳🇿', confederation: 'OFC' },
+    { name: 'New Zealand', code: 'nz', confederation: 'OFC' },
 
     // Additional teams to reach 48
-    { name: 'Ukraine', flag: '🇺🇦', confederation: 'UEFA' },
-    { name: 'Sweden', flag: '🇸🇪', confederation: 'UEFA' },
-    { name: 'Norway', flag: '🇳🇴', confederation: 'UEFA' },
-    { name: 'Mali', flag: '🇲🇱', confederation: 'CAF' },
-    { name: 'Burkina Faso', flag: '🇧🇫', confederation: 'CAF' },
+    { name: 'Ukraine', code: 'ua', confederation: 'UEFA' },
+    { name: 'Sweden', code: 'se', confederation: 'UEFA' },
+    { name: 'Norway', code: 'no', confederation: 'UEFA' },
+    { name: 'Mali', code: 'ml', confederation: 'CAF' },
+    { name: 'Burkina Faso', code: 'bf', confederation: 'CAF' },
 ];
 
-// Load teams into grid
+// Load teams into grid with flag images from flagcdn.com
 function loadTeams() {
     const teamsGrid = document.getElementById('teams-grid');
     if (!teamsGrid) return;
 
     teamsGrid.innerHTML = worldCupTeams.map(team => `
         <div class="team-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl cursor-pointer text-center">
-            <div class="text-5xl mb-3">${team.flag}</div>
+            <img
+                src="https://flagcdn.com/w80/${team.code}.png"
+                srcset="https://flagcdn.com/w160/${team.code}.png 2x"
+                alt="${team.name} flag"
+                class="w-16 h-auto mx-auto mb-3 rounded shadow-sm"
+                onerror="this.src='https://flagcdn.com/w80/${team.code.split('-')[0]}.png'"
+            />
             <div class="font-semibold text-gray-900">${team.name}</div>
             <div class="text-xs text-gray-500 mt-1">${team.confederation}</div>
         </div>
