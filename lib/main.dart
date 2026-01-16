@@ -44,27 +44,39 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  print('📬 Background message received: ${message.messageId}');
+  // Note: debugLog not available here as it's a top-level isolate
+  if (kDebugMode) {
+    print('📬 Background message received: ${message.messageId}');
+  }
 }
 
-/// ANDROID DIAGNOSTIC MODE
-/// Set to true to enable detailed logging for Android issues
-const bool ANDROID_DIAGNOSTIC_MODE = true;
+/// DIAGNOSTIC MODE
+/// Automatically disabled in release builds for App Store compliance
+/// Set to true during development for detailed logging
+const bool _diagnosticModeOverride = true;
+bool get DIAGNOSTIC_MODE => kDebugMode && _diagnosticModeOverride;
+
+/// Production-safe logging function - only logs in debug mode
+void debugLog(String message) {
+  if (kDebugMode) {
+    print(message);
+  }
+}
 
 /// Initialize app with comprehensive error handling and logging
 Future<void> main() async {
   // Step 1: Flutter Framework Initialization
-  print('🚀 INIT STEP 1: Flutter Framework');
+  debugLog('🚀 INIT STEP 1: Flutter Framework');
   try {
     WidgetsFlutterBinding.ensureInitialized();
-    print('✅ INIT STEP 1: Flutter Framework - SUCCESS');
+    debugLog('✅ INIT STEP 1: Flutter Framework - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 1: Flutter Framework - FAILED: $e');
+    debugLog('❌ INIT STEP 1: Flutter Framework - FAILED: $e');
     // Continue anyway - this is critical
   }
 
   // Step 2: Firebase Core Initialization
-  print('🚀 INIT STEP 2: Firebase Core');
+  debugLog('🚀 INIT STEP 2: Firebase Core');
   try {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
@@ -77,29 +89,29 @@ Future<void> main() async {
     // This ensures the app doesn't fall back to cached 2024 data when offline
     await _disableFirestoreOfflinePersistence();
 
-    print('✅ INIT STEP 2: Firebase Core - SUCCESS');
+    debugLog('✅ INIT STEP 2: Firebase Core - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 2: Firebase Core - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: Firebase initialization failed. This could prevent app startup.');
-      print('🔍 DIAGNOSTIC: Check google-services.json configuration');
+    debugLog('❌ INIT STEP 2: Firebase Core - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Firebase initialization failed. This could prevent app startup.');
+      debugLog('🔍 DIAGNOSTIC: Check google-services.json configuration');
     }
   }
 
   // Step 3: Hive Database Initialization
-  print('🚀 INIT STEP 3: Hive Database');
+  debugLog('🚀 INIT STEP 3: Hive Database');
   try {
     await Hive.initFlutter();
-    print('✅ INIT STEP 3: Hive Database - SUCCESS');
+    debugLog('✅ INIT STEP 3: Hive Database - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 3: Hive Database - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: Hive database failed. This affects caching and may cause hangs.');
+    debugLog('❌ INIT STEP 3: Hive Database - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Hive database failed. This affects caching and may cause hangs.');
     }
   }
 
   // Step 4: Hive Adapters Registration
-  print('🚀 INIT STEP 4: Hive Adapters');
+  debugLog('🚀 INIT STEP 4: Hive Adapters');
   try {
     // Register Hive adapters for custom objects
     if (!Hive.isAdapterRegistered(0)) {
@@ -111,114 +123,114 @@ Future<void> main() async {
     if (!Hive.isAdapterRegistered(5)) {
       Hive.registerAdapter(GameIntelligenceAdapter());
     }
-    print('✅ INIT STEP 4: Hive Adapters - SUCCESS');
+    debugLog('✅ INIT STEP 4: Hive Adapters - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 4: Hive Adapters - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: Hive adapters failed. This may cause serialization issues.');
+    debugLog('❌ INIT STEP 4: Hive Adapters - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Hive adapters failed. This may cause serialization issues.');
     }
   }
 
   // Step 5: Cache Service Initialization
-  print('🚀 INIT STEP 5: Cache Service');
+  debugLog('🚀 INIT STEP 5: Cache Service');
   try {
     await CacheService.instance.initialize();
-    
+
     // PRODUCTION FIX: Clear all old 2024 cache data on every app startup
     // This ensures the app ALWAYS starts with fresh 2025 data
     await _clearOld2024CacheData();
-    
-    print('✅ INIT STEP 5: Cache Service - SUCCESS');
+
+    debugLog('✅ INIT STEP 5: Cache Service - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 5: Cache Service - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: Cache service failed. App will continue without caching.');
+    debugLog('❌ INIT STEP 5: Cache Service - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Cache service failed. App will continue without caching.');
     }
   }
 
   // Step 5.5: Timezone Database Initialization
-  print('🚀 INIT STEP 5.5: Timezone Database');
+  debugLog('🚀 INIT STEP 5.5: Timezone Database');
   try {
     await TimezoneUtils.initialize();
-    print('✅ INIT STEP 5.5: Timezone Database - SUCCESS');
+    debugLog('✅ INIT STEP 5.5: Timezone Database - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 5.5: Timezone Database - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: Timezone database failed. Match times may not convert correctly.');
+    debugLog('❌ INIT STEP 5.5: Timezone Database - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Timezone database failed. Match times may not convert correctly.');
     }
   }
 
   // Step 6: Dependency Injection Setup
-  print('🚀 INIT STEP 6: Dependency Injection');
+  debugLog('🚀 INIT STEP 6: Dependency Injection');
   try {
     await di.setupLocator();
-    print('✅ INIT STEP 6: Dependency Injection - SUCCESS');
+    debugLog('✅ INIT STEP 6: Dependency Injection - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 6: Dependency Injection - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: Service locator failed. This will prevent app features from working.');
-      print('🔍 DIAGNOSTIC: This is likely related to ESPN/API service initialization');
+    debugLog('❌ INIT STEP 6: Dependency Injection - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Service locator failed. This will prevent app features from working.');
+      debugLog('🔍 DIAGNOSTIC: This is likely related to ESPN/API service initialization');
     }
   }
 
   // Step 6.5: API Keys Validation
-  print('🚀 INIT STEP 6.5: API Keys Validation');
+  debugLog('🚀 INIT STEP 6.5: API Keys Validation');
   try {
     ApiKeys.validateApiKeys();
-    print('✅ INIT STEP 6.5: API Keys Validation - COMPLETE');
+    debugLog('✅ INIT STEP 6.5: API Keys Validation - COMPLETE');
   } catch (e) {
-    print('❌ INIT STEP 6.5: API Keys Validation - FAILED: $e');
+    debugLog('❌ INIT STEP 6.5: API Keys Validation - FAILED: $e');
   }
 
   // Step 7: Firebase App Check (Background)
-  print('🚀 INIT STEP 7: Firebase App Check (Background)');
+  debugLog('🚀 INIT STEP 7: Firebase App Check (Background)');
   // Initialize App Check in the background to avoid blocking the UI
   _initializeAppCheckBackground();
 
   // Step 7.5: AI Service Initialization (Background)
-  print('🚀 INIT STEP 7.5: AI Service Initialization (Background)');
+  debugLog('🚀 INIT STEP 7.5: AI Service Initialization (Background)');
   // Initialize AI services in the background to avoid blocking the UI
   _initializeAIServicesBackground();
 
   // Step 7.6: AI Knowledge Base Initialization (Background)
   // DISABLED: College football AI knowledge base not needed for World Cup app
-  // print('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
+  // debugLog('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
   // _initializeAIKnowledgeBaseBackground();
 
   // Step 8: Launch App
-  print('🚀 INIT STEP 8: Launching App');
+  debugLog('🚀 INIT STEP 8: Launching App');
   try {
     runApp(PregameApp());
-    print('✅ INIT STEP 8: App Launch - SUCCESS');
+    debugLog('✅ INIT STEP 8: App Launch - SUCCESS');
   } catch (e) {
-    print('❌ INIT STEP 8: App Launch - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: App launch failed. This is a critical error.');
+    debugLog('❌ INIT STEP 8: App Launch - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: App launch failed. This is a critical error.');
     }
   }
 
-  if (ANDROID_DIAGNOSTIC_MODE) {
-    print('📱 DIAGNOSTIC: All initialization steps completed');
-    print('📱 DIAGNOSTIC: If app hangs after this point, check ESPN service initialization');
+  if (DIAGNOSTIC_MODE) {
+    debugLog('📱 DIAGNOSTIC: All initialization steps completed');
+    debugLog('📱 DIAGNOSTIC: If app hangs after this point, check ESPN service initialization');
   }
 }
 
 /// Initialize Firebase App Check in the background to avoid blocking startup
 void _initializeAppCheckBackground() async {
   try {
-    print('🛡️ APP CHECK: Starting background initialization');
-    
+    debugLog('🛡️ APP CHECK: Starting background initialization');
+
     // Use a timeout to prevent hanging
     await Future.any([
       FirebaseAppCheckService.initialize(),
       Future.delayed(Duration(seconds: 10)), // 10 second timeout
     ]);
-    
-    print('✅ APP CHECK: Background initialization completed');
+
+    debugLog('✅ APP CHECK: Background initialization completed');
   } catch (e) {
-    print('⚠️ APP CHECK: Background initialization failed: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: App Check failed but app will continue');
+    debugLog('⚠️ APP CHECK: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: App Check failed but app will continue');
     }
   }
 }
@@ -226,20 +238,20 @@ void _initializeAppCheckBackground() async {
 /// Initialize AI Services (OpenAI & Claude) in the background
 void _initializeAIServicesBackground() async {
   try {
-    print('🤖 AI SERVICES: Starting background initialization');
-    
-    // Wait a bit for the app to fully load first  
+    debugLog('🤖 AI SERVICES: Starting background initialization');
+
+    // Wait a bit for the app to fully load first
     await Future.delayed(Duration(seconds: 2));
-    
+
     // Get the MultiProviderAIService from dependency injection and initialize it
     final multiProviderAI = di.sl<MultiProviderAIService>();
     await multiProviderAI.initialize();
-    
-    print('✅ AI SERVICES: Background initialization completed');
+
+    debugLog('✅ AI SERVICES: Background initialization completed');
   } catch (e) {
-    print('⚠️ AI SERVICES: Background initialization failed: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: AI Services failed but app will continue');
+    debugLog('⚠️ AI SERVICES: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: AI Services failed but app will continue');
     }
   }
 }
@@ -247,19 +259,19 @@ void _initializeAIServicesBackground() async {
 /// Initialize AI Knowledge Base in the background to build historical data
 void _initializeAIKnowledgeBaseBackground() async {
   try {
-    print('🧠 AI KNOWLEDGE: Starting background initialization');
-    
+    debugLog('🧠 AI KNOWLEDGE: Starting background initialization');
+
     // Wait a bit for the AI services to initialize first
     await Future.delayed(Duration(seconds: 5));
-    
+
     // Initialize the AI knowledge base with historical data
     await AIHistoricalKnowledgeService.instance.initializeKnowledgeBase();
-    
-    print('✅ AI KNOWLEDGE: Background initialization completed');
+
+    debugLog('✅ AI KNOWLEDGE: Background initialization completed');
   } catch (e) {
-    print('⚠️ AI KNOWLEDGE: Background initialization failed: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: AI Knowledge Base failed but app will continue');
+    debugLog('⚠️ AI KNOWLEDGE: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: AI Knowledge Base failed but app will continue');
     }
   }
 }
@@ -267,7 +279,7 @@ void _initializeAIKnowledgeBaseBackground() async {
 /// PRODUCTION FIX: Clear all old 2024 cache data to ensure app always starts with 2025 data
 Future<void> _clearOld2024CacheData() async {
   try {
-    print('🧹 STARTUP: Clearing ALL old 2024 cache data...');
+    debugLog('🧹 STARTUP: Clearing ALL old 2024 cache data...');
     final cacheService = CacheService.instance;
     
     // Clear all possible 2024 cache keys
@@ -296,10 +308,10 @@ Future<void> _clearOld2024CacheData() async {
       await cacheService.remove(key);
     }
     
-    print('🧹 STARTUP: Cleared ${keysToRemove.length} potential 2024 cache keys');
-    print('✅ STARTUP: App will now ONLY show 2025 season data');
+    debugLog('🧹 STARTUP: Cleared ${keysToRemove.length} potential 2024 cache keys');
+    debugLog('✅ STARTUP: App will now ONLY show 2025 season data');
   } catch (e) {
-    print('⚠️ STARTUP: Error clearing 2024 cache data: $e');
+    debugLog('⚠️ STARTUP: Error clearing 2024 cache data: $e');
     // Continue anyway - this is not critical
   }
 }
@@ -307,7 +319,7 @@ Future<void> _clearOld2024CacheData() async {
 /// PRODUCTION FIX: Disable Firestore offline persistence to prevent old cached data
 Future<void> _disableFirestoreOfflinePersistence() async {
   try {
-    print('🔥 FIRESTORE: Skipping offline persistence disable - needed for World Cup data');
+    debugLog('🔥 FIRESTORE: Skipping offline persistence disable - needed for World Cup data');
 
     // DISABLED: This was preventing players/managers from loading from Firestore
     // The disableNetwork() call was making Firestore unavailable
@@ -321,9 +333,9 @@ Future<void> _disableFirestoreOfflinePersistence() async {
     // await firestore.clearPersistence();
     // await firestore.enableNetwork();
 
-    print('✅ FIRESTORE: Network enabled - World Cup data can now be fetched');
+    debugLog('✅ FIRESTORE: Network enabled - World Cup data can now be fetched');
   } catch (e) {
-    print('⚠️ FIRESTORE: Error disabling offline persistence: $e');
+    debugLog('⚠️ FIRESTORE: Error disabling offline persistence: $e');
     // Continue anyway - this is not critical for app functionality
     // The app doesn't actually store schedule data in Firestore anyway
   }
@@ -335,14 +347,14 @@ Future<T?> _safeInitialize<T>(
   Future<T> Function() initFunction,
 ) async {
   try {
-    print('🚀 INIT: Starting $stepName');
+    debugLog('🚀 INIT: Starting $stepName');
     final result = await initFunction();
-    print('✅ INIT: $stepName - SUCCESS');
+    debugLog('✅ INIT: $stepName - SUCCESS');
     return result;
   } catch (e) {
-    print('❌ INIT: $stepName - FAILED: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: $stepName failed - continuing with degraded functionality');
+    debugLog('❌ INIT: $stepName - FAILED: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: $stepName failed - continuing with degraded functionality');
     }
     return null;
   }

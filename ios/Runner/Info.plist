@@ -58,21 +58,11 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Pregame World Cup needs microphone access to record voice messages for your fellow fans.</string>
 	
-	<!-- Network Usage -->
+	<!-- Network Usage - HTTPS only for App Store compliance -->
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>collegefootballdata.com</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-				<key>NSExceptionMinimumTLSVersion</key>
-				<string>TLSv1.0</string>
-			</dict>
-		</dict>
 	</dict>
 	
 	<!-- Background Modes -->
@@ -94,6 +84,6 @@
 	
 	<!-- Minimum iOS Version -->
 	<key>MinimumOSVersion</key>
-	<string>12.0</string>
+	<string>14.0</string>
 </dict>
 </plist>

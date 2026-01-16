@@ -8,7 +8,7 @@ import 'espn_historical_service.dart';
 /// Enhanced sports service that integrates with ESPN API
 /// for comprehensive game intelligence and venue recommendations
 class ESPNService {
-  static const String _baseUrl = 'http://site.api.espn.com/apis/site/v2/sports';
+  static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports';
   
   final Dio _dio;
   Box<GameIntelligence>? _gameIntelligenceBox;

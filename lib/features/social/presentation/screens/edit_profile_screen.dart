@@ -34,6 +34,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   List<String> _selectedTeams = [];
   bool _isLoading = false;
   bool _isPrivateProfile = false;
+  bool _showOnlineStatus = true;
   
   // Available college teams
   final List<String> _availableTeams = [
@@ -79,6 +80,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     _profileImageUrl = widget.profile.profileImageUrl;
     _selectedTeams = List.from(widget.profile.favoriteTeams);
     _isPrivateProfile = !widget.profile.privacySettings.profileVisible;
+    _showOnlineStatus = widget.profile.privacySettings.showOnlineStatus;
   }
 
   @override
@@ -522,7 +524,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
           ),
           const SizedBox(height: 16),
-          
+
           SwitchListTile(
             title: const Text(
               'Private Profile',
@@ -536,6 +538,27 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             onChanged: (value) {
               setState(() {
                 _isPrivateProfile = value;
+              });
+            },
+            activeColor: const Color(0xFFFBBF24),
+            contentPadding: EdgeInsets.zero,
+          ),
+
+          const Divider(color: Colors.white24, height: 24),
+
+          SwitchListTile(
+            title: const Text(
+              'Show Online Status',
+              style: TextStyle(color: Colors.white),
+            ),
+            subtitle: const Text(
+              'Let others see when you\'re online or last active',
+              style: TextStyle(color: Colors.white70),
+            ),
+            value: _showOnlineStatus,
+            onChanged: (value) {
+              setState(() {
+                _showOnlineStatus = value;
               });
             },
             activeColor: const Color(0xFFFBBF24),
@@ -687,6 +710,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         favoriteTeams: _selectedTeams,
         privacySettings: widget.profile.privacySettings.copyWith(
           profileVisible: !_isPrivateProfile,
+          showOnlineStatus: _showOnlineStatus,
         ),
       );
 
