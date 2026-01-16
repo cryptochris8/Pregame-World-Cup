@@ -509,9 +509,29 @@ class ManagerDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Header card
-            Card(
+            // Header card with gradient
+            Container(
               margin: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xFF7C3AED), // Vibrant purple
+                    Color(0xFF3B82F6), // Electric blue
+                    Color(0xFFEA580C), // Warm orange
+                  ],
+                  stops: [0.0, 0.5, 1.0],
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFF7C3AED).withOpacity(0.3),
+                    blurRadius: 20,
+                    offset: const Offset(0, 10),
+                  ),
+                ],
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: Column(
@@ -521,19 +541,24 @@ class ManagerDetailScreen extends StatelessWidget {
                       photoUrl: manager.photoUrl,
                       managerName: manager.fullName,
                       size: 120,
-                      borderColor: Theme.of(context).primaryColor,
+                      borderColor: Colors.white,
                       borderWidth: 3,
                     ),
                     const SizedBox(height: 16),
                     Text(
                       manager.fullName,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 8),
                     Text(
                       manager.currentTeam,
-                      style: Theme.of(context).textTheme.titleMedium,
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        color: Colors.white.withOpacity(0.9),
+                      ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 16),
@@ -619,9 +644,32 @@ class ManagerDetailScreen extends StatelessWidget {
                     spacing: 8,
                     runSpacing: 8,
                     children: manager.strengths.map((s) =>
-                      Chip(
-                        label: Text(s, style: const TextStyle(fontSize: 12)),
-                        backgroundColor: Colors.green[100],
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [
+                              Color(0xFF059669), // Green
+                              Color(0xFF10B981), // Emerald
+                            ],
+                          ),
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xFF10B981).withOpacity(0.4),
+                              blurRadius: 8,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: Text(
+                          s,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
                     ).toList(),
                   ),
@@ -632,9 +680,32 @@ class ManagerDetailScreen extends StatelessWidget {
                     spacing: 8,
                     runSpacing: 8,
                     children: manager.weaknesses.map((w) =>
-                      Chip(
-                        label: Text(w, style: const TextStyle(fontSize: 12)),
-                        backgroundColor: Colors.red[100],
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [
+                              Color(0xFFDC2626), // Red
+                              Color(0xFFF43F5E), // Rose
+                            ],
+                          ),
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xFFF43F5E).withOpacity(0.4),
+                              blurRadius: 8,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: Text(
+                          w,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
                     ).toList(),
                   ),
@@ -656,23 +727,38 @@ class ManagerDetailScreen extends StatelessWidget {
 
             // Famous quote
             if (manager.famousQuote.isNotEmpty)
-              Card(
+              Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                color: Colors.blue[50],
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Colors.blue[400]!.withOpacity(0.15),
+                      Colors.purple[300]!.withOpacity(0.15),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.blue[300]!.withOpacity(0.3),
+                    width: 1,
+                  ),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
+                      Row(
                         children: [
-                          Icon(Icons.format_quote, color: Colors.blue),
-                          SizedBox(width: 8),
+                          Icon(Icons.format_quote, color: Colors.blue[700], size: 24),
+                          const SizedBox(width: 8),
                           Text(
                             'Famous Quote',
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
+                              color: Colors.blue[900],
                             ),
                           ),
                         ],
@@ -680,9 +766,11 @@ class ManagerDetailScreen extends StatelessWidget {
                       const SizedBox(height: 12),
                       Text(
                         '"${manager.famousQuote}"',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           fontStyle: FontStyle.italic,
+                          color: Colors.grey[800],
+                          height: 1.5,
                         ),
                       ),
                     ],
@@ -704,9 +792,29 @@ class ManagerDetailScreen extends StatelessWidget {
                   spacing: 8,
                   runSpacing: 8,
                   children: manager.previousClubs.map((club) =>
-                    Chip(
-                      label: Text(club, style: const TextStyle(fontSize: 12)),
-                      backgroundColor: Colors.grey[200],
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.grey[300]!,
+                            Colors.grey[200]!,
+                          ],
+                        ),
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                          width: 1,
+                        ),
+                      ),
+                      child: Text(
+                        club,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey[800],
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                     ),
                   ).toList(),
                 ),
@@ -714,23 +822,38 @@ class ManagerDetailScreen extends StatelessWidget {
 
             // Controversies
             if (manager.controversies.isNotEmpty)
-              Card(
+              Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                color: Colors.orange[50],
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Colors.orange[300]!.withOpacity(0.2),
+                      Colors.red[200]!.withOpacity(0.15),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.orange[400]!.withOpacity(0.4),
+                    width: 1,
+                  ),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
+                      Row(
                         children: [
-                          Icon(Icons.warning_amber, color: Colors.orange),
-                          SizedBox(width: 8),
+                          Icon(Icons.warning_amber, color: Colors.orange[800], size: 24),
+                          const SizedBox(width: 8),
                           Text(
                             'Controversies',
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
+                              color: Colors.orange[900],
                             ),
                           ),
                         ],
@@ -742,8 +865,13 @@ class ManagerDetailScreen extends StatelessWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text('• ', style: TextStyle(fontSize: 16)),
-                              Expanded(child: Text(controversy)),
+                              Text('• ', style: TextStyle(fontSize: 16, color: Colors.grey[800])),
+                              Expanded(
+                                child: Text(
+                                  controversy,
+                                  style: TextStyle(color: Colors.grey[800]),
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -769,8 +897,20 @@ class ManagerDetailScreen extends StatelessWidget {
                             width: 24,
                             height: 24,
                             decoration: BoxDecoration(
-                              color: Colors.blue,
+                              gradient: const LinearGradient(
+                                colors: [
+                                  Color(0xFF7C3AED), // Vibrant purple
+                                  Color(0xFF3B82F6), // Electric blue
+                                ],
+                              ),
                               shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: const Color(0xFF7C3AED).withOpacity(0.4),
+                                  blurRadius: 6,
+                                  offset: const Offset(0, 3),
+                                ),
+                              ],
                             ),
                             child: Center(
                               child: Text(
@@ -863,7 +1003,15 @@ class _InfoChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Chip(
-      label: Text(label, style: const TextStyle(fontSize: 12)),
+      label: Text(
+        label,
+        style: const TextStyle(
+          fontSize: 12,
+          color: Colors.white,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      backgroundColor: Colors.white.withOpacity(0.2),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
     );
   }
