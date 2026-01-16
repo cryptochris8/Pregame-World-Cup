@@ -32,13 +32,15 @@ class UserProfileAdapter extends TypeAdapter<UserProfile> {
       badges: (fields[12] as List).cast<String>(),
       level: fields[13] as int,
       experiencePoints: fields[14] as int,
+      isOnline: fields[15] as bool,
+      lastSeenAt: fields[16] as DateTime?,
     );
   }
 
   @override
   void write(BinaryWriter writer, UserProfile obj) {
     writer
-      ..writeByte(15)
+      ..writeByte(17)
       ..writeByte(0)
       ..write(obj.userId)
       ..writeByte(1)
@@ -68,7 +70,11 @@ class UserProfileAdapter extends TypeAdapter<UserProfile> {
       ..writeByte(13)
       ..write(obj.level)
       ..writeByte(14)
-      ..write(obj.experiencePoints);
+      ..write(obj.experiencePoints)
+      ..writeByte(15)
+      ..write(obj.isOnline)
+      ..writeByte(16)
+      ..write(obj.lastSeenAt);
   }
 
   @override
