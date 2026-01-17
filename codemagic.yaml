@@ -71,27 +71,25 @@ workflows:
           failure: true
 
   # ============================================================================
-  # iOS Workflow
+  # iOS Workflow - TestFlight Build
   # ============================================================================
   ios-workflow:
-    name: iOS Workflow
+    name: iOS TestFlight Build
     max_build_duration: 120
     instance_type: mac_mini_m1
     triggering:
       events:
         - push
       branch_patterns:
-        - pattern: 'master'
+        - pattern: 'main'
           include: true
           source: true
     integrations:
       app_store_connect: Pregame
     environment:
       ios_signing:
-        provisioning_profiles:
-          - pregame_app_store_profile
-        certificates:
-          - Pregame-iOS-Distribution
+        distribution_type: app_store
+        bundle_identifier: com.christophercampbell.pregame
       groups:
         - apple_developer
       vars:
@@ -100,6 +98,7 @@ workflows:
         XCODE_SCHEME: "Runner"
       flutter: stable
       cocoapods: default
+      xcode: latest
     scripts:
       - name: Test Environment Variables
         script: |
@@ -170,12 +169,13 @@ workflows:
             --build-name=1.0.$BUILD_NUMBER \
             --build-number=$BUILD_NUMBER \
             --dart-define=ENVIRONMENT=production \
-            --dart-define=SPORTSDATA_API_KEY=6e3df81431824100c937f360f16251267 \
+            --dart-define=SPORTSDATA_API_KEY=$SPORTSDATA_API_KEY \
             --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
+            --dart-define=CLAUDE_API_KEY=$CLAUDE_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net \
-            --export-options-plist=/Users/builder/export_options.plist
+            --export-options-plist=$HOME/export_options.plist
             
     artifacts:
       - build/ios/ipa/*.ipa
