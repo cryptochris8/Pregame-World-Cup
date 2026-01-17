@@ -35,7 +35,7 @@ dependencies:
 
   # UI & Utilities
   google_maps_flutter: ^2.5.3
-  intl: 0.19.0 # For date formatting (pinned by flutter_localizations)
+  intl: 0.20.2 # For date formatting (pinned by flutter_localizations)
   timezone: ^0.9.4 # For timezone-aware date/time handling
   url_launcher: ^6.2.1 # For opening external links (e.g., map directions)
   image_picker: ^1.0.4 # For photo sharing in social features
