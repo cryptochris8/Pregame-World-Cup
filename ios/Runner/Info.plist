@@ -74,12 +74,14 @@
 	<!-- Firebase URL Schemes -->
 	<key>CFBundleURLTypes</key>
 	<array>
-		<key>CFBundleURLName</key>
-		<string>REVERSED_CLIENT_ID</string>
-		<key>CFBundleURLSchemes</key>
-		<array>
-			<string>com.googleusercontent.apps.942034010384-c3264211ef6ee5a799a595</string>
-		</array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>REVERSED_CLIENT_ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.942034010384-c3264211ef6ee5a799a595</string>
+			</array>
+		</dict>
 	</array>
 	
 	<!-- Minimum iOS Version -->
