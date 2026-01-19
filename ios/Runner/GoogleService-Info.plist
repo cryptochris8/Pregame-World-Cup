@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.christophercampbell.pregame</string>
+	<string>com.christophercampbell.pregameworldcup</string>
 	<key>PROJECT_ID</key>
 	<string>pregame-b089e</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:942034010384:ios:bb3771c0d9596ccf99a595</string>
+	<string>1:942034010384:ios:3f7b887b3877f14e99a595</string>
 </dict>
 </plist>

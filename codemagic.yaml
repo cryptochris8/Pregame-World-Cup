@@ -85,7 +85,7 @@ workflows:
           include: true
           source: true
     integrations:
-      app_store_connect: PregameWorldCup
+      app_store_connect: Pregame
     environment:
       ios_signing:
         distribution_type: app_store
