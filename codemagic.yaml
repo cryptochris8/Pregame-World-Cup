@@ -85,15 +85,15 @@ workflows:
           include: true
           source: true
     integrations:
-      app_store_connect: Pregame
+      app_store_connect: PregameWorldCup
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.christophercampbell.pregame
+        bundle_identifier: com.christophercampbell.pregameworldcup
       groups:
         - apple_developer
       vars:
-        BUNDLE_ID: "com.christophercampbell.pregame"
+        BUNDLE_ID: "com.christophercampbell.pregameworldcup"
         XCODE_WORKSPACE: "Runner.xcworkspace"
         XCODE_SCHEME: "Runner"
       flutter: stable
@@ -212,7 +212,7 @@ workflows:
       groups:
         - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS)
       vars:
-        PACKAGE_NAME: "com.christophercampbell.pregame"
+        PACKAGE_NAME: "com.christophercampbell.pregameworldcup"
       flutter: stable
     scripts:
       - name: Set up local.properties

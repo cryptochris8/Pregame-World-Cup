@@ -22,7 +22,7 @@ val flutterVersionCode = localProperties.getProperty("flutter.versionCode") ?: "
 val flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0"
 
 android {
-    namespace = "com.christophercampbell.pregame"
+    namespace = "com.christophercampbell.pregameworldcup"
     compileSdk = 35
     ndkVersion = "27.0.12077973"
 
@@ -42,7 +42,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.christophercampbell.pregame"
+        applicationId = "com.christophercampbell.pregameworldcup"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 23
