@@ -66,6 +66,9 @@ dependencies:
   # Other
   cupertino_icons: ^1.0.2
 
+  # Ads
+  google_mobile_ads: ^5.1.0
+
   # Added from the code block
   dartz: ^0.10.1
 

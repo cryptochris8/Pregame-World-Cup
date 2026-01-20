@@ -87,5 +87,16 @@
 	<!-- Minimum iOS Version -->
 	<key>MinimumOSVersion</key>
 	<string>14.0</string>
+
+	<!-- AdMob App ID -->
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-7575845069047315~9254261147</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+	</array>
 </dict>
 </plist>

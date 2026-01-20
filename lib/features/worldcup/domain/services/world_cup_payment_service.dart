@@ -16,6 +16,42 @@ class WorldCupPaymentService {
   static const String _logTag = 'WorldCupPayment';
   final FirebaseFunctions _functions = FirebaseFunctions.instance;
 
+  // Admin/test accounts that get full Superfan Pass access
+  static const List<String> _adminEmails = [
+    'chriscam8@gmail.com',
+  ];
+
+  /// Check if current user is an admin/test account
+  bool _isAdminUser() {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null || user.email == null) return false;
+    return _adminEmails.contains(user.email!.toLowerCase());
+  }
+
+  /// Get full Superfan Pass status for admin users
+  FanPassStatus _getAdminFanPassStatus() {
+    return FanPassStatus(
+      hasPass: true,
+      passType: FanPassType.superfanPass,
+      purchasedAt: DateTime.now(),
+      features: const {
+        'basicSchedules': true,
+        'venueDiscovery': true,
+        'matchNotifications': true,
+        'basicTeamFollowing': true,
+        'communityAccess': true,
+        'adFree': true,
+        'advancedStats': true,
+        'customAlerts': true,
+        'advancedSocialFeatures': true,
+        'exclusiveContent': true,
+        'priorityFeatures': true,
+        'aiMatchInsights': true,
+        'downloadableContent': true,
+      },
+    );
+  }
+
   // ============================================================================
   // FAN PASS FUNCTIONS
   // ============================================================================
@@ -26,6 +62,11 @@ class WorldCupPaymentService {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) {
         return FanPassStatus.free();
+      }
+
+      // Check if user is an admin/test account
+      if (_isAdminUser()) {
+        return _getAdminFanPassStatus();
       }
 
       final callable = _functions.httpsCallable('getFanPassStatus');
@@ -107,6 +148,9 @@ class WorldCupPaymentService {
     try {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) return false;
+
+      // Admin users have access to all features
+      if (_isAdminUser()) return true;
 
       final callable = _functions.httpsCallable('checkFanPassAccess');
       final result = await callable.call({'feature': feature});
@@ -239,6 +283,11 @@ class WorldCupPaymentService {
 
   /// Get cached fan pass status (refreshes every 5 minutes)
   Future<FanPassStatus> getCachedFanPassStatus({bool forceRefresh = false}) async {
+    // Admin users always get full access immediately
+    if (_isAdminUser()) {
+      return _getAdminFanPassStatus();
+    }
+
     final now = DateTime.now();
     final cacheValid = _fanPassStatusCacheTime != null &&
         now.difference(_fanPassStatusCacheTime!).inMinutes < 5;

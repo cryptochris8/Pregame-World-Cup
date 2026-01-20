@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/widgets/banner_ad_widget.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -32,7 +33,6 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
   final _tabs = const [
     Tab(icon: Icon(Icons.sports_soccer), text: 'Matches'),
     Tab(icon: Icon(Icons.grid_view), text: 'Groups'),
-    Tab(icon: Icon(Icons.account_tree), text: 'Bracket'),
     Tab(icon: Icon(Icons.flag), text: 'Teams'),
     Tab(icon: Icon(Icons.person), text: 'Players'),
     Tab(icon: Icon(Icons.sports), text: 'Managers'),
@@ -165,6 +165,8 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
         bottom: TabBar(
           controller: _tabController,
           tabs: _tabs,
+          isScrollable: true,
+          tabAlignment: TabAlignment.start,
           indicatorColor: AppTheme.primaryOrange,
           indicatorWeight: 3,
           labelColor: Colors.white,
@@ -175,25 +177,32 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
       body: Container(
         decoration: AppTheme.mainGradientDecoration,
         child: SafeArea(
-          child: TabBarView(
-            controller: _tabController,
+          child: Column(
             children: [
-              _MatchesTab(
-                onMatchTap: (match) => _navigateToMatchDetail(context, match),
+              Expanded(
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    _MatchesTab(
+                      onMatchTap: (match) => _navigateToMatchDetail(context, match),
+                    ),
+                    _GroupsTab(
+                      onTeamTap: (teamCode) => _navigateToTeamByCode(context, teamCode),
+                    ),
+                    _TeamsTab(
+                      onTeamTap: (team) => _navigateToTeamDetail(context, team),
+                    ),
+                    const PlayerSpotlightScreen(),
+                    const ManagerProfilesScreen(),
+                    _FavoritesTab(
+                      onMatchTap: (match) => _navigateToMatchDetail(context, match),
+                      onTeamTap: (team) => _navigateToTeamDetail(context, team),
+                    ),
+                  ],
+                ),
               ),
-              _GroupsTab(
-                onTeamTap: (teamCode) => _navigateToTeamByCode(context, teamCode),
-              ),
-              const _BracketTab(),
-              _TeamsTab(
-                onTeamTap: (team) => _navigateToTeamDetail(context, team),
-              ),
-              const PlayerSpotlightScreen(),
-              const ManagerProfilesScreen(),
-              _FavoritesTab(
-                onMatchTap: (match) => _navigateToMatchDetail(context, match),
-                onTeamTap: (team) => _navigateToTeamDetail(context, team),
-              ),
+              // Banner ad at bottom (hidden for premium users)
+              const BannerAdWidget(),
             ],
           ),
         ),
@@ -1121,7 +1130,7 @@ class _FavoritesTab extends StatelessWidget {
                   label: 'Browse Teams',
                   onTap: () {
                     // Navigate to Teams tab
-                    DefaultTabController.of(context).animateTo(3);
+                    DefaultTabController.of(context).animateTo(2);
                   },
                 ),
               ],

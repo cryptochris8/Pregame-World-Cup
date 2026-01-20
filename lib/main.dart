@@ -29,6 +29,7 @@ import 'core/services/firebase_app_check_service.dart';
 import 'config/api_keys.dart';
 import 'core/services/logging_service.dart';
 import 'core/services/push_notification_service.dart';
+import 'core/services/ad_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
@@ -197,6 +198,10 @@ Future<void> main() async {
   // debugLog('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
   // _initializeAIKnowledgeBaseBackground();
 
+  // Step 7.7: AdMob Initialization (Background)
+  debugLog('🚀 INIT STEP 7.7: AdMob Initialization (Background)');
+  _initializeAdMobBackground();
+
   // Step 8: Launch App
   debugLog('🚀 INIT STEP 8: Launching App');
   try {
@@ -272,6 +277,29 @@ void _initializeAIKnowledgeBaseBackground() async {
     debugLog('⚠️ AI KNOWLEDGE: Background initialization failed: $e');
     if (DIAGNOSTIC_MODE) {
       debugLog('🔍 DIAGNOSTIC: AI Knowledge Base failed but app will continue');
+    }
+  }
+}
+
+/// Initialize AdMob in the background
+void _initializeAdMobBackground() async {
+  try {
+    debugLog('📢 ADMOB: Starting background initialization');
+
+    // Wait a bit for the app to fully load first
+    await Future.delayed(Duration(seconds: 1));
+
+    // Initialize AdMob SDK
+    await AdService().initialize();
+
+    // Pre-load an interstitial ad
+    await AdService().loadInterstitialAd();
+
+    debugLog('✅ ADMOB: Background initialization completed');
+  } catch (e) {
+    debugLog('⚠️ ADMOB: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: AdMob failed but app will continue');
     }
   }
 }
