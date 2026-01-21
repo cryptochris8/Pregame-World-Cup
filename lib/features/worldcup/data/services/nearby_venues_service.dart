@@ -28,9 +28,12 @@ class NearbyVenuesService {
       types: types,
     );
 
+    // Filter out unwanted place types and low-quality venues
+    final filteredPlaces = _filterQualityVenues(places);
+
     // Convert to NearbyVenueResult with distance calculations
     // Filter out places without coordinates
-    final results = places
+    final results = filteredPlaces
         .where((place) => place.latitude != null && place.longitude != null)
         .map((place) {
       final distance = _calculateDistance(
@@ -97,6 +100,49 @@ class NearbyVenuesService {
 
   double _degreesToRadians(double degrees) {
     return degrees * pi / 180;
+  }
+
+  /// Filter out unwanted venue types and require minimum quality
+  List<Place> _filterQualityVenues(List<Place> places) {
+    // Types to exclude (gas stations, convenience stores, fast food, etc.)
+    const excludedTypes = {
+      'gas_station',
+      'convenience_store',
+      'atm',
+      'meal_takeaway',
+      'meal_delivery',
+      'lodging',
+      'car_wash',
+      'car_repair',
+      'parking',
+      'transit_station',
+      'subway_station',
+      'bus_station',
+    };
+
+    // Minimum rating for quality venues (3.5+)
+    const minRating = 3.5;
+
+    return places.where((place) {
+      final types = place.types ?? [];
+
+      // Exclude places with unwanted types
+      final hasExcludedType = types.any((type) => excludedTypes.contains(type));
+      if (hasExcludedType) return false;
+
+      // Require minimum rating (allow places without ratings to pass - they might be new)
+      if (place.rating != null && place.rating! < minRating) return false;
+
+      // Must be a bar, restaurant, or cafe (not just "point_of_interest")
+      final hasDesiredType = types.contains('bar') ||
+          types.contains('restaurant') ||
+          types.contains('cafe') ||
+          types.contains('night_club') ||
+          types.contains('sports_bar');
+      if (!hasDesiredType) return false;
+
+      return true;
+    }).toList();
   }
 }
 
