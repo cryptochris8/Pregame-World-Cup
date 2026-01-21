@@ -56,21 +56,93 @@ class _FanPassScreenState extends State<FanPassScreen> {
     setState(() => _isPurchasing = true);
 
     try {
-      final success = await _paymentService.openFanPassCheckout(
+      // Use native in-app purchase via RevenueCat
+      final result = await _paymentService.purchaseFanPass(
         passType: passType,
         context: context,
       );
 
-      if (success) {
-        // Show message that they should complete purchase in browser
-        if (mounted) {
+      if (!mounted) return;
+
+      if (result.success) {
+        // Show success message
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${passType.displayName} purchased successfully!'),
+            backgroundColor: const Color(0xFF059669),
+            duration: const Duration(seconds: 3),
+          ),
+        );
+        // Refresh the data to show new status
+        await _loadData();
+      } else if (result.userCancelled) {
+        // User cancelled - no message needed
+      } else if (result.usedFallback) {
+        // Fallback to browser checkout was used
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Complete your purchase in the browser. Return here when done.'),
+            duration: Duration(seconds: 5),
+          ),
+        );
+      } else {
+        // Show error message
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(result.errorMessage ?? 'Purchase failed. Please try again.'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _isPurchasing = false);
+      }
+    }
+  }
+
+  Future<void> _restorePurchases() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please sign in to restore purchases')),
+      );
+      return;
+    }
+
+    setState(() => _isPurchasing = true);
+
+    try {
+      final result = await _paymentService.restorePurchases(context: context);
+
+      if (!mounted) return;
+
+      if (result.success) {
+        if (result.hasRestoredPurchases) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('${result.restoredPassType.displayName} restored successfully!'),
+              backgroundColor: const Color(0xFF059669),
+              duration: const Duration(seconds: 3),
+            ),
+          );
+          // Refresh the data to show restored status
+          await _loadData();
+        } else {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: Text('Complete your purchase in the browser. Return here when done.'),
-              duration: Duration(seconds: 5),
+              content: Text('No previous purchases found'),
+              duration: Duration(seconds: 3),
             ),
           );
         }
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(result.errorMessage ?? 'Failed to restore purchases'),
+            backgroundColor: Colors.red,
+          ),
+        );
       }
     } finally {
       if (mounted) {
@@ -142,6 +214,11 @@ class _FanPassScreenState extends State<FanPassScreen> {
 
                     // Tournament info
                     _buildTournamentInfo(),
+
+                    const SizedBox(height: 24),
+
+                    // Restore Purchases button
+                    _buildRestorePurchasesButton(),
                   ],
                 ),
               ),
@@ -482,6 +559,28 @@ class _FanPassScreenState extends State<FanPassScreen> {
             textAlign: TextAlign.center,
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildRestorePurchasesButton() {
+    return Center(
+      child: TextButton.icon(
+        onPressed: _isPurchasing ? null : _restorePurchases,
+        icon: _isPurchasing
+            ? const SizedBox(
+                width: 16,
+                height: 16,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  color: Colors.grey,
+                ),
+              )
+            : const Icon(Icons.restore, size: 18),
+        label: const Text('Restore Purchases'),
+        style: TextButton.styleFrom(
+          foregroundColor: Colors.grey[600],
+        ),
       ),
     );
   }

@@ -5,9 +5,13 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/services/logging_service.dart';
+import '../../../../services/revenuecat_service.dart';
 
 /// World Cup 2026 Payment Service
 /// Handles one-time purchases for Fan Passes and Venue Premium
+///
+/// Consumer purchases (Fan Pass, Superfan Pass) now use RevenueCat for native IAP
+/// Venue Premium stays on Stripe (B2B payment, exempt from IAP rules)
 class WorldCupPaymentService {
   static final WorldCupPaymentService _instance = WorldCupPaymentService._internal();
   factory WorldCupPaymentService() => _instance;
@@ -15,6 +19,7 @@ class WorldCupPaymentService {
 
   static const String _logTag = 'WorldCupPayment';
   final FirebaseFunctions _functions = FirebaseFunctions.instance;
+  final RevenueCatService _revenueCatService = RevenueCatService();
 
   // Admin/test accounts that get full Superfan Pass access
   static const List<String> _adminEmails = [
@@ -57,6 +62,10 @@ class WorldCupPaymentService {
   // ============================================================================
 
   /// Get current fan pass status
+  /// Priority order:
+  /// 1. Admin/test accounts get full Superfan access
+  /// 2. RevenueCat entitlements (native IAP purchases)
+  /// 3. Firestore fallback (legacy Stripe purchases)
   Future<FanPassStatus> getFanPassStatus() async {
     try {
       final user = FirebaseAuth.instance.currentUser;
@@ -69,6 +78,16 @@ class WorldCupPaymentService {
         return _getAdminFanPassStatus();
       }
 
+      // Check RevenueCat entitlements first (native IAP purchases)
+      if (_revenueCatService.isConfigured) {
+        final revenueCatPassType = await _revenueCatService.getPassType();
+        if (revenueCatPassType != FanPassType.free) {
+          LoggingService.info('Found RevenueCat entitlement: $revenueCatPassType', tag: _logTag);
+          return _createFanPassStatus(revenueCatPassType);
+        }
+      }
+
+      // Fallback to Firestore for legacy Stripe purchases
       final callable = _functions.httpsCallable('getFanPassStatus');
       final result = await callable.call();
       final data = result.data as Map<String, dynamic>;
@@ -85,6 +104,32 @@ class WorldCupPaymentService {
       LoggingService.error('Error getting fan pass status: $e', tag: _logTag);
       return FanPassStatus.free();
     }
+  }
+
+  /// Create a FanPassStatus from a FanPassType
+  FanPassStatus _createFanPassStatus(FanPassType passType) {
+    final features = <String, bool>{
+      'basicSchedules': true,
+      'venueDiscovery': true,
+      'matchNotifications': true,
+      'basicTeamFollowing': true,
+      'communityAccess': true,
+      'adFree': passType != FanPassType.free,
+      'advancedStats': passType != FanPassType.free,
+      'customAlerts': passType != FanPassType.free,
+      'advancedSocialFeatures': passType != FanPassType.free,
+      'exclusiveContent': passType == FanPassType.superfanPass,
+      'priorityFeatures': passType == FanPassType.superfanPass,
+      'aiMatchInsights': passType == FanPassType.superfanPass,
+      'downloadableContent': passType == FanPassType.superfanPass,
+    };
+
+    return FanPassStatus(
+      hasPass: passType != FanPassType.free,
+      passType: passType,
+      purchasedAt: DateTime.now(), // RevenueCat doesn't give us purchase date easily
+      features: features,
+    );
   }
 
   /// Purchase a fan pass
@@ -162,6 +207,106 @@ class WorldCupPaymentService {
       return false;
     }
   }
+
+  // ============================================================================
+  // NATIVE IAP PURCHASE FUNCTIONS (RevenueCat)
+  // ============================================================================
+
+  /// Purchase a fan pass using native in-app purchase
+  /// This uses RevenueCat for the actual purchase flow
+  Future<FanPassPurchaseResult> purchaseFanPass({
+    required FanPassType passType,
+    required BuildContext context,
+  }) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      return FanPassPurchaseResult(
+        success: false,
+        errorMessage: 'Please sign in to purchase',
+      );
+    }
+
+    if (passType == FanPassType.free) {
+      return FanPassPurchaseResult(
+        success: false,
+        errorMessage: 'Cannot purchase free tier',
+      );
+    }
+
+    // Check if RevenueCat is configured
+    if (!_revenueCatService.isConfigured) {
+      LoggingService.warning('RevenueCat not configured, falling back to browser checkout', tag: _logTag);
+      // Fallback to browser checkout for now
+      final success = await openFanPassCheckout(passType: passType, context: context);
+      return FanPassPurchaseResult(
+        success: success,
+        usedFallback: true,
+        errorMessage: success ? null : 'Failed to open checkout',
+      );
+    }
+
+    // Use RevenueCat for native purchase
+    final result = await _revenueCatService.purchaseFanPassByType(passType);
+
+    if (result.success) {
+      // Clear cache so next status check reflects the purchase
+      clearCache();
+      LoggingService.info('Fan pass purchased successfully via RevenueCat', tag: _logTag);
+    }
+
+    return FanPassPurchaseResult(
+      success: result.success,
+      errorMessage: result.errorMessage,
+      userCancelled: result.userCancelled,
+    );
+  }
+
+  /// Restore previous purchases from App Store / Google Play
+  Future<RestorePurchasesResult> restorePurchases({required BuildContext context}) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      return RestorePurchasesResult(
+        success: false,
+        errorMessage: 'Please sign in to restore purchases',
+      );
+    }
+
+    if (!_revenueCatService.isConfigured) {
+      return RestorePurchasesResult(
+        success: false,
+        errorMessage: 'In-app purchases not available',
+      );
+    }
+
+    final result = await _revenueCatService.restorePurchases();
+
+    if (result.success) {
+      // Clear cache so next status check reflects restored purchases
+      clearCache();
+
+      if (result.hasRestoredPurchases) {
+        LoggingService.info('Purchases restored: ${result.restoredPassType}', tag: _logTag);
+      } else {
+        LoggingService.info('No purchases to restore', tag: _logTag);
+      }
+    }
+
+    return RestorePurchasesResult(
+      success: result.success,
+      hasRestoredPurchases: result.hasRestoredPurchases,
+      restoredPassType: result.restoredPassType,
+      errorMessage: result.errorMessage,
+    );
+  }
+
+  /// Get the price string for a pass type (from RevenueCat / App Store)
+  Future<String?> getNativePrice(FanPassType passType) async {
+    if (!_revenueCatService.isConfigured) return null;
+    return _revenueCatService.getPriceForPassType(passType);
+  }
+
+  /// Check if native IAP is available
+  bool get isNativeIAPAvailable => _revenueCatService.isConfigured;
 
   // ============================================================================
   // VENUE PREMIUM FUNCTIONS
@@ -792,4 +937,38 @@ class PaymentTransaction {
     }
     return null;
   }
+}
+
+// ============================================================================
+// NATIVE IAP RESULT MODELS
+// ============================================================================
+
+/// Result of a fan pass purchase attempt
+class FanPassPurchaseResult {
+  final bool success;
+  final String? errorMessage;
+  final bool userCancelled;
+  final bool usedFallback;
+
+  FanPassPurchaseResult({
+    required this.success,
+    this.errorMessage,
+    this.userCancelled = false,
+    this.usedFallback = false,
+  });
+}
+
+/// Result of a restore purchases attempt
+class RestorePurchasesResult {
+  final bool success;
+  final bool hasRestoredPurchases;
+  final FanPassType restoredPassType;
+  final String? errorMessage;
+
+  RestorePurchasesResult({
+    required this.success,
+    this.hasRestoredPurchases = false,
+    this.restoredPassType = FanPassType.free,
+    this.errorMessage,
+  });
 }

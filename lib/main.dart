@@ -30,6 +30,7 @@ import 'config/api_keys.dart';
 import 'core/services/logging_service.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/ad_service.dart';
+import 'services/revenuecat_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
@@ -202,6 +203,10 @@ Future<void> main() async {
   debugLog('🚀 INIT STEP 7.7: AdMob Initialization (Background)');
   _initializeAdMobBackground();
 
+  // Step 7.8: RevenueCat Initialization (Background)
+  debugLog('🚀 INIT STEP 7.8: RevenueCat Initialization (Background)');
+  _initializeRevenueCatBackground();
+
   // Step 8: Launch App
   debugLog('🚀 INIT STEP 8: Launching App');
   try {
@@ -300,6 +305,32 @@ void _initializeAdMobBackground() async {
     debugLog('⚠️ ADMOB: Background initialization failed: $e');
     if (DIAGNOSTIC_MODE) {
       debugLog('🔍 DIAGNOSTIC: AdMob failed but app will continue');
+    }
+  }
+}
+
+/// Initialize RevenueCat in the background for native in-app purchases
+void _initializeRevenueCatBackground() async {
+  try {
+    debugLog('💰 REVENUECAT: Starting background initialization');
+
+    // Wait a bit for the app to fully load first
+    await Future.delayed(Duration(seconds: 2));
+
+    // Initialize RevenueCat SDK
+    await RevenueCatService().initialize();
+
+    // If user is already authenticated, login to RevenueCat
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser != null) {
+      await RevenueCatService().loginUser(currentUser.uid);
+    }
+
+    debugLog('✅ REVENUECAT: Background initialization completed');
+  } catch (e) {
+    debugLog('⚠️ REVENUECAT: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: RevenueCat failed but app will continue');
     }
   }
 }
@@ -448,7 +479,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
     _authStream = FirebaseAuth.instance.authStateChanges();
   }
 
-  /// Initialize push notifications for the authenticated user
+  /// Initialize push notifications and RevenueCat for the authenticated user
   void _initializePushNotifications() {
     // Only initialize once per session
     if (_pushNotificationsInitialized) return;
@@ -464,6 +495,19 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
       } catch (e) {
         print('⚠️ PUSH: Failed to initialize push notifications: $e');
         // Non-critical - app continues to work without push notifications
+      }
+
+      // Also login to RevenueCat for the authenticated user
+      try {
+        final user = FirebaseAuth.instance.currentUser;
+        if (user != null) {
+          print('💰 REVENUECAT: Logging in user for purchases');
+          await RevenueCatService().loginUser(user.uid);
+          print('✅ REVENUECAT: User logged in successfully');
+        }
+      } catch (e) {
+        print('⚠️ REVENUECAT: Failed to login user: $e');
+        // Non-critical - app continues to work without RevenueCat
       }
     });
   }

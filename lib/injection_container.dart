@@ -80,6 +80,7 @@ import 'features/worldcup/data/services/nearby_venues_service.dart';
 import 'features/worldcup/data/services/match_reminder_service.dart';
 import 'features/worldcup/presentation/bloc/nearby_venues_cubit.dart';
 import 'features/worldcup/domain/services/world_cup_payment_service.dart';
+import 'services/revenuecat_service.dart';
 
 // Watch Party Feature
 import 'features/watch_party/domain/services/watch_party_service.dart';
@@ -508,6 +509,9 @@ void _registerWorldCupServices() {
 
   // World Cup Payment Service
   sl.registerLazySingleton(() => WorldCupPaymentService());
+
+  // RevenueCat Service (native in-app purchases)
+  sl.registerLazySingleton(() => RevenueCatService());
 
   // TODO: Token Services - disabled pending legal review
   // When re-enabling, uncomment the following:
