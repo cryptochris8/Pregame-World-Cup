@@ -46,6 +46,28 @@ class Place extends Equatable {
     photoReference,
   ];
 
+  // Helper to extract photo reference from various API response formats
+  static String? _extractPhotoReference(Map<String, dynamic> json) {
+    // First check for direct photoReference field (cached/Cloud Function format)
+    if (json['photoReference'] != null && json['photoReference'] is String) {
+      return json['photoReference'] as String;
+    }
+    if (json['photo_reference'] != null && json['photo_reference'] is String) {
+      return json['photo_reference'] as String;
+    }
+
+    // Then check for photos array (Google Places API format)
+    final photos = json['photos'];
+    if (photos != null && photos is List && photos.isNotEmpty) {
+      final firstPhoto = photos[0];
+      if (firstPhoto is Map<String, dynamic>) {
+        return firstPhoto['photo_reference'] as String?;
+      }
+    }
+
+    return null;
+  }
+
   // Basic factory for parsing from Google Places API Nearby Search result
   // Supports both snake_case (direct Google API) and camelCase (Cloud Function) formats
   factory Place.fromJson(Map<String, dynamic> json) {
@@ -71,7 +93,9 @@ class Place extends Equatable {
       geometry: json['geometry'] != null
           ? Geometry.fromJson(json['geometry'])
           : null,
-      photoReference: json['photoReference'] as String? ?? json['photo_reference'] as String?,
+      // Extract photo reference from photos array (Google Places API format)
+      // or from direct field (cached/Cloud Function format)
+      photoReference: _extractPhotoReference(json),
     );
   }
 
