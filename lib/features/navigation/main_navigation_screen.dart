@@ -24,7 +24,9 @@ import '../../core/animations/animated_button.dart';
 import '../../core/animations/swipe_gestures.dart';
 
 class MainNavigationScreen extends StatefulWidget {
-  const MainNavigationScreen({super.key});
+  final int initialTabIndex;
+
+  const MainNavigationScreen({super.key, this.initialTabIndex = 0});
 
   @override
   State<MainNavigationScreen> createState() => _MainNavigationScreenState();
@@ -32,7 +34,7 @@ class MainNavigationScreen extends StatefulWidget {
 
 class _MainNavigationScreenState extends State<MainNavigationScreen>
     with TickerProviderStateMixin {
-  int _selectedIndex = 0;
+  late int _selectedIndex;
   final NotificationService _notificationService = NotificationService();
   final MessagingService _messagingService = MessagingService();
   int _unreadNotifications = 0;
@@ -46,6 +48,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void initState() {
     super.initState();
+    // Use the initial tab index provided, clamped to valid range
+    _selectedIndex = widget.initialTabIndex.clamp(0, 5);
+
     _screens = [
       // World Cup 2026 - Main feature with all match/group/bracket/team screens
       _WorldCupFeatureWrapper(),

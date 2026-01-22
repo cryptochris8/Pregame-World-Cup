@@ -699,6 +699,12 @@ export {
   cleanupOldMessageNotifications
 } from './message-notifications';
 
+// Export Friend Request Notification functions
+export {
+  onFriendRequestNotificationCreated,
+  cleanupOldFriendRequestNotifications
+} from './friend-request-notifications';
+
 // // Example of how to define a scheduled function (we'll configure the schedule later)
 // export const scheduledUpdateSchedule = functions.pubsub.schedule("every 24 hours")
 //   .onRun(async (context) => {

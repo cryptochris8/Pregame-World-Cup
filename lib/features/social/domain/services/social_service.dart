@@ -203,16 +203,16 @@ class SocialService {
   Future<bool> sendFriendRequest(String targetUserId, {String? source}) async {
     final currentUser = _auth.currentUser;
     if (currentUser == null) return false;
-    
+
     try {
       PerformanceMonitor.startApiCall('send_friend_request');
-      
+
       final connection = SocialConnection.createFriendRequest(
         fromUserId: currentUser.uid,
         toUserId: targetUserId,
         source: source,
       );
-      
+
       await _firestore.collection('social_connections').doc(connection.connectionId).set({
         'fromUserId': connection.fromUserId,
         'toUserId': connection.toUserId,
@@ -222,13 +222,19 @@ class SocialService {
         'connectionSource': connection.connectionSource,
         'metadata': connection.metadata,
       });
-      
+
       // Cache locally
       await _connectionsBox.put(connection.connectionId, connection);
-      
+
+      // Trigger push notification for friend request
+      await _triggerFriendRequestNotification(
+        targetUserId: targetUserId,
+        connectionId: connection.connectionId,
+      );
+
       PerformanceMonitor.endApiCall('send_friend_request', success: true);
       return true;
-      
+
     } catch (e) {
       PerformanceMonitor.endApiCall('send_friend_request', success: false);
       LoggingService.error('Error sending friend request: $e', tag: _logTag);
@@ -236,35 +242,103 @@ class SocialService {
     }
   }
 
+  /// Trigger push notification for friend request
+  Future<void> _triggerFriendRequestNotification({
+    required String targetUserId,
+    required String connectionId,
+  }) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return;
+
+    try {
+      // Get current user's profile for display name and image
+      final senderProfile = await getUserProfile(currentUser.uid);
+
+      // Create notification document for Cloud Function to process
+      await _firestore.collection('friend_request_notifications').add({
+        'connectionId': connectionId,
+        'fromUserId': currentUser.uid,
+        'fromUserName': senderProfile?.displayName ?? currentUser.displayName ?? 'Someone',
+        'fromUserImageUrl': senderProfile?.profileImageUrl ?? currentUser.photoURL,
+        'toUserId': targetUserId,
+        'createdAt': FieldValue.serverTimestamp(),
+        'processed': false,
+        'type': 'friend_request',
+      });
+
+      LoggingService.info('Created friend request notification for $targetUserId', tag: _logTag);
+    } catch (e) {
+      // Don't fail the friend request if notification fails
+      LoggingService.error('Error triggering friend request notification: $e', tag: _logTag);
+    }
+  }
+
   /// Accept friend request
   Future<bool> acceptFriendRequest(String connectionId) async {
     try {
       PerformanceMonitor.startApiCall('accept_friend_request');
-      
+
       final connection = await _getConnection(connectionId);
       if (connection == null) return false;
-      
+
       final acceptedConnection = connection.accept();
-      
+
       await _firestore.collection('social_connections').doc(connectionId).update({
         'status': acceptedConnection.status.name,
         'acceptedAt': Timestamp.fromDate(acceptedConnection.acceptedAt!),
       });
-      
+
       // Update cache
       await _connectionsBox.put(connectionId, acceptedConnection);
-      
+
       // Update social stats for both users
       await _incrementSocialStat(connection.fromUserId, 'friendsCount');
       await _incrementSocialStat(connection.toUserId, 'friendsCount');
-      
+
+      // Notify the original sender that their request was accepted
+      await _triggerFriendRequestAcceptedNotification(
+        originalSenderId: connection.fromUserId,
+        connectionId: connectionId,
+      );
+
       PerformanceMonitor.endApiCall('accept_friend_request', success: true);
       return true;
-      
+
     } catch (e) {
       PerformanceMonitor.endApiCall('accept_friend_request', success: false);
       LoggingService.error('Error accepting friend request: $e', tag: _logTag);
       return false;
+    }
+  }
+
+  /// Trigger push notification when friend request is accepted
+  Future<void> _triggerFriendRequestAcceptedNotification({
+    required String originalSenderId,
+    required String connectionId,
+  }) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return;
+
+    try {
+      // Get current user's profile for display name and image
+      final acceptorProfile = await getUserProfile(currentUser.uid);
+
+      // Create notification document for Cloud Function to process
+      await _firestore.collection('friend_request_notifications').add({
+        'connectionId': connectionId,
+        'fromUserId': currentUser.uid,
+        'fromUserName': acceptorProfile?.displayName ?? currentUser.displayName ?? 'Someone',
+        'fromUserImageUrl': acceptorProfile?.profileImageUrl ?? currentUser.photoURL,
+        'toUserId': originalSenderId,
+        'createdAt': FieldValue.serverTimestamp(),
+        'processed': false,
+        'type': 'friend_request_accepted',
+      });
+
+      LoggingService.info('Created friend request accepted notification for $originalSenderId', tag: _logTag);
+    } catch (e) {
+      // Don't fail the accept if notification fails
+      LoggingService.error('Error triggering friend request accepted notification: $e', tag: _logTag);
     }
   }
 

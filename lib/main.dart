@@ -579,6 +579,9 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
         case 'friend_request':
           _navigateToFriendRequests();
           break;
+        case 'friend_request_accepted':
+          _navigateToUserProfile(data['fromUserId'] as String?);
+          break;
         case 'watch_party_invite':
           _navigateToWatchParty(data['watchPartyId'] as String?);
           break;
@@ -620,8 +623,35 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
   /// Navigate to friend requests screen
   void _navigateToFriendRequests() {
     debugLog('🔔 NOTIFICATION: Navigating to friend requests');
-    // The navigation will be handled by the main navigation system
-    // For now, just log it
+    if (!mounted) return;
+
+    // Navigate to main navigation with friends tab selected
+    // Tab indexes: WorldCup=0, Feed=1, Messages=2, Notifications=3, Friends=4, Profile=5
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(
+        builder: (context) => const MainNavigationScreen(initialTabIndex: 4),
+      ),
+      (route) => false,
+    );
+  }
+
+  /// Navigate to user profile when friend request is accepted
+  void _navigateToUserProfile(String? userId) {
+    if (userId == null) {
+      debugLog('⚠️ NOTIFICATION: No userId in accepted notification');
+      return;
+    }
+    debugLog('🔔 NOTIFICATION: Navigating to user profile $userId');
+    if (!mounted) return;
+
+    // Navigate to friends tab first, then the user can view the profile
+    // Tab indexes: WorldCup=0, Feed=1, Messages=2, Notifications=3, Friends=4, Profile=5
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(
+        builder: (context) => const MainNavigationScreen(initialTabIndex: 4),
+      ),
+      (route) => false,
+    );
   }
 
   /// Navigate to watch party screen
