@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:typed_data';
-import 'package:flutter/foundation.dart';
 import 'package:audio_waveforms/audio_waveforms.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:path_provider/path_provider.dart';
@@ -90,13 +88,15 @@ class VoiceRecordingService {
       final timestamp = DateTime.now().millisecondsSinceEpoch;
       _currentRecordingPath = '${tempDir.path}/voice_message_$timestamp.m4a';
       
+      // Configure recorder settings
+      _recorder
+        ..androidEncoder = AndroidEncoder.aac
+        ..androidOutputFormat = AndroidOutputFormat.mpeg4
+        ..iosEncoder = IosEncoder.kAudioFormatMPEG4AAC
+        ..sampleRate = 44100;
+
       // Start recording with audio_waveforms
-      await _recorder.record(
-        path: _currentRecordingPath!,
-        encoder: AudioEncoder.aac,
-        bitRate: 64000,
-        sampleRate: 44100,
-      );
+      await _recorder.record(path: _currentRecordingPath!);
       
       _isRecording = true;
       _recordingDuration = Duration.zero;
@@ -277,29 +277,47 @@ class VoiceRecordingService {
     }
   }
 
-  /// Generate waveform data from audio file (using audio_waveforms)
+  /// Generate waveform data from audio file (using audio_waveforms PlayerController)
   Future<List<double>> generateWaveform(String filePath, {int samples = 100}) async {
     try {
       PerformanceMonitor.startApiCall('waveform_generation');
-      
-      // Use audio_waveforms to extract waveform data
-      final List<double> waveformData = await _recorder.getWaveformData(
+
+      // Use PlayerController to extract waveform data from file
+      final playerController = PlayerController();
+      await playerController.preparePlayer(
         path: filePath,
+        shouldExtractWaveform: true,
         noOfSamples: samples,
       );
-      
-      PerformanceMonitor.endApiCall('waveform_generation', success: true);
-      return waveformData;
+
+      // Get the extracted waveform data
+      final waveformData = playerController.waveformData;
+      playerController.dispose();
+
+      if (waveformData.isNotEmpty) {
+        PerformanceMonitor.endApiCall('waveform_generation', success: true);
+        return waveformData;
+      }
+
+      // Fallback to generated waveform if extraction returns empty
+      throw Exception('Waveform data empty');
     } catch (e) {
       LoggingService.error('Failed to generate waveform: $e', tag: _logTag);
       PerformanceMonitor.endApiCall('waveform_generation', success: false);
-      // Fallback to mock waveform if extraction fails
-      return List<double>.generate(samples, (index) {
-        final normalizedIndex = index / samples;
-        final cycles = normalizedIndex * 2 * 3.14159 * 3; // 3 cycles
-        return (0.5 + 0.5 * (0.8 * (1 + normalizedIndex) * (1 + 0.3 * (index % 7) / 7))).clamp(0.0, 1.0);
-      });
+      // Fallback to synthetic waveform if extraction fails
+      return _generateSyntheticWaveform(samples);
     }
+  }
+
+  /// Generate a synthetic waveform pattern for fallback
+  List<double> _generateSyntheticWaveform(int samples) {
+    return List<double>.generate(samples, (index) {
+      final normalizedIndex = index / samples;
+      // Create a natural-looking voice waveform pattern
+      final base = 0.3 + 0.4 * normalizedIndex;
+      final variation = 0.3 * ((index % 7) / 7);
+      return (base + variation).clamp(0.1, 1.0);
+    });
   }
 
   /// Get the current playback state for a voice message
