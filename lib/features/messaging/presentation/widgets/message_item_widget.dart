@@ -336,7 +336,7 @@ class MessageItemWidget extends StatelessWidget {
                 : Colors.white.withOpacity(0.7),
           ),
         ),
-        
+
         if (isOwnMessage) ...[
           const SizedBox(width: 4),
           _buildMessageStatus(),
@@ -346,6 +346,24 @@ class MessageItemWidget extends StatelessWidget {
   }
 
   Widget _buildMessageStatus() {
+    // Check if message has been read by anyone (besides sender)
+    final readByOthers = message.readBy.where((id) => id != message.senderId).toList();
+    final hasBeenRead = readByOthers.isNotEmpty;
+
+    // For group chats, show read count
+    if (chat.type != ChatType.direct && hasBeenRead) {
+      return _buildGroupReadReceipt(readByOthers.length);
+    }
+
+    // For direct chats or unread messages, show status icon
+    if (hasBeenRead || message.status == MessageStatus.read) {
+      return Icon(
+        Icons.done_all,
+        size: 14,
+        color: Colors.orange[300],
+      );
+    }
+
     switch (message.status) {
       case MessageStatus.sending:
         return Icon(
@@ -368,7 +386,7 @@ class MessageItemWidget extends StatelessWidget {
       case MessageStatus.read:
         return Icon(
           Icons.done_all,
-          size: 12,
+          size: 14,
           color: Colors.orange[300],
         );
       case MessageStatus.failed:
@@ -378,6 +396,31 @@ class MessageItemWidget extends StatelessWidget {
           color: Colors.red,
         );
     }
+  }
+
+  /// Build read receipt indicator for group chats showing how many people read the message
+  Widget _buildGroupReadReceipt(int readCount) {
+    final totalRecipients = chat.participantIds.length - 1; // Exclude sender
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(
+          Icons.done_all,
+          size: 14,
+          color: Colors.orange[300],
+        ),
+        const SizedBox(width: 2),
+        Text(
+          readCount >= totalRecipients ? 'All' : '$readCount',
+          style: TextStyle(
+            fontSize: 9,
+            color: Colors.orange[300],
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ],
+    );
   }
 
   Color _getSenderColor() {

@@ -404,21 +404,78 @@ class MessagingService {
     try {
       final chatRef = _firestore.collection('chats').doc(chatId);
       final chatDoc = await chatRef.get();
-      
+
       if (!chatDoc.exists) return false;
-      
+
       final chat = _chatFromFirestore(chatDoc);
       final updatedChat = chat.markAsRead(currentUser.uid);
-      
+
       await chatRef.update(updatedChat.toJson());
-      
+
+      // Also mark individual messages as read
+      await markMessagesAsRead(chatId);
+
       // Clear cache
       await CacheService.instance.remove(_chatsKey);
-      
+
       return true;
     } catch (e) {
       LoggingService.error('Error marking chat as read: $e', tag: 'MessagingService');
       return false;
+    }
+  }
+
+  /// Mark all unread messages in a chat as read by the current user
+  Future<void> markMessagesAsRead(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return;
+
+    try {
+      // Get messages not yet read by current user
+      final snapshot = await _firestore
+          .collection('messages')
+          .where('chatId', isEqualTo: chatId)
+          .where('senderId', isNotEqualTo: currentUser.uid) // Don't mark own messages
+          .get();
+
+      if (snapshot.docs.isEmpty) return;
+
+      // Use batched writes for efficiency
+      final batch = _firestore.batch();
+      int updateCount = 0;
+
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        final readBy = List<String>.from(data['readBy'] ?? []);
+
+        // Skip if already read by this user
+        if (readBy.contains(currentUser.uid)) continue;
+
+        readBy.add(currentUser.uid);
+        batch.update(doc.reference, {
+          'readBy': readBy,
+          'status': 'read',
+        });
+        updateCount++;
+
+        // Firestore batches have a limit of 500 operations
+        if (updateCount >= 400) {
+          await batch.commit();
+          updateCount = 0;
+        }
+      }
+
+      // Commit any remaining updates
+      if (updateCount > 0) {
+        await batch.commit();
+      }
+
+      LoggingService.info(
+        'Marked ${snapshot.docs.length} messages as read in chat $chatId',
+        tag: 'MessagingService',
+      );
+    } catch (e) {
+      LoggingService.error('Error marking messages as read: $e', tag: 'MessagingService');
     }
   }
 
