@@ -31,6 +31,7 @@ import 'core/services/logging_service.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/ad_service.dart';
 import 'services/revenuecat_service.dart';
+import 'core/services/presence_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
@@ -468,46 +469,92 @@ class AuthenticationWrapper extends StatefulWidget {
   State<AuthenticationWrapper> createState() => _AuthenticationWrapperState();
 }
 
-class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
+class _AuthenticationWrapperState extends State<AuthenticationWrapper> with WidgetsBindingObserver {
   late Stream<User?> _authStream;
   bool _pushNotificationsInitialized = false;
+  bool _presenceInitialized = false;
 
   @override
   void initState() {
     super.initState();
     // Initialize the auth stream
     _authStream = FirebaseAuth.instance.authStateChanges();
+    // Register for app lifecycle events
+    WidgetsBinding.instance.addObserver(this);
   }
 
-  /// Initialize push notifications and RevenueCat for the authenticated user
-  void _initializePushNotifications() {
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    _handleAppLifecycleChange(state);
+  }
+
+  /// Handle app lifecycle changes for presence tracking
+  void _handleAppLifecycleChange(AppLifecycleState state) {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null || !_presenceInitialized) return;
+
+    final presenceService = di.sl<PresenceService>();
+
+    switch (state) {
+      case AppLifecycleState.resumed:
+        // App came to foreground - mark user as online
+        debugLog('📱 LIFECYCLE: App resumed - setting user online');
+        presenceService.setOnline();
+        break;
+      case AppLifecycleState.paused:
+      case AppLifecycleState.inactive:
+      case AppLifecycleState.detached:
+      case AppLifecycleState.hidden:
+        // App went to background - mark user as offline
+        debugLog('📱 LIFECYCLE: App paused/inactive - setting user offline');
+        presenceService.setOffline();
+        break;
+    }
+  }
+
+  /// Initialize push notifications, RevenueCat, and presence service for the authenticated user
+  void _initializeAuthenticatedUserServices() {
     // Only initialize once per session
     if (_pushNotificationsInitialized) return;
     _pushNotificationsInitialized = true;
 
     // Initialize in background to avoid blocking UI
     Future.microtask(() async {
+      // Initialize Push Notifications
       try {
-        print('📱 PUSH: Initializing push notifications for authenticated user');
+        debugLog('📱 PUSH: Initializing push notifications for authenticated user');
         final pushService = di.sl<PushNotificationService>();
         await pushService.initialize();
-        print('✅ PUSH: Push notifications initialized successfully');
+        debugLog('✅ PUSH: Push notifications initialized successfully');
       } catch (e) {
-        print('⚠️ PUSH: Failed to initialize push notifications: $e');
+        debugLog('⚠️ PUSH: Failed to initialize push notifications: $e');
         // Non-critical - app continues to work without push notifications
       }
 
-      // Also login to RevenueCat for the authenticated user
+      // Login to RevenueCat for the authenticated user
       try {
         final user = FirebaseAuth.instance.currentUser;
         if (user != null) {
-          print('💰 REVENUECAT: Logging in user for purchases');
+          debugLog('💰 REVENUECAT: Logging in user for purchases');
           await RevenueCatService().loginUser(user.uid);
-          print('✅ REVENUECAT: User logged in successfully');
+          debugLog('✅ REVENUECAT: User logged in successfully');
         }
       } catch (e) {
-        print('⚠️ REVENUECAT: Failed to login user: $e');
+        debugLog('⚠️ REVENUECAT: Failed to login user: $e');
         // Non-critical - app continues to work without RevenueCat
+      }
+
+      // Initialize Presence Service for online status tracking
+      try {
+        debugLog('👤 PRESENCE: Initializing presence service for online status');
+        final presenceService = di.sl<PresenceService>();
+        await presenceService.initialize();
+        _presenceInitialized = true;
+        debugLog('✅ PRESENCE: Presence service initialized - user is now online');
+      } catch (e) {
+        debugLog('⚠️ PRESENCE: Failed to initialize presence service: $e');
+        // Non-critical - app continues to work without presence tracking
       }
     });
   }
@@ -545,8 +592,8 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
         
         // Show main app if user is authenticated
         if (snapshot.hasData && snapshot.data != null) {
-          // Initialize push notifications when user is authenticated
-          _initializePushNotifications();
+          // Initialize authenticated user services (push, RevenueCat, presence)
+          _initializeAuthenticatedUserServices();
           return const MainNavigationScreen();
         }
         
@@ -558,7 +605,19 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
   
   @override
   void dispose() {
-    // Clean up any resources if needed
+    // Remove lifecycle observer
+    WidgetsBinding.instance.removeObserver(this);
+
+    // Dispose presence service
+    if (_presenceInitialized) {
+      try {
+        final presenceService = di.sl<PresenceService>();
+        presenceService.dispose();
+      } catch (e) {
+        debugLog('⚠️ PRESENCE: Error disposing presence service: $e');
+      }
+    }
+
     super.dispose();
   }
 } 

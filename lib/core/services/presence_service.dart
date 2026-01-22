@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/foundation.dart';
@@ -7,15 +8,16 @@ import 'logging_service.dart';
 class PresenceService {
   static const String _logTag = 'PresenceService';
   static const Duration _presenceTimeout = Duration(minutes: 5);
-  
+
   final FirebaseDatabase _database = FirebaseDatabase.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  
+
   DatabaseReference? _presenceRef;
   DatabaseReference? _userStatusRef;
   StreamSubscription<DatabaseEvent>? _connectedSubscription;
   Timer? _heartbeatTimer;
-  
+
   bool _isInitialized = false;
   bool _isOnline = false;
 
@@ -84,13 +86,40 @@ class PresenceService {
     if (currentUser == null || _userStatusRef == null) return;
 
     try {
+      // Update Realtime Database (for real-time presence)
       await _userStatusRef!.update({
         'isOnline': true,
         'lastSeenAt': ServerValue.timestamp,
         'userId': currentUser.uid,
       });
+
+      // Also sync to Firestore user_profiles (for friends list and profile views)
+      await _syncPresenceToFirestore(currentUser.uid, isOnline: true);
     } catch (e) {
       LoggingService.error('Error setting user online: $e', tag: _logTag);
+    }
+  }
+
+  /// Sync presence data to Firestore user_profiles collection
+  Future<void> _syncPresenceToFirestore(String userId, {required bool isOnline}) async {
+    try {
+      await _firestore.collection('user_profiles').doc(userId).update({
+        'isOnline': isOnline,
+        'lastSeenAt': Timestamp.now(),
+        'updatedAt': Timestamp.now(),
+      });
+      LoggingService.info('Synced presence to Firestore: online=$isOnline', tag: _logTag);
+    } catch (e) {
+      // If document doesn't exist, try to create it with set/merge
+      try {
+        await _firestore.collection('user_profiles').doc(userId).set({
+          'isOnline': isOnline,
+          'lastSeenAt': Timestamp.now(),
+          'updatedAt': Timestamp.now(),
+        }, SetOptions(merge: true));
+      } catch (e2) {
+        LoggingService.error('Error syncing presence to Firestore: $e2', tag: _logTag);
+      }
     }
   }
 
@@ -216,13 +245,21 @@ class PresenceService {
 
   /// Set user as offline (call when app goes to background)
   Future<void> setOffline() async {
+    final currentUser = _auth.currentUser;
     if (_userStatusRef == null) return;
 
     try {
+      // Update Realtime Database
       await _userStatusRef!.update({
         'isOnline': false,
         'lastSeenAt': ServerValue.timestamp,
       });
+
+      // Also sync to Firestore
+      if (currentUser != null) {
+        await _syncPresenceToFirestore(currentUser.uid, isOnline: false);
+      }
+
       _isOnline = false;
       LoggingService.info('User marked as offline', tag: _logTag);
     } catch (e) {
