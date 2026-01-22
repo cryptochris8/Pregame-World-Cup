@@ -672,6 +672,332 @@ class MessagingService {
     return await getChatMessages(chatId);
   }
 
+  // Group Chat Member Management
+
+  /// Add a member to a group chat
+  Future<bool> addMemberToChat(String chatId, String userId, String userName) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return false;
+
+      final chat = _chatFromFirestore(chatDoc);
+
+      // Only admins can add members
+      if (!chat.isAdmin(currentUser.uid)) {
+        LoggingService.warning('User is not an admin, cannot add members', tag: 'MessagingService');
+        return false;
+      }
+
+      // Check if user is already a participant
+      if (chat.isParticipant(userId)) {
+        LoggingService.warning('User is already a participant', tag: 'MessagingService');
+        return false;
+      }
+
+      // Update the chat with new participant
+      final updatedParticipants = List<String>.from(chat.participantIds)..add(userId);
+      final updatedUnreadCounts = Map<String, int>.from(chat.unreadCounts);
+      updatedUnreadCounts[userId] = 0;
+
+      await _firestore.collection('chats').doc(chatId).update({
+        'participantIds': updatedParticipants,
+        'unreadCounts': updatedUnreadCounts,
+        'updatedAt': DateTime.now().toIso8601String(),
+      });
+
+      // Send system message
+      await sendSystemMessage(
+        chatId: chatId,
+        content: '${currentUser.displayName ?? 'Someone'} added $userName to the group',
+      );
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Added member $userId to chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error adding member to chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Remove a member from a group chat
+  Future<bool> removeMemberFromChat(String chatId, String userId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return false;
+
+      final chat = _chatFromFirestore(chatDoc);
+
+      // Only admins can remove members (and cannot remove themselves this way)
+      if (!chat.isAdmin(currentUser.uid)) {
+        LoggingService.warning('User is not an admin, cannot remove members', tag: 'MessagingService');
+        return false;
+      }
+
+      // Cannot remove the chat creator
+      if (chat.createdBy == userId) {
+        LoggingService.warning('Cannot remove the chat creator', tag: 'MessagingService');
+        return false;
+      }
+
+      // Get the user's name for the system message
+      final userDoc = await _firestore.collection('users').doc(userId).get();
+      final userName = userDoc.exists ? (userDoc.data()?['displayName'] ?? 'A member') : 'A member';
+
+      // Update the chat
+      final updatedParticipants = List<String>.from(chat.participantIds)..remove(userId);
+      final updatedAdmins = List<String>.from(chat.adminIds)..remove(userId);
+      final updatedUnreadCounts = Map<String, int>.from(chat.unreadCounts);
+      updatedUnreadCounts.remove(userId);
+
+      await _firestore.collection('chats').doc(chatId).update({
+        'participantIds': updatedParticipants,
+        'adminIds': updatedAdmins,
+        'unreadCounts': updatedUnreadCounts,
+        'updatedAt': DateTime.now().toIso8601String(),
+      });
+
+      // Send system message
+      await sendSystemMessage(
+        chatId: chatId,
+        content: '${currentUser.displayName ?? 'Someone'} removed $userName from the group',
+      );
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Removed member $userId from chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error removing member from chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Leave a group chat
+  Future<bool> leaveChat(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return false;
+
+      final chat = _chatFromFirestore(chatDoc);
+
+      // Cannot leave direct chats
+      if (chat.type == ChatType.direct) {
+        LoggingService.warning('Cannot leave direct chats', tag: 'MessagingService');
+        return false;
+      }
+
+      // Cannot leave if you're the only admin
+      if (chat.isAdmin(currentUser.uid) && chat.adminIds.length == 1 && chat.participantIds.length > 1) {
+        LoggingService.warning('Cannot leave - you are the only admin. Promote another admin first.', tag: 'MessagingService');
+        return false;
+      }
+
+      // Update the chat
+      final updatedParticipants = List<String>.from(chat.participantIds)..remove(currentUser.uid);
+      final updatedAdmins = List<String>.from(chat.adminIds)..remove(currentUser.uid);
+      final updatedUnreadCounts = Map<String, int>.from(chat.unreadCounts);
+      updatedUnreadCounts.remove(currentUser.uid);
+
+      // If no participants left, deactivate the chat
+      if (updatedParticipants.isEmpty) {
+        await _firestore.collection('chats').doc(chatId).update({
+          'isActive': false,
+          'updatedAt': DateTime.now().toIso8601String(),
+        });
+      } else {
+        await _firestore.collection('chats').doc(chatId).update({
+          'participantIds': updatedParticipants,
+          'adminIds': updatedAdmins,
+          'unreadCounts': updatedUnreadCounts,
+          'updatedAt': DateTime.now().toIso8601String(),
+        });
+
+        // Send system message
+        await sendSystemMessage(
+          chatId: chatId,
+          content: '${currentUser.displayName ?? 'Someone'} left the group',
+        );
+      }
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('User left chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error leaving chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Promote a member to admin
+  Future<bool> promoteToAdmin(String chatId, String userId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return false;
+
+      final chat = _chatFromFirestore(chatDoc);
+
+      // Only admins can promote
+      if (!chat.isAdmin(currentUser.uid)) {
+        LoggingService.warning('User is not an admin, cannot promote members', tag: 'MessagingService');
+        return false;
+      }
+
+      // User must be a participant
+      if (!chat.isParticipant(userId)) {
+        LoggingService.warning('User is not a participant', tag: 'MessagingService');
+        return false;
+      }
+
+      // Already an admin
+      if (chat.isAdmin(userId)) {
+        LoggingService.warning('User is already an admin', tag: 'MessagingService');
+        return false;
+      }
+
+      // Get user name for system message
+      final userDoc = await _firestore.collection('users').doc(userId).get();
+      final userName = userDoc.exists ? (userDoc.data()?['displayName'] ?? 'A member') : 'A member';
+
+      // Update the chat
+      final updatedAdmins = List<String>.from(chat.adminIds)..add(userId);
+
+      await _firestore.collection('chats').doc(chatId).update({
+        'adminIds': updatedAdmins,
+        'updatedAt': DateTime.now().toIso8601String(),
+      });
+
+      // Send system message
+      await sendSystemMessage(
+        chatId: chatId,
+        content: '${currentUser.displayName ?? 'Someone'} made $userName an admin',
+      );
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Promoted $userId to admin in chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error promoting to admin: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Demote an admin to regular member
+  Future<bool> demoteFromAdmin(String chatId, String userId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return false;
+
+      final chat = _chatFromFirestore(chatDoc);
+
+      // Only the chat creator can demote admins
+      if (chat.createdBy != currentUser.uid) {
+        LoggingService.warning('Only the chat creator can demote admins', tag: 'MessagingService');
+        return false;
+      }
+
+      // Cannot demote the creator
+      if (userId == chat.createdBy) {
+        LoggingService.warning('Cannot demote the chat creator', tag: 'MessagingService');
+        return false;
+      }
+
+      // User must be an admin
+      if (!chat.isAdmin(userId)) {
+        LoggingService.warning('User is not an admin', tag: 'MessagingService');
+        return false;
+      }
+
+      // Get user name for system message
+      final userDoc = await _firestore.collection('users').doc(userId).get();
+      final userName = userDoc.exists ? (userDoc.data()?['displayName'] ?? 'A member') : 'A member';
+
+      // Update the chat
+      final updatedAdmins = List<String>.from(chat.adminIds)..remove(userId);
+
+      await _firestore.collection('chats').doc(chatId).update({
+        'adminIds': updatedAdmins,
+        'updatedAt': DateTime.now().toIso8601String(),
+      });
+
+      // Send system message
+      await sendSystemMessage(
+        chatId: chatId,
+        content: '${currentUser.displayName ?? 'Someone'} removed $userName as admin',
+      );
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Demoted $userId from admin in chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error demoting from admin: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Get member profiles for a chat
+  Future<List<ChatMemberInfo>> getChatMembers(String chatId) async {
+    try {
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return [];
+
+      final chat = _chatFromFirestore(chatDoc);
+      final members = <ChatMemberInfo>[];
+
+      for (final participantId in chat.participantIds) {
+        final userDoc = await _firestore.collection('users').doc(participantId).get();
+        if (userDoc.exists) {
+          final userData = userDoc.data()!;
+          members.add(ChatMemberInfo(
+            userId: participantId,
+            displayName: userData['displayName'] ?? 'Unknown',
+            imageUrl: userData['profileImageUrl'],
+            isAdmin: chat.isAdmin(participantId),
+            isCreator: chat.createdBy == participantId,
+          ));
+        }
+      }
+
+      // Sort: creator first, then admins, then regular members
+      members.sort((a, b) {
+        if (a.isCreator) return -1;
+        if (b.isCreator) return 1;
+        if (a.isAdmin && !b.isAdmin) return -1;
+        if (!a.isAdmin && b.isAdmin) return 1;
+        return a.displayName.compareTo(b.displayName);
+      });
+
+      return members;
+    } catch (e) {
+      LoggingService.error('Error getting chat members: $e', tag: 'MessagingService');
+      return [];
+    }
+  }
+
   /// Check if a direct chat is blocked (either user blocked the other)
   /// Returns a BlockStatus with details about who blocked whom
   Future<BlockStatus> getChatBlockStatus(Chat chat) async {
@@ -735,6 +1061,23 @@ class BlockStatus {
     required this.isBlocked,
     this.blockedByCurrentUser = false,
     this.message,
+  });
+}
+
+/// Member info for group chats
+class ChatMemberInfo {
+  final String userId;
+  final String displayName;
+  final String? imageUrl;
+  final bool isAdmin;
+  final bool isCreator;
+
+  const ChatMemberInfo({
+    required this.userId,
+    required this.displayName,
+    this.imageUrl,
+    this.isAdmin = false,
+    this.isCreator = false,
   });
 }
 

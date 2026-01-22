@@ -554,44 +554,338 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void _showChatInfo() {
+    final currentUserId = FirebaseAuth.instance.currentUser?.uid;
+    final isAdmin = widget.chat.isAdmin(currentUserId ?? '');
+    final isCreator = widget.chat.createdBy == currentUserId;
+
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.brown[900],
       isScrollControlled: true,
-      builder: (context) => Container(
-        padding: const EdgeInsets.all(16),
-        height: MediaQuery.of(context).size.height * 0.7,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Chat Info',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+      builder: (context) => StatefulBuilder(
+        builder: (context, setSheetState) => Container(
+          padding: const EdgeInsets.all(16),
+          height: MediaQuery.of(context).size.height * 0.8,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Header
+              Row(
+                children: [
+                  const Text(
+                    'Chat Info',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Spacer(),
+                  IconButton(
+                    icon: const Icon(Icons.close, color: Colors.white),
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                ],
               ),
-            ),
-            const SizedBox(height: 16),
-            ListTile(
-              leading: Icon(Icons.group, color: Colors.orange[300]),
-              title: const Text('Members', style: TextStyle(color: Colors.white)),
-              subtitle: Text(
-                '${widget.chat.participantIds.length} participants',
-                style: const TextStyle(color: Colors.white70),
+              const SizedBox(height: 8),
+
+              // Chat name and description
+              if (widget.chat.name != null) ...[
+                Text(
+                  widget.chat.name!,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                if (widget.chat.description != null && widget.chat.description!.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text(
+                      widget.chat.description!,
+                      style: const TextStyle(color: Colors.white70, fontSize: 14),
+                    ),
+                  ),
+                const SizedBox(height: 16),
+              ],
+
+              // Created info
+              Row(
+                children: [
+                  Icon(Icons.access_time, color: Colors.orange[300], size: 18),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Created ${_formatDateTime(widget.chat.createdAt)}',
+                    style: const TextStyle(color: Colors.white70, fontSize: 12),
+                  ),
+                ],
               ),
-            ),
-            ListTile(
-              leading: Icon(Icons.access_time, color: Colors.orange[300]),
-              title: const Text('Created', style: TextStyle(color: Colors.white)),
-              subtitle: Text(
-                _formatDateTime(widget.chat.createdAt),
-                style: const TextStyle(color: Colors.white70),
+              const SizedBox(height: 16),
+
+              // Members header with add button
+              Row(
+                children: [
+                  Text(
+                    'Members (${widget.chat.participantIds.length})',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const Spacer(),
+                  if (isAdmin && widget.chat.type != ChatType.direct)
+                    TextButton.icon(
+                      icon: const Icon(Icons.person_add, color: Colors.orange, size: 18),
+                      label: const Text('Add', style: TextStyle(color: Colors.orange)),
+                      onPressed: () {
+                        Navigator.pop(context);
+                        _showAddMemberDialog();
+                      },
+                    ),
+                ],
               ),
-            ),
-            // TODO: Add more chat info items
-          ],
+              const Divider(color: Colors.white24),
+
+              // Members list
+              Expanded(
+                child: FutureBuilder<List<ChatMemberInfo>>(
+                  future: _messagingService.getChatMembers(widget.chat.chatId),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return const Center(
+                        child: CircularProgressIndicator(color: Colors.orange),
+                      );
+                    }
+
+                    final members = snapshot.data ?? [];
+                    if (members.isEmpty) {
+                      return const Center(
+                        child: Text('No members found', style: TextStyle(color: Colors.white70)),
+                      );
+                    }
+
+                    return ListView.builder(
+                      itemCount: members.length,
+                      itemBuilder: (context, index) {
+                        final member = members[index];
+                        final isMe = member.userId == currentUserId;
+
+                        return ListTile(
+                          leading: CircleAvatar(
+                            backgroundColor: Colors.orange[300],
+                            backgroundImage: member.imageUrl != null
+                                ? NetworkImage(member.imageUrl!)
+                                : null,
+                            child: member.imageUrl == null
+                                ? Text(
+                                    member.displayName.isNotEmpty
+                                        ? member.displayName[0].toUpperCase()
+                                        : '?',
+                                    style: TextStyle(color: Colors.brown[800]),
+                                  )
+                                : null,
+                          ),
+                          title: Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  isMe ? '${member.displayName} (You)' : member.displayName,
+                                  style: const TextStyle(color: Colors.white),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              if (member.isCreator)
+                                Container(
+                                  margin: const EdgeInsets.only(left: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: const Text(
+                                    'Owner',
+                                    style: TextStyle(color: Colors.white, fontSize: 10),
+                                  ),
+                                )
+                              else if (member.isAdmin)
+                                Container(
+                                  margin: const EdgeInsets.only(left: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: const Text(
+                                    'Admin',
+                                    style: TextStyle(color: Colors.white, fontSize: 10),
+                                  ),
+                                ),
+                            ],
+                          ),
+                          trailing: (!isMe && widget.chat.type != ChatType.direct)
+                              ? _buildMemberActions(member, isAdmin, isCreator)
+                              : null,
+                        );
+                      },
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
+      ),
+    );
+  }
+
+  Widget? _buildMemberActions(ChatMemberInfo member, bool isAdmin, bool isCreator) {
+    if (!isAdmin) return null;
+
+    return PopupMenuButton<String>(
+      icon: const Icon(Icons.more_vert, color: Colors.white70),
+      color: Colors.brown[800],
+      onSelected: (value) async {
+        Navigator.pop(context); // Close the bottom sheet first
+
+        switch (value) {
+          case 'promote':
+            await _promoteMember(member);
+            break;
+          case 'demote':
+            await _demoteMember(member);
+            break;
+          case 'remove':
+            await _removeMember(member);
+            break;
+        }
+      },
+      itemBuilder: (context) => [
+        if (!member.isAdmin)
+          const PopupMenuItem(
+            value: 'promote',
+            child: Row(
+              children: [
+                Icon(Icons.arrow_upward, color: Colors.green, size: 20),
+                SizedBox(width: 8),
+                Text('Make Admin', style: TextStyle(color: Colors.white)),
+              ],
+            ),
+          ),
+        if (member.isAdmin && !member.isCreator && isCreator)
+          const PopupMenuItem(
+            value: 'demote',
+            child: Row(
+              children: [
+                Icon(Icons.arrow_downward, color: Colors.orange, size: 20),
+                SizedBox(width: 8),
+                Text('Remove Admin', style: TextStyle(color: Colors.white)),
+              ],
+            ),
+          ),
+        if (!member.isCreator)
+          const PopupMenuItem(
+            value: 'remove',
+            child: Row(
+              children: [
+                Icon(Icons.person_remove, color: Colors.red, size: 20),
+                SizedBox(width: 8),
+                Text('Remove', style: TextStyle(color: Colors.red)),
+              ],
+            ),
+          ),
+      ],
+    );
+  }
+
+  Future<void> _promoteMember(ChatMemberInfo member) async {
+    final success = await _messagingService.promoteToAdmin(
+      widget.chat.chatId,
+      member.userId,
+    );
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success
+              ? '${member.displayName} is now an admin'
+              : 'Failed to promote member'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _demoteMember(ChatMemberInfo member) async {
+    final success = await _messagingService.demoteFromAdmin(
+      widget.chat.chatId,
+      member.userId,
+    );
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success
+              ? '${member.displayName} is no longer an admin'
+              : 'Failed to demote member'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _removeMember(ChatMemberInfo member) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.brown[800],
+        title: const Text('Remove Member', style: TextStyle(color: Colors.white)),
+        content: Text(
+          'Are you sure you want to remove ${member.displayName} from this chat?',
+          style: const TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Remove', style: TextStyle(color: Colors.red)),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    final success = await _messagingService.removeMemberFromChat(
+      widget.chat.chatId,
+      member.userId,
+    );
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success
+              ? '${member.displayName} has been removed'
+              : 'Failed to remove member'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  void _showAddMemberDialog() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.brown[900],
+      isScrollControlled: true,
+      builder: (context) => _AddMemberBottomSheet(
+        chatId: widget.chat.chatId,
+        existingMemberIds: widget.chat.participantIds,
+        messagingService: _messagingService,
       ),
     );
   }
@@ -680,13 +974,42 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _leaveChat() {
-    // TODO: Implement leave chat
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Leave chat feature coming soon!'),
-      ),
-    );
+  Future<void> _leaveChat() async {
+    final currentUserId = FirebaseAuth.instance.currentUser?.uid;
+
+    // Check if user is the only admin
+    if (widget.chat.isAdmin(currentUserId ?? '') &&
+        widget.chat.adminIds.length == 1 &&
+        widget.chat.participantIds.length > 1) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('You must promote another admin before leaving'),
+          backgroundColor: Colors.orange,
+        ),
+      );
+      return;
+    }
+
+    final success = await _messagingService.leaveChat(widget.chat.chatId);
+
+    if (mounted) {
+      if (success) {
+        Navigator.of(context).pop(); // Return to chats list
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('You left the chat'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Failed to leave chat'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 
   String _formatDateTime(DateTime dateTime) {
@@ -712,6 +1035,195 @@ class _ChatScreenState extends State<ChatScreen> {
       builder: (context) => MessageSearchWidget(
         chatId: widget.chat.chatId,
         onMessageSelected: _scrollToMessage,
+      ),
+    );
+  }
+}
+
+/// Bottom sheet for adding members to a group chat
+class _AddMemberBottomSheet extends StatefulWidget {
+  final String chatId;
+  final List<String> existingMemberIds;
+  final MessagingService messagingService;
+
+  const _AddMemberBottomSheet({
+    required this.chatId,
+    required this.existingMemberIds,
+    required this.messagingService,
+  });
+
+  @override
+  State<_AddMemberBottomSheet> createState() => _AddMemberBottomSheetState();
+}
+
+class _AddMemberBottomSheetState extends State<_AddMemberBottomSheet> {
+  final SocialService _socialService = SocialService();
+  List<dynamic> _friends = [];
+  bool _isLoading = true;
+  bool _isAdding = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadFriends();
+  }
+
+  Future<void> _loadFriends() async {
+    try {
+      final friends = await _socialService.getUserFriends();
+      // Filter out existing members
+      final availableFriends = friends
+          .where((f) => !widget.existingMemberIds.contains(f.userId))
+          .toList();
+
+      if (mounted) {
+        setState(() {
+          _friends = availableFriends;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _addMember(dynamic friend) async {
+    setState(() {
+      _isAdding = true;
+    });
+
+    final success = await widget.messagingService.addMemberToChat(
+      widget.chatId,
+      friend.userId,
+      friend.displayName,
+    );
+
+    if (mounted) {
+      setState(() {
+        _isAdding = false;
+      });
+
+      if (success) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${friend.displayName} added to chat'),
+            backgroundColor: Colors.green,
+          ),
+        );
+        Navigator.pop(context);
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to add ${friend.displayName}'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.7,
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Text(
+                'Add Members',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Spacer(),
+              IconButton(
+                icon: const Icon(Icons.close, color: Colors.white),
+                onPressed: () => Navigator.pop(context),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            'Select a friend to add to this chat',
+            style: TextStyle(color: Colors.white70, fontSize: 14),
+          ),
+          const Divider(color: Colors.white24),
+          const SizedBox(height: 8),
+          Expanded(
+            child: _isLoading
+                ? const Center(
+                    child: CircularProgressIndicator(color: Colors.orange),
+                  )
+                : _friends.isEmpty
+                    ? Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.person_off, size: 64, color: Colors.white.withOpacity(0.3)),
+                            const SizedBox(height: 16),
+                            const Text(
+                              'No friends to add',
+                              style: TextStyle(color: Colors.white70, fontSize: 16),
+                            ),
+                            const SizedBox(height: 8),
+                            const Text(
+                              'All your friends are already in this chat',
+                              style: TextStyle(color: Colors.white54, fontSize: 14),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      )
+                    : ListView.builder(
+                        itemCount: _friends.length,
+                        itemBuilder: (context, index) {
+                          final friend = _friends[index];
+                          return ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.orange[300],
+                              backgroundImage: friend.profileImageUrl != null
+                                  ? NetworkImage(friend.profileImageUrl!)
+                                  : null,
+                              child: friend.profileImageUrl == null
+                                  ? Text(
+                                      friend.displayName.isNotEmpty
+                                          ? friend.displayName[0].toUpperCase()
+                                          : '?',
+                                      style: TextStyle(color: Colors.brown[800]),
+                                    )
+                                  : null,
+                            ),
+                            title: Text(
+                              friend.displayName,
+                              style: const TextStyle(color: Colors.white),
+                            ),
+                            trailing: _isAdding
+                                ? const SizedBox(
+                                    width: 24,
+                                    height: 24,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      color: Colors.orange,
+                                    ),
+                                  )
+                                : IconButton(
+                                    icon: const Icon(Icons.add_circle, color: Colors.orange),
+                                    onPressed: () => _addMember(friend),
+                                  ),
+                          );
+                        },
+                      ),
+          ),
+        ],
       ),
     );
   }
