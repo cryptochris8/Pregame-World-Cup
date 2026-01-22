@@ -5,6 +5,7 @@ import '../../../../config/app_theme.dart';
 import '../../data/services/nearby_venues_service.dart';
 import '../bloc/nearby_venues_cubit.dart';
 import '../../../venue_portal/venue_portal.dart';
+import '../../../venues/screens/venue_detail_screen.dart';
 
 /// Widget to display nearby venues around a stadium
 class NearbyVenuesWidget extends StatelessWidget {
@@ -545,7 +546,7 @@ class _NearbyVenueCardState extends State<_NearbyVenueCard> {
         color: Colors.transparent,
         child: InkWell(
           borderRadius: BorderRadius.circular(12),
-          onTap: () => _openInMaps(),
+          onTap: () => _openVenueDetails(context),
           child: Padding(
             padding: const EdgeInsets.all(12),
             child: Row(
@@ -725,6 +726,18 @@ class _NearbyVenueCardState extends State<_NearbyVenueCard> {
     return count.toString();
   }
 
+  /// Navigate to the venue detail screen
+  void _openVenueDetails(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => VenueDetailScreen(
+          venue: venue.place,
+        ),
+      ),
+    );
+  }
+
+  /// Open venue in Google Maps (kept as fallback/alternative)
   Future<void> _openInMaps() async {
     final lat = venue.place.latitude;
     final lng = venue.place.longitude;
