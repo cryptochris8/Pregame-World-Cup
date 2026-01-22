@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/entities/chat.dart';
@@ -476,7 +477,13 @@ class MessageItemWidget extends StatelessWidget {
               title: const Text('Copy', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
-                // TODO: Copy message to clipboard
+                Clipboard.setData(ClipboardData(text: message.content));
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Message copied to clipboard'),
+                    duration: Duration(seconds: 2),
+                  ),
+                );
               },
             ),
           ],

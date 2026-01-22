@@ -998,6 +998,279 @@ class MessagingService {
     }
   }
 
+  // Chat Settings Management
+
+  /// Mute a chat for the current user
+  Future<bool> muteChat(String chatId, {Duration? duration}) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final muteUntil = duration != null
+          ? DateTime.now().add(duration).toIso8601String()
+          : 'forever';
+
+      await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .set({
+        'userId': currentUser.uid,
+        'chatId': chatId,
+        'isMuted': true,
+        'muteUntil': muteUntil,
+        'updatedAt': DateTime.now().toIso8601String(),
+      }, SetOptions(merge: true));
+
+      LoggingService.info('Muted chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error muting chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Unmute a chat for the current user
+  Future<bool> unmuteChat(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .set({
+        'userId': currentUser.uid,
+        'chatId': chatId,
+        'isMuted': false,
+        'muteUntil': null,
+        'updatedAt': DateTime.now().toIso8601String(),
+      }, SetOptions(merge: true));
+
+      LoggingService.info('Unmuted chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error unmuting chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Check if a chat is muted for the current user
+  Future<bool> isChatMuted(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final doc = await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .get();
+
+      if (!doc.exists) return false;
+
+      final data = doc.data()!;
+      final isMuted = data['isMuted'] as bool? ?? false;
+
+      if (!isMuted) return false;
+
+      // Check if mute has expired
+      final muteUntil = data['muteUntil'] as String?;
+      if (muteUntil != null && muteUntil != 'forever') {
+        final muteExpiry = DateTime.parse(muteUntil);
+        if (DateTime.now().isAfter(muteExpiry)) {
+          // Mute has expired, unmute automatically
+          await unmuteChat(chatId);
+          return false;
+        }
+      }
+
+      return true;
+    } catch (e) {
+      LoggingService.error('Error checking mute status: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Archive a chat for the current user
+  Future<bool> archiveChat(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .set({
+        'userId': currentUser.uid,
+        'chatId': chatId,
+        'isArchived': true,
+        'archivedAt': DateTime.now().toIso8601String(),
+        'updatedAt': DateTime.now().toIso8601String(),
+      }, SetOptions(merge: true));
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Archived chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error archiving chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Unarchive a chat for the current user
+  Future<bool> unarchiveChat(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .set({
+        'userId': currentUser.uid,
+        'chatId': chatId,
+        'isArchived': false,
+        'archivedAt': null,
+        'updatedAt': DateTime.now().toIso8601String(),
+      }, SetOptions(merge: true));
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Unarchived chat $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error unarchiving chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Check if a chat is archived for the current user
+  Future<bool> isChatArchived(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final doc = await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .get();
+
+      if (!doc.exists) return false;
+      return doc.data()?['isArchived'] as bool? ?? false;
+    } catch (e) {
+      LoggingService.error('Error checking archive status: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Get chat settings for the current user
+  Future<ChatSettings> getChatSettings(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) {
+      return const ChatSettings(isMuted: false, isArchived: false);
+    }
+
+    try {
+      final doc = await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .get();
+
+      if (!doc.exists) {
+        return const ChatSettings(isMuted: false, isArchived: false);
+      }
+
+      final data = doc.data()!;
+      return ChatSettings(
+        isMuted: data['isMuted'] as bool? ?? false,
+        isArchived: data['isArchived'] as bool? ?? false,
+        muteUntil: data['muteUntil'] as String?,
+      );
+    } catch (e) {
+      LoggingService.error('Error getting chat settings: $e', tag: 'MessagingService');
+      return const ChatSettings(isMuted: false, isArchived: false);
+    }
+  }
+
+  /// Delete a chat for the current user (hides it from their list)
+  Future<bool> deleteChat(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .set({
+        'userId': currentUser.uid,
+        'chatId': chatId,
+        'isDeleted': true,
+        'deletedAt': DateTime.now().toIso8601String(),
+        'updatedAt': DateTime.now().toIso8601String(),
+      }, SetOptions(merge: true));
+
+      // Clear cache
+      await CacheService.instance.remove(_chatsKey);
+
+      LoggingService.info('Deleted chat $chatId for user', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error deleting chat: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Clear chat history for the current user
+  Future<bool> clearChatHistory(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      // Store the timestamp from which to show messages (only show newer messages)
+      await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .set({
+        'userId': currentUser.uid,
+        'chatId': chatId,
+        'clearedAt': DateTime.now().toIso8601String(),
+        'updatedAt': DateTime.now().toIso8601String(),
+      }, SetOptions(merge: true));
+
+      // Clear message cache for this chat
+      await CacheService.instance.remove('$_messagesKeyPrefix$chatId');
+
+      LoggingService.info('Cleared chat history for $chatId', tag: 'MessagingService');
+      return true;
+    } catch (e) {
+      LoggingService.error('Error clearing chat history: $e', tag: 'MessagingService');
+      return false;
+    }
+  }
+
+  /// Get the timestamp from which to show messages (for cleared history)
+  Future<DateTime?> getChatClearedAt(String chatId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return null;
+
+    try {
+      final doc = await _firestore
+          .collection('user_chat_settings')
+          .doc('${currentUser.uid}_$chatId')
+          .get();
+
+      if (!doc.exists) return null;
+
+      final clearedAt = doc.data()?['clearedAt'] as String?;
+      return clearedAt != null ? DateTime.parse(clearedAt) : null;
+    } catch (e) {
+      LoggingService.error('Error getting cleared at: $e', tag: 'MessagingService');
+      return null;
+    }
+  }
+
   /// Check if a direct chat is blocked (either user blocked the other)
   /// Returns a BlockStatus with details about who blocked whom
   Future<BlockStatus> getChatBlockStatus(Chat chat) async {
@@ -1079,6 +1352,28 @@ class ChatMemberInfo {
     this.isAdmin = false,
     this.isCreator = false,
   });
+}
+
+/// Chat settings for a user
+class ChatSettings {
+  final bool isMuted;
+  final bool isArchived;
+  final String? muteUntil;
+
+  const ChatSettings({
+    required this.isMuted,
+    required this.isArchived,
+    this.muteUntil,
+  });
+
+  bool get isMutedForever => muteUntil == 'forever';
+
+  Duration? get muteDuration {
+    if (muteUntil == null || muteUntil == 'forever') return null;
+    final muteExpiry = DateTime.parse(muteUntil!);
+    final remaining = muteExpiry.difference(DateTime.now());
+    return remaining.isNegative ? null : remaining;
+  }
 }
 
 // Extension methods for JSON conversion

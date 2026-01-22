@@ -580,7 +580,12 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
     );
   }
 
-  void _showChatOptions(Chat chat) {
+  void _showChatOptions(Chat chat) async {
+    // Get current settings for this chat
+    final settings = await _messagingService.getChatSettings(chat.chatId);
+
+    if (!mounted) return;
+
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
@@ -593,44 +598,218 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            // Mute/Unmute
             ListTile(
-              leading: const Icon(Icons.notifications_off),
-              title: const Text('Mute notifications'),
+              leading: Icon(
+                settings.isMuted ? Icons.notifications_active : Icons.notifications_off,
+              ),
+              title: Text(settings.isMuted ? 'Unmute notifications' : 'Mute notifications'),
               onTap: () {
                 Navigator.pop(context);
-                // TODO: Implement mute functionality
+                _toggleMuteChat(chat, settings.isMuted);
               },
             ),
+            // Archive/Unarchive
             ListTile(
-              leading: const Icon(Icons.archive),
-              title: const Text('Archive chat'),
+              leading: Icon(
+                settings.isArchived ? Icons.unarchive : Icons.archive,
+              ),
+              title: Text(settings.isArchived ? 'Unarchive chat' : 'Archive chat'),
               onTap: () {
                 Navigator.pop(context);
-                // TODO: Implement archive functionality
+                _toggleArchiveChat(chat, settings.isArchived);
               },
             ),
-            if (chat.isGroupChat) ...[
+            // Leave group (only for group/team chats)
+            if (chat.isGroupChat || chat.isTeamChat)
               ListTile(
-                leading: const Icon(Icons.exit_to_app),
-                title: const Text('Leave group'),
+                leading: const Icon(Icons.exit_to_app, color: Colors.orange),
+                title: const Text('Leave group', style: TextStyle(color: Colors.orange)),
                 onTap: () {
                   Navigator.pop(context);
-                  // TODO: Implement leave group functionality
+                  _confirmLeaveChat(chat);
                 },
               ),
-            ],
+            // Delete chat
             ListTile(
               leading: const Icon(Icons.delete, color: Colors.red),
               title: const Text('Delete chat', style: TextStyle(color: Colors.red)),
               onTap: () {
                 Navigator.pop(context);
-                // TODO: Implement delete functionality
+                _confirmDeleteChat(chat);
               },
             ),
           ],
         ),
       ),
     );
+  }
+
+  Future<void> _toggleMuteChat(Chat chat, bool currentlyMuted) async {
+    bool success;
+    if (currentlyMuted) {
+      success = await _messagingService.unmuteChat(chat.chatId);
+    } else {
+      // Show mute duration options
+      final duration = await _showMuteDurationDialog();
+      if (duration == null) return; // User cancelled
+
+      success = await _messagingService.muteChat(chat.chatId, duration: duration);
+    }
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success
+              ? (currentlyMuted ? 'Chat unmuted' : 'Chat muted')
+              : 'Failed to update mute settings'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<Duration?> _showMuteDurationDialog() async {
+    return showDialog<Duration?>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Mute notifications'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              title: const Text('1 hour'),
+              onTap: () => Navigator.pop(context, const Duration(hours: 1)),
+            ),
+            ListTile(
+              title: const Text('8 hours'),
+              onTap: () => Navigator.pop(context, const Duration(hours: 8)),
+            ),
+            ListTile(
+              title: const Text('1 day'),
+              onTap: () => Navigator.pop(context, const Duration(days: 1)),
+            ),
+            ListTile(
+              title: const Text('1 week'),
+              onTap: () => Navigator.pop(context, const Duration(days: 7)),
+            ),
+            ListTile(
+              title: const Text('Forever'),
+              onTap: () => Navigator.pop(context, const Duration(days: 36500)), // ~100 years
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _toggleArchiveChat(Chat chat, bool currentlyArchived) async {
+    bool success;
+    if (currentlyArchived) {
+      success = await _messagingService.unarchiveChat(chat.chatId);
+    } else {
+      success = await _messagingService.archiveChat(chat.chatId);
+    }
+
+    if (success) {
+      // Refresh the chat list
+      await _refreshChats();
+    }
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success
+              ? (currentlyArchived ? 'Chat unarchived' : 'Chat archived')
+              : 'Failed to update archive settings'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _confirmLeaveChat(Chat chat) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Leave Chat'),
+        content: Text('Are you sure you want to leave "${chat.name ?? 'this group'}"?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: const Text('Leave'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    final success = await _messagingService.leaveChat(chat.chatId);
+
+    if (success) {
+      // Refresh the chat list
+      await _refreshChats();
+    }
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success ? 'Left the chat' : 'Failed to leave chat. You may need to promote another admin first.'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _confirmDeleteChat(Chat chat) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Delete Chat'),
+        content: const Text('This will remove this chat from your list. Other participants will still see it.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: const Text('Delete'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    final success = await _messagingService.deleteChat(chat.chatId);
+
+    if (success) {
+      // Refresh the chat list
+      await _refreshChats();
+    }
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success ? 'Chat deleted' : 'Failed to delete chat'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
   }
 
   void _showNewChatOptions() {

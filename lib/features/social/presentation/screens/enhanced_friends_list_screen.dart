@@ -9,6 +9,8 @@ import 'user_search_screen.dart';
 import 'user_profile_screen.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../messaging/domain/services/messaging_service.dart';
+import '../../../messaging/presentation/screens/chat_screen.dart';
 
 class EnhancedFriendsListScreen extends StatefulWidget {
   const EnhancedFriendsListScreen({super.key});
@@ -812,16 +814,47 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
     );
   }
 
-  void _startMessage(UserProfile friend) {
-    // TODO: Navigate to messages
-    print('Start message with: ${friend.displayName}');
-    
+  Future<void> _startMessage(UserProfile friend) async {
+    // Show loading indicator
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Messaging with ${friend.displayName} coming soon!'),
-        backgroundColor: Colors.blue,
+      const SnackBar(
+        content: Text('Opening chat...'),
+        duration: Duration(seconds: 1),
       ),
     );
+
+    try {
+      final messagingService = MessagingService();
+      final chat = await messagingService.createDirectChat(
+        friend.userId,
+        friend.displayName,
+      );
+
+      if (chat != null && mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ChatScreen(chat: chat),
+          ),
+        );
+      } else if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Unable to start chat. User may be blocked.'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to start chat: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 }
 

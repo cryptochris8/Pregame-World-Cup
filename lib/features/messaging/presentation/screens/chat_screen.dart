@@ -890,11 +890,69 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _toggleMute() {
-    // TODO: Implement mute functionality
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Mute notifications feature coming soon!'),
+  Future<void> _toggleMute() async {
+    final settings = await _messagingService.getChatSettings(widget.chat.chatId);
+
+    bool success;
+    if (settings.isMuted) {
+      success = await _messagingService.unmuteChat(widget.chat.chatId);
+    } else {
+      // Show mute duration options
+      final duration = await _showMuteDurationDialog();
+      if (duration == null) return;
+
+      success = await _messagingService.muteChat(widget.chat.chatId, duration: duration);
+    }
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success
+              ? (settings.isMuted ? 'Chat unmuted' : 'Chat muted')
+              : 'Failed to update mute settings'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<Duration?> _showMuteDurationDialog() async {
+    return showDialog<Duration?>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.brown[800],
+        title: const Text('Mute notifications', style: TextStyle(color: Colors.white)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              title: const Text('1 hour', style: TextStyle(color: Colors.white)),
+              onTap: () => Navigator.pop(context, const Duration(hours: 1)),
+            ),
+            ListTile(
+              title: const Text('8 hours', style: TextStyle(color: Colors.white)),
+              onTap: () => Navigator.pop(context, const Duration(hours: 8)),
+            ),
+            ListTile(
+              title: const Text('1 day', style: TextStyle(color: Colors.white)),
+              onTap: () => Navigator.pop(context, const Duration(days: 1)),
+            ),
+            ListTile(
+              title: const Text('1 week', style: TextStyle(color: Colors.white)),
+              onTap: () => Navigator.pop(context, const Duration(days: 7)),
+            ),
+            ListTile(
+              title: const Text('Forever', style: TextStyle(color: Colors.white)),
+              onTap: () => Navigator.pop(context, const Duration(days: 36500)),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+        ],
       ),
     );
   }
@@ -965,13 +1023,24 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _clearChatHistory() {
-    // TODO: Implement clear chat history
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Clear chat history feature coming soon!'),
-      ),
-    );
+  Future<void> _clearChatHistory() async {
+    final success = await _messagingService.clearChatHistory(widget.chat.chatId);
+
+    if (success) {
+      // Clear local messages and reload
+      setState(() {
+        _messages = [];
+      });
+    }
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(success ? 'Chat history cleared' : 'Failed to clear chat history'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
   }
 
   Future<void> _leaveChat() async {
