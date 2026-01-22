@@ -784,6 +784,99 @@ class SocialService {
     }
   }
 
+  /// Unblock a user
+  Future<bool> unblockUser(String userId, String blockedUserId) async {
+    try {
+      final blockConnectionId = '${userId}_blocks_$blockedUserId';
+      await _firestore.collection('social_connections').doc(blockConnectionId).delete();
+      await _connectionsBox.delete(blockConnectionId);
+      _connectionMemoryCache.clear();
+      LoggingService.info('User $userId unblocked $blockedUserId', tag: _logTag);
+      return true;
+    } catch (e) {
+      LoggingService.error('Error unblocking user: $e', tag: _logTag);
+      return false;
+    }
+  }
+
+  /// Check if a user is blocked by another user (either direction)
+  /// Returns true if either user has blocked the other
+  Future<bool> isUserBlocked(String userId1, String userId2) async {
+    try {
+      // Check if userId1 blocked userId2
+      final block1Id = '${userId1}_blocks_$userId2';
+      final block1Doc = await _firestore.collection('social_connections').doc(block1Id).get();
+      if (block1Doc.exists) {
+        final data = block1Doc.data();
+        if (data?['type'] == 'block') return true;
+      }
+
+      // Check if userId2 blocked userId1
+      final block2Id = '${userId2}_blocks_$userId1';
+      final block2Doc = await _firestore.collection('social_connections').doc(block2Id).get();
+      if (block2Doc.exists) {
+        final data = block2Doc.data();
+        if (data?['type'] == 'block') return true;
+      }
+
+      return false;
+    } catch (e) {
+      LoggingService.error('Error checking block status: $e', tag: _logTag);
+      return false; // Default to not blocked on error
+    }
+  }
+
+  /// Check if current user has blocked a specific user
+  Future<bool> hasBlockedUser(String blockedUserId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final blockId = '${currentUser.uid}_blocks_$blockedUserId';
+      final doc = await _firestore.collection('social_connections').doc(blockId).get();
+      return doc.exists && doc.data()?['type'] == 'block';
+    } catch (e) {
+      LoggingService.error('Error checking if user is blocked: $e', tag: _logTag);
+      return false;
+    }
+  }
+
+  /// Check if current user is blocked by a specific user
+  Future<bool> isBlockedByUser(String userId) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return false;
+
+    try {
+      final blockId = '${userId}_blocks_${currentUser.uid}';
+      final doc = await _firestore.collection('social_connections').doc(blockId).get();
+      return doc.exists && doc.data()?['type'] == 'block';
+    } catch (e) {
+      LoggingService.error('Error checking if blocked by user: $e', tag: _logTag);
+      return false;
+    }
+  }
+
+  /// Get list of users blocked by current user
+  Future<List<String>> getBlockedUserIds() async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) return [];
+
+    try {
+      final snapshot = await _firestore
+          .collection('social_connections')
+          .where('fromUserId', isEqualTo: currentUser.uid)
+          .where('type', isEqualTo: 'block')
+          .get();
+
+      return snapshot.docs
+          .map((doc) => doc.data()['toUserId'] as String)
+          .toList();
+    } catch (e) {
+      LoggingService.error('Error getting blocked users: $e', tag: _logTag);
+      return [];
+    }
+  }
+
   /// Helper to decrement social stats
   Future<void> _decrementSocialStat(String userId, String statName) async {
     try {

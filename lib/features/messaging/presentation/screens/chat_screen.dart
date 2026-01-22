@@ -4,6 +4,7 @@ import '../../domain/entities/chat.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/entities/typing_indicator.dart';
 import '../../domain/services/messaging_service.dart';
+import '../../../social/domain/services/social_service.dart';
 import '../widgets/message_item_widget.dart';
 import '../widgets/message_input_widget.dart';
 import '../widgets/typing_indicator_widget.dart';
@@ -28,6 +29,7 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _isLoading = true;
   List<Message> _messages = [];
   List<TypingIndicator> _typingUsers = [];
+  BlockStatus _blockStatus = const BlockStatus(isBlocked: false);
 
   @override
   void initState() {
@@ -35,6 +37,16 @@ class _ChatScreenState extends State<ChatScreen> {
     _loadMessages();
     _markMessagesAsRead();
     _listenToTypingIndicators();
+    _checkBlockStatus();
+  }
+
+  Future<void> _checkBlockStatus() async {
+    final status = await _messagingService.getChatBlockStatus(widget.chat);
+    if (mounted) {
+      setState(() {
+        _blockStatus = status;
+      });
+    }
   }
 
   @override
@@ -215,23 +227,144 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
           ),
           
-          // Typing indicator
-          TypingIndicatorWidget(typingUsers: _typingUsers),
-          
-          // Message input
-          MessageInputWidget(
-            chatId: widget.chat.chatId,
-            replyToMessageId: _replyToMessageId,
-            onMessageSent: _handleMessageSent,
-            onCancelReply: () {
-              setState(() {
-                _replyToMessageId = null;
-              });
-            },
+          // Typing indicator (only show if not blocked)
+          if (!_blockStatus.isBlocked)
+            TypingIndicatorWidget(typingUsers: _typingUsers),
+
+          // Message input or blocked banner
+          if (_blockStatus.isBlocked)
+            _buildBlockedBanner()
+          else
+            MessageInputWidget(
+              chatId: widget.chat.chatId,
+              replyToMessageId: _replyToMessageId,
+              onMessageSent: _handleMessageSent,
+              onCancelReply: () {
+                setState(() {
+                  _replyToMessageId = null;
+                });
+              },
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildBlockedBanner() {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.red[900]?.withOpacity(0.8),
+        border: Border(
+          top: BorderSide(color: Colors.red[700]!, width: 1),
+        ),
+      ),
+      child: SafeArea(
+        child: Row(
+          children: [
+            Icon(
+              _blockStatus.blockedByCurrentUser ? Icons.block : Icons.do_not_disturb,
+              color: Colors.white,
+              size: 24,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                _blockStatus.message ?? 'Unable to send messages',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            if (_blockStatus.blockedByCurrentUser)
+              TextButton(
+                onPressed: _showUnblockDialog,
+                child: const Text(
+                  'Unblock',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _showUnblockDialog() async {
+    final result = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.brown[800],
+        title: const Text(
+          'Unblock User',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: const Text(
+          'Are you sure you want to unblock this user? They will be able to message you again.',
+          style: TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text(
+              'Unblock',
+              style: TextStyle(color: Colors.orange),
+            ),
           ),
         ],
       ),
     );
+
+    if (result == true) {
+      await _unblockUser();
+    }
+  }
+
+  Future<void> _unblockUser() async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    // Get the other user's ID from the chat
+    final otherUserId = widget.chat.participantIds.firstWhere(
+      (id) => id != currentUser.uid,
+      orElse: () => '',
+    );
+
+    if (otherUserId.isEmpty) return;
+
+    try {
+      // Import SocialService to unblock
+      final socialService = SocialService();
+      final success = await socialService.unblockUser(currentUser.uid, otherUserId);
+
+      if (success && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('User unblocked'),
+            backgroundColor: Colors.green,
+          ),
+        );
+        // Refresh block status
+        await _checkBlockStatus();
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to unblock user: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 
   Widget _buildAppBarTitle() {

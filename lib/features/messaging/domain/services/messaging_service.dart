@@ -6,6 +6,7 @@ import '../entities/chat.dart';
 import '../entities/typing_indicator.dart';
 import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../social/domain/services/social_service.dart';
 
 class MessagingService {
   static final MessagingService _instance = MessagingService._internal();
@@ -120,6 +121,14 @@ class MessagingService {
     if (currentUser == null) return null;
 
     try {
+      // Check if either user has blocked the other
+      final socialService = SocialService();
+      final isBlocked = await socialService.isUserBlocked(currentUser.uid, otherUserId);
+      if (isBlocked) {
+        LoggingService.warning('Cannot create chat - user is blocked', tag: 'MessagingService');
+        return null;
+      }
+
       // Check if chat already exists
       final existingChat = await _findDirectChat(currentUser.uid, otherUserId);
       if (existingChat != null) return existingChat;
@@ -130,10 +139,10 @@ class MessagingService {
       );
 
       await _firestore.collection('chats').doc(chat.chatId).set(chat.toJson());
-      
+
       // Clear cache
       await CacheService.instance.remove(_chatsKey);
-      
+
       return chat;
     } catch (e) {
       LoggingService.error('Error creating direct chat: $e', tag: 'MessagingService');
@@ -262,6 +271,30 @@ class MessagingService {
     if (currentUser == null) return false;
 
     try {
+      // Check for blocks in direct chats
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (chatDoc.exists) {
+        final chatData = chatDoc.data()!;
+        final chatType = chatData['type'] as String?;
+
+        if (chatType == 'direct') {
+          final participants = List<String>.from(chatData['participantIds'] ?? []);
+          final otherUserId = participants.firstWhere(
+            (id) => id != currentUser.uid,
+            orElse: () => '',
+          );
+
+          if (otherUserId.isNotEmpty) {
+            final socialService = SocialService();
+            final isBlocked = await socialService.isUserBlocked(currentUser.uid, otherUserId);
+            if (isBlocked) {
+              LoggingService.warning('Cannot send message - user is blocked', tag: 'MessagingService');
+              return false;
+            }
+          }
+        }
+      }
+
       final message = Message(
         messageId: '${chatId}_${DateTime.now().millisecondsSinceEpoch}',
         chatId: chatId,
@@ -638,6 +671,71 @@ class MessagingService {
   Future<List<Message>> getMessages(String chatId) async {
     return await getChatMessages(chatId);
   }
+
+  /// Check if a direct chat is blocked (either user blocked the other)
+  /// Returns a BlockStatus with details about who blocked whom
+  Future<BlockStatus> getChatBlockStatus(Chat chat) async {
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) {
+      return BlockStatus(isBlocked: false);
+    }
+
+    // Only check blocks for direct chats
+    if (chat.type != ChatType.direct) {
+      return BlockStatus(isBlocked: false);
+    }
+
+    try {
+      final otherUserId = chat.participantIds.firstWhere(
+        (id) => id != currentUser.uid,
+        orElse: () => '',
+      );
+
+      if (otherUserId.isEmpty) {
+        return BlockStatus(isBlocked: false);
+      }
+
+      final socialService = SocialService();
+
+      // Check if current user blocked the other user
+      final hasBlocked = await socialService.hasBlockedUser(otherUserId);
+      if (hasBlocked) {
+        return BlockStatus(
+          isBlocked: true,
+          blockedByCurrentUser: true,
+          message: 'You blocked this user',
+        );
+      }
+
+      // Check if other user blocked current user
+      final isBlockedBy = await socialService.isBlockedByUser(otherUserId);
+      if (isBlockedBy) {
+        return BlockStatus(
+          isBlocked: true,
+          blockedByCurrentUser: false,
+          message: 'You cannot message this user',
+        );
+      }
+
+      return BlockStatus(isBlocked: false);
+    } catch (e) {
+      LoggingService.error('Error checking chat block status: $e', tag: 'MessagingService');
+      return BlockStatus(isBlocked: false);
+    }
+  }
+}
+
+/// Block status for a chat
+class BlockStatus {
+  final bool isBlocked;
+  final bool blockedByCurrentUser;
+  final String? message;
+
+  const BlockStatus({
+    required this.isBlocked,
+    this.blockedByCurrentUser = false,
+    this.message,
+  });
 }
 
 // Extension methods for JSON conversion
