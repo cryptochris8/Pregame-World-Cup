@@ -26,11 +26,24 @@ class WorldCupPaymentService {
     'chriscam8@gmail.com',
   ];
 
+  // Clearance list - users who get free Superfan Pass access
+  // (e.g., beta testers, influencers, friends & family)
+  static const List<String> _clearanceEmails = [
+    'coopercrawford013@gmail.com',
+  ];
+
   /// Check if current user is an admin/test account
   bool _isAdminUser() {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null || user.email == null) return false;
     return _adminEmails.contains(user.email!.toLowerCase());
+  }
+
+  /// Check if current user is on the clearance list
+  bool _isClearanceUser() {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null || user.email == null) return false;
+    return _clearanceEmails.contains(user.email!.toLowerCase());
   }
 
   /// Get full Superfan Pass status for admin users
@@ -76,6 +89,12 @@ class WorldCupPaymentService {
       // Check if user is an admin/test account
       if (_isAdminUser()) {
         return _getAdminFanPassStatus();
+      }
+
+      // Check if user is on the clearance list (free Superfan access)
+      if (_isClearanceUser()) {
+        LoggingService.info('User on clearance list - granting Superfan Pass', tag: _logTag);
+        return _getAdminFanPassStatus(); // Same features as admin
       }
 
       // Check RevenueCat entitlements first (native IAP purchases)
