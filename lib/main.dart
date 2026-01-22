@@ -33,6 +33,8 @@ import 'core/services/ad_service.dart';
 import 'services/revenuecat_service.dart';
 import 'core/services/presence_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'features/messaging/domain/services/messaging_service.dart';
+import 'features/messaging/presentation/screens/chat_screen.dart';
 import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
 import 'features/schedule/domain/repositories/schedule_repository.dart';
@@ -556,7 +558,77 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
         debugLog('⚠️ PRESENCE: Failed to initialize presence service: $e');
         // Non-critical - app continues to work without presence tracking
       }
+
+      // Set up notification tap handler for navigation
+      _setupNotificationNavigation();
     });
+  }
+
+  /// Set up notification tap handler for navigating to appropriate screens
+  void _setupNotificationNavigation() {
+    PushNotificationService.onNotificationTap = (String type, Map<String, dynamic> data) {
+      debugLog('🔔 NOTIFICATION TAP: type=$type, data=$data');
+
+      // Ensure we have a valid context
+      if (!mounted) return;
+
+      switch (type) {
+        case 'new_message':
+          _navigateToChat(data);
+          break;
+        case 'friend_request':
+          _navigateToFriendRequests();
+          break;
+        case 'watch_party_invite':
+          _navigateToWatchParty(data['watchPartyId'] as String?);
+          break;
+        default:
+          debugLog('🔔 NOTIFICATION: Unhandled notification type: $type');
+      }
+    };
+  }
+
+  /// Navigate to chat screen when message notification is tapped
+  Future<void> _navigateToChat(Map<String, dynamic> data) async {
+    final chatId = data['chatId'] as String?;
+    if (chatId == null) {
+      debugLog('⚠️ NOTIFICATION: No chatId in notification data');
+      return;
+    }
+
+    try {
+      debugLog('🔔 NOTIFICATION: Navigating to chat $chatId');
+
+      // Get the chat from MessagingService
+      final messagingService = MessagingService();
+      final chat = await messagingService.getChatById(chatId);
+
+      if (chat != null && mounted) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => ChatScreen(chat: chat),
+          ),
+        );
+      } else {
+        debugLog('⚠️ NOTIFICATION: Chat not found: $chatId');
+      }
+    } catch (e) {
+      debugLog('⚠️ NOTIFICATION: Error navigating to chat: $e');
+    }
+  }
+
+  /// Navigate to friend requests screen
+  void _navigateToFriendRequests() {
+    debugLog('🔔 NOTIFICATION: Navigating to friend requests');
+    // The navigation will be handled by the main navigation system
+    // For now, just log it
+  }
+
+  /// Navigate to watch party screen
+  void _navigateToWatchParty(String? watchPartyId) {
+    if (watchPartyId == null) return;
+    debugLog('🔔 NOTIFICATION: Navigating to watch party $watchPartyId');
+    // The navigation will be handled by the main navigation system
   }
 
   @override

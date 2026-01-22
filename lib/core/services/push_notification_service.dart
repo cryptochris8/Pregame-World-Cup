@@ -207,16 +207,34 @@ class PushNotificationService {
     }
   }
 
+  // Callback for navigation - set by the app
+  static Function(String type, Map<String, dynamic> data)? onNotificationTap;
+
   /// Navigate to appropriate screen based on notification data
   void _navigateFromNotification(Map<String, dynamic> data) {
     final type = data['type'] as String?;
 
+    // If a navigation callback is set, use it
+    if (onNotificationTap != null && type != null) {
+      onNotificationTap!(type, data);
+      return;
+    }
+
     switch (type) {
+      case 'new_message':
+        final chatId = data['chatId'] as String?;
+        final chatName = data['chatName'] as String?;
+        if (chatId != null) {
+          LoggingService.info(
+            'Should navigate to chat: $chatId ($chatName)',
+            tag: _logTag,
+          );
+          // Navigation will be handled by the callback
+        }
+        break;
       case 'watch_party_invite':
         final watchPartyId = data['watchPartyId'] as String?;
         if (watchPartyId != null) {
-          // Navigate to watch party detail
-          // You'll need to implement this navigation
           LoggingService.info(
             'Should navigate to watch party: $watchPartyId',
             tag: _logTag,
@@ -239,6 +257,15 @@ class PushNotificationService {
         if (matchId != null) {
           LoggingService.info(
             'Should navigate to match: $matchId',
+            tag: _logTag,
+          );
+        }
+        break;
+      case 'friend_request':
+        final fromUserId = data['fromUserId'] as String?;
+        if (fromUserId != null) {
+          LoggingService.info(
+            'Should navigate to friend requests from: $fromUserId',
             tag: _logTag,
           );
         }

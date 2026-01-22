@@ -278,19 +278,72 @@ class MessagingService {
 
       // Send message to Firestore
       await _firestore.collection('messages').doc(message.messageId).set(message.toJson());
-      
+
       // Update chat with last message
       await _updateChatLastMessage(chatId, message);
-      
+
+      // Trigger push notifications for other participants
+      await _triggerMessageNotifications(chatId, message);
+
       // Clear caches
       await CacheService.instance.remove('$_messagesKeyPrefix$chatId');
       await CacheService.instance.remove(_chatsKey);
-      
+
       return true;
     } catch (e) {
       LoggingService.error('Error sending message: $e', tag: 'MessagingService');
       return false;
     }
+  }
+
+  /// Trigger push notifications for message recipients
+  Future<void> _triggerMessageNotifications(String chatId, Message message) async {
+    try {
+      // Get chat to find participants
+      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      if (!chatDoc.exists) return;
+
+      final chat = _chatFromFirestore(chatDoc);
+
+      // Get recipients (all participants except sender)
+      final recipients = chat.participantIds
+          .where((id) => id != message.senderId)
+          .toList();
+
+      if (recipients.isEmpty) return;
+
+      // Create notification document for Cloud Function to process
+      // The Cloud Function will read FCM tokens and send notifications
+      await _firestore.collection('message_notifications').add({
+        'chatId': chatId,
+        'messageId': message.messageId,
+        'senderId': message.senderId,
+        'senderName': message.senderName,
+        'senderImageUrl': message.senderImageUrl,
+        'content': _truncateMessage(message.content, 100),
+        'messageType': message.type.name,
+        'recipientIds': recipients,
+        'chatName': chat.name ?? message.senderName,
+        'chatType': chat.type.name,
+        'chatImageUrl': chat.imageUrl,
+        'createdAt': FieldValue.serverTimestamp(),
+        'processed': false,
+      });
+
+      LoggingService.info(
+        'Created notification for ${recipients.length} recipients',
+        tag: 'MessagingService',
+      );
+    } catch (e) {
+      // Don't fail the message send if notification fails
+      LoggingService.error('Error triggering notifications: $e', tag: 'MessagingService');
+    }
+  }
+
+  /// Truncate message content for notification preview
+  String _truncateMessage(String content, int maxLength) {
+    if (content.length <= maxLength) return content;
+    return '${content.substring(0, maxLength - 3)}...';
   }
 
   Future<bool> sendSystemMessage({
