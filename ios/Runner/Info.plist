@@ -88,6 +88,10 @@
 	<key>MinimumOSVersion</key>
 	<string>14.0</string>
 
+	<!-- Deep Linking -->
+	<key>FlutterDeepLinkingEnabled</key>
+	<true/>
+
 	<!-- AdMob App ID -->
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-7575845069047315~9254261147</string>

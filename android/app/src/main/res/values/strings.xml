@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pregame World Cup</string>
+    <string name="widget_name">World Cup Widget</string>
+    <string name="widget_description">Stay updated with live scores and upcoming World Cup 2026 matches.</string>
+</resources>

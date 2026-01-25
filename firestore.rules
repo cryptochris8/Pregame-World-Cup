@@ -108,7 +108,59 @@ service cloud.firestore {
     match /user_preferences/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
-    
+
+    // ==================== MODERATION ====================
+
+    // Reports - users can create reports and read their own reports
+    match /reports/{reportId} {
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.reporterId;
+      allow read: if request.auth != null && request.auth.uid == resource.data.reporterId;
+      // Admins can read and update all reports (admin check via custom claims)
+      allow read, update: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // User sanctions - only admins can write, users can read their own
+    match /user_sanctions/{sanctionId} {
+      allow read: if request.auth != null && request.auth.uid == resource.data.usualId;
+      allow read, write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // User moderation status - users can read their own, admins can read/write all
+    match /user_moderation_status/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow read, write: if request.auth != null && request.auth.token.admin == true;
+      // Allow increment of report count by any authenticated user (for reporting)
+      allow update: if request.auth != null &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['reportCount']);
+    }
+
+    // Social connections - for block functionality
+    match /social_connections/{connectionId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // User chat settings - for mute/archive functionality
+    match /user_chat_settings/{settingId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Typing indicators - real-time typing status
+    match /typing_indicators/{indicatorId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Watch parties - public read, authenticated write
+    match /watch_parties/{partyId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.hostId;
+      allow update, delete: if request.auth != null && request.auth.uid == resource.data.hostId;
+    }
+
+    // Watch party invites
+    match /watch_party_invites/{inviteId} {
+      allow read, write: if request.auth != null;
+    }
+
     // Default allow for development - REMOVE IN PRODUCTION
     match /{document=**} {
       allow read, write: if request.auth != null;

@@ -30,6 +30,10 @@ import 'config/api_keys.dart';
 import 'core/services/logging_service.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/ad_service.dart';
+import 'core/services/analytics_service.dart';
+import 'core/services/deep_link_service.dart';
+import 'core/services/deep_link_navigator.dart';
+import 'core/services/accessibility_service.dart';
 import 'services/revenuecat_service.dart';
 import 'core/services/presence_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -210,6 +214,18 @@ Future<void> main() async {
   debugLog('🚀 INIT STEP 7.8: RevenueCat Initialization (Background)');
   _initializeRevenueCatBackground();
 
+  // Step 7.9: Analytics & Crashlytics Initialization (Background)
+  debugLog('🚀 INIT STEP 7.9: Analytics & Crashlytics (Background)');
+  _initializeAnalyticsBackground();
+
+  // Step 7.10: Deep Link Service Initialization (Background)
+  debugLog('🚀 INIT STEP 7.10: Deep Link Service (Background)');
+  _initializeDeepLinkServiceBackground();
+
+  // Step 7.11: Accessibility Service Initialization
+  debugLog('🚀 INIT STEP 7.11: Accessibility Service');
+  await _initializeAccessibilityService();
+
   // Step 8: Launch App
   debugLog('🚀 INIT STEP 8: Launching App');
   try {
@@ -338,6 +354,68 @@ void _initializeRevenueCatBackground() async {
   }
 }
 
+/// Initialize Analytics and Crashlytics in the background
+void _initializeAnalyticsBackground() async {
+  try {
+    debugLog('📊 ANALYTICS: Starting background initialization');
+
+    // Wait a bit for the app to fully load first
+    await Future.delayed(const Duration(seconds: 1));
+
+    // Initialize Analytics and Crashlytics
+    await AnalyticsService().initialize();
+
+    debugLog('✅ ANALYTICS: Background initialization completed');
+  } catch (e) {
+    debugLog('⚠️ ANALYTICS: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Analytics failed but app will continue');
+    }
+  }
+}
+
+/// Initialize Deep Link Service in the background
+void _initializeDeepLinkServiceBackground() async {
+  try {
+    debugLog('🔗 DEEP LINKS: Starting background initialization');
+
+    // Wait for app to stabilize
+    await Future.delayed(const Duration(seconds: 2));
+
+    // Initialize Deep Link Service
+    final deepLinkService = DeepLinkService();
+    await deepLinkService.initialize();
+
+    // Register the deep link handler
+    deepLinkService.addHandler((data) {
+      debugLog('🔗 DEEP LINKS: Received deep link: $data');
+      DeepLinkNavigator().handleDeepLink(data);
+    });
+
+    debugLog('✅ DEEP LINKS: Background initialization completed');
+  } catch (e) {
+    debugLog('⚠️ DEEP LINKS: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Deep links failed but app will continue');
+    }
+  }
+}
+
+/// Initialize Accessibility Service
+Future<void> _initializeAccessibilityService() async {
+  try {
+    debugLog('♿ ACCESSIBILITY: Starting initialization');
+    final accessibilityService = AccessibilityService();
+    await accessibilityService.initialize();
+    debugLog('✅ ACCESSIBILITY: Initialization completed');
+  } catch (e) {
+    debugLog('⚠️ ACCESSIBILITY: Initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('🔍 DIAGNOSTIC: Accessibility failed but app will continue');
+    }
+  }
+}
+
 /// PRODUCTION FIX: Clear all old 2024 cache data to ensure app always starts with 2025 data
 Future<void> _clearOld2024CacheData() async {
   try {
@@ -422,42 +500,77 @@ Future<T?> _safeInitialize<T>(
   }
 }
 
-class PregameApp extends StatelessWidget {
+class PregameApp extends StatefulWidget {
   const PregameApp({super.key});
 
   @override
+  State<PregameApp> createState() => _PregameAppState();
+}
+
+class _PregameAppState extends State<PregameApp> {
+  final AccessibilityService _accessibilityService = AccessibilityService();
+
+  @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => ScheduleBloc(
-        getCollegeFootballSchedule: di.sl<GetCollegeFootballSchedule>(),
-        getUpcomingGames: di.sl<GetUpcomingGames>(),
-        scheduleRepository: di.sl<ScheduleRepository>(),
-      ),
-      child: MaterialApp(
-        title: 'Pregame',
-        // Localization support
-        localizationsDelegates: const [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: AppLocalizations.supportedLocales,
-        // Use the beautiful gradient dark theme by default
-        theme: AppTheme.darkTheme,
-        darkTheme: AppTheme.darkTheme,
-        // Always use dark theme to show off the gradient design
-        themeMode: ThemeMode.dark,
-        home: const AuthenticationWrapper(),
-        debugShowCheckedModeBanner: false,
-        // Premium app styling
-        builder: (context, child) {
-          return MediaQuery(
-            // Ensure consistent text scaling
-            data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(1.0)),
-            child: child!,
-          );
-        },
+    return AccessibilityProvider(
+      service: _accessibilityService,
+      child: BlocProvider(
+        create: (context) => ScheduleBloc(
+          getCollegeFootballSchedule: di.sl<GetCollegeFootballSchedule>(),
+          getUpcomingGames: di.sl<GetUpcomingGames>(),
+          scheduleRepository: di.sl<ScheduleRepository>(),
+        ),
+        child: Builder(
+          builder: (context) {
+            final accessibilitySettings = AccessibilityProvider.settingsOf(context);
+
+            return MaterialApp(
+              title: 'Pregame',
+              // Localization support
+              localizationsDelegates: const [
+                AppLocalizations.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+              ],
+              supportedLocales: AppLocalizations.supportedLocales,
+              // Use the beautiful gradient dark theme by default
+              // Switch to high contrast theme if accessibility setting is enabled
+              theme: accessibilitySettings.highContrast
+                  ? AppTheme.highContrastTheme
+                  : AppTheme.darkTheme,
+              darkTheme: accessibilitySettings.highContrast
+                  ? AppTheme.highContrastTheme
+                  : AppTheme.darkTheme,
+              // Always use dark theme to show off the gradient design
+              themeMode: ThemeMode.dark,
+              home: const AuthenticationWrapper(),
+              debugShowCheckedModeBanner: false,
+              // Accessibility-aware styling
+              builder: (context, child) {
+                // Get the system MediaQuery
+                final mediaQuery = MediaQuery.of(context);
+
+                // Calculate text scale factor:
+                // 1. If user has set a custom scale in accessibility settings, use it
+                // 2. Otherwise, respect the system text scale (don't override)
+                final textScaleFactor = accessibilitySettings.textScaleFactor
+                    ?? mediaQuery.textScaler.scale(1.0);
+
+                // Clamp text scale to prevent extreme values
+                // but still allow reasonable accessibility scaling (up to 2x)
+                final clampedScale = textScaleFactor.clamp(0.8, 2.0);
+
+                return MediaQuery(
+                  data: mediaQuery.copyWith(
+                    textScaler: TextScaler.linear(clampedScale),
+                  ),
+                  child: child!,
+                );
+              },
+            );
+          },
+        ),
       ),
     );
   }

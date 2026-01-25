@@ -6,8 +6,7 @@
         android:enableOnBackInvokedCallback="true"
         android:allowBackup="true"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="false"
         android:largeHeap="true"
         android:hardwareAccelerated="true">
         <activity
@@ -55,6 +54,19 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7575845069047315~3650580672" />
+
+        <!-- World Cup Widget Provider -->
+        <receiver
+            android:name=".WorldCupWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/world_cup_widget_info" />
+        </receiver>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
@@ -93,8 +105,7 @@
     <!-- Android 13+ notification permissions -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     
-    <!-- Diagnostic permissions for troubleshooting installation issues -->
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Wake lock for background tasks -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     
     <!-- Optional: for background location (if needed) -->

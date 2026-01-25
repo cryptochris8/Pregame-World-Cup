@@ -10,6 +10,7 @@ build/
 *.jks
 *.keystore
 local.properties
+key.properties
 
 # IDE
 .vscode/

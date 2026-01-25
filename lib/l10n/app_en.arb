@@ -1,6 +1,11 @@
 {
   "@@locale": "en",
 
+  "appTitle": "Pregame World Cup",
+  "@appTitle": {
+    "description": "App title"
+  },
+
   "playerSpotlight": "Player Spotlight",
   "@playerSpotlight": {
     "description": "Title for Player Spotlight screen"
@@ -451,5 +456,623 @@
         "type": "String"
       }
     }
+  },
+
+  "watchParty": "Watch Party",
+  "@watchParty": {
+    "description": "Watch party feature title"
+  },
+  "watchParties": "Watch Parties",
+  "@watchParties": {
+    "description": "Watch parties list title"
+  },
+  "createWatchParty": "Create Watch Party",
+  "@createWatchParty": {
+    "description": "Create watch party button"
+  },
+  "joinWatchParty": "Join Watch Party",
+  "@joinWatchParty": {
+    "description": "Join watch party button"
+  },
+  "leaveWatchParty": "Leave Watch Party",
+  "@leaveWatchParty": {
+    "description": "Leave watch party button"
+  },
+  "hostingWatchParty": "Hosting Watch Party",
+  "@hostingWatchParty": {
+    "description": "Hosting watch party label"
+  },
+  "attendees": "Attendees",
+  "@attendees": {
+    "description": "Attendees label"
+  },
+  "attendeesCount": "{count} attendees",
+  "@attendeesCount": {
+    "description": "Number of attendees",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "spotsRemaining": "{count} spots remaining",
+  "@spotsRemaining": {
+    "description": "Spots remaining",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "watchPartyFull": "Watch Party Full",
+  "@watchPartyFull": {
+    "description": "Watch party full message"
+  },
+  "privateWatchParty": "Private Watch Party",
+  "@privateWatchParty": {
+    "description": "Private watch party label"
+  },
+  "publicWatchParty": "Public Watch Party",
+  "@publicWatchParty": {
+    "description": "Public watch party label"
+  },
+
+  "predictions": "Predictions",
+  "@predictions": {
+    "description": "Predictions feature title"
+  },
+  "makePrediction": "Make Prediction",
+  "@makePrediction": {
+    "description": "Make prediction button"
+  },
+  "yourPrediction": "Your Prediction",
+  "@yourPrediction": {
+    "description": "Your prediction label"
+  },
+  "predictionSaved": "Prediction saved!",
+  "@predictionSaved": {
+    "description": "Prediction saved confirmation"
+  },
+  "confidence": "Confidence",
+  "@confidence": {
+    "description": "Confidence label"
+  },
+  "winner": "Winner",
+  "@winner": {
+    "description": "Winner label"
+  },
+  "draw": "Draw",
+  "@draw": {
+    "description": "Draw label"
+  },
+
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings screen title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Select language title"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language option"
+  },
+  "spanish": "Spanish",
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "portuguese": "Portuguese",
+  "@portuguese": {
+    "description": "Portuguese language option"
+  },
+  "french": "French",
+  "@french": {
+    "description": "French language option"
+  },
+  "systemDefault": "System Default",
+  "@systemDefault": {
+    "description": "System default language option"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications setting"
+  },
+  "notificationPreferences": "Notification Preferences",
+  "@notificationPreferences": {
+    "description": "Notification preferences title"
+  },
+  "matchReminders": "Match Reminders",
+  "@matchReminders": {
+    "description": "Match reminders setting"
+  },
+  "goalAlerts": "Goal Alerts",
+  "@goalAlerts": {
+    "description": "Goal alerts setting"
+  },
+  "liveScoreUpdates": "Live Score Updates",
+  "@liveScoreUpdates": {
+    "description": "Live score updates setting"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Dark mode setting"
+  },
+  "accessibility": "Accessibility",
+  "@accessibility": {
+    "description": "Accessibility settings"
+  },
+  "highContrast": "High Contrast",
+  "@highContrast": {
+    "description": "High contrast mode"
+  },
+  "reduceMotion": "Reduce Motion",
+  "@reduceMotion": {
+    "description": "Reduce motion setting"
+  },
+  "boldText": "Bold Text",
+  "@boldText": {
+    "description": "Bold text setting"
+  },
+  "about": "About",
+  "@about": {
+    "description": "About section"
+  },
+  "version": "Version",
+  "@version": {
+    "description": "Version label"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy policy link"
+  },
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of service link"
+  },
+  "contactSupport": "Contact Support",
+  "@contactSupport": {
+    "description": "Contact support link"
+  },
+  "signOut": "Sign Out",
+  "@signOut": {
+    "description": "Sign out button"
+  },
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Delete account button"
+  },
+
+  "share": "Share",
+  "@share": {
+    "description": "Share button"
+  },
+  "shareToTwitter": "Share to Twitter/X",
+  "@shareToTwitter": {
+    "description": "Share to Twitter option"
+  },
+  "shareToFacebook": "Share to Facebook",
+  "@shareToFacebook": {
+    "description": "Share to Facebook option"
+  },
+  "shareToWhatsApp": "Share to WhatsApp",
+  "@shareToWhatsApp": {
+    "description": "Share to WhatsApp option"
+  },
+  "shareToInstagram": "Share to Instagram",
+  "@shareToInstagram": {
+    "description": "Share to Instagram option"
+  },
+  "copyLink": "Copy Link",
+  "@copyLink": {
+    "description": "Copy link option"
+  },
+  "linkCopied": "Link copied to clipboard",
+  "@linkCopied": {
+    "description": "Link copied confirmation"
+  },
+  "moreApps": "More Apps",
+  "@moreApps": {
+    "description": "More apps share option"
+  },
+  "shareAsImage": "Share as Image",
+  "@shareAsImage": {
+    "description": "Share as image option"
+  },
+
+  "addToCalendar": "Add to Calendar",
+  "@addToCalendar": {
+    "description": "Add to calendar button"
+  },
+  "googleCalendar": "Google Calendar",
+  "@googleCalendar": {
+    "description": "Google Calendar option"
+  },
+  "appleCalendar": "Apple Calendar",
+  "@appleCalendar": {
+    "description": "Apple Calendar option"
+  },
+  "downloadIcs": "Download .ics File",
+  "@downloadIcs": {
+    "description": "Download ICS file option"
+  },
+  "exportAllMatches": "Export All Matches",
+  "@exportAllMatches": {
+    "description": "Export all matches button"
+  },
+  "exportFavoriteMatches": "Export Favorite Matches",
+  "@exportFavoriteMatches": {
+    "description": "Export favorite matches button"
+  },
+
+  "chat": "Chat",
+  "@chat": {
+    "description": "Chat label"
+  },
+  "matchChat": "Match Chat",
+  "@matchChat": {
+    "description": "Match chat title"
+  },
+  "sendMessage": "Send message",
+  "@sendMessage": {
+    "description": "Send message hint"
+  },
+  "typeMessage": "Type a message...",
+  "@typeMessage": {
+    "description": "Type message placeholder"
+  },
+  "joinChat": "Join Chat",
+  "@joinChat": {
+    "description": "Join chat button"
+  },
+  "leaveChat": "Leave Chat",
+  "@leaveChat": {
+    "description": "Leave chat button"
+  },
+  "chatParticipants": "{count} participants",
+  "@chatParticipants": {
+    "description": "Chat participants count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "venue": "Venue",
+  "@venue": {
+    "description": "Venue label"
+  },
+  "venues": "Venues",
+  "@venues": {
+    "description": "Venues label"
+  },
+  "stadium": "Stadium",
+  "@stadium": {
+    "description": "Stadium label"
+  },
+  "capacity": "Capacity",
+  "@capacity": {
+    "description": "Capacity label"
+  },
+  "location": "Location",
+  "@location": {
+    "description": "Location label"
+  },
+  "getDirections": "Get Directions",
+  "@getDirections": {
+    "description": "Get directions button"
+  },
+  "nearbyVenues": "Nearby Venues",
+  "@nearbyVenues": {
+    "description": "Nearby venues title"
+  },
+  "findBars": "Find Bars",
+  "@findBars": {
+    "description": "Find bars button"
+  },
+  "findRestaurants": "Find Restaurants",
+  "@findRestaurants": {
+    "description": "Find restaurants button"
+  },
+
+  "kickoff": "Kickoff",
+  "@kickoff": {
+    "description": "Kickoff label"
+  },
+  "fullTime": "Full Time",
+  "@fullTime": {
+    "description": "Full time label"
+  },
+  "halfTime": "Half Time",
+  "@halfTime": {
+    "description": "Half time label"
+  },
+  "extraTime": "Extra Time",
+  "@extraTime": {
+    "description": "Extra time label"
+  },
+  "penalties": "Penalties",
+  "@penalties": {
+    "description": "Penalties label"
+  },
+  "postponed": "Postponed",
+  "@postponed": {
+    "description": "Postponed label"
+  },
+  "cancelled": "Cancelled",
+  "@cancelled": {
+    "description": "Cancelled label"
+  },
+  "upcoming": "Upcoming",
+  "@upcoming": {
+    "description": "Upcoming label"
+  },
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed label"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Today label"
+  },
+  "tomorrow": "Tomorrow",
+  "@tomorrow": {
+    "description": "Tomorrow label"
+  },
+  "yesterday": "Yesterday",
+  "@yesterday": {
+    "description": "Yesterday label"
+  },
+
+  "groupStage": "Group Stage",
+  "@groupStage": {
+    "description": "Group stage label"
+  },
+  "roundOf32": "Round of 32",
+  "@roundOf32": {
+    "description": "Round of 32 label"
+  },
+  "roundOf16": "Round of 16",
+  "@roundOf16": {
+    "description": "Round of 16 label"
+  },
+  "quarterFinals": "Quarter Finals",
+  "@quarterFinals": {
+    "description": "Quarter finals label"
+  },
+  "semiFinals": "Semi Finals",
+  "@semiFinals": {
+    "description": "Semi finals label"
+  },
+  "thirdPlace": "Third Place",
+  "@thirdPlace": {
+    "description": "Third place playoff label"
+  },
+  "final_": "Final",
+  "@final_": {
+    "description": "Final label"
+  },
+
+  "played": "Played",
+  "@played": {
+    "description": "Matches played abbreviation"
+  },
+  "won": "Won",
+  "@won": {
+    "description": "Matches won abbreviation"
+  },
+  "drawn": "Drawn",
+  "@drawn": {
+    "description": "Matches drawn abbreviation"
+  },
+  "lost": "Lost",
+  "@lost": {
+    "description": "Matches lost abbreviation"
+  },
+  "goalsFor": "Goals For",
+  "@goalsFor": {
+    "description": "Goals for label"
+  },
+  "goalsAgainst": "Goals Against",
+  "@goalsAgainst": {
+    "description": "Goals against label"
+  },
+  "goalDifference": "Goal Diff",
+  "@goalDifference": {
+    "description": "Goal difference abbreviation"
+  },
+  "points": "Points",
+  "@points": {
+    "description": "Points label"
+  },
+
+  "inviteFriends": "Invite Friends",
+  "@inviteFriends": {
+    "description": "Invite friends button"
+  },
+  "referralCode": "Referral Code",
+  "@referralCode": {
+    "description": "Referral code label"
+  },
+  "yourReferralCode": "Your Referral Code",
+  "@yourReferralCode": {
+    "description": "Your referral code label"
+  },
+
+  "premium": "Premium",
+  "@premium": {
+    "description": "Premium label"
+  },
+  "superfanPass": "Superfan Pass",
+  "@superfanPass": {
+    "description": "Superfan Pass product name"
+  },
+  "upgradeToPremium": "Upgrade to Premium",
+  "@upgradeToPremium": {
+    "description": "Upgrade to premium button"
+  },
+  "premiumFeatures": "Premium Features",
+  "@premiumFeatures": {
+    "description": "Premium features title"
+  },
+  "restorePurchases": "Restore Purchases",
+  "@restorePurchases": {
+    "description": "Restore purchases button"
+  },
+
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit button"
+  },
+  "done": "Done",
+  "@done": {
+    "description": "Done button"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back button"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Next button"
+  },
+  "continue_": "Continue",
+  "@continue_": {
+    "description": "Continue button"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button"
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "Submit button"
+  },
+  "seeAll": "See All",
+  "@seeAll": {
+    "description": "See all button"
+  },
+  "viewMore": "View More",
+  "@viewMore": {
+    "description": "View more button"
+  },
+  "showLess": "Show Less",
+  "@showLess": {
+    "description": "Show less button"
+  },
+
+  "widgetSettings": "Widget Settings",
+  "@widgetSettings": {
+    "description": "Widget settings screen title"
+  },
+  "widgetSettingsDescription": "Configure home screen widgets",
+  "@widgetSettingsDescription": {
+    "description": "Widget settings description"
+  },
+  "addWidgetToHomeScreen": "Add Widget to Home Screen",
+  "@addWidgetToHomeScreen": {
+    "description": "Add widget instruction title"
+  },
+  "widgetInstructions": "Long press on your home screen, tap the + button, search for 'Pregame World Cup', and select a widget size.",
+  "@widgetInstructions": {
+    "description": "Instructions for adding widget"
+  },
+  "displaySettings": "Display Settings",
+  "@displaySettings": {
+    "description": "Display settings section title"
+  },
+  "showLiveScores": "Show Live Scores",
+  "@showLiveScores": {
+    "description": "Show live scores toggle"
+  },
+  "showLiveScoresDescription": "Display live match scores on widget",
+  "@showLiveScoresDescription": {
+    "description": "Show live scores description"
+  },
+  "showUpcomingMatches": "Show Upcoming Matches",
+  "@showUpcomingMatches": {
+    "description": "Show upcoming matches toggle"
+  },
+  "showUpcomingMatchesDescription": "Display upcoming matches on widget",
+  "@showUpcomingMatchesDescription": {
+    "description": "Show upcoming matches description"
+  },
+  "compactMode": "Compact Mode",
+  "@compactMode": {
+    "description": "Compact mode toggle"
+  },
+  "compactModeDescription": "Use smaller text and spacing",
+  "@compactModeDescription": {
+    "description": "Compact mode description"
+  },
+  "numberOfMatches": "Number of Matches",
+  "@numberOfMatches": {
+    "description": "Number of matches section title"
+  },
+  "upcomingMatchesCount": "Show {count} upcoming matches",
+  "@upcomingMatchesCount": {
+    "description": "Upcoming matches count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matchCountDescription": "More matches require a larger widget size",
+  "@matchCountDescription": {
+    "description": "Match count description"
+  },
+  "favoriteTeam": "Favorite Team",
+  "@favoriteTeam": {
+    "description": "Favorite team section title"
+  },
+  "favoriteTeamDescription": "Prioritize matches for this team",
+  "@favoriteTeamDescription": {
+    "description": "Favorite team description"
+  },
+  "noTeamSelected": "No team selected",
+  "@noTeamSelected": {
+    "description": "No team selected message"
+  },
+  "selectFavoriteTeam": "Select Favorite Team",
+  "@selectFavoriteTeam": {
+    "description": "Select favorite team title"
+  },
+  "clearFavoriteTeam": "Clear Favorite Team",
+  "@clearFavoriteTeam": {
+    "description": "Clear favorite team button"
+  },
+  "widgetPreview": "Widget Preview",
+  "@widgetPreview": {
+    "description": "Widget preview section title"
+  },
+  "refreshWidget": "Refresh Widget",
+  "@refreshWidget": {
+    "description": "Refresh widget button"
   }
 }

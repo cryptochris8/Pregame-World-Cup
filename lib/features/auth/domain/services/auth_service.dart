@@ -3,11 +3,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../../core/services/analytics_service.dart';
 
 class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final SocialService _socialService = SocialService();
+  final AnalyticsService _analyticsService = AnalyticsService();
 
   // Stream to listen to authentication state changes
   Stream<User?> get authStateChanges => _firebaseAuth.authStateChanges();
@@ -29,12 +31,18 @@ class AuthService {
       // Create user profile after successful signup
       if (userCredential.user != null) {
         await _createUserProfile(userCredential.user!);
+        // Track signup in analytics
+        await _analyticsService.logSignUp(method: 'email');
       }
-      
+
       return userCredential;
     } on FirebaseAuthException catch (e) {
       // Consider mapping e.code to user-friendly messages
       LoggingService.error('FirebaseAuthException on sign up: ${e.message}', tag: 'AuthService');
+      await _analyticsService.logError(
+        errorType: 'auth_error',
+        message: 'Sign up failed: ${e.message}',
+      );
       throw Exception(e.message); // Rethrow or handle more gracefully
     } catch (e) {
       LoggingService.error('Unexpected error on sign up: $e', tag: 'AuthService');
@@ -48,12 +56,19 @@ class AuthService {
     required String password,
   }) async {
     try {
-      return await _firebaseAuth.signInWithEmailAndPassword(
+      final result = await _firebaseAuth.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
+      // Track login in analytics
+      await _analyticsService.logLogin(method: 'email');
+      return result;
     } on FirebaseAuthException catch (e) {
       LoggingService.error('FirebaseAuthException on sign in: ${e.message}', tag: 'AuthService');
+      await _analyticsService.logError(
+        errorType: 'auth_error',
+        message: 'Sign in failed: ${e.message}',
+      );
       throw Exception(e.message);
     } catch (e) {
       LoggingService.error('Unexpected error on sign in: $e', tag: 'AuthService');
@@ -64,6 +79,8 @@ class AuthService {
   // Sign out
   Future<void> signOut() async {
     try {
+      // Track logout in analytics
+      await _analyticsService.logLogout();
       await _firebaseAuth.signOut();
     } catch (e) {
       LoggingService.error('Error signing out: $e', tag: 'AuthService');

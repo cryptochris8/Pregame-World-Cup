@@ -306,12 +306,12 @@ class AppTheme {
   // ====================
   // LIGHT THEME (Fallback)
   // ====================
-  
+
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      
+
       colorScheme: const ColorScheme.light(
         primary: primaryPurple,
         onPrimary: textWhite,
@@ -323,11 +323,235 @@ class AppTheme {
         background: Color(0xFFF8FAFC),
         onBackground: backgroundDark,
       ),
-      
+
       scaffoldBackgroundColor: const Color(0xFFF8FAFC),
     );
   }
-  
+
+  // ====================
+  // HIGH CONTRAST THEME (Accessibility)
+  // ====================
+
+  // High contrast colors for accessibility
+  static const Color highContrastBackground = Color(0xFF000000);
+  static const Color highContrastSurface = Color(0xFF121212);
+  static const Color highContrastText = Color(0xFFFFFFFF);
+  static const Color highContrastPrimary = Color(0xFFFFD600); // Bright yellow
+  static const Color highContrastSecondary = Color(0xFF00E5FF); // Bright cyan
+  static const Color highContrastError = Color(0xFFFF5252); // Bright red
+  static const Color highContrastSuccess = Color(0xFF69F0AE); // Bright green
+
+  static ThemeData get highContrastTheme {
+    return ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+
+      // High Contrast Color Scheme
+      colorScheme: const ColorScheme.dark(
+        primary: highContrastPrimary,
+        onPrimary: highContrastBackground,
+        secondary: highContrastSecondary,
+        onSecondary: highContrastBackground,
+        tertiary: highContrastSuccess,
+        onTertiary: highContrastBackground,
+        surface: highContrastSurface,
+        onSurface: highContrastText,
+        surfaceContainerHighest: Color(0xFF1E1E1E),
+        onSurfaceVariant: highContrastText,
+        outline: highContrastText,
+        error: highContrastError,
+        onError: highContrastBackground,
+        inverseSurface: highContrastText,
+        onInverseSurface: highContrastBackground,
+        background: highContrastBackground,
+        onBackground: highContrastText,
+      ),
+
+      // High contrast App Bar
+      appBarTheme: const AppBarTheme(
+        backgroundColor: highContrastBackground,
+        foregroundColor: highContrastText,
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        centerTitle: true,
+        titleTextStyle: TextStyle(
+          color: highContrastText,
+          fontSize: 20,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.5,
+        ),
+        iconTheme: IconThemeData(color: highContrastText),
+      ),
+
+      // Scaffold Background
+      scaffoldBackgroundColor: highContrastBackground,
+
+      // Bottom Navigation Theme with high contrast
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: highContrastSurface,
+        selectedItemColor: highContrastPrimary,
+        unselectedItemColor: Color(0xFFAAAAAA),
+        elevation: 0,
+        type: BottomNavigationBarType.fixed,
+        selectedLabelStyle: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w700,
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+
+      // Card Theme with high contrast borders
+      cardTheme: CardThemeData(
+        color: highContrastSurface,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+          side: const BorderSide(color: highContrastText, width: 2),
+        ),
+        clipBehavior: Clip.antiAlias,
+      ),
+
+      // Elevated Button Theme with high contrast
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: highContrastPrimary,
+          foregroundColor: highContrastBackground,
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+            side: const BorderSide(color: highContrastText, width: 2),
+          ),
+          textStyle: const TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 0.5,
+          ),
+        ),
+      ),
+
+      // Tab Bar Theme with high contrast
+      tabBarTheme: const TabBarThemeData(
+        labelColor: highContrastPrimary,
+        unselectedLabelColor: Color(0xFFAAAAAA),
+        indicatorColor: highContrastPrimary,
+        indicatorSize: TabBarIndicatorSize.tab,
+        labelStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+
+      // Input Decoration Theme with high contrast borders
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: highContrastSurface,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: const BorderSide(color: highContrastText, width: 2),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: const BorderSide(color: highContrastText, width: 2),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: const BorderSide(color: highContrastPrimary, width: 3),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: const BorderSide(color: highContrastError, width: 3),
+        ),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        labelStyle: const TextStyle(
+          color: highContrastText,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
+        hintStyle: const TextStyle(
+          color: Color(0xFFAAAAAA),
+          fontSize: 16,
+        ),
+      ),
+
+      // High Contrast Text Theme
+      textTheme: const TextTheme(
+        headlineLarge: TextStyle(
+          color: highContrastText,
+          fontSize: 32,
+          fontWeight: FontWeight.w800,
+          letterSpacing: -1.0,
+        ),
+        headlineMedium: TextStyle(
+          color: highContrastText,
+          fontSize: 28,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.8,
+        ),
+        headlineSmall: TextStyle(
+          color: highContrastText,
+          fontSize: 24,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.5,
+        ),
+        titleLarge: TextStyle(
+          color: highContrastText,
+          fontSize: 22,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.3,
+        ),
+        titleMedium: TextStyle(
+          color: highContrastText,
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.0,
+        ),
+        titleSmall: TextStyle(
+          color: highContrastText,
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.1,
+        ),
+        bodyLarge: TextStyle(
+          color: highContrastText,
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 0.2,
+        ),
+        bodyMedium: TextStyle(
+          color: highContrastText,
+          fontSize: 14,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 0.2,
+        ),
+        bodySmall: TextStyle(
+          color: Color(0xFFCCCCCC),
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 0.3,
+        ),
+      ),
+
+      // Divider theme with visible contrast
+      dividerTheme: const DividerThemeData(
+        color: highContrastText,
+        thickness: 1,
+      ),
+
+      // Icon theme
+      iconTheme: const IconThemeData(
+        color: highContrastText,
+      ),
+    );
+  }
+
   // ====================
   // HELPER METHODS
   // ====================

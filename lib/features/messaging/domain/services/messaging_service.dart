@@ -7,6 +7,7 @@ import '../entities/typing_indicator.dart';
 import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../moderation/moderation.dart';
 
 class MessagingService {
   static final MessagingService _instance = MessagingService._internal();
@@ -271,6 +272,21 @@ class MessagingService {
     if (currentUser == null) return false;
 
     try {
+      // Check moderation status and filter content
+      final moderationService = ModerationService();
+      final validationResult = await moderationService.validateMessage(content);
+
+      if (!validationResult.isValid) {
+        LoggingService.warning(
+          'Message blocked by moderation: ${validationResult.errorMessage}',
+          tag: 'MessagingService',
+        );
+        return false;
+      }
+
+      // Use filtered content if profanity was detected
+      final filteredContent = validationResult.filteredMessage ?? content;
+
       // Check for blocks in direct chats
       final chatDoc = await _firestore.collection('chats').doc(chatId).get();
       if (chatDoc.exists) {
@@ -301,7 +317,7 @@ class MessagingService {
         senderId: currentUser.uid,
         senderName: currentUser.displayName ?? 'Anonymous',
         senderImageUrl: currentUser.photoURL,
-        content: content,
+        content: filteredContent,
         type: type,
         createdAt: DateTime.now(),
         status: MessageStatus.sent,

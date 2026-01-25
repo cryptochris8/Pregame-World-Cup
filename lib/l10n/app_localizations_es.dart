@@ -9,6 +9,9 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
+  String get appTitle => 'Pregame Copa del Mundo';
+
+  @override
   String get playerSpotlight => 'Destacados de Jugadores';
 
   @override
@@ -332,4 +335,455 @@ class AppLocalizationsEs extends AppLocalizations {
   String errorFilteringManagers(String error) {
     return 'Error al filtrar entrenadores: $error';
   }
+
+  @override
+  String get watchParty => 'Fiesta de Visualización';
+
+  @override
+  String get watchParties => 'Fiestas de Visualización';
+
+  @override
+  String get createWatchParty => 'Crear Fiesta';
+
+  @override
+  String get joinWatchParty => 'Unirse a la Fiesta';
+
+  @override
+  String get leaveWatchParty => 'Salir de la Fiesta';
+
+  @override
+  String get hostingWatchParty => 'Organizando Fiesta';
+
+  @override
+  String get attendees => 'Asistentes';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count asistentes';
+  }
+
+  @override
+  String spotsRemaining(int count) {
+    return '$count lugares disponibles';
+  }
+
+  @override
+  String get watchPartyFull => 'Fiesta Llena';
+
+  @override
+  String get privateWatchParty => 'Fiesta Privada';
+
+  @override
+  String get publicWatchParty => 'Fiesta Pública';
+
+  @override
+  String get predictions => 'Predicciones';
+
+  @override
+  String get makePrediction => 'Hacer Predicción';
+
+  @override
+  String get yourPrediction => 'Tu Predicción';
+
+  @override
+  String get predictionSaved => '¡Predicción guardada!';
+
+  @override
+  String get confidence => 'Confianza';
+
+  @override
+  String get winner => 'Ganador';
+
+  @override
+  String get draw => 'Empate';
+
+  @override
+  String get settings => 'Configuración';
+
+  @override
+  String get language => 'Idioma';
+
+  @override
+  String get selectLanguage => 'Seleccionar Idioma';
+
+  @override
+  String get english => 'Inglés';
+
+  @override
+  String get spanish => 'Español';
+
+  @override
+  String get portuguese => 'Portugués';
+
+  @override
+  String get french => 'Francés';
+
+  @override
+  String get systemDefault => 'Predeterminado del Sistema';
+
+  @override
+  String get notifications => 'Notificaciones';
+
+  @override
+  String get notificationPreferences => 'Preferencias de Notificación';
+
+  @override
+  String get matchReminders => 'Recordatorios de Partidos';
+
+  @override
+  String get goalAlerts => 'Alertas de Goles';
+
+  @override
+  String get liveScoreUpdates => 'Actualizaciones en Vivo';
+
+  @override
+  String get darkMode => 'Modo Oscuro';
+
+  @override
+  String get accessibility => 'Accesibilidad';
+
+  @override
+  String get highContrast => 'Alto Contraste';
+
+  @override
+  String get reduceMotion => 'Reducir Movimiento';
+
+  @override
+  String get boldText => 'Texto en Negrita';
+
+  @override
+  String get about => 'Acerca de';
+
+  @override
+  String get version => 'Versión';
+
+  @override
+  String get privacyPolicy => 'Política de Privacidad';
+
+  @override
+  String get termsOfService => 'Términos de Servicio';
+
+  @override
+  String get contactSupport => 'Contactar Soporte';
+
+  @override
+  String get signOut => 'Cerrar Sesión';
+
+  @override
+  String get deleteAccount => 'Eliminar Cuenta';
+
+  @override
+  String get share => 'Compartir';
+
+  @override
+  String get shareToTwitter => 'Compartir en Twitter/X';
+
+  @override
+  String get shareToFacebook => 'Compartir en Facebook';
+
+  @override
+  String get shareToWhatsApp => 'Compartir en WhatsApp';
+
+  @override
+  String get shareToInstagram => 'Compartir en Instagram';
+
+  @override
+  String get copyLink => 'Copiar Enlace';
+
+  @override
+  String get linkCopied => 'Enlace copiado al portapapeles';
+
+  @override
+  String get moreApps => 'Más Aplicaciones';
+
+  @override
+  String get shareAsImage => 'Compartir como Imagen';
+
+  @override
+  String get addToCalendar => 'Agregar al Calendario';
+
+  @override
+  String get googleCalendar => 'Google Calendar';
+
+  @override
+  String get appleCalendar => 'Calendario de Apple';
+
+  @override
+  String get downloadIcs => 'Descargar archivo .ics';
+
+  @override
+  String get exportAllMatches => 'Exportar Todos los Partidos';
+
+  @override
+  String get exportFavoriteMatches => 'Exportar Partidos Favoritos';
+
+  @override
+  String get chat => 'Chat';
+
+  @override
+  String get matchChat => 'Chat del Partido';
+
+  @override
+  String get sendMessage => 'Enviar mensaje';
+
+  @override
+  String get typeMessage => 'Escribe un mensaje...';
+
+  @override
+  String get joinChat => 'Unirse al Chat';
+
+  @override
+  String get leaveChat => 'Salir del Chat';
+
+  @override
+  String chatParticipants(int count) {
+    return '$count participantes';
+  }
+
+  @override
+  String get venue => 'Sede';
+
+  @override
+  String get venues => 'Sedes';
+
+  @override
+  String get stadium => 'Estadio';
+
+  @override
+  String get capacity => 'Capacidad';
+
+  @override
+  String get location => 'Ubicación';
+
+  @override
+  String get getDirections => 'Obtener Direcciones';
+
+  @override
+  String get nearbyVenues => 'Lugares Cercanos';
+
+  @override
+  String get findBars => 'Encontrar Bares';
+
+  @override
+  String get findRestaurants => 'Encontrar Restaurantes';
+
+  @override
+  String get kickoff => 'Inicio';
+
+  @override
+  String get fullTime => 'Tiempo Completo';
+
+  @override
+  String get halfTime => 'Medio Tiempo';
+
+  @override
+  String get extraTime => 'Tiempo Extra';
+
+  @override
+  String get penalties => 'Penales';
+
+  @override
+  String get postponed => 'Pospuesto';
+
+  @override
+  String get cancelled => 'Cancelado';
+
+  @override
+  String get upcoming => 'Próximo';
+
+  @override
+  String get completed => 'Completado';
+
+  @override
+  String get today => 'Hoy';
+
+  @override
+  String get tomorrow => 'Mañana';
+
+  @override
+  String get yesterday => 'Ayer';
+
+  @override
+  String get groupStage => 'Fase de Grupos';
+
+  @override
+  String get roundOf32 => 'Dieciseisavos de Final';
+
+  @override
+  String get roundOf16 => 'Octavos de Final';
+
+  @override
+  String get quarterFinals => 'Cuartos de Final';
+
+  @override
+  String get semiFinals => 'Semifinales';
+
+  @override
+  String get thirdPlace => 'Tercer Lugar';
+
+  @override
+  String get final_ => 'Final';
+
+  @override
+  String get played => 'Jugados';
+
+  @override
+  String get won => 'Ganados';
+
+  @override
+  String get drawn => 'Empates';
+
+  @override
+  String get lost => 'Perdidos';
+
+  @override
+  String get goalsFor => 'Goles a Favor';
+
+  @override
+  String get goalsAgainst => 'Goles en Contra';
+
+  @override
+  String get goalDifference => 'Dif. Goles';
+
+  @override
+  String get points => 'Puntos';
+
+  @override
+  String get inviteFriends => 'Invitar Amigos';
+
+  @override
+  String get referralCode => 'Código de Referido';
+
+  @override
+  String get yourReferralCode => 'Tu Código de Referido';
+
+  @override
+  String get premium => 'Premium';
+
+  @override
+  String get superfanPass => 'Pase Superfan';
+
+  @override
+  String get upgradeToPremium => 'Actualizar a Premium';
+
+  @override
+  String get premiumFeatures => 'Funciones Premium';
+
+  @override
+  String get restorePurchases => 'Restaurar Compras';
+
+  @override
+  String get ok => 'Aceptar';
+
+  @override
+  String get cancel => 'Cancelar';
+
+  @override
+  String get save => 'Guardar';
+
+  @override
+  String get delete => 'Eliminar';
+
+  @override
+  String get edit => 'Editar';
+
+  @override
+  String get done => 'Hecho';
+
+  @override
+  String get close => 'Cerrar';
+
+  @override
+  String get back => 'Volver';
+
+  @override
+  String get next => 'Siguiente';
+
+  @override
+  String get continue_ => 'Continuar';
+
+  @override
+  String get confirm => 'Confirmar';
+
+  @override
+  String get submit => 'Enviar';
+
+  @override
+  String get seeAll => 'Ver Todo';
+
+  @override
+  String get viewMore => 'Ver Más';
+
+  @override
+  String get showLess => 'Ver Menos';
+
+  @override
+  String get widgetSettings => 'Configuración del Widget';
+
+  @override
+  String get widgetSettingsDescription =>
+      'Configura los widgets de la pantalla de inicio';
+
+  @override
+  String get addWidgetToHomeScreen => 'Agregar Widget a la Pantalla de Inicio';
+
+  @override
+  String get widgetInstructions =>
+      'Mantén presionada la pantalla de inicio, toca el botón +, busca \'Pregame World Cup\' y selecciona un tamaño de widget.';
+
+  @override
+  String get displaySettings => 'Configuración de Pantalla';
+
+  @override
+  String get showLiveScores => 'Mostrar Marcadores en Vivo';
+
+  @override
+  String get showLiveScoresDescription =>
+      'Mostrar marcadores de partidos en vivo en el widget';
+
+  @override
+  String get showUpcomingMatches => 'Mostrar Próximos Partidos';
+
+  @override
+  String get showUpcomingMatchesDescription =>
+      'Mostrar próximos partidos en el widget';
+
+  @override
+  String get compactMode => 'Modo Compacto';
+
+  @override
+  String get compactModeDescription => 'Usar texto y espaciado más pequeños';
+
+  @override
+  String get numberOfMatches => 'Número de Partidos';
+
+  @override
+  String upcomingMatchesCount(int count) {
+    return 'Mostrar $count próximos partidos';
+  }
+
+  @override
+  String get matchCountDescription =>
+      'Más partidos requieren un widget de mayor tamaño';
+
+  @override
+  String get favoriteTeam => 'Equipo Favorito';
+
+  @override
+  String get favoriteTeamDescription => 'Priorizar partidos de este equipo';
+
+  @override
+  String get noTeamSelected => 'Ningún equipo seleccionado';
+
+  @override
+  String get selectFavoriteTeam => 'Seleccionar Equipo Favorito';
+
+  @override
+  String get clearFavoriteTeam => 'Borrar Equipo Favorito';
+
+  @override
+  String get widgetPreview => 'Vista Previa del Widget';
+
+  @override
+  String get refreshWidget => 'Actualizar Widget';
 }

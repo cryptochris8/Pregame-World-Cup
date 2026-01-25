@@ -7,6 +7,8 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_pt.dart';
 
 // ignore_for_file: type=lint
 
@@ -67,8 +69,8 @@ abstract class AppLocalizations {
 
   final String localeName;
 
-  static AppLocalizations? of(BuildContext context) {
-    return Localizations.of<AppLocalizations>(context, AppLocalizations);
+  static AppLocalizations of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
   static const LocalizationsDelegate<AppLocalizations> delegate =
@@ -95,8 +97,16 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('es')
+    Locale('es'),
+    Locale('fr'),
+    Locale('pt')
   ];
+
+  /// App title
+  ///
+  /// In en, this message translates to:
+  /// **'Pregame World Cup'**
+  String get appTitle;
 
   /// Title for Player Spotlight screen
   ///
@@ -709,6 +719,882 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Error filtering managers: {error}'**
   String errorFilteringManagers(String error);
+
+  /// Watch party feature title
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Party'**
+  String get watchParty;
+
+  /// Watch parties list title
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Parties'**
+  String get watchParties;
+
+  /// Create watch party button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Watch Party'**
+  String get createWatchParty;
+
+  /// Join watch party button
+  ///
+  /// In en, this message translates to:
+  /// **'Join Watch Party'**
+  String get joinWatchParty;
+
+  /// Leave watch party button
+  ///
+  /// In en, this message translates to:
+  /// **'Leave Watch Party'**
+  String get leaveWatchParty;
+
+  /// Hosting watch party label
+  ///
+  /// In en, this message translates to:
+  /// **'Hosting Watch Party'**
+  String get hostingWatchParty;
+
+  /// Attendees label
+  ///
+  /// In en, this message translates to:
+  /// **'Attendees'**
+  String get attendees;
+
+  /// Number of attendees
+  ///
+  /// In en, this message translates to:
+  /// **'{count} attendees'**
+  String attendeesCount(int count);
+
+  /// Spots remaining
+  ///
+  /// In en, this message translates to:
+  /// **'{count} spots remaining'**
+  String spotsRemaining(int count);
+
+  /// Watch party full message
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Party Full'**
+  String get watchPartyFull;
+
+  /// Private watch party label
+  ///
+  /// In en, this message translates to:
+  /// **'Private Watch Party'**
+  String get privateWatchParty;
+
+  /// Public watch party label
+  ///
+  /// In en, this message translates to:
+  /// **'Public Watch Party'**
+  String get publicWatchParty;
+
+  /// Predictions feature title
+  ///
+  /// In en, this message translates to:
+  /// **'Predictions'**
+  String get predictions;
+
+  /// Make prediction button
+  ///
+  /// In en, this message translates to:
+  /// **'Make Prediction'**
+  String get makePrediction;
+
+  /// Your prediction label
+  ///
+  /// In en, this message translates to:
+  /// **'Your Prediction'**
+  String get yourPrediction;
+
+  /// Prediction saved confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Prediction saved!'**
+  String get predictionSaved;
+
+  /// Confidence label
+  ///
+  /// In en, this message translates to:
+  /// **'Confidence'**
+  String get confidence;
+
+  /// Winner label
+  ///
+  /// In en, this message translates to:
+  /// **'Winner'**
+  String get winner;
+
+  /// Draw label
+  ///
+  /// In en, this message translates to:
+  /// **'Draw'**
+  String get draw;
+
+  /// Settings screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// Language setting
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// Select language title
+  ///
+  /// In en, this message translates to:
+  /// **'Select Language'**
+  String get selectLanguage;
+
+  /// English language option
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get english;
+
+  /// Spanish language option
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get spanish;
+
+  /// Portuguese language option
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese'**
+  String get portuguese;
+
+  /// French language option
+  ///
+  /// In en, this message translates to:
+  /// **'French'**
+  String get french;
+
+  /// System default language option
+  ///
+  /// In en, this message translates to:
+  /// **'System Default'**
+  String get systemDefault;
+
+  /// Notifications setting
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notifications;
+
+  /// Notification preferences title
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Preferences'**
+  String get notificationPreferences;
+
+  /// Match reminders setting
+  ///
+  /// In en, this message translates to:
+  /// **'Match Reminders'**
+  String get matchReminders;
+
+  /// Goal alerts setting
+  ///
+  /// In en, this message translates to:
+  /// **'Goal Alerts'**
+  String get goalAlerts;
+
+  /// Live score updates setting
+  ///
+  /// In en, this message translates to:
+  /// **'Live Score Updates'**
+  String get liveScoreUpdates;
+
+  /// Dark mode setting
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Mode'**
+  String get darkMode;
+
+  /// Accessibility settings
+  ///
+  /// In en, this message translates to:
+  /// **'Accessibility'**
+  String get accessibility;
+
+  /// High contrast mode
+  ///
+  /// In en, this message translates to:
+  /// **'High Contrast'**
+  String get highContrast;
+
+  /// Reduce motion setting
+  ///
+  /// In en, this message translates to:
+  /// **'Reduce Motion'**
+  String get reduceMotion;
+
+  /// Bold text setting
+  ///
+  /// In en, this message translates to:
+  /// **'Bold Text'**
+  String get boldText;
+
+  /// About section
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// Version label
+  ///
+  /// In en, this message translates to:
+  /// **'Version'**
+  String get version;
+
+  /// Privacy policy link
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// Terms of service link
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Service'**
+  String get termsOfService;
+
+  /// Contact support link
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Support'**
+  String get contactSupport;
+
+  /// Sign out button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get signOut;
+
+  /// Delete account button
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Account'**
+  String get deleteAccount;
+
+  /// Share button
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get share;
+
+  /// Share to Twitter option
+  ///
+  /// In en, this message translates to:
+  /// **'Share to Twitter/X'**
+  String get shareToTwitter;
+
+  /// Share to Facebook option
+  ///
+  /// In en, this message translates to:
+  /// **'Share to Facebook'**
+  String get shareToFacebook;
+
+  /// Share to WhatsApp option
+  ///
+  /// In en, this message translates to:
+  /// **'Share to WhatsApp'**
+  String get shareToWhatsApp;
+
+  /// Share to Instagram option
+  ///
+  /// In en, this message translates to:
+  /// **'Share to Instagram'**
+  String get shareToInstagram;
+
+  /// Copy link option
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Link'**
+  String get copyLink;
+
+  /// Link copied confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Link copied to clipboard'**
+  String get linkCopied;
+
+  /// More apps share option
+  ///
+  /// In en, this message translates to:
+  /// **'More Apps'**
+  String get moreApps;
+
+  /// Share as image option
+  ///
+  /// In en, this message translates to:
+  /// **'Share as Image'**
+  String get shareAsImage;
+
+  /// Add to calendar button
+  ///
+  /// In en, this message translates to:
+  /// **'Add to Calendar'**
+  String get addToCalendar;
+
+  /// Google Calendar option
+  ///
+  /// In en, this message translates to:
+  /// **'Google Calendar'**
+  String get googleCalendar;
+
+  /// Apple Calendar option
+  ///
+  /// In en, this message translates to:
+  /// **'Apple Calendar'**
+  String get appleCalendar;
+
+  /// Download ICS file option
+  ///
+  /// In en, this message translates to:
+  /// **'Download .ics File'**
+  String get downloadIcs;
+
+  /// Export all matches button
+  ///
+  /// In en, this message translates to:
+  /// **'Export All Matches'**
+  String get exportAllMatches;
+
+  /// Export favorite matches button
+  ///
+  /// In en, this message translates to:
+  /// **'Export Favorite Matches'**
+  String get exportFavoriteMatches;
+
+  /// Chat label
+  ///
+  /// In en, this message translates to:
+  /// **'Chat'**
+  String get chat;
+
+  /// Match chat title
+  ///
+  /// In en, this message translates to:
+  /// **'Match Chat'**
+  String get matchChat;
+
+  /// Send message hint
+  ///
+  /// In en, this message translates to:
+  /// **'Send message'**
+  String get sendMessage;
+
+  /// Type message placeholder
+  ///
+  /// In en, this message translates to:
+  /// **'Type a message...'**
+  String get typeMessage;
+
+  /// Join chat button
+  ///
+  /// In en, this message translates to:
+  /// **'Join Chat'**
+  String get joinChat;
+
+  /// Leave chat button
+  ///
+  /// In en, this message translates to:
+  /// **'Leave Chat'**
+  String get leaveChat;
+
+  /// Chat participants count
+  ///
+  /// In en, this message translates to:
+  /// **'{count} participants'**
+  String chatParticipants(int count);
+
+  /// Venue label
+  ///
+  /// In en, this message translates to:
+  /// **'Venue'**
+  String get venue;
+
+  /// Venues label
+  ///
+  /// In en, this message translates to:
+  /// **'Venues'**
+  String get venues;
+
+  /// Stadium label
+  ///
+  /// In en, this message translates to:
+  /// **'Stadium'**
+  String get stadium;
+
+  /// Capacity label
+  ///
+  /// In en, this message translates to:
+  /// **'Capacity'**
+  String get capacity;
+
+  /// Location label
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get location;
+
+  /// Get directions button
+  ///
+  /// In en, this message translates to:
+  /// **'Get Directions'**
+  String get getDirections;
+
+  /// Nearby venues title
+  ///
+  /// In en, this message translates to:
+  /// **'Nearby Venues'**
+  String get nearbyVenues;
+
+  /// Find bars button
+  ///
+  /// In en, this message translates to:
+  /// **'Find Bars'**
+  String get findBars;
+
+  /// Find restaurants button
+  ///
+  /// In en, this message translates to:
+  /// **'Find Restaurants'**
+  String get findRestaurants;
+
+  /// Kickoff label
+  ///
+  /// In en, this message translates to:
+  /// **'Kickoff'**
+  String get kickoff;
+
+  /// Full time label
+  ///
+  /// In en, this message translates to:
+  /// **'Full Time'**
+  String get fullTime;
+
+  /// Half time label
+  ///
+  /// In en, this message translates to:
+  /// **'Half Time'**
+  String get halfTime;
+
+  /// Extra time label
+  ///
+  /// In en, this message translates to:
+  /// **'Extra Time'**
+  String get extraTime;
+
+  /// Penalties label
+  ///
+  /// In en, this message translates to:
+  /// **'Penalties'**
+  String get penalties;
+
+  /// Postponed label
+  ///
+  /// In en, this message translates to:
+  /// **'Postponed'**
+  String get postponed;
+
+  /// Cancelled label
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get cancelled;
+
+  /// Upcoming label
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get upcoming;
+
+  /// Completed label
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get completed;
+
+  /// Today label
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get today;
+
+  /// Tomorrow label
+  ///
+  /// In en, this message translates to:
+  /// **'Tomorrow'**
+  String get tomorrow;
+
+  /// Yesterday label
+  ///
+  /// In en, this message translates to:
+  /// **'Yesterday'**
+  String get yesterday;
+
+  /// Group stage label
+  ///
+  /// In en, this message translates to:
+  /// **'Group Stage'**
+  String get groupStage;
+
+  /// Round of 32 label
+  ///
+  /// In en, this message translates to:
+  /// **'Round of 32'**
+  String get roundOf32;
+
+  /// Round of 16 label
+  ///
+  /// In en, this message translates to:
+  /// **'Round of 16'**
+  String get roundOf16;
+
+  /// Quarter finals label
+  ///
+  /// In en, this message translates to:
+  /// **'Quarter Finals'**
+  String get quarterFinals;
+
+  /// Semi finals label
+  ///
+  /// In en, this message translates to:
+  /// **'Semi Finals'**
+  String get semiFinals;
+
+  /// Third place playoff label
+  ///
+  /// In en, this message translates to:
+  /// **'Third Place'**
+  String get thirdPlace;
+
+  /// Final label
+  ///
+  /// In en, this message translates to:
+  /// **'Final'**
+  String get final_;
+
+  /// Matches played abbreviation
+  ///
+  /// In en, this message translates to:
+  /// **'Played'**
+  String get played;
+
+  /// Matches won abbreviation
+  ///
+  /// In en, this message translates to:
+  /// **'Won'**
+  String get won;
+
+  /// Matches drawn abbreviation
+  ///
+  /// In en, this message translates to:
+  /// **'Drawn'**
+  String get drawn;
+
+  /// Matches lost abbreviation
+  ///
+  /// In en, this message translates to:
+  /// **'Lost'**
+  String get lost;
+
+  /// Goals for label
+  ///
+  /// In en, this message translates to:
+  /// **'Goals For'**
+  String get goalsFor;
+
+  /// Goals against label
+  ///
+  /// In en, this message translates to:
+  /// **'Goals Against'**
+  String get goalsAgainst;
+
+  /// Goal difference abbreviation
+  ///
+  /// In en, this message translates to:
+  /// **'Goal Diff'**
+  String get goalDifference;
+
+  /// Points label
+  ///
+  /// In en, this message translates to:
+  /// **'Points'**
+  String get points;
+
+  /// Invite friends button
+  ///
+  /// In en, this message translates to:
+  /// **'Invite Friends'**
+  String get inviteFriends;
+
+  /// Referral code label
+  ///
+  /// In en, this message translates to:
+  /// **'Referral Code'**
+  String get referralCode;
+
+  /// Your referral code label
+  ///
+  /// In en, this message translates to:
+  /// **'Your Referral Code'**
+  String get yourReferralCode;
+
+  /// Premium label
+  ///
+  /// In en, this message translates to:
+  /// **'Premium'**
+  String get premium;
+
+  /// Superfan Pass product name
+  ///
+  /// In en, this message translates to:
+  /// **'Superfan Pass'**
+  String get superfanPass;
+
+  /// Upgrade to premium button
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Premium'**
+  String get upgradeToPremium;
+
+  /// Premium features title
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Features'**
+  String get premiumFeatures;
+
+  /// Restore purchases button
+  ///
+  /// In en, this message translates to:
+  /// **'Restore Purchases'**
+  String get restorePurchases;
+
+  /// OK button
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get ok;
+
+  /// Cancel button
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// Save button
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// Delete button
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// Edit button
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// Done button
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// Close button
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get close;
+
+  /// Back button
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
+
+  /// Next button
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// Continue button
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continue_;
+
+  /// Confirm button
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
+
+  /// Submit button
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get submit;
+
+  /// See all button
+  ///
+  /// In en, this message translates to:
+  /// **'See All'**
+  String get seeAll;
+
+  /// View more button
+  ///
+  /// In en, this message translates to:
+  /// **'View More'**
+  String get viewMore;
+
+  /// Show less button
+  ///
+  /// In en, this message translates to:
+  /// **'Show Less'**
+  String get showLess;
+
+  /// Widget settings screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Widget Settings'**
+  String get widgetSettings;
+
+  /// Widget settings description
+  ///
+  /// In en, this message translates to:
+  /// **'Configure home screen widgets'**
+  String get widgetSettingsDescription;
+
+  /// Add widget instruction title
+  ///
+  /// In en, this message translates to:
+  /// **'Add Widget to Home Screen'**
+  String get addWidgetToHomeScreen;
+
+  /// Instructions for adding widget
+  ///
+  /// In en, this message translates to:
+  /// **'Long press on your home screen, tap the + button, search for \'Pregame World Cup\', and select a widget size.'**
+  String get widgetInstructions;
+
+  /// Display settings section title
+  ///
+  /// In en, this message translates to:
+  /// **'Display Settings'**
+  String get displaySettings;
+
+  /// Show live scores toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Show Live Scores'**
+  String get showLiveScores;
+
+  /// Show live scores description
+  ///
+  /// In en, this message translates to:
+  /// **'Display live match scores on widget'**
+  String get showLiveScoresDescription;
+
+  /// Show upcoming matches toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Show Upcoming Matches'**
+  String get showUpcomingMatches;
+
+  /// Show upcoming matches description
+  ///
+  /// In en, this message translates to:
+  /// **'Display upcoming matches on widget'**
+  String get showUpcomingMatchesDescription;
+
+  /// Compact mode toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Compact Mode'**
+  String get compactMode;
+
+  /// Compact mode description
+  ///
+  /// In en, this message translates to:
+  /// **'Use smaller text and spacing'**
+  String get compactModeDescription;
+
+  /// Number of matches section title
+  ///
+  /// In en, this message translates to:
+  /// **'Number of Matches'**
+  String get numberOfMatches;
+
+  /// Upcoming matches count
+  ///
+  /// In en, this message translates to:
+  /// **'Show {count} upcoming matches'**
+  String upcomingMatchesCount(int count);
+
+  /// Match count description
+  ///
+  /// In en, this message translates to:
+  /// **'More matches require a larger widget size'**
+  String get matchCountDescription;
+
+  /// Favorite team section title
+  ///
+  /// In en, this message translates to:
+  /// **'Favorite Team'**
+  String get favoriteTeam;
+
+  /// Favorite team description
+  ///
+  /// In en, this message translates to:
+  /// **'Prioritize matches for this team'**
+  String get favoriteTeamDescription;
+
+  /// No team selected message
+  ///
+  /// In en, this message translates to:
+  /// **'No team selected'**
+  String get noTeamSelected;
+
+  /// Select favorite team title
+  ///
+  /// In en, this message translates to:
+  /// **'Select Favorite Team'**
+  String get selectFavoriteTeam;
+
+  /// Clear favorite team button
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Favorite Team'**
+  String get clearFavoriteTeam;
+
+  /// Widget preview section title
+  ///
+  /// In en, this message translates to:
+  /// **'Widget Preview'**
+  String get widgetPreview;
+
+  /// Refresh widget button
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh Widget'**
+  String get refreshWidget;
 }
 
 class _AppLocalizationsDelegate
@@ -722,7 +1608,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['en', 'es'].contains(locale.languageCode);
+      <String>['en', 'es', 'fr', 'pt'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -735,6 +1621,10 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'pt':
+      return AppLocalizationsPt();
   }
 
   throw FlutterError(

@@ -103,6 +103,11 @@ class UpdateWatchPartyEvent extends WatchPartyEvent {
   final int? maxAttendees;
   final bool? allowVirtualAttendance;
   final double? virtualAttendanceFee;
+  final String? venueId;
+  final String? venueName;
+  final String? venueAddress;
+  final double? venueLatitude;
+  final double? venueLongitude;
 
   const UpdateWatchPartyEvent({
     required this.watchPartyId,
@@ -112,6 +117,11 @@ class UpdateWatchPartyEvent extends WatchPartyEvent {
     this.maxAttendees,
     this.allowVirtualAttendance,
     this.virtualAttendanceFee,
+    this.venueId,
+    this.venueName,
+    this.venueAddress,
+    this.venueLatitude,
+    this.venueLongitude,
   });
 
   @override
@@ -123,6 +133,11 @@ class UpdateWatchPartyEvent extends WatchPartyEvent {
         maxAttendees,
         allowVirtualAttendance,
         virtualAttendanceFee,
+        venueId,
+        venueName,
+        venueAddress,
+        venueLatitude,
+        venueLongitude,
       ];
 }
 

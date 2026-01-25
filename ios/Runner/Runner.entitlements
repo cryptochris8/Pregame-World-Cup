@@ -11,5 +11,12 @@
 	<array>
 		<string>$(AppIdentifierPrefix)com.christophercampbell.pregame</string>
 	</array>
+
+	<!-- Associated Domains for Universal Links and Firebase Dynamic Links -->
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:pregameapp.page.link</string>
+		<string>applinks:pregameworldcup.com</string>
+	</array>
 </dict>
 </plist>

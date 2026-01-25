@@ -9,8 +9,10 @@ import '../entities/watch_party_message.dart';
 import '../entities/watch_party_invite.dart';
 import '../../../../core/services/performance_monitor.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../../core/services/analytics_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../moderation/moderation.dart';
 
 class WatchPartyService {
   static const String _logTag = 'WatchPartyService';
@@ -21,6 +23,7 @@ class WatchPartyService {
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  final AnalyticsService _analyticsService = AnalyticsService();
 
   late Box<WatchParty> _partiesBox;
   late Box<WatchPartyMember> _membersBox;
@@ -141,6 +144,25 @@ class WatchPartyService {
     try {
       PerformanceMonitor.startApiCall('create_watch_party');
 
+      // Validate content with moderation service
+      final moderationService = ModerationService();
+      final validationResult = await moderationService.validateWatchParty(
+        name: name,
+        description: description,
+      );
+
+      if (!validationResult.isValid) {
+        LoggingService.warning(
+          'Watch party creation blocked by moderation: ${validationResult.errorMessage}',
+          tag: _logTag,
+        );
+        throw Exception(validationResult.errorMessage ?? 'Content moderation failed');
+      }
+
+      // Use filtered content if profanity was detected
+      final filteredName = validationResult.filteredName ?? name;
+      final filteredDescription = validationResult.filteredDescription ?? description;
+
       // Get user profile for host info
       final userProfile = await _getUserProfile(user.uid);
 
@@ -148,8 +170,8 @@ class WatchPartyService {
         hostId: user.uid,
         hostName: userProfile?.displayName ?? 'Host',
         hostImageUrl: userProfile?.profileImageUrl,
-        name: name,
-        description: description,
+        name: filteredName,
+        description: filteredDescription,
         visibility: visibility,
         gameId: gameId,
         gameName: gameName,
@@ -194,6 +216,16 @@ class WatchPartyService {
 
       PerformanceMonitor.endApiCall('create_watch_party', success: true);
       LoggingService.info('Created watch party: ${watchParty.watchPartyId}', tag: _logTag);
+
+      // Track watch party creation in analytics
+      await _analyticsService.logWatchPartyCreated(
+        partyId: watchParty.watchPartyId,
+        matchId: gameId,
+        isPublic: visibility == WatchPartyVisibility.public,
+        allowsVirtual: allowVirtualAttendance,
+        virtualFee: virtualAttendanceFee > 0 ? virtualAttendanceFee : null,
+      );
+
       return watchParty;
     } catch (e) {
       PerformanceMonitor.endApiCall('create_watch_party', success: false);

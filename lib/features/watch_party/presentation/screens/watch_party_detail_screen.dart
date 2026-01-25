@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../bloc/watch_party_bloc.dart';
 import '../widgets/widgets.dart';
@@ -10,6 +11,7 @@ import '../../domain/entities/watch_party_member.dart';
 import '../../domain/entities/watch_party_message.dart';
 import '../../domain/services/watch_party_payment_service.dart';
 import 'invite_friends_screen.dart';
+import 'edit_watch_party_screen.dart';
 
 /// Screen showing watch party details with chat
 class WatchPartyDetailScreen extends StatefulWidget {
@@ -270,9 +272,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   ],
                   const SizedBox(height: 12),
                   OutlinedButton.icon(
-                    onPressed: () {
-                      // TODO: Open maps
-                    },
+                    onPressed: () => _openMaps(watchParty),
                     icon: const Icon(Icons.map),
                     label: const Text('View on Map'),
                   ),
@@ -485,7 +485,14 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   void _handleMenuAction(String action, WatchPartyDetailLoaded state) {
     switch (action) {
       case 'edit':
-        // TODO: Navigate to edit screen
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => EditWatchPartyScreen(
+              watchParty: state.watchParty,
+            ),
+          ),
+        ).then((_) => _loadWatchParty()); // Reload after editing
         break;
       case 'invite':
         Navigator.push(
@@ -614,5 +621,56 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
             memberId: member.userId,
           ),
         );
+  }
+
+  Future<void> _openMaps(WatchParty watchParty) async {
+    Uri? mapsUri;
+
+    // Prefer coordinates if available
+    if (watchParty.venueLatitude != null && watchParty.venueLongitude != null) {
+      // Use coordinates for more accurate location
+      final lat = watchParty.venueLatitude!;
+      final lng = watchParty.venueLongitude!;
+      final label = Uri.encodeComponent(watchParty.venueName);
+
+      // Try Google Maps first (works on both platforms)
+      mapsUri = Uri.parse(
+        'https://www.google.com/maps/search/?api=1&query=$lat,$lng&query_place_id=$label',
+      );
+    } else if (watchParty.venueAddress != null && watchParty.venueAddress!.isNotEmpty) {
+      // Fall back to address search
+      final address = Uri.encodeComponent(
+        '${watchParty.venueName}, ${watchParty.venueAddress}',
+      );
+      mapsUri = Uri.parse('https://www.google.com/maps/search/?api=1&query=$address');
+    } else {
+      // Just search by venue name
+      final venueName = Uri.encodeComponent(watchParty.venueName);
+      mapsUri = Uri.parse('https://www.google.com/maps/search/?api=1&query=$venueName');
+    }
+
+    try {
+      if (await canLaunchUrl(mapsUri)) {
+        await launchUrl(mapsUri, mode: LaunchMode.externalApplication);
+      } else {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Could not open maps'),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error opening maps: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 }

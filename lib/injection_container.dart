@@ -72,6 +72,14 @@ import 'config/api_keys.dart';
 // Core Services
 import 'core/services/cache_service.dart';
 import 'core/services/presence_service.dart';
+import 'core/services/analytics_service.dart';
+import 'core/services/deep_link_service.dart';
+import 'core/services/deep_link_navigator.dart';
+import 'core/services/accessibility_service.dart';
+import 'core/services/notification_preferences_service.dart';
+import 'core/services/localization_service.dart';
+import 'core/services/offline_service.dart';
+import 'core/services/widget_service.dart';
 
 // World Cup 2026 Feature
 import 'features/worldcup/worldcup.dart';
@@ -89,6 +97,21 @@ import 'features/watch_party/presentation/bloc/watch_party_bloc.dart';
 
 // Venue Portal Feature
 import 'features/venue_portal/venue_portal.dart';
+
+// Moderation Feature
+import 'features/moderation/moderation.dart';
+
+// Admin Feature
+import 'features/admin/domain/services/admin_service.dart';
+
+// Match Chat Feature
+import 'features/match_chat/match_chat.dart';
+
+// Calendar Feature
+import 'features/calendar/calendar.dart';
+
+// Sharing Feature
+import 'features/sharing/sharing.dart';
 
 // TODO: Token Feature - disabled pending legal review
 // import 'features/token/token.dart';
@@ -122,6 +145,23 @@ Future<void> setupLocator() async {
     sl.registerLazySingleton(() => AuthService());
     sl.registerLazySingleton(() => PresenceService());
     sl.registerLazySingleton(() => PushNotificationService());
+    sl.registerLazySingleton(() => AnalyticsService());
+    sl.registerLazySingleton(() => DeepLinkService());
+    sl.registerLazySingleton(() => DeepLinkNavigator());
+    sl.registerLazySingleton(() => AccessibilityService());
+    sl.registerLazySingleton(() => NotificationPreferencesService());
+
+    // Initialize LocalizationService (async, for language detection and switching)
+    final localizationService = await LocalizationService.getInstance();
+    sl.registerSingleton<LocalizationService>(localizationService);
+
+    // Initialize OfflineService (async, for connectivity and action queuing)
+    final offlineService = await OfflineService.getInstance();
+    sl.registerSingleton<OfflineService>(offlineService);
+
+    // Initialize WidgetService (async, for home screen widgets)
+    final widgetService = await WidgetService.getInstance();
+    sl.registerSingleton<WidgetService>(widgetService);
     print('✅ DI STEP 2: Core Services - SUCCESS');
 
     // STEP 3: Basic Analysis Services (Important but not critical)
@@ -247,6 +287,66 @@ Future<void> setupLocator() async {
       print('⚠️ DI STEP 10: Watch Party Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
         print('🔍 DIAGNOSTIC: Watch Party services failed but app will continue');
+      }
+    }
+
+    // STEP 11: Moderation Services
+    print('🔧 DI STEP 11: Moderation Services');
+    try {
+      _registerModerationServices();
+      print('✅ DI STEP 11: Moderation Services - SUCCESS');
+    } catch (e) {
+      print('⚠️ DI STEP 11: Moderation Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        print('🔍 DIAGNOSTIC: Moderation services failed but app will continue');
+      }
+    }
+
+    // STEP 12: Admin Services
+    print('🔧 DI STEP 12: Admin Services');
+    try {
+      _registerAdminServices();
+      print('✅ DI STEP 12: Admin Services - SUCCESS');
+    } catch (e) {
+      print('⚠️ DI STEP 12: Admin Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        print('🔍 DIAGNOSTIC: Admin services failed but app will continue');
+      }
+    }
+
+    // STEP 13: Match Chat Services
+    print('🔧 DI STEP 13: Match Chat Services');
+    try {
+      _registerMatchChatServices();
+      print('✅ DI STEP 13: Match Chat Services - SUCCESS');
+    } catch (e) {
+      print('⚠️ DI STEP 13: Match Chat Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        print('🔍 DIAGNOSTIC: Match Chat services failed but app will continue');
+      }
+    }
+
+    // STEP 14: Calendar Services
+    print('🔧 DI STEP 14: Calendar Services');
+    try {
+      _registerCalendarServices();
+      print('✅ DI STEP 14: Calendar Services - SUCCESS');
+    } catch (e) {
+      print('⚠️ DI STEP 14: Calendar Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        print('🔍 DIAGNOSTIC: Calendar services failed but app will continue');
+      }
+    }
+
+    // STEP 15: Sharing Services
+    print('🔧 DI STEP 15: Sharing Services');
+    try {
+      _registerSharingServices();
+      print('✅ DI STEP 15: Sharing Services - SUCCESS');
+    } catch (e) {
+      print('⚠️ DI STEP 15: Sharing Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        print('🔍 DIAGNOSTIC: Sharing services failed but app will continue');
       }
     }
 
@@ -538,6 +638,46 @@ void _registerWatchPartyServices() {
     watchPartyService: sl(),
     paymentService: sl(),
   ));
+}
+
+/// Register Moderation services
+void _registerModerationServices() {
+  // Profanity Filter Service (Singleton)
+  sl.registerLazySingleton<ProfanityFilterService>(() => ProfanityFilterService());
+
+  // Moderation Service (Singleton)
+  sl.registerLazySingleton<ModerationService>(() => ModerationService(
+    profanityFilter: sl(),
+  ));
+}
+
+/// Register Admin services
+void _registerAdminServices() {
+  // Admin Service (Singleton)
+  sl.registerLazySingleton<AdminService>(() => AdminService());
+}
+
+/// Register Match Chat services
+void _registerMatchChatServices() {
+  // Match Chat Service (Singleton)
+  sl.registerLazySingleton<MatchChatService>(() => MatchChatService());
+
+  // Match Chat Cubit (Factory for fresh instances)
+  sl.registerFactory<MatchChatCubit>(() => MatchChatCubit(
+        chatService: sl(),
+      ));
+}
+
+/// Register Calendar services
+void _registerCalendarServices() {
+  // Calendar Service (Singleton)
+  sl.registerLazySingleton<CalendarService>(() => CalendarService());
+}
+
+/// Register Sharing services
+void _registerSharingServices() {
+  // Social Sharing Service (Singleton)
+  sl.registerLazySingleton<SocialSharingService>(() => SocialSharingService());
 }
 
 // TODO: Token Feature - disabled pending legal review
