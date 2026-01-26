@@ -30,6 +30,7 @@ class WorldCupPaymentService {
   // (e.g., beta testers, influencers, friends & family)
   static const List<String> _clearanceEmails = [
     'coopercrawford013@gmail.com',
+    'johnnycaboshi@gmail.com',
   ];
 
   /// Check if current user is an admin/test account
