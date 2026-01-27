@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import 'transaction_history_screen.dart';
 
@@ -69,7 +70,7 @@ class _FanPassScreenState extends State<FanPassScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('${passType.displayName} purchased successfully!'),
-            backgroundColor: const Color(0xFF059669),
+            backgroundColor: AppTheme.successColor,
             duration: const Duration(seconds: 3),
           ),
         );
@@ -90,7 +91,7 @@ class _FanPassScreenState extends State<FanPassScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(result.errorMessage ?? 'Purchase failed. Please try again.'),
-            backgroundColor: Colors.red,
+            backgroundColor: AppTheme.errorColor,
           ),
         );
       }
@@ -122,7 +123,7 @@ class _FanPassScreenState extends State<FanPassScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text('${result.restoredPassType.displayName} restored successfully!'),
-              backgroundColor: const Color(0xFF059669),
+              backgroundColor: AppTheme.successColor,
               duration: const Duration(seconds: 3),
             ),
           );
@@ -140,7 +141,7 @@ class _FanPassScreenState extends State<FanPassScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(result.errorMessage ?? 'Failed to restore purchases'),
-            backgroundColor: Colors.red,
+            backgroundColor: AppTheme.errorColor,
           ),
         );
       }
@@ -154,10 +155,12 @@ class _FanPassScreenState extends State<FanPassScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppTheme.backgroundDark,
       appBar: AppBar(
         title: const Text('World Cup 2026 Pass'),
-        backgroundColor: const Color(0xFF1E3A8A),
-        foregroundColor: Colors.white,
+        backgroundColor: AppTheme.backgroundDark,
+        foregroundColor: AppTheme.textWhite,
+        elevation: 0,
         actions: [
           IconButton(
             onPressed: () => Navigator.of(context).push(
@@ -171,8 +174,9 @@ class _FanPassScreenState extends State<FanPassScreen> {
         ],
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: AppTheme.primaryOrange))
           : RefreshIndicator(
+              color: AppTheme.primaryOrange,
               onRefresh: _loadData,
               child: SingleChildScrollView(
                 physics: const AlwaysScrollableScrollPhysics(),
@@ -227,55 +231,54 @@ class _FanPassScreenState extends State<FanPassScreen> {
   }
 
   Widget _buildHeader() {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [Color(0xFF1E3A8A), Color(0xFF3B82F6)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: AppTheme.mainGradient,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: AppTheme.primaryPurple.withOpacity(0.3),
+            blurRadius: 20,
+            offset: const Offset(0, 10),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          const Icon(
+            Icons.sports_soccer,
+            size: 48,
+            color: Colors.white,
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            'FIFA World Cup 2026',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
             ),
-            borderRadius: BorderRadius.circular(16),
           ),
-          child: Column(
-            children: [
-              const Icon(
-                Icons.sports_soccer,
-                size: 48,
-                color: Colors.white,
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'FIFA World Cup 2026',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                'June 11 - July 19, 2026',
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.9),
-                  fontSize: 14,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Unlock premium features for the entire tournament',
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.8),
-                  fontSize: 14,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
+          const SizedBox(height: 4),
+          Text(
+            'June 11 - July 19, 2026',
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.9),
+              fontSize: 14,
+            ),
           ),
-        ),
-      ],
+          const SizedBox(height: 8),
+          Text(
+            'Unlock premium features for the entire tournament',
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.8),
+              fontSize: 14,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
     );
   }
 
@@ -286,15 +289,15 @@ class _FanPassScreenState extends State<FanPassScreen> {
       margin: const EdgeInsets.only(bottom: 24),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF059669).withOpacity(0.1),
+        color: AppTheme.successColor.withOpacity(0.15),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFF059669)),
+        border: Border.all(color: AppTheme.successColor),
       ),
       child: Column(
         children: [
           Row(
             children: [
-              const Icon(Icons.check_circle, color: Color(0xFF059669), size: 28),
+              const Icon(Icons.check_circle, color: AppTheme.successColor, size: 28),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
@@ -305,14 +308,14 @@ class _FanPassScreenState extends State<FanPassScreen> {
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: Color(0xFF059669),
+                        color: AppTheme.successColor,
                       ),
                     ),
                     if (_currentStatus?.purchasedAt != null)
                       Text(
                         'Purchased ${_formatDate(_currentStatus!.purchasedAt!)}',
-                        style: TextStyle(
-                          color: Colors.grey[600],
+                        style: const TextStyle(
+                          color: AppTheme.textTertiary,
                           fontSize: 12,
                         ),
                       ),
@@ -328,19 +331,19 @@ class _FanPassScreenState extends State<FanPassScreen> {
                 builder: (_) => const TransactionHistoryScreen(),
               ),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   Icons.receipt_long,
                   size: 16,
-                  color: Colors.grey[600],
+                  color: AppTheme.textTertiary,
                 ),
-                const SizedBox(width: 6),
+                SizedBox(width: 6),
                 Text(
                   'View Transaction History',
                   style: TextStyle(
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                     fontSize: 13,
                     decoration: TextDecoration.underline,
                   ),
@@ -364,21 +367,22 @@ class _FanPassScreenState extends State<FanPassScreen> {
 
     return Container(
       decoration: BoxDecoration(
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isRecommended
-              ? const Color(0xFF3B82F6)
+              ? AppTheme.primaryOrange
               : isCurrentTier
-                  ? const Color(0xFF059669)
-                  : Colors.grey[300]!,
+                  ? AppTheme.successColor
+                  : AppTheme.backgroundElevated,
           width: isRecommended || isCurrentTier ? 2 : 1,
         ),
         boxShadow: isRecommended
             ? [
                 BoxShadow(
-                  color: const Color(0xFF3B82F6).withOpacity(0.2),
-                  blurRadius: 10,
-                  offset: const Offset(0, 4),
+                  color: AppTheme.primaryOrange.withOpacity(0.3),
+                  blurRadius: 15,
+                  offset: const Offset(0, 5),
                 ),
               ]
             : null,
@@ -388,9 +392,13 @@ class _FanPassScreenState extends State<FanPassScreen> {
           if (isRecommended)
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 6),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               decoration: const BoxDecoration(
-                color: Color(0xFF3B82F6),
+                gradient: LinearGradient(
+                  colors: [AppTheme.primaryOrange, AppTheme.accentGold],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ),
                 borderRadius: BorderRadius.vertical(top: Radius.circular(14)),
               ),
               child: const Text(
@@ -400,6 +408,7 @@ class _FanPassScreenState extends State<FanPassScreen> {
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 12,
+                  letterSpacing: 1,
                 ),
               ),
             ),
@@ -416,6 +425,7 @@ class _FanPassScreenState extends State<FanPassScreen> {
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
+                        color: AppTheme.textWhite,
                       ),
                     ),
                     Text(
@@ -424,19 +434,19 @@ class _FanPassScreenState extends State<FanPassScreen> {
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                         color: type == FanPassType.free
-                            ? Colors.grey[600]
-                            : const Color(0xFF1E3A8A),
+                            ? AppTheme.textTertiary
+                            : AppTheme.accentGold,
                       ),
                     ),
                   ],
                 ),
                 if (type != FanPassType.free)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 2),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 2),
                     child: Text(
                       'One-time payment',
                       style: TextStyle(
-                        color: Colors.grey[500],
+                        color: AppTheme.textTertiary,
                         fontSize: 12,
                       ),
                     ),
@@ -452,8 +462,8 @@ class _FanPassScreenState extends State<FanPassScreen> {
                         feature.included ? Icons.check_circle : Icons.cancel,
                         size: 18,
                         color: feature.included
-                            ? const Color(0xFF059669)
-                            : Colors.grey[400],
+                            ? AppTheme.successColor
+                            : AppTheme.textTertiary,
                       ),
                       const SizedBox(width: 10),
                       Expanded(
@@ -461,8 +471,8 @@ class _FanPassScreenState extends State<FanPassScreen> {
                           feature.name,
                           style: TextStyle(
                             color: feature.included
-                                ? Colors.black87
-                                : Colors.grey[500],
+                                ? AppTheme.textLight
+                                : AppTheme.textTertiary,
                             decoration: feature.included
                                 ? null
                                 : TextDecoration.lineThrough,
@@ -481,31 +491,53 @@ class _FanPassScreenState extends State<FanPassScreen> {
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF059669).withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(8),
+                      color: AppTheme.successColor.withOpacity(0.15),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: AppTheme.successColor.withOpacity(0.3)),
                     ),
                     child: const Text(
                       'Current Plan',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        color: Color(0xFF059669),
+                        color: AppTheme.successColor,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   )
                 else if (canUpgrade && type != FanPassType.free)
-                  SizedBox(
+                  Container(
                     width: double.infinity,
+                    decoration: BoxDecoration(
+                      gradient: isRecommended
+                          ? const LinearGradient(
+                              colors: [AppTheme.primaryOrange, AppTheme.accentGold],
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                            )
+                          : const LinearGradient(
+                              colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                            ),
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: (isRecommended ? AppTheme.primaryOrange : AppTheme.primaryPurple)
+                              .withOpacity(0.4),
+                          blurRadius: 10,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
+                    ),
                     child: ElevatedButton(
                       onPressed: _isPurchasing ? null : () => _purchasePass(type),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: isRecommended
-                            ? const Color(0xFF3B82F6)
-                            : const Color(0xFF1E3A8A),
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(12),
                         ),
                       ),
                       child: _isPurchasing
@@ -519,7 +551,10 @@ class _FanPassScreenState extends State<FanPassScreen> {
                             )
                           : Text(
                               'Get ${type.displayName}',
-                              style: const TextStyle(fontWeight: FontWeight.bold),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
                             ),
                     ),
                   ),
@@ -535,25 +570,27 @@ class _FanPassScreenState extends State<FanPassScreen> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.grey[100],
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppTheme.backgroundElevated),
       ),
-      child: Column(
+      child: const Column(
         children: [
-          const Icon(Icons.info_outline, color: Colors.grey),
-          const SizedBox(height: 8),
-          const Text(
+          Icon(Icons.info_outline, color: AppTheme.textTertiary),
+          SizedBox(height: 8),
+          Text(
             'One-Time Purchase',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16,
+              color: AppTheme.textWhite,
             ),
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: 8),
           Text(
             'Your pass is valid for the entire FIFA World Cup 2026 tournament. No recurring charges or subscriptions.',
             style: TextStyle(
-              color: Colors.grey[600],
+              color: AppTheme.textSecondary,
               fontSize: 14,
             ),
             textAlign: TextAlign.center,
@@ -573,13 +610,13 @@ class _FanPassScreenState extends State<FanPassScreen> {
                 height: 16,
                 child: CircularProgressIndicator(
                   strokeWidth: 2,
-                  color: Colors.grey,
+                  color: AppTheme.textTertiary,
                 ),
               )
             : const Icon(Icons.restore, size: 18),
         label: const Text('Restore Purchases'),
         style: TextButton.styleFrom(
-          foregroundColor: Colors.grey[600],
+          foregroundColor: AppTheme.textTertiary,
         ),
       ),
     );
