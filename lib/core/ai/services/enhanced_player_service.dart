@@ -29,7 +29,7 @@ class EnhancedPlayerService {
   /// Get enhanced player information for a game
   Future<Map<String, dynamic>> getEnhancedPlayersForGame(GameSchedule game) async {
     try {
-      debugPrint('👥 ENHANCED PLAYERS: Getting players for ${game.awayTeamName} @ ${game.homeTeamName}');
+      // Debug output removed
       
       // Step 1: Get team rosters
       final homeRoster = await _getTeamRoster(game.homeTeamName);
@@ -45,7 +45,7 @@ class EnhancedPlayerService {
       // Step 4: Generate player storylines
       final storylines = await _generatePlayerStorylines(homeKeyPlayers, awayKeyPlayers);
       
-      debugPrint('👥 ENHANCED PLAYERS: Generated comprehensive player analysis');
+      // Debug output removed
       
       return {
         'homeTeam': {
@@ -66,7 +66,7 @@ class EnhancedPlayerService {
       };
       
     } catch (e) {
-      debugPrint('👥 ENHANCED PLAYERS ERROR: $e');
+      // Debug output removed
       LoggingService.error('Enhanced player analysis failed: $e', tag: 'EnhancedPlayers');
       return _generateIntelligentPlayerFallback(game);
     }
@@ -75,23 +75,23 @@ class EnhancedPlayerService {
   /// Get team roster with enhanced data
   Future<List<Map<String, dynamic>>> _getTeamRoster(String teamName) async {
     try {
-      debugPrint('🏈 REAL PLAYERS: Fetching roster for $teamName from SportsData.io');
+      // Debug output removed
       final teamKey = _getTeamKey(teamName);
-      debugPrint('🔑 TEAM KEY: Converting "$teamName" to "$teamKey"');
+      // Debug output removed
       final roster = await _sportsDataService.getTeamRoster(teamKey);
       
       if (roster != null && roster.isNotEmpty) {
-        debugPrint('✅ REAL PLAYERS: Got ${roster.length} real players for $teamName');
+        // Debug output removed
         // Convert Player objects to Map format and enhance with additional information
         return roster.map((player) => _enhancePlayerDataFromPlayer(player, teamName)).toList();
       }
       
-      debugPrint('! REAL PLAYERS: No real data found for $teamName, using fallback');
+      // Debug output removed
       // If no real data, generate intelligent mock roster
       return _generateIntelligentMockRoster(teamName);
       
     } catch (e) {
-      debugPrint('⚠️ ROSTER: Error getting roster for $teamName: $e');
+      // Debug output removed
       return _generateIntelligentMockRoster(teamName);
     }
   }
@@ -207,7 +207,7 @@ class EnhancedPlayerService {
       return keyPlayers.take(8).toList(); // Top 8 key players
       
     } catch (e) {
-      debugPrint('⚠️ KEY PLAYERS: Error identifying key players: $e');
+      // Debug output removed
       return _generateMockKeyPlayers(teamName);
     }
   }
@@ -263,7 +263,7 @@ class EnhancedPlayerService {
       }
       
     } catch (e) {
-      debugPrint('⚠️ MATCHUPS: Error analyzing matchups: $e');
+      // Debug output removed
     }
     
     return matchups;
@@ -289,7 +289,7 @@ class EnhancedPlayerService {
       }
       
     } catch (e) {
-      debugPrint('⚠️ STORYLINES: Error generating storylines: $e');
+      // Debug output removed
     }
     
     return storylines;
@@ -327,7 +327,7 @@ Keep it engaging and informative.
       };
       
     } catch (e) {
-      debugPrint('⚠️ PLAYER STORYLINE: Error generating storyline for ${player['name']}: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -744,7 +744,7 @@ Keep it engaging and informative.
     // First try exact match
     final key = teamKeys[teamName];
     if (key != null) {
-      debugPrint('🎯 TEAM KEY MAPPING: "$teamName" -> "$key"');
+      // Debug output removed
       return key;
     }
     
@@ -787,7 +787,7 @@ Keep it engaging and informative.
     
     final cleanKey = teamKeys[cleanName];
     if (cleanKey != null) {
-      debugPrint('🎯 CLEAN TEAM KEY MAPPING: "$teamName" -> "$cleanName" -> "$cleanKey"');
+      // Debug output removed
       return cleanKey;
     }
     
@@ -796,12 +796,12 @@ Keep it engaging and informative.
     if (words.length > 1) {
       // Try first letters of first two words
       final fallback = '${words[0].substring(0, 2).toUpperCase()}${words[1].substring(0, 2).toUpperCase()}';
-      debugPrint('⚠️ FALLBACK TEAM KEY: "$teamName" -> "$fallback"');
+      // Debug output removed
       return fallback;
     }
     
     final finalFallback = teamName.substring(0, 4).toUpperCase();
-    debugPrint('⚠️ FINAL FALLBACK TEAM KEY: "$teamName" -> "$finalFallback"');
+    // Debug output removed
     return finalFallback;
   }
   

@@ -41,7 +41,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       // Subscribe to preference changes
       _subscribeToPreferences();
     } catch (e) {
-      debugPrint('Error loading preferences: $e');
+      // Debug output removed
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load preferences: $e',
@@ -58,7 +58,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
         _loadFavoriteEntities();
       },
       onError: (e) {
-        debugPrint('Error in preferences stream: $e');
+        // Debug output removed
       },
     );
   }
@@ -78,7 +78,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
         }
         emit(state.copyWith(favoriteTeams: teams));
       } catch (e) {
-        debugPrint('Error loading favorite teams: $e');
+        // Debug output removed
       }
     }
 
@@ -95,7 +95,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
         }
         emit(state.copyWith(favoriteMatches: matches));
       } catch (e) {
-        debugPrint('Error loading favorite matches: $e');
+        // Debug output removed
       }
     }
   }
@@ -107,7 +107,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       emit(state.copyWith(preferences: updated));
       await _loadFavoriteEntities();
     } catch (e) {
-      debugPrint('Error toggling favorite team: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to update favorite: $e'));
     }
   }
@@ -119,7 +119,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       emit(state.copyWith(preferences: updated));
       await _loadFavoriteEntities();
     } catch (e) {
-      debugPrint('Error adding favorite team: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to add favorite: $e'));
     }
   }
@@ -131,7 +131,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       emit(state.copyWith(preferences: updated));
       await _loadFavoriteEntities();
     } catch (e) {
-      debugPrint('Error removing favorite team: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to remove favorite: $e'));
     }
   }
@@ -143,7 +143,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       emit(state.copyWith(preferences: updated));
       await _loadFavoriteEntities();
     } catch (e) {
-      debugPrint('Error toggling favorite match: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to update favorite: $e'));
     }
   }
@@ -155,7 +155,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       emit(state.copyWith(preferences: updated));
       await _loadFavoriteEntities();
     } catch (e) {
-      debugPrint('Error adding favorite match: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to add favorite: $e'));
     }
   }
@@ -167,7 +167,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       emit(state.copyWith(preferences: updated));
       await _loadFavoriteEntities();
     } catch (e) {
-      debugPrint('Error removing favorite match: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to remove favorite: $e'));
     }
   }
@@ -186,7 +186,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
       );
       emit(state.copyWith(preferences: updated));
     } catch (e) {
-      debugPrint('Error updating notification settings: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to update settings: $e'));
     }
   }
@@ -207,7 +207,7 @@ class FavoritesCubit extends Cubit<FavoritesState> {
         favoriteMatches: [],
       ));
     } catch (e) {
-      debugPrint('Error clearing favorites: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to clear favorites: $e'));
     }
   }

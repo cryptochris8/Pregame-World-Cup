@@ -22,13 +22,6 @@ class PlacesApiDataSource {
     _dio.options.receiveTimeout = const Duration(seconds: 10);
     _dio.options.sendTimeout = const Duration(seconds: 10);
     
-    // Enhanced iOS diagnostic logging
-    print('🔧 PlacesApiDataSource INITIALIZATION:');
-    print('   API Key Provided: ${googleApiKey.isNotEmpty}');
-    print('   API Key Length: ${googleApiKey.length}');
-    print('   API Key Starts With AIza: ${googleApiKey.startsWith('AIza')}');
-    print('   API Key Preview: ${googleApiKey.isNotEmpty ? '${googleApiKey.substring(0, googleApiKey.length > 20 ? 20 : googleApiKey.length)}...' : 'EMPTY'}');
-    print('   Dio Timeout Settings: Connect=${_dio.options.connectTimeout}, Receive=${_dio.options.receiveTimeout}');
   }
 
   /// Get nearby places using direct Google Places API
@@ -39,11 +32,6 @@ class PlacesApiDataSource {
     required List<String> types,
   }) async {
     try {
-      print('Making direct Places API request...');
-      print('Location: $latitude, $longitude');
-      print('Radius: $radius meters');
-      print('Types: $types');
-      
       // Prepare the URL and parameters
       final typesQuery = types.isNotEmpty ? types.first : 'restaurant'; // Use first type or default
       
@@ -54,13 +42,7 @@ class PlacesApiDataSource {
         'key': _googleApiKey,
       };
       
-      print('Request URL: $_placesBaseUrl');
-      print('Request params: ${queryParameters.toString().replaceAll(_googleApiKey, 'HIDDEN_API_KEY')}');
-      
       final response = await _dio.get(_placesBaseUrl, queryParameters: queryParameters);
-      
-      print('API Response status: ${response.statusCode}');
-      print('API Response data type: ${response.data.runtimeType}');
       
       if (response.statusCode == 200) {
         final data = response.data;
@@ -69,8 +51,7 @@ class PlacesApiDataSource {
         if (data['status'] != 'OK') {
           final status = data['status'];
           final errorMessage = data['error_message'] ?? 'Unknown API error';
-          print('Places API error - Status: $status, Message: $errorMessage');
-          
+
           // Provide specific error messages based on status
           switch (status) {
             case 'REQUEST_DENIED':
@@ -78,7 +59,6 @@ class PlacesApiDataSource {
             case 'OVER_QUERY_LIMIT':
               throw Exception('Google Places API quota exceeded. Please check your billing account or wait for quota reset.');
             case 'ZERO_RESULTS':
-              print('No places found for this location');
               return [];
             case 'INVALID_REQUEST':
               throw Exception('Invalid request to Google Places API. Error: $errorMessage');
@@ -88,26 +68,21 @@ class PlacesApiDataSource {
         }
         
         final results = data['results'] as List<dynamic>? ?? [];
-        print('Found ${results.length} places from API');
-        
+
         // Convert API response to Place objects
         final places = results.map<Place?>((json) {
           try {
             return Place.fromJson(json);
           } catch (e) {
-            print('Error parsing place: $e');
-            print('Place JSON: $json');
             return null;
           }
         }).where((place) => place != null).cast<Place>().toList();
-        
-        print('Successfully parsed ${places.length} places');
+
         return places;
       } else {
         throw Exception('Failed to fetch places: HTTP ${response.statusCode}');
       }
     } on DioException catch (e) {
-      print('Network error in getNearbyPlacesDirect: $e');
       if (e.type == DioExceptionType.connectionTimeout) {
         throw Exception('Connection timeout. Please check your internet connection.');
       } else if (e.type == DioExceptionType.receiveTimeout) {
@@ -118,7 +93,6 @@ class PlacesApiDataSource {
         throw Exception('Network error: ${e.message}');
       }
     } catch (e) {
-      print('Unexpected error in getNearbyPlacesDirect: $e');
       throw Exception('Unexpected error: $e');
     }
   }
@@ -128,8 +102,6 @@ class PlacesApiDataSource {
     required String address,
   }) async {
     try {
-      print('Geocoding address: $address');
-      
       final queryParameters = {
         'address': address,
         'key': _googleApiKey,
@@ -147,8 +119,7 @@ class PlacesApiDataSource {
         if (data['status'] != 'OK') {
           final status = data['status'];
           final errorMessage = data['error_message'] ?? 'Unknown API error';
-          print('Geocoding API error - Status: $status, Message: $errorMessage');
-          
+
           switch (status) {
             case 'REQUEST_DENIED':
               throw Exception('Google Geocoding API request denied. Please check your API key.');
@@ -171,17 +142,14 @@ class PlacesApiDataSource {
           'latitude': location['lat'].toDouble(),
           'longitude': location['lng'].toDouble(),
         };
-        
-        print('Geocoded "$address" to: ${coordinates['latitude']}, ${coordinates['longitude']}');
+
         return coordinates;
       } else {
         throw Exception('Failed to geocode address: HTTP ${response.statusCode}');
       }
     } on DioException catch (e) {
-      print('Network error in geocodeAddress: $e');
       throw Exception('Network error during geocoding: ${e.message}');
     } catch (e) {
-      print('Unexpected error in geocodeAddress: $e');
       throw Exception('Geocoding failed: $e');
     }
   }
@@ -195,13 +163,7 @@ class PlacesApiDataSource {
     List<String> types = const ['restaurant', 'bar'], // Default to restaurants and bars
   }) async {
     try {
-      print('🏢 VENUES DEBUG: fetchNearbyPlaces called');
-      print('🏢 VENUES DEBUG: lat: $latitude, lng: $longitude, radius: $radius');
-      print('🏢 VENUES DEBUG: types: $types');
-      print('🏢 VENUES DEBUG: Google API Key available: ${_googleApiKey.isNotEmpty}');
-      
       // First try using direct Google Places API
-      print('Trying direct Google Places API call...');
       final directPlaces = await getNearbyPlacesDirect(
         latitude: latitude,
         longitude: longitude,
@@ -209,17 +171,12 @@ class PlacesApiDataSource {
         types: types,
       );
       
-      print('Successfully fetched ${directPlaces.length} places using direct API');
       return directPlaces;
     } catch (directApiError) {
-      print('Direct API failed: $directApiError');
-      
       // Fall back to Cloud Function approach
       try {
-        print('Falling back to Cloud Function...');
         return await _fetchFromCloudFunction(latitude, longitude, radius, types);
       } catch (cloudFunctionError) {
-        print('Cloud Function also failed: $cloudFunctionError');
         
         // If both fail, throw the more specific error from direct API
         throw Exception('Both direct API and Cloud Function failed. Last error: $directApiError');
@@ -245,7 +202,6 @@ class PlacesApiDataSource {
     final String functionUrl = '$_cloudFunctionBaseUrl/getNearbyVenuesHttp';
 
     try {
-      print('Calling Cloud Function: $functionUrl with params: $queryParameters');
       final response = await _dio.get(
         functionUrl,
         queryParameters: queryParameters,
@@ -255,9 +211,8 @@ class PlacesApiDataSource {
         final List<dynamic> responseData = response.data;
         final List<Place> places = responseData.map((item) {
           // The Cloud Function should return data that matches Place.fromJson structure
-          return Place.fromJson(item as Map<String, dynamic>); 
+          return Place.fromJson(item as Map<String, dynamic>);
         }).toList();
-        print('Fetched ${places.length} places from Cloud Function.');
         return places;
       } else {
         throw Exception('Failed to fetch nearby places from Cloud Function. Status: ${response.statusCode}');

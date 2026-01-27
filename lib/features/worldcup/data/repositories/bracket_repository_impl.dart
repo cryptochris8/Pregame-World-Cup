@@ -21,7 +21,7 @@ class BracketRepositoryImpl implements BracketRepository {
       // Try cache first
       final cached = await _cacheDataSource.getCachedBracket();
       if (cached != null) {
-        debugPrint('Returning bracket from cache');
+        // Debug output removed
         return cached;
       }
 
@@ -29,14 +29,14 @@ class BracketRepositoryImpl implements BracketRepository {
       final firestoreBracket = await _firestoreDataSource.getBracket();
       if (firestoreBracket != null) {
         await _cacheDataSource.cacheBracket(firestoreBracket);
-        debugPrint('Returning bracket from Firestore');
+        // Debug output removed
         return firestoreBracket;
       }
 
       // Return empty bracket
       return const WorldCupBracket();
     } catch (e) {
-      debugPrint('Error getting bracket: $e');
+      // Debug output removed
       return await _cacheDataSource.getCachedBracket() ?? const WorldCupBracket();
     }
   }
@@ -47,7 +47,7 @@ class BracketRepositoryImpl implements BracketRepository {
       final bracket = await getBracket();
       return bracket.getMatchesByStage(stage);
     } catch (e) {
-      debugPrint('Error getting matches by stage: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -58,7 +58,7 @@ class BracketRepositoryImpl implements BracketRepository {
       final bracket = await getBracket();
       return bracket.getMatchById(matchId);
     } catch (e) {
-      debugPrint('Error getting bracket match by ID: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -91,7 +91,7 @@ class BracketRepositoryImpl implements BracketRepository {
 
       return path;
     } catch (e) {
-      debugPrint('Error getting team knockout path: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -107,7 +107,7 @@ class BracketRepositoryImpl implements BracketRepository {
       upcoming.sort((a, b) => a.dateTime!.compareTo(b.dateTime!));
       return upcoming.take(limit).toList();
     } catch (e) {
-      debugPrint('Error getting upcoming knockout matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -118,7 +118,7 @@ class BracketRepositoryImpl implements BracketRepository {
       final bracket = await getBracket();
       return bracket.liveMatches;
     } catch (e) {
-      debugPrint('Error getting live knockout matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -131,7 +131,7 @@ class BracketRepositoryImpl implements BracketRepository {
           .where((m) => m.isComplete)
           .toList();
     } catch (e) {
-      debugPrint('Error getting completed knockout matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -148,7 +148,7 @@ class BracketRepositoryImpl implements BracketRepository {
                m.awaySlot.slotId == match.advancesToSlotId,
       );
     } catch (e) {
-      debugPrint('Error getting next match: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -164,7 +164,7 @@ class BracketRepositoryImpl implements BracketRepository {
       final bracket = await getBracket();
       return bracket.finalMatch;
     } catch (e) {
-      debugPrint('Error getting final match: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -175,7 +175,7 @@ class BracketRepositoryImpl implements BracketRepository {
       final bracket = await getBracket();
       return bracket.thirdPlace;
     } catch (e) {
-      debugPrint('Error getting third place match: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -206,7 +206,7 @@ class BracketRepositoryImpl implements BracketRepository {
 
       await updateBracket(updated);
     } catch (e) {
-      debugPrint('Error updating bracket match: $e');
+      // Debug output removed
       throw Exception('Failed to update bracket match: $e');
     }
   }
@@ -294,7 +294,7 @@ class BracketRepositoryImpl implements BracketRepository {
 
       await updateBracket(updatedBracket);
     } catch (e) {
-      debugPrint('Error advancing team: $e');
+      // Debug output removed
       throw Exception('Failed to advance team: $e');
     }
   }
@@ -305,7 +305,7 @@ class BracketRepositoryImpl implements BracketRepository {
       await _firestoreDataSource.saveBracket(bracket);
       await _cacheDataSource.cacheBracket(bracket);
     } catch (e) {
-      debugPrint('Error updating bracket: $e');
+      // Debug output removed
       throw Exception('Failed to update bracket: $e');
     }
   }
@@ -313,7 +313,7 @@ class BracketRepositoryImpl implements BracketRepository {
   @override
   Future<WorldCupBracket> refreshBracket() async {
     try {
-      debugPrint('Refreshing bracket from Firestore...');
+      // Debug output removed
       await clearCache();
 
       final bracket = await _firestoreDataSource.getBracket();
@@ -324,7 +324,7 @@ class BracketRepositoryImpl implements BracketRepository {
 
       return const WorldCupBracket();
     } catch (e) {
-      debugPrint('Error refreshing bracket: $e');
+      // Debug output removed
       throw Exception('Failed to refresh bracket: $e');
     }
   }

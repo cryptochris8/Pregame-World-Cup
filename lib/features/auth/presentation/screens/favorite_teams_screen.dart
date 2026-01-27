@@ -165,7 +165,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setStringList('favorite_teams', favorites);
     } catch (e) {
-      print('Error saving to local storage: $e');
+      // Error handled silently
     }
   }
 
@@ -175,7 +175,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
       final prefs = await SharedPreferences.getInstance();
       return prefs.getStringList('favorite_teams') ?? [];
     } catch (e) {
-      print('Error loading from local storage: $e');
+      // Error handled silently
       return [];
     }
   }

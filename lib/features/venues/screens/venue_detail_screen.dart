@@ -44,7 +44,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
   @override
   void initState() {
     super.initState();
-    debugPrint('🏢 VenueDetailScreen initialized for: ${widget.venue.name}');
+    // Debug output removed
     _tabController = TabController(length: 4, vsync: this);
     _initializeAndLoadPhotos();
     _loadNearbyVenues();
@@ -61,7 +61,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
       await _photoService.initialize();
       await _loadVenuePhotos();
     } catch (e) {
-      debugPrint('Error initializing photo service: $e');
+      // Debug output removed
       setState(() {
         _loadingPhotos = false;
         _photosLoaded = true;
@@ -88,7 +88,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
         _photosLoaded = true;
       });
     } catch (e) {
-      debugPrint('Error loading venue photos: $e');
+      // Debug output removed
       setState(() {
         _loadingPhotos = false;
         _photosLoaded = true;
@@ -121,7 +121,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
         lng = widget.venue.longitude!;
       }
       
-      debugPrint('🔍 Loading nearby venues around ${widget.venue.name} at $lat, $lng');
+      // Debug output removed
       
       // Find nearby restaurants and bars for recommendations
       final nearbyPlaces = await placesDataSource.fetchNearbyPlaces(
@@ -136,14 +136,14 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
         place.placeId != widget.venue.placeId
       ).toList();
       
-      debugPrint('🏢 Found ${filteredVenues.length} nearby venues for recommendations');
+      // Debug output removed
       
       setState(() {
         _nearbyVenues = filteredVenues;
         _loadingNearbyVenues = false;
       });
     } catch (e) {
-      debugPrint('❌ Error loading nearby venues: $e');
+      // Debug output removed
       setState(() {
         _loadingNearbyVenues = false;
       });
@@ -871,17 +871,17 @@ class VenueQuickSummary extends StatelessWidget {
   }
 
   void _callVenue() {
-    debugPrint('Calling venue: ${venue.name}');
+    // Debug output removed
     // Implementation for calling venue
   }
 
   void _getDirections() {
-    debugPrint('Getting directions to: ${venue.name}');
+    // Debug output removed
     // Implementation for getting directions
   }
 
   void _openDetails(BuildContext context) {
-    debugPrint('Opening venue details: ${venue.name}');
+    // Debug output removed
     // Implementation for opening venue details
   }
 } 

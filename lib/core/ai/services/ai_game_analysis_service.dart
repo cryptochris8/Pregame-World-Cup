@@ -24,14 +24,14 @@ class AIGameAnalysisService {
   /// Generate comprehensive AI analysis for a game
   Future<Map<String, dynamic>?> generateGameAnalysis(GameSchedule game) async {
     try {
-      debugPrint('🤖 AI ANALYSIS: Generating analysis for ${game.awayTeamName} vs ${game.homeTeamName}');
+      // Debug output removed
       LoggingService.info('🤖 Starting AI game analysis with team mapping', tag: 'AIAnalysis');
       
       // Step 1: Map team names to API keys for better data retrieval
       final homeTeamKey = TeamMappingService.getTeamKey(game.homeTeamName);
       final awayTeamKey = TeamMappingService.getTeamKey(game.awayTeamName);
       
-      debugPrint('🗺️ Team mapping: ${game.homeTeamName} -> $homeTeamKey, ${game.awayTeamName} -> $awayTeamKey');
+      // Debug output removed
       LoggingService.info('🗺️ Team keys mapped: $homeTeamKey vs $awayTeamKey', tag: 'AIAnalysis');
       
       // Step 2: Gather historical context with mapped team names
@@ -65,12 +65,12 @@ class AIGameAnalysisService {
         'generatedAt': DateTime.now().toIso8601String(),
       };
       
-      debugPrint('🤖 AI ANALYSIS: Generated comprehensive analysis with team mapping');
+      // Debug output removed
       LoggingService.info('🤖 Analysis completed successfully', tag: 'AIAnalysis');
       return analysis;
       
     } catch (e) {
-      debugPrint('🤖 AI ANALYSIS ERROR: Failed to generate analysis: $e');
+      // Debug output removed
       LoggingService.error('AI game analysis failed: $e', tag: 'AIAnalysis');
       return null;
     }
@@ -110,7 +110,7 @@ class AIGameAnalysisService {
       return context;
       
     } catch (e) {
-      debugPrint('🤖 AI ANALYSIS ERROR: Failed to gather historical context: $e');
+      // Debug output removed
       return {};
     }
   }
@@ -182,7 +182,7 @@ class AIGameAnalysisService {
       };
       
     } catch (e) {
-      debugPrint('🤖 AI INSIGHTS ERROR: Failed to generate AI insights: $e');
+      // Debug output removed
       
       // Fallback to basic OpenAI service
       try {
@@ -200,7 +200,7 @@ class AIGameAnalysisService {
           };
         }
       } catch (fallbackError) {
-        debugPrint('🤖 AI INSIGHTS FALLBACK ERROR: $fallbackError');
+        // Debug output removed
       }
       
       return null;
@@ -368,7 +368,7 @@ class AIGameAnalysisService {
       return prediction;
       
     } catch (e) {
-      debugPrint('🤖 PREDICTION ERROR: Failed to generate prediction: $e');
+      // Debug output removed
       return {
         'predictedWinner': null,
         'confidence': 0.5,
@@ -420,7 +420,7 @@ class AIGameAnalysisService {
       }
       
     } catch (e) {
-      debugPrint('🤖 KEY FACTORS ERROR: Failed to identify key factors: $e');
+      // Debug output removed
     }
     
     return factors;
@@ -463,7 +463,7 @@ class AIGameAnalysisService {
       return 'First-time matchup or limited historical data available';
       
     } catch (e) {
-      debugPrint('🤖 QUICK SUMMARY ERROR: $e');
+      // Debug output removed
       return 'Analysis unavailable';
     }
   }

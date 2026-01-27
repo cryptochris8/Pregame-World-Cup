@@ -16,7 +16,6 @@ class RouteService {
     String? apiKey,
   }) async {
     if (apiKey == null) {
-      print('Google Maps API key required for route calculation');
       return _getFallbackRoute(origin, destination);
     }
 
@@ -39,7 +38,6 @@ class RouteService {
       
       return _getFallbackRoute(origin, destination);
     } catch (e) {
-      print('Error calculating route: $e');
       return _getFallbackRoute(origin, destination);
     }
   }

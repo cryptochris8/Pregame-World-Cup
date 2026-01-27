@@ -37,7 +37,7 @@ class BracketCubit extends Cubit<BracketState> {
         emit(state.copyWith(focusedRound: activeRound));
       }
     } catch (e) {
-      debugPrint('Error loading bracket: $e');
+      // Debug output removed
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load bracket: $e',
@@ -67,7 +67,7 @@ class BracketCubit extends Cubit<BracketState> {
         }
       }
     } catch (e) {
-      debugPrint('Error refreshing bracket: $e');
+      // Debug output removed
       emit(state.copyWith(
         isRefreshing: false,
         errorMessage: 'Failed to refresh bracket: $e',

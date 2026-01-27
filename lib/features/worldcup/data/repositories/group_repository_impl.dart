@@ -26,7 +26,7 @@ class GroupRepositoryImpl implements GroupRepository {
       // Try cache first
       final cached = await _cacheDataSource.getCachedGroups();
       if (cached != null && cached.isNotEmpty) {
-        debugPrint('Returning ${cached.length} groups from cache');
+        // Debug output removed
         return cached;
       }
 
@@ -35,11 +35,11 @@ class GroupRepositoryImpl implements GroupRepository {
         final firestoreGroups = await _firestoreDataSource.getAllGroups();
         if (firestoreGroups.isNotEmpty) {
           await _cacheDataSource.cacheGroups(firestoreGroups);
-          debugPrint('Returning ${firestoreGroups.length} groups from Firestore');
+          // Debug output removed
           return firestoreGroups;
         }
       } catch (e) {
-        debugPrint('Firestore groups fetch failed: $e');
+        // Debug output removed
       }
 
       // Fetch from API
@@ -49,16 +49,16 @@ class GroupRepositoryImpl implements GroupRepository {
           return apiGroups;
         }
       } catch (e) {
-        debugPrint('API groups fetch failed: $e');
+        // Debug output removed
       }
 
       // Fallback to mock data for development/testing
-      debugPrint('Using mock groups data fallback');
+      // Debug output removed
       final mockGroups = WorldCupMockData.groups;
       await _cacheDataSource.cacheGroups(mockGroups);
       return mockGroups;
     } catch (e) {
-      debugPrint('Error getting all groups: $e');
+      // Debug output removed
       // Return mock data as final fallback
       return WorldCupMockData.groups;
     }
@@ -75,7 +75,7 @@ class GroupRepositoryImpl implements GroupRepository {
 
       return await _firestoreDataSource.getGroupByLetter(groupLetter);
     } catch (e) {
-      debugPrint('Error getting group by letter: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -86,7 +86,7 @@ class GroupRepositoryImpl implements GroupRepository {
       final allGroups = await getAllGroups();
       return allGroups.where((g) => !g.isComplete && g.currentMatchDay > 0).toList();
     } catch (e) {
-      debugPrint('Error getting active groups: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -97,7 +97,7 @@ class GroupRepositoryImpl implements GroupRepository {
       final allGroups = await getAllGroups();
       return allGroups.where((g) => g.isComplete).toList();
     } catch (e) {
-      debugPrint('Error getting completed groups: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -108,7 +108,7 @@ class GroupRepositoryImpl implements GroupRepository {
       final group = await getGroupByLetter(groupLetter);
       return group?.sortedStandings ?? [];
     } catch (e) {
-      debugPrint('Error getting group standings: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -134,7 +134,7 @@ class GroupRepositoryImpl implements GroupRepository {
 
       return qualified;
     } catch (e) {
-      debugPrint('Error getting qualified teams: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -170,7 +170,7 @@ class GroupRepositoryImpl implements GroupRepository {
         t.copyWith(hasQualified: true)
       ).toList();
     } catch (e) {
-      debugPrint('Error getting best third place teams: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -181,7 +181,7 @@ class GroupRepositoryImpl implements GroupRepository {
       await _firestoreDataSource.saveGroup(group);
       await _cacheDataSource.clearCache('worldcup_groups');
     } catch (e) {
-      debugPrint('Error updating group: $e');
+      // Debug output removed
       throw Exception('Failed to update group: $e');
     }
   }
@@ -201,7 +201,7 @@ class GroupRepositoryImpl implements GroupRepository {
         await updateGroup(updated);
       }
     } catch (e) {
-      debugPrint('Error updating group standings: $e');
+      // Debug output removed
       throw Exception('Failed to update group standings: $e');
     }
   }
@@ -254,7 +254,7 @@ class GroupRepositoryImpl implements GroupRepository {
       await updateGroup(updatedGroup);
       return updatedGroup;
     } catch (e) {
-      debugPrint('Error recalculating standings: $e');
+      // Debug output removed
       throw Exception('Failed to recalculate standings: $e');
     }
   }
@@ -262,7 +262,7 @@ class GroupRepositoryImpl implements GroupRepository {
   @override
   Future<List<WorldCupGroup>> refreshGroups() async {
     try {
-      debugPrint('Refreshing groups from API...');
+      // Debug output removed
       final apiGroups = await _apiDataSource.fetchGroupStandings();
 
       if (apiGroups.isNotEmpty) {
@@ -270,13 +270,13 @@ class GroupRepositoryImpl implements GroupRepository {
           await _firestoreDataSource.saveGroup(group);
         }
         await _cacheDataSource.cacheGroups(apiGroups);
-        debugPrint('Refreshed ${apiGroups.length} groups');
+        // Debug output removed
         return apiGroups;
       }
 
       return [];
     } catch (e) {
-      debugPrint('Error refreshing groups: $e');
+      // Debug output removed
       throw Exception('Failed to refresh groups: $e');
     }
   }

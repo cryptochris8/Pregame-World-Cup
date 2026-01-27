@@ -29,7 +29,7 @@ class WorldCupApiDataSource {
   /// Returns empty list if API doesn't have WC2026 data yet (expected before tournament)
   Future<List<WorldCupMatch>> fetchAllMatches() async {
     try {
-      debugPrint('Fetching World Cup matches from API...');
+      // Debug output removed
 
       final response = await _dio.get(
         '/scores/json/GamesByCompetition/$_worldCupCompetitionId',
@@ -38,14 +38,14 @@ class WorldCupApiDataSource {
       if (response.statusCode == 200 && response.data != null) {
         final List<dynamic> data = response.data as List<dynamic>;
         final matches = data.map((json) => _parseMatch(json)).toList();
-        debugPrint('Fetched ${matches.length} matches from API');
+        // Debug output removed
         return matches;
       }
 
       return [];
     } on DioException catch (e) {
       // WC2026 data not yet available on SportsData.io - this is expected
-      debugPrint('WorldCup API: Matches endpoint not available yet (WC2026 data pending)');
+      // Debug output removed
       return [];
     }
   }
@@ -101,7 +101,7 @@ class WorldCupApiDataSource {
   /// Returns empty list if API doesn't have WC2026 data yet
   Future<List<NationalTeam>> fetchAllTeams() async {
     try {
-      debugPrint('Fetching World Cup teams from API...');
+      // Debug output removed
 
       final response = await _dio.get(
         '/scores/json/Teams/$_worldCupCompetitionId',
@@ -110,14 +110,14 @@ class WorldCupApiDataSource {
       if (response.statusCode == 200 && response.data != null) {
         final List<dynamic> data = response.data as List<dynamic>;
         final teams = data.map((json) => _parseTeam(json)).toList();
-        debugPrint('Fetched ${teams.length} teams from API');
+        // Debug output removed
         return teams;
       }
 
       return [];
     } on DioException {
       // WC2026 data not yet available on SportsData.io - expected before tournament
-      debugPrint('WorldCup API: Teams endpoint not available yet (WC2026 data pending)');
+      // Debug output removed
       return [];
     }
   }
@@ -138,7 +138,7 @@ class WorldCupApiDataSource {
       return [];
     } on DioException {
       // WC2026 data not yet available on SportsData.io - expected before tournament
-      debugPrint('WorldCup API: Standings endpoint not available yet (WC2026 data pending)');
+      // Debug output removed
       return [];
     }
   }
@@ -182,7 +182,7 @@ class WorldCupApiDataSource {
       // Return static venue data if API doesn't have it
       return WorldCupVenues.all;
     } on DioException catch (e) {
-      debugPrint('API Error fetching venues: ${e.message}');
+      // Debug output removed
       // Return static venue data as fallback
       return WorldCupVenues.all;
     }

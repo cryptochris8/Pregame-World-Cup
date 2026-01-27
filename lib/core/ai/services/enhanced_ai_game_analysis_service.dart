@@ -21,14 +21,14 @@ class EnhancedAIGameAnalysisService {
   /// Generate comprehensive AI analysis for a game with proper team mapping
   Future<Map<String, dynamic>?> generateGameAnalysis(GameSchedule game) async {
     try {
-      debugPrint('🤖 ENHANCED AI: Analyzing ${game.awayTeamName} @ ${game.homeTeamName}');
+      // Debug output removed
       LoggingService.info('🤖 Starting enhanced game analysis', tag: 'EnhancedAI');
       
       // Step 1: Map team names to API keys
       final homeTeamKey = TeamMappingService.getTeamKey(game.homeTeamName);
       final awayTeamKey = TeamMappingService.getTeamKey(game.awayTeamName);
       
-      debugPrint('🗺️ Team mapping: ${game.homeTeamName} -> $homeTeamKey, ${game.awayTeamName} -> $awayTeamKey');
+      // Debug output removed
       
       // Step 2: Gather data from multiple sources with fallbacks
       final analysisData = await _gatherComprehensiveData(
@@ -67,13 +67,13 @@ class EnhancedAIGameAnalysisService {
         'generatedAt': DateTime.now().toIso8601String(),
       };
       
-      debugPrint('🤖 ENHANCED AI: Analysis generated successfully');
+      // Debug output removed
       LoggingService.info('✅ Enhanced game analysis completed', tag: 'EnhancedAI');
       
       return analysis;
       
     } catch (e) {
-      debugPrint('🤖 ENHANCED AI ERROR: $e');
+      // Debug output removed
       LoggingService.error('Enhanced AI analysis failed: $e', tag: 'EnhancedAI');
       
       // Return intelligent fallback
@@ -125,10 +125,10 @@ class EnhancedAIGameAnalysisService {
         data['dataQuality'] = 'fallback_historical';
       }
       
-      debugPrint('📊 Data quality: ${data['dataQuality']}');
+      // Debug output removed
       
     } catch (e) {
-      debugPrint('⚠️ Data gathering error: $e');
+      // Debug output removed
       data['homeTeamData'] = _getMockTeamData(homeTeam);
       data['awayTeamData'] = _getMockTeamData(awayTeam);
       data['dataQuality'] = 'fallback_data';
@@ -140,13 +140,13 @@ class EnhancedAIGameAnalysisService {
   /// Get team historical data and season analysis
   Future<Map<String, dynamic>?> _getTeamData(String teamKey, String teamName) async {
     try {
-      debugPrint('📊 GETTING HISTORICAL DATA: $teamName');
+      // Debug output removed
       
       // Get season review for the team
       final seasonReview = await _historicalAnalysis.generateSeasonReview(teamName);
       
       if (seasonReview.isNotEmpty) {
-        debugPrint('✅ Got historical data for $teamName (${seasonReview['gameCount']} games, ${seasonReview['dataSource']})');
+        // Debug output removed
         return {
           'seasonReview': seasonReview,
           'teamName': teamName,
@@ -158,7 +158,7 @@ class EnhancedAIGameAnalysisService {
       }
       
       // Even fallback provides realistic historical data
-      debugPrint('✅ Using fallback historical data for $teamName');
+      // Debug output removed
       return {
         'seasonReview': seasonReview,
         'teamName': teamName,
@@ -167,7 +167,7 @@ class EnhancedAIGameAnalysisService {
       };
       
     } catch (e) {
-      debugPrint('❌ Error getting historical data for $teamName: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -249,7 +249,7 @@ class EnhancedAIGameAnalysisService {
       };
       
     } catch (e) {
-      debugPrint('! AI insights generation failed: $e');
+      // Debug output removed
       LoggingService.error('AI analysis failed for ${game.awayTeamName} @ ${game.homeTeamName}: $e', tag: 'EnhancedAI');
       
       // Check if service is initialized

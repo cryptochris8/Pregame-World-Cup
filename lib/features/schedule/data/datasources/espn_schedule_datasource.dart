@@ -27,12 +27,12 @@ class ESPNScheduleDataSource {
     final cacheKey = 'espn_upcoming_games_$limit';
     
     try {
-      debugPrint('🏈 ESPN DataSource: Fetching upcoming games...');
+      // Debug output removed
       
       // Check cache first
       final cachedGames = await _cacheService.get<List<dynamic>>(cacheKey);
       if (cachedGames != null) {
-        debugPrint('📦 ESPN Cache HIT: Found cached upcoming games');
+        // Debug output removed
         return cachedGames.map((e) => GameSchedule.fromMap(e as Map<String, dynamic>)).toList();
       }
       
@@ -44,16 +44,16 @@ class ESPNScheduleDataSource {
         final gamesMaps = games.map((game) => game.toMap()).toList();
         await _cacheService.set(cacheKey, gamesMaps, duration: _upcomingGamesCacheDuration);
         
-        debugPrint('✅ ESPN DataSource: Successfully fetched ${games.length} upcoming games');
+        // Debug output removed
         LoggingService.info('ESPN DataSource: Fetched ${games.length} upcoming games');
         
         return games;
       } else {
-        debugPrint('⚠️ ESPN DataSource: No upcoming games found');
+        // Debug output removed
         return [];
       }
     } catch (e) {
-      debugPrint('❌ ESPN DataSource Error: $e');
+      // Debug output removed
       LoggingService.error('ESPN DataSource error fetching upcoming games: $e');
       return [];
     }
@@ -64,12 +64,12 @@ class ESPNScheduleDataSource {
     final cacheKey = 'espn_2025_season_schedule_$limit';
     
     try {
-      debugPrint('🏈 ESPN DataSource: Fetching 2025 season schedule...');
+      // Debug output removed
       
       // Check cache first (longer cache for full season)
       final cachedGames = await _cacheService.get<List<dynamic>>(cacheKey);
       if (cachedGames != null) {
-        debugPrint('📦 ESPN Cache HIT: Found cached 2025 season schedule');
+        // Debug output removed
         return cachedGames.map((e) => GameSchedule.fromMap(e as Map<String, dynamic>)).toList();
       }
       
@@ -81,18 +81,18 @@ class ESPNScheduleDataSource {
         final gamesMaps = games.map((game) => game.toMap()).toList();
         await _cacheService.set(cacheKey, gamesMaps, duration: _fullSeasonCacheDuration);
         
-        debugPrint('✅ ESPN DataSource: Successfully fetched ${games.length} games for 2025 season');
-        debugPrint('🎯 ESPN DataSource: First game: ${games.first.awayTeamName} vs ${games.first.homeTeamName} on ${games.first.dateTime}');
+        // Debug output removed
+        // Debug output removed
         
         LoggingService.info('ESPN DataSource: Fetched ${games.length} games for 2025 season');
         
         return games;
       } else {
-        debugPrint('⚠️ ESPN DataSource: No 2025 season games found');
+        // Debug output removed
         return [];
       }
     } catch (e) {
-      debugPrint('❌ ESPN DataSource Error: $e');
+      // Debug output removed
       LoggingService.error('ESPN DataSource error fetching 2025 season: $e');
       return [];
     }
@@ -104,12 +104,12 @@ class ESPNScheduleDataSource {
     final cacheKey = 'espn_${year}_season_schedule_$limit';
     
     try {
-      debugPrint('🏈 ESPN DataSource: Fetching $year historical season schedule...');
+      // Debug output removed
       
       // Check cache first (longer cache for historical data since it doesn't change)
       final cachedGames = await _cacheService.get<List<dynamic>>(cacheKey);
       if (cachedGames != null) {
-        debugPrint('📦 ESPN Cache HIT: Found cached $year season schedule');
+        // Debug output removed
         return cachedGames.map((e) => GameSchedule.fromMap(e as Map<String, dynamic>)).toList();
       }
       
@@ -125,12 +125,12 @@ class ESPNScheduleDataSource {
         final completedGames = games.where((game) => 
           game.awayScore != null && game.homeScore != null).length;
         
-        debugPrint('✅ ESPN DataSource: Successfully fetched ${games.length} games for $year season');
-        debugPrint('🎯 ESPN DataSource: $completedGames games have historical scores');
+        // Debug output removed
+        // Debug output removed
         if (games.isNotEmpty) {
-          debugPrint('🎯 ESPN DataSource: First game: ${games.first.awayTeamName} vs ${games.first.homeTeamName} on ${games.first.dateTime}');
+          // Debug output removed
           if (games.first.awayScore != null && games.first.homeScore != null) {
-            debugPrint('🎯 ESPN DataSource: Score: ${games.first.awayTeamName} ${games.first.awayScore} - ${games.first.homeScore} ${games.first.homeTeamName}');
+            // Debug output removed
           }
         }
         
@@ -138,11 +138,11 @@ class ESPNScheduleDataSource {
         
         return games;
       } else {
-        debugPrint('⚠️ ESPN DataSource: No $year season games found');
+        // Debug output removed
         return [];
       }
     } catch (e) {
-      debugPrint('❌ ESPN DataSource Error: $e');
+      // Debug output removed
       LoggingService.error('ESPN DataSource error fetching $year season: $e');
       return [];
     }
@@ -165,10 +165,10 @@ class ESPNScheduleDataSource {
         await _cacheService.remove(key);
       }
       
-      debugPrint('🧹 ESPN DataSource: Cache cleared successfully');
+      // Debug output removed
       LoggingService.info('ESPN DataSource: Cache cleared');
     } catch (e) {
-      debugPrint('❌ ESPN DataSource: Error clearing cache: $e');
+      // Debug output removed
       LoggingService.error('ESPN DataSource: Error clearing cache: $e');
     }
   }
@@ -176,19 +176,19 @@ class ESPNScheduleDataSource {
   /// Test ESPN API connectivity
   Future<bool> testConnection() async {
     try {
-      debugPrint('🔍 ESPN DataSource: Testing API connectivity...');
+      // Debug output removed
       
       final testGames = await _espnService.getCurrentGames();
       
       if (testGames.isNotEmpty) {
-        debugPrint('✅ ESPN DataSource: API connection successful');
+        // Debug output removed
         return true;
       } else {
-        debugPrint('⚠️ ESPN DataSource: API connected but no games found');
+        // Debug output removed
         return false;
       }
     } catch (e) {
-      debugPrint('❌ ESPN DataSource: API connection failed: $e');
+      // Debug output removed
       return false;
     }
   }
@@ -196,7 +196,7 @@ class ESPNScheduleDataSource {
   /// Get filtered games by team names
   Future<List<GameSchedule>> getGamesByTeams(List<String> teamNames, {int limit = 50}) async {
     try {
-      debugPrint('🏈 ESPN DataSource: Filtering games by teams: $teamNames');
+      // Debug output removed
       
       final allGames = await fetch2025SeasonSchedule(limit: limit);
       
@@ -207,11 +207,11 @@ class ESPNScheduleDataSource {
         );
       }).toList();
       
-      debugPrint('🎯 ESPN DataSource: Found ${filteredGames.length} games for specified teams');
+      // Debug output removed
       
       return filteredGames;
     } catch (e) {
-      debugPrint('❌ ESPN DataSource Error filtering by teams: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -219,7 +219,7 @@ class ESPNScheduleDataSource {
   /// Get games for a specific date range
   Future<List<GameSchedule>> getGamesInDateRange(DateTime startDate, DateTime endDate, {int limit = 100}) async {
     try {
-      debugPrint('🏈 ESPN DataSource: Fetching games between ${startDate.toIso8601String()} and ${endDate.toIso8601String()}');
+      // Debug output removed
       
       final allGames = await fetch2025SeasonSchedule(limit: limit);
       
@@ -229,11 +229,11 @@ class ESPNScheduleDataSource {
         return gameDate.isAfter(startDate) && gameDate.isBefore(endDate);
       }).toList();
       
-      debugPrint('🎯 ESPN DataSource: Found ${filteredGames.length} games in date range');
+      // Debug output removed
       
       return filteredGames;
     } catch (e) {
-      debugPrint('❌ ESPN DataSource Error filtering by date range: $e');
+      // Debug output removed
       return [];
     }
   }

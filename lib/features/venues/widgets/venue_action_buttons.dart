@@ -167,7 +167,7 @@ class VenueActionButtons extends StatelessWidget {
         }
       }
     } catch (e) {
-      print('Error opening directions: $e');
+      // Error handled silently
       _showErrorDialog(context, 'Could not open directions');
     }
   }
@@ -208,7 +208,7 @@ class VenueActionButtons extends StatelessWidget {
         },
       );
     } catch (e) {
-      print('Error sharing venue: $e');
+      // Error handled silently
       _showErrorDialog(context, 'Could not share venue');
     }
   }
@@ -441,16 +441,16 @@ class VenueQuickActions extends StatelessWidget {
 
   void _getDirections(BuildContext context) {
     // Implementation same as above
-    print('Quick directions to: ${venue.name}');
+    // Quick directions action
   }
 
   void _callVenue(BuildContext context) {
     // Implementation same as above
-    print('Quick call to: ${venue.name}');
+    // Quick call action
   }
 
   void _shareVenue(BuildContext context) {
     // Implementation same as above
-    print('Quick share: ${venue.name}');
+    // Quick share action
   }
 } 

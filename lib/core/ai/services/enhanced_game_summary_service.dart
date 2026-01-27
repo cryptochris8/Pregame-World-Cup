@@ -25,7 +25,7 @@ class EnhancedGameSummaryService {
   /// Generate comprehensive game summary
   Future<Map<String, dynamic>> generateEnhancedSummary(GameSchedule game) async {
     try {
-      debugPrint('📝 ENHANCED SUMMARY: Generating summary for ${game.awayTeamName} @ ${game.homeTeamName}');
+      // Debug output removed
       
       // Step 1: Gather comprehensive data
       final teamData = await _gatherTeamData(game.homeTeamName, game.awayTeamName);
@@ -41,12 +41,12 @@ class EnhancedGameSummaryService {
       // Step 4: Combine all elements
       final comprehensiveSummary = _combineAllElements(narrativeSummary, structuredSummary);
       
-      debugPrint('📝 ENHANCED SUMMARY: Generated comprehensive summary');
+      // Debug output removed
       
       return comprehensiveSummary;
       
     } catch (e) {
-      debugPrint('📝 ENHANCED SUMMARY ERROR: $e');
+      // Debug output removed
       LoggingService.error('Enhanced game summary failed: $e', tag: 'EnhancedSummary');
       return _generateIntelligentFallbackSummary(game);
     }
@@ -78,10 +78,10 @@ class EnhancedGameSummaryService {
         'weaknesses': _identifyTeamWeaknesses({}),
       };
 
-      debugPrint('TEAM DATA: Gathered comprehensive stats for both teams');
+      // Debug output removed
 
     } catch (e) {
-      debugPrint('TEAM DATA: Error gathering team data: $e');
+      // Debug output removed
     }
 
     return teamData;
@@ -98,7 +98,7 @@ class EnhancedGameSummaryService {
       };
 
     } catch (e) {
-      debugPrint('HISTORICAL DATA: Error gathering historical data: $e');
+      // Debug output removed
       return {
         'rivalryInfo': _analyzeRivalryStatus(homeTeam, awayTeam),
       };
@@ -157,7 +157,7 @@ class EnhancedGameSummaryService {
       return aiResponse;
       
     } catch (e) {
-      debugPrint('⚠️ NARRATIVE SUMMARY: Error generating AI narrative: $e');
+      // Debug output removed
       return _generateFallbackNarrative(game, teamData, gameContext);
     }
   }

@@ -46,13 +46,13 @@ class AITeamSeasonSummaryService {
   /// Generate a comprehensive season summary for a team
   Future<Map<String, dynamic>> generateTeamSeasonSummary(String teamName, {int season = 2024}) async {
     try {
-      debugPrint('📊 TEAM SUMMARY: Generating comprehensive summary for $teamName ($season season)');
+      // Debug output removed
       
       // Check cache first (temporarily disabled to fetch fresh data with expanded date range)
       final cacheKey = 'team_season_summary_${teamName}_$season';
       // final cached = await _cacheService.get<Map<String, dynamic>>(cacheKey);
       // if (cached != null) {
-      //   debugPrint('📊 TEAM SUMMARY: Using cached summary for $teamName');
+      //   // Debug output removed
       //   return cached;
       // }
       
@@ -68,7 +68,7 @@ class AITeamSeasonSummaryService {
         allTeamNames.add(game.awayTeamName);
       }
       final sortedTeamNames = allTeamNames.toList()..sort();
-      debugPrint('📊 ALL TEAMS in $season data: ${sortedTeamNames.take(10).join(", ")}... (${sortedTeamNames.length} total)');
+      // Debug output removed
       
       // Create better team name matching logic
       final teamGames = _findTeamGames(games, teamName);
@@ -76,10 +76,10 @@ class AITeamSeasonSummaryService {
       // Log the result
       if (teamGames.isNotEmpty) {
         final actualTeamName = teamGames.first.homeTeamName == teamName ? teamGames.first.homeTeamName : teamGames.first.awayTeamName;
-        debugPrint('📊 FOUND TEAM GAMES: Using team name "$actualTeamName" for search "$teamName"');
+        // Debug output removed
       }
       
-      debugPrint('📊 TEAM GAMES: Found ${teamGames.length} total games for $teamName in $season');
+      // Debug output removed
       
       // Count games with and without scores
       final gamesWithScores = teamGames.where((game) => 
@@ -89,18 +89,18 @@ class AITeamSeasonSummaryService {
         game.homeScore == null || game.awayScore == null
       ).toList();
       
-      debugPrint('📊 SCORE STATUS: $teamName has ${gamesWithScores.length} games with scores, ${gamesWithoutScores.length} without scores');
+      // Debug output removed
       
       // Log some example games to see what we're getting
       if (teamGames.isNotEmpty) {
-        debugPrint('📊 SAMPLE GAMES for $teamName:');
+        // Debug output removed
         for (int i = 0; i < min(3, teamGames.length); i++) {
           final game = teamGames[i];
           final opponent = game.homeTeamName == teamName ? game.awayTeamName : game.homeTeamName;
           final scores = game.homeScore != null && game.awayScore != null 
             ? '${game.awayScore}-${game.homeScore}' 
             : 'No scores';
-          debugPrint('   Game ${i+1}: vs $opponent - $scores (${game.status})');
+          // Debug output removed
         }
       }
       
@@ -116,11 +116,11 @@ class AITeamSeasonSummaryService {
       // Cache the result for 24 hours
       await _cacheService.set(cacheKey, summary, duration: const Duration(hours: 24));
       
-      debugPrint('📊 TEAM SUMMARY: Generated comprehensive summary for $teamName');
+      // Debug output removed
       return summary;
       
     } catch (e) {
-      debugPrint('📊 TEAM SUMMARY ERROR: Failed to generate summary for $teamName: $e');
+      // Debug output removed
       LoggingService.error('Team season summary generation failed: $e', tag: 'TeamSummary');
       
       // Return a fallback summary
@@ -197,16 +197,16 @@ class AITeamSeasonSummaryService {
       game.homeScore == null || game.awayScore == null
     ).toList();
     
-    debugPrint('📊 SEASON CALC: $teamName has ${completedGames.length} completed games with scores');
-    debugPrint('📊 SEASON CALC: $teamName has ${scheduledGames.length} games without scores');
+    // Debug output removed
+    // Debug output removed
     
     // Log the scheduled games to see what's missing
     if (scheduledGames.isNotEmpty) {
-      debugPrint('📊 MISSING SCORES for $teamName:');
+      // Debug output removed
       for (int i = 0; i < min(5, scheduledGames.length); i++) {
         final game = scheduledGames[i];
         final opponent = game.homeTeamName == teamName ? game.awayTeamName : game.homeTeamName;
-        debugPrint('   ${game.dateTime?.toString().substring(0, 10) ?? 'No date'}: vs $opponent (Status: ${game.status})');
+        // Debug output removed
       }
     }
     
@@ -910,7 +910,7 @@ class AITeamSeasonSummaryService {
         game.homeTeamName == variation || game.awayTeamName == variation
       ).toList();
       if (matches.isNotEmpty) {
-        debugPrint('📊 TEAM NAME MATCH: "$teamName" -> "$variation"');
+        // Debug output removed
         return matches;
       }
     }
@@ -947,14 +947,14 @@ class AITeamSeasonSummaryService {
         final matchedName = meaningfulKeywords.any((keyword) => 
           firstMatch.homeTeamName.toLowerCase().contains(keyword)
         ) ? firstMatch.homeTeamName : firstMatch.awayTeamName;
-        debugPrint('📊 STRICT PARTIAL MATCH: "$teamName" -> "$matchedName"');
+        // Debug output removed
       }
     }
     
     // If still no matches, log the available teams for debugging
     if (matches.isEmpty) {
-      debugPrint('📊 NO MATCH FOUND: No games found for "$teamName" in data');
-      debugPrint('📊 SUGGESTION: Team may not be in the 25-game sample or uses different name format');
+      // Debug output removed
+      // Debug output removed
     }
     
     return matches;

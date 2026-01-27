@@ -394,10 +394,10 @@ Future<void> backgroundCallback(Uri? uri) async {
       // Get shared preferences and load cached match data
       final prefs = await SharedPreferences.getInstance();
       final lastUpdate = prefs.getString('widget_last_update');
-      debugPrint('Widget refresh requested. Last update: $lastUpdate');
+      // Debug output removed
       // The widget will be updated on next app launch or periodic refresh
     } catch (e) {
-      debugPrint('Background callback error: $e');
+      // Debug output removed
     }
   }
 }

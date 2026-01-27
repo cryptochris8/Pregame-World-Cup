@@ -104,11 +104,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
         setState(() {
           _favoriteTeams = favorites;
         });
-        
-        // Debug: Print loaded favorite teams
-        print('🏈 Loaded favorite teams: $_favoriteTeams');
-        print('🏈 Show favorites only: $_showFavoritesOnly');
-        
+
         // Trigger a refresh of the current schedule state with new favorites
         _loadGames();
       }
@@ -126,11 +122,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
     setState(() {
       _showFavoritesOnly = !_showFavoritesOnly;
     });
-    
-    // Debug: Print toggle state
-    print('🏈 Toggled favorites filter to: $_showFavoritesOnly');
-    print('🏈 Current favorite teams: $_favoriteTeams');
-    
+
     // Update the bloc with new filter state
     _loadGames();
   }
@@ -151,12 +143,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   }
 
   void _loadGames() {
-    print('🎯 SCHEDULE DEBUG: _loadGames() called');
-    print('🎯 SCHEDULE DEBUG: Show favorites only: $_showFavoritesOnly');
-    print('🎯 SCHEDULE DEBUG: Favorite teams: $_favoriteTeams');
-
     // Load upcoming games
-    print('🎯 SCHEDULE DEBUG: Loading upcoming games');
     context.read<ScheduleBloc>().add(const GetUpcomingGamesEvent(limit: 100));
 
     // Apply the favorite team filter
@@ -170,24 +157,17 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   /// This ensures the app always shows 2025 games immediately
   Future<void> _clearCacheAndForceRefresh() async {
     try {
-      print('🚀 STARTUP: Forcing cache clear and 2025 refresh');
-      
       // Use the same logic as the menu's clear_cache option
       await CacheService.instance.clearCache();
-      print('🧹 STARTUP: Cache cleared');
-      
+
       // Small delay to ensure cache is cleared
       await Future.delayed(Duration(milliseconds: 500));
-      
+
       // Force refresh to get fresh 2025 data (same as menu refresh)
       if (mounted) {
         context.read<ScheduleBloc>().add(const ForceRefreshUpcomingGamesEvent(limit: 100));
-        print('🔄 STARTUP: Force refresh event sent');
       }
-      
-      print('✅ STARTUP: Cache cleared and 2025 games loading');
     } catch (e) {
-      print('⚠️ STARTUP: Error in cache clear and refresh: $e');
       // Fallback to regular load
       _loadGames();
     }
@@ -263,9 +243,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                   }
                   break;
                 case 'refresh':
-                  print('🔄 MENU: Regular refresh triggered');
                   context.read<ScheduleBloc>().add(const ForceRefreshUpcomingGamesEvent(limit: 100));
-                  print('🔄 MENU: Force refresh event sent');
                   break;
               }
             },

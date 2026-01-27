@@ -651,7 +651,7 @@ class _VenueRoutePanelState extends State<VenueRoutePanel>
   void _shareRoute() {
     // Implementation for sharing route
     HapticFeedback.lightImpact();
-    print('Sharing route to ${widget.venue.name}');
+    // Share route action
   }
 }
 

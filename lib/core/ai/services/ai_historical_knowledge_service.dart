@@ -30,7 +30,6 @@ class AIHistoricalKnowledgeService {
   /// This should be called during app startup in the background
   Future<void> initializeKnowledgeBase() async {
     try {
-      debugPrint('AI KNOWLEDGE: Starting historical data initialization...');
       LoggingService.info('AI Knowledge Base initialization started', tag: 'AIKnowledge');
 
       // Check if we already have all seasons cached
@@ -38,21 +37,16 @@ class AIHistoricalKnowledgeService {
       final missingSeasons = _allHistoricalSeasons.where((season) => !cachedSeasons.contains(season)).toList();
 
       if (missingSeasons.isEmpty) {
-        debugPrint('AI KNOWLEDGE: All historical seasons already cached');
         LoggingService.info('AI Knowledge Base: All seasons cached', tag: 'AIKnowledge');
         return;
       }
 
-      debugPrint('AI KNOWLEDGE: Need to fetch ${missingSeasons.length} seasons: $missingSeasons');
-
       // Update the cached seasons list
       await _updateCachedSeasonsList();
 
-      debugPrint('AI KNOWLEDGE: Historical data initialization complete!');
       LoggingService.info('AI Knowledge Base initialization complete', tag: 'AIKnowledge');
 
     } catch (e) {
-      debugPrint('AI KNOWLEDGE ERROR: Failed to initialize knowledge base: $e');
       LoggingService.error('AI Knowledge Base initialization failed: $e', tag: 'AIKnowledge');
     }
   }
@@ -84,10 +78,10 @@ class AIHistoricalKnowledgeService {
       final statsKey = 'ai_knowledge_stats_$season';
       await _cacheService.set(statsKey, stats, duration: _historicalCacheDuration);
       
-      debugPrint('🧠 AI KNOWLEDGE: Created statistics for $season season');
+      // Statistics created for season
       
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to create stats for $season: $e');
+      // Error creating statistics handled silently
     }
   }
   
@@ -158,7 +152,7 @@ class AIHistoricalKnowledgeService {
         return cachedList.cast<int>();
       }
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE: Error getting cached seasons: $e');
+      // Debug output removed
     }
     return [];
   }
@@ -168,7 +162,7 @@ class AIHistoricalKnowledgeService {
     try {
       await _cacheService.set('ai_knowledge_cached_seasons', _allHistoricalSeasons, duration: _historicalCacheDuration);
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE: Error updating cached seasons list: $e');
+      // Debug output removed
     }
   }
   
@@ -182,10 +176,10 @@ class AIHistoricalKnowledgeService {
         return cachedData.map((gameData) => GameSchedule.fromMap(gameData as Map<String, dynamic>)).toList();
       }
 
-      debugPrint('AI KNOWLEDGE: Season $season not cached');
+      // Debug output removed
 
     } catch (e) {
-      debugPrint('AI KNOWLEDGE ERROR: Failed to get historical games for $season: $e');
+      // Debug output removed
     }
 
     return [];
@@ -197,7 +191,7 @@ class AIHistoricalKnowledgeService {
       final statsKey = 'ai_knowledge_stats_$season';
       return await _cacheService.get<Map<String, dynamic>>(statsKey);
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to get season statistics for $season: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -234,7 +228,7 @@ class AIHistoricalKnowledgeService {
       return allHistory['allTimeRecord']['totalGames'] > 0 ? allHistory : null;
       
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to get head-to-head history: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -264,7 +258,7 @@ class AIHistoricalKnowledgeService {
       return trends['seasonRecords'].isNotEmpty ? trends : null;
       
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to get team trends: $e');
+      // Debug output removed
       return null;
     }
   }

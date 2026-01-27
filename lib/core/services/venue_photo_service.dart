@@ -28,9 +28,7 @@ class VenuePhotoService {
       _photosBox = await Hive.openBox<CachedVenuePhotos>(_photoCacheBox);
       await _cleanExpiredPhotos();
       _isInitialized = true;
-      print('VenuePhotoService initialized successfully');
     } catch (e) {
-      print('Error initializing VenuePhotoService: $e');
       _isInitialized = false;
     }
   }
@@ -64,10 +62,8 @@ class VenuePhotoService {
     try {
       // Check if service is initialized
       if (!_isInitialized || _photosBox == null) {
-        print('Warning: VenuePhotoService not initialized, attempting to initialize...');
         await initialize();
         if (!_isInitialized || _photosBox == null) {
-          print('Error: Failed to initialize VenuePhotoService');
           return [];
         }
       }
@@ -94,7 +90,6 @@ class VenuePhotoService {
       
       // Fetch from Google Places API
       if (apiKey == null) {
-        print('Warning: No API key provided for photo fetching');
         return [];
       }
       
@@ -117,13 +112,11 @@ class VenuePhotoService {
       await _photosBox!.put(placeId, newCachedPhotos);
       
       PerformanceMonitor.endApiCall('photo_fetch_$placeId', success: true);
-      print('Cached ${photoUrls.length} photos for place $placeId');
-      
+
       return photoUrls;
       
     } catch (e) {
       PerformanceMonitor.endApiCall('photo_fetch_$placeId', success: false);
-      print('Error fetching venue photos: $e');
       return [];
     }
   }
@@ -177,7 +170,6 @@ class VenuePhotoService {
       return photoUrls;
       
     } catch (e) {
-      print('Error fetching photos from API: $e');
       return [];
     }
   }

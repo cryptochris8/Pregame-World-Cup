@@ -11,7 +11,7 @@ class MultiProviderAIDemo {
   
   /// Demonstrate enhanced game prediction
   static Future<void> demoGamePrediction() async {
-    debugPrint('🎯 DEMO: Enhanced Game Prediction');
+    // Debug output removed
     
     try {
       final prediction = await _multiAI.generateEnhancedGamePrediction(
@@ -26,21 +26,21 @@ class MultiProviderAIDemo {
         },
       );
       
-      debugPrint('📊 PREDICTION RESULT:');
-      debugPrint('Winner: ${prediction['prediction']}');
-      debugPrint('Confidence: ${prediction['confidence']}%');
-      debugPrint('Key Factors: ${prediction['keyFactors']}');
-      debugPrint('AI Provider: ${prediction['provider']}');
-      debugPrint('Analysis: ${prediction['analysis']}');
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
       
     } catch (e) {
-      debugPrint('❌ DEMO ERROR: Game prediction failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate comprehensive sports analysis
   static Future<void> demoSportsAnalysis() async {
-    debugPrint('🏈 DEMO: Comprehensive Sports Analysis');
+    // Debug output removed
     
     try {
       final analysis = await _multiAI.generateSportsAnalysis(
@@ -55,17 +55,17 @@ class MultiProviderAIDemo {
         },
       );
       
-      debugPrint('📋 ANALYSIS RESULT:');
-      debugPrint('Strategic Analysis: $analysis');
+      // Debug output removed
+      // Debug output removed
       
     } catch (e) {
-      debugPrint('❌ DEMO ERROR: Sports analysis failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate historical analysis
   static Future<void> demoHistoricalAnalysis() async {
-    debugPrint('📚 DEMO: Historical Analysis');
+    // Debug output removed
     
     try {
       final historical = await _multiAI.generateHistoricalAnalysis(
@@ -80,17 +80,17 @@ class MultiProviderAIDemo {
         },
       );
       
-      debugPrint('🏛️ HISTORICAL RESULT:');
-      debugPrint('Historical Context: $historical');
+      // Debug output removed
+      // Debug output removed
       
     } catch (e) {
-      debugPrint('❌ DEMO ERROR: Historical analysis failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate venue recommendations
   static Future<void> demoVenueRecommendations() async {
-    debugPrint('🍻 DEMO: Venue Recommendations');
+    // Debug output removed
     
     try {
       final venues = await _multiAI.generateVenueRecommendations(
@@ -104,49 +104,49 @@ class MultiProviderAIDemo {
         },
       );
       
-      debugPrint('🏟️ VENUE RECOMMENDATIONS:');
+      // Debug output removed
       for (final venue in venues) {
-        debugPrint('Name: ${venue['name']}');
-        debugPrint('Description: ${venue['description']}');
-        debugPrint('Confidence: ${venue['confidence']}');
-        debugPrint('---');
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
       }
       
     } catch (e) {
-      debugPrint('❌ DEMO ERROR: Venue recommendations failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate provider status and routing
   static Future<void> demoProviderStatus() async {
-    debugPrint('⚙️ DEMO: Provider Status');
+    // Debug output removed
     
     try {
       final status = _multiAI.getProviderStatus();
       
-      debugPrint('🤖 AI PROVIDER STATUS:');
-      debugPrint('OpenAI Available: ${status['openai']['available']}');
-      debugPrint('OpenAI Model: ${status['openai']['model']}');
-      debugPrint('Claude Available: ${status['claude']['available']}');
-      debugPrint('Claude Model: ${status['claude']['model']}');
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
       
-      debugPrint('🎯 OPTIMAL ROUTING:');
+      // Debug output removed
       final routing = status['optimal_routing'];
-      debugPrint('Game Predictions: ${routing['game_predictions']}');
-      debugPrint('Sports Analysis: ${routing['sports_analysis']}');
-      debugPrint('Venue Recommendations: ${routing['venue_recommendations']}');
-      debugPrint('Embeddings: ${routing['embeddings']}');
-      debugPrint('Quick Responses: ${routing['quick_responses']}');
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
       
     } catch (e) {
-      debugPrint('❌ DEMO ERROR: Provider status failed: $e');
+      // Debug output removed
     }
   }
   
   /// Run all demos
   static Future<void> runAllDemos() async {
-    debugPrint('🚀 STARTING MULTI-PROVIDER AI DEMOS');
-    debugPrint('=' * 50);
+    // Debug output removed
+    // Debug output removed
     
     await demoProviderStatus();
     await Future.delayed(Duration(seconds: 2));
@@ -162,8 +162,8 @@ class MultiProviderAIDemo {
     
     await demoVenueRecommendations();
     
-    debugPrint('=' * 50);
-    debugPrint('✅ ALL MULTI-PROVIDER AI DEMOS COMPLETED');
+    // Debug output removed
+    // Debug output removed
   }
 }
 

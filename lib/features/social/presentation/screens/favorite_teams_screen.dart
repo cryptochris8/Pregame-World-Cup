@@ -65,9 +65,6 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
           _favoriteTeams.addAll(favorites);
           _isLoadingExisting = false;
         });
-        
-        // Debug: Print loaded teams
-        print('🏈 Loaded existing favorite teams: $favorites');
       }
     } catch (e) {
       if (mounted) {
@@ -112,13 +109,9 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
           }, SetOptions(merge: true));
         } catch (e) {
           // Firebase save failed, but local save succeeded
-          print('Failed to save to Firebase: $e');
         }
       }
-      
-      // Debug: Print saved teams
-      print('🏈 Saved favorite teams: $favoritesList');
-      
+
       // Show success message
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

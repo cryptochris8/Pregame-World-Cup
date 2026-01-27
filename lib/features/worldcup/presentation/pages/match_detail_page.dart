@@ -40,10 +40,10 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
 
   /// Load AI match summary from Firestore
   Future<void> _loadMatchSummary() async {
-    debugPrint('🔍 Loading match summary for ${widget.match.homeTeamCode} vs ${widget.match.awayTeamCode}');
+    // Debug output removed
 
     if (widget.match.homeTeamCode == null || widget.match.awayTeamCode == null) {
-      debugPrint('❌ Match summary: Team codes are null');
+      // Debug output removed
       return;
     }
 
@@ -56,7 +56,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
         widget.match.awayTeamCode!,
       );
 
-      debugPrint('📊 Match summary result: ${summary != null ? "FOUND" : "NOT FOUND"}');
+      // Debug output removed
 
       if (mounted) {
         setState(() {
@@ -65,7 +65,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
         });
       }
     } catch (e) {
-      debugPrint('❌ Match summary error: $e');
+      // Debug output removed
       if (mounted) {
         setState(() => _isLoadingSummary = false);
       }
@@ -75,7 +75,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
   /// Find the WorldCupVenue matching this match's venue name
   void _findMatchVenue() {
     if (widget.match.venueName == null) {
-      debugPrint('🏟️ Venue matching: venueName is null');
+      // Debug output removed
       return;
     }
 
@@ -83,14 +83,14 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     final venueName = widget.match.venueName!.toLowerCase();
     final venueCity = widget.match.venueCity?.toLowerCase() ?? '';
 
-    debugPrint('🏟️ Venue matching: Looking for "$venueName" in ${venueCity}');
+    // Debug output removed
 
     for (final venue in WorldCupVenues.all) {
       if (venue.name.toLowerCase().contains(venueName) ||
           venueName.contains(venue.name.toLowerCase()) ||
           venue.worldCupName?.toLowerCase().contains(venueName) == true ||
           venue.city.toLowerCase() == venueCity) {
-        debugPrint('🏟️ Venue MATCHED: ${venue.name} in ${venue.city}');
+        // Debug output removed
         setState(() {
           _matchVenue = venue;
         });
@@ -99,7 +99,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     }
 
     if (_matchVenue == null) {
-      debugPrint('🏟️ Venue NOT FOUND for: $venueName');
+      // Debug output removed
     }
   }
 

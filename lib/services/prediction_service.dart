@@ -37,9 +37,9 @@ class PredictionService {
           .doc(predictionId)
           .set(prediction.toJson());
 
-      debugPrint('✅ Prediction saved successfully');
+      // Debug output removed
     } catch (e) {
-      debugPrint('❌ Error saving prediction: $e');
+      // Debug output removed
       rethrow;
     }
   }
@@ -58,7 +58,7 @@ class PredictionService {
       }
       return null;
     } catch (e) {
-      debugPrint('❌ Error getting user prediction: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -76,7 +76,7 @@ class PredictionService {
           .map((doc) => GamePrediction.fromJson(doc.data()))
           .toList();
     } catch (e) {
-      debugPrint('❌ Error getting user predictions: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -93,7 +93,7 @@ class PredictionService {
           .map((doc) => GamePrediction.fromJson(doc.data()))
           .toList();
     } catch (e) {
-      debugPrint('❌ Error getting game predictions: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -112,9 +112,9 @@ class PredictionService {
       }
       await batch.commit();
 
-      debugPrint('✅ Locked ${query.docs.length} predictions for game $gameId');
+      // Debug output removed
     } catch (e) {
-      debugPrint('❌ Error locking predictions: $e');
+      // Debug output removed
     }
   }
 
@@ -143,9 +143,9 @@ class PredictionService {
       }
 
       await batch.commit();
-      debugPrint('✅ Scored ${predictions.length} predictions for game ${finishedGame.gameId}');
+      // Debug output removed
     } catch (e) {
-      debugPrint('❌ Error scoring predictions: $e');
+      // Debug output removed
     }
   }
 
@@ -217,7 +217,7 @@ class PredictionService {
         transaction.set(statsDoc, updatedStats.toJson());
       });
     } catch (e) {
-      debugPrint('❌ Error updating user stats: $e');
+      // Debug output removed
     }
   }
 
@@ -234,7 +234,7 @@ class PredictionService {
       }
       return const PredictionStats();
     } catch (e) {
-      debugPrint('❌ Error getting user stats: $e');
+      // Debug output removed
       return const PredictionStats();
     }
   }
@@ -262,7 +262,7 @@ class PredictionService {
 
       return leaderboard;
     } catch (e) {
-      debugPrint('❌ Error getting leaderboard: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -287,7 +287,7 @@ class PredictionService {
 
       return trends;
     } catch (e) {
-      debugPrint('❌ Error getting game trends: $e');
+      // Debug output removed
       return {};
     }
   }

@@ -163,40 +163,26 @@ class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
     Emitter<ScheduleState> emit,
   ) async {
     // Force refresh bypasses all smart refresh checks
-    print('🔄 BLOC: Force refresh event received!');
-    LoggingService.info('🔄 FORCE REFRESH: Bypassing smart refresh logic', tag: 'ScheduleBloc');
-    
+    LoggingService.info('FORCE REFRESH: Bypassing smart refresh logic', tag: 'ScheduleBloc');
+
     emit(ScheduleLoading());
     try {
       // Reset the refresh timestamp to allow fresh API call
       _lastUpcomingGamesRefresh = null;
-      print('🔄 BLOC: Calling getUpcomingGames with limit ${event.limit}');
-      
+
       final upcomingGames = await getUpcomingGames(limit: event.limit);
-      
-      print('🔄 BLOC: Got ${upcomingGames.length} games back');
-      print('🎯 BLOC RECEIVED GAMES:');
-      final gamesToLog = upcomingGames.length > 3 ? 3 : upcomingGames.length;
-      for (int i = 0; i < gamesToLog; i++) {
-        final game = upcomingGames[i];
-        print('   ${i+1}. ${game.awayTeamName} vs ${game.homeTeamName} (Week ${game.week})');
-      }
-      if (upcomingGames.isNotEmpty) {
-        print('🔄 BLOC: Sample game: ${upcomingGames.first.awayTeamName} vs ${upcomingGames.first.homeTeamName}');
-      }
-      
+
       // Update timestamp after successful call
       _lastUpcomingGamesRefresh = DateTime.now();
-      
+
       emit(UpcomingGamesLoaded(
         upcomingGames,
         showFavoritesOnly: _showFavoritesOnly,
         favoriteTeams: _favoriteTeams,
       ));
-      LoggingService.info('✅ FORCE REFRESH: Successfully loaded ${upcomingGames.length} games', tag: 'ScheduleBloc');
+      LoggingService.info('FORCE REFRESH: Successfully loaded ${upcomingGames.length} games', tag: 'ScheduleBloc');
     } catch (e) {
-      print('🔄 BLOC: Error in force refresh: $e');
-      LoggingService.error('❌ FORCE REFRESH: Failed to load games: $e', tag: 'ScheduleBloc');
+      LoggingService.error('FORCE REFRESH: Failed to load games: $e', tag: 'ScheduleBloc');
       emit(ScheduleError(e.toString()));
     }
   }

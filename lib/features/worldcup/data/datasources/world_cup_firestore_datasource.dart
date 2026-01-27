@@ -36,7 +36,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -54,7 +54,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching matches by stage: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -72,7 +72,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching matches by group: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -101,7 +101,7 @@ class WorldCupFirestoreDataSource {
       matches.sort((a, b) => a.matchNumber.compareTo(b.matchNumber));
       return matches;
     } catch (e) {
-      debugPrint('Firestore error fetching matches by team: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -119,7 +119,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching match: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -141,7 +141,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching live matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -162,7 +162,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching upcoming matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -175,7 +175,7 @@ class WorldCupFirestoreDataSource {
           .doc(match.matchId)
           .set(match.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      debugPrint('Firestore error saving match: $e');
+      // Debug output removed
       throw Exception('Failed to save match: $e');
     }
   }
@@ -192,7 +192,7 @@ class WorldCupFirestoreDataSource {
 
       await batch.commit();
     } catch (e) {
-      debugPrint('Firestore error saving matches batch: $e');
+      // Debug output removed
       throw Exception('Failed to save matches: $e');
     }
   }
@@ -241,7 +241,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => NationalTeam.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching teams: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -258,7 +258,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => NationalTeam.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching teams by group: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -276,7 +276,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching team: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -289,7 +289,7 @@ class WorldCupFirestoreDataSource {
           .doc(team.fifaCode)
           .set(team.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      debugPrint('Firestore error saving team: $e');
+      // Debug output removed
       throw Exception('Failed to save team: $e');
     }
   }
@@ -306,7 +306,7 @@ class WorldCupFirestoreDataSource {
 
       await batch.commit();
     } catch (e) {
-      debugPrint('Firestore error saving teams batch: $e');
+      // Debug output removed
       throw Exception('Failed to save teams: $e');
     }
   }
@@ -336,7 +336,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupGroup.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching groups: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -354,7 +354,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching group: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -367,7 +367,7 @@ class WorldCupFirestoreDataSource {
           .doc(group.groupLetter)
           .set(group.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      debugPrint('Firestore error saving group: $e');
+      // Debug output removed
       throw Exception('Failed to save group: $e');
     }
   }
@@ -412,7 +412,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching bracket: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -425,7 +425,7 @@ class WorldCupFirestoreDataSource {
           .doc('2026')
           .set(bracket.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      debugPrint('Firestore error saving bracket: $e');
+      // Debug output removed
       throw Exception('Failed to save bracket: $e');
     }
   }
@@ -462,7 +462,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupVenue.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching venues: $e');
+      // Debug output removed
       // Return static venue data as fallback
       return WorldCupVenues.all;
     }
@@ -483,7 +483,7 @@ class WorldCupFirestoreDataSource {
       // Try static data
       return WorldCupVenues.getById(venueId);
     } catch (e) {
-      debugPrint('Firestore error fetching venue: $e');
+      // Debug output removed
       return WorldCupVenues.getById(venueId);
     }
   }
@@ -500,7 +500,7 @@ class WorldCupFirestoreDataSource {
 
       await batch.commit();
     } catch (e) {
-      debugPrint('Firestore error saving venues batch: $e');
+      // Debug output removed
       throw Exception('Failed to save venues: $e');
     }
   }
@@ -529,7 +529,7 @@ class WorldCupFirestoreDataSource {
         await batch.commit();
       }
     } catch (e) {
-      debugPrint('Firestore error clearing data: $e');
+      // Debug output removed
       throw Exception('Failed to clear data: $e');
     }
   }
@@ -553,7 +553,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching head-to-head: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -588,7 +588,7 @@ class WorldCupFirestoreDataSource {
 
       return results;
     } catch (e) {
-      debugPrint('Firestore error fetching head-to-head records: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -604,7 +604,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => HeadToHead.fromMap(doc.data()))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching all head-to-head: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -623,7 +623,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupTournament.fromFirestore(doc.data()))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching World Cup history: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -641,7 +641,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching World Cup $year: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -659,7 +659,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupTournament.fromFirestore(doc.data()))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching World Cups by winner: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -677,7 +677,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupRecord.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching World Cup records: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -694,7 +694,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupRecord.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching World Cup records by type: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -713,7 +713,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching World Cup record: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -737,7 +737,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Firestore error fetching match summary: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -753,7 +753,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => MatchSummary.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      debugPrint('Firestore error fetching all match summaries: $e');
+      // Debug output removed
       return [];
     }
   }

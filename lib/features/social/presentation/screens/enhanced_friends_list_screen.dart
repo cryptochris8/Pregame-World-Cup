@@ -51,13 +51,13 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
   Future<void> _initializeAndLoadData() async {
     try {
-      print('🔄 Initializing SocialService...');
+      // Initializing service
       await _socialService.initialize();
-      print('✅ SocialService initialized');
+      // Service initialized
       
       await _loadAllData();
     } catch (e) {
-      print('❌ Error initializing friends list: $e');
+      // Error handled silently
       setState(() => _isLoading = false);
     }
   }
@@ -65,12 +65,12 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
   Future<void> _loadAllData() async {
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null) {
-      print('❌ No current user found');
+      // No current user
       setState(() => _isLoading = false);
       return;
     }
 
-    print('🔄 Loading friends data for user: ${currentUser.uid}');
+    // Loading friends data
     setState(() => _isLoading = true);
 
     try {
@@ -81,7 +81,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           c.type == ConnectionType.friend
       ).toList();
 
-      print('📊 Found ${friendConnections.length} friend connections');
+      // Found friend connections
 
       final friendProfiles = <UserProfile>[];
       for (final connection in friendConnections) {
@@ -94,7 +94,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
             friendProfiles.add(profile);
           }
         } catch (e) {
-          print('⚠️ Error loading friend profile $fromUserId: $e');
+          // Error loading profile handled silently
         }
       }
 
@@ -110,8 +110,6 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           c.fromUserId == currentUser.uid
       ).toList();
 
-      print('✅ Loaded ${friendProfiles.length} friends, ${pendingRequests.length} pending, ${sentRequests.length} sent');
-
       setState(() {
         _friends = friendProfiles;
         _filteredFriends = friendProfiles;
@@ -122,7 +120,6 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
       _applyFilter();
     } catch (e) {
-      print('❌ Error loading friends data: $e');
       setState(() => _isLoading = false);
     }
   }
@@ -665,7 +662,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         ),
       );
     } catch (e) {
-      print('Error accepting friend request: $e');
+      // Error handled silently
     }
   }
 
@@ -681,7 +678,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         ),
       );
     } catch (e) {
-      print('Error declining friend request: $e');
+      // Error handled silently
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to decline friend request'),
@@ -703,7 +700,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         ),
       );
     } catch (e) {
-      print('Error cancelling friend request: $e');
+      // Error handled silently
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to cancel friend request'),
@@ -748,7 +745,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           );
         }
       } catch (e) {
-        print('Error removing friend: $e');
+        // Error handled silently
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to remove ${friend.displayName}'),
@@ -794,7 +791,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           );
         }
       } catch (e) {
-        print('Error blocking user: $e');
+        // Error handled silently
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to block ${friend.displayName}'),

@@ -27,13 +27,13 @@ class EnhancedSportsDataService {
   /// Fallback: ESPN (if SportsData.io fails)
   Future<List<Player>> getTeamRoster(String teamKey, {int? season}) async {
     try {
-      debugPrint('🏈 ENHANCED SPORTS DATA: Fetching roster for $teamKey from SportsData.io...');
+      // Debug output removed
       LoggingService.info('🏈 Fetching roster for $teamKey from SportsData.io...', tag: _logTag);
       
       // Try SportsData.io first (most reliable for player data)
       final players = await _getSportsDataRoster(teamKey, season: season);
       if (players.isNotEmpty) {
-        debugPrint('✅ ENHANCED SPORTS DATA: Got ${players.length} real players from SportsData.io');
+        // Debug output removed
         LoggingService.info('✅ Got ${players.length} real players from SportsData.io', tag: _logTag);
         return players;
       }
@@ -183,14 +183,14 @@ class EnhancedSportsDataService {
     try {
       final currentSeason = season ?? DateTime.now().year;
       
-      debugPrint('🏈 ENHANCED ROSTER: Generating realistic roster for $teamKey');
+      // Debug output removed
       LoggingService.info('🏈 ENHANCED ROSTER: Generating realistic roster for $teamKey', tag: _logTag);
       
       // Since SportsData.io CFB API doesn't have /players/json/{team} endpoint,
       // we'll generate realistic player data based on actual team info
       return _generateRealisticRoster(teamKey, currentSeason);
     } catch (e) {
-      debugPrint('❌ Exception generating roster for $teamKey: $e');
+      // Debug output removed
       LoggingService.error('❌ Exception generating roster for $teamKey: $e', tag: _logTag);
       return [];
     }
@@ -246,7 +246,7 @@ class EnhancedSportsDataService {
       }
     }
     
-    debugPrint('✅ ENHANCED ROSTER: Generated ${players.length} realistic players for $teamKey');
+    // Debug output removed
     LoggingService.info('✅ Generated ${players.length} realistic players for $teamKey', tag: _logTag);
     
     return players;

@@ -460,7 +460,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
   /// Get real season data for a team using the same service as Season tab
   Future<Map<String, dynamic>> _getRealSeasonData(String teamName) async {
     try {
-      debugPrint('🔄 ANALYSIS FIX: Getting real season data for $teamName');
+      // Debug output removed
       
       // Use the same service that Season tab uses for consistency
       final seasonSummary = await _seasonSummaryService.generateTeamSeasonSummary(teamName);
@@ -471,7 +471,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
       final wins = performance['wins'] as int? ?? 0;
       final losses = performance['losses'] as int? ?? 0;
       
-      debugPrint('✅ ANALYSIS FIX: Found real data for $teamName: $record');
+      // Debug output removed
       
       return {
         'performance': {
@@ -491,7 +491,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
         'dataSource': 'Real historical data',
       };
     } catch (e) {
-      debugPrint('❌ ANALYSIS FIX: Failed to get real data for $teamName: $e');
+      // Debug output removed
       // Fallback to the original method if real data fails
       return _generateFallbackSeasonData(teamName);
     }
@@ -2428,9 +2428,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
         winner = widget.game.awayTeamName;
       }
     }
-    
-    print('🎯 CALCULATED WINNER: "$winner" (Home: $homeScore, Away: $awayScore)');
-    
+
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(

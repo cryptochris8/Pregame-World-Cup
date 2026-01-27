@@ -39,15 +39,15 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_matchesKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached matches');
+        // Debug output removed
         return cached
             .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
             .toList();
       }
-      debugPrint('Cache MISS: No cached matches');
+      // Debug output removed
       return null;
     } catch (e) {
-      debugPrint('Cache error getting matches: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -57,9 +57,9 @@ class WorldCupCacheDataSource {
     try {
       final data = matches.map((m) => m.toMap()).toList();
       await _cacheService.set(_matchesKey, data, duration: _matchesCacheDuration);
-      debugPrint('Cached ${matches.length} matches');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving matches: $e');
+      // Debug output removed
     }
   }
 
@@ -105,7 +105,7 @@ class WorldCupCacheDataSource {
       }
       return null;
     } catch (e) {
-      debugPrint('Cache error getting live matches: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -120,7 +120,7 @@ class WorldCupCacheDataSource {
         duration: _liveMatchesCacheDuration,
       );
     } catch (e) {
-      debugPrint('Cache error saving live matches: $e');
+      // Debug output removed
     }
   }
 
@@ -129,14 +129,14 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_matchesTodayKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached today matches');
+        // Debug output removed
         return cached
             .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
             .toList();
       }
       return null;
     } catch (e) {
-      debugPrint('Cache error getting today matches: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -150,9 +150,9 @@ class WorldCupCacheDataSource {
         data,
         duration: _todaysMatchesCacheDuration,
       );
-      debugPrint('Cached ${matches.length} today matches');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving today matches: $e');
+      // Debug output removed
     }
   }
 
@@ -161,14 +161,14 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_matchesCompletedKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached completed matches');
+        // Debug output removed
         return cached
             .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
             .toList();
       }
       return null;
     } catch (e) {
-      debugPrint('Cache error getting completed matches: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -182,9 +182,9 @@ class WorldCupCacheDataSource {
         data,
         duration: _completedMatchesCacheDuration,
       );
-      debugPrint('Cached ${matches.length} completed matches');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving completed matches: $e');
+      // Debug output removed
     }
   }
 
@@ -193,14 +193,14 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_matchesUpcomingKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached upcoming matches');
+        // Debug output removed
         return cached
             .map((e) => WorldCupMatch.fromMap(e as Map<String, dynamic>))
             .toList();
       }
       return null;
     } catch (e) {
-      debugPrint('Cache error getting upcoming matches: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -214,9 +214,9 @@ class WorldCupCacheDataSource {
         data,
         duration: _upcomingMatchesCacheDuration,
       );
-      debugPrint('Cached ${matches.length} upcoming matches');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving upcoming matches: $e');
+      // Debug output removed
     }
   }
 
@@ -227,15 +227,15 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_teamsKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached teams');
+        // Debug output removed
         return cached
             .map((e) => NationalTeam.fromMap(e as Map<String, dynamic>))
             .toList();
       }
-      debugPrint('Cache MISS: No cached teams');
+      // Debug output removed
       return null;
     } catch (e) {
-      debugPrint('Cache error getting teams: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -245,9 +245,9 @@ class WorldCupCacheDataSource {
     try {
       final data = teams.map((t) => t.toMap()).toList();
       await _cacheService.set(_teamsKey, data, duration: _teamsCacheDuration);
-      debugPrint('Cached ${teams.length} teams');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving teams: $e');
+      // Debug output removed
     }
   }
 
@@ -282,15 +282,15 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_groupsKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached groups');
+        // Debug output removed
         return cached
             .map((e) => WorldCupGroup.fromMap(e as Map<String, dynamic>))
             .toList();
       }
-      debugPrint('Cache MISS: No cached groups');
+      // Debug output removed
       return null;
     } catch (e) {
-      debugPrint('Cache error getting groups: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -300,9 +300,9 @@ class WorldCupCacheDataSource {
     try {
       final data = groups.map((g) => g.toMap()).toList();
       await _cacheService.set(_groupsKey, data, duration: _groupsCacheDuration);
-      debugPrint('Cached ${groups.length} groups');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving groups: $e');
+      // Debug output removed
     }
   }
 
@@ -328,13 +328,13 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<Map<String, dynamic>>(_bracketKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found cached bracket');
+        // Debug output removed
         return WorldCupBracket.fromMap(cached);
       }
-      debugPrint('Cache MISS: No cached bracket');
+      // Debug output removed
       return null;
     } catch (e) {
-      debugPrint('Cache error getting bracket: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -347,9 +347,9 @@ class WorldCupCacheDataSource {
         bracket.toMap(),
         duration: _bracketCacheDuration,
       );
-      debugPrint('Cached bracket');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving bracket: $e');
+      // Debug output removed
     }
   }
 
@@ -360,15 +360,15 @@ class WorldCupCacheDataSource {
     try {
       final cached = await _cacheService.get<List<dynamic>>(_venuesKey);
       if (cached != null) {
-        debugPrint('Cache HIT: Found ${cached.length} cached venues');
+        // Debug output removed
         return cached
             .map((e) => WorldCupVenue.fromMap(e as Map<String, dynamic>))
             .toList();
       }
-      debugPrint('Cache MISS: No cached venues');
+      // Debug output removed
       return null;
     } catch (e) {
-      debugPrint('Cache error getting venues: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -378,9 +378,9 @@ class WorldCupCacheDataSource {
     try {
       final data = venues.map((v) => v.toMap()).toList();
       await _cacheService.set(_venuesKey, data, duration: _venuesCacheDuration);
-      debugPrint('Cached ${venues.length} venues');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error saving venues: $e');
+      // Debug output removed
     }
   }
 
@@ -411,9 +411,9 @@ class WorldCupCacheDataSource {
       await _cacheService.remove(_groupsKey);
       await _cacheService.remove(_bracketKey);
       await _cacheService.remove(_venuesKey);
-      debugPrint('Cleared all World Cup cache');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error clearing all: $e');
+      // Debug output removed
     }
   }
 
@@ -421,9 +421,9 @@ class WorldCupCacheDataSource {
   Future<void> clearCache(String key) async {
     try {
       await _cacheService.remove(key);
-      debugPrint('Cleared cache: $key');
+      // Debug output removed
     } catch (e) {
-      debugPrint('Cache error clearing $key: $e');
+      // Debug output removed
     }
   }
 

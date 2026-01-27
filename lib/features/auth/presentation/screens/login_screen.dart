@@ -40,13 +40,11 @@ class _LoginScreenState extends State<LoginScreen> {
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
         );
-        if (mounted) print("Login successful");
       } else {
         await _authService.signUpWithEmailAndPassword(
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
         );
-        if (mounted) print("Sign up successful, user created.");
       }
     } on Exception catch (e) {
       if (mounted) {

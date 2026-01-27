@@ -26,7 +26,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       // Try cache first
       final cached = await _cacheDataSource.getCachedTeams();
       if (cached != null && cached.isNotEmpty) {
-        debugPrint('Returning ${cached.length} teams from cache');
+        // Debug output removed
         return cached;
       }
 
@@ -35,11 +35,11 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
         final firestoreTeams = await _firestoreDataSource.getAllTeams();
         if (firestoreTeams.isNotEmpty) {
           await _cacheDataSource.cacheTeams(firestoreTeams);
-          debugPrint('Returning ${firestoreTeams.length} teams from Firestore');
+          // Debug output removed
           return firestoreTeams;
         }
       } catch (e) {
-        debugPrint('Firestore teams fetch failed: $e');
+        // Debug output removed
       }
 
       // Fetch from API
@@ -49,16 +49,16 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
           return apiTeams;
         }
       } catch (e) {
-        debugPrint('API teams fetch failed: $e');
+        // Debug output removed
       }
 
       // Fallback to mock data for development/testing
-      debugPrint('Using mock teams data fallback');
+      // Debug output removed
       final mockTeams = WorldCupMockData.teams;
       await _cacheDataSource.cacheTeams(mockTeams);
       return mockTeams;
     } catch (e) {
-      debugPrint('Error getting all teams: $e');
+      // Debug output removed
       // Return mock data as final fallback
       return WorldCupMockData.teams;
     }
@@ -70,7 +70,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       final allTeams = await getAllTeams();
       return allTeams.where((t) => t.confederation == confederation).toList();
     } catch (e) {
-      debugPrint('Error getting teams by confederation: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -85,7 +85,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
 
       return await _firestoreDataSource.getTeamsByGroup(groupLetter);
     } catch (e) {
-      debugPrint('Error getting teams by group: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -101,7 +101,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
 
       return await _firestoreDataSource.getTeamByCode(fifaCode);
     } catch (e) {
-      debugPrint('Error getting team by code: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -112,7 +112,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       final allTeams = await getAllTeams();
       return allTeams.where((t) => t.isHostNation).toList();
     } catch (e) {
-      debugPrint('Error getting host nations: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -125,7 +125,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       teamsWithRanking.sort((a, b) => (a.fifaRanking ?? 999).compareTo(b.fifaRanking ?? 999));
       return teamsWithRanking;
     } catch (e) {
-      debugPrint('Error getting teams by ranking: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -142,7 +142,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
         (t.nickname?.toLowerCase().contains(lowerQuery) ?? false)
       ).toList();
     } catch (e) {
-      debugPrint('Error searching teams: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -154,7 +154,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       return allTeams.where((t) => t.worldCupTitles > 0).toList()
         ..sort((a, b) => b.worldCupTitles.compareTo(a.worldCupTitles));
     } catch (e) {
-      debugPrint('Error getting previous champions: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -165,7 +165,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       await _firestoreDataSource.saveTeam(team);
       await _cacheDataSource.clearCache('worldcup_teams');
     } catch (e) {
-      debugPrint('Error updating team: $e');
+      // Debug output removed
       throw Exception('Failed to update team: $e');
     }
   }
@@ -173,19 +173,19 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
   @override
   Future<List<NationalTeam>> refreshTeams() async {
     try {
-      debugPrint('Refreshing teams from API...');
+      // Debug output removed
       final apiTeams = await _apiDataSource.fetchAllTeams();
 
       if (apiTeams.isNotEmpty) {
         await _firestoreDataSource.saveTeams(apiTeams);
         await _cacheDataSource.cacheTeams(apiTeams);
-        debugPrint('Refreshed ${apiTeams.length} teams');
+        // Debug output removed
         return apiTeams;
       }
 
       return [];
     } catch (e) {
-      debugPrint('Error refreshing teams: $e');
+      // Debug output removed
       throw Exception('Failed to refresh teams: $e');
     }
   }

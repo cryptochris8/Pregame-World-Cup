@@ -59,7 +59,7 @@ class _ScheduleScreenState extends State<ScheduleScreen>
         ));
       }
     } catch (e) {
-      print('Error loading favorite teams: $e');
+      // Error handled silently
     }
   }
 

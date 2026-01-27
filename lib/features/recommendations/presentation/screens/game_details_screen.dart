@@ -143,7 +143,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
         if (await canLaunchUrl(url)) {
           await launchUrl(url, mode: LaunchMode.externalApplication);
         } else {
-          print('Could not launch $url');
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('Could not open map for this location.')),
@@ -164,7 +163,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
     if (await canLaunchUrl(url)) {
       await launchUrl(url, mode: LaunchMode.externalApplication);
     } else {
-      print('Could not launch $url');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Could not open map for this location.')),
@@ -185,21 +183,16 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
 
   // Method to fetch venues with the current filter
   Future<void> _fetchVenues() async {
-    print('🔍 _fetchVenues() called for ${widget.game.homeTeamName} vs ${widget.game.awayTeamName}');
-    
     // Generate request key for deduplication
     final requestKey = _generateRequestKey();
-    print('🔑 Request key: $requestKey');
-    
+
     // Check if same request is already in progress
     if (_isRequestInProgress && _lastRequestKey == requestKey) {
-      print('Request already in progress for: $requestKey');
       return;
     }
-    
+
     // Check if we recently loaded the same data
     if (_lastRequestKey == requestKey && _nearbyPlaces != null && !_isLoadingPlaces) {
-      print('Using recently loaded data for: $requestKey');
       return;
     }
 
@@ -220,19 +213,10 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
       // First, try to get coordinates from the game's stadium
       // Using class members instead of local variables
       
-      // Debug: Print stadium information
-      print('🏟️ DEBUG: Stadium info for ${widget.game.homeTeamName} vs ${widget.game.awayTeamName}:');
-      print('   - Stadium name: ${widget.game.stadium?.name}');
-      print('   - Stadium city: ${widget.game.stadium?.city}');
-      print('   - Stadium state: ${widget.game.stadium?.state}');
-      print('   - GeoLat: ${widget.game.stadium?.geoLat}');
-      print('   - GeoLong: ${widget.game.stadium?.geoLong}');
-      
       // Check if stadium already has coordinates
       if (widget.game.stadium?.geoLat != null && widget.game.stadium?.geoLong != null) {
         _currentLatitude = widget.game.stadium!.geoLat!;
         _currentLongitude = widget.game.stadium!.geoLong!;
-        print('🏟️ Using stadium coordinates for ${widget.game.stadium?.name}: $_currentLatitude, $_currentLongitude');
       } else if (widget.game.stadium?.name != null) {
         try {
           // Try to geocode the stadium address as fallback
@@ -240,15 +224,12 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
           if (widget.game.stadium?.city != null && widget.game.stadium?.state != null) {
             address += ', ${widget.game.stadium!.city}, ${widget.game.stadium!.state}';
           }
-          
-          print('🗺️ Attempting to geocode stadium address: "$address"');
+
           final coordinates = await placesRepository.geocodeAddress(address: address);
           _currentLatitude = coordinates['latitude'];
           _currentLongitude = coordinates['longitude'];
-          
-          print('🗺️ Geocoded stadium "$address" to: $_currentLatitude, $_currentLongitude');
         } catch (e) {
-          print('❌ Failed to geocode stadium address: $e');
+          // Geocoding failed, will use fallback coordinates
         }
       }
       
@@ -257,9 +238,7 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
         // Use a default location (you can customize this based on your needs)
         _currentLatitude = _fallbackLatitude ?? 39.8283; // Example: Columbus, OH
         _currentLongitude = _fallbackLongitude ?? -82.9988;
-        print('⚠️ No stadium location found for ${widget.game.homeTeamName} vs ${widget.game.awayTeamName}');
-        print('🔄 Using fallback coordinates: $_currentLatitude, $_currentLongitude');
-        
+
         if (mounted) {
           setState(() {
             _isOfflineMode = true;
@@ -311,39 +290,8 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
           _isOfflineMode = false;
         });
       }
-      
-      print('Successfully fetched ${filteredPlaces.length} venues');
-      
+
     } catch (e) {
-      // Enhanced diagnostic logging for iOS venue loading issues
-      print('❌ VENUE LOADING ERROR - FULL DIAGNOSTIC:');
-      print('   Platform: ${Theme.of(context).platform}');
-      print('   Error Type: ${e.runtimeType}');
-      print('   Error Message: $e');
-      print('   Google API Key Available: ${ApiKeys.googlePlaces.isNotEmpty}');
-      print('   Google API Key Length: ${ApiKeys.googlePlaces.length}');
-      print('   Google API Key Preview: ${ApiKeys.googlePlaces.isNotEmpty ? '${ApiKeys.googlePlaces.substring(0, ApiKeys.googlePlaces.length > 10 ? 10 : ApiKeys.googlePlaces.length)}...' : 'EMPTY'}');
-      print('   All API Keys Valid: ${ApiKeys.validateApiKeys()}');
-      print('   Environment: ${const String.fromEnvironment('ENVIRONMENT', defaultValue: 'unknown')}');
-      print('   Stadium Coordinates: lat=$_stadiumLatitude, lng=$_stadiumLongitude');
-      print('   Filter: ${_currentFilter.toString()}');
-      
-      // Check if this is an API key issue
-      String errorDetails = '';
-      if (e.toString().contains('REQUEST_DENIED')) {
-        errorDetails = 'API key issue - check Google Cloud Console restrictions';
-      } else if (e.toString().contains('OVER_QUERY_LIMIT')) {
-        errorDetails = 'API quota exceeded - check billing';
-      } else if (e.toString().contains('connection')) {
-        errorDetails = 'Network connectivity issue';
-      } else if (ApiKeys.googlePlaces.isEmpty) {
-        errorDetails = 'Google Places API key is missing';
-      } else {
-        errorDetails = 'Unknown error - check logs above';
-      }
-      
-      print('   Diagnosis: $errorDetails');
-      
       if (mounted) {
         setState(() {
           _isLoadingPlaces = false;
@@ -1309,6 +1257,5 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
         ),
       ),
     );
-    print('Navigating to venue detail screen for: ${venue.name}');
   }
 } 

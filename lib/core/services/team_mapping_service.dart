@@ -182,7 +182,6 @@ class TeamMappingService {
     }
     
     // If no match found, return the original name
-    print('⚠️ No team mapping found for: $displayName');
     return displayName.toUpperCase().replaceAll(' ', '');
   }
   

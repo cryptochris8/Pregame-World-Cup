@@ -356,7 +356,7 @@ class PushNotificationService {
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   // This handler is called when app is in background or terminated
   // Firebase is already initialized by the time this is called
-  debugPrint('Background message received: ${message.messageId}');
+  // Debug output removed
 
   // Handle background message processing here if needed
   // Note: You cannot update UI from here

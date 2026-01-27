@@ -38,13 +38,10 @@ class _NotificationsScreenState extends State<NotificationsScreen>
 
   Future<void> _initializeAndLoadNotifications() async {
     try {
-      print('🔄 Initializing NotificationService...');
       await _notificationService.initialize();
-      print('✅ NotificationService initialized');
-      
+
       await _loadNotifications();
     } catch (e) {
-      print('❌ Error initializing notifications: $e');
       setState(() => _isLoading = false);
     }
   }
@@ -52,20 +49,17 @@ class _NotificationsScreenState extends State<NotificationsScreen>
   Future<void> _loadNotifications() async {
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null) {
-      print('❌ No current user found');
+      // No current user
       setState(() => _isLoading = false);
       return;
     }
 
-    print('🔄 Loading notifications for user: ${currentUser.uid}');
     setState(() => _isLoading = true);
 
     try {
       final notifications = await _notificationService.getUserNotifications(currentUser.uid);
       final unreadCount = await _notificationService.getUnreadNotificationCount(currentUser.uid);
-      
-      print('✅ Loaded ${notifications.length} notifications (${unreadCount} unread)');
-      
+
       if (mounted) {
         setState(() {
           _notifications = notifications;
@@ -74,12 +68,11 @@ class _NotificationsScreenState extends State<NotificationsScreen>
         });
       }
     } catch (e) {
-      print('❌ Error loading notifications: $e');
       if (mounted) {
         setState(() => _isLoading = false);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to load notifications: $e'),
+            content: Text('Failed to load notifications'),
             backgroundColor: AppTheme.errorColor,
           ),
         );

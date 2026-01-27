@@ -41,7 +41,7 @@ class PaymentService {
 
       return result.data['clientSecret'] as String?;
     } catch (e) {
-      debugPrint('Error creating payment intent: $e');
+      // Debug output removed
       rethrow;
     }
   }
@@ -62,11 +62,11 @@ class PaymentService {
 
       return true;
     } on StripeException catch (e) {
-      debugPrint('Stripe error: ${e.error.localizedMessage}');
+      // Debug output removed
       _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
       return false;
     } catch (e) {
-      debugPrint('Payment error: $e');
+      // Debug output removed
       _showErrorDialog(context, 'An unexpected error occurred');
       return false;
     }
@@ -96,13 +96,13 @@ class PaymentService {
       await Stripe.instance.presentPaymentSheet();
       return true;
     } on StripeException catch (e) {
-      debugPrint('Stripe error: ${e.error.localizedMessage}');
+      // Debug output removed
       if (e.error.code != FailureCode.Canceled) {
         _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
       }
       return false;
     } catch (e) {
-      debugPrint('Payment sheet error: $e');
+      // Debug output removed
       _showErrorDialog(context, 'An unexpected error occurred');
       return false;
     }
@@ -268,7 +268,7 @@ class PaymentService {
         metadata: metadata,
       );
     } catch (e) {
-      debugPrint('Failed to track payment success: $e');
+      // Debug output removed
       // Don't throw - this is non-critical
     }
   }

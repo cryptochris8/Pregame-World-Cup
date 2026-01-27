@@ -164,7 +164,7 @@ class WatchPartyPaymentService {
       await Stripe.instance.presentPaymentSheet();
       return true;
     } on StripeException catch (e) {
-      debugPrint('Stripe error: ${e.error.localizedMessage}');
+      // Debug output removed
       if (e.error.code != FailureCode.Canceled) {
         _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
       }
@@ -247,7 +247,7 @@ class WatchPartyPaymentService {
         },
       );
     } catch (e) {
-      debugPrint('Failed to track payment success: $e');
+      // Debug output removed
     }
   }
 

@@ -42,9 +42,9 @@ class ESPNService {
     
     try {
       _gameIntelligenceBox = await Hive.openBox<GameIntelligence>('game_intelligence');
-              debugPrint('ESPN Service initialized successfully');
+              // Debug output removed
     } catch (e) {
-              debugPrint('Error initializing ESPN Service: $e');
+              // Debug output removed
       // If Hive isn't ready, we'll try again later
       _gameIntelligenceBox = null;
     }
@@ -79,7 +79,7 @@ class ESPNService {
       
       return intelligence;
     } catch (e) {
-      debugPrint('Error getting game intelligence: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -101,7 +101,7 @@ class ESPNService {
       }
       return null;
     } catch (e) {
-      debugPrint('Error fetching ESPN data: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -117,12 +117,12 @@ class ESPNService {
         final data = response.data;
         final events = data['events'] as List? ?? [];
         
-        debugPrint('✅ ESPN API Connected! Found ${events.length} games');
+        // Debug output removed
         return events.cast<Map<String, dynamic>>();
       }
       return [];
     } catch (e) {
-      debugPrint('❌ ESPN API Error: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -131,7 +131,7 @@ class ESPNService {
   /// This method gets the complete 2025 season schedule with real dates and times
   Future<List<GameSchedule>> get2025Schedule({int limit = 100}) async {
     try {
-      debugPrint('🏈 ESPN: Fetching 2025 college football schedule...');
+      // Debug output removed
       
       final scheduleGames = <GameSchedule>[];
       final now = DateTime.now();
@@ -144,7 +144,7 @@ class ESPNService {
       final startDateStr = _formatDateForESPN(startDate);
       final endDateStr = _formatDateForESPN(endDate);
       
-      debugPrint('🗓️ ESPN: Requesting games from $startDateStr to $endDateStr');
+      // Debug output removed
       
       final response = await _dio.get(
         '$_baseUrl/football/college-football/scoreboard',
@@ -159,7 +159,7 @@ class ESPNService {
         final data = response.data;
         final events = data['events'] as List? ?? [];
         
-        debugPrint('📅 ESPN: Found ${events.length} total events');
+        // Debug output removed
         
         for (final event in events) {
           try {
@@ -168,7 +168,7 @@ class ESPNService {
               scheduleGames.add(gameSchedule);
             }
           } catch (e) {
-            debugPrint('⚠️ ESPN: Error parsing event: $e');
+            // Debug output removed
           }
         }
         
@@ -179,16 +179,16 @@ class ESPNService {
           return aDate.compareTo(bDate);
         });
         
-        debugPrint('✅ ESPN: Successfully parsed ${scheduleGames.length} games for 2025 season');
-        debugPrint('🎯 ESPN: First game: ${scheduleGames.isNotEmpty ? '${scheduleGames.first.awayTeamName} vs ${scheduleGames.first.homeTeamName} on ${scheduleGames.first.dateTime}' : 'No games found'}');
+        // Debug output removed
+        // Debug output removed
         
         return scheduleGames.take(limit).toList();
       } else {
-        debugPrint('❌ ESPN: API returned status ${response.statusCode}');
+        // Debug output removed
         return [];
       }
     } catch (e) {
-      debugPrint('❌ ESPN: Error fetching 2025 schedule: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -196,7 +196,7 @@ class ESPNService {
   /// Get upcoming games from ESPN API (next 2 weeks)
   Future<List<GameSchedule>> getUpcomingGames({int limit = 10}) async {
     try {
-      debugPrint('🏈 ESPN: Fetching upcoming games...');
+      // Debug output removed
       
       final now = DateTime.now();
       final twoWeeksFromNow = now.add(const Duration(days: 14));
@@ -230,7 +230,7 @@ class ESPNService {
               }
             }
           } catch (e) {
-            debugPrint('⚠️ ESPN: Error parsing upcoming event: $e');
+            // Debug output removed
           }
         }
         
@@ -241,13 +241,13 @@ class ESPNService {
           return aDate.compareTo(bDate);
         });
         
-        debugPrint('✅ ESPN: Found ${upcomingGames.length} upcoming games');
+        // Debug output removed
         return upcomingGames.take(limit).toList();
       }
       
       return [];
     } catch (e) {
-      debugPrint('❌ ESPN: Error fetching upcoming games: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -256,7 +256,7 @@ class ESPNService {
   /// Returns complete season data including historical scores for past years
   Future<List<GameSchedule>> getScheduleForYear(int year, {int limit = 2000}) async {
     try {
-      debugPrint('🏈 ESPN: Fetching $year college football schedule...');
+      // Debug output removed
       
       // For historical years, get the full season
       DateTime startDate;
@@ -268,12 +268,12 @@ class ESPNService {
       } else if (year == 2024) {
         startDate = DateTime(2024, 7, 1);  // Start earlier in case of summer games
         endDate = DateTime(2025, 2, 28);   // End later to catch any late bowl games
-        debugPrint('🏈 ESPN: 2024 expanded date range: ${_formatDateForESPN(startDate)} to ${_formatDateForESPN(endDate)}');
+        // Debug output removed
       } else if (year == 2025) {
         startDate = DateTime(2025, 8, 1);
         endDate = DateTime(2026, 1, 31);
       } else {
-        debugPrint('❌ ESPN: Unsupported year $year. Supported years: 2023, 2024, 2025');
+        // Debug output removed
         return [];
       }
       
@@ -289,13 +289,13 @@ class ESPNService {
         },
       );
       
-      debugPrint('🏈 ESPN: API request URL: $_baseUrl/football/college-football/scoreboard?dates=$startDateStr-$endDateStr&limit=$limit&groups=80');
+      // Debug output removed
 
       if (response.statusCode == 200) {
         final data = response.data;
         final events = data['events'] as List? ?? [];
         
-        debugPrint('✅ ESPN: Found ${events.length} events for $year season');
+        // Debug output removed
         
         final games = <GameSchedule>[];
         for (final event in events) {
@@ -305,7 +305,7 @@ class ESPNService {
           }
         }
         
-        debugPrint('✅ ESPN: Successfully parsed ${games.length} games for $year season');
+        // Debug output removed
         
         // Sort by date for better user experience
         games.sort((a, b) {
@@ -317,11 +317,11 @@ class ESPNService {
         
         return games;
       } else {
-        debugPrint('❌ ESPN: HTTP ${response.statusCode}');
+        // Debug output removed
         return [];
       }
     } catch (e) {
-      debugPrint('❌ ESPN: Error fetching $year schedule: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -391,7 +391,7 @@ class ESPNService {
       try {
         gameDateTime = DateTime.parse(date);
       } catch (e) {
-        debugPrint('⚠️ ESPN: Error parsing date "$date": $e');
+        // Debug output removed
       }
       
       // Create Stadium object if venue info exists
@@ -430,7 +430,7 @@ class ESPNService {
         updatedApi: DateTime.now(),
       );
     } catch (e) {
-      debugPrint('❌ ESPN: Error parsing event data: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -519,7 +519,7 @@ class ESPNService {
       try {
         gameDateTime = DateTime.parse(date);
       } catch (e) {
-        debugPrint('⚠️ ESPN: Error parsing date "$date": $e');
+        // Debug output removed
       }
       
       // Parse week number if available
@@ -568,7 +568,7 @@ class ESPNService {
         lastScoreUpdate: gameState == 'post' ? gameDateTime : null,
       );
     } catch (e) {
-      debugPrint('❌ ESPN: Error parsing historical event data: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -1003,7 +1003,7 @@ class ESPNService {
         }
       };
     } catch (e) {
-      debugPrint('Error getting game intelligence with history: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -1046,23 +1046,23 @@ class ESPNService {
               if (espnDate != null) {
                 final difference = gameDate.difference(espnDate).inDays.abs();
                 if (difference <= 1) {
-                  debugPrint('✅ Found ESPN game match: ${game['id']} for $awayTeam @ $homeTeam');
+                  // Debug output removed
                   return game['id']?.toString();
                 }
               }
             } else {
               // No date provided, just match by teams
-              debugPrint('✅ Found ESPN game match: ${game['id']} for $awayTeam @ $homeTeam');
+              // Debug output removed
               return game['id']?.toString();
             }
           }
         }
       }
       
-      debugPrint('❌ No ESPN game found for $awayTeam @ $homeTeam');
+      // Debug output removed
       return null;
     } catch (e) {
-      debugPrint('Error finding ESPN game ID: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -1139,7 +1139,7 @@ class ESPNService {
 
       return enhancedGames;
     } catch (e) {
-      debugPrint('Error getting Week 1 games with history: $e');
+      // Debug output removed
       return [];
     }
   }

@@ -652,7 +652,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
 
   void _goToMyLocation() async {
     // Implementation for getting current location
-    debugPrint('Getting current location...');
+    // Debug output removed
   }
 
   void _navigateToVenueDetails(Place venue) {
@@ -674,6 +674,6 @@ class _VenueMapScreenState extends State<VenueMapScreen>
   }
 
   void _callVenue(Place venue) {
-    debugPrint('Calling venue: ${venue.name}');
+    // Debug output removed
   }
 } 

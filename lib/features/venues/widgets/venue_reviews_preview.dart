@@ -447,12 +447,12 @@ class VenueReviewsPreview extends StatelessWidget {
 
   void _viewAllReviews(BuildContext context) {
     // Navigate to full reviews screen
-    print('Viewing all reviews for ${venue.name}');
+    // View all reviews action
   }
 
   void _writeReview() {
     // Navigate to write review screen
-    print('Writing review for ${venue.name}');
+    // Write review action
   }
 }
 

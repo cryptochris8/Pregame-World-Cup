@@ -522,14 +522,14 @@ class _NearbyVenueCardState extends State<_NearbyVenueCard> {
     // Use photoReference from the place if available
     // Route through our Cloud Function proxy to avoid CORS issues in browser
     final photoRef = venue.place.photoReference;
-    debugPrint('PHOTO DEBUG: ${venue.place.name} - photoRef: ${photoRef != null && photoRef.length > 20 ? photoRef.substring(0, 20) : photoRef ?? "NULL"}...');
+    // Debug output removed
     if (photoRef != null && photoRef.isNotEmpty) {
       // Use Cloud Function proxy to avoid CORS blocking from browser
       _photoUrl = 'https://us-central1-pregame-b089e.cloudfunctions.net/placePhotoProxy'
           '?photoReference=$photoRef&maxWidth=200';
-      debugPrint('PHOTO DEBUG: Built proxy URL for ${venue.place.name}');
+      // Debug output removed
     } else {
-      debugPrint('PHOTO DEBUG: No photoRef for ${venue.place.name}');
+      // Debug output removed
     }
   }
 

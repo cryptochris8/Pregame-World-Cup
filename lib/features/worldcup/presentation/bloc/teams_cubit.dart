@@ -34,7 +34,7 @@ class TeamsCubit extends Cubit<TeamsState> {
       // Apply initial sort/filter
       _applyFiltersAndSort();
     } catch (e) {
-      debugPrint('Error loading teams: $e');
+      // Debug output removed
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load teams: $e',
@@ -57,7 +57,7 @@ class TeamsCubit extends Cubit<TeamsState> {
 
       _applyFiltersAndSort();
     } catch (e) {
-      debugPrint('Error refreshing teams: $e');
+      // Debug output removed
       emit(state.copyWith(
         isRefreshing: false,
         errorMessage: 'Failed to refresh teams: $e',
@@ -136,7 +136,7 @@ class TeamsCubit extends Cubit<TeamsState> {
       try {
         team = await _teamRepository.getTeamByCode(code);
       } catch (e) {
-        debugPrint('Error loading team $code: $e');
+        // Debug output removed
       }
     }
 

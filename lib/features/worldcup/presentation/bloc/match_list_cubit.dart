@@ -47,7 +47,7 @@ class MatchListCubit extends Cubit<MatchListState> {
       // Apply current filter
       _applyFilter();
     } catch (e) {
-      debugPrint('Error loading matches: $e');
+      // Debug output removed
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load matches: $e',
@@ -77,7 +77,7 @@ class MatchListCubit extends Cubit<MatchListState> {
 
       _applyFilter();
     } catch (e) {
-      debugPrint('Error refreshing matches: $e');
+      // Debug output removed
       emit(state.copyWith(
         isRefreshing: false,
         errorMessage: 'Failed to refresh matches: $e',
@@ -107,7 +107,7 @@ class MatchListCubit extends Cubit<MatchListState> {
         }
       },
       onError: (e) {
-        debugPrint('Error in live matches stream: $e');
+        // Debug output removed
       },
     );
   }

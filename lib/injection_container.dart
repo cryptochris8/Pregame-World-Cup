@@ -115,8 +115,8 @@ import 'features/sharing/sharing.dart';
 // Global GetIt instance
 final sl = GetIt.instance; // sl stands for Service Locator
 
-/// Android diagnostic mode - set to true when diagnosing installation issues
-const bool ANDROID_DIAGNOSTIC_MODE = true;
+/// Android diagnostic mode - set to false for production
+const bool ANDROID_DIAGNOSTIC_MODE = false;
 
 Future<void> setupLocator() async {
   if (ANDROID_DIAGNOSTIC_MODE) {

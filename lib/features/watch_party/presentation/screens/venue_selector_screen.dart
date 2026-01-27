@@ -86,7 +86,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       }
       return await Geolocator.getCurrentPosition();
     } catch (e) {
-      debugPrint('Location error: $e');
+      // Debug output removed
       return null;
     }
   }

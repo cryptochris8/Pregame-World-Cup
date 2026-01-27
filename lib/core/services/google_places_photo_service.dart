@@ -92,7 +92,7 @@ class GooglePlacesPhotoService {
       return filePath;
 
     } catch (e) {
-      print('Error downloading photo: $e');
+      // Error handled silently
       return null;
     }
   }
@@ -120,7 +120,7 @@ class GooglePlacesPhotoService {
       
       _photoCache.clear();
     } catch (e) {
-      print('Error clearing photo cache: $e');
+      // Error handled silently
     }
   }
 
@@ -143,7 +143,7 @@ class GooglePlacesPhotoService {
       
       return totalSize;
     } catch (e) {
-      print('Error calculating cache size: $e');
+      // Error handled silently
       return 0;
     }
   }
@@ -189,7 +189,7 @@ class GooglePlacesPhotoService {
       
       return null;
     } catch (e) {
-      print('Error fetching place details: $e');
+      // Error handled silently
       return null;
     }
   }

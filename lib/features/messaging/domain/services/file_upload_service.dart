@@ -50,7 +50,7 @@ class FileUploadService {
       final fileSize = await file.length();
       
       if (fileSize > maxImageSize) {
-        debugPrint('$_logTag: Image file too large: ${fileSize / (1024 * 1024)} MB');
+        // Debug output removed
         PerformanceMonitor.endApiCall('image_upload', success: false);
         return null;
       }
@@ -74,7 +74,7 @@ class FileUploadService {
         uploadedAt: DateTime.now(),
       );
     } catch (e) {
-      debugPrint('$_logTag: Failed to upload image: $e');
+      // Debug output removed
       PerformanceMonitor.endApiCall('image_upload', success: false);
       return null;
     }
@@ -103,7 +103,7 @@ class FileUploadService {
       final fileSize = await file.length();
       
       if (fileSize > maxVideoSize) {
-        debugPrint('$_logTag: Video file too large: ${fileSize / (1024 * 1024)} MB');
+        // Debug output removed
         PerformanceMonitor.endApiCall('video_upload', success: false);
         return null;
       }
@@ -141,7 +141,7 @@ class FileUploadService {
         fileSizeBytes: fileSize,
       );
     } catch (e) {
-      debugPrint('$_logTag: Failed to upload video: $e');
+      // Debug output removed
       PerformanceMonitor.endApiCall('video_upload', success: false);
       return null;
     }
@@ -174,7 +174,7 @@ class FileUploadService {
       
       // Check file size limits based on type
       if (!_isFileSizeValid(extension, fileSize)) {
-        debugPrint('$_logTag: File too large: ${fileSize / (1024 * 1024)} MB');
+        // Debug output removed
         PerformanceMonitor.endApiCall('file_upload', success: false);
         return null;
       }
@@ -200,7 +200,7 @@ class FileUploadService {
         uploadedAt: DateTime.now(),
       );
     } catch (e) {
-      debugPrint('$_logTag: Failed to upload file: $e');
+      // Debug output removed
       PerformanceMonitor.endApiCall('file_upload', success: false);
       return null;
     }
@@ -219,7 +219,7 @@ class FileUploadService {
       final fileSize = await file.length();
       
       if (fileSize > maxAudioSize) {
-        debugPrint('$_logTag: Audio file too large: ${fileSize / (1024 * 1024)} MB');
+        // Debug output removed
         PerformanceMonitor.endApiCall('audio_upload', success: false);
         return null;
       }
@@ -230,7 +230,7 @@ class FileUploadService {
       PerformanceMonitor.endApiCall('audio_upload', success: downloadUrl != null);
       return downloadUrl;
     } catch (e) {
-      debugPrint('$_logTag: Failed to upload audio: $e');
+      // Debug output removed
       PerformanceMonitor.endApiCall('audio_upload', success: false);
       return null;
     }
@@ -245,7 +245,7 @@ class FileUploadService {
       // Listen to upload progress (you can expose this as a stream if needed)
       uploadTask.snapshotEvents.listen((TaskSnapshot snapshot) {
         final progress = snapshot.bytesTransferred / snapshot.totalBytes;
-        debugPrint('$_logTag: Upload progress: ${(progress * 100).toStringAsFixed(1)}%');
+        // Debug output removed
       });
       
       final snapshot = await uploadTask;
@@ -253,7 +253,7 @@ class FileUploadService {
       
       return downloadUrl;
     } catch (e) {
-      debugPrint('$_logTag: Failed to upload file to Firebase: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -265,7 +265,7 @@ class FileUploadService {
       // For now, we'll return null and let the UI handle it gracefully
       return null;
     } catch (e) {
-      debugPrint('$_logTag: Failed to generate thumbnail: $e');
+      // Debug output removed
       return null;
     }
   }

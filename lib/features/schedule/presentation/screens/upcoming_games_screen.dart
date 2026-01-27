@@ -54,7 +54,7 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
         ));
       }
     } catch (e) {
-      print('Error loading favorite teams: $e');
+      // Error handled silently
     }
   }
 
@@ -638,8 +638,6 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
   }
 
   void _navigateToGameDetails(GameSchedule game) {
-    print('GameCard tapped: ${game.awayTeamName} @ ${game.homeTeamName}');
-    
     // Track user interaction
     final userLearningService = UserLearningService();
     userLearningService.trackGameInteraction(
@@ -662,9 +660,8 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
           builder: (context) => GameDetailsScreen(game: game),
         ),
       );
-      print('GameCard navigation initiated');
     } catch (e) {
-      print('GameCard navigation error: $e');
+      // Navigation error handled silently
     }
   }
 } 

@@ -39,13 +39,10 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
   Future<void> _initializeAndLoadFeed() async {
     try {
-      print('🔄 Initializing ActivityFeedService...');
       await _activityService.initialize();
-      print('✅ ActivityFeedService initialized');
-      
+
       await _loadActivityFeed();
     } catch (e) {
-      print('❌ Error initializing activity feed: $e');
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -55,22 +52,19 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   Future<void> _loadActivityFeed() async {
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null) {
-      print('❌ No current user found');
       if (mounted) {
         setState(() => _isLoading = false);
       }
       return;
     }
-    
-    print('🔄 Loading activity feed for user: ${currentUser.uid}');
+
     if (mounted) {
       setState(() => _isLoading = true);
     }
     
     try {
       final activities = await _activityService.getActivityFeed(currentUser.uid);
-      print('✅ Loaded ${activities.length} activities');
-      
+
       if (mounted) {
         setState(() {
           _activities = activities;
@@ -78,7 +72,6 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
         });
       }
     } catch (e) {
-      print('❌ Error loading activity feed: $e');
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -88,19 +81,16 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   Future<void> _refreshFeed() async {
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null) {
-      print('❌ No current user found for refresh');
       return;
     }
-    
-    print('🔄 Refreshing activity feed...');
+
     if (mounted) {
       setState(() => _isRefreshing = true);
     }
-    
+
     try {
       final activities = await _activityService.getActivityFeed(currentUser.uid);
-      print('✅ Refreshed ${activities.length} activities');
-      
+
       if (mounted) {
         setState(() {
           _activities = activities;
@@ -108,7 +98,6 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
         });
       }
     } catch (e) {
-      print('❌ Error refreshing feed: $e');
       if (mounted) {
         setState(() => _isRefreshing = false);
       }
@@ -118,22 +107,19 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   Future<void> _loadUserActivities() async {
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null) {
-      print('❌ No current user found for user activities');
       if (mounted) {
         setState(() => _isLoading = false);
       }
       return;
     }
-    
-    print('🔄 Loading user activities...');
+
     if (mounted) {
       setState(() => _isLoading = true);
     }
-    
+
     try {
       final activities = await _activityService.getUserActivities(currentUser.uid);
-      print('✅ Loaded ${activities.length} user activities');
-      
+
       if (mounted) {
         setState(() {
           _activities = activities;
@@ -141,7 +127,6 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
         });
       }
     } catch (e) {
-      print('❌ Error loading user activities: $e');
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -369,7 +354,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       _refreshFeed();
       
     } catch (e) {
-      print('Error handling like: $e');
+      // Error handled silently
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to update like'),
@@ -403,7 +388,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       );
       
     } catch (e) {
-      print('Error adding comment: $e');
+      // Error handled silently
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to add comment'),
@@ -415,7 +400,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
   void _handleShare(ActivityFeedItem activity) {
     // TODO: Implement sharing functionality
-    print('Sharing activity: ${activity.activityId}');
+    // Sharing activity
     
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -427,6 +412,6 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
   void _navigateToProfile(String userId) {
     // TODO: Navigate to user profile
-    print('Navigate to profile: $userId');
+    // Navigate to profile
   }
 } 

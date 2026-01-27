@@ -17,12 +17,8 @@ class PlayerService {
     try {
       // Check cache first if no pagination is used
       if (limit == null && offset == null && _isCacheValid()) {
-        print('✅ PlayerService: Returning cached players');
         return _allPlayersCache!;
       }
-
-      print('🏃 PlayerService: Fetching players from Firestore collection: $_collectionName');
-      print('   Limit: $limit, Offset: $offset');
 
       Query query = _firestore.collection(_collectionName);
 
@@ -55,7 +51,6 @@ class PlayerService {
 
       final QuerySnapshot snapshot = await query.get();
 
-      print('✅ PlayerService: Found ${snapshot.docs.length} players');
       final players = snapshot.docs
           .map((doc) => Player.fromFirestore(doc))
           .toList();
@@ -75,8 +70,6 @@ class PlayerService {
 
       return players;
     } catch (e) {
-      print('❌ PlayerService: Error fetching players: $e');
-      print('❌ PlayerService: Error type: ${e.runtimeType}');
       return [];
     }
   }
@@ -113,7 +106,7 @@ class PlayerService {
 
       return players;
     } catch (e) {
-      print('Error fetching players for $fifaCode: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -131,7 +124,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching players by position $position: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -180,7 +173,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching players by category $category: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -198,7 +191,7 @@ class PlayerService {
       }
       return null;
     } catch (e) {
-      print('Error fetching player $playerId: $e');
+      // Error handled silently
       return null;
     }
   }
@@ -217,7 +210,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching top players by value: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -235,7 +228,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching top scorers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -253,7 +246,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching most capped players: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -271,7 +264,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching youngest players: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -289,7 +282,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching oldest players: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -307,7 +300,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching World Cup veterans: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -325,7 +318,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching World Cup top scorers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -343,7 +336,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching World Cup top assists: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -368,7 +361,7 @@ class PlayerService {
 
       return wcPlayers.take(limit).toList();
     } catch (e) {
-      print('Error fetching World Cup best ratios: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -387,7 +380,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching players from $club: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -408,7 +401,7 @@ class PlayerService {
                player.club.toLowerCase().contains(lowerQuery);
       }).toList();
     } catch (e) {
-      print('Error searching players: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -463,7 +456,7 @@ class PlayerService {
         'playersByPosition': _groupPlayersByPosition(players),
       };
     } catch (e) {
-      print('Error fetching player statistics: $e');
+      // Error handled silently
       return {};
     }
   }

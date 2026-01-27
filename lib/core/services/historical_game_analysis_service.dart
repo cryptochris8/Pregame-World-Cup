@@ -18,7 +18,7 @@ class HistoricalGameAnalysisService {
   Future<Map<String, dynamic>> generateSeasonReview(String teamName, {int? season}) async {
     try {
       final currentSeason = season ?? DateTime.now().year - 1; // Default to last completed season
-      debugPrint('📊 GENERATING SEASON REVIEW: $teamName ($currentSeason)');
+      // Debug output removed
       LoggingService.info('📊 Generating season review for $teamName ($currentSeason)', tag: _logTag);
       
       // Get team games for the season
@@ -43,7 +43,7 @@ class HistoricalGameAnalysisService {
       };
       
     } catch (e) {
-      debugPrint('❌ Error generating season review for $teamName: $e');
+      // Debug output removed
       LoggingService.error('Error generating season review for $teamName: $e', tag: _logTag);
       return await _generateFallbackSeasonReview(teamName, season ?? DateTime.now().year - 1);
     }
@@ -52,7 +52,7 @@ class HistoricalGameAnalysisService {
   /// Analyze the last time two teams played each other
   Future<Map<String, dynamic>> analyzeHeadToHeadHistory(String homeTeam, String awayTeam) async {
     try {
-      debugPrint('🔍 ANALYZING HEAD-TO-HEAD: $awayTeam @ $homeTeam');
+      // Debug output removed
       LoggingService.info('🔍 Analyzing head-to-head: $awayTeam @ $homeTeam', tag: _logTag);
       
       // Get historical matchups
@@ -78,7 +78,7 @@ class HistoricalGameAnalysisService {
       };
       
     } catch (e) {
-      debugPrint('❌ Error analyzing head-to-head for $homeTeam vs $awayTeam: $e');
+      // Debug output removed
       LoggingService.error('Error analyzing head-to-head for $homeTeam vs $awayTeam: $e', tag: _logTag);
       return _generateFallbackHeadToHead(homeTeam, awayTeam);
     }
@@ -89,12 +89,12 @@ class HistoricalGameAnalysisService {
     try {
       final teamKey = TeamMappingService.getTeamKey(teamName);
       if (teamKey == null) {
-        debugPrint('⚠️ No team key mapping found for $teamName');
+        // Debug output removed
         return [];
       }
       
       final url = '$_sportsDataBaseUrl/scores/json/$season';
-      debugPrint('🌐 Fetching season games: $url');
+      // Debug output removed
       
       final response = await http.get(
         Uri.parse(url),
@@ -114,13 +114,13 @@ class HistoricalGameAnalysisService {
           return homeTeam == teamKey || awayTeam == teamKey;
         }).toList();
         
-        debugPrint('📊 Found ${teamGames.length} games for $teamName in $season');
+        // Debug output removed
         return teamGames.cast<Map<String, dynamic>>();
       }
       
       return [];
     } catch (e) {
-      debugPrint('❌ Error fetching season games for $teamName: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -132,7 +132,7 @@ class HistoricalGameAnalysisService {
       final awayKey = TeamMappingService.getTeamKey(awayTeam);
       
       if (homeKey == null || awayKey == null) {
-        debugPrint('⚠️ Team key mapping not found for $homeTeam or $awayTeam');
+        // Debug output removed
         return [];
       }
       
@@ -152,10 +152,10 @@ class HistoricalGameAnalysisService {
         matchups.addAll(headToHeadGames);
       }
       
-      debugPrint('🔍 Found ${matchups.length} historical matchups between $homeTeam and $awayTeam');
+      // Debug output removed
       return matchups;
     } catch (e) {
-      debugPrint('❌ Error finding head-to-head matchups: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -180,7 +180,7 @@ class HistoricalGameAnalysisService {
       
       return [];
     } catch (e) {
-      debugPrint('❌ Error fetching season games for $season: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -449,7 +449,7 @@ class HistoricalGameAnalysisService {
         'gameCount': 12,
       };
     } catch (e) {
-      debugPrint('❌ Failed to get real season data, using generic fallback: $e');
+      // Debug output removed
       return _generateGenericFallback(teamName, season);
     }
   }

@@ -43,7 +43,7 @@ class ActivityFeedService {
       try {
         _activitiesBox = await Hive.openBox<ActivityFeedItem>(_activitiesBoxName);
       } catch (e) {
-        print('Warning: Could not open activities box, creating new one: $e');
+        // Re-create box on error
         await Hive.deleteBoxFromDisk(_activitiesBoxName);
         _activitiesBox = await Hive.openBox<ActivityFeedItem>(_activitiesBoxName);
       }
@@ -51,22 +51,17 @@ class ActivityFeedService {
       try {
         _likesBox = await Hive.openBox<ActivityLike>(_likesBoxName);
       } catch (e) {
-        print('Warning: Could not open likes box, creating new one: $e');
         await Hive.deleteBoxFromDisk(_likesBoxName);
         _likesBox = await Hive.openBox<ActivityLike>(_likesBoxName);
       }
-      
+
       try {
         _commentsBox = await Hive.openBox<ActivityComment>(_commentsBoxName);
       } catch (e) {
-        print('Warning: Could not open comments box, creating new one: $e');
         await Hive.deleteBoxFromDisk(_commentsBoxName);
         _commentsBox = await Hive.openBox<ActivityComment>(_commentsBoxName);
       }
-      
-      print('ActivityFeedService initialized successfully');
     } catch (e) {
-      print('Error initializing ActivityFeedService: $e');
       // Don't rethrow - allow app to continue with limited functionality
     }
   }
@@ -90,7 +85,7 @@ class ActivityFeedService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('create_activity', success: false);
-      print('Error creating activity: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -100,12 +95,10 @@ class ActivityFeedService {
     try {
       // Check memory cache first
       if (_feedCache.containsKey(userId)) {
-        print('Returning cached feed for user: $userId');
         return _feedCache[userId]!.take(limit).toList();
       }
-      
+
       PerformanceMonitor.startApiCall('get_activity_feed');
-      print('Loading activity feed for user: $userId');
       
       // Get user's friends to include their activities
       final friendIds = <String>{userId}; // Include own activities
@@ -131,10 +124,7 @@ class ActivityFeedService {
           final toUserId = data['toUserId'];
           friendIds.add(fromUserId == userId ? toUserId : fromUserId);
         }
-        
-        print('Found ${friendIds.length} friends/self for feed');
       } catch (e) {
-        print('Error getting friends list: $e');
         // Continue with just the user's own activities
       }
       
@@ -153,9 +143,7 @@ class ActivityFeedService {
               .orderBy('createdAt', descending: true)
               .limit(limit * 2) // Get more to account for filtering
               .get();
-          
-          print('Found ${activitiesQuery.docs.length} activities from Firebase');
-          
+
           for (final doc in activitiesQuery.docs) {
             try {
               final activity = _activityFromFirestore(doc.data(), doc.id);
@@ -167,18 +155,15 @@ class ActivityFeedService {
                 }
               }
             } catch (e) {
-              print('Error parsing activity ${doc.id}: $e');
               continue;
             }
           }
         }
       } catch (e) {
-        print('Error querying activities: $e');
         // Try to load from cache instead
         if (_activitiesBox.isOpen) {
           final cachedActivities = _activitiesBox.values.toList();
           activities.addAll(cachedActivities);
-          print('Loaded ${cachedActivities.length} activities from cache');
         }
       }
       
@@ -188,19 +173,17 @@ class ActivityFeedService {
       
       // Cache the feed
       _feedCache[userId] = limitedActivities;
-      
-      print('Returning ${limitedActivities.length} activities for feed');
+
       PerformanceMonitor.endApiCall('get_activity_feed', success: true);
       return limitedActivities;
-      
+
     } catch (e) {
       PerformanceMonitor.endApiCall('get_activity_feed', success: false);
-      print('Error getting activity feed: $e');
       
       // Return cached data if available
       if (_activitiesBox.isOpen) {
         final cachedActivities = _activitiesBox.values.take(limit).toList();
-        print('Returning ${cachedActivities.length} cached activities due to error');
+        // Returning cached activities due to error
         return cachedActivities;
       }
       
@@ -212,19 +195,16 @@ class ActivityFeedService {
   Future<List<ActivityFeedItem>> getUserActivities(String userId, {int limit = 20}) async {
     try {
       PerformanceMonitor.startApiCall('get_user_activities');
-      print('Loading user activities for: $userId');
-      
+
       final query = await _firestore
           .collection('activities')
           .where('userId', isEqualTo: userId)
           .orderBy('createdAt', descending: true)
           .limit(limit)
           .get();
-      
-      print('Found ${query.docs.length} user activities from Firebase');
-      
+
       final activities = <ActivityFeedItem>[];
-      
+
       for (final doc in query.docs) {
         try {
           final activity = _activityFromFirestore(doc.data(), doc.id);
@@ -235,29 +215,25 @@ class ActivityFeedService {
             }
           }
         } catch (e) {
-          print('Error parsing user activity ${doc.id}: $e');
           continue;
         }
       }
-      
-      print('Returning ${activities.length} user activities');
+
       PerformanceMonitor.endApiCall('get_user_activities', success: true);
       return activities;
-      
+
     } catch (e) {
       PerformanceMonitor.endApiCall('get_user_activities', success: false);
-      print('Error getting user activities: $e');
-      
+
       // Try to return cached user activities
       if (_activitiesBox.isOpen) {
         final cachedActivities = _activitiesBox.values
             .where((activity) => activity.userId == userId)
             .take(limit)
             .toList();
-        print('Returning ${cachedActivities.length} cached user activities due to error');
         return cachedActivities;
       }
-      
+
       return [];
     }
   }
@@ -298,7 +274,7 @@ class ActivityFeedService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('like_activity', success: false);
-      print('Error liking activity: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -329,7 +305,7 @@ class ActivityFeedService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('unlike_activity', success: false);
-      print('Error unliking activity: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -349,7 +325,7 @@ class ActivityFeedService {
       return doc.exists;
       
     } catch (e) {
-      print('Error checking activity like: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -396,7 +372,7 @@ class ActivityFeedService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('comment_activity', success: false);
-      print('Error commenting on activity: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -444,7 +420,7 @@ class ActivityFeedService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('get_activity_comments', success: false);
-      print('Error getting activity comments: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -489,7 +465,7 @@ class ActivityFeedService {
         isPublic: data['isPublic'] ?? true,
       );
     } catch (e) {
-      print('Error parsing activity from Firestore: $e');
+      // Error handled silently
       return null;
     }
   }

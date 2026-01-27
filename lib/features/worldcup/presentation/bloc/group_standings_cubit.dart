@@ -34,7 +34,7 @@ class GroupStandingsCubit extends Cubit<GroupStandingsState> {
         lastUpdated: DateTime.now(),
       ));
     } catch (e) {
-      debugPrint('Error loading groups: $e');
+      // Debug output removed
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load group standings: $e',
@@ -62,7 +62,7 @@ class GroupStandingsCubit extends Cubit<GroupStandingsState> {
         selectGroup(state.selectedGroup!.groupLetter);
       }
     } catch (e) {
-      debugPrint('Error refreshing groups: $e');
+      // Debug output removed
       emit(state.copyWith(
         isRefreshing: false,
         errorMessage: 'Failed to refresh group standings: $e',
@@ -93,7 +93,7 @@ class GroupStandingsCubit extends Cubit<GroupStandingsState> {
     try {
       return await _groupRepository.getGroupByLetter(groupLetter);
     } catch (e) {
-      debugPrint('Error getting group $groupLetter: $e');
+      // Debug output removed
       return null;
     }
   }

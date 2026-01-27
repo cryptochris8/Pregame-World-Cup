@@ -25,7 +25,7 @@ class EnhancedAIPredictionService {
   /// Generate intelligent game prediction using real data
   Future<Map<String, dynamic>> generateEnhancedPrediction(GameSchedule game) async {
     try {
-      debugPrint('🤖 ENHANCED AI: Generating prediction for ${game.awayTeamName} @ ${game.homeTeamName}');
+      // Debug output removed
       
       // Step 1: Gather comprehensive data
       final teamData = await _gatherTeamData(game.homeTeamName, game.awayTeamName);
@@ -41,12 +41,12 @@ class EnhancedAIPredictionService {
       // Step 4: Combine statistical and AI predictions
       final finalPrediction = _combinePredictions(statisticalPrediction, aiAnalysis);
       
-      debugPrint('🤖 ENHANCED AI: Generated intelligent prediction with ${(finalPrediction['confidence'] * 100).toInt()}% confidence');
+      // Debug output removed
       
       return finalPrediction;
       
     } catch (e) {
-      debugPrint('🤖 ENHANCED AI ERROR: $e');
+      // Debug output removed
       LoggingService.error('Enhanced AI prediction failed: $e', tag: 'EnhancedAI');
       return _generateIntelligentFallback(game);
     }
@@ -74,10 +74,10 @@ class EnhancedAIPredictionService {
         'record': await _getTeamRecord(awayTeam),
       };
 
-      debugPrint('TEAM DATA: Gathered stats for both teams');
+      // Debug output removed
 
     } catch (e) {
-      debugPrint('TEAM DATA: Error gathering team data: $e');
+      // Debug output removed
     }
 
     return teamData;
@@ -134,7 +134,7 @@ class EnhancedAIPredictionService {
       };
       
     } catch (e) {
-      debugPrint('⚠️ STATISTICAL PREDICTION: Error calculating prediction: $e');
+      // Debug output removed
       return _getBasicStatisticalPrediction();
     }
   }
@@ -379,7 +379,7 @@ class EnhancedAIPredictionService {
         'insights': _extractInsights(aiResponse),
       };
     } catch (e) {
-      debugPrint('⚠️ AI ANALYSIS: Error generating AI analysis: $e');
+      // Debug output removed
       return null;
     }
   }

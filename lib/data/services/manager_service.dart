@@ -17,12 +17,8 @@ class ManagerService {
     try {
       // Check cache first if no pagination is used
       if (limit == null && offset == null && _isCacheValid()) {
-        print('✅ ManagerService: Returning cached managers');
         return _allManagersCache!;
       }
-
-      print('👔 ManagerService: Fetching managers from Firestore collection: $_collectionName');
-      print('   Limit: $limit, Offset: $offset');
 
       Query query = _firestore
           .collection(_collectionName)
@@ -44,7 +40,6 @@ class ManagerService {
 
       final QuerySnapshot snapshot = await query.get();
 
-      print('✅ ManagerService: Found ${snapshot.docs.length} managers');
       final managers = snapshot.docs
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
@@ -57,8 +52,6 @@ class ManagerService {
 
       return managers;
     } catch (e) {
-      print('❌ ManagerService: Error fetching managers: $e');
-      print('❌ ManagerService: Error type: ${e.runtimeType}');
       return [];
     }
   }
@@ -91,7 +84,7 @@ class ManagerService {
       }
       return null;
     } catch (e) {
-      print('Error fetching manager for $fifaCode: $e');
+      // Error handled silently
       return null;
     }
   }
@@ -109,7 +102,7 @@ class ManagerService {
       }
       return null;
     } catch (e) {
-      print('Error fetching manager $managerId: $e');
+      // Error handled silently
       return null;
     }
   }
@@ -127,7 +120,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching most experienced managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -145,7 +138,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching youngest managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -163,7 +156,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching oldest managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -179,7 +172,7 @@ class ManagerService {
 
       return managers.take(limit).toList();
     } catch (e) {
-      print('Error fetching top winning managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -195,7 +188,7 @@ class ManagerService {
 
       return managers.take(limit).toList();
     } catch (e) {
-      print('Error fetching most successful managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -211,7 +204,7 @@ class ManagerService {
 
       return managers.take(limit).toList();
     } catch (e) {
-      print('Error fetching most experienced managers by matches: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -228,7 +221,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      print('Error fetching managers by nationality $nationality: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -241,7 +234,7 @@ class ManagerService {
       // Filter managers with controversies
       return managers.where((m) => m.isControversial).toList();
     } catch (e) {
-      print('Error fetching controversial managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -259,7 +252,7 @@ class ManagerService {
                manager.currentTeam.toLowerCase().contains(lowerQuery);
       }).toList();
     } catch (e) {
-      print('Error searching managers: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -321,7 +314,7 @@ class ManagerService {
         'managersByNationality': _groupManagersByNationality(managers),
       };
     } catch (e) {
-      print('Error fetching manager statistics: $e');
+      // Error handled silently
       return {};
     }
   }
@@ -348,7 +341,7 @@ class ManagerService {
           manager.tacticalStyle.toLowerCase().contains(style.toLowerCase()))
           .toList();
     } catch (e) {
-      print('Error fetching managers by tactical style: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -366,7 +359,7 @@ class ManagerService {
               !honor.toLowerCase().contains('place')))
           .toList();
     } catch (e) {
-      print('Error fetching World Cup winning managers: $e');
+      // Error handled silently
       return [];
     }
   }

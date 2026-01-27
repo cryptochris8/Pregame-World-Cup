@@ -56,7 +56,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
       // Subscribe to changes
       _subscribeToChanges();
     } catch (e) {
-      debugPrint('Error loading predictions: $e');
+      // Debug output removed
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load predictions: $e',
@@ -72,7 +72,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         emit(state.copyWith(predictions: predictions));
       },
       onError: (e) {
-        debugPrint('Error in predictions stream: $e');
+        // Debug output removed
       },
     );
 
@@ -82,7 +82,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         emit(state.copyWith(stats: stats));
       },
       onError: (e) {
-        debugPrint('Error in stats stream: $e');
+        // Debug output removed
       },
     );
   }
@@ -131,7 +131,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'Prediction saved!',
       ));
     } catch (e) {
-      debugPrint('Error saving prediction: $e');
+      // Debug output removed
       emit(state.copyWith(
         isSaving: false,
         errorMessage: 'Failed to save prediction: $e',
@@ -173,7 +173,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'Prediction deleted',
       ));
     } catch (e) {
-      debugPrint('Error deleting prediction: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to delete prediction: $e'));
     }
   }
@@ -194,7 +194,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'Prediction deleted',
       ));
     } catch (e) {
-      debugPrint('Error deleting prediction: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to delete prediction: $e'));
     }
   }
@@ -227,7 +227,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
       // When re-enabling, implement token reward logic here
       // See git history for previous implementation
     } catch (e) {
-      debugPrint('Error evaluating predictions: $e');
+      // Debug output removed
     }
   }
 
@@ -264,7 +264,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'All predictions cleared',
       ));
     } catch (e) {
-      debugPrint('Error clearing predictions: $e');
+      // Debug output removed
       emit(state.copyWith(errorMessage: 'Failed to clear predictions: $e'));
     }
   }

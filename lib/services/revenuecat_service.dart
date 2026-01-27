@@ -332,9 +332,7 @@ class RevenueCatService {
   }
 
   void _log(String message) {
-    if (kDebugMode) {
-      print('[$_logTag] $message');
-    }
+    // Debug logging removed for production
   }
 }
 

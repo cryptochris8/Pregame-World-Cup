@@ -79,7 +79,7 @@ class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget>
         _hasError = true;
         _isLoading = false;
       });
-      debugPrint('AI Historical Insights Error: $e');
+      // Debug output removed
     }
   }
 
@@ -543,7 +543,7 @@ class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget>
         _hasError = true;
         _isLoading = false;
       });
-      debugPrint('Full Analysis Error: $e');
+      // Debug output removed
     }
   }
 } 

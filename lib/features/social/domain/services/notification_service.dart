@@ -40,9 +40,9 @@ class NotificationService {
       _notificationsBox = await Hive.openBox<SocialNotification>(_notificationsBoxName);
       _preferencesBox = await Hive.openBox<NotificationPreferences>(_preferencesBoxName);
       
-      print('NotificationService initialized successfully');
+      // Service initialized
     } catch (e) {
-      print('Error initializing NotificationService: $e');
+      // Error handled silently
       rethrow;
     }
   }
@@ -55,13 +55,11 @@ class NotificationService {
       // Check user preferences first
       final preferences = await getUserNotificationPreferences(notification.userId);
       if (!preferences.shouldNotifyForType(notification.type)) {
-        print('User has disabled notifications for type: ${notification.type.name}');
         return false;
       }
-      
+
       // Check quiet hours
       if (preferences.isInQuietHours && notification.priority != NotificationPriority.urgent) {
-        print('In quiet hours, skipping non-urgent notification');
         return false;
       }
       
@@ -83,7 +81,7 @@ class NotificationService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('send_notification', success: false);
-      print('Error sending notification: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -128,7 +126,7 @@ class NotificationService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('get_user_notifications', success: false);
-      print('Error getting user notifications: $e');
+      // Error handled silently
       return [];
     }
   }
@@ -159,7 +157,7 @@ class NotificationService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('mark_notification_read', success: false);
-      print('Error marking notification as read: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -191,7 +189,7 @@ class NotificationService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('mark_all_notifications_read', success: false);
-      print('Error marking all notifications as read: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -208,7 +206,7 @@ class NotificationService {
       return querySnapshot.docs.length;
       
     } catch (e) {
-      print('Error getting unread notification count: $e');
+      // Error handled silently
       return 0;
     }
   }
@@ -250,7 +248,7 @@ class NotificationService {
       return preferences;
       
     } catch (e) {
-      print('Error getting user notification preferences: $e');
+      // Error handled silently
       return NotificationPreferences.defaultPreferences();
     }
   }
@@ -275,7 +273,7 @@ class NotificationService {
       
     } catch (e) {
       PerformanceMonitor.endApiCall('save_notification_preferences', success: false);
-      print('Error saving notification preferences: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -298,7 +296,7 @@ class NotificationService {
       return true;
       
     } catch (e) {
-      print('Error deleting notification: $e');
+      // Error handled silently
       return false;
     }
   }
@@ -462,7 +460,7 @@ class NotificationService {
         priority: NotificationPriority.values.firstWhere((e) => e.name == data['priority']),
       );
     } catch (e) {
-      print('Error parsing notification from Firestore: $e');
+      // Error handled silently
       return null;
     }
   }

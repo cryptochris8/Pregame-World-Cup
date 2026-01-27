@@ -27,7 +27,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       // Try cache first
       final cached = await _cacheDataSource.getCachedMatches();
       if (cached != null && cached.isNotEmpty) {
-        debugPrint('Returning ${cached.length} matches from cache');
+        // Debug output removed
         return cached;
       }
 
@@ -36,11 +36,11 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
         final firestoreMatches = await _firestoreDataSource.getAllMatches();
         if (firestoreMatches.isNotEmpty) {
           await _cacheDataSource.cacheMatches(firestoreMatches);
-          debugPrint('Returning ${firestoreMatches.length} matches from Firestore');
+          // Debug output removed
           return firestoreMatches;
         }
       } catch (e) {
-        debugPrint('Firestore fetch failed: $e');
+        // Debug output removed
       }
 
       // Fetch from API
@@ -50,16 +50,16 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
           return apiMatches;
         }
       } catch (e) {
-        debugPrint('API fetch failed: $e');
+        // Debug output removed
       }
 
       // Fallback to mock data for development/testing
-      debugPrint('Using mock data fallback');
+      // Debug output removed
       final mockMatches = WorldCupMockData.groupStageMatches;
       await _cacheDataSource.cacheMatches(mockMatches);
       return mockMatches;
     } catch (e) {
-      debugPrint('Error getting all matches: $e');
+      // Debug output removed
       // Return mock data as final fallback
       return WorldCupMockData.groupStageMatches;
     }
@@ -76,7 +76,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       final matches = await _firestoreDataSource.getMatchesByStage(stage);
       return matches;
     } catch (e) {
-      debugPrint('Error getting matches by stage: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -91,7 +91,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return await _firestoreDataSource.getMatchesByGroup(groupLetter);
     } catch (e) {
-      debugPrint('Error getting matches by group: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -107,7 +107,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
                match.dateTime!.day == date.day;
       }).toList();
     } catch (e) {
-      debugPrint('Error getting matches by date: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -117,7 +117,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
     try {
       return await _firestoreDataSource.getMatchesByTeam(teamCode);
     } catch (e) {
-      debugPrint('Error getting matches by team: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -128,7 +128,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       final allMatches = await getAllMatches();
       return allMatches.where((m) => m.venueId == venueId).toList();
     } catch (e) {
-      debugPrint('Error getting matches by venue: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -144,7 +144,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return await _firestoreDataSource.getMatchById(matchId);
     } catch (e) {
-      debugPrint('Error getting match by ID: $e');
+      // Debug output removed
       return null;
     }
   }
@@ -155,7 +155,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       // Try cache first
       final cached = await _cacheDataSource.getCachedUpcomingMatches();
       if (cached != null && cached.isNotEmpty) {
-        debugPrint('Returning ${cached.length} upcoming matches from cache');
+        // Debug output removed
         return cached.take(limit).toList();
       }
 
@@ -166,7 +166,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       }
       return matches;
     } catch (e) {
-      debugPrint('Error getting upcoming matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -197,7 +197,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return await _firestoreDataSource.getLiveMatches();
     } catch (e) {
-      debugPrint('Error getting live matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -208,7 +208,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       // Try cache first
       final cached = await _cacheDataSource.getCachedTodaysMatches();
       if (cached != null && cached.isNotEmpty) {
-        debugPrint('Returning ${cached.length} today matches from cache');
+        // Debug output removed
         return cached;
       }
 
@@ -219,7 +219,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       }
       return matches;
     } catch (e) {
-      debugPrint('Error getting today matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -230,7 +230,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       // Try cache first (24-hour cache for completed matches)
       final cached = await _cacheDataSource.getCachedCompletedMatches();
       if (cached != null && cached.isNotEmpty) {
-        debugPrint('Returning ${cached.length} completed matches from cache');
+        // Debug output removed
         return cached.take(limit).toList();
       }
 
@@ -255,7 +255,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return completed.take(limit).toList();
     } catch (e) {
-      debugPrint('Error getting completed matches: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -269,7 +269,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
                         m.groupMatchDay == matchDay)
           .toList();
     } catch (e) {
-      debugPrint('Error getting matches by group match day: $e');
+      // Debug output removed
       return [];
     }
   }
@@ -281,7 +281,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       // Invalidate cache
       await _cacheDataSource.clearCache('worldcup_matches');
     } catch (e) {
-      debugPrint('Error updating match: $e');
+      // Debug output removed
       throw Exception('Failed to update match: $e');
     }
   }
@@ -289,7 +289,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
   @override
   Future<List<WorldCupMatch>> refreshMatches() async {
     try {
-      debugPrint('Refreshing matches from API...');
+      // Debug output removed
       final apiMatches = await _apiDataSource.fetchAllMatches();
 
       if (apiMatches.isNotEmpty) {
@@ -297,13 +297,13 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
         await _firestoreDataSource.saveMatches(apiMatches);
         // Cache locally
         await _cacheDataSource.cacheMatches(apiMatches);
-        debugPrint('Refreshed ${apiMatches.length} matches');
+        // Debug output removed
         return apiMatches;
       }
 
       return [];
     } catch (e) {
-      debugPrint('Error refreshing matches: $e');
+      // Debug output removed
       throw Exception('Failed to refresh matches: $e');
     }
   }

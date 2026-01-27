@@ -13,28 +13,28 @@ class RealDataClaudeDemo {
   
   /// Demonstrate real team analysis with Claude insights
   static Future<void> demoRealTeamAnalysis() async {
-    debugPrint('🏈 DEMO: Real Team Analysis with Claude');
+    // Debug output removed
     
     try {
       // Get comprehensive analysis for Alabama with real player data
       final analysis = await _integration.getTeamAnalysisWithRealData('ALA');
       
       if (analysis != null) {
-        debugPrint('✅ SUCCESS: Got real data for ${analysis['real_players'].length} players');
-        debugPrint('📊 Team Analysis: ${analysis['claude_analysis']?['summary'] ?? 'Analysis pending...'}');
-        debugPrint('🏥 Injuries: ${analysis['injury_report'].length} players injured');
-        debugPrint('📈 Data Quality: ${analysis['data_quality']}');
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
       } else {
-        debugPrint('⚠️ No real data available for team analysis');
+        // Debug output removed
       }
     } catch (e) {
-      debugPrint('❌ Demo failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate game prediction with real player matchups
   static Future<void> demoRealGamePrediction() async {
-    debugPrint('🎯 DEMO: Game Prediction with Real Players');
+    // Debug output removed
     
     try {
       // Predict Alabama vs Auburn with real player data
@@ -46,78 +46,78 @@ class RealDataClaudeDemo {
       );
       
       if (prediction != null) {
-        debugPrint('✅ SUCCESS: Generated prediction with real player data');
-        debugPrint('🏈 Key Players - Home: ${prediction['key_players']['home'].length}');
-        debugPrint('🏈 Key Players - Away: ${prediction['key_players']['away'].length}');
-        debugPrint('📊 Prediction: ${prediction['prediction']?['summary'] ?? 'Prediction pending...'}');
-        debugPrint('🎯 Confidence: ${prediction['confidence']}');
-        debugPrint('🏥 Injury Impact: ${prediction['injury_impact']['advantage']}');
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
       } else {
-        debugPrint('⚠️ No real data available for game prediction');
+        // Debug output removed
       }
     } catch (e) {
-      debugPrint('❌ Demo failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate individual player analysis with Claude
   static Future<void> demoRealPlayerAnalysis() async {
-    debugPrint('👤 DEMO: Real Player Analysis with Claude');
+    // Debug output removed
     
     try {
       // This would need a real player ID from SportsData.io
       // For demo, we'll show the process
-      debugPrint('🔍 Process: Get real player → Analyze stats → Claude insights');
-      debugPrint('📊 Features: Real stats, position analysis, draft potential, season outlook');
-      debugPrint('✅ Benefits: No fake names, actual performance data, AI-powered insights');
+      // Debug output removed
+      // Debug output removed
+      // Debug output removed
     } catch (e) {
-      debugPrint('❌ Demo failed: $e');
+      // Debug output removed
     }
   }
   
   /// Demonstrate injury analysis with real impact assessment
   static Future<void> demoRealInjuryAnalysis() async {
-    debugPrint('🏥 DEMO: Real Injury Analysis with Claude');
+    // Debug output removed
     
     try {
       // Get injury analysis for Alabama
       final injuryReport = await _integration.getInjuryReportWithAnalysis('ALA');
       
       if (injuryReport != null) {
-        debugPrint('✅ SUCCESS: Got real injury data');
-        debugPrint('🏥 Injury Count: ${injuryReport['injury_count']}');
-        debugPrint('📊 Impact Level: ${injuryReport['impact_level'] ?? 'Unknown'}');
-        debugPrint('🧠 Claude Analysis: ${injuryReport['claude_analysis']}');
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
+        // Debug output removed
       } else {
-        debugPrint('⚠️ No injury data available');
+        // Debug output removed
       }
     } catch (e) {
-      debugPrint('❌ Demo failed: $e');
+      // Debug output removed
     }
   }
   
   /// Run all demos to showcase the integration
   static Future<void> runAllDemos() async {
-    debugPrint('\n🚀 ============ REAL DATA + CLAUDE DEMOS ============\n');
+    // Debug output removed
     
     await demoRealTeamAnalysis();
-    debugPrint('\n' + '─' * 50 + '\n');
+    // Debug output removed
     
     await demoRealGamePrediction();
-    debugPrint('\n' + '─' * 50 + '\n');
+    // Debug output removed
     
     await demoRealPlayerAnalysis();
-    debugPrint('\n' + '─' * 50 + '\n');
+    // Debug output removed
     
     await demoRealInjuryAnalysis();
     
-    debugPrint('\n🎉 ============ DEMOS COMPLETE ============\n');
-    debugPrint('🔑 Key Benefits:');
-    debugPrint('   ✅ Real player names and statistics');
-    debugPrint('   ✅ Claude AI analysis of actual data');
-    debugPrint('   ✅ No more fake "John Smith" players');
-    debugPrint('   ✅ Comprehensive injury impact assessment');
-    debugPrint('   ✅ Data-driven game predictions');
+    // Debug output removed
+    // Debug output removed
+    // Debug output removed
+    // Debug output removed
+    // Debug output removed
+    // Debug output removed
+    // Debug output removed
   }
 }
 
@@ -129,20 +129,20 @@ class IntegrationHealthCheck {
       final integration = sl<ClaudeSportsIntegrationService>();
       
       // Test basic service availability
-      debugPrint('🔍 Testing Claude Sports Integration...');
+      // Debug output removed
       
       // Try to get data for a popular team
       final quickTest = await integration.getInjuryReportWithAnalysis('ALA');
       
       if (quickTest != null) {
-        debugPrint('✅ Integration healthy: Claude + SportsData.io working');
+        // Debug output removed
         return true;
       } else {
-        debugPrint('⚠️ Integration available but no data returned');
+        // Debug output removed
         return false;
       }
     } catch (e) {
-      debugPrint('❌ Integration health check failed: $e');
+      // Debug output removed
       return false;
     }
   }
