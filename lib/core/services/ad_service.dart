@@ -21,12 +21,11 @@ class AdService {
   static const String _testInterstitialAdUnitIdAndroid = 'ca-app-pub-3940256099942544/1033173712';
   static const String _testInterstitialAdUnitIdIOS = 'ca-app-pub-3940256099942544/4411468910';
 
-  // Production Ad Unit IDs (replace with your actual ad unit IDs from AdMob)
-  // You'll need to create these in AdMob console
-  static const String _prodBannerAdUnitIdAndroid = 'ca-app-pub-7575845069047315/XXXXXXXXXX'; // TODO: Replace
-  static const String _prodBannerAdUnitIdIOS = 'ca-app-pub-7575845069047315/XXXXXXXXXX'; // TODO: Replace
-  static const String _prodInterstitialAdUnitIdAndroid = 'ca-app-pub-7575845069047315/XXXXXXXXXX'; // TODO: Replace
-  static const String _prodInterstitialAdUnitIdIOS = 'ca-app-pub-7575845069047315/XXXXXXXXXX'; // TODO: Replace
+  // Production Ad Unit IDs
+  static const String _prodBannerAdUnitIdAndroid = 'ca-app-pub-7575845069047315/9316052854';
+  static const String _prodBannerAdUnitIdIOS = 'ca-app-pub-7575845069047315/9316052854';
+  static const String _prodInterstitialAdUnitIdAndroid = 'ca-app-pub-7575845069047315/9523936416';
+  static const String _prodInterstitialAdUnitIdIOS = 'ca-app-pub-7575845069047315/9523936416';
 
   // Use test ads in debug mode
   static bool get _useTestAds => kDebugMode;
