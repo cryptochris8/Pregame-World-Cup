@@ -4,7 +4,6 @@ import '../features/schedule/domain/entities/game_schedule.dart';
 import '../core/services/logging_service.dart';
 import 'espn_service.dart';
 import 'comprehensive_series_service.dart';
-import 'college_football_data_api_service.dart';
 
 /// Enhanced game analysis service that provides detailed insights including:
 /// - Series history and head-to-head records
@@ -14,18 +13,15 @@ import 'college_football_data_api_service.dart';
 /// - Weather and venue impact
 class EnhancedGameAnalysisService {
   static const String _sportsReferenceBase = 'https://api.sports.yahoo.com';
-  static const String _cfbStatsBase = 'https://api.collegefootballdata.com';
-  
+
   final Dio _dio;
   final ESPNService _espnService;
   final ComprehensiveSeriesService _comprehensiveSeriesService;
-  final CollegeFootballDataApiService _cfbDataService;
-  
-  EnhancedGameAnalysisService({Dio? dio}) 
+
+  EnhancedGameAnalysisService({Dio? dio})
     : _dio = dio ?? Dio(),
       _espnService = ESPNService(),
-      _comprehensiveSeriesService = ComprehensiveSeriesService(),
-      _cfbDataService = CollegeFootballDataApiService();
+      _comprehensiveSeriesService = ComprehensiveSeriesService();
 
   /// Get comprehensive game analysis with all detailed insights
   Future<Map<String, dynamic>> getComprehensiveGameAnalysis(GameSchedule game) async {
@@ -80,24 +76,7 @@ class EnhancedGameAnalysisService {
   /// Get comprehensive series history using multiple data sources and intelligent generation
   Future<Map<String, dynamic>> _getSeriesHistory(String homeTeam, String awayTeam) async {
     try {
-      // Step 1: Try College Football Data API for real data (highest priority)
-      final realData = await _cfbDataService.getHeadToHeadSeries(homeTeam, awayTeam);
-      if (realData != null && realData.isNotEmpty) {
-        return {
-          'overallRecord': realData['record'],
-          'recentRecord': realData['recentRecord'],
-          'averageScore': realData['averageScore'],
-          'biggestWin': realData['biggestWin'],
-          'longestStreak': realData['longestStreak'],
-          'memorableGames': realData['memorableGames'],
-          'firstMeeting': realData['firstMeeting'],
-          'stadiumRecord': realData['stadiumRecord'],
-          'playoffImplications': realData['playoffImplications'],
-          'narratives': realData['narratives'],
-        };
-      }
-      
-      // Step 2: Check our comprehensive static data for major rivalries
+      // Step 1: Check our comprehensive static data for major rivalries
       final seriesData = _getStaticSeriesData(homeTeam, awayTeam);
       if (seriesData['record'] != 'Series closely contested') {
         return {
@@ -113,10 +92,10 @@ class EnhancedGameAnalysisService {
           'narratives': seriesData['narratives'],
         };
       }
-      
-      // Step 3: Use comprehensive series service for intelligent generation
+
+      // Step 2: Use comprehensive series service for intelligent generation
       final intelligentData = await _comprehensiveSeriesService.getSeriesHistory(homeTeam, awayTeam);
-      
+
       return {
         'overallRecord': intelligentData['record'],
         'recentRecord': intelligentData['recentRecord'],
@@ -129,7 +108,7 @@ class EnhancedGameAnalysisService {
         'playoffImplications': intelligentData['playoffImplications'],
         'narratives': intelligentData['narratives'],
       };
-      
+
     } catch (e) {
       LoggingService.error('Error fetching series history: $e', tag: 'SeriesHistory');
       return _getGenericSeriesHistory(homeTeam, awayTeam);

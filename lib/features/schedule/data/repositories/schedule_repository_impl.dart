@@ -1,19 +1,17 @@
 import '../../../../core/services/cache_service.dart';
 import '../../domain/repositories/schedule_repository.dart';
-import '../datasources/ncaa_schedule_datasource.dart';
+import '../datasources/espn_schedule_datasource.dart';
 import '../../domain/entities/game_schedule.dart';
 
 /// Cache key prefixes for schedule data
-const String _scheduleSeasonCachePrefix = 'schedule_season_';
 const String _scheduleWeekCachePrefix = 'schedule_week_';
 const String _scheduleUpcomingCacheKey = 'schedule_upcoming';
 
 class ScheduleRepositoryImpl implements ScheduleRepository {
-  final NcaaScheduleDataSource remoteDataSource;
+  final ESPNScheduleDataSource remoteDataSource;
   final CacheService _cacheService;
 
   /// Cache durations
-  static const Duration _seasonCacheDuration = Duration(hours: 12);
   static const Duration _weekCacheDuration = Duration(hours: 2);
   static const Duration _upcomingCacheDuration = Duration(minutes: 30);
 
@@ -21,22 +19,6 @@ class ScheduleRepositoryImpl implements ScheduleRepository {
     required this.remoteDataSource,
     CacheService? cacheService,
   }) : _cacheService = cacheService ?? CacheService.instance;
-
-  @override
-  Future<List<GameSchedule>> getCollegeFootballSchedule(int year) async {
-    final cacheKey = '$_scheduleSeasonCachePrefix$year';
-
-    // Try to get from cache first
-    final cached = await _loadFromCache(cacheKey);
-    if (cached != null) {
-      return cached;
-    }
-
-    // Fetch from remote and cache
-    final games = await remoteDataSource.fetchFullSeasonSchedule(year);
-    await _saveToCache(cacheKey, games, _seasonCacheDuration);
-    return games;
-  }
 
   @override
   Future<List<GameSchedule>> getUpcomingGames({int limit = 10}) async {
@@ -64,8 +46,9 @@ class ScheduleRepositoryImpl implements ScheduleRepository {
       return cached;
     }
 
-    // Fetch from remote and cache
-    final games = await remoteDataSource.fetchScheduleForWeek(year, week);
+    // Fetch from season schedule and filter by week
+    final allGames = await remoteDataSource.fetch2025SeasonSchedule(limit: 500);
+    final games = allGames.where((game) => game.week == week).toList();
     await _saveToCache(cacheKey, games, _weekCacheDuration);
     return games;
   }

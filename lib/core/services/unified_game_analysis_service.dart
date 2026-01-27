@@ -8,11 +8,9 @@ import 'user_learning_service.dart';
 import 'team_mapping_service.dart';
 import '../../services/espn_service.dart';
 import '../../services/comprehensive_series_service.dart';
-import '../../services/college_football_data_api_service.dart';
 import '../../features/schedule/domain/entities/game_schedule.dart';
 
 /// Unified service that combines game prediction and enhanced analysis capabilities
-/// Replaces both GamePredictionService and EnhancedGameAnalysisService
 class UnifiedGameAnalysisService {
   static final UnifiedGameAnalysisService _instance = UnifiedGameAnalysisService._internal();
   factory UnifiedGameAnalysisService() => _instance;
@@ -23,12 +21,11 @@ class UnifiedGameAnalysisService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final Dio _dio = Dio();
 
-  // Service dependencies  
+  // Service dependencies
   final AIService _aiService = AIService();
   final UserLearningService _userLearningService = UserLearningService();
   final ESPNService _espnService = ESPNService();
   final ComprehensiveSeriesService _comprehensiveSeriesService = ComprehensiveSeriesService();
-  final CollegeFootballDataApiService _cfbDataService = CollegeFootballDataApiService();
 
   /// Generate comprehensive game analysis with prediction
   /// Combines functionality from both original services
@@ -191,13 +188,7 @@ class UnifiedGameAnalysisService {
   
   Future<Map<String, dynamic>> _getSeriesHistory(String homeTeam, String awayTeam) async {
     try {
-      // Try College Football Data API for real data first
-      final realData = await _cfbDataService.getHeadToHeadSeries(homeTeam, awayTeam);
-      if (realData != null && realData.isNotEmpty) {
-        return realData;
-      }
-      
-      // Fall back to comprehensive series service
+      // Use comprehensive series service for series history
       return await _comprehensiveSeriesService.getSeriesHistory(homeTeam, awayTeam);
     } catch (e) {
       LoggingService.error('Error fetching series history: $e', tag: 'UnifiedAnalysis');

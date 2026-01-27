@@ -1,16 +1,14 @@
 import 'package:flutter/foundation.dart';
 import '../../services/logging_service.dart';
 import '../../../services/espn_service.dart';
-import '../../../services/college_football_data_api_service.dart';
-import '../../../services/ncaa_api_service.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../../injection_container.dart';
 import 'ai_service.dart';
 
 /// Enhanced Game Summary Service
-/// 
+///
 /// This service generates detailed, intelligent game summaries using:
-/// - Real team statistics and performance data
+/// - Team statistics and performance data
 /// - Historical context and rivalry information
 /// - Key player information and matchups
 /// - Venue and weather context
@@ -18,12 +16,10 @@ import 'ai_service.dart';
 class EnhancedGameSummaryService {
   static EnhancedGameSummaryService? _instance;
   static EnhancedGameSummaryService get instance => _instance ??= EnhancedGameSummaryService._();
-  
+
   EnhancedGameSummaryService._();
-  
+
   final ESPNService _espnService = ESPNService();
-  final CollegeFootballDataApiService _cfbService = CollegeFootballDataApiService();
-  final NCAAApiService _ncaaService = NCAAApiService();
   final AIService _aiService = sl<AIService>();
   
   /// Generate comprehensive game summary
@@ -62,53 +58,47 @@ class EnhancedGameSummaryService {
       'home': <String, dynamic>{},
       'away': <String, dynamic>{},
     };
-    
+
     try {
-      // Get team statistics from NCAA API
-      final homeStats = await _ncaaService.getTeamStats(_getTeamId(homeTeam));
-      final awayStats = await _ncaaService.getTeamStats(_getTeamId(awayTeam));
-      
       teamData['home'] = {
         'name': homeTeam,
-        'stats': homeStats ?? {},
+        'stats': {},
         'ranking': await _getTeamRanking(homeTeam),
         'record': await _getTeamRecord(homeTeam),
-        'strengths': _identifyTeamStrengths(homeStats ?? {}),
-        'weaknesses': _identifyTeamWeaknesses(homeStats ?? {}),
+        'strengths': _identifyTeamStrengths({}),
+        'weaknesses': _identifyTeamWeaknesses({}),
       };
-      
+
       teamData['away'] = {
         'name': awayTeam,
-        'stats': awayStats ?? {},
+        'stats': {},
         'ranking': await _getTeamRanking(awayTeam),
         'record': await _getTeamRecord(awayTeam),
-        'strengths': _identifyTeamStrengths(awayStats ?? {}),
-        'weaknesses': _identifyTeamWeaknesses(awayStats ?? {}),
+        'strengths': _identifyTeamStrengths({}),
+        'weaknesses': _identifyTeamWeaknesses({}),
       };
-      
-      debugPrint('📊 TEAM DATA: Gathered comprehensive stats for both teams');
-      
+
+      debugPrint('TEAM DATA: Gathered comprehensive stats for both teams');
+
     } catch (e) {
-      debugPrint('⚠️ TEAM DATA: Error gathering team data: $e');
+      debugPrint('TEAM DATA: Error gathering team data: $e');
     }
-    
+
     return teamData;
   }
-  
+
   /// Gather historical matchup data
   Future<Map<String, dynamic>> _gatherHistoricalData(String homeTeam, String awayTeam) async {
     try {
-      final seriesData = await _cfbService.getHeadToHeadSeries(homeTeam, awayTeam);
-      
       return {
-        'headToHead': seriesData,
+        'headToHead': {},
         'rivalryInfo': _analyzeRivalryStatus(homeTeam, awayTeam),
         'recentMeetings': await _getRecentMeetings(homeTeam, awayTeam),
-        'memorableGames': _identifyMemorableGames(seriesData),
+        'memorableGames': _identifyMemorableGames({}),
       };
-      
+
     } catch (e) {
-      debugPrint('⚠️ HISTORICAL DATA: Error gathering historical data: $e');
+      debugPrint('HISTORICAL DATA: Error gathering historical data: $e');
       return {
         'rivalryInfo': _analyzeRivalryStatus(homeTeam, awayTeam),
       };

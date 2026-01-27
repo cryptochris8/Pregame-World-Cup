@@ -6,12 +6,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 // Centralized Firebase imports
 import 'core/firebase/firebase_exports.dart';
 
-import 'features/schedule/data/datasources/ncaa_schedule_datasource.dart';
 import 'features/schedule/data/datasources/espn_schedule_datasource.dart';
 import 'features/schedule/data/datasources/live_scores_datasource.dart';
 import 'features/schedule/data/repositories/schedule_repository_impl.dart';
 import 'features/schedule/domain/repositories/schedule_repository.dart';
-import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
 import 'features/schedule/presentation/bloc/schedule_bloc.dart';
 
@@ -57,9 +55,7 @@ import './core/services/unified_venue_service.dart';
 
 // Enhanced Game Analysis
 import './services/espn_service.dart';
-import './services/ncaa_api_service.dart';
 import './services/comprehensive_series_service.dart';
-import './services/college_football_data_api_service.dart';
 import './services/enhanced_sports_data_service.dart';
 
 // Zapier Integration
@@ -368,9 +364,7 @@ Future<void> setupLocator() async {
 Future<void> _registerESPNServices() async {
   try {
     sl.registerLazySingleton(() => ESPNService());
-    sl.registerLazySingleton(() => NCAAApiService());
     sl.registerLazySingleton(() => ComprehensiveSeriesService());
-    sl.registerLazySingleton(() => CollegeFootballDataApiService());
     sl.registerLazySingleton(() => EnhancedSportsDataService());
     
     // Register ESPN schedule datasource
@@ -412,26 +406,16 @@ void _registerFallbackServices() {
 void _registerScheduleServices() {
   // Register schedule BLoC
   sl.registerFactory(() => ScheduleBloc(
-    getCollegeFootballSchedule: sl(),
     getUpcomingGames: sl(),
     scheduleRepository: sl(),
   ));
-  
+
   // Register use cases
-  sl.registerLazySingleton(() => GetCollegeFootballSchedule(sl()));
   sl.registerLazySingleton(() => GetUpcomingGames(sl()));
-  
+
   // Register repository
   sl.registerLazySingleton<ScheduleRepository>(
-    () => ScheduleRepositoryImpl(remoteDataSource: sl()),
-  );
-  
-  // Register NCAA schedule datasource (with ESPN fallback)
-  sl.registerLazySingleton<NcaaScheduleDataSource>(
-    () => NcaaScheduleDataSourceImpl(
-      dio: sl(),
-      espnDataSource: sl(),
-    ),
+    () => ScheduleRepositoryImpl(remoteDataSource: sl<ESPNScheduleDataSource>()),
   );
 }
 

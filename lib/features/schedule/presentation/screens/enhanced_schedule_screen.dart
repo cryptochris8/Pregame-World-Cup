@@ -152,14 +152,13 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
 
   void _loadGames() {
     print('🎯 SCHEDULE DEBUG: _loadGames() called');
-    print('🎯 SCHEDULE DEBUG: Always loading 2025 season');
     print('🎯 SCHEDULE DEBUG: Show favorites only: $_showFavoritesOnly');
     print('🎯 SCHEDULE DEBUG: Favorite teams: $_favoriteTeams');
-    
-    // ALWAYS load 2025 season - no year confusion
-    print('🎯 SCHEDULE DEBUG: Loading 2025 ESPN season schedule');
-    context.read<ScheduleBloc>().add(const GetCollegeFootballScheduleEvent(2025));
-    
+
+    // Load upcoming games
+    print('🎯 SCHEDULE DEBUG: Loading upcoming games');
+    context.read<ScheduleBloc>().add(const GetUpcomingGamesEvent(limit: 100));
+
     // Apply the favorite team filter
     context.read<ScheduleBloc>().add(FilterByFavoriteTeamsEvent(
       showFavoritesOnly: _showFavoritesOnly,

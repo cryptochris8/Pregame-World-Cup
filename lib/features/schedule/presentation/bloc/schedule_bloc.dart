@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedule.dart';
-import 'package:pregame_world_cup/features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'package:pregame_world_cup/features/schedule/domain/usecases/get_upcoming_games.dart';
 import 'package:pregame_world_cup/features/schedule/domain/repositories/schedule_repository.dart';
 import '../../../../core/services/logging_service.dart';
@@ -11,9 +10,8 @@ part 'schedule_event.dart';
 part 'schedule_state.dart';
 
 /// Enhanced Schedule Bloc with smart API call optimization
-/// Reduces SportsData.io API usage by 80-90% through intelligent caching and refresh logic
+/// Reduces API usage through intelligent caching and refresh logic
 class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
-  final GetCollegeFootballSchedule getCollegeFootballSchedule;
   final GetUpcomingGames getUpcomingGames;
   final ScheduleRepository scheduleRepository;
 
@@ -32,45 +30,17 @@ class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
   static const Duration _fullScheduleRefreshInterval = Duration(hours: 1);
 
   ScheduleBloc({
-    required this.getCollegeFootballSchedule,
     required this.getUpcomingGames,
     required this.scheduleRepository,
   }) : super(ScheduleInitial()) {
-    on<GetCollegeFootballScheduleEvent>(_onGetSchedule);
     on<GetUpcomingGamesEvent>(_onGetUpcomingGames);
     on<GetScheduleForWeekEvent>(_onGetScheduleForWeek);
     on<RefreshLiveScoresEvent>(_onRefreshLiveScores);
     on<FilterByFavoriteTeamsEvent>(_onFilterByFavoriteTeams);
     on<ForceRefreshUpcomingGamesEvent>(_onForceRefreshUpcomingGames);
-    
+
     // Don't automatically load data - let screens trigger when needed
     // This prevents blocking the UI during app startup
-  }
-
-  void _onGetSchedule(
-    GetCollegeFootballScheduleEvent event,
-    Emitter<ScheduleState> emit,
-  ) async {
-    // Smart refresh check for full schedule
-    if (_shouldSkipFullScheduleRefresh()) {
-      LoggingService.info('⏭️ Skipping full schedule refresh - too recent', tag: 'ScheduleBloc');
-      return;
-    }
-    
-    emit(ScheduleLoading());
-    try {
-      _lastFullScheduleRefresh = DateTime.now();
-      final schedule = await getCollegeFootballSchedule(event.year);
-      emit(ScheduleLoaded(
-        schedule,
-        showFavoritesOnly: _showFavoritesOnly,
-        favoriteTeams: _favoriteTeams,
-      ));
-      LoggingService.info('✅ Full schedule loaded successfully', tag: 'ScheduleBloc');
-    } catch (e) {
-      LoggingService.error('❌ Full schedule load failed: $e', tag: 'ScheduleBloc');
-      emit(ScheduleError(e.toString()));
-    }
   }
 
   void _onGetUpcomingGames(

@@ -7,15 +7,6 @@ abstract class ScheduleEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class GetCollegeFootballScheduleEvent extends ScheduleEvent {
-  final int year;
-
-  const GetCollegeFootballScheduleEvent(this.year);
-
-  @override
-  List<Object> get props => [year];
-}
-
 class GetUpcomingGamesEvent extends ScheduleEvent {
   final int limit;
 

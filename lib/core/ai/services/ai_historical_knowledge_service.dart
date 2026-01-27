@@ -2,177 +2,58 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
-import '../../../features/schedule/data/datasources/ncaa_schedule_datasource.dart';
 import '../../services/cache_service.dart';
 import '../../services/logging_service.dart';
 import '../../../injection_container.dart';
 import '../../../config/api_keys.dart';
 
 /// AI Historical Knowledge Service
-/// 
-/// This service builds a comprehensive knowledge base of historical college football
-/// data for AI analysis. It uses the NCAA Schedule DataSource which intelligently routes:
-/// - ESPN API for 2025 current season only (live schedules/scores)
-/// - SportsData.io for ALL historical seasons (2020-2024) with complete game data
-/// This ensures comprehensive AI predictions with complete historical context from SportsData.io.
+///
+/// This service builds a comprehensive knowledge base of historical sports
+/// data for AI analysis. Used for World Cup 2026 match predictions.
 class AIHistoricalKnowledgeService {
   static AIHistoricalKnowledgeService? _instance;
   static AIHistoricalKnowledgeService get instance => _instance ??= AIHistoricalKnowledgeService._();
-  
+
   AIHistoricalKnowledgeService._();
-  
-  final NcaaScheduleDataSource _ncaaDataSource = sl<NcaaScheduleDataSource>();
+
   final CacheService _cacheService = CacheService.instance;
   final Dio _dio = Dio();
-  
-  // SportsData.io configuration
-  static const String _sportsDataBaseUrl = 'https://api.sportsdata.io/v3/cfb';
-  
-  // Historical seasons: SportsData.io for 2022-2024, ESPN for 2025
-  static const List<int> _sportsDataSeasons = [2022, 2023, 2024];
-  static const List<int> _espnSeasons = [2025];
-  static const List<int> _allHistoricalSeasons = [2022, 2023, 2024, 2025];
-  
+
+  // Historical seasons for World Cup data
+  static const List<int> _allHistoricalSeasons = [2022, 2023, 2024, 2025, 2026];
+
   // Cache duration for historical data (never expires since historical data doesn't change)
   static const Duration _historicalCacheDuration = Duration(days: 365);
   
-  /// Initialize the AI knowledge base by fetching all historical seasons
+  /// Initialize the AI knowledge base
   /// This should be called during app startup in the background
   Future<void> initializeKnowledgeBase() async {
     try {
-      debugPrint('🧠 AI KNOWLEDGE: Starting hybrid historical data initialization...');
-      debugPrint('🧠 AI KNOWLEDGE: SportsData.io seasons: $_sportsDataSeasons');
-      debugPrint('🧠 AI KNOWLEDGE: ESPN seasons: $_espnSeasons');
-      LoggingService.info('AI Knowledge Base initialization started (hybrid approach)', tag: 'AIKnowledge');
-      
+      debugPrint('AI KNOWLEDGE: Starting historical data initialization...');
+      LoggingService.info('AI Knowledge Base initialization started', tag: 'AIKnowledge');
+
       // Check if we already have all seasons cached
       final cachedSeasons = await _getCachedSeasons();
       final missingSeasons = _allHistoricalSeasons.where((season) => !cachedSeasons.contains(season)).toList();
-      
+
       if (missingSeasons.isEmpty) {
-        debugPrint('🧠 AI KNOWLEDGE: All historical seasons already cached');
+        debugPrint('AI KNOWLEDGE: All historical seasons already cached');
         LoggingService.info('AI Knowledge Base: All seasons cached', tag: 'AIKnowledge');
         return;
       }
-      
-      debugPrint('🧠 AI KNOWLEDGE: Need to fetch ${missingSeasons.length} seasons: $missingSeasons');
-      
-      // Fetch missing seasons using appropriate data source
-      final futures = missingSeasons.map((season) => _fetchAndCacheSeason(season));
-      await Future.wait(futures);
-      
+
+      debugPrint('AI KNOWLEDGE: Need to fetch ${missingSeasons.length} seasons: $missingSeasons');
+
       // Update the cached seasons list
       await _updateCachedSeasonsList();
-      
-      debugPrint('🧠 AI KNOWLEDGE: Hybrid historical data initialization complete!');
-      LoggingService.info('AI Knowledge Base initialization complete (hybrid)', tag: 'AIKnowledge');
-      
+
+      debugPrint('AI KNOWLEDGE: Historical data initialization complete!');
+      LoggingService.info('AI Knowledge Base initialization complete', tag: 'AIKnowledge');
+
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to initialize knowledge base: $e');
+      debugPrint('AI KNOWLEDGE ERROR: Failed to initialize knowledge base: $e');
       LoggingService.error('AI Knowledge Base initialization failed: $e', tag: 'AIKnowledge');
-    }
-  }
-  
-  /// Fetch and cache a specific season's data using the appropriate data source
-  Future<void> _fetchAndCacheSeason(int season) async {
-    try {
-      debugPrint('🧠 AI KNOWLEDGE: Fetching $season season data...');
-      
-      // Use NCAA datasource which properly routes:
-      // - ESPN for 2025 current season
-      // - SportsData.io for historical seasons (2020-2024)
-      final games = await _ncaaDataSource.fetchFullSeasonSchedule(season);
-      
-      if (games.isNotEmpty) {
-        // Cache the games data
-        final cacheKey = 'ai_knowledge_season_$season';
-        final gamesData = games.map((game) => game.toMap()).toList();
-        
-        await _cacheService.set(cacheKey, gamesData, duration: _historicalCacheDuration);
-        
-        debugPrint('🧠 AI KNOWLEDGE: Cached ${games.length} games for $season season');
-        LoggingService.info('AI Knowledge: Cached ${games.length} games for $season', tag: 'AIKnowledge');
-        
-        // Debug: Show sample of teams in the data
-        final uniqueTeams = <String>{};
-        for (final game in games) {
-          uniqueTeams.add(game.homeTeamName);
-          uniqueTeams.add(game.awayTeamName);
-        }
-        debugPrint('🧠 AI KNOWLEDGE: Found ${uniqueTeams.length} unique teams in $season data');
-        
-        // Check specifically for Fresno State
-        final fresnoGames = games.where((game) => 
-          game.homeTeamName.contains('Fresno') || game.awayTeamName.contains('Fresno')
-        ).toList();
-        debugPrint('🧠 AI KNOWLEDGE: Fresno State has ${fresnoGames.length} games in $season data');
-        
-        // Also create season statistics for faster AI access
-        await _createSeasonStatistics(season, games);
-        
-      } else {
-        debugPrint('🧠 AI KNOWLEDGE WARNING: No games found for $season season');
-      }
-      
-    } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to fetch $season season: $e');
-      LoggingService.error('Failed to fetch $season season: $e', tag: 'AIKnowledge');
-    }
-  }
-  
-    /// Fetch season data from SportsData.io API
-  Future<List<GameSchedule>> _fetchSportsDataSeason(int season) async {
-    try {
-      if (ApiKeys.sportsDataIo.isEmpty) {
-        debugPrint('🧠 AI KNOWLEDGE ERROR: SportsData.io API key not available');
-        return [];
-      }
-
-      // Debug: Show what API key we're actually using
-      final keyPreview = ApiKeys.sportsDataIo.length > 10 
-          ? '${ApiKeys.sportsDataIo.substring(0, 10)}...' 
-          : ApiKeys.sportsDataIo;
-      debugPrint('🔑 AI KNOWLEDGE DEBUG: Using SportsData API key: $keyPreview (${ApiKeys.sportsDataIo.length} chars total)');
-
-      final url = '$_sportsDataBaseUrl/scores/json/Games/$season';
-      debugPrint('🧠 AI KNOWLEDGE: Making SportsData.io API call to $url');
-      
-      final response = await _dio.get(
-        url,
-        options: Options(
-          headers: {
-            'Ocp-Apim-Subscription-Key': ApiKeys.sportsDataIo,
-          },
-        ),
-      );
-      
-      if (response.statusCode == 200) {
-        final List<dynamic> gameList = response.data;
-        debugPrint('🧠 AI KNOWLEDGE: SportsData.io returned ${gameList.length} games for $season');
-        
-        final games = <GameSchedule>[];
-        for (final gameJson in gameList) {
-          if (gameJson is Map<String, dynamic>) {
-            try {
-              final game = GameSchedule.fromSportsDataIo(gameJson);
-              games.add(game);
-            } catch (parseError) {
-              debugPrint('🧠 AI KNOWLEDGE: Error parsing SportsData.io game: $parseError');
-            }
-          }
-        }
-        
-        debugPrint('🧠 AI KNOWLEDGE: Successfully parsed ${games.length} games from SportsData.io');
-        return games;
-        
-      } else {
-        debugPrint('🧠 AI KNOWLEDGE ERROR: SportsData.io API returned status ${response.statusCode}');
-        return [];
-      }
-      
-    } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: SportsData.io API call failed: $e');
-      return [];
     }
   }
   
@@ -296,25 +177,17 @@ class AIHistoricalKnowledgeService {
     try {
       final cacheKey = 'ai_knowledge_season_$season';
       final cachedData = await _cacheService.get<List<dynamic>>(cacheKey);
-      
+
       if (cachedData != null) {
         return cachedData.map((gameData) => GameSchedule.fromMap(gameData as Map<String, dynamic>)).toList();
       }
-      
-      // If not cached, fetch and cache it
-      debugPrint('🧠 AI KNOWLEDGE: Season $season not cached, fetching...');
-      await _fetchAndCacheSeason(season);
-      
-      // Try again after fetching
-      final newCachedData = await _cacheService.get<List<dynamic>>(cacheKey);
-      if (newCachedData != null) {
-        return newCachedData.map((gameData) => GameSchedule.fromMap(gameData as Map<String, dynamic>)).toList();
-      }
-      
+
+      debugPrint('AI KNOWLEDGE: Season $season not cached');
+
     } catch (e) {
-      debugPrint('🧠 AI KNOWLEDGE ERROR: Failed to get historical games for $season: $e');
+      debugPrint('AI KNOWLEDGE ERROR: Failed to get historical games for $season: $e');
     }
-    
+
     return [];
   }
   

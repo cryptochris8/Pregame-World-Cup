@@ -39,7 +39,6 @@ import 'core/services/presence_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'features/messaging/domain/services/messaging_service.dart';
 import 'features/messaging/presentation/screens/chat_screen.dart';
-import 'features/schedule/domain/usecases/get_college_football_schedule.dart';
 import 'features/schedule/domain/usecases/get_upcoming_games.dart';
 import 'features/schedule/domain/repositories/schedule_repository.dart';
 import 'core/entities/cached_venue_data.dart';
@@ -516,7 +515,6 @@ class _PregameAppState extends State<PregameApp> {
       service: _accessibilityService,
       child: BlocProvider(
         create: (context) => ScheduleBloc(
-          getCollegeFootballSchedule: di.sl<GetCollegeFootballSchedule>(),
           getUpcomingGames: di.sl<GetUpcomingGames>(),
           scheduleRepository: di.sl<ScheduleRepository>(),
         ),

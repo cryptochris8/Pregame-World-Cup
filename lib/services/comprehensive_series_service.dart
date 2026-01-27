@@ -1,35 +1,22 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../core/services/logging_service.dart';
-import 'college_football_data_api_service.dart';
-import '../injection_container.dart';
 
 /// Comprehensive Series Data Service
-/// Generates intelligent series data for ANY college football matchup
-/// Uses the new efficient College Football Data API service with fallback intelligence
+/// Generates intelligent series data for ANY matchup
+/// Uses intelligent generation based on team characteristics
 class ComprehensiveSeriesService {
-  late final CollegeFootballDataApiService _apiService;
-  
-  ComprehensiveSeriesService() {
-    _apiService = sl<CollegeFootballDataApiService>();
-  }
-  
+  ComprehensiveSeriesService();
+
   /// Get comprehensive series history for any two teams
   Future<Map<String, dynamic>> getSeriesHistory(String homeTeam, String awayTeam) async {
     try {
-      LoggingService.info('🏈 Getting series history for $homeTeam vs $awayTeam');
-      
-      // Step 1: Try the new efficient API service (with built-in fallbacks)
-      final realData = await _apiService.getHeadToHeadSeries(homeTeam, awayTeam);
-      if (realData.isNotEmpty) {
-        LoggingService.info('✅ Got real series data from API');
-        return realData;
-      }
-      
-      // Step 2: Generate intelligent series data as backup
-      LoggingService.info('📊 Generating intelligent series data');
+      LoggingService.info('Getting series history for $homeTeam vs $awayTeam');
+
+      // Generate intelligent series data
+      LoggingService.info('Generating intelligent series data');
       return await _generateIntelligentSeriesData(homeTeam, awayTeam);
-      
+
     } catch (e) {
       LoggingService.error('Error in comprehensive series service: $e', tag: 'ComprehensiveSeries');
       return _getDefaultSeriesData(homeTeam, awayTeam);

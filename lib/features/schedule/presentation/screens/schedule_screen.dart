@@ -32,7 +32,7 @@ class _ScheduleScreenState extends State<ScheduleScreen>
     super.initState();
     // Load favorite teams and fetch schedule data when the screen initializes
     _loadFavoriteTeams();
-    _scheduleBloc.add(const GetCollegeFootballScheduleEvent(2025));
+    _scheduleBloc.add(const GetUpcomingGamesEvent(limit: 100));
     _tabController = TabController(length: 3, vsync: this);
   }
 

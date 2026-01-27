@@ -13,7 +13,6 @@ import '../../../../core/ai/services/enhanced_ai_game_analysis_service.dart';
 import '../../../../core/services/game_prediction_service.dart';
 import '../../../../config/theme_helper.dart';
 import '../../../../config/app_theme.dart';
-import '../../../../services/ncaa_api_service.dart';
 import '../../../../core/entities/player.dart';
 import '../../../../core/entities/team_statistics.dart';
 import '../../../../core/utils/team_logo_helper.dart';
@@ -46,7 +45,6 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
   late final EnhancedPlayerService _playerService;
   late final AITeamSeasonSummaryService _seasonSummaryService;
   late final GamePredictionService _gamePredictionService;
-  late final NCAAApiService _ncaaService;
   late final EnhancedAIGameAnalysisService _enhancedAnalysisService;
   
   Map<String, dynamic>? _analysisData;
@@ -75,7 +73,6 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
       _playerService = sl<EnhancedPlayerService>();
       _seasonSummaryService = sl<AITeamSeasonSummaryService>();
       _gamePredictionService = GamePredictionService();
-      _ncaaService = NCAAApiService();
       _enhancedAnalysisService = sl<EnhancedAIGameAnalysisService>();
       LoggingService.info('🎮 WIDGET INIT: Services initialized successfully', tag: 'EnhancedInsights');
       
@@ -892,52 +889,6 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
   /// Load NCAA data for team statistics, top performers, and matchup history
   Future<void> _loadNcaaData() async {
     try {
-      // Don't set loading state - this runs in background
-
-      // Convert team names to ESPN API team IDs
-      final homeTeamIdStr = _getEspnTeamId(widget.game.homeTeamName);
-      final awayTeamIdStr = _getEspnTeamId(widget.game.awayTeamName);
-
-      // Loading NCAA data for teams
-
-      // Load team statistics
-      final homeStatsData = await _ncaaService.getTeamStats(homeTeamIdStr);
-      final awayStatsData = await _ncaaService.getTeamStats(awayTeamIdStr);
-
-      if (homeStatsData != null) {
-        _homeTeamStats = TeamStatistics.fromNCAAApi({
-          'teamId': homeTeamIdStr,
-          'teamName': widget.game.homeTeamName,
-          ...homeStatsData,
-        });
-        // Home team stats loaded successfully
-      } else {
-        LoggingService.warning('Failed to load home team stats for ${widget.game.homeTeamName}', tag: 'EnhancedInsights');
-      }
-
-      if (awayStatsData != null) {
-        _awayTeamStats = TeamStatistics.fromNCAAApi({
-          'teamId': awayTeamIdStr,
-          'teamName': widget.game.awayTeamName,
-          ...awayStatsData,
-        });
-        // Away team stats loaded successfully
-      } else {
-        LoggingService.warning('Failed to load away team stats for ${widget.game.awayTeamName}', tag: 'EnhancedInsights');
-      }
-
-      // Load top performers for both teams
-      final homePerformersData = await _ncaaService.getTopPerformers(homeTeamIdStr);
-      final awayPerformersData = await _ncaaService.getTopPerformers(awayTeamIdStr);
-
-      _homeTopPerformers = _convertPerformersToPlayers(homePerformersData);
-      _awayTopPerformers = _convertPerformersToPlayers(awayPerformersData);
-
-      // Top performers loaded for both teams
-
-      // Load matchup history
-      _matchupHistory = await _ncaaService.getMatchupData(homeTeamIdStr, awayTeamIdStr);
-      
       // Generate series record and key factors
       _generateSeriesRecord();
       _generateKeyFactors();
@@ -950,7 +901,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
       }
 
     } catch (e) {
-      LoggingService.warning('Background NCAA data loading failed: $e', tag: 'EnhancedInsights');
+      LoggingService.warning('Background data loading failed: $e', tag: 'EnhancedInsights');
       // Don't set error state for background loading failures
     }
   }

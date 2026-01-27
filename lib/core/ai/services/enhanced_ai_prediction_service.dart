@@ -2,29 +2,24 @@ import 'package:flutter/foundation.dart';
 import 'dart:math';
 import '../../services/logging_service.dart';
 import '../../../services/espn_service.dart';
-import '../../../services/college_football_data_api_service.dart';
-import '../../../services/ncaa_api_service.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../../injection_container.dart';
 import 'ai_service.dart';
 
 /// Enhanced AI Prediction Service
-/// 
+///
 /// This service generates intelligent game predictions using:
-/// - Real ESPN team statistics
+/// - Team statistics
 /// - Historical head-to-head data
-/// - Player performance metrics
 /// - Advanced statistical models
 /// - Weather and venue factors
 class EnhancedAIPredictionService {
   static EnhancedAIPredictionService? _instance;
   static EnhancedAIPredictionService get instance => _instance ??= EnhancedAIPredictionService._();
-  
+
   EnhancedAIPredictionService._();
-  
+
   final ESPNService _espnService = ESPNService();
-  final CollegeFootballDataApiService _cfbService = CollegeFootballDataApiService();
-  final NCAAApiService _ncaaService = NCAAApiService();
   final AIService _aiService = sl<AIService>();
   
   /// Generate intelligent game prediction using real data
@@ -63,32 +58,28 @@ class EnhancedAIPredictionService {
       'home': <String, dynamic>{},
       'away': <String, dynamic>{},
     };
-    
+
     try {
-      // Get team statistics from NCAA API
-      final homeStats = await _ncaaService.getTeamStats(_getTeamId(homeTeam));
-      final awayStats = await _ncaaService.getTeamStats(_getTeamId(awayTeam));
-      
       teamData['home'] = {
         'name': homeTeam,
-        'stats': homeStats ?? {},
+        'stats': {},
         'ranking': await _getTeamRanking(homeTeam),
         'record': await _getTeamRecord(homeTeam),
       };
-      
+
       teamData['away'] = {
         'name': awayTeam,
-        'stats': awayStats ?? {},
+        'stats': {},
         'ranking': await _getTeamRanking(awayTeam),
         'record': await _getTeamRecord(awayTeam),
       };
-      
-      debugPrint('📊 TEAM DATA: Gathered stats for both teams');
-      
+
+      debugPrint('TEAM DATA: Gathered stats for both teams');
+
     } catch (e) {
-      debugPrint('⚠️ TEAM DATA: Error gathering team data: $e');
+      debugPrint('TEAM DATA: Error gathering team data: $e');
     }
-    
+
     return teamData;
   }
   
@@ -341,12 +332,7 @@ class EnhancedAIPredictionService {
   
   // Placeholder methods that would be implemented with full data access
   Future<Map<String, dynamic>> _gatherHistoricalData(String homeTeam, String awayTeam) async {
-    try {
-      final seriesData = await _cfbService.getHeadToHeadSeries(homeTeam, awayTeam);
-      return {'headToHead': seriesData};
-    } catch (e) {
-      return {};
-    }
+    return {'headToHead': {}};
   }
   
   Future<Map<String, dynamic>> _analyzeGameContext(GameSchedule game) async {
