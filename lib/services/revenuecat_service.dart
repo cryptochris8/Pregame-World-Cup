@@ -16,10 +16,9 @@ class RevenueCatService {
 
   static const String _logTag = 'RevenueCat';
 
-  // RevenueCat API Keys - replace with your actual keys from RevenueCat dashboard
-  // These are public keys and safe to include in the app
-  static const String _iosApiKey = 'YOUR_REVENUECAT_IOS_API_KEY';
-  static const String _androidApiKey = 'YOUR_REVENUECAT_ANDROID_API_KEY';
+  // RevenueCat API Keys (public keys, safe to include in app)
+  static const String _iosApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
+  static const String _androidApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
 
   // Entitlement IDs (must match RevenueCat dashboard)
   static const String _fanPassEntitlement = 'fan_pass';
@@ -34,8 +33,8 @@ class RevenueCatService {
 
   /// Check if RevenueCat is properly configured with real API keys
   bool get isConfigured =>
-      _iosApiKey != 'YOUR_REVENUECAT_IOS_API_KEY' &&
-      _androidApiKey != 'YOUR_REVENUECAT_ANDROID_API_KEY';
+      _iosApiKey.isNotEmpty &&
+      !_iosApiKey.contains('YOUR_REVENUECAT');
 
   /// Initialize RevenueCat SDK
   /// Should be called once during app startup
