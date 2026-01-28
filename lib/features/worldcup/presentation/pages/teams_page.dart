@@ -168,7 +168,7 @@ class _TeamsPageState extends State<TeamsPage> {
                       TextButton(
                         onPressed: () =>
                             context.read<TeamsCubit>().clearFilters(),
-                        child: const Text('Clear filters', style: TextStyle(color: AppTheme.secondaryEmerald)),
+                        child: const Text('Clear filters', style: TextStyle(color: AppTheme.accentGold)),
                       ),
                     ],
                   ],

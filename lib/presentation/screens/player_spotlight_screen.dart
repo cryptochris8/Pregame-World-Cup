@@ -427,7 +427,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
                         padding: const EdgeInsets.all(16),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
-                          childAspectRatio: 0.75,
+                          childAspectRatio: 0.62,
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
                         ),
@@ -489,7 +489,7 @@ class _PlayerCard extends StatelessWidget {
           children: [
             // Player photo from Firebase Storage
             Expanded(
-              flex: 3,
+              flex: 5,
               child: SizedBox(
                 width: double.infinity,
                 child: ClipRRect(
@@ -504,7 +504,7 @@ class _PlayerCard extends StatelessWidget {
 
             // Player info
             Expanded(
-              flex: 2,
+              flex: 4,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(

@@ -17,6 +17,8 @@ import 'features/schedule/presentation/bloc/schedule_bloc.dart';
 import 'features/social/domain/entities/user_profile.dart';
 import 'features/navigation/main_navigation_screen.dart';
 import 'features/auth/presentation/screens/login_screen.dart';
+import 'features/auth/presentation/screens/email_verification_screen.dart';
+import 'features/auth/domain/services/auth_service.dart';
 import 'firebase_options.dart';
 import 'injection_container.dart' as di;
 import 'core/services/cache_service.dart';
@@ -586,6 +588,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
   late Stream<User?> _authStream;
   bool _pushNotificationsInitialized = false;
   bool _presenceInitialized = false;
+  bool _profileCreationInProgress = false;
 
   @override
   void initState() {
@@ -672,6 +675,26 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
 
       // Set up notification tap handler for navigation
       _setupNotificationNavigation();
+    });
+  }
+
+  /// Ensure user profile exists after email verification
+  void _ensureUserProfileExists(User user) {
+    // Only run once per session to avoid duplicate profile creation attempts
+    if (_profileCreationInProgress) return;
+    _profileCreationInProgress = true;
+
+    // Run in background to avoid blocking UI
+    Future.microtask(() async {
+      try {
+        debugLog('👤 PROFILE: Ensuring user profile exists for verified user');
+        final authService = di.sl<AuthService>();
+        await authService.createUserProfile(user);
+        debugLog('✅ PROFILE: User profile check/creation completed');
+      } catch (e) {
+        debugLog('⚠️ PROFILE: Error ensuring user profile: $e');
+        // Non-critical - app continues to work
+      }
     });
   }
 
@@ -805,11 +828,21 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
         
         // Show main app if user is authenticated
         if (snapshot.hasData && snapshot.data != null) {
-          // Initialize authenticated user services (push, RevenueCat, presence)
-          _initializeAuthenticatedUserServices();
-          return const MainNavigationScreen();
+          final user = snapshot.data!;
+
+          // Check if email is verified
+          if (user.emailVerified) {
+            // Initialize authenticated user services (push, RevenueCat, presence)
+            _initializeAuthenticatedUserServices();
+            // Ensure user profile exists (for first verified login)
+            _ensureUserProfileExists(user);
+            return const MainNavigationScreen();
+          } else {
+            // Email not verified - show verification screen
+            return const EmailVerificationScreen();
+          }
         }
-        
+
         // Show login screen if user is not authenticated
         return const LoginScreen();
       },

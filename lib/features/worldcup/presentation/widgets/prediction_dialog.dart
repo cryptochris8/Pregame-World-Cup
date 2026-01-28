@@ -154,14 +154,16 @@ class _PredictionDialogState extends State<PredictionDialog> {
                         size: 48,
                       ),
                       const SizedBox(height: 8),
-                      Text(
-                        widget.match.homeTeamName,
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          fontWeight: FontWeight.w500,
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          widget.match.homeTeamName,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w500,
+                          ),
+                          textAlign: TextAlign.center,
+                          maxLines: 1,
                         ),
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(height: 16),
                       _ScoreSelector(
@@ -195,14 +197,16 @@ class _PredictionDialogState extends State<PredictionDialog> {
                         size: 48,
                       ),
                       const SizedBox(height: 8),
-                      Text(
-                        widget.match.awayTeamName,
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          fontWeight: FontWeight.w500,
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          widget.match.awayTeamName,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w500,
+                          ),
+                          textAlign: TextAlign.center,
+                          maxLines: 1,
                         ),
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(height: 16),
                       _ScoreSelector(

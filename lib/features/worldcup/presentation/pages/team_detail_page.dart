@@ -402,9 +402,9 @@ class TeamDetailPage extends StatelessWidget {
   Widget _buildGroupInfo(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.primaryBlue.withOpacity(0.15),
+        color: AppTheme.backgroundCard.withOpacity(0.8),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.primaryBlue.withOpacity(0.3)),
+        border: Border.all(color: Colors.white.withOpacity(0.2)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -413,14 +413,14 @@ class TeamDetailPage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Icon(Icons.grid_view, color: AppTheme.primaryBlue),
+                const Icon(Icons.grid_view, color: Colors.white),
                 const SizedBox(width: 8),
                 Text(
                   'Group ${team.group}',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
-                    color: AppTheme.primaryBlue,
+                    color: Colors.white,
                   ),
                 ),
                 const Spacer(),
@@ -428,15 +428,15 @@ class TeamDetailPage extends StatelessWidget {
                   onPressed: () {
                     // Navigate to group standings
                   },
-                  child: const Text('View Standings', style: TextStyle(color: AppTheme.secondaryEmerald)),
+                  child: const Text('View Standings', style: TextStyle(color: AppTheme.accentGold)),
                 ),
               ],
             ),
             const SizedBox(height: 8),
-            Text(
+            const Text(
               'Tap to see full group standings and matches',
               style: TextStyle(
-                color: AppTheme.primaryBlue.withOpacity(0.8),
+                color: Colors.white70,
                 fontSize: 13,
               ),
             ),
@@ -475,7 +475,7 @@ class TeamDetailPage extends StatelessWidget {
                   onPressed: () {
                     // Navigate to filtered match list
                   },
-                  child: const Text('View All', style: TextStyle(color: AppTheme.secondaryEmerald)),
+                  child: const Text('View All', style: TextStyle(color: AppTheme.accentGold)),
                 ),
               ],
             ),

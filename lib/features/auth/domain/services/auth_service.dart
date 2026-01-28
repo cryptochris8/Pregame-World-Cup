@@ -17,6 +17,43 @@ class AuthService {
   // Get current user
   User? get currentUser => _firebaseAuth.currentUser;
 
+  // Check if current user's email is verified
+  bool get isEmailVerified => _firebaseAuth.currentUser?.emailVerified ?? false;
+
+  // Reload current user to get latest verification status
+  Future<void> reloadUser() async {
+    await _firebaseAuth.currentUser?.reload();
+  }
+
+  // Send email verification to current user
+  Future<void> sendEmailVerification() async {
+    try {
+      await _firebaseAuth.currentUser?.sendEmailVerification();
+      LoggingService.info('Verification email sent', tag: 'AuthService');
+    } catch (e) {
+      LoggingService.error('Error sending verification email: $e', tag: 'AuthService');
+      throw Exception('Failed to send verification email.');
+    }
+  }
+
+  // Resend email verification
+  Future<void> resendVerificationEmail() async {
+    try {
+      final user = _firebaseAuth.currentUser;
+      if (user == null) {
+        throw Exception('No user signed in');
+      }
+      if (user.emailVerified) {
+        throw Exception('Email already verified');
+      }
+      await user.sendEmailVerification();
+      LoggingService.info('Verification email resent', tag: 'AuthService');
+    } catch (e) {
+      LoggingService.error('Error resending verification email: $e', tag: 'AuthService');
+      rethrow;
+    }
+  }
+
   // Sign up with email and password
   Future<UserCredential?> signUpWithEmailAndPassword({
     required String email,
@@ -27,13 +64,17 @@ class AuthService {
         email: email,
         password: password,
       );
-      
-      // Create user profile after successful signup
+
+      // Send verification email after successful signup
       if (userCredential.user != null) {
-        await _createUserProfile(userCredential.user!);
+        await userCredential.user!.sendEmailVerification();
         // Track signup in analytics
         await _analyticsService.logSignUp(method: 'email');
+        LoggingService.info('User signed up, verification email sent to $email', tag: 'AuthService');
       }
+
+      // Note: User profile is NOT created here anymore
+      // Profile creation happens after email verification in AuthenticationWrapper
 
       return userCredential;
     } on FirebaseAuthException catch (e) {
@@ -145,8 +186,8 @@ class AuthService {
     }
   }
 
-  // Create user profile for new users
-  Future<void> _createUserProfile(User user) async {
+  // Create user profile for new users (called after email verification)
+  Future<void> createUserProfile(User user) async {
     try {
       await _socialService.initialize();
       

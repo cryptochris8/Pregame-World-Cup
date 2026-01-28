@@ -87,7 +87,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
             ),
             const SizedBox(width: 8),
             const Text(
-              'FIFA World Cup',
+              'World Cup',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w700,
@@ -95,71 +95,97 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
             ),
           ],
         ),
-        centerTitle: true,
+        centerTitle: false,
         actions: [
-          // Player comparison button
-          IconButton(
-            icon: const Icon(Icons.compare_arrows, color: Colors.white),
-            tooltip: 'Compare Players',
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const PlayerComparisonScreen()),
-            ),
+          // Live matches indicator (priority - always visible)
+          BlocBuilder<MatchListCubit, MatchListState>(
+            builder: (context, state) {
+              if (state.hasLiveMatches) {
+                return Padding(
+                  padding: const EdgeInsets.only(right: 4),
+                  child: ActionChip(
+                    avatar: const LiveIndicator(size: 8),
+                    label: Text(
+                      '${state.liveCount} Live',
+                      style: const TextStyle(color: Colors.white, fontSize: 12),
+                    ),
+                    onPressed: () {
+                      _tabController.animateTo(0);
+                      context.read<MatchListCubit>().setFilter(MatchListFilter.live);
+                    },
+                    backgroundColor: Colors.red.withOpacity(0.3),
+                    side: BorderSide.none,
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                  ),
+                );
+              }
+              return const SizedBox.shrink();
+            },
           ),
-          // Leaderboards button
+          // Fan Pass button (important - always visible)
           IconButton(
-            icon: const Icon(Icons.emoji_events, color: AppTheme.accentGold),
-            tooltip: 'Leaderboards',
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const TournamentLeaderboardsScreen()),
-            ),
-          ),
-          // Fan Pass button
-          IconButton(
-            icon: const Icon(Icons.star, color: Colors.amber),
+            icon: const Icon(Icons.star, color: Colors.amber, size: 22),
             tooltip: 'Fan Pass',
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const FanPassScreen()),
             ),
           ),
-          // Watch Parties button
-          IconButton(
-            icon: const Icon(Icons.groups, color: Colors.white),
-            tooltip: 'Watch Parties',
-            onPressed: () => _navigateToWatchParties(context),
-          ),
-          // Live matches indicator
-          BlocBuilder<MatchListCubit, MatchListState>(
-            builder: (context, state) {
-              if (state.hasLiveMatches) {
-                return Padding(
-                  padding: const EdgeInsets.only(right: 8),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: Colors.red.withOpacity(0.5)),
-                    ),
-                    child: ActionChip(
-                      avatar: const LiveIndicator(size: 8),
-                      label: Text(
-                        '${state.liveCount} Live',
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                      onPressed: () {
-                        _tabController.animateTo(0);
-                        context.read<MatchListCubit>().setFilter(MatchListFilter.live);
-                      },
-                      backgroundColor: Colors.transparent,
-                      side: BorderSide.none,
-                    ),
-                  ),
-                );
+          // More options menu
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.more_vert, color: Colors.white),
+            color: AppTheme.backgroundCard,
+            onSelected: (value) {
+              switch (value) {
+                case 'leaderboards':
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const TournamentLeaderboardsScreen()),
+                  );
+                  break;
+                case 'compare':
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const PlayerComparisonScreen()),
+                  );
+                  break;
+                case 'watch_parties':
+                  _navigateToWatchParties(context);
+                  break;
               }
-              return const SizedBox.shrink();
             },
+            itemBuilder: (context) => [
+              const PopupMenuItem(
+                value: 'leaderboards',
+                child: Row(
+                  children: [
+                    Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 20),
+                    SizedBox(width: 12),
+                    Text('Leaderboards', style: TextStyle(color: Colors.white)),
+                  ],
+                ),
+              ),
+              const PopupMenuItem(
+                value: 'compare',
+                child: Row(
+                  children: [
+                    Icon(Icons.compare_arrows, color: Colors.white, size: 20),
+                    SizedBox(width: 12),
+                    Text('Compare Players', style: TextStyle(color: Colors.white)),
+                  ],
+                ),
+              ),
+              const PopupMenuItem(
+                value: 'watch_parties',
+                child: Row(
+                  children: [
+                    Icon(Icons.groups, color: Colors.white, size: 20),
+                    SizedBox(width: 12),
+                    Text('Watch Parties', style: TextStyle(color: Colors.white)),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
         bottom: TabBar(
