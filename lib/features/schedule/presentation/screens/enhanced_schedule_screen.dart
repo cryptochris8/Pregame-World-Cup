@@ -180,13 +180,16 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
       appBar: AppBar(
         title: Row(
           children: [
-            Image.asset(
-              'assets/logos/pregame_logo.png',
-              height: 40,
-              fit: BoxFit.contain,
-              errorBuilder: (context, error, stackTrace) {
-                return Icon(Icons.sports_football, color: ThemeHelper.favoriteColor, size: 40);
-              },
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                'assets/logos/pregame_logo.png',
+                height: 40,
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) {
+                  return Icon(Icons.sports_football, color: ThemeHelper.favoriteColor, size: 40);
+                },
+              ),
             ),
             const SizedBox(width: 12),
             const Text(

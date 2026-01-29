@@ -190,13 +190,16 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/logos/pregame_logo.png',
-              height: 40,
-              fit: BoxFit.contain,
-              errorBuilder: (context, error, stackTrace) {
-                return Icon(Icons.sports_football, color: ThemeHelper.favoriteColor, size: 40);
-              },
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                'assets/logos/pregame_logo.png',
+                height: 40,
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) {
+                  return Icon(Icons.sports_football, color: ThemeHelper.favoriteColor, size: 40);
+                },
+              ),
             ),
             const SizedBox(width: 8),
             const Expanded(

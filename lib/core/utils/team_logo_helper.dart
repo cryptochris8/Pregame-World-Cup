@@ -192,17 +192,20 @@ class TeamLogoHelper {
 
   /// Get the pregame app logo widget
   static Widget getPregameLogo({double height = 32}) {
-    return Image.asset(
-      'assets/logos/pregame_logo.png',
-      height: height,
-      fit: BoxFit.contain,
-      errorBuilder: (context, error, stackTrace) {
-        return Icon(
-          Icons.sports_football,
-          size: height,
-          color: Colors.orange,
-        );
-      },
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(height * 0.25),
+      child: Image.asset(
+        'assets/logos/pregame_logo.png',
+        height: height,
+        fit: BoxFit.contain,
+        errorBuilder: (context, error, stackTrace) {
+          return Icon(
+            Icons.sports_football,
+            size: height,
+            color: Colors.orange,
+          );
+        },
+      ),
     );
   }
 

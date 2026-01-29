@@ -807,19 +807,22 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
         
         // Show loading indicator while checking auth state
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Scaffold(
-            backgroundColor: Color(0xFF1a1a1a),
+          return Scaffold(
+            backgroundColor: const Color(0xFF1a1a1a),
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image(
-                    image: AssetImage('assets/logos/pregame_logo.png'),
-                    height: 150,
-                    width: 150,
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: const Image(
+                      image: AssetImage('assets/logos/pregame_logo.png'),
+                      height: 150,
+                      width: 150,
+                    ),
                   ),
-                  SizedBox(height: 20),
-                  CircularProgressIndicator(color: Colors.orange),
+                  const SizedBox(height: 20),
+                  const CircularProgressIndicator(color: Colors.orange),
                 ],
               ),
             ),
