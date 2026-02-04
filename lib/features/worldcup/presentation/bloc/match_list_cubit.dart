@@ -261,9 +261,11 @@ class MatchListCubit extends Cubit<MatchListState> {
       final date = state.selectedDate!;
       filtered = filtered.where((m) {
         if (m.dateTime == null) return false;
-        return m.dateTime!.year == date.year &&
-               m.dateTime!.month == date.month &&
-               m.dateTime!.day == date.day;
+        // Convert match time to local timezone for accurate day comparison
+        final matchLocalDate = m.dateTime!.toLocal();
+        return matchLocalDate.year == date.year &&
+               matchLocalDate.month == date.month &&
+               matchLocalDate.day == date.day;
       }).toList();
     }
 
@@ -274,9 +276,10 @@ class MatchListCubit extends Cubit<MatchListState> {
   Future<List<WorldCupMatch>> getMatchesForDate(DateTime date) async {
     return state.matches.where((m) {
       if (m.dateTime == null) return false;
-      return m.dateTime!.year == date.year &&
-             m.dateTime!.month == date.month &&
-             m.dateTime!.day == date.day;
+      final matchLocalDate = m.dateTime!.toLocal();
+      return matchLocalDate.year == date.year &&
+             matchLocalDate.month == date.month &&
+             matchLocalDate.day == date.day;
     }).toList();
   }
 
