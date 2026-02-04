@@ -8,6 +8,7 @@ import '../../../../config/app_theme.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
 import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
+import '../../../settings/presentation/screens/accessibility_preferences_screen.dart';
 
 class UserProfileScreen extends StatefulWidget {
   final String? userId;
@@ -141,6 +142,18 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                       ),
                     ),
                     if (_isCurrentUser) ...[
+                      IconButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const AccessibilityPreferencesScreen(),
+                            ),
+                          );
+                        },
+                        icon: const Icon(Icons.accessibility_new, color: Colors.white),
+                        tooltip: 'Accessibility Settings',
+                      ),
                       IconButton(
                         onPressed: () {
                           Navigator.push(
@@ -366,7 +379,27 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           ),
           
           const SizedBox(height: 24),
-          
+
+          // Accessibility Settings (Active)
+          if (_isCurrentUser)
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AccessibilityPreferencesScreen(),
+                  ),
+                );
+              },
+              child: _buildActiveFeatureCard(
+                'Accessibility',
+                'Customize text size, contrast, motion, and more',
+                Icons.accessibility_new,
+              ),
+            ),
+
+          if (_isCurrentUser) const SizedBox(height: 16),
+
           // Coming Soon Features
           _buildFeatureCard(
             'Profile Customization',
@@ -485,6 +518,71 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Icon(
             Icons.arrow_forward_ios,
             color: Colors.white.withOpacity(0.5),
+            size: 16,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActiveFeatureCard(String title, String description, IconData icon) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.orange.withOpacity(0.2),
+            Colors.deepPurple.withOpacity(0.2),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Colors.orange.withOpacity(0.4),
+        ),
+      ),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              gradient: AppTheme.buttonGradient,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Icon(
+              icon,
+              color: Colors.white,
+              size: 24,
+            ),
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  description,
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.8),
+                    fontSize: 14,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Icon(
+            Icons.arrow_forward_ios,
+            color: Colors.orange,
             size: 16,
           ),
         ],

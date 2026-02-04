@@ -17,7 +17,9 @@ class RevenueCatService {
   static const String _logTag = 'RevenueCat';
 
   // RevenueCat API Keys (public keys, safe to include in app)
-  static const String _iosApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
+  // iOS: Production key for App Store
+  static const String _iosApiKey = 'appl_ossGwqwpDoJlTmVSVZEHoZTFMHY';
+  // Android: TODO - Replace with production key when Google Play Store app is configured in RevenueCat
   static const String _androidApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
 
   // Entitlement IDs (must match RevenueCat dashboard)

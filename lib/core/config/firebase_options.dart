@@ -54,30 +54,28 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR-ANDROID-API-KEY',
-    appId: 'YOUR-ANDROID-APP-ID',
-    messagingSenderId: 'YOUR-SENDER-ID',
-    projectId: 'YOUR-PROJECT-ID',
-    storageBucket: 'YOUR-STORAGE-BUCKET',
+    apiKey: 'AIzaSyAJekX1uke82tjvL27uTvWUdirs_DQviWM',
+    appId: '1:942034010384:android:df98b6a3914817b299a595',
+    messagingSenderId: '942034010384',
+    projectId: 'pregame-b089e',
+    storageBucket: 'pregame-b089e.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'YOUR-IOS-API-KEY',
-    appId: 'YOUR-IOS-APP-ID',
-    messagingSenderId: 'YOUR-SENDER-ID',
-    projectId: 'YOUR-PROJECT-ID',
-    storageBucket: 'YOUR-STORAGE-BUCKET',
-    iosClientId: 'YOUR-IOS-CLIENT-ID',
-    iosBundleId: 'YOUR-IOS-BUNDLE-ID',
+    apiKey: 'AIzaSyCXIVosiN2D9ytbwhF2_03RjdcfN7i_AIA',
+    appId: '1:942034010384:ios:3f7b887b3877f14e99a595',
+    messagingSenderId: '942034010384',
+    projectId: 'pregame-b089e',
+    storageBucket: 'pregame-b089e.firebasestorage.app',
+    iosBundleId: 'com.christophercampbell.pregameworldcup',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'YOUR-MACOS-API-KEY',
-    appId: 'YOUR-MACOS-APP-ID',
-    messagingSenderId: 'YOUR-SENDER-ID',
-    projectId: 'YOUR-PROJECT-ID',
-    storageBucket: 'YOUR-STORAGE-BUCKET',
-    iosClientId: 'YOUR-MACOS-CLIENT-ID',
-    iosBundleId: 'YOUR-MACOS-BUNDLE-ID',
+    apiKey: 'AIzaSyCXIVosiN2D9ytbwhF2_03RjdcfN7i_AIA',
+    appId: '1:942034010384:ios:3f7b887b3877f14e99a595',
+    messagingSenderId: '942034010384',
+    projectId: 'pregame-b089e',
+    storageBucket: 'pregame-b089e.firebasestorage.app',
+    iosBundleId: 'com.christophercampbell.pregameworldcup',
   );
 } 
