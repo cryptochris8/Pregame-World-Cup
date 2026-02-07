@@ -9,6 +9,7 @@ import '../../../auth/domain/services/auth_service.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
 import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
 import '../../../settings/presentation/screens/accessibility_preferences_screen.dart';
+import 'edit_profile_screen.dart';
 
 class UserProfileScreen extends StatefulWidget {
   final String? userId;
@@ -400,12 +401,30 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
 
           if (_isCurrentUser) const SizedBox(height: 16),
 
-          // Coming Soon Features
-          _buildFeatureCard(
-            'Profile Customization',
-            'Upload photos, set favorite teams, and personalize your sports fan profile',
-            Icons.edit,
-          ),
+          // Profile Customization
+          if (_isCurrentUser && _profile != null)
+            GestureDetector(
+              onTap: () async {
+                final updatedProfile = await Navigator.push<UserProfile>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EditProfileScreen(
+                      profile: _profile!,
+                    ),
+                  ),
+                );
+                if (updatedProfile != null && mounted) {
+                  setState(() {
+                    _profile = updatedProfile;
+                  });
+                }
+              },
+              child: _buildActiveFeatureCard(
+                'Profile Customization',
+                'Upload photos, set favorite teams, and personalize your sports fan profile',
+                Icons.edit,
+              ),
+            ),
           
           const SizedBox(height: 16),
           

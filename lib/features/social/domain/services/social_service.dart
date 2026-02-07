@@ -168,6 +168,7 @@ class SocialService {
       
       final data = {
         'displayName': updatedProfile.displayName,
+        'displayNameLowercase': updatedProfile.displayName.toLowerCase(),
         'email': updatedProfile.email,
         'profileImageUrl': updatedProfile.profileImageUrl,
         'bio': updatedProfile.bio,
@@ -455,31 +456,47 @@ class SocialService {
     }
   }
 
-  /// Search users by name or team
+  /// Search users by name or team (case-insensitive)
   Future<List<UserProfile>> searchUsers(String query, {int limit = 20}) async {
     try {
       if (query.trim().isEmpty) return [];
-      
+
       PerformanceMonitor.startApiCall('search_users');
-      
-      final results = <UserProfile>[];
-      
-      // Search by display name
-      final nameQuery = await _firestore
+
+      final results = <UserProfile>{};
+      final lowerQuery = query.trim().toLowerCase();
+
+      // Search by displayNameLowercase (case-insensitive, for profiles saved with this field)
+      final lowercaseQuery = await _firestore
           .collection('user_profiles')
-          .where('displayName', isGreaterThanOrEqualTo: query)
-          .where('displayName', isLessThanOrEqualTo: '$query\uf8ff')
+          .where('displayNameLowercase', isGreaterThanOrEqualTo: lowerQuery)
+          .where('displayNameLowercase', isLessThanOrEqualTo: '$lowerQuery\uf8ff')
           .limit(limit)
           .get();
-      
-      for (final doc in nameQuery.docs) {
+
+      for (final doc in lowercaseQuery.docs) {
         final profile = await _parseProfileFromDoc(doc);
         if (profile != null) results.add(profile);
       }
-      
+
+      // Fallback: search by displayName with original casing (for legacy profiles)
+      if (results.length < limit) {
+        final nameQuery = await _firestore
+            .collection('user_profiles')
+            .where('displayName', isGreaterThanOrEqualTo: query.trim())
+            .where('displayName', isLessThanOrEqualTo: '${query.trim()}\uf8ff')
+            .limit(limit - results.length)
+            .get();
+
+        for (final doc in nameQuery.docs) {
+          final profile = await _parseProfileFromDoc(doc);
+          if (profile != null) results.add(profile);
+        }
+      }
+
       PerformanceMonitor.endApiCall('search_users', success: true);
-      return results;
-      
+      return results.toList();
+
     } catch (e) {
       PerformanceMonitor.endApiCall('search_users', success: false);
       LoggingService.error('Error searching users: $e', tag: _logTag);
