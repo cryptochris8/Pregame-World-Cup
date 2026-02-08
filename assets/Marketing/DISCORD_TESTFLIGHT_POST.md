@@ -117,7 +117,7 @@ Questions? Drop them below! 👇
 ```
 Hey! Thanks for wanting to help test Pregame! 🙌
 
-Here's your TestFlight link: [INSERT TESTFLIGHT LINK]
+Here's your TestFlight link: https://testflight.apple.com/join/fUcZMb3y
 
 Quick setup:
 1. Click the link on your iPhone

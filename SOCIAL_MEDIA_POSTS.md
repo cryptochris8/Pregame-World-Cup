@@ -12,21 +12,22 @@ Building something for World Cup 2026 ⚽
 
 Track every match, group, team & player. Find venues, watch parties, and connect with fans all summer.
 
-Looking for beta testers on iOS - drop a comment or DM if you want early access!
+Download the beta now on iOS:
+https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #FIFA #WC2026
 ```
 
 ### Option 2 (More casual)
 ```
-World Cup 2026 is 5 months away and I built an app for it 👀
+World Cup 2026 is 4 months away and I built an app for it 👀
 
 - Match schedules & group standings
 - Team & player stats
 - Venues across USA, Mexico & Canada
 - Find watch parties & connect with fans
 
-Need iOS beta testers. Who wants in?
+Try it free on iOS: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WC2026
 ```
@@ -37,7 +38,7 @@ Who's ready for World Cup 2026? 🏆
 
 Just launched my app on TestFlight - track matches, explore venues, find watch parties, and connect with fans this summer.
 
-DM for beta access 🙌
+Join the beta: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #FIFA #USASoccer
 ```
@@ -52,7 +53,7 @@ World Cup 2026 app now in beta 🔥
 ✓ Watch parties near you
 ✓ Connect with fans
 
-iOS TestFlight access - DM me!
+Get it free on TestFlight: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WC2026
 ```
@@ -69,7 +70,7 @@ Every World Cup 2026 match. Analyzed by AI. 🤖⚽
 
 Get pre-match insights, key matchups, and tactical breakdowns before kickoff.
 
-Building this into my World Cup app - beta testers wanted!
+Building this into my World Cup app - try it free: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WC2026 #AI
 ```
@@ -86,7 +87,7 @@ Historical rivalries. Past meetings. What's at stake.
 
 My World Cup 2026 app gives you the backstory before every game kicks off.
 
-iOS beta live - DM for access 🏆
+iOS beta live: https://testflight.apple.com/join/fUcZMb3y 🏆
 
 #WorldCup2026 #FIFA
 ```
@@ -103,7 +104,7 @@ Full profiles for every World Cup 2026 player - stats, club, position, national 
 
 Who are you watching this summer?
 
-Beta testing now on iOS.
+Beta testing now on iOS: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WC2026
 ```
@@ -120,7 +121,7 @@ From tactical masterminds to tournament veterans - explore every World Cup 2026 
 
 Who's lifting the trophy in July?
 
-iOS beta open - DM me!
+iOS beta open: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #FIFA
 ```
@@ -137,7 +138,7 @@ Past winners. Golden Boot legends. Tournament records.
 
 It's all in my World Cup 2026 app.
 
-Beta testing on iOS now.
+Beta testing on iOS now: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WorldCupHistory
 ```
@@ -154,7 +155,7 @@ Explore every World Cup 2026 venue - from the Azteca to MetLife to the Rose Bowl
 
 Which stadium are you visiting this summer?
 
-iOS beta live now.
+iOS beta live now: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WC2026
 ```
@@ -171,10 +172,18 @@ Find World Cup watch parties in your city this summer. Connect with fans. Never 
 
 Building this into my World Cup 2026 app.
 
-DM for iOS beta access!
+Join the iOS beta: https://testflight.apple.com/join/fUcZMb3y
 
 #WorldCup2026 #WatchParty
 ```
+
+---
+
+## TestFlight Link
+
+**iOS Beta:** https://testflight.apple.com/join/fUcZMb3y
+
+Include this link directly in posts or DM it to interested users.
 
 ---
 
@@ -183,7 +192,7 @@ DM for iOS beta access!
 1. **Post at peak times:** 9am, 12pm, or 5-7pm in your target timezone
 2. **Space them out:** 1-2 feature posts per day max
 3. **Engage with replies:** Respond to everyone who comments
-4. **Use the TestFlight link:** Have it ready to DM to interested people
+4. **Include the TestFlight link:** Add it directly to posts or DM to interested people
 5. **Cross-post:** Share on Discord, Reddit (r/soccer, r/worldcup), and other platforms
 
 ---
