@@ -109,7 +109,21 @@
       "Bash(powershell.exe -Command \"Test-Path ''$env:LOCALAPPDATA\\\\Programs\\\\claude-code''\")",
       "Bash(powershell.exe -Command \"Get-ChildItem -Path $env:LOCALAPPDATA\\\\Programs -Filter ''claude*'' -Directory -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName\")",
       "WebFetch(domain:pregame-worldcup-26.netlify.app)",
-      "Bash(magick identify:*)"
+      "Bash(magick identify:*)",
+      "WebFetch(domain:digitalhub.fifa.com)",
+      "WebFetch(domain:www.foxsports.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.espn.com)",
+      "WebFetch(domain:www.roadtrips.com)",
+      "WebFetch(domain:sports.yahoo.com)",
+      "WebFetch(domain:deadline.com)",
+      "WebFetch(domain:www.aljazeera.com)",
+      "WebFetch(domain:nynjfwc26.com)",
+      "WebFetch(domain:www.skysports.com)",
+      "WebFetch(domain:onefootball.com)",
+      "WebFetch(domain:www.nbclosangeles.com)",
+      "WebFetch(domain:www.dazn.com)",
+      "WebFetch(domain:inside.fifa.com)"
     ]
   },
   "enableAllProjectMcpServers": true,
