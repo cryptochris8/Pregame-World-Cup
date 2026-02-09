@@ -10,6 +10,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/pregame_logo.png">
 
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Pregame World Cup 2026 - Your Ultimate Companion">
+    <meta property="og:description" content="Track all 48 teams, 104 matches, AI-powered predictions, and find watch parties across USA, Mexico & Canada. Free on iOS.">
+    <meta property="og:image" content="images/pregame_logo.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pregame World Cup 2026 - Your Ultimate Companion">
+    <meta name="twitter:description" content="Track all 48 teams, 104 matches, AI-powered predictions, and find watch parties. Free on iOS.">
+    <meta name="twitter:image" content="images/pregame_logo.png">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -51,10 +61,28 @@
                     <a href="#players" class="text-gray-700 hover:text-wc-purple transition">Players</a>
                     <a href="#download" class="text-gray-700 hover:text-wc-purple transition">Download</a>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="#download" class="bg-gradient-to-r from-wc-purple to-wc-orange text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition">
+                <div class="flex items-center space-x-4">
+                    <a href="#download" class="hidden sm:inline-block bg-gradient-to-r from-wc-purple to-wc-orange text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition">
                         Download App
                     </a>
+                    <!-- Mobile hamburger button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition" aria-label="Toggle menu">
+                        <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 pb-4">
+                <div class="flex flex-col space-y-2 px-4 pt-3">
+                    <a href="#features" class="mobile-nav-link text-gray-700 hover:text-wc-purple py-2 font-medium transition">Features</a>
+                    <a href="#teams" class="mobile-nav-link text-gray-700 hover:text-wc-purple py-2 font-medium transition">Teams</a>
+                    <a href="#players" class="mobile-nav-link text-gray-700 hover:text-wc-purple py-2 font-medium transition">Players</a>
+                    <a href="#download" class="mobile-nav-link bg-gradient-to-r from-wc-purple to-wc-orange text-white px-6 py-2 rounded-full font-semibold text-center hover:shadow-lg transition mt-2">Download App</a>
                 </div>
             </div>
         </div>
@@ -74,9 +102,9 @@
                     <a href="https://testflight.apple.com/join/fUcZMb3y" class="bg-white text-wc-purple px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
                         📱 Download for iOS
                     </a>
-                    <a href="#download" class="bg-wc-dark text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
-                        🤖 Download for Android
-                    </a>
+                    <span class="bg-wc-dark/60 text-white/70 px-8 py-4 rounded-full font-bold text-lg cursor-default">
+                        🤖 Android Coming Soon
+                    </span>
                 </div>
             </div>
         </div>
@@ -226,12 +254,12 @@
                     </svg>
                     Download for iOS
                 </a>
-                <a href="#" class="bg-wc-dark text-white px-10 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105 inline-flex items-center gap-3">
+                <span class="bg-wc-dark/60 text-white/70 px-10 py-5 rounded-full font-bold text-lg inline-flex items-center gap-3 cursor-default">
                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>
-                    Download for Android
-                </a>
+                    Android Coming Soon
+                </span>
             </div>
         </div>
     </section>
@@ -275,7 +303,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Pregame World Cup. All rights reserved.</p>
+                <p>&copy; 2026 Pregame World Cup. All rights reserved.</p>
             </div>
         </div>
     </footer>

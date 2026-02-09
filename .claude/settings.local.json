@@ -123,7 +123,11 @@
       "WebFetch(domain:onefootball.com)",
       "WebFetch(domain:www.nbclosangeles.com)",
       "WebFetch(domain:www.dazn.com)",
-      "WebFetch(domain:inside.fifa.com)"
+      "WebFetch(domain:inside.fifa.com)",
+      "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.Drawing; @\\(''C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\pregame_logo.png'',''C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\Feature-image.png'',''C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\apps.png''\\) | ForEach-Object { $img = [System.Drawing.Image]::FromFile\\($_; Write-Output \\(''{0}: {1}x{2}'' -f \\(Split-Path $_-Leaf\\), $img.Width, $img.Height\\); $img.Dispose\\(\\) }\")",
+      "Bash(powershell.exe -File - <<'PS1'\nAdd-Type -AssemblyName System.Drawing\n$files = @\\(\n  'C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\pregame_logo.png',\n  'C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\Feature-image.png',\n  'C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\apps.png'\n\\)\nforeach \\($f in $files\\) {\n  $img = [System.Drawing.Image]::FromFile\\($f\\)\n  $name = Split-Path $f -Leaf\n  $size = \\(Get-Item $f\\).Length\n  Write-Output \"$name : $\\($img.Width\\)x$\\($img.Height\\) — $\\([math]::Round\\($size/1KB\\)\\) KB\"\n  $img.Dispose\\(\\)\n}\nPS1)",
+      "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.Drawing; $f=''C:\\\\Users\\\\chris\\\\Pregame-World-Cup\\\\assets\\\\logos\\\\pregame_logo.png''; $i=[System.Drawing.Image]::FromFile\\($f\\); Write-Host $f $i.Width $i.Height; $i.Dispose\\(\\)\")",
+      "Bash(powershell.exe:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
