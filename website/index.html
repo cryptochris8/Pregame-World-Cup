@@ -142,6 +142,35 @@
         </div>
     </section>
 
+    <!-- App Screenshots Showcase -->
+    <section class="py-20 bg-wc-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">See It in Action</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    A preview of what's waiting for you inside the app
+                </p>
+            </div>
+            <div class="flex gap-6 justify-center items-center flex-wrap lg:flex-nowrap">
+                <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+                    <img src="images/screenshots/match-schedule.png" alt="Match schedule view" class="w-full" loading="lazy">
+                </div>
+                <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hidden sm:block">
+                    <img src="images/screenshots/ai-prediction.png" alt="AI match prediction" class="w-full" loading="lazy">
+                </div>
+                <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+                    <img src="images/screenshots/match-detail.png" alt="Match detail with venues" class="w-full" loading="lazy">
+                </div>
+                <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hidden md:block">
+                    <img src="images/screenshots/venue-detail.png" alt="Venue discovery" class="w-full" loading="lazy">
+                </div>
+                <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hidden lg:block">
+                    <img src="images/screenshots/player-profile.png" alt="Player profile" class="w-full" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -152,41 +181,83 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature 1: AI Predictions -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+            <!-- Feature 1: Match Schedule + AI Predictions -->
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+                <div class="w-56 sm:w-64 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="images/screenshots/match-schedule.png" alt="Match schedule" class="w-full" loading="lazy">
+                </div>
+                <div>
+                    <div class="w-14 h-14 bg-gradient-to-br from-wc-purple to-wc-blue rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Complete Match Schedule</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Browse all 104 matches with an intuitive date picker. Filter by favorites, live games, or today's matches. Every group stage and knockout round at your fingertips.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2: AI Predictions -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
+                <div class="flex gap-4 flex-shrink-0">
+                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/screenshots/ai-analysis.png" alt="AI match analysis" class="w-full" loading="lazy">
+                    </div>
+                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl hidden sm:block">
+                        <img src="images/screenshots/ai-prediction.png" alt="AI prediction with score" class="w-full" loading="lazy">
+                    </div>
+                </div>
+                <div>
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-purple to-wc-blue rounded-xl flex items-center justify-center mb-6">
                         <span class="text-3xl">🎯</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Match Predictions</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Get AI-powered insights and predictions for every match. Make informed bets and compete with friends.
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">AI Match Predictions</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Get AI-powered historical analysis, key storylines, and score predictions with confidence ratings for every match. Dive into head-to-head records and alternative scenarios.
                     </p>
                 </div>
+            </div>
 
-                <!-- Feature 2: Player Spotlight -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-gradient-to-br from-wc-blue to-wc-orange rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">⚽</span>
+            <!-- Feature 3: Venue Finder -->
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+                <div class="flex gap-4 flex-shrink-0">
+                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/screenshots/match-detail.png" alt="Match detail with nearby venues" class="w-full" loading="lazy">
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Player Spotlight</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Explore 260+ player profiles with detailed stats, World Cup history, and performance analytics.
-                    </p>
+                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl hidden sm:block">
+                        <img src="images/screenshots/venue-detail.png" alt="Venue detail page" class="w-full" loading="lazy">
+                    </div>
                 </div>
-
-                <!-- Feature 3: Venue Finder -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                <div>
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-orange to-wc-gold rounded-xl flex items-center justify-center mb-6">
                         <span class="text-3xl">🏟️</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Venue Finder</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Discover the best sports bars and watch parties near you. Filter by atmosphere, food, and more.
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Venue Finder</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Discover the best sports bars and restaurants near every stadium. See ratings, reviews, distance, and filter by bars, restaurants, TVs, and specials. Find your perfect match day spot.
                     </p>
                 </div>
+            </div>
 
-                <!-- Feature 4: Watch Parties -->
+            <!-- Feature 4: Player Profiles -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
+                <div class="w-56 sm:w-64 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="images/screenshots/player-profile.png" alt="Player profile" class="w-full" loading="lazy">
+                </div>
+                <div>
+                    <div class="w-14 h-14 bg-gradient-to-br from-wc-blue to-wc-orange rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">⚽</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Player Spotlight</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Explore 260+ player profiles with career stats, international caps, strengths, weaknesses, and play style breakdowns. Know every player before kickoff.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Additional features grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Watch Parties -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-emerald to-wc-blue rounded-xl flex items-center justify-center mb-6">
                         <span class="text-3xl">🎉</span>
@@ -197,18 +268,7 @@
                     </p>
                 </div>
 
-                <!-- Feature 5: Live Bracket -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-gradient-to-br from-wc-purple to-wc-emerald rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">📊</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Live Bracket</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Track the tournament in real-time with our interactive bracket. See live scores and updates.
-                    </p>
-                </div>
-
-                <!-- Feature 6: Fan Pass -->
+                <!-- Fan Pass -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-orange to-wc-purple rounded-xl flex items-center justify-center mb-6">
                         <span class="text-3xl">🎟️</span>
