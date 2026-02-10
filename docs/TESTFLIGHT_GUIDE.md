@@ -242,4 +242,4 @@ Once your app is successfully on TestFlight:
 
 ## Contact
 
-For app support: support@pregame-worldcup-26.netlify.app
+For app support: support@pregameworldcup.com

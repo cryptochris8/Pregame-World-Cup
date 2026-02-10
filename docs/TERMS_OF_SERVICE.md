@@ -162,9 +162,9 @@ These Terms, together with our Privacy Policy, constitute the entire agreement b
 
 If you have questions about these Terms, please contact us at:
 
-**Email:** support@pregame-worldcup-26.netlify.app
+**Email:** support@pregameworldcup.com
 
-**Website:** https://pregame-worldcup-26.netlify.app
+**Website:** https://pregameworldcup.com
 
 ---
 

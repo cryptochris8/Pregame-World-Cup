@@ -161,7 +161,7 @@ The following data types were declared as collected by the app:
 ## Privacy Policy URL
 
 ```
-https://pregame-worldcup-26.netlify.app/privacy
+https://pregameworldcup.com/privacy
 ```
 
 ---

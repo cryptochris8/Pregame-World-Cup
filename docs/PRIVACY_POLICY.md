@@ -139,9 +139,9 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 If you have questions about this Privacy Policy or our privacy practices, please contact us at:
 
-**Email:** support@pregame-worldcup-26.netlify.app
+**Email:** support@pregameworldcup.com
 
-**Website:** https://pregame-worldcup-26.netlify.app
+**Website:** https://pregameworldcup.com
 
 ---
 
