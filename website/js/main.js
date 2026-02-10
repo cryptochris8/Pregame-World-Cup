@@ -70,7 +70,7 @@ function loadTeams() {
     if (!teamsGrid) return;
 
     teamsGrid.innerHTML = worldCupTeams.map(team => `
-        <div class="team-card bg-white rounded-xl p-6 shadow-md hover:shadow-xl cursor-pointer text-center">
+        <div class="team-card bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-wc-purple/50 cursor-pointer text-center">
             <img
                 src="https://flagcdn.com/w80/${team.code}.png"
                 srcset="https://flagcdn.com/w160/${team.code}.png 2x"
@@ -78,7 +78,7 @@ function loadTeams() {
                 class="w-16 h-auto mx-auto mb-3 rounded shadow-sm"
                 onerror="this.src='https://flagcdn.com/w80/${team.code.split('-')[0]}.png'"
             />
-            <div class="font-semibold text-gray-900">${team.name}</div>
+            <div class="font-semibold text-white">${team.name}</div>
             <div class="text-xs text-gray-500 mt-1">${team.confederation}</div>
         </div>
     `).join('');
