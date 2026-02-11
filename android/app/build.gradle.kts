@@ -83,9 +83,8 @@ android {
                 signingConfigs.getByName("debug")
             }
 
-            // Disable minification to avoid Stripe SDK issues
-            isMinifyEnabled = false
-            isShrinkResources = false
+            isMinifyEnabled = true
+            isShrinkResources = true
 
             // Add ProGuard rules if needed later
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")

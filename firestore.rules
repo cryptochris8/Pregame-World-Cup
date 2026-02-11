@@ -1,169 +1,407 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Allow users to read and write their own favorite teams
-    match /userFavorites/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+    // ==================== HELPER FUNCTIONS ====================
+
+    function isAuth() {
+      return request.auth != null;
     }
-    
-    // Allow users to read and write their own user profiles
+
+    function isOwner(userId) {
+      return isAuth() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isAuth() && request.auth.token.admin == true;
+    }
+
+    // ==================== USER DATA ====================
+
+    // User favorites - own data only
+    match /userFavorites/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // User profiles - public read, own write
     match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-      // Allow reading other users' public profile data
-      allow read: if request.auth != null;
-      
-      // Allow reading of user interactions within user documents
+      allow read: if isAuth();
+      allow write: if isOwner(userId);
+
       match /interactions/{interactionId} {
-        allow read, write: if request.auth != null && request.auth.uid == userId;
+        allow read, write: if isOwner(userId);
       }
     }
-    
-    // Allow users to read and write their own user interactions
+
+    // User interactions
     match /user_interactions/{interactionId} {
-      allow read, write: if request.auth != null && request.auth.uid == resource.data.userId;
-      allow create: if request.auth != null && request.auth.uid == request.resource.data.userId;
-      // Allow reading all interactions for development
-      allow read: if request.auth != null;
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
-    
-    // Allow authenticated users to read and write game schedule data (for development)
-    match /games/{gameId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read and write venue data (for development)
-    match /venues/{venueId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow users to read and write social features (friends, posts, etc.)
-    match /social_profiles/{userId} {
-      allow read: if request.auth != null;
-      allow write: if request.auth != null && request.auth.uid == userId;
-    }
-    
-    // Allow users to read public posts but only write their own
-    match /social_posts/{postId} {
-      allow read: if request.auth != null;
-      allow create: if request.auth != null && request.auth.uid == request.resource.data.authorId;
-      allow update, delete: if request.auth != null && request.auth.uid == resource.data.authorId;
-    }
-    
-    // Allow users to manage their own friend requests and connections
-    match /friend_requests/{requestId} {
-      allow read, write: if request.auth != null && 
-        (request.auth.uid == resource.data.senderId || request.auth.uid == resource.data.receiverId);
-      allow create: if request.auth != null && request.auth.uid == request.resource.data.senderId;
-      // Allow reading all friend requests for development
-      allow read: if request.auth != null;
-    }
-    
-    // Allow users to read/write their own notifications
-    match /notifications/{notificationId} {
-      allow read, write: if request.auth != null && request.auth.uid == resource.data.userId;
-      allow create: if request.auth != null;
-    }
-    
-    // Allow users to read/write game predictions (more permissive for development)
-    match /game_predictions/{predictionId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow users to read/write their own user predictions
-    match /user_predictions/{predictionId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write activity feed data
-    match /activity_feed/{activityId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write social activities
-    match /social_activities/{activityId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write chat data
-    match /chats/{chatId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write messages
-    match /messages/{messageId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write venue reviews and ratings
-    match /venue_reviews/{reviewId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write AI recommendations
-    match /ai_recommendations/{recommendationId} {
-      allow read, write: if request.auth != null;
-    }
-    
-    // Allow authenticated users to read/write user preferences
+
+    // User preferences - own data only
     match /user_preferences/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+      allow read, write: if isOwner(userId);
     }
 
-    // ==================== MODERATION ====================
-
-    // Reports - users can create reports and read their own reports
-    match /reports/{reportId} {
-      allow create: if request.auth != null && request.auth.uid == request.resource.data.reporterId;
-      allow read: if request.auth != null && request.auth.uid == resource.data.reporterId;
-      // Admins can read and update all reports (admin check via custom claims)
-      allow read, update: if request.auth != null && request.auth.token.admin == true;
+    // User profiles (world cup specific) - public read, own write
+    match /user_profiles/{userId} {
+      allow read: if isAuth();
+      allow write: if isOwner(userId);
     }
 
-    // User sanctions - only admins can write, users can read their own
-    match /user_sanctions/{sanctionId} {
-      allow read: if request.auth != null && request.auth.uid == resource.data.usualId;
-      allow read, write: if request.auth != null && request.auth.token.admin == true;
+    // Notification preferences - own data only
+    match /notification_preferences/{userId} {
+      allow read, write: if isOwner(userId);
     }
 
-    // User moderation status - users can read their own, admins can read/write all
-    match /user_moderation_status/{userId} {
-      allow read: if request.auth != null && request.auth.uid == userId;
-      allow read, write: if request.auth != null && request.auth.token.admin == true;
-      // Allow increment of report count by any authenticated user (for reporting)
-      allow update: if request.auth != null &&
-        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['reportCount']);
+    // Match reminders - own data only (via userId field)
+    match /match_reminders/{reminderId} {
+      allow read, write: if isAuth() && request.auth.uid == resource.data.userId;
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
+    }
+
+    // ==================== TOURNAMENT REFERENCE DATA ====================
+    // Read-only for authenticated users, written by Cloud Functions/admin only
+
+    match /worldcup_matches/{matchId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /national_teams/{teamId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /players/{playerId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /worldcup_players/{playerId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /managers/{managerId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /groups/{groupId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /brackets/{bracketId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /matchSummaries/{summaryId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /headToHead/{docId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /worldCupHistory/{docId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /worldCupRecords/{docId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /schedules/{docId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    // Games and venues - auth read, admin write
+    match /games/{gameId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /venues/{venueId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    // ==================== SOCIAL FEATURES ====================
+
+    // Social profiles - public read, own write
+    match /social_profiles/{userId} {
+      allow read: if isAuth();
+      allow write: if isOwner(userId);
+    }
+
+    // Social posts - public read, own create/update/delete
+    match /social_posts/{postId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.authorId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+
+    // Activities - public read, own create/update/delete
+    match /activities/{activityId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.authorId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+
+    // Activity likes - auth read, auth create/delete
+    match /activity_likes/{likeId} {
+      allow read: if isAuth();
+      allow create, delete: if isAuth();
+    }
+
+    // Activity comments - auth read, auth create, own delete
+    match /activity_comments/{commentId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+
+    // Comments (general) - auth read, auth create, own delete
+    match /comments/{commentId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+
+    // Activity feed - auth read, own write
+    match /activity_feed/{activityId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.authorId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+
+    // Social activities - auth read, own write
+    match /social_activities/{activityId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.authorId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+
+    // Friend requests - participants can read/write
+    match /friend_requests/{requestId} {
+      allow read: if isAuth() &&
+        (request.auth.uid == resource.data.senderId || request.auth.uid == resource.data.receiverId);
+      allow create: if isAuth() && request.auth.uid == request.resource.data.senderId;
+      allow update, delete: if isAuth() &&
+        (request.auth.uid == resource.data.senderId || request.auth.uid == resource.data.receiverId);
+    }
+
+    // Friendships - participants can read/write
+    match /friendships/{friendshipId} {
+      allow read, write: if isAuth();
     }
 
     // Social connections - for block functionality
     match /social_connections/{connectionId} {
-      allow read, write: if request.auth != null;
+      allow read, write: if isAuth();
     }
 
-    // User chat settings - for mute/archive functionality
+    // Predictions - auth read, own write
+    match /predictions/{predictionId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // Game predictions - auth read/write (leaderboard feature)
+    match /game_predictions/{predictionId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // User predictions - own data
+    match /user_predictions/{predictionId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // ==================== NOTIFICATIONS ====================
+
+    // User notifications - own data only
+    match /notifications/{notificationId} {
+      allow read, write: if isAuth() && request.auth.uid == resource.data.userId;
+      allow create: if isAuth();
+    }
+
+    // Internal notification collections - no client access (functions-only)
+    match /sent_notifications/{docId} {
+      allow read, write: if false;
+    }
+
+    match /friend_request_notifications/{docId} {
+      allow read, write: if false;
+    }
+
+    // Message notifications - auth can create (trigger), no read
+    match /message_notifications/{docId} {
+      allow create: if isAuth();
+      allow read, update, delete: if false;
+    }
+
+    // ==================== MESSAGING & CHAT ====================
+
+    // Direct chats - authenticated access
+    match /chats/{chatId} {
+      allow read, write: if isAuth();
+    }
+
+    // Direct messages - authenticated access
+    match /messages/{messageId} {
+      allow read, write: if isAuth();
+    }
+
+    // Match chats with subcollections
+    match /match_chats/{chatId} {
+      allow read, write: if isAuth();
+
+      match /messages/{messageId} {
+        allow read, write: if isAuth();
+      }
+
+      match /participants/{userId} {
+        allow read, write: if isAuth();
+      }
+    }
+
+    // User chat settings - own data
     match /user_chat_settings/{settingId} {
-      allow read, write: if request.auth != null;
+      allow read, write: if isAuth();
     }
 
-    // Typing indicators - real-time typing status
+    // Typing indicators - authenticated access
     match /typing_indicators/{indicatorId} {
-      allow read, write: if request.auth != null;
+      allow read, write: if isAuth();
     }
 
-    // Watch parties - public read, authenticated write
+    // ==================== WATCH PARTIES ====================
+
     match /watch_parties/{partyId} {
-      allow read: if request.auth != null;
-      allow create: if request.auth != null && request.auth.uid == request.resource.data.hostId;
-      allow update, delete: if request.auth != null && request.auth.uid == resource.data.hostId;
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.hostId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.hostId;
+
+      match /members/{memberId} {
+        allow read, write: if isAuth();
+      }
+
+      match /messages/{messageId} {
+        allow read, write: if isAuth();
+      }
     }
 
-    // Watch party invites
+    // Watch party invites - authenticated access
     match /watch_party_invites/{inviteId} {
-      allow read, write: if request.auth != null;
+      allow read, write: if isAuth();
     }
 
-    // Default allow for development - REMOVE IN PRODUCTION
-    match /{document=**} {
-      allow read, write: if request.auth != null;
+    // Watch party virtual payments - own read, functions-only write
+    match /watch_party_virtual_payments/{paymentId} {
+      allow read: if isAuth() && request.auth.uid == resource.data.userId;
+      allow write: if isAdmin();
     }
+
+    // ==================== VENUES & REVIEWS ====================
+
+    // Venue reviews - auth read, own write
+    match /venue_reviews/{reviewId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // Venue enhancements - auth read, own (ownerId) or admin write
+    match /venue_enhancements/{venueId} {
+      allow read: if isAuth();
+      allow write: if isAdmin() || (isAuth() && request.auth.uid == resource.data.ownerId);
+      allow create: if isAuth();
+    }
+
+    // AI recommendations - auth read, own write
+    match /ai_recommendations/{recommendationId} {
+      allow read: if isAuth();
+      allow create: if isAuth();
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // ==================== PAYMENTS & BILLING ====================
+
+    // Fan accounts - own read, functions/admin write
+    match /fans/{fanId} {
+      allow read: if isAuth() && request.auth.uid == resource.data.userId;
+      allow write: if isAdmin();
+    }
+
+    // Stripe customers - own read, functions/admin write
+    match /stripe_customers/{docId} {
+      allow read: if isAuth() && request.auth.uid == resource.data.userId;
+      allow write: if isAdmin();
+    }
+
+    // World Cup fan passes - own read, functions/admin write
+    match /world_cup_fan_passes/{userId} {
+      allow read: if isOwner(userId);
+      allow write: if isAdmin();
+    }
+
+    // World Cup venue purchases - own read, functions/admin write
+    match /world_cup_venue_purchases/{docId} {
+      allow read: if isAuth() && request.auth.uid == resource.data.userId;
+      allow write: if isAdmin();
+    }
+
+    // ==================== MODERATION ====================
+
+    // Reports - users can create and read own, admins can read/update all
+    match /reports/{reportId} {
+      allow create: if isAuth() && request.auth.uid == request.resource.data.reporterId;
+      allow read: if isAuth() && request.auth.uid == resource.data.reporterId;
+      allow read, update: if isAdmin();
+    }
+
+    // User sanctions - own read, admin write
+    match /user_sanctions/{sanctionId} {
+      allow read: if isAuth() && request.auth.uid == resource.data.usualId;
+      allow read, write: if isAdmin();
+    }
+
+    // User moderation status - own read, admin write, auth can increment report count
+    match /user_moderation_status/{userId} {
+      allow read: if isOwner(userId);
+      allow read, write: if isAdmin();
+      allow update: if isAuth() &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['reportCount']);
+    }
+
+    // ==================== ADMIN ====================
+
+    match /admin_users/{docId} {
+      allow read, write: if isAdmin();
+    }
+
+    // ==================== DEV ARTIFACTS (DENY ALL) ====================
+
+    match /testWrites/{docId} {
+      allow read, write: if false;
+    }
+
+    // ==================== DEFAULT DENY ====================
+    // No catch-all rule. Any collection not explicitly listed above is denied.
   }
-} 
+}

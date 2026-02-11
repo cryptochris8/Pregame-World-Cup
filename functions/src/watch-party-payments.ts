@@ -5,10 +5,14 @@ import Stripe from 'stripe';
 // Initialize Stripe with your secret key
 const getStripeSecretKey = () => {
   try {
-    return functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY || 'sk_test_temp';
-  } catch (error) {
-    console.warn('Could not load stripe config, using fallback');
-    return process.env.STRIPE_SECRET_KEY || 'sk_test_temp';
+    const key = functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY;
+    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
+    return key;
+  } catch (error: any) {
+    if (error.message === 'STRIPE_SECRET_KEY not configured') throw error;
+    const key = process.env.STRIPE_SECRET_KEY;
+    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
+    return key;
   }
 };
 

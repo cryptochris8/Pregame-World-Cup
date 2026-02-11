@@ -250,19 +250,19 @@ workflows:
             --build-name=1.0.$BUILD_NUMBER \
             --build-number=$BUILD_NUMBER \
             --dart-define=ENVIRONMENT=production \
-            --dart-define=SPORTSDATA_API_KEY=6e3df81431824100c937f360f16251267 \
+            --dart-define=SPORTSDATA_API_KEY=$SPORTSDATA_API_KEY \
             --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
-            
+
       - name: Build App Bundle for Google Play
         script: |
           flutter build appbundle --release \
             --build-name=1.0.$BUILD_NUMBER \
             --build-number=$BUILD_NUMBER \
             --dart-define=ENVIRONMENT=production \
-            --dart-define=SPORTSDATA_API_KEY=6e3df81431824100c937f360f16251267 \
+            --dart-define=SPORTSDATA_API_KEY=$SPORTSDATA_API_KEY \
             --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
