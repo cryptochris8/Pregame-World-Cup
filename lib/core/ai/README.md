@@ -11,18 +11,46 @@ This module provides AI-powered features for the Pregame app using OpenAI's GPT 
 - **Rate Limiting**: Built-in protection against API limits
 - **Fallback Modes**: Graceful degradation when API is unavailable
 
-## 📁 Project Structure
+## Architecture (Consolidated)
+
+The AI service layer follows a 3-tier architecture:
+
+### Tier 1: Core Providers (Low-level API wrappers)
+- `ai_service.dart` - OpenAI GPT/embedding API integration
+- `claude_service.dart` - Anthropic Claude API integration
+
+### Tier 2: Router (Multi-provider orchestration)
+- `multi_provider_ai_service.dart` - Routes requests to optimal provider (Claude for deep analysis, OpenAI for embeddings/quick responses), with automatic fallback
+
+### Tier 3: Domain Services (Feature-specific logic)
+- `ai_game_analysis_service.dart` - Game analysis using historical knowledge + AI
+- `enhanced_ai_game_analysis_service.dart` - Enhanced analysis with team mapping and real data
+- `ai_historical_knowledge_service.dart` - Historical data cache and retrieval
+- `ai_team_season_summary_service.dart` - Team season summaries and narratives
+- `ai_venue_recommendation_service.dart` - Venue recommendations with embeddings
+- `user_preference_learning_service.dart` - User preference learning
+
+### Removed (consolidated)
+- ~~`enhanced_ai_prediction_service.dart`~~ - Merged into EnhancedAIGameAnalysisService
+- ~~`enhanced_game_summary_service.dart`~~ - Merged into EnhancedAIGameAnalysisService
+- ~~`enhanced_player_service.dart`~~ - Merged into EnhancedAIGameAnalysisService
+- ~~`claude_sports_integration_service.dart`~~ - Merged into MultiProviderAIService + EnhancedAIGameAnalysisService
 
 ```
 lib/core/ai/
 ├── services/
-│   ├── ai_service.dart                      # Core OpenAI API integration
-│   └── ai_venue_recommendation_service.dart # Specialized venue recommendations
+│   ├── ai_service.dart                          # Tier 1: OpenAI provider
+│   ├── claude_service.dart                      # Tier 1: Claude provider
+│   ├── multi_provider_ai_service.dart           # Tier 2: Provider router
+│   ├── ai_game_analysis_service.dart            # Tier 3: Game analysis
+│   ├── enhanced_ai_game_analysis_service.dart   # Tier 3: Enhanced analysis
+│   ├── ai_historical_knowledge_service.dart     # Tier 3: Historical data
+│   ├── ai_team_season_summary_service.dart      # Tier 3: Season summaries
+│   ├── ai_venue_recommendation_service.dart     # Tier 3: Venue AI
+│   └── user_preference_learning_service.dart    # Tier 3: User learning
 ├── entities/
-│   └── ai_recommendation.dart               # Data models for AI responses
-├── examples/
-│   └── ai_usage_example.dart               # Usage examples and demos
-└── README.md                               # This file
+│   └── ai_recommendation.dart                   # Data models
+└── README.md                                    # This file
 ```
 
 ## ⚙️ Setup

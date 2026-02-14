@@ -35,16 +35,13 @@ import 'features/social/domain/services/social_service.dart';
 import './core/ai/services/ai_service.dart';
 import './core/ai/services/claude_service.dart';
 import './core/ai/services/multi_provider_ai_service.dart';
-import './core/ai/services/claude_sports_integration_service.dart';
 import './core/ai/services/user_preference_learning_service.dart';
 import './core/ai/services/ai_historical_knowledge_service.dart';
 import './core/ai/services/ai_game_analysis_service.dart';
 import './core/services/user_learning_service.dart';
 
-// Enhanced AI Services
-import './core/ai/services/enhanced_ai_prediction_service.dart';
-import './core/ai/services/enhanced_game_summary_service.dart';
-import './core/ai/services/enhanced_player_service.dart';
+// Enhanced AI Services (consolidated: removed EnhancedAIPredictionService,
+// EnhancedGameSummaryService, EnhancedPlayerService, ClaudeSportsIntegrationService)
 import './core/ai/services/ai_team_season_summary_service.dart';
 import './core/ai/services/enhanced_ai_game_analysis_service.dart';
 import './core/services/historical_game_analysis_service.dart';
@@ -170,27 +167,20 @@ Future<void> setupLocator() async {
     // STEP 4: AI Services (Can be problematic on Android)
     print('🔧 DI STEP 4: AI Services');
     try {
+      // Core AI providers
       sl.registerLazySingleton(() => AIService());
       sl.registerLazySingleton(() => ClaudeService());
       sl.registerLazySingleton(() => MultiProviderAIService.instance);
-      sl.registerLazySingleton(() => ClaudeSportsIntegrationService.instance);
+
+      // AI learning services
       sl.registerLazySingleton(() => UserPreferenceLearningService(sl()));
       sl.registerLazySingleton(() => UserLearningService());
-      
-      // Register new AI services for historical knowledge and game analysis
+
+      // Historical knowledge and game analysis
       sl.registerLazySingleton(() => AIHistoricalKnowledgeService.instance);
       sl.registerLazySingleton(() => AIGameAnalysisService.instance);
-      
-      // Register enhanced AI services for better predictions and summaries
-      sl.registerLazySingleton(() => EnhancedAIPredictionService.instance);
-      sl.registerLazySingleton(() => EnhancedGameSummaryService.instance);
-      sl.registerLazySingleton(() => EnhancedPlayerService.instance);
       sl.registerLazySingleton(() => AITeamSeasonSummaryService.instance);
-      
-      // Register enhanced AI game analysis service with team mapping
       sl.registerLazySingleton(() => EnhancedAIGameAnalysisService.instance);
-      
-      // Register historical game analysis service
       sl.registerLazySingleton(() => HistoricalGameAnalysisService());
       
       print('✅ DI STEP 4: AI Services - SUCCESS');

@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../core/services/logging_service.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import 'transaction_history_screen.dart';
 
@@ -14,7 +17,10 @@ class FanPassScreen extends StatefulWidget {
   State<FanPassScreen> createState() => _FanPassScreenState();
 }
 
-class _FanPassScreenState extends State<FanPassScreen> {
+class _FanPassScreenState extends State<FanPassScreen>
+    with WidgetsBindingObserver {
+  static const String _logTag = 'FanPassScreen';
+
   final WorldCupPaymentService _paymentService = WorldCupPaymentService();
 
   FanPassStatus? _currentStatus;
@@ -22,10 +28,87 @@ class _FanPassScreenState extends State<FanPassScreen> {
   bool _isLoading = true;
   bool _isPurchasing = false;
 
+  /// Subscription listening for real-time fan pass status changes after
+  /// the user completes a browser checkout (Stripe fallback flow).
+  StreamSubscription<FanPassStatus>? _fanPassStatusSubscription;
+
+  /// Timeout timer that cancels the listener after 5 minutes to avoid
+  /// keeping an open Firestore connection indefinitely.
+  Timer? _listenerTimeoutTimer;
+
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _loadData();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _stopListeningForPassActivation();
+    super.dispose();
+  }
+
+  // ============================================================================
+  // APP LIFECYCLE - Auto-refresh after returning from browser checkout
+  // ============================================================================
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+
+    if (state == AppLifecycleState.resumed &&
+        _paymentService.isBrowserCheckoutInProgress) {
+      LoggingService.info(
+        'App resumed after browser checkout - refreshing fan pass status',
+        tag: _logTag,
+      );
+
+      // Mark checkout as complete so we don't keep refreshing
+      _paymentService.markBrowserCheckoutComplete();
+
+      // Clear cache and force-refresh the status
+      _paymentService.clearCache();
+      _refreshAfterCheckout();
+    }
+  }
+
+  /// Refresh fan pass status after the user returns from a browser checkout.
+  /// Adds a short delay to give the Stripe webhook time to process.
+  Future<void> _refreshAfterCheckout() async {
+    if (!mounted) return;
+
+    // Show a brief "checking" indicator
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Checking purchase status...'),
+        duration: Duration(seconds: 2),
+      ),
+    );
+
+    // Small delay to give the webhook a moment to fire
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!mounted) return;
+
+    final previousStatus = _currentStatus;
+    await _loadData();
+
+    if (!mounted) return;
+
+    // If the pass was just activated, show a success message
+    if (_currentStatus?.hasPass == true && previousStatus?.hasPass != true) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            '${_currentStatus!.passType.displayName} activated successfully!',
+          ),
+          backgroundColor: AppTheme.successColor,
+          duration: const Duration(seconds: 4),
+        ),
+      );
+    }
   }
 
   Future<void> _loadData() async {
@@ -43,6 +126,84 @@ class _FanPassScreenState extends State<FanPassScreen> {
     } catch (e) {
       setState(() => _isLoading = false);
     }
+  }
+
+  /// Start listening for real-time fan pass activation from Firestore.
+  ///
+  /// Called after the user is redirected to a Stripe browser checkout.
+  /// The listener will detect when the webhook fires and activates the
+  /// pass, then update the UI immediately without a manual refresh.
+  /// Automatically stops after 5 minutes.
+  void _startListeningForPassActivation() {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return;
+
+    // Cancel any existing listener before starting a new one
+    _stopListeningForPassActivation();
+
+    LoggingService.info(
+      'Starting real-time listener for fan pass activation',
+      tag: _logTag,
+    );
+
+    _fanPassStatusSubscription = _paymentService
+        .listenToFanPassStatus(user.uid)
+        .listen((status) {
+      if (!mounted) return;
+
+      // Only react when a new active pass is detected
+      if (status.hasPass && _currentStatus?.hasPass != true) {
+        LoggingService.info(
+          'Fan pass activated via real-time listener: ${status.passType.displayName}',
+          tag: _logTag,
+        );
+
+        // Stop listening once the pass is detected
+        _stopListeningForPassActivation();
+
+        // Update UI with new status
+        setState(() {
+          _currentStatus = status;
+          _isPurchasing = false;
+        });
+
+        // Show success snackbar
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              '${status.passType.displayName} activated successfully!',
+            ),
+            backgroundColor: AppTheme.successColor,
+            duration: const Duration(seconds: 4),
+          ),
+        );
+
+        // Full refresh to ensure all data is in sync
+        _loadData();
+      }
+    }, onError: (error) {
+      LoggingService.error(
+        'Error in fan pass status listener: $error',
+        tag: _logTag,
+      );
+    });
+
+    // Set a 5-minute timeout to avoid keeping the listener open indefinitely
+    _listenerTimeoutTimer = Timer(const Duration(minutes: 5), () {
+      LoggingService.info(
+        'Fan pass listener timed out after 5 minutes',
+        tag: _logTag,
+      );
+      _stopListeningForPassActivation();
+    });
+  }
+
+  /// Stop listening for fan pass activation and clean up resources.
+  void _stopListeningForPassActivation() {
+    _fanPassStatusSubscription?.cancel();
+    _fanPassStatusSubscription = null;
+    _listenerTimeoutTimer?.cancel();
+    _listenerTimeoutTimer = null;
   }
 
   Future<void> _purchasePass(FanPassType passType) async {
@@ -79,10 +240,14 @@ class _FanPassScreenState extends State<FanPassScreen> {
       } else if (result.userCancelled) {
         // User cancelled - no message needed
       } else if (result.usedFallback) {
-        // Fallback to browser checkout was used
+        // Fallback to browser checkout was used.
+        // Start a real-time Firestore listener so the UI updates
+        // automatically once the Stripe webhook activates the pass.
+        _startListeningForPassActivation();
+
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Complete your purchase in the browser. Return here when done.'),
+            content: Text('Complete your purchase in the browser. Your pass will activate automatically.'),
             duration: Duration(seconds: 5),
           ),
         );

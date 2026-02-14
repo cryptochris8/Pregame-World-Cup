@@ -20,6 +20,8 @@ enum DeepLinkType {
   userProfile,
   venue,
   leaderboard,
+  purchaseSuccess,
+  purchaseCancel,
 }
 
 /// Parsed deep link data
@@ -64,6 +66,8 @@ class DeepLinkService {
     DeepLinkType.userProfile: '/profile',
     DeepLinkType.venue: '/venue',
     DeepLinkType.leaderboard: '/leaderboard',
+    DeepLinkType.purchaseSuccess: '/purchase/success',
+    DeepLinkType.purchaseCancel: '/purchase/cancel',
   };
 
   // Callbacks for handling deep links
@@ -163,6 +167,13 @@ class DeepLinkService {
     }
   }
 
+  /// Deep link types that do not require an ID path segment.
+  /// These are matched purely on the path prefix itself.
+  static const Set<DeepLinkType> _noIdTypes = {
+    DeepLinkType.purchaseSuccess,
+    DeepLinkType.purchaseCancel,
+  };
+
   /// Parse URI into DeepLinkData
   DeepLinkData? _parseUri(Uri uri) {
     try {
@@ -170,16 +181,28 @@ class DeepLinkService {
       final queryParams = uri.queryParameters;
 
       // Determine content type from path
+      // Sort prefixes by length descending so longer prefixes match first
+      // (e.g., /purchase/success before /purchase)
       DeepLinkType? type;
       String? id;
 
-      for (final entry in _pathPrefixes.entries) {
+      final sortedEntries = _pathPrefixes.entries.toList()
+        ..sort((a, b) => b.value.length.compareTo(a.value.length));
+
+      for (final entry in sortedEntries) {
         if (path.startsWith(entry.value)) {
           type = entry.key;
-          // Extract ID from path (e.g., /match/123 -> 123)
-          final remainingPath = path.substring(entry.value.length);
-          if (remainingPath.startsWith('/')) {
-            id = remainingPath.substring(1).split('/').first;
+
+          if (_noIdTypes.contains(entry.key)) {
+            // Purchase-type links use query params, not path IDs.
+            // Use session_id from query if available, otherwise a sentinel value.
+            id = queryParams['session_id'] ?? '_';
+          } else {
+            // Extract ID from path (e.g., /match/123 -> 123)
+            final remainingPath = path.substring(entry.value.length);
+            if (remainingPath.startsWith('/')) {
+              id = remainingPath.substring(1).split('/').first;
+            }
           }
           break;
         }

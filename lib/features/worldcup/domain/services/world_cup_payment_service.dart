@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -19,32 +21,84 @@ class WorldCupPaymentService {
 
   static const String _logTag = 'WorldCupPayment';
   final FirebaseFunctions _functions = FirebaseFunctions.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final RevenueCatService _revenueCatService = RevenueCatService();
 
-  // Admin/test accounts that get full Superfan Pass access
-  static const List<String> _adminEmails = [
+  // Session cache for admin/clearance lookups to avoid repeated Firestore reads.
+  // Key: email (lowercase), Value: true if admin/clearance.
+  final Map<String, bool> _adminCache = {};
+  final Map<String, bool> _clearanceCache = {};
+
+  // Hardcoded fallback lists - used ONLY when Firestore query fails.
+  // The source of truth is Firestore collections: admin_users, clearance_users.
+  static const List<String> _fallbackAdminEmails = [
     'chriscam8@gmail.com',
   ];
-
-  // Clearance list - users who get free Superfan Pass access
-  // (e.g., beta testers, influencers, friends & family)
-  static const List<String> _clearanceEmails = [
+  static const List<String> _fallbackClearanceEmails = [
     'coopercrawford013@gmail.com',
     'johnnycaboshi@gmail.com',
   ];
 
-  /// Check if current user is an admin/test account
-  bool _isAdminUser() {
+  /// Check if current user is an admin/test account.
+  /// Queries Firestore `admin_users` collection, falls back to hardcoded list on error.
+  Future<bool> _isAdminUser() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null || user.email == null) return false;
-    return _adminEmails.contains(user.email!.toLowerCase());
+    final email = user.email!.toLowerCase();
+    return _isAdminOrClearanceEmail(
+      email: email,
+      collection: 'admin_users',
+      cache: _adminCache,
+      fallbackList: _fallbackAdminEmails,
+    );
   }
 
-  /// Check if current user is on the clearance list
-  bool _isClearanceUser() {
+  /// Check if current user is on the clearance list.
+  /// Queries Firestore `clearance_users` collection, falls back to hardcoded list on error.
+  Future<bool> _isClearanceUser() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null || user.email == null) return false;
-    return _clearanceEmails.contains(user.email!.toLowerCase());
+    final email = user.email!.toLowerCase();
+    return _isAdminOrClearanceEmail(
+      email: email,
+      collection: 'clearance_users',
+      cache: _clearanceCache,
+      fallbackList: _fallbackClearanceEmails,
+    );
+  }
+
+  /// Helper that checks if an email exists in a Firestore collection,
+  /// with session caching and hardcoded fallback on error.
+  Future<bool> _isAdminOrClearanceEmail({
+    required String email,
+    required String collection,
+    required Map<String, bool> cache,
+    required List<String> fallbackList,
+  }) async {
+    // Check session cache first
+    if (cache.containsKey(email)) {
+      return cache[email]!;
+    }
+
+    try {
+      final snapshot = await _firestore
+          .collection(collection)
+          .where('email', isEqualTo: email)
+          .limit(1)
+          .get();
+
+      final found = snapshot.docs.isNotEmpty;
+      cache[email] = found;
+      return found;
+    } catch (e) {
+      LoggingService.warning(
+        'Firestore $collection query failed, using hardcoded fallback: $e',
+        tag: _logTag,
+      );
+      final found = fallbackList.contains(email);
+      cache[email] = found;
+      return found;
+    }
   }
 
   /// Get full Superfan Pass status for admin users
@@ -88,12 +142,12 @@ class WorldCupPaymentService {
       }
 
       // Check if user is an admin/test account
-      if (_isAdminUser()) {
+      if (await _isAdminUser()) {
         return _getAdminFanPassStatus();
       }
 
       // Check if user is on the clearance list (free Superfan access)
-      if (_isClearanceUser()) {
+      if (await _isClearanceUser()) {
         LoggingService.info('User on clearance list - granting Superfan Pass', tag: _logTag);
         return _getAdminFanPassStatus(); // Same features as admin
       }
@@ -152,12 +206,36 @@ class WorldCupPaymentService {
     );
   }
 
+  // ============================================================================
+  // BROWSER CHECKOUT TRACKING
+  // ============================================================================
+
+  /// Track whether a browser checkout is currently in progress.
+  /// Used by the FanPassScreen lifecycle listener to know when to
+  /// auto-refresh after the user returns from the browser.
+  bool _browserCheckoutInProgress = false;
+
+  /// Whether a browser checkout was initiated and has not yet been resolved.
+  bool get isBrowserCheckoutInProgress => _browserCheckoutInProgress;
+
+  /// Mark the browser checkout as completed (call when the user returns).
+  void markBrowserCheckoutComplete() {
+    _browserCheckoutInProgress = false;
+  }
+
+  // ============================================================================
+  // FAN PASS CHECKOUT
+  // ============================================================================
+
   /// Purchase a fan pass
   /// Returns the checkout URL to open in browser/webview
+  /// Set [returnToApp] to true when launching from a mobile app so that
+  /// Stripe redirects back via a universal link the app can intercept.
   Future<String?> createFanPassCheckout({
     required FanPassType passType,
     String? successUrl,
     String? cancelUrl,
+    bool returnToApp = false,
   }) async {
     try {
       final user = FirebaseAuth.instance.currentUser;
@@ -170,6 +248,7 @@ class WorldCupPaymentService {
         'passType': passType.value,
         'successUrl': successUrl,
         'cancelUrl': cancelUrl,
+        'returnToApp': returnToApp,
       });
 
       final data = result.data as Map<String, dynamic>;
@@ -186,7 +265,10 @@ class WorldCupPaymentService {
     required BuildContext context,
   }) async {
     try {
-      final url = await createFanPassCheckout(passType: passType);
+      final url = await createFanPassCheckout(
+        passType: passType,
+        returnToApp: true,
+      );
 
       if (url == null) {
         _showErrorDialog(context, 'Failed to create checkout session');
@@ -195,6 +277,7 @@ class WorldCupPaymentService {
 
       final uri = Uri.parse(url);
       if (await canLaunchUrl(uri)) {
+        _browserCheckoutInProgress = true;
         await launchUrl(uri, mode: LaunchMode.externalApplication);
         return true;
       } else {
@@ -215,7 +298,7 @@ class WorldCupPaymentService {
       if (user == null) return false;
 
       // Admin users have access to all features
-      if (_isAdminUser()) return true;
+      if (await _isAdminUser()) return true;
 
       final callable = _functions.httpsCallable('checkFanPassAccess');
       final result = await callable.call({'feature': feature});
@@ -449,7 +532,7 @@ class WorldCupPaymentService {
   /// Get cached fan pass status (refreshes every 5 minutes)
   Future<FanPassStatus> getCachedFanPassStatus({bool forceRefresh = false}) async {
     // Admin users always get full access immediately
-    if (_isAdminUser()) {
+    if (await _isAdminUser()) {
       return _getAdminFanPassStatus();
     }
 
@@ -466,17 +549,121 @@ class WorldCupPaymentService {
     return _cachedFanPassStatus!;
   }
 
-  /// Clear cached status (call after purchase)
+  /// Clear cached status (call after purchase or role change)
   void clearCache() {
     _cachedFanPassStatus = null;
     _fanPassStatusCacheTime = null;
+    _adminCache.clear();
+    _clearanceCache.clear();
+  }
+
+  // ============================================================================
+  // REAL-TIME LISTENERS
+  // ============================================================================
+
+  /// Listen to real-time fan pass status updates from Firestore.
+  ///
+  /// Returns a [Stream<FanPassStatus>] that emits whenever the
+  /// `world_cup_fan_passes/{userId}` document changes. This is used
+  /// after a browser checkout so the app detects when the Stripe webhook
+  /// activates the pass without requiring a manual refresh.
+  Stream<FanPassStatus> listenToFanPassStatus(String userId) {
+    return _firestore
+        .collection('world_cup_fan_passes')
+        .doc(userId)
+        .snapshots()
+        .map((snapshot) {
+      if (!snapshot.exists || snapshot.data() == null) {
+        return FanPassStatus.free();
+      }
+
+      final data = snapshot.data()!;
+      final passType = FanPassType.fromString(data['passType'] ?? 'free');
+      final isActive = data['status'] == 'active';
+
+      if (!isActive) {
+        return FanPassStatus.free();
+      }
+
+      // Clear cache so the next getCachedFanPassStatus call
+      // picks up the fresh value.
+      clearCache();
+
+      final features = <String, bool>{};
+      if (data['features'] != null && data['features'] is Map) {
+        (data['features'] as Map).forEach((key, value) {
+          if (value is bool) {
+            features[key.toString()] = value;
+          }
+        });
+      } else {
+        // Build features from passType when the document doesn't include them
+        features.addAll(_createFanPassStatus(passType).features);
+      }
+
+      LoggingService.info(
+        'Real-time fan pass update: $passType (active=$isActive)',
+        tag: _logTag,
+      );
+
+      return FanPassStatus(
+        hasPass: true,
+        passType: passType,
+        purchasedAt: (data['purchasedAt'] as Timestamp?)?.toDate(),
+        features: features,
+      );
+    });
+  }
+
+  /// Listen to real-time venue premium status updates from Firestore.
+  ///
+  /// Returns a [Stream<VenuePremiumStatus>] that emits whenever the
+  /// `venue_enhancements/{venueId}` document changes. Used after a
+  /// browser checkout so venue owners see their premium activate
+  /// without a manual refresh.
+  Stream<VenuePremiumStatus> listenToVenuePremiumStatus(String venueId) {
+    return _firestore
+        .collection('venue_enhancements')
+        .doc(venueId)
+        .snapshots()
+        .map((snapshot) {
+      if (!snapshot.exists || snapshot.data() == null) {
+        return VenuePremiumStatus.free();
+      }
+
+      final data = snapshot.data()!;
+      final isPremium = data['subscriptionTier'] == 'premium';
+
+      if (!isPremium) {
+        return VenuePremiumStatus.free();
+      }
+
+      LoggingService.info(
+        'Real-time venue premium update: venueId=$venueId (premium=$isPremium)',
+        tag: _logTag,
+      );
+
+      return VenuePremiumStatus(
+        isPremium: true,
+        tier: 'premium',
+        purchasedAt: (data['premiumPurchasedAt'] as Timestamp?)?.toDate(),
+        features: const {
+          'showsMatches': true,
+          'matchScheduling': true,
+          'tvSetup': true,
+          'gameSpecials': true,
+          'atmosphereSettings': true,
+          'liveCapacity': true,
+          'featuredListing': true,
+          'analytics': true,
+        },
+      );
+    });
   }
 
   // ============================================================================
   // TRANSACTION HISTORY
   // ============================================================================
-
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   /// Get transaction history for current user
   Future<List<PaymentTransaction>> getTransactionHistory() async {

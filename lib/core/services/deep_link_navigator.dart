@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'deep_link_service.dart';
 import 'logging_service.dart';
+import '../../features/worldcup/domain/services/world_cup_payment_service.dart';
 
 /// Navigator helper for handling deep link routing
 class DeepLinkNavigator {
@@ -65,6 +66,12 @@ class DeepLinkNavigator {
           break;
         case DeepLinkType.leaderboard:
           await _navigateToLeaderboard(data.additionalParams);
+          break;
+        case DeepLinkType.purchaseSuccess:
+          await _handlePurchaseSuccess(data.additionalParams);
+          break;
+        case DeepLinkType.purchaseCancel:
+          await _handlePurchaseCancel(data.additionalParams);
           break;
       }
     } catch (e) {
@@ -177,6 +184,75 @@ class DeepLinkNavigator {
       '/leaderboard',
       arguments: params,
     );
+  }
+
+  // ============================================================================
+  // PURCHASE DEEP LINK HANDLERS
+  // ============================================================================
+
+  /// Handle a purchase success deep link from Stripe checkout redirect.
+  /// Clears the fan pass cache, refreshes status, and navigates to the fan pass screen.
+  Future<void> _handlePurchaseSuccess(Map<String, String>? params) async {
+    LoggingService.info(
+      'Purchase success deep link received, session_id: ${params?['session_id']}',
+      tag: 'DeepLinkNavigator',
+    );
+
+    // Clear cache and mark checkout complete
+    final paymentService = WorldCupPaymentService();
+    paymentService.clearCache();
+    paymentService.markBrowserCheckoutComplete();
+
+    // Navigate to home then fan pass screen
+    navigator?.pushNamedAndRemoveUntil(
+      '/home',
+      (route) => false,
+    );
+
+    await Future.delayed(const Duration(milliseconds: 300));
+
+    final context = navigator?.context;
+    if (context != null) {
+      // Show success message via SnackBar on the navigator's context
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Purchase successful! Refreshing your pass status...'),
+          backgroundColor: Color(0xFF4CAF50),
+          duration: Duration(seconds: 4),
+        ),
+      );
+    }
+  }
+
+  /// Handle a purchase cancel deep link from Stripe checkout redirect.
+  /// Shows a cancellation message and returns to the app.
+  Future<void> _handlePurchaseCancel(Map<String, String>? params) async {
+    LoggingService.info(
+      'Purchase cancel deep link received',
+      tag: 'DeepLinkNavigator',
+    );
+
+    // Mark checkout complete
+    final paymentService = WorldCupPaymentService();
+    paymentService.markBrowserCheckoutComplete();
+
+    // Navigate to home
+    navigator?.pushNamedAndRemoveUntil(
+      '/home',
+      (route) => false,
+    );
+
+    await Future.delayed(const Duration(milliseconds: 300));
+
+    final context = navigator?.context;
+    if (context != null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Purchase cancelled. You can try again anytime.'),
+          duration: Duration(seconds: 4),
+        ),
+      );
+    }
   }
 }
 

@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/entities.dart';
 import '../../../worldcup/domain/services/world_cup_payment_service.dart';
+import '../../../../core/services/logging_service.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
 import '../widgets/premium_feature_gate.dart';
@@ -540,14 +543,29 @@ class _VenuePremiumUpgradeDialog extends StatefulWidget {
 
 class _VenuePremiumUpgradeDialogState
     extends State<_VenuePremiumUpgradeDialog> {
+  static const String _logTag = 'VenuePremiumUpgrade';
+
   final WorldCupPaymentService _paymentService = WorldCupPaymentService();
   bool _isPurchasing = false;
+  bool _isWaitingForActivation = false;
   WorldCupPricing? _pricing;
+
+  /// Real-time listener for venue premium activation after browser checkout.
+  StreamSubscription<VenuePremiumStatus>? _premiumStatusSubscription;
+
+  /// Timeout timer: cancels the listener after 5 minutes.
+  Timer? _listenerTimeoutTimer;
 
   @override
   void initState() {
     super.initState();
     _loadPricing();
+  }
+
+  @override
+  void dispose() {
+    _stopListeningForPremiumActivation();
+    super.dispose();
   }
 
   Future<void> _loadPricing() async {
@@ -568,22 +586,96 @@ class _VenuePremiumUpgradeDialogState
       );
 
       if (success && mounted) {
-        Navigator.pop(context);
+        // Start listening for real-time premium activation
+        _startListeningForPremiumActivation();
+
+        setState(() {
+          _isPurchasing = false;
+          _isWaitingForActivation = true;
+        });
+
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text(
-              'Complete your purchase in the browser. Return here when done.',
+              'Complete your purchase in the browser. Your premium will activate automatically.',
             ),
             duration: Duration(seconds: 5),
           ),
         );
-        widget.onPurchaseComplete?.call();
       }
     } finally {
-      if (mounted) {
+      if (mounted && !_isWaitingForActivation) {
         setState(() => _isPurchasing = false);
       }
     }
+  }
+
+  /// Start listening for real-time venue premium activation from Firestore.
+  void _startListeningForPremiumActivation() {
+    _stopListeningForPremiumActivation();
+
+    LoggingService.info(
+      'Starting real-time listener for venue premium activation: ${widget.venueId}',
+      tag: _logTag,
+    );
+
+    _premiumStatusSubscription = _paymentService
+        .listenToVenuePremiumStatus(widget.venueId)
+        .listen((status) {
+      if (!mounted) return;
+
+      if (status.isPremium) {
+        LoggingService.info(
+          'Venue premium activated via real-time listener: ${widget.venueId}',
+          tag: _logTag,
+        );
+
+        _stopListeningForPremiumActivation();
+
+        // Close the dialog
+        Navigator.pop(context);
+
+        // Show success
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Venue Premium activated successfully!'),
+            backgroundColor: Colors.green,
+            duration: Duration(seconds: 4),
+          ),
+        );
+
+        // Notify the parent to refresh its data
+        widget.onPurchaseComplete?.call();
+      }
+    }, onError: (error) {
+      LoggingService.error(
+        'Error in venue premium status listener: $error',
+        tag: _logTag,
+      );
+    });
+
+    // 5-minute timeout
+    _listenerTimeoutTimer = Timer(const Duration(minutes: 5), () {
+      LoggingService.info(
+        'Venue premium listener timed out after 5 minutes',
+        tag: _logTag,
+      );
+      _stopListeningForPremiumActivation();
+      if (mounted) {
+        setState(() => _isWaitingForActivation = false);
+        // Close dialog and let user manually refresh
+        Navigator.pop(context);
+        widget.onPurchaseComplete?.call();
+      }
+    });
+  }
+
+  /// Stop listening for venue premium activation.
+  void _stopListeningForPremiumActivation() {
+    _premiumStatusSubscription?.cancel();
+    _premiumStatusSubscription = null;
+    _listenerTimeoutTimer?.cancel();
+    _listenerTimeoutTimer = null;
   }
 
   @override
@@ -693,24 +785,47 @@ class _VenuePremiumUpgradeDialogState
         ),
       ),
       actions: [
-        TextButton(
-          onPressed: _isPurchasing ? null : () => Navigator.pop(context),
-          child: const Text('Not Now'),
-        ),
-        FilledButton.icon(
-          onPressed: _isPurchasing ? null : _startPurchase,
-          icon: _isPurchasing
-              ? const SizedBox(
-                  width: 18,
-                  height: 18,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2,
-                    color: Colors.white,
-                  ),
-                )
-              : const Icon(Icons.shopping_cart, size: 18),
-          label: Text(_isPurchasing ? 'Processing...' : 'Upgrade Now'),
-        ),
+        if (_isWaitingForActivation) ...[
+          TextButton(
+            onPressed: () {
+              _stopListeningForPremiumActivation();
+              Navigator.pop(context);
+              widget.onPurchaseComplete?.call();
+            },
+            child: const Text('Close'),
+          ),
+          FilledButton.icon(
+            onPressed: null,
+            icon: const SizedBox(
+              width: 18,
+              height: 18,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: Colors.white,
+              ),
+            ),
+            label: const Text('Waiting for activation...'),
+          ),
+        ] else ...[
+          TextButton(
+            onPressed: _isPurchasing ? null : () => Navigator.pop(context),
+            child: const Text('Not Now'),
+          ),
+          FilledButton.icon(
+            onPressed: _isPurchasing ? null : _startPurchase,
+            icon: _isPurchasing
+                ? const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: Colors.white,
+                    ),
+                  )
+                : const Icon(Icons.shopping_cart, size: 18),
+            label: Text(_isPurchasing ? 'Processing...' : 'Upgrade Now'),
+          ),
+        ],
       ],
     );
   }

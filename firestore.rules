@@ -483,7 +483,16 @@ service cloud.firestore {
     // ==================== ADMIN ====================
 
     match /admin_users/{docId} {
-      allow read, write: if isAdmin();
+      // Auth users can read to check their own admin status; only admins can write
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    // Clearance users (beta testers, influencers, friends & family)
+    match /clearance_users/{docId} {
+      // Auth users can read to check their own clearance status; only admins can write
+      allow read: if isAuth();
+      allow write: if isAdmin();
     }
 
     // Admin collection (alternate name used in Flutter admin service)

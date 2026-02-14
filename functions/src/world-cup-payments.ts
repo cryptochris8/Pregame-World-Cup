@@ -219,6 +219,17 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
       ? WORLD_CUP_PRICES.SUPERFAN_PASS
       : WORLD_CUP_PRICES.FAN_PASS;
 
+    // Determine success/cancel URLs
+    // If the client passes returnToApp flag, use deep link URLs so the browser
+    // redirects back into the app after checkout completes.
+    const useAppDeepLink = data.returnToApp === true;
+    const defaultSuccessUrl = useAppDeepLink
+      ? `https://pregameworldcup.com/purchase/success?source=stripe_checkout&status=success&session_id={CHECKOUT_SESSION_ID}`
+      : `https://pregame-b089e.web.app/purchase/success?session_id={CHECKOUT_SESSION_ID}`;
+    const defaultCancelUrl = useAppDeepLink
+      ? `https://pregameworldcup.com/purchase/cancel?source=stripe_checkout&status=cancelled`
+      : 'https://pregame-b089e.web.app/purchase/cancel';
+
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
@@ -229,8 +240,8 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
           quantity: 1,
         },
       ],
-      success_url: `${data.successUrl || 'https://pregame-b089e.web.app/purchase/success'}?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: data.cancelUrl || 'https://pregame-b089e.web.app/purchase/cancel',
+      success_url: data.successUrl || defaultSuccessUrl,
+      cancel_url: data.cancelUrl || defaultCancelUrl,
       metadata: {
         type: 'fan_pass',
         passType,
