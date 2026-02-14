@@ -232,11 +232,11 @@ class EnhancedSportsDataService {
           id: '${teamKey}_${playerId}',
           name: '$firstName $lastName',
           position: position,
-          playerClass: _getRandomClass(),
+          nationality: _getRandomNationality(),
           height: _getPositionHeight(position),
           weight: _getPositionWeight(position).toString(),
           number: jerseyNumber.toString(),
-          hometown: _getRandomHometown(),
+          club: _getRandomClub(),
           statistics: null, // Temporarily disabled - focusing on historical game analysis instead
         ));
         
@@ -292,9 +292,14 @@ class EnhancedSportsDataService {
     return names[index % names.length];
   }
   
-  String _getRandomClass() {
-    final classes = ['FR', 'SO', 'JR', 'SR', 'GR'];
-    return classes[DateTime.now().millisecond % classes.length];
+  String _getRandomNationality() {
+    final nationalities = [
+      'Brazil', 'Argentina', 'France', 'Germany', 'Spain',
+      'England', 'Portugal', 'Netherlands', 'Italy', 'Belgium',
+      'Colombia', 'Uruguay', 'Mexico', 'USA', 'Japan',
+      'South Korea', 'Morocco', 'Senegal', 'Nigeria', 'Croatia',
+    ];
+    return nationalities[DateTime.now().millisecond % nationalities.length];
   }
   
   String _getPositionHeight(String position) {
@@ -325,14 +330,14 @@ class EnhancedSportsDataService {
     }
   }
   
-  String _getRandomHometown() {
-    final hometowns = [
-      'Atlanta, GA', 'Miami, FL', 'Houston, TX', 'Birmingham, AL',
-      'Nashville, TN', 'Louisville, KY', 'Jackson, MS', 'New Orleans, LA',
-      'Tampa, FL', 'Memphis, TN', 'Little Rock, AR', 'Mobile, AL',
-      'Tallahassee, FL', 'Columbia, SC', 'Augusta, GA', 'Knoxville, TN'
+  String _getRandomClub() {
+    final clubs = [
+      'Real Madrid', 'Barcelona', 'Manchester City', 'Bayern Munich',
+      'PSG', 'Liverpool', 'Chelsea', 'Juventus', 'Inter Milan',
+      'Borussia Dortmund', 'Atletico Madrid', 'Arsenal',
+      'AC Milan', 'Napoli', 'Tottenham', 'Benfica',
     ];
-    return hometowns[DateTime.now().millisecond % hometowns.length];
+    return clubs[DateTime.now().millisecond % clubs.length];
   }
   
   Map<String, dynamic> _generatePlayerStats(String position) {
@@ -368,128 +373,6 @@ class EnhancedSportsDataService {
     }
   }
 
-  /// Get alternative team key formats to try if the primary fails
-  List<String> _getAlternativeTeamKeys(String primaryKey) {
-    // Common alternative formats for SportsData.io
-    final alternatives = <String>[];
-    
-    // Try common variations based on known patterns
-    final keyMappings = {
-      // SEC Teams
-      'BAMA': ['ALA', 'ALABAMA', 'BAMA'],
-      'UGA': ['GA', 'GEORGIA', 'UGA'],
-      'FLA': ['UF', 'FLORIDA', 'FLA'],
-      'TAMU': ['TAM', 'TXAM', 'TA&M', 'TAMU'],
-      'MIZ': ['MIZZ', 'MISSOURI', 'MIZ'],
-      'VAN': ['VANDY', 'VANDERBILT', 'VAN'],
-      'MSST': ['MSU', 'MISS-ST', 'MSST'],
-      'MISS': ['OLE-MISS', 'OLEMISS', 'MISS'],
-      'SC': ['SCAR', 'S-CAR', 'SC'],
-      'TENN': ['TN', 'TENNESSEE', 'TENN'],
-      'ARK': ['ARKANSAS', 'ARK'],
-      'AUB': ['AUBURN', 'AUB'],
-      'LSU': ['LSU'],
-      'UK': ['KENTUCKY', 'UK'],
-      
-      // Marshall alternatives
-      'MARS': ['MRSH', 'MARSHALL', 'MARS'],
-      'MRSH': ['MARS', 'MARSHALL', 'MRSH'],
-      
-      // Big Ten
-      'OSU': ['OHIO-ST', 'OHIOST', 'OSU'],
-      'MICH': ['MICHIGAN', 'MICH'],
-      'PSU': ['PENN-ST', 'PENNST', 'PSU'],
-      'MSU': ['MICH-ST', 'MICHST', 'MSU'],
-      'WIS': ['WISCONSIN', 'WIS'],
-      'IOWA': ['IOWA'],
-      'MINN': ['MINNESOTA', 'MINN'],
-      'ILL': ['ILLINOIS', 'ILL'],
-      'IND': ['INDIANA', 'IND'],
-      'MD': ['MARYLAND', 'MD'],
-      'NEB': ['NEBRASKA', 'NEB'],
-      'NW': ['NORTHWESTERN', 'NW'],
-      'PUR': ['PURDUE', 'PUR'],
-      'RU': ['RUTGERS', 'RU'],
-      
-      // ACC
-      'CLEM': ['CLEMSON', 'CLEM'],
-      'FSU': ['FLORIDA-ST', 'FLORIDAST', 'FSU'],
-      'MIA': ['MIAMI', 'MIA'],
-      'UNC': ['N-CAROLINA', 'NCAROLINA', 'UNC'],
-      'NCST': ['NC-STATE', 'NCSTATE', 'NCST'],
-      'DUKE': ['DUKE'],
-      'VT': ['VA-TECH', 'VATECH', 'VT'],
-      'UVA': ['VIRGINIA', 'UVA'],
-      'WF': ['WAKE-FOREST', 'WAKEFOREST', 'WF'],
-      'GT': ['GA-TECH', 'GATECH', 'GT'],
-      'BC': ['BOSTON-COL', 'BOSTONCOL', 'BC'],
-      'LOU': ['LOUISVILLE', 'LOU'],
-      'PITT': ['PITTSBURGH', 'PITT'],
-      'SYR': ['SYRACUSE', 'SYR'],
-      
-      // Big 12
-      'TEX': ['TEXAS', 'TEX'],
-      'OU': ['OKLAHOMA', 'OU'],
-      'OKST': ['OKLA-ST', 'OKLAST', 'OKST'],
-      'BAY': ['BAYLOR', 'BAY'],
-      'TCU': ['TCU'],
-      'TTU': ['TEXAS-TECH', 'TEXASTECH', 'TTU'],
-      'KU': ['KANSAS', 'KU'],
-      'KSU': ['KANSAS-ST', 'KANSASST', 'KSU'],
-      'ISU': ['IOWA-ST', 'IOWAST', 'ISU'],
-      'WVU': ['W-VIRGINIA', 'WVIRGINIA', 'WVU'],
-      
-      // Pac-12
-      'USC': ['S-CAL', 'SCAL', 'USC'],
-      'UCLA': ['UCLA'],
-      'ORE': ['OREGON', 'ORE'],
-      'ORST': ['OREGON-ST', 'OREGONST', 'ORST'],
-      'WASH': ['WASHINGTON', 'WASH'],
-      'WSU': ['WASH-ST', 'WASHST', 'WSU'],
-      'STAN': ['STANFORD', 'STAN'],
-      'CAL': ['CALIFORNIA', 'CAL'],
-      'ARIZ': ['ARIZONA', 'ARIZ'],
-      'ASU': ['ARIZONA-ST', 'ARIZONAST', 'ASU'],
-      'COL': ['COLORADO', 'COL'],
-      'UTAH': ['UTAH'],
-      
-      // Group of 5
-      'UCF': ['CENT-FLA', 'CENTFLA', 'UCF'],
-      'CIN': ['CINCINNATI', 'CIN'],
-      'HOU': ['HOUSTON', 'HOU'],
-      'MEM': ['MEMPHIS', 'MEM'],
-      'SMU': ['SMU'],
-      'NAVY': ['NAVY'],
-      'ARMY': ['ARMY'],
-      'AF': ['AIR-FORCE', 'AIRFORCE', 'AF'],
-      'BSU': ['BOISE-ST', 'BOISEST', 'BSU'],
-      'SDSU': ['SAN-DIEGO-ST', 'SANDIEGOST', 'SDSU'],
-      'FRES': ['FRESNO-ST', 'FRESNOST', 'FRES'],
-      'NEV': ['NEVADA', 'NEV'],
-      'UNLV': ['UNLV'],
-      
-      // Independent
-      'ND': ['NOTRE-DAME', 'NOTREDAME', 'ND'],
-      'BYU': ['BYU'],
-      'LIB': ['LIBERTY', 'LIB'],
-    };
-    
-    if (keyMappings.containsKey(primaryKey)) {
-      alternatives.addAll(keyMappings[primaryKey]!);
-    }
-    
-    // Try lowercase version
-    alternatives.add(primaryKey.toLowerCase());
-    
-    // Try uppercase version
-    alternatives.add(primaryKey.toUpperCase());
-    
-    // Remove duplicates and the primary key itself
-    final uniqueAlternatives = alternatives.toSet().where((key) => key != primaryKey).toList();
-    
-    return uniqueAlternatives;
-  }
-  
   /// Get specific player details from SportsData.io
   Future<Player?> _getSportsDataPlayer(String playerId, String teamKey) async {
     final players = await _getSportsDataRoster(teamKey);
@@ -499,34 +382,31 @@ class EnhancedSportsDataService {
   /// Parse player statistics from SportsData.io response
   PlayerStatistics? _parsePlayerStats(Map<String, dynamic> data) {
     return PlayerStatistics(
-      passing: PassingStats(
-        attempts: data['PassingAttempts']?.toInt() ?? 0,
-        completions: data['PassingCompletions']?.toInt() ?? 0,
-        yards: data['PassingYards']?.toInt() ?? 0,
-        touchdowns: data['PassingTouchdowns']?.toInt() ?? 0,
-        interceptions: data['PassingInterceptions']?.toInt() ?? 0,
-        rating: data['PassingRating']?.toDouble() ?? 0.0,
+      goalkeeper: GoalkeeperStats(
+        saves: data['Saves']?.toInt() ?? 0,
+        cleanSheets: data['CleanSheets']?.toInt() ?? 0,
+        goalsConceded: data['GoalsConceded']?.toInt() ?? 0,
+        savePercentage: data['SavePercentage']?.toDouble() ?? 0.0,
       ),
-      rushing: RushingStats(
-        attempts: data['RushingAttempts']?.toInt() ?? 0,
-        yards: data['RushingYards']?.toInt() ?? 0,
-        touchdowns: data['RushingTouchdowns']?.toInt() ?? 0,
-        average: data['RushingAverage']?.toDouble() ?? 0.0,
-        longRush: data['RushingLong']?.toInt() ?? 0,
+      attacking: AttackingStats(
+        goals: data['Goals']?.toInt() ?? 0,
+        assists: data['Assists']?.toInt() ?? 0,
+        shots: data['Shots']?.toInt() ?? 0,
+        shotsOnTarget: data['ShotsOnTarget']?.toInt() ?? 0,
+        minutesPlayed: data['MinutesPlayed']?.toInt() ?? 0,
       ),
-      receiving: ReceivingStats(
-        receptions: data['Receptions']?.toInt() ?? 0,
-        yards: data['ReceivingYards']?.toInt() ?? 0,
-        touchdowns: data['ReceivingTouchdowns']?.toInt() ?? 0,
-        average: data['ReceivingAverage']?.toDouble() ?? 0.0,
-        longReception: data['ReceivingLong']?.toInt() ?? 0,
+      creative: CreativeStats(
+        keyPasses: data['KeyPasses']?.toInt() ?? 0,
+        crosses: data['Crosses']?.toInt() ?? 0,
+        throughBalls: data['ThroughBalls']?.toInt() ?? 0,
+        chancesCreated: data['ChancesCreated']?.toInt() ?? 0,
       ),
-      defense: DefenseStats(
+      defensive: DefensiveStats(
         tackles: data['Tackles']?.toInt() ?? 0,
-        sacks: data['Sacks']?.toInt() ?? 0,
         interceptions: data['Interceptions']?.toInt() ?? 0,
-        passBreakups: data['PassBreakups']?.toInt() ?? 0,
-        forcedFumbles: data['ForcedFumbles']?.toInt() ?? 0,
+        clearances: data['Clearances']?.toInt() ?? 0,
+        blocks: data['Blocks']?.toInt() ?? 0,
+        aerialDuelsWon: data['AerialDuelsWon']?.toInt() ?? 0,
       ),
     );
   }
@@ -618,11 +498,11 @@ class EnhancedSportsDataService {
           id: athlete['id']?.toString() ?? '',
           name: athlete['displayName'] ?? 'Unknown Player',
           position: athlete['position']?['abbreviation'] ?? 'N/A',
-          playerClass: athlete['experience']?['abbreviation'] ?? 'N/A',
+          nationality: athlete['citizenship']?.toString() ?? athlete['birthPlace']?['country']?.toString() ?? 'N/A',
           height: athlete['height']?.toString() ?? 'N/A',
           weight: athlete['weight']?.toString() ?? 'N/A',
           number: athlete['jersey']?.toString() ?? 'N/A',
-          hometown: '${athlete['birthPlace']?['city'] ?? ''}, ${athlete['birthPlace']?['state'] ?? ''}',
+          club: athlete['team']?['displayName']?.toString() ?? 'N/A',
         )).toList();
       }
       

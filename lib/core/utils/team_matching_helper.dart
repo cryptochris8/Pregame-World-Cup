@@ -1,159 +1,183 @@
-/// Utility class for matching team names between API responses and user favorites
-/// Handles both full team names and short API keys
+/// Utility class for matching team names between API responses and user favorites.
+///
+/// For World Cup 2026 the favorite team names are full country names
+/// (e.g., "United States", "Brazil"). This helper handles common aliases,
+/// short FIFA codes, and case-insensitive matching so that schedule data
+/// from various sources can be reliably compared against the user's list.
 class TeamMatchingHelper {
-  
-  /// Legacy team API key mappings - to be replaced with World Cup 2026 teams
-  static const Map<String, List<String>> _secTeamKeyMappings = {
-    'ala': ['alabama', 'crimson tide'],
-    'aubrn': ['auburn', 'tigers'],
-    'ark': ['arkansas', 'razorbacks'],
-    'fl': ['florida', 'gators'],
-    'ga': ['georgia', 'bulldogs'],
-    'uk': ['kentucky', 'wildcats'],
-    'lsu': ['lsu', 'tigers'],
-    'mspst': ['mississippi state', 'bulldogs', 'miss state'],
-    'missr': ['missouri', 'tigers'],
-    'miss': ['ole miss', 'rebels', 'mississippi'],
-    'sc': ['south carolina', 'gamecocks'],
-    'tenn': ['tennessee', 'volunteers', 'vols'],
-    'txam': ['texas a&m', 'aggies', 'tamu'],
-    'vand': ['vanderbilt', 'commodores'],
+
+  /// Maps lowercase aliases/codes to the canonical country name used in favorites.
+  static const Map<String, String> _aliasToCanonical = {
+    // CONCACAF
+    'usa': 'United States',
+    'united states': 'United States',
+    'us': 'United States',
+    'usmnt': 'United States',
+    'mexico': 'Mexico',
+    'mex': 'Mexico',
+    'el tri': 'Mexico',
+    'canada': 'Canada',
+    'can': 'Canada',
+    'costa rica': 'Costa Rica',
+    'crc': 'Costa Rica',
+    'honduras': 'Honduras',
+    'hon': 'Honduras',
+    'jamaica': 'Jamaica',
+    'jam': 'Jamaica',
+    'panama': 'Panama',
+    'pan': 'Panama',
+
+    // CONMEBOL
+    'argentina': 'Argentina',
+    'arg': 'Argentina',
+    'la albiceleste': 'Argentina',
+    'bolivia': 'Bolivia',
+    'bol': 'Bolivia',
+    'brazil': 'Brazil',
+    'bra': 'Brazil',
+    'brasil': 'Brazil',
+    'chile': 'Chile',
+    'chi': 'Chile',
+    'colombia': 'Colombia',
+    'col': 'Colombia',
+    'ecuador': 'Ecuador',
+    'ecu': 'Ecuador',
+    'paraguay': 'Paraguay',
+    'par': 'Paraguay',
+    'peru': 'Peru',
+    'per': 'Peru',
+    'uruguay': 'Uruguay',
+    'uru': 'Uruguay',
+    'venezuela': 'Venezuela',
+    'ven': 'Venezuela',
+
+    // UEFA
+    'albania': 'Albania',
+    'alb': 'Albania',
+    'austria': 'Austria',
+    'aut': 'Austria',
+    'belgium': 'Belgium',
+    'bel': 'Belgium',
+    'croatia': 'Croatia',
+    'cro': 'Croatia',
+    'denmark': 'Denmark',
+    'den': 'Denmark',
+    'england': 'England',
+    'eng': 'England',
+    'france': 'France',
+    'fra': 'France',
+    'germany': 'Germany',
+    'ger': 'Germany',
+    'netherlands': 'Netherlands',
+    'ned': 'Netherlands',
+    'holland': 'Netherlands',
+    'poland': 'Poland',
+    'pol': 'Poland',
+    'portugal': 'Portugal',
+    'por': 'Portugal',
+    'scotland': 'Scotland',
+    'sco': 'Scotland',
+    'serbia': 'Serbia',
+    'srb': 'Serbia',
+    'spain': 'Spain',
+    'esp': 'Spain',
+    'switzerland': 'Switzerland',
+    'sui': 'Switzerland',
+    'turkey': 'Turkey',
+    'tur': 'Turkey',
+    'turkiye': 'Turkey',
+    'ukraine': 'Ukraine',
+    'ukr': 'Ukraine',
+    'wales': 'Wales',
+    'wal': 'Wales',
+
+    // AFC
+    'australia': 'Australia',
+    'aus': 'Australia',
+    'iran': 'Iran',
+    'irn': 'Iran',
+    'ir iran': 'Iran',
+    'iraq': 'Iraq',
+    'irq': 'Iraq',
+    'japan': 'Japan',
+    'jpn': 'Japan',
+    'saudi arabia': 'Saudi Arabia',
+    'ksa': 'Saudi Arabia',
+    'south korea': 'South Korea',
+    'kor': 'South Korea',
+    'korea republic': 'South Korea',
+    'korea': 'South Korea',
+    'qatar': 'Qatar',
+    'qat': 'Qatar',
+    'uzbekistan': 'Uzbekistan',
+    'uzb': 'Uzbekistan',
+
+    // CAF
+    'cameroon': 'Cameroon',
+    'cmr': 'Cameroon',
+    'egypt': 'Egypt',
+    'egy': 'Egypt',
+    'morocco': 'Morocco',
+    'mar': 'Morocco',
+    'nigeria': 'Nigeria',
+    'nga': 'Nigeria',
+    'senegal': 'Senegal',
+    'sen': 'Senegal',
+
+    // OFC
+    'new zealand': 'New Zealand',
+    'nzl': 'New Zealand',
   };
 
-  /// Full team name mappings for additional flexibility
-  /// Each team requires BOTH school name AND mascot to match to prevent false positives
-  static const Map<String, List<String>> _teamNameMappings = {
-    'alabama': ['alabama crimson tide', 'alabama', 'crimson tide'],
-    'arkansas': ['arkansas razorbacks', 'arkansas', 'razorbacks'],
-    'auburn': ['auburn tigers', 'auburn', 'tigers'],
-    'florida': ['florida gators', 'florida', 'gators'],
-    'georgia': ['georgia bulldogs', 'georgia', 'bulldogs'],
-    'kentucky': ['kentucky wildcats', 'kentucky', 'wildcats'],
-    'lsu': ['lsu tigers', 'lsu', 'tigers'],
-    'mississippi state': ['mississippi state bulldogs', 'mississippi state', 'bulldogs', 'miss state'],
-    'missouri': ['missouri tigers', 'missouri', 'tigers'],
-    'oklahoma': ['oklahoma sooners', 'oklahoma', 'sooners'],
-    'ole miss': ['ole miss rebels', 'ole miss', 'rebels', 'mississippi'],
-    'south carolina': ['south carolina gamecocks', 'south carolina', 'gamecocks'],
-    'tennessee': ['tennessee volunteers', 'tennessee', 'volunteers', 'vols'],
-    'texas a&m': ['texas a&m aggies', 'texas a&m', 'aggies', 'tamu'],
-    'texas': ['texas longhorns', 'texas', 'longhorns'],
-    'vanderbilt': ['vanderbilt commodores', 'vanderbilt', 'commodores'],
-  };
-
-  /// Matches an API team name (could be short key or full name) against a favorite team name
-  /// Returns true if they represent the same team
+  /// Returns true if [apiTeamName] and [favoriteTeamName] refer to the same team.
   static bool teamNamesMatch(String apiTeamName, String favoriteTeamName) {
-    final apiLower = apiTeamName.toLowerCase();
-    final favLower = favoriteTeamName.toLowerCase();
-    
+    final apiLower = apiTeamName.toLowerCase().trim();
+    final favLower = favoriteTeamName.toLowerCase().trim();
+
     // Direct match
     if (apiLower == favLower) return true;
-    
-    // Check if API team name is a short key that matches a favorite
-    for (String key in _secTeamKeyMappings.keys) {
-      if (apiLower == key) {
-        final identifiers = _secTeamKeyMappings[key]!;
-        bool favMatches = identifiers.any((id) => favLower.contains(id));
-        if (favMatches) {
-          return true;
-        }
-      }
+
+    // Resolve both sides to canonical names and compare
+    final apiCanonical = _aliasToCanonical[apiLower];
+    final favCanonical = _aliasToCanonical[favLower];
+
+    if (apiCanonical != null && favCanonical != null) {
+      return apiCanonical == favCanonical;
     }
-    
-    // Check for key team identifiers (full team names)
-    // Both names must match identifiers for the SAME team to avoid false matches
-    for (String key in _teamNameMappings.keys) {
-      final identifiers = _teamNameMappings[key]!;
-      
-      // For a match, we need either:
-      // 1. Full team name match (first identifier is always the full name)
-      // 2. School name match (second identifier) + some other confirmation
-      
-      final fullName = identifiers[0]; // e.g., "alabama crimson tide"
-      final schoolName = identifiers[1]; // e.g., "alabama"
-      
-      // Check for full team name match first (most reliable)
-      if (apiLower.contains(fullName) && favLower.contains(fullName)) {
-        return true;
-      }
-      
-      // Check if both contain the school name (primary identifier)
-      if (apiLower.contains(schoolName) && favLower.contains(schoolName)) {
-        // Additional validation to ensure it's really the same school
-        // This prevents "Georgia" from matching "Georgia Southern" etc.
-        bool apiIsExactSchoolMatch = _isExactSchoolMatch(apiLower, schoolName, identifiers);
-        bool favIsExactSchoolMatch = _isExactSchoolMatch(favLower, schoolName, identifiers);
-        
-        if (apiIsExactSchoolMatch && favIsExactSchoolMatch) {
-          return true;
-        }
-      }
+
+    // One side resolved, compare with the other's raw value
+    if (apiCanonical != null) {
+      return apiCanonical.toLowerCase() == favLower;
     }
-    
+    if (favCanonical != null) {
+      return favCanonical.toLowerCase() == apiLower;
+    }
+
+    // Substring containment as last resort (e.g., "Korea Republic" contains "Korea")
+    if (apiLower.contains(favLower) || favLower.contains(apiLower)) {
+      return true;
+    }
+
     return false;
   }
 
-  /// Check if a team name is in the favorites list using flexible matching
+  /// Check if [teamName] is in the [favoriteTeams] list using flexible matching.
   static bool isTeamInFavorites(String teamName, List<String> favoriteTeams) {
-    // Direct match first
-    if (favoriteTeams.contains(teamName)) {
-      return true;
-    }
-    
-    // Flexible matching - check if any favorite team name contains the team name or vice versa
-    for (String favoriteTeam in favoriteTeams) {
+    // Fast exact match first
+    if (favoriteTeams.contains(teamName)) return true;
+
+    for (final favoriteTeam in favoriteTeams) {
       if (teamNamesMatch(teamName, favoriteTeam)) {
         return true;
       }
     }
-    
+
     return false;
   }
 
-  /// Helper method to validate that a school name match is exact and not a partial match
-  static bool _isExactSchoolMatch(String teamName, String schoolName, List<String> identifiers) {
-    // For very specific schools like "Georgia", ensure it's not "Georgia Southern", "Georgia Tech", etc.
-    if (schoolName == 'georgia') {
-      return !teamName.contains('georgia tech') && 
-             !teamName.contains('georgia southern') && 
-             !teamName.contains('georgia state');
-    }
-    
-    // For "Texas", ensure it's not "Texas Tech", "Texas State", etc.
-    if (schoolName == 'texas') {
-      return !teamName.contains('texas tech') && 
-             !teamName.contains('texas state') && 
-             !teamName.contains('texas san antonio') &&
-             !teamName.contains('texas el paso');
-    }
-    
-    // For "Mississippi", ensure proper differentiation
-    if (schoolName == 'mississippi state') {
-      return teamName.contains('mississippi state') || teamName.contains('miss state');
-    }
-    
-    // For other schools, check if mascot is also present (more confident match)
-    if (identifiers.length > 2) {
-      final mascot = identifiers[2]; // Third element is usually mascot
-      return teamName.contains(mascot);
-    }
-    
-    return true; // Default to allowing the match
-  }
-
-  /// Get the full team name from an API short key
+  /// Get the canonical team name from an API key or alias.
+  /// Returns null if not recognized.
   static String? getFullTeamName(String apiKey) {
-    final keyLower = apiKey.toLowerCase();
-    
-    for (String key in _secTeamKeyMappings.keys) {
-      if (keyLower == key) {
-        final identifiers = _secTeamKeyMappings[key]!;
-        // Return the first identifier which should be the school name
-        return identifiers.first;
-      }
-    }
-    
-    return null; // Not a recognized SEC team key
+    return _aliasToCanonical[apiKey.toLowerCase().trim()];
   }
-} 
+}

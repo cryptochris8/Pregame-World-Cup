@@ -576,55 +576,55 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     _keyFactors.clear();
 
     if (_homeTeamStats != null && _awayTeamStats != null) {
-      final homeOffense = _homeTeamStats!.offense;
+      final homeAttack = _homeTeamStats!.attack;
       final awayDefense = _awayTeamStats!.defense;
-      final awayOffense = _awayTeamStats!.offense;
+      final awayAttack = _awayTeamStats!.attack;
       final homeDefense = _homeTeamStats!.defense;
 
-      if (homeOffense.offensiveStyle == 'Pass Heavy' && awayDefense.defensiveStrength == 'Strong Pass Defense') {
+      if (homeAttack.attackingStyle == 'Possession-Based' && awayDefense.defensiveStrength == 'Aggressive Defense') {
         _keyFactors.add({
-          'title': 'Aerial Battle',
-          'description': '${widget.game.homeTeamName}\'s pass-heavy offense faces ${widget.game.awayTeamName}\'s strong pass defense',
-          'advantage': 'Defense',
-          'icon': Icons.flight_takeoff,
+          'title': 'Tactical Battle',
+          'description': '${widget.game.homeTeamName}\'s possession game faces ${widget.game.awayTeamName}\'s aggressive pressing',
+          'advantage': 'Tactical',
+          'icon': Icons.sports_soccer,
         });
       }
 
-      final homeForcedTurnovers = homeDefense.turnoversForced;
-      final awayForcedTurnovers = awayDefense.turnoversForced;
+      final homeDefActions = homeDefense.defensiveActionsPerGame;
+      final awayDefActions = awayDefense.defensiveActionsPerGame;
 
-      if (homeForcedTurnovers > 2.0 || awayForcedTurnovers > 2.0) {
+      if (homeDefActions > 25.0 || awayDefActions > 25.0) {
         _keyFactors.add({
-          'title': 'Turnover Battle',
-          'description': 'Both teams create turnovers - this could determine the game',
-          'advantage': homeForcedTurnovers > awayForcedTurnovers ? widget.game.homeTeamName : widget.game.awayTeamName,
-          'icon': Icons.swap_horiz,
+          'title': 'Defensive Intensity',
+          'description': 'Both teams are defensively active - expect a physical match',
+          'advantage': homeDefActions > awayDefActions ? widget.game.homeTeamName : widget.game.awayTeamName,
+          'icon': Icons.shield,
         });
       }
 
-      final homeRedZone = homeOffense.redZoneEfficiency;
-      final awayRedZone = awayOffense.redZoneEfficiency;
+      final homePossession = homeAttack.possession;
+      final awayPossession = awayAttack.possession;
 
-      if ((homeRedZone - awayRedZone).abs() > 0.15) {
-        final betterTeam = homeRedZone > awayRedZone ? widget.game.homeTeamName : widget.game.awayTeamName;
+      if ((homePossession - awayPossession).abs() > 10.0) {
+        final betterTeam = homePossession > awayPossession ? widget.game.homeTeamName : widget.game.awayTeamName;
         _keyFactors.add({
-          'title': 'Red Zone Efficiency',
-          'description': '$betterTeam has a significant advantage in red zone scoring',
+          'title': 'Possession Battle',
+          'description': '$betterTeam has a significant possession advantage',
           'advantage': betterTeam,
-          'icon': Icons.flag,
+          'icon': Icons.pie_chart,
         });
       }
 
-      final homeSpecial = _homeTeamStats!.special;
-      final awaySpecial = _awayTeamStats!.special;
+      final homeSetPieces = _homeTeamStats!.setPieces;
+      final awaySetPieces = _awayTeamStats!.setPieces;
 
-      if ((homeSpecial.efficiency - awaySpecial.efficiency).abs() > 15) {
-        final betterTeam = homeSpecial.efficiency > awaySpecial.efficiency ? widget.game.homeTeamName : widget.game.awayTeamName;
+      if ((homeSetPieces.efficiency - awaySetPieces.efficiency).abs() > 15) {
+        final betterTeam = homeSetPieces.efficiency > awaySetPieces.efficiency ? widget.game.homeTeamName : widget.game.awayTeamName;
         _keyFactors.add({
-          'title': 'Special Teams Edge',
-          'description': '$betterTeam has superior special teams play',
+          'title': 'Set Piece Threat',
+          'description': '$betterTeam is more dangerous from set pieces',
           'advantage': betterTeam,
-          'icon': Icons.sports_football,
+          'icon': Icons.sports_soccer,
         });
       }
     }

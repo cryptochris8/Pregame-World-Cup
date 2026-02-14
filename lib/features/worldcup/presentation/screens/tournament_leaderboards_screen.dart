@@ -4,6 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../data/services/player_service.dart';
 import '../../../../domain/models/player.dart';
+import '../../../../presentation/screens/player_spotlight_screen.dart';
 
 /// Screen displaying tournament leaderboards
 /// Shows top scorers, assists, most capped players, etc.
@@ -303,7 +304,12 @@ class _TournamentLeaderboardsScreenState
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            // TODO: Navigate to player detail
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => PlayerDetailScreen(player: player),
+              ),
+            );
           },
           borderRadius: BorderRadius.circular(16),
           child: Padding(

@@ -2,26 +2,66 @@ import 'package:flutter/material.dart';
 import 'package:pregame_world_cup/features/auth/domain/services/auth_service.dart';
 import 'package:pregame_world_cup/injection_container.dart';
 import 'package:pregame_world_cup/config/theme_helper.dart';
+import 'package:pregame_world_cup/core/utils/team_logo_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-// TODO: Later, replace this with a dynamic list fetched from a data source
-const List<String> secTeams = [
-  'Alabama Crimson Tide',
-  'Arkansas Razorbacks',
-  'Auburn Tigers',
-  'Florida Gators',
-  'Georgia Bulldogs',
-  'Kentucky Wildcats',
-  'LSU Tigers',
-  'Mississippi State Bulldogs',
-  'Missouri Tigers',
-  'Oklahoma Sooners', // New addition
-  'Ole Miss Rebels',
-  'South Carolina Gamecocks',
-  'Tennessee Volunteers',
-  'Texas A&M Aggies',
-  'Texas Longhorns', // New addition
-  'Vanderbilt Commodores',
+/// All 48 FIFA World Cup 2026 qualified national teams, grouped by confederation.
+const List<String> worldCupTeams = [
+  // CONCACAF (Host nations first)
+  'United States',
+  'Mexico',
+  'Canada',
+  'Costa Rica',
+  'Honduras',
+  'Jamaica',
+  'Panama',
+  // CONMEBOL
+  'Argentina',
+  'Bolivia',
+  'Brazil',
+  'Chile',
+  'Colombia',
+  'Ecuador',
+  'Paraguay',
+  'Peru',
+  'Uruguay',
+  'Venezuela',
+  // UEFA
+  'Albania',
+  'Austria',
+  'Belgium',
+  'Croatia',
+  'Denmark',
+  'England',
+  'France',
+  'Germany',
+  'Netherlands',
+  'Poland',
+  'Portugal',
+  'Scotland',
+  'Serbia',
+  'Spain',
+  'Switzerland',
+  'Turkey',
+  'Ukraine',
+  'Wales',
+  // AFC
+  'Australia',
+  'Iran',
+  'Iraq',
+  'Japan',
+  'Saudi Arabia',
+  'South Korea',
+  'Qatar',
+  'Uzbekistan',
+  // CAF
+  'Cameroon',
+  'Egypt',
+  'Morocco',
+  'Nigeria',
+  'Senegal',
+  // OFC
+  'New Zealand',
 ];
 
 class FavoriteTeamsScreen extends StatefulWidget {
@@ -47,7 +87,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
   Future<void> _loadFavoriteTeams() async {
     setState(() => _isLoading = true);
     _errorMessage = null;
-    
+
     try {
       final userId = _authService.currentUser?.uid;
       if (userId != null) {
@@ -65,22 +105,20 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
           if (mounted) {
             setState(() {
               _selectedTeams = localFavorites;
-              // Don't show error - local storage works fine
               _errorMessage = null;
             });
           }
         }
-              } else {
-          // User not logged in, use local storage
-          List<String> localFavorites = await _loadFromLocalStorage();
-          if (mounted) {
-            setState(() {
-              _selectedTeams = localFavorites;
-              // Don't show any message - local storage works seamlessly
-              _errorMessage = null;
-            });
-          }
+      } else {
+        // User not logged in, use local storage
+        List<String> localFavorites = await _loadFromLocalStorage();
+        if (mounted) {
+          setState(() {
+            _selectedTeams = localFavorites;
+            _errorMessage = null;
+          });
         }
+      }
     } catch (e) {
       if (mounted) {
         setState(() => _errorMessage = "Could not load saved favorites. You can still select teams below.");
@@ -96,13 +134,13 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
   Future<void> _saveFavoriteTeams() async {
     setState(() => _isLoading = true);
     _errorMessage = null;
-    
+
     try {
       final userId = _authService.currentUser?.uid;
-      
+
       // Always save to local storage first
       await _saveToLocalStorage(_selectedTeams);
-      
+
       if (userId != null) {
         // Try to save to Firebase
         try {
@@ -110,7 +148,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: const Text('✅ Favorite teams saved & synced!'),
+                content: const Text('Favorite teams saved & synced!'),
                 backgroundColor: Colors.green,
                 duration: const Duration(seconds: 2),
               ),
@@ -120,7 +158,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: const Text('✅ Favorite teams saved!'),
+                content: const Text('Favorite teams saved!'),
                 backgroundColor: Colors.green,
                 duration: const Duration(seconds: 2),
               ),
@@ -131,14 +169,14 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: const Text('✅ Favorite teams saved!'),
+              content: const Text('Favorite teams saved!'),
               backgroundColor: Colors.green,
               duration: const Duration(seconds: 2),
             ),
           );
         }
       }
-      
+
       // Return the selected teams to the previous screen
       if (mounted) {
         Navigator.pop(context, _selectedTeams);
@@ -165,7 +203,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setStringList('favorite_teams', favorites);
     } catch (e) {
-      // Error handled silently
+      // Silently handled; local storage is best-effort
     }
   }
 
@@ -175,7 +213,6 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
       final prefs = await SharedPreferences.getInstance();
       return prefs.getStringList('favorite_teams') ?? [];
     } catch (e) {
-      // Error handled silently
       return [];
     }
   }
@@ -183,7 +220,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0F172A), // Deep dark background
+      backgroundColor: const Color(0xFF0F172A),
       appBar: AppBar(
         backgroundColor: ThemeHelper.primaryColor(context),
         foregroundColor: Colors.white,
@@ -197,14 +234,14 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                 height: 40,
                 fit: BoxFit.contain,
                 errorBuilder: (context, error, stackTrace) {
-                  return Icon(Icons.sports_football, color: ThemeHelper.favoriteColor, size: 40);
+                  return Icon(Icons.sports_soccer, color: ThemeHelper.favoriteColor, size: 40);
                 },
               ),
             ),
             const SizedBox(width: 8),
             const Expanded(
               child: Text(
-                'Select Favorite SEC Teams',
+                'Select Favorite Teams',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -225,8 +262,8 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
               padding: const EdgeInsets.only(right: 16.0),
               child: Center(
                 child: SizedBox(
-                  width: 20, 
-                  height: 20, 
+                  width: 20,
+                  height: 20,
                   child: CircularProgressIndicator(
                     strokeWidth: 2,
                     color: ThemeHelper.favoriteColor,
@@ -301,22 +338,27 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                 Expanded(
                   child: ListView.builder(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    itemCount: secTeams.length,
+                    itemCount: worldCupTeams.length,
                     itemBuilder: (context, index) {
-                      final team = secTeams[index];
+                      final team = worldCupTeams[index];
                       final isSelected = _selectedTeams.contains(team);
                       return Container(
                         margin: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 8.0),
                         decoration: BoxDecoration(
-                          color: isSelected 
+                          color: isSelected
                               ? ThemeHelper.favoriteColor.withOpacity(0.1)
                               : const Color(0xFF1E293B),
                           borderRadius: BorderRadius.circular(12),
-                          border: isSelected 
+                          border: isSelected
                               ? Border.all(color: ThemeHelper.favoriteColor, width: 2)
                               : Border.all(color: Colors.white.withOpacity(0.1), width: 1),
                         ),
                         child: CheckboxListTile(
+                          secondary: TeamLogoHelper.getTeamLogoWidget(
+                            teamName: team,
+                            size: 28,
+                            fallbackColor: isSelected ? ThemeHelper.favoriteColor : Colors.white70,
+                          ),
                           title: Text(
                             team,
                             style: const TextStyle(
@@ -348,4 +390,4 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
             ),
     );
   }
-} 
+}

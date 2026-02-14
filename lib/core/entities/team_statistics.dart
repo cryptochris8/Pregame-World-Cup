@@ -1,246 +1,249 @@
-/// Team statistics entity for comprehensive team performance analysis
+/// Team statistics entity for comprehensive World Cup team performance analysis
 /// Used in Enhanced AI Analysis for team comparisons
 class TeamStatistics {
   final String teamId;
   final String teamName;
-  final OffensiveStats offense;
-  final DefensiveStats defense;
-  final SpecialTeamsStats special;
+  final AttackStats attack;
+  final DefenseStats defense;
+  final SetPieceStats setPieces;
   final String record;
-  final int ranking;
-  
+  final int fifaRanking;
+
   const TeamStatistics({
     required this.teamId,
     required this.teamName,
-    required this.offense,
+    required this.attack,
     required this.defense,
-    required this.special,
+    required this.setPieces,
     required this.record,
-    required this.ranking,
+    required this.fifaRanking,
   });
-  
+
   /// Create TeamStatistics from API response
   factory TeamStatistics.fromApi(Map<String, dynamic> json) {
     return TeamStatistics(
       teamId: json['teamId']?.toString() ?? '',
       teamName: json['teamName'] ?? 'Unknown Team',
-      offense: OffensiveStats.fromJson(json['offense'] ?? {}),
-      defense: DefensiveStats.fromJson(json['defense'] ?? {}),
-      special: SpecialTeamsStats.fromJson(json['special'] ?? {}),
-      record: json['record'] ?? '0-0',
-      ranking: (json['ranking'] ?? 0) as int,
+      attack: AttackStats.fromJson(json['attack'] ?? json['offense'] ?? {}),
+      defense: DefenseStats.fromJson(json['defense'] ?? {}),
+      setPieces: SetPieceStats.fromJson(json['setPieces'] ?? json['special'] ?? {}),
+      record: json['record'] ?? '0-0-0',
+      fifaRanking: (json['fifaRanking'] ?? json['ranking'] ?? 0) as int,
     );
   }
-  
+
   /// Get overall team efficiency rating (custom metric)
+  /// Weighted: attack 40%, defense 40%, set pieces 20% (soccer is more balanced)
   double get overallEfficiency {
-    final offenseRating = offense.efficiency;
+    final attackRating = attack.efficiency;
     final defenseRating = defense.efficiency;
-    final specialRating = special.efficiency;
-    
-    return (offenseRating * 0.5) + (defenseRating * 0.4) + (specialRating * 0.1);
+    final setPieceRating = setPieces.efficiency;
+
+    return (attackRating * 0.4) + (defenseRating * 0.4) + (setPieceRating * 0.2);
   }
-  
-  /// Get win percentage from record
+
+  /// Get win percentage from record (W-D-L format for soccer)
   double get winPercentage {
     final parts = record.split('-');
     if (parts.length >= 2) {
       final wins = int.tryParse(parts[0]) ?? 0;
-      final losses = int.tryParse(parts[1]) ?? 0;
-      final totalGames = wins + losses;
+      final draws = parts.length >= 3 ? (int.tryParse(parts[1]) ?? 0) : 0;
+      final losses = int.tryParse(parts.length >= 3 ? parts[2] : parts[1]) ?? 0;
+      final totalGames = wins + draws + losses;
       return totalGames > 0 ? wins / totalGames : 0.0;
     }
     return 0.0;
   }
-  
-  /// Check if team is ranked
-  bool get isRanked => ranking > 0 && ranking <= 25;
-  
+
+  /// Get points per game (3 for win, 1 for draw)
+  double get pointsPerGame {
+    final parts = record.split('-');
+    if (parts.length >= 3) {
+      final wins = int.tryParse(parts[0]) ?? 0;
+      final draws = int.tryParse(parts[1]) ?? 0;
+      final losses = int.tryParse(parts[2]) ?? 0;
+      final totalGames = wins + draws + losses;
+      final totalPoints = (wins * 3) + draws;
+      return totalGames > 0 ? totalPoints / totalGames : 0.0;
+    }
+    return 0.0;
+  }
+
+  /// Check if team is in the FIFA top 20
+  bool get isTopRanked => fifaRanking > 0 && fifaRanking <= 20;
+
   /// Get formatted ranking display
-  String get rankingDisplay => isRanked ? '#$ranking' : 'Unranked';
+  String get rankingDisplay => fifaRanking > 0 ? 'FIFA #$fifaRanking' : 'Unranked';
 }
 
-/// Offensive statistics for team performance
-class OffensiveStats {
-  final double totalYards;
-  final double passingYards;
-  final double rushingYards;
-  final double pointsPerGame;
-  final double thirdDownConversion;
-  final double redZoneEfficiency;
-  final double yardsPerPlay;
-  final double turnoversPerGame;
-  
-  const OffensiveStats({
-    required this.totalYards,
-    required this.passingYards,
-    required this.rushingYards,
-    required this.pointsPerGame,
-    required this.thirdDownConversion,
-    required this.redZoneEfficiency,
-    required this.yardsPerPlay,
-    required this.turnoversPerGame,
+/// Attack statistics for team performance in soccer
+class AttackStats {
+  final double goalsScored;
+  final double shotsPerGame;
+  final double possession;
+  final double passAccuracy;
+  final double chancesCreated;
+
+  const AttackStats({
+    required this.goalsScored,
+    required this.shotsPerGame,
+    required this.possession,
+    required this.passAccuracy,
+    required this.chancesCreated,
   });
-  
-  factory OffensiveStats.fromJson(Map<String, dynamic> json) {
-    return OffensiveStats(
-      totalYards: (json['totalYards'] ?? 0.0) as double,
-      passingYards: (json['passingYards'] ?? 0.0) as double,
-      rushingYards: (json['rushingYards'] ?? 0.0) as double,
-      pointsPerGame: (json['pointsPerGame'] ?? 0.0) as double,
-      thirdDownConversion: (json['thirdDownConversion'] ?? 0.0) as double,
-      redZoneEfficiency: (json['redZoneEfficiency'] ?? 0.0) as double,
-      yardsPerPlay: (json['yardsPerPlay'] ?? 0.0) as double,
-      turnoversPerGame: (json['turnoversPerGame'] ?? 0.0) as double,
+
+  factory AttackStats.fromJson(Map<String, dynamic> json) {
+    return AttackStats(
+      goalsScored: _toDouble(json['goalsScored']),
+      shotsPerGame: _toDouble(json['shotsPerGame']),
+      possession: _toDouble(json['possession']),
+      passAccuracy: _toDouble(json['passAccuracy']),
+      chancesCreated: _toDouble(json['chancesCreated']),
     );
   }
-  
-  /// Get offensive balance (0.5 = perfectly balanced, closer to 0 = run heavy, closer to 1 = pass heavy)
-  double get offensiveBalance {
-    final totalOffense = passingYards + rushingYards;
-    return totalOffense > 0 ? passingYards / totalOffense : 0.5;
+
+  static double _toDouble(dynamic value) {
+    if (value == null) return 0.0;
+    if (value is double) return value;
+    if (value is int) return value.toDouble();
+    if (value is String) return double.tryParse(value) ?? 0.0;
+    return 0.0;
   }
-  
-  /// Get overall offensive efficiency rating (0-100)
-  double get efficiency {
-    // Custom formula considering multiple factors
-    final pointsRating = (pointsPerGame / 50.0) * 100; // Max 50 PPG = 100%
-    final yardsRating = (totalYards / 500.0) * 100; // Max 500 YPG = 100%
-    final thirdDownRating = thirdDownConversion * 100;
-    final redZoneRating = redZoneEfficiency * 100;
-    final turnoverPenalty = turnoversPerGame * 10; // Penalty for turnovers
-    
-    final baseRating = (pointsRating * 0.4) + (yardsRating * 0.3) + 
-                      (thirdDownRating * 0.2) + (redZoneRating * 0.1);
-    
-    return (baseRating - turnoverPenalty).clamp(0.0, 100.0);
-  }
-  
-  /// Get offensive style description
-  String get offensiveStyle {
-    final balance = offensiveBalance;
-    if (balance > 0.65) return 'Pass Heavy';
-    if (balance < 0.35) return 'Run Heavy';
+
+  /// Get attacking style description based on possession and shots
+  String get attackingStyle {
+    if (possession > 60.0) return 'Possession-Based';
+    if (shotsPerGame > 15.0 && possession < 45.0) return 'Counter-Attacking';
+    if (possession < 40.0) return 'Defensive / Counter';
     return 'Balanced';
   }
+
+  /// Get shot conversion rate (goals per shots)
+  double get conversionRate {
+    return shotsPerGame > 0 ? (goalsScored / shotsPerGame) * 100 : 0.0;
+  }
+
+  /// Get overall attacking efficiency rating (0-100)
+  double get efficiency {
+    // Soccer-appropriate formula
+    final goalsRating = (goalsScored / 3.0) * 100; // 3 goals/game = 100%
+    final possessionRating = possession; // Already 0-100 scale
+    final accuracyRating = passAccuracy; // Already 0-100 scale
+    final shotsRating = (shotsPerGame / 20.0) * 100; // 20 shots/game = 100%
+    final chancesRating = (chancesCreated / 15.0) * 100; // 15 chances/game = 100%
+
+    final baseRating = (goalsRating * 0.35) + (possessionRating * 0.20) +
+                      (accuracyRating * 0.20) + (shotsRating * 0.10) +
+                      (chancesRating * 0.15);
+
+    return baseRating.clamp(0.0, 100.0);
+  }
 }
 
-/// Defensive statistics for team performance
-class DefensiveStats {
-  final double totalYardsAllowed;
-  final double passingYardsAllowed;
-  final double rushingYardsAllowed;
-  final double pointsAllowedPerGame;
-  final double sacks;
+/// Defense statistics for team performance in soccer
+class DefenseStats {
+  final double goalsConceded;
+  final double cleanSheets;
+  final double tacklesPerGame;
   final double interceptions;
-  final double forcedFumbles;
-  final double thirdDownDefense;
-  final double redZoneDefense;
-  
-  const DefensiveStats({
-    required this.totalYardsAllowed,
-    required this.passingYardsAllowed,
-    required this.rushingYardsAllowed,
-    required this.pointsAllowedPerGame,
-    required this.sacks,
+  final double savesPerGame;
+
+  const DefenseStats({
+    required this.goalsConceded,
+    required this.cleanSheets,
+    required this.tacklesPerGame,
     required this.interceptions,
-    required this.forcedFumbles,
-    required this.thirdDownDefense,
-    required this.redZoneDefense,
+    required this.savesPerGame,
   });
-  
-  factory DefensiveStats.fromJson(Map<String, dynamic> json) {
-    return DefensiveStats(
-      totalYardsAllowed: (json['totalYardsAllowed'] ?? 0.0) as double,
-      passingYardsAllowed: (json['passingYardsAllowed'] ?? 0.0) as double,
-      rushingYardsAllowed: (json['rushingYardsAllowed'] ?? 0.0) as double,
-      pointsAllowedPerGame: (json['pointsAllowedPerGame'] ?? 0.0) as double,
-      sacks: (json['sacks'] ?? 0.0) as double,
-      interceptions: (json['interceptions'] ?? 0.0) as double,
-      forcedFumbles: (json['forcedFumbles'] ?? 0.0) as double,
-      thirdDownDefense: (json['thirdDownDefense'] ?? 0.0) as double,
-      redZoneDefense: (json['redZoneDefense'] ?? 0.0) as double,
+
+  factory DefenseStats.fromJson(Map<String, dynamic> json) {
+    return DefenseStats(
+      goalsConceded: AttackStats._toDouble(json['goalsConceded']),
+      cleanSheets: AttackStats._toDouble(json['cleanSheets']),
+      tacklesPerGame: AttackStats._toDouble(json['tacklesPerGame']),
+      interceptions: AttackStats._toDouble(json['interceptions']),
+      savesPerGame: AttackStats._toDouble(json['savesPerGame']),
     );
   }
-  
-  /// Get total turnovers forced per game
-  double get turnoversForced => interceptions + forcedFumbles;
-  
+
+  /// Get total defensive actions per game
+  double get defensiveActionsPerGame => tacklesPerGame + interceptions;
+
   /// Get overall defensive efficiency rating (0-100, higher is better)
   double get efficiency {
-    // Custom formula - lower allowed stats = higher rating
-    final pointsRating = ((50.0 - pointsAllowedPerGame) / 50.0) * 100; // Less points allowed = better
-    final yardsRating = ((500.0 - totalYardsAllowed) / 500.0) * 100; // Less yards allowed = better
-    final thirdDownRating = (1.0 - thirdDownDefense) * 100; // Lower conversion rate = better
-    final redZoneRating = (1.0 - redZoneDefense) * 100; // Lower conversion rate = better
-    final turnoverBonus = turnoversForced * 5; // Bonus for creating turnovers
-    
-    final baseRating = (pointsRating * 0.4) + (yardsRating * 0.3) + 
-                      (thirdDownRating * 0.2) + (redZoneRating * 0.1);
-    
-    return (baseRating + turnoverBonus).clamp(0.0, 100.0);
+    // Soccer-appropriate formula - lower goals conceded = higher rating
+    final goalsConcededRating = ((3.0 - goalsConceded) / 3.0) * 100; // 0 conceded = 100%
+    final cleanSheetRating = (cleanSheets / 10.0) * 100; // 10 clean sheets = 100%
+    final tacklesRating = (tacklesPerGame / 25.0) * 100; // 25 tackles/game = 100%
+    final interceptionsRating = (interceptions / 15.0) * 100; // 15 per game = 100%
+    final savesRating = (savesPerGame / 5.0) * 100; // 5 saves/game = 100%
+
+    final baseRating = (goalsConcededRating * 0.35) + (cleanSheetRating * 0.25) +
+                      (tacklesRating * 0.15) + (interceptionsRating * 0.10) +
+                      (savesRating * 0.15);
+
+    return baseRating.clamp(0.0, 100.0);
   }
-  
+
   /// Get defensive strength description
   String get defensiveStrength {
-    if (passingYardsAllowed < rushingYardsAllowed * 1.5) {
-      return 'Strong Pass Defense';
-    } else if (rushingYardsAllowed < passingYardsAllowed * 0.75) {
-      return 'Strong Run Defense';
+    if (goalsConceded < 0.5 && cleanSheets > 5) {
+      return 'Elite Defense';
+    } else if (goalsConceded < 1.0) {
+      return 'Strong Defense';
+    } else if (tacklesPerGame > 20 && interceptions > 10) {
+      return 'Aggressive Defense';
     } else {
       return 'Balanced Defense';
     }
   }
 }
 
-/// Special teams statistics
-class SpecialTeamsStats {
-  final double fieldGoalPercentage;
-  final double puntAverage;
-  final double kickoffReturnAverage;
-  final double puntReturnAverage;
-  final double blockedKicks;
-  
-  const SpecialTeamsStats({
-    required this.fieldGoalPercentage,
-    required this.puntAverage,
-    required this.kickoffReturnAverage,
-    required this.puntReturnAverage,
-    required this.blockedKicks,
+/// Set piece statistics for soccer teams
+class SetPieceStats {
+  final double cornerKicks;
+  final double freeKicks;
+  final double penalties;
+  final double penaltyConversionRate;
+
+  const SetPieceStats({
+    required this.cornerKicks,
+    required this.freeKicks,
+    required this.penalties,
+    required this.penaltyConversionRate,
   });
-  
-  factory SpecialTeamsStats.fromJson(Map<String, dynamic> json) {
-    return SpecialTeamsStats(
-      fieldGoalPercentage: (json['fieldGoalPercentage'] ?? 0.0) as double,
-      puntAverage: (json['puntAverage'] ?? 0.0) as double,
-      kickoffReturnAverage: (json['kickoffReturnAverage'] ?? 0.0) as double,
-      puntReturnAverage: (json['puntReturnAverage'] ?? 0.0) as double,
-      blockedKicks: (json['blockedKicks'] ?? 0.0) as double,
+
+  factory SetPieceStats.fromJson(Map<String, dynamic> json) {
+    return SetPieceStats(
+      cornerKicks: AttackStats._toDouble(json['cornerKicks']),
+      freeKicks: AttackStats._toDouble(json['freeKicks']),
+      penalties: AttackStats._toDouble(json['penalties']),
+      penaltyConversionRate: AttackStats._toDouble(json['penaltyConversionRate']),
     );
   }
-  
-  /// Get overall special teams efficiency (0-100)
+
+  /// Get overall set piece efficiency (0-100)
   double get efficiency {
-    final fgRating = fieldGoalPercentage * 100;
-    final puntRating = (puntAverage / 50.0) * 100; // 50 yard average = 100%
-    final returnRating = ((kickoffReturnAverage + puntReturnAverage) / 40.0) * 100; // 20 yard average each = 100%
-    final blockBonus = blockedKicks * 10; // Bonus for blocked kicks
-    
-    final baseRating = (fgRating * 0.5) + (puntRating * 0.3) + (returnRating * 0.2);
-    
-    return (baseRating + blockBonus).clamp(0.0, 100.0);
+    final cornerRating = (cornerKicks / 8.0) * 100; // 8 corners/game = 100%
+    final freeKickRating = (freeKicks / 15.0) * 100; // 15 free kicks/game = 100%
+    final penaltyRating = penaltyConversionRate; // Already 0-100 scale
+
+    final baseRating = (cornerRating * 0.40) + (freeKickRating * 0.30) +
+                      (penaltyRating * 0.30);
+
+    return baseRating.clamp(0.0, 100.0);
   }
-  
-  /// Get special teams strength description
-  String get specialTeamsStrength {
-    if (fieldGoalPercentage > 0.85) {
-      return 'Elite Kicking Game';
-    } else if (kickoffReturnAverage > 25 || puntReturnAverage > 12) {
-      return 'Dangerous Return Game';
-    } else if (puntAverage > 45) {
-      return 'Strong Punting Game';
+
+  /// Get set piece strength description
+  String get setPieceStrength {
+    if (penaltyConversionRate > 85.0) {
+      return 'Clinical from the Spot';
+    } else if (cornerKicks > 7.0) {
+      return 'Dangerous from Corners';
+    } else if (freeKicks > 12.0) {
+      return 'Active Set Piece Team';
     } else {
-      return 'Solid Special Teams';
+      return 'Standard Set Pieces';
     }
   }
-} 
+}

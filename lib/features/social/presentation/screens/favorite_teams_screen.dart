@@ -13,11 +13,25 @@ class FavoriteTeamsScreen extends StatefulWidget {
 }
 
 class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
-  // TODO: Later, replace this with a dynamic list fetched from a data source
-  static const List<String> _secTeams = [
-    'Alabama', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU',
-    'Mississippi State', 'Ole Miss', 'Missouri', 'South Carolina',
-    'Tennessee', 'Texas A&M', 'Arkansas', 'Vanderbilt'
+  /// All 48 FIFA World Cup 2026 qualified national teams, grouped by confederation.
+  static const List<String> _worldCupTeams = [
+    // CONCACAF (Host nations first)
+    'United States', 'Mexico', 'Canada', 'Costa Rica', 'Honduras',
+    'Jamaica', 'Panama',
+    // CONMEBOL
+    'Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador',
+    'Paraguay', 'Peru', 'Uruguay', 'Venezuela',
+    // UEFA
+    'Albania', 'Austria', 'Belgium', 'Croatia', 'Denmark', 'England',
+    'France', 'Germany', 'Netherlands', 'Poland', 'Portugal', 'Scotland',
+    'Serbia', 'Spain', 'Switzerland', 'Turkey', 'Ukraine', 'Wales',
+    // AFC
+    'Australia', 'Iran', 'Iraq', 'Japan', 'Saudi Arabia', 'South Korea',
+    'Qatar', 'Uzbekistan',
+    // CAF
+    'Cameroon', 'Egypt', 'Morocco', 'Nigeria', 'Senegal',
+    // OFC
+    'New Zealand',
   ];
 
   final Set<String> _favoriteTeams = <String>{};
@@ -33,7 +47,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
   Future<void> _loadExistingFavorites() async {
     try {
       List<String> favorites = [];
-      
+
       final user = FirebaseAuth.instance.currentUser;
       if (user != null) {
         try {
@@ -41,7 +55,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
               .collection('users')
               .doc(user.uid)
               .get();
-          
+
           if (userDoc.exists && userDoc.data()?['favoriteTeams'] != null) {
             favorites = List<String>.from(userDoc.data()!['favoriteTeams']);
           } else {
@@ -59,7 +73,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
         final prefs = await SharedPreferences.getInstance();
         favorites = prefs.getStringList('favorite_teams') ?? [];
       }
-      
+
       if (mounted) {
         setState(() {
           _favoriteTeams.addAll(favorites);
@@ -89,14 +103,14 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
     setState(() {
       _isLoading = true;
     });
-    
+
     try {
       final favoritesList = _favoriteTeams.toList();
-      
+
       // Save to SharedPreferences
       final prefs = await SharedPreferences.getInstance();
       await prefs.setStringList('favorite_teams', favoritesList);
-      
+
       // Also save to Firebase if user is logged in
       final user = FirebaseAuth.instance.currentUser;
       if (user != null) {
@@ -120,7 +134,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
             backgroundColor: ThemeHelper.favoriteColor,
           ),
         );
-        
+
         // Return to previous screen with the saved teams
         Navigator.of(context).pop(favoritesList);
       }
@@ -146,7 +160,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0F172A), // Deep dark background
+      backgroundColor: const Color(0xFF0F172A),
       appBar: AppBar(
         title: Row(
           children: [
@@ -227,7 +241,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Choose your favorite SEC teams to get personalized game recommendations and highlights.',
+                  'Choose your favorite World Cup 2026 teams to get personalized game recommendations and highlights.',
                   style: TextStyle(
                     color: Colors.white70,
                     fontSize: 14,
@@ -236,7 +250,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
               ],
             ),
           ),
-          
+
           // Selected teams counter
           if (_favoriteTeams.isNotEmpty) ...[
             Container(
@@ -265,22 +279,22 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
             ),
             const SizedBox(height: 16),
           ],
-          
+
           // Teams list
           Expanded(
             child: ListView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              itemCount: _secTeams.length,
+              itemCount: _worldCupTeams.length,
               itemBuilder: (context, index) {
-                final team = _secTeams[index];
+                final team = _worldCupTeams[index];
                 final isSelected = _favoriteTeams.contains(team);
-                
+
                 return Container(
                   margin: const EdgeInsets.only(bottom: 8),
                   decoration: BoxDecoration(
                     color: const Color(0xFF1E293B),
                     borderRadius: BorderRadius.circular(12),
-                    border: isSelected 
+                    border: isSelected
                         ? Border.all(color: ThemeHelper.favoriteColor, width: 2)
                         : Border.all(color: Colors.white12),
                     boxShadow: [

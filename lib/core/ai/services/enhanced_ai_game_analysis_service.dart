@@ -441,15 +441,14 @@ class EnhancedAIGameAnalysisService {
   String _generateGameSpecificSummary(GameSchedule game) {
     final awayTeam = game.awayTeamName;
     final homeTeam = game.homeTeamName;
-    
-    // Extract team characteristics from names for more interesting summaries
-    final conferenceMatchup = _isConferenceRivalry(awayTeam, homeTeam);
-    final timeOfSeason = _getSeasonContext(game.dateTime);
-    
-    if (conferenceMatchup) {
-      return 'This $timeOfSeason conference showdown between $awayTeam and $homeTeam promises intense competition. Conference games often feature heightened intensity and familiarity between teams, making this a particularly intriguing matchup with potential playoff implications.';
+
+    final sameConfederation = _isSameConfederation(awayTeam, homeTeam);
+    final tournamentPhase = _getTournamentPhase(game.dateTime);
+
+    if (sameConfederation) {
+      return 'This $tournamentPhase clash between $awayTeam and $homeTeam features two sides from the same confederation who know each other well. Their familiarity could produce a tactically tight encounter with fine margins deciding the outcome.';
     } else {
-      return 'This $timeOfSeason interconference battle pits $awayTeam against $homeTeam in what should be a compelling clash of different playing styles. Non-conference matchups often provide unique strategic challenges as teams face unfamiliar opponents.';
+      return 'This $tournamentPhase match pits $awayTeam against $homeTeam in an intercontinental contest. Clashing footballing philosophies and unfamiliar styles can produce thrilling encounters at the World Cup.';
     }
   }
 
@@ -458,45 +457,61 @@ class EnhancedAIGameAnalysisService {
     final awayTeam = game.awayTeamName;
     final homeTeam = game.homeTeamName;
     final insights = <String>[];
-    
-    // Add home field advantage insight
-    insights.add('$homeTeam benefits from home field advantage, including familiar surroundings and crowd support');
-    
-    // Add travel factor for away team
-    insights.add('$awayTeam faces the challenge of road game preparation and potential travel fatigue');
-    
-    // Add strategic insights
-    insights.add('Key matchups in the trenches will likely determine the flow and outcome of this game');
-    insights.add('Turnover margin and special teams play could be decisive factors in a close contest');
-    
-    // Add coaching insight
-    insights.add('Coaching adjustments and in-game strategy will be crucial as both teams look to exploit opponent weaknesses');
-    
+
+    insights.add('$homeTeam will look to establish their tempo early and settle into their preferred style of play');
+    insights.add('$awayTeam must manage the occasion and adapt to tournament-level intensity');
+    insights.add('Midfield control and possession battles will likely determine which side dictates the game');
+    insights.add('Set pieces and defensive organisation could prove decisive in a close contest');
+    insights.add('Manager tactics and substitution timing will be crucial as both teams look to exploit weaknesses');
+
     return insights;
   }
 
-  /// Check if teams are likely conference rivals
-  bool _isConferenceRivalry(String awayTeam, String homeTeam) {
-    // Simple heuristic based on common conference indicators
-    final secTeams = ['Alabama', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU', 'Mississippi', 'South Carolina', 'Tennessee', 'Texas', 'Arkansas', 'Missouri', 'Vanderbilt'];
-    final big12Teams = ['Texas Tech', 'Oklahoma', 'Kansas', 'Iowa State', 'Baylor', 'TCU', 'West Virginia'];
-    final accTeams = ['Florida State', 'Miami', 'Virginia Tech', 'North Carolina', 'Duke', 'Wake Forest'];
-    
-    return (secTeams.any((team) => awayTeam.contains(team)) && secTeams.any((team) => homeTeam.contains(team))) ||
-           (big12Teams.any((team) => awayTeam.contains(team)) && big12Teams.any((team) => homeTeam.contains(team))) ||
-           (accTeams.any((team) => awayTeam.contains(team)) && accTeams.any((team) => homeTeam.contains(team)));
+  /// Check if teams belong to the same FIFA confederation
+  bool _isSameConfederation(String awayTeam, String homeTeam) {
+    String? _getConfederation(String team) {
+      final t = team.toLowerCase();
+      // UEFA
+      const uefaTeams = ['albania', 'austria', 'belgium', 'croatia', 'denmark', 'england', 'france', 'germany', 'netherlands', 'poland', 'portugal', 'scotland', 'serbia', 'spain', 'switzerland', 'turkey', 'ukraine', 'wales'];
+      if (uefaTeams.any((c) => t.contains(c))) return 'UEFA';
+      // CONMEBOL
+      const conmebolTeams = ['argentina', 'bolivia', 'brazil', 'chile', 'colombia', 'ecuador', 'paraguay', 'peru', 'uruguay', 'venezuela'];
+      if (conmebolTeams.any((c) => t.contains(c))) return 'CONMEBOL';
+      // CONCACAF
+      const concacafTeams = ['united states', 'usa', 'mexico', 'canada', 'costa rica', 'honduras', 'jamaica', 'panama'];
+      if (concacafTeams.any((c) => t.contains(c))) return 'CONCACAF';
+      // AFC
+      const afcTeams = ['australia', 'iran', 'iraq', 'japan', 'saudi arabia', 'south korea', 'qatar', 'uzbekistan'];
+      if (afcTeams.any((c) => t.contains(c))) return 'AFC';
+      // CAF
+      const cafTeams = ['cameroon', 'egypt', 'morocco', 'nigeria', 'senegal'];
+      if (cafTeams.any((c) => t.contains(c))) return 'CAF';
+      // OFC
+      if (t.contains('new zealand')) return 'OFC';
+      return null;
+    }
+
+    final awayConf = _getConfederation(awayTeam);
+    final homeConf = _getConfederation(homeTeam);
+    return awayConf != null && awayConf == homeConf;
   }
 
-  /// Get context about the time of season
-  String _getSeasonContext(DateTime? gameDate) {
-    if (gameDate == null) return 'upcoming';
-    
+  /// Get context about the tournament phase based on date
+  String _getTournamentPhase(DateTime? gameDate) {
+    if (gameDate == null) return 'World Cup';
+
+    // World Cup 2026: June 11 - July 19
     final month = gameDate.month;
-    if (month == 8 || month == 9) return 'early season';
-    if (month == 10) return 'mid-season';
-    if (month == 11) return 'late season';
-    if (month == 12 || month == 1) return 'postseason';
-    
-    return 'season';
+    final day = gameDate.day;
+
+    if (month == 6 && day <= 26) return 'group stage';
+    if (month == 6) return 'final group stage';
+    if (month == 7 && day <= 5) return 'Round of 32';
+    if (month == 7 && day <= 9) return 'Round of 16';
+    if (month == 7 && day <= 13) return 'quarter-final';
+    if (month == 7 && day <= 16) return 'semi-final';
+    if (month == 7) return 'final stage';
+
+    return 'World Cup';
   }
 } 

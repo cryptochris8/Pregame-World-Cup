@@ -715,7 +715,8 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
   }
 
   void _shareLocation() {
-    // TODO: Implement location sharing with GPS coordinates
+    // Location sharing requires geolocator package integration and a map
+    // preview widget. Planned for post-launch update (v1.1).
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: const Text('Location sharing coming soon!'),

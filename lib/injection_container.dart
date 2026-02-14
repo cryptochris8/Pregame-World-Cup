@@ -110,14 +110,21 @@ final sl = GetIt.instance; // sl stands for Service Locator
 /// Android diagnostic mode - set to false for production
 const bool ANDROID_DIAGNOSTIC_MODE = false;
 
+/// Debug-only log helper. Stripped by tree-shaking in release builds.
+void _diLog(String message) {
+  if (kDebugMode) {
+    print(message);
+  }
+}
+
 Future<void> setupLocator() async {
   if (ANDROID_DIAGNOSTIC_MODE) {
-    print('🔧 DEPENDENCY INJECTION: Starting in Android diagnostic mode');
+    _diLog('DI: Starting in Android diagnostic mode');
   }
 
   try {
     // STEP 1: Core Dependencies (Essential)
-    print('🔧 DI STEP 1: Core Dependencies');
+    _diLog('DI STEP 1: Core Dependencies');
     sl.registerLazySingleton(() => Dio());
     sl.registerLazySingleton(() => FirebaseFirestore.instance);
     sl.registerLazySingleton(() => FirebaseAuth.instance);
@@ -125,10 +132,10 @@ Future<void> setupLocator() async {
     // Register SharedPreferences (async initialization)
     final sharedPreferences = await SharedPreferences.getInstance();
     sl.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
-    print('✅ DI STEP 1: Core Dependencies - SUCCESS');
+    _diLog('DI STEP 1: Core Dependencies - SUCCESS');
 
     // STEP 2: Core Services (Essential)
-    print('🔧 DI STEP 2: Core Services');
+    _diLog('DI STEP 2: Core Services');
     sl.registerLazySingleton(() => CacheService.instance);
     sl.registerLazySingleton(() => AuthService());
     sl.registerLazySingleton(() => PresenceService());
@@ -150,22 +157,22 @@ Future<void> setupLocator() async {
     // Initialize WidgetService (async, for home screen widgets)
     final widgetService = await WidgetService.getInstance();
     sl.registerSingleton<WidgetService>(widgetService);
-    print('✅ DI STEP 2: Core Services - SUCCESS');
+    _diLog('DI STEP 2: Core Services - SUCCESS');
 
     // STEP 3: Basic Analysis Services (Important but not critical)
-    print('🔧 DI STEP 3: Basic Analysis Services');
+    _diLog('DI STEP 3: Basic Analysis Services');
     try {
       sl.registerLazySingleton(() => UnifiedVenueService());
-      print('✅ DI STEP 3: Basic Analysis Services - SUCCESS');
+      _diLog('DI STEP 3: Basic Analysis Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 3: Basic Analysis Services - FAILED: $e');
+      _diLog('DI STEP 3: Basic Analysis Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Basic analysis services failed but continuing');
+        _diLog('DIAGNOSTIC: Basic analysis services failed but continuing');
       }
     }
 
     // STEP 4: AI Services (Can be problematic on Android)
-    print('🔧 DI STEP 4: AI Services');
+    _diLog('DI STEP 4: AI Services');
     try {
       // Core AI providers
       sl.registerLazySingleton(() => AIService());
@@ -182,163 +189,162 @@ Future<void> setupLocator() async {
       sl.registerLazySingleton(() => AITeamSeasonSummaryService.instance);
       sl.registerLazySingleton(() => EnhancedAIGameAnalysisService.instance);
       sl.registerLazySingleton(() => HistoricalGameAnalysisService());
-      
-      print('✅ DI STEP 4: AI Services - SUCCESS');
+
+      _diLog('DI STEP 4: AI Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 4: AI Services - FAILED: $e');
+      _diLog('DI STEP 4: AI Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: AI services failed - this may cause hangs on Android');
+        _diLog('DIAGNOSTIC: AI services failed - this may cause hangs on Android');
       }
     }
 
     // STEP 5: ESPN and API Services (High risk for Android)
-    print('🔧 DI STEP 5: ESPN and API Services');
+    _diLog('DI STEP 5: ESPN and API Services');
     try {
       // Register ESPN services with timeout protection
       await Future.any([
         _registerESPNServices(),
         Future.delayed(Duration(seconds: 5)), // 5 second timeout
       ]);
-      print('✅ DI STEP 5: ESPN and API Services - SUCCESS');
+      _diLog('DI STEP 5: ESPN and API Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 5: ESPN and API Services - FAILED: $e');
+      _diLog('DI STEP 5: ESPN and API Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: ESPN services failed - this is likely the Android issue');
-        print('🔍 DIAGNOSTIC: Registering fallback services instead');
+        _diLog('DIAGNOSTIC: ESPN services failed - this is likely the Android issue');
+        _diLog('DIAGNOSTIC: Registering fallback services instead');
       }
       // Register fallback services
       _registerFallbackServices();
     }
 
     // STEP 6: Schedule Services (Essential for app)
-    print('🔧 DI STEP 6: Schedule Services');
+    _diLog('DI STEP 6: Schedule Services');
     try {
       _registerScheduleServices();
-      print('✅ DI STEP 6: Schedule Services - SUCCESS');
+      _diLog('DI STEP 6: Schedule Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 6: Schedule Services - FAILED: $e');
+      _diLog('DI STEP 6: Schedule Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Schedule services failed - app will have limited functionality');
+        _diLog('DIAGNOSTIC: Schedule services failed - app will have limited functionality');
       }
     }
 
     // STEP 7: Recommendation Services
-    print('🔧 DI STEP 7: Recommendation Services');
+    _diLog('DI STEP 7: Recommendation Services');
     try {
       _registerRecommendationServices();
-      print('✅ DI STEP 7: Recommendation Services - SUCCESS');
+      _diLog('DI STEP 7: Recommendation Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 7: Recommendation Services - FAILED: $e');
+      _diLog('DI STEP 7: Recommendation Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Recommendation services failed but app will continue');
+        _diLog('DIAGNOSTIC: Recommendation services failed but app will continue');
       }
     }
 
     // STEP 8: Social and External Services
-    print('🔧 DI STEP 8: Social and External Services');
+    _diLog('DI STEP 8: Social and External Services');
     try {
       _registerSocialServices();
-      print('✅ DI STEP 8: Social and External Services - SUCCESS');
+      _diLog('DI STEP 8: Social and External Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 8: Social and External Services - FAILED: $e');
+      _diLog('DI STEP 8: Social and External Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Social services failed but app will continue');
+        _diLog('DIAGNOSTIC: Social services failed but app will continue');
       }
     }
 
     // STEP 9: World Cup 2026 Services
-    print('🔧 DI STEP 9: World Cup 2026 Services');
+    _diLog('DI STEP 9: World Cup 2026 Services');
     try {
       _registerWorldCupServices();
-      print('✅ DI STEP 9: World Cup 2026 Services - SUCCESS');
+      _diLog('DI STEP 9: World Cup 2026 Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 9: World Cup 2026 Services - FAILED: $e');
+      _diLog('DI STEP 9: World Cup 2026 Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: World Cup services failed but app will continue');
+        _diLog('DIAGNOSTIC: World Cup services failed but app will continue');
       }
     }
 
     // STEP 10: Watch Party Services
-    print('🔧 DI STEP 10: Watch Party Services');
+    _diLog('DI STEP 10: Watch Party Services');
     try {
       _registerWatchPartyServices();
-      print('✅ DI STEP 10: Watch Party Services - SUCCESS');
+      _diLog('DI STEP 10: Watch Party Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 10: Watch Party Services - FAILED: $e');
+      _diLog('DI STEP 10: Watch Party Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Watch Party services failed but app will continue');
+        _diLog('DIAGNOSTIC: Watch Party services failed but app will continue');
       }
     }
 
     // STEP 11: Moderation Services
-    print('🔧 DI STEP 11: Moderation Services');
+    _diLog('DI STEP 11: Moderation Services');
     try {
       _registerModerationServices();
-      print('✅ DI STEP 11: Moderation Services - SUCCESS');
+      _diLog('DI STEP 11: Moderation Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 11: Moderation Services - FAILED: $e');
+      _diLog('DI STEP 11: Moderation Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Moderation services failed but app will continue');
+        _diLog('DIAGNOSTIC: Moderation services failed but app will continue');
       }
     }
 
     // STEP 12: Admin Services
-    print('🔧 DI STEP 12: Admin Services');
+    _diLog('DI STEP 12: Admin Services');
     try {
       _registerAdminServices();
-      print('✅ DI STEP 12: Admin Services - SUCCESS');
+      _diLog('DI STEP 12: Admin Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 12: Admin Services - FAILED: $e');
+      _diLog('DI STEP 12: Admin Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Admin services failed but app will continue');
+        _diLog('DIAGNOSTIC: Admin services failed but app will continue');
       }
     }
 
     // STEP 13: Match Chat Services
-    print('🔧 DI STEP 13: Match Chat Services');
+    _diLog('DI STEP 13: Match Chat Services');
     try {
       _registerMatchChatServices();
-      print('✅ DI STEP 13: Match Chat Services - SUCCESS');
+      _diLog('DI STEP 13: Match Chat Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 13: Match Chat Services - FAILED: $e');
+      _diLog('DI STEP 13: Match Chat Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Match Chat services failed but app will continue');
+        _diLog('DIAGNOSTIC: Match Chat services failed but app will continue');
       }
     }
 
     // STEP 14: Calendar Services
-    print('🔧 DI STEP 14: Calendar Services');
+    _diLog('DI STEP 14: Calendar Services');
     try {
       _registerCalendarServices();
-      print('✅ DI STEP 14: Calendar Services - SUCCESS');
+      _diLog('DI STEP 14: Calendar Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 14: Calendar Services - FAILED: $e');
+      _diLog('DI STEP 14: Calendar Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Calendar services failed but app will continue');
+        _diLog('DIAGNOSTIC: Calendar services failed but app will continue');
       }
     }
 
     // STEP 15: Sharing Services
-    print('🔧 DI STEP 15: Sharing Services');
+    _diLog('DI STEP 15: Sharing Services');
     try {
       _registerSharingServices();
-      print('✅ DI STEP 15: Sharing Services - SUCCESS');
+      _diLog('DI STEP 15: Sharing Services - SUCCESS');
     } catch (e) {
-      print('⚠️ DI STEP 15: Sharing Services - FAILED: $e');
+      _diLog('DI STEP 15: Sharing Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
-        print('🔍 DIAGNOSTIC: Sharing services failed but app will continue');
+        _diLog('DIAGNOSTIC: Sharing services failed but app will continue');
       }
     }
 
     if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔧 DEPENDENCY INJECTION: All steps completed');
-      print('🔧 REGISTERED SERVICES: Dependency injection setup complete');
+      _diLog('DI: All steps completed');
     }
 
   } catch (e) {
-    print('❌ DEPENDENCY INJECTION: Critical failure: $e');
+    _diLog('DI: Critical failure: $e');
     if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: This is a critical error that will prevent app startup');
+      _diLog('DIAGNOSTIC: This is a critical error that will prevent app startup');
     }
     rethrow;
   }
@@ -357,7 +363,7 @@ Future<void> _registerESPNServices() async {
     ));
   } catch (e) {
     if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔍 DIAGNOSTIC: ESPN service registration failed: $e');
+      _diLog('DIAGNOSTIC: ESPN service registration failed: $e');
     }
     rethrow;
   }
@@ -368,19 +374,19 @@ void _registerFallbackServices() {
   try {
     // Register mock ESPN service that doesn't make network calls
     sl.registerLazySingleton(() => ESPNService());
-    
+
     // Register simple ESPN datasource
     sl.registerLazySingleton(() => ESPNScheduleDataSource(
       espnService: sl(),
       cacheService: sl(),
     ));
-    
+
     if (ANDROID_DIAGNOSTIC_MODE) {
-      print('🔧 FALLBACK: Registered fallback ESPN services');
+      _diLog('FALLBACK: Registered fallback ESPN services');
     }
   } catch (e) {
     if (ANDROID_DIAGNOSTIC_MODE) {
-      print('⚠️ FALLBACK: Even fallback services failed: $e');
+      _diLog('FALLBACK: Even fallback services failed: $e');
     }
   }
 }

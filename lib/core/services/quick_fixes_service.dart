@@ -55,7 +55,7 @@ class QuickFixesService {
    
 🎯 REMAINING WORK:
    • ~100 .withOpacity() → .withValues() conversions
-   • ~80 print() → LoggingService.* conversions
+   • print() calls now guarded by kDebugMode (injection_container, main)
    • ~50 unused variable/field removals
    • ~30 BuildContext async safety fixes
 
