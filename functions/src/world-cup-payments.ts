@@ -229,8 +229,8 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
           quantity: 1,
         },
       ],
-      success_url: `${data.successUrl || 'https://pregame-world-cup.web.app/purchase/success'}?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: data.cancelUrl || 'https://pregame-world-cup.web.app/purchase/cancel',
+      success_url: `${data.successUrl || 'https://pregame-b089e.web.app/purchase/success'}?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: data.cancelUrl || 'https://pregame-b089e.web.app/purchase/cancel',
       metadata: {
         type: 'fan_pass',
         passType,
@@ -362,8 +362,8 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
           quantity: 1,
         },
       ],
-      success_url: `${data.successUrl || 'https://pregame-world-cup.web.app/venue/purchase/success'}?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: data.cancelUrl || 'https://pregame-world-cup.web.app/venue/purchase/cancel',
+      success_url: `${data.successUrl || 'https://pregame-b089e.web.app/venue/purchase/success'}?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: data.cancelUrl || 'https://pregame-b089e.web.app/venue/purchase/cancel',
       metadata: {
         type: 'venue_premium',
         venueId,

@@ -318,7 +318,7 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
         },
       ],
       success_url: `https://pregame-b089e.web.app/venue/billing/success?success=true&session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `https://pregame-b089e.web.app/venue/billing/success?canceled=true`,
+      cancel_url: `https://pregame-b089e.web.app/venue/billing/cancel?canceled=true`,
       metadata: {
         venueId: venueId,
         userId: context.auth.uid
