@@ -178,7 +178,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 height: 40,
                 fit: BoxFit.contain,
                 errorBuilder: (context, error, stackTrace) {
-                  return Icon(Icons.sports_football, color: ThemeHelper.favoriteColor, size: 40);
+                  return Icon(Icons.sports_soccer, color: ThemeHelper.favoriteColor, size: 40);
                 },
               ),
             ),
@@ -310,7 +310,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
             ),
             child: Row(
               children: [
-                const Icon(Icons.sports_football, color: Colors.orange, size: 24),
+                const Icon(Icons.sports_soccer, color: Colors.orange, size: 24),
                 const SizedBox(width: 12),
                 const Text(
                   'FIFA World Cup 2026',
@@ -391,7 +391,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.sports_football,
+                    Icons.sports_soccer,
                     size: 64,
                     color: ThemeHelper.favoriteColor,
                   ),
@@ -635,7 +635,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
-            Icons.sports_football,
+            Icons.sports_soccer,
             size: 64,
             color: ThemeHelper.favoriteColor,
           ),
@@ -681,7 +681,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
-            Icons.sports_football,
+            Icons.sports_soccer,
             size: 64,
             color: ThemeHelper.favoriteColor,
           ),

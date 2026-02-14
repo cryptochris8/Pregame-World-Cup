@@ -1,11 +1,12 @@
 import 'package:dio/dio.dart';
 
-/// Enhanced ESPN service with historical matchup intelligence
-/// Since ESPN's public API doesn't provide historical data, we'll create our own database
-/// of key SEC rivalries and historical contexts
+/// LEGACY: Enhanced ESPN service with historical matchup intelligence.
+/// Contains SEC college football rivalry data from the original Pregame app.
+/// Not used for World Cup 2026 - retained for reference only.
+/// World Cup historical data is handled by SportsData.io and AI services.
 class ESPNHistoricalService {
   
-  // Historical matchup records for major SEC rivalries (manually curated)
+  // LEGACY: Historical matchup records for major SEC rivalries (college football)
   static const Map<String, Map<String, dynamic>> _historicalMatchups = {
     'Alabama_Auburn': {
       'series_record': 'Alabama leads 50-37-1',
@@ -203,7 +204,7 @@ class ESPNHistoricalService {
         'Did you know: $seriesRecord',
         'Last time these teams met: ${lastMeeting['result'] ?? 'Epic showdown'}',
         'Get ready for ${rivalryName} atmosphere!',
-        '#${rivalryName.replaceAll(' ', '')} #CollegeFootball'
+        '#${rivalryName.replaceAll(' ', '')} #Legacy'
       ]
     };
   }
@@ -262,7 +263,7 @@ class ESPNHistoricalService {
       'historical_data': {
         'series_record': 'Series history not available',
         'rivalry_name': 'Conference Matchup',
-        'significance': 'Important SEC conference game'
+        'significance': 'Important match'
       },
       'current_context': {
         'home_storylines': _currentSeasonStorylines[homeTeam] ?? ['Looking to defend home field'],
@@ -354,16 +355,16 @@ class ESPNHistoricalService {
     return {
       'crowd_appeal': 1.3,
       'marketing_hooks': [
-        'SEC Conference showdown!',
+        'Exciting matchup!',
         '${homeTeam} vs ${awayTeam}',
-        'College football atmosphere',
+        'Match day atmosphere',
         'Conference championship implications'
       ],
       'venue_preparation': {
         'staffing_multiplier': 1.5,
         'inventory_focus': ['Standard game day items', 'Team merchandise'],
         'preparation_tips': ['Prepare for increased crowd', 'Monitor game importance'],
-        'marketing_emphasis': 'Quality SEC football viewing'
+        'marketing_emphasis': 'Quality match viewing'
       }
     };
   }

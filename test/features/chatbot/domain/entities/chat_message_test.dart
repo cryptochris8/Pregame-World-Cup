@@ -225,8 +225,8 @@ void main() {
       expect(ChatMessageType.values, contains(ChatMessageType.bot));
     });
 
-    test('has exactly 2 types', () {
-      expect(ChatMessageType.values.length, equals(2));
+    test('has exactly 3 types', () {
+      expect(ChatMessageType.values.length, equals(3));
     });
 
     test('types can be compared', () {

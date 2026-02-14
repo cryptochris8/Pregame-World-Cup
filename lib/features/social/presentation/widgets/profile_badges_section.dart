@@ -174,7 +174,7 @@ class ProfileBadgesSection extends StatelessWidget {
       case 'venue explorer':
         return Icons.explore;
       case 'game day legend':
-        return Icons.sports_football;
+        return Icons.sports_soccer;
       case 'reviewer':
         return Icons.rate_review;
       case 'photographer':

@@ -365,7 +365,7 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
         padding: const EdgeInsets.all(24),
         child: Column(
           children: [
-            const Icon(Icons.sports_football, size: 64, color: Colors.white38),
+            const Icon(Icons.sports_soccer, size: 64, color: Colors.white38),
             const SizedBox(height: 16),
             const Text('No upcoming games found', style: TextStyle(color: Colors.white70, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),

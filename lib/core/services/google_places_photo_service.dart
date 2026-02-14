@@ -3,6 +3,17 @@ import 'package:dio/dio.dart';
 import 'package:path_provider/path_provider.dart';
 import '../../../config/api_keys.dart';
 
+/// Photo size options
+enum PhotoSize {
+  thumbnail(200),
+  small(400),
+  medium(800),
+  large(1600);
+
+  const PhotoSize(this.maxWidth);
+  final int maxWidth;
+}
+
 /// Service for handling Google Places photos with caching and multiple sizes
 class GooglePlacesPhotoService {
   static final GooglePlacesPhotoService _instance = GooglePlacesPhotoService._internal();
@@ -11,17 +22,6 @@ class GooglePlacesPhotoService {
 
   final Dio _dio = Dio();
   final Map<String, String> _photoCache = {};
-
-  /// Photo size options
-  enum PhotoSize {
-    thumbnail(200),
-    small(400),
-    medium(800),
-    large(1600);
-
-    const PhotoSize(this.maxWidth);
-    final int maxWidth;
-  }
 
   /// Get photo URL for a given photo reference and size
   String getPhotoUrl(String photoReference, {PhotoSize size = PhotoSize.medium}) {

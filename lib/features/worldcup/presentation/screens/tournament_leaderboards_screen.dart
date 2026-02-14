@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../data/services/player_service.dart';
 import '../../../../domain/models/player.dart';
-import '../../../../presentation/screens/player_spotlight_screen.dart';
+import '../../../../presentation/screens/player_detail_screen.dart';
 
 /// Screen displaying tournament leaderboards
 /// Shows top scorers, assists, most capped players, etc.

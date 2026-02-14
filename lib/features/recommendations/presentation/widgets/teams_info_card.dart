@@ -33,7 +33,7 @@ class TeamsInfoCard extends StatelessWidget {
                   child: Column(
                     children: [
                       const Icon(
-                        Icons.sports_football,
+                        Icons.sports_soccer,
                         size: 48,
                         color: Colors.white70,
                       ),

@@ -316,7 +316,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.sports_football, size: 16),
+                const Icon(Icons.sports_soccer, size: 16),
                 const SizedBox(width: 4),
                 const Text('Teams'),
                 if (_teamChats.isNotEmpty) ...[

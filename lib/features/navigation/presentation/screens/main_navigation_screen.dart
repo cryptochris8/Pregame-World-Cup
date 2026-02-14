@@ -56,7 +56,7 @@ import '../../../../core/utils/team_logo_helper.dart';
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.sports_football),
+              icon: Icon(Icons.sports_soccer),
               label: 'Games',
             ),
             BottomNavigationBarItem(

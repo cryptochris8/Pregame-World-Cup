@@ -8,6 +8,8 @@ import 'espn_historical_service.dart';
 /// Legacy ESPN sports service for game intelligence and venue recommendations.
 /// Note: World Cup 2026 match data comes from SportsData.io and Firebase.
 /// This service is retained for AI analysis fallback capabilities.
+/// WARNING: Still uses college football ESPN endpoints. Needs migration to
+/// soccer/World Cup endpoints before production use.
 class ESPNService {
   static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports';
 
@@ -71,7 +73,7 @@ class ESPNService {
   Future<Map<String, dynamic>?> _fetchESPNGameData(String gameId) async {
     try {
       // ESPN uses different endpoints for different sports
-      // Starting with college football - can expand to basketball, etc.
+      // LEGACY: Still using college football endpoint. Needs migration to soccer.
       final response = await _dio.get(
         '$_baseUrl/football/college-football/summary',
         queryParameters: {
@@ -89,7 +91,7 @@ class ESPNService {
     }
   }
 
-  /// Test method to fetch current college football games
+  /// LEGACY: Test method to fetch current games (still uses college football endpoint)
   Future<List<Map<String, dynamic>>> getCurrentGames() async {
     try {
       final response = await _dio.get(
@@ -110,7 +112,7 @@ class ESPNService {
     }
   }
 
-  /// Fetch 2025 college football schedule from ESPN API
+  /// LEGACY: Fetch 2025 schedule from ESPN API (still uses college football endpoint)
   /// This method gets the complete 2025 season schedule with real dates and times
   Future<List<GameSchedule>> get2025Schedule({int limit = 100}) async {
     try {
@@ -134,7 +136,7 @@ class ESPNService {
         queryParameters: {
           'dates': '$startDateStr-$endDateStr',
           'limit': limit.toString(),
-          'groups': '80', // FBS College Football
+          'groups': '80', // LEGACY: FBS College Football group ID
         },
       );
 
@@ -192,7 +194,7 @@ class ESPNService {
         queryParameters: {
           'dates': '$startDateStr-$endDateStr',
           'limit': limit.toString(),
-          'groups': '80', // FBS College Football
+          'groups': '80', // LEGACY: FBS College Football group ID
         },
       );
 
@@ -235,7 +237,7 @@ class ESPNService {
     }
   }
 
-  /// Get college football schedule for a specific year (supports 2023, 2024, 2025)
+  /// LEGACY: Get schedule for a specific year (still uses college football endpoint)
   /// Returns complete season data including historical scores for past years
   Future<List<GameSchedule>> getScheduleForYear(int year, {int limit = 2000}) async {
     try {
@@ -268,7 +270,7 @@ class ESPNService {
         queryParameters: {
           'dates': '$startDateStr-$endDateStr',
           'limit': limit.toString(),
-          'groups': '80', // FBS College Football
+          'groups': '80', // LEGACY: FBS College Football group ID
         },
       );
       

@@ -184,7 +184,7 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
           Row(
             children: [
               Icon(
-                Icons.sports_football,
+                Icons.sports_soccer,
                 color: ThemeHelper.favoriteColor,
                 size: 20,
               ),
@@ -543,7 +543,7 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
                   : Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Icon(Icons.sports_football, size: 20),
+                        const Icon(Icons.sports_soccer, size: 20),
                         const SizedBox(width: 8),
                         Text(
                           _existingPrediction != null
@@ -616,7 +616,7 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.sports_football,
+                Icons.sports_soccer,
                 color: ThemeHelper.favoriteColor,
                 size: 20,
               ),

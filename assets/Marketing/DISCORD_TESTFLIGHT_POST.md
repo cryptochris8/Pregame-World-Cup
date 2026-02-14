@@ -15,7 +15,7 @@ Hey Hytopia fam! I've been building something BIG outside of gaming - the ultima
 
 🎁 What you get for helping test:
 ✅ FREE Lifetime Superfan Pass (normally paid)
-✅ Early access to Pregame College Football app
+✅ Early access to future Pregame app updates
 ✅ Guaranteed spot for future $PRE coin airdrop
 ✅ Your name in the app credits as a founding tester
 
@@ -57,7 +57,7 @@ You know me from building Hytopia games, but I've been working on something comp
 
 🌟 **Lifetime Superfan Pass** - Unlock all premium features forever (normally a paid subscription)
 
-📱 **Pregame College Football App** - Your info saved for early access when we launch for college football season
+📱 **Future Pregame Updates** - Your info saved for early access to all future app updates
 
 💰 **$PRE Coin Airdrop** - Guaranteed eligibility for our future token airdrop to founding testers
 

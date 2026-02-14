@@ -182,7 +182,7 @@ class AIHistoricalAnalysisTabWidget extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(Icons.sports_football, color: teamColor, size: 20),
+              Icon(Icons.sports_soccer, color: teamColor, size: 20),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(

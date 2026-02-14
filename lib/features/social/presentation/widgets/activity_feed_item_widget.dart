@@ -218,7 +218,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
         if (widget.activity.relatedGameId != null)
           Chip(
             label: const Text('Game Event'),
-            avatar: const Icon(Icons.sports_football, size: 16, color: Colors.white),
+            avatar: const Icon(Icons.sports_soccer, size: 16, color: Colors.white),
             backgroundColor: Colors.green.withOpacity(0.3),
             labelStyle: const TextStyle(
               color: Colors.white,
@@ -387,7 +387,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
       case ActivityType.friendConnection:
         return Icons.people;
       case ActivityType.gameAttendance:
-        return Icons.sports_football;
+        return Icons.sports_soccer;
       case ActivityType.venueReview:
         return Icons.rate_review;
       case ActivityType.photoShare:

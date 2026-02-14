@@ -326,7 +326,7 @@ class _PredictionLeaderboardScreenState extends State<PredictionLeaderboardScree
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.sports_football,
+              Icons.sports_soccer,
               size: 64,
               color: ThemeHelper.favoriteColor,
             ),

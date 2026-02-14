@@ -215,7 +215,7 @@ class AIPredictionTabWidget extends StatelessWidget {
               shape: BoxShape.circle,
             ),
             child: const Icon(
-              Icons.sports_football,
+              Icons.sports_soccer,
               size: 12,
               color: Colors.black54,
             ),

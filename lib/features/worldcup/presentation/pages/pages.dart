@@ -11,3 +11,8 @@ export 'team_detail_page.dart';
 export 'world_cup_home_page.dart';
 export 'world_cup_home_screen.dart';
 export 'predictions_page.dart';
+export 'matches_tab.dart';
+export 'groups_tab.dart';
+export 'bracket_tab.dart';
+export 'teams_tab.dart';
+export 'favorites_tab.dart';

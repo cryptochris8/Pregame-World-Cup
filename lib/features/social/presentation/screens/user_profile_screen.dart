@@ -356,7 +356,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Row(
             children: [
               Expanded(
-                child: _buildStatCard('Games Tracked', '0', Icons.sports_football),
+                child: _buildStatCard('Games Tracked', '0', Icons.sports_soccer),
               ),
               const SizedBox(width: 16),
               Expanded(

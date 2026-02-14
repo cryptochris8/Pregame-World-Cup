@@ -123,8 +123,6 @@ class AppTheme {
         onError: textWhite,
         inverseSurface: textWhite,
         onInverseSurface: backgroundDark,
-        background: backgroundDark,
-        onBackground: textWhite,
       ),
       
       // App Bar Theme
@@ -167,7 +165,7 @@ class AppTheme {
       cardTheme: CardThemeData(
         color: backgroundCard,
         elevation: 8,
-        shadowColor: Colors.black.withOpacity(0.3),
+        shadowColor: Colors.black.withValues(alpha: 0.3),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -180,7 +178,7 @@ class AppTheme {
           backgroundColor: Colors.transparent,
           foregroundColor: textWhite,
           elevation: 8,
-          shadowColor: primaryOrange.withOpacity(0.4),
+          shadowColor: primaryOrange.withValues(alpha: 0.4),
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25),
@@ -217,11 +215,11 @@ class AppTheme {
         fillColor: backgroundElevated,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: textTertiary.withOpacity(0.3)),
+          borderSide: BorderSide(color: textTertiary.withValues(alpha: 0.3)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: textTertiary.withOpacity(0.3)),
+          borderSide: BorderSide(color: textTertiary.withValues(alpha: 0.3)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
@@ -320,8 +318,6 @@ class AppTheme {
         tertiary: accentGold,
         surface: Colors.white,
         onSurface: backgroundDark,
-        background: Color(0xFFF8FAFC),
-        onBackground: backgroundDark,
       ),
 
       scaffoldBackgroundColor: const Color(0xFFF8FAFC),
@@ -363,8 +359,6 @@ class AppTheme {
         onError: highContrastBackground,
         inverseSurface: highContrastText,
         onInverseSurface: highContrastBackground,
-        background: highContrastBackground,
-        onBackground: highContrastText,
       ),
 
       // High contrast App Bar
@@ -570,7 +564,7 @@ class AppTheme {
     borderRadius: BorderRadius.circular(20),
     boxShadow: [
       BoxShadow(
-          color: primaryPurple.withOpacity(0.3),
+          color: primaryPurple.withValues(alpha: 0.3),
         blurRadius: 20,
           offset: const Offset(0, 10),
       ),
@@ -585,7 +579,7 @@ class AppTheme {
       borderRadius: BorderRadius.circular(25),
     boxShadow: [
       BoxShadow(
-          color: primaryOrange.withOpacity(0.4),
+          color: primaryOrange.withValues(alpha: 0.4),
           blurRadius: 15,
           offset: const Offset(0, 5),
       ),

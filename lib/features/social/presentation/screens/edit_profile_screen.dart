@@ -466,7 +466,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               ),
               child: const Row(
                 children: [
-                  Icon(Icons.sports_football, color: Colors.white54),
+                  Icon(Icons.sports_soccer, color: Colors.white54),
                   SizedBox(width: 12),
                   Text(
                     'No favorite teams selected',

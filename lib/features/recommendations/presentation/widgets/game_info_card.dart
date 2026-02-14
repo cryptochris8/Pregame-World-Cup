@@ -85,7 +85,7 @@ class GameInfoCard extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Icon(
-                      Icons.sports_football,
+                      Icons.sports_soccer,
                       color: ThemeHelper.favoriteColor,
                       size: 24
                     ),

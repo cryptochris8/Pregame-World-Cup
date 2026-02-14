@@ -227,7 +227,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                 text: 'Check-in',
               ),
               Tab(
-                icon: Icon(Icons.sports_football),
+                icon: Icon(Icons.sports_soccer),
                 text: 'Game',
               ),
               Tab(
@@ -338,7 +338,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
             controller: _gameController,
             decoration: InputDecoration(
               labelText: 'Game Title',
-              prefixIcon: const Icon(Icons.sports_football),
+              prefixIcon: const Icon(Icons.sports_soccer),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),

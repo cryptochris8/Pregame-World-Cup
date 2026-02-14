@@ -76,7 +76,7 @@ class SocialStatsCard extends StatelessWidget {
               
               Expanded(
                 child: _buildStatItem(
-                  icon: Icons.sports_football,
+                  icon: Icons.sports_soccer,
                   label: 'Games',
                   value: stats.gamesAttended.toString(),
                   onTap: onGamesPressed,

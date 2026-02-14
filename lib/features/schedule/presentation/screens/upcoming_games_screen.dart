@@ -247,7 +247,7 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    _showFavoritesOnly ? Icons.favorite_border : Icons.sports_football,
+                    _showFavoritesOnly ? Icons.favorite_border : Icons.sports_soccer,
                     size: 64,
                     color: ThemeHelper.favoriteColor, // Orange color
                   ),
@@ -318,13 +318,13 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.sports_football,
+                Icons.sports_soccer,
                 size: 64,
                 color: ThemeHelper.favoriteColor, // Orange color
               ),
               const SizedBox(height: 16),
               const Text(
-                'Welcome to Pregame Football!',
+                'Welcome to Pregame World Cup!',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

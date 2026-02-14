@@ -88,7 +88,7 @@ class FavoriteTeamsSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Icon(
-              Icons.sports_football,
+              Icons.sports_soccer,
               color: Colors.white,
               size: 24,
             ),
@@ -116,7 +116,7 @@ class FavoriteTeamsSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
-            Icons.sports_football,
+            Icons.sports_soccer,
             size: 64,
             color: Colors.grey[400],
           ),

@@ -2,20 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'dart:developer' as developer;
 import 'package:flutter/foundation.dart';
-import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'l10n/app_localizations.dart';
 
-import 'services/payment_service.dart';
 import 'features/schedule/presentation/bloc/schedule_bloc.dart';
 
-import 'features/social/domain/entities/user_profile.dart';
 import 'features/navigation/main_navigation_screen.dart';
 import 'features/auth/presentation/screens/login_screen.dart';
 import 'features/auth/presentation/screens/email_verification_screen.dart';
@@ -23,14 +18,12 @@ import 'features/auth/domain/services/auth_service.dart';
 import 'firebase_options.dart';
 import 'injection_container.dart' as di;
 import 'core/services/cache_service.dart';
-import './core/ai/services/ai_service.dart';
 import './core/ai/services/ai_historical_knowledge_service.dart';
 import './core/ai/services/multi_provider_ai_service.dart';
 import 'core/entities/game_intelligence.dart';
 import 'config/app_theme.dart';
 import 'core/services/firebase_app_check_service.dart';
 import 'config/api_keys.dart';
-import 'core/services/logging_service.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/ad_service.dart';
 import 'core/services/analytics_service.dart';
@@ -204,7 +197,7 @@ Future<void> main() async {
   _initializeAIServicesBackground();
 
   // Step 7.6: AI Knowledge Base Initialization (Background)
-  // DISABLED: College football AI knowledge base not needed for World Cup app
+  // DISABLED: Legacy AI knowledge base not needed for World Cup app
   // debugLog('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
   // _initializeAIKnowledgeBaseBackground();
 

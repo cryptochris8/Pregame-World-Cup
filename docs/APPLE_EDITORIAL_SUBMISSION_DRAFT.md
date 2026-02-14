@@ -1,7 +1,7 @@
 # Apple App Store Editorial Feature - Submission Draft
 
 > **Status:** DRAFT - Ready to submit when TestFlight authorization is complete
-> **Created:** February 2025
+> **Created:** February 2026
 > **Nomination Type:** App Launch
 
 ---
@@ -230,5 +230,5 @@ The 2026 World Cup represents a once-in-a-generation opportunity:
 
 ---
 
-*Document created: February 2025*
+*Document created: February 2026*
 *Reference: docs/MARKETING_STRATEGY.md (lines 178-586)*

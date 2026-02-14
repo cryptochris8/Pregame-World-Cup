@@ -213,7 +213,7 @@ class NotificationItemWidget extends StatelessWidget {
       case NotificationType.venueRecommendation:
         return Icons.rate_review;
       case NotificationType.gameInvite:
-        return Icons.sports_football;
+        return Icons.sports_soccer;
       case NotificationType.newFollower:
         return Icons.person_add;
       case NotificationType.groupInvite:
