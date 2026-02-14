@@ -149,7 +149,7 @@ class AIService {
     required List<String> nearbyVenues,
   }) async {
     const systemMessage = '''
-You are a helpful assistant that recommends sports venues for college football fans. 
+You are a helpful assistant that recommends sports venues for World Cup fans.
 Consider the user's preferences, the game context, and nearby venues to provide personalized recommendations.
 Keep responses concise and focused on 1-2 top recommendations with brief explanations.
 ''';
@@ -179,7 +179,7 @@ Recommend the best venue(s) for watching this game:
     required Map<String, dynamic> gameStats,
   }) async {
     const systemMessage = '''
-You are a sports analyst providing brief game predictions for college football.
+You are a sports analyst providing brief match predictions for international soccer.
 Base your prediction on team performance, statistics, and context.
 Keep responses to 2-3 sentences maximum.
 ''';
@@ -326,7 +326,7 @@ Provide a brief prediction with key factors:
   /// Analyze user behavior patterns using AI
   Future<Map<String, dynamic>> analyzeUserBehavior(Map<String, dynamic> behaviorData) async {
     const systemMessage = '''
-You are an AI analytics expert that analyzes user behavior patterns for a college football app.
+You are an AI analytics expert that analyzes user behavior patterns for a World Cup fan app.
 Analyze the provided user interaction data and generate insights about their preferences.
 Return a JSON response with team affinity scores, interaction patterns, preferred game types, and engagement metrics.
 ''';
@@ -381,7 +381,7 @@ Generate insights in this JSON format:
     int limit = 10,
   }) async {
     const systemMessage = '''
-You are an AI recommendation engine for college football games.
+You are an AI recommendation engine for World Cup matches.
 Rank upcoming games based on user preferences and behavior patterns.
 Consider team affinity, interaction patterns, and user engagement history.
 ''';
@@ -439,7 +439,7 @@ Rank the top $limit games for this user and return as JSON array:
     Map<String, dynamic>? historicalData,
   }) async {
     const systemMessage = '''
-You are a college football expert providing detailed game predictions.
+You are an international soccer expert providing detailed match predictions.
 Analyze team statistics, historical data, and game context to predict outcomes.
 Provide predictions with confidence scores and key factors.
 ''';
@@ -630,9 +630,9 @@ Provide prediction in JSON format:
     
     return '''$winner is projected to win in what should be a $marginText. 
     
-The prediction is based on statistical analysis of team performance metrics, including offensive efficiency, defensive strength, and home field advantage factors. $homeTeam benefits from playing at home, which typically provides a 3-point advantage in college football.
+The prediction is based on statistical analysis of team performance metrics, including attacking efficiency, defensive organization, and home advantage factors. $homeTeam benefits from playing at home, which historically provides an edge in international soccer.
 
-Key factors include rushing attack effectiveness, pass defense capabilities, and special teams performance. Both teams have shown competitive play this season, making this an intriguing matchup for fans and analysts alike.''';
+Key factors include possession control, set-piece quality, and goalkeeping form. Both teams have shown competitive play in recent matches, making this an intriguing matchup for fans and analysts alike.''';
   }
   
   /// Generate key factors based on teams
@@ -705,7 +705,7 @@ Key factors include rushing attack effectiveness, pass defense capabilities, and
     required Map<String, dynamic> context,
   }) async {
     const systemMessage = '''
-You are a venue recommendation expert helping college football fans find the best spots.
+You are a venue recommendation expert helping World Cup fans find the best spots.
 Analyze venue data, user behavior, and game context to provide personalized recommendations.
 Consider factors like venue type, location, ratings, user preferences, and game predictions.
 ''';

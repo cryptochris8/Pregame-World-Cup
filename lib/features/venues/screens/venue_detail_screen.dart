@@ -108,8 +108,8 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
       );
       
       // If the venue has geometry/location, use it; otherwise use a default location
-      double lat = 33.9425; // Default to Atlanta area
-      double lng = -83.3431;
+      double lat = 40.8128; // Default to MetLife Stadium area (World Cup Final venue)
+      double lng = -74.0742;
       
       // Try to get location from the venue if available
       if (widget.venue.geometry?.location != null) {

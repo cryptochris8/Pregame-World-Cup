@@ -7,6 +7,8 @@ import '../widgets/create_activity_bottom_sheet.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/animations/animated_button.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import 'package:share_plus/share_plus.dart';
+import 'user_profile_screen.dart';
 
 class ActivityFeedScreen extends StatefulWidget {
   const ActivityFeedScreen({super.key});
@@ -399,19 +401,17 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   }
 
   void _handleShare(ActivityFeedItem activity) {
-    // TODO: Implement sharing functionality
-    // Sharing activity
-    
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Sharing feature coming soon!'),
-        backgroundColor: Colors.blue,
-      ),
-    );
+    final text = '${activity.userName}: ${activity.content}\n\n'
+        'Shared from Pregame World Cup 2026';
+    Share.share(text, subject: 'Pregame World Cup 2026');
   }
 
   void _navigateToProfile(String userId) {
-    // TODO: Navigate to user profile
-    // Navigate to profile
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => UserProfileScreen(userId: userId),
+      ),
+    );
   }
 } 

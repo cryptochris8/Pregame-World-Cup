@@ -11,7 +11,7 @@ import 'dart:math' as math;
 /// Enhanced Player Service
 /// 
 /// This service provides real player information instead of mock data:
-/// - Real player rosters from NCAA/ESPN APIs
+/// - Real player rosters from sports APIs
 /// - Statistical analysis and player ratings
 /// - Key player identification for matchups
 /// - Player storylines and backgrounds
@@ -315,7 +315,7 @@ Keep it engaging and informative.
       
       final storyline = await _aiService.generateCompletion(
         prompt: prompt,
-        systemMessage: 'You are a college football analyst creating player storylines.',
+        systemMessage: 'You are a soccer analyst creating player storylines.',
         maxTokens: 150,
         temperature: 0.4,
       );
@@ -642,7 +642,7 @@ Keep it engaging and informative.
   String _getTeamKey(String teamName) {
     // Updated with correct SportsData.io team abbreviations
     final teamKeys = {
-      // SEC Teams - Using correct SportsData.io keys
+      // Legacy team mappings - to be replaced with World Cup 2026 teams
       'Alabama Crimson Tide': 'BAMA',
       'Alabama': 'BAMA',
       'Auburn Tigers': 'AUB', 

@@ -153,9 +153,9 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
   /// Build game statistics for AI analysis
   Map<String, dynamic> _buildGameStats() {
     final stats = <String, dynamic>{
-      'gameType': 'College Football',
-      'venue': 'Home game for ${widget.game.homeTeamName}',
-      'season': '2025',
+      'gameType': 'World Cup',
+      'venue': 'Match at ${widget.game.stadium?.name ?? 'TBD'}',
+      'season': '2026',
     };
 
     if (widget.game.week != null) {
@@ -178,7 +178,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
       if (hour >= 19) {
         stats['timeContext'] = 'Night game - prime time atmosphere';
       } else if (hour >= 15) {
-        stats['timeContext'] = 'Afternoon game - traditional college football';
+        stats['timeContext'] = 'Afternoon match - peak viewing time';
       } else {
         stats['timeContext'] = 'Early game - teams need to start fast';
       }
@@ -251,10 +251,10 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     final awayTeam = widget.game.awayTeamName;
     
     final summaries = [
-      '$awayTeam travels to face $homeTeam in what promises to be an exciting college football matchup.',
-      'This $awayTeam vs $homeTeam game features two competitive teams looking to make their mark.',
-      '$homeTeam hosts $awayTeam in a key conference game with important implications.',
-      'Both $homeTeam and $awayTeam enter this matchup with high expectations and playoff aspirations.',
+      '$awayTeam faces $homeTeam in what promises to be an exciting World Cup matchup.',
+      'This $awayTeam vs $homeTeam match features two competitive nations looking to advance.',
+      '$homeTeam takes on $awayTeam in a key World Cup match with tournament implications.',
+      'Both $homeTeam and $awayTeam enter this matchup with high expectations and advancement aspirations.',
     ];
     
     final random = Random();
@@ -299,8 +299,8 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
       LoggingService.info('📊 Prediction: ${prediction.predictedHomeScore}-${prediction.predictedAwayScore}, Confidence: ${(prediction.confidence * 100).toInt()}%', tag: 'EnhancedInsights');
     }
 
-    // Load additional NCAA data in background (don't block UI)
-    _loadNcaaDataInBackground();
+    // Load additional player data in background (don't block UI)
+    _loadPlayerDataInBackground();
   }
 
   /// Build enhanced analysis data from new service
@@ -878,16 +878,16 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     ];
   }
 
-  /// Load NCAA data in background without blocking UI
-  void _loadNcaaDataInBackground() {
-    // Load NCAA data in background without blocking the UI
-    _loadNcaaData().catchError((e) {
-      LoggingService.warning('Background NCAA data loading failed: $e', tag: 'EnhancedInsights');
+  /// Load player data in background without blocking UI
+  void _loadPlayerDataInBackground() {
+    // Load player data in background without blocking the UI
+    _loadPlayerData().catchError((e) {
+      LoggingService.warning('Background player data loading failed: $e', tag: 'EnhancedInsights');
     });
   }
 
-  /// Load NCAA data for team statistics, top performers, and matchup history
-  Future<void> _loadNcaaData() async {
+  /// Load player data for team statistics, top performers, and matchup history
+  Future<void> _loadPlayerData() async {
     try {
       // Generate series record and key factors
       _generateSeriesRecord();
@@ -908,9 +908,9 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
 
   /// Map team names to ESPN API team IDs
   String _getEspnTeamId(String teamName) {
-    // Comprehensive mapping of college football team names to ESPN API IDs
+    // Legacy mapping of team names to ESPN API IDs (used for historical data)
     final Map<String, String> teamMapping = {
-      // SEC Teams
+      // Legacy teams
       'Alabama Crimson Tide': '333',
       'Alabama': '333',
       'ALA': '333', // Alabama abbreviation
@@ -1154,14 +1154,14 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     return '333'; // Alabama as fallback
   }
 
-  /// Convert NCAA API performers data to Player objects
+  /// Convert API performers data to Player objects
   Map<String, List<Player>> _convertPerformersToPlayers(Map<String, List<Map<String, dynamic>>> performersData) {
     final Map<String, List<Player>> players = {};
     
     performersData.forEach((category, playerList) {
       players[category] = playerList.map((playerData) {
         try {
-          return Player.fromNCAAApi(playerData);
+          return Player.fromApi(playerData);
         } catch (e) {
           // Create a safe fallback player
           return Player(
@@ -1223,67 +1223,57 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     final homeTeam = widget.game.homeTeamName;
     final awayTeam = widget.game.awayTeamName;
     
-    // SEC rivalries and known series
+    // World Cup rivalries and known series
     final Map<String, Map<String, String>> knownSeries = {
-      'Alabama': {
-        'Auburn': 'Alabama leads series 50-37-1',
-        'LSU': 'Alabama leads series 56-26-5',
-        'Tennessee': 'Alabama leads series 59-39-7',
-        'Georgia': 'Series closely contested',
-        'Florida': 'Alabama leads series 27-14',
-        'Arkansas': 'Alabama leads series 22-8',
-        'Mississippi State': 'Alabama leads series 85-18-3',
-        'Ole Miss': 'Alabama leads series 55-10-2',
-        'Missouri': 'Alabama leads series 4-1',
-        'South Carolina': 'Alabama leads series 13-3',
-        'Texas A&M': 'Alabama leads series 8-1',
-        'Vanderbilt': 'Alabama leads series 61-20-4',
-        'Kentucky': 'Alabama leads series 39-2-1',
+      'Brazil': {
+        'Argentina': 'Historic rivalry - closely contested',
+        'Germany': 'Brazil leads in World Cup meetings',
+        'France': 'Competitive World Cup history',
+        'Uruguay': 'South American classic rivalry',
+        'Italy': 'Multiple World Cup encounters',
       },
-      'Auburn': {
-        'Alabama': 'Alabama leads series 50-37-1',
-        'Georgia': 'Auburn leads series 64-56-8',
-        'LSU': 'Series closely contested',
-        'Tennessee': 'Auburn leads series 31-26-1',
-        'Florida': 'Series closely contested',
-        'Arkansas': 'Auburn leads series 19-12-1',
-        'Mississippi State': 'Auburn leads series 48-35-2',
-        'Ole Miss': 'Auburn leads series 35-12',
-        'Missouri': 'Auburn leads series 3-1',
-        'South Carolina': 'Auburn leads series 16-3-2',
-        'Texas A&M': 'Auburn leads series 7-4',
-        'Vanderbilt': 'Auburn leads series 20-4-1',
-        'Kentucky': 'Auburn leads series 18-3',
+      'Argentina': {
+        'Brazil': 'Historic rivalry - closely contested',
+        'Germany': 'Multiple World Cup finals between them',
+        'England': 'Heated rivalry with iconic World Cup moments',
+        'France': 'Met in 2022 World Cup final',
+        'Netherlands': 'Dramatic World Cup encounters',
       },
-      'Georgia': {
-        'Alabama': 'Series closely contested',
-        'Auburn': 'Auburn leads series 64-56-8',
-        'Florida': 'Georgia leads series 54-44-2',
-        'Tennessee': 'Georgia leads series 26-23-2',
-        'LSU': 'Series closely contested',
-        'Arkansas': 'Georgia leads series 11-6',
-        'Mississippi State': 'Georgia leads series 19-6',
-        'Ole Miss': 'Georgia leads series 10-6',
-        'Missouri': 'Georgia leads series 4-2',
-        'South Carolina': 'Georgia leads series 54-19-2',
-        'Texas A&M': 'Series tied 3-3',
-        'Vanderbilt': 'Georgia leads series 21-3-2',
-        'Kentucky': 'Georgia leads series 63-12-2',
+      'Germany': {
+        'Brazil': 'Germany won memorable 7-1 in 2014',
+        'Argentina': 'Multiple World Cup finals between them',
+        'Italy': 'European rivals with long World Cup history',
+        'France': 'European powerhouse rivalry',
+        'Netherlands': 'Intense European derby',
+        'England': 'Historic World Cup rivalry',
       },
-      'LSU': {
-        'Alabama': 'Alabama leads series 56-26-5',
-        'Auburn': 'Series closely contested',
-        'Georgia': 'Series closely contested',
-        'Florida': 'Series closely contested',
-        'Tennessee': 'LSU leads series 18-11-2',
-        'Arkansas': 'LSU leads series 43-22-2',
-        'Mississippi State': 'LSU leads series 74-36-3',
-        'Ole Miss': 'LSU leads series 64-46-4',
-        'Missouri': 'LSU leads series 3-2',
-        'South Carolina': 'LSU leads series 18-1',
-        'Texas A&M': 'LSU leads series 33-21-3',
-        'Vanderbilt': 'LSU leads series 18-1-1',
-        'Kentucky': 'LSU leads series 17-3',
+      'France': {
+        'Argentina': 'Met in 2022 World Cup final',
+        'Germany': 'European powerhouse rivalry',
+        'Brazil': 'Competitive World Cup history',
+        'Italy': 'Multiple World Cup encounters',
+        'Spain': 'European neighbors rivalry',
+      },
+      'England': {
+        'Argentina': 'Heated rivalry with iconic World Cup moments',
+        'Germany': 'Historic World Cup rivalry',
+        'Brazil': 'Competitive international series',
+        'Scotland': 'Oldest international rivalry in football',
+      },
+      'Spain': {
+        'Portugal': 'Iberian derby - intense neighbors',
+        'Italy': 'Mediterranean classic rivalry',
+        'France': 'European neighbors rivalry',
+        'Germany': 'European powerhouse rivalry',
+      },
+      'Mexico': {
+        'United States': 'CONCACAF rivals - Dos a Cero',
+        'Argentina': 'Competitive World Cup history',
+        'Brazil': 'Competitive international series',
+      },
+      'United States': {
+        'Mexico': 'CONCACAF rivals - Dos a Cero',
+        'England': 'Notable World Cup encounters',
       },
     };
     
@@ -1311,50 +1301,26 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
 
   /// Get team key for series lookup
   String _getTeamKey(String teamName) {
-    if (teamName.contains('Alabama')) return 'Alabama';
-    if (teamName.contains('Auburn')) return 'Auburn';
-    if (teamName.contains('Georgia')) return 'Georgia';
-    if (teamName.contains('LSU')) return 'LSU';
-    if (teamName.contains('Florida')) return 'Florida';
-    if (teamName.contains('Tennessee')) return 'Tennessee';
-    if (teamName.contains('Arkansas')) return 'Arkansas';
-    if (teamName.contains('Mississippi State')) return 'Mississippi State';
-    if (teamName.contains('Ole Miss') || teamName.contains('Mississippi')) return 'Ole Miss';
-    if (teamName.contains('Missouri')) return 'Missouri';
-    if (teamName.contains('South Carolina')) return 'South Carolina';
-    if (teamName.contains('Texas A&M')) return 'Texas A&M';
-    if (teamName.contains('Vanderbilt')) return 'Vanderbilt';
-    if (teamName.contains('Kentucky')) return 'Kentucky';
-    return teamName;
+    // Return the country name from the team name
+    return teamName.replaceAll(RegExp(r'\s*\(.*\)'), '').trim();
   }
 
-  /// Check if teams are in the same conference
+  /// Check if teams are in the same confederation
   bool _areInSameConference(String team1, String team2) {
-    final secTeams = ['Alabama', 'Auburn', 'Georgia', 'LSU', 'Florida', 'Tennessee', 
-                      'Arkansas', 'Mississippi State', 'Ole Miss', 'Missouri', 
-                      'South Carolina', 'Texas A&M', 'Vanderbilt', 'Kentucky'];
-    
-    final accTeams = ['Clemson', 'Florida State', 'Miami', 'North Carolina', 
-                      'NC State', 'Duke', 'Wake Forest', 'Virginia Tech', 
-                      'Virginia', 'Pittsburgh', 'Boston College', 'Georgia Tech', 
-                      'Louisville', 'Syracuse'];
-    
-    final big10Teams = ['Ohio State', 'Michigan', 'Penn State', 'Wisconsin', 
-                        'Iowa', 'Minnesota', 'Illinois', 'Indiana', 'Maryland', 
-                        'Michigan State', 'Nebraska', 'Northwestern', 'Purdue', 'Rutgers'];
-    
-    final isTeam1SEC = secTeams.any((team) => team1.contains(team));
-    final isTeam2SEC = secTeams.any((team) => team2.contains(team));
-    
-    final isTeam1ACC = accTeams.any((team) => team1.contains(team));
-    final isTeam2ACC = accTeams.any((team) => team2.contains(team));
-    
-    final isTeam1Big10 = big10Teams.any((team) => team1.contains(team));
-    final isTeam2Big10 = big10Teams.any((team) => team2.contains(team));
-    
-    return (isTeam1SEC && isTeam2SEC) || 
-           (isTeam1ACC && isTeam2ACC) || 
-           (isTeam1Big10 && isTeam2Big10);
+    final conmebol = ['Brazil', 'Argentina', 'Uruguay', 'Colombia', 'Ecuador', 'Paraguay', 'Chile', 'Peru', 'Venezuela', 'Bolivia'];
+    final uefa = ['France', 'Germany', 'Spain', 'England', 'Italy', 'Netherlands', 'Portugal', 'Belgium', 'Croatia', 'Denmark',
+                   'Switzerland', 'Austria', 'Serbia', 'Scotland', 'Poland', 'Ukraine', 'Turkey', 'Wales', 'Czech Republic', 'Hungary'];
+    final concacaf = ['Mexico', 'United States', 'Canada', 'Costa Rica', 'Jamaica', 'Honduras', 'Panama', 'El Salvador'];
+    final afc = ['Japan', 'South Korea', 'Australia', 'Saudi Arabia', 'Iran', 'Qatar', 'Iraq'];
+    final caf = ['Morocco', 'Senegal', 'Nigeria', 'Cameroon', 'Ghana', 'Egypt', 'Tunisia', 'Algeria'];
+
+    bool inGroup(List<String> group, String team) => group.any((t) => team.contains(t));
+
+    return (inGroup(conmebol, team1) && inGroup(conmebol, team2)) ||
+           (inGroup(uefa, team1) && inGroup(uefa, team2)) ||
+           (inGroup(concacaf, team1) && inGroup(concacaf, team2)) ||
+           (inGroup(afc, team1) && inGroup(afc, team2)) ||
+           (inGroup(caf, team1) && inGroup(caf, team2));
   }
 
   /// Generate key factors based on team statistics and history

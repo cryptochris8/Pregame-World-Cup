@@ -1,4 +1,4 @@
-enum ChatMessageType { user, bot }
+enum ChatMessageType { user, bot, thinking }
 
 class ChatMessage {
   final String text;
@@ -10,4 +10,4 @@ class ChatMessage {
     required this.type,
     DateTime? timestamp,
   }) : timestamp = timestamp ?? DateTime.now();
-} 
+}

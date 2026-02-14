@@ -266,7 +266,7 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
                   const SizedBox(height: 8),
                   Text(
                     _showFavoritesOnly && _favoriteTeams.isEmpty
-                        ? 'Set your favorite SEC teams to see filtered games'
+                        ? 'Set your favorite teams to see filtered matches'
                         : 'Check back later for the latest schedule',
                     style: const TextStyle(
                       fontSize: 14,

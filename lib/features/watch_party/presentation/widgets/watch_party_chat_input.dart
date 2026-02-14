@@ -25,6 +25,7 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
   final TextEditingController _controller = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   bool _hasText = false;
+  bool _showEmojiPicker = false;
 
   @override
   void initState() {
@@ -76,6 +77,9 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
             // Reply indicator
             if (widget.replyingTo != null) _buildReplyIndicator(),
 
+            // Emoji picker
+            if (_showEmojiPicker) _buildEmojiPicker(),
+
             // Input row
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -84,10 +88,17 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
                   // Emoji button
                   IconButton(
                     onPressed: () {
-                      // TODO: Show emoji picker
+                      setState(() => _showEmojiPicker = !_showEmojiPicker);
+                      if (_showEmojiPicker) {
+                        _focusNode.unfocus();
+                      }
                     },
-                    icon: const Icon(Icons.emoji_emotions_outlined),
-                    color: Colors.grey[600],
+                    icon: Icon(_showEmojiPicker
+                        ? Icons.keyboard
+                        : Icons.emoji_emotions_outlined),
+                    color: _showEmojiPicker
+                        ? const Color(0xFF1E3A8A)
+                        : Colors.grey[600],
                   ),
 
                   // Text field
@@ -136,6 +147,57 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildEmojiPicker() {
+    const emojis = [
+      '⚽', '🏆', '🥅', '🎯', '🔥', '💪', '👏', '🙌',
+      '😀', '😂', '🤣', '😍', '🥳', '😎', '🤔', '😱',
+      '👍', '👎', '❤️', '💔', '🎉', '🏟️', '⭐', '🌟',
+      '🇺🇸', '🇲🇽', '🇨🇦', '🇧🇷', '🇦🇷', '🇫🇷', '🇩🇪', '🇪🇸',
+    ];
+
+    return Container(
+      height: 160,
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        color: Colors.grey[50],
+        border: Border(
+          bottom: BorderSide(color: Colors.grey[200]!),
+        ),
+      ),
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 8,
+          mainAxisSpacing: 4,
+          crossAxisSpacing: 4,
+        ),
+        itemCount: emojis.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              final text = _controller.text;
+              final selection = _controller.selection;
+              final newText = text.replaceRange(
+                selection.start,
+                selection.end,
+                emojis[index],
+              );
+              _controller.text = newText;
+              _controller.selection = TextSelection.collapsed(
+                offset: selection.start + emojis[index].length,
+              );
+            },
+            child: Center(
+              child: Text(
+                emojis[index],
+                style: const TextStyle(fontSize: 24),
+              ),
+            ),
+          );
+        },
       ),
     );
   }

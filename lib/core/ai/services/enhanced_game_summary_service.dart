@@ -149,7 +149,7 @@ class EnhancedGameSummaryService {
       
       final aiResponse = await _aiService.generateCompletion(
         prompt: prompt,
-        systemMessage: '''You are an expert college football writer and analyst. Create engaging, informative game summaries that capture the excitement and significance of college football matchups. Focus on storytelling while maintaining accuracy and providing valuable insights for fans.''',
+        systemMessage: '''You are an expert soccer writer and analyst. Create engaging, informative match previews that capture the excitement and significance of World Cup matchups. Focus on storytelling while maintaining accuracy and providing valuable insights for fans.''',
         maxTokens: 600,
         temperature: 0.4,
       );
@@ -171,7 +171,7 @@ class EnhancedGameSummaryService {
   ) {
     final buffer = StringBuffer();
     
-    buffer.writeln('COLLEGE FOOTBALL GAME PREVIEW');
+    buffer.writeln('WORLD CUP MATCH PREVIEW');
     buffer.writeln('============================');
     buffer.writeln('');
     
@@ -205,7 +205,7 @@ class EnhancedGameSummaryService {
       buffer.writeln('- National television audience');
     }
     if (gameContext['stakes']['conferenceImplications'] == true) {
-      buffer.writeln('- Conference championship implications');
+      buffer.writeln('- Tournament advancement implications');
     }
     buffer.writeln('- Stadium capacity: ${gameContext['venue']['capacity']} (${gameContext['venue']['atmosphere']})');
     buffer.writeln('');
@@ -217,7 +217,7 @@ class EnhancedGameSummaryService {
     buffer.writeln('3. Discusses historical context and rivalry elements');
     buffer.writeln('4. Concludes with what makes this game must-watch');
     buffer.writeln('');
-    buffer.writeln('Write in an engaging, informative style that captures the passion of college football.');
+    buffer.writeln('Write in an engaging, informative style that captures the passion of international soccer.');
     
     return buffer.toString();
   }
@@ -342,22 +342,34 @@ class EnhancedGameSummaryService {
   /// Analyze rivalry status
   Map<String, dynamic> _analyzeRivalryStatus(String team1, String team2) {
     final rivalries = {
-      'Alabama Crimson Tide': {
-        'Auburn Tigers': {'intensity': 'Intense', 'name': 'Iron Bowl'},
-        'Tennessee Volunteers': {'intensity': 'Historic', 'name': 'Third Saturday in October'},
-        'LSU Tigers': {'intensity': 'Heated', 'name': 'SEC West Rivalry'},
+      'Brazil': {
+        'Argentina': {'intensity': 'Intense', 'name': 'Superclásico de las Américas'},
+        'Uruguay': {'intensity': 'Historic', 'name': 'South American Classic'},
       },
-      'Auburn Tigers': {
-        'Alabama Crimson Tide': {'intensity': 'Intense', 'name': 'Iron Bowl'},
-        'Georgia Bulldogs': {'intensity': 'Deep South\'s Oldest Rivalry', 'name': 'Deep South\'s Oldest Rivalry'},
+      'Argentina': {
+        'Brazil': {'intensity': 'Intense', 'name': 'Superclásico de las Américas'},
+        'England': {'intensity': 'Historic', 'name': 'Historic Rivalry'},
+        'Germany': {'intensity': 'Heated', 'name': 'World Cup Classic'},
       },
-      'Florida Gators': {
-        'Georgia Bulldogs': {'intensity': 'Historic', 'name': 'World\'s Largest Outdoor Cocktail Party'},
-        'Tennessee Volunteers': {'intensity': 'Heated', 'name': 'SEC East Rivalry'},
+      'Germany': {
+        'Netherlands': {'intensity': 'Intense', 'name': 'European Classic'},
+        'Italy': {'intensity': 'Historic', 'name': 'Historic European Rivalry'},
+        'England': {'intensity': 'Heated', 'name': 'World Cup Rivals'},
       },
-      'Georgia Bulldogs': {
-        'Florida Gators': {'intensity': 'Historic', 'name': 'World\'s Largest Outdoor Cocktail Party'},
-        'Auburn Tigers': {'intensity': 'Historic', 'name': 'Deep South\'s Oldest Rivalry'},
+      'England': {
+        'Germany': {'intensity': 'Heated', 'name': 'World Cup Rivals'},
+        'Scotland': {'intensity': 'Intense', 'name': 'The Oldest International Rivalry'},
+        'Argentina': {'intensity': 'Historic', 'name': 'Historic Rivalry'},
+      },
+      'Spain': {
+        'Portugal': {'intensity': 'Intense', 'name': 'Iberian Derby'},
+        'Italy': {'intensity': 'Heated', 'name': 'Mediterranean Classic'},
+      },
+      'Mexico': {
+        'United States': {'intensity': 'Intense', 'name': 'Dos a Cero Rivalry'},
+      },
+      'United States': {
+        'Mexico': {'intensity': 'Intense', 'name': 'Dos a Cero Rivalry'},
       },
     };
     
@@ -399,16 +411,16 @@ class EnhancedGameSummaryService {
         ],
       },
       'quickFacts': [
-        'SEC Conference game',
-        'Home field advantage',
+        'FIFA World Cup 2026',
+        'Host nation advantage',
         'Competitive matchup expected',
       ],
       'whyWatch': [
-        'High-level college football',
-        'Conference championship implications',
-        'Talented players on both teams',
+        'World-class international soccer',
+        'Tournament advancement implications',
+        'Star players on both teams',
       ],
-      'summary': 'This ${game.awayTeamName} vs ${game.homeTeamName} matchup promises to be an exciting college football game with significant implications.',
+      'summary': 'This ${game.awayTeamName} vs ${game.homeTeamName} matchup promises to be an exciting World Cup match with significant implications.',
       'generatedAt': DateTime.now().toIso8601String(),
       'source': 'Intelligent Fallback Summary',
     };
@@ -418,16 +430,16 @@ class EnhancedGameSummaryService {
   String _generateFallbackNarrative(GameSchedule game, Map<String, dynamic> teamData, Map<String, dynamic> gameContext) {
     final homeTeam = game.homeTeamName;
     final awayTeam = game.awayTeamName;
-    final venue = game.stadium?.name ?? 'a major college football venue';
-    
+    final venue = game.stadium?.name ?? 'a major World Cup venue';
+
     return '''
-$awayTeam travels to face $homeTeam in what promises to be an exciting college football matchup at $venue. 
-    
-Both teams enter this game with high expectations and plenty to play for as the season progresses. The home field advantage could prove crucial, as $homeTeam looks to capitalize on their familiar surroundings and passionate fan support.
-    
-This conference matchup carries significant implications for both teams' postseason aspirations. With talented rosters on both sides, fans can expect a competitive game featuring the speed, athleticism, and strategic depth that makes college football so compelling.
-    
-The atmosphere is expected to be electric, making this a must-watch game for college football enthusiasts. Both teams will be looking to make a statement and gain momentum as they continue their pursuit of conference and national championships.
+$awayTeam faces $homeTeam in what promises to be an exciting World Cup matchup at $venue.
+
+Both teams enter this match with high expectations and plenty to play for as the tournament progresses. The crowd atmosphere could prove crucial, as passionate supporters from both nations fill the stands.
+
+This matchup carries significant implications for both teams' advancement aspirations. With world-class talent on both sides, fans can expect a competitive match featuring the skill, tactical depth, and intensity that makes the World Cup so compelling.
+
+The atmosphere is expected to be electric, making this a must-watch match for soccer fans worldwide. Both teams will be looking to make a statement and build momentum in their pursuit of the ultimate prize.
     ''';
   }
   
@@ -534,8 +546,8 @@ The atmosphere is expected to be electric, making this a must-watch game for col
   };
   
   List<String> _generateKeyStorylines(Map<String, dynamic> teamData, Map<String, dynamic> historicalData, Map<String, dynamic> gameContext) => [
-    'Conference championship implications',
-    'Home field advantage factor',
+    'Tournament advancement implications',
+    'Crowd atmosphere factor',
     'Key player matchups to watch',
   ];
   
@@ -548,27 +560,27 @@ The atmosphere is expected to be electric, making this a must-watch game for col
   String _calculateGameSignificance(Map<String, dynamic> teamData, Map<String, dynamic> gameContext) => 'High';
   
   List<String> _generateWatchabilityFactors(Map<String, dynamic> teamData, Map<String, dynamic> historicalData, Map<String, dynamic> gameContext) => [
-    'High-level college football',
-    'Conference implications',
-    'Talented rosters',
+    'World-class international soccer',
+    'Tournament implications',
+    'Star-studded squads',
     'Great atmosphere',
   ];
   
   List<String> _generateQuickFacts(Map<String, dynamic> structured) => [
-    'SEC Conference matchup',
-    'Home field advantage',
-    'National TV coverage',
+    'FIFA World Cup 2026',
+    'Host nation atmosphere',
+    'Global TV coverage',
   ];
   
   List<String> _generateWhyWatch(Map<String, dynamic> structured) => [
-    'Elite college football talent',
-    'Conference championship implications',
+    'World-class soccer talent',
+    'Tournament advancement at stake',
     'Electric atmosphere',
     'Competitive matchup',
   ];
   
   String _generateExecutiveSummary(String narrative, Map<String, dynamic> structured) {
     final gameInfo = structured['gameInfo'] as Map<String, dynamic>;
-    return '${gameInfo['matchup']} promises to be an exciting college football matchup with significant implications for both teams.';
+    return '${gameInfo['matchup']} promises to be an exciting World Cup match with significant implications for both teams.';
   }
 } 

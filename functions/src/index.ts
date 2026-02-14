@@ -14,6 +14,7 @@ import axios from "axios";
 import * as functionsV1 from "firebase-functions/v1"; // HTTP client
 import { getSportsDataService } from "./sportsdata-service";
 import { getSportsDataFirebaseClient } from "./sportsdata-wrapper";
+import { checkRateLimit, RATE_LIMITS, cleanupExpiredRateLimits } from './rate-limiter';
 
 // Stripe functions will be exported at the bottom of this file
 
@@ -148,6 +149,7 @@ async function saveGamesToFirestore(games: any[]) {
 // Cloud Function to get nearby venues using Google Places API
 // Test function for SportsData API integration using custom wrapper
 export const testSportsDataWrapper = functions.https.onRequest(async (request, response) => {
+  if (!(await checkRateLimit(request, response, 'testSportsDataWrapper', RATE_LIMITS.SCHEDULE))) return;
   functions.logger.info("🧪 Testing SportsData API with Custom Wrapper");
   
   try {
@@ -223,6 +225,7 @@ export const testSportsDataWrapper = functions.https.onRequest(async (request, r
 
 // Legacy test function for SportsData API integration (direct API calls)
 export const testSportsDataSDK = functions.https.onRequest(async (request, response) => {
+  if (!(await checkRateLimit(request, response, 'testSportsDataSDK', RATE_LIMITS.SCHEDULE))) return;
   functions.logger.info("🧪 Testing SportsData API integration (Legacy Direct API)");
   
   try {
@@ -291,6 +294,8 @@ export const getNearbyVenuesHttp = functions.https.onRequest(async (request, res
     response.status(204).send('');
     return;
   }
+
+  if (!(await checkRateLimit(request, response, 'getNearbyVenuesHttp', RATE_LIMITS.VENUE))) return;
 
   functions.logger.info("getNearbyVenuesHttp function triggered!");
 
@@ -387,6 +392,8 @@ export const placePhotoProxy = functionsV1.https.onRequest(async (request, respo
     return;
   }
 
+  if (!(await checkRateLimit(request, response, 'placePhotoProxy', RATE_LIMITS.VENUE))) return;
+
   const photoReference = request.query.photoReference?.toString();
   const maxWidth = request.query.maxWidth?.toString() || '400';
 
@@ -423,6 +430,8 @@ export const placePhotoProxy = functionsV1.https.onRequest(async (request, respo
 });
 
 export const updateSchedule = functions.https.onRequest(async (request, response) => {
+  if (!(await checkRateLimit(request, response, 'updateSchedule', RATE_LIMITS.SCHEDULE))) return;
+
   functions.logger.info("updateSchedule function triggered!");
   functions.logger.info("Attempting to read SPORTSDATA_KEY env var. Found:", SPORTSDATA_API_KEY ? "Yes (hidden)" : "No!");
 
@@ -530,6 +539,7 @@ export const scheduledScheduleSync = functionsV1.pubsub.schedule('0 6 * * *')
 
 // Enhanced function to update schedule with rate limiting and caching
 export const updateScheduleEnhanced = functions.https.onRequest(async (request, response) => {
+  if (!(await checkRateLimit(request, response, 'updateScheduleEnhanced', RATE_LIMITS.SCHEDULE))) return;
   functions.logger.info("🚀 Enhanced schedule update triggered");
 
   if (!SPORTSDATA_API_KEY) {
@@ -604,6 +614,8 @@ export const updateScheduleEnhanced = functions.https.onRequest(async (request, 
 
 // Function to get cached schedule data (reduces API calls)
 export const getCachedSchedule = functions.https.onRequest(async (request, response) => {
+  if (!(await checkRateLimit(request, response, 'getCachedSchedule', RATE_LIMITS.SCHEDULE))) return;
+
   const season = request.query.season?.toString();
   const week = request.query.week?.toString();
   
@@ -643,6 +655,16 @@ export const getCachedSchedule = functions.https.onRequest(async (request, respo
     });
   }
 });
+
+// Scheduled cleanup for rate limit documents (runs daily)
+export const cleanupRateLimits = functionsV1.pubsub.schedule('0 3 * * *')
+  .timeZone('America/New_York')
+  .onRun(async () => {
+    functions.logger.info('Running scheduled rate limit cleanup');
+    const deleted = await cleanupExpiredRateLimits();
+    functions.logger.info('Rate limit cleanup complete, deleted ' + deleted + ' documents');
+    return null;
+  });
 
 // Export Stripe functions
 export {

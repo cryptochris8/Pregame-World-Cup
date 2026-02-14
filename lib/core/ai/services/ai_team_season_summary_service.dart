@@ -14,7 +14,7 @@ import 'ai_historical_knowledge_service.dart';
 /// from 2024 season. Creates detailed analysis including:
 /// - Season record and performance trends
 /// - Key players and statistics  
-/// - Bowl game appearances and results
+/// - Tournament appearances and results
 /// - Memorable wins and upsets
 /// - Conference standings and achievements
 /// - Coaching highlights and program milestones
@@ -149,7 +149,7 @@ class AITeamSeasonSummaryService {
     // Generate star players analysis
     final playersAnalysis = _generateStarPlayersAnalysis(teamName, seasonRecord);
     
-    // Determine bowl game and postseason
+    // Determine postseason results
     final postseasonAnalysis = _analyzePostseason(teamName, teamGames, seasonRecord);
     
     // Conference analysis

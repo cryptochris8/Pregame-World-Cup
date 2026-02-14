@@ -16,6 +16,11 @@ service cloud.firestore {
       return isAuth() && request.auth.token.admin == true;
     }
 
+    // Check if the current user is a participant of a given chat document
+    function isChatParticipant(chatId) {
+      return isAuth() && request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participantIds;
+    }
+
     // ==================== USER DATA ====================
 
     // User favorites - own data only
@@ -29,6 +34,10 @@ service cloud.firestore {
       allow write: if isOwner(userId);
 
       match /interactions/{interactionId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      match /learned_preferences/{prefId} {
         allow read, write: if isOwner(userId);
       }
     }
@@ -54,6 +63,30 @@ service cloud.firestore {
     // Notification preferences - own data only
     match /notification_preferences/{userId} {
       allow read, write: if isOwner(userId);
+    }
+
+    // User notification preferences - own data only
+    match /user_notification_preferences/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // User behavior summary - own data only (AI learning)
+    match /user_behavior_summary/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Venue interactions - own data only (user learning)
+    match /venue_interactions/{docId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // Team preferences - own data only (user learning)
+    match /team_preferences/{docId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
+      allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
     // Match reminders - own data only (via userId field)
@@ -136,6 +169,27 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // World Cup specific collections (used by Flutter app datasource)
+    match /worldcup_teams/{teamId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /worldcup_groups/{groupId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /worldcup_bracket/{bracketId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    match /worldcup_venues/{venueId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
     // ==================== SOCIAL FEATURES ====================
 
     // Social profiles - public read, own write
@@ -201,14 +255,24 @@ service cloud.firestore {
         (request.auth.uid == resource.data.senderId || request.auth.uid == resource.data.receiverId);
     }
 
-    // Friendships - participants can read/write
+    // Friendships - only involved users (userId or friendId) can read/write
     match /friendships/{friendshipId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth() &&
+        (request.auth.uid == resource.data.userId || request.auth.uid == resource.data.friendId);
+      allow create: if isAuth() &&
+        (request.auth.uid == request.resource.data.userId || request.auth.uid == request.resource.data.friendId);
+      allow update, delete: if isAuth() &&
+        (request.auth.uid == resource.data.userId || request.auth.uid == resource.data.friendId);
     }
 
-    // Social connections - for block functionality
+    // Social connections - only involved users (fromUserId or toUserId) can access
     match /social_connections/{connectionId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth() &&
+        (request.auth.uid == resource.data.fromUserId || request.auth.uid == resource.data.toUserId);
+      allow create: if isAuth() &&
+        (request.auth.uid == request.resource.data.fromUserId || request.auth.uid == request.resource.data.toUserId);
+      allow update, delete: if isAuth() &&
+        (request.auth.uid == resource.data.fromUserId || request.auth.uid == resource.data.toUserId);
     }
 
     // Predictions - auth read, own write
@@ -230,6 +294,18 @@ service cloud.firestore {
       allow read: if isAuth();
       allow create: if isAuth();
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+    }
+
+    // Prediction stats - own data only
+    match /prediction_stats/{userId} {
+      allow read: if isAuth();
+      allow write: if isOwner(userId);
+    }
+
+    // User accuracy stats - own data only
+    match /user_accuracy_stats/{userId} {
+      allow read: if isAuth();
+      allow write: if isOwner(userId);
     }
 
     // ==================== NOTIFICATIONS ====================
@@ -257,14 +333,19 @@ service cloud.firestore {
 
     // ==================== MESSAGING & CHAT ====================
 
-    // Direct chats - authenticated access
+    // Direct chats - only participants can read/write
     match /chats/{chatId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth() && request.auth.uid in resource.data.participantIds;
+      allow create: if isAuth() && request.auth.uid in request.resource.data.participantIds;
+      allow update, delete: if isAuth() && request.auth.uid in resource.data.participantIds;
     }
 
-    // Direct messages - authenticated access
+    // Direct messages - only participants of the parent chat can read/write
     match /messages/{messageId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth() && isChatParticipant(resource.data.chatId);
+      allow create: if isAuth() && isChatParticipant(request.resource.data.chatId)
+        && request.auth.uid == request.resource.data.senderId;
+      allow update, delete: if isAuth() && isChatParticipant(resource.data.chatId);
     }
 
     // Match chats with subcollections
@@ -285,9 +366,15 @@ service cloud.firestore {
       allow read, write: if isAuth();
     }
 
-    // Typing indicators - authenticated access
+    // Typing indicators - only participants of the referenced chat can read/write
     match /typing_indicators/{indicatorId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth() && isChatParticipant(resource.data.chatId);
+      allow create: if isAuth() && isChatParticipant(request.resource.data.chatId)
+        && request.auth.uid == request.resource.data.userId;
+      allow update: if isAuth() && isChatParticipant(resource.data.chatId)
+        && request.auth.uid == resource.data.userId;
+      allow delete: if isAuth() && isChatParticipant(resource.data.chatId)
+        && request.auth.uid == resource.data.userId;
     }
 
     // ==================== WATCH PARTIES ====================
@@ -306,9 +393,13 @@ service cloud.firestore {
       }
     }
 
-    // Watch party invites - authenticated access
+    // Watch party invites - only inviter or invitee can access
     match /watch_party_invites/{inviteId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth() &&
+        (request.auth.uid == resource.data.inviterId || request.auth.uid == resource.data.inviteeId);
+      allow create: if isAuth() && request.auth.uid == request.resource.data.inviterId;
+      allow update, delete: if isAuth() &&
+        (request.auth.uid == resource.data.inviterId || request.auth.uid == resource.data.inviteeId);
     }
 
     // Watch party virtual payments - own read, functions-only write
@@ -393,6 +484,33 @@ service cloud.firestore {
 
     match /admin_users/{docId} {
       allow read, write: if isAdmin();
+    }
+
+    // Admin collection (alternate name used in Flutter admin service)
+    match /admins/{docId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Admin stats dashboard
+    match /admin_stats/{docId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Admin audit logs
+    match /admin_logs/{docId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Feature flags - admin read/write, auth read for checking flags
+    match /feature_flags/{flagId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
+    // Broadcast notifications - admin only
+    match /broadcast_notifications/{docId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
     }
 
     // ==================== DEV ARTIFACTS (DENY ALL) ====================

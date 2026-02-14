@@ -12,7 +12,7 @@ import 'package:http/http.dart' as http;
 /// Focuses on real team statistics, season reviews, and head-to-head analysis
 class HistoricalGameAnalysisService {
   static const String _logTag = 'HistoricalGameAnalysis';
-  static const String _sportsDataBaseUrl = 'https://api.sportsdata.io/v3/cfb';
+  static const String _sportsDataBaseUrl = 'https://api.sportsdata.io/v4/soccer'; // Legacy: was CFB
   
   /// Generate a comprehensive season review for a team
   Future<Map<String, dynamic>> generateSeasonReview(String teamName, {int? season}) async {

@@ -191,7 +191,7 @@ class ClaudeSportsIntegrationService {
   /// Get Claude's comprehensive team analysis
   Future<Map<String, dynamic>?> _getClaudeTeamAnalysis(String teamKey, Map<String, dynamic> playerData) async {
     final prompt = '''
-    Analyze this college football team using real player data:
+    Analyze this soccer team using real player data:
     
     Team: $teamKey
     Real Player Data: ${json.encode(playerData)}
@@ -230,7 +230,7 @@ class ClaudeSportsIntegrationService {
   /// Get Claude's game prediction with real player context
   Future<Map<String, dynamic>?> _getClaudeGamePrediction(Map<String, dynamic> gameContext) async {
     final prompt = '''
-    Predict this college football game using REAL PLAYER DATA:
+    Predict this soccer match using REAL PLAYER DATA:
     
     Game: ${gameContext['away_team']} @ ${gameContext['home_team']}
     Date: ${gameContext['game_date'] ?? 'TBD'}
@@ -264,7 +264,7 @@ class ClaudeSportsIntegrationService {
   /// Get Claude's individual player analysis
   Future<Map<String, dynamic>?> _getClaudePlayerAnalysis(Player player, Map<String, dynamic>? stats) async {
     final prompt = '''
-    Analyze this real college football player:
+    Analyze this soccer player:
     
     Player: ${player.name}
     Position: ${player.position}

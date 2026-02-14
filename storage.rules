@@ -3,6 +3,7 @@ service firebase.storage {
   match /b/{bucket}/o {
 
     // Profile photos: anyone authenticated can read, only owner can write
+    // Max 5MB, must be an image
     match /users/{userId}/profile/{fileName} {
       allow read: if request.auth != null;
       allow write: if request.auth != null && request.auth.uid == userId
@@ -11,17 +12,38 @@ service firebase.storage {
     }
 
     // Chat media: authenticated users can read and write
+    // LIMITATION: Firebase Storage rules cannot perform Firestore lookups,
+    // so we cannot verify chat membership here. Membership checks must be
+    // enforced at the application layer (client-side guards and/or Cloud
+    // Functions acting as upload proxies). The rules below enforce:
+    //   - Authentication required for both read and write
+    //   - 10MB maximum file size
+    //   - Allowed content types: images, video, audio, and PDF only
     match /chats/{chatId}/{allPaths=**} {
       allow read: if request.auth != null;
       allow write: if request.auth != null
-                   && request.resource.size < 10 * 1024 * 1024;
+                   && request.resource.size < 10 * 1024 * 1024
+                   && (request.resource.contentType.matches('image/.*')
+                       || request.resource.contentType.matches('video/.*')
+                       || request.resource.contentType.matches('audio/.*')
+                       || request.resource.contentType == 'application/pdf');
     }
 
     // Watch party media: authenticated users can read and write
+    // LIMITATION: Same as chat media above -- Storage rules cannot verify
+    // watch party membership via Firestore. Membership enforcement must
+    // happen in the application layer. Rules enforce:
+    //   - Authentication required for both read and write
+    //   - 10MB maximum file size
+    //   - Allowed content types: images, video, audio, and PDF only
     match /watch_parties/{partyId}/{allPaths=**} {
       allow read: if request.auth != null;
       allow write: if request.auth != null
-                   && request.resource.size < 10 * 1024 * 1024;
+                   && request.resource.size < 10 * 1024 * 1024
+                   && (request.resource.contentType.matches('image/.*')
+                       || request.resource.contentType.matches('video/.*')
+                       || request.resource.contentType.matches('audio/.*')
+                       || request.resource.contentType == 'application/pdf');
     }
 
     // Default: deny all other paths

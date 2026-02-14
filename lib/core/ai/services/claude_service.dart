@@ -92,8 +92,8 @@ class ClaudeService {
     required Map<String, dynamic> gameContext,
   }) async {
     const systemMessage = '''
-You are an expert college football analyst with decades of experience covering SEC and major college football.
-Provide comprehensive game analysis that goes beyond surface statistics to examine:
+You are an expert international soccer analyst with decades of experience covering World Cup and major tournaments.
+Provide comprehensive match analysis that goes beyond surface statistics to examine:
 
 1. Strategic matchups and tactical considerations
 2. Historical context and rivalry dynamics  
@@ -106,7 +106,7 @@ Keep your response to 3-4 paragraphs maximum.
 ''';
 
     final prompt = '''
-Analyze this upcoming college football matchup:
+Analyze this upcoming international soccer matchup:
 
 **Game**: $awayTeam @ $homeTeam
 
@@ -132,7 +132,7 @@ What are the key storylines, matchups, and factors that fans should watch for?
     required Map<String, dynamic> gameStats,
   }) async {
     const systemMessage = '''
-You are a college football expert making game predictions based on comprehensive analysis.
+You are an international soccer expert making match predictions based on comprehensive analysis.
 Provide a structured prediction with:
 1. Predicted winner and score
 2. Confidence level (0-100)
@@ -143,7 +143,7 @@ Be analytical but concise. Base predictions on data and logical reasoning.
 ''';
 
     final prompt = '''
-Predict the outcome of this college football game:
+Predict the outcome of this international soccer match:
 
 **Matchup**: $awayTeam @ $homeTeam
 
@@ -187,7 +187,7 @@ UPSET WATCH: [Potential upset factor]
     required Map<String, dynamic> historicalData,
   }) async {
     const systemMessage = '''
-You are a college football historian providing context for team matchups.
+You are an international soccer historian providing context for team matchups.
 Focus on meaningful historical patterns, rivalry dynamics, and recent trends
 that could influence the upcoming game. Be engaging and informative.
 ''';

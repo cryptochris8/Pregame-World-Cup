@@ -6,6 +6,7 @@ class MockWorldCupMatchRepository extends Mock implements WorldCupMatchRepositor
 class MockNationalTeamRepository extends Mock implements NationalTeamRepository {}
 class MockGroupRepository extends Mock implements GroupRepository {}
 class MockBracketRepository extends Mock implements BracketRepository {}
+class MockUserPreferencesRepository extends Mock implements UserPreferencesRepository {}
 
 // Test Data Factories
 class TestDataFactory {

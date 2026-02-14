@@ -193,7 +193,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
             ),
             const SizedBox(width: 12),
             const Text(
-              'College Football',
+              'World Cup 2026',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -210,12 +210,12 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               _showFavoritesOnly ? Icons.favorite : Icons.favorite_border,
               color: _showFavoritesOnly ? ThemeHelper.favoriteColor : Colors.white,
             ),
-            // Toggle filter to show only favorite SEC team games
+            // Toggle filter to show only favorite team matches
             onPressed: () {
               // Always toggle the favorites filter
               _toggleFavoritesFilter();
             },
-            tooltip: _showFavoritesOnly ? 'Show All Games' : 'Show Favorite SEC Teams Only',
+            tooltip: _showFavoritesOnly ? 'Show All Matches' : 'Show Favorite Teams Only',
           ),
           // Live games filter toggle
           IconButton(
@@ -322,7 +322,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 const Icon(Icons.sports_football, color: Colors.orange, size: 24),
                 const SizedBox(width: 12),
                 const Text(
-                  '2025 College Football Season',
+                  'FIFA World Cup 2026',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
@@ -413,7 +413,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'College football games typically occur on Saturdays.\nCheck back during game time for live scores!',
+                    'World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!',
                     style: TextStyle(color: Colors.white70),
                     textAlign: TextAlign.center,
                   ),

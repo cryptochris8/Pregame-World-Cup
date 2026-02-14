@@ -49,7 +49,7 @@ class _AIGameInsightsWidgetState extends State<AIGameInsightsWidget> {
       final insights = await aiService.generateCompletion(
         prompt: _buildInsightsPrompt(),
         systemMessage: '''
-You are a college football analyst providing key insights for fans.
+You are an international soccer analyst providing key insights for fans.
 Focus on 2-3 most important factors that could determine the game outcome.
 Keep it concise and engaging for casual fans.
 ''',
@@ -76,7 +76,7 @@ Keep it concise and engaging for casual fans.
 
   Map<String, dynamic> _buildGameStats() {
     final stats = <String, dynamic>{
-      'gameType': 'College Football',
+      'gameType': 'World Cup',
       'venue': 'Home game for ${widget.game.homeTeamName}',
     };
 
@@ -100,7 +100,7 @@ Keep it concise and engaging for casual fans.
       if (hour >= 19) {
         stats['timeContext'] = 'Night game - prime time atmosphere';
       } else if (hour >= 15) {
-        stats['timeContext'] = 'Afternoon game - traditional college football';
+        stats['timeContext'] = 'Afternoon match - peak viewing time';
       } else {
         stats['timeContext'] = 'Early game - teams need to start fast';
       }
@@ -111,9 +111,9 @@ Keep it concise and engaging for casual fans.
 
   String _buildInsightsPrompt() {
     return '''
-Analyze this college football matchup: ${widget.game.awayTeamName} @ ${widget.game.homeTeamName}
+Analyze this World Cup matchup: ${widget.game.awayTeamName} vs ${widget.game.homeTeamName}
 
-Game context: Week ${widget.game.week ?? 'TBD'} of college football season
+Game context: Match day ${widget.game.week ?? 'TBD'} of FIFA World Cup 2026
 
 Provide 2-3 key factors that could determine the outcome:
 - What should fans watch for?

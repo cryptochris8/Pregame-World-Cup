@@ -267,7 +267,7 @@ class EnhancedAIGameAnalysisService {
     final buffer = StringBuffer();
     final dataQuality = analysisData['dataQuality'] as String;
     
-    buffer.writeln('Analyze this college football matchup using detailed historical data:');
+    buffer.writeln('Analyze this international soccer matchup using detailed historical data:');
     buffer.writeln('');
     buffer.writeln('GAME: ${game.awayTeamName} @ ${game.homeTeamName}');
     buffer.writeln('DATE: ${game.dateTime?.toString() ?? 'TBD'}');

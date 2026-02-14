@@ -1,26 +1,33 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-
-// Initialize Stripe with your secret key
-const getStripeSecretKey = () => {
-  try {
-    const key = functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  } catch (error: any) {
-    if (error.message === 'STRIPE_SECRET_KEY not configured') throw error;
-    const key = process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  }
-};
-
-const stripe = new Stripe(getStripeSecretKey(), {
-  apiVersion: '2025-05-28.basil',
-});
+import { stripe } from './stripe-config';
 
 const db = admin.firestore();
+// ============================================================================
+// IDEMPOTENCY HELPERS
+// ============================================================================
+
+/**
+ * Check if a webhook event has already been processed.
+ * Returns true if the event was already handled (should be skipped).
+ */
+async function isWebhookEventAlreadyProcessed(eventId: string): Promise<boolean> {
+  const docRef = db.collection('processed_webhook_events').doc(eventId);
+  const doc = await docRef.get();
+  return doc.exists;
+}
+
+/**
+ * Mark a webhook event as processed to prevent duplicate handling.
+ */
+async function markWebhookEventProcessed(eventId: string, eventType: string): Promise<void> {
+  await db.collection('processed_webhook_events').doc(eventId).set({
+    eventId,
+    eventType,
+    processedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+}
 
 // New function to set up free fan accounts (no Stripe needed)
 export const setupFreeFanAccount = functions.https.onCall(async (data: any, context: any) => {
@@ -385,7 +392,15 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
 // Stripe webhook handler
 export const handleStripeWebhook = functions.https.onRequest(async (req, res) => {
   const sig = req.headers['stripe-signature'] as string;
-  const webhookSecret = functions.config().stripe?.webhook_secret || 'temp_webhook_secret';
+  // SECURITY: Require a properly configured webhook secret - never fall back to insecure defaults
+  const webhookSecret = functions.config().stripe?.webhook_secret ||
+                        process.env.STRIPE_WEBHOOK_SECRET;
+
+  if (!webhookSecret) {
+    functions.logger.error('Stripe webhook secret is not configured. Set stripe.webhook_secret in Firebase config or STRIPE_WEBHOOK_SECRET env var.');
+    res.status(500).send('Webhook secret not configured');
+    return;
+  }
 
   let event: Stripe.Event;
 
@@ -398,6 +413,13 @@ export const handleStripeWebhook = functions.https.onRequest(async (req, res) =>
   }
 
   try {
+    // Idempotency: Skip events that have already been processed
+    if (await isWebhookEventAlreadyProcessed(event.id)) {
+      functions.logger.info(`Webhook event ${event.id} already processed, skipping`);
+      res.status(200).send('Event already processed');
+      return;
+    }
+
     switch (event.type) {
       case 'checkout.session.completed':
         await handleCheckoutCompleted(event.data.object as Stripe.Checkout.Session);
@@ -423,6 +445,9 @@ export const handleStripeWebhook = functions.https.onRequest(async (req, res) =>
       default:
         console.log(`Unhandled event type: ${event.type}`);
     }
+
+    // Mark event as processed after successful handling
+    await markWebhookEventProcessed(event.id, event.type);
 
     res.status(200).send('Webhook handled successfully');
   } catch (error) {

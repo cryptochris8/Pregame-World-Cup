@@ -7,7 +7,7 @@ import '../../../../injection_container.dart';
 /// AI Historical Insights Widget
 /// 
 /// Displays AI-generated historical context, predictions, and analysis
-/// for college football games using the AI Historical Knowledge Service.
+/// for matches using the AI Historical Knowledge Service.
 class AIHistoricalInsightsWidget extends StatefulWidget {
   final GameSchedule game;
   final bool showFullAnalysis;

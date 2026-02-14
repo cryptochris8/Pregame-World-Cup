@@ -1,4 +1,4 @@
-/// Player entity for NCAA college football players
+/// Player entity for sports player data
 /// Contains profile information and statistics
 class Player {
   final String id;
@@ -25,8 +25,8 @@ class Player {
     this.teamKey,
   });
   
-  /// Create Player from NCAA API response
-  factory Player.fromNCAAApi(Map<String, dynamic> json) {
+  /// Create Player from API response
+  factory Player.fromApi(Map<String, dynamic> json) {
     return Player(
       id: json['id']?.toString() ?? '',
       name: json['name'] ?? 'Unknown Player',

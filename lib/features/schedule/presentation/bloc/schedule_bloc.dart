@@ -213,19 +213,14 @@ class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
     final dayOfWeek = now.weekday;
     final month = now.month;
     
-    // College football season: September through January
-    final isFootballSeason = (month >= 9 && month <= 12) || month == 1;
-    if (!isFootballSeason) return false;
-    
-    // Game days: Primarily Saturday, some Thursday/Friday
-    final isGameDay = dayOfWeek == DateTime.saturday || 
-                     dayOfWeek == DateTime.thursday || 
-                     dayOfWeek == DateTime.friday;
-    if (!isGameDay) return false;
-    
-    // Game hours: 12 PM - 11 PM ET (typical college football times)
-    final isGameTime = hour >= 12 && hour <= 23;
-    
+    // World Cup 2026: June 11 through July 19
+    final isWorldCupSeason = (month == 6 && now.day >= 11) || month == 7 && now.day <= 19;
+    if (!isWorldCupSeason) return false;
+
+    // World Cup matches can be any day of the week
+    // Game hours: 11 AM - 11 PM ET (typical World Cup match times in US)
+    final isGameTime = hour >= 11 && hour <= 23;
+
     return isGameTime;
   }
 } 

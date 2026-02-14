@@ -1,8 +1,8 @@
-# Terms of Service
+﻿# Terms of Service
 
 **Pregame World Cup 2026**
 
-*Last Updated: January 16, 2025*
+*Last Updated: February 14, 2026*
 
 ## Agreement to Terms
 
@@ -168,4 +168,4 @@ If you have questions about these Terms, please contact us at:
 
 ---
 
-© 2025 Pregame World Cup 2026. All rights reserved.
+Â© 2026 Pregame World Cup 2026. All rights reserved.

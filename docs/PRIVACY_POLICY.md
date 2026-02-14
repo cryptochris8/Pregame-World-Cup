@@ -1,8 +1,8 @@
-# Privacy Policy
+﻿# Privacy Policy
 
 **Pregame World Cup 2026**
 
-*Last Updated: January 16, 2025*
+*Last Updated: February 14, 2026*
 
 ## Introduction
 
@@ -145,4 +145,4 @@ If you have questions about this Privacy Policy or our privacy practices, please
 
 ---
 
-© 2025 Pregame World Cup 2026. All rights reserved.
+Â© 2026 Pregame World Cup 2026. All rights reserved.

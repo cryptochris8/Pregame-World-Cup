@@ -649,7 +649,7 @@ void main() {
       });
     });
 
-    group('fromNCAAApi', () {
+    group('fromApi', () {
       test('parses basic fields', () {
         final json = {
           'id': '12345',
@@ -663,7 +663,7 @@ void main() {
           'teamKey': 'texas',
         };
 
-        final player = Player.fromNCAAApi(json);
+        final player = Player.fromApi(json);
 
         expect(player.id, equals('12345'));
         expect(player.name, equals('John Smith'));
@@ -677,7 +677,7 @@ void main() {
       });
 
       test('handles null values with defaults', () {
-        final player = Player.fromNCAAApi({});
+        final player = Player.fromApi({});
 
         expect(player.id, equals(''));
         expect(player.name, equals('Unknown Player'));
@@ -718,7 +718,7 @@ void main() {
           },
         };
 
-        final player = Player.fromNCAAApi(json);
+        final player = Player.fromApi(json);
 
         expect(player.statistics, isNotNull);
         expect(player.statistics!.passing.yards, equals(2500));

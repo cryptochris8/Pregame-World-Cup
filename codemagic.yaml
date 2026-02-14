@@ -49,13 +49,13 @@ workflows:
       - name: Run Flutter Analyze
         script: |
           echo "🔍 Running Flutter analyze..."
-          flutter analyze --no-fatal-infos || true
+          flutter analyze --no-fatal-infos
           echo "✅ Flutter analysis complete"
 
       - name: Run Flutter Tests
         script: |
           echo "🧪 Running Flutter tests..."
-          flutter test --reporter expanded || echo "⚠️ Some Flutter tests may have failed"
+          flutter test --reporter expanded
           echo "✅ Flutter tests complete"
 
     artifacts:
@@ -147,7 +147,7 @@ workflows:
       - name: Run Flutter Tests
         script: |
           echo "🧪 Running Flutter tests..."
-          flutter test || echo "⚠️ Some tests failed - continuing build"
+          flutter test
           echo "✅ Flutter tests complete"
 
       - name: Clean build directory
@@ -203,7 +203,7 @@ workflows:
       events:
         - push
       branch_patterns:
-        - pattern: 'master'
+        - pattern: 'main'
           include: true
           source: true
     environment:
@@ -241,7 +241,7 @@ workflows:
       - name: Run Flutter Tests
         script: |
           echo "🧪 Running Flutter tests..."
-          flutter test || echo "⚠️ Some tests failed - continuing build"
+          flutter test
           echo "✅ Flutter tests complete"
 
       - name: Build APK with Flutter
@@ -253,6 +253,7 @@ workflows:
             --dart-define=SPORTSDATA_API_KEY=$SPORTSDATA_API_KEY \
             --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
+            --dart-define=CLAUDE_API_KEY=$CLAUDE_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
 
@@ -265,6 +266,7 @@ workflows:
             --dart-define=SPORTSDATA_API_KEY=$SPORTSDATA_API_KEY \
             --dart-define=GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY \
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
+            --dart-define=CLAUDE_API_KEY=$CLAUDE_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
             

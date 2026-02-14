@@ -16,26 +16,34 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-
-// Initialize Stripe
-const getStripeSecretKey = () => {
-  try {
-    const key = functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  } catch (error: any) {
-    if (error.message === 'STRIPE_SECRET_KEY not configured') throw error;
-    const key = process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  }
-};
-
-const stripe = new Stripe(getStripeSecretKey(), {
-  apiVersion: '2025-05-28.basil',
-});
+import { stripe } from './stripe-config';
 
 const db = admin.firestore();
+
+// ============================================================================
+// IDEMPOTENCY HELPERS
+// ============================================================================
+
+/**
+ * Check if a webhook event has already been processed.
+ * Returns true if the event was already handled (should be skipped).
+ */
+async function isWebhookEventAlreadyProcessed(eventId: string): Promise<boolean> {
+  const docRef = db.collection('processed_webhook_events').doc(eventId);
+  const doc = await docRef.get();
+  return doc.exists;
+}
+
+/**
+ * Mark a webhook event as processed to prevent duplicate handling.
+ */
+async function markWebhookEventProcessed(eventId: string, eventType: string): Promise<void> {
+  await db.collection('processed_webhook_events').doc(eventId).set({
+    eventId,
+    eventType,
+    processedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+}
 
 // ============================================================================
 // CONFIGURATION - Stripe Price IDs (set these after creating products in Stripe)
@@ -427,12 +435,13 @@ export const getVenuePremiumStatus = functions.https.onCall(async (data: any, co
  */
 export const handleWorldCupPaymentWebhook = functions.https.onRequest(async (req, res) => {
   const sig = req.headers['stripe-signature'] as string;
+  // SECURITY: Require a properly configured webhook secret - never fall back to insecure defaults
   const webhookSecret = functions.config().stripe?.wc_webhook_secret ||
-                       process.env.STRIPE_WC_WEBHOOK_SECRET || '';
+                        process.env.STRIPE_WC_WEBHOOK_SECRET;
 
   if (!webhookSecret) {
-    functions.logger.error('World Cup webhook secret not configured');
-    res.status(500).send('Webhook not configured');
+    functions.logger.error('World Cup webhook secret is not configured. Set stripe.wc_webhook_secret in Firebase config or STRIPE_WC_WEBHOOK_SECRET env var.');
+    res.status(500).send('Webhook secret not configured');
     return;
   }
 
@@ -447,6 +456,13 @@ export const handleWorldCupPaymentWebhook = functions.https.onRequest(async (req
   }
 
   try {
+    // Idempotency: Skip events that have already been processed
+    if (await isWebhookEventAlreadyProcessed(event.id)) {
+      functions.logger.info(`Webhook event ${event.id} already processed, skipping`);
+      res.status(200).json({ received: true, duplicate: true });
+      return;
+    }
+
     switch (event.type) {
       case 'checkout.session.completed':
         await handleCheckoutComplete(event.data.object as Stripe.Checkout.Session);
@@ -464,6 +480,9 @@ export const handleWorldCupPaymentWebhook = functions.https.onRequest(async (req
         functions.logger.info(`Unhandled event type: ${event.type}`);
     }
 
+    // Mark event as processed after successful handling
+    await markWebhookEventProcessed(event.id, event.type);
+
     res.status(200).json({ received: true });
   } catch (error) {
     functions.logger.error('Error processing webhook:', error);
@@ -480,11 +499,26 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
 
   functions.logger.info(`Checkout completed: ${session.id}, type: ${paymentType}`);
 
+  // Idempotency: Check if this specific checkout session has already been processed
+  const sessionRef = db.collection('processed_checkout_sessions').doc(session.id);
+  const sessionDoc = await sessionRef.get();
+  if (sessionDoc.exists) {
+    functions.logger.info(`Checkout session ${session.id} already processed, skipping`);
+    return;
+  }
+
   if (paymentType === 'fan_pass') {
     await activateFanPass(metadata);
   } else if (paymentType === 'venue_premium') {
     await activateVenuePremium(metadata);
   }
+
+  // Mark this checkout session as processed
+  await sessionRef.set({
+    sessionId: session.id,
+    paymentType,
+    processedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
 }
 
 /**
@@ -501,7 +535,11 @@ async function activateFanPass(metadata: Record<string, string>) {
 
   const features = FAN_FEATURES[passType as keyof typeof FAN_FEATURES] || FAN_FEATURES.fan_pass;
 
-  await db.collection('world_cup_fan_passes').doc(userId).set({
+  // Use a batch write to ensure atomicity - either all writes succeed or none do
+  const batch = db.batch();
+
+  const passRef = db.collection('world_cup_fan_passes').doc(userId);
+  batch.set(passRef, {
     userId,
     passType,
     status: 'active',
@@ -515,11 +553,13 @@ async function activateFanPass(metadata: Record<string, string>) {
   const userRef = db.collection('users').doc(userId);
   const userDoc = await userRef.get();
   if (userDoc.exists) {
-    await userRef.update({
+    batch.update(userRef, {
       worldCupPass: passType,
       worldCupPassPurchasedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
   }
+
+  await batch.commit();
 
   functions.logger.info(`Fan pass activated: ${passType} for user ${userId}`);
 }

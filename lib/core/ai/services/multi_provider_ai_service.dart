@@ -131,7 +131,7 @@ class MultiProviderAIService {
         LoggingService.info('Using OpenAI fallback for sports analysis', tag: _logTag);
         return await _openAI!.generateCompletion(
           prompt: 'Analyze the matchup between $awayTeam and $homeTeam considering: ${gameContext.toString()}',
-          systemMessage: 'You are a college football analyst. Provide insights about this upcoming game.',
+          systemMessage: 'You are an international soccer analyst. Provide insights about this upcoming match.',
           maxTokens: 300,
         );
       }
@@ -189,7 +189,7 @@ class MultiProviderAIService {
         LoggingService.info('Using OpenAI fallback for historical analysis', tag: _logTag);
         return await _openAI!.generateCompletion(
           prompt: 'Provide historical context for $team1 vs $team2: ${historicalData.toString()}',
-          systemMessage: 'You are a college football historian.',
+          systemMessage: 'You are an international soccer historian.',
           maxTokens: 250,
         );
       }

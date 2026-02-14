@@ -236,8 +236,8 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
       // If no stadium coordinates found, use fallback coordinates
       if (_currentLatitude == null || _currentLongitude == null) {
         // Use a default location (you can customize this based on your needs)
-        _currentLatitude = _fallbackLatitude ?? 39.8283; // Example: Columbus, OH
-        _currentLongitude = _fallbackLongitude ?? -82.9988;
+        _currentLatitude = _fallbackLatitude ?? 40.8128; // Default: MetLife Stadium area
+        _currentLongitude = _fallbackLongitude ?? -74.0742;
 
         if (mounted) {
           setState(() {

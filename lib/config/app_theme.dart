@@ -649,22 +649,35 @@ class AppTheme {
     }
   }
   
+  /// Get color for a World Cup national team
   static Color getTeamColor(String teamName) {
     switch (teamName.toLowerCase()) {
-      case 'alabama crimson tide':
-        return const Color(0xFF9E1B32);
-      case 'auburn tigers':
-        return const Color(0xFF0C2340);
-      case 'georgia bulldogs':
-        return const Color(0xFFBA0C2F);
-      case 'florida gators':
-        return const Color(0xFF0021A5);
-      case 'lsu tigers':
-        return const Color(0xFF461D7C);
-      case 'tennessee volunteers':
-        return const Color(0xFFFF8200);
-      case 'texas a&m aggies':
-        return const Color(0xFF500000);
+      case 'brazil':
+        return const Color(0xFFFFDF00); // Brazil yellow
+      case 'argentina':
+        return const Color(0xFF75AADB); // Argentina light blue
+      case 'germany':
+        return const Color(0xFFFFFFFF); // Germany white
+      case 'france':
+        return const Color(0xFF002395); // France blue
+      case 'spain':
+        return const Color(0xFFAA151B); // Spain red
+      case 'england':
+        return const Color(0xFFFFFFFF); // England white
+      case 'mexico':
+      case 'méxico':
+        return const Color(0xFF006847); // Mexico green
+      case 'usa':
+      case 'united states':
+        return const Color(0xFF002868); // USA navy
+      case 'portugal':
+        return const Color(0xFFDA291C); // Portugal red
+      case 'netherlands':
+        return const Color(0xFFFF6600); // Netherlands orange
+      case 'italy':
+        return const Color(0xFF0066B2); // Italy blue
+      case 'japan':
+        return const Color(0xFF000080); // Japan blue
       default:
         return primaryPurple;
     }

@@ -1,24 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import Stripe from 'stripe';
-
-// Initialize Stripe with your secret key
-const getStripeSecretKey = () => {
-  try {
-    const key = functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  } catch (error: any) {
-    if (error.message === 'STRIPE_SECRET_KEY not configured') throw error;
-    const key = process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  }
-};
-
-const stripe = new Stripe(getStripeSecretKey(), {
-  apiVersion: '2025-05-28.basil',
-});
+import { stripe } from './stripe-config';
 
 const db = admin.firestore();
 
@@ -55,49 +37,56 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
       throw new functions.https.HttpsError('failed-precondition', 'This watch party does not allow virtual attendance');
     }
 
-    // Check if user already has a pending or completed payment
-    const existingPayment = await db.collection('watch_party_virtual_payments')
-      .where('watchPartyId', '==', watchPartyId)
-      .where('userId', '==', userId)
-      .where('status', 'in', ['pending', 'completed'])
-      .limit(1)
-      .get();
+    // Use a transaction to atomically check for existing payment AND create a new one
+    // This prevents race conditions where two requests could both pass the check
+    const paymentIntentResult = await db.runTransaction(async (transaction) => {
+      // Check if user already has a pending or completed payment within the transaction
+      const existingPaymentQuery = await db.collection('watch_party_virtual_payments')
+        .where('watchPartyId', '==', watchPartyId)
+        .where('userId', '==', userId)
+        .where('status', 'in', ['pending', 'completed'])
+        .limit(1)
+        .get();
 
-    if (!existingPayment.empty) {
-      throw new functions.https.HttpsError('already-exists', 'You have already purchased or have a pending payment for this watch party');
-    }
+      if (!existingPaymentQuery.empty) {
+        throw new functions.https.HttpsError('already-exists', 'You have already purchased or have a pending payment for this watch party');
+      }
 
-    // Create payment intent
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount,
-      currency,
-      description: `Virtual attendance for ${watchPartyName || 'Watch Party'}`,
-      metadata: {
-        type: 'virtual_attendance',
+      // Create payment intent with Stripe (outside transaction scope, but before Firestore write)
+      const paymentIntent = await stripe.paymentIntents.create({
+        amount,
+        currency,
+        description: `Virtual attendance for ${watchPartyName || 'Watch Party'}`,
+        metadata: {
+          type: 'virtual_attendance',
+          watchPartyId,
+          watchPartyName: watchPartyName || '',
+          userId,
+          userEmail,
+        },
+      });
+
+      // Record pending payment in Firestore atomically
+      const paymentRef = db.collection('watch_party_virtual_payments').doc();
+      transaction.set(paymentRef, {
         watchPartyId,
-        watchPartyName: watchPartyName || '',
         userId,
         userEmail,
-      },
+        amount: amount / 100, // Store in dollars
+        currency,
+        status: 'pending',
+        paymentIntentId: paymentIntent.id,
+        createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+
+      return paymentIntent;
     });
 
-    // Record pending payment in Firestore
-    await db.collection('watch_party_virtual_payments').add({
-      watchPartyId,
-      userId,
-      userEmail,
-      amount: amount / 100, // Store in dollars
-      currency,
-      status: 'pending',
-      paymentIntentId: paymentIntent.id,
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
-    });
-
-    functions.logger.info(`Virtual attendance payment intent created: ${paymentIntent.id} for party ${watchPartyId}`);
+    functions.logger.info(`Virtual attendance payment intent created: ${paymentIntentResult.id} for party ${watchPartyId}`);
 
     return {
-      clientSecret: paymentIntent.client_secret,
-      paymentIntentId: paymentIntent.id,
+      clientSecret: paymentIntentResult.client_secret,
+      paymentIntentId: paymentIntentResult.id,
     };
   } catch (error: any) {
     functions.logger.error('Error creating virtual attendance payment:', error);
@@ -139,38 +128,54 @@ export const handleVirtualAttendancePayment = functions.https.onCall(async (data
       throw new functions.https.HttpsError('permission-denied', 'Payment does not match');
     }
 
-    // Update payment record
-    const paymentQuery = await db.collection('watch_party_virtual_payments')
-      .where('paymentIntentId', '==', paymentIntentId)
-      .limit(1)
-      .get();
+    // Use a transaction to ensure all updates happen atomically and prevent double-processing
+    await db.runTransaction(async (transaction) => {
+      // Find the payment record
+      const paymentQuery = await db.collection('watch_party_virtual_payments')
+        .where('paymentIntentId', '==', paymentIntentId)
+        .limit(1)
+        .get();
 
-    if (!paymentQuery.empty) {
-      await paymentQuery.docs[0].ref.update({
+      if (paymentQuery.empty) {
+        throw new functions.https.HttpsError('not-found', 'Payment record not found');
+      }
+
+      const paymentDoc = paymentQuery.docs[0];
+      const paymentData = paymentDoc.data();
+
+      // Idempotency: If already completed, skip
+      if (paymentData.status === 'completed') {
+        functions.logger.info(`Payment ${paymentIntentId} already completed, skipping`);
+        return;
+      }
+
+      // Update payment record to completed
+      transaction.update(paymentDoc.ref, {
         status: 'completed',
         completedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
-    }
 
-    // Update member record to mark as paid
-    const memberRef = db.collection('watch_parties')
-      .doc(watchPartyId)
-      .collection('members')
-      .doc(userId);
+      // Update member record to mark as paid
+      const memberRef = db.collection('watch_parties')
+        .doc(watchPartyId)
+        .collection('members')
+        .doc(userId);
 
-    const memberDoc = await memberRef.get();
-    if (memberDoc.exists) {
-      await memberRef.update({
-        hasPaid: true,
-        paymentIntentId,
-        paidAt: admin.firestore.FieldValue.serverTimestamp(),
+      const memberDoc = await transaction.get(memberRef);
+      if (memberDoc.exists) {
+        transaction.update(memberRef, {
+          hasPaid: true,
+          paymentIntentId,
+          paidAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+      }
+
+      // Increment virtual attendees count
+      const watchPartyRef = db.collection('watch_parties').doc(watchPartyId);
+      transaction.update(watchPartyRef, {
+        virtualAttendeesCount: admin.firestore.FieldValue.increment(1),
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
-    }
-
-    // Increment virtual attendees count
-    await db.collection('watch_parties').doc(watchPartyId).update({
-      virtualAttendeesCount: admin.firestore.FieldValue.increment(1),
-      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 
     functions.logger.info(`Virtual attendance payment completed: ${paymentIntentId} for party ${watchPartyId}`);
@@ -232,6 +237,16 @@ export const requestVirtualAttendanceRefund = functions.https.onCall(async (data
     const paymentData = paymentDoc.data();
     const paymentIntentId = paymentData.paymentIntentId;
 
+    // Idempotency: If already refunded, return the existing refund info
+    if (paymentData.status === 'refunded') {
+      functions.logger.info(`Payment ${paymentIntentId} already refunded, returning existing refund`);
+      return {
+        success: true,
+        refundId: paymentData.refundId,
+        message: 'Refund was already processed',
+      };
+    }
+
     // Create refund with Stripe
     const refund = await stripe.refunds.create({
       payment_intent: paymentIntentId,
@@ -244,8 +259,11 @@ export const requestVirtualAttendanceRefund = functions.https.onCall(async (data
       },
     });
 
+    // Use a batch write to update all records atomically
+    const batch = db.batch();
+
     // Update payment record
-    await paymentDoc.ref.update({
+    batch.update(paymentDoc.ref, {
       status: 'refunded',
       refundId: refund.id,
       refundedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -258,16 +276,19 @@ export const requestVirtualAttendanceRefund = functions.https.onCall(async (data
       .collection('members')
       .doc(userId);
 
-    await memberRef.update({
+    batch.update(memberRef, {
       hasPaid: false,
       refundedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 
     // Decrement virtual attendees count
-    await db.collection('watch_parties').doc(watchPartyId).update({
+    const watchPartyRef = db.collection('watch_parties').doc(watchPartyId);
+    batch.update(watchPartyRef, {
       virtualAttendeesCount: admin.firestore.FieldValue.increment(-1),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+
+    await batch.commit();
 
     functions.logger.info(`Virtual attendance refund processed: ${refund.id} for party ${watchPartyId}`);
 

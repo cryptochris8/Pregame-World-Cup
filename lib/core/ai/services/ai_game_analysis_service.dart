@@ -10,7 +10,7 @@ import 'multi_provider_ai_service.dart';
 /// AI Game Analysis Service
 /// 
 /// This service uses historical knowledge and Multi-Provider AI to generate intelligent
-/// game analysis, predictions, and historical context for college football games.
+/// game analysis, predictions, and historical context for World Cup matches.
 class AIGameAnalysisService {
   static AIGameAnalysisService? _instance;
   static AIGameAnalysisService get instance => _instance ??= AIGameAnalysisService._();
@@ -211,7 +211,7 @@ class AIGameAnalysisService {
   String _buildAnalysisPrompt(GameSchedule game, Map<String, dynamic> historicalContext) {
     final buffer = StringBuffer();
     
-    buffer.writeln('Analyze this college football matchup and provide expert insights:');
+    buffer.writeln('Analyze this international soccer matchup and provide expert insights:');
     buffer.writeln('');
     buffer.writeln('GAME: ${game.awayTeamName} @ ${game.homeTeamName}');
     buffer.writeln('DATE: ${game.dateTime?.toString() ?? 'TBD'}');
@@ -247,7 +247,7 @@ class AIGameAnalysisService {
     buffer.writeln('3. HISTORICAL NOTES: Any relevant historical context or storylines');
     buffer.writeln('4. PREDICTION: Your analysis-based prediction with reasoning');
     buffer.writeln('');
-    buffer.writeln('Focus on college football expertise, team dynamics, and historical significance.');
+    buffer.writeln('Focus on international soccer expertise, team dynamics, and historical significance.');
     
     return buffer.toString();
   }

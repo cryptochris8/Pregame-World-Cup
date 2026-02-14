@@ -2,7 +2,7 @@
 /// Handles both full team names and short API keys
 class TeamMatchingHelper {
   
-  /// SEC Team API Key Mappings - maps API short keys to searchable identifiers
+  /// Legacy team API key mappings - to be replaced with World Cup 2026 teams
   static const Map<String, List<String>> _secTeamKeyMappings = {
     'ala': ['alabama', 'crimson tide'],
     'aubrn': ['auburn', 'tigers'],

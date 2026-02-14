@@ -28,6 +28,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
   List<UserProfile> _filteredFriends = [];
   List<SocialConnection> _pendingRequests = [];
   List<SocialConnection> _sentRequests = [];
+  Map<String, SocialConnection> _friendConnectionMap = {};
   
   bool _isLoading = true;
   String _searchQuery = '';
@@ -84,14 +85,16 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       // Found friend connections
 
       final friendProfiles = <UserProfile>[];
+      final connectionMap = <String, SocialConnection>{};
       for (final connection in friendConnections) {
-        final fromUserId = connection.fromUserId == currentUser.uid 
-            ? connection.toUserId 
+        final friendUserId = connection.fromUserId == currentUser.uid
+            ? connection.toUserId
             : connection.fromUserId;
         try {
-          final profile = await _socialService.getUserProfile(fromUserId);
+          final profile = await _socialService.getUserProfile(friendUserId);
           if (profile != null) {
             friendProfiles.add(profile);
+            connectionMap[profile.userId] = connection;
           }
         } catch (e) {
           // Error loading profile handled silently
@@ -115,6 +118,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         _filteredFriends = friendProfiles;
         _pendingRequests = pendingRequests;
         _sentRequests = sentRequests;
+        _friendConnectionMap = connectionMap;
         _isLoading = false;
       });
 
@@ -157,7 +161,10 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
             (friend.isOnline || friend.isRecentlyActive)).toList();
         break;
       case FriendFilter.mutual:
-        // TODO: Filter by mutual friends when implemented
+        filtered = filtered.where((friend) {
+          final connection = _friendConnectionMap[friend.userId];
+          return connection != null && connection.mutualFriends.isNotEmpty;
+        }).toList();
         break;
     }
 

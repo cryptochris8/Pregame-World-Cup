@@ -6,17 +6,10 @@ import '../../domain/repositories/predictions_repository.dart';
 import '../../domain/repositories/world_cup_match_repository.dart';
 import 'predictions_state.dart';
 
-// TODO: Token feature for rewards - disabled pending legal review
-// import '../../../token/token.dart';
-// import '../../../../config/token_config.dart';
-
 /// Cubit for managing match predictions
 class PredictionsCubit extends Cubit<PredictionsState> {
   final PredictionsRepository _predictionsRepository;
   final WorldCupMatchRepository? _matchRepository;
-
-  // TODO: Token feature - disabled pending legal review
-  // TokenCubit? _tokenCubit;
 
   StreamSubscription<List<MatchPrediction>>? _predictionsSubscription;
   StreamSubscription<PredictionStats>? _statsSubscription;
@@ -24,20 +17,9 @@ class PredictionsCubit extends Cubit<PredictionsState> {
   PredictionsCubit({
     required PredictionsRepository predictionsRepository,
     WorldCupMatchRepository? matchRepository,
-    // TokenCubit? tokenCubit,
   })  : _predictionsRepository = predictionsRepository,
         _matchRepository = matchRepository,
-        // _tokenCubit = tokenCubit,
         super(PredictionsState.initial());
-
-  // TODO: Token feature - disabled pending legal review
-  // /// Set the TokenCubit for awarding rewards (can be set after construction)
-  // void setTokenCubit(TokenCubit tokenCubit) {
-  //   _tokenCubit = tokenCubit;
-  // }
-  void setTokenCubit(dynamic tokenCubit) {
-    // Disabled - token feature pending legal review
-  }
 
   /// Initialize and load predictions
   Future<void> init() async {
@@ -223,17 +205,9 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         stats: stats,
       ));
 
-      // TODO: Token rewards integration - disabled pending legal review
-      // When re-enabling, implement token reward logic here
-      // See git history for previous implementation
     } catch (e) {
       // Debug output removed
     }
-  }
-
-  /// Clear token rewards notification (placeholder for future use)
-  void clearTokenRewards() {
-    emit(state.copyWith(clearTokenRewards: true));
   }
 
   /// Get prediction for a specific match

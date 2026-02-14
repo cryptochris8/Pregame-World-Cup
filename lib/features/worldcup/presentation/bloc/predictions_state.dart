@@ -1,28 +1,6 @@
 import 'package:equatable/equatable.dart';
 import '../../domain/entities/entities.dart';
 
-/// Information about a token reward given for a correct prediction
-class TokenRewardInfo extends Equatable {
-  final String matchId;
-  final String homeTeamName;
-  final String awayTeamName;
-  final int tokensAwarded;
-  final bool isExactScore;
-  final String predictionDisplay;
-
-  const TokenRewardInfo({
-    required this.matchId,
-    required this.homeTeamName,
-    required this.awayTeamName,
-    required this.tokensAwarded,
-    required this.isExactScore,
-    required this.predictionDisplay,
-  });
-
-  @override
-  List<Object?> get props => [matchId, tokensAwarded, isExactScore];
-}
-
 /// State for match predictions management
 class PredictionsState extends Equatable {
   /// All predictions
@@ -46,9 +24,6 @@ class PredictionsState extends Equatable {
   /// Currently selected match for prediction
   final String? selectedMatchId;
 
-  /// Newly awarded token rewards (for showing popup)
-  final List<TokenRewardInfo> newTokenRewards;
-
   const PredictionsState({
     this.predictions = const [],
     this.stats = const PredictionStats(),
@@ -57,7 +32,6 @@ class PredictionsState extends Equatable {
     this.errorMessage,
     this.successMessage,
     this.selectedMatchId,
-    this.newTokenRewards = const [],
   });
 
   @override
@@ -69,7 +43,6 @@ class PredictionsState extends Equatable {
         errorMessage,
         successMessage,
         selectedMatchId,
-        newTokenRewards,
       ];
 
   /// Initial state
@@ -115,8 +88,6 @@ class PredictionsState extends Equatable {
     bool clearSuccess = false,
     String? selectedMatchId,
     bool clearSelectedMatch = false,
-    List<TokenRewardInfo>? newTokenRewards,
-    bool clearTokenRewards = false,
   }) {
     return PredictionsState(
       predictions: predictions ?? this.predictions,
@@ -126,7 +97,6 @@ class PredictionsState extends Equatable {
       errorMessage: clearError ? null : (errorMessage ?? this.errorMessage),
       successMessage: clearSuccess ? null : (successMessage ?? this.successMessage),
       selectedMatchId: clearSelectedMatch ? null : (selectedMatchId ?? this.selectedMatchId),
-      newTokenRewards: clearTokenRewards ? const [] : (newTokenRewards ?? this.newTokenRewards),
     );
   }
 }

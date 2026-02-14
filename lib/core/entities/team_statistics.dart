@@ -19,8 +19,8 @@ class TeamStatistics {
     required this.ranking,
   });
   
-  /// Create TeamStatistics from NCAA API response
-  factory TeamStatistics.fromNCAAApi(Map<String, dynamic> json) {
+  /// Create TeamStatistics from API response
+  factory TeamStatistics.fromApi(Map<String, dynamic> json) {
     return TeamStatistics(
       teamId: json['teamId']?.toString() ?? '',
       teamName: json['teamName'] ?? 'Unknown Team',

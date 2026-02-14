@@ -5,32 +5,15 @@ import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedul
 import 'package:hive/hive.dart';
 import 'espn_historical_service.dart';
 
-/// Enhanced sports service that integrates with ESPN API
-/// for comprehensive game intelligence and venue recommendations
+/// Legacy ESPN sports service for game intelligence and venue recommendations.
+/// Note: World Cup 2026 match data comes from SportsData.io and Firebase.
+/// This service is retained for AI analysis fallback capabilities.
 class ESPNService {
   static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports';
-  
+
   final Dio _dio;
   Box<GameIntelligence>? _gameIntelligenceBox;
   late ESPNHistoricalService _historicalService;
-  
-  // SEC Teams for rivalry detection and enhanced analysis
-  static const Map<String, List<String>> _secRivalries = {
-    'Alabama': ['Auburn', 'Tennessee', 'LSU'],
-    'Auburn': ['Alabama', 'Georgia'],
-    'Florida': ['Georgia', 'FSU', 'Tennessee'],
-    'Georgia': ['Florida', 'Auburn', 'Tennessee'],
-    'Kentucky': ['Louisville', 'Tennessee'],
-    'LSU': ['Alabama', 'Arkansas', 'Ole Miss'],
-    'Mississippi State': ['Ole Miss'],
-    'Ole Miss': ['Mississippi State', 'LSU'],
-    'Missouri': ['Arkansas'],
-    'South Carolina': ['Clemson'],
-    'Tennessee': ['Alabama', 'Georgia', 'Kentucky', 'Vanderbilt'],
-    'Texas A&M': ['Texas', 'LSU'],
-    'Arkansas': ['LSU', 'Missouri'],
-    'Vanderbilt': ['Tennessee'],
-  };
 
   ESPNService({Dio? dio}) : _dio = dio ?? Dio() {
     _historicalService = ESPNHistoricalService();
@@ -695,23 +678,22 @@ class ESPNService {
 
   /// Check if this is a rivalry game
   bool _isRivalryGame(String homeTeam, String awayTeam) {
-    final homeRivals = _secRivalries[homeTeam] ?? [];
-    final awayRivals = _secRivalries[awayTeam] ?? [];
-    
-    return homeRivals.contains(awayTeam) || awayRivals.contains(homeTeam);
+    // Legacy college football rivalry detection removed.
+    // World Cup rivalry detection is handled by SportsData.io match metadata.
+    return false;
   }
 
   /// Analyze if game has championship implications
   bool _hasChampionshipImplications(Map<String, dynamic> gameData) {
-    // Look for keywords in game description or notes
     final notes = gameData['notes']?.toString().toLowerCase() ?? '';
     final situation = gameData['situation']?.toString().toLowerCase() ?? '';
-    
+
     return notes.contains('championship') ||
            notes.contains('playoff') ||
-           notes.contains('division') ||
-           situation.contains('sec championship') ||
-           situation.contains('playoff implications');
+           notes.contains('knockout') ||
+           notes.contains('final') ||
+           situation.contains('elimination') ||
+           situation.contains('semifinal');
   }
 
   /// Extract broadcast information
@@ -731,30 +713,32 @@ class ESPNService {
 
   /// Estimate TV audience based on factors
   double _estimateTvAudience(double crowdFactor, bool isRivalry, String? network) {
-    double baseAudience = 2.5; // Million viewers baseline for college football
-    
+    double baseAudience = 5.0; // Million viewers baseline for international soccer
+
     // Network influence
     switch (network?.toUpperCase()) {
+      case 'FOX':
+      case 'FS1':
+        baseAudience = 8.0;
+        break;
       case 'ESPN':
       case 'ABC':
-        baseAudience = 4.0;
+        baseAudience = 7.0;
         break;
-      case 'CBS':
-        baseAudience = 5.2; // CBS SEC games typically get higher ratings
-        break;
-      case 'FOX':
-        baseAudience = 3.8;
+      case 'TELEMUNDO':
+      case 'UNIVISION':
+        baseAudience = 6.0;
         break;
       default:
-        baseAudience = 2.5;
+        baseAudience = 5.0;
     }
-    
+
     // Apply crowd factor and rivalry bonus
     double estimatedAudience = baseAudience * crowdFactor;
     if (isRivalry) {
-      estimatedAudience *= 1.3; // Rivalry games get 30% more viewers
+      estimatedAudience *= 1.3;
     }
-    
+
     return estimatedAudience;
   }
 

@@ -8,6 +8,7 @@ import 'dart:developer' as developer;
 import 'package:flutter/foundation.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'l10n/app_localizations.dart';
 
@@ -270,8 +271,10 @@ void _initializeAIServicesBackground() async {
   try {
     debugLog('🤖 AI SERVICES: Starting background initialization');
 
-    // Wait a bit for the app to fully load first
-    await Future.delayed(Duration(seconds: 2));
+    // Yield to the event loop so the UI renders first before starting network-heavy AI init.
+    // AI services make HTTP calls to validate API keys, which should not compete with
+    // initial UI rendering and Firebase listeners.
+    await Future.microtask(() {});
 
     // Get the MultiProviderAIService from dependency injection and initialize it
     final multiProviderAI = di.sl<MultiProviderAIService>();
@@ -291,7 +294,9 @@ void _initializeAIKnowledgeBaseBackground() async {
   try {
     debugLog('🧠 AI KNOWLEDGE: Starting background initialization');
 
-    // Wait a bit for the AI services to initialize first
+    // Delay is intentional: the knowledge base depends on AI services being initialized first
+    // (which run in _initializeAIServicesBackground). A 5-second delay provides a reasonable
+    // window for that initialization to complete before building the knowledge base.
     await Future.delayed(Duration(seconds: 5));
 
     // Initialize the AI knowledge base with historical data
@@ -311,8 +316,9 @@ void _initializeAdMobBackground() async {
   try {
     debugLog('📢 ADMOB: Starting background initialization');
 
-    // Wait a bit for the app to fully load first
-    await Future.delayed(Duration(seconds: 1));
+    // Yield to the event loop so the UI can render before AdMob SDK init,
+    // which triggers platform channel calls and native SDK loading.
+    await Future.microtask(() {});
 
     // Initialize AdMob SDK
     await AdService().initialize();
@@ -334,8 +340,10 @@ void _initializeRevenueCatBackground() async {
   try {
     debugLog('💰 REVENUECAT: Starting background initialization');
 
-    // Wait a bit for the app to fully load first
-    await Future.delayed(Duration(seconds: 2));
+    // Yield to the event loop so the UI renders first.
+    // RevenueCat SDK init involves platform channel setup and should not
+    // compete with the first frame.
+    await Future.microtask(() {});
 
     // Initialize RevenueCat SDK
     await RevenueCatService().initialize();
@@ -360,8 +368,9 @@ void _initializeAnalyticsBackground() async {
   try {
     debugLog('📊 ANALYTICS: Starting background initialization');
 
-    // Wait a bit for the app to fully load first
-    await Future.delayed(const Duration(seconds: 1));
+    // Yield to the event loop so the UI renders first.
+    // Analytics/Crashlytics init is lightweight but should not block the first frame.
+    await Future.microtask(() {});
 
     // Initialize Analytics and Crashlytics
     await AnalyticsService().initialize();
@@ -380,8 +389,10 @@ void _initializeDeepLinkServiceBackground() async {
   try {
     debugLog('🔗 DEEP LINKS: Starting background initialization');
 
-    // Wait for app to stabilize
-    await Future.delayed(const Duration(seconds: 2));
+    // Yield to the event loop so the UI renders and the navigator context is available.
+    // Deep links need the navigator to be mounted before they can trigger navigation,
+    // so we allow the first frame to complete.
+    await Future.microtask(() {});
 
     // Initialize Deep Link Service
     final deepLinkService = DeepLinkService();
@@ -417,12 +428,22 @@ Future<void> _initializeAccessibilityService() async {
   }
 }
 
-/// PRODUCTION FIX: Clear all old 2024 cache data to ensure app always starts with 2025 data
+/// PRODUCTION FIX: Clear all old 2024 cache data to ensure app always starts with fresh data.
+/// Uses a SharedPreferences flag so this only runs once, not on every startup.
 Future<void> _clearOld2024CacheData() async {
   try {
-    debugLog('🧹 STARTUP: Clearing ALL old 2024 cache data...');
+    final prefs = await SharedPreferences.getInstance();
+    const flagKey = 'cache_2024_cleared';
+
+    // Skip if we already cleared 2024 cache on a previous launch
+    if (prefs.getBool(flagKey) == true) {
+      debugLog('🧹 STARTUP: 2024 cache already cleared on a previous launch - skipping');
+      return;
+    }
+
+    debugLog('🧹 STARTUP: Clearing ALL old 2024 cache data (first time)...');
     final cacheService = CacheService.instance;
-    
+
     // Clear all possible 2024 cache keys
     final keysToRemove = [
       'full_season_schedule_2024',
@@ -431,7 +452,7 @@ Future<void> _clearOld2024CacheData() async {
       'upcoming_games_100_24_v2',
       'upcoming_games_100_24_v3',
     ];
-    
+
     // Clear cache keys for all possible days
     for (int day = 1; day <= 31; day++) {
       keysToRemove.addAll([
@@ -443,14 +464,17 @@ Future<void> _clearOld2024CacheData() async {
         'upcoming_games_2024_${day}_v3',
       ]);
     }
-    
+
     // Remove all old cache keys
     for (final key in keysToRemove) {
       await cacheService.remove(key);
     }
-    
+
+    // Set the flag so we don't repeat this on future startups
+    await prefs.setBool(flagKey, true);
+
     debugLog('🧹 STARTUP: Cleared ${keysToRemove.length} potential 2024 cache keys');
-    debugLog('✅ STARTUP: App will now ONLY show 2025 season data');
+    debugLog('✅ STARTUP: App will now ONLY show current season data');
   } catch (e) {
     debugLog('⚠️ STARTUP: Error clearing 2024 cache data: $e');
     // Continue anyway - this is not critical

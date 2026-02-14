@@ -49,13 +49,11 @@ import './core/ai/services/ai_team_season_summary_service.dart';
 import './core/ai/services/enhanced_ai_game_analysis_service.dart';
 import './core/services/historical_game_analysis_service.dart';
 
-// Unified Services (replacing multiple overlapping services)
-import './core/services/unified_game_analysis_service.dart';
+// Unified Services
 import './core/services/unified_venue_service.dart';
 
-// Enhanced Game Analysis
+// Sports Data Services
 import './services/espn_service.dart';
-import './services/comprehensive_series_service.dart';
 import './services/enhanced_sports_data_service.dart';
 
 // Zapier Integration
@@ -109,9 +107,6 @@ import 'features/calendar/calendar.dart';
 // Sharing Feature
 import 'features/sharing/sharing.dart';
 
-// TODO: Token Feature - disabled pending legal review
-// import 'features/token/token.dart';
-
 // Global GetIt instance
 final sl = GetIt.instance; // sl stands for Service Locator
 
@@ -163,7 +158,6 @@ Future<void> setupLocator() async {
     // STEP 3: Basic Analysis Services (Important but not critical)
     print('🔧 DI STEP 3: Basic Analysis Services');
     try {
-      sl.registerLazySingleton(() => UnifiedGameAnalysisService());
       sl.registerLazySingleton(() => UnifiedVenueService());
       print('✅ DI STEP 3: Basic Analysis Services - SUCCESS');
     } catch (e) {
@@ -364,7 +358,6 @@ Future<void> setupLocator() async {
 Future<void> _registerESPNServices() async {
   try {
     sl.registerLazySingleton(() => ESPNService());
-    sl.registerLazySingleton(() => ComprehensiveSeriesService());
     sl.registerLazySingleton(() => EnhancedSportsDataService());
     
     // Register ESPN schedule datasource
@@ -597,18 +590,6 @@ void _registerWorldCupServices() {
   // RevenueCat Service (native in-app purchases)
   sl.registerLazySingleton(() => RevenueCatService());
 
-  // TODO: Token Services - disabled pending legal review
-  // When re-enabling, uncomment the following:
-  // print('🔧 DI STEP 10: Token Services');
-  // try {
-  //   _registerTokenServices();
-  //   print('✅ DI STEP 10: Token Services - SUCCESS');
-  // } catch (e) {
-  //   print('⚠️ DI STEP 10: Token Services - FAILED: $e');
-  //   if (ANDROID_DIAGNOSTIC_MODE) {
-  //     print('🔍 DIAGNOSTIC: Token services failed but app will continue');
-  //   }
-  // }
 }
 
 /// Register Watch Party services
@@ -663,29 +644,3 @@ void _registerSharingServices() {
   // Social Sharing Service (Singleton)
   sl.registerLazySingleton<SocialSharingService>(() => SocialSharingService());
 }
-
-// TODO: Token Feature - disabled pending legal review
-// See docs/TODO_TOKEN_FEATURE.md for re-enabling instructions
-// void _registerTokenServices() {
-//   // Services
-//   sl.registerLazySingleton<BaseBlockchainService>(
-//     () => BaseBlockchainService(),
-//   );
-//
-//   sl.registerLazySingleton<TokenService>(
-//     () => TokenService(blockchainService: sl()),
-//   );
-//
-//   // Repository
-//   sl.registerLazySingleton<TokenRepository>(
-//     () => TokenRepository(prefs: sl<SharedPreferences>()),
-//   );
-//
-//   // Cubit (Factory for fresh instances per screen)
-//   sl.registerFactory<TokenCubit>(
-//     () => TokenCubit(
-//       tokenService: sl(),
-//       repository: sl(),
-//     ),
-//   );
-// } 

@@ -369,7 +369,7 @@ class EnhancedAIPredictionService {
       
       final aiResponse = await _aiService.generateCompletion(
         prompt: prompt,
-        systemMessage: '''You are an expert college football analyst. Provide intelligent, data-driven analysis.''',
+        systemMessage: '''You are an expert international soccer analyst. Provide intelligent, data-driven analysis.''',
         maxTokens: 400,
         temperature: 0.3,
       );
@@ -391,7 +391,7 @@ class EnhancedAIPredictionService {
     Map<String, dynamic> gameContext,
   ) {
     return '''
-Analyze this college football matchup:
+Analyze this international soccer matchup:
 
 GAME: ${game.awayTeamName} @ ${game.homeTeamName}
 DATE: ${game.dateTime?.toString() ?? 'TBD'}

@@ -45,7 +45,7 @@ void main() {
       expect(stats.ranking, equals(3));
     });
 
-    group('fromNCAAApi', () {
+    group('fromApi', () {
       test('parses complete JSON correctly', () {
         final json = {
           'teamId': 'team_1',
@@ -82,7 +82,7 @@ void main() {
           'ranking': 2,
         };
 
-        final stats = TeamStatistics.fromNCAAApi(json);
+        final stats = TeamStatistics.fromApi(json);
 
         expect(stats.teamId, equals('team_1'));
         expect(stats.teamName, equals('Alabama Crimson Tide'));
@@ -96,7 +96,7 @@ void main() {
       test('handles missing fields with defaults', () {
         final json = <String, dynamic>{};
 
-        final stats = TeamStatistics.fromNCAAApi(json);
+        final stats = TeamStatistics.fromApi(json);
 
         expect(stats.teamId, isEmpty);
         expect(stats.teamName, equals('Unknown Team'));

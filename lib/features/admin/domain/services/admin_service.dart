@@ -164,6 +164,10 @@ class AdminService {
           .count()
           .get();
 
+      // Get predictions and messages counts
+      final predictionsCount = await _firestore.collection('predictions').count().get();
+      final messagesCount = await _firestore.collection('messages').count().get();
+
       final stats = AdminDashboardStats(
         totalUsers: usersCount.count ?? 0,
         activeUsers24h: activeUsersCount.count ?? 0,
@@ -171,8 +175,8 @@ class AdminService {
         totalWatchParties: watchPartiesCount.count ?? 0,
         activeWatchParties: activeWatchPartiesCount.count ?? 0,
         pendingReports: pendingReportsCount.count ?? 0,
-        totalPredictions: 0, // TODO: Add predictions count
-        totalMessages: 0, // TODO: Add messages count
+        totalPredictions: predictionsCount.count ?? 0,
+        totalMessages: messagesCount.count ?? 0,
         updatedAt: now,
       );
 
@@ -238,6 +242,52 @@ class AdminService {
     } catch (e) {
       LoggingService.error('Error getting user: $e', tag: _logTag);
       return null;
+    }
+  }
+
+  /// Warn user
+  Future<bool> warnUser(String userId, String reason) async {
+    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) return false;
+
+    try {
+      await _moderationService.issueWarning(
+        userId: userId,
+        reason: reason,
+      );
+
+      await _logAdminAction('warn_user', {
+        'userId': userId,
+        'reason': reason,
+      });
+
+      return true;
+    } catch (e) {
+      LoggingService.error('Error warning user: $e', tag: _logTag);
+      return false;
+    }
+  }
+
+  /// Mute user
+  Future<bool> muteUser(String userId, String reason, Duration duration) async {
+    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) return false;
+
+    try {
+      await _moderationService.muteUser(
+        userId: userId,
+        reason: reason,
+        duration: duration,
+      );
+
+      await _logAdminAction('mute_user', {
+        'userId': userId,
+        'reason': reason,
+        'durationHours': duration.inHours,
+      });
+
+      return true;
+    } catch (e) {
+      LoggingService.error('Error muting user: $e', tag: _logTag);
+      return false;
     }
   }
 

@@ -226,7 +226,7 @@ class UnifiedVenueService {
     try {
       // Generate AI-powered venue analysis using general completion
       final prompt = '''
-Analyze this venue for a college football game context:
+Analyze this venue for a World Cup match day context:
 
 Venue: ${venue.name}
 Rating: ${venue.rating ?? 'N/A'}/5

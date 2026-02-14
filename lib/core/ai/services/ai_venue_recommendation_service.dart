@@ -36,7 +36,7 @@ class AIVenueRecommendationService {
       // Generate AI-powered analysis
       final aiResponse = await _aiService.generateVenueRecommendation(
         userPreferences: userPreferences,
-        gameContext: gameContext ?? 'College football game',
+        gameContext: gameContext ?? 'World Cup match',
         nearbyVenues: venueDescriptions,
       );
 

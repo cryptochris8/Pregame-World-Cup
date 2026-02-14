@@ -18,10 +18,12 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
   final PlacesApiDataSource _placesDataSource = sl<PlacesApiDataSource>();
 
   List<Place> _venues = [];
+  List<Place> _allVenues = [];
   bool _isLoading = false;
   bool _isMapView = false;
   String? _error;
   Position? _currentPosition;
+  String _selectedCategory = 'Sports Bars';
 
   @override
   void initState() {
@@ -63,7 +65,8 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       );
 
       setState(() {
-        _venues = venues;
+        _allVenues = venues;
+        _venues = _filterByCategory(venues);
         _isLoading = false;
       });
     } catch (e) {
@@ -89,6 +92,31 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       // Debug output removed
       return null;
     }
+  }
+
+  List<Place> _filterByCategory(List<Place> venues) {
+    if (_selectedCategory == 'All Venues') return venues;
+
+    final categoryTypes = <String, List<String>>{
+      'Sports Bars': ['bar', 'night_club'],
+      'Restaurants': ['restaurant'],
+      'Breweries': ['bar', 'cafe'],
+    };
+
+    final types = categoryTypes[_selectedCategory];
+    if (types == null) return venues;
+
+    return venues.where((v) {
+      final venueTypes = v.types ?? [];
+      return venueTypes.any((t) => types.contains(t));
+    }).toList();
+  }
+
+  void _onCategorySelected(String category) {
+    setState(() {
+      _selectedCategory = category;
+      _venues = _filterByCategory(_allVenues);
+    });
   }
 
   Future<void> _searchVenues(String query) async {
@@ -121,7 +149,8 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       ).toList();
 
       setState(() {
-        _venues = filtered;
+        _allVenues = filtered;
+        _venues = _filterByCategory(filtered);
         _isLoading = false;
       });
     } catch (e) {
@@ -170,13 +199,13 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
-                _buildCategoryChip('Sports Bars', Icons.sports_bar, true),
+                _buildCategoryChip('Sports Bars', Icons.sports_bar, _selectedCategory == 'Sports Bars'),
                 const SizedBox(width: 8),
-                _buildCategoryChip('Restaurants', Icons.restaurant, false),
+                _buildCategoryChip('Restaurants', Icons.restaurant, _selectedCategory == 'Restaurants'),
                 const SizedBox(width: 8),
-                _buildCategoryChip('Breweries', Icons.local_drink, false),
+                _buildCategoryChip('Breweries', Icons.local_drink, _selectedCategory == 'Breweries'),
                 const SizedBox(width: 8),
-                _buildCategoryChip('All Venues', Icons.place, false),
+                _buildCategoryChip('All Venues', Icons.place, _selectedCategory == 'All Venues'),
               ],
             ),
           ),
@@ -209,7 +238,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       ),
       selected: selected,
       onSelected: (value) {
-        // TODO: Filter by category
+        _onCategorySelected(label);
       },
     );
   }

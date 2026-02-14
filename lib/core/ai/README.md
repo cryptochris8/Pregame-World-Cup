@@ -5,7 +5,7 @@ This module provides AI-powered features for the Pregame app using OpenAI's GPT 
 ## 🚀 Features
 
 - **Intelligent Venue Recommendations**: AI-powered venue suggestions based on user preferences and game context
-- **Game Predictions**: AI-generated predictions for college football games
+- **Match Predictions**: AI-generated predictions for World Cup matches
 - **Semantic Search**: Use embeddings to find similar venues and content
 - **Natural Language Processing**: Convert user preferences into actionable insights
 - **Rate Limiting**: Built-in protection against API limits

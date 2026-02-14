@@ -61,8 +61,8 @@ class AIHistoricalKnowledgeService {
         'teamRecords': <String, Map<String, int>>{},
         'headToHeadRecords': <String, Map<String, dynamic>>{},
         'conferenceStats': <String, dynamic>{},
-        'bowlGames': games.where((g) => g.week != null && g.week! >= 15).length,
-        'playoffGames': games.where((g) => g.week != null && g.week! >= 16).length,
+        'knockoutGames': games.where((g) => g.week != null && g.week! >= 15).length,
+        'finalRoundGames': games.where((g) => g.week != null && g.week! >= 16).length,
         'lastUpdated': DateTime.now().toIso8601String(),
       };
       

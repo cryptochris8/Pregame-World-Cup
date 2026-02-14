@@ -6,7 +6,7 @@ class GetUpcomingGames {
 
   GetUpcomingGames(this.repository);
 
-  /// Fetches upcoming college football games.
+  /// Fetches upcoming matches.
   /// [limit] specifies the maximum number of games to return (default: 10).
   /// Returns a list of [GameSchedule] objects sorted by date.
   /// Throws an [Exception] if fetching fails.

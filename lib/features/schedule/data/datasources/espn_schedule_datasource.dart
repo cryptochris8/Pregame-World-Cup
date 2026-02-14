@@ -6,8 +6,8 @@ import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedul
 import 'package:pregame_world_cup/services/espn_service.dart';
 
 /// ESPN Schedule Data Source
-/// Provides 2025 college football schedule data with real dates and times
-/// This integrates with your existing ESPN service to fetch actual 2025 season data
+/// Legacy data source wrapping ESPNService for historical game data.
+/// World Cup 2026 match data comes from SportsData.io and Firebase.
 class ESPNScheduleDataSource {
   final ESPNService _espnService;
   final CacheService _cacheService;

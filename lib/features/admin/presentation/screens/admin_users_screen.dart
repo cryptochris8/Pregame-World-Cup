@@ -263,10 +263,17 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
             onPressed: () async {
               if (reasonController.text.isEmpty) return;
               Navigator.pop(context);
-              // TODO: Implement warning
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Warning sent')),
+              final success = await _adminService.warnUser(
+                user.userId,
+                reasonController.text,
               );
+              if (mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(success ? 'Warning sent' : 'Failed to send warning'),
+                  ),
+                );
+              }
             },
             child: const Text('Send Warning'),
           ),
@@ -322,10 +329,18 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
               onPressed: () async {
                 if (reasonController.text.isEmpty) return;
                 Navigator.pop(context);
-                // TODO: Implement mute
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('User muted')),
+                final success = await _adminService.muteUser(
+                  user.userId,
+                  reasonController.text,
+                  selectedDuration,
                 );
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(success ? 'User muted' : 'Failed to mute user'),
+                    ),
+                  );
+                }
               },
               child: const Text('Mute User'),
             ),

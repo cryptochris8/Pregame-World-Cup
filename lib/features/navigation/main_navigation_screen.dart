@@ -390,11 +390,6 @@ class _WorldCupFeatureWrapperState extends State<_WorldCupFeatureWrapper> {
     _favoritesCubit = di.sl<FavoritesCubit>()..init();
     _worldCupAICubit = di.sl<WorldCupAICubit>();
     _predictionsCubit = di.sl<PredictionsCubit>()..init();
-
-    // TODO: Token rewards integration - disabled pending legal review
-    // When re-enabling, uncomment the following:
-    // _tokenCubit = di.sl<TokenCubit>()..init();
-    // _predictionsCubit.setTokenCubit(_tokenCubit);
   }
 
   @override
@@ -420,8 +415,6 @@ class _WorldCupFeatureWrapperState extends State<_WorldCupFeatureWrapper> {
         BlocProvider<FavoritesCubit>.value(value: _favoritesCubit),
         BlocProvider<PredictionsCubit>.value(value: _predictionsCubit),
         BlocProvider<WorldCupAICubit>.value(value: _worldCupAICubit),
-        // TODO: Token feature - disabled pending legal review
-        // BlocProvider<TokenCubit>.value(value: _tokenCubit),
       ],
       child: const WorldCupHomeScreen(),
     );

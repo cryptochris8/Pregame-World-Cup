@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
-/// Helper class for managing SEC team logos
+/// Helper class for managing team logos (legacy — to be replaced with World Cup 2026 teams)
+// TODO: Remove all college football (SEC) logo mappings and assets/logos/ PNG files.
+// Replace with World Cup 2026 national team flag assets or load flags from API.
+// College football logo files in assets/logos/ (e.g., alabama_crimson_tide.png,
+// auburn_tigers.png, etc.) should be deleted once this mapping is replaced.
 class TeamLogoHelper {
   // Map of team names (case-insensitive) to their logo asset paths
-  // All 16 SEC Teams (2025 season)
+  // Legacy team logos — World Cup team flags/logos loaded from API
   static const Map<String, String> _teamLogoMap = {
     // 1. Alabama Crimson Tide
     'alabama': 'assets/logos/alabama_crimson_tide.png',

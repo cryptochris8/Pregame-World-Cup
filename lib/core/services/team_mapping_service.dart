@@ -1,7 +1,7 @@
 /// Service to map team display names to SportsData.io API keys
 class TeamMappingService {
   static final Map<String, String> _teamMapping = {
-    // SEC Teams - Updated with correct SportsData.io keys
+    // Legacy team mappings - to be replaced with World Cup 2026 teams
     'Alabama': 'ALA',
     'Alabama Crimson Tide': 'ALA',
     'Auburn': 'AUBRN',  // Updated from AUB to AUBRN
