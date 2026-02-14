@@ -15,7 +15,7 @@ class MemberListItem extends StatelessWidget {
   final VoidCallback? onDemote;
 
   const MemberListItem({
-    Key? key,
+    super.key,
     required this.member,
     this.isCurrentUser = false,
     this.canManage = false,
@@ -24,7 +24,7 @@ class MemberListItem extends StatelessWidget {
     this.onRemove,
     this.onPromote,
     this.onDemote,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -148,13 +148,13 @@ class MemberListItem extends StatelessWidget {
                     ),
                   ),
                 const PopupMenuDivider(),
-                PopupMenuItem(
+                const PopupMenuItem(
                   value: 'remove',
                   child: Row(
                     children: [
                       Icon(Icons.person_remove, size: 20, color: Colors.red),
-                      const SizedBox(width: 8),
-                      const Text(
+                      SizedBox(width: 8),
+                      Text(
                         'Remove',
                         style: TextStyle(color: Colors.red),
                       ),
@@ -243,11 +243,11 @@ class MemberListSection extends StatelessWidget {
   final IconData? icon;
 
   const MemberListSection({
-    Key? key,
+    super.key,
     required this.title,
     required this.count,
     this.icon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

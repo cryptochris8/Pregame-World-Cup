@@ -158,7 +158,7 @@ Keep it concise and engaging for fans planning their game day experience.
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
           decoration: BoxDecoration(
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               colors: [Colors.deepPurple, Colors.purple],
             ),
             borderRadius: BorderRadius.circular(20),

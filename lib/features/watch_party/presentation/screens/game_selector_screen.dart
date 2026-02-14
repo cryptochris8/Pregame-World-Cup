@@ -8,7 +8,7 @@ import '../../../worldcup/presentation/widgets/team_flag.dart';
 
 /// Screen for selecting a World Cup match for a watch party
 class GameSelectorScreen extends StatefulWidget {
-  const GameSelectorScreen({Key? key}) : super(key: key);
+  const GameSelectorScreen({super.key});
 
   @override
   State<GameSelectorScreen> createState() => _GameSelectorScreenState();

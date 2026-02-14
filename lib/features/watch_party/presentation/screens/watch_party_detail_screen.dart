@@ -8,7 +8,6 @@ import '../bloc/watch_party_bloc.dart';
 import '../widgets/widgets.dart';
 import '../../domain/entities/watch_party.dart';
 import '../../domain/entities/watch_party_member.dart';
-import '../../domain/entities/watch_party_message.dart';
 import '../../domain/services/watch_party_payment_service.dart';
 import 'invite_friends_screen.dart';
 import 'edit_watch_party_screen.dart';
@@ -18,9 +17,9 @@ class WatchPartyDetailScreen extends StatefulWidget {
   final String watchPartyId;
 
   const WatchPartyDetailScreen({
-    Key? key,
+    super.key,
     required this.watchPartyId,
-  }) : super(key: key);
+  });
 
   @override
   State<WatchPartyDetailScreen> createState() => _WatchPartyDetailScreenState();

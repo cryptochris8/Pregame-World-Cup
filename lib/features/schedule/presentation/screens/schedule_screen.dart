@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart'; // For date formatting
 // Import the model
 import '../../domain/entities/game_schedule.dart'; // Import GameSchedule and TimeFilter
 import '../../../recommendations/presentation/screens/game_details_screen.dart'; // Import for navigation
 import '../../../auth/domain/services/auth_service.dart'; // Import AuthService
 import '../../../../injection_container.dart'; // Import GetIt
-import '../../../auth/presentation/screens/favorite_teams_screen.dart'; // Import FavoriteTeamsScreen
-import '../../../chatbot/presentation/screens/chat_screen.dart'; // Import ChatScreen
+// Import FavoriteTeamsScreen
+// Import ChatScreen
 import '../bloc/schedule_bloc.dart'; // Import ScheduleBloc
 import '../../../../config/theme_helper.dart';
 import '../../../../core/utils/team_logo_helper.dart';
@@ -353,7 +352,7 @@ class _ScheduleScreenState extends State<ScheduleScreen>
                           ),
                         ],
                       ),
-                      child: Row(
+                      child: const Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(
@@ -361,8 +360,8 @@ class _ScheduleScreenState extends State<ScheduleScreen>
                             size: 16,
                             color: Colors.white,
                           ),
-                          const SizedBox(width: 6),
-                          const Text(
+                          SizedBox(width: 6),
+                          Text(
                             'Venues',
                             style: TextStyle(
                               fontSize: 14,

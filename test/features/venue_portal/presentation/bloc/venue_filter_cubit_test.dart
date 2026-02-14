@@ -154,8 +154,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'setShowsMatchFilter with null clears match filter',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(showsMatchId: 'match_42'),
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(showsMatchId: 'match_42'),
       ),
       act: (cubit) => cubit.setShowsMatchFilter(null),
       expect: () => [
@@ -195,8 +195,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'toggleHasTvsFilter toggles from true to null',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(hasTvs: true),
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(hasTvs: true),
       ),
       act: (cubit) => cubit.toggleHasTvsFilter(),
       expect: () => [
@@ -235,8 +235,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'toggleHasSpecialsFilter toggles from true to null',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(hasSpecials: true),
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(hasSpecials: true),
       ),
       act: (cubit) => cubit.toggleHasSpecialsFilter(),
       expect: () => [
@@ -267,8 +267,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'addAtmosphereTag adds a new tag',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(atmosphereTags: ['casual']),
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(atmosphereTags: ['casual']),
       ),
       act: (cubit) => cubit.addAtmosphereTag('rowdy'),
       expect: () => [
@@ -281,8 +281,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'addAtmosphereTag does not add duplicate tag',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(atmosphereTags: ['casual']),
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(atmosphereTags: ['casual']),
       ),
       act: (cubit) => cubit.addAtmosphereTag('casual'),
       expect: () => [],
@@ -294,8 +294,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'removeAtmosphereTag removes an existing tag',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(
             atmosphereTags: ['casual', 'rowdy', '21+']),
       ),
       act: (cubit) => cubit.removeAtmosphereTag('rowdy'),
@@ -309,8 +309,8 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'removeAtmosphereTag with non-existent tag does not emit new state',
       build: () => cubit,
-      seed: () => VenueFilterState(
-        criteria: const VenueFilterCriteria(atmosphereTags: ['casual']),
+      seed: () => const VenueFilterState(
+        criteria: VenueFilterCriteria(atmosphereTags: ['casual']),
       ),
       act: (cubit) => cubit.removeAtmosphereTag('non-existent'),
       // Equatable detects the state is unchanged, so no new emission
@@ -383,7 +383,7 @@ void main() {
     blocTest<VenueFilterCubit, VenueFilterState>(
       'clearError clears error message',
       build: () => cubit,
-      seed: () => VenueFilterState(
+      seed: () => const VenueFilterState(
         errorMessage: 'Something went wrong',
       ),
       act: (cubit) => cubit.clearError(),
@@ -411,21 +411,21 @@ void main() {
           'venue1': createEnhancement(
             venueId: 'venue1',
             broadcastingSchedule: BroadcastingSchedule(
-              matchIds: ['match_1', 'match_2'],
+              matchIds: const ['match_1', 'match_2'],
               lastUpdated: now,
             ),
           ),
           'venue2': createEnhancement(
             venueId: 'venue2',
             broadcastingSchedule: BroadcastingSchedule(
-              matchIds: ['match_3'],
+              matchIds: const ['match_3'],
               lastUpdated: now,
             ),
           ),
           'venue3': createEnhancement(
             venueId: 'venue3',
             broadcastingSchedule: BroadcastingSchedule(
-              matchIds: ['match_1'],
+              matchIds: const ['match_1'],
               lastUpdated: now,
             ),
           ),
@@ -595,8 +595,8 @@ void main() {
       });
 
       test('venue without enhancement data fails when filters are active', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(hasTvs: true),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(hasTvs: true),
           enhancements: {}, // no enhancement data at all
         ));
 
@@ -610,7 +610,7 @@ void main() {
             venueId: 'venue1',
             tvSetup: const TvSetup(totalScreens: 5),
             broadcastingSchedule: BroadcastingSchedule(
-              matchIds: ['match_1'],
+              matchIds: const ['match_1'],
               lastUpdated: now,
             ),
           ),
@@ -618,7 +618,7 @@ void main() {
             venueId: 'venue2',
             tvSetup: const TvSetup(totalScreens: 3),
             broadcastingSchedule: BroadcastingSchedule(
-              matchIds: ['match_2'],
+              matchIds: const ['match_2'],
               lastUpdated: now,
             ),
           ),
@@ -626,7 +626,7 @@ void main() {
             venueId: 'venue3',
             // No TV, broadcasts match_1
             broadcastingSchedule: BroadcastingSchedule(
-              matchIds: ['match_1'],
+              matchIds: const ['match_1'],
               lastUpdated: now,
             ),
           ),
@@ -656,56 +656,56 @@ void main() {
       });
 
       test('hasActiveFilters is true with showsMatchId', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(showsMatchId: 'match_1'),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(showsMatchId: 'match_1'),
         ));
         expect(cubit.state.hasActiveFilters, isTrue);
         expect(cubit.state.activeFilterCount, 1);
       });
 
       test('hasActiveFilters is true with hasTvs', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(hasTvs: true),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(hasTvs: true),
         ));
         expect(cubit.state.hasActiveFilters, isTrue);
         expect(cubit.state.activeFilterCount, 1);
       });
 
       test('hasActiveFilters is true with hasSpecials', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(hasSpecials: true),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(hasSpecials: true),
         ));
         expect(cubit.state.hasActiveFilters, isTrue);
         expect(cubit.state.activeFilterCount, 1);
       });
 
       test('hasActiveFilters is true with atmosphereTags', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(atmosphereTags: ['rowdy']),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(atmosphereTags: ['rowdy']),
         ));
         expect(cubit.state.hasActiveFilters, isTrue);
         expect(cubit.state.activeFilterCount, 1);
       });
 
       test('hasActiveFilters is true with hasCapacityInfo', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(hasCapacityInfo: true),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(hasCapacityInfo: true),
         ));
         expect(cubit.state.hasActiveFilters, isTrue);
         expect(cubit.state.activeFilterCount, 1);
       });
 
       test('hasActiveFilters is true with teamAffinity', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(teamAffinity: 'BRA'),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(teamAffinity: 'BRA'),
         ));
         expect(cubit.state.hasActiveFilters, isTrue);
         expect(cubit.state.activeFilterCount, 1);
       });
 
       test('activeFilterCount counts all active filters correctly', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(
             showsMatchId: 'match_1',
             hasTvs: true,
             hasSpecials: true,
@@ -719,8 +719,8 @@ void main() {
       });
 
       test('activeFilterCount ignores false boolean filters', () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(
             hasTvs: false,
             hasSpecials: false,
             hasCapacityInfo: false,
@@ -753,8 +753,8 @@ void main() {
 
       test('venuePassesFilters returns false for unknown venue with active filters',
           () {
-        cubit.emit(VenueFilterState(
-          criteria: const VenueFilterCriteria(hasTvs: true),
+        cubit.emit(const VenueFilterState(
+          criteria: VenueFilterCriteria(hasTvs: true),
         ));
         expect(cubit.state.venuePassesFilters('unknown_venue'), isFalse);
       });
@@ -774,7 +774,7 @@ void main() {
       });
 
       test('copyWith with clearError removes error message', () {
-        final original = VenueFilterState(
+        const original = VenueFilterState(
           errorMessage: 'some error',
         );
         final copy = original.copyWith(clearError: true);

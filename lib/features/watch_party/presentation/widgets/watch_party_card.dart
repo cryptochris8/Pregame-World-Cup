@@ -3,7 +3,6 @@ import 'package:intl/intl.dart';
 
 import '../../domain/entities/watch_party.dart';
 import 'visibility_badge.dart';
-import 'member_avatar_row.dart';
 
 /// Card widget displaying watch party summary for lists
 class WatchPartyCard extends StatelessWidget {
@@ -14,13 +13,13 @@ class WatchPartyCard extends StatelessWidget {
   final bool compact;
 
   const WatchPartyCard({
-    Key? key,
+    super.key,
     required this.watchParty,
     this.onTap,
     this.showVenue = true,
     this.showHost = true,
     this.compact = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -181,10 +180,10 @@ class WatchPartyCard extends StatelessWidget {
                 const SizedBox(height: 8),
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.videocam,
                       size: 14,
-                      color: const Color(0xFF059669),
+                      color: Color(0xFF059669),
                     ),
                     const SizedBox(width: 4),
                     Text(

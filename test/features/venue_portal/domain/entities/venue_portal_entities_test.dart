@@ -633,8 +633,8 @@ void main() {
         price: 9.99,
         discountPercent: 20,
         validFor: SpecialValidFor.specificMatches,
-        matchIds: ['match_1', 'match_2'],
-        validDays: ['saturday', 'sunday'],
+        matchIds: const ['match_1', 'match_2'],
+        validDays: const ['saturday', 'sunday'],
         validTimeStart: '11:00',
         validTimeEnd: '23:00',
         isActive: true,
@@ -1014,9 +1014,9 @@ void main() {
 
     test('creates schedule with all fields', () {
       final schedule = BroadcastingSchedule(
-        matchIds: ['match_1', 'match_2'],
+        matchIds: const ['match_1', 'match_2'],
         lastUpdated: now,
-        autoSelectByTeam: ['USA', 'MEX'],
+        autoSelectByTeam: const ['USA', 'MEX'],
       );
 
       expect(schedule.matchIds, hasLength(2));
@@ -1032,7 +1032,7 @@ void main() {
 
     test('isBroadcastingMatch checks matchIds', () {
       final schedule = BroadcastingSchedule(
-        matchIds: ['match_1', 'match_2'],
+        matchIds: const ['match_1', 'match_2'],
         lastUpdated: now,
       );
 
@@ -1043,7 +1043,7 @@ void main() {
 
     test('copyWith updates fields correctly', () {
       final original = BroadcastingSchedule(
-        matchIds: ['match_1'],
+        matchIds: const ['match_1'],
         lastUpdated: now,
       );
       final updated = original.copyWith(
@@ -1078,15 +1078,15 @@ void main() {
 
     test('Equatable compares correctly', () {
       final schedule1 = BroadcastingSchedule(
-        matchIds: ['m1'],
+        matchIds: const ['m1'],
         lastUpdated: now,
       );
       final schedule2 = BroadcastingSchedule(
-        matchIds: ['m1'],
+        matchIds: const ['m1'],
         lastUpdated: now,
       );
       final schedule3 = BroadcastingSchedule(
-        matchIds: ['m2'],
+        matchIds: const ['m2'],
         lastUpdated: now,
       );
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pregame_world_cup/features/worldcup/domain/entities/entities.dart';
 import 'package:pregame_world_cup/features/worldcup/presentation/widgets/widgets.dart';
 
 import '../../presentation/bloc/mock_repositories.dart';

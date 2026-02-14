@@ -283,7 +283,7 @@ class ModerationService {
     // Check if user is muted
     final isMuted = await isCurrentUserMuted();
     if (isMuted) {
-      return MessageValidationResult(
+      return const MessageValidationResult(
         isValid: false,
         errorMessage: 'You are currently muted and cannot send messages',
         filteredMessage: null,
@@ -292,7 +292,7 @@ class ModerationService {
 
     // Auto-reject severely inappropriate content
     if (filterResult.shouldAutoReject) {
-      return MessageValidationResult(
+      return const MessageValidationResult(
         isValid: false,
         errorMessage: 'This message contains inappropriate content',
         filteredMessage: null,
@@ -325,7 +325,7 @@ class ModerationService {
     // Check if user is suspended
     final isSuspended = await isCurrentUserSuspended();
     if (isSuspended) {
-      return WatchPartyValidationResult(
+      return const WatchPartyValidationResult(
         isValid: false,
         errorMessage:
             'You are currently suspended and cannot create watch parties',
@@ -338,7 +338,7 @@ class ModerationService {
     );
 
     if (filterResult.shouldAutoReject) {
-      return WatchPartyValidationResult(
+      return const WatchPartyValidationResult(
         isValid: false,
         errorMessage: 'Watch party content contains inappropriate language',
       );

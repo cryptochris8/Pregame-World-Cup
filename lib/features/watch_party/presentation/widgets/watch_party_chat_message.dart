@@ -11,12 +11,12 @@ class WatchPartyChatMessage extends StatelessWidget {
   final VoidCallback? onReply;
 
   const WatchPartyChatMessage({
-    Key? key,
+    super.key,
     required this.message,
     required this.isCurrentUser,
     this.onLongPress,
     this.onReply,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

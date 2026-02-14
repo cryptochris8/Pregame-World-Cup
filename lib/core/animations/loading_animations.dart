@@ -372,20 +372,20 @@ class CardSkeleton extends StatelessWidget {
           
           const SizedBox(height: 12),
           
-          Row(
+          const Row(
             children: [
-              const SkeletonLoader(
+              SkeletonLoader(
                 width: 24,
                 height: 24,
                 borderRadius: BorderRadius.all(Radius.circular(12)),
               ),
-              const SizedBox(width: 8),
-              const SkeletonLoader(
+              SizedBox(width: 8),
+              SkeletonLoader(
                 width: 60,
                 height: 16,
               ),
-              const Spacer(),
-              const SkeletonLoader(
+              Spacer(),
+              SkeletonLoader(
                 width: 80,
                 height: 32,
                 borderRadius: BorderRadius.all(Radius.circular(16)),

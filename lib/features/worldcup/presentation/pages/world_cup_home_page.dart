@@ -406,7 +406,7 @@ class WorldCupDashboardPage extends StatelessWidget {
   void _navigateTo(BuildContext context, int index) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => WorldCupHomePage(),
+        builder: (_) => const WorldCupHomePage(),
       ),
     );
   }

@@ -374,11 +374,11 @@ class VirtualAttendanceButton extends StatelessWidget {
   final bool isLoading;
 
   const VirtualAttendanceButton({
-    Key? key,
+    super.key,
     required this.watchParty,
     this.onPressed,
     this.isLoading = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -424,12 +424,12 @@ class VirtualAttendanceInfoCard extends StatelessWidget {
   final VoidCallback? onJoinPressed;
 
   const VirtualAttendanceInfoCard({
-    Key? key,
+    super.key,
     required this.watchParty,
     this.hasJoined = false,
     this.hasPaid = false,
     this.onJoinPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -443,11 +443,11 @@ class VirtualAttendanceInfoCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               children: [
-                const Icon(Icons.videocam, color: Color(0xFF059669)),
-                const SizedBox(width: 8),
-                const Text(
+                Icon(Icons.videocam, color: Color(0xFF059669)),
+                SizedBox(width: 8),
+                Text(
                   'Virtual Attendance Available',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,

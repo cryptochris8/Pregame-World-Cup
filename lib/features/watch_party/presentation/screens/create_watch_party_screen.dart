@@ -15,11 +15,11 @@ class CreateWatchPartyScreen extends StatefulWidget {
   final DateTime? preselectedGameDateTime;
 
   const CreateWatchPartyScreen({
-    Key? key,
+    super.key,
     this.preselectedGameId,
     this.preselectedGameName,
     this.preselectedGameDateTime,
-  }) : super(key: key);
+  });
 
   @override
   State<CreateWatchPartyScreen> createState() => _CreateWatchPartyScreenState();
@@ -47,7 +47,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
   double? _venueLatitude;
   double? _venueLongitude;
 
-  List<String> _tags = [];
+  final List<String> _tags = [];
   bool _isLoading = false;
 
   @override

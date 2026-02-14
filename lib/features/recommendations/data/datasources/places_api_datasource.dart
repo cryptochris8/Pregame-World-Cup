@@ -1,7 +1,7 @@
 import '../../domain/entities/place.dart'; // Corrected import path
 import 'package:dio/dio.dart';
-import '../../../../injection_container.dart'; // For Dio instance
-import '../../../../config/api_keys.dart'; // For centralized API configuration
+// For Dio instance
+// For centralized API configuration
 import '../../../../core/services/logging_service.dart';
 
 
@@ -199,7 +199,7 @@ class PlacesApiDataSource {
       'types': types.join('|'), // Cloud function expects pipe-separated for its logic
     };
 
-    final String functionUrl = '$_cloudFunctionBaseUrl/getNearbyVenuesHttp';
+    const String functionUrl = '$_cloudFunctionBaseUrl/getNearbyVenuesHttp';
 
     try {
       final response = await _dio.get(
@@ -233,7 +233,7 @@ class PlacesApiDataSource {
     double? minRating,
     bool? openNow,
   }) async {
-    final String functionUrl = '$_cloudFunctionBaseUrl/getFilteredVenuesHttp';
+    const String functionUrl = '$_cloudFunctionBaseUrl/getFilteredVenuesHttp';
 
     final Map<String, dynamic> queryParameters = {
       'lat': lat,

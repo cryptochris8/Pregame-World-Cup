@@ -77,7 +77,7 @@ class _TeamsPageState extends State<TeamsPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.error_outline, size: 48, color: AppTheme.secondaryRose),
+                  const Icon(Icons.error_outline, size: 48, color: AppTheme.secondaryRose),
                   const SizedBox(height: 16),
                   Text(state.errorMessage!, style: const TextStyle(color: Colors.white70)),
                   const SizedBox(height: 16),

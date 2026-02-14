@@ -92,11 +92,11 @@ class AISeasonReviewTabWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               border: Border.all(color: Colors.orange.withOpacity(0.3)),
             ),
-            child: Row(
+            child: const Row(
               children: [
                 Icon(Icons.info_outline, color: Colors.orange, size: 20),
-                const SizedBox(width: 8),
-                const Expanded(
+                SizedBox(width: 8),
+                Expanded(
                   child: Text(
                     'Season data based on 2024 historical performance and ESPN integration',
                     style: TextStyle(
@@ -185,11 +185,11 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         children: [
           _buildTeamHeader(teamName, isAway: isAway),
           const SizedBox(height: 16),
-          Row(
+          const Row(
             children: [
               Icon(Icons.error_outline, color: Colors.orange, size: 20),
-              const SizedBox(width: 8),
-              const Expanded(
+              SizedBox(width: 8),
+              Expanded(
                 child: Text(
                   'Season analysis temporarily unavailable',
                   style: TextStyle(
@@ -411,7 +411,7 @@ class AISeasonReviewTabWidget extends StatelessWidget {
                         ],
                       ),
                     ))
-                .toList(),
+                ,
             const SizedBox(height: 16),
           ],
 
@@ -481,7 +481,7 @@ class AISeasonReviewTabWidget extends StatelessWidget {
                   ],
                 ),
               );
-            }).toList(),
+            }),
           ],
 
           // Season Assessment
@@ -600,11 +600,11 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(16),
       ),
-      child: Column(
+      child: const Column(
         children: [
-          const Icon(Icons.flash_on, color: Colors.white, size: 24),
-          const SizedBox(height: 8),
-          const Text(
+          Icon(Icons.flash_on, color: Colors.white, size: 24),
+          SizedBox(height: 8),
+          Text(
             'Matchup Context',
             style: TextStyle(
               color: Colors.white,
@@ -612,11 +612,11 @@ class AISeasonReviewTabWidget extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: 8),
           Text(
             'Two programs with rich histories collide in what promises to be an exciting matchup based on their recent seasons.',
             textAlign: TextAlign.center,
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white70,
               fontSize: 13,
             ),

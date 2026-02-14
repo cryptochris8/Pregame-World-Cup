@@ -5,8 +5,6 @@ import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import '../../../core/services/venue_photo_service.dart';
 import '../../../core/services/logging_service.dart';
-import '../../../core/ai/services/ai_venue_recommendation_service.dart';
-import '../../../injection_container.dart';
 import '../screens/venue_detail_screen.dart';
 import 'venue_photo_gallery.dart';
 import '../../../config/api_keys.dart';

@@ -523,7 +523,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
     }
 
     if (_venuePhotos.isEmpty) {
-      return Center(
+      return const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -532,10 +532,10 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
               size: 64,
               color: Colors.white38, // Light icon for dark background
             ),
-            const SizedBox(height: 16),
+            SizedBox(height: 16),
             Text(
               'No photos available',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 18,
                 color: Colors.white60, // Light text for dark background
               ),
@@ -703,10 +703,10 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
           ),
         ],
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             'About',
             style: TextStyle(
               fontSize: 18,
@@ -715,11 +715,11 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
             ),
           ),
           
-          const SizedBox(height: 12),
+          SizedBox(height: 12),
           
           Text(
             'Great venue for game day! Located in the heart of the action with excellent food and atmosphere.',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               color: Colors.white70, // Light text for dark background
               height: 1.5,

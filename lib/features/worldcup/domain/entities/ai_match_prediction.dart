@@ -264,7 +264,7 @@ class AIMatchPrediction extends Equatable {
       homeWinProbability: homeProb,
       drawProbability: drawProb,
       awayWinProbability: awayProb,
-      keyFactors: [
+      keyFactors: const [
         'FIFA World Rankings comparison',
         'Historical World Cup performance',
         'Tournament stage dynamics',

@@ -118,7 +118,7 @@ class AICompactContentWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Icon(Icons.psychology, color: Colors.orange, size: 20),
+          const Icon(Icons.psychology, color: Colors.orange, size: 20),
           const SizedBox(width: 8),
           Expanded(
             child: Column(
@@ -126,9 +126,9 @@ class AICompactContentWidget extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(
+                    const Text(
                       'AI Prediction: ',
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: Colors.orange,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
@@ -177,10 +177,10 @@ class AICompactContentWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          const Row(
             children: [
               Icon(Icons.lightbulb, color: Colors.orange, size: 16),
-              const SizedBox(width: 6),
+              SizedBox(width: 6),
               Expanded(
                 child: Text(
                   'Key Factors',
@@ -205,7 +205,7 @@ class AICompactContentWidget extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('  ',
+                  const Text('  ',
                       style: TextStyle(color: Colors.orange, fontSize: 12)),
                   Expanded(
                     child: Text(
@@ -221,7 +221,7 @@ class AICompactContentWidget extends StatelessWidget {
                 ],
               ),
             );
-          }).toList(),
+          }),
           if (keyFactors.length > 2)
             Text(
               '+${keyFactors.length - 2} more factors...',

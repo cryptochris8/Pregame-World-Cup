@@ -263,9 +263,9 @@ class VenueDiscoverySection extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Icon(
+              const Icon(
                 Icons.info_outline,
-                color: const Color(0xFFFF6B35),
+                color: Color(0xFFFF6B35),
                 size: 48,
               ),
               const SizedBox(height: 8),

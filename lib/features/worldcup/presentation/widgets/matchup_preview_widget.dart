@@ -195,11 +195,11 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
               borderRadius: BorderRadius.circular(8),
               border: Border.all(color: AppTheme.accentGold.withOpacity(0.3)),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.star, color: AppTheme.accentGold, size: 20),
-                const SizedBox(width: 8),
+                Icon(Icons.star, color: AppTheme.accentGold, size: 20),
+                SizedBox(width: 8),
                 Text(
                   'Historic First Meeting!',
                   style: TextStyle(
@@ -416,11 +416,11 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
       ),
       child: Column(
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 16),
-              const SizedBox(width: 6),
+              Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 16),
+              SizedBox(width: 6),
               Text(
                 'World Cup Meetings',
                 style: TextStyle(
@@ -608,7 +608,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                 children: [
                   Text(
                     'Show ${matches.length - widget.maxNotableMatches} more',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppTheme.accentGold,
                       fontSize: 13,
                     ),

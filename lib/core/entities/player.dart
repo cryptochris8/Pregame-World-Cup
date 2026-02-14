@@ -47,7 +47,7 @@ class Player {
   String get displayNameWithPosition => '$name ($position)';
 
   /// Get formatted height and weight
-  String get physicalStats => '${height}, $weight kg';
+  String get physicalStats => '$height, $weight kg';
 
   /// Check if player has statistics available
   bool get hasStatistics => statistics != null;

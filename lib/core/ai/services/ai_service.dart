@@ -255,8 +255,8 @@ Provide a brief prediction with key factors:
       // OPTIMIZED: Reduced timeout from 10s to 5s for faster fallback
       if (isGet) {
         response = await _httpClient.get(url, headers: headers).timeout(
-          Duration(seconds: 5),
-          onTimeout: () => throw TimeoutException('OpenAI API request timed out', Duration(seconds: 5)),
+          const Duration(seconds: 5),
+          onTimeout: () => throw TimeoutException('OpenAI API request timed out', const Duration(seconds: 5)),
         );
       } else {
         response = await _httpClient.post(
@@ -264,8 +264,8 @@ Provide a brief prediction with key factors:
           headers: headers,
           body: json.encode(body),
         ).timeout(
-          Duration(seconds: 5),
-          onTimeout: () => throw TimeoutException('OpenAI API request timed out', Duration(seconds: 5)),
+          const Duration(seconds: 5),
+          onTimeout: () => throw TimeoutException('OpenAI API request timed out', const Duration(seconds: 5)),
         );
       }
     } on TimeoutException catch (e) {
@@ -970,7 +970,7 @@ Consider:
     }
     
     if (rating != null && rating >= 4.0) {
-      buffer.write('With a ${rating}⭐ rating, it\'s clearly popular with visitors. ');
+      buffer.write('With a $rating⭐ rating, it\'s clearly popular with visitors. ');
     }
     
     if (distance != null && distance <= 2.0) {

@@ -298,7 +298,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
   Widget _buildDefaultAvatar() {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: AppTheme.cardGradient,
         shape: BoxShape.circle,
       ),

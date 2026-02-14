@@ -23,9 +23,7 @@ class VenueEnhancementCubit extends Cubit<VenueEnhancementState> {
       var enhancement = await _service.getVenueEnhancement(venueId);
 
       // Create new enhancement if none exists
-      if (enhancement == null) {
-        enhancement = await _service.createVenueEnhancement(venueId: venueId);
-      }
+      enhancement ??= await _service.createVenueEnhancement(venueId: venueId);
 
       emit(state.copyWith(
         status: VenueEnhancementStatus.loaded,

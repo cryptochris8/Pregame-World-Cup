@@ -1,11 +1,7 @@
-import 'dart:convert';
 import 'dart:math';
-import 'package:flutter/foundation.dart';
-import '../../../services/espn_service.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../services/cache_service.dart';
 import '../../services/logging_service.dart';
-import '../../../injection_container.dart';
 import 'ai_historical_knowledge_service.dart';
 
 /// AI Team Season Summary Service
@@ -179,7 +175,7 @@ class AITeamSeasonSummaryService {
       'overallAssessment': overallAssessment,
       
       // Display data
-      'summaryTitle': '${teamName} - $season Season in Review',
+      'summaryTitle': '$teamName - $season Season in Review',
       'quickSummary': _generateQuickSummary(seasonRecord, postseasonAnalysis),
       'highlightStats': _generateHighlightStats(seasonRecord, gameAnalysis),
     };
@@ -230,8 +226,11 @@ class AITeamSeasonSummaryService {
       
       if (isWin) {
         wins++;
-        if (isHome) homeWins++;
-        else awayWins++;
+        if (isHome) {
+          homeWins++;
+        } else {
+          awayWins++;
+        }
         
         // Check for big wins (against ranked teams or by large margins)
         if (_isSignificantWin(opponentName, teamScore - opponentScore)) {
@@ -245,8 +244,11 @@ class AITeamSeasonSummaryService {
         }
       } else {
         losses++;
-        if (isHome) homeLosses++;
-        else awayLosses++;
+        if (isHome) {
+          homeLosses++;
+        } else {
+          awayLosses++;
+        }
         
         // Check for tough losses (close games or upsets)
         if (_isToughLoss(opponentName, opponentScore - teamScore)) {

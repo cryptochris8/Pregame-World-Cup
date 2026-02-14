@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
 import '../../domain/entities/entities.dart';
 
 /// Firestore Data Source for World Cup 2026 data
@@ -576,15 +575,11 @@ class WorldCupFirestoreDataSource {
 
       final results = <HeadToHead>[];
       for (final doc in team1Query.docs) {
-        if (doc.data() != null) {
-          results.add(HeadToHead.fromMap(doc.data()));
-        }
-      }
+        results.add(HeadToHead.fromMap(doc.data()));
+            }
       for (final doc in team2Query.docs) {
-        if (doc.data() != null) {
-          results.add(HeadToHead.fromMap(doc.data()));
-        }
-      }
+        results.add(HeadToHead.fromMap(doc.data()));
+            }
 
       return results;
     } catch (e) {

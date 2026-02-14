@@ -11,9 +11,9 @@ class EditWatchPartyScreen extends StatefulWidget {
   final WatchParty watchParty;
 
   const EditWatchPartyScreen({
-    Key? key,
+    super.key,
     required this.watchParty,
-  }) : super(key: key);
+  });
 
   @override
   State<EditWatchPartyScreen> createState() => _EditWatchPartyScreenState();
@@ -47,7 +47,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
     _nameController = TextEditingController(text: wp.name);
     _descriptionController = TextEditingController(text: wp.description);
     _feeController = TextEditingController(
-      text: wp.virtualAttendanceFee?.toStringAsFixed(2) ?? '0.00',
+      text: wp.virtualAttendanceFee.toStringAsFixed(2) ?? '0.00',
     );
 
     _visibility = wp.visibility;

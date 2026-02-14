@@ -315,31 +315,31 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
     return Container(
       height: 300,
       padding: const EdgeInsets.all(32),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
             width: 40,
             height: 40,
             child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(const Color(0xFFFF6B35)), // Vibrant orange to match app theme
+              valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFF6B35)), // Vibrant orange to match app theme
               strokeWidth: 3,
             ),
           ),
-          const SizedBox(height: 16),
+          SizedBox(height: 16),
           Text(
             'Discovering perfect venues for you...',
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white70, // Light text for dark background
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: 8),
           Text(
             'Using AI to analyze your preferences',
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white60, // Lighter text for dark background
               fontSize: 14,
             ),
@@ -363,9 +363,9 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
             color: Colors.orange.shade400,
           ),
           const SizedBox(height: 16),
-          Text(
+          const Text(
             'Oops! Something went wrong',
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white, // White text for dark background
               fontSize: 18,
               fontWeight: FontWeight.w600,
@@ -409,9 +409,9 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
             color: Colors.grey.shade400,
           ),
           const SizedBox(height: 16),
-          Text(
+          const Text(
             'No venues found',
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white, // White text for dark background
               fontSize: 18,
               fontWeight: FontWeight.w600,
@@ -435,7 +435,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
   Widget _buildRecommendationsList() {
     final filteredRecommendations = _getFilteredRecommendations();
     
-    return Container(
+    return SizedBox(
       height: 400,
       child: ListView.builder(
         padding: const EdgeInsets.all(16),
@@ -525,7 +525,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
                               Icon(Icons.star, size: 14, color: Colors.amber.shade600),
                               const SizedBox(width: 2),
                               Text(
-                                '${venue.rating!.toStringAsFixed(1)}',
+                                venue.rating!.toStringAsFixed(1),
                                 style: const TextStyle(
                                   color: Colors.white60, // Light text for dark card
                                   fontSize: 13,

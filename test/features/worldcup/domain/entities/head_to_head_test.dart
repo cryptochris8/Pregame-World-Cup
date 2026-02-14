@@ -210,8 +210,8 @@ void main() {
 
       test('creates h2h with notable matches', () {
         final matches = [
-          HistoricalMatch(year: 2022, tournament: 'World Cup', team1Score: 3, team2Score: 3),
-          HistoricalMatch(year: 1986, tournament: 'World Cup', team1Score: 2, team2Score: 1),
+          const HistoricalMatch(year: 2022, tournament: 'World Cup', team1Score: 3, team2Score: 3),
+          const HistoricalMatch(year: 1986, tournament: 'World Cup', team1Score: 2, team2Score: 1),
         ];
         final h2h = createTestH2H(notableMatches: matches);
 
@@ -333,7 +333,7 @@ void main() {
       test('toMap serializes all fields', () {
         final h2h = createTestH2H(
           notableMatches: [
-            HistoricalMatch(year: 2022, tournament: 'World Cup', team1Score: 3, team2Score: 3),
+            const HistoricalMatch(year: 2022, tournament: 'World Cup', team1Score: 3, team2Score: 3),
           ],
           lastMatch: DateTime(2022, 12, 9),
           firstMeeting: DateTime(1914, 7, 20),
@@ -389,7 +389,7 @@ void main() {
       test('roundtrip serialization preserves data', () {
         final original = createTestH2H(
           notableMatches: [
-            HistoricalMatch(year: 1990, tournament: 'World Cup', team1Score: 1, team2Score: 0),
+            const HistoricalMatch(year: 1990, tournament: 'World Cup', team1Score: 1, team2Score: 0),
           ],
           lastMatch: DateTime(2022, 1, 1),
           firstMeeting: DateTime(1950, 6, 25),

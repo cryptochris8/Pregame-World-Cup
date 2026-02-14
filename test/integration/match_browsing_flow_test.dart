@@ -132,10 +132,10 @@ void main() {
           BlocProvider<FavoritesCubit>.value(value: mockFavoritesCubit),
           BlocProvider<PredictionsCubit>.value(value: mockPredictionsCubit),
         ],
-        child: MaterialApp(
+        child: const MaterialApp(
           home: MediaQuery(
-            data: const MediaQueryData(size: Size(500, 1200)),
-            child: const MatchListPage(),
+            data: MediaQueryData(size: Size(500, 1200)),
+            child: MatchListPage(),
           ),
         ),
       ),
@@ -213,10 +213,10 @@ void main() {
           BlocProvider<FavoritesCubit>.value(value: mockFavoritesCubit),
           BlocProvider<PredictionsCubit>.value(value: mockPredictionsCubit),
         ],
-        child: MaterialApp(
+        child: const MaterialApp(
           home: MediaQuery(
-            data: const MediaQueryData(size: Size(500, 1200)),
-            child: const MatchListPage(),
+            data: MediaQueryData(size: Size(500, 1200)),
+            child: MatchListPage(),
           ),
         ),
       ),
@@ -497,7 +497,7 @@ void main() {
     // ---------------------------------------------------------
     testWidgets('error state shows error message and retry button',
         (tester) async {
-      final errorState = const MatchListState(
+      const errorState = MatchListState(
         isLoading: false,
         errorMessage: 'Failed to load matches: network error',
       );

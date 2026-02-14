@@ -387,23 +387,23 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
             ],
           ),
           const SizedBox(height: 12),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 'USA',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              const SizedBox(width: 16),
-              const Text(
+              SizedBox(width: 16),
+              Text(
                 'vs',
                 style: TextStyle(color: Colors.white54),
               ),
-              const SizedBox(width: 16),
-              const Text(
+              SizedBox(width: 16),
+              Text(
                 'MEX',
                 style: TextStyle(
                   color: Colors.white,
@@ -433,15 +433,15 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
             ],
           ),
           const SizedBox(height: 4),
-          Row(
+          const Row(
             children: [
-              const Icon(
+              Icon(
                 Icons.stadium,
                 size: 14,
                 color: Colors.white38,
               ),
-              const SizedBox(width: 4),
-              const Text(
+              SizedBox(width: 4),
+              Text(
                 'MetLife Stadium',
                 style: TextStyle(
                   fontSize: 12,

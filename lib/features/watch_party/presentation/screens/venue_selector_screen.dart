@@ -7,7 +7,7 @@ import '../../../../injection_container.dart';
 
 /// Screen for selecting a venue for a watch party
 class VenueSelectorScreen extends StatefulWidget {
-  const VenueSelectorScreen({Key? key}) : super(key: key);
+  const VenueSelectorScreen({super.key});
 
   @override
   State<VenueSelectorScreen> createState() => _VenueSelectorScreenState();

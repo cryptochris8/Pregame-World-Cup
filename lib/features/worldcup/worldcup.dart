@@ -7,6 +7,7 @@
 /// - Data sources
 /// - BLoC/Cubit state management
 /// - UI widgets and pages
+library;
 
 // Domain Entities
 export 'domain/entities/entities.dart';

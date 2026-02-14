@@ -112,8 +112,8 @@ class EnhancedVenueCard extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(Icons.directions_walk, 
-                               color: const Color(0xFFFF6B35), size: 16),
+                          const Icon(Icons.directions_walk, 
+                               color: Color(0xFFFF6B35), size: 16),
                           const SizedBox(width: 4),
                           Flexible(
                             child: Text(
@@ -216,15 +216,15 @@ class EnhancedVenueCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: const Color(0xFF10B981), width: 1), // Success green from app theme
       ),
-      child: Row(
+      child: const Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.schedule, color: const Color(0xFF10B981), size: 10), // Success green from app theme
-          const SizedBox(width: 2),
+          Icon(Icons.schedule, color: Color(0xFF10B981), size: 10), // Success green from app theme
+          SizedBox(width: 2),
           Text(
             'Open',
             style: TextStyle(
-              color: const Color(0xFF10B981), // Success green from app theme
+              color: Color(0xFF10B981), // Success green from app theme
               fontSize: 10,
               fontWeight: FontWeight.bold,
             ),
@@ -241,7 +241,7 @@ class EnhancedVenueCard extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(Icons.star, color: const Color(0xFFFBBF24), size: 16), // Championship gold from app theme
+        const Icon(Icons.star, color: Color(0xFFFBBF24), size: 16), // Championship gold from app theme
         const SizedBox(width: 2),
         Text(
           rating.toStringAsFixed(1),
@@ -275,8 +275,8 @@ class EnhancedVenueCard extends StatelessWidget {
       children: [
         Text(
           dollarSigns,
-          style: TextStyle(
-            color: const Color(0xFF10B981), // Success green from app theme
+          style: const TextStyle(
+            color: Color(0xFF10B981), // Success green from app theme
             fontSize: 12,
             fontWeight: FontWeight.bold,
           ),

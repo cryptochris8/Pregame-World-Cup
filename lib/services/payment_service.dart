@@ -314,12 +314,12 @@ class QuickPaymentButton extends StatelessWidget {
   final Color? color;
 
   const QuickPaymentButton({
-    Key? key,
+    super.key,
     required this.label,
     required this.amount,
     this.onPressed,
     this.color,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

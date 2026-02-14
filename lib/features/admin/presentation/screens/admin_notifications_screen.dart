@@ -426,7 +426,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Are you sure you want to send this notification?'),
+            const Text('Are you sure you want to send this notification?'),
             const SizedBox(height: 16),
             _buildConfirmDetail('Audience', _getAudienceLabel()),
             _buildConfirmDetail('Title', _titleController.text),

@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:math';
-import 'package:flutter/foundation.dart';
 import 'package:pregame_world_cup/config/api_keys.dart';
 import 'package:pregame_world_cup/core/services/logging_service.dart';
 import 'package:pregame_world_cup/core/services/team_mapping_service.dart';
@@ -88,10 +87,6 @@ class HistoricalGameAnalysisService {
   Future<List<Map<String, dynamic>>> _getTeamSeasonGames(String teamName, int season) async {
     try {
       final teamKey = TeamMappingService.getTeamKey(teamName);
-      if (teamKey == null) {
-        // Debug output removed
-        return [];
-      }
       
       final url = '$_sportsDataBaseUrl/scores/json/$season';
       // Debug output removed
@@ -102,7 +97,7 @@ class HistoricalGameAnalysisService {
           'Ocp-Apim-Subscription-Key': ApiKeys.sportsDataIo,
           'Accept': 'application/json',
         },
-      ).timeout(Duration(seconds: 15));
+      ).timeout(const Duration(seconds: 15));
       
       if (response.statusCode == 200) {
         final data = (json.decode(response.body) as List?) ?? [];
@@ -130,11 +125,6 @@ class HistoricalGameAnalysisService {
     try {
       final homeKey = TeamMappingService.getTeamKey(homeTeam);
       final awayKey = TeamMappingService.getTeamKey(awayTeam);
-      
-      if (homeKey == null || awayKey == null) {
-        // Debug output removed
-        return [];
-      }
       
       final matchups = <Map<String, dynamic>>[];
       
@@ -171,7 +161,7 @@ class HistoricalGameAnalysisService {
           'Ocp-Apim-Subscription-Key': ApiKeys.sportsDataIo,
           'Accept': 'application/json',
         },
-      ).timeout(Duration(seconds: 15));
+      ).timeout(const Duration(seconds: 15));
       
       if (response.statusCode == 200) {
         final data = (json.decode(response.body) as List?) ?? [];

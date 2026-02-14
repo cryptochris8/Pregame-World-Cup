@@ -6,7 +6,6 @@ import '../../../../injection_container.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../config/app_theme.dart';
 import '../../../auth/domain/services/auth_service.dart';
-import '../../../auth/presentation/screens/login_screen.dart';
 import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
 import '../../../settings/presentation/screens/accessibility_preferences_screen.dart';
 import 'edit_profile_screen.dart';
@@ -599,7 +598,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
               ],
             ),
           ),
-          Icon(
+          const Icon(
             Icons.arrow_forward_ios,
             color: Colors.orange,
             size: 16,

@@ -11,8 +11,8 @@ void main() {
           title: 'Best Venue for Game Day',
           description: 'This sports bar has the best atmosphere for watching the game',
           confidence: 0.92,
-          metadata: {'venueId': 'venue_123'},
-          reasons: ['Great TVs', 'Team-friendly staff', 'Game day specials'],
+          metadata: const {'venueId': 'venue_123'},
+          reasons: const ['Great TVs', 'Team-friendly staff', 'Game day specials'],
           timestamp: now,
           category: 'venue',
         );
@@ -34,8 +34,8 @@ void main() {
           title: 'General Recommendation',
           description: 'A basic recommendation',
           confidence: 0.75,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: now,
           category: 'general',
         );
@@ -131,8 +131,8 @@ void main() {
           title: 'Best Sports Bar',
           description: 'Great for watching games',
           confidence: 0.95,
-          metadata: {'venueType': 'bar', 'distance': 2.5},
-          reasons: ['Multiple screens', 'Craft beer selection'],
+          metadata: const {'venueType': 'bar', 'distance': 2.5},
+          reasons: const ['Multiple screens', 'Craft beer selection'],
           timestamp: timestamp,
           category: 'venue',
         );
@@ -159,12 +159,12 @@ void main() {
           title: 'Game Day Recommendation',
           description: 'Perfect spot for the big game',
           confidence: 0.89,
-          metadata: {
+          metadata: const {
             'venueId': 'venue_456',
             'teamAffiliation': 'Georgia',
             'matchScore': 95,
           },
-          reasons: [
+          reasons: const [
             'Team-friendly atmosphere',
             'Game day specials',
             'Large screen TVs',
@@ -197,8 +197,8 @@ void main() {
           title: 'Title',
           description: 'Description',
           confidence: 0.85,
-          metadata: {'key': 'value'},
-          reasons: ['reason1'],
+          metadata: const {'key': 'value'},
+          reasons: const ['reason1'],
           timestamp: timestamp,
           category: 'test',
         );
@@ -208,8 +208,8 @@ void main() {
           title: 'Title',
           description: 'Description',
           confidence: 0.85,
-          metadata: {'key': 'value'},
-          reasons: ['reason1'],
+          metadata: const {'key': 'value'},
+          reasons: const ['reason1'],
           timestamp: timestamp,
           category: 'test',
         );
@@ -224,8 +224,8 @@ void main() {
           title: 'Title 1',
           description: 'Description 1',
           confidence: 0.85,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: timestamp,
           category: 'test',
         );
@@ -235,8 +235,8 @@ void main() {
           title: 'Title 2',
           description: 'Description 2',
           confidence: 0.90,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: timestamp,
           category: 'test',
         );
@@ -251,8 +251,8 @@ void main() {
           title: 'Title',
           description: 'Description',
           confidence: 0.85,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: timestamp,
           category: 'test',
         );
@@ -262,8 +262,8 @@ void main() {
           title: 'Title',
           description: 'Description',
           confidence: 0.95,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: timestamp,
           category: 'test',
         );
@@ -278,8 +278,8 @@ void main() {
           title: 'Title',
           description: 'Description',
           confidence: 0.85,
-          metadata: {},
-          reasons: ['reason1'],
+          metadata: const {},
+          reasons: const ['reason1'],
           timestamp: timestamp,
           category: 'test',
         );
@@ -289,8 +289,8 @@ void main() {
           title: 'Title',
           description: 'Description',
           confidence: 0.85,
-          metadata: {},
-          reasons: ['reason1', 'reason2'],
+          metadata: const {},
+          reasons: const ['reason1', 'reason2'],
           timestamp: timestamp,
           category: 'test',
         );
@@ -306,8 +306,8 @@ void main() {
           title: 'Best Venue',
           description: 'Description here',
           confidence: 0.85,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: DateTime.now(),
           category: 'venue',
         );
@@ -325,8 +325,8 @@ void main() {
           title: 'Low confidence rec',
           description: 'Not very confident',
           confidence: 0.0,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: DateTime.now(),
           category: 'test',
         );
@@ -340,8 +340,8 @@ void main() {
           title: 'High confidence rec',
           description: 'Very confident',
           confidence: 1.0,
-          metadata: {},
-          reasons: [],
+          metadata: const {},
+          reasons: const [],
           timestamp: DateTime.now(),
           category: 'test',
         );
@@ -357,8 +357,8 @@ void main() {
           title: 'Venue Recommendation',
           description: 'Great venue',
           confidence: 0.88,
-          metadata: {'venueId': '123'},
-          reasons: ['Good food'],
+          metadata: const {'venueId': '123'},
+          reasons: const ['Good food'],
           timestamp: DateTime.now(),
           category: 'venue',
         );
@@ -372,8 +372,8 @@ void main() {
           title: 'Activity Recommendation',
           description: 'Fun activity',
           confidence: 0.75,
-          metadata: {'activityType': 'tailgate'},
-          reasons: ['Fun for fans'],
+          metadata: const {'activityType': 'tailgate'},
+          reasons: const ['Fun for fans'],
           timestamp: DateTime.now(),
           category: 'activity',
         );
@@ -387,8 +387,8 @@ void main() {
           title: 'Game Recommendation',
           description: 'Must-watch game',
           confidence: 0.92,
-          metadata: {'gameId': 'game_456'},
-          reasons: ['Rivalry game', 'Playoff implications'],
+          metadata: const {'gameId': 'game_456'},
+          reasons: const ['Rivalry game', 'Playoff implications'],
           timestamp: DateTime.now(),
           category: 'game',
         );
@@ -404,7 +404,7 @@ void main() {
           title: 'Complex Recommendation',
           description: 'Has nested data',
           confidence: 0.80,
-          metadata: {
+          metadata: const {
             'venue': {
               'id': 'venue_123',
               'name': 'Sports Bar',
@@ -412,7 +412,7 @@ void main() {
             },
             'scores': [85, 90, 88],
           },
-          reasons: ['Reason'],
+          reasons: const ['Reason'],
           timestamp: DateTime.now(),
           category: 'complex',
         );
@@ -427,7 +427,7 @@ void main() {
           title: 'Type Test',
           description: 'Testing types',
           confidence: 0.80,
-          metadata: {
+          metadata: const {
             'stringValue': 'hello',
             'intValue': 42,
             'doubleValue': 3.14,
@@ -435,7 +435,7 @@ void main() {
             'nullValue': null,
             'listValue': [1, 2, 3],
           },
-          reasons: [],
+          reasons: const [],
           timestamp: DateTime.now(),
           category: 'test',
         );

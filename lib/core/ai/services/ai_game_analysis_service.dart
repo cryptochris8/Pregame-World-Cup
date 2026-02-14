@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../services/logging_service.dart';
 import '../../services/team_mapping_service.dart';
@@ -189,17 +188,15 @@ class AIGameAnalysisService {
         final prompt = _buildAnalysisPrompt(game, historicalContext);
         final aiResponse = await _aiService.generateCompletion(prompt: prompt);
         
-        if (aiResponse != null) {
-          return {
-            'summary': _extractSummary(aiResponse),
-            'keyInsights': _extractKeyInsights(aiResponse),
-            'historicalNotes': _extractHistoricalNotes(aiResponse),
-            'fullAnalysis': aiResponse,
-            'provider': 'OpenAI (fallback)',
-            'generated_at': DateTime.now().toIso8601String(),
-          };
-        }
-      } catch (fallbackError) {
+        return {
+          'summary': _extractSummary(aiResponse),
+          'keyInsights': _extractKeyInsights(aiResponse),
+          'historicalNotes': _extractHistoricalNotes(aiResponse),
+          'fullAnalysis': aiResponse,
+          'provider': 'OpenAI (fallback)',
+          'generated_at': DateTime.now().toIso8601String(),
+        };
+            } catch (fallbackError) {
         // Debug output removed
       }
       
@@ -457,7 +454,7 @@ class AIGameAnalysisService {
         final team1Wins = allTimeRecord['team1Wins'] ?? 0;
         final team2Wins = allTimeRecord['team2Wins'] ?? 0;
         
-        return 'Historical matchup: ${totalGames} meetings, ${team1Wins}-${team2Wins} all-time record';
+        return 'Historical matchup: $totalGames meetings, $team1Wins-$team2Wins all-time record';
       }
       
       return 'First-time matchup or limited historical data available';

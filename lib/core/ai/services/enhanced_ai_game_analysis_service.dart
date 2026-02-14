@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../services/logging_service.dart';
 import '../../services/team_mapping_service.dart';
@@ -99,10 +98,10 @@ class EnhancedAIGameAnalysisService {
     try {
       // Parallel data gathering with timeouts - now includes historical analysis
       final futures = await Future.wait([
-        _getTeamData(homeTeamKey, homeTeam).timeout(Duration(seconds: 8)),
-        _getTeamData(awayTeamKey, awayTeam).timeout(Duration(seconds: 8)),
-        _getGamePrediction(homeTeam, awayTeam, game).timeout(Duration(seconds: 3)),
-        _historicalAnalysis.analyzeHeadToHeadHistory(homeTeam, awayTeam).timeout(Duration(seconds: 6)),
+        _getTeamData(homeTeamKey, homeTeam).timeout(const Duration(seconds: 8)),
+        _getTeamData(awayTeamKey, awayTeam).timeout(const Duration(seconds: 8)),
+        _getGamePrediction(homeTeam, awayTeam, game).timeout(const Duration(seconds: 3)),
+        _historicalAnalysis.analyzeHeadToHeadHistory(homeTeam, awayTeam).timeout(const Duration(seconds: 6)),
       ], eagerError: false);
       
       data['homeTeamData'] = futures[0] ?? _getMockTeamData(homeTeam);
@@ -469,7 +468,7 @@ class EnhancedAIGameAnalysisService {
 
   /// Check if teams belong to the same FIFA confederation
   bool _isSameConfederation(String awayTeam, String homeTeam) {
-    String? _getConfederation(String team) {
+    String? getConfederation(String team) {
       final t = team.toLowerCase();
       // UEFA
       const uefaTeams = ['albania', 'austria', 'belgium', 'croatia', 'denmark', 'england', 'france', 'germany', 'netherlands', 'poland', 'portugal', 'scotland', 'serbia', 'spain', 'switzerland', 'turkey', 'ukraine', 'wales'];
@@ -491,8 +490,8 @@ class EnhancedAIGameAnalysisService {
       return null;
     }
 
-    final awayConf = _getConfederation(awayTeam);
-    final homeConf = _getConfederation(homeTeam);
+    final awayConf = getConfederation(awayTeam);
+    final homeConf = getConfederation(homeTeam);
     return awayConf != null && awayConf == homeConf;
   }
 

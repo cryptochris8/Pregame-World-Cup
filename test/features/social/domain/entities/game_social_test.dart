@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:pregame_world_cup/features/social/domain/entities/game_prediction.dart'
     as social;
 import 'package:pregame_world_cup/features/social/domain/entities/game_comment.dart';

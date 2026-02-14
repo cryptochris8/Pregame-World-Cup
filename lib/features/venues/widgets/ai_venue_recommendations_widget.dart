@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../../core/ai/entities/ai_recommendation.dart';
-import '../../../core/ai/services/ai_venue_recommendation_service.dart';
 import '../../../core/services/unified_venue_service.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../injection_container.dart';

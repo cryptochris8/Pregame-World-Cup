@@ -4,24 +4,24 @@ import 'package:pregame_world_cup/core/entities/team_statistics.dart';
 void main() {
   group('TeamStatistics', () {
     test('creates team statistics with required fields', () {
-      final stats = TeamStatistics(
+      const stats = TeamStatistics(
         teamId: 'team_1',
         teamName: 'Brazil',
-        attack: const AttackStats(
+        attack: AttackStats(
           goalsScored: 2.5,
           shotsPerGame: 16.0,
           possession: 58.0,
           passAccuracy: 87.0,
           chancesCreated: 12.0,
         ),
-        defense: const DefenseStats(
+        defense: DefenseStats(
           goalsConceded: 0.8,
           cleanSheets: 6.0,
           tacklesPerGame: 18.0,
           interceptions: 12.0,
           savesPerGame: 3.5,
         ),
-        setPieces: const SetPieceStats(
+        setPieces: SetPieceStats(
           cornerKicks: 6.5,
           freeKicks: 14.0,
           penalties: 3.0,
@@ -91,24 +91,24 @@ void main() {
 
     group('Computed properties', () {
       test('overallEfficiency calculates weighted average', () {
-        final stats = TeamStatistics(
+        const stats = TeamStatistics(
           teamId: 'team_1',
           teamName: 'Test Team',
-          attack: const AttackStats(
+          attack: AttackStats(
             goalsScored: 2.0,
             shotsPerGame: 14.0,
             possession: 55.0,
             passAccuracy: 85.0,
             chancesCreated: 10.0,
           ),
-          defense: const DefenseStats(
+          defense: DefenseStats(
             goalsConceded: 1.0,
             cleanSheets: 5.0,
             tacklesPerGame: 18.0,
             interceptions: 10.0,
             savesPerGame: 3.0,
           ),
-          setPieces: const SetPieceStats(
+          setPieces: SetPieceStats(
             cornerKicks: 5.0,
             freeKicks: 12.0,
             penalties: 2.0,
@@ -124,24 +124,24 @@ void main() {
       });
 
       test('winPercentage calculates correctly from W-D-L record', () {
-        final stats = TeamStatistics(
+        const stats = TeamStatistics(
           teamId: 'team_1',
           teamName: 'Test Team',
-          attack: const AttackStats(
+          attack: AttackStats(
             goalsScored: 2.0,
             shotsPerGame: 14.0,
             possession: 55.0,
             passAccuracy: 85.0,
             chancesCreated: 10.0,
           ),
-          defense: const DefenseStats(
+          defense: DefenseStats(
             goalsConceded: 1.0,
             cleanSheets: 5.0,
             tacklesPerGame: 18.0,
             interceptions: 10.0,
             savesPerGame: 3.0,
           ),
-          setPieces: const SetPieceStats(
+          setPieces: SetPieceStats(
             cornerKicks: 5.0,
             freeKicks: 12.0,
             penalties: 2.0,
@@ -156,24 +156,24 @@ void main() {
       });
 
       test('winPercentage returns 0 for invalid record', () {
-        final stats = TeamStatistics(
+        const stats = TeamStatistics(
           teamId: 'team_1',
           teamName: 'Test Team',
-          attack: const AttackStats(
+          attack: AttackStats(
             goalsScored: 2.0,
             shotsPerGame: 14.0,
             possession: 55.0,
             passAccuracy: 85.0,
             chancesCreated: 10.0,
           ),
-          defense: const DefenseStats(
+          defense: DefenseStats(
             goalsConceded: 1.0,
             cleanSheets: 5.0,
             tacklesPerGame: 18.0,
             interceptions: 10.0,
             savesPerGame: 3.0,
           ),
-          setPieces: const SetPieceStats(
+          setPieces: SetPieceStats(
             cornerKicks: 5.0,
             freeKicks: 12.0,
             penalties: 2.0,
@@ -187,24 +187,24 @@ void main() {
       });
 
       test('pointsPerGame calculates correctly', () {
-        final stats = TeamStatistics(
+        const stats = TeamStatistics(
           teamId: 'team_1',
           teamName: 'Test Team',
-          attack: const AttackStats(
+          attack: AttackStats(
             goalsScored: 2.0,
             shotsPerGame: 14.0,
             possession: 55.0,
             passAccuracy: 85.0,
             chancesCreated: 10.0,
           ),
-          defense: const DefenseStats(
+          defense: DefenseStats(
             goalsConceded: 1.0,
             cleanSheets: 5.0,
             tacklesPerGame: 18.0,
             interceptions: 10.0,
             savesPerGame: 3.0,
           ),
-          setPieces: const SetPieceStats(
+          setPieces: SetPieceStats(
             cornerKicks: 5.0,
             freeKicks: 12.0,
             penalties: 2.0,
@@ -219,18 +219,18 @@ void main() {
       });
 
       test('isTopRanked returns true for top 20 teams', () {
-        final rankedStats = TeamStatistics(
+        const rankedStats = TeamStatistics(
           teamId: 'team_1',
           teamName: 'Argentina',
-          attack: const AttackStats(
+          attack: AttackStats(
             goalsScored: 2.5, shotsPerGame: 16.0, possession: 58.0,
             passAccuracy: 87.0, chancesCreated: 12.0,
           ),
-          defense: const DefenseStats(
+          defense: DefenseStats(
             goalsConceded: 0.7, cleanSheets: 7.0, tacklesPerGame: 19.0,
             interceptions: 13.0, savesPerGame: 3.5,
           ),
-          setPieces: const SetPieceStats(
+          setPieces: SetPieceStats(
             cornerKicks: 6.0, freeKicks: 13.0, penalties: 3.0,
             penaltyConversionRate: 90.0,
           ),
@@ -243,18 +243,18 @@ void main() {
       });
 
       test('isTopRanked returns false for unranked teams', () {
-        final unrankedStats = TeamStatistics(
+        const unrankedStats = TeamStatistics(
           teamId: 'team_1',
           teamName: 'New Zealand',
-          attack: const AttackStats(
+          attack: AttackStats(
             goalsScored: 1.0, shotsPerGame: 8.0, possession: 42.0,
             passAccuracy: 75.0, chancesCreated: 5.0,
           ),
-          defense: const DefenseStats(
+          defense: DefenseStats(
             goalsConceded: 2.0, cleanSheets: 2.0, tacklesPerGame: 15.0,
             interceptions: 8.0, savesPerGame: 5.0,
           ),
-          setPieces: const SetPieceStats(
+          setPieces: SetPieceStats(
             cornerKicks: 3.0, freeKicks: 10.0, penalties: 1.0,
             penaltyConversionRate: 50.0,
           ),

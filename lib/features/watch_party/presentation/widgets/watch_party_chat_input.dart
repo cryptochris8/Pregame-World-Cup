@@ -9,13 +9,13 @@ class WatchPartyChatInput extends StatefulWidget {
   final String? disabledMessage;
 
   const WatchPartyChatInput({
-    Key? key,
+    super.key,
     required this.onSend,
     this.enabled = true,
     this.replyingTo,
     this.onCancelReply,
     this.disabledMessage,
-  }) : super(key: key);
+  });
 
   @override
   State<WatchPartyChatInput> createState() => _WatchPartyChatInputState();
@@ -288,10 +288,10 @@ class QuickReactionBar extends StatelessWidget {
   final List<String> reactions;
 
   const QuickReactionBar({
-    Key? key,
+    super.key,
     required this.onReact,
     this.reactions = const ['👍', '❤️', '😂', '😮', '😢', '👏'],
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -472,7 +472,7 @@ void main() {
       });
 
       test('returns TBD when no date for scheduled match', () {
-        final match = WorldCupMatch(
+        const match = WorldCupMatch(
           matchId: 'test',
           matchNumber: 1,
           stage: MatchStage.groupStage,

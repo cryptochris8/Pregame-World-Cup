@@ -210,7 +210,7 @@ class AIPredictionTabWidget extends StatelessWidget {
           Container(
             width: 24,
             height: 24,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white70,
               shape: BoxShape.circle,
             ),
@@ -258,12 +258,12 @@ class AIPredictionTabWidget extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Row(
+              child: const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.emoji_events, color: Colors.white, size: 12),
-                  const SizedBox(width: 4),
-                  const Text(
+                  SizedBox(width: 4),
+                  Text(
                     'WINNER',
                     style: TextStyle(
                       color: Colors.white,
@@ -339,7 +339,7 @@ class AIPredictionTabWidget extends StatelessWidget {
                         fontSize: 13,
                       ),
                     ))
-                .toList(),
+                ,
           ],
         ],
       ),

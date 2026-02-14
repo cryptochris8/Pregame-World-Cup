@@ -91,7 +91,7 @@ void main() {
           TestDataFactory.createTeam(fifaCode: 'BRA', confederation: Confederation.conmebol),
           TestDataFactory.createTeam(fifaCode: 'MEX', confederation: Confederation.concacaf),
         ],
-        displayTeams: [],
+        displayTeams: const [],
         isLoading: false,
       ),
       act: (cubit) => cubit.filterByConfederation(Confederation.concacaf),
@@ -112,7 +112,7 @@ void main() {
           TestDataFactory.createTeam(fifaCode: 'BRA', countryName: 'Brazil'),
           TestDataFactory.createTeam(fifaCode: 'URU', countryName: 'Uruguay'),
         ],
-        displayTeams: [],
+        displayTeams: const [],
         isLoading: false,
       ),
       act: (cubit) => cubit.search('United'),
@@ -169,7 +169,7 @@ void main() {
           TestDataFactory.createTeam(fifaCode: 'MEX', confederation: Confederation.concacaf),
           TestDataFactory.createTeam(fifaCode: 'GER', confederation: Confederation.uefa),
         ],
-        displayTeams: [],
+        displayTeams: const [],
         isLoading: false,
       ));
 
@@ -186,7 +186,7 @@ void main() {
           TestDataFactory.createTeam(fifaCode: 'BRA', confederation: Confederation.conmebol),
           TestDataFactory.createTeam(fifaCode: 'MEX', confederation: Confederation.concacaf),
         ],
-        displayTeams: [],
+        displayTeams: const [],
         isLoading: false,
       ));
 

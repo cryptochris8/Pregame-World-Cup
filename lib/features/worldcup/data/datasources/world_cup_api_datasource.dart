@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import '../../domain/entities/entities.dart';
 
 /// API Data Source for World Cup 2026 data
@@ -43,7 +42,7 @@ class WorldCupApiDataSource {
       }
 
       return [];
-    } on DioException catch (e) {
+    } on DioException {
       // WC2026 data not yet available on SportsData.io - this is expected
       // Debug output removed
       return [];
@@ -181,7 +180,7 @@ class WorldCupApiDataSource {
 
       // Return static venue data if API doesn't have it
       return WorldCupVenues.all;
-    } on DioException catch (e) {
+    } on DioException {
       // Debug output removed
       // Return static venue data as fallback
       return WorldCupVenues.all;

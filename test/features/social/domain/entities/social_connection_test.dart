@@ -35,7 +35,7 @@ void main() {
           createdAt: now,
           acceptedAt: now,
           connectionSource: 'mutual_friend',
-          metadata: {'connectedUserName': 'John Doe'},
+          metadata: const {'connectedUserName': 'John Doe'},
         );
 
         expect(connection.acceptedAt, equals(now));
@@ -205,7 +205,7 @@ void main() {
           type: ConnectionType.friend,
           status: ConnectionStatus.accepted,
           createdAt: now,
-          metadata: {'connectedUserName': 'Jane Smith'},
+          metadata: const {'connectedUserName': 'Jane Smith'},
         );
 
         expect(connection.connectedUserName, equals('Jane Smith'));
@@ -363,8 +363,8 @@ void main() {
         userId: 'user_1',
         displayName: 'John Doe',
         profileImageUrl: 'https://example.com/avatar.jpg',
-        mutualFriends: ['user_2', 'user_3'],
-        sharedTeams: ['Georgia'],
+        mutualFriends: const ['user_2', 'user_3'],
+        sharedTeams: const ['Georgia'],
         connectionReason: 'You both like Georgia',
         relevanceScore: 0.95,
         suggestedAt: now,
@@ -381,7 +381,7 @@ void main() {
         final suggestion = FriendSuggestion(
           userId: 'user_1',
           displayName: 'John Doe',
-          mutualFriends: ['user_2', 'user_3', 'user_4'],
+          mutualFriends: const ['user_2', 'user_3', 'user_4'],
           relevanceScore: 0.8,
           suggestedAt: DateTime.now(),
         );
@@ -393,7 +393,7 @@ void main() {
         final suggestion = FriendSuggestion(
           userId: 'user_1',
           displayName: 'John Doe',
-          mutualFriends: ['user_2'],
+          mutualFriends: const ['user_2'],
           relevanceScore: 0.8,
           suggestedAt: DateTime.now(),
         );
@@ -405,7 +405,7 @@ void main() {
         final suggestion = FriendSuggestion(
           userId: 'user_1',
           displayName: 'John Doe',
-          sharedTeams: ['Alabama', 'Georgia'],
+          sharedTeams: const ['Alabama', 'Georgia'],
           relevanceScore: 0.7,
           suggestedAt: DateTime.now(),
         );

@@ -48,11 +48,11 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
   // Data state
   TeamStatistics? _homeTeamStats;
   TeamStatistics? _awayTeamStats;
-  Map<String, List<Player>> _homeTopPerformers = {};
-  Map<String, List<Player>> _awayTopPerformers = {};
+  final Map<String, List<Player>> _homeTopPerformers = {};
+  final Map<String, List<Player>> _awayTopPerformers = {};
   Map<String, dynamic>? _matchupHistory;
   String _seriesRecord = '';
-  List<Map<String, dynamic>> _keyFactors = [];
+  final List<Map<String, dynamic>> _keyFactors = [];
 
   @override
   void initState() {
@@ -101,7 +101,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
 
     try {
       final memoryPressure = _detectMemoryPressure();
-      final timeoutDuration = memoryPressure ? Duration(seconds: 3) : Duration(seconds: 6);
+      final timeoutDuration = memoryPressure ? const Duration(seconds: 3) : const Duration(seconds: 6);
 
       await Future.any([
         _loadAnalysisCore(),
@@ -181,7 +181,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     try {
       final enhancedAnalysis = await Future.any([
         _enhancedAnalysisService.generateGameAnalysis(widget.game),
-        Future.delayed(Duration(seconds: 10), () => throw TimeoutException('Enhanced analysis timeout', Duration(seconds: 10))),
+        Future.delayed(const Duration(seconds: 10), () => throw TimeoutException('Enhanced analysis timeout', const Duration(seconds: 10))),
       ]).catchError((e) {
         LoggingService.warning('Enhanced analysis failed, using fallback: $e', tag: 'EnhancedInsights');
         return _generateHistoricalFallback();

@@ -118,7 +118,7 @@ class MatchesTab extends StatelessWidget {
                         color: AppTheme.primaryOrange.withOpacity(0.15),
                         child: Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.calendar_today,
                               size: 16,
                               color: AppTheme.primaryOrange,
@@ -135,7 +135,7 @@ class MatchesTab extends StatelessWidget {
                             const Spacer(),
                             Text(
                               '${displayMatches.length} match${displayMatches.length == 1 ? '' : 'es'}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: AppTheme.primaryOrange,
                                 fontSize: 13,
                                 fontWeight: FontWeight.bold,
@@ -240,9 +240,9 @@ class MatchesTab extends StatelessWidget {
           ),
           if (selectedDate != null) ...[
             const SizedBox(height: 8),
-            Text(
+            const Text(
               'Try selecting a different date',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 14,
                 color: Colors.white38,
               ),

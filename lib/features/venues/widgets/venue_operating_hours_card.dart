@@ -384,18 +384,18 @@ class VenueOperatingHoursCard extends StatelessWidget {
                   color: const Color(0xFF475569), // Darker blue-gray for info box
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.info_outline,
                       color: Color(0xFFFF6B35), // Vibrant orange
                       size: 20,
                     ),
-                    const SizedBox(width: 12),
+                    SizedBox(width: 12),
                     Expanded(
                       child: Text(
                         'Hours may vary on holidays. Call ahead to confirm.',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 14,
                           color: Colors.white70, // Light text for dark background
                         ),

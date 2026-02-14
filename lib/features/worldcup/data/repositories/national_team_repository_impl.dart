@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import '../../domain/entities/entities.dart';
 import '../../domain/repositories/national_team_repository.dart';
 import '../datasources/world_cup_api_datasource.dart';

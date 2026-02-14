@@ -152,7 +152,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
       await CacheService.instance.clearCache();
 
       // Small delay to ensure cache is cleared
-      await Future.delayed(Duration(milliseconds: 500));
+      await Future.delayed(const Duration(milliseconds: 500));
 
       // Force refresh to get fresh 2025 data (same as menu refresh)
       if (mounted) {
@@ -481,7 +481,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.error_outline,
             size: 64,
             color: Colors.red,
@@ -580,7 +580,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.error_outline,
             size: 64,
             color: Colors.red,

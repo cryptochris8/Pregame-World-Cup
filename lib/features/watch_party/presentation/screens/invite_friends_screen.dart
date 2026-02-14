@@ -11,9 +11,9 @@ class InviteFriendsScreen extends StatefulWidget {
   final String watchPartyId;
 
   const InviteFriendsScreen({
-    Key? key,
+    super.key,
     required this.watchPartyId,
-  }) : super(key: key);
+  });
 
   @override
   State<InviteFriendsScreen> createState() => _InviteFriendsScreenState();
@@ -24,7 +24,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
   final SocialService _socialService = sl<SocialService>();
 
   List<UserProfile> _friends = [];
-  Set<String> _selectedFriendIds = {};
+  final Set<String> _selectedFriendIds = {};
   bool _isLoading = true;
   bool _isSending = false;
   String? _error;

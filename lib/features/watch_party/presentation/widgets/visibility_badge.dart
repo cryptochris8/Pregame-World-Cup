@@ -8,10 +8,10 @@ class VisibilityBadge extends StatelessWidget {
   final bool compact;
 
   const VisibilityBadge({
-    Key? key,
+    super.key,
     required this.visibility,
     this.compact = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -63,10 +63,10 @@ class VisibilityToggle extends StatelessWidget {
   final ValueChanged<WatchPartyVisibility> onChanged;
 
   const VisibilityToggle({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

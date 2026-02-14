@@ -194,7 +194,7 @@ class ESPNHistoricalService {
     return {
       'crowd_appeal': _calculateHistoricalCrowdAppeal(historicalData),
       'marketing_hooks': [
-        'Historic ${rivalryName} returns!',
+        'Historic $rivalryName returns!',
         'Series record: $seriesRecord',
         'Last meeting: ${lastMeeting['result'] ?? 'Great game expected'}',
         'Rivalry atmosphere guaranteed'
@@ -203,7 +203,7 @@ class ESPNHistoricalService {
       'social_media_content': [
         'Did you know: $seriesRecord',
         'Last time these teams met: ${lastMeeting['result'] ?? 'Epic showdown'}',
-        'Get ready for ${rivalryName} atmosphere!',
+        'Get ready for $rivalryName atmosphere!',
         '#${rivalryName.replaceAll(' ', '')} #Legacy'
       ]
     };
@@ -234,7 +234,7 @@ class ESPNHistoricalService {
       final rivalryName = historicalData['rivalry_name'];
       final seriesRecord = historicalData['series_record'];
       
-      summary += ' in the ${rivalryName}. ';
+      summary += ' in the $rivalryName. ';
       summary += 'Series record: $seriesRecord. ';
       
       // Add last meeting context
@@ -347,7 +347,7 @@ class ESPNHistoricalService {
       'staffing_multiplier': 2.5,
       'inventory_focus': ['Team colors merchandise', 'Premium alcohol', 'Rivalry-themed specials'],
       'preparation_tips': prepTips,
-      'marketing_emphasis': 'Historic ${rivalryName} viewing experience'
+      'marketing_emphasis': 'Historic $rivalryName viewing experience'
     };
   }
 
@@ -356,7 +356,7 @@ class ESPNHistoricalService {
       'crowd_appeal': 1.3,
       'marketing_hooks': [
         'Exciting matchup!',
-        '${homeTeam} vs ${awayTeam}',
+        '$homeTeam vs $awayTeam',
         'Match day atmosphere',
         'Conference championship implications'
       ],

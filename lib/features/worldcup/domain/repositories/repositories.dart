@@ -1,6 +1,7 @@
 /// World Cup 2026 Repository Interfaces
 ///
 /// This barrel file exports all World Cup repository abstract interfaces.
+library;
 
 export 'world_cup_match_repository.dart';
 export 'national_team_repository.dart';

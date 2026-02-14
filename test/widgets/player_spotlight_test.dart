@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:pregame_world_cup/domain/models/player.dart';
 
 /// Tests for Player data models and UI components
@@ -129,14 +128,14 @@ void main() {
   group('Player Widget Components', () {
     testWidgets('Player info card displays correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Card(
               child: ListTile(
-                leading: const CircleAvatar(child: Text('N')),
-                title: const Text('Neymar'),
-                subtitle: const Text('Brazil - LW'),
-                trailing: const Text('#10'),
+                leading: CircleAvatar(child: Text('N')),
+                title: Text('Neymar'),
+                subtitle: Text('Brazil - LW'),
+                trailing: Text('#10'),
               ),
             ),
           ),
@@ -150,7 +149,7 @@ void main() {
 
     testWidgets('Player stats widget displays correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Column(
               children: [
@@ -170,11 +169,11 @@ void main() {
 
     testWidgets('Player strengths display correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Column(
               children: [
-                const Text('Strengths'),
+                Text('Strengths'),
                 Chip(label: Text('Dribbling')),
                 Chip(label: Text('Speed')),
                 Chip(label: Text('Creativity')),

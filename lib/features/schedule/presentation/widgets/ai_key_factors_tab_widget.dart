@@ -68,7 +68,7 @@ class AIKeyFactorsTabWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          ...keyFactors.map((factor) => _buildKeyFactorCard(factor)).toList(),
+          ...keyFactors.map((factor) => _buildKeyFactorCard(factor)),
         ],
       ),
     );

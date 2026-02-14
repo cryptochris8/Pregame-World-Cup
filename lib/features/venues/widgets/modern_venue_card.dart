@@ -105,7 +105,7 @@ class ModernVenueCard extends StatelessWidget {
               // Location
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.location_on,
                     size: 16,
                                           color: AppTheme.secondaryPurple,
@@ -201,7 +201,7 @@ class ModernVenueCard extends StatelessWidget {
                 
                 Row(
                   children: [
-                                          Icon(
+                                          const Icon(
                         Icons.star,
                         size: 16,
                         color: AppTheme.accentGold,
@@ -222,7 +222,7 @@ class ModernVenueCard extends StatelessWidget {
           ),
           
           // Arrow
-          Icon(
+          const Icon(
             Icons.arrow_forward_ios,
             size: 16,
             color: AppTheme.textSecondary,

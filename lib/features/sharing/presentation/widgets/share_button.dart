@@ -45,7 +45,7 @@ class ShareButton extends StatelessWidget {
       confidenceLevel: confidence,
       userDisplayName: userName,
       deepLink: 'https://pregameworldcup.com/prediction/$matchId',
-      utmParams: {
+      utmParams: const {
         'utm_source': 'app',
         'utm_medium': 'share',
         'utm_campaign': 'prediction',
@@ -127,7 +127,7 @@ class ShareButton extends StatelessWidget {
       hostName: hostName,
       isPrivate: isPrivate,
       deepLink: 'https://pregameworldcup.com/watchparty/$partyId',
-      utmParams: {
+      utmParams: const {
         'utm_source': 'app',
         'utm_medium': 'share',
         'utm_campaign': 'watch_party',

@@ -1,6 +1,7 @@
 /// World Cup 2026 BLoC/Cubit Exports
 ///
 /// This barrel file exports all World Cup state management components.
+library;
 
 // Match List
 export 'match_list_state.dart';

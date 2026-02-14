@@ -256,7 +256,7 @@ class _FanPassUpgradeBannerState extends State<FanPassUpgradeBanner> {
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           colors: [
             AppTheme.primaryOrange,
             AppTheme.accentGold,

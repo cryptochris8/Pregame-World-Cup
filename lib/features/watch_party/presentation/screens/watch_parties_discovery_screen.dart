@@ -15,12 +15,12 @@ class WatchPartiesDiscoveryScreen extends StatefulWidget {
   final String? venueId;
 
   const WatchPartiesDiscoveryScreen({
-    Key? key,
+    super.key,
     this.gameId,
     this.gameName,
     this.gameDateTime,
     this.venueId,
-  }) : super(key: key);
+  });
 
   @override
   State<WatchPartiesDiscoveryScreen> createState() =>

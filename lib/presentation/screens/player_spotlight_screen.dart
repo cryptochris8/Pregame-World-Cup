@@ -18,7 +18,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
   final PlayerService _playerService = PlayerService();
   final ScrollController _scrollController = ScrollController();
 
-  List<Player> _allPlayers = [];
+  final List<Player> _allPlayers = [];
   List<Player> _displayedPlayers = [];
   bool _isLoading = true;
   bool _isLoadingMore = false;
@@ -185,7 +185,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
     } catch (e) {
       setState(() => _isLoading = false);
       if (mounted) {
-        final l10n = AppLocalizations.of(context)!;
+        final l10n = AppLocalizations.of(context);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(l10n.errorLoadingPlayers(e.toString()))),
         );
@@ -213,7 +213,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
     } catch (e) {
       setState(() => _isLoadingMore = false);
       if (mounted) {
-        final l10n = AppLocalizations.of(context)!;
+        final l10n = AppLocalizations.of(context);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(l10n.errorLoadingPlayers(e.toString()))),
         );
@@ -276,7 +276,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
     } catch (e) {
       setState(() => _isLoading = false);
       if (mounted) {
-        final l10n = AppLocalizations.of(context)!;
+        final l10n = AppLocalizations.of(context);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(l10n.errorFilteringPlayers(e.toString()))),
         );
@@ -328,7 +328,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(

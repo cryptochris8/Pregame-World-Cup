@@ -315,8 +315,8 @@ class WorldCupMockData {
       timeZone: 'America/Mexico_City',
       utcOffset: -5,
     ),
-    homeGoalScorers: ['Lozano 12\'', 'Herrera 55\''],
-    awayGoalScorers: ['Carrillo 38\''],
+    homeGoalScorers: const ['Lozano 12\'', 'Herrera 55\''],
+    awayGoalScorers: const ['Carrillo 38\''],
   );
 
   /// Sample group standings
@@ -881,8 +881,8 @@ class WorldCupMockData {
       worldCupDraws: 1,
       lastMatch: DateTime(2024, 11, 19),
       firstMeeting: DateTime(1914, 9, 20),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2022,
           tournament: 'World Cup',
           stage: 'Final',
@@ -892,7 +892,7 @@ class WorldCupMockData {
           location: 'Lusail, Qatar',
           description: 'Argentina won 4-2 on penalties, Messi crowned',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2014,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -902,7 +902,7 @@ class WorldCupMockData {
           location: 'Brasília, Brazil',
           description: 'Higuaín goal in hostile territory',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1990,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -912,7 +912,7 @@ class WorldCupMockData {
           location: 'Turin, Italy',
           description: 'Caniggia stunner eliminates hosts',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1982,
           tournament: 'World Cup',
           stage: 'Second Round',
@@ -922,7 +922,7 @@ class WorldCupMockData {
           location: 'Barcelona, Spain',
           description: 'Zico masterclass, Maradona sent off',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1978,
           tournament: 'World Cup',
           stage: 'Second Round',
@@ -950,8 +950,8 @@ class WorldCupMockData {
       worldCupDraws: 2,
       lastMatch: DateTime(2022, 9, 26),
       firstMeeting: DateTime(1930, 5, 10),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2021,
           tournament: 'Euro 2020',
           stage: 'Round of 16',
@@ -961,7 +961,7 @@ class WorldCupMockData {
           location: 'London, England',
           description: 'Sterling and Kane end German hex at Wembley',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2010,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -971,7 +971,7 @@ class WorldCupMockData {
           location: 'Bloemfontein, South Africa',
           description: 'Lampard ghost goal denied, Germany rout',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1996,
           tournament: 'Euro 96',
           stage: 'Semi-Final',
@@ -981,7 +981,7 @@ class WorldCupMockData {
           location: 'London, England',
           description: 'Germany wins 6-5 on penalties, Southgate miss',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1990,
           tournament: 'World Cup',
           stage: 'Semi-Final',
@@ -991,7 +991,7 @@ class WorldCupMockData {
           location: 'Turin, Italy',
           description: 'Germany wins 4-3 on penalties, Waddle blazes over',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1966,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1020,8 +1020,8 @@ class WorldCupMockData {
       worldCupDraws: 2,
       lastMatch: DateTime(2024, 10, 15),
       firstMeeting: DateTime(1934, 5, 24),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2022,
           tournament: 'World Cup Qualifier',
           team1Score: 0,
@@ -1029,7 +1029,7 @@ class WorldCupMockData {
           location: 'Mexico City, Mexico',
           description: 'Crucial qualifier draw at Azteca',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2021,
           tournament: 'Nations League Final',
           team1Score: 2,
@@ -1038,7 +1038,7 @@ class WorldCupMockData {
           location: 'Denver, USA',
           description: 'Pulisic penalty wins it in extra time',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2002,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -1048,7 +1048,7 @@ class WorldCupMockData {
           location: 'Jeonju, South Korea',
           description: 'Dos a Cero - USA\'s famous World Cup upset',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1997,
           tournament: 'World Cup Qualifier',
           team1Score: 0,
@@ -1056,7 +1056,7 @@ class WorldCupMockData {
           location: 'Mexico City, Mexico',
           description: 'First US point at Azteca in qualifiers',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1934,
           tournament: 'World Cup Qualifier',
           team1Score: 4,
@@ -1084,8 +1084,8 @@ class WorldCupMockData {
       worldCupDraws: 0,
       lastMatch: DateTime(2023, 3, 27),
       firstMeeting: DateTime(1963, 5, 5),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2014,
           tournament: 'World Cup',
           stage: 'Semi-Final',
@@ -1095,7 +1095,7 @@ class WorldCupMockData {
           location: 'Belo Horizonte, Brazil',
           description: 'The Mineirazo - Germany\'s historic demolition',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2002,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1105,7 +1105,7 @@ class WorldCupMockData {
           location: 'Yokohama, Japan',
           description: 'Ronaldo brace crowns Brazil\'s 5th title',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1981,
           tournament: 'Friendly',
           team1Score: 1,
@@ -1114,7 +1114,7 @@ class WorldCupMockData {
           location: 'Stuttgart, Germany',
           description: 'Rummenigge masterclass',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2018,
           tournament: 'Friendly',
           team1Score: 1,
@@ -1142,8 +1142,8 @@ class WorldCupMockData {
       worldCupDraws: 2,
       lastMatch: DateTime(2023, 3, 28),
       firstMeeting: DateTime(1951, 5, 9),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 1986,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1153,7 +1153,7 @@ class WorldCupMockData {
           location: 'Mexico City, Mexico',
           description: 'Hand of God and Goal of the Century',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1998,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -1163,7 +1163,7 @@ class WorldCupMockData {
           location: 'Saint-Etienne, France',
           description: 'Beckham red card, Argentina win on penalties',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2002,
           tournament: 'World Cup',
           stage: 'Group Stage',
@@ -1173,7 +1173,7 @@ class WorldCupMockData {
           location: 'Sapporo, Japan',
           description: 'Beckham penalty redemption',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1966,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1202,8 +1202,8 @@ class WorldCupMockData {
       worldCupDraws: 1,
       lastMatch: DateTime(2024, 3, 23),
       firstMeeting: DateTime(1931, 3, 15),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2014,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1213,7 +1213,7 @@ class WorldCupMockData {
           location: 'Rio de Janeiro, Brazil',
           description: 'Hummels header sends Germany through',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1982,
           tournament: 'World Cup',
           stage: 'Semi-Final',
@@ -1223,7 +1223,7 @@ class WorldCupMockData {
           location: 'Seville, Spain',
           description: 'Epic match, Germany win on penalties',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1986,
           tournament: 'World Cup',
           stage: 'Semi-Final',
@@ -1233,7 +1233,7 @@ class WorldCupMockData {
           location: 'Guadalajara, Mexico',
           description: 'France revenge, reach second straight final',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2016,
           tournament: 'Euro 2016',
           stage: 'Semi-Final',
@@ -1262,8 +1262,8 @@ class WorldCupMockData {
       worldCupDraws: 1,
       lastMatch: DateTime(2024, 3, 26),
       firstMeeting: DateTime(1910, 4, 10),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 1974,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1273,7 +1273,7 @@ class WorldCupMockData {
           location: 'Munich, Germany',
           description: 'Germany comeback, Müller winner',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1988,
           tournament: 'Euro 88',
           stage: 'Semi-Final',
@@ -1283,7 +1283,7 @@ class WorldCupMockData {
           location: 'Hamburg, Germany',
           description: 'Van Basten penalty seals Dutch revenge',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1978,
           tournament: 'World Cup',
           stage: 'Group Stage',
@@ -1292,7 +1292,7 @@ class WorldCupMockData {
           location: 'Córdoba, Argentina',
           description: 'Thrilling draw, both reach second round',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1990,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -1321,8 +1321,8 @@ class WorldCupMockData {
       worldCupDraws: 1,
       lastMatch: DateTime(2024, 9, 6),
       firstMeeting: DateTime(1910, 5, 15),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2006,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1332,7 +1332,7 @@ class WorldCupMockData {
           location: 'Berlin, Germany',
           description: 'Zidane headbutt, Italy win on penalties',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2000,
           tournament: 'Euro 2000',
           stage: 'Final',
@@ -1342,7 +1342,7 @@ class WorldCupMockData {
           location: 'Rotterdam, Netherlands',
           description: 'Trezeguet golden goal wins it',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1998,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1352,7 +1352,7 @@ class WorldCupMockData {
           location: 'Saint-Denis, France',
           description: 'France win on penalties at home',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1938,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1381,8 +1381,8 @@ class WorldCupMockData {
       worldCupDraws: 2,
       lastMatch: DateTime(2022, 11, 21),
       firstMeeting: DateTime(1958, 6, 8),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2014,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1392,7 +1392,7 @@ class WorldCupMockData {
           location: 'Rio de Janeiro, Brazil',
           description: 'Götze extra-time goal wins Germany\'s 4th title',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2010,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1402,7 +1402,7 @@ class WorldCupMockData {
           location: 'Cape Town, South Africa',
           description: 'Germany demolish Messi\'s Argentina',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1986,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1412,7 +1412,7 @@ class WorldCupMockData {
           location: 'Mexico City, Mexico',
           description: 'Maradona inspires dramatic comeback win',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1990,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1422,7 +1422,7 @@ class WorldCupMockData {
           location: 'Rome, Italy',
           description: 'Brehme penalty, bitter rematch for Argentina',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2006,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1451,8 +1451,8 @@ class WorldCupMockData {
       worldCupDraws: 2,
       lastMatch: DateTime(2024, 9, 8),
       firstMeeting: DateTime(1921, 12, 18),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2018,
           tournament: 'World Cup',
           stage: 'Group Stage',
@@ -1461,7 +1461,7 @@ class WorldCupMockData {
           location: 'Sochi, Russia',
           description: 'Ronaldo hat-trick in epic draw',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2012,
           tournament: 'Euro 2012',
           stage: 'Semi-Final',
@@ -1471,7 +1471,7 @@ class WorldCupMockData {
           location: 'Donetsk, Ukraine',
           description: 'Spain win on penalties, Cesc decisive',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2010,
           tournament: 'World Cup',
           stage: 'Round of 16',
@@ -1481,7 +1481,7 @@ class WorldCupMockData {
           location: 'Cape Town, South Africa',
           description: 'Villa goal, Spain march on to glory',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2004,
           tournament: 'Euro 2004',
           stage: 'Group Stage',
@@ -1510,8 +1510,8 @@ class WorldCupMockData {
       worldCupDraws: 1,
       lastMatch: DateTime(2023, 3, 26),
       firstMeeting: DateTime(1930, 7, 22),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 1998,
           tournament: 'World Cup',
           stage: 'Final',
@@ -1521,7 +1521,7 @@ class WorldCupMockData {
           location: 'Saint-Denis, France',
           description: 'Zidane double, France first title',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2006,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1531,7 +1531,7 @@ class WorldCupMockData {
           location: 'Frankfurt, Germany',
           description: 'Henry goal ends Brazil\'s run',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1986,
           tournament: 'World Cup',
           stage: 'Quarter-Final',
@@ -1541,7 +1541,7 @@ class WorldCupMockData {
           location: 'Guadalajara, Mexico',
           description: 'France win on penalties, Platini era',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 1958,
           tournament: 'World Cup',
           stage: 'Semi-Final',
@@ -1570,8 +1570,8 @@ class WorldCupMockData {
       worldCupDraws: 0,
       lastMatch: DateTime(2024, 3, 21),
       firstMeeting: DateTime(1954, 3, 7),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2011,
           tournament: 'Asian Cup',
           stage: 'Semi-Final',
@@ -1581,7 +1581,7 @@ class WorldCupMockData {
           location: 'Doha, Qatar',
           description: 'Japan win on penalties, reach final',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2000,
           tournament: 'Asian Cup',
           stage: 'Semi-Final',
@@ -1591,7 +1591,7 @@ class WorldCupMockData {
           location: 'Beirut, Lebanon',
           description: 'Korea advance to final',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2019,
           tournament: 'Asian Cup',
           stage: 'Round of 16',
@@ -1620,8 +1620,8 @@ class WorldCupMockData {
       worldCupDraws: 0,
       lastMatch: DateTime(2024, 3, 26),
       firstMeeting: DateTime(1963, 3, 24),
-      notableMatches: [
-        const HistoricalMatch(
+      notableMatches: const [
+        HistoricalMatch(
           year: 2022,
           tournament: 'Africa Cup of Nations',
           stage: 'Final',
@@ -1631,7 +1631,7 @@ class WorldCupMockData {
           location: 'Yaoundé, Cameroon',
           description: 'Mané wins AFCON for Senegal on penalties',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2015,
           tournament: 'Africa Cup of Nations',
           stage: 'Group Stage',
@@ -1641,7 +1641,7 @@ class WorldCupMockData {
           location: 'Mongomo, Equatorial Guinea',
           description: 'Mané goal helps Senegal',
         ),
-        const HistoricalMatch(
+        HistoricalMatch(
           year: 2002,
           tournament: 'Africa Cup of Nations',
           stage: 'Quarter-Final',

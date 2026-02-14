@@ -13,9 +13,9 @@ class BroadcastingSchedule extends Equatable {
   });
 
   factory BroadcastingSchedule.empty() => BroadcastingSchedule(
-        matchIds: [],
+        matchIds: const [],
         lastUpdated: DateTime.now(),
-        autoSelectByTeam: [],
+        autoSelectByTeam: const [],
       );
 
   BroadcastingSchedule copyWith({

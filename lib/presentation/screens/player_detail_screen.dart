@@ -14,7 +14,7 @@ class PlayerDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -216,7 +216,7 @@ class _PlayerProfileSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return _SectionCard(
       title: l10n.profile,
@@ -258,7 +258,7 @@ class _PlayerProfileSection extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [AppTheme.primaryOrange, AppTheme.primaryRed],
                   ),
                   borderRadius: BorderRadius.circular(16),

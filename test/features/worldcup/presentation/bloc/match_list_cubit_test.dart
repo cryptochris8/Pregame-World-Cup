@@ -114,7 +114,7 @@ void main() {
           TestDataFactory.createMatch(matchId: 'm2', group: 'B'),
           TestDataFactory.createMatch(matchId: 'm3', group: 'A'),
         ],
-        filteredMatches: [],
+        filteredMatches: const [],
         filter: MatchListFilter.all,
       ),
       act: (cubit) => cubit.filterByGroup('A'),
@@ -157,7 +157,7 @@ void main() {
             .thenAnswer((_) => Stream.value([]));
         return cubit;
       },
-      seed: () => MatchListState(
+      seed: () => const MatchListState(
         matches: [],
         filteredMatches: [],
         isLoading: false,

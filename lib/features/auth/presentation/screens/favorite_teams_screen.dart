@@ -147,20 +147,20 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
           await _authService.updateFavoriteTeams(userId, _selectedTeams);
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: const Text('Favorite teams saved & synced!'),
+              const SnackBar(
+                content: Text('Favorite teams saved & synced!'),
                 backgroundColor: Colors.green,
-                duration: const Duration(seconds: 2),
+                duration: Duration(seconds: 2),
               ),
             );
           }
         } catch (firebaseError) {
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: const Text('Favorite teams saved!'),
+              const SnackBar(
+                content: Text('Favorite teams saved!'),
                 backgroundColor: Colors.green,
-                duration: const Duration(seconds: 2),
+                duration: Duration(seconds: 2),
               ),
             );
           }
@@ -168,10 +168,10 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
       } else {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: const Text('Favorite teams saved!'),
+            const SnackBar(
+              content: Text('Favorite teams saved!'),
               backgroundColor: Colors.green,
-              duration: const Duration(seconds: 2),
+              duration: Duration(seconds: 2),
             ),
           );
         }
@@ -184,9 +184,9 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text('Error saving favorites. Please try again.'),
-            backgroundColor: const Color(0xFF1E293B),
+          const SnackBar(
+            content: Text('Error saving favorites. Please try again.'),
+            backgroundColor: Color(0xFF1E293B),
           ),
         );
       }
@@ -307,7 +307,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                     ),
                     child: Row(
                       children: [
-                        Icon(Icons.check_circle_outline, color: Colors.green),
+                        const Icon(Icons.check_circle_outline, color: Colors.green),
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(

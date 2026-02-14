@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:pregame_world_cup/domain/models/manager.dart';
 
 /// Tests for Manager data models and UI components
@@ -115,13 +114,13 @@ void main() {
   group('Manager Widget Components', () {
     testWidgets('Manager info card displays correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Card(
               child: ListTile(
-                leading: const CircleAvatar(child: Text('T')),
-                title: const Text('Tite'),
-                subtitle: const Text('Brazil'),
+                leading: CircleAvatar(child: Text('T')),
+                title: Text('Tite'),
+                subtitle: Text('Brazil'),
               ),
             ),
           ),
@@ -135,7 +134,7 @@ void main() {
 
     testWidgets('Manager stats widget displays correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Column(
               children: [
@@ -155,11 +154,11 @@ void main() {
 
     testWidgets('Manager honors list displays correctly', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             body: Column(
               children: [
-                const Text('Honors'),
+                Text('Honors'),
                 Chip(label: Text('Copa America 2019')),
                 Chip(label: Text('FIFA Confederations Cup 2013')),
               ],

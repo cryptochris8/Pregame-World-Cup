@@ -77,7 +77,6 @@ import 'features/worldcup/worldcup.dart';
 import 'features/worldcup/data/services/world_cup_ai_service.dart';
 import 'features/worldcup/data/services/nearby_venues_service.dart';
 import 'features/worldcup/data/services/match_reminder_service.dart';
-import 'features/worldcup/presentation/bloc/nearby_venues_cubit.dart';
 import 'features/worldcup/domain/services/world_cup_payment_service.dart';
 import 'services/revenuecat_service.dart';
 
@@ -204,7 +203,7 @@ Future<void> setupLocator() async {
       // Register ESPN services with timeout protection
       await Future.any([
         _registerESPNServices(),
-        Future.delayed(Duration(seconds: 5)), // 5 second timeout
+        Future.delayed(const Duration(seconds: 5)), // 5 second timeout
       ]);
       _diLog('DI STEP 5: ESPN and API Services - SUCCESS');
     } catch (e) {

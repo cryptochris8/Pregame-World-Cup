@@ -1,6 +1,7 @@
 /// World Cup 2026 Widgets
 ///
 /// This barrel file exports all World Cup UI widgets.
+library;
 
 export 'live_indicator.dart';
 export 'team_flag.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/entities/game_intelligence.dart';
 import '../../../../services/espn_service.dart';
-import '../../../../config/theme_helper.dart';
 
 /// Widget that displays ESPN-powered game intelligence including crowd factors,
 /// revenue projections, and venue recommendations
@@ -48,10 +47,10 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
       var intelligence = await _espnService.getGameIntelligence(widget.gameId);
       
       // If that fails and we have team names, try to find the ESPN game ID
-      if (intelligence == null && widget.homeTeam != null && widget.awayTeam != null) {
+      if (intelligence == null) {
         final espnGameId = await _espnService.findESPNGameId(
-          homeTeam: widget.homeTeam!,
-          awayTeam: widget.awayTeam!,
+          homeTeam: widget.homeTeam,
+          awayTeam: widget.awayTeam,
         );
         
         if (espnGameId != null) {

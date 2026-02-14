@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:pregame_world_cup/core/entities/game_intelligence.dart';
 import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedule.dart';
 import 'package:hive/hive.dart';
@@ -843,7 +842,7 @@ class ESPNService {
     
     if (isRivalry) {
       specials.add('Rivalry Special: Buy team colors pitcher, get appetizer half off');
-      specials.add('${homeTeam} vs ${awayTeam} Wings Challenge');
+      specials.add('$homeTeam vs $awayTeam Wings Challenge');
     }
     
     if (hasChampImplications) {

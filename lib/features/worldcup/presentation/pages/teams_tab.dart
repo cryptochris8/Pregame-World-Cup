@@ -172,21 +172,21 @@ class TeamsTab extends StatelessWidget {
                 // Teams list
                 Expanded(
                   child: displayTeams.isEmpty
-                      ? Center(
+                      ? const Center(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.favorite_border, size: 64, color: Colors.white38),
-                              const SizedBox(height: 16),
-                              const Text(
+                              SizedBox(height: 16),
+                              Text(
                                 'No favorite teams yet',
                                 style: TextStyle(
                                   fontSize: 16,
                                   color: Colors.white60,
                                 ),
                               ),
-                              const SizedBox(height: 8),
-                              const Text(
+                              SizedBox(height: 8),
+                              Text(
                                 'Tap the heart icon on any team to add it to your favorites',
                                 style: TextStyle(
                                   fontSize: 14,

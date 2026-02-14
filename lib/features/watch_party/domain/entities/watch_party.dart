@@ -185,7 +185,7 @@ class WatchParty extends Equatable {
       updatedAt: now,
       imageUrl: imageUrl,
       tags: tags,
-      settings: {},
+      settings: const {},
     );
   }
 

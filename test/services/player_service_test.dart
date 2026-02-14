@@ -344,7 +344,7 @@ void main() {
       final snapshot = await fakeFirestore.collection('players').get();
       final allPlayers = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 
-      final query = 'messi';
+      const query = 'messi';
       final results = allPlayers.where((player) {
         return player.fullName.toLowerCase().contains(query.toLowerCase()) ||
             player.commonName.toLowerCase().contains(query.toLowerCase());

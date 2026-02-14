@@ -1,375 +1,215 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/core/utils/team_logo_helper.dart';
 
-/// Tests for TeamLogoHelper utility class
+/// Tests for TeamLogoHelper utility class (World Cup 2026 edition)
+///
+/// TeamLogoHelper now returns emoji flags instead of PNG asset paths.
 void main() {
-  group('TeamLogoHelper - getTeamLogoPath', () {
-    group('Alabama Crimson Tide', () {
-      test('returns path for "alabama"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('alabama'),
-            equals('assets/logos/alabama_crimson_tide.png'));
+  group('TeamLogoHelper - getTeamFlag', () {
+    group('Lookup by FIFA code', () {
+      test('returns flag emoji for USA', () {
+        final flag = TeamLogoHelper.getTeamFlag('USA');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1FA}\u{1F1F8}'));
       });
 
-      test('returns path for "Alabama" (case insensitive)', () {
-        expect(TeamLogoHelper.getTeamLogoPath('Alabama'),
-            equals('assets/logos/alabama_crimson_tide.png'));
+      test('returns flag emoji for BRA', () {
+        final flag = TeamLogoHelper.getTeamFlag('BRA');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1E7}\u{1F1F7}'));
       });
 
-      test('returns path for "ALABAMA" (uppercase)', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ALABAMA'),
-            equals('assets/logos/alabama_crimson_tide.png'));
+      test('returns flag emoji for ARG', () {
+        final flag = TeamLogoHelper.getTeamFlag('ARG');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1E6}\u{1F1F7}'));
       });
 
-      test('returns path for "alabama crimson tide"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('alabama crimson tide'),
-            equals('assets/logos/alabama_crimson_tide.png'));
+      test('returns flag emoji for MEX', () {
+        final flag = TeamLogoHelper.getTeamFlag('MEX');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1F2}\u{1F1FD}'));
       });
 
-      test('returns path for "crimson tide"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('crimson tide'),
-            equals('assets/logos/alabama_crimson_tide.png'));
+      test('returns flag emoji for ENG', () {
+        final flag = TeamLogoHelper.getTeamFlag('ENG');
+        expect(flag, isNotNull);
+        // England uses the subdivision flag tag sequence
+        expect(flag, equals('\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}'));
       });
 
-      test('returns path for "bama"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('bama'),
-            equals('assets/logos/alabama_crimson_tide.png'));
+      test('returns flag emoji for FRA', () {
+        final flag = TeamLogoHelper.getTeamFlag('FRA');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1EB}\u{1F1F7}'));
       });
 
-      test('returns path for "ala"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ala'),
-            equals('assets/logos/alabama_crimson_tide.png'));
-      });
-    });
-
-    group('Arkansas Razorbacks', () {
-      test('returns path for "arkansas"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('arkansas'),
-            equals('assets/logos/arkansas_razorbacks.png'));
+      test('returns flag emoji for GER', () {
+        final flag = TeamLogoHelper.getTeamFlag('GER');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1E9}\u{1F1EA}'));
       });
 
-      test('returns path for "razorbacks"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('razorbacks'),
-            equals('assets/logos/arkansas_razorbacks.png'));
+      test('returns flag emoji for ESP', () {
+        final flag = TeamLogoHelper.getTeamFlag('ESP');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1EA}\u{1F1F8}'));
       });
 
-      test('returns path for "ark"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ark'),
-            equals('assets/logos/arkansas_razorbacks.png'));
-      });
-    });
-
-    group('Auburn Tigers', () {
-      test('returns path for "auburn"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('auburn'),
-            equals('assets/logos/auburn_tigers.png'));
+      test('returns flag emoji for JPN', () {
+        final flag = TeamLogoHelper.getTeamFlag('JPN');
+        expect(flag, isNotNull);
+        expect(flag, equals('\u{1F1EF}\u{1F1F5}'));
       });
 
-      test('returns path for "auburn tigers"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('auburn tigers'),
-            equals('assets/logos/auburn_tigers.png'));
-      });
-
-      test('returns path for "aub"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('aub'),
-            equals('assets/logos/auburn_tigers.png'));
+      test('FIFA code lookup is case-insensitive', () {
+        expect(TeamLogoHelper.getTeamFlag('usa'), equals(TeamLogoHelper.getTeamFlag('USA')));
+        expect(TeamLogoHelper.getTeamFlag('bra'), equals(TeamLogoHelper.getTeamFlag('BRA')));
+        expect(TeamLogoHelper.getTeamFlag('Arg'), equals(TeamLogoHelper.getTeamFlag('ARG')));
       });
     });
 
-    group('Florida Gators', () {
-      test('returns path for "florida"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('florida'),
-            equals('assets/logos/florida_gators.png'));
+    group('Lookup by full country name', () {
+      test('returns flag for United States', () {
+        expect(TeamLogoHelper.getTeamFlag('United States'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('United States'),
+            equals(TeamLogoHelper.getTeamFlag('USA')));
       });
 
-      test('returns path for "gators"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('gators'),
-            equals('assets/logos/florida_gators.png'));
+      test('returns flag for Brazil', () {
+        expect(TeamLogoHelper.getTeamFlag('Brazil'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('Brazil'),
+            equals(TeamLogoHelper.getTeamFlag('BRA')));
       });
 
-      test('returns path for "uf"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('uf'),
-            equals('assets/logos/florida_gators.png'));
+      test('returns flag for Argentina', () {
+        expect(TeamLogoHelper.getTeamFlag('Argentina'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('Argentina'),
+            equals(TeamLogoHelper.getTeamFlag('ARG')));
       });
 
-      test('returns path for "fla"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('fla'),
-            equals('assets/logos/florida_gators.png'));
-      });
-    });
-
-    group('Georgia Bulldogs', () {
-      test('returns path for "georgia"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('georgia'),
-            equals('assets/logos/georgia_bulldogs.png'));
+      test('returns flag for Mexico', () {
+        expect(TeamLogoHelper.getTeamFlag('Mexico'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('Mexico'),
+            equals(TeamLogoHelper.getTeamFlag('MEX')));
       });
 
-      test('returns path for "bulldogs"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('bulldogs'),
-            equals('assets/logos/georgia_bulldogs.png'));
+      test('returns flag for England', () {
+        expect(TeamLogoHelper.getTeamFlag('England'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('England'),
+            equals(TeamLogoHelper.getTeamFlag('ENG')));
       });
 
-      test('returns path for "uga"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('uga'),
-            equals('assets/logos/georgia_bulldogs.png'));
-      });
-    });
-
-    group('Kentucky Wildcats', () {
-      test('returns path for "kentucky"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('kentucky'),
-            equals('assets/logos/kentucky_wildcats.png'));
+      test('returns flag for Germany', () {
+        expect(TeamLogoHelper.getTeamFlag('Germany'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('Germany'),
+            equals(TeamLogoHelper.getTeamFlag('GER')));
       });
 
-      test('returns path for "wildcats"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('wildcats'),
-            equals('assets/logos/kentucky_wildcats.png'));
+      test('returns flag for Netherlands', () {
+        expect(TeamLogoHelper.getTeamFlag('Netherlands'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('Netherlands'),
+            equals(TeamLogoHelper.getTeamFlag('NED')));
       });
 
-      test('returns path for "uk"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('uk'),
-            equals('assets/logos/kentucky_wildcats.png'));
+      test('returns flag for South Korea', () {
+        expect(TeamLogoHelper.getTeamFlag('South Korea'), isNotNull);
+        expect(TeamLogoHelper.getTeamFlag('South Korea'),
+            equals(TeamLogoHelper.getTeamFlag('KOR')));
       });
     });
 
-    group('LSU Tigers', () {
-      test('returns path for "lsu"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('lsu'),
-            equals('assets/logos/lsu_tigers.png'));
+    group('Lookup by alias / nickname', () {
+      test('returns flag for USMNT', () {
+        expect(TeamLogoHelper.getTeamFlag('USMNT'),
+            equals(TeamLogoHelper.getTeamFlag('USA')));
       });
 
-      test('returns path for "lsu tigers"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('lsu tigers'),
-            equals('assets/logos/lsu_tigers.png'));
+      test('returns flag for El Tri', () {
+        expect(TeamLogoHelper.getTeamFlag('El Tri'),
+            equals(TeamLogoHelper.getTeamFlag('MEX')));
       });
 
-      test('returns path for "tigers"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('tigers'),
-            equals('assets/logos/lsu_tigers.png'));
+      test('returns flag for Holland', () {
+        expect(TeamLogoHelper.getTeamFlag('Holland'),
+            equals(TeamLogoHelper.getTeamFlag('NED')));
       });
 
-      test('returns path for "louisiana state"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('louisiana state'),
-            equals('assets/logos/lsu_tigers.png'));
-      });
-    });
-
-    group('Mississippi State Bulldogs', () {
-      test('returns path for "mississippi state"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('mississippi state'),
-            equals('assets/logos/mississipi_state.png'));
+      test('returns flag for Brasil', () {
+        expect(TeamLogoHelper.getTeamFlag('Brasil'),
+            equals(TeamLogoHelper.getTeamFlag('BRA')));
       });
 
-      test('returns path for "miss state"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('miss state'),
-            equals('assets/logos/mississipi_state.png'));
+      test('returns flag for La Albiceleste', () {
+        expect(TeamLogoHelper.getTeamFlag('La Albiceleste'),
+            equals(TeamLogoHelper.getTeamFlag('ARG')));
       });
 
-      test('returns path for "msu"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('msu'),
-            equals('assets/logos/mississipi_state.png'));
+      test('returns flag for Three Lions', () {
+        expect(TeamLogoHelper.getTeamFlag('Three Lions'),
+            equals(TeamLogoHelper.getTeamFlag('ENG')));
       });
 
-      test('returns path for "msst"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('msst'),
-            equals('assets/logos/mississipi_state.png'));
-      });
-    });
-
-    group('Missouri Tigers', () {
-      test('returns path for "missouri"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('missouri'),
-            equals('assets/logos/missouri_tigers.png'));
+      test('returns flag for Les Bleus', () {
+        expect(TeamLogoHelper.getTeamFlag('Les Bleus'),
+            equals(TeamLogoHelper.getTeamFlag('FRA')));
       });
 
-      test('returns path for "mizzou"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('mizzou'),
-            equals('assets/logos/missouri_tigers.png'));
+      test('returns flag for Korea Republic', () {
+        expect(TeamLogoHelper.getTeamFlag('Korea Republic'),
+            equals(TeamLogoHelper.getTeamFlag('KOR')));
       });
 
-      test('returns path for "miz"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('miz'),
-            equals('assets/logos/missouri_tigers.png'));
-      });
-    });
-
-    group('Ole Miss Rebels', () {
-      test('returns path for "ole miss"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ole miss'),
-            equals('assets/logos/ole_miss_rebels.png'));
+      test('returns flag for IR Iran', () {
+        expect(TeamLogoHelper.getTeamFlag('IR Iran'),
+            equals(TeamLogoHelper.getTeamFlag('IRN')));
       });
 
-      test('returns path for "rebels"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('rebels'),
-            equals('assets/logos/ole_miss_rebels.png'));
-      });
-
-      test('returns path for "mississippi"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('mississippi'),
-            equals('assets/logos/ole_miss_rebels.png'));
-      });
-    });
-
-    group('Oklahoma Sooners', () {
-      test('returns path for "oklahoma"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('oklahoma'),
-            equals('assets/logos/oklahoma-sooners.png'));
-      });
-
-      test('returns path for "sooners"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('sooners'),
-            equals('assets/logos/oklahoma-sooners.png'));
-      });
-
-      test('returns path for "ou"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ou'),
-            equals('assets/logos/oklahoma-sooners.png'));
-      });
-    });
-
-    group('South Carolina Gamecocks', () {
-      test('returns path for "south carolina"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('south carolina'),
-            equals('assets/logos/south_carolina_gamecocks.png'));
-      });
-
-      test('returns path for "gamecocks"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('gamecocks'),
-            equals('assets/logos/south_carolina_gamecocks.png'));
-      });
-
-      test('returns path for "sc"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('sc'),
-            equals('assets/logos/south_carolina_gamecocks.png'));
-      });
-
-      test('returns path for "scar"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('scar'),
-            equals('assets/logos/south_carolina_gamecocks.png'));
-      });
-    });
-
-    group('Tennessee Volunteers', () {
-      test('returns path for "tennessee"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('tennessee'),
-            equals('assets/logos/tennessee_vols.png'));
-      });
-
-      test('returns path for "vols"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('vols'),
-            equals('assets/logos/tennessee_vols.png'));
-      });
-
-      test('returns path for "volunteers"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('volunteers'),
-            equals('assets/logos/tennessee_vols.png'));
-      });
-
-      test('returns path for "tenn"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('tenn'),
-            equals('assets/logos/tennessee_vols.png'));
-      });
-    });
-
-    group('Texas Longhorns', () {
-      test('returns path for "texas"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('texas'),
-            equals('assets/logos/texas_longhonerns.png'));
-      });
-
-      test('returns path for "longhorns"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('longhorns'),
-            equals('assets/logos/texas_longhonerns.png'));
-      });
-
-      test('returns path for "ut"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ut'),
-            equals('assets/logos/texas_longhonerns.png'));
-      });
-
-      test('returns path for "horns"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('horns'),
-            equals('assets/logos/texas_longhonerns.png'));
-      });
-    });
-
-    group('Texas A&M Aggies', () {
-      test('returns path for "texas a&m"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('texas a&m'),
-            equals('assets/logos/texas_a&m_aggies.png'));
-      });
-
-      test('returns path for "aggies"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('aggies'),
-            equals('assets/logos/texas_a&m_aggies.png'));
-      });
-
-      test('returns path for "tamu"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('tamu'),
-            equals('assets/logos/texas_a&m_aggies.png'));
-      });
-
-      test('returns path for "a&m"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('a&m'),
-            equals('assets/logos/texas_a&m_aggies.png'));
-      });
-    });
-
-    group('Vanderbilt Commodores', () {
-      test('returns path for "vanderbilt"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('vanderbilt'),
-            equals('assets/logos/vanderbilt_commodores.png'));
-      });
-
-      test('returns path for "commodores"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('commodores'),
-            equals('assets/logos/vanderbilt_commodores.png'));
-      });
-
-      test('returns path for "vandy"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('vandy'),
-            equals('assets/logos/vanderbilt_commodores.png'));
-      });
-
-      test('returns path for "dores"', () {
-        expect(TeamLogoHelper.getTeamLogoPath('dores'),
-            equals('assets/logos/vanderbilt_commodores.png'));
+      test('returns flag for Turkiye', () {
+        expect(TeamLogoHelper.getTeamFlag('Turkiye'),
+            equals(TeamLogoHelper.getTeamFlag('TUR')));
       });
     });
 
     group('Edge Cases', () {
       test('returns null for null input', () {
-        expect(TeamLogoHelper.getTeamLogoPath(null), isNull);
+        expect(TeamLogoHelper.getTeamFlag(null), isNull);
       });
 
       test('returns null for empty string', () {
-        expect(TeamLogoHelper.getTeamLogoPath(''), isNull);
+        expect(TeamLogoHelper.getTeamFlag(''), isNull);
       });
 
       test('returns null for unknown team', () {
-        expect(TeamLogoHelper.getTeamLogoPath('unknown team'), isNull);
+        expect(TeamLogoHelper.getTeamFlag('unknown team'), isNull);
       });
 
-      test('returns null for non-SEC team', () {
-        expect(TeamLogoHelper.getTeamLogoPath('ohio state'), isNull);
+      test('returns null for non-qualified team', () {
+        expect(TeamLogoHelper.getTeamFlag('Italy'), isNull);
       });
 
       test('handles whitespace in input', () {
-        expect(TeamLogoHelper.getTeamLogoPath('  alabama  '),
-            equals('assets/logos/alabama_crimson_tide.png'));
+        expect(TeamLogoHelper.getTeamFlag('  USA  '),
+            equals(TeamLogoHelper.getTeamFlag('USA')));
       });
     });
   });
 
   group('TeamLogoHelper - hasTeamLogo', () {
-    test('returns true for SEC teams', () {
-      expect(TeamLogoHelper.hasTeamLogo('alabama'), isTrue);
-      expect(TeamLogoHelper.hasTeamLogo('georgia'), isTrue);
-      expect(TeamLogoHelper.hasTeamLogo('lsu'), isTrue);
+    test('returns true for World Cup teams', () {
+      expect(TeamLogoHelper.hasTeamLogo('USA'), isTrue);
+      expect(TeamLogoHelper.hasTeamLogo('Brazil'), isTrue);
+      expect(TeamLogoHelper.hasTeamLogo('Argentina'), isTrue);
+      expect(TeamLogoHelper.hasTeamLogo('England'), isTrue);
+      expect(TeamLogoHelper.hasTeamLogo('France'), isTrue);
+      expect(TeamLogoHelper.hasTeamLogo('Germany'), isTrue);
+      expect(TeamLogoHelper.hasTeamLogo('Japan'), isTrue);
     });
 
-    test('returns false for non-SEC teams', () {
-      expect(TeamLogoHelper.hasTeamLogo('ohio state'), isFalse);
-      expect(TeamLogoHelper.hasTeamLogo('michigan'), isFalse);
+    test('returns false for non-qualified teams', () {
+      expect(TeamLogoHelper.hasTeamLogo('Italy'), isFalse);
+      expect(TeamLogoHelper.hasTeamLogo('Sweden'), isFalse);
     });
 
     test('returns false for null', () {
@@ -387,26 +227,119 @@ void main() {
       expect(teams, isNotEmpty);
     });
 
-    test('contains SEC team aliases', () {
+    test('contains country names in lowercase', () {
       final teams = TeamLogoHelper.getAvailableTeams();
-      expect(teams, contains('alabama'));
-      expect(teams, contains('georgia'));
-      expect(teams, contains('lsu'));
-      expect(teams, contains('texas'));
+      expect(teams, contains('brazil'));
+      expect(teams, contains('argentina'));
+      expect(teams, contains('united states'));
+      expect(teams, contains('mexico'));
+      expect(teams, contains('england'));
+      expect(teams, contains('france'));
+      expect(teams, contains('germany'));
+      expect(teams, contains('japan'));
     });
 
-    test('contains team nicknames', () {
+    test('contains common aliases', () {
       final teams = TeamLogoHelper.getAvailableTeams();
-      expect(teams, contains('bulldogs'));
-      expect(teams, contains('tigers'));
-      expect(teams, contains('gators'));
+      expect(teams, contains('holland'));
+      expect(teams, contains('usmnt'));
+      expect(teams, contains('el tri'));
+      expect(teams, contains('brasil'));
+    });
+  });
+
+  group('TeamLogoHelper - getAvailableTeamCodes', () {
+    test('returns non-empty list', () {
+      final codes = TeamLogoHelper.getAvailableTeamCodes();
+      expect(codes, isNotEmpty);
     });
 
-    test('contains abbreviations', () {
-      final teams = TeamLogoHelper.getAvailableTeams();
-      expect(teams, contains('uga'));
-      expect(teams, contains('tamu'));
-      expect(teams, contains('ou'));
+    test('contains 49 FIFA codes for World Cup 2026 teams', () {
+      final codes = TeamLogoHelper.getAvailableTeamCodes();
+      // 48 qualified teams + IRQ (Iraq) = 49
+      expect(codes.length, equals(49));
+    });
+
+    test('contains expected FIFA codes', () {
+      final codes = TeamLogoHelper.getAvailableTeamCodes();
+      expect(codes, contains('USA'));
+      expect(codes, contains('BRA'));
+      expect(codes, contains('ARG'));
+      expect(codes, contains('MEX'));
+      expect(codes, contains('CAN'));
+      expect(codes, contains('ENG'));
+      expect(codes, contains('FRA'));
+      expect(codes, contains('GER'));
+      expect(codes, contains('ESP'));
+      expect(codes, contains('JPN'));
+      expect(codes, contains('NGA'));
+      expect(codes, contains('MAR'));
+    });
+  });
+
+  group('TeamLogoHelper - getTeamFlagWidget', () {
+    testWidgets('returns a Text widget for recognized team', (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: TeamLogoHelper.getTeamFlagWidget('USA'),
+          ),
+        ),
+      );
+
+      // Should contain a Text widget with the flag emoji
+      expect(find.byType(Text), findsOneWidget);
+    });
+
+    testWidgets('returns a soccer ball Icon for unrecognized team', (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: TeamLogoHelper.getTeamFlagWidget('unknown'),
+          ),
+        ),
+      );
+
+      // Should fall back to a sports_soccer icon
+      expect(find.byIcon(Icons.sports_soccer), findsOneWidget);
+    });
+
+    testWidgets('returns a soccer ball Icon for null', (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: TeamLogoHelper.getTeamFlagWidget(null),
+          ),
+        ),
+      );
+
+      expect(find.byIcon(Icons.sports_soccer), findsOneWidget);
+    });
+  });
+
+  group('TeamLogoHelper - getTeamLogoWidget', () {
+    testWidgets('returns a flag widget for recognized team name', (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: TeamLogoHelper.getTeamLogoWidget(teamName: 'Brazil'),
+          ),
+        ),
+      );
+
+      expect(find.byType(Text), findsOneWidget);
+    });
+
+    testWidgets('returns a fallback icon for unrecognized team', (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: TeamLogoHelper.getTeamLogoWidget(teamName: 'unknown'),
+          ),
+        ),
+      );
+
+      expect(find.byIcon(Icons.sports_soccer), findsOneWidget);
     });
   });
 }

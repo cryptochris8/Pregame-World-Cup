@@ -14,7 +14,7 @@ void main() {
     });
 
     test('isTeamFavorite returns correct value', () {
-      final prefs = UserPreferences(
+      const prefs = UserPreferences(
         favoriteTeamCodes: ['USA', 'BRA', 'GER'],
       );
 
@@ -24,7 +24,7 @@ void main() {
     });
 
     test('isMatchFavorite returns correct value', () {
-      final prefs = UserPreferences(
+      const prefs = UserPreferences(
         favoriteMatchIds: ['match1', 'match2'],
       );
 
@@ -41,14 +41,14 @@ void main() {
     });
 
     test('addFavoriteTeam does not duplicate', () {
-      final prefs = UserPreferences(favoriteTeamCodes: ['USA']);
+      const prefs = UserPreferences(favoriteTeamCodes: ['USA']);
       final updated = prefs.addFavoriteTeam('USA');
 
       expect(updated.favoriteTeamCodes.length, equals(1));
     });
 
     test('removeFavoriteTeam removes team code', () {
-      final prefs = UserPreferences(favoriteTeamCodes: ['USA', 'BRA']);
+      const prefs = UserPreferences(favoriteTeamCodes: ['USA', 'BRA']);
       final updated = prefs.removeFavoriteTeam('USA');
 
       expect(updated.favoriteTeamCodes, isNot(contains('USA')));
@@ -75,7 +75,7 @@ void main() {
     });
 
     test('removeFavoriteMatch removes match ID', () {
-      final prefs = UserPreferences(favoriteMatchIds: ['match1', 'match2']);
+      const prefs = UserPreferences(favoriteMatchIds: ['match1', 'match2']);
       final updated = prefs.removeFavoriteMatch('match1');
 
       expect(updated.favoriteMatchIds, isNot(contains('match1')));
@@ -95,7 +95,7 @@ void main() {
     });
 
     test('fromMap and toMap round-trip correctly', () {
-      final original = UserPreferences(
+      const original = UserPreferences(
         favoriteTeamCodes: ['USA', 'BRA'],
         favoriteMatchIds: ['match1', 'match2'],
         notifyFavoriteTeamMatches: false,

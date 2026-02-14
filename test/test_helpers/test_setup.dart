@@ -1,7 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:pregame_world_cup/features/worldcup/data/services/match_reminder_service.dart';
-import 'package:pregame_world_cup/features/worldcup/domain/entities/match_reminder.dart';
 
 // Mock Services
 class MockMatchReminderService extends Mock implements MatchReminderService {}

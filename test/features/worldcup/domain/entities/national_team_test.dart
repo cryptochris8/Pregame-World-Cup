@@ -555,17 +555,17 @@ void main() {
       });
 
       test('fromApi parses different area names', () {
-        expect(NationalTeam.fromApi({'Key': 'A', 'Name': 'A', 'AreaName': 'Europe'})
+        expect(NationalTeam.fromApi(const {'Key': 'A', 'Name': 'A', 'AreaName': 'Europe'})
             .confederation, equals(Confederation.uefa));
-        expect(NationalTeam.fromApi({'Key': 'B', 'Name': 'B', 'AreaName': 'South America'})
+        expect(NationalTeam.fromApi(const {'Key': 'B', 'Name': 'B', 'AreaName': 'South America'})
             .confederation, equals(Confederation.conmebol));
-        expect(NationalTeam.fromApi({'Key': 'C', 'Name': 'C', 'AreaName': 'North America'})
+        expect(NationalTeam.fromApi(const {'Key': 'C', 'Name': 'C', 'AreaName': 'North America'})
             .confederation, equals(Confederation.concacaf));
-        expect(NationalTeam.fromApi({'Key': 'D', 'Name': 'D', 'AreaName': 'Asia'})
+        expect(NationalTeam.fromApi(const {'Key': 'D', 'Name': 'D', 'AreaName': 'Asia'})
             .confederation, equals(Confederation.afc));
-        expect(NationalTeam.fromApi({'Key': 'E', 'Name': 'E', 'AreaName': 'Africa'})
+        expect(NationalTeam.fromApi(const {'Key': 'E', 'Name': 'E', 'AreaName': 'Africa'})
             .confederation, equals(Confederation.caf));
-        expect(NationalTeam.fromApi({'Key': 'F', 'Name': 'F', 'AreaName': 'Oceania'})
+        expect(NationalTeam.fromApi(const {'Key': 'F', 'Name': 'F', 'AreaName': 'Oceania'})
             .confederation, equals(Confederation.ofc));
       });
     });

@@ -232,7 +232,7 @@ class _EnhancedAIVenueRecommendationsWidgetState
           stops: [0.0, 0.5, 1.0],
         ),
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Color(0xFF7C3AED),
             blurRadius: 20,

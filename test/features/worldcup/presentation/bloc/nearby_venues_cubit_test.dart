@@ -69,22 +69,22 @@ void main() {
 
   // Test NearbyVenueResult objects
   final testVenueResults = [
-    NearbyVenueResult(
+    const NearbyVenueResult(
       place: barPlace,
       distanceMeters: 150.0,
       stadium: testStadium,
     ),
-    NearbyVenueResult(
+    const NearbyVenueResult(
       place: restaurantPlace,
       distanceMeters: 300.0,
       stadium: testStadium,
     ),
-    NearbyVenueResult(
+    const NearbyVenueResult(
       place: cafePlace,
       distanceMeters: 500.0,
       stadium: testStadium,
     ),
-    NearbyVenueResult(
+    const NearbyVenueResult(
       place: barRestaurantPlace,
       distanceMeters: 200.0,
       stadium: testStadium,

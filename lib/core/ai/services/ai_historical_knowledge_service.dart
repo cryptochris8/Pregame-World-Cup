@@ -1,11 +1,7 @@
-import 'dart:convert';
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../services/cache_service.dart';
 import '../../services/logging_service.dart';
-import '../../../injection_container.dart';
-import '../../../config/api_keys.dart';
 
 /// AI Historical Knowledge Service
 ///

@@ -132,7 +132,7 @@ class EnhancedVenueCard extends StatelessWidget {
                   Row(
                     children: [
                       if (rating != null) ...[
-                        Icon(
+                        const Icon(
                           Icons.star,
                           size: 14,
                           color: Colors.amber,
@@ -434,7 +434,7 @@ class EnhancedVenueListTile extends StatelessWidget {
         subtitle: Row(
           children: [
             if (rating != null) ...[
-              Icon(Icons.star, size: 12, color: Colors.amber),
+              const Icon(Icons.star, size: 12, color: Colors.amber),
               const SizedBox(width: 2),
               Text(rating!.toStringAsFixed(1)),
             ],

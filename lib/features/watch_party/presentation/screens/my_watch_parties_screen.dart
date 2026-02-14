@@ -9,7 +9,7 @@ import 'create_watch_party_screen.dart';
 
 /// Screen showing user's watch parties (hosted + attending)
 class MyWatchPartiesScreen extends StatefulWidget {
-  const MyWatchPartiesScreen({Key? key}) : super(key: key);
+  const MyWatchPartiesScreen({super.key});
 
   @override
   State<MyWatchPartiesScreen> createState() => _MyWatchPartiesScreenState();

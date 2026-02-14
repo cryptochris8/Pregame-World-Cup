@@ -8,10 +8,10 @@ class ESPNGameIntelligenceCard extends StatelessWidget {
   final bool showFullDetails;
 
   const ESPNGameIntelligenceCard({
-    Key? key,
+    super.key,
     required this.intelligence,
     this.showFullDetails = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -359,11 +359,11 @@ class ESPNGameIntelligenceCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          const Row(
             children: [
-              const Icon(Icons.local_offer, color: Colors.amber, size: 16),
-              const SizedBox(width: 8),
-              const Text(
+              Icon(Icons.local_offer, color: Colors.amber, size: 16),
+              SizedBox(width: 8),
+              Text(
                 'Suggested Specials',
                 style: TextStyle(
                   color: Colors.amber,
@@ -391,7 +391,7 @@ class ESPNGameIntelligenceCard extends StatelessWidget {
                 ),
               ],
             ),
-          )).toList(),
+          )),
         ],
       ),
     );
@@ -411,10 +411,10 @@ class ESPNGameIntelligenceCompactCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const ESPNGameIntelligenceCompactCard({
-    Key? key,
+    super.key,
     required this.intelligence,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

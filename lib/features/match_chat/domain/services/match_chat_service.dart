@@ -485,7 +485,7 @@ class MatchChatService {
 
     // Check burst limit
     final recentMsgs = _recentMessages[key] ?? [];
-    final windowStart = now.subtract(Duration(seconds: _burstWindowSeconds));
+    final windowStart = now.subtract(const Duration(seconds: _burstWindowSeconds));
     final messagesInWindow = recentMsgs.where((t) => t.isAfter(windowStart)).toList();
 
     if (messagesInWindow.length >= _burstLimit) {
@@ -521,7 +521,7 @@ class MatchChatService {
     recentMsgs.add(now);
 
     // Clean up old entries
-    final windowStart = now.subtract(Duration(seconds: _burstWindowSeconds));
+    final windowStart = now.subtract(const Duration(seconds: _burstWindowSeconds));
     recentMsgs.removeWhere((t) => t.isBefore(windowStart));
     _recentMessages[key] = recentMsgs;
   }

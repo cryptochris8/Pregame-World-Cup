@@ -54,7 +54,7 @@ class EnhancedSportsDataService {
     try {
       // Check cache first
       final cacheKey = 'player_${playerId}_$teamKey';
-      if (_isCacheValid(cacheKey, Duration(hours: 6))) {
+      if (_isCacheValid(cacheKey, const Duration(hours: 6))) {
         return _cache[cacheKey] as Player?;
       }
 
@@ -80,7 +80,7 @@ class EnhancedSportsDataService {
       final currentSeason = season ?? DateTime.now().year;
       final cacheKey = 'depth_chart_${teamKey}_$currentSeason';
 
-      if (_isCacheValid(cacheKey, Duration(hours: 12))) {
+      if (_isCacheValid(cacheKey, const Duration(hours: 12))) {
         return _cache[cacheKey] as Map<String, dynamic>?;
       }
 
@@ -92,7 +92,7 @@ class EnhancedSportsDataService {
           'Ocp-Apim-Subscription-Key': ApiKeys.sportsDataIo,
           'Accept': 'application/json',
         },
-      ).timeout(Duration(seconds: 10));
+      ).timeout(const Duration(seconds: 10));
 
       if (response.statusCode == 200) {
         final data = (json.decode(response.body) as List?) ?? [];
@@ -125,7 +125,7 @@ class EnhancedSportsDataService {
           'Ocp-Apim-Subscription-Key': ApiKeys.sportsDataIo,
           'Accept': 'application/json',
         },
-      ).timeout(Duration(seconds: 15));
+      ).timeout(const Duration(seconds: 15));
 
       if (response.statusCode == 200) {
         final data = (json.decode(response.body) as List?) ?? [];
@@ -158,7 +158,7 @@ class EnhancedSportsDataService {
           'Ocp-Apim-Subscription-Key': ApiKeys.sportsDataIo,
           'Accept': 'application/json',
         },
-      ).timeout(Duration(seconds: 10));
+      ).timeout(const Duration(seconds: 10));
 
       if (response.statusCode == 200) {
         final data = (json.decode(response.body) as List?) ?? [];
@@ -689,7 +689,7 @@ class EnhancedSportsDataService {
       final response = await http.get(
         Uri.parse('$_espnBaseUrl/teams/$teamKey/roster'),
         headers: {'Accept': 'application/json'},
-      ).timeout(Duration(seconds: 10));
+      ).timeout(const Duration(seconds: 10));
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
@@ -735,7 +735,7 @@ class EnhancedSportsDataService {
     final expiredKeys = <String>[];
 
     _cacheTimestamps.forEach((key, timestamp) {
-      if (now.difference(timestamp) > Duration(hours: 24)) {
+      if (now.difference(timestamp) > const Duration(hours: 24)) {
         expiredKeys.add(key);
       }
     });

@@ -49,21 +49,21 @@ class BracketTab extends StatelessWidget {
         }
 
         if (state.bracket == null) {
-          return Center(
+          return const Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.account_tree, size: 64, color: Colors.white38),
-                const SizedBox(height: 16),
-                const Text(
+                SizedBox(height: 16),
+                Text(
                   'Knockout bracket not available yet',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white60,
                   ),
                 ),
-                const SizedBox(height: 8),
-                const Text(
+                SizedBox(height: 8),
+                Text(
                   'Check back after group stage',
                   style: TextStyle(
                     fontSize: 14,
@@ -99,7 +99,7 @@ class BracketTab extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Icon(Icons.play_arrow, color: AppTheme.secondaryEmerald),
+                        const Icon(Icons.play_arrow, color: AppTheme.secondaryEmerald),
                         const SizedBox(width: 8),
                         Text(
                           'Current: ${_getStageName(state.currentActiveRound!)}',

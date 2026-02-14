@@ -11,13 +11,13 @@ class MemberAvatarRow extends StatelessWidget {
   final VoidCallback? onTap;
 
   const MemberAvatarRow({
-    Key? key,
+    super.key,
     required this.members,
     this.maxDisplay = 5,
     this.avatarSize = 32,
     this.overlap = 8,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -167,13 +167,13 @@ class MemberAvatar extends StatelessWidget {
   final bool isOnline;
 
   const MemberAvatar({
-    Key? key,
+    super.key,
     required this.member,
     this.size = 40,
     this.showRoleBadge = false,
     this.showOnlineStatus = false,
     this.isOnline = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

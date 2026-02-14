@@ -278,7 +278,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
       MaterialPageRoute(
         builder: (_) => BlocProvider(
           create: (context) => di.sl<WatchPartyBloc>()
-            ..add(LoadPublicWatchPartiesEvent()),
+            ..add(const LoadPublicWatchPartiesEvent()),
           child: const MyWatchPartiesScreen(),
         ),
       ),

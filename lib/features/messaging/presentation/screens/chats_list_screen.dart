@@ -113,7 +113,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             _buildTabBar(),
             Expanded(
               child: _isLoading
-                  ? Center(
+                  ? const Center(
                       child: CircularProgressIndicator(
                           color: Colors.white,
                       ),
@@ -192,7 +192,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
         decoration: InputDecoration(
           hintText: 'Search messages...',
           hintStyle: const TextStyle(color: Colors.white54),
-          prefixIcon: Icon(Icons.search, color: AppTheme.primaryVibrantOrange),
+          prefixIcon: const Icon(Icons.search, color: AppTheme.primaryVibrantOrange),
           suffixIcon: _searchQuery.isNotEmpty
               ? IconButton(
                   onPressed: () {
@@ -213,7 +213,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
-            borderSide: BorderSide(color: AppTheme.primaryVibrantOrange, width: 2),
+            borderSide: const BorderSide(color: AppTheme.primaryVibrantOrange, width: 2),
           ),
         ),
       ),
@@ -537,10 +537,10 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
     // For now, just show a message - archive functionality can be implemented later
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: const Text('Archive feature coming soon!'),
+        const SnackBar(
+          content: Text('Archive feature coming soon!'),
           backgroundColor: AppTheme.secondaryEmerald,
-          duration: const Duration(seconds: 2),
+          duration: Duration(seconds: 2),
         ),
       );
     }
@@ -552,10 +552,10 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
       
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text('Marked as read'),
+          const SnackBar(
+            content: Text('Marked as read'),
             backgroundColor: AppTheme.primaryElectricBlue,
-            duration: const Duration(seconds: 2),
+            duration: Duration(seconds: 2),
           ),
         );
       }

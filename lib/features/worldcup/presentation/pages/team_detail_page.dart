@@ -326,11 +326,11 @@ class TeamDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               children: [
                 Icon(Icons.history, color: AppTheme.accentGold),
-                const SizedBox(width: 8),
-                const Text(
+                SizedBox(width: 8),
+                Text(
                   'World Cup History',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,

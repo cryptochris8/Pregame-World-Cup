@@ -71,7 +71,7 @@ class _NotificationsScreenState extends State<NotificationsScreen>
       if (mounted) {
         setState(() => _isLoading = false);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Failed to load notifications'),
             backgroundColor: AppTheme.errorColor,
           ),
@@ -437,8 +437,8 @@ class _NotificationsScreenState extends State<NotificationsScreen>
       
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text('Notification deleted'),
+          const SnackBar(
+            content: Text('Notification deleted'),
             backgroundColor: AppTheme.successColor,
           ),
         );

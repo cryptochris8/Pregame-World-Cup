@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../core/services/logging_service.dart';
-import '../schedule/presentation/screens/upcoming_games_screen.dart';
-import '../schedule/presentation/screens/enhanced_schedule_screen.dart';
 import '../social/presentation/screens/activity_feed_screen.dart';
 import '../messaging/presentation/screens/chats_list_screen.dart';
 import '../social/presentation/screens/notifications_screen.dart';
@@ -13,7 +10,6 @@ import '../social/presentation/screens/enhanced_friends_list_screen.dart';
 import '../social/presentation/screens/user_profile_screen.dart';
 import '../social/domain/services/notification_service.dart';
 import '../messaging/domain/services/messaging_service.dart';
-import '../auth/domain/services/auth_service.dart';
 import '../../config/app_theme.dart';
 
 // World Cup 2026

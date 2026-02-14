@@ -99,7 +99,7 @@ void main() {
             .thenAnswer((_) async => testGroups);
         return cubit;
       },
-      seed: () => GroupStandingsState(
+      seed: () => const GroupStandingsState(
         groups: [],
         isLoading: false,
       ),

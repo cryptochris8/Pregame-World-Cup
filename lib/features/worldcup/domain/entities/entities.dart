@@ -2,6 +2,7 @@
 ///
 /// This barrel file exports all World Cup-specific entities for the
 /// FIFA World Cup 2026 tournament.
+library;
 
 export 'national_team.dart';
 export 'world_cup_match.dart';

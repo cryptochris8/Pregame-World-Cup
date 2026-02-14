@@ -456,7 +456,7 @@ void main() {
         userId: 'user_1',
         displayName: 'Test User',
         email: 'test@example.com',
-        favoriteTeams: ['USA', 'BRA'],
+        favoriteTeams: const ['USA', 'BRA'],
       );
 
       expect(profile.userId, equals('user_1'));
@@ -815,7 +815,7 @@ void main() {
     test('block connection follows expected ID pattern', () {
       const userId = 'user_1';
       const blockedUserId = 'user_2';
-      final expectedId = '${userId}_blocks_$blockedUserId';
+      const expectedId = '${userId}_blocks_$blockedUserId';
 
       final blockConnection = SocialConnection(
         connectionId: expectedId,

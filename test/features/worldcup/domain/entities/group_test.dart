@@ -373,10 +373,10 @@ void main() {
     group('qualifyingTeams', () {
       test('returns teams that have qualified', () {
         final standings = [
-          GroupTeamStanding(teamCode: 'A', teamName: 'Team A', position: 1, hasQualified: true),
-          GroupTeamStanding(teamCode: 'B', teamName: 'Team B', position: 2, hasQualified: true),
-          GroupTeamStanding(teamCode: 'C', teamName: 'Team C', position: 3, hasQualified: false),
-          GroupTeamStanding(teamCode: 'D', teamName: 'Team D', position: 4, hasQualified: false),
+          const GroupTeamStanding(teamCode: 'A', teamName: 'Team A', position: 1, hasQualified: true),
+          const GroupTeamStanding(teamCode: 'B', teamName: 'Team B', position: 2, hasQualified: true),
+          const GroupTeamStanding(teamCode: 'C', teamName: 'Team C', position: 3, hasQualified: false),
+          const GroupTeamStanding(teamCode: 'D', teamName: 'Team D', position: 4, hasQualified: false),
         ];
         final group = createTestGroup(standings: standings);
 
@@ -388,8 +388,8 @@ void main() {
 
       test('returns empty list when no teams qualified', () {
         final standings = [
-          GroupTeamStanding(teamCode: 'A', teamName: 'Team A', position: 1),
-          GroupTeamStanding(teamCode: 'B', teamName: 'Team B', position: 2),
+          const GroupTeamStanding(teamCode: 'A', teamName: 'Team A', position: 1),
+          const GroupTeamStanding(teamCode: 'B', teamName: 'Team B', position: 2),
         ];
         final group = createTestGroup(standings: standings);
 
@@ -512,10 +512,10 @@ void main() {
     group('applyTiebreakers', () {
       test('sorts teams by points then goal difference', () {
         final standings = [
-          GroupTeamStanding(teamCode: 'A', teamName: 'A', position: 0, points: 6, goalsFor: 4, goalsAgainst: 4),
-          GroupTeamStanding(teamCode: 'B', teamName: 'B', position: 0, points: 6, goalsFor: 8, goalsAgainst: 2),
-          GroupTeamStanding(teamCode: 'C', teamName: 'C', position: 0, points: 9, goalsFor: 5, goalsAgainst: 1),
-          GroupTeamStanding(teamCode: 'D', teamName: 'D', position: 0, points: 0, goalsFor: 1, goalsAgainst: 8),
+          const GroupTeamStanding(teamCode: 'A', teamName: 'A', position: 0, points: 6, goalsFor: 4, goalsAgainst: 4),
+          const GroupTeamStanding(teamCode: 'B', teamName: 'B', position: 0, points: 6, goalsFor: 8, goalsAgainst: 2),
+          const GroupTeamStanding(teamCode: 'C', teamName: 'C', position: 0, points: 9, goalsFor: 5, goalsAgainst: 1),
+          const GroupTeamStanding(teamCode: 'D', teamName: 'D', position: 0, points: 0, goalsFor: 1, goalsAgainst: 8),
         ];
 
         final sorted = WorldCupGroup.applyTiebreakers(standings);
@@ -534,8 +534,8 @@ void main() {
 
       test('uses goals scored as secondary tiebreaker', () {
         final standings = [
-          GroupTeamStanding(teamCode: 'A', teamName: 'A', position: 0, points: 6, goalsFor: 5, goalsAgainst: 3),
-          GroupTeamStanding(teamCode: 'B', teamName: 'B', position: 0, points: 6, goalsFor: 8, goalsAgainst: 6),
+          const GroupTeamStanding(teamCode: 'A', teamName: 'A', position: 0, points: 6, goalsFor: 5, goalsAgainst: 3),
+          const GroupTeamStanding(teamCode: 'B', teamName: 'B', position: 0, points: 6, goalsFor: 8, goalsAgainst: 6),
         ];
 
         final sorted = WorldCupGroup.applyTiebreakers(standings);

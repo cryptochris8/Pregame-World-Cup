@@ -205,7 +205,7 @@ void main() {
             .thenAnswer((_) async => testBracket);
         return cubit;
       },
-      seed: () => BracketState(
+      seed: () => const BracketState(
         bracket: null,
         isLoading: false,
       ),

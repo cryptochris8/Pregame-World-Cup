@@ -108,8 +108,8 @@ class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget>
           // Header
           Container(
             padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: [
@@ -117,7 +117,7 @@ class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget>
                   Color(0xFF3B82F6), // Blue
                 ],
               ),
-              borderRadius: const BorderRadius.only(
+              borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(16),
                 topRight: Radius.circular(16),
               ),

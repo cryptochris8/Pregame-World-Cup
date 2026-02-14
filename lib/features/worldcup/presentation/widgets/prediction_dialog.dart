@@ -391,7 +391,7 @@ class _ScoreSelector extends StatelessWidget {
   const _ScoreSelector({
     required this.value,
     required this.onChanged,
-    this.maxValue = 10,
+    this.maxValue = 20,
   });
 
   @override

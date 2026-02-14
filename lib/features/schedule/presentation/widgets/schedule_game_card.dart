@@ -257,7 +257,7 @@ class ScheduleGameCard extends StatelessWidget {
                 ),
               ],
             ),
-            child: Row(
+            child: const Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(
@@ -265,8 +265,8 @@ class ScheduleGameCard extends StatelessWidget {
                   size: 16,
                   color: Colors.white,
                 ),
-                const SizedBox(width: 6),
-                const Text(
+                SizedBox(width: 6),
+                Text(
                   'Venues',
                   style: TextStyle(
                     fontSize: 15,

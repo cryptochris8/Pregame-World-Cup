@@ -49,9 +49,9 @@ void main() {
           status: MessageStatus.read,
           replyToMessageId: 'msg_0',
           reactions: reactions,
-          metadata: {'key': 'value'},
+          metadata: const {'key': 'value'},
           isDeleted: true,
-          readBy: ['user_2'],
+          readBy: const ['user_2'],
         );
 
         expect(message.senderImageUrl, equals('https://example.com/avatar.jpg'));
@@ -137,7 +137,7 @@ void main() {
           senderName: 'Test User',
           audioUrl: 'https://example.com/audio.mp3',
           durationSeconds: 30,
-          waveformData: [0.1, 0.5, 0.8, 0.3],
+          waveformData: const [0.1, 0.5, 0.8, 0.3],
         );
 
         expect(message.type, equals(MessageType.voice));
@@ -263,7 +263,7 @@ void main() {
           type: MessageType.text,
           createdAt: DateTime.now(),
           status: MessageStatus.sent,
-          readBy: ['user_2'],
+          readBy: const ['user_2'],
         );
 
         final read = message.markAsRead('user_2');
@@ -486,8 +486,8 @@ void main() {
           type: MessageType.text,
           createdAt: now,
           status: MessageStatus.sent,
-          metadata: {'key': 'value'},
-          readBy: ['user_2'],
+          metadata: const {'key': 'value'},
+          readBy: const ['user_2'],
         );
 
         final json = message.toJson();
@@ -543,7 +543,7 @@ void main() {
           type: MessageType.image,
           createdAt: now,
           status: MessageStatus.delivered,
-          metadata: {'imageUrl': 'https://example.com/image.jpg'},
+          metadata: const {'imageUrl': 'https://example.com/image.jpg'},
           reactions: [
             MessageReaction(userId: 'user_2', emoji: '👍', createdAt: now),
           ],

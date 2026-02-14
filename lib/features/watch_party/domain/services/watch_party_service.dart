@@ -11,7 +11,6 @@ import '../../../../core/services/performance_monitor.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/analytics_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
-import '../../../social/domain/services/social_service.dart';
 import '../../../moderation/moderation.dart';
 
 class WatchPartyService {

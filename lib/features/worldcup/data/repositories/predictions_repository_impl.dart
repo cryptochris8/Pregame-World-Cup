@@ -206,7 +206,7 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
       // Find matching completed match
       final match = completedMatches.firstWhere(
         (m) => m.matchId == prediction.matchId && m.status == MatchStatus.completed,
-        orElse: () => WorldCupMatch(
+        orElse: () => const WorldCupMatch(
           matchId: '',
           matchNumber: 0,
           stage: MatchStage.groupStage,

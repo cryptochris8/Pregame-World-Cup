@@ -1,6 +1,7 @@
 /// World Cup 2026 Pages
 ///
 /// This barrel file exports all World Cup page screens.
+library;
 
 export 'match_list_page.dart';
 export 'match_detail_page.dart';

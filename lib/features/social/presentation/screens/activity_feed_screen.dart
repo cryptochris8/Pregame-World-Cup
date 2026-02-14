@@ -5,7 +5,6 @@ import '../../domain/services/activity_feed_service.dart';
 import '../widgets/activity_feed_item_widget.dart';
 import '../widgets/create_activity_bottom_sheet.dart';
 import '../../../../config/app_theme.dart';
-import '../../../../core/animations/animated_button.dart';
 import '../../../../core/utils/team_logo_helper.dart';
 import 'package:share_plus/share_plus.dart';
 import 'user_profile_screen.dart';
@@ -217,7 +216,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
   Widget _buildBody() {
     if (_isLoading) {
-      return Center(
+      return const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -225,8 +224,8 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
               valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
               strokeWidth: 3,
             ),
-            const SizedBox(height: 16),
-            const Text(
+            SizedBox(height: 16),
+            Text(
               'Loading activities...',
               style: TextStyle(
                 fontSize: 16,
@@ -283,7 +282,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.dynamic_feed,
             size: 80,
             color: AppTheme.primaryOrange,

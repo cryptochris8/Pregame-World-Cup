@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../domain/services/messaging_service.dart';
@@ -607,7 +606,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
   }) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: SizedBox(
         width: 60,
         child: Column(
           children: [

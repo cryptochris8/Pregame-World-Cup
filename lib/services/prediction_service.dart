@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
 import '../features/schedule/domain/entities/game_prediction.dart';
 import '../features/schedule/domain/entities/game_schedule.dart';
 

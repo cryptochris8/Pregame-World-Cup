@@ -66,7 +66,7 @@ void main() {
     });
 
     test('creates cached venue data with complex JSON', () {
-      final complexJson = '''
+      const complexJson = '''
       {
         "venues": [
           {"id": "1", "name": "Sports Bar", "rating": 4.5},
@@ -240,7 +240,7 @@ void main() {
     });
 
     test('handles long addresses', () {
-      final longAddress = '123 Very Long Street Name, Suite 456, Building A, '
+      const longAddress = '123 Very Long Street Name, Suite 456, Building A, '
           'Some Really Long City Name, State of Georgia, '
           'United States of America, 30601-1234';
 

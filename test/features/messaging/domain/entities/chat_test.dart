@@ -10,8 +10,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
         );
 
@@ -28,16 +28,16 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2', 'user_3'],
-          adminIds: ['user_1'],
+          participantIds: const ['user_1', 'user_2', 'user_3'],
+          adminIds: const ['user_1'],
           name: 'Test Group',
           description: 'A test group chat',
           imageUrl: 'https://example.com/group.jpg',
           createdAt: now,
           lastMessageContent: 'Last message',
           lastMessageTime: now,
-          unreadCounts: {'user_2': 5},
-          settings: {'muted': true},
+          unreadCounts: const {'user_2': 5},
+          settings: const {'muted': true},
           createdBy: 'user_1',
         );
 
@@ -86,7 +86,7 @@ void main() {
         final chat = Chat.group(
           name: 'Game Day Crew',
           creatorId: 'user_1',
-          participantIds: ['user_2', 'user_3'],
+          participantIds: const ['user_2', 'user_3'],
           description: 'Friends for game day',
           imageUrl: 'https://example.com/group.jpg',
         );
@@ -106,7 +106,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_1', 'user_2', 'user_3'],
+          participantIds: const ['user_1', 'user_2', 'user_3'],
         );
 
         expect(chat.participantIds.where((id) => id == 'user_1').length, equals(1));
@@ -116,7 +116,7 @@ void main() {
         final chat = Chat.team(
           teamName: 'Georgia Bulldogs Fan Group',
           creatorId: 'user_1',
-          memberIds: ['user_2', 'user_3', 'user_4'],
+          memberIds: const ['user_2', 'user_3', 'user_4'],
           description: 'Go Dawgs!',
         );
 
@@ -134,7 +134,7 @@ void main() {
         final chat = Chat.group(
           name: 'Old Name',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.copyWith(name: 'New Name');
@@ -149,7 +149,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.copyWith(
@@ -173,7 +173,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final message = Message.text(
@@ -195,7 +195,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final message = Message.image(
@@ -216,7 +216,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.incrementUnreadCount('user_2');
@@ -229,8 +229,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: ['user_1'],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const ['user_1'],
           createdAt: now,
           lastMessageSenderId: 'user_1',
         );
@@ -245,10 +245,10 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: ['user_1'],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const ['user_1'],
           createdAt: now,
-          unreadCounts: {'user_2': 5},
+          unreadCounts: const {'user_2': 5},
         );
 
         final updated = chat.markAsRead('user_2');
@@ -262,10 +262,10 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
-          unreadCounts: {'user_2': 3},
+          unreadCounts: const {'user_2': 3},
         );
 
         expect(chat.hasUnreadMessages, isTrue);
@@ -277,7 +277,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.addParticipant('user_3');
@@ -291,7 +291,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.addParticipant('user_2');
@@ -304,8 +304,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2', 'user_3'],
-          adminIds: ['user_1', 'user_2'],
+          participantIds: const ['user_1', 'user_2', 'user_3'],
+          adminIds: const ['user_1', 'user_2'],
           createdAt: now,
         );
 
@@ -320,7 +320,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         expect(chat.isParticipant('user_1'), isTrue);
@@ -334,7 +334,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2', 'user_3'],
+          participantIds: const ['user_2', 'user_3'],
         );
 
         final updated = chat.addAdmin('user_2');
@@ -347,7 +347,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.addAdmin('user_3');
@@ -360,7 +360,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         final updated = chat.addAdmin('user_1');
@@ -373,8 +373,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: ['user_1', 'user_2'],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const ['user_1', 'user_2'],
           createdAt: now,
         );
 
@@ -389,7 +389,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test Group',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         expect(chat.isAdmin('user_1'), isTrue);
@@ -413,7 +413,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         expect(chat.isGroupChat, isTrue);
@@ -424,7 +424,7 @@ void main() {
         final chat = Chat.team(
           teamName: 'Georgia Fans',
           creatorId: 'user_1',
-          memberIds: ['user_2'],
+          memberIds: const ['user_2'],
         );
 
         expect(chat.isTeamChat, isTrue);
@@ -436,8 +436,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageContent: 'Hello!',
         );
@@ -447,12 +447,12 @@ void main() {
 
       test('lastMessagePreview truncates long messages', () {
         final now = DateTime.now();
-        final longMessage = 'This is a very long message that exceeds fifty characters and should be truncated';
+        const longMessage = 'This is a very long message that exceeds fifty characters and should be truncated';
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageContent: longMessage,
         );
@@ -465,7 +465,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         expect(chat.lastMessagePreview, equals('No messages yet'));
@@ -477,7 +477,7 @@ void main() {
         final chat = Chat.group(
           name: 'Test',
           creatorId: 'user_1',
-          participantIds: ['user_2'],
+          participantIds: const ['user_2'],
         );
 
         expect(chat.timeAgo, isEmpty);
@@ -488,8 +488,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageTime: now,
         );
@@ -502,8 +502,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageTime: now.subtract(const Duration(minutes: 15)),
         );
@@ -516,8 +516,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageTime: now.subtract(const Duration(hours: 3)),
         );
@@ -530,8 +530,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageTime: now.subtract(const Duration(days: 5)),
         );
@@ -545,8 +545,8 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
           lastMessageTime: oldDate,
         );
@@ -561,13 +561,13 @@ void main() {
         final chat = Chat(
           chatId: 'chat_1',
           type: ChatType.group,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: ['user_1'],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const ['user_1'],
           name: 'Test Group',
           description: 'A test group',
           createdAt: now,
           lastMessageContent: 'Hello!',
-          unreadCounts: {'user_2': 3},
+          unreadCounts: const {'user_2': 3},
           isActive: true,
           createdBy: 'user_1',
         );
@@ -616,14 +616,14 @@ void main() {
         final original = Chat(
           chatId: 'chat_1',
           type: ChatType.team,
-          participantIds: ['user_1', 'user_2', 'user_3'],
-          adminIds: ['user_1'],
+          participantIds: const ['user_1', 'user_2', 'user_3'],
+          adminIds: const ['user_1'],
           name: 'Team Chat',
           description: 'Go team!',
           createdAt: now,
           lastMessageContent: 'Score!',
           lastMessageTime: now,
-          unreadCounts: {'user_2': 1, 'user_3': 2},
+          unreadCounts: const {'user_2': 1, 'user_3': 2},
           isActive: true,
           createdBy: 'user_1',
         );
@@ -644,16 +644,16 @@ void main() {
         final chat1 = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
         );
 
         final chat2 = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
         );
 
@@ -665,16 +665,16 @@ void main() {
         final chat1 = Chat(
           chatId: 'chat_1',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
         );
 
         final chat2 = Chat(
           chatId: 'chat_2',
           type: ChatType.direct,
-          participantIds: ['user_1', 'user_2'],
-          adminIds: [],
+          participantIds: const ['user_1', 'user_2'],
+          adminIds: const [],
           createdAt: now,
         );
 

@@ -16,20 +16,20 @@ void main() {
 
   final emptyPreferences = UserPreferences.empty();
 
-  final preferencesWithTeam = const UserPreferences(
+  const preferencesWithTeam = UserPreferences(
     favoriteTeamCodes: ['USA'],
   );
 
-  final preferencesWithMatch = const UserPreferences(
+  const preferencesWithMatch = UserPreferences(
     favoriteMatchIds: ['match_1'],
   );
 
-  final preferencesWithBoth = const UserPreferences(
+  const preferencesWithBoth = UserPreferences(
     favoriteTeamCodes: ['USA', 'BRA'],
     favoriteMatchIds: ['match_1', 'match_2'],
   );
 
-  final updatedNotificationPreferences = const UserPreferences(
+  const updatedNotificationPreferences = UserPreferences(
     notifyFavoriteTeamMatches: false,
     notifyLiveUpdates: false,
     notifyGoals: true,
@@ -181,7 +181,7 @@ void main() {
             .thenAnswer((_) async => emptyPreferences);
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       ),
@@ -234,7 +234,7 @@ void main() {
                 ));
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       ),
@@ -285,7 +285,7 @@ void main() {
             .thenAnswer((_) async => emptyPreferences);
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       ),
@@ -310,7 +310,7 @@ void main() {
             .thenThrow(Exception('DB error'));
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       ),
@@ -362,7 +362,7 @@ void main() {
             .thenAnswer((_) async => emptyPreferences);
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithMatch,
         isLoading: false,
       ),
@@ -465,7 +465,7 @@ void main() {
             .thenAnswer((_) async => emptyPreferences);
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithMatch,
         isLoading: false,
       ),
@@ -491,7 +491,7 @@ void main() {
             .thenThrow(Exception('DB error'));
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithMatch,
         isLoading: false,
       ),
@@ -586,7 +586,7 @@ void main() {
     // 11. isTeamFavorite returns correct value
     // -------------------------------------------------------
     test('isTeamFavorite returns true for favorited team', () {
-      cubit.emit(FavoritesState(
+      cubit.emit(const FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       ));
@@ -595,7 +595,7 @@ void main() {
     });
 
     test('isTeamFavorite returns false for non-favorited team', () {
-      cubit.emit(FavoritesState(
+      cubit.emit(const FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       ));
@@ -616,7 +616,7 @@ void main() {
     // 12. isMatchFavorite returns correct value
     // -------------------------------------------------------
     test('isMatchFavorite returns true for favorited match', () {
-      cubit.emit(FavoritesState(
+      cubit.emit(const FavoritesState(
         preferences: preferencesWithMatch,
         isLoading: false,
       ));
@@ -625,7 +625,7 @@ void main() {
     });
 
     test('isMatchFavorite returns false for non-favorited match', () {
-      cubit.emit(FavoritesState(
+      cubit.emit(const FavoritesState(
         preferences: preferencesWithMatch,
         isLoading: false,
       ));
@@ -689,7 +689,7 @@ void main() {
             .thenThrow(Exception('DB error'));
         return cubit;
       },
-      seed: () => FavoritesState(
+      seed: () => const FavoritesState(
         preferences: preferencesWithBoth,
         isLoading: false,
       ),
@@ -920,7 +920,7 @@ void main() {
     // FavoritesState helper property tests
     // -------------------------------------------------------
     test('FavoritesState.hasFavorites returns true when teams exist', () {
-      final state = FavoritesState(
+      const state = FavoritesState(
         preferences: preferencesWithTeam,
         isLoading: false,
       );
@@ -928,7 +928,7 @@ void main() {
     });
 
     test('FavoritesState.hasFavorites returns true when matches exist', () {
-      final state = FavoritesState(
+      const state = FavoritesState(
         preferences: preferencesWithMatch,
         isLoading: false,
       );
@@ -944,7 +944,7 @@ void main() {
     });
 
     test('FavoritesState.favoriteTeamCount returns correct count', () {
-      final state = FavoritesState(
+      const state = FavoritesState(
         preferences: preferencesWithBoth,
         isLoading: false,
       );
@@ -952,7 +952,7 @@ void main() {
     });
 
     test('FavoritesState.favoriteMatchCount returns correct count', () {
-      final state = FavoritesState(
+      const state = FavoritesState(
         preferences: preferencesWithBoth,
         isLoading: false,
       );

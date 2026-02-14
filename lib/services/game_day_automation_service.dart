@@ -192,7 +192,7 @@ class GameDayAutomationService {
           'achieved_at': DateTime.now().toIso8601String(),
         },
         targetAudience: ['user_engagement'],
-        campaignId: 'milestone_${userId}_${milestoneType}',
+        campaignId: 'milestone_${userId}_$milestoneType',
       );
       
       LoggingService.info('🏆 Triggered user milestone automation: $milestoneType for user $userId', tag: _logTag);

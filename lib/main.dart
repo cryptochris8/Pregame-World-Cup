@@ -18,7 +18,6 @@ import 'features/auth/domain/services/auth_service.dart';
 import 'firebase_options.dart';
 import 'injection_container.dart' as di;
 import 'core/services/cache_service.dart';
-import './core/ai/services/ai_historical_knowledge_service.dart';
 import './core/ai/services/multi_provider_ai_service.dart';
 import 'core/entities/game_intelligence.dart';
 import 'config/app_theme.dart';
@@ -199,7 +198,7 @@ Future<void> main() async {
   // Step 7.6: AI Knowledge Base Initialization (Background)
   // DISABLED: Legacy AI knowledge base not needed for World Cup app
   // debugLog('🚀 INIT STEP 7.6: AI Knowledge Base (Background)');
-  // _initializeAIKnowledgeBaseBackground();
+
 
   // Step 7.7: AdMob Initialization (Background)
   debugLog('🚀 INIT STEP 7.7: AdMob Initialization (Background)');
@@ -224,7 +223,7 @@ Future<void> main() async {
   // Step 8: Launch App
   debugLog('🚀 INIT STEP 8: Launching App');
   try {
-    runApp(PregameApp());
+    runApp(const PregameApp());
     debugLog('✅ INIT STEP 8: App Launch - SUCCESS');
   } catch (e) {
     debugLog('❌ INIT STEP 8: App Launch - FAILED: $e');
@@ -247,7 +246,7 @@ void _initializeAppCheckBackground() async {
     // Use a timeout to prevent hanging
     await Future.any([
       FirebaseAppCheckService.initialize(),
-      Future.delayed(Duration(seconds: 10)), // 10 second timeout
+      Future.delayed(const Duration(seconds: 10)), // 10 second timeout
     ]);
 
     debugLog('✅ APP CHECK: Background initialization completed');
@@ -278,28 +277,6 @@ void _initializeAIServicesBackground() async {
     debugLog('⚠️ AI SERVICES: Background initialization failed: $e');
     if (DIAGNOSTIC_MODE) {
       debugLog('🔍 DIAGNOSTIC: AI Services failed but app will continue');
-    }
-  }
-}
-
-/// Initialize AI Knowledge Base in the background to build historical data
-void _initializeAIKnowledgeBaseBackground() async {
-  try {
-    debugLog('🧠 AI KNOWLEDGE: Starting background initialization');
-
-    // Delay is intentional: the knowledge base depends on AI services being initialized first
-    // (which run in _initializeAIServicesBackground). A 5-second delay provides a reasonable
-    // window for that initialization to complete before building the knowledge base.
-    await Future.delayed(Duration(seconds: 5));
-
-    // Initialize the AI knowledge base with historical data
-    await AIHistoricalKnowledgeService.instance.initializeKnowledgeBase();
-
-    debugLog('✅ AI KNOWLEDGE: Background initialization completed');
-  } catch (e) {
-    debugLog('⚠️ AI KNOWLEDGE: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('🔍 DIAGNOSTIC: AI Knowledge Base failed but app will continue');
     }
   }
 }
@@ -496,25 +473,6 @@ Future<void> _disableFirestoreOfflinePersistence() async {
     debugLog('⚠️ FIRESTORE: Error disabling offline persistence: $e');
     // Continue anyway - this is not critical for app functionality
     // The app doesn't actually store schedule data in Firestore anyway
-  }
-}
-
-/// Error handling wrapper for initialization steps
-Future<T?> _safeInitialize<T>(
-  String stepName,
-  Future<T> Function() initFunction,
-) async {
-  try {
-    debugLog('🚀 INIT: Starting $stepName');
-    final result = await initFunction();
-    debugLog('✅ INIT: $stepName - SUCCESS');
-    return result;
-  } catch (e) {
-    debugLog('❌ INIT: $stepName - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('🔍 DIAGNOSTIC: $stepName failed - continuing with degraded functionality');
-    }
-    return null;
   }
 }
 

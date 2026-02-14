@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../services/logging_service.dart';
@@ -118,7 +117,7 @@ class GamePredictionService {
         },
       );
 
-      LoggingService.info('Created user prediction: ${predictedOutcome} (${confidence})', tag: 'GamePrediction');
+      LoggingService.info('Created user prediction: $predictedOutcome ($confidence)', tag: 'GamePrediction');
       
       return prediction;
     } catch (e) {

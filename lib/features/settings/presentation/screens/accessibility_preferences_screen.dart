@@ -153,7 +153,7 @@ class _AccessibilityPreferencesScreenState
       ),
       child: Column(
         children: [
-          Icon(
+          const Icon(
             Icons.accessibility_new,
             size: 48,
             color: Colors.orange,
@@ -288,7 +288,7 @@ class _AccessibilityPreferencesScreenState
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Text Scale',
                     style: TextStyle(
                       color: Colors.white,
@@ -307,7 +307,7 @@ class _AccessibilityPreferencesScreenState
                     ),
                     child: Text(
                       scaleLabel,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.orange,
                         fontWeight: FontWeight.bold,
                       ),
@@ -518,7 +518,7 @@ class _AccessibilityPreferencesScreenState
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'System Settings',
                   style: TextStyle(
                     color: Colors.white,
@@ -578,7 +578,7 @@ class _AccessibilityPreferencesScreenState
                 const SizedBox(width: 12),
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.orange,
                     fontWeight: FontWeight.bold,
                     fontSize: 16,

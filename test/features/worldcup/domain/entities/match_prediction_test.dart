@@ -218,7 +218,7 @@ void main() {
     });
 
     test('correctPercentage calculates correctly', () {
-      final stats = PredictionStats(
+      const stats = PredictionStats(
         totalPredictions: 10,
         correctResults: 6,
         pendingPredictions: 2,
@@ -229,7 +229,7 @@ void main() {
     });
 
     test('correctPercentage returns 0 when no evaluated predictions', () {
-      final stats = PredictionStats(
+      const stats = PredictionStats(
         totalPredictions: 5,
         correctResults: 0,
         pendingPredictions: 5,
@@ -239,7 +239,7 @@ void main() {
     });
 
     test('averagePoints calculates correctly', () {
-      final stats = PredictionStats(
+      const stats = PredictionStats(
         totalPredictions: 10,
         totalPoints: 12,
         pendingPredictions: 2,

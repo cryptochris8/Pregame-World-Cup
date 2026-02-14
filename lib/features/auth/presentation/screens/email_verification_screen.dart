@@ -218,7 +218,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                         const SizedBox(height: 16),
 
                         // Description
-                        Text(
+                        const Text(
                           "We've sent a verification link to:",
                           style: TextStyle(
                             fontSize: 16,
@@ -276,7 +276,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                               color: AppTheme.infoColor.withOpacity(0.3),
                             ),
                           ),
-                          child: Column(
+                          child: const Column(
                             children: [
                               Row(
                                 children: [
@@ -285,8 +285,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                                     color: AppTheme.infoColor,
                                     size: 20,
                                   ),
-                                  const SizedBox(width: 8),
-                                  const Expanded(
+                                  SizedBox(width: 8),
+                                  Expanded(
                                     child: Text(
                                       'Click the link in your email to verify your account.',
                                       style: TextStyle(
@@ -297,7 +297,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 8),
+                              SizedBox(height: 8),
                               Text(
                                 "Check your spam folder if you don't see it.",
                                 style: TextStyle(
@@ -400,8 +400,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                             ),
                           ),
                           child: RichText(
-                            text: TextSpan(
-                              style: const TextStyle(fontSize: 14),
+                            text: const TextSpan(
+                              style: TextStyle(fontSize: 14),
                               children: [
                                 TextSpan(
                                   text: 'Wrong email? ',
@@ -410,7 +410,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-                                const TextSpan(
+                                TextSpan(
                                   text: 'Sign Out',
                                   style: TextStyle(
                                     color: AppTheme.accentGold,
@@ -440,7 +440,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                         ),
                       ),
                       const SizedBox(width: 8),
-                      Text(
+                      const Text(
                         'Auto-checking verification status...',
                         style: TextStyle(
                           fontSize: 12,

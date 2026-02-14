@@ -118,11 +118,11 @@ class AIHistoricalAnalysisTabWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          const Row(
             children: [
-              const Icon(Icons.psychology, color: Colors.purple, size: 20),
-              const SizedBox(width: 8),
-              const Text(
+              Icon(Icons.psychology, color: Colors.purple, size: 20),
+              SizedBox(width: 8),
+              Text(
                 'AI Historical Analysis',
                 style: TextStyle(
                   fontSize: 18,

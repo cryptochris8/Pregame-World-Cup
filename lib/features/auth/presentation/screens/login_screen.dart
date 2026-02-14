@@ -122,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 AppTheme.primaryOrange,
                               ],
                             ).createShader(bounds),
-                            child: Text(
+                            child: const Text(
                               'PREGAME',
                               style: TextStyle(
                                 fontSize: 32,
@@ -133,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          Text(
+                          const Text(
                             'Where Sports Fans Connect',
                             style: TextStyle(
                               fontSize: 16,
@@ -183,10 +183,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: const TextStyle(color: AppTheme.textWhite),
                             decoration: InputDecoration(
                               labelText: 'Email',
-                              labelStyle: TextStyle(color: AppTheme.textSecondary),
+                              labelStyle: const TextStyle(color: AppTheme.textSecondary),
                               hintText: 'Enter your email',
-                              hintStyle: TextStyle(color: AppTheme.textTertiary),
-                              prefixIcon: Icon(
+                              hintStyle: const TextStyle(color: AppTheme.textTertiary),
+                              prefixIcon: const Icon(
                                 Icons.email_rounded,
                                 color: AppTheme.primaryOrange,
                               ),
@@ -204,7 +204,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16),
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: AppTheme.primaryOrange,
                                   width: 2,
                                 ),
@@ -226,10 +226,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: const TextStyle(color: AppTheme.textWhite),
                             decoration: InputDecoration(
                               labelText: 'Password',
-                              labelStyle: TextStyle(color: AppTheme.textSecondary),
+                              labelStyle: const TextStyle(color: AppTheme.textSecondary),
                               hintText: 'Enter your password',
-                              hintStyle: TextStyle(color: AppTheme.textTertiary),
-                              prefixIcon: Icon(
+                              hintStyle: const TextStyle(color: AppTheme.textTertiary),
+                              prefixIcon: const Icon(
                                 Icons.lock_rounded,
                                 color: AppTheme.primaryOrange,
                               ),
@@ -247,7 +247,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16),
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: AppTheme.primaryOrange,
                                   width: 2,
                                 ),
@@ -276,7 +276,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               child: Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.error_outline,
                                     color: AppTheme.errorColor,
                                     size: 20,
@@ -285,7 +285,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   Expanded(
                                     child: Text(
                                       _errorMessage!,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         color: AppTheme.errorColor,
                                         fontSize: 14,
                                         fontWeight: FontWeight.w500,
@@ -356,7 +356,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     text: _isLoginMode
                                         ? "Don't have an account? "
                                         : "Already have an account? ",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: AppTheme.textSecondary,
                                       fontWeight: FontWeight.w500,
                                     ),

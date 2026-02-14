@@ -1,5 +1,3 @@
-import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:pregame_world_cup/core/services/cache_service.dart';
 import 'package:pregame_world_cup/core/services/logging_service.dart';
 import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedule.dart';

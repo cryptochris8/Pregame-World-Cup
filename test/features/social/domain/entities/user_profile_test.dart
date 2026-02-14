@@ -34,7 +34,7 @@ void main() {
         final profile = UserProfile.create(
           userId: 'user_003',
           displayName: 'Fan',
-          favoriteTeams: ['Alabama', 'Georgia'],
+          favoriteTeams: const ['Alabama', 'Georgia'],
         );
 
         expect(profile.favoriteTeams, contains('Alabama'));
@@ -516,7 +516,7 @@ UserProfile _createFullProfile() {
     email: 'full@example.com',
     profileImageUrl: 'https://example.com/photo.jpg',
     bio: 'I am a huge football fan!',
-    favoriteTeams: ['Alabama', 'Georgia', 'LSU'],
+    favoriteTeams: const ['Alabama', 'Georgia', 'LSU'],
     homeLocation: 'Atlanta, GA',
     preferences: const UserPreferences(
       maxTravelDistance: 10,
@@ -530,7 +530,7 @@ UserProfile _createFullProfile() {
     createdAt: now.subtract(const Duration(days: 365)),
     updatedAt: now,
     privacySettings: const UserPrivacySettings(),
-    badges: ['verified', 'super_fan'],
+    badges: const ['verified', 'super_fan'],
     level: 25,
     experiencePoints: 5000,
     isOnline: true,

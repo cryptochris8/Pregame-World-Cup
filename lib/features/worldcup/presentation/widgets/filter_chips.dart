@@ -573,9 +573,9 @@ class _DatePickerStripState extends State<DatePickerStrip> {
     final endMonth = DateFormat('MMM').format(end);
 
     if (startMonth == endMonth) {
-      return '${startMonth} ${start.day} - ${end.day}';
+      return '$startMonth ${start.day} - ${end.day}';
     } else {
-      return '${startMonth} ${start.day} - ${endMonth} ${end.day}';
+      return '$startMonth ${start.day} - $endMonth ${end.day}';
     }
   }
 

@@ -426,9 +426,9 @@ class _PredictionLeaderboardScreenState extends State<PredictionLeaderboardScree
               _buildStatRow('Longest Streak', stats.longestStreak.toString()),
               _buildStatRow('Points per Prediction', 
                   stats.totalPredictions > 0 
-                      ? '${(stats.totalPoints / stats.totalPredictions).toStringAsFixed(1)}'
+                      ? (stats.totalPoints / stats.totalPredictions).toStringAsFixed(1)
                       : '0.0'),
-              _buildStatRow('Current Rank', stats.rank > 0 ? '#' + stats.rank.toString() : 'Unranked'),
+              _buildStatRow('Current Rank', stats.rank > 0 ? '#${stats.rank}' : 'Unranked'),
             ],
           ),
         ],

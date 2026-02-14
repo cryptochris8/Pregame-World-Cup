@@ -11,10 +11,10 @@ class VenueIntelligenceDashboard extends StatefulWidget {
   final String venueName;
 
   const VenueIntelligenceDashboard({
-    Key? key,
+    super.key,
     required this.venueId,
     required this.venueName,
-  }) : super(key: key);
+  });
 
   @override
   State<VenueIntelligenceDashboard> createState() => _VenueIntelligenceDashboardState();
@@ -187,7 +187,7 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
             if (_upcomingGames.isEmpty)
               _buildNoGamesCard()
             else
-              ..._upcomingGames.map((game) => _buildSimpleGameCard(game)).toList(),
+              ..._upcomingGames.map((game) => _buildSimpleGameCard(game)),
           ],
         ),
       ),
@@ -359,17 +359,17 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
   }
 
   Widget _buildNoGamesCard() {
-    return Card(
-      color: const Color(0xFF1E293B),
+    return const Card(
+      color: Color(0xFF1E293B),
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: EdgeInsets.all(24),
         child: Column(
           children: [
-            const Icon(Icons.sports_soccer, size: 64, color: Colors.white38),
-            const SizedBox(height: 16),
-            const Text('No upcoming games found', style: TextStyle(color: Colors.white70, fontSize: 16, fontWeight: FontWeight.bold)),
-            const SizedBox(height: 8),
-            const Text('Game intelligence will appear here when upcoming games are scheduled.', style: TextStyle(color: Colors.white54, fontSize: 14), textAlign: TextAlign.center),
+            Icon(Icons.sports_soccer, size: 64, color: Colors.white38),
+            SizedBox(height: 16),
+            Text('No upcoming games found', style: TextStyle(color: Colors.white70, fontSize: 16, fontWeight: FontWeight.bold)),
+            SizedBox(height: 8),
+            Text('Game intelligence will appear here when upcoming games are scheduled.', style: TextStyle(color: Colors.white54, fontSize: 14), textAlign: TextAlign.center),
           ],
         ),
       ),

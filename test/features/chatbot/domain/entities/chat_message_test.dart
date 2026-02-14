@@ -92,7 +92,7 @@ void main() {
       });
 
       test('handles special characters', () {
-        final specialText = 'What\u0027s the score? & how\u0027s the weather?';
+        const specialText = 'What\u0027s the score? & how\u0027s the weather?';
         final message = ChatMessage(
           text: specialText,
           type: ChatMessageType.user,
@@ -103,7 +103,7 @@ void main() {
       });
 
       test('handles newlines', () {
-        final multilineText = 'Line 1\nLine 2\nLine 3';
+        const multilineText = 'Line 1\nLine 2\nLine 3';
         final message = ChatMessage(
           text: multilineText,
           type: ChatMessageType.bot,
@@ -114,7 +114,7 @@ void main() {
       });
 
       test('handles unicode and emojis', () {
-        final emojiText = 'Go Dawgs! 🏈🐶';
+        const emojiText = 'Go Dawgs! 🏈🐶';
         final message = ChatMessage(
           text: emojiText,
           type: ChatMessageType.user,

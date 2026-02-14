@@ -116,7 +116,7 @@ void main() {
             awayTeamName: 'Argentina',
           ),
         ];
-        final stats = PredictionStats(
+        const stats = PredictionStats(
           totalPredictions: 2,
           correctResults: 0,
           exactScores: 0,

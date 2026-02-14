@@ -176,22 +176,22 @@ void main() {
 
     group('Stage parsing', () {
       test('parses all valid stage strings', () {
-        expect(BracketSlot.fromMap({'stage': 'roundOf32', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
+        expect(BracketSlot.fromMap(const {'stage': 'roundOf32', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
             equals(MatchStage.roundOf32));
-        expect(BracketSlot.fromMap({'stage': 'roundOf16', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
+        expect(BracketSlot.fromMap(const {'stage': 'roundOf16', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
             equals(MatchStage.roundOf16));
-        expect(BracketSlot.fromMap({'stage': 'quarterFinal', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
+        expect(BracketSlot.fromMap(const {'stage': 'quarterFinal', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
             equals(MatchStage.quarterFinal));
-        expect(BracketSlot.fromMap({'stage': 'semiFinal', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
+        expect(BracketSlot.fromMap(const {'stage': 'semiFinal', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
             equals(MatchStage.semiFinal));
-        expect(BracketSlot.fromMap({'stage': 'thirdPlace', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
+        expect(BracketSlot.fromMap(const {'stage': 'thirdPlace', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
             equals(MatchStage.thirdPlace));
-        expect(BracketSlot.fromMap({'stage': 'final_', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
+        expect(BracketSlot.fromMap(const {'stage': 'final_', 'slotId': '', 'matchNumberInStage': 0, 'teamNameOrPlaceholder': ''}).stage,
             equals(MatchStage.final_));
       });
 
       test('defaults to roundOf32 for unknown stage', () {
-        final slot = BracketSlot.fromMap({
+        final slot = BracketSlot.fromMap(const {
           'stage': 'unknown',
           'slotId': '',
           'matchNumberInStage': 0,
@@ -346,14 +346,14 @@ void main() {
       });
 
       test('penalty score getters', () {
-        final homeSlot = BracketSlot(
+        const homeSlot = BracketSlot(
           slotId: 'home',
           stage: MatchStage.roundOf16,
           matchNumberInStage: 1,
           teamNameOrPlaceholder: 'USA',
           penaltyScore: 4,
         );
-        final awaySlot = BracketSlot(
+        const awaySlot = BracketSlot(
           slotId: 'away',
           stage: MatchStage.roundOf16,
           matchNumberInStage: 1,
@@ -597,13 +597,13 @@ void main() {
           matchNumber: 89,
           stage: MatchStage.roundOf16,
           matchNumberInStage: 1,
-          homeSlot: BracketSlot(
+          homeSlot: const BracketSlot(
             slotId: 'home',
             stage: MatchStage.roundOf16,
             matchNumberInStage: 1,
             teamNameOrPlaceholder: 'TBD',
           ),
-          awaySlot: BracketSlot(
+          awaySlot: const BracketSlot(
             slotId: 'away',
             stage: MatchStage.roundOf16,
             matchNumberInStage: 1,
