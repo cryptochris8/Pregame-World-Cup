@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
+import '../../domain/services/messaging_chat_settings_service.dart';
 
 /// Bottom sheet that displays chat information including name, description,
 /// creation date, and a list of members with admin controls.

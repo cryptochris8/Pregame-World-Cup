@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../../config/api_keys.dart';
+import '../../../../config/api_keys.dart';
 
 /// Enhanced place entity with detailed venue information and user reviews
 class EnhancedPlace {

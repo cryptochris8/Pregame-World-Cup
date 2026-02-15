@@ -153,7 +153,9 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       case FriendFilter.mutual:
         filtered = filtered.where((friend) {
           final connection = _friendConnectionMap[friend.userId];
-          return connection != null && connection.mutualFriends.isNotEmpty;
+          if (connection == null) return false;
+          final mutualFriends = connection.metadata['mutualFriends'] as List?;
+          return mutualFriends != null && mutualFriends.isNotEmpty;
         }).toList();
         break;
     }

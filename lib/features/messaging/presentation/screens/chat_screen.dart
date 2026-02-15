@@ -4,6 +4,7 @@ import '../../domain/entities/chat.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/entities/typing_indicator.dart';
 import '../../domain/services/messaging_service.dart';
+import '../../domain/services/messaging_chat_settings_service.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../widgets/message_item_widget.dart';
 import '../widgets/message_input_widget.dart';

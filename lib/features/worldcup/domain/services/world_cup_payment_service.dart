@@ -8,6 +8,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/services/logging_service.dart';
 import '../../../../services/revenuecat_service.dart';
+import 'payment_models.dart';
+
+// Re-export all models so existing importers continue to work unchanged.
+export 'payment_models.dart';
 
 /// World Cup 2026 Payment Service
 /// Handles one-time purchases for Fan Passes and Venue Premium
@@ -40,7 +44,6 @@ class WorldCupPaymentService {
   ];
 
   /// Check if current user is an admin/test account.
-  /// Queries Firestore `admin_users` collection, falls back to hardcoded list on error.
   Future<bool> _isAdminUser() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null || user.email == null) return false;
@@ -54,7 +57,6 @@ class WorldCupPaymentService {
   }
 
   /// Check if current user is on the clearance list.
-  /// Queries Firestore `clearance_users` collection, falls back to hardcoded list on error.
   Future<bool> _isClearanceUser() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null || user.email == null) return false;
@@ -75,7 +77,6 @@ class WorldCupPaymentService {
     required Map<String, bool> cache,
     required List<String> fallbackList,
   }) async {
-    // Check session cache first
     if (cache.containsKey(email)) {
       return cache[email]!;
     }
@@ -130,10 +131,6 @@ class WorldCupPaymentService {
   // ============================================================================
 
   /// Get current fan pass status
-  /// Priority order:
-  /// 1. Admin/test accounts get full Superfan access
-  /// 2. RevenueCat entitlements (native IAP purchases)
-  /// 3. Firestore fallback (legacy Stripe purchases)
   Future<FanPassStatus> getFanPassStatus() async {
     try {
       final user = FirebaseAuth.instance.currentUser;
@@ -141,15 +138,13 @@ class WorldCupPaymentService {
         return FanPassStatus.free();
       }
 
-      // Check if user is an admin/test account
       if (await _isAdminUser()) {
         return _getAdminFanPassStatus();
       }
 
-      // Check if user is on the clearance list (free Superfan access)
       if (await _isClearanceUser()) {
         LoggingService.info('User on clearance list - granting Superfan Pass', tag: _logTag);
-        return _getAdminFanPassStatus(); // Same features as admin
+        return _getAdminFanPassStatus();
       }
 
       // Check RevenueCat entitlements first (native IAP purchases)
@@ -201,7 +196,7 @@ class WorldCupPaymentService {
     return FanPassStatus(
       hasPass: passType != FanPassType.free,
       passType: passType,
-      purchasedAt: DateTime.now(), // RevenueCat doesn't give us purchase date easily
+      purchasedAt: DateTime.now(),
       features: features,
     );
   }
@@ -210,15 +205,8 @@ class WorldCupPaymentService {
   // BROWSER CHECKOUT TRACKING
   // ============================================================================
 
-  /// Track whether a browser checkout is currently in progress.
-  /// Used by the FanPassScreen lifecycle listener to know when to
-  /// auto-refresh after the user returns from the browser.
   bool _browserCheckoutInProgress = false;
-
-  /// Whether a browser checkout was initiated and has not yet been resolved.
   bool get isBrowserCheckoutInProgress => _browserCheckoutInProgress;
-
-  /// Mark the browser checkout as completed (call when the user returns).
   void markBrowserCheckoutComplete() {
     _browserCheckoutInProgress = false;
   }
@@ -227,10 +215,6 @@ class WorldCupPaymentService {
   // FAN PASS CHECKOUT
   // ============================================================================
 
-  /// Purchase a fan pass
-  /// Returns the checkout URL to open in browser/webview
-  /// Set [returnToApp] to true when launching from a mobile app so that
-  /// Stripe redirects back via a universal link the app can intercept.
   Future<String?> createFanPassCheckout({
     required FanPassType passType,
     String? successUrl,
@@ -259,7 +243,6 @@ class WorldCupPaymentService {
     }
   }
 
-  /// Open checkout in browser
   Future<bool> openFanPassCheckout({
     required FanPassType passType,
     required BuildContext context,
@@ -291,13 +274,11 @@ class WorldCupPaymentService {
     }
   }
 
-  /// Check if user has access to a specific feature
   Future<bool> hasFeatureAccess(String feature) async {
     try {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) return false;
 
-      // Admin users have access to all features
       if (await _isAdminUser()) return true;
 
       final callable = _functions.httpsCallable('checkFanPassAccess');
@@ -315,8 +296,6 @@ class WorldCupPaymentService {
   // NATIVE IAP PURCHASE FUNCTIONS (RevenueCat)
   // ============================================================================
 
-  /// Purchase a fan pass using native in-app purchase
-  /// This uses RevenueCat for the actual purchase flow
   Future<FanPassPurchaseResult> purchaseFanPass({
     required FanPassType passType,
     required BuildContext context,
@@ -336,10 +315,8 @@ class WorldCupPaymentService {
       );
     }
 
-    // Check if RevenueCat is configured
     if (!_revenueCatService.isConfigured) {
       LoggingService.warning('RevenueCat not configured, falling back to browser checkout', tag: _logTag);
-      // Fallback to browser checkout for now
       final success = await openFanPassCheckout(passType: passType, context: context);
       return FanPassPurchaseResult(
         success: success,
@@ -348,11 +325,9 @@ class WorldCupPaymentService {
       );
     }
 
-    // Use RevenueCat for native purchase
     final result = await _revenueCatService.purchaseFanPassByType(passType);
 
     if (result.success) {
-      // Clear cache so next status check reflects the purchase
       clearCache();
       LoggingService.info('Fan pass purchased successfully via RevenueCat', tag: _logTag);
     }
@@ -364,7 +339,6 @@ class WorldCupPaymentService {
     );
   }
 
-  /// Restore previous purchases from App Store / Google Play
   Future<RestorePurchasesResult> restorePurchases({required BuildContext context}) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
@@ -384,7 +358,6 @@ class WorldCupPaymentService {
     final result = await _revenueCatService.restorePurchases();
 
     if (result.success) {
-      // Clear cache so next status check reflects restored purchases
       clearCache();
 
       if (result.hasRestoredPurchases) {
@@ -402,20 +375,17 @@ class WorldCupPaymentService {
     );
   }
 
-  /// Get the price string for a pass type (from RevenueCat / App Store)
   Future<String?> getNativePrice(FanPassType passType) async {
     if (!_revenueCatService.isConfigured) return null;
     return _revenueCatService.getPriceForPassType(passType);
   }
 
-  /// Check if native IAP is available
   bool get isNativeIAPAvailable => _revenueCatService.isConfigured;
 
   // ============================================================================
   // VENUE PREMIUM FUNCTIONS
   // ============================================================================
 
-  /// Get venue premium status
   Future<VenuePremiumStatus> getVenuePremiumStatus(String venueId) async {
     try {
       final user = FirebaseAuth.instance.currentUser;
@@ -441,7 +411,6 @@ class WorldCupPaymentService {
     }
   }
 
-  /// Create venue premium checkout
   Future<String?> createVenuePremiumCheckout({
     required String venueId,
     String? venueName,
@@ -470,7 +439,6 @@ class WorldCupPaymentService {
     }
   }
 
-  /// Open venue premium checkout in browser
   Future<bool> openVenuePremiumCheckout({
     required String venueId,
     String? venueName,
@@ -506,7 +474,6 @@ class WorldCupPaymentService {
   // PRICING INFO
   // ============================================================================
 
-  /// Get pricing information for display
   Future<WorldCupPricing?> getPricing() async {
     try {
       final callable = _functions.httpsCallable('getWorldCupPricing');
@@ -516,7 +483,6 @@ class WorldCupPaymentService {
       return WorldCupPricing.fromMap(data);
     } catch (e) {
       LoggingService.error('Error getting pricing: $e', tag: _logTag);
-      // Return default pricing for display
       return WorldCupPricing.defaults();
     }
   }
@@ -525,13 +491,10 @@ class WorldCupPaymentService {
   // LOCAL CACHE
   // ============================================================================
 
-  /// Cache for fan pass status (to avoid repeated calls)
   FanPassStatus? _cachedFanPassStatus;
   DateTime? _fanPassStatusCacheTime;
 
-  /// Get cached fan pass status (refreshes every 5 minutes)
   Future<FanPassStatus> getCachedFanPassStatus({bool forceRefresh = false}) async {
-    // Admin users always get full access immediately
     if (await _isAdminUser()) {
       return _getAdminFanPassStatus();
     }
@@ -549,7 +512,6 @@ class WorldCupPaymentService {
     return _cachedFanPassStatus!;
   }
 
-  /// Clear cached status (call after purchase or role change)
   void clearCache() {
     _cachedFanPassStatus = null;
     _fanPassStatusCacheTime = null;
@@ -561,12 +523,6 @@ class WorldCupPaymentService {
   // REAL-TIME LISTENERS
   // ============================================================================
 
-  /// Listen to real-time fan pass status updates from Firestore.
-  ///
-  /// Returns a [Stream<FanPassStatus>] that emits whenever the
-  /// `world_cup_fan_passes/{userId}` document changes. This is used
-  /// after a browser checkout so the app detects when the Stripe webhook
-  /// activates the pass without requiring a manual refresh.
   Stream<FanPassStatus> listenToFanPassStatus(String userId) {
     return _firestore
         .collection('world_cup_fan_passes')
@@ -585,8 +541,6 @@ class WorldCupPaymentService {
         return FanPassStatus.free();
       }
 
-      // Clear cache so the next getCachedFanPassStatus call
-      // picks up the fresh value.
       clearCache();
 
       final features = <String, bool>{};
@@ -597,7 +551,6 @@ class WorldCupPaymentService {
           }
         });
       } else {
-        // Build features from passType when the document doesn't include them
         features.addAll(_createFanPassStatus(passType).features);
       }
 
@@ -615,12 +568,6 @@ class WorldCupPaymentService {
     });
   }
 
-  /// Listen to real-time venue premium status updates from Firestore.
-  ///
-  /// Returns a [Stream<VenuePremiumStatus>] that emits whenever the
-  /// `venue_enhancements/{venueId}` document changes. Used after a
-  /// browser checkout so venue owners see their premium activate
-  /// without a manual refresh.
   Stream<VenuePremiumStatus> listenToVenuePremiumStatus(String venueId) {
     return _firestore
         .collection('venue_enhancements')
@@ -665,7 +612,6 @@ class WorldCupPaymentService {
   // TRANSACTION HISTORY
   // ============================================================================
 
-  /// Get transaction history for current user
   Future<List<PaymentTransaction>> getTransactionHistory() async {
     try {
       final user = FirebaseAuth.instance.currentUser;
@@ -753,7 +699,6 @@ class WorldCupPaymentService {
         ));
       }
 
-      // Sort all transactions by date descending
       transactions.sort((a, b) => b.createdAt.compareTo(a.createdAt));
 
       return transactions;
@@ -798,384 +743,4 @@ class WorldCupPaymentService {
       ),
     );
   }
-}
-
-// ============================================================================
-// DATA MODELS
-// ============================================================================
-
-/// Fan pass types
-enum FanPassType {
-  free('free'),
-  fanPass('fan_pass'),
-  superfanPass('superfan_pass');
-
-  final String value;
-  const FanPassType(this.value);
-
-  static FanPassType fromString(String value) {
-    switch (value) {
-      case 'fan_pass':
-        return FanPassType.fanPass;
-      case 'superfan_pass':
-        return FanPassType.superfanPass;
-      default:
-        return FanPassType.free;
-    }
-  }
-
-  String get displayName {
-    switch (this) {
-      case FanPassType.free:
-        return 'Free';
-      case FanPassType.fanPass:
-        return 'Fan Pass';
-      case FanPassType.superfanPass:
-        return 'Superfan Pass';
-    }
-  }
-
-  String get price {
-    switch (this) {
-      case FanPassType.free:
-        return 'Free';
-      case FanPassType.fanPass:
-        return '\$14.99';
-      case FanPassType.superfanPass:
-        return '\$29.99';
-    }
-  }
-}
-
-/// Fan pass status
-class FanPassStatus {
-  final bool hasPass;
-  final FanPassType passType;
-  final DateTime? purchasedAt;
-  final Map<String, bool> features;
-
-  FanPassStatus({
-    required this.hasPass,
-    required this.passType,
-    this.purchasedAt,
-    this.features = const {},
-  });
-
-  factory FanPassStatus.free() => FanPassStatus(
-    hasPass: false,
-    passType: FanPassType.free,
-    features: _defaultFreeFeatures,
-  );
-
-  bool get hasAdFree => features['adFree'] ?? false;
-  bool get hasAdvancedStats => features['advancedStats'] ?? false;
-  bool get hasCustomAlerts => features['customAlerts'] ?? false;
-  bool get hasAdvancedSocialFeatures => features['advancedSocialFeatures'] ?? false;
-  bool get hasExclusiveContent => features['exclusiveContent'] ?? false;
-  bool get hasPriorityFeatures => features['priorityFeatures'] ?? false;
-  bool get hasAiMatchInsights => features['aiMatchInsights'] ?? false;
-
-  static const Map<String, bool> _defaultFreeFeatures = {
-    'basicSchedules': true,
-    'venueDiscovery': true,
-    'matchNotifications': true,
-    'basicTeamFollowing': true,
-    'communityAccess': true,
-    'adFree': false,
-    'advancedStats': false,
-    'customAlerts': false,
-    'advancedSocialFeatures': false,
-    'exclusiveContent': false,
-    'priorityFeatures': false,
-    'aiMatchInsights': false,
-    'downloadableContent': false,
-  };
-}
-
-/// Venue premium status
-class VenuePremiumStatus {
-  final bool isPremium;
-  final String tier;
-  final DateTime? purchasedAt;
-  final Map<String, bool> features;
-
-  VenuePremiumStatus({
-    required this.isPremium,
-    required this.tier,
-    this.purchasedAt,
-    this.features = const {},
-  });
-
-  factory VenuePremiumStatus.free() => VenuePremiumStatus(
-    isPremium: false,
-    tier: 'free',
-    features: _defaultFreeFeatures,
-  );
-
-  bool get canManageSchedule => features['matchScheduling'] ?? false;
-  bool get canSetupTvs => features['tvSetup'] ?? false;
-  bool get canAddSpecials => features['gameSpecials'] ?? false;
-  bool get canSetAtmosphere => features['atmosphereSettings'] ?? false;
-  bool get canUpdateCapacity => features['liveCapacity'] ?? false;
-  bool get hasFeaturedListing => features['featuredListing'] ?? false;
-  bool get hasAnalytics => features['analytics'] ?? false;
-
-  static const Map<String, bool> _defaultFreeFeatures = {
-    'showsMatches': true,
-    'matchScheduling': false,
-    'tvSetup': false,
-    'gameSpecials': false,
-    'atmosphereSettings': false,
-    'liveCapacity': false,
-    'featuredListing': false,
-    'analytics': false,
-  };
-}
-
-/// World Cup pricing info
-class WorldCupPricing {
-  final PriceInfo fanPass;
-  final PriceInfo superfanPass;
-  final PriceInfo venuePremium;
-  final DateTime tournamentStart;
-  final DateTime tournamentEnd;
-
-  WorldCupPricing({
-    required this.fanPass,
-    required this.superfanPass,
-    required this.venuePremium,
-    required this.tournamentStart,
-    required this.tournamentEnd,
-  });
-
-  factory WorldCupPricing.fromMap(Map<String, dynamic> map) {
-    return WorldCupPricing(
-      fanPass: PriceInfo.fromMap(map['fanPass'] ?? {}),
-      superfanPass: PriceInfo.fromMap(map['superfanPass'] ?? {}),
-      venuePremium: PriceInfo.fromMap(map['venuePremium'] ?? {}),
-      tournamentStart: DateTime.parse(
-        map['tournamentDates']?['start'] ?? '2026-06-11T00:00:00Z',
-      ),
-      tournamentEnd: DateTime.parse(
-        map['tournamentDates']?['end'] ?? '2026-07-20T23:59:59Z',
-      ),
-    );
-  }
-
-  factory WorldCupPricing.defaults() => WorldCupPricing(
-    fanPass: PriceInfo(
-      amount: 1499,
-      displayPrice: '\$14.99',
-      name: 'Fan Pass',
-      description: 'Ad-free experience, advanced stats, custom alerts, social features',
-    ),
-    superfanPass: PriceInfo(
-      amount: 2999,
-      displayPrice: '\$29.99',
-      name: 'Superfan Pass',
-      description: 'Everything in Fan Pass + exclusive content, AI insights, priority features',
-    ),
-    venuePremium: PriceInfo(
-      amount: 9900,
-      displayPrice: '\$99.00',
-      name: 'Venue Premium',
-      description: 'Full portal access: TV setup, specials, atmosphere, featured listing',
-    ),
-    tournamentStart: DateTime(2026, 6, 11),
-    tournamentEnd: DateTime(2026, 7, 20),
-  );
-}
-
-/// Price info for a product
-class PriceInfo {
-  final int amount; // in cents
-  final String displayPrice;
-  final String name;
-  final String description;
-
-  PriceInfo({
-    required this.amount,
-    required this.displayPrice,
-    required this.name,
-    required this.description,
-  });
-
-  factory PriceInfo.fromMap(Map<String, dynamic> map) => PriceInfo(
-    amount: map['amount'] ?? 0,
-    displayPrice: map['displayPrice'] ?? '',
-    name: map['name'] ?? '',
-    description: map['description'] ?? '',
-  );
-}
-
-// ============================================================================
-// TRANSACTION HISTORY MODELS
-// ============================================================================
-
-/// Transaction types
-enum TransactionType {
-  fanPass,
-  venuePremium,
-  virtualAttendance,
-  tip,
-  ticket;
-
-  String get displayName {
-    switch (this) {
-      case TransactionType.fanPass:
-        return 'Fan Pass';
-      case TransactionType.venuePremium:
-        return 'Venue Premium';
-      case TransactionType.virtualAttendance:
-        return 'Virtual Attendance';
-      case TransactionType.tip:
-        return 'Tip';
-      case TransactionType.ticket:
-        return 'Ticket';
-    }
-  }
-
-  IconData get icon {
-    switch (this) {
-      case TransactionType.fanPass:
-        return Icons.star;
-      case TransactionType.venuePremium:
-        return Icons.store;
-      case TransactionType.virtualAttendance:
-        return Icons.videocam;
-      case TransactionType.tip:
-        return Icons.favorite;
-      case TransactionType.ticket:
-        return Icons.confirmation_number;
-    }
-  }
-
-  Color get color {
-    switch (this) {
-      case TransactionType.fanPass:
-        return const Color(0xFFFFB300); // Gold
-      case TransactionType.venuePremium:
-        return const Color(0xFF7C4DFF); // Purple
-      case TransactionType.virtualAttendance:
-        return const Color(0xFF00BCD4); // Cyan
-      case TransactionType.tip:
-        return const Color(0xFFE91E63); // Pink
-      case TransactionType.ticket:
-        return const Color(0xFF4CAF50); // Green
-    }
-  }
-}
-
-/// Transaction status
-enum TransactionStatus {
-  pending,
-  completed,
-  failed,
-  refunded;
-
-  String get displayName {
-    switch (this) {
-      case TransactionStatus.pending:
-        return 'Pending';
-      case TransactionStatus.completed:
-        return 'Completed';
-      case TransactionStatus.failed:
-        return 'Failed';
-      case TransactionStatus.refunded:
-        return 'Refunded';
-    }
-  }
-
-  Color get color {
-    switch (this) {
-      case TransactionStatus.pending:
-        return const Color(0xFFFFA000); // Amber
-      case TransactionStatus.completed:
-        return const Color(0xFF4CAF50); // Green
-      case TransactionStatus.failed:
-        return const Color(0xFFF44336); // Red
-      case TransactionStatus.refunded:
-        return const Color(0xFF9E9E9E); // Grey
-    }
-  }
-}
-
-/// Payment transaction record
-class PaymentTransaction {
-  final String id;
-  final TransactionType type;
-  final String productName;
-  final int amount; // in cents
-  final String currency;
-  final TransactionStatus status;
-  final DateTime createdAt;
-  final Map<String, dynamic> metadata;
-
-  PaymentTransaction({
-    required this.id,
-    required this.type,
-    required this.productName,
-    required this.amount,
-    required this.currency,
-    required this.status,
-    required this.createdAt,
-    this.metadata = const {},
-  });
-
-  /// Format amount for display (e.g., "$14.99")
-  String get displayAmount {
-    final dollars = amount / 100;
-    final symbol = currency.toUpperCase() == 'USD' ? '\$' : currency;
-    return '$symbol${dollars.toStringAsFixed(2)}';
-  }
-
-  /// Get a subtitle based on metadata
-  String? get subtitle {
-    if (type == TransactionType.virtualAttendance) {
-      return metadata['watchPartyName'] as String?;
-    }
-    if (type == TransactionType.venuePremium) {
-      return metadata['venueName'] as String?;
-    }
-    if (type == TransactionType.fanPass) {
-      final passType = metadata['passType'] as String?;
-      if (passType == 'superfan_pass') return 'World Cup 2026';
-      return 'World Cup 2026';
-    }
-    return null;
-  }
-}
-
-// ============================================================================
-// NATIVE IAP RESULT MODELS
-// ============================================================================
-
-/// Result of a fan pass purchase attempt
-class FanPassPurchaseResult {
-  final bool success;
-  final String? errorMessage;
-  final bool userCancelled;
-  final bool usedFallback;
-
-  FanPassPurchaseResult({
-    required this.success,
-    this.errorMessage,
-    this.userCancelled = false,
-    this.usedFallback = false,
-  });
-}
-
-/// Result of a restore purchases attempt
-class RestorePurchasesResult {
-  final bool success;
-  final bool hasRestoredPurchases;
-  final FanPassType restoredPassType;
-  final String? errorMessage;
-
-  RestorePurchasesResult({
-    required this.success,
-    this.hasRestoredPurchases = false,
-    this.restoredPassType = FanPassType.free,
-    this.errorMessage,
-  });
 }
