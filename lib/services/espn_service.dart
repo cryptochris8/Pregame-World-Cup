@@ -4,13 +4,21 @@ import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedul
 import 'package:hive/hive.dart';
 import 'espn_historical_service.dart';
 
-/// Legacy ESPN sports service for game intelligence and venue recommendations.
-/// Note: World Cup 2026 match data comes from SportsData.io and Firebase.
-/// This service is retained for AI analysis fallback capabilities.
-/// WARNING: Still uses college football ESPN endpoints. Needs migration to
-/// soccer/World Cup endpoints before production use.
+/// ESPN Soccer service for World Cup 2026 game intelligence and venue recommendations.
+/// Uses ESPN's soccer API endpoints for FIFA World Cup data.
+/// Primary match data comes from SportsData.io and Firebase;
+/// this service provides supplemental intelligence and analysis.
 class ESPNService {
-  static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports';
+  // ESPN soccer API base URL
+  // League slugs: fifa.world (World Cup), fifa.worldq (qualifiers),
+  //   usa.1 (MLS), eng.1 (EPL), etc.
+  static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports/soccer';
+
+  /// ESPN league slug for FIFA World Cup 2026
+  static const String _worldCupLeague = 'fifa.world';
+
+  /// ESPN league slug for FIFA World Cup Qualifiers
+  static const String _worldCupQualifiersLeague = 'fifa.worldq';
 
   final Dio _dio;
   Box<GameIntelligence>? _gameIntelligenceBox;
@@ -18,17 +26,14 @@ class ESPNService {
 
   ESPNService({Dio? dio}) : _dio = dio ?? Dio() {
     _historicalService = ESPNHistoricalService();
-    // Don't initialize immediately - do it lazily when needed
   }
 
   Future<void> _initializeService() async {
     if (_gameIntelligenceBox != null) return; // Already initialized
-    
+
     try {
       _gameIntelligenceBox = await Hive.openBox<GameIntelligence>('game_intelligence');
-              // Debug output removed
     } catch (e) {
-              // Debug output removed
       // If Hive isn't ready, we'll try again later
       _gameIntelligenceBox = null;
     }
@@ -39,42 +44,41 @@ class ESPNService {
     try {
       // Ensure service is initialized
       await _initializeService();
-      
+
       // Check cache first (valid for 2 hours) - but only if Hive is available
       if (_gameIntelligenceBox != null) {
         final cached = _gameIntelligenceBox!.get(gameId);
-        if (cached != null && 
+        if (cached != null &&
             DateTime.now().difference(cached.lastUpdated).inHours < 2) {
           return cached;
         }
       }
 
-      // Fetch fresh data from ESPN
+      // Fetch fresh data from ESPN soccer API
       final gameData = await _fetchESPNGameData(gameId);
       if (gameData == null) return null;
 
       // Analyze and create intelligence
       final intelligence = await _analyzeGameData(gameData);
-      
+
       // Cache the result (if Hive is available)
       if (_gameIntelligenceBox != null) {
         await _gameIntelligenceBox!.put(gameId, intelligence);
       }
-      
+
       return intelligence;
     } catch (e) {
-      // Debug output removed
       return null;
     }
   }
 
-  /// Fetch raw game data from ESPN API
+  /// Fetch raw game data from ESPN Soccer API
+  /// Uses the FIFA World Cup league endpoint for match summaries.
   Future<Map<String, dynamic>?> _fetchESPNGameData(String gameId) async {
     try {
-      // ESPN uses different endpoints for different sports
-      // LEGACY: Still using college football endpoint. Needs migration to soccer.
+      // ESPN soccer match summary endpoint
       final response = await _dio.get(
-        '$_baseUrl/football/college-football/summary',
+        '$_baseUrl/$_worldCupLeague/summary',
         queryParameters: {
           'event': gameId,
         },
@@ -85,66 +89,53 @@ class ESPNService {
       }
       return null;
     } catch (e) {
-      // Debug output removed
       return null;
     }
   }
 
-  /// LEGACY: Test method to fetch current games (still uses college football endpoint)
+  /// Fetch current World Cup matches from ESPN soccer scoreboard
   Future<List<Map<String, dynamic>>> getCurrentGames() async {
     try {
       final response = await _dio.get(
-        '$_baseUrl/football/college-football/scoreboard',
+        '$_baseUrl/$_worldCupLeague/scoreboard',
       );
 
       if (response.statusCode == 200) {
         final data = response.data;
         final events = data['events'] as List? ?? [];
-        
-        // Debug output removed
         return events.cast<Map<String, dynamic>>();
       }
       return [];
     } catch (e) {
-      // Debug output removed
       return [];
     }
   }
 
-  /// LEGACY: Fetch 2025 schedule from ESPN API (still uses college football endpoint)
-  /// This method gets the complete 2025 season schedule with real dates and times
+  /// Fetch World Cup 2026 schedule from ESPN Soccer API
+  /// The tournament runs June 11 - July 19, 2026
   Future<List<GameSchedule>> get2025Schedule({int limit = 100}) async {
     try {
-      // Debug output removed
-      
       final scheduleGames = <GameSchedule>[];
-      final now = DateTime.now();
-      
-      // Get the current date or start from August 2025 if we're before the season
-      final startDate = now.isAfter(DateTime(2025, 8, 1)) ? now : DateTime(2025, 8, 1);
-      final endDate = DateTime(2026, 1, 31); // End of 2025 season
-      
-      // ESPN API date format: YYYYMMDD
+
+      // World Cup 2026 dates: June 11 - July 19, 2026
+      final startDate = DateTime(2026, 6, 1);
+      final endDate = DateTime(2026, 7, 31);
+
       final startDateStr = _formatDateForESPN(startDate);
       final endDateStr = _formatDateForESPN(endDate);
-      
-      // Debug output removed
-      
+
       final response = await _dio.get(
-        '$_baseUrl/football/college-football/scoreboard',
+        '$_baseUrl/$_worldCupLeague/scoreboard',
         queryParameters: {
           'dates': '$startDateStr-$endDateStr',
           'limit': limit.toString(),
-          'groups': '80', // LEGACY: FBS College Football group ID
         },
       );
 
       if (response.statusCode == 200) {
         final data = response.data;
         final events = data['events'] as List? ?? [];
-        
-        // Debug output removed
-        
+
         for (final event in events) {
           try {
             final gameSchedule = _parseESPNEventToGameSchedule(event);
@@ -152,57 +143,49 @@ class ESPNService {
               scheduleGames.add(gameSchedule);
             }
           } catch (e) {
-            // Debug output removed
+            // Skip events that fail to parse
           }
         }
-        
+
         // Sort by date
         scheduleGames.sort((a, b) {
           final aDate = a.dateTime ?? DateTime(1970);
           final bDate = b.dateTime ?? DateTime(1970);
           return aDate.compareTo(bDate);
         });
-        
-        // Debug output removed
-        // Debug output removed
-        
+
         return scheduleGames.take(limit).toList();
       } else {
-        // Debug output removed
         return [];
       }
     } catch (e) {
-      // Debug output removed
       return [];
     }
   }
 
-  /// Get upcoming games from ESPN API (next 2 weeks)
+  /// Get upcoming World Cup matches from ESPN Soccer API (next 2 weeks)
   Future<List<GameSchedule>> getUpcomingGames({int limit = 10}) async {
     try {
-      // Debug output removed
-      
       final now = DateTime.now();
       final twoWeeksFromNow = now.add(const Duration(days: 14));
-      
+
       final startDateStr = _formatDateForESPN(now);
       final endDateStr = _formatDateForESPN(twoWeeksFromNow);
-      
+
       final response = await _dio.get(
-        '$_baseUrl/football/college-football/scoreboard',
+        '$_baseUrl/$_worldCupLeague/scoreboard',
         queryParameters: {
           'dates': '$startDateStr-$endDateStr',
           'limit': limit.toString(),
-          'groups': '80', // LEGACY: FBS College Football group ID
         },
       );
 
       if (response.statusCode == 200) {
         final data = response.data;
         final events = data['events'] as List? ?? [];
-        
+
         final upcomingGames = <GameSchedule>[];
-        
+
         for (final event in events) {
           try {
             final gameSchedule = _parseESPNEventToGameSchedule(event);
@@ -214,73 +197,70 @@ class ESPNService {
               }
             }
           } catch (e) {
-            // Debug output removed
+            // Skip events that fail to parse
           }
         }
-        
+
         // Sort by date and limit results
         upcomingGames.sort((a, b) {
           final aDate = a.dateTime ?? DateTime(1970);
           final bDate = b.dateTime ?? DateTime(1970);
           return aDate.compareTo(bDate);
         });
-        
-        // Debug output removed
+
         return upcomingGames.take(limit).toList();
       }
-      
+
       return [];
     } catch (e) {
-      // Debug output removed
       return [];
     }
   }
 
-  /// LEGACY: Get schedule for a specific year (still uses college football endpoint)
-  /// Returns complete season data including historical scores for past years
+  /// Get World Cup schedule for a specific year from ESPN Soccer API
+  /// Supports 2022 (Qatar), 2018 (Russia), and 2026 (USA/Mexico/Canada)
   Future<List<GameSchedule>> getScheduleForYear(int year, {int limit = 2000}) async {
     try {
-      // Debug output removed
-      
-      // For historical years, get the full season
       DateTime startDate;
       DateTime endDate;
-      
-      if (year == 2023) {
-        startDate = DateTime(2023, 8, 1);  // Season starts in August
-        endDate = DateTime(2024, 1, 31);   // Includes bowl games and championship
-      } else if (year == 2024) {
-        startDate = DateTime(2024, 7, 1);  // Start earlier in case of summer games
-        endDate = DateTime(2025, 2, 28);   // End later to catch any late bowl games
-        // Debug output removed
+      String league = _worldCupLeague;
+
+      if (year == 2022) {
+        // Qatar 2022: Nov 21 - Dec 18
+        startDate = DateTime(2022, 11, 1);
+        endDate = DateTime(2022, 12, 31);
+      } else if (year == 2018) {
+        // Russia 2018: June 14 - July 15
+        startDate = DateTime(2018, 6, 1);
+        endDate = DateTime(2018, 7, 31);
+      } else if (year == 2026) {
+        // USA/Mexico/Canada 2026: June 11 - July 19
+        startDate = DateTime(2026, 6, 1);
+        endDate = DateTime(2026, 7, 31);
       } else if (year == 2025) {
-        startDate = DateTime(2025, 8, 1);
-        endDate = DateTime(2026, 1, 31);
+        // 2025 = World Cup Qualifiers
+        startDate = DateTime(2025, 1, 1);
+        endDate = DateTime(2025, 12, 31);
+        league = _worldCupQualifiersLeague;
       } else {
-        // Debug output removed
         return [];
       }
-      
+
       final startDateStr = _formatDateForESPN(startDate);
       final endDateStr = _formatDateForESPN(endDate);
-      
-              final response = await _dio.get(
-        '$_baseUrl/football/college-football/scoreboard',
+
+      final response = await _dio.get(
+        '$_baseUrl/$league/scoreboard',
         queryParameters: {
           'dates': '$startDateStr-$endDateStr',
           'limit': limit.toString(),
-          'groups': '80', // LEGACY: FBS College Football group ID
         },
       );
-      
-      // Debug output removed
 
       if (response.statusCode == 200) {
         final data = response.data;
         final events = data['events'] as List? ?? [];
-        
-        // Debug output removed
-        
+
         final games = <GameSchedule>[];
         for (final event in events) {
           final game = _parseESPNEventToGameScheduleWithYear(event, year);
@@ -288,60 +268,58 @@ class ESPNService {
             games.add(game);
           }
         }
-        
-        // Debug output removed
-        
-        // Sort by date for better user experience
+
+        // Sort by date
         games.sort((a, b) {
           if (a.dateTime == null && b.dateTime == null) return 0;
           if (a.dateTime == null) return 1;
           if (b.dateTime == null) return -1;
           return a.dateTime!.compareTo(b.dateTime!);
         });
-        
+
         return games;
       } else {
-        // Debug output removed
         return [];
       }
     } catch (e) {
-      // Debug output removed
       return [];
     }
   }
 
-  /// Parse ESPN event data to GameSchedule object
+  /// Parse ESPN soccer event data to GameSchedule object
+  /// Handles ESPN's soccer response format: competitions > competitors (teams),
+  /// venue, broadcasts, match status, etc.
   GameSchedule? _parseESPNEventToGameSchedule(Map<String, dynamic> event) {
     try {
       final eventId = event['id']?.toString() ?? '';
-      final name = event['name'] ?? '';
-      final shortName = event['shortName'] ?? '';
       final date = event['date'] ?? '';
-      
-      // Parse teams
+
+      // Parse teams from competitions
       final competitions = event['competitions'] as List? ?? [];
       if (competitions.isEmpty) return null;
-      
+
       final competition = competitions[0] as Map<String, dynamic>;
       final competitors = competition['competitors'] as List? ?? [];
-      
+
       if (competitors.length < 2) return null;
-      
+
       String awayTeamName = '';
       String homeTeamName = '';
       String? awayTeamLogoUrl;
       String? homeTeamLogoUrl;
       int? awayTeamId;
       int? homeTeamId;
-      
+
       for (final competitor in competitors) {
         final team = competitor['team'] as Map<String, dynamic>? ?? {};
         final homeAway = competitor['homeAway'] as String? ?? '';
         final teamName = team['displayName'] ?? team['name'] ?? '';
         final teamId = int.tryParse(team['id']?.toString() ?? '');
-        final logos = team['logos'] as List? ?? [];
-        final logoUrl = logos.isNotEmpty ? logos[0]['href'] : null;
-        
+        // ESPN soccer uses 'logo' or 'logos' array
+        final logo = team['logo'] as String?;
+        final logos = team['logos'] as List?;
+        final logoUrl = logo ?? (logos != null && logos.isNotEmpty ? logos[0]['href'] : null);
+
         if (homeAway == 'home') {
           homeTeamName = teamName;
           homeTeamId = teamId;
@@ -352,13 +330,14 @@ class ESPNService {
           awayTeamLogoUrl = logoUrl;
         }
       }
-      
-      // Parse venue information
+
+      // Parse venue information (stadium for World Cup matches)
       final venue = competition['venue'] as Map<String, dynamic>? ?? {};
       final venueName = venue['fullName'] ?? venue['name'] ?? '';
       final venueCity = venue['address']?['city'] ?? '';
-      final venueState = venue['address']?['state'] ?? '';
-      
+      // Soccer venues use 'country' instead of 'state' for international matches
+      final venueCountry = venue['address']?['country'] ?? venue['address']?['state'] ?? '';
+
       // Parse broadcast info
       final broadcasts = competition['broadcasts'] as List? ?? [];
       String? channel;
@@ -369,15 +348,15 @@ class ESPNService {
           channel = networks[0].toString();
         }
       }
-      
+
       // Parse date and time
       DateTime? gameDateTime;
       try {
         gameDateTime = DateTime.parse(date);
       } catch (e) {
-        // Debug output removed
+        // Failed to parse date
       }
-      
+
       // Create Stadium object if venue info exists
       Stadium? stadium;
       if (venueName.isNotEmpty) {
@@ -385,19 +364,26 @@ class ESPNService {
           stadiumId: venue['id'] != null ? int.tryParse(venue['id'].toString()) : null,
           name: venueName,
           city: venueCity,
-          state: venueState,
-          capacity: null, // ESPN doesn't always provide capacity
+          state: venueCountry, // Country for international matches
+          capacity: null,
           yearOpened: null,
-          geoLat: null, // Would need additional API call for coordinates
+          geoLat: null,
           geoLong: null,
           team: homeTeamName,
         );
       }
-      
+
+      // Determine match round/stage from notes if available
+      final notes = competition['notes'] as List? ?? [];
+      String? matchStage;
+      if (notes.isNotEmpty) {
+        matchStage = notes[0]['headline'] as String?;
+      }
+
       return GameSchedule(
         gameId: 'espn_$eventId',
-        season: '2025', // We're specifically fetching 2025 data
-        week: null, // ESPN doesn't provide week number in this format
+        season: '2026',
+        week: null,
         status: 'Scheduled',
         dateTime: gameDateTime,
         dateTimeUTC: gameDateTime?.toUtc(),
@@ -414,28 +400,26 @@ class ESPNService {
         updatedApi: DateTime.now(),
       );
     } catch (e) {
-      // Debug output removed
       return null;
     }
   }
 
-  /// Enhanced parser for historical data with scores and game status
+  /// Enhanced parser for historical/live soccer data with scores and match status
+  /// Handles soccer-specific fields: goals, match period (1H/2H/ET/PK), etc.
   GameSchedule? _parseESPNEventToGameScheduleWithYear(Map<String, dynamic> event, int year) {
     try {
       final eventId = event['id']?.toString() ?? '';
-      final name = event['name'] ?? '';
-      final shortName = event['shortName'] ?? '';
       final date = event['date'] ?? '';
-      
+
       // Parse teams and scores
       final competitions = event['competitions'] as List? ?? [];
       if (competitions.isEmpty) return null;
-      
+
       final competition = competitions[0] as Map<String, dynamic>;
       final competitors = competition['competitors'] as List? ?? [];
-      
+
       if (competitors.length < 2) return null;
-      
+
       String awayTeamName = '';
       String homeTeamName = '';
       String? awayTeamLogoUrl;
@@ -444,49 +428,49 @@ class ESPNService {
       int? homeTeamId;
       int? awayScore;
       int? homeScore;
-      bool? awayWinner;
-      bool? homeWinner;
-      
+
       for (final competitor in competitors) {
         final team = competitor['team'] as Map<String, dynamic>? ?? {};
         final homeAway = competitor['homeAway'] as String? ?? '';
         final teamName = team['displayName'] ?? team['name'] ?? '';
         final teamId = int.tryParse(team['id']?.toString() ?? '');
-        final logos = team['logos'] as List? ?? [];
-        final logoUrl = logos.isNotEmpty ? logos[0]['href'] : null;
-        
-        // Parse score data
+        final logo = team['logo'] as String?;
+        final logos = team['logos'] as List?;
+        final logoUrl = logo ?? (logos != null && logos.isNotEmpty ? logos[0]['href'] : null);
+
+        // Parse score (goals in soccer)
         final score = int.tryParse(competitor['score']?.toString() ?? '');
-        final winner = competitor['winner'] == true;
-        
+
         if (homeAway == 'home') {
           homeTeamName = teamName;
           homeTeamId = teamId;
           homeTeamLogoUrl = logoUrl;
           homeScore = score;
-          homeWinner = winner;
         } else {
           awayTeamName = teamName;
           awayTeamId = teamId;
           awayTeamLogoUrl = logoUrl;
           awayScore = score;
-          awayWinner = winner;
         }
       }
-      
-      // Parse game status
+
+      // Parse match status (soccer uses: 1st Half, 2nd Half, Halftime,
+      // Extra Time, Penalty Shootout, Full Time, etc.)
       final status = competition['status'] as Map<String, dynamic>? ?? {};
       final statusType = status['type'] as Map<String, dynamic>? ?? {};
       final gameStatus = statusType['name'] ?? 'Scheduled';
       final gameState = statusType['state'] ?? 'pre';
       final statusDetail = status['type']?['detail'] ?? '';
-      
+
+      // Parse match clock for live games
+      final clock = status['displayClock'] as String?;
+
       // Parse venue information
       final venue = competition['venue'] as Map<String, dynamic>? ?? {};
       final venueName = venue['fullName'] ?? venue['name'] ?? '';
       final venueCity = venue['address']?['city'] ?? '';
-      final venueState = venue['address']?['state'] ?? '';
-      
+      final venueCountry = venue['address']?['country'] ?? venue['address']?['state'] ?? '';
+
       // Parse broadcast info
       final broadcasts = competition['broadcasts'] as List? ?? [];
       String? channel;
@@ -497,19 +481,15 @@ class ESPNService {
           channel = networks[0].toString();
         }
       }
-      
+
       // Parse date and time
       DateTime? gameDateTime;
       try {
         gameDateTime = DateTime.parse(date);
       } catch (e) {
-        // Debug output removed
+        // Failed to parse date
       }
-      
-      // Parse week number if available
-      final seasonType = competition['season']?['type'] ?? 2; // Regular season = 2
-      final week = competition['week']?['number'];
-      
+
       // Create Stadium object if venue info exists
       Stadium? stadium;
       if (venueName.isNotEmpty) {
@@ -517,19 +497,27 @@ class ESPNService {
           stadiumId: venue['id'] != null ? int.tryParse(venue['id'].toString()) : null,
           name: venueName,
           city: venueCity,
-          state: venueState,
-          capacity: null, // ESPN doesn't always provide capacity
+          state: venueCountry,
+          capacity: null,
           yearOpened: null,
-          geoLat: null, // Would need additional API call for coordinates
+          geoLat: null,
           geoLong: null,
           team: homeTeamName,
         );
       }
-      
+
+      // Determine match period for soccer
+      String? period;
+      if (statusDetail.isNotEmpty) {
+        period = statusDetail;
+      } else if (clock != null) {
+        period = clock;
+      }
+
       return GameSchedule(
         gameId: 'espn_$eventId',
         season: year.toString(),
-        week: week,
+        week: null, // Soccer uses matchday/round, not weeks
         status: gameStatus,
         dateTime: gameDateTime,
         dateTimeUTC: gameDateTime?.toUtc(),
@@ -546,13 +534,12 @@ class ESPNService {
         homeTeamLogoUrl: homeTeamLogoUrl,
         neutralVenue: venue['neutralSite'] == true,
         updatedApi: DateTime.now(),
-        // Use existing fields for game state
+        // Live match state
         isLive: gameState == 'in',
-        period: statusDetail.isNotEmpty ? statusDetail : null,
+        period: period,
         lastScoreUpdate: gameState == 'post' ? gameDateTime : null,
       );
     } catch (e) {
-      // Debug output removed
       return null;
     }
   }
@@ -565,24 +552,25 @@ class ESPNService {
     return '$year$month$day';
   }
 
-  /// Analyze ESPN game data to create actionable intelligence
+  /// Analyze ESPN soccer match data to create actionable intelligence
   Future<GameIntelligence> _analyzeGameData(Map<String, dynamic> espnData) async {
     final header = espnData['header'] ?? {};
     final competitions = espnData['competitions'] ?? [];
-    
+
     String homeTeam = '';
     String awayTeam = '';
     int? homeRank;
     int? awayRank;
-    
+
     if (competitions.isNotEmpty) {
       final teams = competitions[0]['competitors'] ?? [];
       for (var team in teams) {
         final teamData = team['team'] ?? {};
         final isHome = team['homeAway'] == 'home';
         final teamName = teamData['displayName'] ?? '';
+        // FIFA ranking from ESPN data
         final rank = _parseRank(team['curatedRank']?.toString());
-        
+
         if (isHome) {
           homeTeam = teamName;
           homeRank = rank;
@@ -593,7 +581,7 @@ class ESPNService {
       }
     }
 
-    // Calculate crowd factor based on multiple variables
+    // Calculate crowd factor based on FIFA rankings and match importance
     final crowdFactor = _calculateCrowdFactor(
       homeRank: homeRank,
       awayRank: awayRank,
@@ -602,16 +590,16 @@ class ESPNService {
       gameData: espnData,
     );
 
-    // Detect rivalry games
+    // Detect rivalry/derby matches
     final isRivalry = _isRivalryGame(homeTeam, awayTeam);
 
-    // Analyze championship implications
+    // Analyze knockout/championship implications
     final hasChampImplications = _hasChampionshipImplications(espnData);
 
     // Extract broadcast information
     final broadcast = _extractBroadcastInfo(espnData);
 
-    // Generate venue recommendations
+    // Generate venue recommendations for watch parties and sports bars
     final venueRecommendations = _generateVenueRecommendations(
       crowdFactor: crowdFactor,
       isRivalry: isRivalry,
@@ -639,37 +627,38 @@ class ESPNService {
     );
   }
 
-  /// Calculate crowd factor based on team rankings and game importance
+  /// Calculate crowd factor based on FIFA rankings, rivalry status, and match stage
   double _calculateCrowdFactor(
       {int? homeRank, int? awayRank, required String homeTeam, required String awayTeam, required Map<String, dynamic> gameData}) {
     double factor = 1.0; // Base factor
 
-    // Team rankings impact (higher ranked = more interest)
-    if (homeRank != null && homeRank <= 25) {
-      factor += (26 - homeRank) * 0.02; // Up to +0.5 for #1 team
+    // FIFA ranking impact (higher ranked = more interest)
+    // Top 10 nations draw massive crowds
+    if (homeRank != null && homeRank <= 50) {
+      factor += (51 - homeRank) * 0.01; // Up to +0.5 for #1 ranked team
     }
-    if (awayRank != null && awayRank <= 25) {
-      factor += (26 - awayRank) * 0.02; // Up to +0.5 for #1 team
+    if (awayRank != null && awayRank <= 50) {
+      factor += (51 - awayRank) * 0.01;
     }
 
-    // Both teams ranked in top 10
+    // Both teams in top 10 FIFA rankings
     if ((homeRank != null && homeRank <= 10) && (awayRank != null && awayRank <= 10)) {
-      factor += 0.4; // Top 10 matchup bonus
+      factor += 0.5; // Top 10 matchup bonus
     }
 
-    // Rivalry game bonus
+    // International rivalry/derby bonus
     if (_isRivalryGame(homeTeam, awayTeam)) {
-      factor += 0.6; // Major rivalry bonus
+      factor += 0.7; // Major rivalry bonus (World Cup rivalries draw huge interest)
     }
 
-    // Championship implications
+    // Knockout round / championship implications
     if (_hasChampionshipImplications(gameData)) {
-      factor += 0.5;
+      factor += 0.6;
     }
 
-    // Weekend vs weekday (assuming Saturday games are bigger)
+    // Weekend matches tend to draw bigger watch party crowds
     final gameTime = DateTime.tryParse(gameData['header']?['timeValid'] ?? '');
-    if (gameTime != null && gameTime.weekday == DateTime.saturday) {
+    if (gameTime != null && (gameTime.weekday == DateTime.saturday || gameTime.weekday == DateTime.sunday)) {
       factor += 0.2;
     }
 
@@ -677,24 +666,77 @@ class ESPNService {
     return factor > 3.0 ? 3.0 : factor;
   }
 
-  /// Check if this is a rivalry game
+  /// Check if this is a major international soccer rivalry
   bool _isRivalryGame(String homeTeam, String awayTeam) {
-    // Legacy college football rivalry detection removed.
-    // World Cup rivalry detection is handled by SportsData.io match metadata.
+    // Normalize team names for matching
+    final home = _normalizeTeamName(homeTeam);
+    final away = _normalizeTeamName(awayTeam);
+
+    // Major World Cup rivalries and historic derby matches
+    final rivalries = [
+      {'brazil', 'argentina'},
+      {'germany', 'netherlands'},
+      {'germany', 'england'},
+      {'germany', 'italy'},
+      {'england', 'argentina'},
+      {'brazil', 'germany'},
+      {'brazil', 'france'},
+      {'france', 'italy'},
+      {'france', 'germany'},
+      {'spain', 'portugal'},
+      {'spain', 'italy'},
+      {'mexico', 'united states'},
+      {'mexico', 'usa'},
+      {'united states', 'england'},
+      {'usa', 'england'},
+      {'south korea', 'japan'},
+      {'uruguay', 'argentina'},
+      {'colombia', 'argentina'},
+      {'brazil', 'uruguay'},
+      {'chile', 'argentina'},
+      {'ghana', 'uruguay'},
+      {'croatia', 'serbia'},
+      {'netherlands', 'belgium'},
+      {'england', 'scotland'},
+      {'cameroon', 'nigeria'},
+      {'egypt', 'algeria'},
+      {'iran', 'iraq'},
+      {'australia', 'japan'},
+      {'costa rica', 'mexico'},
+      {'canada', 'united states'},
+      {'canada', 'usa'},
+    ];
+
+    for (final rivalry in rivalries) {
+      final team1 = rivalry.first;
+      final team2 = rivalry.last;
+      if ((home.contains(team1) && away.contains(team2)) ||
+          (home.contains(team2) && away.contains(team1))) {
+        return true;
+      }
+    }
+
     return false;
   }
 
-  /// Analyze if game has championship implications
+  /// Analyze if match has knockout/championship implications
   bool _hasChampionshipImplications(Map<String, dynamic> gameData) {
     final notes = gameData['notes']?.toString().toLowerCase() ?? '';
     final situation = gameData['situation']?.toString().toLowerCase() ?? '';
+    final header = gameData['header']?.toString().toLowerCase() ?? '';
 
-    return notes.contains('championship') ||
-           notes.contains('playoff') ||
+    return notes.contains('final') ||
+           notes.contains('semifinal') ||
+           notes.contains('semi-final') ||
+           notes.contains('quarter-final') ||
+           notes.contains('quarterfinal') ||
            notes.contains('knockout') ||
-           notes.contains('final') ||
+           notes.contains('round of 16') ||
+           notes.contains('round of 32') ||
            situation.contains('elimination') ||
-           situation.contains('semifinal');
+           situation.contains('knockout') ||
+           header.contains('final') ||
+           header.contains('knockout');
   }
 
   /// Extract broadcast information
@@ -712,63 +754,72 @@ class ESPNService {
     return {'network': 'TBD', 'type': 'TV'};
   }
 
-  /// Estimate TV audience based on factors
+  /// Estimate TV audience for a World Cup match based on various factors
   double _estimateTvAudience(double crowdFactor, bool isRivalry, String? network) {
-    double baseAudience = 5.0; // Million viewers baseline for international soccer
+    // World Cup matches draw massive global audiences
+    double baseAudience = 10.0; // Million US viewers baseline for World Cup
 
-    // Network influence
+    // Network influence for US broadcast
     switch (network?.toUpperCase()) {
       case 'FOX':
-      case 'FS1':
-        baseAudience = 8.0;
+        baseAudience = 15.0; // FOX has primary English rights for WC 2026
         break;
-      case 'ESPN':
-      case 'ABC':
-        baseAudience = 7.0;
+      case 'FS1':
+        baseAudience = 10.0;
         break;
       case 'TELEMUNDO':
-      case 'UNIVISION':
-        baseAudience = 6.0;
+      case 'UNIVERSO':
+        baseAudience = 12.0; // Spanish-language draws huge audiences
+        break;
+      case 'PEACOCK':
+        baseAudience = 8.0;
         break;
       default:
-        baseAudience = 5.0;
+        baseAudience = 10.0;
     }
 
     // Apply crowd factor and rivalry bonus
     double estimatedAudience = baseAudience * crowdFactor;
     if (isRivalry) {
-      estimatedAudience *= 1.3;
+      estimatedAudience *= 1.4; // Rivalries draw even more viewers
     }
 
     return estimatedAudience;
   }
 
-  /// Extract key storylines for marketing
+  /// Extract key storylines for marketing and engagement
   List<String> _extractKeyStorylines(Map<String, dynamic> gameData, bool isRivalry, bool hasChampImplications) {
     List<String> storylines = [];
-    
+
     if (isRivalry) {
-      storylines.add('Historic Rivalry Matchup');
+      storylines.add('Historic International Rivalry');
     }
-    
+
     if (hasChampImplications) {
-      storylines.add('Championship Implications');
+      storylines.add('Knockout Stage Match - Win or Go Home');
     }
-    
-    // Add more storylines based on ESPN data analysis
+
+    // Add storylines based on match data
     final situation = gameData['situation']?.toString() ?? '';
-    if (situation.contains('undefeated')) {
-      storylines.add('Undefeated Team Battle');
+    if (situation.contains('unbeaten') || situation.contains('undefeated')) {
+      storylines.add('Unbeaten Run on the Line');
     }
-    
+
+    final notes = gameData['notes']?.toString().toLowerCase() ?? '';
+    if (notes.contains('group')) {
+      storylines.add('Group Stage - Fight for Qualification');
+    }
+    if (notes.contains('final')) {
+      storylines.add('World Cup Final - The Biggest Match in Football');
+    }
+
     return storylines;
   }
 
-  /// Extract relevant team statistics
+  /// Extract relevant team statistics from ESPN soccer data
   Map<String, dynamic> _extractTeamStats(Map<String, dynamic> gameData) {
-    // Extract wins, losses, rankings, recent performance
     Map<String, dynamic> stats = {};
-    
+
     final competitions = gameData['competitions'] ?? [];
     if (competitions.isNotEmpty) {
       final teams = competitions[0]['competitors'] ?? [];
@@ -776,20 +827,22 @@ class ESPNService {
         final teamData = team['team'] ?? {};
         final record = team['records']?[0] ?? {};
         final teamName = teamData['displayName'] ?? '';
-        
+
+        // Soccer records: W-D-L format (wins-draws-losses)
         stats[teamName] = {
           'wins': record['wins'] ?? 0,
+          'draws': record['ties'] ?? record['draws'] ?? 0,
           'losses': record['losses'] ?? 0,
           'rank': _parseRank(team['curatedRank']?.toString()),
           'record_summary': record['displayValue'] ?? 'N/A',
         };
       }
     }
-    
+
     return stats;
   }
 
-  /// Generate specific venue recommendations based on game analysis
+  /// Generate venue recommendations for watch parties and sports bars
   VenueRecommendations _generateVenueRecommendations({
     required double crowdFactor,
     required bool isRivalry,
@@ -799,22 +852,22 @@ class ESPNService {
   }) {
     // Calculate expected traffic increase
     double trafficIncrease = (crowdFactor - 1.0) * 100; // Convert to percentage
-    
+
     // Generate staffing recommendations
     String staffingRec = _generateStaffingRecommendation(crowdFactor);
-    
-    // Suggest specials based on game type
+
+    // Suggest specials based on match type
     List<String> specials = _suggestSpecials(isRivalry, hasChampImplications, homeTeam, awayTeam);
-    
+
     // Inventory advice
     String inventoryAdvice = _generateInventoryAdvice(crowdFactor, isRivalry);
-    
+
     // Marketing opportunity
     String marketingOpp = _generateMarketingOpportunity(isRivalry, hasChampImplications, homeTeam, awayTeam);
-    
-    // Revenue projection (assuming average customer spends $25)
-    double revenueProjection = trafficIncrease * 0.01 * 25 * 50; // Estimate for 50-person baseline
-    
+
+    // Revenue projection (assuming average customer spends $30 at a watch party)
+    double revenueProjection = trafficIncrease * 0.01 * 30 * 50; // Estimate for 50-person baseline
+
     return VenueRecommendations(
       expectedTrafficIncrease: trafficIncrease,
       staffingRecommendation: staffingRec,
@@ -827,11 +880,11 @@ class ESPNService {
 
   String _generateStaffingRecommendation(double crowdFactor) {
     if (crowdFactor >= 2.5) {
-      return 'Schedule 3x normal staff - expect exceptional crowds';
+      return 'Schedule 3x normal staff - expect exceptional crowds for this World Cup match';
     } else if (crowdFactor >= 2.0) {
-      return 'Schedule 2x normal staff - high crowd expected';
+      return 'Schedule 2x normal staff - high crowd expected for this match';
     } else if (crowdFactor >= 1.5) {
-      return 'Schedule 1.5x normal staff - above average crowd';
+      return 'Schedule 1.5x normal staff - above average crowd expected';
     } else {
       return 'Normal staffing should be sufficient';
     }
@@ -839,48 +892,51 @@ class ESPNService {
 
   List<String> _suggestSpecials(bool isRivalry, bool hasChampImplications, String homeTeam, String awayTeam) {
     List<String> specials = [];
-    
+
     if (isRivalry) {
-      specials.add('Rivalry Special: Buy team colors pitcher, get appetizer half off');
-      specials.add('$homeTeam vs $awayTeam Wings Challenge');
+      specials.add('Rivalry Special: Wear your team colors for 10% off');
+      specials.add('$homeTeam vs $awayTeam Watch Party Platter');
     }
-    
+
     if (hasChampImplications) {
-      specials.add('Championship Run Special: Premium beer buckets');
-      specials.add('Playoff Push Platter - premium appetizer combo');
+      specials.add('Knockout Round Special: Premium beer buckets & shareables');
+      specials.add('World Cup Final Watch Party Package');
     }
-    
-    specials.add('Game Day Breakfast - morning crowd capture');
-    specials.add('Victory Shot Special - post-game celebration');
-    
+
+    specials.add('Match Day Brunch - catch morning kickoffs with breakfast specials');
+    specials.add('Goal Celebration Shot Special - free shot on every goal');
+    specials.add('Half-Time Happy Hour - drink specials during the break');
+
     return specials;
   }
 
   String _generateInventoryAdvice(double crowdFactor, bool isRivalry) {
     List<String> advice = [];
-    
+
     if (crowdFactor >= 2.0) {
-      advice.add('Stock 3x normal beer inventory');
-      advice.add('Extra wings and nachos - high-margin items');
+      advice.add('Stock 3x normal beer & cocktail inventory');
+      advice.add('Extra appetizer platters - nachos, wings, sliders');
     }
-    
+
     if (isRivalry) {
-      advice.add('Team-themed items and decorations');
-      advice.add('Premium alcohol for celebration/commiseration');
+      advice.add('Country flags and team scarves for decoration');
+      advice.add('Premium drinks for celebration toasts');
     }
-    
+
+    advice.add('Consider international food specials matching the teams playing');
+
     return advice.join(', ');
   }
 
   String _generateMarketingOpportunity(bool isRivalry, bool hasChampImplications, String homeTeam, String awayTeam) {
     if (isRivalry && hasChampImplications) {
-      return 'HUGE OPPORTUNITY: Rivalry game with championship implications - livestream atmosphere, social media blitz, reservation-only seating';
+      return 'HUGE OPPORTUNITY: Historic rivalry in a knockout match - host a mega watch party, social media blitz, reservation-only VIP seating';
     } else if (isRivalry) {
-      return 'Major rivalry game - livestream crowd energy, themed decorations, fan contests';
+      return 'Major international rivalry - promote as THE place to watch, themed decorations with both countries\' flags, fan contests';
     } else if (hasChampImplications) {
-      return 'Championship implications - position as "the place to watch history"';
+      return 'Knockout stage drama - position as "the place to watch World Cup history unfold"';
     } else {
-      return 'Standard game day promotions with social media updates';
+      return 'Group stage match - promote World Cup atmosphere with international food & drink specials';
     }
   }
 
@@ -894,34 +950,34 @@ class ESPNService {
   /// Calculate confidence score based on data completeness
   double _calculateConfidenceScore(Map<String, dynamic> gameData) {
     double score = 0.0;
-    
+
     // Check data completeness
     if (gameData['header'] != null) score += 0.2;
     if (gameData['competitions'] != null && gameData['competitions'].isNotEmpty) score += 0.3;
     if (gameData['competitions']?[0]?['competitors'] != null) score += 0.3;
     if (gameData['situation'] != null) score += 0.1;
     if (gameData['notes'] != null) score += 0.1;
-    
+
     return score;
   }
 
   /// Get multiple games intelligence for venue dashboard
   Future<List<GameIntelligence>> getUpcomingGamesIntelligence(List<String> gameIds) async {
     final List<GameIntelligence> intelligenceList = [];
-    
+
     // Process games in parallel for better performance
     final futures = gameIds.map((gameId) => getGameIntelligence(gameId));
     final results = await Future.wait(futures);
-    
+
     for (final intelligence in results) {
       if (intelligence != null) {
         intelligenceList.add(intelligence);
       }
     }
-    
+
     // Sort by crowd factor (highest impact games first)
     intelligenceList.sort((a, b) => b.crowdFactor.compareTo(a.crowdFactor));
-    
+
     return intelligenceList;
   }
 
@@ -941,7 +997,7 @@ class ESPNService {
         'status': 'not_initialized',
       };
     }
-    
+
     return {
       'cached_games': _gameIntelligenceBox!.length,
       'cache_size_kb': _gameIntelligenceBox!.toMap().toString().length / 1024,
@@ -956,9 +1012,9 @@ class ESPNService {
       final gameIntelligence = await getGameIntelligence(gameId);
       if (gameIntelligence == null) return null;
 
-      // Get historical context
+      // Get World Cup historical context
       final historicalContext = await _historicalService.getMatchupHistory(
-        gameIntelligence.homeTeam, 
+        gameIntelligence.homeTeam,
         gameIntelligence.awayTeam
       );
 
@@ -988,7 +1044,6 @@ class ESPNService {
         }
       };
     } catch (e) {
-      // Debug output removed
       return null;
     }
   }
@@ -1001,28 +1056,28 @@ class ESPNService {
   }) async {
     try {
       final currentGames = await getCurrentGames();
-      
+
       for (final game in currentGames) {
         final competitions = game['competitions'] as List? ?? [];
-        
+
         if (competitions.isNotEmpty) {
           final competitors = competitions[0]['competitors'] as List? ?? [];
-          
+
           String espnHomeTeam = '';
           String espnAwayTeam = '';
-          
+
           for (var team in competitors) {
             final teamData = team['team'] ?? {};
             final isHome = team['homeAway'] == 'home';
             final teamName = teamData['displayName'] ?? '';
-            
+
             if (isHome) {
               espnHomeTeam = teamName;
             } else {
               espnAwayTeam = teamName;
             }
           }
-          
+
           // Check if teams match (case insensitive, partial matching)
           if (_teamsMatch(homeTeam, espnHomeTeam) && _teamsMatch(awayTeam, espnAwayTeam)) {
             // If date is provided, check if it's close (within 1 day)
@@ -1031,67 +1086,70 @@ class ESPNService {
               if (espnDate != null) {
                 final difference = gameDate.difference(espnDate).inDays.abs();
                 if (difference <= 1) {
-                  // Debug output removed
                   return game['id']?.toString();
                 }
               }
             } else {
               // No date provided, just match by teams
-              // Debug output removed
               return game['id']?.toString();
             }
           }
         }
       }
-      
-      // Debug output removed
+
       return null;
     } catch (e) {
-      // Debug output removed
       return null;
     }
   }
 
   /// Helper method to check if team names match (handles common variations)
+  /// Supports international team name variations (e.g., "USA" vs "United States")
   bool _teamsMatch(String team1, String team2) {
     if (team1.isEmpty || team2.isEmpty) return false;
-    
+
     // Remove common suffixes and normalize
     final normalized1 = _normalizeTeamName(team1);
     final normalized2 = _normalizeTeamName(team2);
-    
+
     // Exact match
     if (normalized1 == normalized2) return true;
-    
-    // Check if one contains the other (for cases like "Alabama" vs "Alabama Crimson Tide")
+
+    // Check if one contains the other
     if (normalized1.contains(normalized2) || normalized2.contains(normalized1)) return true;
-    
-    // Check common abbreviations
+
+    // Check common international team name variations
     final abbreviations = {
-      'university of alabama': 'alabama',
-      'university of georgia': 'georgia', 
-      'university of florida': 'florida',
-      'university of tennessee': 'tennessee',
-      'university of kentucky': 'kentucky',
-      'university of mississippi': 'ole miss',
-      'university of south carolina': 'south carolina',
-      'louisiana state university': 'lsu',
-      'university of missouri': 'missouri',
-      'university of arkansas': 'arkansas',
-      'texas a&m university': 'texas a&m',
-      'mississippi state university': 'mississippi state',
-      'vanderbilt university': 'vanderbilt',
-      'university of texas': 'texas',
-      'oklahoma university': 'oklahoma',
+      'united states': 'usa',
+      'united states of america': 'usa',
+      'korea republic': 'south korea',
+      'republic of korea': 'south korea',
+      'ir iran': 'iran',
+      'islamic republic of iran': 'iran',
+      'cote divoire': 'ivory coast',
+      'congo dr': 'dr congo',
+      'democratic republic of the congo': 'dr congo',
+      'czech republic': 'czechia',
+      'kingdom of saudi arabia': 'saudi arabia',
+      'peoples republic of china': 'china',
+      'china pr': 'china',
+      'chinese taipei': 'taiwan',
+      'bosnia and herzegovina': 'bosnia',
+      'trinidad and tobago': 'trinidad',
+      'antigua and barbuda': 'antigua',
+      'saint kitts and nevis': 'st kitts',
+      'new zealand': 'all whites',
+      'costa rica': 'los ticos',
+      'el salvador': 'la selecta',
     };
-    
+
     for (final entry in abbreviations.entries) {
       if ((normalized1.contains(entry.key) && normalized2.contains(entry.value)) ||
           (normalized1.contains(entry.value) && normalized2.contains(entry.key))) {
         return true;
       }
     }
-    
+
     return false;
   }
 
@@ -1103,7 +1161,7 @@ class ESPNService {
         .trim();
   }
 
-  /// Get Week 1 games with full historical context
+  /// Get opening round matches with full historical context
   Future<List<Map<String, dynamic>>> getWeek1GamesWithHistory() async {
     try {
       final games = await getCurrentGames();
@@ -1124,8 +1182,7 @@ class ESPNService {
 
       return enhancedGames;
     } catch (e) {
-      // Debug output removed
       return [];
     }
   }
-} 
+}

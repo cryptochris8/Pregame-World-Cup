@@ -243,7 +243,7 @@ class SocialDataSourceImpl implements SocialDataSource {
   Future<void> _updateGameSocialCount(String gameId, String field, int increment) async {
     try {
       // This would update the games collection if we store social counts there
-      // For now, we'll just log it since we're using the NCAA API data
+      // For now, we'll just log it since we're using the FIFA/SportsData.io API data
       LoggingService.debug('Would update game $gameId $field by $increment', tag: 'SocialDataSource');
     } catch (e) {
       LoggingService.error('Error updating game social count: $e', tag: 'SocialDataSource');

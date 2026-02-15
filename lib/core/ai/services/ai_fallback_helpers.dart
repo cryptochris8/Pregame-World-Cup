@@ -16,13 +16,13 @@ class AIFallbackHelpers {
     if (lowerPrompt.contains('venue') ||
         lowerPrompt.contains('restaurant') ||
         lowerPrompt.contains('bar')) {
-      return 'I recommend checking out popular sports bars in your area for the best game day atmosphere!';
+      return 'I recommend checking out popular sports bars in your area for the best match day atmosphere!';
     } else if (lowerPrompt.contains('prediction') ||
         lowerPrompt.contains('game') ||
         lowerPrompt.contains('score')) {
-      return 'This should be an exciting game! Check recent team performance and injury reports for the best insights.';
+      return 'This should be an exciting match! Check recent team form and squad updates for the best insights.';
     } else {
-      return 'I\'m here to help you find the best game day experience. Try asking about venues or game predictions!';
+      return 'I\'m here to help you find the best match day experience. Try asking about venues or match predictions!';
     }
   }
 
@@ -74,8 +74,8 @@ class AIFallbackHelpers {
                 .length /
             (totalInteractions > 0 ? totalInteractions : 1),
       },
-      'preferredGameTypes': ['conference'],
-      'recommendedVenues': ['sports_bar', 'stadium'],
+      'preferredGameTypes': ['group_stage', 'knockout'],
+      'recommendedVenues': ['sports_bar', 'fan_zone'],
       'engagementScore': totalInteractions > 5 ? 0.7 : 0.3,
     };
   }
@@ -129,24 +129,24 @@ class AIFallbackHelpers {
     final homeHash = homeTeam.hashCode.abs();
     final awayHash = awayTeam.hashCode.abs();
 
-    // Generate more realistic scores based on team characteristics
-    final homeBaseScore = 17 + (homeHash % 21); // 17-37 range
-    final awayBaseScore = 14 + (awayHash % 21); // 14-34 range
+    // Generate realistic soccer scores (0-4 typical range)
+    final homeBaseScore = homeHash % 4; // 0-3 range
+    final awayBaseScore = awayHash % 4; // 0-3 range
 
-    // Add home field advantage
-    final homeScore = homeBaseScore + 3;
+    // Add slight home advantage
+    final homeScore = homeBaseScore + (homeHash % 2); // 0-4
     final awayScore = awayBaseScore;
 
     final homeWins = homeScore > awayScore;
     final confidence =
-        0.65 + ((homeHash + awayHash) % 25) / 100.0; // 0.65 to 0.9
+        0.55 + ((homeHash + awayHash) % 30) / 100.0; // 0.55 to 0.85
 
     // Generate team-specific analysis
     final analysis = _generateTeamSpecificAnalysis(
         homeTeam, awayTeam, homeScore, awayScore);
 
     return {
-      'prediction': homeWins ? 'home_win' : 'away_win',
+      'prediction': homeScore == awayScore ? 'draw' : (homeWins ? 'home_win' : 'away_win'),
       'confidence': confidence,
       'predictedScore': {
         'home': homeScore,
@@ -163,18 +163,22 @@ class AIFallbackHelpers {
   /// Generate team-specific analysis
   static String _generateTeamSpecificAnalysis(
       String homeTeam, String awayTeam, int homeScore, int awayScore) {
-    final winner = homeScore > awayScore ? homeTeam : awayTeam;
+    final winner = homeScore > awayScore ? homeTeam : (awayScore > homeScore ? awayTeam : null);
     final margin = (homeScore - awayScore).abs();
 
-    final marginText = margin <= 3
-        ? 'close game'
-        : margin <= 7
-            ? 'competitive matchup'
+    final marginText = margin == 0
+        ? 'tightly contested draw'
+        : margin == 1
+            ? 'closely fought match'
             : 'decisive victory';
 
-    return '''$winner is projected to win in what should be a $marginText.
+    final resultText = winner != null
+        ? '$winner is projected to win in what should be a $marginText.'
+        : 'This match is projected to end in a $marginText.';
 
-The prediction is based on statistical analysis of team performance metrics, including attacking efficiency, defensive organization, and home advantage factors. $homeTeam benefits from playing at home, which historically provides an edge in international soccer.
+    return '''$resultText
+
+The prediction is based on statistical analysis of team performance metrics, including attacking efficiency, defensive organization, and tournament form. $homeTeam benefits from favorable conditions, which historically provides an edge in international soccer.
 
 Key factors include possession control, set-piece quality, and goalkeeping form. Both teams have shown competitive play in recent matches, making this an intriguing matchup for fans and analysts alike.''';
   }
@@ -183,27 +187,27 @@ Key factors include possession control, set-piece quality, and goalkeeping form.
   static List<String> _generateKeyFactors(
       String homeTeam, String awayTeam, bool homeWins) {
     final factors = <String>[
-      'Home field advantage (+3 points)',
-      'Offensive line play and protection',
-      'Turnover margin and ball security',
-      'Third-down conversion efficiency',
+      'Home crowd advantage and familiar conditions',
+      'Midfield control and possession dominance',
+      'Defensive shape and pressing intensity',
+      'Set piece execution and aerial threat',
     ];
 
     // Add team-specific factors
-    if (homeTeam.contains('Alabama') ||
-        homeTeam.contains('Georgia') ||
-        homeTeam.contains('LSU')) {
-      factors.add('Elite recruiting and depth advantage');
+    if (homeTeam.contains('Brazil') ||
+        homeTeam.contains('France') ||
+        homeTeam.contains('Germany')) {
+      factors.add('Elite squad depth and tournament pedigree');
     }
 
-    if (awayTeam.contains('Auburn') || awayTeam.contains('Tennessee')) {
-      factors.add('Strong road game experience');
+    if (awayTeam.contains('Argentina') || awayTeam.contains('Spain')) {
+      factors.add('Strong tactical identity and away form');
     }
 
     if (homeWins) {
-      factors.add('Crowd noise and venue atmosphere');
+      factors.add('Crowd support and venue atmosphere');
     } else {
-      factors.add('Away team motivation and focus');
+      factors.add('Away team composure and counter-attacking threat');
     }
 
     return factors;
@@ -214,19 +218,19 @@ Key factors include possession control, set-piece quality, and goalkeeping form.
       String homeTeam, String awayTeam) {
     return [
       {
-        'matchup': 'Quarterback Protection',
-        'description': '$homeTeam offensive line vs $awayTeam pass rush',
-        'impact': 'Critical for establishing offensive rhythm',
+        'matchup': 'Midfield Battle',
+        'description': '$homeTeam midfield control vs $awayTeam pressing game',
+        'impact': 'Critical for dictating tempo and controlling possession',
       },
       {
-        'matchup': 'Running Game Control',
-        'description': '$homeTeam ground attack vs $awayTeam run defense',
-        'impact': 'Will determine time of possession and game flow',
+        'matchup': 'Defensive Shape',
+        'description': '$homeTeam defensive line vs $awayTeam attacking movement',
+        'impact': 'Will determine chances created and goals conceded',
       },
       {
-        'matchup': 'Secondary Coverage',
-        'description': '$awayTeam receivers vs $homeTeam defensive backs',
-        'impact': 'Key to limiting big-play opportunities',
+        'matchup': 'Wing Play',
+        'description': '$awayTeam wide attackers vs $homeTeam full-backs',
+        'impact': 'Key to creating crossing opportunities and overlapping runs',
       },
     ];
   }
@@ -234,16 +238,19 @@ Key factors include possession control, set-piece quality, and goalkeeping form.
   /// Generate venue impact analysis
   static String _generateVenueImpact(String homeTeam) {
     final venueNames = {
-      'Alabama Crimson Tide': 'Bryant-Denny Stadium',
-      'Auburn Tigers': 'Jordan-Hare Stadium',
-      'Georgia Bulldogs': 'Sanford Stadium',
-      'Florida Gators': 'Ben Hill Griffin Stadium',
-      'LSU Tigers': 'Tiger Stadium',
-      'Tennessee Volunteers': 'Neyland Stadium',
+      'United States': 'MetLife Stadium',
+      'Mexico': 'Estadio Azteca',
+      'Canada': 'BMO Field',
+      'Brazil': 'AT&T Stadium',
+      'Argentina': 'Hard Rock Stadium',
+      'France': 'SoFi Stadium',
+      'Germany': 'Mercedes-Benz Stadium',
+      'England': 'Lincoln Financial Field',
+      'Spain': 'NRG Stadium',
     };
 
-    final venue = venueNames[homeTeam] ?? 'home stadium';
+    final venue = venueNames[homeTeam] ?? 'the designated World Cup venue';
 
-    return 'Playing at $venue provides significant home field advantage with passionate fan support, familiar surroundings, and optimal preparation routines. The crowd noise and atmosphere can impact visiting team communication and execution.';
+    return 'Playing at $venue provides a significant boost with passionate fan support, world-class facilities, and optimal match conditions. The atmosphere at World Cup venues can influence player performance and create an electrifying environment that elevates the intensity of every contest.';
   }
 }

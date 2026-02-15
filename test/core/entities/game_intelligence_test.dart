@@ -20,8 +20,8 @@ void main() {
 
       final intelligence = GameIntelligence(
         gameId: 'game_1',
-        homeTeam: 'Georgia',
-        awayTeam: 'Alabama',
+        homeTeam: 'Brazil',
+        awayTeam: 'Argentina',
         homeTeamRank: 3,
         awayTeamRank: 1,
         crowdFactor: 0.95,
@@ -29,16 +29,16 @@ void main() {
         hasChampionshipImplications: true,
         broadcastNetwork: 'CBS',
         expectedTvAudience: 15000000,
-        keyStorylines: ['SEC Championship implications', 'Rivalry game'],
-        teamStats: {'georgia': {}, 'alabama': {}},
+        keyStorylines: ['World Cup knockout stage implications', 'Rivalry game'],
+        teamStats: {'brazil': {}, 'argentina': {}},
         lastUpdated: now,
         confidenceScore: 0.85,
         venueRecommendations: venueRecs,
       );
 
       expect(intelligence.gameId, equals('game_1'));
-      expect(intelligence.homeTeam, equals('Georgia'));
-      expect(intelligence.awayTeam, equals('Alabama'));
+      expect(intelligence.homeTeam, equals('Brazil'));
+      expect(intelligence.awayTeam, equals('Argentina'));
       expect(intelligence.homeTeamRank, equals(3));
       expect(intelligence.awayTeamRank, equals(1));
       expect(intelligence.crowdFactor, equals(0.95));
@@ -56,14 +56,14 @@ void main() {
 
       final intelligence = GameIntelligence(
         gameId: 'game_1',
-        homeTeam: 'Vanderbilt',
-        awayTeam: 'South Carolina',
+        homeTeam: 'Costa Rica',
+        awayTeam: 'Japan',
         homeTeamRank: null,
         awayTeamRank: null,
         crowdFactor: 0.65,
         isRivalryGame: false,
         hasChampionshipImplications: false,
-        broadcastNetwork: 'SEC Network',
+        broadcastNetwork: 'FOX Sports',
         expectedTvAudience: 500000,
         keyStorylines: [],
         teamStats: {},
@@ -83,14 +83,14 @@ void main() {
 
         final original = GameIntelligence(
           gameId: 'game_1',
-          homeTeam: 'Georgia',
-          awayTeam: 'Florida',
+          homeTeam: 'Brazil',
+          awayTeam: 'France',
           crowdFactor: 0.85,
           isRivalryGame: true,
           hasChampionshipImplications: false,
           broadcastNetwork: 'CBS',
           expectedTvAudience: 10000000,
-          keyStorylines: ['World\'s Largest Outdoor Cocktail Party'],
+          keyStorylines: ['Superclasico de las Americas'],
           teamStats: {},
           lastUpdated: now,
           confidenceScore: 0.80,
@@ -126,8 +126,8 @@ void main() {
 
         final intelligence = GameIntelligence(
           gameId: 'game_1',
-          homeTeam: 'LSU',
-          awayTeam: 'Alabama',
+          homeTeam: 'Germany',
+          awayTeam: 'Argentina',
           homeTeamRank: 5,
           awayTeamRank: 2,
           crowdFactor: 0.98,
@@ -135,8 +135,8 @@ void main() {
           hasChampionshipImplications: true,
           broadcastNetwork: 'CBS',
           expectedTvAudience: 12000000,
-          keyStorylines: ['Top 5 matchup', 'SEC West showdown'],
-          teamStats: {'lsu': {'wins': 7}, 'alabama': {'wins': 8}},
+          keyStorylines: ['Top 5 matchup', 'World Cup group stage showdown'],
+          teamStats: {'germany': {'wins': 7}, 'argentina': {'wins': 8}},
           lastUpdated: now,
           confidenceScore: 0.88,
           venueRecommendations: venueRecs,
@@ -145,8 +145,8 @@ void main() {
         final json = intelligence.toJson();
 
         expect(json['gameId'], equals('game_1'));
-        expect(json['homeTeam'], equals('LSU'));
-        expect(json['awayTeam'], equals('Alabama'));
+        expect(json['homeTeam'], equals('Germany'));
+        expect(json['awayTeam'], equals('Argentina'));
         expect(json['homeTeamRank'], equals(5));
         expect(json['awayTeamRank'], equals(2));
         expect(json['crowdFactor'], equals(0.98));
@@ -163,8 +163,8 @@ void main() {
       test('fromJson deserializes correctly', () {
         final json = {
           'gameId': 'game_1',
-          'homeTeam': 'Tennessee',
-          'awayTeam': 'Georgia',
+          'homeTeam': 'Spain',
+          'awayTeam': 'Brazil',
           'homeTeamRank': 6,
           'awayTeamRank': 1,
           'crowdFactor': 0.92,
@@ -172,14 +172,14 @@ void main() {
           'hasChampionshipImplications': true,
           'broadcastNetwork': 'CBS',
           'expectedTvAudience': 11000000,
-          'keyStorylines': ['Neyland Stadium blackout', 'SEC East title'],
-          'teamStats': {'tennessee': {}, 'georgia': {}},
+          'keyStorylines': ['World Cup Round of 16', 'Group stage decider'],
+          'teamStats': {'spain': {}, 'brazil': {}},
           'lastUpdated': '2024-11-18T19:00:00.000',
           'confidenceScore': 0.85,
           'venueRecommendations': {
             'expectedTrafficIncrease': 0.50,
             'staffingRecommendation': 'Maximum staffing',
-            'suggestedSpecials': ['Rocky Top Wings'],
+            'suggestedSpecials': ['World Cup Watch Party Wings'],
             'inventoryAdvice': 'Double beer order',
             'marketingOpportunity': 'Blackout game',
             'revenueProjection': 25000.0,
@@ -189,12 +189,12 @@ void main() {
         final intelligence = GameIntelligence.fromJson(json);
 
         expect(intelligence.gameId, equals('game_1'));
-        expect(intelligence.homeTeam, equals('Tennessee'));
-        expect(intelligence.awayTeam, equals('Georgia'));
+        expect(intelligence.homeTeam, equals('Spain'));
+        expect(intelligence.awayTeam, equals('Brazil'));
         expect(intelligence.homeTeamRank, equals(6));
         expect(intelligence.crowdFactor, equals(0.92));
         expect(intelligence.isRivalryGame, isTrue);
-        expect(intelligence.keyStorylines, contains('Neyland Stadium blackout'));
+        expect(intelligence.keyStorylines, contains('World Cup Round of 16'));
         expect(intelligence.venueRecommendations.revenueProjection, equals(25000.0));
       });
 
@@ -202,8 +202,8 @@ void main() {
         final now = DateTime(2024, 10, 15, 15, 30, 0);
         final original = GameIntelligence(
           gameId: 'game_1',
-          homeTeam: 'Auburn',
-          awayTeam: 'Alabama',
+          homeTeam: 'Mexico',
+          awayTeam: 'Argentina',
           homeTeamRank: 15,
           awayTeamRank: 4,
           crowdFactor: 0.97,
@@ -211,7 +211,7 @@ void main() {
           hasChampionshipImplications: false,
           broadcastNetwork: 'CBS',
           expectedTvAudience: 14000000,
-          keyStorylines: ['Iron Bowl', 'Rivalry week'],
+          keyStorylines: ['Dos a Cero', 'CONCACAF rivalry'],
           teamStats: {},
           lastUpdated: now,
           confidenceScore: 0.82,
@@ -238,8 +238,8 @@ void main() {
 
         final intel1 = GameIntelligence(
           gameId: 'game_1',
-          homeTeam: 'Georgia',
-          awayTeam: 'Florida',
+          homeTeam: 'Brazil',
+          awayTeam: 'France',
           crowdFactor: 0.90,
           isRivalryGame: true,
           hasChampionshipImplications: false,
@@ -254,8 +254,8 @@ void main() {
 
         final intel2 = GameIntelligence(
           gameId: 'game_1',
-          homeTeam: 'Georgia',
-          awayTeam: 'Florida',
+          homeTeam: 'Brazil',
+          awayTeam: 'France',
           crowdFactor: 0.90,
           isRivalryGame: true,
           hasChampionshipImplications: false,
@@ -277,8 +277,8 @@ void main() {
 
         final intel1 = GameIntelligence(
           gameId: 'game_1',
-          homeTeam: 'Georgia',
-          awayTeam: 'Florida',
+          homeTeam: 'Brazil',
+          awayTeam: 'France',
           crowdFactor: 0.90,
           isRivalryGame: true,
           hasChampionshipImplications: false,
@@ -293,8 +293,8 @@ void main() {
 
         final intel2 = GameIntelligence(
           gameId: 'game_2',
-          homeTeam: 'Georgia',
-          awayTeam: 'Florida',
+          homeTeam: 'Brazil',
+          awayTeam: 'France',
           crowdFactor: 0.90,
           isRivalryGame: true,
           hasChampionshipImplications: false,
@@ -336,7 +336,7 @@ void main() {
         final recs = VenueRecommendations(
           expectedTrafficIncrease: 0.45,
           staffingRecommendation: 'Full staff',
-          suggestedSpecials: ['Touchdown Tacos'],
+          suggestedSpecials: ['Match Day Tacos'],
           inventoryAdvice: 'Stock local beers',
           marketingOpportunity: 'Rivalry week promotion',
           revenueProjection: 18000.0,
@@ -346,7 +346,7 @@ void main() {
 
         expect(json['expectedTrafficIncrease'], equals(0.45));
         expect(json['staffingRecommendation'], equals('Full staff'));
-        expect(json['suggestedSpecials'], equals(['Touchdown Tacos']));
+        expect(json['suggestedSpecials'], equals(['Match Day Tacos']));
         expect(json['inventoryAdvice'], equals('Stock local beers'));
         expect(json['marketingOpportunity'], equals('Rivalry week promotion'));
         expect(json['revenueProjection'], equals(18000.0));
@@ -375,7 +375,7 @@ void main() {
         final original = VenueRecommendations(
           expectedTrafficIncrease: 0.40,
           staffingRecommendation: 'Add kitchen staff',
-          suggestedSpecials: ['Tailgate Platter'],
+          suggestedSpecials: ['Match Day Platter'],
           inventoryAdvice: 'Prepare for high volume',
           marketingOpportunity: 'Game day promotion',
           revenueProjection: 22000.0,

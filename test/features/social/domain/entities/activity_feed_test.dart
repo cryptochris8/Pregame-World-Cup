@@ -126,15 +126,15 @@ void main() {
           userId: 'user_001',
           userName: 'Fan',
           gameId: 'game_001',
-          gameTitle: 'Alabama vs Georgia',
-          venue: 'Bryant-Denny Stadium',
+          gameTitle: 'Brazil vs Argentina',
+          venue: 'MetLife Stadium',
         );
 
         expect(item.type, equals(ActivityType.gameAttendance));
-        expect(item.content, contains('Alabama vs Georgia'));
-        expect(item.content, contains('Bryant-Denny Stadium'));
+        expect(item.content, contains('Brazil vs Argentina'));
+        expect(item.content, contains('MetLife Stadium'));
         expect(item.relatedGameId, equals('game_001'));
-        expect(item.metadata['gameTitle'], equals('Alabama vs Georgia'));
+        expect(item.metadata['gameTitle'], equals('Brazil vs Argentina'));
       });
     });
 

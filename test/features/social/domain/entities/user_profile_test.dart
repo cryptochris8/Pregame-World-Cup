@@ -34,11 +34,11 @@ void main() {
         final profile = UserProfile.create(
           userId: 'user_003',
           displayName: 'Fan',
-          favoriteTeams: const ['Alabama', 'Georgia'],
+          favoriteTeams: const ['Brazil', 'Argentina'],
         );
 
-        expect(profile.favoriteTeams, contains('Alabama'));
-        expect(profile.favoriteTeams, contains('Georgia'));
+        expect(profile.favoriteTeams, contains('Brazil'));
+        expect(profile.favoriteTeams, contains('Argentina'));
       });
     });
 
@@ -66,18 +66,18 @@ void main() {
       test('hasCompletedProfile returns true when all fields present', () {
         final profile = _createProfile(
           profileImageUrl: 'https://example.com/photo.jpg',
-          bio: 'I love football!',
-          favoriteTeams: ['Alabama'],
-          homeLocation: 'Tuscaloosa, AL',
+          bio: 'I love the World Cup!',
+          favoriteTeams: ['Brazil'],
+          homeLocation: 'Miami, FL',
         );
         expect(profile.hasCompletedProfile, isTrue);
       });
 
       test('hasCompletedProfile returns false when missing profileImageUrl', () {
         final profile = _createProfile(
-          bio: 'I love football!',
-          favoriteTeams: ['Alabama'],
-          homeLocation: 'Tuscaloosa, AL',
+          bio: 'I love the World Cup!',
+          favoriteTeams: ['Brazil'],
+          homeLocation: 'Miami, FL',
         );
         expect(profile.hasCompletedProfile, isFalse);
       });
@@ -85,8 +85,8 @@ void main() {
       test('hasCompletedProfile returns false when missing bio', () {
         final profile = _createProfile(
           profileImageUrl: 'https://example.com/photo.jpg',
-          favoriteTeams: ['Alabama'],
-          homeLocation: 'Tuscaloosa, AL',
+          favoriteTeams: ['Brazil'],
+          homeLocation: 'Miami, FL',
         );
         expect(profile.hasCompletedProfile, isFalse);
       });
@@ -94,8 +94,8 @@ void main() {
       test('hasCompletedProfile returns false when missing favorite teams', () {
         final profile = _createProfile(
           profileImageUrl: 'https://example.com/photo.jpg',
-          bio: 'I love football!',
-          homeLocation: 'Tuscaloosa, AL',
+          bio: 'I love the World Cup!',
+          homeLocation: 'Miami, FL',
         );
         expect(profile.hasCompletedProfile, isFalse);
       });
@@ -103,8 +103,8 @@ void main() {
       test('hasCompletedProfile returns false when missing homeLocation', () {
         final profile = _createProfile(
           profileImageUrl: 'https://example.com/photo.jpg',
-          bio: 'I love football!',
-          favoriteTeams: ['Alabama'],
+          bio: 'I love the World Cup!',
+          favoriteTeams: ['Brazil'],
         );
         expect(profile.hasCompletedProfile, isFalse);
       });
@@ -266,7 +266,7 @@ void main() {
           'userId': 'parsed_user',
           'displayName': 'Parsed User',
           'email': 'parsed@example.com',
-          'favoriteTeams': <dynamic>['LSU', 'Florida'],
+          'favoriteTeams': <dynamic>['Germany', 'France'],
           'preferences': <String, dynamic>{},
           'socialStats': <String, dynamic>{},
           'privacySettings': <String, dynamic>{},
@@ -515,9 +515,9 @@ UserProfile _createFullProfile() {
     displayName: 'Full User',
     email: 'full@example.com',
     profileImageUrl: 'https://example.com/photo.jpg',
-    bio: 'I am a huge football fan!',
-    favoriteTeams: const ['Alabama', 'Georgia', 'LSU'],
-    homeLocation: 'Atlanta, GA',
+    bio: 'I am a huge World Cup fan!',
+    favoriteTeams: const ['Brazil', 'Argentina', 'Germany'],
+    homeLocation: 'Miami, FL',
     preferences: const UserPreferences(
       maxTravelDistance: 10,
       preferredVenueTypes: ['sports_bar'],

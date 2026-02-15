@@ -13,9 +13,9 @@ void main() {
           'seasonType': 1,
           'week': 5,
           'status': 'Scheduled',
-          'awayTeamName': 'Alabama',
-          'homeTeamName': 'Georgia',
-          'channel': 'ESPN',
+          'awayTeamName': 'Argentina',
+          'homeTeamName': 'Brazil',
+          'channel': 'FOX',
         };
 
         final game = GameSchedule.fromMap(data);
@@ -26,16 +26,16 @@ void main() {
         expect(game.seasonType, equals(1));
         expect(game.week, equals(5));
         expect(game.status, equals('Scheduled'));
-        expect(game.awayTeamName, equals('Alabama'));
-        expect(game.homeTeamName, equals('Georgia'));
-        expect(game.channel, equals('ESPN'));
+        expect(game.awayTeamName, equals('Argentina'));
+        expect(game.homeTeamName, equals('Brazil'));
+        expect(game.channel, equals('FOX'));
       });
 
       test('parses date strings', () {
         final data = {
           'gameId': 'game_002',
-          'awayTeamName': 'LSU',
-          'homeTeamName': 'Florida',
+          'awayTeamName': 'Germany',
+          'homeTeamName': 'France',
           'day': '2025-10-15',
           'dateTime': '2025-10-15T19:00:00',
           'dateTimeUTC': '2025-10-15T23:00:00Z',
@@ -54,51 +54,51 @@ void main() {
       test('parses nested stadium data', () {
         final data = {
           'gameId': 'game_003',
-          'awayTeamName': 'Auburn',
-          'homeTeamName': 'Tennessee',
+          'awayTeamName': 'Mexico',
+          'homeTeamName': 'USA',
           'stadium': {
             'StadiumID': 1,
-            'Name': 'Neyland Stadium',
-            'City': 'Knoxville',
-            'State': 'TN',
-            'Capacity': 102455,
+            'Name': 'MetLife Stadium',
+            'City': 'East Rutherford',
+            'State': 'NJ',
+            'Capacity': 82500,
           },
         };
 
         final game = GameSchedule.fromMap(data);
 
         expect(game.stadium, isNotNull);
-        expect(game.stadium!.name, equals('Neyland Stadium'));
-        expect(game.stadium!.city, equals('Knoxville'));
-        expect(game.stadium!.state, equals('TN'));
+        expect(game.stadium!.name, equals('MetLife Stadium'));
+        expect(game.stadium!.city, equals('East Rutherford'));
+        expect(game.stadium!.state, equals('NJ'));
       });
 
       test('parses live score fields', () {
         final data = {
           'gameId': 'game_004',
-          'awayTeamName': 'Texas',
-          'homeTeamName': 'Oklahoma',
-          'awayScore': 21,
-          'homeScore': 28,
-          'period': 'Q3',
-          'timeRemaining': '5:32',
+          'awayTeamName': 'Spain',
+          'homeTeamName': 'Portugal',
+          'awayScore': 2,
+          'homeScore': 3,
+          'period': '2H',
+          'timeRemaining': "72'",
           'isLive': true,
         };
 
         final game = GameSchedule.fromMap(data);
 
-        expect(game.awayScore, equals(21));
-        expect(game.homeScore, equals(28));
-        expect(game.period, equals('Q3'));
-        expect(game.timeRemaining, equals('5:32'));
+        expect(game.awayScore, equals(2));
+        expect(game.homeScore, equals(3));
+        expect(game.period, equals('2H'));
+        expect(game.timeRemaining, equals("72'"));
         expect(game.isLive, isTrue);
       });
 
       test('parses social features fields', () {
         final data = {
           'gameId': 'game_005',
-          'awayTeamName': 'Missouri',
-          'homeTeamName': 'Kentucky',
+          'awayTeamName': 'Japan',
+          'homeTeamName': 'South Korea',
           'userPredictions': 150,
           'userComments': 45,
           'userPhotos': 20,
@@ -115,15 +115,15 @@ void main() {
 
       test('handles missing optional fields', () {
         final data = {
-          'awayTeamName': 'Vanderbilt',
-          'homeTeamName': 'South Carolina',
+          'awayTeamName': 'Costa Rica',
+          'homeTeamName': 'Canada',
         };
 
         final game = GameSchedule.fromMap(data);
 
         expect(game.gameId, equals('unknown-id'));
-        expect(game.awayTeamName, equals('Vanderbilt'));
-        expect(game.homeTeamName, equals('South Carolina'));
+        expect(game.awayTeamName, equals('Costa Rica'));
+        expect(game.homeTeamName, equals('Canada'));
         expect(game.globalGameId, isNull);
         expect(game.stadium, isNull);
         expect(game.awayScore, isNull);
@@ -131,8 +131,8 @@ void main() {
 
       test('uses id parameter when gameId not in data', () {
         final data = {
-          'awayTeamName': 'Arkansas',
-          'homeTeamName': 'Ole Miss',
+          'awayTeamName': 'Colombia',
+          'homeTeamName': 'Ecuador',
         };
 
         final game = GameSchedule.fromMap(data, id: 'custom_id_123');
@@ -162,9 +162,9 @@ void main() {
           'DateTime': '2025-10-20T15:30:00',
           'AwayTeamID': 10,
           'HomeTeamID': 20,
-          'AwayTeamName': 'Texas A&M',
-          'HomeTeamName': 'Mississippi State',
-          'Channel': 'SEC Network',
+          'AwayTeamName': 'Uruguay',
+          'HomeTeamName': 'Paraguay',
+          'Channel': 'FOX Sports',
           'NeutralVenue': false,
         };
 
@@ -175,51 +175,51 @@ void main() {
         expect(game.season, equals('2025'));
         expect(game.week, equals(8));
         expect(game.status, equals('Scheduled'));
-        expect(game.awayTeamName, equals('Texas A&M'));
-        expect(game.homeTeamName, equals('Mississippi State'));
-        expect(game.channel, equals('SEC Network'));
+        expect(game.awayTeamName, equals('Uruguay'));
+        expect(game.homeTeamName, equals('Paraguay'));
+        expect(game.channel, equals('FOX Sports'));
         expect(game.neutralVenue, isFalse);
       });
 
       test('parses nested Stadium in SportsData.io format', () {
         final json = {
           'GameID': 11111,
-          'AwayTeamName': 'Florida',
-          'HomeTeamName': 'LSU',
+          'AwayTeamName': 'France',
+          'HomeTeamName': 'Germany',
           'Stadium': {
             'StadiumID': 5,
-            'Name': 'Tiger Stadium',
-            'City': 'Baton Rouge',
-            'State': 'LA',
-            'GeoLat': 30.4120,
-            'GeoLong': -91.1847,
+            'Name': 'AT&T Stadium',
+            'City': 'Arlington',
+            'State': 'TX',
+            'GeoLat': 32.7473,
+            'GeoLong': -97.0945,
           },
         };
 
         final game = GameSchedule.fromSportsDataIo(json);
 
         expect(game.stadium, isNotNull);
-        expect(game.stadium!.name, equals('Tiger Stadium'));
-        expect(game.stadium!.geoLat, equals(30.4120));
-        expect(game.stadium!.geoLong, equals(-91.1847));
+        expect(game.stadium!.name, equals('AT&T Stadium'));
+        expect(game.stadium!.geoLat, equals(32.7473));
+        expect(game.stadium!.geoLong, equals(-97.0945));
       });
 
       test('parses score information', () {
         final json = {
           'GameID': 22222,
-          'AwayTeamName': 'Georgia',
-          'HomeTeamName': 'Alabama',
+          'AwayTeamName': 'Brazil',
+          'HomeTeamName': 'Argentina',
           'Status': 'InProgress',
-          'AwayTeamScore': 14,
-          'HomeTeamScore': 21,
+          'AwayTeamScore': 2,
+          'HomeTeamScore': 1,
           'Period': '3',
           'TimeRemainingMinutes': 8,
         };
 
         final game = GameSchedule.fromSportsDataIo(json);
 
-        expect(game.awayScore, equals(14));
-        expect(game.homeScore, equals(21));
+        expect(game.awayScore, equals(2));
+        expect(game.homeScore, equals(1));
         expect(game.isLive, isTrue);
         expect(game.period, equals('3'));
         expect(game.timeRemaining, equals('8'));
@@ -227,8 +227,8 @@ void main() {
 
       test('handles missing GameID', () {
         final json = {
-          'AwayTeamName': 'Kentucky',
-          'HomeTeamName': 'Tennessee',
+          'AwayTeamName': 'South Korea',
+          'HomeTeamName': 'Japan',
         };
 
         final game = GameSchedule.fromSportsDataIo(json);
@@ -238,8 +238,8 @@ void main() {
       test('handles string GameID', () {
         final json = {
           'GameID': '99999',
-          'AwayTeamName': 'Auburn',
-          'HomeTeamName': 'Arkansas',
+          'AwayTeamName': 'Mexico',
+          'HomeTeamName': 'Colombia',
         };
 
         final game = GameSchedule.fromSportsDataIo(json);
@@ -256,18 +256,18 @@ void main() {
             'startDate': '2025-11-01',
             'startTimeEpoch': '1730487600',
             'gameState': 'live',
-            'currentPeriod': 'Q2',
-            'contestClock': '3:45',
-            'stadium': 'Bryant-Denny Stadium',
+            'currentPeriod': '2H',
+            'contestClock': "65'",
+            'stadium': 'Hard Rock Stadium',
             'away': {
-              'names': {'short': 'TENN'},
-              'name': 'Tennessee',
-              'score': 17,
+              'names': {'short': 'JPN'},
+              'name': 'Japan',
+              'score': 1,
             },
             'home': {
-              'names': {'short': 'BAMA'},
-              'name': 'Alabama',
-              'score': 24,
+              'names': {'short': 'USA'},
+              'name': 'United States',
+              'score': 2,
             },
           },
         };
@@ -276,13 +276,13 @@ void main() {
 
         expect(game.gameId, equals('api_game_001'));
         expect(game.week, equals(10));
-        expect(game.awayTeamName, equals('TENN'));
-        expect(game.homeTeamName, equals('BAMA'));
-        expect(game.awayScore, equals(17));
-        expect(game.homeScore, equals(24));
+        expect(game.awayTeamName, equals('JPN'));
+        expect(game.homeTeamName, equals('USA'));
+        expect(game.awayScore, equals(1));
+        expect(game.homeScore, equals(2));
         expect(game.isLive, isTrue);
-        expect(game.period, equals('Q2'));
-        expect(game.timeRemaining, equals('3:45'));
+        expect(game.period, equals('2H'));
+        expect(game.timeRemaining, equals("65'"));
       });
 
       test('handles flat structure without nested game', () {
@@ -290,18 +290,18 @@ void main() {
           'gameID': 'flat_game_001',
           'startDate': '2025-11-08',
           'away': {
-            'name': 'Missouri',
+            'name': 'Netherlands',
           },
           'home': {
-            'name': 'South Carolina',
+            'name': 'Belgium',
           },
         };
 
         final game = GameSchedule.fromJson(json);
 
         expect(game.gameId, equals('flat_game_001'));
-        expect(game.awayTeamName, equals('Missouri'));
-        expect(game.homeTeamName, equals('South Carolina'));
+        expect(game.awayTeamName, equals('Netherlands'));
+        expect(game.homeTeamName, equals('Belgium'));
       });
 
       test('handles missing team data', () {
@@ -325,11 +325,11 @@ void main() {
           seasonType: 1,
           week: 12,
           status: 'Final',
-          awayTeamName: 'LSU',
-          homeTeamName: 'Florida',
-          awayScore: 35,
-          homeScore: 28,
-          channel: 'CBS',
+          awayTeamName: 'Germany',
+          homeTeamName: 'France',
+          awayScore: 3,
+          homeScore: 2,
+          channel: 'FOX',
         );
 
         final map = game.toMap();
@@ -339,17 +339,17 @@ void main() {
         expect(map['season'], equals('2025'));
         expect(map['week'], equals(12));
         expect(map['status'], equals('Final'));
-        expect(map['awayTeamName'], equals('LSU'));
-        expect(map['homeTeamName'], equals('Florida'));
-        expect(map['awayScore'], equals(35));
-        expect(map['homeScore'], equals(28));
+        expect(map['awayTeamName'], equals('Germany'));
+        expect(map['homeTeamName'], equals('France'));
+        expect(map['awayScore'], equals(3));
+        expect(map['homeScore'], equals(2));
       });
 
       test('serializes dates as ISO strings', () {
         final game = GameSchedule(
           gameId: 'date_game',
-          awayTeamName: 'Texas',
-          homeTeamName: 'Oklahoma',
+          awayTeamName: 'Spain',
+          homeTeamName: 'Portugal',
           day: DateTime(2025, 10, 11),
           dateTime: DateTime(2025, 10, 11, 12, 0),
         );
@@ -365,8 +365,8 @@ void main() {
       test('serializes for Firestore', () {
         final game = GameSchedule(
           gameId: 'fs_game_001',
-          awayTeamName: 'Vanderbilt',
-          homeTeamName: 'Kentucky',
+          awayTeamName: 'Costa Rica',
+          homeTeamName: 'Honduras',
           status: 'Scheduled',
           week: 6,
         );
@@ -375,8 +375,8 @@ void main() {
 
         expect(map['week'], equals(6));
         expect(map['status'], equals('Scheduled'));
-        expect(map['awayTeamName'], equals('Vanderbilt'));
-        expect(map['homeTeamName'], equals('Kentucky'));
+        expect(map['awayTeamName'], equals('Costa Rica'));
+        expect(map['homeTeamName'], equals('Honduras'));
       });
     });
   });
@@ -386,47 +386,47 @@ void main() {
       test('parses PascalCase keys', () {
         final map = {
           'StadiumID': 100,
-          'Name': 'Sanford Stadium',
-          'City': 'Athens',
+          'Name': 'Mercedes-Benz Stadium',
+          'City': 'Atlanta',
           'State': 'GA',
-          'Capacity': 92746,
-          'YearOpened': 1929,
-          'GeoLat': 33.9498,
-          'GeoLong': -83.3734,
-          'Team': 'Georgia Bulldogs',
+          'Capacity': 71000,
+          'YearOpened': 2017,
+          'GeoLat': 33.7553,
+          'GeoLong': -84.4006,
+          'Team': 'World Cup Venue',
         };
 
         final stadium = Stadium.fromMap(map);
 
         expect(stadium.stadiumId, equals(100));
-        expect(stadium.name, equals('Sanford Stadium'));
-        expect(stadium.city, equals('Athens'));
+        expect(stadium.name, equals('Mercedes-Benz Stadium'));
+        expect(stadium.city, equals('Atlanta'));
         expect(stadium.state, equals('GA'));
-        expect(stadium.capacity, equals(92746));
-        expect(stadium.yearOpened, equals(1929));
-        expect(stadium.geoLat, equals(33.9498));
-        expect(stadium.geoLong, equals(-83.3734));
-        expect(stadium.team, equals('Georgia Bulldogs'));
+        expect(stadium.capacity, equals(71000));
+        expect(stadium.yearOpened, equals(2017));
+        expect(stadium.geoLat, equals(33.7553));
+        expect(stadium.geoLong, equals(-84.4006));
+        expect(stadium.team, equals('World Cup Venue'));
       });
 
       test('parses camelCase keys', () {
         final map = {
           'stadiumId': 200,
-          'name': 'Kyle Field',
-          'city': 'College Station',
+          'name': 'NRG Stadium',
+          'city': 'Houston',
           'state': 'TX',
-          'capacity': 102733,
-          'yearOpened': 1927,
-          'geoLat': 30.6101,
-          'geoLong': -96.3416,
-          'team': 'Texas A&M Aggies',
+          'capacity': 72220,
+          'yearOpened': 2002,
+          'geoLat': 29.6847,
+          'geoLong': -95.4107,
+          'team': 'World Cup Venue',
         };
 
         final stadium = Stadium.fromMap(map);
 
         expect(stadium.stadiumId, equals(200));
-        expect(stadium.name, equals('Kyle Field'));
-        expect(stadium.city, equals('College Station'));
+        expect(stadium.name, equals('NRG Stadium'));
+        expect(stadium.city, equals('Houston'));
         expect(stadium.state, equals('TX'));
       });
 
@@ -458,24 +458,24 @@ void main() {
       test('parses SportsData.io format', () {
         final json = {
           'StadiumID': 300,
-          'Name': 'Jordan-Hare Stadium',
-          'City': 'Auburn',
-          'State': 'AL',
-          'Capacity': 87451,
-          'YearOpened': 1939,
-          'GeoLat': 32.6025,
-          'GeoLong': -85.4897,
-          'Team': 'Auburn Tigers',
+          'Name': 'Lumen Field',
+          'City': 'Seattle',
+          'State': 'WA',
+          'Capacity': 69000,
+          'YearOpened': 2002,
+          'GeoLat': 47.5952,
+          'GeoLong': -122.3316,
+          'Team': 'World Cup Venue',
         };
 
         final stadium = Stadium.fromDataSource(json);
 
         expect(stadium.stadiumId, equals(300));
-        expect(stadium.name, equals('Jordan-Hare Stadium'));
-        expect(stadium.city, equals('Auburn'));
-        expect(stadium.state, equals('AL'));
-        expect(stadium.geoLat, equals(32.6025));
-        expect(stadium.geoLong, equals(-85.4897));
+        expect(stadium.name, equals('Lumen Field'));
+        expect(stadium.city, equals('Seattle'));
+        expect(stadium.state, equals('WA'));
+        expect(stadium.geoLat, equals(47.5952));
+        expect(stadium.geoLong, equals(-122.3316));
       });
     });
 
@@ -483,27 +483,27 @@ void main() {
       test('serializes all fields', () {
         final stadium = Stadium(
           stadiumId: 400,
-          name: 'Ben Hill Griffin Stadium',
-          city: 'Gainesville',
+          name: 'Hard Rock Stadium',
+          city: 'Miami Gardens',
           state: 'FL',
-          capacity: 88548,
-          yearOpened: 1930,
-          geoLat: 29.6500,
-          geoLong: -82.3486,
-          team: 'Florida Gators',
+          capacity: 65326,
+          yearOpened: 1987,
+          geoLat: 25.9580,
+          geoLong: -80.2389,
+          team: 'World Cup Venue',
         );
 
         final map = stadium.toFirestore();
 
         expect(map['StadiumID'], equals(400));
-        expect(map['Name'], equals('Ben Hill Griffin Stadium'));
-        expect(map['City'], equals('Gainesville'));
+        expect(map['Name'], equals('Hard Rock Stadium'));
+        expect(map['City'], equals('Miami Gardens'));
         expect(map['State'], equals('FL'));
-        expect(map['Capacity'], equals(88548));
-        expect(map['YearOpened'], equals(1930));
-        expect(map['GeoLat'], equals(29.6500));
-        expect(map['GeoLong'], equals(-82.3486));
-        expect(map['Team'], equals('Florida Gators'));
+        expect(map['Capacity'], equals(65326));
+        expect(map['YearOpened'], equals(1987));
+        expect(map['GeoLat'], equals(25.9580));
+        expect(map['GeoLong'], equals(-80.2389));
+        expect(map['Team'], equals('World Cup Venue'));
       });
 
       test('handles null values', () {

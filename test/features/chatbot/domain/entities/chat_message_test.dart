@@ -114,14 +114,14 @@ void main() {
       });
 
       test('handles unicode and emojis', () {
-        const emojiText = 'Go Dawgs! 🏈🐶';
+        const emojiText = 'Vai Brasil! \u26BD\uD83C\uDDF3';
         final message = ChatMessage(
           text: emojiText,
           type: ChatMessageType.user,
         );
 
-        expect(message.text, contains('🏈'));
-        expect(message.text, contains('🐶'));
+        expect(message.text, contains('\u26BD'));
+        expect(message.text, contains('Brasil'));
       });
     });
 
@@ -164,12 +164,12 @@ void main() {
       test('can create a conversation flow', () {
         final messages = [
           ChatMessage(
-            text: 'What time is the Georgia game?',
+            text: 'What time is the Brazil match?',
             type: ChatMessageType.user,
             timestamp: DateTime(2024, 10, 15, 12, 0, 0),
           ),
           ChatMessage(
-            text: 'The Georgia Bulldogs play at 3:30 PM EST against Florida.',
+            text: 'Brazil plays at 3:30 PM EST against Argentina.',
             type: ChatMessageType.bot,
             timestamp: DateTime(2024, 10, 15, 12, 0, 2),
           ),
@@ -179,7 +179,7 @@ void main() {
             timestamp: DateTime(2024, 10, 15, 12, 0, 10),
           ),
           ChatMessage(
-            text: 'The game is at TIAA Bank Field in Jacksonville, Florida.',
+            text: 'The match is at MetLife Stadium in East Rutherford, New Jersey.',
             type: ChatMessageType.bot,
             timestamp: DateTime(2024, 10, 15, 12, 0, 12),
           ),

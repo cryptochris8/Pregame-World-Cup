@@ -376,9 +376,9 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
 
   Map<String, dynamic> _generateFallbackHeadToHead() {
     final scenarios = [
-      'These teams last met in an exciting conference matchup that came down to the final drive.',
-      'The previous encounter was a defensive showcase that ended in overtime.',
-      'Their last meeting featured explosive offensive displays with over 900 total yards between both teams.',
+      'These teams last met in an exciting international matchup that came down to a dramatic late goal.',
+      'The previous encounter was a defensive masterclass that ended in a tense penalty shootout.',
+      'Their last meeting featured breathtaking attacking play with end-to-end action throughout both halves.',
     ];
     final randomIndex = widget.game.homeTeamName.hashCode.abs() % scenarios.length;
     return {

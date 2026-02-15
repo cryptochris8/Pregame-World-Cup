@@ -275,53 +275,53 @@ class AITeamSeasonSummaryService {
     final wins = overall['wins'];
     final losses = overall['losses'];
 
-    final bowlGames = teamGames.where((game) =>
+    final knockoutGames = teamGames.where((game) =>
       (game.week ?? 0) >= 15 &&
       (game.homeScore != null && game.awayScore != null)
     ).toList();
 
-    String bowlEligibility = 'Not Bowl Eligible';
-    String bowlResult = '';
-    Map<String, dynamic>? bowlGame;
+    String knockoutEligibility = 'Not Eligible for Knockout Stage';
+    String knockoutResult = '';
+    Map<String, dynamic>? knockoutGame;
 
     if (wins >= 6) {
-      bowlEligibility = 'Bowl Eligible';
+      knockoutEligibility = 'Eligible for Knockout Stage';
 
-      if (bowlGames.isNotEmpty) {
-        final bowl = bowlGames.first;
-        final isHome = bowl.homeTeamName == teamName;
-        final teamScore = isHome ? bowl.homeScore! : bowl.awayScore!;
-        final opponentScore = isHome ? bowl.awayScore! : bowl.homeScore!;
-        final opponentName = isHome ? bowl.awayTeamName : bowl.homeTeamName;
+      if (knockoutGames.isNotEmpty) {
+        final match = knockoutGames.first;
+        final isHome = match.homeTeamName == teamName;
+        final teamScore = isHome ? match.homeScore! : match.awayScore!;
+        final opponentScore = isHome ? match.awayScore! : match.homeScore!;
+        final opponentName = isHome ? match.awayTeamName : match.homeTeamName;
         final isWin = teamScore > opponentScore;
 
-        bowlGame = {
+        knockoutGame = {
           'opponent': opponentName,
           'score': '$teamScore-$opponentScore',
           'result': isWin ? 'W' : 'L',
           'bowlName': TeamSeasonStatsGenerator.getBowlName(wins, losses),
         };
 
-        bowlResult = isWin ? 'Won Bowl Game' : 'Lost Bowl Game';
+        knockoutResult = isWin ? 'Won Knockout Match' : 'Eliminated in Knockout Stage';
       } else {
-        bowlResult = 'Selected for Bowl Game';
+        knockoutResult = 'Qualified for Knockout Stage';
       }
     }
 
-    // Playoff considerations
-    String playoffStatus = 'Did Not Make Playoff';
+    // Tournament progression
+    String playoffStatus = 'Group Stage Exit';
     if (wins >= 11 && losses <= 2) {
-      playoffStatus = 'Playoff Contender';
+      playoffStatus = 'Tournament Favourite';
     } else if (wins >= 9) {
-      playoffStatus = 'Ranked Team';
+      playoffStatus = 'Top-Ranked Side';
     }
 
     return {
-      'bowlEligibility': bowlEligibility,
-      'bowlResult': bowlResult,
-      'bowlGame': bowlGame,
+      'bowlEligibility': knockoutEligibility,
+      'bowlResult': knockoutResult,
+      'bowlGame': knockoutGame,
       'playoffStatus': playoffStatus,
-      'seasonOutcome': TeamSeasonStatsGenerator.getSeasonOutcome(wins, losses, bowlResult),
+      'seasonOutcome': TeamSeasonStatsGenerator.getSeasonOutcome(wins, losses, knockoutResult),
     };
   }
 
@@ -350,7 +350,7 @@ class AITeamSeasonSummaryService {
     // Try partial matching with stricter criteria
     final teamKeywords = teamName.toLowerCase().split(' ');
     final meaningfulKeywords = teamKeywords.where((word) =>
-      !['state', 'university', 'college', 'of', 'the', 'and'].contains(word)
+      !['of', 'the', 'and', 'republic', 'islands'].contains(word)
     ).toList();
 
     if (meaningfulKeywords.isNotEmpty) {
@@ -461,7 +461,7 @@ class AITeamSeasonSummaryService {
       'postseasonAnalysis': {
         'bowlEligibility': 'Data Pending',
         'bowlGame': 'Analysis pending',
-        'seasonOutcome': 'Comprehensive review coming soon'
+        'seasonOutcome': 'Comprehensive review coming soon',
       }
     };
   }

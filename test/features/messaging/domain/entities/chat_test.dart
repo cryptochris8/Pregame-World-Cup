@@ -114,15 +114,15 @@ void main() {
 
       test('Chat.team creates team chat', () {
         final chat = Chat.team(
-          teamName: 'Georgia Bulldogs Fan Group',
+          teamName: 'Brazil Supporters Group',
           creatorId: 'user_1',
           memberIds: const ['user_2', 'user_3', 'user_4'],
-          description: 'Go Dawgs!',
+          description: 'Vai Brasil!',
         );
 
         expect(chat.chatId, startsWith('team_'));
         expect(chat.type, equals(ChatType.team));
-        expect(chat.name, equals('Georgia Bulldogs Fan Group'));
+        expect(chat.name, equals('Brazil Supporters Group'));
         expect(chat.participantIds, hasLength(4));
         expect(chat.adminIds, equals(['user_1']));
         expect(chat.isTeamChat, isTrue);
@@ -422,7 +422,7 @@ void main() {
 
       test('isTeamChat returns true for team chats', () {
         final chat = Chat.team(
-          teamName: 'Georgia Fans',
+          teamName: 'Brazil Fans',
           creatorId: 'user_1',
           memberIds: const ['user_2'],
         );

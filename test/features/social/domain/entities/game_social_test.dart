@@ -21,7 +21,7 @@ void main() {
           userId: 'user_1',
           gameId: 'game_1',
           userDisplayName: 'John Doe',
-          predictedWinner: 'Georgia',
+          predictedWinner: 'Brazil',
           createdAt: now,
         );
 
@@ -29,7 +29,7 @@ void main() {
         expect(prediction.userId, equals('user_1'));
         expect(prediction.gameId, equals('game_1'));
         expect(prediction.userDisplayName, equals('John Doe'));
-        expect(prediction.predictedWinner, equals('Georgia'));
+        expect(prediction.predictedWinner, equals('Brazil'));
         expect(prediction.createdAt, equals(now));
         expect(prediction.likes, equals(0));
         expect(prediction.likedBy, isEmpty);
@@ -43,11 +43,11 @@ void main() {
           gameId: 'game_1',
           userDisplayName: 'Jane Smith',
           userProfileImageUrl: 'https://example.com/avatar.jpg',
-          predictedWinner: 'Alabama',
-          predictedAwayScore: 28,
-          predictedHomeScore: 21,
+          predictedWinner: 'Argentina',
+          predictedAwayScore: 2,
+          predictedHomeScore: 1,
           confidence: 'high',
-          reasoning: 'Strong passing game',
+          reasoning: 'Strong midfield control',
           createdAt: now,
           isCorrect: true,
           likes: 15,
@@ -55,10 +55,10 @@ void main() {
         );
 
         expect(prediction.userProfileImageUrl, equals('https://example.com/avatar.jpg'));
-        expect(prediction.predictedAwayScore, equals(28));
-        expect(prediction.predictedHomeScore, equals(21));
+        expect(prediction.predictedAwayScore, equals(2));
+        expect(prediction.predictedHomeScore, equals(1));
         expect(prediction.confidence, equals('high'));
-        expect(prediction.reasoning, equals('Strong passing game'));
+        expect(prediction.reasoning, equals('Strong midfield control'));
         expect(prediction.isCorrect, isTrue);
         expect(prediction.likes, equals(15));
         expect(prediction.likedBy, hasLength(2));
@@ -74,9 +74,9 @@ void main() {
           gameId: 'game_1',
           userDisplayName: 'Test User',
           userProfileImageUrl: 'https://example.com/avatar.jpg',
-          predictedWinner: 'LSU',
-          predictedAwayScore: 24,
-          predictedHomeScore: 17,
+          predictedWinner: 'Germany',
+          predictedAwayScore: 2,
+          predictedHomeScore: 1,
           confidence: 'medium',
           reasoning: 'Home field advantage',
           createdAt: now,
@@ -91,9 +91,9 @@ void main() {
         expect(map['gameId'], equals('game_1'));
         expect(map['userDisplayName'], equals('Test User'));
         expect(map['userProfileImageUrl'], equals('https://example.com/avatar.jpg'));
-        expect(map['predictedWinner'], equals('LSU'));
-        expect(map['predictedAwayScore'], equals(24));
-        expect(map['predictedHomeScore'], equals(17));
+        expect(map['predictedWinner'], equals('Germany'));
+        expect(map['predictedAwayScore'], equals(2));
+        expect(map['predictedHomeScore'], equals(1));
         expect(map['confidence'], equals('medium'));
         expect(map['reasoning'], equals('Home field advantage'));
         expect(map['isCorrect'], isFalse);
@@ -110,19 +110,19 @@ void main() {
           userId: 'user_1',
           gameId: 'game_1',
           userDisplayName: 'Test User',
-          predictedWinner: 'Florida',
+          predictedWinner: 'France',
           createdAt: now,
         );
 
         final updated = original.copyWith(
-          predictedWinner: 'Tennessee',
+          predictedWinner: 'Spain',
           confidence: 'high',
           isCorrect: true,
           likes: 25,
         );
 
         expect(updated.predictionId, equals('pred_1'));
-        expect(updated.predictedWinner, equals('Tennessee'));
+        expect(updated.predictedWinner, equals('Spain'));
         expect(updated.confidence, equals('high'));
         expect(updated.isCorrect, isTrue);
         expect(updated.likes, equals(25));
@@ -136,7 +136,7 @@ void main() {
           gameId: 'game_1',
           userDisplayName: 'Test User',
           userProfileImageUrl: 'https://example.com/avatar.jpg',
-          predictedWinner: 'Auburn',
+          predictedWinner: 'Mexico',
           confidence: 'low',
           createdAt: now,
           likes: 5,
@@ -148,7 +148,7 @@ void main() {
         expect(updated.userId, equals('user_1'));
         expect(updated.userDisplayName, equals('Test User'));
         expect(updated.userProfileImageUrl, equals('https://example.com/avatar.jpg'));
-        expect(updated.predictedWinner, equals('Auburn'));
+        expect(updated.predictedWinner, equals('Mexico'));
         expect(updated.confidence, equals('low'));
         expect(updated.likes, equals(10));
         expect(updated.likedBy, equals(['user_2']));

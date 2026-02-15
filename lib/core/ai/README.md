@@ -1,10 +1,10 @@
-# 🤖 AI Integration for Pregame App
+# AI Integration for Pregame World Cup 2026
 
-This module provides AI-powered features for the Pregame app using OpenAI's GPT and embedding models.
+This module provides AI-powered features for the Pregame World Cup 2026 app using OpenAI's GPT and embedding models, plus Anthropic's Claude for deep analysis.
 
-## 🚀 Features
+## Features
 
-- **Intelligent Venue Recommendations**: AI-powered venue suggestions based on user preferences and game context
+- **Intelligent Venue Recommendations**: AI-powered venue suggestions based on user preferences and match context
 - **Match Predictions**: AI-generated predictions for World Cup matches
 - **Semantic Search**: Use embeddings to find similar venues and content
 - **Natural Language Processing**: Convert user preferences into actionable insights
@@ -53,7 +53,7 @@ lib/core/ai/
 └── README.md                                    # This file
 ```
 
-## ⚙️ Setup
+## Setup
 
 ### 1. Get OpenAI API Key
 
@@ -70,12 +70,12 @@ Edit `lib/config/api_keys.dart`:
 class ApiKeys {
   // Replace with your actual OpenAI API key
   static const String openAI = 'sk-your-actual-api-key-here';
-  
+
   // ... other keys
 }
 ```
 
-⚠️ **Security Note**: In production, use environment variables instead of hardcoding keys.
+**Security Note**: In production, use environment variables instead of hardcoding keys.
 
 ### 3. Initialize AI Service
 
@@ -92,7 +92,7 @@ if (aiService.isAvailable) {
 }
 ```
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Venue Recommendations
 
@@ -104,7 +104,7 @@ final venueService = AIVenueRecommendationService(aiService);
 final recommendations = await venueService.generateVenueRecommendations(
   venues: nearbyVenues,
   userPreferences: 'I love sports bars with big screens and great food',
-  gameContext: 'Alabama vs Georgia - SEC Championship',
+  gameContext: 'Brazil vs Argentina - World Cup Semi-Final',
   maxRecommendations: 3,
 );
 
@@ -115,18 +115,18 @@ for (final rec in recommendations) {
 }
 ```
 
-### Game Predictions
+### Match Predictions
 
 ```dart
 final prediction = await aiService.generateGamePrediction(
-  homeTeam: 'Georgia Bulldogs',
-  awayTeam: 'Alabama Crimson Tide',
+  homeTeam: 'France',
+  awayTeam: 'Germany',
   gameStats: {
-    'homeRecord': '11-1',
-    'awayRecord': '10-2',
-    'homeRanking': 1,
-    'awayRanking': 4,
-    'venue': 'Mercedes-Benz Stadium',
+    'homeRecord': '8-1-1',
+    'awayRecord': '7-2-1',
+    'homeRanking': 2,
+    'awayRanking': 5,
+    'venue': 'MetLife Stadium, New Jersey',
   },
 );
 
@@ -149,8 +149,8 @@ print('Similarity: ${(similarity * 100).toStringAsFixed(1)}%');
 
 ```dart
 final response = await aiService.generateCompletion(
-  prompt: 'What makes a great game day venue?',
-  systemMessage: 'You are a helpful sports venue expert.',
+  prompt: 'What makes a great World Cup match day venue?',
+  systemMessage: 'You are a helpful sports venue expert specializing in international soccer.',
   maxTokens: 150,
   temperature: 0.7,
 );
@@ -158,7 +158,7 @@ final response = await aiService.generateCompletion(
 print('AI Response: $response');
 ```
 
-## 🛡️ Error Handling & Fallbacks
+## Error Handling & Fallbacks
 
 The AI service includes robust error handling:
 
@@ -174,7 +174,7 @@ try {
     venues: venues,
     userPreferences: preferences,
   );
-  
+
   if (recommendations.isEmpty) {
     // Handle no recommendations case
     showFallbackVenues();
@@ -189,7 +189,7 @@ try {
 }
 ```
 
-## 📊 Performance Monitoring
+## Performance Monitoring
 
 The AI service integrates with the app's performance monitoring:
 
@@ -205,7 +205,7 @@ print('AI API calls: ${stats['api_calls']}');
 print('Average response time: ${stats['average_api_time_ms']}ms');
 ```
 
-## 🔧 Configuration Options
+## Configuration Options
 
 ### Model Selection
 
@@ -235,16 +235,7 @@ final embeddings = await aiService.generateEmbeddings(
 // - Error handling for 429 responses
 ```
 
-## 🧪 Testing & Development
-
-### Run AI Demos
-
-```dart
-import 'package:pregame_world_cup/core/ai/examples/ai_usage_example.dart';
-
-final demo = AIUsageExample();
-await demo.runAllDemos(); // Runs all AI feature demonstrations
-```
+## Testing & Development
 
 ### Mock Mode
 
@@ -254,17 +245,17 @@ When no API key is configured, the service runs in mock mode:
 - Allows development without API costs
 - Maintains the same interface for easy switching
 
-## 🚀 Advanced Features
+## Advanced Features
 
 ### Custom System Messages
 
 ```dart
 final venueResponse = await aiService.generateCompletion(
-  prompt: 'Recommend a venue for the big game',
+  prompt: 'Recommend a venue for the World Cup quarter-final',
   systemMessage: '''
-    You are a local sports venue expert. Consider:
+    You are a local sports venue expert for the FIFA World Cup 2026. Consider:
     - Atmosphere and crowd energy
-    - Food quality and variety  
+    - Food quality and variety
     - TV screen visibility
     - Parking and accessibility
     Provide specific, actionable recommendations.
@@ -289,7 +280,7 @@ venues.sort((a, b) {
 });
 ```
 
-## 💰 Cost Management
+## Cost Management
 
 - **Model Selection**: Use gpt-3.5-turbo for most tasks (cheaper than gpt-4)
 - **Token Limits**: Set appropriate maxTokens to control costs
@@ -297,7 +288,7 @@ venues.sort((a, b) {
 - **Rate Limiting**: Built-in protection against excessive usage
 - **Fallbacks**: Reduce API dependency with smart fallbacks
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -306,7 +297,7 @@ venues.sort((a, b) {
    - Ensure the key starts with `sk-`
    - Verify the key is valid on OpenAI platform
 
-2. **"Rate limit exceeded" error**  
+2. **"Rate limit exceeded" error**
    - The service automatically handles this with fallbacks
    - Consider upgrading your OpenAI plan for higher limits
    - Check your usage on OpenAI dashboard
@@ -334,15 +325,15 @@ print('Mock mode: ${aiService.isMockMode}');
 LoggingService.info('Making AI request...', tag: 'AIService');
 ```
 
-## 📈 Future Enhancements
+## Future Enhancements
 
-- **Fine-tuned Models**: Custom models trained on sports venue data
-- **Real-time Updates**: Live game context integration
+- **Fine-tuned Models**: Custom models trained on soccer/football venue data
+- **Real-time Updates**: Live match context integration
 - **Multi-modal AI**: Image analysis for venue photos
 - **Personalization**: Learning from user feedback
 - **Offline Mode**: Local AI models for basic features
 
-## 🤝 Contributing
+## Contributing
 
 When adding new AI features:
 
@@ -350,8 +341,4 @@ When adding new AI features:
 2. Include proper logging with tags
 3. Add fallback responses for reliability
 4. Update this README with new features
-5. Add usage examples in the examples directory
-
----
-
-Happy coding with AI! 🎉 
+5. Add usage examples

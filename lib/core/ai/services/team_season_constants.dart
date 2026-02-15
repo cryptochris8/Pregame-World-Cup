@@ -1,39 +1,87 @@
 /// Shared constants for team season analysis services.
-/// Conference mappings, elite program lists, and team name variation data.
+/// FIFA confederation mappings, elite national team lists, and team name variation data.
 class TeamSeasonConstants {
   TeamSeasonConstants._();
 
-  /// Conference mappings for analysis and classification
+  /// FIFA confederation mappings for analysis and classification
   static const Map<String, List<String>> conferences = {
-    'SEC': ['Alabama Crimson Tide', 'Auburn Tigers', 'Georgia Bulldogs', 'LSU Tigers', 'Tennessee Volunteers', 'Florida Gators', 'Kentucky Wildcats', 'Mississippi State Bulldogs', 'Ole Miss Rebels', 'Arkansas Razorbacks', 'South Carolina Gamecocks', 'Vanderbilt Commodores', 'Missouri Tigers', 'Texas A&M Aggies'],
-    'Big Ten': ['Ohio State Buckeyes', 'Michigan Wolverines', 'Penn State Nittany Lions', 'Wisconsin Badgers', 'Iowa Hawkeyes', 'Minnesota Golden Gophers', 'Illinois Fighting Illini', 'Northwestern Wildcats', 'Indiana Hoosiers', 'Michigan State Spartans', 'Purdue Boilermakers', 'Nebraska Cornhuskers', 'Maryland Terrapins', 'Rutgers Scarlet Knights'],
-    'Big 12': ['Oklahoma Sooners', 'Texas Longhorns', 'Kansas State Wildcats', 'Oklahoma State Cowboys', 'Baylor Bears', 'TCU Horned Frogs', 'West Virginia Mountaineers', 'Iowa State Cyclones', 'Kansas Jayhawks', 'Texas Tech Red Raiders'],
-    'ACC': ['Clemson Tigers', 'Florida State Seminoles', 'Miami Hurricanes', 'North Carolina Tar Heels', 'NC State Wolfpack', 'Virginia Tech Hokies', 'Virginia Cavaliers', 'Duke Blue Devils', 'Wake Forest Demon Deacons', 'Georgia Tech Yellow Jackets', 'Boston College Eagles', 'Syracuse Orange', 'Pittsburgh Panthers', 'Louisville Cardinals'],
-    'Pac-12': ['USC Trojans', 'UCLA Bruins', 'Oregon Ducks', 'Washington Huskies', 'Stanford Cardinal', 'California Golden Bears', 'Oregon State Beavers', 'Washington State Cougars', 'Arizona State Sun Devils', 'Arizona Wildcats', 'Utah Utes', 'Colorado Buffaloes'],
+    'UEFA': [
+      'France', 'Germany', 'Spain', 'England', 'Portugal', 'Netherlands',
+      'Belgium', 'Italy', 'Croatia', 'Switzerland', 'Denmark', 'Austria',
+      'Serbia', 'Scotland', 'Wales', 'Poland', 'Ukraine', 'Sweden',
+      'Czech Republic', 'Turkey', 'Hungary', 'Slovakia', 'Romania',
+      'Norway', 'Finland', 'Iceland', 'Greece', 'Ireland',
+    ],
+    'CONMEBOL': [
+      'Brazil', 'Argentina', 'Uruguay', 'Colombia', 'Ecuador',
+      'Chile', 'Paraguay', 'Peru', 'Venezuela', 'Bolivia',
+    ],
+    'CONCACAF': [
+      'United States', 'Mexico', 'Canada', 'Costa Rica', 'Jamaica',
+      'Honduras', 'Panama', 'El Salvador', 'Trinidad and Tobago', 'Guatemala',
+    ],
+    'AFC': [
+      'Japan', 'South Korea', 'Australia', 'Iran', 'Saudi Arabia',
+      'Qatar', 'Iraq', 'Uzbekistan', 'China', 'Bahrain',
+      'United Arab Emirates', 'Oman', 'Jordan', 'Vietnam', 'Thailand',
+    ],
+    'CAF': [
+      'Morocco', 'Senegal', 'Nigeria', 'Cameroon', 'Ghana',
+      'Egypt', 'Tunisia', 'Algeria', 'Ivory Coast', 'Mali',
+      'South Africa', 'DR Congo', 'Burkina Faso', 'Guinea',
+    ],
+    'OFC': [
+      'New Zealand', 'Solomon Islands', 'Tahiti', 'Fiji',
+      'Papua New Guinea', 'New Caledonia', 'Vanuatu', 'Samoa',
+    ],
   };
 
-  /// Elite programs used for significance scoring
+  /// Elite national teams used for significance scoring
   static const List<String> elitePrograms = [
-    'Alabama Crimson Tide', 'Georgia Bulldogs', 'Ohio State Buckeyes', 'Michigan Wolverines',
-    'Clemson Tigers', 'Oklahoma Sooners', 'Texas Longhorns', 'USC Trojans', 'Oregon Ducks',
-    'Penn State Nittany Lions', 'Florida State Seminoles', 'LSU Tigers', 'Auburn Tigers',
+    'Brazil', 'Germany', 'France', 'Argentina', 'Spain',
+    'England', 'Italy', 'Netherlands', 'Portugal', 'Uruguay',
+    'Belgium', 'Croatia', 'Morocco', 'Japan', 'United States',
+    'Mexico', 'Colombia', 'Senegal',
   ];
 
   /// Common team name variations for fuzzy matching
   static const Map<String, List<String>> commonVariations = {
-    'Iowa State Cyclones': ['Iowa State', 'Iowa St.', 'Iowa St', 'ISU'],
-    'Kansas State Wildcats': ['Kansas State', 'Kansas St.', 'Kansas St', 'K-State', 'KSU'],
-    'Fresno State Bulldogs': ['Fresno State', 'Fresno St.', 'Fresno St'],
-    'Kansas Jayhawks': ['Kansas', 'KU'],
-    'Alabama Crimson Tide': ['Alabama', 'Bama'],
-    'Auburn Tigers': ['Auburn'],
-    'Georgia Bulldogs': ['Georgia', 'UGA'],
-    'Florida State Seminoles': ['Florida State', 'FSU', 'Florida St'],
-    'Arkansas Razorbacks': ['Arkansas'],
-    'Colorado Buffaloes': ['Colorado', 'CU'],
+    'Argentina': ['La Albiceleste', 'ARG', 'Albicelestes'],
+    'Germany': ['Die Mannschaft', 'GER', 'Deutschland'],
+    'France': ['Les Bleus', 'FRA', 'L\'Equipe de France'],
+    'Brazil': ['Seleção', 'Selecao', 'BRA', 'A Canarinha', 'Canarinho'],
+    'Spain': ['La Roja', 'ESP', 'La Furia Roja'],
+    'England': ['Three Lions', 'ENG', 'The Three Lions'],
+    'Italy': ['Gli Azzurri', 'Azzurri', 'ITA'],
+    'Netherlands': ['Oranje', 'Holland', 'NED', 'The Flying Dutchmen'],
+    'Portugal': ['A Seleção', 'POR', 'Selecção das Quinas'],
+    'Uruguay': ['La Celeste', 'URU', 'Los Charrúas'],
+    'Belgium': ['Red Devils', 'BEL', 'Rode Duivels', 'Les Diables Rouges'],
+    'Croatia': ['Vatreni', 'CRO', 'The Blazers'],
+    'Morocco': ['Atlas Lions', 'MAR', 'Les Lions de l\'Atlas'],
+    'Japan': ['Samurai Blue', 'JPN', 'Blue Samurai'],
+    'South Korea': ['Taegeuk Warriors', 'KOR', 'Korea Republic'],
+    'United States': ['USMNT', 'USA', 'Stars and Stripes', 'US', 'Yanks'],
+    'Mexico': ['El Tri', 'MEX', 'El Tricolor'],
+    'Colombia': ['Los Cafeteros', 'COL', 'Tricolor'],
+    'Senegal': ['Lions of Teranga', 'SEN', 'Les Lions'],
+    'Nigeria': ['Super Eagles', 'NGA'],
+    'Cameroon': ['Indomitable Lions', 'CMR', 'Les Lions Indomptables'],
+    'Ghana': ['Black Stars', 'GHA'],
+    'Australia': ['Socceroos', 'AUS'],
+    'Canada': ['Les Rouges', 'CAN', 'CanMNT'],
+    'Costa Rica': ['Los Ticos', 'CRC'],
+    'Ecuador': ['La Tri', 'ECU', 'La Tricolor'],
+    'Switzerland': ['Nati', 'SUI', 'La Nati'],
+    'Denmark': ['Danish Dynamite', 'DEN'],
+    'Serbia': ['Orlovi', 'SRB', 'The Eagles'],
+    'Saudi Arabia': ['The Green Falcons', 'KSA', 'Al-Suqour Al-Khodhr'],
+    'Iran': ['Team Melli', 'IRN'],
+    'Tunisia': ['Eagles of Carthage', 'TUN', 'Les Aigles de Carthage'],
+    'Qatar': ['The Maroons', 'QAT', 'Al-Annabi'],
   };
 
-  /// Look up a team's conference
+  /// Look up a team's confederation
   static String getTeamConference(String teamName) {
     for (final entry in conferences.entries) {
       if (entry.value.contains(teamName)) {
@@ -43,7 +91,7 @@ class TeamSeasonConstants {
     return 'Independent';
   }
 
-  /// Check if a team is considered an elite program
+  /// Check if a team is considered an elite national team
   static bool isEliteProgram(String teamName) {
     return elitePrograms.contains(teamName);
   }

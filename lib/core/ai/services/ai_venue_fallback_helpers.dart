@@ -325,22 +325,26 @@ class AIVenueFallbackHelpers {
   static List<String> _getTeamKeywords(String teamName) {
     final keywords = <String>[];
 
-    if (teamName.contains('Alabama')) {
-      keywords.addAll(['tide', 'crimson', 'bama', 'roll']);
-    } else if (teamName.contains('Auburn')) {
-      keywords.addAll(['tiger', 'auburn', 'war', 'eagle']);
-    } else if (teamName.contains('Georgia')) {
-      keywords.addAll(['bulldog', 'dawg', 'georgia', 'uga']);
-    } else if (teamName.contains('Florida')) {
-      keywords.addAll(['gator', 'florida', 'swamp']);
-    } else if (teamName.contains('LSU')) {
-      keywords.addAll(['tiger', 'lsu', 'bayou', 'purple']);
-    } else if (teamName.contains('Tennessee')) {
-      keywords.addAll(['volunteer', 'vol', 'orange', 'rocky']);
+    if (teamName.contains('United States') || teamName.contains('USA')) {
+      keywords.addAll(['usa', 'american', 'usmnt', 'stars', 'stripes']);
+    } else if (teamName.contains('Mexico')) {
+      keywords.addAll(['mexico', 'tri', 'mexican', 'azteca']);
+    } else if (teamName.contains('Brazil')) {
+      keywords.addAll(['brazil', 'brazilian', 'samba', 'selecao']);
+    } else if (teamName.contains('Argentina')) {
+      keywords.addAll(['argentina', 'argentine', 'albiceleste']);
+    } else if (teamName.contains('England')) {
+      keywords.addAll(['england', 'english', 'lions', 'british']);
+    } else if (teamName.contains('Germany')) {
+      keywords.addAll(['germany', 'german', 'deutsch']);
+    } else if (teamName.contains('France')) {
+      keywords.addAll(['france', 'french', 'bleus']);
+    } else if (teamName.contains('Spain')) {
+      keywords.addAll(['spain', 'spanish', 'roja']);
     }
 
-    // Add general team-related terms
-    keywords.addAll(['sports', 'game', 'fan', 'tailgate']);
+    // Add general World Cup fan terms
+    keywords.addAll(['sports', 'soccer', 'football', 'fan', 'match']);
 
     return keywords;
   }

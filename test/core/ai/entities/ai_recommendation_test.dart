@@ -161,7 +161,7 @@ void main() {
           confidence: 0.89,
           metadata: const {
             'venueId': 'venue_456',
-            'teamAffiliation': 'Georgia',
+            'teamAffiliation': 'Brazil',
             'matchScore': 95,
           },
           reasons: const [
@@ -372,7 +372,7 @@ void main() {
           title: 'Activity Recommendation',
           description: 'Fun activity',
           confidence: 0.75,
-          metadata: const {'activityType': 'tailgate'},
+          metadata: const {'activityType': 'fan_zone'},
           reasons: const ['Fun for fans'],
           timestamp: DateTime.now(),
           category: 'activity',

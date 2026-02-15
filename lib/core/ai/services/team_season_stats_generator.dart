@@ -14,75 +14,79 @@ class TeamSeasonStatsGenerator {
     final players = <Map<String, dynamic>>[];
     final overall = seasonRecord['overall'];
 
-    // Generate quarterback
-    final qbStats = _generateQBStats(overall['wins'], overall['losses']);
+    // Generate goalkeeper
+    final gkStats = _generateGoalkeeperStats(overall['wins'], overall['losses']);
     players.add({
-      'name': _generateRealisticPlayerName('QB'),
-      'position': 'Quarterback',
-      'year': _getRandomYear(),
+      'name': _generateRealisticPlayerName('GK'),
+      'position': 'Goalkeeper',
+      'age': _getRandomAge(),
       'stats': {
-        'passingYards': qbStats['yards'],
-        'touchdowns': qbStats['tds'],
-        'interceptions': qbStats['ints'],
-        'completionPercentage': qbStats['completion'],
+        'appearances': gkStats['appearances'],
+        'saves': gkStats['saves'],
+        'cleanSheets': gkStats['cleanSheets'],
+        'goalsConceded': gkStats['goalsConceded'],
+        'savePercentage': gkStats['savePercentage'],
       },
       'highlights': [
-        'Led team to ${overall['wins']} victories with consistent play',
-        'Key performer in crucial conference matchups',
+        'Commanded the box with authority throughout the campaign',
+        'Key performer in crucial group stage and knockout matches',
       ],
     });
 
-    // Generate running back
-    final rbStats = _generateRBStats(overall['wins']);
+    // Generate defender
+    final defStats = _generateDefenderStats(overall['wins']);
     players.add({
-      'name': _generateRealisticPlayerName('RB'),
-      'position': 'Running Back',
-      'year': _getRandomYear(),
+      'name': _generateRealisticPlayerName('DF'),
+      'position': 'Defender',
+      'age': _getRandomAge(),
       'stats': {
-        'rushingYards': rbStats['yards'],
-        'touchdowns': rbStats['tds'],
-        'yardsPerCarry': rbStats['ypc'],
-        'carries': rbStats['carries'],
-      },
-      'highlights': [
-        'Workhorse back who carried the offense',
-        'Broke multiple school rushing records',
-      ],
-    });
-
-    // Generate wide receiver
-    final wrStats = _generateWRStats(overall['wins']);
-    players.add({
-      'name': _generateRealisticPlayerName('WR'),
-      'position': 'Wide Receiver',
-      'year': _getRandomYear(),
-      'stats': {
-        'receptions': wrStats['catches'],
-        'receivingYards': wrStats['yards'],
-        'touchdowns': wrStats['tds'],
-        'yardsPerCatch': wrStats['ypc'],
-      },
-      'highlights': [
-        'Deep threat who stretched opposing defenses',
-        'Clutch performer in critical moments',
-      ],
-    });
-
-    // Generate defensive player
-    final defStats = _generateDefenseStats(overall['wins']);
-    players.add({
-      'name': _generateRealisticPlayerName('LB'),
-      'position': 'Linebacker',
-      'year': _getRandomYear(),
-      'stats': {
+        'appearances': defStats['appearances'],
         'tackles': defStats['tackles'],
-        'tacksForLoss': defStats['tfl'],
-        'sacks': defStats['sacks'],
-        'interceptions': defStats['ints'],
+        'interceptions': defStats['interceptions'],
+        'clearances': defStats['clearances'],
+        'aerialDuelsWon': defStats['aerialDuelsWon'],
       },
       'highlights': [
-        'Defensive leader who anchored the unit',
-        'All-conference caliber performer',
+        'Anchored the backline with composure and leadership',
+        'Vital in organizing the defensive shape under pressure',
+      ],
+    });
+
+    // Generate midfielder
+    final midStats = _generateMidfielderStats(overall['wins']);
+    players.add({
+      'name': _generateRealisticPlayerName('MF'),
+      'position': 'Midfielder',
+      'age': _getRandomAge(),
+      'stats': {
+        'appearances': midStats['appearances'],
+        'passesCompleted': midStats['passesCompleted'],
+        'keyPasses': midStats['keyPasses'],
+        'assists': midStats['assists'],
+        'distanceCoveredKm': midStats['distanceCoveredKm'],
+      },
+      'highlights': [
+        'Controlled the tempo with intelligent distribution',
+        'Engine of the team covering vast ground every match',
+      ],
+    });
+
+    // Generate forward/striker
+    final fwStats = _generateForwardStats(overall['wins']);
+    players.add({
+      'name': _generateRealisticPlayerName('FW'),
+      'position': 'Forward',
+      'age': _getRandomAge(),
+      'stats': {
+        'appearances': fwStats['appearances'],
+        'goals': fwStats['goals'],
+        'shotsOnTarget': fwStats['shotsOnTarget'],
+        'conversionRate': fwStats['conversionRate'],
+        'assists': fwStats['assists'],
+      },
+      'highlights': [
+        'Clinical finisher who led the team\'s attacking output',
+        'Rose to the occasion in high-pressure knockout matches',
       ],
     });
 
@@ -95,24 +99,24 @@ class TeamSeasonStatsGenerator {
   }
 
   // ---------------------------------------------------------------------------
-  // Postseason / conference / rivalry helpers
+  // Postseason / tournament / rivalry helpers
   // ---------------------------------------------------------------------------
 
-  /// Analyze postseason performance
+  /// Analyze tournament performance stage
   static String getBowlName(int wins, int losses) {
-    if (wins >= 11) return 'CFP/New Year\'s Six Bowl';
-    if (wins >= 9) return 'Prestigious Bowl Game';
-    if (wins >= 7) return 'Regional Bowl Championship';
-    return 'Bowl Game';
+    if (wins >= 11) return 'World Cup Final / Semi-Final';
+    if (wins >= 9) return 'World Cup Quarter-Final';
+    if (wins >= 7) return 'World Cup Round of 16';
+    return 'World Cup Group Stage';
   }
 
-  /// Get overall season outcome label
+  /// Get overall tournament outcome label
   static String getSeasonOutcome(int wins, int losses, String bowlResult) {
-    if (wins >= 12) return 'Championship Season';
-    if (wins >= 10) return 'Highly Successful Season';
-    if (wins >= 8) return 'Successful Season';
-    if (wins >= 6) return 'Bowl Eligible Season';
-    return 'Rebuilding Season';
+    if (wins >= 12) return 'Tournament Champions';
+    if (wins >= 10) return 'Deep Tournament Run';
+    if (wins >= 8) return 'Successful Campaign';
+    if (wins >= 6) return 'Knockout Stage Qualification';
+    return 'Group Stage Campaign';
   }
 
   /// Generate rivalry analysis placeholder
@@ -121,7 +125,7 @@ class TeamSeasonStatsGenerator {
     return {
       'rivalryGames': 2,
       'rivalryRecord': '1-1',
-      'biggestRivalryWin': 'Upset victory over traditional rival',
+      'biggestRivalryWin': 'Decisive victory over traditional rival',
     };
   }
 
@@ -138,18 +142,18 @@ class TeamSeasonStatsGenerator {
 
     if (overall['wins'] >= 8) {
       achievements
-          .add('Posted ${overall['wins']} wins - program\'s best in recent years');
+          .add('Posted ${overall['wins']} wins - among the best tournament campaigns in recent history');
     }
 
-    if (postseasonAnalysis['bowlEligibility'] == 'Bowl Eligible') {
+    if (postseasonAnalysis['bowlEligibility']?.toString().contains('Eligible') == true) {
       achievements
-          .add('Achieved bowl eligibility for fan base and program momentum');
+          .add('Advanced past the group stage with strong performances');
     }
 
     final bigWins = seasonRecord['bigWins'] as List;
     if (bigWins.isNotEmpty) {
       achievements
-          .add('Secured signature victories that elevated program profile');
+          .add('Secured signature victories that elevated the national team\'s profile');
     }
 
     return achievements;
@@ -163,27 +167,27 @@ class TeamSeasonStatsGenerator {
     final scoring = seasonRecord['scoring'];
 
     if (overall['losses'] > overall['wins']) {
-      areas.add('Consistency in key moments and closing out games');
+      areas.add('Consistency in key moments and closing out matches');
     }
 
     if (scoring['averageAllowed'] > scoring['averageScored']) {
-      areas.add('Defensive efficiency and limiting big plays');
+      areas.add('Defensive organization and limiting opposition chances');
     }
 
-    areas.add('Recruiting depth to compete with conference elite');
+    areas.add('Player development depth to compete at the highest international level');
 
     return areas;
   }
 
-  /// Generate 2025 outlook
+  /// Generate 2026 outlook
   static String generate2025Outlook(
       String teamName, Map<String, dynamic> seasonRecord) {
     final overall = seasonRecord['overall'];
 
     if (overall['wins'] > overall['losses']) {
-      return 'Strong foundation established for continued success in 2025 with returning talent and recruiting momentum.';
+      return 'Strong foundation established for the 2026 World Cup with returning talent and tactical momentum carrying forward.';
     } else {
-      return 'Valuable experience gained in 2024 provides building blocks for improvement and competitiveness in 2025.';
+      return 'Valuable experience gained in international competition provides building blocks for improved form heading into the 2026 World Cup.';
     }
   }
 
@@ -212,10 +216,10 @@ class TeamSeasonStatsGenerator {
     final closeGames = gameAnalysis['closeGames'] as List;
 
     return [
-      '${scoring['averageScored']} PPG Scored',
-      '${scoring['averageAllowed']} PPG Allowed',
+      '${scoring['averageScored']} Goals Scored Avg',
+      '${scoring['averageAllowed']} Goals Conceded Avg',
       '${bigWins.length} Signature Wins',
-      '${closeGames.length} Games Decided by 7 or Less',
+      '${closeGames.length} Matches Decided by 1 Goal or Less',
     ];
   }
 
@@ -225,63 +229,77 @@ class TeamSeasonStatsGenerator {
 
   static String _generateRealisticPlayerName(String position) {
     final firstNames = [
-      'Jackson', 'Mason', 'Carter', 'Tyler', 'Blake',
-      'Connor', 'Austin', 'Ryan', 'Chase', 'Jordan'
+      'Lucas', 'Mateo', 'Karim', 'Luka', 'Kylian',
+      'Mohamed', 'Kenji', 'Enzo', 'Rafael', 'Jamal',
+      'Sadio', 'Alphonso', 'Giovanni', 'Hugo', 'Youssef',
     ];
     final lastNames = [
-      'Johnson', 'Williams', 'Brown', 'Davis', 'Miller',
-      'Wilson', 'Moore', 'Taylor', 'Anderson', 'Thomas'
+      'Silva', 'Martinez', 'Fernandez', 'Mueller', 'Nakamura',
+      'Park', 'Williams', 'Diallo', 'Hernandez', 'Van Dijk',
+      'Rossi', 'Andersen', 'Al-Dosari', 'Okafor', 'Campbell',
     ];
     final random = Random();
     return '${firstNames[random.nextInt(firstNames.length)]} ${lastNames[random.nextInt(lastNames.length)]}';
   }
 
-  static String _getRandomYear() {
-    final years = ['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate'];
-    return years[Random().nextInt(years.length)];
+  static int _getRandomAge() {
+    // International players typically range 22-35
+    return 22 + Random().nextInt(14);
   }
 
-  static Map<String, dynamic> _generateQBStats(int wins, int losses) {
-    final base = wins > losses ? 2800 : 2200;
+  static Map<String, dynamic> _generateGoalkeeperStats(int wins, int losses) {
+    final totalGames = wins + losses;
     final random = Random();
+    final cleanSheets = wins > losses ? (wins * 0.4).round() + random.nextInt(3) : random.nextInt(3) + 1;
+    final goalsConceded = losses + random.nextInt(totalGames > 0 ? totalGames : 1);
+    final saves = goalsConceded * 2 + random.nextInt(20) + 15;
+    final savePercentage = saves > 0 ? (saves / (saves + goalsConceded) * 100) : 70.0;
     return {
-      'yards': base + random.nextInt(800),
-      'tds': (wins * 2) + random.nextInt(5),
-      'ints': losses + random.nextInt(3),
-      'completion': 62.0 + random.nextDouble() * 8,
+      'appearances': totalGames > 0 ? totalGames : 7,
+      'saves': saves,
+      'cleanSheets': cleanSheets,
+      'goalsConceded': goalsConceded,
+      'savePercentage': double.parse(savePercentage.toStringAsFixed(1)),
     };
   }
 
-  static Map<String, dynamic> _generateRBStats(int wins) {
-    final base = wins > 6 ? 1200 : 800;
+  static Map<String, dynamic> _generateDefenderStats(int wins) {
     final random = Random();
+    final appearances = wins > 3 ? wins + random.nextInt(4) : 5 + random.nextInt(3);
     return {
-      'yards': base + random.nextInt(400),
-      'tds': wins + random.nextInt(3),
-      'ypc': 4.2 + random.nextDouble() * 1.5,
-      'carries': 180 + random.nextInt(60),
+      'appearances': appearances,
+      'tackles': 25 + random.nextInt(30), // 25-55 per tournament
+      'interceptions': 15 + random.nextInt(20), // 15-35
+      'clearances': 30 + random.nextInt(35), // 30-65
+      'aerialDuelsWon': 20 + random.nextInt(25), // 20-45
     };
   }
 
-  static Map<String, dynamic> _generateWRStats(int wins) {
-    final base = wins > 6 ? 65 : 45;
+  static Map<String, dynamic> _generateMidfielderStats(int wins) {
     final random = Random();
+    final appearances = wins > 3 ? wins + random.nextInt(4) : 5 + random.nextInt(3);
     return {
-      'catches': base + random.nextInt(20),
-      'yards': (base * 12) + random.nextInt(300),
-      'tds': wins + random.nextInt(2),
-      'ypc': 12.0 + random.nextDouble() * 3,
+      'appearances': appearances,
+      'passesCompleted': 250 + random.nextInt(300), // 250-550 per tournament
+      'keyPasses': 8 + random.nextInt(15), // 8-23
+      'assists': 1 + random.nextInt(6), // 1-7
+      'distanceCoveredKm': 70.0 + random.nextDouble() * 30, // 70-100 km over tournament
     };
   }
 
-  static Map<String, dynamic> _generateDefenseStats(int wins) {
-    final base = wins > 6 ? 85 : 65;
+  static Map<String, dynamic> _generateForwardStats(int wins) {
     final random = Random();
+    final appearances = wins > 3 ? wins + random.nextInt(4) : 5 + random.nextInt(3);
+    final goals = (wins > 6 ? 4 : 1) + random.nextInt(5); // 1-9 goals in a tournament
+    final shotsOnTarget = goals * 2 + random.nextInt(8) + 3;
+    final totalShots = shotsOnTarget + random.nextInt(12) + 5;
+    final conversionRate = totalShots > 0 ? (goals / totalShots * 100) : 15.0;
     return {
-      'tackles': base + random.nextInt(30),
-      'tfl': 8 + random.nextInt(5),
-      'sacks': 4 + random.nextInt(4),
-      'ints': 2 + random.nextInt(3),
+      'appearances': appearances,
+      'goals': goals,
+      'shotsOnTarget': shotsOnTarget,
+      'conversionRate': double.parse(conversionRate.toStringAsFixed(1)),
+      'assists': random.nextInt(4) + 1, // 1-5
     };
   }
 }

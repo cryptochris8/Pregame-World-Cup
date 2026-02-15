@@ -342,7 +342,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              hintText: 'e.g., Georgia vs Alabama',
+              hintText: 'e.g., Brazil vs Argentina',
             ),
           ),
           

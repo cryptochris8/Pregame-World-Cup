@@ -364,16 +364,16 @@ void main() {
         displayName: 'John Doe',
         profileImageUrl: 'https://example.com/avatar.jpg',
         mutualFriends: const ['user_2', 'user_3'],
-        sharedTeams: const ['Georgia'],
-        connectionReason: 'You both like Georgia',
+        sharedTeams: const ['Brazil'],
+        connectionReason: 'You both support Brazil',
         relevanceScore: 0.95,
         suggestedAt: now,
       );
 
       expect(suggestion.profileImageUrl, equals('https://example.com/avatar.jpg'));
       expect(suggestion.mutualFriends, hasLength(2));
-      expect(suggestion.sharedTeams, contains('Georgia'));
-      expect(suggestion.connectionReason, equals('You both like Georgia'));
+      expect(suggestion.sharedTeams, contains('Brazil'));
+      expect(suggestion.connectionReason, equals('You both support Brazil'));
     });
 
     group('suggestionText', () {
@@ -405,12 +405,12 @@ void main() {
         final suggestion = FriendSuggestion(
           userId: 'user_1',
           displayName: 'John Doe',
-          sharedTeams: const ['Alabama', 'Georgia'],
+          sharedTeams: const ['Argentina', 'Brazil'],
           relevanceScore: 0.7,
           suggestedAt: DateTime.now(),
         );
 
-        expect(suggestion.suggestionText, equals('Fan of Alabama'));
+        expect(suggestion.suggestionText, equals('Fan of Argentina'));
       });
 
       test('returns connection reason when no mutual friends or teams', () {

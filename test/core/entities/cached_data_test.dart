@@ -127,14 +127,14 @@ void main() {
         key: 'precise',
         venuesJson: '[]',
         cachedAt: DateTime.now(),
-        latitude: 33.9519347,
-        longitude: -83.3576293,
+        latitude: 25.9580347,
+        longitude: -80.2389293,
         radius: 1500,
         types: ['bar'],
       );
 
-      expect(data.latitude, closeTo(33.9519, 0.0001));
-      expect(data.longitude, closeTo(-83.3576, 0.0001));
+      expect(data.latitude, closeTo(25.9580, 0.0001));
+      expect(data.longitude, closeTo(-80.2389, 0.0001));
     });
   });
 
@@ -142,35 +142,35 @@ void main() {
     test('creates cached geocoding data with all fields', () {
       final now = DateTime.now();
       final data = CachedGeocodingData(
-        key: 'geocode_athens_ga',
-        address: '123 Main St, Athens, GA 30601',
-        latitude: 33.9519,
-        longitude: -83.3576,
+        key: 'geocode_miami_fl',
+        address: '347 Don Shula Dr, Miami Gardens, FL 33056',
+        latitude: 25.9580,
+        longitude: -80.2389,
         cachedAt: now,
       );
 
-      expect(data.key, equals('geocode_athens_ga'));
-      expect(data.address, equals('123 Main St, Athens, GA 30601'));
-      expect(data.latitude, equals(33.9519));
-      expect(data.longitude, equals(-83.3576));
+      expect(data.key, equals('geocode_miami_fl'));
+      expect(data.address, equals('347 Don Shula Dr, Miami Gardens, FL 33056'));
+      expect(data.latitude, equals(25.9580));
+      expect(data.longitude, equals(-80.2389));
       expect(data.cachedAt, equals(now));
     });
 
     test('handles various address formats', () {
       final addresses = [
-        '123 Main Street, Athens, GA 30601',
-        'Sanford Stadium, Athens, GA',
-        '30601',
-        'Athens, Georgia, United States',
-        '123 Lumpkin St, Athens, GA 30602-1502',
+        '123 Main Street, Miami, FL 33101',
+        'Hard Rock Stadium, Miami Gardens, FL',
+        '33101',
+        'Miami, Florida, United States',
+        '123 NW 199th St, Miami Gardens, FL 33056',
       ];
 
       for (final address in addresses) {
         final data = CachedGeocodingData(
           key: 'addr_${addresses.indexOf(address)}',
           address: address,
-          latitude: 33.95,
-          longitude: -83.37,
+          latitude: 25.96,
+          longitude: -80.24,
           cachedAt: DateTime.now(),
         );
 
@@ -180,7 +180,7 @@ void main() {
 
     test('handles different US coordinates', () {
       final locations = [
-        {'city': 'Athens, GA', 'lat': 33.9519, 'lng': -83.3576},
+        {'city': 'Miami Gardens, FL', 'lat': 25.9580, 'lng': -80.2389},
         {'city': 'Atlanta, GA', 'lat': 33.7490, 'lng': -84.3880},
         {'city': 'New York, NY', 'lat': 40.7128, 'lng': -74.0060},
         {'city': 'Los Angeles, CA', 'lat': 34.0522, 'lng': -118.2437},
@@ -241,14 +241,14 @@ void main() {
 
     test('handles long addresses', () {
       const longAddress = '123 Very Long Street Name, Suite 456, Building A, '
-          'Some Really Long City Name, State of Georgia, '
+          'Some Really Long City Name, State of Florida, '
           'United States of America, 30601-1234';
 
       final data = CachedGeocodingData(
         key: 'geo_long',
         address: longAddress,
-        latitude: 33.9519,
-        longitude: -83.3576,
+        latitude: 25.9580,
+        longitude: -80.2389,
         cachedAt: DateTime.now(),
       );
 

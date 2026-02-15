@@ -10,7 +10,7 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Georgia',
+          predictedWinner: 'Brazil',
           confidenceLevel: 4,
           createdAt: now,
         );
@@ -18,7 +18,7 @@ void main() {
         expect(prediction.predictionId, equals('pred_1'));
         expect(prediction.userId, equals('user_1'));
         expect(prediction.gameId, equals('game_1'));
-        expect(prediction.predictedWinner, equals('Georgia'));
+        expect(prediction.predictedWinner, equals('Brazil'));
         expect(prediction.confidenceLevel, equals(4));
         expect(prediction.createdAt, equals(now));
         expect(prediction.isCorrect, isNull);
@@ -32,9 +32,9 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Alabama',
-          predictedHomeScore: 28,
-          predictedAwayScore: 21,
+          predictedWinner: 'Argentina',
+          predictedHomeScore: 2,
+          predictedAwayScore: 1,
           confidenceLevel: 5,
           createdAt: now,
           isCorrect: true,
@@ -42,8 +42,8 @@ void main() {
           isLocked: true,
         );
 
-        expect(prediction.predictedHomeScore, equals(28));
-        expect(prediction.predictedAwayScore, equals(21));
+        expect(prediction.predictedHomeScore, equals(2));
+        expect(prediction.predictedAwayScore, equals(1));
         expect(prediction.isCorrect, isTrue);
         expect(prediction.pointsEarned, equals(100));
         expect(prediction.isLocked, isTrue);
@@ -57,19 +57,19 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Georgia',
+          predictedWinner: 'Brazil',
           confidenceLevel: 3,
           createdAt: now,
         );
 
         final updated = original.copyWith(
-          predictedWinner: 'Alabama',
+          predictedWinner: 'Argentina',
           confidenceLevel: 5,
           isLocked: true,
         );
 
         expect(updated.predictionId, equals('pred_1'));
-        expect(updated.predictedWinner, equals('Alabama'));
+        expect(updated.predictedWinner, equals('Argentina'));
         expect(updated.confidenceLevel, equals(5));
         expect(updated.isLocked, isTrue);
       });
@@ -80,7 +80,7 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'LSU',
+          predictedWinner: 'Germany',
           confidenceLevel: 4,
           createdAt: now,
         );
@@ -102,9 +102,9 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Florida',
-          predictedHomeScore: 24,
-          predictedAwayScore: 17,
+          predictedWinner: 'France',
+          predictedHomeScore: 3,
+          predictedAwayScore: 1,
           confidenceLevel: 4,
           createdAt: now,
           isCorrect: true,
@@ -117,9 +117,9 @@ void main() {
         expect(json['predictionId'], equals('pred_1'));
         expect(json['userId'], equals('user_1'));
         expect(json['gameId'], equals('game_1'));
-        expect(json['predictedWinner'], equals('Florida'));
-        expect(json['predictedHomeScore'], equals(24));
-        expect(json['predictedAwayScore'], equals(17));
+        expect(json['predictedWinner'], equals('France'));
+        expect(json['predictedHomeScore'], equals(3));
+        expect(json['predictedAwayScore'], equals(1));
         expect(json['confidenceLevel'], equals(4));
         expect(json['createdAt'], equals('2024-10-15T12:00:00.000'));
         expect(json['isCorrect'], isTrue);
@@ -132,9 +132,9 @@ void main() {
           'predictionId': 'pred_1',
           'userId': 'user_1',
           'gameId': 'game_1',
-          'predictedWinner': 'Tennessee',
-          'predictedHomeScore': 31,
-          'predictedAwayScore': 28,
+          'predictedWinner': 'Spain',
+          'predictedHomeScore': 2,
+          'predictedAwayScore': 0,
           'confidenceLevel': 5,
           'createdAt': '2024-10-15T12:00:00.000',
           'isCorrect': false,
@@ -145,9 +145,9 @@ void main() {
         final prediction = GamePrediction.fromJson(json);
 
         expect(prediction.predictionId, equals('pred_1'));
-        expect(prediction.predictedWinner, equals('Tennessee'));
-        expect(prediction.predictedHomeScore, equals(31));
-        expect(prediction.predictedAwayScore, equals(28));
+        expect(prediction.predictedWinner, equals('Spain'));
+        expect(prediction.predictedHomeScore, equals(2));
+        expect(prediction.predictedAwayScore, equals(0));
         expect(prediction.confidenceLevel, equals(5));
         expect(prediction.isCorrect, isFalse);
         expect(prediction.pointsEarned, equals(0));
@@ -159,7 +159,7 @@ void main() {
           'predictionId': 'pred_1',
           'userId': 'user_1',
           'gameId': 'game_1',
-          'predictedWinner': 'Auburn',
+          'predictedWinner': 'Mexico',
           'confidenceLevel': 3,
           'createdAt': '2024-10-15T12:00:00.000',
         };
@@ -179,9 +179,9 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Kentucky',
-          predictedHomeScore: 21,
-          predictedAwayScore: 14,
+          predictedWinner: 'Japan',
+          predictedHomeScore: 1,
+          predictedAwayScore: 0,
           confidenceLevel: 4,
           createdAt: now,
           isCorrect: true,
@@ -206,7 +206,7 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Georgia',
+          predictedWinner: 'Brazil',
           confidenceLevel: 4,
           createdAt: now,
         );
@@ -215,7 +215,7 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Georgia',
+          predictedWinner: 'Brazil',
           confidenceLevel: 4,
           createdAt: now,
         );
@@ -229,7 +229,7 @@ void main() {
           predictionId: 'pred_1',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Georgia',
+          predictedWinner: 'Brazil',
           confidenceLevel: 4,
           createdAt: now,
         );
@@ -238,7 +238,7 @@ void main() {
           predictionId: 'pred_2',
           userId: 'user_1',
           gameId: 'game_1',
-          predictedWinner: 'Alabama',
+          predictedWinner: 'Argentina',
           confidenceLevel: 3,
           createdAt: now,
         );
