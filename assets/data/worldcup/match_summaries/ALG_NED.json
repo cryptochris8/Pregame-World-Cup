@@ -1,0 +1,52 @@
+{
+  "team1Code": "NED",
+  "team2Code": "ALG",
+  "team1Name": "Netherlands",
+  "team2Name": "Algeria",
+  "historicalAnalysis": "Netherlands and Algeria have no significant World Cup history. This encounter represents a clash of European power and African ambition.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Dutch quality vs Algerian organization",
+    "Netherlands seeking to advance from Group E"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "position": "Forward",
+      "reason": "Dutch goal threat"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "position": "Winger",
+      "reason": "Algeria's star"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "position": "Defender",
+      "reason": "Defensive leader"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "teamCode": "ALG",
+      "position": "Midfielder",
+      "reason": "Midfield anchor"
+    }
+  ],
+  "tacticalPreview": "Netherlands should control possession with Algeria looking to counter. Mahrez's moments of magic could be decisive.",
+  "prediction": {
+    "predictedOutcome": "NED",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Dutch quality should prove too much for Algeria."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting between these nations",
+    "Algeria's best World Cup was 2014 Round of 16",
+    "Netherlands have reached 3 World Cup finals"
+  ],
+  "isFirstMeeting": true
+}

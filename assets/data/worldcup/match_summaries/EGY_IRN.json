@@ -1,0 +1,55 @@
+{
+  "team1Code": "EGY",
+  "team2Code": "IRN",
+  "team1Name": "Egypt",
+  "team2Name": "Iran",
+  "historicalAnalysis": "Egypt and Iran have met just once—a 1990 friendly that Egypt won 1-0. Both nations are regional powers with passionate fanbases, making this a highly anticipated clash between Africa and Asia's football giants.\n\nEgypt return to the World Cup after missing 2022, with Mohamed Salah leading a talented squad. The Pharaohs are seven-time AFCON champions with a proud footballing tradition.\n\nIran are Asia's most consistent World Cup qualifiers, appearing in 6 of the last 7 tournaments. Their 2022 campaign included a memorable win over Wales.",
+  "keyStorylines": [
+    "Salah vs Taremi: Two world-class forwards",
+    "Africa's most successful nation vs Asia's most consistent",
+    "Egypt's return after missing 2022",
+    "Battle of regional football powers"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "Liverpool legend"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "position": "Forward",
+      "reason": "Inter Milan's striker"
+    },
+    {
+      "name": "Mohamed Elneny",
+      "teamCode": "EGY",
+      "position": "Midfielder",
+      "reason": "Experienced Arsenal midfielder"
+    },
+    {
+      "name": "Sardar Azmoun",
+      "teamCode": "IRN",
+      "position": "Forward",
+      "reason": "The \"Iranian Messi\""
+    }
+  ],
+  "tacticalPreview": "Egypt's 4-3-3 is built around Salah's brilliance. Their attacking play flows through him, with quick wingers providing support.\n\nIran's 4-3-3 emphasizes defensive solidity and clinical counters. Taremi and Azmoun's partnership is world-class.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 55,
+    "reasoning": "Two well-matched teams with quality forwards should produce an entertaining draw. Both Salah and Taremi could score.",
+    "alternativeScenario": "If Salah dominates and Egypt's midfield controls play, a 2-1 Egypt win is possible."
+  },
+  "pastEncountersSummary": "One friendly in 1990, Egypt winning 1-0.",
+  "funFacts": [
+    "Egypt have won 7 AFCON titles—more than any other nation",
+    "Iran beat Wales 2-0 at the 2022 World Cup with late goals",
+    "Salah has scored over 200 goals for Liverpool",
+    "Taremi has scored in both Champions League and Europa League finals"
+  ],
+  "isFirstMeeting": false
+}

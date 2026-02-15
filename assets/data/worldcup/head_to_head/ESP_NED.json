@@ -1,0 +1,39 @@
+{
+  "id": "ESP_NED",
+  "team1Code": "ESP",
+  "team2Code": "NED",
+  "totalMatches": 14,
+  "team1Wins": 5,
+  "team2Wins": 5,
+  "draws": 4,
+  "team1Goals": 19,
+  "team2Goals": 20,
+  "worldCupMatches": 3,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-11-16",
+  "firstMeeting": "1920-08-29",
+  "notableMatches": [
+    {
+      "year": 2010,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Johannesburg, South Africa",
+      "description": "Iniesta goal wins Spain first World Cup"
+    },
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 5,
+      "winnerCode": "NED",
+      "location": "Salvador, Brazil",
+      "description": "Netherlands destroy defending champions"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "team1Code": "QAT",
+  "team2Code": "CHN",
+  "team1Name": "Qatar",
+  "team2Name": "China PR",
+  "historicalAnalysis": "Qatar and China have met in Asian competition. Qatar won the 2019 Asian Cup.",
+  "keyStorylines": [
+    "Asian Cup champions vs China",
+    "Qatar experience vs Chinese ambition"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Qatar's star"
+    },
+    {
+      "name": "Wu Lei",
+      "teamCode": "CHN",
+      "position": "Forward",
+      "reason": "China's best player"
+    }
+  ],
+  "tacticalPreview": "Qatar should control the game as 2019 Asian Cup champions.",
+  "prediction": {
+    "predictedOutcome": "QAT",
+    "predictedScore": "2-0",
+    "confidence": 65,
+    "reasoning": "Qatar's tournament experience."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Qatar won 2019 Asian Cup",
+    "China only World Cup was 2002"
+  ],
+  "isFirstMeeting": false
+}

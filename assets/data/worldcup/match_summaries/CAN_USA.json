@@ -1,0 +1,55 @@
+{
+  "team1Code": "USA",
+  "team2Code": "CAN",
+  "team1Name": "United States",
+  "team2Name": "Canada",
+  "historicalAnalysis": "The USA and Canada share the world's longest undefended border and increasingly share football ambitions. This North American rivalry has intensified dramatically since Canada's emergence as a competitive force, qualifying for their first World Cup in 36 years in 2022.\n\nHistorically, the USA dominated with Canada struggling to compete. But the emergence of Alphonso Davies, Jonathan David, and other talents has transformed Canadian football. Canada defeated the USA 2-0 in World Cup qualifying in 2022, signaling a new era.\n\nAs co-hosts of the 2026 World Cup, this match carries unique significance. Both nations have invested heavily in football infrastructure and player development, making this a celebration of North American football's growth.",
+  "keyStorylines": [
+    "Co-hosts clash in a celebration of North American football",
+    "Canada seeking to prove 2022 qualifying win was no fluke",
+    "Alphonso Davies vs Christian Pulisic: Battle of the stars",
+    "First World Cup meeting between these neighbors"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "position": "Winger",
+      "reason": "USA's talisman leading the charge on home soil"
+    },
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "position": "Left-Back/Winger",
+      "reason": "One of world football's most explosive players"
+    },
+    {
+      "name": "Gio Reyna",
+      "teamCode": "USA",
+      "position": "Midfielder",
+      "reason": "Creative spark when fit and firing"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "position": "Striker",
+      "reason": "Prolific goalscorer in Ligue 1"
+    }
+  ],
+  "tacticalPreview": "Both teams play attacking football with pace in wide areas. Davies' marauding runs will test USA's right side, while Pulisic will target Canada's back line. Midfield control will be crucial.",
+  "prediction": {
+    "predictedOutcome": "USA",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "USA's greater depth and experience in major tournaments provides an edge, but Canada's individual quality makes them dangerous.",
+    "alternativeScenario": "Davies in inspired form could lead Canada to a shock victory."
+  },
+  "pastEncountersSummary": "USA lead the all-time series significantly, but Canada's 2-0 win in 2022 qualifying showed the gap has closed dramatically.",
+  "funFacts": [
+    "This is the first-ever World Cup meeting between USA and Canada",
+    "Both nations are hosting their first World Cup (as primary hosts)",
+    "Davies became the fastest player ever recorded in the Bundesliga",
+    "Canada's 2022 World Cup was their first since 1986"
+  ],
+  "isFirstMeeting": true
+}

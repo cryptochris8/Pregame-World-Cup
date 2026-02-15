@@ -1,0 +1,45 @@
+{
+  "playerName": "Neymar",
+  "fifaCode": "BRA",
+  "worldCupAppearances": 12,
+  "worldCupGoals": 8,
+  "worldCupAssists": 3,
+  "previousWorldCups": [2014, 2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2014,
+      "matches": 5,
+      "goals": 4,
+      "assists": 1,
+      "stage": "Semi-Finals",
+      "keyMoment": "Injured in quarter-final, missed 7-1 humiliation"
+    },
+    {
+      "year": 2018,
+      "matches": 5,
+      "goals": 2,
+      "assists": 0,
+      "stage": "Quarter-Finals",
+      "keyMoment": "Controversial diving antics criticized"
+    },
+    {
+      "year": 2022,
+      "matches": 2,
+      "goals": 1,
+      "assists": 1,
+      "stage": "Quarter-Finals",
+      "keyMoment": "Stunning goal vs Croatia, but lost on penalties"
+    }
+  ],
+  "worldCupAwards": [
+    "Bronze Ball 2014"
+  ],
+  "memorableMoments": [
+    "Opening goal vs Croatia 2014",
+    "Wonder goal vs Croatia 2022",
+    "Emotional return from back injury 2014"
+  ],
+  "worldCupLegacyRating": 7,
+  "comparisonToLegend": "Skill compared to Ronaldinho, but yet to match World Cup success",
+  "worldCup2026Prediction": "Will be 34, but remains key to Brazil's hopes if fit"
+}

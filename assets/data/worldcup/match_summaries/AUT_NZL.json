@@ -1,0 +1,52 @@
+{
+  "team1Code": "AUT",
+  "team2Code": "NZL",
+  "team1Name": "Austria",
+  "team2Name": "New Zealand",
+  "historicalAnalysis": "Austria and New Zealand have never met at a World Cup. Austria under Rangnick are expected to dominate.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Austria seeking goals",
+    "New Zealand massive underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "David Alaba",
+      "teamCode": "AUT",
+      "position": "Defender",
+      "reason": "Austrian star"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "position": "Striker",
+      "reason": "NZ's hope"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "teamCode": "AUT",
+      "position": "Midfielder",
+      "reason": "Austrian engine"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "position": "Defender",
+      "reason": "NZ defender"
+    }
+  ],
+  "tacticalPreview": "Austria's pressing will overwhelm New Zealand. Expect high possession for Austria.",
+  "prediction": {
+    "predictedOutcome": "AUT",
+    "predictedScore": "4-1",
+    "confidence": 82,
+    "reasoning": "Austria's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Austria's best World Cup was third place in 1954",
+    "New Zealand are OFC champions"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_jpn",
+  "firstName": "Hajime",
+  "lastName": "Moriyasu",
+  "commonName": "Hajime Moriyasu",
+  "dateOfBirth": "1968-08-23",
+  "nationality": "Japan",
+  "currentTeam": "Japan",
+  "currentTeamCode": "JPN",
+  "photoUrl": "assets/managers/moriyasu.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "High Press",
+  "yearsExperience": 15,
+  "previousTeams": ["Sanfrecce Hiroshima", "Japan U23"],
+  "trophies": ["J1 League x3", "Asian Games Gold 2018"],
+  "careerWins": 200,
+  "careerDraws": 80,
+  "careerLosses": 70,
+  "careerWinPercentage": 57,
+  "bio": "Led Japan to shock wins over Germany and Spain at 2022 World Cup. Known for meticulous preparation and tactical flexibility."
+}

@@ -1,0 +1,52 @@
+{
+  "team1Code": "DEN",
+  "team2Code": "AUT",
+  "team1Name": "Denmark",
+  "team2Name": "Austria",
+  "historicalAnalysis": "Denmark and Austria have competitive recent history. Austria under Ralf Rangnick have become a formidable pressing team.",
+  "keyStorylines": [
+    "Rangnick's Austria vs Danish organization",
+    "Battle for second place in Group G",
+    "European tactical battle"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Eriksen",
+      "teamCode": "DEN",
+      "position": "Midfielder",
+      "reason": "Creative hub"
+    },
+    {
+      "name": "David Alaba",
+      "teamCode": "AUT",
+      "position": "Defender",
+      "reason": "World-class leader"
+    },
+    {
+      "name": "Rasmus Højlund",
+      "teamCode": "DEN",
+      "position": "Striker",
+      "reason": "Goal threat"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "teamCode": "AUT",
+      "position": "Midfielder",
+      "reason": "Austrian engine"
+    }
+  ],
+  "tacticalPreview": "Austria's pressing vs Denmark's possession. Both teams are tactically sophisticated.",
+  "prediction": {
+    "predictedOutcome": "DEN",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Denmark's slightly superior quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Austria impressed at Euro 2024 under Rangnick",
+    "Denmark reached Euro 2020 semi-finals",
+    "Alaba plays for Real Madrid"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,39 @@
+{
+  "id": "BRA_MAR",
+  "team1Code": "BRA",
+  "team2Code": "MAR",
+  "totalMatches": 3,
+  "team1Wins": 1,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 4,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-03-25",
+  "firstMeeting": "1998-06-16",
+  "notableMatches": [
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Newcastle, England",
+      "description": "Rivaldo and Ronaldo lead Brazil to comfortable group stage victory"
+    },
+    {
+      "year": 2023,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "MAR",
+      "location": "Tangier, Morocco",
+      "description": "Morocco shock Brazil after historic 2022 World Cup semi-final run"
+    }
+  ]
+}

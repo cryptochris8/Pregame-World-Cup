@@ -1,0 +1,39 @@
+{
+  "team1Code": "WAL",
+  "team2Code": "KOR",
+  "team1Name": "Wales",
+  "team2Name": "Korea Republic",
+  "historicalAnalysis": "Wales and Korea met at the 2022 World Cup, drawing 0-0. Both teams seek to improve on that result.",
+  "keyStorylines": [
+    "2022 World Cup rematch",
+    "Son seeking goals",
+    "Wales need points"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Aaron Ramsey",
+      "teamCode": "WAL",
+      "position": "Midfielder",
+      "reason": "Welsh leader"
+    },
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "World-class attacker"
+    }
+  ],
+  "tacticalPreview": "Korea will attack while Wales defend. Son must be contained.",
+  "prediction": {
+    "predictedOutcome": "KOR",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Korea's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Drew 0-0 at 2022 World Cup",
+    "Son is Tottenham's all-time top scorer"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "FRA_ITA",
+  "team1Code": "FRA",
+  "team2Code": "ITA",
+  "totalMatches": 38,
+  "team1Wins": 18,
+  "team2Wins": 10,
+  "draws": 10,
+  "team1Goals": 64,
+  "team2Goals": 40,
+  "worldCupMatches": 5,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 1,
+  "lastMatch": "2024-09-06",
+  "firstMeeting": "1910-05-15",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "ITA",
+      "location": "Berlin, Germany",
+      "description": "Zidane headbutt, Italy win on penalties"
+    },
+    {
+      "year": 2000,
+      "tournament": "Euro 2000",
+      "stage": "Final",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "FRA",
+      "location": "Rotterdam, Netherlands",
+      "description": "Trezeguet golden goal wins it"
+    },
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": "FRA",
+      "location": "Saint-Denis, France",
+      "description": "France win on penalties at home"
+    },
+    {
+      "year": 1938,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "ITA",
+      "location": "Paris, France",
+      "description": "Italy defend title en route to win"
+    }
+  ]
+}

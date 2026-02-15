@@ -1,0 +1,55 @@
+{
+  "team1Code": "ESP",
+  "team2Code": "URU",
+  "team1Name": "Spain",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "Spain and Uruguay share a unique World Cup history that dates back to 1950, when both nations were among the world's elite. Their encounters have been competitive affairs, with Spain leading 3-2-2 in overall head-to-head. Remarkably, their two World Cup meetings (both in 1950) ended in draws.\n\nThe 1950 World Cup's round-robin final group saw Spain and Uruguay draw 2-2 in São Paulo, one of the great matches of the early World Cup era. Both nations were contenders that year—Uruguay would go on to win the tournament with their famous \"Maracanazo\" victory over Brazil, while Spain finished fourth.\n\nModern encounters have been friendlies and a memorable 2013 Confederations Cup group match (2-1 Spain). Both nations have since won World Cups (Spain in 2010, Uruguay in 1930 and 1950), making this a meeting of champions.",
+  "keyStorylines": [
+    "Spain as Euro 2024 champions facing South American grit",
+    "Uruguay seeking to prove they remain a World Cup force despite being a small nation",
+    "Clash of World Cup winners: Spain's tiki-taka legacy vs Uruguay's warrior mentality",
+    "Can Uruguay's young generation match the heroics of Suárez, Cavani, and Godín?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Teenage phenomenon who dominated Euro 2024"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Real Madrid's engine who brings intensity and quality"
+    },
+    {
+      "name": "Nico Williams",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Electric pace and skill on the opposite flank to Yamal"
+    },
+    {
+      "name": "Darwin Núñez",
+      "teamCode": "URU",
+      "position": "Striker",
+      "reason": "Liverpool striker with explosive pace and finishing ability"
+    }
+  ],
+  "tacticalPreview": "Spain's 4-3-3 under De la Fuente combines traditional possession with devastating speed on the wings. Yamal and Williams are perhaps the most exciting wing combination in world football.\n\nUruguay's 4-3-3 under Marcelo Bielsa emphasizes aggressive pressing and direct play. Valverde's engine and Núñez's pace will test Spain's defense. Uruguay's physicality could disrupt Spain's rhythm if they execute early.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "2-1",
+    "confidence": 68,
+    "reasoning": "Spain's Euro 2024 form and superior squad depth give them the edge. Uruguay's quality ensures this will be competitive, but Spain's young stars should prevail.",
+    "alternativeScenario": "Uruguay's physical intensity and counter-attacking threat could overwhelm Spain. A 2-1 Uruguayan victory is entirely possible if Valverde and Núñez fire."
+  },
+  "pastEncountersSummary": "Seven meetings with Spain leading 3-2-2. Both World Cup encounters (1950) were draws. The 2013 Confederations Cup match (2-1 Spain) was the most recent competitive fixture. Spain's 2014 friendly win (2-1) is the latest meeting.",
+  "funFacts": [
+    "Uruguay are one of only eight nations to win the World Cup",
+    "The 1950 World Cup's round-robin format meant Spain and Uruguay drew 2-2 in a virtual \"final group\"",
+    "Spain's 2010 World Cup win was built on beating Uruguay in group stage 2-1",
+    "Luis Suárez's infamous handball against Ghana in 2010 denied Africa's last team; Spain would later beat Uruguay"
+  ],
+  "isFirstMeeting": false
+}

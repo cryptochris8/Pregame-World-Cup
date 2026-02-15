@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "URU",
+  "team1Name": "Brazil",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "The Brazil-Uruguay rivalry is marked by one of football's most famous moments: the 1950 World Cup final, known as the \"Maracanazo.\" In front of nearly 200,000 fans at the Maracanã, Uruguay shocked Brazil 2-1 to win the World Cup, causing national mourning in Brazil.\n\nThat trauma has defined this rivalry ever since. Brazil have dominated recent decades, but Uruguay's warrior mentality means they always compete fiercely. Uruguay's 2010 World Cup fourth-place finish and 2011 Copa América victory showed they remain formidable.\n\nUruguay enter 2026 under Marcelo Bielsa, bringing his trademark intense pressing style. Brazil's young generation of Vinícius Jr., Rodrygo, and Endrick represents a new era.",
+  "keyStorylines": [
+    "Echoes of the Maracanazo: Can Uruguay shock Brazil again?",
+    "Bielsa's pressing philosophy vs Brazil's flair",
+    "Uruguay's grit vs Brazil's technical brilliance",
+    "Federico Valverde leading Uruguay's new generation"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's most electrifying player"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Real Madrid engine driving Uruguay forward"
+    },
+    {
+      "name": "Endrick",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Teenage sensation in his first World Cup"
+    },
+    {
+      "name": "Darwin Núñez",
+      "teamCode": "URU",
+      "position": "Striker",
+      "reason": "Explosive pace and finishing"
+    }
+  ],
+  "tacticalPreview": "Uruguay will press high and make Brazil uncomfortable under Bielsa's system. Brazil must handle the intensity and use their technical superiority in tight spaces. Transitions will be crucial.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Brazil's superior squad depth and individual quality should prevail, but Uruguay will make it difficult and competitive.",
+    "alternativeScenario": "Uruguay's pressing could suffocate Brazil, leading to a shock 1-0 Uruguayan victory."
+  },
+  "pastEncountersSummary": "Over 80 meetings, Brazil lead significantly. Uruguay's 1950 Maracanazo remains the most famous result in South American football history.",
+  "funFacts": [
+    "The 1950 World Cup final caused such trauma that Brazil changed their kit colors",
+    "Uruguay are one of only 8 nations to win the World Cup",
+    "Brazil and Uruguay have met in 6 World Cups",
+    "Uruguay's population is smaller than São Paulo alone"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_pan",
+  "firstName": "Thomas",
+  "lastName": "Christiansen",
+  "commonName": "Thomas Christiansen",
+  "dateOfBirth": "1973-03-29",
+  "nationality": "Denmark",
+  "currentTeam": "Panama",
+  "currentTeamCode": "PAN",
+  "photoUrl": "assets/managers/christiansen.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 12,
+  "previousTeams": ["AEK Larnaca", "APOEL", "Leeds United", "Real Union"],
+  "trophies": ["Cypriot League", "Cypriot Cup"],
+  "careerWins": 150,
+  "careerDraws": 60,
+  "careerLosses": 70,
+  "careerWinPercentage": 54,
+  "bio": "Spanish-born Danish coach who played for Spain. Has brought stability and tactical organization to Panama."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ARG_COL",
+  "team1Code": "ARG",
+  "team2Code": "COL",
+  "totalMatches": 42,
+  "team1Wins": 19,
+  "team2Wins": 8,
+  "draws": 15,
+  "team1Goals": 74,
+  "team2Goals": 48,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-07-14",
+  "firstMeeting": "1945-12-16",
+  "notableMatches": [
+    {
+      "year": 2024,
+      "tournament": "Copa America",
+      "stage": "Final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Miami, USA",
+      "description": "Lautaro Martinez goal in extra time"
+    },
+    {
+      "year": 2022,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Cordoba, Argentina",
+      "description": "Key qualifier victory"
+    },
+    {
+      "year": 1994,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 5,
+      "winnerCode": "COL",
+      "location": "Boston, USA",
+      "description": "Colombia's famous 5-0 demolition"
+    }
+  ]
+}

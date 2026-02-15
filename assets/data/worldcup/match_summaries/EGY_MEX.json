@@ -1,0 +1,55 @@
+{
+  "team1Code": "MEX",
+  "team2Code": "EGY",
+  "team1Name": "Mexico",
+  "team2Name": "Egypt",
+  "historicalAnalysis": "Mexico and Egypt have met just twice, both friendlies without meaningful stakes. This World Cup encounter represents uncharted territory for both nations—a clash of CONCACAF and CAF powers with contrasting styles.\n\nMexico's World Cup pedigree is strong with 17 appearances and multiple deep runs. Egypt, despite dominating African football, have struggled on the world stage. Their 2018 World Cup campaign ended in group-stage elimination despite having Salah.\n\nThis match pits Mexico's possession-based approach against Egypt's counter-attacking style built around their superstar.",
+  "keyStorylines": [
+    "First competitive meeting between these football cultures",
+    "Mexico seeking to secure qualification for knockout rounds",
+    "Salah vs Mexico's defense: The key battle",
+    "Egypt looking to finally advance past the group stage"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Edson Álvarez",
+      "teamCode": "MEX",
+      "position": "Midfielder",
+      "reason": "Mexico's defensive anchor and captain"
+    },
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "Egypt's one-man army"
+    },
+    {
+      "name": "Raúl Jiménez",
+      "teamCode": "MEX",
+      "position": "Striker",
+      "reason": "Experienced target man with World Cup experience"
+    },
+    {
+      "name": "Mohamed Elneny",
+      "teamCode": "EGY",
+      "position": "Midfielder",
+      "reason": "Provides stability and Premier League experience"
+    }
+  ],
+  "tacticalPreview": "Mexico will dominate possession while Egypt sits deep waiting to release Salah. Mexico must be patient and avoid getting caught on the counter. Egypt's defensive discipline will be tested.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Mexico's squad depth and tournament experience should prove decisive against an Egypt side overly reliant on Salah.",
+    "alternativeScenario": "Salah magic could produce a 1-1 draw or even Egyptian victory if Mexico become complacent."
+  },
+  "pastEncountersSummary": "Just two friendlies with no competitive history. This is effectively a first meeting of consequence.",
+  "funFacts": [
+    "First World Cup meeting between Mexico and Egypt",
+    "Egypt have won 7 AFCON titles but never advanced past World Cup group stage since 1934",
+    "Mexico have been eliminated in the Round of 16 in seven consecutive World Cups",
+    "Both nations have passionate, colorful supporter cultures"
+  ],
+  "isFirstMeeting": true
+}

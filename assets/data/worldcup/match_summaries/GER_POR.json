@@ -1,0 +1,52 @@
+{
+  "team1Code": "GER",
+  "team2Code": "POR",
+  "team1Name": "Germany",
+  "team2Name": "Portugal",
+  "historicalAnalysis": "Germany and Portugal have met multiple times at major tournaments, with Germany generally dominant. Their 2014 World Cup group match (4-0 Germany) was particularly memorable. Ronaldo potentially faces his final World Cup against a resurgent Germany.",
+  "keyStorylines": [
+    "Ronaldo's potential final World Cup",
+    "Germany seeking redemption",
+    "Portugal's next generation vs German pressing"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Creative force"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "Legendary striker in final World Cup?"
+    },
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bundesliga's best"
+    },
+    {
+      "name": "Rafael Leão",
+      "teamCode": "POR",
+      "position": "Winger",
+      "reason": "Portugal's future"
+    }
+  ],
+  "tacticalPreview": "Germany's high press vs Portugal's individual quality. Musiala and Wirtz vs Bruno Fernandes in midfield will be crucial.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Germany's collective strength vs Portugal's star power slightly favors Germany."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Germany beat Portugal 4-0 at the 2014 World Cup",
+    "Ronaldo has scored in five different World Cups",
+    "Germany have won 4 World Cups"
+  ],
+  "isFirstMeeting": false
+}

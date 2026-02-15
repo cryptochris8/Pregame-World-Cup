@@ -1,0 +1,21 @@
+{
+  "id": "manager_col",
+  "firstName": "Nestor",
+  "lastName": "Lorenzo",
+  "commonName": "Nestor Lorenzo",
+  "dateOfBirth": "1966-02-19",
+  "nationality": "Argentina",
+  "currentTeam": "Colombia",
+  "currentTeamCode": "COL",
+  "photoUrl": "assets/managers/lorenzo.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 15,
+  "previousTeams": ["Deportivo Cali (Assistant)", "Colombia NT (Assistant)", "Melgar"],
+  "trophies": ["Copa America 2024 Runner-up"],
+  "careerWins": 80,
+  "careerDraws": 30,
+  "careerLosses": 25,
+  "careerWinPercentage": 59,
+  "bio": "Former assistant to Jose Pekerman, now leads Colombia resurgence. Guided them to Copa America 2024 final with organized, effective football."
+}

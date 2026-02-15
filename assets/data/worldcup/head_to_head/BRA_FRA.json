@@ -1,0 +1,59 @@
+{
+  "id": "BRA_FRA",
+  "team1Code": "BRA",
+  "team2Code": "FRA",
+  "totalMatches": 14,
+  "team1Wins": 5,
+  "team2Wins": 4,
+  "draws": 5,
+  "team1Goals": 22,
+  "team2Goals": 21,
+  "worldCupMatches": 5,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 1,
+  "lastMatch": "2023-03-26",
+  "firstMeeting": "1930-07-22",
+  "notableMatches": [
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 3,
+      "winnerCode": "FRA",
+      "location": "Saint-Denis, France",
+      "description": "Zidane double, France first title"
+    },
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "FRA",
+      "location": "Frankfurt, Germany",
+      "description": "Henry goal ends Brazil's run"
+    },
+    {
+      "year": 1986,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "FRA",
+      "location": "Guadalajara, Mexico",
+      "description": "France win on penalties, Platini era"
+    },
+    {
+      "year": 1958,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 5,
+      "team2Score": 2,
+      "winnerCode": "BRA",
+      "location": "Stockholm, Sweden",
+      "description": "Pele hat-trick, Brazil cruise to final"
+    }
+  ]
+}

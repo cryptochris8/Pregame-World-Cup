@@ -1,0 +1,55 @@
+{
+  "team1Code": "ALG",
+  "team2Code": "AUT",
+  "team1Name": "Algeria",
+  "team2Name": "Austria",
+  "historicalAnalysis": "Algeria and Austria have met at a World Cup before—at the 1982 World Cup in Spain. That encounter is best remembered for the infamous \"Disgrace of Gijón,\" where West Germany and Austria's later match appeared to produce a mutually beneficial result that eliminated Algeria despite their strong performances.\n\nAlgeria return to the World Cup after missing 2022, with revenge for historical injustice on many fans' minds. Their 2019 AFCON triumph showed their quality.\n\nAustria have improved dramatically under Rangnick's leadership. Their aggressive pressing and tactical sophistication make them dangerous opponents.",
+  "keyStorylines": [
+    "Historical significance from 1982 World Cup \"Disgrace of Gijón\"",
+    "Algeria seeking delayed revenge",
+    "Austria's pressing system vs Algeria's technical quality",
+    "Both teams with Group J progression hopes"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "position": "Winger",
+      "reason": "Algeria's creative hub"
+    },
+    {
+      "name": "David Alaba",
+      "teamCode": "AUT",
+      "position": "Defender",
+      "reason": "Real Madrid's versatile star"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "teamCode": "ALG",
+      "position": "Midfielder",
+      "reason": "AC Milan's midfield anchor"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "teamCode": "AUT",
+      "position": "Midfielder",
+      "reason": "Dortmund's engine"
+    }
+  ],
+  "tacticalPreview": "Austria's 4-2-3-1 emphasizes intense pressing. Sabitzer's energy and Laimer's running will try to overwhelm Algeria's midfield.\n\nAlgeria's 4-3-3 focuses on keeping the ball and hitting on counters. Mahrez's creativity and Bennacer's control are key.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Two evenly matched teams should produce a competitive draw. Both have quality to score and defensive organization.",
+    "alternativeScenario": "If Austria's pressing dominates, a 2-0 win is possible. If Algeria counter effectively, they could win 2-1."
+  },
+  "pastEncountersSummary": "Met at 1982 World Cup. The broader context of that tournament involved the infamous Germany-Austria match that affected Algeria.",
+  "funFacts": [
+    "The 1982 \"Disgrace of Gijón\" led to FIFA scheduling final group games simultaneously",
+    "Algeria won the 2019 AFCON without losing a match",
+    "Alaba has won multiple Champions League titles",
+    "Mahrez scored the winning goal in the 2019 AFCON"
+  ],
+  "isFirstMeeting": false
+}

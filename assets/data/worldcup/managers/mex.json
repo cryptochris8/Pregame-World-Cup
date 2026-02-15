@@ -1,0 +1,21 @@
+{
+  "id": "manager_mex",
+  "firstName": "Javier",
+  "lastName": "Aguirre",
+  "commonName": "Javier Aguirre",
+  "dateOfBirth": "1958-12-01",
+  "nationality": "Mexico",
+  "currentTeam": "Mexico",
+  "currentTeamCode": "MEX",
+  "photoUrl": "assets/managers/aguirre.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 30,
+  "previousTeams": ["Pachuca", "Osasuna", "Atletico Madrid", "Zaragoza", "Espanyol", "Japan NT", "Egypt NT"],
+  "trophies": ["Liga MX titles", "Copa MX"],
+  "careerWins": 400,
+  "careerDraws": 200,
+  "careerLosses": 180,
+  "careerWinPercentage": 51,
+  "bio": "Veteran Mexican coach in his third stint with El Tri. Known for pragmatic approach and ability to organize defensively solid teams."
+}

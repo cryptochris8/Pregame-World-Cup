@@ -1,0 +1,21 @@
+{
+  "id": "manager_sen",
+  "firstName": "Aliou",
+  "lastName": "Cisse",
+  "commonName": "Aliou Cisse",
+  "dateOfBirth": "1976-03-24",
+  "nationality": "Senegal",
+  "currentTeam": "Senegal",
+  "currentTeamCode": "SEN",
+  "photoUrl": "assets/managers/cisse.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Physical",
+  "yearsExperience": 10,
+  "previousTeams": ["Senegal U23"],
+  "trophies": ["AFCON 2022"],
+  "careerWins": 60,
+  "careerDraws": 25,
+  "careerLosses": 20,
+  "careerWinPercentage": 57,
+  "bio": "Former captain who led Senegal to their first ever AFCON title in 2022. Known for building physical, well-organized teams."
+}

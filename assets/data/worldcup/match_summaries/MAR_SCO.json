@@ -1,0 +1,55 @@
+{
+  "team1Code": "SCO",
+  "team2Code": "MAR",
+  "team1Name": "Scotland",
+  "team2Name": "Morocco",
+  "historicalAnalysis": "Scotland and Morocco have met only once before—a 1998 World Cup group match that ended 3-0 to Morocco. That result helped Morocco finish top of their group in one of their best World Cup performances.\n\nMorocco's 2022 World Cup semi-final run was historic—the first African and Arab nation to reach that stage. Their defensive organization and spirit captured hearts worldwide, and they enter 2026 as Africa's best hope.\n\nScotland return to the World Cup desperate to finally progress beyond the group stage. Their Premier League-laden squad has never been stronger.",
+  "keyStorylines": [
+    "Morocco's historic 2022 squad seeking more glory",
+    "Scotland's never-ending quest for knockout round football",
+    "Rematch of 1998 World Cup encounter",
+    "Africa's best vs Scotland's best in decades"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Defender",
+      "reason": "PSG's world-class right-back"
+    },
+    {
+      "name": "John McGinn",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Aston Villa captain leading from the front"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "position": "Midfielder",
+      "reason": "Morocco's creative genius"
+    },
+    {
+      "name": "Che Adams",
+      "teamCode": "SCO",
+      "position": "Forward",
+      "reason": "Torino striker providing physical presence"
+    }
+  ],
+  "tacticalPreview": "Morocco's 4-3-3 is built on defensive solidity first. Hakimi provides attacking thrust from right-back, while Ziyech's creativity unlocks defenses.\n\nScotland's 3-5-2 provides width through wing-backs and bodies in midfield. McGinn's energy will be crucial in combating Morocco's technical midfield.",
+  "prediction": {
+    "predictedOutcome": "MAR",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Morocco's tournament experience and superior individual quality should prove decisive, but Scotland will make it competitive.",
+    "alternativeScenario": "If Scotland's pressing disrupts Morocco's buildup, a 1-1 draw is realistic."
+  },
+  "pastEncountersSummary": "One previous meeting: Morocco won 3-0 at the 1998 World Cup.",
+  "funFacts": [
+    "Morocco became the first African team to reach a World Cup semi-final in 2022",
+    "Scotland have never progressed past the World Cup group stage",
+    "Hakimi is considered one of the best right-backs in the world",
+    "Scotland's last World Cup was in 1998—against Morocco's group"
+  ],
+  "isFirstMeeting": false
+}

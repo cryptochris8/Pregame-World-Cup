@@ -1,0 +1,21 @@
+{
+  "id": "manager_irn",
+  "firstName": "Amir",
+  "lastName": "Ghalenoei",
+  "commonName": "Amir Ghalenoei",
+  "dateOfBirth": "1964-03-06",
+  "nationality": "Iran",
+  "currentTeam": "Iran",
+  "currentTeamCode": "IRN",
+  "photoUrl": "assets/managers/ghalenoei.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 20,
+  "previousTeams": ["Sepahan", "Al-Ain", "Esteghlal", "Tractor"],
+  "trophies": ["Iranian Pro League x4", "AFC Champions League Runner-up"],
+  "careerWins": 250,
+  "careerDraws": 100,
+  "careerLosses": 90,
+  "careerWinPercentage": 57,
+  "bio": "Most successful Iranian club coach, now leading Team Melli. Known for disciplined, organized teams."
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "TUN",
+  "team2Code": "JPN",
+  "team1Name": "Tunisia",
+  "team2Name": "Japan",
+  "historicalAnalysis": "Tunisia and Japan have never met at a World Cup. Both nations have consistent World Cup pedigrees—Japan have qualified for every tournament since 1998, while Tunisia have appeared in 6 World Cups.\n\nJapan's 2022 World Cup saw remarkable victories over Germany and Spain in the group stage before losing to Croatia on penalties. Their blend of technical precision and European-based stars makes them formidable.\n\nTunisia's 2022 campaign featured a famous win over France, showing they can compete with anyone when their organization and intensity are right.",
+  "keyStorylines": [
+    "Two consistent World Cup qualifiers meeting for the first time",
+    "Japan seeking to build on Germany and Spain scalps",
+    "Tunisia aiming to replicate their 2022 upset of France",
+    "Asian precision vs African resilience"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "position": "Winger",
+      "reason": "Real Sociedad's creative spark and La Liga star"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "position": "Midfielder",
+      "reason": "Manchester United's Tunisian talent"
+    },
+    {
+      "name": "Kaoru Mitoma",
+      "teamCode": "JPN",
+      "position": "Winger",
+      "reason": "Brighton's dazzling dribbler"
+    },
+    {
+      "name": "Wahbi Khazri",
+      "teamCode": "TUN",
+      "position": "Forward",
+      "reason": "Tunisia's experienced talisman"
+    }
+  ],
+  "tacticalPreview": "Japan's 4-2-3-1 emphasizes technical football and quick transitions. Kubo and Mitoma's dribbling can unlock any defense, while their pressing is relentless.\n\nTunisia's 4-3-3 is built on defensive organization first. They'll look to frustrate Japan and hit on counter-attacks, with Khazri providing the creative spark.",
+  "prediction": {
+    "predictedOutcome": "JPN",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Japan's superior individual quality and tactical sophistication should prove decisive, but Tunisia's organization makes it competitive.",
+    "alternativeScenario": "If Tunisia's pressing disrupts Japan's buildup, a 1-1 draw is very possible."
+  },
+  "pastEncountersSummary": "First ever World Cup meeting. No significant history.",
+  "funFacts": [
+    "Japan beat Germany and Spain at the 2022 World Cup",
+    "Tunisia beat France 1-0 at the 2022 World Cup",
+    "Mitoma's dribbling has been compared to Messi",
+    "This is Tunisia's 6th World Cup appearance"
+  ],
+  "isFirstMeeting": true
+}

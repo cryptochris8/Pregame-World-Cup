@@ -1,0 +1,52 @@
+{
+  "team1Code": "SUI",
+  "team2Code": "AUT",
+  "team1Name": "Switzerland",
+  "team2Name": "Austria",
+  "historicalAnalysis": "Switzerland and Austria are Alpine neighbors with a natural rivalry. Both teams have improved significantly in recent years.",
+  "keyStorylines": [
+    "Alpine derby at the World Cup",
+    "Xhaka vs Alaba leadership battle",
+    "Both teams seeking knockout rounds"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "position": "Midfielder",
+      "reason": "Swiss captain"
+    },
+    {
+      "name": "David Alaba",
+      "teamCode": "AUT",
+      "position": "Defender",
+      "reason": "Austrian leader"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "position": "Forward",
+      "reason": "Swiss striker"
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "teamCode": "AUT",
+      "position": "Midfielder",
+      "reason": "Austrian playmaker"
+    }
+  ],
+  "tacticalPreview": "Neighboring rivals with similar styles. Midfield control will be crucial.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched neighbors likely to draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Alpine neighbors with natural rivalry",
+    "Both teams have reached recent Euro quarter-finals",
+    "Switzerland beat France on penalties at Euro 2020"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "BEL",
+  "team2Code": "IRN",
+  "team1Name": "Belgium",
+  "team2Name": "Iran",
+  "historicalAnalysis": "Belgium and Iran met at the 2018 World Cup, with Belgium winning 1-0 through a late Lukaku goal. That match was tighter than expected, with Iran's organization frustrating Belgium for long periods.\n\nBelgium's golden generation is evolving—De Bruyne and Lukaku remain, but younger talents like Doku and Openda are now key players. Their 2022 World Cup was disappointing, crashing out in the group stage.\n\nIran continue to be Asia's most consistent World Cup qualifiers. Their 2022 campaign included an emotional 2-0 win over Wales, proving their ability to deliver on the big stage.",
+  "keyStorylines": [
+    "Rematch of 2018 World Cup encounter",
+    "Belgium's new generation vs Iran's experienced squad",
+    "Belgium seeking redemption after 2022 group stage exit",
+    "Taremi and Azmoun vs Belgium's defense"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "position": "Midfielder",
+      "reason": "Manchester City's genius pulling the strings"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "position": "Forward",
+      "reason": "Inter Milan's clinical striker"
+    },
+    {
+      "name": "Jérémy Doku",
+      "teamCode": "BEL",
+      "position": "Winger",
+      "reason": "Manchester City's explosive dribbler"
+    },
+    {
+      "name": "Sardar Azmoun",
+      "teamCode": "IRN",
+      "position": "Forward",
+      "reason": "Iran's \"Iranian Messi\""
+    }
+  ],
+  "tacticalPreview": "Belgium's 4-3-3 maximizes De Bruyne's creativity, with Doku providing pace on the wing. Their transition play can devastate any defense.\n\nIran's 4-3-3 emphasizes defensive solidity and clinical counter-attacks. Taremi and Azmoun's partnership is world-class and can hurt any team.",
+  "prediction": {
+    "predictedOutcome": "BEL",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Belgium's individual quality should prove decisive, but Iran's attacking threat makes this closer than expected.",
+    "alternativeScenario": "If Taremi and Azmoun fire, Iran could spring an upset 1-0 victory."
+  },
+  "pastEncountersSummary": "One World Cup meeting: Belgium won 1-0 in 2018 with a late Lukaku goal.",
+  "funFacts": [
+    "Iran almost took a point off Belgium in 2018, hitting the post twice",
+    "De Bruyne has won 6 Premier League titles with Manchester City",
+    "Taremi has scored in both the Champions League and Europa League finals",
+    "Belgium reached a World Cup semi-final in 2018"
+  ],
+  "isFirstMeeting": false
+}

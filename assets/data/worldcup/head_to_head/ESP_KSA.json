@@ -1,0 +1,39 @@
+{
+  "id": "ESP_KSA",
+  "team1Code": "ESP",
+  "team2Code": "KSA",
+  "totalMatches": 3,
+  "team1Wins": 3,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 5,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-11-14",
+  "firstMeeting": "2004-05-28",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Kaiserslautern, Germany",
+      "description": "Spain narrow win eliminates Saudi Arabia from tournament"
+    },
+    {
+      "year": 2022,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Spain comfortable in friendly before 2022 World Cup"
+    }
+  ]
+}

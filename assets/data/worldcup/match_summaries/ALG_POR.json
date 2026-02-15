@@ -1,0 +1,52 @@
+{
+  "team1Code": "POR",
+  "team2Code": "ALG",
+  "team1Name": "Portugal",
+  "team2Name": "Algeria",
+  "historicalAnalysis": "Portugal and Algeria share colonial history, adding extra dimension to their encounters. They've met in friendlies but never at a World Cup. This represents a significant first.",
+  "keyStorylines": [
+    "Colonial history meets World Cup football",
+    "Ronaldo facing African opposition",
+    "Algeria seeking prestigious scalp"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "Legendary striker"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "position": "Winger",
+      "reason": "Algeria's talisman"
+    },
+    {
+      "name": "Rafael Leão",
+      "teamCode": "POR",
+      "position": "Winger",
+      "reason": "Electric pace"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "teamCode": "ALG",
+      "position": "Midfielder",
+      "reason": "Midfield general"
+    }
+  ],
+  "tacticalPreview": "Portugal's individual quality vs Algeria's tactical discipline. Ronaldo's movement will test Algeria's defense.",
+  "prediction": {
+    "predictedOutcome": "POR",
+    "predictedScore": "3-1",
+    "confidence": 72,
+    "reasoning": "Portugal's superior squad should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Colonial history adds extra significance",
+    "Both nations have produced world-class playmakers"
+  ],
+  "isFirstMeeting": true
+}

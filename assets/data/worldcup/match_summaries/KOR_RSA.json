@@ -1,0 +1,55 @@
+{
+  "team1Code": "RSA",
+  "team2Code": "KOR",
+  "team1Name": "South Africa",
+  "team2Name": "South Korea",
+  "historicalAnalysis": "South Africa and South Korea met at the 2010 World Cup in South Africa, with South Korea winning 2-1 in a group match. South Korea went on to reach the Round of 16, while host nation South Africa became the first host eliminated in the group stage.\n\nSouth Korea return as consistent Asian qualifiers, with Son Heung-min leading a talented generation. Their 2022 World Cup saw progression to the Round of 16 before losing to Brazil.\n\nSouth Africa make their first World Cup appearance since hosting in 2010. The development of their domestic league and youth programs has produced a competitive squad.",
+  "keyStorylines": [
+    "Rematch of 2010 World Cup encounter in South Africa",
+    "Son Heung-min vs Bafana Bafana",
+    "South Africa's first World Cup since hosting in 2010",
+    "Battle for potential Group A progression"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "Tottenham captain and Asia's greatest player"
+    },
+    {
+      "name": "Percy Tau",
+      "teamCode": "RSA",
+      "position": "Winger",
+      "reason": "South Africa's most experienced European-based player"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "position": "Midfielder",
+      "reason": "PSG's creative playmaker"
+    },
+    {
+      "name": "Ronwen Williams",
+      "teamCode": "RSA",
+      "position": "Goalkeeper",
+      "reason": "AFCON 2024 Best Goalkeeper"
+    }
+  ],
+  "tacticalPreview": "South Korea's 4-3-3 emphasizes pressing and quick transitions. Son's ability to create from any position, combined with Lee's creativity, makes them dangerous.\n\nSouth Africa's 4-4-2 is organized and physical. Williams' shot-stopping will be crucial, and they'll look to hit Korea on counters.",
+  "prediction": {
+    "predictedOutcome": "KOR",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "South Korea's individual quality, particularly Son, should prove decisive. South Africa will compete but lack finishing quality.",
+    "alternativeScenario": "If South Africa score early and defend resolutely, a shock draw is possible."
+  },
+  "pastEncountersSummary": "Met at the 2010 World Cup in South Africa, with South Korea winning 2-1.",
+  "funFacts": [
+    "South Africa became the first host nation eliminated in the group stage (2010)",
+    "Son is Tottenham's highest Premier League scorer",
+    "This is South Africa's third World Cup after 1998 and 2010",
+    "Lee Kang-in won the 2019 U-20 World Cup Golden Ball"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_alg",
+  "firstName": "Vladimir",
+  "lastName": "Petkovic",
+  "commonName": "Vladimir Petkovic",
+  "dateOfBirth": "1963-08-15",
+  "nationality": "Bosnia",
+  "currentTeam": "Algeria",
+  "currentTeamCode": "ALG",
+  "photoUrl": "assets/managers/petkovic.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 18,
+  "previousTeams": ["Lazio", "Switzerland NT", "Bordeaux"],
+  "trophies": ["Coppa Italia"],
+  "careerWins": 180,
+  "careerDraws": 80,
+  "careerLosses": 90,
+  "careerWinPercentage": 51,
+  "bio": "Led Switzerland to Euro 2020 quarter-finals with famous win over France. Brings European experience to Algeria."
+}

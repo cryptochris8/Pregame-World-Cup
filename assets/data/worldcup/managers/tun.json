@@ -1,0 +1,21 @@
+{
+  "id": "manager_tun",
+  "firstName": "Faouzi",
+  "lastName": "Benzarti",
+  "commonName": "Faouzi Benzarti",
+  "dateOfBirth": "1950-11-13",
+  "nationality": "Tunisia",
+  "currentTeam": "Tunisia",
+  "currentTeamCode": "TUN",
+  "photoUrl": "assets/managers/benzarti.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 40,
+  "previousTeams": ["Club Africain", "Esperance", "Wydad", "Tunisia NT"],
+  "trophies": ["CAF Champions League", "Tunisian League x5"],
+  "careerWins": 400,
+  "careerDraws": 180,
+  "careerLosses": 150,
+  "careerWinPercentage": 55,
+  "bio": "Most decorated Tunisian coach in history. Veteran tactician returning to lead Eagles of Carthage."
+}

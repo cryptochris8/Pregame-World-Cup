@@ -1,0 +1,39 @@
+{
+  "team1Code": "AUS",
+  "team2Code": "HON",
+  "team1Name": "Australia",
+  "team2Name": "Honduras",
+  "historicalAnalysis": "Australia and Honduras met in 2017 World Cup qualifying playoffs, with Australia winning on aggregate.",
+  "keyStorylines": [
+    "Playoff rematch",
+    "Australia favorites",
+    "Honduras underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "position": "Midfielder",
+      "reason": "Captain"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "position": "Forward",
+      "reason": "Honduras attacker"
+    }
+  ],
+  "tacticalPreview": "Australia should control possession. Honduras will be physical.",
+  "prediction": {
+    "predictedOutcome": "AUS",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Australia's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Australia beat Honduras in 2017 playoffs",
+    "Honduras last World Cup was 2014"
+  ],
+  "isFirstMeeting": false
+}

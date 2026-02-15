@@ -1,0 +1,52 @@
+{
+  "team1Code": "SRB",
+  "team2Code": "CRC",
+  "team1Name": "Serbia",
+  "team2Name": "Costa Rica",
+  "historicalAnalysis": "Serbia and Costa Rica met at the 2018 World Cup, with Serbia winning 1-0. Both teams seek to advance from Group H.",
+  "keyStorylines": [
+    "Rematch of 2018 World Cup",
+    "Serbia seeking repeat victory",
+    "Costa Rica hoping for different result"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Aleksandar Mitrović",
+      "teamCode": "SRB",
+      "position": "Striker",
+      "reason": "Serbia's main threat"
+    },
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "position": "Goalkeeper",
+      "reason": "World-class keeper"
+    },
+    {
+      "name": "Dušan Vlahović",
+      "teamCode": "SRB",
+      "position": "Striker",
+      "reason": "Goal threat"
+    },
+    {
+      "name": "Joel Campbell",
+      "teamCode": "CRC",
+      "position": "Forward",
+      "reason": "Costa Rica's attacker"
+    }
+  ],
+  "tacticalPreview": "Serbia will attack while Costa Rica defends behind Navas. Clinical finishing needed from Serbia.",
+  "prediction": {
+    "predictedOutcome": "SRB",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Serbia's attacking quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Serbia won 1-0 in 2018",
+    "Costa Rica missed 2022 World Cup knockout rounds",
+    "Kolarov scored the winner in 2018"
+  ],
+  "isFirstMeeting": false
+}

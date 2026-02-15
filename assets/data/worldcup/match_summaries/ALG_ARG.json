@@ -1,0 +1,55 @@
+{
+  "team1Code": "ALG",
+  "team2Code": "ARG",
+  "team1Name": "Algeria",
+  "team2Name": "Argentina",
+  "historicalAnalysis": "Argentina and Algeria's World Cup history spans three meetings across four decades. Their first encounter in 1982 saw Diego Maradona's Argentina defeat Algeria 2-0. More recently, at the 2014 World Cup in Brazil, Lionel Messi scored a 91st-minute winner to give Argentina a narrow 2-1 victory—a crucial goal that kept their campaign on track toward the final.\n\nArgentina enter 2026 as the reigning World Cup and Copa América champions, the undisputed best team in the world. Messi's 2022 triumph completed one of football's greatest stories, and Argentina are now looking to become the first nation since Brazil (1958, 1962) to win back-to-back World Cups.\n\nAlgeria, meanwhile, have never progressed past the World Cup group stage since their famous 1982 campaign. That tournament saw them defeat West Germany before being eliminated due to the infamous \"Disgrace of Gijón\" collusion between Germany and Austria. They've qualified for four World Cups but remain in search of knockout round glory.",
+  "keyStorylines": [
+    "Argentina as defending champions seeking back-to-back titles",
+    "Algeria looking to finally advance past the group stage after decades of hurt",
+    "Will Messi play in 2026? If so, this could be his final World Cup match",
+    "Echo of 2014: Messi's late winner haunts Algerian memories"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The GOAT potentially playing his final World Cup games"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "position": "Winger",
+      "reason": "Algeria's most technically gifted player and creative force"
+    },
+    {
+      "name": "Julián Álvarez",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "Young striker who impressed at the 2022 World Cup"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "teamCode": "ALG",
+      "position": "Midfielder",
+      "reason": "AC Milan's midfield anchor and Algeria's engine"
+    }
+  ],
+  "tacticalPreview": "Argentina's 4-3-3 under Lionel Scaloni balances possession with deadly counter-attacks. Even without Messi at his peak, their collective play and winning mentality make them formidable. Álvarez and Lautaro Martínez provide goal threat.\n\nAlgeria play an organized 4-3-3 built around Mahrez's creativity and Bennacer's midfield control. Their best chance is to stay compact and hit Argentina on the break. The challenge is containing Argentina's movement and pressing.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "3-0",
+    "confidence": 85,
+    "reasoning": "Argentina's champion mentality and squad quality make them heavy favorites. Algeria have quality but lack the depth and experience to trouble the defending champions for 90 minutes.",
+    "alternativeScenario": "A disciplined Algeria could frustrate Argentina and sneak a draw. If Mahrez produces magic and Argentina struggle to break down the defense, 1-1 is possible."
+  },
+  "pastEncountersSummary": "Three meetings, all Argentina victories or draws. The 2014 World Cup encounter (2-1) saw Messi score the winner in the 91st minute. The 1982 meeting (2-0) featured a young Maradona. Algeria have never beaten Argentina.",
+  "funFacts": [
+    "Messi's 91st-minute goal against Algeria in 2014 was his 40th for Argentina",
+    "Algeria's 1982 team beat West Germany but were eliminated due to match-fixing allegations between Germany and Austria",
+    "Argentina are seeking to become the first team since Brazil (1958-62) to win back-to-back World Cups",
+    "Both nations have French colonial history, adding a unique cultural dimension"
+  ],
+  "isFirstMeeting": false
+}

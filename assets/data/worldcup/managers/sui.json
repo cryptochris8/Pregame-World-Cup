@@ -1,0 +1,21 @@
+{
+  "id": "manager_sui",
+  "firstName": "Murat",
+  "lastName": "Yakin",
+  "commonName": "Murat Yakin",
+  "dateOfBirth": "1974-09-15",
+  "nationality": "Switzerland",
+  "currentTeam": "Switzerland",
+  "currentTeamCode": "SUI",
+  "photoUrl": "assets/managers/yakin.png",
+  "preferredFormation": "3-4-2-1",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 12,
+  "previousTeams": ["FC Thun", "Luzern", "Basel", "Spartak Moscow", "Grasshoppers", "Schaffhausen"],
+  "trophies": ["Swiss Super League x2"],
+  "careerWins": 150,
+  "careerDraws": 70,
+  "careerLosses": 80,
+  "careerWinPercentage": 50,
+  "bio": "Former Swiss international who has brought tactical innovation and tournament success to the Nati."
+}

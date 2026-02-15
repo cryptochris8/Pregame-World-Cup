@@ -1,0 +1,59 @@
+{
+  "id": "GER_NED",
+  "team1Code": "GER",
+  "team2Code": "NED",
+  "totalMatches": 46,
+  "team1Wins": 17,
+  "team2Wins": 15,
+  "draws": 14,
+  "team1Goals": 74,
+  "team2Goals": 65,
+  "worldCupMatches": 4,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 1,
+  "lastMatch": "2024-03-26",
+  "firstMeeting": "1910-04-10",
+  "notableMatches": [
+    {
+      "year": 1974,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Munich, Germany",
+      "description": "Germany comeback, Muller winner"
+    },
+    {
+      "year": 1988,
+      "tournament": "Euro 88",
+      "stage": "Semi-Final",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "NED",
+      "location": "Hamburg, Germany",
+      "description": "Van Basten penalty seals Dutch revenge"
+    },
+    {
+      "year": 1978,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Cordoba, Argentina",
+      "description": "Thrilling draw, both reach second round"
+    },
+    {
+      "year": 1990,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Milan, Italy",
+      "description": "Rijkaard-Voller spitting incident"
+    }
+  ]
+}

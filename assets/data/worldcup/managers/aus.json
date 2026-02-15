@@ -1,0 +1,21 @@
+{
+  "id": "manager_aus",
+  "firstName": "Tony",
+  "lastName": "Popovic",
+  "commonName": "Tony Popovic",
+  "dateOfBirth": "1973-07-04",
+  "nationality": "Australia",
+  "currentTeam": "Australia",
+  "currentTeamCode": "AUS",
+  "photoUrl": "assets/managers/popovic.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Physical",
+  "yearsExperience": 12,
+  "previousTeams": ["Western Sydney Wanderers", "Karabukspor", "Perth Glory", "Melbourne Victory"],
+  "trophies": ["AFC Champions League 2014", "A-League"],
+  "careerWins": 150,
+  "careerDraws": 60,
+  "careerLosses": 80,
+  "careerWinPercentage": 52,
+  "bio": "Former Socceroos defender who won Asian Champions League as a coach. Brings winning mentality and organization to Australia."
+}

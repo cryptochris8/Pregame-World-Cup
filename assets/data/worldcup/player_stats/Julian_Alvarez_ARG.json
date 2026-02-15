@@ -1,0 +1,29 @@
+{
+  "playerName": "Julian Alvarez",
+  "fifaCode": "ARG",
+  "worldCupAppearances": 7,
+  "worldCupGoals": 4,
+  "worldCupAssists": 0,
+  "previousWorldCups": [2022],
+  "tournamentStats": [
+    {
+      "year": 2022,
+      "matches": 7,
+      "goals": 4,
+      "assists": 0,
+      "stage": "Winner",
+      "keyMoment": "Scored in semi-final and final, tournament breakthrough"
+    }
+  ],
+  "worldCupAwards": [
+    "World Cup Winner 2022"
+  ],
+  "memorableMoments": [
+    "Goal in World Cup final vs France",
+    "Brace against Croatia in semi-final",
+    "Tireless running throughout tournament"
+  ],
+  "worldCupLegacyRating": 7,
+  "comparisonToLegend": "Work rate compared to Carlos Tevez, clinical finishing like Gabriel Batistuta",
+  "worldCup2026Prediction": "Expected to be Argentina's main striker in title defense"
+}

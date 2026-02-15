@@ -1,0 +1,52 @@
+{
+  "team1Code": "ITA",
+  "team2Code": "CRO",
+  "team1Name": "Italy",
+  "team2Name": "Croatia",
+  "historicalAnalysis": "Italy and Croatia have met multiple times at major tournaments. Their Euro 2012 group match ended 1-1. Croatia's 2018 and 2022 World Cup runs have established them as a tournament force.",
+  "keyStorylines": [
+    "European neighbors clash",
+    "Modrić vs Barella in midfield",
+    "Italy's redemption after missing 2022 World Cup"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Nicolò Barella",
+      "teamCode": "ITA",
+      "position": "Midfielder",
+      "reason": "Italy's heartbeat"
+    },
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "Legendary playmaker"
+    },
+    {
+      "name": "Federico Chiesa",
+      "teamCode": "ITA",
+      "position": "Winger",
+      "reason": "Italy's match-winner"
+    },
+    {
+      "name": "Joško Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "World-class defender"
+    }
+  ],
+  "tacticalPreview": "Two tactically sophisticated teams. Midfield control will be decisive. Both teams prefer possession but can counter effectively.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 52,
+    "reasoning": "Two evenly matched teams likely to share points."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Euro 2012 ended 1-1",
+    "Croatia have reached more recent World Cup semi-finals",
+    "Italy missed the 2022 World Cup"
+  ],
+  "isFirstMeeting": false
+}

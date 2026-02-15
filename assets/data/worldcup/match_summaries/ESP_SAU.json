@@ -1,0 +1,55 @@
+{
+  "team1Code": "ESP",
+  "team2Code": "SAU",
+  "team1Name": "Spain",
+  "team2Name": "Saudi Arabia",
+  "historicalAnalysis": "Spain and Saudi Arabia's World Cup history is limited to one meeting: the 2006 World Cup in Germany, where Spain won 1-0 with a hard-fought victory. However, the context of this 2026 encounter is transformed by Saudi Arabia's stunning 2022 World Cup upset over Argentina in their opening match—a 2-1 victory that ranks among the greatest shocks in tournament history.\n\nThat victory over the eventual champions showed Saudi Arabia are capable of competing at the highest level, at least for 90 minutes. Their high-pressing game plan, perfectly executed by manager Hervé Renard, exposed Argentina's offside trap and produced one of the most memorable World Cup matches ever.\n\nSpain, meanwhile, won the 2024 European Championship in dominant fashion, confirming the emergence of a new generation of Spanish talent. La Roja's tiki-taka evolution under Luis de la Fuente produced devastating attacking football, with teenage sensation Lamine Yamal leading the charge.",
+  "keyStorylines": [
+    "Can Saudi Arabia produce another historic upset after shocking Argentina in 2022?",
+    "Spain as Euro 2024 champions seeking World Cup glory",
+    "Saudi Arabia representing Asian and Middle Eastern football ambitions",
+    "Spain's young generation vs Saudi Arabia's experienced defensive organization"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Teenage prodigy who dominated Euro 2024 and could terrorize Saudi defense"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "SAU",
+      "position": "Winger",
+      "reason": "Scored that stunning goal against Argentina in 2022"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "position": "Midfielder",
+      "reason": "Orchestrates Spain's intricate passing game from midfield"
+    },
+    {
+      "name": "Mohammed Al-Owais",
+      "teamCode": "SAU",
+      "position": "Goalkeeper",
+      "reason": "Shot-stopper who was exceptional against Argentina"
+    }
+  ],
+  "tacticalPreview": "Spain's possession-based 4-3-3 is among the most sophisticated in world football. With Yamal and Nico Williams on the wings, they have pace to complement technical excellence. Saudi Arabia will likely replicate their 2022 Argentina approach: high pressing, aggressive offside trap, and clinical finishing on chances.\n\nThe key for Saudi Arabia is to disrupt Spain's rhythm early and force mistakes. If Spain settle into their passing game, Saudi Arabia will struggle to get the ball. Spain must be patient but also direct enough to avoid playing into Saudi's pressing trap.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Spain's Euro 2024 form and superior quality should prevail comfortably. Saudi Arabia lack the sustained intensity to press for 90 minutes against Spain's ball retention. This should be relatively routine for La Roja.",
+    "alternativeScenario": "If Saudi Arabia score first and replicate their Argentina game plan, an upset is possible. Their 2022 performance proved they can beat anyone on their day."
+  },
+  "pastEncountersSummary": "Three meetings, all won by Spain without conceding a goal. The 2006 World Cup 1-0 win was tight, while friendlies have been more comfortable. Saudi Arabia's 2022 Argentina upset changes the calculus, proving they can compete.",
+  "funFacts": [
+    "Saudi Arabia's win over Argentina in 2022 was their first World Cup victory since 1994",
+    "Spain haven't lost to an Asian team in competitive matches",
+    "Salem Al-Dawsari's goal against Argentina was voted the best goal of the 2022 World Cup",
+    "Spain won Euro 2024 while Lamine Yamal was just 16 years old"
+  ],
+  "isFirstMeeting": false
+}

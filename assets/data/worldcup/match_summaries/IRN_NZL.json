@@ -1,0 +1,55 @@
+{
+  "team1Code": "IRN",
+  "team2Code": "NZL",
+  "team1Name": "Iran",
+  "team2Name": "New Zealand",
+  "historicalAnalysis": "Iran and New Zealand meet for the first time in World Cup history, though they faced each other in a 2017 friendly that Iran won 2-0. Both nations are regulars in the intercontinental playoffs, often fighting for the same World Cup spot.\n\nIran have been Asia's most consistent World Cup qualifiers, appearing in 6 of the last 7 tournaments. Their 2022 World Cup saw an emotional campaign amid political turmoil at home, including a famous 2-0 win over Wales.\n\nNew Zealand qualified through the Oceania region and a playoff victory. The All Whites have only progressed past the group stage once (three draws in 2010), but this experienced squad has European-based players who can compete at this level.",
+  "keyStorylines": [
+    "Asia vs Oceania in a battle of regional powers",
+    "Iran's experienced squad vs New Zealand's organization",
+    "Both nations have World Cup upset potential",
+    "Crucial match for knockout round aspirations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "position": "Forward",
+      "reason": "Inter Milan's clinical striker and Iran's talisman"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "position": "Forward",
+      "reason": "Nottingham Forest's Premier League-proven striker"
+    },
+    {
+      "name": "Sardar Azmoun",
+      "teamCode": "IRN",
+      "position": "Forward",
+      "reason": "The Iranian Messi with flair and finishing"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "position": "Defender",
+      "reason": "Empoli's attacking left-back providing width"
+    }
+  ],
+  "tacticalPreview": "Iran's 4-3-3 is built on defensive solidity and quick transitions. Taremi and Azmoun's partnership is world-class, and their counter-attacking threat is formidable.\n\nNew Zealand's 4-4-2 is pragmatic and organized. Wood's aerial ability will be crucial, with the All Whites looking to maximize set-pieces and crosses.",
+  "prediction": {
+    "predictedOutcome": "IRN",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Iran's superior attacking talent should prove decisive, but New Zealand's organization will make this competitive.",
+    "alternativeScenario": "If Wood dominates aerially and New Zealand defend resolutely, a 1-1 draw is very possible."
+  },
+  "pastEncountersSummary": "One previous meeting: a 2017 friendly won 2-0 by Iran.",
+  "funFacts": [
+    "Taremi scored in both the Champions League and Europa League finals in consecutive seasons",
+    "New Zealand are unbeaten in World Cup history (3 draws in 2010)",
+    "Iran have qualified for more World Cups than any Asian nation except Japan and South Korea",
+    "Chris Wood has scored more than 50 Premier League goals"
+  ],
+  "isFirstMeeting": false
+}

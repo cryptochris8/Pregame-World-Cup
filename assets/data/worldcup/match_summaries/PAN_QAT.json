@@ -1,0 +1,39 @@
+{
+  "team1Code": "QAT",
+  "team2Code": "PAN",
+  "team1Name": "Qatar",
+  "team2Name": "Panama",
+  "historicalAnalysis": "Qatar and Panama have never met. Both are relative World Cup newcomers.",
+  "keyStorylines": [
+    "First meeting",
+    "Two World Cup newcomers",
+    "Qatar as 2022 hosts"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Qatar's star"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "Panama's creator"
+    }
+  ],
+  "tacticalPreview": "Two evenly matched newcomers. Could be tight.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched teams."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First meeting",
+    "Both made their World Cup debuts recently"
+  ],
+  "isFirstMeeting": true
+}

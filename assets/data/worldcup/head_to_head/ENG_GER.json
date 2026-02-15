@@ -1,0 +1,79 @@
+{
+  "id": "ENG_GER",
+  "team1Code": "ENG",
+  "team2Code": "GER",
+  "totalMatches": 37,
+  "team1Wins": 14,
+  "team2Wins": 15,
+  "draws": 8,
+  "team1Goals": 53,
+  "team2Goals": 49,
+  "worldCupMatches": 8,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 4,
+  "worldCupDraws": 2,
+  "lastMatch": "2022-09-26",
+  "firstMeeting": "1930-05-10",
+  "notableMatches": [
+    {
+      "year": 2021,
+      "tournament": "Euro 2020",
+      "stage": "Round of 16",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "ENG",
+      "location": "London, England",
+      "description": "Sterling and Kane end German hex at Wembley"
+    },
+    {
+      "year": 2010,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 1,
+      "team2Score": 4,
+      "winnerCode": "GER",
+      "location": "Bloemfontein, South Africa",
+      "description": "Lampard ghost goal denied, Germany rout"
+    },
+    {
+      "year": 1996,
+      "tournament": "Euro 96",
+      "stage": "Semi-Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "London, England",
+      "description": "Germany wins 6-5 on penalties, Southgate miss"
+    },
+    {
+      "year": 1990,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Turin, Italy",
+      "description": "Germany wins 4-3 on penalties, Waddle blazes over"
+    },
+    {
+      "year": 1970,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 2,
+      "team2Score": 3,
+      "winnerCode": "GER",
+      "location": "Leon, Mexico",
+      "description": "Beckenbauer plays with dislocated shoulder"
+    },
+    {
+      "year": 1966,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 4,
+      "team2Score": 2,
+      "winnerCode": "ENG",
+      "location": "London, England",
+      "description": "Hurst hat-trick, \"They think it's all over\""
+    }
+  ]
+}

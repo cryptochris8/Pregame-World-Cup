@@ -1,0 +1,55 @@
+{
+  "team1Code": "URU",
+  "team2Code": "CPV",
+  "team1Name": "Uruguay",
+  "team2Name": "Cape Verde",
+  "historicalAnalysis": "This is a historic first meeting between Uruguay and Cape Verde. Uruguay are two-time World Cup champions with a proud footballing tradition. Cape Verde make their World Cup debut as one of Africa's emerging nations.\n\nUruguay's blend of experienced stars like Valverde and emerging talents like Núñez makes them dark horse candidates. Their defensive organization and clinical finishing are trademark strengths.\n\nCape Verde's qualification is remarkable for a nation of just 500,000 people. Their technical, Portuguese-influenced style has produced notable players who feature in European leagues.",
+  "keyStorylines": [
+    "Cape Verde's historic World Cup debut",
+    "Two-time World Cup champions vs tiny island nation",
+    "First ever meeting between these nations",
+    "Uruguay seeking deep tournament run"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Darwin Núñez",
+      "teamCode": "URU",
+      "position": "Forward",
+      "reason": "Liverpool's explosive striker"
+    },
+    {
+      "name": "Ryan Mendes",
+      "teamCode": "CPV",
+      "position": "Winger",
+      "reason": "Cape Verde's most dangerous attacker"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Real Madrid's all-action midfielder"
+    },
+    {
+      "name": "Garry Rodrigues",
+      "teamCode": "CPV",
+      "position": "Forward",
+      "reason": "Experienced striker with European pedigree"
+    }
+  ],
+  "tacticalPreview": "Uruguay's 4-4-2 provides defensive solidity while Núñez's pace threatens on counters. Valverde's energy adds another dimension to their attack.\n\nCape Verde's 4-4-2 will be compact and disciplined, looking to frustrate Uruguay and take any counter-attacking opportunity.",
+  "prediction": {
+    "predictedOutcome": "URU",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Uruguay's quality advantage is significant. Their attacking firepower should overwhelm Cape Verde's defense.",
+    "alternativeScenario": "If Cape Verde defend bravely, a 1-0 Uruguay win with growing frustration is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Uruguay won the first ever World Cup in 1930",
+    "Cape Verde has a population of about 500,000",
+    "Valverde is considered one of the best midfielders in the world",
+    "This is Cape Verde's World Cup debut"
+  ],
+  "isFirstMeeting": true
+}

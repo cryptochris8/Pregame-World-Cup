@@ -1,0 +1,55 @@
+{
+  "team1Code": "COL",
+  "team2Code": "CHI",
+  "team1Name": "Colombia",
+  "team2Name": "Chile",
+  "historicalAnalysis": "Colombia and Chile's rivalry intensified during Chile's \"Golden Generation\" years (2015-2016) when La Roja won back-to-back Copa Américas. Their clashes have been tactical battles featuring South American flair and physicality.\n\nChile's decline since those Copa triumphs has been stark—they missed both the 2018 and 2022 World Cups. Colombia, meanwhile, have remained competitive and boast exciting young talent alongside experienced stars.\n\nThis match pits Colombia's rising generation against Chile's aging but still proud squad.",
+  "keyStorylines": [
+    "South American powers clash in the group stage",
+    "Chile's golden generation seeking one last hurrah",
+    "Colombia's youth vs Chile's experience",
+    "Battle for South American pride"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luis Díaz",
+      "teamCode": "COL",
+      "position": "Winger",
+      "reason": "World-class attacker leading Colombia's charge"
+    },
+    {
+      "name": "Alexis Sánchez",
+      "teamCode": "CHI",
+      "position": "Forward",
+      "reason": "Chile's all-time leading scorer in potential final World Cup"
+    },
+    {
+      "name": "Jhon Arias",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "Exciting creative talent from Fluminense"
+    },
+    {
+      "name": "Ben Brereton Díaz",
+      "teamCode": "CHI",
+      "position": "Striker",
+      "reason": "Chile's English-born striker bringing Premier League quality"
+    }
+  ],
+  "tacticalPreview": "Colombia will look to dominate with pace and creativity. Chile under Gareca will press high and try to unsettle Colombia's build-up. Set pieces could be crucial given Chile's aerial threat.",
+  "prediction": {
+    "predictedOutcome": "COL",
+    "predictedScore": "2-0",
+    "confidence": 65,
+    "reasoning": "Colombia's superior squad and current form should be too much for an aging Chile side.",
+    "alternativeScenario": "Chile's big-game experience and Sánchez magic could produce a 1-1 draw."
+  },
+  "pastEncountersSummary": "Competitive rivalry with both teams winning key encounters. Chile's Copa América dominance (2015-16) is balanced by Colombia's recent form.",
+  "funFacts": [
+    "Chile won back-to-back Copa Américas in 2015 and 2016",
+    "Chile missed both the 2018 and 2022 World Cups",
+    "Alexis Sánchez has over 50 goals for Chile",
+    "Ben Brereton Díaz was born in England and qualified through his Chilean mother"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,52 @@
+{
+  "team1Code": "POL",
+  "team2Code": "CRC",
+  "team1Name": "Poland",
+  "team2Name": "Costa Rica",
+  "historicalAnalysis": "Poland and Costa Rica have never met at a World Cup. Poland are favorites but Costa Rica's 2014 quarter-final run shows they can surprise.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Lewandowski seeking goals",
+    "Costa Rica looking for upset"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Robert Lewandowski",
+      "teamCode": "POL",
+      "position": "Striker",
+      "reason": "Poland's star"
+    },
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "position": "Goalkeeper",
+      "reason": "Legendary shot-stopper"
+    },
+    {
+      "name": "Piotr Zieliński",
+      "teamCode": "POL",
+      "position": "Midfielder",
+      "reason": "Creative force"
+    },
+    {
+      "name": "Joel Campbell",
+      "teamCode": "CRC",
+      "position": "Forward",
+      "reason": "Experienced attacker"
+    }
+  ],
+  "tacticalPreview": "Poland should control possession. Costa Rica will defend deep behind Navas and counter.",
+  "prediction": {
+    "predictedOutcome": "POL",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Poland's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Costa Rica reached 2014 quarter-finals",
+    "Keylor Navas won three Champions Leagues"
+  ],
+  "isFirstMeeting": true
+}

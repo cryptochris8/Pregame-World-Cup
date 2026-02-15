@@ -1,0 +1,55 @@
+{
+  "team1Code": "POR",
+  "team2Code": "UZB",
+  "team1Name": "Portugal",
+  "team2Name": "Uzbekistan",
+  "historicalAnalysis": "This is a first ever meeting between Portugal and Uzbekistan. Portugal are one of Europe's established powers, with Cristiano Ronaldo potentially making his final World Cup appearance. Uzbekistan make their historic debut after years of near-misses in Asian qualifying.\n\nPortugal's 2022 World Cup ended in quarter-final heartbreak against Morocco. They return with a blend of experienced stars and emerging talents like Rafael Leão and João Neves.\n\nUzbekistan's qualification represents years of development in Central Asian football. Their technical, possession-based style could surprise opponents.",
+  "keyStorylines": [
+    "Potentially Ronaldo's last World Cup",
+    "Uzbekistan's historic World Cup debut",
+    "First ever meeting between these nations",
+    "European giants vs Asian debutants"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "The all-time top international scorer"
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "teamCode": "UZB",
+      "position": "Forward",
+      "reason": "Roma striker leading the line"
+    },
+    {
+      "name": "Rafael Leão",
+      "teamCode": "POR",
+      "position": "Winger",
+      "reason": "AC Milan's explosive talent"
+    },
+    {
+      "name": "Jaloliddin Masharipov",
+      "teamCode": "UZB",
+      "position": "Midfielder",
+      "reason": "Creative playmaker"
+    }
+  ],
+  "tacticalPreview": "Portugal's 4-3-3 provides multiple attacking threats. Leão's pace, Bruno Fernandes' creativity, and Ronaldo's finishing create a formidable frontline.\n\nUzbekistan's 4-2-3-1 focuses on possession and patient buildup. Shomurodov's hold-up play creates space, and they won't be intimidated by Portugal's reputation.",
+  "prediction": {
+    "predictedOutcome": "POR",
+    "predictedScore": "3-0",
+    "confidence": 80,
+    "reasoning": "Portugal's quality advantage is significant. Their attacking firepower should overwhelm Uzbekistan's defense.",
+    "alternativeScenario": "If Uzbekistan's defense holds firm, a 1-0 Portugal win with growing frustration is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Ronaldo has scored more international goals than any player in history",
+    "Uzbekistan have come close to qualifying in previous World Cup cycles",
+    "This is Uzbekistan's first World Cup appearance",
+    "Portugal reached the 2006 World Cup semi-finals"
+  ],
+  "isFirstMeeting": true
+}

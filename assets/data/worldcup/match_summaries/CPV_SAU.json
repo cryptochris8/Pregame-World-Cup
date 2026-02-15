@@ -1,0 +1,55 @@
+{
+  "team1Code": "CPV",
+  "team2Code": "SAU",
+  "team1Name": "Cape Verde",
+  "team2Name": "Saudi Arabia",
+  "historicalAnalysis": "This is a first ever meeting between Cape Verde and Saudi Arabia. Cape Verde make their World Cup debut as one of Africa's smallest nations, while Saudi Arabia ride the momentum of their famous 2022 win over Argentina.\n\nSaudi Arabia's investment in football has transformed their domestic league, attracting global stars and improving their national team's exposure to top-level football.\n\nCape Verde's qualification represents a remarkable achievement for a nation of just 500,000 people. Their Portuguese-influenced technical style has produced players featuring in European leagues.",
+  "keyStorylines": [
+    "Cape Verde's historic World Cup debut",
+    "Saudi Arabia seeking more giant-killing acts",
+    "First ever meeting between these nations",
+    "Two underdog nations with different World Cup histories"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "SAU",
+      "position": "Winger",
+      "reason": "Scored the winner against Argentina in 2022"
+    },
+    {
+      "name": "Ryan Mendes",
+      "teamCode": "CPV",
+      "position": "Winger",
+      "reason": "Cape Verde's most dangerous attacker"
+    },
+    {
+      "name": "Firas Al-Buraikan",
+      "teamCode": "SAU",
+      "position": "Forward",
+      "reason": "Young Saudi striking talent"
+    },
+    {
+      "name": "Garry Rodrigues",
+      "teamCode": "CPV",
+      "position": "Forward",
+      "reason": "Experienced striker"
+    }
+  ],
+  "tacticalPreview": "Saudi Arabia's 4-3-3 emphasizes quick passing and intensity. Al-Dawsari's creativity is crucial, and their high press can overwhelm opponents.\n\nCape Verde's 4-4-2 is compact and organized. They'll look to stay in the game and take any opportunities that arise.",
+  "prediction": {
+    "predictedOutcome": "SAU",
+    "predictedScore": "2-0",
+    "confidence": 65,
+    "reasoning": "Saudi Arabia's greater World Cup experience and individual quality should prove decisive against the debutants.",
+    "alternativeScenario": "If Cape Verde's organization frustrates Saudi Arabia, a 1-0 Saudi win or even a draw is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Saudi Arabia's 2022 win over Argentina was voted the best World Cup upset",
+    "Cape Verde has a population of about 500,000",
+    "Al-Dawsari's goal against Argentina is one of the most iconic World Cup goals",
+    "This is Cape Verde's first World Cup appearance"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "MAR",
+  "team2Code": "HAI",
+  "team1Name": "Morocco",
+  "team2Name": "Haiti",
+  "historicalAnalysis": "This is a first ever meeting between Morocco and Haiti. Morocco are the 2022 World Cup semi-finalists, making history as the first African and Arab nation to reach that stage. Haiti return to the World Cup for the first time since 1974.\n\nMorocco's 2022 run captured hearts worldwide—victories over Belgium, Spain, and Portugal were remarkable. They enter 2026 with expectations of repeating or exceeding that performance.\n\nHaiti's qualification after 52 years is one of the great underdog stories. Their passionate fanbase and fearless approach make them entertaining opponents.",
+  "keyStorylines": [
+    "Morocco seeking to repeat 2022 heroics",
+    "Haiti's first World Cup in 52 years",
+    "First ever meeting between these nations",
+    "Africa's best vs Caribbean underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Defender",
+      "reason": "PSG's world-class right-back"
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "position": "Forward",
+      "reason": "Haiti's powerful target man"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "position": "Midfielder",
+      "reason": "Morocco's creative genius"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "position": "Winger",
+      "reason": "MLS winger with pace"
+    }
+  ],
+  "tacticalPreview": "Morocco's 4-3-3 is built on defensive solidity and clinical counter-attacks. Hakimi's marauding runs and Ziyech's creativity are key weapons.\n\nHaiti's 4-3-3 will be organized but attacking when possible. They won't park the bus, preferring to compete and create memorable moments.",
+  "prediction": {
+    "predictedOutcome": "MAR",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Morocco's quality and tournament experience should prove decisive. Haiti will compete but lack the depth to threaten consistently.",
+    "alternativeScenario": "If Haiti's physicality disrupts Morocco's rhythm, a 2-1 Morocco win is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Morocco became the first African team to reach a World Cup semi-final in 2022",
+    "Haiti's 1974 World Cup included a goal against Italy by Emmanuel Sanon",
+    "Hakimi scored the winning penalty against Spain in 2022",
+    "This is Haiti's second World Cup, 52 years after their first"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,53 @@
+{
+  "team1Code": "GER",
+  "team2Code": "NED",
+  "team1Name": "Germany",
+  "team2Name": "Netherlands",
+  "historicalAnalysis": "One of football's greatest rivalries. Germany and Netherlands have produced classic World Cup encounters, most famously the 1974 final won by Germany and the 1990 Round of 16 clash with spitting incidents and red cards. The Netherlands have never beaten Germany in a World Cup knockout match.",
+  "keyStorylines": [
+    "Historic European rivalry renewed",
+    "Germany seeking redemption after consecutive group exits",
+    "Musiala vs Van Dijk: Key battle",
+    "Netherlands seeking first World Cup knockout win over Germany"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Germany's creative genius"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "position": "Defender",
+      "reason": "World-class leader"
+    },
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Germany's other prodigy"
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "position": "Forward",
+      "reason": "2022 World Cup breakout star"
+    }
+  ],
+  "tacticalPreview": "Both teams play attractive football. Germany's pressing vs Dutch total football philosophy. Midfield control will be decisive.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "2-2",
+    "confidence": 48,
+    "reasoning": "Classic rivalry likely to produce an entertaining draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Netherlands have never beaten Germany in a World Cup knockout match",
+    "The 1974 World Cup final remains one of football's most famous matches",
+    "Both nations have won World Cups and European Championships"
+  ],
+  "isFirstMeeting": false
+}

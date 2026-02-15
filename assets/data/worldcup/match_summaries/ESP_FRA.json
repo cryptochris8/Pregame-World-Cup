@@ -1,0 +1,55 @@
+{
+  "team1Code": "FRA",
+  "team2Code": "ESP",
+  "team1Name": "France",
+  "team2Name": "Spain",
+  "historicalAnalysis": "France and Spain's rivalry features football at its finest. Both nations have won World Cups and European Championships, representing contrasting styles: France's pace and power vs Spain's possession and precision.\n\nSpain's Euro 2024 triumph confirmed a new golden generation led by teenage sensation Lamine Yamal. France's star power is unmatched with Mbappé leading the charge.",
+  "keyStorylines": [
+    "Euro 2024 champions Spain vs World Cup pedigree France",
+    "Mbappé vs Yamal: Present vs future?",
+    "Tactical masterclass in the Group of Death",
+    "Two of football's greatest nations collide"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappé",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "France's unstoppable attacking threat"
+    },
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Teenage phenomenon who dominated Euro 2024"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "teamCode": "FRA",
+      "position": "Midfielder",
+      "reason": "Real Madrid's midfield anchor"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "position": "Midfielder",
+      "reason": "Orchestrates Spain's intricate passing"
+    }
+  ],
+  "tacticalPreview": "Spain's possession game vs France's devastating transitions. Pedri vs Tchouaméni in midfield is crucial. France must be patient; Spain must avoid getting caught on the counter.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 52,
+    "reasoning": "Two elite teams likely to respect each other's quality, producing a tactical draw.",
+    "alternativeScenario": "Spain's Euro 2024 form could see them through 2-0, or Mbappé brilliance could win it 2-1 for France."
+  },
+  "pastEncountersSummary": "Competitive rivalry with both nations winning key matches. France won the 2021 Nations League final; Spain have dominated recent friendlies.",
+  "funFacts": [
+    "Spain won Euro 2024 while Yamal was 16 years old",
+    "France have reached three of the last four World Cup finals",
+    "Spain's tiki-taka revolutionized football in the 2010s",
+    "Mbappé scored 4 goals at the 2022 World Cup including a final hat-trick"
+  ],
+  "isFirstMeeting": false
+}

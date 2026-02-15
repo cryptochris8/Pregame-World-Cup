@@ -1,0 +1,52 @@
+{
+  "team1Code": "POL",
+  "team2Code": "SRB",
+  "team1Name": "Poland",
+  "team2Name": "Serbia",
+  "historicalAnalysis": "Poland and Serbia have faced each other in qualifying campaigns. Both nations feature world-class strikers in Lewandowski and Mitrović.",
+  "keyStorylines": [
+    "Battle of the strikers: Lewandowski vs Mitrović",
+    "Eastern European derby",
+    "Both teams seeking knockout rounds"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Robert Lewandowski",
+      "teamCode": "POL",
+      "position": "Striker",
+      "reason": "One of the greatest strikers ever"
+    },
+    {
+      "name": "Aleksandar Mitrović",
+      "teamCode": "SRB",
+      "position": "Striker",
+      "reason": "Prolific goal scorer"
+    },
+    {
+      "name": "Piotr Zieliński",
+      "teamCode": "POL",
+      "position": "Midfielder",
+      "reason": "Polish playmaker"
+    },
+    {
+      "name": "Dušan Vlahović",
+      "teamCode": "SRB",
+      "position": "Striker",
+      "reason": "Juventus striker"
+    }
+  ],
+  "tacticalPreview": "Both teams will look to service their strikers. Midfield control will be crucial.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched teams with quality strikers."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Lewandowski has scored 600+ career goals",
+    "Serbia qualified for their first World Cup since 2010 as Serbia (2018)",
+    "Poland have Lewandowski in potentially his final World Cup"
+  ],
+  "isFirstMeeting": false
+}

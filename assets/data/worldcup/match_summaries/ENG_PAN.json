@@ -1,0 +1,55 @@
+{
+  "team1Code": "PAN",
+  "team2Code": "ENG",
+  "team1Name": "Panama",
+  "team2Name": "England",
+  "historicalAnalysis": "Panama and England met at the 2018 World Cup, with England winning 6-1 in one of the most one-sided matches of that tournament. Panama's debut World Cup saw them score their first ever goal (against England), a moment of national celebration despite the heavy defeat.\n\nEngland enter seeking to finally win a World Cup after 56 years of hurt. Under Thomas Tuchel, they've developed into genuine contenders with a squad featuring world-class talents like Bellingham and Kane.\n\nPanama return to the World Cup with more experience and higher ambitions, hoping to progress beyond the group stage for the first time.",
+  "keyStorylines": [
+    "Rematch of 2018's 6-1 England demolition",
+    "England seeking first World Cup since 1966",
+    "Panama hoping for revenge and progress",
+    "Group L finale with potential knockout implications"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "Real Madrid's midfield superstar"
+    },
+    {
+      "name": "José Fajardo",
+      "teamCode": "PAN",
+      "position": "Forward",
+      "reason": "Panama's experienced striker"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "position": "Forward",
+      "reason": "England's all-time top scorer"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "MLS star providing energy"
+    }
+  ],
+  "tacticalPreview": "England's 4-3-3 under Tuchel maximizes attacking talent. Bellingham's box-to-box running and Kane's movement create constant threats.\n\nPanama's 4-4-2 will be compact and physical. They'll look to frustrate England and avoid another embarrassing scoreline while taking any opportunity.",
+  "prediction": {
+    "predictedOutcome": "ENG",
+    "predictedScore": "3-0",
+    "confidence": 85,
+    "reasoning": "England's quality advantage is significant. They should dominate without conceding, though Panama will be more organized than 2018.",
+    "alternativeScenario": "If Panama defend heroically and score first, a 2-1 England win is possible."
+  },
+  "pastEncountersSummary": "Met at 2018 World Cup, England winning 6-1. Panama scored their first ever World Cup goal in that match.",
+  "funFacts": [
+    "Panama's goal against England in 2018 sparked national celebrations",
+    "England last won the World Cup in 1966",
+    "Kane's 6 goals at the 2018 World Cup won the Golden Boot",
+    "Bellingham won La Liga in his first season at Real Madrid"
+  ],
+  "isFirstMeeting": false
+}

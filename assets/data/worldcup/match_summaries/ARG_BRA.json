@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "ARG",
+  "team1Name": "Brazil",
+  "team2Name": "Argentina",
+  "historicalAnalysis": "Brazil vs Argentina is football's greatest rivalry, transcending sport to become a cultural phenomenon. These South American giants have met over 100 times, with Brazil holding a slight edge historically. Their World Cup encounters, however, have been remarkably rare—just five meetings on the biggest stage.\n\nThe most recent chapter favored Argentina: Messi's team defeated Brazil in the 2021 Copa América final on Brazilian soil, then won the 2022 World Cup while Brazil crashed out in the quarter-finals. This has shifted the rivalry's narrative for the first time in years.\n\nFor 2026, Argentina enter as defending champions with Messi potentially in his final World Cup. Brazil, without a title since 2002, are desperate to reassert their status as football's greatest nation.",
+  "keyStorylines": [
+    "Football's greatest rivalry on the World Cup stage",
+    "Argentina as defending champions vs desperate Brazil",
+    "Possibly Messi's final World Cup match against Brazil",
+    "Vinícius Jr. vs Messi: Passing of the torch?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's brightest star seeking World Cup glory"
+    },
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The GOAT in potentially his final World Cup"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Real Madrid star adding creativity and goals"
+    },
+    {
+      "name": "Julián Álvarez",
+      "teamCode": "ARG",
+      "position": "Striker",
+      "reason": "2022 World Cup hero hungry for more"
+    }
+  ],
+  "tacticalPreview": "Both teams play attractive, attacking football. Brazil's pace and dribbling vs Argentina's intelligent movement and pressing. Midfield control will be crucial, with Enzo Fernández vs Bruno Guimarães a key battle.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "2-2",
+    "confidence": 45,
+    "reasoning": "Neither team can afford to lose, leading to a cagey but entertaining draw. Both possess match-winners capable of decisive moments.",
+    "alternativeScenario": "Argentina's champion mentality could produce a 2-1 victory, or Brazil's attacking quality could overwhelm for a 3-1 win."
+  },
+  "pastEncountersSummary": "Over 100 meetings with Brazil leading slightly. Argentina's recent dominance (2021 Copa América, 2022 World Cup) has shifted momentum.",
+  "funFacts": [
+    "This is only the 6th World Cup meeting between Brazil and Argentina",
+    "Argentina won their 2022 World Cup semi-final on Brazilian soil",
+    "Brazil haven't won the World Cup since 2002, their longest drought",
+    "Combined, they have won 8 World Cups (Brazil 5, Argentina 3)"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "SCO",
+  "team1Name": "Brazil",
+  "team2Name": "Scotland",
+  "historicalAnalysis": "Brazil and Scotland share a unique World Cup history, having met four times on football's greatest stage. Their encounters span the beautiful game's evolution, from the attacking renaissance of 1974 to the global spectacle of France 1998. Scotland have never beaten Brazil, but they've produced moments of extraordinary defiance against the Seleção.\n\nThe legendary 0-0 draw in Frankfurt at the 1974 World Cup stands as Scotland's finest hour against Brazil. In an era when Jairzinho, Rivelino, and the remnants of the 1970 champions roamed, Scotland held firm. It remains the only World Cup match Brazil failed to win that year before their elimination.\n\nHowever, it's the 1998 World Cup opener in Paris that defines this fixture for modern fans. With 500 million viewers watching the tournament's curtain-raiser, Brazil won 2-1 despite Scotland's spirited resistance. John Collins's penalty gave Scotland hope, but Tom Boyd's own goal sealed Brazil's victory. That match, played at the Stade de France, launched the tournament that would end with France lifting the trophy after shocking Brazil 3-0 in the final.",
+  "keyStorylines": [
+    "Scotland's long-awaited return to the World Cup stage against the five-time champions",
+    "Can Scotland channel their 1974 Frankfurt heroics and frustrate Brazil again?",
+    "Brazil determined to avoid another group stage shock after 2022 disappointment",
+    "Steve Clarke's Tartan Army looking to prove they belong among elite nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's match-winner whose skills can unlock any defense"
+    },
+    {
+      "name": "John McGinn",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Scotland's heartbeat who brings energy, goals, and leadership"
+    },
+    {
+      "name": "Endrick",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Teenage sensation making his World Cup debut"
+    },
+    {
+      "name": "Billy Gilmour",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Technically gifted playmaker who could dictate tempo against Brazil"
+    }
+  ],
+  "tacticalPreview": "Scotland's best chance lies in defensive organization and set-pieces. Steve Clarke's pragmatic 3-5-2 system emphasizes compactness and discipline, hoping to frustrate Brazil before striking on the break or from corners.\n\nBrazil will dominate possession and territory, but Scotland's physicality and aerial threat could be problematic. The key for Scotland is to stay in the game beyond 60 minutes; Brazil's attacking quality typically tells in the final quarter. A repeat of 1974's 0-0 would be celebrated as a famous result in Scottish football history.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "3-1",
+    "confidence": 78,
+    "reasoning": "Brazil's quality advantage is significant. Scotland lack the firepower to consistently threaten, and Brazil's attacking depth should prove decisive. However, Scotland's organization could keep the score respectable.",
+    "alternativeScenario": "If Scotland score first from a set-piece and park the bus effectively, a shock draw is possible. Their fans would consider it equivalent to victory."
+  },
+  "pastEncountersSummary": "Four World Cup meetings (1974, 1982, 1990, 1998) have produced three Brazil wins and one draw. That 1974 0-0 remains Scotland's proudest moment, while the 1982 encounter saw David Narey score a famous goal (later dubbed the \"toe-poke\") before Brazil responded with a 4-1 masterclass featuring Zico and Falcão.",
+  "funFacts": [
+    "Scotland's 1974 squad remains the only team never to lose a match at a World Cup yet still get eliminated",
+    "David Narey's 1982 goal against Brazil is still shown in Scottish football highlights reels",
+    "The 1998 opener was watched by an estimated 500 million viewers worldwide",
+    "Scotland have qualified for only 8 World Cups compared to Brazil's record 22 consecutive appearances"
+  ],
+  "isFirstMeeting": false
+}

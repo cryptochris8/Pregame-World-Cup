@@ -1,0 +1,55 @@
+{
+  "team1Code": "QAT",
+  "team2Code": "SUI",
+  "team1Name": "Qatar",
+  "team2Name": "Switzerland",
+  "historicalAnalysis": "Qatar and Switzerland have never met in competitive action. This matchup pits the 2022 World Cup hosts against one of Europe's most consistent performers. Qatar's home World Cup saw them eliminated in the group stage without a win—a disappointment they're eager to avenge.\n\nSwitzerland have established themselves as perennial Round of 16 contenders, with memorable victories over France (Euro 2020) and Spain (2010 World Cup). Their blend of experienced veterans and emerging talents makes them dangerous opponents.\n\nQatar have rebuilt significantly since 2022, investing heavily in their domestic league and youth development. This is their chance to prove that hosting the World Cup wasn't their peak.",
+  "keyStorylines": [
+    "Qatar seeking redemption after disappointing home World Cup",
+    "Switzerland's consistent knockout round pedigree",
+    "First ever competitive meeting between these nations",
+    "Asian champions vs European dark horses"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "position": "Midfielder",
+      "reason": "Bayer Leverkusen's title-winning captain and Swiss talisman"
+    },
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "position": "Winger",
+      "reason": "Asian Player of the Year and Qatar's creative hub"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "position": "Forward",
+      "reason": "Monaco's powerful striker leading the line"
+    },
+    {
+      "name": "Almoez Ali",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Qatar's all-time leading scorer"
+    }
+  ],
+  "tacticalPreview": "Switzerland's 3-4-2-1 provides defensive solidity while Xhaka orchestrates from deep. Their ability to absorb pressure and strike on the counter is world-class.\n\nQatar's 5-3-2 emphasizes compact defending and quick transitions through Afif. Their technical quality is underrated, but consistency against top European sides remains a question.",
+  "prediction": {
+    "predictedOutcome": "SUI",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "Switzerland's tournament experience and superior squad depth should prove decisive. Qatar will compete but lack the cutting edge.",
+    "alternativeScenario": "If Afif produces individual brilliance and Qatar defend resolutely, a 1-1 draw is possible."
+  },
+  "pastEncountersSummary": "First competitive meeting. No previous history between these nations.",
+  "funFacts": [
+    "Qatar became the first host nation to lose all three group games (2022)",
+    "Switzerland have reached the knockout rounds in 4 of their last 5 major tournaments",
+    "Xhaka has played more games for Switzerland than any outfield player",
+    "Qatar won the Asian Cup in 2019 and 2023"
+  ],
+  "isFirstMeeting": true
+}

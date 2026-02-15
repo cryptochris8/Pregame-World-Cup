@@ -1,0 +1,25 @@
+{
+  "playerName": "Jonathan David",
+  "fifaCode": "CAN",
+  "worldCupAppearances": 3,
+  "worldCupGoals": 0,
+  "worldCupAssists": 0,
+  "previousWorldCups": [2022],
+  "tournamentStats": [
+    {
+      "year": 2022,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Group Stage",
+      "keyMoment": "Part of Canada's first World Cup squad since 1986"
+    }
+  ],
+  "worldCupAwards": [],
+  "memorableMoments": [
+    "Led line for historic Canadian return"
+  ],
+  "worldCupLegacyRating": 3,
+  "comparisonToLegend": "Clinical striker ability compared to Thierry Henry",
+  "worldCup2026Prediction": "Expected to lead Canada's attack on home soil"
+}

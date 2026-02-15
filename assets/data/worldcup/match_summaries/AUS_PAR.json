@@ -1,0 +1,55 @@
+{
+  "team1Code": "PAR",
+  "team2Code": "AUS",
+  "team1Name": "Paraguay",
+  "team2Name": "Australia",
+  "historicalAnalysis": "Paraguay and Australia have met at a World Cup before—in 2010, where Paraguay won 2-1 in a group stage match. Both nations have been consistent qualifiers in the modern era, though neither has progressed deeply into tournaments recently.\n\nParaguay return to the World Cup after missing 2018 and 2022. Their traditional South American style emphasizes organization and clinical finishing.\n\nAustralia reached the Round of 16 in 2022, their best performance since 2006. The Socceroos' blend of experienced A-League players and European-based talents makes them competitive.",
+  "keyStorylines": [
+    "Paraguay's return after missing two World Cups",
+    "Australia seeking to repeat 2022 progress",
+    "Rematch of 2010 World Cup encounter",
+    "South American vs Asian qualifying champions"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Miguel Almirón",
+      "teamCode": "PAR",
+      "position": "Midfielder",
+      "reason": "Newcastle's creative spark"
+    },
+    {
+      "name": "Mitchell Duke",
+      "teamCode": "AUS",
+      "position": "Forward",
+      "reason": "Australia's experienced target man"
+    },
+    {
+      "name": "Julio Enciso",
+      "teamCode": "PAR",
+      "position": "Midfielder",
+      "reason": "Brighton's exciting young talent"
+    },
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "position": "Midfielder",
+      "reason": "Bundesliga experience and leadership"
+    }
+  ],
+  "tacticalPreview": "Paraguay's 4-4-2 emphasizes defensive organization and quick transitions. Almirón's creativity and Enciso's flair provide attacking threat.\n\nAustralia's 4-3-3 is hard-working and organized. Their pressing intensity and set-piece threat from Duke's aerial ability are key weapons.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 52,
+    "reasoning": "Two evenly matched teams should produce a competitive draw. Both have strengths that could cancel each other out.",
+    "alternativeScenario": "If Almirón and Enciso click, Paraguay could edge it 2-1 with superior technical quality."
+  },
+  "pastEncountersSummary": "Met at the 2010 World Cup, Paraguay winning 2-1.",
+  "funFacts": [
+    "Paraguay reached the World Cup quarter-finals in 2010",
+    "Australia scored their first ever World Cup knockout goal in 2022 against Denmark",
+    "Almirón was Newcastle's Player of the Season in 2022-23",
+    "This is Paraguay's first World Cup since 2010"
+  ],
+  "isFirstMeeting": false
+}

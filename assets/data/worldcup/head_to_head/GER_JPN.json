@@ -1,0 +1,29 @@
+{
+  "id": "GER_JPN",
+  "team1Code": "GER",
+  "team2Code": "JPN",
+  "totalMatches": 5,
+  "team1Wins": 3,
+  "team2Wins": 2,
+  "draws": 0,
+  "team1Goals": 12,
+  "team2Goals": 6,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-09-09",
+  "firstMeeting": "2004-12-16",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "JPN",
+      "location": "Doha, Qatar",
+      "description": "Japan shock Germany with comeback"
+    }
+  ]
+}

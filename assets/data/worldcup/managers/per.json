@@ -1,0 +1,21 @@
+{
+  "id": "manager_per",
+  "firstName": "Jorge",
+  "lastName": "Fossati",
+  "commonName": "Jorge Fossati",
+  "dateOfBirth": "1952-11-27",
+  "nationality": "Uruguay",
+  "currentTeam": "Peru",
+  "currentTeamCode": "PER",
+  "photoUrl": "assets/managers/fossati.png",
+  "preferredFormation": "3-5-2",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 35,
+  "previousTeams": ["Penarol", "Cerro Porteno", "LDU Quito", "Universitario", "Qatar NT"],
+  "trophies": ["Uruguayan Primera x2", "Copa Sudamericana"],
+  "careerWins": 300,
+  "careerDraws": 150,
+  "careerLosses": 180,
+  "careerWinPercentage": 48,
+  "bio": "Vastly experienced Uruguayan coach with success across South America. Known for tactical flexibility and defensive organization."
+}

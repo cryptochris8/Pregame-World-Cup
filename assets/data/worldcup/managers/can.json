@@ -1,0 +1,21 @@
+{
+  "id": "manager_can",
+  "firstName": "Jesse",
+  "lastName": "Marsch",
+  "commonName": "Jesse Marsch",
+  "dateOfBirth": "1973-11-08",
+  "nationality": "United States",
+  "currentTeam": "Canada",
+  "currentTeamCode": "CAN",
+  "photoUrl": "assets/managers/marsch.png",
+  "preferredFormation": "4-2-2-2",
+  "coachingStyle": "High Press",
+  "yearsExperience": 12,
+  "previousTeams": ["Montreal Impact", "New York Red Bulls", "RB Salzburg", "RB Leipzig", "Leeds United"],
+  "trophies": ["Austrian Bundesliga", "Austrian Cup"],
+  "careerWins": 180,
+  "careerDraws": 70,
+  "careerLosses": 90,
+  "careerWinPercentage": 53,
+  "bio": "American coach who developed through the Red Bull system. Known for implementing gegenpressing and developing young players."
+}

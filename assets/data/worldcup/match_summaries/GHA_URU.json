@@ -1,0 +1,55 @@
+{
+  "team1Code": "URU",
+  "team2Code": "GHA",
+  "team1Name": "Uruguay",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "Uruguay and Ghana are forever linked by one of World Cup history's most controversial moments. In the 2010 quarter-final, Luis Suárez's deliberate handball on the line prevented a certain Ghana goal in extra time. Asamoah Gyan missed the resulting penalty, and Uruguay won the shootout, denying Africa a first-ever semi-finalist.\n\nThat match remains a source of immense pain for Ghanaian football. Gyan's miss and Suárez's celebration are seared into African football consciousness. This group stage rematch offers Ghana a chance at redemption 16 years later.\n\nUruguay enter without Suárez, who retired from international football, but the memory persists.",
+  "keyStorylines": [
+    "The 2010 handball rematch: Ghana seeking redemption",
+    "One of World Cup history's most controversial moments revisited",
+    "Can Ghana finally beat Uruguay on the World Cup stage?",
+    "New generations carrying old grudges"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Uruguay's new talisman leading the charge"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Carrying Ghanaian hopes for revenge"
+    },
+    {
+      "name": "Darwin Núñez",
+      "teamCode": "URU",
+      "position": "Striker",
+      "reason": "Explosive striker who must be contained"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal's midfield anchor and Ghana's leader"
+    }
+  ],
+  "tacticalPreview": "This will be emotional and physical. Ghana will be highly motivated while Uruguay rely on their trademark grit. Midfield control will be crucial, with both teams capable of pressing intensity.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "The emotional weight of this match could produce a tense, cagey draw. Neither team can afford to lose.",
+    "alternativeScenario": "Ghana's motivation could produce an emotional 2-1 victory, or Uruguay's experience could see them through 2-0."
+  },
+  "pastEncountersSummary": "The 2010 quarter-final remains the defining encounter. Uruguay won on penalties after Suárez's handball and Gyan's miss. Ghana have never beaten Uruguay.",
+  "funFacts": [
+    "Suárez's 2010 handball is considered one of football's most controversial moments",
+    "Gyan's penalty miss denied Africa a first World Cup semi-finalist",
+    "This is Ghana's chance for redemption after 16 years",
+    "Uruguay reached the semi-finals in 2010 before losing to Netherlands"
+  ],
+  "isFirstMeeting": false
+}

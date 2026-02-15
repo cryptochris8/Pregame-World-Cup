@@ -1,0 +1,34 @@
+{
+  "playerName": "Achraf Hakimi",
+  "fifaCode": "MAR",
+  "worldCupAppearances": 6,
+  "worldCupGoals": 0,
+  "worldCupAssists": 0,
+  "previousWorldCups": [2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2018,
+      "matches": 1,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Group Stage"
+    },
+    {
+      "year": 2022,
+      "matches": 5,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Semi-Finals",
+      "keyMoment": "Panenka penalty vs Spain, historic semi run"
+    }
+  ],
+  "worldCupAwards": [],
+  "memorableMoments": [
+    "Audacious Panenka to beat Spain",
+    "Marauding runs in historic campaign",
+    "Celebrating with his mother on the pitch"
+  ],
+  "worldCupLegacyRating": 7,
+  "comparisonToLegend": "Attacking full-back excellence like Cafu",
+  "worldCup2026Prediction": "Expected to lead Morocco as they aim to match or exceed 2022 heroics"
+}

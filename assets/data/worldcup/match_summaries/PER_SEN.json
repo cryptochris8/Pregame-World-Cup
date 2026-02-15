@@ -1,0 +1,40 @@
+{
+  "team1Code": "SEN",
+  "team2Code": "PER",
+  "team1Name": "Senegal",
+  "team2Name": "Peru",
+  "historicalAnalysis": "Senegal and Peru have never met at a World Cup. Senegal are favorites as AFCON champions.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "AFCON champions vs Peru",
+    "Mané seeking goals"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Sadio Mané",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "Senegal's talisman"
+    },
+    {
+      "name": "Paolo Guerrero",
+      "teamCode": "PER",
+      "position": "Striker",
+      "reason": "Peru's captain"
+    }
+  ],
+  "tacticalPreview": "Senegal should dominate. Peru will defend and counter.",
+  "prediction": {
+    "predictedOutcome": "SEN",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Senegal's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Senegal are AFCON champions",
+    "Peru reached 2018 World Cup"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "COL",
+  "team2Code": "CMR",
+  "team1Name": "Colombia",
+  "team2Name": "Cameroon",
+  "historicalAnalysis": "Colombia and Cameroon have limited history but share similar football identities: flair, passion, and unpredictability. Both nations have produced iconic World Cup moments—Colombia's Higuita scorpion kick and Cameroon's 1990 upset of Argentina.\n\nCameroon's World Cup history is Africa's most decorated with eight appearances and quarter-final finishes in 1990. Colombia's 2014 quarter-final remains their benchmark.\n\nThis match represents a clash of footballing cultures: South American technique meets African power and pace.",
+  "keyStorylines": [
+    "Clash of footballing cultures: South America vs Africa",
+    "Colombia seeking to secure group progression",
+    "Cameroon's proud World Cup tradition vs Colombia's quality",
+    "First significant meeting between these nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luis Díaz",
+      "teamCode": "COL",
+      "position": "Winger",
+      "reason": "Colombia's match-winner with explosive pace"
+    },
+    {
+      "name": "André-Frank Zambo Anguissa",
+      "teamCode": "CMR",
+      "position": "Midfielder",
+      "reason": "Napoli's midfield maestro running Cameroon's engine"
+    },
+    {
+      "name": "James Rodríguez",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "Creative genius seeking World Cup magic"
+    },
+    {
+      "name": "Eric Maxim Choupo-Moting",
+      "teamCode": "CMR",
+      "position": "Forward",
+      "reason": "Experienced target man and Cameroon captain"
+    }
+  ],
+  "tacticalPreview": "Colombia's technical midfield vs Cameroon's physical presence. Anguissa's battles in the center will be crucial. Colombia's pace in wide areas will test Cameroon's fullbacks.",
+  "prediction": {
+    "predictedOutcome": "COL",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Colombia's superior technical quality and attacking options should prove decisive, but Cameroon will compete.",
+    "alternativeScenario": "Cameroon's physicality and set-piece threat could produce a shock 2-1 victory."
+  },
+  "pastEncountersSummary": "Limited history with no significant competitive meetings. This World Cup encounter is essentially a first.",
+  "funFacts": [
+    "First significant competitive meeting between Colombia and Cameroon",
+    "Cameroon were the first African team to reach a World Cup quarter-final (1990)",
+    "Colombia's René Higuita's scorpion kick is one of football's most famous moments",
+    "Both nations are known for passionate, colorful supporters"
+  ],
+  "isFirstMeeting": true
+}

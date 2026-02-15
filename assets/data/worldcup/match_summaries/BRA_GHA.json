@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "GHA",
+  "team1Name": "Brazil",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "Brazil and Ghana's World Cup history centers on one dramatic encounter: the 2006 Round of 16 in Germany. Brazil won 3-0, but the match was more competitive than the scoreline suggests. Ghana became the third African nation ever to reach the knockout rounds.\n\nGhana's 2010 quarter-final run showed their potential, while Brazil continue their quest to end a title drought stretching back to 2002. This group stage meeting offers Ghana a chance at redemption against the five-time champions.\n\nGhana's current squad features exciting talents like Mohammed Kudus, who impressed at the 2022 World Cup. Brazil's young stars present a formidable challenge.",
+  "keyStorylines": [
+    "Rematch of 2006 World Cup knockout meeting",
+    "Ghana seeking revenge after 3-0 defeat",
+    "Brazil's young generation vs Ghana's athletic style",
+    "Kudus looking to announce himself against the Seleção"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's match-winner and Ballon d'Or contender"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Explosive talent who can change games"
+    },
+    {
+      "name": "Bruno Guimarães",
+      "teamCode": "BRA",
+      "position": "Midfielder",
+      "reason": "Newcastle's midfield maestro controlling tempo"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal's midfield anchor and Ghana's leader"
+    }
+  ],
+  "tacticalPreview": "Brazil will dominate possession while Ghana look to press and counter. Kudus and Partey must win the midfield battle for Ghana to have a chance. Brazil's pace on the wings will test Ghana's fullbacks.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "3-1",
+    "confidence": 75,
+    "reasoning": "Brazil's superior quality across the pitch should prove too much for Ghana, though the Black Stars will compete and likely score.",
+    "alternativeScenario": "Ghana's pressing could cause Brazil problems early, potentially snatching a draw."
+  },
+  "pastEncountersSummary": "Three meetings, Brazil winning all. The 2006 World Cup 3-0 remains Ghana's most painful memory against the Seleção.",
+  "funFacts": [
+    "Ghana were the third African nation to reach a World Cup knockout round (2006)",
+    "Brazil haven't won the World Cup since 2002",
+    "Ghana's 2010 quarter-final run was ended by Suárez's infamous handball",
+    "Kudus was one of the breakout stars of the 2022 World Cup"
+  ],
+  "isFirstMeeting": false
+}

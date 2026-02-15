@@ -1,0 +1,21 @@
+{
+  "id": "manager_ita",
+  "firstName": "Luciano",
+  "lastName": "Spalletti",
+  "commonName": "Luciano Spalletti",
+  "dateOfBirth": "1959-03-07",
+  "nationality": "Italy",
+  "currentTeam": "Italy",
+  "currentTeamCode": "ITA",
+  "photoUrl": "assets/managers/spalletti.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 28,
+  "previousTeams": ["Empoli", "Udinese", "Sampdoria", "Roma", "Zenit", "Inter", "Napoli"],
+  "trophies": ["Serie A 2022-23", "Coppa Italia", "Russian Premier League"],
+  "careerWins": 380,
+  "careerDraws": 180,
+  "careerLosses": 170,
+  "careerWinPercentage": 52,
+  "bio": "Masterful Italian tactician who led Napoli to their first Scudetto in 33 years. Brings experience and tactical nous to the Azzurri."
+}

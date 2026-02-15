@@ -1,0 +1,39 @@
+{
+  "id": "CAN_USA",
+  "team1Code": "CAN",
+  "team2Code": "USA",
+  "totalMatches": 74,
+  "team1Wins": 13,
+  "team2Wins": 41,
+  "draws": 20,
+  "team1Goals": 58,
+  "team2Goals": 117,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-09-07",
+  "firstMeeting": "1885-11-28",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "CAN",
+      "location": "Hamilton, Canada",
+      "description": "Canada defeat USA in qualifier"
+    },
+    {
+      "year": 2021,
+      "tournament": "Nations League",
+      "stage": null,
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "USA",
+      "location": "Nashville, USA",
+      "description": "USA clinch Nations League"
+    }
+  ]
+}

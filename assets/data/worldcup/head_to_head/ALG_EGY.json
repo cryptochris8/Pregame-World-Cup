@@ -1,0 +1,39 @@
+{
+  "id": "ALG_EGY",
+  "team1Code": "ALG",
+  "team2Code": "EGY",
+  "totalMatches": 28,
+  "team1Wins": 9,
+  "team2Wins": 11,
+  "draws": 8,
+  "team1Goals": 33,
+  "team2Goals": 35,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-06-16",
+  "firstMeeting": "1959-08-25",
+  "notableMatches": [
+    {
+      "year": 2009,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ALG",
+      "location": "Omdurman, Sudan",
+      "description": "Algeria qualify for 2010 World Cup in playoff"
+    },
+    {
+      "year": 2010,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Semi-Final",
+      "team1Score": 0,
+      "team2Score": 4,
+      "winnerCode": "EGY",
+      "location": "Benguela, Angola",
+      "description": "Egypt rout Algeria to reach final"
+    }
+  ]
+}

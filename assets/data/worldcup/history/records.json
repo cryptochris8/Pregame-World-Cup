@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Most Goals (Career)",
+    "record": "Most World Cup goals all-time",
+    "holder": "Miroslav Klose",
+    "holderType": "player",
+    "value": 16,
+    "details": "Germany - 2002, 2006, 2010, 2014"
+  },
+  {
+    "category": "Most Goals (Single Tournament)",
+    "record": "Most goals in single World Cup",
+    "holder": "Just Fontaine",
+    "holderType": "player",
+    "value": 13,
+    "details": "France - 1958"
+  },
+  {
+    "category": "Most Appearances",
+    "record": "Most World Cup matches played",
+    "holder": "Lothar Matth\u00e4us",
+    "holderType": "player",
+    "value": 25,
+    "details": "Germany - 1982-1998"
+  },
+  {
+    "category": "Most Finals Played",
+    "record": "Most World Cup finals",
+    "holder": "Cafu",
+    "holderType": "player",
+    "value": 3,
+    "details": "Brazil - 1994, 1998, 2002 (won 2)"
+  },
+  {
+    "category": "Oldest Goalscorer",
+    "record": "Oldest player to score",
+    "holder": "Roger Milla",
+    "holderType": "player",
+    "value": "42 years 39 days",
+    "details": "Cameroon vs Russia 1994"
+  },
+  {
+    "category": "Youngest Goalscorer",
+    "record": "Youngest player to score",
+    "holder": "Pel\u00e9",
+    "holderType": "player",
+    "value": "17 years 239 days",
+    "details": "Brazil vs Wales 1958"
+  },
+  {
+    "category": "Most Goals (Final)",
+    "record": "Most goals in World Cup final",
+    "holder": "Kylian Mbapp\u00e9/Geoff Hurst",
+    "holderType": "player",
+    "value": 3,
+    "details": "Hat-trick in final (1966, 2022)"
+  },
+  {
+    "category": "Fastest Goal",
+    "record": "Fastest goal from kick-off",
+    "holder": "Hakan \u015e\u00fck\u00fcr",
+    "holderType": "player",
+    "value": "10.8 seconds",
+    "details": "Turkey vs South Korea 2002"
+  },
+  {
+    "category": "Most Tournaments (Player)",
+    "record": "Most World Cups participated",
+    "holder": "Lionel Messi/Antonio Carbajal/Rafael M\u00e1rquez/Lothar Matth\u00e4us/Gianluigi Buffon",
+    "holderType": "player",
+    "value": 5,
+    "details": "Various"
+  },
+  {
+    "category": "Most Titles",
+    "record": "Most World Cup wins",
+    "holder": "Brazil",
+    "holderType": "team",
+    "value": 5,
+    "details": "1958, 1962, 1970, 1994, 2002"
+  },
+  {
+    "category": "Most Finals",
+    "record": "Most World Cup final appearances",
+    "holder": "Germany",
+    "holderType": "team",
+    "value": 8,
+    "details": "Won 4, Lost 4"
+  },
+  {
+    "category": "Most Appearances",
+    "record": "Most World Cup tournaments",
+    "holder": "Brazil",
+    "holderType": "team",
+    "value": 22,
+    "details": "Never missed a World Cup"
+  },
+  {
+    "category": "Most Consecutive Titles",
+    "record": "Back-to-back World Cup wins",
+    "holder": "Italy/Brazil",
+    "holderType": "team",
+    "value": 2,
+    "details": "Italy 1934-38, Brazil 1958-62"
+  },
+  {
+    "category": "Highest Win Margin",
+    "record": "Largest victory margin",
+    "holder": "Hungary",
+    "holderType": "match",
+    "value": "10-1",
+    "details": "Hungary vs El Salvador 1982"
+  },
+  {
+    "category": "Most Goals (Team, Tournament)",
+    "record": "Most goals in single tournament",
+    "holder": "Hungary",
+    "holderType": "team",
+    "value": 27,
+    "details": "Hungary 1954"
+  },
+  {
+    "category": "Longest Unbeaten Run",
+    "record": "Most consecutive matches unbeaten",
+    "holder": "Brazil",
+    "holderType": "team",
+    "value": 13,
+    "details": "2002-2010"
+  },
+  {
+    "category": "Highest Scoring Match",
+    "record": "Most goals in single match",
+    "holder": "Austria vs Switzerland",
+    "holderType": "match",
+    "value": 12,
+    "details": "Austria 7-5 Switzerland 1954"
+  },
+  {
+    "category": "Most Red Cards (Match)",
+    "record": "Most red cards in single match",
+    "holder": "Portugal vs Netherlands",
+    "holderType": "match",
+    "value": 4,
+    "details": "2006 - \"Battle of Nuremberg\""
+  },
+  {
+    "category": "Largest Final Win",
+    "record": "Biggest winning margin in final",
+    "holder": "Brazil vs Italy",
+    "holderType": "match",
+    "value": "4-1",
+    "details": "Brazil 4-1 Italy 1970"
+  },
+  {
+    "category": "Highest Attendance",
+    "record": "Highest World Cup attendance",
+    "holder": "Brazil vs Uruguay",
+    "holderType": "match",
+    "value": 199854,
+    "details": "Maracan\u00e3 1950"
+  }
+]

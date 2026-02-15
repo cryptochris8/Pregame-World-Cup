@@ -1,0 +1,59 @@
+{
+  "id": "ARG_ENG",
+  "team1Code": "ARG",
+  "team2Code": "ENG",
+  "totalMatches": 15,
+  "team1Wins": 7,
+  "team2Wins": 5,
+  "draws": 3,
+  "team1Goals": 21,
+  "team2Goals": 16,
+  "worldCupMatches": 5,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 2,
+  "lastMatch": "2023-03-28",
+  "firstMeeting": "1951-05-09",
+  "notableMatches": [
+    {
+      "year": 1986,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ARG",
+      "location": "Mexico City, Mexico",
+      "description": "Hand of God and Goal of the Century"
+    },
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": "ARG",
+      "location": "Saint-Etienne, France",
+      "description": "Beckham red card, Argentina win on penalties"
+    },
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "ENG",
+      "location": "Sapporo, Japan",
+      "description": "Beckham penalty redemption"
+    },
+    {
+      "year": 1966,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "ENG",
+      "location": "London, England",
+      "description": "Hurst goal, Rattin sent off"
+    }
+  ]
+}

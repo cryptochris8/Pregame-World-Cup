@@ -1,0 +1,55 @@
+{
+  "team1Code": "GHA",
+  "team2Code": "PAN",
+  "team1Name": "Ghana",
+  "team2Name": "Panama",
+  "historicalAnalysis": "Ghana and Panama meet for the first time in World Cup history. Ghana are four-time AFCON champions with a proud World Cup tradition—their 2010 quarter-final run remains one of Africa's greatest World Cup achievements.\n\nPanama made their World Cup debut in 2018, where the experience of simply being there seemed to overwhelm them. Now, with a more experienced squad, they return with greater ambitions.\n\nThis is a crucial match for both teams' knockout round hopes in a tough group with England and Croatia.",
+  "keyStorylines": [
+    "Ghana's proud World Cup tradition vs Panama's growing experience",
+    "First ever meeting between these nations",
+    "Battle for potential third place in Group L",
+    "African power vs CONCACAF rising force"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "West Ham's dazzling talent and Ghana's main creator"
+    },
+    {
+      "name": "José Fajardo",
+      "teamCode": "PAN",
+      "position": "Forward",
+      "reason": "Panama's experienced striker leading the line"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal's midfield anchor controlling the game"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "MLS star providing energy and creativity"
+    }
+  ],
+  "tacticalPreview": "Ghana's 4-2-3-1 unleashes Kudus in the No. 10 role, with Partey providing defensive security. Their combination of power and technique is formidable.\n\nPanama's 4-4-2 is compact and disciplined. They'll look to frustrate Ghana and hit on counter-attacks, with aerial threats from set-pieces a key weapon.",
+  "prediction": {
+    "predictedOutcome": "GHA",
+    "predictedScore": "2-0",
+    "confidence": 65,
+    "reasoning": "Ghana's superior individual quality, particularly Kudus and Partey, should prove decisive. Panama will compete but lack the cutting edge.",
+    "alternativeScenario": "If Panama's physical approach disrupts Ghana's rhythm, a 1-0 win either way is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Ghana reached the World Cup quarter-finals in 2010, Africa's best modern performance",
+    "Panama scored their first ever World Cup goal against England in 2018",
+    "Kudus was West Ham's record signing and has been one of the Premier League's best players",
+    "Panama's 2018 World Cup qualification ended a 41-year wait"
+  ],
+  "isFirstMeeting": true
+}

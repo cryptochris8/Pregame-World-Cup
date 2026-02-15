@@ -1,0 +1,39 @@
+{
+  "id": "JPN_KOR",
+  "team1Code": "JPN",
+  "team2Code": "KOR",
+  "totalMatches": 85,
+  "team1Wins": 16,
+  "team2Wins": 44,
+  "draws": 25,
+  "team1Goals": 75,
+  "team2Goals": 142,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-03-21",
+  "firstMeeting": "1954-03-07",
+  "notableMatches": [
+    {
+      "year": 2011,
+      "tournament": "Asian Cup",
+      "stage": "Semi-Final",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": "JPN",
+      "location": "Doha, Qatar",
+      "description": "Japan win on penalties, reach final"
+    },
+    {
+      "year": 2019,
+      "tournament": "Asian Cup",
+      "stage": "Round of 16",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "JPN",
+      "location": "Abu Dhabi, UAE",
+      "description": "Shiotani goal secures Japan win"
+    }
+  ]
+}

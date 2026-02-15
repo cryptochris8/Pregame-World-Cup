@@ -1,0 +1,49 @@
+{
+  "id": "BRA_URU",
+  "team1Code": "BRA",
+  "team2Code": "URU",
+  "totalMatches": 80,
+  "team1Wins": 38,
+  "team2Wins": 21,
+  "draws": 21,
+  "team1Goals": 140,
+  "team2Goals": 100,
+  "worldCupMatches": 5,
+  "team1WorldCupWins": 3,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-10-15",
+  "firstMeeting": "1916-07-12",
+  "notableMatches": [
+    {
+      "year": 1950,
+      "tournament": "World Cup",
+      "stage": "Final Round",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "URU",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "The Maracanazo - Uruguay shock Brazil at home"
+    },
+    {
+      "year": 1970,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Guadalajara, Mexico",
+      "description": "Brazil reach final en route to third title"
+    },
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Belo Horizonte, Brazil",
+      "description": "James Rodriguez brace eliminates Uruguay"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "CRO",
+  "team2Code": "ENG",
+  "team1Name": "Croatia",
+  "team2Name": "England",
+  "historicalAnalysis": "The rivalry between Croatia and England carries the weight of one of the most dramatic World Cup encounters in recent memory. These two nations have met 10 times, with honors remarkably even at 4 wins apiece and 2 draws. However, the narrative is dominated by that unforgettable night in Moscow during the 2018 World Cup semi-final, when Mario Mandžukić's extra-time winner sent Croatia to their first-ever World Cup final, breaking English hearts in the process.\n\nThat 2-1 Croatian victory remains a pivotal moment for both nations. For Croatia, it validated their \"golden generation\" and proved that a nation of just 4 million could reach football's ultimate stage. For England, it extended their trophy drought and left lingering questions about their ability to perform when it matters most. The redemption storyline adds considerable intrigue to this 2026 encounter.\n\nEngland gained some measure of revenge at Euro 2020, where Raheem Sterling's goal secured a 1-0 victory at Wembley in the group stage. That result showed England's evolution under Gareth Southgate, though the squad has undergone significant changes since then. Croatia, meanwhile, finished third at the 2022 World Cup, demonstrating their continued quality despite an aging core.",
+  "keyStorylines": [
+    "Revenge mission: England seeking to exorcise 2018 World Cup semi-final demons",
+    "Croatia's aging golden generation vs England's new wave of talent",
+    "Luka Modrić potentially playing his final World Cup at age 40",
+    "First World Cup meeting since the 2018 semi-final heartbreak"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "England's talisman and Ballon d'Or contender who will orchestrate attacks"
+    },
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "The 40-year-old maestro seeking one last World Cup glory in his farewell tournament"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "position": "Forward",
+      "reason": "England's all-time leading scorer hunting World Cup redemption"
+    },
+    {
+      "name": "Joško Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "World-class defender who must neutralize England's attacking threats"
+    }
+  ],
+  "tacticalPreview": "This matchup features two of Europe's most tactically sophisticated sides. England under their new manager will likely employ a possession-based 4-3-3 system, with Bellingham operating as the creative hub. Croatia's 4-3-3 remains built around midfield control, though questions persist about their aging midfield trio's ability to dominate as they once did.\n\nThe key battle will be in central midfield. If Modrić, Kovačić, and Brozović can control tempo as they did in 2018, Croatia can frustrate England. However, England's pressing intensity and athletic superiority could overwhelm Croatia if the game opens up. Expect a cagey, chess-like encounter where the first goal will be crucial.",
+  "prediction": {
+    "predictedOutcome": "ENG",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "England's squad depth, younger legs, and home continent advantage give them a slight edge. However, Croatia's big-game experience and tournament pedigree make this extremely close. The psychological factor of 2018 could motivate England while potentially adding pressure.",
+    "alternativeScenario": "If Croatia control midfield and take an early lead, their experience in knockout situations could see them through. A 1-0 or 2-1 Croatia victory is entirely plausible."
+  },
+  "pastEncountersSummary": "Their 10 meetings have produced drama at every turn. The 2018 semi-final (2-1 to Croatia) overshadows all else, but Croatia also dealt England a devastating blow in 2007 when a 2-0 victory in Zagreb contributed to England missing Euro 2008. England's Euro 2020 revenge (1-0) showed they can beat Croatia when it counts.",
+  "funFacts": [
+    "Croatia's 2018 semi-final win was their first-ever victory over England",
+    "Both nations have never won the World Cup despite reaching finals (Croatia 2018, England 1966 as hosts)",
+    "This will be the first World Cup meeting between these sides since that fateful 2018 semi-final",
+    "Modrić was named player of the match in the 2018 semi-final victory"
+  ],
+  "isFirstMeeting": false
+}

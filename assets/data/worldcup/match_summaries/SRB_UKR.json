@@ -1,0 +1,52 @@
+{
+  "team1Code": "SRB",
+  "team2Code": "UKR",
+  "team1Name": "Serbia",
+  "team2Name": "Ukraine",
+  "historicalAnalysis": "Serbia and Ukraine have met in qualifying campaigns. Both Eastern European nations have talented squads with point to prove.",
+  "keyStorylines": [
+    "Eastern European battle",
+    "Mitrović vs Ukraine's defense",
+    "Ukraine fighting for their nation"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Aleksandar Mitrović",
+      "teamCode": "SRB",
+      "position": "Striker",
+      "reason": "Prolific striker"
+    },
+    {
+      "name": "Mykhailo Mudryk",
+      "teamCode": "UKR",
+      "position": "Winger",
+      "reason": "Electric talent"
+    },
+    {
+      "name": "Dušan Vlahović",
+      "teamCode": "SRB",
+      "position": "Striker",
+      "reason": "Young star"
+    },
+    {
+      "name": "Artem Dovbyk",
+      "teamCode": "UKR",
+      "position": "Striker",
+      "reason": "La Liga Golden Boot winner"
+    }
+  ],
+  "tacticalPreview": "Both teams have quality attackers. Midfield control will be crucial.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "2-2",
+    "confidence": 48,
+    "reasoning": "Attacking quality on both sides could produce goals."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Both nations have passionate supporters",
+    "Serbia have two dangerous strikers",
+    "Ukraine have played on despite war"
+  ],
+  "isFirstMeeting": false
+}

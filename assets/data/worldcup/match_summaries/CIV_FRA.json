@@ -1,0 +1,55 @@
+{
+  "team1Code": "FRA",
+  "team2Code": "CIV",
+  "team1Name": "France",
+  "team2Name": "Ivory Coast",
+  "historicalAnalysis": "France and Ivory Coast share deep cultural ties through French colonization, with many Ivorian players developing in the French league system. Their encounters carry unique emotional weight.\n\nIvory Coast are reigning African champions after winning AFCON 2024 on home soil. France are World Cup favorites with extraordinary talent.",
+  "keyStorylines": [
+    "Colonial history meets football: A match with cultural significance",
+    "AFCON champions vs World Cup favorites",
+    "Many Ivorian players facing familiar French opponents",
+    "Can Ivory Coast produce an upset?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappé",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "World's best player"
+    },
+    {
+      "name": "Sébastien Haller",
+      "teamCode": "CIV",
+      "position": "Striker",
+      "reason": "AFCON hero with inspirational comeback story"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "teamCode": "FRA",
+      "position": "Midfielder",
+      "reason": "France's midfield general"
+    },
+    {
+      "name": "Franck Kessié",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Physical presence in midfield"
+    }
+  ],
+  "tacticalPreview": "France's superior quality should tell, but Ivory Coast's physicality and AFCON winning mentality make them dangerous. France must be clinical.",
+  "prediction": {
+    "predictedOutcome": "FRA",
+    "predictedScore": "3-0",
+    "confidence": 78,
+    "reasoning": "France's quality is simply too much for Ivory Coast despite their AFCON triumph.",
+    "alternativeScenario": "Ivory Coast scoring first and defending deep could produce a shock 1-1 draw."
+  },
+  "pastEncountersSummary": "France have dominated meetings, but Ivory Coast's AFCON triumph suggests they've improved significantly.",
+  "funFacts": [
+    "Many Ivorian players developed in the French league",
+    "Haller returned from cancer to become AFCON 2024 hero",
+    "Ivory Coast won AFCON 2024 after nearly being eliminated in the group stage",
+    "France have scored in every World Cup match since 2014"
+  ],
+  "isFirstMeeting": false
+}

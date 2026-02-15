@@ -1,0 +1,49 @@
+{
+  "id": "ESP_POR",
+  "team1Code": "ESP",
+  "team2Code": "POR",
+  "totalMatches": 38,
+  "team1Wins": 17,
+  "team2Wins": 7,
+  "draws": 14,
+  "team1Goals": 72,
+  "team2Goals": 35,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 2,
+  "lastMatch": "2024-09-08",
+  "firstMeeting": "1921-12-18",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 3,
+      "winnerCode": null,
+      "location": "Sochi, Russia",
+      "description": "Ronaldo hat-trick in epic draw"
+    },
+    {
+      "year": 2012,
+      "tournament": "Euro 2012",
+      "stage": "Semi-Final",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Donetsk, Ukraine",
+      "description": "Spain win on penalties, Cesc decisive"
+    },
+    {
+      "year": 2010,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Cape Town, South Africa",
+      "description": "Villa goal, Spain march on to glory"
+    }
+  ]
+}

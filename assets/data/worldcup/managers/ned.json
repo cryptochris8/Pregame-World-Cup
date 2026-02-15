@@ -1,0 +1,21 @@
+{
+  "id": "manager_ned",
+  "firstName": "Ronald",
+  "lastName": "Koeman",
+  "commonName": "Ronald Koeman",
+  "dateOfBirth": "1963-03-21",
+  "nationality": "Netherlands",
+  "currentTeam": "Netherlands",
+  "currentTeamCode": "NED",
+  "photoUrl": "assets/managers/koeman.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Possession",
+  "yearsExperience": 20,
+  "previousTeams": ["Vitesse", "Ajax", "Benfica", "PSV", "Valencia", "AZ", "Feyenoord", "Southampton", "Everton", "Barcelona"],
+  "trophies": ["Eredivisie", "KNVB Cup"],
+  "careerWins": 300,
+  "careerDraws": 100,
+  "careerLosses": 150,
+  "careerWinPercentage": 55,
+  "bio": "Dutch legend in his second spell as national team coach. Brings the traditional Dutch philosophy with modern tactical adaptations."
+}

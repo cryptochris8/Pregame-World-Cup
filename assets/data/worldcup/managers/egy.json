@@ -1,0 +1,21 @@
+{
+  "id": "manager_egy",
+  "firstName": "Hossam",
+  "lastName": "Hassan",
+  "commonName": "Hossam Hassan",
+  "dateOfBirth": "1966-08-10",
+  "nationality": "Egypt",
+  "currentTeam": "Egypt",
+  "currentTeamCode": "EGY",
+  "photoUrl": "assets/managers/hossamhassan.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Attacking",
+  "yearsExperience": 15,
+  "previousTeams": ["Zamalek", "Egyptian clubs"],
+  "trophies": ["Egyptian Premier League"],
+  "careerWins": 150,
+  "careerDraws": 70,
+  "careerLosses": 80,
+  "careerWinPercentage": 50,
+  "bio": "Egyptian legend and all-time top scorer. Known for attacking philosophy and maximizing star players."
+}

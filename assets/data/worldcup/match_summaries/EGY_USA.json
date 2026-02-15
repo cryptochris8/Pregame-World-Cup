@@ -1,0 +1,55 @@
+{
+  "team1Code": "USA",
+  "team2Code": "EGY",
+  "team1Name": "United States",
+  "team2Name": "Egypt",
+  "historicalAnalysis": "The United States and Egypt have rarely crossed paths in competitive football, with no World Cup meetings in history. Their encounters have been limited to friendlies, with both nations' football trajectories taking them to different confederations and competitions.\n\nEgypt, seven-time African champions, bring a rich football heritage led by one of the world's best players in Mohamed Salah. However, their World Cup record is modest—three appearances with early exits each time.\n\nThe USA enter as co-hosts with expectations of progressing deep into the tournament. This match represents a clash of footballing cultures: American athleticism and pressing versus Egyptian technical skill and African flair.",
+  "keyStorylines": [
+    "Mohamed Salah faces the American defense in a historic first World Cup meeting",
+    "USA seeking to maintain perfect home record in the group stage",
+    "Egypt looking to advance past the group stage for the first time since 1934",
+    "Premier League connections: Salah facing familiar American players"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "position": "Winger",
+      "reason": "Leading the host nation's attack"
+    },
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "One of the world's best and Egypt's all-time great"
+    },
+    {
+      "name": "Tyler Adams",
+      "teamCode": "USA",
+      "position": "Midfielder",
+      "reason": "Defensive shield protecting the back line"
+    },
+    {
+      "name": "Omar Marmoush",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "Emerging talent providing attacking support"
+    }
+  ],
+  "tacticalPreview": "USA will press high and try to isolate Salah from service. Egypt will look to feed their talisman in space behind the defense. The battle between Salah and the American full-backs will be decisive.",
+  "prediction": {
+    "predictedOutcome": "USA",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Home advantage and superior squad depth favor the USA. Egypt's reliance on Salah makes them predictable.",
+    "alternativeScenario": "If Salah produces individual brilliance, Egypt could snatch a draw or narrow victory."
+  },
+  "pastEncountersSummary": "Limited history between these nations, mostly friendlies. This World Cup encounter writes a new chapter.",
+  "funFacts": [
+    "First-ever World Cup meeting between USA and Egypt",
+    "Egypt's only World Cup knockout victory came in 1934",
+    "Salah scored over 200 goals for Liverpool",
+    "Egypt have won more AFCON titles (7) than any other nation"
+  ],
+  "isFirstMeeting": true
+}

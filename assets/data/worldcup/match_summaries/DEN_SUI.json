@@ -1,0 +1,52 @@
+{
+  "team1Code": "DEN",
+  "team2Code": "SUI",
+  "team1Name": "Denmark",
+  "team2Name": "Switzerland",
+  "historicalAnalysis": "Denmark and Switzerland have met multiple times in qualifying and friendlies. Both are organized European teams with similar footballing philosophies.",
+  "keyStorylines": [
+    "European competitors with similar styles",
+    "Eriksen's continued return to top level",
+    "Battle for Group G control"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Eriksen",
+      "teamCode": "DEN",
+      "position": "Midfielder",
+      "reason": "Denmark's creative force"
+    },
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "position": "Midfielder",
+      "reason": "Switzerland's captain and leader"
+    },
+    {
+      "name": "Rasmus Højlund",
+      "teamCode": "DEN",
+      "position": "Striker",
+      "reason": "Young Manchester United striker"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "position": "Forward",
+      "reason": "Swiss goal threat"
+    }
+  ],
+  "tacticalPreview": "Two well-organized European teams. Midfield battle between Eriksen and Xhaka will be crucial.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 52,
+    "reasoning": "Evenly matched teams likely to draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Both teams reached Euro 2020 quarter-finals",
+    "Switzerland beat France on penalties at Euro 2020",
+    "Denmark reached Euro 2020 semi-finals"
+  ],
+  "isFirstMeeting": false
+}

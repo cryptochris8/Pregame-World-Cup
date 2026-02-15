@@ -1,0 +1,55 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "GHA",
+  "team1Name": "Argentina",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "Argentina and Ghana have no World Cup history, but their paths have crossed in Copa América (as guests) and friendlies. This encounter pits the defending world champions against Africa's hopes.\n\nArgentina's 2022 triumph cemented Messi's legacy and restored Argentina's place atop world football. Ghana, despite producing talented players, have struggled to replicate their 2010 quarter-final achievement.\n\nThis match represents a fascinating clash of South American flair and African athleticism, with Argentina's tournament experience a significant advantage.",
+  "keyStorylines": [
+    "Defending champions Argentina vs African hopefuls",
+    "Messi seeking to continue his World Cup legacy",
+    "Ghana looking to prove they can compete with the best",
+    "First World Cup meeting between these nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The defending champion and tournament favorite"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Ghana's explosive talent and main creative threat"
+    },
+    {
+      "name": "Julián Álvarez",
+      "teamCode": "ARG",
+      "position": "Striker",
+      "reason": "2022 World Cup hero seeking more glory"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Ghana's captain and midfield anchor"
+    }
+  ],
+  "tacticalPreview": "Argentina will control possession and probe for openings. Ghana must stay compact and hope Kudus can produce magic on the counter. Argentina's movement and passing in tight spaces will test Ghana's discipline.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "3-0",
+    "confidence": 80,
+    "reasoning": "Argentina's champion quality and tournament experience should overwhelm Ghana. Messi and company will be too much for the Black Stars.",
+    "alternativeScenario": "Ghana scoring first could make this uncomfortable, potentially snatching a draw."
+  },
+  "pastEncountersSummary": "Limited history with no World Cup meetings. Argentina have won recent friendly encounters comfortably.",
+  "funFacts": [
+    "First-ever World Cup meeting between Argentina and Ghana",
+    "Argentina won their third World Cup in 2022",
+    "Ghana's best World Cup finish was quarter-finals in 2010",
+    "Kudus plays for West Ham in the Premier League"
+  ],
+  "isFirstMeeting": true
+}

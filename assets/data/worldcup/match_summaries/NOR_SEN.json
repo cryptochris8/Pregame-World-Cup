@@ -1,0 +1,55 @@
+{
+  "team1Code": "NOR",
+  "team2Code": "SEN",
+  "team1Name": "Norway",
+  "team2Name": "Senegal",
+  "historicalAnalysis": "Norway and Senegal meet for the first time in World Cup history. Norway return to the tournament for the first time since 1998, led by Erling Haaland, one of the world's most prolific strikers.\n\nSenegal are the reigning AFCON champions (2022) and reached the 2022 World Cup Round of 16 before losing to England. Their physical, technically gifted squad is one of Africa's best.\n\nThis match pits Haaland's goal-scoring brilliance against Senegal's organized, physical defense—a fascinating tactical battle.",
+  "keyStorylines": [
+    "Haaland's World Cup debut vs AFCON champions",
+    "Norway's first World Cup since 1998",
+    "First ever meeting between these nations",
+    "Europe's best striker vs Africa's best defense"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Erling Haaland",
+      "teamCode": "NOR",
+      "position": "Forward",
+      "reason": "Manchester City's record-breaking striker"
+    },
+    {
+      "name": "Sadio Mané",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "AFCON hero and Senegal's talisman"
+    },
+    {
+      "name": "Martin Ødegaard",
+      "teamCode": "NOR",
+      "position": "Midfielder",
+      "reason": "Arsenal captain providing the creativity"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "position": "Defender",
+      "reason": "Experienced defender tasked with stopping Haaland"
+    }
+  ],
+  "tacticalPreview": "Norway's 4-3-3 is designed to maximize Haaland's goal threat. Ødegaard's creativity and the team's pressing create chances for their lethal striker.\n\nSenegal's 4-3-3 emphasizes physicality and organization. Koulibaly's battle with Haaland could decide the match, with Mané providing counter-attacking threat.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 55,
+    "reasoning": "Two evenly matched sides with different strengths. Haaland and Mané should both score in a tight, entertaining encounter.",
+    "alternativeScenario": "If Haaland is isolated and Senegal dominate midfield, a 2-0 Senegal win is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Haaland scored 52 goals in his first season at Manchester City",
+    "Senegal won their first ever AFCON in 2022",
+    "Norway last played at a World Cup in 1998",
+    "Mané scored the winning penalty in the 2022 AFCON final"
+  ],
+  "isFirstMeeting": true
+}

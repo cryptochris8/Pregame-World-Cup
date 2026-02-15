@@ -1,0 +1,39 @@
+{
+  "id": "FRA_SEN",
+  "team1Code": "FRA",
+  "team2Code": "SEN",
+  "totalMatches": 4,
+  "team1Wins": 2,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 3,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-10-14",
+  "firstMeeting": "2000-05-31",
+  "notableMatches": [
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "SEN",
+      "location": "Seoul, South Korea",
+      "description": "Papa Bouba Diop goal stuns defending champions in tournament opener - greatest World Cup upset"
+    },
+    {
+      "year": 2022,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "FRA",
+      "location": "Paris, France",
+      "description": "France dominant in pre-World Cup friendly"
+    }
+  ]
+}

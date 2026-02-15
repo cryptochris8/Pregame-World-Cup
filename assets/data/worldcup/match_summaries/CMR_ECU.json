@@ -1,0 +1,55 @@
+{
+  "team1Code": "ECU",
+  "team2Code": "CMR",
+  "team1Name": "Ecuador",
+  "team2Name": "Cameroon",
+  "historicalAnalysis": "Ecuador and Cameroon have no significant history, making this World Cup encounter a true unknown. Both nations have similar profiles: proud football traditions, colorful supporter cultures, and a history of producing talented individuals who shine at World Cups.\n\nEcuador's 2022 World Cup campaign saw them win their opening match before exiting in the group stage. Cameroon memorably beat Brazil in the same tournament but couldn't advance.\n\nThis match could determine which team advances from Group C alongside Colombia.",
+  "keyStorylines": [
+    "First-ever competitive meeting between these nations",
+    "Crucial match likely deciding who advances from Group C",
+    "Ecuador's technical quality vs Cameroon's physicality",
+    "Two proud football nations seeking knockout round football"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Ecuador's world-class midfielder"
+    },
+    {
+      "name": "André-Frank Zambo Anguissa",
+      "teamCode": "CMR",
+      "position": "Midfielder",
+      "reason": "Napoli's midfield engine"
+    },
+    {
+      "name": "Enner Valencia",
+      "teamCode": "ECU",
+      "position": "Striker",
+      "reason": "Ecuador's all-time World Cup top scorer"
+    },
+    {
+      "name": "Vincent Aboubakar",
+      "teamCode": "CMR",
+      "position": "Forward",
+      "reason": "Cameroon captain and target man"
+    }
+  ],
+  "tacticalPreview": "A tactical battle in midfield between Caicedo and Anguissa. Ecuador will try to keep the ball on the ground while Cameroon use their physical advantages. Set pieces will be important.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 48,
+    "reasoning": "Two evenly matched teams likely to produce a tense, tactical draw. Neither can afford to lose.",
+    "alternativeScenario": "Ecuador's superior technical quality could produce a 2-0 win, or Cameroon's physicality could overwhelm for a 2-1 victory."
+  },
+  "pastEncountersSummary": "No previous meetings at any level. This is a historic first encounter.",
+  "funFacts": [
+    "First-ever meeting between Ecuador and Cameroon",
+    "Both nations have never reached a World Cup semi-final",
+    "Cameroon beat Brazil 1-0 at the 2022 World Cup",
+    "Ecuador's Valencia scored 3 goals at the 2022 World Cup"
+  ],
+  "isFirstMeeting": true
+}

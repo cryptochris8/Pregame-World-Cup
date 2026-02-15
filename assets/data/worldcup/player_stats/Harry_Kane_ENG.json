@@ -1,0 +1,37 @@
+{
+  "playerName": "Harry Kane",
+  "fifaCode": "ENG",
+  "worldCupAppearances": 11,
+  "worldCupGoals": 8,
+  "worldCupAssists": 2,
+  "previousWorldCups": [2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2018,
+      "matches": 6,
+      "goals": 6,
+      "assists": 0,
+      "stage": "Semi-Finals",
+      "keyMoment": "Won Golden Boot as England reached semis"
+    },
+    {
+      "year": 2022,
+      "matches": 5,
+      "goals": 2,
+      "assists": 2,
+      "stage": "Quarter-Finals",
+      "keyMoment": "Missed crucial penalty vs France"
+    }
+  ],
+  "worldCupAwards": [
+    "Golden Boot 2018"
+  ],
+  "memorableMoments": [
+    "Hat-trick vs Panama 2018",
+    "Last-minute winner vs Tunisia 2018",
+    "Penalty miss vs France that haunts England"
+  ],
+  "worldCupLegacyRating": 7,
+  "comparisonToLegend": "Goal record approaching Gary Lineker levels",
+  "worldCup2026Prediction": "Will be 32 - likely final chance to win World Cup as captain"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ESP_MAR",
+  "team1Code": "ESP",
+  "team2Code": "MAR",
+  "totalMatches": 5,
+  "team1Wins": 2,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 6,
+  "team2Goals": 6,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 1,
+  "lastMatch": "2022-12-06",
+  "firstMeeting": "1961-03-19",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": "MAR",
+      "location": "Doha, Qatar",
+      "description": "Morocco stun Spain on penalties"
+    },
+    {
+      "year": 2018,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Kaliningrad, Russia",
+      "description": "Dramatic draw, Iago Aspas late equalizer"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ESP_JPN",
+  "team1Code": "ESP",
+  "team2Code": "JPN",
+  "totalMatches": 4,
+  "team1Wins": 2,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 6,
+  "team2Goals": 4,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-12-01",
+  "firstMeeting": "2001-06-03",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "JPN",
+      "location": "Doha, Qatar",
+      "description": "Japan top group, Spain through as runners-up"
+    }
+  ]
+}

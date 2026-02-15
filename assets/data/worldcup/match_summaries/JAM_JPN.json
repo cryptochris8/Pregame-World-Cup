@@ -1,0 +1,39 @@
+{
+  "team1Code": "JPN",
+  "team2Code": "JAM",
+  "team1Name": "Japan",
+  "team2Name": "Jamaica",
+  "historicalAnalysis": "Japan and Jamaica have never met at a World Cup. Japan are strong favorites.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Japan seeking group dominance",
+    "Jamaica underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "position": "Winger",
+      "reason": "Japan's creative force"
+    },
+    {
+      "name": "Leon Bailey",
+      "teamCode": "JAM",
+      "position": "Winger",
+      "reason": "Jamaica's threat"
+    }
+  ],
+  "tacticalPreview": "Japan should dominate possession. Jamaica will defend and counter.",
+  "prediction": {
+    "predictedOutcome": "JPN",
+    "predictedScore": "3-0",
+    "confidence": 75,
+    "reasoning": "Japan's quality should dominate."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Japan beat Germany and Spain in 2022"
+  ],
+  "isFirstMeeting": true
+}

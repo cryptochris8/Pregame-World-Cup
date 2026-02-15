@@ -1,0 +1,21 @@
+{
+  "id": "manager_ecu",
+  "firstName": "Sebastian",
+  "lastName": "Beccacece",
+  "commonName": "Sebastian Beccacece",
+  "dateOfBirth": "1981-01-31",
+  "nationality": "Argentina",
+  "currentTeam": "Ecuador",
+  "currentTeamCode": "ECU",
+  "photoUrl": "assets/managers/beccacece.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "High Press",
+  "yearsExperience": 10,
+  "previousTeams": ["Defensa y Justicia", "Independiente", "Racing Club"],
+  "trophies": ["Copa Sudamericana 2020 (Defensa y Justicia)"],
+  "careerWins": 100,
+  "careerDraws": 50,
+  "careerLosses": 60,
+  "careerWinPercentage": 48,
+  "bio": "Former Bielsa disciple known for intense pressing and attacking football. Bringing modern tactical approach to Ecuador."
+}

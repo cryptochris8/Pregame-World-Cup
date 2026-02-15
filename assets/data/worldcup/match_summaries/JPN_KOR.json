@@ -1,0 +1,52 @@
+{
+  "team1Code": "JPN",
+  "team2Code": "KOR",
+  "team1Name": "Japan",
+  "team2Name": "Korea Republic",
+  "historicalAnalysis": "The fiercest rivalry in Asian football. Japan and Korea have rarely met at World Cups but their matches are always intense.",
+  "keyStorylines": [
+    "Asian derby on World Cup stage",
+    "Japan's 2022 form vs Korean talent",
+    "Son vs Kubo: Asia's best"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "position": "Winger",
+      "reason": "Japan's star"
+    },
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "Asia's best player"
+    },
+    {
+      "name": "Kaoru Mitoma",
+      "teamCode": "JPN",
+      "position": "Winger",
+      "reason": "Dribbling specialist"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "position": "Midfielder",
+      "reason": "Korean playmaker"
+    }
+  ],
+  "tacticalPreview": "Intense rivalry with tactical sophistication. Both teams press well and have quality attackers.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 48,
+    "reasoning": "Intense rivalry likely to produce cagey draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Fiercest rivalry in Asian football",
+    "Both nations co-hosted 2002 World Cup",
+    "Son and Kubo among world's best"
+  ],
+  "isFirstMeeting": false
+}

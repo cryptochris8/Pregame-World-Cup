@@ -1,0 +1,39 @@
+{
+  "id": "BEL_EGY",
+  "team1Code": "BEL",
+  "team2Code": "EGY",
+  "totalMatches": 3,
+  "team1Wins": 1,
+  "team2Wins": 2,
+  "draws": 0,
+  "team1Goals": 4,
+  "team2Goals": 6,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-11-18",
+  "firstMeeting": "2005-08-17",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "BEL",
+      "location": "Kuwait City, Kuwait",
+      "description": "Belgium edges Egypt in pre-World Cup friendly"
+    },
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "EGY",
+      "location": "Brussels, Belgium",
+      "description": "Salah-led Egypt stuns Belgium in friendly"
+    }
+  ]
+}

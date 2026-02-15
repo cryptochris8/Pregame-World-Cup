@@ -1,0 +1,59 @@
+{
+  "id": "BRA_SCO",
+  "team1Code": "BRA",
+  "team2Code": "SCO",
+  "totalMatches": 6,
+  "team1Wins": 4,
+  "team2Wins": 0,
+  "draws": 2,
+  "team1Goals": 12,
+  "team2Goals": 3,
+  "worldCupMatches": 4,
+  "team1WorldCupWins": 3,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "1998-06-10",
+  "firstMeeting": "1966-06-25",
+  "notableMatches": [
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Opening Match",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Paris, France",
+      "description": "World Cup opener watched by 500 million - Tom Boyd own goal seals Scotland fate"
+    },
+    {
+      "year": 1974,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Frankfurt, Germany",
+      "description": "Legendary 0-0 draw - Scotland remain unbeaten against Brazil in World Cup group"
+    },
+    {
+      "year": 1982,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 4,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Seville, Spain",
+      "description": "David Narey screamer not enough as Zico, Falcao lead Brazil masterclass"
+    },
+    {
+      "year": 1990,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Turin, Italy",
+      "description": "Muller goal sends Scotland home in group stage"
+    }
+  ]
+}

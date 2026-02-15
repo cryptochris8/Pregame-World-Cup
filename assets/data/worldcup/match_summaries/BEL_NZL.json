@@ -1,0 +1,55 @@
+{
+  "team1Code": "NZL",
+  "team2Code": "BEL",
+  "team1Name": "New Zealand",
+  "team2Name": "Belgium",
+  "historicalAnalysis": "New Zealand and Belgium have never met at a World Cup. Belgium's golden generation has produced consistent tournament performances without winning a major trophy. New Zealand remain unbeaten in World Cup history (3 draws in 2010).\n\nBelgium enter this tournament with their core aging but still formidable. De Bruyne and Lukaku lead a squad that has disappointed at the last two major tournaments.\n\nNew Zealand's World Cup history is brief but proud—their 2010 campaign saw them draw with Italy, Slovakia, and Paraguay without losing.",
+  "keyStorylines": [
+    "New Zealand's unbeaten World Cup record at stake",
+    "Belgium's aging golden generation",
+    "First ever meeting between these nations",
+    "European heavyweights vs Oceania champions"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "position": "Midfielder",
+      "reason": "Manchester City's creative genius"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "position": "Forward",
+      "reason": "Premier League-proven striker"
+    },
+    {
+      "name": "Jérémy Doku",
+      "teamCode": "BEL",
+      "position": "Winger",
+      "reason": "Explosive dribbler"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "position": "Defender",
+      "reason": "Empoli's attacking left-back"
+    }
+  ],
+  "tacticalPreview": "Belgium's 4-3-3 maximizes De Bruyne's creativity. Doku's pace provides an outlet, while Lukaku's presence stretches defenses.\n\nNew Zealand's 4-4-2 is organized and hard-working. Wood's aerial ability and their defensive discipline are key to any upset hopes.",
+  "prediction": {
+    "predictedOutcome": "BEL",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "Belgium's individual quality should prove decisive, ending New Zealand's unbeaten run.",
+    "alternativeScenario": "If New Zealand defend heroically and Wood converts a chance, a historic 1-1 draw is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "New Zealand are unbeaten in World Cup history (3 draws in 2010)",
+    "Belgium have never won a major international trophy",
+    "De Bruyne has won 6 Premier League titles",
+    "Wood has scored 50+ Premier League goals"
+  ],
+  "isFirstMeeting": true
+}

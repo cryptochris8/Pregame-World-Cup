@@ -1,0 +1,39 @@
+{
+  "team1Code": "KSA",
+  "team2Code": "HON",
+  "team1Name": "Saudi Arabia",
+  "team2Name": "Honduras",
+  "historicalAnalysis": "Saudi Arabia and Honduras have never met at a World Cup. Saudi's 2022 Argentina upset makes them dangerous.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Saudi Arabia favorites",
+    "Honduras underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "KSA",
+      "position": "Winger",
+      "reason": "Saudi star"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "position": "Forward",
+      "reason": "Honduras threat"
+    }
+  ],
+  "tacticalPreview": "Saudi Arabia should control the game with organized pressing.",
+  "prediction": {
+    "predictedOutcome": "KSA",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Saudi quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Saudi beat Argentina in 2022"
+  ],
+  "isFirstMeeting": true
+}

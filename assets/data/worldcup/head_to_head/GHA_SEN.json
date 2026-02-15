@@ -1,0 +1,39 @@
+{
+  "id": "GHA_SEN",
+  "team1Code": "GHA",
+  "team2Code": "SEN",
+  "totalMatches": 19,
+  "team1Wins": 6,
+  "team2Wins": 6,
+  "draws": 7,
+  "team1Goals": 19,
+  "team2Goals": 17,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-03-26",
+  "firstMeeting": "1963-03-24",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": "SEN",
+      "location": "Yaounde, Cameroon",
+      "description": "Mane wins AFCON for Senegal on penalties"
+    },
+    {
+      "year": 2002,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "GHA",
+      "location": "Bamako, Mali",
+      "description": "Ghana advances to semi-final"
+    }
+  ]
+}

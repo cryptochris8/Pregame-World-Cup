@@ -1,0 +1,39 @@
+{
+  "team1Code": "CHN",
+  "team2Code": "PAN",
+  "team1Name": "China PR",
+  "team2Name": "Panama",
+  "historicalAnalysis": "China and Panama have never met. Both are World Cup underdogs seeking points.",
+  "keyStorylines": [
+    "First meeting",
+    "Both seeking points",
+    "World Cup newcomers clash"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Wu Lei",
+      "teamCode": "CHN",
+      "position": "Forward",
+      "reason": "China's star"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "Panama's talent"
+    }
+  ],
+  "tacticalPreview": "Both teams will be cautious. Could be decided by one moment.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First meeting",
+    "China last played at 2002 World Cup"
+  ],
+  "isFirstMeeting": true
+}

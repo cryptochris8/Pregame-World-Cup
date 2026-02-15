@@ -1,0 +1,39 @@
+{
+  "id": "AUS_JPN",
+  "team1Code": "AUS",
+  "team2Code": "JPN",
+  "totalMatches": 24,
+  "team1Wins": 7,
+  "team2Wins": 12,
+  "draws": 5,
+  "team1Goals": 31,
+  "team2Goals": 40,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-10-15",
+  "firstMeeting": "1963-10-13",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "AUS",
+      "location": "Kaiserslautern, Germany",
+      "description": "Australia dramatic late comeback"
+    },
+    {
+      "year": 2011,
+      "tournament": "Asian Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "JPN",
+      "location": "Doha, Qatar",
+      "description": "Lee goal in extra time wins it for Japan"
+    }
+  ]
+}

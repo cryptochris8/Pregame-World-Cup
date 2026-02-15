@@ -1,0 +1,55 @@
+{
+  "team1Code": "CIV",
+  "team2Code": "GER",
+  "team1Name": "Ivory Coast",
+  "team2Name": "Germany",
+  "historicalAnalysis": "Germany and Ivory Coast have never met at a World Cup, making this 2026 encounter historic. Their two previous meetings were both draws: a 2-2 friendly in 2009 where Didier Drogba starred, and a 1-1 draw at the Tokyo Olympics in 2021 that eliminated Germany from the tournament.\n\nGermany, four-time World Cup champions, enter 2026 seeking redemption after consecutive group-stage exits in 2018 and 2022. The 2022 disaster—eliminated despite beating Costa Rica 4-2 in their final match—was particularly painful for a nation that had dominated World Cups for decades.\n\nIvory Coast, meanwhile, are the reigning African champions after winning AFCON 2024 on home soil. That triumph, featuring a remarkable comeback from the brink of elimination, showcased the Elephants' resilience and quality. Their 2014 World Cup campaign ended in the group stage, and 2026 represents an opportunity to finally make the knockout rounds.",
+  "keyStorylines": [
+    "Germany seeking redemption after back-to-back World Cup group stage exits",
+    "Ivory Coast as AFCON champions looking to announce themselves globally",
+    "First World Cup meeting between these two nations",
+    "Can Germany's young generation restore Die Mannschaft to former glory?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Germany's brightest young talent and creative engine"
+    },
+    {
+      "name": "Sébastien Haller",
+      "teamCode": "CIV",
+      "position": "Striker",
+      "reason": "Inspirational story after cancer recovery, AFCON 2024 hero"
+    },
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Silky dribbler and goal threat from midfield"
+    },
+    {
+      "name": "Franck Kessié",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Physical presence and leadership in midfield"
+    }
+  ],
+  "tacticalPreview": "Germany's 4-2-3-1 under Julian Nagelsmann emphasizes quick passing and pressing. Wirtz and Musiala provide creativity, while the defense remains a concern after recent struggles.\n\nIvory Coast play a physical 4-3-3 that combines African athleticism with tactical organization. Their key is to match Germany's intensity early and use their pace in transition. Set-pieces could be crucial against Germany's occasionally vulnerable defense.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Germany's desperation for redemption and superior individual quality give them an edge. However, their recent World Cup failures and Ivory Coast's AFCON form make this closer than many expect.",
+    "alternativeScenario": "Ivory Coast's physicality and counter-attacking threat could trouble Germany. A shock 2-1 Ivorian victory would confirm their AFCON success was no fluke."
+  },
+  "pastEncountersSummary": "Just two meetings, both draws. The 2009 friendly (2-2) featured Drogba in his prime. The 2021 Olympics draw (1-1) eliminated Germany from the tournament, an ominous sign for Die Mannschaft.",
+  "funFacts": [
+    "This is the first World Cup meeting between Germany and Ivory Coast",
+    "Germany's 2022 elimination marked their second consecutive group stage exit",
+    "Ivory Coast's AFCON 2024 victory came after they were nearly eliminated in the group stage",
+    "Sébastien Haller returned to football after cancer treatment to become AFCON hero"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "CUR",
+  "team2Code": "CIV",
+  "team1Name": "Curaçao",
+  "team2Name": "Ivory Coast",
+  "historicalAnalysis": "This is a historic first meeting between Curaçao and Ivory Coast. Curaçao, making their World Cup debut with a population of just 150,000, face the reigning AFCON champions in what could be a David vs Goliath encounter.\n\nIvory Coast won the 2024 AFCON on home soil in dramatic fashion, coming from behind in the tournament before winning it all. Their blend of experienced stars and young talents makes them formidable.\n\nFor Curaçao, every match at this World Cup is historic. Their qualification from CONCACAF is one of football's great underdog stories.",
+  "keyStorylines": [
+    "AFCON champions vs World Cup debutants",
+    "Ivory Coast seeking to continue AFCON momentum",
+    "Curaçao's population of 150,000 on the world stage",
+    "First ever meeting between these nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Sébastien Haller",
+      "teamCode": "CIV",
+      "position": "Forward",
+      "reason": "Cancer survivor and AFCON hero"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "position": "Midfielder",
+      "reason": "Curaçao's most experienced player"
+    },
+    {
+      "name": "Franck Kessié",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Barcelona midfielder providing steel"
+    },
+    {
+      "name": "Kenji Gorré",
+      "teamCode": "CUR",
+      "position": "Winger",
+      "reason": "Tricky winger with pace"
+    }
+  ],
+  "tacticalPreview": "Ivory Coast's 4-3-3 is built on power and pace. Haller's hold-up play and finishing are key, with width from the flanks creating chances.\n\nCuraçao's 5-4-1 is purely about survival. They'll park the bus and hope to create a moment of magic on the counter or from a set-piece.",
+  "prediction": {
+    "predictedOutcome": "CIV",
+    "predictedScore": "3-0",
+    "confidence": 85,
+    "reasoning": "The gulf in quality is significant. Ivory Coast's firepower should overwhelm Curaçao's defense.",
+    "alternativeScenario": "If Curaçao defend heroically, Ivory Coast might only manage 1-0 with growing frustration."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Curaçao has a smaller population than most World Cup stadiums",
+    "Haller returned to football after beating testicular cancer",
+    "Ivory Coast won the AFCON 2024 after being on the brink of elimination",
+    "This is Curaçao's first ever World Cup appearance"
+  ],
+  "isFirstMeeting": true
+}

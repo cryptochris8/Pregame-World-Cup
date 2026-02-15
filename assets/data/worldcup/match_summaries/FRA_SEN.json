@@ -1,0 +1,55 @@
+{
+  "team1Code": "FRA",
+  "team2Code": "SEN",
+  "team1Name": "France",
+  "team2Name": "Senegal",
+  "historicalAnalysis": "Few World Cup matches have produced a more stunning upset than the opening game of the 2002 World Cup in South Korea. Defending champions France, boasting icons like Zinedine Zidane, Thierry Henry, and Patrick Vieira, were expected to cruise past debutants Senegal. Instead, Papa Bouba Diop's 30th-minute goal, and his iconic corner flag celebration, announced Africa's arrival on the world stage in unforgettable fashion.\n\nThat 1-0 Senegalese victory sent shockwaves through global football. France would go on to exit the tournament without scoring a single goal, while Senegal reached the quarter-finals in their maiden World Cup appearance. The result remains one of the greatest upsets in World Cup history and established a narrative that persists to this day: never underestimate the Lions of Teranga.\n\nSince then, France have won two World Cups (2018, with a 2022 final loss), cementing their status as the dominant force in world football. Senegal, meanwhile, won their first Africa Cup of Nations in 2022, proving their 2002 heroics were no fluke. This 2026 rematch carries the weight of that history while writing a new chapter.",
+  "keyStorylines": [
+    "Echoes of 2002: Can Senegal produce another shocking upset against the champions?",
+    "France seeking World Cup redemption after 2022 final heartbreak",
+    "Senegal as African champions looking to prove continental dominance translates globally",
+    "The colonial history and cultural ties between France and Senegal add unique context"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappé",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "The world's best player and France's captain seeking to lead Les Bleus to glory"
+    },
+    {
+      "name": "Sadio Mané",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "Senegal's talisman who led them to AFCON glory in 2022"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "teamCode": "FRA",
+      "position": "Midfielder",
+      "reason": "France's new midfield general who must control the tempo"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "position": "Defender",
+      "reason": "Experienced center-back tasked with containing Mbappé"
+    }
+  ],
+  "tacticalPreview": "France's 4-3-3 system maximizes Mbappé's devastating pace and movement, supported by world-class midfielders. Senegal under Aliou Cissé will likely adopt a pragmatic 4-4-2, prioritizing defensive solidity while looking to exploit transitions.\n\nThe key for Senegal is to avoid being overrun in midfield while staying compact enough to limit spaces for Mbappé. If they can take their chances on the counter and frustrate France early, the ghosts of 2002 could begin to haunt Les Bleus. France must be patient and clinical, avoiding the complacency that cost them in Seoul.",
+  "prediction": {
+    "predictedOutcome": "FRA",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "France's superior squad depth and individual quality should prevail. Mbappé is at his peak, and France's 2022 final experience will drive them. However, Senegal's AFCON-winning mentality and physical prowess make them dangerous.",
+    "alternativeScenario": "If Senegal score first and absorb pressure effectively, a repeat of 2002 is possible. A disciplined 1-0 Senegalese victory would shake the tournament."
+  },
+  "pastEncountersSummary": "Four meetings, but none more significant than June 2002. That Papa Bouba Diop goal against the reigning world champions remains etched in World Cup folklore. France have since won 2 of 4 encounters, but the psychological impact of 2002 lingers.",
+  "funFacts": [
+    "Senegal's 2002 win came in their first-ever World Cup match as a nation",
+    "France went winless in 2002 (0W-1D-2L) and failed to score a single goal",
+    "Papa Bouba Diop's celebration hiding under the corner flag became iconic",
+    "Many Senegalese players in 2002 played in the French league, knowing their opponents intimately"
+  ],
+  "isFirstMeeting": false
+}

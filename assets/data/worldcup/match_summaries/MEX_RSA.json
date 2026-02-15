@@ -1,0 +1,55 @@
+{
+  "team1Code": "MEX",
+  "team2Code": "RSA",
+  "team1Name": "Mexico",
+  "team2Name": "South Africa",
+  "historicalAnalysis": "Mexico and South Africa share a historic connection—South Africa hosted the 2010 World Cup where their opening match was against Mexico, ending 1-1. That draw in Johannesburg remains one of the most memorable moments in Bafana Bafana history, with Siphiwe Tshabalala's stunning opening goal becoming iconic.\n\nThis 2026 encounter sees Mexico as co-hosts, desperate to break their Round of 16 curse that has haunted them since 1986. El Tri have failed to advance past the first knockout round in seven consecutive World Cups. South Africa, meanwhile, are making their first World Cup appearance since hosting in 2010.\n\nThe stakes couldn't be higher for Mexico playing at the Estadio Azteca in the tournament opener. The weight of expectation from millions of Mexican fans will be immense, but so too is the opportunity to set the tone for their home World Cup.",
+  "keyStorylines": [
+    "Tournament opener at the iconic Estadio Azteca with Mexico as co-hosts",
+    "Rematch of the historic 2010 World Cup opening match",
+    "Mexico seeking to exorcise their Round of 16 demons",
+    "South Africa's first World Cup since hosting in 2010"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Santiago Giménez",
+      "teamCode": "MEX",
+      "position": "Forward",
+      "reason": "Feyenoord's goal machine leading Mexico's attack"
+    },
+    {
+      "name": "Percy Tau",
+      "teamCode": "RSA",
+      "position": "Winger",
+      "reason": "South Africa's most experienced European-based player"
+    },
+    {
+      "name": "Edson Álvarez",
+      "teamCode": "MEX",
+      "position": "Midfielder",
+      "reason": "West Ham's midfield enforcer and El Tri captain"
+    },
+    {
+      "name": "Ronwen Williams",
+      "teamCode": "RSA",
+      "position": "Goalkeeper",
+      "reason": "AFCON 2024 Best Goalkeeper, Bafana's last line"
+    }
+  ],
+  "tacticalPreview": "Mexico's 4-3-3 under Javier Aguirre emphasizes ball retention and patient buildup, with Giménez as the focal point. Their home support will drive aggressive pressing in the opening stages.\n\nSouth Africa's 4-4-2 will be compact and defensively disciplined, looking to frustrate Mexico and hit on the counter. Williams' shot-stopping abilities will be crucial, and set-pieces could be their best route to goal.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "Home advantage at the Azteca and superior squad depth should see Mexico through. South Africa will compete but lack the firepower to threaten consistently.",
+    "alternativeScenario": "If South Africa score early and sit deep, their defensive organization could force a nervy 1-0 or even a shock draw."
+  },
+  "pastEncountersSummary": "Two meetings, both at World Cups. The 2010 opener in Johannesburg ended 1-1 with iconic goals from Tshabalala and Márquez. They also met in the 2010 group stage.",
+  "funFacts": [
+    "Siphiwe Tshabalala's goal in 2010 was the first of that World Cup and became iconic in South Africa",
+    "The Estadio Azteca has hosted two World Cup finals (1970, 1986)",
+    "Mexico are the only team to host the World Cup three times",
+    "South Africa are the only host nation to be eliminated in the group stage (2010)"
+  ],
+  "isFirstMeeting": false
+}

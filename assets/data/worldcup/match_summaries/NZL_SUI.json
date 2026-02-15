@@ -1,0 +1,52 @@
+{
+  "team1Code": "SUI",
+  "team2Code": "NZL",
+  "team1Name": "Switzerland",
+  "team2Name": "New Zealand",
+  "historicalAnalysis": "Switzerland and New Zealand have no significant history. Switzerland are heavy favorites.",
+  "keyStorylines": [
+    "First significant meeting",
+    "Switzerland seeking comfortable win",
+    "New Zealand underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "position": "Midfielder",
+      "reason": "Swiss leader"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "position": "Striker",
+      "reason": "New Zealand's main threat"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "position": "Forward",
+      "reason": "Swiss attacker"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "position": "Defender",
+      "reason": "NZ defender"
+    }
+  ],
+  "tacticalPreview": "Switzerland should control the game. New Zealand will defend deep and hope to counter.",
+  "prediction": {
+    "predictedOutcome": "SUI",
+    "predictedScore": "3-0",
+    "confidence": 80,
+    "reasoning": "Quality gap favors Switzerland."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "New Zealand last appeared at 2010 World Cup",
+    "Switzerland have qualified for recent tournaments consistently"
+  ],
+  "isFirstMeeting": true
+}

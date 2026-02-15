@@ -1,0 +1,49 @@
+{
+  "id": "GER_ITA",
+  "team1Code": "GER",
+  "team2Code": "ITA",
+  "totalMatches": 37,
+  "team1Wins": 9,
+  "team2Wins": 15,
+  "draws": 13,
+  "team1Goals": 50,
+  "team2Goals": 58,
+  "worldCupMatches": 5,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 3,
+  "worldCupDraws": 1,
+  "lastMatch": "2022-06-14",
+  "firstMeeting": "1923-01-28",
+  "notableMatches": [
+    {
+      "year": 1970,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 3,
+      "team2Score": 4,
+      "winnerCode": "ITA",
+      "location": "Mexico City, Mexico",
+      "description": "Game of the Century, Beckenbauer plays injured"
+    },
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "ITA",
+      "location": "Dortmund, Germany",
+      "description": "Late goals send Italy to final"
+    },
+    {
+      "year": 2016,
+      "tournament": "Euro 2016",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Bordeaux, France",
+      "description": "Germany finally beat Italy on penalties"
+    }
+  ]
+}

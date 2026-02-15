@@ -1,0 +1,59 @@
+{
+  "id": "FRA_GER",
+  "team1Code": "FRA",
+  "team2Code": "GER",
+  "totalMatches": 32,
+  "team1Wins": 13,
+  "team2Wins": 10,
+  "draws": 9,
+  "team1Goals": 52,
+  "team2Goals": 45,
+  "worldCupMatches": 4,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 1,
+  "lastMatch": "2024-03-23",
+  "firstMeeting": "1931-03-15",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Hummels header sends Germany through"
+    },
+    {
+      "year": 1982,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 3,
+      "team2Score": 3,
+      "winnerCode": "GER",
+      "location": "Seville, Spain",
+      "description": "Epic match, Schumacher foul, Germany win on penalties"
+    },
+    {
+      "year": 1986,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "FRA",
+      "location": "Guadalajara, Mexico",
+      "description": "France revenge, reach second straight final"
+    },
+    {
+      "year": 2016,
+      "tournament": "Euro 2016",
+      "stage": "Semi-Final",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "FRA",
+      "location": "Marseille, France",
+      "description": "Griezmann brace sends hosts to final"
+    }
+  ]
+}

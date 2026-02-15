@@ -1,0 +1,55 @@
+{
+  "team1Code": "TUN",
+  "team2Code": "NED",
+  "team1Name": "Tunisia",
+  "team2Name": "Netherlands",
+  "historicalAnalysis": "Tunisia and Netherlands have never met at a World Cup. The Netherlands are three-time runners-up seeking their first title, while Tunisia have consistently qualified but never progressed beyond the group stage.\n\nThe Netherlands' 2022 World Cup ended in quarter-final disappointment against Argentina. Their squad features a blend of experienced players and emerging talents, with Van Dijk anchoring the defense.\n\nTunisia's 2022 campaign included a famous win over France. Their organization and spirit make them dangerous opponents for any team.",
+  "keyStorylines": [
+    "Netherlands seeking first World Cup title",
+    "Tunisia looking to replicate France upset",
+    "First ever World Cup meeting between these nations",
+    "Crucial group stage finale"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "position": "Defender",
+      "reason": "Liverpool captain and defensive colossus"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "position": "Midfielder",
+      "reason": "Manchester United's Tunisian talent"
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "position": "Forward",
+      "reason": "Liverpool's versatile attacker"
+    },
+    {
+      "name": "Wahbi Khazri",
+      "teamCode": "TUN",
+      "position": "Forward",
+      "reason": "Tunisia's experienced talisman"
+    }
+  ],
+  "tacticalPreview": "Netherlands' 4-3-3 provides attacking width with Gakpo drifting inside. Van Dijk's aerial dominance and ball-playing ability are crucial.\n\nTunisia's 4-3-3 emphasizes organization first. They'll look to frustrate Netherlands and create chances on the counter through quick transitions.",
+  "prediction": {
+    "predictedOutcome": "NED",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Netherlands' quality should prove decisive, but Tunisia's organization will make it harder than expected.",
+    "alternativeScenario": "If Tunisia score early and defend resolutely, a shock 1-0 upset like France is possible."
+  },
+  "pastEncountersSummary": "First World Cup meeting. Limited previous history.",
+  "funFacts": [
+    "Netherlands have lost 3 World Cup finals (1974, 1978, 2010)",
+    "Tunisia beat France 1-0 at the 2022 World Cup",
+    "Van Dijk was named UEFA Defender of the Year in 2019",
+    "This is Tunisia's 6th World Cup appearance"
+  ],
+  "isFirstMeeting": true
+}

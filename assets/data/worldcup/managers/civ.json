@@ -1,0 +1,21 @@
+{
+  "id": "manager_civ",
+  "firstName": "Emerse",
+  "lastName": "Fae",
+  "commonName": "Emerse Fae",
+  "dateOfBirth": "1984-01-24",
+  "nationality": "Ivory Coast",
+  "currentTeam": "Ivory Coast",
+  "currentTeamCode": "CIV",
+  "photoUrl": "assets/managers/fae.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Attacking",
+  "yearsExperience": 3,
+  "previousTeams": ["Ivory Coast (Assistant)"],
+  "trophies": ["AFCON 2024"],
+  "careerWins": 20,
+  "careerDraws": 5,
+  "careerLosses": 5,
+  "careerWinPercentage": 67,
+  "bio": "Former midfielder who dramatically led Ivory Coast to AFCON 2024 glory on home soil after mid-tournament appointment."
+}

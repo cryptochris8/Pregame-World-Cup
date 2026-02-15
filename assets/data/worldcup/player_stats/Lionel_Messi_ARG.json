@@ -1,0 +1,65 @@
+{
+  "playerName": "Lionel Messi",
+  "fifaCode": "ARG",
+  "worldCupAppearances": 26,
+  "worldCupGoals": 13,
+  "worldCupAssists": 8,
+  "previousWorldCups": [2006, 2010, 2014, 2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2006,
+      "matches": 3,
+      "goals": 1,
+      "assists": 1,
+      "stage": "Quarter-Finals",
+      "keyMoment": "Youngest Argentine to play and score at World Cup"
+    },
+    {
+      "year": 2010,
+      "matches": 5,
+      "goals": 0,
+      "assists": 1,
+      "stage": "Quarter-Finals",
+      "keyMoment": "Led attack but couldn't find the net"
+    },
+    {
+      "year": 2014,
+      "matches": 7,
+      "goals": 4,
+      "assists": 1,
+      "stage": "Final",
+      "keyMoment": "Won Golden Ball, lost final to Germany"
+    },
+    {
+      "year": 2018,
+      "matches": 4,
+      "goals": 1,
+      "assists": 2,
+      "stage": "Round of 16",
+      "keyMoment": "Magical goal vs Nigeria"
+    },
+    {
+      "year": 2022,
+      "matches": 7,
+      "goals": 7,
+      "assists": 3,
+      "stage": "Winner",
+      "keyMoment": "Won World Cup, 2 goals in final, tournament MVP"
+    }
+  ],
+  "worldCupAwards": [
+    "World Cup Winner 2022",
+    "Golden Ball 2014",
+    "Golden Ball 2022",
+    "Silver Ball 2022"
+  ],
+  "memorableMoments": [
+    "Lifting the World Cup trophy in 2022",
+    "Two goals in 2022 final against France",
+    "Penalty shootout celebration vs Netherlands",
+    "Record-breaking goal vs Croatia in semi-final"
+  ],
+  "worldCupLegacyRating": 10,
+  "comparisonToLegend": "Finally matched Diego Maradona's World Cup legacy in Qatar 2022",
+  "worldCup2026Prediction": "If fit, expected to feature in his 6th World Cup as defending champion captain"
+}

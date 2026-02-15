@@ -1,0 +1,38 @@
+{
+  "team1Code": "UAE",
+  "team2Code": "PAN",
+  "team1Name": "United Arab Emirates",
+  "team2Name": "Panama",
+  "historicalAnalysis": "UAE and Panama have never met. Both are World Cup underdogs.",
+  "keyStorylines": [
+    "First meeting",
+    "Both seeking first World Cup knockout appearance"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Ali Mabkhout",
+      "teamCode": "UAE",
+      "position": "Forward",
+      "reason": "UAE's threat"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "Panama's creator"
+    }
+  ],
+  "tacticalPreview": "Two evenly matched underdogs. Fight for three points.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First meeting",
+    "Both seeking rare World Cup success"
+  ],
+  "isFirstMeeting": true
+}

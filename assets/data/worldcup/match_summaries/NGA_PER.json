@@ -1,0 +1,40 @@
+{
+  "team1Code": "NGA",
+  "team2Code": "PER",
+  "team1Name": "Nigeria",
+  "team2Name": "Peru",
+  "historicalAnalysis": "Nigeria and Peru have never met at a World Cup. Nigeria are favorites with Osimhen leading the attack.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Osimhen seeking goals",
+    "Peru underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "position": "Striker",
+      "reason": "World-class striker"
+    },
+    {
+      "name": "Paolo Guerrero",
+      "teamCode": "PER",
+      "position": "Striker",
+      "reason": "Peru's legend"
+    }
+  ],
+  "tacticalPreview": "Nigeria should control the game. Osimhen vs Peru's defense is key.",
+  "prediction": {
+    "predictedOutcome": "NGA",
+    "predictedScore": "3-1",
+    "confidence": 68,
+    "reasoning": "Nigeria's attacking quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Osimhen is one of world's best strikers",
+    "Nigeria have reached multiple World Cup knockouts"
+  ],
+  "isFirstMeeting": true
+}

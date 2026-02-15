@@ -1,0 +1,55 @@
+{
+  "team1Code": "UZB",
+  "team2Code": "COL",
+  "team1Name": "Uzbekistan",
+  "team2Name": "Colombia",
+  "historicalAnalysis": "This is a first ever meeting between Uzbekistan and Colombia. Uzbekistan make their World Cup debut after years of near-misses, emerging from a competitive Asian qualifying campaign. Colombia return to the World Cup after missing 2022.\n\nUzbekistan's qualification represents Asian football's growing depth. Their technical, possession-based style is influenced by decades of Soviet-era coaching traditions, creating players who are comfortable on the ball.\n\nColombia's absence from Qatar 2022 was a shock, but this squad featuring James Rodríguez, Luis Díaz, and a host of young talents is ready to make an impact.",
+  "keyStorylines": [
+    "Uzbekistan's historic World Cup debut",
+    "Colombia seeking redemption after missing 2022",
+    "Central Asian technical football vs South American flair",
+    "First ever meeting between these nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luis Díaz",
+      "teamCode": "COL",
+      "position": "Winger",
+      "reason": "Liverpool's electrifying winger and Colombia's talisman"
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "teamCode": "UZB",
+      "position": "Forward",
+      "reason": "Roma striker leading Uzbekistan's attack"
+    },
+    {
+      "name": "James Rodríguez",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "The 2014 World Cup Golden Boot winner still producing magic"
+    },
+    {
+      "name": "Jaloliddin Masharipov",
+      "teamCode": "UZB",
+      "position": "Midfielder",
+      "reason": "Creative playmaker pulling the strings"
+    }
+  ],
+  "tacticalPreview": "Colombia's 4-3-3 emphasizes attacking intent, with Díaz and Arias providing width. James operates in the pocket, and their pressing has improved dramatically.\n\nUzbekistan's 4-2-3-1 focuses on possession and patient buildup. Shomurodov's hold-up play creates space for runners, and they won't be intimidated by Colombia's reputation.",
+  "prediction": {
+    "predictedOutcome": "COL",
+    "predictedScore": "2-1",
+    "confidence": 68,
+    "reasoning": "Colombia's superior attacking talent should prove decisive, but Uzbekistan's technical quality will make this competitive.",
+    "alternativeScenario": "If Uzbekistan's defense holds firm and they take their chances, a shock draw is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "James Rodríguez won the 2014 World Cup Golden Boot with 6 goals",
+    "Uzbekistan came agonizingly close to qualifying for 2018, losing to Australia in playoffs",
+    "Colombia's 2014 World Cup quarter-final run was their best ever",
+    "Shomurodov became the first Uzbek player in Serie A"
+  ],
+  "isFirstMeeting": true
+}

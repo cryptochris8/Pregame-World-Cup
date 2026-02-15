@@ -1,0 +1,55 @@
+{
+  "team1Code": "CRO",
+  "team2Code": "PAN",
+  "team1Name": "Croatia",
+  "team2Name": "Panama",
+  "historicalAnalysis": "Croatia and Panama have never met in any competitive or friendly match, making this 2026 World Cup encounter their first-ever meeting. It's a striking illustration of how the World Cup brings together nations from opposite ends of football's global landscape.\n\nCroatia, with their remarkable World Cup pedigree (third in 1998, runners-up in 2018, third in 2022), are one of the tournament's established powers despite their small population of 4 million. Their sustained excellence has made them one of international football's most respected nations.\n\nPanama, by contrast, made their World Cup debut only in 2018, losing all three group games including a 6-1 thrashing by England. Their qualification for 2026 represents just their second World Cup appearance. The contrast in experience could not be more stark.",
+  "keyStorylines": [
+    "First-ever meeting between these nations",
+    "Croatia's World Cup experience vs Panama's relative inexperience",
+    "Can Panama avoid a repeat of their 2018 struggles?",
+    "Modrić and the aging Croatian core facing energetic underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "The 40-year-old Ballon d'Or winner leading Croatia once more"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "Panama's creative hub and most technically gifted player"
+    },
+    {
+      "name": "Mateo Kovačić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "Premier League experience and key part of Croatia's midfield three"
+    },
+    {
+      "name": "José Fajardo",
+      "teamCode": "PAN",
+      "position": "Forward",
+      "reason": "Goal threat tasked with troubling Croatia's defense"
+    }
+  ],
+  "tacticalPreview": "Croatia's 4-3-3 built around midfield dominance should control this match. Their experience in World Cup encounters means they know how to manage games against less experienced opponents.\n\nPanama will likely sit deep in a 5-4-1 or 5-3-2, hoping to frustrate Croatia and hit them on the counter. Their best chance is set-pieces and maintaining defensive shape for as long as possible. Any early goal from Croatia could open floodgates.",
+  "prediction": {
+    "predictedOutcome": "CRO",
+    "predictedScore": "3-0",
+    "confidence": 88,
+    "reasoning": "Croatia's quality advantage is substantial. Panama's 2018 World Cup (0 points, -11 goal difference) showed they struggle against elite opponents. This should be relatively comfortable for Croatia.",
+    "alternativeScenario": "If Panama score first and frustrate Croatia, nerves could set in. A shock 1-0 Panama victory, while unlikely, would be one of the great World Cup upsets."
+  },
+  "pastEncountersSummary": "No previous meetings in any competition. This first encounter represents a remarkable World Cup moment: a 2018 finalist facing a nation making just their second World Cup appearance.",
+  "funFacts": [
+    "This is the first-ever match between Croatia and Panama",
+    "Panama's 2018 World Cup goal against England was their first in World Cup history",
+    "Croatia's population (4 million) is similar to Panama's (4.4 million)",
+    "Panama qualified for 2018 by ending the USA's streak of 7 consecutive World Cup appearances"
+  ],
+  "isFirstMeeting": true
+}

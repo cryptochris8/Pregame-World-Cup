@@ -1,0 +1,55 @@
+{
+  "team1Code": "SUI",
+  "team2Code": "CAN",
+  "team1Name": "Switzerland",
+  "team2Name": "Canada",
+  "historicalAnalysis": "Switzerland and Canada have met just once—a 2018 friendly that ended 0-0. This World Cup encounter pits two nations with contrasting World Cup histories. Switzerland have reached the knockout rounds in 4 of their last 5 tournaments, while Canada are making only their third appearance.\n\nSwitzerland's consistency at major tournaments is remarkable—they've progressed from their group in 4 of the last 5 World Cups. Their blend of experience and youth makes them dangerous.\n\nCanada, as co-hosts, carry massive expectations. Their 2022 World Cup was brief (eliminated in group stage), but this talented generation featuring Davies, David, and Buchanan is ready for more.",
+  "keyStorylines": [
+    "Switzerland's tournament consistency vs Canada's home advantage",
+    "Xhaka's leadership vs Davies' explosiveness",
+    "First competitive meeting between these nations",
+    "Crucial match for Group B standings"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "position": "Midfielder",
+      "reason": "Leverkusen's title-winning captain"
+    },
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "position": "Defender",
+      "reason": "Bayern Munich's lightning-fast wing-back"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "position": "Forward",
+      "reason": "Monaco's powerful striker"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "position": "Forward",
+      "reason": "Lille's prolific striker"
+    }
+  ],
+  "tacticalPreview": "Switzerland's 3-4-2-1 provides defensive stability while allowing Xhaka to orchestrate from deep. Their counter-attacking efficiency is world-class.\n\nCanada's 4-3-3 unleashes Davies as an attacking threat. David's movement and finishing are key, with the crowd driving aggressive pressing.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Two well-organized teams should produce a tight encounter. Both have the quality to score but also defensive organization.",
+    "alternativeScenario": "If Davies dominates and Canada's crowd creates an electric atmosphere, a 2-1 home win is possible."
+  },
+  "pastEncountersSummary": "One friendly in 2018, ending 0-0.",
+  "funFacts": [
+    "Switzerland have reached the knockout rounds in 4 of their last 5 major tournaments",
+    "Davies is one of the fastest players in world football",
+    "Xhaka won the Bundesliga with Leverkusen in 2024",
+    "This is Canada's first World Cup on home soil"
+  ],
+  "isFirstMeeting": false
+}

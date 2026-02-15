@@ -1,0 +1,39 @@
+{
+  "id": "CAN_MEX",
+  "team1Code": "CAN",
+  "team2Code": "MEX",
+  "totalMatches": 37,
+  "team1Wins": 5,
+  "team2Wins": 23,
+  "draws": 9,
+  "team1Goals": 26,
+  "team2Goals": 75,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-09-10",
+  "firstMeeting": "1957-03-20",
+  "notableMatches": [
+    {
+      "year": 2021,
+      "tournament": "Gold Cup",
+      "stage": "Semi-Final",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "MEX",
+      "location": "Houston, USA",
+      "description": "Mexico reach Gold Cup final"
+    },
+    {
+      "year": 2022,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "CAN",
+      "location": "Edmonton, Canada",
+      "description": "Canada upset Mexico in freezing conditions"
+    }
+  ]
+}

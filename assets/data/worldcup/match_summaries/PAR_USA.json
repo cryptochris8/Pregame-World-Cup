@@ -1,0 +1,55 @@
+{
+  "team1Code": "PAR",
+  "team2Code": "USA",
+  "team1Name": "Paraguay",
+  "team2Name": "United States",
+  "historicalAnalysis": "The United States and Paraguay share a piece of World Cup history that predates most modern football narratives. Their 1930 World Cup encounter in Montevideo saw American striker Bert Patenaude score what is now recognized as the first hat-trick in World Cup history, leading the USA to a 3-0 victory. That match, in the inaugural World Cup, established an unlikely footnote that connects these two nations across nearly a century of football.\n\nThe overall head-to-head favors the United States with 5 wins from 9 meetings, though Paraguay have shown they can compete. The rivalry lacks the intensity of CONCACAF clashes for the USA, but it carries historical significance and provides a fascinating tactical matchup between North and South American football philosophies.\n\nFor the 2026 World Cup, the USA enter as co-hosts with enormous expectations. This is their moment to prove that American soccer has arrived. Paraguay, meanwhile, return to the World Cup stage looking to recapture the magic of their 2010 quarter-final run, when they came agonizingly close to the semi-finals.",
+  "keyStorylines": [
+    "USA as co-hosts with expectations of reaching at least the quarter-finals",
+    "Paraguay seeking to prove South American football's depth beyond the big three",
+    "Historical echo: Can the USA replicate Patenaude's 1930 heroics?",
+    "CONCACAF vs CONMEBOL tactical battle in a World Cup group stage"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "position": "Winger",
+      "reason": "Captain America leading the host nation's charge with speed and creativity"
+    },
+    {
+      "name": "Miguel Almirón",
+      "teamCode": "PAR",
+      "position": "Winger",
+      "reason": "Premier League experience and technical quality to unlock defenses"
+    },
+    {
+      "name": "Gio Reyna",
+      "teamCode": "USA",
+      "position": "Attacking Midfielder",
+      "reason": "Generational talent whose health is key to USA's hopes"
+    },
+    {
+      "name": "Gustavo Gómez",
+      "teamCode": "PAR",
+      "position": "Defender",
+      "reason": "Veteran center-back marshaling Paraguay's defensive organization"
+    }
+  ],
+  "tacticalPreview": "The USA under Mauricio Pochettino play an intense pressing game with quick transitions, similar to his Spurs and Chelsea sides. Paraguay typically employ a compact 4-4-2 that prioritizes defensive solidity before exploiting space on the counter.\n\nThe key battle will be in midfield, where the USA's energetic pressing meets Paraguay's experienced ball retention. If the USA can win the ball high and create chaos, their speed advantage will tell. If Paraguay slow the game and frustrate the home crowd, they can cause problems.",
+  "prediction": {
+    "predictedOutcome": "USA",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Home advantage, superior squad depth, and Pochettino's tactical nous give the USA a clear edge. The crowd at a packed American stadium will lift the team. Paraguay's quality shouldn't be dismissed, but the hosts should prevail.",
+    "alternativeScenario": "If Paraguay take an early lead and kill the game's tempo, they could frustrate the USA into a nervy 1-1 draw. South American experience in these situations is invaluable."
+  },
+  "pastEncountersSummary": "Nine meetings, five USA victories, but the most significant remains 1930. Bert Patenaude's hat-trick in that inaugural World Cup was the first in tournament history (officially recognized after decades of debate). More recent encounters have been friendlies, with the USA generally dominant.",
+  "funFacts": [
+    "Bert Patenaude's 1930 hat-trick was only officially recognized as the World Cup's first in 2006",
+    "Paraguay reached the World Cup quarter-finals in 2010, their best-ever finish",
+    "The USA's 1930 World Cup campaign (semi-finalists) remains their best performance",
+    "Tim Weah made his USA debut against Paraguay in 2018 as the first 2000s-born player for the USMNT"
+  ],
+  "isFirstMeeting": false
+}

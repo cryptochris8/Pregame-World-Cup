@@ -1,0 +1,55 @@
+{
+  "team1Code": "HAI",
+  "team2Code": "SCO",
+  "team1Name": "Haiti",
+  "team2Name": "Scotland",
+  "historicalAnalysis": "This is a historic first meeting between Haiti and Scotland. Haiti are making their first World Cup appearance since 1974, when they became the first Caribbean nation to qualify. Scotland return to the World Cup looking to make an impact after years of near-misses.\n\nHaiti's qualification is one of the great stories of this World Cup cycle, emerging from a competitive CONCACAF region despite limited resources. Their passionate fanbase and attacking flair have captured neutral hearts worldwide.\n\nScotland's journey has been marked by heartbreak—agonizing playoff defeats and last-day qualification failures. This 2026 squad, featuring Premier League quality throughout, represents perhaps their strongest generation in decades.",
+  "keyStorylines": [
+    "Haiti's first World Cup in 52 years vs Scotland's returning generation",
+    "Historic first meeting between these nations",
+    "Caribbean flair vs Scottish pragmatism",
+    "Both teams looking to make group stage statements"
+  ],
+  "playersToWatch": [
+    {
+      "name": "John McGinn",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Aston Villa's dynamic captain driving Scotland's attack"
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "position": "Forward",
+      "reason": "Haiti's powerful target man and leading scorer"
+    },
+    {
+      "name": "Billy Gilmour",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Brighton's creative maestro controlling the tempo"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "position": "Winger",
+      "reason": "MLS winger providing pace and creativity"
+    }
+  ],
+  "tacticalPreview": "Scotland's 3-5-2 provides defensive solidity while allowing McGinn and Adams to drive forward. Their pressing intensity could overwhelm Haiti in the middle third.\n\nHaiti's 4-3-3 is built on energy and counter-attacking speed. Their physical forwards can cause problems in the air, and they won't be intimidated by Scotland's European pedigree.",
+  "prediction": {
+    "predictedOutcome": "SCO",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Scotland's Premier League quality should prove decisive, but Haiti's physicality and spirit will make this competitive.",
+    "alternativeScenario": "Haiti's passionate approach and set-piece threat could earn a famous draw if Scotland struggle with the occasion."
+  },
+  "pastEncountersSummary": "First ever meeting between these nations at any level.",
+  "funFacts": [
+    "Haiti's 1974 World Cup squad included Emmanuel Sanon, who scored against Italy",
+    "Scotland have never progressed past the World Cup group stage",
+    "Haiti are one of only two Caribbean nations to play at a World Cup (with Jamaica)",
+    "This is the first World Cup match in Gillette Stadium history"
+  ],
+  "isFirstMeeting": true
+}

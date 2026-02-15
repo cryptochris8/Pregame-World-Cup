@@ -1,0 +1,51 @@
+{
+  "playerName": "Luka Modric",
+  "fifaCode": "CRO",
+  "worldCupAppearances": 16,
+  "worldCupGoals": 2,
+  "worldCupAssists": 2,
+  "previousWorldCups": [2006, 2014, 2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2006,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Group Stage"
+    },
+    {
+      "year": 2014,
+      "matches": 3,
+      "goals": 1,
+      "assists": 0,
+      "stage": "Group Stage"
+    },
+    {
+      "year": 2018,
+      "matches": 7,
+      "goals": 1,
+      "assists": 1,
+      "stage": "Final",
+      "keyMoment": "Won Golden Ball, led Croatia to first ever final"
+    },
+    {
+      "year": 2022,
+      "matches": 7,
+      "goals": 0,
+      "assists": 1,
+      "stage": "Third Place",
+      "keyMoment": "Led Croatia to third place at 37"
+    }
+  ],
+  "worldCupAwards": [
+    "Golden Ball 2018"
+  ],
+  "memorableMoments": [
+    "Lifting Silver Medal in Moscow 2018",
+    "Stunning goal vs Argentina 2018",
+    "Leadership throughout 2018 and 2022"
+  ],
+  "worldCupLegacyRating": 9,
+  "comparisonToLegend": "Midfield mastery compared to Zidane and Iniesta",
+  "worldCup2026Prediction": "If selected at 40, would provide invaluable experience for young Croatian squad"
+}

@@ -1,0 +1,53 @@
+{
+  "team1Code": "POL",
+  "team2Code": "UKR",
+  "team1Name": "Poland",
+  "team2Name": "Ukraine",
+  "historicalAnalysis": "Poland and Ukraine co-hosted Euro 2012. Their matches carry extra significance given current geopolitical context. Poland have provided significant support to Ukraine.",
+  "keyStorylines": [
+    "Neighbors with deep connection",
+    "Euro 2012 co-hosts reunited",
+    "Ukraine playing for their nation",
+    "Lewandowski vs Ukraine's defense"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Robert Lewandowski",
+      "teamCode": "POL",
+      "position": "Striker",
+      "reason": "World-class striker"
+    },
+    {
+      "name": "Mykhailo Mudryk",
+      "teamCode": "UKR",
+      "position": "Winger",
+      "reason": "Ukraine's exciting talent"
+    },
+    {
+      "name": "Piotr Zieliński",
+      "teamCode": "POL",
+      "position": "Midfielder",
+      "reason": "Polish creator"
+    },
+    {
+      "name": "Oleksandr Zinchenko",
+      "teamCode": "UKR",
+      "position": "Midfielder",
+      "reason": "Arsenal's versatile star"
+    }
+  ],
+  "tacticalPreview": "Emotional match for both sides. Poland's experience vs Ukraine's determination and flair.",
+  "prediction": {
+    "predictedOutcome": "POL",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Poland's quality edge should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Co-hosted Euro 2012 together",
+    "Poland have supported Ukraine significantly",
+    "Ukraine qualified through playoffs"
+  ],
+  "isFirstMeeting": false
+}

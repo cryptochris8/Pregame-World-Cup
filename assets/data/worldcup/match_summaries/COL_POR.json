@@ -1,0 +1,55 @@
+{
+  "team1Code": "COL",
+  "team2Code": "POR",
+  "team1Name": "Colombia",
+  "team2Name": "Portugal",
+  "historicalAnalysis": "In one of football's most surprising historical footnotes, Colombia and Portugal have never played each other. Despite both nations boasting rich football traditions and producing generations of world-class talent, fate has never brought them together on the pitch.\n\nThis 2026 World Cup encounter will be their first-ever meeting, making it one of the most anticipated debuts of the tournament. Colombia's history features the creative genius of Carlos Valderrama and James Rodríguez, while Portugal can claim Eusébio and Cristiano Ronaldo as their greatest icons.\n\nColombia's 2014 World Cup quarter-final run, led by James Rodríguez (who won the Golden Boot), represents their finest hour. Portugal, meanwhile, won Euro 2016 and the Nations League in 2019, adding to Cristiano Ronaldo's legacy even as his national team career winds down.",
+  "keyStorylines": [
+    "Historic first meeting between two proud football nations",
+    "Cristiano Ronaldo potentially in his final World Cup",
+    "Colombia seeking to replicate their 2014 World Cup magic",
+    "Portuguese next generation stepping up as Ronaldo's era ends"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "The legendary striker in what may be his final World Cup"
+    },
+    {
+      "name": "Luis Díaz",
+      "teamCode": "COL",
+      "position": "Winger",
+      "reason": "Liverpool's explosive winger and Colombia's attacking talisman"
+    },
+    {
+      "name": "Rafael Leão",
+      "teamCode": "POR",
+      "position": "Winger",
+      "reason": "Portugal's heir apparent with electric pace and skill"
+    },
+    {
+      "name": "James Rodríguez",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "The 2014 Golden Boot winner seeking one more World Cup moment"
+    }
+  ],
+  "tacticalPreview": "Portugal's 4-3-3 system balances Ronaldo's predatory instincts with the creative genius of Bruno Fernandes and the pace of Leão. Their midfield depth and defensive quality make them one of the tournament favorites.\n\nColombia's 4-2-3-1 relies on Luis Díaz's explosiveness and James Rodríguez's vision. Their South American flair combined with pressing intensity can trouble any opponent. The key is defensive discipline against Portugal's quality.",
+  "prediction": {
+    "predictedOutcome": "POR",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Portugal's squad depth and experience in major tournaments give them a slight edge. Colombia's attacking quality ensures this will be competitive. This could be one of the matches of the group stage.",
+    "alternativeScenario": "If Luis Díaz and James are at their best, Colombia could pull off a historic upset. Their counter-attacking threat is genuine. A 2-1 Colombian victory is entirely feasible."
+  },
+  "pastEncountersSummary": "No previous meetings. This is a historic first encounter between these two nations. Both have won major honors (Portugal: Euro 2016, Nations League; Colombia: 2001 Copa América) but never faced each other.",
+  "funFacts": [
+    "This will be the first-ever match between Colombia and Portugal at any level",
+    "James Rodríguez won the 2014 World Cup Golden Boot with 6 goals",
+    "Cristiano Ronaldo has scored 130+ goals for Portugal, the all-time international record",
+    "Both nations have reached World Cup quarter-finals but never progressed to semi-finals"
+  ],
+  "isFirstMeeting": true
+}

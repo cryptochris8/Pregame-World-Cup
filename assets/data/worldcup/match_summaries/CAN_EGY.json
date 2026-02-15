@@ -1,0 +1,55 @@
+{
+  "team1Code": "CAN",
+  "team2Code": "EGY",
+  "team1Name": "Canada",
+  "team2Name": "Egypt",
+  "historicalAnalysis": "Canada and Egypt have no significant football history, making this World Cup encounter a complete unknown. Both nations bring unique narratives: Canada's rapid rise from football obscurity to World Cup contenders, and Egypt's status as African powerhouse with World Cup struggles.\n\nCanada's golden generation led by Davies and David has transformed their football landscape. Egypt, despite producing legendary players and dominating Africa, have never found World Cup success beyond the group stage since 1934.\n\nThis match could determine which team advances from Group A alongside the hosts.",
+  "keyStorylines": [
+    "First-ever meeting between Canada and Egypt",
+    "Davies vs Salah: Premier League stars collide",
+    "Both teams seeking first World Cup knockout round in decades",
+    "Emerging power vs established African giant"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "position": "Left-Back",
+      "reason": "Canada's superstar and Bayern Munich regular"
+    },
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "One of the greatest African players ever"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "position": "Striker",
+      "reason": "Prolific goalscorer seeking World Cup breakthrough"
+    },
+    {
+      "name": "Omar Marmoush",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "Rising talent supporting Salah"
+    }
+  ],
+  "tacticalPreview": "Canada's pressing and athleticism against Egypt's technical ability and counter-attacking threat. The match could be decided by which team better executes their game plan in transition moments.",
+  "prediction": {
+    "predictedOutcome": "CAN",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Canada's collective strength and home continent advantage give them a slight edge over Egypt's Salah-dependent attack.",
+    "alternativeScenario": "Salah producing moments of magic could see Egypt win 1-0 or snatch a draw."
+  },
+  "pastEncountersSummary": "No previous meetings at any level. This is a historic first encounter.",
+  "funFacts": [
+    "First-ever meeting between Canada and Egypt",
+    "Both teams have never reached a World Cup semi-final",
+    "Davies and Salah are both among the fastest players in world football",
+    "Egypt have won 7 AFCON titles; Canada have won 1 Gold Cup"
+  ],
+  "isFirstMeeting": true
+}

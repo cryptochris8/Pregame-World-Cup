@@ -1,0 +1,29 @@
+{
+  "id": "ENG_GHA",
+  "team1Code": "ENG",
+  "team2Code": "GHA",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 1,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2011-03-29",
+  "firstMeeting": "2011-03-29",
+  "notableMatches": [
+    {
+      "year": 2011,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "London, England",
+      "description": "Asamoah Gyan stoppage-time equalizer after Andy Carroll opener at Wembley"
+    }
+  ]
+}

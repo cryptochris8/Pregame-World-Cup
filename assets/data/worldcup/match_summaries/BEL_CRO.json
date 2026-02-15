@@ -1,0 +1,53 @@
+{
+  "team1Code": "BEL",
+  "team2Code": "CRO",
+  "team1Name": "Belgium",
+  "team2Name": "Croatia",
+  "historicalAnalysis": "Belgium and Croatia met at the 2022 World Cup in a crucial group match. Croatia's 0-0 draw eliminated Belgium in one of the tournament's biggest surprises. It was a painful end for Belgium's highly-ranked squad.",
+  "keyStorylines": [
+    "Rematch of 2022 World Cup group decider",
+    "Belgium seeking revenge",
+    "Croatia's tournament experience vs Belgium's quality",
+    "Modrić vs De Bruyne: Midfield legends"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "position": "Midfielder",
+      "reason": "World-class playmaker"
+    },
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "Ageless maestro"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "position": "Striker",
+      "reason": "Must convert chances this time"
+    },
+    {
+      "name": "Joško Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "World-class center-back"
+    }
+  ],
+  "tacticalPreview": "Belgium must be more clinical than 2022. Croatia's midfield control vs Belgium's individual quality will be fascinating.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "0-0",
+    "confidence": 45,
+    "reasoning": "Another tactical stalemate is possible given 2022 history."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Croatia's 0-0 draw eliminated Belgium in 2022",
+    "Lukaku missed several clear chances in that match",
+    "Croatia went on to finish third in 2022"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_jam",
+  "firstName": "Heimir",
+  "lastName": "Hallgrimsson",
+  "commonName": "Heimir Hallgrimsson",
+  "dateOfBirth": "1967-06-10",
+  "nationality": "Iceland",
+  "currentTeam": "Jamaica",
+  "currentTeamCode": "JAM",
+  "photoUrl": "assets/managers/hallgrimsson.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 15,
+  "previousTeams": ["Iceland NT", "Iceland (Co-manager)"],
+  "trophies": ["Euro 2016 Quarter-finals (Iceland)"],
+  "careerWins": 60,
+  "careerDraws": 30,
+  "careerLosses": 40,
+  "careerWinPercentage": 46,
+  "bio": "Part of the Iceland duo that shocked England at Euro 2016. Bringing organization and giant-killing mentality to the Reggae Boyz."
+}

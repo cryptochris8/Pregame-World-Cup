@@ -1,0 +1,55 @@
+{
+  "team1Code": "FRA",
+  "team2Code": "ENG",
+  "team1Name": "France",
+  "team2Name": "England",
+  "historicalAnalysis": "France and England's rivalry transcends football, rooted in centuries of historical conflict. On the pitch, they've met at major tournaments with mixed results. England's 2022 World Cup quarter-final loss to France (2-1) remains painful—Harry Kane's missed penalty haunts English fans.\n\nFrance are two-time World Cup champions (1998, 2018) and 2022 runners-up. England haven't won a major tournament since 1966. This \"Group of Death\" clash could be one of the matches of the tournament.",
+  "keyStorylines": [
+    "Revenge mission for England after 2022 quarter-final heartbreak",
+    "Mbappé vs England's defense: The key battle",
+    "Group of Death showdown between European giants",
+    "France seeking to prove 2022 final loss was an aberration"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappé",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "The world's best player and France captain"
+    },
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "England's talisman and Ballon d'Or contender"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "France's creative hub and big-game player"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "position": "Striker",
+      "reason": "England's captain seeking World Cup redemption"
+    }
+  ],
+  "tacticalPreview": "A tactical chess match between two of Europe's best. France's pace and transitions vs England's organized pressing. Mbappé must be contained; Kane must take his chances.",
+  "prediction": {
+    "predictedOutcome": "FRA",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "France's tournament experience and Mbappé's brilliance give them an edge, but this is incredibly close.",
+    "alternativeScenario": "England's motivation from 2022 could produce a famous 2-1 victory."
+  },
+  "pastEncountersSummary": "The 2022 World Cup quarter-final (2-1 France) defines recent history. Kane's missed penalty remains a source of English pain.",
+  "funFacts": [
+    "England's Kane missed a crucial penalty in their 2022 World Cup quarter-final loss",
+    "France have reached three of the last four World Cup finals",
+    "England haven't beaten France at a World Cup since 1982",
+    "Mbappé scored a hat-trick in the 2022 World Cup final"
+  ],
+  "isFirstMeeting": false
+}

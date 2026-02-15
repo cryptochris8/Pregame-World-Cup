@@ -1,0 +1,52 @@
+{
+  "team1Code": "GER",
+  "team2Code": "ALG",
+  "team1Name": "Germany",
+  "team2Name": "Algeria",
+  "historicalAnalysis": "Germany and Algeria's most famous World Cup encounter was the 2014 Round of 16, where Germany won 2-1 in extra time in one of the tournament's most entertaining matches. Algeria pushed Germany to the limit with their pressing and counter-attacks.",
+  "keyStorylines": [
+    "Rematch of 2014 thriller",
+    "Germany determined to avoid another close call",
+    "Algeria seeking to build on 2014 heroics"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Germany's star"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "position": "Winger",
+      "reason": "Algeria's creative force"
+    },
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Creative talent"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "teamCode": "ALG",
+      "position": "Midfielder",
+      "reason": "AC Milan's midfield anchor"
+    }
+  ],
+  "tacticalPreview": "Germany must respect Algeria's counter-attacking threat while controlling possession. Algeria need to replicate 2014's pressing intensity.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "3-1",
+    "confidence": 70,
+    "reasoning": "Germany's quality should tell, but Algeria will compete."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Algeria pushed Germany to extra time in 2014",
+    "That match is considered one of the best World Cup games ever",
+    "Germany won the 2014 World Cup"
+  ],
+  "isFirstMeeting": false
+}

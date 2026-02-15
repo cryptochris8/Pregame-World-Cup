@@ -1,0 +1,52 @@
+{
+  "team1Code": "ITA",
+  "team2Code": "TUN",
+  "team1Name": "Italy",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "Italy and Tunisia share Mediterranean connections. Their matches have been competitive friendlies. Italy's pedigree should prove too much for Tunisia.",
+  "keyStorylines": [
+    "Mediterranean rivals meet at World Cup",
+    "Italy seeking to top Group F",
+    "Tunisia looking for surprise"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Federico Chiesa",
+      "teamCode": "ITA",
+      "position": "Winger",
+      "reason": "Italy's danger man"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "position": "Midfielder",
+      "reason": "Tunisia's young talent"
+    },
+    {
+      "name": "Nicolò Barella",
+      "teamCode": "ITA",
+      "position": "Midfielder",
+      "reason": "Midfield controller"
+    },
+    {
+      "name": "Wahbi Khazri",
+      "teamCode": "TUN",
+      "position": "Forward",
+      "reason": "Experienced attacker"
+    }
+  ],
+  "tacticalPreview": "Italy will control the game while Tunisia look to frustrate and counter. Italy's patience will be tested.",
+  "prediction": {
+    "predictedOutcome": "ITA",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Italy's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Both nations border the Mediterranean",
+    "Tunisia have qualified for 6 World Cups",
+    "Italy have won 4 World Cups"
+  ],
+  "isFirstMeeting": false
+}

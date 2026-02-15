@@ -1,0 +1,55 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "URU",
+  "team1Name": "Argentina",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "Argentina and Uruguay share football's oldest international rivalry, dating back to 1901. These Rio de la Plata neighbors have met over 200 times, with Argentina holding a slight advantage. Their World Cup history includes the very first final in 1930, won by Uruguay in Montevideo.\n\nBoth nations are steeped in World Cup glory: Argentina with three titles (1978, 1986, 2022) and Uruguay with two (1930, 1950). This match pits Argentina's defending champions against Uruguay's proud tradition.\n\nUnder Messi, Argentina have rediscovered their winning mentality. Uruguay under Bielsa play with intense pressing and never-say-die attitude.",
+  "keyStorylines": [
+    "Football's oldest rivalry renewed on the World Cup stage",
+    "Defending champions Argentina vs proud Uruguay tradition",
+    "Messi potentially facing his final Rio de la Plata derby",
+    "Bielsa's tactical battle against Scaloni"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The GOAT leading Argentina once more"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Uruguay's engine and Real Madrid star"
+    },
+    {
+      "name": "Enzo Fernández",
+      "teamCode": "ARG",
+      "position": "Midfielder",
+      "reason": "Chelsea's record signing and 2022 World Cup young player winner"
+    },
+    {
+      "name": "Darwin Núñez",
+      "teamCode": "URU",
+      "position": "Striker",
+      "reason": "Explosive striker with pace and power"
+    }
+  ],
+  "tacticalPreview": "Both teams know each other intimately. Argentina's possession-based approach will meet Uruguay's aggressive pressing. Midfield control between Enzo and Valverde will be decisive.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Argentina's champion mentality and superior squad depth give them an edge, but Uruguay will make this a battle.",
+    "alternativeScenario": "Uruguay's intensity could overwhelm Argentina for a famous 2-1 victory."
+  },
+  "pastEncountersSummary": "Over 200 meetings, the oldest rivalry in international football. Argentina lead slightly but Uruguay have won when it matters, including the first World Cup final.",
+  "funFacts": [
+    "This is football's oldest international rivalry (since 1901)",
+    "Uruguay beat Argentina in the first World Cup final (1930)",
+    "Combined, they have won 5 World Cups",
+    "The rivalry is known as \"El Clásico del Río de la Plata\""
+  ],
+  "isFirstMeeting": false
+}

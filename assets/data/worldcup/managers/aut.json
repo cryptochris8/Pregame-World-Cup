@@ -1,0 +1,21 @@
+{
+  "id": "manager_aut",
+  "firstName": "Ralf",
+  "lastName": "Rangnick",
+  "commonName": "Ralf Rangnick",
+  "dateOfBirth": "1958-06-29",
+  "nationality": "Germany",
+  "currentTeam": "Austria",
+  "currentTeamCode": "AUT",
+  "photoUrl": "assets/managers/rangnick.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "High Press",
+  "yearsExperience": 35,
+  "previousTeams": ["Hoffenheim", "Schalke 04", "RB Leipzig", "Manchester United"],
+  "trophies": ["German Cup"],
+  "careerWins": 280,
+  "careerDraws": 120,
+  "careerLosses": 150,
+  "careerWinPercentage": 51,
+  "bio": "Godfather of gegenpressing and architect of the Red Bull football philosophy. Has transformed Austria into a pressing machine."
+}

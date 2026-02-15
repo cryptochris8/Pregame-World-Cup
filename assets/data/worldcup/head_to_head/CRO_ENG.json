@@ -1,0 +1,59 @@
+{
+  "id": "CRO_ENG",
+  "team1Code": "CRO",
+  "team2Code": "ENG",
+  "totalMatches": 10,
+  "team1Wins": 4,
+  "team2Wins": 4,
+  "draws": 2,
+  "team1Goals": 12,
+  "team2Goals": 14,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2021-06-13",
+  "firstMeeting": "1996-04-24",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "CRO",
+      "location": "Moscow, Russia",
+      "description": "Mandzukic extra-time winner sends Croatia to first-ever World Cup final"
+    },
+    {
+      "year": 2007,
+      "tournament": "Euro Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "CRO",
+      "location": "Zagreb, Croatia",
+      "description": "Croatia victory contributed to England missing Euro 2008"
+    },
+    {
+      "year": 2021,
+      "tournament": "Euro 2020",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "ENG",
+      "location": "London, England",
+      "description": "Raheem Sterling goal gives England revenge at Wembley"
+    },
+    {
+      "year": 2018,
+      "tournament": "Nations League",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Rijeka, Croatia",
+      "description": "Goalless draw in first meeting after World Cup semi-final"
+    }
+  ]
+}

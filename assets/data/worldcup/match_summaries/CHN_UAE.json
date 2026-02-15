@@ -1,0 +1,38 @@
+{
+  "team1Code": "UAE",
+  "team2Code": "CHN",
+  "team1Name": "United Arab Emirates",
+  "team2Name": "China PR",
+  "historicalAnalysis": "UAE and China have met in Asian competition.",
+  "keyStorylines": [
+    "Asian rivals",
+    "Both seeking rare World Cup success"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Ali Mabkhout",
+      "teamCode": "UAE",
+      "position": "Forward",
+      "reason": "UAE's star"
+    },
+    {
+      "name": "Wu Lei",
+      "teamCode": "CHN",
+      "position": "Forward",
+      "reason": "China's best"
+    }
+  ],
+  "tacticalPreview": "Both teams evenly matched. Could be decided by individual brilliance.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "0-0",
+    "confidence": 48,
+    "reasoning": "Two limited teams likely to cancel out."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Both nations rarely qualify for World Cups",
+    "UAE only World Cup was 1990"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_gha",
+  "firstName": "Otto",
+  "lastName": "Addo",
+  "commonName": "Otto Addo",
+  "dateOfBirth": "1975-06-09",
+  "nationality": "Germany",
+  "currentTeam": "Ghana",
+  "currentTeamCode": "GHA",
+  "photoUrl": "assets/managers/addo.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 8,
+  "previousTeams": ["Borussia Dortmund (Assistant)", "Ghana NT"],
+  "trophies": [],
+  "careerWins": 40,
+  "careerDraws": 20,
+  "careerLosses": 25,
+  "careerWinPercentage": 47,
+  "bio": "German-Ghanaian who played for Ghana at 2006 World Cup. Returned to lead the Black Stars with Bundesliga tactical expertise."
+}

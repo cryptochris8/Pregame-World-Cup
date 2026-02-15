@@ -1,0 +1,21 @@
+{
+  "id": "manager_nzl",
+  "firstName": "Darren",
+  "lastName": "Bazeley",
+  "commonName": "Darren Bazeley",
+  "dateOfBirth": "1972-10-04",
+  "nationality": "New Zealand",
+  "currentTeam": "New Zealand",
+  "currentTeamCode": "NZL",
+  "photoUrl": "assets/managers/bazeley.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Physical",
+  "yearsExperience": 10,
+  "previousTeams": ["Wellington Phoenix (Assistant)", "New Zealand U-teams"],
+  "trophies": [],
+  "careerWins": 50,
+  "careerDraws": 30,
+  "careerLosses": 40,
+  "careerWinPercentage": 42,
+  "bio": "New Zealand native who has progressed through the national team system. Understands Kiwi football DNA."
+}

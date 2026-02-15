@@ -1,0 +1,55 @@
+{
+  "team1Code": "AUS",
+  "team2Code": "USA",
+  "team1Name": "Australia",
+  "team2Name": "United States",
+  "historicalAnalysis": "The United States and Australia have met nine times, but remarkably never at a World Cup. This 2026 encounter represents a historic first: two English-speaking nations with similar football development trajectories meeting on the world's biggest stage.\n\nThe USA hold a 5-1-3 advantage in head-to-head meetings, but more significantly, this matchup represents the growth of football in non-traditional markets. Both nations have developed domestic leagues, produced world-class players, and established themselves as regular World Cup participants after years on the periphery.\n\nThe 2026 World Cup is particularly significant for the USA as co-hosts, while Australia continue their impressive growth since joining the Asian Football Confederation. Australia's run to the 2022 World Cup round of 16 showed they can compete against top opposition.",
+  "keyStorylines": [
+    "First-ever World Cup meeting between these two nations",
+    "USA hosting vs Australia's underdog mentality",
+    "Battle of the emerging football nations seeking global respect",
+    "Two countries with similar football growth trajectories meet at the summit"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "position": "Winger",
+      "reason": "The face of American soccer on home soil"
+    },
+    {
+      "name": "Mathew Ryan",
+      "teamCode": "AUS",
+      "position": "Goalkeeper",
+      "reason": "Experienced shot-stopper who has kept Australia in games against top sides"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "position": "Midfielder",
+      "reason": "Box-to-box energy and Champions League experience"
+    },
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "position": "Midfielder",
+      "reason": "Captain and leader who embodies Australian fighting spirit"
+    }
+  ],
+  "tacticalPreview": "This could be a more open encounter than other group games. Both teams prefer to play progressive football rather than sit deep. The USA's pressing and athleticism against Australia's organized 4-4-2 will create an entertaining tactical battle.\n\nAustralia's experience from the AFC, where they face compact Asian defenses, has improved their patience in possession. The USA's home advantage and crowd support will be significant psychological factors.",
+  "prediction": {
+    "predictedOutcome": "USA",
+    "predictedScore": "3-1",
+    "confidence": 70,
+    "reasoning": "Home advantage and superior individual quality give the USA a comfortable edge. Australia will compete but likely lack the firepower to truly threaten. This should be a confidence-building win for the hosts.",
+    "alternativeScenario": "If Australia frustrate early and score first, their defensive organization could make life difficult. A 1-1 draw isn't out of the question if things go wrong for the USA."
+  },
+  "pastEncountersSummary": "Nine friendlies with no World Cup meetings. The USA lead 5-1-3, including a 4-0 victory in Melbourne in 2015. The 2025 pre-World Cup friendly (2-1 USA) was the final preparation for this historic first World Cup encounter.",
+  "funFacts": [
+    "This will be the first-ever World Cup match between USA and Australia",
+    "Both nations have qualified for the World Cup via different confederations (CONCACAF and AFC)",
+    "Australia's 2022 World Cup round of 16 appearance was their first knockout stage since 2006",
+    "The USA and Australia have met in two consecutive pre-World Cup friendly windows"
+  ],
+  "isFirstMeeting": false
+}

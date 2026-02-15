@@ -1,0 +1,40 @@
+{
+  "team1Code": "QAT",
+  "team2Code": "UAE",
+  "team1Name": "Qatar",
+  "team2Name": "United Arab Emirates",
+  "historicalAnalysis": "Gulf rivals Qatar and UAE have intense regional rivalry.",
+  "keyStorylines": [
+    "Gulf derby",
+    "Qatar as 2022 hosts",
+    "Regional pride"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Qatar star"
+    },
+    {
+      "name": "Ali Mabkhout",
+      "teamCode": "UAE",
+      "position": "Forward",
+      "reason": "UAE's top scorer"
+    }
+  ],
+  "tacticalPreview": "Intense Gulf derby with regional pride at stake.",
+  "prediction": {
+    "predictedOutcome": "QAT",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Qatar's 2022 experience helps."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Gulf neighbors and rivals",
+    "Qatar hosted 2022 World Cup",
+    "Both nations are AFC members"
+  ],
+  "isFirstMeeting": false
+}

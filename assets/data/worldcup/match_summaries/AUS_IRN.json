@@ -1,0 +1,40 @@
+{
+  "team1Code": "AUS",
+  "team2Code": "IRN",
+  "team1Name": "Australia",
+  "team2Name": "Iran",
+  "historicalAnalysis": "Australia and Iran have been AFC rivals since Australia joined the confederation in 2006. Their matches are always competitive.",
+  "keyStorylines": [
+    "AFC rivals clash",
+    "Australia's 2022 momentum",
+    "Iran's quality"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "position": "Midfielder",
+      "reason": "Australian captain"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "position": "Striker",
+      "reason": "Iran's star striker"
+    }
+  ],
+  "tacticalPreview": "Tactical battle between AFC rivals. Taremi vs Australian defense key.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched AFC rivals."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Both teams are AFC powerhouses",
+    "Australia reached 2022 Round of 16",
+    "Taremi plays for Inter Milan"
+  ],
+  "isFirstMeeting": false
+}

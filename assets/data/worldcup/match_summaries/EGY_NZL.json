@@ -1,0 +1,55 @@
+{
+  "team1Code": "NZL",
+  "team2Code": "EGY",
+  "team1Name": "New Zealand",
+  "team2Name": "Egypt",
+  "historicalAnalysis": "New Zealand and Egypt meet for the first time at a World Cup. Egypt return to the tournament after missing 2022, with Mohamed Salah leading a talented squad. New Zealand are the perennial Oceania champions making their third World Cup appearance.\n\nEgypt's absence from 2022 was painful after reaching the 2018 tournament and the 2022 AFCON final. With Salah at his peak, this is a crucial opportunity to showcase Egyptian football.\n\nNew Zealand remain unbeaten in World Cup history (3 draws in 2010), and their organization and spirit make them difficult opponents for anyone.",
+  "keyStorylines": [
+    "Mohamed Salah leading Egypt's World Cup return",
+    "New Zealand's historic unbeaten World Cup record at stake",
+    "First ever meeting between these nations",
+    "African giants vs Oceania champions"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "Liverpool legend and one of the world's best"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "position": "Forward",
+      "reason": "Premier League-proven striker"
+    },
+    {
+      "name": "Mohamed Elneny",
+      "teamCode": "EGY",
+      "position": "Midfielder",
+      "reason": "Experienced Arsenal midfielder"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "position": "Defender",
+      "reason": "Empoli's attacking left-back"
+    }
+  ],
+  "tacticalPreview": "Egypt's 4-3-3 is built around Salah's brilliance on the right. Their attacking play flows through him, and his pace and finishing are world-class.\n\nNew Zealand's 4-4-2 is organized and disciplined. Wood's aerial presence creates opportunities, and they'll look to frustrate Egypt with set-piece threats.",
+  "prediction": {
+    "predictedOutcome": "EGY",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Salah's quality is the difference. Egypt's attacking firepower should be too much for New Zealand's defense.",
+    "alternativeScenario": "If New Zealand's organization holds and Wood scores, a 1-1 draw extending their unbeaten record is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "New Zealand are unbeaten in World Cup history (3 draws in 2010)",
+    "Salah has scored over 200 goals for Liverpool",
+    "Egypt have won the AFCON a record 7 times",
+    "Wood has scored 50+ Premier League goals"
+  ],
+  "isFirstMeeting": true
+}

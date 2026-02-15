@@ -1,0 +1,25 @@
+{
+  "playerName": "Pedri",
+  "fifaCode": "ESP",
+  "worldCupAppearances": 3,
+  "worldCupGoals": 0,
+  "worldCupAssists": 0,
+  "previousWorldCups": [2022],
+  "tournamentStats": [
+    {
+      "year": 2022,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Round of 16",
+      "keyMoment": "Young conductor of Spain's midfield"
+    }
+  ],
+  "worldCupAwards": [],
+  "memorableMoments": [
+    "Controlled midfield vs Costa Rica"
+  ],
+  "worldCupLegacyRating": 4,
+  "comparisonToLegend": "Ball control and vision compared to Xavi Hern\u00e1ndez",
+  "worldCup2026Prediction": "Expected to be Spain's midfield maestro in their title bid"
+}

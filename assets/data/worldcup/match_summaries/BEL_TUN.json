@@ -1,0 +1,52 @@
+{
+  "team1Code": "BEL",
+  "team2Code": "TUN",
+  "team1Name": "Belgium",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "Belgium and Tunisia have limited history. Belgium should have too much quality, but their 2022 World Cup disaster suggests they can struggle against organized African opposition.",
+  "keyStorylines": [
+    "Belgium must avoid another African upset",
+    "Tunisia seeking to cause shock",
+    "De Bruyne leading Belgium's attack"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "position": "Midfielder",
+      "reason": "Belgium's best player"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "position": "Midfielder",
+      "reason": "Tunisia's rising star"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "position": "Striker",
+      "reason": "Goal threat"
+    },
+    {
+      "name": "Wahbi Khazri",
+      "teamCode": "TUN",
+      "position": "Forward",
+      "reason": "Tunisia's experienced attacker"
+    }
+  ],
+  "tacticalPreview": "Belgium should dominate possession. Tunisia will defend deep and counter. Clinical finishing will be crucial for Belgium.",
+  "prediction": {
+    "predictedOutcome": "BEL",
+    "predictedScore": "3-1",
+    "confidence": 72,
+    "reasoning": "Belgium's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Tunisia have never reached World Cup knockout rounds",
+    "Belgium's golden generation is running out of time",
+    "First World Cup meeting"
+  ],
+  "isFirstMeeting": true
+}

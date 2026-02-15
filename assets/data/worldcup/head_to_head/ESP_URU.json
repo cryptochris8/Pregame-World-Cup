@@ -1,0 +1,49 @@
+{
+  "id": "ESP_URU",
+  "team1Code": "ESP",
+  "team2Code": "URU",
+  "totalMatches": 7,
+  "team1Wins": 3,
+  "team2Wins": 2,
+  "draws": 2,
+  "team1Goals": 10,
+  "team2Goals": 8,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 2,
+  "lastMatch": "2014-02-06",
+  "firstMeeting": "1950-07-09",
+  "notableMatches": [
+    {
+      "year": 1950,
+      "tournament": "World Cup",
+      "stage": "Final Round",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Sao Paulo, Brazil",
+      "description": "Dramatic draw in final round of 1950 World Cup"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ESP",
+      "location": "Doha, Qatar",
+      "description": "Spain edge Uruguay in pre-World Cup friendly"
+    },
+    {
+      "year": 2013,
+      "tournament": "Confederations Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ESP",
+      "location": "Recife, Brazil",
+      "description": "Pedro and Soldado give Spain victory"
+    }
+  ]
+}

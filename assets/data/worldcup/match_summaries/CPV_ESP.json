@@ -1,0 +1,55 @@
+{
+  "team1Code": "ESP",
+  "team2Code": "CPV",
+  "team1Name": "Spain",
+  "team2Name": "Cape Verde",
+  "historicalAnalysis": "This is a historic first meeting as Cape Verde make their World Cup debut. The tiny island nation of just 500,000 people has produced remarkable footballers, many playing in Portugal's top divisions, but this is their crowning achievement.\n\nSpain, the 2024 European Champions, enter as one of the favorites. Their young, dynamic squad destroyed England 2-1 in the Euro final with a performance that announced a new golden generation. Lamine Yamal, Nico Williams, and Pedri represent the future of Spanish football.\n\nFor Cape Verde, simply being here is a triumph. But their Portuguese-influenced technical football means they won't roll over—they'll compete with pride and try to create historic moments.",
+  "keyStorylines": [
+    "Cape Verde's historic World Cup debut against European champions",
+    "Spain's new golden generation seeking World Cup glory",
+    "The smallest nation ever to face Spain at a World Cup",
+    "Portuguese-influenced Cape Verde style vs Spanish tiki-taka"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Barcelona's teenage sensation and Euro 2024 star"
+    },
+    {
+      "name": "Ryan Mendes",
+      "teamCode": "CPV",
+      "position": "Winger",
+      "reason": "Cape Verde's most dangerous attacker"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "position": "Midfielder",
+      "reason": "Barcelona's midfield maestro pulling the strings"
+    },
+    {
+      "name": "Garry Rodrigues",
+      "teamCode": "CPV",
+      "position": "Forward",
+      "reason": "Experienced striker with European pedigree"
+    }
+  ],
+  "tacticalPreview": "Spain's 4-3-3 emphasizes possession and quick combinations. With Yamal and Williams on the wings, they have devastating pace to complement their technical mastery.\n\nCape Verde's 4-4-2 will be compact and organized. They'll look to frustrate Spain and hit on the counter, with set-pieces potentially their best route to goal.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "4-0",
+    "confidence": 88,
+    "reasoning": "Spain's quality is simply overwhelming. Their attacking firepower should prove too much for Cape Verde's defense.",
+    "alternativeScenario": "If Cape Verde defend heroically, Spain might only manage 2-0 with growing frustration."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Cape Verde has a population of about 500,000—smaller than many European cities",
+    "Many Cape Verdean players have Portuguese citizenship due to colonial ties",
+    "Lamine Yamal became the youngest ever European Championship scorer at 16",
+    "Spain have won 3 major tournaments in the last 20 years (Euro 2008, 2012, 2024; WC 2010)"
+  ],
+  "isFirstMeeting": true
+}

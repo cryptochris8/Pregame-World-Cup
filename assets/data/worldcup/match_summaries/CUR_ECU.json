@@ -1,0 +1,55 @@
+{
+  "team1Code": "ECU",
+  "team2Code": "CUR",
+  "team1Name": "Ecuador",
+  "team2Name": "Curaçao",
+  "historicalAnalysis": "This is a first ever meeting between Ecuador and Curaçao. Ecuador are experienced World Cup participants, having qualified for 4 of the last 5 tournaments. Curaçao make their historic debut as the smallest nation ever to qualify.\n\nEcuador's 2022 World Cup saw them beat Qatar and draw with the Netherlands before losing to Senegal. Their young, dynamic squad has only improved since.\n\nFor Curaçao, every moment is historic. Their journey from tiny Caribbean island to the World Cup stage is one of football's great underdog stories.",
+  "keyStorylines": [
+    "Ecuador's experienced squad vs World Cup debutants",
+    "South American quality vs Caribbean passion",
+    "First ever meeting between these nations",
+    "Ecuador seeking to build on 2022 progress"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Chelsea's world-class midfielder"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "position": "Midfielder",
+      "reason": "Curaçao's experienced Championship player"
+    },
+    {
+      "name": "Kendry Páez",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Teenage sensation signed by Chelsea"
+    },
+    {
+      "name": "Kenji Gorré",
+      "teamCode": "CUR",
+      "position": "Winger",
+      "reason": "Tricky winger with pace"
+    }
+  ],
+  "tacticalPreview": "Ecuador's 4-4-2 emphasizes quick passing and energetic pressing. Caicedo controls the midfield, while their forwards combine power with pace.\n\nCuraçao's 5-4-1 is purely defensive. They'll aim to stay in the game and create memorable moments through counter-attacks and set-pieces.",
+  "prediction": {
+    "predictedOutcome": "ECU",
+    "predictedScore": "3-0",
+    "confidence": 85,
+    "reasoning": "Ecuador's quality advantage is substantial. Their movement and technical ability should overwhelm Curaçao.",
+    "alternativeScenario": "If Curaçao defend bravely, a 1-0 Ecuador win with growing frustration is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Curaçao is a constituent country of the Netherlands with a population of 150,000",
+    "Ecuador's Caicedo is worth over £100 million",
+    "This is Curaçao's World Cup debut",
+    "Kendry Páez was 15 when signed by Chelsea"
+  ],
+  "isFirstMeeting": true
+}

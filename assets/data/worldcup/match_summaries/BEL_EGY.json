@@ -1,0 +1,55 @@
+{
+  "team1Code": "BEL",
+  "team2Code": "EGY",
+  "team1Name": "Belgium",
+  "team2Name": "Egypt",
+  "historicalAnalysis": "Belgium and Egypt have never met at a World Cup, making this 2026 encounter historic. Their three previous meetings have been friendlies, with Egypt surprisingly holding a 2-1 advantage including a notable 2-0 victory in Brussels in 2018 where Mohamed Salah was in brilliant form.\n\nBelgium's \"golden generation\"—De Bruyne, Lukaku, Courtois—is aging, and the 2026 World Cup may represent their final opportunity to deliver on years of promise. Ranked first in the world for an extended period and third-place finishers at the 2018 World Cup, Belgium have consistently underperformed relative to expectations in knockout rounds.\n\nEgypt, meanwhile, are Africa's most decorated nation (seven AFCON titles) but have struggled to make an impact at World Cups. Their 2018 appearance was their first in 28 years, and it ended in group stage elimination despite having Salah. The 2026 edition offers another chance.",
+  "keyStorylines": [
+    "Belgium's aging golden generation seeking one last shot at glory",
+    "Egypt hoping to finally make World Cup knockout rounds for first time since 1934",
+    "Mohamed Salah vs Kevin De Bruyne: Premier League superstars collide",
+    "First World Cup meeting between these football-passionate nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "position": "Midfielder",
+      "reason": "Belgium's orchestrator and one of the world's best playmakers"
+    },
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "position": "Forward",
+      "reason": "Egypt's talisman and one of the greatest African players ever"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "position": "Striker",
+      "reason": "Belgium's all-time leading scorer seeking World Cup goals"
+    },
+    {
+      "name": "Mohamed Elneny",
+      "teamCode": "EGY",
+      "position": "Midfielder",
+      "reason": "Experienced midfielder providing defensive stability"
+    }
+  ],
+  "tacticalPreview": "Belgium's 3-4-2-1 system maximizes De Bruyne's creativity and provides attacking width, but questions remain about their aging defensive line. Egypt typically play a pragmatic 4-2-3-1 centered around getting the ball to Salah in dangerous positions.\n\nThe key matchup is De Bruyne vs Egypt's midfield. If Belgium control the middle, their quality will tell. Egypt need to stay compact, frustrate Belgium, and hope Salah produces moments of magic. Set-pieces could be decisive.",
+  "prediction": {
+    "predictedOutcome": "BEL",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Belgium's overall squad quality remains superior despite aging. However, their 2022 World Cup disaster (group stage exit) raises questions about mentality. Egypt's 2-0 win in 2018 shows they can beat Belgium.",
+    "alternativeScenario": "If Salah is at his best and Belgium's defense struggles, Egypt could pull off a shock. A disciplined 1-0 Egypt win is plausible."
+  },
+  "pastEncountersSummary": "Three meetings, all friendlies. Egypt surprisingly lead 2-1 in head-to-head. Their 2-0 victory in Brussels in 2018, with Salah orchestrating, showed they can match Belgium. The 2022 pre-World Cup friendly (2-1 Belgium) was more recent.",
+  "funFacts": [
+    "This is the first World Cup meeting between Belgium and Egypt",
+    "Egypt's 2-0 win over Belgium in 2018 came months before both teams' World Cup campaigns",
+    "Belgium were ranked #1 in FIFA rankings longer than any team other than Brazil",
+    "Egypt's last World Cup knockout win came in 1934, when they beat Hungary 4-2"
+  ],
+  "isFirstMeeting": false
+}

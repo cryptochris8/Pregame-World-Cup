@@ -1,0 +1,55 @@
+{
+  "team1Code": "NOR",
+  "team2Code": "FRA",
+  "team1Name": "Norway",
+  "team2Name": "France",
+  "historicalAnalysis": "Norway and France have met at the World Cup before—Norway famously beat France 2-1 at the 1998 World Cup in Marseille, one of the biggest upsets of that tournament. France went on to win that World Cup, but the Norwegian victory remains iconic.\n\nFrance are the 2022 runners-up and 2018 champions, with Mbappé leading one of the world's most talented squads. Les Bleus remain among the favorites despite their final loss to Argentina.\n\nNorway return to the World Cup for the first time since 1998, with Haaland's goal-scoring prowess their main weapon. This is a dream matchup for Norwegian fans.",
+  "keyStorylines": [
+    "Rematch of 1998 World Cup upset",
+    "Haaland vs Mbappé: two of the world's best",
+    "Norway's first World Cup since 1998",
+    "France seeking revenge for historic defeat"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappé",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "World's best player and France captain"
+    },
+    {
+      "name": "Erling Haaland",
+      "teamCode": "NOR",
+      "position": "Forward",
+      "reason": "Record-breaking Manchester City striker"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "teamCode": "FRA",
+      "position": "Midfielder",
+      "reason": "Real Madrid's midfield anchor"
+    },
+    {
+      "name": "Martin Ødegaard",
+      "teamCode": "NOR",
+      "position": "Midfielder",
+      "reason": "Arsenal captain"
+    }
+  ],
+  "tacticalPreview": "France's 4-3-3 is built around Mbappé's devastating pace and movement. Their quality throughout the squad makes them favorites against anyone.\n\nNorway's 4-3-3 aims to maximize Haaland's goal threat. Ødegaard's creativity provides the service, with the team organized to defend and counter.",
+  "prediction": {
+    "predictedOutcome": "FRA",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "France's overall squad depth and quality should prove decisive, but Haaland can score against anyone.",
+    "alternativeScenario": "If Haaland dominates and Norway's organization holds, a shock 2-2 draw or Norway win is possible."
+  },
+  "pastEncountersSummary": "Norway beat France 2-1 at the 1998 World Cup in a famous upset.",
+  "funFacts": [
+    "Norway's 1998 World Cup win over France is one of the tournament's biggest upsets",
+    "Mbappé scored a hat-trick in the 2022 World Cup final (in a losing effort)",
+    "Haaland scored 52 goals in his first Man City season",
+    "This is Norway's first World Cup in 28 years"
+  ],
+  "isFirstMeeting": false
+}

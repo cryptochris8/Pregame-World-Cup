@@ -1,0 +1,21 @@
+{
+  "id": "manager_nga",
+  "firstName": "Eric Chelle",
+  "lastName": "Chelle",
+  "commonName": "Eric Chelle Chelle",
+  "dateOfBirth": "1977-01-14",
+  "nationality": "Mali",
+  "currentTeam": "Nigeria",
+  "currentTeamCode": "NGA",
+  "photoUrl": "assets/managers/chelle.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 8,
+  "previousTeams": ["Mali NT", "MC Oran", "Algerian clubs"],
+  "trophies": [],
+  "careerWins": 60,
+  "careerDraws": 30,
+  "careerLosses": 35,
+  "careerWinPercentage": 48,
+  "bio": "French-Malian coach with experience in African football. Tasked with maximizing Nigeria talented squad."
+}

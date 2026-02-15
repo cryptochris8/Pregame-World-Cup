@@ -1,0 +1,59 @@
+{
+  "id": "MEX_USA",
+  "team1Code": "MEX",
+  "team2Code": "USA",
+  "totalMatches": 76,
+  "team1Wins": 36,
+  "team2Wins": 23,
+  "draws": 17,
+  "team1Goals": 139,
+  "team2Goals": 99,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 2,
+  "lastMatch": "2024-10-15",
+  "firstMeeting": "1934-05-24",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Mexico City, Mexico",
+      "description": "Crucial qualifier draw at Azteca"
+    },
+    {
+      "year": 2021,
+      "tournament": "Nations League Final",
+      "stage": null,
+      "team1Score": 2,
+      "team2Score": 3,
+      "winnerCode": "USA",
+      "location": "Denver, USA",
+      "description": "Pulisic penalty wins it in extra time"
+    },
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "USA",
+      "location": "Jeonju, South Korea",
+      "description": "Dos a Cero - USA's famous World Cup upset"
+    },
+    {
+      "year": 1934,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
+      "team1Score": 4,
+      "team2Score": 2,
+      "winnerCode": "MEX",
+      "location": "Rome, Italy",
+      "description": "First ever World Cup meeting"
+    }
+  ]
+}

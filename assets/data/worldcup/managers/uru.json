@@ -1,0 +1,21 @@
+{
+  "id": "manager_uru",
+  "firstName": "Marcelo",
+  "lastName": "Bielsa",
+  "commonName": "Marcelo Bielsa",
+  "dateOfBirth": "1955-07-21",
+  "nationality": "Argentina",
+  "currentTeam": "Uruguay",
+  "currentTeamCode": "URU",
+  "photoUrl": "assets/managers/bielsa.png",
+  "preferredFormation": "3-3-1-3",
+  "coachingStyle": "High Press",
+  "yearsExperience": 35,
+  "previousTeams": ["Newell Old Boys", "Atlas", "America", "Velez", "Espanyol", "Argentina NT", "Chile NT", "Athletic Bilbao", "Marseille", "Lille", "Leeds United"],
+  "trophies": ["Olympic Gold 2004", "Copa America 2024 (3rd)"],
+  "careerWins": 350,
+  "careerDraws": 120,
+  "careerLosses": 180,
+  "careerWinPercentage": 54,
+  "bio": "Revolutionary coach known as El Loco for his tactical innovation and demanding training methods. One of the most influential coaches in modern football."
+}

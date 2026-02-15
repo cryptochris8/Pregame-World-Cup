@@ -1,0 +1,55 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "AUT",
+  "team1Name": "Argentina",
+  "team2Name": "Austria",
+  "historicalAnalysis": "Argentina and Austria have met 7 times, with Argentina winning 5. Their most notable World Cup encounter was the 1978 group stage in Argentina, where the hosts won 2-1 en route to their first World Cup title.\n\nArgentina enter as reigning World Cup and Copa América champions, with Messi seeking one final moment of glory. This is likely his last World Cup, and the team is determined to send him off in style.\n\nAustria have improved dramatically under Rangnick's gegenpressing system. Their Nations League performances have shown they can compete with Europe's best, and Alaba's leadership is invaluable.",
+  "keyStorylines": [
+    "Messi's last World Cup vs Rangnick's pressing machine",
+    "Reigning champions vs European dark horses",
+    "Argentina's historical advantage in this fixture",
+    "Two contrasting styles: Argentine flair vs Austrian intensity"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The GOAT in his final World Cup"
+    },
+    {
+      "name": "David Alaba",
+      "teamCode": "AUT",
+      "position": "Defender",
+      "reason": "Real Madrid legend and Austrian captain"
+    },
+    {
+      "name": "Julián Álvarez",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "Man City striker who starred in 2022"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "teamCode": "AUT",
+      "position": "Midfielder",
+      "reason": "Dortmund's energetic midfielder"
+    }
+  ],
+  "tacticalPreview": "Argentina's 4-3-3 under Scaloni is built on collective excellence. Messi still provides moments of magic, but Álvarez, Mac Allister, and Enzo Fernández offer goals and creativity.\n\nAustria's 4-2-3-1 emphasizes intense pressing and quick transitions. Their energy could disrupt Argentina's rhythm, with Sabitzer and Laimer providing box-to-box intensity.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "Argentina's winning mentality and superior quality should prove decisive. Austria will compete but lack the cutting edge against the champions.",
+    "alternativeScenario": "If Austria's pressing disrupts Argentina's buildup and Alaba marshals the defense, a 1-1 draw is possible."
+  },
+  "pastEncountersSummary": "7 meetings with Argentina winning 5. The 1978 World Cup match (2-1 Argentina) came during their title-winning campaign.",
+  "funFacts": [
+    "Messi has won more individual awards than any player in history",
+    "Austria's best World Cup finish was third place in 1954",
+    "Argentina's 2022 World Cup win was their third title",
+    "Alaba has won more than 20 major trophies"
+  ],
+  "isFirstMeeting": false
+}

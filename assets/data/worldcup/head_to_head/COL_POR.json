@@ -1,0 +1,18 @@
+{
+  "id": "COL_POR",
+  "team1Code": "COL",
+  "team2Code": "POR",
+  "totalMatches": 0,
+  "team1Wins": 0,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 0,
+  "team2Goals": 0,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": null,
+  "firstMeeting": null,
+  "notableMatches": []
+}

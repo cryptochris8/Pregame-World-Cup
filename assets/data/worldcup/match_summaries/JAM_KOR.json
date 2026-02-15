@@ -1,0 +1,39 @@
+{
+  "team1Code": "KOR",
+  "team2Code": "JAM",
+  "team1Name": "Korea Republic",
+  "team2Name": "Jamaica",
+  "historicalAnalysis": "Korea and Jamaica have never met at a World Cup. Korea are favorites.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Son seeking goals",
+    "Jamaica underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "World-class striker"
+    },
+    {
+      "name": "Leon Bailey",
+      "teamCode": "JAM",
+      "position": "Winger",
+      "reason": "Jamaica's star"
+    }
+  ],
+  "tacticalPreview": "Korea should control the game. Son will be the main threat.",
+  "prediction": {
+    "predictedOutcome": "KOR",
+    "predictedScore": "3-1",
+    "confidence": 72,
+    "reasoning": "Korea's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Son is one of Asia's greatest ever players"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ARG_BRA",
+  "team1Code": "ARG",
+  "team2Code": "BRA",
+  "totalMatches": 111,
+  "team1Wins": 40,
+  "team2Wins": 46,
+  "draws": 25,
+  "team1Goals": 163,
+  "team2Goals": 168,
+  "worldCupMatches": 6,
+  "team1WorldCupWins": 3,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 1,
+  "lastMatch": "2024-11-19",
+  "firstMeeting": "1914-09-20",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 3,
+      "team2Score": 3,
+      "winnerCode": "ARG",
+      "location": "Lusail, Qatar",
+      "description": "Argentina won 4-2 on penalties, Messi crowned"
+    },
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Brasilia, Brazil",
+      "description": "Higuain goal in hostile territory"
+    },
+    {
+      "year": 1990,
+      "tournament": "World Cup",
+      "stage": "Round of 16",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Turin, Italy",
+      "description": "Caniggia stunner eliminates Brazil"
+    },
+    {
+      "year": 1982,
+      "tournament": "World Cup",
+      "stage": "Second Round",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "BRA",
+      "location": "Barcelona, Spain",
+      "description": "Zico masterclass, Maradona sent off"
+    },
+    {
+      "year": 1978,
+      "tournament": "World Cup",
+      "stage": "Second Round",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Rosario, Argentina",
+      "description": "Tense draw in Argentina's World Cup run"
+    },
+    {
+      "year": 1974,
+      "tournament": "World Cup",
+      "stage": "Second Round",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "BRA",
+      "location": "Hanover, Germany",
+      "description": "Rivellino and Jairzinho goals"
+    }
+  ]
+}

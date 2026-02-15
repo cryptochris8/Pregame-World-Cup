@@ -1,0 +1,52 @@
+{
+  "team1Code": "MAR",
+  "team2Code": "NGA",
+  "team1Name": "Morocco",
+  "team2Name": "Nigeria",
+  "historicalAnalysis": "Morocco and Nigeria are African rivals with proud football traditions. Morocco's 2022 World Cup heroics have elevated their status.",
+  "keyStorylines": [
+    "African powerhouses clash",
+    "Morocco's momentum vs Nigeria's talent",
+    "Hakimi vs Osimhen"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Right-Back",
+      "reason": "PSG star"
+    },
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "position": "Striker",
+      "reason": "One of world's best strikers"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "position": "Winger",
+      "reason": "Creative genius"
+    },
+    {
+      "name": "Samuel Chukwueze",
+      "teamCode": "NGA",
+      "position": "Winger",
+      "reason": "Nigerian talent"
+    }
+  ],
+  "tacticalPreview": "Morocco's organization vs Nigeria's individual brilliance. Osimhen must be contained.",
+  "prediction": {
+    "predictedOutcome": "MAR",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Morocco's 2022 experience gives edge."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Morocco made 2022 semi-finals",
+    "Osimhen is one of world's most valuable players",
+    "Nigeria have reached Round of 16 multiple times"
+  ],
+  "isFirstMeeting": false
+}

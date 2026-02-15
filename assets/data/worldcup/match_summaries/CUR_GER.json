@@ -1,0 +1,55 @@
+{
+  "team1Code": "GER",
+  "team2Code": "CUR",
+  "team1Name": "Germany",
+  "team2Name": "Curaçao",
+  "historicalAnalysis": "This is a David vs Goliath matchup of historic proportions. Germany, four-time World Cup champions, face Curaçao, a tiny Caribbean island nation making their World Cup debut with a population of just 150,000.\n\nGermany's recent World Cup performances have been disappointing—group stage exits in 2018 and 2022 have shaken German football's foundations. Die Mannschaft are desperate to restore their reputation on the world stage.\n\nCuraçao's qualification is the ultimate underdog story. Competing against nations with far greater resources, they've emerged from CONCACAF through sheer determination and excellent coaching. This is the culmination of years of development in Dutch Caribbean football.",
+  "keyStorylines": [
+    "Curaçao's historic World Cup debut against the four-time champions",
+    "Germany seeking redemption after consecutive group stage exits",
+    "Population of 150,000 vs football superpower",
+    "The smallest nation ever to face Germany at a World Cup"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Leverkusen's wonderkid leading Germany's new generation"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "position": "Midfielder",
+      "reason": "Curaçao's most experienced player with Championship pedigree"
+    },
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayern Munich's dazzling talent and Germany's creative spark"
+    },
+    {
+      "name": "Kenji Gorré",
+      "teamCode": "CUR",
+      "position": "Winger",
+      "reason": "Tricky winger who can cause problems on the counter"
+    }
+  ],
+  "tacticalPreview": "Germany's 4-2-3-1 unleashes Wirtz and Musiala in the creative zones, with Havertz providing the focal point. Expect waves of possession and attacking intent.\n\nCuraçao will park the bus in a deep 5-4-1, looking to frustrate Germany and hit on rare counter-attacks. Their discipline and concentration for 90 minutes will be tested to the maximum.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "4-0",
+    "confidence": 90,
+    "reasoning": "The gulf in quality is simply too large. Germany should dominate possession and create numerous chances against Curaçao's defense.",
+    "alternativeScenario": "If Curaçao defend heroically and Germany are wasteful, a 2-0 win with German frustration is possible."
+  },
+  "pastEncountersSummary": "First ever meeting between these nations at any level.",
+  "funFacts": [
+    "Curaçao has a population of approximately 150,000—smaller than most World Cup stadiums",
+    "Germany have scored in 30 consecutive World Cup group matches",
+    "Curaçao are a constituent country of the Netherlands",
+    "This is Germany's 20th World Cup appearance, tying Brazil for most"
+  ],
+  "isFirstMeeting": true
+}

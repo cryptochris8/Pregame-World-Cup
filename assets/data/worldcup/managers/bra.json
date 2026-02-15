@@ -1,0 +1,21 @@
+{
+  "id": "manager_bra",
+  "firstName": "Carlo",
+  "lastName": "Ancelotti",
+  "commonName": "Carlo Ancelotti",
+  "dateOfBirth": "1959-06-10",
+  "nationality": "Italy",
+  "currentTeam": "Brazil",
+  "currentTeamCode": "BRA",
+  "photoUrl": "assets/managers/ancelotti.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 30,
+  "previousTeams": ["Reggiana", "Parma", "Juventus", "AC Milan", "Chelsea", "PSG", "Real Madrid", "Bayern Munich", "Napoli", "Everton"],
+  "trophies": ["UEFA Champions League x5", "Serie A x1", "La Liga x2", "Premier League x1", "Ligue 1 x1"],
+  "careerWins": 650,
+  "careerDraws": 220,
+  "careerLosses": 180,
+  "careerWinPercentage": 62,
+  "bio": "One of the most decorated coaches in football history. The Italian maestro brings elite experience to lead Brazil to World Cup glory on US soil."
+}

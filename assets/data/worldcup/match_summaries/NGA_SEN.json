@@ -1,0 +1,52 @@
+{
+  "team1Code": "SEN",
+  "team2Code": "NGA",
+  "team1Name": "Senegal",
+  "team2Name": "Nigeria",
+  "historicalAnalysis": "Senegal and Nigeria are West African rivals with rich football histories. Both nations have produced legendary players.",
+  "keyStorylines": [
+    "West African derby",
+    "AFCON champions vs Super Eagles",
+    "Mané vs Osimhen"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Sadio Mané",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "African legend"
+    },
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "position": "Striker",
+      "reason": "World-class striker"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "position": "Defender",
+      "reason": "Defensive leader"
+    },
+    {
+      "name": "Wilfred Ndidi",
+      "teamCode": "NGA",
+      "position": "Midfielder",
+      "reason": "Midfield anchor"
+    }
+  ],
+  "tacticalPreview": "Physical, intense West African derby. Mané vs Osimhen battle will be fascinating.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Intense rivalry likely to produce draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Senegal won AFCON 2022",
+    "Nigeria have most AFCON titles",
+    "West African rivals"
+  ],
+  "isFirstMeeting": false
+}

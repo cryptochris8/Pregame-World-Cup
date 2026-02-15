@@ -1,0 +1,55 @@
+{
+  "team1Code": "ECU",
+  "team2Code": "CHI",
+  "team1Name": "Ecuador",
+  "team2Name": "Chile",
+  "historicalAnalysis": "Ecuador and Chile have faced each other dozens of times in World Cup qualifiers, creating a familiar rivalry. Chile's dominance during their Golden Generation (2015-2016) included victories over Ecuador, but the balance has shifted as Chile's stars have aged.\n\nEcuador's current generation, led by Moisés Caicedo and Piero Hincapié, represents their most talented ever. Chile, returning to the World Cup after missing 2018 and 2022, are a team in transition.\n\nThis match pits Ecuador's rising stars against Chile's experienced but declining core.",
+  "keyStorylines": [
+    "Ecuador's best generation vs Chile's fading golden era",
+    "Caicedo showcasing his talent against South American rivals",
+    "Chile seeking to prove reports of their decline premature",
+    "Battle for CONMEBOL pride"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "World-class midfielder driving Ecuador"
+    },
+    {
+      "name": "Alexis Sánchez",
+      "teamCode": "CHI",
+      "position": "Forward",
+      "reason": "Chile's all-time leading scorer"
+    },
+    {
+      "name": "Piero Hincapié",
+      "teamCode": "ECU",
+      "position": "Defender",
+      "reason": "Bayer Leverkusen's classy defender"
+    },
+    {
+      "name": "Ben Brereton Díaz",
+      "teamCode": "CHI",
+      "position": "Striker",
+      "reason": "England-born striker providing goal threat"
+    }
+  ],
+  "tacticalPreview": "Ecuador will control midfield through Caicedo and build patiently. Chile will press high hoping to force errors. Ecuador's composure vs Chile's intensity will define the match.",
+  "prediction": {
+    "predictedOutcome": "ECU",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Ecuador's younger, more athletic squad should edge a tight contest against aging Chile.",
+    "alternativeScenario": "Chile's experience and Sánchez magic could produce a surprise 2-1 victory."
+  },
+  "pastEncountersSummary": "Dozens of meetings in CONMEBOL qualifying with Chile historically dominant, but Ecuador's recent form suggests the balance has shifted.",
+  "funFacts": [
+    "Chile missed both the 2018 and 2022 World Cups",
+    "Ecuador's Enner Valencia has scored in multiple World Cups",
+    "Caicedo is one of the world's most expensive midfielders",
+    "This will be Ecuador's 5th World Cup appearance"
+  ],
+  "isFirstMeeting": false
+}

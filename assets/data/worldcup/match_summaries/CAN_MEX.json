@@ -1,0 +1,55 @@
+{
+  "team1Code": "MEX",
+  "team2Code": "CAN",
+  "team1Name": "Mexico",
+  "team2Name": "Canada",
+  "historicalAnalysis": "Mexico and Canada's rivalry has intensified in recent years as Canada emerged as a genuine CONCACAF force. Historically, Mexico dominated completely—but the tables turned dramatically during 2022 World Cup qualifying when Canada defeated Mexico for the first time in over two decades.\n\nMexico's football pedigree is unmatched in CONCACAF: 17 World Cup appearances, quarter-final finishes in 1970 and 1986, and a tradition of producing technically gifted players. Canada, by contrast, are still building their legacy.\n\nAs co-hosts, both nations face immense pressure. Mexico's fans demand deep tournament runs, while Canada seek to prove their qualification wasn't a fluke. This match could determine who tops Group A.",
+  "keyStorylines": [
+    "Co-hosts battle for Group A supremacy",
+    "Mexico seeking revenge for 2022 qualifying defeat",
+    "Canada looking to establish themselves among CONCACAF elite",
+    "First World Cup meeting between these neighboring nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "position": "Winger",
+      "reason": "Mexico's most explosive attacker"
+    },
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "position": "Left-Back",
+      "reason": "World-class talent and Canada's talisman"
+    },
+    {
+      "name": "Santiago Giménez",
+      "teamCode": "MEX",
+      "position": "Striker",
+      "reason": "Prolific Feyenoord striker"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "position": "Striker",
+      "reason": "Clinical finisher with European pedigree"
+    }
+  ],
+  "tacticalPreview": "Mexico's technical midfield will try to control possession against Canada's athletic pressing. Davies' pace on the counter is Canada's biggest weapon. Set pieces could be crucial.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Mexico's tournament experience and technical quality give them an edge, but Canada's improvement makes this close.",
+    "alternativeScenario": "Canada's pressing could overwhelm Mexico, leading to a shock 2-1 Canadian victory."
+  },
+  "pastEncountersSummary": "Mexico dominated historically, but Canada's 2-1 win in 2022 qualifying changed the narrative. Limited World Cup history between them.",
+  "funFacts": [
+    "First World Cup meeting between Mexico and Canada",
+    "Canada's 2022 qualifying win ended a 34-year winless streak against Mexico",
+    "Mexico has appeared in 17 World Cups, Canada in just 2",
+    "Both nations are co-hosting the World Cup"
+  ],
+  "isFirstMeeting": true
+}

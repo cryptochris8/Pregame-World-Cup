@@ -1,0 +1,45 @@
+{
+  "playerName": "Antoine Griezmann",
+  "fifaCode": "FRA",
+  "worldCupAppearances": 14,
+  "worldCupGoals": 4,
+  "worldCupAssists": 4,
+  "previousWorldCups": [2014, 2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2014,
+      "matches": 5,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Quarter-Finals"
+    },
+    {
+      "year": 2018,
+      "matches": 7,
+      "goals": 4,
+      "assists": 2,
+      "stage": "Winner",
+      "keyMoment": "Goal in final, key to France's success"
+    },
+    {
+      "year": 2022,
+      "matches": 7,
+      "goals": 0,
+      "assists": 2,
+      "stage": "Final",
+      "keyMoment": "Orchestrated from midfield, reinvented role"
+    }
+  ],
+  "worldCupAwards": [
+    "World Cup Winner 2018",
+    "Bronze Ball 2018"
+  ],
+  "memorableMoments": [
+    "Free kick in World Cup final 2018",
+    "Crucial goals in knockout stages 2018",
+    "Selfless midfield role in 2022"
+  ],
+  "worldCupLegacyRating": 8,
+  "comparisonToLegend": "Complete attacker like David Trezeguet with better playmaking",
+  "worldCup2026Prediction": "Veteran presence expected to guide younger players"
+}

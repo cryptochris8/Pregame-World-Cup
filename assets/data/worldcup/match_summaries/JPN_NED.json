@@ -1,0 +1,55 @@
+{
+  "team1Code": "JPN",
+  "team2Code": "NED",
+  "team1Name": "Japan",
+  "team2Name": "Netherlands",
+  "historicalAnalysis": "The Netherlands and Japan's World Cup history is brief but significant. Their only meeting came during the 2010 World Cup in South Africa, when Wesley Sneijder's goal gave the Dutch a narrow 1-0 victory en route to the final. That tournament saw the Netherlands play some of their most effective football, ultimately falling to Spain in a controversial final.\n\nJapan, meanwhile, have transformed since 2010. Their 2022 World Cup campaign saw them defeat both Germany (2-1) and Spain (2-1) in the group stage, stunning the football world with their tactical sophistication and relentless pressing. The Samurai Blue have evolved from plucky underdogs to genuine contenders.\n\nThis 2026 encounter pits Dutch tradition and individual brilliance against Japanese collective excellence. It's a fascinating study in contrasting footballing philosophies: the Netherlands' Total Football heritage versus Japan's organized pressing and transition game.",
+  "keyStorylines": [
+    "Japan seeking to prove 2022 victories over Germany and Spain were no fluke",
+    "Netherlands rebuilding after missing 2018 World Cup and struggling in 2022",
+    "Clash of philosophies: Dutch individual brilliance vs Japanese collective pressing",
+    "First World Cup meeting since Sneijder's winner in 2010"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "position": "Winger",
+      "reason": "Japan's most creative player who can unlock any defense"
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "position": "Forward",
+      "reason": "Netherlands' goal threat who shone at the 2022 World Cup"
+    },
+    {
+      "name": "Wataru Endo",
+      "teamCode": "JPN",
+      "position": "Midfielder",
+      "reason": "Liverpool's midfield destroyer who anchors Japan's pressing"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "position": "Defender",
+      "reason": "World-class center-back and Dutch captain"
+    }
+  ],
+  "tacticalPreview": "Japan's high-pressing 4-3-3 was devastatingly effective against Germany and Spain in 2022. They will look to suffocate the Netherlands in midfield and force turnovers in dangerous areas. The Dutch 4-3-3 prioritizes technical quality and building from the back, which could play into Japan's hands.\n\nThe key for the Netherlands is to bypass Japan's press and find spaces in transition. Van Dijk's distribution and Gakpo's movement will be crucial. Japan must maintain intensity for 90 minutes—their 2022 victories came from sustained pressure and clinical finishing.",
+  "prediction": {
+    "predictedOutcome": "NED",
+    "predictedScore": "2-1",
+    "confidence": 52,
+    "reasoning": "The Netherlands have more individual quality, but Japan's 2022 victories show they can beat anyone. This is essentially a coin flip, with Dutch experience and quality giving a marginal edge.",
+    "alternativeScenario": "Japan's pressing could overwhelm the Dutch as it did Germany and Spain. A 2-1 Japan victory would confirm their status as a top-tier nation."
+  },
+  "pastEncountersSummary": "Only three meetings, all friendly except the 2010 World Cup. Sneijder's goal in that group stage match was part of the Dutch run to the final. Japan have yet to beat the Netherlands but enter this match with more momentum than ever before.",
+  "funFacts": [
+    "Japan's 2022 World Cup wins over Germany and Spain were both 2-1 comebacks",
+    "The Netherlands' 2010 team reached the final, losing 1-0 to Spain in extra time",
+    "Wesley Sneijder scored 5 goals at the 2010 World Cup, finishing as top scorer equal",
+    "Japan and the Netherlands have never drawn in their three meetings"
+  ],
+  "isFirstMeeting": false
+}

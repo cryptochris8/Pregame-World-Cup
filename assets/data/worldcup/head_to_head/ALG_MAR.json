@@ -1,0 +1,29 @@
+{
+  "id": "ALG_MAR",
+  "team1Code": "ALG",
+  "team2Code": "MAR",
+  "totalMatches": 35,
+  "team1Wins": 15,
+  "team2Wins": 7,
+  "draws": 13,
+  "team1Goals": 42,
+  "team2Goals": 31,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-01-13",
+  "firstMeeting": "1957-01-01",
+  "notableMatches": [
+    {
+      "year": 2019,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "MAR",
+      "location": "Cairo, Egypt",
+      "description": "Morocco shock Algeria"
+    }
+  ]
+}

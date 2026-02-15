@@ -1,0 +1,39 @@
+{
+  "id": "MAR_POR",
+  "team1Code": "MAR",
+  "team2Code": "POR",
+  "totalMatches": 5,
+  "team1Wins": 2,
+  "team2Wins": 3,
+  "draws": 0,
+  "team1Goals": 5,
+  "team2Goals": 8,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-12-10",
+  "firstMeeting": "1986-06-11",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "MAR",
+      "location": "Doha, Qatar",
+      "description": "Morocco reach semi-finals, first African team"
+    },
+    {
+      "year": 1986,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "MAR",
+      "location": "Guadalajara, Mexico",
+      "description": "Morocco upset Portugal"
+    }
+  ]
+}

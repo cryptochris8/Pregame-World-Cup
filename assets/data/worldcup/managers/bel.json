@@ -1,0 +1,21 @@
+{
+  "id": "manager_bel",
+  "firstName": "Domenico",
+  "lastName": "Tedesco",
+  "commonName": "Domenico Tedesco",
+  "dateOfBirth": "1985-09-12",
+  "nationality": "Italy",
+  "currentTeam": "Belgium",
+  "currentTeamCode": "BEL",
+  "photoUrl": "assets/managers/tedesco.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 8,
+  "previousTeams": ["Stuttgart", "Schalke 04", "RB Leipzig"],
+  "trophies": [],
+  "careerWins": 120,
+  "careerDraws": 50,
+  "careerLosses": 60,
+  "careerWinPercentage": 52,
+  "bio": "Young Italian-German coach tasked with transitioning Belgium to a new generation after their golden era."
+}

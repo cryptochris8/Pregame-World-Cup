@@ -1,0 +1,55 @@
+{
+  "team1Code": "ENG",
+  "team2Code": "GHA",
+  "team1Name": "England",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "England and Ghana have met only once: a 2011 friendly at Wembley that ended 1-1. Andy Carroll opened the scoring for England, but Asamoah Gyan's stoppage-time equalizer earned Ghana a draw. That single meeting makes this 2026 World Cup encounter virtually a blank slate.\n\nHowever, England fans will forever associate Ghana with 2010. In that World Cup quarter-final, Luis Suárez's deliberate handball on the line denied Ghana a place in the semi-finals. Gyan's subsequent penalty miss meant Ghana—and by extension, Africa—were denied a historic first semi-final appearance. England, meanwhile, suffered their own 2010 trauma: a 4-1 demolition by Germany in the round of 16, compounded by Frank Lampard's wrongly disallowed goal.\n\nGhana have produced some of English football's finest imports: Michael Essien, Sulley Muntari, and more recently Thomas Partey. The connection between these nations runs deep through the Premier League.",
+  "keyStorylines": [
+    "First-ever World Cup meeting between England and Ghana",
+    "Ghana seeking to advance past the group stage for the first time since 2010",
+    "Premier League connections: Multiple Ghana players ply their trade in England",
+    "Can Ghana's next generation match the 2010 squad's heroics?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "England's best player and potential tournament star"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal's midfield anchor bringing Premier League class to Ghana"
+    },
+    {
+      "name": "Phil Foden",
+      "teamCode": "ENG",
+      "position": "Midfielder/Winger",
+      "reason": "Creative spark who has evolved into a world-class player"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Dynamic, skilful attacker who impressed at the 2022 World Cup"
+    }
+  ],
+  "tacticalPreview": "England's 4-3-3 system is built around Bellingham's dynamism and the attacking trio of Foden, Kane, and Saka. Their pressing and quick transitions are dangerous against any opponent.\n\nGhana typically employ a 4-2-3-1 with Partey shielding the defense and Kudus creating from advanced positions. Their key is to stay organized and hit England on the break. Set-pieces will be crucial given Ghana's aerial threat.",
+  "prediction": {
+    "predictedOutcome": "ENG",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "England's squad depth and home continent advantage make them clear favorites. Ghana's quality has dipped since their 2010 peak, though individual talents like Kudus could cause problems.",
+    "alternativeScenario": "If Partey and Kudus dominate midfield and Ghana score first, a shock draw or even victory is possible. England's tournament nerves could resurface."
+  },
+  "pastEncountersSummary": "Just one meeting: a 1-1 friendly draw at Wembley in 2011. Carroll's opener was cancelled out by Gyan's late equalizer. Both nations will enter this World Cup encounter with limited direct knowledge of each other.",
+  "funFacts": [
+    "This is the first World Cup meeting between England and Ghana",
+    "Ghana's 2010 quarter-final loss to Uruguay remains one of football's most controversial moments",
+    "Thomas Partey was born in Ghana but has played his entire club career in Europe",
+    "Asamoah Gyan remains Ghana's all-time leading goalscorer with 51 goals"
+  ],
+  "isFirstMeeting": false
+}

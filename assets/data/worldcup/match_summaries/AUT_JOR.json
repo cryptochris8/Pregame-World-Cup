@@ -1,0 +1,55 @@
+{
+  "team1Code": "AUT",
+  "team2Code": "JOR",
+  "team1Name": "Austria",
+  "team2Name": "Jordan",
+  "historicalAnalysis": "This is a historic first meeting between Austria and Jordan. Austria have been one of Europe's most improved teams, finishing top of their Nations League group and playing attractive football under Ralf Rangnick's gegenpressing system.\n\nJordan's qualification is a breakthrough for Asian football. As 2023 AFC Asian Cup runners-up (losing to Qatar in the final), they've proven their ability to compete with the continent's best. This is their first World Cup.\n\nAustria enter as clear favorites, but Jordan's organization and spirit have seen them overcome supposedly superior opponents before.",
+  "keyStorylines": [
+    "Jordan's historic World Cup debut",
+    "Austria's gegenpressing revolution under Rangnick",
+    "First ever meeting between these nations",
+    "European sophistication vs Asian Cup runners-up"
+  ],
+  "playersToWatch": [
+    {
+      "name": "David Alaba",
+      "teamCode": "AUT",
+      "position": "Defender",
+      "reason": "Real Madrid legend and Austrian captain"
+    },
+    {
+      "name": "Mousa Al-Taamari",
+      "teamCode": "JOR",
+      "position": "Winger",
+      "reason": "Montpellier's tricky winger and Jordan's star"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "teamCode": "AUT",
+      "position": "Midfielder",
+      "reason": "Dortmund's energetic midfielder"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "teamCode": "JOR",
+      "position": "Forward",
+      "reason": "Young striker with an eye for goal"
+    }
+  ],
+  "tacticalPreview": "Austria's 4-2-3-1 under Rangnick emphasizes intense pressing and quick transitions. Sabitzer's energy and Laimer's running will try to overwhelm Jordan's midfield.\n\nJordan's 4-4-2 is disciplined and compact. They'll look to frustrate Austria and exploit counter-attacking opportunities through Al-Taamari's pace and skill.",
+  "prediction": {
+    "predictedOutcome": "AUT",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Austria's superior squad quality and pressing intensity should prove decisive. Jordan will compete but lack the firepower to threaten consistently.",
+    "alternativeScenario": "If Jordan defend heroically and Austria struggle to break them down, a nervy 1-0 win is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Jordan reached the AFC Asian Cup final in 2023, losing 3-1 to Qatar",
+    "Rangnick's Austria are unbeaten in their last 15 competitive home games",
+    "This is Jordan's first World Cup appearance",
+    "Austria's best World Cup finish was third place in 1954"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "CHI",
+  "team2Code": "CMR",
+  "team1Name": "Chile",
+  "team2Name": "Cameroon",
+  "historicalAnalysis": "Chile and Cameroon have met rarely, with their most notable encounter coming at the 2017 Confederations Cup where Chile won 2-0. That match showcased Chile's golden generation at their peak.\n\nBoth nations have proud World Cup traditions: Chile's back-to-back Copa América victories (2015, 2016) and Cameroon's quarter-final appearances (1990). Both are now trying to recapture former glory with new generations.\n\nThis Group C clash could determine which team avoids bottom place.",
+  "keyStorylines": [
+    "Two former powers seeking to revive World Cup dreams",
+    "Chile's aging stars vs Cameroon's athletic approach",
+    "Rematch of 2017 Confederations Cup encounter",
+    "Battle to avoid bottom of Group C"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Alexis Sánchez",
+      "teamCode": "CHI",
+      "position": "Forward",
+      "reason": "Chile's all-time leading scorer and leader"
+    },
+    {
+      "name": "André-Frank Zambo Anguissa",
+      "teamCode": "CMR",
+      "position": "Midfielder",
+      "reason": "Cameroon's midfield general"
+    },
+    {
+      "name": "Ben Brereton Díaz",
+      "teamCode": "CHI",
+      "position": "Striker",
+      "reason": "Chile's goal threat and England-born star"
+    },
+    {
+      "name": "Eric Maxim Choupo-Moting",
+      "teamCode": "CMR",
+      "position": "Forward",
+      "reason": "Experienced Bayern Munich striker"
+    }
+  ],
+  "tacticalPreview": "Chile will try to control possession and probe for openings. Cameroon will use their physical advantages and look to win aerial battles. Midfield control will be crucial.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Two evenly matched teams with clear strengths and weaknesses likely to cancel each other out.",
+    "alternativeScenario": "Chile's experience in big matches could see them through 2-0, or Cameroon's physicality could overwhelm for a 2-1 win."
+  },
+  "pastEncountersSummary": "Limited history. Chile won 2-0 at the 2017 Confederations Cup, their most notable meeting.",
+  "funFacts": [
+    "Chile won the 2017 Confederations Cup meeting 2-0",
+    "Cameroon have appeared at 8 World Cups (most of any African nation)",
+    "Chile won back-to-back Copa Américas in 2015-2016",
+    "Both nations have produced iconic World Cup moments"
+  ],
+  "isFirstMeeting": false
+}

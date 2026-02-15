@@ -1,0 +1,21 @@
+{
+  "id": "manager_cro",
+  "firstName": "Zlatko",
+  "lastName": "Dalic",
+  "commonName": "Zlatko Dalic",
+  "dateOfBirth": "1966-10-26",
+  "nationality": "Croatia",
+  "currentTeam": "Croatia",
+  "currentTeamCode": "CRO",
+  "photoUrl": "assets/managers/dalic.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Possession",
+  "yearsExperience": 20,
+  "previousTeams": ["Varteks", "Rijeka", "Dinamo Tirana", "Al-Faisaly", "Al-Hilal", "Al-Ain"],
+  "trophies": ["World Cup 2018 Runner-up", "World Cup 2022 3rd Place", "Nations League 2023 Runner-up"],
+  "careerWins": 200,
+  "careerDraws": 80,
+  "careerLosses": 90,
+  "careerWinPercentage": 54,
+  "bio": "Has led Croatia to unprecedented success including 2018 World Cup final and 2022 third place. Master of tournament football."
+}

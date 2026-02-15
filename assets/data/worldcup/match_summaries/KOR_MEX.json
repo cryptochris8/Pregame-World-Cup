@@ -1,0 +1,55 @@
+{
+  "team1Code": "MEX",
+  "team2Code": "KOR",
+  "team1Name": "Mexico",
+  "team2Name": "South Korea",
+  "historicalAnalysis": "Mexico and South Korea have met twice at World Cups, both matches won by Mexico. In 2018, Mexico won 2-1 in Rostov, while their 1998 meeting ended 3-1 to El Tri. However, South Korea's 2022 World Cup performance showed they can compete with anyone.\n\nBoth nations share a similar frustration—they consistently qualify but struggle to advance deep into tournaments. Mexico's Round of 16 curse is well-documented, while South Korea's 2002 semi-final run remains an outlier in their history.\n\nAs co-hosts, Mexico have extra pressure to perform. South Korea's dynamic attacking play and pressing intensity will provide a stern test.",
+  "keyStorylines": [
+    "Mexico's Round of 16 curse vs South Korea's deep run aspirations",
+    "Co-hosts needing to maintain momentum after the opener",
+    "Two of Asia and North America's most consistent qualifiers",
+    "Mexico's historical dominance in this fixture"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "Tottenham captain and one of Asia's greatest ever players"
+    },
+    {
+      "name": "Santiago Giménez",
+      "teamCode": "MEX",
+      "position": "Forward",
+      "reason": "Feyenoord's prolific striker"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "position": "Midfielder",
+      "reason": "PSG's creative spark and Korea's playmaker"
+    },
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "position": "Winger",
+      "reason": "PSV's explosive winger providing pace and goals"
+    }
+  ],
+  "tacticalPreview": "Mexico's 4-3-3 will look to control possession and create through wide areas. Giménez's movement and finishing are key, with Lozano's pace stretching defenses.\n\nSouth Korea's 4-3-3 emphasizes pressing and quick transitions. Son's ability to drift and create, combined with Lee Kang-in's creativity, makes them dangerous in transition.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Home advantage and Mexico's historical dominance give them an edge, but South Korea's quality makes this a close encounter.",
+    "alternativeScenario": "If Son dominates and Korea's pressing works, they could spring an upset 2-1 win."
+  },
+  "pastEncountersSummary": "Two World Cup meetings, both won by Mexico (3-1 in 1998, 2-1 in 2018).",
+  "funFacts": [
+    "Son Heung-min has scored more than 100 goals for Tottenham",
+    "Mexico have won their last 4 matches against South Korea",
+    "Lee Kang-in won the Golden Ball at the 2019 U-20 World Cup",
+    "South Korea reached the 2002 World Cup semi-finals as co-hosts"
+  ],
+  "isFirstMeeting": false
+}

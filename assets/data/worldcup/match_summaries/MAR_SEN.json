@@ -1,0 +1,52 @@
+{
+  "team1Code": "MAR",
+  "team2Code": "SEN",
+  "team1Name": "Morocco",
+  "team2Name": "Senegal",
+  "historicalAnalysis": "Morocco and Senegal are Africa's two best teams. Morocco's 2022 semi-final run and Senegal's 2022 AFCON win make this an epic African clash.",
+  "keyStorylines": [
+    "Africa's elite clash",
+    "Morocco's 2022 heroes vs AFCON champions",
+    "Battle for African supremacy"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Right-Back",
+      "reason": "World-class defender"
+    },
+    {
+      "name": "Sadio Mané",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "African legend"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "position": "Winger",
+      "reason": "Morocco's creative force"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "position": "Defender",
+      "reason": "Senegal's rock"
+    }
+  ],
+  "tacticalPreview": "Two of Africa's best tactical teams. Regragui vs Cissé is a fascinating battle. Both press well and are organized.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Two quality African sides likely to draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Morocco reached 2022 World Cup semi-finals",
+    "Senegal won AFCON 2022",
+    "Two best African teams currently"
+  ],
+  "isFirstMeeting": false
+}

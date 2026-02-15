@@ -1,0 +1,69 @@
+{
+  "id": "ARG_GER",
+  "team1Code": "ARG",
+  "team2Code": "GER",
+  "totalMatches": 23,
+  "team1Wins": 6,
+  "team2Wins": 10,
+  "draws": 7,
+  "team1Goals": 30,
+  "team2Goals": 35,
+  "worldCupMatches": 7,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 3,
+  "worldCupDraws": 2,
+  "lastMatch": "2022-11-21",
+  "firstMeeting": "1958-06-08",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Gotze extra-time goal wins Germany's 4th title"
+    },
+    {
+      "year": 2010,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 0,
+      "team2Score": 4,
+      "winnerCode": "GER",
+      "location": "Cape Town, South Africa",
+      "description": "Germany demolish Messi's Argentina"
+    },
+    {
+      "year": 1986,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 3,
+      "team2Score": 2,
+      "winnerCode": "ARG",
+      "location": "Mexico City, Mexico",
+      "description": "Maradona inspires dramatic comeback win"
+    },
+    {
+      "year": 1990,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Rome, Italy",
+      "description": "Brehme penalty, bitter rematch for Argentina"
+    },
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Berlin, Germany",
+      "description": "Germany win on penalties, Lehmann heroics"
+    }
+  ]
+}

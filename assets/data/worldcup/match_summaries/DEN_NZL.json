@@ -1,0 +1,52 @@
+{
+  "team1Code": "DEN",
+  "team2Code": "NZL",
+  "team1Name": "Denmark",
+  "team2Name": "New Zealand",
+  "historicalAnalysis": "Denmark and New Zealand have never met at a World Cup. Denmark are heavy favorites against the OFC qualifiers.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Denmark expected to dominate",
+    "New Zealand seeking upset"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Eriksen",
+      "teamCode": "DEN",
+      "position": "Midfielder",
+      "reason": "Denmark's star"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "position": "Striker",
+      "reason": "New Zealand's Premier League striker"
+    },
+    {
+      "name": "Rasmus Højlund",
+      "teamCode": "DEN",
+      "position": "Striker",
+      "reason": "Young talent"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "position": "Defender",
+      "reason": "NZ's best defender"
+    }
+  ],
+  "tacticalPreview": "Denmark will dominate. New Zealand must stay organized and hope Wood can score on limited chances.",
+  "prediction": {
+    "predictedOutcome": "DEN",
+    "predictedScore": "4-0",
+    "confidence": 85,
+    "reasoning": "Quality gap is significant."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "New Zealand's only World Cup win was against Bahrain in 2009 playoffs",
+    "Chris Wood plays in the Premier League"
+  ],
+  "isFirstMeeting": true
+}

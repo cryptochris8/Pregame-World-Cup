@@ -1,0 +1,52 @@
+{
+  "team1Code": "CRO",
+  "team2Code": "TUN",
+  "team1Name": "Croatia",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "Croatia and Tunisia have never met at a World Cup. Croatia's tournament pedigree is exceptional, while Tunisia have struggled to advance from group stages.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Croatia seeking group stage control",
+    "Tunisia looking for historic result"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "Croatia's legend"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "position": "Midfielder",
+      "reason": "Young talent"
+    },
+    {
+      "name": "Joško Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "Elite defender"
+    },
+    {
+      "name": "Wahbi Khazri",
+      "teamCode": "TUN",
+      "position": "Forward",
+      "reason": "Tunisia's attacker"
+    }
+  ],
+  "tacticalPreview": "Croatia will dominate midfield. Tunisia must stay compact and hope for counter-attacking opportunities.",
+  "prediction": {
+    "predictedOutcome": "CRO",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "Croatia's tournament experience should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Croatia have reached 2 World Cup finals",
+    "Tunisia have never won a World Cup knockout match"
+  ],
+  "isFirstMeeting": true
+}

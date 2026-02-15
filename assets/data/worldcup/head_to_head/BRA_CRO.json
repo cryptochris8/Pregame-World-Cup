@@ -1,0 +1,39 @@
+{
+  "id": "BRA_CRO",
+  "team1Code": "BRA",
+  "team2Code": "CRO",
+  "totalMatches": 5,
+  "team1Wins": 3,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 8,
+  "team2Goals": 5,
+  "worldCupMatches": 3,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-12-09",
+  "firstMeeting": "2006-06-13",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "CRO",
+      "location": "Lusail, Qatar",
+      "description": "Croatia win on penalties, Neymar wonder goal not enough"
+    },
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Sao Paulo, Brazil",
+      "description": "Opening match, controversial penalty"
+    }
+  ]
+}

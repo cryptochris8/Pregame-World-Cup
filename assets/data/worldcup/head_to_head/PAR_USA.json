@@ -1,0 +1,59 @@
+{
+  "id": "PAR_USA",
+  "team1Code": "PAR",
+  "team2Code": "USA",
+  "totalMatches": 9,
+  "team1Wins": 2,
+  "team2Wins": 5,
+  "draws": 2,
+  "team1Goals": 7,
+  "team2Goals": 12,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2025-11-15",
+  "firstMeeting": "1930-07-17",
+  "notableMatches": [
+    {
+      "year": 1930,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 3,
+      "winnerCode": "USA",
+      "location": "Montevideo, Uruguay",
+      "description": "Bert Patenaude scores first World Cup hat-trick in history"
+    },
+    {
+      "year": 2025,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "USA",
+      "location": "Chester, PA",
+      "description": "Reyna and Balogun goals in World Cup prep victory"
+    },
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "USA",
+      "location": "Cary, NC",
+      "description": "Tim Weah becomes first 2000s-born player to appear for USMNT"
+    },
+    {
+      "year": 2003,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "USA",
+      "location": "San Diego, CA",
+      "description": "Donovan and Stewart lead comfortable victory"
+    }
+  ]
+}

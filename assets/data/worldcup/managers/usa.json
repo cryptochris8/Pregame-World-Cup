@@ -1,0 +1,21 @@
+{
+  "id": "manager_usa",
+  "firstName": "Mauricio",
+  "lastName": "Pochettino",
+  "commonName": "Mauricio Pochettino",
+  "dateOfBirth": "1972-03-02",
+  "nationality": "Argentina",
+  "currentTeam": "United States",
+  "currentTeamCode": "USA",
+  "photoUrl": "assets/managers/pochettino.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "High Press",
+  "yearsExperience": 15,
+  "previousTeams": ["Espanyol", "Southampton", "Tottenham", "PSG", "Chelsea"],
+  "trophies": ["Ligue 1 2021-22"],
+  "careerWins": 320,
+  "careerDraws": 120,
+  "careerLosses": 140,
+  "careerWinPercentage": 55,
+  "bio": "Argentine tactician known for developing young talent and implementing high-intensity pressing football. Appointed to lead USA into their home World Cup."
+}

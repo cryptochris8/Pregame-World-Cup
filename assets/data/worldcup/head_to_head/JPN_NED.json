@@ -1,0 +1,39 @@
+{
+  "id": "JPN_NED",
+  "team1Code": "JPN",
+  "team2Code": "NED",
+  "totalMatches": 3,
+  "team1Wins": 0,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 1,
+  "team2Goals": 4,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2013-11-16",
+  "firstMeeting": "2009-09-05",
+  "notableMatches": [
+    {
+      "year": 2010,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "NED",
+      "location": "Durban, South Africa",
+      "description": "Wesley Sneijder goal gives Dutch narrow victory en route to final"
+    },
+    {
+      "year": 2013,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "NED",
+      "location": "Genk, Belgium",
+      "description": "Van Persie and Robben lead Dutch to friendly win"
+    }
+  ]
+}

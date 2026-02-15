@@ -1,0 +1,21 @@
+{
+  "id": "manager_esp",
+  "firstName": "Luis",
+  "lastName": "de la Fuente",
+  "commonName": "Luis de la Fuente",
+  "dateOfBirth": "1961-06-05",
+  "nationality": "Spain",
+  "currentTeam": "Spain",
+  "currentTeamCode": "ESP",
+  "photoUrl": "assets/managers/delafuente.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Possession",
+  "yearsExperience": 20,
+  "previousTeams": ["Athletic Bilbao B", "Spain U19", "Spain U21", "Spain U23"],
+  "trophies": ["UEFA Euro 2024", "UEFA Nations League 2023", "U19 Euro", "U21 Euro", "Olympic Silver"],
+  "careerWins": 150,
+  "careerDraws": 40,
+  "careerLosses": 30,
+  "careerWinPercentage": 68,
+  "bio": "Progressed through Spanish youth system before leading the senior team to Euro 2024 glory with attractive, dominant football."
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "ESP",
+  "team2Code": "CIV",
+  "team1Name": "Spain",
+  "team2Name": "Ivory Coast",
+  "historicalAnalysis": "Spain and Ivory Coast have met rarely, with their most notable encounter coming at the 2012 Olympics where Spain won on penalties in the quarter-finals. That match showcased young talent from both nations.\n\nSpain's Euro 2024 triumph confirmed their status as world football's elite. Ivory Coast's AFCON success proved African football's continued growth.",
+  "keyStorylines": [
+    "Euro 2024 champions vs AFCON 2024 champions",
+    "Spain's technical brilliance vs Ivory Coast's athleticism",
+    "Yamal and Spain's young stars against African opposition",
+    "Can Ivory Coast compete with Europe's best?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Teenage sensation"
+    },
+    {
+      "name": "Franck Kessié",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Physical presence"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "position": "Midfielder",
+      "reason": "Spain's creative hub"
+    },
+    {
+      "name": "Nicolas Pépé",
+      "teamCode": "CIV",
+      "position": "Winger",
+      "reason": "Pace and trickery on the wing"
+    }
+  ],
+  "tacticalPreview": "Spain will dominate possession while Ivory Coast try to stay compact and counter. Spain's patience will be tested against Ivorian physicality.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "3-1",
+    "confidence": 75,
+    "reasoning": "Spain's technical superiority should prove decisive despite Ivory Coast's competitive spirit.",
+    "alternativeScenario": "Ivory Coast defending deep and scoring on counter could produce a 1-1 draw."
+  },
+  "pastEncountersSummary": "Limited history. Spain won on penalties at 2012 Olympics. No significant competitive meetings since.",
+  "funFacts": [
+    "Spain beat Ivory Coast in 2012 Olympic quarter-final penalties",
+    "Both teams are reigning continental champions (Euro 2024, AFCON 2024)",
+    "Spain's Yamal is the youngest player to score at a European Championship",
+    "Ivory Coast's AFCON triumph was a remarkable comeback from near-elimination"
+  ],
+  "isFirstMeeting": false
+}

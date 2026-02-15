@@ -1,0 +1,55 @@
+{
+  "team1Code": "CAN",
+  "team2Code": "QAT",
+  "team1Name": "Canada",
+  "team2Name": "Qatar",
+  "historicalAnalysis": "Canada and Qatar meet for the first time in World Cup history. Canada are co-hosting this tournament, returning to the World Cup for only the second time in their history (after 1986). Qatar are the 2022 hosts looking for redemption after a disappointing home campaign.\n\nCanada's 2022 World Cup was brief but showed their potential—they scored against Belgium and Croatia but failed to earn a point. With home advantage and an improved squad, expectations are higher now.\n\nQatar's 2022 campaign saw them become the worst-performing host nation ever, losing all three group games. Their Asian Cup win in 2023 showed they can still compete at the continental level.",
+  "keyStorylines": [
+    "Canada co-hosting their first World Cup since 1986",
+    "Qatar seeking redemption after disappointing 2022 performance",
+    "First ever meeting between these nations",
+    "Former host vs current co-host"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "position": "Defender",
+      "reason": "Bayern Munich's lightning-fast left-back"
+    },
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "position": "Winger",
+      "reason": "Asian Player of the Year"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "position": "Forward",
+      "reason": "Lille's prolific striker with a killer instinct"
+    },
+    {
+      "name": "Almoez Ali",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Qatar's record scorer"
+    }
+  ],
+  "tacticalPreview": "Canada's 4-3-3 unleashes Davies as an attacking wing-back, with David leading the line. Their pace in transition is frightening, and home support will drive aggressive pressing.\n\nQatar's 5-3-2 will be more conservative after 2022's lessons. They'll look to be compact and hit on counters through Afif's creativity.",
+  "prediction": {
+    "predictedOutcome": "CAN",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Home advantage and Canada's superior attacking threats should prove decisive. Qatar's confidence remains fragile after 2022.",
+    "alternativeScenario": "If Qatar start well and Canada struggle with pressure, a 1-1 draw is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Canada last hosted a FIFA tournament in 1987 (U-16 World Cup)",
+    "Qatar won the Asian Cup in 2019 and 2023",
+    "Davies became Bayern Munich's youngest ever Champions League scorer",
+    "This is Canada's first World Cup on home soil"
+  ],
+  "isFirstMeeting": true
+}

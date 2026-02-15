@@ -1,0 +1,21 @@
+{
+  "id": "manager_den",
+  "firstName": "Kasper",
+  "lastName": "Hjulmand",
+  "commonName": "Kasper Hjulmand",
+  "dateOfBirth": "1972-04-09",
+  "nationality": "Denmark",
+  "currentTeam": "Denmark",
+  "currentTeamCode": "DEN",
+  "photoUrl": "assets/managers/hjulmand.png",
+  "preferredFormation": "3-4-3",
+  "coachingStyle": "Possession",
+  "yearsExperience": 20,
+  "previousTeams": ["Lyngby", "Nordsjaelland", "Mainz 05"],
+  "trophies": ["Danish Superliga"],
+  "careerWins": 180,
+  "careerDraws": 80,
+  "careerLosses": 90,
+  "careerWinPercentage": 51,
+  "bio": "Transformed Denmark into exciting attacking force. Known for player development and building team spirit."
+}

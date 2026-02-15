@@ -1,0 +1,55 @@
+{
+  "team1Code": "SAU",
+  "team2Code": "URU",
+  "team1Name": "Saudi Arabia",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "These nations met in a 2018 World Cup group match that Uruguay won 1-0 thanks to a Luis Suárez goal. Saudi Arabia's famous 2022 World Cup victory over Argentina showed what they're capable of at their best.\n\nSaudi Arabia's football has been transformed by massive investment and the signings of global stars to their domestic league. Their national team benefits from this exposure to top-level football, and their technical quality has improved dramatically.\n\nUruguay remain a South American powerhouse, with two World Cup titles and a history of punching above their weight. Their blend of experienced veterans and emerging talents makes them dark horse candidates once again.",
+  "keyStorylines": [
+    "Saudi Arabia seeking to replicate their 2022 magic against another South American giant",
+    "Uruguay's two-time champions looking to assert their pedigree",
+    "Saudi investment vs Uruguayan tradition",
+    "Rematch of 2018 World Cup encounter"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Darwin Núñez",
+      "teamCode": "URU",
+      "position": "Forward",
+      "reason": "Liverpool's explosive striker leading the new generation"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "SAU",
+      "position": "Winger",
+      "reason": "Scored the winner against Argentina in 2022"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Real Madrid's all-action midfielder"
+    },
+    {
+      "name": "Saleh Al-Shehri",
+      "teamCode": "SAU",
+      "position": "Forward",
+      "reason": "Clinical finisher who scored against Argentina"
+    }
+  ],
+  "tacticalPreview": "Uruguay's 4-4-2 provides defensive solidity while unleashing Núñez's pace on the counter. Valverde's box-to-box running adds another dimension to their attack.\n\nSaudi Arabia's 4-3-3 emphasizes quick passing and technical football. Al-Dawsari's creativity is crucial, and they'll look to play with the same intensity that shocked Argentina.",
+  "prediction": {
+    "predictedOutcome": "URU",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Uruguay's experience and squad depth should prove decisive, but Saudi Arabia have shown they can beat anyone on their day.",
+    "alternativeScenario": "If Saudi Arabia start fast and pressure Uruguay's backline, they could produce another shock result."
+  },
+  "pastEncountersSummary": "Met once at the 2018 World Cup, Uruguay winning 1-0 with a Luis Suárez goal.",
+  "funFacts": [
+    "Saudi Arabia's win over Argentina is considered one of the greatest World Cup upsets ever",
+    "Uruguay won the first ever World Cup in 1930",
+    "Al-Dawsari's goal against Argentina was voted the best goal of the 2022 World Cup",
+    "Uruguay have won Copa América 15 times—a record"
+  ],
+  "isFirstMeeting": false
+}

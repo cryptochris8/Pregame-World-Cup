@@ -1,0 +1,21 @@
+{
+  "id": "manager_ger",
+  "firstName": "Julian",
+  "lastName": "Nagelsmann",
+  "commonName": "Julian Nagelsmann",
+  "dateOfBirth": "1987-07-23",
+  "nationality": "Germany",
+  "currentTeam": "Germany",
+  "currentTeamCode": "GER",
+  "photoUrl": "assets/managers/nagelsmann.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "High Press",
+  "yearsExperience": 10,
+  "previousTeams": ["Hoffenheim", "RB Leipzig", "Bayern Munich"],
+  "trophies": ["Bundesliga 2022-23"],
+  "careerWins": 200,
+  "careerDraws": 60,
+  "careerLosses": 70,
+  "careerWinPercentage": 61,
+  "bio": "One of the brightest young coaches in world football. Appointed to rebuild German football ahead of World Cup 2026 with modern, attacking approach."
+}

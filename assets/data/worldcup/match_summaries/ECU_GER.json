@@ -1,0 +1,55 @@
+{
+  "team1Code": "ECU",
+  "team2Code": "GER",
+  "team1Name": "Ecuador",
+  "team2Name": "Germany",
+  "historicalAnalysis": "Ecuador and Germany have never met at a World Cup. Germany are four-time champions seeking redemption after consecutive group stage exits. Ecuador have proven they can compete at the World Cup level, with strong showings in 2022.\n\nGermany's 2022 exit was their second consecutive group stage failure—unprecedented for German football. The rebuild under new leadership has produced exciting young talents like Wirtz and Musiala.\n\nEcuador's 2022 World Cup saw wins over Qatar and competitive performances against Netherlands and Senegal. Their young squad, led by Caicedo, has only improved.",
+  "keyStorylines": [
+    "Germany seeking redemption after two group exits",
+    "Ecuador's emerging generation vs German experience",
+    "First ever World Cup meeting between these nations",
+    "Four-time champions vs South American dark horses"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Leverkusen's wonderkid"
+    },
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Chelsea's world-class midfielder"
+    },
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayern's dazzling talent"
+    },
+    {
+      "name": "Kendry Páez",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Teenage sensation"
+    }
+  ],
+  "tacticalPreview": "Germany's 4-2-3-1 unleashes Wirtz and Musiala in creative roles. Their technical quality and pressing intensity should dominate.\n\nEcuador's 4-4-2 emphasizes quick passing and energy. Caicedo's ability to disrupt and drive forward is crucial against Germany's midfield.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Germany's quality and desperation for success should prove decisive, but Ecuador will make it competitive.",
+    "alternativeScenario": "If Ecuador's pressing works and they take their chances, a shock draw or win is possible."
+  },
+  "pastEncountersSummary": "First ever World Cup meeting.",
+  "funFacts": [
+    "Germany's consecutive group stage exits (2018, 2022) were unprecedented",
+    "Caicedo's £115m transfer is a British record",
+    "Wirtz and Musiala are considered Germany's future",
+    "Ecuador have qualified for 4 of the last 5 World Cups"
+  ],
+  "isFirstMeeting": true
+}

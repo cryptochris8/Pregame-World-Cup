@@ -1,0 +1,21 @@
+{
+  "id": "manager_pol",
+  "firstName": "Michal",
+  "lastName": "Probierz",
+  "commonName": "Michal Probierz",
+  "dateOfBirth": "1972-02-07",
+  "nationality": "Poland",
+  "currentTeam": "Poland",
+  "currentTeamCode": "POL",
+  "photoUrl": "assets/managers/probierz.png",
+  "preferredFormation": "3-5-2",
+  "coachingStyle": "Attacking",
+  "yearsExperience": 20,
+  "previousTeams": ["Jagiellonia", "Cracovia", "Lechia Gdansk", "Widzew Lodz"],
+  "trophies": ["Ekstraklasa"],
+  "careerWins": 200,
+  "careerDraws": 100,
+  "careerLosses": 120,
+  "careerWinPercentage": 48,
+  "bio": "Polish coach known for attacking football and tactical flexibility. Bringing fresh approach to the national team."
+}

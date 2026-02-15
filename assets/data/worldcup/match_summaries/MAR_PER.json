@@ -1,0 +1,40 @@
+{
+  "team1Code": "MAR",
+  "team2Code": "PER",
+  "team1Name": "Morocco",
+  "team2Name": "Peru",
+  "historicalAnalysis": "Morocco and Peru have never met at a World Cup. Morocco are favorites after their 2022 heroics.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Morocco favorites",
+    "Peru underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Right-Back",
+      "reason": "Morocco's star"
+    },
+    {
+      "name": "Paolo Guerrero",
+      "teamCode": "PER",
+      "position": "Striker",
+      "reason": "Peru's legend"
+    }
+  ],
+  "tacticalPreview": "Morocco should control the game. Peru will defend and counter.",
+  "prediction": {
+    "predictedOutcome": "MAR",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Morocco's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Morocco reached 2022 semi-finals",
+    "Peru reached 2018 World Cup"
+  ],
+  "isFirstMeeting": true
+}

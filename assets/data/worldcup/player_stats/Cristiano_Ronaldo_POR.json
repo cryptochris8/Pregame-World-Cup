@@ -1,0 +1,58 @@
+{
+  "playerName": "Cristiano Ronaldo",
+  "fifaCode": "POR",
+  "worldCupAppearances": 22,
+  "worldCupGoals": 8,
+  "worldCupAssists": 2,
+  "previousWorldCups": [2006, 2010, 2014, 2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2006,
+      "matches": 6,
+      "goals": 1,
+      "assists": 2,
+      "stage": "Semi-Finals",
+      "keyMoment": "Iconic wink after Rooney red card"
+    },
+    {
+      "year": 2010,
+      "matches": 4,
+      "goals": 1,
+      "assists": 1,
+      "stage": "Round of 16"
+    },
+    {
+      "year": 2014,
+      "matches": 3,
+      "goals": 1,
+      "assists": 0,
+      "stage": "Group Stage",
+      "keyMoment": "Played through injury"
+    },
+    {
+      "year": 2018,
+      "matches": 4,
+      "goals": 4,
+      "assists": 0,
+      "stage": "Round of 16",
+      "keyMoment": "Hat-trick vs Spain in group stage"
+    },
+    {
+      "year": 2022,
+      "matches": 5,
+      "goals": 1,
+      "assists": 0,
+      "stage": "Quarter-Finals",
+      "keyMoment": "Dropped for knockout stages, cried on exit"
+    }
+  ],
+  "worldCupAwards": [],
+  "memorableMoments": [
+    "Hat-trick vs Spain 2018",
+    "Tears after 2022 elimination",
+    "Header vs Morocco 2018"
+  ],
+  "worldCupLegacyRating": 7,
+  "comparisonToLegend": "Elite goalscorer but World Cup remains only major trophy without",
+  "worldCup2026Prediction": "If selected at 41, would be oldest outfield player in World Cup history"
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "ENG",
+  "team2Code": "ESP",
+  "team1Name": "England",
+  "team2Name": "Spain",
+  "historicalAnalysis": "England and Spain are European football royalty with contrasting recent histories. Spain dominated world football from 2008-2012 with their tiki-taka style. England have reached recent tournament finals (Euro 2020, 2024) but failed to win.\n\nSpain's Euro 2024 triumph confirmed their return to the top. England's talented squad continues seeking that elusive trophy.",
+  "keyStorylines": [
+    "Euro 2020 and 2024 finalist England vs Euro 2024 champions Spain",
+    "Bellingham vs Pedri: Midfield battle of the ages",
+    "England seeking to finally win a major tournament",
+    "Spain's new golden generation vs England's perennial promise"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "England's best player and Real Madrid star"
+    },
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "Teenage sensation"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "position": "Striker",
+      "reason": "England's all-time leading scorer"
+    },
+    {
+      "name": "Rodri",
+      "teamCode": "ESP",
+      "position": "Midfielder",
+      "reason": "Manchester City's Ballon d'Or winner"
+    }
+  ],
+  "tacticalPreview": "Spain's possession vs England's direct approach. Bellingham must win his battle with Rodri. Kane's movement against Spain's high line will be crucial.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Spain's Euro 2024 triumph and technical superiority give them an edge, but England will compete.",
+    "alternativeScenario": "England's big-game experience could produce a famous 2-1 victory."
+  },
+  "pastEncountersSummary": "Competitive rivalry with Spain generally having the upper hand in recent decades. England haven't beaten Spain in a competitive match since 1996.",
+  "funFacts": [
+    "Spain won Euro 2024 beating England in the final",
+    "England haven't won a major trophy since 1966",
+    "Rodri won the 2024 Ballon d'Or",
+    "Kane is England's all-time leading scorer"
+  ],
+  "isFirstMeeting": false
+}

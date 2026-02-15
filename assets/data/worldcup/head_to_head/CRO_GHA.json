@@ -1,0 +1,29 @@
+{
+  "id": "CRO_GHA",
+  "team1Code": "CRO",
+  "team2Code": "GHA",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 0,
+  "team2Goals": 0,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2008-05-26",
+  "firstMeeting": "2008-05-26",
+  "notableMatches": [
+    {
+      "year": 2008,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Klagenfurt, Austria",
+      "description": "Goalless draw in pre-Euro 2008 friendly"
+    }
+  ]
+}

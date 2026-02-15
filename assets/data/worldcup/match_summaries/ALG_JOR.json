@@ -1,0 +1,55 @@
+{
+  "team1Code": "JOR",
+  "team2Code": "ALG",
+  "team1Name": "Jordan",
+  "team2Name": "Algeria",
+  "historicalAnalysis": "This is a first ever meeting between Jordan and Algeria, two nations making major strides in world football. Jordan make their World Cup debut after reaching the 2023 Asian Cup final, while Algeria seek redemption after missing 2022.\n\nAlgeria won the 2019 AFCON and were disappointed to miss the 2022 World Cup. Their squad features European-based talent and plays attractive, attacking football.\n\nJordan's qualification is historic for a nation that has often come close but never reached the World Cup. Their organized, disciplined approach proved decisive in Asian qualifying.",
+  "keyStorylines": [
+    "Jordan's historic World Cup debut vs AFCON champions",
+    "First ever meeting between these nations",
+    "Two Arab nations battling for knockout round hopes",
+    "Asian Cup finalists vs AFCON winners"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "position": "Winger",
+      "reason": "Saudi Pro League star and Algeria's creative hub"
+    },
+    {
+      "name": "Mousa Al-Taamari",
+      "teamCode": "JOR",
+      "position": "Winger",
+      "reason": "Montpellier's tricky winger"
+    },
+    {
+      "name": "Ismaël Bennacer",
+      "teamCode": "ALG",
+      "position": "Midfielder",
+      "reason": "AC Milan's midfield anchor"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "teamCode": "JOR",
+      "position": "Forward",
+      "reason": "Young striker with composure"
+    }
+  ],
+  "tacticalPreview": "Algeria's 4-3-3 emphasizes possession and quick combinations. Mahrez's creativity from the right is crucial, with Bennacer controlling the midfield.\n\nJordan's 4-4-2 is compact and disciplined. They'll look to frustrate Algeria and hit on counter-attacks through Al-Taamari's pace and skill.",
+  "prediction": {
+    "predictedOutcome": "ALG",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Algeria's superior individual quality should prove decisive, but Jordan's organization and spirit will make this competitive.",
+    "alternativeScenario": "If Jordan's defense holds and they take their chances, a historic draw is possible."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "Jordan reached the 2023 Asian Cup final, losing 3-1 to Qatar",
+    "Algeria won the 2019 AFCON without losing a game",
+    "This is Jordan's first World Cup appearance",
+    "Mahrez scored the goal that won Algeria the 2019 AFCON"
+  ],
+  "isFirstMeeting": true
+}

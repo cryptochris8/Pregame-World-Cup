@@ -1,0 +1,49 @@
+{
+  "id": "BRA_ITA",
+  "team1Code": "BRA",
+  "team2Code": "ITA",
+  "totalMatches": 19,
+  "team1Wins": 10,
+  "team2Wins": 5,
+  "draws": 4,
+  "team1Goals": 31,
+  "team2Goals": 20,
+  "worldCupMatches": 5,
+  "team1WorldCupWins": 3,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-10-12",
+  "firstMeeting": "1956-04-25",
+  "notableMatches": [
+    {
+      "year": 1970,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 4,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Mexico City, Mexico",
+      "description": "Brazil win their third title in style"
+    },
+    {
+      "year": 1994,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Los Angeles, USA",
+      "description": "Brazil win on penalties, Baggio miss"
+    },
+    {
+      "year": 1982,
+      "tournament": "World Cup",
+      "stage": "Second Round",
+      "team1Score": 2,
+      "team2Score": 3,
+      "winnerCode": "ITA",
+      "location": "Barcelona, Spain",
+      "description": "Paolo Rossi hat-trick stuns Brazil"
+    }
+  ]
+}

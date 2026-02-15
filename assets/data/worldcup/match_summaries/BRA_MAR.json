@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "MAR",
+  "team1Name": "Brazil",
+  "team2Name": "Morocco",
+  "historicalAnalysis": "Brazil and Morocco's rivalry has been transformed by Morocco's stunning 2022 World Cup run to the semi-finals, the first African nation to achieve this feat. Their three meetings tell a story of evolving African football. In 1998, Brazil dominated 3-0 in the group stage, with Rivaldo and Ronaldo showcasing the Seleção's attacking brilliance. The encounter seemed routine—a powerhouse dispatching an African underdog.\n\nFast forward to March 2023, and the landscape had shifted dramatically. Just months after Morocco had knocked out Spain and Portugal en route to the semi-finals, they hosted Brazil in Tangier and won 2-1. It was a statement victory that confirmed Morocco's 2022 success was no fluke. The Atlas Lions had arrived as a genuine force in world football.\n\nThis World Cup 2026 encounter carries enormous weight. Brazil, five-time world champions but without a title since 2002, face a Morocco side brimming with confidence and quality. The dynamics have fundamentally changed since their last World Cup meeting.",
+  "keyStorylines": [
+    "Morocco's 2022 World Cup fairy tale vs Brazil's quest to end their title drought",
+    "Can Morocco replicate their 2023 friendly upset on the World Cup stage?",
+    "Brazil's young core seeking to restore the Seleção to their former glory",
+    "Morocco as flag-bearers for African football after historic 2022 run"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's most electrifying player and potential Ballon d'Or winner"
+    },
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Right-Back",
+      "reason": "Dynamic wing-back who terrorizes opponents and scored the winning penalty vs Spain in 2022"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Real Madrid star adding creativity and goals to Brazil's attack"
+    },
+    {
+      "name": "Yassine Bounou",
+      "teamCode": "MAR",
+      "position": "Goalkeeper",
+      "reason": "Hero of 2022 whose penalty saves helped Morocco make history"
+    }
+  ],
+  "tacticalPreview": "Brazil under their current setup favor an attacking 4-2-3-1 built around Vinícius Jr.'s dribbling and Rodrygo's movement. Morocco's 4-3-3 under Walid Regragui is defensively organized but devastatingly quick in transition, as Spain and Portugal discovered in 2022.\n\nMorocco's key is to frustrate Brazil and hit them on the break. Their defensive organization in 2022 was exceptional, conceding just one goal before the semi-final. Brazil must be patient, moving the ball quickly to create gaps. The match could be decided by a moment of individual brilliance from either side.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Brazil's attacking quality gives them a narrow edge, but Morocco's 2022 pedigree and 2023 victory make this extremely tight. Brazil's experience and squad depth could prove decisive, but expect Morocco to make them work for it.",
+    "alternativeScenario": "Morocco's organized defense and counter-attacking threat could produce a stunning 1-0 or 2-1 upset. A repeat of their 2023 friendly victory is entirely feasible."
+  },
+  "pastEncountersSummary": "Three meetings have produced three different outcomes. Brazil's dominant 3-0 in 1998 established their superiority, but Morocco's 2023 friendly win (2-1) flipped the narrative. The 2026 World Cup encounter will determine whether Morocco's rise is truly complete.",
+  "funFacts": [
+    "Morocco became the first African nation to reach a World Cup semi-final in 2022",
+    "Brazil haven't won the World Cup since 2002 - their longest drought ever",
+    "Morocco's 2022 run included zero goals conceded in open play until the semi-final",
+    "Achraf Hakimi scored a Panenka penalty to eliminate Spain in 2022"
+  ],
+  "isFirstMeeting": false
+}

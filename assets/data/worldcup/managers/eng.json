@@ -1,0 +1,21 @@
+{
+  "id": "manager_eng",
+  "firstName": "Thomas",
+  "lastName": "Tuchel",
+  "commonName": "Thomas Tuchel",
+  "dateOfBirth": "1973-08-29",
+  "nationality": "Germany",
+  "currentTeam": "England",
+  "currentTeamCode": "ENG",
+  "photoUrl": "assets/managers/tuchel.png",
+  "preferredFormation": "3-4-2-1",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 15,
+  "previousTeams": ["Mainz 05", "Borussia Dortmund", "PSG", "Chelsea", "Bayern Munich"],
+  "trophies": ["UEFA Champions League 2021", "DFB-Pokal", "Ligue 1", "Bundesliga"],
+  "careerWins": 280,
+  "careerDraws": 90,
+  "careerLosses": 100,
+  "careerWinPercentage": 60,
+  "bio": "German tactician appointed to end England decades-long wait for major tournament success. Known for tactical adaptability and elite preparation."
+}

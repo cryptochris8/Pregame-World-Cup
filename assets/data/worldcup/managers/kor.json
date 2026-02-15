@@ -1,0 +1,21 @@
+{
+  "id": "manager_kor",
+  "firstName": "Hong",
+  "lastName": "Myung-bo",
+  "commonName": "Hong Myung-bo",
+  "dateOfBirth": "1969-02-12",
+  "nationality": "South Korea",
+  "currentTeam": "South Korea",
+  "currentTeamCode": "KOR",
+  "photoUrl": "assets/managers/hongmyungbo.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 12,
+  "previousTeams": ["South Korea U23", "South Korea NT", "Ulsan Hyundai"],
+  "trophies": ["K League 1", "Asian Games Gold"],
+  "careerWins": 100,
+  "careerDraws": 50,
+  "careerLosses": 45,
+  "careerWinPercentage": 51,
+  "bio": "Legendary defender who captained Korea to 2002 World Cup semi-finals. Returns to lead the national team with defensive expertise."
+}

@@ -1,0 +1,52 @@
+{
+  "team1Code": "NED",
+  "team2Code": "POR",
+  "team1Name": "Netherlands",
+  "team2Name": "Portugal",
+  "historicalAnalysis": "Netherlands and Portugal's most famous encounter was the infamous \"Battle of Nuremberg\" at the 2006 World Cup, where 16 yellow cards and 4 red cards were shown. Portugal won 1-0 in a brutal match. Their rivalry has cooled since.",
+  "keyStorylines": [
+    "Rematch of 2006's most violent World Cup match",
+    "Dutch organization vs Portuguese flair",
+    "Ronaldo facing Van Dijk"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "position": "Defender",
+      "reason": "World-class defender"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "Legendary goal scorer"
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "position": "Forward",
+      "reason": "Dutch goal threat"
+    },
+    {
+      "name": "Bruno Fernandes",
+      "teamCode": "POR",
+      "position": "Midfielder",
+      "reason": "Creative hub"
+    }
+  ],
+  "tacticalPreview": "Dutch structure vs Portuguese individual brilliance. Van Dijk vs Ronaldo will be fascinating. Midfield battle crucial.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Two quality teams likely to cancel each other out."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "The 2006 match had 16 yellow cards and 4 red cards",
+    "Referee Valentin Ivanov set a World Cup record for cards",
+    "Portugal won that infamous match 1-0"
+  ],
+  "isFirstMeeting": false
+}

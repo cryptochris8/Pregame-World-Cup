@@ -1,0 +1,55 @@
+{
+  "team1Code": "CIV",
+  "team2Code": "ECU",
+  "team1Name": "Ivory Coast",
+  "team2Name": "Ecuador",
+  "historicalAnalysis": "Ivory Coast and Ecuador have met only once—a 2006 friendly that the Elephants won 3-2. Both nations have been consistent World Cup qualifiers in the modern era, representing the best of African and South American football respectively.\n\nIvory Coast are the reigning AFCON champions, winning on home soil in 2024 after a dramatic tournament. Their blend of European-based stars and local heroes has created a balanced squad capable of competing with anyone.\n\nEcuador impressed at the 2022 World Cup with wins over Qatar and draws against the Netherlands and Senegal. Their young squad has matured, with several players now featuring at top European clubs.",
+  "keyStorylines": [
+    "Reigning AFCON champions vs South American dark horses",
+    "African physical power vs South American technical flair",
+    "Both teams have World Cup knockout round aspirations",
+    "Two nations with similar World Cup pedigree in a crucial group match"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Sébastien Haller",
+      "teamCode": "CIV",
+      "position": "Forward",
+      "reason": "Dortmund striker who overcame cancer to lead the Elephants"
+    },
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Chelsea's £100m+ midfield dynamo"
+    },
+    {
+      "name": "Serge Aurier",
+      "teamCode": "CIV",
+      "position": "Defender",
+      "reason": "Experienced former Spurs defender marshaling the backline"
+    },
+    {
+      "name": "Kendry Páez",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Teenage prodigy already signed by Chelsea"
+    }
+  ],
+  "tacticalPreview": "Ivory Coast's 4-3-3 is built on power and pace, with Haller as the target man and wingers providing width. Their physicality in midfield could overwhelm Ecuador.\n\nEcuador's 4-4-2 emphasizes quick passing and movement. Caicedo's ability to break up play and drive forward will be crucial, with their forwards looking to capitalize on any defensive errors.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 55,
+    "reasoning": "Two evenly matched sides should produce a tight encounter. Both have the quality to score but also defensive organization to limit chances.",
+    "alternativeScenario": "If Ivory Coast's physicality dominates, a 2-1 win is possible. If Ecuador control midfield through Caicedo, they could edge it."
+  },
+  "pastEncountersSummary": "One meeting in 2006, a friendly won 3-2 by Ivory Coast. No competitive history.",
+  "funFacts": [
+    "Sébastien Haller returned to football after beating testicular cancer in 2022",
+    "Ecuador have qualified for 5 of the last 6 World Cups",
+    "Ivory Coast's AFCON 2024 win was their third title",
+    "Caicedo's £115m transfer fee is a British record"
+  ],
+  "isFirstMeeting": false
+}

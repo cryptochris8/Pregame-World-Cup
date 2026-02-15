@@ -1,0 +1,40 @@
+{
+  "team1Code": "AUS",
+  "team2Code": "KSA",
+  "team1Name": "Australia",
+  "team2Name": "Saudi Arabia",
+  "historicalAnalysis": "Australia and Saudi Arabia have faced each other in World Cup qualifying. Saudi Arabia stunned Argentina at the 2022 World Cup.",
+  "keyStorylines": [
+    "AFC rivals meet",
+    "Saudi Arabia's 2022 Argentina upset",
+    "Australia seeking consistency"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "position": "Midfielder",
+      "reason": "Australian leader"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "KSA",
+      "position": "Winger",
+      "reason": "Scored famous goal vs Argentina"
+    }
+  ],
+  "tacticalPreview": "Both teams organized. Saudi pressing could cause problems.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 52,
+    "reasoning": "Evenly matched teams."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Saudi beat Argentina in 2022",
+    "Al-Dawsari's goal was instant classic",
+    "Both are AFC powers"
+  ],
+  "isFirstMeeting": false
+}

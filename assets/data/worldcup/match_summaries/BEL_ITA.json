@@ -1,0 +1,52 @@
+{
+  "team1Code": "BEL",
+  "team2Code": "ITA",
+  "team1Name": "Belgium",
+  "team2Name": "Italy",
+  "historicalAnalysis": "Belgium and Italy's rivalry has intensified in recent years. Italy's Euro 2020 quarter-final victory (2-1) ended Belgium's \"golden generation\" hopes, with De Bruyne playing through injury. Both nations have rich football histories.",
+  "keyStorylines": [
+    "Rematch of Euro 2020 quarter-final",
+    "Belgium's last chance for their golden generation",
+    "Italy's new era post-2022 World Cup absence"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "position": "Midfielder",
+      "reason": "Belgium's orchestrator"
+    },
+    {
+      "name": "Nicolò Barella",
+      "teamCode": "ITA",
+      "position": "Midfielder",
+      "reason": "Italy's engine"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "position": "Striker",
+      "reason": "Belgium's all-time top scorer"
+    },
+    {
+      "name": "Federico Chiesa",
+      "teamCode": "ITA",
+      "position": "Winger",
+      "reason": "Italy's most dangerous attacker"
+    }
+  ],
+  "tacticalPreview": "De Bruyne vs Barella in midfield will decide this match. Belgium's direct approach vs Italy's tactical flexibility.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Two quality teams likely to produce a tight, tactical draw."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Italy beat Belgium 2-1 at Euro 2020",
+    "Belgium missed the 2022 World Cup knockout rounds",
+    "Italy missed the 2022 World Cup entirely"
+  ],
+  "isFirstMeeting": false
+}

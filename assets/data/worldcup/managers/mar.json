@@ -1,0 +1,21 @@
+{
+  "id": "manager_mar",
+  "firstName": "Walid",
+  "lastName": "Regragui",
+  "commonName": "Walid Regragui",
+  "dateOfBirth": "1975-09-23",
+  "nationality": "Morocco",
+  "currentTeam": "Morocco",
+  "currentTeamCode": "MAR",
+  "photoUrl": "assets/managers/regragui.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 8,
+  "previousTeams": ["FUS Rabat", "Wydad Casablanca"],
+  "trophies": ["CAF Champions League 2022", "Botola Pro", "World Cup 2022 4th Place"],
+  "careerWins": 100,
+  "careerDraws": 40,
+  "careerLosses": 30,
+  "careerWinPercentage": 59,
+  "bio": "Made history by leading Morocco to 2022 World Cup semi-finals, the first African nation to achieve this. Combines defensive organization with counter-attacking threat."
+}

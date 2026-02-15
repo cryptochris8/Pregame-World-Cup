@@ -1,0 +1,39 @@
+{
+  "team1Code": "IRN",
+  "team2Code": "HON",
+  "team1Name": "Iran",
+  "team2Name": "Honduras",
+  "historicalAnalysis": "Iran and Honduras have never met at a World Cup. Iran are favorites.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Iran seeking points",
+    "Honduras underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "position": "Striker",
+      "reason": "Iran's threat"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "position": "Forward",
+      "reason": "Honduras star"
+    }
+  ],
+  "tacticalPreview": "Iran should dominate. Honduras will defend deep.",
+  "prediction": {
+    "predictedOutcome": "IRN",
+    "predictedScore": "2-0",
+    "confidence": 68,
+    "reasoning": "Iran's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Taremi plays for Inter Milan"
+  ],
+  "isFirstMeeting": true
+}

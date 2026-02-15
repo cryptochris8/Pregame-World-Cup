@@ -1,0 +1,49 @@
+{
+  "id": "BRA_GER",
+  "team1Code": "BRA",
+  "team2Code": "GER",
+  "totalMatches": 23,
+  "team1Wins": 12,
+  "team2Wins": 5,
+  "draws": 6,
+  "team1Goals": 41,
+  "team2Goals": 32,
+  "worldCupMatches": 4,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-03-27",
+  "firstMeeting": "1963-05-05",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Semi-Final",
+      "team1Score": 1,
+      "team2Score": 7,
+      "winnerCode": "GER",
+      "location": "Belo Horizonte, Brazil",
+      "description": "The Mineirazo - Germany's historic demolition"
+    },
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Final",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Yokohama, Japan",
+      "description": "Ronaldo brace crowns Brazil's 5th title"
+    },
+    {
+      "year": 1958,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Gothenburg, Sweden",
+      "description": "Brazil win group stage clash"
+    }
+  ]
+}

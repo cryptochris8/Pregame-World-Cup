@@ -1,0 +1,21 @@
+{
+  "id": "manager_cmr",
+  "firstName": "Marc",
+  "lastName": "Brys",
+  "commonName": "Marc Brys",
+  "dateOfBirth": "1962-12-15",
+  "nationality": "Belgium",
+  "currentTeam": "Cameroon",
+  "currentTeamCode": "CMR",
+  "photoUrl": "assets/managers/brys.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 25,
+  "previousTeams": ["OH Leuven", "Sint-Truiden", "Beerschot"],
+  "trophies": ["Belgian Second Division"],
+  "careerWins": 200,
+  "careerDraws": 100,
+  "careerLosses": 120,
+  "careerWinPercentage": 48,
+  "bio": "Experienced Belgian coach bringing European tactical knowledge to the Indomitable Lions."
+}

@@ -1,0 +1,53 @@
+{
+  "team1Code": "UKR",
+  "team2Code": "CRC",
+  "team1Name": "Ukraine",
+  "team2Name": "Costa Rica",
+  "historicalAnalysis": "Ukraine and Costa Rica have never met at a World Cup. This is a crucial match for both teams seeking to advance.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Ukraine fighting for their people",
+    "Costa Rica underdogs",
+    "Both teams need result"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mykhailo Mudryk",
+      "teamCode": "UKR",
+      "position": "Winger",
+      "reason": "Ukraine's star"
+    },
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "position": "Goalkeeper",
+      "reason": "Legendary keeper"
+    },
+    {
+      "name": "Oleksandr Zinchenko",
+      "teamCode": "UKR",
+      "position": "Midfielder",
+      "reason": "Arsenal star"
+    },
+    {
+      "name": "Joel Campbell",
+      "teamCode": "CRC",
+      "position": "Forward",
+      "reason": "Costa Rica's threat"
+    }
+  ],
+  "tacticalPreview": "Ukraine should control possession. Costa Rica will defend and counter. Mudryk vs Navas will be key.",
+  "prediction": {
+    "predictedOutcome": "UKR",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Ukraine's quality should prove decisive."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "First World Cup meeting",
+    "Ukraine qualified through playoffs",
+    "Costa Rica reached 2014 quarter-finals"
+  ],
+  "isFirstMeeting": true
+}

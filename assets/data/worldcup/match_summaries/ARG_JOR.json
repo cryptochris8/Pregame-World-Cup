@@ -1,0 +1,55 @@
+{
+  "team1Code": "JOR",
+  "team2Code": "ARG",
+  "team1Name": "Jordan",
+  "team2Name": "Argentina",
+  "historicalAnalysis": "This is a first ever meeting between Jordan and Argentina. Jordan make their World Cup debut, while Argentina are the reigning champions with Messi potentially playing his final World Cup matches.\n\nArgentina's 2022 triumph was the culmination of Messi's career, finally lifting the trophy that had eluded him. The squad's mentality and togetherness make them formidable.\n\nJordan's qualification is historic for the nation. Their 2023 Asian Cup final appearance showed they can compete at the highest level in Asia, but Argentina represents an entirely different challenge.",
+  "keyStorylines": [
+    "Jordan's historic World Cup debut vs reigning champions",
+    "Messi potentially in his final World Cup matches",
+    "First ever meeting between these nations",
+    "Middle Eastern debutants vs South American giants"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The GOAT in his final World Cup"
+    },
+    {
+      "name": "Mousa Al-Taamari",
+      "teamCode": "JOR",
+      "position": "Winger",
+      "reason": "Jordan's star player"
+    },
+    {
+      "name": "Julián Álvarez",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "Man City's striker"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "teamCode": "JOR",
+      "position": "Forward",
+      "reason": "Young Jordanian striker"
+    }
+  ],
+  "tacticalPreview": "Argentina's 4-3-3 is built on collective excellence. Messi still provides magic, but the system doesn't depend solely on him anymore.\n\nJordan's 4-4-2 will be compact and disciplined. Their gameplan is survival—frustrate Argentina and hope for any counter-attacking moment.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "3-0",
+    "confidence": 88,
+    "reasoning": "The gulf in quality is enormous. Argentina should control and dominate against World Cup debutants.",
+    "alternativeScenario": "If Jordan defend heroically, Argentina might only manage 1-0 with growing frustration."
+  },
+  "pastEncountersSummary": "First ever meeting at any level.",
+  "funFacts": [
+    "This is Jordan's first World Cup appearance",
+    "Messi has won more Ballon d'Or awards than any player",
+    "Jordan reached the 2023 Asian Cup final",
+    "Argentina's 2022 win was their third World Cup title"
+  ],
+  "isFirstMeeting": true
+}

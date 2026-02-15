@@ -1,0 +1,39 @@
+{
+  "id": "CIV_GER",
+  "team1Code": "CIV",
+  "team2Code": "GER",
+  "totalMatches": 2,
+  "team1Wins": 0,
+  "team2Wins": 0,
+  "draws": 2,
+  "team1Goals": 3,
+  "team2Goals": 3,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2021-07-28",
+  "firstMeeting": "2009-11-18",
+  "notableMatches": [
+    {
+      "year": 2009,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Gelsenkirchen, Germany",
+      "description": "Drogba leads Ivory Coast to hard-fought draw"
+    },
+    {
+      "year": 2021,
+      "tournament": "Olympics",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Miyagi, Japan",
+      "description": "Draw eliminates Germany from Tokyo Olympics"
+    }
+  ]
+}

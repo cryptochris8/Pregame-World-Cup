@@ -1,0 +1,21 @@
+{
+  "id": "manager_fra",
+  "firstName": "Didier",
+  "lastName": "Deschamps",
+  "commonName": "Didier Deschamps",
+  "dateOfBirth": "1968-10-15",
+  "nationality": "France",
+  "currentTeam": "France",
+  "currentTeamCode": "FRA",
+  "photoUrl": "assets/managers/deschamps.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 20,
+  "previousTeams": ["Monaco", "Juventus", "Marseille"],
+  "trophies": ["FIFA World Cup 2018", "UEFA Nations League 2021", "Ligue 1", "Serie A"],
+  "careerWins": 420,
+  "careerDraws": 150,
+  "careerLosses": 130,
+  "careerWinPercentage": 60,
+  "bio": "The only person to win World Cup as both player and coach. Deschamps has built France into consistent contenders with pragmatic yet effective football."
+}

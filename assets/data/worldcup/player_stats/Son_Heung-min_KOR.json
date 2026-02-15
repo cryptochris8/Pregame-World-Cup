@@ -1,0 +1,42 @@
+{
+  "playerName": "Son Heung-min",
+  "fifaCode": "KOR",
+  "worldCupAppearances": 11,
+  "worldCupGoals": 3,
+  "worldCupAssists": 1,
+  "previousWorldCups": [2014, 2018, 2022],
+  "tournamentStats": [
+    {
+      "year": 2014,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0,
+      "stage": "Group Stage"
+    },
+    {
+      "year": 2018,
+      "matches": 3,
+      "goals": 2,
+      "assists": 0,
+      "stage": "Group Stage",
+      "keyMoment": "Goal vs Germany in famous upset"
+    },
+    {
+      "year": 2022,
+      "matches": 4,
+      "goals": 1,
+      "assists": 1,
+      "stage": "Round of 16",
+      "keyMoment": "Played with protective mask after facial injury"
+    }
+  ],
+  "worldCupAwards": [],
+  "memorableMoments": [
+    "Goal to seal Germany elimination 2018",
+    "Brave performance with face mask 2022",
+    "Tears after reaching knockouts 2022"
+  ],
+  "worldCupLegacyRating": 6,
+  "comparisonToLegend": "Best Asian player of his generation, compared to Park Ji-sung",
+  "worldCup2026Prediction": "Will be 33 - likely final chance to make deep World Cup run"
+}

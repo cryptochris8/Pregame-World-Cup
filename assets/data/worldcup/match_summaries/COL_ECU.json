@@ -1,0 +1,55 @@
+{
+  "team1Code": "COL",
+  "team2Code": "ECU",
+  "team1Name": "Colombia",
+  "team2Name": "Ecuador",
+  "historicalAnalysis": "Colombia and Ecuador share a border and a passionate football rivalry. The Andean neighbors have met over 30 times, with Colombia holding a significant advantage. World Cup meetings have been rare, but qualifiers and Copa América clashes are always intense affairs.\n\nColombia's 2014 World Cup quarter-final run, led by James Rodríguez's Golden Boot performance, remains their finest hour. Ecuador have qualified for four World Cups but struggle to advance past the group stage.\n\nBoth nations feature rising talents: Colombia's Luis Díaz has become world-class at Liverpool, while Ecuador's Moisés Caicedo is one of the Premier League's best midfielders.",
+  "keyStorylines": [
+    "Andean derby with World Cup stakes",
+    "Luis Díaz vs Ecuador's defense: Can Colombia's star shine?",
+    "Ecuador's best generation seeking breakthrough",
+    "James Rodríguez seeking final World Cup redemption"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luis Díaz",
+      "teamCode": "COL",
+      "position": "Winger",
+      "reason": "Liverpool's explosive winger and Colombia's talisman"
+    },
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Chelsea's record signing and Ecuador's midfield general"
+    },
+    {
+      "name": "James Rodríguez",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "2014 Golden Boot winner in potential final World Cup"
+    },
+    {
+      "name": "Enner Valencia",
+      "teamCode": "ECU",
+      "position": "Striker",
+      "reason": "Ecuador's all-time World Cup leading scorer"
+    }
+  ],
+  "tacticalPreview": "Colombia's flair and attacking intent vs Ecuador's organization and counter-attacking threat. Caicedo vs James in midfield will be crucial. Colombia's pace on the wings could exploit Ecuador's fullbacks.",
+  "prediction": {
+    "predictedOutcome": "COL",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "Colombia's superior attacking quality and big-game experience give them an edge, but Ecuador will compete fiercely.",
+    "alternativeScenario": "Ecuador's defensive discipline and counter-attacks could produce a shock 1-0 victory."
+  },
+  "pastEncountersSummary": "Over 30 meetings with Colombia dominant. Rare World Cup encounters, but always intense in qualifiers.",
+  "funFacts": [
+    "Colombia and Ecuador share a land border",
+    "Enner Valencia has scored in both of Ecuador's World Cup campaigns (2014, 2022)",
+    "James Rodríguez won the 2014 World Cup Golden Boot with 6 goals",
+    "Caicedo became the most expensive Premier League signing ever"
+  ],
+  "isFirstMeeting": false
+}

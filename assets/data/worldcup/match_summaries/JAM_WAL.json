@@ -1,0 +1,39 @@
+{
+  "team1Code": "WAL",
+  "team2Code": "JAM",
+  "team1Name": "Wales",
+  "team2Name": "Jamaica",
+  "historicalAnalysis": "First World Cup meeting between Wales and Jamaica.",
+  "keyStorylines": [
+    "First World Cup meeting",
+    "Jamaica's first World Cup since 1998",
+    "Battle for Group I points"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Brennan Johnson",
+      "teamCode": "WAL",
+      "position": "Winger",
+      "reason": "Welsh talent"
+    },
+    {
+      "name": "Leon Bailey",
+      "teamCode": "JAM",
+      "position": "Winger",
+      "reason": "Jamaica's star"
+    }
+  ],
+  "tacticalPreview": "Both teams evenly matched. Set pieces could decide.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 50,
+    "reasoning": "Evenly matched underdogs."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Jamaica's first World Cup since 1998",
+    "Bailey plays for Aston Villa"
+  ],
+  "isFirstMeeting": true
+}

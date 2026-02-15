@@ -1,0 +1,40 @@
+{
+  "team1Code": "IRN",
+  "team2Code": "KSA",
+  "team1Name": "Iran",
+  "team2Name": "Saudi Arabia",
+  "historicalAnalysis": "Iran and Saudi Arabia share intense regional rivalry extending beyond football.",
+  "keyStorylines": [
+    "Middle East derby",
+    "Regional rivals clash",
+    "Intense atmosphere expected"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "position": "Striker",
+      "reason": "Iran's star"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "KSA",
+      "position": "Winger",
+      "reason": "Saudi hero"
+    }
+  ],
+  "tacticalPreview": "Intense match with regional pride at stake.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "0-0",
+    "confidence": 48,
+    "reasoning": "Tight, tense affair likely."
+  },
+  "pastEncountersSummary": "",
+  "funFacts": [
+    "Intense regional rivalry",
+    "Both qualified through AFC",
+    "Historic regional tensions"
+  ],
+  "isFirstMeeting": false
+}

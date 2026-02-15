@@ -1,0 +1,55 @@
+{
+  "team1Code": "CRO",
+  "team2Code": "GHA",
+  "team1Name": "Croatia",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "Croatia and Ghana have met only once: a goalless friendly draw in 2008 ahead of Euro 2008. That single encounter provides virtually no reference point for this 2026 World Cup match, making it one of the tournament's most intriguing matchups between accomplished football nations.\n\nCroatia's World Cup pedigree is exceptional for a nation of 4 million people. Third place in 1998, runners-up in 2018, and third again in 2022, they consistently overperform expectations. Their midfield trio of Modrić, Kovačić, and Brozović has defined an era.\n\nGhana's 2010 quarter-final run, cruelly ended by Suárez's handball, remains their finest World Cup hour. They've struggled since, with early exits in 2014 and 2022. The 2026 tournament represents a chance to restore African pride and prove that 2010 wasn't a fluke.",
+  "keyStorylines": [
+    "Croatia's tournament experience vs Ghana's hunger to return to knockout rounds",
+    "Can Ghana's pressing game disrupt Croatia's midfield maestros?",
+    "First World Cup meeting between these nations",
+    "Modrić's potential farewell against an African side seeking breakthrough"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "The 40-year-old maestro in what may be his final World Cup"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Explosive talent who can change games single-handedly"
+    },
+    {
+      "name": "Joško Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "World-class center-back who excels against pace"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Must win the midfield battle for Ghana to succeed"
+    }
+  ],
+  "tacticalPreview": "Croatia's 4-3-3 is built around midfield dominance. If Modrić, Kovačić, and Brozović control possession, Ghana will struggle to get the ball. Croatia's patience and experience in tournament football is unmatched.\n\nGhana's energetic 4-2-3-1 relies on pressing and athleticism. Kudus's dribbling and Partey's tackles could disrupt Croatia's rhythm. Ghana need to stay aggressive for 90 minutes; any let-up and Croatia will punish them.",
+  "prediction": {
+    "predictedOutcome": "CRO",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Croatia's tournament experience and midfield mastery should prove decisive. Ghana have the talent to compete but lack the consistency and tactical discipline that Croatia possess.",
+    "alternativeScenario": "If Ghana score early and disrupt Croatia's rhythm, a shock result is possible. Their pace and energy could trouble Croatia's aging squad."
+  },
+  "pastEncountersSummary": "Just one meeting: a 0-0 friendly in 2008. Neither team has any World Cup history against the other. This is a true clash of unknowns on the biggest stage.",
+  "funFacts": [
+    "This is the first World Cup meeting between Croatia and Ghana",
+    "Croatia's population (4 million) is smaller than Ghana's capital city Accra",
+    "Ghana's 2010 quarter-final run came 12 years after Croatia's 1998 third-place finish",
+    "Both nations have produced multiple Ballon d'Or nominees: Modrić (winner), Essien (nominee)"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "USA",
+  "team2Code": "MEX",
+  "team1Name": "United States",
+  "team2Name": "Mexico",
+  "historicalAnalysis": "The United States and Mexico share one of football's most intense rivalries, played out across more than 70 matches since 1934. This CONCACAF clash transcends sport, reflecting cultural, political, and historical tensions between neighboring nations. Mexico dominated the rivalry for decades, but the USA's growth since the 1990s has created genuine parity.\n\nThe 2002 World Cup Round of 16 meeting in South Korea remains the rivalry's defining World Cup moment. Brian McBride's header and Landon Donovan's strike gave the USA a famous 2-0 victory, eliminating Mexico and sending the Americans to the quarter-finals. That result fundamentally changed the power dynamic.\n\nFor the 2026 World Cup, both nations are co-hosts with enormous pressure to perform. This group stage clash in front of a divided home crowd will be one of the tournament's most anticipated matches.",
+  "keyStorylines": [
+    "The biggest rivalry in CONCACAF meets on the World Cup stage as co-hosts",
+    "USA seeking to establish dominance in their own backyard",
+    "Mexico looking to reassert themselves after recent USA victories",
+    "Potentially 100,000+ fans creating an unprecedented atmosphere"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "position": "Winger",
+      "reason": "Captain America carrying the hopes of the host nation"
+    },
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "position": "Winger",
+      "reason": "Mexico's most dangerous attacker with World Cup experience"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "position": "Midfielder",
+      "reason": "Box-to-box energy and big-game experience from Juventus"
+    },
+    {
+      "name": "Edson Álvarez",
+      "teamCode": "MEX",
+      "position": "Midfielder",
+      "reason": "Mexico's midfield anchor and captain"
+    }
+  ],
+  "tacticalPreview": "The USA under Pochettino will press aggressively, looking to force Mexico into mistakes. Mexico's technically gifted midfield will try to control possession and exploit spaces. The key battle is in central midfield where McKennie and Álvarez will clash.",
+  "prediction": {
+    "predictedOutcome": "USA",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Home advantage and recent form favor the USA, but Mexico's tournament experience makes this extremely close.",
+    "alternativeScenario": "Mexico's big-game experience could see them snatch a 1-0 victory if they control tempo."
+  },
+  "pastEncountersSummary": "Over 70 meetings with Mexico historically dominant, but USA have won key recent encounters including the 2002 World Cup and multiple Nations League finals.",
+  "funFacts": [
+    "This will be the first World Cup meeting between these rivals since 2002",
+    "The 2002 match was watched by over 20 million Americans",
+    "Both nations are co-hosting for the first time in World Cup history",
+    "The winner of dos a cero (2-0) scoreline has become a rallying cry for US fans"
+  ],
+  "isFirstMeeting": false
+}

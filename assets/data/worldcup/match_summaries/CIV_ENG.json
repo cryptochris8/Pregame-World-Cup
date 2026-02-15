@@ -1,0 +1,55 @@
+{
+  "team1Code": "ENG",
+  "team2Code": "CIV",
+  "team1Name": "England",
+  "team2Name": "Ivory Coast",
+  "historicalAnalysis": "England and Ivory Coast have minimal competitive history. Their most notable meeting was a 2011 friendly at Wembley (2-2). This World Cup encounter represents a significant upgrade.\n\nIvory Coast's AFCON 2024 triumph and England's tournament pedigree suggest contrasting styles: English organization vs Ivorian flair.",
+  "keyStorylines": [
+    "First significant competitive meeting",
+    "England seeking to top the Group of Death",
+    "AFCON champions testing themselves against European elite",
+    "Premier League connections throughout both squads"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "England's talisman"
+    },
+    {
+      "name": "Sébastien Haller",
+      "teamCode": "CIV",
+      "position": "Striker",
+      "reason": "Former Premier League striker and AFCON hero"
+    },
+    {
+      "name": "Phil Foden",
+      "teamCode": "ENG",
+      "position": "Winger",
+      "reason": "Manchester City's creative force"
+    },
+    {
+      "name": "Simon Adingra",
+      "teamCode": "CIV",
+      "position": "Winger",
+      "reason": "Brighton's exciting talent"
+    }
+  ],
+  "tacticalPreview": "England should dominate possession, but Ivory Coast's pace on the counter is dangerous. Set pieces could be crucial given Ivory Coast's aerial threat.",
+  "prediction": {
+    "predictedOutcome": "ENG",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "England's quality should prove too much, though Ivory Coast will make it competitive.",
+    "alternativeScenario": "Ivory Coast scoring early could produce a shock result."
+  },
+  "pastEncountersSummary": "Minimal history. A 2011 friendly (2-2) is their most notable previous meeting.",
+  "funFacts": [
+    "First World Cup meeting between England and Ivory Coast",
+    "Multiple Ivory Coast players play in the Premier League",
+    "Ivory Coast's AFCON 2024 win was their third continental title",
+    "England are in the Group of Death with France and Spain"
+  ],
+  "isFirstMeeting": true
+}

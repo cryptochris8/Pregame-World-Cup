@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "HAI",
+  "team1Name": "Brazil",
+  "team2Name": "Haiti",
+  "historicalAnalysis": "Brazil and Haiti have met just once—a 2016 Copa América Centenario match that Brazil won 7-1. That scoreline reflected the gulf in quality, but Haiti's mere presence at another major tournament shows their progress.\n\nBrazil enter seeking to end their World Cup drought—they haven't lifted the trophy since 2002, their longest wait since the tournament began. After 2022's painful quarter-final exit, the pressure is immense.\n\nHaiti's first World Cup in 52 years is about creating memories and inspiring the next generation. Playing Brazil, football's most decorated nation, is the ultimate test.",
+  "keyStorylines": [
+    "Brazil's quest to end their longest World Cup drought",
+    "Haiti's historic return to the World Cup after 52 years",
+    "Five-time champions vs Caribbean underdogs",
+    "Rematch of 2016 Copa América encounter (7-1 Brazil)"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Real Madrid superstar and Ballon d'Or contender"
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "position": "Forward",
+      "reason": "Haiti's powerful target man"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Real Madrid's clinical finisher"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "position": "Winger",
+      "reason": "MLS winger providing pace"
+    }
+  ],
+  "tacticalPreview": "Brazil's 4-2-3-1 maximizes attacking firepower with Vinícius and Rodrygo terrorizing flanks. Their quick passing and movement should create numerous chances.\n\nHaiti's 5-4-1 will park the bus and hope to survive. Their gameplan is damage limitation while looking for any counter-attacking opportunity or set-piece moment.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "4-0",
+    "confidence": 92,
+    "reasoning": "The quality difference is enormous. Brazil should dominate possession and score at will against Haiti's defense.",
+    "alternativeScenario": "If Brazil are complacent and Haiti defend heroically, a \"modest\" 2-0 win with Haiti frustrating the favorites."
+  },
+  "pastEncountersSummary": "One meeting: Brazil won 7-1 at Copa América Centenario 2016.",
+  "funFacts": [
+    "Haiti's 1974 World Cup squad included Emmanuel Sanon, who scored against Italy",
+    "Brazil have won 5 World Cups—more than any other nation",
+    "Haiti are making their first World Cup appearance in 52 years",
+    "Vinícius Jr. scored in the 2024 Champions League final"
+  ],
+  "isFirstMeeting": false
+}
