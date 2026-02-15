@@ -136,12 +136,12 @@ class MatchFilterChips extends StatelessWidget {
         ],
       ),
       backgroundColor: AppTheme.backgroundCard,
-      selectedColor: AppTheme.secondaryEmerald.withOpacity(0.3),
+      selectedColor: AppTheme.secondaryEmerald.withValues(alpha:0.3),
       checkmarkColor: AppTheme.secondaryEmerald,
       side: BorderSide(
         color: isSelected
             ? AppTheme.secondaryEmerald
-            : Colors.white.withOpacity(0.2),
+            : Colors.white.withValues(alpha:0.2),
       ),
     );
   }
@@ -175,11 +175,11 @@ class StageFilterChips extends StatelessWidget {
             selected: selectedStage == null,
             onSelected: (_) => onStageChanged(null),
             backgroundColor: AppTheme.backgroundCard,
-            selectedColor: AppTheme.secondaryEmerald.withOpacity(0.3),
+            selectedColor: AppTheme.secondaryEmerald.withValues(alpha:0.3),
             side: BorderSide(
               color: selectedStage == null
                   ? AppTheme.secondaryEmerald
-                  : Colors.white.withOpacity(0.2),
+                  : Colors.white.withValues(alpha:0.2),
             ),
           ),
           const SizedBox(width: 8),
@@ -195,11 +195,11 @@ class StageFilterChips extends StatelessWidget {
               selected: selectedStage == stage,
               onSelected: (_) => onStageChanged(stage),
               backgroundColor: AppTheme.backgroundCard,
-              selectedColor: _getStageColor(stage).withOpacity(0.3),
+              selectedColor: _getStageColor(stage).withValues(alpha:0.3),
               side: BorderSide(
                 color: selectedStage == stage
                     ? _getStageColor(stage)
-                    : Colors.white.withOpacity(0.2),
+                    : Colors.white.withValues(alpha:0.2),
               ),
             ),
           )),
@@ -277,11 +277,11 @@ class GroupFilterChips extends StatelessWidget {
             selected: selectedGroup == null,
             onSelected: (_) => onGroupChanged(null),
             backgroundColor: AppTheme.backgroundCard,
-            selectedColor: AppTheme.secondaryEmerald.withOpacity(0.3),
+            selectedColor: AppTheme.secondaryEmerald.withValues(alpha:0.3),
             side: BorderSide(
               color: selectedGroup == null
                   ? AppTheme.secondaryEmerald
-                  : Colors.white.withOpacity(0.2),
+                  : Colors.white.withValues(alpha:0.2),
             ),
           ),
           const SizedBox(width: 8),
@@ -297,11 +297,11 @@ class GroupFilterChips extends StatelessWidget {
               selected: selectedGroup == group,
               onSelected: (_) => onGroupChanged(group),
               backgroundColor: AppTheme.backgroundCard,
-              selectedColor: AppTheme.primaryBlue.withOpacity(0.3),
+              selectedColor: AppTheme.primaryBlue.withValues(alpha:0.3),
               side: BorderSide(
                 color: selectedGroup == group
                     ? AppTheme.primaryBlue
-                    : Colors.white.withOpacity(0.2),
+                    : Colors.white.withValues(alpha:0.2),
               ),
             ),
           )),
@@ -341,11 +341,11 @@ class ConfederationFilterChips extends StatelessWidget {
             selected: selectedConfederation == null,
             onSelected: (_) => onConfederationChanged(null),
             backgroundColor: AppTheme.backgroundCard,
-            selectedColor: AppTheme.secondaryEmerald.withOpacity(0.3),
+            selectedColor: AppTheme.secondaryEmerald.withValues(alpha:0.3),
             side: BorderSide(
               color: selectedConfederation == null
                   ? AppTheme.secondaryEmerald
-                  : Colors.white.withOpacity(0.2),
+                  : Colors.white.withValues(alpha:0.2),
             ),
           ),
           const SizedBox(width: 8),
@@ -376,11 +376,11 @@ class ConfederationFilterChips extends StatelessWidget {
               selected: selectedConfederation == conf,
               onSelected: (_) => onConfederationChanged(conf),
               backgroundColor: AppTheme.backgroundCard,
-              selectedColor: AppTheme.primaryOrange.withOpacity(0.3),
+              selectedColor: AppTheme.primaryOrange.withValues(alpha:0.3),
               side: BorderSide(
                 color: selectedConfederation == conf
                     ? AppTheme.primaryOrange
-                    : Colors.white.withOpacity(0.2),
+                    : Colors.white.withValues(alpha:0.2),
               ),
             ),
           )),
@@ -419,11 +419,11 @@ class TeamSortChips extends StatelessWidget {
             selected: selectedOption == option,
             onSelected: (_) => onOptionChanged(option),
             backgroundColor: AppTheme.backgroundCard,
-            selectedColor: AppTheme.primaryPurple.withOpacity(0.3),
+            selectedColor: AppTheme.primaryPurple.withValues(alpha:0.3),
             side: BorderSide(
               color: selectedOption == option
                   ? AppTheme.primaryPurple
-                  : Colors.white.withOpacity(0.2),
+                  : Colors.white.withValues(alpha:0.2),
             ),
           ),
         )).toList(),
@@ -585,10 +585,10 @@ class _DatePickerStripState extends State<DatePickerStrip> {
 
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.backgroundCard.withOpacity(0.5),
+        color: AppTheme.backgroundCard.withValues(alpha:0.5),
         border: Border(
           bottom: BorderSide(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha:0.1),
             width: 1,
           ),
         ),
@@ -638,7 +638,7 @@ class _DatePickerStripState extends State<DatePickerStrip> {
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
+                        color: Colors.white.withValues(alpha:0.1),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: const Text(
@@ -704,8 +704,8 @@ class _NavButton extends StatelessWidget {
         padding: const EdgeInsets.all(6),
         decoration: BoxDecoration(
           color: enabled
-              ? AppTheme.primaryOrange.withOpacity(0.2)
-              : Colors.white.withOpacity(0.05),
+              ? AppTheme.primaryOrange.withValues(alpha:0.2)
+              : Colors.white.withValues(alpha:0.05),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Icon(
@@ -750,11 +750,11 @@ class _CompactDateItem extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   colors: [
                     AppTheme.primaryOrange,
-                    AppTheme.primaryOrange.withOpacity(0.8),
+                    AppTheme.primaryOrange.withValues(alpha:0.8),
                   ],
                 )
               : null,
-          color: isSelected ? null : Colors.white.withOpacity(0.05),
+          color: isSelected ? null : Colors.white.withValues(alpha:0.05),
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
             color: isSelected
@@ -795,7 +795,7 @@ class _CompactDateItem extends StatelessWidget {
                 height: 18,
                 decoration: BoxDecoration(
                   color: isSelected
-                      ? Colors.white.withOpacity(0.3)
+                      ? Colors.white.withValues(alpha:0.3)
                       : AppTheme.secondaryEmerald,
                   shape: BoxShape.circle,
                 ),

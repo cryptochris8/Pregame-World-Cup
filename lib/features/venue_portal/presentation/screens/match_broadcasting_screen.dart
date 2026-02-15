@@ -237,7 +237,7 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       color: isSelected
-          ? colorScheme.primaryContainer.withOpacity(0.5)
+          ? colorScheme.primaryContainer.withValues(alpha:0.5)
           : null,
       child: InkWell(
         onTap: () {
@@ -348,7 +348,7 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(2),
           border: Border.all(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha:0.1),
           ),
         ),
       ),

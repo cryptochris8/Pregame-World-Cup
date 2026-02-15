@@ -403,7 +403,7 @@ class _FanPassScreenState extends State<FanPassScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.primaryPurple.withOpacity(0.3),
+            color: AppTheme.primaryPurple.withValues(alpha:0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -429,7 +429,7 @@ class _FanPassScreenState extends State<FanPassScreen>
           Text(
             'June 11 - July 19, 2026',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha:0.9),
               fontSize: 14,
             ),
           ),
@@ -437,7 +437,7 @@ class _FanPassScreenState extends State<FanPassScreen>
           Text(
             'Unlock premium features for the entire tournament',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.8),
+              color: Colors.white.withValues(alpha:0.8),
               fontSize: 14,
             ),
             textAlign: TextAlign.center,
@@ -454,7 +454,7 @@ class _FanPassScreenState extends State<FanPassScreen>
       margin: const EdgeInsets.only(bottom: 24),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppTheme.successColor.withOpacity(0.15),
+        color: AppTheme.successColor.withValues(alpha:0.15),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: AppTheme.successColor),
       ),
@@ -545,7 +545,7 @@ class _FanPassScreenState extends State<FanPassScreen>
         boxShadow: isRecommended
             ? [
                 BoxShadow(
-                  color: AppTheme.primaryOrange.withOpacity(0.3),
+                  color: AppTheme.primaryOrange.withValues(alpha:0.3),
                   blurRadius: 15,
                   offset: const Offset(0, 5),
                 ),
@@ -656,9 +656,9 @@ class _FanPassScreenState extends State<FanPassScreen>
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     decoration: BoxDecoration(
-                      color: AppTheme.successColor.withOpacity(0.15),
+                      color: AppTheme.successColor.withValues(alpha:0.15),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: AppTheme.successColor.withOpacity(0.3)),
+                      border: Border.all(color: AppTheme.successColor.withValues(alpha:0.3)),
                     ),
                     child: const Text(
                       'Current Plan',
@@ -688,7 +688,7 @@ class _FanPassScreenState extends State<FanPassScreen>
                       boxShadow: [
                         BoxShadow(
                           color: (isRecommended ? AppTheme.primaryOrange : AppTheme.primaryPurple)
-                              .withOpacity(0.4),
+                              .withValues(alpha:0.4),
                           blurRadius: 10,
                           offset: const Offset(0, 4),
                         ),

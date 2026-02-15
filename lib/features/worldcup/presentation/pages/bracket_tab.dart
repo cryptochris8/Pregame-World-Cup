@@ -91,10 +91,10 @@ class BracketTab extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     margin: const EdgeInsets.only(bottom: 16),
                     decoration: BoxDecoration(
-                      color: AppTheme.secondaryEmerald.withOpacity(0.2),
+                      color: AppTheme.secondaryEmerald.withValues(alpha:0.2),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                        color: AppTheme.secondaryEmerald.withOpacity(0.5),
+                        color: AppTheme.secondaryEmerald.withValues(alpha:0.5),
                       ),
                     ),
                     child: Row(

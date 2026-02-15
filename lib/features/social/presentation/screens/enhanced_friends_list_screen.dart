@@ -195,7 +195,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
                   Container(
                     margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withValues(alpha:0.2),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: IconButton(
@@ -212,7 +212,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
                   Container(
                     margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
+                      color: Colors.white.withValues(alpha:0.2),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: IconButton(
@@ -432,6 +432,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       await _socialService.acceptFriendRequest(request.connectionId);
       await _loadAllData();
 
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Friend request accepted!'),
@@ -448,6 +449,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       await _socialService.declineFriendRequest(request.connectionId);
       await _loadAllData();
 
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Friend request declined'),
@@ -455,6 +457,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         ),
       );
     } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to decline friend request'),
@@ -469,6 +472,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       await _socialService.cancelFriendRequest(request.connectionId);
       await _loadAllData();
 
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Friend request cancelled'),
@@ -476,6 +480,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         ),
       );
     } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to cancel friend request'),
@@ -498,6 +503,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           await _socialService.removeFriend(currentUser.userId, friend.userId);
           await _loadAllData();
 
+          if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text('${friend.displayName} removed from friends'),
@@ -506,6 +512,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           );
         }
       } catch (e) {
+        if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to remove ${friend.displayName}'),
@@ -529,6 +536,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           await _socialService.blockUser(currentUser.userId, friend.userId);
           await _loadAllData();
 
+          if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text('${friend.displayName} has been blocked'),
@@ -537,6 +545,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           );
         }
       } catch (e) {
+        if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to block ${friend.displayName}'),

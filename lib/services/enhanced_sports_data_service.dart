@@ -450,18 +450,6 @@ class EnhancedSportsDataService {
     }
   }
 
-  /// Get nationality-appropriate random name
-  String _getRandomNationality() {
-    final nationalities = [
-      'Brazil', 'Argentina', 'France', 'Germany', 'Spain',
-      'England', 'Portugal', 'Netherlands', 'Italy', 'Belgium',
-      'Colombia', 'Uruguay', 'Mexico', 'United States', 'Japan',
-      'South Korea', 'Morocco', 'Senegal', 'Nigeria', 'Croatia',
-      'Canada', 'Australia', 'Ecuador', 'Switzerland', 'Denmark',
-    ];
-    return nationalities[_random.nextInt(nationalities.length)];
-  }
-
   /// Get height in cm appropriate for soccer position
   String _getPositionHeight(String position) {
     switch (position) {
@@ -513,87 +501,10 @@ class EnhancedSportsDataService {
     return clubs[_random.nextInt(clubs.length)];
   }
 
-  /// Generate soccer-appropriate player statistics by position
-  Map<String, dynamic> _generatePlayerStats(String position) {
-    switch (position) {
-      case 'GK':
-        return {
-          'saves': 30 + _random.nextInt(50),
-          'cleanSheets': 5 + _random.nextInt(12),
-          'goalsConceded': 10 + _random.nextInt(25),
-          'savePercentage': 68.0 + _random.nextInt(15),
-        };
-      case 'CB': case 'LB': case 'RB':
-        return {
-          'tackles': 40 + _random.nextInt(40),
-          'interceptions': 20 + _random.nextInt(30),
-          'clearances': 30 + _random.nextInt(50),
-          'blocks': 10 + _random.nextInt(15),
-          'aerialDuelsWon': 20 + _random.nextInt(40),
-        };
-      case 'CDM': case 'CM': case 'CAM':
-        return {
-          'goals': _random.nextInt(10),
-          'assists': 2 + _random.nextInt(12),
-          'keyPasses': 20 + _random.nextInt(40),
-          'chancesCreated': 15 + _random.nextInt(30),
-          'tackles': 20 + _random.nextInt(30),
-          'passAccuracy': 82.0 + _random.nextInt(10),
-        };
-      case 'LW': case 'RW': case 'ST': case 'CF':
-        return {
-          'goals': 5 + _random.nextInt(20),
-          'assists': 2 + _random.nextInt(10),
-          'shots': 30 + _random.nextInt(50),
-          'shotsOnTarget': 15 + _random.nextInt(25),
-          'minutesPlayed': 1500 + _random.nextInt(1200),
-          'dribbles': 20 + _random.nextInt(40),
-        };
-      default:
-        return {
-          'goals': _random.nextInt(5),
-          'assists': _random.nextInt(5),
-          'minutesPlayed': 500 + _random.nextInt(1500),
-        };
-    }
-  }
-
   /// Get specific player details from SportsData.io
   Future<Player?> _getSportsDataPlayer(String playerId, String teamKey) async {
     final players = await _getSportsDataRoster(teamKey);
     return players.where((p) => p.id == playerId).firstOrNull;
-  }
-
-  /// Parse player statistics from SportsData.io response
-  PlayerStatistics? _parsePlayerStats(Map<String, dynamic> data) {
-    return PlayerStatistics(
-      goalkeeper: GoalkeeperStats(
-        saves: data['Saves']?.toInt() ?? 0,
-        cleanSheets: data['CleanSheets']?.toInt() ?? 0,
-        goalsConceded: data['GoalsConceded']?.toInt() ?? 0,
-        savePercentage: data['SavePercentage']?.toDouble() ?? 0.0,
-      ),
-      attacking: AttackingStats(
-        goals: data['Goals']?.toInt() ?? 0,
-        assists: data['Assists']?.toInt() ?? 0,
-        shots: data['Shots']?.toInt() ?? 0,
-        shotsOnTarget: data['ShotsOnTarget']?.toInt() ?? 0,
-        minutesPlayed: data['MinutesPlayed']?.toInt() ?? 0,
-      ),
-      creative: CreativeStats(
-        keyPasses: data['KeyPasses']?.toInt() ?? 0,
-        crosses: data['Crosses']?.toInt() ?? 0,
-        throughBalls: data['ThroughBalls']?.toInt() ?? 0,
-        chancesCreated: data['ChancesCreated']?.toInt() ?? 0,
-      ),
-      defensive: DefensiveStats(
-        tackles: data['Tackles']?.toInt() ?? 0,
-        interceptions: data['Interceptions']?.toInt() ?? 0,
-        clearances: data['Clearances']?.toInt() ?? 0,
-        blocks: data['Blocks']?.toInt() ?? 0,
-        aerialDuelsWon: data['AerialDuelsWon']?.toInt() ?? 0,
-      ),
-    );
   }
 
   /// Organize players by position for squad depth view

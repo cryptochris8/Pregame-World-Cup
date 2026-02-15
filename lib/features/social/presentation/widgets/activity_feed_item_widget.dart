@@ -168,7 +168,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
           Container(
             padding: const EdgeInsets.all(6),
             decoration: BoxDecoration(
-              color: _getActivityTypeColor().withOpacity(0.2),
+              color: _getActivityTypeColor().withValues(alpha:0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(
@@ -219,7 +219,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
           Chip(
             label: const Text('Game Event'),
             avatar: const Icon(Icons.sports_soccer, size: 16, color: Colors.white),
-            backgroundColor: Colors.green.withOpacity(0.3),
+            backgroundColor: Colors.green.withValues(alpha:0.3),
             labelStyle: const TextStyle(
               color: Colors.white,
               fontSize: 12,
@@ -230,7 +230,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
           Chip(
             label: Text(widget.activity.metadata['venueName'] ?? 'Venue'),
             avatar: const Icon(Icons.location_on, size: 16, color: Colors.white),
-            backgroundColor: Colors.blue.withOpacity(0.3),
+            backgroundColor: Colors.blue.withValues(alpha:0.3),
             labelStyle: const TextStyle(
               color: Colors.white,
               fontSize: 12,

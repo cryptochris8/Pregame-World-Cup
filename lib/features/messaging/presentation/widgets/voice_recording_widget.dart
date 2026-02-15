@@ -202,10 +202,10 @@ class _VoiceRecordingWidgetState extends State<VoiceRecordingWidget>
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       decoration: BoxDecoration(
-        color: _isRecording ? Colors.red.withOpacity(0.1) : Colors.grey.withOpacity(0.1),
+        color: _isRecording ? Colors.red.withValues(alpha:0.1) : Colors.grey.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(25),
         border: Border.all(
-          color: _isRecording ? Colors.red : Colors.grey.withOpacity(0.3),
+          color: _isRecording ? Colors.red : Colors.grey.withValues(alpha:0.3),
           width: 1,
         ),
       ),
@@ -229,7 +229,7 @@ class _VoiceRecordingWidgetState extends State<VoiceRecordingWidget>
                       shape: BoxShape.circle,
                       boxShadow: _isRecording ? [
                         BoxShadow(
-                          color: Colors.red.withOpacity(0.3),
+                          color: Colors.red.withValues(alpha:0.3),
                           blurRadius: 10,
                           spreadRadius: 2,
                         ),

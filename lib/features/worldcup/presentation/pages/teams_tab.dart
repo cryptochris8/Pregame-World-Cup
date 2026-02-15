@@ -115,7 +115,7 @@ class TeamsTab extends StatelessWidget {
                           ],
                         ),
                         backgroundColor: AppTheme.backgroundCard,
-                        selectedColor: AppTheme.secondaryRose.withOpacity(0.3),
+                        selectedColor: AppTheme.secondaryRose.withValues(alpha:0.3),
                         checkmarkColor: AppTheme.secondaryRose,
                         side: BorderSide(
                           color: state.showFavoritesOnly

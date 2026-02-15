@@ -56,7 +56,7 @@ class ProfileBadgesSection extends StatelessWidget {
               const SizedBox(height: 12),
               LinearProgressIndicator(
                 value: (experiencePoints % 1000) / 1000,
-                backgroundColor: Colors.white.withOpacity(0.3),
+                backgroundColor: Colors.white.withValues(alpha:0.3),
                 valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
               ),
               const SizedBox(height: 8),
@@ -102,7 +102,7 @@ class ProfileBadgesSection extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha:0.1),
             blurRadius: 4,
             offset: const Offset(0, 2),
           ),

@@ -56,7 +56,7 @@ class AICompactContentWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(25),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFFEA580C).withOpacity(0.4),
+                color: const Color(0xFFEA580C).withValues(alpha:0.4),
                 blurRadius: 15,
                 offset: const Offset(0, 5),
               ),

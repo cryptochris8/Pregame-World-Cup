@@ -47,7 +47,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
     _nameController = TextEditingController(text: wp.name);
     _descriptionController = TextEditingController(text: wp.description);
     _feeController = TextEditingController(
-      text: wp.virtualAttendanceFee.toStringAsFixed(2) ?? '0.00',
+      text: wp.virtualAttendanceFee.toStringAsFixed(2),
     );
 
     _visibility = wp.visibility;
@@ -100,8 +100,15 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
           setState(() => _isLoading = true);
         }
       },
-      child: WillPopScope(
-        onWillPop: _onWillPop,
+      child: PopScope(
+        canPop: !_hasChanges,
+        onPopInvokedWithResult: (didPop, result) async {
+          if (didPop) return;
+          final shouldPop = await _onWillPop();
+          if (shouldPop && context.mounted) {
+            Navigator.of(context).pop();
+          }
+        },
         child: Scaffold(
           appBar: AppBar(
             title: const Text('Edit Watch Party'),
@@ -124,9 +131,9 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                     padding: const EdgeInsets.all(12),
                     margin: const EdgeInsets.only(bottom: 16),
                     decoration: BoxDecoration(
-                      color: Colors.orange.withOpacity(0.1),
+                      color: Colors.orange.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.orange.withOpacity(0.3)),
+                      border: Border.all(color: Colors.orange.withValues(alpha:0.3)),
                     ),
                     child: Row(
                       children: [
@@ -352,7 +359,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 10,
             offset: const Offset(0, -2),
           ),

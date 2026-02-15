@@ -18,7 +18,7 @@ class MatchVenueCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Material(
         color: Colors.transparent,
@@ -35,7 +35,7 @@ class MatchVenueCard extends StatelessWidget {
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryBlue.withOpacity(0.2),
+                    color: AppTheme.primaryBlue.withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(

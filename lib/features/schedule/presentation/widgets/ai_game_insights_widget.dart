@@ -238,7 +238,7 @@ Keep it concise and engaging for fans planning their game day experience.
       return Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: Colors.red.withOpacity(0.2),
+          color: Colors.red.withValues(alpha:0.2),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
@@ -297,7 +297,7 @@ Keep it concise and engaging for fans planning their game day experience.
       decoration: BoxDecoration(
         color: const Color(0xFF1E293B),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color.withOpacity(0.5)),
+        border: Border.all(color: color.withValues(alpha:0.5)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

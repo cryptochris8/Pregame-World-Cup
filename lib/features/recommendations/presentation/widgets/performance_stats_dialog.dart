@@ -132,7 +132,7 @@ class PerformanceStatsDialog extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: gradeColor.withOpacity(0.1),
+        color: gradeColor.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: gradeColor),
       ),

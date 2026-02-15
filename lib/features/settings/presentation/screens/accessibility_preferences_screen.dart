@@ -74,7 +74,7 @@ class _AccessibilityPreferencesScreenState
               onPressed: () async {
                 await _accessibilityService.resetToDefaults();
                 setState(() => _settings = _accessibilityService.settings);
-                if (mounted) {
+                if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
                       content: Text('Settings reset to defaults'),
@@ -145,10 +145,10 @@ class _AccessibilityPreferencesScreenState
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha:0.2),
         ),
       ),
       child: Column(
@@ -171,7 +171,7 @@ class _AccessibilityPreferencesScreenState
             'Customize your experience to make Pregame World Cup easier to use.',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.white.withOpacity(0.8),
+              color: Colors.white.withValues(alpha:0.8),
               fontSize: 14,
             ),
           ),
@@ -302,7 +302,7 @@ class _AccessibilityPreferencesScreenState
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.orange.withOpacity(0.2),
+                      color: Colors.orange.withValues(alpha:0.2),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
@@ -319,7 +319,7 @@ class _AccessibilityPreferencesScreenState
               Text(
                 'Adjust the size of text throughout the app',
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.7),
+                  color: Colors.white.withValues(alpha:0.7),
                   fontSize: 14,
                 ),
               ),
@@ -328,7 +328,7 @@ class _AccessibilityPreferencesScreenState
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withValues(alpha:0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
@@ -351,7 +351,7 @@ class _AccessibilityPreferencesScreenState
                   children: [
                     Icon(
                       Icons.text_decrease,
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.white.withValues(alpha:0.7),
                       size: 20,
                     ),
                     Expanded(
@@ -361,7 +361,7 @@ class _AccessibilityPreferencesScreenState
                         max: 2.0,
                         divisions: 6,
                         activeColor: Colors.orange,
-                        inactiveColor: Colors.white.withOpacity(0.3),
+                        inactiveColor: Colors.white.withValues(alpha:0.3),
                         onChanged: (value) {
                           _updateSetting(
                             _settings.copyWith(textScaleFactor: value),
@@ -371,7 +371,7 @@ class _AccessibilityPreferencesScreenState
                     ),
                     Icon(
                       Icons.text_increase,
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.white.withValues(alpha:0.7),
                       size: 24,
                     ),
                   ],
@@ -406,13 +406,13 @@ class _AccessibilityPreferencesScreenState
                   },
                   icon: Icon(
                     Icons.refresh,
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha:0.7),
                     size: 18,
                   ),
                   label: Text(
                     'Use System Default',
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.7),
+                      color: Colors.white.withValues(alpha:0.7),
                     ),
                   ),
                 ),
@@ -440,19 +440,19 @@ class _AccessibilityPreferencesScreenState
           decoration: BoxDecoration(
             color: isSelected
                 ? Colors.orange
-                : Colors.white.withOpacity(0.1),
+                : Colors.white.withValues(alpha:0.1),
             borderRadius: BorderRadius.circular(8),
             border: Border.all(
               color: isSelected
                   ? Colors.orange
-                  : Colors.white.withOpacity(0.3),
+                  : Colors.white.withValues(alpha:0.3),
             ),
           ),
           child: Center(
             child: Text(
               label,
               style: TextStyle(
-                color: isSelected ? Colors.white : Colors.white.withOpacity(0.7),
+                color: isSelected ? Colors.white : Colors.white.withValues(alpha:0.7),
                 fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                 fontSize: 14,
               ),
@@ -500,10 +500,10 @@ class _AccessibilityPreferencesScreenState
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.blue.withOpacity(0.1),
+        color: Colors.blue.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: Colors.blue.withOpacity(0.3),
+          color: Colors.blue.withValues(alpha:0.3),
         ),
       ),
       child: Row(
@@ -530,7 +530,7 @@ class _AccessibilityPreferencesScreenState
                 Text(
                   'These settings work alongside your device\'s accessibility settings. For more options, visit your device\'s Settings > Accessibility.',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha:0.7),
                     fontSize: 12,
                   ),
                 ),
@@ -550,10 +550,10 @@ class _AccessibilityPreferencesScreenState
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha:0.2),
         ),
       ),
       child: Column(
@@ -566,7 +566,7 @@ class _AccessibilityPreferencesScreenState
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: Colors.orange.withOpacity(0.2),
+                    color: Colors.orange.withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Icon(
@@ -612,7 +612,7 @@ class _AccessibilityPreferencesScreenState
       subtitle: Text(
         subtitle,
         style: TextStyle(
-          color: Colors.white.withOpacity(0.7),
+          color: Colors.white.withValues(alpha:0.7),
           fontSize: 13,
         ),
       ),
@@ -621,7 +621,7 @@ class _AccessibilityPreferencesScreenState
       activeColor: Colors.orange,
       secondary: Icon(
         icon,
-        color: value ? Colors.orange : Colors.white.withOpacity(0.5),
+        color: value ? Colors.orange : Colors.white.withValues(alpha:0.5),
       ),
     );
   }

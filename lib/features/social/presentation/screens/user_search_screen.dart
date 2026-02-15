@@ -52,6 +52,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
         _isLoading = false;
       });
       
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Error searching users. Please try again.'),
@@ -67,7 +68,8 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
         user.userId,
         source: 'user_search',
       );
-      
+
+      if (!mounted) return;
       if (success) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -85,6 +87,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
       }
     } catch (e) {
       LoggingService.error('Error sending friend request: $e', tag: 'UserSearchScreen');
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Error sending friend request'),
@@ -287,7 +290,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
                             team,
                             style: const TextStyle(fontSize: 12),
                           ),
-                          backgroundColor: const Color(0xFF355E3B).withOpacity(0.1),
+                          backgroundColor: const Color(0xFF355E3B).withValues(alpha:0.1),
                           side: const BorderSide(color: Color(0xFF355E3B)),
                         );
                       }).toList(),

@@ -155,7 +155,7 @@ class _PlayerHeaderCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF7C3AED).withOpacity(0.3),
+            color: const Color(0xFF7C3AED).withValues(alpha:0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -185,7 +185,7 @@ class _PlayerHeaderCard extends StatelessWidget {
             Text(
               '${player.club} • ${player.clubLeague}',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.white.withValues(alpha:0.9),
               ),
               textAlign: TextAlign.center,
             ),
@@ -435,7 +435,7 @@ class _TournamentStatsCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundElevated,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -489,7 +489,7 @@ class _TournamentStatsCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: 12,
                 fontStyle: FontStyle.italic,
-                color: Colors.white.withOpacity(0.7),
+                color: Colors.white.withValues(alpha:0.7),
               ),
             ),
           ],
@@ -539,7 +539,7 @@ class _MiniStat extends StatelessWidget {
           label,
           style: TextStyle(
             fontSize: 11,
-            color: Colors.white.withOpacity(0.6),
+            color: Colors.white.withValues(alpha:0.6),
           ),
         ),
       ],
@@ -618,7 +618,7 @@ class _InfoChip extends StatelessWidget {
           fontWeight: FontWeight.w500,
         ),
       ),
-      backgroundColor: Colors.white.withOpacity(0.2),
+      backgroundColor: Colors.white.withValues(alpha:0.2),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
     );
   }

@@ -19,7 +19,6 @@ class EnhancedVenueCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final category = VenueRecommendationService.categorizeVenue(venue);
-    final popularityScore = VenueRecommendationService.calculatePopularityScore(venue);
     final isPopular = VenueRecommendationService.isPopular(venue);
     
     String? walkingInfo;
@@ -47,7 +46,7 @@ class EnhancedVenueCard extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha:0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -183,7 +182,7 @@ class EnhancedVenueCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.2),
+        color: color.withValues(alpha:0.2),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: color, width: 1),
       ),
@@ -212,7 +211,7 @@ class EnhancedVenueCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: const Color(0xFF10B981).withOpacity(0.2), // Success green from app theme
+        color: const Color(0xFF10B981).withValues(alpha:0.2), // Success green from app theme
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: const Color(0xFF10B981), width: 1), // Success green from app theme
       ),

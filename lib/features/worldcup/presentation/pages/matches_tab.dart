@@ -115,7 +115,7 @@ class MatchesTab extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        color: AppTheme.primaryOrange.withOpacity(0.15),
+                        color: AppTheme.primaryOrange.withValues(alpha:0.15),
                         child: Row(
                           children: [
                             const Icon(

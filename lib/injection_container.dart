@@ -107,6 +107,7 @@ import 'features/sharing/sharing.dart';
 final sl = GetIt.instance; // sl stands for Service Locator
 
 /// Android diagnostic mode - set to false for production
+// ignore: constant_identifier_names
 const bool ANDROID_DIAGNOSTIC_MODE = false;
 
 /// Debug-only log helper. Stripped by tree-shaking in release builds.

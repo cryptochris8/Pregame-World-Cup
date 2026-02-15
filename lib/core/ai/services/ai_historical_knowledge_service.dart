@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../services/cache_service.dart';
 import '../../services/logging_service.dart';
@@ -14,7 +13,6 @@ class AIHistoricalKnowledgeService {
   AIHistoricalKnowledgeService._();
 
   final CacheService _cacheService = CacheService.instance;
-  final Dio _dio = Dio();
 
   // Historical seasons for World Cup data
   static const List<int> _allHistoricalSeasons = [2022, 2023, 2024, 2025, 2026];
@@ -45,93 +43,6 @@ class AIHistoricalKnowledgeService {
     } catch (e) {
       LoggingService.error('AI Knowledge Base initialization failed: $e', tag: 'AIKnowledge');
     }
-  }
-  
-  /// Create and cache season statistics for faster AI analysis
-  Future<void> _createSeasonStatistics(int season, List<GameSchedule> games) async {
-    try {
-      final stats = <String, dynamic>{
-        'season': season,
-        'totalGames': games.length,
-        'completedGames': games.where((g) => g.awayScore != null && g.homeScore != null).length,
-        'teamRecords': <String, Map<String, int>>{},
-        'headToHeadRecords': <String, Map<String, dynamic>>{},
-        'conferenceStats': <String, dynamic>{},
-        'knockoutGames': games.where((g) => g.week != null && g.week! >= 15).length,
-        'finalRoundGames': games.where((g) => g.week != null && g.week! >= 16).length,
-        'lastUpdated': DateTime.now().toIso8601String(),
-      };
-      
-      // Calculate team records
-      for (final game in games) {
-        if (game.awayScore != null && game.homeScore != null) {
-          _updateTeamRecord(stats['teamRecords'], game.awayTeamName, game.homeTeamName, game.awayScore!, game.homeScore!);
-          _updateHeadToHeadRecord(stats['headToHeadRecords'], game.awayTeamName, game.homeTeamName, game.awayScore!, game.homeScore!);
-        }
-      }
-      
-      // Cache the statistics
-      final statsKey = 'ai_knowledge_stats_$season';
-      await _cacheService.set(statsKey, stats, duration: _historicalCacheDuration);
-      
-      // Statistics created for season
-      
-    } catch (e) {
-      // Error creating statistics handled silently
-    }
-  }
-  
-  /// Update team record in statistics
-  void _updateTeamRecord(Map<String, dynamic> teamRecords, String team1, String team2, int score1, int score2) {
-    // Update team1 record
-    teamRecords[team1] ??= {'wins': 0, 'losses': 0, 'pointsFor': 0, 'pointsAgainst': 0};
-    teamRecords[team1]['pointsFor'] += score1;
-    teamRecords[team1]['pointsAgainst'] += score2;
-    if (score1 > score2) {
-      teamRecords[team1]['wins']++;
-    } else {
-      teamRecords[team1]['losses']++;
-    }
-    
-    // Update team2 record
-    teamRecords[team2] ??= {'wins': 0, 'losses': 0, 'pointsFor': 0, 'pointsAgainst': 0};
-    teamRecords[team2]['pointsFor'] += score2;
-    teamRecords[team2]['pointsAgainst'] += score1;
-    if (score2 > score1) {
-      teamRecords[team2]['wins']++;
-    } else {
-      teamRecords[team2]['losses']++;
-    }
-  }
-  
-  /// Update head-to-head record between two teams
-  void _updateHeadToHeadRecord(Map<String, dynamic> headToHeadRecords, String team1, String team2, int score1, int score2) {
-    final matchupKey = _createMatchupKey(team1, team2);
-    
-    headToHeadRecords[matchupKey] ??= {
-      'team1': team1,
-      'team2': team2,
-      'team1Wins': 0,
-      'team2Wins': 0,
-      'totalGames': 0,
-      'averageScore1': 0.0,
-      'averageScore2': 0.0,
-      'lastMeeting': null,
-    };
-    
-    final record = headToHeadRecords[matchupKey];
-    record['totalGames']++;
-    
-    if (score1 > score2) {
-      record['team1Wins']++;
-    } else {
-      record['team2Wins']++;
-    }
-    
-    // Update average scores
-    final totalGames = record['totalGames'];
-    record['averageScore1'] = ((record['averageScore1'] * (totalGames - 1)) + score1) / totalGames;
-    record['averageScore2'] = ((record['averageScore2'] * (totalGames - 1)) + score2) / totalGames;
   }
   
   /// Create a consistent matchup key for two teams

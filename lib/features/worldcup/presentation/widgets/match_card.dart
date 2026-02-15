@@ -80,10 +80,10 @@ class MatchCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: match.isLive
             ? Border.all(color: Colors.red, width: 2)
-            : Border.all(color: Colors.white.withOpacity(0.1)),
+            : Border.all(color: Colors.white.withValues(alpha:0.1)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha:0.2),
             blurRadius: match.isLive ? 12 : 8,
             offset: const Offset(0, 4),
           ),
@@ -144,9 +144,9 @@ class MatchCard extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
-            color: _getStageColor().withOpacity(0.2),
+            color: _getStageColor().withValues(alpha:0.2),
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: _getStageColor().withOpacity(0.5)),
+            border: Border.all(color: _getStageColor().withValues(alpha:0.5)),
           ),
           child: Text(
             match.stageDisplayName,
@@ -222,9 +222,9 @@ class MatchCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
         decoration: BoxDecoration(
-          color: AppTheme.primaryOrange.withOpacity(0.2),
+          color: AppTheme.primaryOrange.withValues(alpha:0.2),
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: AppTheme.primaryOrange.withOpacity(0.5)),
+          border: Border.all(color: AppTheme.primaryOrange.withValues(alpha:0.5)),
         ),
         child: Text(
           parts.join(' | '),
@@ -430,7 +430,7 @@ class MatchRow extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: ListTile(
         onTap: onTap,
@@ -579,9 +579,9 @@ class _AIInsightChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: AppTheme.primaryPurple.withOpacity(0.2),
+        color: AppTheme.primaryPurple.withValues(alpha:0.2),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.primaryPurple.withOpacity(0.5)),
+        border: Border.all(color: AppTheme.primaryPurple.withValues(alpha:0.5)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -619,7 +619,7 @@ class _AIInsightChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.primaryPurple.withOpacity(0.4),
+            color: AppTheme.primaryPurple.withValues(alpha:0.4),
             blurRadius: 6,
             offset: const Offset(0, 2),
           ),
@@ -660,10 +660,10 @@ class _AIInsightChip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
-          color: AppTheme.primaryPurple.withOpacity(0.1),
+          color: AppTheme.primaryPurple.withValues(alpha:0.1),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: AppTheme.primaryPurple.withOpacity(0.5),
+            color: AppTheme.primaryPurple.withValues(alpha:0.5),
           ),
         ),
         child: Row(

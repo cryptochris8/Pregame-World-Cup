@@ -54,7 +54,7 @@ class AIPredictionTabWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF7C3AED).withOpacity(0.3),
+            color: const Color(0xFF7C3AED).withValues(alpha:0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -68,7 +68,7 @@ class AIPredictionTabWidget extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(Icons.psychology,
@@ -133,7 +133,7 @@ class AIPredictionTabWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF1E293B),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.orange.withOpacity(0.3)),
+        border: Border.all(color: Colors.orange.withValues(alpha:0.3)),
       ),
       child: Column(
         children: [
@@ -200,7 +200,7 @@ class AIPredictionTabWidget extends StatelessWidget {
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: isWinner
-            ? Colors.green.withOpacity(0.2)
+            ? Colors.green.withValues(alpha:0.2)
             : const Color(0xFF334155),
         borderRadius: BorderRadius.circular(8),
         border: isWinner ? Border.all(color: Colors.green, width: 2) : null,
@@ -252,7 +252,7 @@ class AIPredictionTabWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.green.withOpacity(0.3),
+                    color: Colors.green.withValues(alpha:0.3),
                     blurRadius: 4,
                     offset: const Offset(0, 2),
                   ),

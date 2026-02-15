@@ -324,7 +324,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: Colors.orange.withOpacity(0.2),
+                    color: Colors.orange.withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.orange, width: 1),
                   ),
@@ -412,9 +412,9 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     decoration: BoxDecoration(
-                      color: Colors.orange.withOpacity(0.1),
+                      color: Colors.orange.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.orange.withOpacity(0.3)),
+                      border: Border.all(color: Colors.orange.withValues(alpha:0.3)),
                     ),
                     child: const Text(
                       '🏈 Game day is coming soon!',
@@ -550,7 +550,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
         Container(
           width: double.infinity,
           padding: const EdgeInsets.all(8),
-          color: Colors.orange.withOpacity(0.2),
+          color: Colors.orange.withValues(alpha:0.2),
           child: Text(
             'Test Data - ${state.year} Week ${state.week}',
             style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold),

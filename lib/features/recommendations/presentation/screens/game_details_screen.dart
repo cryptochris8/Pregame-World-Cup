@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart'; // Import for launching URLs
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../../schedule/domain/entities/game_schedule.dart'; // Path to your GameSchedule model
 import '../../domain/entities/place.dart'; // Path to your Place model
@@ -13,7 +12,6 @@ import '../../domain/repositories/places_repository.dart'; // Import PlacesRepos
 // Performance test utility removed
 import '../../../../core/services/venue_recommendation_service.dart';
 import '../widgets/game_info_card.dart';
-import '../widgets/performance_stats_dialog.dart';
 import '../widgets/venue_discovery_section.dart';
 import '../widgets/teams_info_card.dart';
 import '../../../venues/screens/venue_map_screen.dart';
@@ -35,7 +33,7 @@ class GameDetailsScreen extends StatefulWidget {
   const GameDetailsScreen({super.key, required this.game});
 
   @override
-  _GameDetailsScreenState createState() => _GameDetailsScreenState();
+  State<GameDetailsScreen> createState() => _GameDetailsScreenState();
 }
 
 class _GameDetailsScreenState extends State<GameDetailsScreen> {
@@ -43,7 +41,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
   bool _isLoadingPlaces = false;
   String? _placesError;
   final VenueFilter _currentFilter = const VenueFilter(); // Default filter
-  bool _isOfflineMode = false; // Flag to indicate offline mode
   double? _fallbackLatitude;
   double? _fallbackLongitude;
 
@@ -133,43 +130,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
     return 'exploration';
   }
 
-  Future<void> _launchMapsUrl(double? lat, double? lng, String? placeName, String? vicinity) async {
-    if (lat == null || lng == null) {
-      // Try to launch with name and address if lat/lng are missing
-      if (placeName != null && vicinity != null) {
-        final query = Uri.encodeComponent('$placeName, $vicinity');
-        final url = Uri.parse('https://www.google.com/maps/search/?api=1&query=$query');
-        if (await canLaunchUrl(url)) {
-          await launchUrl(url, mode: LaunchMode.externalApplication);
-        } else {
-          if (mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Could not open map for this location.')),
-            );
-          }
-        }
-      } else {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Location data not available to open map.')),
-          );
-        }
-      }
-      return;
-    }
-
-    final url = Uri.parse('https://www.google.com/maps/search/?api=1&query=$lat,$lng');
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url, mode: LaunchMode.externalApplication);
-    } else {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Could not open map for this location.')),
-        );
-      }
-    }
-  }
-
   String _generateRequestKey() {
     final stadiumName = widget.game.stadium?.name ?? '';
     final stadiumCity = widget.game.stadium?.city ?? '';
@@ -236,11 +196,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
         _currentLatitude = _fallbackLatitude ?? 40.8128; // Default: MetLife Stadium area
         _currentLongitude = _fallbackLongitude ?? -74.0742;
 
-        if (mounted) {
-          setState(() {
-            _isOfflineMode = true;
-          });
-        }
       }
 
       // Fetch nearby places using the current filter
@@ -284,7 +239,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
           _nearbyPlaces = filteredPlaces;
           _isLoadingPlaces = false;
           _placesError = null;
-          _isOfflineMode = false;
         });
       }
 
@@ -320,10 +274,6 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
     );
 
     return venues;
-  }
-
-  void _showPerformanceStats() {
-    PerformanceStatsDialog.show(context);
   }
 
   @override

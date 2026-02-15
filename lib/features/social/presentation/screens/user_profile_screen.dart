@@ -118,7 +118,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withValues(alpha:0.3),
                       Colors.transparent,
                     ],
                   ),
@@ -204,15 +204,15 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Container(
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
+              color: Colors.white.withValues(alpha:0.1),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withValues(alpha:0.2),
                 width: 1,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.3),
+                  color: Colors.black.withValues(alpha:0.3),
                   blurRadius: 15,
                   offset: const Offset(0, 5),
                 ),
@@ -231,7 +231,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                         gradient: AppTheme.buttonGradient,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.orange.withOpacity(0.3),
+                            color: Colors.orange.withValues(alpha:0.3),
                             blurRadius: 20,
                             offset: const Offset(0, 5),
                           ),
@@ -302,7 +302,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                           fontSize: 14,
                           color: _profile!.isOnline
                               ? Colors.green[300]
-                              : Colors.white.withOpacity(0.7),
+                              : Colors.white.withValues(alpha:0.7),
                           fontWeight: _profile!.isOnline
                               ? FontWeight.w600
                               : FontWeight.normal,
@@ -318,7 +318,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 Text(
                   _profile?.email ?? currentUser?.email ?? '',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.8),
+                    color: Colors.white.withValues(alpha:0.8),
                     fontSize: 16,
                   ),
                 ),
@@ -330,10 +330,10 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: Colors.orange.withOpacity(0.2),
+                      color: Colors.orange.withValues(alpha:0.2),
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        color: Colors.orange.withOpacity(0.3),
+                        color: Colors.orange.withValues(alpha:0.3),
                       ),
                     ),
                     child: Text(
@@ -449,10 +449,10 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha:0.2),
         ),
       ),
       child: Column(
@@ -475,7 +475,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Text(
             title,
             style: TextStyle(
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha:0.7),
               fontSize: 12,
             ),
             textAlign: TextAlign.center,
@@ -489,10 +489,10 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha:0.2),
         ),
       ),
       child: Row(
@@ -500,7 +500,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.orange.withOpacity(0.2),
+              color: Colors.orange.withValues(alpha:0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
@@ -526,7 +526,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 Text(
                   description,
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha:0.7),
                     fontSize: 14,
                   ),
                 ),
@@ -535,7 +535,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           ),
           Icon(
             Icons.arrow_forward_ios,
-            color: Colors.white.withOpacity(0.5),
+            color: Colors.white.withValues(alpha:0.5),
             size: 16,
           ),
         ],
@@ -551,13 +551,13 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Colors.orange.withOpacity(0.2),
-            Colors.deepPurple.withOpacity(0.2),
+            Colors.orange.withValues(alpha:0.2),
+            Colors.deepPurple.withValues(alpha:0.2),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.orange.withOpacity(0.4),
+          color: Colors.orange.withValues(alpha:0.4),
         ),
       ),
       child: Row(
@@ -591,7 +591,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 Text(
                   description,
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.8),
+                    color: Colors.white.withValues(alpha:0.8),
                     fontSize: 14,
                   ),
                 ),

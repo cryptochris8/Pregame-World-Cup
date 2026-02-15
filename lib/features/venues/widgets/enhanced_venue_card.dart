@@ -108,7 +108,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF7C3AED).withOpacity(0.3),
+            color: const Color(0xFF7C3AED).withValues(alpha:0.3),
             blurRadius: 20,
             offset: const Offset(0, 8),
             spreadRadius: 0,
@@ -157,7 +157,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
             height: 200,
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
-              color: category.color.withOpacity(0.1),
+              color: category.color.withValues(alpha:0.1),
             ),
             child: ClipRRect(
               borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
@@ -183,7 +183,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
                           width: double.infinity,
                           height: 200,
                           decoration: BoxDecoration(
-                            color: category.color.withOpacity(0.15),
+                            color: category.color.withValues(alpha:0.15),
                             borderRadius: const BorderRadius.vertical(
                               top: Radius.circular(20),
                             ),
@@ -194,7 +194,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
                               Icon(
                                 category.icon,
                                 size: 48,
-                                color: category.color.withOpacity(0.7),
+                                color: category.color.withValues(alpha:0.7),
                               ),
                               const SizedBox(height: 8),
                               Text(
@@ -202,7 +202,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
-                                  color: category.color.withOpacity(0.8),
+                                  color: category.color.withValues(alpha:0.8),
                                 ),
                               ),
                             ],
@@ -221,7 +221,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.transparent,
-                    Colors.black.withOpacity(0.15),
+                    Colors.black.withValues(alpha:0.15),
                   ],
                 ),
               ),
@@ -240,11 +240,11 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                   decoration: BoxDecoration(
-                    color: category.color.withOpacity(0.9),
+                    color: category.color.withValues(alpha:0.9),
                     borderRadius: BorderRadius.circular(16),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
+                        color: Colors.black.withValues(alpha:0.2),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -276,7 +276,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withValues(alpha:0.2),
                           blurRadius: 8,
                           offset: const Offset(0, 2),
                         ),
@@ -310,7 +310,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.7),
+                  color: Colors.black.withValues(alpha:0.7),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Row(
@@ -590,9 +590,9 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
+              color: color.withValues(alpha:0.1),
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: color.withOpacity(0.3)),
+              border: Border.all(color: color.withValues(alpha:0.3)),
             ),
             child: Icon(
               icon,
@@ -689,10 +689,10 @@ class CompactVenueCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.grey.withOpacity(0.2)),
+        border: Border.all(color: Colors.grey.withValues(alpha:0.2)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -712,7 +712,7 @@ class CompactVenueCard extends StatelessWidget {
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: category.color.withOpacity(0.1),
+                    color: category.color.withValues(alpha:0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Icon(
@@ -748,7 +748,7 @@ class CompactVenueCard extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                               decoration: BoxDecoration(
-                                color: const Color(0xFFFF6B35).withOpacity(0.1),
+                                color: const Color(0xFFFF6B35).withValues(alpha:0.1),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: const Text(

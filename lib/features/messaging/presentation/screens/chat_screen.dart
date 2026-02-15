@@ -209,7 +209,6 @@ class _ChatScreenState extends State<ChatScreen> {
                         itemBuilder: (context, index) {
                           final message = _messages[index];
                           final previousMessage = index > 0 ? _messages[index - 1] : null;
-                          final nextMessage = index < _messages.length - 1 ? _messages[index + 1] : null;
                           
                           // Determine if we should show sender info
                           final showSenderInfo = _shouldShowSenderInfo(
@@ -257,7 +256,7 @@ class _ChatScreenState extends State<ChatScreen> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.red[900]?.withOpacity(0.8),
+        color: Colors.red[900]?.withValues(alpha:0.8),
         border: Border(
           top: BorderSide(color: Colors.red[700]!, width: 1),
         ),
@@ -410,7 +409,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   '${widget.chat.participantIds.length} members',
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha:0.7),
                   ),
                 ),
               ],
@@ -429,14 +428,14 @@ class _ChatScreenState extends State<ChatScreen> {
           Icon(
             Icons.chat_bubble_outline,
             size: 64,
-            color: Colors.white.withOpacity(0.3),
+            color: Colors.white.withValues(alpha:0.3),
           ),
           const SizedBox(height: 16),
           Text(
             'No messages yet',
             style: TextStyle(
               fontSize: 18,
-              color: Colors.white.withOpacity(0.6),
+              color: Colors.white.withValues(alpha:0.6),
             ),
           ),
           const SizedBox(height: 8),
@@ -444,7 +443,7 @@ class _ChatScreenState extends State<ChatScreen> {
             'Start the conversation!',
             style: TextStyle(
               fontSize: 14,
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withValues(alpha:0.5),
             ),
           ),
         ],
@@ -505,6 +504,7 @@ class _ChatScreenState extends State<ChatScreen> {
       // Refresh messages to show new reaction
       await _loadMessages();
     } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Failed to add reaction: $e'),

@@ -30,7 +30,7 @@ class SocialStatsCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.secondaryPurple.withOpacity(0.2),
+            color: AppTheme.secondaryPurple.withValues(alpha:0.2),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),
@@ -156,10 +156,10 @@ class SocialStatsCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.15),
+          color: Colors.white.withValues(alpha:0.15),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: Colors.white.withOpacity(0.3),
+            color: Colors.white.withValues(alpha:0.3),
             width: 1,
           ),
         ),
@@ -188,7 +188,7 @@ class SocialStatsCard extends StatelessWidget {
               label,
               style: TextStyle(
                 fontSize: 12,
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.white.withValues(alpha:0.9),
                 fontWeight: FontWeight.w500,
               ),
               textAlign: TextAlign.center,
@@ -207,7 +207,7 @@ class SocialStatsCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(
@@ -235,7 +235,7 @@ class SocialStatsCard extends StatelessWidget {
             label,
             style: TextStyle(
               fontSize: 10,
-              color: Colors.white.withOpacity(0.8),
+              color: Colors.white.withValues(alpha:0.8),
               fontWeight: FontWeight.w500,
             ),
             textAlign: TextAlign.center,

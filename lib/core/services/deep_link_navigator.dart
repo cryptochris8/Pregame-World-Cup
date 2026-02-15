@@ -211,10 +211,10 @@ class DeepLinkNavigator {
 
     await Future.delayed(const Duration(milliseconds: 300));
 
-    final context = navigator?.context;
-    if (context != null) {
+    final navContext = navigator?.context;
+    if (navContext != null && navContext.mounted) {
       // Show success message via SnackBar on the navigator's context
-      ScaffoldMessenger.of(context).showSnackBar(
+      ScaffoldMessenger.of(navContext).showSnackBar(
         const SnackBar(
           content: Text('Purchase successful! Refreshing your pass status...'),
           backgroundColor: Color(0xFF4CAF50),
@@ -244,9 +244,9 @@ class DeepLinkNavigator {
 
     await Future.delayed(const Duration(milliseconds: 300));
 
-    final context = navigator?.context;
-    if (context != null) {
-      ScaffoldMessenger.of(context).showSnackBar(
+    final navContext = navigator?.context;
+    if (navContext != null && navContext.mounted) {
+      ScaffoldMessenger.of(navContext).showSnackBar(
         const SnackBar(
           content: Text('Purchase cancelled. You can try again anytime.'),
           duration: Duration(seconds: 4),

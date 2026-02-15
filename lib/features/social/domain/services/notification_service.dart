@@ -1,17 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 import '../entities/notification.dart';
 import '../../../../core/services/performance_monitor.dart';
 
 class NotificationService {
-  static const String _logTag = 'NotificationService';
   static const String _notificationsBoxName = 'notifications';
   static const String _preferencesBoxName = 'notification_preferences';
-  static const Duration _notificationCacheDuration = Duration(hours: 24);
-  
+
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
   
   late Box<SocialNotification> _notificationsBox;
   late Box<NotificationPreferences> _preferencesBox;

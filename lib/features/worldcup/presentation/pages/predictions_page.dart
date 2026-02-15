@@ -188,10 +188,10 @@ class _PredictionsPageState extends State<PredictionsPage> {
         ],
       ),
       backgroundColor: AppTheme.backgroundCard,
-      selectedColor: color.withOpacity(0.3),
+      selectedColor: color.withValues(alpha:0.3),
       checkmarkColor: color,
       side: BorderSide(
-        color: isSelected ? color : Colors.white.withOpacity(0.2),
+        color: isSelected ? color : Colors.white.withValues(alpha:0.2),
       ),
     );
   }
@@ -263,13 +263,13 @@ class _PredictionsPageState extends State<PredictionsPage> {
             Container(
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
-                color: AppTheme.primaryPurple.withOpacity(0.2),
+                color: AppTheme.primaryPurple.withValues(alpha:0.2),
                 shape: BoxShape.circle,
               ),
               child: Icon(
                 Icons.sports_soccer,
                 size: 64,
-                color: AppTheme.primaryPurple.withOpacity(0.7),
+                color: AppTheme.primaryPurple.withValues(alpha:0.7),
               ),
             ),
             const SizedBox(height: 24),
@@ -331,7 +331,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, size: 64, color: Colors.white.withOpacity(0.3)),
+          Icon(icon, size: 64, color: Colors.white.withValues(alpha:0.3)),
           const SizedBox(height: 16),
           Text(
             message,

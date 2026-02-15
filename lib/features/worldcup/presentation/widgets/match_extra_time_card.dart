@@ -15,9 +15,9 @@ class MatchExtraTimeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.primaryOrange.withOpacity(0.15),
+        color: AppTheme.primaryOrange.withValues(alpha:0.15),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.primaryOrange.withOpacity(0.3)),
+        border: Border.all(color: AppTheme.primaryOrange.withValues(alpha:0.3)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -59,7 +59,7 @@ class MatchExtraTimeCard extends StatelessWidget {
                       vertical: 8,
                     ),
                     decoration: BoxDecoration(
-                      color: AppTheme.primaryOrange.withOpacity(0.3),
+                      color: AppTheme.primaryOrange.withValues(alpha:0.3),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
@@ -83,7 +83,7 @@ class MatchExtraTimeCard extends StatelessWidget {
                   'Penalty Shootout',
                   style: TextStyle(
                     fontSize: 12,
-                    color: AppTheme.primaryOrange.withOpacity(0.8),
+                    color: AppTheme.primaryOrange.withValues(alpha:0.8),
                   ),
                 ),
               ),

@@ -1,18 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 import '../entities/activity_feed.dart';
 import '../../../../core/services/performance_monitor.dart';
 
 class ActivityFeedService {
-  static const String _logTag = 'ActivityFeedService';
   static const String _activitiesBoxName = 'activity_feed';
   static const String _likesBoxName = 'activity_likes';
   static const String _commentsBoxName = 'activity_comments';
-  static const Duration _activityCacheDuration = Duration(hours: 2);
-  
+
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
   
   late Box<ActivityFeedItem> _activitiesBox;
   late Box<ActivityLike> _likesBox;

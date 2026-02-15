@@ -51,7 +51,7 @@ class AISeasonReviewTabWidget extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
+                    color: Colors.white.withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: const Text(
@@ -90,7 +90,7 @@ class AISeasonReviewTabWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.grey[900],
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: Colors.orange.withOpacity(0.3)),
+              border: Border.all(color: Colors.orange.withValues(alpha:0.3)),
             ),
             child: const Row(
               children: [
@@ -139,8 +139,8 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isAway
-              ? Colors.red.withOpacity(0.3)
-              : Colors.green.withOpacity(0.3),
+              ? Colors.red.withValues(alpha:0.3)
+              : Colors.green.withValues(alpha:0.3),
         ),
       ),
       child: Column(
@@ -177,8 +177,8 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isAway
-              ? Colors.red.withOpacity(0.3)
-              : Colors.green.withOpacity(0.3),
+              ? Colors.red.withValues(alpha:0.3)
+              : Colors.green.withValues(alpha:0.3),
         ),
       ),
       child: Column(
@@ -234,8 +234,8 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isAway
-              ? Colors.red.withOpacity(0.3)
-              : Colors.green.withOpacity(0.3),
+              ? Colors.red.withValues(alpha:0.3)
+              : Colors.green.withValues(alpha:0.3),
         ),
       ),
       child: Column(
@@ -355,10 +355,10 @@ class AISeasonReviewTabWidget extends StatelessWidget {
                           margin: const EdgeInsets.symmetric(horizontal: 2),
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: Colors.orange.withOpacity(0.1),
+                            color: Colors.orange.withValues(alpha:0.1),
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
-                                color: Colors.orange.withOpacity(0.3)),
+                                color: Colors.orange.withValues(alpha:0.3)),
                           ),
                           child: Text(
                             stat.toString(),
@@ -531,8 +531,8 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isAway
-              ? Colors.red.withOpacity(0.3)
-              : Colors.green.withOpacity(0.3),
+              ? Colors.red.withValues(alpha:0.3)
+              : Colors.green.withValues(alpha:0.3),
         ),
       ),
       child: Column(

@@ -33,7 +33,7 @@ class NotificationItemWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          color: notification.isRead ? Colors.white : const Color(0xFF8B4513).withOpacity(0.05),
+          color: notification.isRead ? Colors.white : const Color(0xFF8B4513).withValues(alpha:0.05),
         ),
         child: InkWell(
           onTap: onTap,

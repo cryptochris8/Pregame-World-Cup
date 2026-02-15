@@ -22,12 +22,9 @@ class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
   // Smart refresh tracking to prevent excessive API calls
   DateTime? _lastUpcomingGamesRefresh;
   DateTime? _lastLiveScoreRefresh;
-  DateTime? _lastFullScheduleRefresh;
-  
   // Minimum intervals between API calls (prevents spam)
   static const Duration _upcomingGamesRefreshInterval = Duration(minutes: 10);
   static const Duration _liveScoreRefreshInterval = Duration(minutes: 2);
-  static const Duration _fullScheduleRefreshInterval = Duration(hours: 1);
 
   ScheduleBloc({
     required this.getUpcomingGames,
@@ -200,17 +197,10 @@ class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
     return timeSinceLastRefresh < _liveScoreRefreshInterval;
   }
   
-  bool _shouldSkipFullScheduleRefresh() {
-    if (_lastFullScheduleRefresh == null) return false;
-    final timeSinceLastRefresh = DateTime.now().difference(_lastFullScheduleRefresh!);
-    return timeSinceLastRefresh < _fullScheduleRefreshInterval;
-  }
-  
   /// Determine if it's likely game time (avoid unnecessary live refreshes)
   bool _isLikelyGameTime() {
     final now = DateTime.now();
     final hour = now.hour;
-    final dayOfWeek = now.weekday;
     final month = now.month;
     
     // World Cup 2026: June 11 through July 19

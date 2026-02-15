@@ -231,17 +231,6 @@ class GameSchedule {
       return null;
     }
 
-    // Helper function to safely parse double from string or number
-    double? parseDoubleSafely(dynamic value) {
-      if (value == null) return null;
-      if (value is double) return value;
-      if (value is int) return value.toDouble();
-      if (value is String) {
-        return double.tryParse(value);
-      }
-      return null;
-    }
-
     // Parse game data from nested structure
     final gameData = json['game'] ?? json;
     

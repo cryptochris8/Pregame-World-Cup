@@ -26,10 +26,10 @@ class StandingsTable extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha:0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -63,7 +63,7 @@ class StandingsTable extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                       decoration: BoxDecoration(
-                        color: AppTheme.secondaryEmerald.withOpacity(0.3),
+                        color: AppTheme.secondaryEmerald.withValues(alpha:0.3),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: const Text(
@@ -126,12 +126,12 @@ class StandingsTable extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
           color: isQualified
-              ? AppTheme.secondaryEmerald.withOpacity(0.1)
+              ? AppTheme.secondaryEmerald.withValues(alpha:0.1)
               : isBestThird
-                  ? AppTheme.primaryOrange.withOpacity(0.1)
+                  ? AppTheme.primaryOrange.withValues(alpha:0.1)
                   : Colors.transparent,
           border: Border(
-            bottom: BorderSide(color: Colors.white.withOpacity(0.1)),
+            bottom: BorderSide(color: Colors.white.withValues(alpha:0.1)),
           ),
         ),
         child: Row(
@@ -147,7 +147,7 @@ class StandingsTable extends StatelessWidget {
                   color: _getPositionColor(standing.position),
                   boxShadow: [
                     BoxShadow(
-                      color: _getPositionColor(standing.position).withOpacity(0.4),
+                      color: _getPositionColor(standing.position).withValues(alpha:0.4),
                       blurRadius: 4,
                       offset: const Offset(0, 2),
                     ),
@@ -250,7 +250,7 @@ class StandingsTable extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryOrange.withOpacity(0.2),
+                    color: AppTheme.primaryOrange.withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Text(
@@ -317,10 +317,10 @@ class GroupCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha:0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -350,7 +350,7 @@ class GroupCard extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                         boxShadow: [
                           BoxShadow(
-                            color: AppTheme.primaryBlue.withOpacity(0.4),
+                            color: AppTheme.primaryBlue.withValues(alpha:0.4),
                             blurRadius: 4,
                             offset: const Offset(0, 2),
                           ),
@@ -393,7 +393,7 @@ class GroupCard extends StatelessWidget {
             color: position == 1 ? AppTheme.secondaryEmerald : const Color(0xFF22C55E),
             boxShadow: [
               BoxShadow(
-                color: (position == 1 ? AppTheme.secondaryEmerald : const Color(0xFF22C55E)).withOpacity(0.4),
+                color: (position == 1 ? AppTheme.secondaryEmerald : const Color(0xFF22C55E)).withValues(alpha:0.4),
                 blurRadius: 4,
                 offset: const Offset(0, 2),
               ),
@@ -425,7 +425,7 @@ class GroupCard extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
           decoration: BoxDecoration(
-            color: AppTheme.primaryOrange.withOpacity(0.2),
+            color: AppTheme.primaryOrange.withValues(alpha:0.2),
             borderRadius: BorderRadius.circular(6),
           ),
           child: Text(

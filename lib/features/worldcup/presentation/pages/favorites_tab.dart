@@ -194,9 +194,9 @@ class FavoritesTab extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
           decoration: BoxDecoration(
-            color: AppTheme.secondaryRose.withOpacity(0.2),
+            color: AppTheme.secondaryRose.withValues(alpha:0.2),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: AppTheme.secondaryRose.withOpacity(0.5)),
+            border: Border.all(color: AppTheme.secondaryRose.withValues(alpha:0.5)),
           ),
           child: Text(
             '$count',
@@ -221,9 +221,9 @@ class FavoritesTab extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
-                color: AppTheme.secondaryRose.withOpacity(0.2),
+                color: AppTheme.secondaryRose.withValues(alpha:0.2),
                 shape: BoxShape.circle,
-                border: Border.all(color: AppTheme.secondaryRose.withOpacity(0.3)),
+                border: Border.all(color: AppTheme.secondaryRose.withValues(alpha:0.3)),
               ),
               child: const Icon(
                 Icons.favorite_border,
@@ -288,7 +288,7 @@ class FavoritesTab extends StatelessWidget {
       label: Text(label, style: const TextStyle(color: Colors.white)),
       onPressed: onTap,
       backgroundColor: AppTheme.backgroundCard,
-      side: BorderSide(color: AppTheme.primaryOrange.withOpacity(0.5)),
+      side: BorderSide(color: AppTheme.primaryOrange.withValues(alpha:0.5)),
     );
   }
 

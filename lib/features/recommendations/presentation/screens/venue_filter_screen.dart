@@ -12,7 +12,7 @@ class VenueFilterScreen extends StatefulWidget {
   });
 
   @override
-  _VenueFilterScreenState createState() => _VenueFilterScreenState();
+  State<VenueFilterScreen> createState() => _VenueFilterScreenState();
 }
 
 class _VenueFilterScreenState extends State<VenueFilterScreen> {
@@ -320,8 +320,6 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
         return 'Bakeries';
       case VenueType.liquorStore:
         return 'Liquor Stores';
-      default:
-        return type.toString().split('.').last;
     }
   }
 
@@ -335,8 +333,6 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
         return '\$\$\$';
       case PriceLevel.veryExpensive:
         return '\$\$\$\$';
-      default:
-        return level.toString();
     }
   }
 } 

@@ -127,7 +127,7 @@ class ScheduleGameCard extends StatelessWidget {
               padding:
                   const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               decoration: BoxDecoration(
-                color: ThemeHelper.favoriteColor.withOpacity(0.2),
+                color: ThemeHelper.favoriteColor.withValues(alpha:0.2),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(color: ThemeHelper.favoriteColor),
               ),
@@ -251,7 +251,7 @@ class ScheduleGameCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: ThemeHelper.favoriteColor.withOpacity(0.3),
+                  color: ThemeHelper.favoriteColor.withValues(alpha:0.3),
                   blurRadius: 4,
                   offset: const Offset(0, 2),
                 ),
@@ -309,7 +309,7 @@ class ScheduleGameCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: Colors.red.withOpacity(0.2),
+        color: Colors.red.withValues(alpha:0.2),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(

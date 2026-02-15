@@ -396,7 +396,7 @@ class _RippleEffectState extends State<RippleEffect>
                     child: CustomPaint(
                       painter: RipplePainter(
                         animation: _animation,
-                        color: widget.rippleColor.withOpacity(0.3),
+                        color: widget.rippleColor.withValues(alpha:0.3),
                         center: _tapPosition!,
                       ),
                     ),

@@ -108,7 +108,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
         final isPopular = VenueRecommendationService.isPopular(venue);
         
         markers.add(Marker(
-          markerId: MarkerId(venue.placeId ?? venue.name),
+          markerId: MarkerId(venue.placeId),
           position: LatLng(lat, lng),
           icon: _getMarkerIcon(category, isPopular),
           infoWindow: InfoWindow(
@@ -205,10 +205,10 @@ class _VenueMapScreenState extends State<VenueMapScreen>
     final Set<Circle> circles = {};
     final List<double> distances = [0.5, 1.0, 1.5, 2.0]; // km
     final List<Color> colors = [
-      Colors.green.withOpacity(0.1),
-      Colors.orange.withOpacity(0.1),
-      Colors.red.withOpacity(0.1),
-      Colors.purple.withOpacity(0.1),
+      Colors.green.withValues(alpha:0.1),
+      Colors.orange.withValues(alpha:0.1),
+      Colors.red.withValues(alpha:0.1),
+      Colors.purple.withValues(alpha:0.1),
     ];
     
     for (int i = 0; i < distances.length; i++) {
@@ -216,7 +216,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
         circleId: CircleId('ring_$i'),
         center: widget.stadiumLocation!,
         radius: distances[i] * 1000, // Convert km to meters
-        strokeColor: colors[i].withOpacity(0.5),
+        strokeColor: colors[i].withValues(alpha:0.5),
         strokeWidth: 2,
         fillColor: colors[i],
       ));
@@ -324,7 +324,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        color: Colors.black.withValues(alpha:0.1),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -347,7 +347,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
                       borderRadius: BorderRadius.circular(12),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha:0.1),
                           blurRadius: 8,
                           offset: const Offset(0, 2),
                         ),
@@ -426,11 +426,11 @@ class _VenueMapScreenState extends State<VenueMapScreen>
           border: Border.all(
             color: isSelected 
                 ? const Color(0xFFEA580C) // Warm orange from app theme
-                : Colors.grey.withOpacity(0.3),
+                : Colors.grey.withValues(alpha:0.3),
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha:0.1),
               blurRadius: 4,
               offset: const Offset(0, 2),
             ),
@@ -530,7 +530,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
           borderRadius: BorderRadius.circular(25),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha:0.1),
               blurRadius: 8,
               offset: const Offset(0, 2),
             ),

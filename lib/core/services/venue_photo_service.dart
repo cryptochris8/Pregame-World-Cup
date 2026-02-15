@@ -4,9 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:hive/hive.dart';
 
 class VenuePhotoService {
-  static const String _logTag = 'VenuePhotoService';
   static const String _photoCacheBox = 'venue_photos';
-  static const Duration _photoCacheDuration = Duration(days: 7); // Cache photos for 7 days
   
   final Dio _dio = Dio();
   Box<CachedVenuePhotos>? _photosBox;
@@ -35,7 +33,6 @@ class VenuePhotoService {
   
   /// Clean expired photos from cache
   Future<void> _cleanExpiredPhotos() async {
-    final now = DateTime.now();
     final keysToDelete = <String>[];
     
     for (final key in _photosBox!.keys) {
@@ -57,8 +54,6 @@ class VenuePhotoService {
     int maxPhotos = 5,
     int maxWidth = 800,
   }) async {
-    final stopwatch = Stopwatch()..start();
-    
     try {
       // Check if service is initialized
       if (!_isInitialized || _photosBox == null) {

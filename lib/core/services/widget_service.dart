@@ -392,8 +392,7 @@ Future<void> backgroundCallback(Uri? uri) async {
     // Refresh widget data in background
     try {
       // Get shared preferences and load cached match data
-      final prefs = await SharedPreferences.getInstance();
-      final lastUpdate = prefs.getString('widget_last_update');
+      await SharedPreferences.getInstance();
       // Debug output removed
       // The widget will be updated on next app launch or periodic refresh
     } catch (e) {

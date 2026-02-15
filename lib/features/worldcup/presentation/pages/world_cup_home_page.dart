@@ -311,7 +311,7 @@ class WorldCupDashboardPage extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 8),
       child: ListTile(
         title: Text(
-          '${match.homeTeamName ?? "TBD"} vs ${match.awayTeamName ?? "TBD"}',
+          '${match.homeTeamName} vs ${match.awayTeamName}',
         ),
         subtitle: Text(
           match.dateTime != null

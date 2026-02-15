@@ -38,7 +38,9 @@ class WatchPartyPaymentService {
     try {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) {
-        _showErrorDialog(context, 'Please sign in to purchase virtual attendance');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Please sign in to purchase virtual attendance');
+        }
         return false;
       }
 
@@ -47,19 +49,25 @@ class WatchPartyPaymentService {
       final watchParty = await watchPartyService.getWatchParty(watchPartyId);
 
       if (watchParty == null) {
-        _showErrorDialog(context, 'Watch party not found');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Watch party not found');
+        }
         return false;
       }
 
       if (!watchParty.allowVirtualAttendance) {
-        _showErrorDialog(context, 'This watch party does not allow virtual attendance');
+        if (context.mounted) {
+          _showErrorDialog(context, 'This watch party does not allow virtual attendance');
+        }
         return false;
       }
 
       if (watchParty.virtualAttendanceFee <= 0) {
         // Free virtual attendance - just join directly
         await _joinAsVirtualMember(watchPartyId, watchParty, user);
-        _showSuccessDialog(context, 'You\'ve joined the watch party virtually!');
+        if (context.mounted) {
+          _showSuccessDialog(context, 'You\'ve joined the watch party virtually!');
+        }
         return true;
       }
 
@@ -71,11 +79,14 @@ class WatchPartyPaymentService {
       );
 
       if (clientSecret == null) {
-        _showErrorDialog(context, 'Failed to create payment. Please try again.');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Failed to create payment. Please try again.');
+        }
         return false;
       }
 
       // Present payment sheet
+      if (!context.mounted) return false;
       final paymentSuccess = await _presentPaymentSheet(
         clientSecret: clientSecret,
         watchPartyName: watchParty.name,
@@ -101,7 +112,9 @@ class WatchPartyPaymentService {
           amount: watchParty.virtualAttendanceFee,
         );
 
-        _showSuccessDialog(context, 'Welcome to ${watchParty.name}! You\'re now a virtual attendee.');
+        if (context.mounted) {
+          _showSuccessDialog(context, 'Welcome to ${watchParty.name}! You\'re now a virtual attendee.');
+        }
         PerformanceMonitor.endApiCall(traceId, success: true);
         return true;
       }
@@ -110,7 +123,9 @@ class WatchPartyPaymentService {
       return false;
     } catch (e) {
       LoggingService.error('Error purchasing virtual attendance: $e', tag: _logTag);
-      _showErrorDialog(context, 'An error occurred. Please try again.');
+      if (context.mounted) {
+        _showErrorDialog(context, 'An error occurred. Please try again.');
+      }
       PerformanceMonitor.endApiCall(traceId, success: false);
       return false;
     }
@@ -165,13 +180,15 @@ class WatchPartyPaymentService {
       return true;
     } on StripeException catch (e) {
       // Debug output removed
-      if (e.error.code != FailureCode.Canceled) {
+      if (e.error.code != FailureCode.Canceled && context.mounted) {
         _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
       }
       return false;
     } catch (e) {
       LoggingService.error('Payment sheet error: $e', tag: _logTag);
-      _showErrorDialog(context, 'Payment failed. Please try again.');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Payment failed. Please try again.');
+      }
       return false;
     }
   }
@@ -319,15 +336,21 @@ class WatchPartyPaymentService {
       });
 
       if (result.data['success'] == true) {
-        _showSuccessDialog(context, 'Refund request submitted. You\'ll be notified once processed.');
+        if (context.mounted) {
+          _showSuccessDialog(context, 'Refund request submitted. You\'ll be notified once processed.');
+        }
         return true;
       } else {
-        _showErrorDialog(context, result.data['message'] ?? 'Refund request failed');
+        if (context.mounted) {
+          _showErrorDialog(context, result.data['message'] ?? 'Refund request failed');
+        }
         return false;
       }
     } catch (e) {
       LoggingService.error('Error requesting refund: $e', tag: _logTag);
-      _showErrorDialog(context, 'Failed to submit refund request');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Failed to submit refund request');
+      }
       return false;
     }
   }
@@ -501,7 +524,7 @@ class VirtualAttendanceInfoCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF059669).withOpacity(0.1),
+                  color: const Color(0xFF059669).withValues(alpha:0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Row(

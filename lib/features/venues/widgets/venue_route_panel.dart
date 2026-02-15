@@ -269,7 +269,7 @@ class _VenueRoutePanelState extends State<VenueRoutePanel>
             border: Border.all(
               color: isSelected 
                   ? const Color(0xFF8B4513) 
-                  : Colors.grey.withOpacity(0.3),
+                  : Colors.grey.withValues(alpha:0.3),
             ),
           ),
           child: Column(
@@ -294,7 +294,7 @@ class _VenueRoutePanelState extends State<VenueRoutePanel>
                   VenueRecommendationService.formatWalkingTime(estimatedTime),
                   style: TextStyle(
                     fontSize: 10,
-                    color: isSelected ? Colors.white.withOpacity(0.8) : Colors.grey[500],
+                    color: isSelected ? Colors.white.withValues(alpha:0.8) : Colors.grey[500],
                   ),
                 ),
               ],
@@ -315,9 +315,9 @@ class _VenueRoutePanelState extends State<VenueRoutePanel>
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: const Color(0xFF8B4513).withOpacity(0.05),
+              color: const Color(0xFF8B4513).withValues(alpha:0.05),
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: const Color(0xFF8B4513).withOpacity(0.1)),
+              border: Border.all(color: const Color(0xFF8B4513).withValues(alpha:0.1)),
             ),
             child: Row(
               children: [
@@ -352,7 +352,7 @@ class _VenueRoutePanelState extends State<VenueRoutePanel>
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF2D6A4F).withOpacity(0.1),
+                    color: const Color(0xFF2D6A4F).withValues(alpha:0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Text(

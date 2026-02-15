@@ -272,7 +272,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                       vertical: 2,
                     ),
                     decoration: BoxDecoration(
-                      color: _getStageColor(match.stage).withOpacity(0.1),
+                      color: _getStageColor(match.stage).withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: Text(

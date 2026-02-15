@@ -38,65 +38,6 @@ class ScheduleLoaded extends ScheduleState {
     }).toList();
   }
 
-  // Helper method to check if a team is in favorites with flexible matching
-  bool _isTeamInFavorites(String teamName, List<String> favoriteTeams) {
-    // Direct match first
-    if (favoriteTeams.contains(teamName)) {
-      return true;
-    }
-    
-    // Flexible matching - check if any favorite team name contains the team name or vice versa
-    for (String favoriteTeam in favoriteTeams) {
-      // Check if the team name contains key words from favorite team
-      if (_teamNamesMatch(teamName, favoriteTeam)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-
-  // Helper method to match team names flexibly
-  bool _teamNamesMatch(String apiTeamName, String favoriteTeamName) {
-    final apiLower = apiTeamName.toLowerCase();
-    final favLower = favoriteTeamName.toLowerCase();
-    
-    // Direct match
-    if (apiLower == favLower) return true;
-    
-    // Check for key team identifiers
-    final teamMappings = {
-      'united states': ['united states', 'usa', 'usmnt', 'stars and stripes'],
-      'mexico': ['mexico', 'el tri', 'tricolor'],
-      'brazil': ['brazil', 'selecao', 'canarinha'],
-      'argentina': ['argentina', 'albiceleste'],
-      'france': ['france', 'les bleus'],
-      'germany': ['germany', 'die mannschaft'],
-      'spain': ['spain', 'la roja'],
-      'england': ['england', 'three lions'],
-      'portugal': ['portugal'],
-      'netherlands': ['netherlands', 'holland', 'oranje'],
-      'italy': ['italy', 'azzurri'],
-      'japan': ['japan', 'samurai blue'],
-      'south korea': ['south korea', 'korea republic', 'taegeuk warriors'],
-      'morocco': ['morocco', 'atlas lions'],
-      'canada': ['canada', 'canmnt'],
-      'croatia': ['croatia', 'vatreni'],
-    };
-    
-    // Check if either name contains key identifiers
-    for (String key in teamMappings.keys) {
-      final identifiers = teamMappings[key]!;
-      bool apiMatches = identifiers.any((id) => apiLower.contains(id));
-      bool favMatches = identifiers.any((id) => favLower.contains(id));
-      
-      if (apiMatches && favMatches) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
 }
 
 class UpcomingGamesLoaded extends ScheduleState {
@@ -127,65 +68,6 @@ class UpcomingGamesLoaded extends ScheduleState {
     }).toList();
   }
 
-  // Helper method to check if a team is in favorites with flexible matching
-  bool _isTeamInFavorites(String teamName, List<String> favoriteTeams) {
-    // Direct match first
-    if (favoriteTeams.contains(teamName)) {
-      return true;
-    }
-    
-    // Flexible matching - check if any favorite team name contains the team name or vice versa
-    for (String favoriteTeam in favoriteTeams) {
-      // Check if the team name contains key words from favorite team
-      if (_teamNamesMatch(teamName, favoriteTeam)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-
-  // Helper method to match team names flexibly
-  bool _teamNamesMatch(String apiTeamName, String favoriteTeamName) {
-    final apiLower = apiTeamName.toLowerCase();
-    final favLower = favoriteTeamName.toLowerCase();
-    
-    // Direct match
-    if (apiLower == favLower) return true;
-    
-    // Check for key team identifiers
-    final teamMappings = {
-      'united states': ['united states', 'usa', 'usmnt', 'stars and stripes'],
-      'mexico': ['mexico', 'el tri', 'tricolor'],
-      'brazil': ['brazil', 'selecao', 'canarinha'],
-      'argentina': ['argentina', 'albiceleste'],
-      'france': ['france', 'les bleus'],
-      'germany': ['germany', 'die mannschaft'],
-      'spain': ['spain', 'la roja'],
-      'england': ['england', 'three lions'],
-      'portugal': ['portugal'],
-      'netherlands': ['netherlands', 'holland', 'oranje'],
-      'italy': ['italy', 'azzurri'],
-      'japan': ['japan', 'samurai blue'],
-      'south korea': ['south korea', 'korea republic', 'taegeuk warriors'],
-      'morocco': ['morocco', 'atlas lions'],
-      'canada': ['canada', 'canmnt'],
-      'croatia': ['croatia', 'vatreni'],
-    };
-    
-    // Check if either name contains key identifiers
-    for (String key in teamMappings.keys) {
-      final identifiers = teamMappings[key]!;
-      bool apiMatches = identifiers.any((id) => apiLower.contains(id));
-      bool favMatches = identifiers.any((id) => favLower.contains(id));
-      
-      if (apiMatches && favMatches) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
 }
 
 class WeeklyScheduleLoaded extends ScheduleState {
@@ -220,65 +102,6 @@ class WeeklyScheduleLoaded extends ScheduleState {
     }).toList();
   }
 
-  // Helper method to check if a team is in favorites with flexible matching
-  bool _isTeamInFavorites(String teamName, List<String> favoriteTeams) {
-    // Direct match first
-    if (favoriteTeams.contains(teamName)) {
-      return true;
-    }
-    
-    // Flexible matching - check if any favorite team name contains the team name or vice versa
-    for (String favoriteTeam in favoriteTeams) {
-      // Check if the team name contains key words from favorite team
-      if (_teamNamesMatch(teamName, favoriteTeam)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-
-  // Helper method to match team names flexibly
-  bool _teamNamesMatch(String apiTeamName, String favoriteTeamName) {
-    final apiLower = apiTeamName.toLowerCase();
-    final favLower = favoriteTeamName.toLowerCase();
-    
-    // Direct match
-    if (apiLower == favLower) return true;
-    
-    // Check for key team identifiers
-    final teamMappings = {
-      'united states': ['united states', 'usa', 'usmnt', 'stars and stripes'],
-      'mexico': ['mexico', 'el tri', 'tricolor'],
-      'brazil': ['brazil', 'selecao', 'canarinha'],
-      'argentina': ['argentina', 'albiceleste'],
-      'france': ['france', 'les bleus'],
-      'germany': ['germany', 'die mannschaft'],
-      'spain': ['spain', 'la roja'],
-      'england': ['england', 'three lions'],
-      'portugal': ['portugal'],
-      'netherlands': ['netherlands', 'holland', 'oranje'],
-      'italy': ['italy', 'azzurri'],
-      'japan': ['japan', 'samurai blue'],
-      'south korea': ['south korea', 'korea republic', 'taegeuk warriors'],
-      'morocco': ['morocco', 'atlas lions'],
-      'canada': ['canada', 'canmnt'],
-      'croatia': ['croatia', 'vatreni'],
-    };
-    
-    // Check if either name contains key identifiers
-    for (String key in teamMappings.keys) {
-      final identifiers = teamMappings[key]!;
-      bool apiMatches = identifiers.any((id) => apiLower.contains(id));
-      bool favMatches = identifiers.any((id) => favLower.contains(id));
-      
-      if (apiMatches && favMatches) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
 }
 
 class ScheduleError extends ScheduleState {

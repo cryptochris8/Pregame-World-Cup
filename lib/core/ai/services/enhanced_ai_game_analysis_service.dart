@@ -2,7 +2,6 @@ import '../../../features/schedule/domain/entities/game_schedule.dart';
 import '../../services/logging_service.dart';
 import '../../services/team_mapping_service.dart';
 import '../../services/historical_game_analysis_service.dart';
-import '../../../services/enhanced_sports_data_service.dart';
 import '../../../injection_container.dart';
 import 'multi_provider_ai_service.dart';
 
@@ -13,7 +12,6 @@ class EnhancedAIGameAnalysisService {
   
   EnhancedAIGameAnalysisService._();
   
-  final EnhancedSportsDataService _sportsData = sl<EnhancedSportsDataService>();
   final MultiProviderAIService _multiAI = sl<MultiProviderAIService>();
   final HistoricalGameAnalysisService _historicalAnalysis = HistoricalGameAnalysisService();
   
@@ -227,8 +225,8 @@ class EnhancedAIGameAnalysisService {
     required Map<String, dynamic> analysisData,
   }) async {
     try {
-      final prompt = _buildIntelligentPrompt(game, analysisData);
-      
+      _buildIntelligentPrompt(game, analysisData);
+
       final aiResponse = await _multiAI.generateSportsAnalysis(
         homeTeam: game.homeTeamName,
         awayTeam: game.awayTeamName,

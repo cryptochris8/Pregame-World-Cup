@@ -100,7 +100,7 @@ class ScheduleSocialGameCard extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
-            color: ThemeHelper.favoriteColor.withOpacity(0.2),
+            color: ThemeHelper.favoriteColor.withValues(alpha:0.2),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(color: ThemeHelper.favoriteColor),
           ),
@@ -180,7 +180,7 @@ class ScheduleSocialGameCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: ThemeHelper.favoriteColor.withOpacity(0.3),
+                  color: ThemeHelper.favoriteColor.withValues(alpha:0.3),
                   blurRadius: 4,
                   offset: const Offset(0, 2),
                 ),

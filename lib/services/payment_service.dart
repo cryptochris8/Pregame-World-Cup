@@ -63,11 +63,15 @@ class PaymentService {
       return true;
     } on StripeException catch (e) {
       // Debug output removed
-      _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
+      if (context.mounted) {
+        _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
+      }
       return false;
     } catch (e) {
       // Debug output removed
-      _showErrorDialog(context, 'An unexpected error occurred');
+      if (context.mounted) {
+        _showErrorDialog(context, 'An unexpected error occurred');
+      }
       return false;
     }
   }
@@ -98,12 +102,16 @@ class PaymentService {
     } on StripeException catch (e) {
       // Debug output removed
       if (e.error.code != FailureCode.Canceled) {
-        _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
+        if (context.mounted) {
+          _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
+        }
       }
       return false;
     } catch (e) {
       // Debug output removed
-      _showErrorDialog(context, 'An unexpected error occurred');
+      if (context.mounted) {
+        _showErrorDialog(context, 'An unexpected error occurred');
+      }
       return false;
     }
   }
@@ -121,15 +129,16 @@ class PaymentService {
       );
 
       if (clientSecret == null) throw Exception('Failed to create payment intent');
+      if (!context.mounted) return;
 
       final success = await presentPaymentSheet(
         clientSecret: clientSecret,
         context: context,
       );
 
-      if (success) {
+      if (success && context.mounted) {
         _showSuccessDialog(context, 'Thank you for your tip!');
-        
+
         // Trigger Zapier workflow for successful tip payment
         _trackPaymentSuccess(
           eventType: 'tip_venue',
@@ -138,7 +147,9 @@ class PaymentService {
         );
       }
     } catch (e) {
-      _showErrorDialog(context, 'Failed to process tip: $e');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Failed to process tip: $e');
+      }
     }
   }
 
@@ -155,15 +166,16 @@ class PaymentService {
       );
 
       if (clientSecret == null) throw Exception('Failed to create payment intent');
+      if (!context.mounted) return;
 
       final success = await presentPaymentSheet(
         clientSecret: clientSecret,
         context: context,
       );
 
-      if (success) {
+      if (success && context.mounted) {
         _showSuccessDialog(context, 'Premium features unlocked!');
-        
+
         // Trigger Zapier workflow for premium feature purchase
         _trackPaymentSuccess(
           eventType: 'premium_features',
@@ -172,7 +184,9 @@ class PaymentService {
         );
       }
     } catch (e) {
-      _showErrorDialog(context, 'Failed to purchase features: $e');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Failed to purchase features: $e');
+      }
     }
   }
 
@@ -190,15 +204,16 @@ class PaymentService {
       );
 
       if (clientSecret == null) throw Exception('Failed to create payment intent');
+      if (!context.mounted) return;
 
       final success = await presentPaymentSheet(
         clientSecret: clientSecret,
         context: context,
       );
 
-      if (success) {
+      if (success && context.mounted) {
         _showSuccessDialog(context, 'Ticket purchased successfully!');
-        
+
         // Trigger Zapier workflow for ticket purchase
         _trackPaymentSuccess(
           eventType: 'ticket_purchase',
@@ -210,7 +225,9 @@ class PaymentService {
         );
       }
     } catch (e) {
-      _showErrorDialog(context, 'Failed to purchase ticket: $e');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Failed to purchase ticket: $e');
+      }
     }
   }
 

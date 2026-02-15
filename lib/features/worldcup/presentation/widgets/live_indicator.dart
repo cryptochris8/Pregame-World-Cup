@@ -54,10 +54,10 @@ class _LiveIndicatorState extends State<LiveIndicator>
               height: widget.size,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: widget.color.withOpacity(_animation.value),
+                color: widget.color.withValues(alpha:_animation.value),
                 boxShadow: [
                   BoxShadow(
-                    color: widget.color.withOpacity(_animation.value * 0.5),
+                    color: widget.color.withValues(alpha:_animation.value * 0.5),
                     blurRadius: widget.size,
                     spreadRadius: widget.size * 0.2,
                   ),

@@ -43,12 +43,12 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
           end: Alignment.bottomRight,
           colors: [
             AppTheme.backgroundElevated,
-            AppTheme.backgroundElevated.withOpacity(0.95),
+            AppTheme.backgroundElevated.withValues(alpha:0.95),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: AppTheme.primaryPurple.withOpacity(0.3),
+          color: AppTheme.primaryPurple.withValues(alpha:0.3),
           width: 1,
         ),
       ),
@@ -116,7 +116,7 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: AppTheme.accentGold.withOpacity(0.2),
+                  color: AppTheme.accentGold.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Row(
@@ -365,10 +365,10 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
       margin: const EdgeInsets.only(bottom: 12),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withValues(alpha:0.05),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: Colors.white.withOpacity(0.1),
+          color: Colors.white.withValues(alpha:0.1),
         ),
       ),
       child: Row(
@@ -440,13 +440,13 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                AppTheme.primaryPurple.withOpacity(0.2),
-                AppTheme.primaryBlue.withOpacity(0.2),
+                AppTheme.primaryPurple.withValues(alpha:0.2),
+                AppTheme.primaryBlue.withValues(alpha:0.2),
               ],
             ),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: AppTheme.primaryPurple.withOpacity(0.3),
+              color: AppTheme.primaryPurple.withValues(alpha:0.3),
             ),
           ),
           child: Column(
@@ -581,7 +581,7 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
             Text(
               getConfidenceLabel(),
               style: TextStyle(
-                color: getConfidenceColor().withOpacity(0.8),
+                color: getConfidenceColor().withValues(alpha:0.8),
                 fontSize: 12,
               ),
             ),
@@ -592,7 +592,7 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
           borderRadius: BorderRadius.circular(4),
           child: LinearProgressIndicator(
             value: confidence / 100,
-            backgroundColor: Colors.white.withOpacity(0.1),
+            backgroundColor: Colors.white.withValues(alpha:0.1),
             valueColor: AlwaysStoppedAnimation(getConfidenceColor()),
             minHeight: 4,
           ),

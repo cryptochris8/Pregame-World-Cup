@@ -211,7 +211,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
           color: AppTheme.backgroundCard,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withValues(alpha:0.3),
               blurRadius: 20,
               offset: const Offset(0, -4),
             ),
@@ -310,7 +310,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                                   ),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: AppTheme.primaryRed.withOpacity(0.3),
+                                      color: AppTheme.primaryRed.withValues(alpha:0.3),
                                       blurRadius: 4,
                                       offset: const Offset(0, 1),
                                     ),

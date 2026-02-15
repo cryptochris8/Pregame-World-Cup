@@ -68,7 +68,7 @@ class FavoriteTeamsScreen extends StatefulWidget {
   const FavoriteTeamsScreen({super.key});
 
   @override
-  _FavoriteTeamsScreenState createState() => _FavoriteTeamsScreenState();
+  State<FavoriteTeamsScreen> createState() => _FavoriteTeamsScreenState();
 }
 
 class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
@@ -301,9 +301,9 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                     padding: const EdgeInsets.all(16.0),
                     margin: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
-                      color: Colors.green.withOpacity(0.1),
+                      color: Colors.green.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Colors.green.withOpacity(0.3)),
+                      border: Border.all(color: Colors.green.withValues(alpha:0.3)),
                     ),
                     child: Row(
                       children: [
@@ -346,12 +346,12 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                         margin: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 8.0),
                         decoration: BoxDecoration(
                           color: isSelected
-                              ? ThemeHelper.favoriteColor.withOpacity(0.1)
+                              ? ThemeHelper.favoriteColor.withValues(alpha:0.1)
                               : const Color(0xFF1E293B),
                           borderRadius: BorderRadius.circular(12),
                           border: isSelected
                               ? Border.all(color: ThemeHelper.favoriteColor, width: 2)
-                              : Border.all(color: Colors.white.withOpacity(0.1), width: 1),
+                              : Border.all(color: Colors.white.withValues(alpha:0.1), width: 1),
                         ),
                         child: CheckboxListTile(
                           secondary: TeamLogoHelper.getTeamLogoWidget(

@@ -32,7 +32,7 @@ class TeamDetailPage extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      _getConfederationColor().withOpacity(0.8),
+                      _getConfederationColor().withValues(alpha:0.8),
                       _getConfederationColor(),
                     ],
                   ),
@@ -49,7 +49,7 @@ class TeamDetailPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.3),
+                                color: Colors.black.withValues(alpha:0.3),
                                 blurRadius: 10,
                                 offset: const Offset(0, 4),
                               ),
@@ -87,7 +87,7 @@ class TeamDetailPage extends StatelessWidget {
                                 vertical: 2,
                               ),
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withValues(alpha:0.2),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Text(
@@ -102,7 +102,7 @@ class TeamDetailPage extends StatelessWidget {
                             Text(
                               team.confederation.displayName,
                               style: TextStyle(
-                                color: Colors.white.withOpacity(0.9),
+                                color: Colors.white.withValues(alpha:0.9),
                               ),
                             ),
                           ],
@@ -225,7 +225,7 @@ class TeamDetailPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(12),
@@ -260,7 +260,7 @@ class TeamDetailPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -277,11 +277,11 @@ class TeamDetailPage extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             _buildInfoRow(Icons.flag, 'Country', team.countryName),
-            Divider(color: Colors.white.withOpacity(0.1)),
+            Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(Icons.code, 'FIFA Code', team.fifaCode),
-            Divider(color: Colors.white.withOpacity(0.1)),
+            Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(Icons.public, 'Confederation', team.confederation.displayName),
-            Divider(color: Colors.white.withOpacity(0.1)),
+            Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(
               Icons.star,
               'Short Name',
@@ -319,7 +319,7 @@ class TeamDetailPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -402,9 +402,9 @@ class TeamDetailPage extends StatelessWidget {
   Widget _buildGroupInfo(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.backgroundCard.withOpacity(0.8),
+        color: AppTheme.backgroundCard.withValues(alpha:0.8),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.2)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.2)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -451,7 +451,7 @@ class TeamDetailPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -527,7 +527,7 @@ class TeamMiniCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Material(
         color: Colors.transparent,

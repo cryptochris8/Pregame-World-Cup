@@ -204,7 +204,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                           Icon(
                             Icons.person_search,
                             size: 64,
-                            color: Colors.white.withOpacity(0.3),
+                            color: Colors.white.withValues(alpha:0.3),
                           ),
                           const SizedBox(height: 16),
                           Text(
@@ -212,7 +212,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                                 ? 'No friends yet'
                                 : 'No friends found',
                             style: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha:0.6),
                               fontSize: 16,
                             ),
                           ),
@@ -242,7 +242,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                           ),
                           subtitle: Text(
                             friend.email ?? 'No email',
-                            style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                            style: TextStyle(color: Colors.white.withValues(alpha:0.7)),
                           ),
                           onTap: () => _createDirectChat(friend),
                         );
@@ -554,7 +554,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                     Icon(
                       Icons.person_search,
                       size: 64,
-                      color: Colors.white.withOpacity(0.3),
+                      color: Colors.white.withValues(alpha:0.3),
                     ),
                     const SizedBox(height: 16),
                     Text(
@@ -562,7 +562,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                           ? 'No friends yet'
                           : 'No friends found',
                       style: TextStyle(
-                        color: Colors.white.withOpacity(0.6),
+                        color: Colors.white.withValues(alpha:0.6),
                         fontSize: 16,
                       ),
                     ),
@@ -594,7 +594,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                     ),
                     subtitle: Text(
                       friend.email ?? 'No email',
-                      style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                      style: TextStyle(color: Colors.white.withValues(alpha:0.7)),
                     ),
                     trailing: Checkbox(
                       value: isSelected,

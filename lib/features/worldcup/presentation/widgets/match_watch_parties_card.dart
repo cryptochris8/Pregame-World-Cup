@@ -24,12 +24,12 @@ class MatchWatchPartiesCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppTheme.primaryPurple.withOpacity(0.2),
-            AppTheme.secondaryRose.withOpacity(0.2),
+            AppTheme.primaryPurple.withValues(alpha:0.2),
+            AppTheme.secondaryRose.withValues(alpha:0.2),
           ],
         ),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.primaryPurple.withOpacity(0.3)),
+        border: Border.all(color: AppTheme.primaryPurple.withValues(alpha:0.3)),
       ),
       child: Material(
         color: Colors.transparent,
@@ -72,7 +72,7 @@ class MatchWatchPartiesCard extends StatelessWidget {
                       Text(
                         'Find or create a watch party for this match',
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white.withValues(alpha:0.7),
                           fontSize: 13,
                         ),
                       ),
@@ -82,7 +82,7 @@ class MatchWatchPartiesCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryPurple.withOpacity(0.3),
+                    color: AppTheme.primaryPurple.withValues(alpha:0.3),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(

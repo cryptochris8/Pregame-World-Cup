@@ -37,10 +37,10 @@ class PremiumFeatureGate extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHighest.withOpacity(0.5),
+        color: colorScheme.surfaceContainerHighest.withValues(alpha:0.5),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: colorScheme.outline.withOpacity(0.3),
+          color: colorScheme.outline.withValues(alpha:0.3),
         ),
       ),
       child: Column(
@@ -228,7 +228,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: colorScheme.primary.withOpacity(0.3),
+            color: colorScheme.primary.withValues(alpha:0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -256,7 +256,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
                 IconButton(
                   icon: Icon(
                     Icons.close,
-                    color: colorScheme.onPrimary.withOpacity(0.7),
+                    color: colorScheme.onPrimary.withValues(alpha:0.7),
                     size: 20,
                   ),
                   onPressed: onDismiss,
@@ -269,7 +269,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
             customMessage ??
                 'Get advanced features like specific match scheduling, TV setup, game day specials, and real-time capacity updates.',
             style: theme.textTheme.bodySmall?.copyWith(
-              color: colorScheme.onPrimary.withOpacity(0.9),
+              color: colorScheme.onPrimary.withValues(alpha:0.9),
             ),
           ),
           const SizedBox(height: 12),

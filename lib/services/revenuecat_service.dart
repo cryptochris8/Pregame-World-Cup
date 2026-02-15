@@ -14,8 +14,6 @@ class RevenueCatService {
   factory RevenueCatService() => _instance;
   RevenueCatService._internal();
 
-  static const String _logTag = 'RevenueCat';
-
   // RevenueCat API Keys (public keys, safe to include in app)
   // iOS: Production key for App Store
   static const String _iosApiKey = 'appl_ossGwqwpDoJlTmVSVZEHoZTFMHY';

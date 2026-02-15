@@ -243,16 +243,13 @@ class HistoricalGameAnalysisService {
   /// Create compelling season narrative using detailed game analysis
   String _createSeasonNarrative(Map<String, dynamic> analysis, String teamName, int season) {
     final record = analysis['record'] as String;
-    final wins = analysis['wins'] as int;
-    final losses = analysis['losses'] as int;
     final winPercentage = analysis['winPercentage'] as double;
     final avgPointsFor = analysis['avgPointsFor'] as int;
     final avgPointsAgainst = analysis['avgPointsAgainst'] as int;
     final pointDiff = analysis['pointDifferential'] as int;
     final notableWins = analysis['notableWins'] as List<String>;
     final toughLosses = analysis['toughLosses'] as List<String>;
-    final completedGames = analysis['completedGames'] as int;
-    
+
     final narrativeParts = <String>[];
     
     // Season opening with context and drama
@@ -364,7 +361,6 @@ class HistoricalGameAnalysisService {
     
     final homeScore = lastGame['HomeScore'] as int? ?? 0;
     final awayScore = lastGame['AwayScore'] as int? ?? 0;
-    final gameDate = lastGame['DateTime'] as String? ?? '';
     final season = lastGame['Season'] as int? ?? DateTime.now().year - 1;
     
     final homeKey = TeamMappingService.getTeamKey(homeTeam);

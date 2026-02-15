@@ -1,5 +1,4 @@
 import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../ai/services/ai_service.dart';
@@ -16,7 +15,6 @@ class UnifiedVenueService {
   UnifiedVenueService._internal();
 
   // Core dependencies
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final AIService _aiService = AIService();
   final UserLearningService _userLearningService = UserLearningService();
@@ -337,9 +335,7 @@ Provide a brief analysis focusing on:
       score += (priceScore - 0.5) * 0.2;
     }
 
-    // Distance preferences (if available)
-    final distancePreference = userBehavior['preferredDistance'] as double? ?? 5.0;
-    // Distance scoring would be implemented when distance data is available
+    // Distance preferences scoring would be implemented when distance data is available
 
     return score.clamp(0.0, 1.0);
   }

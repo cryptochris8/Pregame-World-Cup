@@ -167,11 +167,11 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                   Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
-                      color: AppTheme.backgroundCard.withOpacity(0.3),
+                      color: AppTheme.backgroundCard.withValues(alpha:0.3),
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: AppTheme.primaryOrange.withOpacity(0.3),
+                          color: AppTheme.primaryOrange.withValues(alpha:0.3),
                           blurRadius: 30,
                           spreadRadius: 5,
                         ),
@@ -189,15 +189,15 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                   Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
-                      color: AppTheme.backgroundCard.withOpacity(0.8),
+                      color: AppTheme.backgroundCard.withValues(alpha:0.8),
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(
-                        color: AppTheme.primaryOrange.withOpacity(0.2),
+                        color: AppTheme.primaryOrange.withValues(alpha:0.2),
                         width: 1,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.3),
+                          color: Colors.black.withValues(alpha:0.3),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         ),
@@ -235,10 +235,10 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                             vertical: 12,
                           ),
                           decoration: BoxDecoration(
-                            color: AppTheme.backgroundElevated.withOpacity(0.8),
+                            color: AppTheme.backgroundElevated.withValues(alpha:0.8),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: AppTheme.primaryOrange.withOpacity(0.3),
+                              color: AppTheme.primaryOrange.withValues(alpha:0.3),
                             ),
                           ),
                           child: Row(
@@ -270,10 +270,10 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                         Container(
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
-                            color: AppTheme.infoColor.withOpacity(0.1),
+                            color: AppTheme.infoColor.withValues(alpha:0.1),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: AppTheme.infoColor.withOpacity(0.3),
+                              color: AppTheme.infoColor.withValues(alpha:0.3),
                             ),
                           ),
                           child: const Column(
@@ -348,8 +348,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                               foregroundColor: AppTheme.textWhite,
                               side: BorderSide(
                                 color: _canResend
-                                    ? AppTheme.primaryOrange.withOpacity(0.5)
-                                    : AppTheme.textTertiary.withOpacity(0.3),
+                                    ? AppTheme.primaryOrange.withValues(alpha:0.5)
+                                    : AppTheme.textTertiary.withValues(alpha:0.3),
                                 width: 1.5,
                               ),
                               shape: RoundedRectangleBorder(
@@ -436,7 +436,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                         height: 12,
                         child: CircularProgressIndicator(
                           strokeWidth: 2,
-                          color: AppTheme.textTertiary.withOpacity(0.5),
+                          color: AppTheme.textTertiary.withValues(alpha:0.5),
                         ),
                       ),
                       const SizedBox(width: 8),

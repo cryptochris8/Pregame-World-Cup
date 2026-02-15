@@ -298,6 +298,7 @@ class _AdminWatchPartiesScreenState extends State<AdminWatchPartiesScreen> {
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
             onPressed: () async {
               if (reasonController.text.isEmpty) return;
+              final messenger = ScaffoldMessenger.of(context);
               Navigator.pop(context);
               final success = await _adminService.deleteWatchParty(
                 party.watchPartyId,
@@ -309,7 +310,7 @@ class _AdminWatchPartiesScreenState extends State<AdminWatchPartiesScreen> {
                     _parties.removeWhere((p) => p.watchPartyId == party.watchPartyId);
                   });
                 }
-                ScaffoldMessenger.of(context).showSnackBar(
+                messenger.showSnackBar(
                   SnackBar(
                     content: Text(success ? 'Watch party deleted' : 'Failed to delete'),
                   ),

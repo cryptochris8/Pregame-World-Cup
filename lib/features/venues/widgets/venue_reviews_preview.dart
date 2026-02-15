@@ -58,7 +58,7 @@ class VenueReviewsPreview extends StatelessWidget {
         border: Border.all(color: const Color(0xFFE5E5E5)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -85,7 +85,7 @@ class VenueReviewsPreview extends StatelessWidget {
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF8B4513).withOpacity(0.1),
+                  color: const Color(0xFF8B4513).withValues(alpha:0.1),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Column(
@@ -227,7 +227,7 @@ class VenueReviewsPreview extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF8B4513).withOpacity(0.1),
+                  color: const Color(0xFF8B4513).withValues(alpha:0.1),
                   shape: BoxShape.circle,
                 ),
                 child: Center(
@@ -301,7 +301,7 @@ class VenueReviewsPreview extends StatelessWidget {
                 return Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF8B4513).withOpacity(0.1),
+                    color: const Color(0xFF8B4513).withValues(alpha:0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(

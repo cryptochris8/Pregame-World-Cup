@@ -153,7 +153,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -175,7 +175,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
                   width: 16,
                   height: 16,
                   decoration: BoxDecoration(
-                    color: AppTheme.secondaryEmerald.withOpacity(0.2),
+                    color: AppTheme.secondaryEmerald.withValues(alpha:0.2),
                     border: Border.all(color: AppTheme.secondaryEmerald),
                     borderRadius: BorderRadius.circular(4),
                   ),
@@ -194,7 +194,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
                   width: 16,
                   height: 16,
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryOrange.withOpacity(0.2),
+                    color: AppTheme.primaryOrange.withValues(alpha:0.2),
                     border: Border.all(color: AppTheme.primaryOrange),
                     borderRadius: BorderRadius.circular(4),
                   ),

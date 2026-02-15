@@ -156,7 +156,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF7C3AED).withOpacity(0.3),
+            color: const Color(0xFF7C3AED).withValues(alpha:0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -187,7 +187,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha:0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: const Icon(
@@ -213,7 +213,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
                 Text(
                   _getContextDescription(),
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withValues(alpha:0.9),
                     fontSize: 14,
                   ),
                 ),
@@ -224,7 +224,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
             onPressed: _loadRecommendations,
             icon: Icon(
               Icons.refresh,
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha:0.9),
             ),
             tooltip: 'Refresh recommendations',
           ),
@@ -497,7 +497,7 @@ class _SmartVenueDiscoveryWidgetState extends State<SmartVenueDiscoveryWidget>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          venue.name ?? 'Unknown Venue',
+                          venue.name,
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,

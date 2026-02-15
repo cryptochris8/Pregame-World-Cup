@@ -40,13 +40,13 @@ class PredictionCard extends StatelessWidget {
 
     if (!prediction.isPending && showResult) {
       if (prediction.exactScoreCorrect) {
-        backgroundColor = AppTheme.secondaryEmerald.withOpacity(0.15);
+        backgroundColor = AppTheme.secondaryEmerald.withValues(alpha:0.15);
         borderColor = AppTheme.secondaryEmerald;
       } else if (prediction.resultCorrect) {
-        backgroundColor = AppTheme.primaryOrange.withOpacity(0.15);
+        backgroundColor = AppTheme.primaryOrange.withValues(alpha:0.15);
         borderColor = AppTheme.primaryOrange;
       } else {
-        backgroundColor = AppTheme.secondaryRose.withOpacity(0.15);
+        backgroundColor = AppTheme.secondaryRose.withValues(alpha:0.15);
         borderColor = AppTheme.secondaryRose;
       }
     }
@@ -56,7 +56,7 @@ class PredictionCard extends StatelessWidget {
         color: backgroundColor,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: borderColor ?? Colors.white.withOpacity(0.1),
+          color: borderColor ?? Colors.white.withValues(alpha:0.1),
           width: borderColor != null ? 1.5 : 1,
         ),
       ),
@@ -121,7 +121,7 @@ class PredictionCard extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(
-                        color: AppTheme.primaryPurple.withOpacity(0.3),
+                        color: AppTheme.primaryPurple.withValues(alpha:0.3),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(
@@ -192,7 +192,7 @@ class PredictionCard extends StatelessWidget {
 
                 // Action buttons (if pending)
                 if (prediction.isPending && (onEdit != null || onDelete != null)) ...[
-                  Divider(height: 16, color: Colors.white.withOpacity(0.1)),
+                  Divider(height: 16, color: Colors.white.withValues(alpha:0.1)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -241,7 +241,7 @@ class PredictionCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: color),
       ),
@@ -285,7 +285,7 @@ class PredictionStatsCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -342,7 +342,7 @@ class PredictionStatsCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
                 child: LinearProgressIndicator(
                   value: stats.correctPercentage / 100,
-                  backgroundColor: Colors.white.withOpacity(0.1),
+                  backgroundColor: Colors.white.withValues(alpha:0.1),
                   valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.secondaryEmerald),
                   minHeight: 8,
                 ),

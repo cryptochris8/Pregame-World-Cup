@@ -83,7 +83,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
                 borderRadius: BorderRadius.circular(6),
                 boxShadow: [
                   BoxShadow(
-                    color: AppTheme.primaryOrange.withOpacity(0.4),
+                    color: AppTheme.primaryOrange.withValues(alpha:0.4),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
@@ -126,7 +126,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
                       _tabController.animateTo(0);
                       context.read<MatchListCubit>().setFilter(MatchListFilter.live);
                     },
-                    backgroundColor: Colors.red.withOpacity(0.3),
+                    backgroundColor: Colors.red.withValues(alpha:0.3),
                     side: BorderSide.none,
                     padding: const EdgeInsets.symmetric(horizontal: 4),
                   ),

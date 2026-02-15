@@ -233,10 +233,10 @@ class _PredictionDialogState extends State<PredictionDialog> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.purple.withOpacity(0.1),
+                  color: Colors.purple.withValues(alpha:0.1),
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(
-                    color: Colors.purple.withOpacity(0.3),
+                    color: Colors.purple.withValues(alpha:0.3),
                   ),
                 ),
                 child: Row(
@@ -331,10 +331,10 @@ class _PredictionDialogState extends State<PredictionDialog> {
       return Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
-          color: Colors.purple.withOpacity(0.1),
+          color: Colors.purple.withValues(alpha:0.1),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: Colors.purple.withOpacity(0.3),
+            color: Colors.purple.withValues(alpha:0.3),
           ),
         ),
         child: Row(
@@ -386,12 +386,11 @@ class _PredictionDialogState extends State<PredictionDialog> {
 class _ScoreSelector extends StatelessWidget {
   final int value;
   final ValueChanged<int> onChanged;
-  final int maxValue;
+  static const int _maxValue = 20;
 
   const _ScoreSelector({
     required this.value,
     required this.onChanged,
-    this.maxValue = 20,
   });
 
   @override
@@ -403,7 +402,7 @@ class _ScoreSelector extends StatelessWidget {
       children: [
         // Increment button
         IconButton(
-          onPressed: value < maxValue ? () => onChanged(value + 1) : null,
+          onPressed: value < _maxValue ? () => onChanged(value + 1) : null,
           icon: const Icon(Icons.add_circle_outline),
           iconSize: 32,
           color: colorScheme.primary,

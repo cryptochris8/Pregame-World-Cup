@@ -166,7 +166,7 @@ class ManagerDetailScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               boxShadow: [
                                 BoxShadow(
-                                  color: const Color(0xFF7C3AED).withOpacity(0.4),
+                                  color: const Color(0xFF7C3AED).withValues(alpha:0.4),
                                   blurRadius: 6,
                                   offset: const Offset(0, 3),
                                 ),
@@ -224,7 +224,7 @@ class _ManagerHeaderCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF7C3AED).withOpacity(0.3),
+            color: const Color(0xFF7C3AED).withValues(alpha:0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -254,7 +254,7 @@ class _ManagerHeaderCard extends StatelessWidget {
             Text(
               manager.currentTeam,
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.white.withValues(alpha:0.9),
               ),
               textAlign: TextAlign.center,
             ),
@@ -309,7 +309,7 @@ class _ManagerProfileAnalysis extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF10B981).withOpacity(0.4),
+                      color: const Color(0xFF10B981).withValues(alpha:0.4),
                       blurRadius: 8,
                       offset: const Offset(0, 4),
                     ),
@@ -345,7 +345,7 @@ class _ManagerProfileAnalysis extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFFF43F5E).withOpacity(0.4),
+                      color: const Color(0xFFF43F5E).withValues(alpha:0.4),
                       blurRadius: 8,
                       offset: const Offset(0, 4),
                     ),
@@ -383,13 +383,13 @@ class _FamousQuoteCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Colors.blue[400]!.withOpacity(0.15),
-            Colors.purple[300]!.withOpacity(0.15),
+            Colors.blue[400]!.withValues(alpha:0.15),
+            Colors.purple[300]!.withValues(alpha:0.15),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.blue[300]!.withOpacity(0.3),
+          color: Colors.blue[300]!.withValues(alpha:0.3),
           width: 1,
         ),
       ),
@@ -444,13 +444,13 @@ class _ControversiesCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Colors.orange[300]!.withOpacity(0.2),
-            Colors.red[200]!.withOpacity(0.15),
+            Colors.orange[300]!.withValues(alpha:0.2),
+            Colors.red[200]!.withValues(alpha:0.15),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.orange[400]!.withOpacity(0.4),
+          color: Colors.orange[400]!.withValues(alpha:0.4),
           width: 1,
         ),
       ),
@@ -569,7 +569,7 @@ class _InfoChip extends StatelessWidget {
           fontWeight: FontWeight.w500,
         ),
       ),
-      backgroundColor: Colors.white.withOpacity(0.2),
+      backgroundColor: Colors.white.withValues(alpha:0.2),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
     );
   }

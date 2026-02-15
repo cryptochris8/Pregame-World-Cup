@@ -163,6 +163,7 @@ class _ReminderButtonState extends State<ReminderButton> {
                   ),
                   title: Text(timing.displayName),
                   onTap: () async {
+                    final messenger = ScaffoldMessenger.of(context);
                     Navigator.pop(context);
                     setState(() {
                       _currentTiming = timing;
@@ -174,7 +175,7 @@ class _ReminderButtonState extends State<ReminderButton> {
                         timing: timing,
                       );
                       if (mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
+                        messenger.showSnackBar(
                           SnackBar(
                             content: Text('Reminder updated to ${timing.displayName} before'),
                             duration: const Duration(seconds: 2),
@@ -266,7 +267,7 @@ class ReminderIndicator extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: Colors.amber.withOpacity(0.2),
+        color: Colors.amber.withValues(alpha:0.2),
         borderRadius: BorderRadius.circular(4),
       ),
       child: const Row(

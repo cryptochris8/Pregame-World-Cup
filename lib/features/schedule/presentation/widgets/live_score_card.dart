@@ -21,7 +21,7 @@ class LiveScoreCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: Colors.red.withOpacity(0.5),
+            color: Colors.red.withValues(alpha:0.5),
             width: 2,
           ),
         ),
@@ -228,12 +228,12 @@ class LiveScoreCard extends StatelessWidget {
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Icon(Icons.update, color: Colors.white.withOpacity(0.5), size: 14),
+                      Icon(Icons.update, color: Colors.white.withValues(alpha:0.5), size: 14),
                       const SizedBox(width: 4),
                       Text(
                         'Updated ${_formatLastUpdate(game.lastScoreUpdate!)}',
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.5),
+                          color: Colors.white.withValues(alpha:0.5),
                           fontSize: 12,
                         ),
                       ),

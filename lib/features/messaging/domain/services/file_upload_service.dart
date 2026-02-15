@@ -8,8 +8,6 @@ import '../entities/video_message.dart';
 import '../../../../core/services/performance_monitor.dart';
 
 class FileUploadService {
-  static const String _logTag = 'FileUploadService';
-  
   final FirebaseStorage _storage = FirebaseStorage.instance;
   final ImagePicker _imagePicker = ImagePicker();
   
@@ -243,8 +241,7 @@ class FileUploadService {
       
       // Listen to upload progress (you can expose this as a stream if needed)
       uploadTask.snapshotEvents.listen((TaskSnapshot snapshot) {
-        final progress = snapshot.bytesTransferred / snapshot.totalBytes;
-        // Debug output removed
+        // Upload progress: snapshot.bytesTransferred / snapshot.totalBytes
       });
       
       final snapshot = await uploadTask;

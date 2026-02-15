@@ -54,7 +54,7 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
             onPressed: () async {
               await _prefsService.resetToDefaults();
               setState(() => _preferences = _prefsService.preferences);
-              if (mounted) {
+              if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text('Settings reset to defaults')),
                 );

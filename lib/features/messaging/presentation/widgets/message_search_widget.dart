@@ -120,13 +120,13 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
             Icon(
               Icons.search,
               size: 64,
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha:0.3),
             ),
             const SizedBox(height: 16),
             Text(
               'Start typing to search messages',
               style: TextStyle(
-                color: Colors.white.withOpacity(0.6),
+                color: Colors.white.withValues(alpha:0.6),
                 fontSize: 16,
               ),
             ),
@@ -151,13 +151,13 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
             Icon(
               Icons.search_off,
               size: 64,
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha:0.3),
             ),
             const SizedBox(height: 16),
             Text(
               'No messages found',
               style: TextStyle(
-                color: Colors.white.withOpacity(0.6),
+                color: Colors.white.withValues(alpha:0.6),
                 fontSize: 16,
               ),
             ),
@@ -165,7 +165,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
             Text(
               'Try different keywords',
               style: TextStyle(
-                color: Colors.white.withOpacity(0.4),
+                color: Colors.white.withValues(alpha:0.4),
                 fontSize: 14,
               ),
             ),
@@ -217,7 +217,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
           Text(
             _formatTimestamp(message.createdAt),
             style: TextStyle(
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withValues(alpha:0.5),
               fontSize: 12,
             ),
           ),
@@ -262,7 +262,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
         style: TextStyle(
           color: Colors.orange[300],
           fontWeight: FontWeight.bold,
-          backgroundColor: Colors.orange[300]?.withOpacity(0.2),
+          backgroundColor: Colors.orange[300]?.withValues(alpha:0.2),
         ),
       ));
       

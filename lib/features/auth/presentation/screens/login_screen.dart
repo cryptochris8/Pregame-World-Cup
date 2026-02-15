@@ -97,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               borderRadius: BorderRadius.circular(30),
                               boxShadow: [
                                 BoxShadow(
-                                  color: AppTheme.primaryOrange.withOpacity(0.3),
+                                  color: AppTheme.primaryOrange.withValues(alpha:0.3),
                                   blurRadius: 30,
                                   spreadRadius: 5,
                                 ),
@@ -149,15 +149,15 @@ class _LoginScreenState extends State<LoginScreen> {
                     Container(
                       padding: const EdgeInsets.all(24),
                       decoration: BoxDecoration(
-                        color: AppTheme.backgroundCard.withOpacity(0.8),
+                        color: AppTheme.backgroundCard.withValues(alpha:0.8),
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(
-                          color: AppTheme.primaryOrange.withOpacity(0.2),
+                          color: AppTheme.primaryOrange.withValues(alpha:0.2),
                           width: 1,
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.3),
+                            color: Colors.black.withValues(alpha:0.3),
                             blurRadius: 20,
                             offset: const Offset(0, 10),
                           ),
@@ -191,7 +191,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 color: AppTheme.primaryOrange,
                               ),
                               filled: true,
-                              fillColor: AppTheme.backgroundElevated.withOpacity(0.8),
+                              fillColor: AppTheme.backgroundElevated.withValues(alpha:0.8),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16),
                                 borderSide: BorderSide.none,
@@ -199,7 +199,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16),
                                 borderSide: BorderSide(
-                                  color: AppTheme.textTertiary.withOpacity(0.3),
+                                  color: AppTheme.textTertiary.withValues(alpha:0.3),
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
@@ -234,7 +234,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 color: AppTheme.primaryOrange,
                               ),
                               filled: true,
-                              fillColor: AppTheme.backgroundElevated.withOpacity(0.8),
+                              fillColor: AppTheme.backgroundElevated.withValues(alpha:0.8),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16),
                                 borderSide: BorderSide.none,
@@ -242,7 +242,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16),
                                 borderSide: BorderSide(
-                                  color: AppTheme.textTertiary.withOpacity(0.3),
+                                  color: AppTheme.textTertiary.withValues(alpha:0.3),
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
@@ -268,10 +268,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             Container(
                               padding: const EdgeInsets.all(12),
                               decoration: BoxDecoration(
-                                color: AppTheme.errorColor.withOpacity(0.1),
+                                color: AppTheme.errorColor.withValues(alpha:0.1),
                                 borderRadius: BorderRadius.circular(12),
                                 border: Border.all(
-                                  color: AppTheme.errorColor.withOpacity(0.3),
+                                  color: AppTheme.errorColor.withValues(alpha:0.3),
                                 ),
                               ),
                               child: Row(

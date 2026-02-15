@@ -1,10 +1,7 @@
 import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../services/logging_service.dart';
-import '../ai/services/ai_service.dart';
 import '../services/user_learning_service.dart';
-import '../services/game_prediction_service.dart';
 import '../../features/recommendations/domain/entities/place.dart';
 import '../../features/schedule/domain/entities/game_schedule.dart';
 
@@ -14,11 +11,8 @@ class SmartVenueRecommendationService {
   factory SmartVenueRecommendationService() => _instance;
   SmartVenueRecommendationService._internal();
 
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final AIService _aiService = AIService();
   final UserLearningService _userLearningService = UserLearningService();
-  final GamePredictionService _predictionService = GamePredictionService();
 
   /// Generate smart venue recommendations
   Future<List<SmartVenueRecommendation>> generateSmartRecommendations({
@@ -30,13 +24,8 @@ class SmartVenueRecommendationService {
     try {
       LoggingService.info('Generating smart venue recommendations', tag: 'SmartVenue');
       
-      // Get user behavior data
-      final user = _auth.currentUser;
-      Map<String, dynamic>? userBehavior;
-      if (user != null) {
-        // User behavior summary would be implemented here
-        userBehavior = {};
-      }
+      // Get user behavior data (user context available for future personalization)
+      _auth.currentUser;
 
       // Create basic recommendations for now
       final recommendations = <SmartVenueRecommendation>[];

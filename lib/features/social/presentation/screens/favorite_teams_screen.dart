@@ -220,7 +220,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
             decoration: BoxDecoration(
               color: const Color(0xFF1E293B),
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: ThemeHelper.favoriteColor.withOpacity(0.3)),
+              border: Border.all(color: ThemeHelper.favoriteColor.withValues(alpha:0.3)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -257,7 +257,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
               margin: const EdgeInsets.symmetric(horizontal: 16),
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
               decoration: BoxDecoration(
-                color: ThemeHelper.favoriteColor.withOpacity(0.1),
+                color: ThemeHelper.favoriteColor.withValues(alpha:0.1),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(color: ThemeHelper.favoriteColor),
               ),
@@ -299,7 +299,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                         : Border.all(color: Colors.white12),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        color: Colors.black.withValues(alpha:0.1),
                         blurRadius: 4,
                         offset: const Offset(0, 2),
                       ),

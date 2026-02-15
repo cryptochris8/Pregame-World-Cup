@@ -439,19 +439,19 @@ class PlayerService {
         'totalPlayers': players.length,
         'totalMarketValue': players.fold<int>(
           0,
-          (sum, player) => sum + player.marketValue
+          (acc, player) => acc + player.marketValue
         ),
         'averageAge': players.fold<double>(
           0,
-          (sum, player) => sum + player.age
+          (acc, player) => acc + player.age
         ) / players.length,
         'totalGoals': players.fold<int>(
           0,
-          (sum, player) => sum + player.goals
+          (acc, player) => acc + player.goals
         ),
         'totalCaps': players.fold<int>(
           0,
-          (sum, player) => sum + player.caps
+          (acc, player) => acc + player.caps
         ),
         'playersByPosition': _groupPlayersByPosition(players),
       };

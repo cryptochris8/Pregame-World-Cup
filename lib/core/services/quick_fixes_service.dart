@@ -54,7 +54,7 @@ class QuickFixesService {
    • After manual fixes: ~400 issues (estimated)
    
 🎯 REMAINING WORK:
-   • ~100 .withOpacity() → .withValues() conversions
+   • ~100 .withValues(alpha:) → .withValues() conversions
    • print() calls now guarded by kDebugMode (injection_container, main)
    • ~50 unused variable/field removals
    • ~30 BuildContext async safety fixes

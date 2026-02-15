@@ -17,7 +17,6 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
   final ManagerService _managerService = ManagerService();
   final ScrollController _scrollController = ScrollController();
 
-  final List<Manager> _allManagers = [];
   List<Manager> _displayedManagers = [];
   bool _isLoading = true;
   bool _isLoadingMore = false;

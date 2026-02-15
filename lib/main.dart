@@ -57,6 +57,7 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 /// Automatically disabled in release builds for App Store compliance
 /// Set to true during development for detailed logging
 const bool _diagnosticModeOverride = true;
+// ignore: non_constant_identifier_names
 bool get DIAGNOSTIC_MODE => kDebugMode && _diagnosticModeOverride;
 
 /// Production-safe logging function - only logs in debug mode

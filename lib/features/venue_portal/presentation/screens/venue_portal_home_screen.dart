@@ -43,7 +43,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
                         color: Theme.of(context)
                             .colorScheme
                             .onSurface
-                            .withOpacity(0.7),
+                            .withValues(alpha:0.7),
                       ),
                 ),
               ],
@@ -106,9 +106,6 @@ class VenuePortalHomeScreen extends StatelessWidget {
   }
 
   Widget _buildDashboard(BuildContext context, VenueEnhancementState state) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-
     return RefreshIndicator(
       onRefresh: () => context.read<VenueEnhancementCubit>().refresh(),
       child: SingleChildScrollView(
@@ -137,7 +134,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
             // FREE TIER - Shows Matches Toggle
             Text(
               'Broadcasting',
-              style: theme.textTheme.titleLarge?.copyWith(
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -149,7 +146,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
             // PREMIUM FEATURES
             Text(
               'Premium Features',
-              style: theme.textTheme.titleLarge?.copyWith(
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -225,7 +222,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
               height: 56,
               decoration: BoxDecoration(
                 color: isPremium
-                    ? Colors.amber.withOpacity(0.2)
+                    ? Colors.amber.withValues(alpha:0.2)
                     : colorScheme.surfaceContainerHighest,
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -269,9 +266,6 @@ class VenuePortalHomeScreen extends StatelessWidget {
   }
 
   Widget _buildQuickStats(BuildContext context, VenueEnhancementState state) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-
     return Row(
       children: [
         Expanded(
@@ -327,7 +321,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
             Icon(
               icon,
               color: isLocked
-                  ? colorScheme.onSurfaceVariant.withOpacity(0.5)
+                  ? colorScheme.onSurfaceVariant.withValues(alpha:0.5)
                   : colorScheme.primary,
             ),
             const SizedBox(height: 8),
@@ -336,7 +330,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
               style: theme.textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: isLocked
-                    ? colorScheme.onSurfaceVariant.withOpacity(0.5)
+                    ? colorScheme.onSurfaceVariant.withValues(alpha:0.5)
                     : null,
               ),
             ),
@@ -688,7 +682,7 @@ class _VenuePremiumUpgradeDialogState
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.amber.withOpacity(0.2),
+              color: Colors.amber.withValues(alpha:0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: const Icon(Icons.star, color: Colors.amber),
@@ -729,7 +723,7 @@ class _VenuePremiumUpgradeDialogState
                   Text(
                     'One-time payment for World Cup 2026',
                     style: theme.textTheme.bodySmall?.copyWith(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withValues(alpha:0.9),
                     ),
                   ),
                 ],

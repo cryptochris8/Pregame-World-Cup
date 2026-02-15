@@ -7,6 +7,7 @@ class LifecycleHelper {
   /// Execute a setState operation safely, checking if the widget is mounted
   static void safeSetState(State state, VoidCallback fn, {String? debugTag}) {
     if (state.mounted) {
+      // ignore: invalid_use_of_protected_member
       state.setState(fn);
     } else {
       LoggingService.warning(

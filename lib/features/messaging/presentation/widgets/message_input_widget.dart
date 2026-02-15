@@ -128,9 +128,9 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                   // Attachment button
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
+                      color: Colors.white.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(24),
-                      border: Border.all(color: Colors.white.withOpacity(0.3)),
+                      border: Border.all(color: Colors.white.withValues(alpha:0.3)),
                     ),
                     child: IconButton(
                       onPressed: _showAttachmentOptions,
@@ -151,10 +151,10 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                         maxHeight: 120,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
+                        color: Colors.white.withValues(alpha:0.1),
                         borderRadius: BorderRadius.circular(24),
                         border: Border.all(
-                          color: Colors.white.withOpacity(0.3),
+                          color: Colors.white.withValues(alpha:0.3),
                           width: 1,
                         ),
                       ),
@@ -220,7 +220,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                             )
                           : null,
                       color: _textController.text.trim().isEmpty 
-                          ? Colors.white.withOpacity(0.3) 
+                          ? Colors.white.withValues(alpha:0.3) 
                           : null,
                       shape: BoxShape.circle,
                     ),
@@ -259,13 +259,13 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
       margin: const EdgeInsets.symmetric(horizontal: 16),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.3)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.3)),
         gradient: LinearGradient(
           colors: [
-            Colors.white.withOpacity(0.1),
-            Colors.white.withOpacity(0.05),
+            Colors.white.withValues(alpha:0.1),
+            Colors.white.withValues(alpha:0.05),
           ],
         ),
       ),
@@ -298,7 +298,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                 Text(
                   'Original message content...', // In real app, fetch the original message
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withValues(alpha:0.9),
                     fontSize: 14,
                   ),
                   maxLines: 1,
@@ -311,7 +311,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
             onPressed: widget.onCancelReply,
             icon: Icon(
               Icons.close,
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha:0.7),
               size: 20,
             ),
           ),
@@ -325,9 +325,9 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
       height: 250,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         border: Border(
-          bottom: BorderSide(color: Colors.white.withOpacity(0.3)),
+          bottom: BorderSide(color: Colors.white.withValues(alpha:0.3)),
         ),
       ),
       child: Column(
@@ -356,7 +356,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                     height: 40,
                     margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
+                      color: Colors.white.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -396,7 +396,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                     height: 40,
                     margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
+                      color: Colors.white.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -436,7 +436,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
                     height: 40,
                     margin: const EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
+                      color: Colors.white.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -537,7 +537,7 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
               width: 40,
               height: 4,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.white.withValues(alpha:0.5),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -614,9 +614,9 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
               width: 50,
               height: 50,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withValues(alpha:0.2),
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.white.withOpacity(0.3)),
+                border: Border.all(color: Colors.white.withValues(alpha:0.3)),
               ),
               child: Icon(
                 icon,

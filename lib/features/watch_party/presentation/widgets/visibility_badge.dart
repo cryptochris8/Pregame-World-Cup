@@ -24,13 +24,13 @@ class VisibilityBadge extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         color: isPublic
-            ? const Color(0xFF059669).withOpacity(0.1)
-            : const Color(0xFFF59E0B).withOpacity(0.1),
+            ? const Color(0xFF059669).withValues(alpha:0.1)
+            : const Color(0xFFF59E0B).withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isPublic
-              ? const Color(0xFF059669).withOpacity(0.3)
-              : const Color(0xFFF59E0B).withOpacity(0.3),
+              ? const Color(0xFF059669).withValues(alpha:0.3)
+              : const Color(0xFFF59E0B).withValues(alpha:0.3),
         ),
       ),
       child: Row(

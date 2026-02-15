@@ -16,10 +16,10 @@ class FriendsSearchBar extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         border: Border(
           bottom: BorderSide(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha:0.2),
           ),
         ),
       ),
@@ -28,21 +28,21 @@ class FriendsSearchBar extends StatelessWidget {
         style: const TextStyle(color: Colors.white),
         decoration: InputDecoration(
           hintText: 'Search friends...',
-          hintStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
-          prefixIcon: Icon(Icons.search, color: Colors.white.withOpacity(0.7)),
+          hintStyle: TextStyle(color: Colors.white.withValues(alpha:0.7)),
+          prefixIcon: Icon(Icons.search, color: Colors.white.withValues(alpha:0.7)),
           suffixIcon: hasQuery
               ? IconButton(
                   onPressed: () {
                     controller.clear();
                   },
-                  icon: Icon(Icons.clear, color: Colors.white.withOpacity(0.7)),
+                  icon: Icon(Icons.clear, color: Colors.white.withValues(alpha:0.7)),
                 )
               : null,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(25),
             borderSide: BorderSide.none,
           ),
-          fillColor: Colors.white.withOpacity(0.1),
+          fillColor: Colors.white.withValues(alpha:0.1),
           filled: true,
         ),
       ),

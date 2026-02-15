@@ -83,7 +83,7 @@ class AIKeyFactorsTabWidget extends StatelessWidget {
         decoration: BoxDecoration(
           color: const Color(0xFF1E293B),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.orange.withOpacity(0.5), width: 1),
+          border: Border.all(color: Colors.orange.withValues(alpha:0.5), width: 1),
         ),
         child: Row(
           children: [

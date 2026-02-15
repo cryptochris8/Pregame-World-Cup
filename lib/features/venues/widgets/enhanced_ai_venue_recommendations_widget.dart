@@ -70,8 +70,8 @@ class _EnhancedAIVenueRecommendationsWidgetState
       final unifiedVenueService = sl<UnifiedVenueService>();
       
       // Build smart user preferences from profile
-      final userPreferences = _buildUserPreferences();
-      
+      _buildUserPreferences();
+
       // Build intelligent game context
       final gameContext = _buildGameContext();
       

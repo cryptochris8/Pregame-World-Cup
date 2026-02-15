@@ -30,10 +30,10 @@ class ChatListItem extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.brown[800]?.withOpacity(0.3),
+              color: Colors.brown[800]?.withValues(alpha:0.3),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: Colors.orange[300]?.withOpacity(0.2) ?? Colors.transparent,
+                color: Colors.orange[300]?.withValues(alpha:0.2) ?? Colors.transparent,
                 width: 1,
               ),
             ),
@@ -66,7 +66,7 @@ class ChatListItem extends StatelessWidget {
                             Text(
                               _formatTime(chat.lastMessageTime!),
                               style: TextStyle(
-                                color: Colors.white.withOpacity(0.6),
+                                color: Colors.white.withValues(alpha:0.6),
                                 fontSize: 12,
                               ),
                             ),
@@ -81,7 +81,7 @@ class ChatListItem extends StatelessWidget {
                             child: Text(
                               chat.lastMessage ?? 'No messages yet',
                               style: TextStyle(
-                                color: Colors.white.withOpacity(0.7),
+                                color: Colors.white.withValues(alpha:0.7),
                                 fontSize: 14,
                               ),
                               maxLines: 2,

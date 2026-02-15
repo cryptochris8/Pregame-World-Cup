@@ -354,14 +354,14 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  ThemeHelper.favoriteColor.withOpacity(0.1),
+                  ThemeHelper.favoriteColor.withValues(alpha:0.1),
                   const Color(0xFF1E293B),
                 ],
               )
             : null,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha:0.3),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -408,7 +408,7 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: ThemeHelper.favoriteColor.withOpacity(0.2),
+                      color: ThemeHelper.favoriteColor.withValues(alpha:0.2),
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(color: ThemeHelper.favoriteColor),
                     ),
@@ -533,7 +533,7 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: ThemeHelper.favoriteColor.withOpacity(0.2),
+                    color: ThemeHelper.favoriteColor.withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ThemeHelper.favoriteColor),
                   ),

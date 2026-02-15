@@ -18,7 +18,6 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
   final PlayerService _playerService = PlayerService();
   final ScrollController _scrollController = ScrollController();
 
-  final List<Player> _allPlayers = [];
   List<Player> _displayedPlayers = [];
   bool _isLoading = true;
   bool _isLoadingMore = false;

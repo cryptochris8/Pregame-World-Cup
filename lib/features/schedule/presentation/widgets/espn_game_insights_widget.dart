@@ -96,7 +96,7 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
       padding: const EdgeInsets.all(12),
       margin: const EdgeInsets.symmetric(vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.blue[900]?.withOpacity(0.3),
+        color: Colors.blue[900]?.withValues(alpha:0.3),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: Colors.blue[300]!, width: 1),
       ),
@@ -129,7 +129,7 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
       padding: const EdgeInsets.all(8),
       margin: const EdgeInsets.symmetric(vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.red[900]?.withOpacity(0.3),
+        color: Colors.red[900]?.withValues(alpha:0.3),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: Colors.red[300]!, width: 1),
       ),
@@ -160,15 +160,15 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            const Color(0xFF1E3A8A).withOpacity(0.8), // ESPN blue
-            Colors.orange[800]!.withOpacity(0.6),
+            const Color(0xFF1E3A8A).withValues(alpha:0.8), // ESPN blue
+            Colors.orange[800]!.withValues(alpha:0.6),
           ],
         ),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: Colors.orange[300]!, width: 1),
         boxShadow: [
           BoxShadow(
-            color: Colors.orange[900]!.withOpacity(0.3),
+            color: Colors.orange[900]!.withValues(alpha:0.3),
             blurRadius: 6,
             offset: const Offset(0, 2),
           ),
@@ -286,15 +286,15 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFF1E3A8A).withOpacity(0.9), // ESPN blue
-            Colors.orange[800]!.withOpacity(0.7),
+            const Color(0xFF1E3A8A).withValues(alpha:0.9), // ESPN blue
+            Colors.orange[800]!.withValues(alpha:0.7),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: Colors.orange[300]!, width: 2),
         boxShadow: [
           BoxShadow(
-            color: Colors.orange[900]!.withOpacity(0.4),
+            color: Colors.orange[900]!.withValues(alpha:0.4),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -411,7 +411,7 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withValues(alpha:0.3),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
@@ -456,9 +456,9 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.2),
+        color: color.withValues(alpha:0.2),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color.withOpacity(0.5), width: 1),
+        border: Border.all(color: color.withValues(alpha:0.5), width: 1),
       ),
       child: Column(
         children: [
@@ -473,7 +473,7 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
           Text(
             label,
             style: TextStyle(
-              color: color.withOpacity(0.8),
+              color: color.withValues(alpha:0.8),
               fontSize: 9,
             ),
           ),
@@ -486,9 +486,9 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
     return Container(
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.3),
+        color: Colors.black.withValues(alpha:0.3),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: color.withOpacity(0.3), width: 1),
+        border: Border.all(color: color.withValues(alpha:0.3), width: 1),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -507,7 +507,7 @@ class _ESPNGameInsightsWidgetState extends State<ESPNGameInsightsWidget> {
           Text(
             title,
             style: TextStyle(
-              color: color.withOpacity(0.8),
+              color: color.withValues(alpha:0.8),
               fontSize: 10,
             ),
             textAlign: TextAlign.center,

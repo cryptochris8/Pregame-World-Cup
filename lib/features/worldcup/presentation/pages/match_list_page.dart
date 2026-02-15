@@ -169,9 +169,9 @@ class _MatchListPageState extends State<MatchListPage> {
   Widget _buildLiveBanner(List<WorldCupMatch> liveMatches) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.red.withOpacity(0.15),
+        color: Colors.red.withValues(alpha:0.15),
         border: Border(
-          bottom: BorderSide(color: Colors.red.withOpacity(0.3)),
+          bottom: BorderSide(color: Colors.red.withValues(alpha:0.3)),
         ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -195,7 +195,7 @@ class _MatchListPageState extends State<MatchListPage> {
                       decoration: BoxDecoration(
                         color: AppTheme.backgroundCard,
                         borderRadius: BorderRadius.circular(20),
-                        border: Border.all(color: Colors.red.withOpacity(0.5)),
+                        border: Border.all(color: Colors.red.withValues(alpha:0.5)),
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -259,7 +259,7 @@ class _MatchListPageState extends State<MatchListPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, size: 64, color: Colors.white.withOpacity(0.3)),
+          Icon(icon, size: 64, color: Colors.white.withValues(alpha:0.3)),
           const SizedBox(height: 16),
           Text(
             message,

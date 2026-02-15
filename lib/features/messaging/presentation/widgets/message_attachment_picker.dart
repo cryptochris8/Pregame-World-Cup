@@ -221,9 +221,9 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.1),
+          color: color.withValues(alpha:0.1),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withOpacity(0.3)),
+          border: Border.all(color: color.withValues(alpha:0.3)),
         ),
         child: Column(
           children: [
@@ -425,7 +425,7 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF8B4513).withOpacity(0.3),
+                    color: const Color(0xFF8B4513).withValues(alpha:0.3),
                     blurRadius: 6,
                     offset: const Offset(0, 2),
                   ),

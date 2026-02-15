@@ -23,7 +23,7 @@ class MatchHeaderWidget extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            stageColor.withOpacity(0.8),
+            stageColor.withValues(alpha:0.8),
             stageColor,
           ],
         ),
@@ -41,7 +41,7 @@ class MatchHeaderWidget extends StatelessWidget {
                   vertical: 4,
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
@@ -57,7 +57,7 @@ class MatchHeaderWidget extends StatelessWidget {
                 Text(
                   'Group ${match.group}',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withValues(alpha:0.9),
                   ),
                 ),
               ],

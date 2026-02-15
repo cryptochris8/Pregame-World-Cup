@@ -129,10 +129,10 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                             Container(
                               padding: const EdgeInsets.all(16),
                               decoration: BoxDecoration(
-                                color: AppTheme.primaryBlue.withOpacity(0.2),
+                                color: AppTheme.primaryBlue.withValues(alpha:0.2),
                                 borderRadius: BorderRadius.circular(12),
                                 border: Border.all(
-                                  color: AppTheme.primaryBlue.withOpacity(0.5),
+                                  color: AppTheme.primaryBlue.withValues(alpha:0.5),
                                 ),
                               ),
                               child: Row(
@@ -146,7 +146,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                                     child: Text(
                                       'World Cup 2026 matches are played across 3 countries and 6 timezones. Choose how you want match times displayed.',
                                       style: TextStyle(
-                                        color: Colors.white.withOpacity(0.9),
+                                        color: Colors.white.withValues(alpha:0.9),
                                         fontSize: 13,
                                       ),
                                     ),
@@ -160,7 +160,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                             Text(
                               'Your Device Timezone',
                               style: TextStyle(
-                                color: Colors.white.withOpacity(0.6),
+                                color: Colors.white.withValues(alpha:0.6),
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -169,7 +169,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                             Container(
                               padding: const EdgeInsets.all(12),
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1),
+                                color: Colors.white.withValues(alpha:0.1),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Row(
@@ -196,7 +196,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                             Text(
                               'Time Display Mode',
                               style: TextStyle(
-                                color: Colors.white.withOpacity(0.6),
+                                color: Colors.white.withValues(alpha:0.6),
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -214,7 +214,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                             Text(
                               'Preview',
                               style: TextStyle(
-                                color: Colors.white.withOpacity(0.6),
+                                color: Colors.white.withValues(alpha:0.6),
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -238,13 +238,13 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
       margin: const EdgeInsets.only(bottom: 12),
       decoration: BoxDecoration(
         color: isSelected
-            ? AppTheme.primaryOrange.withOpacity(0.2)
-            : Colors.white.withOpacity(0.05),
+            ? AppTheme.primaryOrange.withValues(alpha:0.2)
+            : Colors.white.withValues(alpha:0.05),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isSelected
               ? AppTheme.primaryOrange
-              : Colors.white.withOpacity(0.1),
+              : Colors.white.withValues(alpha:0.1),
           width: isSelected ? 2 : 1,
         ),
       ),
@@ -263,7 +263,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                   decoration: BoxDecoration(
                     color: isSelected
                         ? AppTheme.primaryOrange
-                        : Colors.white.withOpacity(0.1),
+                        : Colors.white.withValues(alpha:0.1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
@@ -291,7 +291,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                       Text(
                         _getModeDescription(mode),
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.6),
+                          color: Colors.white.withValues(alpha:0.6),
                           fontSize: 12,
                         ),
                       ),
@@ -352,9 +352,9 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.2)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.2)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -364,7 +364,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryBlue.withOpacity(0.2),
+                  color: AppTheme.primaryBlue.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: const Text(

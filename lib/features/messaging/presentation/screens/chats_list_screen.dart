@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
-import '../../../social/domain/services/social_service.dart';
 import '../widgets/chat_list_item.dart';
 import '../widgets/new_chat_bottom_sheet.dart';
 import 'chat_screen.dart';
@@ -22,15 +21,13 @@ class ChatsListScreen extends StatefulWidget {
 
 class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderStateMixin {
   final MessagingService _messagingService = MessagingService();
-  final SocialService _socialService = SocialService();
   final TextEditingController _searchController = TextEditingController();
-  
+
   late TabController _tabController;
   List<Chat> _allChats = [];
   List<Chat> _filteredChats = [];
   bool _isLoading = true;
   String _searchQuery = '';
-  String? _currentUserId;
 
   @override
   void initState() {
@@ -142,13 +139,13 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
+        color: Colors.white.withValues(alpha:0.1),
         borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(24),
           bottomRight: Radius.circular(24),
         ),
         border: Border.all(
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha:0.2),
         ),
       ),
               child: Row(
@@ -167,7 +164,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           const Spacer(),
           Container(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha:0.2),
               borderRadius: BorderRadius.circular(12),
             ),
             child: IconButton(
@@ -228,7 +225,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -238,12 +235,12 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
         controller: _tabController,
         indicator: BoxDecoration(
           gradient: LinearGradient(
-            colors: [AppTheme.secondaryEmerald, AppTheme.secondaryEmerald.withOpacity(0.8)],
+            colors: [AppTheme.secondaryEmerald, AppTheme.secondaryEmerald.withValues(alpha:0.8)],
           ),
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: AppTheme.secondaryEmerald.withOpacity(0.3),
+              color: AppTheme.secondaryEmerald.withValues(alpha:0.3),
               blurRadius: 8,
               offset: const Offset(0, 2),
             ),
@@ -268,7 +265,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withValues(alpha:0.9),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
@@ -296,7 +293,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withValues(alpha:0.9),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
@@ -324,7 +321,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withValues(alpha:0.9),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
@@ -393,7 +390,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
+                        color: Colors.black.withValues(alpha:0.05),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -447,7 +444,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             borderRadius: BorderRadius.circular(25),
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
             shadow: BoxShadow(
-              color: AppTheme.secondaryEmerald.withOpacity(0.3),
+              color: AppTheme.secondaryEmerald.withValues(alpha:0.3),
               blurRadius: 8,
               offset: const Offset(0, 4),
             ),
@@ -578,238 +575,6 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
         builder: (context) => ChatScreen(chat: chat),
       ),
     );
-  }
-
-  void _showChatOptions(Chat chat) async {
-    // Get current settings for this chat
-    final settings = await _messagingService.getChatSettings(chat.chatId);
-
-    if (!mounted) return;
-
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.transparent,
-      builder: (context) => Container(
-        margin: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Mute/Unmute
-            ListTile(
-              leading: Icon(
-                settings.isMuted ? Icons.notifications_active : Icons.notifications_off,
-              ),
-              title: Text(settings.isMuted ? 'Unmute notifications' : 'Mute notifications'),
-              onTap: () {
-                Navigator.pop(context);
-                _toggleMuteChat(chat, settings.isMuted);
-              },
-            ),
-            // Archive/Unarchive
-            ListTile(
-              leading: Icon(
-                settings.isArchived ? Icons.unarchive : Icons.archive,
-              ),
-              title: Text(settings.isArchived ? 'Unarchive chat' : 'Archive chat'),
-              onTap: () {
-                Navigator.pop(context);
-                _toggleArchiveChat(chat, settings.isArchived);
-              },
-            ),
-            // Leave group (only for group/team chats)
-            if (chat.isGroupChat || chat.isTeamChat)
-              ListTile(
-                leading: const Icon(Icons.exit_to_app, color: Colors.orange),
-                title: const Text('Leave group', style: TextStyle(color: Colors.orange)),
-                onTap: () {
-                  Navigator.pop(context);
-                  _confirmLeaveChat(chat);
-                },
-              ),
-            // Delete chat
-            ListTile(
-              leading: const Icon(Icons.delete, color: Colors.red),
-              title: const Text('Delete chat', style: TextStyle(color: Colors.red)),
-              onTap: () {
-                Navigator.pop(context);
-                _confirmDeleteChat(chat);
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Future<void> _toggleMuteChat(Chat chat, bool currentlyMuted) async {
-    bool success;
-    if (currentlyMuted) {
-      success = await _messagingService.unmuteChat(chat.chatId);
-    } else {
-      // Show mute duration options
-      final duration = await _showMuteDurationDialog();
-      if (duration == null) return; // User cancelled
-
-      success = await _messagingService.muteChat(chat.chatId, duration: duration);
-    }
-
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(success
-              ? (currentlyMuted ? 'Chat unmuted' : 'Chat muted')
-              : 'Failed to update mute settings'),
-          backgroundColor: success ? Colors.green : Colors.red,
-        ),
-      );
-    }
-  }
-
-  Future<Duration?> _showMuteDurationDialog() async {
-    return showDialog<Duration?>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Mute notifications'),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              title: const Text('1 hour'),
-              onTap: () => Navigator.pop(context, const Duration(hours: 1)),
-            ),
-            ListTile(
-              title: const Text('8 hours'),
-              onTap: () => Navigator.pop(context, const Duration(hours: 8)),
-            ),
-            ListTile(
-              title: const Text('1 day'),
-              onTap: () => Navigator.pop(context, const Duration(days: 1)),
-            ),
-            ListTile(
-              title: const Text('1 week'),
-              onTap: () => Navigator.pop(context, const Duration(days: 7)),
-            ),
-            ListTile(
-              title: const Text('Forever'),
-              onTap: () => Navigator.pop(context, const Duration(days: 36500)), // ~100 years
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Future<void> _toggleArchiveChat(Chat chat, bool currentlyArchived) async {
-    bool success;
-    if (currentlyArchived) {
-      success = await _messagingService.unarchiveChat(chat.chatId);
-    } else {
-      success = await _messagingService.archiveChat(chat.chatId);
-    }
-
-    if (success) {
-      // Refresh the chat list
-      await _refreshChats();
-    }
-
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(success
-              ? (currentlyArchived ? 'Chat unarchived' : 'Chat archived')
-              : 'Failed to update archive settings'),
-          backgroundColor: success ? Colors.green : Colors.red,
-        ),
-      );
-    }
-  }
-
-  Future<void> _confirmLeaveChat(Chat chat) async {
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Leave Chat'),
-        content: Text('Are you sure you want to leave "${chat.name ?? 'this group'}"?'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(context, true),
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Leave'),
-          ),
-        ],
-      ),
-    );
-
-    if (confirmed != true) return;
-
-    final success = await _messagingService.leaveChat(chat.chatId);
-
-    if (success) {
-      // Refresh the chat list
-      await _refreshChats();
-    }
-
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(success ? 'Left the chat' : 'Failed to leave chat. You may need to promote another admin first.'),
-          backgroundColor: success ? Colors.green : Colors.red,
-        ),
-      );
-    }
-  }
-
-  Future<void> _confirmDeleteChat(Chat chat) async {
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Delete Chat'),
-        content: const Text('This will remove this chat from your list. Other participants will still see it.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(context, true),
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Delete'),
-          ),
-        ],
-      ),
-    );
-
-    if (confirmed != true) return;
-
-    final success = await _messagingService.deleteChat(chat.chatId);
-
-    if (success) {
-      // Refresh the chat list
-      await _refreshChats();
-    }
-
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(success ? 'Chat deleted' : 'Failed to delete chat'),
-          backgroundColor: success ? Colors.green : Colors.red,
-        ),
-      );
-    }
   }
 
   void _showNewChatOptions() {

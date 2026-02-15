@@ -80,10 +80,10 @@ class VenueActionButtons extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 12),
           margin: const EdgeInsets.symmetric(horizontal: 4),
           decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
+            color: color.withValues(alpha:0.1),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: color.withOpacity(0.2),
+              color: color.withValues(alpha:0.2),
               width: 1,
             ),
           ),
@@ -98,7 +98,7 @@ class VenueActionButtons extends StatelessWidget {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: color.withOpacity(0.3),
+                      color: color.withValues(alpha:0.3),
                       blurRadius: 8,
                       offset: const Offset(0, 2),
                     ),
@@ -163,12 +163,16 @@ class VenueActionButtons extends StatelessWidget {
             mode: LaunchMode.externalApplication,
           );
         } else {
-          _showErrorDialog(context, 'Could not open maps application');
+          if (context.mounted) {
+            _showErrorDialog(context, 'Could not open maps application');
+          }
         }
       }
     } catch (e) {
       // Error handled silently
-      _showErrorDialog(context, 'Could not open directions');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Could not open directions');
+      }
     }
   }
 
@@ -255,7 +259,7 @@ class VenueActionButtons extends StatelessWidget {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: iconColor.withOpacity(0.1),
+                color: iconColor.withValues(alpha:0.1),
                 shape: BoxShape.circle,
               ),
               child: Icon(
@@ -320,7 +324,7 @@ class VenueActionButtons extends StatelessWidget {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: Colors.red.withOpacity(0.1),
+                color: Colors.red.withValues(alpha:0.1),
                 shape: BoxShape.circle,
               ),
               child: const Icon(
@@ -377,7 +381,7 @@ class VenueQuickActions extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: showBackground
           ? BoxDecoration(
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha:0.9),
               borderRadius: BorderRadius.circular(20),
             )
           : null,
@@ -424,7 +428,7 @@ class VenueQuickActions extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: color.withOpacity(0.3),
+              color: color.withValues(alpha:0.3),
               blurRadius: 4,
               offset: const Offset(0, 2),
             ),

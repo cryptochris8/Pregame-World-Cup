@@ -22,7 +22,6 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   
   List<ActivityFeedItem> _activities = [];
   bool _isLoading = true;
-  bool _isRefreshing = false;
   late TabController _tabController;
   
   @override
@@ -85,23 +84,16 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       return;
     }
 
-    if (mounted) {
-      setState(() => _isRefreshing = true);
-    }
-
     try {
       final activities = await _activityService.getActivityFeed(currentUser.uid);
 
       if (mounted) {
         setState(() {
           _activities = activities;
-          _isRefreshing = false;
         });
       }
     } catch (e) {
-      if (mounted) {
-        setState(() => _isRefreshing = false);
-      }
+      // Error handled silently
     }
   }
 
@@ -356,6 +348,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       
     } catch (e) {
       // Error handled silently
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to update like'),
@@ -377,19 +370,21 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
         comment,
         userProfileImage: currentUser.photoURL,
       );
-      
+
       // Refresh the feed
       _refreshFeed();
-      
+
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Comment added!'),
           backgroundColor: Colors.green,
         ),
       );
-      
+
     } catch (e) {
       // Error handled silently
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Failed to add comment'),

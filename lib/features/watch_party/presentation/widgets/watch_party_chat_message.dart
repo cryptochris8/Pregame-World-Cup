@@ -81,8 +81,6 @@ class WatchPartyChatMessage extends StatelessWidget {
   }
 
   Widget _buildUserMessage(BuildContext context) {
-    final theme = Theme.of(context);
-
     return GestureDetector(
       onLongPress: onLongPress,
       child: Padding(
@@ -237,7 +235,7 @@ class WatchPartyChatMessage extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: _getRoleColor(message.senderRole).withOpacity(0.2),
+        color: _getRoleColor(message.senderRole).withValues(alpha:0.2),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Text(

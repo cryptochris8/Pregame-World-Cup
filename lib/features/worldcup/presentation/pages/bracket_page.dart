@@ -138,7 +138,7 @@ class _BracketPageState extends State<BracketPage>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.schedule, size: 64, color: Colors.white.withOpacity(0.3)),
+            Icon(Icons.schedule, size: 64, color: Colors.white.withValues(alpha:0.3)),
             const SizedBox(height: 16),
             const Text(
               'Matches not yet determined',

@@ -102,8 +102,8 @@ class _VenuePhotoGalleryState extends State<VenuePhotoGallery> {
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
                       colors: [
-                        Colors.black.withOpacity(0.7),
-                        Colors.black.withOpacity(0.3),
+                        Colors.black.withValues(alpha:0.7),
+                        Colors.black.withValues(alpha:0.3),
                         Colors.transparent,
                       ],
                     ),
@@ -119,7 +119,7 @@ class _VenuePhotoGalleryState extends State<VenuePhotoGallery> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.6),
+                      color: Colors.black.withValues(alpha:0.6),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
@@ -147,7 +147,7 @@ class _VenuePhotoGalleryState extends State<VenuePhotoGallery> {
                         width: 40,
                         height: 40,
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.5),
+                          color: Colors.black.withValues(alpha:0.5),
                           shape: BoxShape.circle,
                         ),
                         child: const Icon(
@@ -172,7 +172,7 @@ class _VenuePhotoGalleryState extends State<VenuePhotoGallery> {
                         width: 40,
                         height: 40,
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.5),
+                          color: Colors.black.withValues(alpha:0.5),
                           shape: BoxShape.circle,
                         ),
                         child: const Icon(
@@ -266,7 +266,7 @@ class _VenuePhotoGalleryState extends State<VenuePhotoGallery> {
           decoration: BoxDecoration(
             color: _currentIndex == index 
                 ? Colors.white 
-                : Colors.white.withOpacity(0.5),
+                : Colors.white.withValues(alpha:0.5),
             borderRadius: BorderRadius.circular(4),
           ),
         ),

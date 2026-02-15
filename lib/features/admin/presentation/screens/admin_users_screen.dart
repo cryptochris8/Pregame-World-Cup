@@ -262,13 +262,14 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
           ElevatedButton(
             onPressed: () async {
               if (reasonController.text.isEmpty) return;
+              final messenger = ScaffoldMessenger.of(context);
               Navigator.pop(context);
               final success = await _adminService.warnUser(
                 user.userId,
                 reasonController.text,
               );
               if (mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
+                messenger.showSnackBar(
                   SnackBar(
                     content: Text(success ? 'Warning sent' : 'Failed to send warning'),
                   ),
@@ -328,6 +329,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
             ElevatedButton(
               onPressed: () async {
                 if (reasonController.text.isEmpty) return;
+                final messenger = ScaffoldMessenger.of(context);
                 Navigator.pop(context);
                 final success = await _adminService.muteUser(
                   user.userId,
@@ -335,7 +337,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                   selectedDuration,
                 );
                 if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
+                  messenger.showSnackBar(
                     SnackBar(
                       content: Text(success ? 'User muted' : 'Failed to mute user'),
                     ),
@@ -397,6 +399,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
               onPressed: () async {
                 if (reasonController.text.isEmpty) return;
+                final messenger = ScaffoldMessenger.of(context);
                 Navigator.pop(context);
                 final success = await _adminService.suspendUser(
                   user.userId,
@@ -404,7 +407,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                   selectedDuration,
                 );
                 if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
+                  messenger.showSnackBar(
                     SnackBar(
                       content: Text(success ? 'User suspended' : 'Failed to suspend user'),
                     ),
@@ -453,13 +456,14 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
             style: ElevatedButton.styleFrom(backgroundColor: Colors.purple),
             onPressed: () async {
               if (reasonController.text.isEmpty) return;
+              final messenger = ScaffoldMessenger.of(context);
               Navigator.pop(context);
               final success = await _adminService.banUser(
                 user.userId,
                 reasonController.text,
               );
               if (mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
+                messenger.showSnackBar(
                   SnackBar(
                     content: Text(success ? 'User banned' : 'Failed to ban user'),
                   ),

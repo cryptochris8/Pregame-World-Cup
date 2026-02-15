@@ -254,7 +254,9 @@ class WorldCupPaymentService {
       );
 
       if (url == null) {
-        _showErrorDialog(context, 'Failed to create checkout session');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Failed to create checkout session');
+        }
         return false;
       }
 
@@ -264,12 +266,16 @@ class WorldCupPaymentService {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
         return true;
       } else {
-        _showErrorDialog(context, 'Could not open checkout page');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Could not open checkout page');
+        }
         return false;
       }
     } catch (e) {
       LoggingService.error('Error opening checkout: $e', tag: _logTag);
-      _showErrorDialog(context, 'Failed to start checkout: ${e.toString()}');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Failed to start checkout: ${e.toString()}');
+      }
       return false;
     }
   }
@@ -451,7 +457,9 @@ class WorldCupPaymentService {
       );
 
       if (url == null) {
-        _showErrorDialog(context, 'Failed to create checkout session');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Failed to create checkout session');
+        }
         return false;
       }
 
@@ -460,12 +468,16 @@ class WorldCupPaymentService {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
         return true;
       } else {
-        _showErrorDialog(context, 'Could not open checkout page');
+        if (context.mounted) {
+          _showErrorDialog(context, 'Could not open checkout page');
+        }
         return false;
       }
     } catch (e) {
       LoggingService.error('Error opening venue checkout: $e', tag: _logTag);
-      _showErrorDialog(context, 'Failed to start checkout: ${e.toString()}');
+      if (context.mounted) {
+        _showErrorDialog(context, 'Failed to start checkout: ${e.toString()}');
+      }
       return false;
     }
   }

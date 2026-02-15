@@ -108,7 +108,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
+                  color: Colors.black.withValues(alpha:0.1),
                   blurRadius: 10,
                   offset: const Offset(0, 2),
                 ),
@@ -148,7 +148,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
             decoration: BoxDecoration(
               color: ring.color,
               shape: BoxShape.circle,
-              border: Border.all(color: ring.color.withOpacity(0.5), width: 2),
+              border: Border.all(color: ring.color.withValues(alpha:0.5), width: 2),
             ),
           ),
           const SizedBox(width: 8),
@@ -192,7 +192,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.1),
+                color: Colors.black.withValues(alpha:0.1),
                 blurRadius: 8,
                 offset: const Offset(0, 2),
               ),
@@ -216,9 +216,9 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
       circleId: CircleId('ring_${ring.radiusKm}'),
       center: widget.centerLocation,
       radius: ring.radiusKm * 1000, // Convert km to meters
-      strokeColor: ring.color.withOpacity(0.8),
+      strokeColor: ring.color.withValues(alpha:0.8),
       strokeWidth: 2,
-      fillColor: ring.color.withOpacity(0.1),
+      fillColor: ring.color.withValues(alpha:0.1),
     )).toSet();
   }
 }
@@ -333,10 +333,10 @@ class VenueDistanceOrganizer extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: group.color.withOpacity(0.3)),
+        border: Border.all(color: group.color.withValues(alpha:0.3)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),

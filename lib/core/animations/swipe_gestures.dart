@@ -186,7 +186,7 @@ class _SwipeableWidgetState extends State<SwipeableWidget>
         duration: const Duration(milliseconds: 50),
         child: Container(
           width: 80,
-          color: color.withOpacity(0.8),
+          color: color.withValues(alpha:0.8),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -269,12 +269,10 @@ class SwipeablePageView extends StatefulWidget {
 
 class _SwipeablePageViewState extends State<SwipeablePageView> {
   late PageController _pageController;
-  late int _currentPage;
 
   @override
   void initState() {
     super.initState();
-    _currentPage = widget.initialPage;
     _pageController = widget.controller ?? PageController(initialPage: widget.initialPage);
   }
 
@@ -287,9 +285,6 @@ class _SwipeablePageViewState extends State<SwipeablePageView> {
   }
 
   void _onPageChanged(int page) {
-    setState(() {
-      _currentPage = page;
-    });
     widget.onPageChanged?.call(page);
     HapticFeedback.lightImpact();
   }
@@ -336,7 +331,6 @@ class SwipeToDismiss extends StatefulWidget {
 class _SwipeToDismissState extends State<SwipeToDismiss>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<double> _slideAnimation;
 
   @override
   void initState() {
@@ -345,14 +339,6 @@ class _SwipeToDismissState extends State<SwipeToDismiss>
       duration: const Duration(milliseconds: 300),
       vsync: this,
     );
-
-    _slideAnimation = Tween<double>(
-      begin: 0.0,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeOutCubic,
-    ));
   }
 
   @override

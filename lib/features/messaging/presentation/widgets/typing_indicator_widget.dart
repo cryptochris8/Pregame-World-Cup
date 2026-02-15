@@ -72,7 +72,7 @@ class _TypingIndicatorWidgetState extends State<TypingIndicatorWidget>
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.brown[800]?.withOpacity(0.8),
+              color: Colors.brown[800]?.withValues(alpha:0.8),
               borderRadius: BorderRadius.circular(18),
             ),
             child: Row(
@@ -121,7 +121,7 @@ class _TypingIndicatorWidgetState extends State<TypingIndicatorWidget>
                 width: 4,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(opacity),
+                  color: Colors.white.withValues(alpha:opacity),
                   shape: BoxShape.circle,
                 ),
               ),

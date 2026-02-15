@@ -58,7 +58,7 @@ class _PulsingLoaderState extends State<PulsingLoader>
           height: widget.size,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: widget.color.withOpacity(_animation.value),
+            color: widget.color.withValues(alpha:_animation.value),
           ),
         );
       },
@@ -341,7 +341,7 @@ class CardSkeleton extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),

@@ -242,6 +242,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
           ElevatedButton(
             onPressed: () async {
               if (nameController.text.isEmpty) return;
+              final messenger = ScaffoldMessenger.of(context);
               Navigator.pop(context);
               final success = await _adminService.createFeatureFlag(
                 nameController.text,
@@ -249,7 +250,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
               );
               if (success && mounted) {
                 _loadFlags();
-                ScaffoldMessenger.of(context).showSnackBar(
+                messenger.showSnackBar(
                   const SnackBar(content: Text('Feature flag created')),
                 );
               }

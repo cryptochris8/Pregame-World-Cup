@@ -189,7 +189,7 @@ class MemberListItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Text(
@@ -210,7 +210,7 @@ class MemberListItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
         color: isVirtual
-            ? const Color(0xFF059669).withOpacity(0.1)
+            ? const Color(0xFF059669).withValues(alpha:0.1)
             : Colors.grey[100],
         borderRadius: BorderRadius.circular(8),
       ),

@@ -98,7 +98,7 @@ class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget>
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.purple.withOpacity(0.3),
+          color: Colors.purple.withValues(alpha:0.3),
           width: 1,
         ),
       ),
@@ -344,10 +344,10 @@ class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget>
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.purple.withOpacity(0.1),
+        color: Colors.purple.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
-          color: Colors.purple.withOpacity(0.3),
+          color: Colors.purple.withValues(alpha:0.3),
           width: 1,
         ),
       ),

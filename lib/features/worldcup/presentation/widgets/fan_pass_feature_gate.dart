@@ -98,13 +98,13 @@ class _FanPassFeatureGateState extends State<FanPassFeatureGate> {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppTheme.primaryPurple.withOpacity(0.15),
-            AppTheme.accentGold.withOpacity(0.15),
+            AppTheme.primaryPurple.withValues(alpha:0.15),
+            AppTheme.accentGold.withValues(alpha:0.15),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: AppTheme.accentGold.withOpacity(0.3),
+          color: AppTheme.accentGold.withValues(alpha:0.3),
         ),
       ),
       child: Column(
@@ -114,7 +114,7 @@ class _FanPassFeatureGateState extends State<FanPassFeatureGate> {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: AppTheme.accentGold.withOpacity(0.2),
+                color: AppTheme.accentGold.withValues(alpha:0.2),
                 shape: BoxShape.circle,
               ),
               child: const Icon(
@@ -139,7 +139,7 @@ class _FanPassFeatureGateState extends State<FanPassFeatureGate> {
             widget.customMessage ??
                 'Upgrade to $requiredPassName to unlock this feature',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha:0.7),
               fontSize: 14,
             ),
             textAlign: TextAlign.center,
@@ -160,7 +160,7 @@ class _FanPassFeatureGateState extends State<FanPassFeatureGate> {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.primaryOrange.withOpacity(0.4),
+            color: AppTheme.primaryOrange.withValues(alpha:0.4),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -267,7 +267,7 @@ class _FanPassUpgradeBannerState extends State<FanPassUpgradeBanner> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.primaryOrange.withOpacity(0.3),
+            color: AppTheme.primaryOrange.withValues(alpha:0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -294,7 +294,7 @@ class _FanPassUpgradeBannerState extends State<FanPassUpgradeBanner> {
                 IconButton(
                   icon: Icon(
                     Icons.close,
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha:0.7),
                     size: 20,
                   ),
                   onPressed: widget.onDismiss,
@@ -307,7 +307,7 @@ class _FanPassUpgradeBannerState extends State<FanPassUpgradeBanner> {
             widget.customMessage ??
                 'Get ${widget.feature.requiredPass.displayName} for full access to ${widget.feature.displayName.toLowerCase()}.',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha:0.9),
               fontSize: 13,
             ),
           ),
@@ -351,7 +351,7 @@ class FanPassLockedCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             child: ColorFiltered(
               colorFilter: ColorFilter.mode(
-                Colors.black.withOpacity(0.5),
+                Colors.black.withValues(alpha:0.5),
                 BlendMode.darken,
               ),
               child: child,
@@ -370,7 +370,7 @@ class FanPassLockedCard extends StatelessWidget {
                 end: Alignment.bottomCenter,
                 colors: [
                   Colors.transparent,
-                  Colors.black.withOpacity(0.7),
+                  Colors.black.withValues(alpha:0.7),
                 ],
               ),
             ),
@@ -380,10 +380,10 @@ class FanPassLockedCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: AppTheme.accentGold.withOpacity(0.2),
+                    color: AppTheme.accentGold.withValues(alpha:0.2),
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: AppTheme.accentGold.withOpacity(0.5),
+                      color: AppTheme.accentGold.withValues(alpha:0.5),
                     ),
                   ),
                   child: const Icon(

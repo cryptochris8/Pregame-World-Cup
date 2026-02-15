@@ -108,13 +108,13 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
       constraints: const BoxConstraints(maxWidth: 280, minWidth: 200),
       decoration: BoxDecoration(
         color: widget.isSentByCurrentUser 
-            ? widget.primaryColor.withOpacity(0.1)
-            : Colors.grey.withOpacity(0.1),
+            ? widget.primaryColor.withValues(alpha:0.1)
+            : Colors.grey.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: widget.isSentByCurrentUser 
-              ? widget.primaryColor.withOpacity(0.3)
-              : Colors.grey.withOpacity(0.3),
+              ? widget.primaryColor.withValues(alpha:0.3)
+              : Colors.grey.withValues(alpha:0.3),
           width: 1,
         ),
       ),
@@ -180,7 +180,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                             BoxShadow(
                               color: (widget.isSentByCurrentUser 
                                   ? widget.primaryColor 
-                                  : widget.secondaryColor).withOpacity(0.3),
+                                  : widget.secondaryColor).withValues(alpha:0.3),
                               blurRadius: 6,
                               offset: const Offset(0, 2),
                             ),
@@ -218,7 +218,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                     style: TextStyle(
                       fontSize: 11,
                       color: widget.isSentByCurrentUser 
-                          ? widget.primaryColor.withOpacity(0.7)
+                          ? widget.primaryColor.withValues(alpha:0.7)
                           : Colors.grey[500],
                     ),
                   ),
@@ -228,7 +228,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                       Icons.volume_up,
                       size: 12,
                       color: widget.isSentByCurrentUser 
-                          ? widget.primaryColor.withOpacity(0.7)
+                          ? widget.primaryColor.withValues(alpha:0.7)
                           : Colors.grey[500],
                     ),
                 ],
@@ -268,7 +268,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                 : widget.secondaryColor,
             backgroundColor: (widget.isSentByCurrentUser 
                 ? widget.primaryColor 
-                : widget.secondaryColor).withOpacity(0.3),
+                : widget.secondaryColor).withValues(alpha:0.3),
           ),
           size: Size.infinite,
         ),
@@ -283,7 +283,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
         borderRadius: BorderRadius.circular(2),
         color: (widget.isSentByCurrentUser 
             ? widget.primaryColor 
-            : widget.secondaryColor).withOpacity(0.3),
+            : widget.secondaryColor).withValues(alpha:0.3),
       ),
       child: FractionallySizedBox(
         alignment: Alignment.centerLeft,

@@ -117,11 +117,11 @@ class _TeamsPageState extends State<TeamsPage> {
                         : null,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+                      borderSide: BorderSide(color: Colors.white.withValues(alpha:0.2)),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+                      borderSide: BorderSide(color: Colors.white.withValues(alpha:0.2)),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -203,7 +203,7 @@ class _TeamsPageState extends State<TeamsPage> {
         return ListView.separated(
           padding: const EdgeInsets.only(bottom: 16),
           itemCount: teams.length,
-          separatorBuilder: (_, __) => Divider(height: 1, color: Colors.white.withOpacity(0.1)),
+          separatorBuilder: (_, __) => Divider(height: 1, color: Colors.white.withValues(alpha:0.1)),
           itemBuilder: (context, index) {
             final team = teams[index];
             return TeamTile(
@@ -253,7 +253,7 @@ class _TeamsPageState extends State<TeamsPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.search_off, size: 64, color: Colors.white.withOpacity(0.3)),
+          Icon(Icons.search_off, size: 64, color: Colors.white.withValues(alpha:0.3)),
           const SizedBox(height: 16),
           const Text(
             'No teams found',
@@ -346,7 +346,7 @@ class TeamsByConfederationPage extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryOrange.withOpacity(0.2),
+                  color: AppTheme.primaryOrange.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
@@ -365,7 +365,7 @@ class TeamsByConfederationPage extends StatelessWidget {
           decoration: BoxDecoration(
             color: AppTheme.backgroundCard,
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.white.withOpacity(0.1)),
+            border: Border.all(color: Colors.white.withValues(alpha:0.1)),
           ),
           child: Column(
             children: teams

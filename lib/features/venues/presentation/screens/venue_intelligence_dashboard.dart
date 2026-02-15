@@ -151,10 +151,10 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.green.withOpacity(0.2), Colors.green.withOpacity(0.1)],
+                  colors: [Colors.green.withValues(alpha:0.2), Colors.green.withValues(alpha:0.1)],
                 ),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.green.withOpacity(0.3)),
+                border: Border.all(color: Colors.green.withValues(alpha:0.3)),
               ),
               child: Row(
                 children: [
@@ -248,9 +248,9 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.green.withOpacity(0.1),
+                color: Colors.green.withValues(alpha:0.1),
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Colors.green.withOpacity(0.3)),
+                border: Border.all(color: Colors.green.withValues(alpha:0.3)),
               ),
               child: Row(
                 children: [
@@ -315,17 +315,17 @@ class _VenueIntelligenceDashboardState extends State<VenueIntelligenceDashboard>
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.amber.withOpacity(0.2), Colors.orange.withOpacity(0.1)],
+            colors: [Colors.amber.withValues(alpha:0.2), Colors.orange.withValues(alpha:0.1)],
           ),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.amber.withOpacity(0.3)),
+          border: Border.all(color: Colors.amber.withValues(alpha:0.3)),
         ),
         child: Row(
           children: [
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.amber.withOpacity(0.2),
+                color: Colors.amber.withValues(alpha:0.2),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(Icons.store, color: Colors.amber, size: 28),

@@ -374,11 +374,7 @@ class ESPNService {
       }
 
       // Determine match round/stage from notes if available
-      final notes = competition['notes'] as List? ?? [];
-      String? matchStage;
-      if (notes.isNotEmpty) {
-        matchStage = notes[0]['headline'] as String?;
-      }
+      // Match stage can be extracted from notes if needed
 
       return GameSchedule(
         gameId: 'espn_$eventId',

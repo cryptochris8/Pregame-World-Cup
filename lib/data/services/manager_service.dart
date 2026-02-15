@@ -292,23 +292,23 @@ class ManagerService {
         'totalManagers': managers.length,
         'averageAge': managers.fold<double>(
           0,
-          (sum, manager) => sum + manager.age
+          (acc, manager) => acc + manager.age
         ) / managers.length,
         'averageExperience': managers.fold<double>(
           0,
-          (sum, manager) => sum + manager.yearsOfExperience
+          (acc, manager) => acc + manager.yearsOfExperience
         ) / managers.length,
         'totalMatches': managers.fold<int>(
           0,
-          (sum, manager) => sum + manager.stats.matchesManaged
+          (acc, manager) => acc + manager.stats.matchesManaged
         ),
         'totalTitles': managers.fold<int>(
           0,
-          (sum, manager) => sum + manager.stats.titlesWon
+          (acc, manager) => acc + manager.stats.titlesWon
         ),
         'averageWinPercentage': managers.fold<double>(
           0,
-          (sum, manager) => sum + manager.stats.winPercentage
+          (acc, manager) => acc + manager.stats.winPercentage
         ) / managers.length,
         'managersWithControversies': managers.where((m) => m.isControversial).length,
         'managersByNationality': _groupManagersByNationality(managers),

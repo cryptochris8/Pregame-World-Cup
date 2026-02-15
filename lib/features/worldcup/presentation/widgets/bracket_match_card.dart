@@ -31,10 +31,10 @@ class BracketMatchCard extends StatelessWidget {
           border: match.isLive
               ? Border.all(color: Colors.red, width: 2)
               : match.isCompleted
-                  ? Border.all(color: Colors.white.withOpacity(0.2))
-                  : Border.all(color: Colors.white.withOpacity(0.1)),
+                  ? Border.all(color: Colors.white.withValues(alpha:0.2))
+                  : Border.all(color: Colors.white.withValues(alpha:0.1)),
           boxShadow: match.isLive
-              ? [BoxShadow(color: Colors.red.withOpacity(0.3), blurRadius: 8)]
+              ? [BoxShadow(color: Colors.red.withValues(alpha:0.3), blurRadius: 8)]
               : null,
         ),
         child: Material(
@@ -72,7 +72,7 @@ class BracketMatchCard extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     height: 1,
-                    color: Colors.white.withOpacity(0.1),
+                    color: Colors.white.withValues(alpha:0.1),
                   ),
 
                   // Team 2
@@ -110,7 +110,7 @@ class BracketMatchCard extends StatelessWidget {
         const SizedBox(width: 8),
         Expanded(
           child: Text(
-            slot.teamCode ?? slot.placeholder ?? 'TBD',
+            slot.teamCode ?? slot.placeholder,
             style: TextStyle(
               fontSize: 13,
               fontWeight: isWinner ? FontWeight.bold : FontWeight.w500,
@@ -124,8 +124,8 @@ class BracketMatchCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
             decoration: BoxDecoration(
               color: isWinner
-                  ? AppTheme.secondaryEmerald.withOpacity(0.2)
-                  : Colors.white.withOpacity(0.1),
+                  ? AppTheme.secondaryEmerald.withValues(alpha:0.2)
+                  : Colors.white.withValues(alpha:0.1),
               borderRadius: BorderRadius.circular(4),
             ),
             child: Text(
@@ -215,7 +215,7 @@ class _BracketConnectorPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.3)
+      ..color = Colors.white.withValues(alpha:0.3)
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
 
@@ -268,13 +268,13 @@ class WinnerDisplay extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppTheme.backgroundCard,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.white.withOpacity(0.1)),
+          border: Border.all(color: Colors.white.withValues(alpha:0.1)),
         ),
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: Column(
             children: [
-              Icon(Icons.emoji_events, size: 48, color: Colors.white.withOpacity(0.3)),
+              Icon(Icons.emoji_events, size: 48, color: Colors.white.withValues(alpha:0.3)),
               const SizedBox(height: 8),
               const Text(
                 'World Cup Champion',
@@ -299,12 +299,12 @@ class WinnerDisplay extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.accentGold.withOpacity(0.15),
+        color: AppTheme.accentGold.withValues(alpha:0.15),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppTheme.accentGold.withOpacity(0.3)),
+        border: Border.all(color: AppTheme.accentGold.withValues(alpha:0.3)),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.accentGold.withOpacity(0.2),
+            color: AppTheme.accentGold.withValues(alpha:0.2),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),

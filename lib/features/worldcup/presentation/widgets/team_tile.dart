@@ -40,7 +40,7 @@ class TeamTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: ListTile(
         onTap: onTap,
@@ -66,9 +66,9 @@ class TeamTile extends StatelessWidget {
                 margin: const EdgeInsets.only(left: 8),
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
-                  color: AppTheme.accentGold.withOpacity(0.2),
+                  color: AppTheme.accentGold.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(6),
-                  border: Border.all(color: AppTheme.accentGold.withOpacity(0.5)),
+                  border: Border.all(color: AppTheme.accentGold.withValues(alpha:0.5)),
                 ),
                 child: const Text(
                   'HOST',
@@ -103,9 +103,9 @@ class TeamTile extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryBlue.withOpacity(0.2),
+                  color: AppTheme.primaryBlue.withValues(alpha:0.2),
                   borderRadius: BorderRadius.circular(6),
-                  border: Border.all(color: AppTheme.primaryBlue.withOpacity(0.5)),
+                  border: Border.all(color: AppTheme.primaryBlue.withValues(alpha:0.5)),
                 ),
                 child: Text(
                   'Group ${team.group}',
@@ -184,10 +184,10 @@ class TeamCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha:0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -244,9 +244,9 @@ class TeamCard extends StatelessWidget {
                               vertical: 2,
                             ),
                             decoration: BoxDecoration(
-                              color: AppTheme.primaryBlue.withOpacity(0.2),
+                              color: AppTheme.primaryBlue.withValues(alpha:0.2),
                               borderRadius: BorderRadius.circular(4),
-                              border: Border.all(color: AppTheme.primaryBlue.withOpacity(0.5)),
+                              border: Border.all(color: AppTheme.primaryBlue.withValues(alpha:0.5)),
                             ),
                             child: Text(
                               team.group!,
@@ -319,12 +319,12 @@ class TeamChip extends StatelessWidget {
         color: selected ? Colors.white : Colors.white70,
       ),
       backgroundColor: AppTheme.backgroundCard,
-      selectedColor: AppTheme.secondaryEmerald.withOpacity(0.3),
+      selectedColor: AppTheme.secondaryEmerald.withValues(alpha:0.3),
       checkmarkColor: AppTheme.secondaryEmerald,
       side: BorderSide(
         color: selected
             ? AppTheme.secondaryEmerald
-            : Colors.white.withOpacity(0.2),
+            : Colors.white.withValues(alpha:0.2),
       ),
     );
   }

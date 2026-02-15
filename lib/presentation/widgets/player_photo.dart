@@ -134,15 +134,6 @@ class PlayerPhoto extends StatelessWidget {
     );
   }
 
-  String _getInitials(String name) {
-    final parts = name.trim().split(' ');
-    if (parts.length >= 2) {
-      return '${parts.first[0]}${parts.last[0]}'.toUpperCase();
-    } else if (parts.isNotEmpty && parts.first.isNotEmpty) {
-      return parts.first[0].toUpperCase();
-    }
-    return '?';
-  }
 }
 
 /// Circular player photo with optional border

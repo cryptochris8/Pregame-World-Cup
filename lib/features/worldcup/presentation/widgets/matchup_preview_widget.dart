@@ -104,7 +104,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       padding: const EdgeInsets.all(16),
       child: const Column(
@@ -139,7 +139,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -181,7 +181,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -191,9 +191,9 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
-              color: AppTheme.accentGold.withOpacity(0.15),
+              color: AppTheme.accentGold.withValues(alpha:0.15),
               borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: AppTheme.accentGold.withOpacity(0.3)),
+              border: Border.all(color: AppTheme.accentGold.withValues(alpha:0.3)),
             ),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -215,7 +215,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
           Text(
             'These teams have never played against each other',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.6),
+              color: Colors.white.withValues(alpha:0.6),
               fontSize: 13,
             ),
             textAlign: TextAlign.center,
@@ -232,7 +232,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -339,7 +339,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
         Text(
           '$total total matches',
           style: TextStyle(
-            color: Colors.white.withOpacity(0.5),
+            color: Colors.white.withValues(alpha:0.5),
             fontSize: 12,
           ),
         ),
@@ -395,7 +395,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
           label,
           style: TextStyle(
             fontSize: 11,
-            color: Colors.white.withOpacity(0.6),
+            color: Colors.white.withValues(alpha:0.6),
           ),
         ),
       ],
@@ -410,9 +410,9 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: AppTheme.accentGold.withOpacity(0.1),
+        color: AppTheme.accentGold.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppTheme.accentGold.withOpacity(0.2)),
+        border: Border.all(color: AppTheme.accentGold.withValues(alpha:0.2)),
       ),
       child: Column(
         children: [
@@ -449,7 +449,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                     widget.team1Name ?? widget.team1Code,
                     style: TextStyle(
                       fontSize: 10,
-                      color: Colors.white.withOpacity(0.6),
+                      color: Colors.white.withValues(alpha:0.6),
                     ),
                   ),
                 ],
@@ -457,7 +457,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withValues(alpha:0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
@@ -482,7 +482,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                     widget.team2Name ?? widget.team2Code,
                     style: TextStyle(
                       fontSize: 10,
-                      color: Colors.white.withOpacity(0.6),
+                      color: Colors.white.withValues(alpha:0.6),
                     ),
                   ),
                 ],
@@ -496,7 +496,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                 '${h2h.worldCupDraws} draw${h2h.worldCupDraws > 1 ? 's' : ''}',
                 style: TextStyle(
                   fontSize: 11,
-                  color: Colors.white.withOpacity(0.5),
+                  color: Colors.white.withValues(alpha:0.5),
                 ),
               ),
             ),
@@ -520,7 +520,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
           'Goals',
           style: TextStyle(
             fontSize: 12,
-            color: Colors.white.withOpacity(0.6),
+            color: Colors.white.withValues(alpha:0.6),
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -590,7 +590,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
             'Notable Matches',
             style: TextStyle(
               fontSize: 13,
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha:0.7),
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -642,7 +642,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withValues(alpha:0.05),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(
@@ -665,7 +665,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: _getStageColor(match.stage!).withOpacity(0.2),
+                    color: _getStageColor(match.stage!).withValues(alpha:0.2),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
@@ -691,7 +691,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                   fontWeight: isT1Winner ? FontWeight.bold : FontWeight.normal,
                   color: isT1Winner
                       ? AppTheme.secondaryEmerald
-                      : Colors.white.withOpacity(0.8),
+                      : Colors.white.withValues(alpha:0.8),
                 ),
               ),
               const SizedBox(width: 12),
@@ -699,10 +699,10 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 decoration: BoxDecoration(
                   color: isDraw
-                      ? Colors.grey.withOpacity(0.3)
+                      ? Colors.grey.withValues(alpha:0.3)
                       : (isT1Winner
-                          ? AppTheme.secondaryEmerald.withOpacity(0.2)
-                          : AppTheme.secondaryEmerald.withOpacity(0.2)),
+                          ? AppTheme.secondaryEmerald.withValues(alpha:0.2)
+                          : AppTheme.secondaryEmerald.withValues(alpha:0.2)),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Text(
@@ -722,7 +722,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                   fontWeight: isT2Winner ? FontWeight.bold : FontWeight.normal,
                   color: isT2Winner
                       ? AppTheme.secondaryEmerald
-                      : Colors.white.withOpacity(0.8),
+                      : Colors.white.withValues(alpha:0.8),
                 ),
               ),
             ],
@@ -736,7 +736,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                 match.year.toString(),
                 style: TextStyle(
                   fontSize: 11,
-                  color: Colors.white.withOpacity(0.5),
+                  color: Colors.white.withValues(alpha:0.5),
                 ),
               ),
               if (match.location != null) ...[
@@ -744,14 +744,14 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
                   ' | ',
                   style: TextStyle(
                     fontSize: 11,
-                    color: Colors.white.withOpacity(0.3),
+                    color: Colors.white.withValues(alpha:0.3),
                   ),
                 ),
                 Text(
                   match.location!,
                   style: TextStyle(
                     fontSize: 11,
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withValues(alpha:0.5),
                   ),
                 ),
               ],
@@ -764,7 +764,7 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
               match.description!,
               style: TextStyle(
                 fontSize: 11,
-                color: Colors.white.withOpacity(0.4),
+                color: Colors.white.withValues(alpha:0.4),
                 fontStyle: FontStyle.italic,
               ),
               textAlign: TextAlign.center,

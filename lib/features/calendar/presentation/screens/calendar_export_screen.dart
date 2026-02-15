@@ -295,6 +295,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
     // For single event, open Google Calendar directly
     if (widget.events.length == 1) {
       final result = await _calendarService.addToGoogleCalendar(widget.events.first);
+      if (!context.mounted) return;
       _showResult(context, result, 'Google Calendar');
     } else {
       // For multiple events, share iCal file
@@ -313,6 +314,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
       calendarName: widget.title ?? 'World Cup 2026',
     );
 
+    if (!context.mounted) return;
     _showResult(context, result, 'Calendar');
     setState(() => _isExporting = false);
   }
@@ -326,6 +328,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
       calendarName: widget.title ?? 'World Cup 2026',
     );
 
+    if (!context.mounted) return;
     _showResult(context, result, 'Share');
     setState(() => _isExporting = false);
   }

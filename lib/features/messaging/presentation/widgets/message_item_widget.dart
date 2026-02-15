@@ -128,7 +128,7 @@ class MessageItemWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: isOwnMessage 
             ? Colors.orange[300]
-            : Colors.brown[800]?.withOpacity(0.8),
+            : Colors.brown[800]?.withValues(alpha:0.8),
         borderRadius: BorderRadius.only(
           topLeft: const Radius.circular(18),
           topRight: const Radius.circular(18),
@@ -148,7 +148,7 @@ class MessageItemWidget extends StatelessWidget {
               style: TextStyle(
                 color: isOwnMessage 
                     ? Colors.grey[400]
-                    : Colors.white.withOpacity(0.5),
+                    : Colors.white.withValues(alpha:0.5),
                 fontSize: 10,
                 fontStyle: FontStyle.italic,
               ),
@@ -204,7 +204,7 @@ class MessageItemWidget extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha:0.1),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
@@ -231,7 +231,7 @@ class MessageItemWidget extends StatelessWidget {
         return Text(
           message.content,
           style: TextStyle(
-            color: Colors.white.withOpacity(0.7),
+            color: Colors.white.withValues(alpha:0.7),
             fontSize: 14,
             fontStyle: FontStyle.italic,
           ),
@@ -254,7 +254,7 @@ class MessageItemWidget extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       margin: const EdgeInsets.only(bottom: 4),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.1),
+        color: Colors.black.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(8),
         border: Border(
           left: BorderSide(
@@ -270,8 +270,8 @@ class MessageItemWidget extends StatelessWidget {
             'Replying to message',
             style: TextStyle(
               color: isOwnMessage 
-                  ? Colors.brown[800]?.withOpacity(0.7)
-                  : Colors.white.withOpacity(0.7),
+                  ? Colors.brown[800]?.withValues(alpha:0.7)
+                  : Colors.white.withValues(alpha:0.7),
               fontSize: 12,
             ),
           ),
@@ -280,8 +280,8 @@ class MessageItemWidget extends StatelessWidget {
             'Original message...', // In real app, fetch the original message
             style: TextStyle(
               color: isOwnMessage 
-                  ? Colors.brown[800]?.withOpacity(0.8)
-                  : Colors.white.withOpacity(0.8),
+                  ? Colors.brown[800]?.withValues(alpha:0.8)
+                  : Colors.white.withValues(alpha:0.8),
               fontSize: 14,
             ),
             maxLines: 1,
@@ -299,7 +299,7 @@ class MessageItemWidget extends StatelessWidget {
           margin: const EdgeInsets.only(right: 4, bottom: 2),
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
-            color: Colors.brown[700]?.withOpacity(0.8),
+            color: Colors.brown[700]?.withValues(alpha:0.8),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Row(
@@ -313,7 +313,7 @@ class MessageItemWidget extends StatelessWidget {
               Text(
                 '1', // In real app, count users who reacted with same emoji
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.8),
+                  color: Colors.white.withValues(alpha:0.8),
                   fontSize: 12,
                 ),
               ),
@@ -334,7 +334,7 @@ class MessageItemWidget extends StatelessWidget {
             fontSize: 10,
             color: isOwnMessage
                 ? Colors.brown[600]
-                : Colors.white.withOpacity(0.7),
+                : Colors.white.withValues(alpha:0.7),
           ),
         ),
 
@@ -370,19 +370,19 @@ class MessageItemWidget extends StatelessWidget {
         return Icon(
           Icons.access_time,
           size: 12,
-          color: Colors.white.withOpacity(0.6),
+          color: Colors.white.withValues(alpha:0.6),
         );
       case MessageStatus.sent:
         return Icon(
           Icons.check,
           size: 12,
-          color: Colors.white.withOpacity(0.6),
+          color: Colors.white.withValues(alpha:0.6),
         );
       case MessageStatus.delivered:
         return Icon(
           Icons.done_all,
           size: 12,
-          color: Colors.white.withOpacity(0.6),
+          color: Colors.white.withValues(alpha:0.6),
         );
       case MessageStatus.read:
         return Icon(

@@ -21,7 +21,7 @@ class VenueOperatingHoursCard extends StatelessWidget {
         border: Border.all(color: const Color(0xFF475569)), // Lighter border
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha:0.1),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -92,13 +92,13 @@ class VenueOperatingHoursCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
         color: isOpenNow 
-            ? const Color(0xFF2D6A4F).withOpacity(0.1)
-            : Colors.red.withOpacity(0.1),
+            ? const Color(0xFF2D6A4F).withValues(alpha:0.1)
+            : Colors.red.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
           color: isOpenNow 
-              ? const Color(0xFF2D6A4F).withOpacity(0.3)
-              : Colors.red.withOpacity(0.3),
+              ? const Color(0xFF2D6A4F).withValues(alpha:0.3)
+              : Colors.red.withValues(alpha:0.3),
         ),
       ),
       child: Row(
@@ -432,13 +432,13 @@ class VenueHoursChip extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
         color: isOpen 
-            ? const Color(0xFF2D6A4F).withOpacity(0.1)
-            : Colors.red.withOpacity(0.1),
+            ? const Color(0xFF2D6A4F).withValues(alpha:0.1)
+            : Colors.red.withValues(alpha:0.1),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isOpen 
-              ? const Color(0xFF2D6A4F).withOpacity(0.3)
-              : Colors.red.withOpacity(0.3),
+              ? const Color(0xFF2D6A4F).withValues(alpha:0.3)
+              : Colors.red.withValues(alpha:0.3),
         ),
       ),
       child: Row(

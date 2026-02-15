@@ -19,7 +19,7 @@ class MatchInfoCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -30,7 +30,7 @@ class MatchInfoCard extends StatelessWidget {
               'Match Number',
               '${match.matchNumber}',
             ),
-            Divider(color: Colors.white.withOpacity(0.1)),
+            Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(
               Icons.calendar_today,
               'Date',
@@ -38,7 +38,7 @@ class MatchInfoCard extends StatelessWidget {
                   ? DateFormat('EEEE, MMMM d, yyyy').format(match.dateTime!)
                   : 'TBD',
             ),
-            Divider(color: Colors.white.withOpacity(0.1)),
+            Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(
               Icons.schedule,
               'Kick-off',
@@ -46,14 +46,14 @@ class MatchInfoCard extends StatelessWidget {
                   ? DateFormat.jm().format(match.dateTime!)
                   : 'TBD',
             ),
-            Divider(color: Colors.white.withOpacity(0.1)),
+            Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(
               Icons.emoji_events,
               'Stage',
               match.stageDisplayName,
             ),
             if (match.group != null) ...[
-              Divider(color: Colors.white.withOpacity(0.1)),
+              Divider(color: Colors.white.withValues(alpha:0.1)),
               _buildInfoRow(
                 Icons.grid_view,
                 'Group',
