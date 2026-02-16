@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -73,6 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,
@@ -133,9 +135,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          const Text(
-                            'Where Sports Fans Connect',
-                            style: TextStyle(
+                          Text(
+                            l10n.whereSportsFansConnect,
+                            style: const TextStyle(
                               fontSize: 16,
                               color: AppTheme.textSecondary,
                               letterSpacing: 0.5,
@@ -167,7 +169,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         children: [
                           // Mode Title
                           Text(
-                            _isLoginMode ? 'Welcome Back' : 'Join Pregame',
+                            _isLoginMode ? l10n.welcomeBack : l10n.joinPregame,
                             style: const TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w700,
@@ -182,9 +184,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             controller: _emailController,
                             style: const TextStyle(color: AppTheme.textWhite),
                             decoration: InputDecoration(
-                              labelText: 'Email',
+                              labelText: l10n.email,
                               labelStyle: const TextStyle(color: AppTheme.textSecondary),
-                              hintText: 'Enter your email',
+                              hintText: l10n.enterYourEmail,
                               hintStyle: const TextStyle(color: AppTheme.textTertiary),
                               prefixIcon: const Icon(
                                 Icons.email_rounded,
@@ -213,7 +215,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             keyboardType: TextInputType.emailAddress,
                             validator: (value) {
                               if (value == null || value.isEmpty || !value.contains('@')) {
-                                return 'Please enter a valid email';
+                                return l10n.pleaseEnterValidEmail;
                               }
                               return null;
                             },
@@ -225,9 +227,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             controller: _passwordController,
                             style: const TextStyle(color: AppTheme.textWhite),
                             decoration: InputDecoration(
-                              labelText: 'Password',
+                              labelText: l10n.password,
                               labelStyle: const TextStyle(color: AppTheme.textSecondary),
-                              hintText: 'Enter your password',
+                              hintText: l10n.enterYourPassword,
                               hintStyle: const TextStyle(color: AppTheme.textTertiary),
                               prefixIcon: const Icon(
                                 Icons.lock_rounded,
@@ -256,7 +258,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             obscureText: true,
                             validator: (value) {
                               if (value == null || value.isEmpty || value.length < 6) {
-                                return 'Password must be at least 6 characters';
+                                return l10n.passwordMinLength;
                               }
                               return null;
                             },
@@ -325,7 +327,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       ),
                                       onPressed: _submitAuthForm,
                                       child: Text(
-                                        _isLoginMode ? 'Sign In' : 'Create Account',
+                                        _isLoginMode ? l10n.signIn : l10n.createAccount,
                                         style: const TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w700,
@@ -354,15 +356,15 @@ class _LoginScreenState extends State<LoginScreen> {
                                 children: [
                                   TextSpan(
                                     text: _isLoginMode
-                                        ? "Don't have an account? "
-                                        : "Already have an account? ",
+                                        ? l10n.dontHaveAccount
+                                        : l10n.alreadyHaveAccount,
                                     style: const TextStyle(
                                       color: AppTheme.textSecondary,
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                   TextSpan(
-                                    text: _isLoginMode ? 'Sign Up' : 'Sign In',
+                                    text: _isLoginMode ? l10n.signUp : l10n.signIn,
                                     style: const TextStyle(
                                       color: AppTheme.accentGold,
                                       fontWeight: FontWeight.w700,

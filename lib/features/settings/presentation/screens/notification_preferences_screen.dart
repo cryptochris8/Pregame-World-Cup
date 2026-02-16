@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/services/notification_preferences_service.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../worldcup/domain/entities/match_reminder.dart';
 
 /// Screen for managing notification preferences
@@ -38,17 +39,18 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
 
     if (_isLoading) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Notifications')),
+        appBar: AppBar(title: Text(l10n.notifications)),
         body: const Center(child: CircularProgressIndicator()),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notification Settings'),
+        title: Text(l10n.notificationSettings),
         actions: [
           TextButton(
             onPressed: () async {
@@ -56,12 +58,12 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
               setState(() => _preferences = _prefsService.preferences);
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Settings reset to defaults')),
+                  SnackBar(content: Text(l10n.settingsResetToDefaults)),
                 );
               }
             },
             child: Text(
-              'Reset',
+              l10n.resetLabel,
               style: TextStyle(color: theme.colorScheme.error),
             ),
           ),
@@ -111,22 +113,20 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildMasterSwitch(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Semantics(
-      label: 'Push notifications master switch',
-      hint: _preferences.pushNotificationsEnabled
-          ? 'Tap to disable all notifications'
-          : 'Tap to enable notifications',
+      label: l10n.pushNotifications,
       child: SwitchListTile(
         title: Text(
-          'Push Notifications',
+          l10n.pushNotifications,
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
         subtitle: Text(
           _preferences.pushNotificationsEnabled
-              ? 'You will receive notifications'
-              : 'All notifications are disabled',
+              ? l10n.youWillReceiveNotifications
+              : l10n.allNotificationsDisabled,
         ),
         value: _preferences.pushNotificationsEnabled,
         onChanged: (value) => _updatePreference(
@@ -145,16 +145,17 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildQuietHoursSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildSectionHeader(theme, 'Quiet Hours', Icons.bedtime),
+        _buildSectionHeader(theme, l10n.quietHours, Icons.bedtime),
         SwitchListTile(
-          title: const Text('Enable Quiet Hours'),
+          title: Text(l10n.enableQuietHours),
           subtitle: Text(
             _preferences.quietHoursEnabled
-                ? 'No notifications from ${_preferences.quietHoursStart} to ${_preferences.quietHoursEnd}'
-                : 'Receive notifications anytime',
+                ? l10n.noNotificationsFromTo(_preferences.quietHoursStart, _preferences.quietHoursEnd)
+                : l10n.receiveNotificationsAnytime,
           ),
           value: _preferences.quietHoursEnabled,
           onChanged: (value) => _updatePreference(
@@ -163,7 +164,7 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
         ),
         if (_preferences.quietHoursEnabled) ...[
           ListTile(
-            title: const Text('Start Time'),
+            title: Text(l10n.startTime),
             trailing: Text(
               _preferences.quietHoursStart,
               style: theme.textTheme.bodyLarge?.copyWith(
@@ -173,7 +174,7 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
             onTap: () => _selectTime(isStart: true),
           ),
           ListTile(
-            title: const Text('End Time'),
+            title: Text(l10n.endTime),
             trailing: Text(
               _preferences.quietHoursEnd,
               style: theme.textTheme.bodyLarge?.copyWith(
@@ -188,13 +189,14 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildMatchNotificationsSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildSectionHeader(theme, 'Match Reminders', Icons.sports_soccer),
+        _buildSectionHeader(theme, l10n.matchReminders, Icons.sports_soccer),
         SwitchListTile(
-          title: const Text('Match Reminders'),
-          subtitle: const Text('Get reminded before matches start'),
+          title: Text(l10n.matchReminders),
+          subtitle: Text(l10n.getRemindedBeforeMatches),
           value: _preferences.matchRemindersEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(matchRemindersEnabled: value),
@@ -202,7 +204,7 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
         ),
         if (_preferences.matchRemindersEnabled)
           ListTile(
-            title: const Text('Default Reminder Time'),
+            title: Text(l10n.defaultReminderTime),
             subtitle: Text(_preferences.defaultReminderTiming.displayName),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => _showReminderTimingPicker(
@@ -214,8 +216,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
           ),
         const Divider(indent: 16, endIndent: 16),
         SwitchListTile(
-          title: const Text('Favorite Team Matches'),
-          subtitle: const Text('Get notified when your favorite teams play'),
+          title: Text(l10n.favoriteTeamMatchesLabel),
+          subtitle: Text(l10n.favoriteTeamMatchesDesc),
           value: _preferences.favoriteTeamMatchesEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(favoriteTeamMatchesEnabled: value),
@@ -223,8 +225,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
         ),
         if (_preferences.favoriteTeamMatchesEnabled)
           SwitchListTile(
-            title: const Text('Day Before Notification'),
-            subtitle: const Text('Remind me the day before my team plays'),
+            title: Text(l10n.dayBeforeNotification),
+            subtitle: Text(l10n.dayBeforeNotificationDesc),
             value: _preferences.favoriteTeamMatchDayBefore,
             onChanged: (value) => _updatePreference(
               _preferences.copyWith(favoriteTeamMatchDayBefore: value),
@@ -235,14 +237,15 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildLiveMatchAlertsSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildSectionHeader(theme, 'Live Match Alerts', Icons.flash_on),
+        _buildSectionHeader(theme, l10n.liveMatchAlerts, Icons.flash_on),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
-            'Get instant notifications during live matches',
+            l10n.liveMatchAlertsDesc,
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.outline,
             ),
@@ -250,8 +253,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
         ),
         const SizedBox(height: 8),
         SwitchListTile(
-          title: const Text('Goal Alerts'),
-          subtitle: const Text('When a goal is scored'),
+          title: Text(l10n.goalAlerts),
+          subtitle: Text(l10n.whenGoalScored),
           value: _preferences.goalAlertsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(goalAlertsEnabled: value),
@@ -259,8 +262,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
           secondary: const Text('', style: TextStyle(fontSize: 24)),
         ),
         SwitchListTile(
-          title: const Text('Match Start'),
-          subtitle: const Text('When a match kicks off'),
+          title: Text(l10n.matchStart),
+          subtitle: Text(l10n.whenMatchKicksOff),
           value: _preferences.matchStartAlertsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(matchStartAlertsEnabled: value),
@@ -268,24 +271,24 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
           secondary: const Text('', style: TextStyle(fontSize: 24)),
         ),
         SwitchListTile(
-          title: const Text('Halftime'),
-          subtitle: const Text('Halftime score updates'),
+          title: Text(l10n.halftimeLabel),
+          subtitle: Text(l10n.halftimeScoreUpdates),
           value: _preferences.halftimeAlertsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(halftimeAlertsEnabled: value),
           ),
         ),
         SwitchListTile(
-          title: const Text('Match End'),
-          subtitle: const Text('Final score notifications'),
+          title: Text(l10n.matchEnd),
+          subtitle: Text(l10n.finalScoreNotifications),
           value: _preferences.matchEndAlertsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(matchEndAlertsEnabled: value),
           ),
         ),
         SwitchListTile(
-          title: const Text('Red Cards'),
-          subtitle: const Text('Player sent off'),
+          title: Text(l10n.redCards),
+          subtitle: Text(l10n.playerSentOff),
           value: _preferences.redCardAlertsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(redCardAlertsEnabled: value),
@@ -300,8 +303,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
           ),
         ),
         SwitchListTile(
-          title: const Text('Penalties'),
-          subtitle: const Text('Penalty kicks awarded'),
+          title: Text(l10n.penalties),
+          subtitle: Text(l10n.penaltyKicksAwarded),
           value: _preferences.penaltyAlertsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(penaltyAlertsEnabled: value),
@@ -312,21 +315,22 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildWatchPartySection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildSectionHeader(theme, 'Watch Parties', Icons.groups),
+        _buildSectionHeader(theme, l10n.watchParties, Icons.groups),
         SwitchListTile(
-          title: const Text('Watch Party Invites'),
-          subtitle: const Text('When someone invites you to a watch party'),
+          title: Text(l10n.watchPartyInvites),
+          subtitle: Text(l10n.watchPartyInvitesDesc),
           value: _preferences.watchPartyInvitesEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(watchPartyInvitesEnabled: value),
           ),
         ),
         SwitchListTile(
-          title: const Text('Watch Party Reminders'),
-          subtitle: const Text('Remind me before watch parties I joined'),
+          title: Text(l10n.watchPartyReminders),
+          subtitle: Text(l10n.watchPartyRemindersDesc),
           value: _preferences.watchPartyRemindersEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(watchPartyRemindersEnabled: value),
@@ -334,7 +338,7 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
         ),
         if (_preferences.watchPartyRemindersEnabled)
           ListTile(
-            title: const Text('Reminder Time'),
+            title: Text(l10n.reminderTime),
             subtitle: Text(_preferences.watchPartyReminderTiming.displayName),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => _showReminderTimingPicker(
@@ -345,8 +349,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
             ),
           ),
         SwitchListTile(
-          title: const Text('Watch Party Updates'),
-          subtitle: const Text('Host messages and party changes'),
+          title: Text(l10n.watchPartyUpdates),
+          subtitle: Text(l10n.watchPartyUpdatesDesc),
           value: _preferences.watchPartyUpdatesEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(watchPartyUpdatesEnabled: value),
@@ -357,29 +361,30 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildSocialSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildSectionHeader(theme, 'Social', Icons.people),
+        _buildSectionHeader(theme, l10n.social, Icons.people),
         SwitchListTile(
-          title: const Text('Friend Requests'),
-          subtitle: const Text('When someone sends you a friend request'),
+          title: Text(l10n.friendRequests),
+          subtitle: Text(l10n.friendRequestsDesc),
           value: _preferences.friendRequestsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(friendRequestsEnabled: value),
           ),
         ),
         SwitchListTile(
-          title: const Text('Messages'),
-          subtitle: const Text('New direct and group messages'),
+          title: Text(l10n.messagesNotification),
+          subtitle: Text(l10n.messagesNotificationDesc),
           value: _preferences.messagesEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(messagesEnabled: value),
           ),
         ),
         SwitchListTile(
-          title: const Text('Mentions'),
-          subtitle: const Text('When someone mentions you'),
+          title: Text(l10n.mentionsLabel),
+          subtitle: Text(l10n.mentionsDesc),
           value: _preferences.mentionsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(mentionsEnabled: value),
@@ -390,21 +395,22 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }
 
   Widget _buildPredictionsSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildSectionHeader(theme, 'Predictions & Leaderboard', Icons.emoji_events),
+        _buildSectionHeader(theme, l10n.predictionsAndLeaderboard, Icons.emoji_events),
         SwitchListTile(
-          title: const Text('Prediction Results'),
-          subtitle: const Text('How your predictions performed'),
+          title: Text(l10n.predictionResults),
+          subtitle: Text(l10n.predictionResultsDesc),
           value: _preferences.predictionResultsEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(predictionResultsEnabled: value),
           ),
         ),
         SwitchListTile(
-          title: const Text('Leaderboard Updates'),
-          subtitle: const Text('Your ranking changes'),
+          title: Text(l10n.leaderboardUpdates),
+          subtitle: Text(l10n.leaderboardUpdatesDesc),
           value: _preferences.leaderboardUpdatesEnabled,
           onChanged: (value) => _updatePreference(
             _preferences.copyWith(leaderboardUpdatesEnabled: value),
@@ -471,21 +477,23 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
   }) {
     showModalBottomSheet(
       context: context,
-      builder: (context) => SafeArea(
+      builder: (context) {
+        final l10n = AppLocalizations.of(context);
+        return SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Select Reminder Time',
+                l10n.selectReminderTime,
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
             const Divider(height: 1),
             ...ReminderTiming.values.map((timing) => ListTile(
                   title: Text(timing.displayName),
-                  subtitle: Text('${timing.minutes} minutes before'),
+                  subtitle: Text(l10n.minutesBefore(timing.minutes)),
                   trailing: timing == currentTiming
                       ? Icon(
                           Icons.check,
@@ -500,7 +508,8 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
             const SizedBox(height: 16),
           ],
         ),
-      ),
+      );
+      },
     );
   }
 }

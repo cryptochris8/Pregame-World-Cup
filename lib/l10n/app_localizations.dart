@@ -1595,6 +1595,1128 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Refresh Widget'**
   String get refreshWidget;
+
+  /// Fan pass screen title
+  ///
+  /// In en, this message translates to:
+  /// **'World Cup 2026 Pass'**
+  String get worldCup2026Pass;
+
+  /// Transaction history tooltip
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction History'**
+  String get transactionHistory;
+
+  /// Snackbar when checking purchase after browser checkout
+  ///
+  /// In en, this message translates to:
+  /// **'Checking purchase status...'**
+  String get checkingPurchaseStatus;
+
+  /// Success message when pass is activated
+  ///
+  /// In en, this message translates to:
+  /// **'{passName} activated successfully!'**
+  String passActivatedSuccessfully(String passName);
+
+  /// Error when user not signed in for purchase
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in to purchase'**
+  String get pleaseSignInToPurchase;
+
+  /// Success message after purchase
+  ///
+  /// In en, this message translates to:
+  /// **'{passName} purchased successfully!'**
+  String passPurchasedSuccessfully(String passName);
+
+  /// Message when user needs to complete purchase in browser
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your purchase in the browser. Your pass will activate automatically.'**
+  String get completePurchaseInBrowser;
+
+  /// Error message when purchase fails
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase failed. Please try again.'**
+  String get purchaseFailedRetry;
+
+  /// Error when user not signed in for restore
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in to restore purchases'**
+  String get pleaseSignInToRestore;
+
+  /// Success message when pass is restored
+  ///
+  /// In en, this message translates to:
+  /// **'{passName} restored successfully!'**
+  String passRestoredSuccessfully(String passName);
+
+  /// Message when no purchases to restore
+  ///
+  /// In en, this message translates to:
+  /// **'No previous purchases found'**
+  String get noPreviousPurchases;
+
+  /// Error restoring purchases
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to restore purchases'**
+  String get failedToRestorePurchases;
+
+  /// Free tier feature
+  ///
+  /// In en, this message translates to:
+  /// **'Match schedules & results'**
+  String get matchSchedulesResults;
+
+  /// Free tier feature
+  ///
+  /// In en, this message translates to:
+  /// **'Venue discovery'**
+  String get venueDiscovery;
+
+  /// Free tier feature
+  ///
+  /// In en, this message translates to:
+  /// **'Basic notifications'**
+  String get basicNotifications;
+
+  /// Free tier feature
+  ///
+  /// In en, this message translates to:
+  /// **'Follow teams'**
+  String get followTeams;
+
+  /// Premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Ad-free experience'**
+  String get adFreeExperience;
+
+  /// Premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced stats'**
+  String get advancedStats;
+
+  /// Premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Custom alerts'**
+  String get customAlerts;
+
+  /// Fan pass tier feature
+  ///
+  /// In en, this message translates to:
+  /// **'Everything in Free'**
+  String get everythingInFree;
+
+  /// Fan pass feature
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced match stats'**
+  String get advancedMatchStats;
+
+  /// Fan pass feature
+  ///
+  /// In en, this message translates to:
+  /// **'Custom match alerts'**
+  String get customMatchAlerts;
+
+  /// Fan pass feature
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced social features'**
+  String get advancedSocialFeatures;
+
+  /// Premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Exclusive content'**
+  String get exclusiveContent;
+
+  /// Superfan feature
+  ///
+  /// In en, this message translates to:
+  /// **'AI match insights'**
+  String get aiMatchInsights;
+
+  /// Superfan tier feature
+  ///
+  /// In en, this message translates to:
+  /// **'Everything in Fan Pass'**
+  String get everythingInFanPass;
+
+  /// Superfan feature
+  ///
+  /// In en, this message translates to:
+  /// **'Priority features'**
+  String get priorityFeatures;
+
+  /// Superfan feature
+  ///
+  /// In en, this message translates to:
+  /// **'Downloadable content'**
+  String get downloadableContent;
+
+  /// Superfan feature
+  ///
+  /// In en, this message translates to:
+  /// **'Early access to new features'**
+  String get earlyAccessFeatures;
+
+  /// Login screen title for returning users
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back'**
+  String get welcomeBack;
+
+  /// Login screen title for new users
+  ///
+  /// In en, this message translates to:
+  /// **'Join Pregame'**
+  String get joinPregame;
+
+  /// Email field label
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// Email field hint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email'**
+  String get enterYourEmail;
+
+  /// Password field label
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// Password field hint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your password'**
+  String get enterYourPassword;
+
+  /// Email validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email'**
+  String get pleaseEnterValidEmail;
+
+  /// Password validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 6 characters'**
+  String get passwordMinLength;
+
+  /// Sign in button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In'**
+  String get signIn;
+
+  /// Create account button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Account'**
+  String get createAccount;
+
+  /// Prompt to sign up
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account? '**
+  String get dontHaveAccount;
+
+  /// Prompt to sign in
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account? '**
+  String get alreadyHaveAccount;
+
+  /// Sign up link
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signUp;
+
+  /// App tagline
+  ///
+  /// In en, this message translates to:
+  /// **'Where Sports Fans Connect'**
+  String get whereSportsFansConnect;
+
+  /// Email verification screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Your Email'**
+  String get verifyYourEmail;
+
+  /// Verification email sent message
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ve sent a verification link to:'**
+  String get verificationLinkSent;
+
+  /// Instruction to click verification link
+  ///
+  /// In en, this message translates to:
+  /// **'Click the link in your email to verify your account.'**
+  String get clickLinkToVerify;
+
+  /// Spam folder tip
+  ///
+  /// In en, this message translates to:
+  /// **'Check your spam folder if you don\'t see it.'**
+  String get checkSpamFolder;
+
+  /// Manual verification check button
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ve Verified My Email'**
+  String get iveVerifiedMyEmail;
+
+  /// Resend verification email button
+  ///
+  /// In en, this message translates to:
+  /// **'Resend Email'**
+  String get resendEmail;
+
+  /// Resend cooldown timer
+  ///
+  /// In en, this message translates to:
+  /// **'Resend in {seconds}s'**
+  String resendInSeconds(int seconds);
+
+  /// Success message after email verification
+  ///
+  /// In en, this message translates to:
+  /// **'Email verified! Redirecting...'**
+  String get emailVerifiedRedirecting;
+
+  /// Message when email not yet verified
+  ///
+  /// In en, this message translates to:
+  /// **'Email not verified yet. Please check your inbox.'**
+  String get emailNotVerifiedYet;
+
+  /// Confirmation after resending verification
+  ///
+  /// In en, this message translates to:
+  /// **'Verification email sent!'**
+  String get verificationEmailSent;
+
+  /// Error resending verification email
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to resend: {error}'**
+  String failedToResend(String error);
+
+  /// Prompt to sign out if wrong email
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong email? '**
+  String get wrongEmail;
+
+  /// Auto-check indicator text
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-checking verification status...'**
+  String get autoCheckingVerification;
+
+  /// World Cup nav label
+  ///
+  /// In en, this message translates to:
+  /// **'World Cup'**
+  String get worldCup;
+
+  /// Fan Pass button tooltip
+  ///
+  /// In en, this message translates to:
+  /// **'Fan Pass'**
+  String get fanPass;
+
+  /// Leaderboards menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboards'**
+  String get leaderboards;
+
+  /// Compare players menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Compare Players'**
+  String get comparePlayers;
+
+  /// Match schedule screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Match Schedule'**
+  String get matchSchedule;
+
+  /// Live now banner label
+  ///
+  /// In en, this message translates to:
+  /// **'LIVE NOW'**
+  String get liveNow;
+
+  /// Live scores tab
+  ///
+  /// In en, this message translates to:
+  /// **'Live Scores'**
+  String get liveScores;
+
+  /// Schedule tab
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule'**
+  String get schedule;
+
+  /// FIFA World Cup 2026 badge text
+  ///
+  /// In en, this message translates to:
+  /// **'FIFA World Cup 2026'**
+  String get fifaWorldCup2026;
+
+  /// Live ESPN data badge
+  ///
+  /// In en, this message translates to:
+  /// **'LIVE ESPN DATA'**
+  String get liveEspnData;
+
+  /// Tooltip for showing all matches
+  ///
+  /// In en, this message translates to:
+  /// **'Show All Matches'**
+  String get showAllMatches;
+
+  /// Tooltip for favorite teams filter
+  ///
+  /// In en, this message translates to:
+  /// **'Show Favorite Teams Only'**
+  String get showFavoriteTeamsOnly;
+
+  /// Tooltip for live games filter
+  ///
+  /// In en, this message translates to:
+  /// **'Show Live Games Only'**
+  String get showLiveGamesOnly;
+
+  /// Empty state for live scores tab
+  ///
+  /// In en, this message translates to:
+  /// **'No Live Games Currently Available'**
+  String get noLiveGamesAvailable;
+
+  /// Info text when no live games
+  ///
+  /// In en, this message translates to:
+  /// **'World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!'**
+  String get worldCupMatchesDaily;
+
+  /// Error title when games fail to load
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to Load Games'**
+  String get failedToLoadGames;
+
+  /// Instruction to reload schedule
+  ///
+  /// In en, this message translates to:
+  /// **'Tap below to reload the schedule'**
+  String get tapToReloadSchedule;
+
+  /// Reload schedule button
+  ///
+  /// In en, this message translates to:
+  /// **'Reload Schedule'**
+  String get reloadSchedule;
+
+  /// Empty state for schedule tab
+  ///
+  /// In en, this message translates to:
+  /// **'No games found'**
+  String get noGamesFound;
+
+  /// Empty state when filtering by favorites
+  ///
+  /// In en, this message translates to:
+  /// **'No games for your favorite teams'**
+  String get noGamesForFavorites;
+
+  /// Empty state for live filter
+  ///
+  /// In en, this message translates to:
+  /// **'No live games at the moment'**
+  String get noLiveGames;
+
+  /// Prompt to set favorite teams
+  ///
+  /// In en, this message translates to:
+  /// **'Set your favorite teams to see personalized games'**
+  String get setFavoriteTeamsPrompt;
+
+  /// Set favorite teams button
+  ///
+  /// In en, this message translates to:
+  /// **'Set Favorite Teams'**
+  String get setFavoriteTeams;
+
+  /// Empty state for social tab
+  ///
+  /// In en, this message translates to:
+  /// **'No Upcoming Games'**
+  String get noUpcomingGames;
+
+  /// Info text for social tab empty state
+  ///
+  /// In en, this message translates to:
+  /// **'Social features will be available for upcoming games'**
+  String get socialFeaturesAvailable;
+
+  /// Activity feed screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Activity Feed'**
+  String get activityFeed;
+
+  /// Feed tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Feed'**
+  String get feed;
+
+  /// Your posts tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Your Posts'**
+  String get yourPosts;
+
+  /// Loading activities message
+  ///
+  /// In en, this message translates to:
+  /// **'Loading activities...'**
+  String get loadingActivities;
+
+  /// Empty state title for activity feed
+  ///
+  /// In en, this message translates to:
+  /// **'No activities yet'**
+  String get noActivitiesYet;
+
+  /// Empty state description for activity feed
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to share something!\nConnect with friends to see their activities.'**
+  String get beFirstToShare;
+
+  /// Create activity button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Activity'**
+  String get createActivity;
+
+  /// Error updating like
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to update like'**
+  String get failedToUpdateLike;
+
+  /// Comment added confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Comment added!'**
+  String get commentAdded;
+
+  /// Error adding comment
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to add comment'**
+  String get failedToAddComment;
+
+  /// View chat info menu item
+  ///
+  /// In en, this message translates to:
+  /// **'View Info'**
+  String get viewInfo;
+
+  /// Mute notifications menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Mute Notifications'**
+  String get muteNotifications;
+
+  /// Clear chat history menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Chat History'**
+  String get clearChatHistory;
+
+  /// Empty state title for chat
+  ///
+  /// In en, this message translates to:
+  /// **'No messages yet'**
+  String get noMessagesYet;
+
+  /// Empty state description for chat
+  ///
+  /// In en, this message translates to:
+  /// **'Start the conversation!'**
+  String get startConversation;
+
+  /// Members count in chat
+  ///
+  /// In en, this message translates to:
+  /// **'{count} members'**
+  String members(int count);
+
+  /// Direct chat fallback name
+  ///
+  /// In en, this message translates to:
+  /// **'Direct Chat'**
+  String get directChat;
+
+  /// Group chat fallback name
+  ///
+  /// In en, this message translates to:
+  /// **'Group Chat'**
+  String get groupChat;
+
+  /// Team chat fallback name
+  ///
+  /// In en, this message translates to:
+  /// **'Team Chat'**
+  String get teamChat;
+
+  /// Unblock button
+  ///
+  /// In en, this message translates to:
+  /// **'Unblock'**
+  String get unblock;
+
+  /// Unblock user dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Unblock User'**
+  String get unblockUser;
+
+  /// Unblock user confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to unblock this user? They will be able to message you again.'**
+  String get unblockUserConfirm;
+
+  /// User unblocked confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'User unblocked'**
+  String get userUnblocked;
+
+  /// Failed to unblock error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to unblock user: {error}'**
+  String failedToUnblock(String error);
+
+  /// Video calling coming soon message
+  ///
+  /// In en, this message translates to:
+  /// **'Video calling coming soon!'**
+  String get videoCallingComingSoon;
+
+  /// Voice calling coming soon message
+  ///
+  /// In en, this message translates to:
+  /// **'Voice calling coming soon!'**
+  String get voiceCallingComingSoon;
+
+  /// Message found in search
+  ///
+  /// In en, this message translates to:
+  /// **'Found message from {sender}'**
+  String foundMessageFrom(String sender);
+
+  /// Chat muted confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Chat muted'**
+  String get chatMuted;
+
+  /// Chat unmuted confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Chat unmuted'**
+  String get chatUnmuted;
+
+  /// Failed to update mute settings error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to update mute settings'**
+  String get failedToUpdateMute;
+
+  /// Chat history cleared confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Chat history cleared'**
+  String get chatHistoryCleared;
+
+  /// Failed to clear chat history error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to clear chat history'**
+  String get failedToClearHistory;
+
+  /// Left chat confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'You left the chat'**
+  String get youLeftChat;
+
+  /// Failed to leave chat error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to leave chat'**
+  String get failedToLeaveChat;
+
+  /// Must promote admin before leaving
+  ///
+  /// In en, this message translates to:
+  /// **'You must promote another admin before leaving'**
+  String get promoteAdminFirst;
+
+  /// Mute duration dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Mute notifications'**
+  String get muteNotificationsTitle;
+
+  /// 1 hour mute option
+  ///
+  /// In en, this message translates to:
+  /// **'1 hour'**
+  String get oneHour;
+
+  /// 8 hours mute option
+  ///
+  /// In en, this message translates to:
+  /// **'8 hours'**
+  String get eightHours;
+
+  /// 1 day mute option
+  ///
+  /// In en, this message translates to:
+  /// **'1 day'**
+  String get oneDay;
+
+  /// 1 week mute option
+  ///
+  /// In en, this message translates to:
+  /// **'1 week'**
+  String get oneWeek;
+
+  /// Forever mute option
+  ///
+  /// In en, this message translates to:
+  /// **'Forever'**
+  String get forever;
+
+  /// Clear chat history confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to clear all messages in this chat? This action cannot be undone.'**
+  String get clearChatHistoryConfirm;
+
+  /// Leave chat confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to leave this chat?'**
+  String get leaveChatConfirm;
+
+  /// Blocked banner fallback text
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to send messages'**
+  String get unableToSendMessages;
+
+  /// Error loading chat messages
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load messages: {error}'**
+  String failedToLoadMessages(String error);
+
+  /// Error adding reaction
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to add reaction: {error}'**
+  String failedToAddReaction(String error);
+
+  /// Alerts nav tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts'**
+  String get alerts;
+
+  /// Friends nav tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Friends'**
+  String get friends;
+
+  /// Messages nav tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get messages;
+
+  /// Notification settings screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Settings'**
+  String get notificationSettings;
+
+  /// Reset button label
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get resetLabel;
+
+  /// Settings reset confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Settings reset to defaults'**
+  String get settingsResetToDefaults;
+
+  /// Push notifications master switch title
+  ///
+  /// In en, this message translates to:
+  /// **'Push Notifications'**
+  String get pushNotifications;
+
+  /// Notifications enabled subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'You will receive notifications'**
+  String get youWillReceiveNotifications;
+
+  /// Notifications disabled subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'All notifications are disabled'**
+  String get allNotificationsDisabled;
+
+  /// Quiet hours section title
+  ///
+  /// In en, this message translates to:
+  /// **'Quiet Hours'**
+  String get quietHours;
+
+  /// Enable quiet hours toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Quiet Hours'**
+  String get enableQuietHours;
+
+  /// Quiet hours enabled subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'No notifications from {start} to {end}'**
+  String noNotificationsFromTo(String start, String end);
+
+  /// Quiet hours disabled subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Receive notifications anytime'**
+  String get receiveNotificationsAnytime;
+
+  /// Quiet hours start time label
+  ///
+  /// In en, this message translates to:
+  /// **'Start Time'**
+  String get startTime;
+
+  /// Quiet hours end time label
+  ///
+  /// In en, this message translates to:
+  /// **'End Time'**
+  String get endTime;
+
+  /// Match reminders subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Get reminded before matches start'**
+  String get getRemindedBeforeMatches;
+
+  /// Default reminder time label
+  ///
+  /// In en, this message translates to:
+  /// **'Default Reminder Time'**
+  String get defaultReminderTime;
+
+  /// Favorite team matches toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Favorite Team Matches'**
+  String get favoriteTeamMatchesLabel;
+
+  /// Favorite team matches description
+  ///
+  /// In en, this message translates to:
+  /// **'Get notified when your favorite teams play'**
+  String get favoriteTeamMatchesDesc;
+
+  /// Day before notification toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Day Before Notification'**
+  String get dayBeforeNotification;
+
+  /// Day before notification description
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me the day before my team plays'**
+  String get dayBeforeNotificationDesc;
+
+  /// Live match alerts section title
+  ///
+  /// In en, this message translates to:
+  /// **'Live Match Alerts'**
+  String get liveMatchAlerts;
+
+  /// Live match alerts section description
+  ///
+  /// In en, this message translates to:
+  /// **'Get instant notifications during live matches'**
+  String get liveMatchAlertsDesc;
+
+  /// Goal alerts subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'When a goal is scored'**
+  String get whenGoalScored;
+
+  /// Match start toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Match Start'**
+  String get matchStart;
+
+  /// Match start subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'When a match kicks off'**
+  String get whenMatchKicksOff;
+
+  /// Halftime toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Halftime'**
+  String get halftimeLabel;
+
+  /// Halftime subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Halftime score updates'**
+  String get halftimeScoreUpdates;
+
+  /// Match end toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Match End'**
+  String get matchEnd;
+
+  /// Match end subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Final score notifications'**
+  String get finalScoreNotifications;
+
+  /// Red cards toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Red Cards'**
+  String get redCards;
+
+  /// Red cards subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Player sent off'**
+  String get playerSentOff;
+
+  /// Penalties subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Penalty kicks awarded'**
+  String get penaltyKicksAwarded;
+
+  /// Watch party invites toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Party Invites'**
+  String get watchPartyInvites;
+
+  /// Watch party invites description
+  ///
+  /// In en, this message translates to:
+  /// **'When someone invites you to a watch party'**
+  String get watchPartyInvitesDesc;
+
+  /// Watch party reminders toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Party Reminders'**
+  String get watchPartyReminders;
+
+  /// Watch party reminders description
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me before watch parties I joined'**
+  String get watchPartyRemindersDesc;
+
+  /// Reminder time label
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder Time'**
+  String get reminderTime;
+
+  /// Watch party updates toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Watch Party Updates'**
+  String get watchPartyUpdates;
+
+  /// Watch party updates description
+  ///
+  /// In en, this message translates to:
+  /// **'Host messages and party changes'**
+  String get watchPartyUpdatesDesc;
+
+  /// Social section title
+  ///
+  /// In en, this message translates to:
+  /// **'Social'**
+  String get social;
+
+  /// Friend requests toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Friend Requests'**
+  String get friendRequests;
+
+  /// Friend requests description
+  ///
+  /// In en, this message translates to:
+  /// **'When someone sends you a friend request'**
+  String get friendRequestsDesc;
+
+  /// Messages notification toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get messagesNotification;
+
+  /// Messages notification description
+  ///
+  /// In en, this message translates to:
+  /// **'New direct and group messages'**
+  String get messagesNotificationDesc;
+
+  /// Mentions toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Mentions'**
+  String get mentionsLabel;
+
+  /// Mentions description
+  ///
+  /// In en, this message translates to:
+  /// **'When someone mentions you'**
+  String get mentionsDesc;
+
+  /// Predictions and leaderboard section title
+  ///
+  /// In en, this message translates to:
+  /// **'Predictions & Leaderboard'**
+  String get predictionsAndLeaderboard;
+
+  /// Prediction results toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Prediction Results'**
+  String get predictionResults;
+
+  /// Prediction results description
+  ///
+  /// In en, this message translates to:
+  /// **'How your predictions performed'**
+  String get predictionResultsDesc;
+
+  /// Leaderboard updates toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard Updates'**
+  String get leaderboardUpdates;
+
+  /// Leaderboard updates description
+  ///
+  /// In en, this message translates to:
+  /// **'Your ranking changes'**
+  String get leaderboardUpdatesDesc;
+
+  /// Reminder time picker title
+  ///
+  /// In en, this message translates to:
+  /// **'Select Reminder Time'**
+  String get selectReminderTime;
+
+  /// Minutes before reminder
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} minutes before'**
+  String minutesBefore(int minutes);
+
+  /// World Cup 2026 app bar title
+  ///
+  /// In en, this message translates to:
+  /// **'World Cup 2026'**
+  String get worldCup2026Title;
+
+  /// Message when no live games but tournament coming
+  ///
+  /// In en, this message translates to:
+  /// **'Game day is coming soon!'**
+  String get gameDayComingSoon;
+
+  /// Unknown state error title
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown state'**
+  String get unknownState;
+
+  /// Empty state for weekly schedule
+  ///
+  /// In en, this message translates to:
+  /// **'No games found for {year} Week {week}'**
+  String noGamesForWeek(int year, int week);
+
+  /// Test data banner for weekly schedule
+  ///
+  /// In en, this message translates to:
+  /// **'Test Data - {year} Week {week}'**
+  String testDataWeek(int year, int week);
+
+  /// Share text footer
+  ///
+  /// In en, this message translates to:
+  /// **'Shared from Pregame World Cup 2026'**
+  String get sharedFromPregame;
 }
 
 class _AppLocalizationsDelegate

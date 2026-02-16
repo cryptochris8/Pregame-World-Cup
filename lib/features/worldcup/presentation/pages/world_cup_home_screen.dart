@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../../core/widgets/banner_ad_widget.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
@@ -33,19 +34,12 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
-  final _tabs = const [
-    Tab(icon: Icon(Icons.sports_soccer), text: 'Matches'),
-    Tab(icon: Icon(Icons.grid_view), text: 'Groups'),
-    Tab(icon: Icon(Icons.flag), text: 'Teams'),
-    Tab(icon: Icon(Icons.person), text: 'Players'),
-    Tab(icon: Icon(Icons.sports), text: 'Managers'),
-    Tab(icon: Icon(Icons.favorite), text: 'Favorites'),
-  ];
+  static const int _tabCount = 6;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: _tabs.length, vsync: this);
+    _tabController = TabController(length: _tabCount, vsync: this);
   }
 
   @override
@@ -56,6 +50,15 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final tabs = [
+      Tab(icon: const Icon(Icons.sports_soccer), text: l10n.matches),
+      Tab(icon: const Icon(Icons.grid_view), text: l10n.groups),
+      Tab(icon: const Icon(Icons.flag), text: l10n.teams),
+      Tab(icon: const Icon(Icons.person), text: l10n.players),
+      Tab(icon: const Icon(Icons.sports), text: l10n.managers),
+      Tab(icon: const Icon(Icons.favorite), text: l10n.favorites),
+    ];
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -99,9 +102,9 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
               ),
             ),
             const SizedBox(width: 8),
-            const Text(
-              'World Cup',
-              style: TextStyle(
+            Text(
+              l10n.worldCup,
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w700,
               ),
@@ -138,7 +141,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
           // Fan Pass button (important - always visible)
           IconButton(
             icon: const Icon(Icons.star, color: Colors.amber, size: 22),
-            tooltip: 'Fan Pass',
+            tooltip: l10n.fanPass,
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const FanPassScreen()),
@@ -168,33 +171,33 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
               }
             },
             itemBuilder: (context) => [
-              const PopupMenuItem(
+              PopupMenuItem(
                 value: 'leaderboards',
                 child: Row(
                   children: [
-                    Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 20),
-                    SizedBox(width: 12),
-                    Text('Leaderboards', style: TextStyle(color: Colors.white)),
+                    const Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 20),
+                    const SizedBox(width: 12),
+                    Text(l10n.leaderboards, style: const TextStyle(color: Colors.white)),
                   ],
                 ),
               ),
-              const PopupMenuItem(
+              PopupMenuItem(
                 value: 'compare',
                 child: Row(
                   children: [
-                    Icon(Icons.compare_arrows, color: Colors.white, size: 20),
-                    SizedBox(width: 12),
-                    Text('Compare Players', style: TextStyle(color: Colors.white)),
+                    const Icon(Icons.compare_arrows, color: Colors.white, size: 20),
+                    const SizedBox(width: 12),
+                    Text(l10n.comparePlayers, style: const TextStyle(color: Colors.white)),
                   ],
                 ),
               ),
-              const PopupMenuItem(
+              PopupMenuItem(
                 value: 'watch_parties',
                 child: Row(
                   children: [
-                    Icon(Icons.groups, color: Colors.white, size: 20),
-                    SizedBox(width: 12),
-                    Text('Watch Parties', style: TextStyle(color: Colors.white)),
+                    const Icon(Icons.groups, color: Colors.white, size: 20),
+                    const SizedBox(width: 12),
+                    Text(l10n.watchParties, style: const TextStyle(color: Colors.white)),
                   ],
                 ),
               ),
@@ -203,7 +206,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
         ],
         bottom: TabBar(
           controller: _tabController,
-          tabs: _tabs,
+          tabs: tabs,
           isScrollable: true,
           tabAlignment: TabAlignment.start,
           indicatorColor: AppTheme.primaryOrange,

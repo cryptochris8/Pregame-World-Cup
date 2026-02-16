@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../core/services/logging_service.dart';
+import '../../l10n/app_localizations.dart';
 import '../social/presentation/screens/activity_feed_screen.dart';
 import '../messaging/presentation/screens/chats_list_screen.dart';
 import '../social/presentation/screens/notifications_screen.dart';
@@ -221,16 +222,21 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
           child: Container(
             height: 70,
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                _buildNavItem(0, Icons.sports_soccer, 'World Cup', AppTheme.primaryOrange),
-                _buildNavItem(1, Icons.dynamic_feed, 'Feed', AppTheme.primaryOrange),
-                _buildNavItem(2, Icons.message, 'Messages', AppTheme.primaryOrange, badgeCount: _unreadMessages),
-                _buildNavItem(3, Icons.notifications, 'Alerts', AppTheme.primaryOrange, badgeCount: _unreadNotifications),
-                _buildNavItem(4, Icons.people, 'Friends', AppTheme.primaryOrange),
-                _buildNavItem(5, Icons.person, 'Profile', AppTheme.primaryOrange),
-              ],
+            child: Builder(
+              builder: (context) {
+                final l10n = AppLocalizations.of(context);
+                return Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    _buildNavItem(0, Icons.sports_soccer, l10n.worldCup, AppTheme.primaryOrange),
+                    _buildNavItem(1, Icons.dynamic_feed, l10n.feed, AppTheme.primaryOrange),
+                    _buildNavItem(2, Icons.message, l10n.messages, AppTheme.primaryOrange, badgeCount: _unreadMessages),
+                    _buildNavItem(3, Icons.notifications, l10n.alerts, AppTheme.primaryOrange, badgeCount: _unreadNotifications),
+                    _buildNavItem(4, Icons.people, l10n.friends, AppTheme.primaryOrange),
+                    _buildNavItem(5, Icons.person, l10n.profile, AppTheme.primaryOrange),
+                  ],
+                );
+              },
             ),
           ),
         ),

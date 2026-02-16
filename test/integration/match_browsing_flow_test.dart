@@ -9,6 +9,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:pregame_world_cup/features/worldcup/worldcup.dart';
 import 'package:pregame_world_cup/features/venue_portal/presentation/bloc/venue_filter_cubit.dart';
 import 'package:pregame_world_cup/features/worldcup/data/services/match_reminder_service.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 import '../features/worldcup/presentation/bloc/mock_repositories.dart';
 
@@ -133,6 +134,8 @@ void main() {
           BlocProvider<PredictionsCubit>.value(value: mockPredictionsCubit),
         ],
         child: const MaterialApp(
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
           home: MediaQuery(
             data: MediaQueryData(size: Size(500, 1200)),
             child: MatchListPage(),
@@ -152,6 +155,8 @@ void main() {
   ) async {
     await tester.pumpWidget(
       MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: MediaQuery(
           data: const MediaQueryData(size: Size(500, 1200)),
           child: MatchDetailPage(match: match),
@@ -214,6 +219,8 @@ void main() {
           BlocProvider<PredictionsCubit>.value(value: mockPredictionsCubit),
         ],
         child: const MaterialApp(
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
           home: MediaQuery(
             data: MediaQueryData(size: Size(500, 1200)),
             child: MatchListPage(),
@@ -362,6 +369,8 @@ void main() {
             BlocProvider<PredictionsCubit>.value(value: mockPredictionsCubit),
           ],
           child: MaterialApp(
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
             home: MediaQuery(
               data: const MediaQueryData(size: Size(500, 1200)),
               child: Builder(

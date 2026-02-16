@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../config/app_theme.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import 'transaction_history_screen.dart';
 import 'fan_pass_header.dart';
@@ -84,10 +85,11 @@ class _FanPassScreenState extends State<FanPassScreen>
     if (!mounted) return;
 
     // Show a brief "checking" indicator
+    final l10n = AppLocalizations.of(context);
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Checking purchase status...'),
-        duration: Duration(seconds: 2),
+      SnackBar(
+        content: Text(l10n.checkingPurchaseStatus),
+        duration: const Duration(seconds: 2),
       ),
     );
 
@@ -106,7 +108,7 @@ class _FanPassScreenState extends State<FanPassScreen>
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            '${_currentStatus!.passType.displayName} activated successfully!',
+            AppLocalizations.of(context).passActivatedSuccessfully(_currentStatus!.passType.displayName),
           ),
           backgroundColor: AppTheme.successColor,
           duration: const Duration(seconds: 4),
@@ -165,7 +167,7 @@ class _FanPassScreenState extends State<FanPassScreen>
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              '${status.passType.displayName} activated successfully!',
+              AppLocalizations.of(context).passActivatedSuccessfully(status.passType.displayName),
             ),
             backgroundColor: AppTheme.successColor,
             duration: const Duration(seconds: 4),
@@ -201,7 +203,7 @@ class _FanPassScreenState extends State<FanPassScreen>
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please sign in to purchase')),
+        SnackBar(content: Text(AppLocalizations.of(context).pleaseSignInToPurchase)),
       );
       return;
     }
@@ -219,7 +221,7 @@ class _FanPassScreenState extends State<FanPassScreen>
       if (result.success) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('${passType.displayName} purchased successfully!'),
+            content: Text(AppLocalizations.of(context).passPurchasedSuccessfully(passType.displayName)),
             backgroundColor: AppTheme.successColor,
             duration: const Duration(seconds: 3),
           ),
@@ -231,15 +233,15 @@ class _FanPassScreenState extends State<FanPassScreen>
         _startListeningForPassActivation();
 
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Complete your purchase in the browser. Your pass will activate automatically.'),
-            duration: Duration(seconds: 5),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).completePurchaseInBrowser),
+            duration: const Duration(seconds: 5),
           ),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(result.errorMessage ?? 'Purchase failed. Please try again.'),
+            content: Text(result.errorMessage ?? AppLocalizations.of(context).purchaseFailedRetry),
             backgroundColor: AppTheme.errorColor,
           ),
         );
@@ -255,7 +257,7 @@ class _FanPassScreenState extends State<FanPassScreen>
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please sign in to restore purchases')),
+        SnackBar(content: Text(AppLocalizations.of(context).pleaseSignInToRestore)),
       );
       return;
     }
@@ -271,7 +273,7 @@ class _FanPassScreenState extends State<FanPassScreen>
         if (result.hasRestoredPurchases) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('${result.restoredPassType.displayName} restored successfully!'),
+              content: Text(AppLocalizations.of(context).passRestoredSuccessfully(result.restoredPassType.displayName)),
               backgroundColor: AppTheme.successColor,
               duration: const Duration(seconds: 3),
             ),
@@ -279,16 +281,16 @@ class _FanPassScreenState extends State<FanPassScreen>
           await _loadData();
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('No previous purchases found'),
-              duration: Duration(seconds: 3),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).noPreviousPurchases),
+              duration: const Duration(seconds: 3),
             ),
           );
         }
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(result.errorMessage ?? 'Failed to restore purchases'),
+            content: Text(result.errorMessage ?? AppLocalizations.of(context).failedToRestorePurchases),
             backgroundColor: AppTheme.errorColor,
           ),
         );
@@ -313,7 +315,7 @@ class _FanPassScreenState extends State<FanPassScreen>
     return Scaffold(
       backgroundColor: AppTheme.backgroundDark,
       appBar: AppBar(
-        title: const Text('World Cup 2026 Pass'),
+        title: Text(AppLocalizations.of(context).worldCup2026Pass),
         backgroundColor: AppTheme.backgroundDark,
         foregroundColor: AppTheme.textWhite,
         elevation: 0,
@@ -321,7 +323,7 @@ class _FanPassScreenState extends State<FanPassScreen>
           IconButton(
             onPressed: _navigateToTransactionHistory,
             icon: const Icon(Icons.receipt_long),
-            tooltip: 'Transaction History',
+            tooltip: AppLocalizations.of(context).transactionHistory,
           ),
         ],
       ),
@@ -394,35 +396,36 @@ class _FanPassScreenState extends State<FanPassScreen>
   }
 
   List<TierFeature> _getFeaturesForTier(FanPassType type) {
+    final l10n = AppLocalizations.of(context);
     switch (type) {
       case FanPassType.free:
         return [
-          const TierFeature('Match schedules & results', true),
-          const TierFeature('Venue discovery', true),
-          const TierFeature('Basic notifications', true),
-          const TierFeature('Follow teams', true),
-          const TierFeature('Ad-free experience', false),
-          const TierFeature('Advanced stats', false),
-          const TierFeature('Custom alerts', false),
+          TierFeature(l10n.matchSchedulesResults, true),
+          TierFeature(l10n.venueDiscovery, true),
+          TierFeature(l10n.basicNotifications, true),
+          TierFeature(l10n.followTeams, true),
+          TierFeature(l10n.adFreeExperience, false),
+          TierFeature(l10n.advancedStats, false),
+          TierFeature(l10n.customAlerts, false),
         ];
       case FanPassType.fanPass:
         return [
-          const TierFeature('Everything in Free', true),
-          const TierFeature('Ad-free experience', true),
-          const TierFeature('Advanced match stats', true),
-          const TierFeature('Custom match alerts', true),
-          const TierFeature('Advanced social features', true),
-          const TierFeature('Exclusive content', false),
-          const TierFeature('AI match insights', false),
+          TierFeature(l10n.everythingInFree, true),
+          TierFeature(l10n.adFreeExperience, true),
+          TierFeature(l10n.advancedMatchStats, true),
+          TierFeature(l10n.customMatchAlerts, true),
+          TierFeature(l10n.advancedSocialFeatures, true),
+          TierFeature(l10n.exclusiveContent, false),
+          TierFeature(l10n.aiMatchInsights, false),
         ];
       case FanPassType.superfanPass:
         return [
-          const TierFeature('Everything in Fan Pass', true),
-          const TierFeature('Exclusive content', true),
-          const TierFeature('AI match insights', true),
-          const TierFeature('Priority features', true),
-          const TierFeature('Downloadable content', true),
-          const TierFeature('Early access to new features', true),
+          TierFeature(l10n.everythingInFanPass, true),
+          TierFeature(l10n.exclusiveContent, true),
+          TierFeature(l10n.aiMatchInsights, true),
+          TierFeature(l10n.priorityFeatures, true),
+          TierFeature(l10n.downloadableContent, true),
+          TierFeature(l10n.earlyAccessFeatures, true),
         ];
     }
   }

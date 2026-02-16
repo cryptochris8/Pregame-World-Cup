@@ -97,6 +97,10 @@ import 'features/admin/domain/services/admin_service.dart';
 // Match Chat Feature
 import 'features/match_chat/match_chat.dart';
 
+// Chatbot Feature
+import 'features/chatbot/domain/services/chatbot_service.dart';
+import 'features/chatbot/presentation/bloc/chatbot_cubit.dart';
+
 // Calendar Feature
 import 'features/calendar/calendar.dart';
 
@@ -313,25 +317,37 @@ Future<void> setupLocator() async {
       }
     }
 
-    // STEP 14: Calendar Services
-    _diLog('DI STEP 14: Calendar Services');
+    // STEP 14: Chatbot Services
+    _diLog('DI STEP 14: Chatbot Services');
+    try {
+      _registerChatbotServices();
+      _diLog('DI STEP 14: Chatbot Services - SUCCESS');
+    } catch (e) {
+      _diLog('DI STEP 14: Chatbot Services - FAILED: $e');
+      if (ANDROID_DIAGNOSTIC_MODE) {
+        _diLog('DIAGNOSTIC: Chatbot services failed but app will continue');
+      }
+    }
+
+    // STEP 15: Calendar Services
+    _diLog('DI STEP 15: Calendar Services');
     try {
       _registerCalendarServices();
-      _diLog('DI STEP 14: Calendar Services - SUCCESS');
+      _diLog('DI STEP 15: Calendar Services - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 14: Calendar Services - FAILED: $e');
+      _diLog('DI STEP 15: Calendar Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
         _diLog('DIAGNOSTIC: Calendar services failed but app will continue');
       }
     }
 
-    // STEP 15: Sharing Services
-    _diLog('DI STEP 15: Sharing Services');
+    // STEP 16: Sharing Services
+    _diLog('DI STEP 16: Sharing Services');
     try {
       _registerSharingServices();
-      _diLog('DI STEP 15: Sharing Services - SUCCESS');
+      _diLog('DI STEP 16: Sharing Services - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 15: Sharing Services - FAILED: $e');
+      _diLog('DI STEP 16: Sharing Services - FAILED: $e');
       if (ANDROID_DIAGNOSTIC_MODE) {
         _diLog('DIAGNOSTIC: Sharing services failed but app will continue');
       }
@@ -627,6 +643,19 @@ void _registerMatchChatServices() {
   sl.registerFactory<MatchChatCubit>(() => MatchChatCubit(
         chatService: sl(),
       ));
+}
+
+/// Register Chatbot services (AI-powered assistant)
+void _registerChatbotServices() {
+  // Chatbot Service (Singleton - maintains conversation history)
+  sl.registerLazySingleton<ChatbotService>(() => ChatbotService(
+    aiService: sl<MultiProviderAIService>(),
+  ));
+
+  // Chatbot Cubit (Factory - fresh instance per screen)
+  sl.registerFactory<ChatbotCubit>(() => ChatbotCubit(
+    chatbotService: sl<ChatbotService>(),
+  ));
 }
 
 /// Register Calendar services

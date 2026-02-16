@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -27,7 +28,7 @@ class _MatchListPageState extends State<MatchListPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text('Match Schedule', style: TextStyle(color: Colors.white)),
+        title: Text(AppLocalizations.of(context).matchSchedule, style: const TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           BlocBuilder<MatchListCubit, MatchListState>(
@@ -74,7 +75,7 @@ class _MatchListPageState extends State<MatchListPage> {
                       foregroundColor: Colors.white,
                     ),
                     onPressed: () => context.read<MatchListCubit>().loadMatches(),
-                    child: const Text('Retry'),
+                    child: Text(AppLocalizations.of(context).retry),
                   ),
                 ],
               ),
@@ -226,32 +227,33 @@ class _MatchListPageState extends State<MatchListPage> {
   }
 
   Widget _buildEmptyState(MatchListFilter filter) {
+    final l10n = AppLocalizations.of(context);
     String message;
     IconData icon;
 
     switch (filter) {
       case MatchListFilter.favorites:
-        message = 'No favorite matches yet';
+        message = l10n.noFavoriteMatchesYet;
         icon = Icons.favorite_border;
         break;
       case MatchListFilter.today:
-        message = 'No matches scheduled for today';
+        message = l10n.noMatchesScheduledToday;
         icon = Icons.today;
         break;
       case MatchListFilter.live:
-        message = 'No live matches right now';
+        message = l10n.noLiveMatchesRightNow;
         icon = Icons.play_circle_outline;
         break;
       case MatchListFilter.upcoming:
-        message = 'No upcoming matches';
+        message = l10n.noUpcomingMatches;
         icon = Icons.schedule;
         break;
       case MatchListFilter.completed:
-        message = 'No completed matches yet';
+        message = l10n.noCompletedMatchesYet;
         icon = Icons.check_circle_outline;
         break;
       default:
-        message = 'No matches found';
+        message = l10n.noMatchesFound;
         icon = Icons.sports_soccer;
     }
 

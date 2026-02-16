@@ -10,6 +10,7 @@ import 'package:get_it/get_it.dart';
 
 import 'package:pregame_world_cup/features/auth/presentation/screens/login_screen.dart';
 import 'package:pregame_world_cup/features/auth/domain/services/auth_service.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 // Mock AuthService
 class MockAuthService extends Mock implements AuthService {}
@@ -42,6 +43,8 @@ void main() {
 
   Widget buildTestWidget() {
     return const MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: LoginScreen(),
     );
   }

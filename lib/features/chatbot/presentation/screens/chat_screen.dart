@@ -1,139 +1,46 @@
 import 'package:flutter/material.dart';
-import '../widgets/chat_message_list_item.dart';
-import '../../domain/entities/chat_message.dart';
-import '../../../../core/ai/services/multi_provider_ai_service.dart';
-import '../../../../injection_container.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ChatScreen extends StatefulWidget {
+import '../../../../injection_container.dart';
+import '../../domain/entities/chat_message.dart';
+import '../bloc/chatbot_cubit.dart';
+import '../widgets/chat_message_list_item.dart';
+
+class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
 
   @override
-  State<ChatScreen> createState() => _ChatScreenState();
-}
-
-class _ChatScreenState extends State<ChatScreen> {
-  final TextEditingController _textController = TextEditingController();
-  final List<ChatMessage> _messages = [];
-  final ScrollController _scrollController = ScrollController();
-  bool _isProcessing = false;
-
-  MultiProviderAIService? _aiService;
-
-  @override
-  void initState() {
-    super.initState();
-    _initializeAIService();
-    _addBotMessage(
-      "Hi! I'm the Pregame World Cup assistant. Ask me about matches, "
-      "teams, predictions, venues, or anything about the 2026 FIFA World Cup!",
+  Widget build(BuildContext context) {
+    return BlocProvider<ChatbotCubit>(
+      create: (_) => sl<ChatbotCubit>()..initialize(),
+      child: const _ChatScreenBody(),
     );
   }
+}
 
-  /// Try to get the AI service from DI; if unavailable, leave null and use fallback.
-  void _initializeAIService() {
-    try {
-      _aiService = sl<MultiProviderAIService>();
-    } catch (_) {
-      // AI service not registered yet - will use fallback responses
-      _aiService = null;
-    }
+class _ChatScreenBody extends StatefulWidget {
+  const _ChatScreenBody();
+
+  @override
+  State<_ChatScreenBody> createState() => _ChatScreenBodyState();
+}
+
+class _ChatScreenBodyState extends State<_ChatScreenBody> {
+  final TextEditingController _textController = TextEditingController();
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    _textController.dispose();
+    _scrollController.dispose();
+    super.dispose();
   }
 
-  void _addBotMessage(String text) {
-    if (mounted) {
-      setState(() {
-        _messages.insert(0, ChatMessage(text: text, type: ChatMessageType.bot));
-      });
-      _scrollToBottom();
-    }
-  }
-
-  void _addUserMessage(String text) {
-    if (mounted) {
-      setState(() {
-        _messages.insert(0, ChatMessage(text: text, type: ChatMessageType.user));
-      });
-      _scrollToBottom();
-    }
-  }
-
-  void _addThinkingIndicator() {
-    if (mounted) {
-      setState(() {
-        _messages.insert(
-          0,
-          ChatMessage(text: 'Thinking...', type: ChatMessageType.thinking),
-        );
-      });
-      _scrollToBottom();
-    }
-  }
-
-  void _removeThinkingIndicator() {
-    if (mounted) {
-      setState(() {
-        _messages.removeWhere((m) => m.type == ChatMessageType.thinking);
-      });
-    }
-  }
-
-  void _handleSubmitted(String text) async {
-    if (text.trim().isEmpty || _isProcessing) return;
-
+  void _handleSubmitted(String text) {
+    if (text.trim().isEmpty) return;
     _textController.clear();
-    _addUserMessage(text);
-
-    _isProcessing = true;
-    _addThinkingIndicator();
-
-    String botResponse;
-
-    // Attempt to use the AI service for a real response
-    if (_aiService != null && _aiService!.isAnyServiceAvailable) {
-      try {
-        botResponse = await _aiService!.generateQuickResponse(
-          prompt: text,
-          systemMessage:
-              'You are the Pregame World Cup assistant, an expert on the 2026 FIFA World Cup '
-              '(June 11 - July 19, 2026) hosted across the USA, Mexico, and Canada. '
-              '48 teams compete in 104 matches across 16 host cities. '
-              'Help fans with match schedules, team info, predictions, venue recommendations, '
-              'watch parties, and general World Cup knowledge. '
-              'Keep responses concise (2-4 sentences) and enthusiastic about soccer.',
-        );
-      } catch (_) {
-        // AI call failed - fall back to rule-based responses
-        botResponse = _generateSimpleResponse(text.toLowerCase());
-      }
-    } else {
-      // AI service not available - use rule-based fallback
-      botResponse = _generateSimpleResponse(text.toLowerCase());
-    }
-
-    _removeThinkingIndicator();
-    _isProcessing = false;
-    _addBotMessage(botResponse);
-  }
-
-  /// Fallback rule-based responses when AI service is unavailable or fails.
-  String _generateSimpleResponse(String userInput) {
-    if (userInput.contains('hello') || userInput.contains('hi')) {
-      return "Hello! I'm here to help you with World Cup 2026 schedules, teams, venues, and predictions.";
-    } else if (userInput.contains('game') || userInput.contains('schedule') || userInput.contains('match')) {
-      return "You can view all 104 World Cup matches on the schedule screen. Tap on any match to see details and nearby venues!";
-    } else if (userInput.contains('venue') || userInput.contains('bar') || userInput.contains('restaurant')) {
-      return "To find venues near a match, select a game from the schedule and I'll show you nearby bars and restaurants for watch parties!";
-    } else if (userInput.contains('team') || userInput.contains('group')) {
-      return "All 48 qualified teams are listed in the World Cup section. You can set favorites and follow their group stage journey!";
-    } else if (userInput.contains('predict') || userInput.contains('winner') || userInput.contains('who will win')) {
-      return "Check the predictions feature for AI-powered match predictions! You can also make your own picks and compete with friends.";
-    } else if (userInput.contains('help')) {
-      return "I can help you with:\n- Match schedules and results\n- Team info and group standings\n- AI match predictions\n- Venue and watch party recommendations\n- World Cup 2026 general knowledge\n\nWhat would you like to know?";
-    } else if (userInput.contains('thank')) {
-      return "You're welcome! Enjoy the World Cup!";
-    } else {
-      return "I'm your World Cup 2026 assistant! Ask me about match schedules, team information, predictions, or finding venues to watch the games.";
-    }
+    context.read<ChatbotCubit>().sendMessage(text);
+    _scrollToBottom();
   }
 
   void _scrollToBottom() {
@@ -148,24 +55,93 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
+  void _showClearChatDialog() {
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Clear Chat'),
+        content: const Text(
+          'This will clear the conversation and start fresh. Continue?',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(dialogContext).pop();
+              context.read<ChatbotCubit>().clearChat();
+            },
+            child: const Text('Clear'),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pregame Assistant'),
         backgroundColor: Theme.of(context).colorScheme.primary,
-        titleTextStyle: TextStyle(color: Theme.of(context).colorScheme.onPrimary, fontSize: 20),
-        iconTheme: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
+        titleTextStyle: TextStyle(
+          color: Theme.of(context).colorScheme.onPrimary,
+          fontSize: 20,
+        ),
+        iconTheme: IconThemeData(
+          color: Theme.of(context).colorScheme.onPrimary,
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.delete_outline,
+              color: Theme.of(context).colorScheme.onPrimary,
+            ),
+            tooltip: 'Clear chat',
+            onPressed: _showClearChatDialog,
+          ),
+        ],
       ),
       body: Column(
-        children: <Widget>[
+        children: [
           Expanded(
-            child: ListView.builder(
-              controller: _scrollController,
-              padding: const EdgeInsets.all(8.0),
-              reverse: true,
-              itemCount: _messages.length,
-              itemBuilder: (_, int index) => ChatMessageListItem(message: _messages[index]),
+            child: BlocConsumer<ChatbotCubit, ChatbotState>(
+              listener: (context, state) {
+                // Scroll to bottom whenever new messages arrive
+                if (state is ChatbotLoaded || state is ChatbotLoading) {
+                  _scrollToBottom();
+                }
+              },
+              builder: (context, state) {
+                final messages = _messagesFromState(state);
+                final isLoading = state is ChatbotLoading;
+
+                return ListView.builder(
+                  controller: _scrollController,
+                  padding: const EdgeInsets.all(8.0),
+                  reverse: true,
+                  // +1 when loading so we can render the typing indicator
+                  itemCount: messages.length + (isLoading ? 1 : 0),
+                  itemBuilder: (_, int index) {
+                    // The typing indicator goes at position 0 (newest)
+                    if (isLoading && index == 0) {
+                      return ChatMessageListItem(
+                        message: ChatMessage(
+                          text: 'Thinking...',
+                          type: ChatMessageType.thinking,
+                        ),
+                      );
+                    }
+
+                    final messageIndex = isLoading ? index - 1 : index;
+                    return ChatMessageListItem(
+                      message: messages[messageIndex],
+                    );
+                  },
+                );
+              },
             ),
           ),
           const Divider(height: 1.0),
@@ -179,37 +155,50 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Widget _buildTextComposer() {
-    return IconTheme(
-      data: IconThemeData(color: Theme.of(context).colorScheme.secondary),
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0),
-        child: Row(
-          children: <Widget>[
-            Expanded(
-              child: TextField(
-                controller: _textController,
-                onSubmitted: _isProcessing ? null : _handleSubmitted,
-                decoration: const InputDecoration.collapsed(hintText: 'Send a message'),
-                enabled: !_isProcessing,
-              ),
+    return BlocBuilder<ChatbotCubit, ChatbotState>(
+      builder: (context, state) {
+        final isLoading = state is ChatbotLoading;
+
+        return IconTheme(
+          data: IconThemeData(
+            color: Theme.of(context).colorScheme.secondary,
+          ),
+          child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _textController,
+                    onSubmitted: isLoading ? null : _handleSubmitted,
+                    decoration: const InputDecoration.collapsed(
+                      hintText: 'Send a message',
+                    ),
+                    enabled: !isLoading,
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                  child: IconButton(
+                    icon: const Icon(Icons.send),
+                    onPressed: isLoading
+                        ? null
+                        : () => _handleSubmitted(_textController.text),
+                  ),
+                ),
+              ],
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 4.0),
-              child: IconButton(
-                icon: const Icon(Icons.send),
-                onPressed: _isProcessing ? null : () => _handleSubmitted(_textController.text),
-              ),
-            ),
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 
-  @override
-  void dispose() {
-    _textController.dispose();
-    _scrollController.dispose();
-    super.dispose();
+  /// Extract the message list from the current cubit state.
+  List<ChatMessage> _messagesFromState(ChatbotState state) {
+    if (state is ChatbotLoaded) return state.messages;
+    if (state is ChatbotLoading) return state.messages;
+    if (state is ChatbotError) return state.previousMessages;
+    return [];
   }
 }

@@ -6,6 +6,11 @@ import '../../domain/services/social_service.dart';
 import '../../../messaging/domain/services/file_upload_service.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../widgets/edit_profile_photo_section.dart';
+import '../widgets/edit_profile_basic_info_section.dart';
+import '../widgets/edit_profile_favorite_teams_section.dart';
+import '../widgets/edit_profile_privacy_section.dart';
+import '../widgets/team_selector_bottom_sheet.dart';
 
 class EditProfileScreen extends StatefulWidget {
   final UserProfile profile;
@@ -24,70 +29,28 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   final _displayNameController = TextEditingController();
   final _bioController = TextEditingController();
   final _locationController = TextEditingController();
-  
+
   final SocialService _socialService = SocialService();
   final FileUploadService _fileUploadService = FileUploadService();
-  
+
   String? _profileImageUrl;
   File? _selectedImage;
   List<String> _selectedTeams = [];
   bool _isLoading = false;
   bool _isPrivateProfile = false;
   bool _showOnlineStatus = true;
-  
+
   // FIFA World Cup 2026 qualified national teams (48 teams, alphabetical)
   final List<String> _availableTeams = [
-    'Argentina',
-    'Australia',
-    'Austria',
-    'Belgium',
-    'Bolivia',
-    'Brazil',
-    'Cameroon',
-    'Canada',
-    'Chile',
-    'Colombia',
-    'Costa Rica',
-    'Croatia',
-    'Czech Republic',
-    'Denmark',
-    'DR Congo',
-    'Ecuador',
-    'Egypt',
-    'England',
-    'France',
-    'Germany',
-    'Ghana',
-    'Hungary',
-    'Iran',
-    'Israel',
-    'Italy',
-    'Ivory Coast',
-    'Japan',
-    'Kenya',
-    'Mexico',
-    'Morocco',
-    'Netherlands',
-    'New Zealand',
-    'Nigeria',
-    'Norway',
-    'Panama',
-    'Paraguay',
-    'Peru',
-    'Poland',
-    'Portugal',
-    'Saudi Arabia',
-    'Scotland',
-    'Senegal',
-    'Serbia',
-    'South Korea',
-    'Spain',
-    'Switzerland',
-    'Turkey',
-    'USA',
-    'Uruguay',
-    'Venezuela',
-    'Wales',
+    'Argentina', 'Australia', 'Austria', 'Belgium', 'Bolivia', 'Brazil',
+    'Cameroon', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Croatia',
+    'Czech Republic', 'Denmark', 'DR Congo', 'Ecuador', 'Egypt', 'England',
+    'France', 'Germany', 'Ghana', 'Hungary', 'Iran', 'Israel', 'Italy',
+    'Ivory Coast', 'Japan', 'Kenya', 'Mexico', 'Morocco', 'Netherlands',
+    'New Zealand', 'Nigeria', 'Norway', 'Panama', 'Paraguay', 'Peru',
+    'Poland', 'Portugal', 'Saudi Arabia', 'Scotland', 'Senegal', 'Serbia',
+    'South Korea', 'Spain', 'Switzerland', 'Turkey', 'USA', 'Uruguay',
+    'Venezuela', 'Wales',
   ];
 
   @override
@@ -142,7 +105,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             onPressed: () => Navigator.of(context).pop(),
             icon: const Icon(Icons.arrow_back, color: Colors.white),
             style: IconButton.styleFrom(
-              backgroundColor: Colors.white.withValues(alpha:0.2),
+              backgroundColor: Colors.white.withValues(alpha: 0.2),
             ),
           ),
           const SizedBox(width: 12),
@@ -168,7 +131,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.transparent,
                 shadowColor: Colors.transparent,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -179,7 +143,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                       height: 20,
                       child: CircularProgressIndicator(
                         strokeWidth: 2,
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        valueColor:
+                            AlwaysStoppedAnimation<Color>(Colors.white),
                       ),
                     )
                   : const Text(
@@ -205,389 +170,51 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Profile Photo Section
-            _buildProfilePhotoSection(),
+            EditProfilePhotoSection(
+              selectedImage: _selectedImage,
+              profileImageUrl: _profileImageUrl,
+              onSelectImage: _selectProfileImage,
+            ),
             const SizedBox(height: 24),
-            
+
             // Basic Information
-            _buildBasicInfoSection(),
+            EditProfileBasicInfoSection(
+              displayNameController: _displayNameController,
+              bioController: _bioController,
+              locationController: _locationController,
+            ),
             const SizedBox(height: 24),
-            
+
             // Favorite Teams
-            _buildFavoriteTeamsSection(),
+            EditProfileFavoriteTeamsSection(
+              selectedTeams: _selectedTeams,
+              onRemoveTeam: (team) {
+                setState(() {
+                  _selectedTeams.remove(team);
+                });
+              },
+              onAddTeam: _showTeamSelector,
+            ),
             const SizedBox(height: 24),
-            
+
             // Privacy Settings
-            _buildPrivacySection(),
+            EditProfilePrivacySection(
+              isPrivateProfile: _isPrivateProfile,
+              showOnlineStatus: _showOnlineStatus,
+              onPrivateProfileChanged: (value) {
+                setState(() {
+                  _isPrivateProfile = value;
+                });
+              },
+              onShowOnlineStatusChanged: (value) {
+                setState(() {
+                  _showOnlineStatus = value;
+                });
+              },
+            ),
             const SizedBox(height: 32),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _buildProfilePhotoSection() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha:0.1),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withValues(alpha:0.3)),
-      ),
-      child: Column(
-        children: [
-          const Text(
-            'Profile Photo',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(height: 16),
-          
-          // Profile Image
-          GestureDetector(
-            onTap: _selectProfileImage,
-            child: Container(
-              width: 120,
-              height: 120,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: Colors.white.withValues(alpha:0.5), width: 3),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha:0.3),
-                    blurRadius: 12,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
-              ),
-              child: ClipOval(
-                child: _selectedImage != null
-                    ? Image.file(
-                        _selectedImage!,
-                        fit: BoxFit.cover,
-                      )
-                    : _profileImageUrl != null
-                        ? Image.network(
-                            _profileImageUrl!,
-                            fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) => _buildDefaultAvatar(),
-                          )
-                        : _buildDefaultAvatar(),
-              ),
-            ),
-          ),
-          
-          const SizedBox(height: 12),
-          
-          // Change Photo Button
-          TextButton.icon(
-            onPressed: _selectProfileImage,
-            icon: const Icon(Icons.camera_alt, color: Colors.white),
-            label: const Text(
-              'Change Photo',
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildDefaultAvatar() {
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: AppTheme.cardGradient,
-        shape: BoxShape.circle,
-      ),
-      child: const Icon(
-        Icons.person,
-        size: 60,
-        color: Colors.white,
-      ),
-    );
-  }
-
-  Widget _buildBasicInfoSection() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha:0.1),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withValues(alpha:0.3)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            'Basic Information',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(height: 16),
-          
-          // Display Name
-          TextFormField(
-            controller: _displayNameController,
-            style: const TextStyle(color: Colors.white),
-            decoration: InputDecoration(
-              labelText: 'Display Name',
-              labelStyle: TextStyle(color: Colors.white.withValues(alpha:0.7)),
-              filled: true,
-              fillColor: Colors.white.withValues(alpha:0.1),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.white.withValues(alpha:0.3)),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.white.withValues(alpha:0.3)),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: Colors.white, width: 2),
-              ),
-            ),
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return 'Display name is required';
-              }
-              return null;
-            },
-          ),
-          
-          const SizedBox(height: 16),
-          
-          // Bio
-          TextFormField(
-            controller: _bioController,
-            style: const TextStyle(color: Colors.white),
-            maxLines: 3,
-            decoration: InputDecoration(
-              labelText: 'Bio',
-              labelStyle: TextStyle(color: Colors.white.withValues(alpha:0.7)),
-              hintText: 'Tell everyone about yourself...',
-              hintStyle: TextStyle(color: Colors.white.withValues(alpha:0.5)),
-              filled: true,
-              fillColor: Colors.white.withValues(alpha:0.1),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.white.withValues(alpha:0.3)),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.white.withValues(alpha:0.3)),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: Colors.white, width: 2),
-              ),
-            ),
-          ),
-          
-          const SizedBox(height: 16),
-          
-          // Location
-          TextFormField(
-            controller: _locationController,
-            style: const TextStyle(color: Colors.white),
-            decoration: InputDecoration(
-              labelText: 'Location',
-              labelStyle: TextStyle(color: Colors.white.withValues(alpha:0.7)),
-              hintText: 'City, State',
-              hintStyle: TextStyle(color: Colors.white.withValues(alpha:0.5)),
-              filled: true,
-              fillColor: Colors.white.withValues(alpha:0.1),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.white.withValues(alpha:0.3)),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.white.withValues(alpha:0.3)),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: Colors.white, width: 2),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildFavoriteTeamsSection() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha:0.1),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withValues(alpha:0.3)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                'Favorite Teams',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white,
-                ),
-              ),
-              TextButton(
-                onPressed: _showTeamSelector,
-                child: const Text(
-                  'Add Team',
-                  style: TextStyle(color: Color(0xFFFBBF24)),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
-          
-          // Selected Teams
-          if (_selectedTeams.isEmpty)
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha:0.05),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.white.withValues(alpha:0.2)),
-              ),
-              child: const Row(
-                children: [
-                  Icon(Icons.sports_soccer, color: Colors.white54),
-                  SizedBox(width: 12),
-                  Text(
-                    'No favorite teams selected',
-                    style: TextStyle(color: Colors.white54),
-                  ),
-                ],
-              ),
-            )
-          else
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: _selectedTeams.map((team) => _buildTeamChip(team)).toList(),
-            ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTeamChip(String team) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      decoration: BoxDecoration(
-        gradient: AppTheme.cardGradient,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.white.withValues(alpha:0.3)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          TeamLogoHelper.getTeamLogoWidget(
-            teamName: team,
-            size: 20,
-          ),
-          const SizedBox(width: 8),
-          Text(
-            team,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          const SizedBox(width: 8),
-          GestureDetector(
-            onTap: () {
-              setState(() {
-                _selectedTeams.remove(team);
-              });
-            },
-            child: const Icon(
-              Icons.close,
-              size: 16,
-              color: Colors.white70,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildPrivacySection() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha:0.1),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withValues(alpha:0.3)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            'Privacy Settings',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(height: 16),
-
-          SwitchListTile(
-            title: const Text(
-              'Private Profile',
-              style: TextStyle(color: Colors.white),
-            ),
-            subtitle: const Text(
-              'Only approved followers can see your profile',
-              style: TextStyle(color: Colors.white70),
-            ),
-            value: _isPrivateProfile,
-            onChanged: (value) {
-              setState(() {
-                _isPrivateProfile = value;
-              });
-            },
-            activeColor: const Color(0xFFFBBF24),
-            contentPadding: EdgeInsets.zero,
-          ),
-
-          const Divider(color: Colors.white24, height: 24),
-
-          SwitchListTile(
-            title: const Text(
-              'Show Online Status',
-              style: TextStyle(color: Colors.white),
-            ),
-            subtitle: const Text(
-              'Let others see when you\'re online or last active',
-              style: TextStyle(color: Colors.white70),
-            ),
-            value: _showOnlineStatus,
-            onChanged: (value) {
-              setState(() {
-                _showOnlineStatus = value;
-              });
-            },
-            activeColor: const Color(0xFFFBBF24),
-            contentPadding: EdgeInsets.zero,
-          ),
-        ],
       ),
     );
   }
@@ -598,7 +225,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         chatId: 'profile_${widget.profile.userId}',
         source: ImageSource.gallery,
       );
-      
+
       if (attachment != null) {
         setState(() {
           _profileImageUrl = attachment.fileUrl;
@@ -614,104 +241,21 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       context: context,
       backgroundColor: Colors.transparent,
       isScrollControlled: true,
-      builder: (context) => Container(
-        height: MediaQuery.of(context).size.height * 0.7,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Color(0xFF4C1D95),
-              Color(0xFF7C3AED),
-              Color(0xFF3B82F6),
-            ],
-          ),
-          borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-        ),
-        child: Column(
-          children: [
-            // Handle
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 12),
-              width: 40,
-              height: 4,
-              decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha:0.5),
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-            
-            // Title
-            const Padding(
-              padding: EdgeInsets.all(16),
-              child: Text(
-                'Select Favorite Teams',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-            
-            // Team List
-            Expanded(
-              child: ListView.builder(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                itemCount: _availableTeams.length,
-                itemBuilder: (context, index) {
-                  final team = _availableTeams[index];
-                  final isSelected = _selectedTeams.contains(team);
-                  
-                  return Container(
-                    margin: const EdgeInsets.only(bottom: 8),
-                    decoration: BoxDecoration(
-                      color: isSelected 
-                          ? Colors.white.withValues(alpha:0.2)
-                          : Colors.white.withValues(alpha:0.1),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: isSelected 
-                            ? const Color(0xFFFBBF24)
-                            : Colors.white.withValues(alpha:0.3),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: TeamLogoHelper.getTeamLogoWidget(
-                        teamName: team,
-                        size: 32,
-                      ),
-                      title: Text(
-                        team,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      trailing: isSelected
-                          ? const Icon(Icons.check_circle, color: Color(0xFFFBBF24))
-                          : const Icon(Icons.add_circle_outline, color: Colors.white54),
-                      onTap: () {
-                        setState(() {
-                          if (isSelected) {
-                            _selectedTeams.remove(team);
-                          } else {
-                            if (_selectedTeams.length < 5) {
-                              _selectedTeams.add(team);
-                            } else {
-                              _showErrorSnackBar('You can select up to 5 favorite teams');
-                            }
-                          }
-                        });
-                        Navigator.pop(context);
-                      },
-                    ),
-                  );
-                },
-              ),
-            ),
-          ],
-        ),
+      builder: (context) => TeamSelectorBottomSheet(
+        availableTeams: _availableTeams,
+        selectedTeams: _selectedTeams,
+        onTeamToggled: (team) {
+          setState(() {
+            if (_selectedTeams.contains(team)) {
+              _selectedTeams.remove(team);
+            } else {
+              _selectedTeams.add(team);
+            }
+          });
+        },
+        onMaxReached: () {
+          _showErrorSnackBar('You can select up to 5 favorite teams');
+        },
       ),
     );
   }
@@ -727,8 +271,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       // Create updated profile with correct field names
       final updatedProfile = widget.profile.copyWith(
         displayName: _displayNameController.text.trim(),
-        bio: _bioController.text.trim().isNotEmpty ? _bioController.text.trim() : null,
-        homeLocation: _locationController.text.trim().isNotEmpty ? _locationController.text.trim() : null,
+        bio: _bioController.text.trim().isNotEmpty
+            ? _bioController.text.trim()
+            : null,
+        homeLocation: _locationController.text.trim().isNotEmpty
+            ? _locationController.text.trim()
+            : null,
         profileImageUrl: _profileImageUrl,
         favoriteTeams: _selectedTeams,
         privacySettings: widget.profile.privacySettings.copyWith(
@@ -748,7 +296,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           _showErrorSnackBar('Failed to update profile. Please try again.');
         }
       }
-
     } catch (e) {
       _showErrorSnackBar('Failed to update profile: $e');
     } finally {
@@ -785,4 +332,4 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       ),
     );
   }
-} 
+}

@@ -6,6 +6,7 @@ import '../widgets/activity_feed_item_widget.dart';
 import '../widgets/create_activity_bottom_sheet.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../../l10n/app_localizations.dart';
 import 'package:share_plus/share_plus.dart';
 import 'user_profile_screen.dart';
 
@@ -142,6 +143,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,
@@ -152,9 +154,9 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
           children: [
             TeamLogoHelper.getPregameLogo(height: 32),
             const SizedBox(width: 8),
-            const Text(
-              'Activity Feed',
-              style: TextStyle(
+            Text(
+              l10n.activityFeed,
+              style: const TextStyle(
                     fontWeight: FontWeight.w800,
                 fontSize: 20,
                 color: Colors.white,
@@ -183,9 +185,9 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
               _loadUserActivities();
             }
           },
-          tabs: const [
-            Tab(text: 'Feed'),
-            Tab(text: 'Your Posts'),
+          tabs: [
+            Tab(text: l10n.feed),
+            Tab(text: l10n.yourPosts),
           ],
         ),
       ),
@@ -208,18 +210,18 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
   Widget _buildBody() {
     if (_isLoading) {
-      return const Center(
+      return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircularProgressIndicator(
+            const CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
               strokeWidth: 3,
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Text(
-              'Loading activities...',
-              style: TextStyle(
+              AppLocalizations.of(context).loadingActivities,
+              style: const TextStyle(
                 fontSize: 16,
                 color: Colors.white70,
                 fontWeight: FontWeight.w500,
@@ -270,6 +272,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -280,19 +283,19 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
             color: AppTheme.primaryOrange,
           ),
           const SizedBox(height: 24),
-          const Text(
-            'No activities yet',
-            style: TextStyle(
+          Text(
+            l10n.noActivitiesYet,
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Be the first to share something!\nConnect with friends to see their activities.',
+          Text(
+            l10n.beFirstToShare,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               color: Colors.white70,
             ),
@@ -316,9 +319,9 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
                 elevation: 0,
             ),
             icon: const Icon(Icons.add),
-            label: const Text(
-              'Create Activity',
-              style: TextStyle(
+            label: Text(
+              l10n.createActivity,
+              style: const TextStyle(
                 fontSize: 16,
                   fontWeight: FontWeight.w700,
                 ),
@@ -350,8 +353,8 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       // Error handled silently
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Failed to update like'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).failedToUpdateLike),
           backgroundColor: Colors.red,
         ),
       );
@@ -376,8 +379,8 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Comment added!'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).commentAdded),
           backgroundColor: Colors.green,
         ),
       );
@@ -386,8 +389,8 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       // Error handled silently
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Failed to add comment'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).failedToAddComment),
           backgroundColor: Colors.red,
         ),
       );
@@ -395,9 +398,10 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
   }
 
   void _handleShare(ActivityFeedItem activity) {
+    final l10n = AppLocalizations.of(context);
     final text = '${activity.userName}: ${activity.content}\n\n'
-        'Shared from Pregame World Cup 2026';
-    Share.share(text, subject: 'Pregame World Cup 2026');
+        '${l10n.sharedFromPregame}';
+    Share.share(text, subject: l10n.appTitle);
   }
 
   void _navigateToProfile(String userId) {

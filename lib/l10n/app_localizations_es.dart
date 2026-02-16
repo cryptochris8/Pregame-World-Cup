@@ -786,4 +786,621 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get refreshWidget => 'Actualizar Widget';
+
+  @override
+  String get worldCup2026Pass => 'Pase Copa del Mundo 2026';
+
+  @override
+  String get transactionHistory => 'Historial de Transacciones';
+
+  @override
+  String get checkingPurchaseStatus => 'Verificando estado de compra...';
+
+  @override
+  String passActivatedSuccessfully(String passName) {
+    return '¡$passName activado exitosamente!';
+  }
+
+  @override
+  String get pleaseSignInToPurchase => 'Inicia sesión para comprar';
+
+  @override
+  String passPurchasedSuccessfully(String passName) {
+    return '¡$passName comprado exitosamente!';
+  }
+
+  @override
+  String get completePurchaseInBrowser =>
+      'Completa tu compra en el navegador. Tu pase se activará automáticamente.';
+
+  @override
+  String get purchaseFailedRetry => 'La compra falló. Intenta de nuevo.';
+
+  @override
+  String get pleaseSignInToRestore => 'Inicia sesión para restaurar compras';
+
+  @override
+  String passRestoredSuccessfully(String passName) {
+    return '¡$passName restaurado exitosamente!';
+  }
+
+  @override
+  String get noPreviousPurchases => 'No se encontraron compras anteriores';
+
+  @override
+  String get failedToRestorePurchases => 'Error al restaurar compras';
+
+  @override
+  String get matchSchedulesResults => 'Calendario y resultados de partidos';
+
+  @override
+  String get venueDiscovery => 'Descubrir sedes';
+
+  @override
+  String get basicNotifications => 'Notificaciones básicas';
+
+  @override
+  String get followTeams => 'Seguir equipos';
+
+  @override
+  String get adFreeExperience => 'Experiencia sin anuncios';
+
+  @override
+  String get advancedStats => 'Estadísticas avanzadas';
+
+  @override
+  String get customAlerts => 'Alertas personalizadas';
+
+  @override
+  String get everythingInFree => 'Todo lo del plan Gratis';
+
+  @override
+  String get advancedMatchStats => 'Estadísticas avanzadas de partidos';
+
+  @override
+  String get customMatchAlerts => 'Alertas personalizadas de partidos';
+
+  @override
+  String get advancedSocialFeatures => 'Funciones sociales avanzadas';
+
+  @override
+  String get exclusiveContent => 'Contenido exclusivo';
+
+  @override
+  String get aiMatchInsights => 'Análisis IA de partidos';
+
+  @override
+  String get everythingInFanPass => 'Todo lo del Fan Pass';
+
+  @override
+  String get priorityFeatures => 'Funciones prioritarias';
+
+  @override
+  String get downloadableContent => 'Contenido descargable';
+
+  @override
+  String get earlyAccessFeatures => 'Acceso anticipado a nuevas funciones';
+
+  @override
+  String get welcomeBack => 'Bienvenido de Nuevo';
+
+  @override
+  String get joinPregame => 'Únete a Pregame';
+
+  @override
+  String get email => 'Correo electrónico';
+
+  @override
+  String get enterYourEmail => 'Ingresa tu correo';
+
+  @override
+  String get password => 'Contraseña';
+
+  @override
+  String get enterYourPassword => 'Ingresa tu contraseña';
+
+  @override
+  String get pleaseEnterValidEmail => 'Ingresa un correo válido';
+
+  @override
+  String get passwordMinLength =>
+      'La contraseña debe tener al menos 6 caracteres';
+
+  @override
+  String get signIn => 'Iniciar Sesión';
+
+  @override
+  String get createAccount => 'Crear Cuenta';
+
+  @override
+  String get dontHaveAccount => '¿No tienes cuenta? ';
+
+  @override
+  String get alreadyHaveAccount => '¿Ya tienes cuenta? ';
+
+  @override
+  String get signUp => 'Registrarse';
+
+  @override
+  String get whereSportsFansConnect =>
+      'Donde los Fanáticos del Deporte se Conectan';
+
+  @override
+  String get verifyYourEmail => 'Verifica tu Correo';
+
+  @override
+  String get verificationLinkSent =>
+      'Hemos enviado un enlace de verificación a:';
+
+  @override
+  String get clickLinkToVerify =>
+      'Haz clic en el enlace de tu correo para verificar tu cuenta.';
+
+  @override
+  String get checkSpamFolder => 'Revisa tu carpeta de spam si no lo ves.';
+
+  @override
+  String get iveVerifiedMyEmail => 'Ya Verifiqué mi Correo';
+
+  @override
+  String get resendEmail => 'Reenviar Correo';
+
+  @override
+  String resendInSeconds(int seconds) {
+    return 'Reenviar en ${seconds}s';
+  }
+
+  @override
+  String get emailVerifiedRedirecting => '¡Correo verificado! Redirigiendo...';
+
+  @override
+  String get emailNotVerifiedYet =>
+      'Correo aún no verificado. Revisa tu bandeja.';
+
+  @override
+  String get verificationEmailSent => '¡Correo de verificación enviado!';
+
+  @override
+  String failedToResend(String error) {
+    return 'Error al reenviar: $error';
+  }
+
+  @override
+  String get wrongEmail => '¿Correo incorrecto? ';
+
+  @override
+  String get autoCheckingVerification =>
+      'Verificando estado automáticamente...';
+
+  @override
+  String get worldCup => 'Copa del Mundo';
+
+  @override
+  String get fanPass => 'Fan Pass';
+
+  @override
+  String get leaderboards => 'Clasificaciones';
+
+  @override
+  String get comparePlayers => 'Comparar Jugadores';
+
+  @override
+  String get matchSchedule => 'Calendario de Partidos';
+
+  @override
+  String get liveNow => 'EN VIVO AHORA';
+
+  @override
+  String get liveScores => 'Marcadores en Vivo';
+
+  @override
+  String get schedule => 'Calendario';
+
+  @override
+  String get fifaWorldCup2026 => 'Copa del Mundo FIFA 2026';
+
+  @override
+  String get liveEspnData => 'DATOS EN VIVO ESPN';
+
+  @override
+  String get showAllMatches => 'Mostrar Todos los Partidos';
+
+  @override
+  String get showFavoriteTeamsOnly => 'Mostrar Solo Equipos Favoritos';
+
+  @override
+  String get showLiveGamesOnly => 'Mostrar Solo Juegos en Vivo';
+
+  @override
+  String get noLiveGamesAvailable => 'No Hay Juegos en Vivo Actualmente';
+
+  @override
+  String get worldCupMatchesDaily =>
+      'Los partidos de la Copa del Mundo se juegan diariamente durante el torneo.\n¡Vuelve durante la hora del partido para ver marcadores en vivo!';
+
+  @override
+  String get failedToLoadGames => 'Error al Cargar Juegos';
+
+  @override
+  String get tapToReloadSchedule => 'Toca abajo para recargar el calendario';
+
+  @override
+  String get reloadSchedule => 'Recargar Calendario';
+
+  @override
+  String get noGamesFound => 'No se encontraron juegos';
+
+  @override
+  String get noGamesForFavorites => 'No hay juegos para tus equipos favoritos';
+
+  @override
+  String get noLiveGames => 'No hay juegos en vivo en este momento';
+
+  @override
+  String get setFavoriteTeamsPrompt =>
+      'Configura tus equipos favoritos para ver juegos personalizados';
+
+  @override
+  String get setFavoriteTeams => 'Configurar Equipos Favoritos';
+
+  @override
+  String get noUpcomingGames => 'No Hay Próximos Juegos';
+
+  @override
+  String get socialFeaturesAvailable =>
+      'Las funciones sociales estarán disponibles para próximos juegos';
+
+  @override
+  String get activityFeed => 'Actividad';
+
+  @override
+  String get feed => 'Muro';
+
+  @override
+  String get yourPosts => 'Tus Publicaciones';
+
+  @override
+  String get loadingActivities => 'Cargando actividades...';
+
+  @override
+  String get noActivitiesYet => 'Aún no hay actividades';
+
+  @override
+  String get beFirstToShare =>
+      '¡Sé el primero en compartir algo!\nConecta con amigos para ver sus actividades.';
+
+  @override
+  String get createActivity => 'Crear Actividad';
+
+  @override
+  String get failedToUpdateLike => 'Error al actualizar me gusta';
+
+  @override
+  String get commentAdded => '¡Comentario agregado!';
+
+  @override
+  String get failedToAddComment => 'Error al agregar comentario';
+
+  @override
+  String get viewInfo => 'Ver Información';
+
+  @override
+  String get muteNotifications => 'Silenciar Notificaciones';
+
+  @override
+  String get clearChatHistory => 'Borrar Historial del Chat';
+
+  @override
+  String get noMessagesYet => 'Aún no hay mensajes';
+
+  @override
+  String get startConversation => '¡Inicia la conversación!';
+
+  @override
+  String members(int count) {
+    return '$count miembros';
+  }
+
+  @override
+  String get directChat => 'Chat Directo';
+
+  @override
+  String get groupChat => 'Chat Grupal';
+
+  @override
+  String get teamChat => 'Chat de Equipo';
+
+  @override
+  String get unblock => 'Desbloquear';
+
+  @override
+  String get unblockUser => 'Desbloquear Usuario';
+
+  @override
+  String get unblockUserConfirm =>
+      '¿Estás seguro de que quieres desbloquear a este usuario? Podrá enviarte mensajes de nuevo.';
+
+  @override
+  String get userUnblocked => 'Usuario desbloqueado';
+
+  @override
+  String failedToUnblock(String error) {
+    return 'Error al desbloquear usuario: $error';
+  }
+
+  @override
+  String get videoCallingComingSoon => '¡Videollamadas próximamente!';
+
+  @override
+  String get voiceCallingComingSoon => '¡Llamadas de voz próximamente!';
+
+  @override
+  String foundMessageFrom(String sender) {
+    return 'Mensaje encontrado de $sender';
+  }
+
+  @override
+  String get chatMuted => 'Chat silenciado';
+
+  @override
+  String get chatUnmuted => 'Chat con sonido';
+
+  @override
+  String get failedToUpdateMute =>
+      'Error al actualizar configuración de silencio';
+
+  @override
+  String get chatHistoryCleared => 'Historial del chat borrado';
+
+  @override
+  String get failedToClearHistory => 'Error al borrar historial del chat';
+
+  @override
+  String get youLeftChat => 'Saliste del chat';
+
+  @override
+  String get failedToLeaveChat => 'Error al salir del chat';
+
+  @override
+  String get promoteAdminFirst =>
+      'Debes promover otro administrador antes de salir';
+
+  @override
+  String get muteNotificationsTitle => 'Silenciar notificaciones';
+
+  @override
+  String get oneHour => '1 hora';
+
+  @override
+  String get eightHours => '8 horas';
+
+  @override
+  String get oneDay => '1 día';
+
+  @override
+  String get oneWeek => '1 semana';
+
+  @override
+  String get forever => 'Para siempre';
+
+  @override
+  String get clearChatHistoryConfirm =>
+      '¿Estás seguro de que quieres borrar todos los mensajes de este chat? Esta acción no se puede deshacer.';
+
+  @override
+  String get leaveChatConfirm =>
+      '¿Estás seguro de que quieres salir de este chat?';
+
+  @override
+  String get unableToSendMessages => 'No se pueden enviar mensajes';
+
+  @override
+  String failedToLoadMessages(String error) {
+    return 'Error al cargar mensajes: $error';
+  }
+
+  @override
+  String failedToAddReaction(String error) {
+    return 'Error al agregar reacción: $error';
+  }
+
+  @override
+  String get alerts => 'Alertas';
+
+  @override
+  String get friends => 'Amigos';
+
+  @override
+  String get messages => 'Mensajes';
+
+  @override
+  String get notificationSettings => 'Configuración de Notificaciones';
+
+  @override
+  String get resetLabel => 'Restablecer';
+
+  @override
+  String get settingsResetToDefaults => 'Configuración restablecida';
+
+  @override
+  String get pushNotifications => 'Notificaciones Push';
+
+  @override
+  String get youWillReceiveNotifications => 'Recibirás notificaciones';
+
+  @override
+  String get allNotificationsDisabled =>
+      'Todas las notificaciones están desactivadas';
+
+  @override
+  String get quietHours => 'Horas de Silencio';
+
+  @override
+  String get enableQuietHours => 'Activar Horas de Silencio';
+
+  @override
+  String noNotificationsFromTo(String start, String end) {
+    return 'Sin notificaciones de $start a $end';
+  }
+
+  @override
+  String get receiveNotificationsAnytime =>
+      'Recibir notificaciones en cualquier momento';
+
+  @override
+  String get startTime => 'Hora de Inicio';
+
+  @override
+  String get endTime => 'Hora de Fin';
+
+  @override
+  String get getRemindedBeforeMatches =>
+      'Recibe recordatorios antes de los partidos';
+
+  @override
+  String get defaultReminderTime => 'Tiempo de Recordatorio Predeterminado';
+
+  @override
+  String get favoriteTeamMatchesLabel => 'Partidos de Equipos Favoritos';
+
+  @override
+  String get favoriteTeamMatchesDesc =>
+      'Recibe notificaciones cuando juegan tus equipos favoritos';
+
+  @override
+  String get dayBeforeNotification => 'Notificación del Día Anterior';
+
+  @override
+  String get dayBeforeNotificationDesc =>
+      'Recuérdame el día antes de que juegue mi equipo';
+
+  @override
+  String get liveMatchAlerts => 'Alertas de Partidos en Vivo';
+
+  @override
+  String get liveMatchAlertsDesc =>
+      'Recibe notificaciones instantáneas durante los partidos en vivo';
+
+  @override
+  String get whenGoalScored => 'Cuando se anota un gol';
+
+  @override
+  String get matchStart => 'Inicio del Partido';
+
+  @override
+  String get whenMatchKicksOff => 'Cuando comienza un partido';
+
+  @override
+  String get halftimeLabel => 'Medio Tiempo';
+
+  @override
+  String get halftimeScoreUpdates =>
+      'Actualizaciones del marcador en medio tiempo';
+
+  @override
+  String get matchEnd => 'Fin del Partido';
+
+  @override
+  String get finalScoreNotifications => 'Notificaciones del marcador final';
+
+  @override
+  String get redCards => 'Tarjetas Rojas';
+
+  @override
+  String get playerSentOff => 'Jugador expulsado';
+
+  @override
+  String get penaltyKicksAwarded => 'Penales otorgados';
+
+  @override
+  String get watchPartyInvites => 'Invitaciones a Fiestas';
+
+  @override
+  String get watchPartyInvitesDesc =>
+      'Cuando alguien te invita a una fiesta de visualización';
+
+  @override
+  String get watchPartyReminders => 'Recordatorios de Fiestas';
+
+  @override
+  String get watchPartyRemindersDesc =>
+      'Recuérdame antes de las fiestas a las que me uní';
+
+  @override
+  String get reminderTime => 'Hora del Recordatorio';
+
+  @override
+  String get watchPartyUpdates => 'Actualizaciones de Fiestas';
+
+  @override
+  String get watchPartyUpdatesDesc =>
+      'Mensajes del anfitrión y cambios de la fiesta';
+
+  @override
+  String get social => 'Social';
+
+  @override
+  String get friendRequests => 'Solicitudes de Amistad';
+
+  @override
+  String get friendRequestsDesc =>
+      'Cuando alguien te envía una solicitud de amistad';
+
+  @override
+  String get messagesNotification => 'Mensajes';
+
+  @override
+  String get messagesNotificationDesc => 'Nuevos mensajes directos y grupales';
+
+  @override
+  String get mentionsLabel => 'Menciones';
+
+  @override
+  String get mentionsDesc => 'Cuando alguien te menciona';
+
+  @override
+  String get predictionsAndLeaderboard => 'Predicciones y Clasificación';
+
+  @override
+  String get predictionResults => 'Resultados de Predicciones';
+
+  @override
+  String get predictionResultsDesc => 'Cómo funcionaron tus predicciones';
+
+  @override
+  String get leaderboardUpdates => 'Actualizaciones de Clasificación';
+
+  @override
+  String get leaderboardUpdatesDesc => 'Cambios en tu ranking';
+
+  @override
+  String get selectReminderTime => 'Seleccionar Hora de Recordatorio';
+
+  @override
+  String minutesBefore(int minutes) {
+    return '$minutes minutos antes';
+  }
+
+  @override
+  String get worldCup2026Title => 'Copa del Mundo 2026';
+
+  @override
+  String get gameDayComingSoon => 'El dia del partido se acerca!';
+
+  @override
+  String get unknownState => 'Estado desconocido';
+
+  @override
+  String noGamesForWeek(int year, int week) {
+    return 'No se encontraron partidos para $year Semana $week';
+  }
+
+  @override
+  String testDataWeek(int year, int week) {
+    return 'Datos de Prueba - $year Semana $week';
+  }
+
+  @override
+  String get sharedFromPregame =>
+      'Compartido desde Pregame Copa del Mundo 2026';
 }

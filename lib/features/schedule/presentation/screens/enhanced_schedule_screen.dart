@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/schedule_bloc.dart';
 import '../../domain/entities/game_schedule.dart';
 import '../widgets/live_score_card.dart';
@@ -166,6 +167,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       backgroundColor: Colors.transparent, // Transparent to show main gradient
       appBar: AppBar(
@@ -183,9 +185,9 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               ),
             ),
             const SizedBox(width: 12),
-            const Text(
-              'World Cup 2026',
-              style: TextStyle(
+            Text(
+              l10n.worldCup2026Title,
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -206,7 +208,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               // Always toggle the favorites filter
               _toggleFavoritesFilter();
             },
-            tooltip: _showFavoritesOnly ? 'Show All Matches' : 'Show Favorite Teams Only',
+            tooltip: _showFavoritesOnly ? l10n.showAllMatches : l10n.showFavoriteTeamsOnly,
           ),
           // Live games filter toggle
           IconButton(
@@ -219,7 +221,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 _showLiveOnly = !_showLiveOnly;
               });
             },
-            tooltip: 'Show Live Games Only',
+            tooltip: l10n.showLiveGamesOnly,
           ),
           // More options menu
           PopupMenuButton<String>(
@@ -242,23 +244,23 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               }
             },
             itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-              const PopupMenuItem<String>(
+              PopupMenuItem<String>(
                 value: 'teams',
                 child: Row(
                   children: [
-                    Icon(Icons.favorite, color: Colors.white),
-                    SizedBox(width: 8),
-                    Text('Favorite Teams', style: TextStyle(color: Colors.white)),
+                    const Icon(Icons.favorite, color: Colors.white),
+                    const SizedBox(width: 8),
+                    Text(l10n.favoriteTeams, style: const TextStyle(color: Colors.white)),
                   ],
                 ),
               ),
-              const PopupMenuItem<String>(
+              PopupMenuItem<String>(
                 value: 'refresh',
                 child: Row(
                   children: [
-                    Icon(Icons.refresh, color: Colors.white),
-                    SizedBox(width: 8),
-                    Text('Refresh', style: TextStyle(color: Colors.white)),
+                    const Icon(Icons.refresh, color: Colors.white),
+                    const SizedBox(width: 8),
+                    Text(l10n.refresh, style: const TextStyle(color: Colors.white)),
                   ],
                 ),
               ),
@@ -291,14 +293,14 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
                 ),
-              tabs: const [
-                Tab(text: 'Live Scores'),
-                Tab(text: 'Schedule'),
-                Tab(text: 'Social'),
+              tabs: [
+                Tab(text: l10n.liveScores),
+                Tab(text: l10n.schedule),
+                Tab(text: l10n.social),
               ],
             ),
           ),
-          
+
           // 2025 Season Badge (no year selector - locked to 2025)
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -312,9 +314,9 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               children: [
                 const Icon(Icons.sports_soccer, color: Colors.orange, size: 24),
                 const SizedBox(width: 12),
-                const Text(
-                  'FIFA World Cup 2026',
-                  style: TextStyle(
+                Text(
+                  l10n.fifaWorldCup2026,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -328,9 +330,9 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.orange, width: 1),
                   ),
-                  child: const Text(
-                    'LIVE ESPN DATA',
-                    style: TextStyle(
+                  child: Text(
+                    l10n.liveEspnData,
+                    style: const TextStyle(
                       color: Colors.orange,
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
@@ -386,6 +388,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           // Live games filtered for display
 
           if (liveGames.isEmpty) {
+            final l10n = AppLocalizations.of(context);
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -397,15 +400,15 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'No Live Games Currently Available',
+                    l10n.noLiveGamesAvailable,
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!',
-                    style: TextStyle(color: Colors.white70),
+                  Text(
+                    l10n.worldCupMatchesDaily,
+                    style: const TextStyle(color: Colors.white70),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),
@@ -416,9 +419,9 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(color: Colors.orange.withValues(alpha:0.3)),
                     ),
-                    child: const Text(
-                      '🏈 Game day is coming soon!',
-                      style: TextStyle(
+                    child: Text(
+                      l10n.gameDayComingSoon,
+                      style: const TextStyle(
                         color: Colors.orange,
                         fontWeight: FontWeight.w600,
                       ),
@@ -477,6 +480,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   }
 
   Widget _buildErrorWidget(String message) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -488,7 +492,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           ),
           const SizedBox(height: 16),
           Text(
-            'Failed to Load Games',
+            l10n.failedToLoadGames,
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Colors.white,
             ),
@@ -507,7 +511,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
             style: ElevatedButton.styleFrom(
               backgroundColor: ThemeHelper.favoriteColor,
             ),
-            child: const Text('Retry'),
+            child: Text(l10n.retry),
           ),
         ],
       ),
@@ -552,7 +556,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           padding: const EdgeInsets.all(8),
           color: Colors.orange.withValues(alpha:0.2),
           child: Text(
-            'Test Data - ${state.year} Week ${state.week}',
+            AppLocalizations.of(context).testDataWeek(state.year, state.week),
             style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
@@ -576,6 +580,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   }
 
   Widget _buildUnknownStateWidget() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -587,15 +592,15 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           ),
           const SizedBox(height: 16),
           Text(
-            'Unknown state',
+            l10n.unknownState,
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Colors.white,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Tap below to reload the schedule',
-            style: TextStyle(color: Colors.white70),
+          Text(
+            l10n.tapToReloadSchedule,
+            style: const TextStyle(color: Colors.white70),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 16),
@@ -606,7 +611,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
             style: ElevatedButton.styleFrom(
               backgroundColor: ThemeHelper.favoriteColor,
             ),
-            child: const Text('Reload Schedule'),
+            child: Text(l10n.reloadSchedule),
           ),
         ],
       ),
@@ -623,11 +628,12 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   }
 
   Widget _buildEmptyGamesWidget() {
-    String emptyMessage = 'No games found';
+    final l10n = AppLocalizations.of(context);
+    String emptyMessage = l10n.noGamesFound;
     if (_showFavoritesOnly && _favoriteTeams.isNotEmpty) {
-      emptyMessage = 'No games for your favorite teams';
+      emptyMessage = l10n.noGamesForFavorites;
     } else if (_showLiveOnly) {
-      emptyMessage = 'No live games at the moment';
+      emptyMessage = l10n.noLiveGames;
     }
 
     return Center(
@@ -648,9 +654,9 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           ),
           if (_favoriteTeams.isEmpty && _showFavoritesOnly) ...[
             const SizedBox(height: 8),
-            const Text(
-              'Set your favorite teams to see personalized games',
-              style: TextStyle(color: Colors.white70),
+            Text(
+              l10n.setFavoriteTeamsPrompt,
+              style: const TextStyle(color: Colors.white70),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
@@ -667,7 +673,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               style: ElevatedButton.styleFrom(
                 backgroundColor: ThemeHelper.favoriteColor,
               ),
-              child: const Text('Set Favorite Teams'),
+              child: Text(l10n.setFavoriteTeams),
             ),
           ],
         ],
@@ -687,7 +693,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           ),
           const SizedBox(height: 16),
           Text(
-            'No games found for $year Week $week',
+            AppLocalizations.of(context).noGamesForWeek(year, week),
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Colors.white,
             ),
@@ -715,6 +721,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           ).toList();
 
           if (upcomingGames.isEmpty) {
+            final l10n = AppLocalizations.of(context);
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -726,15 +733,15 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'No Upcoming Games',
+                    l10n.noUpcomingGames,
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'Social features will be available for upcoming games',
-                    style: TextStyle(color: Colors.white70),
+                  Text(
+                    l10n.socialFeaturesAvailable,
+                    style: const TextStyle(color: Colors.white70),
                     textAlign: TextAlign.center,
                   ),
                 ],

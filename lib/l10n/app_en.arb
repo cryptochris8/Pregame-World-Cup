@@ -1074,5 +1074,843 @@
   "refreshWidget": "Refresh Widget",
   "@refreshWidget": {
     "description": "Refresh widget button"
+  },
+
+  "worldCup2026Pass": "World Cup 2026 Pass",
+  "@worldCup2026Pass": {
+    "description": "Fan pass screen title"
+  },
+  "transactionHistory": "Transaction History",
+  "@transactionHistory": {
+    "description": "Transaction history tooltip"
+  },
+  "checkingPurchaseStatus": "Checking purchase status...",
+  "@checkingPurchaseStatus": {
+    "description": "Snackbar when checking purchase after browser checkout"
+  },
+  "passActivatedSuccessfully": "{passName} activated successfully!",
+  "@passActivatedSuccessfully": {
+    "description": "Success message when pass is activated",
+    "placeholders": {
+      "passName": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseSignInToPurchase": "Please sign in to purchase",
+  "@pleaseSignInToPurchase": {
+    "description": "Error when user not signed in for purchase"
+  },
+  "passPurchasedSuccessfully": "{passName} purchased successfully!",
+  "@passPurchasedSuccessfully": {
+    "description": "Success message after purchase",
+    "placeholders": {
+      "passName": {
+        "type": "String"
+      }
+    }
+  },
+  "completePurchaseInBrowser": "Complete your purchase in the browser. Your pass will activate automatically.",
+  "@completePurchaseInBrowser": {
+    "description": "Message when user needs to complete purchase in browser"
+  },
+  "purchaseFailedRetry": "Purchase failed. Please try again.",
+  "@purchaseFailedRetry": {
+    "description": "Error message when purchase fails"
+  },
+  "pleaseSignInToRestore": "Please sign in to restore purchases",
+  "@pleaseSignInToRestore": {
+    "description": "Error when user not signed in for restore"
+  },
+  "passRestoredSuccessfully": "{passName} restored successfully!",
+  "@passRestoredSuccessfully": {
+    "description": "Success message when pass is restored",
+    "placeholders": {
+      "passName": {
+        "type": "String"
+      }
+    }
+  },
+  "noPreviousPurchases": "No previous purchases found",
+  "@noPreviousPurchases": {
+    "description": "Message when no purchases to restore"
+  },
+  "failedToRestorePurchases": "Failed to restore purchases",
+  "@failedToRestorePurchases": {
+    "description": "Error restoring purchases"
+  },
+  "matchSchedulesResults": "Match schedules & results",
+  "@matchSchedulesResults": {
+    "description": "Free tier feature"
+  },
+  "venueDiscovery": "Venue discovery",
+  "@venueDiscovery": {
+    "description": "Free tier feature"
+  },
+  "basicNotifications": "Basic notifications",
+  "@basicNotifications": {
+    "description": "Free tier feature"
+  },
+  "followTeams": "Follow teams",
+  "@followTeams": {
+    "description": "Free tier feature"
+  },
+  "adFreeExperience": "Ad-free experience",
+  "@adFreeExperience": {
+    "description": "Premium feature"
+  },
+  "advancedStats": "Advanced stats",
+  "@advancedStats": {
+    "description": "Premium feature"
+  },
+  "customAlerts": "Custom alerts",
+  "@customAlerts": {
+    "description": "Premium feature"
+  },
+  "everythingInFree": "Everything in Free",
+  "@everythingInFree": {
+    "description": "Fan pass tier feature"
+  },
+  "advancedMatchStats": "Advanced match stats",
+  "@advancedMatchStats": {
+    "description": "Fan pass feature"
+  },
+  "customMatchAlerts": "Custom match alerts",
+  "@customMatchAlerts": {
+    "description": "Fan pass feature"
+  },
+  "advancedSocialFeatures": "Advanced social features",
+  "@advancedSocialFeatures": {
+    "description": "Fan pass feature"
+  },
+  "exclusiveContent": "Exclusive content",
+  "@exclusiveContent": {
+    "description": "Premium feature"
+  },
+  "aiMatchInsights": "AI match insights",
+  "@aiMatchInsights": {
+    "description": "Superfan feature"
+  },
+  "everythingInFanPass": "Everything in Fan Pass",
+  "@everythingInFanPass": {
+    "description": "Superfan tier feature"
+  },
+  "priorityFeatures": "Priority features",
+  "@priorityFeatures": {
+    "description": "Superfan feature"
+  },
+  "downloadableContent": "Downloadable content",
+  "@downloadableContent": {
+    "description": "Superfan feature"
+  },
+  "earlyAccessFeatures": "Early access to new features",
+  "@earlyAccessFeatures": {
+    "description": "Superfan feature"
+  },
+
+  "welcomeBack": "Welcome Back",
+  "@welcomeBack": {
+    "description": "Login screen title for returning users"
+  },
+  "joinPregame": "Join Pregame",
+  "@joinPregame": {
+    "description": "Login screen title for new users"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "enterYourEmail": "Enter your email",
+  "@enterYourEmail": {
+    "description": "Email field hint"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "enterYourPassword": "Enter your password",
+  "@enterYourPassword": {
+    "description": "Password field hint"
+  },
+  "pleaseEnterValidEmail": "Please enter a valid email",
+  "@pleaseEnterValidEmail": {
+    "description": "Email validation error"
+  },
+  "passwordMinLength": "Password must be at least 6 characters",
+  "@passwordMinLength": {
+    "description": "Password validation error"
+  },
+  "signIn": "Sign In",
+  "@signIn": {
+    "description": "Sign in button"
+  },
+  "createAccount": "Create Account",
+  "@createAccount": {
+    "description": "Create account button"
+  },
+  "dontHaveAccount": "Don't have an account? ",
+  "@dontHaveAccount": {
+    "description": "Prompt to sign up"
+  },
+  "alreadyHaveAccount": "Already have an account? ",
+  "@alreadyHaveAccount": {
+    "description": "Prompt to sign in"
+  },
+  "signUp": "Sign Up",
+  "@signUp": {
+    "description": "Sign up link"
+  },
+  "whereSportsFansConnect": "Where Sports Fans Connect",
+  "@whereSportsFansConnect": {
+    "description": "App tagline"
+  },
+
+  "verifyYourEmail": "Verify Your Email",
+  "@verifyYourEmail": {
+    "description": "Email verification screen title"
+  },
+  "verificationLinkSent": "We've sent a verification link to:",
+  "@verificationLinkSent": {
+    "description": "Verification email sent message"
+  },
+  "clickLinkToVerify": "Click the link in your email to verify your account.",
+  "@clickLinkToVerify": {
+    "description": "Instruction to click verification link"
+  },
+  "checkSpamFolder": "Check your spam folder if you don't see it.",
+  "@checkSpamFolder": {
+    "description": "Spam folder tip"
+  },
+  "iveVerifiedMyEmail": "I've Verified My Email",
+  "@iveVerifiedMyEmail": {
+    "description": "Manual verification check button"
+  },
+  "resendEmail": "Resend Email",
+  "@resendEmail": {
+    "description": "Resend verification email button"
+  },
+  "resendInSeconds": "Resend in {seconds}s",
+  "@resendInSeconds": {
+    "description": "Resend cooldown timer",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "emailVerifiedRedirecting": "Email verified! Redirecting...",
+  "@emailVerifiedRedirecting": {
+    "description": "Success message after email verification"
+  },
+  "emailNotVerifiedYet": "Email not verified yet. Please check your inbox.",
+  "@emailNotVerifiedYet": {
+    "description": "Message when email not yet verified"
+  },
+  "verificationEmailSent": "Verification email sent!",
+  "@verificationEmailSent": {
+    "description": "Confirmation after resending verification"
+  },
+  "failedToResend": "Failed to resend: {error}",
+  "@failedToResend": {
+    "description": "Error resending verification email",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "wrongEmail": "Wrong email? ",
+  "@wrongEmail": {
+    "description": "Prompt to sign out if wrong email"
+  },
+  "autoCheckingVerification": "Auto-checking verification status...",
+  "@autoCheckingVerification": {
+    "description": "Auto-check indicator text"
+  },
+
+  "worldCup": "World Cup",
+  "@worldCup": {
+    "description": "World Cup nav label"
+  },
+  "fanPass": "Fan Pass",
+  "@fanPass": {
+    "description": "Fan Pass button tooltip"
+  },
+  "leaderboards": "Leaderboards",
+  "@leaderboards": {
+    "description": "Leaderboards menu item"
+  },
+  "comparePlayers": "Compare Players",
+  "@comparePlayers": {
+    "description": "Compare players menu item"
+  },
+
+  "matchSchedule": "Match Schedule",
+  "@matchSchedule": {
+    "description": "Match schedule screen title"
+  },
+  "liveNow": "LIVE NOW",
+  "@liveNow": {
+    "description": "Live now banner label"
+  },
+
+  "liveScores": "Live Scores",
+  "@liveScores": {
+    "description": "Live scores tab"
+  },
+  "schedule": "Schedule",
+  "@schedule": {
+    "description": "Schedule tab"
+  },
+  "fifaWorldCup2026": "FIFA World Cup 2026",
+  "@fifaWorldCup2026": {
+    "description": "FIFA World Cup 2026 badge text"
+  },
+  "liveEspnData": "LIVE ESPN DATA",
+  "@liveEspnData": {
+    "description": "Live ESPN data badge"
+  },
+  "showAllMatches": "Show All Matches",
+  "@showAllMatches": {
+    "description": "Tooltip for showing all matches"
+  },
+  "showFavoriteTeamsOnly": "Show Favorite Teams Only",
+  "@showFavoriteTeamsOnly": {
+    "description": "Tooltip for favorite teams filter"
+  },
+  "showLiveGamesOnly": "Show Live Games Only",
+  "@showLiveGamesOnly": {
+    "description": "Tooltip for live games filter"
+  },
+  "noLiveGamesAvailable": "No Live Games Currently Available",
+  "@noLiveGamesAvailable": {
+    "description": "Empty state for live scores tab"
+  },
+  "worldCupMatchesDaily": "World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!",
+  "@worldCupMatchesDaily": {
+    "description": "Info text when no live games"
+  },
+  "failedToLoadGames": "Failed to Load Games",
+  "@failedToLoadGames": {
+    "description": "Error title when games fail to load"
+  },
+  "tapToReloadSchedule": "Tap below to reload the schedule",
+  "@tapToReloadSchedule": {
+    "description": "Instruction to reload schedule"
+  },
+  "reloadSchedule": "Reload Schedule",
+  "@reloadSchedule": {
+    "description": "Reload schedule button"
+  },
+  "noGamesFound": "No games found",
+  "@noGamesFound": {
+    "description": "Empty state for schedule tab"
+  },
+  "noGamesForFavorites": "No games for your favorite teams",
+  "@noGamesForFavorites": {
+    "description": "Empty state when filtering by favorites"
+  },
+  "noLiveGames": "No live games at the moment",
+  "@noLiveGames": {
+    "description": "Empty state for live filter"
+  },
+  "setFavoriteTeamsPrompt": "Set your favorite teams to see personalized games",
+  "@setFavoriteTeamsPrompt": {
+    "description": "Prompt to set favorite teams"
+  },
+  "setFavoriteTeams": "Set Favorite Teams",
+  "@setFavoriteTeams": {
+    "description": "Set favorite teams button"
+  },
+  "noUpcomingGames": "No Upcoming Games",
+  "@noUpcomingGames": {
+    "description": "Empty state for social tab"
+  },
+  "socialFeaturesAvailable": "Social features will be available for upcoming games",
+  "@socialFeaturesAvailable": {
+    "description": "Info text for social tab empty state"
+  },
+
+  "activityFeed": "Activity Feed",
+  "@activityFeed": {
+    "description": "Activity feed screen title"
+  },
+  "feed": "Feed",
+  "@feed": {
+    "description": "Feed tab label"
+  },
+  "yourPosts": "Your Posts",
+  "@yourPosts": {
+    "description": "Your posts tab label"
+  },
+  "loadingActivities": "Loading activities...",
+  "@loadingActivities": {
+    "description": "Loading activities message"
+  },
+  "noActivitiesYet": "No activities yet",
+  "@noActivitiesYet": {
+    "description": "Empty state title for activity feed"
+  },
+  "beFirstToShare": "Be the first to share something!\nConnect with friends to see their activities.",
+  "@beFirstToShare": {
+    "description": "Empty state description for activity feed"
+  },
+  "createActivity": "Create Activity",
+  "@createActivity": {
+    "description": "Create activity button"
+  },
+  "failedToUpdateLike": "Failed to update like",
+  "@failedToUpdateLike": {
+    "description": "Error updating like"
+  },
+  "commentAdded": "Comment added!",
+  "@commentAdded": {
+    "description": "Comment added confirmation"
+  },
+  "failedToAddComment": "Failed to add comment",
+  "@failedToAddComment": {
+    "description": "Error adding comment"
+  },
+
+  "viewInfo": "View Info",
+  "@viewInfo": {
+    "description": "View chat info menu item"
+  },
+  "muteNotifications": "Mute Notifications",
+  "@muteNotifications": {
+    "description": "Mute notifications menu item"
+  },
+  "clearChatHistory": "Clear Chat History",
+  "@clearChatHistory": {
+    "description": "Clear chat history menu item"
+  },
+  "noMessagesYet": "No messages yet",
+  "@noMessagesYet": {
+    "description": "Empty state title for chat"
+  },
+  "startConversation": "Start the conversation!",
+  "@startConversation": {
+    "description": "Empty state description for chat"
+  },
+  "members": "{count} members",
+  "@members": {
+    "description": "Members count in chat",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "directChat": "Direct Chat",
+  "@directChat": {
+    "description": "Direct chat fallback name"
+  },
+  "groupChat": "Group Chat",
+  "@groupChat": {
+    "description": "Group chat fallback name"
+  },
+  "teamChat": "Team Chat",
+  "@teamChat": {
+    "description": "Team chat fallback name"
+  },
+  "unblock": "Unblock",
+  "@unblock": {
+    "description": "Unblock button"
+  },
+  "unblockUser": "Unblock User",
+  "@unblockUser": {
+    "description": "Unblock user dialog title"
+  },
+  "unblockUserConfirm": "Are you sure you want to unblock this user? They will be able to message you again.",
+  "@unblockUserConfirm": {
+    "description": "Unblock user confirmation message"
+  },
+  "userUnblocked": "User unblocked",
+  "@userUnblocked": {
+    "description": "User unblocked confirmation"
+  },
+  "failedToUnblock": "Failed to unblock user: {error}",
+  "@failedToUnblock": {
+    "description": "Failed to unblock error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "videoCallingComingSoon": "Video calling coming soon!",
+  "@videoCallingComingSoon": {
+    "description": "Video calling coming soon message"
+  },
+  "voiceCallingComingSoon": "Voice calling coming soon!",
+  "@voiceCallingComingSoon": {
+    "description": "Voice calling coming soon message"
+  },
+  "foundMessageFrom": "Found message from {sender}",
+  "@foundMessageFrom": {
+    "description": "Message found in search",
+    "placeholders": {
+      "sender": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMuted": "Chat muted",
+  "@chatMuted": {
+    "description": "Chat muted confirmation"
+  },
+  "chatUnmuted": "Chat unmuted",
+  "@chatUnmuted": {
+    "description": "Chat unmuted confirmation"
+  },
+  "failedToUpdateMute": "Failed to update mute settings",
+  "@failedToUpdateMute": {
+    "description": "Failed to update mute settings error"
+  },
+  "chatHistoryCleared": "Chat history cleared",
+  "@chatHistoryCleared": {
+    "description": "Chat history cleared confirmation"
+  },
+  "failedToClearHistory": "Failed to clear chat history",
+  "@failedToClearHistory": {
+    "description": "Failed to clear chat history error"
+  },
+  "youLeftChat": "You left the chat",
+  "@youLeftChat": {
+    "description": "Left chat confirmation"
+  },
+  "failedToLeaveChat": "Failed to leave chat",
+  "@failedToLeaveChat": {
+    "description": "Failed to leave chat error"
+  },
+  "promoteAdminFirst": "You must promote another admin before leaving",
+  "@promoteAdminFirst": {
+    "description": "Must promote admin before leaving"
+  },
+  "muteNotificationsTitle": "Mute notifications",
+  "@muteNotificationsTitle": {
+    "description": "Mute duration dialog title"
+  },
+  "oneHour": "1 hour",
+  "@oneHour": {
+    "description": "1 hour mute option"
+  },
+  "eightHours": "8 hours",
+  "@eightHours": {
+    "description": "8 hours mute option"
+  },
+  "oneDay": "1 day",
+  "@oneDay": {
+    "description": "1 day mute option"
+  },
+  "oneWeek": "1 week",
+  "@oneWeek": {
+    "description": "1 week mute option"
+  },
+  "forever": "Forever",
+  "@forever": {
+    "description": "Forever mute option"
+  },
+  "clearChatHistoryConfirm": "Are you sure you want to clear all messages in this chat? This action cannot be undone.",
+  "@clearChatHistoryConfirm": {
+    "description": "Clear chat history confirmation message"
+  },
+  "leaveChatConfirm": "Are you sure you want to leave this chat?",
+  "@leaveChatConfirm": {
+    "description": "Leave chat confirmation message"
+  },
+  "unableToSendMessages": "Unable to send messages",
+  "@unableToSendMessages": {
+    "description": "Blocked banner fallback text"
+  },
+  "failedToLoadMessages": "Failed to load messages: {error}",
+  "@failedToLoadMessages": {
+    "description": "Error loading chat messages",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToAddReaction": "Failed to add reaction: {error}",
+  "@failedToAddReaction": {
+    "description": "Error adding reaction",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "alerts": "Alerts",
+  "@alerts": {
+    "description": "Alerts nav tab label"
+  },
+  "friends": "Friends",
+  "@friends": {
+    "description": "Friends nav tab label"
+  },
+  "messages": "Messages",
+  "@messages": {
+    "description": "Messages nav tab label"
+  },
+
+  "notificationSettings": "Notification Settings",
+  "@notificationSettings": {
+    "description": "Notification settings screen title"
+  },
+  "resetLabel": "Reset",
+  "@resetLabel": {
+    "description": "Reset button label"
+  },
+  "settingsResetToDefaults": "Settings reset to defaults",
+  "@settingsResetToDefaults": {
+    "description": "Settings reset confirmation"
+  },
+  "pushNotifications": "Push Notifications",
+  "@pushNotifications": {
+    "description": "Push notifications master switch title"
+  },
+  "youWillReceiveNotifications": "You will receive notifications",
+  "@youWillReceiveNotifications": {
+    "description": "Notifications enabled subtitle"
+  },
+  "allNotificationsDisabled": "All notifications are disabled",
+  "@allNotificationsDisabled": {
+    "description": "Notifications disabled subtitle"
+  },
+  "quietHours": "Quiet Hours",
+  "@quietHours": {
+    "description": "Quiet hours section title"
+  },
+  "enableQuietHours": "Enable Quiet Hours",
+  "@enableQuietHours": {
+    "description": "Enable quiet hours toggle"
+  },
+  "noNotificationsFromTo": "No notifications from {start} to {end}",
+  "@noNotificationsFromTo": {
+    "description": "Quiet hours enabled subtitle",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "receiveNotificationsAnytime": "Receive notifications anytime",
+  "@receiveNotificationsAnytime": {
+    "description": "Quiet hours disabled subtitle"
+  },
+  "startTime": "Start Time",
+  "@startTime": {
+    "description": "Quiet hours start time label"
+  },
+  "endTime": "End Time",
+  "@endTime": {
+    "description": "Quiet hours end time label"
+  },
+  "getRemindedBeforeMatches": "Get reminded before matches start",
+  "@getRemindedBeforeMatches": {
+    "description": "Match reminders subtitle"
+  },
+  "defaultReminderTime": "Default Reminder Time",
+  "@defaultReminderTime": {
+    "description": "Default reminder time label"
+  },
+  "favoriteTeamMatchesLabel": "Favorite Team Matches",
+  "@favoriteTeamMatchesLabel": {
+    "description": "Favorite team matches toggle"
+  },
+  "favoriteTeamMatchesDesc": "Get notified when your favorite teams play",
+  "@favoriteTeamMatchesDesc": {
+    "description": "Favorite team matches description"
+  },
+  "dayBeforeNotification": "Day Before Notification",
+  "@dayBeforeNotification": {
+    "description": "Day before notification toggle"
+  },
+  "dayBeforeNotificationDesc": "Remind me the day before my team plays",
+  "@dayBeforeNotificationDesc": {
+    "description": "Day before notification description"
+  },
+  "liveMatchAlerts": "Live Match Alerts",
+  "@liveMatchAlerts": {
+    "description": "Live match alerts section title"
+  },
+  "liveMatchAlertsDesc": "Get instant notifications during live matches",
+  "@liveMatchAlertsDesc": {
+    "description": "Live match alerts section description"
+  },
+  "whenGoalScored": "When a goal is scored",
+  "@whenGoalScored": {
+    "description": "Goal alerts subtitle"
+  },
+  "matchStart": "Match Start",
+  "@matchStart": {
+    "description": "Match start toggle"
+  },
+  "whenMatchKicksOff": "When a match kicks off",
+  "@whenMatchKicksOff": {
+    "description": "Match start subtitle"
+  },
+  "halftimeLabel": "Halftime",
+  "@halftimeLabel": {
+    "description": "Halftime toggle"
+  },
+  "halftimeScoreUpdates": "Halftime score updates",
+  "@halftimeScoreUpdates": {
+    "description": "Halftime subtitle"
+  },
+  "matchEnd": "Match End",
+  "@matchEnd": {
+    "description": "Match end toggle"
+  },
+  "finalScoreNotifications": "Final score notifications",
+  "@finalScoreNotifications": {
+    "description": "Match end subtitle"
+  },
+  "redCards": "Red Cards",
+  "@redCards": {
+    "description": "Red cards toggle"
+  },
+  "playerSentOff": "Player sent off",
+  "@playerSentOff": {
+    "description": "Red cards subtitle"
+  },
+  "penaltyKicksAwarded": "Penalty kicks awarded",
+  "@penaltyKicksAwarded": {
+    "description": "Penalties subtitle"
+  },
+  "watchPartyInvites": "Watch Party Invites",
+  "@watchPartyInvites": {
+    "description": "Watch party invites toggle"
+  },
+  "watchPartyInvitesDesc": "When someone invites you to a watch party",
+  "@watchPartyInvitesDesc": {
+    "description": "Watch party invites description"
+  },
+  "watchPartyReminders": "Watch Party Reminders",
+  "@watchPartyReminders": {
+    "description": "Watch party reminders toggle"
+  },
+  "watchPartyRemindersDesc": "Remind me before watch parties I joined",
+  "@watchPartyRemindersDesc": {
+    "description": "Watch party reminders description"
+  },
+  "reminderTime": "Reminder Time",
+  "@reminderTime": {
+    "description": "Reminder time label"
+  },
+  "watchPartyUpdates": "Watch Party Updates",
+  "@watchPartyUpdates": {
+    "description": "Watch party updates toggle"
+  },
+  "watchPartyUpdatesDesc": "Host messages and party changes",
+  "@watchPartyUpdatesDesc": {
+    "description": "Watch party updates description"
+  },
+  "social": "Social",
+  "@social": {
+    "description": "Social section title"
+  },
+  "friendRequests": "Friend Requests",
+  "@friendRequests": {
+    "description": "Friend requests toggle"
+  },
+  "friendRequestsDesc": "When someone sends you a friend request",
+  "@friendRequestsDesc": {
+    "description": "Friend requests description"
+  },
+  "messagesNotification": "Messages",
+  "@messagesNotification": {
+    "description": "Messages notification toggle"
+  },
+  "messagesNotificationDesc": "New direct and group messages",
+  "@messagesNotificationDesc": {
+    "description": "Messages notification description"
+  },
+  "mentionsLabel": "Mentions",
+  "@mentionsLabel": {
+    "description": "Mentions toggle"
+  },
+  "mentionsDesc": "When someone mentions you",
+  "@mentionsDesc": {
+    "description": "Mentions description"
+  },
+  "predictionsAndLeaderboard": "Predictions & Leaderboard",
+  "@predictionsAndLeaderboard": {
+    "description": "Predictions and leaderboard section title"
+  },
+  "predictionResults": "Prediction Results",
+  "@predictionResults": {
+    "description": "Prediction results toggle"
+  },
+  "predictionResultsDesc": "How your predictions performed",
+  "@predictionResultsDesc": {
+    "description": "Prediction results description"
+  },
+  "leaderboardUpdates": "Leaderboard Updates",
+  "@leaderboardUpdates": {
+    "description": "Leaderboard updates toggle"
+  },
+  "leaderboardUpdatesDesc": "Your ranking changes",
+  "@leaderboardUpdatesDesc": {
+    "description": "Leaderboard updates description"
+  },
+  "selectReminderTime": "Select Reminder Time",
+  "@selectReminderTime": {
+    "description": "Reminder time picker title"
+  },
+  "minutesBefore": "{minutes} minutes before",
+  "@minutesBefore": {
+    "description": "Minutes before reminder",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+
+  "worldCup2026Title": "World Cup 2026",
+  "@worldCup2026Title": {
+    "description": "World Cup 2026 app bar title"
+  },
+  "gameDayComingSoon": "Game day is coming soon!",
+  "@gameDayComingSoon": {
+    "description": "Message when no live games but tournament coming"
+  },
+  "unknownState": "Unknown state",
+  "@unknownState": {
+    "description": "Unknown state error title"
+  },
+  "noGamesForWeek": "No games found for {year} Week {week}",
+  "@noGamesForWeek": {
+    "description": "Empty state for weekly schedule",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      },
+      "week": {
+        "type": "int"
+      }
+    }
+  },
+  "testDataWeek": "Test Data - {year} Week {week}",
+  "@testDataWeek": {
+    "description": "Test data banner for weekly schedule",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      },
+      "week": {
+        "type": "int"
+      }
+    }
+  },
+  "sharedFromPregame": "Shared from Pregame World Cup 2026",
+  "@sharedFromPregame": {
+    "description": "Share text footer"
   }
 }

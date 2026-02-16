@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 
 class EmailVerificationScreen extends StatefulWidget {
   const EmailVerificationScreen({super.key});
@@ -56,8 +57,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
         // Verified! AuthenticationWrapper will handle navigation
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Email verified! Redirecting...'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).emailVerifiedRedirecting),
               backgroundColor: AppTheme.successColor,
             ),
           );
@@ -65,8 +66,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
       } else {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Email not verified yet. Please check your inbox.'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).emailNotVerifiedYet),
               backgroundColor: AppTheme.warningColor,
             ),
           );
@@ -95,8 +96,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
       await _authService.resendVerificationEmail();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Verification email sent!'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).verificationEmailSent),
             backgroundColor: AppTheme.successColor,
           ),
         );
@@ -107,7 +108,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to resend: ${e.toString().replaceFirst("Exception: ", "")}'),
+            content: Text(AppLocalizations.of(context).failedToResend(e.toString().replaceFirst("Exception: ", ""))),
             backgroundColor: AppTheme.errorColor,
           ),
         );
@@ -150,6 +151,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final user = FirebaseAuth.instance.currentUser;
     final email = user?.email ?? 'your email';
 
@@ -206,9 +208,9 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                     child: Column(
                       children: [
                         // Title
-                        const Text(
-                          'Verify Your Email',
-                          style: TextStyle(
+                        Text(
+                          l10n.verifyYourEmail,
+                          style: const TextStyle(
                             fontSize: 28,
                             fontWeight: FontWeight.w700,
                             color: AppTheme.textWhite,
@@ -218,9 +220,9 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                         const SizedBox(height: 16),
 
                         // Description
-                        const Text(
-                          "We've sent a verification link to:",
-                          style: TextStyle(
+                        Text(
+                          l10n.verificationLinkSent,
+                          style: const TextStyle(
                             fontSize: 16,
                             color: AppTheme.textSecondary,
                           ),
@@ -276,20 +278,20 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                               color: AppTheme.infoColor.withValues(alpha:0.3),
                             ),
                           ),
-                          child: const Column(
+                          child: Column(
                             children: [
                               Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.info_outline,
                                     color: AppTheme.infoColor,
                                     size: 20,
                                   ),
-                                  SizedBox(width: 8),
+                                  const SizedBox(width: 8),
                                   Expanded(
                                     child: Text(
-                                      'Click the link in your email to verify your account.',
-                                      style: TextStyle(
+                                      l10n.clickLinkToVerify,
+                                      style: const TextStyle(
                                         fontSize: 14,
                                         color: AppTheme.textSecondary,
                                       ),
@@ -297,10 +299,10 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 8),
+                              const SizedBox(height: 8),
                               Text(
-                                "Check your spam folder if you don't see it.",
-                                style: TextStyle(
+                                l10n.checkSpamFolder,
+                                style: const TextStyle(
                                   fontSize: 13,
                                   color: AppTheme.textTertiary,
                                 ),
@@ -325,9 +327,9 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                                 ),
                               ),
                               onPressed: _manualCheckVerification,
-                              child: const Text(
-                                "I've Verified My Email",
-                                style: TextStyle(
+                              child: Text(
+                                l10n.iveVerifiedMyEmail,
+                                style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w700,
                                   color: Colors.white,
@@ -376,8 +378,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                                   ),
                             label: Text(
                               _canResend
-                                  ? 'Resend Email'
-                                  : 'Resend in ${_resendCooldown}s',
+                                  ? l10n.resendEmail
+                                  : l10n.resendInSeconds(_resendCooldown),
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
@@ -400,19 +402,19 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                             ),
                           ),
                           child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(fontSize: 14),
+                            text: TextSpan(
+                              style: const TextStyle(fontSize: 14),
                               children: [
                                 TextSpan(
-                                  text: 'Wrong email? ',
-                                  style: TextStyle(
+                                  text: l10n.wrongEmail,
+                                  style: const TextStyle(
                                     color: AppTheme.textTertiary,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
                                 TextSpan(
-                                  text: 'Sign Out',
-                                  style: TextStyle(
+                                  text: l10n.signOut,
+                                  style: const TextStyle(
                                     color: AppTheme.accentGold,
                                     fontWeight: FontWeight.w700,
                                   ),
@@ -440,9 +442,9 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                         ),
                       ),
                       const SizedBox(width: 8),
-                      const Text(
-                        'Auto-checking verification status...',
-                        style: TextStyle(
+                      Text(
+                        l10n.autoCheckingVerification,
+                        style: const TextStyle(
                           fontSize: 12,
                           color: AppTheme.textTertiary,
                         ),
