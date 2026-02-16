@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 import 'package:pregame_world_cup/features/worldcup/domain/entities/entities.dart';
 import 'package:pregame_world_cup/features/worldcup/presentation/bloc/nearby_venues_cubit.dart';
 import 'package:pregame_world_cup/features/worldcup/presentation/pages/match_detail_page.dart';
@@ -92,6 +93,8 @@ void main() {
   ) async {
     await tester.pumpWidget(
       MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: MediaQuery(
           data: const MediaQueryData(size: Size(500, 1200)),
           child: MatchDetailPage(match: match),

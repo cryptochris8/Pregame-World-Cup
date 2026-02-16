@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../widgets/widgets.dart';
 
@@ -14,6 +15,7 @@ class TeamDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,
@@ -120,14 +122,14 @@ class TeamDetailPage extends StatelessWidget {
                               color: Colors.amber,
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            child: const Row(
+                            child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(Icons.home, size: 16, color: Colors.white),
-                                SizedBox(width: 4),
+                                const Icon(Icons.home, size: 16, color: Colors.white),
+                                const SizedBox(width: 4),
                                 Text(
-                                  'Host Nation',
-                                  style: TextStyle(
+                                  l10n.hostNation,
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
@@ -153,15 +155,15 @@ class TeamDetailPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Quick stats row
-                  _buildQuickStats(),
+                  _buildQuickStats(context),
                   const SizedBox(height: 16),
 
                   // Team info card
-                  _buildInfoCard(),
+                  _buildInfoCard(context),
                   const SizedBox(height: 16),
 
                   // World Cup history
-                  _buildWorldCupHistory(),
+                  _buildWorldCupHistory(context),
                   const SizedBox(height: 16),
 
                   // Group info (if assigned)
@@ -182,13 +184,14 @@ class TeamDetailPage extends StatelessWidget {
     );
   }
 
-  Widget _buildQuickStats() {
+  Widget _buildQuickStats(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Row(
       children: [
         Expanded(
           child: _buildStatCard(
             icon: Icons.leaderboard,
-            label: 'FIFA Ranking',
+            label: l10n.fifaRanking,
             value: team.fifaRanking != null ? '#${team.fifaRanking}' : 'N/A',
             color: Colors.blue,
           ),
@@ -197,7 +200,7 @@ class TeamDetailPage extends StatelessWidget {
         Expanded(
           child: _buildStatCard(
             icon: Icons.emoji_events,
-            label: 'World Cup Titles',
+            label: l10n.worldCupTitles,
             value: '${team.worldCupTitles}',
             color: Colors.amber.shade700,
           ),
@@ -206,7 +209,7 @@ class TeamDetailPage extends StatelessWidget {
         Expanded(
           child: _buildStatCard(
             icon: Icons.grid_view,
-            label: 'Group',
+            label: l10n.group,
             value: team.group ?? 'TBD',
             color: Colors.green,
           ),
@@ -255,7 +258,8 @@ class TeamDetailPage extends StatelessWidget {
     );
   }
 
-  Widget _buildInfoCard() {
+  Widget _buildInfoCard(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
@@ -267,24 +271,24 @@ class TeamDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Team Information',
-              style: TextStyle(
+            Text(
+              l10n.teamInformation,
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 16),
-            _buildInfoRow(Icons.flag, 'Country', team.countryName),
+            _buildInfoRow(Icons.flag, l10n.country, team.countryName),
             Divider(color: Colors.white.withValues(alpha:0.1)),
-            _buildInfoRow(Icons.code, 'FIFA Code', team.fifaCode),
+            _buildInfoRow(Icons.code, l10n.fifaCode, team.fifaCode),
             Divider(color: Colors.white.withValues(alpha:0.1)),
-            _buildInfoRow(Icons.public, 'Confederation', team.confederation.displayName),
+            _buildInfoRow(Icons.public, l10n.confederation, team.confederation.displayName),
             Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(
               Icons.star,
-              'Short Name',
+              l10n.shortName,
               team.shortName,
             ),
           ],
@@ -314,7 +318,8 @@ class TeamDetailPage extends StatelessWidget {
     );
   }
 
-  Widget _buildWorldCupHistory() {
+  Widget _buildWorldCupHistory(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
@@ -326,13 +331,13 @@ class TeamDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Row(
+            Row(
               children: [
-                Icon(Icons.history, color: AppTheme.accentGold),
-                SizedBox(width: 8),
+                const Icon(Icons.history, color: AppTheme.accentGold),
+                const SizedBox(width: 8),
                 Text(
-                  'World Cup History',
-                  style: TextStyle(
+                  l10n.worldCupHistory,
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                     color: Colors.white,
@@ -357,7 +362,7 @@ class TeamDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(width: 8),
                   Text(
-                    '${team.worldCupTitles} ${team.worldCupTitles == 1 ? 'Title' : 'Titles'}',
+                    l10n.titleCount(team.worldCupTitles),
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: AppTheme.accentGold,
@@ -374,9 +379,9 @@ class TeamDetailPage extends StatelessWidget {
                 ),
               ),
             ] else
-              const Text(
-                'No World Cup titles yet',
-                style: TextStyle(color: Colors.white38),
+              Text(
+                l10n.noWorldCupTitlesYet,
+                style: const TextStyle(color: Colors.white38),
               ),
           ],
         ),
@@ -400,6 +405,7 @@ class TeamDetailPage extends StatelessWidget {
   }
 
   Widget _buildGroupInfo(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard.withValues(alpha:0.8),
@@ -416,7 +422,7 @@ class TeamDetailPage extends StatelessWidget {
                 const Icon(Icons.grid_view, color: Colors.white),
                 const SizedBox(width: 8),
                 Text(
-                  'Group ${team.group}',
+                  l10n.groupLabel(team.group!),
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -428,14 +434,14 @@ class TeamDetailPage extends StatelessWidget {
                   onPressed: () {
                     // Navigate to group standings
                   },
-                  child: const Text('View Standings', style: TextStyle(color: AppTheme.accentGold)),
+                  child: Text(l10n.viewStandings, style: const TextStyle(color: AppTheme.accentGold)),
                 ),
               ],
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Tap to see full group standings and matches',
-              style: TextStyle(
+            Text(
+              l10n.tapToSeeGroupStandings,
+              style: const TextStyle(
                 color: Colors.white70,
                 fontSize: 13,
               ),
@@ -447,6 +453,7 @@ class TeamDetailPage extends StatelessWidget {
   }
 
   Widget _buildTeamMatches(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
@@ -462,9 +469,9 @@ class TeamDetailPage extends StatelessWidget {
               children: [
                 const Icon(Icons.sports_soccer, color: Colors.white),
                 const SizedBox(width: 8),
-                const Text(
-                  'Matches',
-                  style: TextStyle(
+                Text(
+                  l10n.matches,
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                     color: Colors.white,
@@ -475,15 +482,15 @@ class TeamDetailPage extends StatelessWidget {
                   onPressed: () {
                     // Navigate to filtered match list
                   },
-                  child: const Text('View All', style: TextStyle(color: AppTheme.accentGold)),
+                  child: Text(l10n.viewAll, style: const TextStyle(color: AppTheme.accentGold)),
                 ),
               ],
             ),
             const SizedBox(height: 12),
-            const Center(
+            Center(
               child: Text(
-                'Team matches will appear here',
-                style: TextStyle(color: Colors.white38),
+                l10n.teamMatchesWillAppear,
+                style: const TextStyle(color: Colors.white38),
               ),
             ),
           ],

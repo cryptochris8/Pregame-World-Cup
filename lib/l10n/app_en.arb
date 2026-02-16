@@ -1912,5 +1912,717 @@
   "sharedFromPregame": "Shared from Pregame World Cup 2026",
   "@sharedFromPregame": {
     "description": "Share text footer"
+  },
+
+  "matchInProgressWithMinute": "Match in progress - {minute}'",
+  "@matchInProgressWithMinute": {
+    "description": "Live match indicator with minute",
+    "placeholders": {
+      "minute": {"type": "String"}
+    }
+  },
+  "matchInProgress": "Match in progress",
+  "@matchInProgress": {
+    "description": "Live match indicator"
+  },
+  "showAllVenues": "Show all {count} venues",
+  "@showAllVenues": {
+    "description": "Button to show all nearby venues",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "aiMatchAnalysisGate": "Get AI-powered match analysis, historical insights, and key player matchups with Superfan Pass.",
+  "@aiMatchAnalysisGate": {
+    "description": "Superfan gate message for AI match insights"
+  },
+  "hostNation": "Host Nation",
+  "@hostNation": {
+    "description": "Host nation badge label"
+  },
+  "fifaRanking": "FIFA Ranking",
+  "@fifaRanking": {
+    "description": "FIFA ranking stat label"
+  },
+  "worldCupTitles": "World Cup Titles",
+  "@worldCupTitles": {
+    "description": "World Cup titles stat label"
+  },
+  "group": "Group",
+  "@group": {
+    "description": "Group label"
+  },
+  "teamInformation": "Team Information",
+  "@teamInformation": {
+    "description": "Team information section title"
+  },
+  "country": "Country",
+  "@country": {
+    "description": "Country label"
+  },
+  "fifaCode": "FIFA Code",
+  "@fifaCode": {
+    "description": "FIFA code label"
+  },
+  "confederation": "Confederation",
+  "@confederation": {
+    "description": "Confederation label"
+  },
+  "shortName": "Short Name",
+  "@shortName": {
+    "description": "Short name label"
+  },
+  "worldCupHistory": "World Cup History",
+  "@worldCupHistory": {
+    "description": "World Cup history section title"
+  },
+  "titleCount": "{count} {count, plural, =1{Title} other{Titles}}",
+  "@titleCount": {
+    "description": "Number of titles",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "noWorldCupTitlesYet": "No World Cup titles yet",
+  "@noWorldCupTitlesYet": {
+    "description": "Message when team has no WC titles"
+  },
+  "groupLabel": "Group {letter}",
+  "@groupLabel": {
+    "description": "Group with letter",
+    "placeholders": {
+      "letter": {"type": "String"}
+    }
+  },
+  "viewStandings": "View Standings",
+  "@viewStandings": {
+    "description": "View standings button"
+  },
+  "tapToSeeGroupStandings": "Tap to see full group standings and matches",
+  "@tapToSeeGroupStandings": {
+    "description": "Group info helper text"
+  },
+  "teamMatchesWillAppear": "Team matches will appear here",
+  "@teamMatchesWillAppear": {
+    "description": "Placeholder for team matches"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "searchTeams": "Search teams...",
+  "@searchTeams": {
+    "description": "Search teams hint"
+  },
+  "teamsCountSimple": "{count} teams",
+  "@teamsCountSimple": {
+    "description": "Simple team count",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "noTeamsFound": "No teams found",
+  "@noTeamsFound": {
+    "description": "No teams found message"
+  },
+  "tryAdjustingFilters": "Try adjusting your search or filters",
+  "@tryAdjustingFilters": {
+    "description": "Hint when no teams found"
+  },
+  "myPredictions": "My Predictions",
+  "@myPredictions": {
+    "description": "My predictions page title"
+  },
+  "updateResults": "Update Results",
+  "@updateResults": {
+    "description": "Update results menu item"
+  },
+  "clearAll": "Clear All",
+  "@clearAll": {
+    "description": "Clear all menu item"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All filter label"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Pending filter label"
+  },
+  "correct": "Correct",
+  "@correct": {
+    "description": "Correct filter label"
+  },
+  "incorrect": "Incorrect",
+  "@incorrect": {
+    "description": "Incorrect filter label"
+  },
+  "noPredictionsYet": "No Predictions Yet",
+  "@noPredictionsYet": {
+    "description": "Empty state title for predictions"
+  },
+  "makePredictionsPrompt": "Make predictions on upcoming matches\nto track your accuracy and earn points!",
+  "@makePredictionsPrompt": {
+    "description": "Empty state description for predictions"
+  },
+  "goToMatches": "Go to Matches",
+  "@goToMatches": {
+    "description": "Go to matches button"
+  },
+  "noPendingPredictions": "No pending predictions",
+  "@noPendingPredictions": {
+    "description": "No pending predictions message"
+  },
+  "noCorrectPredictions": "No correct predictions yet",
+  "@noCorrectPredictions": {
+    "description": "No correct predictions message"
+  },
+  "noIncorrectPredictions": "No incorrect predictions",
+  "@noIncorrectPredictions": {
+    "description": "No incorrect predictions message"
+  },
+  "noPredictions": "No predictions",
+  "@noPredictions": {
+    "description": "No predictions message"
+  },
+  "deletePrediction": "Delete Prediction?",
+  "@deletePrediction": {
+    "description": "Delete prediction dialog title"
+  },
+  "deletePredictionConfirm": "Delete your prediction for {homeTeam} vs {awayTeam}?",
+  "@deletePredictionConfirm": {
+    "description": "Delete prediction confirmation",
+    "placeholders": {
+      "homeTeam": {"type": "String"},
+      "awayTeam": {"type": "String"}
+    }
+  },
+  "clearAllPredictions": "Clear All Predictions?",
+  "@clearAllPredictions": {
+    "description": "Clear all predictions dialog title"
+  },
+  "clearAllPredictionsConfirm": "This will permanently delete all your predictions. This action cannot be undone.",
+  "@clearAllPredictionsConfirm": {
+    "description": "Clear all predictions confirmation"
+  },
+  "exactScore": "Exact Score!",
+  "@exactScore": {
+    "description": "Exact score prediction result"
+  },
+  "correctResult": "Correct Result",
+  "@correctResult": {
+    "description": "Correct result prediction"
+  },
+  "result": "Result",
+  "@result": {
+    "description": "Result label"
+  },
+  "pointsEarned": "Points Earned",
+  "@pointsEarned": {
+    "description": "Points earned label"
+  },
+  "status": "Status",
+  "@status": {
+    "description": "Status label"
+  },
+  "groupStandings": "Group Standings",
+  "@groupStandings": {
+    "description": "Group standings page title"
+  },
+  "noGroupDataAvailableForGroup": "Group {letter} data not available",
+  "@noGroupDataAvailableForGroup": {
+    "description": "Group data not available",
+    "placeholders": {
+      "letter": {"type": "String"}
+    }
+  },
+  "qualification": "Qualification",
+  "@qualification": {
+    "description": "Qualification legend title"
+  },
+  "qualifiedTop2": "Qualified (Top 2)",
+  "@qualifiedTop2": {
+    "description": "Qualified top 2 legend"
+  },
+  "possibleQualification": "Possible Qualification (Best 3rd place)",
+  "@possibleQualification": {
+    "description": "Possible qualification legend"
+  },
+  "tiebreakers": "Tiebreakers (in order):",
+  "@tiebreakers": {
+    "description": "Tiebreakers title"
+  },
+  "tiebreakersList": "1. Points\n2. Goal difference\n3. Goals scored\n4. Head-to-head points\n5. Fair play (yellow/red cards)\n6. Drawing of lots",
+  "@tiebreakersList": {
+    "description": "Tiebreakers list"
+  },
+  "knockoutBracket": "Knockout Bracket",
+  "@knockoutBracket": {
+    "description": "Knockout bracket page title"
+  },
+  "finals": "Finals",
+  "@finals": {
+    "description": "Finals round label"
+  },
+  "bracketDataNotAvailable": "Bracket data not available yet",
+  "@bracketDataNotAvailable": {
+    "description": "Bracket not available message"
+  },
+  "matchesNotYetDetermined": "Matches not yet determined",
+  "@matchesNotYetDetermined": {
+    "description": "Matches not yet determined"
+  },
+  "teamsSetAfterGroupStage": "Teams will be set after group stage",
+  "@teamsSetAfterGroupStage": {
+    "description": "Teams set after group stage"
+  },
+  "thirdPlacePlayoff": "Third Place Play-off",
+  "@thirdPlacePlayoff": {
+    "description": "Third place playoff label"
+  },
+  "currentRound": "Current: {round}",
+  "@currentRound": {
+    "description": "Current round indicator",
+    "placeholders": {
+      "round": {"type": "String"}
+    }
+  },
+  "noBracketData": "No bracket data",
+  "@noBracketData": {
+    "description": "No bracket data message"
+  },
+  "noMatchesScheduledForDay": "No matches scheduled for this day",
+  "@noMatchesScheduledForDay": {
+    "description": "No matches for selected date"
+  },
+  "tryDifferentDate": "Try selecting a different date",
+  "@tryDifferentDate": {
+    "description": "Hint to try different date"
+  },
+  "showingMatchesFor": "Showing matches for {date}",
+  "@showingMatchesFor": {
+    "description": "Showing matches for date",
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "matchCount": "{count} match{count, plural, =1{} other{es}}",
+  "@matchCount": {
+    "description": "Match count",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "myProfile": "My Profile",
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "accessibilitySettings": "Accessibility Settings",
+  "@accessibilitySettings": {
+    "description": "Accessibility settings tooltip"
+  },
+  "timezoneSettings": "Timezone Settings",
+  "@timezoneSettings": {
+    "description": "Timezone settings tooltip"
+  },
+  "errorLoadingProfile": "Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "errorSigningOut": "Error signing out",
+  "@errorSigningOut": {
+    "description": "Error signing out message"
+  },
+  "sportsFan": "Sports Fan",
+  "@sportsFan": {
+    "description": "Default display name"
+  },
+  "pregameFanSince": "Pregame Fan Since {date}",
+  "@pregameFanSince": {
+    "description": "Fan since date",
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "gamesTracked": "Games Tracked",
+  "@gamesTracked": {
+    "description": "Games tracked stat"
+  },
+  "profileCustomization": "Profile Customization",
+  "@profileCustomization": {
+    "description": "Profile customization title"
+  },
+  "profileCustomizationDesc": "Upload photos, set favorite teams, and personalize your sports fan profile",
+  "@profileCustomizationDesc": {
+    "description": "Profile customization description"
+  },
+  "activityFeedDesc": "Track your game predictions, venue check-ins, and social interactions",
+  "@activityFeedDesc": {
+    "description": "Activity feed description"
+  },
+  "achievements": "Achievements",
+  "@achievements": {
+    "description": "Achievements title"
+  },
+  "achievementsDesc": "Unlock badges for predictions, social activity, and venue discoveries",
+  "@achievementsDesc": {
+    "description": "Achievements description"
+  },
+  "accessibilityCustomizeDesc": "Customize text size, contrast, motion, and more",
+  "@accessibilityCustomizeDesc": {
+    "description": "Accessibility customize description"
+  },
+  "findFriends": "Find Friends",
+  "@findFriends": {
+    "description": "Find friends screen title"
+  },
+  "searchByNameOrTeam": "Search by name or favorite team...",
+  "@searchByNameOrTeam": {
+    "description": "Search hint for user search"
+  },
+  "searchForFriends": "Search for friends by name or favorite team",
+  "@searchForFriends": {
+    "description": "Empty state for user search"
+  },
+  "noUsersFound": "No users found for \"{query}\"",
+  "@noUsersFound": {
+    "description": "No users found message",
+    "placeholders": {
+      "query": {"type": "String"}
+    }
+  },
+  "tryDifferentSearch": "Try searching for a different name or team",
+  "@tryDifferentSearch": {
+    "description": "Hint for no search results"
+  },
+  "add": "Add",
+  "@add": {
+    "description": "Add button label"
+  },
+  "friendRequestSentTo": "Friend request sent to {name}",
+  "@friendRequestSentTo": {
+    "description": "Friend request sent confirmation",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "failedToSendFriendRequest": "Failed to send friend request",
+  "@failedToSendFriendRequest": {
+    "description": "Failed to send friend request error"
+  },
+  "errorSendingFriendRequest": "Error sending friend request",
+  "@errorSendingFriendRequest": {
+    "description": "Error sending friend request"
+  },
+  "errorSearchingUsers": "Error searching users. Please try again.",
+  "@errorSearchingUsers": {
+    "description": "Error searching users"
+  },
+  "requests": "Requests",
+  "@requests": {
+    "description": "Requests tab label"
+  },
+  "sent": "Sent",
+  "@sent": {
+    "description": "Sent tab label"
+  },
+  "loadingFriends": "Loading friends...",
+  "@loadingFriends": {
+    "description": "Loading friends message"
+  },
+  "friendRequestAccepted": "Friend request accepted!",
+  "@friendRequestAccepted": {
+    "description": "Friend request accepted confirmation"
+  },
+  "friendRequestDeclined": "Friend request declined",
+  "@friendRequestDeclined": {
+    "description": "Friend request declined confirmation"
+  },
+  "failedToDecline": "Failed to decline friend request",
+  "@failedToDecline": {
+    "description": "Failed to decline friend request error"
+  },
+  "friendRequestCancelled": "Friend request cancelled",
+  "@friendRequestCancelled": {
+    "description": "Friend request cancelled confirmation"
+  },
+  "failedToCancelRequest": "Failed to cancel friend request",
+  "@failedToCancelRequest": {
+    "description": "Failed to cancel friend request error"
+  },
+  "removedFromFriends": "{name} removed from friends",
+  "@removedFromFriends": {
+    "description": "Removed from friends confirmation",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "failedToRemove": "Failed to remove {name}",
+  "@failedToRemove": {
+    "description": "Failed to remove friend error",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "userBlocked": "{name} has been blocked",
+  "@userBlocked": {
+    "description": "User blocked confirmation",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "failedToBlock": "Failed to block {name}",
+  "@failedToBlock": {
+    "description": "Failed to block user error",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "openingChat": "Opening chat...",
+  "@openingChat": {
+    "description": "Opening chat snackbar"
+  },
+  "unableToStartChat": "Unable to start chat. User may be blocked.",
+  "@unableToStartChat": {
+    "description": "Unable to start chat error"
+  },
+  "failedToStartChat": "Failed to start chat: {error}",
+  "@failedToStartChat": {
+    "description": "Failed to start chat error",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "successfullyJoined": "Successfully joined!",
+  "@successfullyJoined": {
+    "description": "Successfully joined watch party"
+  },
+  "reload": "Reload",
+  "@reload": {
+    "description": "Reload button"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details tab label"
+  },
+  "editParty": "Edit Party",
+  "@editParty": {
+    "description": "Edit party menu item"
+  },
+  "startParty": "Start Party",
+  "@startParty": {
+    "description": "Start party menu item"
+  },
+  "endParty": "End Party",
+  "@endParty": {
+    "description": "End party menu item"
+  },
+  "cancelParty": "Cancel Party",
+  "@cancelParty": {
+    "description": "Cancel party menu item"
+  },
+  "viewOnMap": "View on Map",
+  "@viewOnMap": {
+    "description": "View on map button"
+  },
+  "noMessagesYetChat": "No messages yet",
+  "@noMessagesYetChat": {
+    "description": "Empty chat state title"
+  },
+  "beFirstToSayHello": "Be the first to say hello!",
+  "@beFirstToSayHello": {
+    "description": "Empty chat state description"
+  },
+  "spotsLeft": "{count} spots left",
+  "@spotsLeft": {
+    "description": "Spots left in watch party",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "joinInPerson": "Join In Person",
+  "@joinInPerson": {
+    "description": "Join in person button"
+  },
+  "ended": "Ended",
+  "@ended": {
+    "description": "Ended status label"
+  },
+  "cancelWatchParty": "Cancel Watch Party?",
+  "@cancelWatchParty": {
+    "description": "Cancel watch party dialog title"
+  },
+  "cancelWatchPartyConfirm": "This action cannot be undone. All attendees will be notified.",
+  "@cancelWatchPartyConfirm": {
+    "description": "Cancel watch party confirmation"
+  },
+  "keep": "Keep",
+  "@keep": {
+    "description": "Keep button (don't cancel)"
+  },
+  "removeMember": "Remove Member?",
+  "@removeMember": {
+    "description": "Remove member dialog title"
+  },
+  "removeMemberConfirm": "Remove {name} from the watch party?",
+  "@removeMemberConfirm": {
+    "description": "Remove member confirmation",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "remove": "Remove",
+  "@remove": {
+    "description": "Remove button"
+  },
+  "joinPartToChat": "Join the party to chat",
+  "@joinPartToChat": {
+    "description": "Chat disabled - not member"
+  },
+  "youHaveBeenMuted": "You have been muted",
+  "@youHaveBeenMuted": {
+    "description": "Chat disabled - muted"
+  },
+  "payForVirtualToChat": "Pay for virtual attendance to chat",
+  "@payForVirtualToChat": {
+    "description": "Chat disabled - virtual unpaid"
+  },
+  "couldNotOpenMaps": "Could not open maps",
+  "@couldNotOpenMaps": {
+    "description": "Maps error"
+  },
+  "settingsResetToDefaultsFull": "Settings reset to defaults",
+  "@settingsResetToDefaultsFull": {
+    "description": "Full settings reset confirmation"
+  },
+  "accessibilitySettingsTitle": "Accessibility Settings",
+  "@accessibilitySettingsTitle": {
+    "description": "Accessibility settings card title"
+  },
+  "accessibilitySettingsIntro": "Customize your experience to make Pregame World Cup easier to use.",
+  "@accessibilitySettingsIntro": {
+    "description": "Accessibility settings intro text"
+  },
+  "vision": "Vision",
+  "@vision": {
+    "description": "Vision section title"
+  },
+  "highContrastSubtitle": "Use high contrast colors for better visibility",
+  "@highContrastSubtitle": {
+    "description": "High contrast subtitle"
+  },
+  "boldTextSubtitle": "Make all text bolder and easier to read",
+  "@boldTextSubtitle": {
+    "description": "Bold text subtitle"
+  },
+  "motion": "Motion",
+  "@motion": {
+    "description": "Motion section title"
+  },
+  "reduceMotionSubtitle": "Minimize animations and motion effects",
+  "@reduceMotionSubtitle": {
+    "description": "Reduce motion subtitle"
+  },
+  "interaction": "Interaction",
+  "@interaction": {
+    "description": "Interaction section title"
+  },
+  "largerTouchTargets": "Larger Touch Targets",
+  "@largerTouchTargets": {
+    "description": "Larger touch targets toggle"
+  },
+  "largerTouchTargetsSubtitle": "Make buttons and controls easier to tap",
+  "@largerTouchTargetsSubtitle": {
+    "description": "Larger touch targets subtitle"
+  },
+  "textSize": "Text Size",
+  "@textSize": {
+    "description": "Text size section title"
+  },
+  "textScale": "Text Scale",
+  "@textScale": {
+    "description": "Text scale label"
+  },
+  "adjustTextSize": "Adjust the size of text throughout the app",
+  "@adjustTextSize": {
+    "description": "Adjust text size description"
+  },
+  "sampleTextPreview": "Sample Text Preview",
+  "@sampleTextPreview": {
+    "description": "Sample text for preview"
+  },
+  "useSystemDefault": "Use System Default",
+  "@useSystemDefault": {
+    "description": "Use system default button"
+  },
+  "small": "Small",
+  "@small": {
+    "description": "Small text scale"
+  },
+  "default_": "Default",
+  "@default_": {
+    "description": "Default text scale"
+  },
+  "large": "Large",
+  "@large": {
+    "description": "Large text scale"
+  },
+  "extraLarge": "Extra Large",
+  "@extraLarge": {
+    "description": "Extra large text scale"
+  },
+  "maximum": "Maximum",
+  "@maximum": {
+    "description": "Maximum text scale"
+  },
+  "screenReader": "Screen Reader",
+  "@screenReader": {
+    "description": "Screen reader section title"
+  },
+  "screenReaderOptimized": "Screen Reader Optimized",
+  "@screenReaderOptimized": {
+    "description": "Screen reader optimized toggle"
+  },
+  "screenReaderSubtitle": "Enhance compatibility with VoiceOver and TalkBack",
+  "@screenReaderSubtitle": {
+    "description": "Screen reader subtitle"
+  },
+  "systemSettings": "System Settings",
+  "@systemSettings": {
+    "description": "System settings info title"
+  },
+  "systemSettingsInfo": "These settings work alongside your device's accessibility settings. For more options, visit your device's Settings > Accessibility.",
+  "@systemSettingsInfo": {
+    "description": "System settings info text"
+  },
+  "resetAllSettings": "Reset",
+  "@resetAllSettings": {
+    "description": "Reset all settings button"
+  },
+  "settingUpdated": "Setting updated",
+  "@settingUpdated": {
+    "description": "Setting updated announcement"
+  },
+  "teamsOfTotal": "{count} of {total} teams",
+  "@teamsOfTotal": {
+    "description": "Teams count out of total",
+    "placeholders": {
+      "count": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "errorOpeningMaps": "Error opening maps: {error}",
+  "@errorOpeningMaps": {
+    "description": "Error opening maps with details",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "attendeesWithCount": "Attendees ({count})",
+  "@attendeesWithCount": {
+    "description": "Attendees section header with count",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
   }
 }

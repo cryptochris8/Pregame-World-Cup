@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -32,6 +33,7 @@ class MatchesTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return BlocBuilder<MatchListCubit, MatchListState>(
       builder: (context, matchState) {
         if (matchState.isLoading) {
@@ -60,7 +62,7 @@ class MatchesTab extends StatelessWidget {
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ),
               ],
@@ -125,7 +127,7 @@ class MatchesTab extends StatelessWidget {
                             ),
                             const SizedBox(width: 8),
                             Text(
-                              'Showing matches for ${_formatSelectedDate(matchState.selectedDate!)}',
+                              l10n.showingMatchesFor(_formatSelectedDate(matchState.selectedDate!)),
                               style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 13,
@@ -134,7 +136,7 @@ class MatchesTab extends StatelessWidget {
                             ),
                             const Spacer(),
                             Text(
-                              '${displayMatches.length} match${displayMatches.length == 1 ? '' : 'es'}',
+                              l10n.matchCount(displayMatches.length),
                               style: const TextStyle(
                                 color: AppTheme.primaryOrange,
                                 fontSize: 13,
@@ -148,7 +150,7 @@ class MatchesTab extends StatelessWidget {
                     // Match list
                     Expanded(
                       child: displayMatches.isEmpty
-                          ? _buildEmptyState(matchState.filter, matchState.selectedDate)
+                          ? _buildEmptyState(matchState.filter, matchState.selectedDate, context: context)
                           : RefreshIndicator(
                               onRefresh: () =>
                                   context.read<MatchListCubit>().refreshMatches(),
@@ -189,13 +191,14 @@ class MatchesTab extends StatelessWidget {
     return '${days[date.weekday - 1]}, ${months[date.month - 1]} ${date.day}';
   }
 
-  Widget _buildEmptyState(MatchListFilter filter, DateTime? selectedDate) {
+  Widget _buildEmptyState(MatchListFilter filter, DateTime? selectedDate, {required BuildContext context}) {
+    final l10n = AppLocalizations.of(context);
     String message;
     IconData icon;
 
     // Check if a specific date is selected with no matches
     if (selectedDate != null) {
-      message = 'No matches scheduled for this day';
+      message = l10n.noMatchesScheduledForDay;
       icon = Icons.calendar_today;
     } else {
       switch (filter) {
@@ -240,9 +243,9 @@ class MatchesTab extends StatelessWidget {
           ),
           if (selectedDate != null) ...[
             const SizedBox(height: 8),
-            const Text(
-              'Try selecting a different date',
-              style: TextStyle(
+            Text(
+              l10n.tryDifferentDate,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.white38,
               ),

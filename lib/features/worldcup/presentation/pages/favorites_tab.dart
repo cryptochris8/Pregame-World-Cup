@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -60,7 +61,7 @@ class FavoritesTab extends StatelessWidget {
                         child: TextButton.icon(
                           onPressed: () => _navigateToPredictions(context),
                           icon: const Icon(Icons.arrow_forward, size: 16),
-                          label: const Text('View All Predictions'),
+                          label: Text(AppLocalizations.of(context).viewAllPredictions),
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -71,7 +72,7 @@ class FavoritesTab extends StatelessWidget {
                   _buildSectionHeader(
                     context,
                     icon: Icons.sports_soccer,
-                    title: 'Favorite Matches',
+                    title: AppLocalizations.of(context).favoriteMatches,
                     count: favoriteMatchIds.length,
                   ),
                   const SizedBox(height: 8),
@@ -118,7 +119,7 @@ class FavoritesTab extends StatelessWidget {
                   _buildSectionHeader(
                     context,
                     icon: Icons.flag,
-                    title: 'Favorite Teams',
+                    title: AppLocalizations.of(context).favoriteTeams,
                     count: favoriteTeamCodes.length,
                   ),
                   const SizedBox(height: 8),
@@ -212,6 +213,7 @@ class FavoritesTab extends StatelessWidget {
   }
 
   Widget _buildEmptyState(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -232,18 +234,18 @@ class FavoritesTab extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'No Favorites Yet',
-              style: TextStyle(
+            Text(
+              l10n.noFavoritesYet,
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Tap the heart icon on any match or team\nto add them to your favorites',
-              style: TextStyle(
+            Text(
+              l10n.tapHeartIconMessage,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.white60,
               ),
@@ -255,7 +257,7 @@ class FavoritesTab extends StatelessWidget {
               children: [
                 _buildHintChip(
                   icon: Icons.sports_soccer,
-                  label: 'Browse Matches',
+                  label: l10n.browseMatches,
                   onTap: () {
                     // Navigate to Matches tab
                     DefaultTabController.of(context).animateTo(0);
@@ -264,7 +266,7 @@ class FavoritesTab extends StatelessWidget {
                 const SizedBox(width: 12),
                 _buildHintChip(
                   icon: Icons.flag,
-                  label: 'Browse Teams',
+                  label: l10n.browseTeams,
                   onTap: () {
                     // Navigate to Teams tab
                     DefaultTabController.of(context).animateTo(2);

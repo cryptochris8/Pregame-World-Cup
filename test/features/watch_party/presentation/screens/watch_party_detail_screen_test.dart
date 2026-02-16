@@ -5,6 +5,7 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/test.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 import 'package:pregame_world_cup/features/watch_party/presentation/screens/watch_party_detail_screen.dart';
 import 'package:pregame_world_cup/features/watch_party/presentation/bloc/watch_party_bloc.dart';
@@ -43,6 +44,8 @@ void main() {
 
   Widget buildTestWidget({String watchPartyId = 'wp_test_123'}) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: BlocProvider<WatchPartyBloc>.value(
         value: mockBloc,
         child: WatchPartyDetailScreen(watchPartyId: watchPartyId),

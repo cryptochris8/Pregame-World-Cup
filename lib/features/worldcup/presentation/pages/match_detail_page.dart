@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart' as di;
+import '../../../../l10n/app_localizations.dart';
 import '../../data/datasources/world_cup_firestore_datasource.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/nearby_venues_cubit.dart';
@@ -205,6 +206,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
   }
 
   Widget _buildLiveIndicatorBar() {
+    final l10n = AppLocalizations.of(context);
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(12),
@@ -220,8 +222,8 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
           const SizedBox(width: 8),
           Text(
             match.minute != null
-                ? "Match in progress - ${match.minute}'"
-                : 'Match in progress',
+                ? l10n.matchInProgressWithMinute(match.minute.toString())
+                : l10n.matchInProgress,
             style: const TextStyle(
               color: Colors.red,
               fontWeight: FontWeight.bold,
@@ -256,8 +258,8 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
               ),
               label: Text(
                 _showAllNearbyVenues
-                    ? 'Show less'
-                    : 'Show all $totalVenues venues',
+                    ? AppLocalizations.of(context).showLess
+                    : AppLocalizations.of(context).showAllVenues(totalVenues),
                 style: const TextStyle(
                   color: AppTheme.primaryPurple,
                   fontWeight: FontWeight.w500,
@@ -307,7 +309,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
 
     return FanPassFeatureGate(
       feature: FanPassFeature.aiMatchInsights,
-      customMessage: 'Get AI-powered match analysis, historical insights, and key player matchups with Superfan Pass.',
+      customMessage: AppLocalizations.of(context).aiMatchAnalysisGate,
       child: AIMatchSummaryWidget(
         summary: _matchSummary!,
         initiallyExpanded: false,

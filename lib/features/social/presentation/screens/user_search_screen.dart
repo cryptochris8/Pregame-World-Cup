@@ -3,6 +3,7 @@ import '../../domain/entities/user_profile.dart';
 import '../../domain/services/social_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../../l10n/app_localizations.dart';
 
 class UserSearchScreen extends StatefulWidget {
   const UserSearchScreen({super.key});
@@ -54,8 +55,8 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
       
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Error searching users. Please try again.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).errorSearchingUsers),
           backgroundColor: Colors.red,
         ),
       );
@@ -73,14 +74,14 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
       if (success) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Friend request sent to ${user.displayName}'),
+            content: Text(AppLocalizations.of(context).friendRequestSentTo(user.displayName)),
             backgroundColor: Colors.green,
           ),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Failed to send friend request'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).failedToSendFriendRequest),
             backgroundColor: Colors.red,
           ),
         );
@@ -89,8 +90,8 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
       LoggingService.error('Error sending friend request: $e', tag: 'UserSearchScreen');
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Error sending friend request'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).errorSendingFriendRequest),
           backgroundColor: Colors.red,
         ),
       );
@@ -99,9 +100,10 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Find Friends'),
+        title: Text(l10n.findFriends),
         backgroundColor: const Color(0xFF355E3B),
         foregroundColor: Colors.white,
       ),
@@ -113,7 +115,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Search by name or favorite team...',
+                hintText: l10n.searchByNameOrTeam,
                 prefixIcon: const Icon(Icons.search, color: Color(0xFF355E3B)),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -151,19 +153,20 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
 
   Widget _buildSearchResults() {
     if (_searchQuery.isEmpty) {
-      return const Center(
+      final l10n = AppLocalizations.of(context);
+      return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.search,
               size: 64,
               color: Colors.grey,
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Text(
-              'Search for friends by name or favorite team',
-              style: TextStyle(
+              l10n.searchForFriends,
+              style: const TextStyle(
                 fontSize: 16,
                 color: Colors.grey,
               ),
@@ -183,6 +186,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
     }
 
     if (_searchResults.isEmpty) {
+      final l10n = AppLocalizations.of(context);
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -194,7 +198,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'No users found for "$_searchQuery"',
+              l10n.noUsersFound(_searchQuery),
               style: const TextStyle(
                 fontSize: 16,
                 color: Colors.grey,
@@ -202,9 +206,9 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Try searching for a different name or team',
-              style: TextStyle(
+            Text(
+              l10n.tryDifferentSearch,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.grey,
               ),
@@ -304,7 +308,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
             ElevatedButton.icon(
               onPressed: () => _sendFriendRequest(user),
               icon: const Icon(Icons.person_add, size: 18),
-              label: const Text('Add'),
+              label: Text(AppLocalizations.of(context).add),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF355E3B),
                 foregroundColor: Colors.white,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -40,12 +41,13 @@ class _BracketPageState extends State<BracketPage>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text('Knockout Bracket', style: TextStyle(color: Colors.white)),
+        title: Text(l10n.knockoutBracket, style: const TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           BlocBuilder<BracketCubit, BracketState>(
@@ -100,7 +102,7 @@ class _BracketPageState extends State<BracketPage>
                       foregroundColor: Colors.white,
                     ),
                     onPressed: () => context.read<BracketCubit>().loadBracket(),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -108,8 +110,8 @@ class _BracketPageState extends State<BracketPage>
           }
 
           if (state.bracket == null) {
-            return const Center(
-              child: Text('Bracket data not available yet', style: TextStyle(color: Colors.white70)),
+            return Center(
+              child: Text(l10n.bracketDataNotAvailable, style: const TextStyle(color: Colors.white70)),
             );
           }
 
@@ -134,23 +136,24 @@ class _BracketPageState extends State<BracketPage>
     final matches = state.getMatchesForRound(stage);
 
     if (matches.isEmpty) {
+      final l10n = AppLocalizations.of(context);
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.schedule, size: 64, color: Colors.white.withValues(alpha:0.3)),
             const SizedBox(height: 16),
-            const Text(
-              'Matches not yet determined',
-              style: TextStyle(
+            Text(
+              l10n.matchesNotYetDetermined,
+              style: const TextStyle(
                 fontSize: 16,
                 color: Colors.white70,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Teams will be set after group stage',
-              style: TextStyle(
+            Text(
+              l10n.teamsSetAfterGroupStage,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.white38,
               ),
@@ -203,9 +206,9 @@ class _BracketPageState extends State<BracketPage>
 
             // Final match
             if (finalMatch != null) ...[
-              const Text(
-                'Final',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).finals,
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -223,9 +226,9 @@ class _BracketPageState extends State<BracketPage>
 
             // Third place match
             if (thirdPlace != null) ...[
-              const Text(
-                'Third Place Play-off',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).thirdPlacePlayoff,
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
                   color: Colors.white60,

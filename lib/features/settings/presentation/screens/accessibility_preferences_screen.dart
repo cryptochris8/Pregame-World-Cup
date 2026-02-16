@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/services/accessibility_service.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Screen for managing accessibility preferences
 class AccessibilityPreferencesScreen extends StatefulWidget {
@@ -37,7 +38,9 @@ class _AccessibilityPreferencesScreenState
     await _accessibilityService.updateSettings(newSettings);
 
     // Announce change to screen readers
-    AccessibilityService.announcePolite('Setting updated');
+    if (mounted) {
+      AccessibilityService.announcePolite(AppLocalizations.of(context).settingUpdated);
+    }
   }
 
   @override
@@ -47,7 +50,7 @@ class _AccessibilityPreferencesScreenState
     if (_isLoading) {
       return Scaffold(
         appBar: AppBar(
-          title: const Text('Accessibility'),
+          title: Text(AppLocalizations.of(context).accessibility),
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
@@ -61,9 +64,10 @@ class _AccessibilityPreferencesScreenState
       );
     }
 
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Accessibility'),
+        title: Text(l10n.accessibility),
         backgroundColor: Colors.transparent,
         elevation: 0,
         actions: [
@@ -76,17 +80,17 @@ class _AccessibilityPreferencesScreenState
                 setState(() => _settings = _accessibilityService.settings);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Settings reset to defaults'),
+                    SnackBar(
+                      content: Text(l10n.settingsResetToDefaultsFull),
                     ),
                   );
                   AccessibilityService.announceAssertive(
-                    'All accessibility settings reset to defaults',
+                    l10n.settingsResetToDefaultsFull,
                   );
                 }
               },
               child: Text(
-                'Reset',
+                l10n.resetAllSettings,
                 style: TextStyle(color: theme.colorScheme.error),
               ),
             ),
@@ -142,6 +146,7 @@ class _AccessibilityPreferencesScreenState
   }
 
   Widget _buildIntroCard(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -160,7 +165,7 @@ class _AccessibilityPreferencesScreenState
           ),
           const SizedBox(height: 12),
           Text(
-            'Accessibility Settings',
+            l10n.accessibilitySettingsTitle,
             style: theme.textTheme.titleLarge?.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -168,7 +173,7 @@ class _AccessibilityPreferencesScreenState
           ),
           const SizedBox(height: 8),
           Text(
-            'Customize your experience to make Pregame World Cup easier to use.',
+            l10n.accessibilitySettingsIntro,
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white.withValues(alpha:0.8),
@@ -181,9 +186,10 @@ class _AccessibilityPreferencesScreenState
   }
 
   Widget _buildVisionSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return _buildSection(
       theme: theme,
-      title: 'Vision',
+      title: l10n.vision,
       icon: Icons.visibility,
       children: [
         Semantics(
@@ -192,8 +198,8 @@ class _AccessibilityPreferencesScreenState
               ? 'Currently enabled. Tap to disable high contrast colors'
               : 'Currently disabled. Tap to enable high contrast colors for better visibility',
           child: _buildSwitchTile(
-            title: 'High Contrast',
-            subtitle: 'Use high contrast colors for better visibility',
+            title: l10n.highContrast,
+            subtitle: l10n.highContrastSubtitle,
             value: _settings.highContrast,
             onChanged: (value) => _updateSetting(
               _settings.copyWith(highContrast: value),
@@ -208,8 +214,8 @@ class _AccessibilityPreferencesScreenState
               ? 'Currently enabled. Tap to disable bold text'
               : 'Currently disabled. Tap to make all text bolder',
           child: _buildSwitchTile(
-            title: 'Bold Text',
-            subtitle: 'Make all text bolder and easier to read',
+            title: l10n.boldText,
+            subtitle: l10n.boldTextSubtitle,
             value: _settings.boldText,
             onChanged: (value) => _updateSetting(
               _settings.copyWith(boldText: value),
@@ -222,9 +228,10 @@ class _AccessibilityPreferencesScreenState
   }
 
   Widget _buildMotionSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return _buildSection(
       theme: theme,
-      title: 'Motion',
+      title: l10n.motion,
       icon: Icons.animation,
       children: [
         Semantics(
@@ -233,8 +240,8 @@ class _AccessibilityPreferencesScreenState
               ? 'Currently enabled. Animations are disabled'
               : 'Currently disabled. Tap to reduce or disable animations',
           child: _buildSwitchTile(
-            title: 'Reduce Motion',
-            subtitle: 'Minimize animations and motion effects',
+            title: l10n.reduceMotion,
+            subtitle: l10n.reduceMotionSubtitle,
             value: _settings.reduceMotion,
             onChanged: (value) => _updateSetting(
               _settings.copyWith(reduceMotion: value),
@@ -247,9 +254,10 @@ class _AccessibilityPreferencesScreenState
   }
 
   Widget _buildInteractionSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return _buildSection(
       theme: theme,
-      title: 'Interaction',
+      title: l10n.interaction,
       icon: Icons.touch_app,
       children: [
         Semantics(
@@ -258,8 +266,8 @@ class _AccessibilityPreferencesScreenState
               ? 'Currently enabled. Buttons and controls are larger'
               : 'Currently disabled. Tap to make buttons and controls larger',
           child: _buildSwitchTile(
-            title: 'Larger Touch Targets',
-            subtitle: 'Make buttons and controls easier to tap',
+            title: l10n.largerTouchTargets,
+            subtitle: l10n.largerTouchTargetsSubtitle,
             value: _settings.largerTouchTargets,
             onChanged: (value) => _updateSetting(
               _settings.copyWith(largerTouchTargets: value),
@@ -272,12 +280,13 @@ class _AccessibilityPreferencesScreenState
   }
 
   Widget _buildTextSizeSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     final currentScale = _settings.textScaleFactor ?? 1.0;
     final scaleLabel = _getScaleLabel(currentScale);
 
     return _buildSection(
       theme: theme,
-      title: 'Text Size',
+      title: l10n.textSize,
       icon: Icons.text_fields,
       children: [
         Padding(
@@ -288,9 +297,9 @@ class _AccessibilityPreferencesScreenState
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Text Scale',
-                    style: TextStyle(
+                  Text(
+                    l10n.textScale,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -317,7 +326,7 @@ class _AccessibilityPreferencesScreenState
               ),
               const SizedBox(height: 8),
               Text(
-                'Adjust the size of text throughout the app',
+                l10n.adjustTextSize,
                 style: TextStyle(
                   color: Colors.white.withValues(alpha:0.7),
                   fontSize: 14,
@@ -332,7 +341,7 @@ class _AccessibilityPreferencesScreenState
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
-                  'Sample Text Preview',
+                  l10n.sampleTextPreview,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16 * currentScale,
@@ -410,7 +419,7 @@ class _AccessibilityPreferencesScreenState
                     size: 18,
                   ),
                   label: Text(
-                    'Use System Default',
+                    l10n.useSystemDefault,
                     style: TextStyle(
                       color: Colors.white.withValues(alpha:0.7),
                     ),
@@ -464,17 +473,19 @@ class _AccessibilityPreferencesScreenState
   }
 
   String _getScaleLabel(double scale) {
-    if (scale <= 0.8) return 'Small';
-    if (scale <= 1.0) return 'Default';
-    if (scale <= 1.2) return 'Large';
-    if (scale <= 1.5) return 'Extra Large';
-    return 'Maximum';
+    final l10n = AppLocalizations.of(context);
+    if (scale <= 0.8) return l10n.small;
+    if (scale <= 1.0) return l10n.default_;
+    if (scale <= 1.2) return l10n.large;
+    if (scale <= 1.5) return l10n.extraLarge;
+    return l10n.maximum;
   }
 
   Widget _buildScreenReaderSection(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return _buildSection(
       theme: theme,
-      title: 'Screen Reader',
+      title: l10n.screenReader,
       icon: Icons.record_voice_over,
       children: [
         Semantics(
@@ -483,8 +494,8 @@ class _AccessibilityPreferencesScreenState
               ? 'Currently enabled. App is optimized for screen readers'
               : 'Currently disabled. Tap to optimize for VoiceOver and TalkBack',
           child: _buildSwitchTile(
-            title: 'Screen Reader Optimized',
-            subtitle: 'Enhance compatibility with VoiceOver and TalkBack',
+            title: l10n.screenReaderOptimized,
+            subtitle: l10n.screenReaderSubtitle,
             value: _settings.screenReaderOptimized,
             onChanged: (value) => _updateSetting(
               _settings.copyWith(screenReaderOptimized: value),
@@ -497,6 +508,7 @@ class _AccessibilityPreferencesScreenState
   }
 
   Widget _buildSystemSettingsInfo(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -518,9 +530,9 @@ class _AccessibilityPreferencesScreenState
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'System Settings',
-                  style: TextStyle(
+                Text(
+                  l10n.systemSettings,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
@@ -528,7 +540,7 @@ class _AccessibilityPreferencesScreenState
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'These settings work alongside your device\'s accessibility settings. For more options, visit your device\'s Settings > Accessibility.',
+                  l10n.systemSettingsInfo,
                   style: TextStyle(
                     color: Colors.white.withValues(alpha:0.7),
                     fontSize: 12,

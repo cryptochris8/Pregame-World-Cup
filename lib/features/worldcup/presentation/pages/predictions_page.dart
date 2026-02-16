@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -26,12 +27,13 @@ class _PredictionsPageState extends State<PredictionsPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text('My Predictions', style: TextStyle(color: Colors.white)),
+        title: Text(l10n.myPredictions, style: const TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           BlocBuilder<PredictionsCubit, PredictionsState>(
@@ -49,23 +51,23 @@ class _PredictionsPageState extends State<PredictionsPage> {
                   }
                 },
                 itemBuilder: (context) => [
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: 'evaluate',
                     child: Row(
                       children: [
-                        Icon(Icons.refresh, size: 20),
-                        SizedBox(width: 8),
-                        Text('Update Results'),
+                        const Icon(Icons.refresh, size: 20),
+                        const SizedBox(width: 8),
+                        Text(l10n.updateResults),
                       ],
                     ),
                   ),
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: 'clear',
                     child: Row(
                       children: [
-                        Icon(Icons.delete_outline, size: 20, color: Colors.red),
-                        SizedBox(width: 8),
-                        Text('Clear All', style: TextStyle(color: Colors.red)),
+                        const Icon(Icons.delete_outline, size: 20, color: Colors.red),
+                        const SizedBox(width: 8),
+                        Text(l10n.clearAll, style: const TextStyle(color: Colors.red)),
                       ],
                     ),
                   ),
@@ -113,34 +115,35 @@ class _PredictionsPageState extends State<PredictionsPage> {
   }
 
   Widget _buildFilterChips(PredictionsState state) {
+    final l10n = AppLocalizations.of(context);
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         children: [
           _buildFilterChip(
-            label: 'All',
+            label: l10n.all,
             filter: PredictionsFilter.all,
             count: state.predictions.length,
             color: Colors.blue,
           ),
           const SizedBox(width: 8),
           _buildFilterChip(
-            label: 'Pending',
+            label: l10n.pending,
             filter: PredictionsFilter.pending,
             count: state.upcomingPredictions.length,
             color: Colors.orange,
           ),
           const SizedBox(width: 8),
           _buildFilterChip(
-            label: 'Correct',
+            label: l10n.correct,
             filter: PredictionsFilter.correct,
             count: state.correctPredictions.length,
             color: Colors.green,
           ),
           const SizedBox(width: 8),
           _buildFilterChip(
-            label: 'Incorrect',
+            label: l10n.incorrect,
             filter: PredictionsFilter.incorrect,
             count: state.completedPredictions.length - state.correctPredictions.length,
             color: Colors.red,
@@ -254,6 +257,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
   }
 
   Widget _buildEmptyState(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -273,18 +277,18 @@ class _PredictionsPageState extends State<PredictionsPage> {
               ),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'No Predictions Yet',
-              style: TextStyle(
+            Text(
+              l10n.noPredictionsYet,
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Make predictions on upcoming matches\nto track your accuracy and earn points!',
-              style: TextStyle(
+            Text(
+              l10n.makePredictionsPrompt,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.white60,
               ),
@@ -297,7 +301,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
                 backgroundColor: AppTheme.secondaryEmerald,
               ),
               icon: const Icon(Icons.arrow_back),
-              label: const Text('Go to Matches'),
+              label: Text(l10n.goToMatches),
             ),
           ],
         ),
@@ -306,24 +310,25 @@ class _PredictionsPageState extends State<PredictionsPage> {
   }
 
   Widget _buildEmptyFilterState() {
+    final l10n = AppLocalizations.of(context);
     String message;
     IconData icon;
 
     switch (_filter) {
       case PredictionsFilter.pending:
-        message = 'No pending predictions';
+        message = l10n.noPendingPredictions;
         icon = Icons.schedule;
         break;
       case PredictionsFilter.correct:
-        message = 'No correct predictions yet';
+        message = l10n.noCorrectPredictions;
         icon = Icons.check_circle_outline;
         break;
       case PredictionsFilter.incorrect:
-        message = 'No incorrect predictions';
+        message = l10n.noIncorrectPredictions;
         icon = Icons.cancel_outlined;
         break;
       default:
-        message = 'No predictions';
+        message = l10n.noPredictions;
         icon = Icons.sports_soccer;
     }
 
@@ -387,17 +392,21 @@ class _PredictionsPageState extends State<PredictionsPage> {
   }
 
   void _deletePrediction(BuildContext context, MatchPrediction prediction) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Delete Prediction?'),
+        title: Text(l10n.deletePrediction),
         content: Text(
-          'Delete your prediction for ${prediction.homeTeamName ?? prediction.homeTeamCode} vs ${prediction.awayTeamName ?? prediction.awayTeamCode}?',
+          l10n.deletePredictionConfirm(
+            prediction.homeTeamName ?? prediction.homeTeamCode ?? '',
+            prediction.awayTeamName ?? prediction.awayTeamCode ?? '',
+          ),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           FilledButton(
             onPressed: () {
@@ -407,7 +416,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
             style: FilledButton.styleFrom(
               backgroundColor: Colors.red,
             ),
-            child: const Text('Delete'),
+            child: Text(l10n.delete),
           ),
         ],
       ),
@@ -415,17 +424,16 @@ class _PredictionsPageState extends State<PredictionsPage> {
   }
 
   void _showClearConfirmation(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Clear All Predictions?'),
-        content: const Text(
-          'This will permanently delete all your predictions. This action cannot be undone.',
-        ),
+        title: Text(l10n.clearAllPredictions),
+        content: Text(l10n.clearAllPredictionsConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           FilledButton(
             onPressed: () {
@@ -435,7 +443,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
             style: FilledButton.styleFrom(
               backgroundColor: Colors.red,
             ),
-            child: const Text('Clear All'),
+            child: Text(l10n.clearAll),
           ),
         ],
       ),
@@ -537,12 +545,12 @@ class _PredictionDetailsSheet extends StatelessWidget {
                   : prediction.resultCorrect
                       ? Icons.check
                       : Icons.close,
-              label: 'Result',
+              label: AppLocalizations.of(context).result,
               value: prediction.exactScoreCorrect
-                  ? 'Exact Score!'
+                  ? AppLocalizations.of(context).exactScore
                   : prediction.resultCorrect
-                      ? 'Correct Result'
-                      : 'Incorrect',
+                      ? AppLocalizations.of(context).correctResult
+                      : AppLocalizations.of(context).incorrect,
               valueColor: prediction.exactScoreCorrect
                   ? Colors.green
                   : prediction.resultCorrect
@@ -555,7 +563,7 @@ class _PredictionDetailsSheet extends StatelessWidget {
             _buildInfoRow(
               context,
               icon: Icons.emoji_events,
-              label: 'Points Earned',
+              label: AppLocalizations.of(context).pointsEarned,
               value: '${prediction.pointsEarned}',
               valueColor: prediction.pointsEarned > 0 ? Colors.amber.shade700 : null,
             ),
@@ -563,8 +571,8 @@ class _PredictionDetailsSheet extends StatelessWidget {
             _buildInfoRow(
               context,
               icon: Icons.schedule,
-              label: 'Status',
-              value: 'Pending',
+              label: AppLocalizations.of(context).status,
+              value: AppLocalizations.of(context).pending,
               valueColor: Colors.orange,
             ),
           ],

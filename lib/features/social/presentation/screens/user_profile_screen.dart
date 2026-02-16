@@ -5,6 +5,7 @@ import '../../domain/services/social_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
 import '../../../settings/presentation/screens/accessibility_preferences_screen.dart';
@@ -76,7 +77,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
         setState(() => _isLoading = false);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: const Text('Error loading profile'),
+            content: Text(AppLocalizations.of(context).errorLoadingProfile),
             backgroundColor: Colors.red.shade700,
           ),
         );
@@ -94,7 +95,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: const Text('Error signing out'),
+            content: Text(AppLocalizations.of(context).errorSigningOut),
             backgroundColor: Colors.red.shade700,
           ),
         );
@@ -104,6 +105,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,
@@ -132,7 +134,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                       ),
                     Expanded(
                       child: Text(
-                        _isCurrentUser ? 'My Profile' : (_profile?.displayName ?? 'Profile'),
+                        _isCurrentUser ? l10n.myProfile : (_profile?.displayName ?? 'Profile'),
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -152,7 +154,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                           );
                         },
                         icon: const Icon(Icons.accessibility_new, color: Colors.white),
-                        tooltip: 'Accessibility Settings',
+                        tooltip: l10n.accessibilitySettings,
                       ),
                       IconButton(
                         onPressed: () {
@@ -164,12 +166,12 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                           );
                         },
                         icon: const Icon(Icons.schedule, color: Colors.white),
-                        tooltip: 'Timezone Settings',
+                        tooltip: l10n.timezoneSettings,
                       ),
                       IconButton(
                         onPressed: _signOut,
                         icon: const Icon(Icons.logout, color: Colors.white),
-                        tooltip: 'Sign Out',
+                        tooltip: l10n.signOut,
                       ),
                     ],
                   ],
@@ -269,7 +271,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 
                 // User Name
                 Text(
-                  _profile?.displayName ?? currentUser?.displayName ?? 'Sports Fan',
+                  _profile?.displayName ?? currentUser?.displayName ?? AppLocalizations.of(context).sportsFan,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 24,
@@ -337,7 +339,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                       ),
                     ),
                     child: Text(
-                      'Pregame Fan Since ${_formatJoinDate(currentUser!.metadata.creationTime!)}',
+                      AppLocalizations.of(context).pregameFanSince(_formatJoinDate(currentUser!.metadata.creationTime!)),
                       style: const TextStyle(
                         color: Colors.orange,
                         fontSize: 12,
@@ -355,11 +357,11 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Row(
             children: [
               Expanded(
-                child: _buildStatCard('Games Tracked', '0', Icons.sports_soccer),
+                child: _buildStatCard(AppLocalizations.of(context).gamesTracked, '0', Icons.sports_soccer),
               ),
               const SizedBox(width: 16),
               Expanded(
-                child: _buildStatCard('Friends', '0', Icons.people),
+                child: _buildStatCard(AppLocalizations.of(context).friends, '0', Icons.people),
               ),
             ],
           ),
@@ -369,11 +371,11 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Row(
             children: [
               Expanded(
-                child: _buildStatCard('Teams', '0', Icons.star),
+                child: _buildStatCard(AppLocalizations.of(context).teams, '0', Icons.star),
               ),
               const SizedBox(width: 16),
               Expanded(
-                child: _buildStatCard('Venues', '0', Icons.location_on),
+                child: _buildStatCard(AppLocalizations.of(context).venues, '0', Icons.location_on),
               ),
             ],
           ),
@@ -392,8 +394,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 );
               },
               child: _buildActiveFeatureCard(
-                'Accessibility',
-                'Customize text size, contrast, motion, and more',
+                AppLocalizations.of(context).accessibilitySettings,
+                AppLocalizations.of(context).accessibilityCustomizeDesc,
                 Icons.accessibility_new,
               ),
             ),
@@ -419,8 +421,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 }
               },
               child: _buildActiveFeatureCard(
-                'Profile Customization',
-                'Upload photos, set favorite teams, and personalize your sports fan profile',
+                AppLocalizations.of(context).profileCustomization,
+                AppLocalizations.of(context).profileCustomizationDesc,
                 Icons.edit,
               ),
             ),
@@ -428,16 +430,16 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           const SizedBox(height: 16),
           
           _buildFeatureCard(
-            'Activity Feed',
-            'Track your game predictions, venue check-ins, and social interactions',
+            AppLocalizations.of(context).activityFeed,
+            AppLocalizations.of(context).activityFeedDesc,
             Icons.timeline,
           ),
-          
+
           const SizedBox(height: 16),
-          
+
           _buildFeatureCard(
-            'Achievements',
-            'Unlock badges for predictions, social activity, and venue discoveries',
+            AppLocalizations.of(context).achievements,
+            AppLocalizations.of(context).achievementsDesc,
             Icons.emoji_events,
           ),
         ],

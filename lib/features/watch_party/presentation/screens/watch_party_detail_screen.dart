@@ -9,6 +9,7 @@ import '../widgets/widgets.dart';
 import '../../domain/entities/watch_party.dart';
 import '../../domain/entities/watch_party_member.dart';
 import '../../domain/services/watch_party_payment_service.dart';
+import '../../../../l10n/app_localizations.dart';
 import 'invite_friends_screen.dart';
 import 'edit_watch_party_screen.dart';
 
@@ -69,7 +70,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
         }
         if (state is WatchPartyJoined) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Successfully joined!')),
+            SnackBar(content: Text(AppLocalizations.of(context).successfullyJoined)),
           );
           _loadWatchParty();
         }
@@ -94,7 +95,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
           body: Center(
             child: ElevatedButton(
               onPressed: _loadWatchParty,
-              child: const Text('Reload'),
+              child: Text(AppLocalizations.of(context).reload),
             ),
           ),
         );
@@ -114,41 +115,44 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
           if (state.isHost)
             PopupMenuButton<String>(
               onSelected: (value) => _handleMenuAction(value, state),
-              itemBuilder: (context) => [
-                const PopupMenuItem(
-                  value: 'edit',
-                  child: Text('Edit Party'),
-                ),
-                const PopupMenuItem(
-                  value: 'invite',
-                  child: Text('Invite Friends'),
-                ),
-                if (watchParty.isUpcoming)
-                  const PopupMenuItem(
-                    value: 'start',
-                    child: Text('Start Party'),
+              itemBuilder: (context) {
+                final l10n = AppLocalizations.of(context);
+                return [
+                  PopupMenuItem(
+                    value: 'edit',
+                    child: Text(l10n.editParty),
                   ),
-                if (watchParty.isLive)
-                  const PopupMenuItem(
-                    value: 'end',
-                    child: Text('End Party'),
+                  PopupMenuItem(
+                    value: 'invite',
+                    child: Text(l10n.inviteFriends),
                   ),
-                const PopupMenuDivider(),
-                const PopupMenuItem(
-                  value: 'cancel',
-                  child: Text(
-                    'Cancel Party',
-                    style: TextStyle(color: Colors.red),
+                  if (watchParty.isUpcoming)
+                    PopupMenuItem(
+                      value: 'start',
+                      child: Text(l10n.startParty),
+                    ),
+                  if (watchParty.isLive)
+                    PopupMenuItem(
+                      value: 'end',
+                      child: Text(l10n.endParty),
+                    ),
+                  const PopupMenuDivider(),
+                  PopupMenuItem(
+                    value: 'cancel',
+                    child: Text(
+                      l10n.cancelParty,
+                      style: const TextStyle(color: Colors.red),
+                    ),
                   ),
-                ),
-              ],
+                ];
+              },
             ),
         ],
         bottom: TabBar(
           controller: _tabController,
-          tabs: const [
-            Tab(text: 'Details'),
-            Tab(text: 'Chat'),
+          tabs: [
+            Tab(text: AppLocalizations.of(context).details),
+            Tab(text: AppLocalizations.of(context).chat),
           ],
         ),
       ),
@@ -273,7 +277,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   OutlinedButton.icon(
                     onPressed: () => _openMaps(watchParty),
                     icon: const Icon(Icons.map),
-                    label: const Text('View on Map'),
+                    label: Text(AppLocalizations.of(context).viewOnMap),
                   ),
                 ],
               ),
@@ -294,7 +298,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
 
           // Members section
           Text(
-            'Attendees (${state.members.length})',
+            AppLocalizations.of(context).attendeesWithCount(state.members.length),
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18,
@@ -357,6 +361,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   }
 
   Widget _buildEmptyChatState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -364,12 +369,12 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
           Icon(Icons.chat_bubble_outline, size: 64, color: Colors.grey[300]),
           const SizedBox(height: 16),
           Text(
-            'No messages yet',
+            l10n.noMessagesYetChat,
             style: TextStyle(color: Colors.grey[600]),
           ),
           const SizedBox(height: 8),
           Text(
-            'Be the first to say hello!',
+            l10n.beFirstToSayHello,
             style: TextStyle(color: Colors.grey[500], fontSize: 12),
           ),
         ],
@@ -406,7 +411,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   ),
                   if (watchParty.hasSpots)
                     Text(
-                      '${watchParty.availableSpots} spots left',
+                      AppLocalizations.of(context).spotsLeft(watchParty.availableSpots),
                       style: TextStyle(
                         color: Colors.grey[600],
                         fontSize: 12,
@@ -418,7 +423,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
             if (watchParty.hasSpots)
               ElevatedButton(
                 onPressed: () => _handleJoin(WatchPartyAttendanceType.inPerson),
-                child: const Text('Join In Person'),
+                child: Text(AppLocalizations.of(context).joinInPerson),
               ),
           ],
         ),
@@ -427,25 +432,26 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   }
 
   Widget _buildStatusBadge(WatchPartyStatus status) {
+    final l10n = AppLocalizations.of(context);
     Color color;
     String label;
 
     switch (status) {
       case WatchPartyStatus.upcoming:
         color = const Color(0xFF1E3A8A);
-        label = 'Upcoming';
+        label = l10n.upcoming;
         break;
       case WatchPartyStatus.live:
         color = const Color(0xFFDC2626);
-        label = 'LIVE';
+        label = l10n.live;
         break;
       case WatchPartyStatus.ended:
         color = Colors.grey;
-        label = 'Ended';
+        label = l10n.ended;
         break;
       case WatchPartyStatus.cancelled:
         color = Colors.grey;
-        label = 'Cancelled';
+        label = l10n.cancelled;
         break;
     }
 
@@ -468,15 +474,16 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   }
 
   String? _getChatDisabledMessage(WatchPartyDetailLoaded state) {
+    final l10n = AppLocalizations.of(context);
     if (!state.isMember) {
-      return 'Join the party to chat';
+      return l10n.joinPartToChat;
     }
     if (state.currentUserMember?.isMuted == true) {
-      return 'You have been muted';
+      return l10n.youHaveBeenMuted;
     }
     if (state.currentUserMember?.isVirtual == true &&
         state.currentUserMember?.hasPaid != true) {
-      return 'Pay for virtual attendance to chat';
+      return l10n.payForVirtualToChat;
     }
     return null;
   }
@@ -520,17 +527,16 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   }
 
   void _showCancelConfirmation() {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Cancel Watch Party?'),
-        content: const Text(
-          'This action cannot be undone. All attendees will be notified.',
-        ),
+        title: Text(l10n.cancelWatchParty),
+        content: Text(l10n.cancelWatchPartyConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Keep'),
+            child: Text(l10n.keep),
           ),
           TextButton(
             onPressed: () {
@@ -540,7 +546,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   );
             },
             style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Cancel Party'),
+            child: Text(l10n.cancelParty),
           ),
         ],
       ),
@@ -576,15 +582,16 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   }
 
   void _handleRemoveMember(WatchPartyMember member) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Remove Member?'),
-        content: Text('Remove ${member.displayName} from the watch party?'),
+        title: Text(l10n.removeMember),
+        content: Text(l10n.removeMemberConfirm(member.displayName)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () {
@@ -597,7 +604,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   );
             },
             style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Remove'),
+            child: Text(l10n.remove),
           ),
         ],
       ),
@@ -654,8 +661,8 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
       } else {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Could not open maps'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).couldNotOpenMaps),
               backgroundColor: Colors.red,
             ),
           );
@@ -665,7 +672,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Error opening maps: $e'),
+            content: Text(AppLocalizations.of(context).errorOpeningMaps(e.toString())),
             backgroundColor: Colors.red,
           ),
         );

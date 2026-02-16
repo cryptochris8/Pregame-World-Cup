@@ -3,10 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../bloc/schedule_bloc.dart';
-import '../../domain/entities/game_schedule.dart';
-import '../widgets/live_score_card.dart';
-import '../widgets/schedule_game_card.dart';
-import '../widgets/schedule_social_game_card.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../auth/presentation/screens/favorite_teams_screen.dart';
 import '../../../../injection_container.dart';
@@ -14,6 +10,9 @@ import '../../../../core/services/cache_service.dart';
 import '../../../../config/theme_helper.dart';
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'schedule_live_scores_tab.dart';
+import 'schedule_games_tab.dart';
+import 'schedule_social_tab.dart';
 
 /// Enhanced schedule screen with live scores and social features
 class EnhancedScheduleScreen extends StatefulWidget {
@@ -36,13 +35,13 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
-    
+
     // Start live score refresh timer
     _startLiveScoreTimer();
-    
+
     // Load initial data and favorite teams
     _loadFavoriteTeams();
-    
+
     // Delay API calls until after the widget is built to prevent UI blocking
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
@@ -63,17 +62,16 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   Future<void> _loadFavoriteTeams() async {
     try {
       List<String> favorites = [];
-      
+
       final userId = _authService.currentUser?.uid;
-      // Loading user favorites
-      
+
       if (userId != null) {
         try {
           final userDoc = await FirebaseFirestore.instance
               .collection('users')
               .doc(userId)
               .get();
-          
+
           if (userDoc.exists && userDoc.data()?['favoriteTeams'] != null) {
             favorites = List<String>.from(userDoc.data()!['favoriteTeams']);
           } else {
@@ -91,7 +89,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
         final prefs = await SharedPreferences.getInstance();
         favorites = prefs.getStringList('favorite_teams') ?? [];
       }
-      
+
       if (mounted) {
         setState(() {
           _favoriteTeams = favorites;
@@ -122,7 +120,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
   void _startLiveScoreTimer() {
     // Cancel any existing timer first
     _liveScoreTimer?.cancel();
-    
+
     // Start a timer to refresh live scores every 30 seconds
     _liveScoreTimer = Timer.periodic(const Duration(seconds: 30), (timer) {
       if (mounted) {
@@ -195,7 +193,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
             ),
           ],
         ),
-        backgroundColor: ThemeHelper.primaryColor(context), // Consistent with other screens
+        backgroundColor: ThemeHelper.primaryColor(context),
         actions: [
           // Favorite teams filter toggle
           IconButton(
@@ -203,9 +201,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               _showFavoritesOnly ? Icons.favorite : Icons.favorite_border,
               color: _showFavoritesOnly ? ThemeHelper.favoriteColor : Colors.white,
             ),
-            // Toggle filter to show only favorite team matches
             onPressed: () {
-              // Always toggle the favorites filter
               _toggleFavoritesFilter();
             },
             tooltip: _showFavoritesOnly ? l10n.showAllMatches : l10n.showFavoriteTeamsOnly,
@@ -226,7 +222,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
           // More options menu
           PopupMenuButton<String>(
             icon: const Icon(Icons.more_vert, color: Colors.white),
-            color: const Color(0xFF1E293B), // Dark surface menu background
+            color: const Color(0xFF1E293B),
             onSelected: (value) async {
               switch (value) {
                 case 'teams':
@@ -342,15 +338,27 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
               ],
             ),
           ),
-          
+
           // Tab content
           Expanded(
             child: TabBarView(
               controller: _tabController,
               children: [
-                _buildLiveScoresTab(),
-                _buildScheduleTab(),
-                _buildSocialTab(),
+                const ScheduleLiveScoresTab(),
+                ScheduleGamesTab(
+                  showLiveOnly: _showLiveOnly,
+                  showFavoritesOnly: _showFavoritesOnly,
+                  favoriteTeams: _favoriteTeams,
+                  onRefresh: () {
+                    if (mounted) setState(() {});
+                  },
+                  onLoadFavoriteTeams: _loadFavoriteTeams,
+                ),
+                ScheduleSocialTab(
+                  onRefresh: () {
+                    if (mounted) setState(() {});
+                  },
+                ),
               ],
             ),
           ),
@@ -358,430 +366,4 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
       ),
     );
   }
-
-  Widget _buildLiveScoresTab() {
-    return BlocBuilder<ScheduleBloc, ScheduleState>(
-      builder: (context, state) {
-        if (state is ScheduleLoading) {
-          return const Center(
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
-            ),
-          );
-        } else if (state is ScheduleLoaded || state is UpcomingGamesLoaded) {
-          // Start with filtered schedule (respects favorite teams filter)
-          List<GameSchedule> filteredGames;
-          if (state is ScheduleLoaded) {
-            filteredGames = state.filteredSchedule;
-          } else {
-            filteredGames = (state as UpcomingGamesLoaded).filteredUpcomingGames;
-          }
-          
-          // Then filter for live games only
-          final liveGames = filteredGames.where((game) => 
-            game.isLive == true || 
-            game.status?.toLowerCase().contains('progress') == true ||
-            game.status?.toLowerCase().contains('quarter') == true ||
-            game.status?.toLowerCase().contains('half') == true
-          ).toList();
-          
-          // Live games filtered for display
-
-          if (liveGames.isEmpty) {
-            final l10n = AppLocalizations.of(context);
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.sports_soccer,
-                    size: 64,
-                    color: ThemeHelper.favoriteColor,
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    l10n.noLiveGamesAvailable,
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    l10n.worldCupMatchesDaily,
-                    style: const TextStyle(color: Colors.white70),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 16),
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    decoration: BoxDecoration(
-                      color: Colors.orange.withValues(alpha:0.1),
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.orange.withValues(alpha:0.3)),
-                    ),
-                    child: Text(
-                      l10n.gameDayComingSoon,
-                      style: const TextStyle(
-                        color: Colors.orange,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          }
-
-          return ListView.builder(
-            padding: const EdgeInsets.all(16),
-            itemCount: liveGames.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 12),
-                child: LiveScoreCard(
-                  game: liveGames[index],
-                ),
-              );
-            },
-          );
-        }
-
-        return const SizedBox.shrink();
-      },
-    );
-  }
-
-  Widget _buildScheduleTab() {
-    return BlocBuilder<ScheduleBloc, ScheduleState>(
-      builder: (context, state) {
-        if (state is ScheduleLoading) {
-          return _buildLoadingWidget();
-        } else if (state is ScheduleError) {
-          return _buildErrorWidget(state.message);
-        } else if (state is ScheduleLoaded) {
-          return _buildGamesList(state.filteredSchedule);
-        } else if (state is UpcomingGamesLoaded) {
-          return _buildGamesList(state.filteredUpcomingGames);
-        } else if (state is WeeklyScheduleLoaded) {
-          return _buildWeeklyScheduleWidget(state);
-        } else {
-          return _buildUnknownStateWidget();
-        }
-      },
-    );
-  }
-
-  Widget _buildLoadingWidget() {
-    return const Center(
-      child: CircularProgressIndicator(
-        valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
-      ),
-    );
-  }
-
-  Widget _buildErrorWidget(String message) {
-    final l10n = AppLocalizations.of(context);
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.error_outline,
-            size: 64,
-            color: Colors.red,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            l10n.failedToLoadGames,
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            message,
-            style: const TextStyle(color: Colors.white70),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 16),
-          ElevatedButton(
-            onPressed: () {
-              context.read<ScheduleBloc>().add(const GetUpcomingGamesEvent(limit: 100));
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: ThemeHelper.favoriteColor,
-            ),
-            child: Text(l10n.retry),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildGamesList(List<GameSchedule> games) {
-    List<GameSchedule> filteredGames = List.from(games);
-
-    // Apply live filter if needed
-    if (_showLiveOnly) {
-      filteredGames = _applyLiveFilter(filteredGames);
-    }
-
-    if (filteredGames.isEmpty) {
-      return _buildEmptyGamesWidget();
-    }
-
-    return ListView.builder(
-      padding: const EdgeInsets.all(16),
-      itemCount: filteredGames.length,
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 12),
-          child: _buildGameCard(filteredGames[index]),
-        );
-      },
-    );
-  }
-
-  Widget _buildWeeklyScheduleWidget(WeeklyScheduleLoaded state) {
-    List<GameSchedule> filteredGames = List.from(state.filteredWeeklySchedule);
-
-    if (_showLiveOnly) {
-      filteredGames = _applyLiveFilter(filteredGames);
-    }
-
-    return Column(
-      children: [
-        Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(8),
-          color: Colors.orange.withValues(alpha:0.2),
-          child: Text(
-            AppLocalizations.of(context).testDataWeek(state.year, state.week),
-            style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold),
-            textAlign: TextAlign.center,
-          ),
-        ),
-        Expanded(
-          child: filteredGames.isEmpty
-              ? _buildEmptyWeeklyGamesWidget(state.year, state.week)
-              : ListView.builder(
-                  padding: const EdgeInsets.all(16),
-                  itemCount: filteredGames.length,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
-                      child: _buildGameCard(filteredGames[index]),
-                    );
-                  },
-                ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildUnknownStateWidget() {
-    final l10n = AppLocalizations.of(context);
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.error_outline,
-            size: 64,
-            color: Colors.red,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            l10n.unknownState,
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            l10n.tapToReloadSchedule,
-            style: const TextStyle(color: Colors.white70),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 16),
-          ElevatedButton(
-            onPressed: () {
-              context.read<ScheduleBloc>().add(const GetUpcomingGamesEvent(limit: 100));
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: ThemeHelper.favoriteColor,
-            ),
-            child: Text(l10n.reloadSchedule),
-          ),
-        ],
-      ),
-    );
-  }
-
-  List<GameSchedule> _applyLiveFilter(List<GameSchedule> games) {
-    return games.where((game) => 
-      game.isLive == true || 
-      game.status?.toLowerCase().contains('progress') == true ||
-      game.status?.toLowerCase().contains('quarter') == true ||
-      game.status?.toLowerCase().contains('half') == true
-    ).toList();
-  }
-
-  Widget _buildEmptyGamesWidget() {
-    final l10n = AppLocalizations.of(context);
-    String emptyMessage = l10n.noGamesFound;
-    if (_showFavoritesOnly && _favoriteTeams.isNotEmpty) {
-      emptyMessage = l10n.noGamesForFavorites;
-    } else if (_showLiveOnly) {
-      emptyMessage = l10n.noLiveGames;
-    }
-
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.sports_soccer,
-            size: 64,
-            color: ThemeHelper.favoriteColor,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            emptyMessage,
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              color: Colors.white,
-            ),
-          ),
-          if (_favoriteTeams.isEmpty && _showFavoritesOnly) ...[
-            const SizedBox(height: 8),
-            Text(
-              l10n.setFavoriteTeamsPrompt,
-              style: const TextStyle(color: Colors.white70),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () async {
-                final result = await Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const FavoriteTeamsScreen()),
-                );
-                if (result != null || mounted) {
-                  await _loadFavoriteTeams();
-                }
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: ThemeHelper.favoriteColor,
-              ),
-              child: Text(l10n.setFavoriteTeams),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-
-  Widget _buildEmptyWeeklyGamesWidget(int year, int week) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.sports_soccer,
-            size: 64,
-            color: ThemeHelper.favoriteColor,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            AppLocalizations.of(context).noGamesForWeek(year, week),
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              color: Colors.white,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildSocialTab() {
-    return BlocBuilder<ScheduleBloc, ScheduleState>(
-      builder: (context, state) {
-        if (state is ScheduleLoading) {
-          return const Center(
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
-            ),
-          );
-        } else if (state is ScheduleLoaded) {
-          // Show upcoming games with social features
-          final upcomingGames = state.schedule.where((game) => 
-            game.dateTimeUTC != null && 
-            game.dateTimeUTC!.isAfter(DateTime.now()) &&
-            game.status != 'Final'
-          ).toList();
-
-          if (upcomingGames.isEmpty) {
-            final l10n = AppLocalizations.of(context);
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.groups,
-                    size: 64,
-                    color: ThemeHelper.favoriteColor,
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    l10n.noUpcomingGames,
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    l10n.socialFeaturesAvailable,
-                    style: const TextStyle(color: Colors.white70),
-                    textAlign: TextAlign.center,
-                  ),
-                ],
-              ),
-            );
-          }
-
-          return ListView.builder(
-            padding: const EdgeInsets.all(16),
-            itemCount: upcomingGames.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 12),
-                child: _buildSocialGameCard(upcomingGames[index]),
-              );
-            },
-          );
-        }
-
-        return const SizedBox.shrink();
-      },
-    );
-  }
-
-  Widget _buildGameCard(GameSchedule game) {
-    return ScheduleGameCard(
-      game: game,
-      favoriteTeams: _favoriteTeams,
-      onRefresh: () {
-        if (mounted) setState(() {});
-      },
-    );
-  }
-
-  Widget _buildSocialGameCard(GameSchedule game) {
-    return ScheduleSocialGameCard(
-      game: game,
-      onRefresh: () {
-        if (mounted) setState(() {});
-      },
-    );
-  }
-} 
+}

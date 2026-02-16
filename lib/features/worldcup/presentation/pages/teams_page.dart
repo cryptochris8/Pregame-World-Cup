@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -31,12 +32,13 @@ class _TeamsPageState extends State<TeamsPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text('Teams', style: TextStyle(color: Colors.white)),
+        title: Text(l10n.teams, style: const TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           IconButton(
@@ -87,7 +89,7 @@ class _TeamsPageState extends State<TeamsPage> {
                       foregroundColor: Colors.white,
                     ),
                     onPressed: () => context.read<TeamsCubit>().loadTeams(),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -103,7 +105,7 @@ class _TeamsPageState extends State<TeamsPage> {
                   controller: _searchController,
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
-                    hintText: 'Search teams...',
+                    hintText: l10n.searchTeams,
                     hintStyle: const TextStyle(color: Colors.white38),
                     prefixIcon: const Icon(Icons.search, color: Colors.white60),
                     suffixIcon: _searchController.text.isNotEmpty
@@ -156,7 +158,7 @@ class _TeamsPageState extends State<TeamsPage> {
                 child: Row(
                   children: [
                     Text(
-                      '${state.displayTeams.length} teams',
+                      l10n.teamsCountSimple(state.displayTeams.length),
                       style: const TextStyle(
                         color: Colors.white60,
                         fontWeight: FontWeight.w500,
@@ -168,7 +170,7 @@ class _TeamsPageState extends State<TeamsPage> {
                       TextButton(
                         onPressed: () =>
                             context.read<TeamsCubit>().clearFilters(),
-                        child: const Text('Clear filters', style: TextStyle(color: AppTheme.accentGold)),
+                        child: Text(l10n.clearFilters, style: const TextStyle(color: AppTheme.accentGold)),
                       ),
                     ],
                   ],
@@ -249,23 +251,24 @@ class _TeamsPageState extends State<TeamsPage> {
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(Icons.search_off, size: 64, color: Colors.white.withValues(alpha:0.3)),
           const SizedBox(height: 16),
-          const Text(
-            'No teams found',
-            style: TextStyle(
+          Text(
+            l10n.noTeamsFound,
+            style: const TextStyle(
               fontSize: 16,
               color: Colors.white70,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Try adjusting your search or filters',
-            style: TextStyle(
+          Text(
+            l10n.tryAdjustingFilters,
+            style: const TextStyle(
               fontSize: 14,
               color: Colors.white38,
             ),

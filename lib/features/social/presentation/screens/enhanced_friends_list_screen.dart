@@ -13,6 +13,7 @@ import 'user_search_screen.dart';
 import 'user_profile_screen.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../messaging/domain/services/messaging_service.dart';
 import '../../../messaging/presentation/screens/chat_screen.dart';
 
@@ -177,9 +178,9 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
               children: [
                 TeamLogoHelper.getPregameLogo(height: 32),
                 const SizedBox(width: 8),
-                const Text(
-                  'Friends',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context).friends,
+                  style: const TextStyle(
                         fontWeight: FontWeight.w800,
                     fontSize: 20,
                     color: Colors.white,
@@ -235,9 +236,9 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
               fontSize: 16,
             ),
             tabs: [
-              _buildBadgedTab('Friends', _friends.length),
-              _buildBadgedTab('Requests', _pendingRequests.length),
-              const Tab(text: 'Sent'),
+              _buildBadgedTab(AppLocalizations.of(context).friends, _friends.length),
+              _buildBadgedTab(AppLocalizations.of(context).requests, _pendingRequests.length),
+              Tab(text: AppLocalizations.of(context).sent),
             ],
           ),
         ),
@@ -290,17 +291,17 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
   }
 
   Widget _buildLoadingState() {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircularProgressIndicator(
+          const CircularProgressIndicator(
             valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF8B4513)),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Text(
-            'Loading friends...',
-            style: TextStyle(fontSize: 16, color: Colors.grey),
+            AppLocalizations.of(context).loadingFriends,
+            style: const TextStyle(fontSize: 16, color: Colors.grey),
           ),
         ],
       ),
@@ -434,8 +435,8 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Friend request accepted!'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).friendRequestAccepted),
           backgroundColor: Colors.green,
         ),
       );
@@ -451,16 +452,16 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Friend request declined'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).friendRequestDeclined),
           backgroundColor: Colors.orange,
         ),
       );
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Failed to decline friend request'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).failedToDecline),
           backgroundColor: Colors.red,
         ),
       );
@@ -474,16 +475,16 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Friend request cancelled'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).friendRequestCancelled),
           backgroundColor: Colors.grey,
         ),
       );
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Failed to cancel friend request'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).failedToCancelRequest),
           backgroundColor: Colors.red,
         ),
       );
@@ -506,7 +507,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('${friend.displayName} removed from friends'),
+              content: Text(AppLocalizations.of(context).removedFromFriends(friend.displayName)),
               backgroundColor: Colors.orange,
             ),
           );
@@ -515,7 +516,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to remove ${friend.displayName}'),
+            content: Text(AppLocalizations.of(context).failedToRemove(friend.displayName)),
             backgroundColor: Colors.red,
           ),
         );
@@ -539,7 +540,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
           if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('${friend.displayName} has been blocked'),
+              content: Text(AppLocalizations.of(context).userBlocked(friend.displayName)),
               backgroundColor: Colors.red,
             ),
           );
@@ -548,7 +549,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to block ${friend.displayName}'),
+            content: Text(AppLocalizations.of(context).failedToBlock(friend.displayName)),
             backgroundColor: Colors.red,
           ),
         );
@@ -567,9 +568,9 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
   Future<void> _startMessage(UserProfile friend) async {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Opening chat...'),
-        duration: Duration(seconds: 1),
+      SnackBar(
+        content: Text(AppLocalizations.of(context).openingChat),
+        duration: const Duration(seconds: 1),
       ),
     );
 
@@ -589,8 +590,8 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         );
       } else if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Unable to start chat. User may be blocked.'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).unableToStartChat),
             backgroundColor: Colors.red,
           ),
         );
@@ -599,7 +600,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to start chat: $e'),
+            content: Text(AppLocalizations.of(context).failedToStartChat(e.toString())),
             backgroundColor: Colors.red,
           ),
         );

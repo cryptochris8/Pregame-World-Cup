@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -15,6 +16,7 @@ class TeamsTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return BlocBuilder<TeamsCubit, TeamsState>(
       builder: (context, state) {
         if (state.isLoading) {
@@ -43,7 +45,7 @@ class TeamsTab extends StatelessWidget {
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ),
               ],
@@ -89,7 +91,7 @@ class TeamsTab extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              'Favorites',
+                              l10n.favorites,
                               style: TextStyle(
                                 color: state.showFavoritesOnly ? Colors.white : Colors.white70,
                               ),
@@ -148,7 +150,7 @@ class TeamsTab extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        '${displayTeams.length} of 48 teams',
+                        l10n.teamsOfTotal(displayTeams.length, 48),
                         style: const TextStyle(
                           color: Colors.white60,
                           fontSize: 12,
@@ -157,9 +159,9 @@ class TeamsTab extends StatelessWidget {
                       if (state.selectedConfederation != null || state.showFavoritesOnly)
                         TextButton(
                           onPressed: () => context.read<TeamsCubit>().clearFilters(),
-                          child: const Text(
-                            'Clear',
-                            style: TextStyle(
+                          child: Text(
+                            l10n.clear,
+                            style: const TextStyle(
                               fontSize: 12,
                               color: AppTheme.primaryOrange,
                             ),
@@ -172,23 +174,23 @@ class TeamsTab extends StatelessWidget {
                 // Teams list
                 Expanded(
                   child: displayTeams.isEmpty
-                      ? const Center(
+                      ? Center(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.favorite_border, size: 64, color: Colors.white38),
-                              SizedBox(height: 16),
+                              const Icon(Icons.favorite_border, size: 64, color: Colors.white38),
+                              const SizedBox(height: 16),
                               Text(
-                                'No favorite teams yet',
-                                style: TextStyle(
+                                l10n.noFavoriteTeamsYet,
+                                style: const TextStyle(
                                   fontSize: 16,
                                   color: Colors.white60,
                                 ),
                               ),
-                              SizedBox(height: 8),
+                              const SizedBox(height: 8),
                               Text(
-                                'Tap the heart icon on any team to add it to your favorites',
-                                style: TextStyle(
+                                l10n.tapHeartIconToAddFavorites,
+                                style: const TextStyle(
                                   fontSize: 14,
                                   color: Colors.white38,
                                 ),

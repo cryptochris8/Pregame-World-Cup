@@ -2717,6 +2717,966 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Shared from Pregame World Cup 2026'**
   String get sharedFromPregame;
+
+  /// Live match indicator with minute
+  ///
+  /// In en, this message translates to:
+  /// **'Match in progress - {minute}\''**
+  String matchInProgressWithMinute(String minute);
+
+  /// Live match indicator
+  ///
+  /// In en, this message translates to:
+  /// **'Match in progress'**
+  String get matchInProgress;
+
+  /// Button to show all nearby venues
+  ///
+  /// In en, this message translates to:
+  /// **'Show all {count} venues'**
+  String showAllVenues(int count);
+
+  /// Superfan gate message for AI match insights
+  ///
+  /// In en, this message translates to:
+  /// **'Get AI-powered match analysis, historical insights, and key player matchups with Superfan Pass.'**
+  String get aiMatchAnalysisGate;
+
+  /// Host nation badge label
+  ///
+  /// In en, this message translates to:
+  /// **'Host Nation'**
+  String get hostNation;
+
+  /// FIFA ranking stat label
+  ///
+  /// In en, this message translates to:
+  /// **'FIFA Ranking'**
+  String get fifaRanking;
+
+  /// World Cup titles stat label
+  ///
+  /// In en, this message translates to:
+  /// **'World Cup Titles'**
+  String get worldCupTitles;
+
+  /// Group label
+  ///
+  /// In en, this message translates to:
+  /// **'Group'**
+  String get group;
+
+  /// Team information section title
+  ///
+  /// In en, this message translates to:
+  /// **'Team Information'**
+  String get teamInformation;
+
+  /// Country label
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get country;
+
+  /// FIFA code label
+  ///
+  /// In en, this message translates to:
+  /// **'FIFA Code'**
+  String get fifaCode;
+
+  /// Confederation label
+  ///
+  /// In en, this message translates to:
+  /// **'Confederation'**
+  String get confederation;
+
+  /// Short name label
+  ///
+  /// In en, this message translates to:
+  /// **'Short Name'**
+  String get shortName;
+
+  /// World Cup history section title
+  ///
+  /// In en, this message translates to:
+  /// **'World Cup History'**
+  String get worldCupHistory;
+
+  /// Number of titles
+  ///
+  /// In en, this message translates to:
+  /// **'{count} {count, plural, =1{Title} other{Titles}}'**
+  String titleCount(int count);
+
+  /// Message when team has no WC titles
+  ///
+  /// In en, this message translates to:
+  /// **'No World Cup titles yet'**
+  String get noWorldCupTitlesYet;
+
+  /// Group with letter
+  ///
+  /// In en, this message translates to:
+  /// **'Group {letter}'**
+  String groupLabel(String letter);
+
+  /// View standings button
+  ///
+  /// In en, this message translates to:
+  /// **'View Standings'**
+  String get viewStandings;
+
+  /// Group info helper text
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to see full group standings and matches'**
+  String get tapToSeeGroupStandings;
+
+  /// Placeholder for team matches
+  ///
+  /// In en, this message translates to:
+  /// **'Team matches will appear here'**
+  String get teamMatchesWillAppear;
+
+  /// View all button
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get viewAll;
+
+  /// Search teams hint
+  ///
+  /// In en, this message translates to:
+  /// **'Search teams...'**
+  String get searchTeams;
+
+  /// Simple team count
+  ///
+  /// In en, this message translates to:
+  /// **'{count} teams'**
+  String teamsCountSimple(int count);
+
+  /// No teams found message
+  ///
+  /// In en, this message translates to:
+  /// **'No teams found'**
+  String get noTeamsFound;
+
+  /// Hint when no teams found
+  ///
+  /// In en, this message translates to:
+  /// **'Try adjusting your search or filters'**
+  String get tryAdjustingFilters;
+
+  /// My predictions page title
+  ///
+  /// In en, this message translates to:
+  /// **'My Predictions'**
+  String get myPredictions;
+
+  /// Update results menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Update Results'**
+  String get updateResults;
+
+  /// Clear all menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get clearAll;
+
+  /// All filter label
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// Pending filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get pending;
+
+  /// Correct filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get correct;
+
+  /// Incorrect filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect'**
+  String get incorrect;
+
+  /// Empty state title for predictions
+  ///
+  /// In en, this message translates to:
+  /// **'No Predictions Yet'**
+  String get noPredictionsYet;
+
+  /// Empty state description for predictions
+  ///
+  /// In en, this message translates to:
+  /// **'Make predictions on upcoming matches\nto track your accuracy and earn points!'**
+  String get makePredictionsPrompt;
+
+  /// Go to matches button
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Matches'**
+  String get goToMatches;
+
+  /// No pending predictions message
+  ///
+  /// In en, this message translates to:
+  /// **'No pending predictions'**
+  String get noPendingPredictions;
+
+  /// No correct predictions message
+  ///
+  /// In en, this message translates to:
+  /// **'No correct predictions yet'**
+  String get noCorrectPredictions;
+
+  /// No incorrect predictions message
+  ///
+  /// In en, this message translates to:
+  /// **'No incorrect predictions'**
+  String get noIncorrectPredictions;
+
+  /// No predictions message
+  ///
+  /// In en, this message translates to:
+  /// **'No predictions'**
+  String get noPredictions;
+
+  /// Delete prediction dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Prediction?'**
+  String get deletePrediction;
+
+  /// Delete prediction confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Delete your prediction for {homeTeam} vs {awayTeam}?'**
+  String deletePredictionConfirm(String homeTeam, String awayTeam);
+
+  /// Clear all predictions dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All Predictions?'**
+  String get clearAllPredictions;
+
+  /// Clear all predictions confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'This will permanently delete all your predictions. This action cannot be undone.'**
+  String get clearAllPredictionsConfirm;
+
+  /// Exact score prediction result
+  ///
+  /// In en, this message translates to:
+  /// **'Exact Score!'**
+  String get exactScore;
+
+  /// Correct result prediction
+  ///
+  /// In en, this message translates to:
+  /// **'Correct Result'**
+  String get correctResult;
+
+  /// Result label
+  ///
+  /// In en, this message translates to:
+  /// **'Result'**
+  String get result;
+
+  /// Points earned label
+  ///
+  /// In en, this message translates to:
+  /// **'Points Earned'**
+  String get pointsEarned;
+
+  /// Status label
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get status;
+
+  /// Group standings page title
+  ///
+  /// In en, this message translates to:
+  /// **'Group Standings'**
+  String get groupStandings;
+
+  /// Group data not available
+  ///
+  /// In en, this message translates to:
+  /// **'Group {letter} data not available'**
+  String noGroupDataAvailableForGroup(String letter);
+
+  /// Qualification legend title
+  ///
+  /// In en, this message translates to:
+  /// **'Qualification'**
+  String get qualification;
+
+  /// Qualified top 2 legend
+  ///
+  /// In en, this message translates to:
+  /// **'Qualified (Top 2)'**
+  String get qualifiedTop2;
+
+  /// Possible qualification legend
+  ///
+  /// In en, this message translates to:
+  /// **'Possible Qualification (Best 3rd place)'**
+  String get possibleQualification;
+
+  /// Tiebreakers title
+  ///
+  /// In en, this message translates to:
+  /// **'Tiebreakers (in order):'**
+  String get tiebreakers;
+
+  /// Tiebreakers list
+  ///
+  /// In en, this message translates to:
+  /// **'1. Points\n2. Goal difference\n3. Goals scored\n4. Head-to-head points\n5. Fair play (yellow/red cards)\n6. Drawing of lots'**
+  String get tiebreakersList;
+
+  /// Knockout bracket page title
+  ///
+  /// In en, this message translates to:
+  /// **'Knockout Bracket'**
+  String get knockoutBracket;
+
+  /// Finals round label
+  ///
+  /// In en, this message translates to:
+  /// **'Finals'**
+  String get finals;
+
+  /// Bracket not available message
+  ///
+  /// In en, this message translates to:
+  /// **'Bracket data not available yet'**
+  String get bracketDataNotAvailable;
+
+  /// Matches not yet determined
+  ///
+  /// In en, this message translates to:
+  /// **'Matches not yet determined'**
+  String get matchesNotYetDetermined;
+
+  /// Teams set after group stage
+  ///
+  /// In en, this message translates to:
+  /// **'Teams will be set after group stage'**
+  String get teamsSetAfterGroupStage;
+
+  /// Third place playoff label
+  ///
+  /// In en, this message translates to:
+  /// **'Third Place Play-off'**
+  String get thirdPlacePlayoff;
+
+  /// Current round indicator
+  ///
+  /// In en, this message translates to:
+  /// **'Current: {round}'**
+  String currentRound(String round);
+
+  /// No bracket data message
+  ///
+  /// In en, this message translates to:
+  /// **'No bracket data'**
+  String get noBracketData;
+
+  /// No matches for selected date
+  ///
+  /// In en, this message translates to:
+  /// **'No matches scheduled for this day'**
+  String get noMatchesScheduledForDay;
+
+  /// Hint to try different date
+  ///
+  /// In en, this message translates to:
+  /// **'Try selecting a different date'**
+  String get tryDifferentDate;
+
+  /// Showing matches for date
+  ///
+  /// In en, this message translates to:
+  /// **'Showing matches for {date}'**
+  String showingMatchesFor(String date);
+
+  /// Match count
+  ///
+  /// In en, this message translates to:
+  /// **'{count} match{count, plural, =1{} other{es}}'**
+  String matchCount(int count);
+
+  /// My profile title
+  ///
+  /// In en, this message translates to:
+  /// **'My Profile'**
+  String get myProfile;
+
+  /// Accessibility settings tooltip
+  ///
+  /// In en, this message translates to:
+  /// **'Accessibility Settings'**
+  String get accessibilitySettings;
+
+  /// Timezone settings tooltip
+  ///
+  /// In en, this message translates to:
+  /// **'Timezone Settings'**
+  String get timezoneSettings;
+
+  /// Error loading profile message
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading profile'**
+  String get errorLoadingProfile;
+
+  /// Error signing out message
+  ///
+  /// In en, this message translates to:
+  /// **'Error signing out'**
+  String get errorSigningOut;
+
+  /// Default display name
+  ///
+  /// In en, this message translates to:
+  /// **'Sports Fan'**
+  String get sportsFan;
+
+  /// Fan since date
+  ///
+  /// In en, this message translates to:
+  /// **'Pregame Fan Since {date}'**
+  String pregameFanSince(String date);
+
+  /// Games tracked stat
+  ///
+  /// In en, this message translates to:
+  /// **'Games Tracked'**
+  String get gamesTracked;
+
+  /// Profile customization title
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Customization'**
+  String get profileCustomization;
+
+  /// Profile customization description
+  ///
+  /// In en, this message translates to:
+  /// **'Upload photos, set favorite teams, and personalize your sports fan profile'**
+  String get profileCustomizationDesc;
+
+  /// Activity feed description
+  ///
+  /// In en, this message translates to:
+  /// **'Track your game predictions, venue check-ins, and social interactions'**
+  String get activityFeedDesc;
+
+  /// Achievements title
+  ///
+  /// In en, this message translates to:
+  /// **'Achievements'**
+  String get achievements;
+
+  /// Achievements description
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock badges for predictions, social activity, and venue discoveries'**
+  String get achievementsDesc;
+
+  /// Accessibility customize description
+  ///
+  /// In en, this message translates to:
+  /// **'Customize text size, contrast, motion, and more'**
+  String get accessibilityCustomizeDesc;
+
+  /// Find friends screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Find Friends'**
+  String get findFriends;
+
+  /// Search hint for user search
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name or favorite team...'**
+  String get searchByNameOrTeam;
+
+  /// Empty state for user search
+  ///
+  /// In en, this message translates to:
+  /// **'Search for friends by name or favorite team'**
+  String get searchForFriends;
+
+  /// No users found message
+  ///
+  /// In en, this message translates to:
+  /// **'No users found for \"{query}\"'**
+  String noUsersFound(String query);
+
+  /// Hint for no search results
+  ///
+  /// In en, this message translates to:
+  /// **'Try searching for a different name or team'**
+  String get tryDifferentSearch;
+
+  /// Add button label
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get add;
+
+  /// Friend request sent confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Friend request sent to {name}'**
+  String friendRequestSentTo(String name);
+
+  /// Failed to send friend request error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send friend request'**
+  String get failedToSendFriendRequest;
+
+  /// Error sending friend request
+  ///
+  /// In en, this message translates to:
+  /// **'Error sending friend request'**
+  String get errorSendingFriendRequest;
+
+  /// Error searching users
+  ///
+  /// In en, this message translates to:
+  /// **'Error searching users. Please try again.'**
+  String get errorSearchingUsers;
+
+  /// Requests tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Requests'**
+  String get requests;
+
+  /// Sent tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Sent'**
+  String get sent;
+
+  /// Loading friends message
+  ///
+  /// In en, this message translates to:
+  /// **'Loading friends...'**
+  String get loadingFriends;
+
+  /// Friend request accepted confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Friend request accepted!'**
+  String get friendRequestAccepted;
+
+  /// Friend request declined confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Friend request declined'**
+  String get friendRequestDeclined;
+
+  /// Failed to decline friend request error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to decline friend request'**
+  String get failedToDecline;
+
+  /// Friend request cancelled confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Friend request cancelled'**
+  String get friendRequestCancelled;
+
+  /// Failed to cancel friend request error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to cancel friend request'**
+  String get failedToCancelRequest;
+
+  /// Removed from friends confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'{name} removed from friends'**
+  String removedFromFriends(String name);
+
+  /// Failed to remove friend error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to remove {name}'**
+  String failedToRemove(String name);
+
+  /// User blocked confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has been blocked'**
+  String userBlocked(String name);
+
+  /// Failed to block user error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to block {name}'**
+  String failedToBlock(String name);
+
+  /// Opening chat snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Opening chat...'**
+  String get openingChat;
+
+  /// Unable to start chat error
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to start chat. User may be blocked.'**
+  String get unableToStartChat;
+
+  /// Failed to start chat error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to start chat: {error}'**
+  String failedToStartChat(String error);
+
+  /// Successfully joined watch party
+  ///
+  /// In en, this message translates to:
+  /// **'Successfully joined!'**
+  String get successfullyJoined;
+
+  /// Reload button
+  ///
+  /// In en, this message translates to:
+  /// **'Reload'**
+  String get reload;
+
+  /// Details tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get details;
+
+  /// Edit party menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Party'**
+  String get editParty;
+
+  /// Start party menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Start Party'**
+  String get startParty;
+
+  /// End party menu item
+  ///
+  /// In en, this message translates to:
+  /// **'End Party'**
+  String get endParty;
+
+  /// Cancel party menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel Party'**
+  String get cancelParty;
+
+  /// View on map button
+  ///
+  /// In en, this message translates to:
+  /// **'View on Map'**
+  String get viewOnMap;
+
+  /// Empty chat state title
+  ///
+  /// In en, this message translates to:
+  /// **'No messages yet'**
+  String get noMessagesYetChat;
+
+  /// Empty chat state description
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to say hello!'**
+  String get beFirstToSayHello;
+
+  /// Spots left in watch party
+  ///
+  /// In en, this message translates to:
+  /// **'{count} spots left'**
+  String spotsLeft(int count);
+
+  /// Join in person button
+  ///
+  /// In en, this message translates to:
+  /// **'Join In Person'**
+  String get joinInPerson;
+
+  /// Ended status label
+  ///
+  /// In en, this message translates to:
+  /// **'Ended'**
+  String get ended;
+
+  /// Cancel watch party dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel Watch Party?'**
+  String get cancelWatchParty;
+
+  /// Cancel watch party confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'This action cannot be undone. All attendees will be notified.'**
+  String get cancelWatchPartyConfirm;
+
+  /// Keep button (don't cancel)
+  ///
+  /// In en, this message translates to:
+  /// **'Keep'**
+  String get keep;
+
+  /// Remove member dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Member?'**
+  String get removeMember;
+
+  /// Remove member confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Remove {name} from the watch party?'**
+  String removeMemberConfirm(String name);
+
+  /// Remove button
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get remove;
+
+  /// Chat disabled - not member
+  ///
+  /// In en, this message translates to:
+  /// **'Join the party to chat'**
+  String get joinPartToChat;
+
+  /// Chat disabled - muted
+  ///
+  /// In en, this message translates to:
+  /// **'You have been muted'**
+  String get youHaveBeenMuted;
+
+  /// Chat disabled - virtual unpaid
+  ///
+  /// In en, this message translates to:
+  /// **'Pay for virtual attendance to chat'**
+  String get payForVirtualToChat;
+
+  /// Maps error
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open maps'**
+  String get couldNotOpenMaps;
+
+  /// Full settings reset confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Settings reset to defaults'**
+  String get settingsResetToDefaultsFull;
+
+  /// Accessibility settings card title
+  ///
+  /// In en, this message translates to:
+  /// **'Accessibility Settings'**
+  String get accessibilitySettingsTitle;
+
+  /// Accessibility settings intro text
+  ///
+  /// In en, this message translates to:
+  /// **'Customize your experience to make Pregame World Cup easier to use.'**
+  String get accessibilitySettingsIntro;
+
+  /// Vision section title
+  ///
+  /// In en, this message translates to:
+  /// **'Vision'**
+  String get vision;
+
+  /// High contrast subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Use high contrast colors for better visibility'**
+  String get highContrastSubtitle;
+
+  /// Bold text subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Make all text bolder and easier to read'**
+  String get boldTextSubtitle;
+
+  /// Motion section title
+  ///
+  /// In en, this message translates to:
+  /// **'Motion'**
+  String get motion;
+
+  /// Reduce motion subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Minimize animations and motion effects'**
+  String get reduceMotionSubtitle;
+
+  /// Interaction section title
+  ///
+  /// In en, this message translates to:
+  /// **'Interaction'**
+  String get interaction;
+
+  /// Larger touch targets toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Larger Touch Targets'**
+  String get largerTouchTargets;
+
+  /// Larger touch targets subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Make buttons and controls easier to tap'**
+  String get largerTouchTargetsSubtitle;
+
+  /// Text size section title
+  ///
+  /// In en, this message translates to:
+  /// **'Text Size'**
+  String get textSize;
+
+  /// Text scale label
+  ///
+  /// In en, this message translates to:
+  /// **'Text Scale'**
+  String get textScale;
+
+  /// Adjust text size description
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust the size of text throughout the app'**
+  String get adjustTextSize;
+
+  /// Sample text for preview
+  ///
+  /// In en, this message translates to:
+  /// **'Sample Text Preview'**
+  String get sampleTextPreview;
+
+  /// Use system default button
+  ///
+  /// In en, this message translates to:
+  /// **'Use System Default'**
+  String get useSystemDefault;
+
+  /// Small text scale
+  ///
+  /// In en, this message translates to:
+  /// **'Small'**
+  String get small;
+
+  /// Default text scale
+  ///
+  /// In en, this message translates to:
+  /// **'Default'**
+  String get default_;
+
+  /// Large text scale
+  ///
+  /// In en, this message translates to:
+  /// **'Large'**
+  String get large;
+
+  /// Extra large text scale
+  ///
+  /// In en, this message translates to:
+  /// **'Extra Large'**
+  String get extraLarge;
+
+  /// Maximum text scale
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum'**
+  String get maximum;
+
+  /// Screen reader section title
+  ///
+  /// In en, this message translates to:
+  /// **'Screen Reader'**
+  String get screenReader;
+
+  /// Screen reader optimized toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Screen Reader Optimized'**
+  String get screenReaderOptimized;
+
+  /// Screen reader subtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Enhance compatibility with VoiceOver and TalkBack'**
+  String get screenReaderSubtitle;
+
+  /// System settings info title
+  ///
+  /// In en, this message translates to:
+  /// **'System Settings'**
+  String get systemSettings;
+
+  /// System settings info text
+  ///
+  /// In en, this message translates to:
+  /// **'These settings work alongside your device\'s accessibility settings. For more options, visit your device\'s Settings > Accessibility.'**
+  String get systemSettingsInfo;
+
+  /// Reset all settings button
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get resetAllSettings;
+
+  /// Setting updated announcement
+  ///
+  /// In en, this message translates to:
+  /// **'Setting updated'**
+  String get settingUpdated;
+
+  /// Teams count out of total
+  ///
+  /// In en, this message translates to:
+  /// **'{count} of {total} teams'**
+  String teamsOfTotal(int count, int total);
+
+  /// Error opening maps with details
+  ///
+  /// In en, this message translates to:
+  /// **'Error opening maps: {error}'**
+  String errorOpeningMaps(String error);
+
+  /// Attendees section header with count
+  ///
+  /// In en, this message translates to:
+  /// **'Attendees ({count})'**
+  String attendeesWithCount(int count);
 }
 
 class _AppLocalizationsDelegate

@@ -1395,4 +1395,563 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get sharedFromPregame => 'Compartilhado do Pregame Copa do Mundo 2026';
+
+  @override
+  String matchInProgressWithMinute(String minute) {
+    return 'Jogo em andamento - $minute\'';
+  }
+
+  @override
+  String get matchInProgress => 'Jogo em andamento';
+
+  @override
+  String showAllVenues(int count) {
+    return 'Mostrar todos os $count locais';
+  }
+
+  @override
+  String get aiMatchAnalysisGate =>
+      'Obtenha análises de jogos com IA, perspectivas históricas e confrontos-chave com o Passe Superfã.';
+
+  @override
+  String get hostNation => 'País Sede';
+
+  @override
+  String get fifaRanking => 'Ranking FIFA';
+
+  @override
+  String get worldCupTitles => 'Títulos Mundiais';
+
+  @override
+  String get group => 'Grupo';
+
+  @override
+  String get teamInformation => 'Informações da Seleção';
+
+  @override
+  String get country => 'País';
+
+  @override
+  String get fifaCode => 'Código FIFA';
+
+  @override
+  String get confederation => 'Confederação';
+
+  @override
+  String get shortName => 'Nome Curto';
+
+  @override
+  String get worldCupHistory => 'Histórico na Copa do Mundo';
+
+  @override
+  String titleCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Títulos',
+      one: 'Título',
+    );
+    return '$count $_temp0';
+  }
+
+  @override
+  String get noWorldCupTitlesYet => 'Sem títulos mundiais ainda';
+
+  @override
+  String groupLabel(String letter) {
+    return 'Grupo $letter';
+  }
+
+  @override
+  String get viewStandings => 'Ver Classificação';
+
+  @override
+  String get tapToSeeGroupStandings =>
+      'Toque para ver a classificação completa do grupo';
+
+  @override
+  String get teamMatchesWillAppear => 'Os jogos da seleção aparecerão aqui';
+
+  @override
+  String get viewAll => 'Ver Tudo';
+
+  @override
+  String get searchTeams => 'Buscar seleções...';
+
+  @override
+  String teamsCountSimple(int count) {
+    return '$count seleções';
+  }
+
+  @override
+  String get noTeamsFound => 'Nenhuma seleção encontrada';
+
+  @override
+  String get tryAdjustingFilters => 'Tente ajustar sua busca ou filtros';
+
+  @override
+  String get myPredictions => 'Meus Palpites';
+
+  @override
+  String get updateResults => 'Atualizar Resultados';
+
+  @override
+  String get clearAll => 'Limpar Tudo';
+
+  @override
+  String get all => 'Todos';
+
+  @override
+  String get pending => 'Pendente';
+
+  @override
+  String get correct => 'Correto';
+
+  @override
+  String get incorrect => 'Incorreto';
+
+  @override
+  String get noPredictionsYet => 'Sem Palpites Ainda';
+
+  @override
+  String get makePredictionsPrompt =>
+      'Faça palpites nos próximos jogos\npara acompanhar sua precisão e ganhar pontos!';
+
+  @override
+  String get goToMatches => 'Ir para Jogos';
+
+  @override
+  String get noPendingPredictions => 'Sem palpites pendentes';
+
+  @override
+  String get noCorrectPredictions => 'Sem palpites corretos ainda';
+
+  @override
+  String get noIncorrectPredictions => 'Sem palpites incorretos';
+
+  @override
+  String get noPredictions => 'Sem palpites';
+
+  @override
+  String get deletePrediction => 'Excluir Palpite?';
+
+  @override
+  String deletePredictionConfirm(String homeTeam, String awayTeam) {
+    return 'Excluir seu palpite para $homeTeam vs $awayTeam?';
+  }
+
+  @override
+  String get clearAllPredictions => 'Limpar Todos os Palpites?';
+
+  @override
+  String get clearAllPredictionsConfirm =>
+      'Isso excluirá permanentemente todos os seus palpites. Esta ação não pode ser desfeita.';
+
+  @override
+  String get exactScore => 'Placar Exato!';
+
+  @override
+  String get correctResult => 'Resultado Correto';
+
+  @override
+  String get result => 'Resultado';
+
+  @override
+  String get pointsEarned => 'Pontos Ganhos';
+
+  @override
+  String get status => 'Status';
+
+  @override
+  String get groupStandings => 'Classificação dos Grupos';
+
+  @override
+  String noGroupDataAvailableForGroup(String letter) {
+    return 'Dados do Grupo $letter não disponíveis';
+  }
+
+  @override
+  String get qualification => 'Classificação';
+
+  @override
+  String get qualifiedTop2 => 'Classificados (Top 2)';
+
+  @override
+  String get possibleQualification =>
+      'Possível Classificação (Melhor 3o lugar)';
+
+  @override
+  String get tiebreakers => 'Critérios de desempate (em ordem):';
+
+  @override
+  String get tiebreakersList =>
+      '1. Pontos\n2. Saldo de gols\n3. Gols marcados\n4. Confronto direto\n5. Fair play (cartões)\n6. Sorteio';
+
+  @override
+  String get knockoutBracket => 'Chaveamento Eliminatório';
+
+  @override
+  String get finals => 'Finais';
+
+  @override
+  String get bracketDataNotAvailable => 'Chaveamento ainda não disponível';
+
+  @override
+  String get matchesNotYetDetermined => 'Jogos ainda não determinados';
+
+  @override
+  String get teamsSetAfterGroupStage =>
+      'As seleções serão definidas após a fase de grupos';
+
+  @override
+  String get thirdPlacePlayoff => 'Disputa pelo 3o Lugar';
+
+  @override
+  String currentRound(String round) {
+    return 'Atual: $round';
+  }
+
+  @override
+  String get noBracketData => 'Sem dados do chaveamento';
+
+  @override
+  String get noMatchesScheduledForDay => 'Nenhum jogo programado para este dia';
+
+  @override
+  String get tryDifferentDate => 'Tente selecionar outra data';
+
+  @override
+  String showingMatchesFor(String date) {
+    return 'Mostrando jogos para $date';
+  }
+
+  @override
+  String matchCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 's',
+      one: '',
+    );
+    return '$count jogo$_temp0';
+  }
+
+  @override
+  String get myProfile => 'Meu Perfil';
+
+  @override
+  String get accessibilitySettings => 'Configurações de Acessibilidade';
+
+  @override
+  String get timezoneSettings => 'Configurações de Fuso Horário';
+
+  @override
+  String get errorLoadingProfile => 'Erro ao carregar perfil';
+
+  @override
+  String get errorSigningOut => 'Erro ao sair';
+
+  @override
+  String get sportsFan => 'Fã de Esportes';
+
+  @override
+  String pregameFanSince(String date) {
+    return 'Fã do Pregame desde $date';
+  }
+
+  @override
+  String get gamesTracked => 'Jogos Acompanhados';
+
+  @override
+  String get profileCustomization => 'Personalização do Perfil';
+
+  @override
+  String get profileCustomizationDesc =>
+      'Envie fotos, escolha seleções favoritas e personalize seu perfil';
+
+  @override
+  String get activityFeedDesc =>
+      'Acompanhe seus palpites, check-ins e atividade social';
+
+  @override
+  String get achievements => 'Conquistas';
+
+  @override
+  String get achievementsDesc =>
+      'Desbloqueie medalhas por palpites, atividade social e descobertas';
+
+  @override
+  String get accessibilityCustomizeDesc =>
+      'Personalize tamanho do texto, contraste, movimento e mais';
+
+  @override
+  String get findFriends => 'Encontrar Amigos';
+
+  @override
+  String get searchByNameOrTeam => 'Buscar por nome ou seleção favorita...';
+
+  @override
+  String get searchForFriends => 'Busque amigos por nome ou seleção favorita';
+
+  @override
+  String noUsersFound(String query) {
+    return 'Nenhum usuário encontrado para \"$query\"';
+  }
+
+  @override
+  String get tryDifferentSearch => 'Tente buscar um nome ou seleção diferente';
+
+  @override
+  String get add => 'Adicionar';
+
+  @override
+  String friendRequestSentTo(String name) {
+    return 'Pedido de amizade enviado para $name';
+  }
+
+  @override
+  String get failedToSendFriendRequest => 'Falha ao enviar pedido de amizade';
+
+  @override
+  String get errorSendingFriendRequest => 'Erro ao enviar pedido de amizade';
+
+  @override
+  String get errorSearchingUsers => 'Erro ao buscar usuários. Tente novamente.';
+
+  @override
+  String get requests => 'Pedidos';
+
+  @override
+  String get sent => 'Enviados';
+
+  @override
+  String get loadingFriends => 'Carregando amigos...';
+
+  @override
+  String get friendRequestAccepted => 'Pedido de amizade aceito!';
+
+  @override
+  String get friendRequestDeclined => 'Pedido de amizade recusado';
+
+  @override
+  String get failedToDecline => 'Falha ao recusar pedido';
+
+  @override
+  String get friendRequestCancelled => 'Pedido de amizade cancelado';
+
+  @override
+  String get failedToCancelRequest => 'Falha ao cancelar pedido';
+
+  @override
+  String removedFromFriends(String name) {
+    return '$name removido dos amigos';
+  }
+
+  @override
+  String failedToRemove(String name) {
+    return 'Falha ao remover $name';
+  }
+
+  @override
+  String userBlocked(String name) {
+    return '$name foi bloqueado';
+  }
+
+  @override
+  String failedToBlock(String name) {
+    return 'Falha ao bloquear $name';
+  }
+
+  @override
+  String get openingChat => 'Abrindo chat...';
+
+  @override
+  String get unableToStartChat =>
+      'Não foi possível iniciar o chat. O usuário pode estar bloqueado.';
+
+  @override
+  String failedToStartChat(String error) {
+    return 'Falha ao iniciar chat: $error';
+  }
+
+  @override
+  String get successfullyJoined => 'Você entrou com sucesso!';
+
+  @override
+  String get reload => 'Recarregar';
+
+  @override
+  String get details => 'Detalhes';
+
+  @override
+  String get editParty => 'Editar Evento';
+
+  @override
+  String get startParty => 'Iniciar Evento';
+
+  @override
+  String get endParty => 'Encerrar Evento';
+
+  @override
+  String get cancelParty => 'Cancelar Evento';
+
+  @override
+  String get viewOnMap => 'Ver no Mapa';
+
+  @override
+  String get noMessagesYetChat => 'Sem mensagens ainda';
+
+  @override
+  String get beFirstToSayHello => 'Seja o primeiro a dizer olá!';
+
+  @override
+  String spotsLeft(int count) {
+    return '$count vagas restantes';
+  }
+
+  @override
+  String get joinInPerson => 'Participar Presencialmente';
+
+  @override
+  String get ended => 'Encerrado';
+
+  @override
+  String get cancelWatchParty => 'Cancelar o Evento?';
+
+  @override
+  String get cancelWatchPartyConfirm =>
+      'Esta ação não pode ser desfeita. Todos os participantes serão notificados.';
+
+  @override
+  String get keep => 'Manter';
+
+  @override
+  String get removeMember => 'Remover Membro?';
+
+  @override
+  String removeMemberConfirm(String name) {
+    return 'Remover $name do evento?';
+  }
+
+  @override
+  String get remove => 'Remover';
+
+  @override
+  String get joinPartToChat => 'Participe do evento para conversar';
+
+  @override
+  String get youHaveBeenMuted => 'Você foi silenciado';
+
+  @override
+  String get payForVirtualToChat =>
+      'Pague pela participação virtual para conversar';
+
+  @override
+  String get couldNotOpenMaps => 'Não foi possível abrir o mapa';
+
+  @override
+  String get settingsResetToDefaultsFull => 'Configurações redefinidas';
+
+  @override
+  String get accessibilitySettingsTitle => 'Configurações de Acessibilidade';
+
+  @override
+  String get accessibilitySettingsIntro =>
+      'Personalize sua experiência para tornar o Pregame Copa do Mundo mais fácil de usar.';
+
+  @override
+  String get vision => 'Visão';
+
+  @override
+  String get highContrastSubtitle =>
+      'Use cores de alto contraste para melhor visibilidade';
+
+  @override
+  String get boldTextSubtitle =>
+      'Torne todo o texto mais grosso e fácil de ler';
+
+  @override
+  String get motion => 'Movimento';
+
+  @override
+  String get reduceMotionSubtitle =>
+      'Minimizar animações e efeitos de movimento';
+
+  @override
+  String get interaction => 'Interação';
+
+  @override
+  String get largerTouchTargets => 'Áreas de Toque Maiores';
+
+  @override
+  String get largerTouchTargetsSubtitle =>
+      'Torne botões e controles mais fáceis de tocar';
+
+  @override
+  String get textSize => 'Tamanho do Texto';
+
+  @override
+  String get textScale => 'Escala do Texto';
+
+  @override
+  String get adjustTextSize => 'Ajuste o tamanho do texto em todo o aplicativo';
+
+  @override
+  String get sampleTextPreview => 'Prévia do Texto';
+
+  @override
+  String get useSystemDefault => 'Usar Padrão do Sistema';
+
+  @override
+  String get small => 'Pequeno';
+
+  @override
+  String get default_ => 'Padrão';
+
+  @override
+  String get large => 'Grande';
+
+  @override
+  String get extraLarge => 'Extra Grande';
+
+  @override
+  String get maximum => 'Máximo';
+
+  @override
+  String get screenReader => 'Leitor de Tela';
+
+  @override
+  String get screenReaderOptimized => 'Otimizado para Leitor de Tela';
+
+  @override
+  String get screenReaderSubtitle =>
+      'Melhorar compatibilidade com VoiceOver e TalkBack';
+
+  @override
+  String get systemSettings => 'Configurações do Sistema';
+
+  @override
+  String get systemSettingsInfo =>
+      'Estas configurações funcionam junto com as configurações de acessibilidade do seu dispositivo. Para mais opções, visite Configurações > Acessibilidade.';
+
+  @override
+  String get resetAllSettings => 'Redefinir';
+
+  @override
+  String get settingUpdated => 'Configuração atualizada';
+
+  @override
+  String teamsOfTotal(int count, int total) {
+    return '$count de $total seleções';
+  }
+
+  @override
+  String errorOpeningMaps(String error) {
+    return 'Erro ao abrir mapas: $error';
+  }
+
+  @override
+  String attendeesWithCount(int count) {
+    return 'Participantes ($count)';
+  }
 }

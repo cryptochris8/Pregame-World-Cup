@@ -5,6 +5,8 @@ import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../screens/chat_screen.dart';
+import 'direct_chat_tab.dart';
+import 'chat_member_selector.dart';
 
 class NewChatBottomSheet extends StatefulWidget {
   final Function(Chat) onDirectChatCreated;
@@ -27,11 +29,11 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
   late TabController _tabController;
   final MessagingService _messagingService = MessagingService();
   final SocialService _socialService = SocialService();
-  
+
   final TextEditingController _searchController = TextEditingController();
   final TextEditingController _groupNameController = TextEditingController();
   final TextEditingController _groupDescriptionController = TextEditingController();
-  
+
   List<UserProfile> _friends = [];
   List<UserProfile> _filteredFriends = [];
   final Set<String> _selectedFriendIds = {};
@@ -86,12 +88,28 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
 
   List<UserProfile> _filterFriends(String query) {
     if (query.isEmpty) return _friends;
-    
+
     return _friends.where((friend) {
       final nameMatch = friend.displayName.toLowerCase().contains(query.toLowerCase());
       final emailMatch = friend.email?.toLowerCase().contains(query.toLowerCase()) ?? false;
       return nameMatch || emailMatch;
     }).toList();
+  }
+
+  void _handleFriendToggled(String friendId) {
+    setState(() {
+      if (_selectedFriendIds.contains(friendId)) {
+        _selectedFriendIds.remove(friendId);
+      } else {
+        _selectedFriendIds.add(friendId);
+      }
+    });
+  }
+
+  void _handleFriendRemoved(String friendId) {
+    setState(() {
+      _selectedFriendIds.remove(friendId);
+    });
   }
 
   @override
@@ -132,7 +150,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
               ],
             ),
           ),
-          
+
           // Tab bar
           Container(
             color: Colors.brown[800],
@@ -148,480 +166,67 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
               ],
             ),
           ),
-          
+
           // Tab content
           Expanded(
             child: TabBarView(
               controller: _tabController,
               children: [
-                _buildDirectChatTab(),
-                _buildGroupChatTab(),
-                _buildTeamChatTab(),
+                DirectChatTab(
+                  searchController: _searchController,
+                  isLoading: _isLoading,
+                  friends: _friends,
+                  filteredFriends: _filteredFriends,
+                  onFriendSelected: _createDirectChat,
+                ),
+                ChatMemberSelector(
+                  nameController: _groupNameController,
+                  descriptionController: _groupDescriptionController,
+                  searchController: _searchController,
+                  nameLabel: 'Group Name',
+                  descriptionLabel: 'Description (optional)',
+                  searchHint: 'Search friends to add...',
+                  createButtonLabel: 'Create Group',
+                  selectedFriendIds: _selectedFriendIds,
+                  friends: _friends,
+                  filteredFriends: _filteredFriends,
+                  isLoading: _isLoading,
+                  isCreating: _isCreating,
+                  onCreatePressed: _groupNameController.text.isNotEmpty &&
+                                   _selectedFriendIds.isNotEmpty &&
+                                   !_isCreating
+                      ? _createGroupChat
+                      : null,
+                  onFriendToggled: _handleFriendToggled,
+                  onFriendRemoved: _handleFriendRemoved,
+                ),
+                ChatMemberSelector(
+                  nameController: _groupNameController,
+                  descriptionController: _groupDescriptionController,
+                  searchController: _searchController,
+                  nameLabel: 'Team Name',
+                  descriptionLabel: 'Team Description (optional)',
+                  searchHint: 'Search friends to add to team...',
+                  createButtonLabel: 'Create Team',
+                  selectedFriendIds: _selectedFriendIds,
+                  friends: _friends,
+                  filteredFriends: _filteredFriends,
+                  isLoading: _isLoading,
+                  isCreating: _isCreating,
+                  onCreatePressed: _groupNameController.text.isNotEmpty &&
+                                   _selectedFriendIds.isNotEmpty &&
+                                   !_isCreating
+                      ? _createTeamChat
+                      : null,
+                  onFriendToggled: _handleFriendToggled,
+                  onFriendRemoved: _handleFriendRemoved,
+                ),
               ],
             ),
           ),
         ],
       ),
     );
-  }
-
-  Widget _buildDirectChatTab() {
-    return Column(
-      children: [
-        // Search bar
-        Padding(
-          padding: const EdgeInsets.all(16),
-          child: TextField(
-            controller: _searchController,
-            style: const TextStyle(color: Colors.white),
-            decoration: InputDecoration(
-              hintText: 'Search friends...',
-              hintStyle: const TextStyle(color: Colors.white54),
-              prefixIcon: Icon(Icons.search, color: Colors.orange[300]),
-              filled: true,
-              fillColor: Colors.brown[800],
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide.none,
-              ),
-            ),
-          ),
-        ),
-        
-        // Friends list
-        Expanded(
-          child: _isLoading
-              ? const Center(
-                  child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
-                  ),
-                )
-              : _filteredFriends.isEmpty
-                  ? Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.person_search,
-                            size: 64,
-                            color: Colors.white.withValues(alpha:0.3),
-                          ),
-                          const SizedBox(height: 16),
-                          Text(
-                            _friends.isEmpty 
-                                ? 'No friends yet'
-                                : 'No friends found',
-                            style: TextStyle(
-                              color: Colors.white.withValues(alpha:0.6),
-                              fontSize: 16,
-                            ),
-                          ),
-                        ],
-                      ),
-                    )
-                  : ListView.builder(
-                      itemCount: _filteredFriends.length,
-                      itemBuilder: (context, index) {
-                        final friend = _filteredFriends[index];
-                        return ListTile(
-                          leading: CircleAvatar(
-                            backgroundColor: Colors.orange[300],
-                            backgroundImage: friend.profileImageUrl != null
-                                ? NetworkImage(friend.profileImageUrl!)
-                                : null,
-                            child: friend.profileImageUrl == null
-                                ? Icon(
-                                    Icons.person,
-                                    color: Colors.brown[800],
-                                  )
-                                : null,
-                          ),
-                          title: Text(
-                            friend.displayName,
-                            style: const TextStyle(color: Colors.white),
-                          ),
-                          subtitle: Text(
-                            friend.email ?? 'No email',
-                            style: TextStyle(color: Colors.white.withValues(alpha:0.7)),
-                          ),
-                          onTap: () => _createDirectChat(friend),
-                        );
-                      },
-                    ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildGroupChatTab() {
-    return Column(
-      children: [
-        // Group info form
-        Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              TextField(
-                controller: _groupNameController,
-                style: const TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  labelText: 'Group Name',
-                  labelStyle: TextStyle(color: Colors.orange[300]),
-                  filled: true,
-                  fillColor: Colors.brown[800],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _groupDescriptionController,
-                style: const TextStyle(color: Colors.white),
-                maxLines: 2,
-                decoration: InputDecoration(
-                  labelText: 'Description (optional)',
-                  labelStyle: TextStyle(color: Colors.orange[300]),
-                  filled: true,
-                  fillColor: Colors.brown[800],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _searchController,
-                style: const TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  hintText: 'Search friends to add...',
-                  hintStyle: const TextStyle(color: Colors.white54),
-                  prefixIcon: Icon(Icons.search, color: Colors.orange[300]),
-                  filled: true,
-                  fillColor: Colors.brown[800],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        
-        // Selected friends chips
-        if (_selectedFriendIds.isNotEmpty) ...[
-          Container(
-            height: 60,
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: _selectedFriendIds.length,
-              itemBuilder: (context, index) {
-                final friendId = _selectedFriendIds.elementAt(index);
-                final friend = _friends.firstWhere((f) => f.userId == friendId);
-                
-                return Container(
-                  margin: const EdgeInsets.only(right: 8),
-                  child: Chip(
-                    backgroundColor: Colors.orange[300],
-                    deleteIconColor: Colors.brown[800],
-                    avatar: CircleAvatar(
-                      backgroundColor: Colors.brown[800],
-                      child: Text(
-                        friend.displayName.isNotEmpty ? friend.displayName[0] : '?',
-                        style: const TextStyle(color: Colors.white, fontSize: 12),
-                      ),
-                    ),
-                    label: Text(
-                      friend.displayName,
-                      style: TextStyle(color: Colors.brown[800]),
-                    ),
-                    onDeleted: () {
-                      setState(() {
-                        _selectedFriendIds.remove(friendId);
-                      });
-                    },
-                  ),
-                );
-              },
-            ),
-          ),
-        ],
-        
-        // Friends selection list
-        Expanded(
-          child: _buildFriendsSelectionList(),
-        ),
-        
-        // Create button
-        Container(
-          padding: const EdgeInsets.all(16),
-          width: double.infinity,
-          child: ElevatedButton(
-            onPressed: _groupNameController.text.isNotEmpty && 
-                       _selectedFriendIds.isNotEmpty && 
-                       !_isCreating
-                ? _createGroupChat
-                : null,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.orange[300],
-              foregroundColor: Colors.brown[800],
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-            ),
-            child: _isCreating
-                ? const SizedBox(
-                    height: 20,
-                    width: 20,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.brown),
-                    ),
-                  )
-                : const Text(
-                    'Create Group',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildTeamChatTab() {
-    return Column(
-      children: [
-        // Team info form
-        Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              TextField(
-                controller: _groupNameController,
-                style: const TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  labelText: 'Team Name',
-                  labelStyle: TextStyle(color: Colors.orange[300]),
-                  filled: true,
-                  fillColor: Colors.brown[800],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _groupDescriptionController,
-                style: const TextStyle(color: Colors.white),
-                maxLines: 2,
-                decoration: InputDecoration(
-                  labelText: 'Team Description (optional)',
-                  labelStyle: TextStyle(color: Colors.orange[300]),
-                  filled: true,
-                  fillColor: Colors.brown[800],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _searchController,
-                style: const TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  hintText: 'Search friends to add to team...',
-                  hintStyle: const TextStyle(color: Colors.white54),
-                  prefixIcon: Icon(Icons.search, color: Colors.orange[300]),
-                  filled: true,
-                  fillColor: Colors.brown[800],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        
-        // Selected members chips
-        if (_selectedFriendIds.isNotEmpty) ...[
-          Container(
-            height: 60,
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: _selectedFriendIds.length,
-              itemBuilder: (context, index) {
-                final friendId = _selectedFriendIds.elementAt(index);
-                final friend = _friends.firstWhere((f) => f.userId == friendId);
-                
-                return Container(
-                  margin: const EdgeInsets.only(right: 8),
-                  child: Chip(
-                    backgroundColor: Colors.orange[300],
-                    deleteIconColor: Colors.brown[800],
-                    avatar: CircleAvatar(
-                      backgroundColor: Colors.brown[800],
-                      child: Text(
-                        friend.displayName.isNotEmpty ? friend.displayName[0] : '?',
-                        style: const TextStyle(color: Colors.white, fontSize: 12),
-                      ),
-                    ),
-                    label: Text(
-                      friend.displayName,
-                      style: TextStyle(color: Colors.brown[800]),
-                    ),
-                    onDeleted: () {
-                      setState(() {
-                        _selectedFriendIds.remove(friendId);
-                      });
-                    },
-                  ),
-                );
-              },
-            ),
-          ),
-        ],
-        
-        // Friends selection list
-        Expanded(
-          child: _buildFriendsSelectionList(),
-        ),
-        
-        // Create button
-        Container(
-          padding: const EdgeInsets.all(16),
-          width: double.infinity,
-          child: ElevatedButton(
-            onPressed: _groupNameController.text.isNotEmpty && 
-                       _selectedFriendIds.isNotEmpty && 
-                       !_isCreating
-                ? _createTeamChat
-                : null,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.orange[300],
-              foregroundColor: Colors.brown[800],
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-            ),
-            child: _isCreating
-                ? const SizedBox(
-                    height: 20,
-                    width: 20,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.brown),
-                    ),
-                  )
-                : const Text(
-                    'Create Team',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildFriendsSelectionList() {
-    return _isLoading
-        ? const Center(
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
-            ),
-          )
-        : _filteredFriends.isEmpty
-            ? Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person_search,
-                      size: 64,
-                      color: Colors.white.withValues(alpha:0.3),
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      _friends.isEmpty 
-                          ? 'No friends yet'
-                          : 'No friends found',
-                      style: TextStyle(
-                        color: Colors.white.withValues(alpha:0.6),
-                        fontSize: 16,
-                      ),
-                    ),
-                  ],
-                ),
-              )
-            : ListView.builder(
-                itemCount: _filteredFriends.length,
-                itemBuilder: (context, index) {
-                  final friend = _filteredFriends[index];
-                  final isSelected = _selectedFriendIds.contains(friend.userId);
-                  
-                  return ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: Colors.orange[300],
-                      backgroundImage: friend.profileImageUrl != null
-                          ? NetworkImage(friend.profileImageUrl!)
-                          : null,
-                      child: friend.profileImageUrl == null
-                          ? Icon(
-                              Icons.person,
-                              color: Colors.brown[800],
-                            )
-                          : null,
-                    ),
-                    title: Text(
-                      friend.displayName,
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                    subtitle: Text(
-                      friend.email ?? 'No email',
-                      style: TextStyle(color: Colors.white.withValues(alpha:0.7)),
-                    ),
-                    trailing: Checkbox(
-                      value: isSelected,
-                      onChanged: (value) {
-                        setState(() {
-                          if (value == true) {
-                            _selectedFriendIds.add(friend.userId);
-                          } else {
-                            _selectedFriendIds.remove(friend.userId);
-                          }
-                        });
-                      },
-                      activeColor: Colors.orange[300],
-                      checkColor: Colors.brown[800],
-                    ),
-                    onTap: () {
-                      setState(() {
-                        if (isSelected) {
-                          _selectedFriendIds.remove(friend.userId);
-                        } else {
-                          _selectedFriendIds.add(friend.userId);
-                        }
-                      });
-                    },
-                  );
-                },
-              );
   }
 
   Future<void> _createDirectChat(UserProfile friend) async {
@@ -639,11 +244,11 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       );
 
       await _messagingService.createChat(chat);
-      
+
       if (mounted) {
         Navigator.pop(context);
         widget.onDirectChatCreated(chat);
-        
+
         // Navigate to the chat
         Navigator.push(
           context,
@@ -689,11 +294,11 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       );
 
       await _messagingService.createChat(chat);
-      
+
       if (mounted) {
         Navigator.pop(context);
         widget.onGroupChatCreated(chat);
-        
+
         // Navigate to the chat
         Navigator.push(
           context,
@@ -739,11 +344,11 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       );
 
       await _messagingService.createChat(chat);
-      
+
       if (mounted) {
         Navigator.pop(context);
         widget.onTeamChatCreated(chat);
-        
+
         // Navigate to the chat
         Navigator.push(
           context,
@@ -769,4 +374,4 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       }
     }
   }
-} 
+}

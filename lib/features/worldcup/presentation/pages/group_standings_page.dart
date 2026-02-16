@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
@@ -31,12 +32,13 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text('Group Standings', style: TextStyle(color: Colors.white)),
+        title: Text(l10n.groupStandings, style: const TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           BlocBuilder<GroupStandingsCubit, GroupStandingsState>(
@@ -67,7 +69,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
           unselectedLabelColor: Colors.white60,
           tabs: List.generate(12, (index) {
             final letter = String.fromCharCode('A'.codeUnitAt(0) + index);
-            return Tab(text: 'Group $letter');
+            return Tab(text: l10n.groupLabel(letter));
           }),
         ),
       ),
@@ -96,7 +98,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
                     ),
                     onPressed: () =>
                         context.read<GroupStandingsCubit>().loadGroups(),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -104,8 +106,8 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
           }
 
           if (state.groups.isEmpty) {
-            return const Center(
-              child: Text('No group data available', style: TextStyle(color: Colors.white70)),
+            return Center(
+              child: Text(l10n.noGroupDataAvailable, style: const TextStyle(color: Colors.white70)),
             );
           }
 
@@ -117,7 +119,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
 
               if (group == null) {
                 return Center(
-                  child: Text('Group $letter data not available', style: const TextStyle(color: Colors.white70)),
+                  child: Text(l10n.noGroupDataAvailableForGroup(letter), style: const TextStyle(color: Colors.white70)),
                 );
               }
 
@@ -149,6 +151,7 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
   }
 
   Widget _buildLegend() {
+    final l10n = AppLocalizations.of(context);
     return Container(
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
@@ -160,9 +163,9 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Qualification',
-              style: TextStyle(
+            Text(
+              l10n.qualification,
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 14,
                 color: Colors.white,
@@ -181,9 +184,9 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
                   ),
                 ),
                 const SizedBox(width: 8),
-                const Text(
-                  'Qualified (Top 2)',
-                  style: TextStyle(fontSize: 12, color: Colors.white70),
+                Text(
+                  l10n.qualifiedTop2,
+                  style: const TextStyle(fontSize: 12, color: Colors.white70),
                 ),
               ],
             ),
@@ -200,30 +203,25 @@ class _GroupStandingsPageState extends State<GroupStandingsPage>
                   ),
                 ),
                 const SizedBox(width: 8),
-                const Text(
-                  'Possible Qualification (Best 3rd place)',
-                  style: TextStyle(fontSize: 12, color: Colors.white70),
+                Text(
+                  l10n.possibleQualification,
+                  style: const TextStyle(fontSize: 12, color: Colors.white70),
                 ),
               ],
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Tiebreakers (in order):',
-              style: TextStyle(
+            Text(
+              l10n.tiebreakers,
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 14,
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              '1. Points\n'
-              '2. Goal difference\n'
-              '3. Goals scored\n'
-              '4. Head-to-head points\n'
-              '5. Fair play (yellow/red cards)\n'
-              '6. Drawing of lots',
-              style: TextStyle(fontSize: 12, height: 1.5, color: Colors.white60),
+            Text(
+              l10n.tiebreakersList,
+              style: const TextStyle(fontSize: 12, height: 1.5, color: Colors.white60),
             ),
           ],
         ),

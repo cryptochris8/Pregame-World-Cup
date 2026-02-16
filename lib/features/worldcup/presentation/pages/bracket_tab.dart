@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
@@ -12,6 +13,7 @@ class BracketTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return BlocBuilder<BracketCubit, BracketState>(
       builder: (context, state) {
         if (state.isLoading) {
@@ -40,7 +42,7 @@ class BracketTab extends StatelessWidget {
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ),
               ],
@@ -49,23 +51,23 @@ class BracketTab extends StatelessWidget {
         }
 
         if (state.bracket == null) {
-          return const Center(
+          return Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.account_tree, size: 64, color: Colors.white38),
-                SizedBox(height: 16),
+                const Icon(Icons.account_tree, size: 64, color: Colors.white38),
+                const SizedBox(height: 16),
                 Text(
-                  'Knockout bracket not available yet',
-                  style: TextStyle(
+                  l10n.bracketDataNotAvailable,
+                  style: const TextStyle(
                     fontSize: 16,
                     color: Colors.white60,
                   ),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(
-                  'Check back after group stage',
-                  style: TextStyle(
+                  l10n.teamsSetAfterGroupStage,
+                  style: const TextStyle(
                     fontSize: 14,
                     color: Colors.white38,
                   ),
@@ -102,7 +104,7 @@ class BracketTab extends StatelessWidget {
                         const Icon(Icons.play_arrow, color: AppTheme.secondaryEmerald),
                         const SizedBox(width: 8),
                         Text(
-                          'Current: ${_getStageName(state.currentActiveRound!)}',
+                          l10n.currentRound(_getStageName(state.currentActiveRound!)),
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,

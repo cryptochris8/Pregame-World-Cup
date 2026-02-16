@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
@@ -13,6 +14,7 @@ class GroupsTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return BlocBuilder<GroupStandingsCubit, GroupStandingsState>(
       builder: (context, state) {
         if (state.isLoading) {
@@ -42,7 +44,7 @@ class GroupsTab extends StatelessWidget {
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ),
               ],
@@ -51,10 +53,10 @@ class GroupsTab extends StatelessWidget {
         }
 
         if (state.groups.isEmpty) {
-          return const Center(
+          return Center(
             child: Text(
-              'No group data available',
-              style: TextStyle(color: Colors.white70),
+              l10n.noGroupDataAvailable,
+              style: const TextStyle(color: Colors.white70),
             ),
           );
         }
