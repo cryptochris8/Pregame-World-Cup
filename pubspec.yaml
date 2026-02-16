@@ -103,6 +103,7 @@ dev_dependencies:
   bloc_test: ^9.1.5  # For testing BLoC/Cubit
   mocktail: ^1.0.1  # For mocking in tests
   fake_cloud_firestore: ^3.0.2  # For testing Firestore integration
+  firebase_core_platform_interface: ^5.4.0  # For Firebase test mocks (setupFirebaseCoreMocks)
 
 flutter:
   uses-material-design: true

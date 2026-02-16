@@ -230,19 +230,22 @@ void main() {
       });
 
       test('returns minutes format', () {
-        final past = DateTime.now().subtract(const Duration(minutes: 30));
+        // Subtract extra seconds to ensure we stay firmly in the 30m range
+        final past = DateTime.now().subtract(const Duration(minutes: 30, seconds: 30));
         final invite = createTestInvite(createdAt: past);
         expect(invite.timeAgo, contains('30m ago'));
       });
 
       test('returns hours format', () {
-        final past = DateTime.now().subtract(const Duration(hours: 5));
+        // Subtract extra minutes to ensure we stay firmly in the 5h range
+        final past = DateTime.now().subtract(const Duration(hours: 5, minutes: 30));
         final invite = createTestInvite(createdAt: past);
         expect(invite.timeAgo, contains('5h ago'));
       });
 
       test('returns days format', () {
-        final past = DateTime.now().subtract(const Duration(days: 3));
+        // Subtract extra hours to ensure we stay firmly in the 3d range
+        final past = DateTime.now().subtract(const Duration(days: 3, hours: 12));
         final invite = createTestInvite(createdAt: past);
         expect(invite.timeAgo, contains('3d ago'));
       });
@@ -256,19 +259,23 @@ void main() {
       });
 
       test('returns days format for future expiry', () {
-        final futureExpiry = DateTime.now().add(const Duration(days: 5));
+        // Use days + extra hours to avoid boundary flakiness
+        // (e.g., 5 days exactly could become 4d due to sub-second timing)
+        final futureExpiry = DateTime.now().add(const Duration(days: 5, hours: 12));
         final invite = createTestInvite(expiresAt: futureExpiry);
         expect(invite.expiresIn, contains('5d'));
       });
 
       test('returns hours format', () {
-        final futureExpiry = DateTime.now().add(const Duration(hours: 12));
+        // Use hours + extra minutes to avoid boundary flakiness
+        final futureExpiry = DateTime.now().add(const Duration(hours: 12, minutes: 30));
         final invite = createTestInvite(expiresAt: futureExpiry);
         expect(invite.expiresIn, contains('12h'));
       });
 
       test('returns minutes format', () {
-        final futureExpiry = DateTime.now().add(const Duration(minutes: 45));
+        // Use minutes + extra seconds to avoid boundary flakiness
+        final futureExpiry = DateTime.now().add(const Duration(minutes: 45, seconds: 30));
         final invite = createTestInvite(expiresAt: futureExpiry);
         expect(invite.expiresIn, contains('45m'));
       });

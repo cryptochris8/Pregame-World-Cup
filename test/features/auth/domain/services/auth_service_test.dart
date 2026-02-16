@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -24,8 +23,8 @@ class MockUserCredential extends Mock implements UserCredential {}
 
 /// Helper to create a FirebaseAuthException
 class FirebaseAuthException extends FirebaseException {
-  FirebaseAuthException({required String code, String? message})
-      : super(plugin: 'auth', code: code, message: message);
+  FirebaseAuthException({required String code, super.message})
+      : super(plugin: 'auth', code: code);
 }
 
 void main() {

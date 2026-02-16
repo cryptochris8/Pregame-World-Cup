@@ -92,7 +92,7 @@ void main() {
           venueId: 'venue_001',
         );
 
-        // Small delay to ensure different timestamp
+        // Create a second item to verify ID format
         final item2 = ActivityFeedItem.createCheckIn(
           userId: 'user_001',
           userName: 'User',
@@ -101,6 +101,7 @@ void main() {
         );
 
         expect(item1.activityId, contains('user_001_checkin_'));
+        expect(item2.activityId, contains('user_001_checkin_'));
       });
     });
 

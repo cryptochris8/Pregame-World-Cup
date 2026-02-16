@@ -20,12 +20,6 @@ void main() {
 
   group('MatchListCubit', () {
     final testMatches = TestDataFactory.createMatchList(count: 5);
-    final liveMatch = TestDataFactory.createMatch(
-      matchId: 'live_1',
-      status: MatchStatus.inProgress,
-      homeScore: 1,
-      awayScore: 0,
-    );
 
     test('initial state is correct', () {
       expect(cubit.state, equals(MatchListState.initial()));

@@ -6,7 +6,6 @@ void main() {
   group('TypingIndicator', () {
     group('Constructor', () {
       test('creates indicator with required fields', () {
-        final now = DateTime.now();
         final indicator = TypingIndicator(
           chatId: 'chat_1',
           userId: 'user_1',
@@ -402,7 +401,6 @@ void main() {
 
     group('JSON serialization', () {
       test('toJson serializes correctly', () {
-        final uploadedAt = DateTime(2024, 10, 15, 12, 0, 0);
         final attachment = FileAttachment(
           fileName: 'test.pdf',
           fileUrl: 'https://example.com/test.pdf',

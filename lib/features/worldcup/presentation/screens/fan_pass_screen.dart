@@ -7,6 +7,10 @@ import '../../../../config/app_theme.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import 'transaction_history_screen.dart';
+import 'fan_pass_header.dart';
+import 'current_pass_banner.dart';
+import 'fan_pass_tier_card.dart';
+import 'fan_pass_tournament_info.dart';
 
 /// Fan Pass purchase screen
 /// Displays tier comparison and handles checkout
@@ -129,16 +133,10 @@ class _FanPassScreenState extends State<FanPassScreen>
   }
 
   /// Start listening for real-time fan pass activation from Firestore.
-  ///
-  /// Called after the user is redirected to a Stripe browser checkout.
-  /// The listener will detect when the webhook fires and activates the
-  /// pass, then update the UI immediately without a manual refresh.
-  /// Automatically stops after 5 minutes.
   void _startListeningForPassActivation() {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return;
 
-    // Cancel any existing listener before starting a new one
     _stopListeningForPassActivation();
 
     LoggingService.info(
@@ -151,23 +149,19 @@ class _FanPassScreenState extends State<FanPassScreen>
         .listen((status) {
       if (!mounted) return;
 
-      // Only react when a new active pass is detected
       if (status.hasPass && _currentStatus?.hasPass != true) {
         LoggingService.info(
           'Fan pass activated via real-time listener: ${status.passType.displayName}',
           tag: _logTag,
         );
 
-        // Stop listening once the pass is detected
         _stopListeningForPassActivation();
 
-        // Update UI with new status
         setState(() {
           _currentStatus = status;
           _isPurchasing = false;
         });
 
-        // Show success snackbar
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
@@ -178,7 +172,6 @@ class _FanPassScreenState extends State<FanPassScreen>
           ),
         );
 
-        // Full refresh to ensure all data is in sync
         _loadData();
       }
     }, onError: (error) {
@@ -188,7 +181,6 @@ class _FanPassScreenState extends State<FanPassScreen>
       );
     });
 
-    // Set a 5-minute timeout to avoid keeping the listener open indefinitely
     _listenerTimeoutTimer = Timer(const Duration(minutes: 5), () {
       LoggingService.info(
         'Fan pass listener timed out after 5 minutes',
@@ -198,7 +190,6 @@ class _FanPassScreenState extends State<FanPassScreen>
     });
   }
 
-  /// Stop listening for fan pass activation and clean up resources.
   void _stopListeningForPassActivation() {
     _fanPassStatusSubscription?.cancel();
     _fanPassStatusSubscription = null;
@@ -218,7 +209,6 @@ class _FanPassScreenState extends State<FanPassScreen>
     setState(() => _isPurchasing = true);
 
     try {
-      // Use native in-app purchase via RevenueCat
       final result = await _paymentService.purchaseFanPass(
         passType: passType,
         context: context,
@@ -227,7 +217,6 @@ class _FanPassScreenState extends State<FanPassScreen>
       if (!mounted) return;
 
       if (result.success) {
-        // Show success message
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('${passType.displayName} purchased successfully!'),
@@ -235,14 +224,10 @@ class _FanPassScreenState extends State<FanPassScreen>
             duration: const Duration(seconds: 3),
           ),
         );
-        // Refresh the data to show new status
         await _loadData();
       } else if (result.userCancelled) {
         // User cancelled - no message needed
       } else if (result.usedFallback) {
-        // Fallback to browser checkout was used.
-        // Start a real-time Firestore listener so the UI updates
-        // automatically once the Stripe webhook activates the pass.
         _startListeningForPassActivation();
 
         ScaffoldMessenger.of(context).showSnackBar(
@@ -252,7 +237,6 @@ class _FanPassScreenState extends State<FanPassScreen>
           ),
         );
       } else {
-        // Show error message
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(result.errorMessage ?? 'Purchase failed. Please try again.'),
@@ -292,7 +276,6 @@ class _FanPassScreenState extends State<FanPassScreen>
               duration: const Duration(seconds: 3),
             ),
           );
-          // Refresh the data to show restored status
           await _loadData();
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -317,6 +300,14 @@ class _FanPassScreenState extends State<FanPassScreen>
     }
   }
 
+  void _navigateToTransactionHistory() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const TransactionHistoryScreen(),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -328,11 +319,7 @@ class _FanPassScreenState extends State<FanPassScreen>
         elevation: 0,
         actions: [
           IconButton(
-            onPressed: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => const TransactionHistoryScreen(),
-              ),
-            ),
+            onPressed: _navigateToTransactionHistory,
             icon: const Icon(Icons.receipt_long),
             tooltip: 'Transaction History',
           ),
@@ -349,474 +336,93 @@ class _FanPassScreenState extends State<FanPassScreen>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Header
-                    _buildHeader(),
+                    const FanPassHeader(),
                     const SizedBox(height: 24),
 
-                    // Current status banner
                     if (_currentStatus?.hasPass == true)
-                      _buildCurrentPassBanner(),
+                      CurrentPassBanner(
+                        currentStatus: _currentStatus!,
+                        onViewTransactionHistory: _navigateToTransactionHistory,
+                      ),
 
-                    // Tier comparison cards
-                    _buildTierCard(
+                    FanPassTierCard(
                       type: FanPassType.free,
                       isCurrentTier: _currentStatus?.passType == FanPassType.free,
-                      pricing: null,
+                      isPurchasing: _isPurchasing,
+                      canUpgrade: _canUpgradeTo(FanPassType.free),
+                      features: _getFeaturesForTier(FanPassType.free),
                     ),
                     const SizedBox(height: 16),
 
-                    _buildTierCard(
+                    FanPassTierCard(
                       type: FanPassType.fanPass,
                       isCurrentTier: _currentStatus?.passType == FanPassType.fanPass,
                       pricing: _pricing?.fanPass,
+                      isPurchasing: _isPurchasing,
+                      canUpgrade: _canUpgradeTo(FanPassType.fanPass),
+                      features: _getFeaturesForTier(FanPassType.fanPass),
+                      onPurchase: () => _purchasePass(FanPassType.fanPass),
                     ),
                     const SizedBox(height: 16),
 
-                    _buildTierCard(
+                    FanPassTierCard(
                       type: FanPassType.superfanPass,
                       isCurrentTier: _currentStatus?.passType == FanPassType.superfanPass,
                       pricing: _pricing?.superfanPass,
                       isRecommended: true,
+                      isPurchasing: _isPurchasing,
+                      canUpgrade: _canUpgradeTo(FanPassType.superfanPass),
+                      features: _getFeaturesForTier(FanPassType.superfanPass),
+                      onPurchase: () => _purchasePass(FanPassType.superfanPass),
                     ),
 
                     const SizedBox(height: 32),
 
-                    // Tournament info
-                    _buildTournamentInfo(),
+                    const FanPassTournamentInfo(),
 
                     const SizedBox(height: 24),
 
-                    // Restore Purchases button
-                    _buildRestorePurchasesButton(),
-                  ],
-                ),
-              ),
-            ),
-    );
-  }
-
-  Widget _buildHeader() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: AppTheme.mainGradient,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryPurple.withValues(alpha:0.3),
-            blurRadius: 20,
-            offset: const Offset(0, 10),
-          ),
-        ],
-      ),
-      child: Column(
-        children: [
-          const Icon(
-            Icons.sports_soccer,
-            size: 48,
-            color: Colors.white,
-          ),
-          const SizedBox(height: 8),
-          const Text(
-            'FIFA World Cup 2026',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            'June 11 - July 19, 2026',
-            style: TextStyle(
-              color: Colors.white.withValues(alpha:0.9),
-              fontSize: 14,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Unlock premium features for the entire tournament',
-            style: TextStyle(
-              color: Colors.white.withValues(alpha:0.8),
-              fontSize: 14,
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildCurrentPassBanner() {
-    final passType = _currentStatus!.passType;
-
-    return Container(
-      margin: const EdgeInsets.only(bottom: 24),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppTheme.successColor.withValues(alpha:0.15),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.successColor),
-      ),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.check_circle, color: AppTheme.successColor, size: 28),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'You have ${passType.displayName}',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                        color: AppTheme.successColor,
-                      ),
-                    ),
-                    if (_currentStatus?.purchasedAt != null)
-                      Text(
-                        'Purchased ${_formatDate(_currentStatus!.purchasedAt!)}',
-                        style: const TextStyle(
-                          color: AppTheme.textTertiary,
-                          fontSize: 12,
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 12),
-          InkWell(
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => const TransactionHistoryScreen(),
-              ),
-            ),
-            child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.receipt_long,
-                  size: 16,
-                  color: AppTheme.textTertiary,
-                ),
-                SizedBox(width: 6),
-                Text(
-                  'View Transaction History',
-                  style: TextStyle(
-                    color: AppTheme.textTertiary,
-                    fontSize: 13,
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTierCard({
-    required FanPassType type,
-    required bool isCurrentTier,
-    PriceInfo? pricing,
-    bool isRecommended = false,
-  }) {
-    final features = _getFeaturesForTier(type);
-    final canUpgrade = _canUpgradeTo(type);
-
-    return Container(
-      decoration: BoxDecoration(
-        color: AppTheme.backgroundCard,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: isRecommended
-              ? AppTheme.primaryOrange
-              : isCurrentTier
-                  ? AppTheme.successColor
-                  : AppTheme.backgroundElevated,
-          width: isRecommended || isCurrentTier ? 2 : 1,
-        ),
-        boxShadow: isRecommended
-            ? [
-                BoxShadow(
-                  color: AppTheme.primaryOrange.withValues(alpha:0.3),
-                  blurRadius: 15,
-                  offset: const Offset(0, 5),
-                ),
-              ]
-            : null,
-      ),
-      child: Column(
-        children: [
-          if (isRecommended)
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [AppTheme.primaryOrange, AppTheme.accentGold],
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                ),
-                borderRadius: BorderRadius.vertical(top: Radius.circular(14)),
-              ),
-              child: const Text(
-                'BEST VALUE',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 12,
-                  letterSpacing: 1,
-                ),
-              ),
-            ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      type.displayName,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.textWhite,
-                      ),
-                    ),
-                    Text(
-                      pricing?.displayPrice ?? type.price,
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: type == FanPassType.free
-                            ? AppTheme.textTertiary
-                            : AppTheme.accentGold,
-                      ),
+                    RestorePurchasesButton(
+                      isPurchasing: _isPurchasing,
+                      onRestore: _restorePurchases,
                     ),
                   ],
                 ),
-                if (type != FanPassType.free)
-                  const Padding(
-                    padding: EdgeInsets.only(top: 2),
-                    child: Text(
-                      'One-time payment',
-                      style: TextStyle(
-                        color: AppTheme.textTertiary,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ),
-                const SizedBox(height: 16),
-
-                // Features list
-                ...features.map((feature) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Row(
-                    children: [
-                      Icon(
-                        feature.included ? Icons.check_circle : Icons.cancel,
-                        size: 18,
-                        color: feature.included
-                            ? AppTheme.successColor
-                            : AppTheme.textTertiary,
-                      ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          feature.name,
-                          style: TextStyle(
-                            color: feature.included
-                                ? AppTheme.textLight
-                                : AppTheme.textTertiary,
-                            decoration: feature.included
-                                ? null
-                                : TextDecoration.lineThrough,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                )),
-
-                const SizedBox(height: 16),
-
-                // Action button
-                if (isCurrentTier)
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    decoration: BoxDecoration(
-                      color: AppTheme.successColor.withValues(alpha:0.15),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: AppTheme.successColor.withValues(alpha:0.3)),
-                    ),
-                    child: const Text(
-                      'Current Plan',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: AppTheme.successColor,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  )
-                else if (canUpgrade && type != FanPassType.free)
-                  Container(
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      gradient: isRecommended
-                          ? const LinearGradient(
-                              colors: [AppTheme.primaryOrange, AppTheme.accentGold],
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                            )
-                          : const LinearGradient(
-                              colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                            ),
-                      borderRadius: BorderRadius.circular(12),
-                      boxShadow: [
-                        BoxShadow(
-                          color: (isRecommended ? AppTheme.primaryOrange : AppTheme.primaryPurple)
-                              .withValues(alpha:0.4),
-                          blurRadius: 10,
-                          offset: const Offset(0, 4),
-                        ),
-                      ],
-                    ),
-                    child: ElevatedButton(
-                      onPressed: _isPurchasing ? null : () => _purchasePass(type),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        shadowColor: Colors.transparent,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: _isPurchasing
-                          ? const SizedBox(
-                              height: 20,
-                              width: 20,
-                              child: CircularProgressIndicator(
-                                strokeWidth: 2,
-                                color: Colors.white,
-                              ),
-                            )
-                          : Text(
-                              'Get ${type.displayName}',
-                              style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                    ),
-                  ),
-              ],
+              ),
             ),
-          ),
-        ],
-      ),
     );
   }
 
-  Widget _buildTournamentInfo() {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppTheme.backgroundCard,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.backgroundElevated),
-      ),
-      child: const Column(
-        children: [
-          Icon(Icons.info_outline, color: AppTheme.textTertiary),
-          SizedBox(height: 8),
-          Text(
-            'One-Time Purchase',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-              color: AppTheme.textWhite,
-            ),
-          ),
-          SizedBox(height: 8),
-          Text(
-            'Your pass is valid for the entire FIFA World Cup 2026 tournament. No recurring charges or subscriptions.',
-            style: TextStyle(
-              color: AppTheme.textSecondary,
-              fontSize: 14,
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildRestorePurchasesButton() {
-    return Center(
-      child: TextButton.icon(
-        onPressed: _isPurchasing ? null : _restorePurchases,
-        icon: _isPurchasing
-            ? const SizedBox(
-                width: 16,
-                height: 16,
-                child: CircularProgressIndicator(
-                  strokeWidth: 2,
-                  color: AppTheme.textTertiary,
-                ),
-              )
-            : const Icon(Icons.restore, size: 18),
-        label: const Text('Restore Purchases'),
-        style: TextButton.styleFrom(
-          foregroundColor: AppTheme.textTertiary,
-        ),
-      ),
-    );
-  }
-
-  List<_Feature> _getFeaturesForTier(FanPassType type) {
+  List<TierFeature> _getFeaturesForTier(FanPassType type) {
     switch (type) {
       case FanPassType.free:
         return [
-          _Feature('Match schedules & results', true),
-          _Feature('Venue discovery', true),
-          _Feature('Basic notifications', true),
-          _Feature('Follow teams', true),
-          _Feature('Ad-free experience', false),
-          _Feature('Advanced stats', false),
-          _Feature('Custom alerts', false),
+          const TierFeature('Match schedules & results', true),
+          const TierFeature('Venue discovery', true),
+          const TierFeature('Basic notifications', true),
+          const TierFeature('Follow teams', true),
+          const TierFeature('Ad-free experience', false),
+          const TierFeature('Advanced stats', false),
+          const TierFeature('Custom alerts', false),
         ];
       case FanPassType.fanPass:
         return [
-          _Feature('Everything in Free', true),
-          _Feature('Ad-free experience', true),
-          _Feature('Advanced match stats', true),
-          _Feature('Custom match alerts', true),
-          _Feature('Advanced social features', true),
-          _Feature('Exclusive content', false),
-          _Feature('AI match insights', false),
+          const TierFeature('Everything in Free', true),
+          const TierFeature('Ad-free experience', true),
+          const TierFeature('Advanced match stats', true),
+          const TierFeature('Custom match alerts', true),
+          const TierFeature('Advanced social features', true),
+          const TierFeature('Exclusive content', false),
+          const TierFeature('AI match insights', false),
         ];
       case FanPassType.superfanPass:
         return [
-          _Feature('Everything in Fan Pass', true),
-          _Feature('Exclusive content', true),
-          _Feature('AI match insights', true),
-          _Feature('Priority features', true),
-          _Feature('Downloadable content', true),
-          _Feature('Early access to new features', true),
+          const TierFeature('Everything in Fan Pass', true),
+          const TierFeature('Exclusive content', true),
+          const TierFeature('AI match insights', true),
+          const TierFeature('Priority features', true),
+          const TierFeature('Downloadable content', true),
+          const TierFeature('Early access to new features', true),
         ];
     }
   }
@@ -826,22 +432,11 @@ class _FanPassScreenState extends State<FanPassScreen>
 
     switch (currentTier) {
       case FanPassType.free:
-        return true; // Can upgrade to any paid tier
+        return true;
       case FanPassType.fanPass:
-        return targetTier == FanPassType.superfanPass; // Can only upgrade to superfan
+        return targetTier == FanPassType.superfanPass;
       case FanPassType.superfanPass:
-        return false; // Already at max tier
+        return false;
     }
   }
-
-  String _formatDate(DateTime date) {
-    return '${date.month}/${date.day}/${date.year}';
-  }
-}
-
-class _Feature {
-  final String name;
-  final bool included;
-
-  _Feature(this.name, this.included);
 }
