@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../../domain/entities/admin_user.dart';
 import '../../domain/services/admin_service.dart';
@@ -38,14 +39,16 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    final l10n = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Feature Flags'),
+        title: Text(l10n.featureFlags),
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
             onPressed: _showCreateFlagDialog,
-            tooltip: 'Add Flag',
+            tooltip: l10n.addFlag,
           ),
           IconButton(
             icon: const Icon(Icons.refresh),
@@ -67,14 +70,14 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        'No feature flags',
+                        l10n.noFeatureFlags,
                         style: theme.textTheme.titleMedium,
                       ),
                       const SizedBox(height: 8),
                       ElevatedButton.icon(
                         onPressed: _showCreateFlagDialog,
                         icon: const Icon(Icons.add),
-                        label: const Text('Create Flag'),
+                        label: Text(l10n.createFlag),
                       ),
                     ],
                   ),
@@ -148,7 +151,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  flag.isEnabled ? 'Enabled' : 'Disabled',
+                  flag.isEnabled ? AppLocalizations.of(context).enabled : AppLocalizations.of(context).disabled,
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: flag.isEnabled ? Colors.green : Colors.grey,
                   ),
@@ -156,7 +159,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
                 const Spacer(),
                 if (flag.updatedBy != null)
                   Text(
-                    'Updated: ${_formatDate(flag.updatedAt)}',
+                    AppLocalizations.of(context).updatedDate(_formatDate(flag.updatedAt)),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.outline,
                     ),
@@ -193,12 +196,12 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
         }
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to update flag')),
+        SnackBar(content: Text(AppLocalizations.of(context).failedToUpdateFlag)),
       );
     } else if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('${flag.name} ${value ? "enabled" : "disabled"}'),
+          content: Text(AppLocalizations.of(context).flagToggled(flag.name, value ? AppLocalizations.of(context).enabled.toLowerCase() : AppLocalizations.of(context).disabled.toLowerCase())),
         ),
       );
     }
@@ -207,28 +210,29 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
   void _showCreateFlagDialog() {
     final nameController = TextEditingController();
     final descController = TextEditingController();
+    final l10n = AppLocalizations.of(context);
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Create Feature Flag'),
+        title: Text(l10n.createFeatureFlag),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             TextField(
               controller: nameController,
-              decoration: const InputDecoration(
-                labelText: 'Name',
-                hintText: 'e.g., Live Chat Feature',
+              decoration: InputDecoration(
+                labelText: l10n.name,
+                hintText: l10n.featureFlagNameHint,
               ),
               textCapitalization: TextCapitalization.words,
             ),
             const SizedBox(height: 16),
             TextField(
               controller: descController,
-              decoration: const InputDecoration(
-                labelText: 'Description',
-                hintText: 'What does this flag control?',
+              decoration: InputDecoration(
+                labelText: l10n.description,
+                hintText: l10n.featureFlagDescHint,
               ),
               maxLines: 2,
             ),
@@ -237,7 +241,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () async {
@@ -251,11 +255,11 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
               if (success && mounted) {
                 _loadFlags();
                 messenger.showSnackBar(
-                  const SnackBar(content: Text('Feature flag created')),
+                  SnackBar(content: Text(l10n.featureFlagCreated)),
                 );
               }
             },
-            child: const Text('Create'),
+            child: Text(l10n.create),
           ),
         ],
       ),

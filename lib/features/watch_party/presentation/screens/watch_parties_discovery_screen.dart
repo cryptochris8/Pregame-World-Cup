@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../bloc/watch_party_bloc.dart';
 import '../widgets/widgets.dart';
@@ -47,11 +48,12 @@ class _WatchPartiesDiscoveryScreenState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.gameName != null
-            ? 'Watch Parties: ${widget.gameName}'
-            : 'Watch Parties'),
+            ? '${l10n.watchParties}: ${widget.gameName}'
+            : l10n.watchParties),
         actions: [
           IconButton(
             icon: const Icon(Icons.filter_list),
@@ -76,7 +78,7 @@ class _WatchPartiesDiscoveryScreenState
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: _loadWatchParties,
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -87,7 +89,7 @@ class _WatchPartiesDiscoveryScreenState
             return _buildContent(state.watchParties);
           }
 
-          return const Center(child: Text('Discover watch parties near you'));
+          return Center(child: Text(l10n.discoverWatchParties));
         },
       ),
     );
@@ -121,6 +123,7 @@ class _WatchPartiesDiscoveryScreenState
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -128,21 +131,21 @@ class _WatchPartiesDiscoveryScreenState
           Icon(Icons.celebration, size: 80, color: Colors.grey[300]),
           const SizedBox(height: 24),
           Text(
-            'No watch parties found',
+            l10n.noWatchPartiesFound,
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 8),
           Text(
             widget.gameName != null
-                ? 'Be the first to create one for this match!'
-                : 'Be the first to create one!',
+                ? l10n.beFirstToCreateForMatch
+                : l10n.beFirstToCreate,
             style: TextStyle(color: Colors.grey[600]),
           ),
           const SizedBox(height: 24),
           ElevatedButton.icon(
             onPressed: _navigateToCreateWatchParty,
             icon: const Icon(Icons.add),
-            label: const Text('Create Watch Party'),
+            label: Text(l10n.createWatchParty),
           ),
         ],
       ),
@@ -196,6 +199,7 @@ class _WatchPartiesDiscoveryScreenState
   }
 
   void _showFilterSheet() {
+    final l10n = AppLocalizations.of(context);
     showModalBottomSheet(
       context: context,
       builder: (context) => StatefulBuilder(
@@ -207,22 +211,22 @@ class _WatchPartiesDiscoveryScreenState
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Filter & Sort',
+                  l10n.filterAndSort,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
                 const SizedBox(height: 24),
 
                 // Filter section
-                const Text(
-                  'Show',
-                  style: TextStyle(fontWeight: FontWeight.w600),
+                Text(
+                  l10n.show,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 8),
                 Wrap(
                   spacing: 8,
                   children: [
                     ChoiceChip(
-                      label: const Text('All'),
+                      label: Text(l10n.all),
                       selected: _filter == 'all',
                       onSelected: (selected) {
                         if (selected) {
@@ -232,7 +236,7 @@ class _WatchPartiesDiscoveryScreenState
                       },
                     ),
                     ChoiceChip(
-                      label: const Text('Upcoming'),
+                      label: Text(l10n.upcoming),
                       selected: _filter == 'upcoming',
                       onSelected: (selected) {
                         if (selected) {
@@ -242,7 +246,7 @@ class _WatchPartiesDiscoveryScreenState
                       },
                     ),
                     ChoiceChip(
-                      label: const Text('Live Now'),
+                      label: Text(l10n.liveNow),
                       selected: _filter == 'live',
                       onSelected: (selected) {
                         if (selected) {
@@ -256,16 +260,16 @@ class _WatchPartiesDiscoveryScreenState
                 const SizedBox(height: 24),
 
                 // Sort section
-                const Text(
-                  'Sort by',
-                  style: TextStyle(fontWeight: FontWeight.w600),
+                Text(
+                  l10n.sortBy,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 8),
                 Wrap(
                   spacing: 8,
                   children: [
                     ChoiceChip(
-                      label: const Text('Date'),
+                      label: Text(l10n.date),
                       selected: _sortBy == 'date',
                       onSelected: (selected) {
                         if (selected) {
@@ -275,7 +279,7 @@ class _WatchPartiesDiscoveryScreenState
                       },
                     ),
                     ChoiceChip(
-                      label: const Text('Most Popular'),
+                      label: Text(l10n.mostPopular),
                       selected: _sortBy == 'attendees',
                       onSelected: (selected) {
                         if (selected) {

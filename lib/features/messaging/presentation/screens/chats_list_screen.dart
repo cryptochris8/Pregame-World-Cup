@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
 import '../widgets/chat_list_item.dart';
@@ -152,9 +153,9 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           children: [
             TeamLogoHelper.getPregameLogo(height: 40),
             const SizedBox(width: 12),
-            const Text(
-              'Messages',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context).messages,
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w800,
                 color: Colors.white,
@@ -187,7 +188,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
         controller: _searchController,
         style: const TextStyle(color: Colors.white),
         decoration: InputDecoration(
-          hintText: 'Search messages...',
+          hintText: AppLocalizations.of(context).searchMessages,
           hintStyle: const TextStyle(color: Colors.white54),
           prefixIcon: const Icon(Icons.search, color: AppTheme.primaryVibrantOrange),
           suffixIcon: _searchQuery.isNotEmpty
@@ -259,7 +260,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
               children: [
                 const Icon(Icons.person, size: 16),
                 const SizedBox(width: 4),
-                const Text('Direct'),
+                Text(AppLocalizations.of(context).direct),
                 if (_directChats.isNotEmpty) ...[
                   const SizedBox(width: 4),
                   Container(
@@ -287,7 +288,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
               children: [
                 const Icon(Icons.group, size: 16),
                 const SizedBox(width: 4),
-                const Text('Groups'),
+                Text(AppLocalizations.of(context).groups),
                 if (_groupChats.isNotEmpty) ...[
                   const SizedBox(width: 4),
                   Container(
@@ -315,7 +316,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
               children: [
                 const Icon(Icons.sports_soccer, size: 16),
                 const SizedBox(width: 4),
-                const Text('Teams'),
+                Text(AppLocalizations.of(context).teams),
                 if (_teamChats.isNotEmpty) ...[
                   const SizedBox(width: 4),
                   Container(
@@ -347,8 +348,8 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
       stream: _messagingService.chatsStream,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting && !snapshot.hasData) {
-          return const EnhancedLoadingState(
-            message: 'Loading conversations...',
+          return EnhancedLoadingState(
+            message: AppLocalizations.of(context).loadingConversations,
             color: AppTheme.secondaryEmerald,
           );
         }
@@ -410,6 +411,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -421,7 +423,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           ),
           const SizedBox(height: 24),
           Text(
-            'No conversations yet',
+            l10n.noConversationsYet,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w600,
@@ -430,7 +432,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           ),
           const SizedBox(height: 8),
           Text(
-            'Start a conversation with your friends',
+            l10n.startConversationWithFriends,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 16,
@@ -448,18 +450,18 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
               blurRadius: 8,
               offset: const Offset(0, 4),
             ),
-            child: const Row(
+            child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(
+                const Icon(
                   Icons.message,
                   color: Colors.white,
                   size: 20,
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Text(
-                  'Start Chatting',
-                  style: TextStyle(
+                  l10n.startChatting,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -474,6 +476,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
   }
 
   Widget _buildErrorState(String error) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -485,7 +488,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           ),
           const SizedBox(height: 16),
           Text(
-            'Error loading conversations',
+            l10n.errorLoadingConversations,
             style: TextStyle(
               fontSize: 18,
               color: Colors.grey[600],
@@ -494,7 +497,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           ),
           const SizedBox(height: 8),
           Text(
-            'Please try again later',
+            l10n.pleaseTryAgainLater,
             style: TextStyle(
               fontSize: 14,
               color: Colors.grey[500],
@@ -506,9 +509,9 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             backgroundColor: AppTheme.secondaryEmerald,
             borderRadius: BorderRadius.circular(20),
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: const Text(
-              'Retry',
-              style: TextStyle(
+            child: Text(
+              l10n.retry,
+              style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
               ),
@@ -534,10 +537,10 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
     // For now, just show a message - archive functionality can be implemented later
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Archive feature coming soon!'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).archiveComingSoon),
           backgroundColor: AppTheme.secondaryEmerald,
-          duration: Duration(seconds: 2),
+          duration: const Duration(seconds: 2),
         ),
       );
     }
@@ -549,10 +552,10 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
       
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Marked as read'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).markedAsRead),
             backgroundColor: AppTheme.primaryElectricBlue,
-            duration: Duration(seconds: 2),
+            duration: const Duration(seconds: 2),
           ),
         );
       }

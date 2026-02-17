@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../../../moderation/domain/entities/report.dart';
 import '../../domain/services/admin_service.dart';
@@ -38,9 +39,11 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    final l10n = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Content Moderation'),
+        title: Text(l10n.contentModeration),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
@@ -62,12 +65,12 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        'No pending reports',
+                        l10n.noPendingReports,
                         style: theme.textTheme.titleMedium,
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        'All caught up!',
+                        l10n.allCaughtUp,
                         style: theme.textTheme.bodyMedium,
                       ),
                     ],
@@ -111,7 +114,7 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
                         ),
                       ),
                       Text(
-                        'Reported by ${report.reporterDisplayName}',
+                        AppLocalizations.of(context).reportedBy(report.reporterDisplayName),
                         style: theme.textTheme.bodySmall,
                       ),
                     ],
@@ -124,13 +127,13 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
 
             // Content info
             if (report.contentOwnerDisplayName != null)
-              _buildInfoRow('Content Owner', report.contentOwnerDisplayName!),
-            _buildInfoRow('Content ID', report.contentId),
+              _buildInfoRow(AppLocalizations.of(context).contentOwner, report.contentOwnerDisplayName!),
+            _buildInfoRow(AppLocalizations.of(context).contentId, report.contentId),
             if (report.contentSnapshot != null && report.contentSnapshot!.isNotEmpty)
               _buildContentSnapshot(theme, report.contentSnapshot!),
             if (report.additionalDetails != null && report.additionalDetails!.isNotEmpty)
-              _buildInfoRow('Details', report.additionalDetails!),
-            _buildInfoRow('Reported', _formatDateTime(report.createdAt)),
+              _buildInfoRow(AppLocalizations.of(context).details, report.additionalDetails!),
+            _buildInfoRow(AppLocalizations.of(context).reported, _formatDateTime(report.createdAt)),
 
             const SizedBox(height: 16),
 
@@ -140,19 +143,19 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
               children: [
                 TextButton(
                   onPressed: () => _dismissReport(report),
-                  child: const Text('Dismiss'),
+                  child: Text(AppLocalizations.of(context).dismiss),
                 ),
                 const SizedBox(width: 8),
                 TextButton(
                   onPressed: () => _warnUser(report),
                   style: TextButton.styleFrom(foregroundColor: Colors.orange),
-                  child: const Text('Warn'),
+                  child: Text(AppLocalizations.of(context).warn),
                 ),
                 const SizedBox(width: 8),
                 ElevatedButton(
                   onPressed: () => _showActionDialog(report),
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                  child: const Text('Take Action'),
+                  child: Text(AppLocalizations.of(context).takeAction),
                 ),
               ],
             ),
@@ -304,7 +307,7 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Reported Content:',
+            AppLocalizations.of(context).reportedContent,
             style: theme.textTheme.bodySmall?.copyWith(
               fontWeight: FontWeight.bold,
             ),
@@ -335,7 +338,7 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
         _reports.removeWhere((r) => r.reportId == report.reportId);
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Report dismissed')),
+        SnackBar(content: Text(AppLocalizations.of(context).reportDismissed)),
       );
     }
   }
@@ -354,23 +357,24 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
         _reports.removeWhere((r) => r.reportId == report.reportId);
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Warning issued')),
+        SnackBar(content: Text(AppLocalizations.of(context).warningIssued)),
       );
     }
   }
 
   void _showActionDialog(Report report) {
+    final l10n = AppLocalizations.of(context);
     showModalBottomSheet(
       context: context,
       builder: (context) => SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Padding(
-              padding: EdgeInsets.all(16),
+            Padding(
+              padding: const EdgeInsets.all(16),
               child: Text(
-                'Take Action',
-                style: TextStyle(
+                l10n.takeAction,
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
@@ -379,8 +383,8 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
             const Divider(height: 1),
             ListTile(
               leading: const Icon(Icons.delete_outline, color: Colors.orange),
-              title: const Text('Remove Content'),
-              subtitle: const Text('Delete the reported content'),
+              title: Text(l10n.removeContent),
+              subtitle: Text(l10n.deleteReportedContent),
               onTap: () async {
                 Navigator.pop(context);
                 await _takeAction(report, ModerationAction.contentRemoved);
@@ -388,8 +392,8 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.volume_off, color: Colors.blue),
-              title: const Text('Mute User (24h)'),
-              subtitle: const Text('Temporarily prevent user from posting'),
+              title: Text(l10n.muteUser24h),
+              subtitle: Text(l10n.temporarilyPreventPosting),
               onTap: () async {
                 Navigator.pop(context);
                 await _takeAction(report, ModerationAction.temporaryMute);
@@ -397,8 +401,8 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.block, color: Colors.red),
-              title: const Text('Suspend User (7 days)'),
-              subtitle: const Text('Suspend user account'),
+              title: Text(l10n.suspendUser7Days),
+              subtitle: Text(l10n.suspendUserAccount),
               onTap: () async {
                 Navigator.pop(context);
                 await _takeAction(report, ModerationAction.temporarySuspension);
@@ -406,8 +410,8 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.gavel, color: Colors.purple),
-              title: const Text('Permanent Ban'),
-              subtitle: const Text('Permanently ban user'),
+              title: Text(l10n.permanentBan),
+              subtitle: Text(l10n.permanentlyBanUser),
               onTap: () async {
                 Navigator.pop(context);
                 await _takeAction(report, ModerationAction.permanentBan);
@@ -432,7 +436,7 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
         _reports.removeWhere((r) => r.reportId == report.reportId);
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Action taken: ${action.name}')),
+        SnackBar(content: Text(AppLocalizations.of(context).actionTaken(action.name))),
       );
     }
   }

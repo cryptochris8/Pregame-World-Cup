@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../bloc/watch_party_bloc.dart';
 import '../widgets/widgets.dart';
@@ -38,15 +39,16 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Watch Parties'),
+        title: Text(l10n.myWatchParties),
         bottom: TabBar(
           controller: _tabController,
-          tabs: const [
-            Tab(text: 'Hosting'),
-            Tab(text: 'Attending'),
-            Tab(text: 'Past'),
+          tabs: [
+            Tab(text: l10n.hosting),
+            Tab(text: l10n.attending),
+            Tab(text: l10n.past),
           ],
         ),
       ),
@@ -67,7 +69,7 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: _loadWatchParties,
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -85,7 +87,7 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
             );
           }
 
-          return const Center(child: Text('Loading your watch parties...'));
+          return Center(child: Text(l10n.loadingYourWatchParties));
         },
       ),
       floatingActionButton: FloatingActionButton.extended(
@@ -98,7 +100,7 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
           );
         },
         icon: const Icon(Icons.add),
-        label: const Text('Create'),
+        label: Text(l10n.create),
       ),
     );
   }
@@ -128,6 +130,7 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
   }
 
   Widget _buildEmptyState(String type) {
+    final l10n = AppLocalizations.of(context);
     IconData icon;
     String title;
     String subtitle;
@@ -136,25 +139,25 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
     switch (type) {
       case 'hosting':
         icon = Icons.celebration;
-        title = 'No watch parties hosted';
-        subtitle = 'Create your first watch party and invite friends!';
+        title = l10n.noWatchPartiesHosted;
+        subtitle = l10n.createFirstWatchParty;
         showCreateButton = true;
         break;
       case 'attending':
         icon = Icons.group;
-        title = 'No watch parties to attend';
-        subtitle = 'Discover public watch parties or accept invitations';
+        title = l10n.noWatchPartiesToAttend;
+        subtitle = l10n.discoverOrAcceptInvitations;
         showCreateButton = false;
         break;
       case 'past':
         icon = Icons.history;
-        title = 'No past watch parties';
-        subtitle = 'Your completed watch parties will appear here';
+        title = l10n.noPastWatchParties;
+        subtitle = l10n.completedPartiesAppearHere;
         showCreateButton = false;
         break;
       default:
         icon = Icons.celebration;
-        title = 'No watch parties';
+        title = l10n.noWatchPartiesFound;
         subtitle = '';
         showCreateButton = false;
     }
@@ -190,7 +193,7 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
                   );
                 },
                 icon: const Icon(Icons.add),
-                label: const Text('Create Watch Party'),
+                label: Text(l10n.createWatchParty),
               ),
             ],
           ],

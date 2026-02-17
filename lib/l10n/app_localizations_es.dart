@@ -1964,4 +1964,441 @@ class AppLocalizationsEs extends AppLocalizations {
   String attendeesWithCount(int count) {
     return 'Asistentes ($count)';
   }
+
+  @override
+  String get noAdminAccess => 'No tienes acceso de administrador';
+
+  @override
+  String get admin => 'Admin';
+
+  @override
+  String get adminDashboard => 'Panel de Administración';
+
+  @override
+  String get failedToLoadStats => 'Error al cargar estadísticas';
+
+  @override
+  String get overview => 'Resumen';
+
+  @override
+  String get totalUsers => 'Usuarios Totales';
+
+  @override
+  String get activeUsers24h => 'Activos (24h)';
+
+  @override
+  String get newToday => 'Nuevos Hoy';
+
+  @override
+  String get activeParties => 'Fiestas Activas';
+
+  @override
+  String get pendingReports => 'Reportes Pendientes';
+
+  @override
+  String get quickActions => 'Acciones Rápidas';
+
+  @override
+  String get userManagement => 'Gestión de Usuarios';
+
+  @override
+  String get userManagementDesc =>
+      'Ver, editar y gestionar cuentas de usuarios';
+
+  @override
+  String get contentModeration => 'Moderación de Contenido';
+
+  @override
+  String get manageWatchPartyListings => 'Gestionar listados de fiestas';
+
+  @override
+  String get featureFlags => 'Funcionalidades';
+
+  @override
+  String get toggleAppFeatures => 'Activar/desactivar funciones';
+
+  @override
+  String get sendBroadcastNotifications => 'Enviar notificaciones masivas';
+
+  @override
+  String get noPendingReports => 'Sin reportes pendientes';
+
+  @override
+  String get allCaughtUp => '¡Todo al día!';
+
+  @override
+  String reportedBy(String name) {
+    return 'Reportado por $name';
+  }
+
+  @override
+  String get contentOwner => 'Propietario del Contenido';
+
+  @override
+  String get contentId => 'ID del Contenido';
+
+  @override
+  String get reported => 'Reportado';
+
+  @override
+  String get reportedContent => 'Contenido Reportado:';
+
+  @override
+  String get dismiss => 'Descartar';
+
+  @override
+  String get warn => 'Advertir';
+
+  @override
+  String get takeAction => 'Tomar Acción';
+
+  @override
+  String get reportDismissed => 'Reporte descartado';
+
+  @override
+  String get warningIssued => 'Advertencia emitida';
+
+  @override
+  String get removeContent => 'Eliminar Contenido';
+
+  @override
+  String get deleteReportedContent => 'Eliminar el contenido reportado';
+
+  @override
+  String get muteUser24h => 'Silenciar Usuario (24h)';
+
+  @override
+  String get temporarilyPreventPosting =>
+      'Impedir temporalmente que el usuario publique';
+
+  @override
+  String get suspendUser7Days => 'Suspender Usuario (7 días)';
+
+  @override
+  String get suspendUserAccount => 'Suspender cuenta de usuario';
+
+  @override
+  String get permanentBan => 'Prohibición Permanente';
+
+  @override
+  String get permanentlyBanUser => 'Prohibir permanentemente al usuario';
+
+  @override
+  String actionTaken(String action) {
+    return 'Acción tomada: $action';
+  }
+
+  @override
+  String get addFlag => 'Agregar Bandera';
+
+  @override
+  String get noFeatureFlags => 'Sin funcionalidades';
+
+  @override
+  String get createFlag => 'Crear Bandera';
+
+  @override
+  String get enabled => 'Activado';
+
+  @override
+  String get disabled => 'Desactivado';
+
+  @override
+  String updatedDate(String date) {
+    return 'Actualizado: $date';
+  }
+
+  @override
+  String get failedToUpdateFlag => 'Error al actualizar la bandera';
+
+  @override
+  String flagToggled(String name, String status) {
+    return '$name $status';
+  }
+
+  @override
+  String get createFeatureFlag => 'Crear Funcionalidad';
+
+  @override
+  String get name => 'Nombre';
+
+  @override
+  String get featureFlagNameHint => 'ej., Función de Chat en Vivo';
+
+  @override
+  String get description => 'Descripción';
+
+  @override
+  String get featureFlagDescHint => '¿Qué controla esta funcionalidad?';
+
+  @override
+  String get featureFlagCreated => 'Funcionalidad creada';
+
+  @override
+  String get create => 'Crear';
+
+  @override
+  String get filterVenues => 'Filtrar Lugares';
+
+  @override
+  String get venueTypes => 'Tipos de Lugar';
+
+  @override
+  String get maximumDistance => 'Distancia Máxima';
+
+  @override
+  String get minimumRating => 'Calificación Mínima';
+
+  @override
+  String get openNow => 'Abierto Ahora';
+
+  @override
+  String get priceLevel => 'Nivel de Precio';
+
+  @override
+  String get searchSpecificFeatures => 'Buscar Características Específicas';
+
+  @override
+  String get keywordSearchHint =>
+      'ej., alitas, cerveza artesanal, música en vivo';
+
+  @override
+  String get applyFilters => 'Aplicar Filtros';
+
+  @override
+  String get inviteSent => '¡Invitación enviada!';
+
+  @override
+  String sendCount(int count) {
+    return 'Enviar ($count)';
+  }
+
+  @override
+  String get addPersonalMessage => 'Agregar un mensaje personal (opcional)';
+
+  @override
+  String friendsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amigos seleccionados',
+      one: '1 amigo seleccionado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get noFriendsToInvite => 'No hay amigos para invitar';
+
+  @override
+  String get followPeopleToInvite =>
+      'Sigue a personas para invitarlas a fiestas';
+
+  @override
+  String sendInvites(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Enviar $count Invitaciones',
+      one: 'Enviar 1 Invitación',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String invitesSent(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '¡$count invitaciones enviadas!',
+      one: '¡1 invitación enviada!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get watchPartyCreated => '¡Fiesta de visualización creada!';
+
+  @override
+  String get partyName => 'Nombre de la Fiesta';
+
+  @override
+  String get partyNameHint => 'Dale un nombre divertido a tu fiesta';
+
+  @override
+  String get pleaseEnterName => 'Ingresa un nombre';
+
+  @override
+  String get descriptionHint => 'Cuéntale a los invitados qué esperar...';
+
+  @override
+  String get visibility => 'Visibilidad';
+
+  @override
+  String get anyoneCanJoin => 'Cualquiera puede encontrar y unirse';
+
+  @override
+  String get onlyInvitedCanJoin => 'Solo amigos invitados pueden unirse';
+
+  @override
+  String get game => 'Partido';
+
+  @override
+  String get maximumAttendees => 'Asistentes Máximos';
+
+  @override
+  String get virtualAttendance => 'Asistencia Virtual';
+
+  @override
+  String get virtualAttendanceDesc => 'Permitir asistentes virtuales remotos';
+
+  @override
+  String get virtualAttendanceFee => 'Tarifa de Asistencia Virtual';
+
+  @override
+  String get freeHint => 'Gratis';
+
+  @override
+  String get selectGame => 'Seleccionar Partido';
+
+  @override
+  String get selectVenue => 'Seleccionar Lugar';
+
+  @override
+  String get pleaseSelectGame => 'Selecciona un partido';
+
+  @override
+  String get pleaseSelectVenue => 'Selecciona un lugar';
+
+  @override
+  String get discoverWatchParties => 'Descubre fiestas cerca de ti';
+
+  @override
+  String get noWatchPartiesFound => 'No Se Encontraron Fiestas';
+
+  @override
+  String get beFirstToCreateForMatch =>
+      '¡Sé el primero en crear una fiesta para este partido!';
+
+  @override
+  String get beFirstToCreate => '¡Sé el primero en crear una fiesta!';
+
+  @override
+  String get filterAndSort => 'Filtrar y Ordenar';
+
+  @override
+  String get show => 'Mostrar';
+
+  @override
+  String get sortBy => 'Ordenar por';
+
+  @override
+  String get date => 'Fecha';
+
+  @override
+  String get mostPopular => 'Más Popular';
+
+  @override
+  String get myWatchParties => 'Mis Fiestas';
+
+  @override
+  String get hosting => 'Organizando';
+
+  @override
+  String get attending => 'Asistiendo';
+
+  @override
+  String get past => 'Pasadas';
+
+  @override
+  String get loadingYourWatchParties => 'Cargando tus fiestas...';
+
+  @override
+  String get noWatchPartiesHosted => 'No has organizado fiestas';
+
+  @override
+  String get createFirstWatchParty => '¡Crea tu primera fiesta!';
+
+  @override
+  String get noWatchPartiesToAttend => 'No hay fiestas para asistir';
+
+  @override
+  String get discoverOrAcceptInvitations =>
+      'Descubre fiestas o acepta invitaciones';
+
+  @override
+  String get noPastWatchParties => 'Sin fiestas pasadas';
+
+  @override
+  String get completedPartiesAppearHere =>
+      'Las fiestas completadas aparecerán aquí';
+
+  @override
+  String get liveChat => 'Chat en Vivo';
+
+  @override
+  String get joiningChat => 'Uniéndose al chat...';
+
+  @override
+  String get joinLiveChat => 'Únete al Chat en Vivo';
+
+  @override
+  String get chatWithFans =>
+      '¡Chatea con otros fans sobre este partido en tiempo real!';
+
+  @override
+  String fansInChat(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fans en el chat',
+      one: '1 fan en el chat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get beRespectful => 'Sé respetuoso y sigue las normas de la comunidad';
+
+  @override
+  String slowMode(int seconds) {
+    return 'Modo lento: espera ${seconds}s entre mensajes';
+  }
+
+  @override
+  String get leaveChatQuestion => '¿Salir del Chat?';
+
+  @override
+  String get canRejoinAnytime => 'Puedes volver al chat en cualquier momento';
+
+  @override
+  String get searchMessages => 'Buscar mensajes...';
+
+  @override
+  String get direct => 'Directo';
+
+  @override
+  String get loadingConversations => 'Cargando conversaciones...';
+
+  @override
+  String get noConversationsYet => 'Aún no hay conversaciones';
+
+  @override
+  String get startConversationWithFriends =>
+      '¡Inicia una conversación con tus amigos!';
+
+  @override
+  String get startChatting => 'Empezar a Chatear';
+
+  @override
+  String get errorLoadingConversations => 'Error al cargar conversaciones';
+
+  @override
+  String get pleaseTryAgainLater => 'Intenta de nuevo más tarde';
+
+  @override
+  String get archiveComingSoon => '¡Función de archivo próximamente!';
+
+  @override
+  String get markedAsRead => 'Marcado como leído';
 }

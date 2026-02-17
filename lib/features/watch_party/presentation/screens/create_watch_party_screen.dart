@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 import '../bloc/watch_party_bloc.dart';
@@ -68,11 +69,12 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return BlocListener<WatchPartyBloc, WatchPartyState>(
       listener: (context, state) {
         if (state is WatchPartyCreated) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Watch party created!')),
+            SnackBar(content: Text(l10n.watchPartyCreated)),
           );
           Navigator.pop(context, state.watchParty);
         }
@@ -88,7 +90,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Create Watch Party'),
+          title: Text(l10n.createWatchParty),
         ),
         body: Form(
           key: _formKey,
@@ -98,14 +100,14 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
               // Name field
               TextFormField(
                 controller: _nameController,
-                decoration: const InputDecoration(
-                  labelText: 'Party Name',
-                  hintText: 'e.g., USA vs Mexico Watch Party',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: l10n.partyName,
+                  hintText: l10n.partyNameHint,
+                  border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
-                    return 'Please enter a name';
+                    return l10n.pleaseEnterName;
                   }
                   return null;
                 },
@@ -115,19 +117,19 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
               // Description field
               TextFormField(
                 controller: _descriptionController,
-                decoration: const InputDecoration(
-                  labelText: 'Description',
-                  hintText: 'Tell people about your watch party...',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: l10n.description,
+                  hintText: l10n.descriptionHint,
+                  border: const OutlineInputBorder(),
                 ),
                 maxLines: 3,
               ),
               const SizedBox(height: 24),
 
               // Visibility toggle
-              const Text(
-                'Visibility',
-                style: TextStyle(fontWeight: FontWeight.w600),
+              Text(
+                l10n.visibility,
+                style: const TextStyle(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 8),
               VisibilityToggle(
@@ -137,34 +139,34 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
               const SizedBox(height: 8),
               Text(
                 _visibility == WatchPartyVisibility.public
-                    ? 'Anyone can discover and join this party'
-                    : 'Only invited people can join',
+                    ? l10n.anyoneCanJoin
+                    : l10n.onlyInvitedCanJoin,
                 style: TextStyle(color: Colors.grey[600], fontSize: 12),
               ),
               const SizedBox(height: 24),
 
               // Game selection
-              const Text(
-                'Game',
-                style: TextStyle(fontWeight: FontWeight.w600),
+              Text(
+                l10n.game,
+                style: const TextStyle(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 8),
               _buildGameSelector(),
               const SizedBox(height: 24),
 
               // Venue selection
-              const Text(
-                'Venue',
-                style: TextStyle(fontWeight: FontWeight.w600),
+              Text(
+                l10n.venue,
+                style: const TextStyle(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 8),
               _buildVenueSelector(),
               const SizedBox(height: 24),
 
               // Max attendees
-              const Text(
-                'Maximum Attendees',
-                style: TextStyle(fontWeight: FontWeight.w600),
+              Text(
+                l10n.maximumAttendees,
+                style: const TextStyle(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 8),
               Row(
@@ -207,10 +209,10 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
                         children: [
                           const Icon(Icons.videocam, color: Color(0xFF059669)),
                           const SizedBox(width: 8),
-                          const Expanded(
+                          Expanded(
                             child: Text(
-                              'Virtual Attendance',
-                              style: TextStyle(fontWeight: FontWeight.w600),
+                              l10n.virtualAttendance,
+                              style: const TextStyle(fontWeight: FontWeight.w600),
                             ),
                           ),
                           Switch(
@@ -224,7 +226,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
                       if (_allowVirtualAttendance) ...[
                         const SizedBox(height: 12),
                         Text(
-                          'Allow fans to join virtually and participate in chat',
+                          l10n.virtualAttendanceDesc,
                           style: TextStyle(
                             color: Colors.grey[600],
                             fontSize: 12,
@@ -233,11 +235,11 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
                         const SizedBox(height: 16),
                         TextFormField(
                           controller: _feeController,
-                          decoration: const InputDecoration(
-                            labelText: 'Virtual Attendance Fee',
+                          decoration: InputDecoration(
+                            labelText: l10n.virtualAttendanceFee,
                             prefixText: '\$ ',
-                            hintText: '0.00 for free',
-                            border: OutlineInputBorder(),
+                            hintText: l10n.freeHint,
+                            border: const OutlineInputBorder(),
                           ),
                           keyboardType: TextInputType.number,
                         ),
@@ -278,7 +280,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
     return OutlinedButton.icon(
       onPressed: _selectGame,
       icon: const Icon(Icons.sports_soccer),
-      label: const Text('Select Game'),
+      label: Text(AppLocalizations.of(context).selectGame),
       style: OutlinedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 16),
       ),
@@ -303,7 +305,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
     return OutlinedButton.icon(
       onPressed: _selectVenue,
       icon: const Icon(Icons.location_on),
-      label: const Text('Select Venue'),
+      label: Text(AppLocalizations.of(context).selectVenue),
       style: OutlinedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 16),
       ),
@@ -335,7 +337,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
                   height: 20,
                   child: CircularProgressIndicator(strokeWidth: 2),
                 )
-              : const Text('Create Watch Party'),
+              : Text(AppLocalizations.of(context).createWatchParty),
         ),
       ),
     );
@@ -382,14 +384,14 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
 
     if (_gameId == null || _gameName == null || _gameDateTime == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please select a game')),
+        SnackBar(content: Text(AppLocalizations.of(context).pleaseSelectGame)),
       );
       return;
     }
 
     if (_venueId == null || _venueName == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please select a venue')),
+        SnackBar(content: Text(AppLocalizations.of(context).pleaseSelectVenue)),
       );
       return;
     }

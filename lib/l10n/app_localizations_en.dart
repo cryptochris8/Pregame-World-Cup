@@ -1941,4 +1941,439 @@ class AppLocalizationsEn extends AppLocalizations {
   String attendeesWithCount(int count) {
     return 'Attendees ($count)';
   }
+
+  @override
+  String get noAdminAccess => 'You do not have admin access';
+
+  @override
+  String get admin => 'Admin';
+
+  @override
+  String get adminDashboard => 'Admin Dashboard';
+
+  @override
+  String get failedToLoadStats => 'Failed to load stats';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get totalUsers => 'Total Users';
+
+  @override
+  String get activeUsers24h => 'Active (24h)';
+
+  @override
+  String get newToday => 'New Today';
+
+  @override
+  String get activeParties => 'Active Parties';
+
+  @override
+  String get pendingReports => 'Pending Reports';
+
+  @override
+  String get quickActions => 'Quick Actions';
+
+  @override
+  String get userManagement => 'User Management';
+
+  @override
+  String get userManagementDesc => 'View, edit, and manage user accounts';
+
+  @override
+  String get contentModeration => 'Content Moderation';
+
+  @override
+  String get manageWatchPartyListings => 'Manage watch party listings';
+
+  @override
+  String get featureFlags => 'Feature Flags';
+
+  @override
+  String get toggleAppFeatures => 'Toggle app features';
+
+  @override
+  String get sendBroadcastNotifications => 'Send broadcast notifications';
+
+  @override
+  String get noPendingReports => 'No pending reports';
+
+  @override
+  String get allCaughtUp => 'All caught up!';
+
+  @override
+  String reportedBy(String name) {
+    return 'Reported by $name';
+  }
+
+  @override
+  String get contentOwner => 'Content Owner';
+
+  @override
+  String get contentId => 'Content ID';
+
+  @override
+  String get reported => 'Reported';
+
+  @override
+  String get reportedContent => 'Reported Content:';
+
+  @override
+  String get dismiss => 'Dismiss';
+
+  @override
+  String get warn => 'Warn';
+
+  @override
+  String get takeAction => 'Take Action';
+
+  @override
+  String get reportDismissed => 'Report dismissed';
+
+  @override
+  String get warningIssued => 'Warning issued';
+
+  @override
+  String get removeContent => 'Remove Content';
+
+  @override
+  String get deleteReportedContent => 'Delete the reported content';
+
+  @override
+  String get muteUser24h => 'Mute User (24h)';
+
+  @override
+  String get temporarilyPreventPosting =>
+      'Temporarily prevent user from posting';
+
+  @override
+  String get suspendUser7Days => 'Suspend User (7 days)';
+
+  @override
+  String get suspendUserAccount => 'Suspend user account';
+
+  @override
+  String get permanentBan => 'Permanent Ban';
+
+  @override
+  String get permanentlyBanUser => 'Permanently ban user';
+
+  @override
+  String actionTaken(String action) {
+    return 'Action taken: $action';
+  }
+
+  @override
+  String get addFlag => 'Add Flag';
+
+  @override
+  String get noFeatureFlags => 'No feature flags';
+
+  @override
+  String get createFlag => 'Create Flag';
+
+  @override
+  String get enabled => 'Enabled';
+
+  @override
+  String get disabled => 'Disabled';
+
+  @override
+  String updatedDate(String date) {
+    return 'Updated: $date';
+  }
+
+  @override
+  String get failedToUpdateFlag => 'Failed to update flag';
+
+  @override
+  String flagToggled(String name, String status) {
+    return '$name $status';
+  }
+
+  @override
+  String get createFeatureFlag => 'Create Feature Flag';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get featureFlagNameHint => 'e.g., Live Chat Feature';
+
+  @override
+  String get description => 'Description';
+
+  @override
+  String get featureFlagDescHint => 'What does this flag control?';
+
+  @override
+  String get featureFlagCreated => 'Feature flag created';
+
+  @override
+  String get create => 'Create';
+
+  @override
+  String get filterVenues => 'Filter Venues';
+
+  @override
+  String get venueTypes => 'Venue Types';
+
+  @override
+  String get maximumDistance => 'Maximum Distance';
+
+  @override
+  String get minimumRating => 'Minimum Rating';
+
+  @override
+  String get openNow => 'Open Now';
+
+  @override
+  String get priceLevel => 'Price Level';
+
+  @override
+  String get searchSpecificFeatures => 'Search for Specific Features';
+
+  @override
+  String get keywordSearchHint => 'e.g., wings, craft beer, live music';
+
+  @override
+  String get applyFilters => 'Apply Filters';
+
+  @override
+  String get inviteSent => 'Invite sent!';
+
+  @override
+  String sendCount(int count) {
+    return 'Send ($count)';
+  }
+
+  @override
+  String get addPersonalMessage => 'Add a personal message (optional)';
+
+  @override
+  String friendsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count friends selected',
+      one: '1 friend selected',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get noFriendsToInvite => 'No friends to invite';
+
+  @override
+  String get followPeopleToInvite =>
+      'Follow some people to invite them to watch parties';
+
+  @override
+  String sendInvites(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Send $count Invites',
+      one: 'Send 1 Invite',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String invitesSent(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sent $count invites!',
+      one: 'Sent 1 invite!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get watchPartyCreated => 'Watch party created!';
+
+  @override
+  String get partyName => 'Party Name';
+
+  @override
+  String get partyNameHint => 'Give your party a fun name';
+
+  @override
+  String get pleaseEnterName => 'Please enter a name';
+
+  @override
+  String get descriptionHint => 'Tell guests what to expect...';
+
+  @override
+  String get visibility => 'Visibility';
+
+  @override
+  String get anyoneCanJoin => 'Anyone can find and join';
+
+  @override
+  String get onlyInvitedCanJoin => 'Only invited friends can join';
+
+  @override
+  String get game => 'Game';
+
+  @override
+  String get maximumAttendees => 'Maximum Attendees';
+
+  @override
+  String get virtualAttendance => 'Virtual Attendance';
+
+  @override
+  String get virtualAttendanceDesc =>
+      'Allow virtual attendees to join remotely';
+
+  @override
+  String get virtualAttendanceFee => 'Virtual Attendance Fee';
+
+  @override
+  String get freeHint => 'Free';
+
+  @override
+  String get selectGame => 'Select Game';
+
+  @override
+  String get selectVenue => 'Select Venue';
+
+  @override
+  String get pleaseSelectGame => 'Please select a game';
+
+  @override
+  String get pleaseSelectVenue => 'Please select a venue';
+
+  @override
+  String get discoverWatchParties => 'Discover watch parties near you';
+
+  @override
+  String get noWatchPartiesFound => 'No Watch Parties Found';
+
+  @override
+  String get beFirstToCreateForMatch =>
+      'Be the first to create a watch party for this match!';
+
+  @override
+  String get beFirstToCreate => 'Be the first to create a watch party!';
+
+  @override
+  String get filterAndSort => 'Filter & Sort';
+
+  @override
+  String get show => 'Show';
+
+  @override
+  String get sortBy => 'Sort by';
+
+  @override
+  String get date => 'Date';
+
+  @override
+  String get mostPopular => 'Most Popular';
+
+  @override
+  String get myWatchParties => 'My Watch Parties';
+
+  @override
+  String get hosting => 'Hosting';
+
+  @override
+  String get attending => 'Attending';
+
+  @override
+  String get past => 'Past';
+
+  @override
+  String get loadingYourWatchParties => 'Loading your watch parties...';
+
+  @override
+  String get noWatchPartiesHosted => 'No watch parties hosted';
+
+  @override
+  String get createFirstWatchParty => 'Create your first watch party!';
+
+  @override
+  String get noWatchPartiesToAttend => 'No watch parties to attend';
+
+  @override
+  String get discoverOrAcceptInvitations =>
+      'Discover parties or accept invitations';
+
+  @override
+  String get noPastWatchParties => 'No past watch parties';
+
+  @override
+  String get completedPartiesAppearHere => 'Completed parties will appear here';
+
+  @override
+  String get liveChat => 'Live Chat';
+
+  @override
+  String get joiningChat => 'Joining chat...';
+
+  @override
+  String get joinLiveChat => 'Join the Live Chat';
+
+  @override
+  String get chatWithFans =>
+      'Chat with fellow fans about this match in real time!';
+
+  @override
+  String fansInChat(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fans in chat',
+      one: '1 fan in chat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get beRespectful => 'Be respectful and follow community guidelines';
+
+  @override
+  String slowMode(int seconds) {
+    return 'Slow mode: wait ${seconds}s between messages';
+  }
+
+  @override
+  String get leaveChatQuestion => 'Leave Chat?';
+
+  @override
+  String get canRejoinAnytime => 'You can rejoin the chat anytime';
+
+  @override
+  String get searchMessages => 'Search messages...';
+
+  @override
+  String get direct => 'Direct';
+
+  @override
+  String get loadingConversations => 'Loading conversations...';
+
+  @override
+  String get noConversationsYet => 'No conversations yet';
+
+  @override
+  String get startConversationWithFriends =>
+      'Start a conversation with your friends!';
+
+  @override
+  String get startChatting => 'Start Chatting';
+
+  @override
+  String get errorLoadingConversations => 'Error loading conversations';
+
+  @override
+  String get pleaseTryAgainLater => 'Please try again later';
+
+  @override
+  String get archiveComingSoon => 'Archive feature coming soon!';
+
+  @override
+  String get markedAsRead => 'Marked as read';
 }

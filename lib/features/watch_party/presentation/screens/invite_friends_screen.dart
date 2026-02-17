@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../bloc/watch_party_bloc.dart';
 import '../../../../features/social/domain/entities/user_profile.dart';
@@ -58,11 +59,13 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
     return BlocListener<WatchPartyBloc, WatchPartyState>(
       listener: (context, state) {
         if (state is InviteSent) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Invite sent!')),
+            SnackBar(content: Text(l10n.inviteSent)),
           );
         }
         if (state is WatchPartyError) {
@@ -74,7 +77,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Invite Friends'),
+          title: Text(l10n.inviteFriends),
           actions: [
             if (_selectedFriendIds.isNotEmpty)
               TextButton(
@@ -89,7 +92,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                         ),
                       )
                     : Text(
-                        'Send (${_selectedFriendIds.length})',
+                        l10n.sendCount(_selectedFriendIds.length),
                         style: const TextStyle(color: Colors.white),
                       ),
               ),
@@ -103,7 +106,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
               child: TextField(
                 controller: _messageController,
                 decoration: InputDecoration(
-                  hintText: 'Add a personal message (optional)',
+                  hintText: l10n.addPersonalMessage,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -121,7 +124,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                 child: Row(
                   children: [
                     Text(
-                      '${_selectedFriendIds.length} friend${_selectedFriendIds.length > 1 ? "s" : ""} selected',
+                      l10n.friendsSelected(_selectedFriendIds.length),
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     const Spacer(),
@@ -129,7 +132,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                       onPressed: () {
                         setState(() => _selectedFriendIds.clear());
                       },
-                      child: const Text('Clear all'),
+                      child: Text(l10n.clearAll),
                     ),
                   ],
                 ),
@@ -206,6 +209,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -213,12 +217,12 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
           Icon(Icons.people_outline, size: 80, color: Colors.grey[300]),
           const SizedBox(height: 16),
           Text(
-            'No friends to invite',
+            l10n.noFriendsToInvite,
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 8),
           Text(
-            'Follow some people to invite them to watch parties',
+            l10n.followPeopleToInvite,
             style: TextStyle(color: Colors.grey[600]),
             textAlign: TextAlign.center,
           ),
@@ -228,13 +232,14 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
   }
 
   Widget _buildErrorState() {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(Icons.error_outline, size: 64, color: Colors.grey[400]),
           const SizedBox(height: 16),
-          Text(_error ?? 'An error occurred'),
+          Text(_error ?? l10n.error),
           const SizedBox(height: 16),
           ElevatedButton(
             onPressed: () {
@@ -244,7 +249,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
               });
               _loadFriends();
             },
-            child: const Text('Retry'),
+            child: Text(l10n.retry),
           ),
         ],
       ),
@@ -280,7 +285,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                   ),
                 )
               : Text(
-                  'Send ${_selectedFriendIds.length} Invite${_selectedFriendIds.length > 1 ? "s" : ""}',
+                  AppLocalizations.of(context).sendInvites(_selectedFriendIds.length),
                 ),
         ),
       ),
@@ -313,7 +318,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Sent ${_selectedFriendIds.length} invite${_selectedFriendIds.length > 1 ? "s" : ""}!',
+            AppLocalizations.of(context).invitesSent(_selectedFriendIds.length),
           ),
         ),
       );

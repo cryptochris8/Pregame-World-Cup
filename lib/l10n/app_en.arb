@@ -2624,5 +2624,558 @@
     "placeholders": {
       "count": {"type": "int"}
     }
+  },
+
+  "noAdminAccess": "You do not have admin access",
+  "@noAdminAccess": {
+    "description": "Message when user lacks admin privileges"
+  },
+  "admin": "Admin",
+  "@admin": {
+    "description": "Admin label"
+  },
+  "adminDashboard": "Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Admin dashboard screen title"
+  },
+  "failedToLoadStats": "Failed to load stats",
+  "@failedToLoadStats": {
+    "description": "Error loading dashboard stats"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Overview section title"
+  },
+  "totalUsers": "Total Users",
+  "@totalUsers": {
+    "description": "Total users stat label"
+  },
+  "activeUsers24h": "Active (24h)",
+  "@activeUsers24h": {
+    "description": "Active users in last 24 hours"
+  },
+  "newToday": "New Today",
+  "@newToday": {
+    "description": "New users today stat label"
+  },
+  "activeParties": "Active Parties",
+  "@activeParties": {
+    "description": "Active watch parties stat label"
+  },
+  "pendingReports": "Pending Reports",
+  "@pendingReports": {
+    "description": "Pending reports stat label"
+  },
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Quick actions section title"
+  },
+  "userManagement": "User Management",
+  "@userManagement": {
+    "description": "User management action tile title"
+  },
+  "userManagementDesc": "View, edit, and manage user accounts",
+  "@userManagementDesc": {
+    "description": "User management action description"
+  },
+  "contentModeration": "Content Moderation",
+  "@contentModeration": {
+    "description": "Content moderation action tile title"
+  },
+  "manageWatchPartyListings": "Manage watch party listings",
+  "@manageWatchPartyListings": {
+    "description": "Watch party management description"
+  },
+  "featureFlags": "Feature Flags",
+  "@featureFlags": {
+    "description": "Feature flags management title"
+  },
+  "toggleAppFeatures": "Toggle app features",
+  "@toggleAppFeatures": {
+    "description": "Feature flags management description"
+  },
+  "sendBroadcastNotifications": "Send broadcast notifications",
+  "@sendBroadcastNotifications": {
+    "description": "Push notifications management description"
+  },
+
+  "noPendingReports": "No pending reports",
+  "@noPendingReports": {
+    "description": "Empty state when no reports pending"
+  },
+  "allCaughtUp": "All caught up!",
+  "@allCaughtUp": {
+    "description": "Empty state subtitle for no reports"
+  },
+  "reportedBy": "Reported by {name}",
+  "@reportedBy": {
+    "description": "Reporter attribution",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "contentOwner": "Content Owner",
+  "@contentOwner": {
+    "description": "Content owner label in report"
+  },
+  "contentId": "Content ID",
+  "@contentId": {
+    "description": "Content ID label in report"
+  },
+  "reported": "Reported",
+  "@reported": {
+    "description": "Reported date label"
+  },
+  "reportedContent": "Reported Content:",
+  "@reportedContent": {
+    "description": "Reported content section label"
+  },
+  "dismiss": "Dismiss",
+  "@dismiss": {
+    "description": "Dismiss report button"
+  },
+  "warn": "Warn",
+  "@warn": {
+    "description": "Warn user button"
+  },
+  "takeAction": "Take Action",
+  "@takeAction": {
+    "description": "Take action button for moderation"
+  },
+  "reportDismissed": "Report dismissed",
+  "@reportDismissed": {
+    "description": "Report dismissed confirmation"
+  },
+  "warningIssued": "Warning issued",
+  "@warningIssued": {
+    "description": "Warning issued confirmation"
+  },
+  "removeContent": "Remove Content",
+  "@removeContent": {
+    "description": "Remove content moderation action"
+  },
+  "deleteReportedContent": "Delete the reported content",
+  "@deleteReportedContent": {
+    "description": "Remove content description"
+  },
+  "muteUser24h": "Mute User (24h)",
+  "@muteUser24h": {
+    "description": "Mute user moderation action"
+  },
+  "temporarilyPreventPosting": "Temporarily prevent user from posting",
+  "@temporarilyPreventPosting": {
+    "description": "Mute user description"
+  },
+  "suspendUser7Days": "Suspend User (7 days)",
+  "@suspendUser7Days": {
+    "description": "Suspend user moderation action"
+  },
+  "suspendUserAccount": "Suspend user account",
+  "@suspendUserAccount": {
+    "description": "Suspend user description"
+  },
+  "permanentBan": "Permanent Ban",
+  "@permanentBan": {
+    "description": "Permanent ban moderation action"
+  },
+  "permanentlyBanUser": "Permanently ban user",
+  "@permanentlyBanUser": {
+    "description": "Permanent ban description"
+  },
+  "actionTaken": "Action taken: {action}",
+  "@actionTaken": {
+    "description": "Moderation action confirmation",
+    "placeholders": {
+      "action": {"type": "String"}
+    }
+  },
+
+  "addFlag": "Add Flag",
+  "@addFlag": {
+    "description": "Add feature flag tooltip"
+  },
+  "noFeatureFlags": "No feature flags",
+  "@noFeatureFlags": {
+    "description": "Empty state when no feature flags"
+  },
+  "createFlag": "Create Flag",
+  "@createFlag": {
+    "description": "Create flag button"
+  },
+  "enabled": "Enabled",
+  "@enabled": {
+    "description": "Enabled status label"
+  },
+  "disabled": "Disabled",
+  "@disabled": {
+    "description": "Disabled status label"
+  },
+  "updatedDate": "Updated: {date}",
+  "@updatedDate": {
+    "description": "Updated date label",
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "failedToUpdateFlag": "Failed to update flag",
+  "@failedToUpdateFlag": {
+    "description": "Error updating feature flag"
+  },
+  "flagToggled": "{name} {status}",
+  "@flagToggled": {
+    "description": "Feature flag toggled confirmation",
+    "placeholders": {
+      "name": {"type": "String"},
+      "status": {"type": "String"}
+    }
+  },
+  "createFeatureFlag": "Create Feature Flag",
+  "@createFeatureFlag": {
+    "description": "Create feature flag dialog title"
+  },
+  "name": "Name",
+  "@name": {
+    "description": "Name field label"
+  },
+  "featureFlagNameHint": "e.g., Live Chat Feature",
+  "@featureFlagNameHint": {
+    "description": "Feature flag name hint text"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Description field label"
+  },
+  "featureFlagDescHint": "What does this flag control?",
+  "@featureFlagDescHint": {
+    "description": "Feature flag description hint text"
+  },
+  "featureFlagCreated": "Feature flag created",
+  "@featureFlagCreated": {
+    "description": "Feature flag created confirmation"
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Create button"
+  },
+
+  "filterVenues": "Filter Venues",
+  "@filterVenues": {
+    "description": "Filter venues screen title"
+  },
+  "venueTypes": "Venue Types",
+  "@venueTypes": {
+    "description": "Venue types section title"
+  },
+  "maximumDistance": "Maximum Distance",
+  "@maximumDistance": {
+    "description": "Maximum distance section title"
+  },
+  "minimumRating": "Minimum Rating",
+  "@minimumRating": {
+    "description": "Minimum rating section title"
+  },
+  "openNow": "Open Now",
+  "@openNow": {
+    "description": "Open now filter label"
+  },
+  "priceLevel": "Price Level",
+  "@priceLevel": {
+    "description": "Price level section title"
+  },
+  "searchSpecificFeatures": "Search for Specific Features",
+  "@searchSpecificFeatures": {
+    "description": "Keyword search section title"
+  },
+  "keywordSearchHint": "e.g., wings, craft beer, live music",
+  "@keywordSearchHint": {
+    "description": "Keyword search hint text"
+  },
+  "applyFilters": "Apply Filters",
+  "@applyFilters": {
+    "description": "Apply filters button"
+  },
+
+  "inviteSent": "Invite sent!",
+  "@inviteSent": {
+    "description": "Single invite sent confirmation"
+  },
+  "sendCount": "Send ({count})",
+  "@sendCount": {
+    "description": "Send button with count",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "addPersonalMessage": "Add a personal message (optional)",
+  "@addPersonalMessage": {
+    "description": "Personal message hint text"
+  },
+  "friendsSelected": "{count, plural, =1{1 friend selected} other{{count} friends selected}}",
+  "@friendsSelected": {
+    "description": "Friends selected count",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "noFriendsToInvite": "No friends to invite",
+  "@noFriendsToInvite": {
+    "description": "Empty state when no friends available"
+  },
+  "followPeopleToInvite": "Follow some people to invite them to watch parties",
+  "@followPeopleToInvite": {
+    "description": "Empty state suggestion for invites"
+  },
+  "sendInvites": "{count, plural, =1{Send 1 Invite} other{Send {count} Invites}}",
+  "@sendInvites": {
+    "description": "Send invites button text",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "invitesSent": "{count, plural, =1{Sent 1 invite!} other{Sent {count} invites!}}",
+  "@invitesSent": {
+    "description": "Invites sent confirmation",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "watchPartyCreated": "Watch party created!",
+  "@watchPartyCreated": {
+    "description": "Watch party created confirmation"
+  },
+  "partyName": "Party Name",
+  "@partyName": {
+    "description": "Party name field label"
+  },
+  "partyNameHint": "Give your party a fun name",
+  "@partyNameHint": {
+    "description": "Party name hint text"
+  },
+  "pleaseEnterName": "Please enter a name",
+  "@pleaseEnterName": {
+    "description": "Name validation error"
+  },
+  "descriptionHint": "Tell guests what to expect...",
+  "@descriptionHint": {
+    "description": "Description hint text"
+  },
+  "visibility": "Visibility",
+  "@visibility": {
+    "description": "Visibility section label"
+  },
+  "anyoneCanJoin": "Anyone can find and join",
+  "@anyoneCanJoin": {
+    "description": "Public visibility description"
+  },
+  "onlyInvitedCanJoin": "Only invited friends can join",
+  "@onlyInvitedCanJoin": {
+    "description": "Private visibility description"
+  },
+  "game": "Game",
+  "@game": {
+    "description": "Game field label"
+  },
+  "maximumAttendees": "Maximum Attendees",
+  "@maximumAttendees": {
+    "description": "Maximum attendees field label"
+  },
+  "virtualAttendance": "Virtual Attendance",
+  "@virtualAttendance": {
+    "description": "Virtual attendance section label"
+  },
+  "virtualAttendanceDesc": "Allow virtual attendees to join remotely",
+  "@virtualAttendanceDesc": {
+    "description": "Virtual attendance description"
+  },
+  "virtualAttendanceFee": "Virtual Attendance Fee",
+  "@virtualAttendanceFee": {
+    "description": "Virtual fee field label"
+  },
+  "freeHint": "Free",
+  "@freeHint": {
+    "description": "Free price hint"
+  },
+  "selectGame": "Select Game",
+  "@selectGame": {
+    "description": "Select game button"
+  },
+  "selectVenue": "Select Venue",
+  "@selectVenue": {
+    "description": "Select venue button"
+  },
+  "pleaseSelectGame": "Please select a game",
+  "@pleaseSelectGame": {
+    "description": "Game selection validation error"
+  },
+  "pleaseSelectVenue": "Please select a venue",
+  "@pleaseSelectVenue": {
+    "description": "Venue selection validation error"
+  },
+
+  "discoverWatchParties": "Discover watch parties near you",
+  "@discoverWatchParties": {
+    "description": "Discovery screen placeholder text"
+  },
+  "noWatchPartiesFound": "No Watch Parties Found",
+  "@noWatchPartiesFound": {
+    "description": "Empty state title for watch party discovery"
+  },
+  "beFirstToCreateForMatch": "Be the first to create a watch party for this match!",
+  "@beFirstToCreateForMatch": {
+    "description": "Empty state suggestion for specific match"
+  },
+  "beFirstToCreate": "Be the first to create a watch party!",
+  "@beFirstToCreate": {
+    "description": "Empty state general suggestion"
+  },
+  "filterAndSort": "Filter & Sort",
+  "@filterAndSort": {
+    "description": "Filter and sort sheet title"
+  },
+  "show": "Show",
+  "@show": {
+    "description": "Show section label in filter"
+  },
+  "sortBy": "Sort by",
+  "@sortBy": {
+    "description": "Sort by section label"
+  },
+  "date": "Date",
+  "@date": {
+    "description": "Date sort option"
+  },
+  "mostPopular": "Most Popular",
+  "@mostPopular": {
+    "description": "Most popular sort option"
+  },
+
+  "myWatchParties": "My Watch Parties",
+  "@myWatchParties": {
+    "description": "My watch parties screen title"
+  },
+  "hosting": "Hosting",
+  "@hosting": {
+    "description": "Hosting tab label"
+  },
+  "attending": "Attending",
+  "@attending": {
+    "description": "Attending tab label"
+  },
+  "past": "Past",
+  "@past": {
+    "description": "Past tab label"
+  },
+  "loadingYourWatchParties": "Loading your watch parties...",
+  "@loadingYourWatchParties": {
+    "description": "Loading watch parties message"
+  },
+  "noWatchPartiesHosted": "No watch parties hosted",
+  "@noWatchPartiesHosted": {
+    "description": "Empty state for hosting tab"
+  },
+  "createFirstWatchParty": "Create your first watch party!",
+  "@createFirstWatchParty": {
+    "description": "Empty state suggestion for hosting"
+  },
+  "noWatchPartiesToAttend": "No watch parties to attend",
+  "@noWatchPartiesToAttend": {
+    "description": "Empty state for attending tab"
+  },
+  "discoverOrAcceptInvitations": "Discover parties or accept invitations",
+  "@discoverOrAcceptInvitations": {
+    "description": "Empty state suggestion for attending"
+  },
+  "noPastWatchParties": "No past watch parties",
+  "@noPastWatchParties": {
+    "description": "Empty state for past tab"
+  },
+  "completedPartiesAppearHere": "Completed parties will appear here",
+  "@completedPartiesAppearHere": {
+    "description": "Empty state suggestion for past"
+  },
+
+  "liveChat": "Live Chat",
+  "@liveChat": {
+    "description": "Live chat screen title"
+  },
+  "joiningChat": "Joining chat...",
+  "@joiningChat": {
+    "description": "Joining chat loading message"
+  },
+  "joinLiveChat": "Join the Live Chat",
+  "@joinLiveChat": {
+    "description": "Join live chat prompt title"
+  },
+  "chatWithFans": "Chat with fellow fans about this match in real time!",
+  "@chatWithFans": {
+    "description": "Join chat prompt description"
+  },
+  "fansInChat": "{count, plural, =1{1 fan in chat} other{{count} fans in chat}}",
+  "@fansInChat": {
+    "description": "Fans in chat count",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "beRespectful": "Be respectful and follow community guidelines",
+  "@beRespectful": {
+    "description": "Chat guidelines reminder"
+  },
+  "slowMode": "Slow mode: wait {seconds}s between messages",
+  "@slowMode": {
+    "description": "Slow mode rate limit indicator",
+    "placeholders": {
+      "seconds": {"type": "int"}
+    }
+  },
+  "leaveChatQuestion": "Leave Chat?",
+  "@leaveChatQuestion": {
+    "description": "Leave chat confirmation title"
+  },
+  "canRejoinAnytime": "You can rejoin the chat anytime",
+  "@canRejoinAnytime": {
+    "description": "Leave chat confirmation description"
+  },
+
+  "searchMessages": "Search messages...",
+  "@searchMessages": {
+    "description": "Search messages hint text"
+  },
+  "direct": "Direct",
+  "@direct": {
+    "description": "Direct messages tab label"
+  },
+  "loadingConversations": "Loading conversations...",
+  "@loadingConversations": {
+    "description": "Loading conversations message"
+  },
+  "noConversationsYet": "No conversations yet",
+  "@noConversationsYet": {
+    "description": "Empty state title for conversations"
+  },
+  "startConversationWithFriends": "Start a conversation with your friends!",
+  "@startConversationWithFriends": {
+    "description": "Empty state suggestion for conversations"
+  },
+  "startChatting": "Start Chatting",
+  "@startChatting": {
+    "description": "Start chatting button"
+  },
+  "errorLoadingConversations": "Error loading conversations",
+  "@errorLoadingConversations": {
+    "description": "Error loading conversations title"
+  },
+  "pleaseTryAgainLater": "Please try again later",
+  "@pleaseTryAgainLater": {
+    "description": "Generic retry suggestion"
+  },
+  "archiveComingSoon": "Archive feature coming soon!",
+  "@archiveComingSoon": {
+    "description": "Archive feature placeholder"
+  },
+  "markedAsRead": "Marked as read",
+  "@markedAsRead": {
+    "description": "Marked as read confirmation"
   }
 }

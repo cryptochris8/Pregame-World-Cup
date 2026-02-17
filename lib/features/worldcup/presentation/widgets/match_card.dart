@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../../config/app_theme.dart';
 import '../../domain/entities/entities.dart';
 import '../../utils/timezone_utils.dart';
-import '../bloc/bloc.dart';
 import 'live_indicator.dart';
 import 'team_flag.dart';
 import 'favorite_button.dart';
 import 'prediction_dialog.dart';
 import 'reminder_button.dart';
+import 'ai_insight_chip.dart';
+
+// Re-export extracted widgets for backward compatibility
+export 'match_row.dart';
+export 'ai_insight_chip.dart';
 
 /// Card displaying a World Cup match
 class MatchCard extends StatelessWidget {
@@ -80,10 +83,10 @@ class MatchCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: match.isLive
             ? Border.all(color: Colors.red, width: 2)
-            : Border.all(color: Colors.white.withValues(alpha:0.1)),
+            : Border.all(color: Colors.white.withValues(alpha: 0.1)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha:0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: match.isLive ? 12 : 8,
             offset: const Offset(0, 4),
           ),
@@ -144,9 +147,9 @@ class MatchCard extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
-            color: _getStageColor().withValues(alpha:0.2),
+            color: _getStageColor().withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: _getStageColor().withValues(alpha:0.5)),
+            border: Border.all(color: _getStageColor().withValues(alpha: 0.5)),
           ),
           child: Text(
             match.stageDisplayName,
@@ -222,9 +225,9 @@ class MatchCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
         decoration: BoxDecoration(
-          color: AppTheme.primaryOrange.withValues(alpha:0.2),
+          color: AppTheme.primaryOrange.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: AppTheme.primaryOrange.withValues(alpha:0.5)),
+          border: Border.all(color: AppTheme.primaryOrange.withValues(alpha: 0.5)),
         ),
         child: Text(
           parts.join(' | '),
@@ -245,37 +248,23 @@ class MatchCard extends StatelessWidget {
         Row(
           children: [
             // Date/time
-            const Icon(
-              Icons.schedule,
-              size: 14,
-              color: Colors.white38,
-            ),
+            const Icon(Icons.schedule, size: 14, color: Colors.white38),
             const SizedBox(width: 4),
             Text(
               _formatDateTime(),
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.white60,
-              ),
+              style: const TextStyle(fontSize: 12, color: Colors.white60),
             ),
 
             const Spacer(),
 
             // Venue
             if (match.venueName != null) ...[
-              const Icon(
-                Icons.stadium,
-                size: 14,
-                color: Colors.white38,
-              ),
+              const Icon(Icons.stadium, size: 14, color: Colors.white38),
               const SizedBox(width: 4),
               Flexible(
                 child: Text(
                   match.venueName!,
-                  style: const TextStyle(
-                    fontSize: 12,
-                    color: Colors.white60,
-                  ),
+                  style: const TextStyle(fontSize: 12, color: Colors.white60),
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
@@ -290,7 +279,7 @@ class MatchCard extends StatelessWidget {
             children: [
               // AI Insight chip
               if (showAIInsight && match.status == MatchStatus.scheduled) ...[
-                _AIInsightChip(
+                AIInsightChip(
                   match: match,
                   aiPrediction: aiPrediction,
                   homeTeam: homeTeam,
@@ -328,16 +317,13 @@ class MatchCard extends StatelessWidget {
       return 'Final';
     }
 
-    // Use UTC time if available, otherwise fall back to venue local time
     final utcTime = match.dateTimeUtc;
     final venueTime = match.dateTime;
 
     if (utcTime == null && venueTime == null) return 'TBD';
 
-    // Get venue timezone (default to America/New_York for US venues)
     final venueTimezone = match.venue?.timeZone ?? 'America/New_York';
 
-    // If we have UTC time, convert to user's local timezone
     if (utcTime != null) {
       return TimezoneUtils.formatRelativeDate(
         utcDateTime: utcTime,
@@ -346,18 +332,15 @@ class MatchCard extends StatelessWidget {
       );
     }
 
-    // Fallback: use venue local time as-is (less accurate but functional)
     final matchDate = venueTime!;
     final now = DateTime.now();
 
-    // Check if today
     if (matchDate.year == now.year &&
         matchDate.month == now.month &&
         matchDate.day == now.day) {
       return 'Today ${DateFormat.jm().format(matchDate)}';
     }
 
-    // Check if tomorrow
     final tomorrow = now.add(const Duration(days: 1));
     if (matchDate.year == tomorrow.year &&
         matchDate.month == tomorrow.month &&
@@ -375,7 +358,7 @@ class MatchCard extends StatelessWidget {
       case MatchStage.roundOf32:
         return AppTheme.secondaryEmerald;
       case MatchStage.roundOf16:
-        return const Color(0xFF22C55E); // Bright green
+        return const Color(0xFF22C55E);
       case MatchStage.quarterFinal:
         return AppTheme.primaryOrange;
       case MatchStage.semiFinal:
@@ -385,306 +368,5 @@ class MatchCard extends StatelessWidget {
       case MatchStage.final_:
         return AppTheme.accentGold;
     }
-  }
-}
-
-/// Compact match row for lists
-class MatchRow extends StatelessWidget {
-  final WorldCupMatch match;
-  final VoidCallback? onTap;
-
-  /// Whether this match is favorited
-  final bool isFavorite;
-
-  /// Callback when favorite button is toggled
-  final VoidCallback? onFavoriteToggle;
-
-  /// Whether to show the favorite button
-  final bool showFavoriteButton;
-
-  /// Current prediction for this match
-  final MatchPrediction? prediction;
-
-  /// Callback when prediction is made or updated
-  final void Function(int homeScore, int awayScore)? onPrediction;
-
-  /// Whether to show the prediction button
-  final bool showPredictionButton;
-
-  const MatchRow({
-    super.key,
-    required this.match,
-    this.onTap,
-    this.isFavorite = false,
-    this.onFavoriteToggle,
-    this.showFavoriteButton = true,
-    this.prediction,
-    this.onPrediction,
-    this.showPredictionButton = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      decoration: BoxDecoration(
-        color: AppTheme.backgroundCard,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
-      ),
-      child: ListTile(
-        onTap: onTap,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-        leading: match.isLive
-            ? const LiveIndicator(size: 10)
-            : Text(
-                match.matchNumber.toString(),
-                style: const TextStyle(
-                  fontSize: 12,
-                  color: Colors.white38,
-                ),
-              ),
-        title: Row(
-          children: [
-            TeamFlag(teamCode: match.homeTeamCode, size: 24),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                match.homeTeamCode ?? 'TBD',
-                style: const TextStyle(
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-            Text(
-              match.status == MatchStatus.scheduled
-                  ? 'vs'
-                  : '${match.homeScore ?? 0} - ${match.awayScore ?? 0}',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: match.isLive ? Colors.red : Colors.white,
-              ),
-            ),
-            Expanded(
-              child: Text(
-                match.awayTeamCode ?? 'TBD',
-                style: const TextStyle(
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.right,
-              ),
-            ),
-            const SizedBox(width: 8),
-            TeamFlag(teamCode: match.awayTeamCode, size: 24),
-          ],
-        ),
-        subtitle: Text(
-          _formatMatchRowDateTime(match),
-          style: const TextStyle(fontSize: 12, color: Colors.white60),
-        ),
-        trailing: showFavoriteButton
-            ? FavoriteButton(
-                isFavorite: isFavorite,
-                onPressed: onFavoriteToggle,
-                size: 20,
-              )
-            : null,
-      ),
-    );
-  }
-
-  /// Format date/time for MatchRow with timezone support
-  String _formatMatchRowDateTime(WorldCupMatch match) {
-    final utcTime = match.dateTimeUtc;
-    final venueTime = match.dateTime;
-
-    if (utcTime == null && venueTime == null) return 'TBD';
-
-    // Get venue timezone (default to America/New_York for US venues)
-    final venueTimezone = match.venue?.timeZone ?? 'America/New_York';
-
-    // If we have UTC time, convert to user's local timezone
-    if (utcTime != null) {
-      return TimezoneUtils.formatMatchDateTime(
-        utcDateTime: utcTime,
-        venueTimezone: venueTimezone,
-        mode: TimezoneDisplayMode.local,
-      );
-    }
-
-    // Fallback: use venue local time as-is
-    return DateFormat('MMM d, h:mm a').format(venueTime!);
-  }
-}
-
-/// AI Insight chip for match cards
-class _AIInsightChip extends StatelessWidget {
-  final WorldCupMatch match;
-  final AIMatchPrediction? aiPrediction;
-  final NationalTeam? homeTeam;
-  final NationalTeam? awayTeam;
-
-  const _AIInsightChip({
-    required this.match,
-    this.aiPrediction,
-    this.homeTeam,
-    this.awayTeam,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-
-    // Try to get cubit from context
-    WorldCupAICubit? aiCubit;
-    try {
-      aiCubit = context.read<WorldCupAICubit>();
-    } catch (_) {
-      // Cubit not available
-    }
-
-    // If we have a pre-loaded prediction, display it
-    if (aiPrediction != null) {
-      return _buildPredictionChip(theme, aiPrediction!);
-    }
-
-    // If cubit is available, use BlocBuilder
-    if (aiCubit != null) {
-      return BlocBuilder<WorldCupAICubit, WorldCupAIState>(
-        builder: (context, state) {
-          final prediction = state.getPrediction(match.matchId);
-          final isLoading = state.isLoadingMatch(match.matchId);
-
-          if (isLoading) {
-            return _buildLoadingChip(theme, colorScheme);
-          }
-
-          if (prediction != null && prediction.isValid) {
-            return _buildPredictionChip(theme, prediction);
-          }
-
-          return _buildLoadButton(context, theme, colorScheme);
-        },
-      );
-    }
-
-    // No cubit available, show disabled state
-    return const SizedBox.shrink();
-  }
-
-  Widget _buildLoadingChip(ThemeData theme, ColorScheme colorScheme) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      decoration: BoxDecoration(
-        color: AppTheme.primaryPurple.withValues(alpha:0.2),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.primaryPurple.withValues(alpha:0.5)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const SizedBox(
-            width: 12,
-            height: 12,
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-              color: AppTheme.primaryPurple,
-            ),
-          ),
-          const SizedBox(width: 6),
-          Text(
-            'AI...',
-            style: theme.textTheme.labelSmall?.copyWith(
-              color: AppTheme.primaryPurple,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildPredictionChip(ThemeData theme, AIMatchPrediction prediction) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            AppTheme.primaryPurple,
-            AppTheme.primaryDeepPurple,
-          ],
-        ),
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryPurple.withValues(alpha:0.4),
-            blurRadius: 6,
-            offset: const Offset(0, 2),
-          ),
-        ],
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const Icon(
-            Icons.psychology,
-            size: 14,
-            color: Colors.white,
-          ),
-          const SizedBox(width: 4),
-          Text(
-            prediction.quickInsight,
-            style: theme.textTheme.labelSmall?.copyWith(
-              color: Colors.white,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildLoadButton(
-    BuildContext context,
-    ThemeData theme,
-    ColorScheme colorScheme,
-  ) {
-    return InkWell(
-      onTap: () {
-        final cubit = context.read<WorldCupAICubit>();
-        cubit.loadPredictionWithTeams(match, homeTeam, awayTeam);
-      },
-      borderRadius: BorderRadius.circular(12),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        decoration: BoxDecoration(
-          color: AppTheme.primaryPurple.withValues(alpha:0.1),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: AppTheme.primaryPurple.withValues(alpha:0.5),
-          ),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(
-              Icons.psychology_outlined,
-              size: 14,
-              color: AppTheme.primaryPurple,
-            ),
-            const SizedBox(width: 4),
-            Text(
-              'AI Predict',
-              style: theme.textTheme.labelSmall?.copyWith(
-                color: AppTheme.primaryPurple,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
   }
 }

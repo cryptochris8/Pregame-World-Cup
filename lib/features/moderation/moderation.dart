@@ -16,6 +16,9 @@ export 'domain/entities/user_sanction.dart';
 
 // Domain - Services
 export 'domain/services/moderation_service.dart';
+export 'domain/services/moderation_report_service.dart';
+export 'domain/services/moderation_action_service.dart';
+export 'domain/services/moderation_content_filter_service.dart';
 export 'domain/services/profanity_filter_service.dart';
 
 // Presentation - Widgets

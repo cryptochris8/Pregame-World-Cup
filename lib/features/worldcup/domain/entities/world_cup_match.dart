@@ -1,101 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'world_cup_venue.dart';
+import 'world_cup_match_enums.dart';
+import 'world_cup_match_extensions.dart';
 
-/// Match stage in the World Cup tournament
-enum MatchStage {
-  groupStage,
-  roundOf32,
-  roundOf16,
-  quarterFinal,
-  semiFinal,
-  thirdPlace,
-  final_,
-}
-
-/// Extension for MatchStage display names
-extension MatchStageExtension on MatchStage {
-  String get displayName {
-    switch (this) {
-      case MatchStage.groupStage:
-        return 'Group Stage';
-      case MatchStage.roundOf32:
-        return 'Round of 32';
-      case MatchStage.roundOf16:
-        return 'Round of 16';
-      case MatchStage.quarterFinal:
-        return 'Quarter-Final';
-      case MatchStage.semiFinal:
-        return 'Semi-Final';
-      case MatchStage.thirdPlace:
-        return 'Third Place Play-off';
-      case MatchStage.final_:
-        return 'Final';
-    }
-  }
-
-  String get shortName {
-    switch (this) {
-      case MatchStage.groupStage:
-        return 'Group';
-      case MatchStage.roundOf32:
-        return 'R32';
-      case MatchStage.roundOf16:
-        return 'R16';
-      case MatchStage.quarterFinal:
-        return 'QF';
-      case MatchStage.semiFinal:
-        return 'SF';
-      case MatchStage.thirdPlace:
-        return '3rd';
-      case MatchStage.final_:
-        return 'Final';
-    }
-  }
-
-  bool get isKnockout => this != MatchStage.groupStage;
-}
-
-/// Match status enum
-enum MatchStatus {
-  scheduled,
-  inProgress,
-  halfTime,
-  extraTime,
-  penalties,
-  completed,
-  postponed,
-  cancelled,
-}
-
-/// Extension for MatchStatus display names
-extension MatchStatusExtension on MatchStatus {
-  String get displayName {
-    switch (this) {
-      case MatchStatus.scheduled:
-        return 'Scheduled';
-      case MatchStatus.inProgress:
-        return 'Live';
-      case MatchStatus.halfTime:
-        return 'Half Time';
-      case MatchStatus.extraTime:
-        return 'Extra Time';
-      case MatchStatus.penalties:
-        return 'Penalties';
-      case MatchStatus.completed:
-        return 'Full Time';
-      case MatchStatus.postponed:
-        return 'Postponed';
-      case MatchStatus.cancelled:
-        return 'Cancelled';
-    }
-  }
-
-  bool get isLive => this == MatchStatus.inProgress ||
-                      this == MatchStatus.halfTime ||
-                      this == MatchStatus.extraTime ||
-                      this == MatchStatus.penalties;
-}
+// Re-export enums and extensions so existing imports of this file still work.
+export 'world_cup_match_enums.dart';
+export 'world_cup_match_extensions.dart';
 
 /// WorldCupMatch entity representing a FIFA World Cup 2026 match
 class WorldCupMatch extends Equatable {
@@ -327,80 +238,12 @@ class WorldCupMatch extends Equatable {
   /// Venue city (from embedded venue)
   String? get venueCity => venue?.city;
 
-  /// Whether the match went to extra time
-  bool get hasExtraTime => homeExtraTimeScore != null || awayExtraTimeScore != null;
-
-  /// Whether the match went to penalties
-  bool get hasPenalties => homePenaltyScore != null || awayPenaltyScore != null;
-
-  /// Get total home score (including extra time, not penalties)
-  int? get homeTotalScore {
-    if (homeScore == null) return null;
-    return homeScore! + (homeExtraTimeScore ?? 0);
-  }
-
-  /// Get total away score (including extra time, not penalties)
-  int? get awayTotalScore {
-    if (awayScore == null) return null;
-    return awayScore! + (awayExtraTimeScore ?? 0);
-  }
-
-  /// Get display score string (e.g., "2-1", "2-2 (4-3 pen)")
-  String get scoreDisplay {
-    if (homeScore == null || awayScore == null) return '-';
-
-    String score = '$homeScore-$awayScore';
-
-    if (hasExtraTime) {
-      final totalHome = homeTotalScore ?? homeScore;
-      final totalAway = awayTotalScore ?? awayScore;
-      score = '$totalHome-$totalAway';
-
-      if (stage.isKnockout && totalHome == totalAway) {
-        score += ' AET';
-      }
-    }
-
-    if (hasPenalties) {
-      score += ' ($homePenaltyScore-$awayPenaltyScore pen)';
-    }
-
-    return score;
-  }
-
-  /// Get match time display (e.g., "45+2'", "90'", "HT")
-  String get timeDisplay {
-    switch (status) {
-      case MatchStatus.scheduled:
-        return dateTime != null
-            ? '${dateTime!.hour.toString().padLeft(2, '0')}:${dateTime!.minute.toString().padLeft(2, '0')}'
-            : 'TBD';
-      case MatchStatus.halfTime:
-        return 'HT';
-      case MatchStatus.completed:
-        return 'FT';
-      case MatchStatus.extraTime:
-        if (minute != null) {
-          final display = minute! > 90 ? minute : minute! + 90;
-          return addedTime != null ? "$display+$addedTime'" : "$display'";
-        }
-        return 'ET';
-      case MatchStatus.penalties:
-        return 'PEN';
-      default:
-        if (minute != null) {
-          return addedTime != null ? "$minute+$addedTime'" : "$minute'";
-        }
-        return 'LIVE';
-    }
-  }
-
   /// Factory to create from Firestore document
   factory WorldCupMatch.fromFirestore(Map<String, dynamic> data, String docId) {
     return WorldCupMatch(
       matchId: docId,
       matchNumber: data['matchNumber'] as int? ?? 0,
-      stage: _parseMatchStage(data['stage'] as String?),
+      stage: WorldCupMatchParsers.parseMatchStage(data['stage'] as String?),
       group: data['group'] as String?,
       groupMatchDay: data['groupMatchDay'] as int?,
       homeTeamCode: data['homeTeamCode'] as String?,
@@ -411,8 +254,8 @@ class WorldCupMatch extends Equatable {
       awayTeamFlagUrl: data['awayTeamFlagUrl'] as String?,
       homeTeamPlaceholder: data['homeTeamPlaceholder'] as String?,
       awayTeamPlaceholder: data['awayTeamPlaceholder'] as String?,
-      dateTime: _parseDateTime(data['dateTime']),
-      dateTimeUtc: _parseDateTime(data['dateTimeUtc']),
+      dateTime: WorldCupMatchParsers.parseDateTime(data['dateTime']),
+      dateTimeUtc: WorldCupMatchParsers.parseDateTime(data['dateTimeUtc']),
       venueId: data['venueId'] as String?,
       venue: data['venue'] != null
           ? WorldCupVenue.fromMap(data['venue'] as Map<String, dynamic>)
@@ -436,7 +279,7 @@ class WorldCupMatch extends Equatable {
       broadcastChannels: (data['broadcastChannels'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList() ?? [],
-      status: _parseMatchStatus(data['status'] as String?),
+      status: WorldCupMatchParsers.parseMatchStatus(data['status'] as String?),
       minute: data['minute'] as int?,
       addedTime: data['addedTime'] as int?,
       homeScore: data['homeScore'] as int?,
@@ -466,8 +309,8 @@ class WorldCupMatch extends Equatable {
       userComments: data['userComments'] as int?,
       userPhotos: data['userPhotos'] as int?,
       userRating: (data['userRating'] as num?)?.toDouble(),
-      updatedAt: _parseDateTime(data['updatedAt']),
-      syncedAt: _parseDateTime(data['syncedAt']),
+      updatedAt: WorldCupMatchParsers.parseDateTime(data['updatedAt']),
+      syncedAt: WorldCupMatchParsers.parseDateTime(data['syncedAt']),
     );
   }
 
@@ -575,7 +418,7 @@ class WorldCupMatch extends Equatable {
     return WorldCupMatch(
       matchId: map['matchId'] as String? ?? '',
       matchNumber: map['matchNumber'] as int? ?? 0,
-      stage: _parseMatchStage(map['stage'] as String?),
+      stage: WorldCupMatchParsers.parseMatchStage(map['stage'] as String?),
       group: map['group'] as String?,
       groupMatchDay: map['groupMatchDay'] as int?,
       homeTeamCode: map['homeTeamCode'] as String?,
@@ -599,7 +442,7 @@ class WorldCupMatch extends Equatable {
       broadcastChannels: (map['broadcastChannels'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList() ?? [],
-      status: _parseMatchStatus(map['status'] as String?),
+      status: WorldCupMatchParsers.parseMatchStatus(map['status'] as String?),
       minute: map['minute'] as int?,
       addedTime: map['addedTime'] as int?,
       homeScore: map['homeScore'] as int?,
@@ -733,96 +576,6 @@ class WorldCupMatch extends Equatable {
     );
   }
 
-  // Helper methods
-
-  static MatchStage _parseMatchStage(String? value) {
-    if (value == null) return MatchStage.groupStage;
-
-    switch (value.toLowerCase()) {
-      case 'groupstage':
-      case 'group_stage':
-      case 'group':
-        return MatchStage.groupStage;
-      case 'roundof32':
-      case 'round_of_32':
-      case 'r32':
-        return MatchStage.roundOf32;
-      case 'roundof16':
-      case 'round_of_16':
-      case 'r16':
-        return MatchStage.roundOf16;
-      case 'quarterfinal':
-      case 'quarter_final':
-      case 'qf':
-        return MatchStage.quarterFinal;
-      case 'semifinal':
-      case 'semi_final':
-      case 'sf':
-        return MatchStage.semiFinal;
-      case 'thirdplace':
-      case 'third_place':
-      case '3rd':
-        return MatchStage.thirdPlace;
-      case 'final_':
-      case 'final':
-        return MatchStage.final_;
-      default:
-        return MatchStage.groupStage;
-    }
-  }
-
-  static MatchStatus _parseMatchStatus(String? value) {
-    if (value == null) return MatchStatus.scheduled;
-
-    switch (value.toLowerCase()) {
-      case 'scheduled':
-        return MatchStatus.scheduled;
-      case 'inprogress':
-      case 'in_progress':
-      case 'live':
-        return MatchStatus.inProgress;
-      case 'halftime':
-      case 'half_time':
-      case 'ht':
-        return MatchStatus.halfTime;
-      case 'extratime':
-      case 'extra_time':
-      case 'et':
-        return MatchStatus.extraTime;
-      case 'penalties':
-      case 'pen':
-        return MatchStatus.penalties;
-      case 'completed':
-      case 'finished':
-      case 'ft':
-        return MatchStatus.completed;
-      case 'postponed':
-        return MatchStatus.postponed;
-      case 'cancelled':
-      case 'canceled':
-        return MatchStatus.cancelled;
-      default:
-        return MatchStatus.scheduled;
-    }
-  }
-
-  static DateTime? _parseDateTime(dynamic value) {
-    if (value == null) return null;
-    if (value is Timestamp) return value.toDate();
-    if (value is String) return DateTime.tryParse(value);
-    if (value is int) return DateTime.fromMillisecondsSinceEpoch(value);
-    return null;
-  }
-
   @override
   String toString() => '$homeTeamName vs $awayTeamName (Match $matchNumber)';
-}
-
-/// Time filter enum for filtering matches
-enum MatchTimeFilter {
-  today,
-  thisWeek,
-  groupStage,
-  knockout,
-  all,
 }

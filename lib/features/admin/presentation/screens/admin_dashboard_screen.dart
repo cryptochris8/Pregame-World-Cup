@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../../domain/entities/admin_user.dart';
 import '../../domain/services/admin_service.dart';
@@ -35,8 +36,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       if (mounted) {
         Navigator.of(context).pop();
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('You do not have admin access'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).noAdminAccess),
             backgroundColor: Colors.red,
           ),
         );
@@ -74,21 +75,23 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
 
     if (!_adminService.isAdmin) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Admin')),
+        appBar: AppBar(title: Text(AppLocalizations.of(context).admin)),
         body: const Center(
           child: CircularProgressIndicator(),
         ),
       );
     }
 
+    final l10n = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Admin Dashboard'),
+        title: Text(l10n.adminDashboard),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: _loadStats,
-            tooltip: 'Refresh',
+            tooltip: l10n.refresh,
           ),
         ],
       ),
@@ -192,12 +195,12 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
             Icon(Icons.error_outline, color: theme.colorScheme.error),
             const SizedBox(height: 8),
             Text(
-              'Failed to load stats',
+              AppLocalizations.of(context).failedToLoadStats,
               style: TextStyle(color: theme.colorScheme.error),
             ),
             TextButton(
               onPressed: _loadStats,
-              child: const Text('Retry'),
+              child: Text(AppLocalizations.of(context).retry),
             ),
           ],
         ),
@@ -210,7 +213,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Overview',
+          AppLocalizations.of(context).overview,
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -226,42 +229,42 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
           children: [
             _buildStatCard(
               theme,
-              'Total Users',
+              AppLocalizations.of(context).totalUsers,
               _stats.totalUsers.toString(),
               Icons.people,
               Colors.blue,
             ),
             _buildStatCard(
               theme,
-              'Active (24h)',
+              AppLocalizations.of(context).activeUsers24h,
               _stats.activeUsers24h.toString(),
               Icons.person,
               Colors.green,
             ),
             _buildStatCard(
               theme,
-              'New Today',
+              AppLocalizations.of(context).newToday,
               _stats.newUsersToday.toString(),
               Icons.person_add,
               Colors.teal,
             ),
             _buildStatCard(
               theme,
-              'Watch Parties',
+              AppLocalizations.of(context).watchParties,
               _stats.totalWatchParties.toString(),
               Icons.groups,
               Colors.orange,
             ),
             _buildStatCard(
               theme,
-              'Active Parties',
+              AppLocalizations.of(context).activeParties,
               _stats.activeWatchParties.toString(),
               Icons.celebration,
               Colors.purple,
             ),
             _buildStatCard(
               theme,
-              'Pending Reports',
+              AppLocalizations.of(context).pendingReports,
               _stats.pendingReports.toString(),
               Icons.flag,
               _stats.pendingReports > 0 ? Colors.red : Colors.grey,
@@ -318,7 +321,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Quick Actions',
+          AppLocalizations.of(context).quickActions,
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -329,8 +332,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         if (role?.canManageUsers() ?? false)
           _buildActionTile(
             theme,
-            'User Management',
-            'View, suspend, or ban users',
+            AppLocalizations.of(context).userManagement,
+            AppLocalizations.of(context).userManagementDesc,
             Icons.people_outline,
             () => Navigator.push(
               context,
@@ -342,8 +345,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         if (role?.canModerateContent() ?? false)
           _buildActionTile(
             theme,
-            'Content Moderation',
-            '${_stats.pendingReports} pending reports',
+            AppLocalizations.of(context).contentModeration,
+            '${_stats.pendingReports} ${AppLocalizations.of(context).pendingReports.toLowerCase()}',
             Icons.flag_outlined,
             () => Navigator.push(
               context,
@@ -356,8 +359,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         if (role?.canManageWatchParties() ?? false)
           _buildActionTile(
             theme,
-            'Watch Parties',
-            'Manage watch party listings',
+            AppLocalizations.of(context).watchParties,
+            AppLocalizations.of(context).manageWatchPartyListings,
             Icons.groups_outlined,
             () => Navigator.push(
               context,
@@ -369,8 +372,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         if (role?.canManageFeatureFlags() ?? false)
           _buildActionTile(
             theme,
-            'Feature Flags',
-            'Toggle app features',
+            AppLocalizations.of(context).featureFlags,
+            AppLocalizations.of(context).toggleAppFeatures,
             Icons.toggle_on_outlined,
             () => Navigator.push(
               context,
@@ -382,8 +385,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         if (role?.canSendPushNotifications() ?? false)
           _buildActionTile(
             theme,
-            'Push Notifications',
-            'Send broadcast notifications',
+            AppLocalizations.of(context).pushNotifications,
+            AppLocalizations.of(context).sendBroadcastNotifications,
             Icons.notifications_outlined,
             () => Navigator.push(
               context,

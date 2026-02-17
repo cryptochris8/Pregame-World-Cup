@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/venue_filter.dart';
 
 class VenueFilterScreen extends StatefulWidget {
@@ -79,9 +80,11 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Filter Venues'),
+        title: Text(l10n.filterVenues),
         actions: [
           TextButton(
             onPressed: () {
@@ -99,7 +102,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
               _updateFilter();
               Navigator.pop(context);
             },
-            child: const Text('Reset', style: TextStyle(color: Colors.white)),
+            child: Text(l10n.resetLabel, style: const TextStyle(color: Colors.white)),
           ),
         ],
       ),
@@ -111,7 +114,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
             children: [
               // Venue Types Section
               Text(
-                'Venue Types',
+                l10n.venueTypes,
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(height: 8),
@@ -139,7 +142,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
               
               // Distance Section
               Text(
-                'Maximum Distance',
+                l10n.maximumDistance,
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               Row(
@@ -169,7 +172,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
               
               // Minimum Rating Section
               Text(
-                'Minimum Rating',
+                l10n.minimumRating,
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               Row(
@@ -205,7 +208,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
               // Open Now Section
               SwitchListTile(
                 title: Text(
-                  'Open Now',
+                  l10n.openNow,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
                 value: _currentFilter.openNow,
@@ -226,7 +229,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
               
               // Price Level Section
               Text(
-                'Price Level',
+                l10n.priceLevel,
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(height: 8),
@@ -254,14 +257,14 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
               
               // Keyword Search Section
               Text(
-                'Search for Specific Features',
+                l10n.searchSpecificFeatures,
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(height: 8),
               TextField(
                 controller: _keywordController,
                 decoration: InputDecoration(
-                  hintText: 'e.g., wings, craft beer, live music',
+                  hintText: l10n.keywordSearchHint,
                   filled: true,
                   fillColor: Colors.grey[800],
                   border: OutlineInputBorder(
@@ -296,7 +299,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
                     _updateFilter();
                     Navigator.pop(context);
                   },
-                  child: const Text('Apply Filters'),
+                  child: Text(l10n.applyFilters),
                 ),
               ),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../../domain/services/match_chat_service.dart';
 import '../cubit/match_chat_cubit.dart';
@@ -63,6 +64,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
 
     return BlocProvider.value(
       value: _cubit,
@@ -72,7 +74,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Live Chat',
+                l10n.liveChat,
                 style: theme.textTheme.titleMedium,
               ),
               Text(
@@ -129,13 +131,13 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
             }
 
             if (state is MatchChatJoining) {
-              return const Center(
+              return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircularProgressIndicator(),
-                    SizedBox(height: 16),
-                    Text('Joining chat...'),
+                    const CircularProgressIndicator(),
+                    const SizedBox(height: 16),
+                    Text(l10n.joiningChat),
                   ],
                 ),
               );
@@ -164,7 +166,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
                           matchDateTime: widget.matchDateTime,
                         );
                       },
-                      child: const Text('Retry'),
+                      child: Text(l10n.retry),
                     ),
                   ],
                 ),
@@ -187,6 +189,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
   }
 
   Widget _buildJoinPrompt(ThemeData theme, MatchChatLoaded state) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -200,14 +203,14 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
             ),
             const SizedBox(height: 24),
             Text(
-              'Join the Live Chat',
+              l10n.joinLiveChat,
               style: theme.textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 12),
             Text(
-              'Chat with other fans watching ${widget.homeTeam} vs ${widget.awayTeam}',
+              l10n.chatWithFans,
               textAlign: TextAlign.center,
               style: theme.textTheme.bodyLarge?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
@@ -224,7 +227,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  '${state.participantCount} fans in chat',
+                  l10n.fansInChat(state.participantCount),
                   style: theme.textTheme.bodyMedium?.copyWith(
                     color: theme.colorScheme.outline,
                   ),
@@ -235,7 +238,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
             FilledButton.icon(
               onPressed: () => _cubit.joinChat(),
               icon: const Icon(Icons.login),
-              label: const Text('Join Chat'),
+              label: Text(l10n.joinChat),
               style: FilledButton.styleFrom(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 32,
@@ -245,7 +248,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Be respectful. Offensive content will be removed.',
+              l10n.beRespectful,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.outline,
               ),
@@ -257,6 +260,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
   }
 
   Widget _buildChatView(ThemeData theme, MatchChatLoaded state) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       children: [
         // Quick reactions bar
@@ -309,7 +313,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  'Slow mode: ${state.rateLimitSeconds}s',
+                  l10n.slowMode(state.rateLimitSeconds),
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: theme.colorScheme.outline,
                   ),
@@ -329,6 +333,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
   }
 
   Widget _buildEmptyMessages(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -340,14 +345,14 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
           ),
           const SizedBox(height: 16),
           Text(
-            'No messages yet',
+            l10n.noMessagesYet,
             style: theme.textTheme.titleMedium?.copyWith(
               color: theme.colorScheme.outline,
             ),
           ),
           const SizedBox(height: 8),
           Text(
-            'Be the first to say something!',
+            l10n.beFirstToSayHello,
             style: theme.textTheme.bodyMedium?.copyWith(
               color: theme.colorScheme.outline,
             ),
@@ -358,22 +363,23 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
   }
 
   void _showLeaveConfirmation(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Leave Chat?'),
-        content: const Text('You can rejoin anytime during the match.'),
+        title: Text(l10n.leaveChatQuestion),
+        content: Text(l10n.canRejoinAnytime),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           FilledButton(
             onPressed: () {
               Navigator.pop(context);
               _cubit.leaveChat();
             },
-            child: const Text('Leave'),
+            child: Text(l10n.leaveChat),
           ),
         ],
       ),

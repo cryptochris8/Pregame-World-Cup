@@ -3677,6 +3677,774 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Attendees ({count})'**
   String attendeesWithCount(int count);
+
+  /// Message when user lacks admin privileges
+  ///
+  /// In en, this message translates to:
+  /// **'You do not have admin access'**
+  String get noAdminAccess;
+
+  /// Admin label
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get admin;
+
+  /// Admin dashboard screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Dashboard'**
+  String get adminDashboard;
+
+  /// Error loading dashboard stats
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load stats'**
+  String get failedToLoadStats;
+
+  /// Overview section title
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get overview;
+
+  /// Total users stat label
+  ///
+  /// In en, this message translates to:
+  /// **'Total Users'**
+  String get totalUsers;
+
+  /// Active users in last 24 hours
+  ///
+  /// In en, this message translates to:
+  /// **'Active (24h)'**
+  String get activeUsers24h;
+
+  /// New users today stat label
+  ///
+  /// In en, this message translates to:
+  /// **'New Today'**
+  String get newToday;
+
+  /// Active watch parties stat label
+  ///
+  /// In en, this message translates to:
+  /// **'Active Parties'**
+  String get activeParties;
+
+  /// Pending reports stat label
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Reports'**
+  String get pendingReports;
+
+  /// Quick actions section title
+  ///
+  /// In en, this message translates to:
+  /// **'Quick Actions'**
+  String get quickActions;
+
+  /// User management action tile title
+  ///
+  /// In en, this message translates to:
+  /// **'User Management'**
+  String get userManagement;
+
+  /// User management action description
+  ///
+  /// In en, this message translates to:
+  /// **'View, edit, and manage user accounts'**
+  String get userManagementDesc;
+
+  /// Content moderation action tile title
+  ///
+  /// In en, this message translates to:
+  /// **'Content Moderation'**
+  String get contentModeration;
+
+  /// Watch party management description
+  ///
+  /// In en, this message translates to:
+  /// **'Manage watch party listings'**
+  String get manageWatchPartyListings;
+
+  /// Feature flags management title
+  ///
+  /// In en, this message translates to:
+  /// **'Feature Flags'**
+  String get featureFlags;
+
+  /// Feature flags management description
+  ///
+  /// In en, this message translates to:
+  /// **'Toggle app features'**
+  String get toggleAppFeatures;
+
+  /// Push notifications management description
+  ///
+  /// In en, this message translates to:
+  /// **'Send broadcast notifications'**
+  String get sendBroadcastNotifications;
+
+  /// Empty state when no reports pending
+  ///
+  /// In en, this message translates to:
+  /// **'No pending reports'**
+  String get noPendingReports;
+
+  /// Empty state subtitle for no reports
+  ///
+  /// In en, this message translates to:
+  /// **'All caught up!'**
+  String get allCaughtUp;
+
+  /// Reporter attribution
+  ///
+  /// In en, this message translates to:
+  /// **'Reported by {name}'**
+  String reportedBy(String name);
+
+  /// Content owner label in report
+  ///
+  /// In en, this message translates to:
+  /// **'Content Owner'**
+  String get contentOwner;
+
+  /// Content ID label in report
+  ///
+  /// In en, this message translates to:
+  /// **'Content ID'**
+  String get contentId;
+
+  /// Reported date label
+  ///
+  /// In en, this message translates to:
+  /// **'Reported'**
+  String get reported;
+
+  /// Reported content section label
+  ///
+  /// In en, this message translates to:
+  /// **'Reported Content:'**
+  String get reportedContent;
+
+  /// Dismiss report button
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get dismiss;
+
+  /// Warn user button
+  ///
+  /// In en, this message translates to:
+  /// **'Warn'**
+  String get warn;
+
+  /// Take action button for moderation
+  ///
+  /// In en, this message translates to:
+  /// **'Take Action'**
+  String get takeAction;
+
+  /// Report dismissed confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Report dismissed'**
+  String get reportDismissed;
+
+  /// Warning issued confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Warning issued'**
+  String get warningIssued;
+
+  /// Remove content moderation action
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Content'**
+  String get removeContent;
+
+  /// Remove content description
+  ///
+  /// In en, this message translates to:
+  /// **'Delete the reported content'**
+  String get deleteReportedContent;
+
+  /// Mute user moderation action
+  ///
+  /// In en, this message translates to:
+  /// **'Mute User (24h)'**
+  String get muteUser24h;
+
+  /// Mute user description
+  ///
+  /// In en, this message translates to:
+  /// **'Temporarily prevent user from posting'**
+  String get temporarilyPreventPosting;
+
+  /// Suspend user moderation action
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend User (7 days)'**
+  String get suspendUser7Days;
+
+  /// Suspend user description
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend user account'**
+  String get suspendUserAccount;
+
+  /// Permanent ban moderation action
+  ///
+  /// In en, this message translates to:
+  /// **'Permanent Ban'**
+  String get permanentBan;
+
+  /// Permanent ban description
+  ///
+  /// In en, this message translates to:
+  /// **'Permanently ban user'**
+  String get permanentlyBanUser;
+
+  /// Moderation action confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Action taken: {action}'**
+  String actionTaken(String action);
+
+  /// Add feature flag tooltip
+  ///
+  /// In en, this message translates to:
+  /// **'Add Flag'**
+  String get addFlag;
+
+  /// Empty state when no feature flags
+  ///
+  /// In en, this message translates to:
+  /// **'No feature flags'**
+  String get noFeatureFlags;
+
+  /// Create flag button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Flag'**
+  String get createFlag;
+
+  /// Enabled status label
+  ///
+  /// In en, this message translates to:
+  /// **'Enabled'**
+  String get enabled;
+
+  /// Disabled status label
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled'**
+  String get disabled;
+
+  /// Updated date label
+  ///
+  /// In en, this message translates to:
+  /// **'Updated: {date}'**
+  String updatedDate(String date);
+
+  /// Error updating feature flag
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to update flag'**
+  String get failedToUpdateFlag;
+
+  /// Feature flag toggled confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'{name} {status}'**
+  String flagToggled(String name, String status);
+
+  /// Create feature flag dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Create Feature Flag'**
+  String get createFeatureFlag;
+
+  /// Name field label
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// Feature flag name hint text
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., Live Chat Feature'**
+  String get featureFlagNameHint;
+
+  /// Description field label
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get description;
+
+  /// Feature flag description hint text
+  ///
+  /// In en, this message translates to:
+  /// **'What does this flag control?'**
+  String get featureFlagDescHint;
+
+  /// Feature flag created confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Feature flag created'**
+  String get featureFlagCreated;
+
+  /// Create button
+  ///
+  /// In en, this message translates to:
+  /// **'Create'**
+  String get create;
+
+  /// Filter venues screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Filter Venues'**
+  String get filterVenues;
+
+  /// Venue types section title
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Types'**
+  String get venueTypes;
+
+  /// Maximum distance section title
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum Distance'**
+  String get maximumDistance;
+
+  /// Minimum rating section title
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum Rating'**
+  String get minimumRating;
+
+  /// Open now filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Open Now'**
+  String get openNow;
+
+  /// Price level section title
+  ///
+  /// In en, this message translates to:
+  /// **'Price Level'**
+  String get priceLevel;
+
+  /// Keyword search section title
+  ///
+  /// In en, this message translates to:
+  /// **'Search for Specific Features'**
+  String get searchSpecificFeatures;
+
+  /// Keyword search hint text
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., wings, craft beer, live music'**
+  String get keywordSearchHint;
+
+  /// Apply filters button
+  ///
+  /// In en, this message translates to:
+  /// **'Apply Filters'**
+  String get applyFilters;
+
+  /// Single invite sent confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Invite sent!'**
+  String get inviteSent;
+
+  /// Send button with count
+  ///
+  /// In en, this message translates to:
+  /// **'Send ({count})'**
+  String sendCount(int count);
+
+  /// Personal message hint text
+  ///
+  /// In en, this message translates to:
+  /// **'Add a personal message (optional)'**
+  String get addPersonalMessage;
+
+  /// Friends selected count
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 friend selected} other{{count} friends selected}}'**
+  String friendsSelected(int count);
+
+  /// Empty state when no friends available
+  ///
+  /// In en, this message translates to:
+  /// **'No friends to invite'**
+  String get noFriendsToInvite;
+
+  /// Empty state suggestion for invites
+  ///
+  /// In en, this message translates to:
+  /// **'Follow some people to invite them to watch parties'**
+  String get followPeopleToInvite;
+
+  /// Send invites button text
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Send 1 Invite} other{Send {count} Invites}}'**
+  String sendInvites(int count);
+
+  /// Invites sent confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Sent 1 invite!} other{Sent {count} invites!}}'**
+  String invitesSent(int count);
+
+  /// Watch party created confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Watch party created!'**
+  String get watchPartyCreated;
+
+  /// Party name field label
+  ///
+  /// In en, this message translates to:
+  /// **'Party Name'**
+  String get partyName;
+
+  /// Party name hint text
+  ///
+  /// In en, this message translates to:
+  /// **'Give your party a fun name'**
+  String get partyNameHint;
+
+  /// Name validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a name'**
+  String get pleaseEnterName;
+
+  /// Description hint text
+  ///
+  /// In en, this message translates to:
+  /// **'Tell guests what to expect...'**
+  String get descriptionHint;
+
+  /// Visibility section label
+  ///
+  /// In en, this message translates to:
+  /// **'Visibility'**
+  String get visibility;
+
+  /// Public visibility description
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone can find and join'**
+  String get anyoneCanJoin;
+
+  /// Private visibility description
+  ///
+  /// In en, this message translates to:
+  /// **'Only invited friends can join'**
+  String get onlyInvitedCanJoin;
+
+  /// Game field label
+  ///
+  /// In en, this message translates to:
+  /// **'Game'**
+  String get game;
+
+  /// Maximum attendees field label
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum Attendees'**
+  String get maximumAttendees;
+
+  /// Virtual attendance section label
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Attendance'**
+  String get virtualAttendance;
+
+  /// Virtual attendance description
+  ///
+  /// In en, this message translates to:
+  /// **'Allow virtual attendees to join remotely'**
+  String get virtualAttendanceDesc;
+
+  /// Virtual fee field label
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Attendance Fee'**
+  String get virtualAttendanceFee;
+
+  /// Free price hint
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get freeHint;
+
+  /// Select game button
+  ///
+  /// In en, this message translates to:
+  /// **'Select Game'**
+  String get selectGame;
+
+  /// Select venue button
+  ///
+  /// In en, this message translates to:
+  /// **'Select Venue'**
+  String get selectVenue;
+
+  /// Game selection validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Please select a game'**
+  String get pleaseSelectGame;
+
+  /// Venue selection validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Please select a venue'**
+  String get pleaseSelectVenue;
+
+  /// Discovery screen placeholder text
+  ///
+  /// In en, this message translates to:
+  /// **'Discover watch parties near you'**
+  String get discoverWatchParties;
+
+  /// Empty state title for watch party discovery
+  ///
+  /// In en, this message translates to:
+  /// **'No Watch Parties Found'**
+  String get noWatchPartiesFound;
+
+  /// Empty state suggestion for specific match
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to create a watch party for this match!'**
+  String get beFirstToCreateForMatch;
+
+  /// Empty state general suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to create a watch party!'**
+  String get beFirstToCreate;
+
+  /// Filter and sort sheet title
+  ///
+  /// In en, this message translates to:
+  /// **'Filter & Sort'**
+  String get filterAndSort;
+
+  /// Show section label in filter
+  ///
+  /// In en, this message translates to:
+  /// **'Show'**
+  String get show;
+
+  /// Sort by section label
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by'**
+  String get sortBy;
+
+  /// Date sort option
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get date;
+
+  /// Most popular sort option
+  ///
+  /// In en, this message translates to:
+  /// **'Most Popular'**
+  String get mostPopular;
+
+  /// My watch parties screen title
+  ///
+  /// In en, this message translates to:
+  /// **'My Watch Parties'**
+  String get myWatchParties;
+
+  /// Hosting tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Hosting'**
+  String get hosting;
+
+  /// Attending tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Attending'**
+  String get attending;
+
+  /// Past tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get past;
+
+  /// Loading watch parties message
+  ///
+  /// In en, this message translates to:
+  /// **'Loading your watch parties...'**
+  String get loadingYourWatchParties;
+
+  /// Empty state for hosting tab
+  ///
+  /// In en, this message translates to:
+  /// **'No watch parties hosted'**
+  String get noWatchPartiesHosted;
+
+  /// Empty state suggestion for hosting
+  ///
+  /// In en, this message translates to:
+  /// **'Create your first watch party!'**
+  String get createFirstWatchParty;
+
+  /// Empty state for attending tab
+  ///
+  /// In en, this message translates to:
+  /// **'No watch parties to attend'**
+  String get noWatchPartiesToAttend;
+
+  /// Empty state suggestion for attending
+  ///
+  /// In en, this message translates to:
+  /// **'Discover parties or accept invitations'**
+  String get discoverOrAcceptInvitations;
+
+  /// Empty state for past tab
+  ///
+  /// In en, this message translates to:
+  /// **'No past watch parties'**
+  String get noPastWatchParties;
+
+  /// Empty state suggestion for past
+  ///
+  /// In en, this message translates to:
+  /// **'Completed parties will appear here'**
+  String get completedPartiesAppearHere;
+
+  /// Live chat screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Live Chat'**
+  String get liveChat;
+
+  /// Joining chat loading message
+  ///
+  /// In en, this message translates to:
+  /// **'Joining chat...'**
+  String get joiningChat;
+
+  /// Join live chat prompt title
+  ///
+  /// In en, this message translates to:
+  /// **'Join the Live Chat'**
+  String get joinLiveChat;
+
+  /// Join chat prompt description
+  ///
+  /// In en, this message translates to:
+  /// **'Chat with fellow fans about this match in real time!'**
+  String get chatWithFans;
+
+  /// Fans in chat count
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 fan in chat} other{{count} fans in chat}}'**
+  String fansInChat(int count);
+
+  /// Chat guidelines reminder
+  ///
+  /// In en, this message translates to:
+  /// **'Be respectful and follow community guidelines'**
+  String get beRespectful;
+
+  /// Slow mode rate limit indicator
+  ///
+  /// In en, this message translates to:
+  /// **'Slow mode: wait {seconds}s between messages'**
+  String slowMode(int seconds);
+
+  /// Leave chat confirmation title
+  ///
+  /// In en, this message translates to:
+  /// **'Leave Chat?'**
+  String get leaveChatQuestion;
+
+  /// Leave chat confirmation description
+  ///
+  /// In en, this message translates to:
+  /// **'You can rejoin the chat anytime'**
+  String get canRejoinAnytime;
+
+  /// Search messages hint text
+  ///
+  /// In en, this message translates to:
+  /// **'Search messages...'**
+  String get searchMessages;
+
+  /// Direct messages tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Direct'**
+  String get direct;
+
+  /// Loading conversations message
+  ///
+  /// In en, this message translates to:
+  /// **'Loading conversations...'**
+  String get loadingConversations;
+
+  /// Empty state title for conversations
+  ///
+  /// In en, this message translates to:
+  /// **'No conversations yet'**
+  String get noConversationsYet;
+
+  /// Empty state suggestion for conversations
+  ///
+  /// In en, this message translates to:
+  /// **'Start a conversation with your friends!'**
+  String get startConversationWithFriends;
+
+  /// Start chatting button
+  ///
+  /// In en, this message translates to:
+  /// **'Start Chatting'**
+  String get startChatting;
+
+  /// Error loading conversations title
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading conversations'**
+  String get errorLoadingConversations;
+
+  /// Generic retry suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'Please try again later'**
+  String get pleaseTryAgainLater;
+
+  /// Archive feature placeholder
+  ///
+  /// In en, this message translates to:
+  /// **'Archive feature coming soon!'**
+  String get archiveComingSoon;
+
+  /// Marked as read confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Marked as read'**
+  String get markedAsRead;
 }
 
 class _AppLocalizationsDelegate

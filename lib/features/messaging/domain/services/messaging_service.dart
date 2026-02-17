@@ -7,12 +7,18 @@ import '../entities/typing_indicator.dart';
 import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../social/domain/services/social_service.dart';
-import '../../../moderation/moderation.dart';
 import 'messaging_group_management_service.dart';
 import 'messaging_chat_settings_service.dart';
+import 'messaging_message_service.dart';
+import 'messaging_stream_service.dart';
 
-/// Facade service for messaging: delegates group management, chat settings,
-/// and serialization to focused sub-services.
+/// Facade service for messaging: delegates to focused sub-services.
+///
+/// Sub-services:
+/// - [MessagingMessageService]: Message CRUD, send, reactions, read status
+/// - [MessagingStreamService]: Real-time streams and typing indicators
+/// - [MessagingGroupManagementService]: Group member management
+/// - [MessagingChatSettingsService]: Per-user chat settings (mute, archive, etc.)
 class MessagingService {
   static final MessagingService _instance = MessagingService._internal();
   factory MessagingService() => _instance;
@@ -23,23 +29,25 @@ class MessagingService {
 
   bool _isInitialized = false;
 
-  // Stream controllers for real-time updates
-  final Map<String, StreamController<List<Message>>> _messageStreams = {};
-  final Map<String, StreamController<List<TypingIndicator>>> _typingStreams = {};
-  final StreamController<List<Chat>> _chatsStreamController = StreamController<List<Chat>>.broadcast();
-
-  // Typing indicator timers
-  final Map<String, Timer> _typingTimers = {};
-
   // Cache keys
   static const String _chatsKey = 'user_chats';
   static const String _messagesKeyPrefix = 'chat_messages_';
 
-  // Cache durations
-  static const Duration _chatsCacheDuration = Duration(minutes: 10);
-  static const Duration _messagesCacheDuration = Duration(minutes: 5);
-
   // Sub-services (lazily initialized)
+  late final MessagingMessageService _messages = MessagingMessageService(
+    firestore: _firestore,
+    auth: _auth,
+    messagesKeyPrefix: _messagesKeyPrefix,
+    chatsKey: _chatsKey,
+    chatFromFirestore: _chatFromFirestore,
+  );
+
+  late final MessagingStreamService _streams = MessagingStreamService(
+    firestore: _firestore,
+    auth: _auth,
+    chatFromFirestore: _chatFromFirestore,
+  );
+
   late final MessagingGroupManagementService _groupManagement = MessagingGroupManagementService(
     firestore: _firestore,
     auth: _auth,
@@ -54,7 +62,7 @@ class MessagingService {
     chatsKey: _chatsKey,
   );
 
-  Stream<List<Chat>> get chatsStream => _chatsStreamController.stream;
+  Stream<List<Chat>> get chatsStream => _streams.chatsStream;
 
   Future<void> initialize() async {
     if (_isInitialized) return;
@@ -64,7 +72,7 @@ class MessagingService {
 
       final currentUser = _auth.currentUser;
       if (currentUser != null) {
-        _listenToUserChats(currentUser.uid);
+        _streams.listenToUserChats(currentUser.uid);
       }
 
       _isInitialized = true;
@@ -76,19 +84,7 @@ class MessagingService {
   }
 
   void dispose() {
-    for (final controller in _messageStreams.values) {
-      controller.close();
-    }
-    for (final controller in _typingStreams.values) {
-      controller.close();
-    }
-    for (final timer in _typingTimers.values) {
-      timer.cancel();
-    }
-    _messageStreams.clear();
-    _typingStreams.clear();
-    _typingTimers.clear();
-    _chatsStreamController.close();
+    _streams.dispose();
   }
 
   // ==================== Chat Management ====================
@@ -125,7 +121,7 @@ class MessagingService {
       await CacheService.instance.set(
         _chatsKey,
         chats.map((chat) => chat.toJson()).toList(),
-        duration: _chatsCacheDuration,
+        duration: const Duration(minutes: 10),
       );
 
       return chats;
@@ -244,46 +240,13 @@ class MessagingService {
     }
   }
 
-  // ==================== Message Management ====================
+  // ==================== Message Management (delegated) ====================
 
-  Future<List<Message>> getChatMessages(String chatId, {int limit = 50}) async {
-    try {
-      final cacheKey = '$_messagesKeyPrefix$chatId';
-      final cached = await CacheService.instance.get<List<dynamic>>(cacheKey);
-      if (cached != null) {
-        return cached.map((data) => Message.fromJson(data)).toList();
-      }
+  Future<List<Message>> getChatMessages(String chatId, {int limit = 50}) =>
+      _messages.getChatMessages(chatId, limit: limit);
 
-      final snapshot = await _firestore
-          .collection('messages')
-          .where('chatId', isEqualTo: chatId)
-          .where('isDeleted', isEqualTo: false)
-          .orderBy('createdAt', descending: true)
-          .limit(limit)
-          .get();
-
-      final messages = snapshot.docs
-          .map(_messageFromFirestore)
-          .toList()
-          .reversed
-          .toList();
-
-      await CacheService.instance.set(
-        cacheKey,
-        messages.map((message) => message.toJson()).toList(),
-        duration: _messagesCacheDuration,
-      );
-
-      return messages;
-    } catch (e) {
-      LoggingService.error('Error getting chat messages: $e', tag: 'MessagingService');
-      return [];
-    }
-  }
-
-  Future<List<Message>> getMessages(String chatId) async {
-    return await getChatMessages(chatId);
-  }
+  Future<List<Message>> getMessages(String chatId) =>
+      _messages.getChatMessages(chatId);
 
   Future<bool> sendMessage({
     required String chatId,
@@ -291,259 +254,45 @@ class MessagingService {
     MessageType type = MessageType.text,
     String? replyToMessageId,
     Map<String, dynamic>? metadata,
-  }) async {
-    final currentUser = _auth.currentUser;
-    if (currentUser == null) return false;
-
-    try {
-      final moderationService = ModerationService();
-      final validationResult = await moderationService.validateMessage(content);
-
-      if (!validationResult.isValid) {
-        LoggingService.warning(
-          'Message blocked by moderation: ${validationResult.errorMessage}',
-          tag: 'MessagingService',
-        );
-        return false;
-      }
-
-      final filteredContent = validationResult.filteredMessage ?? content;
-
-      // Check for blocks in direct chats
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
-      if (chatDoc.exists) {
-        final chatData = chatDoc.data()!;
-        final chatType = chatData['type'] as String?;
-
-        if (chatType == 'direct') {
-          final participants = List<String>.from(chatData['participantIds'] ?? []);
-          final otherUserId = participants.firstWhere(
-            (id) => id != currentUser.uid,
-            orElse: () => '',
-          );
-
-          if (otherUserId.isNotEmpty) {
-            final socialService = SocialService();
-            final isBlocked = await socialService.isUserBlocked(currentUser.uid, otherUserId);
-            if (isBlocked) {
-              LoggingService.warning('Cannot send message - user is blocked', tag: 'MessagingService');
-              return false;
-            }
-          }
-        }
-      }
-
-      final message = Message(
-        messageId: '${chatId}_${DateTime.now().millisecondsSinceEpoch}',
+  }) =>
+      _messages.sendMessage(
         chatId: chatId,
-        senderId: currentUser.uid,
-        senderName: currentUser.displayName ?? 'Anonymous',
-        senderImageUrl: currentUser.photoURL,
-        content: filteredContent,
+        content: content,
         type: type,
-        createdAt: DateTime.now(),
-        status: MessageStatus.sent,
         replyToMessageId: replyToMessageId,
-        metadata: metadata ?? {},
+        metadata: metadata,
       );
-
-      await _firestore.collection('messages').doc(message.messageId).set(message.toJson());
-      await _updateChatLastMessage(chatId, message);
-      await _triggerMessageNotifications(chatId, message);
-
-      await CacheService.instance.remove('$_messagesKeyPrefix$chatId');
-      await CacheService.instance.remove(_chatsKey);
-
-      return true;
-    } catch (e) {
-      LoggingService.error('Error sending message: $e', tag: 'MessagingService');
-      return false;
-    }
-  }
 
   Future<bool> sendSystemMessage({
     required String chatId,
     required String content,
     Map<String, dynamic>? metadata,
-  }) async {
-    try {
-      final message = Message.system(
+  }) =>
+      _messages.sendSystemMessage(
         chatId: chatId,
         content: content,
         metadata: metadata,
       );
 
-      await _firestore.collection('messages').doc(message.messageId).set(message.toJson());
-      await _updateChatLastMessage(chatId, message);
+  Future<bool> addReactionToMessage(String messageId, String emoji) =>
+      _messages.addReactionToMessage(messageId, emoji);
 
-      await CacheService.instance.remove('$_messagesKeyPrefix$chatId');
-      await CacheService.instance.remove(_chatsKey);
+  Future<bool> markChatAsRead(String chatId) =>
+      _messages.markChatAsRead(chatId);
 
-      return true;
-    } catch (e) {
-      LoggingService.error('Error sending system message: $e', tag: 'MessagingService');
-      return false;
-    }
-  }
+  Future<void> markMessagesAsRead(String chatId) =>
+      _messages.markMessagesAsRead(chatId);
 
-  Future<bool> addReactionToMessage(String messageId, String emoji) async {
-    final currentUser = _auth.currentUser;
-    if (currentUser == null) return false;
+  // ==================== Real-time Streams (delegated) ====================
 
-    try {
-      final messageRef = _firestore.collection('messages').doc(messageId);
-      final messageDoc = await messageRef.get();
+  Stream<List<Message>> getMessageStream(String chatId) =>
+      _streams.getMessageStream(chatId);
 
-      if (!messageDoc.exists) return false;
+  Stream<List<TypingIndicator>> getTypingIndicatorsStream(String chatId) =>
+      _streams.getTypingIndicatorsStream(chatId);
 
-      final message = _messageFromFirestore(messageDoc);
-      final updatedMessage = message.addReaction(currentUser.uid, emoji);
-
-      await messageRef.update(updatedMessage.toJson());
-
-      await CacheService.instance.remove('$_messagesKeyPrefix${message.chatId}');
-
-      return true;
-    } catch (e) {
-      LoggingService.error('Error adding reaction: $e', tag: 'MessagingService');
-      return false;
-    }
-  }
-
-  Future<bool> markChatAsRead(String chatId) async {
-    final currentUser = _auth.currentUser;
-    if (currentUser == null) return false;
-
-    try {
-      final chatRef = _firestore.collection('chats').doc(chatId);
-      final chatDoc = await chatRef.get();
-
-      if (!chatDoc.exists) return false;
-
-      final chat = _chatFromFirestore(chatDoc);
-      final updatedChat = chat.markAsRead(currentUser.uid);
-
-      await chatRef.update(updatedChat.toJson());
-      await markMessagesAsRead(chatId);
-      await CacheService.instance.remove(_chatsKey);
-
-      return true;
-    } catch (e) {
-      LoggingService.error('Error marking chat as read: $e', tag: 'MessagingService');
-      return false;
-    }
-  }
-
-  Future<void> markMessagesAsRead(String chatId) async {
-    final currentUser = _auth.currentUser;
-    if (currentUser == null) return;
-
-    try {
-      final snapshot = await _firestore
-          .collection('messages')
-          .where('chatId', isEqualTo: chatId)
-          .where('senderId', isNotEqualTo: currentUser.uid)
-          .get();
-
-      if (snapshot.docs.isEmpty) return;
-
-      final batch = _firestore.batch();
-      int updateCount = 0;
-
-      for (final doc in snapshot.docs) {
-        final data = doc.data();
-        final readBy = List<String>.from(data['readBy'] ?? []);
-
-        if (readBy.contains(currentUser.uid)) continue;
-
-        readBy.add(currentUser.uid);
-        batch.update(doc.reference, {
-          'readBy': readBy,
-          'status': 'read',
-        });
-        updateCount++;
-
-        if (updateCount >= 400) {
-          await batch.commit();
-          updateCount = 0;
-        }
-      }
-
-      if (updateCount > 0) {
-        await batch.commit();
-      }
-
-      LoggingService.info(
-        'Marked ${snapshot.docs.length} messages as read in chat $chatId',
-        tag: 'MessagingService',
-      );
-    } catch (e) {
-      LoggingService.error('Error marking messages as read: $e', tag: 'MessagingService');
-    }
-  }
-
-  // ==================== Real-time Streams ====================
-
-  Stream<List<Message>> getMessageStream(String chatId) {
-    if (!_messageStreams.containsKey(chatId)) {
-      final controller = StreamController<List<Message>>();
-      _messageStreams[chatId] = controller;
-
-      _firestore
-          .collection('messages')
-          .where('chatId', isEqualTo: chatId)
-          .where('isDeleted', isEqualTo: false)
-          .orderBy('createdAt', descending: false)
-          .snapshots()
-          .listen((snapshot) {
-        final messages = snapshot.docs.map(_messageFromFirestore).toList();
-        controller.add(messages);
-      });
-    }
-
-    return _messageStreams[chatId]!.stream;
-  }
-
-  // ==================== Typing Indicators ====================
-
-  Stream<List<TypingIndicator>> getTypingIndicatorsStream(String chatId) {
-    if (!_typingStreams.containsKey(chatId)) {
-      _typingStreams[chatId] = StreamController<List<TypingIndicator>>.broadcast();
-      _listenToTypingIndicators(chatId);
-    }
-    return _typingStreams[chatId]!.stream;
-  }
-
-  Future<void> setTypingIndicator(String chatId, bool isTyping) async {
-    final currentUser = _auth.currentUser;
-    if (currentUser == null) return;
-
-    try {
-      final indicator = TypingIndicator(
-        chatId: chatId,
-        userId: currentUser.uid,
-        userName: currentUser.displayName ?? 'Anonymous',
-        timestamp: DateTime.now(),
-        isTyping: isTyping,
-      );
-
-      await _firestore
-          .collection('typing_indicators')
-          .doc('${chatId}_${currentUser.uid}')
-          .set(indicator.toJson());
-
-      _typingTimers['${chatId}_${currentUser.uid}']?.cancel();
-
-      if (isTyping) {
-        _typingTimers['${chatId}_${currentUser.uid}'] = Timer(
-          const Duration(seconds: 3),
-          () => setTypingIndicator(chatId, false),
-        );
-      }
-    } catch (e) {
-      LoggingService.error('Error setting typing indicator: $e', tag: 'MessagingService');
-    }
-  }
+  Future<void> setTypingIndicator(String chatId, bool isTyping) =>
+      _streams.setTypingIndicator(chatId, isTyping);
 
   // ==================== Group Management (delegated) ====================
 
@@ -602,37 +351,6 @@ class MessagingService {
 
   // ==================== Private Helpers ====================
 
-  void _listenToUserChats(String userId) {
-    _firestore
-        .collection('chats')
-        .where('participantIds', arrayContains: userId)
-        .where('isActive', isEqualTo: true)
-        .orderBy('lastMessageTime', descending: true)
-        .snapshots()
-        .listen((snapshot) {
-      final chats = snapshot.docs.map(_chatFromFirestore).toList();
-      _chatsStreamController.add(chats);
-    });
-  }
-
-  void _listenToTypingIndicators(String chatId) {
-    _firestore
-        .collection('typing_indicators')
-        .where('chatId', isEqualTo: chatId)
-        .where('isTyping', isEqualTo: true)
-        .snapshots()
-        .listen((snapshot) {
-      final indicators = snapshot.docs
-          .map((doc) => TypingIndicator.fromJson(doc.data()))
-          .where((indicator) => !indicator.isExpired)
-          .toList();
-
-      if (_typingStreams.containsKey(chatId)) {
-        _typingStreams[chatId]!.add(indicators);
-      }
-    });
-  }
-
   Future<Chat?> _findDirectChat(String userId1, String userId2) async {
     try {
       final sortedIds = [userId1, userId2]..sort();
@@ -649,72 +367,8 @@ class MessagingService {
     }
   }
 
-  Future<void> _updateChatLastMessage(String chatId, Message message) async {
-    try {
-      final chatRef = _firestore.collection('chats').doc(chatId);
-      final chatDoc = await chatRef.get();
-
-      if (chatDoc.exists) {
-        final chat = _chatFromFirestore(chatDoc);
-        final updatedChat = chat.updateLastMessage(message);
-
-        await chatRef.update(updatedChat.toJson());
-      }
-    } catch (e) {
-      LoggingService.error('Error updating chat last message: $e', tag: 'MessagingService');
-    }
-  }
-
-  Future<void> _triggerMessageNotifications(String chatId, Message message) async {
-    try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
-      if (!chatDoc.exists) return;
-
-      final chat = _chatFromFirestore(chatDoc);
-
-      final recipients = chat.participantIds
-          .where((id) => id != message.senderId)
-          .toList();
-
-      if (recipients.isEmpty) return;
-
-      await _firestore.collection('message_notifications').add({
-        'chatId': chatId,
-        'messageId': message.messageId,
-        'senderId': message.senderId,
-        'senderName': message.senderName,
-        'senderImageUrl': message.senderImageUrl,
-        'content': _truncateMessage(message.content, 100),
-        'messageType': message.type.name,
-        'recipientIds': recipients,
-        'chatName': chat.name ?? message.senderName,
-        'chatType': chat.type.name,
-        'chatImageUrl': chat.imageUrl,
-        'createdAt': FieldValue.serverTimestamp(),
-        'processed': false,
-      });
-
-      LoggingService.info(
-        'Created notification for ${recipients.length} recipients',
-        tag: 'MessagingService',
-      );
-    } catch (e) {
-      LoggingService.error('Error triggering notifications: $e', tag: 'MessagingService');
-    }
-  }
-
-  String _truncateMessage(String content, int maxLength) {
-    if (content.length <= maxLength) return content;
-    return '${content.substring(0, maxLength - 3)}...';
-  }
-
   Chat _chatFromFirestore(DocumentSnapshot doc) {
     final data = Map<String, dynamic>.from(doc.data() as Map);
     return Chat.fromJson({...data, 'chatId': doc.id});
-  }
-
-  Message _messageFromFirestore(DocumentSnapshot doc) {
-    final data = Map<String, dynamic>.from(doc.data() as Map);
-    return Message.fromJson({...data, 'messageId': doc.id});
   }
 }
