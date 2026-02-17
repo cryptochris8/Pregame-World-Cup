@@ -4,6 +4,7 @@ import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/analytics_service.dart';
+import '../../../../services/revenuecat_service.dart';
 
 class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
@@ -122,6 +123,14 @@ class AuthService {
     try {
       // Track logout in analytics
       await _analyticsService.logLogout();
+
+      // Logout from RevenueCat to prevent entitlement leakage on shared devices
+      try {
+        await RevenueCatService().logoutUser();
+      } catch (e) {
+        LoggingService.error('RevenueCat logout failed (non-blocking): $e', tag: 'AuthService');
+      }
+
       await _firebaseAuth.signOut();
     } catch (e) {
       LoggingService.error('Error signing out: $e', tag: 'AuthService');

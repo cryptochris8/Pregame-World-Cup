@@ -21,16 +21,6 @@ class PaymentAccessService {
   final Map<String, bool> _adminCache = {};
   final Map<String, bool> _clearanceCache = {};
 
-  // Hardcoded fallback lists - used ONLY when Firestore query fails.
-  // The source of truth is Firestore collections: admin_users, clearance_users.
-  static const List<String> _fallbackAdminEmails = [
-    'chriscam8@gmail.com',
-  ];
-  static const List<String> _fallbackClearanceEmails = [
-    'coopercrawford013@gmail.com',
-    'johnnycaboshi@gmail.com',
-  ];
-
   PaymentAccessService({
     required FirebaseFunctions functions,
     required FirebaseFirestore firestore,
@@ -52,7 +42,6 @@ class PaymentAccessService {
       email: email,
       collection: 'admin_users',
       cache: _adminCache,
-      fallbackList: _fallbackAdminEmails,
     );
   }
 
@@ -65,17 +54,15 @@ class PaymentAccessService {
       email: email,
       collection: 'clearance_users',
       cache: _clearanceCache,
-      fallbackList: _fallbackClearanceEmails,
     );
   }
 
   /// Helper that checks if an email exists in a Firestore collection,
-  /// with session caching and hardcoded fallback on error.
+  /// with session caching.
   Future<bool> _isAdminOrClearanceEmail({
     required String email,
     required String collection,
     required Map<String, bool> cache,
-    required List<String> fallbackList,
   }) async {
     if (cache.containsKey(email)) {
       return cache[email]!;
@@ -93,12 +80,10 @@ class PaymentAccessService {
       return found;
     } catch (e) {
       LoggingService.warning(
-        'Firestore $collection query failed, using hardcoded fallback: $e',
+        'Firestore $collection query failed: $e',
         tag: _logTag,
       );
-      final found = fallbackList.contains(email);
-      cache[email] = found;
-      return found;
+      return false;
     }
   }
 

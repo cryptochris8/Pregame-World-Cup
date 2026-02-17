@@ -1,8 +1,12 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
+import Stripe from 'stripe';
 import { stripe } from './stripe-config';
 
 const db = admin.firestore();
+
+// Server-side default price for virtual watch party attendance (in cents)
+const DEFAULT_VIRTUAL_ATTENDANCE_PRICE_CENTS = 999; // $9.99
 
 /**
  * Create a payment intent for virtual watch party attendance
@@ -16,10 +20,9 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
 
     const watchPartyId = data.watchPartyId;
     const watchPartyName = data.watchPartyName;
-    const amount = data.amount; // Amount in cents
     const currency = data.currency || 'usd';
 
-    if (!watchPartyId || !amount || amount <= 0) {
+    if (!watchPartyId) {
       throw new functions.https.HttpsError('invalid-argument', 'Missing required parameters');
     }
 
@@ -35,6 +38,15 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
     const watchPartyData = watchPartyDoc.data();
     if (!watchPartyData?.allowVirtualAttendance) {
       throw new functions.https.HttpsError('failed-precondition', 'This watch party does not allow virtual attendance');
+    }
+
+    // SECURITY: Use server-side price from the watch party document or default constant.
+    // Never trust client-provided amounts.
+    const amount: number = watchPartyData?.virtualAttendancePriceCents
+      ?? DEFAULT_VIRTUAL_ATTENDANCE_PRICE_CENTS;
+
+    if (!amount || amount <= 0) {
+      throw new functions.https.HttpsError('failed-precondition', 'Invalid virtual attendance price configured for this watch party');
     }
 
     // Use a transaction to atomically check for existing payment AND create a new one
@@ -396,3 +408,161 @@ export const refundAllVirtualAttendees = functions.https.onCall(async (data: any
     throw new functions.https.HttpsError('internal', 'Unable to process mass refunds');
   }
 });
+
+/**
+ * Stripe webhook handler for watch party payment events.
+ * Verifies the webhook signature before processing any events.
+ */
+export const handleWatchPartyWebhook = functions.https.onRequest(async (req, res) => {
+  const sig = req.headers['stripe-signature'] as string;
+  // SECURITY: Require a properly configured webhook secret - never fall back to insecure defaults
+  const webhookSecret = functions.config().stripe?.wp_webhook_secret ||
+                        process.env.STRIPE_WP_WEBHOOK_SECRET;
+
+  if (!webhookSecret) {
+    functions.logger.error('Watch party webhook secret is not configured. Set stripe.wp_webhook_secret in Firebase config or STRIPE_WP_WEBHOOK_SECRET env var.');
+    res.status(500).send('Webhook secret not configured');
+    return;
+  }
+
+  let event: Stripe.Event;
+
+  try {
+    // SECURITY: Use req.rawBody for signature verification (not req.body)
+    // Firebase Cloud Functions provides rawBody as the unparsed request body,
+    // which is required for correct Stripe signature verification.
+    event = stripe.webhooks.constructEvent(req.rawBody, sig, webhookSecret);
+  } catch (err) {
+    functions.logger.error('Watch party webhook signature verification failed:', err);
+    res.status(400).send('Webhook signature verification failed');
+    return;
+  }
+
+  try {
+    switch (event.type) {
+      case 'payment_intent.succeeded': {
+        const paymentIntent = event.data.object as Stripe.PaymentIntent;
+        // Only handle virtual attendance payments
+        if (paymentIntent.metadata?.type === 'virtual_attendance') {
+          await handleWebhookPaymentSucceeded(paymentIntent);
+        }
+        break;
+      }
+
+      case 'payment_intent.payment_failed': {
+        const paymentIntent = event.data.object as Stripe.PaymentIntent;
+        if (paymentIntent.metadata?.type === 'virtual_attendance') {
+          await handleWebhookPaymentFailed(paymentIntent);
+        }
+        break;
+      }
+
+      case 'charge.refunded': {
+        const charge = event.data.object as Stripe.Charge;
+        if (charge.metadata?.type === 'virtual_attendance' || charge.payment_intent) {
+          functions.logger.info(`Refund webhook received for charge: ${charge.id}`);
+        }
+        break;
+      }
+
+      default:
+        functions.logger.info(`Unhandled watch party webhook event type: ${event.type}`);
+    }
+
+    res.status(200).send('Webhook handled successfully');
+  } catch (error) {
+    functions.logger.error('Error handling watch party webhook:', error);
+    res.status(500).send('Webhook handler failed');
+  }
+});
+
+/**
+ * Handle successful payment from webhook (server-side confirmation).
+ */
+async function handleWebhookPaymentSucceeded(paymentIntent: Stripe.PaymentIntent): Promise<void> {
+  const watchPartyId = paymentIntent.metadata?.watchPartyId;
+  const userId = paymentIntent.metadata?.userId;
+
+  if (!watchPartyId || !userId) {
+    functions.logger.warn(`Payment intent ${paymentIntent.id} missing watchPartyId or userId metadata`);
+    return;
+  }
+
+  // Find the payment record
+  const paymentQuery = await db.collection('watch_party_virtual_payments')
+    .where('paymentIntentId', '==', paymentIntent.id)
+    .limit(1)
+    .get();
+
+  if (paymentQuery.empty) {
+    functions.logger.warn(`No payment record found for payment intent ${paymentIntent.id}`);
+    return;
+  }
+
+  const paymentDoc = paymentQuery.docs[0];
+  const paymentData = paymentDoc.data();
+
+  // Idempotency: If already completed, skip
+  if (paymentData.status === 'completed') {
+    functions.logger.info(`Payment ${paymentIntent.id} already completed via webhook, skipping`);
+    return;
+  }
+
+  const batch = db.batch();
+
+  // Update payment record to completed
+  batch.update(paymentDoc.ref, {
+    status: 'completed',
+    completedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+
+  // Update member record to mark as paid
+  const memberRef = db.collection('watch_parties')
+    .doc(watchPartyId)
+    .collection('members')
+    .doc(userId);
+
+  const memberDoc = await memberRef.get();
+  if (memberDoc.exists) {
+    batch.update(memberRef, {
+      hasPaid: true,
+      paymentIntentId: paymentIntent.id,
+      paidAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  }
+
+  // Increment virtual attendees count
+  const watchPartyRef = db.collection('watch_parties').doc(watchPartyId);
+  batch.update(watchPartyRef, {
+    virtualAttendeesCount: admin.firestore.FieldValue.increment(1),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+
+  await batch.commit();
+
+  functions.logger.info(`Webhook: Virtual attendance payment completed: ${paymentIntent.id} for party ${watchPartyId}`);
+}
+
+/**
+ * Handle failed payment from webhook.
+ */
+async function handleWebhookPaymentFailed(paymentIntent: Stripe.PaymentIntent): Promise<void> {
+  const watchPartyId = paymentIntent.metadata?.watchPartyId;
+
+  // Find and update the payment record
+  const paymentQuery = await db.collection('watch_party_virtual_payments')
+    .where('paymentIntentId', '==', paymentIntent.id)
+    .limit(1)
+    .get();
+
+  if (!paymentQuery.empty) {
+    const paymentDoc = paymentQuery.docs[0];
+    await paymentDoc.ref.update({
+      status: 'failed',
+      failedAt: admin.firestore.FieldValue.serverTimestamp(),
+      failureMessage: paymentIntent.last_payment_error?.message || 'Payment failed',
+    });
+  }
+
+  functions.logger.warn(`Webhook: Virtual attendance payment failed: ${paymentIntent.id} for party ${watchPartyId}`);
+}

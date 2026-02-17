@@ -417,11 +417,13 @@ service cloud.firestore {
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
-    // Venue enhancements - auth read, own (ownerId) or admin write
+    // Venue enhancements - auth read, venue owner or admin write
     match /venue_enhancements/{venueId} {
       allow read: if isAuth();
-      allow write: if isAdmin() || (isAuth() && request.auth.uid == resource.data.ownerId);
-      allow create: if isAuth();
+      allow create: if isAdmin() || (isAuth() && request.resource.data.ownerId == request.auth.uid);
+      allow update: if isAdmin() || (isAuth() && resource.data.ownerId == request.auth.uid
+        && request.resource.data.ownerId == resource.data.ownerId);
+      allow delete: if isAdmin() || (isAuth() && resource.data.ownerId == request.auth.uid);
     }
 
     // AI recommendations - auth read, own write

@@ -71,11 +71,10 @@ class WatchPartyPaymentService {
         return true;
       }
 
-      // Create payment intent for virtual attendance
+      // Create payment intent for virtual attendance (amount determined server-side)
       final clientSecret = await _createVirtualAttendancePaymentIntent(
         watchPartyId: watchPartyId,
         watchPartyName: watchParty.name,
-        amount: watchParty.virtualAttendanceFee,
       );
 
       if (clientSecret == null) {
@@ -132,10 +131,10 @@ class WatchPartyPaymentService {
   }
 
   /// Create payment intent for virtual attendance via Cloud Function
+  /// Amount is determined server-side from the watch party document.
   Future<String?> _createVirtualAttendancePaymentIntent({
     required String watchPartyId,
     required String watchPartyName,
-    required double amount,
   }) async {
     try {
       final user = FirebaseAuth.instance.currentUser;
@@ -145,8 +144,6 @@ class WatchPartyPaymentService {
       final result = await callable.call({
         'watchPartyId': watchPartyId,
         'watchPartyName': watchPartyName,
-        'amount': (amount * 100).round(), // Convert to cents
-        'currency': 'usd',
       });
 
       return result.data['clientSecret'] as String?;

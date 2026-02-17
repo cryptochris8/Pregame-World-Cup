@@ -38,6 +38,18 @@ class ApiKeys {
     'STRIPE_PUBLISHABLE_KEY',
     defaultValue: '',
   );
+
+  // RevenueCat API Keys - platform-specific, loaded from environment
+  // iOS: Production key for App Store
+  static const String revenueCatIos = String.fromEnvironment(
+    'REVENUECAT_IOS_API_KEY',
+    defaultValue: 'appl_ossGwqwpDoJlTmVSVZEHoZTFMHY',
+  );
+  // Android: Test key as default until Play Store listing approved
+  static const String revenueCatAndroid = String.fromEnvironment(
+    'REVENUECAT_ANDROID_API_KEY',
+    defaultValue: 'test_MFlhygrdunfDNFjjvGIVMCMlnwe',
+  );
   
   // Validation method to check if keys are properly configured
   static bool validateApiKeys() {

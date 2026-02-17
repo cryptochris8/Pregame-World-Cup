@@ -443,9 +443,14 @@ describe('Stripe Simple', () => {
 
   describe('createPortalSession', () => {
     it('should return a portal URL', async () => {
+      // Seed stripe_customers with a document matching the authenticated user's UID
+      const stripeCustomers = new Map<string, any>();
+      stripeCustomers.set('sc_1', { userId: 'test-user-id', customerId: 'cus_portal_1' });
+      mockFirestore.setTestData('stripe_customers', stripeCustomers);
+
       const result = await callFunction(
         createPortalSession,
-        { customerId: 'cus_portal_1' },
+        {},
         authedContext(),
       );
 
@@ -459,20 +464,27 @@ describe('Stripe Simple', () => {
 
     it('should reject unauthenticated requests', async () => {
       await expect(
-        callFunction(createPortalSession, { customerId: 'cus_x' }, unauthContext()),
-      ).rejects.toThrow(/Unable to create portal session/);
+        callFunction(createPortalSession, {}, unauthContext()),
+      ).rejects.toThrow(/User must be authenticated/);
     });
 
-    it('should reject when customerId is missing', async () => {
+    it('should reject when no Stripe customer is found for the user', async () => {
+      // Empty stripe_customers collection - no customer linked to this user
+      mockFirestore.setTestData('stripe_customers', new Map());
+
       await expect(
         callFunction(createPortalSession, {}, authedContext()),
-      ).rejects.toThrow(/Unable to create portal session/);
+      ).rejects.toThrow(/No Stripe customer found for this user/);
     });
 
     it('should use default return URL when not provided', async () => {
+      const stripeCustomers = new Map<string, any>();
+      stripeCustomers.set('sc_2', { userId: 'test-user-id', customerId: 'cus_default_url' });
+      mockFirestore.setTestData('stripe_customers', stripeCustomers);
+
       await callFunction(
         createPortalSession,
-        { customerId: 'cus_default_url' },
+        {},
         authedContext(),
       );
 
@@ -481,9 +493,13 @@ describe('Stripe Simple', () => {
     });
 
     it('should use custom return URL when provided', async () => {
+      const stripeCustomers = new Map<string, any>();
+      stripeCustomers.set('sc_3', { userId: 'test-user-id', customerId: 'cus_custom_url' });
+      mockFirestore.setTestData('stripe_customers', stripeCustomers);
+
       await callFunction(
         createPortalSession,
-        { customerId: 'cus_custom_url', returnUrl: 'https://custom.example.com/billing' },
+        { returnUrl: 'https://custom.example.com/billing' },
         authedContext(),
       );
 
@@ -502,15 +518,15 @@ describe('Stripe Simple', () => {
       mockStripe.paymentIntents.create.mockResolvedValueOnce({
         id: 'pi_test_simple',
         client_secret: 'pi_test_simple_secret_abc',
-        amount: 2500,
+        amount: 1499,
         currency: 'usd',
         status: 'requires_payment_method',
-        metadata: { userId: 'test-user-id' },
+        metadata: { userId: 'test-user-id', productType: 'fan_pass' },
       } as any);
 
       const result = await callFunction(
         createPaymentIntent,
-        { amount: 2500, currency: 'usd', description: 'Test payment' },
+        { productType: 'fan_pass', currency: 'usd', description: 'Test payment' },
         authedContext(),
       );
 
@@ -518,37 +534,39 @@ describe('Stripe Simple', () => {
       expect(mockStripe.paymentIntents.create).toHaveBeenCalledTimes(1);
 
       const piArgs = mockStripe.paymentIntents.create.mock.calls[0][0];
-      expect(piArgs.amount).toBe(2500);
+      expect(piArgs.amount).toBe(1499);
       expect(piArgs.currency).toBe('usd');
       expect(piArgs.description).toBe('Test payment');
       expect(piArgs.metadata.userId).toBe('test-user-id');
+      expect(piArgs.metadata.productType).toBe('fan_pass');
     });
 
     it('should reject unauthenticated requests', async () => {
       await expect(
-        callFunction(createPaymentIntent, { amount: 1000 }, unauthContext()),
-      ).rejects.toThrow(/Unable to create payment intent/);
+        callFunction(createPaymentIntent, { productType: 'fan_pass' }, unauthContext()),
+      ).rejects.toThrow(/User must be authenticated/);
     });
 
-    it('should reject when amount is missing or invalid', async () => {
+    it('should reject when productType is missing or invalid', async () => {
       await expect(
-        callFunction(createPaymentIntent, { amount: 0 }, authedContext()),
-      ).rejects.toThrow(/Unable to create payment intent/);
+        callFunction(createPaymentIntent, {}, authedContext()),
+      ).rejects.toThrow(/Invalid product type/);
 
       await expect(
-        callFunction(createPaymentIntent, { amount: -100 }, authedContext()),
-      ).rejects.toThrow(/Unable to create payment intent/);
+        callFunction(createPaymentIntent, { productType: 'nonexistent_product' }, authedContext()),
+      ).rejects.toThrow(/Invalid product type/);
     });
 
     it('should default currency to usd', async () => {
       await callFunction(
         createPaymentIntent,
-        { amount: 500, description: 'Default currency' },
+        { productType: 'superfan_pass', description: 'Default currency' },
         authedContext(),
       );
 
       const piArgs = mockStripe.paymentIntents.create.mock.calls[0][0];
       expect(piArgs.currency).toBe('usd');
+      expect(piArgs.amount).toBe(2999);
     });
   });
 

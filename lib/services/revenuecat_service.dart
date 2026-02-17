@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../config/api_keys.dart';
 import '../features/worldcup/domain/services/world_cup_payment_service.dart';
 
 /// RevenueCat Service for handling native in-app purchases
@@ -14,12 +15,9 @@ class RevenueCatService {
   factory RevenueCatService() => _instance;
   RevenueCatService._internal();
 
-  // RevenueCat API Keys (public keys, safe to include in app)
-  // iOS: Production key for App Store
-  static const String _iosApiKey = 'appl_ossGwqwpDoJlTmVSVZEHoZTFMHY';
-  // Android: Replace with production key once the Google Play Store app is
-  // configured in RevenueCat dashboard. Blocked on Play Store listing approval.
-  static const String _androidApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
+  // RevenueCat API Keys - loaded from environment via ApiKeys
+  static const String _iosApiKey = ApiKeys.revenueCatIos;
+  static const String _androidApiKey = ApiKeys.revenueCatAndroid;
 
   // Entitlement IDs (must match RevenueCat dashboard)
   static const String _fanPassEntitlement = 'fan_pass';
@@ -33,9 +31,24 @@ class RevenueCatService {
   CustomerInfo? _cachedCustomerInfo;
 
   /// Check if RevenueCat is properly configured with real API keys
-  bool get isConfigured =>
-      _iosApiKey.isNotEmpty &&
-      !_iosApiKey.contains('YOUR_REVENUECAT');
+  /// Checks the key for the current platform (iOS or Android)
+  /// Keys starting with 'test_' are not considered configured for production
+  bool get isConfigured {
+    final String key = Platform.isIOS ? _iosApiKey : _androidApiKey;
+
+    if (key.isEmpty || key.contains('YOUR_REVENUECAT')) {
+      return false;
+    }
+
+    if (key.startsWith('test_')) {
+      if (kDebugMode) {
+        debugPrint('RevenueCatService: using test API key — not configured for production');
+      }
+      return false;
+    }
+
+    return true;
+  }
 
   /// Initialize RevenueCat SDK
   /// Should be called once during app startup

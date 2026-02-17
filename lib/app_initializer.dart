@@ -5,6 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 
 import 'firebase_options.dart';
 import 'injection_container.dart' as di;
@@ -195,6 +196,10 @@ Future<void> initializeApp() async {
   debugLog('INIT STEP 7.8: RevenueCat Initialization (Background)');
   _initializeRevenueCatBackground();
 
+  // Step 7.85: Stripe SDK Initialization (Background)
+  debugLog('INIT STEP 7.85: Stripe SDK (Background)');
+  _initializeStripeBackground();
+
   // Step 7.9: Analytics & Crashlytics Initialization (Background)
   debugLog('INIT STEP 7.9: Analytics & Crashlytics (Background)');
   _initializeAnalyticsBackground();
@@ -308,6 +313,33 @@ void _initializeRevenueCatBackground() async {
     debugLog('REVENUECAT: Background initialization failed: $e');
     if (DIAGNOSTIC_MODE) {
       debugLog('DIAGNOSTIC: RevenueCat failed but app will continue');
+    }
+  }
+}
+
+/// Initialize Stripe SDK in the background for Payment Sheet flows
+void _initializeStripeBackground() async {
+  try {
+    debugLog('STRIPE: Starting background initialization');
+
+    // Yield to the event loop so the UI renders first.
+    // Stripe SDK init involves platform channel setup and should not
+    // compete with the first frame.
+    await Future.microtask(() {});
+
+    // Only initialize if the publishable key is configured
+    if (ApiKeys.stripePublishableKey.isNotEmpty) {
+      Stripe.publishableKey = ApiKeys.stripePublishableKey;
+      Stripe.merchantIdentifier = 'merchant.com.christophercampbell.pregameworldcup';
+      await Stripe.instance.applySettings();
+      debugLog('STRIPE: Background initialization completed');
+    } else {
+      debugLog('STRIPE: Publishable key not set - skipping initialization');
+    }
+  } catch (e) {
+    debugLog('STRIPE: Background initialization failed: $e');
+    if (DIAGNOSTIC_MODE) {
+      debugLog('DIAGNOSTIC: Stripe failed but app will continue');
     }
   }
 }

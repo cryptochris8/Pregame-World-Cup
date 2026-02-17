@@ -17,14 +17,15 @@ class PaymentService {
   static Future<void> init() async {
     // Use environment variable instead of hardcoded key
     Stripe.publishableKey = ApiKeys.stripePublishableKey;
-    Stripe.merchantIdentifier = 'merchant.com.pregame.app';
+    Stripe.merchantIdentifier = 'merchant.com.christophercampbell.pregameworldcup';
     await Stripe.instance.applySettings();
   }
 
-  /// Create payment intent for one-time payments (fan features, tips, etc.)
+  /// Create payment intent for one-time payments.
+  /// Amount is determined server-side based on productType.
   Future<String?> createPaymentIntent({
-    required double amount,
-    required String description,
+    required String productType,
+    String? description,
     String currency = 'usd',
   }) async {
     try {
@@ -32,9 +33,10 @@ class PaymentService {
       if (user == null) throw Exception('User not authenticated');
 
       // Call Firebase Function to create payment intent
+      // SECURITY: Amount is determined server-side from productType, not client-provided.
       final callable = _functions.httpsCallable('createPaymentIntent');
       final result = await callable.call({
-        'amount': (amount * 100).round(), // Convert to cents
+        'productType': productType,
         'currency': currency,
         'description': description,
       });
@@ -119,12 +121,11 @@ class PaymentService {
   /// Tip a venue (one-time payment)
   Future<void> tipVenue({
     required String venueId,
-    required double amount,
     required BuildContext context,
   }) async {
     try {
       final clientSecret = await createPaymentIntent(
-        amount: amount,
+        productType: 'fan_pass',
         description: 'Tip for venue',
       );
 
@@ -142,7 +143,6 @@ class PaymentService {
         // Trigger Zapier workflow for successful tip payment
         _trackPaymentSuccess(
           eventType: 'tip_venue',
-          amount: amount,
           metadata: {'venue_id': venueId},
         );
       }
@@ -156,12 +156,11 @@ class PaymentService {
   /// Purchase premium fan features
   Future<void> purchasePremiumFeatures({
     required String featureType,
-    required double amount,
     required BuildContext context,
   }) async {
     try {
       final clientSecret = await createPaymentIntent(
-        amount: amount,
+        productType: featureType,
         description: 'Premium features: $featureType',
       );
 
@@ -179,7 +178,6 @@ class PaymentService {
         // Trigger Zapier workflow for premium feature purchase
         _trackPaymentSuccess(
           eventType: 'premium_features',
-          amount: amount,
           metadata: {'feature_type': featureType},
         );
       }
@@ -194,12 +192,11 @@ class PaymentService {
   Future<void> purchaseTicket({
     required String eventId,
     required String ticketType,
-    required double amount,
     required BuildContext context,
   }) async {
     try {
       final clientSecret = await createPaymentIntent(
-        amount: amount,
+        productType: ticketType,
         description: 'Event ticket: $ticketType',
       );
 
@@ -217,7 +214,6 @@ class PaymentService {
         // Trigger Zapier workflow for ticket purchase
         _trackPaymentSuccess(
           eventType: 'ticket_purchase',
-          amount: amount,
           metadata: {
             'event_id': eventId,
             'ticket_type': ticketType,
@@ -268,7 +264,6 @@ class PaymentService {
   /// Track successful payment events with Zapier integration
   void _trackPaymentSuccess({
     required String eventType,
-    required double amount,
     Map<String, dynamic>? metadata,
   }) {
     try {
@@ -276,12 +271,11 @@ class PaymentService {
       if (user == null) return;
 
       final zapierService = sl<ZapierService>();
-      
+
       // Fire-and-forget Zapier call for payment tracking
       zapierService.triggerPaymentEvent(
         eventType: eventType,
         customerId: user.uid,
-        amount: amount.toString(),
         metadata: metadata,
       );
     } catch (e) {

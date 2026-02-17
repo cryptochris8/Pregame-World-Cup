@@ -673,6 +673,7 @@ export {
   createPaymentIntent,
   handleStripeWebhook,
   setupFreeFanAccount,
+  setupFreeVenueAccount,
   createFanCheckoutSession
 } from './stripe-simple';
 
@@ -681,7 +682,8 @@ export {
   createVirtualAttendancePayment,
   handleVirtualAttendancePayment,
   requestVirtualAttendanceRefund,
-  refundAllVirtualAttendees
+  refundAllVirtualAttendees,
+  handleWatchPartyWebhook
 } from './watch-party-payments';
 
 // Export Watch Party Notification functions

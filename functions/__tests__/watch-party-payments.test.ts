@@ -114,7 +114,7 @@ describe('Watch Party Payments', () => {
       mockStripe.paymentIntents.create.mockResolvedValueOnce({
         id: 'pi_test_virtual',
         client_secret: 'pi_test_virtual_secret',
-        amount: 500,
+        amount: 999,
         currency: 'usd',
         status: 'requires_payment_method',
         metadata: {},
@@ -122,7 +122,7 @@ describe('Watch Party Payments', () => {
 
       const result = await callFunction(
         createVirtualAttendancePayment,
-        { watchPartyId: partyId, watchPartyName: 'Finals Watch', amount: 500, currency: 'usd' },
+        { watchPartyId: partyId, watchPartyName: 'Finals Watch', currency: 'usd' },
         authedContext(),
       );
 
@@ -131,7 +131,7 @@ describe('Watch Party Payments', () => {
       expect(mockStripe.paymentIntents.create).toHaveBeenCalledTimes(1);
 
       const piArgs = mockStripe.paymentIntents.create.mock.calls[0][0];
-      expect(piArgs.amount).toBe(500);
+      expect(piArgs.amount).toBe(999);
       expect(piArgs.metadata.type).toBe('virtual_attendance');
       expect(piArgs.metadata.watchPartyId).toBe(partyId);
     });
@@ -193,17 +193,41 @@ describe('Watch Party Payments', () => {
       ).rejects.toThrow(/already purchased|pending payment/);
     });
 
-    it('should reject when required parameters are missing', async () => {
+    it('should reject when watchPartyId is missing', async () => {
       seedWatchParty();
       mockFirestore.setTestData('watch_party_virtual_payments', new Map());
 
       await expect(
         callFunction(
           createVirtualAttendancePayment,
-          { watchPartyId: 'wp-1' /* amount missing */ },
+          { /* watchPartyId missing - amount no longer required (server-side pricing) */ },
           authedContext(),
         ),
       ).rejects.toThrow(/Missing required parameters/);
+    });
+
+    it('should use server-side price from watch party document', async () => {
+      const partyId = seedWatchParty('wp-custom-price', { virtualAttendancePriceCents: 1499 });
+      mockFirestore.setTestData('watch_party_virtual_payments', new Map());
+
+      mockStripe.paymentIntents.create.mockResolvedValueOnce({
+        id: 'pi_custom_price',
+        client_secret: 'pi_custom_price_secret',
+        amount: 1499,
+        currency: 'usd',
+        status: 'requires_payment_method',
+        metadata: {},
+      } as any);
+
+      const result = await callFunction(
+        createVirtualAttendancePayment,
+        { watchPartyId: partyId, watchPartyName: 'Premium Party' },
+        authedContext(),
+      );
+
+      expect(result.clientSecret).toBe('pi_custom_price_secret');
+      const piArgs = mockStripe.paymentIntents.create.mock.calls[0][0];
+      expect(piArgs.amount).toBe(1499);
     });
 
     it('should create a PaymentIntent with correct description', async () => {

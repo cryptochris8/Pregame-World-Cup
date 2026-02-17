@@ -339,12 +339,21 @@ export const createPortalSession = functions.https.onCall(async (data: any, cont
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
 
-    const customerId = data.customerId;
+    const userId = context.auth.uid;
     const returnUrl = data.returnUrl;
-    
-    if (!customerId) {
-      throw new functions.https.HttpsError('invalid-argument', 'Customer ID is required');
+
+    // SECURITY: Look up the Stripe customer from Firestore using the authenticated user's UID.
+    // Never trust a client-provided customerId.
+    const customerQuery = await admin.firestore().collection('stripe_customers')
+      .where('userId', '==', userId)
+      .limit(1)
+      .get();
+
+    if (customerQuery.empty) {
+      throw new functions.https.HttpsError('not-found', 'No Stripe customer found for this user');
     }
+
+    const customerId = customerQuery.docs[0].data().customerId;
 
     const portalSession = await stripe.billingPortal.sessions.create({
       customer: customerId,
@@ -352,11 +361,21 @@ export const createPortalSession = functions.https.onCall(async (data: any, cont
     });
 
     return { url: portalSession.url };
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error creating portal session:', error);
+    if (error instanceof functions.https.HttpsError) {
+      throw error;
+    }
     throw new functions.https.HttpsError('internal', 'Unable to create portal session');
   }
 });
+
+// Allowed one-time payment amounts (in cents) to prevent arbitrary charges
+const ALLOWED_PAYMENT_AMOUNTS: Record<string, number> = {
+  fan_pass: 1499,        // $14.99
+  superfan_pass: 2999,   // $29.99
+  venue_premium: 9900,   // $99.00
+};
 
 // Create payment intent for one-time payments
 export const createPaymentIntent = functions.https.onCall(async (data: any, context: any) => {
@@ -365,26 +384,37 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
 
-    const amount = data.amount;
+    const productType = data.productType;
     const currency = data.currency || 'usd';
     const description = data.description;
-    
-    if (!amount || amount <= 0) {
-      throw new functions.https.HttpsError('invalid-argument', 'Valid amount is required');
+
+    // SECURITY: Look up amount server-side from allowed products.
+    // Never trust a client-provided amount.
+    if (!productType || !ALLOWED_PAYMENT_AMOUNTS[productType]) {
+      throw new functions.https.HttpsError(
+        'invalid-argument',
+        `Invalid product type. Must be one of: ${Object.keys(ALLOWED_PAYMENT_AMOUNTS).join(', ')}`
+      );
     }
+
+    const amount = ALLOWED_PAYMENT_AMOUNTS[productType];
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount,
       currency,
-      description,
+      description: description || `World Cup 2026 - ${productType}`,
       metadata: {
-        userId: context.auth.uid
+        userId: context.auth.uid,
+        productType,
       }
     });
 
     return { clientSecret: paymentIntent.client_secret };
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error creating payment intent:', error);
+    if (error instanceof functions.https.HttpsError) {
+      throw error;
+    }
     throw new functions.https.HttpsError('internal', 'Unable to create payment intent');
   }
 });
@@ -405,7 +435,7 @@ export const handleStripeWebhook = functions.https.onRequest(async (req, res) =>
   let event: Stripe.Event;
 
   try {
-    event = stripe.webhooks.constructEvent(req.body, sig, webhookSecret);
+    event = stripe.webhooks.constructEvent(req.rawBody, sig, webhookSecret);
   } catch (err) {
     console.error('Webhook signature verification failed:', err);
     res.status(400).send('Webhook signature verification failed');
