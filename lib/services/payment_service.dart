@@ -6,6 +6,9 @@ import 'zapier_service.dart';
 import '../injection_container.dart';
 import '../config/api_keys.dart';
 
+/// @deprecated This service is not currently used. The active payment flows use
+/// [WorldCupPaymentService] (fan pass/venue premium) and [WatchPartyPaymentService]
+/// (virtual attendance). This file is retained for reference only.
 class PaymentService {
   static final PaymentService _instance = PaymentService._internal();
   factory PaymentService() => _instance;

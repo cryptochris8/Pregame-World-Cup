@@ -2413,4 +2413,82 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get markedAsRead => 'Marqué comme lu';
+
+  @override
+  String get completePremiumPurchaseInBrowser =>
+      'Complétez votre achat dans le navigateur. Votre Premium sera activé automatiquement.';
+
+  @override
+  String get venuePremiumActivatedSuccessfully =>
+      'Venue Premium activé avec succès !';
+
+  @override
+  String get oneTimePaymentForWorldCup =>
+      'Paiement unique pour la Coupe du Monde 2026';
+
+  @override
+  String get premiumFeaturesInclude => 'Les fonctionnalités Premium incluent :';
+
+  @override
+  String get specificMatchScheduling => 'Programmation spécifique des matchs';
+
+  @override
+  String get tvScreenConfiguration => 'Configuration TV et écrans';
+
+  @override
+  String get gameDaySpecialsDeals => 'Offres et promotions du jour de match';
+
+  @override
+  String get atmosphereVibeSettings =>
+      'Paramètres d\'ambiance et d\'atmosphère';
+
+  @override
+  String get realTimeCapacityUpdates =>
+      'Mises à jour de capacité en temps réel';
+
+  @override
+  String get priorityListingInSearches =>
+      'Affichage prioritaire dans les recherches';
+
+  @override
+  String get analyticsDashboard => 'Tableau de bord analytique';
+
+  @override
+  String get validForEntireTournament =>
+      'Valable pour tout le tournoi (11 juin - 19 juillet 2026)';
+
+  @override
+  String get waitingForActivation => 'En attente d\'activation...';
+
+  @override
+  String get notNow => 'Pas Maintenant';
+
+  @override
+  String get processing => 'Traitement...';
+
+  @override
+  String get upgradeNow => 'Mettre à Niveau';
+
+  @override
+  String get errorLoadingTransactions =>
+      'Erreur lors du chargement des transactions';
+
+  @override
+  String get noTransactionsYet => 'Aucune Transaction';
+
+  @override
+  String get purchaseHistoryWillAppearHere =>
+      'Votre historique d\'achats apparaîtra ici\nune fois votre première transaction effectuée.';
+
+  @override
+  String get exploreFanPass => 'Découvrir le Fan Pass';
+
+  @override
+  String get transactionId => 'ID de Transaction';
+
+  @override
+  String get type => 'Type';
+
+  @override
+  String get currency => 'Devise';
 }

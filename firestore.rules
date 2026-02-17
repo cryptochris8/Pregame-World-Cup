@@ -459,6 +459,17 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Server-only payment infrastructure collections
+    // These are written/read exclusively by Cloud Functions (Admin SDK bypasses rules).
+    // Explicit deny prevents accidental client-side exposure.
+    match /processed_webhook_events/{docId} {
+      allow read, write: if false;
+    }
+
+    match /processed_checkout_sessions/{docId} {
+      allow read, write: if false;
+    }
+
     // ==================== MODERATION ====================
 
     // Reports - users can create and read own, admins can read/update all

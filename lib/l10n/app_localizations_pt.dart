@@ -2390,4 +2390,79 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get markedAsRead => 'Marcado como lido';
+
+  @override
+  String get completePremiumPurchaseInBrowser =>
+      'Complete sua compra no navegador. Seu Premium será ativado automaticamente.';
+
+  @override
+  String get venuePremiumActivatedSuccessfully =>
+      'Venue Premium ativado com sucesso!';
+
+  @override
+  String get oneTimePaymentForWorldCup =>
+      'Pagamento único para a Copa do Mundo 2026';
+
+  @override
+  String get premiumFeaturesInclude => 'Os recursos Premium incluem:';
+
+  @override
+  String get specificMatchScheduling => 'Programação específica de jogos';
+
+  @override
+  String get tvScreenConfiguration => 'Configuração de TV e telas';
+
+  @override
+  String get gameDaySpecialsDeals => 'Ofertas e promoções do dia de jogo';
+
+  @override
+  String get atmosphereVibeSettings => 'Configurações de ambiente e atmosfera';
+
+  @override
+  String get realTimeCapacityUpdates =>
+      'Atualizações de capacidade em tempo real';
+
+  @override
+  String get priorityListingInSearches => 'Listagem prioritária nas buscas';
+
+  @override
+  String get analyticsDashboard => 'Painel de análises';
+
+  @override
+  String get validForEntireTournament =>
+      'Válido para todo o torneio (11 de junho - 19 de julho de 2026)';
+
+  @override
+  String get waitingForActivation => 'Aguardando ativação...';
+
+  @override
+  String get notNow => 'Agora Não';
+
+  @override
+  String get processing => 'Processando...';
+
+  @override
+  String get upgradeNow => 'Assinar Agora';
+
+  @override
+  String get errorLoadingTransactions => 'Erro ao carregar transações';
+
+  @override
+  String get noTransactionsYet => 'Sem Transações Ainda';
+
+  @override
+  String get purchaseHistoryWillAppearHere =>
+      'Seu histórico de compras aparecerá aqui\nassim que você realizar sua primeira transação.';
+
+  @override
+  String get exploreFanPass => 'Explorar Fan Pass';
+
+  @override
+  String get transactionId => 'ID da Transação';
+
+  @override
+  String get type => 'Tipo';
+
+  @override
+  String get currency => 'Moeda';
 }

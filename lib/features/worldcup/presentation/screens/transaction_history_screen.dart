@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../config/app_theme.dart';
@@ -78,10 +79,10 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
           const SizedBox(width: 8),
           const Icon(Icons.receipt_long, color: AppTheme.accentGold, size: 28),
           const SizedBox(width: 12),
-          const Expanded(
+          Expanded(
             child: Text(
-              'Transaction History',
-              style: TextStyle(
+              AppLocalizations.of(context).transactionHistory,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
@@ -128,9 +129,9 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
               color: Colors.red.shade300,
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Error loading transactions',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context).errorLoadingTransactions,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -146,7 +147,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
             ElevatedButton.icon(
               onPressed: _loadTransactions,
               icon: const Icon(Icons.refresh),
-              label: const Text('Retry'),
+              label: Text(AppLocalizations.of(context).retry),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppTheme.primaryOrange,
                 foregroundColor: Colors.white,
@@ -178,9 +179,9 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'No Transactions Yet',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context).noTransactionsYet,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
@@ -188,7 +189,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
             ),
             const SizedBox(height: 12),
             Text(
-              'Your purchase history will appear here\nonce you make your first transaction.',
+              AppLocalizations.of(context).purchaseHistoryWillAppearHere,
               style: TextStyle(
                 color: Colors.white.withValues(alpha: 0.7),
                 fontSize: 16,
@@ -199,7 +200,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
             OutlinedButton.icon(
               onPressed: () => Navigator.of(context).pop(),
               icon: const Icon(Icons.star),
-              label: const Text('Explore Fan Pass'),
+              label: Text(AppLocalizations.of(context).exploreFanPass),
               style: OutlinedButton.styleFrom(
                 foregroundColor: AppTheme.accentGold,
                 side: const BorderSide(color: AppTheme.accentGold),
@@ -502,13 +503,18 @@ class _TransactionDetailsSheet extends StatelessWidget {
                 const SizedBox(height: 32),
 
                 // Details rows
-                _buildDetailRow('Transaction ID', transaction.id.substring(0, 20)),
-                _buildDetailRow('Type', transaction.type.displayName),
                 _buildDetailRow(
-                  'Date',
+                  AppLocalizations.of(context).transactionId,
+                  transaction.id.length <= 20
+                      ? transaction.id
+                      : '${transaction.id.substring(0, 20)}...',
+                ),
+                _buildDetailRow(AppLocalizations.of(context).type, transaction.type.displayName),
+                _buildDetailRow(
+                  AppLocalizations.of(context).date,
                   DateFormat('MMMM d, yyyy • h:mm a').format(transaction.createdAt),
                 ),
-                _buildDetailRow('Currency', transaction.currency.toUpperCase()),
+                _buildDetailRow(AppLocalizations.of(context).currency, transaction.currency.toUpperCase()),
 
                 const SizedBox(height: 24),
 
@@ -517,9 +523,9 @@ class _TransactionDetailsSheet extends StatelessWidget {
                   width: double.infinity,
                   child: TextButton(
                     onPressed: () => Navigator.of(context).pop(),
-                    child: const Text(
-                      'Close',
-                      style: TextStyle(
+                    child: Text(
+                      AppLocalizations.of(context).close,
+                      style: const TextStyle(
                         color: Colors.white70,
                         fontSize: 16,
                       ),

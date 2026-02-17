@@ -3177,5 +3177,99 @@
   "markedAsRead": "Marked as read",
   "@markedAsRead": {
     "description": "Marked as read confirmation"
+  },
+
+  "completePremiumPurchaseInBrowser": "Complete your purchase in the browser. Your premium will activate automatically.",
+  "@completePremiumPurchaseInBrowser": {
+    "description": "Snackbar message when venue premium checkout opens in browser"
+  },
+  "venuePremiumActivatedSuccessfully": "Venue Premium activated successfully!",
+  "@venuePremiumActivatedSuccessfully": {
+    "description": "Snackbar message when venue premium is activated"
+  },
+  "oneTimePaymentForWorldCup": "One-time payment for World Cup 2026",
+  "@oneTimePaymentForWorldCup": {
+    "description": "Subtitle for venue premium price"
+  },
+  "premiumFeaturesInclude": "Premium features include:",
+  "@premiumFeaturesInclude": {
+    "description": "Header for venue premium features list"
+  },
+  "specificMatchScheduling": "Specific match scheduling",
+  "@specificMatchScheduling": {
+    "description": "Venue premium feature"
+  },
+  "tvScreenConfiguration": "TV & screen configuration",
+  "@tvScreenConfiguration": {
+    "description": "Venue premium feature"
+  },
+  "gameDaySpecialsDeals": "Game day specials & deals",
+  "@gameDaySpecialsDeals": {
+    "description": "Venue premium feature"
+  },
+  "atmosphereVibeSettings": "Atmosphere & vibe settings",
+  "@atmosphereVibeSettings": {
+    "description": "Venue premium feature"
+  },
+  "realTimeCapacityUpdates": "Real-time capacity updates",
+  "@realTimeCapacityUpdates": {
+    "description": "Venue premium feature"
+  },
+  "priorityListingInSearches": "Priority listing in searches",
+  "@priorityListingInSearches": {
+    "description": "Venue premium feature"
+  },
+  "analyticsDashboard": "Analytics dashboard",
+  "@analyticsDashboard": {
+    "description": "Venue premium feature"
+  },
+  "validForEntireTournament": "Valid for the entire tournament (June 11 - July 19, 2026)",
+  "@validForEntireTournament": {
+    "description": "Info text about venue premium validity period"
+  },
+  "waitingForActivation": "Waiting for activation...",
+  "@waitingForActivation": {
+    "description": "Button label while waiting for premium activation"
+  },
+  "notNow": "Not Now",
+  "@notNow": {
+    "description": "Dismiss button for upgrade dialog"
+  },
+  "processing": "Processing...",
+  "@processing": {
+    "description": "Button label while processing purchase"
+  },
+  "upgradeNow": "Upgrade Now",
+  "@upgradeNow": {
+    "description": "Button label to start upgrade purchase"
+  },
+
+  "errorLoadingTransactions": "Error loading transactions",
+  "@errorLoadingTransactions": {
+    "description": "Error message when transactions fail to load"
+  },
+  "noTransactionsYet": "No Transactions Yet",
+  "@noTransactionsYet": {
+    "description": "Empty state title for transaction history"
+  },
+  "purchaseHistoryWillAppearHere": "Your purchase history will appear here\nonce you make your first transaction.",
+  "@purchaseHistoryWillAppearHere": {
+    "description": "Empty state description for transaction history"
+  },
+  "exploreFanPass": "Explore Fan Pass",
+  "@exploreFanPass": {
+    "description": "Button to explore Fan Pass from empty transaction history"
+  },
+  "transactionId": "Transaction ID",
+  "@transactionId": {
+    "description": "Label for transaction ID in details"
+  },
+  "type": "Type",
+  "@type": {
+    "description": "Label for transaction type in details"
+  },
+  "currency": "Currency",
+  "@currency": {
+    "description": "Label for currency in transaction details"
   }
 }

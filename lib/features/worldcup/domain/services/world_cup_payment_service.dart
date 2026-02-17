@@ -35,16 +35,19 @@ class WorldCupPaymentService {
       revenueCatService: revenueCatService,
     );
 
-    _checkoutService = PaymentCheckoutService(
-      functions: functions,
-      revenueCatService: revenueCatService,
-      onCacheClear: clearCache,
-    );
-
     _historyService = PaymentHistoryService(
       functions: functions,
       firestore: firestore,
       accessService: _accessService,
+      onCacheClear: clearCache,
+    );
+
+    _checkoutService = PaymentCheckoutService(
+      functions: functions,
+      revenueCatService: revenueCatService,
+      accessService: _accessService,
+      getVenuePremiumStatus: (venueId) =>
+          _historyService.getVenuePremiumStatus(venueId),
       onCacheClear: clearCache,
     );
   }

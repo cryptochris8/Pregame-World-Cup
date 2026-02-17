@@ -2376,4 +2376,77 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get markedAsRead => 'Marked as read';
+
+  @override
+  String get completePremiumPurchaseInBrowser =>
+      'Complete your purchase in the browser. Your premium will activate automatically.';
+
+  @override
+  String get venuePremiumActivatedSuccessfully =>
+      'Venue Premium activated successfully!';
+
+  @override
+  String get oneTimePaymentForWorldCup => 'One-time payment for World Cup 2026';
+
+  @override
+  String get premiumFeaturesInclude => 'Premium features include:';
+
+  @override
+  String get specificMatchScheduling => 'Specific match scheduling';
+
+  @override
+  String get tvScreenConfiguration => 'TV & screen configuration';
+
+  @override
+  String get gameDaySpecialsDeals => 'Game day specials & deals';
+
+  @override
+  String get atmosphereVibeSettings => 'Atmosphere & vibe settings';
+
+  @override
+  String get realTimeCapacityUpdates => 'Real-time capacity updates';
+
+  @override
+  String get priorityListingInSearches => 'Priority listing in searches';
+
+  @override
+  String get analyticsDashboard => 'Analytics dashboard';
+
+  @override
+  String get validForEntireTournament =>
+      'Valid for the entire tournament (June 11 - July 19, 2026)';
+
+  @override
+  String get waitingForActivation => 'Waiting for activation...';
+
+  @override
+  String get notNow => 'Not Now';
+
+  @override
+  String get processing => 'Processing...';
+
+  @override
+  String get upgradeNow => 'Upgrade Now';
+
+  @override
+  String get errorLoadingTransactions => 'Error loading transactions';
+
+  @override
+  String get noTransactionsYet => 'No Transactions Yet';
+
+  @override
+  String get purchaseHistoryWillAppearHere =>
+      'Your purchase history will appear here\nonce you make your first transaction.';
+
+  @override
+  String get exploreFanPass => 'Explore Fan Pass';
+
+  @override
+  String get transactionId => 'Transaction ID';
+
+  @override
+  String get type => 'Type';
+
+  @override
+  String get currency => 'Currency';
 }

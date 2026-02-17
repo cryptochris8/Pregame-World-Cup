@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../../../worldcup/domain/services/world_cup_payment_service.dart';
 import '../../../../core/services/logging_service.dart';
@@ -76,11 +77,11 @@ class _VenuePremiumUpgradeDialogState
         });
 
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
+          SnackBar(
             content: Text(
-              'Complete your purchase in the browser. Your premium will activate automatically.',
+              AppLocalizations.of(context).completePremiumPurchaseInBrowser,
             ),
-            duration: Duration(seconds: 5),
+            duration: const Duration(seconds: 5),
           ),
         );
       }
@@ -116,10 +117,10 @@ class _VenuePremiumUpgradeDialogState
         Navigator.pop(context);
 
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Venue Premium activated successfully!'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).venuePremiumActivatedSuccessfully),
             backgroundColor: Colors.green,
-            duration: Duration(seconds: 4),
+            duration: const Duration(seconds: 4),
           ),
         );
 
@@ -156,6 +157,7 @@ class _VenuePremiumUpgradeDialogState
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     final price = _pricing?.venuePremium.displayPrice ?? '\$99.00';
 
     return AlertDialog(
@@ -170,8 +172,8 @@ class _VenuePremiumUpgradeDialogState
             child: const Icon(Icons.star, color: Colors.amber),
           ),
           const SizedBox(width: 12),
-          const Expanded(
-            child: Text('Upgrade to Premium'),
+          Expanded(
+            child: Text(l10n.upgradeToPremium),
           ),
         ],
       ),
@@ -203,7 +205,7 @@ class _VenuePremiumUpgradeDialogState
                     ),
                   ),
                   Text(
-                    'One-time payment for World Cup 2026',
+                    l10n.oneTimePaymentForWorldCup,
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: Colors.white.withValues(alpha: 0.9),
                     ),
@@ -214,19 +216,19 @@ class _VenuePremiumUpgradeDialogState
             const SizedBox(height: 20),
 
             Text(
-              'Premium features include:',
+              l10n.premiumFeaturesInclude,
               style: theme.textTheme.titleSmall?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 12),
-            const _FeatureListItem(text: 'Specific match scheduling'),
-            const _FeatureListItem(text: 'TV & screen configuration'),
-            const _FeatureListItem(text: 'Game day specials & deals'),
-            const _FeatureListItem(text: 'Atmosphere & vibe settings'),
-            const _FeatureListItem(text: 'Real-time capacity updates'),
-            const _FeatureListItem(text: 'Priority listing in searches'),
-            const _FeatureListItem(text: 'Analytics dashboard'),
+            _FeatureListItem(text: l10n.specificMatchScheduling),
+            _FeatureListItem(text: l10n.tvScreenConfiguration),
+            _FeatureListItem(text: l10n.gameDaySpecialsDeals),
+            _FeatureListItem(text: l10n.atmosphereVibeSettings),
+            _FeatureListItem(text: l10n.realTimeCapacityUpdates),
+            _FeatureListItem(text: l10n.priorityListingInSearches),
+            _FeatureListItem(text: l10n.analyticsDashboard),
 
             const SizedBox(height: 16),
 
@@ -247,7 +249,7 @@ class _VenuePremiumUpgradeDialogState
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      'Valid for the entire tournament (June 11 - July 19, 2026)',
+                      l10n.validForEntireTournament,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: theme.colorScheme.onSurfaceVariant,
                       ),
@@ -267,7 +269,7 @@ class _VenuePremiumUpgradeDialogState
               Navigator.pop(context);
               widget.onPurchaseComplete?.call();
             },
-            child: const Text('Close'),
+            child: Text(l10n.close),
           ),
           FilledButton.icon(
             onPressed: null,
@@ -279,12 +281,12 @@ class _VenuePremiumUpgradeDialogState
                 color: Colors.white,
               ),
             ),
-            label: const Text('Waiting for activation...'),
+            label: Text(l10n.waitingForActivation),
           ),
         ] else ...[
           TextButton(
             onPressed: _isPurchasing ? null : () => Navigator.pop(context),
-            child: const Text('Not Now'),
+            child: Text(l10n.notNow),
           ),
           FilledButton.icon(
             onPressed: _isPurchasing ? null : _startPurchase,
@@ -298,7 +300,7 @@ class _VenuePremiumUpgradeDialogState
                     ),
                   )
                 : const Icon(Icons.shopping_cart, size: 18),
-            label: Text(_isPurchasing ? 'Processing...' : 'Upgrade Now'),
+            label: Text(_isPurchasing ? l10n.processing : l10n.upgradeNow),
           ),
         ],
       ],

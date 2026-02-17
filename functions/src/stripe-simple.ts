@@ -1,33 +1,9 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-import { stripe } from './stripe-config';
+import { stripe, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 
 const db = admin.firestore();
-// ============================================================================
-// IDEMPOTENCY HELPERS
-// ============================================================================
-
-/**
- * Check if a webhook event has already been processed.
- * Returns true if the event was already handled (should be skipped).
- */
-async function isWebhookEventAlreadyProcessed(eventId: string): Promise<boolean> {
-  const docRef = db.collection('processed_webhook_events').doc(eventId);
-  const doc = await docRef.get();
-  return doc.exists;
-}
-
-/**
- * Mark a webhook event as processed to prevent duplicate handling.
- */
-async function markWebhookEventProcessed(eventId: string, eventType: string): Promise<void> {
-  await db.collection('processed_webhook_events').doc(eventId).set({
-    eventId,
-    eventType,
-    processedAt: admin.firestore.FieldValue.serverTimestamp(),
-  });
-}
 
 // New function to set up free fan accounts (no Stripe needed)
 export const setupFreeFanAccount = functions.https.onCall(async (data: any, context: any) => {

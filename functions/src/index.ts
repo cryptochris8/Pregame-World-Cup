@@ -714,7 +714,8 @@ export {
   getVenuePremiumStatus,
   handleWorldCupPaymentWebhook,
   checkFanPassAccess,
-  getWorldCupPricing
+  getWorldCupPricing,
+  checkExpiredPasses
 } from './world-cup-payments';
 
 // Export Message Notification functions

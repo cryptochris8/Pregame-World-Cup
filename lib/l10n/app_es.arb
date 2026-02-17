@@ -764,5 +764,30 @@
   "errorLoadingConversations": "Error al cargar conversaciones",
   "pleaseTryAgainLater": "Intenta de nuevo más tarde",
   "archiveComingSoon": "¡Función de archivo próximamente!",
-  "markedAsRead": "Marcado como leído"
+  "markedAsRead": "Marcado como leído",
+
+  "completePremiumPurchaseInBrowser": "Completa tu compra en el navegador. Tu Premium se activará automáticamente.",
+  "venuePremiumActivatedSuccessfully": "¡Venue Premium activado exitosamente!",
+  "oneTimePaymentForWorldCup": "Pago único para la Copa del Mundo 2026",
+  "premiumFeaturesInclude": "Las funciones Premium incluyen:",
+  "specificMatchScheduling": "Programación específica de partidos",
+  "tvScreenConfiguration": "Configuración de TV y pantallas",
+  "gameDaySpecialsDeals": "Ofertas y promociones del día del partido",
+  "atmosphereVibeSettings": "Configuración de ambiente y atmósfera",
+  "realTimeCapacityUpdates": "Actualizaciones de capacidad en tiempo real",
+  "priorityListingInSearches": "Listado prioritario en búsquedas",
+  "analyticsDashboard": "Panel de análisis",
+  "validForEntireTournament": "Válido para todo el torneo (11 de junio - 19 de julio de 2026)",
+  "waitingForActivation": "Esperando activación...",
+  "notNow": "Ahora No",
+  "processing": "Procesando...",
+  "upgradeNow": "Actualizar Ahora",
+
+  "errorLoadingTransactions": "Error al cargar transacciones",
+  "noTransactionsYet": "Sin Transacciones Aún",
+  "purchaseHistoryWillAppearHere": "Tu historial de compras aparecerá aquí\nuna vez que realices tu primera transacción.",
+  "exploreFanPass": "Explorar Fan Pass",
+  "transactionId": "ID de Transacción",
+  "type": "Tipo",
+  "currency": "Moneda"
 }

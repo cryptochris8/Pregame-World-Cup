@@ -4445,6 +4445,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Marked as read'**
   String get markedAsRead;
+
+  /// Snackbar message when venue premium checkout opens in browser
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your purchase in the browser. Your premium will activate automatically.'**
+  String get completePremiumPurchaseInBrowser;
+
+  /// Snackbar message when venue premium is activated
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Premium activated successfully!'**
+  String get venuePremiumActivatedSuccessfully;
+
+  /// Subtitle for venue premium price
+  ///
+  /// In en, this message translates to:
+  /// **'One-time payment for World Cup 2026'**
+  String get oneTimePaymentForWorldCup;
+
+  /// Header for venue premium features list
+  ///
+  /// In en, this message translates to:
+  /// **'Premium features include:'**
+  String get premiumFeaturesInclude;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Specific match scheduling'**
+  String get specificMatchScheduling;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'TV & screen configuration'**
+  String get tvScreenConfiguration;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Game day specials & deals'**
+  String get gameDaySpecialsDeals;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Atmosphere & vibe settings'**
+  String get atmosphereVibeSettings;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Real-time capacity updates'**
+  String get realTimeCapacityUpdates;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Priority listing in searches'**
+  String get priorityListingInSearches;
+
+  /// Venue premium feature
+  ///
+  /// In en, this message translates to:
+  /// **'Analytics dashboard'**
+  String get analyticsDashboard;
+
+  /// Info text about venue premium validity period
+  ///
+  /// In en, this message translates to:
+  /// **'Valid for the entire tournament (June 11 - July 19, 2026)'**
+  String get validForEntireTournament;
+
+  /// Button label while waiting for premium activation
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for activation...'**
+  String get waitingForActivation;
+
+  /// Dismiss button for upgrade dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Not Now'**
+  String get notNow;
+
+  /// Button label while processing purchase
+  ///
+  /// In en, this message translates to:
+  /// **'Processing...'**
+  String get processing;
+
+  /// Button label to start upgrade purchase
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade Now'**
+  String get upgradeNow;
+
+  /// Error message when transactions fail to load
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading transactions'**
+  String get errorLoadingTransactions;
+
+  /// Empty state title for transaction history
+  ///
+  /// In en, this message translates to:
+  /// **'No Transactions Yet'**
+  String get noTransactionsYet;
+
+  /// Empty state description for transaction history
+  ///
+  /// In en, this message translates to:
+  /// **'Your purchase history will appear here\nonce you make your first transaction.'**
+  String get purchaseHistoryWillAppearHere;
+
+  /// Button to explore Fan Pass from empty transaction history
+  ///
+  /// In en, this message translates to:
+  /// **'Explore Fan Pass'**
+  String get exploreFanPass;
+
+  /// Label for transaction ID in details
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction ID'**
+  String get transactionId;
+
+  /// Label for transaction type in details
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get type;
+
+  /// Label for currency in transaction details
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get currency;
 }
 
 class _AppLocalizationsDelegate

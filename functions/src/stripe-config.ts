@@ -1,4 +1,5 @@
 import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 
 /**
@@ -22,3 +23,36 @@ const getStripeSecretKey = (): string => {
 export const stripe = new Stripe(getStripeSecretKey(), {
   apiVersion: '2025-05-28.basil',
 });
+
+// ============================================================================
+// IDEMPOTENCY HELPERS
+// ============================================================================
+
+// Lazy Firestore reference — avoids calling admin.firestore() at module load
+// time, which would fail in test environments where Firebase isn't initialized.
+let _db: admin.firestore.Firestore | null = null;
+function getDb(): admin.firestore.Firestore {
+  if (!_db) _db = admin.firestore();
+  return _db;
+}
+
+/**
+ * Check if a webhook event has already been processed.
+ * Returns true if the event was already handled (should be skipped).
+ */
+export async function isWebhookEventAlreadyProcessed(eventId: string): Promise<boolean> {
+  const docRef = getDb().collection('processed_webhook_events').doc(eventId);
+  const doc = await docRef.get();
+  return doc.exists;
+}
+
+/**
+ * Mark a webhook event as processed to prevent duplicate handling.
+ */
+export async function markWebhookEventProcessed(eventId: string, eventType: string): Promise<void> {
+  await getDb().collection('processed_webhook_events').doc(eventId).set({
+    eventId,
+    eventType,
+    processedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+}

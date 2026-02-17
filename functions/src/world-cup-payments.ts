@@ -14,36 +14,12 @@
  */
 
 import * as functions from 'firebase-functions';
+import * as functionsV1 from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-import { stripe } from './stripe-config';
+import { stripe, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 
 const db = admin.firestore();
-
-// ============================================================================
-// IDEMPOTENCY HELPERS
-// ============================================================================
-
-/**
- * Check if a webhook event has already been processed.
- * Returns true if the event was already handled (should be skipped).
- */
-async function isWebhookEventAlreadyProcessed(eventId: string): Promise<boolean> {
-  const docRef = db.collection('processed_webhook_events').doc(eventId);
-  const doc = await docRef.get();
-  return doc.exists;
-}
-
-/**
- * Mark a webhook event as processed to prevent duplicate handling.
- */
-async function markWebhookEventProcessed(eventId: string, eventType: string): Promise<void> {
-  await db.collection('processed_webhook_events').doc(eventId).set({
-    eventId,
-    eventType,
-    processedAt: admin.firestore.FieldValue.serverTimestamp(),
-  });
-}
 
 // ============================================================================
 // CONFIGURATION - Stripe Price IDs (set these after creating products in Stripe)
@@ -710,3 +686,141 @@ export const getWorldCupPricing = functions.https.onCall(async () => {
     },
   };
 });
+
+// ============================================================================
+// SCHEDULED CLEANUP: EXPIRED PASSES & STALE IDEMPOTENCY RECORDS
+// ============================================================================
+
+/**
+ * Daily scheduled function to:
+ * 1. Deactivate expired fan passes (validUntil < now)
+ * 2. Downgrade expired venue premium subscriptions (premiumValidUntil < now)
+ * 3. Clean up stale idempotency records older than 30 days
+ *
+ * Runs once daily at 1:00 AM EST.
+ */
+export const checkExpiredPasses = functionsV1.pubsub.schedule('0 1 * * *')
+  .timeZone('America/New_York')
+  .onRun(async () => {
+    functions.logger.info('Running scheduled expired pass check and cleanup');
+
+    const now = admin.firestore.Timestamp.now();
+    let expiredFanPasses = 0;
+    let expiredVenuePremiums = 0;
+    let deletedWebhookEvents = 0;
+    let deletedCheckoutSessions = 0;
+
+    // --- 1. Deactivate expired fan passes ---
+    try {
+      const expiredPassesSnapshot = await db
+        .collection('world_cup_fan_passes')
+        .where('status', '==', 'active')
+        .where('validUntil', '<', now.toDate())
+        .get();
+
+      if (!expiredPassesSnapshot.empty) {
+        const batch = db.batch();
+        for (const doc of expiredPassesSnapshot.docs) {
+          batch.update(doc.ref, {
+            status: 'expired',
+            expiredAt: admin.firestore.FieldValue.serverTimestamp(),
+          });
+
+          // Also clear the user profile pass if the user doc exists
+          const userId = doc.id;
+          const userRef = db.collection('users').doc(userId);
+          const userDoc = await userRef.get();
+          if (userDoc.exists) {
+            batch.update(userRef, {
+              worldCupPass: 'free',
+            });
+          }
+        }
+        await batch.commit();
+        expiredFanPasses = expiredPassesSnapshot.size;
+      }
+
+      functions.logger.info(`Expired fan passes deactivated: ${expiredFanPasses}`);
+    } catch (error: any) {
+      functions.logger.error('Error deactivating expired fan passes:', error.message);
+    }
+
+    // --- 2. Downgrade expired venue premiums ---
+    try {
+      const expiredVenuesSnapshot = await db
+        .collection('venue_enhancements')
+        .where('subscriptionTier', '==', 'premium')
+        .where('premiumValidUntil', '<', now.toDate())
+        .get();
+
+      if (!expiredVenuesSnapshot.empty) {
+        const batch = db.batch();
+        for (const doc of expiredVenuesSnapshot.docs) {
+          batch.update(doc.ref, {
+            subscriptionTier: 'free',
+            premiumExpiredAt: admin.firestore.FieldValue.serverTimestamp(),
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          });
+        }
+        await batch.commit();
+        expiredVenuePremiums = expiredVenuesSnapshot.size;
+      }
+
+      functions.logger.info(`Expired venue premiums downgraded: ${expiredVenuePremiums}`);
+    } catch (error: any) {
+      functions.logger.error('Error downgrading expired venue premiums:', error.message);
+    }
+
+    // --- 3. Clean up stale idempotency records (older than 30 days) ---
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+
+    try {
+      const staleWebhookEvents = await db
+        .collection('processed_webhook_events')
+        .where('processedAt', '<', thirtyDaysAgo)
+        .get();
+
+      if (!staleWebhookEvents.empty) {
+        const batch = db.batch();
+        for (const doc of staleWebhookEvents.docs) {
+          batch.delete(doc.ref);
+        }
+        await batch.commit();
+        deletedWebhookEvents = staleWebhookEvents.size;
+      }
+
+      functions.logger.info(`Stale webhook event records deleted: ${deletedWebhookEvents}`);
+    } catch (error: any) {
+      functions.logger.error('Error cleaning up webhook event records:', error.message);
+    }
+
+    try {
+      const staleCheckoutSessions = await db
+        .collection('processed_checkout_sessions')
+        .where('processedAt', '<', thirtyDaysAgo)
+        .get();
+
+      if (!staleCheckoutSessions.empty) {
+        const batch = db.batch();
+        for (const doc of staleCheckoutSessions.docs) {
+          batch.delete(doc.ref);
+        }
+        await batch.commit();
+        deletedCheckoutSessions = staleCheckoutSessions.size;
+      }
+
+      functions.logger.info(`Stale checkout session records deleted: ${deletedCheckoutSessions}`);
+    } catch (error: any) {
+      functions.logger.error('Error cleaning up checkout session records:', error.message);
+    }
+
+    functions.logger.info(
+      `Expired pass check complete. ` +
+      `Fan passes expired: ${expiredFanPasses}, ` +
+      `Venue premiums downgraded: ${expiredVenuePremiums}, ` +
+      `Webhook events cleaned: ${deletedWebhookEvents}, ` +
+      `Checkout sessions cleaned: ${deletedCheckoutSessions}`
+    );
+
+    return null;
+  });
