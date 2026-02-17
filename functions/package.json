@@ -24,12 +24,14 @@
     "check-photos-v2": "ts-node src/check-photos-v2.ts",
     "seed-team-players": "ts-node src/seed-team-players.ts",
     "seed-managers": "ts-node src/seed-managers.ts",
+    "seed-matches-group": "ts-node src/seed-june2026-matches.ts",
+    "seed-matches-knockout": "ts-node src/seed-knockout-matches.ts",
     "seed-head-to-head": "ts-node src/seed-head-to-head.ts",
-    "seed-head-to-head-june2026": "ts-node src/seed-head-to-head-june2026.ts",
     "seed-match-summaries": "ts-node src/seed-match-summaries.ts",
     "seed-world-cup-history": "ts-node src/seed-world-cup-history.ts",
     "seed-player-wc-stats": "ts-node src/seed-player-world-cup-stats.ts",
-    "seed-all": "npm run seed-team-players && npm run seed-managers && npm run seed-head-to-head && npm run seed-world-cup-history && npm run seed-player-wc-stats"
+    "seed-venue-enhancements": "ts-node src/seed-venue-enhancements.ts",
+    "seed-all": "npm run seed-team-players && npm run seed-managers && npm run seed-matches-group && npm run seed-matches-knockout && npm run seed-head-to-head && npm run seed-match-summaries && npm run seed-world-cup-history && npm run seed-player-wc-stats && npm run seed-venue-enhancements"
   },
   "engines": {
     "node": "22"

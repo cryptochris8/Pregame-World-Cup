@@ -113,9 +113,15 @@ flutter:
   assets:
     - assets/logos/
     - assets/images/
-    # Temporarily removed dialogflow credentials
-    # - assets/credentials/dialogflow_credentials.json
-    # - images/a_dot_ham.jpeg
+    # World Cup Data (local JSON for offline-first experience)
+    - assets/data/worldcup/teams/
+    - assets/data/worldcup/managers/
+    - assets/data/worldcup/matches/
+    - assets/data/worldcup/head_to_head/
+    - assets/data/worldcup/match_summaries/
+    - assets/data/worldcup/history/
+    - assets/data/worldcup/player_stats/
+    - assets/data/worldcup/venues/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
