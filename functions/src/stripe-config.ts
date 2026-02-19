@@ -8,21 +8,48 @@ import Stripe from 'stripe';
  * Throws immediately if no key is configured — never falls back to a test key.
  */
 const getStripeSecretKey = (): string => {
+  // Try process.env first (works in both v1 and v2 Cloud Run)
+  const envKey = process.env.STRIPE_SECRET_KEY;
+  if (envKey) return envKey;
+
+  // Try functions.config() (v1 only — may throw in v2 Cloud Run containers)
   try {
-    const key = functions.config().stripe?.secret_key || process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
-  } catch (error: any) {
-    if (error.message === 'STRIPE_SECRET_KEY not configured') throw error;
-    const key = process.env.STRIPE_SECRET_KEY;
-    if (!key) throw new Error('STRIPE_SECRET_KEY not configured');
-    return key;
+    const configKey = functions.config().stripe?.secret_key;
+    if (configKey) return configKey;
+  } catch {
+    // functions.config() not available in v2 runtime — ignore
   }
+
+  throw new Error('STRIPE_SECRET_KEY not configured');
 };
 
-export const stripe = new Stripe(getStripeSecretKey(), {
-  apiVersion: '2025-05-28.basil',
-});
+// Lazy Stripe initialization — avoids calling getStripeSecretKey() at module
+// load time, which would crash v2 Cloud Run containers at startup.
+let _stripe: Stripe | null = null;
+export function getStripe(): Stripe {
+  if (!_stripe) {
+    _stripe = new Stripe(getStripeSecretKey(), {
+      apiVersion: '2025-05-28.basil',
+    });
+  }
+  return _stripe;
+}
+
+/**
+ * Safely read a value from functions.config(), returning undefined if
+ * unavailable (e.g., in v2 Cloud Run containers).
+ */
+export function getConfigValue(...path: string[]): string | undefined {
+  try {
+    let obj: any = functions.config();
+    for (const part of path) {
+      obj = obj?.[part];
+    }
+    return obj || undefined;
+  } catch {
+    return undefined;
+  }
+}
 
 // ============================================================================
 // IDEMPOTENCY HELPERS

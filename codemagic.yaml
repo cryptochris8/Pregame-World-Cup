@@ -108,6 +108,8 @@ workflows:
           echo "OPENAI_API_KEY: ${OPENAI_API_KEY:0:15}..."
           echo "CLAUDE_API_KEY: ${CLAUDE_API_KEY:0:15}..."
           echo "STRIPE_PUBLISHABLE_KEY: ${STRIPE_PUBLISHABLE_KEY:0:15}..."
+          echo "REVENUECAT_IOS_API_KEY: ${REVENUECAT_IOS_API_KEY:0:15}..."
+          echo "REVENUECAT_ANDROID_API_KEY: ${REVENUECAT_ANDROID_API_KEY:0:15}..."
           echo "BUNDLE_ID: $BUNDLE_ID"
           echo "----------------------------------------"
           if [ -z "$GOOGLE_PLACES_API_KEY" ]; then
@@ -133,6 +135,16 @@ workflows:
               exit 1
           else
               echo "✅ STRIPE_PUBLISHABLE_KEY is loaded"
+          fi
+          if [ -z "$REVENUECAT_IOS_API_KEY" ]; then
+              echo "⚠️ REVENUECAT_IOS_API_KEY is missing (native IAP will use fallback)"
+          else
+              echo "✅ REVENUECAT_IOS_API_KEY is loaded"
+          fi
+          if [ -z "$REVENUECAT_ANDROID_API_KEY" ]; then
+              echo "⚠️ REVENUECAT_ANDROID_API_KEY is missing (native IAP will use fallback)"
+          else
+              echo "✅ REVENUECAT_ANDROID_API_KEY is loaded"
           fi
           echo "🎉 All environment variables are loaded correctly!"
           
@@ -174,6 +186,8 @@ workflows:
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
             --dart-define=CLAUDE_API_KEY=$CLAUDE_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
+            --dart-define=REVENUECAT_IOS_API_KEY=$REVENUECAT_IOS_API_KEY \
+            --dart-define=REVENUECAT_ANDROID_API_KEY=$REVENUECAT_ANDROID_API_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net \
             --export-options-plist=$HOME/export_options.plist
             
@@ -255,6 +269,8 @@ workflows:
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
             --dart-define=CLAUDE_API_KEY=$CLAUDE_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
+            --dart-define=REVENUECAT_IOS_API_KEY=$REVENUECAT_IOS_API_KEY \
+            --dart-define=REVENUECAT_ANDROID_API_KEY=$REVENUECAT_ANDROID_API_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
 
       - name: Build App Bundle for Google Play
@@ -268,6 +284,8 @@ workflows:
             --dart-define=OPENAI_API_KEY=$OPENAI_API_KEY \
             --dart-define=CLAUDE_API_KEY=$CLAUDE_API_KEY \
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
+            --dart-define=REVENUECAT_IOS_API_KEY=$REVENUECAT_IOS_API_KEY \
+            --dart-define=REVENUECAT_ANDROID_API_KEY=$REVENUECAT_ANDROID_API_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
             
     artifacts:

@@ -17,7 +17,7 @@ import * as functions from 'firebase-functions';
 import * as functionsV1 from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-import { stripe, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
+import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 
 const db = admin.firestore();
 
@@ -171,7 +171,7 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
       .get();
 
     if (customerQuery.empty) {
-      const customer = await stripe.customers.create({
+      const customer = await getStripe().customers.create({
         email: userEmail,
         metadata: {
           userId,
@@ -206,7 +206,7 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
       ? `https://pregameworldcup.com/purchase/cancel?source=stripe_checkout&status=cancelled`
       : 'https://pregame-b089e.web.app/purchase/cancel';
 
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: 'payment', // One-time payment
@@ -319,7 +319,7 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
       .get();
 
     if (customerQuery.empty) {
-      const customer = await stripe.customers.create({
+      const customer = await getStripe().customers.create({
         email: userEmail,
         metadata: {
           userId,
@@ -339,7 +339,7 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
     }
 
     // Create checkout session
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: 'payment', // One-time payment
@@ -423,8 +423,8 @@ export const getVenuePremiumStatus = functions.https.onCall(async (data: any, co
 export const handleWorldCupPaymentWebhook = functions.https.onRequest(async (req, res) => {
   const sig = req.headers['stripe-signature'] as string;
   // SECURITY: Require a properly configured webhook secret - never fall back to insecure defaults
-  const webhookSecret = functions.config().stripe?.wc_webhook_secret ||
-                        process.env.STRIPE_WC_WEBHOOK_SECRET;
+  const webhookSecret = process.env.STRIPE_WC_WEBHOOK_SECRET ||
+                        getConfigValue('stripe', 'wc_webhook_secret');
 
   if (!webhookSecret) {
     functions.logger.error('World Cup webhook secret is not configured. Set stripe.wc_webhook_secret in Firebase config or STRIPE_WC_WEBHOOK_SECRET env var.');
@@ -435,7 +435,7 @@ export const handleWorldCupPaymentWebhook = functions.https.onRequest(async (req
   let event: Stripe.Event;
 
   try {
-    event = stripe.webhooks.constructEvent(req.rawBody, sig, webhookSecret);
+    event = getStripe().webhooks.constructEvent(req.rawBody, sig, webhookSecret);
   } catch (err: any) {
     functions.logger.error('Webhook signature verification failed:', err.message);
     res.status(400).send(`Webhook Error: ${err.message}`);

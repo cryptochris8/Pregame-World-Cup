@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-import { stripe } from './stripe-config';
+import { getStripe, getConfigValue } from './stripe-config';
 
 const db = admin.firestore();
 
@@ -65,7 +65,7 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
       }
 
       // Create payment intent with Stripe (outside transaction scope, but before Firestore write)
-      const paymentIntent = await stripe.paymentIntents.create({
+      const paymentIntent = await getStripe().paymentIntents.create({
         amount,
         currency,
         description: `Virtual attendance for ${watchPartyName || 'Watch Party'}`,
@@ -128,7 +128,7 @@ export const handleVirtualAttendancePayment = functions.https.onCall(async (data
     const userId = context.auth.uid;
 
     // Verify payment intent with Stripe
-    const paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentId);
+    const paymentIntent = await getStripe().paymentIntents.retrieve(paymentIntentId);
 
     if (paymentIntent.status !== 'succeeded') {
       throw new functions.https.HttpsError('failed-precondition', 'Payment has not been completed');
@@ -260,7 +260,7 @@ export const requestVirtualAttendanceRefund = functions.https.onCall(async (data
     }
 
     // Create refund with Stripe
-    const refund = await stripe.refunds.create({
+    const refund = await getStripe().refunds.create({
       payment_intent: paymentIntentId,
       reason: 'requested_by_customer',
       metadata: {
@@ -362,7 +362,7 @@ export const refundAllVirtualAttendees = functions.https.onCall(async (data: any
       const paymentData = paymentDoc.data();
 
       try {
-        const refund = await stripe.refunds.create({
+        const refund = await getStripe().refunds.create({
           payment_intent: paymentData.paymentIntentId,
           reason: 'requested_by_customer',
           metadata: {
@@ -416,8 +416,8 @@ export const refundAllVirtualAttendees = functions.https.onCall(async (data: any
 export const handleWatchPartyWebhook = functions.https.onRequest(async (req, res) => {
   const sig = req.headers['stripe-signature'] as string;
   // SECURITY: Require a properly configured webhook secret - never fall back to insecure defaults
-  const webhookSecret = functions.config().stripe?.wp_webhook_secret ||
-                        process.env.STRIPE_WP_WEBHOOK_SECRET;
+  const webhookSecret = process.env.STRIPE_WP_WEBHOOK_SECRET ||
+                        getConfigValue('stripe', 'wp_webhook_secret');
 
   if (!webhookSecret) {
     functions.logger.error('Watch party webhook secret is not configured. Set stripe.wp_webhook_secret in Firebase config or STRIPE_WP_WEBHOOK_SECRET env var.');
@@ -431,7 +431,7 @@ export const handleWatchPartyWebhook = functions.https.onRequest(async (req, res
     // SECURITY: Use req.rawBody for signature verification (not req.body)
     // Firebase Cloud Functions provides rawBody as the unparsed request body,
     // which is required for correct Stripe signature verification.
-    event = stripe.webhooks.constructEvent(req.rawBody, sig, webhookSecret);
+    event = getStripe().webhooks.constructEvent(req.rawBody, sig, webhookSecret);
   } catch (err) {
     functions.logger.error('Watch party webhook signature verification failed:', err);
     res.status(400).send('Webhook signature verification failed');

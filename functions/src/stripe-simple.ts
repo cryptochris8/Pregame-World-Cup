@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-import { stripe, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
+import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 
 const db = admin.firestore();
 
@@ -115,7 +115,7 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
     let customerId = fanData?.stripeCustomerId;
     
     if (!customerId) {
-      const customer = await stripe.customers.create({
+      const customer = await getStripe().customers.create({
         email: userEmail,
         metadata: {
           fanId: fanId,
@@ -132,7 +132,7 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
     }
 
     // Create checkout session
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: mode as 'subscription' | 'payment',
@@ -267,7 +267,7 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
     let customerId = venueData?.stripeCustomerId;
     
     if (!customerId) {
-      const customer = await stripe.customers.create({
+      const customer = await getStripe().customers.create({
         email: userEmail,
         metadata: {
           venueId: venueId,
@@ -283,7 +283,7 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
     }
 
     // Create checkout session
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: mode as 'subscription' | 'payment',
@@ -331,7 +331,7 @@ export const createPortalSession = functions.https.onCall(async (data: any, cont
 
     const customerId = customerQuery.docs[0].data().customerId;
 
-    const portalSession = await stripe.billingPortal.sessions.create({
+    const portalSession = await getStripe().billingPortal.sessions.create({
       customer: customerId,
       return_url: returnUrl || `https://pregame-b089e.web.app/venue/billing`,
     });
@@ -375,7 +375,7 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
 
     const amount = ALLOWED_PAYMENT_AMOUNTS[productType];
 
-    const paymentIntent = await stripe.paymentIntents.create({
+    const paymentIntent = await getStripe().paymentIntents.create({
       amount,
       currency,
       description: description || `World Cup 2026 - ${productType}`,
@@ -399,8 +399,8 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
 export const handleStripeWebhook = functions.https.onRequest(async (req, res) => {
   const sig = req.headers['stripe-signature'] as string;
   // SECURITY: Require a properly configured webhook secret - never fall back to insecure defaults
-  const webhookSecret = functions.config().stripe?.webhook_secret ||
-                        process.env.STRIPE_WEBHOOK_SECRET;
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET ||
+                        getConfigValue('stripe', 'webhook_secret');
 
   if (!webhookSecret) {
     functions.logger.error('Stripe webhook secret is not configured. Set stripe.webhook_secret in Firebase config or STRIPE_WEBHOOK_SECRET env var.');
@@ -411,7 +411,7 @@ export const handleStripeWebhook = functions.https.onRequest(async (req, res) =>
   let event: Stripe.Event;
 
   try {
-    event = stripe.webhooks.constructEvent(req.rawBody, sig, webhookSecret);
+    event = getStripe().webhooks.constructEvent(req.rawBody, sig, webhookSecret);
   } catch (err) {
     console.error('Webhook signature verification failed:', err);
     res.status(400).send('Webhook signature verification failed');
