@@ -38,7 +38,7 @@ const WORLD_CUP_PRICES = {
 const PRICE_AMOUNTS = {
   FAN_PASS: 1499,        // $14.99
   SUPERFAN_PASS: 2999,   // $29.99
-  VENUE_PREMIUM: 9900,   // $99.00
+  VENUE_PREMIUM: 49900,   // $499.00
 };
 
 // Tournament dates
@@ -676,7 +676,7 @@ export const getWorldCupPricing = functions.https.onCall(async () => {
     venuePremium: {
       priceId: WORLD_CUP_PRICES.VENUE_PREMIUM,
       amount: PRICE_AMOUNTS.VENUE_PREMIUM,
-      displayPrice: '$99.00',
+      displayPrice: '$499.00',
       name: 'Venue Premium',
       description: 'Full portal access: TV setup, specials, atmosphere, featured listing',
     },

@@ -176,8 +176,8 @@ class WorldCupPricing {
       description: 'Everything in Fan Pass + exclusive content, AI insights, priority features',
     ),
     venuePremium: PriceInfo(
-      amount: 9900,
-      displayPrice: '\$99.00',
+      amount: 49900,
+      displayPrice: '\$499.00',
       name: 'Venue Premium',
       description: 'Full portal access: TV setup, specials, atmosphere, featured listing',
     ),

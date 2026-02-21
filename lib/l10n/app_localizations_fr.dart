@@ -2491,4 +2491,72 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get currency => 'Devise';
+
+  @override
+  String get manageThisVenue => 'Gérer Ce Lieu';
+
+  @override
+  String get openVenuePortal => 'Ouvrir le Portail du Lieu';
+
+  @override
+  String get venueAlreadyManaged => 'Lieu Déjà Géré';
+
+  @override
+  String get venueAlreadyManagedDesc =>
+      'Ce lieu est déjà géré par un autre propriétaire. Si vous pensez qu\'il s\'agit d\'une erreur, contactez le support.';
+
+  @override
+  String get goBack => 'Retour';
+
+  @override
+  String get venueOnboardingTitle => 'Revendiquer Votre Lieu';
+
+  @override
+  String get venueOnboardingStep1Title => 'Informations Commerciales';
+
+  @override
+  String get venueOnboardingStep1Desc =>
+      'Parlez-nous de votre entreprise pour configurer votre portail de lieu.';
+
+  @override
+  String get businessName => 'Nom de l\'Entreprise';
+
+  @override
+  String get yourRole => 'Votre Rôle';
+
+  @override
+  String get contactEmail => 'Email de Contact';
+
+  @override
+  String get contactPhone => 'Téléphone de Contact';
+
+  @override
+  String get fieldRequired => 'Ce champ est obligatoire';
+
+  @override
+  String get invalidEmail => 'Veuillez entrer une adresse email valide';
+
+  @override
+  String get venueOnboardingStep2Title => 'Confirmer Votre Lieu';
+
+  @override
+  String get venueOnboardingStep2Desc =>
+      'Vérifiez les détails du lieu et confirmez que vous êtes autorisé à le gérer.';
+
+  @override
+  String get venueTypeLabel => 'Type de Lieu';
+
+  @override
+  String get venueAuthorizationConfirm =>
+      'Je confirme que je suis autorisé à gérer ce lieu et à représenter l\'entreprise dans cette application.';
+
+  @override
+  String get venueOnboardingStep3Title => 'Vérifier et Revendiquer';
+
+  @override
+  String get venueOnboardingStep3Desc =>
+      'Vérifiez vos informations et revendiquez le lieu pour commencer à le gérer.';
+
+  @override
+  String get claimThisVenue => 'Revendiquer Ce Lieu';
 }

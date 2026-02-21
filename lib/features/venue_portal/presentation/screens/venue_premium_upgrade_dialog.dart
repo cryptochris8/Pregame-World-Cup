@@ -158,7 +158,7 @@ class _VenuePremiumUpgradeDialogState
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
-    final price = _pricing?.venuePremium.displayPrice ?? '\$99.00';
+    final price = _pricing?.venuePremium.displayPrice ?? '\$499.00';
 
     return AlertDialog(
       title: Row(

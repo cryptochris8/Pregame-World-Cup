@@ -23,6 +23,13 @@ class VenueEnhancement extends Equatable {
   final AtmosphereSettings? atmosphere;
   final LiveCapacity? liveCapacity;
 
+  // Business info (from onboarding)
+  final String? businessName;
+  final String? contactEmail;
+  final String? contactPhone;
+  final String? ownerRole;
+  final String? venueType;
+
   // Metadata
   final DateTime createdAt;
   final DateTime updatedAt;
@@ -39,6 +46,11 @@ class VenueEnhancement extends Equatable {
     this.gameSpecials = const [],
     this.atmosphere,
     this.liveCapacity,
+    this.businessName,
+    this.contactEmail,
+    this.contactPhone,
+    this.ownerRole,
+    this.venueType,
     required this.createdAt,
     required this.updatedAt,
     this.isVerified = false,
@@ -68,6 +80,11 @@ class VenueEnhancement extends Equatable {
     List<GameDaySpecial>? gameSpecials,
     AtmosphereSettings? atmosphere,
     LiveCapacity? liveCapacity,
+    String? businessName,
+    String? contactEmail,
+    String? contactPhone,
+    String? ownerRole,
+    String? venueType,
     DateTime? updatedAt,
     bool? isVerified,
     DateTime? featuredUntil,
@@ -82,6 +99,11 @@ class VenueEnhancement extends Equatable {
       gameSpecials: gameSpecials ?? this.gameSpecials,
       atmosphere: atmosphere ?? this.atmosphere,
       liveCapacity: liveCapacity ?? this.liveCapacity,
+      businessName: businessName ?? this.businessName,
+      contactEmail: contactEmail ?? this.contactEmail,
+      contactPhone: contactPhone ?? this.contactPhone,
+      ownerRole: ownerRole ?? this.ownerRole,
+      venueType: venueType ?? this.venueType,
       createdAt: createdAt,
       updatedAt: updatedAt ?? DateTime.now(),
       isVerified: isVerified ?? this.isVerified,
@@ -153,6 +175,11 @@ class VenueEnhancement extends Equatable {
       liveCapacity: data['liveCapacity'] != null
           ? LiveCapacity.fromJson(data['liveCapacity'] as Map<String, dynamic>)
           : null,
+      businessName: data['businessName'] as String?,
+      contactEmail: data['contactEmail'] as String?,
+      contactPhone: data['contactPhone'] as String?,
+      ownerRole: data['ownerRole'] as String?,
+      venueType: data['venueType'] as String?,
       createdAt: data['createdAt'] != null
           ? (data['createdAt'] is Timestamp
               ? (data['createdAt'] as Timestamp).toDate()
@@ -182,6 +209,11 @@ class VenueEnhancement extends Equatable {
       'gameSpecials': gameSpecials.map((s) => s.toJson()).toList(),
       'atmosphere': atmosphere?.toJson(),
       'liveCapacity': liveCapacity?.toJson(),
+      if (businessName != null) 'businessName': businessName,
+      if (contactEmail != null) 'contactEmail': contactEmail,
+      if (contactPhone != null) 'contactPhone': contactPhone,
+      if (ownerRole != null) 'ownerRole': ownerRole,
+      if (venueType != null) 'venueType': venueType,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': Timestamp.fromDate(updatedAt),
       'isVerified': isVerified,
@@ -200,6 +232,11 @@ class VenueEnhancement extends Equatable {
         gameSpecials,
         atmosphere,
         liveCapacity,
+        businessName,
+        contactEmail,
+        contactPhone,
+        ownerRole,
+        venueType,
         createdAt,
         updatedAt,
         isVerified,

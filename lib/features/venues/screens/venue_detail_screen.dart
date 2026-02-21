@@ -11,6 +11,7 @@ import '../../../config/api_keys.dart';
 import 'venue_detail_header.dart';
 import 'venue_detail_overview_tab.dart';
 import 'venue_detail_photos_tab.dart';
+import '../../venue_portal/presentation/widgets/manage_venue_button.dart';
 
 // Re-export VenueQuickSummary so existing imports continue to work
 export 'venue_quick_summary.dart';
@@ -158,6 +159,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
                   isPopular: isPopular,
                 ),
                 VenueActionButtons(venue: widget.venue),
+                ManageVenueButton(venue: widget.venue),
                 _buildTabbedContent(),
               ],
             ),

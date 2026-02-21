@@ -789,5 +789,27 @@
   "exploreFanPass": "Explorar Fan Pass",
   "transactionId": "ID de Transacción",
   "type": "Tipo",
-  "currency": "Moneda"
+  "currency": "Moneda",
+
+  "manageThisVenue": "Gestionar Este Local",
+  "openVenuePortal": "Abrir Portal del Local",
+  "venueAlreadyManaged": "Local Ya Gestionado",
+  "venueAlreadyManagedDesc": "Este local ya está siendo gestionado por otro propietario. Si crees que es un error, contacta con soporte.",
+  "goBack": "Volver",
+  "venueOnboardingTitle": "Reclamar Tu Local",
+  "venueOnboardingStep1Title": "Información del Negocio",
+  "venueOnboardingStep1Desc": "Cuéntanos sobre tu negocio para configurar tu portal de local.",
+  "businessName": "Nombre del Negocio",
+  "yourRole": "Tu Rol",
+  "contactEmail": "Correo de Contacto",
+  "contactPhone": "Teléfono de Contacto",
+  "fieldRequired": "Este campo es obligatorio",
+  "invalidEmail": "Por favor ingresa un correo electrónico válido",
+  "venueOnboardingStep2Title": "Confirmar Tu Local",
+  "venueOnboardingStep2Desc": "Verifica los detalles del local y confirma que estás autorizado para gestionarlo.",
+  "venueTypeLabel": "Tipo de Local",
+  "venueAuthorizationConfirm": "Confirmo que estoy autorizado para gestionar este local y representar al negocio en esta aplicación.",
+  "venueOnboardingStep3Title": "Revisar y Reclamar",
+  "venueOnboardingStep3Desc": "Revisa tu información y reclama el local para comenzar a gestionarlo.",
+  "claimThisVenue": "Reclamar Este Local"
 }

@@ -82,6 +82,69 @@ class VenueEnhancementService {
     }
   }
 
+  /// Check if a venue has already been claimed by any owner
+  Future<bool> isVenueClaimed(String venueId) async {
+    try {
+      final enhancement = await getVenueEnhancement(venueId);
+      return enhancement != null && enhancement.ownerId.isNotEmpty;
+    } catch (e) {
+      LoggingService.error('Error checking venue claim: $e', tag: _logTag);
+      return false;
+    }
+  }
+
+  /// Claim a venue with business info from the onboarding flow
+  Future<VenueEnhancement?> claimVenue({
+    required String venueId,
+    required String venueName,
+    required String businessName,
+    required String contactEmail,
+    required String contactPhone,
+    required String ownerRole,
+    required String venueType,
+  }) async {
+    final user = _auth.currentUser;
+    if (user == null) return null;
+
+    try {
+      // Check if already claimed
+      final existing = await getVenueEnhancement(venueId);
+      if (existing != null && existing.ownerId.isNotEmpty) {
+        LoggingService.warning(
+          'Venue $venueId already claimed by ${existing.ownerId}',
+          tag: _logTag,
+        );
+        return null;
+      }
+
+      final now = DateTime.now();
+      final enhancement = VenueEnhancement(
+        venueId: venueId,
+        ownerId: user.uid,
+        businessName: businessName,
+        contactEmail: contactEmail,
+        contactPhone: contactPhone,
+        ownerRole: ownerRole,
+        venueType: venueType,
+        createdAt: now,
+        updatedAt: now,
+      );
+
+      final success = await saveVenueEnhancement(enhancement);
+      if (success) {
+        LoggingService.info(
+          'Venue $venueId claimed by ${user.uid}',
+          tag: _logTag,
+        );
+        return enhancement;
+      }
+      return null;
+    } catch (e) {
+      LoggingService.error('Error claiming venue: $e', tag: _logTag);
+      return null;
+    }
+  }
+
   /// Update shows matches toggle (FREE tier)
   Future<bool> updateShowsMatches(String venueId, bool showsMatches) async {
     try {

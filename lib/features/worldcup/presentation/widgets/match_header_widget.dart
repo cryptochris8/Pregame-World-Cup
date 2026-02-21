@@ -96,8 +96,18 @@ class MatchHeaderWidget extends StatelessWidget {
                       vertical: 12,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                          Colors.white.withValues(alpha: 0.25),
+                          Colors.white.withValues(alpha: 0.10),
+                        ],
+                      ),
                       borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: Colors.white.withValues(alpha: 0.3),
+                      ),
                     ),
                     child: _buildScoreDisplay(),
                   ),
@@ -137,12 +147,12 @@ class MatchHeaderWidget extends StatelessWidget {
     if (match.status == MatchStatus.scheduled) {
       return Column(
         children: [
-          Text(
-            'vs',
+          const Text(
+            'VS',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.grey.shade600,
+              color: Colors.white,
             ),
           ),
           if (match.dateTime != null)
@@ -150,7 +160,7 @@ class MatchHeaderWidget extends StatelessWidget {
               DateFormat.jm().format(match.dateTime!),
               style: TextStyle(
                 fontSize: 12,
-                color: Colors.grey.shade500,
+                color: Colors.white.withValues(alpha: 0.8),
               ),
             ),
         ],
@@ -167,7 +177,7 @@ class MatchHeaderWidget extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-                color: match.isLive ? Colors.red : Colors.black,
+                color: match.isLive ? const Color(0xFFFF6B6B) : Colors.white,
               ),
             ),
             Text(
@@ -175,7 +185,7 @@ class MatchHeaderWidget extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-                color: Colors.grey.shade400,
+                color: Colors.white.withValues(alpha: 0.5),
               ),
             ),
             Text(
@@ -183,7 +193,7 @@ class MatchHeaderWidget extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-                color: match.isLive ? Colors.red : Colors.black,
+                color: match.isLive ? const Color(0xFFFF6B6B) : Colors.white,
               ),
             ),
           ],
@@ -193,7 +203,7 @@ class MatchHeaderWidget extends StatelessWidget {
             'Full Time',
             style: TextStyle(
               fontSize: 11,
-              color: Colors.grey.shade600,
+              color: Colors.white.withValues(alpha: 0.7),
             ),
           ),
         if (match.status == MatchStatus.halfTime)
@@ -201,7 +211,7 @@ class MatchHeaderWidget extends StatelessWidget {
             'Half Time',
             style: TextStyle(
               fontSize: 11,
-              color: Colors.orange.shade700,
+              color: Colors.orange.shade300,
             ),
           ),
       ],

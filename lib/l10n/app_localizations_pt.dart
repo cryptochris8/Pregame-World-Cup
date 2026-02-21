@@ -2465,4 +2465,72 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get currency => 'Moeda';
+
+  @override
+  String get manageThisVenue => 'Gerenciar Este Local';
+
+  @override
+  String get openVenuePortal => 'Abrir Portal do Local';
+
+  @override
+  String get venueAlreadyManaged => 'Local Já Gerenciado';
+
+  @override
+  String get venueAlreadyManagedDesc =>
+      'Este local já está sendo gerenciado por outro proprietário. Se você acredita que isso é um erro, entre em contato com o suporte.';
+
+  @override
+  String get goBack => 'Voltar';
+
+  @override
+  String get venueOnboardingTitle => 'Reivindicar Seu Local';
+
+  @override
+  String get venueOnboardingStep1Title => 'Informações do Negócio';
+
+  @override
+  String get venueOnboardingStep1Desc =>
+      'Conte-nos sobre seu negócio para configurar seu portal de local.';
+
+  @override
+  String get businessName => 'Nome do Negócio';
+
+  @override
+  String get yourRole => 'Seu Cargo';
+
+  @override
+  String get contactEmail => 'Email de Contato';
+
+  @override
+  String get contactPhone => 'Telefone de Contato';
+
+  @override
+  String get fieldRequired => 'Este campo é obrigatório';
+
+  @override
+  String get invalidEmail => 'Por favor insira um endereço de email válido';
+
+  @override
+  String get venueOnboardingStep2Title => 'Confirmar Seu Local';
+
+  @override
+  String get venueOnboardingStep2Desc =>
+      'Verifique os detalhes do local e confirme que você está autorizado a gerenciá-lo.';
+
+  @override
+  String get venueTypeLabel => 'Tipo de Local';
+
+  @override
+  String get venueAuthorizationConfirm =>
+      'Confirmo que estou autorizado a gerenciar este local e representar o negócio neste aplicativo.';
+
+  @override
+  String get venueOnboardingStep3Title => 'Revisar e Reivindicar';
+
+  @override
+  String get venueOnboardingStep3Desc =>
+      'Revise suas informações e reivindique o local para começar a gerenciá-lo.';
+
+  @override
+  String get claimThisVenue => 'Reivindicar Este Local';
 }

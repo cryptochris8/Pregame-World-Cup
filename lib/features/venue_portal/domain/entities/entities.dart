@@ -6,3 +6,4 @@ export 'atmosphere_settings.dart';
 export 'live_capacity.dart';
 export 'venue_filter_criteria.dart';
 export 'venue_enhancement.dart';
+export 'venue_claim_info.dart';

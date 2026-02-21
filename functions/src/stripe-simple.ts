@@ -350,7 +350,7 @@ export const createPortalSession = functions.https.onCall(async (data: any, cont
 const ALLOWED_PAYMENT_AMOUNTS: Record<string, number> = {
   fan_pass: 1499,        // $14.99
   superfan_pass: 2999,   // $29.99
-  venue_premium: 9900,   // $99.00
+  venue_premium: 49900,   // $499.00
 };
 
 // Create payment intent for one-time payments

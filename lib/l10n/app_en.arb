@@ -3271,5 +3271,90 @@
   "currency": "Currency",
   "@currency": {
     "description": "Label for currency in transaction details"
+  },
+
+  "manageThisVenue": "Manage This Venue",
+  "@manageThisVenue": {
+    "description": "Button to start venue owner onboarding"
+  },
+  "openVenuePortal": "Open Venue Portal",
+  "@openVenuePortal": {
+    "description": "Button to open venue management portal for claimed venue"
+  },
+  "venueAlreadyManaged": "Venue Already Managed",
+  "@venueAlreadyManaged": {
+    "description": "Label when venue is claimed by another owner"
+  },
+  "venueAlreadyManagedDesc": "This venue is already being managed by another owner. If you believe this is an error, please contact support.",
+  "@venueAlreadyManagedDesc": {
+    "description": "Description when venue is claimed by another owner"
+  },
+  "goBack": "Go Back",
+  "@goBack": {
+    "description": "Button to go back"
+  },
+  "venueOnboardingTitle": "Claim Your Venue",
+  "@venueOnboardingTitle": {
+    "description": "Title for venue onboarding screen"
+  },
+  "venueOnboardingStep1Title": "Business Information",
+  "@venueOnboardingStep1Title": {
+    "description": "Title for step 1 of venue onboarding"
+  },
+  "venueOnboardingStep1Desc": "Tell us about your business so we can set up your venue portal.",
+  "@venueOnboardingStep1Desc": {
+    "description": "Description for step 1 of venue onboarding"
+  },
+  "businessName": "Business Name",
+  "@businessName": {
+    "description": "Label for business name field"
+  },
+  "yourRole": "Your Role",
+  "@yourRole": {
+    "description": "Label for role dropdown"
+  },
+  "contactEmail": "Contact Email",
+  "@contactEmail": {
+    "description": "Label for contact email field"
+  },
+  "contactPhone": "Contact Phone",
+  "@contactPhone": {
+    "description": "Label for contact phone field"
+  },
+  "fieldRequired": "This field is required",
+  "@fieldRequired": {
+    "description": "Validation message for required fields"
+  },
+  "invalidEmail": "Please enter a valid email address",
+  "@invalidEmail": {
+    "description": "Validation message for invalid email"
+  },
+  "venueOnboardingStep2Title": "Confirm Your Venue",
+  "@venueOnboardingStep2Title": {
+    "description": "Title for step 2 of venue onboarding"
+  },
+  "venueOnboardingStep2Desc": "Verify the venue details and confirm you are authorized to manage it.",
+  "@venueOnboardingStep2Desc": {
+    "description": "Description for step 2 of venue onboarding"
+  },
+  "venueTypeLabel": "Venue Type",
+  "@venueTypeLabel": {
+    "description": "Label for venue type dropdown"
+  },
+  "venueAuthorizationConfirm": "I confirm that I am authorized to manage this venue and represent the business in this app.",
+  "@venueAuthorizationConfirm": {
+    "description": "Authorization checkbox label"
+  },
+  "venueOnboardingStep3Title": "Review & Claim",
+  "@venueOnboardingStep3Title": {
+    "description": "Title for step 3 of venue onboarding"
+  },
+  "venueOnboardingStep3Desc": "Review your information and claim the venue to start managing it.",
+  "@venueOnboardingStep3Desc": {
+    "description": "Description for step 3 of venue onboarding"
+  },
+  "claimThisVenue": "Claim This Venue",
+  "@claimThisVenue": {
+    "description": "Button to finalize venue claim"
   }
 }

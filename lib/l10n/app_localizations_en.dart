@@ -2449,4 +2449,72 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get currency => 'Currency';
+
+  @override
+  String get manageThisVenue => 'Manage This Venue';
+
+  @override
+  String get openVenuePortal => 'Open Venue Portal';
+
+  @override
+  String get venueAlreadyManaged => 'Venue Already Managed';
+
+  @override
+  String get venueAlreadyManagedDesc =>
+      'This venue is already being managed by another owner. If you believe this is an error, please contact support.';
+
+  @override
+  String get goBack => 'Go Back';
+
+  @override
+  String get venueOnboardingTitle => 'Claim Your Venue';
+
+  @override
+  String get venueOnboardingStep1Title => 'Business Information';
+
+  @override
+  String get venueOnboardingStep1Desc =>
+      'Tell us about your business so we can set up your venue portal.';
+
+  @override
+  String get businessName => 'Business Name';
+
+  @override
+  String get yourRole => 'Your Role';
+
+  @override
+  String get contactEmail => 'Contact Email';
+
+  @override
+  String get contactPhone => 'Contact Phone';
+
+  @override
+  String get fieldRequired => 'This field is required';
+
+  @override
+  String get invalidEmail => 'Please enter a valid email address';
+
+  @override
+  String get venueOnboardingStep2Title => 'Confirm Your Venue';
+
+  @override
+  String get venueOnboardingStep2Desc =>
+      'Verify the venue details and confirm you are authorized to manage it.';
+
+  @override
+  String get venueTypeLabel => 'Venue Type';
+
+  @override
+  String get venueAuthorizationConfirm =>
+      'I confirm that I am authorized to manage this venue and represent the business in this app.';
+
+  @override
+  String get venueOnboardingStep3Title => 'Review & Claim';
+
+  @override
+  String get venueOnboardingStep3Desc =>
+      'Review your information and claim the venue to start managing it.';
+
+  @override
+  String get claimThisVenue => 'Claim This Venue';
 }

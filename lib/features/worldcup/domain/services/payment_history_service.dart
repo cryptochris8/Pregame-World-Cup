@@ -218,7 +218,7 @@ class PaymentHistoryService {
           id: doc.id,
           type: TransactionType.venuePremium,
           productName: 'Venue Premium',
-          amount: 9900,
+          amount: 49900,
           currency: 'usd',
           status: TransactionStatus.completed,
           createdAt: (data['purchasedAt'] as Timestamp?)?.toDate() ??

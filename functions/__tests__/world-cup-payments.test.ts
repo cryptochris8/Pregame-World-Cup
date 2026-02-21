@@ -597,8 +597,8 @@ describe('World Cup Payments', () => {
       expect(result.superfanPass.displayPrice).toBe('$29.99');
       expect(result.superfanPass.name).toBe('Superfan Pass');
 
-      expect(result.venuePremium.amount).toBe(9900);
-      expect(result.venuePremium.displayPrice).toBe('$99.00');
+      expect(result.venuePremium.amount).toBe(49900);
+      expect(result.venuePremium.displayPrice).toBe('$499.00');
       expect(result.venuePremium.name).toBe('Venue Premium');
     });
 

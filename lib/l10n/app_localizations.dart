@@ -4583,6 +4583,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Currency'**
   String get currency;
+
+  /// Button to start venue owner onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Manage This Venue'**
+  String get manageThisVenue;
+
+  /// Button to open venue management portal for claimed venue
+  ///
+  /// In en, this message translates to:
+  /// **'Open Venue Portal'**
+  String get openVenuePortal;
+
+  /// Label when venue is claimed by another owner
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Already Managed'**
+  String get venueAlreadyManaged;
+
+  /// Description when venue is claimed by another owner
+  ///
+  /// In en, this message translates to:
+  /// **'This venue is already being managed by another owner. If you believe this is an error, please contact support.'**
+  String get venueAlreadyManagedDesc;
+
+  /// Button to go back
+  ///
+  /// In en, this message translates to:
+  /// **'Go Back'**
+  String get goBack;
+
+  /// Title for venue onboarding screen
+  ///
+  /// In en, this message translates to:
+  /// **'Claim Your Venue'**
+  String get venueOnboardingTitle;
+
+  /// Title for step 1 of venue onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Business Information'**
+  String get venueOnboardingStep1Title;
+
+  /// Description for step 1 of venue onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us about your business so we can set up your venue portal.'**
+  String get venueOnboardingStep1Desc;
+
+  /// Label for business name field
+  ///
+  /// In en, this message translates to:
+  /// **'Business Name'**
+  String get businessName;
+
+  /// Label for role dropdown
+  ///
+  /// In en, this message translates to:
+  /// **'Your Role'**
+  String get yourRole;
+
+  /// Label for contact email field
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Email'**
+  String get contactEmail;
+
+  /// Label for contact phone field
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Phone'**
+  String get contactPhone;
+
+  /// Validation message for required fields
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required'**
+  String get fieldRequired;
+
+  /// Validation message for invalid email
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address'**
+  String get invalidEmail;
+
+  /// Title for step 2 of venue onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Your Venue'**
+  String get venueOnboardingStep2Title;
+
+  /// Description for step 2 of venue onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Verify the venue details and confirm you are authorized to manage it.'**
+  String get venueOnboardingStep2Desc;
+
+  /// Label for venue type dropdown
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Type'**
+  String get venueTypeLabel;
+
+  /// Authorization checkbox label
+  ///
+  /// In en, this message translates to:
+  /// **'I confirm that I am authorized to manage this venue and represent the business in this app.'**
+  String get venueAuthorizationConfirm;
+
+  /// Title for step 3 of venue onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Review & Claim'**
+  String get venueOnboardingStep3Title;
+
+  /// Description for step 3 of venue onboarding
+  ///
+  /// In en, this message translates to:
+  /// **'Review your information and claim the venue to start managing it.'**
+  String get venueOnboardingStep3Desc;
+
+  /// Button to finalize venue claim
+  ///
+  /// In en, this message translates to:
+  /// **'Claim This Venue'**
+  String get claimThisVenue;
 }
 
 class _AppLocalizationsDelegate

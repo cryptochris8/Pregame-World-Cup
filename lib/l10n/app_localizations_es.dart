@@ -2477,4 +2477,72 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get currency => 'Moneda';
+
+  @override
+  String get manageThisVenue => 'Gestionar Este Local';
+
+  @override
+  String get openVenuePortal => 'Abrir Portal del Local';
+
+  @override
+  String get venueAlreadyManaged => 'Local Ya Gestionado';
+
+  @override
+  String get venueAlreadyManagedDesc =>
+      'Este local ya está siendo gestionado por otro propietario. Si crees que es un error, contacta con soporte.';
+
+  @override
+  String get goBack => 'Volver';
+
+  @override
+  String get venueOnboardingTitle => 'Reclamar Tu Local';
+
+  @override
+  String get venueOnboardingStep1Title => 'Información del Negocio';
+
+  @override
+  String get venueOnboardingStep1Desc =>
+      'Cuéntanos sobre tu negocio para configurar tu portal de local.';
+
+  @override
+  String get businessName => 'Nombre del Negocio';
+
+  @override
+  String get yourRole => 'Tu Rol';
+
+  @override
+  String get contactEmail => 'Correo de Contacto';
+
+  @override
+  String get contactPhone => 'Teléfono de Contacto';
+
+  @override
+  String get fieldRequired => 'Este campo es obligatorio';
+
+  @override
+  String get invalidEmail => 'Por favor ingresa un correo electrónico válido';
+
+  @override
+  String get venueOnboardingStep2Title => 'Confirmar Tu Local';
+
+  @override
+  String get venueOnboardingStep2Desc =>
+      'Verifica los detalles del local y confirma que estás autorizado para gestionarlo.';
+
+  @override
+  String get venueTypeLabel => 'Tipo de Local';
+
+  @override
+  String get venueAuthorizationConfirm =>
+      'Confirmo que estoy autorizado para gestionar este local y representar al negocio en esta aplicación.';
+
+  @override
+  String get venueOnboardingStep3Title => 'Revisar y Reclamar';
+
+  @override
+  String get venueOnboardingStep3Desc =>
+      'Revisa tu información y reclama el local para comenzar a gestionarlo.';
+
+  @override
+  String get claimThisVenue => 'Reclamar Este Local';
 }

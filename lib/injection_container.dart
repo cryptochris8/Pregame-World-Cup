@@ -596,6 +596,10 @@ void _registerWorldCupServices() {
     service: sl<VenueEnhancementService>(),
   ));
 
+  sl.registerFactory(() => VenueOnboardingCubit(
+    service: sl<VenueEnhancementService>(),
+  ));
+
   // World Cup Payment Service
   sl.registerLazySingleton(() => WorldCupPaymentService());
 

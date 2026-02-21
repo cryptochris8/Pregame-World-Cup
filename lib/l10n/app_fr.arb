@@ -789,5 +789,27 @@
   "exploreFanPass": "Découvrir le Fan Pass",
   "transactionId": "ID de Transaction",
   "type": "Type",
-  "currency": "Devise"
+  "currency": "Devise",
+
+  "manageThisVenue": "Gérer Ce Lieu",
+  "openVenuePortal": "Ouvrir le Portail du Lieu",
+  "venueAlreadyManaged": "Lieu Déjà Géré",
+  "venueAlreadyManagedDesc": "Ce lieu est déjà géré par un autre propriétaire. Si vous pensez qu'il s'agit d'une erreur, contactez le support.",
+  "goBack": "Retour",
+  "venueOnboardingTitle": "Revendiquer Votre Lieu",
+  "venueOnboardingStep1Title": "Informations Commerciales",
+  "venueOnboardingStep1Desc": "Parlez-nous de votre entreprise pour configurer votre portail de lieu.",
+  "businessName": "Nom de l'Entreprise",
+  "yourRole": "Votre Rôle",
+  "contactEmail": "Email de Contact",
+  "contactPhone": "Téléphone de Contact",
+  "fieldRequired": "Ce champ est obligatoire",
+  "invalidEmail": "Veuillez entrer une adresse email valide",
+  "venueOnboardingStep2Title": "Confirmer Votre Lieu",
+  "venueOnboardingStep2Desc": "Vérifiez les détails du lieu et confirmez que vous êtes autorisé à le gérer.",
+  "venueTypeLabel": "Type de Lieu",
+  "venueAuthorizationConfirm": "Je confirme que je suis autorisé à gérer ce lieu et à représenter l'entreprise dans cette application.",
+  "venueOnboardingStep3Title": "Vérifier et Revendiquer",
+  "venueOnboardingStep3Desc": "Vérifiez vos informations et revendiquez le lieu pour commencer à le gérer.",
+  "claimThisVenue": "Revendiquer Ce Lieu"
 }
