@@ -1,0 +1,21 @@
+{
+  "id": "manager_cur",
+  "firstName": "Dick",
+  "lastName": "Advocaat",
+  "commonName": "Dick Advocaat",
+  "dateOfBirth": "1947-09-27",
+  "nationality": "Netherlands",
+  "currentTeam": "Curacao",
+  "currentTeamCode": "CUR",
+  "photoUrl": "assets/managers/advocaat.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 38,
+  "previousTeams": ["DSVP", "HFC Haarlem", "Netherlands NT (Asst.)", "Netherlands NT", "PSV Eindhoven", "Rangers", "Borussia Monchengladbach", "UAE NT", "South Korea NT", "Zenit St Petersburg", "AZ Alkmaar", "Belgium NT", "Russia NT", "Sunderland", "Fenerbahce", "Netherlands NT (3rd)", "Feyenoord", "Serbia NT"],
+  "trophies": ["Eredivisie (PSV)", "KNVB Cup (PSV)", "Johan Cruyff Shield (PSV, 2x)", "Scottish Premier League (Rangers, 2x)", "Scottish Cup (Rangers, 2x)", "Scottish League Cup (Rangers)", "Russian Premier League (Zenit)", "UEFA Cup 2008 (Zenit)", "UEFA Super Cup 2008 (Zenit)"],
+  "careerWins": 482,
+  "careerDraws": 191,
+  "careerLosses": 211,
+  "careerWinPercentage": 55,
+  "bio": "One of the most experienced coaches in world football, the 78-year-old Dutch tactician will become the oldest manager in World Cup history when he leads Curacao at the 2026 tournament. Advocaat's illustrious career spans nearly four decades and six continents, highlighted by a domestic treble with Rangers, the Eredivisie with PSV, and the 2008 UEFA Cup with Zenit St Petersburg. He was appointed Curacao manager in January 2024 and guided the tiny Caribbean island nation of just 155,000 people to their first ever World Cup."
+}

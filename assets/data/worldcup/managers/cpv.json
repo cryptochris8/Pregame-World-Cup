@@ -1,0 +1,21 @@
+{
+  "id": "manager_cpv",
+  "firstName": "Pedro",
+  "lastName": "Brito",
+  "commonName": "Bubista",
+  "dateOfBirth": "1970-01-06",
+  "nationality": "Cape Verde",
+  "currentTeam": "Cape Verde",
+  "currentTeamCode": "CPV",
+  "photoUrl": "assets/managers/bubista.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 14,
+  "previousTeams": ["Mindelense", "Academica do Mindelo", "Sporting Clube da Praia", "Batuque FC"],
+  "trophies": ["CAF Coach of the Year 2025", "AFCON Quarter-finals 2023"],
+  "careerWins": 55,
+  "careerDraws": 30,
+  "careerLosses": 30,
+  "careerWinPercentage": 48,
+  "bio": "A former Cape Verdean international centre-back, Bubista has become a national hero after leading the Blue Sharks to their first ever FIFA World Cup qualification, topping their African group ahead of Cameroon. Named 2025 CAF Coach of the Year, he took charge in January 2020 and transformed the squad by integrating youth talents and diaspora players, building a resilient side known for defensive solidity and counter-attacking flair."
+}

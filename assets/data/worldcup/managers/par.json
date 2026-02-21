@@ -1,0 +1,21 @@
+{
+  "id": "manager_par",
+  "firstName": "Gustavo",
+  "lastName": "Alfaro",
+  "commonName": "Gustavo Alfaro",
+  "dateOfBirth": "1962-08-14",
+  "nationality": "Argentina",
+  "currentTeam": "Paraguay",
+  "currentTeamCode": "PAR",
+  "photoUrl": "assets/managers/alfaro.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 32,
+  "previousTeams": ["Atletico de Rafaela", "Quilmes", "Gimnasia y Esgrima", "Rosario Central", "Arsenal de Sarandi", "Al-Ahli", "Huracan", "Boca Juniors", "Ecuador", "Costa Rica"],
+  "trophies": ["Argentine Primera Division 2012 (Arsenal de Sarandi)"],
+  "careerWins": 273,
+  "careerDraws": 183,
+  "careerLosses": 209,
+  "careerWinPercentage": 41,
+  "bio": "Seasoned Argentine manager known for his pragmatic, defensively disciplined approach. Guided Arsenal de Sarandi to their first league title, managed Boca Juniors, led Ecuador to the 2022 World Cup, then took charge of Paraguay in August 2024 and qualified them for the 2026 tournament."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_hai",
+  "firstName": "Sébastien",
+  "lastName": "Migné",
+  "commonName": "Sébastien Migné",
+  "dateOfBirth": "1972-11-30",
+  "nationality": "France",
+  "currentTeam": "Haiti",
+  "currentTeamCode": "HAI",
+  "photoUrl": "assets/managers/migne.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 12,
+  "previousTeams": ["Congo NT", "Kenya NT", "Equatorial Guinea NT", "Cameroon NT (Assistant)"],
+  "trophies": ["AFCON 2019 Qualification (Kenya)"],
+  "careerWins": 45,
+  "careerDraws": 25,
+  "careerLosses": 35,
+  "careerWinPercentage": 43,
+  "bio": "French coach who made history by leading Haiti to their second-ever World Cup qualification in 2025, remarkably without ever setting foot in the country due to security concerns. Previously guided Kenya to the 2019 AFCON after a 15-year absence, earning a CAF Men's National Team of the Year nomination. Known for imposing tactical structure and fostering team cohesion through counter-attacking football, relying on fast transitions and wing play."
+}

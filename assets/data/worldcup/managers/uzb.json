@@ -1,0 +1,21 @@
+{
+  "id": "manager_uzb",
+  "firstName": "Fabio",
+  "lastName": "Cannavaro",
+  "commonName": "Fabio Cannavaro",
+  "dateOfBirth": "1973-09-13",
+  "nationality": "Italy",
+  "currentTeam": "Uzbekistan",
+  "currentTeamCode": "UZB",
+  "photoUrl": "assets/managers/cannavaro.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 12,
+  "previousTeams": ["Al-Ahli Dubai", "Guangzhou Evergrande", "Al Nassr", "Tianjin Quanjian", "Guangzhou Evergrande (2nd)", "China NT", "Benevento", "Udinese", "Dinamo Zagreb"],
+  "trophies": ["UAE Pro League", "UAE League Cup", "China League One", "Chinese Super League (2x)", "CFA Coach of the Year 2017"],
+  "careerWins": 165,
+  "careerDraws": 68,
+  "careerLosses": 82,
+  "careerWinPercentage": 52,
+  "bio": "Italian World Cup winner and Ballon d'Or recipient turned coach, Cannavaro brings elite defensive pedigree to Uzbekistan ahead of their historic first World Cup. After successful spells in the UAE and China, including two Chinese Super League titles with Guangzhou Evergrande, and brief stints in Serie A and the Croatian league, he was appointed in October 2025 to guide the White Wolves on the biggest stage."
+}

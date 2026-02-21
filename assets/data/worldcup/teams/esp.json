@@ -27,6 +27,6 @@
     { "firstName": "\u00c1lex", "lastName": "Remiro", "jerseyNumber": 23, "position": "GK", "dateOfBirth": "1995-03-24", "height": 191, "weight": 79, "preferredFoot": "Right", "club": "Real Sociedad", "clubLeague": "La Liga", "marketValue": 18000000, "caps": 5, "goals": 0 },
     { "firstName": "Gavi", "lastName": "P\u00e1ez", "jerseyNumber": 24, "position": "CM", "dateOfBirth": "2004-08-05", "height": 173, "weight": 70, "preferredFoot": "Right", "club": "Barcelona", "clubLeague": "La Liga", "marketValue": 90000000, "caps": 25, "goals": 1 },
     { "firstName": "Ayoze", "lastName": "P\u00e9rez", "jerseyNumber": 25, "position": "RW", "dateOfBirth": "1993-07-29", "height": 178, "weight": 72, "preferredFoot": "Right", "club": "Villarreal", "clubLeague": "La Liga", "marketValue": 12000000, "caps": 10, "goals": 2 },
-    { "firstName": "Vivian", "lastName": "Dani", "jerseyNumber": 26, "position": "CB", "dateOfBirth": "1999-07-05", "height": 186, "weight": 78, "preferredFoot": "Right", "club": "Athletic Bilbao", "clubLeague": "La Liga", "marketValue": 30000000, "caps": 5, "goals": 0 }
+    { "firstName": "Dani", "lastName": "Vivian", "jerseyNumber": 26, "position": "CB", "dateOfBirth": "1999-07-05", "height": 186, "weight": 78, "preferredFoot": "Right", "club": "Athletic Bilbao", "clubLeague": "La Liga", "marketValue": 30000000, "caps": 5, "goals": 0 }
   ]
 }

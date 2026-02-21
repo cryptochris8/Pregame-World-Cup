@@ -1,0 +1,21 @@
+{
+  "id": "manager_jor",
+  "firstName": "Jamal",
+  "lastName": "Sellami",
+  "commonName": "Jamal Sellami",
+  "dateOfBirth": "1970-10-06",
+  "nationality": "Morocco",
+  "currentTeam": "Jordan",
+  "currentTeamCode": "JOR",
+  "photoUrl": "assets/managers/sellami.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 17,
+  "previousTeams": ["Difaâ El Jadida", "Hassania Agadir", "FUS Rabat", "Morocco CHAN NT", "Raja Casablanca"],
+  "trophies": ["African Nations Championship 2018 (Morocco)", "Botola Pro 2019-20 (Raja Casablanca)", "FIFA Arab Cup 2025 Runner-up (Jordan)"],
+  "careerWins": 145,
+  "careerDraws": 70,
+  "careerLosses": 65,
+  "careerWinPercentage": 52,
+  "bio": "Moroccan tactician who led Jordan to their first-ever FIFA World Cup qualification in 2025, securing their place with a commanding 3-0 victory over Oman. A former Morocco international who played at the 1998 World Cup, Sellami built his coaching reputation by winning the 2018 African Nations Championship with Morocco's local-based squad and the Moroccan league title with Raja Casablanca in 2020. Known for disciplined, composed game management and smart tactical adjustments throughout qualifying campaigns."
+}

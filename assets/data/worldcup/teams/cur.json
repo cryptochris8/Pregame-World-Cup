@@ -27,6 +27,6 @@
     { "firstName": "Elson", "lastName": "Hooi", "jerseyNumber": 23, "position": "LW", "dateOfBirth": "1991-12-21", "height": 172, "weight": 68, "preferredFoot": "Right", "club": "ADO Den Haag", "clubLeague": "Eerste Divisie", "marketValue": 200000, "caps": 30, "goals": 6 },
     { "firstName": "Gevero", "lastName": "Markiet", "jerseyNumber": 24, "position": "CB", "dateOfBirth": "1998-02-15", "height": 185, "weight": 78, "preferredFoot": "Right", "club": "FC Den Bosch", "clubLeague": "Eerste Divisie", "marketValue": 200000, "caps": 10, "goals": 0 },
     { "firstName": "Jarchino", "lastName": "Antonia", "jerseyNumber": 25, "position": "LW", "dateOfBirth": "1990-11-04", "height": 170, "weight": 65, "preferredFoot": "Right", "club": "Go Ahead Eagles", "clubLeague": "Eredivisie", "marketValue": 300000, "caps": 20, "goals": 3 },
-    { "firstName": "Riechedly", "lastName": "Bazoer", "jerseyNumber": 26, "position": "CM", "dateOfBirth": "1996-10-12", "height": 185, "weight": 78, "preferredFoot": "Right", "club": "Fenerbahce", "clubLeague": "Super Lig", "marketValue": 4000000, "caps": 5, "goals": 0 }
+    { "firstName": "Riechedly", "lastName": "Bazoer", "jerseyNumber": 26, "position": "CM", "dateOfBirth": "1996-10-12", "height": 185, "weight": 78, "preferredFoot": "Right", "club": "Konyaspor", "clubLeague": "Super Lig", "marketValue": 4000000, "caps": 5, "goals": 0 }
   ]
 }

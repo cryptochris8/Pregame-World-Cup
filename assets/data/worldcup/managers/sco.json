@@ -1,0 +1,21 @@
+{
+  "id": "manager_sco",
+  "firstName": "Steve",
+  "lastName": "Clarke",
+  "commonName": "Steve Clarke",
+  "dateOfBirth": "1963-08-29",
+  "nationality": "Scotland",
+  "currentTeam": "Scotland",
+  "currentTeamCode": "SCO",
+  "photoUrl": "assets/managers/clarke.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 13,
+  "previousTeams": ["West Bromwich Albion", "Kilmarnock", "Chelsea (assistant)", "Liverpool (assistant)", "Newcastle United (assistant)", "West Ham United (assistant)", "Aston Villa (assistant)"],
+  "trophies": ["Premier League 2004-05 (assistant)", "Premier League 2005-06 (assistant)", "FA Cup 2007 (assistant)", "League Cup 2005 (assistant)", "League Cup 2007 (assistant)"],
+  "careerWins": 168,
+  "careerDraws": 101,
+  "careerLosses": 128,
+  "careerWinPercentage": 42,
+  "bio": "Steve Clarke has revitalised Scotland's international fortunes, qualifying the team for three consecutive major tournaments including Euro 2020, Euro 2024, and the 2026 FIFA World Cup - their first World Cup since 1998. A former Chelsea defender, Clarke transitioned into coaching as an assistant under Jose Mourinho before managing West Brom and Kilmarnock."
+}

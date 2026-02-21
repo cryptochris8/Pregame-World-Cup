@@ -1,0 +1,21 @@
+{
+  "id": "manager_nor",
+  "firstName": "Ståle",
+  "lastName": "Solbakken",
+  "commonName": "Ståle Solbakken",
+  "dateOfBirth": "1968-02-27",
+  "nationality": "Norway",
+  "currentTeam": "Norway",
+  "currentTeamCode": "NOR",
+  "photoUrl": "assets/managers/solbakken.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Attacking",
+  "yearsExperience": 22,
+  "previousTeams": ["HamKam", "FC Copenhagen", "1. FC Köln", "Wolverhampton Wanderers"],
+  "trophies": ["Danish Superliga (x8)", "Danish Cup (x4)", "Royal League 2006", "Norwegian Manager of the Year 2004"],
+  "careerWins": 163,
+  "careerDraws": 58,
+  "careerLosses": 79,
+  "careerWinPercentage": 54,
+  "bio": "Legendary Norwegian coach who ended the nation's 27-year World Cup drought by qualifying Norway for the 2026 tournament, winning all eight group matches with a stunning 37 goals scored and just five conceded. A former international player whose career was cut short by a heart attack in 2001, Solbakken became one of Scandinavia's most decorated club managers with eight Danish Superliga titles at FC Copenhagen. His all-action attacking approach, built around Erling Haaland's prolific goalscoring, has made Norway one of Europe's most exciting teams."
+}

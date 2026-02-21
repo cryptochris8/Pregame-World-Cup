@@ -1,0 +1,21 @@
+{
+  "id": "manager_rsa",
+  "firstName": "Hugo",
+  "lastName": "Broos",
+  "commonName": "Hugo Broos",
+  "dateOfBirth": "1952-04-10",
+  "nationality": "Belgium",
+  "currentTeam": "South Africa",
+  "currentTeamCode": "RSA",
+  "photoUrl": "assets/managers/broos.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Disciplined",
+  "yearsExperience": 34,
+  "previousTeams": ["Club Brugge", "RSC Anderlecht", "KRC Genk", "KV Kortrijk", "Cameroon", "Al-Jazira", "Panionios"],
+  "trophies": ["Belgian First Division 1992", "Belgian First Division 1996", "Belgian First Division 2004", "Belgian Cup 1991", "Belgian Cup 1995", "Belgian Cup 1996", "Africa Cup of Nations 2017"],
+  "careerWins": 245,
+  "careerDraws": 145,
+  "careerLosses": 140,
+  "careerWinPercentage": 46,
+  "bio": "Hugo Broos rebuilt South Africa's Bafana Bafana into a competitive force, leading them to third place at the 2023 Africa Cup of Nations and qualifying for the 2026 World Cup. A four-time Belgian Coach of the Year, he won three Belgian league titles and guided Cameroon to the 2017 AFCON title."
+}
