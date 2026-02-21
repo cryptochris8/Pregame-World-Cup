@@ -3,7 +3,7 @@
   "fifaCode": "ENG",
   "worldCupAppearances": 11,
   "worldCupGoals": 8,
-  "worldCupAssists": 2,
+  "worldCupAssists": 3,
   "previousWorldCups": [2018, 2022],
   "tournamentStats": [
     {
@@ -18,7 +18,7 @@
       "year": 2022,
       "matches": 5,
       "goals": 2,
-      "assists": 2,
+      "assists": 3,
       "stage": "Quarter-Finals",
       "keyMoment": "Missed crucial penalty vs France"
     }

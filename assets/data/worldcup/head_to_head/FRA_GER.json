@@ -39,11 +39,11 @@
       "year": 1986,
       "tournament": "World Cup",
       "stage": "Semi-Final",
-      "team1Score": 2,
-      "team2Score": 0,
-      "winnerCode": "FRA",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "GER",
       "location": "Guadalajara, Mexico",
-      "description": "France revenge, reach second straight final"
+      "description": "Brehme and Voller goals send Germany to second straight final"
     },
     {
       "year": 2016,

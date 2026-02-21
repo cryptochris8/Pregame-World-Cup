@@ -14,16 +14,5 @@
   "worldCupDraws": 0,
   "lastMatch": "2023-06-12",
   "firstMeeting": "1975-09-01",
-  "notableMatches": [
-    {
-      "year": 2019,
-      "tournament": "Asian Cup",
-      "stage": "Group Stage",
-      "team1Score": 0,
-      "team2Score": 2,
-      "winnerCode": "KSA",
-      "location": "Abu Dhabi, UAE",
-      "description": "Saudi Arabia upset Iran"
-    }
-  ]
+  "notableMatches": []
 }

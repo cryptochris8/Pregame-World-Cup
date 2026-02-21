@@ -2,21 +2,22 @@
   "playerName": "Alphonso Davies",
   "fifaCode": "CAN",
   "worldCupAppearances": 3,
-  "worldCupGoals": 0,
+  "worldCupGoals": 1,
   "worldCupAssists": 0,
   "previousWorldCups": [2022],
   "tournamentStats": [
     {
       "year": 2022,
       "matches": 3,
-      "goals": 0,
+      "goals": 1,
       "assists": 0,
       "stage": "Group Stage",
-      "keyMoment": "Missed penalty vs Belgium in Canada's return to World Cup"
+      "keyMoment": "Scored header vs Croatia, missed penalty vs Belgium"
     }
   ],
   "worldCupAwards": [],
   "memorableMoments": [
+    "Header goal vs Croatia - Canada's fastest WC goal",
     "Penalty miss vs Belgium",
     "Electric runs despite team struggles"
   ],

@@ -1,16 +1,16 @@
 {
   "playerName": "Christian Pulisic",
   "fifaCode": "USA",
-  "worldCupAppearances": 5,
+  "worldCupAppearances": 4,
   "worldCupGoals": 1,
-  "worldCupAssists": 0,
+  "worldCupAssists": 2,
   "previousWorldCups": [2022],
   "tournamentStats": [
     {
       "year": 2022,
-      "matches": 5,
+      "matches": 4,
       "goals": 1,
-      "assists": 0,
+      "assists": 2,
       "stage": "Round of 16",
       "keyMoment": "Goal vs Iran to qualify for knockouts, collided with goalkeeper"
     }

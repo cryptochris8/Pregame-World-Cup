@@ -14,16 +14,5 @@
   "worldCupDraws": 0,
   "lastMatch": "2024-01-13",
   "firstMeeting": "1957-01-01",
-  "notableMatches": [
-    {
-      "year": 2019,
-      "tournament": "Africa Cup of Nations",
-      "stage": "Group Stage",
-      "team1Score": 0,
-      "team2Score": 1,
-      "winnerCode": "MAR",
-      "location": "Cairo, Egypt",
-      "description": "Morocco shock Algeria"
-    }
-  ]
+  "notableMatches": []
 }

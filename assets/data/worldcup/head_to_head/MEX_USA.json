@@ -8,10 +8,10 @@
   "draws": 17,
   "team1Goals": 139,
   "team2Goals": 99,
-  "worldCupMatches": 2,
+  "worldCupMatches": 1,
   "team1WorldCupWins": 0,
-  "team2WorldCupWins": 0,
-  "worldCupDraws": 2,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
   "lastMatch": "2024-10-15",
   "firstMeeting": "1934-05-24",
   "notableMatches": [
@@ -49,11 +49,11 @@
       "year": 1934,
       "tournament": "World Cup Qualifier",
       "stage": null,
-      "team1Score": 4,
-      "team2Score": 2,
-      "winnerCode": "MEX",
+      "team1Score": 2,
+      "team2Score": 4,
+      "winnerCode": "USA",
       "location": "Rome, Italy",
-      "description": "First ever World Cup meeting"
+      "description": "First ever meeting - World Cup qualifier playoff"
     }
   ]
 }

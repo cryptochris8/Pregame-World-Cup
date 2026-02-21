@@ -1,9 +1,9 @@
 {
   "playerName": "Antoine Griezmann",
   "fifaCode": "FRA",
-  "worldCupAppearances": 14,
+  "worldCupAppearances": 19,
   "worldCupGoals": 4,
-  "worldCupAssists": 4,
+  "worldCupAssists": 5,
   "previousWorldCups": [2014, 2018, 2022],
   "tournamentStats": [
     {
@@ -25,14 +25,15 @@
       "year": 2022,
       "matches": 7,
       "goals": 0,
-      "assists": 2,
+      "assists": 3,
       "stage": "Final",
       "keyMoment": "Orchestrated from midfield, reinvented role"
     }
   ],
   "worldCupAwards": [
     "World Cup Winner 2018",
-    "Bronze Ball 2018"
+    "Bronze Ball 2018",
+    "Silver Boot 2018"
   ],
   "memorableMoments": [
     "Free kick in World Cup final 2018",
@@ -41,5 +42,5 @@
   ],
   "worldCupLegacyRating": 8,
   "comparisonToLegend": "Complete attacker like David Trezeguet with better playmaking",
-  "worldCup2026Prediction": "Veteran presence expected to guide younger players"
+  "worldCup2026Prediction": "Retired from international football in September 2024. Will not participate in the 2026 World Cup."
 }

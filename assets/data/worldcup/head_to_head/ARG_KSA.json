@@ -8,8 +8,8 @@
   "draws": 1,
   "team1Goals": 7,
   "team2Goals": 4,
-  "worldCupMatches": 2,
-  "team1WorldCupWins": 1,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
   "team2WorldCupWins": 1,
   "worldCupDraws": 0,
   "lastMatch": "2022-11-22",
@@ -24,16 +24,6 @@
       "winnerCode": "KSA",
       "location": "Lusail, Qatar",
       "description": "Saudi Arabia stun Argentina in biggest WC upset"
-    },
-    {
-      "year": 1998,
-      "tournament": "World Cup",
-      "stage": "Group Stage",
-      "team1Score": 2,
-      "team2Score": 1,
-      "winnerCode": "ARG",
-      "location": "Paris, France",
-      "description": "Argentina edge past Saudi Arabia"
     }
   ]
 }

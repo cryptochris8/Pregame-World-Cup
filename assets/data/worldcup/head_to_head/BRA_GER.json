@@ -8,9 +8,9 @@
   "draws": 6,
   "team1Goals": 41,
   "team2Goals": 32,
-  "worldCupMatches": 4,
-  "team1WorldCupWins": 2,
-  "team2WorldCupWins": 2,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 1,
   "worldCupDraws": 0,
   "lastMatch": "2023-03-27",
   "firstMeeting": "1963-05-05",
@@ -34,16 +34,6 @@
       "winnerCode": "BRA",
       "location": "Yokohama, Japan",
       "description": "Ronaldo brace crowns Brazil's 5th title"
-    },
-    {
-      "year": 1958,
-      "tournament": "World Cup",
-      "stage": "Group Stage",
-      "team1Score": 2,
-      "team2Score": 0,
-      "winnerCode": "BRA",
-      "location": "Gothenburg, Sweden",
-      "description": "Brazil win group stage clash"
     }
   ]
 }

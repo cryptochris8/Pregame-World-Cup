@@ -27,13 +27,13 @@
     },
     {
       "year": 2021,
-      "tournament": "Nations League",
+      "tournament": "World Cup Qualifier",
       "stage": null,
-      "team1Score": 0,
+      "team1Score": 1,
       "team2Score": 1,
-      "winnerCode": "USA",
+      "winnerCode": null,
       "location": "Nashville, USA",
-      "description": "USA clinch Nations League"
+      "description": "Draw in World Cup qualifying opener"
     }
   ]
 }

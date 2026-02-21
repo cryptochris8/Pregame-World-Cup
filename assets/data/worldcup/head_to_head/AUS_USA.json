@@ -2,18 +2,18 @@
   "id": "AUS_USA",
   "team1Code": "AUS",
   "team2Code": "USA",
-  "totalMatches": 9,
+  "totalMatches": 4,
   "team1Wins": 1,
-  "team2Wins": 5,
-  "draws": 3,
-  "team1Goals": 7,
-  "team2Goals": 12,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 3,
+  "team2Goals": 5,
   "worldCupMatches": 0,
   "team1WorldCupWins": 0,
   "team2WorldCupWins": 0,
   "worldCupDraws": 0,
   "lastMatch": "2025-10-14",
-  "firstMeeting": "1992-04-01",
+  "firstMeeting": "1992-06-13",
   "notableMatches": [
     {
       "year": 2025,
@@ -22,18 +22,8 @@
       "team1Score": 1,
       "team2Score": 2,
       "winnerCode": "USA",
-      "location": "Cincinnati, OH",
+      "location": "Commerce City, CO",
       "description": "Pochettino-led USA defeats top-25 opponent in World Cup preparation"
-    },
-    {
-      "year": 2015,
-      "tournament": "Friendly",
-      "stage": "Friendly",
-      "team1Score": 0,
-      "team2Score": 4,
-      "winnerCode": "USA",
-      "location": "Melbourne, Australia",
-      "description": "USA dominant in Australian friendly"
     }
   ]
 }

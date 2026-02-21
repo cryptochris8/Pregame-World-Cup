@@ -29,11 +29,11 @@
       "year": 2013,
       "tournament": "Friendly",
       "stage": "Friendly",
-      "team1Score": 1,
+      "team1Score": 2,
       "team2Score": 2,
-      "winnerCode": "NED",
+      "winnerCode": null,
       "location": "Genk, Belgium",
-      "description": "Van Persie and Robben lead Dutch to friendly win"
+      "description": "Entertaining 2-2 draw in Belgium"
     }
   ]
 }

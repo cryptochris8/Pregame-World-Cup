@@ -8,23 +8,13 @@
   "draws": 48,
   "team1Goals": 350,
   "team2Goals": 260,
-  "worldCupMatches": 6,
-  "team1WorldCupWins": 2,
-  "team2WorldCupWins": 3,
-  "worldCupDraws": 1,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
   "lastMatch": "2024-11-15",
   "firstMeeting": "1901-05-16",
   "notableMatches": [
-    {
-      "year": 2030,
-      "tournament": "World Cup",
-      "stage": "Final",
-      "team1Score": 2,
-      "team2Score": 4,
-      "winnerCode": "URU",
-      "location": "Montevideo, Uruguay",
-      "description": "Uruguay win first ever World Cup final"
-    },
     {
       "year": 1930,
       "tournament": "World Cup",
@@ -44,16 +34,6 @@
       "winnerCode": "ARG",
       "location": "Puebla, Mexico",
       "description": "Pasculli goal sends Argentina through"
-    },
-    {
-      "year": 1966,
-      "tournament": "World Cup",
-      "stage": "Group Stage",
-      "team1Score": 0,
-      "team2Score": 0,
-      "winnerCode": null,
-      "location": "Birmingham, England",
-      "description": "Goalless draw in group stage"
     }
   ]
 }

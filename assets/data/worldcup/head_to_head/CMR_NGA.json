@@ -8,23 +8,13 @@
   "draws": 10,
   "team1Goals": 48,
   "team2Goals": 51,
-  "worldCupMatches": 1,
-  "team1WorldCupWins": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
   "team2WorldCupWins": 0,
   "worldCupDraws": 0,
   "lastMatch": "2023-09-12",
   "firstMeeting": "1960-11-06",
   "notableMatches": [
-    {
-      "year": 1994,
-      "tournament": "World Cup",
-      "stage": "Round of 16",
-      "team1Score": 1,
-      "team2Score": 2,
-      "winnerCode": "NGA",
-      "location": "Boston, USA",
-      "description": "Nigeria comeback victory"
-    },
     {
       "year": 2000,
       "tournament": "Africa Cup of Nations",

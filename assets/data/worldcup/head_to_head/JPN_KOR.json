@@ -24,16 +24,6 @@
       "winnerCode": "JPN",
       "location": "Doha, Qatar",
       "description": "Japan win on penalties, reach final"
-    },
-    {
-      "year": 2019,
-      "tournament": "Asian Cup",
-      "stage": "Round of 16",
-      "team1Score": 1,
-      "team2Score": 0,
-      "winnerCode": "JPN",
-      "location": "Abu Dhabi, UAE",
-      "description": "Shiotani goal secures Japan win"
     }
   ]
 }

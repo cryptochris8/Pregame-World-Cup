@@ -14,26 +14,5 @@
   "worldCupDraws": 0,
   "lastMatch": "2024-03-26",
   "firstMeeting": "1963-03-24",
-  "notableMatches": [
-    {
-      "year": 2022,
-      "tournament": "Africa Cup of Nations",
-      "stage": "Final",
-      "team1Score": 0,
-      "team2Score": 0,
-      "winnerCode": "SEN",
-      "location": "Yaounde, Cameroon",
-      "description": "Mane wins AFCON for Senegal on penalties"
-    },
-    {
-      "year": 2002,
-      "tournament": "Africa Cup of Nations",
-      "stage": "Quarter-Final",
-      "team1Score": 1,
-      "team2Score": 0,
-      "winnerCode": "GHA",
-      "location": "Bamako, Mali",
-      "description": "Ghana advances to semi-final"
-    }
-  ]
+  "notableMatches": []
 }

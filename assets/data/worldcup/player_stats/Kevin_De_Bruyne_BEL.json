@@ -1,16 +1,16 @@
 {
   "playerName": "Kevin De Bruyne",
   "fifaCode": "BEL",
-  "worldCupAppearances": 11,
-  "worldCupGoals": 1,
-  "worldCupAssists": 4,
+  "worldCupAppearances": 15,
+  "worldCupGoals": 2,
+  "worldCupAssists": 3,
   "previousWorldCups": [2014, 2018, 2022],
   "tournamentStats": [
     {
       "year": 2014,
       "matches": 5,
-      "goals": 0,
-      "assists": 2,
+      "goals": 1,
+      "assists": 1,
       "stage": "Quarter-Finals"
     },
     {

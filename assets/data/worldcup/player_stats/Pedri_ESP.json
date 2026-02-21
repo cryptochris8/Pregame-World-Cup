@@ -1,14 +1,14 @@
 {
   "playerName": "Pedri",
   "fifaCode": "ESP",
-  "worldCupAppearances": 3,
+  "worldCupAppearances": 4,
   "worldCupGoals": 0,
   "worldCupAssists": 0,
   "previousWorldCups": [2022],
   "tournamentStats": [
     {
       "year": 2022,
-      "matches": 3,
+      "matches": 4,
       "goals": 0,
       "assists": 0,
       "stage": "Round of 16",

@@ -18,10 +18,10 @@
   {
     "category": "Most Appearances",
     "record": "Most World Cup matches played",
-    "holder": "Lothar Matth\u00e4us",
+    "holder": "Lionel Messi",
     "holderType": "player",
-    "value": 25,
-    "details": "Germany - 1982-1998"
+    "value": 26,
+    "details": "Argentina - 2006-2022"
   },
   {
     "category": "Most Finals Played",
@@ -60,13 +60,13 @@
     "record": "Fastest goal from kick-off",
     "holder": "Hakan \u015e\u00fck\u00fcr",
     "holderType": "player",
-    "value": "10.8 seconds",
+    "value": "11 seconds",
     "details": "Turkey vs South Korea 2002"
   },
   {
     "category": "Most Tournaments (Player)",
     "record": "Most World Cups participated",
-    "holder": "Lionel Messi/Antonio Carbajal/Rafael M\u00e1rquez/Lothar Matth\u00e4us/Gianluigi Buffon",
+    "holder": "Lionel Messi/Cristiano Ronaldo/Antonio Carbajal/Rafael M\u00e1rquez/Lothar Matth\u00e4us/Gianluigi Buffon/Andr\u00e9s Guardado",
     "holderType": "player",
     "value": 5,
     "details": "Various"
@@ -125,7 +125,7 @@
     "holder": "Brazil",
     "holderType": "team",
     "value": 13,
-    "details": "2002-2010"
+    "details": "1958-1966"
   },
   {
     "category": "Highest Scoring Match",
@@ -146,10 +146,10 @@
   {
     "category": "Largest Final Win",
     "record": "Biggest winning margin in final",
-    "holder": "Brazil vs Italy",
+    "holder": "Brazil vs Sweden",
     "holderType": "match",
-    "value": "4-1",
-    "details": "Brazil 4-1 Italy 1970"
+    "value": "5-2",
+    "details": "Brazil 5-2 Sweden 1958"
   },
   {
     "category": "Highest Attendance",

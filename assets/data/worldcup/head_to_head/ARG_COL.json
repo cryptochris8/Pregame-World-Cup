@@ -8,8 +8,8 @@
   "draws": 15,
   "team1Goals": 74,
   "team2Goals": 48,
-  "worldCupMatches": 1,
-  "team1WorldCupWins": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
   "team2WorldCupWins": 0,
   "worldCupDraws": 0,
   "lastMatch": "2024-07-14",
@@ -36,14 +36,14 @@
       "description": "Key qualifier victory"
     },
     {
-      "year": 1994,
-      "tournament": "World Cup",
-      "stage": "Group Stage",
+      "year": 1993,
+      "tournament": "World Cup Qualifier",
+      "stage": null,
       "team1Score": 0,
       "team2Score": 5,
       "winnerCode": "COL",
-      "location": "Boston, USA",
-      "description": "Colombia's famous 5-0 demolition"
+      "location": "Buenos Aires, Argentina",
+      "description": "Colombia's famous 5-0 demolition in qualifier"
     }
   ]
 }

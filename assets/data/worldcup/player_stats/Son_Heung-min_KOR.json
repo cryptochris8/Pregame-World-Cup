@@ -1,7 +1,7 @@
 {
   "playerName": "Son Heung-min",
   "fifaCode": "KOR",
-  "worldCupAppearances": 11,
+  "worldCupAppearances": 10,
   "worldCupGoals": 3,
   "worldCupAssists": 1,
   "previousWorldCups": [2014, 2018, 2022],
@@ -9,9 +9,10 @@
     {
       "year": 2014,
       "matches": 3,
-      "goals": 0,
+      "goals": 1,
       "assists": 0,
-      "stage": "Group Stage"
+      "stage": "Group Stage",
+      "keyMoment": "Scored against Algeria in group stage"
     },
     {
       "year": 2018,
@@ -24,7 +25,7 @@
     {
       "year": 2022,
       "matches": 4,
-      "goals": 1,
+      "goals": 0,
       "assists": 1,
       "stage": "Round of 16",
       "keyMoment": "Played with protective mask after facial injury"

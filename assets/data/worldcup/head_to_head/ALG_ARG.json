@@ -8,32 +8,11 @@
   "draws": 1,
   "team1Goals": 2,
   "team2Goals": 5,
-  "worldCupMatches": 2,
+  "worldCupMatches": 0,
   "team1WorldCupWins": 0,
-  "team2WorldCupWins": 1,
-  "worldCupDraws": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
   "lastMatch": "2014-06-17",
   "firstMeeting": "1982-06-18",
-  "notableMatches": [
-    {
-      "year": 2014,
-      "tournament": "World Cup",
-      "stage": "Group Stage",
-      "team1Score": 1,
-      "team2Score": 2,
-      "winnerCode": "ARG",
-      "location": "Porto Alegre, Brazil",
-      "description": "Messi decisive goal in 91st minute gives Argentina narrow win"
-    },
-    {
-      "year": 1982,
-      "tournament": "World Cup",
-      "stage": "Group Stage",
-      "team1Score": 0,
-      "team2Score": 2,
-      "winnerCode": "ARG",
-      "location": "Oviedo, Spain",
-      "description": "Maradona and Diaz goals see off Algeria"
-    }
-  ]
+  "notableMatches": []
 }
