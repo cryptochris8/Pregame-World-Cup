@@ -95,7 +95,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-13",
-    "time": "15:00",
+    "time": "21:00",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston"
   },
@@ -134,8 +134,8 @@
     "status": "scheduled",
     "homeScore": null,
     "awayScore": null,
-    "date": "2026-06-13",
-    "time": "18:00",
+    "date": "2026-06-14",
+    "time": "00:00",
     "venueName": "BC Place",
     "venueCity": "Vancouver"
   },
@@ -155,7 +155,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-13",
-    "time": "21:00",
+    "time": "15:00",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco"
   },
@@ -175,7 +175,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-14",
-    "time": "15:00",
+    "time": "16:00",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas"
   },
@@ -195,7 +195,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-14",
-    "time": "18:00",
+    "time": "13:00",
     "venueName": "NRG Stadium",
     "venueCity": "Houston"
   },
@@ -215,7 +215,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-14",
-    "time": "18:00",
+    "time": "19:00",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia"
   },
@@ -235,7 +235,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-14",
-    "time": "21:00",
+    "time": "22:00",
     "venueName": "Estadio BBVA",
     "venueCity": "Monterrey"
   },
@@ -255,7 +255,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-15",
-    "time": "15:00",
+    "time": "12:00",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta"
   },
@@ -275,7 +275,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-15",
-    "time": "18:00",
+    "time": "21:00",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles"
   },
@@ -295,7 +295,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-15",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "Lumen Field",
     "venueCity": "Seattle"
   },
@@ -315,7 +315,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-15",
-    "time": "21:00",
+    "time": "18:00",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami"
   },
@@ -355,7 +355,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-16",
-    "time": "15:00",
+    "time": "18:00",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston"
   },
@@ -375,7 +375,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-16",
-    "time": "18:00",
+    "time": "21:00",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City"
   },
@@ -395,7 +395,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-16",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "MetLife Stadium",
     "venueCity": "New York"
   },
@@ -414,8 +414,8 @@
     "status": "scheduled",
     "homeScore": null,
     "awayScore": null,
-    "date": "2026-06-16",
-    "time": "21:00",
+    "date": "2026-06-17",
+    "time": "00:00",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco"
   },
@@ -455,7 +455,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-17",
-    "time": "18:00",
+    "time": "13:00",
     "venueName": "NRG Stadium",
     "venueCity": "Houston"
   },
@@ -515,7 +515,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-18",
-    "time": "18:00",
+    "time": "21:00",
     "venueName": "Estadio Akron",
     "venueCity": "Guadalajara"
   },
@@ -535,7 +535,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-18",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles"
   },
@@ -555,7 +555,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-18",
-    "time": "21:00",
+    "time": "18:00",
     "venueName": "BC Place",
     "venueCity": "Vancouver"
   },
@@ -575,7 +575,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-19",
-    "time": "15:00",
+    "time": "18:00",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston"
   },
@@ -595,7 +595,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-19",
-    "time": "18:00",
+    "time": "21:00",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia"
   },
@@ -615,7 +615,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-19",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "Lumen Field",
     "venueCity": "Seattle"
   },
@@ -634,8 +634,8 @@
     "status": "scheduled",
     "homeScore": null,
     "awayScore": null,
-    "date": "2026-06-19",
-    "time": "21:00",
+    "date": "2026-06-20",
+    "time": "00:00",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco"
   },
@@ -655,7 +655,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-20",
-    "time": "15:00",
+    "time": "13:00",
     "venueName": "NRG Stadium",
     "venueCity": "Houston"
   },
@@ -675,7 +675,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-20",
-    "time": "18:00",
+    "time": "20:00",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City"
   },
@@ -695,7 +695,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-20",
-    "time": "18:00",
+    "time": "16:00",
     "venueName": "BMO Field",
     "venueCity": "Toronto"
   },
@@ -714,8 +714,8 @@
     "status": "scheduled",
     "homeScore": null,
     "awayScore": null,
-    "date": "2026-06-20",
-    "time": "21:00",
+    "date": "2026-06-21",
+    "time": "00:00",
     "venueName": "Estadio BBVA",
     "venueCity": "Monterrey"
   },
@@ -735,7 +735,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-21",
-    "time": "15:00",
+    "time": "12:00",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta"
   },
@@ -755,7 +755,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-21",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles"
   },
@@ -775,7 +775,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-21",
-    "time": "18:00",
+    "time": "21:00",
     "venueName": "BC Place",
     "venueCity": "Vancouver"
   },
@@ -795,7 +795,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-21",
-    "time": "21:00",
+    "time": "18:00",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami"
   },
@@ -895,7 +895,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-23",
-    "time": "15:00",
+    "time": "22:00",
     "venueName": "Estadio Akron",
     "venueCity": "Guadalajara"
   },
@@ -995,7 +995,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-24",
-    "time": "18:00",
+    "time": "21:00",
     "venueName": "Estadio BBVA",
     "venueCity": "Monterrey"
   },
@@ -1035,7 +1035,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-24",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "Lumen Field",
     "venueCity": "Seattle"
   },
@@ -1055,7 +1055,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-24",
-    "time": "18:00",
+    "time": "15:00",
     "venueName": "BC Place",
     "venueCity": "Vancouver"
   },
@@ -1095,7 +1095,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-25",
-    "time": "21:00",
+    "time": "22:00",
     "venueName": "SoFi Stadium",
     "venueCity": "Los Angeles"
   },
@@ -1115,7 +1115,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-25",
-    "time": "18:00",
+    "time": "19:00",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas"
   },
@@ -1135,7 +1135,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-25",
-    "time": "18:00",
+    "time": "19:00",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City"
   },
@@ -1155,7 +1155,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-25",
-    "time": "18:00",
+    "time": "16:00",
     "venueName": "MetLife Stadium",
     "venueCity": "New York"
   },
@@ -1175,7 +1175,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-25",
-    "time": "18:00",
+    "time": "16:00",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia"
   },
@@ -1195,7 +1195,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-25",
-    "time": "21:00",
+    "time": "22:00",
     "venueName": "Levi's Stadium",
     "venueCity": "San Francisco"
   },
@@ -1215,7 +1215,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-26",
-    "time": "18:00",
+    "time": "20:00",
     "venueName": "Estadio Akron",
     "venueCity": "Guadalajara"
   },
@@ -1235,7 +1235,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-26",
-    "time": "18:00",
+    "time": "20:00",
     "venueName": "NRG Stadium",
     "venueCity": "Houston"
   },
@@ -1255,7 +1255,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-26",
-    "time": "18:00",
+    "time": "23:00",
     "venueName": "Lumen Field",
     "venueCity": "Seattle"
   },
@@ -1275,7 +1275,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-26",
-    "time": "18:00",
+    "time": "23:00",
     "venueName": "BC Place",
     "venueCity": "Vancouver"
   },
@@ -1294,8 +1294,8 @@
     "status": "scheduled",
     "homeScore": null,
     "awayScore": null,
-    "date": "2026-06-26",
-    "time": "21:00",
+    "date": "2026-06-27",
+    "time": "19:30",
     "venueName": "Hard Rock Stadium",
     "venueCity": "Miami"
   },
@@ -1315,7 +1315,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-26",
-    "time": "21:00",
+    "time": "15:00",
     "venueName": "BMO Field",
     "venueCity": "Toronto"
   },
@@ -1335,7 +1335,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-27",
-    "time": "18:00",
+    "time": "19:30",
     "venueName": "Mercedes-Benz Stadium",
     "venueCity": "Atlanta"
   },
@@ -1354,8 +1354,8 @@
     "status": "scheduled",
     "homeScore": null,
     "awayScore": null,
-    "date": "2026-06-27",
-    "time": "18:00",
+    "date": "2026-06-26",
+    "time": "15:00",
     "venueName": "Gillette Stadium",
     "venueCity": "Boston"
   },
@@ -1375,7 +1375,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-27",
-    "time": "18:00",
+    "time": "22:00",
     "venueName": "AT&T Stadium",
     "venueCity": "Dallas"
   },
@@ -1395,7 +1395,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-27",
-    "time": "18:00",
+    "time": "22:00",
     "venueName": "GEHA Field at Arrowhead Stadium",
     "venueCity": "Kansas City"
   },
@@ -1415,7 +1415,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-27",
-    "time": "18:00",
+    "time": "17:00",
     "venueName": "Lincoln Financial Field",
     "venueCity": "Philadelphia"
   },
@@ -1435,7 +1435,7 @@
     "homeScore": null,
     "awayScore": null,
     "date": "2026-06-27",
-    "time": "18:00",
+    "time": "17:00",
     "venueName": "MetLife Stadium",
     "venueCity": "New York"
   }
