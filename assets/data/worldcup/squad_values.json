@@ -1,0 +1,961 @@
+{
+  "lastUpdated": "2026-02-21",
+  "description": "Squad market values for all FIFA World Cup 2026 teams, calculated from individual player market values in team roster JSON files.",
+  "totalTeams": 53,
+  "teams": [
+    {
+      "rank": 1,
+      "teamCode": "ENG",
+      "teamName": "England",
+      "playerCount": 26,
+      "totalValue": 1866250000,
+      "totalValueFormatted": "$1.86B",
+      "averagePlayerValue": 71778846,
+      "averageValueFormatted": "$71.8M",
+      "mostValuablePlayer": {
+        "name": "Jude Bellingham",
+        "value": "$225.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Kyle Walker",
+        "value": "$10.0M"
+      }
+    },
+    {
+      "rank": 2,
+      "teamCode": "FRA",
+      "teamName": "France",
+      "playerCount": 26,
+      "totalValue": 1636250000,
+      "totalValueFormatted": "$1.64B",
+      "averagePlayerValue": 62932693,
+      "averageValueFormatted": "$62.9M",
+      "mostValuablePlayer": {
+        "name": "Kylian Mbappé",
+        "value": "$225.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Presnel Kimpembe",
+        "value": "$3.8M"
+      }
+    },
+    {
+      "rank": 3,
+      "teamCode": "ESP",
+      "teamName": "Spain",
+      "playerCount": 26,
+      "totalValue": 1426250000,
+      "totalValueFormatted": "$1.42B",
+      "averagePlayerValue": 54855769,
+      "averageValueFormatted": "$54.9M",
+      "mostValuablePlayer": {
+        "name": "Lamine Yamal",
+        "value": "$188.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Jesús Navas",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 4,
+      "teamCode": "BRA",
+      "teamName": "Brazil",
+      "playerCount": 26,
+      "totalValue": 1382500000,
+      "totalValueFormatted": "$1.39B",
+      "averagePlayerValue": 53173078,
+      "averageValueFormatted": "$53.1M",
+      "mostValuablePlayer": {
+        "name": "Vinícius Júnior",
+        "value": "$225.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Thiago Silva",
+        "value": "$2.5M"
+      }
+    },
+    {
+      "rank": 5,
+      "teamCode": "POR",
+      "teamName": "Portugal",
+      "playerCount": 26,
+      "totalValue": 1250000000,
+      "totalValueFormatted": "$1.25B",
+      "averagePlayerValue": 48076923,
+      "averageValueFormatted": "$48.1M",
+      "mostValuablePlayer": {
+        "name": "Rafael Leão",
+        "value": "$113.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "William Carvalho",
+        "value": "$2.5M"
+      }
+    },
+    {
+      "rank": 6,
+      "teamCode": "GER",
+      "teamName": "Germany",
+      "playerCount": 26,
+      "totalValue": 1210000000,
+      "totalValueFormatted": "$1210.0M",
+      "averagePlayerValue": 46538461,
+      "averageValueFormatted": "$46.5M",
+      "mostValuablePlayer": {
+        "name": "Jamal Musiala",
+        "value": "$163.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Oliver Baumann",
+        "value": "$6.3M"
+      }
+    },
+    {
+      "rank": 7,
+      "teamCode": "NED",
+      "teamName": "Netherlands",
+      "playerCount": 26,
+      "totalValue": 1177500000,
+      "totalValueFormatted": "$1178.0M",
+      "averagePlayerValue": 45288461,
+      "averageValueFormatted": "$45.3M",
+      "mostValuablePlayer": {
+        "name": "Xavi Simons",
+        "value": "$100.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Georginio Wijnaldum",
+        "value": "$10.0M"
+      }
+    },
+    {
+      "rank": 8,
+      "teamCode": "ITA",
+      "teamName": "Italy",
+      "playerCount": 26,
+      "totalValue": 1105000000,
+      "totalValueFormatted": "$1105.0M",
+      "averagePlayerValue": 42500000,
+      "averageValueFormatted": "$42.5M",
+      "mostValuablePlayer": {
+        "name": "Nicolò Barella",
+        "value": "$100.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Matteo Darmian",
+        "value": "$7.5M"
+      }
+    },
+    {
+      "rank": 9,
+      "teamCode": "ARG",
+      "teamName": "Argentina",
+      "playerCount": 26,
+      "totalValue": 951250000,
+      "totalValueFormatted": "$951.0M",
+      "averagePlayerValue": 36586539,
+      "averageValueFormatted": "$36.6M",
+      "mostValuablePlayer": {
+        "name": "Julián Álvarez",
+        "value": "$113.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Franco Armani",
+        "value": "$2.5M"
+      }
+    },
+    {
+      "rank": 10,
+      "teamCode": "BEL",
+      "teamName": "Belgium",
+      "playerCount": 26,
+      "totalValue": 771250000,
+      "totalValueFormatted": "$771.0M",
+      "averagePlayerValue": 29663461,
+      "averageValueFormatted": "$29.6M",
+      "mostValuablePlayer": {
+        "name": "Kevin De Bruyne",
+        "value": "$93.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Arnaud Bodart",
+        "value": "$3.8M"
+      }
+    },
+    {
+      "rank": 11,
+      "teamCode": "URU",
+      "teamName": "Uruguay",
+      "playerCount": 26,
+      "totalValue": 683750000,
+      "totalValueFormatted": "$684.0M",
+      "averagePlayerValue": 26298078,
+      "averageValueFormatted": "$26.3M",
+      "mostValuablePlayer": {
+        "name": "Federico Valverde",
+        "value": "$188.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Fernando Muslera",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 12,
+      "teamCode": "NOR",
+      "teamName": "Norway",
+      "playerCount": 25,
+      "totalValue": 658500000,
+      "totalValueFormatted": "$659.0M",
+      "averagePlayerValue": 26340000,
+      "averageValueFormatted": "$26.4M",
+      "mostValuablePlayer": {
+        "name": "Erling Haaland",
+        "value": "$225.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Sten Grytebust",
+        "value": "$1000K"
+      }
+    },
+    {
+      "rank": 13,
+      "teamCode": "DEN",
+      "teamName": "Denmark",
+      "playerCount": 26,
+      "totalValue": 573750000,
+      "totalValueFormatted": "$574.0M",
+      "averagePlayerValue": 22067308,
+      "averageValueFormatted": "$22.1M",
+      "mostValuablePlayer": {
+        "name": "Rasmus Højlund",
+        "value": "$81.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Jens Stryger Larsen",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 14,
+      "teamCode": "NGA",
+      "teamName": "Nigeria",
+      "playerCount": 26,
+      "totalValue": 523750000,
+      "totalValueFormatted": "$524.0M",
+      "averagePlayerValue": 20144231,
+      "averageValueFormatted": "$20.1M",
+      "mostValuablePlayer": {
+        "name": "Victor Osimhen",
+        "value": "$93.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Stanley Nwabali",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 15,
+      "teamCode": "USA",
+      "teamName": "United States",
+      "playerCount": 26,
+      "totalValue": 468750000,
+      "totalValueFormatted": "$469.0M",
+      "averagePlayerValue": 18028846,
+      "averageValueFormatted": "$18.0M",
+      "mostValuablePlayer": {
+        "name": "Christian Pulisic",
+        "value": "$68.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "DeAndre Yedlin",
+        "value": "$2.5M"
+      }
+    },
+    {
+      "rank": 16,
+      "teamCode": "SUI",
+      "teamName": "Switzerland",
+      "playerCount": 26,
+      "totalValue": 465625000,
+      "totalValueFormatted": "$466.0M",
+      "averagePlayerValue": 17908654,
+      "averageValueFormatted": "$17.9M",
+      "mostValuablePlayer": {
+        "name": "Manuel Akanji",
+        "value": "$56.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Steven Zuber",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 17,
+      "teamCode": "CRO",
+      "teamName": "Croatia",
+      "playerCount": 26,
+      "totalValue": 463750000,
+      "totalValueFormatted": "$464.0M",
+      "averagePlayerValue": 17836539,
+      "averageValueFormatted": "$17.9M",
+      "mostValuablePlayer": {
+        "name": "Josko Gvardiol",
+        "value": "$106.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Borna Barisic",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 18,
+      "teamCode": "ECU",
+      "teamName": "Ecuador",
+      "playerCount": 26,
+      "totalValue": 433125000,
+      "totalValueFormatted": "$433.0M",
+      "averagePlayerValue": 16658654,
+      "averageValueFormatted": "$16.6M",
+      "mostValuablePlayer": {
+        "name": "Moisés Caicedo",
+        "value": "$150.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Alexander Domínguez",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 19,
+      "teamCode": "JPN",
+      "teamName": "Japan",
+      "playerCount": 26,
+      "totalValue": 431875000,
+      "totalValueFormatted": "$432.0M",
+      "averagePlayerValue": 16610578,
+      "averageValueFormatted": "$16.6M",
+      "mostValuablePlayer": {
+        "name": "Takefusa Kubo",
+        "value": "$62.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "Maya Yoshida",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 20,
+      "teamCode": "MAR",
+      "teamName": "Morocco",
+      "playerCount": 26,
+      "totalValue": 422500000,
+      "totalValueFormatted": "$423.0M",
+      "averagePlayerValue": 16250000,
+      "averageValueFormatted": "$16.3M",
+      "mostValuablePlayer": {
+        "name": "Achraf Hakimi",
+        "value": "$81.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Ahmed Tagnaouti",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 21,
+      "teamCode": "AUT",
+      "teamName": "Austria",
+      "playerCount": 26,
+      "totalValue": 405000000,
+      "totalValueFormatted": "$405.0M",
+      "averagePlayerValue": 15576923,
+      "averageValueFormatted": "$15.6M",
+      "mostValuablePlayer": {
+        "name": "Konrad Laimer",
+        "value": "$43.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Heinz Lindner",
+        "value": "$1.9M"
+      }
+    },
+    {
+      "rank": 22,
+      "teamCode": "SEN",
+      "teamName": "Senegal",
+      "playerCount": 26,
+      "totalValue": 395000000,
+      "totalValueFormatted": "$395.0M",
+      "averagePlayerValue": 15192308,
+      "averageValueFormatted": "$15.3M",
+      "mostValuablePlayer": {
+        "name": "Nicolas Jackson",
+        "value": "$62.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "Cheikhou Kouyate",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 23,
+      "teamCode": "SRB",
+      "teamName": "Serbia",
+      "playerCount": 26,
+      "totalValue": 371875000,
+      "totalValueFormatted": "$372.0M",
+      "averagePlayerValue": 14302885,
+      "averageValueFormatted": "$14.3M",
+      "mostValuablePlayer": {
+        "name": "Dušan Vlahović",
+        "value": "$81.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Stefan Mitrović",
+        "value": "$1.9M"
+      }
+    },
+    {
+      "rank": 24,
+      "teamCode": "CIV",
+      "teamName": "Ivory Coast",
+      "playerCount": 26,
+      "totalValue": 356250000,
+      "totalValueFormatted": "$356.0M",
+      "averagePlayerValue": 13701923,
+      "averageValueFormatted": "$13.8M",
+      "mostValuablePlayer": {
+        "name": "Ibrahim Sangaré",
+        "value": "$43.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Eliezer Ira",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 25,
+      "teamCode": "COL",
+      "teamName": "Colombia",
+      "playerCount": 26,
+      "totalValue": 350000000,
+      "totalValueFormatted": "$350.0M",
+      "averagePlayerValue": 13461539,
+      "averageValueFormatted": "$13.5M",
+      "mostValuablePlayer": {
+        "name": "Luis Diaz",
+        "value": "$93.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "David Ospina",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 26,
+      "teamCode": "POL",
+      "teamName": "Poland",
+      "playerCount": 26,
+      "totalValue": 334375000,
+      "totalValueFormatted": "$334.0M",
+      "averagePlayerValue": 12860578,
+      "averageValueFormatted": "$12.9M",
+      "mostValuablePlayer": {
+        "name": "Piotr Zieliński",
+        "value": "$43.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Kamil Glik",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 27,
+      "teamCode": "GHA",
+      "teamName": "Ghana",
+      "playerCount": 26,
+      "totalValue": 328750000,
+      "totalValueFormatted": "$329.0M",
+      "averagePlayerValue": 12644231,
+      "averageValueFormatted": "$12.6M",
+      "mostValuablePlayer": {
+        "name": "Mohammed Kudus",
+        "value": "$68.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Joseph Wollacott",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 28,
+      "teamCode": "KOR",
+      "teamName": "Korea Republic",
+      "playerCount": 26,
+      "totalValue": 315000000,
+      "totalValueFormatted": "$315.0M",
+      "averagePlayerValue": 12115385,
+      "averageValueFormatted": "$12.1M",
+      "mostValuablePlayer": {
+        "name": "Kim Min-jae",
+        "value": "$87.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "Kim Tae-hwan",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 29,
+      "teamCode": "CMR",
+      "teamName": "Cameroon",
+      "playerCount": 26,
+      "totalValue": 305750000,
+      "totalValueFormatted": "$306.0M",
+      "averagePlayerValue": 11759615,
+      "averageValueFormatted": "$11.8M",
+      "mostValuablePlayer": {
+        "name": "André-Frank Zambo Anguissa",
+        "value": "$62.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "Léandre Tawamba",
+        "value": "$375K"
+      }
+    },
+    {
+      "rank": 30,
+      "teamCode": "EGY",
+      "teamName": "Egypt",
+      "playerCount": 26,
+      "totalValue": 286625000,
+      "totalValueFormatted": "$287.0M",
+      "averagePlayerValue": 11024039,
+      "averageValueFormatted": "$11.0M",
+      "mostValuablePlayer": {
+        "name": "Mohamed Salah",
+        "value": "$125.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Karim Hafez",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 31,
+      "teamCode": "SCO",
+      "teamName": "Scotland",
+      "playerCount": 26,
+      "totalValue": 282125000,
+      "totalValueFormatted": "$282.0M",
+      "averagePlayerValue": 10850961,
+      "averageValueFormatted": "$10.9M",
+      "mostValuablePlayer": {
+        "name": "John McGinn",
+        "value": "$43.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Craig Gordon",
+        "value": "$500K"
+      }
+    },
+    {
+      "rank": 32,
+      "teamCode": "CAN",
+      "teamName": "Canada",
+      "playerCount": 26,
+      "totalValue": 270750000,
+      "totalValueFormatted": "$271.0M",
+      "averagePlayerValue": 10413461,
+      "averageValueFormatted": "$10.4M",
+      "mostValuablePlayer": {
+        "name": "Alphonso Davies",
+        "value": "$87.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "David Wotherspoon",
+        "value": "$375K"
+      }
+    },
+    {
+      "rank": 33,
+      "teamCode": "ALG",
+      "teamName": "Algeria",
+      "playerCount": 26,
+      "totalValue": 268375000,
+      "totalValueFormatted": "$268.0M",
+      "averagePlayerValue": 10322115,
+      "averageValueFormatted": "$10.4M",
+      "mostValuablePlayer": {
+        "name": "Ismaël Bennacer",
+        "value": "$50.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Raïs M'Bolhi",
+        "value": "$250K"
+      }
+    },
+    {
+      "rank": 34,
+      "teamCode": "MEX",
+      "teamName": "Mexico",
+      "playerCount": 26,
+      "totalValue": 261250000,
+      "totalValueFormatted": "$261.0M",
+      "averagePlayerValue": 10048078,
+      "averageValueFormatted": "$10.0M",
+      "mostValuablePlayer": {
+        "name": "Edson Alvarez",
+        "value": "$43.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Rodolfo Cota",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 35,
+      "teamCode": "PAR",
+      "teamName": "Paraguay",
+      "playerCount": 26,
+      "totalValue": 165500000,
+      "totalValueFormatted": "$166.0M",
+      "averagePlayerValue": 6365385,
+      "averageValueFormatted": "$6.4M",
+      "mostValuablePlayer": {
+        "name": "Miguel Almiron",
+        "value": "$31.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Antony Silva",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 36,
+      "teamCode": "CHI",
+      "teamName": "Chile",
+      "playerCount": 26,
+      "totalValue": 133125000,
+      "totalValueFormatted": "$133.0M",
+      "averagePlayerValue": 5120193,
+      "averageValueFormatted": "$5.1M",
+      "mostValuablePlayer": {
+        "name": "Darío Osorio",
+        "value": "$15.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Mauricio Isla",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 37,
+      "teamCode": "JAM",
+      "teamName": "Jamaica",
+      "playerCount": 26,
+      "totalValue": 124250000,
+      "totalValueFormatted": "$124.0M",
+      "averagePlayerValue": 4778846,
+      "averageValueFormatted": "$4.8M",
+      "mostValuablePlayer": {
+        "name": "Leon Bailey",
+        "value": "$31.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Lamar Walker",
+        "value": "$375K"
+      }
+    },
+    {
+      "rank": 38,
+      "teamCode": "TUN",
+      "teamName": "Tunisia",
+      "playerCount": 26,
+      "totalValue": 114000000,
+      "totalValueFormatted": "$114.0M",
+      "averagePlayerValue": 4384615,
+      "averageValueFormatted": "$4.4M",
+      "mostValuablePlayer": {
+        "name": "Ellyes Skhiri",
+        "value": "$25.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Hamza Mathlouthi",
+        "value": "$250K"
+      }
+    },
+    {
+      "rank": 39,
+      "teamCode": "KSA",
+      "teamName": "Saudi Arabia",
+      "playerCount": 26,
+      "totalValue": 96875000,
+      "totalValueFormatted": "$96.9M",
+      "averagePlayerValue": 3725961,
+      "averageValueFormatted": "$3.8M",
+      "mostValuablePlayer": {
+        "name": "Saud Abdulhamid",
+        "value": "$10.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Fawaz Al-Qarni",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 40,
+      "teamCode": "IRN",
+      "teamName": "Iran",
+      "playerCount": 26,
+      "totalValue": 82250000,
+      "totalValueFormatted": "$82.3M",
+      "averagePlayerValue": 3163461,
+      "averageValueFormatted": "$3.1M",
+      "mostValuablePlayer": {
+        "name": "Mehdi Taremi",
+        "value": "$10.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Ramin Rezaeian",
+        "value": "$1000K"
+      }
+    },
+    {
+      "rank": 41,
+      "teamCode": "AUS",
+      "teamName": "Australia",
+      "playerCount": 26,
+      "totalValue": 79250000,
+      "totalValueFormatted": "$79.3M",
+      "averagePlayerValue": 3048078,
+      "averageValueFormatted": "$3.0M",
+      "mostValuablePlayer": {
+        "name": "Harry Souttar",
+        "value": "$12.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "Aziz Behich",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 42,
+      "teamCode": "NZL",
+      "teamName": "New Zealand",
+      "playerCount": 26,
+      "totalValue": 76750000,
+      "totalValueFormatted": "$76.8M",
+      "averagePlayerValue": 2951923,
+      "averageValueFormatted": "$3.0M",
+      "mostValuablePlayer": {
+        "name": "Chris Wood",
+        "value": "$25.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Andre De Jong",
+        "value": "$250K"
+      }
+    },
+    {
+      "rank": 43,
+      "teamCode": "QAT",
+      "teamName": "Qatar",
+      "playerCount": 26,
+      "totalValue": 66875000,
+      "totalValueFormatted": "$66.9M",
+      "averagePlayerValue": 2572115,
+      "averageValueFormatted": "$2.6M",
+      "mostValuablePlayer": {
+        "name": "Akram Afif",
+        "value": "$10.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Yusuf Saleh",
+        "value": "$1.3M"
+      }
+    },
+    {
+      "rank": 44,
+      "teamCode": "PER",
+      "teamName": "Peru",
+      "playerCount": 26,
+      "totalValue": 66125000,
+      "totalValueFormatted": "$66.1M",
+      "averagePlayerValue": 2543269,
+      "averageValueFormatted": "$2.5M",
+      "mostValuablePlayer": {
+        "name": "Marcos López",
+        "value": "$8.8M"
+      },
+      "leastValuablePlayer": {
+        "name": "Carlos Cáceda",
+        "value": "$625K"
+      }
+    },
+    {
+      "rank": 45,
+      "teamCode": "CRC",
+      "teamName": "Costa Rica",
+      "playerCount": 26,
+      "totalValue": 63750000,
+      "totalValueFormatted": "$63.8M",
+      "averagePlayerValue": 2451923,
+      "averageValueFormatted": "$2.5M",
+      "mostValuablePlayer": {
+        "name": "Manfred Ugalde",
+        "value": "$10.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Johan Venegas",
+        "value": "$500K"
+      }
+    },
+    {
+      "rank": 46,
+      "teamCode": "HON",
+      "teamName": "Honduras",
+      "playerCount": 26,
+      "totalValue": 51625000,
+      "totalValueFormatted": "$51.6M",
+      "averagePlayerValue": 1985578,
+      "averageValueFormatted": "$2.0M",
+      "mostValuablePlayer": {
+        "name": "Luis Palma",
+        "value": "$15.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Jerry Bengtson",
+        "value": "$125K"
+      }
+    },
+    {
+      "rank": 47,
+      "teamCode": "UZB",
+      "teamName": "Uzbekistan",
+      "playerCount": 26,
+      "totalValue": 46875000,
+      "totalValueFormatted": "$46.9M",
+      "averagePlayerValue": 1802885,
+      "averageValueFormatted": "$1.8M",
+      "mostValuablePlayer": {
+        "name": "Abbos Fayzullayev",
+        "value": "$9.4M"
+      },
+      "leastValuablePlayer": {
+        "name": "Donier Islamov",
+        "value": "$250K"
+      }
+    },
+    {
+      "rank": 48,
+      "teamCode": "PAN",
+      "teamName": "Panama",
+      "playerCount": 26,
+      "totalValue": 39625000,
+      "totalValueFormatted": "$39.6M",
+      "averagePlayerValue": 1524039,
+      "averageValueFormatted": "$1.5M",
+      "mostValuablePlayer": {
+        "name": "Michael Murillo",
+        "value": "$4.4M"
+      },
+      "leastValuablePlayer": {
+        "name": "Jezreel Corrales",
+        "value": "$375K"
+      }
+    },
+    {
+      "rank": 49,
+      "teamCode": "CPV",
+      "teamName": "Cape Verde",
+      "playerCount": 26,
+      "totalValue": 33000000,
+      "totalValueFormatted": "$33.0M",
+      "averagePlayerValue": 1269231,
+      "averageValueFormatted": "$1.3M",
+      "mostValuablePlayer": {
+        "name": "Logan Costa",
+        "value": "$6.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Kelvin Pires",
+        "value": "$375K"
+      }
+    },
+    {
+      "rank": 50,
+      "teamCode": "RSA",
+      "teamName": "South Africa",
+      "playerCount": 25,
+      "totalValue": 28000000,
+      "totalValueFormatted": "$28.0M",
+      "averagePlayerValue": 1120000,
+      "averageValueFormatted": "$1120K",
+      "mostValuablePlayer": {
+        "name": "Lyle Foster",
+        "value": "$7.5M"
+      },
+      "leastValuablePlayer": {
+        "name": "Veli Mothwa",
+        "value": "$375K"
+      }
+    },
+    {
+      "rank": 51,
+      "teamCode": "CUR",
+      "teamName": "Curacao",
+      "playerCount": 26,
+      "totalValue": 24875000,
+      "totalValueFormatted": "$24.9M",
+      "averagePlayerValue": 956731,
+      "averageValueFormatted": "$956K",
+      "mostValuablePlayer": {
+        "name": "Riechedly Bazoer",
+        "value": "$5.0M"
+      },
+      "leastValuablePlayer": {
+        "name": "Darryl Lachman",
+        "value": "$125K"
+      }
+    },
+    {
+      "rank": 52,
+      "teamCode": "JOR",
+      "teamName": "Jordan",
+      "playerCount": 26,
+      "totalValue": 19500000,
+      "totalValueFormatted": "$19.5M",
+      "averagePlayerValue": 750000,
+      "averageValueFormatted": "$750K",
+      "mostValuablePlayer": {
+        "name": "Mousa Al-Taamari",
+        "value": "$6.3M"
+      },
+      "leastValuablePlayer": {
+        "name": "Baha' Abdulrahman",
+        "value": "$250K"
+      }
+    },
+    {
+      "rank": 53,
+      "teamCode": "HAI",
+      "teamName": "Haiti",
+      "playerCount": 26,
+      "totalValue": 15375000,
+      "totalValueFormatted": "$15.4M",
+      "averagePlayerValue": 591346,
+      "averageValueFormatted": "$591K",
+      "mostValuablePlayer": {
+        "name": "Carlin Isidor",
+        "value": "$3.1M"
+      },
+      "leastValuablePlayer": {
+        "name": "Wilde-Donald Guerrier",
+        "value": "$125K"
+      }
+    }
+  ]
+}

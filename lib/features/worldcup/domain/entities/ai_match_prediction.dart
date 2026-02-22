@@ -68,6 +68,33 @@ class AIMatchPrediction extends Equatable {
   /// Time-to-live in minutes (for cache invalidation)
   final int ttlMinutes;
 
+  /// Whether this match has upset potential
+  final bool isUpsetAlert;
+
+  /// Upset alert description (if applicable)
+  final String? upsetAlertText;
+
+  /// Squad value comparison narrative
+  final String? squadValueNarrative;
+
+  /// Manager tactical matchup description
+  final String? managerMatchup;
+
+  /// Relevant historical patterns for this matchup
+  final List<String> historicalPatterns;
+
+  /// Confidence debate text (why AI is uncertain, shown when confidence < 60)
+  final String? confidenceDebate;
+
+  /// Recent form summary for home team
+  final String? homeRecentForm;
+
+  /// Recent form summary for away team
+  final String? awayRecentForm;
+
+  /// Betting odds implied probability for favorite
+  final String? bettingOddsSummary;
+
   const AIMatchPrediction({
     required this.matchId,
     required this.predictedOutcome,
@@ -83,6 +110,15 @@ class AIMatchPrediction extends Equatable {
     required this.provider,
     required this.generatedAt,
     this.ttlMinutes = 1440, // 24 hours for persistent caching
+    this.isUpsetAlert = false,
+    this.upsetAlertText,
+    this.squadValueNarrative,
+    this.managerMatchup,
+    this.historicalPatterns = const [],
+    this.confidenceDebate,
+    this.homeRecentForm,
+    this.awayRecentForm,
+    this.bettingOddsSummary,
   });
 
   @override
@@ -148,6 +184,18 @@ class AIMatchPrediction extends Equatable {
           ? DateTime.parse(map['generatedAt'] as String)
           : DateTime.now(),
       ttlMinutes: map['ttlMinutes'] as int? ?? 1440, // 24 hours default
+      isUpsetAlert: map['isUpsetAlert'] as bool? ?? false,
+      upsetAlertText: map['upsetAlertText'] as String?,
+      squadValueNarrative: map['squadValueNarrative'] as String?,
+      managerMatchup: map['managerMatchup'] as String?,
+      historicalPatterns: (map['historicalPatterns'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          [],
+      confidenceDebate: map['confidenceDebate'] as String?,
+      homeRecentForm: map['homeRecentForm'] as String?,
+      awayRecentForm: map['awayRecentForm'] as String?,
+      bettingOddsSummary: map['bettingOddsSummary'] as String?,
     );
   }
 
@@ -168,6 +216,15 @@ class AIMatchPrediction extends Equatable {
       'provider': provider,
       'generatedAt': generatedAt.toIso8601String(),
       'ttlMinutes': ttlMinutes,
+      'isUpsetAlert': isUpsetAlert,
+      'upsetAlertText': upsetAlertText,
+      'squadValueNarrative': squadValueNarrative,
+      'managerMatchup': managerMatchup,
+      'historicalPatterns': historicalPatterns,
+      'confidenceDebate': confidenceDebate,
+      'homeRecentForm': homeRecentForm,
+      'awayRecentForm': awayRecentForm,
+      'bettingOddsSummary': bettingOddsSummary,
     };
   }
 
@@ -187,6 +244,15 @@ class AIMatchPrediction extends Equatable {
     String? provider,
     DateTime? generatedAt,
     int? ttlMinutes,
+    bool? isUpsetAlert,
+    String? upsetAlertText,
+    String? squadValueNarrative,
+    String? managerMatchup,
+    List<String>? historicalPatterns,
+    String? confidenceDebate,
+    String? homeRecentForm,
+    String? awayRecentForm,
+    String? bettingOddsSummary,
   }) {
     return AIMatchPrediction(
       matchId: matchId ?? this.matchId,
@@ -203,6 +269,15 @@ class AIMatchPrediction extends Equatable {
       provider: provider ?? this.provider,
       generatedAt: generatedAt ?? this.generatedAt,
       ttlMinutes: ttlMinutes ?? this.ttlMinutes,
+      isUpsetAlert: isUpsetAlert ?? this.isUpsetAlert,
+      upsetAlertText: upsetAlertText ?? this.upsetAlertText,
+      squadValueNarrative: squadValueNarrative ?? this.squadValueNarrative,
+      managerMatchup: managerMatchup ?? this.managerMatchup,
+      historicalPatterns: historicalPatterns ?? this.historicalPatterns,
+      confidenceDebate: confidenceDebate ?? this.confidenceDebate,
+      homeRecentForm: homeRecentForm ?? this.homeRecentForm,
+      awayRecentForm: awayRecentForm ?? this.awayRecentForm,
+      bettingOddsSummary: bettingOddsSummary ?? this.bettingOddsSummary,
     );
   }
 

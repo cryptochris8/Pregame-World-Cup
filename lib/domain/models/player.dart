@@ -19,7 +19,7 @@ class Player {
   final String club;
   final String clubLeague;
   final String photoUrl;
-  final int marketValue; // in euros
+  final int marketValue; // in USD
   final int caps;
   final int goals;
   final int assists;
@@ -175,14 +175,14 @@ class Player {
     };
   }
 
-  /// Get formatted market value (e.g., "€80M")
+  /// Get formatted market value (e.g., "\$80M")
   String get formattedMarketValue {
     if (marketValue >= 1000000) {
-      return '€${(marketValue / 1000000).toStringAsFixed(0)}M';
+      return '\$${(marketValue / 1000000).toStringAsFixed(0)}M';
     } else if (marketValue >= 1000) {
-      return '€${(marketValue / 1000).toStringAsFixed(0)}K';
+      return '\$${(marketValue / 1000).toStringAsFixed(0)}K';
     }
-    return '€$marketValue';
+    return '\$$marketValue';
   }
 
   /// Get position display name

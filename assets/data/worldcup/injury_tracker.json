@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "lastUpdated": "2026-02-21",
+    "description": "Key player injury and availability tracker for World Cup 2026",
+    "notes": "Data sourced from verified sports news outlets. Availability statuses: fit, minor_concern, doubt, major_doubt, injured, long_term_injured, retired_international"
+  },
+  "players": [
+    {
+      "playerName": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "country": "France",
+      "club": "Real Madrid",
+      "position": "Forward",
+      "injuryType": "Recurring left knee discomfort/sprain",
+      "injuryDate": "2025-12-31",
+      "expectedReturn": "Currently playing through management",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-14",
+        "opponent": "Real Sociedad (La Liga)",
+        "notes": "Returned to team training Feb 13, declared available"
+      },
+      "source": "beIN Sports, Managing Madrid, FOX Sports, SI.com - Feb 2026",
+      "notes": "Sprained left knee Dec 2025, returned early for Supercopa final (11 days vs recommended recovery). Missed training mid-Feb but returned Feb 13. Recurring knee discomfort being managed. Expected fit for World Cup barring setback."
+    },
+    {
+      "playerName": "Jude Bellingham",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Real Madrid",
+      "position": "Midfielder",
+      "injuryType": "Left hamstring (semitendinosus muscle injury)",
+      "injuryDate": "2026-02-01",
+      "expectedReturn": "Early April 2026",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-02-01",
+        "opponent": "Rayo Vallecano (La Liga)",
+        "notes": "Left match in tears with less than 10 minutes on clock"
+      },
+      "source": "beIN Sports, Goal.com, FOX Sports, GB News - Feb 18, 2026",
+      "notes": "Injury worse than first feared. Will miss England's final pre-WC camp (March friendlies vs Uruguay and Japan). England boss Tuchel described it as 'a race against time'. If physically fit, expected to be selected. England opens WC vs Croatia June 17."
+    },
+    {
+      "playerName": "Lionel Messi",
+      "teamCode": "ARG",
+      "country": "Argentina",
+      "club": "Inter Miami (MLS)",
+      "position": "Forward",
+      "injuryType": "Left hamstring muscle strain",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "Early March 2026 (MLS season start)",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-01-15",
+        "opponent": "Barcelona SC (preseason friendly)",
+        "notes": "Scored first goal of 2026 but exited 57th minute with hamstring strain"
+      },
+      "source": "Goal.com, SI.com, Al Jazeera, FIFA.com, Yahoo Sports - Feb 2026",
+      "notes": "Age 38. Not retired from international football. Said 'the most logical thing is that I won't make it' due to age but remains 'excited and motivated'. Needs consistent playing time and fitness. Argentina in Group J (Algeria, Austria, Jordan). Likely final World Cup if he plays."
+    },
+    {
+      "playerName": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "country": "Portugal",
+      "club": "Al Nassr (Saudi Pro League)",
+      "position": "Forward",
+      "injuryType": "No current significant injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-15",
+        "opponent": "Al Nassr league match",
+        "notes": "Active and playing regularly"
+      },
+      "source": "FOX Sports, SI.com, FIFA.com - Feb 2026",
+      "notes": "Age 41. Will be at record 6th World Cup. Portugal qualified with 9-1 rout of Armenia (Ronaldo was suspended for that match). Revealed he was nursing a knock during 2025 Nations League final but played through. Not expected to play every minute. Coach Martinez managing his workload."
+    },
+    {
+      "playerName": "Erling Haaland",
+      "teamCode": "NOR",
+      "country": "Norway",
+      "club": "Manchester City",
+      "position": "Forward",
+      "injuryType": "Minor niggles/fitness management",
+      "injuryDate": "2026-02-11",
+      "expectedReturn": "Available as of Feb 21, 2026",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-11",
+        "opponent": "Fulham (Premier League)",
+        "notes": "Came off at half-time with niggles, rested vs Salford (FA Cup)"
+      },
+      "source": "SI.com, Sports Mole, Manchester City official - Feb 2026",
+      "notes": "Norway qualified for first World Cup since 1998 with perfect 8-0 record. Haaland scored 16 goals in qualifying (tied Lewandowski's record). Guardiola confirmed 'fully fit' for Newcastle match. Minor management issue, not a significant injury concern."
+    },
+    {
+      "playerName": "Vinicius Junior",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Real Madrid",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit and playing",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-21",
+        "opponent": "Osasuna (La Liga)",
+        "notes": "Played 90 minutes, scored 1 goal, received yellow card"
+      },
+      "source": "FotMob, SI.com, Sofascore - Feb 21, 2026",
+      "notes": "9 goals, 5 assists in La Liga 2025/26. Brazil coach Ancelotti stated Vinicius must be '100% fit' to make WC squad. Currently in strong form with goals in 3 consecutive matches (Real Sociedad, Benfica, Osasuna). Under UEFA investigation for alleged racial incident vs Benfica."
+    },
+    {
+      "playerName": "Neymar",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Santos FC",
+      "position": "Forward",
+      "injuryType": "Knee surgery (chronic knee problem, previous ACL tear)",
+      "injuryDate": "2025-12-01",
+      "expectedReturn": "April-May 2026 (estimated)",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2025-11-15",
+        "opponent": "Santos league match (before surgery)",
+        "notes": "Underwent knee surgery December 2025"
+      },
+      "source": "FOX Sports, ESPN, Goal.com, FIFA.com - Feb 2026",
+      "notes": "Age 34. Underwent knee surgery Dec 2025 following previous ACL tear that cost him a year. Returned to Santos. Ancelotti said he must be '100%, not 80%' to make squad. Neymar promised fans: 'We are going to do the impossible to bring the sixth title.' Admitted 2026 retirement is 'possible'. Race against time."
+    },
+    {
+      "playerName": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "country": "Belgium",
+      "club": "Napoli",
+      "position": "Midfielder",
+      "injuryType": "High-grade right thigh tear (femoral bicep)",
+      "injuryDate": "2025-10-25",
+      "expectedReturn": "March 2026 (light training)",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2025-10-25",
+        "opponent": "Inter Milan (Serie A)",
+        "notes": "Injured while scoring from penalty spot. 116+ days sidelined."
+      },
+      "source": "FOX Sports, TSN, GB News, Yahoo Sports - Feb 2026",
+      "notes": "Age 34. Joined Napoli from Man City as free agent summer 2025. High-grade lesion in same area as previous surgery. Only made 8 Serie A appearances before injury. Rehab in Belgium with specialist. Could return to light training in March but narrow window to regain match fitness before WC squad selection. Major blow for Belgium."
+    },
+    {
+      "playerName": "Pedri",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Barcelona",
+      "position": "Midfielder",
+      "injuryType": "Hamstring injury",
+      "injuryDate": "2026-01-22",
+      "expectedReturn": "Late February 2026",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-01-22",
+        "opponent": "Barcelona La Liga match",
+        "notes": "Confirmed out for approximately one month"
+      },
+      "source": "ESPN, FOX Sports, beIN Sports, Tribuna.com - Feb 2026",
+      "notes": "Expected to return by end of February. Should be fit for Finalissima (Spain vs Argentina, March 27). History of recurring injuries throughout career. Spain expects to have him available for World Cup. Positive spirits during recovery."
+    },
+    {
+      "playerName": "Lamine Yamal",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Barcelona",
+      "position": "Forward",
+      "injuryType": "Chronic pubalgia (athletic pubalgia/sports hernia)",
+      "injuryDate": "2025-09-01",
+      "expectedReturn": "Currently playing (managed condition)",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-15",
+        "opponent": "Barcelona La Liga match",
+        "notes": "Back to near-best form after radiofrequency treatment"
+      },
+      "source": "ESPN, Football-Espana, World Soccer Talk - Feb 2026",
+      "notes": "Underwent minor radiofrequency intervention in Belgium that was the turning point. Issue 'practically gone' since November. However, it is an overuse injury that worsens without proper rest - needs ongoing management. Tension between Barcelona and RFEF over workload management. Expected fit for WC."
+    },
+    {
+      "playerName": "Mikel Merino",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Arsenal",
+      "position": "Midfielder",
+      "injuryType": "Stress fracture in right foot (rare bone injury)",
+      "injuryDate": "2026-01-25",
+      "expectedReturn": "June 2026 (4 months post-surgery)",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-01-25",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "Suffered injury at end of match"
+      },
+      "source": "Sky Sports, Arsenal.com, Daily Cannon, Tribuna.com - Feb 2026",
+      "notes": "Surgery on Feb 9, 2026. Father described it as 'not very documented' stress fracture. Out for remainder of domestic season. Slim chances of recovery in time for WC (return could be early August per Arteta). Spain coach expressed concern. Would need to be fit by late May/early June for squad selection."
+    },
+    {
+      "playerName": "Bukayo Saka",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Arsenal",
+      "position": "Forward/Winger",
+      "injuryType": "Knee knock (minor, from collision)",
+      "injuryDate": "2026-02-19",
+      "expectedReturn": "Feb 22, 2026 (North London Derby)",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-19",
+        "opponent": "Wolves (Premier League)",
+        "notes": "Limped off in second half, collision with Santiago Bueno. Completed post-match media duties."
+      },
+      "source": "Arsenal.com, FourFourTwo, Arsenal Insider, NBC Sports - Feb 2026",
+      "notes": "Minor knock, expected available for Tottenham derby Feb 22. No significant injury concern for World Cup. Key player for England's campaign."
+    },
+    {
+      "playerName": "Harry Kane",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Bayern Munich",
+      "position": "Forward",
+      "injuryType": "Various minor issues (calf, ankle, illness)",
+      "injuryDate": "2026-02-04",
+      "expectedReturn": "Currently available",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-14",
+        "opponent": "Bayern Munich Bundesliga match",
+        "notes": "Missed training Feb 4 due to illness, also previous calf/facial injuries"
+      },
+      "source": "Bundesliga.com, SI.com, Goal.com, Sportingpedia - Feb 2026",
+      "notes": "Multiple minor injuries throughout 2025-26 season (calf, ankle Oct 2025, facial injury, illness Feb 2026). None appear to be long-term concerns. Missed England friendly vs Wales with ankle issue in Oct 2025. Pattern of minor niggles but consistently returns."
+    },
+    {
+      "playerName": "Mohamed Salah",
+      "teamCode": "EGY",
+      "country": "Egypt",
+      "club": "Liverpool",
+      "position": "Forward",
+      "injuryType": "Hamstring injury",
+      "injuryDate": "2026-01-10",
+      "expectedReturn": "Early February 2026",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-10",
+        "opponent": "Liverpool Premier League match (estimated return)",
+        "notes": "Sustained hamstring injury during AFCON match vs Ghana. Out 21-28 days."
+      },
+      "source": "Liverpool FC, ESPN, FourFourTwo - Jan/Feb 2026",
+      "notes": "Age 33. Egypt qualified for WC unbeaten (8W, 2D, 26 pts). Salah scored 9 goals in qualifying with a brace vs Djibouti to clinch qualification. Hamstring injury during AFCON 2026 was more serious than first thought. Reports of possible Liverpool departure on loan. Likely his final World Cup."
+    },
+    {
+      "playerName": "Luka Modric",
+      "teamCode": "CRO",
+      "country": "Croatia",
+      "club": "AC Milan",
+      "position": "Midfielder",
+      "injuryType": "No current injury (minor muscle issues in season)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-13",
+        "opponent": "Pisa (Serie A)",
+        "notes": "Scored match-winning goal in 1-2 away victory"
+      },
+      "source": "Transfermarkt, beIN Sports, Wikipedia - Feb 2026",
+      "notes": "Age 40 (born Sep 9, 1985). Would be 40 at WC, making this his 5th World Cup (2006, 2014, 2018, 2022, 2026). Joined AC Milan from Real Madrid on free transfer Jul 2025. Stated winning the World Cup with Croatia is his final goal before retirement. Currently performing well in Serie A."
+    },
+    {
+      "playerName": "Son Heung-min",
+      "teamCode": "KOR",
+      "country": "South Korea",
+      "club": "LAFC (MLS)",
+      "position": "Forward",
+      "injuryType": "Various (hamstring, foot - recurring throughout qualifying)",
+      "injuryDate": "2025-08-01",
+      "expectedReturn": "Currently playing in MLS",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-15",
+        "opponent": "LAFC MLS match (estimated)",
+        "notes": "MLS season in progress"
+      },
+      "source": "Korea Herald, Korea Times, Wikipedia - 2025/2026",
+      "notes": "Age 33. Moved to LAFC from Tottenham Aug 2025 for $26.5M (MLS record). Missed WC qualifying matches with hamstring injury (Sep 2024) and foot injury (Jun 2025). Coach Hong Myung-bo said he won't push banged-up captain too hard. Fitness management ongoing. South Korea coach says Son must 'forget his Tottenham woes'."
+    },
+    {
+      "playerName": "Christian Pulisic",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "AC Milan",
+      "position": "Forward/Winger",
+      "injuryType": "Recurring hamstring/bursitis issues",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "Currently playing through fitness management",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-15",
+        "opponent": "AC Milan Serie A match",
+        "notes": "Third injury of 2025-26 season. Currently dealing with bursitis near hip."
+      },
+      "source": "ESPN, World Soccer Talk, SI.com, Pro Football Network - Feb 2026",
+      "notes": "Hamstring tear Oct 2025 on international duty sidelined him nearly a month. Now bursitis near hip. Zero goals in 2026 (4 goals since Oct return, all before Jan). Pochettino concerned about constant unavailability. When fit, he is 'undroppable' for USMNT. USA are co-hosts, opening June 11."
+    },
+    {
+      "playerName": "Alphonso Davies",
+      "teamCode": "CAN",
+      "country": "Canada",
+      "club": "Bayern Munich",
+      "position": "Defender/Left-back",
+      "injuryType": "Right hamstring torn muscle fibre (new), previous ACL tear",
+      "injuryDate": "2026-02-21",
+      "expectedReturn": "TBD (3-6 weeks typical for muscle fibre tear)",
+      "availabilityStatus": "injured",
+      "lastMatchPlayed": {
+        "date": "2026-02-21",
+        "opponent": "Eintracht Frankfurt (Bundesliga)",
+        "notes": "Forced off at 47th minute with new hamstring injury"
+      },
+      "source": "Tribuna.com, TSN, Yahoo Sports, SI.com, beIN Sports - Feb 21, 2026",
+      "notes": "JUST INJURED TODAY. Tore right ACL in March 2025 (vs USA, CONCACAF Nations League). Only recently returned from that long-term injury in January 2026. Now new muscle fibre tear in right hamstring. 111 days until World Cup. Canada coach Marsch said Davies 'ready for World Cup and excited'. Canada are co-hosts. Very concerning timing."
+    }
+  ]
+}

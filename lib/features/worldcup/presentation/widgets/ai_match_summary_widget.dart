@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../domain/entities/ai_match_prediction.dart';
 import '../../domain/entities/match_summary.dart';
 import 'team_flag.dart';
 
@@ -14,10 +15,16 @@ class AIMatchSummaryWidget extends StatefulWidget {
   final MatchSummary summary;
   final bool initiallyExpanded;
 
+  /// Optional rich prediction from LocalPredictionEngine.
+  /// When provided, the Prediction tab shows full engine output
+  /// instead of the basic Firestore MatchPredictionSummary.
+  final AIMatchPrediction? localPrediction;
+
   const AIMatchSummaryWidget({
     super.key,
     required this.summary,
     this.initiallyExpanded = false,
+    this.localPrediction,
   });
 
   @override
@@ -429,6 +436,448 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
   }
 
   Widget _buildPredictionTab() {
+    final lp = widget.localPrediction;
+    if (lp != null) {
+      return _buildRichPredictionTab(lp);
+    }
+    return _buildFirestorePredictionTab();
+  }
+
+  /// Rich prediction tab powered by LocalPredictionEngine data.
+  Widget _buildRichPredictionTab(AIMatchPrediction prediction) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Score + probability bars
+        _buildPredictionHeader(prediction),
+        const SizedBox(height: 16),
+
+        // Confidence meter
+        _buildConfidenceMeter(prediction.confidence),
+
+        // Upset alert
+        if (prediction.isUpsetAlert && prediction.upsetAlertText != null) ...[
+          const SizedBox(height: 16),
+          _buildUpsetAlert(prediction.upsetAlertText!),
+        ],
+
+        // Key factors
+        if (prediction.keyFactors.isNotEmpty) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Key Factors',
+            Icons.lightbulb,
+            child: Column(
+              children: prediction.keyFactors.map((factor) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(top: 6),
+                        width: 6,
+                        height: 6,
+                        decoration: const BoxDecoration(
+                          color: AppTheme.accentGold,
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          factor,
+                          style: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 14,
+                            height: 1.4,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }).toList(),
+            ),
+          ),
+        ],
+
+        // Recent form
+        if (prediction.homeRecentForm != null ||
+            prediction.awayRecentForm != null) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Recent Form',
+            Icons.trending_up,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (prediction.homeRecentForm != null)
+                  _buildFormRow(widget.summary.team1Name, prediction.homeRecentForm!),
+                if (prediction.homeRecentForm != null &&
+                    prediction.awayRecentForm != null)
+                  const SizedBox(height: 8),
+                if (prediction.awayRecentForm != null)
+                  _buildFormRow(widget.summary.team2Name, prediction.awayRecentForm!),
+              ],
+            ),
+          ),
+        ],
+
+        // Squad value showdown
+        if (prediction.squadValueNarrative != null) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Squad Value Showdown',
+            Icons.attach_money,
+            child: Text(
+              prediction.squadValueNarrative!,
+              style: const TextStyle(
+                color: Colors.white70,
+                fontSize: 14,
+                height: 1.6,
+              ),
+            ),
+          ),
+        ],
+
+        // Manager matchup
+        if (prediction.managerMatchup != null) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Manager Matchup',
+            Icons.person,
+            child: Text(
+              prediction.managerMatchup!,
+              style: const TextStyle(
+                color: Colors.white70,
+                fontSize: 14,
+                height: 1.6,
+              ),
+            ),
+          ),
+        ],
+
+        // Historical patterns
+        if (prediction.historicalPatterns.isNotEmpty) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Historical Patterns',
+            Icons.history,
+            child: Column(
+              children: prediction.historicalPatterns.take(3).map((pattern) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        '\u2022 ',
+                        style: TextStyle(
+                          color: AppTheme.accentGold,
+                          fontSize: 14,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          pattern,
+                          style: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 13,
+                            height: 1.4,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }).toList(),
+            ),
+          ),
+        ],
+
+        // Confidence debate (shown when confidence < 60)
+        if (prediction.confidenceDebate != null) ...[
+          const SizedBox(height: 20),
+          _buildConfidenceDebateSection(prediction.confidenceDebate!),
+        ],
+
+        // Betting odds summary
+        if (prediction.bettingOddsSummary != null) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Betting Odds',
+            Icons.casino,
+            child: Text(
+              prediction.bettingOddsSummary!,
+              style: const TextStyle(
+                color: Colors.white60,
+                fontSize: 13,
+                height: 1.5,
+              ),
+            ),
+          ),
+        ],
+
+        // Analysis
+        if (prediction.analysis.isNotEmpty) ...[
+          const SizedBox(height: 20),
+          _buildSection(
+            'Analysis',
+            Icons.psychology,
+            child: Text(
+              prediction.analysis,
+              style: const TextStyle(
+                color: Colors.white70,
+                fontSize: 14,
+                height: 1.6,
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Prediction header with score, flags, and probability bars.
+  Widget _buildPredictionHeader(AIMatchPrediction prediction) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            AppTheme.primaryPurple.withValues(alpha: 0.2),
+            AppTheme.primaryBlue.withValues(alpha: 0.2),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: AppTheme.primaryPurple.withValues(alpha: 0.3),
+        ),
+      ),
+      child: Column(
+        children: [
+          const Text(
+            'AI PREDICTION',
+            style: TextStyle(
+              color: Colors.white54,
+              fontSize: 10,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.5,
+            ),
+          ),
+          const SizedBox(height: 12),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TeamFlag(teamCode: widget.summary.team1Code, size: 36),
+              const SizedBox(width: 16),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
+                  ),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  prediction.scoreDisplay,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 16),
+              TeamFlag(teamCode: widget.summary.team2Code, size: 36),
+            ],
+          ),
+          const SizedBox(height: 16),
+          // Probability bars
+          _buildProbabilityBars(prediction),
+        ],
+      ),
+    );
+  }
+
+  /// Win/draw/loss probability bars.
+  Widget _buildProbabilityBars(AIMatchPrediction prediction) {
+    return Column(
+      children: [
+        _buildProbabilityRow(
+          widget.summary.team1Name,
+          prediction.homeWinProbability,
+          AppTheme.secondaryEmerald,
+        ),
+        const SizedBox(height: 6),
+        _buildProbabilityRow(
+          'Draw',
+          prediction.drawProbability,
+          AppTheme.primaryOrange,
+        ),
+        const SizedBox(height: 6),
+        _buildProbabilityRow(
+          widget.summary.team2Name,
+          prediction.awayWinProbability,
+          AppTheme.primaryBlue,
+        ),
+      ],
+    );
+  }
+
+  Widget _buildProbabilityRow(String label, int probability, Color color) {
+    return Row(
+      children: [
+        SizedBox(
+          width: 80,
+          child: Text(
+            label,
+            style: const TextStyle(
+              color: Colors.white70,
+              fontSize: 12,
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(3),
+            child: LinearProgressIndicator(
+              value: probability / 100,
+              backgroundColor: Colors.white.withValues(alpha: 0.1),
+              valueColor: AlwaysStoppedAnimation(color),
+              minHeight: 6,
+            ),
+          ),
+        ),
+        const SizedBox(width: 8),
+        SizedBox(
+          width: 36,
+          child: Text(
+            '$probability%',
+            style: TextStyle(
+              color: color,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.right,
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Upset alert banner.
+  Widget _buildUpsetAlert(String text) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.red.withValues(alpha: 0.2),
+            Colors.orange.withValues(alpha: 0.15),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.red.withValues(alpha: 0.4)),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.warning_amber, color: Colors.redAccent, size: 18),
+          const SizedBox(width: 8),
+          const Text(
+            'UPSET ALERT',
+            style: TextStyle(
+              color: Colors.redAccent,
+              fontSize: 11,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 1.2,
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              text,
+              style: const TextStyle(color: Colors.white70, fontSize: 12),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Recent form row for one team.
+  Widget _buildFormRow(String teamName, String form) {
+    return Row(
+      children: [
+        SizedBox(
+          width: 90,
+          child: Text(
+            teamName,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 13,
+              fontWeight: FontWeight.w600,
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            form,
+            style: const TextStyle(color: Colors.white70, fontSize: 13),
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Confidence debate section for close matches.
+  Widget _buildConfidenceDebateSection(String text) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.amber.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.amber.withValues(alpha: 0.3)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.balance, color: Colors.amber, size: 18),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Why This Is Close',
+                  style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  text,
+                  style: const TextStyle(color: Colors.white70, fontSize: 13, height: 1.5),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Fallback: basic Firestore prediction tab (original implementation).
+  Widget _buildFirestorePredictionTab() {
     final prediction = widget.summary.prediction;
 
     return Column(

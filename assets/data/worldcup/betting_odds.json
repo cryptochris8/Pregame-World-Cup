@@ -1,0 +1,1336 @@
+{
+  "metadata": {
+    "title": "FIFA World Cup 2026 Betting Odds & Predictions",
+    "description": "Compiled outright winner odds, group winner odds, golden boot odds, power rankings, and analyst predictions from major bookmakers and sports outlets",
+    "last_updated": "2026-02-21",
+    "data_freshness_note": "Outright and group winner odds primarily sourced from December 2025 post-draw lines. Prediction market data (Polymarket/Kalshi) updated through February 2026. Power rankings reflect January-February 2026 analysis. Odds will continue to shift as the tournament approaches.",
+    "tournament": {
+      "name": "2026 FIFA World Cup",
+      "dates": "June 11 - July 19, 2026",
+      "host_countries": ["USA", "Canada", "Mexico"],
+      "final_venue": "MetLife Stadium, New Jersey",
+      "teams": 48,
+      "matches": 104
+    }
+  },
+  "outright_winner_odds": {
+    "description": "Odds to win the 2026 FIFA World Cup outright",
+    "sources": [
+      {
+        "bookmaker": "DraftKings",
+        "source_url": "https://sportsbook.draftkings.com/leagues/soccer/world-cup-2026",
+        "date": "2025-12-08",
+        "via": "FOX Sports, NBC Sports"
+      },
+      {
+        "bookmaker": "BetMGM",
+        "source_url": "https://www.va.betmgm.com/en/sports/soccer-4/betting/world-6/world-cup-2026-0:14",
+        "date": "2025-12-10",
+        "via": "SportsBettingDime"
+      },
+      {
+        "bookmaker": "FanDuel",
+        "source_url": "https://sportsbook.fanduel.com/soccer?tab=world-cup",
+        "date": "2025-12-05",
+        "via": "FanDuel Research"
+      },
+      {
+        "bookmaker": "Polymarket (Prediction Market)",
+        "source_url": "https://polymarket.com/event/2026-fifa-world-cup-winner-595",
+        "date": "2026-02-21",
+        "via": "DefiRate",
+        "note": "$173.9M total trading volume"
+      }
+    ],
+    "teams": [
+      {
+        "team": "Spain",
+        "code": "ESP",
+        "odds_american": "+450",
+        "odds_decimal": 5.50,
+        "implied_probability_pct": 18.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "prediction_market_pct": 16.3,
+        "betmgm_odds": "+400",
+        "fanduel_odds": "+410",
+        "tier": "favorite",
+        "notes": "Reigning European champions. Won Euro 2024. Top of FIFA rankings. Favored across all bookmakers."
+      },
+      {
+        "team": "England",
+        "code": "ENG",
+        "odds_american": "+550",
+        "odds_decimal": 6.50,
+        "implied_probability_pct": 15.4,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "prediction_market_pct": 13.4,
+        "betmgm_odds": "+600",
+        "tier": "favorite",
+        "notes": "8 wins from 8 qualifiers, 22 goals scored, 0 conceded under Thomas Tuchel."
+      },
+      {
+        "team": "France",
+        "code": "FRA",
+        "odds_american": "+750",
+        "odds_decimal": 8.50,
+        "implied_probability_pct": 11.8,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "betmgm_odds": "+700",
+        "tier": "favorite",
+        "notes": "Reached final in 4 of last 7 World Cups. Mbappe and Dembele provide elite attacking quality."
+      },
+      {
+        "team": "Brazil",
+        "code": "BRA",
+        "odds_american": "+800",
+        "odds_decimal": 9.00,
+        "implied_probability_pct": 11.1,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "betmgm_odds": "+800",
+        "tier": "favorite",
+        "notes": "5th in CONMEBOL qualifying (8-4-5). New coach Carlo Ancelotti. World-class talent pool."
+      },
+      {
+        "team": "Argentina",
+        "code": "ARG",
+        "odds_american": "+800",
+        "odds_decimal": 9.00,
+        "implied_probability_pct": 11.1,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "prediction_market_pct": 11.3,
+        "betmgm_odds": "+800",
+        "tier": "favorite",
+        "notes": "Defending World Cup champions. Won 2022 World Cup and Copa America. Messi's final World Cup."
+      },
+      {
+        "team": "Portugal",
+        "code": "POR",
+        "odds_american": "+1000",
+        "odds_decimal": 11.00,
+        "implied_probability_pct": 9.1,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "betmgm_odds": "+1100",
+        "tier": "contender",
+        "notes": "Won Nations League beating Germany and Spain in penalty shootout. Ronaldo still in squad."
+      },
+      {
+        "team": "Germany",
+        "code": "GER",
+        "odds_american": "+1200",
+        "odds_decimal": 13.00,
+        "implied_probability_pct": 7.7,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "contender",
+        "notes": "4-time World Cup champions. Strong qualifying campaign."
+      },
+      {
+        "team": "Netherlands",
+        "code": "NED",
+        "odds_american": "+2000",
+        "odds_decimal": 21.00,
+        "implied_probability_pct": 4.8,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "contender",
+        "notes": "Lost just 1 of last 26 matches (on penalties). Scoring freely. Strong midfield and backline."
+      },
+      {
+        "team": "Norway",
+        "code": "NOR",
+        "odds_american": "+2800",
+        "odds_decimal": 29.00,
+        "implied_probability_pct": 3.4,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "dark_horse",
+        "notes": "First World Cup since 1998. Beat Italy 4-1 in Milan to qualify. 37 goals in 8 qualifiers. Haaland leading the line."
+      },
+      {
+        "team": "Italy",
+        "code": "ITA",
+        "odds_american": "+3000",
+        "odds_decimal": 31.00,
+        "implied_probability_pct": 3.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "dark_horse",
+        "notes": "Drawn in tough Group B with Switzerland and Canada."
+      },
+      {
+        "team": "Belgium",
+        "code": "BEL",
+        "odds_american": "+4000",
+        "odds_decimal": 41.00,
+        "implied_probability_pct": 2.4,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "dark_horse",
+        "notes": "Golden generation aging but still talented. Lukaku remains prolific."
+      },
+      {
+        "team": "Colombia",
+        "code": "COL",
+        "odds_american": "+5000",
+        "odds_decimal": 51.00,
+        "implied_probability_pct": 1.9,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "dark_horse",
+        "notes": "Strong qualifying campaign. Drawn with Portugal in Group K."
+      },
+      {
+        "team": "Uruguay",
+        "code": "URU",
+        "odds_american": "+6500",
+        "odds_decimal": 66.00,
+        "implied_probability_pct": 1.5,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "dark_horse",
+        "notes": "In Group H with Spain. Historically strong World Cup pedigree."
+      },
+      {
+        "team": "United States",
+        "code": "USA",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "betmgm_odds": "+5000",
+        "tier": "longshot",
+        "notes": "Co-hosts. Favorable Group D draw. Never advanced past quarterfinals. Home advantage significant."
+      },
+      {
+        "team": "Switzerland",
+        "code": "SUI",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "longshot",
+        "notes": "Reliable knockout stage team. Structural resistance in difficult groups."
+      },
+      {
+        "team": "Morocco",
+        "code": "MAR",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "longshot",
+        "notes": "2022 World Cup semifinalists. Won 16 straight matches. Added Brahim Diaz (switched from Spain). AFCON 2025 runners-up."
+      },
+      {
+        "team": "Ecuador",
+        "code": "ECU",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "longshot",
+        "notes": "Quietly dangerous side built around Moises Caicedo. Resilient defensive structure."
+      },
+      {
+        "team": "Mexico",
+        "code": "MEX",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "betmgm_odds": "+5000",
+        "tier": "longshot",
+        "notes": "Co-hosts. Favorable Group A draw. Historically strong World Cup performers."
+      },
+      {
+        "team": "Croatia",
+        "code": "CRO",
+        "odds_american": "+10000",
+        "odds_decimal": 101.00,
+        "implied_probability_pct": 1.0,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "longshot",
+        "notes": "2018 finalists, 2022 semifinalists. Aging but experienced squad."
+      },
+      {
+        "team": "Japan",
+        "code": "JPN",
+        "odds_american": "+10000",
+        "odds_decimal": 101.00,
+        "implied_probability_pct": 1.0,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "longshot",
+        "notes": "Beat Brazil recently. Only 2 defeats in last 23 matches. Graduating from underdog to legitimate threat."
+      },
+      {
+        "team": "Senegal",
+        "code": "SEN",
+        "odds_american": "+12000",
+        "odds_decimal": 121.00,
+        "implied_probability_pct": 0.8,
+        "bookmaker": "DraftKings",
+        "date": "2025-12-08",
+        "tier": "longshot",
+        "notes": "AFCON 2025 champions. Beat England 3-1. Sadio Mane leading a confident squad."
+      },
+      {
+        "team": "Ghana",
+        "code": "GHA",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Sweden",
+        "code": "SWE",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "South Korea",
+        "code": "KOR",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Paraguay",
+        "code": "PAR",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Austria",
+        "code": "AUT",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Denmark",
+        "code": "DEN",
+        "odds_american": "+20000",
+        "odds_decimal": 201.00,
+        "implied_probability_pct": 0.5,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Algeria",
+        "code": "ALG",
+        "odds_american": "+20000",
+        "odds_decimal": 201.00,
+        "implied_probability_pct": 0.5,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Ukraine",
+        "code": "UKR",
+        "odds_american": "+20000",
+        "odds_decimal": 201.00,
+        "implied_probability_pct": 0.5,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Ivory Coast",
+        "code": "CIV",
+        "odds_american": "+20000",
+        "odds_decimal": 201.00,
+        "implied_probability_pct": 0.5,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Bolivia",
+        "code": "BOL",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Turkey",
+        "code": "TUR",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Egypt",
+        "code": "EGY",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot",
+        "notes": "Cruised through qualifying with 26 points in 10 games. Salah and Marmoush deadly partnership."
+      },
+      {
+        "team": "Scotland",
+        "code": "SCO",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Canada",
+        "code": "CAN",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot",
+        "notes": "Co-hosts. Alphonso Davies, Jonathan David, Cyle Larin, Tajon Buchanan all in prime years."
+      },
+      {
+        "team": "Poland",
+        "code": "POL",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "longshot"
+      },
+      {
+        "team": "Wales",
+        "code": "WAL",
+        "odds_american": "+35000",
+        "odds_decimal": 351.00,
+        "implied_probability_pct": 0.3,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Tunisia",
+        "code": "TUN",
+        "odds_american": "+40000",
+        "odds_decimal": 401.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "South Africa",
+        "code": "RSA",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Slovakia",
+        "code": "SVK",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Romania",
+        "code": "ROU",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Australia",
+        "code": "AUS",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "North Macedonia",
+        "code": "MKD",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Czech Republic",
+        "code": "CZE",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Iran",
+        "code": "IRN",
+        "odds_american": "+50000",
+        "odds_decimal": 501.00,
+        "implied_probability_pct": 0.2,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "DR Congo",
+        "code": "COD",
+        "odds_american": "+70000",
+        "odds_decimal": 701.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Kosovo",
+        "code": "KOS",
+        "odds_american": "+70000",
+        "odds_decimal": 701.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Panama",
+        "code": "PAN",
+        "odds_american": "+70000",
+        "odds_decimal": 701.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Northern Ireland",
+        "code": "NIR",
+        "odds_american": "+70000",
+        "odds_decimal": 701.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Albania",
+        "code": "ALB",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Saudi Arabia",
+        "code": "KSA",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Qatar",
+        "code": "QAT",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "New Zealand",
+        "code": "NZL",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Jamaica",
+        "code": "JAM",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Iraq",
+        "code": "IRQ",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Republic of Ireland",
+        "code": "IRL",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Indonesia",
+        "code": "IDN",
+        "odds_american": "+200000",
+        "odds_decimal": 2001.00,
+        "implied_probability_pct": 0.05,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Uzbekistan",
+        "code": "UZB",
+        "odds_american": "+200000",
+        "odds_decimal": 2001.00,
+        "implied_probability_pct": 0.05,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Suriname",
+        "code": "SUR",
+        "odds_american": "+200000",
+        "odds_decimal": 2001.00,
+        "implied_probability_pct": 0.05,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Cabo Verde",
+        "code": "CPV",
+        "odds_american": "+200000",
+        "odds_decimal": 2001.00,
+        "implied_probability_pct": 0.05,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider",
+        "notes": "First ever World Cup. Won 7 of 10 qualifying games, topping group ahead of Cameroon."
+      },
+      {
+        "team": "Curacao",
+        "code": "CUW",
+        "odds_american": "+200000",
+        "odds_decimal": 2001.00,
+        "implied_probability_pct": 0.05,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Jordan",
+        "code": "JOR",
+        "odds_american": "+250000",
+        "odds_decimal": 2501.00,
+        "implied_probability_pct": 0.04,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      },
+      {
+        "team": "Haiti",
+        "code": "HAI",
+        "odds_american": "+400000",
+        "odds_decimal": 4001.00,
+        "implied_probability_pct": 0.02,
+        "bookmaker": "NBC Sports (DraftKings-sourced)",
+        "date": "2025-12-05",
+        "tier": "outsider"
+      }
+    ]
+  },
+  "group_winner_odds": {
+    "description": "Odds to win each World Cup 2026 group",
+    "source": {
+      "bookmaker": "DraftKings",
+      "source_url": "https://sportsbook.draftkings.com/leagues/soccer/world-cup-2026?category=group-futures&subcategory=group-winner",
+      "date": "2025-12-05",
+      "via": "FOX Sports"
+    },
+    "groups": {
+      "A": {
+        "teams": [
+          {"team": "Mexico", "code": "MEX", "odds": "+110"},
+          {"team": "South Korea", "code": "KOR", "odds": "+350"},
+          {"team": "Denmark", "code": "DEN", "odds": "+450"},
+          {"team": "South Africa", "code": "RSA", "odds": "+1200"}
+        ],
+        "predicted_winner": "Mexico",
+        "notes": "Playoff teams (Czechia +1200, Rep. of Ireland +3500, North Macedonia +10000) may also join this group."
+      },
+      "B": {
+        "teams": [
+          {"team": "Switzerland", "code": "SUI", "odds": "+140"},
+          {"team": "Italy", "code": "ITA", "odds": "+230"},
+          {"team": "Canada", "code": "CAN", "odds": "+450"},
+          {"team": "Qatar", "code": "QAT", "odds": "+2500"}
+        ],
+        "predicted_winner": "Switzerland",
+        "notes": "Playoff teams (Wales +1800, Bosnia & Herzegovina +1800, Northern Ireland +10000) may join. Italy not seeded as Pot 1."
+      },
+      "C": {
+        "teams": [
+          {"team": "Brazil", "code": "BRA", "odds": "-475"},
+          {"team": "Morocco", "code": "MAR", "odds": "+450"},
+          {"team": "Scotland", "code": "SCO", "odds": "+900"},
+          {"team": "Haiti", "code": "HAI", "odds": "+10000"}
+        ],
+        "predicted_winner": "Brazil",
+        "notes": "Brazil heavy favorite but Morocco a genuine threat. Brazil-Morocco clash likely decides group."
+      },
+      "D": {
+        "teams": [
+          {"team": "United States", "code": "USA", "odds": "+150"},
+          {"team": "Paraguay", "code": "PAR", "odds": "+330"},
+          {"team": "Turkey", "code": "TUR", "odds": "+500"},
+          {"team": "Australia", "code": "AUS", "odds": "+500"}
+        ],
+        "predicted_winner": "United States",
+        "notes": "USA -575 to advance to knockout stage. Favorable draw for hosts. Playoff teams (Slovakia +750, Romania +2000, Kosovo +2000) may join."
+      },
+      "E": {
+        "teams": [
+          {"team": "Germany", "code": "GER", "odds": "-200"},
+          {"team": "Ecuador", "code": "ECU", "odds": "+250"},
+          {"team": "Ivory Coast", "code": "CIV", "odds": "+800"},
+          {"team": "Curacao", "code": "CUW", "odds": "+6500"}
+        ],
+        "predicted_winner": "Germany",
+        "notes": "Germany strong favorite. Ecuador the main challenger."
+      },
+      "F": {
+        "teams": [
+          {"team": "Netherlands", "code": "NED", "odds": "-135"},
+          {"team": "Japan", "code": "JPN", "odds": "+275"},
+          {"team": "Tunisia", "code": "TUN", "odds": "+800"},
+          {"team": "Indonesia", "code": "IDN", "odds": "+6500"}
+        ],
+        "predicted_winner": "Netherlands",
+        "notes": "Playoff teams (Sweden +850, Ukraine +900, Poland +1000, Albania +2000) may join. Japan a strong second seed."
+      },
+      "G": {
+        "teams": [
+          {"team": "Belgium", "code": "BEL", "odds": "-255"},
+          {"team": "Egypt", "code": "EGY", "odds": "+450"},
+          {"team": "Iran", "code": "IRN", "odds": "+600"},
+          {"team": "New Zealand", "code": "NZL", "odds": "+2000"}
+        ],
+        "predicted_winner": "Belgium",
+        "notes": "Belgium strong favorite. Egypt a potential upset threat with Salah and Marmoush."
+      },
+      "H": {
+        "teams": [
+          {"team": "Spain", "code": "ESP", "odds": "-500"},
+          {"team": "Uruguay", "code": "URU", "odds": "+400"},
+          {"team": "Saudi Arabia", "code": "KSA", "odds": "+1600"},
+          {"team": "Cabo Verde", "code": "CPV", "odds": "+4000"}
+        ],
+        "predicted_winner": "Spain",
+        "notes": "Spain overwhelming favorite. Uruguay the clear second."
+      },
+      "I": {
+        "teams": [
+          {"team": "France", "code": "FRA", "odds": "-200"},
+          {"team": "Norway", "code": "NOR", "odds": "+260"},
+          {"team": "Senegal", "code": "SEN", "odds": "+550"},
+          {"team": "Iraq", "code": "IRQ", "odds": "+3500"}
+        ],
+        "predicted_winner": "France",
+        "notes": "Potential Group of Death. Norway and Senegal both dangerous. Playoff teams (Bolivia +4000, Suriname +10000) may join."
+      },
+      "J": {
+        "teams": [
+          {"team": "Argentina", "code": "ARG", "odds": "-340"},
+          {"team": "Austria", "code": "AUT", "odds": "+450"},
+          {"team": "Algeria", "code": "ALG", "odds": "+650"},
+          {"team": "Jordan", "code": "JOR", "odds": "+4000"}
+        ],
+        "predicted_winner": "Argentina",
+        "notes": "Argentina heavy favorite. Polymarket gives Argentina 75% chance to win group."
+      },
+      "K": {
+        "teams": [
+          {"team": "Portugal", "code": "POR", "odds": "-185"},
+          {"team": "Colombia", "code": "COL", "odds": "+225"},
+          {"team": "DR Congo", "code": "COD", "odds": "+700"},
+          {"team": "Uzbekistan", "code": "UZB", "odds": "+3000"}
+        ],
+        "predicted_winner": "Portugal",
+        "notes": "Strong group. Colombia a serious threat to top it. Playoff teams (Jamaica +4000, New Caledonia +10000) may join."
+      },
+      "L": {
+        "teams": [
+          {"team": "England", "code": "ENG", "odds": "-340"},
+          {"team": "Croatia", "code": "CRO", "odds": "+400"},
+          {"team": "Ghana", "code": "GHA", "odds": "+1000"},
+          {"team": "Panama", "code": "PAN", "odds": "+2500"}
+        ],
+        "predicted_winner": "England",
+        "notes": "England heavy favorite with perfect qualifying record. Croatia experienced but aging."
+      }
+    }
+  },
+  "golden_boot_odds": {
+    "description": "Odds for the 2026 World Cup Golden Boot (top scorer)",
+    "source": {
+      "bookmaker": "DraftKings",
+      "source_url": "https://sportsbook.draftkings.com/leagues/soccer/world-cup-2026",
+      "date": "2025-12-05",
+      "via": "FOX Sports"
+    },
+    "players": [
+      {
+        "player": "Kylian Mbappe",
+        "team": "France",
+        "team_code": "FRA",
+        "odds_american": "+600",
+        "odds_decimal": 7.00,
+        "implied_probability_pct": 14.3,
+        "notes": "Won 2022 Golden Boot with 8 goals. Slight favorite. Plays for Real Madrid."
+      },
+      {
+        "player": "Harry Kane",
+        "team": "England",
+        "team_code": "ENG",
+        "odds_american": "+650",
+        "odds_decimal": 7.50,
+        "implied_probability_pct": 13.3,
+        "notes": "Won 2018 Golden Boot with 6 goals. Scored 9 in 8 qualifiers. Plays for Bayern Munich."
+      },
+      {
+        "player": "Lionel Messi",
+        "team": "Argentina",
+        "team_code": "ARG",
+        "odds_american": "+1200",
+        "odds_decimal": 13.00,
+        "implied_probability_pct": 7.7,
+        "notes": "2022 World Cup winner. Likely final World Cup. Plays for Inter Miami."
+      },
+      {
+        "player": "Erling Haaland",
+        "team": "Norway",
+        "team_code": "NOR",
+        "odds_american": "+1400",
+        "odds_decimal": 15.00,
+        "implied_probability_pct": 6.7,
+        "notes": "Norway's first WC since 1998. 37 team goals in 8 qualifiers. Plays for Manchester City."
+      },
+      {
+        "player": "Ousmane Dembele",
+        "team": "France",
+        "team_code": "FRA",
+        "odds_american": "+1600",
+        "odds_decimal": 17.00,
+        "implied_probability_pct": 5.9,
+        "notes": "NBC Sports lists at +1600; FOX Sports article lists +2000. Reigning Ballon d'Or winner."
+      },
+      {
+        "player": "Lamine Yamal",
+        "team": "Spain",
+        "team_code": "ESP",
+        "odds_american": "+1800",
+        "odds_decimal": 19.00,
+        "implied_probability_pct": 5.3,
+        "notes": "Youngest player to represent Spain. Key to Euro 2024 triumph. 5 goals in 11 games post-Euros. Plays for Barcelona."
+      },
+      {
+        "player": "Cristiano Ronaldo",
+        "team": "Portugal",
+        "team_code": "POR",
+        "odds_american": "+1800",
+        "odds_decimal": 19.00,
+        "implied_probability_pct": 5.3,
+        "notes": "All-time international top scorer. Plays for Al Nassr."
+      },
+      {
+        "player": "Lautaro Martinez",
+        "team": "Argentina",
+        "team_code": "ARG",
+        "odds_american": "+2000",
+        "odds_decimal": 21.00,
+        "implied_probability_pct": 4.8,
+        "notes": "Key striker for Argentina and Inter Milan."
+      },
+      {
+        "player": "Nick Woltemade",
+        "team": "Germany",
+        "team_code": "GER",
+        "odds_american": "+2000",
+        "odds_decimal": 21.00,
+        "implied_probability_pct": 4.8,
+        "notes": "Emerging German talent."
+      },
+      {
+        "player": "Romelu Lukaku",
+        "team": "Belgium",
+        "team_code": "BEL",
+        "odds_american": "+2500",
+        "odds_decimal": 26.00,
+        "implied_probability_pct": 3.8,
+        "notes": "Belgium's all-time leading scorer. Prolific qualifying campaign."
+      },
+      {
+        "player": "Vinicius Junior",
+        "team": "Brazil",
+        "team_code": "BRA",
+        "odds_american": "+2500",
+        "odds_decimal": 26.00,
+        "implied_probability_pct": 3.8,
+        "notes": "Brazil's star forward. Plays for Real Madrid."
+      },
+      {
+        "player": "Alvaro Morata",
+        "team": "Spain",
+        "team_code": "ESP",
+        "odds_american": "+2500",
+        "odds_decimal": 26.00,
+        "implied_probability_pct": 3.8,
+        "notes": "Spain captain. Experienced tournament performer."
+      },
+      {
+        "player": "Mikel Oyarzabal",
+        "team": "Spain",
+        "team_code": "ESP",
+        "odds_american": "+2800",
+        "odds_decimal": 29.00,
+        "implied_probability_pct": 3.4,
+        "notes": "6 goals and 4 assists in 6 qualifying matches. Scored Euro 2024 final winner."
+      },
+      {
+        "player": "Julian Alvarez",
+        "team": "Argentina",
+        "team_code": "ARG",
+        "odds_american": "+3000",
+        "odds_decimal": 31.00,
+        "implied_probability_pct": 3.2,
+        "notes": "Key attacker for Argentina. Plays for Atletico Madrid."
+      },
+      {
+        "player": "Raphinha",
+        "team": "Brazil",
+        "team_code": "BRA",
+        "odds_american": "+3000",
+        "odds_decimal": 31.00,
+        "implied_probability_pct": 3.2,
+        "notes": "Barcelona forward, important for Brazil."
+      },
+      {
+        "player": "Ferran Torres",
+        "team": "Spain",
+        "team_code": "ESP",
+        "odds_american": "+3000",
+        "odds_decimal": 31.00,
+        "implied_probability_pct": 3.2,
+        "notes": "Spain's versatile attacker."
+      },
+      {
+        "player": "Richarlison",
+        "team": "Brazil",
+        "team_code": "BRA",
+        "odds_american": "+3500",
+        "odds_decimal": 36.00,
+        "implied_probability_pct": 2.8,
+        "notes": "Brazil striker. Scored brace vs Serbia in 2022 World Cup."
+      },
+      {
+        "player": "Matheus Cunha",
+        "team": "Brazil",
+        "team_code": "BRA",
+        "odds_american": "+3500",
+        "odds_decimal": 36.00,
+        "implied_probability_pct": 2.8,
+        "notes": "Wolverhampton Wanderers forward."
+      },
+      {
+        "player": "Bukayo Saka",
+        "team": "England",
+        "team_code": "ENG",
+        "odds_american": "+4000",
+        "odds_decimal": 41.00,
+        "implied_probability_pct": 2.4,
+        "notes": "Arsenal and England winger. Key creator and scorer."
+      }
+    ],
+    "format_note": "Expanded 48-team format with extra knockout round means top scorers may exceed the typical 5-8 goal range. Teams reaching the final play 7-8 matches."
+  },
+  "power_rankings": [
+    {
+      "source": "Flashscore",
+      "source_url": "https://www.flashscore.com/news/2026-world-cup-power-rankings/E5JhV1jg/",
+      "date": "2026-01-15",
+      "title": "The 10 sides looking most likely to reign supreme",
+      "rankings": [
+        {"rank": 1, "team": "Spain", "code": "ESP", "notes": "Team to beat. Won Euro 2024. Lost just 1 of last 26 (on penalties). Oyarzabal solved striker problem with 6 goals, 4 assists in 6 qualifiers."},
+        {"rank": 2, "team": "Netherlands", "code": "NED", "notes": "In much better shape than Euro 2024 semis. Best backline and midfield in international football. Scoring for fun."},
+        {"rank": 3, "team": "Argentina", "code": "ARG", "notes": "Reigning champions. Only gotten better since Qatar 2022. Coherent unit with quality everywhere. Messi still in arsenal."},
+        {"rank": 4, "team": "France", "code": "FRA", "notes": "Convincing qualifying. Only drew with Iceland preventing perfect record. New weapons emerging: Rayan Cherki, Jean-Philippe Mateta."},
+        {"rank": 5, "team": "England", "code": "ENG", "notes": "8 wins from 8, 22 goals scored, 0 conceded in qualifying. Thomas Tuchel made them impenetrable at the back."},
+        {"rank": 6, "team": "Portugal", "code": "POR", "notes": "Won Nations League beating Germany and Spain (penalties). Strong squad depth."},
+        {"rank": 7, "team": "Brazil", "code": "BRA", "notes": "World-class talent but inconsistent under Ancelotti. Won just 4 of 8 recent matches."},
+        {"rank": 8, "team": "Morocco", "code": "MAR", "notes": "2022 semifinalists. Won 18 matches in a row. AFCON 2025 finalists. Tournament pedigree proven."},
+        {"rank": 9, "team": "Norway", "code": "NOR", "notes": "First WC since 1998. Beat Italy 4-1 in Milan. 37 goals, 5 conceded in 8 qualifiers. Haaland plus elite supporting cast."},
+        {"rank": 10, "team": "Japan", "code": "JPN", "notes": "Beat Brazil recently. Only 2 defeats in last 23. Serious quality all over the pitch. Graduating from underdog to contender."}
+      ]
+    },
+    {
+      "source": "CBS Sports",
+      "source_url": "https://www.cbssports.com/soccer/news/2026-world-cup-power-rankings-usmnt-near-top-10-usa-argentina-brazil-portugal-spain/",
+      "date": "2025-12-10",
+      "title": "Post-Draw Power Rankings",
+      "rankings": [
+        {"rank": 1, "team": "Spain", "code": "ESP", "notes": "Top of FIFA world rankings. Euro 2024 champions."},
+        {"rank": 2, "team": "Argentina", "code": "ARG", "notes": "Defending World Cup champions. Copa America winners."},
+        {"rank": 3, "team": "France", "code": "FRA", "notes": "Reached final in 4 of last 7 World Cups."},
+        {"rank": 4, "team": "England", "code": "ENG", "notes": "Perfect qualifying record under Tuchel."},
+        {"rank": 5, "team": "Brazil", "code": "BRA", "notes": "Most decorated World Cup nation (5 titles)."},
+        {"rank": 6, "team": "Portugal", "code": "POR", "notes": "Nations League champions."},
+        {"rank": 7, "team": "Germany", "code": "GER", "notes": "4-time champions. Strong group draw."},
+        {"rank": 8, "team": "Netherlands", "code": "NED", "notes": "Best form of any European side."},
+        {"rank": 9, "team": "Norway", "code": "NOR", "notes": "Dark horse. Haaland-led qualifying dominance."},
+        {"rank": 10, "team": "Colombia", "code": "COL", "notes": "Strong South American qualifier."},
+        {"rank": 11, "team": "United States", "code": "USA", "notes": "Hosts. Near top 10 after favorable draw."}
+      ]
+    },
+    {
+      "source": "Goal.com",
+      "source_url": "https://www.goal.com/en-us/lists/2026-world-cup-power-rankings/blt047305a4117d1161",
+      "date": "2026-02-05",
+      "title": "Post-AFCON Power Rankings",
+      "rankings_note": "Updated after Senegal won AFCON 2025, beating Morocco in the final",
+      "key_movers": [
+        {"team": "Senegal", "code": "SEN", "direction": "up", "notes": "AFCON champions. Beat England 3-1. Surged up rankings."},
+        {"team": "Morocco", "code": "MAR", "direction": "down", "notes": "AFCON final loss on home soil. Still dangerous but rattled."},
+        {"team": "Spain", "code": "ESP", "direction": "steady", "notes": "Remains at or near top."},
+        {"team": "Argentina", "code": "ARG", "direction": "steady", "notes": "Consistent top-3 across all rankings."}
+      ]
+    }
+  ],
+  "prediction_markets": {
+    "description": "Real-time prediction market odds aggregated from Polymarket and Kalshi",
+    "source": {
+      "platform": "Polymarket / Kalshi (aggregated by DefiRate)",
+      "source_url": "https://defirate.com/prediction-markets/world-cup-odds/",
+      "date": "2026-02-21",
+      "total_trading_volume": "$173.9M",
+      "settlement_date": "2026-07-20"
+    },
+    "top_teams": [
+      {"team": "Spain", "code": "ESP", "probability_pct": 16.3, "odds_american": "+514"},
+      {"team": "England", "code": "ENG", "probability_pct": 13.4, "odds_american": "+647"},
+      {"team": "Argentina", "code": "ARG", "probability_pct": 11.3, "odds_american": "+787"},
+      {"team": "France", "code": "FRA", "probability_pct": 9.5, "odds_american": "+953"},
+      {"team": "Brazil", "code": "BRA", "probability_pct": 8.0, "odds_american": "+1150"}
+    ],
+    "notes": "43+ outcomes available. Prices aggregate collective knowledge of thousands of participants. Updated in real-time."
+  },
+  "dark_horse_picks": {
+    "description": "Dark horse selections from major sports outlets and analysts",
+    "picks": [
+      {
+        "team": "Norway",
+        "code": "NOR",
+        "outright_odds": "+2800",
+        "sources": ["Flashscore", "NBC Sports", "CBS Sports", "FOX Sports"],
+        "reasoning": "First World Cup since 1998. Demolished Italy 4-1 to qualify. 37 goals in 8 qualifiers. Haaland is generational. Supporting cast of elite talent."
+      },
+      {
+        "team": "Netherlands",
+        "code": "NED",
+        "outright_odds": "+2000",
+        "sources": ["ESPN", "Flashscore", "CBS Sports"],
+        "reasoning": "ESPN says 'close to being a legitimate contender.' Lost just 1 of 26 matches. Best backline and midfield in international football."
+      },
+      {
+        "team": "Morocco",
+        "code": "MAR",
+        "outright_odds": "+8000",
+        "sources": ["ESPN", "NBC Sports", "RotoWire", "CBS Sports"],
+        "reasoning": "2022 semifinal was no fluke. Won 18 straight matches. AFCON 2025 finalists. Added Brahim Diaz. First African nation to reach WC semis."
+      },
+      {
+        "team": "Senegal",
+        "code": "SEN",
+        "outright_odds": "+12000",
+        "sources": ["Goal.com", "NBC Sports", "CBS Sports"],
+        "reasoning": "AFCON 2025 champions. Beat England 3-1. Sadio Mane leading. Africa's standard bearer arriving with authority."
+      },
+      {
+        "team": "Japan",
+        "code": "JPN",
+        "outright_odds": "+10000",
+        "sources": ["Flashscore", "CBS Sports", "NBC Sports"],
+        "reasoning": "Beat Brazil. Only 2 defeats in 23 matches. Quietly graduating from underdog to legitimate threat."
+      },
+      {
+        "team": "Ecuador",
+        "code": "ECU",
+        "outright_odds": "+8000",
+        "sources": ["CBS Sports", "SportsBettingDime"],
+        "reasoning": "Quietly dangerous. Built around Moises Caicedo. Resilient defensive structure. Consistent CONMEBOL qualifier."
+      },
+      {
+        "team": "Canada",
+        "code": "CAN",
+        "outright_odds": "+25000",
+        "sources": ["NBC Sports", "RotoWire"],
+        "reasoning": "Co-hosts. Alphonso Davies, Jonathan David, Cyle Larin, Tajon Buchanan all hitting prime. Jesse Marsch building cohesive unit."
+      },
+      {
+        "team": "United States",
+        "code": "USA",
+        "outright_odds": "+8000",
+        "sources": ["ESPN", "CBS Sports", "FOX Sports"],
+        "reasoning": "Co-hosts with favorable group draw. Never past quarterfinals but home advantage is massive. Young, talented squad."
+      },
+      {
+        "team": "Egypt",
+        "code": "EGY",
+        "outright_odds": "+25000",
+        "sources": ["GiveMeSport", "Goal.com"],
+        "reasoning": "Cruised through qualifying (26 pts in 10 games). Mohamed Salah and Omar Marmoush deadly partnership."
+      }
+    ]
+  },
+  "analyst_predictions": {
+    "description": "Expert predictions and picks from major sports outlets",
+    "predictions": [
+      {
+        "source": "ESPN (Luis Echegaray)",
+        "source_url": "https://www.espn.com/soccer/story/_/id/47211639/2026-world-cup-draw-groups-takeaways-predictions-see-games",
+        "date": "2025-12-05",
+        "predicted_winner": "Spain",
+        "reasoning": "Current favorites after European success. Top of FIFA world rankings."
+      },
+      {
+        "source": "NBC Sports (Joe Prince-Wright)",
+        "source_url": "https://www.nbcsports.com/soccer/news/2026-world-cup-predictions-with-one-year-to-go-here-are-some-very-early-predictions",
+        "date": "2025-12-11",
+        "predicted_winner": "France",
+        "reasoning": "Reached final in 4 of last 7 tournaments. Mbappe and Dembele arguably the two best forwards in world football."
+      },
+      {
+        "source": "Dimers (Supercomputer Model)",
+        "source_url": "https://www.dimers.com/news/who-will-win-the-fifa-world-cup-in-2026-predictions-odds-dark-horses",
+        "date": "2026-01-15",
+        "predicted_winner": "Spain",
+        "win_probability_pct": 16.8,
+        "reasoning": "Data model aligns with bookmakers. Commanding probability lead."
+      },
+      {
+        "source": "FOX Sports",
+        "source_url": "https://www.foxsports.com/stories/soccer/world-cup-2026-odds",
+        "date": "2025-12-08",
+        "predicted_winner": "Spain",
+        "reasoning": "Post-draw analysis confirms Spain as clear favorite with easiest path."
+      },
+      {
+        "source": "Flashscore",
+        "source_url": "https://www.flashscore.com/news/2026-world-cup-power-rankings/E5JhV1jg/",
+        "date": "2026-01-15",
+        "predicted_winner": "Spain",
+        "reasoning": "Even after dropping points to Turkey, still the best team in the world. Enter 2026 as the team to beat."
+      },
+      {
+        "source": "Football365",
+        "source_url": "https://www.football365.com/news/2026-world-cup-power-rankings-as-52-countries-topped-by-argentina",
+        "date": "2025-12-06",
+        "predicted_winner": "Argentina",
+        "reasoning": "Reigning champions topped initial power rankings. Scaloni's side only gotten better since Qatar."
+      }
+    ]
+  },
+  "group_stage_predictions": {
+    "description": "Expert predictions for group stage outcomes",
+    "sources": [
+      {
+        "source": "ESPN",
+        "source_url": "https://www.espn.com/soccer/story/_/id/47211639/2026-world-cup-draw-groups-takeaways-predictions-see-games",
+        "date": "2025-12-05"
+      },
+      {
+        "source": "NBC Sports (Joe Prince-Wright)",
+        "source_url": "https://www.nbcsports.com/soccer/news/predictions-for-the-2026-world-cup-group-stage-who-will-reach-the-knockout-rounds",
+        "date": "2025-12-11"
+      },
+      {
+        "source": "FOX Sports",
+        "source_url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-teams-favored-advance-knockout-stage-group-winner-odds",
+        "date": "2025-12-05"
+      }
+    ],
+    "groups": {
+      "A": {
+        "espn_prediction": ["Mexico", "South Korea", "South Africa"],
+        "nbc_prediction": ["Mexico", "Playoff D winner", "South Korea", "South Africa"],
+        "notes": "Mexico benefits from gentle draw as hosts."
+      },
+      "B": {
+        "espn_prediction": ["Switzerland", "Canada"],
+        "nbc_prediction": ["Playoff A winner", "Switzerland", "Canada", "Qatar"],
+        "notes": "Italy not mentioned as favorite by NBC. Canada depends on Alphonso Davies ACL recovery."
+      },
+      "C": {
+        "espn_prediction": ["Brazil", "Morocco", "Scotland", "Haiti"],
+        "nbc_prediction": ["Morocco", "Brazil", "Scotland", "Haiti"],
+        "notes": "Brazil-Morocco clash decides group. NBC Sports boldly picks Morocco 1st."
+      },
+      "D": {
+        "espn_prediction": ["USA"],
+        "nbc_prediction": ["USA", "Playoff C winner", "Australia", "Paraguay"],
+        "notes": "USA got much better draw than expected. -575 to advance."
+      },
+      "E": {
+        "espn_prediction": ["Germany", "Ecuador"],
+        "nbc_prediction": ["Germany", "Ecuador", "Curacao", "Ivory Coast"],
+        "notes": "Germany and Ecuador expected to advance comfortably."
+      },
+      "F": {
+        "espn_prediction": ["Netherlands", "Japan"],
+        "nbc_prediction": ["Netherlands", "Japan"],
+        "notes": "Strong top two. Japan a serious dark horse."
+      },
+      "G": {
+        "nbc_prediction": ["Belgium", "Egypt", "Iran", "New Zealand"],
+        "notes": "Belgium favored. Egypt the potential upset threat."
+      },
+      "H": {
+        "nbc_prediction": ["Spain", "Uruguay", "Cabo Verde", "Saudi Arabia"],
+        "notes": "Spain overwhelming favorite. Uruguay clear second."
+      },
+      "I": {
+        "nbc_prediction": ["France", "Norway", "Senegal"],
+        "notes": "Potential Group of Death. All three of France, Norway, Senegal capable of advancing."
+      },
+      "J": {
+        "nbc_prediction": ["Argentina", "Austria", "Algeria", "Jordan"],
+        "notes": "Argentina 75% to win group per Polymarket."
+      },
+      "K": {
+        "nbc_prediction": ["Portugal", "Colombia", "Uzbekistan"],
+        "notes": "Strong top two. Colombia a genuine threat to top the group."
+      },
+      "L": {
+        "nbc_prediction": ["England", "Croatia", "Panama", "Ghana"],
+        "notes": "England heavy favorite after perfect qualifying campaign."
+      }
+    },
+    "format_note": "Top 2 from each group qualify automatically. Best 8 third-place teams also advance to Round of 32."
+  },
+  "fifa_rankings_context": {
+    "description": "FIFA/Coca-Cola Men's World Ranking context (January 2026)",
+    "source": "FIFA.com",
+    "source_url": "https://inside.fifa.com/fifa-world-ranking",
+    "date": "2026-01-30",
+    "notable_movements": [
+      {"team": "Senegal", "code": "SEN", "rank": 12, "movement": "up 7 places", "reason": "AFCON 2025 champions"},
+      {"team": "Morocco", "code": "MAR", "rank": 8, "movement": "up 3 places", "reason": "AFCON 2025 finalists. Best ranking since April 1998."},
+      {"team": "Spain", "code": "ESP", "rank": 1, "movement": "steady", "reason": "Maintained No. 1 since Euro 2024"},
+      {"team": "Argentina", "code": "ARG", "rank": 2, "movement": "steady", "reason": "Defending World Cup champions"}
+    ]
+  },
+  "key_narratives": {
+    "description": "Major storylines heading into the 2026 World Cup",
+    "narratives": [
+      {
+        "title": "Messi's Last Dance",
+        "detail": "Lionel Messi likely playing his final World Cup at age 38. Argentina seeking back-to-back titles."
+      },
+      {
+        "title": "Ronaldo's Record Chase",
+        "detail": "Cristiano Ronaldo aiming for records in what could be his final major tournament at age 41."
+      },
+      {
+        "title": "Spain's Golden Generation 2.0",
+        "detail": "Lamine Yamal (18), Pedri, Gavi lead a young squad that already won Euro 2024. Can they add World Cup?"
+      },
+      {
+        "title": "Haaland's World Cup Debut",
+        "detail": "Erling Haaland finally on the World Cup stage after Norway's first qualification since 1998."
+      },
+      {
+        "title": "Africa's Rising Tide",
+        "detail": "Senegal (AFCON champs), Morocco (2022 semifinalists), Egypt (Salah-led) all genuine contenders. Can Africa produce a first-ever World Cup winner?"
+      },
+      {
+        "title": "Host Nation Advantage",
+        "detail": "USA, Mexico, and Canada all co-hosting. USA (+8000) and Mexico (+8000) looking to capitalize on home support."
+      },
+      {
+        "title": "Expanded Format Wild Cards",
+        "detail": "48-team format with extra knockout round. More games means more upsets, fatigue management crucial. Golden Boot winner may score more than typical 5-8 goals."
+      }
+    ]
+  }
+}

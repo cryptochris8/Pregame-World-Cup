@@ -74,6 +74,8 @@ import 'core/services/widget_service.dart';
 
 // World Cup 2026 Feature
 import 'features/worldcup/worldcup.dart';
+import 'features/worldcup/data/services/enhanced_match_data_service.dart';
+import 'features/worldcup/data/services/local_prediction_engine.dart';
 import 'features/worldcup/data/services/world_cup_ai_service.dart';
 import 'features/worldcup/data/services/nearby_venues_service.dart';
 import 'features/worldcup/data/services/match_reminder_service.dart';
@@ -564,9 +566,17 @@ void _registerWorldCupServices() {
     matchRepository: sl(),
   ));
 
-  // AI Services for World Cup
+  // Enhanced Match Data Service (squad values, form, patterns, odds, injuries)
+  sl.registerLazySingleton(() => EnhancedMatchDataService.instance);
+
+  // Local Prediction Engine (no API keys needed)
+  sl.registerLazySingleton(() => LocalPredictionEngine(
+    enhancedDataService: sl<EnhancedMatchDataService>(),
+  ));
+
+  // AI Services for World Cup (routes through LocalPredictionEngine)
   sl.registerLazySingleton(() => WorldCupAIService(
-    multiProviderAI: sl<MultiProviderAIService>(),
+    localEngine: sl<LocalPredictionEngine>(),
   ));
 
   sl.registerFactory(() => WorldCupAICubit(

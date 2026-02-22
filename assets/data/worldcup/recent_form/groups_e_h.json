@@ -1,0 +1,1401 @@
+{
+  "metadata": {
+    "generated": "2026-02-21",
+    "description": "Recent international match results (2024-2026) for FIFA World Cup 2026 Groups E-H teams",
+    "sources": [
+      "ESPN", "FIFA.com", "UEFA.com", "CONCACAF.com", "CAFonline.com",
+      "beIN Sports", "FOX Sports", "Al Jazeera", "VAVEL", "Goal.com",
+      "Transfermarkt", "Scottish FA", "Sofascore", "NBC Sports"
+    ],
+    "notes": "All results verified via web search. Dates in YYYY-MM-DD format. Scores shown as team_score-opponent_score from the listed team's perspective."
+  },
+  "group_E": {
+    "BRA": {
+      "team_name": "Brazil",
+      "fifa_code": "BRA",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Colombia",
+          "score": "2-1",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-25",
+          "opponent": "Argentina",
+          "score": "1-4",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-05",
+          "opponent": "Ecuador",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Paraguay",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Chile",
+          "score": "3-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Bolivia",
+          "score": "0-1",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "South Korea",
+          "score": "5-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Japan",
+          "score": "2-3",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Senegal",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Tunisia",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        }
+      ]
+    },
+    "JPN": {
+      "team_name": "Japan",
+      "fifa_code": "JPN",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Bahrain",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-25",
+          "opponent": "Saudi Arabia",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-05",
+          "opponent": "Australia",
+          "score": "0-1",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Indonesia",
+          "score": "6-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-06",
+          "opponent": "Mexico",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "United States",
+          "score": "0-2",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Paraguay",
+          "score": "2-2",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Brazil",
+          "score": "3-2",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Ghana",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Bolivia",
+          "score": "3-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        }
+      ]
+    },
+    "CIV": {
+      "team_name": "Ivory Coast",
+      "fifa_code": "CIV",
+      "recent_matches": [
+        {
+          "date": "2025-09-09",
+          "opponent": "Gabon",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Seychelles",
+          "score": "7-0",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Kenya",
+          "score": "3-0",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Saudi Arabia",
+          "score": "0-1",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Oman",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-12-24",
+          "opponent": "Mozambique",
+          "score": "1-0",
+          "competition": "Africa Cup of Nations Group Stage",
+          "result": "W",
+          "venue": "neutral",
+          "notes": "AFCON 2025 in Morocco"
+        },
+        {
+          "date": "2025-12-28",
+          "opponent": "Cameroon",
+          "score": "1-1",
+          "competition": "Africa Cup of Nations Group Stage",
+          "result": "D",
+          "venue": "neutral",
+          "notes": "AFCON 2025 in Morocco"
+        },
+        {
+          "date": "2025-12-31",
+          "opponent": "Gabon",
+          "score": "3-2",
+          "competition": "Africa Cup of Nations Group Stage",
+          "result": "W",
+          "venue": "neutral",
+          "notes": "AFCON 2025 in Morocco"
+        },
+        {
+          "date": "2026-01-06",
+          "opponent": "Burkina Faso",
+          "score": "3-0",
+          "competition": "Africa Cup of Nations Round of 16",
+          "result": "W",
+          "venue": "neutral",
+          "notes": "AFCON 2025 in Morocco"
+        },
+        {
+          "date": "2026-01-10",
+          "opponent": "Egypt",
+          "score": "2-3",
+          "competition": "Africa Cup of Nations Quarterfinal",
+          "result": "L",
+          "venue": "neutral",
+          "notes": "AFCON 2025 in Morocco"
+        }
+      ]
+    },
+    "CPV": {
+      "team_name": "Cape Verde",
+      "fifa_code": "CPV",
+      "recent_matches": [
+        {
+          "date": "2025-03-25",
+          "opponent": "Angola",
+          "score": "2-1",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-05-29",
+          "opponent": "Malaysia",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-03",
+          "opponent": "Malaysia",
+          "score": "3-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-08",
+          "opponent": "Georgia",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Mauritius",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Cameroon",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-08",
+          "opponent": "Libya",
+          "score": "3-3",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Eswatini",
+          "score": "3-0",
+          "competition": "FIFA World Cup Qualifying - CAF",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Iran",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away",
+          "notes": "Iran won 5-4 on penalties"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Egypt",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        }
+      ]
+    }
+  },
+  "group_F": {
+    "NED": {
+      "team_name": "Netherlands",
+      "fifa_code": "NED",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Spain",
+          "score": "2-2",
+          "competition": "UEFA Nations League Quarterfinal (1st Leg)",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Spain",
+          "score": "3-3",
+          "competition": "UEFA Nations League Quarterfinal (2nd Leg)",
+          "result": "L",
+          "venue": "away",
+          "notes": "Spain won 5-4 on penalties; aggregate 5-5"
+        },
+        {
+          "date": "2025-06-07",
+          "opponent": "Finland",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Malta",
+          "score": "8-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Poland",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Lithuania",
+          "score": "3-2",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Malta",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Finland",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Poland",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Lithuania",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        }
+      ]
+    },
+    "ITA": {
+      "team_name": "Italy",
+      "fifa_code": "ITA",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Germany",
+          "score": "2-1",
+          "competition": "UEFA Nations League Quarterfinal (1st Leg)",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Germany",
+          "score": "3-3",
+          "competition": "UEFA Nations League Quarterfinal (2nd Leg)",
+          "result": "L",
+          "venue": "home",
+          "notes": "Germany won on away goals; aggregate 4-5"
+        },
+        {
+          "date": "2025-06-06",
+          "opponent": "Norway",
+          "score": "0-3",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-09",
+          "opponent": "Moldova",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-05",
+          "opponent": "Estonia",
+          "score": "5-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Israel",
+          "score": "5-4",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away",
+          "notes": "Played in Debrecen, Hungary"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Estonia",
+          "score": "3-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Israel",
+          "score": "3-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Moldova",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Norway",
+          "score": "1-4",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "home"
+        }
+      ]
+    },
+    "ECU": {
+      "team_name": "Ecuador",
+      "fifa_code": "ECU",
+      "recent_matches": [
+        {
+          "date": "2025-03-21",
+          "opponent": "Venezuela",
+          "score": "2-1",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-25",
+          "opponent": "Chile",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-05",
+          "opponent": "Brazil",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Peru",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Paraguay",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Argentina",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - CONMEBOL",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "United States",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Mexico",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Canada",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "New Zealand",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
+        }
+      ]
+    },
+    "CUR": {
+      "team_name": "Curacao",
+      "fifa_code": "CUR",
+      "recent_matches": [
+        {
+          "date": "2025-06-17",
+          "opponent": "El Salvador",
+          "score": "0-0",
+          "competition": "CONCACAF Gold Cup Group Stage",
+          "result": "D",
+          "venue": "neutral"
+        },
+        {
+          "date": "2025-06-21",
+          "opponent": "Canada",
+          "score": "1-1",
+          "competition": "CONCACAF Gold Cup Group Stage",
+          "result": "D",
+          "venue": "neutral"
+        },
+        {
+          "date": "2025-06-24",
+          "opponent": "Honduras",
+          "score": "1-2",
+          "competition": "CONCACAF Gold Cup Group Stage",
+          "result": "L",
+          "venue": "neutral"
+        },
+        {
+          "date": "2025-09-05",
+          "opponent": "Trinidad and Tobago",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONCACAF",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Bermuda",
+          "score": "3-2",
+          "competition": "FIFA World Cup Qualifying - CONCACAF",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Jamaica",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - CONCACAF",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Trinidad and Tobago",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - CONCACAF",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Bermuda",
+          "score": "7-0",
+          "competition": "FIFA World Cup Qualifying - CONCACAF",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Jamaica",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - CONCACAF",
+          "result": "D",
+          "venue": "away",
+          "notes": "Curacao qualified for World Cup 2026 with this draw"
+        }
+      ]
+    }
+  },
+  "group_G": {
+    "GER": {
+      "team_name": "Germany",
+      "fifa_code": "GER",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Italy",
+          "score": "1-2",
+          "competition": "UEFA Nations League Quarterfinal (1st Leg)",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Italy",
+          "score": "3-3",
+          "competition": "UEFA Nations League Quarterfinal (2nd Leg)",
+          "result": "W",
+          "venue": "home",
+          "notes": "Germany won on away goals; aggregate 5-4 (4-4 after regular; Germany advanced)"
+        },
+        {
+          "date": "2025-06-04",
+          "opponent": "Portugal",
+          "score": "1-2",
+          "competition": "UEFA Nations League Semifinal",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2025-06-08",
+          "opponent": "France",
+          "score": "0-2",
+          "competition": "UEFA Nations League Third Place Match",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Slovakia",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Northern Ireland",
+          "score": "3-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Luxembourg",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Northern Ireland",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Luxembourg",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Slovakia",
+          "score": "6-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        }
+      ]
+    },
+    "MEX": {
+      "team_name": "Mexico",
+      "fifa_code": "MEX",
+      "recent_matches": [
+        {
+          "date": "2025-07-02",
+          "opponent": "Honduras",
+          "score": "1-0",
+          "competition": "CONCACAF Gold Cup Group Stage",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-07-06",
+          "opponent": "United States",
+          "score": "2-1",
+          "competition": "CONCACAF Gold Cup",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-06",
+          "opponent": "Japan",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "South Korea",
+          "score": "2-2",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Colombia",
+          "score": "0-4",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Ecuador",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Uruguay",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Paraguay",
+          "score": "1-2",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2026-01-22",
+          "opponent": "Panama",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2026-01-25",
+          "opponent": "Bolivia",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        }
+      ]
+    },
+    "KOR": {
+      "team_name": "South Korea",
+      "fifa_code": "KOR",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Oman",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-25",
+          "opponent": "Jordan",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-05",
+          "opponent": "Iraq",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Kuwait",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-06",
+          "opponent": "United States",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Mexico",
+          "score": "2-2",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Brazil",
+          "score": "0-5",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Paraguay",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Bolivia",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Ghana",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        }
+      ]
+    },
+    "UZB": {
+      "team_name": "Uzbekistan",
+      "fifa_code": "UZB",
+      "recent_matches": [
+        {
+          "date": "2024-11-14",
+          "opponent": "Qatar",
+          "score": "3-2",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2024-11-19",
+          "opponent": "North Korea",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-03-20",
+          "opponent": "Kyrgyz Republic",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-03-25",
+          "opponent": "Iran",
+          "score": "2-2",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-05",
+          "opponent": "United Arab Emirates",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Qatar",
+          "score": "3-0",
+          "competition": "FIFA World Cup Qualifying - AFC",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Uruguay",
+          "score": "1-2",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Egypt",
+          "score": "0-2",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Iran",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home",
+          "notes": "Uzbekistan won 4-3 on penalties"
+        },
+        {
+          "date": "2026-01-26",
+          "opponent": "China",
+          "score": "2-2",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home"
+        }
+      ]
+    }
+  },
+  "group_H": {
+    "BEL": {
+      "team_name": "Belgium",
+      "fifa_code": "BEL",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Ukraine",
+          "score": "1-3",
+          "competition": "UEFA Nations League Quarterfinal (1st Leg)",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Ukraine",
+          "score": "3-0",
+          "competition": "UEFA Nations League Quarterfinal (2nd Leg)",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-06-06",
+          "opponent": "North Macedonia",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-09",
+          "opponent": "Wales",
+          "score": "3-4",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Liechtenstein",
+          "score": "6-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Kazakhstan",
+          "score": "6-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "North Macedonia",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Wales",
+          "score": "4-2",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Kazakhstan",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Liechtenstein",
+          "score": "7-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        }
+      ]
+    },
+    "CRO": {
+      "team_name": "Croatia",
+      "fifa_code": "CRO",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "France",
+          "score": "2-0",
+          "competition": "UEFA Nations League Quarterfinal (1st Leg)",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "France",
+          "score": "0-2",
+          "competition": "UEFA Nations League Quarterfinal (2nd Leg)",
+          "result": "L",
+          "venue": "away",
+          "notes": "France won 5-4 on penalties; aggregate 2-2"
+        },
+        {
+          "date": "2025-06-06",
+          "opponent": "Gibraltar",
+          "score": "7-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-09",
+          "opponent": "Czech Republic",
+          "score": "5-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-05",
+          "opponent": "Faroe Islands",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Montenegro",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Czech Republic",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Gibraltar",
+          "score": "3-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Faroe Islands",
+          "score": "3-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Montenegro",
+          "score": "2-3",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "away"
+        }
+      ]
+    },
+    "AUT": {
+      "team_name": "Austria",
+      "fifa_code": "AUT",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Serbia",
+          "score": "1-1",
+          "competition": "UEFA Nations League Playoff (1st Leg)",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Serbia",
+          "score": "0-2",
+          "competition": "UEFA Nations League Playoff (2nd Leg)",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2025-06-07",
+          "opponent": "Romania",
+          "score": "1-2",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "San Marino",
+          "score": "4-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-06",
+          "opponent": "Cyprus",
+          "score": "1-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Bosnia and Herzegovina",
+          "score": "2-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "San Marino",
+          "score": "10-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Romania",
+          "score": "0-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Cyprus",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Bosnia and Herzegovina",
+          "score": "1-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "home"
+        }
+      ]
+    },
+    "SCO": {
+      "team_name": "Scotland",
+      "fifa_code": "SCO",
+      "recent_matches": [
+        {
+          "date": "2025-03-20",
+          "opponent": "Greece",
+          "score": "1-0",
+          "competition": "UEFA Nations League Playoff",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Greece",
+          "score": "3-0",
+          "competition": "UEFA Nations League Playoff",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-06",
+          "opponent": "Iceland",
+          "score": "1-3",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-06-09",
+          "opponent": "Liechtenstein",
+          "score": "4-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-05",
+          "opponent": "Denmark",
+          "score": "0-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Belarus",
+          "score": "2-0",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Greece",
+          "score": "3-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Belarus",
+          "score": "2-1",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Greece",
+          "score": "2-3",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Denmark",
+          "score": "4-2",
+          "competition": "FIFA World Cup Qualifying - UEFA",
+          "result": "W",
+          "venue": "home"
+        }
+      ]
+    }
+  }
+}

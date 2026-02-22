@@ -87,10 +87,6 @@ dependencies:
   # Phase 4: AI Integration Features (Compatible versions)
   # vector_math: ^2.1.4 # Vector operations for embeddings - pinned by flutter_test
 
-  # ESPN API Integration
-  retrofit: ^4.0.1  # For type-safe API calls
-  json_annotation: ^4.8.1  # For JSON serialization
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -98,8 +94,6 @@ dev_dependencies:
   flutter_launcher_icons: ^0.13.1 # Or latest version
   hive_generator: ^2.0.1 # For Hive type adapters
   build_runner: ^2.4.7 # For code generation
-  retrofit_generator: ^8.0.4  # For generating API client code
-  json_serializable: ^6.7.1  # For JSON code generation
   bloc_test: ^9.1.5  # For testing BLoC/Cubit
   mocktail: ^1.0.1  # For mocking in tests
   fake_cloud_firestore: ^3.0.2  # For testing Firestore integration
@@ -122,6 +116,13 @@ flutter:
     - assets/data/worldcup/history/
     - assets/data/worldcup/player_stats/
     - assets/data/worldcup/venues/
+    # Enhanced AI analysis data
+    - assets/data/worldcup/recent_form/
+    - assets/data/worldcup/squad_values.json
+    - assets/data/worldcup/betting_odds.json
+    - assets/data/worldcup/confederation_records.json
+    - assets/data/worldcup/historical_patterns.json
+    - assets/data/worldcup/injury_tracker.json
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

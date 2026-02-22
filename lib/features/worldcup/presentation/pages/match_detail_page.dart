@@ -4,6 +4,7 @@ import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart' as di;
 import '../../../../l10n/app_localizations.dart';
 import '../../data/datasources/world_cup_firestore_datasource.dart';
+import '../../data/services/local_prediction_engine.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/nearby_venues_cubit.dart';
 import '../widgets/widgets.dart';
@@ -25,6 +26,7 @@ class MatchDetailPage extends StatefulWidget {
 class _MatchDetailPageState extends State<MatchDetailPage> {
   WorldCupVenue? _matchVenue;
   MatchSummary? _matchSummary;
+  AIMatchPrediction? _localPrediction;
   bool _isLoadingSummary = false;
   bool _showAllNearbyVenues = false;
   static const int _defaultNearbyVenuesCount = 4;
@@ -34,6 +36,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     super.initState();
     _findMatchVenue();
     _loadMatchSummary();
+    _loadLocalPrediction();
   }
 
   /// Load AI match summary from Firestore
@@ -61,6 +64,24 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       if (mounted) {
         setState(() => _isLoadingSummary = false);
       }
+    }
+  }
+
+  /// Load prediction from LocalPredictionEngine (local data only)
+  Future<void> _loadLocalPrediction() async {
+    if (widget.match.homeTeamCode == null || widget.match.awayTeamCode == null) {
+      return;
+    }
+
+    try {
+      final engine = di.sl<LocalPredictionEngine>();
+      final prediction = await engine.generatePrediction(match: widget.match);
+
+      if (mounted) {
+        setState(() => _localPrediction = prediction);
+      }
+    } catch (_) {
+      // Silently fail — the Firestore prediction tab is the fallback
     }
   }
 
@@ -313,6 +334,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       child: AIMatchSummaryWidget(
         summary: _matchSummary!,
         initiallyExpanded: false,
+        localPrediction: _localPrediction,
       ),
     );
   }

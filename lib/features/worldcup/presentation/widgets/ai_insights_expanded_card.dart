@@ -78,8 +78,37 @@ class AIInsightsExpandedCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _buildEnhancedHeader(),
+          if (prediction.isUpsetAlert)
+            _UpsetAlertBadge(text: prediction.upsetAlertText),
           const SizedBox(height: 16),
           _PredictionSummary(match: match, prediction: prediction),
+          if (prediction.confidenceDebate != null) ...[
+            const SizedBox(height: 12),
+            _ConfidenceDebate(text: prediction.confidenceDebate!),
+          ],
+          if (prediction.homeRecentForm != null ||
+              prediction.awayRecentForm != null) ...[
+            const SizedBox(height: 16),
+            _RecentFormSection(
+              homeTeamName: match.homeTeamName,
+              awayTeamName: match.awayTeamName,
+              homeForm: prediction.homeRecentForm,
+              awayForm: prediction.awayRecentForm,
+            ),
+          ],
+          if (prediction.squadValueNarrative != null) ...[
+            const SizedBox(height: 16),
+            _SquadValueShowdown(narrative: prediction.squadValueNarrative!),
+          ],
+          if (prediction.managerMatchup != null) ...[
+            const SizedBox(height: 16),
+            _ManagerChess(matchup: prediction.managerMatchup!),
+          ],
+          if (prediction.historicalPatterns.isNotEmpty) ...[
+            const SizedBox(height: 16),
+            _HistoricalPatternsSection(
+                patterns: prediction.historicalPatterns),
+          ],
           const SizedBox(height: 16),
           if (prediction.keyFactors.isNotEmpty)
             _KeyFactorsPreview(keyFactors: prediction.keyFactors),
@@ -387,6 +416,333 @@ class _KeyFactorsPreview extends StatelessWidget {
                 fontStyle: FontStyle.italic,
               ),
             ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Upset alert badge shown when underdog has a realistic chance.
+class _UpsetAlertBadge extends StatelessWidget {
+  final String? text;
+
+  const _UpsetAlertBadge({this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(top: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.red.withValues(alpha: 0.3),
+            Colors.orange.withValues(alpha: 0.2),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.red.withValues(alpha: 0.5)),
+      ),
+      child: Row(
+        children: [
+          const Text('\u26A0\uFE0F', style: TextStyle(fontSize: 16)),
+          const SizedBox(width: 8),
+          const Text(
+            'UPSET ALERT',
+            style: TextStyle(
+              color: Colors.redAccent,
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 1.2,
+            ),
+          ),
+          if (text != null) ...[
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                text!,
+                style: const TextStyle(color: Colors.white70, fontSize: 12),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Explains why the AI has low confidence in its prediction.
+class _ConfidenceDebate extends StatelessWidget {
+  final String text;
+
+  const _ConfidenceDebate({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.amber.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.amber.withValues(alpha: 0.3)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.balance, color: Colors.amber, size: 18),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Why This Is Close',
+                  style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  text,
+                  style: const TextStyle(color: Colors.white70, fontSize: 12),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Recent form section showing both teams' recent results.
+class _RecentFormSection extends StatelessWidget {
+  final String homeTeamName;
+  final String awayTeamName;
+  final String? homeForm;
+  final String? awayForm;
+
+  const _RecentFormSection({
+    required this.homeTeamName,
+    required this.awayTeamName,
+    this.homeForm,
+    this.awayForm,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.trending_up, color: AppTheme.primaryOrange, size: 18),
+              SizedBox(width: 8),
+              Text(
+                'Recent Form',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          if (homeForm != null)
+            _FormRow(teamName: homeTeamName, form: homeForm!),
+          if (homeForm != null && awayForm != null)
+            const SizedBox(height: 6),
+          if (awayForm != null)
+            _FormRow(teamName: awayTeamName, form: awayForm!),
+        ],
+      ),
+    );
+  }
+}
+
+class _FormRow extends StatelessWidget {
+  final String teamName;
+  final String form;
+
+  const _FormRow({required this.teamName, required this.form});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        SizedBox(
+          width: 80,
+          child: Text(
+            teamName,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 13,
+              fontWeight: FontWeight.w600,
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            form,
+            style: const TextStyle(color: Colors.white70, fontSize: 12),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Squad value comparison showdown section.
+class _SquadValueShowdown extends StatelessWidget {
+  final String narrative;
+
+  const _SquadValueShowdown({required this.narrative});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Text('\u{1F4B0}', style: TextStyle(fontSize: 16)),
+              SizedBox(width: 8),
+              Text(
+                'Squad Value Showdown',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            narrative,
+            style: const TextStyle(color: Colors.white70, fontSize: 13),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Manager tactical matchup section.
+class _ManagerChess extends StatelessWidget {
+  final String matchup;
+
+  const _ManagerChess({required this.matchup});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Text('\u265F', style: TextStyle(fontSize: 18, color: Colors.white)),
+              SizedBox(width: 8),
+              Text(
+                'Manager Chess',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            matchup,
+            style: const TextStyle(color: Colors.white70, fontSize: 13),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Historical patterns section for the matchup.
+class _HistoricalPatternsSection extends StatelessWidget {
+  final List<String> patterns;
+
+  const _HistoricalPatternsSection({required this.patterns});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.history, color: AppTheme.accentGold, size: 18),
+              SizedBox(width: 8),
+              Text(
+                'Historical Patterns',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          ...patterns.take(3).map(
+            (pattern) => Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    '\u2022 ',
+                    style: TextStyle(color: AppTheme.accentGold, fontSize: 14),
+                  ),
+                  Expanded(
+                    child: Text(
+                      pattern,
+                      style: const TextStyle(color: Colors.white70, fontSize: 12),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

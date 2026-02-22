@@ -1,0 +1,319 @@
+{
+  "lastUpdated": "2026-02-21",
+  "description": "Confederation vs confederation head-to-head records at FIFA World Cup finals (1930-2022). Data sourced from RSSSF (Rec.Sport.Soccer Statistics Foundation), FIFA.com, and Wikipedia.",
+  "dataCoverage": "FIFA World Cup finals 1930-2022 (22 tournaments, 964 matches total)",
+  "sources": [
+    "https://www.rsssf.org/tablesw/wc-confed-hth.html",
+    "https://www.planetworldcup.com/STATS/stat_confed.html",
+    "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics",
+    "https://en.wikipedia.org/wiki/African_nations_at_the_FIFA_World_Cup",
+    "https://en.wikipedia.org/wiki/Asian_nations_at_the_FIFA_World_Cup",
+    "https://en.wikipedia.org/wiki/South_American_nations_at_the_FIFA_World_Cup",
+    "https://en.wikipedia.org/wiki/North,_Central_American_and_Caribbean_nations_at_the_FIFA_World_Cup"
+  ],
+  "confederationOverview": {
+    "UEFA": {
+      "fullName": "Union of European Football Associations",
+      "region": "Europe",
+      "worldCupTitles": 12,
+      "titlesBy": "Italy (4), Germany (4), France (2), Spain (1), England (1)",
+      "totalWorldCupAppearances": 258,
+      "totalMatches": 1080,
+      "totalWins": 468,
+      "totalDraws": 246,
+      "totalLosses": 366
+    },
+    "CONMEBOL": {
+      "fullName": "South American Football Confederation",
+      "region": "South America",
+      "worldCupTitles": 10,
+      "titlesBy": "Brazil (5), Argentina (3), Uruguay (2)",
+      "totalWorldCupAppearances": 89,
+      "totalMatches": 380,
+      "totalWins": 185,
+      "totalDraws": 75,
+      "totalLosses": 120
+    },
+    "CAF": {
+      "fullName": "Confederation of African Football",
+      "region": "Africa",
+      "worldCupTitles": 0,
+      "bestResult": "Semi-finals (Morocco, 2022)",
+      "totalWorldCupAppearances": 49,
+      "totalMatches": 162,
+      "totalWins": 37,
+      "totalDraws": 41,
+      "totalLosses": 84
+    },
+    "CONCACAF": {
+      "fullName": "Confederation of North, Central America and Caribbean Association Football",
+      "region": "North/Central America & Caribbean",
+      "worldCupTitles": 0,
+      "bestResult": "Semi-finals (USA, 1930)",
+      "totalWorldCupAppearances": 46,
+      "totalMatches": 154,
+      "totalWins": 34,
+      "totalDraws": 33,
+      "totalLosses": 87
+    },
+    "AFC": {
+      "fullName": "Asian Football Confederation",
+      "region": "Asia",
+      "worldCupTitles": 0,
+      "bestResult": "4th place (South Korea, 2002)",
+      "totalWorldCupAppearances": 43,
+      "totalMatches": 139,
+      "totalWins": 25,
+      "totalDraws": 28,
+      "totalLosses": 86
+    },
+    "OFC": {
+      "fullName": "Oceania Football Confederation",
+      "region": "Oceania",
+      "worldCupTitles": 0,
+      "bestResult": "Group stage (Australia pre-2006, New Zealand 2010)",
+      "note": "Australia moved from OFC to AFC in 2006"
+    }
+  },
+  "headToHead": [
+    {
+      "pairing": "UEFA vs CONMEBOL",
+      "confederation1": "UEFA",
+      "confederation2": "CONMEBOL",
+      "totalMatches": 244,
+      "confederation1Wins": 100,
+      "confederation2Wins": 88,
+      "draws": 56,
+      "confederation1Goals": 350,
+      "confederation2Goals": 328,
+      "confederation1WinPct": 41.0,
+      "confederation2WinPct": 36.1,
+      "drawPct": 22.9,
+      "summary": "The most iconic rivalry in World Cup history. Europe holds a slight edge overall, but South America has dominated in World Cup finals (10 titles vs 12). This is the only inter-confederation pairing to have produced World Cup champions.",
+      "notableResults": [
+        "1950 Final: Uruguay 2-1 Brazil (Maracanazo)",
+        "1970 Final: Brazil 4-1 Italy",
+        "1986 Final: Argentina 3-2 West Germany",
+        "1998 Final: France 3-0 Brazil",
+        "2002 Final: Brazil 2-0 Germany",
+        "2006 Final: Italy 1-1 France (Italy won 5-3 on penalties)",
+        "2010 SF: Netherlands 3-2 Uruguay",
+        "2014 SF: Brazil 1-7 Germany",
+        "2022 Final: Argentina 3-3 France (Argentina won 4-2 on penalties)"
+      ]
+    },
+    {
+      "pairing": "UEFA vs CAF",
+      "confederation1": "UEFA",
+      "confederation2": "CAF",
+      "totalMatches": 101,
+      "confederation1Wins": 54,
+      "confederation2Wins": 21,
+      "draws": 26,
+      "confederation1Goals": 161,
+      "confederation2Goals": 90,
+      "confederation1WinPct": 53.5,
+      "confederation2WinPct": 20.8,
+      "drawPct": 25.7,
+      "summary": "Europe has historically dominated this matchup, but African teams have produced memorable upsets. Morocco's 2022 semi-final run marked a turning point, beating Belgium, Spain, and Portugal.",
+      "notableResults": [
+        "1982: Algeria 2-1 West Germany (first African win vs European side at WC)",
+        "1990: Cameroon 2-1 Romania (Cameroon reached QF)",
+        "2002: Senegal 1-0 France (holders beaten in opener)",
+        "2010: Ghana 2-1 Serbia (Ghana reached QF)",
+        "2022: Morocco 2-0 Belgium, Morocco 0-0 Spain (Morocco won 3-0 pens)",
+        "2022: Morocco 1-0 Portugal (first African semi-finalist)",
+        "2022: Tunisia 1-0 France"
+      ]
+    },
+    {
+      "pairing": "UEFA vs AFC",
+      "confederation1": "UEFA",
+      "confederation2": "AFC",
+      "totalMatches": 89,
+      "confederation1Wins": 54,
+      "confederation2Wins": 15,
+      "draws": 20,
+      "confederation1Goals": 186,
+      "confederation2Goals": 71,
+      "confederation1WinPct": 60.7,
+      "confederation2WinPct": 16.9,
+      "drawPct": 22.5,
+      "summary": "Europe has the strongest advantage in this pairing, with Asian teams winning fewer than 1 in 6 matches. However, the 2022 World Cup saw a surge in Asian upsets against European teams.",
+      "notableResults": [
+        "2002: South Korea 2-1 Spain (QF, South Korea reached SF as co-hosts)",
+        "2002: South Korea 2-0 Italy (Round of 16)",
+        "2018: South Korea 2-0 Germany (defending champions eliminated in group)",
+        "2022: Japan 2-1 Germany (group stage comeback)",
+        "2022: Japan 2-1 Spain (group stage)",
+        "2022: Australia 1-0 Denmark"
+      ]
+    },
+    {
+      "pairing": "UEFA vs CONCACAF",
+      "confederation1": "UEFA",
+      "confederation2": "CONCACAF",
+      "totalMatches": 101,
+      "confederation1Wins": 58,
+      "confederation2Wins": 16,
+      "draws": 27,
+      "confederation1Goals": 215,
+      "confederation2Goals": 83,
+      "confederation1WinPct": 57.4,
+      "confederation2WinPct": 15.8,
+      "drawPct": 26.7,
+      "summary": "Europe dominates this matchup heavily. Mexico accounts for the majority of CONCACAF's wins, while the USA's progress has been mainly against non-European opponents. CONCACAF teams tend to grind out draws rather than wins.",
+      "notableResults": [
+        "1930: USA 6-1 Belgium (USA reached SF)",
+        "1950: USA 1-0 England (one of the biggest upsets in WC history)",
+        "1970: Mexico 1-0 Belgium (Mexico reached QF as hosts)",
+        "2002: USA 0-1 Germany (QF)",
+        "2010: USA 1-1 England (group stage)",
+        "2014: Costa Rica 0-0 England, topped group with Italy and Uruguay",
+        "2018: Mexico 1-0 Germany (group stage upset)"
+      ]
+    },
+    {
+      "pairing": "CONMEBOL vs CAF",
+      "confederation1": "CONMEBOL",
+      "confederation2": "CAF",
+      "totalMatches": 31,
+      "confederation1Wins": 21,
+      "confederation2Wins": 5,
+      "draws": 5,
+      "confederation1Goals": 58,
+      "confederation2Goals": 25,
+      "confederation1WinPct": 67.7,
+      "confederation2WinPct": 16.1,
+      "drawPct": 16.1,
+      "summary": "South America dominates this matchup with nearly a 68% win rate. African teams have rarely beaten South American opponents at the World Cup, though Cameroon's famous 1990 victory over Argentina remains a landmark moment.",
+      "notableResults": [
+        "1990: Cameroon 1-0 Argentina (opening match, defending champions beaten)",
+        "1998: Morocco 3-0 Scotland (group stage)",
+        "2010: Ghana 1-1 Uruguay (QF, Suarez handball, Ghana lost on pens)",
+        "2014: Colombia 2-1 Ivory Coast (group stage)",
+        "2022: Cameroon 1-0 Brazil (group stage, but Brazil already qualified)"
+      ]
+    },
+    {
+      "pairing": "CONMEBOL vs AFC",
+      "confederation1": "CONMEBOL",
+      "confederation2": "AFC",
+      "totalMatches": 30,
+      "confederation1Wins": 22,
+      "confederation2Wins": 2,
+      "draws": 6,
+      "confederation1Goals": 62,
+      "confederation2Goals": 15,
+      "confederation1WinPct": 73.3,
+      "confederation2WinPct": 6.7,
+      "drawPct": 20.0,
+      "summary": "South America's most lopsided matchup. Asian teams have only beaten South American opponents twice in World Cup history, with a goal ratio of nearly 4:1 in CONMEBOL's favor.",
+      "notableResults": [
+        "1978: Iran 1-1 Peru (first Asian point vs South America in WC)",
+        "2006: Brazil 4-1 Japan (group stage)",
+        "2010: Argentina 4-1 South Korea (group stage)",
+        "2018: Colombia 1-2 Japan (group stage, Colombia red card early)",
+        "2022: Saudi Arabia 2-1 Argentina (historic upset, ended 36-game unbeaten run)",
+        "2022: Australia 1-2 Argentina (Round of 16)"
+      ]
+    },
+    {
+      "pairing": "CONMEBOL vs CONCACAF",
+      "confederation1": "CONMEBOL",
+      "confederation2": "CONCACAF",
+      "totalMatches": 29,
+      "confederation1Wins": 22,
+      "confederation2Wins": 4,
+      "draws": 3,
+      "confederation1Goals": 67,
+      "confederation2Goals": 22,
+      "confederation1WinPct": 75.9,
+      "confederation2WinPct": 13.8,
+      "drawPct": 10.3,
+      "summary": "South America's second most dominant matchup. CONCACAF teams have won only 4 of 29 matches against South American opponents, with Mexico accounting for most of those results.",
+      "notableResults": [
+        "1930: USA 3-0 Paraguay (USA reached SF)",
+        "1994: USA 2-1 Colombia (group stage, Escobar own goal)",
+        "2010: Mexico 0-3 Argentina (Round of 16)",
+        "2014: Costa Rica topped Group D ahead of Uruguay, Italy, England",
+        "2022: Mexico 0-2 Argentina (group stage)"
+      ]
+    },
+    {
+      "pairing": "CAF vs AFC",
+      "confederation1": "CAF",
+      "confederation2": "AFC",
+      "totalMatches": 20,
+      "confederation1Wins": 7,
+      "confederation2Wins": 6,
+      "draws": 7,
+      "confederation1Goals": 27,
+      "confederation2Goals": 29,
+      "confederation1WinPct": 35.0,
+      "confederation2WinPct": 30.0,
+      "drawPct": 35.0,
+      "summary": "The most evenly matched inter-confederation pairing. Africa holds a slight edge in wins but Asia has scored more goals. A remarkably balanced rivalry with a very high draw rate.",
+      "notableResults": [
+        "2006: South Korea 2-1 Togo (group stage)",
+        "2010: Japan 1-0 Cameroon (group stage)",
+        "2014: Ivory Coast 2-1 Japan (group stage)",
+        "2018: Japan 2-2 Senegal (dramatic group stage draw)",
+        "2022: South Korea 2-3 Ghana (entertaining group stage match)",
+        "2022: Tunisia 0-1 Australia (group stage)"
+      ]
+    },
+    {
+      "pairing": "CAF vs CONCACAF",
+      "confederation1": "CAF",
+      "confederation2": "CONCACAF",
+      "totalMatches": 10,
+      "confederation1Wins": 5,
+      "confederation2Wins": 3,
+      "draws": 2,
+      "confederation1Goals": 13,
+      "confederation2Goals": 10,
+      "confederation1WinPct": 50.0,
+      "confederation2WinPct": 30.0,
+      "drawPct": 20.0,
+      "summary": "A relatively rare World Cup matchup with only 10 meetings. Africa holds the edge, but the sample size is small. Ghana's 2010 victory over the USA in the Round of 16 is the most significant result.",
+      "notableResults": [
+        "2006: Ghana 2-0 USA (group stage)",
+        "2010: Ghana 2-1 USA (Round of 16, extra time)",
+        "2010: USA 0-0 Algeria (group stage)",
+        "2014: USA 2-1 Ghana (group stage revenge)"
+      ]
+    },
+    {
+      "pairing": "AFC vs CONCACAF",
+      "confederation1": "AFC",
+      "confederation2": "CONCACAF",
+      "totalMatches": 11,
+      "confederation1Wins": 5,
+      "confederation2Wins": 4,
+      "draws": 2,
+      "confederation1Goals": 19,
+      "confederation2Goals": 14,
+      "confederation1WinPct": 45.5,
+      "confederation2WinPct": 36.4,
+      "drawPct": 18.2,
+      "summary": "A closely contested pairing with Asian teams holding a slight edge. Limited sample size as these teams rarely meet in World Cup group stages. Both confederations have been expanding their competitiveness.",
+      "notableResults": [
+        "2002: South Korea 1-0 USA (group stage, co-host South Korea)",
+        "2006: Iran 1-1 Mexico (group stage draw)",
+        "2018: South Korea 1-2 Mexico (group stage)",
+        "2022: Japan 0-1 Costa Rica (group stage upset)",
+        "2022: Saudi Arabia 0-2 Mexico (group stage)"
+      ]
+    }
+  ],
+  "keyInsights": [
+    "UEFA (Europe) and CONMEBOL (South America) are the only confederations to have produced World Cup winners, combining for all 22 titles (12 and 10 respectively).",
+    "CONMEBOL has the highest inter-confederation win rate, dominating AFC (73.3%), CONCACAF (75.9%), and CAF (67.7%) matchups.",
+    "UEFA has the most total World Cup matches played (1,080) and wins (468) of any confederation.",
+    "CAF vs AFC is the most balanced inter-confederation pairing with a near-equal record and high draw rate (35%).",
+    "The 2022 Qatar World Cup was a breakout tournament for both AFC and CAF teams, with Saudi Arabia beating Argentina, Japan beating Germany and Spain, Morocco reaching the semi-finals, and Australia advancing to the Round of 16.",
+    "African nations have never won the World Cup, but Morocco's 2022 semi-final run was the closest any non-UEFA/CONMEBOL team has come to the final.",
+    "South Korea's 4th place finish in 2002 remains the best result by an AFC member at a World Cup."
+  ]
+}

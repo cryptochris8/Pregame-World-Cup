@@ -267,6 +267,10 @@ void _initializeAIServicesBackground() async {
 
 /// Initialize AdMob in the background
 void _initializeAdMobBackground() async {
+  if (kIsWeb) {
+    debugLog('ADMOB: Skipping - not supported on web');
+    return;
+  }
   try {
     debugLog('ADMOB: Starting background initialization');
 
