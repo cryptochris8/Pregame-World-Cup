@@ -417,13 +417,30 @@ service cloud.firestore {
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
-    // Venue enhancements - auth read, venue owner or admin write
+    // Venue enhancements - auth read, Cloud Functions handle claims (admin SDK bypasses rules)
+    // Owner can update non-sensitive fields; claimStatus, isVerified, subscriptionTier are locked
     match /venue_enhancements/{venueId} {
       allow read: if isAuth();
-      allow create: if isAdmin() || (isAuth() && request.resource.data.ownerId == request.auth.uid);
+      allow create: if isAdmin();
       allow update: if isAdmin() || (isAuth() && resource.data.ownerId == request.auth.uid
-        && request.resource.data.ownerId == resource.data.ownerId);
-      allow delete: if isAdmin() || (isAuth() && resource.data.ownerId == request.auth.uid);
+        && resource.data.claimStatus == 'approved'
+        && request.resource.data.ownerId == resource.data.ownerId
+        && request.resource.data.claimStatus == resource.data.claimStatus
+        && request.resource.data.isVerified == resource.data.isVerified
+        && request.resource.data.subscriptionTier == resource.data.subscriptionTier);
+      allow delete: if isAdmin();
+    }
+
+    // Venue verification codes - Cloud Functions only (admin SDK bypasses rules)
+    match /venue_verification_codes/{venueId} {
+      allow read, write: if false;
+    }
+
+    // Venue disputes - auth users can create own disputes, admin can read/update all
+    match /venue_disputes/{disputeId} {
+      allow create: if isAuth() && request.auth.uid == request.resource.data.disputerId;
+      allow read: if isAuth() && request.auth.uid == resource.data.disputerId;
+      allow read, update: if isAdmin();
     }
 
     // AI recommendations - auth read, own write

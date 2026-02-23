@@ -5,10 +5,8 @@ import '../../../../l10n/app_localizations.dart';
 
 import '../../../recommendations/domain/entities/place.dart';
 import '../../domain/entities/entities.dart';
-import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_onboarding_cubit.dart';
 import '../bloc/venue_onboarding_state.dart';
-import 'venue_portal_home_screen.dart';
 import '../../../../injection_container.dart';
 
 class VenueOnboardingScreen extends StatefulWidget {
@@ -25,6 +23,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
   late final TextEditingController _businessNameController;
   late final TextEditingController _emailController;
   late final TextEditingController _phoneController;
+  late final TextEditingController _verificationCodeController;
 
   @override
   void initState() {
@@ -33,6 +32,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
     _businessNameController = TextEditingController(text: widget.venue.name);
     _emailController = TextEditingController(text: user?.email ?? '');
     _phoneController = TextEditingController();
+    _verificationCodeController = TextEditingController();
   }
 
   @override
@@ -40,6 +40,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
     _businessNameController.dispose();
     _emailController.dispose();
     _phoneController.dispose();
+    _verificationCodeController.dispose();
     super.dispose();
   }
 
@@ -52,24 +53,6 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
         ..checkVenueAvailability(widget.venue.placeId),
       child: BlocConsumer<VenueOnboardingCubit, VenueOnboardingState>(
         listener: (context, state) {
-          if (state.isSuccess && state.enhancement != null) {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (_) => BlocProvider(
-                  create: (_) => sl<VenueEnhancementCubit>()
-                    ..loadEnhancement(
-                      widget.venue.placeId,
-                      venueName: widget.venue.name,
-                    ),
-                  child: VenuePortalHomeScreen(
-                    venueId: widget.venue.placeId,
-                    venueName: widget.venue.name,
-                  ),
-                ),
-              ),
-            );
-          }
           if (state.hasError && state.errorMessage != null) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -89,7 +72,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
               bottom: PreferredSize(
                 preferredSize: const Size.fromHeight(4),
                 child: LinearProgressIndicator(
-                  value: (state.currentStep + 1) / 3,
+                  value: (state.currentStep + 1) / 4,
                   backgroundColor: Colors.white12,
                   valueColor: const AlwaysStoppedAnimation<Color>(
                     Color(0xFFFF6B35),
@@ -115,13 +98,19 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
       return _buildAlreadyClaimedView(context);
     }
 
+    if (state.isPendingReview) {
+      return _buildPendingReviewView(context);
+    }
+
     switch (state.currentStep) {
       case 0:
         return _buildStep1(context, state);
       case 1:
         return _buildStep2(context, state);
       case 2:
-        return _buildStep3(context, state);
+        return _buildStep3Review(context, state);
+      case 3:
+        return _buildStep4PhoneVerification(context, state);
       default:
         return _buildStep1(context, state);
     }
@@ -389,8 +378,271 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
     );
   }
 
-  // Step 3: Review & Claim
-  Widget _buildStep3(BuildContext context, VenueOnboardingState state) {
+  // Step 4: Phone Verification
+  Widget _buildStep4PhoneVerification(BuildContext context, VenueOnboardingState state) {
+    final cubit = context.read<VenueOnboardingCubit>();
+    final isSending = state.isSendingCode;
+    final isVerifying = state.isVerifying;
+    final isPending = state.isPendingVerification;
+    final hasSubmitted = isPending || isSending || isVerifying;
+
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildStepHeader(
+            'Phone Verification',
+            'We\'ll send a verification code to the venue\'s phone number to confirm your connection to this venue.',
+          ),
+          const SizedBox(height: 24),
+          // Phone number display
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: const Color(0xFF334155),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Row(
+              children: [
+                const Icon(Icons.phone, color: Color(0xFFFF6B35), size: 24),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Venue Phone',
+                        style: TextStyle(color: Colors.white38, fontSize: 12),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        state.claimInfo.contactPhone.isNotEmpty
+                            ? state.claimInfo.contactPhone
+                            : 'No phone number provided',
+                        style: const TextStyle(color: Colors.white, fontSize: 15),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 16),
+          // Send code button
+          if (!hasSubmitted)
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  cubit.claimVenue(widget.venue.placeId, widget.venue.name);
+                },
+                icon: const Icon(Icons.send, size: 18),
+                label: const Text('Submit Claim & Send Code'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFF6B35),
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
+            ),
+          if (state.isSubmitting)
+            const Center(
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: CircularProgressIndicator(color: Color(0xFFFF6B35)),
+              ),
+            ),
+          if (isPending) ...[
+            const SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                onPressed: isSending
+                    ? null
+                    : () => cubit.sendVerificationCode(widget.venue.placeId),
+                icon: isSending
+                    ? const SizedBox(
+                        width: 16,
+                        height: 16,
+                        child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+                      )
+                    : const Icon(Icons.refresh, size: 18),
+                label: Text(isSending ? 'Sending...' : 'Send Verification Code'),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white70,
+                  side: const BorderSide(color: Color(0xFFFF6B35)),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            // Code input
+            _buildTextField(
+              controller: _verificationCodeController,
+              label: 'Verification Code',
+              icon: Icons.lock_outline,
+              keyboardType: TextInputType.number,
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: isVerifying || _verificationCodeController.text.length != 6
+                    ? null
+                    : () => cubit.verifyCode(
+                          widget.venue.placeId,
+                          _verificationCodeController.text,
+                        ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF10B981),
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor: Colors.white12,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: isVerifying
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Colors.white,
+                        ),
+                      )
+                    : const Text(
+                        'Verify Code',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+              ),
+            ),
+          ],
+          const SizedBox(height: 24),
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: state.isSubmitting ? null : () => cubit.previousStep(),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.white70,
+                    side: const BorderSide(color: Colors.white24),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  ),
+                  child: const Text('Back'),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  // Pending Review confirmation screen
+  Widget _buildPendingReviewView(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                color: const Color(0xFFF59E0B).withValues(alpha: 0.2),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.hourglass_top,
+                size: 40,
+                color: Color(0xFFF59E0B),
+              ),
+            ),
+            const SizedBox(height: 24),
+            const Text(
+              'Claim Submitted',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'Your venue claim has been verified and is now pending admin review. You\'ll be notified once your claim is approved.',
+              style: TextStyle(color: Colors.white60, fontSize: 14),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 32),
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: const Color(0xFF334155),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.store, color: Color(0xFFF59E0B), size: 24),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          widget.venue.name,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        const Text(
+                          'Pending Review',
+                          style: TextStyle(
+                            color: Color(0xFFF59E0B),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Icon(Icons.pending, color: Color(0xFFF59E0B)),
+                ],
+              ),
+            ),
+            const SizedBox(height: 24),
+            OutlinedButton(
+              onPressed: () => Navigator.pop(context),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white70,
+                side: const BorderSide(color: Colors.white24),
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+              ),
+              child: const Text('Done'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  // Step 3: Review & Continue to Verification
+  Widget _buildStep3Review(BuildContext context, VenueOnboardingState state) {
     final l10n = AppLocalizations.of(context);
     final cubit = context.read<VenueOnboardingCubit>();
 
@@ -401,7 +653,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
         children: [
           _buildStepHeader(
             l10n.venueOnboardingStep3Title,
-            l10n.venueOnboardingStep3Desc,
+            'Review your information before proceeding to phone verification.',
           ),
           const SizedBox(height: 24),
           // Summary card
@@ -437,13 +689,34 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 16),
+          // Info about next step
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: const Color(0xFFF59E0B).withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: const Color(0xFFF59E0B).withValues(alpha: 0.3)),
+            ),
+            child: const Row(
+              children: [
+                Icon(Icons.info_outline, color: Color(0xFFF59E0B), size: 20),
+                SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    'Next, we\'ll verify your connection to this venue via phone.',
+                    style: TextStyle(color: Colors.white70, fontSize: 13),
+                  ),
+                ),
+              ],
+            ),
+          ),
           const SizedBox(height: 32),
           Row(
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed:
-                      state.isSubmitting ? null : () => cubit.previousStep(),
+                  onPressed: () => cubit.previousStep(),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.white70,
                     side: const BorderSide(color: Colors.white24),
@@ -456,12 +729,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
               Expanded(
                 flex: 2,
                 child: ElevatedButton(
-                  onPressed: state.isSubmitting
-                      ? null
-                      : () => cubit.claimVenue(
-                            widget.venue.placeId,
-                            widget.venue.name,
-                          ),
+                  onPressed: () => cubit.nextStep(),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFFF6B35),
                     foregroundColor: Colors.white,
@@ -470,22 +738,13 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: state.isSubmitting
-                      ? const SizedBox(
-                          width: 20,
-                          height: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: Colors.white,
-                          ),
-                        )
-                      : Text(
-                          l10n.claimThisVenue,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                  child: const Text(
+                    'Continue to Verification',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ),
             ],

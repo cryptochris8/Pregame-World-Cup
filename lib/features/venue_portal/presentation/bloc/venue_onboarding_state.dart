@@ -7,6 +7,10 @@ enum VenueOnboardingStatus {
   available,
   alreadyClaimed,
   submitting,
+  pendingVerification,
+  sendingCode,
+  verifying,
+  pendingReview,
   success,
   error,
 }
@@ -47,6 +51,10 @@ class VenueOnboardingState extends Equatable {
   bool get isAvailable => status == VenueOnboardingStatus.available;
   bool get isClaimed => status == VenueOnboardingStatus.alreadyClaimed;
   bool get isSubmitting => status == VenueOnboardingStatus.submitting;
+  bool get isPendingVerification => status == VenueOnboardingStatus.pendingVerification;
+  bool get isSendingCode => status == VenueOnboardingStatus.sendingCode;
+  bool get isVerifying => status == VenueOnboardingStatus.verifying;
+  bool get isPendingReview => status == VenueOnboardingStatus.pendingReview;
   bool get isSuccess => status == VenueOnboardingStatus.success;
   bool get hasError => status == VenueOnboardingStatus.error;
 

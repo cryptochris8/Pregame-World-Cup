@@ -44,7 +44,7 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
 
   /// Go to next step
   void nextStep() {
-    if (state.currentStep < 2) {
+    if (state.currentStep < 3) {
       emit(state.copyWith(currentStep: state.currentStep + 1));
     }
   }
@@ -56,7 +56,7 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
     }
   }
 
-  /// Claim the venue (final step)
+  /// Claim the venue via Cloud Function (creates claim in pendingVerification status)
   Future<void> claimVenue(String venueId, String venueName) async {
     emit(state.copyWith(
       status: VenueOnboardingStatus.submitting,
@@ -72,11 +72,12 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
         contactPhone: state.claimInfo.contactPhone,
         ownerRole: state.claimInfo.role.toJson(),
         venueType: state.claimInfo.venueType.toJson(),
+        venuePhoneNumber: state.claimInfo.contactPhone,
       );
 
       if (enhancement != null) {
         emit(state.copyWith(
-          status: VenueOnboardingStatus.success,
+          status: VenueOnboardingStatus.pendingVerification,
           enhancement: enhancement,
         ));
       } else {
@@ -89,6 +90,60 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
       emit(state.copyWith(
         status: VenueOnboardingStatus.error,
         errorMessage: 'Error claiming venue: $e',
+      ));
+    }
+  }
+
+  /// Send verification code to the venue's phone
+  Future<void> sendVerificationCode(String venueId) async {
+    emit(state.copyWith(
+      status: VenueOnboardingStatus.sendingCode,
+      clearError: true,
+    ));
+
+    try {
+      final success = await _service.sendVerificationCode(venueId);
+      if (success) {
+        emit(state.copyWith(
+          status: VenueOnboardingStatus.pendingVerification,
+        ));
+      } else {
+        emit(state.copyWith(
+          status: VenueOnboardingStatus.error,
+          errorMessage: 'Failed to send verification code.',
+        ));
+      }
+    } catch (e) {
+      emit(state.copyWith(
+        status: VenueOnboardingStatus.error,
+        errorMessage: 'Error sending code: $e',
+      ));
+    }
+  }
+
+  /// Verify the SMS code
+  Future<void> verifyCode(String venueId, String code) async {
+    emit(state.copyWith(
+      status: VenueOnboardingStatus.verifying,
+      clearError: true,
+    ));
+
+    try {
+      final success = await _service.verifyCode(venueId, code);
+      if (success) {
+        emit(state.copyWith(
+          status: VenueOnboardingStatus.pendingReview,
+        ));
+      } else {
+        emit(state.copyWith(
+          status: VenueOnboardingStatus.error,
+          errorMessage: 'Verification failed.',
+        ));
+      }
+    } catch (e) {
+      emit(state.copyWith(
+        status: VenueOnboardingStatus.error,
+        errorMessage: 'Error verifying code: $e',
       ));
     }
   }

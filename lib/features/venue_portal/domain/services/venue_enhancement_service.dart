@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/services/logging_service.dart';
 import '../entities/entities.dart';
@@ -93,7 +94,7 @@ class VenueEnhancementService {
     }
   }
 
-  /// Claim a venue with business info from the onboarding flow
+  /// Claim a venue via Cloud Function (server-side, transaction-safe)
   Future<VenueEnhancement?> claimVenue({
     required String venueId,
     required String venueName,
@@ -102,38 +103,28 @@ class VenueEnhancementService {
     required String contactPhone,
     required String ownerRole,
     required String venueType,
+    String? venuePhoneNumber,
   }) async {
     final user = _auth.currentUser;
     if (user == null) return null;
 
     try {
-      // Check if already claimed
-      final existing = await getVenueEnhancement(venueId);
-      if (existing != null && existing.ownerId.isNotEmpty) {
-        LoggingService.warning(
-          'Venue $venueId already claimed by ${existing.ownerId}',
-          tag: _logTag,
-        );
-        return null;
-      }
+      final callable = FirebaseFunctions.instance.httpsCallable('claimVenue');
+      final result = await callable.call({
+        'venueId': venueId,
+        'businessName': businessName,
+        'contactEmail': contactEmail,
+        'ownerRole': ownerRole,
+        'venueType': venueType,
+        'venuePhoneNumber': venuePhoneNumber ?? contactPhone,
+      });
 
-      final now = DateTime.now();
-      final enhancement = VenueEnhancement(
-        venueId: venueId,
-        ownerId: user.uid,
-        businessName: businessName,
-        contactEmail: contactEmail,
-        contactPhone: contactPhone,
-        ownerRole: ownerRole,
-        venueType: venueType,
-        createdAt: now,
-        updatedAt: now,
-      );
-
-      final success = await saveVenueEnhancement(enhancement);
-      if (success) {
+      if (result.data['success'] == true) {
+        // Clear cache and reload from Firestore
+        clearCache(venueId);
+        final enhancement = await getVenueEnhancement(venueId);
         LoggingService.info(
-          'Venue $venueId claimed by ${user.uid}',
+          'Venue $venueId claimed by ${user.uid} (server-side)',
           tag: _logTag,
         );
         return enhancement;
@@ -141,7 +132,53 @@ class VenueEnhancementService {
       return null;
     } catch (e) {
       LoggingService.error('Error claiming venue: $e', tag: _logTag);
-      return null;
+      rethrow;
+    }
+  }
+
+  /// Send verification code to venue's phone number
+  Future<bool> sendVerificationCode(String venueId) async {
+    try {
+      final callable = FirebaseFunctions.instance.httpsCallable('sendVenueVerificationCode');
+      final result = await callable.call({'venueId': venueId});
+      return result.data['success'] == true;
+    } catch (e) {
+      LoggingService.error('Error sending verification code: $e', tag: _logTag);
+      rethrow;
+    }
+  }
+
+  /// Verify the SMS code
+  Future<bool> verifyCode(String venueId, String code) async {
+    try {
+      final callable = FirebaseFunctions.instance.httpsCallable('verifyVenueCode');
+      final result = await callable.call({
+        'venueId': venueId,
+        'code': code,
+      });
+      if (result.data['success'] == true) {
+        clearCache(venueId);
+      }
+      return result.data['success'] == true;
+    } catch (e) {
+      LoggingService.error('Error verifying code: $e', tag: _logTag);
+      rethrow;
+    }
+  }
+
+  /// Submit a dispute against a claimed venue
+  Future<bool> submitDispute(String venueId, String reason, String details) async {
+    try {
+      final callable = FirebaseFunctions.instance.httpsCallable('submitVenueDispute');
+      final result = await callable.call({
+        'venueId': venueId,
+        'reason': reason,
+        'details': details,
+      });
+      return result.data['success'] == true;
+    } catch (e) {
+      LoggingService.error('Error submitting dispute: $e', tag: _logTag);
+      rethrow;
     }
   }
 

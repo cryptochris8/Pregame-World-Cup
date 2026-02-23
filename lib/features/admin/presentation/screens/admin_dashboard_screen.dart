@@ -5,6 +5,7 @@ import '../../domain/entities/admin_user.dart';
 import '../../domain/services/admin_service.dart';
 import 'admin_users_screen.dart';
 import 'admin_moderation_screen.dart';
+import 'admin_venue_claims_screen.dart';
 import 'admin_watch_parties_screen.dart';
 import 'admin_feature_flags_screen.dart';
 import 'admin_notifications_screen.dart';
@@ -338,6 +339,19 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
             () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => const AdminUsersScreen()),
+            ),
+          ),
+
+        // Venue Claims
+        if (role?.canManageUsers() ?? false)
+          _buildActionTile(
+            theme,
+            'Venue Claims',
+            'Review pending venue claims & disputes',
+            Icons.storefront_outlined,
+            () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const AdminVenueClaimsScreen()),
             ),
           ),
 

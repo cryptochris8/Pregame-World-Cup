@@ -8,6 +8,29 @@ import 'game_day_special.dart';
 import 'atmosphere_settings.dart';
 import 'live_capacity.dart';
 
+enum VenueClaimStatus {
+  pendingVerification,
+  pendingReview,
+  approved,
+  rejected;
+
+  String toJson() => name;
+
+  static VenueClaimStatus fromJson(String? value) {
+    switch (value) {
+      case 'pendingVerification':
+        return VenueClaimStatus.pendingVerification;
+      case 'pendingReview':
+        return VenueClaimStatus.pendingReview;
+      case 'rejected':
+        return VenueClaimStatus.rejected;
+      case 'approved':
+      default:
+        return VenueClaimStatus.approved;
+    }
+  }
+}
+
 class VenueEnhancement extends Equatable {
   final String venueId;
   final String ownerId;
@@ -30,6 +53,11 @@ class VenueEnhancement extends Equatable {
   final String? ownerRole;
   final String? venueType;
 
+  // Claim status
+  final VenueClaimStatus claimStatus;
+  final DateTime? claimedAt;
+  final String? venuePhoneNumber;
+
   // Metadata
   final DateTime createdAt;
   final DateTime updatedAt;
@@ -51,6 +79,9 @@ class VenueEnhancement extends Equatable {
     this.contactPhone,
     this.ownerRole,
     this.venueType,
+    this.claimStatus = VenueClaimStatus.approved,
+    this.claimedAt,
+    this.venuePhoneNumber,
     required this.createdAt,
     required this.updatedAt,
     this.isVerified = false,
@@ -85,6 +116,9 @@ class VenueEnhancement extends Equatable {
     String? contactPhone,
     String? ownerRole,
     String? venueType,
+    VenueClaimStatus? claimStatus,
+    DateTime? claimedAt,
+    String? venuePhoneNumber,
     DateTime? updatedAt,
     bool? isVerified,
     DateTime? featuredUntil,
@@ -104,6 +138,9 @@ class VenueEnhancement extends Equatable {
       contactPhone: contactPhone ?? this.contactPhone,
       ownerRole: ownerRole ?? this.ownerRole,
       venueType: venueType ?? this.venueType,
+      claimStatus: claimStatus ?? this.claimStatus,
+      claimedAt: claimedAt ?? this.claimedAt,
+      venuePhoneNumber: venuePhoneNumber ?? this.venuePhoneNumber,
       createdAt: createdAt,
       updatedAt: updatedAt ?? DateTime.now(),
       isVerified: isVerified ?? this.isVerified,
@@ -114,6 +151,11 @@ class VenueEnhancement extends Equatable {
   // Computed properties
   bool get isPremium => subscriptionTier == SubscriptionTier.premium;
   bool get isFree => subscriptionTier == SubscriptionTier.free;
+
+  bool get isClaimApproved => claimStatus == VenueClaimStatus.approved;
+  bool get isClaimPending =>
+      claimStatus == VenueClaimStatus.pendingVerification ||
+      claimStatus == VenueClaimStatus.pendingReview;
 
   bool get hasTvInfo => tvSetup != null && tvSetup!.hasScreens;
   int get tvCount => tvSetup?.totalScreens ?? 0;
@@ -180,6 +222,13 @@ class VenueEnhancement extends Equatable {
       contactPhone: data['contactPhone'] as String?,
       ownerRole: data['ownerRole'] as String?,
       venueType: data['venueType'] as String?,
+      claimStatus: VenueClaimStatus.fromJson(data['claimStatus'] as String?),
+      claimedAt: data['claimedAt'] != null
+          ? (data['claimedAt'] is Timestamp
+              ? (data['claimedAt'] as Timestamp).toDate()
+              : DateTime.parse(data['claimedAt'] as String))
+          : null,
+      venuePhoneNumber: data['venuePhoneNumber'] as String?,
       createdAt: data['createdAt'] != null
           ? (data['createdAt'] is Timestamp
               ? (data['createdAt'] as Timestamp).toDate()
@@ -214,6 +263,9 @@ class VenueEnhancement extends Equatable {
       if (contactPhone != null) 'contactPhone': contactPhone,
       if (ownerRole != null) 'ownerRole': ownerRole,
       if (venueType != null) 'venueType': venueType,
+      'claimStatus': claimStatus.toJson(),
+      if (claimedAt != null) 'claimedAt': Timestamp.fromDate(claimedAt!),
+      if (venuePhoneNumber != null) 'venuePhoneNumber': venuePhoneNumber,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': Timestamp.fromDate(updatedAt),
       'isVerified': isVerified,
@@ -237,6 +289,9 @@ class VenueEnhancement extends Equatable {
         contactPhone,
         ownerRole,
         venueType,
+        claimStatus,
+        claimedAt,
+        venuePhoneNumber,
         createdAt,
         updatedAt,
         isVerified,

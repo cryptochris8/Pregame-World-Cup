@@ -13,3 +13,4 @@ export 'presentation/screens/admin_moderation_screen.dart';
 export 'presentation/screens/admin_watch_parties_screen.dart';
 export 'presentation/screens/admin_feature_flags_screen.dart';
 export 'presentation/screens/admin_notifications_screen.dart';
+export 'presentation/screens/admin_venue_claims_screen.dart';

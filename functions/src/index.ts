@@ -737,6 +737,15 @@ export {
   resolveReport
 } from './moderation-notifications';
 
+// Export Venue Claiming functions
+export {
+  claimVenue,
+  sendVenueVerificationCode,
+  verifyVenueCode,
+  reviewVenueClaim,
+  submitVenueDispute
+} from './venue-claiming';
+
 // // Example of how to define a scheduled function (we'll configure the schedule later)
 // export const scheduledUpdateSchedule = functions.pubsub.schedule("every 24 hours")
 //   .onRun(async (context) => {
