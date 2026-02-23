@@ -243,8 +243,8 @@ void main() {
       expect(pricing.superfanPass.displayPrice, equals('\$29.99'));
       expect(pricing.superfanPass.name, equals('Superfan Pass'));
 
-      expect(pricing.venuePremium.amount, equals(9900));
-      expect(pricing.venuePremium.displayPrice, equals('\$99.00'));
+      expect(pricing.venuePremium.amount, equals(49900));
+      expect(pricing.venuePremium.displayPrice, equals('\$499.00'));
       expect(pricing.venuePremium.name, equals('Venue Premium'));
 
       expect(pricing.tournamentStart, equals(DateTime(2026, 6, 11)));

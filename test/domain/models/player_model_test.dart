@@ -4,19 +4,19 @@ import 'package:pregame_world_cup/domain/models/player.dart';
 /// Comprehensive tests for Player data model and nested classes
 void main() {
   group('Player Model - Computed Properties', () {
-    test('formattedMarketValue returns €M for millions', () {
+    test('formattedMarketValue returns \$M for millions', () {
       final player = _createPlayer(marketValue: 150000000);
-      expect(player.formattedMarketValue, equals('€150M'));
+      expect(player.formattedMarketValue, equals('\$150M'));
     });
 
-    test('formattedMarketValue returns €K for thousands', () {
+    test('formattedMarketValue returns \$K for thousands', () {
       final player = _createPlayer(marketValue: 500000);
-      expect(player.formattedMarketValue, equals('€500K'));
+      expect(player.formattedMarketValue, equals('\$500K'));
     });
 
     test('formattedMarketValue returns raw value for small amounts', () {
       final player = _createPlayer(marketValue: 500);
-      expect(player.formattedMarketValue, equals('€500'));
+      expect(player.formattedMarketValue, equals('\$500'));
     });
 
     test('positionDisplayName returns full name for GK', () {

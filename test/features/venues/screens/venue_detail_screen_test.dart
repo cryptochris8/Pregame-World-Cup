@@ -11,11 +11,15 @@ import 'package:pregame_world_cup/features/venues/widgets/venue_action_buttons.d
 import 'package:pregame_world_cup/features/venues/widgets/venue_operating_hours_card.dart';
 import 'package:pregame_world_cup/core/services/unified_venue_service.dart';
 import 'package:pregame_world_cup/features/social/domain/services/social_service.dart';
+import 'package:pregame_world_cup/features/venue_portal/domain/services/venue_enhancement_service.dart';
 
 // Mock classes for DI dependencies used by child widgets
 class MockUnifiedVenueService extends Mock implements UnifiedVenueService {}
 
 class MockSocialService extends Mock implements SocialService {}
+
+class MockVenueEnhancementService extends Mock
+    implements VenueEnhancementService {}
 
 final sl = GetIt.instance;
 
@@ -28,10 +32,14 @@ void main() {
     tempDir = await Directory.systemTemp.createTemp('hive_test_');
     Hive.init(tempDir.path);
 
-    // Register mock services in GetIt so child widgets
-    // (EnhancedAIVenueRecommendationsWidget) don't crash when calling sl<>().
+    // Register mock services in GetIt so child widgets don't crash.
     sl.registerSingleton<UnifiedVenueService>(MockUnifiedVenueService());
     sl.registerSingleton<SocialService>(MockSocialService());
+
+    final mockVenueEnhancement = MockVenueEnhancementService();
+    when(() => mockVenueEnhancement.getVenueEnhancement(any()))
+        .thenAnswer((_) async => null);
+    sl.registerSingleton<VenueEnhancementService>(mockVenueEnhancement);
   });
 
   tearDownAll(() async {

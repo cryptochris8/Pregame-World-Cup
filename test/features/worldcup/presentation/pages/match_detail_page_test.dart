@@ -126,8 +126,8 @@ void main() {
 
       await pumpMatchDetailPage(tester, match);
 
-      // Scheduled match shows 'vs' in the score display area
-      expect(find.text('vs'), findsOneWidget);
+      // Scheduled match shows 'VS' in the score display area
+      expect(find.text('VS'), findsOneWidget);
     });
 
     testWidgets('shows live indicator for live match', (tester) async {
