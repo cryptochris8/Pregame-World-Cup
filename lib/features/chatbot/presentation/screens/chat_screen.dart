@@ -5,21 +5,28 @@ import '../../../../injection_container.dart';
 import '../../domain/entities/chat_message.dart';
 import '../bloc/chatbot_cubit.dart';
 import '../widgets/chat_message_list_item.dart';
+import '../widgets/suggestion_chips.dart';
 
 class ChatScreen extends StatelessWidget {
-  const ChatScreen({super.key});
+  /// When true, renders without its own Scaffold AppBar (used inside a
+  /// bottom sheet that already has a drag handle).
+  final bool isBottomSheet;
+
+  const ChatScreen({super.key, this.isBottomSheet = false});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider<ChatbotCubit>(
       create: (_) => sl<ChatbotCubit>()..initialize(),
-      child: const _ChatScreenBody(),
+      child: _ChatScreenBody(isBottomSheet: isBottomSheet),
     );
   }
 }
 
 class _ChatScreenBody extends StatefulWidget {
-  const _ChatScreenBody();
+  final bool isBottomSheet;
+
+  const _ChatScreenBody({required this.isBottomSheet});
 
   @override
   State<_ChatScreenBody> createState() => _ChatScreenBodyState();
@@ -82,6 +89,104 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
 
   @override
   Widget build(BuildContext context) {
+    final body = Column(
+      children: [
+        Expanded(
+          child: BlocConsumer<ChatbotCubit, ChatbotState>(
+            listener: (context, state) {
+              if (state is ChatbotLoaded || state is ChatbotLoading) {
+                _scrollToBottom();
+              }
+            },
+            builder: (context, state) {
+              final messages = _messagesFromState(state);
+              final isLoading = state is ChatbotLoading;
+
+              return ListView.builder(
+                controller: _scrollController,
+                padding: const EdgeInsets.all(8.0),
+                reverse: true,
+                itemCount: messages.length + (isLoading ? 1 : 0),
+                itemBuilder: (_, int index) {
+                  if (isLoading && index == 0) {
+                    return ChatMessageListItem(
+                      message: ChatMessage(
+                        text: 'Thinking...',
+                        type: ChatMessageType.thinking,
+                      ),
+                    );
+                  }
+
+                  final messageIndex = isLoading ? index - 1 : index;
+                  return ChatMessageListItem(
+                    message: messages[messageIndex],
+                  );
+                },
+              );
+            },
+          ),
+        ),
+        // Suggestion chips
+        BlocBuilder<ChatbotCubit, ChatbotState>(
+          builder: (context, state) {
+            final chips = state is ChatbotLoaded
+                ? state.currentSuggestions
+                : <String>[];
+            if (chips.isEmpty) return const SizedBox.shrink();
+            return SuggestionChips(
+              chips: chips,
+              onChipTapped: _handleSubmitted,
+            );
+          },
+        ),
+        const Divider(height: 1.0),
+        Container(
+          decoration: BoxDecoration(color: Theme.of(context).cardColor),
+          child: _buildTextComposer(),
+        ),
+      ],
+    );
+
+    if (widget.isBottomSheet) {
+      // Bottom-sheet mode: show a drag handle and title row instead of AppBar
+      return Column(
+        children: [
+          // Drag handle
+          Container(
+            width: 40,
+            height: 4,
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            decoration: BoxDecoration(
+              color: Colors.grey[400],
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          // Title row
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            child: Row(
+              children: [
+                Icon(Icons.smart_toy_outlined,
+                    color: Theme.of(context).colorScheme.primary),
+                const SizedBox(width: 8),
+                const Expanded(
+                  child: Text('Pregame Assistant',
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.delete_outline),
+                  tooltip: 'Clear chat',
+                  onPressed: _showClearChatDialog,
+                ),
+              ],
+            ),
+          ),
+          const Divider(height: 1),
+          Expanded(child: body),
+        ],
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pregame Assistant'),
@@ -104,53 +209,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: BlocConsumer<ChatbotCubit, ChatbotState>(
-              listener: (context, state) {
-                // Scroll to bottom whenever new messages arrive
-                if (state is ChatbotLoaded || state is ChatbotLoading) {
-                  _scrollToBottom();
-                }
-              },
-              builder: (context, state) {
-                final messages = _messagesFromState(state);
-                final isLoading = state is ChatbotLoading;
-
-                return ListView.builder(
-                  controller: _scrollController,
-                  padding: const EdgeInsets.all(8.0),
-                  reverse: true,
-                  // +1 when loading so we can render the typing indicator
-                  itemCount: messages.length + (isLoading ? 1 : 0),
-                  itemBuilder: (_, int index) {
-                    // The typing indicator goes at position 0 (newest)
-                    if (isLoading && index == 0) {
-                      return ChatMessageListItem(
-                        message: ChatMessage(
-                          text: 'Thinking...',
-                          type: ChatMessageType.thinking,
-                        ),
-                      );
-                    }
-
-                    final messageIndex = isLoading ? index - 1 : index;
-                    return ChatMessageListItem(
-                      message: messages[messageIndex],
-                    );
-                  },
-                );
-              },
-            ),
-          ),
-          const Divider(height: 1.0),
-          Container(
-            decoration: BoxDecoration(color: Theme.of(context).cardColor),
-            child: _buildTextComposer(),
-          ),
-        ],
-      ),
+      body: body,
     );
   }
 
@@ -172,7 +231,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
                     controller: _textController,
                     onSubmitted: isLoading ? null : _handleSubmitted,
                     decoration: const InputDecoration.collapsed(
-                      hintText: 'Send a message',
+                      hintText: 'Ask about teams, matches, players...',
                     ),
                     enabled: !isLoading,
                   ),
@@ -194,7 +253,6 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
     );
   }
 
-  /// Extract the message list from the current cubit state.
   List<ChatMessage> _messagesFromState(ChatbotState state) {
     if (state is ChatbotLoaded) return state.messages;
     if (state is ChatbotLoading) return state.messages;

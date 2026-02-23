@@ -100,6 +100,9 @@ import 'features/admin/domain/services/admin_service.dart';
 import 'features/match_chat/match_chat.dart';
 
 // Chatbot Feature
+import 'features/chatbot/data/services/chatbot_knowledge_base.dart';
+import 'features/chatbot/domain/services/intent_classifier.dart';
+import 'features/chatbot/domain/services/response_generator.dart';
 import 'features/chatbot/domain/services/chatbot_service.dart';
 import 'features/chatbot/presentation/bloc/chatbot_cubit.dart';
 
@@ -659,11 +662,28 @@ void _registerMatchChatServices() {
       ));
 }
 
-/// Register Chatbot services (AI-powered assistant)
+/// Register Chatbot services (local knowledge-powered assistant)
 void _registerChatbotServices() {
+  // Knowledge Base (Singleton - reuses EnhancedMatchDataService)
+  sl.registerLazySingleton<ChatbotKnowledgeBase>(() => ChatbotKnowledgeBase(
+    enhancedData: EnhancedMatchDataService.instance,
+  ));
+
+  // Intent Classifier (Singleton)
+  sl.registerLazySingleton<IntentClassifier>(() => IntentClassifier(
+    knowledgeBase: sl<ChatbotKnowledgeBase>(),
+  ));
+
+  // Response Generator (Singleton)
+  sl.registerLazySingleton<ResponseGenerator>(() => ResponseGenerator(
+    knowledgeBase: sl<ChatbotKnowledgeBase>(),
+  ));
+
   // Chatbot Service (Singleton - maintains conversation history)
   sl.registerLazySingleton<ChatbotService>(() => ChatbotService(
-    aiService: sl<MultiProviderAIService>(),
+    knowledgeBase: sl<ChatbotKnowledgeBase>(),
+    classifier: sl<IntentClassifier>(),
+    responseGenerator: sl<ResponseGenerator>(),
   ));
 
   // Chatbot Cubit (Factory - fresh instance per screen)

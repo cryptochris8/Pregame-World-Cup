@@ -19,6 +19,7 @@ import '../../injection_container.dart' as di;
 
 import '../../core/animations/animated_button.dart';
 import '../../core/animations/swipe_gestures.dart';
+import '../chatbot/presentation/widgets/chatbot_fab.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   final int initialTabIndex;
@@ -207,6 +208,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         children: _screens,
         ),
       ),
+      floatingActionButton: const ChatbotFab(),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: AppTheme.backgroundCard,
