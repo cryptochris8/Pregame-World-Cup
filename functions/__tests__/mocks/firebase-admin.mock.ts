@@ -167,6 +167,19 @@ export class MockQuery {
     return this;
   }
 
+  /**
+   * Firestore count() aggregation query mock.
+   * Returns an object whose get() resolves to { data: () => ({ count }) }.
+   */
+  count(): { get: () => Promise<{ data: () => { count: number } }> } {
+    return {
+      get: async () => {
+        const snapshot = await this.get();
+        return { data: () => ({ count: snapshot.size }) };
+      },
+    };
+  }
+
   async get(): Promise<MockQuerySnapshot> {
     let results = Array.from(this._data.entries());
 
@@ -259,6 +272,11 @@ export class MockTimestamp {
   }
 
   toMillis(): number {
+    return this._seconds * 1000 + Math.floor(this._nanoseconds / 1000000);
+  }
+
+  /** Enable numeric comparison between MockTimestamp instances (e.g. >=, <=). */
+  valueOf(): number {
     return this._seconds * 1000 + Math.floor(this._nanoseconds / 1000000);
   }
 
