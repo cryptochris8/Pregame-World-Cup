@@ -24,6 +24,7 @@ Thumbs.db
 # Environment/secrets (keep these out of git)
 .env
 .env.*
+!.env.example
 *.env
 
 # Node modules (for Firebase functions)

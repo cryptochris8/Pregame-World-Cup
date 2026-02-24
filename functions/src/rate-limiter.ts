@@ -30,6 +30,8 @@ export const RATE_LIMITS = {
   VENUE: { maxRequests: 60, windowSeconds: 60 } as RateLimitConfig,
   /** Schedule update and test endpoints -- lower traffic, heavier operations. */
   SCHEDULE: { maxRequests: 10, windowSeconds: 60 } as RateLimitConfig,
+  /** Payment checkout sessions -- prevent abuse (5 per 15 minutes per user). */
+  PAYMENT_CHECKOUT: { maxRequests: 5, windowSeconds: 900 } as RateLimitConfig,
 };
 
 /**
@@ -106,6 +108,63 @@ export async function checkRateLimit(
     // do not break functionality. Log the error for investigation.
     functions.logger.error('Rate limiter error (allowing request):', error.message);
     return true;
+  }
+}
+
+/**
+ * Rate limit check for onCall Cloud Functions (authenticated users).
+ *
+ * Uses the authenticated user's UID as the key instead of IP address.
+ * Throws an HttpsError with 'resource-exhausted' if the limit is exceeded.
+ */
+export async function checkCallableRateLimit(
+  userId: string,
+  endpointName: string,
+  config: RateLimitConfig
+): Promise<void> {
+  const db = admin.firestore();
+  const now = Date.now();
+  const windowStart = new Date(now - config.windowSeconds * 1000);
+  const expiresAt = new Date(now + config.windowSeconds * 1000);
+
+  try {
+    const recentRequests = await db
+      .collection('rate_limits')
+      .where('userId', '==', userId)
+      .where('endpoint', '==', endpointName)
+      .where('timestamp', '>=', admin.firestore.Timestamp.fromDate(windowStart))
+      .count()
+      .get();
+
+    const count = recentRequests.data().count;
+    if (count >= config.maxRequests) {
+      functions.logger.warn(
+        `Rate limit exceeded for ${endpointName} by user ${userId}: ${count}/${config.maxRequests} in ${config.windowSeconds}s`
+      );
+      throw new functions.https.HttpsError(
+        'resource-exhausted',
+        `Too many requests. Please try again later.`
+      );
+    }
+
+    // Record this request (fire-and-forget).
+    db.collection('rate_limits')
+      .add({
+        userId,
+        endpoint: endpointName,
+        timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
+      })
+      .catch((err: any) => {
+        functions.logger.error('Failed to record rate limit entry:', err.message);
+      });
+  } catch (error: any) {
+    // Re-throw HttpsError (rate limit exceeded)
+    if (error instanceof functions.https.HttpsError) {
+      throw error;
+    }
+    // If the rate limiter itself fails, allow the request through.
+    functions.logger.error('Rate limiter error (allowing request):', error.message);
   }
 }
 

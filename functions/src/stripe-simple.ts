@@ -2,6 +2,7 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
+import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
 
 const db = admin.firestore();
 
@@ -83,6 +84,9 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
     if (!context?.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
+
+    // Rate limit: prevent checkout abuse
+    await checkCallableRateLimit(context.auth.uid, 'createFanCheckoutSession', RATE_LIMITS.PAYMENT_CHECKOUT);
 
     const priceId = data.priceId;
     const fanId = data.fanId;
@@ -236,6 +240,9 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
 
+    // Rate limit: prevent checkout abuse
+    await checkCallableRateLimit(context.auth.uid, 'createCheckoutSession', RATE_LIMITS.PAYMENT_CHECKOUT);
+
     const priceId = data.priceId;
     const venueId = data.venueId;
     const mode = data.mode || 'subscription';
@@ -359,6 +366,9 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
     if (!context?.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
+
+    // Rate limit: prevent payment abuse
+    await checkCallableRateLimit(context.auth.uid, 'createPaymentIntent', RATE_LIMITS.PAYMENT_CHECKOUT);
 
     const productType = data.productType;
     const currency = data.currency || 'usd';

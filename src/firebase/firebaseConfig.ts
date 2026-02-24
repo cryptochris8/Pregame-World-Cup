@@ -1,4 +1,5 @@
 // Firebase configuration for Pregame Venue Portal
+// All values sourced from environment variables (set in .env or CI/CD)
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
@@ -6,14 +7,18 @@ import { getStorage } from 'firebase/storage';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCmi4yeleQW3Oi-6VGmn7NPhpCYu88F4JM",
-  authDomain: "pregame-b089e.firebaseapp.com",
-  projectId: "pregame-b089e",
-  storageBucket: "pregame-b089e.appspot.com",
-  messagingSenderId: "942034010384",
-  appId: "1:942034010384:web:fecbfbbdc8a0465b99a595",
-  measurementId: "G-WEY5DQ2XV2"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY || '',
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || '',
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || '',
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || '',
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || '',
+  appId: process.env.REACT_APP_FIREBASE_APP_ID || '',
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID || '',
 };
+
+if (!firebaseConfig.apiKey) {
+  console.error('Firebase API key not configured. Set REACT_APP_FIREBASE_API_KEY in your .env file.');
+}
 
 const app = initializeApp(firebaseConfig);
 

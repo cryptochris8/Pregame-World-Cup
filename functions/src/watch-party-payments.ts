@@ -2,6 +2,7 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { getStripe, getConfigValue } from './stripe-config';
+import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
 
 const db = admin.firestore();
 
@@ -17,6 +18,9 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
     if (!context?.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
+
+    // Rate limit: prevent payment abuse
+    await checkCallableRateLimit(context.auth.uid, 'createVirtualAttendancePayment', RATE_LIMITS.PAYMENT_CHECKOUT);
 
     const watchPartyId = data.watchPartyId;
     const watchPartyName = data.watchPartyName;

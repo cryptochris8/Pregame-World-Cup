@@ -18,6 +18,7 @@ import * as functionsV1 from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
+import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
 
 const db = admin.firestore();
 
@@ -140,6 +141,9 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
   if (!context?.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'Must be logged in');
   }
+
+  // Rate limit: prevent checkout abuse
+  await checkCallableRateLimit(context.auth.uid, 'createFanPassCheckout', RATE_LIMITS.PAYMENT_CHECKOUT);
 
   const passType = data.passType; // 'fan_pass' or 'superfan_pass'
 
@@ -287,6 +291,9 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
   if (!context?.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'Must be logged in');
   }
+
+  // Rate limit: prevent checkout abuse
+  await checkCallableRateLimit(context.auth.uid, 'createVenuePremiumCheckout', RATE_LIMITS.PAYMENT_CHECKOUT);
 
   const venueId = data.venueId;
   const venueName = data.venueName || 'Venue';

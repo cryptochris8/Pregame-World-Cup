@@ -348,22 +348,28 @@ service cloud.firestore {
       allow update, delete: if isAuth() && isChatParticipant(resource.data.chatId);
     }
 
-    // Match chats with subcollections
+    // Match chats with subcollections (public per-match chat rooms)
     match /match_chats/{chatId} {
-      allow read, write: if isAuth();
+      allow read: if isAuth();
+      allow create, delete: if isAdmin();
+      allow update: if isAdmin();
 
       match /messages/{messageId} {
-        allow read, write: if isAuth();
+        allow read: if isAuth();
+        allow create: if isAuth() && request.auth.uid == request.resource.data.senderId;
+        allow update, delete: if isAuth() && request.auth.uid == resource.data.senderId;
       }
 
-      match /participants/{userId} {
-        allow read, write: if isAuth();
+      match /participants/{participantId} {
+        allow read: if isAuth();
+        allow create, update: if isAuth() && request.auth.uid == participantId;
+        allow delete: if isAuth() && (request.auth.uid == participantId || isAdmin());
       }
     }
 
-    // User chat settings - own data
-    match /user_chat_settings/{settingId} {
-      allow read, write: if isAuth();
+    // User chat settings - own data only
+    match /user_chat_settings/{userId} {
+      allow read, write: if isOwner(userId);
     }
 
     // Typing indicators - only participants of the referenced chat can read/write
@@ -385,11 +391,15 @@ service cloud.firestore {
       allow update, delete: if isAuth() && request.auth.uid == resource.data.hostId;
 
       match /members/{memberId} {
-        allow read, write: if isAuth();
+        allow read: if isAuth();
+        allow create, update: if isAuth() && request.auth.uid == memberId;
+        allow delete: if isAuth() && (request.auth.uid == memberId || request.auth.uid == get(/databases/$(database)/documents/watch_parties/$(partyId)).data.hostId);
       }
 
       match /messages/{messageId} {
-        allow read, write: if isAuth();
+        allow read: if isAuth();
+        allow create: if isAuth() && request.auth.uid == request.resource.data.senderId;
+        allow update, delete: if isAuth() && request.auth.uid == resource.data.senderId;
       }
     }
 
@@ -550,6 +560,13 @@ service cloud.firestore {
     match /broadcast_notifications/{docId} {
       allow read: if isAuth();
       allow write: if isAdmin();
+    }
+
+    // ==================== INFRASTRUCTURE (SERVER-ONLY) ====================
+
+    // Rate limiting records - Cloud Functions only
+    match /rate_limits/{docId} {
+      allow read, write: if false;
     }
 
     // ==================== DEV ARTIFACTS (DENY ALL) ====================
