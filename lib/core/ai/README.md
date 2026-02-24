@@ -30,12 +30,6 @@ The AI service layer follows a 3-tier architecture:
 - `ai_venue_recommendation_service.dart` - Venue recommendations with embeddings
 - `user_preference_learning_service.dart` - User preference learning
 
-### Removed (consolidated)
-- ~~`enhanced_ai_prediction_service.dart`~~ - Merged into EnhancedAIGameAnalysisService
-- ~~`enhanced_game_summary_service.dart`~~ - Merged into EnhancedAIGameAnalysisService
-- ~~`enhanced_player_service.dart`~~ - Merged into EnhancedAIGameAnalysisService
-- ~~`claude_sports_integration_service.dart`~~ - Merged into MultiProviderAIService + EnhancedAIGameAnalysisService
-
 ```
 lib/core/ai/
 ├── services/

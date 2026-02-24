@@ -2,7 +2,7 @@
 
 **Pregame World Cup 2026**
 
-*Last Updated: February 14, 2026*
+*Last Updated: February 24, 2026*
 
 ## Agreement to Terms
 
@@ -168,4 +168,4 @@ If you have questions about these Terms, please contact us at:
 
 ---
 
-Â© 2026 Pregame World Cup 2026. All rights reserved.
+© 2026 Pregame World Cup 2026. All rights reserved.
