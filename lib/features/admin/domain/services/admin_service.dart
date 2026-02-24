@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/push_notification_service.dart';
@@ -614,6 +615,12 @@ class AdminService {
   void clearCache() {
     _currentAdminUser = null;
     _isInitialized = false;
+  }
+
+  /// Reset the singleton instance for testing purposes only
+  @visibleForTesting
+  static void resetInstance() {
+    _instance = null;
   }
 }
 

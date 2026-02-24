@@ -1,0 +1,121 @@
+================================================================================
+DETAILED WIDGET EXTRACTION PLAN
+Pregame World Cup - 2026-02-11
+================================================================================
+
+CRITICAL FILE: enhanced_ai_insights_widget.dart (3,898 lines)
+================================================================================
+
+CURRENT: 1 massive widget with 40+ build methods
+
+EXTRACT INTO:
+1. prediction_tab_widget.dart (350 lines)
+2. player_analysis_tab_widget.dart (400 lines)
+3. key_factors_tab_widget.dart (300 lines)
+4. season_review_tab_widget.dart (350 lines)
+5. matchup_context_widget.dart (300 lines)
+6. prediction_card_widget.dart (250 lines)
+7. stat_comparison_card_widget.dart (200 lines)
+8. top_performers_section_widget.dart (250 lines)
+9. player_card_widget.dart (150 lines)
+10. season_summary_card_widget.dart (200 lines)
+11. enhanced_ai_insights_service.dart (300 lines)
+12. enhanced_ai_insights_widget.dart (refactored, 550 lines)
+
+RESULT: 3,898 lines -> 12 focused files with max 550 lines each
+
+EFFORT: 8-10 hours
+BENEFIT: 85% reduction in main file, 100% improvement in maintainability
+
+HIGH PRIORITY SCREENS (Weeks 2-3)
+================================================================================
+
+enhanced_schedule_screen.dart (1,337 lines)
+  Extract: 3 tab widgets + 1 card widget
+  Effort: 3-4 hours
+  Result: 1,337 -> 5 files, main reduced to 400 lines
+
+chat_screen.dart (1,298 lines)
+  Extract: 4 component widgets
+  Effort: 3-4 hours
+  Result: 1,298 -> 5 files, main reduced to 400 lines
+
+game_details_screen.dart (1,260 lines)
+  Extract: 4 section widgets
+  Effort: 3-4 hours
+  Result: 1,260 -> 5 files, main reduced to 450 lines
+
+world_cup_home_screen.dart (1,290 lines)
+  Extract: 3-4 view widgets
+  Effort: 3-4 hours
+  Result: 1,290 -> 4 files, main reduced to 450 lines
+
+SHARED COMPONENTS (Quick Win)
+================================================================================
+
+Create in lib/common/widgets/:
+  1. empty_state_widget.dart
+  2. loading_skeleton_widget.dart
+  3. error_display_widget.dart
+  4. card_header_widget.dart
+  5. stat_row_widget.dart
+
+Files affected: 15+ screens
+Lines saved: 415+
+Effort: 2-3 hours
+
+TIMELINE
+================================================================================
+
+Week 1 (Critical): 8-10 hours
+  Phase 1: Extract enhanced_ai_insights_widget.dart
+
+Week 2-3 (High): 12-16 hours
+  Phase 2: Extract 4 major screens
+
+Week 4 (Ongoing): 8-10 hours
+  Phase 3: Extract shared components and remaining files
+
+TOTAL: 40-50 hours (5-6 weeks)
+
+TESTING STRATEGY
+================================================================================
+
+For each extraction:
+  1. Create isolated widget test
+  2. Test rendering with various states
+  3. Verify BLoC/context access
+  4. Visual regression testing
+  5. Run full feature test suite
+
+Coverage progression:
+  After Phase 1: 15% (from 6%)
+  After Phase 2: 25%
+  After Phase 3: 40%
+  Target: 50%+
+
+TARGET METRICS
+================================================================================
+
+BEFORE:
+  Max file: 3,898 lines
+  Build methods per file: 1-40
+  Test coverage: 6%
+
+AFTER:
+  Max file: 700 lines
+  Build methods per file: 1-2
+  Test coverage: 50%+
+  New files: 60+ (up from 20)
+  Reusability: 100%+ improvement
+
+Benefits:
+  - Easier to understand and maintain
+  - Better testability
+  - Improved code reuse
+  - Faster development velocity
+  - Reduced cognitive load
+
+================================================================================
+END OF PLAN - 2026-02-11
+================================================================================

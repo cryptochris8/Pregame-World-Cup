@@ -16,8 +16,8 @@ interface AddressAutocompleteProps {
   style?: React.CSSProperties;
 }
 
-// Google Places API Key - same as used in Flutter app
-const GOOGLE_API_KEY = 'AIzaSyDso9Xiayt0jjnUNvyKcf48ex3fbxyAehw';
+// Google Places API Key - injected via environment variable
+const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_PLACES_API_KEY || '';
 
 declare global {
   interface Window {

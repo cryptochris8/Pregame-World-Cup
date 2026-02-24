@@ -29,6 +29,9 @@ Thumbs.db
 # Node modules (for Firebase functions)
 node_modules/
 
+# Coverage reports
+functions/coverage/
+
 # Misc
 nul
 *.bak
