@@ -1,8 +1,8 @@
 # Android Launch Checklist
 
-## Current Status: ~70% Ready
+## Current Status: ~72% Ready
 
-The Android build infrastructure is fully configured (signing, CI/CD, Firebase, ProGuard, native widget). What remains is store listing, in-app purchases, and RevenueCat integration.
+The Android build infrastructure is fully configured (signing, CI/CD, Firebase, ProGuard, native widget). What remains is store listing, in-app purchases, and RevenueCat integration. Phases 4-5 improved overall codebase quality (DI modularization, retry utils, dead code removal).
 
 ---
 
@@ -17,6 +17,8 @@ The Android build infrastructure is fully configured (signing, CI/CD, Firebase, 
 - [x] Manifest: All permissions, deep links, AdMob configured
 - [x] All Flutter code: Shared with iOS, already works on Android
 - [x] Dart defines: All API keys injected via Codemagic vault at build time
+- [x] ProGuard keep rules updated (Phase 1 security hardening)
+- [x] All Cloud Functions rate-limited and retry-wrapped (Phase 4)
 
 ---
 
@@ -65,9 +67,10 @@ The Android build infrastructure is fully configured (signing, CI/CD, Firebase, 
 
 ## Step 4: Security Fixes (Before Launch)
 
-- [ ] `service-account-key.json` is in version control — add to `.gitignore`, rotate the key
+- [ ] `service-account-key.json` is in `.gitignore` but still exists in git history — **key rotation required**
 - [ ] `android/key.properties` has hardcoded passwords — use Codemagic vault only for production builds
 - [ ] Verify no other secrets are committed to git
+- Note: Firestore/Storage security rules already hardened in Phase 1 (~575 lines, default deny)
 
 ---
 
@@ -82,6 +85,15 @@ The Android build infrastructure is fully configured (signing, CI/CD, Firebase, 
 - [ ] Test home screen widget
 - [ ] Test AdMob ads display
 - [ ] Submit internal test build via Codemagic
+
+---
+
+## Step 6: Pre-Launch Verification
+
+- [ ] Run full Flutter test suite (3,913 tests)
+- [ ] Run full backend test suite (611 tests)
+- [ ] Run `flutter analyze` — zero errors/warnings
+- [ ] Verify Codemagic Android workflow produces clean AAB
 
 ---
 
