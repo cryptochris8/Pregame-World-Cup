@@ -37,8 +37,8 @@ workflows:
         script: |
           echo "🧪 Running Firebase Functions Tests..."
           cd functions
-          npm test
-          echo "✅ Firebase Functions tests passed"
+          npm run test:coverage
+          echo "✅ Firebase Functions tests passed (coverage thresholds enforced)"
 
       - name: Get Flutter packages
         script: |
@@ -55,7 +55,7 @@ workflows:
       - name: Run Flutter Tests
         script: |
           echo "🧪 Running Flutter tests..."
-          flutter test --reporter expanded
+          flutter test --coverage --reporter expanded
           echo "✅ Flutter tests complete"
 
     artifacts:

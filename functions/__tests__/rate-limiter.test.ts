@@ -34,12 +34,39 @@ import * as admin from 'firebase-admin';
 (admin.firestore as any).FieldValue = MockFieldValue;
 
 // Import the module under test AFTER mocks are wired up
-import { checkRateLimit, cleanupExpiredRateLimits, RATE_LIMITS } from '../src/rate-limiter';
+import { checkRateLimit, checkCallableRateLimit, cleanupExpiredRateLimits, RATE_LIMITS } from '../src/rate-limiter';
 import * as functions from 'firebase-functions';
 
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
+
+/**
+ * Seed the mock rate_limits collection with N documents for callable
+ * rate-limit entries keyed by userId / endpoint.
+ */
+function seedCallableRateLimitDocs(
+  count: number,
+  overrides: Partial<{
+    userId: string;
+    endpoint: string;
+    timestampMs: number;
+    expiresAtMs: number;
+  }> = {}
+): void {
+  const data = new Map<string, any>();
+  const now = Date.now();
+  for (let i = 0; i < count; i++) {
+    const id = `crl_${i}`;
+    data.set(id, {
+      userId: overrides.userId ?? 'test-user-id',
+      endpoint: overrides.endpoint ?? 'testEndpoint',
+      timestamp: MockTimestamp.fromMillis(overrides.timestampMs ?? now - 1000),
+      expiresAt: MockTimestamp.fromMillis(overrides.expiresAtMs ?? now + 60_000),
+    });
+  }
+  mockFirestore.setTestData('rate_limits', data);
+}
 
 /**
  * Seed the mock rate_limits collection with N documents that look like real
@@ -892,6 +919,243 @@ describe('Rate Limiter', () => {
       expect(allowed).toBe(false);
       // When blocked, the function returns false before calling add()
       expect(addSpy).not.toHaveBeenCalled();
+    });
+  });
+
+  // -----------------------------------------------------------------------
+  // 5. checkCallableRateLimit (onCall rate limiting by userId)
+  // -----------------------------------------------------------------------
+  describe('checkCallableRateLimit', () => {
+    const testConfig = { maxRequests: 5, windowSeconds: 60 };
+
+    describe('allowing requests under the limit', () => {
+      it('should resolve without throwing for a first-time caller', async () => {
+        await expect(
+          checkCallableRateLimit('user-new', 'checkout', testConfig)
+        ).resolves.toBeUndefined();
+      });
+
+      it('should resolve when request count is below maxRequests', async () => {
+        seedCallableRateLimitDocs(4, { userId: 'user-4', endpoint: 'checkout' });
+
+        await expect(
+          checkCallableRateLimit('user-4', 'checkout', testConfig)
+        ).resolves.toBeUndefined();
+      });
+    });
+
+    describe('blocking requests at or over the limit', () => {
+      it('should throw HttpsError when request count equals maxRequests', async () => {
+        seedCallableRateLimitDocs(5, { userId: 'user-5', endpoint: 'checkout' });
+
+        await expect(
+          checkCallableRateLimit('user-5', 'checkout', testConfig)
+        ).rejects.toThrow();
+      });
+
+      it('should throw with code resource-exhausted when over limit', async () => {
+        seedCallableRateLimitDocs(10, { userId: 'user-over', endpoint: 'checkout' });
+
+        try {
+          await checkCallableRateLimit('user-over', 'checkout', testConfig);
+          fail('Expected HttpsError to be thrown');
+        } catch (error: any) {
+          expect(error.code).toBe('resource-exhausted');
+          expect(error.message).toContain('Too many requests');
+        }
+      });
+
+      it('should log a warning when rate limit is exceeded', async () => {
+        seedCallableRateLimitDocs(5, { userId: 'user-warn', endpoint: 'pay' });
+
+        try {
+          await checkCallableRateLimit('user-warn', 'pay', testConfig);
+        } catch {
+          // expected
+        }
+
+        expect(functions.logger.warn).toHaveBeenCalledWith(
+          expect.stringContaining('Rate limit exceeded')
+        );
+      });
+
+      it('should include userId and endpoint in the warning log', async () => {
+        seedCallableRateLimitDocs(5, { userId: 'uid-abc', endpoint: 'myEndpoint' });
+
+        try {
+          await checkCallableRateLimit('uid-abc', 'myEndpoint', testConfig);
+        } catch {
+          // expected
+        }
+
+        expect(functions.logger.warn).toHaveBeenCalledWith(
+          expect.stringContaining('uid-abc')
+        );
+        expect(functions.logger.warn).toHaveBeenCalledWith(
+          expect.stringContaining('myEndpoint')
+        );
+      });
+    });
+
+    describe('fire-and-forget document creation', () => {
+      it('should write a rate limit document on an allowed request', async () => {
+        await checkCallableRateLimit('user-record', 'checkout', testConfig);
+
+        // Give fire-and-forget promise time to settle
+        await new Promise((r) => setTimeout(r, 10));
+
+        const snapshot = await mockFirestore.collection('rate_limits').get();
+        expect(snapshot.empty).toBe(false);
+      });
+
+      it('should record the userId and endpoint in the new document', async () => {
+        await checkCallableRateLimit('user-rec-2', 'myEp', testConfig);
+
+        await new Promise((r) => setTimeout(r, 10));
+
+        const snapshot = await mockFirestore.collection('rate_limits').get();
+        const found = snapshot.docs.some((doc) => {
+          const d = doc.data();
+          return d.userId === 'user-rec-2' && d.endpoint === 'myEp';
+        });
+        expect(found).toBe(true);
+      });
+
+      it('should include a serverTimestamp in the recorded document', async () => {
+        await checkCallableRateLimit('user-ts', 'ep', testConfig);
+
+        await new Promise((r) => setTimeout(r, 10));
+
+        const snapshot = await mockFirestore.collection('rate_limits').get();
+        const doc = snapshot.docs.find((d) => d.data().userId === 'user-ts');
+        expect(doc).toBeDefined();
+        expect(doc!.data().timestamp).toEqual(
+          expect.objectContaining({ _methodName: 'serverTimestamp' })
+        );
+      });
+    });
+
+    describe('user isolation', () => {
+      it('should not count requests from a different userId', async () => {
+        seedCallableRateLimitDocs(10, { userId: 'user-A', endpoint: 'ep' });
+
+        await expect(
+          checkCallableRateLimit('user-B', 'ep', testConfig)
+        ).resolves.toBeUndefined();
+      });
+
+      it('should not count requests to a different endpoint', async () => {
+        seedCallableRateLimitDocs(10, { userId: 'user-C', endpoint: 'alpha' });
+
+        await expect(
+          checkCallableRateLimit('user-C', 'beta', testConfig)
+        ).resolves.toBeUndefined();
+      });
+    });
+
+    describe('error handling / fail-open behavior', () => {
+      it('should allow request through when Firestore query throws a non-HttpsError', async () => {
+        const originalCollection = mockFirestore.collection.bind(mockFirestore);
+        jest.spyOn(mockFirestore, 'collection').mockImplementation((path: string) => {
+          if (path === 'rate_limits') {
+            const ref = originalCollection(path);
+            ref.where = jest.fn().mockReturnValue({
+              where: jest.fn().mockReturnValue({
+                where: jest.fn().mockReturnValue({
+                  count: jest.fn().mockReturnValue({
+                    get: jest.fn().mockRejectedValue(new Error('Firestore unavailable')),
+                  }),
+                }),
+              }),
+            });
+            return ref;
+          }
+          return originalCollection(path);
+        });
+
+        // Should NOT throw -- fail-open
+        await expect(
+          checkCallableRateLimit('user-err', 'ep', testConfig)
+        ).resolves.toBeUndefined();
+
+        expect(functions.logger.error).toHaveBeenCalledWith(
+          expect.stringContaining('Rate limiter error'),
+          expect.any(String)
+        );
+      });
+
+      it('should log error but not crash when recording the request fails', async () => {
+        const originalCollection = mockFirestore.collection.bind(mockFirestore);
+        jest.spyOn(mockFirestore, 'collection').mockImplementation((path: string) => {
+          const ref = originalCollection(path);
+          if (path === 'rate_limits') {
+            ref.where = jest.fn().mockReturnValue({
+              where: jest.fn().mockReturnValue({
+                where: jest.fn().mockReturnValue({
+                  count: jest.fn().mockReturnValue({
+                    get: jest.fn().mockResolvedValue({ data: () => ({ count: 0 }) }),
+                  }),
+                }),
+              }),
+            });
+            ref.add = jest.fn().mockRejectedValue(new Error('Write failed'));
+          }
+          return ref;
+        });
+
+        await expect(
+          checkCallableRateLimit('user-write-err', 'ep', testConfig)
+        ).resolves.toBeUndefined();
+
+        await new Promise((r) => setTimeout(r, 50));
+
+        expect(functions.logger.error).toHaveBeenCalledWith(
+          expect.stringContaining('Failed to record rate limit entry'),
+          expect.any(String)
+        );
+      });
+    });
+
+    describe('different rate limit configs', () => {
+      it('should respect a strict config (1 request per 60 seconds)', async () => {
+        const strictConfig = { maxRequests: 1, windowSeconds: 60 };
+        seedCallableRateLimitDocs(1, { userId: 'user-strict', endpoint: 'strict' });
+
+        await expect(
+          checkCallableRateLimit('user-strict', 'strict', strictConfig)
+        ).rejects.toThrow();
+      });
+
+      it('should respect the PAYMENT_CHECKOUT preset (5 per 900 seconds)', async () => {
+        seedCallableRateLimitDocs(4, { userId: 'user-pay', endpoint: 'payment' });
+
+        await expect(
+          checkCallableRateLimit('user-pay', 'payment', RATE_LIMITS.PAYMENT_CHECKOUT)
+        ).resolves.toBeUndefined();
+
+        // Now seed at the limit
+        seedCallableRateLimitDocs(5, { userId: 'user-pay2', endpoint: 'payment' });
+
+        await expect(
+          checkCallableRateLimit('user-pay2', 'payment', RATE_LIMITS.PAYMENT_CHECKOUT)
+        ).rejects.toThrow();
+      });
+    });
+
+    describe('window boundary', () => {
+      it('should only count requests within the time window', async () => {
+        const twoMinutesAgo = Date.now() - 120_000;
+        seedCallableRateLimitDocs(10, {
+          userId: 'user-old',
+          endpoint: 'ep',
+          timestampMs: twoMinutesAgo,
+        });
+
+        // Timestamps from 2 minutes ago are outside the 60s window
+        await expect(
+          checkCallableRateLimit('user-old', 'ep', testConfig)
+        ).resolves.toBeUndefined();
+      });
     });
   });
 });

@@ -30,10 +30,10 @@ module.exports = {
   // For higher coverage, use Firebase emulators with integration tests
   coverageThreshold: {
     global: {
-      branches: 0,
-      functions: 0,
-      lines: 0,
-      statements: 0,
+      branches: 15,
+      functions: 20,
+      lines: 25,
+      statements: 25,
     },
   },
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup.ts'],

@@ -526,5 +526,290 @@ void main() {
       expect(result.success, isFalse);
       expect(result.errorMessage, equals('Network error'));
     });
+
+    test('restore with fanPass type', () {
+      final result = RestorePurchasesResult(
+        success: true,
+        hasRestoredPurchases: true,
+        restoredPassType: FanPassType.fanPass,
+      );
+
+      expect(result.restoredPassType, equals(FanPassType.fanPass));
+    });
+  });
+
+  // ==========================================================================
+  // Edge cases and negative tests
+  // ==========================================================================
+
+  group('PaymentTransaction - edge cases', () {
+    test('displayAmount formats large amounts correctly', () {
+      final tx = PaymentTransaction(
+        id: 'tx_large',
+        type: TransactionType.venuePremium,
+        productName: 'Venue Premium',
+        amount: 49900,
+        currency: 'usd',
+        status: TransactionStatus.completed,
+        createdAt: DateTime.now(),
+      );
+
+      expect(tx.displayAmount, equals('\$499.00'));
+    });
+
+    test('displayAmount uses currency code for non-USD currencies', () {
+      final tx = PaymentTransaction(
+        id: 'tx_eur',
+        type: TransactionType.fanPass,
+        productName: 'Fan Pass',
+        amount: 1299,
+        currency: 'eur',
+        status: TransactionStatus.completed,
+        createdAt: DateTime.now(),
+      );
+
+      // currency string is used as-is (lowercase) when not USD
+      expect(tx.displayAmount, equals('eur12.99'));
+    });
+
+    test('displayAmount handles single-digit cent amounts', () {
+      final tx = PaymentTransaction(
+        id: 'tx_small',
+        type: TransactionType.tip,
+        productName: 'Tip',
+        amount: 5,
+        currency: 'usd',
+        status: TransactionStatus.completed,
+        createdAt: DateTime.now(),
+      );
+
+      expect(tx.displayAmount, equals('\$0.05'));
+    });
+
+    test('subtitle returns null when metadata is empty', () {
+      final tx = PaymentTransaction(
+        id: 'tx_nometa',
+        type: TransactionType.venuePremium,
+        productName: 'Venue Premium',
+        amount: 9900,
+        currency: 'usd',
+        status: TransactionStatus.completed,
+        createdAt: DateTime.now(),
+      );
+
+      expect(tx.subtitle, isNull);
+    });
+
+    test('subtitle returns null for ticket type', () {
+      final tx = PaymentTransaction(
+        id: 'tx_ticket',
+        type: TransactionType.ticket,
+        productName: 'Ticket',
+        amount: 5000,
+        currency: 'usd',
+        status: TransactionStatus.completed,
+        createdAt: DateTime.now(),
+      );
+
+      expect(tx.subtitle, isNull);
+    });
+
+    test('metadata defaults to empty map', () {
+      final tx = PaymentTransaction(
+        id: 'tx_default',
+        type: TransactionType.fanPass,
+        productName: 'Fan Pass',
+        amount: 1499,
+        currency: 'usd',
+        status: TransactionStatus.completed,
+        createdAt: DateTime.now(),
+      );
+
+      expect(tx.metadata, isEmpty);
+    });
+  });
+
+  group('WorldCupPricing - edge cases', () {
+    test('fromMap with partial fanPass data', () {
+      final pricing = WorldCupPricing.fromMap({
+        'fanPass': {'amount': 999},
+      });
+
+      expect(pricing.fanPass.amount, equals(999));
+      expect(pricing.fanPass.displayPrice, equals(''));
+      expect(pricing.fanPass.name, equals(''));
+    });
+
+    test('fromMap with null tournamentDates uses defaults', () {
+      final pricing = WorldCupPricing.fromMap({
+        'tournamentDates': null,
+      });
+
+      // fromMap parses ISO date strings as UTC
+      expect(pricing.tournamentStart.year, equals(2026));
+      expect(pricing.tournamentStart.month, equals(6));
+      expect(pricing.tournamentStart.day, equals(11));
+      expect(pricing.tournamentEnd.year, equals(2026));
+      expect(pricing.tournamentEnd.month, equals(7));
+    });
+
+    test('defaults() venuePremium has correct description', () {
+      final pricing = WorldCupPricing.defaults();
+
+      expect(pricing.venuePremium.description, contains('portal'));
+    });
+
+    test('defaults() tournament dates span June 11 to July 20', () {
+      final pricing = WorldCupPricing.defaults();
+
+      expect(pricing.tournamentStart.month, equals(6));
+      expect(pricing.tournamentStart.day, equals(11));
+      expect(pricing.tournamentEnd.month, equals(7));
+      expect(pricing.tournamentEnd.day, equals(20));
+    });
+  });
+
+  group('FanPassType - edge cases', () {
+    test('fromString handles null-like strings', () {
+      expect(FanPassType.fromString('null'), equals(FanPassType.free));
+      expect(FanPassType.fromString('undefined'), equals(FanPassType.free));
+      expect(FanPassType.fromString('FREE'), equals(FanPassType.free));
+    });
+
+    test('values contains exactly 3 types', () {
+      expect(FanPassType.values.length, equals(3));
+    });
+
+    test('each type has a non-empty displayName', () {
+      for (final type in FanPassType.values) {
+        expect(type.displayName.isNotEmpty, isTrue);
+      }
+    });
+
+    test('each type has a non-empty price', () {
+      for (final type in FanPassType.values) {
+        expect(type.price.isNotEmpty, isTrue);
+      }
+    });
+  });
+
+  group('FanPassStatus - edge cases', () {
+    test('hasPass true with free passType is a valid state', () {
+      final status = FanPassStatus(
+        hasPass: true,
+        passType: FanPassType.free,
+        features: const {},
+      );
+
+      expect(status.hasPass, isTrue);
+      expect(status.passType, equals(FanPassType.free));
+    });
+
+    test('purchasedAt is preserved correctly', () {
+      final purchaseDate = DateTime(2026, 5, 15, 10, 30);
+      final status = FanPassStatus(
+        hasPass: true,
+        passType: FanPassType.fanPass,
+        purchasedAt: purchaseDate,
+        features: const {},
+      );
+
+      expect(status.purchasedAt, equals(purchaseDate));
+    });
+  });
+
+  group('VenuePremiumStatus - edge cases', () {
+    test('partial features map only enables listed features', () {
+      final status = VenuePremiumStatus(
+        isPremium: true,
+        tier: 'premium',
+        features: const {
+          'matchScheduling': true,
+          'analytics': true,
+        },
+      );
+
+      expect(status.canManageSchedule, isTrue);
+      expect(status.hasAnalytics, isTrue);
+      expect(status.canSetupTvs, isFalse);
+      expect(status.canAddSpecials, isFalse);
+      expect(status.hasFeaturedListing, isFalse);
+    });
+
+    test('purchasedAt is preserved correctly', () {
+      final purchaseDate = DateTime(2026, 4, 1);
+      final status = VenuePremiumStatus(
+        isPremium: true,
+        tier: 'premium',
+        purchasedAt: purchaseDate,
+        features: const {},
+      );
+
+      expect(status.purchasedAt, equals(purchaseDate));
+    });
+  });
+
+  group('PriceInfo - edge cases', () {
+    test('fromMap with zero amount', () {
+      final info = PriceInfo.fromMap({
+        'amount': 0,
+        'displayPrice': 'Free',
+        'name': 'Trial',
+        'description': 'Free trial',
+      });
+
+      expect(info.amount, equals(0));
+      expect(info.displayPrice, equals('Free'));
+    });
+
+    test('fromMap with extra fields ignores them', () {
+      final info = PriceInfo.fromMap({
+        'amount': 1000,
+        'displayPrice': '\$10.00',
+        'name': 'Test',
+        'description': 'Desc',
+        'extraField': 'ignored',
+        'anotherField': 42,
+      });
+
+      expect(info.amount, equals(1000));
+      expect(info.name, equals('Test'));
+    });
+  });
+
+  group('FanPassPurchaseResult - edge cases', () {
+    test('all defaults are correct', () {
+      final result = FanPassPurchaseResult(success: false);
+
+      expect(result.success, isFalse);
+      expect(result.errorMessage, isNull);
+      expect(result.userCancelled, isFalse);
+      expect(result.usedFallback, isFalse);
+    });
+
+    test('error with fallback used', () {
+      final result = FanPassPurchaseResult(
+        success: false,
+        errorMessage: 'Primary payment failed',
+        usedFallback: true,
+      );
+
+      expect(result.success, isFalse);
+      expect(result.usedFallback, isTrue);
+      expect(result.errorMessage, contains('Primary payment failed'));
+    });
+
+    test('success with all flags set', () {
+      final result = FanPassPurchaseResult(
+        success: true,
+        errorMessage: null,
+        userCancelled: false,
+        usedFallback: true,
+      );
+
+      expect(result.success, isTrue);
+      expect(result.usedFallback, isTrue);
+      expect(result.userCancelled, isFalse);
+    });
   });
 }
