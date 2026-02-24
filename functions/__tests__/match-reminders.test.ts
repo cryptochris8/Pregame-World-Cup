@@ -41,9 +41,9 @@ describe('Match Reminders', () => {
 
   describe('sendMatchReminders', () => {
     describe('Query Logic', () => {
-      it('should query for enabled, unsent reminders due within the last minute', async () => {
+      it('should query for enabled, unsent reminders due within the last 5 minutes', async () => {
         const now = MockTimestamp.now();
-        const oneMinuteAgo = MockTimestamp.fromMillis(now.toMillis() - 60 * 1000);
+        const fiveMinutesAgo = MockTimestamp.fromMillis(now.toMillis() - 5 * 60 * 1000);
 
         // Query criteria
         const queryCriteria = {
@@ -51,7 +51,7 @@ describe('Match Reminders', () => {
           isSent: false,
           reminderDateTimeUtc: {
             lessThanOrEqual: now,
-            greaterThanOrEqual: oneMinuteAgo,
+            greaterThanOrEqual: fiveMinutesAgo,
           },
         };
 
@@ -575,9 +575,9 @@ describe('Match Reminders', () => {
   });
 
   describe('Scheduled Function Behavior', () => {
-    it('should run every 1 minute', () => {
-      const schedule = 'every 1 minutes';
-      expect(schedule).toBe('every 1 minutes');
+    it('should run every 5 minutes', () => {
+      const schedule = 'every 5 minutes';
+      expect(schedule).toBe('every 5 minutes');
     });
 
     it('should return null on completion', async () => {

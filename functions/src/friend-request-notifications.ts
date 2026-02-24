@@ -1,5 +1,6 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
@@ -114,7 +115,7 @@ export const onFriendRequestNotificationCreated = functions.firestore
         };
 
         try {
-          const response = await admin.messaging().send(message);
+          const response = await withRetry(() => admin.messaging().send(message));
           functions.logger.info(`Sent FCM to ${toUserId}: ${response}`);
         } catch (fcmError: any) {
           functions.logger.error(`FCM send failed for ${toUserId}:`, fcmError.message);

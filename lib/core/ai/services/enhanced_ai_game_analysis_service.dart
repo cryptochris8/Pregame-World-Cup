@@ -493,6 +493,31 @@ class EnhancedAIGameAnalysisService {
     return awayConf != null && awayConf == homeConf;
   }
 
+  /// Generate a quick summary for a game (lightweight version)
+  Future<String> generateQuickSummary(GameSchedule game) async {
+    try {
+      final headToHead = await _historicalAnalysis.analyzeHeadToHeadHistory(
+        game.homeTeamName,
+        game.awayTeamName,
+      );
+
+      final narrative = headToHead['narrative'] as String?;
+      if (narrative != null && narrative.isNotEmpty) {
+        return narrative;
+      }
+
+      final totalGames = headToHead['totalGames'] as int? ?? 0;
+      if (totalGames > 0) {
+        return 'Historical matchup: $totalGames meetings between ${game.homeTeamName} and ${game.awayTeamName}';
+      }
+
+      return 'First-time matchup or limited historical data available';
+    } catch (e) {
+      LoggingService.error('Quick summary failed: $e', tag: 'EnhancedAI');
+      return 'Analysis unavailable';
+    }
+  }
+
   /// Get context about the tournament phase based on date
   String _getTournamentPhase(DateTime? gameDate) {
     if (gameDate == null) return 'World Cup';

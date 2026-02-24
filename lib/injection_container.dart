@@ -1,116 +1,15 @@
 import 'package:get_it/get_it.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-// Centralized Firebase imports
-import 'core/firebase/firebase_exports.dart';
-
-import 'features/schedule/data/datasources/espn_schedule_datasource.dart';
-import 'features/schedule/data/datasources/live_scores_datasource.dart';
-import 'features/schedule/data/repositories/schedule_repository_impl.dart';
-import 'features/schedule/domain/repositories/schedule_repository.dart';
-import 'features/schedule/domain/usecases/get_upcoming_games.dart';
-import 'features/schedule/presentation/bloc/schedule_bloc.dart';
-
-// Import for Recommendations feature
-import 'features/recommendations/data/datasources/places_api_datasource.dart';
-import 'features/recommendations/data/repositories/places_repository_impl.dart';
-import 'features/recommendations/domain/repositories/places_repository.dart';
-import 'features/recommendations/domain/usecases/get_nearby_places.dart';
-import 'features/recommendations/domain/usecases/get_filtered_venues.dart';
-import 'features/recommendations/domain/usecases/get_geocoded_location.dart';
-
-// Import for Auth feature
-import 'features/auth/domain/services/auth_service.dart';
-
-// Push Notifications
-import 'core/services/push_notification_service.dart';
-
-// Social features
-import 'features/social/data/datasources/social_datasource.dart';
-import 'features/social/domain/services/social_service.dart';
-
-// AI Integration
-import './core/ai/services/ai_service.dart';
-import './core/ai/services/claude_service.dart';
-import './core/ai/services/multi_provider_ai_service.dart';
-import './core/ai/services/user_preference_learning_service.dart';
-import './core/ai/services/ai_historical_knowledge_service.dart';
-import './core/ai/services/ai_game_analysis_service.dart';
-import './core/services/user_learning_service.dart';
-
-// Enhanced AI Services (consolidated: removed EnhancedAIPredictionService,
-// EnhancedGameSummaryService, EnhancedPlayerService, ClaudeSportsIntegrationService)
-import './core/ai/services/ai_team_season_summary_service.dart';
-import './core/ai/services/enhanced_ai_game_analysis_service.dart';
-import './core/services/historical_game_analysis_service.dart';
-
-// Unified Services
-import './core/services/unified_venue_service.dart';
-
-// Sports Data Services
-import './services/espn_service.dart';
-import './services/enhanced_sports_data_service.dart';
-
-// Zapier Integration
-import './services/zapier_service.dart';
-import './services/game_day_automation_service.dart';
-
-// API Keys configuration
-import 'config/api_keys.dart';
-
-// Core Services
-import 'core/services/cache_service.dart';
-import 'core/services/presence_service.dart';
-import 'core/services/analytics_service.dart';
-import 'core/services/deep_link_service.dart';
-import 'core/services/deep_link_navigator.dart';
-import 'core/services/accessibility_service.dart';
-import 'core/services/notification_preferences_service.dart';
-import 'core/services/localization_service.dart';
-import 'core/services/offline_service.dart';
-import 'core/services/widget_service.dart';
-
-// World Cup 2026 Feature
-import 'features/worldcup/worldcup.dart';
-import 'features/worldcup/data/services/enhanced_match_data_service.dart';
-import 'features/worldcup/data/services/local_prediction_engine.dart';
-import 'features/worldcup/data/services/world_cup_ai_service.dart';
-import 'features/worldcup/data/services/nearby_venues_service.dart';
-import 'features/worldcup/data/services/match_reminder_service.dart';
-import 'features/worldcup/domain/services/world_cup_payment_service.dart';
-import 'services/revenuecat_service.dart';
-
-// Watch Party Feature
-import 'features/watch_party/domain/services/watch_party_service.dart';
-import 'features/watch_party/domain/services/watch_party_payment_service.dart';
-import 'features/watch_party/presentation/bloc/watch_party_bloc.dart';
-
-// Venue Portal Feature
-import 'features/venue_portal/venue_portal.dart';
-
-// Moderation Feature
-import 'features/moderation/moderation.dart';
-
-// Admin Feature
-import 'features/admin/domain/services/admin_service.dart';
-
-// Match Chat Feature
-import 'features/match_chat/match_chat.dart';
-
-// Chatbot Feature
-import 'features/chatbot/data/services/chatbot_knowledge_base.dart';
-import 'features/chatbot/domain/services/intent_classifier.dart';
-import 'features/chatbot/domain/services/response_generator.dart';
-import 'features/chatbot/domain/services/chatbot_service.dart';
-import 'features/chatbot/presentation/bloc/chatbot_cubit.dart';
-
-// Calendar Feature
-import 'features/calendar/calendar.dart';
-
-// Sharing Feature
-import 'features/sharing/sharing.dart';
+import 'di/core_di.dart';
+import 'di/ai_di.dart';
+import 'di/data_services_di.dart';
+import 'di/recommendations_di.dart';
+import 'di/social_di.dart';
+import 'di/worldcup_di.dart';
+import 'di/watch_party_di.dart';
+import 'di/moderation_admin_di.dart';
+import 'di/extended_features_di.dart';
 
 // Global GetIt instance
 final sl = GetIt.instance; // sl stands for Service Locator
@@ -132,230 +31,81 @@ Future<void> setupLocator() async {
   }
 
   try {
-    // STEP 1: Core Dependencies (Essential)
-    _diLog('DI STEP 1: Core Dependencies');
-    sl.registerLazySingleton(() => Dio());
-    sl.registerLazySingleton(() => FirebaseFirestore.instance);
-    sl.registerLazySingleton(() => FirebaseAuth.instance);
+    // Steps 1-2: Core dependencies and essential services (must succeed)
+    _diLog('DI STEPS 1-2: Core Dependencies & Services');
+    await registerCoreDependencies(sl);
+    _diLog('DI STEPS 1-2: Core Dependencies & Services - SUCCESS');
 
-    // Register SharedPreferences (async initialization)
-    final sharedPreferences = await SharedPreferences.getInstance();
-    sl.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
-    _diLog('DI STEP 1: Core Dependencies - SUCCESS');
-
-    // STEP 2: Core Services (Essential)
-    _diLog('DI STEP 2: Core Services');
-    sl.registerLazySingleton(() => CacheService.instance);
-    sl.registerLazySingleton(() => AuthService());
-    sl.registerLazySingleton(() => PresenceService());
-    sl.registerLazySingleton(() => PushNotificationService());
-    sl.registerLazySingleton(() => AnalyticsService());
-    sl.registerLazySingleton(() => DeepLinkService());
-    sl.registerLazySingleton(() => DeepLinkNavigator());
-    sl.registerLazySingleton(() => AccessibilityService());
-    sl.registerLazySingleton(() => NotificationPreferencesService());
-
-    // Initialize LocalizationService (async, for language detection and switching)
-    final localizationService = await LocalizationService.getInstance();
-    sl.registerSingleton<LocalizationService>(localizationService);
-
-    // Initialize OfflineService (async, for connectivity and action queuing)
-    final offlineService = await OfflineService.getInstance();
-    sl.registerSingleton<OfflineService>(offlineService);
-
-    // Initialize WidgetService (async, for home screen widgets)
-    final widgetService = await WidgetService.getInstance();
-    sl.registerSingleton<WidgetService>(widgetService);
-    _diLog('DI STEP 2: Core Services - SUCCESS');
-
-    // STEP 3: Basic Analysis Services (Important but not critical)
-    _diLog('DI STEP 3: Basic Analysis Services');
+    // Steps 3-4: AI services (non-critical)
+    _diLog('DI STEPS 3-4: AI Services');
     try {
-      sl.registerLazySingleton(() => UnifiedVenueService());
-      _diLog('DI STEP 3: Basic Analysis Services - SUCCESS');
+      registerAIServices(sl);
+      _diLog('DI STEPS 3-4: AI Services - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 3: Basic Analysis Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Basic analysis services failed but continuing');
-      }
+      _diLog('DI STEPS 3-4: AI Services - FAILED: $e');
     }
 
-    // STEP 4: AI Services (Can be problematic on Android)
-    _diLog('DI STEP 4: AI Services');
+    // Steps 5-6: ESPN/API and Schedule services
+    _diLog('DI STEPS 5-6: Data & Schedule Services');
     try {
-      // Core AI providers
-      sl.registerLazySingleton(() => AIService());
-      sl.registerLazySingleton(() => ClaudeService());
-      sl.registerLazySingleton(() => MultiProviderAIService.instance);
-
-      // AI learning services
-      sl.registerLazySingleton(() => UserPreferenceLearningService(sl()));
-      sl.registerLazySingleton(() => UserLearningService());
-
-      // Historical knowledge and game analysis
-      sl.registerLazySingleton(() => AIHistoricalKnowledgeService.instance);
-      sl.registerLazySingleton(() => AIGameAnalysisService.instance);
-      sl.registerLazySingleton(() => AITeamSeasonSummaryService.instance);
-      sl.registerLazySingleton(() => EnhancedAIGameAnalysisService.instance);
-      sl.registerLazySingleton(() => HistoricalGameAnalysisService());
-
-      _diLog('DI STEP 4: AI Services - SUCCESS');
+      await registerDataServices(sl);
+      _diLog('DI STEPS 5-6: Data & Schedule Services - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 4: AI Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: AI services failed - this may cause hangs on Android');
-      }
+      _diLog('DI STEPS 5-6: Data & Schedule Services - FAILED: $e');
     }
 
-    // STEP 5: ESPN and API Services (High risk for Android)
-    _diLog('DI STEP 5: ESPN and API Services');
-    try {
-      // Register ESPN services with timeout protection
-      await Future.any([
-        _registerESPNServices(),
-        Future.delayed(const Duration(seconds: 5)), // 5 second timeout
-      ]);
-      _diLog('DI STEP 5: ESPN and API Services - SUCCESS');
-    } catch (e) {
-      _diLog('DI STEP 5: ESPN and API Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: ESPN services failed - this is likely the Android issue');
-        _diLog('DIAGNOSTIC: Registering fallback services instead');
-      }
-      // Register fallback services
-      _registerFallbackServices();
-    }
-
-    // STEP 6: Schedule Services (Essential for app)
-    _diLog('DI STEP 6: Schedule Services');
-    try {
-      _registerScheduleServices();
-      _diLog('DI STEP 6: Schedule Services - SUCCESS');
-    } catch (e) {
-      _diLog('DI STEP 6: Schedule Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Schedule services failed - app will have limited functionality');
-      }
-    }
-
-    // STEP 7: Recommendation Services
+    // Step 7: Recommendation services
     _diLog('DI STEP 7: Recommendation Services');
     try {
-      _registerRecommendationServices();
+      registerRecommendationServices(sl);
       _diLog('DI STEP 7: Recommendation Services - SUCCESS');
     } catch (e) {
       _diLog('DI STEP 7: Recommendation Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Recommendation services failed but app will continue');
-      }
     }
 
-    // STEP 8: Social and External Services
-    _diLog('DI STEP 8: Social and External Services');
+    // Step 8: Social and external services
+    _diLog('DI STEP 8: Social & External Services');
     try {
-      _registerSocialServices();
-      _diLog('DI STEP 8: Social and External Services - SUCCESS');
+      registerSocialServices(sl);
+      _diLog('DI STEP 8: Social & External Services - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 8: Social and External Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Social services failed but app will continue');
-      }
+      _diLog('DI STEP 8: Social & External Services - FAILED: $e');
     }
 
-    // STEP 9: World Cup 2026 Services
+    // Step 9: World Cup 2026 services
     _diLog('DI STEP 9: World Cup 2026 Services');
     try {
-      _registerWorldCupServices();
+      registerWorldCupServices(sl);
       _diLog('DI STEP 9: World Cup 2026 Services - SUCCESS');
     } catch (e) {
       _diLog('DI STEP 9: World Cup 2026 Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: World Cup services failed but app will continue');
-      }
     }
 
-    // STEP 10: Watch Party Services
+    // Step 10: Watch Party services
     _diLog('DI STEP 10: Watch Party Services');
     try {
-      _registerWatchPartyServices();
+      registerWatchPartyServices(sl);
       _diLog('DI STEP 10: Watch Party Services - SUCCESS');
     } catch (e) {
       _diLog('DI STEP 10: Watch Party Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Watch Party services failed but app will continue');
-      }
     }
 
-    // STEP 11: Moderation Services
-    _diLog('DI STEP 11: Moderation Services');
+    // Steps 11-13: Moderation, Admin, Match Chat services
+    _diLog('DI STEPS 11-13: Moderation, Admin & Match Chat');
     try {
-      _registerModerationServices();
-      _diLog('DI STEP 11: Moderation Services - SUCCESS');
+      registerModerationAdminServices(sl);
+      _diLog('DI STEPS 11-13: Moderation, Admin & Match Chat - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 11: Moderation Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Moderation services failed but app will continue');
-      }
+      _diLog('DI STEPS 11-13: Moderation, Admin & Match Chat - FAILED: $e');
     }
 
-    // STEP 12: Admin Services
-    _diLog('DI STEP 12: Admin Services');
+    // Steps 14-16: Chatbot, Calendar, Sharing services
+    _diLog('DI STEPS 14-16: Extended Features');
     try {
-      _registerAdminServices();
-      _diLog('DI STEP 12: Admin Services - SUCCESS');
+      registerExtendedFeatures(sl);
+      _diLog('DI STEPS 14-16: Extended Features - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 12: Admin Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Admin services failed but app will continue');
-      }
-    }
-
-    // STEP 13: Match Chat Services
-    _diLog('DI STEP 13: Match Chat Services');
-    try {
-      _registerMatchChatServices();
-      _diLog('DI STEP 13: Match Chat Services - SUCCESS');
-    } catch (e) {
-      _diLog('DI STEP 13: Match Chat Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Match Chat services failed but app will continue');
-      }
-    }
-
-    // STEP 14: Chatbot Services
-    _diLog('DI STEP 14: Chatbot Services');
-    try {
-      _registerChatbotServices();
-      _diLog('DI STEP 14: Chatbot Services - SUCCESS');
-    } catch (e) {
-      _diLog('DI STEP 14: Chatbot Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Chatbot services failed but app will continue');
-      }
-    }
-
-    // STEP 15: Calendar Services
-    _diLog('DI STEP 15: Calendar Services');
-    try {
-      _registerCalendarServices();
-      _diLog('DI STEP 15: Calendar Services - SUCCESS');
-    } catch (e) {
-      _diLog('DI STEP 15: Calendar Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Calendar services failed but app will continue');
-      }
-    }
-
-    // STEP 16: Sharing Services
-    _diLog('DI STEP 16: Sharing Services');
-    try {
-      _registerSharingServices();
-      _diLog('DI STEP 16: Sharing Services - SUCCESS');
-    } catch (e) {
-      _diLog('DI STEP 16: Sharing Services - FAILED: $e');
-      if (ANDROID_DIAGNOSTIC_MODE) {
-        _diLog('DIAGNOSTIC: Sharing services failed but app will continue');
-      }
+      _diLog('DI STEPS 14-16: Extended Features - FAILED: $e');
     }
 
     if (ANDROID_DIAGNOSTIC_MODE) {
@@ -369,337 +119,4 @@ Future<void> setupLocator() async {
     }
     rethrow;
   }
-}
-
-/// Register ESPN services with extra error handling
-Future<void> _registerESPNServices() async {
-  try {
-    sl.registerLazySingleton(() => ESPNService());
-    sl.registerLazySingleton(() => EnhancedSportsDataService());
-    
-    // Register ESPN schedule datasource
-    sl.registerLazySingleton(() => ESPNScheduleDataSource(
-      espnService: sl(),
-      cacheService: sl(),
-    ));
-  } catch (e) {
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      _diLog('DIAGNOSTIC: ESPN service registration failed: $e');
-    }
-    rethrow;
-  }
-}
-
-/// Register fallback services when ESPN fails
-void _registerFallbackServices() {
-  try {
-    // Register mock ESPN service that doesn't make network calls
-    sl.registerLazySingleton(() => ESPNService());
-
-    // Register simple ESPN datasource
-    sl.registerLazySingleton(() => ESPNScheduleDataSource(
-      espnService: sl(),
-      cacheService: sl(),
-    ));
-
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      _diLog('FALLBACK: Registered fallback ESPN services');
-    }
-  } catch (e) {
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      _diLog('FALLBACK: Even fallback services failed: $e');
-    }
-  }
-}
-
-/// Register schedule-related services
-void _registerScheduleServices() {
-  // Register schedule BLoC
-  sl.registerFactory(() => ScheduleBloc(
-    getUpcomingGames: sl(),
-    scheduleRepository: sl(),
-  ));
-
-  // Register use cases
-  sl.registerLazySingleton(() => GetUpcomingGames(sl()));
-
-  // Register repository
-  sl.registerLazySingleton<ScheduleRepository>(
-    () => ScheduleRepositoryImpl(remoteDataSource: sl<ESPNScheduleDataSource>()),
-  );
-}
-
-/// Register recommendation services
-void _registerRecommendationServices() {
-  // Use Cases
-  sl.registerLazySingleton(() => GetNearbyPlaces(sl()));
-  sl.registerLazySingleton(() => GetFilteredVenues(sl()));
-  sl.registerLazySingleton(() => GetGeocodedLocation(sl()));
-  
-  // Repositories
-  sl.registerLazySingleton<PlacesRepository>(
-    () => PlacesRepositoryImpl(remoteDataSource: sl()),
-  );
-  
-  // Data Sources
-  sl.registerLazySingleton<PlacesApiDataSource>(
-    () => PlacesApiDataSource(
-      googleApiKey: ApiKeys.googlePlaces,
-    ),
-  );
-}
-
-/// Register social and external services
-void _registerSocialServices() {
-  // Social features
-  sl.registerLazySingleton<SocialService>(() => SocialService());
-  sl.registerLazySingleton<SocialDataSource>(
-    () => SocialDataSourceImpl(
-      firestore: sl(),
-      auth: sl(),
-    ),
-  );
-
-  // Zapier Integration Service
-  sl.registerLazySingleton(() => ZapierService(dio: sl()));
-
-  // Game Day Automation Service
-  sl.registerLazySingleton(() => GameDayAutomationService());
-
-  // Data sources
-  sl.registerLazySingleton<LiveScoresDataSource>(
-    () => LiveScoresDataSourceImpl(
-      dio: sl(),
-      apiKey: ApiKeys.sportsDataIo,
-    ),
-  );
-}
-
-/// Register World Cup 2026 services
-void _registerWorldCupServices() {
-  // Data Sources
-  sl.registerLazySingleton<WorldCupApiDataSource>(
-    () => WorldCupApiDataSource(
-      dio: sl(),
-      apiKey: ApiKeys.sportsDataIo,
-    ),
-  );
-
-  sl.registerLazySingleton<WorldCupFirestoreDataSource>(
-    () => WorldCupFirestoreDataSource(
-      firestore: sl(),
-    ),
-  );
-
-  sl.registerLazySingleton<WorldCupCacheDataSource>(
-    () => WorldCupCacheDataSource(),
-  );
-
-  // Repositories
-  sl.registerLazySingleton<WorldCupMatchRepository>(
-    () => WorldCupMatchRepositoryImpl(
-      apiDataSource: sl(),
-      firestoreDataSource: sl(),
-      cacheDataSource: sl(),
-    ),
-  );
-
-  sl.registerLazySingleton<NationalTeamRepository>(
-    () => NationalTeamRepositoryImpl(
-      apiDataSource: sl(),
-      firestoreDataSource: sl(),
-      cacheDataSource: sl(),
-    ),
-  );
-
-  sl.registerLazySingleton<GroupRepository>(
-    () => GroupRepositoryImpl(
-      apiDataSource: sl(),
-      firestoreDataSource: sl(),
-      cacheDataSource: sl(),
-    ),
-  );
-
-  sl.registerLazySingleton<BracketRepository>(
-    () => BracketRepositoryImpl(
-      firestoreDataSource: sl(),
-      cacheDataSource: sl(),
-    ),
-  );
-
-  // User Preferences Repository (for favorites)
-  sl.registerLazySingleton<UserPreferencesRepository>(
-    () => UserPreferencesRepositoryImpl(
-      sharedPreferences: sl(),
-    ),
-  );
-
-  // Predictions Repository
-  sl.registerLazySingleton<PredictionsRepository>(
-    () => PredictionsRepositoryImpl(
-      sharedPreferences: sl(),
-    ),
-  );
-
-  // BLoC/Cubit (using Factory pattern for fresh instances)
-  sl.registerFactory(() => MatchListCubit(
-    matchRepository: sl(),
-  ));
-
-  sl.registerFactory(() => GroupStandingsCubit(
-    groupRepository: sl(),
-  ));
-
-  sl.registerFactory(() => BracketCubit(
-    bracketRepository: sl(),
-  ));
-
-  sl.registerFactory(() => TeamsCubit(
-    teamRepository: sl(),
-  ));
-
-  sl.registerFactory(() => FavoritesCubit(
-    preferencesRepository: sl(),
-    teamRepository: sl(),
-    matchRepository: sl(),
-  ));
-
-  sl.registerFactory(() => PredictionsCubit(
-    predictionsRepository: sl(),
-    matchRepository: sl(),
-  ));
-
-  // Enhanced Match Data Service (squad values, form, patterns, odds, injuries)
-  sl.registerLazySingleton(() => EnhancedMatchDataService.instance);
-
-  // Local Prediction Engine (no API keys needed)
-  sl.registerLazySingleton(() => LocalPredictionEngine(
-    enhancedDataService: sl<EnhancedMatchDataService>(),
-  ));
-
-  // AI Services for World Cup (routes through LocalPredictionEngine)
-  sl.registerLazySingleton(() => WorldCupAIService(
-    localEngine: sl<LocalPredictionEngine>(),
-  ));
-
-  sl.registerFactory(() => WorldCupAICubit(
-    aiService: sl<WorldCupAIService>(),
-  ));
-
-  // Nearby Venues Service (find bars/restaurants near stadiums)
-  sl.registerLazySingleton(() => NearbyVenuesService(
-    placesDataSource: sl<PlacesApiDataSource>(),
-  ));
-
-  sl.registerFactory(() => NearbyVenuesCubit(
-    service: sl<NearbyVenuesService>(),
-  ));
-
-  // Match Reminder Service
-  sl.registerLazySingleton(() => MatchReminderService());
-
-  // Venue Enhancement Services
-  sl.registerLazySingleton(() => VenueEnhancementService());
-
-  sl.registerFactory(() => VenueEnhancementCubit(
-    service: sl<VenueEnhancementService>(),
-  ));
-
-  sl.registerFactory(() => VenueFilterCubit(
-    service: sl<VenueEnhancementService>(),
-  ));
-
-  sl.registerFactory(() => VenueOnboardingCubit(
-    service: sl<VenueEnhancementService>(),
-  ));
-
-  // World Cup Payment Service
-  sl.registerLazySingleton(() => WorldCupPaymentService());
-
-  // RevenueCat Service (native in-app purchases)
-  sl.registerLazySingleton(() => RevenueCatService());
-
-}
-
-/// Register Watch Party services
-void _registerWatchPartyServices() {
-  // Services (Singleton - maintain state across app)
-  sl.registerLazySingleton<WatchPartyService>(() => WatchPartyService());
-  sl.registerLazySingleton<WatchPartyPaymentService>(() => WatchPartyPaymentService());
-
-  // BLoC (Factory - fresh instance per screen)
-  sl.registerFactory<WatchPartyBloc>(() => WatchPartyBloc(
-    watchPartyService: sl(),
-    paymentService: sl(),
-  ));
-}
-
-/// Register Moderation services
-void _registerModerationServices() {
-  // Profanity Filter Service (Singleton)
-  sl.registerLazySingleton<ProfanityFilterService>(() => ProfanityFilterService());
-
-  // Moderation Service (Singleton)
-  sl.registerLazySingleton<ModerationService>(() => ModerationService(
-    profanityFilter: sl(),
-  ));
-}
-
-/// Register Admin services
-void _registerAdminServices() {
-  // Admin Service (Singleton)
-  sl.registerLazySingleton<AdminService>(() => AdminService());
-}
-
-/// Register Match Chat services
-void _registerMatchChatServices() {
-  // Match Chat Service (Singleton)
-  sl.registerLazySingleton<MatchChatService>(() => MatchChatService());
-
-  // Match Chat Cubit (Factory for fresh instances)
-  sl.registerFactory<MatchChatCubit>(() => MatchChatCubit(
-        chatService: sl(),
-      ));
-}
-
-/// Register Chatbot services (local knowledge-powered assistant)
-void _registerChatbotServices() {
-  // Knowledge Base (Singleton - reuses EnhancedMatchDataService)
-  sl.registerLazySingleton<ChatbotKnowledgeBase>(() => ChatbotKnowledgeBase(
-    enhancedData: EnhancedMatchDataService.instance,
-  ));
-
-  // Intent Classifier (Singleton)
-  sl.registerLazySingleton<IntentClassifier>(() => IntentClassifier(
-    knowledgeBase: sl<ChatbotKnowledgeBase>(),
-  ));
-
-  // Response Generator (Singleton)
-  sl.registerLazySingleton<ResponseGenerator>(() => ResponseGenerator(
-    knowledgeBase: sl<ChatbotKnowledgeBase>(),
-  ));
-
-  // Chatbot Service (Singleton - maintains conversation history)
-  sl.registerLazySingleton<ChatbotService>(() => ChatbotService(
-    knowledgeBase: sl<ChatbotKnowledgeBase>(),
-    classifier: sl<IntentClassifier>(),
-    responseGenerator: sl<ResponseGenerator>(),
-  ));
-
-  // Chatbot Cubit (Factory - fresh instance per screen)
-  sl.registerFactory<ChatbotCubit>(() => ChatbotCubit(
-    chatbotService: sl<ChatbotService>(),
-  ));
-}
-
-/// Register Calendar services
-void _registerCalendarServices() {
-  // Calendar Service (Singleton)
-  sl.registerLazySingleton<CalendarService>(() => CalendarService());
-}
-
-/// Register Sharing services
-void _registerSharingServices() {
-  // Social Sharing Service (Singleton)
-  sl.registerLazySingleton<SocialSharingService>(() => SocialSharingService());
 }

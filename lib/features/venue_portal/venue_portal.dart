@@ -16,7 +16,7 @@ export 'presentation/screens/tv_setup_screen.dart';
 export 'presentation/screens/game_day_specials_screen.dart';
 export 'presentation/screens/atmosphere_settings_screen.dart';
 export 'presentation/screens/capacity_update_screen.dart';
-export 'presentation/screens/venue_onboarding_screen.dart';
+export 'presentation/screens/venue_onboarding/venue_onboarding_screen.dart';
 
 // Widgets
 export 'presentation/widgets/premium_feature_gate.dart';

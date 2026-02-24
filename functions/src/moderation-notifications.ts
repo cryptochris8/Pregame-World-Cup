@@ -1,5 +1,6 @@
 import * as functions from "firebase-functions/v2";
 import * as admin from "firebase-admin";
+import { withRetry } from "./retry-utils";
 
 // Initialize Firebase Admin if not already initialized
 if (!admin.apps.length) {
@@ -201,7 +202,7 @@ async function notifyAdminsOfReport(report: Report): Promise<void> {
   };
 
   try {
-    const response = await admin.messaging().sendEachForMulticast(message);
+    const response = await withRetry(() => admin.messaging().sendEachForMulticast(message));
     console.log(`Sent ${response.successCount} admin notifications`);
   } catch (error) {
     console.error("Error sending admin notifications:", error);
@@ -272,7 +273,7 @@ async function notifyUserOfSanction(
   };
 
   try {
-    await admin.messaging().send(message);
+    await withRetry(() => admin.messaging().send(message));
     console.log(`Sent sanction notification to user ${userId}`);
   } catch (error) {
     console.error(`Error sending sanction notification to ${userId}:`, error);

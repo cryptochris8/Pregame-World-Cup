@@ -1,5 +1,6 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
@@ -90,7 +91,7 @@ export const onWatchPartyInviteCreated = functions.firestore
         },
       };
 
-      const response = await admin.messaging().send(message);
+      const response = await withRetry(() => admin.messaging().send(message));
       functions.logger.info(`Successfully sent FCM notification: ${response}`);
 
       // Also create in-app notification
@@ -244,7 +245,7 @@ export const onWatchPartyInviteUpdated = functions.firestore
         };
 
         try {
-          await admin.messaging().send(message);
+          await withRetry(() => admin.messaging().send(message));
           functions.logger.info(`Sent FCM notification to host ${hostId}`);
         } catch (fcmError) {
           functions.logger.error('FCM send failed:', fcmError);
@@ -347,7 +348,7 @@ export const onWatchPartyCancelled = functions.firestore
             const fcmToken = userDoc.exists ? userDoc.data()?.fcmToken : null;
 
             if (fcmToken) {
-              await admin.messaging().send({
+              await withRetry(() => admin.messaging().send({
                 token: fcmToken,
                 notification: {
                   title: 'Watch Party Cancelled',
@@ -358,7 +359,7 @@ export const onWatchPartyCancelled = functions.firestore
                   watchPartyId: watchPartyId,
                   click_action: 'FLUTTER_NOTIFICATION_CLICK',
                 },
-              });
+              }));
             }
           } catch (memberError) {
             functions.logger.error(`Failed to notify member ${memberId}:`, memberError);

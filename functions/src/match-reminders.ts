@@ -1,20 +1,21 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
 /**
- * Scheduled function that runs every minute to check for due match reminders
+ * Scheduled function that runs every 5 minutes to check for due match reminders
  * and sends push notifications to users
  */
 export const sendMatchReminders = functions.pubsub
-  .schedule('every 1 minutes')
+  .schedule('every 5 minutes')
   .onRun(async (context: functions.EventContext) => {
     functions.logger.info('Checking for due match reminders...');
 
     const now = admin.firestore.Timestamp.now();
-    const oneMinuteAgo = admin.firestore.Timestamp.fromMillis(
-      now.toMillis() - 60 * 1000
+    const fiveMinutesAgo = admin.firestore.Timestamp.fromMillis(
+      now.toMillis() - 5 * 60 * 1000
     );
 
     try {
@@ -25,7 +26,7 @@ export const sendMatchReminders = functions.pubsub
         .where('isEnabled', '==', true)
         .where('isSent', '==', false)
         .where('reminderDateTimeUtc', '<=', now)
-        .where('reminderDateTimeUtc', '>=', oneMinuteAgo)
+        .where('reminderDateTimeUtc', '>=', fiveMinutesAgo)
         .get();
 
       if (remindersSnapshot.empty) {
@@ -106,7 +107,7 @@ export const sendMatchReminders = functions.pubsub
             },
           };
 
-          await admin.messaging().send(message);
+          await withRetry(() => admin.messaging().send(message));
           functions.logger.info(`Sent reminder notification for ${matchName} to user ${reminder.userId}`);
 
           // Also create in-app notification

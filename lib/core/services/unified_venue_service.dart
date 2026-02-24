@@ -11,8 +11,7 @@ import 'venue_scoring_service.dart';
 export 'venue_models.dart';
 
 /// Unified venue service that combines all venue recommendation capabilities.
-/// Replaces VenueRecommendationService, SmartVenueRecommendationService,
-/// and AIVenueRecommendationService.
+/// Replaces VenueRecommendationService and SmartVenueRecommendationService.
 ///
 /// This is a facade that delegates to focused sub-services:
 /// - [VenueScoringService] for scoring, sorting, tags, and reasoning

@@ -19,6 +19,7 @@ import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
+import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
@@ -210,7 +211,7 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
       ? `https://pregameworldcup.com/purchase/cancel?source=stripe_checkout&status=cancelled`
       : 'https://pregame-b089e.web.app/purchase/cancel';
 
-    const session = await getStripe().checkout.sessions.create({
+    const session = await withRetry(() => getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: 'payment', // One-time payment
@@ -227,7 +228,7 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
         passType,
         userId,
       },
-    });
+    }));
 
     functions.logger.info(`Fan pass checkout created: ${session.id} for user ${userId}`);
 
@@ -346,7 +347,7 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
     }
 
     // Create checkout session
-    const session = await getStripe().checkout.sessions.create({
+    const session = await withRetry(() => getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: 'payment', // One-time payment
@@ -364,7 +365,7 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
         venueName,
         userId,
       },
-    });
+    }));
 
     functions.logger.info(`Venue premium checkout created: ${session.id} for venue ${venueId}`);
 

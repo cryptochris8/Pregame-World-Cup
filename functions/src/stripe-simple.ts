@@ -3,6 +3,7 @@ import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
+import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
@@ -136,7 +137,7 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
     }
 
     // Create checkout session
-    const session = await getStripe().checkout.sessions.create({
+    const session = await withRetry(() => getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: mode as 'subscription' | 'payment',
@@ -153,7 +154,7 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
         userId: context.auth.uid,
         type: 'fan'
       }
-    });
+    }));
 
     return { sessionId: session.id };
   } catch (error) {
@@ -290,7 +291,7 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
     }
 
     // Create checkout session
-    const session = await getStripe().checkout.sessions.create({
+    const session = await withRetry(() => getStripe().checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
       mode: mode as 'subscription' | 'payment',
@@ -306,7 +307,7 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
         venueId: venueId,
         userId: context.auth.uid
       }
-    });
+    }));
 
     return { sessionId: session.id };
   } catch (error) {
@@ -385,7 +386,7 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
 
     const amount = ALLOWED_PAYMENT_AMOUNTS[productType];
 
-    const paymentIntent = await getStripe().paymentIntents.create({
+    const paymentIntent = await withRetry(() => getStripe().paymentIntents.create({
       amount,
       currency,
       description: description || `World Cup 2026 - ${productType}`,
@@ -393,7 +394,7 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
         userId: context.auth.uid,
         productType,
       }
-    });
+    }));
 
     return { clientSecret: paymentIntent.client_secret };
   } catch (error: any) {

@@ -628,10 +628,12 @@ describe('Watch Party Payments', () => {
       });
       mockFirestore.setTestData('watch_party_virtual_payments', payments);
 
-      // Make the second refund call fail
+      // Make the second refund call fail with a non-retryable error
+      const stripeError: any = new Error('Stripe refund failed');
+      stripeError.code = 'card_declined';
       mockStripe.refunds.create
         .mockResolvedValueOnce({ id: 're_ok', status: 'succeeded', amount: 500, payment_intent: 'pi_ok' } as any)
-        .mockRejectedValueOnce(new Error('Stripe refund failed'));
+        .mockRejectedValueOnce(stripeError);
 
       const result = await callFunction(
         refundAllVirtualAttendees,

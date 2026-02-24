@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../domain/entities/game_schedule.dart';
-import '../../../../core/ai/services/ai_game_analysis_service.dart';
+import '../../../../core/ai/services/enhanced_ai_game_analysis_service.dart';
 import '../../../../core/ai/services/ai_historical_knowledge_service.dart';
 import '../../../../injection_container.dart';
 
@@ -23,7 +23,7 @@ class AIHistoricalInsightsWidget extends StatefulWidget {
 }
 
 class _AIHistoricalInsightsWidgetState extends State<AIHistoricalInsightsWidget> {
-  final AIGameAnalysisService _analysisService = sl<AIGameAnalysisService>();
+  final EnhancedAIGameAnalysisService _analysisService = sl<EnhancedAIGameAnalysisService>();
   final AIHistoricalKnowledgeService _knowledgeService = sl<AIHistoricalKnowledgeService>();
   
   Map<String, dynamic>? _gameAnalysis;

@@ -3,6 +3,7 @@ import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
 import { getStripe, getConfigValue } from './stripe-config';
 import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
+import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
@@ -69,7 +70,7 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
       }
 
       // Create payment intent with Stripe (outside transaction scope, but before Firestore write)
-      const paymentIntent = await getStripe().paymentIntents.create({
+      const paymentIntent = await withRetry(() => getStripe().paymentIntents.create({
         amount,
         currency,
         description: `Virtual attendance for ${watchPartyName || 'Watch Party'}`,
@@ -80,7 +81,7 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
           userId,
           userEmail,
         },
-      });
+      }));
 
       // Record pending payment in Firestore atomically
       const paymentRef = db.collection('watch_party_virtual_payments').doc();
@@ -264,7 +265,7 @@ export const requestVirtualAttendanceRefund = functions.https.onCall(async (data
     }
 
     // Create refund with Stripe
-    const refund = await getStripe().refunds.create({
+    const refund = await withRetry(() => getStripe().refunds.create({
       payment_intent: paymentIntentId,
       reason: 'requested_by_customer',
       metadata: {
@@ -273,7 +274,7 @@ export const requestVirtualAttendanceRefund = functions.https.onCall(async (data
         requestedBy: context.auth.uid,
         reason,
       },
-    });
+    }));
 
     // Use a batch write to update all records atomically
     const batch = db.batch();
@@ -366,7 +367,7 @@ export const refundAllVirtualAttendees = functions.https.onCall(async (data: any
       const paymentData = paymentDoc.data();
 
       try {
-        const refund = await getStripe().refunds.create({
+        const refund = await withRetry(() => getStripe().refunds.create({
           payment_intent: paymentData.paymentIntentId,
           reason: 'requested_by_customer',
           metadata: {
@@ -374,7 +375,7 @@ export const refundAllVirtualAttendees = functions.https.onCall(async (data: any
             userId: paymentData.userId,
             reason: 'Watch party cancelled by host',
           },
-        });
+        }));
 
         await paymentDoc.ref.update({
           status: 'refunded',

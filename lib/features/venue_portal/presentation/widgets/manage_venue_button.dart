@@ -8,7 +8,7 @@ import '../../domain/entities/entities.dart';
 import '../../domain/entities/venue_enhancement.dart';
 import '../../domain/services/venue_enhancement_service.dart';
 import '../bloc/venue_enhancement_cubit.dart';
-import '../screens/venue_onboarding_screen.dart';
+import '../screens/venue_onboarding/venue_onboarding_screen.dart';
 import '../screens/venue_portal_home_screen.dart';
 import '../../../../injection_container.dart';
 

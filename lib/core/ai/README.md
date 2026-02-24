@@ -23,12 +23,9 @@ The AI service layer follows a 3-tier architecture:
 - `multi_provider_ai_service.dart` - Routes requests to optimal provider (Claude for deep analysis, OpenAI for embeddings/quick responses), with automatic fallback
 
 ### Tier 3: Domain Services (Feature-specific logic)
-- `ai_game_analysis_service.dart` - Game analysis using historical knowledge + AI
-- `enhanced_ai_game_analysis_service.dart` - Enhanced analysis with team mapping and real data
+- `enhanced_ai_game_analysis_service.dart` - Game analysis with team mapping, historical data, and AI
 - `ai_historical_knowledge_service.dart` - Historical data cache and retrieval
 - `ai_team_season_summary_service.dart` - Team season summaries and narratives
-- `ai_venue_recommendation_service.dart` - Venue recommendations with embeddings
-- `user_preference_learning_service.dart` - User preference learning
 
 ```
 lib/core/ai/
@@ -36,12 +33,9 @@ lib/core/ai/
 │   ├── ai_service.dart                          # Tier 1: OpenAI provider
 │   ├── claude_service.dart                      # Tier 1: Claude provider
 │   ├── multi_provider_ai_service.dart           # Tier 2: Provider router
-│   ├── ai_game_analysis_service.dart            # Tier 3: Game analysis
-│   ├── enhanced_ai_game_analysis_service.dart   # Tier 3: Enhanced analysis
+│   ├── enhanced_ai_game_analysis_service.dart   # Tier 3: Game analysis
 │   ├── ai_historical_knowledge_service.dart     # Tier 3: Historical data
 │   ├── ai_team_season_summary_service.dart      # Tier 3: Season summaries
-│   ├── ai_venue_recommendation_service.dart     # Tier 3: Venue AI
-│   └── user_preference_learning_service.dart    # Tier 3: User learning
 ├── entities/
 │   └── ai_recommendation.dart                   # Data models
 └── README.md                                    # This file
@@ -87,27 +81,6 @@ if (aiService.isAvailable) {
 ```
 
 ## Usage Examples
-
-### Venue Recommendations
-
-```dart
-import 'package:pregame_world_cup/core/ai/services/ai_venue_recommendation_service.dart';
-
-final venueService = AIVenueRecommendationService(aiService);
-
-final recommendations = await venueService.generateVenueRecommendations(
-  venues: nearbyVenues,
-  userPreferences: 'I love sports bars with big screens and great food',
-  gameContext: 'Brazil vs Argentina - World Cup Semi-Final',
-  maxRecommendations: 3,
-);
-
-for (final rec in recommendations) {
-  print('${rec.title}: ${rec.description}');
-  print('Confidence: ${(rec.confidence * 100).toInt()}%');
-  print('Reasons: ${rec.reasons.join(', ')}');
-}
-```
 
 ### Match Predictions
 
