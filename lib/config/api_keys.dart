@@ -40,15 +40,15 @@ class ApiKeys {
   );
 
   // RevenueCat API Keys - platform-specific, loaded from environment
-  // iOS: Production key for App Store
+  // iOS: Set via REVENUECAT_IOS_API_KEY in Codemagic vault
   static const String revenueCatIos = String.fromEnvironment(
     'REVENUECAT_IOS_API_KEY',
-    defaultValue: 'appl_ossGwqwpDoJlTmVSVZEHoZTFMHY',
+    defaultValue: '',
   );
-  // Android: Test key as default until Play Store listing approved
+  // Android: Set via REVENUECAT_ANDROID_API_KEY in Codemagic vault
   static const String revenueCatAndroid = String.fromEnvironment(
     'REVENUECAT_ANDROID_API_KEY',
-    defaultValue: 'test_MFlhygrdunfDNFjjvGIVMCMlnwe',
+    defaultValue: '',
   );
   
   // Validation method to check if keys are properly configured
