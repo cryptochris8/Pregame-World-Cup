@@ -1,10 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:pregame_world_cup/features/worldcup/worldcup.dart';
-import 'package:pregame_world_cup/features/worldcup/data/datasources/world_cup_api_datasource.dart';
-import 'package:pregame_world_cup/features/worldcup/data/datasources/world_cup_firestore_datasource.dart';
-import 'package:pregame_world_cup/features/worldcup/data/datasources/world_cup_cache_datasource.dart';
-import 'package:pregame_world_cup/features/worldcup/data/repositories/group_repository_impl.dart';
 
 import '../../../worldcup/presentation/bloc/mock_repositories.dart';
 
