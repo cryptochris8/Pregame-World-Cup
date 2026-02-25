@@ -385,6 +385,75 @@ void main() {
     });
   });
 
+  group('Squad value response', () {
+    test('returns global ranking when no team specified', () async {
+      const intent = ChatIntent(type: ChatIntentType.squadValue);
+      final response = await generator.generate(intent);
+      expect(response.text, contains('Most Valuable'));
+      expect(response.text, contains('England'));
+      expect(response.suggestionChips, isNotEmpty);
+    });
+
+    test('returns team-specific value for USA', () async {
+      const intent = ChatIntent(
+        type: ChatIntentType.squadValue,
+        entities: {'team': 'USA'},
+      );
+      final response = await generator.generate(intent);
+      expect(response.text, contains('United States'));
+      expect(response.text, contains('\$500M'));
+      expect(response.text, contains('#5'));
+    });
+  });
+
+  group('Recent form response', () {
+    test('asks for team when none provided', () async {
+      const intent = ChatIntent(type: ChatIntentType.recentForm);
+      final response = await generator.generate(intent);
+      expect(response.text, contains('Which team'));
+    });
+
+    test('returns form data for USA', () async {
+      const intent = ChatIntent(
+        type: ChatIntentType.recentForm,
+        entities: {'team': 'USA'},
+      );
+      final response = await generator.generate(intent);
+      expect(response.text, contains('United States'));
+      expect(response.text, contains('Form'));
+    });
+  });
+
+  group('Countdown response', () {
+    test('returns days until World Cup', () async {
+      const intent = ChatIntent(type: ChatIntentType.countdown);
+      final response = await generator.generate(intent);
+      expect(response.text, contains('Countdown'));
+      expect(response.text, contains('June 11'));
+      expect(response.text, contains('MetLife'));
+      expect(response.suggestionChips, isNotEmpty);
+    });
+  });
+
+  group('Tournament facts response', () {
+    test('returns tournament overview', () async {
+      const intent = ChatIntent(type: ChatIntentType.tournamentFacts);
+      final response = await generator.generate(intent);
+      expect(response.text, contains('48'));
+      expect(response.text, contains('104'));
+      expect(response.text, contains('MetLife'));
+      expect(response.suggestionChips, isNotEmpty);
+    });
+  });
+
+  group('Player comparison response', () {
+    test('asks for two players when none provided', () async {
+      const intent = ChatIntent(type: ChatIntentType.playerComparison);
+      final response = await generator.generate(intent);
+      expect(response.text, contains('two player'));
+    });
+  });
+
   group('Unknown response', () {
     test('returns helpful fallback', () async {
       const intent = ChatIntent(type: ChatIntentType.unknown);
@@ -404,6 +473,11 @@ void main() {
         const ChatIntent(type: ChatIntentType.prediction),
         const ChatIntent(type: ChatIntentType.history),
         const ChatIntent(type: ChatIntentType.odds),
+        const ChatIntent(type: ChatIntentType.squadValue),
+        const ChatIntent(type: ChatIntentType.recentForm),
+        const ChatIntent(type: ChatIntentType.playerComparison),
+        const ChatIntent(type: ChatIntentType.countdown),
+        const ChatIntent(type: ChatIntentType.tournamentFacts),
         const ChatIntent(type: ChatIntentType.unknown),
       ];
 

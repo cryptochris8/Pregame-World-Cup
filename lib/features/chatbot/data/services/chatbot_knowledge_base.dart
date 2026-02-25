@@ -292,6 +292,19 @@ class ChatbotKnowledgeBase {
     return results;
   }
 
+  /// Get all unique team codes from match data.
+  List<String> getAllTeamCodes() {
+    final codes = <String>{};
+    final allMatches = [..._groupMatches, ..._knockoutMatches];
+    for (final m in allMatches) {
+      final h = m['homeTeamCode'] as String?;
+      final a = m['awayTeamCode'] as String?;
+      if (h != null && h.isNotEmpty) codes.add(h);
+      if (a != null && a.isNotEmpty) codes.add(a);
+    }
+    return codes.toList()..sort();
+  }
+
   /// Get all unique venue names from match data.
   List<String> getAllVenues() {
     final venues = <String>{};

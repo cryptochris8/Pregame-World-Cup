@@ -3,8 +3,8 @@ import 'package:pregame_world_cup/features/chatbot/domain/entities/chat_intent.d
 
 void main() {
   group('ChatIntentType', () {
-    test('has 16 intent types', () {
-      expect(ChatIntentType.values.length, 16);
+    test('has 21 intent types', () {
+      expect(ChatIntentType.values.length, 21);
     });
 
     test('contains all expected types', () {
@@ -23,6 +23,11 @@ void main() {
       expect(ChatIntentType.values, contains(ChatIntentType.injury));
       expect(ChatIntentType.values, contains(ChatIntentType.appHelp));
       expect(ChatIntentType.values, contains(ChatIntentType.thanks));
+      expect(ChatIntentType.values, contains(ChatIntentType.squadValue));
+      expect(ChatIntentType.values, contains(ChatIntentType.recentForm));
+      expect(ChatIntentType.values, contains(ChatIntentType.playerComparison));
+      expect(ChatIntentType.values, contains(ChatIntentType.countdown));
+      expect(ChatIntentType.values, contains(ChatIntentType.tournamentFacts));
       expect(ChatIntentType.values, contains(ChatIntentType.unknown));
     });
   });

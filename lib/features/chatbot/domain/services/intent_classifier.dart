@@ -75,7 +75,12 @@ class IntentClassifier {
       return ChatIntent(type: ChatIntentType.headToHead, confidence: 0.7, entities: entities);
     }
 
-    // 7. Schedule
+    // 7. Countdown (before schedule — "when does it start" should be countdown)
+    if (_isCountdown(lower)) {
+      return ChatIntent(type: ChatIntentType.countdown, confidence: 0.9, entities: entities);
+    }
+
+    // 8. Schedule
     if (_isSchedule(lower)) {
       return ChatIntent(type: ChatIntentType.schedule, confidence: 0.9, entities: entities);
     }
@@ -90,12 +95,32 @@ class IntentClassifier {
       return ChatIntent(type: ChatIntentType.injury, confidence: 0.85, entities: entities);
     }
 
-    // 10. Manager (before player — "USA manager" should be manager)
+    // 10. Player comparison (needs 2 players detected)
+    if (_isPlayerComparison(lower)) {
+      final twoPlayers = _extractTwoPlayers(lower);
+      if (twoPlayers.length >= 2) {
+        entities['player1'] = twoPlayers[0];
+        entities['player2'] = twoPlayers[1];
+        return ChatIntent(type: ChatIntentType.playerComparison, confidence: 0.9, entities: entities);
+      }
+    }
+
+    // 11. Manager (before player — "USA manager" should be manager)
     if (_isManager(lower)) {
       return ChatIntent(type: ChatIntentType.manager, confidence: 0.85, entities: entities);
     }
 
-    // 11. Venue (before player — "stadiums" should be venue)
+    // 12. Squad value (before team — "most valuable squad" should not fall to team)
+    if (_isSquadValue(lower)) {
+      return ChatIntent(type: ChatIntentType.squadValue, confidence: 0.85, entities: entities);
+    }
+
+    // 13. Recent form (before team — "USA form" should not fall to team)
+    if (_isRecentForm(lower)) {
+      return ChatIntent(type: ChatIntentType.recentForm, confidence: 0.85, entities: entities);
+    }
+
+    // 14. Venue (before player — "stadiums" should be venue)
     if (_isVenue(lower) || venue != null) {
       return ChatIntent(type: ChatIntentType.venue, confidence: 0.85, entities: entities);
     }
@@ -120,9 +145,14 @@ class IntentClassifier {
       return ChatIntent(type: ChatIntentType.odds, confidence: 0.85, entities: entities);
     }
 
-    // 16. Standings
+    // 19. Standings
     if (_isStandings(lower)) {
       return ChatIntent(type: ChatIntentType.standings, confidence: 0.85, entities: entities);
+    }
+
+    // 20. Tournament facts (general tournament questions)
+    if (_isTournamentFacts(lower)) {
+      return ChatIntent(type: ChatIntentType.tournamentFacts, confidence: 0.85, entities: entities);
     }
 
     // If a team was mentioned but no specific intent, give team info
@@ -161,6 +191,10 @@ class IntentClassifier {
   }
 
   bool _isSchedule(String s) {
+    // Exclude "been playing" / "how has ... playing" (recent form queries)
+    if (s.contains('been playing') || (s.contains('how has') && s.contains('playing'))) {
+      return false;
+    }
     return s.contains('when') || s.contains('schedule') || s.contains('next match') ||
         s.contains('next game') || s.contains('play') || s.contains('kickoff') ||
         s.contains('kick off') || s.contains('what time') || s.contains('fixture');
@@ -230,6 +264,46 @@ class IntentClassifier {
   bool _isStandings(String s) {
     return s.contains('standing') || s.contains('table') ||
         (s.contains('group') && !s.contains('group stage'));
+  }
+
+  bool _isSquadValue(String s) {
+    return s.contains('squad value') || s.contains('squad worth') ||
+        s.contains('most valuable') || s.contains('most expensive') ||
+        s.contains('market value') || (s.contains('worth') && s.contains('squad')) ||
+        s.contains('cheapest squad') || s.contains('richest');
+  }
+
+  bool _isRecentForm(String s) {
+    return (s.contains('form') && !s.contains('formation') && !s.contains('format')) ||
+        s.contains('recent results') || s.contains('been playing') ||
+        s.contains('current form') || s.contains('winning streak') ||
+        s.contains('losing streak') || s.contains('last 5') ||
+        (s.contains('how have') && !s.contains('how many')) ||
+        (s.contains('how has') && !s.contains('how many')) ||
+        s.contains('momentum');
+  }
+
+  bool _isPlayerComparison(String s) {
+    return s.contains('compare') || s.contains('comparison') ||
+        s.contains('better than') || s.contains('who is better');
+  }
+
+  bool _isCountdown(String s) {
+    return s.contains('countdown') || s.contains('days until') ||
+        s.contains('how long until') || s.contains('how many days') ||
+        s.contains('when does it start') || s.contains('when does the world cup') ||
+        s.contains('opening match') || s.contains('opening ceremony') ||
+        s.contains('first match') || s.contains('start date');
+  }
+
+  bool _isTournamentFacts(String s) {
+    return s.contains('how many teams') || s.contains('how many matches') ||
+        s.contains('how many groups') || s.contains('how many cities') ||
+        s.contains('how many stadiums') || (s.contains('format') && !s.contains('formation')) ||
+        s.contains('tournament structure') || s.contains('where is the final') ||
+        s.contains('host countries') || s.contains('prize money') ||
+        s.contains('fun fact') || s.contains('did you know') ||
+        s.contains('tournament facts');
   }
 
   bool _hasPronoun(String s) {
@@ -310,6 +384,54 @@ class IntentClassifier {
     }
 
     return null;
+  }
+
+  /// Extract two player names from the message (for comparisons).
+  List<String> _extractTwoPlayers(String lower) {
+    final knownPlayers = _knowledgeBase.knownPlayerNames.toList()
+      ..sort((a, b) => b.length.compareTo(a.length));
+    final found = <String>[];
+
+    for (final name in knownPlayers) {
+      final parts = name.split(' ');
+      for (final part in parts) {
+        if (part.length >= 5 && _hasWord(lower, part) && !found.contains(name)) {
+          found.add(name);
+          break;
+        }
+      }
+      if (found.length >= 2) return found;
+    }
+
+    const wellKnown = {
+      'messi': 'lionel messi',
+      'ronaldo': 'cristiano ronaldo',
+      'mbappe': 'kylian mbappe',
+      'mbappé': 'kylian mbappe',
+      'neymar': 'neymar jr',
+      'haaland': 'erling haaland',
+      'bellingham': 'jude bellingham',
+      'vinicius': 'vinicius jr',
+      'kane': 'harry kane',
+      'salah': 'mohamed salah',
+      'modric': 'luka modric',
+      'de bruyne': 'kevin de bruyne',
+      'pedri': 'pedri',
+      'yamal': 'lamine yamal',
+      'saka': 'bukayo saka',
+      'foden': 'phil foden',
+      'lewandowski': 'robert lewandowski',
+      'son heung': 'son heung-min',
+    };
+
+    for (final entry in wellKnown.entries) {
+      if (_hasWord(lower, entry.key) && !found.contains(entry.value)) {
+        found.add(entry.value);
+      }
+      if (found.length >= 2) return found;
+    }
+
+    return found;
   }
 
   /// Check if [text] contains [word] as a whole word (word boundaries).

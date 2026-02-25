@@ -96,7 +96,7 @@ class ChatbotService {
   static const List<String> welcomeSuggestions = [
     'USA schedule',
     'Who are the favorites?',
-    'World Cup history',
+    'Countdown to World Cup',
     'Help',
   ];
 }

@@ -15,6 +15,11 @@ enum ChatIntentType {
   history,
   odds,
   standings,
+  squadValue,
+  recentForm,
+  playerComparison,
+  countdown,
+  tournamentFacts,
   unknown,
 }
 
@@ -38,6 +43,8 @@ class ChatIntent {
   String? get team1 => entities['team1'];
   String? get team2 => entities['team2'];
   String? get player => entities['player'];
+  String? get player1 => entities['player1'];
+  String? get player2 => entities['player2'];
   String? get venue => entities['venue'];
   String? get year => entities['year'];
   String? get group => entities['group'];

@@ -347,6 +347,92 @@ void main() {
     });
   });
 
+  group('Squad value intent', () {
+    test('classifies "most valuable squad" as squadValue', () {
+      final result = classifier.classify('most valuable squad');
+      expect(result.type, ChatIntentType.squadValue);
+    });
+
+    test('classifies "England squad worth" as squadValue with team', () {
+      final result = classifier.classify('England squad worth');
+      expect(result.type, ChatIntentType.squadValue);
+      expect(result.team, 'ENG');
+    });
+
+    test('classifies "most expensive team" as squadValue', () {
+      final result = classifier.classify('most expensive team');
+      expect(result.type, ChatIntentType.squadValue);
+    });
+  });
+
+  group('Recent form intent', () {
+    test('classifies "USA form" as recentForm', () {
+      final result = classifier.classify('USA form');
+      expect(result.type, ChatIntentType.recentForm);
+      expect(result.team, 'USA');
+    });
+
+    test('classifies "how has Argentina been playing" as recentForm', () {
+      final result = classifier.classify('how has Argentina been playing');
+      expect(result.type, ChatIntentType.recentForm);
+      expect(result.team, 'ARG');
+    });
+
+    test('classifies "Brazil recent results" as recentForm', () {
+      final result = classifier.classify('Brazil recent results');
+      expect(result.type, ChatIntentType.recentForm);
+      expect(result.team, 'BRA');
+    });
+
+    test('"USA formation" should NOT be recentForm (should be manager)', () {
+      final result = classifier.classify('USA formation');
+      expect(result.type, ChatIntentType.manager);
+    });
+  });
+
+  group('Player comparison intent', () {
+    test('classifies "compare Messi and Mbappe" as playerComparison', () {
+      final result = classifier.classify('compare Messi and Mbappe');
+      expect(result.type, ChatIntentType.playerComparison);
+      expect(result.entities['player1'], isNotNull);
+      expect(result.entities['player2'], isNotNull);
+    });
+  });
+
+  group('Countdown intent', () {
+    test('classifies "countdown to World Cup" as countdown', () {
+      final result = classifier.classify('countdown to World Cup');
+      expect(result.type, ChatIntentType.countdown);
+    });
+
+    test('classifies "how many days until the World Cup" as countdown', () {
+      final result = classifier.classify('how many days until the World Cup');
+      expect(result.type, ChatIntentType.countdown);
+    });
+
+    test('classifies "when does it start" as countdown', () {
+      final result = classifier.classify('when does it start');
+      expect(result.type, ChatIntentType.countdown);
+    });
+  });
+
+  group('Tournament facts intent', () {
+    test('classifies "how many teams" as tournamentFacts', () {
+      final result = classifier.classify('how many teams');
+      expect(result.type, ChatIntentType.tournamentFacts);
+    });
+
+    test('classifies "tournament format" as tournamentFacts', () {
+      final result = classifier.classify('tournament format');
+      expect(result.type, ChatIntentType.tournamentFacts);
+    });
+
+    test('classifies "tournament facts" as tournamentFacts', () {
+      final result = classifier.classify('tournament facts');
+      expect(result.type, ChatIntentType.tournamentFacts);
+    });
+  });
+
   group('Unknown intent', () {
     test('classifies gibberish as unknown', () {
       final result = classifier.classify('asdfghjkl');
@@ -474,6 +560,21 @@ void main() {
     test('schedule beats team when schedule keywords present', () {
       final result = classifier.classify('when does USA play');
       expect(result.type, ChatIntentType.schedule);
+    });
+
+    test('countdown beats schedule for "when does it start"', () {
+      final result = classifier.classify('when does it start');
+      expect(result.type, ChatIntentType.countdown);
+    });
+
+    test('squadValue beats team for "most valuable squad"', () {
+      final result = classifier.classify('most valuable squad');
+      expect(result.type, ChatIntentType.squadValue);
+    });
+
+    test('recentForm beats team for "USA form"', () {
+      final result = classifier.classify('USA form');
+      expect(result.type, ChatIntentType.recentForm);
     });
   });
 }

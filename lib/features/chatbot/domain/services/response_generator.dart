@@ -45,6 +45,16 @@ class ResponseGenerator {
         return _odds(intent);
       case ChatIntentType.standings:
         return _standings(intent);
+      case ChatIntentType.squadValue:
+        return await _squadValue(intent);
+      case ChatIntentType.recentForm:
+        return await _recentForm(intent);
+      case ChatIntentType.playerComparison:
+        return await _playerComparison(intent);
+      case ChatIntentType.countdown:
+        return _countdown(intent);
+      case ChatIntentType.tournamentFacts:
+        return _tournamentFacts(intent);
       case ChatIntentType.unknown:
         return _unknown(intent);
     }
@@ -74,15 +84,18 @@ class ResponseGenerator {
       text: "I can help you with:\n"
           "- Match schedules and kickoff times\n"
           "- Team squads, managers, and tactics\n"
-          "- Player stats and World Cup records\n"
+          "- Player stats, comparisons, and World Cup records\n"
           "- Head-to-head history between teams\n"
           "- Match previews and predictions\n"
+          "- Squad market values and rankings\n"
+          "- Recent form and momentum\n"
           "- Betting odds and tournament favorites\n"
           "- Injury updates\n"
+          "- World Cup 2026 countdown and tournament facts\n"
           "- World Cup history (1930-2022)\n"
           "- Host city and stadium info\n\n"
-          "Try asking something like \"When does Brazil play?\" or \"Messi stats\"!",
-      suggestionChips: ['USA schedule', 'Tournament favorites', 'World Cup records', 'Messi stats'],
+          "Try asking \"Compare Messi and Mbappe\" or \"Countdown to World Cup\"!",
+      suggestionChips: ['Countdown', 'Most valuable squads', 'Compare Messi and Mbappe', 'Tournament facts'],
       resolvedIntent: intent,
     );
   }
@@ -828,7 +841,279 @@ class ResponseGenerator {
     );
   }
 
+  // ─── New Response Generators ─────────────────────────────────
+
+  Future<ChatResponse> _squadValue(ChatIntent intent) async {
+    final teamCode = intent.team;
+
+    if (teamCode != null) {
+      final teamName = _kb.getTeamName(teamCode) ?? teamCode;
+      final sv = _kb.getSquadValue(teamCode);
+
+      if (sv == null) {
+        return ChatResponse(
+          text: "I don't have squad value data for $teamName.",
+          suggestionChips: ['Most valuable squads', '$teamName squad'],
+          resolvedIntent: intent,
+        );
+      }
+
+      final buf = StringBuffer('$teamName — Squad Value:\n\n');
+      buf.writeln('Total: ${sv['totalValueFormatted']} (ranked #${sv['rank']} in the tournament)');
+      buf.writeln('Squad size: ${sv['playerCount']} players');
+      buf.writeln('Average value: \$${_formatNumber(sv['averagePlayerValue'])}');
+
+      final mvp = sv['mostValuablePlayer'] as Map<String, dynamic>?;
+      if (mvp != null) {
+        buf.writeln('Most valuable: ${mvp['name']} (${mvp['value']})');
+      }
+      final lvp = sv['leastValuablePlayer'] as Map<String, dynamic>?;
+      if (lvp != null) {
+        buf.writeln('Lowest valued: ${lvp['name']} (${lvp['value']})');
+      }
+
+      return ChatResponse(
+        text: buf.toString().trim(),
+        suggestionChips: ['$teamName squad', '$teamName prediction', 'Most valuable squads'],
+        resolvedIntent: intent,
+      );
+    }
+
+    // Global squad value ranking
+    final allTeams = _kb.getAllTeamCodes();
+    final withValues = <Map<String, dynamic>>[];
+    for (final code in allTeams) {
+      final sv = _kb.getSquadValue(code);
+      if (sv != null) withValues.add(sv);
+    }
+    withValues.sort((a, b) =>
+        ((b['totalValue'] as num?) ?? 0).compareTo((a['totalValue'] as num?) ?? 0));
+
+    if (withValues.isEmpty) {
+      return ChatResponse(
+        text: "Squad value data is not available right now.",
+        suggestionChips: ['Tournament favorites', 'Help'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final buf = StringBuffer('World Cup 2026 — Most Valuable Squads:\n\n');
+    for (var i = 0; i < withValues.length && i < 10; i++) {
+      final t = withValues[i];
+      final mvp = t['mostValuablePlayer'] as Map<String, dynamic>?;
+      buf.writeln('${i + 1}. ${t['teamName']} — ${t['totalValueFormatted']}'
+          '${mvp != null ? ' (star: ${mvp['name']})' : ''}');
+    }
+
+    final topChips = withValues.take(3).map((t) => '${t['teamName']} value').toList();
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: [...topChips, 'Tournament favorites'],
+      resolvedIntent: intent,
+    );
+  }
+
+  Future<ChatResponse> _recentForm(ChatIntent intent) async {
+    final teamCode = intent.team;
+
+    if (teamCode == null) {
+      return ChatResponse(
+        text: "Which team's recent form would you like to see?",
+        suggestionChips: ['USA form', 'Argentina form', 'France form', 'Brazil form'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final teamName = _kb.getTeamName(teamCode) ?? teamCode;
+    final formData = _kb.getRecentForm(teamCode);
+    final formSummary = _kb.getRecentFormSummary(teamCode);
+
+    if (formData == null && formSummary == null) {
+      return ChatResponse(
+        text: "I don't have recent form data for $teamName.",
+        suggestionChips: ['$teamName schedule', '$teamName squad'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final buf = StringBuffer('$teamName — Recent Form:\n\n');
+    if (formSummary != null) {
+      buf.writeln(formSummary);
+      buf.writeln();
+    }
+
+    if (formData != null) {
+      final matches = (formData['recent_matches'] ?? formData['matches']) as List<dynamic>?;
+      if (matches != null && matches.isNotEmpty) {
+        buf.writeln('Recent results:');
+        for (final m in matches.take(5)) {
+          final match = m as Map<String, dynamic>;
+          final date = _formatDate(match['date'] as String? ?? '');
+          final opponent = match['opponent'] ?? '';
+          final score = match['score'] ?? '';
+          final result = match['result'] ?? '';
+          final venue = match['venue'] ?? '';
+          buf.writeln('  $result  $date: vs $opponent $score ($venue)');
+        }
+      }
+    }
+
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: ['$teamName schedule', '$teamName prediction', '$teamName injuries'],
+      resolvedIntent: intent,
+    );
+  }
+
+  Future<ChatResponse> _playerComparison(ChatIntent intent) async {
+    final player1Name = intent.player1;
+    final player2Name = intent.player2;
+
+    if (player1Name == null || player2Name == null) {
+      return ChatResponse(
+        text: "I need two player names to compare. Try \"Compare Messi and Mbappe\" "
+            "or \"Bellingham vs Kane\".",
+        suggestionChips: ['Compare Messi and Mbappe', 'Compare Kane and Haaland'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final stats1 = await _kb.getPlayerStats(player1Name);
+    final stats2 = await _kb.getPlayerStats(player2Name);
+    final squad1 = await _kb.searchPlayerInSquads(player1Name);
+    final squad2 = await _kb.searchPlayerInSquads(player2Name);
+
+    final name1 = stats1?['playerName'] ?? _capitalize(player1Name);
+    final name2 = stats2?['playerName'] ?? _capitalize(player2Name);
+
+    if (stats1 == null && squad1 == null && stats2 == null && squad2 == null) {
+      return ChatResponse(
+        text: "I couldn't find detailed data for both players. "
+            "Try well-known names like Messi, Mbappe, Kane, or Bellingham.",
+        suggestionChips: ['Messi stats', 'Mbappe stats'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final buf = StringBuffer('$name1 vs $name2 — Player Comparison:\n\n');
+
+    // WC career stats if available
+    if (stats1 != null || stats2 != null) {
+      buf.writeln('World Cup Career:');
+      if (stats1 != null) {
+        buf.writeln('  $name1: ${stats1['worldCupAppearances'] ?? 0} apps, '
+            '${stats1['worldCupGoals'] ?? 0} goals, ${stats1['worldCupAssists'] ?? 0} assists'
+            '${stats1['worldCupLegacyRating'] != null ? ' (legacy: ${stats1['worldCupLegacyRating']}/10)' : ''}');
+      }
+      if (stats2 != null) {
+        buf.writeln('  $name2: ${stats2['worldCupAppearances'] ?? 0} apps, '
+            '${stats2['worldCupGoals'] ?? 0} goals, ${stats2['worldCupAssists'] ?? 0} assists'
+            '${stats2['worldCupLegacyRating'] != null ? ' (legacy: ${stats2['worldCupLegacyRating']}/10)' : ''}');
+      }
+      buf.writeln();
+    }
+
+    // Club/squad info
+    if (squad1 != null || squad2 != null) {
+      buf.writeln('Current:');
+      if (squad1 != null) {
+        final p = squad1['player'] as Map<String, dynamic>;
+        buf.writeln('  $name1: ${p['club']} (${p['position']}) — '
+            '${p['caps']} caps, ${p['goals']} goals, \$${_formatNumber(p['marketValue'])}');
+      }
+      if (squad2 != null) {
+        final p = squad2['player'] as Map<String, dynamic>;
+        buf.writeln('  $name2: ${p['club']} (${p['position']}) — '
+            '${p['caps']} caps, ${p['goals']} goals, \$${_formatNumber(p['marketValue'])}');
+      }
+    }
+
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: ['$name1 stats', '$name2 stats'],
+      resolvedIntent: intent,
+    );
+  }
+
+  ChatResponse _countdown(ChatIntent intent) {
+    final now = DateTime.now();
+    final openingDay = DateTime(2026, 6, 11);
+    final finalDay = DateTime(2026, 7, 19);
+
+    if (now.isAfter(finalDay)) {
+      return ChatResponse(
+        text: "The 2026 World Cup has concluded! The final was held on July 19, 2026 "
+            "at MetLife Stadium in East Rutherford, New Jersey.",
+        suggestionChips: ['World Cup history', 'Tournament records'],
+        resolvedIntent: intent,
+      );
+    }
+
+    if (now.isAfter(openingDay)) {
+      final matchDay = now.difference(openingDay).inDays + 1;
+      return ChatResponse(
+        text: "The World Cup is underway! We are on day $matchDay of the tournament. "
+            "The final is on July 19 at MetLife Stadium.",
+        suggestionChips: ["Today's matches", 'Tournament standings', 'Group results'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final daysLeft = openingDay.difference(now).inDays;
+    final weeksLeft = daysLeft ~/ 7;
+    final remainingDays = daysLeft % 7;
+
+    final buf = StringBuffer('World Cup 2026 Countdown:\n\n');
+    buf.writeln('$daysLeft days to go! ($weeksLeft weeks and $remainingDays days)');
+    buf.writeln();
+    buf.writeln('Opening match: June 11, 2026');
+    buf.writeln('  Mexico vs South Africa at Estadio Azteca, Mexico City');
+    buf.writeln();
+    buf.writeln('Final: July 19, 2026');
+    buf.writeln('  MetLife Stadium, East Rutherford, New Jersey');
+    buf.writeln();
+    buf.writeln('48 teams | 104 matches | 16 host cities | 39 days of football');
+
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: ['USA schedule', 'Tournament favorites', 'Host cities'],
+      resolvedIntent: intent,
+    );
+  }
+
+  ChatResponse _tournamentFacts(ChatIntent intent) {
+    final buf = StringBuffer('World Cup 2026 — Tournament Facts:\n\n');
+    buf.writeln('Teams: 48 (expanded from 32 for the first time)');
+    buf.writeln('Groups: 12 groups of 4 teams');
+    buf.writeln('Matches: 104 total');
+    buf.writeln('Host countries: USA, Mexico, Canada (first tri-nation World Cup)');
+    buf.writeln('Host cities: 16 across 3 countries');
+    buf.writeln('Dates: June 11 - July 19, 2026');
+    buf.writeln('Opening match: Mexico vs South Africa, Estadio Azteca');
+    buf.writeln('Final: MetLife Stadium, East Rutherford, NJ');
+    buf.writeln();
+    buf.writeln('Format changes:');
+    buf.writeln('- Group stage: 3 matches per team (top 2 + best 3rd-place teams advance)');
+    buf.writeln('- Knockout: Round of 32, Round of 16, Quarterfinals, Semifinals, Final');
+    buf.writeln();
+    buf.writeln('Defending champion: Argentina (Qatar 2022)');
+
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: ['Host cities', 'Group A', 'Tournament favorites', 'World Cup history'],
+      resolvedIntent: intent,
+    );
+  }
+
   // ─── Helpers ──────────────────────────────────────────────────
+
+  /// Capitalize each word in a string.
+  String _capitalize(String s) {
+    if (s.isEmpty) return s;
+    return s.split(' ').map((word) =>
+        word.isEmpty ? word : '${word[0].toUpperCase()}${word.substring(1)}'
+    ).join(' ');
+  }
 
   /// Format a date string like "2026-06-11" to "Jun 11".
   String _formatDate(String isoDate) {
