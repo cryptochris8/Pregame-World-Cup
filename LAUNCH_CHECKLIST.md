@@ -5,7 +5,7 @@
 - **Target Success Probability**: 80-85%
 - **World Cup Start Date**: June 11, 2026
 - **Time Remaining**: ~3.5 months
-- **Last Updated**: February 24, 2026 (after Phases 1-5)
+- **Last Updated**: February 24, 2026 (after Phases 1-6)
 
 ---
 
@@ -181,7 +181,7 @@
 ## Infrastructure & Technical Debt
 
 ### Testing
-- [ ] Increase test coverage to 60%+ *(currently ~18%: 3,913 Flutter + 611 backend tests)*
+- [ ] Increase test coverage to 60%+ *(currently ~28%: 3,913 Flutter + 611 backend tests)*
 - [x] Add integration tests for critical paths (match_browsing_flow, predictions_flow)
 - [ ] Add E2E tests for main user flows
 - [x] Set up CI test automation (Codemagic: functions tests + flutter analyze + flutter test on every PR/push)
@@ -199,7 +199,9 @@
 - [ ] Penetration testing
 - [x] API rate limiting review (Phase 1: all 6 payment checkout functions rate-limited — 5 req/15min/user)
 - [x] Data encryption audit (Phase 1: Firestore rules hardened ~575 lines, Storage rules with size limits)
-- [ ] GDPR compliance check
+- [x] GDPR compliance: account deletion (Phase 6: deleteAccount cleans Firestore data + RevenueCat + Firebase Auth)
+- [x] Password reset flow (Phase 6: sendPasswordResetEmail + "Forgot password?" on login screen)
+- [x] Global error handler (Phase 6: runZonedGuarded + Crashlytics + friendly error screen in release mode)
 
 ### Backend
 - [ ] Load testing (simulate World Cup traffic)
@@ -260,7 +262,7 @@
 ## Notes
 
 - Token feature remains disabled pending legal review
-- Phases 1-5 completed (Feb 2026): security hardening, ~4,166 lines dead/legacy code removed, DI modularized, retry utils, AI service consolidation, widget refactoring
-- Current test coverage: ~18% (3,913 Flutter tests + 611 backend tests across 86 test files)
+- Phases 1-6 completed (Feb 2026): security hardening, auth hardening (password reset, account deletion, global error handler), ~5,366 lines dead/legacy code removed, DI modularized, retry utils, AI service consolidation, widget refactoring
+- Current test coverage: ~28% (3,913 Flutter tests + 611 backend tests across 86 test files)
 - Consider hiring additional developers for crunch time
 - Plan for 10x traffic during knockout rounds vs group stage

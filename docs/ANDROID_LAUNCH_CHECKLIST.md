@@ -2,7 +2,7 @@
 
 ## Current Status: ~72% Ready
 
-The Android build infrastructure is fully configured (signing, CI/CD, Firebase, ProGuard, native widget). What remains is store listing, in-app purchases, and RevenueCat integration. Phases 4-5 improved overall codebase quality (DI modularization, retry utils, dead code removal).
+The Android build infrastructure is fully configured (signing, CI/CD, Firebase, ProGuard, native widget). What remains is store listing, in-app purchases, and RevenueCat integration. Phases 4-6 improved overall codebase quality (DI modularization, retry utils, dead code removal, auth hardening with password reset + account deletion + global error handler).
 
 ---
 
@@ -19,6 +19,9 @@ The Android build infrastructure is fully configured (signing, CI/CD, Firebase, 
 - [x] Dart defines: All API keys injected via Codemagic vault at build time
 - [x] ProGuard keep rules updated (Phase 1 security hardening)
 - [x] All Cloud Functions rate-limited and retry-wrapped (Phase 4)
+- [x] Password reset flow (Phase 6)
+- [x] GDPR account deletion (Phase 6)
+- [x] Global error handler with Crashlytics (Phase 6)
 
 ---
 
@@ -90,7 +93,7 @@ The Android build infrastructure is fully configured (signing, CI/CD, Firebase, 
 
 ## Step 6: Pre-Launch Verification
 
-- [ ] Run full Flutter test suite (3,913 tests)
+- [ ] Run full Flutter test suite (3,913 tests, ~28% coverage)
 - [ ] Run full backend test suite (611 tests)
 - [ ] Run `flutter analyze` — zero errors/warnings
 - [ ] Verify Codemagic Android workflow produces clean AAB
