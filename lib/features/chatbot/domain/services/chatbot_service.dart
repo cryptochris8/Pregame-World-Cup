@@ -88,7 +88,7 @@ class ChatbotService {
 
   /// The welcome message shown when the chat first opens.
   static const String welcomeMessage =
-      "Hey! I'm the Pregame World Cup assistant. I know all about "
+      "Hey! I'm Copa, your World Cup 2026 sidekick. I know all about "
       "the 48 teams, 104 matches, players, odds, and World Cup history. "
       "What would you like to know?";
 

@@ -64,7 +64,7 @@ class ResponseGenerator {
 
   ChatResponse _greeting(ChatIntent intent) {
     return ChatResponse(
-      text: "Hey there! I'm your World Cup 2026 assistant. I know all about "
+      text: "Hey there! I'm Copa, your World Cup 2026 sidekick. I know all about "
           "the 48 teams, 104 matches, and 16 host cities. What would you like to know?",
       suggestionChips: ['USA schedule', 'Who are the favorites?', 'World Cup history', 'Help'],
       resolvedIntent: intent,
@@ -81,7 +81,7 @@ class ResponseGenerator {
 
   ChatResponse _appHelp(ChatIntent intent) {
     return ChatResponse(
-      text: "I can help you with:\n"
+      text: "I'm Copa, and I can help you with:\n"
           "- Match schedules and kickoff times\n"
           "- Team squads, managers, and tactics\n"
           "- Player stats, comparisons, and World Cup records\n"
@@ -833,9 +833,9 @@ class ResponseGenerator {
 
   ChatResponse _unknown(ChatIntent intent) {
     return ChatResponse(
-      text: "I'm not sure I understood that. I can help with match schedules, "
-          "team info, player stats, predictions, head-to-head records, "
-          "and World Cup history. What would you like to know?",
+      text: "Hmm, I'm not sure about that one. I'm Copa — I can help with "
+          "match schedules, team info, player stats, predictions, head-to-head "
+          "records, and World Cup history. What would you like to know?",
       suggestionChips: ['Help', 'USA schedule', 'Tournament favorites', 'World Cup records'],
       resolvedIntent: intent,
     );

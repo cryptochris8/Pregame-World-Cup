@@ -5,6 +5,7 @@ import '../../../../injection_container.dart';
 import '../../domain/entities/chat_message.dart';
 import '../bloc/chatbot_cubit.dart';
 import '../widgets/chat_message_list_item.dart';
+import '../widgets/copa_avatar.dart';
 import '../widgets/suggestion_chips.dart';
 
 class ChatScreen extends StatelessWidget {
@@ -166,11 +167,10 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             child: Row(
               children: [
-                Icon(Icons.smart_toy_outlined,
-                    color: Theme.of(context).colorScheme.primary),
+                const CopaAvatar(size: 28),
                 const SizedBox(width: 8),
                 const Expanded(
-                  child: Text('Pregame Assistant',
+                  child: Text('Copa',
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                 ),
                 IconButton(
@@ -189,7 +189,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pregame Assistant'),
+        title: const Text('Copa'),
         backgroundColor: Theme.of(context).colorScheme.primary,
         titleTextStyle: TextStyle(
           color: Theme.of(context).colorScheme.onPrimary,
@@ -231,7 +231,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
                     controller: _textController,
                     onSubmitted: isLoading ? null : _handleSubmitted,
                     decoration: const InputDecoration.collapsed(
-                      hintText: 'Ask about teams, matches, players...',
+                      hintText: 'Ask Copa about teams, matches, players...',
                     ),
                     enabled: !isLoading,
                   ),

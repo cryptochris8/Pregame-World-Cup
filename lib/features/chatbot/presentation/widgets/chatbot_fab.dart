@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
+import '../../../../config/app_theme.dart';
 import '../screens/chat_screen.dart';
+import 'copa_avatar.dart';
 
 /// Floating action button that opens the chatbot in a bottom sheet.
 class ChatbotFab extends StatelessWidget {
@@ -10,11 +13,8 @@ class ChatbotFab extends StatelessWidget {
     return FloatingActionButton(
       heroTag: 'chatbot_fab',
       onPressed: () => _openChatSheet(context),
-      backgroundColor: Theme.of(context).colorScheme.primary,
-      child: Icon(
-        Icons.smart_toy_outlined,
-        color: Theme.of(context).colorScheme.onPrimary,
-      ),
+      backgroundColor: AppTheme.accentGold,
+      child: const CopaAvatar(size: 28),
     );
   }
 
