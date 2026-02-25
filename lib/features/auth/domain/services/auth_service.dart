@@ -138,6 +138,82 @@ class AuthService {
     }
   }
 
+  // Send password reset email
+  Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await _firebaseAuth.sendPasswordResetEmail(email: email);
+      LoggingService.info('Password reset email sent to $email', tag: 'AuthService');
+    } on FirebaseAuthException catch (e) {
+      LoggingService.error('Error sending password reset email: ${e.message}', tag: 'AuthService');
+      throw Exception(e.message);
+    } catch (e) {
+      LoggingService.error('Error sending password reset email: $e', tag: 'AuthService');
+      throw Exception('Failed to send password reset email.');
+    }
+  }
+
+  // Delete user account and associated data
+  Future<void> deleteAccount() async {
+    final user = _firebaseAuth.currentUser;
+    if (user == null) {
+      throw Exception('No user signed in');
+    }
+
+    final uid = user.uid;
+    LoggingService.info('Starting account deletion for $uid', tag: 'AuthService');
+
+    try {
+      // 1. Delete user profile
+      try {
+        await _firestore.collection('users').doc(uid).delete();
+      } catch (e) {
+        LoggingService.warning('Error deleting user profile: $e', tag: 'AuthService');
+      }
+
+      // 2. Delete user favorites
+      try {
+        await _firestore.collection('userFavorites').doc(uid).delete();
+      } catch (e) {
+        LoggingService.warning('Error deleting user favorites: $e', tag: 'AuthService');
+      }
+
+      // 3. Delete user predictions (query + batch delete)
+      try {
+        final predictionsQuery = await _firestore
+            .collection('user_predictions')
+            .where('userId', isEqualTo: uid)
+            .get();
+        if (predictionsQuery.docs.isNotEmpty) {
+          final batch = _firestore.batch();
+          for (final doc in predictionsQuery.docs) {
+            batch.delete(doc.reference);
+          }
+          await batch.commit();
+        }
+      } catch (e) {
+        LoggingService.warning('Error deleting user predictions: $e', tag: 'AuthService');
+      }
+
+      // 4. Logout from RevenueCat
+      try {
+        await RevenueCatService().logoutUser();
+      } catch (e) {
+        LoggingService.warning('RevenueCat logout failed during deletion: $e', tag: 'AuthService');
+      }
+
+      // 5. Delete Firebase Auth account
+      await user.delete();
+      LoggingService.info('Account deleted for $uid', tag: 'AuthService');
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'requires-recent-login') {
+        LoggingService.warning('Account deletion requires recent login', tag: 'AuthService');
+        rethrow;
+      }
+      LoggingService.error('Error deleting account: ${e.message}', tag: 'AuthService');
+      rethrow;
+    }
+  }
+
   // Development helper: Create or sign in test user
   Future<UserCredential?> createOrSignInTestUser() async {
     const testEmail = 'test@pregame.dev';

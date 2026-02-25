@@ -2517,4 +2517,50 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get claimThisVenue => 'Claim This Venue';
+
+  @override
+  String get forgotPassword => 'Forgot password?';
+
+  @override
+  String get resetPasswordSent =>
+      'Password reset email sent. Check your inbox.';
+
+  @override
+  String get resetPasswordError =>
+      'Could not send reset email. Please check the address and try again.';
+
+  @override
+  String get enterEmailForReset =>
+      'Enter your email address and we\'ll send you a link to reset your password.';
+
+  @override
+  String get send => 'Send';
+
+  @override
+  String get deleteAccountConfirmTitle => 'Delete Account';
+
+  @override
+  String get deleteAccountConfirmMessage =>
+      'This will permanently delete your account and all associated data. This action cannot be undone. Type DELETE to confirm.';
+
+  @override
+  String get deleteAccountRequiresRecentLogin =>
+      'For security, please sign out and sign back in before deleting your account.';
+
+  @override
+  String get deleteAccountSuccess => 'Your account has been deleted.';
+
+  @override
+  String get deleteAccountError =>
+      'Could not delete account. Please try again.';
+
+  @override
+  String get typeDeleteToConfirm => 'Type DELETE to confirm';
+
+  @override
+  String get somethingWentWrong => 'Something went wrong';
+
+  @override
+  String get unexpectedErrorMessage =>
+      'An unexpected error occurred. Please restart the app.';
 }

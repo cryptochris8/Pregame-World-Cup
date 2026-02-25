@@ -811,5 +811,18 @@
   "venueAuthorizationConfirm": "Confirmo que estoy autorizado para gestionar este local y representar al negocio en esta aplicación.",
   "venueOnboardingStep3Title": "Revisar y Reclamar",
   "venueOnboardingStep3Desc": "Revisa tu información y reclama el local para comenzar a gestionarlo.",
-  "claimThisVenue": "Reclamar Este Local"
+  "claimThisVenue": "Reclamar Este Local",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "resetPasswordSent": "Correo de restablecimiento enviado. Revisa tu bandeja de entrada.",
+  "resetPasswordError": "No se pudo enviar el correo. Verifica la dirección e intenta de nuevo.",
+  "enterEmailForReset": "Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.",
+  "send": "Enviar",
+  "deleteAccountConfirmTitle": "Eliminar Cuenta",
+  "deleteAccountConfirmMessage": "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer. Escribe DELETE para confirmar.",
+  "deleteAccountRequiresRecentLogin": "Por seguridad, cierra sesión y vuelve a iniciar sesión antes de eliminar tu cuenta.",
+  "deleteAccountSuccess": "Tu cuenta ha sido eliminada.",
+  "deleteAccountError": "No se pudo eliminar la cuenta. Inténtalo de nuevo.",
+  "typeDeleteToConfirm": "Escribe DELETE para confirmar",
+  "somethingWentWrong": "Algo salió mal",
+  "unexpectedErrorMessage": "Ocurrió un error inesperado. Por favor reinicia la aplicación."
 }

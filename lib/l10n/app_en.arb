@@ -3356,5 +3356,58 @@
   "claimThisVenue": "Claim This Venue",
   "@claimThisVenue": {
     "description": "Button to finalize venue claim"
+  },
+
+  "forgotPassword": "Forgot password?",
+  "@forgotPassword": {
+    "description": "Link on login screen to reset password"
+  },
+  "resetPasswordSent": "Password reset email sent. Check your inbox.",
+  "@resetPasswordSent": {
+    "description": "Success message after sending password reset email"
+  },
+  "resetPasswordError": "Could not send reset email. Please check the address and try again.",
+  "@resetPasswordError": {
+    "description": "Error message when password reset fails"
+  },
+  "enterEmailForReset": "Enter your email address and we'll send you a link to reset your password.",
+  "@enterEmailForReset": {
+    "description": "Instructions in the forgot password dialog"
+  },
+  "send": "Send",
+  "@send": {
+    "description": "Generic send button label"
+  },
+  "deleteAccountConfirmTitle": "Delete Account",
+  "@deleteAccountConfirmTitle": {
+    "description": "Title for account deletion confirmation dialog"
+  },
+  "deleteAccountConfirmMessage": "This will permanently delete your account and all associated data. This action cannot be undone. Type DELETE to confirm.",
+  "@deleteAccountConfirmMessage": {
+    "description": "Warning message in account deletion dialog"
+  },
+  "deleteAccountRequiresRecentLogin": "For security, please sign out and sign back in before deleting your account.",
+  "@deleteAccountRequiresRecentLogin": {
+    "description": "Message when deletion requires recent login"
+  },
+  "deleteAccountSuccess": "Your account has been deleted.",
+  "@deleteAccountSuccess": {
+    "description": "Message after successful account deletion"
+  },
+  "deleteAccountError": "Could not delete account. Please try again.",
+  "@deleteAccountError": {
+    "description": "Error message when account deletion fails"
+  },
+  "typeDeleteToConfirm": "Type DELETE to confirm",
+  "@typeDeleteToConfirm": {
+    "description": "Hint text for deletion confirmation input"
+  },
+  "somethingWentWrong": "Something went wrong",
+  "@somethingWentWrong": {
+    "description": "Generic error title for error boundary screen"
+  },
+  "unexpectedErrorMessage": "An unexpected error occurred. Please restart the app.",
+  "@unexpectedErrorMessage": {
+    "description": "Generic error message for error boundary screen"
   }
 }

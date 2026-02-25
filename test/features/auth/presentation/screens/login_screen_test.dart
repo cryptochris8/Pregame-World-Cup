@@ -49,12 +49,25 @@ void main() {
     );
   }
 
+  /// Helper to tap the submit button (Sign In / Create Account).
+  /// Uses ensureVisible because the button may be below the viewport.
+  Future<void> tapSubmitButton(WidgetTester tester, String buttonText) async {
+    final button = find.text(buttonText);
+    await tester.ensureVisible(button);
+    await tester.pumpAndSettle();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+  }
+
   /// Helper to tap the mode-switch TextButton (which contains RichText).
   /// In login mode it says "Don't have an account? Sign Up"
   /// In signup mode it says "Already have an account? Sign In"
   /// Uses ensureVisible to scroll the button into view before tapping.
   Future<void> tapModeSwitchButton(WidgetTester tester) async {
-    final textButton = find.byType(TextButton);
+    // Find the TextButton that contains RichText (mode switch), not the "Forgot password?" button
+    final textButton = find.byWidgetPredicate(
+      (widget) => widget is TextButton && widget.child is RichText,
+    );
     expect(textButton, findsOneWidget);
     await tester.ensureVisible(textButton);
     await tester.pumpAndSettle();
@@ -123,8 +136,8 @@ void main() {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
 
-      // The TextButton is the switch-mode button with RichText inside
-      expect(find.byType(TextButton), findsOneWidget);
+      // In login mode: "Forgot password?" + mode switch = 2 TextButtons
+      expect(find.byType(TextButton), findsNWidgets(2));
     });
 
     testWidgets('renders email icon', (tester) async {
@@ -223,8 +236,7 @@ void main() {
       await tester.enterText(passwordField, 'password123');
 
       // Tap Sign In button
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Please enter a valid email'), findsOneWidget);
     });
@@ -239,8 +251,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Please enter a valid email'), findsOneWidget);
     });
@@ -252,8 +263,7 @@ void main() {
       final emailField = find.byType(TextFormField).first;
       await tester.enterText(emailField, 'test@example.com');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(
           find.text('Password must be at least 6 characters'), findsOneWidget);
@@ -269,8 +279,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, '12345');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(
           find.text('Password must be at least 6 characters'), findsOneWidget);
@@ -292,8 +301,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Please enter a valid email'), findsNothing);
       expect(find.text('Password must be at least 6 characters'), findsNothing);
@@ -314,8 +322,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Please enter a valid email'), findsNothing);
     });
@@ -335,8 +342,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, '123456');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Password must be at least 6 characters'), findsNothing);
     });
@@ -347,8 +353,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Leave both fields empty and submit
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Please enter a valid email'), findsOneWidget);
       expect(
@@ -373,8 +378,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       verify(() => mockAuthService.signInWithEmailAndPassword(
             email: 'test@example.com',
@@ -401,8 +405,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Create Account'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Create Account');
 
       verify(() => mockAuthService.signUpWithEmailAndPassword(
             email: 'new@example.com',
@@ -425,8 +428,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Invalid credentials'), findsOneWidget);
     });
@@ -449,8 +451,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Create Account'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Create Account');
 
       expect(find.text('Email already in use'), findsOneWidget);
     });
@@ -470,8 +471,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.byIcon(Icons.error_outline), findsOneWidget);
     });
@@ -494,6 +494,8 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
+      await tester.ensureVisible(find.text('Sign In'));
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Sign In'));
       await tester.pump();
 
@@ -519,8 +521,7 @@ void main() {
       await tester.enterText(emailField, 'test@example.com');
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       expect(find.text('Some error'), findsOneWidget);
 
@@ -545,8 +546,7 @@ void main() {
       final passwordField = find.byType(TextFormField).last;
       await tester.enterText(passwordField, 'password123');
 
-      await tester.tap(find.text('Sign In'));
-      await tester.pumpAndSettle();
+      await tapSubmitButton(tester, 'Sign In');
 
       verify(() => mockAuthService.signInWithEmailAndPassword(
             email: 'test@example.com',
@@ -595,11 +595,12 @@ void main() {
       expect(find.byType(ElevatedButton), findsOneWidget);
     });
 
-    testWidgets('has a TextButton for mode switching', (tester) async {
+    testWidgets('has TextButtons for mode switching and forgot password', (tester) async {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
 
-      expect(find.byType(TextButton), findsOneWidget);
+      // In login mode: "Forgot password?" + mode switch = 2 TextButtons
+      expect(find.byType(TextButton), findsNWidgets(2));
     });
   });
 }

@@ -811,5 +811,18 @@
   "venueAuthorizationConfirm": "Je confirme que je suis autorisé à gérer ce lieu et à représenter l'entreprise dans cette application.",
   "venueOnboardingStep3Title": "Vérifier et Revendiquer",
   "venueOnboardingStep3Desc": "Vérifiez vos informations et revendiquez le lieu pour commencer à le gérer.",
-  "claimThisVenue": "Revendiquer Ce Lieu"
+  "claimThisVenue": "Revendiquer Ce Lieu",
+  "forgotPassword": "Mot de passe oublié ?",
+  "resetPasswordSent": "E-mail de réinitialisation envoyé. Vérifiez votre boîte de réception.",
+  "resetPasswordError": "Impossible d'envoyer l'e-mail. Vérifiez l'adresse et réessayez.",
+  "enterEmailForReset": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+  "send": "Envoyer",
+  "deleteAccountConfirmTitle": "Supprimer le Compte",
+  "deleteAccountConfirmMessage": "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible. Tapez DELETE pour confirmer.",
+  "deleteAccountRequiresRecentLogin": "Par sécurité, veuillez vous déconnecter et vous reconnecter avant de supprimer votre compte.",
+  "deleteAccountSuccess": "Votre compte a été supprimé.",
+  "deleteAccountError": "Impossible de supprimer le compte. Veuillez réessayer.",
+  "typeDeleteToConfirm": "Tapez DELETE pour confirmer",
+  "somethingWentWrong": "Quelque chose s'est mal passé",
+  "unexpectedErrorMessage": "Une erreur inattendue s'est produite. Veuillez redémarrer l'application."
 }

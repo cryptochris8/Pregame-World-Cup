@@ -811,5 +811,18 @@
   "venueAuthorizationConfirm": "Confirmo que estou autorizado a gerenciar este local e representar o negócio neste aplicativo.",
   "venueOnboardingStep3Title": "Revisar e Reivindicar",
   "venueOnboardingStep3Desc": "Revise suas informações e reivindique o local para começar a gerenciá-lo.",
-  "claimThisVenue": "Reivindicar Este Local"
+  "claimThisVenue": "Reivindicar Este Local",
+  "forgotPassword": "Esqueceu a senha?",
+  "resetPasswordSent": "E-mail de redefinição enviado. Verifique sua caixa de entrada.",
+  "resetPasswordError": "Não foi possível enviar o e-mail. Verifique o endereço e tente novamente.",
+  "enterEmailForReset": "Digite seu endereço de e-mail e enviaremos um link para redefinir sua senha.",
+  "send": "Enviar",
+  "deleteAccountConfirmTitle": "Excluir Conta",
+  "deleteAccountConfirmMessage": "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita. Digite DELETE para confirmar.",
+  "deleteAccountRequiresRecentLogin": "Por segurança, saia e faça login novamente antes de excluir sua conta.",
+  "deleteAccountSuccess": "Sua conta foi excluída.",
+  "deleteAccountError": "Não foi possível excluir a conta. Tente novamente.",
+  "typeDeleteToConfirm": "Digite DELETE para confirmar",
+  "somethingWentWrong": "Algo deu errado",
+  "unexpectedErrorMessage": "Ocorreu um erro inesperado. Por favor, reinicie o aplicativo."
 }

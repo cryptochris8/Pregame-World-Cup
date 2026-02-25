@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import '../../../../core/services/game_prediction_service.dart';
 import '../../domain/entities/game_schedule.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/ai/services/ai_team_season_summary_service.dart';
@@ -15,7 +14,6 @@ class AIInsightsAnalysisHelper {
   final GameSchedule game;
 
   late final AITeamSeasonSummaryService seasonSummaryService;
-  late final GamePredictionService gamePredictionService;
   late final EnhancedAIGameAnalysisService enhancedAnalysisService;
 
   // Data state
@@ -36,7 +34,6 @@ class AIInsightsAnalysisHelper {
   String? initializeServices() {
     try {
       seasonSummaryService = sl<AITeamSeasonSummaryService>();
-      gamePredictionService = GamePredictionService();
       enhancedAnalysisService = sl<EnhancedAIGameAnalysisService>();
       return null;
     } catch (e, stack) {

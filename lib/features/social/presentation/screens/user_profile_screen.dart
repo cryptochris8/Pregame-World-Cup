@@ -85,6 +85,100 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     }
   }
 
+  Future<void> _showDeleteAccountDialog() async {
+    final confirmController = TextEditingController();
+    final l10n = AppLocalizations.of(context);
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          backgroundColor: AppTheme.backgroundCard,
+          title: Text(
+            l10n.deleteAccountConfirmTitle,
+            style: const TextStyle(color: Colors.red),
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                l10n.deleteAccountConfirmMessage,
+                style: TextStyle(color: Colors.white.withValues(alpha: 0.8)),
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: confirmController,
+                style: const TextStyle(color: Colors.white),
+                decoration: InputDecoration(
+                  hintText: l10n.typeDeleteToConfirm,
+                  hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.4)),
+                  filled: true,
+                  fillColor: AppTheme.backgroundElevated,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: Text(l10n.cancel, style: const TextStyle(color: Colors.white70)),
+            ),
+            TextButton(
+              onPressed: () {
+                if (confirmController.text.trim() == 'DELETE') {
+                  Navigator.pop(context, true);
+                }
+              },
+              child: Text(
+                l10n.deleteAccount,
+                style: const TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+
+    confirmController.dispose();
+
+    if (confirmed == true && mounted) {
+      try {
+        await _authService.deleteAccount();
+        // Auth state change will redirect to login
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'requires-recent-login' && mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(l10n.deleteAccountRequiresRecentLogin),
+              backgroundColor: Colors.orange.shade700,
+            ),
+          );
+        } else if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(l10n.deleteAccountError),
+              backgroundColor: Colors.red.shade700,
+            ),
+          );
+        }
+      } catch (e) {
+        LoggingService.error('Error deleting account: $e', tag: 'UserProfileScreen');
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(l10n.deleteAccountError),
+              backgroundColor: Colors.red.shade700,
+            ),
+          );
+        }
+      }
+    }
+  }
+
   Future<void> _signOut() async {
     try {
       await _authService.signOut();
@@ -442,6 +536,19 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             AppLocalizations.of(context).achievementsDesc,
             Icons.emoji_events,
           ),
+
+          // Delete Account (current user only)
+          if (_isCurrentUser) ...[
+            const SizedBox(height: 32),
+            TextButton.icon(
+              onPressed: _showDeleteAccountDialog,
+              icon: const Icon(Icons.delete_forever, color: Colors.red),
+              label: Text(
+                AppLocalizations.of(context).deleteAccount,
+                style: const TextStyle(color: Colors.red),
+              ),
+            ),
+          ],
         ],
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -43,6 +44,43 @@ class _PregameAppContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final accessibilitySettings = AccessibilityProvider.settingsOf(context);
+
+    // In release mode, show a friendly error screen instead of red/white crash screen
+    if (!kDebugMode) {
+      ErrorWidget.builder = (FlutterErrorDetails details) {
+        return Container(
+          color: const Color(0xFF0F172A),
+          alignment: Alignment.center,
+          padding: const EdgeInsets.all(32),
+          child: const Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.error_outline, color: Colors.orange, size: 64),
+              SizedBox(height: 16),
+              Text(
+                'Something went wrong',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+              SizedBox(height: 8),
+              Text(
+                'An unexpected error occurred. Please restart the app.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontSize: 14,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ],
+          ),
+        );
+      };
+    }
 
     return MaterialApp(
       title: 'Pregame',

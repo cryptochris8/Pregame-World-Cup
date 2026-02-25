@@ -2559,4 +2559,50 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get claimThisVenue => 'Revendiquer Ce Lieu';
+
+  @override
+  String get forgotPassword => 'Mot de passe oublié ?';
+
+  @override
+  String get resetPasswordSent =>
+      'E-mail de réinitialisation envoyé. Vérifiez votre boîte de réception.';
+
+  @override
+  String get resetPasswordError =>
+      'Impossible d\'envoyer l\'e-mail. Vérifiez l\'adresse et réessayez.';
+
+  @override
+  String get enterEmailForReset =>
+      'Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.';
+
+  @override
+  String get send => 'Envoyer';
+
+  @override
+  String get deleteAccountConfirmTitle => 'Supprimer le Compte';
+
+  @override
+  String get deleteAccountConfirmMessage =>
+      'Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible. Tapez DELETE pour confirmer.';
+
+  @override
+  String get deleteAccountRequiresRecentLogin =>
+      'Par sécurité, veuillez vous déconnecter et vous reconnecter avant de supprimer votre compte.';
+
+  @override
+  String get deleteAccountSuccess => 'Votre compte a été supprimé.';
+
+  @override
+  String get deleteAccountError =>
+      'Impossible de supprimer le compte. Veuillez réessayer.';
+
+  @override
+  String get typeDeleteToConfirm => 'Tapez DELETE pour confirmer';
+
+  @override
+  String get somethingWentWrong => 'Quelque chose s\'est mal passé';
+
+  @override
+  String get unexpectedErrorMessage =>
+      'Une erreur inattendue s\'est produite. Veuillez redémarrer l\'application.';
 }

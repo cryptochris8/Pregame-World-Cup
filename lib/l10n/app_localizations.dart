@@ -4709,6 +4709,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Claim This Venue'**
   String get claimThisVenue;
+
+  /// Link on login screen to reset password
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot password?'**
+  String get forgotPassword;
+
+  /// Success message after sending password reset email
+  ///
+  /// In en, this message translates to:
+  /// **'Password reset email sent. Check your inbox.'**
+  String get resetPasswordSent;
+
+  /// Error message when password reset fails
+  ///
+  /// In en, this message translates to:
+  /// **'Could not send reset email. Please check the address and try again.'**
+  String get resetPasswordError;
+
+  /// Instructions in the forgot password dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email address and we\'ll send you a link to reset your password.'**
+  String get enterEmailForReset;
+
+  /// Generic send button label
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get send;
+
+  /// Title for account deletion confirmation dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Account'**
+  String get deleteAccountConfirmTitle;
+
+  /// Warning message in account deletion dialog
+  ///
+  /// In en, this message translates to:
+  /// **'This will permanently delete your account and all associated data. This action cannot be undone. Type DELETE to confirm.'**
+  String get deleteAccountConfirmMessage;
+
+  /// Message when deletion requires recent login
+  ///
+  /// In en, this message translates to:
+  /// **'For security, please sign out and sign back in before deleting your account.'**
+  String get deleteAccountRequiresRecentLogin;
+
+  /// Message after successful account deletion
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been deleted.'**
+  String get deleteAccountSuccess;
+
+  /// Error message when account deletion fails
+  ///
+  /// In en, this message translates to:
+  /// **'Could not delete account. Please try again.'**
+  String get deleteAccountError;
+
+  /// Hint text for deletion confirmation input
+  ///
+  /// In en, this message translates to:
+  /// **'Type DELETE to confirm'**
+  String get typeDeleteToConfirm;
+
+  /// Generic error title for error boundary screen
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong'**
+  String get somethingWentWrong;
+
+  /// Generic error message for error boundary screen
+  ///
+  /// In en, this message translates to:
+  /// **'An unexpected error occurred. Please restart the app.'**
+  String get unexpectedErrorMessage;
 }
 
 class _AppLocalizationsDelegate
