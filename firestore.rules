@@ -508,7 +508,7 @@ service cloud.firestore {
 
     // User sanctions - own read, admin write
     match /user_sanctions/{sanctionId} {
-      allow read: if isAuth() && request.auth.uid == resource.data.usualId;
+      allow read: if isAuth() && request.auth.uid == resource.data.userId;
       allow read, write: if isAdmin();
     }
 
