@@ -10,8 +10,10 @@
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
 import axios from "axios";
+import express from "express";
 import * as functionsV1 from "firebase-functions/v1";
 import { checkRateLimit, RATE_LIMITS, cleanupExpiredRateLimits } from './rate-limiter';
+import { cleanupExpiredWebhookEvents } from './stripe-config';
 
 // Initialize Firebase Admin SDK
 admin.initializeApp();
@@ -22,6 +24,30 @@ functions.logger.info("Firestore instance obtained. Project ID from Admin SDK co
 // Google Places API key (set in .env.{project-id} or Cloud Functions environment)
 const PLACES_API_KEY = process.env.PLACES_API_KEY;
 
+/**
+ * Verify Firebase Auth ID token from Authorization header.
+ * Returns the decoded token if valid, or null if missing/invalid.
+ * Writes a 401 response when auth fails.
+ */
+async function verifyAuthToken(
+  request: functions.https.Request,
+  response: express.Response
+): Promise<admin.auth.DecodedIdToken | null> {
+  const authHeader = request.headers.authorization;
+  if (!authHeader?.startsWith('Bearer ')) {
+    response.status(401).json({ error: 'Missing or invalid Authorization header' });
+    return null;
+  }
+
+  try {
+    const token = authHeader.split('Bearer ')[1];
+    return await admin.auth().verifyIdToken(token);
+  } catch {
+    response.status(401).json({ error: 'Invalid or expired auth token' });
+    return null;
+  }
+}
+
 if (!PLACES_API_KEY) {
   functions.logger.warn("PLACES_API_KEY not configured. getNearbyVenuesHttp and placePhotoProxy will be unavailable.");
 }
@@ -31,13 +57,17 @@ export const getNearbyVenuesHttp = functions.https.onRequest(async (request, res
   // Set CORS headers
   response.set('Access-Control-Allow-Origin', '*');
   response.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  response.set('Access-Control-Allow-Headers', 'Content-Type');
+  response.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
   // Handle preflight OPTIONS request
   if (request.method === 'OPTIONS') {
     response.status(204).send('');
     return;
   }
+
+  // Verify Firebase Auth token
+  const decodedToken = await verifyAuthToken(request, response);
+  if (!decodedToken) return;
 
   if (!(await checkRateLimit(request, response, 'getNearbyVenuesHttp', RATE_LIMITS.VENUE))) return;
 
@@ -136,6 +166,10 @@ export const placePhotoProxy = functionsV1.https.onRequest(async (request, respo
     return;
   }
 
+  // Note: No auth check here -- this endpoint is used as an image URL in
+  // Image.network() which cannot send Authorization headers. Rate limiting
+  // and the fact that it only proxies public Google photos provide sufficient
+  // protection.
   if (!(await checkRateLimit(request, response, 'placePhotoProxy', RATE_LIMITS.VENUE))) return;
 
   const photoReference = request.query.photoReference?.toString();
@@ -173,13 +207,14 @@ export const placePhotoProxy = functionsV1.https.onRequest(async (request, respo
   }
 });
 
-// Scheduled cleanup for rate limit documents (runs daily)
+// Scheduled cleanup for rate limit and webhook event documents (runs daily at 3 AM EST)
 export const cleanupRateLimits = functionsV1.pubsub.schedule('0 3 * * *')
   .timeZone('America/New_York')
   .onRun(async () => {
-    functions.logger.info('Running scheduled rate limit cleanup');
-    const deleted = await cleanupExpiredRateLimits();
-    functions.logger.info('Rate limit cleanup complete, deleted ' + deleted + ' documents');
+    functions.logger.info('Running scheduled cleanup');
+    const rateLimitDeleted = await cleanupExpiredRateLimits();
+    const webhookEventsDeleted = await cleanupExpiredWebhookEvents();
+    functions.logger.info(`Cleanup complete: ${rateLimitDeleted} rate limits, ${webhookEventsDeleted} webhook events deleted`);
     return null;
   });
 

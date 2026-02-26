@@ -92,7 +92,10 @@ export async function withRetry<T>(
         { error: error.message || error.code },
       );
 
-      await sleep(delay);
+      // Add jitter (±25%) to prevent thundering herd when multiple
+      // instances retry simultaneously after a shared dependency recovers.
+      const jitter = delay * (0.75 + Math.random() * 0.5);
+      await sleep(jitter);
       delay = Math.min(delay * cfg.backoffMultiplier, cfg.maxDelayMs);
     }
   }

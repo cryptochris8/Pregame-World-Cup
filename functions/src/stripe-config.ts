@@ -75,11 +75,50 @@ export async function isWebhookEventAlreadyProcessed(eventId: string): Promise<b
 
 /**
  * Mark a webhook event as processed to prevent duplicate handling.
+ * Sets an expiresAt field 30 days in the future for TTL cleanup.
  */
 export async function markWebhookEventProcessed(eventId: string, eventType: string): Promise<void> {
+  const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000); // 30 days
   await getDb().collection('processed_webhook_events').doc(eventId).set({
     eventId,
     eventType,
     processedAt: admin.firestore.FieldValue.serverTimestamp(),
+    expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
   });
+}
+
+/**
+ * Cleanup expired processed webhook event records.
+ * Safety net in case Firestore TTL policy is not configured on the
+ * expiresAt field. Deletes in batches of 400 to stay within limits.
+ */
+export async function cleanupExpiredWebhookEvents(): Promise<number> {
+  const db = getDb();
+  const now = admin.firestore.Timestamp.now();
+  let totalDeleted = 0;
+
+  let hasMore = true;
+  while (hasMore) {
+    const expired = await db
+      .collection('processed_webhook_events')
+      .where('expiresAt', '<=', now)
+      .limit(400)
+      .get();
+
+    if (expired.empty) {
+      hasMore = false;
+      break;
+    }
+
+    const batch = db.batch();
+    expired.docs.forEach((doc) => batch.delete(doc.ref));
+    await batch.commit();
+    totalDeleted += expired.size;
+
+    if (expired.size < 400) {
+      hasMore = false;
+    }
+  }
+
+  return totalDeleted;
 }

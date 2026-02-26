@@ -1,7 +1,6 @@
 import '../../domain/entities/place.dart'; // Corrected import path
 import 'package:dio/dio.dart';
-// For Dio instance
-// For centralized API configuration
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/services/logging_service.dart';
 
 
@@ -202,9 +201,14 @@ class PlacesApiDataSource {
     const String functionUrl = '$_cloudFunctionBaseUrl/getNearbyVenuesHttp';
 
     try {
+      // Send Firebase Auth token for authenticated Cloud Function access
+      final idToken = await FirebaseAuth.instance.currentUser?.getIdToken();
       final response = await _dio.get(
         functionUrl,
         queryParameters: queryParameters,
+        options: idToken != null
+            ? Options(headers: {'Authorization': 'Bearer $idToken'})
+            : null,
       );
 
       if (response.statusCode == 200 && response.data is List) {
