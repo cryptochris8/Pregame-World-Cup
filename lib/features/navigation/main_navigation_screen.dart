@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -37,6 +39,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
   final MessagingService _messagingService = MessagingService();
   int _unreadNotifications = 0;
   int _unreadMessages = 0;
+  StreamSubscription<int>? _notificationSubscription;
+  StreamSubscription<List<dynamic>>? _chatsSubscription;
 
   late final List<Widget> _screens;
   late AnimationController _navigationController;
@@ -85,6 +89,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
 
   @override
   void dispose() {
+    _notificationSubscription?.cancel();
+    _chatsSubscription?.cancel();
     _pageController.dispose();
     _navigationController.dispose();
     for (final controller in _tabControllers) {
@@ -127,7 +133,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null || !mounted) return;
 
-    _notificationService.getUnreadCount(currentUser.uid).listen((count) {
+    _notificationSubscription = _notificationService.getUnreadCount(currentUser.uid).listen((count) {
       if (mounted) {
         setState(() {
           _unreadNotifications = count;
@@ -135,7 +141,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       }
     });
 
-    _messagingService.chatsStream.listen((chats) {
+    _chatsSubscription = _messagingService.chatsStream.listen((chats) {
       if (mounted) {
         final totalUnread = chats.fold<int>(
           0,

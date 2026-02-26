@@ -27,7 +27,7 @@ import 'features/worldcup/utils/timezone_utils.dart';
 /// DIAGNOSTIC MODE
 /// Automatically disabled in release builds for App Store compliance
 /// Set to true during development for detailed logging
-const bool _diagnosticModeOverride = true;
+const bool _diagnosticModeOverride = false;
 // ignore: non_constant_identifier_names
 bool get DIAGNOSTIC_MODE => kDebugMode && _diagnosticModeOverride;
 
