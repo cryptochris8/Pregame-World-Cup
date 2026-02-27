@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../config/app_theme.dart';
 import '../../domain/models/manager.dart';
 import '../widgets/manager_photo.dart';
 
@@ -16,7 +17,9 @@ class ManagerDetailScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(manager.commonName),
       ),
-      body: SingleChildScrollView(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -195,6 +198,7 @@ class ManagerDetailScreen extends StatelessWidget {
             const SizedBox(height: 16),
           ],
         ),
+      ),
       ),
     );
   }

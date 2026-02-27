@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../config/app_theme.dart';
 import '../../l10n/app_localizations.dart';
 import '../../domain/models/player.dart';
 import '../../data/services/player_service.dart';
@@ -340,7 +341,9 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
           ),
         ],
       ),
-      body: Column(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: Column(
         children: [
           // Search bar
           Padding(
@@ -451,6 +454,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
                       ),
           ),
         ],
+      ),
       ),
     );
   }

@@ -20,7 +20,9 @@ class PlayerDetailScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(player.commonName),
       ),
-      body: SingleChildScrollView(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -126,6 +128,7 @@ class PlayerDetailScreen extends StatelessWidget {
             const SizedBox(height: 16),
           ],
         ),
+      ),
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../config/app_theme.dart';
 import '../../domain/models/manager.dart';
 import '../../data/services/manager_service.dart';
 import '../widgets/manager_card.dart';
@@ -241,7 +242,9 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
           ),
         ],
       ),
-      body: Column(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: Column(
         children: [
           // Search bar
           Padding(
@@ -346,6 +349,7 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
                       ),
           ),
         ],
+      ),
       ),
     );
   }
