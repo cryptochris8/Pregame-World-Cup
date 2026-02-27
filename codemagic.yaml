@@ -156,6 +156,12 @@ workflows:
         script: |
           flutter packages pub get
 
+      - name: Run Flutter Analyze
+        script: |
+          echo "🔍 Running Flutter analyze..."
+          flutter analyze --no-fatal-infos
+          echo "✅ Flutter analysis complete"
+
       - name: Run Flutter Tests
         script: |
           echo "🧪 Running Flutter tests..."
@@ -251,6 +257,12 @@ workflows:
       - name: Get Flutter packages
         script: |
           flutter packages pub get
+
+      - name: Run Flutter Analyze
+        script: |
+          echo "🔍 Running Flutter analyze..."
+          flutter analyze --no-fatal-infos
+          echo "✅ Flutter analysis complete"
 
       - name: Run Flutter Tests
         script: |

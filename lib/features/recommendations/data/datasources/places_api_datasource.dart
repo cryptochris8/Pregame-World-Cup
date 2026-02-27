@@ -2,17 +2,18 @@ import '../../domain/entities/place.dart'; // Corrected import path
 import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../../config/api_keys.dart';
 
 
 /// Data source for fetching places data from Google Places API
 class PlacesApiDataSource {
   final String _googleApiKey;
   final Dio _dio;
-  
+
   static const String _baseUrl = 'https://maps.googleapis.com/maps/api';
   static const String _placesBaseUrl = '$_baseUrl/place/nearbysearch/json';
   static const String _geocodingBaseUrl = '$_baseUrl/geocode/json';
-  static const String _cloudFunctionBaseUrl = 'https://us-central1-pregame-b089e.cloudfunctions.net';
+  static const String _cloudFunctionBaseUrl = ApiKeys.cloudFunctionsBaseUrl;
   
   PlacesApiDataSource({required String googleApiKey}) 
     : _googleApiKey = googleApiKey,

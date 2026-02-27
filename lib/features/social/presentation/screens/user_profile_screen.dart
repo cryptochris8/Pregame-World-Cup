@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../domain/entities/user_profile.dart';
 import '../../domain/services/social_service.dart';
 import '../../../../injection_container.dart';
@@ -537,9 +538,53 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             Icons.emoji_events,
           ),
 
+          // Legal links (Privacy Policy & Terms of Service)
+          if (_isCurrentUser) ...[
+            const SizedBox(height: 24),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  onPressed: () => launchUrl(
+                    Uri.parse('https://pregameworldcup.com/privacy'),
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  child: Text(
+                    'Privacy Policy',
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.7),
+                      fontSize: 13,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.white.withValues(alpha: 0.7),
+                    ),
+                  ),
+                ),
+                Text(
+                  '  |  ',
+                  style: TextStyle(color: Colors.white.withValues(alpha: 0.4)),
+                ),
+                TextButton(
+                  onPressed: () => launchUrl(
+                    Uri.parse('https://pregameworldcup.com/terms'),
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  child: Text(
+                    'Terms of Service',
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.7),
+                      fontSize: 13,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.white.withValues(alpha: 0.7),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+
           // Delete Account (current user only)
           if (_isCurrentUser) ...[
-            const SizedBox(height: 32),
+            const SizedBox(height: 16),
             TextButton.icon(
               onPressed: _showDeleteAccountDialog,
               icon: const Icon(Icons.delete_forever, color: Colors.red),

@@ -83,6 +83,7 @@ dependencies:
   google_sign_in: ^6.1.0
   http: ^0.13.5  # Keep existing version for compatibility
   google_polyline_algorithm: ^3.1.0
+  app_tracking_transparency: ^2.0.6+1
 
   # Phase 4: AI Integration Features (Compatible versions)
   # vector_math: ^2.1.4 # Vector operations for embeddings - pinned by flutter_test
@@ -149,6 +150,8 @@ flutter_launcher_icons:
   image_path: "assets/logos/pregame_logo.png"
   min_sdk_android: 21 # Optional: Specify minimum SDK for Android adaptive icons
   remove_alpha_ios: true # Remove transparency for iOS
+  adaptive_icon_foreground: "assets/logos/pregame_logo.png"
+  adaptive_icon_background: "#0F172A" # App dark background color
   # web:
   #   generate: true
   #   image_path: "path/to/icon.png"

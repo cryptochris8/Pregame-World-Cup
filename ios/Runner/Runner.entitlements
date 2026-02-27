@@ -4,12 +4,12 @@
 <dict>
 	<!-- Push Notifications -->
 	<key>aps-environment</key>
-	<string>development</string>
+	<string>production</string>
 
 	<!-- Keychain Sharing (for Firebase Auth) -->
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.christophercampbell.pregame</string>
+		<string>$(AppIdentifierPrefix)com.christophercampbell.pregameworldcup</string>
 	</array>
 
 	<!-- Associated Domains for Universal Links and Firebase Dynamic Links -->

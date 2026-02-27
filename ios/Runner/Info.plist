@@ -92,6 +92,14 @@
 	<key>FlutterDeepLinkingEnabled</key>
 	<true/>
 
+	<!-- App Tracking Transparency (required for AdMob) -->
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Pregame World Cup uses this identifier to provide personalized ads. You can choose to allow or deny tracking.</string>
+
+	<!-- Export Compliance -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+
 	<!-- AdMob App ID -->
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-7575845069047315~9254261147</string>

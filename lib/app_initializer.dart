@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -6,6 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 
 import 'firebase_options.dart';
 import 'injection_container.dart' as di;
@@ -265,7 +267,8 @@ void _initializeAIServicesBackground() async {
   }
 }
 
-/// Initialize AdMob in the background
+/// Initialize AdMob in the background.
+/// On iOS, requests App Tracking Transparency permission first (Apple requirement).
 void _initializeAdMobBackground() async {
   if (kIsWeb) {
     debugLog('ADMOB: Skipping - not supported on web');
@@ -277,6 +280,24 @@ void _initializeAdMobBackground() async {
     // Yield to the event loop so the UI can render before AdMob SDK init,
     // which triggers platform channel calls and native SDK loading.
     await Future.microtask(() {});
+
+    // iOS: Request App Tracking Transparency permission BEFORE initializing AdMob.
+    // Apple requires this prompt before any ad-related tracking. The ATT dialog
+    // must appear after the app UI has loaded (not during splash), which is why
+    // we do it here after yielding to the event loop.
+    if (!kIsWeb && Platform.isIOS) {
+      try {
+        final status = await AppTrackingTransparency.trackingAuthorizationStatus;
+        if (status == TrackingStatus.notDetermined) {
+          // Small delay to ensure the app is fully visible before showing the dialog
+          await Future.delayed(const Duration(milliseconds: 500));
+          await AppTrackingTransparency.requestTrackingAuthorization();
+        }
+        debugLog('ADMOB: ATT status: $status');
+      } catch (e) {
+        debugLog('ADMOB: ATT request failed (non-fatal): $e');
+      }
+    }
 
     // Initialize AdMob SDK
     await AdService().initialize();

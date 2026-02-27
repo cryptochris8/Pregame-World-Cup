@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import Stripe from 'stripe';
-import { getStripe, getConfigValue } from './stripe-config';
+import { getStripe, getConfigValue, isWebhookEventAlreadyProcessed, markWebhookEventProcessed } from './stripe-config';
 import { checkCallableRateLimit, RATE_LIMITS } from './rate-limiter';
 import { withRetry } from './retry-utils';
 
@@ -444,6 +444,13 @@ export const handleWatchPartyWebhook = functions.https.onRequest(async (req, res
   }
 
   try {
+    // Idempotency: skip already-processed events to prevent duplicate handling
+    if (await isWebhookEventAlreadyProcessed(event.id)) {
+      functions.logger.info(`Watch party webhook event ${event.id} already processed, skipping`);
+      res.status(200).send('Event already processed');
+      return;
+    }
+
     switch (event.type) {
       case 'payment_intent.succeeded': {
         const paymentIntent = event.data.object as Stripe.PaymentIntent;
@@ -473,6 +480,9 @@ export const handleWatchPartyWebhook = functions.https.onRequest(async (req, res
       default:
         functions.logger.info(`Unhandled watch party webhook event type: ${event.type}`);
     }
+
+    // Mark event as processed after successful handling
+    await markWebhookEventProcessed(event.id, event.type);
 
     res.status(200).send('Webhook handled successfully');
   } catch (error) {

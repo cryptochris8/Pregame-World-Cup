@@ -50,6 +50,11 @@
         <meta-data
             android:name="firebase_app_check_debug_token"
             android:value="debug_token_placeholder" />
+        <!-- Google Maps API Key (injected via manifestPlaceholders in build.gradle.kts) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${GOOGLE_MAPS_API_KEY}" />
+
         <!-- AdMob App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -107,7 +112,4 @@
     
     <!-- Wake lock for background tasks -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    
-    <!-- Optional: for background location (if needed) -->
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
 </manifest>
