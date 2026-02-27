@@ -224,4 +224,216 @@ class TestDataFactory {
       groupLetter: String.fromCharCode('A'.codeUnitAt(0) + i),
     ));
   }
+
+  static MatchPrediction createPrediction({
+    String predictionId = 'pred_1',
+    String matchId = 'match_1',
+    int predictedHomeScore = 2,
+    int predictedAwayScore = 1,
+    PredictionOutcome predictedOutcome = PredictionOutcome.pending,
+    PredictionOutcome? actualOutcome,
+    int pointsEarned = 0,
+    bool exactScoreCorrect = false,
+    bool resultCorrect = false,
+    String? homeTeamCode = 'USA',
+    String? homeTeamName = 'United States',
+    String? awayTeamCode = 'MEX',
+    String? awayTeamName = 'Mexico',
+    DateTime? matchDate,
+    DateTime? createdAt,
+  }) {
+    return MatchPrediction(
+      predictionId: predictionId,
+      matchId: matchId,
+      predictedHomeScore: predictedHomeScore,
+      predictedAwayScore: predictedAwayScore,
+      predictedOutcome: predictedOutcome,
+      actualOutcome: actualOutcome,
+      pointsEarned: pointsEarned,
+      exactScoreCorrect: exactScoreCorrect,
+      resultCorrect: resultCorrect,
+      homeTeamCode: homeTeamCode,
+      homeTeamName: homeTeamName,
+      awayTeamCode: awayTeamCode,
+      awayTeamName: awayTeamName,
+      matchDate: matchDate ?? DateTime(2026, 6, 15),
+      createdAt: createdAt ?? DateTime(2026, 6, 10),
+    );
+  }
+
+  static UserPreferences createUserPreferences({
+    List<String> favoriteTeamCodes = const ['USA', 'BRA'],
+    List<String> favoriteMatchIds = const ['match_1'],
+    bool notifyFavoriteTeamMatches = true,
+    bool notifyLiveUpdates = true,
+    bool notifyGoals = true,
+    String? preferredTimezone,
+  }) {
+    return UserPreferences(
+      favoriteTeamCodes: favoriteTeamCodes,
+      favoriteMatchIds: favoriteMatchIds,
+      notifyFavoriteTeamMatches: notifyFavoriteTeamMatches,
+      notifyLiveUpdates: notifyLiveUpdates,
+      notifyGoals: notifyGoals,
+      preferredTimezone: preferredTimezone,
+    );
+  }
+
+  static MatchReminder createMatchReminder({
+    String reminderId = 'reminder_1',
+    String userId = 'user_1',
+    String matchId = 'match_1',
+    String matchName = 'USA vs Mexico',
+    DateTime? matchDateTimeUtc,
+    DateTime? reminderDateTimeUtc,
+    ReminderTiming timing = ReminderTiming.thirtyMinutes,
+    bool isEnabled = true,
+    bool isSent = false,
+    String? homeTeamCode = 'USA',
+    String? awayTeamCode = 'MEX',
+  }) {
+    final matchDt = matchDateTimeUtc ?? DateTime.utc(2026, 6, 15, 18, 0);
+    return MatchReminder(
+      reminderId: reminderId,
+      userId: userId,
+      matchId: matchId,
+      matchName: matchName,
+      matchDateTimeUtc: matchDt,
+      reminderDateTimeUtc: reminderDateTimeUtc ??
+          matchDt.subtract(Duration(minutes: timing.minutes)),
+      timing: timing,
+      isEnabled: isEnabled,
+      isSent: isSent,
+      createdAt: DateTime(2026, 6, 10),
+      homeTeamCode: homeTeamCode,
+      awayTeamCode: awayTeamCode,
+    );
+  }
+
+  static WorldCupVenue createVenue({
+    String venueId = 'venue_1',
+    String name = 'MetLife Stadium',
+    String city = 'East Rutherford',
+    String? state = 'New Jersey',
+    HostCountry country = HostCountry.usa,
+    int capacity = 82500,
+    List<String> keyMatches = const ['Final'],
+  }) {
+    return WorldCupVenue(
+      venueId: venueId,
+      name: name,
+      city: city,
+      state: state,
+      country: country,
+      capacity: capacity,
+      keyMatches: keyMatches,
+    );
+  }
+
+  static HeadToHead createHeadToHead({
+    String team1Code = 'USA',
+    String team2Code = 'MEX',
+    int totalMatches = 77,
+    int team1Wins = 22,
+    int team2Wins = 36,
+    int draws = 19,
+    int team1Goals = 90,
+    int team2Goals = 130,
+    int worldCupMatches = 2,
+  }) {
+    return HeadToHead(
+      team1Code: team1Code,
+      team2Code: team2Code,
+      totalMatches: totalMatches,
+      team1Wins: team1Wins,
+      team2Wins: team2Wins,
+      draws: draws,
+      team1Goals: team1Goals,
+      team2Goals: team2Goals,
+      worldCupMatches: worldCupMatches,
+    );
+  }
+
+  static WorldCupTournament createTournament({
+    int year = 2022,
+    String winner = 'Argentina',
+    String winnerCode = 'ARG',
+  }) {
+    return WorldCupTournament(
+      year: year,
+      hostCountries: const ['Qatar'],
+      hostCodes: const ['QAT'],
+      winner: winner,
+      winnerCode: winnerCode,
+      runnerUp: 'France',
+      runnerUpCode: 'FRA',
+      thirdPlace: 'Croatia',
+      thirdPlaceCode: 'CRO',
+      fourthPlace: 'Morocco',
+      fourthPlaceCode: 'MAR',
+      totalTeams: 32,
+      totalMatches: 64,
+      totalGoals: 172,
+      topScorer: 'Kylian Mbappe',
+      topScorerCountry: 'France',
+      topScorerGoals: 8,
+      finalScore: '3-3 (4-2 pen)',
+      finalVenue: 'Lusail Stadium',
+      finalCity: 'Lusail',
+      finalAttendance: 88966,
+      highlights: const ['Messi wins World Cup'],
+    );
+  }
+
+  static WorldCupRecord createRecord({
+    String id = 'record_1',
+    String category = 'Most Goals',
+    String record = 'Most goals in a single tournament',
+    String holder = 'Just Fontaine',
+    String holderType = 'player',
+    dynamic value = 13,
+  }) {
+    return WorldCupRecord(
+      id: id,
+      category: category,
+      record: record,
+      holder: holder,
+      holderType: holderType,
+      value: value,
+    );
+  }
+
+  static MatchSummary createMatchSummary({
+    String id = 'USA_MEX',
+    String team1Code = 'USA',
+    String team2Code = 'MEX',
+    String team1Name = 'United States',
+    String team2Name = 'Mexico',
+  }) {
+    return MatchSummary(
+      id: id,
+      team1Code: team1Code,
+      team2Code: team2Code,
+      team1Name: team1Name,
+      team2Name: team2Name,
+      historicalAnalysis: 'Historic rivalry in CONCACAF.',
+      keyStorylines: const ['Border rivalry', 'Host nation advantage'],
+      playersToWatch: const [
+        PlayerToWatch(
+          name: 'Christian Pulisic',
+          teamCode: 'USA',
+          position: 'Forward',
+          reason: 'Key creative force',
+        ),
+      ],
+      tacticalPreview: 'USA expected to press high.',
+      prediction: const MatchPredictionSummary(
+        predictedOutcome: 'USA',
+        predictedScore: '2-1',
+        confidence: 65,
+        reasoning: 'Home advantage and form favor USA.',
+      ),
+      funFacts: const ['100th meeting between these rivals'],
+    );
+  }
 }

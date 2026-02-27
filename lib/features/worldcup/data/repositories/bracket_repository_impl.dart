@@ -36,7 +36,11 @@ class BracketRepositoryImpl implements BracketRepository {
       return const WorldCupBracket();
     } catch (e) {
       // Debug output removed
-      return await _cacheDataSource.getCachedBracket() ?? const WorldCupBracket();
+      try {
+        return await _cacheDataSource.getCachedBracket() ?? const WorldCupBracket();
+      } catch (_) {
+        return const WorldCupBracket();
+      }
     }
   }
 

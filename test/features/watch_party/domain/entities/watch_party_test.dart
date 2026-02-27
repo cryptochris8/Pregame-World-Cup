@@ -263,13 +263,15 @@ void main() {
       test('returns hours format for games within a day', () {
         final soonGame = DateTime.now().add(const Duration(hours: 3));
         final party = createTestWatchParty(gameDateTime: soonGame);
-        expect(party.timeUntilStart, contains('3h'));
+        // Allow for slight timing drift during test execution
+        expect(party.timeUntilStart, matches(RegExp(r'In [23]h')));
       });
 
       test('returns minutes format for imminent games', () {
         final imminentGame = DateTime.now().add(const Duration(minutes: 30));
         final party = createTestWatchParty(gameDateTime: imminentGame);
-        expect(party.timeUntilStart, contains('30m'));
+        // Allow for slight timing drift during test execution
+        expect(party.timeUntilStart, matches(RegExp(r'In (29|30)m')));
       });
     });
 
