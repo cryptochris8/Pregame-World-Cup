@@ -383,9 +383,9 @@ class ResponseGenerator {
     final playerName = intent.player;
     if (playerName == null) {
       return ChatResponse(
-        text: "Which player would you like to know about? I have detailed stats "
-            "for 24 key players and squad data for all 48 teams.",
-        suggestionChips: ['Messi stats', 'Mbappe stats', 'Kane stats', 'Vinicius stats'],
+        text: "Which player would you like to know about? I have profiles "
+            "for all 1,248 World Cup squad players across 48 teams!",
+        suggestionChips: ['Messi stats', 'Mbappe stats', 'Kane stats', 'Pulisic stats'],
         resolvedIntent: intent,
       );
     }
@@ -434,8 +434,46 @@ class ResponseGenerator {
       );
     }
 
-    // Try squad data
-    final teamCode = intent.team;
+    // Try enriched player profiles
+    final profile = await _kb.getPlayerProfile(playerName);
+    if (profile != null) {
+      final name = profile['playerName'] ?? _capitalize(playerName);
+      final code = profile['teamCode'] ?? '';
+      final teamName = _kb.getTeamName(code) ?? code;
+      final bio = profile['bio'] as String? ?? '';
+      final style = profile['playingStyle'] as String? ?? '';
+      final strengths = (profile['keyStrengths'] as List<dynamic>?) ?? [];
+      final role = profile['worldCup2026Role'] as String? ?? '';
+      final fact = profile['notableFact'] as String? ?? '';
+
+      final buf = StringBuffer('$name — $teamName\n\n');
+      if (bio.isNotEmpty) buf.writeln(bio);
+      if (style.isNotEmpty) buf.writeln('\nPlaying style: $style');
+      if (strengths.isNotEmpty) {
+        buf.writeln('Key strengths: ${strengths.join(', ')}');
+      }
+      if (role.isNotEmpty) buf.writeln('\n2026 role: $role');
+      if (fact.isNotEmpty) buf.writeln('\nFun fact: $fact');
+
+      // Also pull basic squad data if available
+      final teamCode2 = _kb.resolveTeamCode(code) ?? code;
+      await _kb.getTeamData(teamCode2);
+      final squadResult = await _kb.searchPlayerInSquads(playerName);
+      if (squadResult != null) {
+        final p = squadResult['player'] as Map<String, dynamic>;
+        buf.writeln('\nClub: ${p['club']} (${p['clubLeague']})');
+        buf.writeln('Caps: ${p['caps']}, Goals: ${p['goals']}');
+      }
+
+      return ChatResponse(
+        text: buf.toString().trim(),
+        suggestionChips: ['$teamName squad', '$teamName schedule', '$teamName prediction'],
+        resolvedIntent: intent,
+      );
+    }
+
+    // Try squad data (bare fallback)
+    final teamCode = intent.team ?? _kb.getTeamCodeForPlayer(playerName);
     if (teamCode != null) {
       final teamData = await _kb.getTeamData(teamCode);
       if (teamData != null) {
@@ -458,10 +496,9 @@ class ResponseGenerator {
     }
 
     return ChatResponse(
-      text: "I couldn't find detailed stats for \"$playerName\". "
-          "I have data on 24 featured players and all 48 team squads. "
-          "Try a well-known player name like Messi, Mbappe, or Kane.",
-      suggestionChips: ['Messi stats', 'Mbappe stats', 'Kane stats'],
+      text: "I couldn't find detailed info for \"$playerName\". "
+          "Try a player's full name or a well-known name like Messi, Mbappe, or Pulisic.",
+      suggestionChips: ['Messi stats', 'Mbappe stats', 'Pulisic stats'],
       resolvedIntent: intent,
     );
   }

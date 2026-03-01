@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Emiliano Martínez": {
+      "bio": "The hero of Argentina's 2022 World Cup triumph, 'Dibu' Martínez has established himself as one of the world's best goalkeepers at Aston Villa. His penalty-saving heroics and psychological gamesmanship have become legendary in Argentine football folklore.",
+      "playingStyle": "Commanding goalkeeper with exceptional penalty-saving ability, vocal leadership from the back, and increasingly confident distribution to start attacks",
+      "keyStrengths": ["Penalty saving and shootout psychology", "Commanding presence and vocal leadership", "Reflexes and shot-stopping in tight angles"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and emotional leader of the defense; his penalty shootout expertise could again prove decisive in knockout rounds",
+      "notableFact": "Saved three penalties in the 2022 World Cup final shootout against France, one of the most iconic goalkeeping performances in World Cup history"
+    },
+    "Nahuel Molina": {
+      "bio": "A dynamic right-back who has flourished at Atletico Madrid, Molina combines defensive grit with attacking thrust. His goal in the 2022 World Cup quarterfinal against the Netherlands showcased his ability to arrive in dangerous positions.",
+      "playingStyle": "Modern attacking fullback with excellent timing of forward runs, good crossing ability, and the stamina to contribute at both ends of the pitch",
+      "keyStrengths": ["Late attacking runs into the box", "Crossing and delivery", "Tactical discipline in Simeone's system"],
+      "worldCup2026Role": "Starting right-back who provides width and attacking thrust; his experience under Simeone gives him tactical maturity for high-stakes tournament matches",
+      "notableFact": "Scored a brilliant goal against the Netherlands in the 2022 World Cup quarterfinal, capping a flowing team move with a clinical finish"
+    },
+    "Nicolás Tagliafico": {
+      "bio": "A tenacious left-back who made his name at Ajax before moving to Lyon. Tagliafico is a fierce competitor known for his aggressive defending, overlapping runs, and leadership qualities that have made him a long-term fixture in the Argentine squad.",
+      "playingStyle": "Aggressive, attack-minded left-back who loves to overlap, strong in the tackle, and contributes with dangerous crosses and late arrivals into the penalty area",
+      "keyStrengths": ["Aggressive tackling and defensive intensity", "Overlapping runs and crossing", "Experience and leadership"],
+      "worldCup2026Role": "Experienced left-back option providing depth and reliable defending; his World Cup winner's medal and years of European experience add invaluable squad depth",
+      "notableFact": "Was a key member of the Ajax squad that reached the 2019 Champions League semifinal, one of the most romantic underdog runs in recent tournament history"
+    },
+    "Gonzalo Montiel": {
+      "bio": "The man who scored the winning penalty in the 2022 World Cup final, Montiel will forever hold a sacred place in Argentine football history. A steady, dependable right-back, he brings big-game nerve and reliability to the squad.",
+      "playingStyle": "Reliable, defensively solid right-back with good positioning, disciplined marking, and the mental fortitude to perform under extreme pressure",
+      "keyStrengths": ["Mental strength and big-game nerve", "Defensive positioning and marking", "Reliability and consistency"],
+      "worldCup2026Role": "Backup right-back with the ultimate World Cup pedigree; his ice-cold temperament in high-pressure moments makes him a valuable option for knockout-stage scenarios",
+      "notableFact": "Scored the decisive penalty kick in the 2022 World Cup final shootout against France to clinch Argentina's third World Cup title"
+    },
+    "Leandro Paredes": {
+      "bio": "A cultured midfielder with an exceptional passing range, Paredes has been a loyal servant to the Argentine national team through spells at Boca Juniors, PSG, Juventus, and Roma. His ability to dictate tempo and deliver precise long passes makes him a key playmaker from deep.",
+      "playingStyle": "Deep-lying playmaker with outstanding long-range passing, good set-piece delivery, and the ability to control the rhythm of a match from the base of midfield",
+      "keyStrengths": ["Long-range passing accuracy", "Set-piece delivery", "Controlling the tempo of matches"],
+      "worldCup2026Role": "Experienced midfield rotation option who can control games from deep; ideal for matches where Argentina needs to dominate possession and dictate pace",
+      "notableFact": "Was one of Messi's closest friends in the squad during the 2022 World Cup, and their bromance has been widely celebrated by Argentine fans"
+    },
+    "Germán Pezzella": {
+      "bio": "A seasoned center-back who has captained Fiorentina and played across Argentina and Europe, Pezzella brings old-school defensive toughness combined with experience at the highest level. His return to River Plate has rejuvenated his career.",
+      "playingStyle": "Traditional, no-nonsense center-back who excels in aerial duels, aggressive marking, and organizing the defensive line with vocal communication",
+      "keyStrengths": ["Aerial dominance", "Defensive organization and communication", "Leadership and experience"],
+      "worldCup2026Role": "Experienced defensive depth option providing mentorship and reliability; a veteran voice who can steady the defense when called upon",
+      "notableFact": "Captained Fiorentina in Serie A and has been a part of the Argentine national setup for nearly a decade, providing crucial continuity in the squad"
+    },
+    "Rodrigo De Paul": {
+      "bio": "The heartbeat of Argentina's midfield and one of the unsung heroes of the 2022 World Cup triumph. De Paul's relentless running, fierce tackling, and ability to cover every blade of grass make him the quintessential modern midfielder and Messi's most trusted on-field bodyguard.",
+      "playingStyle": "Tireless, all-action midfielder who combines aggressive pressing with technical quality, excellent ball retention under pressure, and the ability to burst forward on driving runs",
+      "keyStrengths": ["Relentless work rate and pressing", "Ball retention under pressure", "Aggressive ball-winning and transitions"],
+      "worldCup2026Role": "Starting central midfielder and the engine that makes Argentina's midfield tick; his selfless running and defensive work free up the creative players ahead of him",
+      "notableFact": "Ran more than any other Argentine player during the 2022 World Cup, earning the unofficial title of 'Messi's bodyguard' for his protective role in midfield"
+    },
+    "Enzo Fernández": {
+      "bio": "The 2022 World Cup Young Player of the Tournament, Enzo burst onto the global stage with sensational performances in Qatar before completing a record-breaking move to Chelsea. His composure, passing range, and eye for goal from midfield mark him as a generational talent.",
+      "playingStyle": "Elegant, two-way midfielder with outstanding vision, precise long-range passing, the ability to score from distance, and maturity beyond his years in controlling the tempo",
+      "keyStrengths": ["Vision and long-range passing", "Composure under pressure", "Goal-scoring ability from midfield"],
+      "worldCup2026Role": "Starting midfielder and the creative fulcrum of Argentina's engine room; expected to take on an even more central role as the team transitions to the post-Messi era",
+      "notableFact": "Won the FIFA Young Player Award at the 2022 World Cup and scored a stunning curling goal against Mexico in the group stage that announced his arrival on the world stage"
+    },
+    "Julián Álvarez": {
+      "bio": "A versatile and prolific forward who has become one of the deadliest strikers in world football. Álvarez's intelligence, movement, and finishing quality saw him play a crucial role in Argentina's World Cup triumph, and his move to Atletico Madrid has only enhanced his reputation.",
+      "playingStyle": "Intelligent, hard-working striker with exceptional movement, clinical finishing, and the ability to drop deep and link play while also making devastating runs in behind",
+      "keyStrengths": ["Intelligent movement and positioning", "Clinical finishing", "Pressing intensity and work rate"],
+      "worldCup2026Role": "Starting center-forward and primary goalscoring threat; his selfless running and pressing complement Messi's creative genius perfectly",
+      "notableFact": "Scored four goals at the 2022 World Cup including a brace in the semifinal against Croatia, establishing himself as one of the tournament's breakout stars at just 22"
+    },
+    "Lionel Messi": {
+      "bio": "The greatest footballer of all time. Eight Ballon d'Or titles, a World Cup, two Copa Americas, four Champions Leagues, and virtually every individual record in the sport. At 38, Messi continues to defy expectations at Inter Miami, and the 2026 World Cup on American soil could be his legendary farewell to the international stage.",
+      "playingStyle": "Unmatched playmaker with supernatural vision, close control, and passing accuracy. Though his pace has diminished, his ability to dictate play, find impossible passes, and score decisive goals remains elite.",
+      "keyStrengths": ["Vision and creative passing beyond any player in history", "Close control and dribbling in tight spaces", "Dead-ball accuracy and free-kick mastery"],
+      "worldCup2026Role": "The captain, the icon, and the spiritual leader. Whether starting or coming off the bench, Messi's mere presence elevates his teammates. This tournament represents his farewell and Argentina will build their campaign around giving him the perfect send-off.",
+      "notableFact": "Won the 2022 World Cup Golden Ball and scored seven goals including two in the final against France, widely considered the greatest World Cup final ever played"
+    },
+    "Ángel Di María": {
+      "bio": "A legendary Argentine winger with a career spanning Real Madrid, PSG, Manchester United, Juventus, and Benfica. 'Fideo' has scored in the finals of the Copa America, World Cup, and Champions League. At 38, he may join Messi for one last international dance.",
+      "playingStyle": "Left-footed winger with electrifying pace on the break, surgical crossing ability, and a knack for delivering in the most important finals with decisive goals and assists",
+      "keyStrengths": ["Big-game scoring record in finals", "Crossing and delivery with his left foot", "Pace and direct running on the counter"],
+      "worldCup2026Role": "Veteran squad member whose experience in finals is unmatched; a potential emotional inclusion for the farewell tour alongside Messi, capable of decisive moments off the bench",
+      "notableFact": "Has scored in the Copa America final (2021), World Cup final (2022), and Champions League final (2014), one of the most remarkable finals records in football history"
+    },
+    "Gerónimo Rulli": {
+      "bio": "A capable and experienced goalkeeper who has had a well-traveled career across Argentina, Spain, and France. Rulli's solid shot-stopping and command of his area have made him a reliable backup option for the Argentine national team.",
+      "playingStyle": "Solid, conventional goalkeeper with good reflexes, confident handling, and improving distribution skills developed through playing in multiple European leagues",
+      "keyStrengths": ["Shot-stopping reliability", "Experience across multiple leagues", "Aerial command and handling"],
+      "worldCup2026Role": "Second-choice goalkeeper behind Dibu Martínez; provides reliable depth and is ready to step in if needed with no drop-off in confidence or competence",
+      "notableFact": "Had a memorable penalty shootout performance for Villarreal in their shock Europa League triumph in 2021, showcasing his ability to perform in high-pressure moments"
+    },
+    "Cristian Romero": {
+      "bio": "An explosive, aggressive center-back who has become one of the Premier League's most feared defenders at Tottenham. 'Cuti' Romero's intensity, ball-winning ability, and willingness to step out and engage attackers make him a modern defensive force.",
+      "playingStyle": "Ultra-aggressive, front-foot center-back who relishes physical duels, steps out to win the ball high up the pitch, and drives forward with powerful ball-carrying runs",
+      "keyStrengths": ["Aggressive 1v1 defending and tackling", "Ball-carrying from defense", "Intensity and competitive fire"],
+      "worldCup2026Role": "Starting center-back and defensive enforcer; his aggression and front-foot defending set the tone for Argentina's press and provide the physical edge in the backline",
+      "notableFact": "Won Serie A's best defender award at Atalanta before his move to Tottenham, where he has been named in the PFA Team of the Year"
+    },
+    "Exequiel Palacios": {
+      "bio": "A technically gifted midfielder who has thrived at Bayer Leverkusen, playing a key role in their historic unbeaten Bundesliga title in 2023-24. Palacios combines Argentine competitive fire with European tactical refinement.",
+      "playingStyle": "Dynamic, technically skilled midfielder who contributes at both ends with precise passing, intelligent positioning, and the ability to arrive late in the box for goals",
+      "keyStrengths": ["Technical quality and passing precision", "Late runs into the box", "Tactical intelligence and adaptability"],
+      "worldCup2026Role": "Midfield rotation option offering technical quality and tactical versatility; his experience in Xabi Alonso's system gives him an understanding of modern pressing football",
+      "notableFact": "Was a key member of the Bayer Leverkusen squad that went the entire 2023-24 Bundesliga season unbeaten, one of the most remarkable achievements in German football history"
+    },
+    "Nicolás González": {
+      "bio": "A versatile and combative forward who has established himself in Serie A with Fiorentina and Juventus. González's directness, physicality, and ability to play across the front line make him a valuable squad member for the defending champions.",
+      "playingStyle": "Direct, physical winger who uses his strength and pace to drive at defenders, capable of playing on either flank and contributing with both goals and assists",
+      "keyStrengths": ["Directness and pace in attack", "Physical presence and strength", "Versatility across the front line"],
+      "worldCup2026Role": "Versatile attacking option who can cover multiple positions across the front three; his physicality provides a different dimension when Argentina needs to change their approach",
+      "notableFact": "Scored a crucial goal in Argentina's 2022 World Cup qualifying campaign and has been a consistent contributor to the national team across multiple tournaments"
+    },
+    "Thiago Almada": {
+      "bio": "A supremely gifted playmaker who became the first MLS-based player to win a World Cup when he was part of Argentina's 2022 squad. Almada's dazzling close control and creativity have since taken him to Botafogo, where he has continued to dazzle.",
+      "playingStyle": "Creative, technically brilliant attacking midfielder with outstanding close control, quick feet in tight spaces, and the vision to unlock defenses with incisive through balls",
+      "keyStrengths": ["Close control and dribbling in tight spaces", "Creative passing and vision", "Ability to operate between the lines"],
+      "worldCup2026Role": "Creative attacking option behind the strikers; his technical ability makes him a potential game-changer against deep-sitting defenses that require individual brilliance to break down",
+      "notableFact": "Became the first MLS player to win a World Cup medal as part of Argentina's 2022 squad, having been playing for Atlanta United at the time"
+    },
+    "Alejandro Garnacho": {
+      "bio": "An explosive young talent born in Spain but who chose to represent Argentina, Garnacho has electrified crowds with his dribbling and flair. His move from Manchester United to Napoli has broadened his tactical education under Italian coaching.",
+      "playingStyle": "Electric, fearless young winger with blistering pace, audacious dribbling, and the confidence to attempt the spectacular, including overhead kicks and long-range strikes",
+      "keyStrengths": ["Explosive pace and dribbling", "Fearlessness and creative risk-taking", "Ability to score spectacular goals"],
+      "worldCup2026Role": "Dynamic young attacking option off the bench; his pace, directness, and fearlessness make him an ideal impact substitute against tiring defenses in the later stages of matches",
+      "notableFact": "Scored a stunning overhead bicycle kick for Manchester United that won the 2023 FIFA Puskas Award for the best goal of the year"
+    },
+    "Guido Rodríguez": {
+      "bio": "A disciplined and reliable defensive midfielder who has anchored midfields across Argentina, Mexico, and now the Premier League with West Ham. His intelligence, positioning, and ability to break up play make him a coach's dream in the holding role.",
+      "playingStyle": "Disciplined, positionally excellent defensive midfielder who reads the game superbly, breaks up opposition attacks with smart interceptions, and keeps possession ticking over efficiently",
+      "keyStrengths": ["Positional intelligence and reading of the game", "Interceptions and breaking up play", "Simple, efficient passing"],
+      "worldCup2026Role": "Defensive midfield rotation option providing balance and protection; ideal for matches where Argentina needs extra solidity and control in front of the defense",
+      "notableFact": "Was a standout performer at Real Betis in La Liga before his Premier League move, earning widespread praise as one of the most underrated defensive midfielders in European football"
+    },
+    "Nicolás Otamendi": {
+      "bio": "A warrior of Argentine football with over 110 caps, Otamendi has been a fierce, uncompromising presence at the back for nearly a decade. From Valencia to Manchester City to Benfica, his aggressive defending and leadership have made him a serial winner.",
+      "playingStyle": "Combative, old-school center-back who defends with maximum aggression, strong in the air, fearless in the tackle, and a vocal organizer of the defensive line",
+      "keyStrengths": ["Aggressive tackling and aerial dueling", "Leadership and experience", "Competitive fire and winning mentality"],
+      "worldCup2026Role": "Senior defensive leader providing experience and mentorship; a World Cup winner whose presence in the squad room is as important as his contributions on the pitch",
+      "notableFact": "Has won major trophies in England, Portugal, and internationally, including the 2022 World Cup, 2021 Copa America, and multiple Premier League titles with Manchester City"
+    },
+    "Giovani Lo Celso": {
+      "bio": "A silky, creative midfielder whose technical quality and intelligence have made him a trusted member of Argentina's squad across multiple tournaments. Lo Celso's ability to find pockets of space and deliver decisive passes in tight areas adds a layer of sophistication to the midfield.",
+      "playingStyle": "Technically refined, left-footed midfielder who excels at finding space between the lines, delivering incisive passes, and drifting into dangerous positions to create or score",
+      "keyStrengths": ["Finding and exploiting space between the lines", "Left-footed creativity and passing", "Ability to carry the ball under pressure"],
+      "worldCup2026Role": "Creative midfield option who can unlock defenses with his passing and movement; a trusted Scaloni option for matches requiring technical superiority in congested midfield battles",
+      "notableFact": "Played a key role in Argentina's 2021 Copa America triumph and 2022 World Cup success, often being selected for his understanding with Messi in tight attacking spaces"
+    },
+    "Paulo Dybala": {
+      "bio": "Known as 'La Joya' (The Jewel), Dybala is one of the most technically gifted players of his generation. His time at Juventus and Roma has been defined by moments of breathtaking skill, curling goals, and creative genius, even as injuries have interrupted his rhythm.",
+      "playingStyle": "Elegant, left-footed forward with exquisite close control, a devastating curling shot from outside the box, and the ability to play as a second striker or creative number 10",
+      "keyStrengths": ["Curling shots and finishing from distance", "Close control and first touch", "Creative link-up play in the final third"],
+      "worldCup2026Role": "Luxury attacking option for matches where Argentina needs to break down stubborn defenses; his ability to produce moments of individual magic makes him a valuable squad weapon",
+      "notableFact": "Has scored some of the most spectacular goals in Serie A history, including numerous curling efforts from outside the box that have earned comparisons to a young Messi"
+    },
+    "Lautaro Martínez": {
+      "bio": "One of the most lethal strikers in world football, Lautaro has been a prolific goal machine for Inter Milan and Argentina. His combination of power, technique, and killer instinct in front of goal has made him one of the top strikers of his generation and a 2024 Ballon d'Or contender.",
+      "playingStyle": "Complete, powerful striker who combines clinical finishing with intelligent link-up play, strong hold-up play with his back to goal, and devastating runs in behind defenses",
+      "keyStrengths": ["Clinical finishing with both feet", "Physical strength and hold-up play", "Intelligent movement and positioning"],
+      "worldCup2026Role": "Starting striker alongside or rotating with Julián Álvarez; his prolific scoring record and ability to play as a lone striker or in a partnership gives Scaloni tactical flexibility",
+      "notableFact": "Won the 2024 Copa America Golden Boot as Argentina's top scorer and has been Serie A's top scorer, establishing himself as one of the world's deadliest finishers"
+    },
+    "Franco Armani": {
+      "bio": "A veteran goalkeeper and River Plate legend, Armani has been a reliable presence in the Argentine national team setup for years. His consistency in South American football and big-game experience make him a respected squad member and mentor.",
+      "playingStyle": "Experienced, steady goalkeeper with excellent shot-stopping, calm presence under pressure, and strong command of his penalty area built through years at the top of Argentine football",
+      "keyStrengths": ["Shot-stopping consistency", "Experience and composure", "Command of the penalty area"],
+      "worldCup2026Role": "Third-choice goalkeeper providing veteran depth and mentorship; his presence ensures squad stability and experience in the goalkeeping department",
+      "notableFact": "Is considered one of the greatest goalkeepers in River Plate's history, having won multiple league titles and international trophies with the club"
+    },
+    "Lisandro Martínez": {
+      "bio": "A fierce, combative center-back whose intensity belies his compact frame. Known as 'The Butcher' at Ajax, Lisandro has brought his aggressive defending and surprising technical quality to Manchester United, where he has become a fan favorite for his no-nonsense approach.",
+      "playingStyle": "Aggressive, technically skilled left-footed center-back who defends with ferocious intensity, excels in duels despite his smaller stature, and can play progressive passes from deep",
+      "keyStrengths": ["Ferocious tackling and defensive intensity", "Left-footed ball progression", "Aerial ability despite compact frame"],
+      "worldCup2026Role": "Starting center-back alongside Cristian Romero; his left-footed balance, aggression, and ball-playing ability make him the ideal partner in Argentina's combative defensive pairing",
+      "notableFact": "Earned the nickname 'The Butcher' at Ajax for his aggressive defensive style, and despite being 175cm tall, wins an remarkable percentage of his aerial duels"
+    },
+    "Marcos Acuña": {
+      "bio": "A gritty, experienced left-back who has been a trusted member of the Argentine national team for years. Acuña's tenacity, crossing ability, and never-say-die attitude epitomize the Argentine spirit, and his return to River Plate caps a well-traveled career.",
+      "playingStyle": "Combative, hard-working left-back with relentless energy, strong crossing ability, and a fierce competitive streak that makes him a nightmare for opposing wingers",
+      "keyStrengths": ["Relentless energy and work rate", "Crossing and delivery", "Competitive intensity and toughness"],
+      "worldCup2026Role": "Experienced backup left-back providing depth and defensive reliability; his toughness and World Cup experience make him a dependable option in high-pressure situations",
+      "notableFact": "Was a key squad member during Argentina's 2022 World Cup triumph and 2021 Copa America victory, providing crucial depth and energy at left-back across both tournaments"
+    },
+    "Valentín Carboni": {
+      "bio": "The youngest member of Argentina's squad, Carboni is a prodigiously talented attacking midfielder who has drawn comparisons to a young Dybala for his creativity and left-footed brilliance. Born in Argentina but raised in Italy through Inter Milan's academy, he represents the next generation.",
+      "playingStyle": "Gifted young playmaker with exceptional left-footed technique, creative dribbling ability, and a mature understanding of space and timing that belies his young age",
+      "keyStrengths": ["Left-footed technical brilliance", "Creative vision beyond his years", "Dribbling and ability to beat defenders"],
+      "worldCup2026Role": "The squad's youngest talent gaining invaluable World Cup experience; a wildcard option whose creativity and fearlessness could provide a spark in later tournament stages",
+      "notableFact": "Was called up to Argentina's senior squad at just 18, and his performances in Inter Milan's youth system drew comparisons to some of the club's greatest ever Argentine players"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Dayne St. Clair": {
+      "bio": "A commanding goalkeeper who has established himself as one of the top shot-stoppers in MLS with Minnesota United. St. Clair has risen through Canada's goalkeeping ranks and become a genuine contender for the starting position.",
+      "playingStyle": "Athletic, modern goalkeeper with excellent reflexes, confident command of the box, and improving distribution skills.",
+      "keyStrengths": ["Shot-stopping reflexes", "Command of the penalty area", "One-on-one ability"],
+      "worldCup2026Role": "Starting goalkeeper contender who brings MLS Goalkeeper of the Year caliber performances and relative youth to the position.",
+      "notableFact": "St. Clair was named to the MLS Best XI and has been a consistent performer in one of the league's most demanding positions at Minnesota United."
+    },
+    "Alistair Johnston": {
+      "bio": "A tireless and versatile right-back who made a high-profile move to Celtic in the Scottish Premiership, where he quickly became a fan favorite and regular starter. Johnston's energy and defensive tenacity have made him one of Canada's most reliable defenders.",
+      "playingStyle": "High-energy right-back who combines relentless work rate with tactical intelligence, excelling at overlapping runs and defensive duels.",
+      "keyStrengths": ["Tireless work rate", "Defensive duels", "Overlapping runs and delivery"],
+      "worldCup2026Role": "Undisputed starting right-back whose Champions League experience at Celtic gives Canada top-level defensive solidity.",
+      "notableFact": "Johnston became a cult hero at Celtic, with fans creating songs in his honor, and he has played in the UEFA Champions League group stage with the Scottish giants."
+    },
+    "Sam Adekugbe": {
+      "bio": "A pacey and committed left-back who has gained valuable experience playing in Turkey's Super Lig. Adekugbe's journey through Canadian youth systems to European football is a testament to his determination and versatility.",
+      "playingStyle": "Quick, attacking left-back who uses his pace to get forward, deliver crosses, and recover defensively with speed.",
+      "keyStrengths": ["Pace and acceleration", "Defensive recovery", "Crossing from the left"],
+      "worldCup2026Role": "Backup left-back providing depth behind Alphonso Davies, capable of filling in when the star man needs rest.",
+      "notableFact": "Adekugbe was part of the historic Canadian squad that qualified for the 2022 World Cup, their first since 1986, and has played in Turkey for several seasons."
+    },
+    "Kamal Miller": {
+      "bio": "A left-footed center-back who has been a rock in Canada's defensive setup. Miller's ability to play out from the back and his comfort on the ball make him an ideal fit for Canada's possession-based approach under modern coaching.",
+      "playingStyle": "Ball-playing center-back who is comfortable stepping into midfield with the ball, starting attacks with progressive passes, and defending in space.",
+      "keyStrengths": ["Left-footed ball distribution", "Progressive carrying", "Composure under pressure"],
+      "worldCup2026Role": "Starting center-back whose left foot and composure are essential to Canada's build-up play from the back.",
+      "notableFact": "Miller was a standout in Canada's 2022 World Cup qualifying campaign and has been one of the most consistent performers in MLS as a defender."
+    },
+    "Steven Vitoria": {
+      "bio": "A veteran center-back of Portuguese descent who chose to represent Canada. The towering defender brings invaluable experience from years of playing in European leagues, including Portugal's Primeira Liga.",
+      "playingStyle": "Tall, commanding center-back who dominates aerial duels, positions himself well in the box, and provides old-school defensive solidity.",
+      "keyStrengths": ["Aerial dominance", "Experience and game management", "Physical presence"],
+      "worldCup2026Role": "Experienced defensive depth player whose aerial ability and game management are valuable for set-piece situations and closing out matches.",
+      "notableFact": "Vitoria represented Portugal at youth level before switching allegiance to Canada, bringing a European defensive education to the Canucks' backline."
+    },
+    "Samuel Piette": {
+      "bio": "Canada's midfield warrior and one of the most capped active players in the squad. Piette has been the heartbeat of CF Montreal in MLS and brings unmatched dedication and professionalism to the national team.",
+      "playingStyle": "Tenacious defensive midfielder who breaks up play, screens the defense, and keeps the midfield organized with his positional intelligence.",
+      "keyStrengths": ["Ball-winning tenacity", "Positional discipline", "Leadership and vocal organization"],
+      "worldCup2026Role": "Experienced midfield option whose defensive discipline and leadership provide security when Canada need to protect a lead or see out a result.",
+      "notableFact": "Piette has been with CF Montreal for his entire MLS career, becoming the club's all-time leader in appearances and a true one-club man in the league."
+    },
+    "Stephen Eustaquio": {
+      "bio": "Canada's midfield maestro and arguably the most technically gifted player in the squad alongside Jonathan David. Born in Canada to Portuguese parents, Eustaquio developed in Europe before establishing himself as the creative engine of this Canadian golden generation.",
+      "playingStyle": "Elegant central midfielder who dictates tempo with precise passing, creates chances with his vision, and adds goals from midfield with well-timed runs and shots.",
+      "keyStrengths": ["Passing range and vision", "Tempo control", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Starting central midfielder and creative hub; the player who makes Canada tick by connecting defense to attack with his passing.",
+      "notableFact": "Eustaquio was named Canada Soccer's Player of the Year and was instrumental in the historic 2022 World Cup qualification campaign, scoring crucial goals in qualifying."
+    },
+    "David Wotherspoon": {
+      "bio": "A veteran Scottish-born attacking midfielder who chose to represent Canada. Wotherspoon has spent the majority of his career at St Johnstone in Scotland, where he has been a consistent creative presence for over a decade.",
+      "playingStyle": "Intelligent attacking midfielder who finds pockets of space, delivers accurate set pieces, and creates chances with his technical quality and vision.",
+      "keyStrengths": ["Set-piece delivery", "Finding space between lines", "Technical quality"],
+      "worldCup2026Role": "Experienced squad player offering set-piece quality and creative depth in the attacking midfield positions.",
+      "notableFact": "Wotherspoon was born in Scotland and played for the Scottish youth teams before declaring for Canada, and he helped St Johnstone win the Scottish League Cup and Scottish Cup double in 2021."
+    },
+    "Jonathan David": {
+      "bio": "Canada's crown jewel and one of the most lethal strikers in European football. After tearing up Ligue 1 with Lille, David earned a blockbuster move to Juventus in Serie A. He is Canada's all-time leading goal scorer and the poster boy for the country's football revolution.",
+      "playingStyle": "Complete, modern striker who combines clinical finishing with intelligent movement, excellent link-up play, and the ability to score from anywhere in and around the box.",
+      "keyStrengths": ["Clinical finishing with both feet", "Intelligent off-the-ball movement", "Link-up play and combination passing"],
+      "worldCup2026Role": "The main striker and talisman; everything flows through David in attack, and he is the player Canada will rely on to deliver goals on the biggest stage.",
+      "notableFact": "David became Canada's all-time leading scorer while still in his early twenties, surpassing legends of the Canadian game with his prolific record at both club and international level."
+    },
+    "David Junior Hoilett": {
+      "bio": "A veteran winger with a wealth of experience in English and Scottish football, Hoilett has been a loyal servant to Canadian football for over a decade. His experience at clubs like Blackburn Rovers, QPR, and Cardiff City gives him invaluable know-how.",
+      "playingStyle": "Experienced wide attacker who uses his intelligence and technical quality to find space, deliver crosses, and contribute goals with his shooting from distance.",
+      "keyStrengths": ["Experience and game intelligence", "Long-range shooting", "Crossing and delivery"],
+      "worldCup2026Role": "Senior squad member providing veteran leadership and wide attacking depth, capable of contributing in important moments off the bench.",
+      "notableFact": "Hoilett scored the goal that effectively sealed Canada's qualification for the 2022 World Cup in a crucial match, cementing his status as a national team legend."
+    },
+    "Tajon Buchanan": {
+      "bio": "One of Canada's most exciting young talents, Buchanan's explosive pace and dribbling ability earned him a move from MLS to Club Brugge in Belgium, then to Inter Milan on loan, and eventually to Villarreal in La Liga. His directness and flair make him a nightmare for fullbacks.",
+      "playingStyle": "Explosive, jet-heeled winger who beats defenders with raw pace, skilful dribbling, and unpredictable changes of direction.",
+      "keyStrengths": ["Blistering pace", "One-on-one dribbling", "Versatility across the front line"],
+      "worldCup2026Role": "Key attacking weapon whose pace and directness on the flanks will be central to Canada's ability to stretch opposing defenses.",
+      "notableFact": "Buchanan became one of the few Canadian players to play for an Italian giant when he joined Inter Milan, and his recovery from a broken tibia suffered during Copa America 2024 was a remarkable comeback story."
+    },
+    "Ismael Kone": {
+      "bio": "A dynamic and physically imposing young midfielder who rocketed from CF Montreal in MLS to Watford in England and then to Olympique Marseille in Ligue 1. Kone's combination of athleticism, technical ability, and box-to-box energy make him one of the most exciting Canadian prospects.",
+      "playingStyle": "Powerful, box-to-box midfielder who covers immense ground, drives forward with the ball, and combines physical dominance with surprisingly refined technical skills.",
+      "keyStrengths": ["Physical power and pace", "Ball-carrying through midfield", "Box-to-box engine"],
+      "worldCup2026Role": "Starting midfielder whose dynamism and athleticism give Canada a modern midfield presence capable of dominating physically against any opponent.",
+      "notableFact": "Kone's meteoric rise from the Canadian Premier League to Ligue 1 with Marseille in just a few years is one of the fastest ascents in Canadian football history."
+    },
+    "Liam Millar": {
+      "bio": "A Canadian youth product of Liverpool's academy, Millar has built a solid career in English football with stints at Kilmarnock, Charlton Athletic, and Preston North End in the Championship. His pace and work rate make him a useful wide option.",
+      "playingStyle": "Hard-working winger who uses his pace to stretch defenses, presses high from the front, and contributes defensively with tireless tracking back.",
+      "keyStrengths": ["Pace and direct running", "High pressing intensity", "Defensive work rate from the wing"],
+      "worldCup2026Role": "Squad depth player on the wings who provides energy and defensive commitment, useful for matches requiring high-intensity pressing.",
+      "notableFact": "Millar came through Liverpool's world-renowned Kirkby academy, training alongside some of the best young talents in world football during his formative years."
+    },
+    "Mark-Anthony Kaye": {
+      "bio": "A cultured central midfielder who has been one of the most consistent Canadian performers in MLS across stints with LAFC, Colorado Rapids, and Toronto FC. Kaye is known for his passing ability and composure in possession.",
+      "playingStyle": "Technically polished midfielder who controls tempo, distributes the ball cleanly, and connects the team's play from deep with progressive passing.",
+      "keyStrengths": ["Passing accuracy", "Composure on the ball", "Tempo control"],
+      "worldCup2026Role": "Midfield depth option whose comfort on the ball and passing range make him valuable for possession-heavy matches.",
+      "notableFact": "Kaye was a key figure in LAFC's inaugural MLS season and won the Supporters' Shield with the club, establishing himself as one of the top central midfielders in the league."
+    },
+    "Derek Cornelius": {
+      "bio": "A solid and dependable center-back who has gained valuable experience in European football with Malmo FF in Sweden. Cornelius has been a steady presence in Canada's defensive rotation and brings a calm, composed style.",
+      "playingStyle": "Composed, ball-playing center-back who defends with intelligence rather than brute force, reading the game well and stepping into midfield with the ball.",
+      "keyStrengths": ["Composure under pressure", "Reading the game", "Ball-playing ability from the back"],
+      "worldCup2026Role": "Reliable center-back rotation option who can step in without any drop in quality, providing important defensive depth.",
+      "notableFact": "Cornelius moved to Europe with Vancouver Whitecaps product credentials and has become a regular in the Swedish Allsvenskan, gaining valuable European experience."
+    },
+    "Maxime Crepeau": {
+      "bio": "A talented goalkeeper who has been a standout performer in MLS, first with Vancouver Whitecaps and then with LAFC before moving to Portland Timbers. Crepeau's shot-stopping and commanding presence make him a strong contender for the number one jersey.",
+      "playingStyle": "Athletic goalkeeper with sharp reflexes, excellent one-on-one ability, and the confidence to sweep behind a high defensive line.",
+      "keyStrengths": ["Shot-stopping ability", "One-on-one bravery", "Sweeping behind the defense"],
+      "worldCup2026Role": "Strong competition for the starting goalkeeper position, bringing MLS Cup-winning experience and top-level consistency.",
+      "notableFact": "Crepeau was in goal when LAFC won the dramatic 2022 MLS Cup final, one of the most memorable matches in league history, which ended in a penalty shootout."
+    },
+    "Cyle Larin": {
+      "bio": "Canada's second-highest goal scorer and a veteran of the country's football resurgence. After breaking records in MLS with Orlando City, Larin moved to Europe and has played in Turkey, Belgium, and Spain's La Liga with Real Valladolid.",
+      "playingStyle": "Physical, powerful striker who uses his size and strength to hold up play, score with his head, and finish from close range inside the box.",
+      "keyStrengths": ["Physical presence and hold-up play", "Aerial threat", "Goal-scoring instinct"],
+      "worldCup2026Role": "Important striker option alongside Jonathan David, offering a different aerial and physical dimension as a partner or substitute.",
+      "notableFact": "Larin set the MLS rookie scoring record with Orlando City and is one of the few Canadian players to score in multiple continents across his club career."
+    },
+    "Milan Borjan": {
+      "bio": "The most experienced goalkeeper in Canadian history, Borjan has been the undisputed number one for over a decade. Born in what is now Serbia, he has represented Canada across hundreds of international windows and is a true legend of the national team.",
+      "playingStyle": "Experienced, vocal goalkeeper who commands his area with authority, makes big saves in crucial moments, and organizes the defense with his communication.",
+      "keyStrengths": ["Experience and leadership", "Big-game shot-stopping", "Organizing the defense"],
+      "worldCup2026Role": "Veteran goalkeeper whose immense experience and leadership make him a key figure, whether starting or mentoring the younger keepers.",
+      "notableFact": "Borjan has played extensively in the Champions League with Crvena Zvezda (Red Star Belgrade), including memorable campaigns against Europe's elite clubs."
+    },
+    "Alphonso Davies": {
+      "bio": "The undisputed superstar of Canadian football and one of the most exciting players in the world. Born in a Ghanaian refugee camp in Buduburam, Davies emigrated to Canada as a child and rose from the Vancouver Whitecaps to become a Champions League winner with Bayern Munich. He is the most valuable Canadian player ever.",
+      "playingStyle": "Devastatingly quick left-back who combines blistering pace with silky dribbling, marauding forward runs, and the ability to play as a winger or wing-back.",
+      "keyStrengths": ["World-class pace", "Dribbling and ball-carrying", "Attacking dynamism from fullback"],
+      "worldCup2026Role": "The team's superstar and captain-quality leader; Davies will be the player opposing teams fear most and the one Canada builds their system around on the left side.",
+      "notableFact": "Davies won the UEFA Champions League with Bayern Munich in 2020 at just 19 years old, becoming the first Canadian to win the competition and delivering iconic performances against Barcelona and Chelsea."
+    },
+    "Lucas Cavallini": {
+      "bio": "A physical and combative striker who has been a reliable goal-scorer for Canada in CONCACAF competition. After spells in South America and Mexico, Cavallini returned to Canada with the Vancouver Whitecaps in MLS.",
+      "playingStyle": "Strong, aggressive target striker who uses his physicality to bully defenders, holds the ball up effectively, and scores scrappy goals inside the box.",
+      "keyStrengths": ["Physical strength", "Hold-up play", "Competitive aggression"],
+      "worldCup2026Role": "Squad striker whose physical presence and aggression provide a different option off the bench when Canada need to get direct.",
+      "notableFact": "Cavallini scored important goals during Canada's World Cup qualifying campaign and has played club football in Uruguay, Mexico, and Brazil, giving him a uniquely diverse international career."
+    },
+    "Jonathan Osorio": {
+      "bio": "A one-club man in MLS who has spent his entire professional career with Toronto FC, Osorio is one of the most decorated Canadian players in league history. His technical ability, goal-scoring from midfield, and leadership have made him a national team stalwart.",
+      "playingStyle": "Intelligent, goal-scoring midfielder who makes late runs into the box, links play with neat passing, and provides creative spark from a central or advanced midfield role.",
+      "keyStrengths": ["Late runs into the box", "Goal-scoring from midfield", "Link-up play and creativity"],
+      "worldCup2026Role": "Experienced midfield option whose goal threat and leadership make him a valuable impact player, especially in matches where Canada need a creative spark.",
+      "notableFact": "Osorio won the MLS Cup with Toronto FC in 2017 as part of one of the greatest single-season teams in MLS history, and he is the club's all-time leading Canadian goal scorer."
+    },
+    "Richie Laryea": {
+      "bio": "A versatile and energetic defender who can play at right-back or wing-back. Laryea has been a key figure for Toronto FC in MLS and has earned consistent call-ups to the national team with his pace and defensive commitment.",
+      "playingStyle": "Pacy, versatile fullback who excels in one-on-one defensive situations, transitions quickly from defense to attack, and provides energy on the right side.",
+      "keyStrengths": ["Pace and one-on-one defending", "Versatility across defensive positions", "Transition speed"],
+      "worldCup2026Role": "Versatile defensive option who can cover right-back and wing-back, providing tactical flexibility to the coaching staff.",
+      "notableFact": "Laryea had a brief loan stint at Nottingham Forest in the Championship, and his pace has made him one of the hardest players to beat one-on-one in MLS."
+    },
+    "Scott Kennedy": {
+      "bio": "A tall center-back who has built his career in German football with SSV Jahn Regensburg in the 2. Bundesliga. Kennedy's height and aerial ability make him a valuable defensive option for set-piece situations.",
+      "playingStyle": "Tall, physical center-back who excels in aerial duels, defends set pieces with authority, and provides a commanding presence in the box.",
+      "keyStrengths": ["Aerial dominance", "Set-piece defending", "Physical presence"],
+      "worldCup2026Role": "Defensive depth option whose height and aerial ability are particularly useful for specific tactical matchups and set-piece situations.",
+      "notableFact": "Kennedy has spent his entire professional career in Germany, developing his game in one of the most tactically demanding football systems in the world."
+    },
+    "Jacob Shaffelburg": {
+      "bio": "A quick and direct left-footed winger from Nova Scotia who developed through the Toronto FC academy before moving to Nashville SC. Shaffelburg's pace and directness off the bench have made him a useful weapon for Canada.",
+      "playingStyle": "Pacy, left-footed winger who attacks defenders with direct dribbling, stretches play with his speed, and delivers crosses from wide positions.",
+      "keyStrengths": ["Pace and direct running", "Left-footed crossing", "Impact off the bench"],
+      "worldCup2026Role": "Impact substitute winger whose pace and directness can exploit tired defenses in the closing stages of matches.",
+      "notableFact": "Shaffelburg hails from Nova Scotia, one of the less traditional football hotbeds in Canada, making his rise to the World Cup squad an inspiring story for youth players in the region."
+    },
+    "Moise Bombito": {
+      "bio": "A rising young center-back who has quickly established himself in MLS with the Colorado Rapids and earned national team recognition with his athletic defending. Born in Cameroon and raised in Canada, Bombito brings raw physical tools and upside to the squad.",
+      "playingStyle": "Athletic, explosive center-back with recovery pace, physical dominance in duels, and the ability to step forward aggressively to win the ball high up the pitch.",
+      "keyStrengths": ["Recovery pace for a center-back", "Physical dominance", "Aggressive defending"],
+      "worldCup2026Role": "Young, athletic defensive option who can match up against pacey forwards and provides a modern, aggressive center-back profile.",
+      "notableFact": "Bombito's combination of size, speed, and agility has drawn attention from European scouts, and his rapid rise from the Canadian Premier League to the national team highlights the growing depth of Canadian football."
+    },
+    "Theo Corbeanu": {
+      "bio": "A tall and technically gifted young winger with dual Canadian-Romanian heritage who developed in Wolverhampton Wanderers' academy. Corbeanu has gained first-team experience on loan at various English clubs and chose to represent Canada at senior level.",
+      "playingStyle": "Tall, skillful winger who uses his height and reach to shield the ball, takes on defenders with close control, and can play across the forward line.",
+      "keyStrengths": ["Height and physical presence for a winger", "Close control and dribbling", "Versatility across the front line"],
+      "worldCup2026Role": "Young attacking option who provides a unique physical profile on the wing, with the height and skill to offer something different as a substitute.",
+      "notableFact": "Corbeanu developed in Wolverhampton Wanderers' Premier League academy, training at one of England's top academies before choosing Canada over Romania for his international career."
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Thibaut Courtois": {
+      "bio": "One of the world's elite goalkeepers, Courtois has been Real Madrid's first-choice keeper since 2018 and was instrumental in their Champions League triumphs. The towering Belgian returned from a serious ACL injury to reclaim his starting spot.",
+      "playingStyle": "Commanding shot-stopper with exceptional reach and positioning, dominant in one-on-one situations and aerially",
+      "keyStrengths": ["Shot-stopping reflexes", "Aerial command", "Distribution with feet"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and vocal defensive leader",
+      "notableFact": "Won the Yashin Trophy as the world's best goalkeeper in 2022 and was named best goalkeeper at the 2018 World Cup"
+    },
+    "Ameen Al-Dakhil": {
+      "bio": "Born in Baghdad, Iraq, Al-Dakhil moved to Belgium as a child and rose through the Belgian youth ranks. He earned his move to VfB Stuttgart after impressive performances in the Pro League.",
+      "playingStyle": "Left-footed center-back with strong aerial ability and composed ball-playing from deep",
+      "keyStrengths": ["Aerial duels", "Left-footed passing", "Positional discipline"],
+      "worldCup2026Role": "Squad depth center-back option, offering left-footed variety in the backline",
+      "notableFact": "Has dual Iraqi-Belgian nationality and chose to represent Belgium at senior level after playing for Belgian youth teams"
+    },
+    "Arthur Theate": {
+      "bio": "A modern left-footed center-back who emerged at Bologna in Serie A before moving to Rennes. Theate is known for his versatility, equally comfortable at center-back or left-back.",
+      "playingStyle": "Ball-carrying defender who drives forward from the backline with aggressive pressing and strong tackling",
+      "keyStrengths": ["Ball progression", "Defensive versatility", "Tackling"],
+      "worldCup2026Role": "Starting center-back or left-back option in defensive rotations",
+      "notableFact": "Scored on his Serie A debut for Bologna and quickly became one of the most sought-after young defenders in Europe"
+    },
+    "Wout Faes": {
+      "bio": "Faes developed at Anderlecht before stints in France and England, establishing himself as a reliable Premier League center-back at Leicester City before moving to Monaco.",
+      "playingStyle": "Physical, no-nonsense defender who excels in duels and aerial battles with solid positional sense",
+      "keyStrengths": ["Aerial dominance", "Physical duels", "Defensive positioning"],
+      "worldCup2026Role": "Starting center-back candidate providing defensive solidity",
+      "notableFact": "Infamously scored two own goals against Liverpool in a Premier League match in 2022, turning a memorable moment into motivation"
+    },
+    "Maxim De Cuyper": {
+      "bio": "A product of Club Brugge's academy, De Cuyper broke into the first team and quickly became a key player with his overlapping runs and accurate crossing from the left flank.",
+      "playingStyle": "Attack-minded left-back with excellent crossing ability and pace to bomb forward on the overlap",
+      "keyStrengths": ["Crossing accuracy", "Overlapping runs", "Set-piece delivery"],
+      "worldCup2026Role": "Starting left-back providing width and attacking thrust down the flank",
+      "notableFact": "Earned his Belgium call-up after a breakout Champions League campaign with Club Brugge"
+    },
+    "Axel Witsel": {
+      "bio": "A veteran midfielder with over 130 caps, Witsel has played at the highest level across multiple leagues including Russia, China, Germany, and Spain. He is one of Belgium's most experienced internationals ever.",
+      "playingStyle": "Deep-lying midfielder with excellent reading of the game, calm under pressure, and strong in shielding the defense",
+      "keyStrengths": ["Experience and composure", "Defensive screening", "Long-range passing"],
+      "worldCup2026Role": "Experienced squad veteran providing midfield depth and leadership, likely a rotational option",
+      "notableFact": "Has represented Belgium at three consecutive World Cups (2014, 2018, 2022) and could make it a remarkable four in 2026"
+    },
+    "Kevin De Bruyne": {
+      "bio": "Widely regarded as one of the best midfielders in football history, De Bruyne has been the creative heartbeat of Manchester City's dominance and Belgium's golden generation. A multiple Premier League champion and assist king.",
+      "playingStyle": "Complete attacking midfielder with world-class vision, devastating through balls, and powerful shooting from distance",
+      "keyStrengths": ["Vision and passing range", "Long-range shooting", "Set-piece delivery"],
+      "worldCup2026Role": "Captain and creative fulcrum of the team, the player everything runs through in attack",
+      "notableFact": "Holds the Premier League record for most assists in a single season (20) and has won six league titles with Manchester City"
+    },
+    "Youri Tielemans": {
+      "bio": "Tielemans became the youngest player to appear in the Belgian Pro League at 16 and has since developed into a consistent Premier League midfielder at Leicester City and then Aston Villa.",
+      "playingStyle": "Box-to-box midfielder with excellent technical ability, smart positioning, and a powerful long-range shot",
+      "keyStrengths": ["Long-range shooting", "Ball retention", "Tactical intelligence"],
+      "worldCup2026Role": "Key central midfielder providing the link between defense and attack alongside De Bruyne",
+      "notableFact": "Scored the winning goal in the 2021 FA Cup final for Leicester City against Chelsea at Wembley"
+    },
+    "Romelu Lukaku": {
+      "bio": "Belgium's all-time top scorer with 85 goals, Lukaku is a prolific striker who has starred across the Premier League, Serie A, and beyond. Despite a turbulent club career with transfers, his international record is extraordinary.",
+      "playingStyle": "Powerful, physical striker with explosive pace for his size, clinical finishing, and improving link-up play",
+      "keyStrengths": ["Clinical finishing", "Physical power and pace", "Movement in the box"],
+      "worldCup2026Role": "Starting center-forward and primary goal threat, the focal point of Belgium's attack",
+      "notableFact": "Became Belgium's all-time top scorer surpassing Bernard Voorhoof, with a goals-per-game ratio among the best of any active international striker"
+    },
+    "Johan Bakayoko": {
+      "bio": "One of the most exciting young talents in European football, Bakayoko burst onto the scene at PSV Eindhoven with dazzling dribbling and direct wing play. Born in Belgium to Ivorian parents.",
+      "playingStyle": "Electric inverted winger who cuts inside from the right on his favored left foot, with explosive acceleration and flair",
+      "keyStrengths": ["Dribbling and flair", "Cutting inside on left foot", "Pace and acceleration"],
+      "worldCup2026Role": "Starting right winger or impact substitute bringing creativity and directness to the attack",
+      "notableFact": "Was linked with moves to Europe's biggest clubs after a sensational Eredivisie season, drawing comparisons to Arjen Robben for his inverted winger style"
+    },
+    "Yannick Carrasco": {
+      "bio": "A seasoned Belgian international who has experienced football across Europe and Asia, Carrasco is known for his pace and directness on the left wing. He scored in the 2016 Champions League final for Atletico Madrid.",
+      "playingStyle": "Pacy, direct winger who takes on defenders with skill and delivers dangerous crosses from wide positions",
+      "keyStrengths": ["Pace and dribbling", "Crossing from wide areas", "Big-game experience"],
+      "worldCup2026Role": "Experienced wide option providing depth and rotation on the flanks",
+      "notableFact": "Scored the equalizer in the 2016 Champions League final for Atletico Madrid against Real Madrid"
+    },
+    "Arnaud Bodart": {
+      "bio": "A hometown hero at Standard Liege, Bodart has been a consistent performer in the Belgian Pro League and earned his place as a reliable backup goalkeeper in the national team setup.",
+      "playingStyle": "Agile goalkeeper with good reflexes and comfort playing out from the back",
+      "keyStrengths": ["Shot-stopping reflexes", "Agility", "Distribution"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth behind Courtois and Sels",
+      "notableFact": "Son of a former Standard Liege player, continuing a family legacy at the club"
+    },
+    "Matz Sels": {
+      "bio": "After spells in Belgium and Germany, Sels found his best form at Nottingham Forest in the Premier League, becoming one of the league's standout keepers and earning a firm place as Belgium's number two.",
+      "playingStyle": "Commanding goalkeeper with strong reflexes and good communication who organizes the backline effectively",
+      "keyStrengths": ["Shot-stopping", "Command of the area", "Communication"],
+      "worldCup2026Role": "Second-choice goalkeeper and primary backup to Courtois",
+      "notableFact": "Was a key figure in Nottingham Forest's Premier League survival campaigns after their promotion"
+    },
+    "Arne Engels": {
+      "bio": "A rising Belgian midfield talent, Engels made his name at Celtic in the Scottish Premiership with composed performances and an eye for goal. He represents the next wave of Belgian midfield talent.",
+      "playingStyle": "Technical central midfielder with good ball retention, vision to pick a pass, and an ability to arrive late in the box",
+      "keyStrengths": ["Technical ability", "Passing range", "Late runs into the box"],
+      "worldCup2026Role": "Young midfield option providing creative depth in the squad rotation",
+      "notableFact": "Quickly became a fan favorite at Celtic after adapting seamlessly to the demands of Scottish football and European competition"
+    },
+    "Thomas Meunier": {
+      "bio": "A veteran right-back who has played for PSG, Borussia Dortmund, and Lille, Meunier is known for his overlapping runs and goal contributions from defense. A key member of Belgium's 2018 World Cup third-place squad.",
+      "playingStyle": "Attacking full-back with excellent crossing and surprising goalscoring ability for a defender",
+      "keyStrengths": ["Overlapping runs", "Crossing", "Goalscoring from full-back"],
+      "worldCup2026Role": "Experienced right-back depth option and rotational player",
+      "notableFact": "Scored three goals at the 2018 World Cup in Russia, the most by any defender in the tournament"
+    },
+    "Thorgan Hazard": {
+      "bio": "The younger brother of Eden Hazard, Thorgan has carved out his own successful career with stints at Borussia Dortmund and the Belgian national team. He returned to Anderlecht to be closer to home.",
+      "playingStyle": "Versatile left-sided attacker with good technique, movement, and the ability to play as a winger or wing-back",
+      "keyStrengths": ["Versatility", "Technical quality", "Movement off the ball"],
+      "worldCup2026Role": "Experienced squad player offering versatility across the left flank positions",
+      "notableFact": "Scored the winning goal against England in the 2018 World Cup third-place playoff to secure Belgium's best-ever finish"
+    },
+    "Leandro Trossard": {
+      "bio": "Trossard made a strong impression at Brighton before earning a move to Arsenal, where he has become a valuable squad member contributing goals and assists from wide and central attacking positions.",
+      "playingStyle": "Clever, versatile attacker who drifts between the lines, comfortable on either wing with an eye for goal",
+      "keyStrengths": ["Versatility across the front line", "Clinical finishing", "Intelligent movement"],
+      "worldCup2026Role": "Key attacking option capable of playing across the forward line, likely starting on the left wing",
+      "notableFact": "Scored a hat-trick as a substitute against Manchester City in a memorable Premier League performance"
+    },
+    "Orel Mangala": {
+      "bio": "Mangala developed through the Belgian youth system and gained experience in the Bundesliga before moving to Lyon. He is a dynamic box-to-box presence in midfield.",
+      "playingStyle": "Energetic box-to-box midfielder with strong ball-carrying ability and pressing intensity",
+      "keyStrengths": ["Ball-carrying", "Pressing intensity", "Engine and stamina"],
+      "worldCup2026Role": "Midfield rotation option adding energy and dynamism off the bench",
+      "notableFact": "Named after the famous Brazilian midfielder by his football-loving father"
+    },
+    "Zeno Debast": {
+      "bio": "One of the youngest players to captain Anderlecht, Debast earned a move to Sporting CP in Portugal and has rapidly developed into a top-level center-back. He represented Belgium at the 2022 World Cup as a teenager.",
+      "playingStyle": "Composed, ball-playing center-back with maturity beyond his years and excellent distribution from deep",
+      "keyStrengths": ["Composure on the ball", "Long passing", "Defensive maturity"],
+      "worldCup2026Role": "Starting center-back bringing youth and technical quality to the defensive line",
+      "notableFact": "Was just 19 years old when he played at the 2022 World Cup in Qatar, one of the youngest defenders in the tournament"
+    },
+    "Aster Vranckx": {
+      "bio": "A Belgian youth international who made his Bundesliga breakthrough at Wolfsburg after a spell at AC Milan. Vranckx is a physical yet technically gifted midfielder with significant potential.",
+      "playingStyle": "Physical midfielder who combines power with technical skill, effective in defensive transitions",
+      "keyStrengths": ["Physical presence", "Tackling", "Ball recovery"],
+      "worldCup2026Role": "Young midfield depth option bringing physicality and defensive cover",
+      "notableFact": "Became one of the youngest Belgian players to feature in Serie A during his loan at AC Milan"
+    },
+    "Timothy Castagne": {
+      "bio": "A reliable full-back who has proven himself in Serie A with Atalanta and the Premier League with Leicester City and Fulham. Castagne is valued for his defensive solidity and ability to play on either flank.",
+      "playingStyle": "Dependable two-way full-back equally comfortable on the right or left, with strong defensive positioning and steady crossing",
+      "keyStrengths": ["Defensive reliability", "Two-footed versatility", "Consistent performances"],
+      "worldCup2026Role": "Versatile starting full-back option who can cover both flanks effectively",
+      "notableFact": "Suffered a double eye socket fracture just minutes into Belgium's opening Euro 2020 match but came back stronger"
+    },
+    "Charles De Ketelaere": {
+      "bio": "After a difficult spell at AC Milan, De Ketelaere revived his career spectacularly at Atalanta, becoming one of Serie A's most creative players. The tall, elegant playmaker is a product of Club Brugge's academy.",
+      "playingStyle": "Tall, elegant attacking midfielder with silky technique, creative vision, and an ability to drift into dangerous positions",
+      "keyStrengths": ["Creative playmaking", "Technical elegance", "Versatility in attack"],
+      "worldCup2026Role": "Key creative option behind the striker, competing with De Bruyne for the number 10 role or playing alongside him",
+      "notableFact": "Won the Europa League with Atalanta in 2024, scoring in the knockout stages of the competition"
+    },
+    "Michy Batshuayi": {
+      "bio": "A well-traveled striker with experience at Chelsea, Dortmund, Valencia, Crystal Palace, and Frankfurt. Despite not always being first choice at club level, Batshuayi has a remarkable international goalscoring record.",
+      "playingStyle": "Instinctive poacher with sharp movement inside the box and clinical finishing when given chances",
+      "keyStrengths": ["Poaching instinct", "Movement in the box", "Clinical finishing"],
+      "worldCup2026Role": "Third-choice striker and impact substitute offering a different attacking option",
+      "notableFact": "Scored the winning goal against England at the 2018 World Cup group stage with a last-minute strike"
+    },
+    "Amadou Onana": {
+      "bio": "A towering midfield presence who has rapidly established himself as one of the Premier League's best defensive midfielders at Everton and then Aston Villa. Onana combines imposing physicality with surprising technical quality.",
+      "playingStyle": "Dominant defensive midfielder with exceptional physical attributes, strong in aerial duels, and capable of driving forward with the ball",
+      "keyStrengths": ["Physical dominance", "Aerial ability in midfield", "Ball-carrying power"],
+      "worldCup2026Role": "Starting defensive midfielder and midfield anchor providing protection for the back line",
+      "notableFact": "Born in Senegal and raised in Belgium, standing at 195cm he is one of the most physically imposing midfielders in world football"
+    },
+    "Jeremy Doku": {
+      "bio": "A dazzling winger signed by Manchester City from Rennes, Doku is one of the most exciting young talents in world football with his explosive pace and fearless dribbling ability.",
+      "playingStyle": "Explosive, direct winger with blistering pace and one of the highest successful dribble rates in the Premier League",
+      "keyStrengths": ["Blistering pace", "Dribbling ability", "One-on-one beating"],
+      "worldCup2026Role": "Starting winger and primary source of width and dribbling creativity in attack",
+      "notableFact": "Was personally scouted and signed by Pep Guardiola, who compared his dribbling style to that of a young Neymar"
+    },
+    "Lois Openda": {
+      "bio": "A rapid, lethal striker who exploded at RB Leipzig in the Bundesliga after developing at Club Brugge and RC Lens. Openda's pace and pressing intensity make him a nightmare for defenders.",
+      "playingStyle": "Lightning-fast striker who presses relentlessly from the front and makes devastating runs behind the defensive line",
+      "keyStrengths": ["Explosive pace", "High pressing", "Runs in behind"],
+      "worldCup2026Role": "Starting striker or dynamic attacking partner alongside Lukaku in a two-forward system",
+      "notableFact": "Scored over 20 Bundesliga goals in his debut season at RB Leipzig, immediately becoming one of the league's top scorers"
+    }
+  }
+}

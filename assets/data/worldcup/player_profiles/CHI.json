@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Claudio Bravo": {
+      "bio": "Legendary Chilean goalkeeper and former Barcelona and Manchester City number one. Captain of the golden generation that won back-to-back Copa America titles in 2015 and 2016.",
+      "playingStyle": "Ball-playing goalkeeper with exceptional distribution and sweeper-keeper qualities",
+      "keyStrengths": ["Distribution", "Sweeper-keeper ability", "Leadership"],
+      "worldCup2026Role": "Veteran presence and potential captain providing invaluable experience and leadership to the squad",
+      "notableFact": "Won the Copa America in 2015 and 2016, saving penalties in both finals to become a national hero"
+    },
+    "Eugenio Mena": {
+      "bio": "Long-serving Chilean left-back who has been a reliable member of La Roja for over a decade. Has played in multiple World Cups and Copa America tournaments.",
+      "playingStyle": "Steady, experienced left-back who provides defensive solidity and overlapping width",
+      "keyStrengths": ["Experience", "Defensive reliability", "Consistent crossing"],
+      "worldCup2026Role": "Veteran backup left-back providing depth and tournament experience from the bench",
+      "notableFact": "Was part of Chile's squads at the 2014 World Cup and both Copa America-winning campaigns"
+    },
+    "Guillermo Maripán": {
+      "bio": "Imposing Chilean center-back who has been a regular starter at Monaco in Ligue 1. Combines physical presence with ability on the ball, making him a modern center-back.",
+      "playingStyle": "Tall, commanding center-back who dominates aerial duels and steps forward with the ball",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Ball-playing ability"],
+      "worldCup2026Role": "Starting center-back and defensive leader organizing the backline",
+      "notableFact": "Has been a consistent performer in Ligue 1 with Monaco for several seasons, playing regularly in European competition"
+    },
+    "Mauricio Isla": {
+      "bio": "Iconic Chilean right-back with an incredibly long career spanning Juventus, Marseille, Fenerbahce, and Flamengo. One of the most capped Chilean players of all time.",
+      "playingStyle": "Tireless wing-back who covers the entire flank with energy and determination",
+      "keyStrengths": ["Stamina", "Experience", "Attacking overlaps"],
+      "worldCup2026Role": "Experienced squad member who provides leadership and can deputize at right-back",
+      "notableFact": "Won Serie A with Juventus and played in the Champions League, amassing over 140 caps for Chile"
+    },
+    "Erick Pulgar": {
+      "bio": "Solid central midfielder who has played in Serie A with Fiorentina and Bologna before moving to Brazilian football with Flamengo. Known for his set-piece delivery and physical presence.",
+      "playingStyle": "Strong, combative midfielder who wins duels and delivers dangerous set pieces",
+      "keyStrengths": ["Set-piece delivery", "Physical duels", "Tactical discipline"],
+      "worldCup2026Role": "Starting central midfielder providing steel, set-piece quality, and experience",
+      "notableFact": "Known for his dangerous free kicks, he has scored several spectacular goals from dead-ball situations throughout his career"
+    },
+    "Francisco Sierralta": {
+      "bio": "Tall Chilean center-back playing his trade in the English Championship with Watford. A physical defender who has been developing his game in the competitive English league system.",
+      "playingStyle": "Physical, no-nonsense center-back who excels in aerial duels and one-on-one defending",
+      "keyStrengths": ["Aerial ability", "Physical defending", "Courage"],
+      "worldCup2026Role": "Defensive depth option providing additional cover at center-back",
+      "notableFact": "Has gained valuable experience playing in the demanding English Championship with Watford"
+    },
+    "Alexis Sánchez": {
+      "bio": "Chile's greatest ever player and all-time leading scorer. A global star who shone at Barcelona, Arsenal, and Manchester United, leading Chile to their two Copa America titles with electrifying performances.",
+      "playingStyle": "Relentless, high-pressing forward who combines tireless work rate with devastating finishing and creativity",
+      "keyStrengths": ["Work rate", "Clinical finishing", "Creativity and flair"],
+      "worldCup2026Role": "Talisman, leader, and attacking inspiration whose presence lifts the entire squad",
+      "notableFact": "Chile's all-time top scorer with 50 goals, he won the Copa America Golden Ball award and was Arsenal's Player of the Year"
+    },
+    "Arturo Vidal": {
+      "bio": "Legendary Chilean warrior-midfielder who has won league titles with Juventus, Bayern Munich, Barcelona, and Inter Milan. One of the most decorated South American players of his generation.",
+      "playingStyle": "Aggressive, all-action box-to-box midfielder who tackles, presses, shoots, and leads by example",
+      "keyStrengths": ["Aggression", "Box-to-box dynamism", "Winning mentality"],
+      "worldCup2026Role": "Veteran leader and midfield warrior who brings intensity, experience, and a winning mentality",
+      "notableFact": "Has won league titles in Italy, Germany, Spain, and Italy again, making him one of the most decorated Chilean players ever"
+    },
+    "Jean Meneses": {
+      "bio": "Chilean winger who has built his career in Mexican football with Toluca and previously Leon. A direct attacker who provides width and pace from the left flank.",
+      "playingStyle": "Quick, direct winger who uses his pace to stretch defenses and deliver crosses",
+      "keyStrengths": ["Pace", "Directness", "Crossing"],
+      "worldCup2026Role": "Wide attacking option providing pace and width from the bench",
+      "notableFact": "Has been a standout performer in Liga MX, earning regular call-ups to the Chilean national team"
+    },
+    "Darío Osorio": {
+      "bio": "Electrifying young Chilean talent who represents the future of La Roja. Moved to Europe at a young age with FC Midtjylland and has been compared to Alexis Sanchez for his direct style.",
+      "playingStyle": "Quick, skilful young attacker who runs at defenders with confidence and creates chances with his dribbling",
+      "keyStrengths": ["Dribbling", "Pace", "Youth and fearlessness"],
+      "worldCup2026Role": "Exciting young starter or impact player who can change games with his individual brilliance",
+      "notableFact": "Left Universidad de Chile as a teenager to pursue his career in Europe, seen as the heir to Alexis Sanchez"
+    },
+    "Eduardo Vargas": {
+      "bio": "Prolific Chilean striker who is one of the greatest goalscorers in Copa America history. Has played across Europe and South America, always delivering for the national team.",
+      "playingStyle": "Instinctive striker who makes clever runs and finishes with composure in big moments",
+      "keyStrengths": ["Big-game goals", "Movement", "Composure in front of goal"],
+      "worldCup2026Role": "Experienced striker providing tournament pedigree and a proven goalscoring record",
+      "notableFact": "Joint-top scorer in Copa America history, including four goals in Chile's victorious 2015 tournament on home soil"
+    },
+    "Gabriel Arias": {
+      "bio": "Argentinean-born goalkeeper who chose to represent Chile at international level. Has been a reliable option in goal with experience in Argentinean football at Racing Club.",
+      "playingStyle": "Confident goalkeeper with strong shot-stopping and good command of his area",
+      "keyStrengths": ["Shot-stopping", "Confidence", "Experience"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced backup between the posts",
+      "notableFact": "Born in Argentina, he qualified for Chile through residency and has become a regular in the national team setup"
+    },
+    "Paulo Díaz": {
+      "bio": "Chilean center-back who has been one of the best defenders in Argentine football with River Plate. Previously played in the Saudi Pro League before returning to South America.",
+      "playingStyle": "Quick, modern center-back who defends aggressively and is comfortable with the ball at his feet",
+      "keyStrengths": ["Pace for a center-back", "Aggressive defending", "Ball-playing ability"],
+      "worldCup2026Role": "Starting center-back who provides pace and quality at the back",
+      "notableFact": "Has been a key part of River Plate's success in recent years, playing in Copa Libertadores knockout rounds"
+    },
+    "Gary Medel": {
+      "bio": "Iconic Chilean defender nicknamed 'The Pitbull' for his fierce, combative style. Despite his relatively short stature, he is one of the most feared tacklers in South American football.",
+      "playingStyle": "Ultra-aggressive, fearless defender who compensates for his lack of height with incredible tenacity and timing",
+      "keyStrengths": ["Tenacity", "Tackling", "Leadership by example"],
+      "worldCup2026Role": "Veteran defensive leader whose fierce determination and experience inspire the entire squad",
+      "notableFact": "Nicknamed 'El Pitbull' for his aggressive defending style, he has over 155 caps and has played in Serie A, La Liga, and the Premier League"
+    },
+    "Diego Valdés": {
+      "bio": "Creative Chilean playmaker who has been a standout performer in Liga MX with Club America. Left-footed and inventive, he provides the creative spark from an attacking midfield position.",
+      "playingStyle": "Left-footed playmaker who picks out passes, drives forward, and creates scoring opportunities",
+      "keyStrengths": ["Creativity", "Left-footed passing", "Goal contributions"],
+      "worldCup2026Role": "Starting or key rotation attacking midfielder providing creativity behind the strikers",
+      "notableFact": "Has been one of the most productive playmakers in Liga MX during his time at Club America"
+    },
+    "Marcelino Núñez": {
+      "bio": "Dynamic young Chilean midfielder playing at Norwich City in the English Championship. A left-footed creator with an eye for spectacular goals from distance.",
+      "playingStyle": "Left-footed midfielder who drives forward with the ball and strikes powerfully from range",
+      "keyStrengths": ["Long-range shooting", "Ball-carrying", "Set-piece quality"],
+      "worldCup2026Role": "Key midfielder who provides goals, assists, and energy from the center of the park",
+      "notableFact": "Has scored several spectacular long-range goals for both Norwich City and Chile, earning comparisons to Arturo Vidal"
+    },
+    "Víctor Dávila": {
+      "bio": "Chilean winger who has played in Mexico and Russia, gaining experience across different footballing cultures. A direct and pacy attacker who provides options on the left wing.",
+      "playingStyle": "Pacy, direct winger who beats defenders with skill and pace before delivering crosses or cutting inside",
+      "keyStrengths": ["Pace", "Dribbling", "Cutting inside"],
+      "worldCup2026Role": "Wide attacking option providing pace and directness from the bench or as a starter",
+      "notableFact": "Has gained unique international experience playing in both Liga MX and the Russian Premier League"
+    },
+    "Gabriel Suazo": {
+      "bio": "Modern Chilean left-back who made the move to European football with Toulouse in Ligue 1. Formerly captain of Colo-Colo, he combines defensive ability with attacking contribution.",
+      "playingStyle": "Overlapping left-back who delivers dangerous crosses and provides width in attack",
+      "keyStrengths": ["Crossing", "Attacking runs", "Leadership"],
+      "worldCup2026Role": "Starting left-back providing width, crossing quality, and defensive reliability",
+      "notableFact": "Was named captain of Colo-Colo at a young age before earning a move to European football with Toulouse"
+    },
+    "Lucas Assadi": {
+      "bio": "Prodigious young Chilean talent who broke into Universidad de Chile's first team as a teenager. Considered one of Chile's brightest prospects with exceptional technical ability.",
+      "playingStyle": "Gifted young playmaker with silky technique, close control, and creative vision beyond his years",
+      "keyStrengths": ["Technical ability", "Creative vision", "Close control"],
+      "worldCup2026Role": "Exciting young talent who can provide a spark of creativity from the bench",
+      "notableFact": "Made his professional debut at just 16 years old, becoming one of the youngest players to represent Universidad de Chile"
+    },
+    "Charles Aránguiz": {
+      "bio": "Masterful Chilean midfielder who was a key member of the golden generation. Starred in the Bundesliga with Bayer Leverkusen for years and is regarded as one of Chile's most intelligent players.",
+      "playingStyle": "Intelligent, press-resistant midfielder who controls games with his passing and tactical awareness",
+      "keyStrengths": ["Game intelligence", "Press resistance", "Passing accuracy"],
+      "worldCup2026Role": "Experienced midfield general who controls the tempo and provides crucial composure in big moments",
+      "notableFact": "Won the Copa America Best Player award in 2015 and was named in the Bundesliga Team of the Season during his time at Leverkusen"
+    },
+    "Ben Brereton Díaz": {
+      "bio": "English-born Chilean striker who discovered his Chilean heritage through his mother and chose to represent La Roja. Quickly became a fan favorite with his wholehearted performances.",
+      "playingStyle": "Strong, mobile striker who runs channels, wins aerial duels, and finishes with power",
+      "keyStrengths": ["Aerial ability", "Physical strength", "Channel running"],
+      "worldCup2026Role": "Starting striker or key attacking option who provides a physical focal point for the attack",
+      "notableFact": "Born in Stoke-on-Trent, England, he learned of his Chilean eligibility and immediately became a cult hero in Chile after choosing La Roja"
+    },
+    "Brayan Cortés": {
+      "bio": "Chilean goalkeeper who has been outstanding for Colo-Colo in domestic football. Known for his shot-stopping ability and commanding presence in goal.",
+      "playingStyle": "Athletic goalkeeper with quick reflexes and confident handling of crosses",
+      "keyStrengths": ["Reflexes", "Athleticism", "Shot-stopping"],
+      "worldCup2026Role": "Third-choice goalkeeper competing for a starting spot or providing reliable backup",
+      "notableFact": "Has been one of the best goalkeepers in Chilean domestic football during his time at Colo-Colo"
+    },
+    "Tomás Alarcón": {
+      "bio": "Young Chilean midfielder who moved to Spanish football with Cadiz. A tidy passer who provides balance and composure in the center of midfield.",
+      "playingStyle": "Neat, composed midfielder who keeps play ticking over with simple, effective passing",
+      "keyStrengths": ["Passing accuracy", "Composure", "Positional awareness"],
+      "worldCup2026Role": "Young midfield depth option who can step in to provide composure and control",
+      "notableFact": "Made the move from Chilean football to La Liga 2, gaining valuable European experience at a young age"
+    },
+    "Igor Lichnovsky": {
+      "bio": "Chilean center-back of Croatian descent who has built a strong career in Liga MX with Club America. A composed defender with good reading of the game.",
+      "playingStyle": "Calm, intelligent center-back who reads danger early and passes cleanly out of defense",
+      "keyStrengths": ["Reading of the game", "Clean passing", "Composure"],
+      "worldCup2026Role": "Defensive rotation option providing calm, experienced cover at center-back",
+      "notableFact": "Spent time in Real Madrid's youth academy before building his senior career in Mexican football"
+    },
+    "Clemente Montes": {
+      "bio": "Young Chilean winger who has been developing at Universidad Catolica in the domestic league. A direct and pacy attacker with potential for growth.",
+      "playingStyle": "Quick, direct winger who runs at defenders and looks to create or score",
+      "keyStrengths": ["Pace", "Directness", "Work rate"],
+      "worldCup2026Role": "Young squad player gaining tournament experience and providing attacking depth from the bench",
+      "notableFact": "Has been identified as one of Chilean football's brightest young talents at Universidad Catolica"
+    },
+    "Alexander Aravena": {
+      "bio": "Exciting young Chilean striker who has burst onto the scene at Universidad Catolica. A promising forward who represents the next generation of Chilean attacking talent.",
+      "playingStyle": "Mobile, energetic young striker with sharp finishing and clever movement in the box",
+      "keyStrengths": ["Finishing", "Movement", "Energy"],
+      "worldCup2026Role": "Young striker providing energy and fresh attacking options from the bench",
+      "notableFact": "Emerged as one of the top young strikers in the Chilean Primera Division, earning a rapid rise to the national team"
+    }
+  }
+}

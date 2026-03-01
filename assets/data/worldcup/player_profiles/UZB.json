@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Eldor Suyunov": {
+      "bio": "Experienced domestic goalkeeper who has been a reliable presence for Bunyodkor in the Uzbekistan Super League. A steady, consistent keeper who has earned 25 caps and provides valuable experience in the goalkeeping department.",
+      "playingStyle": "Solid, positionally aware goalkeeper who makes dependable saves, commands his area with vocal communication, and provides a calming influence between the posts.",
+      "keyStrengths": ["Positioning", "Communication", "Consistency"],
+      "worldCup2026Role": "First-choice or rotation goalkeeper bringing domestic experience and steady performances to Uzbekistan's historic World Cup campaign.",
+      "notableFact": "Has been a mainstay for Bunyodkor, one of Uzbekistan's most famous clubs, helping anchor their defense across multiple seasons."
+    },
+    "Dostonbek Khamdamov": {
+      "bio": "Experienced right-back with 40 international caps who has been a consistent performer for Pakhtakor in the Uzbekistan Super League. A reliable defensive presence who has been part of Uzbekistan's journey to their first-ever World Cup.",
+      "playingStyle": "Disciplined, steady right-back who provides solid defensive coverage, makes overlapping runs when the opportunity arises, and delivers crosses from the right flank.",
+      "keyStrengths": ["Defensive reliability", "Overlapping runs", "Crossing"],
+      "worldCup2026Role": "Starting right-back expected to provide defensive stability and attacking width in Uzbekistan's group stage matches.",
+      "notableFact": "Has been a cornerstone of Pakhtakor's defense and one of the most-capped players in Uzbekistan's current squad."
+    },
+    "Ibrokhimkhalil Tukhtasinov": {
+      "bio": "Young center-back emerging at Pakhtakor who represents the next generation of Uzbek defenders. Despite his youth, he has already earned 15 caps and shows the composure and physical tools to compete on the world stage.",
+      "playingStyle": "Tall, athletic young center-back who uses his physical frame to win aerial duels, steps forward to intercept passes, and has room to develop into a commanding defender.",
+      "keyStrengths": ["Aerial ability", "Physical athleticism", "Anticipation"],
+      "worldCup2026Role": "Young defensive option providing depth at center-back and representing Uzbekistan's exciting young generation.",
+      "notableFact": "At just 24, he is one of the youngest center-backs in the squad and has quickly progressed through the ranks at Pakhtakor."
+    },
+    "Husniddin Alikulov": {
+      "bio": "Solid center-back at AGMK in the Uzbekistan Super League who has earned 25 caps through consistent, dependable defensive performances. A physical defender who scores occasional goals from set pieces.",
+      "playingStyle": "Strong, physical center-back who wins defensive duels, competes aggressively in the air, and provides a goal threat from corners and free kicks.",
+      "keyStrengths": ["Physical strength", "Aerial duels", "Set-piece threat"],
+      "worldCup2026Role": "Starting center-back providing physical presence and aerial security in Uzbekistan's defensive line.",
+      "notableFact": "Has scored 2 goals in 25 international caps, contributing from set-piece situations as a center-back."
+    },
+    "Akmal Shorakhmedov": {
+      "bio": "Veteran center-back and one of Uzbekistan's most experienced defenders with 60 international caps. A long-serving stalwart at Pakhtakor who has been part of the national team setup for over a decade, providing leadership and stability.",
+      "playingStyle": "Experienced, commanding center-back who reads the game exceptionally well, organizes the defensive line, and makes crucial interventions through anticipation rather than pace.",
+      "keyStrengths": ["Experience", "Defensive organization", "Reading the game"],
+      "worldCup2026Role": "Veteran defensive leader and one of the squad's most experienced players, expected to marshal the back line at Uzbekistan's first World Cup.",
+      "notableFact": "With 60 caps, he is one of the most-capped players in the current squad and has been a defensive rock for Uzbekistan across multiple Asian Cup campaigns."
+    },
+    "Oston Urunov": {
+      "bio": "Uzbekistan's most prominent European-based player, competing in Ligue 1 with Lens in France. A dynamic midfielder who represents the growing ability of Uzbek players to compete at the highest levels of European club football.",
+      "playingStyle": "Energetic, technically skilled midfielder who drives forward with the ball, combines pressing intensity with creative passing, and brings European tactical awareness to the team.",
+      "keyStrengths": ["Ball progression", "European tactical awareness", "Pressing energy"],
+      "worldCup2026Role": "Key midfield starter and arguably Uzbekistan's most important outfield player, expected to control the midfield battle against top opponents.",
+      "notableFact": "Plays in Ligue 1 with Lens, making him one of very few Uzbek players competing in a top-five European league."
+    },
+    "Jaloliddin Masharipov": {
+      "bio": "Skillful, experienced winger with 65 caps and 10 goals who is considered one of the most talented Uzbek players of his generation. Has played in the Saudi Pro League with Al-Ittihad, showcasing his abilities on a bigger stage.",
+      "playingStyle": "Tricky, creative winger who beats defenders with quick changes of direction, delivers dangerous crosses and set pieces, and possesses a keen eye for goal.",
+      "keyStrengths": ["Dribbling", "Set-piece delivery", "Crossing"],
+      "worldCup2026Role": "Starting winger and one of Uzbekistan's primary creative outlets, expected to provide the attacking spark from wide positions.",
+      "notableFact": "With 10 goals in 65 caps, he is one of Uzbekistan's most prolific wingers and has played alongside world-class players in the Saudi Pro League."
+    },
+    "Farrukh Sayfiev": {
+      "bio": "Young midfielder playing in the Saudi Pro League with Al-Fayha, gaining valuable experience in a competitive league against high-quality opposition. A promising talent who adds depth to Uzbekistan's midfield.",
+      "playingStyle": "Composed, technically tidy midfielder who keeps possession flowing with clean passing, positions himself intelligently, and provides a steady presence in the middle of the park.",
+      "keyStrengths": ["Passing accuracy", "Composure on the ball", "Positional intelligence"],
+      "worldCup2026Role": "Midfield rotation option who can provide calm, controlled possession when introduced from the bench.",
+      "notableFact": "Competes in the Saudi Pro League, one of the wealthiest leagues in the world, gaining experience against top international talent."
+    },
+    "Eldor Shomurodov": {
+      "bio": "Uzbekistan's star striker and most high-profile player, having played in Serie A with Roma and Genoa before moving to the Turkish Super Lig. The country's leading active goalscorer with 18 goals in 55 caps, he is the face of Uzbek football on the world stage.",
+      "playingStyle": "Tall, mobile striker who combines physical presence with surprising pace, makes intelligent runs behind defensive lines, and finishes clinically with both feet and his head.",
+      "keyStrengths": ["Movement off the ball", "Clinical finishing", "Aerial ability"],
+      "worldCup2026Role": "Starting striker and Uzbekistan's most important attacking player, expected to lead the line and carry the nation's scoring hopes.",
+      "notableFact": "Became the first Uzbek player to score in Serie A when he found the net for Genoa, and went on to play for AS Roma in European competition."
+    },
+    "Ikboljon Ergashev": {
+      "bio": "Technical midfielder playing in Japan's J1 League with Urawa Red Diamonds, gaining experience in one of Asia's strongest domestic leagues. A creative player who adds flair and invention to Uzbekistan's midfield.",
+      "playingStyle": "Creative, technically gifted midfielder who picks passes between the lines, dribbles through congested areas, and provides an inventive spark in the attacking phase.",
+      "keyStrengths": ["Technical skill", "Creative passing", "Dribbling in tight spaces"],
+      "worldCup2026Role": "Creative midfield option who can unlock defenses with his technical ability, either as a starter or off the bench.",
+      "notableFact": "Competes in the J1 League in Japan, one of Asia's most competitive and technically demanding leagues."
+    },
+    "Otabek Shukurov": {
+      "bio": "Versatile left winger playing in South Korea's K League 1 with FC Seoul. An experienced attacker with 40 caps and 5 goals who provides width and creativity from the left side for both club and country.",
+      "playingStyle": "Direct, pacy winger who stretches defenses with his speed, delivers crosses from the left flank, and cuts inside to create shooting opportunities.",
+      "keyStrengths": ["Pace", "Direct running", "Crossing from the left"],
+      "worldCup2026Role": "Starting left winger providing width and attacking thrust on the opposite flank to Masharipov.",
+      "notableFact": "Has played in the K League 1, gaining experience in one of the strongest leagues in Asian football."
+    },
+    "Botir Ergashev": {
+      "bio": "Backup goalkeeper at Nasaf in the Uzbekistan Super League who provides depth in the goalkeeping department. A reliable domestic keeper who has earned 10 caps through steady club performances.",
+      "playingStyle": "Dependable, steady goalkeeper with reliable handling, good positional sense, and the ability to make important saves when called upon.",
+      "keyStrengths": ["Reliable handling", "Positioning", "Dependability"],
+      "worldCup2026Role": "Backup goalkeeper providing depth and competition in the goalkeeping group.",
+      "notableFact": "Named to the squad based on his consistent performances in the Uzbekistan Super League with Nasaf."
+    },
+    "Abbos Fayzullayev": {
+      "bio": "The brightest young talent in Uzbek football and one of the most exciting prospects in Asian football. Playing in the Turkish Super Lig with Istanbul Basaksehir at just 21, he has already earned comparisons to some of the continent's best young attackers.",
+      "playingStyle": "Electric, pacy young winger with explosive acceleration, quick feet, and the confidence to take on defenders and create chances through individual brilliance.",
+      "keyStrengths": ["Explosive pace", "Dribbling", "Fearlessness on the ball"],
+      "worldCup2026Role": "Exciting young attacking option who can be a game-changer with his pace and directness, either as a starter or an impact substitute.",
+      "notableFact": "Won the AFC U-20 Asian Cup Best Player award and is widely regarded as the future star of Uzbek football."
+    },
+    "Azizbek Turgunboev": {
+      "bio": "Young center-back developing at Neftchi Ferghana in the Uzbekistan Super League. A developing defender who has earned 15 caps and provides additional options in the heart of defense for the national team.",
+      "playingStyle": "Athletic, developing center-back who uses his pace and physicality to recover defensive situations, makes committed tackles, and is improving his positional play.",
+      "keyStrengths": ["Athleticism", "Recovery pace", "Tackling"],
+      "worldCup2026Role": "Young defensive depth option who provides cover at center-back and competition for places.",
+      "notableFact": "Has progressed through the domestic league system and earned international recognition at a young age."
+    },
+    "Abdulla Abdullaev": {
+      "bio": "Promising young striker at AGMK who has burst onto the scene with an impressive goal-scoring record for his age. With 3 goals in just 10 caps, he has shown a predatory instinct that makes him an exciting prospect for the future.",
+      "playingStyle": "Quick, sharp young striker who makes intelligent runs behind defenses, finishes with composure, and provides a dynamic attacking option with his pace and movement.",
+      "keyStrengths": ["Pace", "Composure in front of goal", "Movement off the ball"],
+      "worldCup2026Role": "Young attacking prospect providing a fresh, energetic option off the bench alongside more experienced strikers.",
+      "notableFact": "Has an impressive goals-to-caps ratio of 3 in 10 appearances, marking him as one of Uzbekistan's most promising young strikers."
+    },
+    "Jamshid Iskanderov": {
+      "bio": "Experienced defensive midfielder and one of the squad's veterans with 40 caps. A long-serving player at Pakhtakor who has been part of the national team setup for many years, providing midfield discipline and protection for the defense.",
+      "playingStyle": "Disciplined, positionally aware holding midfielder who breaks up opposition attacks, wins the ball back through interceptions, and distributes simply and effectively.",
+      "keyStrengths": ["Defensive positioning", "Interceptions", "Tactical discipline"],
+      "worldCup2026Role": "Experienced defensive midfield option who provides a shield for the back line and brings valuable tournament experience.",
+      "notableFact": "Has been one of the most consistent performers in the Uzbekistan Super League with Pakhtakor across many seasons."
+    },
+    "Diyorbek Shinboev": {
+      "bio": "Exciting young attacking midfielder at Pakhtakor who is one of the youngest players in Uzbekistan's World Cup squad. A technically gifted playmaker who represents the country's bright footballing future.",
+      "playingStyle": "Creative, nimble attacking midfielder with quick feet, clever passing between the lines, and the ability to find pockets of space in congested areas.",
+      "keyStrengths": ["Creativity", "Quick feet", "Finding space between lines"],
+      "worldCup2026Role": "Young creative talent who can provide an inventive spark from the bench and gain invaluable World Cup experience.",
+      "notableFact": "At just 23, he is one of the youngest players in the squad and has already shown his quality at international level with a goal in 5 caps."
+    },
+    "Suhrob Kholmatov": {
+      "bio": "Dependable right-back at Navbahor in the Uzbekistan Super League who provides backup and competition in the full-back positions. An energetic defender with 15 caps who adds depth to the squad.",
+      "playingStyle": "Energetic, hardworking right-back who provides defensive cover, makes forward runs when possible, and delivers crosses into the box from wide positions.",
+      "keyStrengths": ["Work rate", "Defensive cover", "Overlapping runs"],
+      "worldCup2026Role": "Backup right-back providing competition and depth in the defensive squad positions.",
+      "notableFact": "Has earned his place in the national team through consistent performances in the Uzbekistan Super League with Navbahor."
+    },
+    "Khojiakbar Alijonov": {
+      "bio": "Creative attacking midfielder playing in the Turkish Super Lig with Istanbul Basaksehir alongside teammates Shomurodov and Fayzullayev. A clever, inventive player who provides a link between midfield and attack.",
+      "playingStyle": "Intelligent, creative playmaker who operates in the spaces between opposition lines, delivers precise through balls, and contributes goals from advanced midfield positions.",
+      "keyStrengths": ["Through-ball passing", "Spatial awareness", "Goal contribution"],
+      "worldCup2026Role": "Key creative midfielder expected to provide the invention and final pass to unlock opposition defenses.",
+      "notableFact": "Plays alongside fellow Uzbek internationals Shomurodov and Fayzullayev at Istanbul Basaksehir, forming a strong Uzbek contingent in Turkish football."
+    },
+    "Sardor Rashidov": {
+      "bio": "Experienced winger with 50 caps and 6 goals who has represented Uzbekistan across multiple major Asian competitions. Has spent time in the Qatar Stars League with Al-Sadd, playing alongside some of the biggest names in world football.",
+      "playingStyle": "Quick, direct winger who provides width, beats defenders with changes of pace, and delivers crosses and cut-backs from wide areas.",
+      "keyStrengths": ["Pace", "Direct wing play", "Crossing"],
+      "worldCup2026Role": "Experienced wide attacker providing depth and the option to stretch defenses with his pace from the bench.",
+      "notableFact": "Has played alongside major international stars at Al-Sadd in Qatar and has been a consistent contributor for Uzbekistan across many years."
+    },
+    "Islom Tukhtakhujaev": {
+      "bio": "Dependable central midfielder at Pakhtakor with 30 international caps. A steady, reliable presence in the engine room who contributes consistent performances without the spotlight of flashier teammates.",
+      "playingStyle": "Hardworking, reliable central midfielder who keeps the team ticking with simple, effective passing, provides defensive cover, and maintains positional discipline.",
+      "keyStrengths": ["Reliability", "Defensive contribution", "Simple effective passing"],
+      "worldCup2026Role": "Midfield squad player who provides depth and reliable performances when called upon in rotation.",
+      "notableFact": "Has been a consistent performer for Pakhtakor in both the domestic league and AFC Champions League competition."
+    },
+    "Donier Islamov": {
+      "bio": "Veteran goalkeeper at Bunyodkor who provides experienced backup in the goalkeeping department. At 35, he brings years of domestic experience and professionalism to the squad.",
+      "playingStyle": "Experienced, calm goalkeeper who relies on his years of experience and good positioning to make saves, communicating effectively to organize the defense.",
+      "keyStrengths": ["Experience", "Vocal communication", "Positioning"],
+      "worldCup2026Role": "Third-choice goalkeeper providing veteran experience and mentorship to younger goalkeepers in the squad.",
+      "notableFact": "Has spent his career in Uzbek domestic football, maintaining his place in the national team setup through years of steady performances."
+    },
+    "Aziz Ganiev": {
+      "bio": "Left-back at Pakhtakor who has earned 20 international caps and provides a left-footed option in the defensive positions. A technical full-back who contributes to Uzbekistan's build-up play from the back.",
+      "playingStyle": "Left-footed full-back who provides natural width on the left side, delivers accurate crosses, and participates actively in the team's possession game.",
+      "keyStrengths": ["Left-footed delivery", "Crossing accuracy", "Build-up play involvement"],
+      "worldCup2026Role": "Starting left-back providing natural left-footed balance and attacking width in Uzbekistan's defensive setup.",
+      "notableFact": "Has been a regular for Pakhtakor, Uzbekistan's most successful and popular club, earning his international call-ups through consistent domestic form."
+    },
+    "Jasur Jaloliddinov": {
+      "bio": "Central midfielder at Navbahor who has earned 15 caps through consistent performances in the Uzbekistan Super League. A steady, industrious player who adds depth and competition in the midfield group.",
+      "playingStyle": "Industrious, hardworking midfielder who covers ground effectively, wins the ball back through effort and positioning, and keeps the team's shape with disciplined play.",
+      "keyStrengths": ["Work rate", "Ground coverage", "Tactical discipline"],
+      "worldCup2026Role": "Midfield depth option who can be called upon to provide energy and defensive stability from the bench.",
+      "notableFact": "Has worked his way into the national team from the Uzbekistan Super League, representing the domestic pathway to international football."
+    },
+    "Bobir Abdixolikov": {
+      "bio": "One of the most exciting young talents in Uzbek football, the 22-year-old striker at Pakhtakor has already made an impression with 2 goals in 8 caps. A dynamic young forward who could be a breakout star at the 2026 World Cup.",
+      "playingStyle": "Quick, agile young striker who runs the channels, makes clever diagonal movements, and finishes with the composure of a more experienced player.",
+      "keyStrengths": ["Pace and agility", "Intelligent runs", "Composure in front of goal"],
+      "worldCup2026Role": "Young attacking talent who could be an impact substitute, bringing fresh legs and unpredictability against tiring defenses.",
+      "notableFact": "At just 22, he is one of the youngest players in the squad and has already shown a strong goals-to-caps ratio for Uzbekistan."
+    },
+    "Rustam Ashurmatov": {
+      "bio": "Center-back playing in the UAE Pro League with Al-Ahli Dubai, gaining international experience outside of Uzbekistan. A physical defender with 20 caps who provides additional depth and versatility in the defensive group.",
+      "playingStyle": "Strong, physical center-back who uses his height and frame to dominate aerial battles, makes clean tackles, and provides a solid defensive presence.",
+      "keyStrengths": ["Aerial dominance", "Physical strength", "International league experience"],
+      "worldCup2026Role": "Center-back rotation option who brings experience from playing in the UAE Pro League against diverse international opposition.",
+      "notableFact": "One of the few Uzbek defenders playing abroad, gaining valuable experience in the UAE Pro League alongside international players."
+    }
+  }
+}

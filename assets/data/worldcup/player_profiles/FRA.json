@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Mike Maignan": {
+      "bio": "Born in Cayenne, French Guiana, Maignan rose through the PSG youth academy before establishing himself at Lille, where he won the 2021 Ligue 1 title as the league's best goalkeeper. He moved to AC Milan and quickly became one of Serie A's most commanding shot-stoppers.",
+      "playingStyle": "Aggressive, commanding goalkeeper who excels at sweeping behind a high defensive line. Outstanding reflexes and distribution with both feet, comfortable playing as a modern ball-playing keeper.",
+      "keyStrengths": ["Shot-stopping reflexes", "Sweeper-keeper range", "Distribution and passing out from the back"],
+      "worldCup2026Role": "Undisputed first-choice goalkeeper and vocal leader of the backline. Expected to be a key figure in France's build-up play from the back.",
+      "notableFact": "Won the Ligue 1 Goalkeeper of the Year award in his final season at Lille, conceding only 23 goals in 38 league matches during the title-winning campaign."
+    },
+    "Benjamin Pavard": {
+      "bio": "Pavard burst onto the world stage with a stunning volley against Argentina at the 2018 World Cup, voted the tournament's best goal. After years at Bayern Munich, he moved to Inter Milan where he won the Serie A title and became a Champions League finalist.",
+      "playingStyle": "Disciplined and tactically intelligent defender equally comfortable at right-back or center-back. Strong in the air, composed on the ball, and brings a calm, measured approach to defensive duties.",
+      "keyStrengths": ["Tactical versatility across the backline", "Aerial dominance", "Composure under pressure"],
+      "worldCup2026Role": "Versatile defensive option who can slot in at right-back or center-back depending on the tactical setup. A tournament-tested veteran providing crucial experience.",
+      "notableFact": "His volley against Argentina in the 2018 World Cup round of 16 was voted the FIFA Puskas Award Goal of the Year."
+    },
+    "Presnel Kimpembe": {
+      "bio": "A product of PSG's academy, Kimpembe spent his entire European career at the club, becoming vice-captain and a Champions League finalist in 2020. Persistent Achilles injuries derailed his prime years, leading to a move to Qatar, but his international pedigree remains valuable.",
+      "playingStyle": "Physical, aggressive center-back who uses his pace and power to win duels. Left-footed, which provides balance to the defensive line. Known for his intensity and willingness to put his body on the line.",
+      "keyStrengths": ["Physical aggression in duels", "Left-footed balance in defense", "Experience in high-pressure matches"],
+      "worldCup2026Role": "Experienced squad depth at center-back, likely a backup option given his injury history and move away from top European football. Brings invaluable tournament experience from 2018 and 2022.",
+      "notableFact": "Started the 2022 World Cup final against Argentina, one of the most dramatic matches in football history, which France lost on penalties."
+    },
+    "Beno\u00eet Badiashile": {
+      "bio": "Badiashile emerged as one of Ligue 1's most promising young defenders at Monaco before earning a big-money move to Chelsea. At 6'4\" with a left foot, he represents the modern mold of a ball-playing center-back with imposing physical attributes.",
+      "playingStyle": "Tall, left-footed center-back who is comfortable stepping into midfield with the ball. Uses his long stride to cover ground quickly and his height to dominate aerial situations. Progressive passer who can switch play effectively.",
+      "keyStrengths": ["Left-footed passing from defense", "Aerial presence at 194cm", "Progressive ball-carrying ability"],
+      "worldCup2026Role": "Young defensive option providing left-footed balance alongside right-footed center-back partners. Could see tournament minutes in rotation or as an injury replacement.",
+      "notableFact": "Became the youngest defender to start a Champions League knockout match for Monaco at just 18 years old."
+    },
+    "Jules Kound\u00e9": {
+      "bio": "Kounde developed at Bordeaux before a stellar spell at Sevilla, where he won the Europa League and earned a move to Barcelona. His exceptional athleticism and technical quality on the ball have made him one of the world's most complete defenders, equally effective at right-back or center-back.",
+      "playingStyle": "Ultra-athletic defender with explosive pace and outstanding technical ability for a defender. Drives forward with the ball, makes overlapping runs like a winger, and recovers defensively with blistering speed.",
+      "keyStrengths": ["Explosive pace and recovery speed", "Technical quality on the ball", "Versatility between right-back and center-back"],
+      "worldCup2026Role": "Starting right-back and one of France's most important defenders. His ability to contribute in attack while maintaining defensive solidity makes him essential to Deschamps' system.",
+      "notableFact": "Won the Europa League with Sevilla in 2020, being named in the tournament's best XI despite being just 21 years old."
+    },
+    "Eduardo Camavinga": {
+      "bio": "Camavinga made history as the youngest player to debut for Rennes in Ligue 1 at 16 years and four months, and became the youngest French international in over a century. Real Madrid snapped him up, and he has since won multiple Champions League titles, establishing himself as one of the game's elite midfielders.",
+      "playingStyle": "Dynamic, box-to-box midfielder with remarkable technical ability and physical power for his age. Wins the ball with aggressive pressing, then transitions play with quick, incisive passing. Can also deputize effectively at left-back.",
+      "keyStrengths": ["Ball-winning tenacity", "Rapid transitions from defense to attack", "Tactical versatility across midfield and left-back"],
+      "worldCup2026Role": "Key midfield option who can start or be a devastating impact substitute. His energy and quality off the bench were crucial in Real Madrid's Champions League runs and will be vital across a long tournament.",
+      "notableFact": "Became the youngest French international since 1914 when he debuted against Ukraine at age 17, scoring on that debut with a spectacular overhead kick."
+    },
+    "Bradley Barcola": {
+      "bio": "Barcola exploded onto the scene at Lyon before PSG paid a significant fee to bring him to Paris, where he became one of Ligue 1's most electric attackers. His rapid rise earned him a spot in the French national team, where his directness and pace have added a new dimension to the attack.",
+      "playingStyle": "Electrifying left winger with devastating pace and close dribbling ability. Cuts inside from the left to shoot with his favored left foot, but also has the speed to beat defenders on the outside. A constant threat in transition.",
+      "keyStrengths": ["Explosive acceleration and top speed", "Close-control dribbling in tight spaces", "Cutting inside to shoot from the left"],
+      "worldCup2026Role": "Rotation option and impact substitute on the left wing, competing with Mbappe for the wide left position or providing a different look when tactical changes are needed.",
+      "notableFact": "Scored on his Champions League debut for PSG and quickly became one of the youngest players to reach double-digit Ligue 1 goals in a season for the club."
+    },
+    "Aur\u00e9lien Tchouam\u00e9ni": {
+      "bio": "Tchouameni established himself at Monaco as one of Europe's most coveted midfielders before Real Madrid won the race for his signature. At the Bernabeu, he has become a pillar of the midfield, combining physical dominance with tactical intelligence to anchor one of the world's best teams.",
+      "playingStyle": "Commanding defensive midfielder who controls the tempo of matches. Exceptional at reading the game, intercepting passes, and breaking up opposition attacks. Also contributes with surging forward runs and long-range shooting.",
+      "keyStrengths": ["Interceptions and defensive positioning", "Long-range passing and shooting", "Physical dominance in midfield duels"],
+      "worldCup2026Role": "Nailed-on starter as the defensive midfield anchor. Expected to be the heartbeat of France's midfield, providing the platform for the attacking talent ahead of him.",
+      "notableFact": "Was reportedly tracked by nearly every top European club before choosing Real Madrid, where he filled the void left by the legendary Casemiro."
+    },
+    "Christopher Nkunku": {
+      "bio": "After struggling for regular minutes at PSG, Nkunku reinvented himself at RB Leipzig, where he became one of the Bundesliga's most prolific attackers with 35 goals and assists in a single season. Chelsea paid a premium to bring him to the Premier League, where his versatility across the front line has proven invaluable.",
+      "playingStyle": "Supremely versatile forward who can play as a striker, second striker, or on either wing. Combines intelligent movement and clinical finishing with creative passing ability. Excels at arriving late into the box and finding space between the lines.",
+      "keyStrengths": ["Positional versatility across the front line", "Clinical finishing from inside the box", "Intelligent off-the-ball movement"],
+      "worldCup2026Role": "Flexible attacking option who can fill multiple roles depending on the tactical approach. May start as a central forward or be used as an impactful substitute capable of changing games.",
+      "notableFact": "Scored 35 goals in a single season at RB Leipzig, earning the Bundesliga Player of the Year award and a dream move to Chelsea."
+    },
+    "Kylian Mbapp\u00e9": {
+      "bio": "Mbappe became a World Cup champion at 19, the youngest French player to score in a World Cup final since Pele. After dominating Ligue 1 with PSG, where he became the club's all-time leading scorer, he fulfilled his dream move to Real Madrid. With 48 international goals, he is on course to break Thierry Henry's all-time French scoring record.",
+      "playingStyle": "Devastatingly fast attacker who combines electric pace with lethal finishing ability. Equally dangerous running in behind the defense or receiving the ball to feet. His acceleration over short distances is virtually unmatched in world football.",
+      "keyStrengths": ["World-class pace and acceleration", "Clinical finishing with either foot", "Big-game mentality and decisive moments"],
+      "worldCup2026Role": "Talisman, captain, and the player everything revolves around. Expected to lead the line or play from the left, with the entire tactical structure built to maximize his devastating attacking output.",
+      "notableFact": "Scored a hat-trick in the 2022 World Cup final against Argentina, becoming only the second player after Geoff Hurst to score three goals in a World Cup final."
+    },
+    "Ousmane Demb\u00e9l\u00e9": {
+      "bio": "One of the most naturally gifted wingers of his generation, Dembele earned a massive transfer to Barcelona after dazzling at Dortmund. Despite injury troubles in Spain, he found his best form at PSG, where his unpredictable dribbling and two-footed ability make him one of Europe's most feared wide players.",
+      "playingStyle": "Unpredictable, two-footed winger who can go past defenders on either side. Possesses extraordinary close control at high speed and the ability to create something from nothing. His ambidexterity makes him nearly impossible to defend one-on-one.",
+      "keyStrengths": ["Genuine two-footed ability", "One-on-one dribbling at pace", "Creative vision and final-ball delivery"],
+      "worldCup2026Role": "Starting right winger bringing width, creativity, and unpredictability to the attack. His ability to draw multiple defenders creates space for Mbappe and the central forwards.",
+      "notableFact": "Is considered truly ambidextrous, with coaches and teammates confirming they genuinely cannot tell which is his stronger foot."
+    },
+    "Brice Samba": {
+      "bio": "Samba took an unconventional path to the French national team, spending years in English lower leagues with Nottingham Forest before returning to France with Lens and then Rennes. His penalty-saving heroics and commanding presence eventually earned him international recognition.",
+      "playingStyle": "Athletic goalkeeper with outstanding shot-stopping ability, particularly in one-on-one situations. Strong presence in the box on crosses and set pieces. Has proven himself as a penalty specialist with multiple saves in shootouts.",
+      "keyStrengths": ["Penalty-saving ability", "One-on-one shot-stopping", "Command of the penalty area"],
+      "worldCup2026Role": "Second-choice goalkeeper behind Maignan. His penalty shootout expertise could prove decisive if France face spot-kicks in the knockout rounds.",
+      "notableFact": "Saved three penalties in a single shootout for Nottingham Forest to help them earn promotion to the Premier League, becoming a club legend in the process."
+    },
+    "William Saliba": {
+      "bio": "Saliba joined Arsenal as a teenager from Saint-Etienne but was sent on multiple loans before finally breaking into the first team, where he immediately became one of the Premier League's best defenders. His composure, reading of the game, and physical attributes have made him the cornerstone of Arsenal's title-challenging defense.",
+      "playingStyle": "Elegant, composed center-back who rarely looks flustered in possession or out of it. Excellent at stepping out from the back with the ball, timing tackles perfectly, and using his pace to recover when caught out of position.",
+      "keyStrengths": ["Composure in possession", "Perfectly timed tackling", "Recovery pace for a center-back"],
+      "worldCup2026Role": "First-choice center-back alongside one of Upamecano or Konate. His calmness and ability to play out from the back are essential to France's build-up approach.",
+      "notableFact": "Was named Arsenal's Player of the Season in his first full campaign at the club, having previously been loaned out three times before getting his chance."
+    },
+    "Adrien Rabiot": {
+      "bio": "A product of PSG's academy, Rabiot left Paris on a free transfer to Juventus, where he spent five seasons becoming one of Serie A's most reliable midfielders. He then moved to AC Milan, bringing his experience and physical presence to another Italian giant.",
+      "playingStyle": "Tall, athletic midfielder who covers enormous ground and is effective in both boxes. Uses his height and timing to win aerial duels in midfield, while his left foot provides quality in possession. A dependable two-way midfielder.",
+      "keyStrengths": ["Box-to-box engine and ground coverage", "Aerial ability in midfield", "Left-footed quality in possession"],
+      "worldCup2026Role": "Experienced midfield option who can start or provide reliable minutes off the bench. His tournament experience from 2022, where he was one of France's best performers, makes him a trusted figure.",
+      "notableFact": "Was controversially left out of the 2018 World Cup squad after refusing a standby role, missing out on the title. He returned for 2022 and was one of France's standout players."
+    },
+    "Marcus Thuram": {
+      "bio": "Son of French legend Lilian Thuram, Marcus carved his own path through Guingamp, Borussia Monchengladbach, and then Inter Milan, where he has become one of Serie A's most dangerous forwards. His combination of size, speed, and technical ability makes him a nightmare for defenders.",
+      "playingStyle": "Powerful, athletic striker who can play centrally or from the left. Uses his physicality to hold the ball up and bring others into play, but also has the pace to run in behind. Increasingly clinical in front of goal after years of development.",
+      "keyStrengths": ["Physical power and hold-up play", "Pace for a player of his size", "Versatility across the front line"],
+      "worldCup2026Role": "Key rotation striker who can start alongside or instead of Mbappe. His ability to play multiple attacking positions gives Deschamps valuable tactical flexibility.",
+      "notableFact": "Is the son of Lilian Thuram, France's most-capped outfield player, making them one of the most decorated father-son duos in international football history."
+    },
+    "Alphonse Areola": {
+      "bio": "Areola came through PSG's academy and served as their goalkeeper for several seasons before a series of loans and a permanent move to West Ham. A World Cup winner in 2018 as part of the squad, he brings veteran presence and reliable shot-stopping to any group.",
+      "playingStyle": "Traditional, reliable goalkeeper with strong reflexes and good positioning. Experienced in high-pressure situations at top clubs. Commands his area well and provides a steady, no-nonsense last line of defense.",
+      "keyStrengths": ["Reflexes and shot-stopping", "Experience at the highest level", "Calm presence in the penalty area"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced depth. A World Cup winner who understands the demands of tournament football and can be relied upon if called into action.",
+      "notableFact": "Was part of the 2018 World Cup-winning squad in Russia, giving him a winner's medal and invaluable experience in the squad dynamics of a successful tournament campaign."
+    },
+    "Dayot Upamecano": {
+      "bio": "Upamecano moved from France to RB Salzburg's youth academy at 16, rose through RB Leipzig, and then completed a high-profile transfer to Bayern Munich. His raw athleticism and improving tactical awareness have made him a regular starter for both club and country.",
+      "playingStyle": "Physically imposing center-back with remarkable pace and power. Aggressive in his defending, often stepping forward to win the ball high up the pitch. Has been working to improve his composure in possession to match his physical gifts.",
+      "keyStrengths": ["Explosive pace for a center-back", "Physical power in defensive duels", "Aggressive ball-winning ability"],
+      "worldCup2026Role": "Starting center-back contender, likely partnering Saliba. His pace and aggression complement Saliba's composure, and his experience at Bayern Munich in high-stakes matches is a major asset.",
+      "notableFact": "Was identified and recruited by the Red Bull football system at just 16, following the same pathway that produced several of Europe's top defenders."
+    },
+    "Warren Za\u00efre-Emery": {
+      "bio": "Zaire-Emery shattered records at PSG, becoming the youngest player to start a Ligue 1 match and the youngest French international in modern history. Still just 20 years old, he has already established himself as a key player for both PSG and France, with a maturity that belies his age.",
+      "playingStyle": "Precocious central midfielder with exceptional technical ability, vision, and composure beyond his years. Drives forward with purpose, links play intelligently, and has a knack for scoring from midfield. Plays with the confidence of a veteran.",
+      "keyStrengths": ["Technical quality and composure on the ball", "Goal-scoring from midfield", "Maturity and decision-making beyond his age"],
+      "worldCup2026Role": "Emerging starter or high-impact substitute in central midfield. At just 20, this could be a breakout tournament that establishes him as one of the world's best midfielders.",
+      "notableFact": "Became the youngest player to score in a Champions League knockout match, breaking a record that had stood for over a decade."
+    },
+    "Youssouf Fofana": {
+      "bio": "Fofana developed at Monaco, where his relentless energy and ball-winning ability earned him a move to AC Milan. In Serie A, he has thrived as a tireless midfield enforcer who combines defensive discipline with the ability to drive forward with the ball.",
+      "playingStyle": "High-energy, box-to-box midfielder who excels at pressing and winning second balls. Covers enormous distance per match and uses his powerful running to transition play quickly. A relentless worker who sets the tempo with his intensity.",
+      "keyStrengths": ["Relentless pressing and ball-winning", "Ground coverage and stamina", "Powerful forward drives with the ball"],
+      "worldCup2026Role": "Midfield rotation option providing energy and intensity. His pressing ability makes him particularly useful in matches where France need to dominate the midfield battle.",
+      "notableFact": "Led Ligue 1 in ball recoveries during his final season at Monaco, establishing himself as one of the most effective midfield destroyers in French football."
+    },
+    "Kingsley Coman": {
+      "bio": "Coman left PSG's academy as a teenager for Juventus, then moved to Bayern Munich where he became a Champions League hero, scoring the winning goal in the 2020 final. Despite battling recurring injuries throughout his career, his blistering pace and direct style continue to make him a threat at the highest level.",
+      "playingStyle": "Lightning-fast winger who terrorizes full-backs with his direct dribbling and willingness to run at defenders. Primarily right-footed but effective on either wing. At his best, he is virtually unplayable in one-on-one situations.",
+      "keyStrengths": ["Electrifying pace and direct dribbling", "Big-game experience and clutch moments", "Ability to beat defenders one-on-one"],
+      "worldCup2026Role": "Experienced wide option providing depth and a proven track record in knockout football. His pace off the bench can be a game-changer against tiring defenders in the latter stages of matches.",
+      "notableFact": "Scored the only goal in the 2020 Champions League final to win the trophy for Bayern Munich, becoming the first PSG academy graduate to lift the title with a rival club."
+    },
+    "Jonathan Clauss": {
+      "bio": "Clauss took one of football's most improbable paths to the national team, playing in the French lower divisions until his mid-twenties before Lens gave him a chance in Ligue 1. His exceptional crossing ability and relentless wing-back play earned him a surprise call-up to the 2022 World Cup squad.",
+      "playingStyle": "Attack-minded right wing-back who provides width and delivers dangerous crosses into the box. Covers enormous distance with tireless up-and-down runs along the flank. More of a creator than a defender, thriving in systems that allow him to push high.",
+      "keyStrengths": ["Exceptional crossing and delivery", "Tireless running up and down the flank", "Ability to create chances from wide areas"],
+      "worldCup2026Role": "Squad depth at right-back or wing-back, offering a more attacking alternative to Kounde or Pavard. His crossing ability makes him a useful option against teams that sit deep.",
+      "notableFact": "Was playing in the French third division at age 24 before his remarkable rise to becoming a World Cup player in just three years."
+    },
+    "Theo Hern\u00e1ndez": {
+      "bio": "The younger brother of Bayern Munich's Lucas Hernandez, Theo found his home at AC Milan after limited opportunities at Real Madrid. In Milan, he became arguably the world's best attacking left-back, combining devastating forward runs with a powerful left foot that produces goals and assists from deep.",
+      "playingStyle": "Marauding, attack-first left-back with explosive pace and a thunderous left foot. Bombs forward at every opportunity, often finishing moves like a striker. His offensive output from the left-back position is virtually unmatched in world football.",
+      "keyStrengths": ["Devastating attacking runs from left-back", "Powerful left-footed shooting", "Explosive pace in transition"],
+      "worldCup2026Role": "First-choice left-back and a critical part of France's attacking structure. His overlapping runs provide width and a goal threat that few other full-backs in the world can match.",
+      "notableFact": "Has scored more goals from the left-back position than any other defender in Europe's top five leagues over the past five seasons."
+    },
+    "Ferland Mendy": {
+      "bio": "Mendy moved from Lyon to Real Madrid, where he became the trusted first-choice left-back under multiple managers. While less flashy than his competitors, his defensive reliability and tactical discipline have made him indispensable in the biggest matches at the Bernabeu.",
+      "playingStyle": "Defensively solid left-back who prioritizes positional discipline and one-on-one defending over attacking contributions. Quick across the ground, strong in the tackle, and rarely beaten by opposition wingers. The safe, reliable choice.",
+      "keyStrengths": ["One-on-one defensive ability", "Positional discipline", "Recovery pace and tackle timing"],
+      "worldCup2026Role": "Backup left-back offering a more defensively secure alternative to Theo Hernandez. Likely to be used in matches where France need to protect a lead or face dangerous right-sided attackers.",
+      "notableFact": "Has started multiple Champions League finals for Real Madrid, trusted by managers for his ability to neutralize elite wingers on the biggest stage."
+    },
+    "Ibrahima Konat\u00e9": {
+      "bio": "Konate followed the Red Bull pathway from Sochaux to RB Leipzig before Liverpool brought him to the Premier League. His combination of towering height, remarkable speed for his size, and composure on the ball has made him one of the most sought-after center-backs in world football.",
+      "playingStyle": "Physically dominant center-back who combines his 6'4\" frame with deceptive pace and agility. Strong in the air, powerful in the tackle, and surprisingly comfortable carrying the ball forward from defense. A modern center-back with old-school defensive instincts.",
+      "keyStrengths": ["Pace and agility for his size", "Aerial dominance at 194cm", "Ball-carrying ability from defense"],
+      "worldCup2026Role": "Center-back rotation option competing with Upamecano to partner Saliba. His Liverpool pedigree and ability in big Champions League matches make him a serious contender for the starting lineup.",
+      "notableFact": "Clocked one of the fastest sprint speeds ever recorded for a center-back in Premier League history, defying expectations for a player of his size."
+    },
+    "Randal Kolo Muani": {
+      "bio": "Kolo Muani burst onto the international stage at the 2022 World Cup, coming off the bench in the final and nearly scoring the winner in extra time. After a prolific spell at Eintracht Frankfurt, he moved to PSG and later Tottenham, where his pace and work rate continue to trouble top defenders.",
+      "playingStyle": "Hard-working, mobile striker who combines relentless pressing with clinical finishing. Uses his pace and long stride to stretch defenses, and his willingness to track back makes him a coach's dream. Effective both as a starter and an impact substitute.",
+      "keyStrengths": ["Relentless pressing and defensive work rate", "Pace and ability to stretch defenses", "Effectiveness as an impact substitute"],
+      "worldCup2026Role": "Versatile attacking option who can play centrally or on the wing. His World Cup final experience and ability to change games off the bench make him a valuable squad member.",
+      "notableFact": "Came within inches of winning the 2022 World Cup final, forcing a stunning save from Emiliano Martinez in the dying moments of extra time."
+    },
+    "Michael Olise": {
+      "bio": "Olise's dazzling creativity at Crystal Palace attracted interest from Europe's elite before Bayern Munich secured his signature. A dual-national who chose France over England, his technical brilliance and eye for goal have added yet another dimension to an already frightening French attack.",
+      "playingStyle": "Silky, creative wide player who glides past defenders with elegant dribbling. Possesses outstanding vision, a wand of a left foot, and the ability to score spectacular goals from distance. A player who can unlock any defense with a moment of individual brilliance.",
+      "keyStrengths": ["Elegant dribbling and close control", "Left-footed creativity and set pieces", "Long-range shooting ability"],
+      "worldCup2026Role": "Exciting attacking option off the bench or in rotation on the right wing. His ability to create something from nothing makes him a potent weapon in tight knockout matches.",
+      "notableFact": "Chose to represent France over England at senior level, and immediately starred at the 2024 Olympics, winning a silver medal and being named the tournament's best player."
+    }
+  }
+}

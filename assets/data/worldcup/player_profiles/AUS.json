@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Mat Ryan": {
+      "bio": "Australia's most experienced goalkeeper with 95 caps, a veteran of multiple World Cups and the long-standing number one. Has played across Europe including stints at Brighton, Arsenal (loan), and now Levante in La Liga.",
+      "playingStyle": "Confident, experienced goalkeeper with excellent distribution and shot-stopping ability, comfortable playing out from the back in modern systems.",
+      "keyStrengths": ["Distribution", "Shot-stopping", "Experience"],
+      "worldCup2026Role": "First-choice goalkeeper and one of the team's leaders. His experience and composure make him indispensable for tournament football.",
+      "notableFact": "Has represented Australia at three consecutive World Cups (2014, 2018, 2022) and is closing in on 100 international caps."
+    },
+    "Milo\u0161 Degenek": {
+      "bio": "Serbian-born Australian center-back who has played across multiple continents including Japan, Saudi Arabia, and now MLS with Columbus Crew. A rugged, no-nonsense defender.",
+      "playingStyle": "Physical, aggressive center-back who relishes one-on-one battles, strong in the air, and brings toughness to the defensive unit.",
+      "keyStrengths": ["Physical defending", "Aerial duels", "Aggression"],
+      "worldCup2026Role": "Experienced center-back depth option who provides physicality and versatility in the defensive unit.",
+      "notableFact": "Born in Serbia and has played football on four different continents, giving him one of the most diverse career paths in Australian football history."
+    },
+    "Aziz Behich": {
+      "bio": "Veteran left-back with 65 caps who has been a fixture of the Socceroos defense for nearly a decade. Known for a famous dribbling run against France at the 2018 World Cup.",
+      "playingStyle": "Compact, energetic left-back who gets up and down the flank tirelessly, combining solid defending with occasional marauding runs forward.",
+      "keyStrengths": ["Stamina", "Defensive reliability", "Overlapping runs"],
+      "worldCup2026Role": "Experienced first-choice left-back whose leadership and consistency make him a trusted starter in the backline.",
+      "notableFact": "Produced one of the greatest individual runs in Australian football history against France at the 2018 World Cup, dribbling past multiple defenders from his own half."
+    },
+    "Kye Rowles": {
+      "bio": "Emerging center-back who made the move from Central Coast Mariners to Hearts in Scotland. His composed defending has made him a regular for both club and country.",
+      "playingStyle": "Calm, composed center-back who reads the game well and prefers to intercept rather than tackle, comfortable on the ball for a defender of his profile.",
+      "keyStrengths": ["Reading of the game", "Composure on the ball", "Interceptions"],
+      "worldCup2026Role": "Starting center-back candidate who provides composure and reliability in the heart of the defense.",
+      "notableFact": "Made the leap from the A-League to European football and adapted quickly, becoming a regular at Hearts in the Scottish Premiership."
+    },
+    "Harry Souttar": {
+      "bio": "Towering center-back at 198cm who plays for Leicester City and is one of Australia's most physically imposing defenders. Born in Scotland to an Australian mother, he chose to represent the Socceroos.",
+      "playingStyle": "Giant center-back who dominates aerially, excellent at heading away danger and scoring from set pieces, with surprising comfort on the ball for his size.",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Set-piece threat"],
+      "worldCup2026Role": "Starting center-back and aerial weapon from set pieces. His towering 198cm frame makes him one of the tallest outfield players at the tournament.",
+      "notableFact": "At 198cm (6'6\"), he is one of the tallest outfield players in world football, and his choice to represent Australia over Scotland was a major boost for the Socceroos."
+    },
+    "Bailey Wright": {
+      "bio": "Experienced English-born Australian center-back who has spent his career in English football, primarily in the Championship. A dependable, old-school defender.",
+      "playingStyle": "Tough, physical center-back who defends front-foot, wins his aerial duels, and brings Championship-level intensity to every match.",
+      "keyStrengths": ["Physical defending", "Aerial ability", "Championship experience"],
+      "worldCup2026Role": "Reliable defensive depth player who can step in when needed and brings English football toughness to the squad.",
+      "notableFact": "Born in Melbourne but raised in England, he has spent his entire club career in the English football pyramid."
+    },
+    "Mathew Leckie": {
+      "bio": "Veteran right winger with 80 caps who scored the goal that sent Australia to the Round of 16 at the 2022 World Cup. A beloved figure in Australian football now playing for Melbourne City.",
+      "playingStyle": "Pacy, direct winger who stretches defenses with his running, experienced in big moments, and capable of delivering in high-pressure situations.",
+      "keyStrengths": ["Pace", "Big-game experience", "Direct running"],
+      "worldCup2026Role": "Senior squad member whose experience and big-game mentality make him valuable for tournament football, likely in a rotation or impact sub role.",
+      "notableFact": "Scored the historic winning goal against Denmark at the 2022 World Cup that sent Australia to the knockout stages for only the second time in their history."
+    },
+    "Aiden O'Neill": {
+      "bio": "Versatile midfielder playing in Belgium with Standard Liege. Born in Australia, he moved to England as a teenager and has developed through European football systems.",
+      "playingStyle": "Energetic, versatile midfielder who can play multiple roles in the center of the park, contributing in both defensive and attacking phases.",
+      "keyStrengths": ["Versatility", "Energy", "European football experience"],
+      "worldCup2026Role": "Midfield depth option who provides energy and versatility, capable of filling multiple roles in central midfield.",
+      "notableFact": "Was part of Burnley's academy in England before moving to Belgium, gaining valuable European football experience from a young age."
+    },
+    "Jamie Maclaren": {
+      "bio": "Australia's most prolific active domestic striker, the all-time leading scorer in A-League history. A natural goal-scorer who has been the focal point of Melbourne City's attack for years.",
+      "playingStyle": "Pure goal-scorer who lives in the penalty box, combining sharp movement with clinical finishing to consistently find the net.",
+      "keyStrengths": ["Clinical finishing", "Movement in the box", "Penalty-area instincts"],
+      "worldCup2026Role": "Experienced striking option whose proven goal-scoring record makes him a valuable squad member for depth up front.",
+      "notableFact": "Is the all-time leading scorer in A-League history, a record that cements his legacy as one of the greatest domestic strikers in Australian football."
+    },
+    "Ajdin Hrusti\u0107": {
+      "bio": "Creative midfielder of Bosnian heritage who has played across Europe. A technically gifted playmaker capable of scoring spectacular free kicks and long-range goals.",
+      "playingStyle": "Left-footed playmaker who creates from central areas, delivers set pieces with precision, and possesses the ability to score from distance.",
+      "keyStrengths": ["Set-piece delivery", "Long-range shooting", "Creative passing"],
+      "worldCup2026Role": "Creative midfield option who provides set-piece quality and a different dimension in the final third.",
+      "notableFact": "Scored a dramatic extra-time goal against UAE in the 2022 World Cup qualifying playoffs, helping Australia reach the intercontinental play-off."
+    },
+    "Awer Mabil": {
+      "bio": "South Sudanese-born Australian winger who grew up in a Kenyan refugee camp before his family settled in Adelaide. His remarkable life story is one of the most inspiring in world football.",
+      "playingStyle": "Quick, direct winger who takes on defenders with pace and trickery, capable of scoring and creating from the right flank.",
+      "keyStrengths": ["Pace", "Directness", "Crossing from the right"],
+      "worldCup2026Role": "Experienced winger who provides depth and can change games with his pace and directness off the bench.",
+      "notableFact": "Spent his early childhood in a Kenyan refugee camp after fleeing the South Sudanese civil war before his family settled in Australia, making his journey to the World Cup one of football's most remarkable stories."
+    },
+    "Thomas Glover": {
+      "bio": "Rising goalkeeper who has made the move to Crystal Palace in the Premier League, establishing himself as one of Australia's most promising young keepers.",
+      "playingStyle": "Modern goalkeeper with strong reflexes and good footwork, comfortable with the ball at his feet and commanding in his area.",
+      "keyStrengths": ["Reflexes", "Footwork", "Command of area"],
+      "worldCup2026Role": "Second-choice goalkeeper who is developing into a potential future number one, gaining invaluable Premier League experience.",
+      "notableFact": "His move to Crystal Palace in the Premier League makes him one of the highest-profile Australian goalkeepers in European football."
+    },
+    "Nathaniel Atkinson": {
+      "bio": "Young right-back who moved from the A-League to Hearts in Scotland, quickly becoming a regular in both domestic and international football. An exciting attacking fullback.",
+      "playingStyle": "Energetic, attack-minded right-back who loves to bomb forward, deliver crosses, and get involved in attacking play.",
+      "keyStrengths": ["Attacking runs", "Energy", "Crossing"],
+      "worldCup2026Role": "Starting right-back whose energy and attacking contributions provide width in Australia's system.",
+      "notableFact": "Made the transition from Tasmania (one of Australia's smaller football states) to European football, inspiring other young Australian players from non-traditional pathways."
+    },
+    "Riley McGree": {
+      "bio": "Dynamic midfielder playing for Middlesbrough in the Championship. Known for his spectacular goals, including a famous scorpion kick, he has become a key player for both club and country.",
+      "playingStyle": "All-action midfielder who arrives in the box to score, works hard defensively, and is capable of producing moments of individual brilliance.",
+      "keyStrengths": ["Goal threat from midfield", "Work rate", "Technical ability"],
+      "worldCup2026Role": "Key midfielder who provides energy, goal threat, and technical quality in the center of the park.",
+      "notableFact": "Scored a viral scorpion kick goal in the FA Cup for Birmingham City that was nominated for the FIFA Puskas Award."
+    },
+    "Jackson Irvine": {
+      "bio": "Towering central midfielder who captains St. Pauli in the Bundesliga and is one of Australia's most important players. His aerial ability, leadership, and work rate make him the heartbeat of the team.",
+      "playingStyle": "Tall, powerful box-to-box midfielder who dominates aerial duels, drives forward with purpose, and provides leadership through his tireless running.",
+      "keyStrengths": ["Aerial dominance", "Leadership", "Box-to-box energy"],
+      "worldCup2026Role": "Starting central midfielder and one of the first names on the team sheet. His captaincy at St. Pauli reflects his status as a natural leader.",
+      "notableFact": "Captained St. Pauli to promotion to the Bundesliga, becoming one of the few Australians to play regularly in Germany's top division."
+    },
+    "Craig Goodwin": {
+      "bio": "Left-footed winger who scored a stunning goal against France at the 2022 World Cup and parlayed his fine form into a move to the Saudi Pro League. A late bloomer who has thrived on the international stage.",
+      "playingStyle": "Left-footed wide player who cuts inside to shoot, delivers dangerous set pieces, and has a knack for scoring spectacular goals in big moments.",
+      "keyStrengths": ["Left-footed shooting", "Set pieces", "Big-game performances"],
+      "worldCup2026Role": "Experienced attacking option who provides a left-footed goal threat and set-piece quality from the wing.",
+      "notableFact": "Scored a spectacular goal against France in the opening match of the 2022 World Cup, giving Australia an early lead against the eventual champions."
+    },
+    "Keanu Baccus": {
+      "bio": "Versatile midfielder of Jamaican and Filipino heritage who plays for St. Mirren in Scotland. His multicultural background reflects Australia's diverse football community.",
+      "playingStyle": "Combative, tenacious midfielder who wins the ball back and keeps play moving simply, effective in a defensive midfield or central midfield role.",
+      "keyStrengths": ["Ball-winning", "Tenacity", "Versatility"],
+      "worldCup2026Role": "Midfield depth option who provides defensive solidity and energy as a rotation player or substitute.",
+      "notableFact": "Has Jamaican and Filipino heritage alongside his Australian nationality, making him one of the most culturally diverse players in the Socceroos squad."
+    },
+    "Connor Metcalfe": {
+      "bio": "Young left-back who plays alongside Jackson Irvine at St. Pauli in the Bundesliga. A modern fullback who has adapted well to European football.",
+      "playingStyle": "Technically competent left-back who contributes to build-up play, offers overlapping runs, and defends with discipline.",
+      "keyStrengths": ["Technical ability", "Overlapping runs", "Positional discipline"],
+      "worldCup2026Role": "Backup left-back who provides quality depth and a younger alternative to Behich on the left side.",
+      "notableFact": "Plays alongside fellow Socceroo Jackson Irvine at St. Pauli, forming a strong Australian connection in the Bundesliga."
+    },
+    "Garang Kuol": {
+      "bio": "Electrifying young talent born in Egypt to South Sudanese parents who settled in Australia. At just 21, he is one of Australia's most exciting prospects, having earned a move to Sparta Prague after being signed by Newcastle United.",
+      "playingStyle": "Lightning-quick, unpredictable young forward who runs at defenders with pace and fearlessness, capable of creating moments of magic from nothing.",
+      "keyStrengths": ["Explosive pace", "Fearlessness", "Dribbling ability"],
+      "worldCup2026Role": "Exciting young impact substitute whose raw pace and fearlessness can change games in the final 20-30 minutes.",
+      "notableFact": "Was signed by Newcastle United as a teenager after starring in the A-League, and became the youngest-ever Australian to feature at a World Cup when he appeared at Qatar 2022 at age 18."
+    },
+    "Trent Sainsbury": {
+      "bio": "Widely-traveled center-back with 60 caps who has played in Australia, China, the Netherlands, and Qatar. A veteran of multiple World Cup campaigns.",
+      "playingStyle": "Ball-playing center-back who reads the game well, brings composure to the defensive line, and can distribute effectively from the back.",
+      "keyStrengths": ["Ball-playing ability", "Reading the game", "International experience"],
+      "worldCup2026Role": "Experienced defensive depth who provides composure and tournament experience, valuable for squad harmony.",
+      "notableFact": "Has played in six different countries during his career, making him one of the most well-traveled players in Australian football history."
+    },
+    "Cameron Devlin": {
+      "bio": "Compact, aggressive defensive midfielder playing for Hearts in Scotland. Known for his combative style and ability to break up opposition attacks in the middle of the park.",
+      "playingStyle": "Aggressive ball-winner who plays with intensity, makes crunching tackles, and disrupts opponents' rhythm with relentless pressing.",
+      "keyStrengths": ["Tackling", "Pressing intensity", "Aggression"],
+      "worldCup2026Role": "Defensive midfield option who provides a combative, disruptive presence when Australia need to protect a lead or nullify opposition midfields.",
+      "notableFact": "Despite standing at just 172cm, he is one of the most combative midfielders in Scottish football, earning a reputation for never backing down from a challenge."
+    },
+    "Joe Gauci": {
+      "bio": "Young goalkeeper who earned a remarkable move to Aston Villa in the Premier League from Adelaide United. One of the most promising Australian goalkeeping talents in years.",
+      "playingStyle": "Agile, athletic young goalkeeper with excellent shot-stopping and growing distribution skills, learning at one of Europe's top clubs.",
+      "keyStrengths": ["Shot-stopping", "Agility", "Development potential"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining elite-level experience at Aston Villa, part of Australia's long-term goalkeeping succession plan.",
+      "notableFact": "His transfer from Adelaide United to Aston Villa was one of the most notable Australian goalkeeper transfers in recent memory, showing the pathway from the A-League to the top of European football."
+    },
+    "Mitchell Duke": {
+      "bio": "Veteran striker with 40 caps who became a national hero by scoring the winning goal against Tunisia at the 2022 World Cup. A hard-working, physical forward who has played in Japan's J-League.",
+      "playingStyle": "Physical, hard-working target striker who leads the line with energy, holds up the ball, and scores crucial goals through sheer determination.",
+      "keyStrengths": ["Physical presence", "Work rate", "Big-game goals"],
+      "worldCup2026Role": "Experienced backup striker whose physicality and aerial ability provide a different option when Australia need to go direct.",
+      "notableFact": "His header against Tunisia at the 2022 World Cup, which he celebrated by making a 'J' sign for his son Jaxson, became one of the most iconic images of the tournament."
+    },
+    "Alessandro Circati": {
+      "bio": "Young Italian-born Australian center-back playing for Parma in Serie A. His dual nationality and Serie A experience make him an exciting addition to the Socceroos defensive ranks.",
+      "playingStyle": "Technically proficient young center-back trained in Italian football, comfortable on the ball and composed under pressure in defensive situations.",
+      "keyStrengths": ["Technical ability", "Italian defensive education", "Composure"],
+      "worldCup2026Role": "Promising young center-back gaining experience at the highest level, providing future-focused defensive depth.",
+      "notableFact": "Born and raised in Italy, he chose to represent Australia through family connections, bringing an Italian defensive education to the Socceroos."
+    },
+    "Lewis Miller": {
+      "bio": "Young right-back playing for Hibernian in the Scottish Premiership. An emerging talent who has worked his way into the national team picture through consistent domestic performances.",
+      "playingStyle": "Energetic, overlapping right-back who provides width and crossing ability from the right side of defense.",
+      "keyStrengths": ["Overlapping runs", "Crossing", "Energy"],
+      "worldCup2026Role": "Young depth option at right-back, gaining international experience and providing cover for the starting fullbacks.",
+      "notableFact": "Made his Socceroos debut at a young age, establishing himself in the Scottish Premiership before breaking into the national team."
+    },
+    "Nestory Irankunda": {
+      "bio": "The youngest player in the Australian squad at just 20 years old, born in Tanzania to Burundian parents who settled in Australia. Signed by Bayern Munich before being loaned to develop in England, he is regarded as the most exciting Australian prospect in a generation.",
+      "playingStyle": "Explosive, pacy left winger with incredible acceleration, direct dribbling, and a fearlessness that belies his young age.",
+      "keyStrengths": ["Explosive pace", "Dribbling", "Fearlessness"],
+      "worldCup2026Role": "Exciting young prospect who can change games off the bench with his raw pace and ability to beat defenders, representing Australia's brightest future talent.",
+      "notableFact": "Was signed by Bayern Munich as a teenager after starring in the A-League at age 17, making him one of the youngest Australians ever to sign for a European superclub."
+    }
+  }
+}

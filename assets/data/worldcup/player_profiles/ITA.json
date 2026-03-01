@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Gianluigi Donnarumma": {
+      "bio": "Italy's commanding goalkeeper who was named Player of the Tournament at Euro 2020 after his heroic penalty-saving performances. Has been PSG's first-choice keeper since joining from AC Milan on a free transfer.",
+      "playingStyle": "Imposing goalkeeper with extraordinary reflexes for his size, dominant in one-on-one situations, and excellent at saving penalties under pressure.",
+      "keyStrengths": ["Penalty saving", "One-on-one situations", "Reflexes"],
+      "worldCup2026Role": "Starting goalkeeper and key leader, his penalty-saving ability could prove decisive in knockout rounds.",
+      "notableFact": "Named Player of the Tournament at Euro 2020, saving two penalties in the final shootout against England to deliver Italy's first European title in 53 years."
+    },
+    "Giovanni Di Lorenzo": {
+      "bio": "Napoli's reliable captain and right-back who was a key part of their historic 2022-23 Scudetto triumph. A consistent performer who combines defensive solidity with an attacking threat.",
+      "playingStyle": "Dependable, two-way right-back who defends with discipline and gets forward to provide overlapping width and crosses into the box.",
+      "keyStrengths": ["Defensive reliability", "Overlapping runs", "Consistency"],
+      "worldCup2026Role": "Starting right-back and vice-captain, the defensive backbone on Italy's right flank.",
+      "notableFact": "Captained Napoli to their first Serie A title in 33 years in 2022-23, becoming a club legend in the process."
+    },
+    "Federico Dimarco": {
+      "bio": "Inter Milan's dynamic left-back who has become one of the best in his position in Serie A. Known for his exceptional crossing and set-piece delivery from the left side.",
+      "playingStyle": "Attack-minded left wing-back with a superb left foot, deadly crossing ability, and the technique to score spectacular goals from distance.",
+      "keyStrengths": ["Crossing accuracy", "Left-foot delivery", "Set-piece taking"],
+      "worldCup2026Role": "Starting left-back whose crossing and set-piece ability will be a primary source of chance creation for Italy.",
+      "notableFact": "Has scored some of the most spectacular goals in Serie A with his left foot, including volleys and free kicks that went viral."
+    },
+    "Alessandro Bastoni": {
+      "bio": "Elegant left-footed center-back who has been a pillar of Inter Milan's defense and a regular in Italy's backline. One of the best ball-playing defenders in world football.",
+      "playingStyle": "Left-footed center-back with outstanding distribution, capable of playing long diagonal passes to switch play and stepping forward with the ball.",
+      "keyStrengths": ["Left-footed distribution", "Long diagonal passing", "Composure on the ball"],
+      "worldCup2026Role": "Starting center-back and the primary ball-player from defense, initiating Italy's build-up with his progressive passing.",
+      "notableFact": "Has been part of Inter Milan's resurgence, winning the Serie A title and being named in the Serie A Team of the Year multiple times."
+    },
+    "Gianluca Mancini": {
+      "bio": "Physical, aggressive center-back who has been a key defender for Roma in Serie A. Known for his aerial threat from set pieces and his no-nonsense defending.",
+      "playingStyle": "Physical, combative center-back who dominates aerial duels, makes crucial blocks, and is a goal threat from corners and free kicks.",
+      "keyStrengths": ["Aerial dominance", "Physical defending", "Set-piece goal threat"],
+      "worldCup2026Role": "Defensive rotation option who provides physicality and aerial presence, particularly useful when defending leads.",
+      "notableFact": "Has scored important goals from set pieces throughout his Roma career, including crucial European competition goals."
+    },
+    "Federico Gatti": {
+      "bio": "Remarkable late bloomer who was playing in Serie C just a few years before becoming a Juventus and Italy center-back. His journey from amateur football to the national team is one of Italian football's great stories.",
+      "playingStyle": "Tenacious, aggressive center-back who makes up for any technical limitations with sheer determination, physicality, and excellent man-marking.",
+      "keyStrengths": ["Man-marking", "Determination", "Aerial ability"],
+      "worldCup2026Role": "Backup center-back option who brings grit and determination, a reliable defender when called upon in emergencies.",
+      "notableFact": "Was playing in Italy's third tier at age 22 and working as a bricklayer before his meteoric rise to Juventus and the Italian national team."
+    },
+    "Lorenzo Pellegrini": {
+      "bio": "Roma's hometown hero and captain, a technically gifted attacking midfielder who has been with his boyhood club for the majority of his career. A creative force with an eye for goal.",
+      "playingStyle": "Technical playmaker who operates between the lines, delivers dangerous set pieces, and combines creative passing with late runs into the box.",
+      "keyStrengths": ["Set-piece delivery", "Creative passing", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Experienced attacking midfield option who provides set-piece quality and creative depth behind the starters.",
+      "notableFact": "Born and raised in Rome and came through Roma's academy, becoming captain of his boyhood club, a rarity in modern football."
+    },
+    "Sandro Tonali": {
+      "bio": "Immensely talented midfielder who has returned to top form at Newcastle after serving a betting-related ban. Once compared to Andrea Pirlo and Gennaro Gattuso, he combines elements of both legends.",
+      "playingStyle": "Complete midfielder who can dictate tempo like Pirlo or battle in the trenches like Gattuso, with excellent passing range, tackling, and leadership qualities.",
+      "keyStrengths": ["Passing range", "Tackling", "Versatility in midfield"],
+      "worldCup2026Role": "Starting central midfielder and midfield engine, expected to be the driving force of Italy's midfield alongside Barella.",
+      "notableFact": "Was famously compared to both Pirlo and Gattuso as a teenager and has shown he can combine the best attributes of both Italian legends."
+    },
+    "Gianluca Scamacca": {
+      "bio": "Powerful striker who has found his best form at Atalanta after stints at Sassuolo, West Ham, and various loans. His combination of size, technique, and shooting power makes him Italy's most dangerous forward.",
+      "playingStyle": "Tall, powerful center-forward with a thunderous shot from either foot, good hold-up play, and the ability to score spectacular goals from distance.",
+      "keyStrengths": ["Powerful shooting", "Hold-up play", "Aerial ability"],
+      "worldCup2026Role": "Starting striker and Italy's primary goal threat, expected to lead the line with his combination of power and technique.",
+      "notableFact": "Scored a stunning long-range goal in the Europa League semifinal that showcased his extraordinary shooting power."
+    },
+    "Samuele Ricci": {
+      "bio": "Young, highly rated midfielder from Torino who has quickly become one of the most promising Italian midfielders of his generation. A metronomic presence who controls the tempo of matches.",
+      "playingStyle": "Deep-lying playmaker with exceptional passing accuracy, press resistance, and the intelligence to control the rhythm of a match from the base of midfield.",
+      "keyStrengths": ["Passing accuracy", "Press resistance", "Tempo control"],
+      "worldCup2026Role": "Midfield option who can dictate play from deep, providing an alternative to Tonali as the team's metronome.",
+      "notableFact": "Has been compared to Marco Verratti for his press resistance and has attracted interest from Europe's biggest clubs while still at Torino."
+    },
+    "Giacomo Raspadori": {
+      "bio": "Versatile Napoli forward who can play as a striker or behind the front man. Was part of Napoli's Scudetto-winning squad and has shown his quality on the international stage with crucial goals.",
+      "playingStyle": "Intelligent, mobile forward who drops into pockets of space, links play creatively, and finishes with composure when chances arrive.",
+      "keyStrengths": ["Intelligent movement", "Link-up play", "Composure in front of goal"],
+      "worldCup2026Role": "Versatile attacking option who can play multiple roles across the front line, a valuable tactical weapon off the bench.",
+      "notableFact": "Scored the winning goal against England in the Nations League, a moment that announced his arrival on the international stage."
+    },
+    "Alex Meret": {
+      "bio": "Napoli's experienced goalkeeper who has been a consistent performer in Serie A and provided competition for the number one spot at club level. A reliable backup option for Italy.",
+      "playingStyle": "Technical goalkeeper with excellent shot-stopping reflexes and comfortable distribution, well-suited to a possession-based approach.",
+      "keyStrengths": ["Shot-stopping", "Distribution", "Positioning"],
+      "worldCup2026Role": "Second-choice goalkeeper providing quality backup behind Donnarumma.",
+      "notableFact": "Was part of Napoli's Scudetto-winning squad in 2022-23 and has been trusted with the gloves in numerous important Serie A matches."
+    },
+    "Matteo Darmian": {
+      "bio": "Ultra-experienced defender who has played at the highest level for over 15 years, including spells at Manchester United and Inter Milan. At 36, he remains a dependable squad player for Italy.",
+      "playingStyle": "Tactically intelligent, versatile defender who can play right-back or center-back in a three, always positionally disciplined and rarely makes mistakes.",
+      "keyStrengths": ["Tactical intelligence", "Versatility", "Professionalism"],
+      "worldCup2026Role": "Veteran defensive utility player providing experienced cover across the backline with his tactical know-how.",
+      "notableFact": "Has won league titles in both England (with Manchester United) and Italy (with Inter Milan), a testament to his adaptability and longevity."
+    },
+    "Federico Chiesa": {
+      "bio": "Explosive winger who was named Player of the Tournament at Euro 2020 alongside his heroic performances throughout Italy's title run. Has battled serious knee injuries but remains a devastating talent when fit.",
+      "playingStyle": "Direct, fearless winger who drives at defenders with pace and power, excels in big games, and can score spectacular goals in clutch moments.",
+      "keyStrengths": ["Direct dribbling", "Big-game performances", "Pace and power"],
+      "worldCup2026Role": "Key attacking weapon whose ability to beat defenders and produce magic in crucial moments makes him indispensable when fit.",
+      "notableFact": "Scored stunning goals throughout Euro 2020, including against Austria and Spain, cementing his status as one of Italy's greatest modern tournament performers."
+    },
+    "Mattia Zaccagni": {
+      "bio": "Lazio's creative winger who has become a reliable contributor for Italy with his intelligent movement and technical quality. Scored a dramatic late equalizer against Croatia at Euro 2024.",
+      "playingStyle": "Tricky, technical winger who cuts inside onto his stronger foot, creates chances with clever movement, and delivers from set-piece situations.",
+      "keyStrengths": ["Cutting inside", "Technical ability", "Late-game impact"],
+      "worldCup2026Role": "Starting or rotation winger who brings creativity and the ability to unlock tight defenses with his dribbling.",
+      "notableFact": "Scored a dramatic 98th-minute equalizer against Croatia at Euro 2024 to keep Italy's tournament hopes alive."
+    },
+    "Nicolò Barella": {
+      "bio": "Italy and Inter Milan's midfield dynamo, widely considered one of the best box-to-box midfielders in world football. A complete midfielder who contributes at both ends with energy and quality.",
+      "playingStyle": "Explosive box-to-box midfielder who covers enormous ground, arrives in the box to score and assist, tackles aggressively, and drives the team forward with his energy.",
+      "keyStrengths": ["Box-to-box dynamism", "Long-range shooting", "Tireless engine"],
+      "worldCup2026Role": "Starting midfielder and the heartbeat of Italy's team, their most important outfield player whose energy and quality drive everything.",
+      "notableFact": "Has scored in multiple major tournament matches for Italy and is considered the heir to the great Italian midfield tradition of Pirlo and Verratti."
+    },
+    "Moise Kean": {
+      "bio": "Powerful young striker who has revived his career at Fiorentina after underwhelming spells at Everton, PSG, and Juventus. A physically gifted forward who has shown flashes of world-class ability.",
+      "playingStyle": "Strong, athletic striker who uses his physicality to bully defenders, makes intelligent runs behind the line, and finishes with power.",
+      "keyStrengths": ["Physical strength", "Pace", "Powerful finishing"],
+      "worldCup2026Role": "Striker rotation option whose pace and power provide a different dimension when Italy need to stretch the opposition.",
+      "notableFact": "Became Italy's youngest goalscorer in 60 years when he scored on his debut at age 19, and has since rejuvenated his career at Fiorentina."
+    },
+    "Nicolo Fagioli": {
+      "bio": "Technically gifted Juventus midfielder who has returned to football after a betting-related ban, showing maturity and quality in his play. A creative midfielder with excellent vision.",
+      "playingStyle": "Creative, technically refined midfielder with excellent passing vision, comfortable receiving the ball in tight spaces and progressing play through the thirds.",
+      "keyStrengths": ["Passing vision", "Technical refinement", "Composure in tight spaces"],
+      "worldCup2026Role": "Creative midfield depth option who can unlock defenses with his passing when Italy need more invention.",
+      "notableFact": "Was part of Italy's under-21 setup and is considered one of the most technically gifted young Italian midfielders of his generation."
+    },
+    "Mateo Retegui": {
+      "bio": "Argentine-born Italian striker who chose to represent Italy through his Italian heritage. Has quickly become one of Italy's most prolific forwards with an impressive goals-per-game ratio.",
+      "playingStyle": "Clinical, instinctive goal-scorer who makes intelligent runs, has excellent movement in the box, and finishes chances with composure.",
+      "keyStrengths": ["Movement in the box", "Clinical finishing", "Instinctive positioning"],
+      "worldCup2026Role": "Key striker option who provides reliable goal-scoring, capable of starting alongside or as an alternative to Scamacca.",
+      "notableFact": "Born and raised in Argentina, he chose Italy over Argentina for international football and scored on his debut, immediately winning over Italian fans."
+    },
+    "Riccardo Calafiori": {
+      "bio": "Dynamic young center-back who burst onto the scene at Bologna and earned a high-profile move to Arsenal. A ball-playing defender with the ability to surge forward and create from deep.",
+      "playingStyle": "Modern, ball-carrying center-back who steps out of defense with confidence, plays progressive passes, and can even operate as a left-back when needed.",
+      "keyStrengths": ["Ball-carrying from defense", "Progressive passing", "Versatility"],
+      "worldCup2026Role": "Starting center-back or left-back option whose ball-playing ability and versatility make him central to Italy's build-up play.",
+      "notableFact": "His performances at Euro 2024 and Bologna earned him a move to Arsenal, where he has become one of the most exciting young defenders in the Premier League."
+    },
+    "Andrea Cambiaso": {
+      "bio": "Versatile Juventus full-back who can play on either side of the defense with equal effectiveness. A modern full-back whose work rate and tactical intelligence make him invaluable.",
+      "playingStyle": "Two-footed, industrious full-back who covers ground tirelessly, provides width in attack, and tucks inside to create overloads in possession phases.",
+      "keyStrengths": ["Two-footedness", "Work rate", "Tactical versatility"],
+      "worldCup2026Role": "Versatile defensive option who can cover left-back or right-back, providing tactical flexibility across the backline.",
+      "notableFact": "Has drawn interest from top European clubs due to his rare ability to play both flanks at an elite level, a trait that makes him uniquely valuable."
+    },
+    "Guglielmo Vicario": {
+      "bio": "Impressive Tottenham goalkeeper who has become one of the Premier League's most talked-about keepers since his move from Empoli. Known for his bravery and shot-stopping ability.",
+      "playingStyle": "Brave, athletic goalkeeper with exceptional reflexes, commanding presence in the box, and improving distribution.",
+      "keyStrengths": ["Shot-stopping", "Bravery", "Reflexes"],
+      "worldCup2026Role": "Third-choice goalkeeper whose Premier League form makes him a credible alternative should anything happen to the first two options.",
+      "notableFact": "Played an entire Premier League match with a broken ankle, only discovering the fracture after the final whistle, showcasing his extraordinary toughness."
+    },
+    "Davide Frattesi": {
+      "bio": "Goal-scoring midfielder from Inter Milan who has an uncanny ability to arrive in the box at the right moment. A dynamic player who adds goals from midfield, a crucial trait for Italy.",
+      "playingStyle": "Late-arriving midfielder who times his runs into the box perfectly, combines energy and movement with an instinct for being in the right place at the right time.",
+      "keyStrengths": ["Late runs into the box", "Goal-scoring instinct", "Off-the-ball movement"],
+      "worldCup2026Role": "Impact substitute or rotation starter whose goal-scoring ability from midfield makes him a weapon against deep-lying defenses.",
+      "notableFact": "Has scored crucial goals for Italy as a substitute, earning the nickname of Italy's super-sub for his ability to change games off the bench."
+    },
+    "Bryan Cristante": {
+      "bio": "Experienced Roma midfielder who provides solidity and balance in the center of the park. A versatile player who can operate as a defensive midfielder or drop into center-back.",
+      "playingStyle": "Disciplined, physically strong holding midfielder who screens the defense, wins aerial duels, and keeps the team's shape intact.",
+      "keyStrengths": ["Defensive screening", "Aerial ability", "Tactical discipline"],
+      "worldCup2026Role": "Experienced defensive midfield option who provides insurance and stability when Italy need to protect a lead.",
+      "notableFact": "Has been capped over 35 times for Italy and played in every defensive midfield system the national team has used over the past five years."
+    },
+    "Nicolo Zaniolo": {
+      "bio": "Talented but inconsistent winger whose career has been disrupted by serious knee injuries. At his best, he is one of the most exciting Italian attackers, combining power with flair.",
+      "playingStyle": "Powerful, direct winger who drives at defenders with pace and strength, capable of beating players and scoring from range with either foot.",
+      "keyStrengths": ["Physical power", "Direct running", "Shooting ability"],
+      "worldCup2026Role": "Attacking wildcard who can provide energy and directness off the bench, a high-risk, high-reward option in knockout matches.",
+      "notableFact": "Suffered two ACL injuries before age 22 but has shown remarkable resilience in rebuilding his career multiple times."
+    },
+    "Daniel Maldini": {
+      "bio": "Son of AC Milan legend Paolo Maldini, Daniel has forged his own path as an attacking midfielder at Monza and now Atalanta. Carries one of the most famous surnames in football history.",
+      "playingStyle": "Creative, left-footed attacking midfielder who operates in half-spaces, creates chances with intelligent passes, and has a deft touch in the final third.",
+      "keyStrengths": ["Left-footed creativity", "Intelligent positioning", "Final-third passing"],
+      "worldCup2026Role": "Young creative option off the bench, a wildcard whose technical quality can unlock stubborn defenses late in matches.",
+      "notableFact": "Represents the third generation of the Maldini family to play for Italy, following grandfather Cesare and father Paolo, both legendary AC Milan defenders."
+    }
+  }
+}

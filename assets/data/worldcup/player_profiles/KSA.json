@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Mohammed Al-Owais": {
+      "bio": "Saudi Arabia's number one goalkeeper and a key figure at Al-Hilal. His 60 caps make him one of the most experienced players in the squad, and he was the starting keeper at the 2022 World Cup.",
+      "playingStyle": "Commanding goalkeeper with excellent shot-stopping, strong reflexes, and confident handling of crosses",
+      "keyStrengths": ["Shot-stopping", "Reflexes", "Command of the box"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and one of the team's most important players",
+      "notableFact": "Was the goalkeeper for Saudi Arabia's historic 2-1 victory over Argentina at the 2022 World Cup, one of the greatest upsets in tournament history"
+    },
+    "Sultan Al-Ghannam": {
+      "bio": "Experienced right-back from Al-Nassr who has been a regular in the Saudi setup for years. His 55 caps and partnership with some of the Saudi Pro League's biggest stars make him a reliable presence.",
+      "playingStyle": "Attacking full-back who provides width and overlapping runs, with solid defensive fundamentals",
+      "keyStrengths": ["Overlapping runs", "Crossing", "Defensive awareness"],
+      "worldCup2026Role": "Experienced backup right-back competing with Saud Abdulhamid for the starting position",
+      "notableFact": "Has played alongside Cristiano Ronaldo at Al-Nassr, gaining experience from training with one of the greatest players ever"
+    },
+    "Abdullah Madu": {
+      "bio": "Reliable center-back from Al-Nassr who forms part of the experienced core of Saudi Arabia's defense. A steady, no-nonsense defender with 50 caps to his name.",
+      "playingStyle": "Strong, physical center-back who excels in aerial duels and positional defending",
+      "keyStrengths": ["Aerial dominance", "Physicality", "Positional play"],
+      "worldCup2026Role": "Experienced center-back option providing defensive solidity and depth",
+      "notableFact": "Has been part of multiple Al-Nassr title-winning squads in the Saudi Pro League"
+    },
+    "Abdulelah Al-Amri": {
+      "bio": "Rising star of Saudi Arabian football, this Al-Nassr center-back is one of the most valuable defenders in the squad. At 29, he is entering his prime years as a defender.",
+      "playingStyle": "Modern center-back combining physical presence with the ability to play out from the back and carry the ball",
+      "keyStrengths": ["Ball-playing ability", "Pace for a center-back", "Reading of the game"],
+      "worldCup2026Role": "Starting center-back and one of the defensive cornerstones of the team",
+      "notableFact": "One of the highest-valued Saudi players, reflecting his status as a top defender in Asia"
+    },
+    "Ali Al-Bulaihi": {
+      "bio": "Veteran Al-Hilal center-back with 60 caps who has been a fixture in Saudi Arabia's defense for years. Known for his passionate commitment and fiery temperament on the pitch.",
+      "playingStyle": "Aggressive, commanding defender who leads by example with his intensity and willingness to put his body on the line",
+      "keyStrengths": ["Aggression", "Aerial ability", "Leadership"],
+      "worldCup2026Role": "Experienced defensive option whose passion and experience are valuable in high-pressure tournament situations",
+      "notableFact": "Known for his theatrical celebrations and emotional displays, he has become one of the most recognizable Saudi players"
+    },
+    "Salman Al-Faraj": {
+      "bio": "Saudi Arabia's captain and midfield general, this Al-Hilal legend has 80 caps and is one of the most decorated players in Saudi football history. He is the heartbeat of the team.",
+      "playingStyle": "Elegant, left-footed midfielder with superb passing range, vision, and the ability to dictate the tempo of matches",
+      "keyStrengths": ["Passing range", "Leadership", "Set-piece delivery"],
+      "worldCup2026Role": "Captain and starting central midfielder who controls the game's rhythm and leads by example",
+      "notableFact": "Captained Saudi Arabia during the famous 2-1 win over Argentina at the 2022 World Cup in Qatar"
+    },
+    "Abdulrahman Al-Aboud": {
+      "bio": "Pacy right winger from Al-Ittihad who adds speed and directness to Saudi Arabia's attack. A relatively new addition to the national team with 12 caps.",
+      "playingStyle": "Fast, direct winger who beats defenders with pace and delivers dangerous crosses into the box",
+      "keyStrengths": ["Pace", "Crossing", "Direct running"],
+      "worldCup2026Role": "Squad rotation option on the right wing, capable of stretching defenses with his speed",
+      "notableFact": "Made his breakthrough at Al-Ittihad playing alongside Karim Benzema in the Saudi Pro League"
+    },
+    "Abdulrahman Ghareeb": {
+      "bio": "Skillful left winger from Al-Ahli who is one of the most exciting attacking talents in the Saudi Pro League. His technical ability and flair make him a dangerous threat.",
+      "playingStyle": "Tricky winger with excellent close control, quick feet, and the ability to create something out of nothing",
+      "keyStrengths": ["Dribbling", "Close control", "Creativity"],
+      "worldCup2026Role": "Attacking option on the left wing, providing flair and creativity in the final third",
+      "notableFact": "Has played alongside some of the biggest international stars brought to the Saudi Pro League in recent years"
+    },
+    "Firas Al-Buraikan": {
+      "bio": "One of Saudi Arabia's brightest young strikers, the Al-Nassr forward has 10 goals in 25 caps. At 26, he is entering his peak years as the spearhead of the national team attack.",
+      "playingStyle": "Clinical finisher with good pace, intelligent movement, and the ability to score all types of goals",
+      "keyStrengths": ["Finishing", "Pace", "Movement"],
+      "worldCup2026Role": "Starting striker and primary goal threat, expected to lead the line at the World Cup",
+      "notableFact": "Has trained alongside Cristiano Ronaldo at Al-Nassr, learning from one of the greatest goalscorers in history"
+    },
+    "Salem Al-Dawsari": {
+      "bio": "Saudi Arabia's talisman and one of the most celebrated players in the country's football history. The Al-Hilal star has 20 goals in 75 caps and is the team's most dangerous attacker.",
+      "playingStyle": "Explosive left winger with devastating pace, exceptional dribbling, and a thunderous left-footed shot",
+      "keyStrengths": ["Pace", "Shooting", "Dribbling"],
+      "worldCup2026Role": "Key attacking player and match-winner, Saudi Arabia's most important creative outlet",
+      "notableFact": "Scored the iconic winning goal against Argentina at the 2022 World Cup, a stunning curling strike that became one of the tournament's most memorable moments"
+    },
+    "Hatan Bahbri": {
+      "bio": "Experienced right winger from Al-Shabab with 45 caps and 5 goals. A reliable squad player who has served the national team loyally across multiple qualifying campaigns.",
+      "playingStyle": "Intelligent wide player who drifts inside to find pockets of space and combines well with teammates",
+      "keyStrengths": ["Intelligence", "Combination play", "Versatility"],
+      "worldCup2026Role": "Experienced attacking option who can play across the front line and provide tactical flexibility",
+      "notableFact": "One of the few players in the squad who has experience at two World Cups (2018 and 2022)"
+    },
+    "Fawaz Al-Qarni": {
+      "bio": "Experienced backup goalkeeper from Al-Shabab who has patiently waited for his chances with the national team. His 15 caps demonstrate he is a trusted reserve option.",
+      "playingStyle": "Tall, commanding goalkeeper with good shot-stopping ability and strong distribution",
+      "keyStrengths": ["Height advantage", "Shot-stopping", "Distribution"],
+      "worldCup2026Role": "Second-choice goalkeeper providing reliable backup to Mohammed Al-Owais",
+      "notableFact": "Has been a consistent performer in the Saudi Pro League for over a decade"
+    },
+    "Yasser Al-Shahrani": {
+      "bio": "One of Saudi Arabia's most important players, the Al-Hilal left-back has 75 caps and is considered among the best full-backs in Asian football history. His energy and attacking contributions are vital.",
+      "playingStyle": "Dynamic, attack-minded left-back with relentless energy, pace, and excellent crossing ability",
+      "keyStrengths": ["Stamina", "Attacking runs", "Crossing"],
+      "worldCup2026Role": "Starting left-back whose attacking contributions add an extra dimension to Saudi Arabia's play",
+      "notableFact": "Suffered a serious injury during the 2022 World Cup match against Argentina but fought back to full fitness"
+    },
+    "Abdullah Otayf": {
+      "bio": "Experienced Al-Hilal midfielder with 50 caps who provides reliable service in the center of the park. A steady, dependable presence who rarely lets the team down.",
+      "playingStyle": "Composed central midfielder who recycles possession efficiently and provides balance in the middle",
+      "keyStrengths": ["Passing accuracy", "Composure", "Tactical discipline"],
+      "worldCup2026Role": "Experienced midfield option providing depth and tactical versatility",
+      "notableFact": "Has won numerous Saudi Pro League titles with Al-Hilal, one of Asia's most successful clubs"
+    },
+    "Nasser Al-Dawsari": {
+      "bio": "Young Al-Hilal midfielder who is part of the next generation of Saudi talent. His technical ability and energy have earned him 20 caps at just 27 years old.",
+      "playingStyle": "Dynamic, ball-carrying midfielder who drives forward with power and links defense to attack",
+      "keyStrengths": ["Ball carrying", "Dynamism", "Passing"],
+      "worldCup2026Role": "Midfield option who adds energy and forward thrust from central positions",
+      "notableFact": "Despite sharing the surname with Salem Al-Dawsari, the two are not related but both represent Al-Hilal"
+    },
+    "Saud Abdulhamid": {
+      "bio": "The most valuable Saudi player in the squad, this right-back made history by joining Roma in Serie A, becoming one of the first Saudis to play in a top-five European league.",
+      "playingStyle": "Modern, attack-minded full-back with pace, excellent crossing, and the tactical sophistication gained from European football",
+      "keyStrengths": ["Pace", "Crossing", "Tactical awareness"],
+      "worldCup2026Role": "Starting right-back and the team's most high-profile player, bringing European experience to the squad",
+      "notableFact": "Made history as one of the first Saudi players to play in Serie A, paving the way for future Saudi exports to European leagues"
+    },
+    "Hassan Al-Tambakti": {
+      "bio": "Young and talented center-back from Al-Shabab who is part of Saudi Arabia's defensive future. His composure and technical ability mark him out as a modern defender.",
+      "playingStyle": "Ball-playing center-back who is comfortable under pressure and can initiate attacks from deep positions",
+      "keyStrengths": ["Composure on the ball", "Passing from defense", "Positional intelligence"],
+      "worldCup2026Role": "Starting center-back partner for Al-Amri, forming a young and athletic defensive pairing",
+      "notableFact": "Was part of the Saudi squad at the 2022 World Cup in Qatar, gaining invaluable tournament experience"
+    },
+    "Nawaf Al-Abed": {
+      "bio": "Veteran attacking midfielder from Al-Shabab with 60 caps and 8 goals. One of the most technically gifted Saudi players of his generation, known for spectacular goals.",
+      "playingStyle": "Creative playmaker with sublime technical skill, vision, and the ability to produce moments of magic",
+      "keyStrengths": ["Technical skill", "Long-range shooting", "Vision"],
+      "worldCup2026Role": "Experienced creative option off the bench, capable of unlocking tight defenses with his quality",
+      "notableFact": "Famous for scoring a stunning long-range goal as a teenager, which went viral and announced his arrival on the football scene"
+    },
+    "Haitham Asiri": {
+      "bio": "Exciting young winger from Al-Ahli who represents the new wave of Saudi attacking talent. At 25, his pace and directness make him a dangerous threat.",
+      "playingStyle": "Explosive winger with blistering pace, quick feet, and the confidence to take on defenders one-on-one",
+      "keyStrengths": ["Pace", "Directness", "Confidence"],
+      "worldCup2026Role": "Impact substitute whose speed can cause problems for tiring defenders in the second half",
+      "notableFact": "Part of the exciting young generation of Saudi players developed in the enhanced Saudi Pro League era"
+    },
+    "Abdulrahman Al-Obaid": {
+      "bio": "Young center-back from Al-Shabab who adds depth to Saudi Arabia's defensive options. A physical defender who has shown consistent improvement in recent seasons.",
+      "playingStyle": "Strong, physical defender who competes well in duels and provides reliable backup in the center of defense",
+      "keyStrengths": ["Physical presence", "Dueling", "Consistency"],
+      "worldCup2026Role": "Defensive squad depth, capable of stepping in when needed at center-back",
+      "notableFact": "Has been part of Al-Shabab's competitive squad in the increasingly strong Saudi Pro League"
+    },
+    "Mohammed Al-Rubaie": {
+      "bio": "Young goalkeeper from Al-Ahli who is part of Saudi Arabia's goalkeeping depth. With 5 caps, he is still building his international experience but shows strong potential.",
+      "playingStyle": "Athletic, agile goalkeeper with sharp reflexes and improving command of his area",
+      "keyStrengths": ["Reflexes", "Agility", "Athletic ability"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining experience and development from the World Cup environment",
+      "notableFact": "Represents the future of Saudi goalkeeping alongside the established Al-Owais"
+    },
+    "Mohammed Kanno": {
+      "bio": "Powerful Al-Hilal midfielder with 55 caps and 4 goals who is one of the most important players in the Saudi midfield. His physical presence and engine make him indispensable.",
+      "playingStyle": "Box-to-box powerhouse with tremendous stamina, strong tackling, and the ability to cover every blade of grass",
+      "keyStrengths": ["Physical power", "Stamina", "Ball-winning ability"],
+      "worldCup2026Role": "Starting central midfielder whose energy and physicality are crucial to Saudi Arabia's midfield dominance",
+      "notableFact": "His tireless performance against Argentina at the 2022 World Cup was key to Saudi Arabia's historic victory"
+    },
+    "Ayman Yahya": {
+      "bio": "Exciting young striker from Al-Nassr who is the future of Saudi Arabian attacking football. At just 24, he has already shown a lethal instinct with 3 goals in 10 caps.",
+      "playingStyle": "Quick, intelligent striker with sharp movement, clinical finishing, and the ability to play between the lines",
+      "keyStrengths": ["Movement", "Finishing", "Intelligence"],
+      "worldCup2026Role": "Exciting young forward option who can come off the bench and change the game with his energy and goals",
+      "notableFact": "Has emerged as a potential star despite the intense competition for places at Al-Nassr"
+    },
+    "Ali Lajami": {
+      "bio": "Young center-back from Al-Ahli who provides additional defensive options. His tall frame and physical attributes make him well-suited to international football.",
+      "playingStyle": "Imposing central defender who uses his height and strength to dominate aerial duels and defend set pieces",
+      "keyStrengths": ["Height", "Aerial presence", "Physicality"],
+      "worldCup2026Role": "Defensive depth player who is particularly useful for defending set pieces and seeing out leads",
+      "notableFact": "At 188cm, he is one of the tallest players in the Saudi squad, giving them an aerial advantage"
+    },
+    "Khalid Al-Ghannam": {
+      "bio": "Young right winger from Al-Nassr who is one of the most exciting prospects in Saudi football. At 24, his speed and skill make him a potential breakout star at the World Cup.",
+      "playingStyle": "Lightning-fast winger with exceptional pace, skillful dribbling, and an improving end product",
+      "keyStrengths": ["Raw pace", "Dribbling", "Youth and energy"],
+      "worldCup2026Role": "Young attacking wildcard who can be unleashed against tiring defenses as a game-changing substitute",
+      "notableFact": "Brother of Sultan Al-Ghannam, the two have represented Saudi Arabia together in one of the national team's family connections"
+    },
+    "Musab Al-Juwayr": {
+      "bio": "The youngest player in the Saudi squad, this Al-Hilal striker represents the future of Saudi Arabian football. At just 22, his inclusion signals the federation's faith in youth development.",
+      "playingStyle": "Energetic young striker with good movement, a strong work ethic, and an eye for goal",
+      "keyStrengths": ["Youth", "Energy", "Goal instinct"],
+      "worldCup2026Role": "Young developmental player whose World Cup inclusion is an investment in Saudi Arabia's football future",
+      "notableFact": "The youngest member of the squad, he has the potential to be a star for Saudi Arabia for years to come"
+    }
+  }
+}

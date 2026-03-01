@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Antony Silva": {
+      "bio": "Veteran goalkeeper and longtime presence in the Paraguayan national team setup. A product of Cerro Porteno's academy, he has been a reliable shot-stopper in the domestic league for well over a decade.",
+      "playingStyle": "Experienced keeper who commands his area well, strong on crosses and comfortable organizing the defensive line.",
+      "keyStrengths": ["Shot-stopping", "Cross collection", "Experience under pressure"],
+      "worldCup2026Role": "First-choice goalkeeper providing calm leadership and big-game experience from the back.",
+      "notableFact": "At 42, he would be one of the oldest players at the 2026 World Cup, showcasing remarkable longevity in professional football."
+    },
+    "Alberto Espinola": {
+      "bio": "Dynamic right-back who has been a consistent performer for Cerro Porteno in the Paraguayan top flight. Known for his energy up and down the right flank.",
+      "playingStyle": "Overlapping fullback who combines defensive discipline with effective attacking runs and crossing ability.",
+      "keyStrengths": ["Overlapping runs", "Defensive work rate", "Crossing accuracy"],
+      "worldCup2026Role": "Starting right-back providing width and energy on the right side of Paraguay's defense.",
+      "notableFact": "A product of Cerro Porteno's renowned youth academy, he has been a consistent figure in one of Paraguay's most storied clubs."
+    },
+    "Omar Alderete": {
+      "bio": "Imposing left-footed center-back who has made his mark in La Liga with Getafe. His aerial presence and comfort on the ball make him a modern defensive profile.",
+      "playingStyle": "Ball-playing center-back with strong aerial ability, comfortable stepping forward with the ball and distributing to midfield.",
+      "keyStrengths": ["Aerial dominance", "Left-footed passing", "Physical presence"],
+      "worldCup2026Role": "Starting center-back anchoring Paraguay's defense, particularly important for set-piece situations on both ends.",
+      "notableFact": "One of the few Paraguayan defenders plying his trade in La Liga, gaining experience against some of the world's best forwards every week."
+    },
+    "Fabian Balbuena": {
+      "bio": "Experienced center-back who has played in England, Brazil, and Russia during a well-traveled career. Former West Ham defender known for his physicality and heading ability.",
+      "playingStyle": "Traditional no-nonsense center-back who is strong in tackles, dominant in the air, and capable of scoring from set pieces.",
+      "keyStrengths": ["Aerial duels", "Physical defending", "Set-piece threat"],
+      "worldCup2026Role": "Veteran defensive option and senior squad presence, providing cover and leadership in the backline.",
+      "notableFact": "Scored memorable goals during his time at West Ham United, including a debut Premier League goal that endeared him to the club's fans."
+    },
+    "Gustavo Gomez": {
+      "bio": "Captain and defensive leader who has been a pillar at Palmeiras in Brazil, winning multiple titles including the Copa Libertadores. Paraguay's most experienced and decorated defender.",
+      "playingStyle": "Commanding center-back who leads by example with aggressive defending, aerial superiority, and a knack for scoring crucial goals from set pieces.",
+      "keyStrengths": ["Leadership", "Aerial prowess", "Defensive organization"],
+      "worldCup2026Role": "Captain and starting center-back, the emotional and defensive leader of the entire squad.",
+      "notableFact": "Has won multiple Copa Libertadores titles with Palmeiras, making him one of the most decorated Paraguayan players of his generation."
+    },
+    "Junior Alonso": {
+      "bio": "Versatile left-footed defender who has played in Argentina, Brazil, and Russia. Known for his composure on the ball and ability to play out from the back.",
+      "playingStyle": "Elegant left-footed center-back who excels in possession-based systems, comfortable carrying the ball forward and picking progressive passes.",
+      "keyStrengths": ["Ball progression", "Left-footed distribution", "Tactical intelligence"],
+      "worldCup2026Role": "Starting center-back who provides balance alongside Gustavo Gomez, particularly valuable in building play from the back.",
+      "notableFact": "Was a key player in Atletico Mineiro's historic 2021 Copa Libertadores triumph, one of the biggest achievements in the club's history."
+    },
+    "Mathias Villasanti": {
+      "bio": "Dynamic box-to-box midfielder who has become a star at Gremio in the Brazilian Serie A. Combines tireless running with technical quality and an eye for goal.",
+      "playingStyle": "Energetic central midfielder who covers huge amounts of ground, contributing to both defensive duties and attacking transitions.",
+      "keyStrengths": ["Engine and stamina", "Ball recovery", "Driving runs from midfield"],
+      "worldCup2026Role": "Starting central midfielder and the engine room of Paraguay's midfield, connecting defense to attack with his runs.",
+      "notableFact": "Has become one of the most popular players at Gremio, where fans have embraced him as a key figure in the club's midfield."
+    },
+    "Julio Enciso": {
+      "bio": "Teenage sensation who made a big-money move to Brighton in the Premier League, becoming one of the youngest Paraguayan exports to a top European league. A prodigious talent with fearless creativity.",
+      "playingStyle": "Explosive attacking midfielder with dazzling dribbling, a powerful shot, and the confidence to take on defenders in any situation.",
+      "keyStrengths": ["Dribbling", "Long-range shooting", "Creativity"],
+      "worldCup2026Role": "Star playmaker and Paraguay's most talented attacker, expected to be the creative hub and main goal threat.",
+      "notableFact": "Became one of the youngest Paraguayan players ever to sign for a Premier League club, arriving at Brighton at just 18 years old."
+    },
+    "Angel Romero": {
+      "bio": "Experienced and versatile attacker who has been one of Paraguay's most consistent performers for over a decade. A longtime figure at Corinthians in Brazil with strong goalscoring numbers.",
+      "playingStyle": "Tricky winger who can play across the front line, dangerous with his pace and directness, and capable of both creating and finishing chances.",
+      "keyStrengths": ["Pace and directness", "Versatility across the front line", "Experience"],
+      "worldCup2026Role": "Senior attacking option who provides versatility and experience in the forward line, capable of playing on either wing.",
+      "notableFact": "Along with his twin brother Oscar, the Romero twins became one of the most famous footballing siblings in Paraguayan history."
+    },
+    "Miguel Almiron": {
+      "bio": "Paraguay's most recognizable star on the global stage, the Newcastle winger enjoyed a sensational 2022-23 Premier League season and has been a consistent performer in English football. Previously a standout in MLS with Atlanta United.",
+      "playingStyle": "Lightning-quick winger who drives at defenders with pace, cuts inside to shoot, and presses relentlessly off the ball.",
+      "keyStrengths": ["Explosive pace", "Work rate and pressing", "Cutting inside to shoot"],
+      "worldCup2026Role": "Star winger and talisman, Paraguay's most dangerous attacker and the player opponents will fear most.",
+      "notableFact": "Was nominated for the 2022 Ballon d'Or after a stunning run of form at Newcastle, scoring spectacular goals including long-range strikes and solo efforts."
+    },
+    "Adam Bareiro": {
+      "bio": "Clinical striker who earned a move to River Plate in Argentina after prolific scoring in South American football. A natural goalscorer with strong aerial ability.",
+      "playingStyle": "Traditional target striker who excels in the penalty area, combining good movement with clinical finishing and aerial prowess.",
+      "keyStrengths": ["Finishing", "Aerial ability", "Movement in the box"],
+      "worldCup2026Role": "Starting striker competing for the central forward role, a key source of goals for Paraguay.",
+      "notableFact": "His move to River Plate cemented his status as one of Paraguay's top strikers, joining one of South America's most prestigious clubs."
+    },
+    "Rodrigo Fernandez": {
+      "bio": "Reliable backup goalkeeper plying his trade in the Brazilian Serie A with America Mineiro. Provides solid depth behind the first-choice keeper.",
+      "playingStyle": "Steady shot-stopper who is dependable in one-on-one situations and comfortable with distribution from the back.",
+      "keyStrengths": ["Shot-stopping", "Distribution", "Composure"],
+      "worldCup2026Role": "Second-choice goalkeeper providing competition and reliable backup to Antony Silva.",
+      "notableFact": "Gained valuable experience playing in the competitive Brazilian league system, one of the toughest environments for goalkeepers."
+    },
+    "Santiago Arzamendia": {
+      "bio": "Attack-minded left-back who has established himself in Liga MX with Monterrey. Known for his pace down the left flank and ability to deliver dangerous crosses.",
+      "playingStyle": "Marauding left-back who loves to get forward, delivering crosses from wide areas and contributing to the team's attacking play.",
+      "keyStrengths": ["Pace", "Crossing ability", "Attacking runs"],
+      "worldCup2026Role": "Starting left-back providing offensive width and energy on Paraguay's left side.",
+      "notableFact": "Has adapted well to Mexican football after leaving Paraguay, becoming a regular starter at one of Liga MX's biggest clubs in Monterrey."
+    },
+    "Andres Cubas": {
+      "bio": "Combative defensive midfielder playing in MLS with the Vancouver Whitecaps. A ball-winning specialist who provides crucial protection in front of the defense.",
+      "playingStyle": "Aggressive ball-winner who excels at reading interceptions, breaking up play, and keeping things simple in possession.",
+      "keyStrengths": ["Ball recovery", "Tackling", "Defensive positioning"],
+      "worldCup2026Role": "Midfield enforcer providing defensive cover and balance, either as a starter or key rotation option in central midfield.",
+      "notableFact": "Has been a standout performer in MLS, earning recognition as one of the best defensive midfielders in the league."
+    },
+    "Hernesto Caballero": {
+      "bio": "Young central midfielder emerging from the domestic league with Libertad. Represents the next generation of Paraguayan midfielders coming through the local system.",
+      "playingStyle": "Tidy possession player who keeps the ball moving efficiently, contributing to buildup play with his short passing and awareness.",
+      "keyStrengths": ["Passing accuracy", "Positional awareness", "Composure on the ball"],
+      "worldCup2026Role": "Squad depth option in central midfield, offering a composed passing presence off the bench.",
+      "notableFact": "A product of Libertad's youth system, one of Paraguay's most successful clubs in continental competition."
+    },
+    "Robert Morales": {
+      "bio": "Experienced right-back and longtime servant of Cerro Porteno in the Paraguayan top flight. Provides veteran depth and defensive reliability to the squad.",
+      "playingStyle": "Defensively solid fullback who prioritizes his positional duties and is reliable in one-on-one defending situations.",
+      "keyStrengths": ["Defensive discipline", "One-on-one defending", "Experience"],
+      "worldCup2026Role": "Backup right-back providing experienced cover on the right side of defense.",
+      "notableFact": "A lifelong Cerro Porteno player, he embodies the loyalty and dedication that Paraguayan football is known for."
+    },
+    "Alejandro Romero Gamarra": {
+      "bio": "Creative central midfielder known as 'Kaku' who has impressed at Gremio in Brazil. Brings flair and vision to Paraguay's midfield with his technical ability.",
+      "playingStyle": "Technically gifted midfielder who excels in tight spaces, capable of threading key passes and controlling the tempo of matches.",
+      "keyStrengths": ["Vision and passing", "Technical skill", "Set-piece delivery"],
+      "worldCup2026Role": "Creative midfield option who can unlock defenses with his passing, providing an alternative tactical approach.",
+      "notableFact": "Known by his nickname 'Kaku,' he had a successful spell in MLS with New York Red Bulls before returning to South American football."
+    },
+    "Blas Riveros": {
+      "bio": "Young left-back from Olimpia who offers defensive depth on the left side. A developing talent in Paraguay's domestic league.",
+      "playingStyle": "Solid defensive fullback who is disciplined positionally and effective in one-on-one duels.",
+      "keyStrengths": ["Defensive stability", "One-on-one defending", "Positioning"],
+      "worldCup2026Role": "Backup left-back option providing squad depth and competition for places in the fullback positions.",
+      "notableFact": "Plays for Olimpia, one of Paraguay's most decorated clubs and the first South American team to win the Intercontinental Cup."
+    },
+    "Derlis Gonzalez": {
+      "bio": "Experienced winger who had stints in European football before returning to Olimpia in Paraguay. Known for his pace and direct style of play on the right wing.",
+      "playingStyle": "Direct winger who uses his speed to take on defenders, dangerous when running at the backline and capable of producing moments of individual brilliance.",
+      "keyStrengths": ["Pace", "Dribbling", "Direct running"],
+      "worldCup2026Role": "Experienced wide option who can stretch defenses with his pace, particularly useful as a second-half substitute.",
+      "notableFact": "Previously played for Dinamo Kiev in the Ukrainian Premier League, gaining Champions League experience during his time in Europe."
+    },
+    "Antonio Sanabria": {
+      "bio": "Serie A striker with extensive European experience at Torino, previously at Barcelona B, Roma, and Betis. Paraguay's most proven goalscorer in top European competition.",
+      "playingStyle": "Intelligent forward who combines well with teammates, capable of finishing with both feet and dangerous in and around the penalty area.",
+      "keyStrengths": ["Finishing with both feet", "Link-up play", "Positioning in the box"],
+      "worldCup2026Role": "Primary striker competing with Bareiro for the central forward spot, bringing European pedigree and big-game experience.",
+      "notableFact": "Has spent nearly his entire career in European football, including time at FC Barcelona's youth academy, making him one of Paraguay's most seasoned European exports."
+    },
+    "Isidro Pitta": {
+      "bio": "Rising striker who has been in excellent scoring form in Brazilian football with Red Bull Bragantino. A powerful forward emerging as a new option for Paraguay's attack.",
+      "playingStyle": "Strong and physical striker who leads the line effectively, good at holding up play and bringing others into the game while also being a threat in the box.",
+      "keyStrengths": ["Physical strength", "Hold-up play", "Heading ability"],
+      "worldCup2026Role": "Emerging striking option who offers a different physical dimension to Paraguay's forward line.",
+      "notableFact": "Has been one of the breakthrough Paraguayan strikers in Brazilian football, earning his international call-up through consistent performances."
+    },
+    "Robert Piris da Motta": {
+      "bio": "Versatile left-sided defender who has played across South American football, most recently at Sao Paulo. Capable of playing both left-back and center-back.",
+      "playingStyle": "Left-footed defender who offers versatility across the backline, comfortable going forward and delivering crosses from deep positions.",
+      "keyStrengths": ["Versatility", "Left-footed delivery", "Defensive reliability"],
+      "worldCup2026Role": "Utility defender who can cover multiple positions in the backline, providing important tactical flexibility.",
+      "notableFact": "Was part of Paraguay's squad for major international tournaments and has represented the country at Copa America level."
+    },
+    "Carlos Gonzalez": {
+      "bio": "Third-choice goalkeeper from Olimpia who completes Paraguay's goalkeeping trio. A dependable domestic league keeper with experience in Paraguayan football.",
+      "playingStyle": "Reliable goalkeeper who focuses on solid positioning and safe handling, a steady presence between the posts.",
+      "keyStrengths": ["Positioning", "Handling", "Consistency"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth and training competition within the goalkeeping group.",
+      "notableFact": "Plays for Olimpia, Paraguay's most successful club internationally with three Copa Libertadores titles."
+    },
+    "Ramon Sosa": {
+      "bio": "Exciting young winger who has made a name for himself at Talleres in Argentine football. A quick and direct attacker who has caught the eye with his dribbling and flair.",
+      "playingStyle": "Inverted winger who cuts inside from the left onto his stronger right foot, dangerous when driving at defenders and shooting from distance.",
+      "keyStrengths": ["Dribbling", "Pace", "Cutting inside to shoot"],
+      "worldCup2026Role": "Exciting young attacking option who can change games with his directness and flair from the left wing.",
+      "notableFact": "Has been one of the standout young Paraguayan talents in Argentine football, drawing attention from clubs across South America."
+    },
+    "Diego Gomez": {
+      "bio": "Young and talented midfielder who plays alongside Lionel Messi at Inter Miami in MLS. One of Paraguay's brightest young prospects with a big future ahead.",
+      "playingStyle": "Box-to-box midfielder with excellent technical ability, capable of dictating play and contributing goals from central areas.",
+      "keyStrengths": ["Technical quality", "Goal threat from midfield", "Energy"],
+      "worldCup2026Role": "Rising midfield talent who provides youth and dynamism, either as a starter or high-impact substitute.",
+      "notableFact": "Plays alongside Lionel Messi at Inter Miami, gaining invaluable experience training and competing with one of football's greatest ever players."
+    },
+    "Wilder Viera": {
+      "bio": "Emerging midfielder from Libertad who has recently broken into the national team picture. Represents the new wave of Paraguayan midfield talent.",
+      "playingStyle": "Industrious central midfielder who contributes defensive work and keeps possession ticking over with simple, effective passing.",
+      "keyStrengths": ["Work rate", "Ball retention", "Defensive contribution"],
+      "worldCup2026Role": "Young squad player who adds midfield depth and energy, available as a fresh-legs option from the bench.",
+      "notableFact": "Part of a strong Libertad squad that has been one of the top clubs in Paraguayan football in recent years."
+    }
+  }
+}

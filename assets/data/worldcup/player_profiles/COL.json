@@ -1,0 +1,186 @@
+{
+  "players": {
+    "David Ospina": {
+      "bio": "One of Colombia's most capped goalkeepers, Ospina built his European reputation at Nice, Arsenal, and Napoli before returning home to Atletico Nacional. A veteran leader who has been Colombia's first-choice keeper across multiple major tournaments.",
+      "playingStyle": "Composed shot-stopper with excellent reflexes and command of his area, known for organizing the defense and distributing quickly to start counterattacks.",
+      "keyStrengths": ["Shot-stopping reflexes", "Penalty area command", "Experience under pressure"],
+      "worldCup2026Role": "Veteran backup goalkeeper providing leadership and tournament experience to the squad.",
+      "notableFact": "Started every match for Colombia in both the 2014 and 2018 World Cups, keeping clean sheets against Uruguay and Poland."
+    },
+    "Daniel Munoz": {
+      "bio": "A dynamic right-back who made his name at Atletico Nacional before moving to Genk and then Crystal Palace. Munoz is one of the most attacking fullbacks in the Premier League, combining defensive reliability with a goalscoring threat.",
+      "playingStyle": "Marauding right-back who functions almost as a wing-back, making overlapping runs and arriving late in the box. Tenacious in the tackle and tireless in his work rate.",
+      "keyStrengths": ["Overlapping runs", "Aerial ability", "Defensive intensity"],
+      "worldCup2026Role": "Starting right-back who provides width, attacking thrust, and set-piece threat from the back line.",
+      "notableFact": "Scored a dramatic header against Brazil in the 2024 Copa America quarterfinals to help Colombia advance."
+    },
+    "Jhon Lucumi": {
+      "bio": "A left-footed center-back who developed through Colombian football before establishing himself in Serie A with Bologna. Lucumi's composure on the ball and reading of the game have made him a fixture in the national team's defensive setup.",
+      "playingStyle": "Ball-playing center-back who excels at stepping into midfield with the ball, comfortable under pressure and precise in his long-range passing.",
+      "keyStrengths": ["Left-footed distribution", "Positional intelligence", "Progressive passing"],
+      "worldCup2026Role": "Starting center-back in a left-sided role, tasked with building play from the back and neutralizing opposing forwards.",
+      "notableFact": "Played a key role in Bologna's surprise Champions League qualification in the 2023-24 Serie A season."
+    },
+    "Davinson Sanchez": {
+      "bio": "A physically imposing center-back who rose to prominence at Ajax before a big-money move to Tottenham. After several seasons in the Premier League, Sanchez moved to Galatasaray where he has been a defensive cornerstone. A longtime Colombia international with major tournament experience.",
+      "playingStyle": "Athletic and powerful defender who excels in aerial duels and one-on-one situations, using his pace and strength to recover and win the ball back.",
+      "keyStrengths": ["Aerial dominance", "Recovery pace", "Physical strength"],
+      "worldCup2026Role": "Experienced center-back option providing depth and tournament know-how to the defensive unit.",
+      "notableFact": "Was part of the Ajax squad that reached the 2017 Europa League final and made his World Cup debut at Russia 2018."
+    },
+    "Wilmar Barrios": {
+      "bio": "A midfield destroyer who earned his reputation at Boca Juniors before moving to Zenit St. Petersburg. Barrios is the engine room of Colombia's midfield, providing the defensive shield that allows the creative players ahead of him to flourish.",
+      "playingStyle": "Classic defensive midfielder who reads the game exceptionally well, breaks up opposition attacks, and keeps possession ticking over with simple, effective passing.",
+      "keyStrengths": ["Tackling and interceptions", "Positional discipline", "Ball recovery"],
+      "worldCup2026Role": "First-choice defensive midfielder anchoring the base of Colombia's midfield and protecting the back four.",
+      "notableFact": "Has been one of the most consistent players in the Russian Premier League since joining Zenit in 2019, winning multiple league titles."
+    },
+    "Jefferson Lerma": {
+      "bio": "A combative central midfielder who spent years at Bournemouth in the Premier League before joining Crystal Palace. Lerma brings physicality, energy, and an all-action style to Colombia's midfield alongside Barrios.",
+      "playingStyle": "Box-to-box midfielder with a fierce competitive edge, capable of winning the ball back and driving forward. Combines defensive discipline with an occasional goal threat.",
+      "keyStrengths": ["Pressing intensity", "Physicality in duels", "Versatility across midfield roles"],
+      "worldCup2026Role": "Key midfield partner alongside Barrios, providing energy, pressing, and the ability to break forward in transition.",
+      "notableFact": "Scored the Copa America 2024 semi-final goal against Uruguay that helped send Colombia to the final."
+    },
+    "Luis Diaz": {
+      "bio": "Colombia's most dynamic attacker, Diaz rose from humble beginnings in La Guajira to become a Liverpool star. He first gained international attention at the 2021 Copa America before a move from Porto to Anfield, where his electric dribbling and goal threat have made him one of the Premier League's most exciting wingers.",
+      "playingStyle": "Explosive left winger who cuts inside on his right foot, combining blistering pace with close dribbling, creative flair, and a powerful shot from distance.",
+      "keyStrengths": ["Explosive pace and dribbling", "Cutting inside to shoot", "High pressing from the front"],
+      "worldCup2026Role": "Colombia's talisman and primary attacking threat on the left wing, expected to be the team's most dangerous player in the tournament.",
+      "notableFact": "His father was kidnapped by guerrillas in 2022, and Diaz dedicated his subsequent goals to him; his father was eventually released safely."
+    },
+    "Jorge Carrascal": {
+      "bio": "A skillful attacking midfielder who made his name at River Plate in Argentina before moving to CSKA Moscow and then Flamengo in Brazil. Carrascal is known for his flair and creativity in the final third.",
+      "playingStyle": "Technically gifted playmaker who thrives in tight spaces, using quick feet, clever movement, and through balls to unlock defenses.",
+      "keyStrengths": ["Technical skill in tight spaces", "Through balls and key passes", "Creativity under pressure"],
+      "worldCup2026Role": "Attacking midfield rotation option providing creative depth behind the strikers when fresh legs or a change of approach is needed.",
+      "notableFact": "Once scored a sensational rabona goal for River Plate that went viral on social media."
+    },
+    "Duvan Zapata": {
+      "bio": "A powerful target man who has been one of the most prolific Colombian strikers of his generation. Zapata spent years terrorizing Serie A defenses at Sampdoria, Atalanta, and Torino, using his strength and finishing ability to consistently deliver goals.",
+      "playingStyle": "Physical center forward who uses his imposing frame to hold up play, bring teammates into the attack, and finish with power from close range and distance.",
+      "keyStrengths": ["Hold-up play and physicality", "Powerful finishing", "Aerial threat"],
+      "worldCup2026Role": "Experienced striker option providing a physical presence and aerial threat, likely as a substitute impact player.",
+      "notableFact": "Scored 23 goals in the 2021-22 Serie A season for Atalanta, one of the best tallies by a Colombian in a single European league campaign."
+    },
+    "James Rodriguez": {
+      "bio": "The iconic playmaker who became a global star at the 2014 World Cup in Brazil, winning the Golden Boot with six goals. James has played for Porto, Monaco, Real Madrid, Bayern Munich, and Everton among others. Though his career has taken him through many clubs, his quality on the ball remains undeniable.",
+      "playingStyle": "Elegant left-footed playmaker with world-class vision and set-piece delivery, capable of unlocking any defense with a single pass or moment of brilliance.",
+      "keyStrengths": ["Vision and through balls", "Set-piece mastery", "Left-footed technique"],
+      "worldCup2026Role": "Veteran creative leader and set-piece specialist who provides experience and big-game composure, likely as a starter or key substitute in the number 10 role.",
+      "notableFact": "Won the 2014 World Cup Golden Boot with six goals, including a stunning volley against Uruguay widely considered one of the greatest World Cup goals ever."
+    },
+    "Juan Cuadrado": {
+      "bio": "One of Colombia's most decorated players, Cuadrado has had a storied career at Fiorentina, Chelsea, and especially Juventus, where he became a fan favorite over nearly a decade. At 38, he brings invaluable experience to what could be his final major tournament.",
+      "playingStyle": "Versatile right-sided player combining pace, trickery, and crossing ability. Can play as a winger or wing-back, using his experience to manage game situations.",
+      "keyStrengths": ["Crossing accuracy", "Experience in big matches", "Tactical versatility"],
+      "worldCup2026Role": "Veteran squad member offering leadership, tactical flexibility, and the ability to manage the tempo of matches from the right flank.",
+      "notableFact": "Won nine Serie A titles with Juventus and has represented Colombia at three World Cups (2014, 2018, and now 2026)."
+    },
+    "Camilo Vargas": {
+      "bio": "A veteran goalkeeper who has built a strong career across South America and Mexico, most notably at Atlas in Liga MX. Vargas has been a reliable second-choice keeper for Colombia for many years.",
+      "playingStyle": "Agile goalkeeper known for his shot-stopping ability and command of his penalty area, with good reflexes and consistency in one-on-one situations.",
+      "keyStrengths": ["Agile shot-stopping", "Consistency", "Penalty area control"],
+      "worldCup2026Role": "Experienced backup goalkeeper capable of stepping in if needed, providing competition and squad depth at the position.",
+      "notableFact": "Helped Atlas win back-to-back Liga MX titles in 2021 and 2022, ending the club's 70-year championship drought."
+    },
+    "Yerry Mina": {
+      "bio": "A towering center-back who gained fame for his goal-scoring exploits at the 2018 World Cup and his entertaining celebrations. Mina has played for Palmeiras, Barcelona, Everton, and Fiorentina, bringing a unique combination of defensive power and attacking threat from set pieces.",
+      "playingStyle": "Dominant aerial presence who excels in both defensive and attacking set-piece situations. A physical, aggressive defender who imposes himself on strikers.",
+      "keyStrengths": ["Aerial dominance on set pieces", "Physical defending", "Goal threat from corners"],
+      "worldCup2026Role": "Key center-back and set-piece weapon, expected to be a starter and a significant goal threat from corners and free kicks.",
+      "notableFact": "Scored three headed goals at the 2018 World Cup in Russia, including the late equalizer against England in the round of 16."
+    },
+    "Luis Sinisterra": {
+      "bio": "A talented winger who emerged through Colombian football and developed at Feyenoord before moving to Leeds United and then Bournemouth in the Premier League. Sinisterra offers pace, directness, and a goal threat from either flank.",
+      "playingStyle": "Pacy inverted winger who cuts inside from the left on his right foot, capable of beating defenders one-on-one and striking from distance or delivering dangerous crosses.",
+      "keyStrengths": ["Pace and directness", "Cutting inside to shoot", "One-on-one dribbling"],
+      "worldCup2026Role": "Rotation option on the left wing providing depth behind Luis Diaz, or available as a right-wing alternative to change the dynamic of attacks.",
+      "notableFact": "Scored on his Premier League debut for Leeds United and was named Eredivisie Player of the Month during his breakout season at Feyenoord."
+    },
+    "Mateus Uribe": {
+      "bio": "A reliable central midfielder who spent years at Porto in Portugal before returning to Colombia with Atletico Nacional. Uribe brings composure, passing range, and a powerful shot to Colombia's midfield options.",
+      "playingStyle": "Technically sound midfielder with a strong shot from distance and the ability to control the tempo of the game through intelligent positioning and distribution.",
+      "keyStrengths": ["Long-range shooting", "Ball retention", "Passing range"],
+      "worldCup2026Role": "Experienced midfield depth option who can provide control and composure in matches requiring game management.",
+      "notableFact": "Won three consecutive Primeira Liga titles with Porto and scored several spectacular goals from outside the box during his time in Portugal."
+    },
+    "John Cordoba": {
+      "bio": "A powerful striker who has plied his trade in Germany and Russia, notably at Cologne, Hertha Berlin, and Krasnodar. Cordoba uses his physical attributes to lead the line and create opportunities for teammates.",
+      "playingStyle": "Physical target man who excels at holding the ball up, winning aerial duels, and using his strength to bully defenders. Brings a different dimension to the attack.",
+      "keyStrengths": ["Physical presence", "Hold-up play", "Aerial duels"],
+      "worldCup2026Role": "Backup striker providing a direct, physical option off the bench when Colombia need to change their attacking approach.",
+      "notableFact": "Has scored goals in the Bundesliga, Bundesliga 2, and Russian Premier League, showcasing his adaptability across different European football cultures."
+    },
+    "Johan Mojica": {
+      "bio": "A left-back who has spent much of his career in Spain, notably at Girona and Mallorca. Mojica offers an attacking presence from the left side and has been a regular in the Colombian squad over recent years.",
+      "playingStyle": "Attack-minded left-back with strong crossing ability and the stamina to get up and down the flank throughout the match.",
+      "keyStrengths": ["Crossing from the left", "Stamina and work rate", "Attacking overlaps"],
+      "worldCup2026Role": "Starting left-back providing width and attacking support down the left side, working in tandem with Luis Diaz.",
+      "notableFact": "Was a key part of Girona's fairy-tale rise in La Liga and has been one of the most consistent Colombian fullbacks in European football."
+    },
+    "Carlos Cuesta": {
+      "bio": "A young center-back who has developed impressively at Genk in the Belgian Pro League. Cuesta has become one of the most promising Colombian defenders, earning regular national team call-ups through his consistent performances.",
+      "playingStyle": "Modern center-back comfortable building from the back, combining solid defending with the ability to step forward and progress play through passing.",
+      "keyStrengths": ["Ball-playing from defense", "Composure under pressure", "Anticipation and positioning"],
+      "worldCup2026Role": "Young defensive depth option who can step in at center-back and offers a long-term future for the national team.",
+      "notableFact": "Has been one of the highest-rated defenders in the Belgian Pro League and earned his first senior Colombia cap while still in his early twenties."
+    },
+    "Rafael Santos Borre": {
+      "bio": "A versatile forward who made his name at River Plate in Argentina, scoring crucial goals including in the 2018 Copa Libertadores final. Santos Borre has since played for Eintracht Frankfurt and Werder Bremen in the Bundesliga.",
+      "playingStyle": "Intelligent forward who combines pressing intensity with clinical finishing, capable of playing as a lone striker or in a front two. Excellent at making runs into space.",
+      "keyStrengths": ["Pressing from the front", "Intelligent movement", "Clutch finishing"],
+      "worldCup2026Role": "Versatile attacking option capable of playing centrally or drifting wide, useful as a high-energy substitute or starter depending on the tactical setup.",
+      "notableFact": "Scored in the 2018 Copa Libertadores final second leg for River Plate against rivals Boca Juniors in one of the most dramatic finals in history."
+    },
+    "Stefan Medina": {
+      "bio": "A veteran right-back who has spent much of his career in Liga MX with Monterrey, becoming one of the league's most dependable defenders. Medina has been a long-serving member of the Colombian national team.",
+      "playingStyle": "Disciplined and defensively solid fullback who prioritizes positional awareness and rarely gets caught out of position.",
+      "keyStrengths": ["Defensive reliability", "Positioning", "Experience"],
+      "worldCup2026Role": "Veteran backup right-back providing defensive solidity and experience when a more conservative approach is needed.",
+      "notableFact": "Has won multiple Liga MX titles with Monterrey and represented Colombia at the 2018 World Cup in Russia."
+    },
+    "Juan Fernando Quintero": {
+      "bio": "A magical left-footed playmaker who is one of the most naturally talented Colombian footballers of his generation. Quintero has played in Portugal, Argentina, China, and Colombia, and is revered for his ability to produce moments of genius in big matches.",
+      "playingStyle": "Creative maestro with a wand of a left foot, exceptional at free kicks, through balls, and moments of individual brilliance. A pure number 10 who reads the game at a different level.",
+      "keyStrengths": ["Left-footed creativity", "Free kick expertise", "Ability to produce magic in big moments"],
+      "worldCup2026Role": "Creative super-sub capable of changing games with a single moment of brilliance, providing an alternative to James Rodriguez in the playmaker role.",
+      "notableFact": "Scored the iconic winning goal in the 2018 Copa Libertadores final second leg for River Plate against Boca Juniors in Madrid."
+    },
+    "Jhon Arias": {
+      "bio": "A versatile attacker who established himself as one of the best players in Brazilian football at Fluminense before moving to Palmeiras. Arias is known for his work ethic, technical quality, and ability to play across the front line.",
+      "playingStyle": "Hard-working and technically gifted winger who combines defensive tracking back with offensive production, effective at both creating and scoring goals.",
+      "keyStrengths": ["Work rate and defensive contribution", "Versatility across the front line", "Clinical finishing"],
+      "worldCup2026Role": "Versatile attacking option who can play on either wing or as a second striker, offering tactical flexibility and high energy from the start or as a substitute.",
+      "notableFact": "Was named in the Serie A Brazil Team of the Season at Fluminense and helped the club win their first Copa Libertadores title in 2023."
+    },
+    "Deiver Machado": {
+      "bio": "A left-back who has spent his career in French football, developing at Lens before moving to Nantes. Machado offers a different profile from Mojica with his pace and ability to contribute in advanced positions.",
+      "playingStyle": "Pacy left-back who excels at rapid recovery runs and making forward surges, using his speed to contribute both defensively and offensively.",
+      "keyStrengths": ["Recovery pace", "Stamina", "Defensive awareness"],
+      "worldCup2026Role": "Backup left-back providing an alternative to Mojica with pace and fresh legs for later stages of matches or the tournament.",
+      "notableFact": "Developed entirely through the French football system and became a regular starter in Ligue 1 before earning his Colombia call-up."
+    },
+    "Kevin Castano": {
+      "bio": "A young central midfielder who has developed in the Russian Premier League at Krasnodar alongside fellow Colombian Wilmar Barrios. Castano brings energy and technical quality to Colombia's midfield depth.",
+      "playingStyle": "Energetic box-to-box midfielder with good passing technique and the ability to cover large areas of the pitch, contributing both defensively and in transition.",
+      "keyStrengths": ["Box-to-box energy", "Passing accuracy", "Ground coverage"],
+      "worldCup2026Role": "Young midfield depth player who can provide energy and freshness as a substitute or step in if midfield starters are unavailable.",
+      "notableFact": "Joined Krasnodar on the recommendation of Wilmar Barrios and has quickly established himself as a regular in the Russian Premier League."
+    },
+    "Alvaro Montero": {
+      "bio": "A tall goalkeeper who has been one of the top shot-stoppers in Colombian domestic football with Millonarios. Montero has earned his place in the national team squad through consistently strong performances in the Categoria Primera A.",
+      "playingStyle": "Tall, commanding goalkeeper with excellent reach and shot-stopping ability, particularly effective at saving efforts from distance.",
+      "keyStrengths": ["Long reach", "Shot-stopping from distance", "Commanding presence"],
+      "worldCup2026Role": "Third-choice goalkeeper completing the squad depth at the position.",
+      "notableFact": "Has been one of the most decorated goalkeepers in Colombian league football, winning multiple titles with Millonarios."
+    },
+    "Richard Rios": {
+      "bio": "One of the most exciting young midfielders in South American football, Rios emerged at Palmeiras and quickly became a starter for Colombia. His performances at the 2024 Copa America announced him as a future star, combining technical ability with physical dynamism.",
+      "playingStyle": "Dynamic, ball-carrying midfielder who drives forward from deep positions, combining strength, close control, and an eye for a pass to connect defense and attack.",
+      "keyStrengths": ["Ball-carrying ability", "Physical dynamism", "Progressive passing"],
+      "worldCup2026Role": "Starting midfielder who brings energy, creativity, and forward thrust to Colombia's engine room, likely playing as one of the two central midfielders.",
+      "notableFact": "Was one of the breakout stars of the 2024 Copa America, earning widespread praise for his dominant midfield performances as Colombia reached the final."
+    }
+  }
+}

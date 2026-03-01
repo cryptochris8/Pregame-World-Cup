@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Alexander Nübel": {
+      "bio": "A commanding goalkeeper who came through Stuttgart's academy before joining Bayern Munich, then returned to Stuttgart on loan where he established himself as one of the Bundesliga's top shot-stoppers. His imposing frame and aggressive style make him a modern sweeper-keeper.",
+      "playingStyle": "Aggressive, commanding goalkeeper who excels at coming off his line and distributing with both feet",
+      "keyStrengths": ["Shot-stopping reflexes", "Commanding aerial presence", "Distribution and sweeper-keeper ability"],
+      "worldCup2026Role": "Backup goalkeeper competing for the number one spot, providing strong depth behind the starting keeper",
+      "notableFact": "Was once considered Manuel Neuer's heir apparent at Bayern Munich before seeking regular playing time elsewhere"
+    },
+    "Antonio Rüdiger": {
+      "bio": "A physically dominant center-back who has played at the highest level with Chelsea and Real Madrid, winning the Champions League with both clubs. Known for his intensity, warrior mentality, and ability to rise to the occasion in big matches.",
+      "playingStyle": "Aggressive, physical center-back who combines pace with powerful tackling and strong aerial ability",
+      "keyStrengths": ["Recovery pace for a center-back", "Dominant in aerial duels", "Big-game mentality and leadership"],
+      "worldCup2026Role": "Starting center-back and defensive leader, marshaling the backline with experience from Europe's biggest stages",
+      "notableFact": "Won back-to-back Champions League titles with two different clubs (Chelsea 2021, Real Madrid 2022)"
+    },
+    "David Raum": {
+      "bio": "A modern attacking left-back who burst onto the international scene at Euro 2024 with his dangerous crosses and overlapping runs. His journey from Greuther Fürth through Hoffenheim to RB Leipzig showcases his rapid development.",
+      "playingStyle": "Overlapping left-back with exceptional crossing ability and tireless engine to bomb up and down the flank",
+      "keyStrengths": ["Pinpoint crossing from deep and wide positions", "High stamina and work rate", "Set-piece delivery"],
+      "worldCup2026Role": "Starting left-back providing width and dangerous service into the box from open play and set pieces",
+      "notableFact": "Recorded 3 assists at Euro 2024, the most by any defender in the tournament"
+    },
+    "Jonathan Tah": {
+      "bio": "A towering center-back who spent over a decade at Bayer Leverkusen before his big move to Bayern Munich. He was a key part of Leverkusen's historic unbeaten Bundesliga title in 2023-24 and brings composure and leadership to the backline.",
+      "playingStyle": "Ball-playing center-back who reads the game well and combines physical dominance with technical quality on the ball",
+      "keyStrengths": ["Excellent reading of the game", "Composure in possession and progressive passing", "Aerial dominance at both ends"],
+      "worldCup2026Role": "Starting center-back forming a partnership with Rüdiger, providing stability and ball progression from the back",
+      "notableFact": "Was part of the Bayer Leverkusen squad that went the entire 2023-24 Bundesliga season unbeaten"
+    },
+    "Nico Schlotterbeck": {
+      "bio": "A left-footed center-back who made his name at SC Freiburg before moving to Borussia Dortmund. His aggressive defending and willingness to step into midfield with the ball make him a valuable asset in a possession-based system.",
+      "playingStyle": "Left-footed center-back who is comfortable stepping forward with the ball and aggressive in his defending",
+      "keyStrengths": ["Left-footed ball progression", "Aggressive tackling and interceptions", "Long-range passing ability"],
+      "worldCup2026Role": "Rotation center-back option offering left-footed balance to the defensive lineup",
+      "notableFact": "Won the Bundesliga Rookie of the Year award at SC Freiburg before his big transfer to Dortmund"
+    },
+    "Joshua Kimmich": {
+      "bio": "One of Germany's most versatile and important players, Kimmich has been a fixture at Bayern Munich for over a decade. Equally adept at right-back and central midfield, he is renowned for his tactical intelligence, relentless engine, and leadership qualities.",
+      "playingStyle": "Metronomic midfielder who controls the tempo with precise passing, tireless pressing, and exceptional positional awareness",
+      "keyStrengths": ["Elite passing range and vision", "Tactical intelligence and versatility", "Set-piece delivery and leadership"],
+      "worldCup2026Role": "Captain and midfield anchor, dictating Germany's tempo and organizing the team's pressing and build-up play",
+      "notableFact": "Has played both right-back and defensive midfield at the highest level, earning comparisons to Philipp Lahm for his versatility"
+    },
+    "Kai Havertz": {
+      "bio": "A technically gifted forward who made his Bundesliga debut at 17 with Bayer Leverkusen before moving to Chelsea and then Arsenal. At Arsenal, he reinvented himself as a center-forward, combining link-up play with an improved scoring record.",
+      "playingStyle": "Elegant, tall forward who excels in link-up play, intelligent movement, and arriving late in the box to score",
+      "keyStrengths": ["Intelligent movement and spatial awareness", "Aerial ability and link-up play", "Versatility across the front line"],
+      "worldCup2026Role": "Starting center-forward or second striker, serving as the focal point of Germany's attack with his link-up ability",
+      "notableFact": "Scored the winning goal in the 2021 Champions League final for Chelsea against Manchester City"
+    },
+    "Leon Goretzka": {
+      "bio": "A powerful box-to-box midfielder who has been a key player for Bayern Munich, known for his ability to score goals from midfield and his remarkable physical transformation. He brings energy, goals, and defensive contributions to the German engine room.",
+      "playingStyle": "Dynamic box-to-box midfielder who combines physical power with late runs into the box and goalscoring instinct",
+      "keyStrengths": ["Goalscoring ability from midfield", "Physical power and aerial presence", "High-intensity pressing and ball recovery"],
+      "worldCup2026Role": "Squad rotation midfielder offering a different dimension with his goal threat and physicality from central areas",
+      "notableFact": "Underwent a dramatic physical transformation during the COVID-19 lockdown, adding significant muscle mass that enhanced his playing style"
+    },
+    "Niclas Füllkrug": {
+      "bio": "A late bloomer who spent years in the lower divisions of German football before breaking through at Werder Bremen and earning his first senior cap at age 30. His clinical finishing and old-school center-forward play earned him a move to the Premier League.",
+      "playingStyle": "Traditional target man who excels with his back to goal, powerful heading, and clinical finishing inside the box",
+      "keyStrengths": ["Clinical finishing with both feet", "Aerial threat and hold-up play", "Ability to score as a substitute impact player"],
+      "worldCup2026Role": "Impact substitute and alternative striking option, providing a different dimension as a traditional number nine",
+      "notableFact": "Did not receive his first Germany call-up until age 30, then immediately became a regular scorer with 12 goals in 20 caps"
+    },
+    "Jamal Musiala": {
+      "bio": "A generational talent who was born in Stuttgart, raised partly in England, and chose to represent Germany over England at international level. At Bayern Munich, he has become the creative heartbeat of the team with his mesmerizing dribbling and vision.",
+      "playingStyle": "Silky, creative attacking midfielder who glides past defenders with close control, quick feet, and exceptional balance",
+      "keyStrengths": ["Elite dribbling and close control", "Creative vision and final-third decision-making", "Ability to operate in tight spaces"],
+      "worldCup2026Role": "Starting number 10 and Germany's primary creative force, tasked with unlocking defenses with his dribbling and passing",
+      "notableFact": "Was eligible to play for England, having spent part of his youth at Chelsea's academy, but chose Germany at age 18"
+    },
+    "Chris Führich": {
+      "bio": "A dynamic winger who developed through the lower leagues of German football before establishing himself at VfB Stuttgart as one of the Bundesliga's most exciting wide players. His direct running and work rate have earned him international recognition.",
+      "playingStyle": "Direct, hard-working winger who loves to take on defenders with pace and provides defensive cover from wide areas",
+      "keyStrengths": ["Direct dribbling and pace on the wing", "Defensive work rate and tracking back", "Crossing and delivery from wide areas"],
+      "worldCup2026Role": "Squad depth option on the left wing, offering energy and directness as a substitute or tactical alternative",
+      "notableFact": "Rose from the German third division with SC Paderborn to the national team in just a few years through consistent performances"
+    },
+    "Marc-André ter Stegen": {
+      "bio": "Once regarded as one of the world's best goalkeepers during his long tenure at Barcelona, ter Stegen suffered a serious knee injury in 2024 that significantly impacted his career trajectory. His distribution and sweeper-keeper abilities remain among the best in the game.",
+      "playingStyle": "Exceptional ball-playing goalkeeper with elite distribution, composure under pressure, and sweeper-keeper instincts",
+      "keyStrengths": ["World-class distribution with both feet", "Composure under pressing situations", "Command of the penalty area"],
+      "worldCup2026Role": "Experienced goalkeeper option providing elite distribution if called upon, competing for a place in the squad",
+      "notableFact": "Spent over a decade at Barcelona as their number one, making over 400 appearances and winning multiple La Liga titles"
+    },
+    "Maximilian Beier": {
+      "bio": "A young, explosive striker who burst onto the scene at TSG Hoffenheim with his pace and finishing before earning a move to Borussia Dortmund. His speed and movement make him a constant threat in behind opposition defenses.",
+      "playingStyle": "Pacey, mobile striker who thrives on runs in behind the defense and is lethal in one-on-one situations",
+      "keyStrengths": ["Electric pace and acceleration", "Movement and runs behind defenses", "Composure in one-on-one finishing situations"],
+      "worldCup2026Role": "Young attacking option off the bench, providing pace and energy as a substitute to stretch tired defenses",
+      "notableFact": "Was the youngest German-born player to score 10+ Bundesliga goals in a single season at Hoffenheim"
+    },
+    "Maximilian Mittelstädt": {
+      "bio": "A reliable left-back who was a key part of Stuttgart's remarkable 2023-24 Bundesliga campaign. After years of development at Hertha Berlin, he found his best form in Stuttgart's attacking system under Sebastian Hoeneß.",
+      "playingStyle": "Attacking full-back who provides width, overlapping runs, and solid defensive discipline in a high-energy system",
+      "keyStrengths": ["Overlapping runs and attacking output", "Crossing accuracy and delivery", "Defensive reliability and positioning"],
+      "worldCup2026Role": "Backup left-back providing competition and rotation depth behind the first-choice option",
+      "notableFact": "Was a pivotal part of Stuttgart's surprise Bundesliga runner-up finish in 2023-24 after years of mid-table finishes"
+    },
+    "Pascal Groß": {
+      "bio": "A technically gifted midfielder who spent seven seasons in the Premier League with Brighton & Hove Albion before returning to Germany with Borussia Dortmund. His late international breakthrough came at Euro 2024 where his experience proved valuable.",
+      "playingStyle": "Intelligent, technically refined midfielder who excels at set-piece delivery, through balls, and controlling the tempo of play",
+      "keyStrengths": ["Set-piece expertise and dead-ball delivery", "Vision and through-ball passing", "Game intelligence and experience"],
+      "worldCup2026Role": "Experienced squad player providing set-piece quality and midfield depth when tactical situations require a composed presence",
+      "notableFact": "Did not earn his first Germany cap until age 32 after years of consistent performances in the Premier League went unnoticed"
+    },
+    "Benjamin Henrichs": {
+      "bio": "A versatile defender who can play across the backline, Henrichs developed at Bayer Leverkusen before spells at Monaco and RB Leipzig. His tactical flexibility makes him a valuable squad player for both club and country.",
+      "playingStyle": "Versatile full-back who can play on either side, offering solid defensive work with composed build-up play",
+      "keyStrengths": ["Tactical versatility across the back four", "Composed on the ball and in build-up", "Defensive solidity and positioning"],
+      "worldCup2026Role": "Utility defender providing cover at right-back and across the backline as a reliable squad option",
+      "notableFact": "Was the youngest Bayer Leverkusen player to appear in a Champions League match when he debuted at age 19"
+    },
+    "Florian Wirtz": {
+      "bio": "A prodigious talent who became the youngest Bundesliga scorer at just 17, Wirtz has developed into one of European football's brightest stars at Bayer Leverkusen. He was instrumental in their historic unbeaten title-winning season and is widely regarded as a future Ballon d'Or contender.",
+      "playingStyle": "Creative, technically brilliant playmaker who combines vision, dribbling, and goalscoring from the number 10 position",
+      "keyStrengths": ["Exceptional creativity and final ball", "Goalscoring ability from attacking midfield", "Composure and maturity beyond his years"],
+      "worldCup2026Role": "Starting creative playmaker alongside Musiala, forming one of the most exciting young attacking duos at the tournament",
+      "notableFact": "Became the youngest ever Bundesliga scorer at 17 years and 34 days, breaking a record that had stood for decades"
+    },
+    "Aleksandar Pavlović": {
+      "bio": "A young defensive midfielder who emerged from Bayern Munich's academy as one of the most promising talents in German football. His calm demeanor, tactical intelligence, and ability to break up play belie his young age.",
+      "playingStyle": "Composed, positionally disciplined defensive midfielder who shields the backline and recycles possession efficiently",
+      "keyStrengths": ["Positional awareness and reading of the game", "Ball recovery and interceptions", "Composure in possession under pressure"],
+      "worldCup2026Role": "Backup to Kimmich in the defensive midfield role, offering a younger alternative with a similar composed style",
+      "notableFact": "Broke into Bayern Munich's first team as a teenager and immediately looked at home in Champions League football"
+    },
+    "Leroy Sané": {
+      "bio": "An electrifying winger with blistering pace who made his name at Manchester City under Pep Guardiola before spending several years at Bayern Munich. His ability to change games with individual brilliance makes him a constant threat on his day.",
+      "playingStyle": "Explosive winger with searing pace who loves to cut inside from the right and unleash shots with his powerful left foot",
+      "keyStrengths": ["Explosive pace and acceleration", "Cutting inside and shooting with his left foot", "One-on-one dribbling ability"],
+      "worldCup2026Role": "Experienced wide attacker providing a direct, pace-driven threat from the right wing in rotation or off the bench",
+      "notableFact": "Won the PFA Young Player of the Year award in England with Manchester City and the Premier League title before moving to Bayern"
+    },
+    "Robin Koch": {
+      "bio": "A dependable center-back who gained Premier League experience at Leeds United before returning to Germany with Eintracht Frankfurt, where he has been a consistent performer. His versatility to also play in midfield adds tactical flexibility.",
+      "playingStyle": "Solid, no-nonsense center-back who is strong in the air, decisive in tackles, and capable of playing in a midfield holding role",
+      "keyStrengths": ["Aerial dominance and defensive heading", "Versatility to play center-back or defensive midfield", "Strong tackling and physical presence"],
+      "worldCup2026Role": "Depth option in central defense offering reliability and the flexibility to fill in at defensive midfield if needed",
+      "notableFact": "Played in the Premier League with Leeds United, including in their dramatic promotion and top-flight campaigns"
+    },
+    "Serge Gnabry": {
+      "bio": "A dynamic winger who struggled early in his career at Arsenal and West Brom before finding his feet in Germany with Bremen and eventually Bayern Munich. He has become one of Germany's most prolific attackers with an impressive international goal record.",
+      "playingStyle": "Explosive, direct winger who combines pace with clinical finishing and the ability to play across the front three",
+      "keyStrengths": ["Clinical finishing from wide positions", "Pace and direct running", "Versatility across the attacking line"],
+      "worldCup2026Role": "Key attacking option on the wing, offering experience, goals, and tactical flexibility across the front line",
+      "notableFact": "Once scored four goals in a single Champions League match against Tottenham in a famous 7-2 Bayern Munich victory"
+    },
+    "Oliver Baumann": {
+      "bio": "A veteran goalkeeper who has been a loyal servant to TSG Hoffenheim for over a decade, consistently performing at a high level without always receiving the recognition he deserved. His late call-up to the national team rewarded years of steady excellence.",
+      "playingStyle": "Experienced, reliable goalkeeper with sharp reflexes, good command of the box, and solid distribution",
+      "keyStrengths": ["Sharp shot-stopping reflexes", "Experience and composure under pressure", "Consistent performances over many seasons"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced backup and a steady presence in the squad",
+      "notableFact": "Made over 350 Bundesliga appearances for Hoffenheim, making him one of the most capped players in the club's history"
+    },
+    "Robert Andrich": {
+      "bio": "A combative defensive midfielder who was a central figure in Bayer Leverkusen's historic unbeaten Bundesliga title. His journey through the lower divisions of German football to the top is a testament to his determination and resilience.",
+      "playingStyle": "Combative, ball-winning midfielder who brings tenacity, aggression, and surprising technical quality to the holding role",
+      "keyStrengths": ["Aggressive tackling and ball-winning ability", "Long-range shooting", "Leadership and competitive mentality"],
+      "worldCup2026Role": "Midfield enforcer option providing bite and aggression in the engine room, especially in high-intensity matches",
+      "notableFact": "Rose through the lower leagues of German football and did not play in the Bundesliga until relatively late in his career before becoming a title winner"
+    },
+    "Waldemar Anton": {
+      "bio": "A composed center-back who captained VfB Stuttgart during their remarkable 2023-24 campaign before earning a move to Borussia Dortmund. His leadership qualities and calm defending have made him a trusted option at international level.",
+      "playingStyle": "Calm, composed center-back who defends intelligently and is comfortable playing out from the back",
+      "keyStrengths": ["Leadership and organizational skills", "Composure in possession", "Consistent and reliable defending"],
+      "worldCup2026Role": "Defensive depth option at center-back, ready to step in and provide stability when called upon",
+      "notableFact": "Captained Stuttgart during their surprise 2023-24 Bundesliga season where they finished as runners-up"
+    },
+    "Deniz Undav": {
+      "bio": "A late bloomer who scored prolifically in Belgium with Union Saint-Gilloise before joining Brighton and eventually establishing himself at Stuttgart. His goalscoring instincts and ability to combine with teammates make him a potent attacking weapon.",
+      "playingStyle": "Clinical, intelligent striker who makes sharp runs, links play effectively, and finishes with composure in the box",
+      "keyStrengths": ["Clinical finishing in the penalty area", "Intelligent movement and link-up play", "Ability to create and score in tight spaces"],
+      "worldCup2026Role": "Attacking substitute offering a goalscoring threat and the ability to change games with his finishing ability",
+      "notableFact": "Scored over 25 goals in a single season in Belgium before making the step up to top-flight European football"
+    },
+    "Tim Kleindienst": {
+      "bio": "A powerful, physical striker who has been a consistent scorer in the Bundesliga with Borussia Mönchengladbach. His aerial prowess and old-school center-forward attributes give Germany a different tactical option in attack.",
+      "playingStyle": "Physical, traditional number nine who wins aerial duels, holds the ball up, and is a constant nuisance for defenders",
+      "keyStrengths": ["Dominant in aerial duels at 194cm", "Hold-up play and physical presence", "Penalty box instincts and positioning"],
+      "worldCup2026Role": "Alternative striking option providing aerial threat and physicality, particularly useful for set-piece situations and late-game scenarios",
+      "notableFact": "At 194cm tall, he gives Germany a genuine target-man option that can change the dynamic of matches when introduced"
+    }
+  }
+}

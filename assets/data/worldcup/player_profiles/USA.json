@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Matt Turner": {
+      "bio": "A late bloomer who went undrafted in MLS before becoming a Premier League goalkeeper. Turner's journey from the New England Revolution to Nottingham Forest embodies the American underdog spirit, and his shot-stopping ability has made him a reliable presence between the posts for the national team.",
+      "playingStyle": "Commanding shot-stopper with excellent reflexes and improving distribution. Vocal organizer of the backline who excels in one-on-one situations.",
+      "keyStrengths": ["Shot-stopping reflexes", "One-on-one saves", "Aerial command of the box"],
+      "worldCup2026Role": "Starting goalkeeper and vocal leader of the defense on home soil. His big-game mentality will be crucial in high-pressure knockout rounds.",
+      "notableFact": "Turner was not drafted in the 2016 MLS SuperDraft and had to work his way up through USL before eventually earning a move to the Premier League."
+    },
+    "Sergino Dest": {
+      "bio": "Born in the Netherlands to a Dutch-Surinamese father and American mother, Dest chose to represent the United States over the country of his birth. A product of Ajax's famed academy, he combines Dutch technical schooling with explosive American athleticism.",
+      "playingStyle": "Attack-minded fullback who loves to overlap and cut inside. Technically gifted on the ball with quick feet and a willingness to take on defenders in the final third.",
+      "keyStrengths": ["Dribbling and ball-carrying", "Overlapping runs", "One-on-one defending"],
+      "worldCup2026Role": "Key attacking fullback option whose ability to provide width and create overloads on either flank gives the USMNT tactical flexibility.",
+      "notableFact": "Dest became the first American to play for Ajax's first team and later made the move to Barcelona, becoming only the second American to play for the Catalan giants."
+    },
+    "Chris Richards": {
+      "bio": "A product of FC Dallas's academy who was scouted and signed by Bayern Munich as a teenager, Richards developed his game in one of the most demanding environments in world football. Now a regular in the Premier League with Crystal Palace, he has matured into a composed and athletic center-back.",
+      "playingStyle": "Ball-playing center-back with impressive recovery speed and composure under pressure. Comfortable stepping into midfield with the ball and progressive in his passing.",
+      "keyStrengths": ["Recovery pace", "Ball progression from defense", "Aerial dueling"],
+      "worldCup2026Role": "Starting center-back candidate whose Premier League experience and comfort on the ball fit the team's possession-based approach.",
+      "notableFact": "Richards trained alongside the likes of Robert Lewandowski and Joshua Kimmich at Bayern Munich before he was old enough to vote in the United States."
+    },
+    "Tyler Adams": {
+      "bio": "The captain of the 2022 World Cup squad in Qatar, Adams is the heartbeat of the USMNT midfield. Raised in the New York Red Bulls academy, he has built a career in Europe defined by relentless energy, tactical intelligence, and inspirational leadership despite battling recurring injuries.",
+      "playingStyle": "Tireless box-to-box destroyer who reads the game superbly. Wins the ball back with anticipation rather than brute force and transitions play quickly with sharp, simple passes.",
+      "keyStrengths": ["Pressing and ball recovery", "Tactical intelligence", "Leadership and communication"],
+      "worldCup2026Role": "Midfield anchor and likely captain. His ability to shield the defense and dictate tempo will be the engine room of the entire tournament campaign.",
+      "notableFact": "Adams was named captain for the 2022 World Cup at just 23 years old and delivered one of the most impressive press conferences in USMNT history when he handled a pointed question from an Iranian journalist with remarkable composure."
+    },
+    "Antonee Robinson": {
+      "bio": "The Fulham left-back nicknamed 'Jedi' has become one of the Premier League's most dynamic fullbacks with his relentless engine and overlapping runs. Born in England to an American father, Robinson chose to represent the United States and has become an undisputed starter.",
+      "playingStyle": "Marauding left-back with extraordinary stamina who covers the entire flank. Gets forward at every opportunity with blistering pace and delivers dangerous crosses into the box.",
+      "keyStrengths": ["Explosive pace and stamina", "Overlapping runs and crossing", "Defensive recovery speed"],
+      "worldCup2026Role": "Undisputed starting left-back and a primary source of width in attack. His tireless runs will be essential to stretching opposition defenses in the group stage and beyond.",
+      "notableFact": "Robinson nearly signed for AC Milan in January 2021 but the deal fell through due to a failed medical related to a heart issue he had previously resolved, making his subsequent Premier League success all the more remarkable."
+    },
+    "Yunus Musah": {
+      "bio": "Born in New York City, raised in Italy and England, and now starring for AC Milan in Serie A, Musah is the embodiment of American soccer's global reach. He chose the USMNT over England, Italy, and Ghana, and has brought technical quality and press-resistance to the midfield since his teenage debut.",
+      "playingStyle": "Powerful and silky midfielder who glides past pressure with close control. Excels at carrying the ball through midfield lines and combines technical elegance with physical dynamism.",
+      "keyStrengths": ["Press resistance and ball-carrying", "Physical power in duels", "Progressive dribbling through lines"],
+      "worldCup2026Role": "Starting central midfielder whose ability to beat the press and drive forward with the ball provides the crucial link between defense and attack.",
+      "notableFact": "Musah was eligible to represent four different national teams (USA, England, Italy, Ghana) and became the youngest player to debut for the USMNT in a World Cup qualifier when he chose the Stars and Stripes."
+    },
+    "Gio Reyna": {
+      "bio": "The son of former USMNT legends Claudio Reyna and Danielle Egan, Gio carries American soccer royalty in his blood. A prodigiously talented playmaker who burst onto the scene at Borussia Dortmund as a teenager, his career has been hampered by injuries but his ceiling remains among the highest in the squad.",
+      "playingStyle": "Creative playmaker with exceptional vision and a silky first touch. Capable of unlocking defenses with incisive through balls and possesses a dangerous shot from distance with either foot.",
+      "keyStrengths": ["Vision and creativity", "Technical quality on the ball", "Long-range shooting"],
+      "worldCup2026Role": "Primary creative spark off the bench or in the starting lineup. When fit, Reyna's ability to produce moments of magic makes him the team's most dangerous attacking midfielder.",
+      "notableFact": "At 17 years and 66 days, Reyna became the youngest American to assist a Bundesliga goal, and his father Claudio captained the USMNT at the 2002 World Cup where the team reached the quarterfinals."
+    },
+    "Weston McKennie": {
+      "bio": "A box-to-box dynamo who has thrived at Juventus in Serie A, McKennie grew up in a military family and spent part of his childhood in Germany before joining FC Schalke's academy. His tireless work rate, aerial threat, and knack for arriving in the box make him one of the most complete midfielders in the American player pool.",
+      "playingStyle": "High-energy box-to-box midfielder who covers enormous ground and arrives late in the penalty area for goals. Physically dominant in aerial duels and aggressive in the press.",
+      "keyStrengths": ["Late runs into the box", "Aerial ability for a midfielder", "Defensive work rate and pressing"],
+      "worldCup2026Role": "Starting midfielder whose goal threat from deep and defensive intensity make him indispensable. Expected to be a key contributor in both penalty areas throughout the tournament.",
+      "notableFact": "McKennie became the first American to score for Juventus and celebrated by revealing a 'Justice for Breonna Taylor' message on his undershirt."
+    },
+    "Ricardo Pepi": {
+      "bio": "The El Paso-born striker of Mexican descent chose the United States over Mexico and announced himself with a stunning hat trick in World Cup qualifying. After a difficult move to Augsburg, Pepi rebuilt his confidence at PSV Eindhoven and has developed into a clinical finisher with a poacher's instinct.",
+      "playingStyle": "Classic number nine with sharp movement in the box and a predatory instinct for goal. Makes intelligent runs behind the defensive line and finishes with composure beyond his years.",
+      "keyStrengths": ["Movement and positioning in the box", "Clinical finishing", "Hold-up play and link-up"],
+      "worldCup2026Role": "Backup striker and potential supersub whose goalscoring instinct provides a different dimension. Could be called upon to start in a two-striker system if needed.",
+      "notableFact": "Pepi scored a hat trick against Honduras in World Cup qualifying at age 18, becoming the youngest American to score three goals in a single international match."
+    },
+    "Christian Pulisic": {
+      "bio": "The most accomplished American soccer player of his generation, Pulisic has shattered records at every level. From becoming the youngest non-German to score in the Bundesliga with Borussia Dortmund to winning the Champions League with Chelsea, 'Captain America' has been the face of the USMNT's golden generation and now stars for AC Milan.",
+      "playingStyle": "Electrifying winger who combines devastating pace with close dribbling in tight spaces. Equally dangerous cutting inside onto his right foot or driving at defenders on the outside, with an ever-improving eye for goal.",
+      "keyStrengths": ["Explosive dribbling and pace", "Goal threat from the wing", "Big-game mentality"],
+      "worldCup2026Role": "The talisman and most important attacking player. Pulisic will carry the creative burden on his shoulders and will be the player opponents fear most when the USA plays on home soil.",
+      "notableFact": "Pulisic scored the goal that qualified the USMNT for the 2022 World Cup and then scored against Iran in the group stage, cementing his status as the most clutch player in modern American soccer history."
+    },
+    "Brenden Aaronson": {
+      "bio": "A high-energy attacking midfielder from Medford, New Jersey, Aaronson earned the nickname 'Medford Messi' before making his mark in Europe with Red Bull Salzburg and later Leeds United. Known for his relentless pressing and ability to play across the front line, he brings infectious energy to every match.",
+      "playingStyle": "Hyperactive pressing forward who never stops running. Plays with controlled chaos, winning the ball high up the pitch and immediately looking to create. Versatile enough to play as a winger, attacking midfielder, or false nine.",
+      "keyStrengths": ["High pressing intensity", "Versatility across the front line", "Quick combination play"],
+      "worldCup2026Role": "Versatile attacking option who can start or impact games off the bench. His pressing energy makes him invaluable in high-intensity matches where the team needs to win the ball back quickly.",
+      "notableFact": "Aaronson scored the goal that sealed Red Bull Salzburg's first-ever Champions League group stage win, heading home against AC Milan in 2022."
+    },
+    "Miles Robinson": {
+      "bio": "An imposing physical presence at center-back, Robinson established himself as one of MLS's best defenders at Atlanta United before suffering a devastating Achilles injury that threatened his World Cup dream. His recovery and return to form with Cincinnati FC have been a testament to his determination and resilience.",
+      "playingStyle": "Physically dominant center-back who relies on pace, power, and aggressive defending. Wins aerial duels with authority and uses his recovery speed to clean up behind the defensive line.",
+      "keyStrengths": ["Physical power and aerial dominance", "Recovery pace", "Aggressive tackling"],
+      "worldCup2026Role": "Depth option at center-back whose athleticism and physicality provide a different profile from the more technical defenders in the squad. A reliable option for protecting leads.",
+      "notableFact": "Robinson scored the dramatic extra-time header that won the 2021 CONCACAF Gold Cup final against Mexico, one of the most iconic goals in recent USMNT history."
+    },
+    "Tim Ream": {
+      "bio": "The veteran of the squad, Ream is a left-footed center-back whose career renaissance at Fulham in the Premier League earned him a surprise inclusion in the 2022 World Cup squad at age 35. His composure on the ball and leadership have kept him in the national team picture far longer than most predicted.",
+      "playingStyle": "Calm, cerebral defender who reads the game expertly and distributes with precision from the back. Not the quickest but compensates with superb positioning and an unflappable temperament.",
+      "keyStrengths": ["Ball distribution from defense", "Positional intelligence", "Experience and leadership"],
+      "worldCup2026Role": "Experienced squad veteran who provides calm leadership and mentorship. At 38, he offers invaluable tournament experience and can step in if needed for his composure under pressure.",
+      "notableFact": "Ream was nearly out of the international picture before his outstanding form at Fulham in the 2022-23 Premier League season earned him a remarkable recall at age 35."
+    },
+    "Luca de la Torre": {
+      "bio": "A technically gifted midfielder who developed in the Fulham academy in England, de la Torre found his best form in the Eredivisie with Celta Vigo and later moved to MLS with Charlotte FC. His Spanish-American heritage and European development have given him a refined, possession-oriented game.",
+      "playingStyle": "Technically polished central midfielder who keeps play ticking with short, accurate passes. Press-resistant with good spatial awareness and comfortable dictating tempo in tight spaces.",
+      "keyStrengths": ["Technical passing quality", "Press resistance", "Spatial awareness and positioning"],
+      "worldCup2026Role": "Midfield rotation option who can control the tempo when games require patience and possession. Provides a calming influence as a substitute in the middle of the park.",
+      "notableFact": "De la Torre spent his formative years in Fulham's academy in London, meaning he developed alongside many future Premier League players before carving out his own path through Spain and the Netherlands."
+    },
+    "Johnny Cardoso": {
+      "bio": "A dual-national born in New Jersey who grew up partly in Brazil, Cardoso brings a South American flair to the American midfield. His rise at Internacional in Brazil's Serie A caught the attention of La Liga side Real Betis, where he has established himself as a composed and technically assured defensive midfielder.",
+      "playingStyle": "Elegant deep-lying midfielder who breaks up play and recycles possession with intelligence. Reads passing lanes well, intercepts with anticipation, and launches attacks with measured progressive passes.",
+      "keyStrengths": ["Interceptions and reading the game", "Progressive passing", "Composure under pressure"],
+      "worldCup2026Role": "Key midfield option who can deputize for Tyler Adams or play alongside him in a double pivot. His La Liga experience against top opposition makes him a reliable tournament-level player.",
+      "notableFact": "Cardoso grew up in Bernardsville, New Jersey, moved to Brazil as a teenager, and was eligible to represent both Brazil and the United States before committing to the Stars and Stripes."
+    },
+    "Folarin Balogun": {
+      "bio": "Born in New York City and raised in England, Balogun came through Arsenal's academy before choosing the USMNT over England and Nigeria. His breakout loan season at Reims in Ligue 1 (21 goals) announced him as one of Europe's most exciting young strikers, leading to a big move to Monaco.",
+      "playingStyle": "Dynamic and versatile striker who combines clinical finishing with excellent movement. Comfortable dropping deep to link play and possesses the pace and technique to run in behind defenses.",
+      "keyStrengths": ["Clinical finishing", "Intelligent movement off the ball", "Link-up play and first touch"],
+      "worldCup2026Role": "Leading candidate to start as the number nine. His combination of goalscoring instinct, technical quality, and big-club pedigree makes him the team's most complete striking option for a home World Cup.",
+      "notableFact": "Balogun scored 21 goals in a single Ligue 1 season at Reims, the most by an American in a top-five European league season, before securing his move to Monaco."
+    },
+    "Ethan Horvath": {
+      "bio": "A seasoned goalkeeper who has spent his entire professional career in Europe, Horvath has been a quiet but dependable presence in the USMNT goalkeeper pool. His heroic penalty save in the 2021 Nations League final against Mexico remains one of the most memorable moments in recent American soccer history.",
+      "playingStyle": "Traditional shot-stopper with excellent reactions and a calm demeanor. Strong in one-on-one situations and commands his area well, though distribution is more functional than creative.",
+      "keyStrengths": ["Penalty-saving ability", "Shot-stopping reflexes", "Big-game composure"],
+      "worldCup2026Role": "Third-choice goalkeeper who provides experienced backup. His proven ability to perform in pressure moments makes him a reassuring presence in the squad.",
+      "notableFact": "Horvath came off the bench in the 2021 CONCACAF Nations League final to save a crucial penalty from Mexico's Andres Guardado, directly helping the USA win the inaugural tournament."
+    },
+    "Cameron Carter-Vickers": {
+      "bio": "The son of former NBA player Howard Carter, Carter-Vickers was born in England and came through Tottenham Hotspur's academy before finding his home at Celtic in Scotland. He has won multiple Scottish Premiership titles and Champions League experience, choosing the USA over England at international level.",
+      "playingStyle": "Strong, no-nonsense center-back who defends with physicality and concentration. Comfortable in a back three or back four, reads danger well, and has improved his distribution significantly at Celtic.",
+      "keyStrengths": ["Physical defending and tackling", "Concentration and positioning", "Versatility in defensive systems"],
+      "worldCup2026Role": "Reliable center-back rotation option with Champions League experience. His defensive solidity and adaptability to different formations make him a valuable squad member.",
+      "notableFact": "Carter-Vickers went on seven different loan spells from Tottenham before finally finding stability at Celtic, where he became a title-winning regular and Champions League participant."
+    },
+    "Josh Sargent": {
+      "bio": "A natural goalscorer who was one of the most hyped American prospects of his generation, Sargent moved to Werder Bremen at 18 before settling in the English Championship with Norwich City. His hold-up play and movement have made him a consistent goal threat despite playing outside the top flight.",
+      "playingStyle": "Hard-working striker who leads the line with physicality and intelligent movement. Excellent at hold-up play and bringing others into the game, with a poacher's instinct in the penalty area.",
+      "keyStrengths": ["Hold-up play and physicality", "Movement in the box", "Work rate and pressing from the front"],
+      "worldCup2026Role": "Experienced striking option who offers a physical focal point in attack. His ability to hold the ball up and bring wide players into the game provides a plan B from the bench.",
+      "notableFact": "Sargent was the top scorer at the 2017 FIFA U-17 World Cup for the United States, announcing himself to the world stage before moving to the Bundesliga at just 18."
+    },
+    "Timothy Weah": {
+      "bio": "The son of Liberian legend and Ballon d'Or winner George Weah, Timothy has carved his own path in European football with stints at Paris Saint-Germain, Lille, and now Juventus in Serie A. His pace, directness, and growing maturity have made him a fixture on the right side of the USMNT attack.",
+      "playingStyle": "Explosive right winger who terrorizes defenders with raw pace and direct running. Increasingly effective in his final product with improved crossing and decision-making in the final third.",
+      "keyStrengths": ["Blistering pace", "Direct dribbling", "Work rate on both sides of the ball"],
+      "worldCup2026Role": "Starting right winger who provides the speed and width to stretch defenses. His partnership with Pulisic on opposite flanks gives the USA one of the most dynamic wing pairings in the tournament.",
+      "notableFact": "Weah scored the USA's first goal at the 2022 World Cup in Qatar against Wales, becoming the first son of a Ballon d'Or winner to score at a World Cup."
+    },
+    "Joe Scally": {
+      "bio": "A Long Island native who signed with Borussia Monchengladbach at just 16, Scally bypassed college and MLS entirely to pursue his dream in the Bundesliga. His fearless mentality and rapid development in Germany have made him one of the most promising young defenders in the American pipeline.",
+      "playingStyle": "Energetic and attack-minded right-back with strong crossing ability. Comfortable playing on either side of the defense and combines defensive discipline with an eagerness to join attacks.",
+      "keyStrengths": ["Crossing and delivery", "Defensive versatility", "Tactical maturity for his age"],
+      "worldCup2026Role": "Young fullback option who provides fresh legs and attacking intent from the bench. His ability to play on both sides of defense adds valuable tactical flexibility.",
+      "notableFact": "Scally signed his first professional contract with Borussia Monchengladbach at age 16, making him one of the youngest Americans ever to commit to a top European club."
+    },
+    "DeAndre Yedlin": {
+      "bio": "The veteran right-back who burst onto the scene at the 2014 World Cup in Brazil with his electrifying pace, Yedlin brings more international experience than almost anyone in the squad. From the Seattle Sounders to Newcastle United and Galatasaray, his career has spanned three continents and two World Cups.",
+      "playingStyle": "Lightning-fast right-back who uses his speed to recover defensively and surge forward in transition. A veteran presence who understands tournament football and can be relied upon to execute game plans.",
+      "keyStrengths": ["Elite recovery pace", "Tournament experience", "Defensive reliability"],
+      "worldCup2026Role": "Experienced squad veteran who brings invaluable World Cup experience from 2014. Provides reliable defensive cover at right-back and mentorship for the younger fullbacks.",
+      "notableFact": "Yedlin's memorable run at the 2014 World Cup in Brazil, where he came on as a 20-year-old substitute and terrified defenders with his pace, earned him a transfer to Tottenham Hotspur."
+    },
+    "Kellyn Acosta": {
+      "bio": "A versatile and experienced midfielder who has been a steady presence in the USMNT for nearly a decade, Acosta is known for his dead-ball delivery, leadership, and ability to play multiple midfield roles. His consistency at LAFC and in MLS has kept him in the national team conversation through multiple coaching cycles.",
+      "playingStyle": "Versatile box-to-box midfielder with excellent set-piece delivery. Physically robust and capable of playing as a holding midfielder or in a more advanced role, with a powerful long-range shot.",
+      "keyStrengths": ["Set-piece delivery", "Versatility in midfield", "Physical durability and experience"],
+      "worldCup2026Role": "Experienced midfield depth option and set-piece specialist. His ability to deliver from free kicks and corners adds a valuable dimension when introduced from the bench.",
+      "notableFact": "Acosta has been capped in three different CONCACAF Gold Cups and is known for delivering some of the most dangerous set pieces in the American player pool."
+    },
+    "Zack Steffen": {
+      "bio": "Once the undisputed number one for the USMNT, Steffen's time at Manchester City under Pep Guardiola gave him invaluable experience at the highest level even though playing time was limited. Now with the Colorado Rapids, he remains a highly capable goalkeeper with top-level pedigree.",
+      "playingStyle": "Modern goalkeeper comfortable playing with the ball at his feet. Good distribution and passing range that suits possession-based systems, with solid shot-stopping fundamentals.",
+      "keyStrengths": ["Distribution and passing", "Positioning and shot-stopping", "Experience in high-pressure environments"],
+      "worldCup2026Role": "Second-choice goalkeeper who provides top-level backup with experience at the highest level. His comfort on the ball makes him a natural fit if the team needs to play out from the back under extreme pressure.",
+      "notableFact": "Steffen trained daily alongside Ederson at Manchester City under Pep Guardiola, an experience that dramatically improved his footwork and distribution skills."
+    },
+    "Mark McKenzie": {
+      "bio": "A Philadelphia Union academy product who made the move to Europe with Belgian side Genk before landing in Ligue 1 with Toulouse, McKenzie is a physically gifted center-back still developing his game at the top level. His athleticism and aggressiveness have kept him in the USMNT picture despite fierce competition at the position.",
+      "playingStyle": "Athletic and aggressive center-back who defends on the front foot. Uses his pace and physicality to win duels and is capable of stepping out of the defensive line to intercept and challenge.",
+      "keyStrengths": ["Athleticism and pace for a center-back", "Aggressive defending", "Aerial presence"],
+      "worldCup2026Role": "Defensive depth option whose physical profile and European experience provide a solid backup at center-back. Could see minutes in group matches or if injuries arise.",
+      "notableFact": "McKenzie was part of the Philadelphia Union academy that has produced multiple USMNT players and became one of the first Union homegrown players to transfer to a European club."
+    },
+    "Haji Wright": {
+      "bio": "A towering striker who has taken a winding road through European football, playing in Germany, Denmark, Turkey, and England. Wright's physicality and goalscoring exploits in the Turkish Super Lig with Antalyaspor earned him a surprise World Cup call-up in 2022, and his unique profile as a target man keeps him in contention.",
+      "playingStyle": "Imposing target striker who uses his height and strength to dominate aerial duels and hold up the ball. Capable of scoring spectacular goals and provides a genuine Plan B with his physical presence.",
+      "keyStrengths": ["Aerial threat and physical presence", "Hold-up play", "Finishing with both feet"],
+      "worldCup2026Role": "Specialist target-man option off the bench when the team needs to go more direct. His height and aerial ability make him a weapon for late-game situations and set pieces.",
+      "notableFact": "Wright scored a remarkable back-heel goal against the Netherlands at the 2022 World Cup, one of the most memorable goals by an American in World Cup history."
+    }
+  }
+}

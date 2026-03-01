@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Hernán Galíndez": {
+      "bio": "Argentine-born goalkeeper who became a naturalized Ecuadorian citizen in 2019 after years playing in Ecuador's Liga Pro. Made over 300 appearances for Universidad Católica before moving to Huracán, and represented Ecuador at the 2022 World Cup and two Copa América tournaments.",
+      "playingStyle": "Complete goalkeeper with quick reflexes and confident distribution, comfortable playing out from the back",
+      "keyStrengths": ["Shot-stopping reflexes", "Penalty saving ability", "Ball distribution with feet"],
+      "worldCup2026Role": "Experienced backup goalkeeper providing tournament know-how and veteran leadership from the 2022 World Cup campaign",
+      "notableFact": "Led Huracán to the 2025 Torneo Apertura final, saving two penalties in the semifinal shootout against Independiente"
+    },
+    "Félix Torres": {
+      "bio": "Physical center-back from San Lorenzo, Ecuador who has established himself as a regular in the national team's backline. Won the Paulista A1 and Copa with Corinthians in 2025 before joining Internacional on loan.",
+      "playingStyle": "Commanding aerial presence and aggressive tackler who excels in one-on-one defensive duels",
+      "keyStrengths": ["Aerial dominance", "Physical strength", "Recovery pace"],
+      "worldCup2026Role": "Starting center-back partner forming Ecuador's experienced defensive spine alongside Hincapié or Pacho",
+      "notableFact": "Scored the match-winning goal against Uruguay in World Cup qualifying, assisted by teenage debutant Kendry Páez"
+    },
+    "Piero Hincapié": {
+      "bio": "Young left-footed center-back who has become a key starter at Bayer Leverkusen in the Bundesliga. At just 24, he is one of South America's most highly valued defenders and a cornerstone of Ecuador's backline.",
+      "playingStyle": "Ball-playing center-back with excellent passing range, composed under pressure with the ability to drive forward from defense",
+      "keyStrengths": ["Progressive passing", "Composure on the ball", "Positional intelligence"],
+      "worldCup2026Role": "Starting center-back and primary ball-progressor from the defensive line, instrumental in Ecuador's build-up play",
+      "notableFact": "Was part of Bayer Leverkusen's historic 2023-24 unbeaten Bundesliga title-winning season"
+    },
+    "Robert Arboleda": {
+      "bio": "Veteran center-back who has spent the majority of his career in Brazilian football with São Paulo FC. A long-standing member of the national team with over 45 caps, providing experience and stability at the back.",
+      "playingStyle": "Traditional no-nonsense center-back who prioritizes defensive solidity and commanding aerial presence",
+      "keyStrengths": ["Aerial ability", "Experience in big matches", "Physical presence"],
+      "worldCup2026Role": "Veteran defensive option and squad depth player who can step in when physicality and experience are needed",
+      "notableFact": "Has played over a decade in Brazilian Serie A, one of the most competitive leagues in South America"
+    },
+    "José Cifuentes": {
+      "bio": "Energetic central midfielder who has played across the Americas, including stints in MLS with LAFC before moving to Brazilian football with Cruzeiro. Known for his box-to-box engine and tenacity.",
+      "playingStyle": "Dynamic box-to-box midfielder with high work rate and the ability to cover large areas of the pitch",
+      "keyStrengths": ["High work rate", "Ball recovery", "Tactical versatility"],
+      "worldCup2026Role": "Midfield rotation option providing energy and defensive cover, capable of featuring as a substitute to change the tempo",
+      "notableFact": "Won the MLS Supporters' Shield with LAFC and scored crucial goals during their championship run"
+    },
+    "Byron Castillo": {
+      "bio": "Attacking right-back from Barcelona SC in Ecuador's Liga Pro who became the center of an eligibility controversy involving Chile ahead of the 2022 World Cup. FIFA ultimately ruled in Ecuador's favor, allowing the team to compete.",
+      "playingStyle": "Overlapping right-back with pace and crossing ability, more attacking than defensive in his approach",
+      "keyStrengths": ["Pace on the overlap", "Crossing delivery", "Attacking instinct"],
+      "worldCup2026Role": "Backup right-back option providing width and attacking impetus from the bench",
+      "notableFact": "Was at the center of a major FIFA eligibility dispute in 2022 when Chile challenged his nationality, but Ecuador's World Cup qualification was upheld"
+    },
+    "Pervis Estupiñán": {
+      "bio": "Dynamic left-back who became the first Ecuadorian player in AC Milan's history after signing from Brighton in July 2025. Previously starred in the Premier League with Brighton and represented Ecuador at the 2022 World Cup.",
+      "playingStyle": "Modern attacking full-back with explosive pace, tireless overlapping runs, and quality final-ball delivery",
+      "keyStrengths": ["Overlapping runs", "Crossing and chance creation", "Defensive recovery speed"],
+      "worldCup2026Role": "Undisputed starting left-back and Ecuador's primary threat down the left flank, providing width and creativity in the final third",
+      "notableFact": "Became AC Milan's first-ever Ecuadorian player when he signed for the club in July 2025"
+    },
+    "Carlos Gruezo": {
+      "bio": "Experienced defensive midfielder who has played extensively in European and North American football, including spells in the Bundesliga with Stuttgart and Augsburg before settling in Mexico's Liga MX with Santos Laguna.",
+      "playingStyle": "Disciplined defensive midfielder who screens the back four, wins possession, and keeps things simple in distribution",
+      "keyStrengths": ["Positional discipline", "Ball-winning ability", "Tactical awareness"],
+      "worldCup2026Role": "Experienced midfield anchor providing defensive stability and ball-winning presence in deeper positions",
+      "notableFact": "Has accumulated over 50 caps for Ecuador, making him one of the most experienced players in the current squad"
+    },
+    "Enner Valencia": {
+      "bio": "Ecuador's all-time leading scorer and iconic captain with over 40 international goals. Has scored at three World Cups (2014, 2022) and holds the record for most World Cup goals by an Ecuadorian player with six consecutive tournament goals.",
+      "playingStyle": "Complete forward with aerial prowess, intelligent movement, and clinical finishing in big moments",
+      "keyStrengths": ["Clinical finishing", "Aerial ability and heading", "Big-game mentality"],
+      "worldCup2026Role": "Captain and talisman leading the attack, likely as a starter or super-sub providing leadership and World Cup experience",
+      "notableFact": "Scored six consecutive World Cup goals across 2014 and 2022 tournaments, including a brace in the opening match of Qatar 2022 against the hosts"
+    },
+    "Moisés Caicedo": {
+      "bio": "Ecuador's midfield maestro and Chelsea star who transferred for a British-record fee of around 115 million pounds in 2023. Widely regarded as one of the best defensive midfielders in the world alongside Manchester City's Rodri.",
+      "playingStyle": "Elite ball-winning midfielder who combines relentless pressing with excellent passing range and the ability to drive forward with the ball",
+      "keyStrengths": ["Ball interceptions and recoveries", "Progressive passing", "Press resistance"],
+      "worldCup2026Role": "The heartbeat of Ecuador's midfield and most important player — controls the tempo, breaks up play, and links defense to attack",
+      "notableFact": "Chelsea manager Enzo Maresca stated that Caicedo and Rodri are the two best defensive midfielders in the world"
+    },
+    "Jeremy Sarmiento": {
+      "bio": "Spanish-born winger of Ecuadorian descent who came through the youth ranks at Charlton Athletic and Benfica before joining Brighton. Has had productive loan spells in the Championship, helping Ipswich win promotion to the Premier League.",
+      "playingStyle": "Tricky inverted winger with quick feet, dribbling ability, and the pace to beat defenders one-on-one",
+      "keyStrengths": ["Dribbling and ball-carrying", "Pace and acceleration", "Versatility across the front line"],
+      "worldCup2026Role": "Attacking option off the bench or as a rotational winger bringing pace and directness to unsettle tired defenses",
+      "notableFact": "Born in Madrid and raised in London, he chose to represent Ecuador at senior level and was part of the 2022 World Cup squad alongside Brighton teammates Estupiñán and Caicedo"
+    },
+    "Alexander Domínguez": {
+      "bio": "Veteran goalkeeper and one of Ecuador's most experienced players with over 60 international caps. A stalwart of Liga de Quito and a longtime fixture in the national team setup across multiple qualifying cycles.",
+      "playingStyle": "Experienced shot-stopper with strong command of the penalty area and vocal leadership of the defensive line",
+      "keyStrengths": ["Shot-stopping", "Command of the penalty area", "Leadership and communication"],
+      "worldCup2026Role": "Third-choice goalkeeper providing veteran experience and dressing room leadership for the squad",
+      "notableFact": "Has represented Ecuador at both Copa América and World Cup qualifying across more than a decade of international service"
+    },
+    "Angelo Preciado": {
+      "bio": "Right-back who has been playing European football with Sparta Prague in the Czech First League after making a name for himself in Ecuador's domestic football. A regular in the national team with over 35 caps.",
+      "playingStyle": "Energetic and physically strong right-back who combines defensive solidity with forward runs and crossing ability",
+      "keyStrengths": ["Physical intensity", "Crossing from deep positions", "Defensive reliability"],
+      "worldCup2026Role": "Starting right-back contender who provides balance between attacking thrust and defensive discipline on the right flank",
+      "notableFact": "Was part of Ecuador's 2022 World Cup squad and has gained valuable European experience playing in continental competitions with Sparta Prague"
+    },
+    "Xavier Arreaga": {
+      "bio": "Left-footed center-back who has built his career in MLS with the Seattle Sounders after starting in Ecuadorian domestic football. Brings familiarity with playing in the United States, which could be valuable at a home-continent World Cup.",
+      "playingStyle": "Left-footed center-back comfortable in possession with steady defensive positioning and an ability to step into midfield with the ball",
+      "keyStrengths": ["Left-footed ball distribution", "Positional awareness", "Familiarity with US football environments"],
+      "worldCup2026Role": "Defensive depth option who brings left-footed balance and experience playing in US stadiums that will host World Cup matches",
+      "notableFact": "Has been playing in MLS since 2019 with the Seattle Sounders, giving him extensive experience in American football venues"
+    },
+    "Joao Rojas": {
+      "bio": "Veteran winger with over a decade of professional experience in Ecuadorian and international football. A quick, tricky attacker who has represented Ecuador on the international stage for years, known for his pace along the flanks.",
+      "playingStyle": "Old-school winger with blistering pace, direct dribbling, and an ability to stretch defenses with his speed",
+      "keyStrengths": ["Explosive pace", "Direct running", "Experience in big matches"],
+      "worldCup2026Role": "Experienced squad player who can provide a late-game spark with his speed off the bench",
+      "notableFact": "At 37, he would be one of the oldest players in the Ecuadorian squad, bringing invaluable experience from over 30 international caps"
+    },
+    "Kendry Páez": {
+      "bio": "Generational Ecuadorian prodigy who signed for Chelsea at age 16 and is currently on loan at River Plate in Argentina. Became the youngest player to represent Ecuador's senior team and the youngest South American to score in a World Cup qualifier.",
+      "playingStyle": "Creative attacking midfielder with exceptional vision, technical ability beyond his years, and a dangerous left foot for through balls and set pieces",
+      "keyStrengths": ["Vision and creative passing", "Left-footed set-piece delivery", "Technical ability in tight spaces"],
+      "worldCup2026Role": "Creative spark and potential game-changer off the bench or as a starter, providing the unpredictability and invention Ecuador need to break down organized defenses",
+      "notableFact": "At just 19 years old during the World Cup, he will be one of the youngest players in the tournament, having already debuted internationally at 16 behind only Diego Maradona as the youngest South American to play senior international football"
+    },
+    "Nilson Angulo": {
+      "bio": "Young left-back who plays for LAFC in MLS, bringing pace and energy down the left side. Part of Ecuador's emerging generation of fullbacks and has represented the national team at youth and senior levels.",
+      "playingStyle": "Pacey attacking left-back who loves to get forward and deliver crosses, providing width and dynamism on the left flank",
+      "keyStrengths": ["Pace and acceleration", "Crossing ability", "Attacking intent"],
+      "worldCup2026Role": "Backup left-back providing depth behind Estupiñán and an attacking option to change the dynamic of the flank",
+      "notableFact": "Plays alongside fellow Ecuadorian Diego Palacios at LAFC in MLS, bringing familiarity with US football environments to the World Cup"
+    },
+    "Alan Franco": {
+      "bio": "Versatile center-back who plays for Atlético Mineiro in Brazil's Serie A. Has shown the ability to play in both central defense and defensive midfield, adding tactical flexibility to Ecuador's squad.",
+      "playingStyle": "Composed and technically proficient defender who can play out from the back and occasionally step into midfield roles",
+      "keyStrengths": ["Versatility across defensive positions", "Comfortable in possession", "Tactical intelligence"],
+      "worldCup2026Role": "Versatile defensive option capable of playing center-back or defensive midfielder, providing tactical flexibility from the bench",
+      "notableFact": "Has experience in Brazil's highly competitive Serie A with Atlético Mineiro, developing his game in one of South America's toughest leagues"
+    },
+    "Gonzalo Plata": {
+      "bio": "Explosive right winger who joined Flamengo in 2024 and scored the decisive goal in the Copa do Brasil final against Atlético Mineiro. A left-footed inverted winger with pace and flair who has been a regular for Ecuador since his teenage years.",
+      "playingStyle": "Explosive inverted winger who cuts inside from the right flank onto his stronger left foot, combining blistering pace with skillful dribbling",
+      "keyStrengths": ["Explosive pace and dribbling", "Cutting inside onto left foot", "Decisive in big moments"],
+      "worldCup2026Role": "Starting right winger providing the creative spark and individual brilliance needed to unlock stubborn defenses with his pace and trickery",
+      "notableFact": "Scored the winning goal in the 2024 Copa do Brasil final for Flamengo, one of the biggest domestic cup finals in South American football"
+    },
+    "Jordy Caicedo": {
+      "bio": "Target-man striker playing in Argentina's Liga Profesional with Barracas Central. A tall, physical forward who offers a different profile to the other attackers in Ecuador's squad with his aerial presence.",
+      "playingStyle": "Traditional target forward who excels in aerial duels, hold-up play, and creating space for teammates with his physical presence",
+      "keyStrengths": ["Aerial ability", "Hold-up play", "Physical presence in the box"],
+      "worldCup2026Role": "Alternative striking option off the bench when Ecuador needs to change their attacking approach and go more direct with long balls and crosses",
+      "notableFact": "At 189cm tall, he is one of the tallest forwards in Ecuador's squad, providing a Plan B option in attack"
+    },
+    "Alan Minda": {
+      "bio": "Young right winger developing in Belgian football with Lommel SK, part of the City Football Group network. A pacy and direct attacker who represents Ecuador's exciting young generation of wingers.",
+      "playingStyle": "Direct and pacy winger who takes on defenders with speed and trickery, looking to beat his man and deliver crosses or cut inside",
+      "keyStrengths": ["Raw pace", "One-on-one dribbling", "Youthful energy and directness"],
+      "worldCup2026Role": "Young attacking option off the bench providing fresh legs and directness in the final third during later stages of matches",
+      "notableFact": "Plays for Lommel SK, which is part of the City Football Group that also owns Manchester City, developing within one of football's most prominent multi-club networks"
+    },
+    "Moisés Ramírez": {
+      "bio": "Young goalkeeper from Independiente del Valle, the renowned Ecuadorian academy that has produced talents like Moisés Caicedo and Kendry Páez. Represents the future of Ecuador's goalkeeping department.",
+      "playingStyle": "Modern goalkeeper comfortable with the ball at his feet, trained in Independiente del Valle's possession-oriented philosophy",
+      "keyStrengths": ["Distribution and footwork", "Reflexes", "Youth and development potential"],
+      "worldCup2026Role": "Young third goalkeeper gaining World Cup squad experience and developing for future tournaments alongside veteran keepers",
+      "notableFact": "Product of Independiente del Valle's celebrated academy, the same institution that developed Moisés Caicedo and Kendry Páez"
+    },
+    "Willian Pacho": {
+      "bio": "Elite center-back who starred at Paris Saint-Germain, starting in the 2025 Champions League final victory over Inter Milan to become the first Ecuadorian to win the competition. Signed for PSG in a deal worth up to 45 million euros.",
+      "playingStyle": "Left-footed ball-playing center-back with excellent passing range, strong in interceptions and tackles, capable of building play from the back",
+      "keyStrengths": ["Progressive passing from defense", "Ball interception", "Composure under pressure"],
+      "worldCup2026Role": "Starting center-back and key figure in Ecuador's defensive structure, combining with Hincapié to form one of the most talented young center-back pairings in the tournament",
+      "notableFact": "Became the first Ecuadorian player to win the UEFA Champions League when PSG beat Inter Milan 5-0 in the 2025 final"
+    },
+    "Diego Palacios": {
+      "bio": "Left-back who plays for LAFC in MLS alongside fellow Ecuadorian Nilson Angulo. A technically gifted defender who offers quality going forward and has represented Ecuador regularly at international level.",
+      "playingStyle": "Technical left-back with a good passing range and the ability to combine with wingers in the final third",
+      "keyStrengths": ["Technical ability on the ball", "Passing accuracy", "Understanding of MLS and US environments"],
+      "worldCup2026Role": "Defensive depth option at left-back who brings familiarity with US stadiums and environments for the North American World Cup",
+      "notableFact": "Has been based in the United States with LAFC since 2020, making him one of the most experienced Ecuador players in terms of living and playing in World Cup host country USA"
+    },
+    "John Yeboah": {
+      "bio": "Left winger of Ghanaian-Ecuadorian heritage playing in Belgian football. A quick and direct attacker who adds further depth to Ecuador's already well-stocked pool of wingers.",
+      "playingStyle": "Pacy winger who uses his speed to beat defenders on the outside and deliver crosses into the box",
+      "keyStrengths": ["Pace and directness", "Crossing ability", "Willingness to track back"],
+      "worldCup2026Role": "Squad depth option on the wing providing an additional attacking alternative from the bench",
+      "notableFact": "Has a dual Ghanaian-Ecuadorian background, choosing to represent Ecuador at international level and bringing a unique multicultural perspective to the squad"
+    },
+    "Kevin Rodríguez": {
+      "bio": "Young striker playing for Metz in France's Ligue 2, gaining valuable European experience. A versatile forward capable of playing across the front line who is developing rapidly in the French football system.",
+      "playingStyle": "Mobile and hardworking forward who presses from the front, links play, and can finish with both feet",
+      "keyStrengths": ["Work rate and pressing", "Movement off the ball", "Versatility across the forward line"],
+      "worldCup2026Role": "Young forward depth option capable of providing energy and pressing from the bench in the latter stages of matches",
+      "notableFact": "At 25, he represents the middle ground of Ecuador's squad between the veteran attackers and the teenage sensation Kendry Páez"
+    }
+  }
+}

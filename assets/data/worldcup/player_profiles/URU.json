@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Sergio Rochet": {
+      "bio": "Uruguay's current first-choice goalkeeper who moved to Inter Miami in MLS. Rochet earned the number one shirt through consistent performances in South American qualifying and the Copa America.",
+      "playingStyle": "Athletic goalkeeper with strong reflexes, good command of his area, and improving distribution",
+      "keyStrengths": ["Shot-stopping reflexes", "Command of the area", "Aerial ability"],
+      "worldCup2026Role": "Starting goalkeeper and defensive leader between the posts",
+      "notableFact": "Played every minute of Uruguay's 2024 Copa America campaign, helping them reach the semifinals"
+    },
+    "José María Giménez": {
+      "bio": "A rugged center-back who has been a cornerstone of Atletico Madrid's defense for over a decade. Giménez is one of Uruguay's most experienced defenders and a warrior in the heart of the backline.",
+      "playingStyle": "Aggressive, passionate defender who throws himself into every challenge, excels in aerial duels, and leads by example",
+      "keyStrengths": ["Aerial dominance", "Aggressive defending", "Leadership"],
+      "worldCup2026Role": "Starting center-back and defensive leader, marshaling the backline with experience and intensity",
+      "notableFact": "Has been at Atletico Madrid since 2013, becoming one of the longest-serving players in the club's modern history"
+    },
+    "Sebastián Cáceres": {
+      "bio": "A left-footed Uruguayan center-back who plays in Mexico with Club America. Cáceres has become a reliable defender in Liga MX and earned his place in the national team setup.",
+      "playingStyle": "Left-footed center-back with good positional awareness, clean tackling, and comfort bringing the ball out from the back",
+      "keyStrengths": ["Left-footed distribution", "Positional awareness", "Clean tackling"],
+      "worldCup2026Role": "Defensive depth option providing left-footed balance in the center-back rotation",
+      "notableFact": "Has won multiple Liga MX titles with Club America, one of Mexico's most decorated clubs"
+    },
+    "Ronald Araújo": {
+      "bio": "A powerful Uruguayan center-back who has become a vital member of Barcelona's defense. Araújo is known for his incredible speed for a center-back and his warrior-like mentality in defensive duels.",
+      "playingStyle": "Explosive, physically dominant center-back with remarkable pace, dominant in aerial and ground duels, and capable of recovery runs that few defenders can match",
+      "keyStrengths": ["Recovery pace", "Physical dominance", "Aerial duels"],
+      "worldCup2026Role": "Starting center-back and defensive anchor, Uruguay's most important defender",
+      "notableFact": "Has been clocked as one of the fastest players at Barcelona despite being a center-back, capable of sprinting at speeds comparable to wingers"
+    },
+    "Manuel Ugarte": {
+      "bio": "A tenacious defensive midfielder who made his name at Sporting CP and PSG before joining Manchester United. Ugarte is a relentless ball-winner who embodies the famous Uruguayan garra (fighting spirit).",
+      "playingStyle": "Tireless ball-winning midfielder who presses aggressively, wins tackles at an elite rate, and protects the defense with ferocious intensity",
+      "keyStrengths": ["Ball-winning ability", "Pressing intensity", "Defensive positioning"],
+      "worldCup2026Role": "Starting defensive midfielder and midfield enforcer, the shield in front of the defense",
+      "notableFact": "Led Ligue 1 in tackles and interceptions during his season at PSG, drawing comparisons to N'Golo Kante"
+    },
+    "Rodrigo Bentancur": {
+      "bio": "A technically gifted midfielder who developed at Boca Juniors and Juventus before becoming a key player at Tottenham in the Premier League. Bentancur combines South American flair with European tactical discipline.",
+      "playingStyle": "Progressive midfielder who carries the ball elegantly through the lines, combining technical quality with defensive awareness",
+      "keyStrengths": ["Ball progression", "Press resistance", "Tactical versatility"],
+      "worldCup2026Role": "Starting central midfielder providing the link between defense and attack with his ball-carrying ability",
+      "notableFact": "Came through Boca Juniors' famous youth academy before being signed by Juventus as a teenager"
+    },
+    "Nicolás De La Cruz": {
+      "bio": "A creative midfielder who has been a standout performer at River Plate and Flamengo in South American football. De La Cruz is known for his technical ability and eye for a decisive pass.",
+      "playingStyle": "Diminutive, technically brilliant midfielder with excellent passing range, set-piece expertise, and creative vision",
+      "keyStrengths": ["Set-piece delivery", "Creative passing", "Technical ability"],
+      "worldCup2026Role": "Creative midfield option providing playmaking quality and set-piece expertise from the bench or as a starter",
+      "notableFact": "Won multiple Copa Libertadores and domestic titles across his career in South American football"
+    },
+    "Nahitan Nández": {
+      "bio": "A combative midfielder who has played in Italy with Cagliari and now in Saudi Arabia. Nández is the epitome of Uruguayan garra, bringing relentless energy and fighting spirit to every match.",
+      "playingStyle": "Hard-running, combative midfielder with relentless stamina, strong tackling, and the willingness to cover every blade of grass",
+      "keyStrengths": ["Stamina and work rate", "Aggressive tackling", "Versatility"],
+      "worldCup2026Role": "Versatile midfield option who can play centrally or as a wing-back, providing energy and defensive solidity",
+      "notableFact": "His tireless running style and combative nature have made him a fan favorite everywhere he has played, embodying the Uruguayan spirit"
+    },
+    "Agustín Alvarez": {
+      "bio": "A young Uruguayan striker who made his name at Penarol before moving to Europe with Sassuolo in Serie A. Alvarez is a natural goalscorer with sharp instincts inside the box.",
+      "playingStyle": "Instinctive young striker with sharp movement in the box, clinical finishing, and a poacher's nose for goal",
+      "keyStrengths": ["Movement in the box", "Clinical finishing", "Goalscoring instinct"],
+      "worldCup2026Role": "Young attacking option providing squad depth and a hungry alternative up front",
+      "notableFact": "Broke goalscoring records at Penarol as a teenager, earning comparisons to legendary Uruguayan strikers"
+    },
+    "Giorgian De Arrascaeta": {
+      "bio": "A fan favorite at Flamengo in Brazil, De Arrascaeta is one of the most creative players in South American football. His technical brilliance and flair have made him a key player for both club and country.",
+      "playingStyle": "Elegant playmaker with exceptional close control, creative vision, and the ability to produce moments of magic in the final third",
+      "keyStrengths": ["Close control", "Creative vision", "Moments of individual brilliance"],
+      "worldCup2026Role": "Starting attacking midfielder and chief creator, the player who unlocks defenses with his imagination",
+      "notableFact": "Has won multiple titles with Flamengo including the Copa Libertadores and is considered one of the best foreign players in Brazilian football history"
+    },
+    "Darwin Núñez": {
+      "bio": "An explosive Uruguayan striker who became one of the most expensive players in history when he signed for Liverpool. Known for his incredible pace, power, and chaotic energy in the final third. Now at Fenerbahce.",
+      "playingStyle": "Explosive, unpredictable striker with blistering pace, powerful shooting, and relentless movement that terrifies defenders",
+      "keyStrengths": ["Explosive pace", "Powerful shooting", "Relentless movement"],
+      "worldCup2026Role": "Starting striker and primary goal threat, Uruguay's most dangerous attacking weapon",
+      "notableFact": "Signed for Liverpool for up to 85 million euros from Benfica, making him one of the most expensive strikers in football history"
+    },
+    "Fernando Muslera": {
+      "bio": "A legendary Uruguayan goalkeeper with over 135 caps, Muslera has been a national team stalwart for over 15 years. He was part of the 2010 Copa America-winning squad and the 2010 World Cup semifinal run.",
+      "playingStyle": "Experienced, commanding goalkeeper with excellent positioning, strong leadership, and unmatched tournament experience",
+      "keyStrengths": ["Experience and leadership", "Positioning", "Communication"],
+      "worldCup2026Role": "Veteran third-choice goalkeeper providing invaluable experience and dressing room leadership",
+      "notableFact": "Has played in four World Cups (2010, 2014, 2018, 2022) and could make it a fifth consecutive tournament in 2026"
+    },
+    "Guillermo Varela": {
+      "bio": "A right-back who had a spell at Manchester United as a youngster before building his career in South America with Penarol and Flamengo. Varela is an experienced defender with international pedigree.",
+      "playingStyle": "Attacking right-back with good pace, overlapping ability, and experience in high-pressure matches",
+      "keyStrengths": ["Overlapping runs", "Pace", "Experience"],
+      "worldCup2026Role": "Backup right-back providing experience and depth in the defensive positions",
+      "notableFact": "Was part of Manchester United's academy and made first-team appearances under Louis van Gaal before returning to South America"
+    },
+    "Lucas Torreira": {
+      "bio": "A combative defensive midfielder who has played for Arsenal, Fiorentina, Atletico Madrid, and Galatasaray. Torreira is a fierce ball-winner despite his small stature, a classic Uruguayan warrior.",
+      "playingStyle": "Compact, aggressive defensive midfielder who wins the ball with ferocious tackling and distributes it simply and effectively",
+      "keyStrengths": ["Ball-winning ability", "Aggressive tackling", "Tactical discipline"],
+      "worldCup2026Role": "Key midfield option competing with Ugarte for the defensive midfield role or partnering alongside him",
+      "notableFact": "Despite standing just 168cm tall, he is one of the most feared tacklers in world football, earning the nickname 'The Little Warrior'"
+    },
+    "Federico Valverde": {
+      "bio": "One of the best midfielders in the world, Valverde is the engine of Real Madrid's midfield and Uruguay's most valuable player. His combination of box-to-box energy, technical quality, and goalscoring threat is virtually unmatched.",
+      "playingStyle": "Complete box-to-box midfielder with elite athleticism, powerful long-range shooting, tireless running, and the ability to play multiple positions",
+      "keyStrengths": ["Box-to-box dynamism", "Long-range shooting", "Incredible stamina and athleticism"],
+      "worldCup2026Role": "Uruguay's most important player and midfield talisman, the heartbeat of the team's play",
+      "notableFact": "Valued at over 150 million euros, he is one of the most valuable midfielders in world football and has won multiple Champions League titles with Real Madrid"
+    },
+    "Mathías Olivera": {
+      "bio": "A solid left-back who plays for Napoli in Serie A, Olivera was part of Napoli's historic Serie A title-winning squad. He brings defensive solidity and tactical discipline from Italian football.",
+      "playingStyle": "Defensively solid left-back with good positioning, strong tackling, and disciplined tactical awareness from Serie A",
+      "keyStrengths": ["Defensive solidity", "Tactical discipline", "Consistent performances"],
+      "worldCup2026Role": "Starting left-back providing defensive stability and tactical intelligence on the left flank",
+      "notableFact": "Was part of Napoli's historic 2022-23 Serie A title-winning squad, their first league title in 33 years"
+    },
+    "Maximiliano Gómez": {
+      "bio": "A strong target man who has played in Spain with Celta Vigo and Valencia, and now in Uruguay with Nacional. Gómez brings aerial presence and physical battling qualities to the attack.",
+      "playingStyle": "Physical target striker who excels in aerial duels, hold-up play, and bringing others into the game around the penalty area",
+      "keyStrengths": ["Aerial ability", "Hold-up play", "Physical battling"],
+      "worldCup2026Role": "Experienced backup striker offering a different physical dimension as a plan B",
+      "notableFact": "Scored crucial goals for Uruguay in World Cup qualifying and has been a reliable international performer across multiple campaigns"
+    },
+    "Facundo Pellistri": {
+      "bio": "A tricky Uruguayan winger who was signed by Manchester United from Penarol as a teenager. Pellistri has developed through loan spells and now plays at Panathinaikos, showcasing his dribbling skills.",
+      "playingStyle": "Quick, skillful winger who takes on defenders with close dribbling, pace on the touchline, and clever changes of direction",
+      "keyStrengths": ["Dribbling ability", "Pace on the wing", "One-on-one skill"],
+      "worldCup2026Role": "Wide attacking option providing pace and dribbling ability from the right flank",
+      "notableFact": "Was one of the youngest players ever sold from Uruguayan football to a top European club when Manchester United signed him at 18"
+    },
+    "Sebastián Coates": {
+      "bio": "A towering veteran center-back who captained Sporting CP for many years and previously played for Liverpool. Coates returned to Uruguay with Nacional and brings vast experience to the squad.",
+      "playingStyle": "Towering, experienced center-back with exceptional aerial ability and leadership qualities honed over a long career in top European leagues",
+      "keyStrengths": ["Aerial dominance", "Leadership", "Experience at the highest level"],
+      "worldCup2026Role": "Veteran defensive depth providing experience, aerial threat at set pieces, and mentorship",
+      "notableFact": "Scored one of the most memorable goals in Liverpool's history with a stunning scissors-kick against QPR in the Premier League"
+    },
+    "Jonathan Rodríguez": {
+      "bio": "An experienced Uruguayan striker who has played in Mexico with Santos Laguna and Club America. Rodríguez is a reliable goalscorer in Liga MX with strong movement and finishing ability.",
+      "playingStyle": "Mobile, intelligent striker with good movement in the channels, clinical finishing, and the ability to play across the front line",
+      "keyStrengths": ["Movement off the ball", "Clinical finishing", "Versatility in attack"],
+      "worldCup2026Role": "Experienced squad striker providing depth and competition in the attacking positions",
+      "notableFact": "Has been one of the top Uruguayan scorers in Liga MX history, becoming a beloved figure at his Mexican clubs"
+    },
+    "Luciano Rodríguez": {
+      "bio": "One of Uruguay's most exciting young talents, nicknamed 'Lucho'. Rodriguez burst onto the scene at Liverpool (Uruguay) before moving to Bahia in Brazil, where his pace and finishing have drawn attention from top European clubs.",
+      "playingStyle": "Explosive young striker with blistering pace, direct running, and a natural finishing instinct that belies his age",
+      "keyStrengths": ["Explosive pace", "Natural finishing", "Youthful fearlessness"],
+      "worldCup2026Role": "Exciting young talent who could be a super-sub impact player with his pace and directness",
+      "notableFact": "Was a standout performer at the South American U-20 Championship and is considered one of the brightest young attacking talents in all of South America"
+    },
+    "Santiago Mele": {
+      "bio": "A developing Uruguayan goalkeeper who plays in Colombia with Junior FC. Mele has been called up to provide goalkeeping depth and gain experience in the international setup.",
+      "playingStyle": "Young goalkeeper with good reflexes and developing command of his penalty area",
+      "keyStrengths": ["Reflexes", "Developing potential", "Agility"],
+      "worldCup2026Role": "Backup goalkeeper providing depth and gaining valuable tournament experience",
+      "notableFact": "Represents the new generation of Uruguayan goalkeepers being developed for the post-Muslera era"
+    },
+    "Matías Viña": {
+      "bio": "A left-back who plays for Flamengo in Brazil after a stint at Roma in Serie A. Viña is an attacking full-back with good energy and crossing ability from the left side.",
+      "playingStyle": "Energetic left-back who gets forward frequently, provides width with overlapping runs, and delivers crosses from advanced positions",
+      "keyStrengths": ["Overlapping runs", "Crossing from the left", "Energy and stamina"],
+      "worldCup2026Role": "Backup left-back competing with Olivera for the starting spot and providing squad rotation",
+      "notableFact": "Won the Copa Libertadores and multiple Brazilian titles with Flamengo after his return from European football"
+    },
+    "Agustín Canobbio": {
+      "bio": "A dynamic Uruguayan winger who plays for Athletico Paranaense in Brazil. Canobbio is known for his inverted winger play, cutting inside from the right onto his favored left foot.",
+      "playingStyle": "Inverted winger who cuts inside from the right on his left foot, with good pace, dribbling, and an eye for goal",
+      "keyStrengths": ["Cutting inside on left foot", "Dribbling", "Work rate"],
+      "worldCup2026Role": "Wide attacking option providing versatility and energy on the flanks",
+      "notableFact": "Made his name at Penarol in Uruguay before earning a big move to Brazil, where he became a regular in the squad"
+    },
+    "Facundo Torres": {
+      "bio": "A talented young Uruguayan winger who plays for Orlando City in MLS. Torres has become one of the most exciting attackers in the league with his technical skill and goalscoring ability.",
+      "playingStyle": "Skillful left winger who likes to cut inside onto his right foot, combining technical dribbling with an eye for spectacular goals",
+      "keyStrengths": ["Technical skill", "Goalscoring from wide areas", "Creativity"],
+      "worldCup2026Role": "Attacking option from the left side, familiar with playing in the USA where the tournament will be hosted",
+      "notableFact": "Has become one of the top-rated young players in MLS and will have the advantage of playing the World Cup in the country where he already plays club football"
+    },
+    "Cristian Olivera": {
+      "bio": "A rising young Uruguayan winger who plays for LAFC in MLS. Olivera has shown exciting potential with his pace, directness, and ability to beat defenders in one-on-one situations.",
+      "playingStyle": "Pacy, direct winger who takes on defenders with speed and skill, comfortable on either flank",
+      "keyStrengths": ["Pace", "Directness", "One-on-one ability"],
+      "worldCup2026Role": "Young squad player providing pace and energy from the bench, with home-field advantage playing in the USA",
+      "notableFact": "Like teammate Facundo Torres, Olivera plays in MLS and will benefit from familiarity with American stadiums and conditions at the World Cup"
+    }
+  }
+}

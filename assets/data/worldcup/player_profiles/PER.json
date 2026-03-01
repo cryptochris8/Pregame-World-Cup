@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Pedro Gallese": {
+      "bio": "Peru's number one goalkeeper who has been outstanding in MLS with Orlando City. A key figure in Peru's 2018 World Cup squad and the undisputed first-choice keeper for over a decade.",
+      "playingStyle": "Commanding goalkeeper with excellent reflexes and strong penalty-saving ability, vocal in organizing his defense.",
+      "keyStrengths": ["Reflexes", "Penalty saving", "Command of area"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and one of the senior leaders of the squad.",
+      "notableFact": "Was Peru's hero in multiple penalty shootouts during their qualification campaigns, earning a reputation as one of South America's best spot-kick stoppers."
+    },
+    "Luis Advíncula": {
+      "bio": "Explosive right-back who has been a fixture of the Peruvian national team for over a decade. Currently at Boca Juniors in Argentina, known for his blistering pace up the flank.",
+      "playingStyle": "Turbo-charged fullback whose electric pace makes him one of the fastest defenders in South American football, a constant threat on the overlap.",
+      "keyStrengths": ["Explosive pace", "Overlapping runs", "Recovery speed"],
+      "worldCup2026Role": "Starting right-back whose pace and experience make him indispensable to Peru's defensive structure.",
+      "notableFact": "Consistently clocked as one of the fastest players in South American football, his sprint speed has been compared to elite wingers."
+    },
+    "Aldo Corzo": {
+      "bio": "Veteran right-back and longtime Universitario captain who has served Peru faithfully across multiple qualifying campaigns. A reliable domestic league performer.",
+      "playingStyle": "Steady and positionally disciplined defender who prioritizes defensive solidity over attacking flair.",
+      "keyStrengths": ["Defensive positioning", "Experience", "Consistency"],
+      "worldCup2026Role": "Experienced backup fullback providing squad depth and veteran leadership in the dressing room.",
+      "notableFact": "Has been captain of Universitario de Deportes, one of Peru's most historic and well-supported clubs."
+    },
+    "Alexander Callens": {
+      "bio": "Center-back who became a cult hero at New York City FC in MLS before moving to AEK Athens. Known for scoring crucial goals despite being a defender.",
+      "playingStyle": "Strong, aggressive center-back who is dominant in aerial duels and carries a surprising goal threat from set pieces.",
+      "keyStrengths": ["Aerial duels", "Goal threat from defense", "Physical strength"],
+      "worldCup2026Role": "Starting center-back partnering Zambrano, providing a physical defensive presence and set-piece danger.",
+      "notableFact": "Scored the winning goal in the 2021 MLS Cup final for New York City FC, becoming a hero in the club's first-ever championship."
+    },
+    "Carlos Zambrano": {
+      "bio": "Battle-hardened center-back who has played across Europe and returned to Alianza Lima in Peru. One of the most experienced defenders in the squad with a fierce competitive edge.",
+      "playingStyle": "Aggressive, old-school center-back who relishes physical battles, strong in the tackle, and an intimidating presence for opposing forwards.",
+      "keyStrengths": ["Aggressive defending", "Aerial ability", "Tactical experience"],
+      "worldCup2026Role": "Senior center-back providing leadership and experience at the heart of Peru's defense.",
+      "notableFact": "Spent significant time in Europe including stints in Germany and Switzerland, earning a reputation as one of Peru's toughest defenders."
+    },
+    "Miguel Trauco": {
+      "bio": "Experienced left-back with a cannon of a left foot who has played in France and Brazil. A free-kick specialist and longtime fixture in Peru's national team.",
+      "playingStyle": "Attacking left-back with a powerful left foot, dangerous from set pieces and capable of delivering pinpoint crosses from wide areas.",
+      "keyStrengths": ["Left-footed crossing", "Free-kick ability", "Attacking threat"],
+      "worldCup2026Role": "Experienced left-back option whose set-piece delivery and attacking ability make him a valuable squad member.",
+      "notableFact": "His powerful left foot has produced some spectacular free-kick goals, making him one of Peru's most dangerous dead-ball specialists."
+    },
+    "Andy Polo": {
+      "bio": "Versatile winger who has spent time in MLS and returned to Universitario in Peru. A squad player who provides width and work rate on the right side.",
+      "playingStyle": "Hardworking winger who tracks back diligently and provides width, more of a team player than an individual dribbler.",
+      "keyStrengths": ["Work rate", "Defensive tracking", "Width"],
+      "worldCup2026Role": "Depth option on the right wing who contributes both defensively and offensively.",
+      "notableFact": "Had a stint with Portland Timbers in MLS, gaining experience in North American football before returning to Peru."
+    },
+    "Christian Cueva": {
+      "bio": "Mercurial playmaker who is Peru's most naturally gifted midfielder, capable of moments of pure brilliance. A veteran of the 2018 World Cup with over 100 caps despite a nomadic club career.",
+      "playingStyle": "Creative number 10 with exceptional passing vision, close control, and the ability to produce magical moments that change matches.",
+      "keyStrengths": ["Vision and passing", "Creative genius", "Dribbling in tight spaces"],
+      "worldCup2026Role": "Experienced playmaker providing creative spark from the bench or in matches where Peru need to unlock stubborn defenses.",
+      "notableFact": "Despite a famously turbulent career with numerous club moves, he remains one of Peru's most beloved and talented players with over 110 caps."
+    },
+    "Paolo Guerrero": {
+      "bio": "Legendary Peruvian striker and all-time top scorer for the national team. At 42, the iconic captain would be making what could be a farewell World Cup appearance after a career spanning two decades across Germany, Brazil, and Peru.",
+      "playingStyle": "Classic target striker with exceptional heading ability, strong hold-up play, and a lethal right foot inside the penalty area.",
+      "keyStrengths": ["Heading ability", "Hold-up play", "Penalty-area finishing"],
+      "worldCup2026Role": "Iconic squad member and captain whose presence inspires the team, likely a substitute role bringing experience in key moments.",
+      "notableFact": "Peru's all-time leading scorer with 40 goals, he played for Bayern Munich's first team and had a prolific career in Brazil with Corinthians and Flamengo."
+    },
+    "Bryan Reyna": {
+      "bio": "Exciting young winger who has earned a move to Argentine football with Belgrano. One of Peru's most exciting emerging attacking talents with pace and trickery.",
+      "playingStyle": "Direct, pacy winger who takes on defenders with skill and confidence, capable of creating chances out of nothing with his dribbling.",
+      "keyStrengths": ["Pace", "Dribbling", "One-on-one ability"],
+      "worldCup2026Role": "Exciting attacking option who can stretch defenses with his directness, expected to be an impact substitute or potential starter.",
+      "notableFact": "Made a rapid rise through Peruvian football to earn an international move, becoming one of the country's most talked-about young talents."
+    },
+    "Raúl Ruidíaz": {
+      "bio": "Prolific striker who became one of the top scorers in MLS history with Seattle Sounders. Small in stature but lethal in the penalty area with an exceptional goalscoring record.",
+      "playingStyle": "Fox-in-the-box striker who makes intelligent runs into scoring positions, clinical with both feet and his head despite his compact frame.",
+      "keyStrengths": ["Clinical finishing", "Intelligent movement", "Positioning"],
+      "worldCup2026Role": "Experienced striker providing goalscoring depth, particularly dangerous as a substitute when defenders tire.",
+      "notableFact": "Became one of the all-time top scorers at Seattle Sounders, scoring over 70 goals in MLS and winning the Golden Boot."
+    },
+    "Carlos Cáceda": {
+      "bio": "Experienced domestic goalkeeper who has been a loyal servant for Melgar in the Peruvian league. Provides reliable backup to Gallese in the national team setup.",
+      "playingStyle": "Solid goalkeeper who excels in shot-stopping and is comfortable dealing with crosses into the box.",
+      "keyStrengths": ["Shot-stopping", "Cross handling", "Reliability"],
+      "worldCup2026Role": "Second-choice goalkeeper providing quality backup and training competition for the number one spot.",
+      "notableFact": "Has been a key player for FBC Melgar, helping them compete in the Copa Libertadores and Copa Sudamericana."
+    },
+    "Renato Tapia": {
+      "bio": "Midfield enforcer who has carved out a career in La Liga with Leganes after successful spells in the Netherlands and Spain. Peru's most important defensive midfielder.",
+      "playingStyle": "Tenacious ball-winner who shields the defense effectively, breaking up opposition attacks and distributing the ball with calm efficiency.",
+      "keyStrengths": ["Ball recovery", "Tackling", "Passing under pressure"],
+      "worldCup2026Role": "Starting defensive midfielder and the anchor of Peru's midfield, crucial for providing defensive stability.",
+      "notableFact": "Developed through the Twente academy in the Netherlands, becoming one of the few Peruvians to come through a European youth system."
+    },
+    "Gianluca Lapadula": {
+      "bio": "Italian-born striker who chose to represent Peru, bringing Serie A quality and experience. Has been a revelation since switching international allegiance, scoring important goals in qualifying.",
+      "playingStyle": "Hard-running striker who presses relentlessly and creates chances through sheer effort, clinical in front of goal with either foot.",
+      "keyStrengths": ["Work rate and pressing", "Finishing", "Aerial ability"],
+      "worldCup2026Role": "Key striker whose combination of European experience and tireless pressing makes him a likely starter.",
+      "notableFact": "Born and raised in Italy, he chose to represent Peru through his mother's heritage, becoming an instant fan favorite with his passionate commitment."
+    },
+    "Jesús Castillo": {
+      "bio": "Young midfielder who has earned a move to Portuguese football with Gil Vicente. An emerging talent who adds energy and dynamism to Peru's central midfield.",
+      "playingStyle": "Box-to-box midfielder with good stamina and technical ability, effective at winning the ball back and driving forward with purpose.",
+      "keyStrengths": ["Energy and stamina", "Ball recovery", "Forward runs"],
+      "worldCup2026Role": "Young midfield option providing energy and depth, capable of making an impact as a substitute.",
+      "notableFact": "His move to Portuguese football represents the growing trend of young Peruvian players seeking European experience early in their careers."
+    },
+    "Marcos López": {
+      "bio": "Modern left-back who has established himself at Feyenoord in the Eredivisie, one of the most prestigious clubs in Dutch football. Peru's most valuable defender and a key figure in the squad.",
+      "playingStyle": "Attack-minded left-back comfortable pushing high up the pitch, excellent crosser and capable of contributing assists consistently.",
+      "keyStrengths": ["Crossing ability", "Offensive positioning", "Tactical intelligence"],
+      "worldCup2026Role": "Starting left-back and one of Peru's most important players, providing width and attacking quality from the left flank.",
+      "notableFact": "Has become a regular starter at Feyenoord, playing in the Champions League and establishing himself as one of the top left-backs in Dutch football."
+    },
+    "Luis Iberico": {
+      "bio": "Hardworking winger from Melgar who provides domestic league quality and versatility to the squad. Known for his work rate and willingness to track back.",
+      "playingStyle": "Diligent wide player who contributes defensively while providing width and direct running in attack.",
+      "keyStrengths": ["Work rate", "Versatility", "Direct running"],
+      "worldCup2026Role": "Squad depth player who can fill in on either wing, offering defensive reliability and energy off the bench.",
+      "notableFact": "Has been one of the standout performers in Peru's Liga 1, consistently producing strong seasons for Melgar."
+    },
+    "André Carrillo": {
+      "bio": "Experienced winger nicknamed 'La Culebra' (The Snake) who has had a long career spanning Sporting Lisbon, Benfica, Watford, and the Saudi Pro League. One of Peru's most capped active players.",
+      "playingStyle": "Powerful and direct winger with a strong physique, capable of beating defenders with a combination of skill and raw pace.",
+      "keyStrengths": ["Power and pace", "Directness", "Experience"],
+      "worldCup2026Role": "Veteran winger whose big-game experience and physical presence make him a valuable option in the final third.",
+      "notableFact": "Earned his nickname 'La Culebra' (The Snake) for his slithering dribbling style, and has played in five different countries during his career."
+    },
+    "Yoshimar Yotún": {
+      "bio": "Veteran midfielder with over 115 caps who has been the heartbeat of Peru's midfield for over a decade. A tireless competitor whose leadership and consistency have been invaluable.",
+      "playingStyle": "Intelligent left-footed midfielder who controls tempo, delivers accurate set pieces, and provides tactical discipline in central areas.",
+      "keyStrengths": ["Set-piece delivery", "Tempo control", "Left-footed passing"],
+      "worldCup2026Role": "Experienced midfield presence providing tactical intelligence and leadership, likely in a rotation role given his age.",
+      "notableFact": "Was a key player in Peru's historic 2018 World Cup qualification, their first appearance in 36 years, and has been a constant through three qualifying campaigns."
+    },
+    "Edison Flores": {
+      "bio": "Versatile attacking midfielder who had a successful stint in MLS with DC United before returning to Universitario. Known for his intelligence in the final third and consistent goal contributions.",
+      "playingStyle": "Smart, off-the-ball runner who finds spaces between the lines, capable of scoring and creating with his movement and finishing.",
+      "keyStrengths": ["Movement off the ball", "Finishing", "Tactical awareness"],
+      "worldCup2026Role": "Experienced attacking option providing depth behind the front line, dangerous with his intelligent runs into the box.",
+      "notableFact": "Scored crucial goals in Peru's 2018 World Cup qualifying campaign, earning the affectionate nickname 'Oreja' (Ear) from Peruvian fans."
+    },
+    "Sergio Peña": {
+      "bio": "Technical midfielder who has impressed in Scandinavian football with Malmo in Sweden. Brings creative passing and vision to Peru's midfield.",
+      "playingStyle": "Creative central midfielder with excellent passing range, capable of picking out teammates with incisive through balls and controlling the game's tempo.",
+      "keyStrengths": ["Passing range", "Vision", "Technical quality"],
+      "worldCup2026Role": "Midfield creator who can dictate play from deep, providing a different dimension to Peru's midfield options.",
+      "notableFact": "Has been a regular in Swedish football, helping Malmo compete in European competition and the Allsvenskan title race."
+    },
+    "Diego Romero": {
+      "bio": "Young goalkeeper from Universitario who represents the future of Peruvian goalkeeping. A rising talent who has shown maturity beyond his years.",
+      "playingStyle": "Athletic modern goalkeeper comfortable with the ball at his feet and quick off his line to deal with through balls.",
+      "keyStrengths": ["Athleticism", "Distribution", "Shot-stopping"],
+      "worldCup2026Role": "Third-choice goalkeeper and future number one prospect, gaining invaluable World Cup experience.",
+      "notableFact": "At just 25, he is being groomed as the long-term successor to Pedro Gallese as Peru's first-choice goalkeeper."
+    },
+    "Pedro Aquino": {
+      "bio": "Combative midfielder who has had stints in MLS and Liga MX, currently with Santos Laguna. A tough-tackling presence who adds steel to Peru's midfield.",
+      "playingStyle": "Aggressive ball-winning midfielder who combines physicality with decent distribution, effective at disrupting opposition buildup play.",
+      "keyStrengths": ["Tackling", "Physical presence", "Ball recovery"],
+      "worldCup2026Role": "Midfield enforcer who provides defensive depth and can be deployed when Peru need to protect a lead.",
+      "notableFact": "Previously played for Club America in Liga MX, one of the biggest and most demanding clubs in Mexican football."
+    },
+    "Piero Quispe": {
+      "bio": "Peru's most exciting young talent, a creative attacking midfielder who earned a move to Pumas UNAM in Liga MX after dazzling performances at Universitario. The future of Peruvian football.",
+      "playingStyle": "Dazzling playmaker with exceptional close control, creative vision, and the ability to produce moments of magic in the final third.",
+      "keyStrengths": ["Creativity", "Close control", "Through balls"],
+      "worldCup2026Role": "Rising star expected to play a significant role as Peru's creative hub, potentially starting in the number 10 role.",
+      "notableFact": "Considered the most talented Peruvian prospect in years, he has drawn comparisons to a young Christian Cueva for his creativity and flair."
+    },
+    "Joao Grimaldo": {
+      "bio": "Young winger who moved to Partizan Belgrade in Serbia from Sporting Cristal. A pacey and direct attacker with a bright future in Peruvian football.",
+      "playingStyle": "Quick and direct winger who loves to take on defenders, using his pace and skill to create chances from wide positions.",
+      "keyStrengths": ["Pace", "Directness", "One-on-one ability"],
+      "worldCup2026Role": "Exciting young wide option who can make an impact with his speed and directness off the bench.",
+      "notableFact": "Made the move to European football at a young age, joining Partizan Belgrade and gaining experience in the Serbian league and European competition."
+    },
+    "Franco Zanelatto": {
+      "bio": "Young and talented right winger from Alianza Lima who has quickly emerged as one of Peru's most promising young attackers. Quick, skillful, and fearless.",
+      "playingStyle": "Tricky young winger who relies on speed and technical ability to beat defenders, always looking to create chances with his dribbling.",
+      "keyStrengths": ["Dribbling", "Speed", "Youthful energy"],
+      "worldCup2026Role": "Young squad member gaining World Cup experience, capable of providing a spark as a late-game substitute.",
+      "notableFact": "One of the youngest players in Peru's squad, representing the next generation of Peruvian talent coming through the domestic league."
+    }
+  }
+}

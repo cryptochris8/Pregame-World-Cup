@@ -115,6 +115,8 @@ flutter:
     - assets/data/worldcup/match_summaries/
     - assets/data/worldcup/history/
     - assets/data/worldcup/player_stats/
+    - assets/data/worldcup/player_profiles/
+    - assets/data/worldcup/player_name_index.json
     - assets/data/worldcup/venues/
     # Enhanced AI analysis data
     - assets/data/worldcup/recent_form/

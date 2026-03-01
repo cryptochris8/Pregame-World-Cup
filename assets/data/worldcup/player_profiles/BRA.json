@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Alisson Becker": {
+      "bio": "One of the world's premier goalkeepers, Alisson transformed Liverpool's defense since his 2018 arrival from Roma. A Copa America 2019 Golden Glove winner, he is renowned for his composure, distribution, and decisive shot-stopping in the biggest moments.",
+      "playingStyle": "Modern sweeper-keeper with elite shot-stopping reflexes, exceptional distribution with both feet, and commanding presence in the box",
+      "keyStrengths": ["Shot-stopping reflexes", "Distribution and passing range", "Command of the penalty area"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and defensive leader; his experience in high-pressure knockout matches will be critical for Brazil's campaign",
+      "notableFact": "Scored a dramatic stoppage-time header against West Brom in 2021 to keep Liverpool's Champions League hopes alive, becoming only the sixth goalkeeper to score in Premier League history"
+    },
+    "Danilo Luiz": {
+      "bio": "A veteran defender who has played at the highest level with Real Madrid, Manchester City, and Juventus before returning to Brazil with Flamengo. His versatility across the backline and wealth of experience in European competition make him a trusted squad member.",
+      "playingStyle": "Versatile fullback comfortable on either flank, disciplined positionally with steady ball progression and reliable crossing ability",
+      "keyStrengths": ["Tactical versatility across defensive positions", "Big-match experience", "Calm and composed in possession"],
+      "worldCup2026Role": "Experienced backup fullback providing leadership and tactical flexibility; likely to feature in rotation or as a senior voice in the dressing room",
+      "notableFact": "Has won league titles in four different countries: Portugal (Porto), Spain (Real Madrid), England (Manchester City), and Italy (Juventus)"
+    },
+    "Thiago Silva": {
+      "bio": "One of the greatest center-backs of his generation, Thiago Silva has captained both Brazil and top European clubs including AC Milan, PSG, and Chelsea. At 41, his reading of the game remains extraordinary, and he continues to defy age with his elite positioning.",
+      "playingStyle": "Cerebral, positionally perfect center-back who relies on anticipation, timing of tackles, and aerial dominance rather than pace",
+      "keyStrengths": ["Positional intelligence", "Aerial dueling", "Leadership and composure under pressure"],
+      "worldCup2026Role": "Senior defensive leader and locker room figurehead; likely a rotation option or late-game closer given his age, but invaluable for mentoring younger defenders",
+      "notableFact": "Will be 41 years old during the 2026 World Cup, making him potentially one of the oldest outfield players in tournament history if he features"
+    },
+    "Marquinhos Aoás": {
+      "bio": "A pillar of PSG's defense for over a decade, Marquinhos combines elite defending with the ability to carry the ball into midfield. He has been a mainstay of the Brazilian national team and wears the armband when called upon.",
+      "playingStyle": "Ball-playing center-back with exceptional recovery pace, strong in the air, and capable of stepping into midfield to progress play",
+      "keyStrengths": ["Recovery speed", "Ball progression from deep", "Versatility to play CB or CDM"],
+      "worldCup2026Role": "Starting center-back and likely vice-captain; the defensive anchor around whom Brazil's backline will be organized",
+      "notableFact": "Has made over 400 appearances for PSG, making him one of the most capped foreign players in the club's history, winning over 25 trophies in Paris"
+    },
+    "Casemiro Henrique": {
+      "bio": "The midfield destroyer who anchored Real Madrid's five Champions League triumphs, Casemiro is one of the most decorated defensive midfielders in football history. His ability to break up play and shield the defense has been crucial for both club and country.",
+      "playingStyle": "Imposing defensive midfielder who excels at interceptions, tackling, and winning second balls, with an underrated ability to score from distance and set pieces",
+      "keyStrengths": ["Tackling and interceptions", "Positional awareness in the holding role", "Scoring ability from midfield"],
+      "worldCup2026Role": "Senior midfield presence providing experience and steel; likely to rotate with younger options but remains a key option for high-stakes knockout matches",
+      "notableFact": "Won five Champions League titles with Real Madrid, forming the legendary midfield trio with Toni Kroos and Luka Modric"
+    },
+    "Alex Sandro": {
+      "bio": "A dependable left-back who spent eight seasons at Juventus before returning to Brazilian football with Flamengo. Known for his defensive solidity and overlapping runs, he brings European experience and consistency to the squad.",
+      "playingStyle": "Traditional overlapping left-back with strong defensive instincts, good stamina for up-and-down runs, and reliable delivery from wide areas",
+      "keyStrengths": ["Defensive reliability", "Overlapping runs and crossing", "Experience at the highest level"],
+      "worldCup2026Role": "Experienced backup left-back option providing depth and squad stability behind the first-choice options",
+      "notableFact": "Won six consecutive Serie A titles with Juventus, forming part of one of Italian football's most dominant defensive units"
+    },
+    "Vinícius Júnior": {
+      "bio": "Brazil's most electrifying talent, Vinícius Jr. has established himself as one of the best players in the world at Real Madrid. The 2024 Ballon d'Or contender terrorizes defenders with his blistering pace, audacious dribbling, and match-winning ability in the biggest games.",
+      "playingStyle": "Explosive left winger who beats defenders with raw pace and 1v1 dribbling, increasingly clinical in front of goal and dangerous cutting inside onto his right foot",
+      "keyStrengths": ["Devastating pace and acceleration", "1v1 dribbling and skill", "Big-game mentality and decisive finishing"],
+      "worldCup2026Role": "The talisman and primary attacking threat; Brazil's entire attack will be built around getting Vinícius into dangerous positions on the left flank",
+      "notableFact": "Scored the winning goal in the 2022 Champions League final against Liverpool and has become the most feared winger in world football"
+    },
+    "Lucas Paquetá": {
+      "bio": "A technically gifted attacking midfielder who rose through Flamengo's academy before starring in Europe with AC Milan, Lyon, and West Ham. His flair, creativity, and ability to score spectacular goals make him a key creative outlet for the Seleção.",
+      "playingStyle": "Flamboyant attacking midfielder with silky close control, excellent vision for through balls, and a penchant for acrobatic goals and flicks",
+      "keyStrengths": ["Technical ability and close control", "Creative passing and vision", "Versatility across midfield and attacking roles"],
+      "worldCup2026Role": "Starting attacking midfielder or advanced number 8; the creative link between midfield and attack, responsible for unlocking tight defenses",
+      "notableFact": "Known for his signature celebration dance and was named Lyon's Player of the Year before his move to the Premier League"
+    },
+    "Richarlison de Andrade": {
+      "bio": "A tireless and combative striker who has become a fan favorite for both club and country through his passion, work rate, and knack for scoring in important matches. His acrobatic scissor-kick brace against Serbia at the 2022 World Cup was one of the tournament's defining moments.",
+      "playingStyle": "Hard-working, physical striker who combines aerial presence with clever movement, relentless pressing, and clinical finishing inside the box",
+      "keyStrengths": ["Aerial ability and heading", "Work rate and pressing intensity", "Scoring in big tournaments"],
+      "worldCup2026Role": "Starting center-forward or impactful substitute; his physicality and aerial threat provide a different dimension to Brazil's attack",
+      "notableFact": "His stunning overhead bicycle kick against Serbia at Qatar 2022 was voted the best goal of the tournament"
+    },
+    "Rodrygo Goes": {
+      "bio": "A silky, versatile attacker who has been a key part of Real Madrid's Champions League success, Rodrygo is known for his composure in front of goal and ability to deliver in clutch moments. His technical elegance and intelligence make him one of Brazil's most refined forwards.",
+      "playingStyle": "Technically refined forward comfortable across the front line, with excellent movement between the lines, composure in the final third, and clinical finishing",
+      "keyStrengths": ["Composure and finishing quality", "Intelligent off-the-ball movement", "Versatility across all forward positions"],
+      "worldCup2026Role": "Starting right winger or versatile attacking option who can play across the front three; a key figure in Brazil's rotational attacking system",
+      "notableFact": "Scored twice in stoppage time against Manchester City in the 2022 Champions League semifinal to force extra time, cementing his reputation as a clutch performer"
+    },
+    "Raphinha Dias": {
+      "bio": "A dynamic winger who has thrived at Barcelona after impressive spells at Leeds United and Sporting CP. Raphinha combines Brazilian flair with relentless work rate, and his direct running and set-piece delivery make him a constant threat from the right flank.",
+      "playingStyle": "Direct, high-energy winger who cuts inside from the right onto his stronger left foot, excellent at set pieces and capable of scoring spectacular long-range goals",
+      "keyStrengths": ["Set-piece delivery and free kicks", "Cutting inside and shooting", "Work rate and defensive contribution"],
+      "worldCup2026Role": "Key attacking rotation option on the right wing, competing for a starting spot; his set-piece ability adds a valuable dimension to Brazil's attack",
+      "notableFact": "Won the Copa America 2024 Golden Boot and has become one of Barcelona's most important attacking players since his arrival"
+    },
+    "Ederson Moraes": {
+      "bio": "One of the most ball-skilled goalkeepers in football history, Ederson redefined the sweeper-keeper role during his years at Manchester City under Pep Guardiola. His distribution is so extraordinary that he has been compared to an outfield player in goal.",
+      "playingStyle": "Ultra-modern sweeper-keeper with arguably the best distribution of any goalkeeper in world football, comfortable playing as an extra defender with the ball at his feet",
+      "keyStrengths": ["Unmatched distribution and passing range", "Sweeping behind a high defensive line", "Composure under pressure in possession"],
+      "worldCup2026Role": "Elite backup goalkeeper who pushes Alisson for the starting spot; could feature if Brazil adopts a more possession-dominant approach requiring goalkeeper distribution",
+      "notableFact": "Has recorded multiple assists from goal kicks during his career, and his ability to launch pinpoint passes over 70 yards is considered unique among goalkeepers"
+    },
+    "Éder Militão": {
+      "bio": "A powerful and athletic center-back who has been a cornerstone of Real Madrid's defense. Militão combines physical dominance with surprising technical quality on the ball, making him ideally suited to modern, high-pressing defensive systems.",
+      "playingStyle": "Physically imposing center-back with explosive pace for recovery runs, strong in the air, and comfortable driving forward with the ball",
+      "keyStrengths": ["Physical power and aerial dominance", "Recovery pace", "Ball-carrying ability from defense"],
+      "worldCup2026Role": "Starting center-back partner to Marquinhos; his athleticism and big-game experience at Real Madrid make him a natural choice for the first-choice defensive pairing",
+      "notableFact": "Made the jump directly from Porto to Real Madrid in 2019 for 50 million euros and has since become an indispensable part of their defense"
+    },
+    "Bruno Guimarães": {
+      "bio": "A box-to-box midfielder who has emerged as one of the Premier League's finest since joining Newcastle United from Lyon. Bruno's ability to control the tempo, win the ball back, and drive forward with purpose has made him one of the most complete midfielders in world football.",
+      "playingStyle": "Complete box-to-box midfielder who dictates tempo, wins possession through intelligent pressing, and surges forward with driving runs and incisive passing",
+      "keyStrengths": ["Press resistance and ball retention", "Box-to-box energy and running", "Progressive passing and chance creation from deep"],
+      "worldCup2026Role": "Starting central midfielder and the engine of Brazil's midfield; expected to be the primary ball-carrier and tempo-setter alongside a more defensive partner",
+      "notableFact": "Was named Newcastle United's Player of the Year and has been consistently linked with moves to the world's biggest clubs due to his transformative impact"
+    },
+    "Guilherme Arana": {
+      "bio": "A dynamic left-back who earned his breakthrough with Atlético Mineiro, Arana was instrumental in Brazil's Olympic gold medal at Tokyo 2020. His attacking instincts and delivery from wide areas make him a threat going forward.",
+      "playingStyle": "Attack-minded left-back with excellent crossing ability, good pace to get up and down the flank, and a willingness to overlap and join the attack",
+      "keyStrengths": ["Crossing and delivery from wide areas", "Attacking overlapping runs", "Olympic-level big-game experience"],
+      "worldCup2026Role": "Backup left-back option providing offensive thrust; a useful option when Brazil needs attacking width and delivery from the left side",
+      "notableFact": "Scored a stunning goal in the Tokyo 2020 Olympics semifinal and was a key player in Brazil's gold medal triumph"
+    },
+    "Wendell Nascimento": {
+      "bio": "A veteran left-back who spent the prime of his career at Bayer Leverkusen in the Bundesliga before returning to Brazil with São Paulo. His experience in European football and defensive reliability make him a steady squad option.",
+      "playingStyle": "Defensively disciplined left-back with good positional sense, solid tackling, and the ability to provide width without neglecting his defensive responsibilities",
+      "keyStrengths": ["Defensive discipline", "Positional awareness", "European experience and professionalism"],
+      "worldCup2026Role": "Third-choice left-back providing experienced depth; a reliable defensive option if Brazil needs to protect a lead",
+      "notableFact": "Spent seven years at Bayer Leverkusen in the Bundesliga, making over 200 appearances and becoming one of the most consistent Brazilian exports in German football"
+    },
+    "Endrick Felipe": {
+      "bio": "The most hyped Brazilian teenager since Neymar, Endrick made history as the youngest player to score for Real Madrid in La Liga. His explosive finishing, fearless mentality, and raw talent have drawn comparisons to Ronaldo Nazário, and he represents the future of Brazilian football.",
+      "playingStyle": "Explosive young striker with devastating finishing ability, powerful left foot, surprising strength for his age, and an instinct for finding space in the penalty area",
+      "keyStrengths": ["Clinical finishing with either foot", "Explosive acceleration and power", "Fearless mentality beyond his years"],
+      "worldCup2026Role": "High-impact substitute and future star; his ability to change games off the bench with explosive pace and finishing makes him a lethal weapon in the later stages of matches",
+      "notableFact": "Became Real Madrid's youngest ever scorer in La Liga at 17, and was signed by the club for a reported 72 million euros while still at Palmeiras at age 16"
+    },
+    "Gabriel Jesus": {
+      "bio": "A versatile and intelligent forward whose movement, pressing, and link-up play have made him a key player for both Manchester City and Arsenal. Jesus combines Brazilian technical flair with a tireless work ethic that endears him to every manager he plays under.",
+      "playingStyle": "Mobile, intelligent striker who excels at pressing from the front, linking play with midfield, and creating space for teammates through clever off-the-ball movement",
+      "keyStrengths": ["Intelligent movement and pressing", "Link-up play and combination passing", "Versatility across the front line"],
+      "worldCup2026Role": "Versatile forward rotation option who can play center-forward or wide; his experience and tactical intelligence make him valuable for specific tactical setups",
+      "notableFact": "Won four Premier League titles with Manchester City and scored 95 goals for the club, playing a crucial role in Pep Guardiola's system"
+    },
+    "Gabriel Magalhães": {
+      "bio": "A commanding left-footed center-back who has become a cornerstone of Arsenal's resurgent defense. Gabriel's aerial dominance, composure on the ball, and ability to score from set pieces have made him one of the Premier League's most complete defenders.",
+      "playingStyle": "Dominant left-footed center-back with outstanding aerial ability, strong in the tackle, and comfortable building play from the back with progressive passing",
+      "keyStrengths": ["Aerial dominance on both ends of the pitch", "Left-footed ball progression", "Set-piece threat from corners and free kicks"],
+      "worldCup2026Role": "Key defensive rotation option providing left-footed balance to the center-back pairing; a strong candidate to start alongside Marquinhos if a left-footer is preferred",
+      "notableFact": "Has scored more Premier League goals from set pieces than almost any other defender since joining Arsenal, becoming a genuine aerial weapon"
+    },
+    "Antony Santos": {
+      "bio": "A tricky winger known for his signature skill moves and flair, Antony rose through São Paulo's academy before impressing at Ajax under Erik ten Hag. Though his time at Manchester United was challenging, he continues to be valued for his unpredictability and one-on-one ability.",
+      "playingStyle": "Skillful inverted winger who loves to cut inside from the right, uses tricks and feints to beat defenders, and has an eye for spectacular goals",
+      "keyStrengths": ["1v1 dribbling and skill moves", "Ability to beat defenders on either side", "Creativity and unpredictability"],
+      "worldCup2026Role": "Attacking depth option on the right wing; his flair and ability to unlock defenses with individual brilliance could prove valuable as a substitute in tight games",
+      "notableFact": "His signature spin move, where he does a full 360-degree turn with the ball, has become one of the most iconic skill moves in modern football"
+    },
+    "Yan Couto": {
+      "bio": "A dynamic young right-back who developed through Manchester City's system before establishing himself as one of the Bundesliga's best fullbacks at Borussia Dortmund. His attacking quality and delivery from wide areas have drawn attention from top clubs across Europe.",
+      "playingStyle": "Attack-oriented modern fullback with exceptional crossing ability, quick feet in tight spaces, and the energy to bomb forward and recover defensively",
+      "keyStrengths": ["Crossing and final-third delivery", "Offensive overlapping runs", "Technical quality in tight spaces"],
+      "worldCup2026Role": "Dynamic right-back option who offers a more attacking alternative; likely to feature when Brazil needs offensive width and delivery from the right flank",
+      "notableFact": "Was part of the Brazil squad that won the 2019 FIFA U-17 World Cup, where he was recognized as one of the tournament's standout defenders"
+    },
+    "Bento Krepski": {
+      "bio": "A rising goalkeeper from Athletico Paranaense who has earned his place in Brazil's squad through consistent performances in Brazilian football. His shot-stopping ability and composure have marked him as one of the brightest young goalkeeping talents in South America.",
+      "playingStyle": "Agile, reflexive goalkeeper with excellent shot-stopping, good command of his area, and developing distribution skills",
+      "keyStrengths": ["Shot-stopping reflexes", "Agility and reaction saves", "Composure in high-pressure situations"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable tournament experience; represents the future of Brazilian goalkeeping and benefits from training alongside Alisson and Ederson",
+      "notableFact": "Has been a standout performer in the Copa Sudamericana and Brazilian Serie A, earning international recognition as one of South America's most promising young goalkeepers"
+    },
+    "João Gomes": {
+      "bio": "An energetic and combative midfielder who burst onto the scene at Flamengo before moving to Wolverhampton Wanderers in the Premier League. His tenacity, ball-winning ability, and box-to-box dynamism have quickly made him a key player in both the Premier League and for Brazil.",
+      "playingStyle": "High-energy box-to-box midfielder who combines aggressive ball-winning with smart positional play and an improving ability to contribute in the final third",
+      "keyStrengths": ["Ball-winning and tackling intensity", "Box-to-box energy and stamina", "Quick transitions from defense to attack"],
+      "worldCup2026Role": "Midfield rotation option providing energy and defensive solidity; ideal for late substitutions when Brazil needs to protect a lead or inject fresh legs",
+      "notableFact": "Was the youngest player to start a Copa Libertadores knockout match for Flamengo, showcasing the fearless mentality that has defined his rapid rise"
+    },
+    "Bremer Silva": {
+      "bio": "A powerful and imposing center-back who established himself at Torino before earning a big move to Juventus. Born in Brazil but having developed his career in Italy, Bremer combines South American physicality with Italian defensive education.",
+      "playingStyle": "Physically dominant center-back who excels in one-on-one duels, strong in the air, and aggressive in his marking with excellent recovery pace",
+      "keyStrengths": ["Physical strength in duels", "Aerial dominance", "Aggressive marking and recovery pace"],
+      "worldCup2026Role": "Defensive depth option who provides physicality and aerial presence; a valuable option for matches where Brazil faces direct, physical opposition",
+      "notableFact": "Was named Serie A's best defender at Torino before his move to Juventus, beating out players from far bigger clubs through sheer individual quality"
+    },
+    "Pedro Guilherme": {
+      "bio": "A clinical striker who has been a prolific goal scorer for Flamengo, winning multiple titles and finishing as top scorer in the Copa Libertadores. Pedro's movement inside the box and natural finishing instinct make him a pure goalscoring center-forward.",
+      "playingStyle": "Traditional penalty-box striker with outstanding movement, clinical finishing, and an instinctive ability to find space and score in crowded areas",
+      "keyStrengths": ["Clinical finishing inside the box", "Intelligent movement and positioning", "Aerial ability and heading"],
+      "worldCup2026Role": "Backup center-forward providing a pure goalscoring option; ideal for late introductions when Brazil needs a goal and wants a focal point in the box",
+      "notableFact": "Was the Copa Libertadores top scorer for Flamengo and has been one of the most prolific strikers in Brazilian domestic football in recent years"
+    },
+    "Savinho Moura": {
+      "bio": "One of the most exciting young talents in world football, Savinho joined Manchester City after dazzling performances on loan at Girona that helped them qualify for the Champions League for the first time. His explosive dribbling, creativity, and fearlessness mark him as a future superstar.",
+      "playingStyle": "Electrifying young winger with explosive dribbling, quick feet, and the confidence to take on any defender; capable of playing on either flank and creating chances from nothing",
+      "keyStrengths": ["Explosive dribbling and acceleration", "Creativity and chance creation", "Fearlessness and confidence in 1v1 situations"],
+      "worldCup2026Role": "Exciting young attacking option who can change games off the bench with his directness and dribbling; a wildcard who could be unleashed against tiring defenses",
+      "notableFact": "Was instrumental in Girona's fairy-tale 2023-24 La Liga season where the tiny Catalan club qualified for the Champions League for the first time in their history"
+    }
+  }
+}

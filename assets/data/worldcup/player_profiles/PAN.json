@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Luis Mejía": {
+      "bio": "Panama's number one goalkeeper playing for Leganes in La Liga, making him one of the highest-profile Panamanian players in European football. With 30 caps, he brings top-flight experience.",
+      "playingStyle": "Tall, commanding goalkeeper with strong shot-stopping, good positioning, and the ability to handle La Liga-level pressure",
+      "keyStrengths": ["Shot-stopping", "Positioning", "La Liga experience"],
+      "worldCup2026Role": "Starting goalkeeper and one of the team's most valuable assets due to his La Liga pedigree",
+      "notableFact": "One of the few Panamanian players to play regularly in a top-five European league"
+    },
+    "Michael Murillo": {
+      "bio": "Experienced right-back at Anderlecht in Belgium's top flight with 55 caps and 2 goals. One of Panama's most well-traveled players, having played in MLS and multiple European leagues.",
+      "playingStyle": "Quick, athletic right-back who combines defensive strength with explosive attacking runs and dangerous crosses",
+      "keyStrengths": ["Pace", "Athleticism", "Attacking runs"],
+      "worldCup2026Role": "Starting right-back whose speed and European experience are vital to Panama's defensive and attacking plans",
+      "notableFact": "Represented Panama at the 2018 World Cup in Russia, making him one of the few players with previous World Cup experience"
+    },
+    "Harold Cummings": {
+      "bio": "Veteran center-back with 70 caps who is one of the most experienced players in the Panamanian squad. Currently playing in Guatemala, he brings years of international experience and leadership.",
+      "playingStyle": "Physical, experienced center-back who relies on positioning, aerial ability, and defensive organization",
+      "keyStrengths": ["Experience", "Aerial ability", "Defensive organization"],
+      "worldCup2026Role": "Senior defender providing leadership, organization, and experience in the heart of the defense",
+      "notableFact": "A veteran of Panama's historic first World Cup appearance in 2018 in Russia"
+    },
+    "Fidel Escobar": {
+      "bio": "Experienced center-back with 60 caps who is one of the pillars of Panama's defense. Playing domestically in the Liga Panamena, he has been a loyal servant of the national team.",
+      "playingStyle": "Tough, physical defender who excels in one-on-one situations and is a strong presence in aerial duels",
+      "keyStrengths": ["Physical toughness", "One-on-one defending", "Aerial duels"],
+      "worldCup2026Role": "Starting center-back and defensive cornerstone of the team",
+      "notableFact": "Was part of the Panama squad at the 2018 World Cup and has continued to be a key player through the 2026 qualifying cycle"
+    },
+    "Erick Davis": {
+      "bio": "Center-back with European experience at Slovan Bratislava in Slovakia's top division. With 30 caps, he brings a European defensive education to Panama's backline.",
+      "playingStyle": "Athletic, mobile defender who covers ground well and is comfortable stepping out of the defensive line to intercept",
+      "keyStrengths": ["Athleticism", "Interceptions", "Mobility"],
+      "worldCup2026Role": "Defensive option providing depth and European-level quality at center-back",
+      "notableFact": "One of two Davis players in the Panama squad, with Eric Davis at left-back being a separate player"
+    },
+    "Adalberto Carrasquilla": {
+      "bio": "Midfield maestro playing for Houston Dynamo in MLS with 40 caps and 3 goals. Widely considered the most talented midfielder in Panamanian football, he is the creative engine of the team.",
+      "playingStyle": "Technical, creative midfielder with excellent ball control, incisive passing, and the ability to see passes others cannot",
+      "keyStrengths": ["Technical ability", "Creative passing", "Ball control"],
+      "worldCup2026Role": "Starting central midfielder and chief playmaker who controls Panama's tempo and creates chances",
+      "notableFact": "Won the CONCACAF Gold Cup Best Young Player award, establishing himself as one of the region's top midfield talents"
+    },
+    "César Yanis": {
+      "bio": "Exciting young winger at Orlando City in MLS with 20 caps and 3 goals. One of Panama's most promising attackers whose pace and directness trouble any defense.",
+      "playingStyle": "Fast, direct winger who takes on defenders with confidence, delivers dangerous crosses, and cuts inside to shoot",
+      "keyStrengths": ["Pace", "Directness", "Crossing"],
+      "worldCup2026Role": "Starting or rotation winger whose speed and creativity are central to Panama's attacking threat",
+      "notableFact": "Has established himself as one of the most exciting Panamanian attackers of the new generation"
+    },
+    "Édgar Bárcenas": {
+      "bio": "Panama's most experienced attacker with 60 caps and 8 goals, playing for Girona in La Liga. His European pedigree makes him one of the most valuable players in the squad.",
+      "playingStyle": "Versatile, experienced winger who can play on either flank, with good technical ability and a keen eye for goal",
+      "keyStrengths": ["Versatility", "Goal scoring", "La Liga experience"],
+      "worldCup2026Role": "Key attacker whose La Liga experience and goal-scoring ability make him indispensable to Panama's World Cup campaign",
+      "notableFact": "Has been a consistent goal threat for Panama over many years and is one of the team's all-time top scorers among active players"
+    },
+    "Freddy Góndola": {
+      "bio": "Experienced left winger with 35 caps and 5 goals who has traveled the football world playing in various leagues. His pace and directness provide a different dimension to Panama's attack.",
+      "playingStyle": "Pacy, direct winger who uses speed to stretch defenses and create space for teammates",
+      "keyStrengths": ["Pace", "Directness", "Work rate"],
+      "worldCup2026Role": "Experienced wide option providing attacking depth and the ability to stretch defenses",
+      "notableFact": "Has played in multiple countries across the Americas, bringing diverse football experience to the national team"
+    },
+    "Yoel Bárcenas": {
+      "bio": "Skilled right winger at Leganes in La Liga with 30 caps and 3 goals. Part of the Panamanian contingent in Spanish football, he adds European quality to the attacking options.",
+      "playingStyle": "Technically gifted winger with good close control, creative dribbling, and the ability to provide assists and goals",
+      "keyStrengths": ["Technical skill", "Dribbling", "Creativity"],
+      "worldCup2026Role": "Key attacking player on the right wing, bringing La Liga quality and creativity to Panama's attack",
+      "notableFact": "Plays alongside goalkeeper Luis Mejia at Leganes, forming a Panamanian duo in La Liga"
+    },
+    "Cecilio Waterman": {
+      "bio": "Experienced striker with 25 caps and 8 goals who leads the line with physicality and predatory instincts. Playing domestically with Tauro, he is a proven goalscorer in Panamanian football.",
+      "playingStyle": "Physical, target-man striker who holds the ball up well, wins aerial duels, and finishes clinically inside the box",
+      "keyStrengths": ["Hold-up play", "Aerial ability", "Finishing"],
+      "worldCup2026Role": "Experienced striking option providing a physical presence and aerial threat in attack",
+      "notableFact": "Has been one of the most prolific scorers in the Liga Panamena across multiple seasons"
+    },
+    "Orlando Mosquera": {
+      "bio": "Goalkeeper playing for Millonarios in Colombia's top division with 15 caps for Panama. His experience in competitive South American football adds depth to the goalkeeping department.",
+      "playingStyle": "Athletic goalkeeper with good reflexes, strong handling, and experience in competitive South American football",
+      "keyStrengths": ["Reflexes", "Handling", "South American football experience"],
+      "worldCup2026Role": "Second-choice goalkeeper providing quality backup and competition",
+      "notableFact": "His experience playing for Millonarios in Colombia's Liga gives him exposure to a higher competitive level than most domestic-based keepers"
+    },
+    "Eric Davis": {
+      "bio": "Veteran left-back with 65 caps and 1 goal, one of the most experienced players in the entire Panamanian squad. Playing in Slovakia's top division, he has been a loyal servant of the national team.",
+      "playingStyle": "Experienced, dependable left-back who provides width, defensive solidity, and leadership from the back",
+      "keyStrengths": ["Experience", "Defensive reliability", "Leadership"],
+      "worldCup2026Role": "Starting left-back and one of the most experienced players on the team, providing leadership and stability",
+      "notableFact": "Was part of Panama's historic 2018 World Cup squad and remains a crucial figure in the team's defensive setup"
+    },
+    "José Fajardo": {
+      "bio": "Clinical striker at Cincinnati FC in MLS with 25 caps and 8 goals. His goalscoring record for both club and country makes him one of Panama's most dangerous attackers.",
+      "playingStyle": "Sharp, instinctive striker with excellent finishing, good movement in the box, and the ability to score from tight angles",
+      "keyStrengths": ["Finishing", "Movement", "Instinct"],
+      "worldCup2026Role": "Starting striker or key rotation option whose goal-scoring instincts are vital to Panama's chances",
+      "notableFact": "Has adapted well to MLS football and become one of the most reliable Panamanian goalscorers in the league"
+    },
+    "Aníbal Godoy": {
+      "bio": "Panama's most capped active player with an incredible 130 caps and 3 goals. The veteran defensive midfielder from Nashville SC is the anchor and heartbeat of the national team.",
+      "playingStyle": "Experienced, cerebral defensive midfielder who reads the game superbly, breaks up attacks, and distributes the ball with intelligence",
+      "keyStrengths": ["Game reading", "Defensive positioning", "Experience"],
+      "worldCup2026Role": "Veteran midfield anchor and spiritual leader whose 130 caps of experience are irreplaceable",
+      "notableFact": "With 130 caps, he is one of the most capped CONCACAF players of his generation and a true legend of Panamanian football"
+    },
+    "José Luis Rodríguez": {
+      "bio": "Experienced central midfielder at Club America in Liga MX with 45 caps and 2 goals. Playing in one of the strongest leagues in CONCACAF gives him high-level competitive experience.",
+      "playingStyle": "Combative, energetic midfielder who excels at winning the ball and distributing it to more creative players",
+      "keyStrengths": ["Ball-winning", "Energy", "Liga MX experience"],
+      "worldCup2026Role": "Key midfield option providing energy, defensive work, and the competitive edge from Liga MX",
+      "notableFact": "Playing for Club America, one of the biggest clubs in the Americas, gives him regular experience in high-pressure matches"
+    },
+    "José Murillo": {
+      "bio": "Young center-back at Minnesota United in MLS who is part of Panama's defensive future. At 26 with 10 caps, he is still developing but has shown strong potential.",
+      "playingStyle": "Athletic, modern center-back with good pace, strong marking ability, and comfort on the ball",
+      "keyStrengths": ["Pace for a center-back", "Marking", "Athleticism"],
+      "worldCup2026Role": "Young defensive option providing depth and fresh legs at center-back",
+      "notableFact": "Plays alongside New Zealand's Michael Boxall at Minnesota United, creating a World Cup connection at club level"
+    },
+    "José Guerra": {
+      "bio": "Young goalkeeper from Tauro in the Liga Panamena with 5 caps. He rounds out Panama's goalkeeping contingent and represents the future of Panamanian goalkeeping.",
+      "playingStyle": "Young, agile goalkeeper with good reflexes and developing command of his area",
+      "keyStrengths": ["Reflexes", "Agility", "Potential"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining World Cup experience for future tournaments",
+      "notableFact": "One of the youngest goalkeepers in any World Cup squad, his inclusion shows Panama's investment in developing young talent"
+    },
+    "Ismael Díaz": {
+      "bio": "Left winger with experience in Spanish football at AD Alcorcon in La Liga 2. With 20 caps and 2 goals, he brings European experience and technical quality to Panama's flanks.",
+      "playingStyle": "Tricky, skillful winger with good close control, creative dribbling, and the ability to create chances in tight spaces",
+      "keyStrengths": ["Close control", "Dribbling", "Spanish football experience"],
+      "worldCup2026Role": "Attacking rotation option who can change the game with his skill and creativity from the left side",
+      "notableFact": "Has been part of the growing Panamanian presence in Spanish football across multiple divisions"
+    },
+    "Jovani Welch": {
+      "bio": "Experienced center-back with 30 caps who plays domestically with Sporting San Jose. A reliable defender who has been a steady presence in the national team across multiple qualifying campaigns.",
+      "playingStyle": "Solid, physical center-back who competes hard in duels and provides experienced defensive cover",
+      "keyStrengths": ["Physical presence", "Defensive reliability", "Experience"],
+      "worldCup2026Role": "Backup center-back providing defensive depth and experience from the bench",
+      "notableFact": "Has been a consistent performer for Panama across multiple Gold Cup and World Cup qualifying campaigns"
+    },
+    "Jair Catuy": {
+      "bio": "Young central midfielder from Alianza in the Liga Panamena, one of the youngest players in Panama's squad. With 5 caps, he represents the emerging generation of Panamanian midfield talent.",
+      "playingStyle": "Energetic, young midfielder with good ball skills, composure on the ball, and growing tactical awareness",
+      "keyStrengths": ["Energy", "Ball skills", "Youth"],
+      "worldCup2026Role": "Young midfield option providing fresh energy and development opportunity in the World Cup squad",
+      "notableFact": "One of the youngest members of the squad, his inclusion shows Panama's commitment to building for the future"
+    },
+    "Rolando Blackburn": {
+      "bio": "Veteran striker with 30 caps and 5 goals, playing for Lechia Gdansk in Poland's Ekstraklasa. His experience in European football adds depth and variety to Panama's forward line.",
+      "playingStyle": "Strong, physical striker who combines hold-up play with aerial ability and a willingness to run the channels",
+      "keyStrengths": ["Hold-up play", "Aerial ability", "European experience"],
+      "worldCup2026Role": "Experienced forward option who can provide a physical presence and aerial threat off the bench",
+      "notableFact": "Has built a career across multiple European countries, becoming one of Panama's most well-traveled players"
+    },
+    "Abdiel Ayarza": {
+      "bio": "Central midfielder with 25 caps and 2 goals who plays for Tauro in the Liga Panamena. A reliable, hard-working presence in the midfield who has been a steady contributor to the national team.",
+      "playingStyle": "Industrious, box-to-box midfielder who covers ground effectively and contributes in both defensive and attacking phases",
+      "keyStrengths": ["Work rate", "Box-to-box energy", "Reliability"],
+      "worldCup2026Role": "Midfield depth option providing energy and defensive cover when the team needs fresh legs",
+      "notableFact": "A Tauro stalwart who has been one of the most consistent performers in Panamanian domestic football"
+    },
+    "Eduardo Anderson": {
+      "bio": "Young right-back from Sporting San Jose in the Liga Panamena with 8 caps. One of the youngest defenders in the squad, he is gaining international experience rapidly.",
+      "playingStyle": "Young, developing right-back who is quick, eager to learn, and improving his defensive and attacking contributions",
+      "keyStrengths": ["Pace", "Youth", "Eagerness to learn"],
+      "worldCup2026Role": "Young backup right-back gaining experience and providing squad depth in defensive positions",
+      "notableFact": "One of the youngest defenders to be called up to the Panamanian national team in recent years"
+    },
+    "Ivan Anderson": {
+      "bio": "Right-back at Real Oviedo in Spain's La Liga 2 with 15 caps. His experience in Spanish football makes him a valuable defensive option with European tactical awareness.",
+      "playingStyle": "Tactically astute right-back who has absorbed Spanish defensive principles and combines positional play with overlapping runs",
+      "keyStrengths": ["Tactical awareness", "Spanish football education", "Defensive positioning"],
+      "worldCup2026Role": "Versatile right-back option who can compete for the starting position or provide quality backup",
+      "notableFact": "Part of the Panamanian contingent in Spanish football, gaining experience in one of the world's most tactically demanding football cultures"
+    },
+    "Jezreel Corrales": {
+      "bio": "Young left-back from Tauro in the Liga Panamena with 5 caps. A natural left-footer who provides backup at left-back and represents Panama's defensive future.",
+      "playingStyle": "Attacking left-back with good crossing ability, pace, and a natural left foot for delivery",
+      "keyStrengths": ["Left-foot delivery", "Pace", "Attacking instinct"],
+      "worldCup2026Role": "Backup left-back providing youth and a left-footed option behind Eric Davis",
+      "notableFact": "One of the youngest players in the squad, he has the opportunity to develop into Panama's long-term left-back solution"
+    }
+  }
+}

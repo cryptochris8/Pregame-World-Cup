@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Bart Verbruggen": {
+      "bio": "Young Dutch goalkeeper who has rapidly risen to become the Netherlands' first-choice keeper at Brighton in the Premier League. At just 23, he represents the future of Dutch goalkeeping.",
+      "playingStyle": "Athletic, modern goalkeeper with excellent shot-stopping, quick reflexes, and the ability to play out from the back in the Dutch tradition.",
+      "keyStrengths": ["Shot-stopping", "Reflexes", "Distribution"],
+      "worldCup2026Role": "Starting goalkeeper, expected to hold the number one spot throughout the tournament.",
+      "notableFact": "Became the youngest Dutch goalkeeper to start at a major tournament in the modern era when he debuted at Euro 2024."
+    },
+    "Lutsharel Geertruida": {
+      "bio": "Versatile defender who developed at Feyenoord before earning a move to RB Leipzig in the Bundesliga. Capable of playing right-back or center-back with equal composure.",
+      "playingStyle": "Intelligent, composed defender who reads the game well, makes timely interceptions, and contributes to build-up play with clean passing.",
+      "keyStrengths": ["Versatility", "Tactical intelligence", "Passing accuracy"],
+      "worldCup2026Role": "Utility defender who provides cover at right-back and center-back, offering tactical flexibility to the coaching staff.",
+      "notableFact": "Was a key player in Feyenoord's 2022-23 Eredivisie title win, their first league championship in six years."
+    },
+    "Matthijs de Ligt": {
+      "bio": "Former Ajax wonderkid who captained the club to a Champions League semifinal at age 19. Has since played for Juventus and Bayern Munich before joining Manchester United.",
+      "playingStyle": "Powerful, commanding center-back with excellent aerial ability, strong tackling, and the confidence to play out from the back.",
+      "keyStrengths": ["Aerial dominance", "Tackling", "Leadership"],
+      "worldCup2026Role": "Starting center-back alongside Van Dijk, forming the experienced core of the Dutch defense.",
+      "notableFact": "Became the youngest captain to lead a team in a Champions League semifinal when he captained Ajax at age 19 in 2019."
+    },
+    "Virgil van Dijk": {
+      "bio": "Liverpool's colossus and widely regarded as one of the best center-backs in football history. The Dutch captain who transformed Liverpool into Champions League winners and has been a rock for the Netherlands.",
+      "playingStyle": "Dominant, elegant center-back who combines physical superiority with composure on the ball, rarely beaten in one-on-one situations.",
+      "keyStrengths": ["Aerial dominance", "Reading of the game", "Composure under pressure"],
+      "worldCup2026Role": "Captain and defensive leader, the most important player in the Dutch backline and the emotional heart of the team.",
+      "notableFact": "Went over two years without being dribbled past in the Premier League, an almost supernatural defensive record."
+    },
+    "Nathan Aké": {
+      "bio": "Reliable left-footed center-back who has been a consistent performer at Manchester City, winning multiple Premier League titles. A Netherlands regular who brings calm and quality.",
+      "playingStyle": "Left-footed center-back with clean passing, good recovery pace, and the ability to step into midfield to create overloads in possession.",
+      "keyStrengths": ["Left-footed distribution", "Recovery pace", "Positional discipline"],
+      "worldCup2026Role": "Versatile defensive option who can play center-back or left-back, providing tactical flexibility and Premier League pedigree.",
+      "notableFact": "Has won multiple Premier League titles at Manchester City, making him one of the most decorated Dutch defenders of his generation."
+    },
+    "Stefan de Vrij": {
+      "bio": "Experienced center-back and veteran of Serie A who has been a stalwart at Inter Milan for years. A defensive tactician with over 65 caps and multiple major tournament appearances.",
+      "playingStyle": "Intelligent, positionally astute center-back who excels in a three-man defense, strong in the air and excellent at reading attacking movements.",
+      "keyStrengths": ["Positional awareness", "Aerial ability", "Experience in three-man defense"],
+      "worldCup2026Role": "Experienced backup center-back who can slot into various defensive systems and provide veteran calm in high-pressure moments.",
+      "notableFact": "Has played in more than 300 Serie A matches across spells at Lazio and Inter Milan, one of the most experienced Dutch players in Italian football."
+    },
+    "Xavi Simons": {
+      "bio": "Dazzling young attacking talent who grew up in Barcelona's La Masia academy before forging his path through PSG and RB Leipzig, now starring at Tottenham. One of the most exciting young players in world football.",
+      "playingStyle": "Creative, explosive attacking midfielder with flair, quick dribbling, powerful shooting, and the confidence to take on any defender.",
+      "keyStrengths": ["Dribbling", "Shooting power", "Creative vision"],
+      "worldCup2026Role": "Starting attacking midfielder and creative hub, expected to be the Netherlands' most dangerous attacking threat and potential breakout star.",
+      "notableFact": "Went viral as a youth player at Barcelona with millions of social media followers before even turning professional."
+    },
+    "Georginio Wijnaldum": {
+      "bio": "Seasoned Dutch midfielder who was instrumental in Liverpool's Champions League triumph in 2019, including a memorable brace against Barcelona in the semifinal. A veteran with nearly 100 caps.",
+      "playingStyle": "Versatile, box-to-box midfielder who arrives late in the box to score, combines hard work with technical quality and big-game temperament.",
+      "keyStrengths": ["Late runs into the box", "Big-game mentality", "Stamina"],
+      "worldCup2026Role": "Experienced squad member bringing major tournament and Champions League pedigree, valuable for his leadership off the pitch.",
+      "notableFact": "Scored two goals in 10 minutes off the bench against Barcelona in Liverpool's legendary 4-0 Champions League semifinal comeback in 2019."
+    },
+    "Wout Weghorst": {
+      "bio": "Towering target man who has become a cult hero for the Netherlands with crucial World Cup goals. A traditional center-forward whose aerial ability and work rate make him invaluable as a plan B.",
+      "playingStyle": "Physical, old-school target striker who dominates in the air, works tirelessly to hold up play, and creates chances for teammates through sheer presence.",
+      "keyStrengths": ["Aerial threat", "Hold-up play", "Work rate"],
+      "worldCup2026Role": "Impact substitute and Plan B striker who can change games when the Netherlands need a physical presence up front.",
+      "notableFact": "Scored two goals as a substitute against Argentina in the 2022 World Cup quarterfinal, including a dramatic last-minute equalizer."
+    },
+    "Memphis Depay": {
+      "bio": "Flamboyant Dutch forward with a storied career across Manchester United, Lyon, Barcelona, and Atletico Madrid. The Netherlands' second all-time top scorer with 46 goals in 95 caps.",
+      "playingStyle": "Skilful, powerful forward who can play as a striker or on the wing, combining flair, creativity, and a deadly left foot with a showman's personality.",
+      "keyStrengths": ["Left-foot finishing", "Creativity", "Free-kick ability"],
+      "worldCup2026Role": "Experienced attacking option who can start or come off the bench, bringing goal-scoring pedigree and big-game experience.",
+      "notableFact": "Is the Netherlands' second-highest all-time goalscorer behind only Robin van Persie, surpassing legends like Dennis Bergkamp and Patrick Kluivert."
+    },
+    "Cody Gakpo": {
+      "bio": "Dynamic Liverpool forward who burst onto the world stage at the 2022 World Cup by scoring in three consecutive group-stage matches. Has become a key player at Anfield with his directness and goal threat.",
+      "playingStyle": "Tall, athletic winger who combines pace with power, dangerous cutting inside from the left onto his stronger right foot, a goal threat from wide areas.",
+      "keyStrengths": ["Pace and power", "Cutting inside to shoot", "Goal-scoring from wide positions"],
+      "worldCup2026Role": "Starting left winger and one of the primary goal threats, expected to replicate his 2022 World Cup heroics.",
+      "notableFact": "Scored in all three group-stage matches at the 2022 World Cup, becoming the joint top scorer of the group stage."
+    },
+    "Justin Bijlow": {
+      "bio": "Feyenoord's talented goalkeeper who has battled injuries throughout his career but remains one of the most naturally gifted Dutch keepers. Provides strong competition in the goalkeeper group.",
+      "playingStyle": "Agile goalkeeper with excellent reflexes and good footwork, comfortable in a high defensive line and with distribution.",
+      "keyStrengths": ["Reflexes", "Agility", "Footwork"],
+      "worldCup2026Role": "Second-choice goalkeeper providing quality competition and backup behind Verbruggen.",
+      "notableFact": "Was Feyenoord's number one goalkeeper during their Conference League run and Eredivisie title triumph despite recurring injury setbacks."
+    },
+    "Jeremie Frimpong": {
+      "bio": "Blistering fast wing-back who was instrumental in Bayer Leverkusen's historic unbeaten Bundesliga title in 2023-24. Born in the Netherlands to Ghanaian parents, he chose to represent the Dutch national team.",
+      "playingStyle": "Explosive, attack-minded right wing-back with searing pace, relentless energy, and a knack for arriving in dangerous positions.",
+      "keyStrengths": ["Explosive pace", "Attacking runs", "Goal contributions"],
+      "worldCup2026Role": "Dynamic right-back or wing-back option whose pace and attacking threat can be devastating in transition.",
+      "notableFact": "Was a key player in Leverkusen's historic unbeaten season in 2023-24, contributing double-digit goal involvements from right-back."
+    },
+    "Tijjani Reijnders": {
+      "bio": "Elegant midfielder who has become a star at AC Milan and rapidly established himself as a key player for the Netherlands. A late bloomer who came through AZ Alkmaar before his breakout in Serie A.",
+      "playingStyle": "Smooth, technically gifted midfielder who glides past opponents, combines excellent dribbling with intelligent positioning and progressive passing.",
+      "keyStrengths": ["Dribbling in midfield", "Progressive passing", "Composure on the ball"],
+      "worldCup2026Role": "Starting central midfielder who will dictate tempo and provide the creative link between defense and attack.",
+      "notableFact": "Went from playing in the Eredivisie with AZ to becoming one of Serie A's best midfielders within a single season at AC Milan."
+    },
+    "Micky van de Ven": {
+      "bio": "Rapid, ball-carrying center-back who has become a sensation at Tottenham with his extraordinary pace and willingness to surge forward from defense. One of the fastest defenders in world football.",
+      "playingStyle": "Ultra-fast, aggressive center-back who carries the ball out of defense at blistering speed and excels in recovery challenges thanks to exceptional pace.",
+      "keyStrengths": ["Recovery pace", "Ball-carrying from defense", "Aggressive defending"],
+      "worldCup2026Role": "Exciting young center-back option whose pace and ball-carrying ability offer a unique weapon when the team needs to transition quickly.",
+      "notableFact": "Clocked one of the fastest sprint speeds ever recorded by a center-back in the Premier League, outpacing most attackers."
+    },
+    "Quinten Timber": {
+      "bio": "Twin brother of Jurrien Timber, Quinten has carved his own path as a midfielder at Feyenoord. A technically sound player who is building his international career alongside his brother.",
+      "playingStyle": "Industrious, two-footed midfielder who covers ground efficiently, wins the ball back quickly, and keeps possession moving with simple, effective passing.",
+      "keyStrengths": ["Work rate", "Ball recovery", "Passing efficiency"],
+      "worldCup2026Role": "Midfield squad depth player who can provide energy and pressing intensity when called upon.",
+      "notableFact": "Is the twin brother of teammate Jurrien Timber; the pair could become one of the few sets of twins to play together at a World Cup."
+    },
+    "Mats Wieffer": {
+      "bio": "Composed defensive midfielder who established himself at Feyenoord during their Eredivisie title-winning campaign before earning a Premier League move to Brighton.",
+      "playingStyle": "Disciplined, intelligent holding midfielder who shields the defense with excellent positioning, clean tackles, and efficient passing under pressure.",
+      "keyStrengths": ["Positional discipline", "Tackling", "Passing under pressure"],
+      "worldCup2026Role": "Defensive midfield option who provides solidity and balance, capable of starting or coming off the bench to protect a lead.",
+      "notableFact": "Played a key role in Feyenoord's 2022-23 league title and was named in the Eredivisie Team of the Year before his Premier League transfer."
+    },
+    "Donyell Malen": {
+      "bio": "Speedy, clinical forward who has impressed in the Bundesliga with Borussia Dortmund and the Premier League at Aston Villa. A versatile attacker comfortable playing wide or through the middle.",
+      "playingStyle": "Quick, direct attacker who makes runs behind the defensive line, finishes with composure, and can play across all forward positions.",
+      "keyStrengths": ["Pace", "Clinical finishing", "Versatility across the front line"],
+      "worldCup2026Role": "Versatile attacking option who can play on either wing or as a striker, providing speed and goals off the bench or as a starter.",
+      "notableFact": "Progressed through Arsenal's academy and PSV before becoming one of the Bundesliga's most prolific forwards at Borussia Dortmund."
+    },
+    "Ian Maatsen": {
+      "bio": "Young left-back who made his name during a stellar loan spell at Borussia Dortmund, helping them reach the 2024 Champions League final, before joining Aston Villa permanently.",
+      "playingStyle": "Attack-minded left-back with energy, speed, and the willingness to get forward and deliver dangerous crosses into the box.",
+      "keyStrengths": ["Attacking overlaps", "Pace", "Crossing"],
+      "worldCup2026Role": "Starting or rotation left-back who brings youthful energy and attacking intent to the Dutch flanks.",
+      "notableFact": "Was a key player in Dortmund's run to the 2024 Champions League final during his loan spell, earning his permanent transfer to the Premier League."
+    },
+    "Teun Koopmeiners": {
+      "bio": "Powerful midfielder who was the driving force behind Atalanta's historic Europa League triumph in 2024 before earning a move to Juventus. Known for his goals from midfield and penalty expertise.",
+      "playingStyle": "Dynamic, goal-scoring midfielder who combines physicality with technique, dangerous from set pieces and long range, with excellent penalty-taking ability.",
+      "keyStrengths": ["Goals from midfield", "Set pieces", "Penalty taking"],
+      "worldCup2026Role": "Key midfield option who provides goal threat and set-piece quality, capable of starting or impacting games off the bench.",
+      "notableFact": "Scored the opening goal in Atalanta's Europa League final victory over Bayer Leverkusen in 2024, ending Leverkusen's unbeaten run."
+    },
+    "Frenkie de Jong": {
+      "bio": "One of the most gifted midfielders of his generation, famous for his extraordinary ability to carry the ball from deep and evade pressure. A Barcelona star who has battled injury setbacks but remains world-class when fit.",
+      "playingStyle": "Exceptional ball-carrier who glides past pressing opponents with elegant dribbling, combines deep-lying playmaking with progressive runs through midfield.",
+      "keyStrengths": ["Ball-carrying under pressure", "Progressive dribbling", "Positional versatility"],
+      "worldCup2026Role": "Starting central midfielder and the heartbeat of the Netherlands' possession game, the player who makes the team tick when fit.",
+      "notableFact": "Was the subject of one of the most expensive transfers in football history when Barcelona signed him from Ajax for 86 million euros."
+    },
+    "Denzel Dumfries": {
+      "bio": "Powerful right wing-back who has been a consistent performer at Inter Milan and a key player for the Netherlands at major tournaments. A physically dominant presence on the right flank.",
+      "playingStyle": "Athletic, powerful wing-back who bombs forward with intensity, delivers dangerous crosses, and provides a goal threat with his heading ability.",
+      "keyStrengths": ["Crossing", "Physical power", "Aerial threat at both ends"],
+      "worldCup2026Role": "Starting right wing-back in a back three or right-back option, a proven international performer at major tournaments.",
+      "notableFact": "Scored crucial goals at both Euro 2020 and the 2022 World Cup, establishing himself as one of the most prolific scoring defenders in Dutch history."
+    },
+    "Mark Flekken": {
+      "bio": "Experienced goalkeeper who has established himself in the Premier League with Brentford after years of development in the Bundesliga with Freiburg. A late addition to the international setup.",
+      "playingStyle": "Commanding goalkeeper with a strong physical presence, good handling, and experience dealing with crosses in the physical Premier League.",
+      "keyStrengths": ["Handling", "Physical presence", "Cross claiming"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced depth in the squad.",
+      "notableFact": "Spent a decade developing in the German lower divisions and Bundesliga before finally earning his Premier League move and international recognition."
+    },
+    "Jurrien Timber": {
+      "bio": "Versatile young defender who can play center-back or right-back with equal quality. Signed by Arsenal in a big-money move and has shown his class when fit, though injuries have interrupted his progress.",
+      "playingStyle": "Athletic, intelligent defender with excellent technical ability, capable of stepping into midfield with the ball and defending one-on-one with composure.",
+      "keyStrengths": ["Versatility", "Technical ability for a defender", "One-on-one defending"],
+      "worldCup2026Role": "Versatile defensive starter or rotation player who can fill in at center-back or right-back depending on tactical needs.",
+      "notableFact": "Twin brother of teammate Quinten Timber; was a key player in Ajax's Eredivisie title wins before his high-profile transfer to Arsenal."
+    },
+    "Ryan Gravenberch": {
+      "bio": "Tall, technically gifted midfielder who has reinvented himself at Liverpool under Arne Slot as a deep-lying playmaker after earlier stints at Ajax and Bayern Munich.",
+      "playingStyle": "Physically imposing yet technically elegant midfielder who controls the tempo from deep, uses his long legs to intercept, and distributes the ball with intelligence.",
+      "keyStrengths": ["Ball distribution from deep", "Physical presence", "Interceptions"],
+      "worldCup2026Role": "Midfield option who can play as the deepest midfielder, offering an alternative to Wieffer with more ball-playing ability.",
+      "notableFact": "Was Ajax's youngest ever debutant in the Eredivisie at age 16 and has already played for three of Europe's biggest clubs before turning 24."
+    },
+    "Joshua Zirkzee": {
+      "bio": "Technically brilliant young striker who earned a Manchester United transfer after an impressive season at Bologna in Serie A. Known for his unorthodox style and creativity for a center-forward.",
+      "playingStyle": "Skilful, unconventional striker who drops deep to link play, uses flicks and tricks to create space, and finishes with flair rather than brute force.",
+      "keyStrengths": ["Link-up play", "Technical ability", "Creative finishing"],
+      "worldCup2026Role": "Attacking option who offers a different dimension as a creative number 9, capable of unlocking defenses with his unorthodox approach.",
+      "notableFact": "Scored on his Manchester United debut with a late winner in the opening match of the 2024-25 Premier League season."
+    }
+  }
+}

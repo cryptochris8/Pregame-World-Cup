@@ -30,6 +30,9 @@ final Map<String, String> _mockAssets = {
   'assets/data/worldcup/recent_form/groups_i_l.json': jsonEncode(mockRecentFormIL),
   'assets/data/worldcup/historical_patterns.json': jsonEncode(mockHistoricalPatterns),
   'assets/data/worldcup/confederation_records.json': jsonEncode(mockConfederationRecords),
+  'assets/data/worldcup/player_name_index.json': jsonEncode(mockPlayerNameIndex),
+  'assets/data/worldcup/player_profiles/usa.json': jsonEncode(mockPlayerProfilesUSA),
+  'assets/data/worldcup/player_profiles/arg.json': jsonEncode(mockPlayerProfilesARG),
 };
 
 /// Sets up a mock binary messenger handler that serves test JSON files
@@ -570,4 +573,55 @@ final mockConfederationRecords = {
     'CONMEBOL': {'fullName': 'CONMEBOL', 'region': 'South America', 'worldCupTitles': 10},
   },
   'headToHead': [],
+};
+
+final mockPlayerNameIndex = {
+  'Christian Pulisic': 'USA',
+  'Weston McKennie': 'USA',
+  'Lionel Messi': 'ARG',
+  'Julian Alvarez': 'ARG',
+  'Kylian Mbappe': 'FRA',
+  'Pulisic': 'USA',
+  'McKennie': 'USA',
+  'Messi': 'ARG',
+  'Alvarez': 'ARG',
+  'Mbappe': 'FRA',
+};
+
+final mockPlayerProfilesUSA = {
+  'players': {
+    'Christian Pulisic': {
+      'bio': 'Born in Hershey, Pennsylvania, Pulisic became the youngest US international to score in a World Cup qualifier at 17.',
+      'playingStyle': 'Dynamic winger who cuts inside with pace and trickery',
+      'keyStrengths': ['Dribbling', 'Off-the-ball runs', 'Big-game mentality'],
+      'worldCup2026Role': 'The face of the US team and primary creative force on home soil',
+      'notableFact': 'Known as Captain America by US fans',
+    },
+    'Weston McKennie': {
+      'bio': 'A box-to-box midfielder who grew up in Texas before moving to Germany as a teenager to join Schalke 04.',
+      'playingStyle': 'Energetic, physical midfielder who covers every blade of grass',
+      'keyStrengths': ['Aerial ability', 'Work rate', 'Versatility'],
+      'worldCup2026Role': 'Engine of the midfield, expected to start every match',
+      'notableFact': 'First American to score in the Champions League knockout rounds for Juventus',
+    },
+  },
+};
+
+final mockPlayerProfilesARG = {
+  'players': {
+    'Lionel Messi': {
+      'bio': 'Widely regarded as the greatest footballer of all time, Messi led Argentina to World Cup glory in 2022.',
+      'playingStyle': 'Playmaker with supernatural vision, close control, and finishing ability',
+      'keyStrengths': ['Dribbling', 'Vision', 'Free kicks'],
+      'worldCup2026Role': 'If fit, a farewell tour for the GOAT in his 6th World Cup',
+      'notableFact': 'Won 8 Ballon d\'Or awards, the most by any player in history',
+    },
+    'Julian Alvarez': {
+      'bio': 'A versatile forward from Calchin, Argentina who won the World Cup at just 22 years old.',
+      'playingStyle': 'Intelligent forward who presses relentlessly and finds space in the box',
+      'keyStrengths': ['Movement', 'Pressing', 'Clinical finishing'],
+      'worldCup2026Role': 'Expected to lead the line as Argentina defends their title',
+      'notableFact': 'Scored 4 goals at the 2022 World Cup as a 22-year-old',
+    },
+  },
 };

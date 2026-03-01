@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Saad Al-Sheeb": {
+      "bio": "Veteran goalkeeper and longtime Al-Sadd stalwart who was Qatar's first-choice keeper at the 2022 World Cup on home soil. One of the most experienced players in the Qatar Stars League.",
+      "playingStyle": "Experienced shot-stopper who commands his penalty area with authority, strong on crosses and vocal in organizing the defense.",
+      "keyStrengths": ["Experience", "Command of area", "Cross collection"],
+      "worldCup2026Role": "First-choice goalkeeper bringing World Cup experience and calm leadership from the back.",
+      "notableFact": "Was Qatar's starting goalkeeper at the 2022 FIFA World Cup, the first held in the Middle East, making history on home soil."
+    },
+    "Pedro Miguel": {
+      "bio": "Attack-minded right-back who has been a key player for both Al-Sadd and the Qatar national team for over a decade. Portuguese-born, he has been a fixture in Qatar's defensive setup.",
+      "playingStyle": "Offensive fullback who loves pushing forward to deliver crosses, combining well with wingers and providing consistent width on the right.",
+      "keyStrengths": ["Overlapping runs", "Crossing ability", "Attacking output"],
+      "worldCup2026Role": "Starting right-back providing width and attacking threat down the right flank.",
+      "notableFact": "Born in Portugal, he moved to Qatar and became a naturalized citizen, becoming one of the most important defenders in the national team's golden era."
+    },
+    "Abdelkarim Hassan": {
+      "bio": "Left-back and former AFC Player of the Year who has been one of Qatar's most decorated players. A fixture at Al-Sadd and a centurion for the national team with 100 caps.",
+      "playingStyle": "Dynamic left-back who combines defensive solidity with dangerous attacking runs, delivering quality crosses and possessing a powerful shot.",
+      "keyStrengths": ["Attacking runs", "Crossing quality", "Defensive reliability"],
+      "worldCup2026Role": "Starting left-back and one of the squad's most experienced players, providing leadership and quality on the left flank.",
+      "notableFact": "Won the AFC Player of the Year award, becoming one of only a few Qatari players to receive the prestigious continental individual honor."
+    },
+    "Mohammed Muntari": {
+      "bio": "Powerful striker who has been a consistent goal threat in the Qatar Stars League with Al-Duhail. Known for his physicality and ability to score important goals.",
+      "playingStyle": "Strong target striker who uses his physical frame to hold up play and create space, dangerous in the air and with his feet inside the box.",
+      "keyStrengths": ["Physical strength", "Aerial ability", "Hold-up play"],
+      "worldCup2026Role": "Key striker competing for the starting spot alongside Almoez Ali, providing a different physical dimension up front.",
+      "notableFact": "Scored Qatar's first-ever World Cup goal, netting against Senegal at the 2022 FIFA World Cup in a historic moment for the country."
+    },
+    "Tarek Salman": {
+      "bio": "Young and talented center-back who has established himself at Al-Sadd and in the national team. One of Qatar's best defenders of the new generation.",
+      "playingStyle": "Athletic center-back who reads the game well, strong in aerial duels, and comfortable distributing the ball from the back.",
+      "keyStrengths": ["Aerial duels", "Reading of the game", "Distribution from defense"],
+      "worldCup2026Role": "Starting center-back anchoring Qatar's defense with his combination of youth, athleticism, and tactical intelligence.",
+      "notableFact": "Represented Qatar at the 2022 World Cup at a young age, gaining invaluable experience that has accelerated his development."
+    },
+    "Abdulaziz Hatem": {
+      "bio": "Experienced midfielder who has been one of the creative engines of the Qatar national team for years. A versatile player capable of dictating play from central areas.",
+      "playingStyle": "Creative central midfielder with excellent passing range and vision, capable of controlling the tempo and unlocking defenses with incisive balls.",
+      "keyStrengths": ["Passing vision", "Set-piece delivery", "Game management"],
+      "worldCup2026Role": "Key midfield orchestrator providing creativity and experience in the center of the park.",
+      "notableFact": "Was a key figure in Qatar's historic 2019 AFC Asian Cup triumph, the greatest achievement in the nation's football history."
+    },
+    "Ahmed Fatehi": {
+      "bio": "Tricky left winger from Al-Sadd who brings pace and directness to Qatar's attack. A skillful wide player who can create chances with his dribbling ability.",
+      "playingStyle": "Quick and tricky winger who cuts inside from the left, using his pace and skill to take on defenders and create shooting opportunities.",
+      "keyStrengths": ["Pace", "Dribbling", "Cutting inside"],
+      "worldCup2026Role": "Wide attacking option providing pace and trickery from the left wing, capable of stretching defenses.",
+      "notableFact": "A product of Qatar's extensive football development program, which has invested heavily in producing homegrown talent."
+    },
+    "Homam Ahmed": {
+      "bio": "Young left-footed center-back who has emerged as one of Qatar's most promising defensive talents at Al-Gharafa. Strong in the air and composed on the ball.",
+      "playingStyle": "Left-footed center-back who is comfortable in possession and capable of stepping out with the ball to start attacks from deep.",
+      "keyStrengths": ["Left-footed distribution", "Aerial strength", "Composure"],
+      "worldCup2026Role": "Starting center-back whose left foot provides balance in the defensive partnership and aids build-up play.",
+      "notableFact": "Part of the new generation of Qatari defenders developed through the Aspire Academy, Qatar's world-renowned football development center."
+    },
+    "Almoez Ali": {
+      "bio": "Qatar's all-time leading scorer with 50 goals, the star striker who fired Qatar to the 2019 Asian Cup title. Born in Sudan, he is the most prolific scorer in Qatari football history.",
+      "playingStyle": "Sharp, instinctive striker with lightning-quick movement in the box, clinical finishing ability, and the pace to run behind defensive lines.",
+      "keyStrengths": ["Clinical finishing", "Movement off the ball", "Pace"],
+      "worldCup2026Role": "Star striker and the team's primary goal threat, the player around whom Qatar's entire attack is built.",
+      "notableFact": "Scored a record 9 goals in the 2019 AFC Asian Cup, including a stunning overhead kick in the final, equaling Ali Daei's tournament record."
+    },
+    "Ahmed Moein": {
+      "bio": "Young attacking midfielder from Al-Duhail who represents the future of Qatari creative play. A technically skilled player with an eye for goal.",
+      "playingStyle": "Creative playmaker who operates between the lines, using his vision and technical ability to create chances and score from central positions.",
+      "keyStrengths": ["Technical ability", "Vision", "Goal threat"],
+      "worldCup2026Role": "Young creative option in the attacking midfield role, providing fresh energy and invention in the final third.",
+      "notableFact": "One of the brightest products of Qatar's youth development system, he has risen quickly through the national team age groups."
+    },
+    "Akram Afif": {
+      "bio": "Qatar's most valuable and decorated player, the three-time Asian Player of the Year winner who is the creative heartbeat of the national team. A truly world-class talent by Asian football standards.",
+      "playingStyle": "Electrifying left winger with exceptional dribbling, creativity, and the ability to produce match-winning moments of individual brilliance.",
+      "keyStrengths": ["Dribbling", "Creativity", "Match-winning ability"],
+      "worldCup2026Role": "Star player and captain-caliber figure, Qatar's most important attacker and the player who makes the team tick in the final third.",
+      "notableFact": "Won the AFC Player of the Year award three times, cementing his status as one of the greatest players in Asian football history."
+    },
+    "Meshaal Barsham": {
+      "bio": "Tall and athletic goalkeeper from Al-Sadd who provides strong competition for the number one jersey. A modern keeper with good distribution skills.",
+      "playingStyle": "Athletic shot-stopper whose height and wingspan give him excellent coverage, comfortable with the ball at his feet and capable of starting attacks.",
+      "keyStrengths": ["Height and reach", "Distribution", "Athleticism"],
+      "worldCup2026Role": "Quality backup goalkeeper challenging for the starting spot, ready to step in if called upon.",
+      "notableFact": "At 195cm, his imposing frame makes him one of the tallest goalkeepers in Asian football, giving him a significant advantage on crosses and high balls."
+    },
+    "Musaab Khidir": {
+      "bio": "Versatile right-back from Al-Wakrah who provides reliable depth in the defensive positions. A steady and experienced domestic league performer.",
+      "playingStyle": "Defensively solid fullback who prioritizes his positional duties, effective at shutting down opposing wingers in one-on-one situations.",
+      "keyStrengths": ["Defensive discipline", "One-on-one defending", "Tactical awareness"],
+      "worldCup2026Role": "Backup right-back providing experienced defensive depth on the right side.",
+      "notableFact": "Has been a consistent performer in the Qatar Stars League, contributing to Al-Wakrah's campaigns over multiple seasons."
+    },
+    "Boualem Khoukhi": {
+      "bio": "Algerian-born versatile defender who has been a mainstay of the Qatar national team for nearly a decade. One of the most experienced and adaptable defenders in the squad with 90 caps.",
+      "playingStyle": "Versatile defender who can play center-back or right-back, bringing experience and tactical intelligence to any defensive role.",
+      "keyStrengths": ["Versatility", "Experience", "Tactical intelligence"],
+      "worldCup2026Role": "Veteran defensive utility player who can cover multiple positions and provides invaluable experience.",
+      "notableFact": "Born in Algeria, he moved to Qatar and became one of the most reliable defenders in the national team's successful era, including the 2019 Asian Cup triumph."
+    },
+    "Bassam Al-Rawi": {
+      "bio": "Left-footed center-back from Al-Duhail known for his set-piece prowess and ability to score spectacular free kicks. A key member of Qatar's golden generation.",
+      "playingStyle": "Ball-playing center-back with a devastating left foot, capable of scoring directly from free kicks and delivering precise long-range passes.",
+      "keyStrengths": ["Free-kick ability", "Left-footed passing", "Set-piece threat"],
+      "worldCup2026Role": "Center-back option who doubles as a dangerous set-piece specialist, adding a unique dimension to the squad.",
+      "notableFact": "Has scored some spectacular free-kick goals for Qatar, making him one of the most unusual scoring threats from the center-back position."
+    },
+    "Assim Madibo": {
+      "bio": "Powerful defensive midfielder who is the anchor of Qatar's midfield. A key ball-winner from Al-Duhail who provides the platform for the team's more creative players.",
+      "playingStyle": "Strong and disciplined holding midfielder who excels at breaking up play, shielding the defense, and distributing the ball efficiently.",
+      "keyStrengths": ["Ball recovery", "Physical presence", "Defensive screening"],
+      "worldCup2026Role": "Starting defensive midfielder and the protective shield in front of Qatar's defense.",
+      "notableFact": "Was a vital component of Qatar's 2019 Asian Cup-winning squad, providing the defensive midfield stability that allowed the attackers to flourish."
+    },
+    "Ismaeel Mohammad": {
+      "bio": "Veteran right winger with 100 caps and 15 goals, one of the most experienced players in Qatari football history. A centurion who has served the national team with distinction.",
+      "playingStyle": "Experienced winger who uses his intelligence and positioning to create chances, more of a tactical player than a raw pace merchant.",
+      "keyStrengths": ["Experience", "Positioning", "Crossing ability"],
+      "worldCup2026Role": "Veteran wide option bringing unmatched experience and tactical awareness, valuable as a game-management substitute.",
+      "notableFact": "Has reached 100 caps for Qatar, joining an exclusive club of centurions and serving as one of the longest-tenured players in the national team."
+    },
+    "Karim Boudiaf": {
+      "bio": "Veteran Franco-Qatari midfielder with 100 caps who has been the engine of Qatar's midfield for over a decade. Born in France, he chose to represent Qatar and has been central to their rise.",
+      "playingStyle": "Tireless box-to-box midfielder who covers enormous ground, combining French technical schooling with Qatari fighting spirit.",
+      "keyStrengths": ["Stamina", "Box-to-box running", "Tactical discipline"],
+      "worldCup2026Role": "Experienced midfield warrior providing depth and tireless running, an essential squad member for tournament football.",
+      "notableFact": "Born in France to Moroccan-Qatari heritage, he became one of Qatar's most important players with 100 caps, embodying the nation's multicultural approach to football."
+    },
+    "Yusuf Abdurisag": {
+      "bio": "Young striker from Al-Arabi who offers a different dynamic to Qatar's forward line. A quick and energetic attacker who presses from the front.",
+      "playingStyle": "Mobile striker who works hard pressing from the front, using his pace to make runs in behind and stretch defensive lines.",
+      "keyStrengths": ["Pace", "Pressing", "Runs in behind"],
+      "worldCup2026Role": "Young striking option who provides energy and pressing intensity, useful as an impact substitute.",
+      "notableFact": "Represents the next generation of Qatari strikers being developed to complement the more established forwards in the squad."
+    },
+    "Ali Asad": {
+      "bio": "Versatile right winger from Al-Sadd who provides width and creativity from the right side. A consistent performer in the Qatar Stars League.",
+      "playingStyle": "Direct winger who takes on defenders with pace and skill, capable of delivering crosses or cutting inside to shoot.",
+      "keyStrengths": ["Directness", "Crossing", "Pace"],
+      "worldCup2026Role": "Right-wing option providing width and attacking threat, competing for playing time in Qatar's forward line.",
+      "notableFact": "Has been a regular contributor for Al-Sadd, one of the most dominant clubs in Qatari football history."
+    },
+    "Yusuf Saleh": {
+      "bio": "Young goalkeeper from Al-Wakrah who represents Qatar's future between the posts. An agile keeper with modern goalkeeping attributes.",
+      "playingStyle": "Athletic young goalkeeper who is agile and quick off his line, with developing distribution skills suited to modern football.",
+      "keyStrengths": ["Agility", "Quick reactions", "Athleticism"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable squad experience alongside senior keepers.",
+      "notableFact": "One of the youngest goalkeepers in the squad, he is being prepared as the long-term successor in Qatar's goalkeeping hierarchy."
+    },
+    "Jassem Gaber": {
+      "bio": "Young center-back from Al-Sadd who is part of Qatar's next generation of defenders. Tall and physical, he has emerged through the Aspire Academy system.",
+      "playingStyle": "Tall, physical center-back who uses his height advantage in aerial duels and is developing his ability to play out from the back.",
+      "keyStrengths": ["Height", "Aerial ability", "Physical development"],
+      "worldCup2026Role": "Young defensive prospect gaining squad experience and providing center-back depth for the future.",
+      "notableFact": "A product of the Aspire Academy, Qatar's state-of-the-art football development center that has produced the bulk of the current national team."
+    },
+    "Ahmed Alaaeldin": {
+      "bio": "Experienced attacking midfielder from Al-Gharafa who has been a consistent creative presence in the Qatar Stars League. A key squad member through Qatar's successful era.",
+      "playingStyle": "Intelligent playmaker who finds space between the lines, capable of threading passes into dangerous areas and contributing goals from midfield.",
+      "keyStrengths": ["Passing in the final third", "Positioning", "Goal contribution"],
+      "worldCup2026Role": "Experienced attacking midfield option providing creativity and nous off the bench.",
+      "notableFact": "Has been part of Qatar's squad through their most successful period, including the Asian Cup triumph and the home World Cup."
+    },
+    "Sultan Al-Brake": {
+      "bio": "Exciting young right winger from Al-Duhail who represents Qatar's future attacking talent. Quick and direct, he has burst onto the scene in the Qatar Stars League.",
+      "playingStyle": "Pacy young winger who loves to run at defenders, using his speed and energy to cause problems with direct, fearless attacking play.",
+      "keyStrengths": ["Raw pace", "Direct running", "Youthful energy"],
+      "worldCup2026Role": "Young attacking talent who can provide pace and energy as a substitute, gaining World Cup experience for the future.",
+      "notableFact": "One of the youngest players in the Qatar squad, he typifies the country's investment in developing the next generation of Qatari footballers."
+    },
+    "Hazem Shehata": {
+      "bio": "Young left-back from Al-Sadd providing competition and depth on the left side of defense. A developing talent in the Qatar Stars League.",
+      "playingStyle": "Attack-minded left-back who enjoys getting forward and delivering crosses, working on balancing his offensive instincts with defensive discipline.",
+      "keyStrengths": ["Attacking instinct", "Left-footed delivery", "Pace"],
+      "worldCup2026Role": "Backup left-back providing youthful energy and competition for places on the left side.",
+      "notableFact": "Plays for Al-Sadd, Qatar's most decorated club, gaining experience alongside many of the national team's established stars."
+    },
+    "Hisham Ali": {
+      "bio": "Young striker from Al-Gharafa who is one of the newest faces in the Qatar squad. A promising attacker with a natural instinct for goal.",
+      "playingStyle": "Young striker with good instincts in the box, quick to react to loose balls and developing his all-around game as a center forward.",
+      "keyStrengths": ["Goalscoring instinct", "Quick reactions", "Youthful confidence"],
+      "worldCup2026Role": "Young striking prospect included for development, providing emergency attacking depth and World Cup experience.",
+      "notableFact": "At just 24, he is one of the youngest forwards in the squad, representing the future of Qatari goalscoring talent."
+    }
+  }
+}

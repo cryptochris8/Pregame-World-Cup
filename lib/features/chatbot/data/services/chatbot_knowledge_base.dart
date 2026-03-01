@@ -28,6 +28,10 @@ class ChatbotKnowledgeBase {
   final Map<String, Map<String, dynamic>> _h2hCache = {};
   final Map<String, Map<String, dynamic>> _matchSummaryCache = {};
   final Map<String, Map<String, dynamic>> _playerStatsCache = {};
+  final Map<String, Map<String, dynamic>> _playerProfileCache = {};
+
+  // Tier 1: player name → team code index (loaded eagerly)
+  Map<String, String> _playerNameIndex = {};
 
   // Player stats filenames for lookup
   List<String>? _playerStatsFiles;
@@ -60,6 +64,7 @@ class ChatbotKnowledgeBase {
       _loadMatches(),
       _loadHistory(),
       _discoverPlayerStatsFiles(),
+      _loadPlayerNameIndex(),
     ]);
 
     _buildIndexes();
@@ -101,6 +106,17 @@ class ChatbotKnowledgeBase {
     } catch (e) {
       LoggingService.warning('Could not discover player stats files: $e', tag: _logTag);
       _playerStatsFiles = [];
+    }
+  }
+
+  Future<void> _loadPlayerNameIndex() async {
+    try {
+      final data = await _loadJsonMap('assets/data/worldcup/player_name_index.json');
+      if (data != null) {
+        _playerNameIndex = data.map((k, v) => MapEntry(k.toLowerCase(), v.toString()));
+      }
+    } catch (e) {
+      LoggingService.warning('Could not load player name index: $e', tag: _logTag);
     }
   }
 
@@ -259,7 +275,8 @@ class ChatbotKnowledgeBase {
   Map<String, String> get teamAliases => Map.unmodifiable(_teamAliases);
 
   /// All known player names (lowercase) for entity extraction.
-  Set<String> get knownPlayerNames => _playerIndex.keys.toSet();
+  Set<String> get knownPlayerNames =>
+      {..._playerIndex.keys, ..._playerNameIndex.keys};
 
   /// Get all matches for a team by FIFA code.
   List<Map<String, dynamic>> getMatchesForTeam(String teamCode) {
@@ -420,6 +437,67 @@ class ChatbotKnowledgeBase {
             'teamName': team['countryName'],
           };
         }
+      }
+    }
+    return null;
+  }
+
+  /// Get team code for a player name from the name index.
+  String? getTeamCodeForPlayer(String playerName) {
+    final lower = playerName.toLowerCase();
+    // Exact match first
+    if (_playerNameIndex.containsKey(lower)) return _playerNameIndex[lower];
+    // Try partial match on last name or key parts
+    for (final entry in _playerNameIndex.entries) {
+      if (entry.key.contains(lower) || lower.contains(entry.key)) {
+        return entry.value;
+      }
+    }
+    // Also check the player_stats index
+    for (final entry in _playerIndex.entries) {
+      if (entry.key.contains(lower) || lower.contains(entry.key)) {
+        return entry.value['teamCode'];
+      }
+    }
+    return null;
+  }
+
+  /// Get enriched player profile (lazy loaded per team).
+  Future<Map<String, dynamic>?> getPlayerProfile(String playerName) async {
+    final teamCode = getTeamCodeForPlayer(playerName);
+    if (teamCode == null) return null;
+
+    final code = teamCode.toLowerCase();
+    // Load team profile file if not cached
+    if (!_playerProfileCache.containsKey(code)) {
+      final data = await _loadJsonMap('assets/data/worldcup/player_profiles/$code.json');
+      if (data != null) {
+        _playerProfileCache[code] = data;
+      } else {
+        // Cache empty map to avoid repeated load attempts
+        _playerProfileCache[code] = {};
+        return null;
+      }
+    }
+
+    final teamProfiles = _playerProfileCache[code];
+    if (teamProfiles == null || teamProfiles.isEmpty) return null;
+
+    final players = teamProfiles['players'] as Map<String, dynamic>?;
+    if (players == null) return null;
+
+    // Try exact match first, then case-insensitive
+    final lower = playerName.toLowerCase();
+    for (final entry in players.entries) {
+      if (entry.key.toLowerCase() == lower ||
+          entry.key.toLowerCase().contains(lower) ||
+          lower.contains(entry.key.toLowerCase())) {
+        final profile = entry.value as Map<String, dynamic>;
+        return {
+          'playerName': entry.key,
+          'teamCode': teamCode,
+          ...profile,
+        };
       }
     }
     return null;

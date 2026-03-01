@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Shuichi Gonda": {
+      "bio": "Veteran goalkeeper who returned to J-League after stints in Europe. Earned his place in the 2022 World Cup squad and has remained a reliable option for Japan's goalkeeping depth.",
+      "playingStyle": "Commanding shot-stopper with strong positioning and vocal organization of the backline.",
+      "keyStrengths": ["Shot-stopping reflexes", "Positioning", "Communication with defense"],
+      "worldCup2026Role": "Experienced backup goalkeeper providing stability and mentorship to younger keepers.",
+      "notableFact": "Was Japan's starting goalkeeper in the famous 2-1 victory over Germany at the 2022 World Cup."
+    },
+    "Miki Yamane": {
+      "bio": "Offensive-minded right-back who made the move to MLS with LA Galaxy after establishing himself at Kawasaki Frontale. Known for his overlapping runs and crossing ability.",
+      "playingStyle": "Attack-first fullback who thrives on the overlap, delivering dangerous crosses into the box.",
+      "keyStrengths": ["Overlapping runs", "Crossing accuracy", "Stamina"],
+      "worldCup2026Role": "Backup right-back option who provides attacking width when Japan push forward.",
+      "notableFact": "His move to LA Galaxy makes him one of a growing number of Japanese players exploring MLS as a pathway."
+    },
+    "Shogo Taniguchi": {
+      "bio": "Long-serving center-back and captain of Kawasaki Frontale, one of the most decorated J-League clubs of the modern era. A cornerstone of Japan's defensive depth.",
+      "playingStyle": "Traditional center-back who reads the game well, excels in aerial duels, and brings J-League leadership experience.",
+      "keyStrengths": ["Aerial dominance", "Defensive reading", "Leadership"],
+      "worldCup2026Role": "Experienced squad player providing veteran defensive depth and locker room presence.",
+      "notableFact": "Has won multiple J-League titles with Kawasaki Frontale and is considered one of the best domestic defenders of his generation."
+    },
+    "Ko Itakura": {
+      "bio": "Versatile center-back who developed through Manchester City's loan system before securing a permanent move to Borussia Monchengladbach. A rising star of Japanese defense.",
+      "playingStyle": "Ball-playing center-back comfortable in possession, capable of stepping into midfield and driving forward with the ball.",
+      "keyStrengths": ["Ball progression from defense", "Tactical versatility", "Aerial ability"],
+      "worldCup2026Role": "Starting center-back in Japan's high-line system, crucial for building play from the back.",
+      "notableFact": "Was part of Manchester City's system before carving out his own career in the Bundesliga, where he has become one of the top Asian defenders."
+    },
+    "Yukinari Sugawara": {
+      "bio": "Young right-back who has become a key player at AZ Alkmaar in the Eredivisie. His consistent performances in European football have cemented his place in the national team setup.",
+      "playingStyle": "Modern fullback who balances defensive discipline with attacking output, comfortable in both 4-back and 3-back systems.",
+      "keyStrengths": ["Tactical intelligence", "Defensive solidity", "Crossing from deep"],
+      "worldCup2026Role": "Starting right-back competing with Yamane, offering both defensive reliability and attacking support.",
+      "notableFact": "At just 25, he has already accumulated significant European experience, playing in Dutch football since his early twenties."
+    },
+    "Wataru Endo": {
+      "bio": "Midfield anchor who made a stunning late-career move to Liverpool, becoming a fan favorite at Anfield. Captain of Japan and the heartbeat of the team's midfield.",
+      "playingStyle": "Deep-lying midfielder who excels at breaking up opposition attacks, recycling possession, and dictating tempo from the base of midfield.",
+      "keyStrengths": ["Ball-winning ability", "Positional awareness", "Passing range"],
+      "worldCup2026Role": "Undisputed starting defensive midfielder and captain, the most important player in Japan's tactical system.",
+      "notableFact": "Became the first Japanese player to play regularly for Liverpool FC, earning the nickname 'Boss' from the Anfield faithful."
+    },
+    "Takefusa Kubo": {
+      "bio": "Former Barcelona La Masia prodigy who has blossomed into one of Asia's most exciting talents at Real Sociedad. Japan's most valuable player and creative talisman.",
+      "playingStyle": "Tricky, direct winger who loves to cut inside from the right, beat defenders one-on-one, and create chances with his dribbling and vision.",
+      "keyStrengths": ["Dribbling", "Creativity", "One-on-one ability"],
+      "worldCup2026Role": "Starting right winger and primary creative threat, expected to be Japan's most dangerous attacking player.",
+      "notableFact": "Trained at FC Barcelona's La Masia academy as a teenager before joining Real Madrid, making him one of the most high-profile Asian youth prospects ever."
+    },
+    "Ritsu Doan": {
+      "bio": "Dynamic winger who became a World Cup hero with goals against both Germany and Spain in Qatar 2022. A proven big-game performer plying his trade in the Bundesliga.",
+      "playingStyle": "Inverted winger who cuts inside from the right onto his left foot, dangerous in shooting positions and capable of unlocking defenses with quick combination play.",
+      "keyStrengths": ["Finishing ability", "Cutting inside", "Big-game mentality"],
+      "worldCup2026Role": "Key rotation winger who provides firepower off the bench or in the starting lineup, especially in must-win matches.",
+      "notableFact": "Scored against both Germany and Spain at the 2022 World Cup, making him one of only a handful of players to score against two World Cup winners in the same tournament."
+    },
+    "Kaoru Mitoma": {
+      "bio": "Electrifying left winger who took the Premier League by storm at Brighton, becoming one of the most feared dribblers in English football. A unique talent who completed a university thesis on dribbling before going professional.",
+      "playingStyle": "Lightning-quick winger with exceptional close control, devastating in one-on-one situations and capable of beating multiple defenders in tight spaces.",
+      "keyStrengths": ["Explosive pace", "Elite dribbling", "Direct running"],
+      "worldCup2026Role": "Starting left winger and Japan's most exciting attacking threat, capable of single-handedly changing games.",
+      "notableFact": "Wrote a university thesis titled 'Mechanism of Dribbling Skills' at Tsukuba University before turning professional, literally studying the science of his greatest skill."
+    },
+    "Takumi Minamino": {
+      "bio": "Versatile attacker who won the Premier League, FA Cup, and League Cup with Liverpool before moving to Monaco. Japan's most experienced European-based forward with a trophy cabinet most players dream of.",
+      "playingStyle": "Intelligent off-the-ball runner who finds pockets of space between the lines, combining well with teammates and finishing with composure.",
+      "keyStrengths": ["Movement off the ball", "Finishing", "Versatility across the front line"],
+      "worldCup2026Role": "Senior attacking option who can play across the forward line, providing experience and tactical flexibility.",
+      "notableFact": "Won the Premier League, FA Cup, and League Cup in a single season at Liverpool, becoming one of the most decorated Japanese footballers in history."
+    },
+    "Kyogo Furuhashi": {
+      "bio": "Prolific striker who became a Celtic legend with his clinical finishing before moving to Ligue 1. Known for his predatory instincts in the box and relentless pressing.",
+      "playingStyle": "Poacher-type striker with excellent movement in the box, constantly making runs behind the defensive line and finishing with precision.",
+      "keyStrengths": ["Movement in the box", "Clinical finishing", "High pressing"],
+      "worldCup2026Role": "Starting striker candidate whose movement and pressing fit Japan's high-intensity system perfectly.",
+      "notableFact": "Became a fan idol at Celtic Park, where supporters created a special song for him and he scored over 50 goals in Scottish football."
+    },
+    "Daniel Schmidt": {
+      "bio": "Half-Japanese, half-American goalkeeper who has represented Japan internationally. Stands out with his imposing 197cm frame, making him one of the tallest players in Asian football.",
+      "playingStyle": "Commanding presence in goal who dominates his area with his height, strong in aerial situations and penalty-area control.",
+      "keyStrengths": ["Aerial command", "Physical presence", "Shot-stopping"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth, with his European experience adding valuable squad balance.",
+      "notableFact": "At 197cm (6'6\"), he is one of the tallest goalkeepers in Asian international football history."
+    },
+    "Takuma Asano": {
+      "bio": "Electric pace merchant who famously scored the winner against Germany at the 2022 World Cup. Known as 'the Jaguar' for his blistering speed, he has played in Germany, England, and Spain.",
+      "playingStyle": "Rapid counter-attacking forward who uses his pace to stretch defenses, run in behind, and create chaos for opposition backlines.",
+      "keyStrengths": ["Explosive acceleration", "Running behind the line", "Work rate"],
+      "worldCup2026Role": "Impact substitute who can change games with his pace, particularly effective against tiring defenses in the second half.",
+      "notableFact": "His goal against Germany at the 2022 World Cup, scored from an impossibly tight angle, is considered one of the greatest goals in Japanese football history."
+    },
+    "Junya Ito": {
+      "bio": "Experienced right winger who has been a consistent performer across European leagues, including stints in Belgium and brief time with top clubs. A tireless worker on the right flank.",
+      "playingStyle": "Hard-working winger who combines pace with crossing ability, effective in both attacking and defensive phases of play.",
+      "keyStrengths": ["Crossing", "Work rate", "Consistency"],
+      "worldCup2026Role": "Experienced squad option on the right wing, providing depth and reliability in rotation.",
+      "notableFact": "Has been one of the most consistent Japanese players in European football over the past five years, excelling in the Belgian league."
+    },
+    "Daichi Kamada": {
+      "bio": "Creative midfielder who has established himself in the Premier League with Crystal Palace after impressive spells at Eintracht Frankfurt and Lazio. A Europa League winner with Frankfurt.",
+      "playingStyle": "Technical playmaker who operates between the lines, capable of threading decisive passes and arriving late in the box to score.",
+      "keyStrengths": ["Through-ball passing", "Late runs into the box", "Technical quality"],
+      "worldCup2026Role": "Starting attacking midfielder or advanced number 8, the key creative link between Japan's midfield and attack.",
+      "notableFact": "Scored crucial goals in Eintracht Frankfurt's remarkable run to winning the 2022 Europa League, beating Barcelona and Rangers along the way."
+    },
+    "Takehiro Tomiyasu": {
+      "bio": "Extremely versatile defender who can play center-back, right-back, or left-back with equal comfort. Moved to Ajax after an impressive stint at Arsenal where he was beloved by fans.",
+      "playingStyle": "Tactically intelligent defender who reads the game superbly, combining physical presence with composure on the ball in any defensive position.",
+      "keyStrengths": ["Positional versatility", "Defensive intelligence", "Composure under pressure"],
+      "worldCup2026Role": "Key starter who provides tactical flexibility, likely to feature at center-back or right-back depending on the system.",
+      "notableFact": "Is one of the few modern defenders who has played at the highest level in four different positions across multiple top leagues (Serie A, Premier League, Eredivisie)."
+    },
+    "Ao Tanaka": {
+      "bio": "Box-to-box midfielder who earned a move to Leeds United in the Premier League after excelling in the Bundesliga. Scored a dramatic goal against Spain at the 2022 World Cup.",
+      "playingStyle": "Dynamic, all-action midfielder who covers enormous ground, contributes in both defensive and attacking phases, and arrives in the box at key moments.",
+      "keyStrengths": ["Box-to-box energy", "Goal threat from midfield", "Ball-winning"],
+      "worldCup2026Role": "Starting central midfielder alongside Endo, providing the energy and goal threat that balances the midfield.",
+      "notableFact": "Scored the controversial but eventually awarded goal against Spain at the 2022 World Cup that sent Japan through as group winners."
+    },
+    "Hidemasa Morita": {
+      "bio": "Reliable central midfielder who has developed at Sporting CP in Portugal's top flight, becoming a consistent starter in one of Europe's most competitive leagues.",
+      "playingStyle": "Disciplined, technically sound midfielder who keeps play ticking over with safe possession and intelligent pressing.",
+      "keyStrengths": ["Passing accuracy", "Pressing intelligence", "Tactical discipline"],
+      "worldCup2026Role": "Important midfield rotation option who can deputize for Endo or partner Tanaka in a double pivot.",
+      "notableFact": "Has become a regular starter at Sporting CP, one of the traditional 'Big Three' clubs in Portuguese football alongside Benfica and Porto."
+    },
+    "Hiroki Ito": {
+      "bio": "Left-footed center-back who earned a big move to Bayern Munich, joining the ranks of elite European defenders. His composure and ball-playing ability set him apart.",
+      "playingStyle": "Modern left-footed center-back who is excellent at building play from the back, comfortable carrying the ball forward and switching play with long diagonal passes.",
+      "keyStrengths": ["Left-footed ball distribution", "Progressive carrying", "Composure"],
+      "worldCup2026Role": "Starting left center-back in Japan's build-up system, his left foot providing crucial balance in the defensive line.",
+      "notableFact": "His transfer to Bayern Munich made him one of the most expensive Japanese defenders ever, joining an elite group of Asian players at the Bavarian giants."
+    },
+    "Yuki Soma": {
+      "bio": "Diminutive left winger from Nagoya Grampus known for his technical ability and quick feet. At just 166cm, he uses his low center of gravity to evade challenges.",
+      "playingStyle": "Small, agile winger who relies on close control, quick changes of direction, and creative dribbling rather than pure pace.",
+      "keyStrengths": ["Close dribbling control", "Low center of gravity", "Creative flair"],
+      "worldCup2026Role": "Squad depth option on the left wing, providing a different stylistic option to Mitoma.",
+      "notableFact": "At 166cm (5'5\"), he is one of the shortest players in the Japanese squad, but his technical ability makes him a fan favorite in the J-League."
+    },
+    "Ayase Ueda": {
+      "bio": "Powerful striker who has thrived at Feyenoord in the Eredivisie, becoming one of the most prolific Japanese strikers in European football. A physical presence who leads the line with authority.",
+      "playingStyle": "Target-man striker who combines physical hold-up play with intelligent movement and clinical finishing inside the box.",
+      "keyStrengths": ["Hold-up play", "Aerial ability", "Clinical finishing"],
+      "worldCup2026Role": "Starting striker candidate who offers a different profile to Furuhashi, providing a physical focal point for Japan's attack.",
+      "notableFact": "Has been one of the top scorers among Asian players in European football, helping Feyenoord compete in both domestic and European competitions."
+    },
+    "Maya Yoshida": {
+      "bio": "Legendary captain with over 130 caps, the most experienced player in the Japanese squad. Has played in the Premier League (Southampton), Serie A (Sampdoria), and MLS (LA Galaxy).",
+      "playingStyle": "Old-school central defender who leads by example, organizing the backline with his vast experience and winning aerial duels through sheer determination.",
+      "keyStrengths": ["Leadership", "Aerial ability", "Experience and composure"],
+      "worldCup2026Role": "Veteran squad leader and mentor, likely a backup center-back but invaluable for his leadership and tournament experience.",
+      "notableFact": "With over 130 caps, he is one of the most capped Japanese players in history and will be appearing in his fourth consecutive World Cup if selected."
+    },
+    "Zion Suzuki": {
+      "bio": "Exciting young goalkeeper playing in Serie A with Parma, representing the future of Japanese goalkeeping. His rapid rise has made him one of the most talked-about young keepers in Italy.",
+      "playingStyle": "Athletic, modern goalkeeper with quick reflexes and good distribution, comfortable playing with the ball at his feet.",
+      "keyStrengths": ["Reflexes", "Distribution", "Shot-stopping"],
+      "worldCup2026Role": "Emerging first-choice goalkeeper who could claim the starting spot based on his Serie A form, despite limited international experience.",
+      "notableFact": "At just 23, he is one of the youngest Japanese goalkeepers ever to start regularly in Serie A, one of the most demanding leagues for keepers."
+    },
+    "Koki Machida": {
+      "bio": "Composed center-back who has established himself in the Bundesliga with Union Berlin. A late bloomer who has rapidly risen through the ranks of Japanese football.",
+      "playingStyle": "Calm, composed defender who excels at reading the game, making clean tackles, and distributing the ball efficiently from the back.",
+      "keyStrengths": ["Composure", "Tackling", "Distribution from defense"],
+      "worldCup2026Role": "Rotation center-back providing quality depth, capable of stepping in seamlessly when needed.",
+      "notableFact": "His emergence in the Bundesliga came relatively late in his career, making him an inspiring example of perseverance in Japanese football."
+    },
+    "Daizen Maeda": {
+      "bio": "Tireless striker who has been a prolific goal scorer at Celtic in the Scottish Premiership. Known for his relentless work rate and never-stop-running mentality.",
+      "playingStyle": "High-energy pressing forward who harasses defenders constantly, makes intelligent runs, and finishes with composure despite his slight frame.",
+      "keyStrengths": ["Pressing intensity", "Movement", "Work ethic"],
+      "worldCup2026Role": "Key rotation striker whose pressing ability makes him ideal for high-intensity matches where Japan need to disrupt opponents from the front.",
+      "notableFact": "Has scored over 40 goals for Celtic across all competitions, becoming one of the most successful Japanese strikers in European football."
+    },
+    "Keito Nakamura": {
+      "bio": "Young, skillful winger who has impressed at Reims in France. Despite his slight build at 164cm, his dribbling ability and left-footed creativity mark him as a special talent.",
+      "playingStyle": "Tricky inverted winger with exceptional close control and a dangerous left foot, capable of creating something out of nothing in tight spaces.",
+      "keyStrengths": ["Dribbling", "Left-footed crossing and shooting", "Creativity"],
+      "worldCup2026Role": "Exciting young attacking option off the bench, capable of unlocking stubborn defenses with his individual skill.",
+      "notableFact": "At just 164cm (5'5\"), he is the smallest player in the Japanese squad but possesses some of the most magical feet."
+    }
+  }
+}

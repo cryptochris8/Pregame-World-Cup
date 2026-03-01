@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Alireza Beiranvand": {
+      "bio": "Iran's iconic goalkeeper whose remarkable rags-to-riches story saw him walk hundreds of kilometers to Tehran as a teenager to pursue his football dream. A national hero who famously saved a Cristiano Ronaldo penalty at the 2018 World Cup.",
+      "playingStyle": "Powerful, athletic goalkeeper with exceptional long throws that can launch counterattacks, combined with outstanding shot-stopping ability",
+      "keyStrengths": ["Long throws", "Shot-stopping", "Penalty saving"],
+      "worldCup2026Role": "Undisputed first-choice goalkeeper and defensive leader for Team Melli",
+      "notableFact": "Saved a Cristiano Ronaldo penalty at the 2018 World Cup in Russia, becoming a global sensation overnight"
+    },
+    "Sadegh Moharrami": {
+      "bio": "Right-back who has built an impressive career in Croatian football with Dinamo Zagreb, becoming one of the most attack-minded defenders in Iranian football history.",
+      "playingStyle": "Offensive-minded full-back with excellent crossing ability and the fitness to get up and down the right flank all game",
+      "keyStrengths": ["Crossing", "Attacking runs", "Stamina"],
+      "worldCup2026Role": "Starting right-back providing width and attacking quality on the right flank",
+      "notableFact": "Has been a key player for Dinamo Zagreb in the Croatian league and in their European competition campaigns"
+    },
+    "Ehsan Hajsafi": {
+      "bio": "Iran's most capped active player with an astonishing 130 caps, Hajsafi is a true legend of Iranian football. The veteran left-back and captain has played across Europe in Germany, Greece, and beyond.",
+      "playingStyle": "Experienced, intelligent left-back who reads the game superbly and provides calm, assured defending with the ability to contribute going forward",
+      "keyStrengths": ["Experience", "Leadership", "Consistency"],
+      "worldCup2026Role": "Captain, defensive leader, and starting left-back bringing unmatched international experience",
+      "notableFact": "Has earned over 130 caps for Iran, making him one of the most capped players in Asian football history"
+    },
+    "Shoja Khalilzadeh": {
+      "bio": "Veteran center-back who has played across the Middle East including stints in Qatar and the UAE. A commanding defender who has been part of Iran's backline for many years.",
+      "playingStyle": "Physical, experienced center-back who dominates aerial duels and organizes the defensive line with authority",
+      "keyStrengths": ["Aerial ability", "Leadership", "Organizational skills"],
+      "worldCup2026Role": "Experienced center-back providing leadership and aerial presence in defense",
+      "notableFact": "Has extensive experience in Middle Eastern football leagues including successful stints in Qatar and the UAE"
+    },
+    "Milad Mohammadi": {
+      "bio": "Attacking left-back who has played in Greece with AEK Athens after previous experience in Belgium and Russia. Known for his memorable acrobatic throw-in technique that went viral at the 2018 World Cup.",
+      "playingStyle": "Dynamic, attack-minded left-back who loves to get forward and deliver crosses, known for his flair and creativity",
+      "keyStrengths": ["Attacking instinct", "Crossing", "Flair"],
+      "worldCup2026Role": "Attacking left-back option competing with Hajsafi, bringing offensive dynamism",
+      "notableFact": "Went viral at the 2018 World Cup for his acrobatic somersault throw-in technique against Spain"
+    },
+    "Saeid Ezatolahi": {
+      "bio": "Defensive midfielder who has been a key player for Iran since his teenage years. Has gained experience across European leagues in Russia, Denmark, and beyond, serving as the midfield shield.",
+      "playingStyle": "Strong, combative defensive midfielder who breaks up play effectively and provides a solid screen in front of the defense",
+      "keyStrengths": ["Ball-winning", "Physicality", "Defensive positioning"],
+      "worldCup2026Role": "Key defensive midfielder tasked with protecting the back four and controlling the midfield battle",
+      "notableFact": "Made his Iran debut as a teenager and has been a consistent presence in the squad for nearly a decade"
+    },
+    "Alireza Jahanbakhsh": {
+      "bio": "Former Eredivisie top scorer who won the golden boot with AZ Alkmaar before a move to Brighton in the Premier League. One of Iran's most decorated European-based players with 80 caps and 15 goals.",
+      "playingStyle": "Creative, left-footed winger who cuts inside to shoot or create, with excellent set-piece delivery and an eye for spectacular goals",
+      "keyStrengths": ["Left foot", "Set pieces", "Goal scoring"],
+      "worldCup2026Role": "Experienced winger and creative outlet, one of Iran's most important attacking players",
+      "notableFact": "Won the Eredivisie golden boot as the league's top scorer with AZ Alkmaar in the 2017-18 season"
+    },
+    "Morteza Pouraliganji": {
+      "bio": "Experienced center-back who has been a pillar of Iran's defense for years with 70 caps. After stints in China and Qatar, he returned to Persepolis in the Persian Gulf Pro League.",
+      "playingStyle": "Solid, no-nonsense center-back who excels in aerial duels and brings consistency and reliability to the defense",
+      "keyStrengths": ["Aerial ability", "Consistency", "Experience"],
+      "worldCup2026Role": "Experienced center-back providing depth and reliability in the defensive rotation",
+      "notableFact": "Represented Iran at both the 2018 and 2022 World Cups, bringing invaluable tournament experience"
+    },
+    "Mehdi Taremi": {
+      "bio": "Iran's premier striker who starred at Porto in the Portuguese league before moving on to top European competition. With 45 goals in 75 caps, he is Iran's most prolific active goalscorer and one of Asia's best forwards.",
+      "playingStyle": "Complete striker who combines aerial ability with technical skill, capable of scoring all types of goals and also dropping deep to create",
+      "keyStrengths": ["Finishing", "Aerial ability", "Link-up play"],
+      "worldCup2026Role": "Star striker and leading goal threat, the focal point of Iran's attack",
+      "notableFact": "One of the top-scoring Asian players in European football history, having netted over 80 goals for Porto across all competitions"
+    },
+    "Karim Ansarifard": {
+      "bio": "Veteran striker with 30 goals in 95 caps, one of Iran's all-time leading scorers. Has played across Europe including Greece, England, and Cyprus, bringing vast experience to the forward line.",
+      "playingStyle": "Classic poacher with excellent positioning in the box and clinical finishing ability with either foot",
+      "keyStrengths": ["Finishing", "Positioning", "Experience"],
+      "worldCup2026Role": "Experienced backup striker providing a proven goal-scoring option from the bench",
+      "notableFact": "One of Iran's top five all-time international goalscorers with 30 goals across nearly a century of caps"
+    },
+    "Vahid Amiri": {
+      "bio": "Hardworking winger who has been a loyal servant for Persepolis in the Persian Gulf Pro League and a consistent performer for Iran with 80 caps. Known for his tireless running and team-first mentality.",
+      "playingStyle": "Industrious winger who combines relentless work rate with tactical discipline, always willing to track back and defend",
+      "keyStrengths": ["Work rate", "Tactical discipline", "Experience"],
+      "worldCup2026Role": "Experienced squad player providing width, work rate, and defensive coverage on the wing",
+      "notableFact": "Has been one of Persepolis' most consistent performers and holds over 80 caps for Iran"
+    },
+    "Hossein Hosseini": {
+      "bio": "Backup goalkeeper playing for Esteghlal, one of Iran's biggest clubs. A reliable presence who has served as understudy to Beiranvand in the national team setup.",
+      "playingStyle": "Dependable goalkeeper with strong reflexes and good command of his penalty area",
+      "keyStrengths": ["Reflexes", "Command of area", "Reliability"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced backup behind Beiranvand",
+      "notableFact": "Plays for Esteghlal, one of the two biggest clubs in Iranian football alongside Persepolis"
+    },
+    "Majid Hosseini": {
+      "bio": "Tall center-back who has gained valuable experience in Turkish football with Kayserispor after coming through the Iranian domestic league. A physically imposing defender with 45 caps.",
+      "playingStyle": "Tall, commanding center-back who uses his height and strength to dominate aerial challenges and defend set pieces",
+      "keyStrengths": ["Height", "Aerial dominance", "Physical strength"],
+      "worldCup2026Role": "Key center-back option, especially valuable in set-piece defensive situations",
+      "notableFact": "Has been a regular starter in the Turkish Super Lig with Kayserispor, competing against top-level opposition weekly"
+    },
+    "Saman Ghoddos": {
+      "bio": "Swedish-born attacking midfielder of Iranian descent who chose to represent Iran at international level. A technically gifted player who has played in France, Spain, and the UAE.",
+      "playingStyle": "Technically accomplished attacking midfielder with good vision and the ability to operate between the lines to create chances",
+      "keyStrengths": ["Technical quality", "Vision", "Versatility"],
+      "worldCup2026Role": "Creative midfield option providing flair and invention in the final third",
+      "notableFact": "Born and raised in Sweden, he chose to represent Iran over Sweden at international level through his Iranian heritage"
+    },
+    "Rouzbeh Cheshmi": {
+      "bio": "Center-back who plays for Esteghlal in the Persian Gulf Pro League. Became a national hero after scoring a dramatic late goal against Wales at the 2022 World Cup in Qatar.",
+      "playingStyle": "Strong, physical center-back who carries a goal threat from set pieces and can deliver clutch moments in big matches",
+      "keyStrengths": ["Set-piece threat", "Physical defending", "Big-game temperament"],
+      "worldCup2026Role": "Center-back option who adds a significant set-piece goal threat to the squad",
+      "notableFact": "Scored a stunning long-range goal in stoppage time against Wales at the 2022 World Cup, one of the tournament's most memorable moments"
+    },
+    "Mehdi Torabi": {
+      "bio": "Creative midfielder for Persepolis who is known for his left foot and spectacular long-range goals. A technical player who has been a key figure in Iranian domestic football.",
+      "playingStyle": "Left-footed playmaker with an exceptional long-range shot and the ability to deliver dangerous set pieces",
+      "keyStrengths": ["Long-range shooting", "Set pieces", "Left foot"],
+      "worldCup2026Role": "Midfield option providing set-piece expertise and long-range goal threat",
+      "notableFact": "Has scored numerous spectacular goals for Persepolis, earning a reputation as one of the best long-range shooters in Iranian football"
+    },
+    "Ali Gholizadeh": {
+      "bio": "Left winger who has established himself in Belgian football with Charleroi. A skillful, tricky winger who has been a consistent performer for Iran with 40 caps and 6 goals.",
+      "playingStyle": "Quick, agile winger who uses his low center of gravity and close control to dribble past defenders and create chances",
+      "keyStrengths": ["Dribbling", "Agility", "Close control"],
+      "worldCup2026Role": "Key attacking option on the left wing, providing creativity and goal threat",
+      "notableFact": "Has been one of the standout performers in the Belgian First Division with Charleroi for several seasons"
+    },
+    "Ali Karimi": {
+      "bio": "Midfielder who has gained experience in Turkish football with Kayserispor. Not to be confused with the legendary Iranian midfielder of the same name, this Ali Karimi has built his own career with 30 caps.",
+      "playingStyle": "Industrious central midfielder who combines defensive work with the ability to drive forward and contribute to attacks",
+      "keyStrengths": ["Industry", "Ball-carrying", "Defensive work"],
+      "worldCup2026Role": "Midfield option providing energy and balance in the center of the park",
+      "notableFact": "Shares his name with Iran's legendary former captain Ali Karimi, who is widely regarded as one of the greatest Iranian players ever"
+    },
+    "Sardar Azmoun": {
+      "bio": "Iran's second-highest active scorer with 50 goals in 75 caps, Azmoun is one of the most prolific strikers in Asian football history. Known as the 'Iranian Messi,' he starred at Zenit St Petersburg and Bayer Leverkusen before moving to the UAE.",
+      "playingStyle": "Elegant, clinical striker with exceptional movement, aerial ability, and the technique to score a wide variety of goals",
+      "keyStrengths": ["Movement", "Finishing", "Aerial ability"],
+      "worldCup2026Role": "Co-star striker alongside Taremi, forming one of Asia's most lethal forward partnerships",
+      "notableFact": "Nicknamed the 'Iranian Messi' for his extraordinary goal-scoring record, with 50 international goals making him one of Iran's all-time top scorers"
+    },
+    "Ahmad Nourollahi": {
+      "bio": "Experienced midfielder with 55 caps who has been a consistent presence in the Iranian midfield for years. Currently playing in the UAE after a successful career with Persepolis.",
+      "playingStyle": "Well-rounded central midfielder who covers ground effectively, distributes the ball accurately, and contributes defensively",
+      "keyStrengths": ["Passing range", "Work rate", "Tactical intelligence"],
+      "worldCup2026Role": "Important midfield option providing experience, tactical discipline, and reliable passing",
+      "notableFact": "Was a key player for Persepolis during their AFC Champions League campaigns before moving to the UAE"
+    },
+    "Omid Noorafkan": {
+      "bio": "Young left-back playing for Esteghlal in the Persian Gulf Pro League. A modern full-back who brings dynamism and attacking intent to the left side of defense.",
+      "playingStyle": "Energetic, attack-minded left-back with pace and the willingness to overlap and deliver crosses into the box",
+      "keyStrengths": ["Pace", "Overlapping runs", "Energy"],
+      "worldCup2026Role": "Dynamic left-back option providing attacking cover and a youthful alternative",
+      "notableFact": "Has been one of the top young full-backs in the Persian Gulf Pro League with Esteghlal"
+    },
+    "Amir Abedzadeh": {
+      "bio": "Goalkeeper who carries one of Iranian football's most famous names, as the son of legendary keeper Ahmad Reza Abedzadeh. Has played in Portugal and Spain, bringing European experience.",
+      "playingStyle": "Technically proficient goalkeeper with good footwork and distribution, comfortable playing out from the back",
+      "keyStrengths": ["Distribution", "Footwork", "European experience"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth and a different skill set in the goalkeeping group",
+      "notableFact": "Son of Iranian goalkeeping legend Ahmad Reza Abedzadeh, who starred at the 1998 World Cup"
+    },
+    "Ramin Rezaeian": {
+      "bio": "Veteran right-back with 50 caps who has played in Qatar, Belgium, and Iran. An experienced defender who has been part of multiple World Cup campaigns for Iran.",
+      "playingStyle": "Experienced, reliable right-back who provides defensive stability and measured attacking contributions",
+      "keyStrengths": ["Experience", "Reliability", "Defensive solidity"],
+      "worldCup2026Role": "Experienced defensive option providing backup at right-back and leadership in the squad",
+      "notableFact": "Has represented Iran at multiple major tournaments including the 2018 and 2022 FIFA World Cups"
+    },
+    "Mohammad Mohebi": {
+      "bio": "Young right-back playing for Esteghlal who has been pushing for a regular place in the national team. Represents the newer generation of Iranian full-backs.",
+      "playingStyle": "Athletic, energetic right-back who combines defensive work with the pace to contribute in attack",
+      "keyStrengths": ["Pace", "Athleticism", "Defensive work"],
+      "worldCup2026Role": "Young right-back option providing fresh legs and future development potential",
+      "notableFact": "Has risen through the ranks at Esteghlal, one of Iran's biggest clubs, to earn national team recognition"
+    },
+    "Shahab Zahedi": {
+      "bio": "Striker who has been playing in Ukrainian football with Zorya Luhansk, continuing to perform despite the challenging circumstances in the country. A reliable goal-scoring option for Iran.",
+      "playingStyle": "Clinical striker with good finishing ability and intelligent movement in the box",
+      "keyStrengths": ["Finishing", "Movement", "Composure"],
+      "worldCup2026Role": "Backup striker providing additional goal-scoring depth in the forward line",
+      "notableFact": "Has continued to perform at a high level in Ukrainian football despite the extremely challenging circumstances in the country"
+    },
+    "Allahyar Sayyadmanesh": {
+      "bio": "One of the youngest players in the Iranian squad, the gifted forward has been developing in Belgian football with Westerlo after time at Fenerbahce in Turkey. Seen as the future of Iranian attacking football.",
+      "playingStyle": "Quick, dynamic young forward with excellent technical ability and the willingness to take on defenders",
+      "keyStrengths": ["Pace", "Technical ability", "Youthful energy"],
+      "worldCup2026Role": "Exciting young attacking option who can make an impact as a substitute or in rotation",
+      "notableFact": "Signed by Turkish giants Fenerbahce as a teenager, highlighting his enormous potential as one of Iran's brightest young talents"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "players": {
+    "Orjan Nyland": {
+      "bio": "Experienced Norwegian goalkeeper who plays for Sevilla in La Liga. With 45 caps, he has been a reliable presence between the posts and brings top-level European experience to the squad.",
+      "playingStyle": "Athletic goalkeeper with sharp reflexes, good distribution, and experience in high-pressure La Liga matches",
+      "keyStrengths": ["Reflexes", "Distribution", "Experience"],
+      "worldCup2026Role": "Starting goalkeeper bringing La Liga pedigree and tournament reliability",
+      "notableFact": "One of few Norwegian goalkeepers to have played regularly in La Liga, one of the world's most demanding leagues"
+    },
+    "Marcus Pedersen": {
+      "bio": "Young right-back playing for Feyenoord in the Eredivisie. A modern full-back who combines defensive ability with attacking output, he has 20 caps for Norway.",
+      "playingStyle": "Athletic, attack-minded right-back who provides width and overlapping runs while maintaining defensive discipline",
+      "keyStrengths": ["Athleticism", "Overlapping runs", "Crossing"],
+      "worldCup2026Role": "Starting right-back or strong backup behind Julian Ryerson, providing attacking thrust from the flank",
+      "notableFact": "Has gained valuable European experience through Feyenoord's Champions League campaigns"
+    },
+    "Kristoffer Ajer": {
+      "bio": "Tall, commanding center-back who plays for Brentford in the Premier League. A former Celtic standout, his combination of size, pace, and ball-playing ability make him one of Norway's most important defenders.",
+      "playingStyle": "Ball-playing center-back who uses his height and long stride to carry the ball out of defense and launch attacks",
+      "keyStrengths": ["Ball-playing ability", "Pace for a center-back", "Aerial dominance"],
+      "worldCup2026Role": "Starting center-back and key figure in Norway's build-up play from defense",
+      "notableFact": "Stands 198cm tall, making him one of the tallest outfield players at the 2026 World Cup"
+    },
+    "Stefan Strandberg": {
+      "bio": "Veteran center-back with Serie A experience at Salernitana. With 45 caps, he brings a wealth of international experience and Italian defensive education to Norway's backline.",
+      "playingStyle": "Traditional, no-nonsense center-back who prioritizes positioning, marking, and winning aerial duels",
+      "keyStrengths": ["Defensive intelligence", "Aerial ability", "Marking"],
+      "worldCup2026Role": "Experienced backup center-back who provides reliability and calm in high-pressure situations",
+      "notableFact": "Has played in multiple countries including Italy, gaining a diverse tactical education throughout his career"
+    },
+    "Birger Meling": {
+      "bio": "Left-back playing for Rennes in Ligue 1, bringing French football experience to Norway's squad. A natural left-footer with 45 caps, he provides balance and quality from the left side of defense.",
+      "playingStyle": "Technical left-back with excellent crossing ability, good positional sense, and comfort on the ball",
+      "keyStrengths": ["Left-foot delivery", "Crossing", "Positional play"],
+      "worldCup2026Role": "Starting left-back or strong competitor for the position, providing quality delivery from wide positions",
+      "notableFact": "Plays alongside Jordan's Mousa Al-Taamari at Rennes, connecting two World Cup 2026 nations at club level"
+    },
+    "Morten Thorsby": {
+      "bio": "Physical defensive midfielder from Union Berlin in the Bundesliga. With 50 caps, he is an established member of Norway's midfield and known for his tireless running and environmental activism.",
+      "playingStyle": "Aggressive, high-energy midfielder who presses relentlessly and wins the ball back in dangerous areas",
+      "keyStrengths": ["Pressing", "Work rate", "Ball recovery"],
+      "worldCup2026Role": "Starting defensive midfielder providing the engine and defensive shield for Norway's talented attackers",
+      "notableFact": "Well-known environmental activist who has used his football platform to advocate for sustainability and climate action"
+    },
+    "Sander Berge": {
+      "bio": "Imposing central midfielder at Fulham in the Premier League. At 195cm, he combines remarkable technical ability with physical dominance, making him one of the most complete midfielders in Scandinavian football.",
+      "playingStyle": "Towering yet technically gifted midfielder who controls the tempo, makes progressive passes, and dominates physical battles",
+      "keyStrengths": ["Physical presence", "Passing range", "Ball carrying"],
+      "worldCup2026Role": "Key central midfielder alongside Odegaard, providing the physical and technical backbone of Norway's midfield",
+      "notableFact": "Was signed by Sheffield United for a then-club record fee before moving to Fulham, reflecting his high standing in European football"
+    },
+    "Erling Haaland": {
+      "bio": "Manchester City's superstar striker and one of the most prolific goalscorers in world football. With 31 goals in just 35 caps for Norway, he is the undisputed focal point of the entire national team.",
+      "playingStyle": "Devastating striker combining extraordinary pace, lethal finishing, and immense physical power to overwhelm defenses",
+      "keyStrengths": ["Finishing", "Pace", "Physical power"],
+      "worldCup2026Role": "Norway's talisman and primary goal threat -- the entire team is built around supplying him with chances",
+      "notableFact": "Has shattered Premier League and Champions League scoring records at Manchester City, and the 2026 World Cup will be his first major international tournament"
+    },
+    "Martin Odegaard": {
+      "bio": "Arsenal's captain and Norway's creative genius, widely regarded as one of the best playmakers in world football. With 60 caps and 9 goals, he orchestrates everything Norway does in attack.",
+      "playingStyle": "Supremely technical playmaker with extraordinary vision, creative passing, and the ability to unlock any defense",
+      "keyStrengths": ["Vision", "Creative passing", "Technical ability"],
+      "worldCup2026Role": "Captain, chief creator, and the player responsible for connecting midfield to Haaland -- Norway's most important creative player",
+      "notableFact": "Became the youngest player to debut for Real Madrid at just 16, and has since developed into one of the Premier League's finest players at Arsenal"
+    },
+    "Mohamed Elyounoussi": {
+      "bio": "Experienced left winger with 60 caps and 11 goals who plays for Celtic in Scotland. A versatile attacker of Moroccan descent, he brings international experience and reliability to Norway's flanks.",
+      "playingStyle": "Intelligent winger who combines well with teammates, makes clever runs, and contributes goals and assists consistently",
+      "keyStrengths": ["Intelligence", "Goal contribution", "Versatility"],
+      "worldCup2026Role": "Experienced wide option providing reliable attacking output and tactical flexibility",
+      "notableFact": "Eligible for both Norway and Morocco, he chose to represent Norway and has become one of their most capped wingers"
+    },
+    "Sten Grytebust": {
+      "bio": "Backup goalkeeper playing for Copenhagen in Denmark's top flight. With 10 caps, he provides experienced depth behind Nyland in the goalkeeping department.",
+      "playingStyle": "Solid, reliable goalkeeper with good handling and the ability to organize his defense effectively",
+      "keyStrengths": ["Handling", "Organizing the defense", "Reliability"],
+      "worldCup2026Role": "Second-choice goalkeeper providing dependable backup and training competition",
+      "notableFact": "Has gained valuable Champions League experience through Copenhagen's European campaigns"
+    },
+    "Julian Ryerson": {
+      "bio": "Borussia Dortmund right-back who has established himself as one of the Bundesliga's most consistent full-backs. His 20 caps for Norway reflect his rapid rise at both club and international level.",
+      "playingStyle": "Energetic, two-way full-back who excels at both attacking overlaps and defensive recovery",
+      "keyStrengths": ["Energy", "Two-way play", "Tactical flexibility"],
+      "worldCup2026Role": "Starting right-back bringing Champions League experience and high-level tactical awareness",
+      "notableFact": "Was part of Borussia Dortmund's run to the Champions League final, gaining invaluable big-match experience"
+    },
+    "Fredrik Midtsjo": {
+      "bio": "Experienced central midfielder from AZ Alkmaar in the Eredivisie. With 35 caps, he brings tactical intelligence and consistency to Norway's midfield options.",
+      "playingStyle": "Disciplined, hard-working midfielder who excels at screening the defense and keeping possession moving",
+      "keyStrengths": ["Tactical discipline", "Passing efficiency", "Defensive awareness"],
+      "worldCup2026Role": "Midfield rotation option providing balance and defensive stability when needed",
+      "notableFact": "Was a key figure in AZ Alkmaar's strong Eredivisie and Conference League campaigns"
+    },
+    "Leo Ostigard": {
+      "bio": "Young center-back at Napoli in Serie A, one of the most prestigious defensive schools in football. His 20 caps and experience in Italian football make him a valuable defensive asset.",
+      "playingStyle": "Aggressive, front-foot defender who is strong in the air and combative in ground duels",
+      "keyStrengths": ["Aggression", "Aerial duels", "Physicality"],
+      "worldCup2026Role": "Starting center-back candidate whose Serie A experience has sharpened his defensive skills",
+      "notableFact": "Was part of Napoli's historic Serie A title-winning squad, the first in over 30 years"
+    },
+    "Patrick Berg": {
+      "bio": "Creative midfielder from Bodo/Glimt who was instrumental in the club's rise to prominence in Norwegian and European football. His 15 caps reflect his growing international stature.",
+      "playingStyle": "Technical midfielder with excellent passing range, creative vision, and the ability to control the tempo of matches",
+      "keyStrengths": ["Passing range", "Vision", "Ball retention"],
+      "worldCup2026Role": "Midfield depth option who can step in and provide creative quality when called upon",
+      "notableFact": "Son of former Norwegian international Orn Berg, continuing a family tradition in Norwegian football"
+    },
+    "Fredrik Aursnes": {
+      "bio": "Highly rated midfielder at Benfica in the Portuguese league, one of Europe's elite clubs. His 25 caps for Norway reflect his consistent quality at the highest level.",
+      "playingStyle": "Versatile, intelligent midfielder who reads the game superbly and contributes in all phases of play",
+      "keyStrengths": ["Game intelligence", "Versatility", "Consistent quality"],
+      "worldCup2026Role": "Key midfield player whose versatility and quality make him a likely starter in Norway's engine room",
+      "notableFact": "His move from Norwegian football to Benfica via Feyenoord shows a steady progression to Europe's elite level"
+    },
+    "Kristian Thorstvedt": {
+      "bio": "Energetic midfielder at Sassuolo in Serie A, son of former Tottenham Hotspur goalkeeper Erik Thorstvedt. With 31 caps and 4 goals, he adds dynamism to Norway's midfield.",
+      "playingStyle": "Dynamic, goal-scoring midfielder who makes late runs into the box and combines physical power with technical quality",
+      "keyStrengths": ["Late runs into the box", "Goal scoring from midfield", "Physical dynamism"],
+      "worldCup2026Role": "Midfield option who adds a goal threat from central areas and energy in both directions",
+      "notableFact": "Son of former Tottenham and Norway goalkeeper Erik Thorstvedt, following his father's footsteps in Norwegian football"
+    },
+    "Antonio Nusa": {
+      "bio": "Teenage sensation at RB Leipzig in the Bundesliga, widely regarded as one of the most exciting young talents in European football. At just 21, his pace and skill are electrifying.",
+      "playingStyle": "Explosive young winger with dazzling dribbling, blistering pace, and the fearlessness to take on any defender",
+      "keyStrengths": ["Dribbling", "Pace", "Fearlessness"],
+      "worldCup2026Role": "Exciting attacking wildcard whose skill and unpredictability can change any match in an instant",
+      "notableFact": "Became the youngest Norwegian to score in the Champions League when he netted for Club Brugge before his move to Leipzig"
+    },
+    "Alexander Sorloth": {
+      "bio": "Powerful striker at Atletico Madrid in La Liga, providing Norway with a lethal alternative to Haaland. With 14 goals in 50 caps, he is a proven international goalscorer in his own right.",
+      "playingStyle": "Tall, physical striker who excels at hold-up play, aerial duels, and finishing inside the box",
+      "keyStrengths": ["Hold-up play", "Aerial ability", "Finishing"],
+      "worldCup2026Role": "Second striker option who can partner Haaland or provide a different attacking dimension off the bench",
+      "notableFact": "Scored at a remarkable rate during his time in the Turkish league before earning moves to Europe's elite clubs"
+    },
+    "Jorgen Strand Larsen": {
+      "bio": "Emerging striker at Crystal Palace in the Premier League who has become a key part of Norway's forward line. With 24 caps and 4 goals, the tall forward adds quality depth behind Haaland.",
+      "playingStyle": "Tall, mobile striker who combines aerial prowess with good link-up play and intelligent positioning",
+      "keyStrengths": ["Aerial ability", "Link-up play", "Movement"],
+      "worldCup2026Role": "Forward rotation option who can start alongside or instead of Haaland depending on tactical needs",
+      "notableFact": "His move to Crystal Palace from Celta Vigo capped a rapid rise through European football"
+    },
+    "Jens Petter Hauge": {
+      "bio": "Former AC Milan winger now back at Bodo/Glimt who made headlines with his performances in the Europa League. With 15 caps and 1 goal, he brings European experience and attacking flair.",
+      "playingStyle": "Skillful left winger with pace, good dribbling technique, and the ability to score and create goals",
+      "keyStrengths": ["Dribbling", "Left-footed shooting", "European experience"],
+      "worldCup2026Role": "Wide attacking option providing creativity and goal threat from the left side",
+      "notableFact": "Scored a memorable goal against AC Milan in the Europa League for Bodo/Glimt before earning a move to the Italian giants"
+    },
+    "Marius Lode": {
+      "bio": "Veteran center-back from Bodo/Glimt who has been part of the club's remarkable journey from obscurity to European prominence. With 5 caps, he provides experienced defensive depth.",
+      "playingStyle": "Steady, reliable center-back who reads the game well and provides calm defensive cover",
+      "keyStrengths": ["Reading of the game", "Reliability", "Experience"],
+      "worldCup2026Role": "Experienced backup center-back providing squad depth and defensive reliability",
+      "notableFact": "Was part of Bodo/Glimt's incredible rise from the Norwegian second tier to European competition success"
+    },
+    "Oscar Bobb": {
+      "bio": "Exciting young talent at Manchester City who trains alongside some of the best players in the world. At 22, his raw potential and skillset make him one of Norway's most promising prospects.",
+      "playingStyle": "Tricky, creative winger with quick feet, excellent close control, and the ability to beat defenders in tight spaces",
+      "keyStrengths": ["Close control", "Creativity", "Quick feet"],
+      "worldCup2026Role": "Young attacking prospect who can provide a spark off the bench with his skill and energy",
+      "notableFact": "Has impressed Pep Guardiola enough to earn regular first-team opportunities at Manchester City"
+    },
+    "Andreas Hanche-Olsen": {
+      "bio": "Center-back playing for Genoa in Serie A, gaining valuable experience in one of the world's most tactically demanding leagues. His 15 caps reflect his steady development.",
+      "playingStyle": "Composed, technically sound defender who has absorbed the Italian defensive tradition and excels in tactical positioning",
+      "keyStrengths": ["Tactical positioning", "Composure", "Ball distribution"],
+      "worldCup2026Role": "Defensive squad depth option who brings Serie A tactical awareness to the group",
+      "notableFact": "One of several Norwegian defenders who have moved to Italy, continuing a tradition of Scandinavians thriving in Serie A"
+    },
+    "Stale Solbakken": {
+      "bio": "Young midfielder at Roma in Serie A, representing the future of Norwegian football. At just 22 with 3 caps, his selection shows Norway's commitment to developing young talent at the highest level.",
+      "playingStyle": "Composed, intelligent young midfielder with good passing ability and an understanding of space and time",
+      "keyStrengths": ["Composure", "Passing", "Positional intelligence"],
+      "worldCup2026Role": "Young developmental talent gaining World Cup experience for the future of Norwegian football",
+      "notableFact": "Son of former Norway manager Stale Solbakken Sr., he is following in his father's football footsteps at one of Italy's most historic clubs"
+    }
+  }
+}

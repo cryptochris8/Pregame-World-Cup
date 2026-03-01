@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Dominik Livakovic": {
+      "bio": "Croatia's first-choice goalkeeper who became a national hero at the 2022 World Cup with his penalty-saving heroics. Livakovic moved to Fenerbahce in Turkey after starring for Dinamo Zagreb.",
+      "playingStyle": "Athletic goalkeeper with outstanding penalty-saving ability, excellent reflexes, and confidence in big moments",
+      "keyStrengths": ["Penalty saving", "Shot-stopping reflexes", "Big-game temperament"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and key figure in tournament knockout scenarios",
+      "notableFact": "Saved three penalties in the shootout against Japan at the 2022 World Cup, becoming only the fourth goalkeeper to achieve this in World Cup history"
+    },
+    "Josip Stanisic": {
+      "bio": "A Bayern Munich product born in Germany to Croatian parents, Stanisic chose to represent Croatia internationally. He is a modern, athletic full-back with experience at the highest level of European football.",
+      "playingStyle": "Athletic, overlapping right-back with strong defensive instincts and composure on the ball from his Bayern Munich training",
+      "keyStrengths": ["Athleticism", "Defensive solidity", "Tactical intelligence"],
+      "worldCup2026Role": "Starting right-back bringing top-level European experience to the defense",
+      "notableFact": "Was born and raised in Munich, Germany, and came through Bayern Munich's academy before choosing to represent Croatia"
+    },
+    "Borna Barisic": {
+      "bio": "A left-back who became a fan favorite at Rangers in Scotland, known for his delivery from set pieces and wide areas. Barisic returned to Croatian football with NK Osijek after his time in Glasgow.",
+      "playingStyle": "Attacking left-back with exceptional set-piece delivery and accurate crossing from deep positions",
+      "keyStrengths": ["Set-piece delivery", "Crossing accuracy", "Free-kick taking"],
+      "worldCup2026Role": "Experienced backup left-back and set-piece specialist option",
+      "notableFact": "Was a key part of the Rangers side that reached the 2022 Europa League final, providing crucial assists throughout the campaign"
+    },
+    "Ivan Perisic": {
+      "bio": "One of Croatia's most decorated players with over 135 caps, Perisic has won the Champions League with Inter Milan and played in the 2018 World Cup final. A tireless, versatile attacker across multiple top leagues.",
+      "playingStyle": "Powerful, two-footed winger who combines pace with physicality, dangerous in the air for a wide player, and a relentless work rate",
+      "keyStrengths": ["Two-footedness", "Aerial threat from the wing", "Big-game experience"],
+      "worldCup2026Role": "Veteran squad member providing experience and tactical flexibility across the forward line",
+      "notableFact": "Scored in the 2018 World Cup final against France and has scored at three different World Cups for Croatia"
+    },
+    "Martin Erlic": {
+      "bio": "A Croatian-born center-back who has developed his career in Italy and Denmark. Erlic is a physically imposing defender who provides solid depth to Croatia's backline options.",
+      "playingStyle": "Strong, physical center-back who excels in aerial duels and is comfortable defending in a low block",
+      "keyStrengths": ["Aerial dominance", "Physical strength", "Defensive positioning"],
+      "worldCup2026Role": "Defensive depth option as a backup center-back in the squad",
+      "notableFact": "Spent formative years in Italian football at Sassuolo and Spezia, developing his game in one of Europe's most tactically demanding leagues"
+    },
+    "Dejan Lovren": {
+      "bio": "A World Cup finalist in 2018 and Champions League winner with Liverpool in 2019, Lovren is one of Croatia's most experienced defenders. Now at PAOK in Greece, he brings invaluable tournament experience.",
+      "playingStyle": "Aggressive, commanding center-back with leadership qualities, strong in the air and physical in duels",
+      "keyStrengths": ["Aerial presence", "Leadership and experience", "Physical defending"],
+      "worldCup2026Role": "Veteran defensive leader providing tournament experience and mentorship to younger defenders",
+      "notableFact": "Won the Champions League with Liverpool in 2019 and played every minute of Croatia's run to the 2018 World Cup final"
+    },
+    "Lovro Majer": {
+      "bio": "A technically gifted Croatian playmaker who impressed at Rennes before moving to Wolfsburg in the Bundesliga. Majer is seen as one of the heirs to Croatia's rich midfield tradition.",
+      "playingStyle": "Creative, technically excellent playmaker who picks out passes in tight spaces, with a sweet left foot and eye for goal",
+      "keyStrengths": ["Creative vision", "Technical skill in tight spaces", "Through-ball delivery"],
+      "worldCup2026Role": "Key creative midfielder and potential successor to the aging playmaker role in Croatia's system",
+      "notableFact": "Won the Croatian Football Federation's Best Young Player award and is widely regarded as the next great Croatian midfielder"
+    },
+    "Mateo Kovacic": {
+      "bio": "A silky midfielder who has won the Champions League with Real Madrid and Chelsea, and now anchors Manchester City's midfield. Kovacic is the epitome of the Croatian midfield tradition of technical excellence.",
+      "playingStyle": "Elegant, press-resistant midfielder who glides past opponents with the ball and maintains possession under intense pressure",
+      "keyStrengths": ["Press resistance", "Dribbling through midfield", "Ball retention under pressure"],
+      "worldCup2026Role": "Starting central midfielder forming the engine room alongside Modric and Brozovic",
+      "notableFact": "One of only a handful of players to have won the Champions League with three different clubs (Real Madrid could have been followed by Chelsea)"
+    },
+    "Andrej Kramaric": {
+      "bio": "Hoffenheim's all-time top scorer, Kramaric has been one of the Bundesliga's most consistent strikers for nearly a decade. He is a clinical finisher with an excellent international record for Croatia.",
+      "playingStyle": "Intelligent striker who drops deep to link play, combines well with midfielders, and is deadly in and around the penalty box",
+      "keyStrengths": ["Clinical finishing", "Link-up play", "Intelligent movement"],
+      "worldCup2026Role": "Key attacking option as a starter or impactful substitute bringing goalscoring pedigree",
+      "notableFact": "Holds the Bundesliga record for most goals scored by a Croatian player and is Hoffenheim's all-time leading scorer"
+    },
+    "Luka Modric": {
+      "bio": "A Ballon d'Or winner and one of the greatest midfielders in football history, Modric led Croatia to the 2018 World Cup final and the 2022 third-place finish. Now at AC Milan after a legendary spell at Real Madrid.",
+      "playingStyle": "Sublime technical maestro with unmatched vision, passing range, and ability to control the tempo of any match despite his diminutive frame",
+      "keyStrengths": ["Vision and passing range", "Tempo control", "Durability and longevity"],
+      "worldCup2026Role": "Captain and midfield conductor, the heartbeat of everything Croatia do, likely in his farewell World Cup",
+      "notableFact": "Won the 2018 Ballon d'Or, the Golden Ball at the 2018 World Cup, and six Champions League titles with Real Madrid"
+    },
+    "Marcelo Brozovic": {
+      "bio": "The metronome of Croatia's midfield, Brozovic was the highest-distance runner at the 2018 World Cup and has been the team's indispensable deep-lying playmaker. He moved to Al-Nassr in Saudi Arabia after a stellar Inter Milan career.",
+      "playingStyle": "Deep-lying playmaker who covers enormous ground, distributes with precision, and dictates play from the base of midfield",
+      "keyStrengths": ["Stamina and ground coverage", "Passing accuracy from deep", "Tactical positioning"],
+      "worldCup2026Role": "Starting defensive midfielder and metronome who sets the rhythm for the entire team",
+      "notableFact": "Covered more distance than any other player at the 2018 World Cup, running over 72km across seven matches"
+    },
+    "Ivica Ivusic": {
+      "bio": "A capable Croatian goalkeeper who has gained experience in domestic and Cypriot football. Ivusic provides reliable depth in the goalkeeping department behind Livakovic.",
+      "playingStyle": "Solid, reliable goalkeeper with good shot-stopping and command of his penalty area",
+      "keyStrengths": ["Shot-stopping", "Positioning", "Consistency"],
+      "worldCup2026Role": "Third-choice goalkeeper providing squad depth",
+      "notableFact": "Made several crucial saves during Croatia's qualifying campaign, proving himself as a dependable backup"
+    },
+    "Mario Pasalic": {
+      "bio": "A versatile attacking midfielder who found his best football at Atalanta in Serie A after numerous loan spells from Chelsea. Pasalic has become a consistent goal contributor from midfield.",
+      "playingStyle": "Goal-scoring midfielder who times his runs into the box perfectly, combining aerial ability with technical skill in the final third",
+      "keyStrengths": ["Goalscoring from midfield", "Aerial ability", "Late runs into the box"],
+      "worldCup2026Role": "Versatile attacking midfield option who provides goal threat from the second line",
+      "notableFact": "Was on Chelsea's books for seven years but played for six different clubs on loan before Atalanta made his move permanent"
+    },
+    "Marko Livaja": {
+      "bio": "A passionate striker who became a hero at Hajduk Split after returning to Croatian football. Livaja's goalscoring exploits in the domestic league earned him regular international recognition.",
+      "playingStyle": "Technically gifted striker with flair, creativity, and the ability to score spectacular goals from distance",
+      "keyStrengths": ["Spectacular finishing", "Technical flair", "Creativity in the final third"],
+      "worldCup2026Role": "Attacking option off the bench bringing creativity and unpredictability",
+      "notableFact": "Became a cult hero at Hajduk Split, where his passionate celebrations and spectacular goals made him an icon of Croatian domestic football"
+    },
+    "Ante Budimir": {
+      "bio": "A towering target man who has built a solid career in Spanish football with Osasuna. Budimir offers a different dimension to Croatia's attack with his aerial presence and hold-up play.",
+      "playingStyle": "Classic target man who excels in the air, provides hold-up play, and brings teammates into the game in advanced areas",
+      "keyStrengths": ["Aerial ability", "Hold-up play", "Physical presence"],
+      "worldCup2026Role": "Squad option as an aerial target man, particularly useful as a late-game plan B",
+      "notableFact": "Has scored more La Liga goals than any other Croatian player in recent history during his time with Osasuna"
+    },
+    "Bruno Petkovic": {
+      "bio": "A key player for Dinamo Zagreb and Croatia, Petkovic has been crucial in major tournament moments including a dramatic late equalizer against Brazil at the 2022 World Cup.",
+      "playingStyle": "Strong, intelligent striker with good technique, excellent hold-up play, and the ability to score crucial goals in big moments",
+      "keyStrengths": ["Hold-up play", "Big-game mentality", "Link-up play"],
+      "worldCup2026Role": "Key attacking option who thrives in big moments, a proven tournament performer",
+      "notableFact": "Scored the 117th-minute equalizer against Brazil in the 2022 World Cup quarterfinals, one of the most dramatic goals in World Cup history"
+    },
+    "Luka Sucic": {
+      "bio": "An exciting young Croatian playmaker who plays for Real Sociedad in La Liga. Born in Austria to Croatian parents, Sucic is considered one of the brightest young talents in Croatian football.",
+      "playingStyle": "Creative left-footed playmaker with excellent technique, composure beyond his years, and a dangerous long-range shot",
+      "keyStrengths": ["Left-footed creativity", "Long-range shooting", "Composure on the ball"],
+      "worldCup2026Role": "Emerging attacking midfielder seen as a long-term successor to Modric's creative influence",
+      "notableFact": "Born in Linz, Austria, and chose to represent Croatia over Austria, following the path of several dual-national Croatian talents"
+    },
+    "Mislav Orsic": {
+      "bio": "A dynamic winger who became famous for his extraordinary hat-trick against Tottenham in the Europa League with Dinamo Zagreb. Orsic has been a consistent performer for club and country.",
+      "playingStyle": "Direct, pacy winger who cuts inside from the left with his stronger right foot, capable of scoring spectacular individual goals",
+      "keyStrengths": ["Cutting inside on right foot", "Spectacular goalscoring", "Pace and directness"],
+      "worldCup2026Role": "Experienced wide attacker providing depth and impact from the substitutes' bench",
+      "notableFact": "Scored a stunning hat-trick against Tottenham in the 2021 Europa League to knock them out, with the third goal being a 40-yard solo run"
+    },
+    "Borna Sosa": {
+      "bio": "A modern attacking left-back who made his name at VfB Stuttgart in the Bundesliga before moving to the Premier League with Crystal Palace. Sosa is prized for his dangerous crossing ability.",
+      "playingStyle": "Attacking left-back with one of the best cross deliveries in European football, creating numerous chances from wide positions",
+      "keyStrengths": ["Crossing ability", "Attacking output", "Set-piece delivery"],
+      "worldCup2026Role": "Starting left-back providing width, crossing threat, and attacking impetus down the left flank",
+      "notableFact": "Led the Bundesliga in crosses and was one of the top assist providers from a defensive position during his time at Stuttgart"
+    },
+    "Josip Sutalo": {
+      "bio": "A young Croatian center-back who moved to Ajax from Dinamo Zagreb, Sutalo has quickly adapted to football at the highest level and is seen as a key part of Croatia's defensive future.",
+      "playingStyle": "Athletic, ball-playing center-back with good recovery pace and composure in possession",
+      "keyStrengths": ["Recovery pace", "Ball-playing ability", "Athleticism"],
+      "worldCup2026Role": "Starting center-back candidate representing the new generation of Croatian defenders",
+      "notableFact": "Was one of the youngest captains in Dinamo Zagreb history before earning his big move to Ajax"
+    },
+    "Igor Matanovic": {
+      "bio": "A towering young striker of Croatian descent who was born in Germany and plays for Eintracht Frankfurt in the Bundesliga. Matanovic represents the exciting future of Croatian attacking talent.",
+      "playingStyle": "Tall, powerful young striker with good technical ability for his size, aerial dominance, and improving finishing",
+      "keyStrengths": ["Aerial presence", "Physical power", "Technical skill for his size"],
+      "worldCup2026Role": "Young attacking prospect providing squad depth and a different physical dimension up front",
+      "notableFact": "At 196cm, he is one of the tallest strikers in the Croatian setup, born and raised in Frankfurt, Germany"
+    },
+    "Josip Juranovic": {
+      "bio": "A versatile Croatian full-back who starred at Celtic before moving to Union Berlin in the Bundesliga. Juranovic was one of Croatia's standout performers at the 2022 World Cup.",
+      "playingStyle": "Tenacious, attack-minded full-back who defends aggressively, takes penalties, and provides consistent energy on the right side",
+      "keyStrengths": ["Defensive tenacity", "Penalty taking", "Attacking contribution"],
+      "worldCup2026Role": "Versatile full-back providing competition and rotation on the right side of defense",
+      "notableFact": "Took and scored penalties for Croatia at the 2022 World Cup despite being a full-back, showcasing his ice-cold composure"
+    },
+    "Duje Caleta-Car": {
+      "bio": "A physical center-back who developed in France with Marseille before moving to Real Sociedad in La Liga. Caleta-Car is a rugged, experienced defender with strong aerial qualities.",
+      "playingStyle": "Physical, aerial-dominant center-back who excels in defensive duels and provides a commanding presence at set pieces",
+      "keyStrengths": ["Aerial dominance", "Physical defending", "Set-piece threat"],
+      "worldCup2026Role": "Experienced center-back providing depth and aerial presence in the defensive rotation",
+      "notableFact": "Was reportedly close to signing for Liverpool before the move collapsed on deadline day, one of football's famous near-misses"
+    },
+    "Josko Gvardiol": {
+      "bio": "One of the most valuable defenders in world football, Gvardiol joined Manchester City for a record fee for a defender. The young Croatian is already regarded as one of the best center-backs on the planet.",
+      "playingStyle": "Modern, ball-carrying center-back with explosive pace, power, and the ability to drive forward from the backline like a midfielder",
+      "keyStrengths": ["Ball-carrying from defense", "Pace and power", "Defensive solidity"],
+      "worldCup2026Role": "Starting center-back and defensive cornerstone, potentially Croatia's most important player alongside Modric",
+      "notableFact": "Transferred to Manchester City for approximately 90 million euros, making him the most expensive defender in football history at the time"
+    },
+    "Dominik Kotarski": {
+      "bio": "A promising young Croatian goalkeeper who plays for FC Copenhagen in Denmark. Kotarski has shown impressive development and is being groomed as a future national team goalkeeper.",
+      "playingStyle": "Young, agile goalkeeper with good reflexes and developing command of his area",
+      "keyStrengths": ["Reflexes", "Agility", "Development potential"],
+      "worldCup2026Role": "Young backup goalkeeper gaining tournament experience as part of the squad",
+      "notableFact": "Has represented Croatia at various youth levels and is considered the long-term successor in the goalkeeping position"
+    },
+    "Nikola Vlasic": {
+      "bio": "A creative midfielder who plays for Torino in Serie A, Vlasic previously had spells at Everton, CSKA Moscow (where he won league Player of the Year), and West Ham. He is the son of Olympic champion Blanka Vlasic's brother.",
+      "playingStyle": "Creative, technically skilled attacking midfielder with good dribbling, vision, and the ability to unlock defenses in the final third",
+      "keyStrengths": ["Creativity and dribbling", "Vision in the final third", "Versatility across attacking positions"],
+      "worldCup2026Role": "Creative attacking midfield option providing depth and quality in the final third",
+      "notableFact": "His sister Blanka Vlasic is an Olympic high-jump medalist, making them one of Croatia's most famous sporting families"
+    }
+  }
+}

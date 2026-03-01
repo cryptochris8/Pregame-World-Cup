@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Lawrence Ati-Zigi": {
+      "bio": "Ghanaian goalkeeper who has built his career in Swiss football with St. Gallen, becoming a reliable shot-stopper at international level. Earned his place as Ghana's first-choice keeper through consistent performances in European club football.",
+      "playingStyle": "Athletic goalkeeper with quick reflexes and strong shot-stopping ability, comfortable with the ball at his feet",
+      "keyStrengths": ["Shot-stopping", "Reflexes", "Distribution"],
+      "worldCup2026Role": "Starting goalkeeper and last line of defense for the Black Stars",
+      "notableFact": "Became Ghana's number one after impressive displays in the Swiss Super League, helping St. Gallen reach European competition"
+    },
+    "Tariq Lamptey": {
+      "bio": "Born in London to Ghanaian parents, Lamptey chose to represent Ghana after initially playing for England at youth level. A dynamic right-back who made his name at Brighton in the Premier League with his explosive pace and attacking instincts.",
+      "playingStyle": "Explosive, attack-minded full-back with blistering pace and sharp dribbling who loves to overlap and deliver crosses",
+      "keyStrengths": ["Pace", "Dribbling", "Overlapping runs"],
+      "worldCup2026Role": "Starting right-back providing width and attacking thrust down the flank",
+      "notableFact": "Left Chelsea's academy for Brighton and switched international allegiance from England to Ghana in 2022"
+    },
+    "Denis Odoi": {
+      "bio": "Experienced Belgian-born defender of Ghanaian descent who spent a decade in English football with Fulham before returning to the Eredivisie. One of the oldest members of the squad, providing vital leadership and versatility.",
+      "playingStyle": "Versatile veteran defender who can play across the back line, known for his composure and reading of the game",
+      "keyStrengths": ["Versatility", "Leadership", "Positional awareness"],
+      "worldCup2026Role": "Experienced squad player and defensive cover across multiple positions",
+      "notableFact": "Spent eight years at Fulham across two divisions and switched his international allegiance from Belgium to Ghana"
+    },
+    "Gideon Mensah": {
+      "bio": "Athletic left-back who came through the Right to Dream Academy in Ghana before establishing himself in European football. Currently plying his trade in Ligue 1 with Auxerre after stints in Portugal and Austria.",
+      "playingStyle": "Energetic left-back who combines defensive solidity with willingness to bomb forward and support attacks",
+      "keyStrengths": ["Stamina", "Crossing", "Defensive awareness"],
+      "worldCup2026Role": "Starting left-back providing balance and defensive stability",
+      "notableFact": "Product of Ghana's famous Right to Dream Academy, which has produced numerous international footballers"
+    },
+    "Mohammed Salisu": {
+      "bio": "Imposing center-back who moved from Real Valladolid to Southampton before joining Monaco in Ligue 1. Initially hesitant about international duty, he committed to Ghana and quickly became a defensive cornerstone.",
+      "playingStyle": "Physically dominant center-back with excellent recovery pace, strong in the air and composed on the ball",
+      "keyStrengths": ["Aerial duels", "Recovery pace", "Ball-playing ability"],
+      "worldCup2026Role": "First-choice center-back and defensive anchor for the Black Stars",
+      "notableFact": "Initially declined Ghana call-ups before committing to the Black Stars ahead of the 2022 World Cup"
+    },
+    "Thomas Partey": {
+      "bio": "Ghana's most decorated midfielder who rose through Atletico Madrid's academy to become a key player before a high-profile move to Arsenal. Now with Villarreal, he remains the heartbeat of the Black Stars midfield and team captain.",
+      "playingStyle": "Complete box-to-box midfielder with powerful shooting, excellent passing range, and tireless work rate",
+      "keyStrengths": ["Long-range shooting", "Passing range", "Ball-carrying"],
+      "worldCup2026Role": "Captain and midfield general, dictating tempo and driving the team forward",
+      "notableFact": "Scored a spectacular goal against Atletico Madrid, his former club, during his time at Arsenal"
+    },
+    "Kamaldeen Sulemana": {
+      "bio": "Electrifying young winger who burst onto the scene with FC Nordsjaelland in Denmark before earning a move to Rennes and then Atalanta in Serie A. One of the most exciting talents in African football.",
+      "playingStyle": "Explosive dribbler with devastating pace who loves to take on defenders one-on-one and cut inside from the left",
+      "keyStrengths": ["Dribbling", "Pace", "One-on-one ability"],
+      "worldCup2026Role": "Key attacking weapon on the left wing, tasked with creating and scoring goals",
+      "notableFact": "Won the Danish Superliga Young Player of the Year before his 20th birthday with FC Nordsjaelland"
+    },
+    "Daniel-Kofi Kyereh": {
+      "bio": "Creative midfielder who developed in German lower-league football before earning a Bundesliga move to Freiburg. Known for his vision and technical quality in the final third.",
+      "playingStyle": "Technically gifted attacking midfielder with excellent vision, quick feet, and an eye for the killer pass",
+      "keyStrengths": ["Creativity", "Through balls", "Technical skill"],
+      "worldCup2026Role": "Playmaker option in midfield, providing creative spark in the attacking third",
+      "notableFact": "Led St. Pauli in assists during their promotion-winning season before joining Freiburg in the Bundesliga"
+    },
+    "Jordan Ayew": {
+      "bio": "The younger of the famous Ayew brothers and son of legendary Ghanaian footballer Abedi Pele. A tireless forward who has spent his career in the Premier League with Swansea, Crystal Palace, and Leicester City, earning over 100 caps for Ghana.",
+      "playingStyle": "Hard-working forward with excellent pressing ability, versatile enough to play across the front line",
+      "keyStrengths": ["Work rate", "Pressing", "Versatility"],
+      "worldCup2026Role": "Experienced squad forward who can play multiple roles across the attack",
+      "notableFact": "Part of a footballing dynasty as the son of Abedi Pele and brother of Andre Ayew, with over 100 caps for Ghana"
+    },
+    "André Ayew": {
+      "bio": "Ghana's most capped active player and the elder Ayew brother, son of the legendary Abedi Pele. A veteran leader who has played across Europe including Marseille, Swansea, and West Ham, serving as long-time Black Stars captain.",
+      "playingStyle": "Experienced, intelligent forward who uses positional awareness and movement to create chances, with strong leadership qualities",
+      "keyStrengths": ["Leadership", "Experience", "Movement"],
+      "worldCup2026Role": "Senior squad leader and mentor, providing vital experience in tournament football",
+      "notableFact": "Has represented Ghana at multiple World Cups and AFCON tournaments, with over 120 caps and following in his father Abedi Pele's legendary footsteps"
+    },
+    "Mohammed Kudus": {
+      "bio": "Ghana's brightest star and most valuable player, Kudus took the 2022 World Cup by storm with spectacular goals before earning a move from Ajax to Tottenham Hotspur. A dynamic, unpredictable attacker who can play anywhere across the forward line.",
+      "playingStyle": "Explosive, technically brilliant attacker who combines dribbling wizardry with powerful shooting from distance and clever movement",
+      "keyStrengths": ["Dribbling", "Long-range shooting", "Versatility"],
+      "worldCup2026Role": "Star player and primary creative force, expected to be Ghana's most dangerous attacking threat",
+      "notableFact": "Scored two stunning goals against South Korea at the 2022 World Cup in Qatar, announcing himself on the global stage"
+    },
+    "Abdul Manaf Nurudeen": {
+      "bio": "Young goalkeeper who has been developing in Belgian football with Eupen, serving as a backup option for the Black Stars. Represents the next generation of Ghanaian goalkeepers.",
+      "playingStyle": "Agile goalkeeper with good positioning and strong communication skills for organizing the defense",
+      "keyStrengths": ["Agility", "Positioning", "Communication"],
+      "worldCup2026Role": "Third-choice goalkeeper providing competition and depth",
+      "notableFact": "Has been a regular starter in the Belgian First Division with Eupen since his early twenties"
+    },
+    "Daniel Amartey": {
+      "bio": "Battle-hardened defender who won the Premier League and FA Cup with Leicester City before moving to Besiktas in Turkey. Overcame a serious ankle injury that sidelined him for over a year to rebuild his international career.",
+      "playingStyle": "Rugged, no-nonsense defender comfortable at center-back or defensive midfield, strong in duels and aerially dominant",
+      "keyStrengths": ["Aerial ability", "Tackling", "Positional versatility"],
+      "worldCup2026Role": "Experienced center-back providing depth and leadership in defense",
+      "notableFact": "Won the Premier League title with Leicester City in their fairytale 2015-16 season"
+    },
+    "Alexander Djiku": {
+      "bio": "French-born center-back of Ghanaian descent who switched allegiance to represent Ghana. Made his name in Ligue 1 with Strasbourg before joining Fenerbahce in Turkey, where he has become a defensive mainstay.",
+      "playingStyle": "Ball-playing center-back who reads the game well and is comfortable stepping into midfield with the ball",
+      "keyStrengths": ["Ball distribution", "Reading the game", "Composure"],
+      "worldCup2026Role": "Key center-back option, valued for his ability to build play from the back",
+      "notableFact": "Born and raised in France, choosing to represent Ghana at senior international level after being eligible through his parents"
+    },
+    "Antoine Semenyo": {
+      "bio": "Exciting English-born attacker of Ghanaian descent who chose to represent the Black Stars. A powerful, direct winger who has thrived at Bournemouth in the Premier League with his explosive running and goal threat.",
+      "playingStyle": "Powerful, direct winger with pace and physicality who drives at defenders and contributes both goals and assists",
+      "keyStrengths": ["Pace", "Physicality", "Goal threat"],
+      "worldCup2026Role": "Key attacking option on the wing, providing pace and goal threat from wide areas",
+      "notableFact": "Scored his first international goal for Ghana against Switzerland, having switched from England youth teams"
+    },
+    "Salis Abdul Samed": {
+      "bio": "Young Ghanaian midfielder who has quickly risen through European football, moving from Clermont to Lens in Ligue 1. A composed ball-winner who sits in front of the defense and controls the tempo.",
+      "playingStyle": "Disciplined defensive midfielder who excels at winning the ball back and circulating possession efficiently",
+      "keyStrengths": ["Ball-winning", "Passing accuracy", "Positional discipline"],
+      "worldCup2026Role": "Midfield anchor alongside or deputizing for Thomas Partey in the defensive midfield role",
+      "notableFact": "Earned a move to Lens after just one impressive season in Ligue 1 with Clermont Foot"
+    },
+    "Abdul Rahman Baba": {
+      "bio": "Experienced left-back who earned a move to Chelsea from Augsburg in 2015 but struggled for playing time at Stamford Bridge. Has since rebuilt his career through loans and moves, accumulating 50 caps for Ghana.",
+      "playingStyle": "Attack-minded left-back with good crossing ability and overlapping pace, experienced at the highest level",
+      "keyStrengths": ["Crossing", "Attacking runs", "Experience"],
+      "worldCup2026Role": "Backup left-back option providing depth and experience in the squad",
+      "notableFact": "Signed by Chelsea in 2015 and has since traveled across Europe including spells in Spain, France, and England"
+    },
+    "Abdul Mumin": {
+      "bio": "Center-back who developed in Portuguese football before earning a move to La Liga with Rayo Vallecano. Born in Ghana, he moved to Europe early and has steadily risen through the ranks of club and international football.",
+      "playingStyle": "Calm, composed center-back who is comfortable in a high defensive line and good at playing out from the back",
+      "keyStrengths": ["Composure", "Building from the back", "Anticipation"],
+      "worldCup2026Role": "Center-back rotation option providing tactical flexibility in defense",
+      "notableFact": "Made his La Liga debut with Rayo Vallecano after impressing in Portugal with Vitoria Guimaraes"
+    },
+    "Iñaki Williams": {
+      "bio": "Born in Bilbao to Ghanaian parents, Inaki Williams is an Athletic Club legend who holds the La Liga record for consecutive appearances. Switched his international allegiance from Spain to Ghana in 2022, adding elite quality to the Black Stars attack.",
+      "playingStyle": "Lightning-fast, physically imposing forward with tremendous stamina and the ability to stretch defenses with his pace",
+      "keyStrengths": ["Pace", "Stamina", "Physical power"],
+      "worldCup2026Role": "Starting forward or impact substitute, using his pace and power to trouble defenses",
+      "notableFact": "Holds the all-time La Liga record for most consecutive appearances, surpassing 250 straight games for Athletic Bilbao"
+    },
+    "Osman Bukari": {
+      "bio": "Talented Ghanaian winger who has plied his trade in Turkey with Trabzonspor after stints in Belgium and Slovakia. Known for his direct running and ability to beat defenders one-on-one.",
+      "playingStyle": "Tricky, quick winger who thrives in one-on-one situations and can play on either flank",
+      "keyStrengths": ["Dribbling", "Speed", "Directness"],
+      "worldCup2026Role": "Wide attacking option providing pace and creativity off the bench or in rotation",
+      "notableFact": "Celebrated a goal against Portugal at the 2022 World Cup with Cristiano Ronaldo's iconic celebration"
+    },
+    "Braydon Manu": {
+      "bio": "German-born forward of Ghanaian heritage who has spent his career in German lower divisions before breaking into the Black Stars squad. A versatile attacker who can operate across the forward line.",
+      "playingStyle": "Versatile, hard-working forward who combines technical ability with willingness to track back and press",
+      "keyStrengths": ["Versatility", "Work rate", "Technical ability"],
+      "worldCup2026Role": "Squad depth player capable of filling in across multiple forward positions",
+      "notableFact": "Born and raised in Germany, he chose to represent Ghana at international level through his Ghanaian heritage"
+    },
+    "Joseph Wollacott": {
+      "bio": "English-born goalkeeper of Ghanaian descent who plays for Charlton Athletic in League One. Chose to represent Ghana and quickly established himself as a reliable international option between the posts.",
+      "playingStyle": "Commanding goalkeeper with a tall frame who is strong on crosses and has solid shot-stopping abilities",
+      "keyStrengths": ["Commanding presence", "Cross collection", "Shot-stopping"],
+      "worldCup2026Role": "Second-choice goalkeeper providing backup and competition for the number one spot",
+      "notableFact": "Born in Bristol, England, he qualified for Ghana through his father and made his international debut in 2021"
+    },
+    "Alidu Seidu": {
+      "bio": "Quick and aggressive right-back who earned a move to Stade Rennais in Ligue 1 from Clermont. One of the most exciting young full-backs in African football with his marauding runs and defensive tenacity.",
+      "playingStyle": "Energetic, attack-minded right-back with explosive acceleration and a willingness to commit to tackles",
+      "keyStrengths": ["Pace", "Tackling", "Attacking overlaps"],
+      "worldCup2026Role": "Dynamic right-back option competing with Lamptey for the starting position",
+      "notableFact": "His energetic performances in Ligue 1 earned him a move to Rennes, one of France's top clubs"
+    },
+    "Ibrahim Sulemana": {
+      "bio": "Young central midfielder who has been developing in Serie A with Cagliari. The younger namesake (no relation) of Kamaldeen Sulemana, he represents Ghana's investment in its next generation of midfield talent.",
+      "playingStyle": "Energetic box-to-box midfielder with good technical skills and the ability to break up play and drive forward",
+      "keyStrengths": ["Energy", "Ball-carrying", "Defensive contribution"],
+      "worldCup2026Role": "Young midfield option providing energy and depth in central areas",
+      "notableFact": "One of the youngest members of the Ghana squad, earning his place through impressive performances in Serie A"
+    },
+    "Ernest Nuamah": {
+      "bio": "Exciting young winger who emerged from the Right to Dream Academy and quickly made his mark in European football. Despite Lyon's relegation to Ligue 2, his talent has kept him in the international frame.",
+      "playingStyle": "Pacy, skillful winger with quick feet and an ability to beat defenders, effective cutting in from the right side",
+      "keyStrengths": ["Speed", "Skill", "Cutting inside"],
+      "worldCup2026Role": "Young attacking option off the bench, capable of changing games with his pace and directness",
+      "notableFact": "Another product of Ghana's renowned Right to Dream Academy before making his mark in French football"
+    },
+    "Ransford-Yeboah Königsdörffer": {
+      "bio": "Young German-born striker of Ghanaian heritage who plays for Hamburg in the 2. Bundesliga. A lively forward who brings energy and movement to the attack, still developing his international career.",
+      "playingStyle": "Mobile, intelligent striker who makes clever runs in behind and is effective in pressing from the front",
+      "keyStrengths": ["Movement", "Pressing", "Finishing"],
+      "worldCup2026Role": "Backup striker option providing fresh legs and a different attacking dimension",
+      "notableFact": "Born in Germany and came through the Dresden academy before choosing to represent Ghana internationally"
+    }
+  }
+}

@@ -125,19 +125,19 @@ class IntentClassifier {
       return ChatIntent(type: ChatIntentType.venue, confidence: 0.85, entities: entities);
     }
 
-    // 12. Player (after injury/manager/venue to avoid false positives)
+    // 15. History (before player — "all time leading scorer" should be history, not player)
+    if (_isHistory(lower)) {
+      return ChatIntent(type: ChatIntentType.history, confidence: 0.85, entities: entities);
+    }
+
+    // 16. Player (after history to avoid false positives on "scorer", "goals")
     if (player != null || _isPlayerQuery(lower)) {
       return ChatIntent(type: ChatIntentType.player, confidence: 0.85, entities: entities);
     }
 
-    // 13. Team
+    // 17. Team
     if (teams.isNotEmpty && _isTeamQuery(lower)) {
       return ChatIntent(type: ChatIntentType.team, confidence: 0.85, entities: entities);
-    }
-
-    // 14. History
-    if (_isHistory(lower)) {
-      return ChatIntent(type: ChatIntentType.history, confidence: 0.85, entities: entities);
     }
 
     // 15. Odds
@@ -196,7 +196,8 @@ class IntentClassifier {
       return false;
     }
     return s.contains('when') || s.contains('schedule') || s.contains('next match') ||
-        s.contains('next game') || s.contains('play') || s.contains('kickoff') ||
+        s.contains('next game') || (s.contains('play') && !s.contains('player')) ||
+        s.contains('kickoff') ||
         s.contains('kick off') || s.contains('what time') || s.contains('fixture');
   }
 
@@ -253,6 +254,10 @@ class IntentClassifier {
         s.contains('all-time') || s.contains('most goals') || s.contains('most wins') ||
         s.contains('first world cup') || s.contains('previous world cup') ||
         s.contains('past winner') || s.contains('world cup winner') ||
+        s.contains('leading scorer') || s.contains('top scorer') ||
+        s.contains('golden boot winner') || s.contains('fastest goal') ||
+        s.contains('oldest') || s.contains('youngest') ||
+        s.contains('highest scoring') || s.contains('biggest win') ||
         _extractYear(s) != null;
   }
 
@@ -342,6 +347,59 @@ class IntentClassifier {
 
   /// Extract a player name from the message.
   String? _extractPlayer(String lower) {
+    // Check well-known nicknames first (highest priority, avoids false negatives)
+    const wellKnown = {
+      'messi': 'lionel messi',
+      'ronaldo': 'cristiano ronaldo',
+      'mbappe': 'kylian mbappe',
+      'mbappé': 'kylian mbappe',
+      'neymar': 'neymar jr',
+      'haaland': 'erling haaland',
+      'bellingham': 'jude bellingham',
+      'vinicius': 'vinicius jr',
+      'vini jr': 'vinicius jr',
+      'kane': 'harry kane',
+      'salah': 'mohamed salah',
+      'mo salah': 'mohamed salah',
+      'modric': 'luka modric',
+      'de bruyne': 'kevin de bruyne',
+      'pedri': 'pedri',
+      'yamal': 'lamine yamal',
+      'saka': 'bukayo saka',
+      'foden': 'phil foden',
+      'lewandowski': 'robert lewandowski',
+      'lewy': 'robert lewandowski',
+      'son heung': 'son heung-min',
+      'sonny': 'son heung-min',
+      'pulisic': 'christian pulisic',
+      'mckennie': 'weston mckennie',
+      'reyna': 'giovanni reyna',
+      'gio reyna': 'giovanni reyna',
+      'wirtz': 'florian wirtz',
+      'musiala': 'jamal musiala',
+      'osimhen': 'victor osimhen',
+      'hakimi': 'achraf hakimi',
+      'davies': 'alphonso davies',
+      'phonzy': 'alphonso davies',
+      'lozano': 'hirving lozano',
+      'chucky': 'hirving lozano',
+      'kubo': 'takefusa kubo',
+      'cr7': 'cristiano ronaldo',
+      'van dijk': 'virgil van dijk',
+      'vvd': 'virgil van dijk',
+      'gakpo': 'cody gakpo',
+      'darwin': 'darwin nunez',
+      'nunez': 'darwin nunez',
+      'valverde': 'fede valverde',
+      'luis diaz': 'luis diaz',
+      'doku': 'jeremy doku',
+      'gavi': 'gavi',
+    };
+
+    for (final entry in wellKnown.entries) {
+      if (_hasWord(lower, entry.key)) return entry.value;
+    }
+
     final knownPlayers = _knowledgeBase.knownPlayerNames;
     // Sort by length descending for longest match
     final sorted = knownPlayers.toList()..sort((a, b) => b.length.compareTo(a.length));
@@ -350,37 +408,11 @@ class IntentClassifier {
       // Check if any part of the player name appears (with word boundaries)
       final parts = name.split(' ');
       for (final part in parts) {
-        if (part.length >= 5 && _hasWord(lower, part)) {
+        // Lower threshold from 5 to 4 chars for short names (e.g. "Saka", "Gavi", "Kane")
+        if (part.length >= 4 && _hasWord(lower, part)) {
           return name;
         }
       }
-    }
-
-    // Check for well-known names not in player_stats files
-    // Use word-boundary matching to avoid false positives
-    const wellKnown = {
-      'messi': 'lionel messi',
-      'ronaldo': 'cristiano ronaldo',
-      'mbappe': 'kylian mbappe',
-      'mbappé': 'kylian mbappe',
-      'neymar': 'neymar jr',
-      'haaland': 'erling haaland',
-      'bellingham': 'jude bellingham',
-      'vinicius': 'vinicius jr',
-      'kane': 'harry kane',
-      'salah': 'mohamed salah',
-      'modric': 'luka modric',
-      'de bruyne': 'kevin de bruyne',
-      'pedri': 'pedri',
-      'yamal': 'lamine yamal',
-      'saka': 'bukayo saka',
-      'foden': 'phil foden',
-      'lewandowski': 'robert lewandowski',
-      'son heung': 'son heung-min',
-    };
-
-    for (final entry in wellKnown.entries) {
-      if (_hasWord(lower, entry.key)) return entry.value;
     }
 
     return null;
@@ -388,21 +420,9 @@ class IntentClassifier {
 
   /// Extract two player names from the message (for comparisons).
   List<String> _extractTwoPlayers(String lower) {
-    final knownPlayers = _knowledgeBase.knownPlayerNames.toList()
-      ..sort((a, b) => b.length.compareTo(a.length));
     final found = <String>[];
 
-    for (final name in knownPlayers) {
-      final parts = name.split(' ');
-      for (final part in parts) {
-        if (part.length >= 5 && _hasWord(lower, part) && !found.contains(name)) {
-          found.add(name);
-          break;
-        }
-      }
-      if (found.length >= 2) return found;
-    }
-
+    // Check well-known nicknames first
     const wellKnown = {
       'messi': 'lionel messi',
       'ronaldo': 'cristiano ronaldo',
@@ -412,6 +432,7 @@ class IntentClassifier {
       'haaland': 'erling haaland',
       'bellingham': 'jude bellingham',
       'vinicius': 'vinicius jr',
+      'vini jr': 'vinicius jr',
       'kane': 'harry kane',
       'salah': 'mohamed salah',
       'modric': 'luka modric',
@@ -421,12 +442,42 @@ class IntentClassifier {
       'saka': 'bukayo saka',
       'foden': 'phil foden',
       'lewandowski': 'robert lewandowski',
+      'lewy': 'robert lewandowski',
       'son heung': 'son heung-min',
+      'sonny': 'son heung-min',
+      'pulisic': 'christian pulisic',
+      'wirtz': 'florian wirtz',
+      'musiala': 'jamal musiala',
+      'osimhen': 'victor osimhen',
+      'hakimi': 'achraf hakimi',
+      'davies': 'alphonso davies',
+      'kubo': 'takefusa kubo',
+      'van dijk': 'virgil van dijk',
+      'gakpo': 'cody gakpo',
+      'darwin': 'darwin nunez',
+      'nunez': 'darwin nunez',
+      'valverde': 'fede valverde',
+      'doku': 'jeremy doku',
+      'gavi': 'gavi',
     };
 
     for (final entry in wellKnown.entries) {
       if (_hasWord(lower, entry.key) && !found.contains(entry.value)) {
         found.add(entry.value);
+      }
+      if (found.length >= 2) return found;
+    }
+
+    final knownPlayers = _knowledgeBase.knownPlayerNames.toList()
+      ..sort((a, b) => b.length.compareTo(a.length));
+
+    for (final name in knownPlayers) {
+      final parts = name.split(' ');
+      for (final part in parts) {
+        if (part.length >= 4 && _hasWord(lower, part) && !found.contains(name)) {
+          found.add(name);
+          break;
+        }
       }
       if (found.length >= 2) return found;
     }

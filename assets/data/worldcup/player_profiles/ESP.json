@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Unai Simón": {
+      "bio": "Athletic Bilbao's commanding goalkeeper who established himself as Spain's number one during the Euro 2024 cycle. Born and raised in the Basque Country, he embodies the fighting spirit of Athletic Club and has grown into one of Europe's most reliable keepers.",
+      "playingStyle": "Commanding, athletic goalkeeper with excellent reflexes, brave shot-stopping, and improving distribution with his feet",
+      "keyStrengths": ["Outstanding shot-stopping reflexes", "Command of the penalty area and aerial balls", "Bravery in one-on-one situations"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and a vocal leader organizing Spain's defensive line from behind",
+      "notableFact": "Recovered from a high-profile error in the Euro 2020 round of 16 against Croatia to become Spain's first-choice keeper"
+    },
+    "Dani Carvajal": {
+      "bio": "A Real Madrid legend and one of the most decorated right-backs in football history. Carvajal has won multiple Champions League titles and has been a cornerstone of both club and country for over a decade, combining defensive solidity with attacking thrust.",
+      "playingStyle": "Tenacious, experienced right-back who provides defensive steel and intelligent overlapping runs with pinpoint crosses",
+      "keyStrengths": ["Big-game experience and winning mentality", "Defensive positioning and tackling", "Overlapping runs and crossing ability"],
+      "worldCup2026Role": "Veteran right-back bringing leadership and Champions League-level experience to the backline when fit",
+      "notableFact": "Has won six Champions League titles with Real Madrid, scoring in the 2024 final against Borussia Dortmund"
+    },
+    "Aymeric Laporte": {
+      "bio": "A French-born center-back who chose to represent Spain, Laporte was a key figure in their Euro 2024 triumph. After years at Manchester City under Pep Guardiola, he brings elite tactical awareness and ball-playing ability from the back.",
+      "playingStyle": "Elegant, left-footed center-back who excels in possession-based systems with progressive passing and composure under pressure",
+      "keyStrengths": ["Left-footed ball progression from defense", "Positional intelligence from Guardiola's system", "Aerial strength and composure on the ball"],
+      "worldCup2026Role": "Experienced center-back option bringing Guardiola-schooled tactical intelligence and left-footed balance to the defense",
+      "notableFact": "Was born in France and played for French youth teams before switching allegiance to Spain, for whom he won Euro 2024"
+    },
+    "Nacho Fernández": {
+      "bio": "A Real Madrid academy product who spent his entire European career at the club, winning countless trophies including six Champions League titles. He moved to Saudi Arabia after Euro 2024 but remains a trusted option for Spain's national team.",
+      "playingStyle": "Versatile, reliable defender who can play across the backline and brings calm, experienced defending to any position",
+      "keyStrengths": ["Tactical versatility across all defensive positions", "Calm, assured defending in high-pressure situations", "Experience from the biggest matches in football"],
+      "worldCup2026Role": "Veteran defensive utility player providing depth and experience across the backline in his likely final major tournament",
+      "notableFact": "Won six Champions League titles with Real Madrid while often serving as a squad player, earning the nickname 'Mr. Reliable'"
+    },
+    "Robin Le Normand": {
+      "bio": "A French-born center-back who grew up in Spain and developed at Real Sociedad before a big move to Atlético Madrid. His rugged defending and aerial prowess were key to Spain's Euro 2024 success, forming a strong partnership at the back.",
+      "playingStyle": "Physical, aggressive center-back who dominates aerial duels and is strong in one-on-one defending",
+      "keyStrengths": ["Dominant aerial presence at both ends", "Strong one-on-one defending and tackling", "Consistency and reliability in a defensive partnership"],
+      "worldCup2026Role": "Starting center-back forming the backbone of Spain's defense with his physical and aerial dominance",
+      "notableFact": "Born in France but raised in Spain since childhood, he qualifies through residency and chose to represent La Roja"
+    },
+    "Mikel Merino": {
+      "bio": "A tall, dynamic midfielder who moved from Real Sociedad to Arsenal, bringing his aerial ability and goalscoring threat from midfield to the Premier League. His headed goal against Germany in the Euro 2024 quarter-final is one of Spain's most iconic recent moments.",
+      "playingStyle": "Box-to-box midfielder who combines height and aerial ability with technical quality, late runs into the box, and defensive work",
+      "keyStrengths": ["Aerial threat and goalscoring from midfield", "Box-to-box energy and stamina", "Technical quality and passing range"],
+      "worldCup2026Role": "Starting midfielder providing aerial threat, energy, and the ability to contribute at both ends of the pitch",
+      "notableFact": "Scored the dramatic stoppage-time winner against Germany in the Euro 2024 quarter-final with a towering header"
+    },
+    "Álvaro Morata": {
+      "bio": "Spain's captain and one of their most experienced internationals, Morata has played for Real Madrid, Juventus, Chelsea, Atlético Madrid, and AC Milan. Despite occasional criticism, his movement, link-up play, and international goal record are outstanding.",
+      "playingStyle": "Intelligent striker with excellent movement, strong link-up play, and clinical finishing who thrives on service from creative teammates",
+      "keyStrengths": ["Intelligent off-the-ball movement", "Clinical finishing and heading ability", "Link-up play and selfless running for teammates"],
+      "worldCup2026Role": "Captain and starting striker, leading the line with his experience, movement, and ability to bring others into play",
+      "notableFact": "Has scored in multiple Champions League finals and major tournament knockout stages, establishing himself as a big-game player for Spain"
+    },
+    "Fabián Ruiz": {
+      "bio": "A silky midfielder who emerged at Real Betis and Napoli before joining Paris Saint-Germain. His performances at Euro 2024, where he was named in the Team of the Tournament, confirmed his status as one of Europe's premier central midfielders.",
+      "playingStyle": "Elegant, technically refined midfielder who controls the tempo with smooth passing, dribbling through the lines, and creative vision",
+      "keyStrengths": ["Silky ball control and dribbling through pressure", "Progressive passing and through balls", "Long-range shooting ability"],
+      "worldCup2026Role": "Starting midfielder orchestrating play from the center, providing technical quality and creativity through the middle third",
+      "notableFact": "Was named in the Euro 2024 Team of the Tournament after a series of outstanding displays that drove Spain's title-winning campaign"
+    },
+    "Joselu Mato": {
+      "bio": "A journeyman striker who played in England and across Spain before a fairytale spell at Real Madrid where he scored crucial Champions League goals. His perseverance through years in football's lower tiers before reaching the pinnacle is remarkable.",
+      "playingStyle": "Experienced target man with good aerial ability, intelligent positioning, and a poacher's instinct inside the box",
+      "keyStrengths": ["Penalty box positioning and poaching", "Aerial ability and heading", "Experience and composure in front of goal"],
+      "worldCup2026Role": "Experienced backup striker providing an aerial and physical alternative when Spain need a different approach in attack",
+      "notableFact": "Scored two goals as a substitute in Real Madrid's dramatic Champions League semi-final comeback against Bayern Munich in 2024"
+    },
+    "Dani Olmo": {
+      "bio": "A uniquely developed talent who spent his formative years at Dinamo Zagreb in Croatia rather than in Spain, which gave him a distinctive edge. His creativity, goalscoring, and big-game performances at Euro 2024 were pivotal to Spain's title triumph.",
+      "playingStyle": "Creative, versatile attacker who can play as a number 10 or on the wing, combining vision, dribbling, and goalscoring threat",
+      "keyStrengths": ["Creative playmaking and final-third vision", "Goalscoring ability from attacking midfield", "Versatility to play multiple attacking positions"],
+      "worldCup2026Role": "Starting attacking midfielder and creative hub, tasked with unlocking defenses and contributing goals in the final third",
+      "notableFact": "Won the Euro 2024 Golden Boot (joint) and was named Player of the Tournament for his decisive performances throughout the competition"
+    },
+    "Ferran Torres": {
+      "bio": "A quick, direct attacker who established himself at Valencia before spells at Manchester City and Barcelona. His international record is exceptional relative to his age, and he has consistently delivered for Spain in major tournaments.",
+      "playingStyle": "Direct, pacey forward who makes intelligent runs in behind, finishes clinically, and can play across the front line",
+      "keyStrengths": ["Pace and intelligent runs behind defenses", "Clinical finishing inside the box", "Impressive international goalscoring record"],
+      "worldCup2026Role": "Rotation attacker providing pace, directness, and a proven international goal threat from either wing or through the middle",
+      "notableFact": "Has one of the best goals-per-game ratios in Spain's history, scoring consistently in international football from a young age"
+    },
+    "David Raya": {
+      "bio": "A Spanish goalkeeper who built his career in England's lower leagues with Blackburn and Brentford before joining Arsenal, where he became the Premier League's best goalkeeper. His rise from the Championship to elite-level football is a story of perseverance.",
+      "playingStyle": "Modern goalkeeper who excels at distribution, sweeper-keeper actions, and penalty saving, thriving in a high-defensive-line system",
+      "keyStrengths": ["Exceptional distribution and playing out from the back", "Penalty-saving record", "Comfort in high-line, possession-based systems"],
+      "worldCup2026Role": "High-quality backup goalkeeper pushing Unai Simón for the starting spot, bringing Premier League experience and elite distribution",
+      "notableFact": "Won the Premier League Golden Glove at Arsenal and has one of the best penalty-saving records in English football"
+    },
+    "Alejandro Grimaldo": {
+      "bio": "A Barcelona academy graduate who found his breakthrough at Benfica in Portugal before joining Bayer Leverkusen, where he was instrumental in their unbeaten Bundesliga title. His offensive output from left-back is among the best in world football.",
+      "playingStyle": "Attack-minded left-back with exceptional crossing, set-piece delivery, and the ability to score spectacular free kicks",
+      "keyStrengths": ["Outstanding crossing and set-piece delivery", "Free-kick goalscoring ability", "Attacking output rivaling most wingers"],
+      "worldCup2026Role": "Starting left-back providing world-class offensive output, set-piece expertise, and width in Spain's attacking system",
+      "notableFact": "Registered over 15 goal contributions in Leverkusen's unbeaten Bundesliga season, unprecedented numbers for a full-back"
+    },
+    "Rodri Hernández": {
+      "bio": "The 2024 Ballon d'Or winner and the heartbeat of both Manchester City and Spain. Rodri's importance is so immense that City's form visibly drops without him, and his metronomic presence was the foundation of Spain's Euro 2024 triumph.",
+      "playingStyle": "Complete defensive midfielder who controls the game's rhythm with precise passing, intelligent positioning, and an elite reading of the game",
+      "keyStrengths": ["Exceptional game control and tempo setting", "Tactical intelligence and positional discipline", "Passing accuracy and long-range shooting"],
+      "worldCup2026Role": "The irreplaceable midfield anchor and Spain's most important player, controlling the game from deep and setting the team's rhythm",
+      "notableFact": "Won the 2024 Ballon d'Or, becoming the first defensive midfielder to win the award in over a decade, and went on a 70+ match unbeaten run with City"
+    },
+    "Marc Cucurella": {
+      "bio": "An energetic left-back who developed at Barcelona's La Masia before playing for Getafe, Brighton, and Chelsea. His tireless running and defensive tenacity made him a fan favorite at Euro 2024 despite the controversy around handball incidents.",
+      "playingStyle": "Energetic, aggressive left-back who defends with intensity, covers every blade of grass, and provides attacking width",
+      "keyStrengths": ["Tireless work rate and energy", "Aggressive defending and pressing", "Versatility to play left-back or left wing-back"],
+      "worldCup2026Role": "Rotation option at left-back bringing boundless energy, defensive intensity, and the ability to cover the entire left flank",
+      "notableFact": "Became a viral sensation at Euro 2024, with his distinctive curly hair and spirited celebrations endearing him to fans worldwide"
+    },
+    "Pedri González": {
+      "bio": "A midfield maestro who joined Barcelona as a teenager from Las Palmas and immediately looked like he belonged at the highest level. Despite battling injuries, his talent is undeniable -- smooth passing, intelligent movement, and the ability to control matches from central midfield.",
+      "playingStyle": "Technically exquisite midfielder who plays with a maturity beyond his years, combining smooth passing, press resistance, and spatial awareness",
+      "keyStrengths": ["Press resistance and ability to receive under pressure", "Smooth, accurate passing and ball retention", "Spatial awareness and intelligent positioning"],
+      "worldCup2026Role": "Starting central midfielder forming the creative engine alongside Rodri, controlling possession and threading passes through the lines",
+      "notableFact": "Was named the Best Young Player at Euro 2020 at just 18 years old, drawing comparisons to Andrés Iniesta"
+    },
+    "Nico Williams": {
+      "bio": "A explosive winger from Athletic Bilbao who lit up Euro 2024 with his pace, directness, and fearless dribbling. Born to Ghanaian parents who walked across the Sahara to reach Spain, his story is one of the most inspiring in modern football.",
+      "playingStyle": "Explosive, direct winger with blistering pace, fearless one-on-one dribbling, and the ability to score and create in equal measure",
+      "keyStrengths": ["Blistering pace and acceleration", "Fearless one-on-one dribbling ability", "End product with both goals and assists"],
+      "worldCup2026Role": "Starting left winger and one of Spain's primary attacking weapons, tasked with stretching defenses and creating chances with his pace",
+      "notableFact": "His parents walked across the Sahara Desert from Ghana to reach Spain, and his brother Iñaki plays internationally for Ghana"
+    },
+    "Martín Zubimendi": {
+      "bio": "A one-club man at Real Sociedad who turned down offers from top European clubs out of loyalty to his hometown team. His elegant reading of the game and ability to dictate play from the base of midfield have drawn comparisons to Spanish midfield legends.",
+      "playingStyle": "Elegant, deep-lying playmaker who shields the defense with intelligent positioning and distributes the ball with metronomic precision",
+      "keyStrengths": ["Elite positional awareness and game reading", "Precise distribution from deep positions", "Press resistance and composure on the ball"],
+      "worldCup2026Role": "Key backup to Rodri in the defensive midfield role, providing a seamless stylistic replacement with his similar skillset",
+      "notableFact": "Famously turned down a move to Liverpool despite agreeing personal terms, choosing to stay loyal to his boyhood club Real Sociedad"
+    },
+    "Lamine Yamal": {
+      "bio": "The youngest player to score at a European Championship, Yamal is a generational talent who debuted for Barcelona at 15 and Spain at 16. His precocious ability, fearless mentality, and dazzling skill have made him one of the most exciting players on the planet.",
+      "playingStyle": "Prodigiously talented right winger who combines outrageous close control, creative vision, and a devastating left foot far beyond his teenage years",
+      "keyStrengths": ["Extraordinary dribbling and close control", "Creative vision and assist-making ability", "Devastating left foot for shots and crosses"],
+      "worldCup2026Role": "Starting right winger and Spain's most electrifying talent, the player opponents fear most and who can single-handedly change matches",
+      "notableFact": "Became the youngest ever scorer at a European Championship at Euro 2024 with a stunning goal against France in the semi-final at age 16"
+    },
+    "Jesús Navas": {
+      "bio": "A legendary Spanish winger-turned-right-back who has been representing his country for nearly two decades. A 2010 World Cup and Euro 2012 winner, Navas is one of Spain's most capped players and a symbol of loyalty to his hometown club Sevilla.",
+      "playingStyle": "Experienced, tireless right-back with electric pace that defies his age, strong defensive positioning, and a veteran's reading of the game",
+      "keyStrengths": ["Remarkable pace maintained at veteran age", "Defensive experience and positioning", "Big-tournament experience spanning two decades"],
+      "worldCup2026Role": "Senior squad member and emergency right-back option, bringing unmatched tournament experience and leadership in what would be a farewell appearance",
+      "notableFact": "Won the 2010 World Cup, Euro 2012, and two Europa League titles with Sevilla, and has battled a well-known phobia of traveling away from home"
+    },
+    "Mikel Oyarzabal": {
+      "bio": "Real Sociedad's captain and a player who has delivered in Spain's biggest moments, including scoring the winning goal in the Euro 2024 final. His intelligence, timing of runs, and ability to score crucial goals make him invaluable to the national team.",
+      "playingStyle": "Intelligent, versatile forward who makes clever runs, times his movement perfectly, and scores decisive goals in big moments",
+      "keyStrengths": ["Decisive goalscoring in key moments", "Intelligent movement and positioning", "Versatility to play on either wing or as a striker"],
+      "worldCup2026Role": "Impact substitute and big-game player who can change matches with his movement and finishing, especially in knockout stages",
+      "notableFact": "Scored the winning goal in the Euro 2024 final against England, cementing his status as one of Spain's most clutch players"
+    },
+    "Pau Torres": {
+      "bio": "A left-footed center-back who developed at Villarreal and helped them win the Europa League before moving to Aston Villa in the Premier League. His elegance on the ball and composure in possession make him ideal for Spain's playing philosophy.",
+      "playingStyle": "Elegant, left-footed center-back who excels at playing out from the back with progressive passing and composed defending",
+      "keyStrengths": ["Left-footed ball progression from defense", "Composure in possession and build-up play", "Ability to carry the ball forward from deep"],
+      "worldCup2026Role": "Rotation center-back providing left-footed balance and ball-playing quality when Spain need to dominate possession from the back",
+      "notableFact": "Was a key part of Villarreal's historic Europa League triumph in 2021, defeating Manchester United in the final on penalties"
+    },
+    "Álex Remiro": {
+      "bio": "Real Sociedad's reliable goalkeeper who has been a consistent performer in La Liga for several years. His steady presence between the posts and loyalty to his club have earned him a place in Spain's deep goalkeeping pool.",
+      "playingStyle": "Steady, reliable goalkeeper with good shot-stopping, consistent performances, and calm handling of crosses",
+      "keyStrengths": ["Consistent shot-stopping ability", "Calm handling and command of the area", "Reliable distribution under pressure"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced depth and a steady training partner for the first and second-choice keepers",
+      "notableFact": "Was part of the Real Sociedad side that ended their 34-year wait for the Copa del Rey title in 2020"
+    },
+    "Gavi Páez": {
+      "bio": "A fearless, fiery midfielder who burst into Barcelona's first team as a 17-year-old and immediately established himself as a key player. His aggressive pressing, tenacity, and technical skill earned him the Golden Boy award in 2022, and he has been rebuilding after a serious knee injury.",
+      "playingStyle": "Fiery, aggressive midfielder who presses relentlessly, competes for every ball, and combines tenacity with surprising technical quality",
+      "keyStrengths": ["Relentless pressing and ball recovery", "Fearless tackling and competitive mentality", "Technical quality under intense pressure"],
+      "worldCup2026Role": "Midfield dynamo providing energy, aggression, and pressing intensity as a starter or impactful substitute",
+      "notableFact": "Won the 2022 Golden Boy award and became one of the youngest players to represent Spain, debuting at 17 years and 62 days"
+    },
+    "Ayoze Pérez": {
+      "bio": "A versatile attacker who spent years in the Premier League with Newcastle and Leicester before returning to Spain with Villarreal, where he rediscovered his best form. His experience and ability to play multiple forward positions add valuable depth to Spain's squad.",
+      "playingStyle": "Intelligent, versatile forward who can play across the attacking line, combining clever movement with clinical finishing",
+      "keyStrengths": ["Tactical intelligence and versatility", "Clever movement and positioning", "Clinical finishing ability"],
+      "worldCup2026Role": "Experienced squad player providing attacking depth and versatility across the forward line from the bench",
+      "notableFact": "Scored a memorable hat-trick for Newcastle against Southampton in the Premier League during his time in England"
+    },
+    "Dani Vivian": {
+      "bio": "An Athletic Bilbao center-back who has risen through the ranks at the Basque club to become a dependable defender in La Liga. His partnership with other Athletic players in the national team setup gives Spain a well-drilled defensive option.",
+      "playingStyle": "Solid, committed center-back who defends aggressively, wins aerial duels, and brings a warrior mentality to the backline",
+      "keyStrengths": ["Aerial dominance and physical defending", "Committed tackling and blocking", "Strong understanding with Athletic Bilbao teammates"],
+      "worldCup2026Role": "Defensive depth option at center-back, providing cover and a physical presence when needed in the squad",
+      "notableFact": "Has been part of Athletic Bilbao's resurgence in recent seasons, helping them compete consistently in the top half of La Liga"
+    }
+  }
+}

@@ -314,6 +314,26 @@ void main() {
       expect(result.year, '2018');
     });
 
+    test('classifies "all time leading scorer in world cup history" as history', () {
+      final result = classifier.classify('who is the all time leading scorer in world cup history?');
+      expect(result.type, ChatIntentType.history);
+    });
+
+    test('classifies "top scorer in world cup" as history', () {
+      final result = classifier.classify('who is the top scorer in world cup?');
+      expect(result.type, ChatIntentType.history);
+    });
+
+    test('classifies "fastest goal in world cup" as history', () {
+      final result = classifier.classify('what was the fastest goal in world cup history?');
+      expect(result.type, ChatIntentType.history);
+    });
+
+    test('classifies "youngest player to score" as history', () {
+      final result = classifier.classify('who is the youngest player to score in a world cup?');
+      expect(result.type, ChatIntentType.history);
+    });
+
     test('extracts valid WC years only', () {
       // 2020 is not a WC year (should be null)
       final result = classifier.classify('what happened in 2020');

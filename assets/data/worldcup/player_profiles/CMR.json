@@ -1,0 +1,186 @@
+{
+  "players": {
+    "André Onana": {
+      "bio": "World-class Cameroonian goalkeeper who is the undisputed number one at Manchester United. Developed at the Barcelona academy before starring at Ajax and Inter Milan.",
+      "playingStyle": "Sweeper-keeper with exceptional distribution, bold positioning, and command of the penalty area",
+      "keyStrengths": ["Distribution", "Sweeper-keeper ability", "Shot-stopping"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and one of the best keepers at the tournament",
+      "notableFact": "Reached the Champions League final with Inter Milan in 2023 and was signed by Manchester United for a reported 47 million pounds"
+    },
+    "Christopher Wooh": {
+      "bio": "Young Cameroonian center-back who has been developing well at Stade Rennais in Ligue 1. A physical defender with good aerial ability and improving distribution.",
+      "playingStyle": "Athletic, physical center-back who dominates in aerial duels and defends with aggression",
+      "keyStrengths": ["Aerial ability", "Physical presence", "Aggression"],
+      "worldCup2026Role": "Starting center-back or key rotation defender bringing youth and physicality",
+      "notableFact": "Made the move from Belgian football to Ligue 1 and has quickly established himself as a first-team regular"
+    },
+    "Enzo Tchato": {
+      "bio": "Young Cameroonian right-back playing at Montpellier in Ligue 1. A modern, attack-minded full-back with energy and pace to burn up and down the flank.",
+      "playingStyle": "Energetic, attacking right-back who provides width and pace in the final third",
+      "keyStrengths": ["Pace", "Attacking instinct", "Energy"],
+      "worldCup2026Role": "Attacking right-back option providing a dynamic presence on the flank",
+      "notableFact": "Has been one of the emerging young full-back talents in Ligue 1 with Montpellier"
+    },
+    "Enzo Ebosse": {
+      "bio": "Left-footed Cameroonian center-back who has carved out a career in Serie A with Udinese. His ability to play from the left side of defense makes him a valuable tactical option.",
+      "playingStyle": "Left-footed center-back who builds play from the back and provides balance to the defense",
+      "keyStrengths": ["Left-footed distribution", "Build-up play", "Positional awareness"],
+      "worldCup2026Role": "Starting or rotation center-back valued for his left foot and Serie A experience",
+      "notableFact": "Born in France to Cameroonian parents, he chose to represent Cameroon at international level"
+    },
+    "Michael Ngadeu-Ngadjui": {
+      "bio": "Experienced Cameroonian center-back who has been a stalwart of the national team for years. A commanding presence in Belgian football with Gent.",
+      "playingStyle": "Tall, commanding center-back who organizes the defense and wins aerial battles",
+      "keyStrengths": ["Aerial dominance", "Leadership", "Defensive organization"],
+      "worldCup2026Role": "Veteran defensive leader providing experience and organization from the backline",
+      "notableFact": "Has been a key figure in Cameroon's qualification campaigns and AFCON tournaments for nearly a decade"
+    },
+    "Ambroise Oyongo": {
+      "bio": "Veteran Cameroonian left-back who has had an extensive career including time in MLS with the Montreal Impact. Brings vast international experience to the squad.",
+      "playingStyle": "Experienced left-back who provides defensive stability and measured support in attack",
+      "keyStrengths": ["Experience", "Defensive stability", "International pedigree"],
+      "worldCup2026Role": "Veteran backup left-back providing depth and leadership to the defensive group",
+      "notableFact": "Has represented Cameroon at multiple AFCON tournaments and has over 50 international caps"
+    },
+    "Léandre Tawamba": {
+      "bio": "Experienced Cameroonian striker who has been a prolific goalscorer in domestic and African football. Brings physicality and goal threat to the attacking lineup.",
+      "playingStyle": "Physical, powerful striker who holds the ball up and finishes with authority",
+      "keyStrengths": ["Hold-up play", "Physical strength", "Finishing"],
+      "worldCup2026Role": "Experienced squad striker providing a physical option in attack and domestic league experience",
+      "notableFact": "Has been one of the top goalscorers in Cameroonian domestic football for several seasons"
+    },
+    "André-Frank Zambo Anguissa": {
+      "bio": "Elite Cameroonian midfielder who has been one of the best in Serie A at Napoli. A complete midfielder whose power, technique, and tenacity make him world-class.",
+      "playingStyle": "Dominant box-to-box midfielder who combines physical power with technical quality and tireless running",
+      "keyStrengths": ["Physical power", "Ball-carrying", "Defensive work rate"],
+      "worldCup2026Role": "Cameroon's most important outfield player and midfield engine who drives the team forward",
+      "notableFact": "Was a key player in Napoli's Serie A title win in 2023, their first league championship in over 30 years"
+    },
+    "Eric Maxim Choupo-Moting": {
+      "bio": "Well-traveled Cameroonian forward who has played at PSG, Bayern Munich, and now in MLS. Despite never being the main star, he has consistently contributed at the highest level.",
+      "playingStyle": "Tall, technical forward who can hold the ball, link play, and finish in the box",
+      "keyStrengths": ["Hold-up play", "Technical ability for his size", "Big-game composure"],
+      "worldCup2026Role": "Experienced veteran striker providing depth, hold-up play, and big-game experience",
+      "notableFact": "Scored a last-minute Champions League equalizer for PSG against Atalanta in 2020, one of the most dramatic goals in the tournament's history"
+    },
+    "Vincent Aboubakar": {
+      "bio": "Cameroon's captain and most prolific active goalscorer. A national hero who scored twice in the group stage at the 2022 World Cup, including a memorable winner against Brazil.",
+      "playingStyle": "Complete striker with intelligent movement, clinical finishing, and the ability to create for others",
+      "keyStrengths": ["Clinical finishing", "Leadership", "Big-game mentality"],
+      "worldCup2026Role": "Captain and attacking leader whose goals and leadership drive Cameroon's tournament ambitions",
+      "notableFact": "Scored the winning goal against Brazil at the 2022 World Cup, becoming an instant legend in Cameroonian football"
+    },
+    "Bryan Mbeumo": {
+      "bio": "Explosive Cameroonian winger who has been one of the Premier League's most dangerous attackers at Brentford. His pace and finishing have drawn attention from top clubs across Europe.",
+      "playingStyle": "Pacy, left-footed winger who cuts inside from the right and finishes with precision",
+      "keyStrengths": ["Pace", "Left-footed finishing", "Movement off the ball"],
+      "worldCup2026Role": "Star attacker and one of Cameroon's most potent weapons, expected to be the primary goal threat",
+      "notableFact": "Has been one of the top scorers in the Premier League at Brentford, outperforming many more expensive forwards"
+    },
+    "Devis Epassy": {
+      "bio": "Experienced Cameroonian goalkeeper who has been a reliable backup and occasional starter for the national team. Currently plays in the Saudi Pro League.",
+      "playingStyle": "Solid, dependable goalkeeper with good shot-stopping ability and presence on crosses",
+      "keyStrengths": ["Shot-stopping", "Dependability", "Experience"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced backup to Onana",
+      "notableFact": "Was Cameroon's starting goalkeeper at the 2022 World Cup in Qatar, performing admirably on the biggest stage"
+    },
+    "Collins Fai": {
+      "bio": "Long-serving Cameroonian right-back who has been a fixture of the national team for years. A dependable defender who provides consistency and experience on the right flank.",
+      "playingStyle": "Dependable, hard-working right-back who fulfills his defensive duties and supports the attack",
+      "keyStrengths": ["Consistency", "Defensive reliability", "Experience"],
+      "worldCup2026Role": "Experienced backup right-back providing depth and reliability on the flanks",
+      "notableFact": "Has over 55 caps for Cameroon and has represented the country at multiple AFCON tournaments and World Cups"
+    },
+    "Martin Hongla": {
+      "bio": "Cameroonian midfielder who has built a solid career in Serie A with Verona. A hard-working midfielder who provides energy and combativeness in the center of the park.",
+      "playingStyle": "Energetic, combative midfielder who wins tackles, breaks up play, and drives forward",
+      "keyStrengths": ["Tackling", "Energy", "Forward driving"],
+      "worldCup2026Role": "Midfield rotation option providing energy, defensive quality, and Serie A experience",
+      "notableFact": "Has been a regular starter in Serie A with Verona, gaining experience in one of Europe's most tactically demanding leagues"
+    },
+    "Jean-Charles Castelletto": {
+      "bio": "French-born Cameroonian center-back who has been a solid performer at Nantes in Ligue 1. Chose to represent Cameroon at international level and has become a regular in the squad.",
+      "playingStyle": "Steady, composed center-back who reads the game well and distributes cleanly",
+      "keyStrengths": ["Composure", "Game reading", "Aerial ability"],
+      "worldCup2026Role": "Starting center-back or reliable rotation option in the defensive line",
+      "notableFact": "Scored Cameroon's first goal at the 2022 World Cup in Qatar against Switzerland"
+    },
+    "Olivier Ntcham": {
+      "bio": "Talented Cameroonian midfielder who came through the Manchester City academy and played for Celtic in Scotland. A technically gifted player with passing vision.",
+      "playingStyle": "Technical midfielder with good vision, neat passing, and the ability to pick out forward runners",
+      "keyStrengths": ["Technical ability", "Passing vision", "Composure on the ball"],
+      "worldCup2026Role": "Creative midfield option who can provide a different dimension with his passing quality",
+      "notableFact": "Came through Manchester City's academy and won multiple Scottish league titles with Celtic"
+    },
+    "Karl Toko Ekambi": {
+      "bio": "Experienced Cameroonian winger who made his name in Ligue 1 with Lyon, becoming one of their key players. A direct and pacy attacker who scores important goals.",
+      "playingStyle": "Direct, pacy winger who runs at defenders, gets into scoring positions, and finishes clinically",
+      "keyStrengths": ["Pace", "Goal threat from wide", "Direct running"],
+      "worldCup2026Role": "Experienced wide attacker providing goals, pace, and big-game experience",
+      "notableFact": "Was Cameroon's top scorer at AFCON 2021 on home soil with five goals, including crucial knockout stage strikes"
+    },
+    "Clinton N'Jie": {
+      "bio": "Former Tottenham Hotspur and Lyon winger who has experienced football at the highest level in Europe. Now plays in Cyprus but brings valuable international experience.",
+      "playingStyle": "Quick, skillful winger who takes on defenders and delivers crosses from wide positions",
+      "keyStrengths": ["Pace", "Dribbling", "Crossing"],
+      "worldCup2026Role": "Experienced squad player providing attacking depth and versatility from the bench",
+      "notableFact": "Played in the Premier League with Tottenham Hotspur and in Ligue 1 with Lyon and Marseille"
+    },
+    "Christian Bassogog": {
+      "bio": "Cameroonian winger who became famous at AFCON 2017 when he was named Player of the Tournament as Cameroon won the title. Known for his explosive pace.",
+      "playingStyle": "Blisteringly fast winger who terrifies defenders with his raw speed and direct running",
+      "keyStrengths": ["Electric pace", "Direct running", "Tournament pedigree"],
+      "worldCup2026Role": "Impact substitute whose raw pace can devastate tiring defenses late in matches",
+      "notableFact": "Named Player of the Tournament at AFCON 2017 despite being relatively unknown before the competition"
+    },
+    "Georges-Kevin Nkoudou": {
+      "bio": "French-born Cameroonian winger who played for Tottenham in the Premier League before moving to Turkish football with Besiktas. A pacy attacker with European pedigree.",
+      "playingStyle": "Quick, direct winger who stretches defenses with his pace and delivers crosses from wide areas",
+      "keyStrengths": ["Pace", "Crossing", "European experience"],
+      "worldCup2026Role": "Wide attacking depth option providing pace and quality from the bench",
+      "notableFact": "Won a Turkish league title with Besiktas and played in the Premier League with Tottenham Hotspur"
+    },
+    "Jean-Pierre Nsame": {
+      "bio": "Prolific Cameroonian striker who has been a goalscoring machine at Young Boys in the Swiss Super League. One of the most consistent scorers in Swiss football history.",
+      "playingStyle": "Clinical penalty-box striker who finds space, makes runs, and finishes with composure",
+      "keyStrengths": ["Clinical finishing", "Movement in the box", "Consistency"],
+      "worldCup2026Role": "Goal-hungry striker option providing a proven scoring record as a backup or rotation option",
+      "notableFact": "Won the Swiss Super League Golden Boot multiple times and has been the top scorer in the league in multiple seasons"
+    },
+    "Simon Ngapandouetnbu": {
+      "bio": "Young Cameroonian goalkeeper who has emerged from Marseille's academy. One of the most exciting young goalkeeping talents in French football.",
+      "playingStyle": "Tall, athletic young goalkeeper with quick reflexes and modern distribution skills",
+      "keyStrengths": ["Reflexes", "Distribution", "Youth and potential"],
+      "worldCup2026Role": "Young third-choice goalkeeper gaining experience in the senior international setup",
+      "notableFact": "Became one of the youngest goalkeepers in Marseille's history when he was given first-team opportunities"
+    },
+    "Nouhou Tolo": {
+      "bio": "Fan-favorite Cameroonian left-back who has become a cult hero at Seattle Sounders in MLS. Known for his passionate defending and infectious energy on and off the pitch.",
+      "playingStyle": "Aggressive, energetic left-back who tackles ferociously and provides overlapping runs with enthusiasm",
+      "keyStrengths": ["Aggressive tackling", "Energy", "Passion"],
+      "worldCup2026Role": "Starting or backup left-back who brings energy, passion, and defensive tenacity",
+      "notableFact": "Became a cult hero in Seattle for his enthusiastic, all-action style of play and has won the MLS Cup with the Sounders"
+    },
+    "Pierre Kunde": {
+      "bio": "Experienced Cameroonian midfielder who has played in Spain, France, and Greece. A versatile midfielder who provides quality in multiple midfield roles.",
+      "playingStyle": "Technically sound, versatile midfielder who can play as a holder or box-to-box player",
+      "keyStrengths": ["Versatility", "Technical quality", "Experience across leagues"],
+      "worldCup2026Role": "Midfield depth player providing versatility and experience across different positions",
+      "notableFact": "Has played across four different European leagues, giving him a wide range of tactical experience"
+    },
+    "Carlos Baleba": {
+      "bio": "Exceptional young Cameroonian midfielder who has burst onto the scene at Brighton in the Premier League. Considered one of the most promising young midfielders in world football.",
+      "playingStyle": "Dynamic, intelligent young midfielder who breaks up play, carries the ball, and distributes with maturity beyond his years",
+      "keyStrengths": ["Ball-winning ability", "Ball-carrying", "Tactical intelligence"],
+      "worldCup2026Role": "Key young midfielder who could be a breakout star of the tournament with his dynamism and quality",
+      "notableFact": "Brighton signed him as one of the most exciting young talents in French football, and he has immediately impressed in the Premier League"
+    },
+    "Georges Douath": {
+      "bio": "Young Cameroonian midfielder developing at Red Bull Salzburg in Austria. Part of the pipeline of Cameroonian talent coming through European football academies.",
+      "playingStyle": "Energetic young midfielder who presses high, recovers possession, and transitions play quickly",
+      "keyStrengths": ["Pressing", "Energy", "Quick transitions"],
+      "worldCup2026Role": "Young squad member gaining experience, available as an energetic midfield option from the bench",
+      "notableFact": "Came through Red Bull Salzburg's famed development system, which has produced numerous top-level players"
+    }
+  }
+}

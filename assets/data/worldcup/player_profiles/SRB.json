@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Predrag Rajković": {
+      "bio": "Experienced goalkeeper who earned the trust of the Serbian national team across multiple campaigns. Made his name in French football with Reims before moving to the Saudi Pro League with Al-Ittihad, bringing European and Asian experience.",
+      "playingStyle": "Commanding goalkeeper with sharp reflexes, excellent positioning, and the confidence to dominate his penalty area in high-pressure situations.",
+      "keyStrengths": ["Reflexes", "Positioning", "Command of area"],
+      "worldCup2026Role": "First-choice goalkeeper expected to start in Serbia's group stage matches.",
+      "notableFact": "Was highly regarded as a teenage prodigy at Red Star Belgrade and has represented Serbia at multiple major tournaments."
+    },
+    "Strahinja Pavlović": {
+      "bio": "Rising young center-back who has earned a high-profile move to AC Milan in Serie A, establishing himself as one of the most promising defenders in European football. A physically dominant presence at the back.",
+      "playingStyle": "Aggressive, powerful center-back who excels in one-on-one defending, wins aerial duels with authority, and carries the ball forward from the back line.",
+      "keyStrengths": ["Physical dominance", "Aerial ability", "Ball-carrying from defense"],
+      "worldCup2026Role": "Starting center-back and a key part of Serbia's defensive spine, expected to partner Milenkovic.",
+      "notableFact": "Secured a move to AC Milan, one of the most storied clubs in world football, while still in his early twenties."
+    },
+    "Filip Mladenović": {
+      "bio": "Experienced left-back who has spent the majority of his career in Greek football with Panathinaikos after earlier spells in Serbian and German football. A reliable defensive option with over 35 international caps.",
+      "playingStyle": "Steady, defensively focused left-back who provides consistent positioning, makes clean tackles, and contributes occasional forward runs with crosses into the box.",
+      "keyStrengths": ["Defensive reliability", "Crossing", "Experience"],
+      "worldCup2026Role": "Backup left-back providing experienced cover on the left side of defense.",
+      "notableFact": "Has played extensively in the Greek Super League, gaining valuable European competition experience with Panathinaikos."
+    },
+    "Nikola Milenković": {
+      "bio": "Imposing center-back who spent many productive years at Fiorentina in Serie A before earning a move to Nottingham Forest in the Premier League. A towering defensive presence who also contributes goals from set pieces.",
+      "playingStyle": "Tall, physical center-back who dominates aerially, makes strong challenges, and is a significant threat from set-piece situations in the opposition box.",
+      "keyStrengths": ["Aerial dominance", "Set-piece threat", "Physical strength"],
+      "worldCup2026Role": "Starting center-back and defensive leader, expected to marshal Serbia's backline and provide a goal threat from corners.",
+      "notableFact": "Has scored 4 goals in 55 international caps, an impressive tally for a center-back, mostly from set-piece situations."
+    },
+    "Miloš Veljković": {
+      "bio": "Experienced center-back who spent many years in Germany's Bundesliga with Werder Bremen before returning to Serbian football with Red Star Belgrade. A calm, composed defender with significant international experience.",
+      "playingStyle": "Composed, ball-playing center-back who reads the game intelligently, positions himself well, and distributes the ball cleanly from the back.",
+      "keyStrengths": ["Positional awareness", "Composure on the ball", "Reading of the game"],
+      "worldCup2026Role": "Experienced center-back rotation option who provides depth and calm leadership in the defensive unit.",
+      "notableFact": "Developed in German football with Basel and Werder Bremen, gaining Bundesliga experience over many seasons."
+    },
+    "Nemanja Gudelj": {
+      "bio": "Versatile veteran midfielder who has been a fixture at Sevilla in La Liga for several years, capable of playing in midfield or at center-back. A calm presence who has featured in multiple Europa League campaigns.",
+      "playingStyle": "Intelligent defensive midfielder who shields the back line, distributes the ball with authority, and can drop into center-back when needed.",
+      "keyStrengths": ["Tactical intelligence", "Versatility", "Passing range"],
+      "worldCup2026Role": "Experienced midfield anchor who provides defensive stability and tactical flexibility, capable of filling multiple positions.",
+      "notableFact": "Has been part of multiple Sevilla Europa League campaigns and can seamlessly switch between defensive midfield and center-back."
+    },
+    "Dušan Tadić": {
+      "bio": "Serbia's most-capped active player and former captain with over 105 caps. The creative heartbeat of the team who starred at Ajax, leading them to a Champions League semifinal, before moving to the Middle East. A natural leader and set-piece specialist.",
+      "playingStyle": "Creative, left-footed playmaker with exceptional vision, precise passing, and the ability to deliver dangerous crosses and free kicks from almost anywhere.",
+      "keyStrengths": ["Vision and creativity", "Set-piece delivery", "Leadership"],
+      "worldCup2026Role": "Captain and creative fulcrum who will orchestrate Serbia's attacks, deliver set pieces, and provide big-game experience.",
+      "notableFact": "Led Ajax to the 2018-19 Champions League semifinal with outstanding performances and has scored over 20 goals for Serbia in 105+ appearances."
+    },
+    "Nemanja Maksimović": {
+      "bio": "Hardworking central midfielder who has played across Europe in France and Spain before moving to the UAE Pro League. Known for his tireless engine and ability to break up play in the middle of the park.",
+      "playingStyle": "Industrious, box-to-box midfielder who covers large areas of the pitch, makes important interceptions, and contributes to both defensive and attacking phases.",
+      "keyStrengths": ["Work rate", "Ball recovery", "Box-to-box running"],
+      "worldCup2026Role": "Midfield squad player who provides energy and defensive cover when introduced from the bench.",
+      "notableFact": "Scored the winning goal for Serbia's U-20 team in the 2015 FIFA U-20 World Cup final against Brazil."
+    },
+    "Aleksandar Mitrović": {
+      "bio": "Serbia's all-time leading goalscorer with 58 goals in 90 caps, Mitrovic is a fearsome striker who terrorizes defenders with his physical power and heading ability. Broke scoring records at Fulham before a lucrative move to Al-Hilal in Saudi Arabia.",
+      "playingStyle": "Powerful, aggressive center-forward who dominates aerial duels, holds the ball up with his back to goal, and possesses a lethal instinct inside the penalty area.",
+      "keyStrengths": ["Heading ability", "Physical strength", "Penalty-box finishing"],
+      "worldCup2026Role": "Starting striker and Serbia's primary goal threat, expected to lead the line and be the focal point of every attack.",
+      "notableFact": "Serbia's all-time record goalscorer with 58 goals, and broke the Championship single-season scoring record with 43 goals for Fulham in 2021-22."
+    },
+    "Dušan Vlahović": {
+      "bio": "One of the most talented young strikers in world football who has been Juventus' main striker since his big-money move from Fiorentina. A clinical, powerful forward with enormous potential to become one of the game's elite number nines.",
+      "playingStyle": "Strong, left-footed striker with explosive shooting power, clinical finishing from both inside and outside the box, and intelligent movement to create space.",
+      "keyStrengths": ["Powerful left-footed shot", "Clinical finishing", "Movement in the box"],
+      "worldCup2026Role": "Key attacking partner or rotation option alongside Mitrovic, providing Serbia with a world-class striking duo.",
+      "notableFact": "Was one of the most expensive striker signings in Serie A history when Juventus paid over 70 million euros for him from Fiorentina."
+    },
+    "Filip Kostić": {
+      "bio": "Dynamic left-winger who was one of the best crossers in European football during his peak years at Eintracht Frankfurt, where he was instrumental in their Europa League triumph in 2022. Moved to Juventus to continue his career at the top level.",
+      "playingStyle": "Attack-minded left-sided player who hugs the touchline, delivers a constant stream of dangerous crosses, and combines tireless running with technical quality.",
+      "keyStrengths": ["Crossing accuracy", "Stamina", "Dangerous deliveries from the left"],
+      "worldCup2026Role": "Starting left winger who will provide width and service for Mitrovic and Vlahovic with his pinpoint crossing.",
+      "notableFact": "Was named the Bundesliga's best winger during his time at Frankfurt and was pivotal in their 2022 Europa League final victory."
+    },
+    "Vanja Milinković-Savić": {
+      "bio": "Towering goalkeeper and younger brother of Sergej Milinković-Savić who has established himself at Torino in Serie A. At 202cm tall, he is one of the tallest goalkeepers in international football.",
+      "playingStyle": "Imposing, giant goalkeeper who uses his extraordinary reach and frame to fill the goal, strong on crosses and dominant in aerial challenges.",
+      "keyStrengths": ["Extraordinary reach", "Aerial command", "Shot-stopping at close range"],
+      "worldCup2026Role": "Backup goalkeeper who could challenge for the starting spot, bringing Serie A experience and an imposing physical presence.",
+      "notableFact": "At 202cm, he is one of the tallest goalkeepers in world football and plays at the same club (Torino) as his brother's former teammate."
+    },
+    "Stefan Mitrović": {
+      "bio": "Experienced center-back who has spent time across European leagues including France and Turkey before returning to Serbian football with FK Partizan. A steady, reliable defender in the twilight of his career.",
+      "playingStyle": "Calm, experienced center-back who reads the game well, positions himself intelligently, and provides a composed presence at the heart of the defense.",
+      "keyStrengths": ["Positional awareness", "Reading of the game", "Defensive experience"],
+      "worldCup2026Role": "Veteran defensive depth option who brings experience and professionalism to the squad.",
+      "notableFact": "Has played in multiple European leagues including France and Turkey, accumulating significant continental experience."
+    },
+    "Andrija Živković": {
+      "bio": "Skillful right winger who was once hailed as one of Europe's most exciting young talents at Partizan Belgrade before moving to Benfica. Now plying his trade at PAOK in Greece, he remains a dangerous creative force on his day.",
+      "playingStyle": "Tricky, left-footed winger who cuts inside from the right, possesses excellent dribbling skills, and can create chances with his quick feet and vision.",
+      "keyStrengths": ["Dribbling", "Creativity from the right", "Left-footed cut-inside"],
+      "worldCup2026Role": "Creative wide option who can change games with his dribbling and creativity from the right wing.",
+      "notableFact": "Was dubbed a prodigy at Partizan Belgrade and signed for Benfica as a teenager, representing the highly-regarded Serbian talent pipeline."
+    },
+    "Srđan Babić": {
+      "bio": "Physical center-back who has developed his career in Russian football with Spartak Moscow. A robust defender who contributes defensive solidity and physical presence to the squad.",
+      "playingStyle": "Strong, aggressive center-back who wins physical battles with strikers, excels in aerial duels, and makes committed challenges.",
+      "keyStrengths": ["Physical strength", "Aerial duels", "Committed defending"],
+      "worldCup2026Role": "Defensive depth player who can be called upon for his physical presence when Serbia need to protect a lead.",
+      "notableFact": "Has built his career in Russian football, gaining experience in both domestic competition and European continental matches with Spartak Moscow."
+    },
+    "Sasa Lukić": {
+      "bio": "Versatile, box-to-box midfielder who made a successful transition to the Premier League with Fulham after productive years at Torino in Serie A. An energetic presence who combines defensive work with attacking contribution.",
+      "playingStyle": "Dynamic, well-rounded midfielder who presses aggressively, arrives in the box for goals, and provides relentless energy in both halves of the pitch.",
+      "keyStrengths": ["Box-to-box running", "Goal-scoring from midfield", "Pressing"],
+      "worldCup2026Role": "Important midfield option who can start or impact games from the bench with his energy and goal threat.",
+      "notableFact": "Transitioned successfully from Serie A with Torino to the Premier League with Fulham, proving his quality across two top European leagues."
+    },
+    "Filip Đuričić": {
+      "bio": "Creative attacking midfielder who has had a well-traveled career across the Netherlands, Italy, and Greece. A technically gifted player known for his dribbling and ability to play the final pass in tight spaces.",
+      "playingStyle": "Skillful, creative playmaker who combines close control with clever passing, comfortable operating in tight spaces between opposition lines.",
+      "keyStrengths": ["Close control", "Creative passing", "Dribbling in tight spaces"],
+      "worldCup2026Role": "Experienced creative backup who can provide a spark of invention from the bench in the final third.",
+      "notableFact": "Had productive spells at Sassuolo in Serie A and Benfica in Portugal, showcasing his technical ability across multiple European leagues."
+    },
+    "Sergej Milinković-Savić": {
+      "bio": "One of Serbia's greatest modern talents, the imposing midfielder was one of the best in Serie A during his long tenure at Lazio before moving to Al-Hilal. A complete midfielder who combines physical dominance with technical excellence and a powerful goal-scoring ability.",
+      "playingStyle": "Towering, technically gifted midfielder who dominates aerially, drives forward with power, and unleashes devastating long-range strikes and precise through balls.",
+      "keyStrengths": ["Aerial dominance in midfield", "Long-range shooting", "Technical quality for his size"],
+      "worldCup2026Role": "Key starter in central midfield, expected to be Serbia's most influential player and creative force alongside the strikers.",
+      "notableFact": "Was valued at over 70 million euros during his peak years at Lazio and consistently ranked among Serie A's best midfielders for nearly a decade."
+    },
+    "Luka Jović": {
+      "bio": "Talented striker who burst onto the scene with a stunning season at Eintracht Frankfurt before earning a move to Real Madrid. After a difficult spell in Spain, he has rebuilt his career through various clubs including a return to form in Greece.",
+      "playingStyle": "Instinctive penalty-box striker with clinical finishing, good movement inside the area, and the ability to score with both feet and his head.",
+      "keyStrengths": ["Clinical finishing", "Movement in the box", "Two-footed scoring"],
+      "worldCup2026Role": "Third-choice striker providing depth and an alternative attacking option from the bench.",
+      "notableFact": "Scored five goals in a single Bundesliga match for Frankfurt against Fortuna Dusseldorf, earning his dream move to Real Madrid."
+    },
+    "Mijat Gaćinović": {
+      "bio": "Technical central midfielder who has experience in both the Bundesliga and Greek football. Made his name at Eintracht Frankfurt before moving to Hoffenheim and eventually AEK Athens, known for his neat footwork and passing ability.",
+      "playingStyle": "Tidy, technically proficient midfielder who keeps possession flowing with short, accurate passes and maintains composure under pressure.",
+      "keyStrengths": ["Technical ability", "Short passing", "Composure on the ball"],
+      "worldCup2026Role": "Midfield rotation option who can provide technical quality and ball retention when Serbia need to control possession.",
+      "notableFact": "Was part of Eintracht Frankfurt's squad during their exciting Europa League runs and has Bundesliga experience from multiple seasons in Germany."
+    },
+    "Uroš Spajić": {
+      "bio": "Experienced center-back who returned to Red Star Belgrade after spells in Russia, the Netherlands, and Portugal. A veteran defender who brings calm authority and organization to the back line.",
+      "playingStyle": "Experienced, composed center-back who reads the game well, organizes the defensive line with vocal leadership, and makes clean interceptions.",
+      "keyStrengths": ["Organizational ability", "Reading the game", "Interceptions"],
+      "worldCup2026Role": "Experienced defensive depth player who provides stability and leadership when called upon.",
+      "notableFact": "Has played in four different European leagues across his career, including productive spells in Russia and the Netherlands."
+    },
+    "Đorđe Petrović": {
+      "bio": "Rising young goalkeeper who has made a name for himself in the Premier League with AFC Bournemouth. A talented shot-stopper who represents the future of Serbian goalkeeping with his commanding performances in English football.",
+      "playingStyle": "Athletic, agile goalkeeper with excellent reflexes, strong shot-stopping at close range, and growing confidence in commanding his area.",
+      "keyStrengths": ["Shot-stopping reflexes", "Athleticism", "Growing authority"],
+      "worldCup2026Role": "Potential future first-choice goalkeeper who provides strong competition for the starting spot with his Premier League form.",
+      "notableFact": "Has impressed in the Premier League with Bournemouth, establishing himself as one of the most promising young goalkeepers in English football."
+    },
+    "Srđan Mijailović": {
+      "bio": "Young left-back developing at Red Star Belgrade who has emerged as a promising option for Serbia's future. A modern full-back with good size and attacking instincts.",
+      "playingStyle": "Attack-minded left-back with good pace, the ability to deliver crosses from wide positions, and sufficient height to compete aerially.",
+      "keyStrengths": ["Attacking runs", "Crossing", "Physical size for a full-back"],
+      "worldCup2026Role": "Young left-back prospect who provides depth and a future-oriented option on the left side of defense.",
+      "notableFact": "Has been a regular starter for Red Star Belgrade in both the Serbian SuperLiga and European competition despite his young age."
+    },
+    "Ivan Ilić": {
+      "bio": "Talented young midfielder who has impressed at Torino in Serie A with his elegant passing and composure. A left-footed playmaker who adds creative depth to Serbia's already talented midfield.",
+      "playingStyle": "Left-footed, creative central midfielder who dictates play with measured passing, drifts into dangerous positions, and has an eye for the killer through ball.",
+      "keyStrengths": ["Left-footed passing", "Creativity", "Intelligent positioning"],
+      "worldCup2026Role": "Young creative midfield option who can unlock defenses with his passing ability off the bench or in rotation.",
+      "notableFact": "Moved to Torino in Serie A as a young player and has established himself as a regular starter in one of Europe's top leagues."
+    },
+    "Veljko Birmančević": {
+      "bio": "Exciting winger who has been impressive at Sparta Prague in the Czech First League, earning recognition for his direct, fearless style of play. A creative wide player who has been called up to strengthen Serbia's attacking options.",
+      "playingStyle": "Direct, pacy winger who takes on defenders with confidence, cuts inside onto his preferred left foot, and delivers dangerous crosses and shots.",
+      "keyStrengths": ["Direct dribbling", "Left-footed shooting", "Pace"],
+      "worldCup2026Role": "Attacking squad player who can provide pace and directness from the wing when introduced as a substitute.",
+      "notableFact": "Has been one of the standout performers in the Czech First League with Sparta Prague, attracting attention from clubs across Europe."
+    },
+    "Strahinja Eraković": {
+      "bio": "Young center-back who moved from Red Star Belgrade to Celtic in Scotland, where he has gained valuable experience in European competition. A promising defender with the physical tools to succeed at the highest level.",
+      "playingStyle": "Athletic, modern center-back who combines physical strength with good pace for his size, comfortable stepping forward to press and carry the ball.",
+      "keyStrengths": ["Athleticism", "Pace for a center-back", "Aggressive defending"],
+      "worldCup2026Role": "Young defensive prospect providing depth at center-back and representing Serbia's next generation of defenders.",
+      "notableFact": "Made the move from Red Star Belgrade to Celtic, gaining Champions League group stage experience at a young age."
+    }
+  }
+}

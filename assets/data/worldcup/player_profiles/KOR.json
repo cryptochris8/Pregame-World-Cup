@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Kim Seung-gyu": {
+      "bio": "Veteran goalkeeper with 60 caps who moved to the Saudi Pro League with Al-Shabab. One of South Korea's most experienced shot-stoppers and a calming presence between the posts.",
+      "playingStyle": "Experienced, positionally sound goalkeeper who commands his area well and organizes the defense with authority.",
+      "keyStrengths": ["Positioning", "Shot-stopping", "Communication"],
+      "worldCup2026Role": "Senior backup goalkeeper providing experience and stability to the goalkeeping unit.",
+      "notableFact": "Has been a mainstay of Korean football for over a decade, representing the country at multiple major tournaments."
+    },
+    "Bae Jun-ho": {
+      "bio": "One of South Korea's most exciting young talents, the 22-year-old right winger moved to Stoke City in the English Championship. A pacey, direct attacker who has drawn comparisons to the country's greatest wingers.",
+      "playingStyle": "Explosive young winger with pace to burn, direct dribbling, and the confidence to take on defenders one-on-one.",
+      "keyStrengths": ["Pace", "Dribbling", "Youthful fearlessness"],
+      "worldCup2026Role": "Exciting young squad member who can provide energy and directness off the bench in attacking positions.",
+      "notableFact": "At just 22, he is one of the youngest players in the Korean squad, representing the next generation of K-League-to-Europe talent."
+    },
+    "Kim Jin-su": {
+      "bio": "Experienced left-back with 65 caps who has been a stalwart of the Korean defense for years. A veteran of multiple international tournaments who plays domestically for Jeonbuk.",
+      "playingStyle": "Reliable left-back who balances defensive duties with well-timed forward runs, delivering accurate crosses from the left flank.",
+      "keyStrengths": ["Crossing from the left", "Experience", "Defensive consistency"],
+      "worldCup2026Role": "First-choice left-back whose experience and consistency make him a reliable fixture in the backline.",
+      "notableFact": "Has been one of the most consistently selected Korean defenders of his generation, with 65 caps accumulated over a long international career."
+    },
+    "Kim Min-jae": {
+      "bio": "South Korea's most valuable player and one of the best center-backs in world football, playing for Bayern Munich in the Bundesliga. Known as 'The Monster' for his imposing physical presence and dominant defending.",
+      "playingStyle": "Physically dominant, quick, and technically gifted center-back who wins virtually every aerial duel and can carry the ball out of defense with authority.",
+      "keyStrengths": ["Physical dominance", "Recovery pace", "Aerial superiority"],
+      "worldCup2026Role": "Undisputed starting center-back and defensive cornerstone. South Korea's most important player and the foundation of everything they do.",
+      "notableFact": "Nicknamed 'The Monster,' he is valued at over 87 million euros, making him the most expensive Asian defender in football history."
+    },
+    "Park Yong-woo": {
+      "bio": "Young defensive midfielder from Ulsan HD in the K League, representing the emerging domestic talent feeding into the national team. A disciplined ball-winner in the middle of the park.",
+      "playingStyle": "Tenacious defensive midfielder who wins the ball back efficiently and keeps play simple, allowing more creative teammates to flourish.",
+      "keyStrengths": ["Ball-winning", "Tactical discipline", "Simple passing"],
+      "worldCup2026Role": "Depth option in defensive midfield, providing cover and energy when needed in rotation or as a late-game substitute.",
+      "notableFact": "Emerged from the highly competitive Ulsan HD academy, one of the most successful development programs in K League history."
+    },
+    "Hwang In-beom": {
+      "bio": "Creative central midfielder who has thrived at Feyenoord in the Eredivisie after stints in Russia and Canada. His passing vision and technical quality make him one of Korea's most important playmakers.",
+      "playingStyle": "Technically gifted central midfielder with excellent passing range, capable of dictating tempo and threading balls through the tightest defensive lines.",
+      "keyStrengths": ["Passing vision", "Technical quality", "Set-piece delivery"],
+      "worldCup2026Role": "Starting central midfielder who provides the creative spark from deep, connecting defense to attack with his passing.",
+      "notableFact": "Has played in four different countries (South Korea, Russia, Canada, Netherlands), giving him a remarkably diverse football education."
+    },
+    "Heung-Min Son": {
+      "bio": "South Korea's all-time greatest player and captain, a global superstar who spent years at Tottenham Hotspur before moving to LAFC in MLS. The country's all-time top scorer with 45 international goals.",
+      "playingStyle": "Two-footed attacking genius equally devastating on either flank or through the middle, combining blistering pace with world-class finishing and the ability to score from any angle.",
+      "keyStrengths": ["Two-footed finishing", "Explosive pace", "Big-game mentality"],
+      "worldCup2026Role": "Captain, talisman, and spiritual leader. Everything runs through Son, who will be playing in what is likely his final World Cup at age 33.",
+      "notableFact": "Won the Premier League Golden Boot in 2021-22 with 23 goals, becoming the first Asian player ever to win a major European league's top scorer award."
+    },
+    "Paik Seung-ho": {
+      "bio": "Experienced central midfielder who has been a steady presence in the K League with Jeonbuk. A technically sound player who provides balance and composure in the middle of the park.",
+      "playingStyle": "Composed central midfielder who excels at keeping possession, recycling the ball efficiently, and maintaining the team's tempo.",
+      "keyStrengths": ["Ball retention", "Composure under pressure", "Passing accuracy"],
+      "worldCup2026Role": "Midfield depth option who can provide calm and control in possession-heavy game states.",
+      "notableFact": "Has been a consistent performer at Jeonbuk, one of the most successful clubs in K League history with multiple domestic titles."
+    },
+    "Cho Gue-sung": {
+      "bio": "Powerful target striker who became a sensation at the 2022 World Cup with his two headers against Ghana. His aerial prowess and physical presence make him a unique weapon in Asian football.",
+      "playingStyle": "Classic target-man striker who dominates in the air, holds the ball up for teammates, and finishes headers with power and accuracy.",
+      "keyStrengths": ["Aerial dominance", "Hold-up play", "Heading accuracy"],
+      "worldCup2026Role": "Starting striker or key impact sub whose aerial threat provides a different dimension, especially from crosses and set pieces.",
+      "notableFact": "Scored two stunning headers against Ghana at the 2022 World Cup, instantly becoming a viral sensation and heartthrob across Asia."
+    },
+    "Lee Jae-sung": {
+      "bio": "Veteran attacking midfielder with 75 caps who has been a consistent performer in the Bundesliga with Mainz. Known for his intelligence, work rate, and knack for scoring important goals.",
+      "playingStyle": "Intelligent number 10 who reads the game superbly, makes late runs into the box, and combines a strong work rate with creative passing.",
+      "keyStrengths": ["Tactical intelligence", "Late arriving runs", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Key playmaker in the number 10 role, linking midfield and attack with his intelligence and movement.",
+      "notableFact": "Has quietly been one of the most consistent Korean players in European football, scoring regularly from midfield in the Bundesliga for several seasons."
+    },
+    "Hwang Hee-chan": {
+      "bio": "Dynamic striker at Wolverhampton in the Premier League, combining pace and power to terrorize defenses. Has developed from a raw speedster into a complete forward in English football.",
+      "playingStyle": "Rapid, powerful forward who runs in behind defenses with frightening speed, equally capable of scoring and creating for teammates.",
+      "keyStrengths": ["Pace", "Power", "Running behind the defensive line"],
+      "worldCup2026Role": "Starting striker or second forward alongside Son, providing the pace and directness that stretches opposition defenses.",
+      "notableFact": "Scored a dramatic last-minute winner against Chelsea in his early Wolverhampton career, announcing himself as a Premier League force."
+    },
+    "Jo Hyeon-woo": {
+      "bio": "Experienced goalkeeper with 45 caps who became a national hero at the 2018 World Cup with spectacular saves against Germany. A long-serving figure in Korean football.",
+      "playingStyle": "Athletic, shot-stopping goalkeeper with excellent reflexes who rises to the occasion in big matches.",
+      "keyStrengths": ["Reflexes", "Big-match temperament", "Athletic shot-stopping"],
+      "worldCup2026Role": "Experienced goalkeeping option who provides depth and has proven World Cup pedigree.",
+      "notableFact": "Made several world-class saves in South Korea's historic 2-0 victory over Germany at the 2018 World Cup, one of the greatest upsets in tournament history."
+    },
+    "Son Jun-ho": {
+      "bio": "Experienced central midfielder playing in the Chinese Super League with Shandong Taishan. A 50-cap international who provides midfield depth and versatility to the Korean squad.",
+      "playingStyle": "Industrious box-to-box midfielder who covers ground efficiently, contributes defensively, and offers reliable passing in transition.",
+      "keyStrengths": ["Work rate", "Box-to-box running", "Experience"],
+      "worldCup2026Role": "Experienced squad player who provides midfield depth and energy from the bench.",
+      "notableFact": "No relation to captain Heung-Min Son despite sharing the surname, which is one of the most common in Korean football."
+    },
+    "Hong Chul": {
+      "bio": "Veteran left-back with 50 caps who has served Korean football faithfully across a long career in the K League. At 35, he brings unmatched experience to the defensive unit.",
+      "playingStyle": "Reliable, defensive-minded fullback who prioritizes solidity over attacking flair, providing a safe option on the left side.",
+      "keyStrengths": ["Defensive reliability", "Experience", "Positioning"],
+      "worldCup2026Role": "Veteran backup left-back providing experienced cover and leadership in the defensive unit.",
+      "notableFact": "At 35, he is one of the oldest players in the squad, having dedicated his career almost entirely to K League football."
+    },
+    "Na Sang-ho": {
+      "bio": "Pacey winger who has been a consistent performer at FC Seoul in the K League. Known for his directness and ability to beat defenders with speed and skill.",
+      "playingStyle": "Direct, pacy winger who stretches defenses with his running, capable of delivering dangerous crosses and cutting inside to shoot.",
+      "keyStrengths": ["Pace", "Directness", "Crossing ability"],
+      "worldCup2026Role": "Domestic-league depth option on the wing, providing fresh legs and directness as a substitute.",
+      "notableFact": "Has been one of the most exciting attackers in the K League, consistently ranking among the top dribblers in the domestic competition."
+    },
+    "Hwang Ui-jo": {
+      "bio": "Prolific Korean striker with 18 international goals in 60 caps. Has played across multiple European leagues including France, Portugal, and Turkey, proving his adaptability.",
+      "playingStyle": "Clinical finisher who thrives on service into the box, combining intelligent movement with composure in front of goal.",
+      "keyStrengths": ["Finishing", "Movement in the box", "International goal record"],
+      "worldCup2026Role": "Experienced backup striker who provides proven international goal-scoring pedigree from the bench.",
+      "notableFact": "With 18 international goals, he is one of the most prolific Korean strikers of his generation and has scored across multiple European leagues."
+    },
+    "Lee Kang-in": {
+      "bio": "South Korea's most gifted young talent playing for Paris Saint-Germain in Ligue 1. A product of Valencia's academy, he is widely regarded as the heir to Son's throne in Korean football.",
+      "playingStyle": "Supremely talented creative player with magical close control, elite vision, and the ability to produce moments of pure genius with either foot.",
+      "keyStrengths": ["Technical brilliance", "Creative vision", "Set-piece expertise"],
+      "worldCup2026Role": "Starting creative force on the right wing or as a number 10, South Korea's most technically gifted player and future face of Korean football.",
+      "notableFact": "Won the Golden Ball award at the 2023 Asian Cup as the tournament's best player, and was named best young player at the 2019 U-20 World Cup."
+    },
+    "Jeong Woo-yeong": {
+      "bio": "Versatile attacking midfielder playing for Freiburg in the Bundesliga. A technically sound player who has developed steadily in German football and become a regular for the national team.",
+      "playingStyle": "Skillful attacking midfielder who drifts between the lines, combines well with teammates, and contributes with both goals and assists.",
+      "keyStrengths": ["Technical skill", "Positional intelligence", "Goal contribution"],
+      "worldCup2026Role": "Versatile attacking option who can play across multiple positions behind the striker, providing quality rotation.",
+      "notableFact": "Has developed through the highly regarded Freiburg system, known for maximizing the potential of young international talent."
+    },
+    "Kim Young-gwon": {
+      "bio": "Vastly experienced center-back with 105 caps, making him one of the most capped Korean defenders in history. A veteran of multiple World Cups who leads by example.",
+      "playingStyle": "Old-school, commanding center-back who organizes the defense, wins aerial duels, and uses his vast experience to read dangerous situations before they develop.",
+      "keyStrengths": ["Experience", "Aerial ability", "Defensive organization"],
+      "worldCup2026Role": "Veteran center-back who partners Kim Min-jae, providing experience and aerial presence alongside the younger star.",
+      "notableFact": "With 105 caps, he has represented South Korea in three World Cups and is one of the most decorated Korean defenders of his generation."
+    },
+    "Lee Dong-jun": {
+      "bio": "Young midfielder from Ulsan HD who has impressed in the K League with his energy and technical ability. Part of the next generation of Korean midfield talent.",
+      "playingStyle": "Energetic midfielder who covers ground well, contributes in both phases of play, and has an eye for a forward pass.",
+      "keyStrengths": ["Energy", "Ground coverage", "Forward passing"],
+      "worldCup2026Role": "Young squad depth player in central midfield, offering energy and running power as a substitute option.",
+      "notableFact": "Developed at Ulsan HD, the most successful K League club in recent Asian Champions League history."
+    },
+    "Kim Tae-hwan": {
+      "bio": "Veteran right-back with 45 caps who has spent his entire career in the K League, primarily with Ulsan HD. A consistent, reliable defender who has been selected for multiple major tournaments.",
+      "playingStyle": "Steady, experienced right-back who prioritizes defensive positioning and simple, effective play over flashy attacking contributions.",
+      "keyStrengths": ["Defensive positioning", "Consistency", "Tournament experience"],
+      "worldCup2026Role": "Experienced backup right-back providing reliable defensive cover and veteran leadership.",
+      "notableFact": "At 36, he is the oldest player in the Korean squad, having dedicated his entire club career to Ulsan HD in the K League."
+    },
+    "Kwon Chang-hoon": {
+      "bio": "Creative attacking midfielder with 45 caps who previously played in Ligue 1 with Dijon before returning to Korea. Known for his technical quality and eye for a spectacular goal.",
+      "playingStyle": "Technically gifted playmaker who creates chances with his passing and vision, capable of scoring spectacular long-range goals.",
+      "keyStrengths": ["Technical quality", "Long-range shooting", "Creative passing"],
+      "worldCup2026Role": "Experienced attacking option from the bench, providing creativity and set-piece quality in the final third.",
+      "notableFact": "Previously played in France's Ligue 1, where he showcased his technical quality against some of Europe's best defenders."
+    },
+    "Song Bum-keun": {
+      "bio": "Young goalkeeper from Jeonbuk who has emerged as a promising future option for the Korean national team. Tall and athletic with modern goalkeeping attributes.",
+      "playingStyle": "Young, athletic goalkeeper with good reflexes and distribution, representing the next generation of Korean goalkeeping talent.",
+      "keyStrengths": ["Reflexes", "Height and reach", "Distribution"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining tournament experience, part of the long-term goalkeeping plan.",
+      "notableFact": "At 28, he is entering his prime years for a goalkeeper and could develop into a future first-choice option for the national team."
+    },
+    "Seol Young-woo": {
+      "bio": "Young center-back from Ulsan HD who has broken into the national team setup with his composed defending and aerial ability in the K League.",
+      "playingStyle": "Tall, composed center-back who defends with intelligence, wins aerial duels, and is comfortable playing out from the back.",
+      "keyStrengths": ["Aerial ability", "Composure", "Building from the back"],
+      "worldCup2026Role": "Young defensive depth player who is developing his international experience alongside veteran center-backs.",
+      "notableFact": "Part of the Ulsan HD defensive production line that has supplied multiple players to the Korean national team."
+    },
+    "Kim Moon-hwan": {
+      "bio": "Experienced right-back with 40 caps who has been a regular in the Korean squad across multiple tournament cycles. A reliable, hard-working defender from Jeonbuk.",
+      "playingStyle": "Attack-minded right-back who gets forward well, delivers crosses, and provides width in Korea's attacking play.",
+      "keyStrengths": ["Overlapping runs", "Crossing", "Attacking contribution"],
+      "worldCup2026Role": "Competing for the starting right-back spot, offering an attacking dimension from the full-back position.",
+      "notableFact": "Has been part of the Korean squad for multiple major tournaments, providing consistent performances at right-back."
+    },
+    "Oh Hyeon-gyu": {
+      "bio": "Young striker who made his name at Celtic before moving to Besiktas in Turkey. A powerful forward with an eye for goal who represents the future of Korean striking talent.",
+      "playingStyle": "Strong, mobile striker who combines physical presence with pace, capable of holding the ball up and running in behind defenses.",
+      "keyStrengths": ["Physical strength", "Pace", "Goal-scoring instinct"],
+      "worldCup2026Role": "Exciting young striker option off the bench, providing fresh legs and attacking intent in the closing stages of matches.",
+      "notableFact": "Followed in the footsteps of several Korean stars by playing for Celtic before securing a move to a major European league."
+    }
+  }
+}

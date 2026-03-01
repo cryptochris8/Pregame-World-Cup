@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Guillermo Ochoa": {
+      "bio": "A living legend of Mexican football, Ochoa has been Mexico's first-choice goalkeeper across five World Cup cycles. Known for his spectacular saves on the biggest stages, the veteran shot-stopper is one of the most capped goalkeepers in CONCACAF history.",
+      "playingStyle": "Acrobatic shot-stopper with exceptional reflexes and command of the box, known for pulling off highlight-reel saves in high-pressure moments.",
+      "keyStrengths": ["Shot-stopping reflexes", "Big-game temperament", "Leadership and experience"],
+      "worldCup2026Role": "Veteran presence competing for the starting goalkeeper spot; likely the emotional leader of the squad on home soil.",
+      "notableFact": "Ochoa delivered one of the greatest individual goalkeeping displays in World Cup history against Brazil in 2014, making six world-class saves to preserve a 0-0 draw."
+    },
+    "Nestor Araujo": {
+      "bio": "A rugged and experienced center-back, Araujo has been a mainstay in Mexico's defensive setup for nearly a decade. After stints in Europe with Santos Laguna and Celta Vigo, he returned to Liga MX powerhouse America.",
+      "playingStyle": "Physical, no-nonsense center-back who excels in aerial duels and tackles, preferring to defend on the front foot.",
+      "keyStrengths": ["Aerial dominance", "Positional awareness", "Defensive organization"],
+      "worldCup2026Role": "Experienced defensive option providing depth and leadership at center-back, capable of starting in a back three.",
+      "notableFact": "Araujo was part of Mexico's squad at the 2018 World Cup in Russia where El Tri famously defeated defending champions Germany in the group stage."
+    },
+    "Carlos Salcedo": {
+      "bio": "A powerful and aggressive defender who gained European experience at Fiorentina and Eintracht Frankfurt before returning to Mexican football. Salcedo is known for his intensity and occasional goal threat from set pieces.",
+      "playingStyle": "Aggressive, ball-playing center-back who steps out of the defensive line to win possession and is comfortable carrying the ball forward.",
+      "keyStrengths": ["Physical strength", "Ball-playing ability", "Set-piece threat"],
+      "worldCup2026Role": "Experienced squad option at center-back who adds physicality and European-level experience to the defensive rotation.",
+      "notableFact": "Salcedo helped Eintracht Frankfurt reach the DFB-Pokal final in 2018 and was part of the Bundesliga side during a successful European campaign."
+    },
+    "Edson Alvarez": {
+      "bio": "Mexico's midfield general and one of the most valuable players in the squad. After establishing himself at Ajax and then West Ham United in the Premier League, Alvarez moved to Fenerbahce where he continues to dominate in midfield.",
+      "playingStyle": "Commanding defensive midfielder who controls the tempo with intelligent positioning, strong tackling, and progressive passing from deep.",
+      "keyStrengths": ["Defensive screening", "Ball recovery", "Progressive passing"],
+      "worldCup2026Role": "The undisputed starting defensive midfielder and one of the first names on the team sheet; Mexico's midfield anchor.",
+      "notableFact": "Alvarez was named to the Eredivisie Team of the Year during his time at Ajax and was the subject of a Premier League transfer battle before joining West Ham."
+    },
+    "Johan Vasquez": {
+      "bio": "A tall, composed center-back who made the leap to European football with Genoa in Serie A. Vasquez quickly adapted to the physicality and tactical demands of Italian football, becoming a regular starter.",
+      "playingStyle": "Technically proficient center-back who reads the game well and is comfortable building play from the back under pressure.",
+      "keyStrengths": ["Aerial ability", "Composure on the ball", "Reading the game"],
+      "worldCup2026Role": "Likely starter at center-back, bringing Serie A quality and the ability to play out from the back in Mexico's build-up.",
+      "notableFact": "Vasquez became one of the few Mexican players to establish himself as a regular starter in Serie A, a league historically challenging for foreign defenders."
+    },
+    "Gerardo Arteaga": {
+      "bio": "A dynamic left-back who gained valuable European experience at Genk in the Belgian Pro League before returning to Monterrey. Arteaga is known for his pace and attacking overlaps down the left flank.",
+      "playingStyle": "Attack-minded left-back with pace and crossing ability who likes to push high and deliver into the box.",
+      "keyStrengths": ["Pace and athleticism", "Crossing accuracy", "Overlapping runs"],
+      "worldCup2026Role": "Starting left-back option offering width and attacking impetus, competing with Jesus Gallardo for the position.",
+      "notableFact": "Arteaga was part of Genk's Belgian league campaign and gained Champions League qualifying experience during his time in Europe."
+    },
+    "Luis Chavez": {
+      "bio": "A technically gifted central midfielder with a lethal left foot, Chavez emerged as one of Mexico's most exciting midfield talents during the 2022 World Cup cycle. His set-piece delivery and long-range shooting make him a constant threat.",
+      "playingStyle": "Creative central midfielder with outstanding set-piece delivery and the ability to dictate play with precise passing from midfield.",
+      "keyStrengths": ["Free-kick specialist", "Long-range shooting", "Vision and passing range"],
+      "worldCup2026Role": "Key set-piece taker and midfield creator, likely to feature heavily as a starter or impactful substitute.",
+      "notableFact": "Chavez scored a spectacular free-kick goal against Saudi Arabia at the 2022 FIFA World Cup in Qatar, showcasing his dead-ball expertise on the world stage."
+    },
+    "Carlos Rodriguez": {
+      "bio": "A steady and reliable central midfielder, Rodriguez has been a consistent performer in Liga MX across multiple clubs. His understanding of the game and work rate make him a valuable squad player.",
+      "playingStyle": "Box-to-box midfielder who contributes on both ends with tireless running, tidy passing, and positional discipline.",
+      "keyStrengths": ["Work rate", "Positional discipline", "Short passing accuracy"],
+      "worldCup2026Role": "Versatile midfield option who provides tactical flexibility and depth in the central positions.",
+      "notableFact": "Rodriguez was named Best Young Player at the 2019 CONCACAF Gold Cup, showcasing his potential on the international stage at a young age."
+    },
+    "Raul Jimenez": {
+      "bio": "Mexico's most decorated active striker, Jimenez became a Premier League star at Wolverhampton Wanderers before moving to Fulham. He overcame a horrific skull fracture in 2020 and returned to top-level football, demonstrating remarkable courage and resilience.",
+      "playingStyle": "Complete target striker who excels at hold-up play, link-up combinations, and clinical finishing in and around the box.",
+      "keyStrengths": ["Hold-up play", "Clinical finishing", "Link-up intelligence"],
+      "worldCup2026Role": "Senior striker option bringing Premier League pedigree and big-game experience; key mentor for younger forwards like Santiago Gimenez.",
+      "notableFact": "After suffering a fractured skull in a collision during a match in November 2020, Jimenez defied medical odds to return to professional football within eight months."
+    },
+    "Orbelin Pineda": {
+      "bio": "A clever and creative attacking midfielder, Pineda has been a creative spark for Mexico with his dribbling, vision, and eye for goal. After a stint at Celta Vigo in La Liga, he moved to AEK Athens in Greece.",
+      "playingStyle": "Diminutive playmaker who thrives in tight spaces with quick feet, intelligent movement, and the ability to unlock defenses with through balls.",
+      "keyStrengths": ["Dribbling in tight spaces", "Creative passing", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Attacking midfield option who can unlock stubborn defenses, likely used as an impact substitute or starter in matches requiring creativity.",
+      "notableFact": "Pineda scored a crucial goal in the 2021 CONCACAF Gold Cup final, helping Mexico capture the trophy with his trademark late runs into the box."
+    },
+    "Roberto Alvarado": {
+      "bio": "A quick and direct winger who has been one of Liga MX's most exciting attackers at Guadalajara (Chivas). Alvarado combines pace with close control and has grown into a regular national team option.",
+      "playingStyle": "Pacy, direct winger who takes on defenders one-on-one, cuts inside from the left flank, and delivers dangerous crosses.",
+      "keyStrengths": ["Pace and acceleration", "One-on-one dribbling", "Cutting inside to shoot"],
+      "worldCup2026Role": "Wide attacking option providing pace and directness on the flanks, capable of stretching opposing defenses.",
+      "notableFact": "Alvarado was a key player in Chivas' Liga MX campaigns and is renowned for his ability to produce moments of individual brilliance in big matches."
+    },
+    "Rodolfo Cota": {
+      "bio": "A veteran goalkeeper with extensive Liga MX experience, Cota has been a reliable backup for Mexico across several international windows. His consistency and professionalism make him a valued member of the squad.",
+      "playingStyle": "Traditional shot-stopper with solid positioning, good reflexes, and a commanding presence in the six-yard box.",
+      "keyStrengths": ["Shot-stopping consistency", "Communication with defenders", "Experience and composure"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced depth and stability in the goalkeeping department.",
+      "notableFact": "Cota was the starting goalkeeper when Leon won the Liga MX Clausura 2020 title, making crucial saves throughout the playoff campaign."
+    },
+    "Luis Romo": {
+      "bio": "A versatile central midfielder who can play as a box-to-box dynamo or sit deeper in a holding role. Romo made his name at Cruz Azul before moving to Monterrey, becoming a regular in the national team setup.",
+      "playingStyle": "Athletic, box-to-box midfielder who covers immense ground, contributes goals with well-timed runs into the box, and adds physicality to the midfield.",
+      "keyStrengths": ["Box-to-box energy", "Late arriving runs", "Physicality in duels"],
+      "worldCup2026Role": "Midfield depth option who can change the dynamics of a match with his energy and goal threat from deep positions.",
+      "notableFact": "Romo was instrumental in Cruz Azul's historic Liga MX championship in 2021, ending the club's legendary 23-year title drought."
+    },
+    "Alexis Vega": {
+      "bio": "A talented and technically gifted attacker who can play across the forward line. Vega has been one of Liga MX's standout performers and has transferred that form to the international stage with important goals for Mexico.",
+      "playingStyle": "Skillful, two-footed attacker who operates between the lines, combines dribbling with clinical shooting, and creates chances with intelligent movement.",
+      "keyStrengths": ["Technical quality", "Versatility across the front line", "Shooting accuracy"],
+      "worldCup2026Role": "Versatile attacking option capable of playing on the wing or centrally, offering creativity and goal threat from multiple positions.",
+      "notableFact": "Vega scored a stunning long-range goal in the 2021 CONCACAF Gold Cup semifinal against Canada, one of the best goals of the tournament."
+    },
+    "Uriel Antuna": {
+      "bio": "A speedy and direct winger who spent time in the LA Galaxy youth system and MLS before establishing himself in Liga MX. Antuna is known for his electric pace and ability to beat defenders on the dribble.",
+      "playingStyle": "Explosive, speed-based winger who stretches defenses with direct runs, beats fullbacks with pace, and delivers dangerous crosses from wide areas.",
+      "keyStrengths": ["Raw pace", "Direct dribbling", "Counter-attacking threat"],
+      "worldCup2026Role": "Impact substitute winger whose pace can exploit tired defenses in the second half of matches.",
+      "notableFact": "Antuna scored a hat trick against Cuba in the 2019 CONCACAF Gold Cup, announcing himself on the international stage with a devastating display of pace and finishing."
+    },
+    "Cesar Montes": {
+      "bio": "A tall and commanding center-back who ventured to Europe with Espanyol in La Liga and later Lokomotiv Moscow. Montes brings international experience and aerial dominance to Mexico's defensive options.",
+      "playingStyle": "Tall, dominant aerial defender who excels in one-on-one marking, set-piece defending, and organizing the backline.",
+      "keyStrengths": ["Aerial presence", "One-on-one defending", "Organizing the defensive line"],
+      "worldCup2026Role": "Starting-caliber center-back who provides height and aerial security, particularly important in set-piece situations.",
+      "notableFact": "Montes scored a dramatic last-minute header to beat El Salvador in a crucial World Cup qualifier, showcasing his threat from set pieces at the other end."
+    },
+    "Jesus Gallardo": {
+      "bio": "One of Mexico's most experienced fullbacks, Gallardo has been a fixture in the national team for nearly a decade. His versatility, consistency, and leadership on the left side of defense make him a trusted option.",
+      "playingStyle": "Experienced left-back who balances defensive solidity with overlapping attacking runs, providing width and reliable crossing from deep positions.",
+      "keyStrengths": ["Defensive reliability", "Crossing from deep", "Tactical intelligence"],
+      "worldCup2026Role": "Experienced left-back competing for a starting role, offering leadership and tactical discipline in the defensive setup.",
+      "notableFact": "Gallardo has represented Mexico in two World Cups (2018 and 2022) and multiple Gold Cup tournaments, making him one of the most internationally experienced players in the squad."
+    },
+    "Santiago Gimenez": {
+      "bio": "Mexico's rising superstar and most valuable player, Gimenez exploded onto the European scene with Feyenoord in the Eredivisie before earning a blockbuster transfer to AC Milan in Serie A. Born in Argentina to a Mexican father, he chose to represent El Tri.",
+      "playingStyle": "Clinical, instinctive goal scorer who thrives in the box with sharp movement, composed finishing, and the ability to score with both feet and his head.",
+      "keyStrengths": ["Clinical finishing", "Movement in the box", "Aerial threat"],
+      "worldCup2026Role": "The main striker and focal point of Mexico's attack; the player El Tri will rely on most for goals on home soil.",
+      "notableFact": "Gimenez scored 23 goals in his debut Eredivisie season at Feyenoord, becoming the top-scoring Mexican in a European league season and earning his move to AC Milan."
+    },
+    "Jorge Sanchez": {
+      "bio": "A tenacious right-back who gained European experience at Ajax in the Eredivisie and featured in the Champions League before returning to Cruz Azul. Sanchez is known for his defensive work rate and overlapping runs.",
+      "playingStyle": "Energetic right-back who defends with intensity, times his overlapping runs well, and provides width on the right side of the pitch.",
+      "keyStrengths": ["Defensive work rate", "Overlapping runs", "Stamina and engine"],
+      "worldCup2026Role": "Right-back option with Champions League experience, competing for a starting spot and providing reliable defensive cover.",
+      "notableFact": "Sanchez became one of the few Mexican players to compete in the UEFA Champions League group stage during his time at Ajax."
+    },
+    "Jesus Corona": {
+      "bio": "Known affectionately as 'Tecatito,' Corona is one of the most technically gifted Mexican players of his generation. He starred at Porto for seven seasons, winning multiple league titles, before a serious leg injury threatened his career. His return to fitness has been a remarkable story of perseverance.",
+      "playingStyle": "Tricky, inventive winger with exceptional close control, quick feet, and the ability to create something from nothing with his dribbling and imagination.",
+      "keyStrengths": ["Close control and dribbling", "Creativity and improvisation", "Experience in top European leagues"],
+      "worldCup2026Role": "Experienced wide option whose creativity and technical quality could be decisive in tight matches, provided his fitness holds.",
+      "notableFact": "Corona won five Portuguese league titles with FC Porto and was consistently rated as one of the best wingers in the Primeira Liga during his time there."
+    },
+    "Henry Martin": {
+      "bio": "A proven goal scorer in Liga MX, Martin has been a reliable striker for Club America and has translated that form to the national team. He is a traditional number nine with excellent positioning inside the box.",
+      "playingStyle": "Poacher-type striker with superb positioning, intelligent off-the-ball movement, and a knack for being in the right place to convert chances.",
+      "keyStrengths": ["Positioning in the box", "Off-the-ball movement", "Composure in front of goal"],
+      "worldCup2026Role": "Backup striker option whose goal-scoring instincts and experience make him a valuable impact substitute or rotation option.",
+      "notableFact": "Martin scored a crucial goal against Saudi Arabia at the 2022 World Cup in Qatar, demonstrating his ability to deliver on the international stage."
+    },
+    "Hirving Lozano": {
+      "bio": "Mexico's most high-profile attacking player, 'Chucky' Lozano became a household name after his iconic goal against Germany at the 2018 World Cup. After successful spells at PSV Eindhoven and Napoli in Serie A, he moved to MLS with San Diego FC as a marquee signing.",
+      "playingStyle": "Electric, pace-driven winger who terrorizes fullbacks with explosive acceleration, direct dribbling, and a knack for cutting inside to shoot with his right foot.",
+      "keyStrengths": ["Explosive pace", "Direct dribbling and beating defenders", "Big-game scoring ability"],
+      "worldCup2026Role": "Key attacking player and talisman whose pace and directness will be central to Mexico's counter-attacking threat and ability to break down defenses.",
+      "notableFact": "Lozano's goal against reigning champions Germany in Mexico's 2018 World Cup opener caused such celebration in Mexico City that seismic sensors detected the resulting earthquake-like activity."
+    },
+    "Julian Quinones": {
+      "bio": "Born in Colombia, Quinones chose to represent Mexico after establishing himself in Liga MX. A tricky and unpredictable left winger with flair, he has become a key attacker for Club America and an increasingly important national team option.",
+      "playingStyle": "Skillful, left-footed winger who loves to take on defenders, cut inside from the left, and create chances with his dribbling and crossing ability.",
+      "keyStrengths": ["Dribbling and flair", "Left-footed crossing", "Creating chances from wide areas"],
+      "worldCup2026Role": "Attacking depth option on the left wing whose creativity and unpredictability add a different dimension to Mexico's offense.",
+      "notableFact": "Quinones was originally born in Colombia and spent his early career in Colombian football before moving to Mexico, where he became eligible for and chose to represent El Tri."
+    },
+    "Diego Lainez": {
+      "bio": "Once hailed as one of Mexico's greatest youth prospects, Lainez made a high-profile move to Real Betis in La Liga as a teenager. After a challenging stint in Spain, he returned to Liga MX to rebuild his career with Tigres UANL.",
+      "playingStyle": "Diminutive, technically gifted winger with exceptional close control, low center of gravity, and the ability to weave through tight spaces.",
+      "keyStrengths": ["Close control in tight spaces", "Low center of gravity dribbling", "Creativity and vision"],
+      "worldCup2026Role": "Creative spark off the bench whose technical ability and dribbling can unlock defenses when the team needs a breakthrough.",
+      "notableFact": "Lainez became the youngest Mexican player to play in La Liga when he debuted for Real Betis at age 18, and he scored a memorable Copa del Rey goal against Real Sociedad."
+    },
+    "Kevin Alvarez": {
+      "bio": "A young and athletic right-back from Pachuca's prolific academy, Alvarez has impressed with his pace and willingness to join attacks. He represents the next generation of Mexican fullbacks pushing for a regular starting role.",
+      "playingStyle": "Pacey, attack-minded right-back who loves to overlap, deliver crosses into the box, and recover quickly with his speed.",
+      "keyStrengths": ["Pace and recovery speed", "Attacking overlaps", "Crossing delivery"],
+      "worldCup2026Role": "Young right-back option providing energy and attacking impetus, likely competing for minutes behind the more experienced options.",
+      "notableFact": "Alvarez is a product of Pachuca's renowned academy, the same system that produced other Mexican internationals like Hirving Lozano and Edson Alvarez."
+    },
+    "Oscar Gonzalez": {
+      "bio": "A promising young goalkeeper emerging from the Liga MX ranks, Gonzalez has shown excellent potential between the posts for Leon. His inclusion in the squad represents Mexico's investment in goalkeeping depth for the future.",
+      "playingStyle": "Modern goalkeeper with good reflexes, confident ball distribution, and the agility to cover the goal effectively.",
+      "keyStrengths": ["Reflexes and shot-stopping", "Ball distribution", "Agility and mobility"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience, representing the future of Mexican goalkeeping.",
+      "notableFact": "Gonzalez's selection for the World Cup squad at a young age underscores the Mexican federation's commitment to developing the next generation of goalkeepers behind the legendary Ochoa."
+    }
+  }
+}

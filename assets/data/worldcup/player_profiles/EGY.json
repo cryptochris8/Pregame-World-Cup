@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Mohamed El-Shenawy": {
+      "bio": "Veteran goalkeeper and Al-Ahly legend with 100 caps for Egypt. He was outstanding at the 2018 World Cup and has been the backbone of Egyptian goalkeeping for nearly a decade.",
+      "playingStyle": "Commanding, experienced goalkeeper with excellent reflexes, strong shot-stopping, and leadership of the defensive line",
+      "keyStrengths": ["Shot-stopping", "Leadership", "Big-game experience"],
+      "worldCup2026Role": "Starting goalkeeper and veteran leader who organizes Egypt's defense from the back",
+      "notableFact": "Reached 100 caps for Egypt, making him one of the most capped goalkeepers in the nation's history"
+    },
+    "Ahmed Fatouh": {
+      "bio": "Left-back who plays for Al-Ahly, Egypt's most successful club. He has been a consistent performer in both domestic and continental competitions.",
+      "playingStyle": "Disciplined left-back who prioritizes defensive solidity while offering occasional overlapping runs",
+      "keyStrengths": ["Defensive discipline", "Consistency", "Positional awareness"],
+      "worldCup2026Role": "Starting or backup left-back providing reliable defensive cover on the left flank",
+      "notableFact": "Has won multiple CAF Champions League titles with Al-Ahly, Africa's most successful club in continental competition"
+    },
+    "Ahmed Hegazi": {
+      "bio": "Experienced center-back who played in the English Premier League for West Bromwich Albion. Now in the Saudi Pro League with Al-Ittihad, he brings top-level experience and leadership to Egypt's defense.",
+      "playingStyle": "Dominant, physical center-back who excels in aerial duels and brings an authoritative presence to the backline",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Premier League experience"],
+      "worldCup2026Role": "First-choice center-back and defensive leader whose experience at the highest level anchors Egypt's backline",
+      "notableFact": "Impressed in the Premier League with West Brom, becoming one of the few Egyptian outfield players to succeed in English football"
+    },
+    "Omar Gaber": {
+      "bio": "Versatile right-back with 45 caps who has played in multiple leagues, including a stint in MLS with LAFC. He was part of Egypt's 2018 World Cup squad in Russia.",
+      "playingStyle": "Attack-minded right-back with good pace and the ability to get forward and deliver crosses",
+      "keyStrengths": ["Pace", "Crossing", "Versatility"],
+      "worldCup2026Role": "Experienced right-back option who provides squad depth and international tournament experience",
+      "notableFact": "Has played professional football on three continents, including Europe, North America, and Africa"
+    },
+    "Ali Gabr": {
+      "bio": "Veteran center-back who plays for Pyramids FC in the Egyptian Premier League. With 35 caps, he has been a trusted figure in Egypt's defensive rotation for many years.",
+      "playingStyle": "Traditional, rugged center-back who relies on physicality, aerial strength, and positional discipline",
+      "keyStrengths": ["Aerial ability", "Physicality", "Defensive positioning"],
+      "worldCup2026Role": "Experienced backup center-back providing depth and know-how in the defensive ranks",
+      "notableFact": "Was part of multiple AFCON campaigns with Egypt, contributing to the team's strong defensive record"
+    },
+    "Tarek Hamed": {
+      "bio": "Veteran defensive midfielder and Zamalek legend with 60 caps. Known as one of the toughest tacklers in Egyptian football, he is a warrior in the middle of the park.",
+      "playingStyle": "Fierce, combative defensive midfielder who breaks up play with relentless tackling and tireless running",
+      "keyStrengths": ["Tackling", "Work rate", "Defensive screening"],
+      "worldCup2026Role": "Experienced midfield anchor who provides defensive protection and tenacity in the engine room",
+      "notableFact": "A Zamalek icon who has won numerous domestic titles and is revered for his warrior-like commitment on the pitch"
+    },
+    "Trezeguet": {
+      "bio": "Experienced right winger known by his single name, inspired by the French striker David Trezeguet. He played in the Premier League for Aston Villa and now plays in Turkey for Trabzonspor.",
+      "playingStyle": "Pacy, direct winger who cuts inside from the right to shoot with his stronger left foot, creating havoc in defenses",
+      "keyStrengths": ["Pace", "Left-footed finishing", "Direct running"],
+      "worldCup2026Role": "Key attacking winger who provides a goal threat from wide areas and can change games with his directness",
+      "notableFact": "Scored the decisive goal that saved Aston Villa from Premier League relegation, becoming a cult hero at Villa Park"
+    },
+    "Emam Ashour": {
+      "bio": "Rising midfield talent who plays for Al-Ahly and has quickly become one of the most important players in the Egyptian Premier League. At 28, he is entering his prime years.",
+      "playingStyle": "Dynamic, box-to-box midfielder who combines physical power with technical quality and an ability to drive forward",
+      "keyStrengths": ["Box-to-box running", "Physical power", "Technical quality"],
+      "worldCup2026Role": "Key midfield starter whose energy and two-way play are central to Egypt's engine room",
+      "notableFact": "Has emerged as one of the best midfielders in African club football through his performances for Al-Ahly"
+    },
+    "Mohamed Sherif": {
+      "bio": "Striker who moved to the Saudi Pro League after a prolific spell at Al-Ahly. With 8 goals in 25 caps, he has proven himself a reliable goalscorer at international level.",
+      "playingStyle": "Sharp, instinctive striker with quick movement in the box and a clinical finishing touch",
+      "keyStrengths": ["Finishing", "Movement in the box", "Link-up play"],
+      "worldCup2026Role": "Backup striker providing an important goal-scoring option behind the first-choice attack",
+      "notableFact": "Was the Egyptian Premier League's top scorer before earning his move to the Saudi Pro League"
+    },
+    "Mohamed Salah": {
+      "bio": "Global football superstar and Egypt's greatest ever player. The Liverpool icon has won the Premier League, Champions League, and multiple Golden Boots. With 55 goals in 100 caps, he is Egypt's all-time top scorer.",
+      "playingStyle": "World-class forward who combines blistering pace, incredible dribbling, and lethal left-footed finishing to devastate defenses",
+      "keyStrengths": ["Left-footed finishing", "Pace and dribbling", "Big-game mentality"],
+      "worldCup2026Role": "Undisputed star player and captain, the entire Egyptian attack is built around maximizing Salah's world-class ability",
+      "notableFact": "Has scored over 200 goals for Liverpool, won the Champions League, and is widely considered the greatest African footballer of his generation"
+    },
+    "Mostafa Mohamed": {
+      "bio": "Powerful striker who plays for Nantes in Ligue 1. He has established himself in European football and brings physicality and aerial threat to Egypt's forward line.",
+      "playingStyle": "Strong, physical center-forward who holds the ball up well, wins aerial duels, and finishes chances in the box",
+      "keyStrengths": ["Hold-up play", "Aerial ability", "Physical presence"],
+      "worldCup2026Role": "Starting center-forward who provides the physical focal point for Egypt's attack alongside Salah",
+      "notableFact": "Moved to Ligue 1 from Galatasaray, establishing himself as one of the best African strikers playing in European football"
+    },
+    "Mohamed Awad": {
+      "bio": "Veteran backup goalkeeper who plays for Zamalek. He has served as a reliable understudy to El-Shenawy for many years in the Egyptian national team setup.",
+      "playingStyle": "Experienced, steady goalkeeper with solid handling and good command of his penalty area",
+      "keyStrengths": ["Experience", "Handling", "Penalty area command"],
+      "worldCup2026Role": "Backup goalkeeper providing experienced depth behind Mohamed El-Shenawy",
+      "notableFact": "Has been a loyal servant in the national team setup, always maintaining his readiness despite limited playing time"
+    },
+    "Akram Tawfik": {
+      "bio": "Dynamic right-back who plays for Al-Ahly and has become a regular in Egypt's defensive setup. He offers pace and energy going forward.",
+      "playingStyle": "Energetic, attack-minded right-back who gets forward frequently to deliver crosses and provide width",
+      "keyStrengths": ["Pace", "Crossing", "Attacking energy"],
+      "worldCup2026Role": "Starting right-back whose attacking contributions add width and dynamism to Egypt's play",
+      "notableFact": "Has won multiple CAF Champions League titles with Al-Ahly, gaining experience in high-stakes matches across Africa"
+    },
+    "Mohamed Hany": {
+      "bio": "Experienced right-back from Al-Ahly with 25 caps. A dependable defender who has been a consistent performer in Egyptian domestic football for many years.",
+      "playingStyle": "Reliable, defensively solid right-back who focuses on his primary defensive duties",
+      "keyStrengths": ["Defensive reliability", "Consistency", "Positioning"],
+      "worldCup2026Role": "Backup right-back providing experienced squad depth in the defensive positions",
+      "notableFact": "Has been a key part of Al-Ahly's domestic and continental dominance in recent years"
+    },
+    "Mahmoud Hamdy": {
+      "bio": "Center-back known by his nickname 'El-Wensh' who plays for Zamalek. He has developed into one of the best young defenders in the Egyptian league with his athleticism and reading of the game.",
+      "playingStyle": "Athletic, aggressive center-back who uses his pace and power to win duels and cover ground quickly",
+      "keyStrengths": ["Athleticism", "Pace for a center-back", "Aggressive defending"],
+      "worldCup2026Role": "Key center-back option who offers pace and athleticism in Egypt's defensive rotation",
+      "notableFact": "Known universally as 'El-Wensh', his nickname has become more recognized than his actual name in Egyptian football"
+    },
+    "Afsha": {
+      "bio": "Creative attacking midfielder known by his single name who is one of Al-Ahly's most important players. With 25 caps and 4 goals, he is a key creative force for Egypt.",
+      "playingStyle": "Skillful, creative playmaker with excellent dribbling, vision, and the ability to score important goals",
+      "keyStrengths": ["Creativity", "Dribbling", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Attacking midfield option who can unlock defenses with his creativity and flair",
+      "notableFact": "Has scored crucial goals for Al-Ahly in the CAF Champions League, earning a reputation as a big-game performer"
+    },
+    "Mohamed Elneny": {
+      "bio": "Veteran midfielder who spent many years at Arsenal in the Premier League. With 95 caps, he is one of Egypt's most experienced players and brings elite European know-how.",
+      "playingStyle": "Tidy, composed central midfielder who keeps the ball moving with simple, effective passing and provides defensive cover",
+      "keyStrengths": ["Passing accuracy", "Composure", "Defensive discipline"],
+      "worldCup2026Role": "Experienced midfield option who brings Arsenal-level composure and game management",
+      "notableFact": "Spent over seven years at Arsenal, becoming a popular figure at the club and one of the few Egyptian players to succeed in the Premier League"
+    },
+    "Ahmed Sayed": {
+      "bio": "Exciting right winger known by his nickname 'Zizo' who plays for Zamalek. With 30 caps and 5 goals, he is one of the most dynamic attackers in Egyptian football.",
+      "playingStyle": "Quick, tricky winger with excellent dribbling and the ability to create chances out of nothing with his skill",
+      "keyStrengths": ["Dribbling", "Pace", "Creativity"],
+      "worldCup2026Role": "Attacking wing option who can provide a creative spark and unpredictability in the final third",
+      "notableFact": "Known as 'Zizo', he is one of the most popular players in Egyptian football and a Zamalek fan favorite"
+    },
+    "Omar Fayed": {
+      "bio": "Young defensive midfielder from Zamalek who has quickly risen through the ranks to earn international recognition. At just 23, he represents the future of Egypt's midfield.",
+      "playingStyle": "Young, energetic defensive midfielder who presses aggressively and covers large amounts of ground",
+      "keyStrengths": ["Energy", "Pressing", "Defensive awareness"],
+      "worldCup2026Role": "Young midfield option who can provide energy and fresh legs in the defensive midfield role",
+      "notableFact": "One of the youngest players in the squad, he has quickly established himself as a key player for Zamalek"
+    },
+    "Omar Marmoush": {
+      "bio": "Electrifying forward who plays for Manchester City in the Premier League after a sensational spell at Eintracht Frankfurt. He has emerged as one of the most exciting players in world football alongside Mohamed Salah.",
+      "playingStyle": "Explosive, versatile forward who combines blistering pace, clever movement, and clinical finishing from the left wing or as a striker",
+      "keyStrengths": ["Explosive pace", "Versatile attacking play", "Clinical finishing"],
+      "worldCup2026Role": "Key attacking star alongside Salah, forming one of the most dangerous attacking duos at the World Cup",
+      "notableFact": "His sensational form at Eintracht Frankfurt earned a big-money move to Manchester City, making him one of the most expensive African players ever"
+    },
+    "Ayman Ashraf": {
+      "bio": "Veteran right-back from Al-Ahly with 25 caps. A dependable defensive player who has been part of numerous domestic and continental triumphs with Egypt's biggest club.",
+      "playingStyle": "Tough, defensively focused right-back who prioritizes stopping opponents and maintaining the team's shape",
+      "keyStrengths": ["Defensive toughness", "Aerial ability", "Consistency"],
+      "worldCup2026Role": "Experienced defensive squad player providing depth at right-back",
+      "notableFact": "Has won numerous titles with Al-Ahly including multiple CAF Champions League trophies"
+    },
+    "Ahmed Sobhi": {
+      "bio": "Third-choice goalkeeper from Al-Ahly who provides additional depth in the goalkeeping department for the national team.",
+      "playingStyle": "Solid, reliable goalkeeper who trains daily with top-level teammates and is always ready when called upon",
+      "keyStrengths": ["Reliability", "Training standards", "Shot-stopping"],
+      "worldCup2026Role": "Third-choice goalkeeper providing goalkeeping depth in the World Cup squad",
+      "notableFact": "Training daily alongside Africa's best players at Al-Ahly keeps his standards exceptionally high"
+    },
+    "Ramadan Sobhi": {
+      "bio": "Talented left winger who played for Stoke City and Huddersfield in England before returning to Egypt. Once considered one of the brightest young talents in African football.",
+      "playingStyle": "Skillful, creative left winger with excellent close control, dribbling ability, and an eye for the spectacular",
+      "keyStrengths": ["Dribbling", "Close control", "Creativity"],
+      "worldCup2026Role": "Attacking option on the left wing who can create magic moments with his individual skill",
+      "notableFact": "Made his Premier League debut as a teenager with Stoke City and was tipped as one of the most talented young Egyptians of his generation"
+    },
+    "Ahmed Kouka": {
+      "bio": "Experienced striker with 30 caps and 12 goals who plays in the Portuguese top flight for Vitoria SC. He has been a consistent goal threat for Egypt across multiple campaigns.",
+      "playingStyle": "Clinical, predatory striker who positions himself well in the box and finishes chances with composure",
+      "keyStrengths": ["Clinical finishing", "Positioning", "Aerial threat"],
+      "worldCup2026Role": "Experienced backup striker who can provide goals off the bench in crucial moments",
+      "notableFact": "With 12 goals in 30 caps, he has one of the best goals-per-game ratios among Egyptian strikers in recent history"
+    },
+    "Karim Hafez": {
+      "bio": "Left-back who plays in the Egyptian Premier League for Ittihad El Shorta. He has been part of the national team setup as a backup option at left-back.",
+      "playingStyle": "Left-footed defender who provides a natural option on the left side with decent delivery and defensive awareness",
+      "keyStrengths": ["Left foot", "Crossing ability", "Defensive awareness"],
+      "worldCup2026Role": "Backup left-back providing squad depth on the left side of defense",
+      "notableFact": "Has been part of multiple Egypt squads across various competitions, providing dependable depth"
+    },
+    "Ibrahim Adel": {
+      "bio": "Young and exciting right winger from Al-Ahly who is considered one of the most promising talents in Egyptian football. At 25, he is entering his prime and has 15 caps with 2 goals.",
+      "playingStyle": "Quick, direct young winger with pace, skill, and the confidence to take on defenders in one-on-one situations",
+      "keyStrengths": ["Pace", "Dribbling", "Direct running"],
+      "worldCup2026Role": "Exciting young attacking option who can provide pace and energy off the bench or in rotation",
+      "notableFact": "One of Al-Ahly's brightest academy graduates, he has already shown his quality in the CAF Champions League at a young age"
+    }
+  }
+}

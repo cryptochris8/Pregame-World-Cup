@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Yassine Bounou": {
+      "bio": "Morocco's heroic goalkeeper from the 2022 World Cup, where his saves were instrumental in the team's historic run to the semi-finals. Bounou, commonly known as Bono, moved to Al-Hilal in Saudi Arabia after establishing himself at Sevilla in La Liga.",
+      "playingStyle": "Agile and brave shot-stopper with exceptional reflexes, excellent penalty-saving record, and the composure to distribute the ball effectively under pressure.",
+      "keyStrengths": ["Penalty saving", "Reflexes and agility", "Composure under pressure"],
+      "worldCup2026Role": "Undisputed number one goalkeeper and one of the emotional leaders of the squad, expected to reprise his 2022 heroics.",
+      "notableFact": "Saved two penalties in the shootout against Spain at the 2022 World Cup and kept three clean sheets in the tournament."
+    },
+    "Achraf Hakimi": {
+      "bio": "One of the best right-backs in the world, Hakimi developed at Real Madrid before starring at Borussia Dortmund, Inter Milan, and Paris Saint-Germain. Born in Madrid to Moroccan parents, he chose to represent Morocco and has become the team's captain and talisman.",
+      "playingStyle": "Explosive wing-back with blistering pace, powerful shooting, and the ability to function as an extra attacker while maintaining defensive discipline through recovery speed.",
+      "keyStrengths": ["Blistering pace", "Powerful shooting from distance", "Overlapping and underlapping runs"],
+      "worldCup2026Role": "Captain and starting right-back, the team's most dangerous attacking outlet from defense and the heart of Morocco's tactical system.",
+      "notableFact": "Scored the decisive penalty with a cheeky Panenka chip against Spain in the 2022 World Cup round of 16 shootout."
+    },
+    "Noussair Mazraoui": {
+      "bio": "A technically refined right-back who grew up in Ajax's famed academy before joining Bayern Munich and then Manchester United. Mazraoui offers a more composed, possession-oriented alternative to Hakimi on the right side.",
+      "playingStyle": "Intelligent, technically excellent fullback who excels in possession-based systems, combining precise passing with smart positioning and the ability to invert into midfield.",
+      "keyStrengths": ["Passing accuracy", "Tactical intelligence", "Ability to invert into midfield"],
+      "worldCup2026Role": "Versatile defender who can play right-back or left-back, providing tactical flexibility and the ability to shift Hakimi further forward.",
+      "notableFact": "Became the first Moroccan to play for Bayern Munich when he joined in 2022 and was a key part of Morocco's 2022 World Cup semi-final squad."
+    },
+    "Sofyan Amrabat": {
+      "bio": "The midfield warrior who anchored Morocco's historic 2022 World Cup run with tireless performances. Amrabat has played in the Netherlands, Belgium, and Italy before joining Fenerbahce, and his combative style makes him the engine of Morocco's midfield.",
+      "playingStyle": "Relentless ball-winner who covers immense ground, combining tenacious tackling with the ability to carry the ball forward and resist pressure in tight spaces.",
+      "keyStrengths": ["Ball recovery and pressing", "Stamina and engine", "Resistance to pressure when carrying the ball"],
+      "worldCup2026Role": "Anchor of the midfield, the defensive screen who allows Morocco's attacking players freedom to create by doing the dirty work behind them.",
+      "notableFact": "Named in multiple 2022 World Cup Best XI selections after his extraordinary performances in Qatar, particularly in the victories over Belgium, Spain, and Portugal."
+    },
+    "Nayef Aguerd": {
+      "bio": "A commanding left-footed center-back who has played in France at Dijon and Rennes before moves to West Ham and Marseille. Aguerd is known for his elegant ball-playing ability and aerial dominance.",
+      "playingStyle": "Left-footed ball-playing center-back who excels at long diagonal passes, stepping into midfield, and winning aerial duels. A modern defender comfortable in possession.",
+      "keyStrengths": ["Left-footed distribution", "Aerial ability", "Long diagonal passing"],
+      "worldCup2026Role": "Starting center-back providing left-footed balance to the defensive line and quality distribution from the back.",
+      "notableFact": "Suffered a devastating injury just before the 2022 World Cup that limited his involvement, making the 2026 tournament a chance for redemption."
+    },
+    "Romain Saiss": {
+      "bio": "The veteran captain of Morocco's 2022 World Cup squad, Saiss spent years at Wolverhampton Wanderers in the Premier League before moving to the Saudi Pro League. A born leader who plays through pain and inspires his teammates.",
+      "playingStyle": "Tough, experienced center-back who leads by example, combining no-nonsense defending with underrated passing ability and a calming presence.",
+      "keyStrengths": ["Leadership and experience", "Aerial presence", "Defensive reading of the game"],
+      "worldCup2026Role": "Senior squad member and defensive leader providing experience and mentorship, capable of stepping in when needed.",
+      "notableFact": "Played through a knee injury against France in the 2022 World Cup semi-final before having to be stretchered off, emblematic of Morocco's warrior spirit."
+    },
+    "Hakim Ziyech": {
+      "bio": "Morocco's creative genius, Ziyech became a star at Ajax before a high-profile move to Chelsea. After a frustrating spell in London, he revived his career at Galatasaray. Known for his left foot and incredible crossing and shooting ability.",
+      "playingStyle": "Inventive left-footed playmaker who operates from the right wing, delivering pinpoint crosses, cutting inside to shoot, and creating chances with imaginative passing.",
+      "keyStrengths": ["Left-footed crossing and shooting", "Creative vision", "Set-piece delivery"],
+      "worldCup2026Role": "Creative talisman on the right wing or in a free role, responsible for unlocking defenses with his left foot and delivering set pieces.",
+      "notableFact": "Initially retired from international football due to a dispute with the coach but was recalled for the 2022 World Cup, where he played a key role in the historic run."
+    },
+    "Azzedine Ounahi": {
+      "bio": "A breakout star of the 2022 World Cup who went from playing in France's second division to being one of the most talked-about midfielders in the tournament. Ounahi's elegant performances attracted interest from across Europe, and he moved to La Liga.",
+      "playingStyle": "Graceful, silky midfielder with exceptional ball control, gliding past opponents with effortless dribbling and linking play between midfield and attack.",
+      "keyStrengths": ["Close control and dribbling", "Passing in tight spaces", "Ball progression"],
+      "worldCup2026Role": "Creative midfield fulcrum who provides the technical quality and ball progression between defense and attack.",
+      "notableFact": "Was playing for Angers in Ligue 2 just months before becoming one of the standout players at the 2022 World Cup in Qatar."
+    },
+    "Youssef En-Nesyri": {
+      "bio": "Morocco's primary goal threat, En-Nesyri has been a consistent scorer in Spain at Leganes and Sevilla before moving to Fenerbahce. His heading ability and physical presence make him one of the most dangerous aerial strikers in international football.",
+      "playingStyle": "Tall, athletic striker who excels in the air and makes intelligent runs in behind defenders. Combines physical presence with surprising mobility and finishing instinct.",
+      "keyStrengths": ["Aerial ability and heading", "Runs behind the defense", "Physical presence"],
+      "worldCup2026Role": "Starting center forward and Morocco's primary goal threat, expected to lead the line and be the focal point of the attack.",
+      "notableFact": "Scored against Portugal in the 2022 World Cup quarter-final with a towering header to send Morocco to the semi-finals for the first time."
+    },
+    "Brahim Diaz": {
+      "bio": "Born in Malaga to Moroccan parents, Brahim chose to represent Morocco after youth appearances for Spain. A product of Manchester City and Real Madrid's academies, he has established himself as a first-team player at the Bernabeu with his dazzling technical ability.",
+      "playingStyle": "Diminutive, quick-footed attacking midfielder who thrives in tight spaces, using rapid changes of direction, close dribbling, and incisive passing to unlock defenses.",
+      "keyStrengths": ["Close dribbling in tight spaces", "Quick feet and agility", "Creative passing"],
+      "worldCup2026Role": "Key creative player in the number 10 role, providing the technical quality and imagination to break down organized defenses.",
+      "notableFact": "Won La Liga and the Champions League with Real Madrid, becoming one of the most decorated Moroccan players in European club football."
+    },
+    "Abdelhamid Sabiri": {
+      "bio": "Born in Germany to Moroccan parents, Sabiri has played across several European leagues before moving to Saudi Arabia. He chose to represent Morocco over Germany and has been a useful attacking option for the national team.",
+      "playingStyle": "Technically skilled attacking midfielder with a good eye for goal and the ability to play between the lines, creating chances for himself and others.",
+      "keyStrengths": ["Shooting from distance", "Movement between the lines", "Set-piece ability"],
+      "worldCup2026Role": "Attacking midfield depth option capable of providing creativity and goal threat as a substitute.",
+      "notableFact": "Scored directly from a free kick against Belgium at the 2022 World Cup, a goal that was initially given as an own goal before being credited to Sabiri."
+    },
+    "Munir Mohamedi": {
+      "bio": "A veteran goalkeeper who has been part of Morocco's national team setup for many years. Mohamedi has played in Spain, France, and Saudi Arabia, providing experienced backup to Bounou.",
+      "playingStyle": "Experienced, reliable goalkeeper with good positioning and command of his box, a safe pair of hands when called upon.",
+      "keyStrengths": ["Positioning", "Experience", "Reliability"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced backup to Bounou.",
+      "notableFact": "Was part of Morocco's squad for the historic 2022 World Cup run and has served the national team across multiple AFCON and World Cup campaigns."
+    },
+    "Jawad El Yamiq": {
+      "bio": "A versatile defender who has played in Italy and Spain before moving to the Saudi Pro League. El Yamiq provides experienced depth at center-back and was part of Morocco's 2022 World Cup squad.",
+      "playingStyle": "Strong, physical center-back who combines aerial power with surprising comfort on the ball for a player of his stature.",
+      "keyStrengths": ["Physical strength", "Aerial duels", "Defensive versatility"],
+      "worldCup2026Role": "Experienced center-back depth providing cover and the ability to step in during group-stage rotation or in case of injury.",
+      "notableFact": "Played for multiple clubs across Italy and Spain including Real Valladolid, showcasing his adaptability to different footballing cultures."
+    },
+    "Zakaria Aboukhlal": {
+      "bio": "A Dutch-born Moroccan winger who developed at AZ Alkmaar before moving to Toulouse in Ligue 1. Aboukhlal adds pace and directness to Morocco's wide attacking options.",
+      "playingStyle": "Quick, direct winger who runs at defenders with pace and purpose, capable of cutting inside to shoot or delivering crosses from wide positions.",
+      "keyStrengths": ["Pace and directness", "Dribbling ability", "Cutting inside to shoot"],
+      "worldCup2026Role": "Wide attacking option providing pace and energy as a rotation player or impact substitute.",
+      "notableFact": "Scored the goal against Canada at the 2022 World Cup that sealed Morocco's place at the top of Group F."
+    },
+    "Selim Amallah": {
+      "bio": "A Belgian-born Moroccan midfielder who made his name at Standard Liege in the Belgian Pro League. Amallah is a box-to-box midfielder with an eye for goal who has been a consistent performer for Morocco.",
+      "playingStyle": "All-action midfielder who combines energy and work rate with technical quality, capable of contributing goals and assists from central positions.",
+      "keyStrengths": ["Goalscoring from midfield", "Energy and work rate", "Tactical flexibility"],
+      "worldCup2026Role": "Midfield depth player who can fill multiple roles and provide energy and goal threat from central areas.",
+      "notableFact": "Was part of Morocco's 2022 World Cup squad and has represented Morocco at multiple AFCON tournaments."
+    },
+    "Abde Ezzalzouli": {
+      "bio": "One of the most exciting young talents in Moroccan football, Ezzalzouli (known as Ez Abde) was developed at Barcelona's La Masia academy before moving to Real Betis. His electric pace and dribbling ability make him a nightmare for defenders.",
+      "playingStyle": "Explosive young winger with frightening pace, fearless dribbling, and the confidence to take on defenders one-on-one at every opportunity.",
+      "keyStrengths": ["Electric pace", "One-on-one dribbling", "Fearless attacking instinct"],
+      "worldCup2026Role": "Dynamic impact substitute or wide starter who can terrorize tired defenders with his pace and directness in the second half.",
+      "notableFact": "Trained at Barcelona's La Masia academy and initially represented Spain at youth level before switching allegiance to Morocco."
+    },
+    "Sofiane Boufal": {
+      "bio": "A skillful dribbler who has played in France and England, including stints at Lille, Southampton, and Angers. Boufal is beloved by Moroccan fans for his flair and the emotional celebrations during the 2022 World Cup, including his famous dance with his mother.",
+      "playingStyle": "Mesmerizing dribbler with exceptional close control, capable of beating multiple opponents in tight spaces and creating something from nothing.",
+      "keyStrengths": ["Close-control dribbling", "Creativity in the final third", "Beating defenders in tight spaces"],
+      "worldCup2026Role": "Experienced attacking option off the bench who can unlock defenses with individual brilliance when the game needs a creative spark.",
+      "notableFact": "His celebration dancing with his mother on the pitch after Morocco's 2022 World Cup victory over Portugal became one of the tournament's most iconic images."
+    },
+    "Amine Harit": {
+      "bio": "A French-born Moroccan attacking midfielder who has played at Schalke 04 and Marseille. Harit is known for his exceptional close control, creativity, and ability to produce moments of magic in the final third.",
+      "playingStyle": "Technically brilliant playmaker with a low center of gravity, exceptional dribbling in tight spaces, and the vision to find teammates with incisive passes.",
+      "keyStrengths": ["Technical ability", "Dribbling in tight spaces", "Creative passing"],
+      "worldCup2026Role": "Creative attacking option providing depth in the playmaker positions and an alternative approach to breaking down stubborn defenses.",
+      "notableFact": "Won the German Bundesliga Rookie of the Month award at Schalke 04 and chose Morocco over France at international level."
+    },
+    "Amir Richardson": {
+      "bio": "The son of former international Micheal Richardson, Amir has emerged as one of the brightest young midfield talents in European football. Born in France, he developed at Reims before earning a move to Fiorentina in Serie A.",
+      "playingStyle": "Tall, elegant midfielder with excellent range of passing, strong in the air for a midfielder, and the ability to dictate tempo from deep positions.",
+      "keyStrengths": ["Passing range", "Physical presence in midfield", "Tempo control"],
+      "worldCup2026Role": "Young midfield prospect who offers an alternative profile to Ounahi and Amrabat, capable of controlling games with his physicality and passing range.",
+      "notableFact": "At just 24, he is one of the youngest members of Morocco's squad and represents the next generation of Moroccan midfield talent."
+    },
+    "Achraf Dari": {
+      "bio": "A center-back who made his name at Wydad AC in Morocco before earning a move to Brest in Ligue 1. Dari has been one of the most impressive defenders in the Moroccan domestic league and has transitioned well to European football.",
+      "playingStyle": "Strong, aggressive defender who competes fiercely in duels and brings leadership qualities from his time captaining in Moroccan football.",
+      "keyStrengths": ["Aggressive defending", "Aerial presence", "Leadership qualities"],
+      "worldCup2026Role": "Center-back depth option capable of stepping in with his aggressive defending style and passion for the shirt.",
+      "notableFact": "Was part of Brest's remarkable debut Champions League campaign after their shock qualification from Ligue 1."
+    },
+    "Walid Cheddira": {
+      "bio": "An Italian-born Moroccan striker who made his breakthrough at Bari in Serie B before earning a move to Serie A. Cheddira was a surprise selection for the 2022 World Cup squad and has continued to develop as a forward option.",
+      "playingStyle": "Mobile, hard-working striker who makes intelligent runs and pressures defenders relentlessly, combining physical strength with improving finishing.",
+      "keyStrengths": ["Intelligent movement", "Work rate and pressing", "Physical strength"],
+      "worldCup2026Role": "Backup striker providing a different option to En-Nesyri, capable of leading the press from the front and making off-the-ball runs.",
+      "notableFact": "Was called up to the 2022 World Cup squad despite playing in Serie B and scored twice as a substitute against Canada."
+    },
+    "Ahmed Tagnaouti": {
+      "bio": "A goalkeeper who has been one of the standouts in Moroccan domestic football with Wydad AC. Tagnaouti has earned his place in the national team through consistent performances in the Botola Pro.",
+      "playingStyle": "Athletic goalkeeper with good shot-stopping ability and the confidence that comes from being a leader in Moroccan club football.",
+      "keyStrengths": ["Shot-stopping", "Athletic ability", "Confidence"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth at the position.",
+      "notableFact": "Has won the CAF Champions League with Wydad AC, gaining experience in high-pressure African continental competition."
+    },
+    "Bilal El Khannouss": {
+      "bio": "One of the most exciting teenage talents in world football, El Khannouss became the youngest Moroccan to play at a World Cup when he appeared at Qatar 2022 at just 18. He has since moved from Genk to VfB Stuttgart in the Bundesliga and is considered a future star.",
+      "playingStyle": "Precocious young playmaker with outstanding technical ability, vision beyond his years, and the confidence to take on the ball in dangerous areas and create chances.",
+      "keyStrengths": ["Technical quality", "Vision and creativity", "Composure beyond his years"],
+      "worldCup2026Role": "Emerging creative talent who could play a significant role as Morocco's next-generation playmaker, pushing for a starting spot alongside or instead of the veterans.",
+      "notableFact": "Became the youngest Moroccan to play at a World Cup at age 18 in 2022 and is considered one of the brightest prospects in African football."
+    },
+    "Yahya Attiyat Allah": {
+      "bio": "A left-back from Wydad AC who became an unexpected hero during Morocco's 2022 World Cup run. Despite playing in the Moroccan domestic league, Attiyat Allah proved himself capable on the world stage with energetic performances.",
+      "playingStyle": "Energetic left-back who compensates for a lower profile league with relentless work rate, pace, and a willingness to get forward and deliver crosses.",
+      "keyStrengths": ["Work rate and energy", "Pace", "Crossing from the left"],
+      "worldCup2026Role": "Left-back depth option who provides competition and an alternative profile at the position.",
+      "notableFact": "Went from playing solely in the Moroccan league to starting at a World Cup semi-final, embodying Morocco's underdog spirit in 2022."
+    },
+    "Adam Masina": {
+      "bio": "An Italian-born Moroccan left-back who has played at Bologna, Watford, and Torino. Masina offers a different dimension at left-back with his physical presence and experience in European leagues.",
+      "playingStyle": "Tall, physical left-back who uses his size for aerial duels and provides a more defensive, robust option compared to the other fullbacks in the squad.",
+      "keyStrengths": ["Physical presence", "Aerial ability for a fullback", "Defensive solidity"],
+      "worldCup2026Role": "Defensive left-back option useful for protecting leads or facing physically dominant opponents.",
+      "notableFact": "Has played in both the Premier League and Serie A, giving him a breadth of experience across different styles of European football."
+    },
+    "Ilias Chair": {
+      "bio": "A Belgian-born Moroccan playmaker who has been the standout creative player at QPR in the English Championship. Chair is known for his vision, passing, and ability to score spectacular goals from distance.",
+      "playingStyle": "Technically gifted attacking midfielder with excellent vision, creative passing, and a dangerous long-range shot. A pure playmaker who creates chances and scores from distance.",
+      "keyStrengths": ["Vision and creative passing", "Long-range shooting", "Set-piece delivery"],
+      "worldCup2026Role": "Creative depth option in the attacking midfield positions, capable of providing a spark with his passing and shooting.",
+      "notableFact": "Has been QPR's standout player for multiple seasons and has scored several spectacular long-range goals in the Championship."
+    }
+  }
+}

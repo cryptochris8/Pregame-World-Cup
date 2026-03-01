@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Edouard Mendy": {
+      "bio": "A towering goalkeeper who became a Champions League hero at Chelsea, saving key penalties and keeping crucial clean sheets in the 2021 final. Mendy moved to Al-Ahli in the Saudi Pro League and remains Senegal's first-choice keeper with an imposing presence.",
+      "playingStyle": "Tall, commanding goalkeeper with excellent shot-stopping, brave in one-on-one situations, and capable of quick distribution to start counterattacks.",
+      "keyStrengths": ["Shot-stopping ability", "Command of the penalty area", "Distribution to start attacks"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and a leader in the dressing room, expected to be the last line of defense for Senegal's World Cup campaign.",
+      "notableFact": "Won the Champions League with Chelsea in 2021 and was named the Best FIFA Men's Goalkeeper that same year."
+    },
+    "Formose Mendy": {
+      "bio": "A young left-back who has developed through the French football system at Lorient. Despite playing in Ligue 2, Formose Mendy has earned his place in the Senegal squad through his consistent performances and potential.",
+      "playingStyle": "Athletic left-back with pace and the ability to get forward, combining defensive solidity with attacking contributions from the flank.",
+      "keyStrengths": ["Pace and athleticism", "Defensive awareness", "Attacking overlaps"],
+      "worldCup2026Role": "Depth at left-back offering a younger alternative with pace and energy.",
+      "notableFact": "Shares the surname Mendy with two other members of the Senegal squad (Edouard and Nampalys), a common Senegalese family name."
+    },
+    "Kalidou Koulibaly": {
+      "bio": "One of the best center-backs in African football history, Koulibaly spent eight dominant years at Napoli in Serie A before moves to Chelsea and then Al-Hilal. A rock at the back and the inspirational captain who led Senegal to their first AFCON title in 2022.",
+      "playingStyle": "Powerful, quick, and technically excellent center-back who combines physical dominance with the ability to carry the ball out of defense and make recovery tackles at speed.",
+      "keyStrengths": ["Physical dominance", "Recovery pace for a center-back", "Leadership and experience"],
+      "worldCup2026Role": "Captain and defensive leader at the heart of Senegal's backline, the most experienced defender in the squad and the team's emotional anchor.",
+      "notableFact": "Captained Senegal to their first-ever Africa Cup of Nations title in 2022 and was named in the Serie A Team of the Season multiple times at Napoli."
+    },
+    "Abdou Diallo": {
+      "bio": "A versatile defender who has played for Monaco, Mainz, Borussia Dortmund, PSG, and Leipzig before moving to Al-Arabi. Diallo can play at center-back or left-back and brings European pedigree to the squad.",
+      "playingStyle": "Composed, ball-playing defender comfortable in possession with the versatility to operate at center-back or left-back in various tactical setups.",
+      "keyStrengths": ["Versatility (CB and LB)", "Composure on the ball", "European top-level experience"],
+      "worldCup2026Role": "Versatile defensive option providing cover at both center-back and left-back, valuable for tactical flexibility.",
+      "notableFact": "Played for PSG and Borussia Dortmund in the Champions League and was part of Senegal's 2022 AFCON-winning squad."
+    },
+    "Youssouf Sabaly": {
+      "bio": "A reliable right-back who developed at Bordeaux and has played at Real Betis in La Liga. Sabaly brings experience and consistency to Senegal's defensive options on the right side.",
+      "playingStyle": "Steady, dependable right-back who balances defensive duties with the ability to support attacks, reliable in one-on-one defending and positioning.",
+      "keyStrengths": ["Defensive reliability", "One-on-one defending", "Consistent positioning"],
+      "worldCup2026Role": "Starting right-back providing defensive solidity and experience from his years in La Liga.",
+      "notableFact": "Has been a regular for Real Betis in La Liga and was part of Senegal's 2022 AFCON triumph and 2022 World Cup squad."
+    },
+    "Nampalys Mendy": {
+      "bio": "A diminutive but tenacious defensive midfielder who spent years in the English football system at Nice, Leicester City, and now Watford. Despite his small stature, Mendy is a fierce competitor who wins the ball and keeps play moving.",
+      "playingStyle": "Compact, combative defensive midfielder who excels at winning the ball in tight spaces, shielding the defense, and keeping possession ticking with short, accurate passes.",
+      "keyStrengths": ["Ball-winning in tight spaces", "Short passing accuracy", "Defensive positioning"],
+      "worldCup2026Role": "Experienced midfield shield providing depth and a different profile behind the starting defensive midfielders.",
+      "notableFact": "Won the FA Cup and Community Shield with Leicester City and was part of their remarkable Premier League survival stories."
+    },
+    "Moussa Niakhate": {
+      "bio": "A powerful center-back who has established himself as a key player at Nottingham Forest in the Premier League. Niakhate developed in France at Metz and Mainz in Germany before moving to England.",
+      "playingStyle": "Strong, aggressive center-back who is dominant in aerial duels, forceful in the tackle, and capable of carrying the ball forward from the back.",
+      "keyStrengths": ["Aerial dominance", "Aggressive defending", "Ball-carrying from defense"],
+      "worldCup2026Role": "Key center-back option who can partner Koulibaly or provide rotation, bringing Premier League-level physicality to the defense.",
+      "notableFact": "Played a crucial role in keeping Nottingham Forest in the Premier League and has become one of the most respected defenders in the division."
+    },
+    "Cheikhou Kouyate": {
+      "bio": "A veteran midfielder and one of the most capped players in Senegalese history. Kouyate has had a long career in the Premier League at West Ham and Crystal Palace, known for his versatility, aerial ability, and tireless work ethic.",
+      "playingStyle": "Tall, versatile midfielder who can also play center-back, combining aerial dominance with box-to-box energy and an ability to contribute in both penalty areas.",
+      "keyStrengths": ["Aerial ability", "Versatility (CDM and CB)", "Experience and leadership"],
+      "worldCup2026Role": "Veteran squad member providing experience, versatility, and leadership. Can fill in at defensive midfield or center-back as needed.",
+      "notableFact": "With 95 caps, he is one of Senegal's most experienced players ever and has represented the country at multiple World Cups and AFCON tournaments."
+    },
+    "Boulaye Dia": {
+      "bio": "A clinical striker who has impressed at Reims, Villarreal, Salernitana, and Lazio in Serie A. Dia combines pace with sharp finishing and has become an increasingly important forward for Senegal.",
+      "playingStyle": "Quick, mobile striker with a sharp eye for goal, excellent movement to find space in the box, and the pace to stretch defenses on the counter.",
+      "keyStrengths": ["Clinical finishing", "Intelligent movement", "Pace on the counter"],
+      "worldCup2026Role": "Key striker option providing goal threat and mobility, capable of starting or coming off the bench to provide a spark.",
+      "notableFact": "Scored important goals for Senegal during their 2022 AFCON campaign and has proven himself across multiple top European leagues."
+    },
+    "Sadio Mane": {
+      "bio": "Senegal's all-time greatest player and national hero, Mane rose from humble beginnings in Bambali to become a Premier League and Champions League legend at Liverpool. He moved to Bayern Munich and then Al-Nassr. His goal won Senegal their first AFCON title in 2022.",
+      "playingStyle": "Electrifying attacker combining blistering pace, fearless dribbling, clinical finishing, and relentless pressing. Can play across the front line and consistently produces in the biggest moments.",
+      "keyStrengths": ["Pace and explosiveness", "Big-game mentality", "Versatility across the front three"],
+      "worldCup2026Role": "Senegal's talisman and captain, the player around whom the entire attack is built. Expected to lead the line in what could be his final World Cup.",
+      "notableFact": "Scored the winning penalty to give Senegal their first-ever Africa Cup of Nations title in 2022, making him a national legend and earning the African Player of the Year award."
+    },
+    "Nicolas Jackson": {
+      "bio": "One of the most exciting young strikers in the Premier League, Jackson moved from Villarreal to Chelsea in 2023 and has become a regular goalscorer despite his young age. His combination of pace, power, and finishing makes him a growing force.",
+      "playingStyle": "Athletic, pacy striker who runs in behind defenses with explosive acceleration, combines well with teammates, and finishes with improving consistency.",
+      "keyStrengths": ["Explosive pace", "Runs in behind", "Physical power"],
+      "worldCup2026Role": "Starting striker or key rotation option alongside Mane, providing the pace and dynamism to stretch opposing defenses.",
+      "notableFact": "Became one of Chelsea's top scorers in his debut Premier League season and is one of the highest-valued Senegalese players in history."
+    },
+    "Seny Dieng": {
+      "bio": "A goalkeeper who grew up in the French football system and has established himself in English football at QPR and Middlesbrough. Dieng provides reliable competition at the goalkeeper position.",
+      "playingStyle": "Tall, athletic goalkeeper with good reflexes and commanding presence, comfortable with the ball at his feet in modern build-up play.",
+      "keyStrengths": ["Athletic ability", "Distribution", "Reflexes"],
+      "worldCup2026Role": "Second-choice goalkeeper providing strong competition and backup to Edouard Mendy.",
+      "notableFact": "Scored a dramatic headed equalizer for QPR in injury time during a Championship match, a rare feat for a goalkeeper."
+    },
+    "Pape Abou Cisse": {
+      "bio": "A towering center-back who has played at Olympiakos in Greece, becoming one of the Greek Super League's most dominant defenders. Cisse uses his enormous frame to dominate aerial situations.",
+      "playingStyle": "Physically imposing center-back who towers over opponents in the air and uses his size to block shots and shield the ball effectively.",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Shot-blocking"],
+      "worldCup2026Role": "Defensive depth option whose size and aerial ability make him useful for protecting leads or defending set pieces.",
+      "notableFact": "Has won multiple Greek Super League titles and cups with Olympiakos and scored crucial goals from set pieces."
+    },
+    "Krepin Diatta": {
+      "bio": "A talented right winger who earned a big move from Club Brugge to Monaco after impressing in the Belgian Pro League and Champions League. Diatta has pace, skill, and end product from the right flank.",
+      "playingStyle": "Rapid, skillful winger who takes on defenders with pace and trickery, capable of delivering dangerous crosses and cutting inside to shoot from the right.",
+      "keyStrengths": ["Pace and skill", "Crossing ability", "Cutting inside to shoot"],
+      "worldCup2026Role": "Starting right winger or key rotation option, providing width, pace, and end product from the right side of attack.",
+      "notableFact": "Scored on his Champions League debut for Club Brugge and was one of the most exciting young talents in Belgian football before his move to Monaco."
+    },
+    "Idrissa Gueye": {
+      "bio": "One of the most experienced players in the Senegalese squad, Gana Gueye has had a distinguished Premier League career at Aston Villa, Everton, and a spell at PSG. A tireless midfield runner who covers every blade of grass.",
+      "playingStyle": "Relentless ball-winning midfielder with exceptional stamina, pressing ability, and the discipline to maintain the team's defensive structure across 90 minutes.",
+      "keyStrengths": ["Ball-winning ability", "Tireless stamina", "Pressing and work rate"],
+      "worldCup2026Role": "Experienced starting midfielder providing the defensive work rate and ball-winning ability that allows Senegal's attacking players to shine.",
+      "notableFact": "With 110 caps, he is one of Senegal's most capped players ever and has been a cornerstone of the team for over a decade."
+    },
+    "Alfred Gomis": {
+      "bio": "A tall goalkeeper who has played across Italy and France, including stints at SPAL, Dijon, and Rennes. Gomis provides experienced depth at the goalkeeper position.",
+      "playingStyle": "Tall goalkeeper with good shot-stopping ability and experience in multiple European leagues, comfortable coming off his line to deal with crosses.",
+      "keyStrengths": ["Height and reach", "Cross-claiming", "European experience"],
+      "worldCup2026Role": "Third-choice goalkeeper completing the squad depth at the position.",
+      "notableFact": "Was part of Senegal's 2022 AFCON-winning squad and has played in both Serie A and Ligue 1."
+    },
+    "Pape Matar Sarr": {
+      "bio": "One of the most exciting young midfield talents in world football, Sarr joined Tottenham as a teenager and has developed into a key player. His combination of athleticism, technical ability, and tactical intelligence belies his young age.",
+      "playingStyle": "Dynamic box-to-box midfielder with exceptional athletic ability, powerful ball-carrying, and the intelligence to contribute in both defensive and attacking phases.",
+      "keyStrengths": ["Athletic box-to-box ability", "Ball-carrying power", "Tactical intelligence"],
+      "worldCup2026Role": "Starting central midfielder who provides the dynamism and ball progression Senegal need to compete at the highest level.",
+      "notableFact": "Became one of the youngest players to start regularly for Tottenham in the Premier League and is considered one of the brightest midfield prospects in Africa."
+    },
+    "Ismaila Sarr": {
+      "bio": "A pacy, dynamic winger who became a fan favorite at Watford before moves to Marseille and Crystal Palace. Sarr is known for his explosive speed and ability to produce in big moments, including his stunning brace against Liverpool in 2020.",
+      "playingStyle": "Devastating right winger with frightening pace, direct dribbling, and the ability to score spectacular goals. A constant threat on the counter-attack.",
+      "keyStrengths": ["Blistering pace", "Direct dribbling", "Ability to score spectacular goals"],
+      "worldCup2026Role": "Starting right winger providing width, pace, and a constant threat in behind opposition defenses.",
+      "notableFact": "Scored twice against Liverpool in 2020 to end their 44-match unbeaten Premier League run, one of the most memorable individual performances in recent Premier League history."
+    },
+    "Iliman Ndiaye": {
+      "bio": "A French-born Senegalese attacking midfielder who burst onto the scene at Sheffield United before moving to Marseille and then Everton. Ndiaye is a creative force with a flair for the spectacular and an ability to change games.",
+      "playingStyle": "Skillful, unpredictable attacking midfielder who excels at dribbling in tight spaces, creating chances out of nothing, and scoring with both feet from various positions.",
+      "keyStrengths": ["Dribbling and creativity", "Two-footed ability", "Unpredictable movement"],
+      "worldCup2026Role": "Key creative player in the number 10 role or off the left, providing the technical quality and imagination to unlock organized defenses.",
+      "notableFact": "Scored a spectacular solo goal against Ecuador at the 2022 World Cup that demonstrated his ability to perform on the biggest stage."
+    },
+    "Bamba Dieng": {
+      "bio": "A young striker who made his breakthrough at Marseille, becoming a fan favorite with his energy and goalscoring instinct. Dieng has since moved to Lorient and continues to develop as a versatile forward option.",
+      "playingStyle": "Energetic, mobile striker who presses from the front, makes intelligent runs in behind, and finishes with a combination of instinct and composure.",
+      "keyStrengths": ["Pressing intensity", "Intelligent runs", "Finishing instinct"],
+      "worldCup2026Role": "Impact substitute or rotation striker who provides energy, pressing, and goal threat off the bench.",
+      "notableFact": "Scored two goals in his first few starts for Marseille and became one of the youngest Senegalese players to score in Ligue 1."
+    },
+    "Habib Diallo": {
+      "bio": "A proven goalscorer who has been prolific in France at Metz and Strasbourg before moving to Al-Shabab in Saudi Arabia. Diallo's finishing ability and movement make him a reliable goal threat at international level.",
+      "playingStyle": "Clinical finisher with sharp instincts inside the box, good movement to find space, and the ability to score with both feet and his head.",
+      "keyStrengths": ["Clinical finishing", "Movement in the box", "Goal instinct"],
+      "worldCup2026Role": "Experienced backup striker providing a proven goalscoring option from the bench or for rotation purposes.",
+      "notableFact": "Has been one of the most prolific Senegalese goalscorers in French football and was the top scorer in Ligue 2 before moving up."
+    },
+    "Lamine Camara": {
+      "bio": "A rising star in Senegalese football, Camara moved from Metz to Monaco and has quickly established himself as one of the most exciting young midfielders in Ligue 1. His performances have drawn comparisons to some of Senegal's greatest midfielders.",
+      "playingStyle": "Energetic, technically excellent young midfielder who combines ball-winning ability with creative passing and the confidence to drive forward with the ball.",
+      "keyStrengths": ["Ball-winning and creativity", "Forward drives", "Technical quality"],
+      "worldCup2026Role": "Dynamic young midfielder competing for a starting spot, capable of changing games with his energy and technical ability.",
+      "notableFact": "Won the Young Player of the Year award at the 2024 Africa Cup of Nations, establishing himself as one of the continent's best young talents."
+    },
+    "Fode Ballo-Toure": {
+      "bio": "A left-back who has played at Monaco, AC Milan, and Fulham on loan before settling in French football. Ballo-Toure brings experience from top European clubs to Senegal's defensive options.",
+      "playingStyle": "Attack-minded left-back with pace and energy, willing to push forward and deliver crosses but sometimes caught out defensively when exposed.",
+      "keyStrengths": ["Attacking instinct", "Pace down the flank", "Crossing ability"],
+      "worldCup2026Role": "Starting left-back option providing attacking width and pace from the fullback position.",
+      "notableFact": "Scored on his AC Milan debut in a memorable Coppa Italia match and has experience in the Champions League from his time at the club."
+    },
+    "Pathe Ciss": {
+      "bio": "A reliable midfielder who has been a consistent performer at Rayo Vallecano in La Liga. Ciss brings calmness, passing accuracy, and tactical awareness to Senegal's midfield options.",
+      "playingStyle": "Composed central midfielder who controls the tempo with accurate passing, good positional sense, and the discipline to maintain the team's shape.",
+      "keyStrengths": ["Passing accuracy", "Positional sense", "Composure"],
+      "worldCup2026Role": "Midfield depth player who can provide control and calmness when Senegal need to manage games.",
+      "notableFact": "Has been one of the most consistent performers at Rayo Vallecano in La Liga, helping the club maintain their top-flight status."
+    },
+    "Demba Seck": {
+      "bio": "A young midfielder who has developed at Torino in Serie A, gradually earning more first-team opportunities. Seck represents the future of Senegalese football in midfield.",
+      "playingStyle": "Versatile young player capable of playing in midfield or further forward, with the energy and technical ability to contribute in multiple positions.",
+      "keyStrengths": ["Versatility", "Energy and work rate", "Technical ability"],
+      "worldCup2026Role": "Young squad player providing depth and tactical flexibility across multiple positions in midfield and attack.",
+      "notableFact": "Has been developing steadily in Serie A with Torino, gaining valuable European experience at a young age."
+    },
+    "Mikayil Faye": {
+      "bio": "One of the most exciting young defenders in African football, Faye joined Barcelona's La Masia academy as a teenager before moving to Rennes. At just 21, he is already considered one of the best young center-backs on the continent.",
+      "playingStyle": "Athletic, left-footed center-back with exceptional passing ability for his age, comfortable building play from the back and carrying the ball into midfield.",
+      "keyStrengths": ["Left-footed passing", "Athletic ability", "Ball-carrying from defense"],
+      "worldCup2026Role": "Young defensive prospect who offers left-footed balance and a long-term future at center-back, capable of stepping into the team when needed.",
+      "notableFact": "Trained at Barcelona's famed La Masia academy and is considered the future of Senegalese center-back play after Koulibaly."
+    }
+  }
+}

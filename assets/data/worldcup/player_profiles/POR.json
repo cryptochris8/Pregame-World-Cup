@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Diogo Costa": {
+      "bio": "Rising Portuguese goalkeeper who emerged as Porto's undisputed number one and earned his place as Portugal's first-choice keeper. Known for his penalty-saving heroics at the 2022 World Cup where he saved three penalties against Switzerland.",
+      "playingStyle": "Modern sweeper-keeper with excellent reflexes and composure on the ball, comfortable playing out from the back.",
+      "keyStrengths": ["Penalty saving", "Shot-stopping reflexes", "Distribution"],
+      "worldCup2026Role": "Starting goalkeeper and last line of defense for Portugal's title ambitions.",
+      "notableFact": "Saved three consecutive penalties in a single World Cup knockout match against Switzerland in 2022, a tournament first."
+    },
+    "Nelson Semedo": {
+      "bio": "Experienced right-back who has played at the highest level with Barcelona and Wolves before moving to Fenerbahce. A reliable defensive option with over 40 caps for Portugal.",
+      "playingStyle": "Pacey, overlapping full-back who excels in one-on-one defensive situations and provides width in attack.",
+      "keyStrengths": ["Recovery pace", "One-on-one defending", "Overlapping runs"],
+      "worldCup2026Role": "Backup right-back option providing experienced defensive cover behind Cancelo.",
+      "notableFact": "Won two La Liga titles with Barcelona before moving to the Premier League."
+    },
+    "Diogo Leite": {
+      "bio": "Left-footed center-back who developed through Porto's academy and has established himself in the Bundesliga with Union Berlin. A relatively new addition to the senior national team.",
+      "playingStyle": "Ball-playing center-back who uses his left foot to switch play and build attacks from deep, strong in aerial duels.",
+      "keyStrengths": ["Left-footed passing", "Aerial ability", "Positional awareness"],
+      "worldCup2026Role": "Rotation center-back option, valuable for his left-footed balance in the defensive line.",
+      "notableFact": "Came through the same Porto academy that produced Ruben Dias and Diogo Costa."
+    },
+    "Rúben Dias": {
+      "bio": "World-class center-back and Manchester City's defensive leader who won the Premier League Player of the Season in 2020-21. A commanding presence who has been central to Portugal's defense for several years.",
+      "playingStyle": "Dominant, aggressive center-back who reads the game exceptionally well, excels at organizing the defensive line and winning duels.",
+      "keyStrengths": ["Leadership", "Aerial dominance", "Tactical reading"],
+      "worldCup2026Role": "Starting center-back and defensive leader, expected to marshal Portugal's backline throughout the tournament.",
+      "notableFact": "Won Premier League Player of the Season in his debut campaign at Manchester City, a rare feat for a defender."
+    },
+    "Raphaël Guerreiro": {
+      "bio": "Technically gifted left-back who spent nearly a decade at Borussia Dortmund before joining Bayern Munich. Known for his attacking contributions and set-piece delivery.",
+      "playingStyle": "Attack-minded full-back with exceptional technical quality, capable of playing in midfield, with a dangerous left-footed cross and shot.",
+      "keyStrengths": ["Crossing accuracy", "Set-piece delivery", "Technical ability"],
+      "worldCup2026Role": "Experienced backup left-back who offers a more attack-oriented option from the bench.",
+      "notableFact": "Scored 6 goals in 60 caps for Portugal, an impressive tally for a defender, including crucial goals in major tournaments."
+    },
+    "João Palhinha": {
+      "bio": "Powerful defensive midfielder who became one of the most sought-after players in Europe at Fulham before securing a dream move to Bayern Munich. A midfield destroyer who breaks up opposition attacks.",
+      "playingStyle": "Physical, aggressive ball-winner who anchors the midfield with relentless pressing, strong tackling, and disciplined positioning.",
+      "keyStrengths": ["Tackling", "Ball recovery", "Physical presence"],
+      "worldCup2026Role": "Starting defensive midfielder and midfield shield, protecting the back four and allowing creative players freedom.",
+      "notableFact": "Led the Premier League in tackles per game during his time at Fulham before his big move to Bayern Munich."
+    },
+    "Cristiano Ronaldo": {
+      "bio": "The all-time leading international goalscorer in football history with 130 goals in 210 caps. At 41, he continues to defy age and will likely make his record-extending sixth World Cup appearance.",
+      "playingStyle": "Elite goal poacher with incredible heading ability, powerful shooting, and unmatched competitive drive despite reduced mobility.",
+      "keyStrengths": ["Clinical finishing", "Aerial threat", "Big-game mentality"],
+      "worldCup2026Role": "Starting striker and captain, the emotional and spiritual leader of Portugal's campaign in what will be his World Cup farewell.",
+      "notableFact": "Will become the first player in history to appear at six FIFA World Cups, having debuted at the 2006 tournament in Germany."
+    },
+    "Bruno Fernandes": {
+      "bio": "Manchester United's creative talisman and one of the most productive attacking midfielders in world football. A goal-scoring midfielder who transformed United's fortunes after his 2020 arrival.",
+      "playingStyle": "Dynamic playmaker who combines vision, long-range shooting, and relentless work rate with excellent set-piece delivery.",
+      "keyStrengths": ["Vision and passing", "Long-range shooting", "Set-piece expertise"],
+      "worldCup2026Role": "Starting attacking midfielder and primary creative force, expected to pull the strings behind Portugal's forwards.",
+      "notableFact": "Has scored 17 goals in 70 international caps, making him one of Portugal's most prolific midfielders ever."
+    },
+    "André Silva": {
+      "bio": "Journeyman striker who had a prolific spell at Eintracht Frankfurt, scoring 28 Bundesliga goals in 2020-21. His career has taken him across multiple leagues including Portugal, Italy, Spain, and Germany.",
+      "playingStyle": "Traditional center-forward with good movement in the box, strong heading ability, and intelligent link-up play.",
+      "keyStrengths": ["Aerial ability", "Movement in the box", "Link-up play"],
+      "worldCup2026Role": "Third-choice striker providing experienced backup and a different physical option off the bench.",
+      "notableFact": "Scored 28 Bundesliga goals in a single season at Frankfurt, the highest by a Portuguese player in German football history."
+    },
+    "Bernardo Silva": {
+      "bio": "Elegant winger and midfielder who is a cornerstone of Manchester City's dynasty, contributing to multiple Premier League titles and the 2023 Champions League triumph. One of the most technically complete players in world football.",
+      "playingStyle": "Silky dribbler with extraordinary close control who can play across the attacking line, combining tireless pressing with creative genius.",
+      "keyStrengths": ["Close control", "Intelligent movement", "Work rate off the ball"],
+      "worldCup2026Role": "Starting winger or attacking midfielder, Portugal's most versatile creative outlet and a key player in every match.",
+      "notableFact": "Has won six Premier League titles with Manchester City and was named Portugal's Player of the Year multiple times."
+    },
+    "Rafael Leão": {
+      "bio": "Explosive winger who is AC Milan's star attacker and one of the most exciting forwards in European football. His raw pace and dribbling ability make him virtually unplayable on his day.",
+      "playingStyle": "Lightning-quick winger who carries the ball at devastating speed, beats defenders with ease, and can create something from nothing.",
+      "keyStrengths": ["Explosive pace", "Dribbling", "Direct running"],
+      "worldCup2026Role": "Starting left winger and Portugal's primary dribbling threat, expected to be a game-changer in tight knockout matches.",
+      "notableFact": "Scored the fastest goal in Serie A history (6.2 seconds) and is AC Milan's highest-valued player."
+    },
+    "José Sá": {
+      "bio": "Experienced goalkeeper who has been a consistent performer in the Premier League with Wolverhampton Wanderers. A reliable shot-stopper who provides solid backup for Portugal.",
+      "playingStyle": "Traditional goalkeeper with strong shot-stopping ability and good command of the penalty area, steady and dependable.",
+      "keyStrengths": ["Shot-stopping", "Command of area", "Consistency"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced Premier League-quality backup behind Diogo Costa.",
+      "notableFact": "Kept more clean sheets than any other Wolves goalkeeper in the Premier League era during his peak seasons."
+    },
+    "Danilo Pereira": {
+      "bio": "Versatile veteran who can play as a defensive midfielder or center-back, with over 75 caps and extensive experience at PSG and Porto. A natural leader who captained Porto to a league title.",
+      "playingStyle": "Physically imposing holding midfielder who reads the game well, capable of slotting into central defense when needed.",
+      "keyStrengths": ["Versatility", "Physical presence", "Experience"],
+      "worldCup2026Role": "Experienced squad player who can deputize in midfield or defense, offering tactical flexibility and tournament know-how.",
+      "notableFact": "Has played in three consecutive major tournaments for Portugal and captained Porto before his move to PSG."
+    },
+    "William Carvalho": {
+      "bio": "Tall, elegant midfielder who was part of Portugal's Euro 2016 winning squad. A veteran with 85 caps who has played across Europe, now plying his trade in Mexico's Liga MX with Pachuca.",
+      "playingStyle": "Languid, ball-carrying midfielder who uses his size and technique to progress the ball through midfield under pressure.",
+      "keyStrengths": ["Ball retention", "Physical stature", "Composure under pressure"],
+      "worldCup2026Role": "Experienced midfield option for squad depth, bringing major tournament pedigree from Euro 2016 glory.",
+      "notableFact": "Was part of Portugal's historic Euro 2016 winning squad and scored in the semifinal of the 2023 Nations League."
+    },
+    "João Neves": {
+      "bio": "Prodigiously talented young midfielder who burst onto the scene at Benfica before earning a big move to Paris Saint-Germain at just 19. One of the brightest midfield prospects in world football.",
+      "playingStyle": "Energetic box-to-box midfielder with exceptional passing range, press resistance, and maturity beyond his years.",
+      "keyStrengths": ["Press resistance", "Passing range", "Engine and stamina"],
+      "worldCup2026Role": "Key midfield starter who will control the tempo of games alongside Vitinha and Palhinha in a dynamic midfield trio.",
+      "notableFact": "Became the youngest Portuguese player to start a Champions League knockout match when he debuted for Benfica aged 18."
+    },
+    "Rúben Neves": {
+      "bio": "Technically gifted midfielder known for his spectacular long-range goals, who captained Porto at 18 and played for Wolves in the Premier League before moving to Al-Hilal.",
+      "playingStyle": "Deep-lying playmaker with an outstanding long-range pass and shot, capable of dictating play from a holding midfield position.",
+      "keyStrengths": ["Long-range passing", "Long-range shooting", "Game management"],
+      "worldCup2026Role": "Experienced midfield rotation option who can change the tempo of a game with his passing from deep.",
+      "notableFact": "Became the youngest captain in Porto's history at age 18 and scored some of the most iconic goals in Wolves' Premier League history."
+    },
+    "Pedro Gonçalves": {
+      "bio": "Sporting CP's star midfielder who won the Portuguese league's top scorer award as a midfielder. A creative force with an eye for goal who has earned his place in the national team setup.",
+      "playingStyle": "Goal-scoring attacking midfielder with a powerful shot, clever movement, and the ability to play between the lines.",
+      "keyStrengths": ["Goal-scoring ability", "Movement between lines", "Powerful shot"],
+      "worldCup2026Role": "Creative backup option behind Bruno Fernandes, capable of providing a goal threat from midfield off the bench.",
+      "notableFact": "Won the Portuguese league golden boot as a midfielder with 23 goals in 2020-21, an extraordinary achievement for his position."
+    },
+    "Nélson Semedo": {
+      "bio": "Young Portuguese left-back emerging through Porto's academy system, not to be confused with the veteran right-back of similar name. A promising defensive talent building his international career.",
+      "playingStyle": "Attack-minded left-back with good crossing ability and pace to get up and down the flank, comfortable in possession.",
+      "keyStrengths": ["Crossing", "Pace", "Attacking overlaps"],
+      "worldCup2026Role": "Young left-back depth option who could feature in group-stage rotation or as a substitute.",
+      "notableFact": "Shares a similar name with veteran teammate Nelson Semedo but is a different player, nine years younger and playing a different position."
+    },
+    "Nuno Mendes": {
+      "bio": "Dynamic young left-back who has become a starter at Paris Saint-Germain and one of the best in his position in world football. Combines defensive solidity with explosive attacking runs.",
+      "playingStyle": "Modern marauding left-back with blistering pace, powerful runs forward, and the physicality to dominate his flank on both sides of the ball.",
+      "keyStrengths": ["Explosive pace", "Defensive solidity", "Attacking dynamism"],
+      "worldCup2026Role": "Starting left-back and a vital part of Portugal's attacking play down the left side, linking with Leao.",
+      "notableFact": "Moved to PSG aged 19 and immediately became a first-choice starter, one of the youngest regular starters in PSG's modern history."
+    },
+    "João Cancelo": {
+      "bio": "World-class full-back who can play on either flank, having starred at Manchester City and now Barcelona. Known for his inverted runs and ability to function as a de facto midfielder.",
+      "playingStyle": "Technically elite inverted full-back who tucks into midfield, creates overloads, and provides both defensive cover and creative passing from wide areas.",
+      "keyStrengths": ["Versatility (both flanks)", "Creative passing", "Inverted full-back play"],
+      "worldCup2026Role": "Starting right-back who will invert into midfield to provide an extra creative dimension to Portugal's build-up play.",
+      "notableFact": "Has won league titles in four different countries: Portugal, Italy, Germany, and England."
+    },
+    "Diogo Jota": {
+      "bio": "Prolific forward who has been a key contributor at Liverpool, known for his exceptional heading ability relative to his size and his knack for scoring crucial goals.",
+      "playingStyle": "Intelligent, versatile forward who excels at finding space in the box, clinical with both feet and his head, capable of playing across the front line.",
+      "keyStrengths": ["Clinical finishing", "Heading ability", "Intelligent movement"],
+      "worldCup2026Role": "Key attacking rotation player who can start on the wing or as a striker, providing a different dimension to Ronaldo.",
+      "notableFact": "Despite standing only 178cm, he is one of the best headers of the ball in the Premier League, with an exceptional goals-per-header ratio."
+    },
+    "Rui Silva": {
+      "bio": "Experienced goalkeeper who has been a steady presence in La Liga with Real Betis. A reliable third-choice option who brings calmness and professionalism to Portugal's goalkeeper group.",
+      "playingStyle": "Composed goalkeeper with good positioning, comfortable with the ball at his feet, and experienced in high-pressure La Liga environments.",
+      "keyStrengths": ["Positioning", "Composure", "Ball distribution"],
+      "worldCup2026Role": "Third-choice goalkeeper providing veteran La Liga experience in the squad.",
+      "notableFact": "Born in Porto but developed his career in the Portuguese lower divisions before finding success in Spain with Granada and Real Betis."
+    },
+    "Vitinha Machado": {
+      "bio": "Technically superb midfielder who has become a linchpin at Paris Saint-Germain after leaving Porto. One of the most press-resistant midfielders in world football with silky ball control.",
+      "playingStyle": "Elegant, possession-oriented midfielder who glides past pressure with close control, links defense to attack with precise passing, and rarely loses the ball.",
+      "keyStrengths": ["Press resistance", "Close control", "Progressive passing"],
+      "worldCup2026Role": "Starting central midfielder and metronome of Portugal's build-up play, controlling tempo alongside Joao Neves.",
+      "notableFact": "Named Ligue 1 Player of the Month multiple times and is considered one of the best midfield signings in PSG's history."
+    },
+    "António Silva": {
+      "bio": "Precocious young center-back who broke into Benfica's first team as a teenager and quickly earned international recognition. At just 22, he is already seen as a future defensive leader for Portugal.",
+      "playingStyle": "Aggressive, front-foot center-back who excels at stepping out to intercept, strong in the air, and composed on the ball for his age.",
+      "keyStrengths": ["Anticipation", "Aerial duels", "Ball-playing ability"],
+      "worldCup2026Role": "Young center-back rotation option who could start in group matches and is being groomed as a long-term successor to Ruben Dias' partner.",
+      "notableFact": "Became Benfica's youngest ever Champions League starter and was a key part of their run to the 2022-23 quarterfinals."
+    },
+    "Gonçalo Inácio": {
+      "bio": "Left-footed center-back who has been outstanding for Sporting CP, earning growing recognition as one of Portugal's best young defenders. Known for his elegant ball-playing from the back.",
+      "playingStyle": "Cultured, left-footed ball-playing center-back who initiates attacks with incisive long passes and maintains composure under pressing.",
+      "keyStrengths": ["Left-footed passing", "Long-range distribution", "Composure on the ball"],
+      "worldCup2026Role": "Valuable left-footed defensive option who can step in alongside Ruben Dias, providing balance and distribution from the back.",
+      "notableFact": "Has been linked with moves to top European clubs worth over 50 million euros thanks to his rare combination of left-footedness and ball-playing quality."
+    },
+    "Francisco Conceição": {
+      "bio": "Electric young winger and son of former Portugal international Sergio Conceicao. Made a stunning impact at Euro 2024 with a dramatic late winner and has continued his rise at Juventus.",
+      "playingStyle": "Tricky, direct winger with rapid feet, quick changes of direction, and a fearless approach to taking on defenders one-on-one.",
+      "keyStrengths": ["Dribbling", "Quick feet", "Fearlessness on the ball"],
+      "worldCup2026Role": "Impact substitute winger who can change games with his direct dribbling when introduced against tired defenders.",
+      "notableFact": "Son of Sergio Conceicao, the former Porto manager and Portugal international; scored a dramatic 92nd-minute winner at Euro 2024."
+    }
+  }
+}

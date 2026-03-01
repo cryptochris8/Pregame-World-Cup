@@ -143,6 +143,9 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
         const Divider(height: 1.0),
         Container(
           decoration: BoxDecoration(color: Theme.of(context).cardColor),
+          padding: EdgeInsets.only(
+            bottom: MediaQuery.of(context).viewInsets.bottom,
+          ),
           child: _buildTextComposer(),
         ),
       ],

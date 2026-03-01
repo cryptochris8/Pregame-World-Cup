@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Kasper Schmeichel": {
+      "bio": "Son of Manchester United legend Peter Schmeichel, Kasper has built his own legendary career including winning the Premier League with Leicester City in 2016. Now at Celtic, he remains Denmark's first-choice keeper.",
+      "playingStyle": "Commanding, vocal goalkeeper with excellent reflexes, strong penalty-saving ability, and leadership from the back",
+      "keyStrengths": ["Reflexes", "Penalty saves", "Leadership and communication"],
+      "worldCup2026Role": "Starting goalkeeper and captain, the emotional and vocal leader of the Danish team",
+      "notableFact": "Won the Premier League with Leicester City in one of the greatest sporting upsets of all time, following in his father Peter's legendary footsteps"
+    },
+    "Joachim Andersen": {
+      "bio": "Elegant center-back who plays for Fulham in the Premier League. He has established himself as one of the best defenders in England with his composure, reading of the game, and passing ability.",
+      "playingStyle": "Ball-playing center-back with exceptional reading of the game, clean tackling, and the ability to start attacks from deep",
+      "keyStrengths": ["Reading the game", "Ball distribution", "Clean tackling"],
+      "worldCup2026Role": "First-choice center-back forming the heart of Denmark's defense alongside Andreas Christensen",
+      "notableFact": "Has become one of the highest-rated defenders in the Premier League with Fulham, valued at over 37 million euros"
+    },
+    "Jannik Vestergaard": {
+      "bio": "Towering center-back who stands at 199cm and has played for Southampton, Leicester City, and in the Bundesliga. He provides a commanding aerial presence.",
+      "playingStyle": "Giant, imposing center-back who dominates aerially and provides a formidable physical barrier",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Set-piece threat"],
+      "worldCup2026Role": "Experienced backup center-back and set-piece weapon who can be deployed in specific tactical situations",
+      "notableFact": "At 199cm, he is the tallest player in the Danish squad and one of the tallest defenders in international football"
+    },
+    "Victor Nelsson": {
+      "bio": "Center-back who plays for Galatasaray in the Turkish Super Lig. He has gained valuable experience in a passionate, high-pressure footballing environment.",
+      "playingStyle": "Intelligent, positioning-focused center-back who compensates for modest pace with excellent anticipation",
+      "keyStrengths": ["Anticipation", "Positioning", "Composure under pressure"],
+      "worldCup2026Role": "Center-back rotation option providing depth behind the first-choice partnership",
+      "notableFact": "Plays in the intense atmosphere of Galatasaray in Turkey, one of the most passionate football environments in the world"
+    },
+    "Joakim Mæhle": {
+      "bio": "Attack-minded left-back who became a breakout star at Euro 2020, scoring multiple goals from the back position. He plays in the Bundesliga for Wolfsburg.",
+      "playingStyle": "Marauding, attack-minded wing-back who bombs forward to deliver crosses and score goals while maintaining defensive discipline",
+      "keyStrengths": ["Attacking runs", "Crossing", "Goal-scoring from fullback"],
+      "worldCup2026Role": "Starting left-back or wing-back whose attacking contributions add an extra dimension to Denmark's play",
+      "notableFact": "Scored three goals at Euro 2020, an extraordinary tally for a defender, as Denmark reached the semi-finals"
+    },
+    "Andreas Christensen": {
+      "bio": "World-class center-back who plays for FC Barcelona, having moved from Chelsea where he won the Champions League in 2021. One of the most accomplished Danish defenders of his generation.",
+      "playingStyle": "Elegant, composed ball-playing center-back with excellent positional awareness and the ability to play out from the back at the highest level",
+      "keyStrengths": ["Composure on the ball", "Positional awareness", "Passing from the back"],
+      "worldCup2026Role": "First-choice center-back and key figure in Denmark's build-up play, bringing Barcelona-level composure",
+      "notableFact": "Won the Champions League with Chelsea in 2021 before transferring to Barcelona, where he competes at the highest level"
+    },
+    "Mikkel Damsgaard": {
+      "bio": "Talented left winger who gained worldwide fame for his stunning free-kick goal against England in the Euro 2020 semi-final. He now plays for Brentford in the Premier League.",
+      "playingStyle": "Creative, left-footed winger who can play centrally or wide, with a dangerous free-kick and an eye for the spectacular",
+      "keyStrengths": ["Free-kick ability", "Creativity", "Long-range shooting"],
+      "worldCup2026Role": "Key creative attacker who can unlock defenses with moments of individual brilliance",
+      "notableFact": "Scored a stunning free-kick against England in the Euro 2020 semi-final at Wembley, one of the goals of the tournament"
+    },
+    "Thomas Delaney": {
+      "bio": "Veteran central midfielder who returned to Danish football with FC Copenhagen after spells at Werder Bremen, Borussia Dortmund, and Sevilla. With 80 caps, he is one of the squad's most experienced players.",
+      "playingStyle": "Combative, intelligent midfielder who combines tenacious defending with clever passing and tactical awareness",
+      "keyStrengths": ["Tenacity", "Tactical intelligence", "Big-game experience"],
+      "worldCup2026Role": "Experienced midfield option who brings leadership, balance, and Bundesliga-level know-how",
+      "notableFact": "Has played in the Bundesliga, La Liga, and the Danish Superliga, accumulating massive European experience"
+    },
+    "Rasmus Højlund": {
+      "bio": "Young striker who plays for Manchester United in the Premier League. He made a big-money move from Atalanta and is considered one of the brightest young forwards in European football.",
+      "playingStyle": "Powerful, dynamic striker with blistering pace, physical strength, and a natural goal-scoring instinct",
+      "keyStrengths": ["Pace and power", "Finishing ability", "Physical strength"],
+      "worldCup2026Role": "Starting center-forward and Denmark's primary goal threat, expected to lead the line at the World Cup",
+      "notableFact": "Manchester United paid over 70 million euros for him, making him one of the most expensive Danish players in history"
+    },
+    "Christian Eriksen": {
+      "bio": "Denmark's iconic playmaker who suffered a cardiac arrest during Euro 2020 but made a miraculous return to top-level football. With 130 caps and 42 goals, he is one of Denmark's greatest ever players.",
+      "playingStyle": "Sublime creative midfielder with world-class passing, vision, set-piece delivery, and the ability to score from anywhere",
+      "keyStrengths": ["Vision and passing", "Set-piece mastery", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Starting playmaker and creative heartbeat of the team, the player who makes Denmark tick in the final third",
+      "notableFact": "Suffered a cardiac arrest on the pitch during Euro 2020 but made a remarkable comeback to continue playing at the highest level with an implanted defibrillator"
+    },
+    "Andreas Skov Olsen": {
+      "bio": "Right winger who plays for Rangers in the Scottish Premiership after an impressive spell at Club Brugge in Belgium. He provides pace and goals from the right side.",
+      "playingStyle": "Left-footed right winger who cuts inside to shoot and create, combining pace with clinical finishing",
+      "keyStrengths": ["Left-footed cutting inside", "Finishing", "Pace"],
+      "worldCup2026Role": "Key attacking option on the right wing whose inverted runs and shooting threat keep defenses honest",
+      "notableFact": "Scored crucial goals in Denmark's Euro 2024 and World Cup 2026 qualifying campaigns"
+    },
+    "Mads Hermansen": {
+      "bio": "Young goalkeeper who has quickly established himself as one of the most promising keepers in English football, playing for West Ham United in the Premier League after impressing at Leicester City.",
+      "playingStyle": "Athletic, modern goalkeeper with excellent shot-stopping, good distribution, and commanding presence",
+      "keyStrengths": ["Shot-stopping", "Athletic ability", "Distribution"],
+      "worldCup2026Role": "High-quality backup goalkeeper who could push for the starting spot in future tournaments",
+      "notableFact": "Has rapidly risen from the Danish leagues to the Premier League, establishing himself as the heir to Kasper Schmeichel"
+    },
+    "Rasmus Kristensen": {
+      "bio": "Versatile right-back who plays for Eintracht Frankfurt in the Bundesliga. He previously played for Red Bull Salzburg and Leeds United, developing into a dependable defender.",
+      "playingStyle": "Athletic, hard-working right-back with good stamina, strong defensive instincts, and the ability to contribute in attack",
+      "keyStrengths": ["Athleticism", "Defensive solidity", "Stamina"],
+      "worldCup2026Role": "First-choice right-back providing defensive stability and overlapping runs down the right flank",
+      "notableFact": "Part of the Red Bull development pipeline, moving from Salzburg to RB Leipzig before joining the Bundesliga again"
+    },
+    "Victor Kristiansen": {
+      "bio": "Exciting young left-back who has attracted attention across Europe. Still just 23, he is considered one of the best young fullbacks in European football.",
+      "playingStyle": "Dynamic, attack-minded young left-back with pace, excellent crossing, and the ability to drive forward with the ball",
+      "keyStrengths": ["Crossing", "Pace", "Attacking drive"],
+      "worldCup2026Role": "Backup left-back who pushes Joakim Maehle for the starting spot with his youthful dynamism",
+      "notableFact": "One of the most promising young left-backs in European football, already attracting interest from top clubs"
+    },
+    "Pierre-Emile Højbjerg": {
+      "bio": "Elite defensive midfielder who plays for Marseille in Ligue 1 after starring at Tottenham Hotspur. With 80 caps, he is one of Denmark's most important players and a natural leader.",
+      "playingStyle": "Commanding, combative defensive midfielder who controls the game with intelligent pressing, precise distribution, and tireless energy",
+      "keyStrengths": ["Leadership", "Pressing and ball-winning", "Distribution"],
+      "worldCup2026Role": "Starting defensive midfielder and midfield general who dictates Denmark's pressing and tempo",
+      "notableFact": "Was the youngest debutant in Bundesliga history when he played for Bayern Munich at age 17"
+    },
+    "Alexander Bah": {
+      "bio": "Right-back who plays for Benfica in Portugal's top flight. He has developed rapidly into one of the most exciting fullbacks in Portuguese football.",
+      "playingStyle": "Modern attacking right-back with pace, quality delivery, and the ability to operate as a wing-back",
+      "keyStrengths": ["Pace", "Crossing quality", "Attacking drive"],
+      "worldCup2026Role": "Versatile right-back option who offers an attacking alternative in the squad",
+      "notableFact": "Has played in the UEFA Champions League with Benfica, gaining elite European experience"
+    },
+    "Jens Stryger Larsen": {
+      "bio": "Veteran right-back with 55 caps who has played across Italy and Scandinavia, including a long stint at Udinese in Serie A. He brings vast experience to the squad.",
+      "playingStyle": "Experienced, well-rounded right-back with good crossing ability and tactical awareness from years in Serie A",
+      "keyStrengths": ["Crossing", "Experience", "Tactical awareness"],
+      "worldCup2026Role": "Veteran defensive depth option who provides experience and reliability from the bench",
+      "notableFact": "Spent several seasons in Serie A with Udinese, adapting to one of the most tactically demanding leagues in the world"
+    },
+    "Morten Hjulmand": {
+      "bio": "Rising star midfielder who plays for Sporting CP in Portugal and has rapidly become one of the most sought-after midfielders in European football. His value of over 56 million euros makes him the second-most valuable Dane.",
+      "playingStyle": "Complete midfielder who combines defensive steel with exceptional passing range and composure, capable of dictating games from deep",
+      "keyStrengths": ["Long-range passing", "Defensive solidity", "Composure under pressure"],
+      "worldCup2026Role": "Starting central midfielder alongside Hojbjerg, forming a world-class midfield partnership",
+      "notableFact": "Scored a stunning long-range goal at Euro 2024, announcing himself as one of the best midfielders in world football"
+    },
+    "Jonas Wind": {
+      "bio": "Tall, powerful striker who plays for Wolfsburg in the Bundesliga. A product of FC Copenhagen's academy, he has developed into Denmark's second-choice striker behind Hojlund.",
+      "playingStyle": "Tall, physical striker who combines aerial ability with intelligent link-up play and clinical finishing",
+      "keyStrengths": ["Aerial ability", "Link-up play", "Clinical finishing"],
+      "worldCup2026Role": "Key backup striker who can partner or replace Hojlund, offering a different attacking dimension",
+      "notableFact": "Was FC Copenhagen's youngest-ever goalscorer and has continued his prolific ways in the Bundesliga"
+    },
+    "Yussuf Poulsen": {
+      "bio": "Veteran forward with 80 caps and 12 goals who spent the bulk of his career at RB Leipzig in the Bundesliga. Now at Hamburger SV, he brings massive experience to the squad.",
+      "playingStyle": "Hard-working, physical forward who presses relentlessly, holds the ball up well, and creates space for teammates",
+      "keyStrengths": ["Work rate and pressing", "Hold-up play", "Experience"],
+      "worldCup2026Role": "Experienced squad forward who can provide energy, pressing, and leadership when introduced",
+      "notableFact": "Spent over a decade at RB Leipzig, scoring the club's first-ever Bundesliga goal, and was a key part of their rise to the top of German football"
+    },
+    "Mathias Jensen": {
+      "bio": "Central midfielder who plays for Brentford in the Premier League. He brings technical quality and Premier League intensity to Denmark's midfield options.",
+      "playingStyle": "Technical, intelligent central midfielder who controls the ball well and makes clever passes to create chances",
+      "keyStrengths": ["Technical ability", "Passing", "Intelligent movement"],
+      "worldCup2026Role": "Midfield rotation option providing Premier League quality and tactical flexibility",
+      "notableFact": "Has been a key part of Brentford's impressive Premier League campaigns since their promotion"
+    },
+    "Frederik Rønnow": {
+      "bio": "Experienced goalkeeper who plays for Union Berlin in the Bundesliga. He has been a dependable backup to Kasper Schmeichel for many years.",
+      "playingStyle": "Solid, reliable goalkeeper with good handling, positioning, and experience in the German top flight",
+      "keyStrengths": ["Reliability", "Positioning", "Handling"],
+      "worldCup2026Role": "Experienced backup goalkeeper providing veteran depth behind Schmeichel",
+      "notableFact": "Has patiently served as Denmark's second or third-choice goalkeeper for years while maintaining a strong Bundesliga career"
+    },
+    "Jacob Bruun Larsen": {
+      "bio": "Left winger who plays for Burnley in the Premier League after previous stints at Borussia Dortmund and Hoffenheim in the Bundesliga. A Danish youth international prodigy.",
+      "playingStyle": "Quick, skillful left winger who can dribble past defenders and provides quality delivery from wide areas",
+      "keyStrengths": ["Dribbling", "Delivery", "Pace"],
+      "worldCup2026Role": "Wide attacking option who provides depth and competition on the left flank",
+      "notableFact": "Came through Borussia Dortmund's youth academy alongside players like Jadon Sancho and Giovanni Reyna"
+    },
+    "Matt O'Riley": {
+      "bio": "Creative midfielder who moved to Marseille after starring at Celtic in the Scottish Premiership. Born in England to a Danish mother, he chose to represent Denmark internationally.",
+      "playingStyle": "Technically superb attacking midfielder with exceptional vision, dribbling ability, and goal-scoring prowess from midfield",
+      "keyStrengths": ["Vision", "Goal-scoring from midfield", "Technical brilliance"],
+      "worldCup2026Role": "Highly talented midfield option who can create and score goals, providing a different dimension off the bench",
+      "notableFact": "Born in England but chose Denmark through his mother's heritage, quickly becoming a key player at Marseille after his move from Celtic"
+    },
+    "Gustav Isaksen": {
+      "bio": "Exciting right winger who plays for Lazio in Serie A. He moved to Italy from FC Midtjylland and has established himself as one of the most promising young Danish attackers.",
+      "playingStyle": "Quick, direct inverted winger who uses his left foot from the right side to cut inside, shoot, and create",
+      "keyStrengths": ["Left foot from the right", "Pace", "Goal threat"],
+      "worldCup2026Role": "Key attacking option on the right wing who can start or provide impact as a substitute",
+      "notableFact": "Plays in Serie A for Lazio, one of the elite clubs in Italian football, having made the big move from Danish football"
+    },
+    "Patrick Dorgu": {
+      "bio": "The youngest player in the squad and one of the most exciting talents in world football. This left-back joined Manchester United from Lecce and has already been compared to some of the best attacking fullbacks in the game.",
+      "playingStyle": "Explosive, attack-minded left-back with blistering pace, powerful shooting, and the ability to play as a winger",
+      "keyStrengths": ["Explosive pace", "Powerful shooting", "Versatility between defense and attack"],
+      "worldCup2026Role": "Dynamic young talent who can play left-back or wing-back, adding explosive attacking threat",
+      "notableFact": "Manchester United paid a significant fee to sign him from Lecce, making him the most valuable left-back in the Danish squad at just 21 years old"
+    }
+  }
+}

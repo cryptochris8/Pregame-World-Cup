@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Patrick Pentz": {
+      "bio": "Tall Austrian goalkeeper who moved to Danish football with Brondby after developing in the Austrian league. Earned his place as a reliable option in the national team setup.",
+      "playingStyle": "Commanding goalkeeper with good reflexes and confident handling from crosses",
+      "keyStrengths": ["Reflexes", "Cross handling", "Commanding presence"],
+      "worldCup2026Role": "Starting goalkeeper or strong backup option providing stability between the posts",
+      "notableFact": "Was part of Austria's squad at Euro 2024 in Germany, gaining valuable tournament experience"
+    },
+    "Stefan Posch": {
+      "bio": "Versatile Austrian defender who has established himself in Serie A with Bologna. Capable of playing center-back and right-back with equal effectiveness.",
+      "playingStyle": "Athletic, ball-playing defender comfortable in a high defensive line with strong tackling",
+      "keyStrengths": ["Versatility", "Ball-playing ability", "Tackling"],
+      "worldCup2026Role": "Starting defender who can slot in at center-back or right-back depending on tactical needs",
+      "notableFact": "Played a key role in Bologna's remarkable Serie A campaign that secured Champions League qualification"
+    },
+    "Maximilian Wöber": {
+      "bio": "Left-footed center-back who has played for Ajax, Red Bull Salzburg, and Leeds United before settling at Werder Bremen. Brings composure and quality on the ball from defense.",
+      "playingStyle": "Left-footed center-back who excels in build-up play and progressive passing from deep",
+      "keyStrengths": ["Left-footed passing", "Build-up play", "Reading of the game"],
+      "worldCup2026Role": "Starting center-back option who brings balance to the defense with his left foot",
+      "notableFact": "Played in the Champions League with Ajax and has experience across four of Europe's top leagues"
+    },
+    "Kevin Danso": {
+      "bio": "Powerful center-back who has risen to become one of the most sought-after defenders in European football. His move to Tottenham Hotspur in the Premier League cemented his status as a top defender.",
+      "playingStyle": "Physically dominant center-back who wins aerial duels and makes crucial interventions",
+      "keyStrengths": ["Physical dominance", "Aerial strength", "Aggressive defending"],
+      "worldCup2026Role": "First-choice center-back and defensive rock at the heart of Austria's backline",
+      "notableFact": "His transfer to Tottenham made him one of the most expensive Austrian defenders in history"
+    },
+    "Philipp Lienhart": {
+      "bio": "Dependable center-back who came through Real Madrid's youth academy before building a successful career at Freiburg in the Bundesliga. Known for his intelligence and calm demeanor.",
+      "playingStyle": "Intelligent, composed center-back who reads the game superbly and distributes cleanly",
+      "keyStrengths": ["Game reading", "Composure", "Clean distribution"],
+      "worldCup2026Role": "Reliable center-back rotation option who provides defensive depth and quality",
+      "notableFact": "Spent time in Real Madrid's academy as a youth player before finding regular football in Germany with Freiburg"
+    },
+    "Nicolas Seiwald": {
+      "bio": "Young Austrian defensive midfielder who has quickly established himself as one of the best in his position in the Bundesliga at RB Leipzig. A product of the Red Bull Salzburg system.",
+      "playingStyle": "Disciplined holding midfielder who screens the defense, wins second balls, and recycles possession efficiently",
+      "keyStrengths": ["Positional discipline", "Ball recovery", "Simple effective passing"],
+      "worldCup2026Role": "Starting defensive midfielder who anchors the midfield and protects the backline",
+      "notableFact": "Graduated from the Red Bull Salzburg academy that has produced numerous top-level Austrian internationals"
+    },
+    "Marko Arnautović": {
+      "bio": "Charismatic and experienced Austrian striker who has played at the highest level across Europe, including at Inter Milan, West Ham, and Stoke City. Austria's talisman for over a decade.",
+      "playingStyle": "Powerful, technical forward who can hold up play, run at defenders, and finish with either foot",
+      "keyStrengths": ["Physical strength", "Technical ability", "Big-game mentality"],
+      "worldCup2026Role": "Veteran squad leader and impact striker who brings experience and personality to the team",
+      "notableFact": "Austria's record appearance maker with over 115 caps, he is the most capped Austrian player in modern history"
+    },
+    "David Alaba": {
+      "bio": "Generational Austrian talent and one of the finest defenders of his era. Has won multiple Champions League titles with Bayern Munich and Real Madrid. A natural leader and world-class performer.",
+      "playingStyle": "Elegant, left-footed defender who can play center-back, left-back, or midfield with equal brilliance",
+      "keyStrengths": ["Tactical versatility", "Leadership", "Passing range"],
+      "worldCup2026Role": "Captain and defensive leader whose presence elevates the entire team, fitness permitting after ACL recovery",
+      "notableFact": "Has won the Champions League with both Bayern Munich and Real Madrid, one of very few players to achieve this distinction"
+    },
+    "Michael Gregoritsch": {
+      "bio": "Tall, left-footed striker who has been a consistent scorer in the Bundesliga with Freiburg. His ability to contribute in buildup play makes him more than just a target man.",
+      "playingStyle": "Tall striker who combines aerial threat with intelligent movement and link-up play",
+      "keyStrengths": ["Aerial ability", "Link-up play", "Left-footed finishing"],
+      "worldCup2026Role": "Starting striker or key rotation option who provides a physical presence in attack",
+      "notableFact": "Scored Austria's dramatic late equalizer against France at Euro 2024, one of the goals of the tournament"
+    },
+    "Florian Grillitsch": {
+      "bio": "Deep-lying midfielder who has spent most of his career in the Bundesliga. Known for his passing range and ability to control the tempo from a central midfield position.",
+      "playingStyle": "Cerebral midfielder who dictates play with his passing range and positional intelligence",
+      "keyStrengths": ["Passing range", "Tempo control", "Positional intelligence"],
+      "worldCup2026Role": "Midfield option who can step in to control possession and provide an alternative tactical approach",
+      "notableFact": "Has been a consistent performer at Hoffenheim across multiple Bundesliga seasons"
+    },
+    "Christoph Baumgartner": {
+      "bio": "Dynamic attacking midfielder who has thrived at RB Leipzig after impressing at Hoffenheim. A key creative figure for Austria with an eye for goal from midfield.",
+      "playingStyle": "Energetic attacking midfielder who makes well-timed runs into the box and finishes clinically",
+      "keyStrengths": ["Goal threat from midfield", "Intelligent movement", "Pressing intensity"],
+      "worldCup2026Role": "Starting attacking midfielder and one of Austria's most important creative forces",
+      "notableFact": "Scored the winning goal against Ukraine at Euro 2020, one of the most important goals in Austrian football history"
+    },
+    "Heinz Lindner": {
+      "bio": "Experienced Austrian goalkeeper who has played across several European leagues including in Belgium. Provides reliable backup and veteran presence in the goalkeeping group.",
+      "playingStyle": "Experienced shot-stopper with good communication and organizational skills",
+      "keyStrengths": ["Experience", "Communication", "Shot-stopping"],
+      "worldCup2026Role": "Veteran backup goalkeeper providing depth and experience in the squad",
+      "notableFact": "Has represented Austria across multiple age groups and tournaments throughout his long international career"
+    },
+    "Philipp Mwene": {
+      "bio": "Dependable left-back who has been a steady presence at Mainz in the Bundesliga. Born in Austria to Congolese parents, he brings consistency and defensive reliability.",
+      "playingStyle": "Solid defensive left-back who focuses on stopping opposition wingers and providing reliable overlaps",
+      "keyStrengths": ["Defensive reliability", "Consistent performances", "Tactical discipline"],
+      "worldCup2026Role": "Backup left-back providing solid defensive cover on the flank",
+      "notableFact": "Born in Vienna to Congolese parents, he has been a loyal member of Austria's squad through qualification"
+    },
+    "Patrick Wimmer": {
+      "bio": "Exciting young Austrian winger who has shown his ability to beat defenders and create chances at Wolfsburg in the Bundesliga. An energetic and direct wide player.",
+      "playingStyle": "Direct, pacy winger who drives at defenders and delivers dangerous crosses",
+      "keyStrengths": ["Pace", "Directness", "Crossing ability"],
+      "worldCup2026Role": "Wide attacking option who can stretch defenses with his pace and directness",
+      "notableFact": "Earned his Bundesliga move through standout performances in the Austrian league with Arminia Bielefeld"
+    },
+    "Marcel Sabitzer": {
+      "bio": "Versatile and experienced Austrian midfielder who has played at the highest level with RB Leipzig, Bayern Munich, and Borussia Dortmund. One of Austria's most decorated active players.",
+      "playingStyle": "Box-to-box midfielder with an exceptional engine, long-range shooting, and tactical awareness",
+      "keyStrengths": ["Long-range shooting", "Engine and stamina", "Tactical versatility"],
+      "worldCup2026Role": "Starting central midfielder and heartbeat of the team, driving play with energy and quality",
+      "notableFact": "Reached the Champions League semi-finals with RB Leipzig and won the league title with Bayern Munich"
+    },
+    "Alexander Prass": {
+      "bio": "Young, athletic left-back who earned a move to Sporting CP in Portugal after impressive performances in Austria. Represents the next generation of Austrian full-backs.",
+      "playingStyle": "Athletic, modern full-back who combines defensive work with progressive carries and overlapping runs",
+      "keyStrengths": ["Athleticism", "Progressive carrying", "Defensive commitment"],
+      "worldCup2026Role": "Starting left-back or key rotation option, bringing youthful energy to the defense",
+      "notableFact": "Impressed at Euro 2024 as one of the younger members of the Austrian squad, earning his move to Sporting CP"
+    },
+    "Andreas Weimann": {
+      "bio": "Experienced Austrian forward who has spent his entire club career in English football, from Aston Villa to Bristol City and now Blackburn Rovers. A reliable and hard-working attacker.",
+      "playingStyle": "Industrious wide forward who works tirelessly, presses high, and makes intelligent runs",
+      "keyStrengths": ["Work rate", "Pressing", "Intelligent movement"],
+      "worldCup2026Role": "Experienced squad player who brings energy and work rate as a substitute option",
+      "notableFact": "Has played over 400 matches in English football across the Premier League and Championship"
+    },
+    "Romano Schmid": {
+      "bio": "Creative Austrian midfielder who has developed well at Werder Bremen in the Bundesliga. Known for his technical skill and ability to find pockets of space between the lines.",
+      "playingStyle": "Creative number 10 who finds space between the lines and plays incisive final passes",
+      "keyStrengths": ["Creativity", "Spatial awareness", "Technical skill"],
+      "worldCup2026Role": "Attacking midfield option providing creativity and technical quality off the bench",
+      "notableFact": "Originally from the Red Bull Salzburg academy before establishing himself in the Bundesliga with Bremen"
+    },
+    "Konrad Laimer": {
+      "bio": "Tireless Austrian midfielder who has won the Bundesliga with Bayern Munich. Known for his incredible work rate and pressing intensity, he is one of the hardest workers in European football.",
+      "playingStyle": "High-energy pressing machine who wins the ball back relentlessly and drives forward with purpose",
+      "keyStrengths": ["Pressing intensity", "Ball recovery", "Relentless energy"],
+      "worldCup2026Role": "Key starter in midfield whose pressing and energy set the tone for Austria's high-intensity system",
+      "notableFact": "Joined Bayern Munich from RB Leipzig and immediately became a first-team regular due to his exceptional work ethic"
+    },
+    "Alexander Schlager": {
+      "bio": "Austrian goalkeeper who has been a loyal servant for LASK in the Austrian Bundesliga. Provides reliable third-choice goalkeeping depth to the national squad.",
+      "playingStyle": "Solid, dependable goalkeeper with good reflexes and steady handling",
+      "keyStrengths": ["Reflexes", "Consistency", "Dependability"],
+      "worldCup2026Role": "Third-choice goalkeeper providing domestic league experience and squad depth",
+      "notableFact": "Has been a standout performer in the Austrian Bundesliga and has represented LASK in European competition"
+    },
+    "Stefan Lainer": {
+      "bio": "Experienced right-back who has been a fixture of the Austrian national team for years. Played in the Bundesliga with Borussia Monchengladbach before returning to Red Bull Salzburg.",
+      "playingStyle": "Energetic right-back who bombs forward, delivers crosses, and tracks back diligently",
+      "keyStrengths": ["Stamina", "Crossing", "Defensive recovery"],
+      "worldCup2026Role": "Experienced right-back option providing depth and reliability on the right flank",
+      "notableFact": "Was a key player in Austria's qualification campaign for Euro 2020, their first major tournament in decades"
+    },
+    "Valentino Lazaro": {
+      "bio": "Austrian-born player of Congolese descent who has played for Inter Milan, Newcastle United, and now Torino. A versatile wing-back with excellent athleticism.",
+      "playingStyle": "Athletic wing-back who combines pace with skill and can play on either flank",
+      "keyStrengths": ["Athleticism", "Versatility", "Technical ability"],
+      "worldCup2026Role": "Versatile defensive option who can cover multiple positions across the back line",
+      "notableFact": "Made his Serie A debut with Inter Milan after impressing at Hertha Berlin in the Bundesliga"
+    },
+    "Xaver Schlager": {
+      "bio": "Dynamic Austrian midfielder who has established himself as one of the best box-to-box players in the Bundesliga at RB Leipzig. A complete midfielder with a well-rounded skill set.",
+      "playingStyle": "Complete box-to-box midfielder who contributes in all phases with energy, skill, and tactical awareness",
+      "keyStrengths": ["Box-to-box dynamism", "Technical quality", "Tactical awareness"],
+      "worldCup2026Role": "Starting central midfielder who links defense and attack with his all-round quality",
+      "notableFact": "Has recovered from a serious ACL injury to reclaim his place as a starter at both club and international level"
+    },
+    "Matthias Seidl": {
+      "bio": "Young Austrian midfielder making his mark at Rapid Wien in the domestic league. Represents the exciting next wave of Austrian midfield talent.",
+      "playingStyle": "Creative, technically gifted young midfielder with good vision and passing ability",
+      "keyStrengths": ["Vision", "Passing", "Youth and potential"],
+      "worldCup2026Role": "Young squad member gaining experience, available as a creative option from the bench",
+      "notableFact": "One of the standout young talents in the Austrian Bundesliga, earning international recognition at a young age"
+    },
+    "Junior Adamu": {
+      "bio": "Nigerian-born Austrian striker who came through the Red Bull Salzburg system before moving to Freiburg. Brings explosive pace and energy to the attack.",
+      "playingStyle": "Rapid, powerful striker who stretches defenses with his pace and direct running",
+      "keyStrengths": ["Explosive pace", "Physical power", "Direct running"],
+      "worldCup2026Role": "Impact substitute who can cause problems for tiring defenders with his speed and power",
+      "notableFact": "Born in Nigeria and raised in Austria, he came through the famed Red Bull Salzburg development pathway"
+    },
+    "Maximilian Entrup": {
+      "bio": "Late-blooming Austrian striker who has worked his way up from the lower tiers of Austrian football to earn an international call-up through consistent goalscoring at TSV Hartberg.",
+      "playingStyle": "Traditional number 9 with good movement in the box and a sharp eye for goal",
+      "keyStrengths": ["Goalscoring instinct", "Movement in the box", "Aerial ability"],
+      "worldCup2026Role": "Squad depth striker who earned his place through domestic league goalscoring form",
+      "notableFact": "His rise from the Austrian lower divisions to the national team is one of the most inspiring stories in recent Austrian football"
+    }
+  }
+}

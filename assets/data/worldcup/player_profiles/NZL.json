@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Stefan Marinovic": {
+      "bio": "Experienced New Zealand goalkeeper from Wellington Phoenix in the A-League. With 30 caps, he has been a long-standing member of the All Whites and brings domestic league leadership.",
+      "playingStyle": "Tall, commanding goalkeeper who dominates his area and provides solid shot-stopping and distribution",
+      "keyStrengths": ["Command of the box", "Shot-stopping", "Distribution"],
+      "worldCup2026Role": "Starting goalkeeper or strong competition for the number one jersey",
+      "notableFact": "A Wellington Phoenix stalwart who has been a key figure in the club's A-League campaigns"
+    },
+    "Bill Tuiloma": {
+      "bio": "Versatile center-back with experience in South American football at Huracan in Argentina's top division. With 40 caps and 3 goals, he is one of the most experienced defenders in the squad.",
+      "playingStyle": "Mobile, athletic center-back who can also play as a defensive midfielder and is comfortable with the ball at his feet",
+      "keyStrengths": ["Versatility", "Athleticism", "Ball-playing ability"],
+      "worldCup2026Role": "Key center-back whose experience in competitive South American football is invaluable",
+      "notableFact": "Born in New Zealand with Tongan heritage, previously played for the Portland Timbers in MLS before moving to Argentina"
+    },
+    "Nando Pijnaker": {
+      "bio": "Dutch-born center-back who represents New Zealand through family heritage, playing for Portland Timbers in MLS. A tall, physical defender with 20 caps for the All Whites.",
+      "playingStyle": "Imposing, physical center-back who excels in aerial duels and uses his height to dominate opposing strikers",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Defensive positioning"],
+      "worldCup2026Role": "Starting center-back providing height and physical presence in the defensive unit",
+      "notableFact": "Born in the Netherlands, he chose to represent New Zealand through his Kiwi family connections"
+    },
+    "Michael Boxall": {
+      "bio": "Veteran defender who plays for Minnesota United in MLS and is the most experienced center-back in the squad with 45 caps. At 37, he brings invaluable leadership and calm to the backline.",
+      "playingStyle": "Experienced, steady defender who reads the game exceptionally well and organizes those around him",
+      "keyStrengths": ["Leadership", "Reading of the game", "Organization"],
+      "worldCup2026Role": "Veteran defensive leader whose experience and composure are vital for managing World Cup pressure",
+      "notableFact": "Would be one of the oldest players at the 2026 World Cup, bringing wisdom from a long international career"
+    },
+    "Tim Payne": {
+      "bio": "Wellington Phoenix left-back who provides a reliable option on the left side of defense. A natural left-footer with 15 caps for New Zealand.",
+      "playingStyle": "Solid, dependable left-back who focuses on defensive duties while providing width when the team attacks",
+      "keyStrengths": ["Defensive reliability", "Left-foot delivery", "Consistency"],
+      "worldCup2026Role": "Backup left-back providing squad depth and a natural left-footed option",
+      "notableFact": "Has been a consistent performer for Wellington Phoenix in the A-League for several seasons"
+    },
+    "Joe Bell": {
+      "bio": "Central midfielder playing in the Belgian First Division with Standard Liege. One of New Zealand's most talented midfielders with 25 caps and 2 goals, he has carved out a career in European football.",
+      "playingStyle": "Technical, composed midfielder with excellent passing range and the ability to control the tempo of matches",
+      "keyStrengths": ["Passing range", "Composure", "Tempo control"],
+      "worldCup2026Role": "Key central midfielder who dictates the pace of play and connects defense to attack",
+      "notableFact": "Moved to Europe via the Portland Timbers in MLS, demonstrating New Zealand's pathway to competitive football"
+    },
+    "Elijah Just": {
+      "bio": "Wellington Phoenix right winger who provides pace and directness on the flank. With 15 caps and 2 goals, he has become a regular in the All Whites setup.",
+      "playingStyle": "Direct, pacy winger who takes on defenders and delivers crosses into dangerous areas",
+      "keyStrengths": ["Pace", "Directness", "Crossing"],
+      "worldCup2026Role": "Starting or rotation option on the right wing, providing width and attacking threat",
+      "notableFact": "A homegrown Wellington Phoenix product who has developed into a full international"
+    },
+    "Alex Greive": {
+      "bio": "Young striker playing for the New York Red Bulls in MLS. With 10 caps and 3 goals, he represents the next generation of New Zealand attacking talent and has shown a keen eye for goal.",
+      "playingStyle": "Energetic, mobile striker who presses from the front and has good finishing instincts",
+      "keyStrengths": ["Movement", "Finishing", "Pressing"],
+      "worldCup2026Role": "Forward option providing energy, pressing, and goal threat as a backup or partner to Chris Wood",
+      "notableFact": "Made the move from A-League football to MLS, continuing New Zealand's tradition of developing players in Australasian and American leagues"
+    },
+    "Chris Wood": {
+      "bio": "New Zealand's all-time star player and captain, playing for Nottingham Forest in the Premier League. With 35 goals in 75 caps, he is the undisputed leader and talisman of the All Whites.",
+      "playingStyle": "Classic target man with excellent aerial ability, clinical finishing, and the ability to hold the ball up for teammates",
+      "keyStrengths": ["Aerial ability", "Finishing", "Hold-up play"],
+      "worldCup2026Role": "Captain, starting striker, and the player around whom New Zealand's entire attacking strategy revolves",
+      "notableFact": "Has scored consistently in the Premier League across multiple clubs, making him by far the highest-profile New Zealand footballer of his generation"
+    },
+    "Marko Stamenic": {
+      "bio": "Talented young midfielder at Red Bull Salzburg in the Austrian Bundesliga. At 25, he is one of the most promising players in the squad with 20 caps and 2 goals.",
+      "playingStyle": "Dynamic, box-to-box midfielder who covers ground quickly, carries the ball well, and contributes in both attack and defense",
+      "keyStrengths": ["Box-to-box energy", "Ball carrying", "Versatility"],
+      "worldCup2026Role": "Starting central midfielder providing dynamism and European-quality play in the engine room",
+      "notableFact": "His move to Red Bull Salzburg, a consistent Champions League club, represents one of the biggest transfers in New Zealand football history"
+    },
+    "Kosta Barbarouses": {
+      "bio": "Veteran winger of Greek heritage with 50 caps and 9 goals for New Zealand. The Wellington Phoenix attacker has been a loyal servant of the national team for over a decade.",
+      "playingStyle": "Experienced, intelligent winger who uses guile and positioning rather than pure pace to create and score goals",
+      "keyStrengths": ["Experience", "Intelligent movement", "Goal scoring from wide areas"],
+      "worldCup2026Role": "Experienced attacking option who brings calm and composure in big moments",
+      "notableFact": "Has represented New Zealand for over a decade and is one of the most capped active All Whites players"
+    },
+    "Max Crocombe": {
+      "bio": "Goalkeeper playing for Oxford United in the English Championship. With 10 caps, he provides experienced backup and competition in the goalkeeping department.",
+      "playingStyle": "Agile, shot-stopping goalkeeper with quick reflexes and the ability to make crucial saves in tight situations",
+      "keyStrengths": ["Shot-stopping", "Reflexes", "English football experience"],
+      "worldCup2026Role": "Second-choice goalkeeper providing quality backup and competitive pressure for the starting spot",
+      "notableFact": "His experience in the English Championship gives New Zealand a goalkeeper familiar with high-intensity, physical football"
+    },
+    "Storm Roux": {
+      "bio": "Right-back from Melbourne City in the A-League with 25 caps and 1 goal. A steady, reliable defender who has been a consistent presence in the All Whites setup.",
+      "playingStyle": "Reliable right-back who balances defensive duties with overlapping runs and provides consistent performances",
+      "keyStrengths": ["Consistency", "Defensive solidity", "Overlapping runs"],
+      "worldCup2026Role": "Starting or backup right-back providing defensive reliability and experience",
+      "notableFact": "Has been one of the most consistent performers in the A-League across multiple seasons"
+    },
+    "Ryan Thomas": {
+      "bio": "Experienced midfielder at PSV Eindhoven in the Dutch Eredivisie. With 25 caps and 2 goals, he is one of the highest-profile New Zealand players in European football.",
+      "playingStyle": "Versatile, hard-working midfielder who can play multiple positions and contributes defensive solidity and passing quality",
+      "keyStrengths": ["Versatility", "Work rate", "European experience"],
+      "worldCup2026Role": "Key midfield option whose Dutch league experience and versatility make him invaluable to the squad",
+      "notableFact": "Has spent most of his career in the Netherlands, becoming a trusted squad player at one of the biggest clubs in Dutch football"
+    },
+    "Clayton Lewis": {
+      "bio": "Wellington Phoenix midfielder who provides domestic league depth in the All Whites midfield. With 20 caps, he is a reliable squad member who knows the national team system well.",
+      "playingStyle": "Industrious, hard-working midfielder who keeps things simple and provides energy and defensive cover",
+      "keyStrengths": ["Work rate", "Reliability", "Tactical awareness"],
+      "worldCup2026Role": "Squad depth midfielder who can step in to provide energy and defensive cover when needed",
+      "notableFact": "A Wellington Phoenix academy product who has become a regular feature in the national team"
+    },
+    "Liberato Cacace": {
+      "bio": "Dynamic left-back at Empoli in Serie A, making him one of the most high-profile New Zealand players in European football. At 25, his 30 caps and Italian league experience are invaluable.",
+      "playingStyle": "Attack-minded left-back with excellent technical ability, dribbling skills, and the confidence to get forward and create chances",
+      "keyStrengths": ["Attacking ability", "Technical skill", "Dribbling from full-back"],
+      "worldCup2026Role": "Starting left-back and one of the team's most dangerous attacking outlets from defensive positions",
+      "notableFact": "One of the highest-valued New Zealand players, his Serie A experience gives the All Whites genuine quality at full-back"
+    },
+    "Sarpreet Singh": {
+      "bio": "Creative midfielder of Indian-Kiwi heritage playing in Germany's second tier with Regensburg. A former Bayern Munich youth player with 15 caps and 1 goal, he brings unique flair to the squad.",
+      "playingStyle": "Creative, left-footed playmaker with excellent vision, technical ability, and the skill to play between the lines",
+      "keyStrengths": ["Creativity", "Left-footed technique", "Vision"],
+      "worldCup2026Role": "Creative attacking option who can unlock defenses with his passing and movement in the final third",
+      "notableFact": "Was the first New Zealander to sign for Bayern Munich, spending time in their reserve team before moving on"
+    },
+    "Dane Ingham": {
+      "bio": "Experienced right-back from Brisbane Roar in the A-League with 20 caps for New Zealand. A reliable, versatile defender who provides depth across the back four.",
+      "playingStyle": "Steady, consistent full-back who prioritizes defensive duties and provides reliable width when called upon",
+      "keyStrengths": ["Consistency", "Defensive reliability", "Versatility"],
+      "worldCup2026Role": "Backup full-back providing squad depth across the defensive positions",
+      "notableFact": "Has been a consistent performer across multiple A-League clubs throughout his career"
+    },
+    "Matthew Garbett": {
+      "bio": "Exciting young midfielder on Napoli's books in Serie A, one of the most promising talents in New Zealand football history. At just 24, his 10 caps and Italian football education mark him as a future star.",
+      "playingStyle": "Dynamic, energetic midfielder with excellent technical ability, sharp passing, and the drive to make things happen",
+      "keyStrengths": ["Technical ability", "Energy", "Progressive passing"],
+      "worldCup2026Role": "Emerging midfield talent who can inject quality and energy from the bench or start depending on form",
+      "notableFact": "Being at Napoli puts him at one of Europe's most prestigious clubs, making him one of the highest-profile All Whites players ever"
+    },
+    "Andre De Jong": {
+      "bio": "Veteran center-back playing in the USL Championship with Phoenix Rising. At 36 with 10 caps, he provides experienced defensive depth and mentorship for younger players.",
+      "playingStyle": "Experienced, physical defender who uses his knowledge and positioning to compensate for pace at the highest level",
+      "keyStrengths": ["Experience", "Positioning", "Physicality"],
+      "worldCup2026Role": "Veteran squad player providing defensive emergency cover and dressing room experience",
+      "notableFact": "One of the oldest members of the All Whites squad, bringing years of professional experience across multiple leagues"
+    },
+    "Oskar van Hattum": {
+      "bio": "Young goalkeeper from Wellington Phoenix who represents the future of New Zealand goalkeeping. At 24 with 5 caps, his inclusion in the squad demonstrates investment in young talent.",
+      "playingStyle": "Tall, athletic young goalkeeper with modern distribution skills and shot-stopping ability",
+      "keyStrengths": ["Distribution", "Athleticism", "Potential"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience for the future",
+      "notableFact": "Part of the Wellington Phoenix academy production line that has been central to developing New Zealand international players"
+    },
+    "Logan Rogerson": {
+      "bio": "Young right winger from Wellington Phoenix who is one of the most promising attackers in New Zealand football. At 22 with 5 caps, he brings youthful energy and excitement to the squad.",
+      "playingStyle": "Quick, direct young winger with good dribbling ability and the confidence to take on defenders",
+      "keyStrengths": ["Pace", "Dribbling", "Youth"],
+      "worldCup2026Role": "Young attacking option who can provide a spark off the bench with fresh legs and fearlessness",
+      "notableFact": "One of several Wellington Phoenix products in the squad, showing the club's vital role in developing All Whites talent"
+    },
+    "Gianni Stensness": {
+      "bio": "Australian-born center-back of Norwegian-Kiwi heritage who plays for Viking in Norway's Eliteserien. With 15 caps, he adds versatility and international defensive experience to the squad.",
+      "playingStyle": "Composed, technical defender who reads the game well and is comfortable playing out from the back under pressure",
+      "keyStrengths": ["Composure", "Ball distribution", "Reading of play"],
+      "worldCup2026Role": "Versatile defensive option who can play center-back or defensive midfield as needed",
+      "notableFact": "Born in Australia with Norwegian and New Zealand heritage, he chose to represent New Zealand at international level"
+    },
+    "Ben Waine": {
+      "bio": "Young striker at Plymouth Argyle in the English Championship, one of the bright young talents in New Zealand football. With 15 caps and 4 goals, he has an impressive international scoring rate.",
+      "playingStyle": "Sharp, mobile striker with good finishing instincts, intelligent movement, and improving all-round play",
+      "keyStrengths": ["Finishing", "Movement", "Work rate"],
+      "worldCup2026Role": "Key backup striker to Chris Wood, capable of starting or making an impact off the bench",
+      "notableFact": "His goalscoring form in the English Championship has made him one of the most exciting New Zealand strikers of the new generation"
+    },
+    "Jesse Randall": {
+      "bio": "Young left winger at Vitesse in the Dutch Eredivisie, one of the emerging talents in New Zealand football. At 23 with 5 caps and 1 goal, his European experience adds quality to the wide positions.",
+      "playingStyle": "Pacy, direct left winger with good dribbling skills, a dangerous left foot, and the ability to cut inside and shoot",
+      "keyStrengths": ["Pace", "Left-footed shooting", "Dribbling"],
+      "worldCup2026Role": "Young wide attacking option bringing European quality and pace from the left flank",
+      "notableFact": "One of a growing number of New Zealand players making their way into European football through the Dutch league pathway"
+    },
+    "Jay Herdman": {
+      "bio": "Young midfielder at Sheffield United in the English Championship, the youngest member of New Zealand's squad. With 5 caps, his inclusion reflects his exciting potential and maturity beyond his years.",
+      "playingStyle": "Energetic, technically sound young midfielder who plays with maturity and composure beyond his age",
+      "keyStrengths": ["Maturity", "Technical ability", "Energy"],
+      "worldCup2026Role": "Young developmental talent experiencing the World Cup environment for future benefit to New Zealand football",
+      "notableFact": "Son of New Zealand head coach John Herdman, bringing a unique family connection to the national team setup"
+    }
+  }
+}

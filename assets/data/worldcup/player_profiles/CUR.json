@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Eloy Room": {
+      "bio": "Experienced goalkeeper who plays in MLS for the Columbus Crew. He is the undisputed number one for Curacao and brings top-level professional experience from the Netherlands and the United States.",
+      "playingStyle": "Tall, commanding goalkeeper with excellent reach, strong shot-stopping, and authority in the penalty area",
+      "keyStrengths": ["Shot-stopping", "Commanding presence", "Aerial reach"],
+      "worldCup2026Role": "Starting goalkeeper and one of the most experienced players on the squad",
+      "notableFact": "Has been the Columbus Crew's first-choice goalkeeper in MLS, bringing American top-flight experience to Curacao"
+    },
+    "Jurien Gaari": {
+      "bio": "Right-back with 50 caps who plays in the Dutch Eredivisie for Almere City. One of the most experienced defenders in the Curacao squad and a fixture in the team for years.",
+      "playingStyle": "Solid, dependable right-back who balances defensive duties with occasional forays forward",
+      "keyStrengths": ["Consistency", "Defensive positioning", "Experience"],
+      "worldCup2026Role": "Starting right-back and trusted defensive presence with vital international experience",
+      "notableFact": "With 50 caps, he is one of the most capped players in Curacao's football history"
+    },
+    "Cuco Martina": {
+      "bio": "Veteran defender who has played at the highest levels of European football, including spells at Southampton and Everton in the English Premier League. Now winding down his career in the Dutch lower divisions.",
+      "playingStyle": "Versatile defender who can play across the back line, known for his athleticism and occasional spectacular long-range goals",
+      "keyStrengths": ["Versatility", "Top-level experience", "Long-range shooting"],
+      "worldCup2026Role": "Veteran squad member bringing invaluable Premier League experience and defensive versatility",
+      "notableFact": "Scored a stunning long-range goal for Everton against Arsenal in the Premier League that went viral worldwide"
+    },
+    "Darryl Lachman": {
+      "bio": "Experienced center-back with 50 caps who has played across several Dutch clubs. Currently a free agent, he has been a loyal servant to the Curacao national team for over a decade.",
+      "playingStyle": "Strong, traditional center-back who excels in aerial duels and one-on-one defending",
+      "keyStrengths": ["Aerial ability", "Physical strength", "Experience"],
+      "worldCup2026Role": "Senior defensive squad member whose experience is valuable in tournament settings",
+      "notableFact": "One of Curacao's most capped players with 50 appearances, a true stalwart of the national team"
+    },
+    "Shermaine Martina": {
+      "bio": "Center-back who plays in the Dutch Eredivisie for Volendam. He has been a regular in the Curacao defense with 45 caps and provides physical presence at the back.",
+      "playingStyle": "Powerful, no-nonsense center-back who dominates in physical duels and heads away danger",
+      "keyStrengths": ["Physical power", "Aerial dominance", "Defensive aggression"],
+      "worldCup2026Role": "Key center-back option in Curacao's defensive rotation",
+      "notableFact": "Shares the surname Martina with teammate Cuco Martina, though they are not related"
+    },
+    "Leandro Bacuna": {
+      "bio": "One of Curacao's most accomplished players, this versatile midfielder has extensive experience in English football with Aston Villa, Cardiff City, and others in the Championship and Premier League.",
+      "playingStyle": "Powerful, versatile player who can operate in midfield or defense, combining physical strength with technical quality",
+      "keyStrengths": ["Versatility", "Physical power", "Long-range shooting"],
+      "worldCup2026Role": "Key player and midfield leader whose English football experience is invaluable at the World Cup",
+      "notableFact": "Initially represented the Netherlands at youth level before switching to Curacao, where he has become the team's most important player"
+    },
+    "Rangelo Janga": {
+      "bio": "Experienced right winger with 45 caps and 10 goals for Curacao. He has played across multiple European leagues and provides a reliable attacking threat from the flanks.",
+      "playingStyle": "Direct winger with good pace, crossing ability, and an eye for goal from wide positions",
+      "keyStrengths": ["Crossing", "Pace", "Goal threat"],
+      "worldCup2026Role": "First-choice right winger providing width, delivery, and a goal-scoring threat",
+      "notableFact": "With 10 international goals from the wing, he is one of Curacao's top scorers in history"
+    },
+    "Quenten Martinus": {
+      "bio": "Experienced central midfielder who plays in France's Ligue 2 for Rodez. With 40 caps, he is a trusted presence in Curacao's midfield setup.",
+      "playingStyle": "Technical, neat-passing midfielder who keeps the ball moving and maintains the team's rhythm",
+      "keyStrengths": ["Passing accuracy", "Ball retention", "Technical ability"],
+      "worldCup2026Role": "Midfield contributor who brings control and composure in possession",
+      "notableFact": "Has built his career in French football, one of few Curacao players with extensive experience in Ligue 2"
+    },
+    "Gervane Kastaneer": {
+      "bio": "Striker who plays for Coventry City in the English Championship. With pace, power, and 8 goals in 25 caps, he is one of Curacao's most dangerous attacking threats.",
+      "playingStyle": "Strong, pacey striker who uses his physical attributes to run behind defenses and hold the ball up",
+      "keyStrengths": ["Pace and power", "Running in behind", "Physical presence"],
+      "worldCup2026Role": "Key striker option who can lead the line or provide an impact off the bench",
+      "notableFact": "His combination of pace and power has made him a standout in the English Championship with Coventry City"
+    },
+    "Juninho Bacuna": {
+      "bio": "The most valuable player in the Curacao squad, this creative midfielder plays for Rangers in the Scottish Premiership. Brother of teammate Leandro Bacuna, he brings flair and vision to the team.",
+      "playingStyle": "Creative attacking midfielder with excellent technical ability, vision, and the confidence to attempt audacious plays",
+      "keyStrengths": ["Creativity", "Technical skill", "Set-piece ability"],
+      "worldCup2026Role": "Starting playmaker and creative fulcrum, the player Curacao looks to for inspiration and magic moments",
+      "notableFact": "Brothers Juninho and Leandro Bacuna both represent Curacao, having chosen the island nation over the Netherlands"
+    },
+    "Kenji Gorre": {
+      "bio": "Left winger who grew up in the Manchester City and Swansea City youth systems before making his career in the Dutch Eredivisie with Excelsior. He chose Curacao over the Netherlands.",
+      "playingStyle": "Quick, tricky left winger with good close control and the ability to beat defenders in one-on-one situations",
+      "keyStrengths": ["Dribbling", "Pace", "One-on-one ability"],
+      "worldCup2026Role": "Starting left winger providing width, creativity, and direct attacking play",
+      "notableFact": "Son of former Dutch professional Dean Gorre, he trained at Manchester City's academy before choosing to represent Curacao"
+    },
+    "Jairzinho Pieter": {
+      "bio": "Backup goalkeeper who plays for FC Eindhoven in the Dutch second division. Named after the legendary Brazilian forward Jairzinho, he provides depth between the posts.",
+      "playingStyle": "Reliable backup goalkeeper with solid fundamentals and good handling",
+      "keyStrengths": ["Handling", "Positioning", "Reliability"],
+      "worldCup2026Role": "Second-choice goalkeeper providing depth behind Eloy Room",
+      "notableFact": "Named after Brazilian 1970 World Cup legend Jairzinho, reflecting the Caribbean football culture's connection to Brazilian football"
+    },
+    "Roly Bonevacia": {
+      "bio": "Veteran midfielder with 50 caps who plays in the A-League for Wellington Phoenix in New Zealand. He has been one of Curacao's most consistent performers over the years.",
+      "playingStyle": "Experienced, technically sound midfielder who controls the tempo and is reliable in possession",
+      "keyStrengths": ["Ball control", "Experience", "Consistency"],
+      "worldCup2026Role": "Veteran midfield presence who brings experience and composure in high-pressure situations",
+      "notableFact": "Has played professional football on four different continents, bringing a truly global perspective to the team"
+    },
+    "Brandley Kuwas": {
+      "bio": "Experienced right winger with 40 caps and 8 goals who plays for Heracles in the Dutch Eredivisie. A consistent performer for both club and country over many years.",
+      "playingStyle": "Direct, pacy winger with good crossing ability and the confidence to take on defenders",
+      "keyStrengths": ["Crossing", "Directness", "Pace"],
+      "worldCup2026Role": "Experienced wide attacker who provides depth and quality on the right side",
+      "notableFact": "Has been one of the most reliable performers in the Dutch Eredivisie for Heracles over multiple seasons"
+    },
+    "Charlison Benschop": {
+      "bio": "Well-traveled veteran striker with 35 caps and 10 goals for Curacao. He has played across Europe and Asia, currently in the K League in South Korea.",
+      "playingStyle": "Tall, physical target striker who is effective in the air and provides a focal point for the attack",
+      "keyStrengths": ["Aerial ability", "Physical presence", "Clinical finishing"],
+      "worldCup2026Role": "Experienced striker option who can offer a different dimension as a target man",
+      "notableFact": "Has scored 10 international goals for Curacao while playing professional football across five different countries"
+    },
+    "Vurnon Anita": {
+      "bio": "Veteran defensive midfielder with elite-level experience from spells at Ajax and Newcastle United in the Premier League. Now playing in the Eredivisie, he chose Curacao over the Netherlands.",
+      "playingStyle": "Intelligent, compact defensive midfielder with excellent positional awareness and neat passing",
+      "keyStrengths": ["Positional awareness", "Passing accuracy", "Reading the game"],
+      "worldCup2026Role": "Experienced midfield anchor whose top-level experience is a major asset for Curacao",
+      "notableFact": "Won multiple Eredivisie titles with Ajax and played in the Premier League for Newcastle United before choosing Curacao"
+    },
+    "Michael Maria": {
+      "bio": "Left-back who plays for Go Ahead Eagles in the Dutch Eredivisie. He provides an attacking option on the left side of Curacao's defense.",
+      "playingStyle": "Attack-minded left-back who gets forward to deliver crosses and provide width on the left flank",
+      "keyStrengths": ["Crossing from the left", "Pace", "Attacking contribution"],
+      "worldCup2026Role": "First-choice left-back tasked with providing defensive stability and attacking width",
+      "notableFact": "Has established himself as a regular in the Dutch Eredivisie while maintaining his commitment to Curacao"
+    },
+    "Patrick Joosten": {
+      "bio": "Left winger who plays for FC Utrecht in the Dutch Eredivisie. He adds quality and competition in the wide attacking positions for Curacao.",
+      "playingStyle": "Technically skilled winger who likes to cut inside from the left and create chances with his right foot",
+      "keyStrengths": ["Technical ability", "Cutting inside", "Creating chances"],
+      "worldCup2026Role": "Attacking squad option who can contribute from either wing",
+      "notableFact": "Came through the youth academy at FC Utrecht, one of the top development clubs in the Netherlands"
+    },
+    "Shanon Carmelia": {
+      "bio": "One of the most exciting young talents in the squad, this right winger plays for Feyenoord in the Eredivisie. At just 22, he represents Curacao's bright future.",
+      "playingStyle": "Explosive, pacy young winger with electric dribbling ability and the confidence to take on any defender",
+      "keyStrengths": ["Electric pace", "Dribbling", "Youthful fearlessness"],
+      "worldCup2026Role": "Young attacking star who can be a game-changer with his pace and directness",
+      "notableFact": "Plays for Feyenoord, one of the biggest clubs in the Netherlands, making him one of Curacao's highest-profile young players"
+    },
+    "Kevin Felida": {
+      "bio": "Central midfielder who plays in the Dutch second division for Helmond Sport. He provides depth in the midfield ranks for the national team.",
+      "playingStyle": "Hardworking central midfielder with good energy and commitment to pressing",
+      "keyStrengths": ["Work rate", "Energy", "Pressing"],
+      "worldCup2026Role": "Midfield squad player who can provide energy and fresh legs when needed",
+      "notableFact": "Earned his place in the squad through consistent performances in the Dutch lower divisions"
+    },
+    "Gianni Zuiverloon": {
+      "bio": "Third-choice goalkeeper who plays for Heracles in the Dutch Eredivisie. He provides additional goalkeeping depth for the World Cup squad.",
+      "playingStyle": "Solid goalkeeper with good fundamentals and command of his penalty area",
+      "keyStrengths": ["Penalty area command", "Handling", "Shot-stopping"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth in the squad",
+      "notableFact": "Plays for Heracles in the Eredivisie, sharing the club with teammate Brandley Kuwas"
+    },
+    "Jafar Arias": {
+      "bio": "Striker who plays for FC Emmen in the Dutch Eredivisie. With 15 caps and 4 goals, he has shown a natural instinct for scoring at international level.",
+      "playingStyle": "Sharp, instinctive striker with good movement in the box and a natural goal-scoring touch",
+      "keyStrengths": ["Finishing", "Movement in the box", "Instinct"],
+      "worldCup2026Role": "Striking option who can provide goals off the bench or in rotation",
+      "notableFact": "Has averaged a goal roughly every four games for Curacao, showing an impressive international scoring rate"
+    },
+    "Elson Hooi": {
+      "bio": "Experienced left winger with 30 caps and 6 goals who plays for ADO Den Haag in the Dutch second division. A veteran wide player with a history of contributing for the national team.",
+      "playingStyle": "Direct, experienced winger who uses his pace and trickery to create chances and score goals",
+      "keyStrengths": ["Directness", "Goal contribution", "Experience"],
+      "worldCup2026Role": "Experienced squad winger who can provide attacking depth from the left side",
+      "notableFact": "With 6 goals in 30 caps, he has been one of the more productive wide players in Curacao's history"
+    },
+    "Gevero Markiet": {
+      "bio": "Young center-back who plays in the Dutch second division for FC Den Bosch. He represents the future of Curacao's defensive line.",
+      "playingStyle": "Athletic, young center-back who uses his physical attributes well in defensive duels",
+      "keyStrengths": ["Athleticism", "Physicality", "Developing potential"],
+      "worldCup2026Role": "Young defensive depth option gaining experience in a World Cup environment",
+      "notableFact": "One of the younger defenders in the squad, he is being developed as a long-term option for Curacao's defense"
+    },
+    "Jarchino Antonia": {
+      "bio": "Experienced left winger who plays for Go Ahead Eagles in the Dutch Eredivisie. With 20 caps and 3 goals, he has been a useful contributor for the national team.",
+      "playingStyle": "Tricky, skillful winger who enjoys one-on-one situations and uses his low center of gravity to beat defenders",
+      "keyStrengths": ["Dribbling", "Low center of gravity", "Trickery"],
+      "worldCup2026Role": "Wide attacking option who provides depth and competition on the left wing",
+      "notableFact": "Plays alongside teammate Michael Maria at Go Ahead Eagles in the Dutch Eredivisie"
+    },
+    "Riechedly Bazoer": {
+      "bio": "Hugely talented midfielder who was once considered one of the brightest prospects in Dutch football, playing for Ajax as a teenager. He chose Curacao over the Netherlands and now plays in Turkey.",
+      "playingStyle": "Elegant, technically gifted midfielder with exceptional passing range, composure, and the ability to dictate play from deep",
+      "keyStrengths": ["Passing range", "Technical elegance", "Composure on the ball"],
+      "worldCup2026Role": "Midfield difference-maker whose elite technical ability can elevate Curacao's play against top opposition",
+      "notableFact": "Was the youngest debutant for Ajax in a European competition since Clarence Seedorf before choosing to represent Curacao over the Netherlands"
+    }
+  }
+}

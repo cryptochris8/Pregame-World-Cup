@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Jordan Pickford": {
+      "bio": "Pickford has been England's undisputed number one since the 2018 World Cup, where his penalty save in the round of 16 shootout against Colombia became iconic. Despite playing for a perennially struggling Everton side, his performances for England have been consistently world-class across three major tournaments.",
+      "playingStyle": "Agile, vocal goalkeeper with outstanding reflexes and excellent distribution. Makes himself big in one-on-one situations and has a particular talent for saving penalties. Commands his area with intense energy and never stops communicating with his defense.",
+      "keyStrengths": ["Penalty-saving prowess", "Exceptional reflexes and agility", "Accurate distribution with both feet"],
+      "worldCup2026Role": "Unquestioned first-choice goalkeeper and one of the first names on the team sheet. His tournament pedigree across three major competitions gives England a proven performer between the posts.",
+      "notableFact": "Has saved more penalties in shootouts for England than any other goalkeeper in the nation's history, earning a reputation as a big-game specialist."
+    },
+    "Kyle Walker": {
+      "bio": "Walker has been one of the Premier League's most consistent right-backs for over a decade, winning multiple league titles with Manchester City before a late-career move to AC Milan. At 36, his legendary pace may have diminished, but his experience and tactical intelligence remain invaluable.",
+      "playingStyle": "Pacy, powerful right-back who uses his explosive speed to recover defensive positions and provide width in attack. Despite his age, he remains one of the fastest defenders in the game. Dependable in big matches with outstanding positional sense.",
+      "keyStrengths": ["Recovery pace and speed", "Experience in elite-level matches", "Physical durability and consistency"],
+      "worldCup2026Role": "Senior squad member providing experience and leadership in defense. At 36, his minutes may be managed, but his tournament experience across multiple World Cups and Euros is irreplaceable.",
+      "notableFact": "Has won six Premier League titles with Manchester City, more than any other current England international, bringing an unparalleled winning mentality to the squad."
+    },
+    "Luke Shaw": {
+      "bio": "Shaw joined Manchester United as a teenager from Southampton, becoming the most expensive teenage defender in history at the time. Despite a horrific leg break that threatened his career, he fought back to become one of the best left-backs in the Premier League and a key player for England at major tournaments.",
+      "playingStyle": "Attack-minded left-back who combines overlapping runs with solid defensive positioning. Delivers quality crosses from deep and is comfortable inverting into midfield in possession. His left foot provides a natural balance to the defensive line.",
+      "keyStrengths": ["Overlapping runs and crossing ability", "Defensive solidity and positioning", "Left-footed balance in the backline"],
+      "worldCup2026Role": "First-choice left-back when fit, providing width and defensive security on the left side. His partnership understanding with the left-sided attackers makes him integral to England's shape.",
+      "notableFact": "Scored England's goal in the Euro 2020 final against Italy, the fastest goal in a European Championship final in history, inside the opening two minutes."
+    },
+    "Declan Rice": {
+      "bio": "Rice switched international allegiance from the Republic of Ireland to England early in his career and has since become the heartbeat of the national team. After establishing himself as West Ham's captain and talisman, he earned a record-breaking move to Arsenal where he has elevated his game to world-class level.",
+      "playingStyle": "Complete midfield anchor who combines defensive intelligence with increasing attacking output. Reads the game superbly, wins the ball cleanly, and distributes with precision. Has added late runs into the box and goal-scoring to his already formidable defensive game.",
+      "keyStrengths": ["Defensive reading of the game", "Ball-winning ability and clean tackling", "Progressive passing and late attacking runs"],
+      "worldCup2026Role": "Guaranteed starter and one of the first names on the team sheet. Anchors the midfield, provides the defensive platform for England's attacking talent, and increasingly contributes in the final third.",
+      "notableFact": "Initially represented the Republic of Ireland at senior level before switching to England, a decision that has proven transformative for both his career and the England midfield."
+    },
+    "John Stones": {
+      "bio": "Stones has evolved from a highly criticized young defender at Everton into one of the most accomplished ball-playing center-backs in the world under Pep Guardiola at Manchester City. His ability to step into midfield during matches revolutionized how defenders are used in modern football.",
+      "playingStyle": "Technically supreme center-back who is as comfortable on the ball as many midfielders. Under Guardiola, he developed the ability to step out of defense into midfield during matches, creating numerical advantages. Calm under the highest pressure with excellent passing range.",
+      "keyStrengths": ["Ball-playing ability from defense", "Tactical intelligence to invert into midfield", "Composure under high-press situations"],
+      "worldCup2026Role": "First-choice center-back and a key figure in England's build-up play. His partnership with Guehi or another center-back provides the technical foundation for playing out from the back.",
+      "notableFact": "Was one of the first defenders to regularly invert into midfield during open play under Pep Guardiola, pioneering a tactical role that has since been adopted across world football."
+    },
+    "Harry Maguire": {
+      "bio": "Maguire became the world's most expensive defender when Manchester United paid Leicester City a record fee. Despite intense media scrutiny and criticism at club level, he has consistently been one of England's most important players at major tournaments, scoring crucial goals and providing defensive leadership.",
+      "playingStyle": "Physically imposing, aerially dominant center-back who carries the ball forward with surprising confidence. Strong in both penalty boxes, contributing goals from set pieces while organizing the defensive line. A natural leader who thrives under tournament pressure.",
+      "keyStrengths": ["Aerial dominance in both boxes", "Ball-carrying from deep positions", "Tournament pedigree and leadership"],
+      "worldCup2026Role": "Experienced defensive option providing aerial threat and tournament know-how. His ability to score from set pieces and his track record of performing well for England in major tournaments make him a valuable squad member.",
+      "notableFact": "Has scored more goals at major tournaments than any other English defender in history, with crucial strikes at the 2018 World Cup, Euro 2020, and the 2022 World Cup."
+    },
+    "Bukayo Saka": {
+      "bio": "Saka emerged from Arsenal's academy as a teenager and rapidly became one of the Premier League's most impactful players. Despite the heartbreak of missing a penalty in the Euro 2020 final shootout at just 19 years old, he responded with remarkable maturity and has since become one of England's most important attacking players.",
+      "playingStyle": "Direct, two-footed winger who can play on either flank but excels on the right, cutting inside onto his left foot. Combines explosive dribbling with end product, delivering crosses and shots with equal quality. His work rate and defensive contribution set him apart from other elite wingers.",
+      "keyStrengths": ["Two-footed attacking threat", "Direct dribbling and one-on-one ability", "Exceptional work rate and defensive contribution"],
+      "worldCup2026Role": "Undroppable starter on the right wing and one of England's most important attacking outlets. His ability to beat defenders, create chances, and score goals makes him central to everything England do in attack.",
+      "notableFact": "Showed extraordinary character by stepping up to take penalties again after his Euro 2020 final miss, converting crucial spot-kicks in subsequent tournaments and demonstrating remarkable mental resilience."
+    },
+    "Trent Alexander-Arnold": {
+      "bio": "Alexander-Arnold rose through Liverpool's academy to become one of the most decorated players in the club's modern history, winning the Champions League and Premier League. His passing range from right-back is unmatched in world football, with his ability to operate as an inverted midfielder during matches adding a new dimension to his game.",
+      "playingStyle": "Visionary right-back whose passing range and crossing ability are comparable to the world's best playmakers. Increasingly deployed as an inverted midfielder in possession phases, creating overloads in central areas. His set-piece delivery is among the most dangerous in the game.",
+      "keyStrengths": ["World-class passing range and vision", "Set-piece and crossing delivery", "Ability to invert into midfield"],
+      "worldCup2026Role": "Unique tactical weapon who can be used as an inverted right-back or a midfield option in possession. His creative ability from deep positions gives England a different dimension that few other teams can replicate.",
+      "notableFact": "Has provided more assists from right-back than any other defender in Champions League history, including the quick corner that led to Liverpool's famous fourth goal against Barcelona in the 2019 semi-final."
+    },
+    "Harry Kane": {
+      "bio": "England's all-time leading scorer, Kane has been the nation's talisman for nearly a decade. After a legendary spell at Tottenham where he became the club's record scorer, he moved to Bayern Munich and immediately broke the Bundesliga record for most goals in a debut season. His consistency in front of goal across leagues is unprecedented.",
+      "playingStyle": "Complete striker who combines lethal finishing with exceptional link-up play and playmaking ability. Drops deep to orchestrate attacks, delivers defence-splitting passes, and arrives in the box with perfect timing. Deadly from any range, with either foot, and in the air.",
+      "keyStrengths": ["Clinical finishing from any situation", "Deep-lying playmaking from the striker position", "Aerial ability and set-piece expertise"],
+      "worldCup2026Role": "Captain, leader, and the focal point of the entire attack. Everything England create in the final third runs through Kane, whether he is scoring goals or creating them for others. This could be his last World Cup and he will be desperate to win it.",
+      "notableFact": "Is England's all-time leading scorer, surpassing Wayne Rooney's record of 53 goals, and won the 2018 World Cup Golden Boot with six goals in the tournament."
+    },
+    "Jude Bellingham": {
+      "bio": "Bellingham left Birmingham City for Borussia Dortmund at 17, became the youngest English player to play in the Champions League, and then moved to Real Madrid where he immediately became one of the best players in the world. His combination of athleticism, technique, and match intelligence at such a young age has drawn comparisons to the all-time greats.",
+      "playingStyle": "Dynamic, all-action attacking midfielder who dominates matches with his physical presence, technical quality, and insatiable desire to be involved. Drives forward with power, arrives in the box to score crucial goals, and presses with the intensity of a striker. A complete midfielder.",
+      "keyStrengths": ["Box-to-box dynamism and goal-scoring", "Physical power combined with technical excellence", "Big-game temperament and leadership"],
+      "worldCup2026Role": "The creative fulcrum of the entire team, operating as an advanced midfielder or number 10 behind Kane. His ability to score decisive goals and dominate big matches makes him England's most important outfield player.",
+      "notableFact": "Won La Liga Player of the Season and the Champions League in his debut year at Real Madrid, scoring a 95th-minute winner in El Clasico and becoming only the fourth English player to win Europe's top prize with a Spanish club."
+    },
+    "Phil Foden": {
+      "bio": "Foden was hailed by Pep Guardiola as the most talented player he has ever coached, an extraordinary statement given Guardiola managed Lionel Messi. After patiently learning his craft under Guardiola, Foden has blossomed into one of the Premier League's most complete attacking players, winning multiple titles with Manchester City.",
+      "playingStyle": "Silky, diminutive attacker who drifts into pockets of space and creates chances with his exceptional close control and quick feet. Can play across the front line or as a creative midfielder. His ability to receive the ball in tight spaces and turn away from defenders is elite.",
+      "keyStrengths": ["Close control and quick feet in tight spaces", "Positional versatility across the attack", "Creative vision and final-third decision-making"],
+      "worldCup2026Role": "Starting attacker, most likely on the left wing or in a free-roaming attacking role. His creativity and ability to unlock defenses with individual brilliance make him essential to England's attacking quality.",
+      "notableFact": "Pep Guardiola publicly described him as 'the most talented player I have ever seen,' having worked with Messi, Xavi, Iniesta, and Neymar among others."
+    },
+    "Aaron Ramsdale": {
+      "bio": "Ramsdale experienced relegation twice before joining Arsenal, where his shot-stopping and personality transformed the club's goalkeeping position. A move to Southampton followed as he sought regular first-team football, maintaining his quality and readiness for international duty.",
+      "playingStyle": "Energetic, charismatic goalkeeper who brings intensity and passion to every match. Outstanding at making reaction saves and excellent with his feet, fitting the modern ball-playing goalkeeper mold. His personality and vocal presence uplift the entire defense.",
+      "keyStrengths": ["Reaction saves and reflexes", "Ball-playing distribution", "Vocal leadership and personality"],
+      "worldCup2026Role": "Second-choice goalkeeper behind Pickford, providing capable backup and a positive presence in the squad. His ability with his feet makes him a viable option if England need a more possession-oriented approach.",
+      "notableFact": "Made a string of viral, highlight-reel saves during his time at Arsenal, including multiple save-of-the-season contenders that made him a fan favorite."
+    },
+    "Marc Gu\u00e9hi": {
+      "bio": "Guehi developed at Chelsea's academy before Crystal Palace gave him the platform to establish himself as one of the Premier League's best young defenders. His composed performances at Euro 2024, where he stepped in as a surprise starter, announced him as a genuine international-class center-back.",
+      "playingStyle": "Calm, elegant center-back who reads the game intelligently and rarely commits rash challenges. Comfortable on the ball, he distributes cleanly under pressure and positions himself to intercept passes before they reach their target. A quiet leader who organizes by example.",
+      "keyStrengths": ["Intelligent reading of the game", "Composure on the ball under pressure", "Interception ability and positioning"],
+      "worldCup2026Role": "First-choice center-back partner for John Stones. His composure and ball-playing ability complement Stones perfectly, and his tournament experience from Euro 2024 has fast-tracked his international development.",
+      "notableFact": "Was virtually unknown to casual fans before Euro 2024 but was named in the team of the tournament after a series of commanding defensive displays."
+    },
+    "Kalvin Phillips": {
+      "bio": "Phillips became a national hero at Euro 2020, forming a brilliant midfield partnership with Declan Rice that was dubbed the 'Rice and Phillips' axis. Injuries and limited game time since his move to Manchester City have hampered his progress, but his international track record keeps him in contention.",
+      "playingStyle": "Deep-lying midfielder who screens the defense, breaks up opposition attacks, and distributes the ball with accuracy. Covers the ground with long, loping strides and excels at reading passing lanes. At his best, he is a metronome who controls the tempo from deep.",
+      "keyStrengths": ["Defensive screening and interceptions", "Long-range passing accuracy", "Ground coverage and positional discipline"],
+      "worldCup2026Role": "Experienced midfield backup who provides a different option alongside or instead of Rice. His tournament pedigree from Euro 2020 means he can be trusted if called upon in high-stakes situations.",
+      "notableFact": "Was named in the Euro 2020 Team of the Tournament alongside partner Declan Rice, having transformed from a Championship player to one of Europe's best defensive midfielders in the space of a year."
+    },
+    "Kieran Trippier": {
+      "bio": "Trippier scored one of the most memorable goals in England's modern history, a free-kick in the 2018 World Cup semi-final against Croatia. After winning La Liga with Atletico Madrid, he returned to England with Newcastle and has been a model of consistency and professionalism across multiple tournaments.",
+      "playingStyle": "Technically gifted right-back known for his exceptional crossing and set-piece delivery. Can also play on the left due to his intelligence and positional awareness. A leader on the pitch who organizes those around him and rarely wastes possession.",
+      "keyStrengths": ["Crossing and set-piece delivery", "Tactical intelligence and versatility", "Leadership and experience"],
+      "worldCup2026Role": "Veteran squad member providing experience and versatility across the back line. His ability to deliver quality set pieces and his tournament experience make him a valuable option off the bench.",
+      "notableFact": "Scored a stunning free-kick in the 2018 World Cup semi-final against Croatia that sent England into dreamland, one of the most replayed goals in English football history."
+    },
+    "Conor Gallagher": {
+      "bio": "Gallagher embodies the high-energy, never-stop-running midfielder that English football has always valued. After impressive loan spells and a breakout season at Crystal Palace, he moved to Chelsea and then Atletico Madrid, where his tireless work ethic has endeared him to Diego Simeone.",
+      "playingStyle": "Tireless, high-energy midfielder who presses relentlessly and makes constant runs into the box. Covers every blade of grass, wins the ball with enthusiasm, and drives forward with purpose. His work rate and enthusiasm are infectious.",
+      "keyStrengths": ["Relentless energy and pressing", "Late runs into the penalty area", "Ball-winning determination"],
+      "worldCup2026Role": "Midfield rotation option bringing intensity and energy, particularly useful as a substitute when England need to increase their pressing or add dynamism in the middle of the park.",
+      "notableFact": "Was named Crystal Palace's Player of the Season during his loan spell, where he scored eight Premier League goals from central midfield with his characteristic box-to-box running."
+    },
+    "Ivan Toney": {
+      "bio": "Toney's journey to the England squad took him through the lower leagues before Brentford gave him the platform to shine in the Premier League. Despite serving an eight-month ban for betting violations, he returned to make England's Euro 2024 squad and then moved to Saudi Arabia's Al-Ahli.",
+      "playingStyle": "Powerful, intelligent striker who excels at hold-up play, winning aerial duels, and converting penalties with ice-cold composure. Uses his physicality to bring others into play and creates space for teammates with clever movement. A natural finisher from inside the box.",
+      "keyStrengths": ["Hold-up play and physical presence", "Penalty-taking composure", "Aerial ability and link-up play"],
+      "worldCup2026Role": "Alternative striking option offering a completely different profile to Harry Kane. His ability to lead the line physically and score from set pieces gives England a Plan B in attack.",
+      "notableFact": "Has a 100% penalty conversion rate in professional football, having never missed from the spot across his entire career in competitive matches."
+    },
+    "Anthony Gordon": {
+      "bio": "Gordon emerged from Everton's academy as a fearless, direct winger before Newcastle United invested heavily to bring him to St James' Park. Under Eddie Howe, his end product improved dramatically, transforming him from an exciting prospect into a genuine international-quality attacker.",
+      "playingStyle": "Direct, pacy left winger who runs at defenders with confidence and purpose. Beats opponents with quick feet and explosive acceleration, and has steadily improved his goal-scoring and creative output. Energetic, fearless, and always willing to take on his man.",
+      "keyStrengths": ["Direct dribbling and acceleration", "Willingness to take on defenders one-on-one", "Improving end product and goal output"],
+      "worldCup2026Role": "Squad depth on the left wing, providing a direct, pacy alternative to Phil Foden. His willingness to run at defenders makes him an effective impact substitute in the latter stages of matches.",
+      "notableFact": "Was clocked as one of the fastest players in the Premier League during the 2024-25 season, with his top speed rivaling that of the quickest attackers in Europe."
+    },
+    "Ollie Watkins": {
+      "bio": "Watkins climbed from the lower leagues to the Premier League with Aston Villa, where he developed into one of England's most effective strikers. His most iconic moment came at Euro 2024 when his last-minute winner against the Netherlands sent England to the final.",
+      "playingStyle": "Mobile, intelligent striker who is constantly on the move, stretching defenses with his runs and pressing high with relentless energy. Excellent at running in behind and finishing instinctively. His movement and work rate make him a nightmare for defenders to track.",
+      "keyStrengths": ["Intelligent off-the-ball movement", "Relentless pressing from the front", "Instinctive finishing and pace"],
+      "worldCup2026Role": "Super-sub and backup striker to Harry Kane with the ability to change games from the bench. His pace and movement make him devastating against tired defenders in the last 20 minutes.",
+      "notableFact": "Scored a 90th-minute winner against the Netherlands in the Euro 2024 semi-final, just minutes after coming on as a substitute, cementing his reputation as England's ultimate impact player."
+    },
+    "Jarrod Bowen": {
+      "bio": "Bowen's rise from Hull City to West Ham to the England squad is a testament to consistency and perseverance. His goal-scoring and chance creation from the right wing have made him one of the Premier League's most productive wide players, earning his place in the international setup.",
+      "playingStyle": "Hard-working right winger who combines direct running with intelligent positioning. Attacks the back post with well-timed runs, cuts inside onto his left foot to shoot, and presses high with genuine intensity. A reliable producer of goals and assists.",
+      "keyStrengths": ["Back-post runs and aerial ability for a winger", "Cutting inside onto the left foot", "Defensive work rate and pressing"],
+      "worldCup2026Role": "Attacking depth on the right wing, offering a different profile to Saka with his aerial presence and willingness to attack crosses. A useful option in matches where England need to be more direct.",
+      "notableFact": "Scored the winning goal in the 2023 Europa Conference League final for West Ham, their first European trophy in 58 years, becoming a club legend in the process."
+    },
+    "Eberechi Eze": {
+      "bio": "Eze rose through the lower leagues with QPR before Crystal Palace signed him, and his mesmerizing dribbling and creative genius quickly made him one of the Premier League's most entertaining players. His technical ability on the ball is among the best in English football.",
+      "playingStyle": "Graceful, creative attacker who glides past defenders with effortless dribbling and produces moments of individual brilliance. Can play as a number 10 or on either wing, finding pockets of space and creating chances with his vision and passing. A player who makes the difficult look simple.",
+      "keyStrengths": ["Elegant dribbling and close control", "Creative vision and through balls", "Versatility across attacking positions"],
+      "worldCup2026Role": "Creative wildcard from the bench or a starter in certain tactical setups. His ability to unlock stubborn defenses with individual skill makes him a valuable option in tight knockout matches.",
+      "notableFact": "Was playing in the Championship with QPR just two seasons before earning his first England call-up, one of the fastest rises from the second tier to international football in recent memory."
+    },
+    "Nick Pope": {
+      "bio": "Pope has quietly established himself as one of the Premier League's most reliable goalkeepers across spells at Burnley and Newcastle. His commanding presence, particularly in the air and on crosses, provides a different dimension compared to England's other goalkeeping options.",
+      "playingStyle": "Tall, commanding goalkeeper who dominates his penalty area and excels at dealing with crosses and set pieces. Outstanding shot-stopper with excellent positioning and a calm demeanor. Less reliant on distribution than modern trends demand, but makes up for it with traditional goalkeeping excellence.",
+      "keyStrengths": ["Commanding aerial presence", "Shot-stopping and positioning", "Cross-catching ability"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced depth. His size and aerial dominance could make him a specialist option in situations where England face a barrage of crosses or set pieces.",
+      "notableFact": "Led the Premier League in clean sheets during Burnley's survival campaign, performing at an elite level despite playing behind a defense that faced significantly more shots than any of the league's top sides."
+    },
+    "Ben Chilwell": {
+      "bio": "Chilwell emerged at Leicester City and won the FA Cup before Chelsea paid a premium for his services. Despite injury setbacks including a serious ACL tear, his quality going forward and defensive reliability when fit make him one of England's best left-back options.",
+      "playingStyle": "Attack-minded left-back who provides width with overlapping runs and delivers dangerous crosses into the box. Gets forward to support attacks while maintaining positional awareness to recover defensively. His understanding with left-sided attackers creates fluid combinations.",
+      "keyStrengths": ["Overlapping runs and crossing quality", "Attacking output from full-back", "Combination play with wide forwards"],
+      "worldCup2026Role": "Backup left-back to Luke Shaw, offering a similarly attack-minded option. His Chelsea experience in big European matches means he can be trusted in high-pressure situations if Shaw is unavailable.",
+      "notableFact": "Won the Champions League with Chelsea in 2021, providing an assist in the semi-final and starting the final against Manchester City."
+    },
+    "Cole Palmer": {
+      "bio": "Palmer left Manchester City's shadow for Chelsea and immediately became one of the Premier League's most electrifying players, winning the Young Player of the Year award. His ice-cold composure, dead-ball expertise, and ability to produce magic in the biggest moments have made him a sensation.",
+      "playingStyle": "Languid, technically gifted attacker who operates with an almost supernatural calmness in front of goal. Drifts into pockets of space, plays defense-splitting passes, and scores spectacular goals from distance. His penalty technique is virtually impossible to read, and his free-kicks are a constant threat.",
+      "keyStrengths": ["Ice-cold composure and finishing", "Set-piece expertise on penalties and free-kicks", "Creative passing and vision"],
+      "worldCup2026Role": "Key attacking weapon either as a starter on the right or as a game-changing substitute. His penalty-taking reliability and dead-ball expertise could prove decisive in knockout rounds.",
+      "notableFact": "Scored four goals in a single half against Everton, including a penalty, to become only the third player in Premier League history to achieve the feat."
+    },
+    "Ezri Konsa": {
+      "bio": "Konsa developed through Charlton Athletic's academy and established himself at Aston Villa, where his consistent performances helped the club qualify for European competition. His versatility to play at right-back as well as center-back has increased his international value.",
+      "playingStyle": "Steady, reliable center-back who defends with intelligence and rarely puts a foot wrong. Comfortable on the ball with clean distribution, and uses his pace to recover in transition. Can also operate at right-back, providing tactical flexibility.",
+      "keyStrengths": ["Defensive consistency and positioning", "Versatility between center-back and right-back", "Recovery pace and composure"],
+      "worldCup2026Role": "Versatile defensive depth option who can cover multiple positions across the back line. His reliability and ability to step in without the team's level dropping make him a smart squad inclusion.",
+      "notableFact": "Was an unused substitute for much of his early international career but earned his first start and kept a clean sheet, immediately proving he belonged at the highest level."
+    },
+    "Kobbie Mainoo": {
+      "bio": "Mainoo exploded onto the scene as a teenager at Manchester United, going from the academy to the first team and then the England starting lineup in the space of months. His maturity, technical ability, and composure in central midfield are extraordinary for his age, drawing comparisons to some of England's greatest ever midfielders.",
+      "playingStyle": "Elegant, composed central midfielder who plays with the poise of a seasoned veteran despite his youth. Glides past challenges with his dribbling, picks out passes under pressure, and is equally effective progressing the ball or recycling possession. Has an old soul in a young body.",
+      "keyStrengths": ["Composure and dribbling under pressure", "Progressive passing through the lines", "Maturity and poise beyond his years"],
+      "worldCup2026Role": "Starting central midfielder or high-impact rotation option alongside Declan Rice. At just 21, this World Cup could be the stage where he announces himself as one of the best young midfielders on the planet.",
+      "notableFact": "Became the youngest Manchester United player to score in an FA Cup final when he netted against Manchester City, then started for England at Euro 2024 just months after his senior club debut."
+    }
+  }
+}

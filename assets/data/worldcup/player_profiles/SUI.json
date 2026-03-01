@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Yann Sommer": {
+      "bio": "Legendary Swiss goalkeeper who had a storied career at Basel, Borussia Monchengladbach, and Inter Milan, winning the Serie A title and being named Serie A Goalkeeper of the Year. Retired from international football in August 2024 after representing Switzerland at three World Cups and three European Championships.",
+      "playingStyle": "Modern sweeper-keeper with exceptional reflexes, outstanding distribution, and the ability to play as an additional outfield player in possession phases",
+      "keyStrengths": ["Shot-stopping reflexes", "Distribution and passing range", "Sweeper-keeper positioning"],
+      "worldCup2026Role": "Veteran goalkeeper providing elite experience and mentorship, though his international retirement status may limit his availability unless recalled",
+      "notableFact": "Saved Kylian Mbappe's penalty in the Euro 2020 round of 16 shootout as Switzerland eliminated France in one of the tournament's greatest upsets"
+    },
+    "Leonidas Stergiou": {
+      "bio": "Young Greek-Swiss center-back who has established himself in the Bundesliga with VfB Stuttgart after progressing through the St. Gallen academy. A composed defender with a mature reading of the game beyond his years.",
+      "playingStyle": "Technically proficient young center-back who is comfortable on the ball and reads the game well, capable of playing in a high defensive line",
+      "keyStrengths": ["Reading of the game", "Comfort on the ball", "Pace for a center-back"],
+      "worldCup2026Role": "Young center-back option providing depth and future potential behind the established pairing of Akanji and Elvedi or Schar",
+      "notableFact": "Named after the ancient Spartan king Leonidas, he has lived up to his warrior namesake with his fearless defending in the Bundesliga"
+    },
+    "Silvan Widmer": {
+      "bio": "Experienced right-back who has been a consistent performer for Mainz in the Bundesliga and a regular in the Swiss national team setup for years. Known for his tireless running and reliability on the right flank.",
+      "playingStyle": "Industrious right-back with excellent stamina, strong crossing ability, and willingness to cover every blade of grass on the right side",
+      "keyStrengths": ["Stamina and work rate", "Crossing delivery", "Defensive discipline"],
+      "worldCup2026Role": "Experienced starting right-back or reliable backup who provides width, crossing ability, and defensive solidity on the right flank",
+      "notableFact": "Has represented Switzerland at multiple major tournaments including Euro 2020, the 2022 World Cup, and Euro 2024, accumulating over 45 caps"
+    },
+    "Nico Elvedi": {
+      "bio": "Long-serving center-back at Borussia Monchengladbach who has been a pillar of the Swiss defense for years. One of the most consistent Bundesliga defenders of the past decade with over 55 international caps.",
+      "playingStyle": "Intelligent reading center-back who excels in anticipation, positional play, and winning aerial duels without relying on rash challenges",
+      "keyStrengths": ["Anticipation and interceptions", "Aerial duels", "Calm decision-making"],
+      "worldCup2026Role": "Established starting center-back alongside Akanji, forming a proven Bundesliga-tested partnership at the heart of Switzerland's defense",
+      "notableFact": "Has spent his entire Bundesliga career at Borussia Monchengladbach since 2015, becoming one of the club's most loyal and dependable servants"
+    },
+    "Manuel Akanji": {
+      "bio": "Switzerland's most high-profile defender who has been a key starter at Manchester City, winning multiple Premier League titles under Pep Guardiola. A ball-playing center-back who embodies the modern defender role.",
+      "playingStyle": "Elite ball-playing center-back trained in Guardiola's system, combining exceptional passing range with strong defensive fundamentals and the ability to carry the ball into midfield",
+      "keyStrengths": ["Progressive passing from defense", "Composure under high press", "Reading of the game"],
+      "worldCup2026Role": "The defensive leader and most important defender in the squad, anchoring the backline and dictating build-up play from the center-back position",
+      "notableFact": "Has won multiple Premier League titles with Manchester City under Pep Guardiola, becoming one of the most decorated Swiss defenders in history"
+    },
+    "Remo Freuler": {
+      "bio": "Experienced box-to-box midfielder who has been a dependable presence in the Swiss national team for years. After a long career at Atalanta in Serie A, he moved to Bologna where he has continued to perform at a high level.",
+      "playingStyle": "Reliable box-to-box midfielder with excellent positional sense, tireless running, and the ability to contribute both defensively and offensively",
+      "keyStrengths": ["Box-to-box engine", "Positional discipline", "Passing accuracy"],
+      "worldCup2026Role": "Experienced midfield veteran providing depth and rotation alongside Xhaka, capable of controlling games with his intelligence and work rate",
+      "notableFact": "Has accumulated over 70 caps for Switzerland, making him one of the most experienced players in the current squad alongside Xhaka and Rodriguez"
+    },
+    "Breel Embolo": {
+      "bio": "Physical and explosive forward of Cameroonian-Swiss heritage who has played across Europe's top leagues. Scored the winner against his birth country Cameroon at the 2022 World Cup and has represented Switzerland at multiple major tournaments.",
+      "playingStyle": "Powerful and direct center-forward who uses his strength and pace to hold up play, run in behind defenses, and finish with conviction",
+      "keyStrengths": ["Physical power and pace", "Hold-up play", "Movement in behind defenses"],
+      "worldCup2026Role": "Starting striker or primary forward option leading the line with his combination of pace, power, and big-tournament experience",
+      "notableFact": "Scored the only goal against Cameroon, the country of his father's birth, at the 2022 World Cup in a moment laden with personal significance"
+    },
+    "Michel Aebischer": {
+      "bio": "Versatile Swiss midfielder who has flourished at Bologna in Serie A, playing a key role as the club qualified for the Champions League for the first time. A late bloomer who has established himself as a regular in the national team.",
+      "playingStyle": "Technically gifted midfielder who can play centrally or on the left, combining creative passing with disciplined defensive work",
+      "keyStrengths": ["Versatility in midfield positions", "Creative passing", "Tactical intelligence"],
+      "worldCup2026Role": "Versatile midfield option who can play as a creative central midfielder or on the left, providing tactical flexibility in midfield rotations",
+      "notableFact": "Was instrumental in Bologna's historic Champions League qualification in the 2023-24 season, their first ever appearance in the competition"
+    },
+    "Noah Okafor": {
+      "bio": "Swiss-Nigerian forward who moved to Leeds United from AC Milan in 2025 after loan spells at Napoli, where he won the Serie A title. A pacy and direct attacker who has represented Switzerland at the 2022 World Cup.",
+      "playingStyle": "Explosive and direct forward who uses his exceptional pace and dribbling to run at defenders, capable of playing across the front line",
+      "keyStrengths": ["Explosive pace", "Dribbling and ball-carrying", "Versatility across the front line"],
+      "worldCup2026Role": "Starting winger or rotational forward option providing pace and directness from the left flank or through the center",
+      "notableFact": "Won the Serie A title with Napoli on loan and then moved to Leeds United for 18 million pounds, establishing himself in the Premier League"
+    },
+    "Granit Xhaka": {
+      "bio": "Switzerland's captain and most capped outfield player with over 130 international appearances. Revitalized his career at Bayer Leverkusen after a decade at Arsenal, helping the club win their first-ever Bundesliga title with an unbeaten season in 2023-24.",
+      "playingStyle": "Commanding midfield general who dictates tempo with his passing range, leadership, and positional intelligence, excelling as a deep-lying playmaker or box-to-box midfielder",
+      "keyStrengths": ["Long-range passing", "Leadership and vocal presence", "Set-piece delivery"],
+      "worldCup2026Role": "Captain and midfield conductor who will set the tempo, organize the team, and provide experience across every match as Switzerland's most important player",
+      "notableFact": "Led Bayer Leverkusen to an historic unbeaten Bundesliga title in 2023-24, transforming his reputation from a divisive Arsenal figure to one of the Bundesliga's best midfielders"
+    },
+    "Renato Steffen": {
+      "bio": "Experienced Swiss winger who returned to the Swiss Super League with Lugano after spells in the Bundesliga with Wolfsburg and Basel. A versatile attacker who has been a reliable option for the national team across multiple years.",
+      "playingStyle": "Hardworking winger with good crossing ability, tactical discipline, and the experience to perform in different tactical systems",
+      "keyStrengths": ["Work rate and pressing", "Crossing ability", "Tactical versatility"],
+      "worldCup2026Role": "Experienced squad player providing depth on the wing and versatility across attacking positions from the bench",
+      "notableFact": "Won four consecutive Swiss Super League titles with Basel early in his career before earning a move to Wolfsburg in the Bundesliga"
+    },
+    "Gregor Kobel": {
+      "bio": "One of the most highly rated goalkeepers in the Bundesliga, starring for Borussia Dortmund with a market value reflecting his elite status. Despite limited international caps, he is widely regarded as Switzerland's future number one.",
+      "playingStyle": "Commanding modern goalkeeper with outstanding shot-stopping, excellent reflexes, and confident authority in the penalty area",
+      "keyStrengths": ["Shot-stopping ability", "Command of the penalty area", "Distribution under pressure"],
+      "worldCup2026Role": "Starting goalkeeper or primary competitor for the number one spot, bringing elite Bundesliga and Champions League experience between the posts",
+      "notableFact": "Was Borussia Dortmund's starting goalkeeper in the 2024 Champions League final against Real Madrid, showcasing his ability on the biggest stage"
+    },
+    "Ricardo Rodríguez": {
+      "bio": "Switzerland's most capped active player with over 110 international appearances spanning more than a decade. The veteran left-back has played at three World Cups and three European Championships across a career that included AC Milan, Wolfsburg, Torino, and now Real Betis.",
+      "playingStyle": "Technically excellent left-back renowned for his crossing accuracy, dead-ball delivery, and ability to contribute offensively while maintaining defensive discipline",
+      "keyStrengths": ["Crossing accuracy", "Set-piece delivery", "Experience in major tournaments"],
+      "worldCup2026Role": "Veteran starting left-back bringing unmatched tournament experience and reliable performances, or elder statesman providing guidance and depth if younger options are preferred",
+      "notableFact": "Has represented Switzerland at six major tournaments (three World Cups, three Euros), making him one of the most tournament-experienced players in world football"
+    },
+    "Steven Zuber": {
+      "bio": "Experienced attacking player who has operated across multiple positions throughout his career in Germany, the USA, and Greece. A versatile option who has contributed key moments in major tournaments for Switzerland.",
+      "playingStyle": "Versatile attacker who can play as a winger or wing-back, combining technical ability with intelligent positioning and an eye for assists",
+      "keyStrengths": ["Versatility across positions", "Assist-creating ability", "Experience in tournament football"],
+      "worldCup2026Role": "Experienced squad player providing tactical flexibility and the ability to play in multiple attacking positions when needed",
+      "notableFact": "Scored a crucial equalizer against Brazil at the 2018 World Cup and has provided key contributions across multiple major tournaments for Switzerland"
+    },
+    "Djibril Sow": {
+      "bio": "Athletic box-to-box midfielder who joined Sevilla in La Liga in 2023 after a successful spell at Eintracht Frankfurt where he won the Europa League. A powerful presence in midfield who combines physicality with technical quality.",
+      "playingStyle": "Athletic and powerful box-to-box midfielder who covers enormous ground, wins possession through physicality, and drives forward with the ball",
+      "keyStrengths": ["Physical power and athleticism", "Ground coverage", "Ball-carrying ability"],
+      "worldCup2026Role": "Starting midfielder or key rotation option alongside Xhaka, providing the energy, physicality, and ball-carrying ability to complement the captain's passing game",
+      "notableFact": "Won the Europa League with Eintracht Frankfurt in 2022, scoring in the semifinal against West Ham on the way to the title"
+    },
+    "Dan Ndoye": {
+      "bio": "Breakout star of Euro 2024 who electrified the tournament with his blistering pace and dribbling for Switzerland. The Swiss-Senegalese winger recorded a top speed of 35.6 km/h at the Euros, faster than Kylian Mbappe.",
+      "playingStyle": "Explosive pace merchant who terrorizes defenses with his speed and dribbling, capable of playing as a winger or wing-back with devastating effect",
+      "keyStrengths": ["Blistering pace", "Dribbling at speed", "Defensive versatility as wing-back"],
+      "worldCup2026Role": "Starting winger or wing-back whose raw pace and direct running will be Switzerland's primary weapon in transition and counter-attacks",
+      "notableFact": "Recorded a top speed of 35.6 km/h at Euro 2024, making him the third-fastest player at the tournament, quicker than Kylian Mbappe"
+    },
+    "Ruben Vargas": {
+      "bio": "Swiss winger of Dominican heritage who became the first Bundesliga player of Dominican descent when he joined Augsburg in 2019. After 161 games for Augsburg, he moved to Sevilla in La Liga, continuing to develop his game in a top European league.",
+      "playingStyle": "Diminutive and tricky winger with a low center of gravity, quick feet, and the ability to beat defenders in tight spaces reminiscent of Xherdan Shaqiri",
+      "keyStrengths": ["Quick feet and agility", "Dribbling in tight spaces", "Cutting inside onto stronger foot"],
+      "worldCup2026Role": "Rotational winger option providing creativity and unpredictability from the flanks, capable of unlocking defenses with individual skill",
+      "notableFact": "Became the first player of Dominican descent to play in the Bundesliga when he joined Augsburg, breaking new ground for Caribbean representation in German football"
+    },
+    "Vincent Sierro": {
+      "bio": "Central midfielder playing for Toulouse in Ligue 1, providing a steady and reliable midfield presence. A product of the Sion academy who has developed into a dependable option at both club and international level.",
+      "playingStyle": "Steady and composed central midfielder who keeps possession ticking over, provides simple but effective distribution, and maintains the team's shape",
+      "keyStrengths": ["Passing accuracy", "Positional discipline", "Composure in possession"],
+      "worldCup2026Role": "Midfield depth option capable of coming off the bench to maintain possession and control in the center of the park",
+      "notableFact": "A product of FC Sion's academy in the Swiss Super League before earning a move to Ligue 1 football with Toulouse"
+    },
+    "Cedric Itten": {
+      "bio": "Target-man striker who has played for Young Boys in the Swiss Super League after spells at Rangers, Greuther Furth, and Stuttgart. A tall and physical forward offering a different dimension to Switzerland's attacking options.",
+      "playingStyle": "Traditional target forward who uses his height and strength to win aerial duels, hold up play, and bring others into the game",
+      "keyStrengths": ["Aerial ability", "Hold-up play", "Physical presence"],
+      "worldCup2026Role": "Alternative striking option from the bench when Switzerland needs to change their approach to a more direct, physical style of attack",
+      "notableFact": "Had a spell at Rangers in Scottish football where he experienced European competition before returning to develop in the Bundesliga and Swiss leagues"
+    },
+    "Zeki Amdouni": {
+      "bio": "Exciting young Swiss-Tunisian striker who has risen rapidly through the ranks, signing for Burnley before a productive loan at Benfica in Portugal. Scored six goals in Euro 2024 qualifying to announce himself on the international stage.",
+      "playingStyle": "Mobile and clinical striker who combines intelligent movement with sharp finishing, capable of dropping deep to link play or making runs in behind",
+      "keyStrengths": ["Clinical finishing", "Intelligent movement", "Ability to drop deep and link play"],
+      "worldCup2026Role": "Starting striker or impactful substitute providing goalscoring threat and intelligent movement in the final third alongside or instead of Embolo",
+      "notableFact": "Scored six goals during Euro 2024 qualifying, the most of any Swiss player, announcing himself as a key figure for the national team's future"
+    },
+    "Philipp Köhn": {
+      "bio": "Young goalkeeper who has developed at Monaco in Ligue 1, competing for playing time at one of France's top clubs. A German-born keeper who represents Switzerland at international level.",
+      "playingStyle": "Agile and technically sound goalkeeper with good reflexes and developing command of his penalty area",
+      "keyStrengths": ["Agility and reflexes", "Shot-stopping", "Composure in one-on-one situations"],
+      "worldCup2026Role": "Third-choice goalkeeper providing squad depth and gaining valuable tournament experience alongside Kobel and Sommer",
+      "notableFact": "Has been competing for the starting goalkeeper position at Monaco in Ligue 1, gaining exposure in European competition alongside teammate Denis Zakaria"
+    },
+    "Fabian Schär": {
+      "bio": "Veteran center-back who has been a stalwart at Newcastle United since 2018, known for his powerful free kicks and long-range shooting. Played at three World Cups and three European Championships before retiring from international football in 2024.",
+      "playingStyle": "Ball-striking center-back with a powerful right foot capable of scoring spectacular goals from distance, combining traditional defensive strength with offensive threat from set pieces",
+      "keyStrengths": ["Long-range shooting and free kicks", "Aerial dominance", "Experience at the highest level"],
+      "worldCup2026Role": "If recalled from international retirement, a veteran defensive leader and goal-threat from set pieces providing invaluable experience at the back",
+      "notableFact": "Won the 2025 EFL Cup with Newcastle United, the club's first domestic trophy in 70 years, and has scored 8 international goals as a center-back"
+    },
+    "Fabian Rieder": {
+      "bio": "Young creative midfielder who moved to Rennes in Ligue 1 after developing at Young Boys in the Swiss Super League. A technically gifted playmaker who has quickly established himself in the Swiss national team setup.",
+      "playingStyle": "Creative and technically gifted attacking midfielder with excellent vision, precise passing, and the ability to unlock defenses with through balls",
+      "keyStrengths": ["Creative passing and vision", "Technical ability", "Set-piece delivery"],
+      "worldCup2026Role": "Creative attacking option who can play as a right winger or attacking midfielder, providing the flair and invention to break down organized defenses",
+      "notableFact": "Made his breakthrough at Young Boys before earning a move to Ligue 1, rapidly becoming one of Switzerland's most exciting young attacking talents"
+    },
+    "Denis Zakaria": {
+      "bio": "Powerful defensive midfielder and Monaco captain who has played at the highest level including spells at Juventus, Chelsea, and Borussia Monchengladbach. A physically imposing midfielder who combines athleticism with technical quality.",
+      "playingStyle": "Physically dominant defensive midfielder who wins possession through strength and timing, capable of driving forward with the ball and scoring spectacular goals",
+      "keyStrengths": ["Physical dominance in midfield", "Ball-winning ability", "Driving runs from deep"],
+      "worldCup2026Role": "Key midfield enforcer providing defensive solidity and physical presence alongside Xhaka, breaking up opposition attacks and launching transitions",
+      "notableFact": "Was named Monaco captain by manager Adi Hutter and has played for some of Europe's biggest clubs including Juventus and Chelsea before finding his best form at Monaco"
+    },
+    "Ardon Jashari": {
+      "bio": "Emerging Swiss-Kosovar midfielder who became AC Milan's latest signing in August 2025 after an outstanding season at Club Brugge where he won Player of the Year and Young Player of the Year in the Belgian Pro League.",
+      "playingStyle": "Versatile and combative midfielder who excels as both a defensive midfielder and box-to-box player, reading the game excellently and winning possession cleanly",
+      "keyStrengths": ["Ball-winning ability", "Versatility in midfield roles", "Game reading and anticipation"],
+      "worldCup2026Role": "Rising midfield talent providing dynamic depth and the ability to play both defensive and box-to-box roles, representing Switzerland's next generation of midfielders",
+      "notableFact": "Won the 2025 Belgian Golden Boot award and was voted both Player of the Year and Young Player of the Year in the Belgian Pro League at Club Brugge before joining AC Milan"
+    },
+    "Eray Cömert": {
+      "bio": "Swiss-Turkish center-back who plays for Valencia in La Liga after coming through the Basel academy. A composed defender who has gained experience across multiple European leagues including spells in Germany and Spain.",
+      "playingStyle": "Technically secure center-back who is comfortable playing out from the back and maintaining a high defensive line, with good one-on-one defending ability",
+      "keyStrengths": ["Composure on the ball", "One-on-one defending", "Adaptability across leagues"],
+      "worldCup2026Role": "Defensive depth option at center-back who can step in when needed, bringing La Liga experience and tactical awareness to the squad",
+      "notableFact": "Came through the highly regarded FC Basel academy, the same institution that developed other Swiss internationals including Fabian Schar and Granit Xhaka"
+    }
+  }
+}

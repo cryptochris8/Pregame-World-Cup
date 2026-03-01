@@ -90,11 +90,32 @@ void main() {
   });
 
   group('End-to-end: player', () {
-    test('"Messi stats" returns player data', () async {
+    test('"Messi stats" returns featured player data', () async {
       final response = await service.getResponse('Messi stats');
       expect(response.text, contains('Lionel Messi'));
       expect(response.text, contains('13 goals'));
       expect(response.resolvedIntent.type, ChatIntentType.player);
+    });
+
+    test('"tell me about McKennie" returns enriched profile', () async {
+      final response = await service.getResponse('tell me about McKennie');
+      expect(response.text, contains('McKennie'));
+      expect(response.resolvedIntent.type, ChatIntentType.player);
+      // Should have enriched content from profile (not just bare squad)
+      expect(response.text, contains('box-to-box'));
+    });
+
+    test('"Pulisic" returns enriched profile with bio', () async {
+      final response = await service.getResponse('who is Pulisic');
+      expect(response.text, contains('Pulisic'));
+      expect(response.text, contains('Hershey'));
+      expect(response.text, contains('Captain America'));
+    });
+
+    test('"Julian Alvarez" returns enriched profile from ARG', () async {
+      final response = await service.getResponse('Julian Alvarez stats');
+      expect(response.text, contains('Alvarez'));
+      expect(response.text, contains('Calchin'));
     });
   });
 

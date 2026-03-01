@@ -182,6 +182,83 @@ void main() {
     });
   });
 
+  group('Player name index', () {
+    test('knownPlayerNames includes name index entries', () {
+      final names = kb.knownPlayerNames;
+      expect(names, contains('christian pulisic'));
+      expect(names, contains('lionel messi'));
+      expect(names, contains('weston mckennie'));
+    });
+
+    test('getTeamCodeForPlayer resolves exact name', () {
+      expect(kb.getTeamCodeForPlayer('Christian Pulisic'), 'USA');
+      expect(kb.getTeamCodeForPlayer('Lionel Messi'), 'ARG');
+    });
+
+    test('getTeamCodeForPlayer resolves case-insensitive', () {
+      expect(kb.getTeamCodeForPlayer('christian pulisic'), 'USA');
+      expect(kb.getTeamCodeForPlayer('LIONEL MESSI'), 'ARG');
+    });
+
+    test('getTeamCodeForPlayer resolves partial/nickname', () {
+      expect(kb.getTeamCodeForPlayer('Pulisic'), 'USA');
+      expect(kb.getTeamCodeForPlayer('Messi'), 'ARG');
+      expect(kb.getTeamCodeForPlayer('Mbappe'), 'FRA');
+    });
+
+    test('getTeamCodeForPlayer returns null for unknown', () {
+      expect(kb.getTeamCodeForPlayer('Unknown Player'), isNull);
+    });
+  });
+
+  group('Player profiles', () {
+    test('getPlayerProfile returns enriched profile for known player', () async {
+      final profile = await kb.getPlayerProfile('Christian Pulisic');
+      expect(profile, isNotNull);
+      expect(profile!['playerName'], 'Christian Pulisic');
+      expect(profile['teamCode'], 'USA');
+      expect(profile['bio'], contains('Hershey'));
+      expect(profile['playingStyle'], isNotEmpty);
+      expect(profile['keyStrengths'], isA<List>());
+      expect((profile['keyStrengths'] as List).length, 3);
+      expect(profile['worldCup2026Role'], isNotEmpty);
+      expect(profile['notableFact'], contains('Captain America'));
+    });
+
+    test('getPlayerProfile resolves case-insensitive', () async {
+      final profile = await kb.getPlayerProfile('christian pulisic');
+      expect(profile, isNotNull);
+      expect(profile!['playerName'], 'Christian Pulisic');
+    });
+
+    test('getPlayerProfile loads ARG profiles', () async {
+      final profile = await kb.getPlayerProfile('Julian Alvarez');
+      expect(profile, isNotNull);
+      expect(profile!['teamCode'], 'ARG');
+      expect(profile['bio'], contains('Calchin'));
+    });
+
+    test('getPlayerProfile caches team file', () async {
+      // Load first player from USA
+      await kb.getPlayerProfile('Christian Pulisic');
+      // Second player from same team should use cache
+      final profile = await kb.getPlayerProfile('Weston McKennie');
+      expect(profile, isNotNull);
+      expect(profile!['teamCode'], 'USA');
+    });
+
+    test('getPlayerProfile returns null for team without profile file', () async {
+      // FRA has no mock profile file
+      final profile = await kb.getPlayerProfile('Kylian Mbappe');
+      expect(profile, isNull);
+    });
+
+    test('getPlayerProfile returns null for unknown player', () async {
+      final profile = await kb.getPlayerProfile('Completely Unknown');
+      expect(profile, isNull);
+    });
+  });
+
   group('History data', () {
     test('getRecords returns records list', () {
       final records = kb.getRecords();
