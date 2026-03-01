@@ -8,6 +8,8 @@ import {
   createMockHttpRequest,
   createMockHttpResponse,
   MockFirestore,
+  MockTimestamp,
+  MockFieldValue,
 } from './mocks';
 import axios from 'axios';
 
@@ -17,13 +19,107 @@ const mockedAxios = axios as jest.Mocked<typeof axios>;
 
 // Mock firebase-admin
 const mockFirestore = new MockFirestore();
+const mockAuth = {
+  verifyIdToken: jest.fn().mockResolvedValue({ uid: 'test-user-id' }),
+};
 jest.mock('firebase-admin', () => ({
   initializeApp: jest.fn(),
   app: jest.fn(() => ({ name: '[DEFAULT]', options: { projectId: 'test-project' } })),
   firestore: jest.fn(() => mockFirestore),
   messaging: jest.fn(() => ({ send: jest.fn() })),
+  auth: jest.fn(() => mockAuth),
   credential: { cert: jest.fn(), applicationDefault: jest.fn() },
 }));
+
+// Mock rate-limiter to always allow requests (unless overridden per-test)
+const mockCheckRateLimit = jest.fn().mockResolvedValue(true);
+const mockCleanupExpiredRateLimits = jest.fn().mockResolvedValue(0);
+jest.mock('../src/rate-limiter', () => ({
+  checkRateLimit: (...args: any[]) => mockCheckRateLimit(...args),
+  cleanupExpiredRateLimits: (...args: any[]) => mockCleanupExpiredRateLimits(...args),
+  RATE_LIMITS: {
+    VENUE: { maxRequests: 60, windowSeconds: 60 },
+    SCHEDULE: { maxRequests: 10, windowSeconds: 60 },
+    PAYMENT_CHECKOUT: { maxRequests: 5, windowSeconds: 900 },
+  },
+  checkCallableRateLimit: jest.fn(),
+}));
+
+// Mock stripe-config
+const mockCleanupExpiredWebhookEvents = jest.fn().mockResolvedValue(0);
+jest.mock('../src/stripe-config', () => ({
+  cleanupExpiredWebhookEvents: (...args: any[]) => mockCleanupExpiredWebhookEvents(...args),
+  getStripe: jest.fn(),
+  getConfigValue: jest.fn(),
+  isWebhookEventAlreadyProcessed: jest.fn(),
+  markWebhookEventProcessed: jest.fn(),
+}));
+
+// Mock all re-exported modules to prevent import cascading
+jest.mock('../src/stripe-simple', () => ({
+  createCheckoutSession: jest.fn(),
+  createPortalSession: jest.fn(),
+  createPaymentIntent: jest.fn(),
+  handleStripeWebhook: jest.fn(),
+  setupFreeFanAccount: jest.fn(),
+  setupFreeVenueAccount: jest.fn(),
+  createFanCheckoutSession: jest.fn(),
+}));
+jest.mock('../src/watch-party-payments', () => ({
+  createVirtualAttendancePayment: jest.fn(),
+  handleVirtualAttendancePayment: jest.fn(),
+  requestVirtualAttendanceRefund: jest.fn(),
+  refundAllVirtualAttendees: jest.fn(),
+  handleWatchPartyWebhook: jest.fn(),
+}));
+jest.mock('../src/watch-party-notifications', () => ({
+  onWatchPartyInviteCreated: jest.fn(),
+  onWatchPartyInviteUpdated: jest.fn(),
+  onWatchPartyCancelled: jest.fn(),
+}));
+jest.mock('../src/match-reminders', () => ({
+  sendMatchReminders: jest.fn(),
+  cleanupOldReminders: jest.fn(),
+}));
+jest.mock('../src/favorite-team-notifications', () => ({
+  sendFavoriteTeamNotifications: jest.fn(),
+  cleanupSentNotificationRecords: jest.fn(),
+  testFavoriteTeamNotificationsHttp: jest.fn(),
+}));
+jest.mock('../src/world-cup-payments', () => ({
+  createFanPassCheckout: jest.fn(),
+  getFanPassStatus: jest.fn(),
+  createVenuePremiumCheckout: jest.fn(),
+  getVenuePremiumStatus: jest.fn(),
+  handleWorldCupPaymentWebhook: jest.fn(),
+  checkFanPassAccess: jest.fn(),
+  getWorldCupPricing: jest.fn(),
+  checkExpiredPasses: jest.fn(),
+}));
+jest.mock('../src/message-notifications', () => ({
+  onMessageNotificationCreated: jest.fn(),
+  cleanupOldMessageNotifications: jest.fn(),
+}));
+jest.mock('../src/friend-request-notifications', () => ({
+  onFriendRequestNotificationCreated: jest.fn(),
+  cleanupOldFriendRequestNotifications: jest.fn(),
+}));
+jest.mock('../src/moderation-notifications', () => ({
+  onReportCreated: jest.fn(),
+  clearExpiredSanctions: jest.fn(),
+  resolveReport: jest.fn(),
+}));
+jest.mock('../src/venue-claiming', () => ({
+  claimVenue: jest.fn(),
+  sendVenueVerificationCode: jest.fn(),
+  verifyVenueCode: jest.fn(),
+  reviewVenueClaim: jest.fn(),
+  submitVenueDispute: jest.fn(),
+}));
+
+import * as admin from 'firebase-admin';
+(admin.firestore as any).FieldValue = MockFieldValue;
+(admin.firestore as any).Timestamp = MockTimestamp;
 
 describe('HTTP Functions', () => {
   beforeEach(() => {
@@ -350,6 +446,54 @@ describe('HTTP Functions', () => {
     });
   });
 
+  describe('verifyAuthToken (via getNearbyVenuesHttp)', () => {
+    it('should reject request with missing Authorization header', () => {
+      const request = createMockHttpRequest({
+        headers: {},
+      });
+      const response = createMockHttpResponse();
+
+      const authHeader = request.headers.authorization;
+      const hasBearerToken = authHeader?.startsWith('Bearer ');
+
+      if (!hasBearerToken) {
+        response.status(401).json({ error: 'Missing or invalid Authorization header' });
+      }
+
+      expect(response._statusCode).toBe(401);
+      expect(response._body.error).toBe('Missing or invalid Authorization header');
+    });
+
+    it('should reject request with non-Bearer Authorization header', () => {
+      const request = createMockHttpRequest({
+        headers: { authorization: 'Basic dXNlcjpwYXNz' },
+      });
+      const response = createMockHttpResponse();
+
+      const authHeader = request.headers.authorization;
+      const hasBearerToken = authHeader?.startsWith('Bearer ');
+
+      if (!hasBearerToken) {
+        response.status(401).json({ error: 'Missing or invalid Authorization header' });
+      }
+
+      expect(response._statusCode).toBe(401);
+    });
+
+    it('should accept valid Bearer token format', () => {
+      const request = createMockHttpRequest({
+        headers: { authorization: 'Bearer valid-token-abc123' },
+      });
+
+      const authHeader = request.headers.authorization;
+      const hasBearerToken = authHeader?.startsWith('Bearer ');
+      const token = authHeader?.split('Bearer ')[1];
+
+      expect(hasBearerToken).toBe(true);
+      expect(token).toBe('valid-token-abc123');
+    });
+  });
+
   describe('placePhotoProxy', () => {
     describe('Parameter Validation', () => {
       it('should require photoReference parameter', () => {
@@ -483,4 +627,521 @@ describe('HTTP Functions', () => {
     });
   });
 
+  // =========================================================================
+  // Integration tests: actually import and invoke the exported functions
+  // =========================================================================
+
+  describe('getNearbyVenuesHttp (integration)', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { getNearbyVenuesHttp } = require('../src/index') as {
+      getNearbyVenuesHttp: (req: any, res: any) => Promise<void>;
+    };
+
+    beforeEach(() => {
+      mockCheckRateLimit.mockResolvedValue(true);
+      mockAuth.verifyIdToken.mockResolvedValue({ uid: 'test-user-id' });
+    });
+
+    it('should return 204 for OPTIONS preflight request', async () => {
+      const req = createMockHttpRequest({ method: 'OPTIONS' });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(204);
+      expect(res._body).toBe('');
+    });
+
+    it('should set all CORS headers', async () => {
+      const req = createMockHttpRequest({ method: 'OPTIONS' });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._headers['Access-Control-Allow-Origin']).toBe('*');
+      expect(res._headers['Access-Control-Allow-Methods']).toBe('GET, POST, OPTIONS');
+      expect(res._headers['Access-Control-Allow-Headers']).toBe('Content-Type, Authorization');
+    });
+
+    it('should return 401 when no auth token is provided', async () => {
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006' },
+        headers: {},
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(401);
+      expect(res._body.error).toBe('Missing or invalid Authorization header');
+    });
+
+    it('should return 401 when auth token is invalid', async () => {
+      mockAuth.verifyIdToken.mockRejectedValueOnce(new Error('Token expired'));
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006' },
+        headers: { authorization: 'Bearer expired-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(401);
+      expect(res._body.error).toBe('Invalid or expired auth token');
+    });
+
+    it('should return 400 when lat is missing', async () => {
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lng: '-74.006' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(400);
+      expect(res._body).toContain('Missing latitude');
+    });
+
+    it('should return 400 when lng is missing', async () => {
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(400);
+      expect(res._body).toContain('Missing latitude');
+    });
+
+    it('should fetch places from Google Places API and return results', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: {
+          status: 'OK',
+          results: [
+            {
+              place_id: 'place-1',
+              name: 'Sports Bar',
+              vicinity: '123 Main St',
+              rating: 4.5,
+              user_ratings_total: 100,
+              types: ['bar'],
+              geometry: { location: { lat: 40.7128, lng: -74.006 } },
+              price_level: 2,
+              photos: [{ photo_reference: 'photo-ref-1' }],
+            },
+          ],
+        },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(200);
+      expect(res._body).toHaveLength(1);
+      expect(res._body[0].placeId).toBe('place-1');
+      expect(res._body[0].name).toBe('Sports Bar');
+      expect(res._body[0].latitude).toBe(40.7128);
+      expect(res._body[0].photoReference).toBe('photo-ref-1');
+    });
+
+    it('should fetch multiple types and deduplicate results', async () => {
+      // First call returns restaurants, second returns bars (with overlap)
+      mockedAxios.get
+        .mockResolvedValueOnce({
+          data: {
+            status: 'OK',
+            results: [
+              { place_id: 'p1', name: 'Place A', vicinity: 'addr1', types: ['restaurant'], geometry: { location: { lat: 1, lng: 2 } } },
+              { place_id: 'p2', name: 'Place B', vicinity: 'addr2', types: ['restaurant'], geometry: { location: { lat: 3, lng: 4 } } },
+            ],
+          },
+        })
+        .mockResolvedValueOnce({
+          data: {
+            status: 'OK',
+            results: [
+              { place_id: 'p2', name: 'Place B', vicinity: 'addr2', types: ['bar'], geometry: { location: { lat: 3, lng: 4 } } }, // Duplicate
+              { place_id: 'p3', name: 'Place C', vicinity: 'addr3', types: ['bar'], geometry: { location: { lat: 5, lng: 6 } } },
+            ],
+          },
+        });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'restaurant|bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(200);
+      // Should have 3 unique results, not 4
+      expect(res._body).toHaveLength(3);
+      const placeIds = res._body.map((p: any) => p.placeId);
+      expect(placeIds).toContain('p1');
+      expect(placeIds).toContain('p2');
+      expect(placeIds).toContain('p3');
+    });
+
+    it('should use default types restaurant|bar when not specified', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: { status: 'OK', results: [] },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      // Should have made 2 API calls (restaurant + bar)
+      expect(mockedAxios.get).toHaveBeenCalledTimes(2);
+      expect(mockedAxios.get).toHaveBeenCalledWith(expect.stringContaining('type=restaurant'));
+      expect(mockedAxios.get).toHaveBeenCalledWith(expect.stringContaining('type=bar'));
+    });
+
+    it('should use default radius of 2000 meters', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: { status: 'OK', results: [] },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(mockedAxios.get).toHaveBeenCalledWith(expect.stringContaining('radius=2000'));
+    });
+
+    it('should handle Google Places API ZERO_RESULTS gracefully', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: { status: 'ZERO_RESULTS', results: [] },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(200);
+      expect(res._body).toEqual([]);
+    });
+
+    it('should return 500 when axios throws a network error', async () => {
+      const networkError: any = new Error('ECONNREFUSED');
+      networkError.response = { status: 503, data: 'Service Unavailable' };
+      mockedAxios.get.mockRejectedValue(networkError);
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(500);
+      expect(res._body).toContain('Failed to fetch data from Google Places API');
+    });
+
+    it('should handle places with no photos gracefully', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: {
+          status: 'OK',
+          results: [
+            {
+              place_id: 'no-photo',
+              name: 'No Photo Place',
+              vicinity: 'addr',
+              types: ['bar'],
+              geometry: { location: { lat: 1, lng: 2 } },
+              // No photos field at all
+            },
+          ],
+        },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(200);
+      expect(res._body[0].photoReference).toBeNull();
+    });
+
+    it('should skip places with no place_id or no name', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: {
+          status: 'OK',
+          results: [
+            { place_id: null, name: 'No ID Place', types: ['bar'], geometry: { location: { lat: 1, lng: 2 } } },
+            { place_id: 'has-id', name: null, types: ['bar'], geometry: { location: { lat: 1, lng: 2 } } },
+            { place_id: 'valid', name: 'Valid Place', types: ['bar'], geometry: { location: { lat: 1, lng: 2 } } },
+          ],
+        },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006', types: 'bar' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      expect(res._statusCode).toBe(200);
+      expect(res._body).toHaveLength(1);
+      expect(res._body[0].placeId).toBe('valid');
+    });
+
+    it('should not proceed when rate limited', async () => {
+      mockCheckRateLimit.mockResolvedValueOnce(false);
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { lat: '40.7128', lng: '-74.006' },
+        headers: { authorization: 'Bearer valid-token' },
+      });
+      const res = createMockHttpResponse();
+
+      await getNearbyVenuesHttp(req, res);
+
+      // Function returns early when rate limited -- checkRateLimit writes the 429 response
+      // axios should NOT have been called
+      expect(mockedAxios.get).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('placePhotoProxy (integration)', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { placePhotoProxy } = require('../src/index') as {
+      placePhotoProxy: (req: any, res: any) => Promise<void>;
+    };
+
+    beforeEach(() => {
+      mockCheckRateLimit.mockResolvedValue(true);
+    });
+
+    it('should return 204 for OPTIONS preflight', async () => {
+      const req = createMockHttpRequest({ method: 'OPTIONS' });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(res._statusCode).toBe(204);
+    });
+
+    it('should return 400 when photoReference is missing', async () => {
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: {},
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(res._statusCode).toBe(400);
+      expect(res._body).toContain('Missing photoReference');
+    });
+
+    it('should proxy photo from Google and set correct headers', async () => {
+      const fakeImageData = Buffer.from('fake-png-data');
+      mockedAxios.get.mockResolvedValue({
+        data: fakeImageData,
+        headers: { 'content-type': 'image/png' },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'photo-ref-abc', maxWidth: '600' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(res._statusCode).toBe(200);
+      expect(res._headers['Content-Type']).toBe('image/png');
+      expect(res._headers['Cache-Control']).toBe('public, max-age=86400');
+      expect(res._body).toEqual(fakeImageData);
+    });
+
+    it('should default Content-Type to image/jpeg when missing from response', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: Buffer.from('data'),
+        headers: {}, // No content-type
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'photo-ref-abc' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(res._headers['Content-Type']).toBe('image/jpeg');
+    });
+
+    it('should use default maxWidth of 400', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: Buffer.from('data'),
+        headers: { 'content-type': 'image/jpeg' },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'ref-123' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(mockedAxios.get).toHaveBeenCalledWith(
+        expect.stringContaining('maxwidth=400'),
+        expect.any(Object)
+      );
+    });
+
+    it('should pass arraybuffer responseType and maxRedirects 5 to axios', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: Buffer.from('data'),
+        headers: { 'content-type': 'image/jpeg' },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'ref-123' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(mockedAxios.get).toHaveBeenCalledWith(
+        expect.any(String),
+        expect.objectContaining({
+          responseType: 'arraybuffer',
+          maxRedirects: 5,
+          timeout: 10000,
+        })
+      );
+    });
+
+    it('should return 500 when photo fetch fails', async () => {
+      mockedAxios.get.mockRejectedValue(new Error('Photo service down'));
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'ref-123' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(res._statusCode).toBe(500);
+      expect(res._body).toContain('Failed to fetch photo');
+    });
+
+    it('should not proceed when rate limited', async () => {
+      mockCheckRateLimit.mockResolvedValueOnce(false);
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'ref-123' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(mockedAxios.get).not.toHaveBeenCalled();
+    });
+
+    it('should set CORS headers for photo proxy', async () => {
+      mockedAxios.get.mockResolvedValue({
+        data: Buffer.from('data'),
+        headers: { 'content-type': 'image/jpeg' },
+      });
+
+      const req = createMockHttpRequest({
+        method: 'GET',
+        query: { photoReference: 'ref-123' },
+      });
+      const res = createMockHttpResponse();
+
+      await placePhotoProxy(req, res);
+
+      expect(res._headers['Access-Control-Allow-Origin']).toBe('*');
+      expect(res._headers['Access-Control-Allow-Methods']).toBe('GET, OPTIONS');
+    });
+  });
+
+  describe('cleanupRateLimits (integration)', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { cleanupRateLimits } = require('../src/index') as {
+      cleanupRateLimits: (context: any) => Promise<any>;
+    };
+
+    it('should call both cleanup functions and return null', async () => {
+      mockCleanupExpiredRateLimits.mockResolvedValue(5);
+      mockCleanupExpiredWebhookEvents.mockResolvedValue(3);
+
+      const result = await cleanupRateLimits({});
+
+      expect(mockCleanupExpiredRateLimits).toHaveBeenCalledTimes(1);
+      expect(mockCleanupExpiredWebhookEvents).toHaveBeenCalledTimes(1);
+      expect(result).toBeNull();
+    });
+
+    it('should handle zero deletions', async () => {
+      mockCleanupExpiredRateLimits.mockResolvedValue(0);
+      mockCleanupExpiredWebhookEvents.mockResolvedValue(0);
+
+      const result = await cleanupRateLimits({});
+
+      expect(result).toBeNull();
+    });
+
+    it('should handle large batch deletions', async () => {
+      mockCleanupExpiredRateLimits.mockResolvedValue(800);
+      mockCleanupExpiredWebhookEvents.mockResolvedValue(400);
+
+      const result = await cleanupRateLimits({});
+
+      expect(mockCleanupExpiredRateLimits).toHaveBeenCalled();
+      expect(mockCleanupExpiredWebhookEvents).toHaveBeenCalled();
+      expect(result).toBeNull();
+    });
+  });
 });

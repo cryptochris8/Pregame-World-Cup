@@ -81,6 +81,14 @@ export class MockCollectionReference {
     return new MockQuery(this._data, field, operator, value);
   }
 
+  orderBy(field: string, direction?: string): MockQuery {
+    return new MockQuery(this._data).orderBy(field, direction);
+  }
+
+  limit(count: number): MockQuery {
+    return new MockQuery(this._data).limit(count);
+  }
+
   add(data: any): Promise<MockDocumentReference> {
     const id = `mock_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     this._data.set(id, data);
