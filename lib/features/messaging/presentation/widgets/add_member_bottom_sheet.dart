@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 
 /// Bottom sheet for adding members to a group chat.
 /// Shows a list of friends who are not already in the chat.
@@ -21,7 +22,7 @@ class AddMemberBottomSheet extends StatefulWidget {
 }
 
 class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
-  final SocialService _socialService = SocialService();
+  final SocialService _socialService = sl<SocialService>();
   List<dynamic> _friends = [];
   bool _isLoading = true;
   bool _isAdding = false;

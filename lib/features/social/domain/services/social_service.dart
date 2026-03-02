@@ -16,9 +16,15 @@ class SocialService {
 
   late SocialProfileService _profileService;
   late SocialFriendService _friendService;
+  bool _isInitialized = false;
 
-  /// Initialize the social service with local caching
+  /// Whether the service has been initialized
+  bool get isInitialized => _isInitialized;
+
+  /// Initialize the social service with local caching.
+  /// Safe to call multiple times - subsequent calls are no-ops.
   Future<void> initialize() async {
+    if (_isInitialized) return;
     try {
       // Register Hive adapters if not already registered
       if (!Hive.isAdapterRegistered(4)) {
@@ -55,6 +61,7 @@ class SocialService {
       final connectionsBox = await SocialFriendService.openBox();
       await _friendService.initialize(connectionsBox);
 
+      _isInitialized = true;
       LoggingService.info('SocialService initialized successfully', tag: _logTag);
     } catch (e) {
       LoggingService.error('Error initializing SocialService: $e', tag: _logTag);

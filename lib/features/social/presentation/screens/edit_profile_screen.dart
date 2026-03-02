@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../domain/entities/user_profile.dart';
 import '../../domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import '../../../messaging/domain/services/file_upload_service.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
@@ -30,7 +31,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   final _bioController = TextEditingController();
   final _locationController = TextEditingController();
 
-  final SocialService _socialService = SocialService();
+  final SocialService _socialService = sl<SocialService>();
   final FileUploadService _fileUploadService = FileUploadService();
 
   String? _profileImageUrl;

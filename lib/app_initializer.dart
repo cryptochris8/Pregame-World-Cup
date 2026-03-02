@@ -24,6 +24,7 @@ import 'core/services/deep_link_service.dart';
 import 'core/services/deep_link_navigator.dart';
 import 'core/services/accessibility_service.dart';
 import 'services/revenuecat_service.dart';
+import 'features/social/domain/services/social_service.dart';
 import 'features/worldcup/utils/timezone_utils.dart';
 
 /// DIAGNOSTIC MODE
@@ -205,6 +206,10 @@ Future<void> initializeApp() async {
   // Step 7.9: Analytics & Crashlytics Initialization (Background)
   debugLog('INIT STEP 7.9: Analytics & Crashlytics (Background)');
   _initializeAnalyticsBackground();
+
+  // Step 7.95: Social Service Initialization (Background)
+  debugLog('INIT STEP 7.95: Social Service (Background)');
+  _initializeSocialServiceBackground();
 
   // Step 7.10: Deep Link Service Initialization (Background)
   debugLog('INIT STEP 7.10: Deep Link Service (Background)');
@@ -416,6 +421,24 @@ void _initializeDeepLinkServiceBackground() async {
     if (DIAGNOSTIC_MODE) {
       debugLog('DIAGNOSTIC: Deep links failed but app will continue');
     }
+  }
+}
+
+/// Initialize Social Service (friends, profiles, connections) in the background
+void _initializeSocialServiceBackground() async {
+  try {
+    debugLog('SOCIAL: Starting background initialization');
+
+    // Yield to the event loop so the UI renders first.
+    await Future.microtask(() {});
+
+    final socialService = di.sl<SocialService>();
+    await socialService.initialize();
+
+    debugLog('SOCIAL: Background initialization completed');
+  } catch (e) {
+    debugLog('SOCIAL: Background initialization failed: $e');
+    // Social features will attempt to initialize on first use
   }
 }
 

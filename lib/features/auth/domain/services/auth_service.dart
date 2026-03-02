@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/analytics_service.dart';
 import '../../../../services/revenuecat_service.dart';
@@ -9,7 +10,7 @@ import '../../../../services/revenuecat_service.dart';
 class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final SocialService _socialService = SocialService();
+  final SocialService _socialService = sl<SocialService>();
   final AnalyticsService _analyticsService = AnalyticsService();
 
   // Stream to listen to authentication state changes

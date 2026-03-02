@@ -4,6 +4,7 @@ import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import '../screens/chat_screen.dart';
 import 'direct_chat_tab.dart';
 import 'chat_member_selector.dart';
@@ -28,7 +29,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final MessagingService _messagingService = MessagingService();
-  final SocialService _socialService = SocialService();
+  final SocialService _socialService = sl<SocialService>();
 
   final TextEditingController _searchController = TextEditingController();
   final TextEditingController _groupNameController = TextEditingController();

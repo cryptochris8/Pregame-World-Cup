@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/user_profile.dart';
 import '../../domain/entities/social_connection.dart';
 import '../../domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import '../widgets/friend_item_widget.dart';
 import '../widgets/friend_request_item_widget.dart';
 import '../widgets/friends_empty_states.dart';
@@ -26,7 +27,7 @@ class EnhancedFriendsListScreen extends StatefulWidget {
 
 class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
     with SingleTickerProviderStateMixin {
-  final SocialService _socialService = SocialService();
+  final SocialService _socialService = sl<SocialService>();
   final TextEditingController _searchController = TextEditingController();
 
   List<UserProfile> _friends = [];
@@ -57,7 +58,9 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
   Future<void> _initializeAndLoadData() async {
     try {
-      await _socialService.initialize();
+      if (!_socialService.isInitialized) {
+        await _socialService.initialize();
+      }
       await _loadAllData();
     } catch (e) {
       setState(() => _isLoading = false);

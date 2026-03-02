@@ -4,6 +4,7 @@ import '../entities/chat.dart';
 import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 
 /// Handles per-user chat settings: mute, archive, delete, clear history, block status.
 class MessagingChatSettingsService {
@@ -304,7 +305,7 @@ class MessagingChatSettingsService {
         return const BlockStatus(isBlocked: false);
       }
 
-      final socialService = SocialService();
+      final socialService = sl<SocialService>();
 
       final hasBlocked = await socialService.hasBlockedUser(otherUserId);
       if (hasBlocked) {

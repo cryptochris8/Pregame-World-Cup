@@ -6,11 +6,13 @@ import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 
+import 'package:get_it/get_it.dart';
 import 'package:pregame_world_cup/features/auth/domain/services/auth_service.dart';
 import 'package:pregame_world_cup/features/social/domain/services/social_service.dart';
 import 'package:pregame_world_cup/features/social/domain/entities/user_profile.dart';
 import 'package:pregame_world_cup/core/services/analytics_service.dart';
 import 'package:pregame_world_cup/services/revenuecat_service.dart';
+import 'package:pregame_world_cup/injection_container.dart';
 
 // ==================== MOCKS ====================
 
@@ -266,6 +268,11 @@ void main() {
     mockRevenueCatService = MockRevenueCatService();
     mockUser = MockUser();
 
+    // Register SocialService in GetIt so AuthService constructor can resolve it
+    if (!sl.isRegistered<SocialService>()) {
+      sl.registerLazySingleton<SocialService>(() => mockSocialService);
+    }
+
     authService = TestableAuthService(
       testFirebaseAuth: mockAuth,
       testFirestore: fakeFirestore,
@@ -284,6 +291,10 @@ void main() {
           errorType: any(named: 'errorType'),
           message: any(named: 'message'),
         )).thenAnswer((_) async {});
+  });
+
+  tearDown(() async {
+    await sl.reset();
   });
 
   // ========================================================

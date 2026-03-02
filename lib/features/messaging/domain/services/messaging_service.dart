@@ -7,6 +7,7 @@ import '../entities/typing_indicator.dart';
 import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import 'messaging_group_management_service.dart';
 import 'messaging_chat_settings_service.dart';
 import 'messaging_message_service.dart';
@@ -136,7 +137,7 @@ class MessagingService {
     if (currentUser == null) return null;
 
     try {
-      final socialService = SocialService();
+      final socialService = sl<SocialService>();
       final isBlocked = await socialService.isUserBlocked(currentUser.uid, otherUserId);
       if (isBlocked) {
         LoggingService.warning('Cannot create chat - user is blocked', tag: 'MessagingService');

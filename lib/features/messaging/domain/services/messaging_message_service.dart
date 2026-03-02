@@ -6,6 +6,7 @@ import '../entities/chat.dart';
 import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import '../../../moderation/moderation.dart';
 
 /// Handles message CRUD operations: send, retrieve, reactions, read status.
@@ -102,7 +103,7 @@ class MessagingMessageService {
           );
 
           if (otherUserId.isNotEmpty) {
-            final socialService = SocialService();
+            final socialService = sl<SocialService>();
             final isBlocked = await socialService.isUserBlocked(currentUser.uid, otherUserId);
             if (isBlocked) {
               LoggingService.warning('Cannot send message - user is blocked', tag: 'MessagingService');

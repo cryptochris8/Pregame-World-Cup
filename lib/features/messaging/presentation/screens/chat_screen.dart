@@ -6,6 +6,7 @@ import '../../domain/entities/typing_indicator.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../domain/services/messaging_chat_settings_service.dart';
 import '../../../social/domain/services/social_service.dart';
+import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../widgets/message_item_widget.dart';
 import '../widgets/message_input_widget.dart';
@@ -293,7 +294,7 @@ class _ChatScreenState extends State<ChatScreen> {
     if (otherUserId.isEmpty) return;
 
     try {
-      final socialService = SocialService();
+      final socialService = sl<SocialService>();
       final success =
           await socialService.unblockUser(currentUser.uid, otherUserId);
 
