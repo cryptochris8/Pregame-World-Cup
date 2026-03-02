@@ -1,0 +1,54 @@
+{
+  "fifaCode": "ENG",
+  "teamName": "England",
+  "worldCupHistory": {
+    "totalAppearances": 16,
+    "titles": 1,
+    "titleYears": [1966],
+    "bestFinish": "Winners",
+    "bestFinishYear": 1966,
+    "appearances": [
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1954, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1958, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1962, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1966, "result": "Winners", "stage": "Final" },
+      { "year": 1970, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1982, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1986, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1990, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1998, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2002, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2006, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 2022, "result": "Quarter-finals", "stage": "Quarter-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 74,
+      "won": 32,
+      "drawn": 21,
+      "lost": 21,
+      "goalsFor": 104,
+      "goalsAgainst": 72
+    },
+    "topScorers": [
+      { "name": "Gary Lineker", "goals": 10, "tournaments": "1986, 1990" },
+      { "name": "Harry Kane", "goals": 8, "tournaments": "2018, 2022" },
+      { "name": "Geoff Hurst", "goals": 5, "tournaments": "1966, 1970" },
+      { "name": "Michael Owen", "goals": 4, "tournaments": "1998, 2002" },
+      { "name": "David Beckham", "goals": 3, "tournaments": "1998, 2002, 2006" }
+    ],
+    "notableMoments": [
+      "Won the World Cup on home soil in 1966 with Geoff Hurst's hat-trick in the final",
+      "Hurst remains the only player to score a hat-trick in a World Cup final",
+      "Shock 1-0 defeat to USA in the 1950 World Cup",
+      "Maradona's 'Hand of God' eliminated England in the 1986 quarter-final",
+      "Gazza's tears and penalty heartbreak vs Germany in the 1990 semi-final",
+      "Beckham red card vs Argentina in the 1998 Round of 16",
+      "Reached the semi-finals in 2018 under Southgate",
+      "Lost to France in the 2022 quarter-final after Kane missed a penalty"
+    ]
+  }
+}

@@ -16,6 +16,22 @@
     "details": "France - 1958"
   },
   {
+    "category": "Most Goals (Single Match)",
+    "record": "Most goals by one player in a match",
+    "holder": "Oleg Salenko",
+    "holderType": "player",
+    "value": 5,
+    "details": "Russia vs Cameroon 1994"
+  },
+  {
+    "category": "Most Goals (Final)",
+    "record": "Most goals in World Cup final",
+    "holder": "Kylian Mbappé/Geoff Hurst",
+    "holderType": "player",
+    "value": 3,
+    "details": "Hat-trick in final (1966, 2022)"
+  },
+  {
     "category": "Most Appearances",
     "record": "Most World Cup matches played",
     "holder": "Lionel Messi",
@@ -32,6 +48,70 @@
     "details": "Brazil - 1994, 1998, 2002 (won 2)"
   },
   {
+    "category": "Most Assists (Career)",
+    "record": "Most World Cup assists all-time",
+    "holder": "Lionel Messi",
+    "holderType": "player",
+    "value": 8,
+    "details": "Argentina - 2006, 2010, 2014, 2018, 2022 (21 goal contributions total)"
+  },
+  {
+    "category": "Most Assists (Single Tournament)",
+    "record": "Most assists in a single World Cup",
+    "holder": "Pelé",
+    "holderType": "player",
+    "value": 6,
+    "details": "Brazil - 1970"
+  },
+  {
+    "category": "Most Tournaments (Player)",
+    "record": "Most World Cups participated",
+    "holder": "Lionel Messi/Cristiano Ronaldo/Antonio Carbajal/Rafael Márquez/Lothar Matthäus/Gianluigi Buffon/Andrés Guardado",
+    "holderType": "player",
+    "value": 5,
+    "details": "Various"
+  },
+  {
+    "category": "Goals in Most Consecutive Tournaments",
+    "record": "Scored in most consecutive World Cups",
+    "holder": "Cristiano Ronaldo",
+    "holderType": "player",
+    "value": 5,
+    "details": "Portugal - 2006, 2010, 2014, 2018, 2022"
+  },
+  {
+    "category": "Most Clean Sheets (Goalkeeper)",
+    "record": "Most career clean sheets at World Cups",
+    "holder": "Peter Shilton/Fabien Barthez",
+    "holderType": "player",
+    "value": 10,
+    "details": "Shilton (England 1982-1990), Barthez (France 1998-2006)"
+  },
+  {
+    "category": "Youngest Player",
+    "record": "Youngest player to appear at a World Cup",
+    "holder": "Norman Whiteside",
+    "holderType": "player",
+    "value": "17 years 41 days",
+    "details": "Northern Ireland vs Yugoslavia 1982"
+  },
+  {
+    "category": "Oldest Player",
+    "record": "Oldest player to appear at a World Cup",
+    "holder": "Essam El-Hadary",
+    "holderType": "player",
+    "value": "45 years 161 days",
+    "details": "Egypt vs Saudi Arabia 2018"
+  },
+  {
+    "category": "Youngest Goalscorer",
+    "record": "Youngest player to score",
+    "holder": "Pelé",
+    "holderType": "player",
+    "value": "17 years 239 days",
+    "details": "Brazil vs Wales 1958"
+  },
+  {
     "category": "Oldest Goalscorer",
     "record": "Oldest player to score",
     "holder": "Roger Milla",
@@ -40,36 +120,60 @@
     "details": "Cameroon vs Russia 1994"
   },
   {
-    "category": "Youngest Goalscorer",
-    "record": "Youngest player to score",
-    "holder": "Pel\u00e9",
+    "category": "Youngest Captain",
+    "record": "Youngest player to captain a World Cup team",
+    "holder": "Tony Meola",
     "holderType": "player",
-    "value": "17 years 239 days",
-    "details": "Brazil vs Wales 1958"
+    "value": "21 years 109 days",
+    "details": "USA vs Czechoslovakia 1990"
   },
   {
-    "category": "Most Goals (Final)",
-    "record": "Most goals in World Cup final",
-    "holder": "Kylian Mbapp\u00e9/Geoff Hurst",
+    "category": "Youngest Golden Ball Winner",
+    "record": "Youngest Golden Ball award winner",
+    "holder": "Ronaldo",
     "holderType": "player",
-    "value": 3,
-    "details": "Hat-trick in final (1966, 2022)"
+    "value": "21 years old",
+    "details": "Brazil - 1998 (award introduced in 1982)"
   },
   {
     "category": "Fastest Goal",
     "record": "Fastest goal from kick-off",
-    "holder": "Hakan \u015e\u00fck\u00fcr",
+    "holder": "Hakan Şükür",
     "holderType": "player",
     "value": "11 seconds",
     "details": "Turkey vs South Korea 2002"
   },
   {
-    "category": "Most Tournaments (Player)",
-    "record": "Most World Cups participated",
-    "holder": "Lionel Messi/Cristiano Ronaldo/Antonio Carbajal/Rafael M\u00e1rquez/Lothar Matth\u00e4us/Gianluigi Buffon/Andr\u00e9s Guardado",
+    "category": "Fastest Hat-Trick",
+    "record": "Fastest hat-trick in a World Cup match",
+    "holder": "László Kiss",
     "holderType": "player",
-    "value": 5,
-    "details": "Various"
+    "value": "7 minutes",
+    "details": "Hungary vs El Salvador 1982 (69th, 72nd, 76th minute)"
+  },
+  {
+    "category": "Most Yellow Cards (Career)",
+    "record": "Most yellow cards received at World Cups",
+    "holder": "Javier Mascherano",
+    "holderType": "player",
+    "value": 7,
+    "details": "Argentina - 2006, 2010, 2014, 2018"
+  },
+  {
+    "category": "Most Penalty Goals (Single Tournament)",
+    "record": "Most penalty goals in one World Cup",
+    "holder": "Eusébio",
+    "holderType": "player",
+    "value": 4,
+    "details": "Portugal - 1966 (scored all four penalties taken)"
+  },
+  {
+    "category": "Most Goal Contributions (Career)",
+    "record": "Most combined goals and assists at World Cups",
+    "holder": "Lionel Messi",
+    "holderType": "player",
+    "value": 21,
+    "details": "Argentina - 13 goals + 8 assists (2006-2022)"
   },
   {
     "category": "Most Titles",
@@ -104,20 +208,12 @@
     "details": "Italy 1934-38, Brazil 1958-62"
   },
   {
-    "category": "Highest Win Margin",
-    "record": "Largest victory margin",
-    "holder": "Hungary",
-    "holderType": "match",
-    "value": "10-1",
-    "details": "Hungary vs El Salvador 1982"
-  },
-  {
-    "category": "Most Goals (Team, Tournament)",
-    "record": "Most goals in single tournament",
-    "holder": "Hungary",
+    "category": "Most Consecutive Wins",
+    "record": "Most consecutive World Cup match wins",
+    "holder": "Brazil",
     "holderType": "team",
-    "value": 27,
-    "details": "Hungary 1954"
+    "value": 11,
+    "details": "2002-2006 (scored 28, conceded 5)"
   },
   {
     "category": "Longest Unbeaten Run",
@@ -128,6 +224,94 @@
     "details": "1958-1966"
   },
   {
+    "category": "Most Goals (Team, Tournament)",
+    "record": "Most goals in single tournament",
+    "holder": "Hungary",
+    "holderType": "team",
+    "value": 27,
+    "details": "Hungary 1954"
+  },
+  {
+    "category": "Most Goals Conceded (Team, Tournament)",
+    "record": "Most goals conceded in a single World Cup",
+    "holder": "South Korea",
+    "holderType": "team",
+    "value": 16,
+    "details": "1954 - lost 9-0 to Hungary and 7-0 to Turkey in 2 matches"
+  },
+  {
+    "category": "Fewest Goals Conceded (Winner)",
+    "record": "Fewest goals conceded by a World Cup winner",
+    "holder": "France/Italy/Spain",
+    "holderType": "team",
+    "value": 2,
+    "details": "France 1998, Italy 2006, Spain 2010 - each conceded 2 in 7 matches"
+  },
+  {
+    "category": "Most Penalty Shootout Wins",
+    "record": "Most penalty shootout victories at World Cups",
+    "holder": "Argentina",
+    "holderType": "team",
+    "value": 6,
+    "details": "Won 6 of 7 shootouts (1990-2022)"
+  },
+  {
+    "category": "Most Penalty Shootout Losses",
+    "record": "Most penalty shootout defeats at World Cups",
+    "holder": "England/Italy/Spain",
+    "holderType": "team",
+    "value": 3,
+    "details": "Each lost 3 of 4 shootouts"
+  },
+  {
+    "category": "Perfect Shootout Record",
+    "record": "Most shootout wins without a loss",
+    "holder": "Germany",
+    "holderType": "team",
+    "value": 4,
+    "details": "Won all 4 shootouts: 1982, 1986, 1990, 2006"
+  },
+  {
+    "category": "Most Team Red Cards (All-Time)",
+    "record": "Most red cards received by a team across all World Cups",
+    "holder": "Brazil/Argentina",
+    "holderType": "team",
+    "value": 11,
+    "details": "Both nations share the record with 11 red cards each"
+  },
+  {
+    "category": "Most Own Goals (Tournament)",
+    "record": "Most own goals in a single World Cup",
+    "holder": "2018 World Cup (Russia)",
+    "holderType": "team",
+    "value": 12,
+    "details": "12 own goals by 12 players from 11 teams (doubled previous record of 6)"
+  },
+  {
+    "category": "Most Teams Participated",
+    "record": "Most teams in a World Cup tournament",
+    "holder": "2026 World Cup",
+    "holderType": "team",
+    "value": 48,
+    "details": "USA/Mexico/Canada - expanded from 32 teams, 104 matches"
+  },
+  {
+    "category": "Biggest Comeback (Final)",
+    "record": "Greatest comeback in a World Cup final",
+    "holder": "West Germany",
+    "holderType": "team",
+    "value": "2-0 down to 3-2 win",
+    "details": "vs Hungary 1954 - 'Miracle of Bern' (Hungary led 2-0 after 8 min)"
+  },
+  {
+    "category": "Biggest Comeback (Knockout)",
+    "record": "Greatest knockout stage comeback",
+    "holder": "Portugal",
+    "holderType": "team",
+    "value": "3-0 down to 5-3 win",
+    "details": "vs North Korea 1966 QF - Eusébio scored 4 goals"
+  },
+  {
     "category": "Highest Scoring Match",
     "record": "Most goals in single match",
     "holder": "Austria vs Switzerland",
@@ -136,12 +320,12 @@
     "details": "Austria 7-5 Switzerland 1954"
   },
   {
-    "category": "Most Red Cards (Match)",
-    "record": "Most red cards in single match",
-    "holder": "Portugal vs Netherlands",
+    "category": "Highest Win Margin",
+    "record": "Largest victory margin",
+    "holder": "Hungary",
     "holderType": "match",
-    "value": 4,
-    "details": "2006 - \"Battle of Nuremberg\""
+    "value": "10-1",
+    "details": "Hungary vs El Salvador 1982"
   },
   {
     "category": "Largest Final Win",
@@ -152,11 +336,83 @@
     "details": "Brazil 5-2 Sweden 1958"
   },
   {
+    "category": "Highest Scoring Final",
+    "record": "Most goals in a World Cup final",
+    "holder": "Argentina vs France",
+    "holderType": "match",
+    "value": 6,
+    "details": "Argentina 3-3 France 2022 (Argentina won 4-2 on penalties)"
+  },
+  {
+    "category": "Most Red Cards (Match)",
+    "record": "Most red cards in single match",
+    "holder": "Portugal vs Netherlands",
+    "holderType": "match",
+    "value": 4,
+    "details": "2006 - \"Battle of Nuremberg\""
+  },
+  {
+    "category": "Most Bookings (Match)",
+    "record": "Most total cards in a single match",
+    "holder": "Portugal vs Netherlands",
+    "holderType": "match",
+    "value": 20,
+    "details": "2006 - 16 yellows + 4 reds (\"Battle of Nuremberg\")"
+  },
+  {
+    "category": "Most Yellow Cards (Match)",
+    "record": "Most yellow cards in a single match",
+    "holder": "Argentina vs Netherlands",
+    "holderType": "match",
+    "value": 18,
+    "details": "2022 Quarter-Final"
+  },
+  {
+    "category": "Fastest Red Card",
+    "record": "Fastest dismissal in a World Cup match",
+    "holder": "José Batista",
+    "holderType": "match",
+    "value": "56 seconds",
+    "details": "Uruguay vs Scotland 1986"
+  },
+  {
+    "category": "Latest Goal",
+    "record": "Latest goal scored in a World Cup match",
+    "holder": "Mehdi Taremi",
+    "holderType": "match",
+    "value": "102 minutes 30 seconds",
+    "details": "Iran vs England 2022 (penalty, 6-2 final)"
+  },
+  {
     "category": "Highest Attendance",
     "record": "Highest World Cup attendance",
     "holder": "Brazil vs Uruguay",
     "holderType": "match",
     "value": 199854,
-    "details": "Maracan\u00e3 1950"
+    "details": "Maracanã 1950"
+  },
+  {
+    "category": "Most Goals (Tournament Total)",
+    "record": "Most total goals in a World Cup",
+    "holder": "2022 World Cup (Qatar)",
+    "holderType": "match",
+    "value": 172,
+    "details": "172 goals in 64 matches (2.69 per match)"
+  },
+  {
+    "category": "Highest Goals Per Match (Tournament)",
+    "record": "Highest average goals per match",
+    "holder": "1954 World Cup (Switzerland)",
+    "holderType": "match",
+    "value": 5.38,
+    "details": "140 goals in 26 matches"
+  },
+  {
+    "category": "Lowest Goals Per Match (Tournament)",
+    "record": "Lowest average goals per match",
+    "holder": "1990 World Cup (Italy)",
+    "holderType": "match",
+    "value": 2.21,
+    "details": "115 goals in 52 matches"
   }
 ]

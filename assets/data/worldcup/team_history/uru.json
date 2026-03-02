@@ -1,0 +1,50 @@
+{
+  "fifaCode": "URU",
+  "teamName": "Uruguay",
+  "worldCupHistory": {
+    "totalAppearances": 14,
+    "titles": 2,
+    "titleYears": [1930, 1950],
+    "bestFinish": "Winners",
+    "bestFinishYear": 1950,
+    "appearances": [
+      { "year": 1930, "result": "Winners", "stage": "Final" },
+      { "year": 1950, "result": "Winners", "stage": "Final Round" },
+      { "year": 1954, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1962, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1966, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1970, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1990, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 2014, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2018, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 56,
+      "won": 24,
+      "drawn": 12,
+      "lost": 20,
+      "goalsFor": 87,
+      "goalsAgainst": 74
+    },
+    "topScorers": [
+      { "name": "Óscar Míguez", "goals": 8, "tournaments": "1950, 1954" },
+      { "name": "Luis Suárez", "goals": 7, "tournaments": "2010, 2014, 2018, 2022" },
+      { "name": "Diego Forlán", "goals": 6, "tournaments": "2002, 2010" },
+      { "name": "Juan Alberto Schiaffino", "goals": 5, "tournaments": "1950, 1954" },
+      { "name": "Edinson Cavani", "goals": 4, "tournaments": "2014, 2018, 2022" }
+    ],
+    "notableMoments": [
+      "Hosted and won the first-ever World Cup in 1930",
+      "Shocked hosts Brazil in the 1950 final at the Maracanã ('Maracanazo')",
+      "The 1950 upset is considered one of the greatest moments in World Cup history",
+      "Suárez's handball on the line denied Ghana in the 2010 quarter-final",
+      "Diego Forlán won the Golden Ball in 2010 as Uruguay reached the semi-finals",
+      "Suárez bit Chiellini during the 2014 World Cup match against Italy"
+    ]
+  }
+}

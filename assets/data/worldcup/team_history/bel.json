@@ -1,0 +1,49 @@
+{
+  "fifaCode": "BEL",
+  "teamName": "Belgium",
+  "worldCupHistory": {
+    "totalAppearances": 14,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 2018,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1934, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1938, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1970, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1982, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1986, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1990, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1994, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2018, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 51,
+      "won": 20,
+      "drawn": 10,
+      "lost": 21,
+      "goalsFor": 72,
+      "goalsAgainst": 73
+    },
+    "topScorers": [
+      { "name": "Romelu Lukaku", "goals": 5, "tournaments": "2014, 2018, 2022" },
+      { "name": "Jan Ceulemans", "goals": 5, "tournaments": "1982, 1986, 1990" },
+      { "name": "Eden Hazard", "goals": 3, "tournaments": "2014, 2018" },
+      { "name": "Marc Wilmots", "goals": 5, "tournaments": "1994, 1998, 2002" }
+    ],
+    "notableMoments": [
+      "One of only four teams to play in the first World Cup in 1930",
+      "Fourth place in 1986 remains the 'Golden Generation' of Ceulemans era",
+      "Third place in 2018 was their best-ever finish, led by De Bruyne, Hazard, and Lukaku",
+      "Beat Brazil 2-1 in the 2018 quarter-final in one of the tournament's biggest upsets",
+      "Disappointing group-stage exit in 2022 despite being FIFA #2 ranked team",
+      "Qualified for six consecutive World Cups from 1982 to 2002"
+    ]
+  }
+}

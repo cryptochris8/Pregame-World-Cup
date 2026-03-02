@@ -1,0 +1,48 @@
+{
+  "fifaCode": "USA",
+  "teamName": "United States",
+  "worldCupHistory": {
+    "totalAppearances": 11,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Semi-finals",
+    "bestFinishYear": 1930,
+    "appearances": [
+      { "year": 1930, "result": "Semi-finals", "stage": "Semi-finals" },
+      { "year": 1934, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1990, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1994, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 37,
+      "won": 10,
+      "drawn": 7,
+      "lost": 20,
+      "goalsFor": 40,
+      "goalsAgainst": 62
+    },
+    "topScorers": [
+      { "name": "Landon Donovan", "goals": 5, "tournaments": "2002, 2006, 2010" },
+      { "name": "Clint Dempsey", "goals": 4, "tournaments": "2006, 2010, 2014" },
+      { "name": "Bert Patenaude", "goals": 4, "tournaments": "1930" },
+      { "name": "Christian Pulisic", "goals": 2, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "Reached the semi-finals in the first-ever World Cup in 1930",
+      "Legendary 1-0 upset of England in the 1950 World Cup",
+      "Hosted the 1994 World Cup which boosted soccer's popularity in the USA",
+      "'Dos a Cero' - iconic 2-0 win over Mexico in the 2002 Round of 16",
+      "Quarter-final run in 2002 ended by Germany (0-1)",
+      "Landon Donovan's stoppage-time goal vs Algeria in 2010 became iconic",
+      "Failed to qualify for the 2018 World Cup for the first time since 1986",
+      "Co-hosting the 2026 World Cup with Mexico and Canada"
+    ]
+  }
+}

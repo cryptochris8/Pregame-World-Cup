@@ -1,0 +1,42 @@
+{
+  "fifaCode": "PAR",
+  "teamName": "Paraguay",
+  "worldCupHistory": {
+    "totalAppearances": 8,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 2010,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1958, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "Quarter-finals", "stage": "Quarter-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 27,
+      "won": 7,
+      "drawn": 10,
+      "lost": 10,
+      "goalsFor": 30,
+      "goalsAgainst": 38
+    },
+    "topScorers": [
+      { "name": "Roque Santa Cruz", "goals": 3, "tournaments": "1998, 2002, 2006, 2010" },
+      { "name": "Nelson Valdez", "goals": 2, "tournaments": "2006, 2010" },
+      { "name": "Óscar Cardozo", "goals": 2, "tournaments": "2010" }
+    ],
+    "notableMoments": [
+      "Participated in the first-ever World Cup in 1930",
+      "Best-ever finish of quarter-finals in 2010 in South Africa",
+      "Beat Japan on penalties in the 2010 Round of 16 to reach the quarter-finals for the first time",
+      "Qualified for four consecutive World Cups from 1998 to 2010",
+      "José Luis Chilavert was one of the most famous goalkeeping free-kick takers in the 1990s-2000s",
+      "Returning to the World Cup in 2026 after missing 2014, 2018, and 2022"
+    ]
+  }
+}

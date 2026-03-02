@@ -1,0 +1,54 @@
+{
+  "fifaCode": "FRA",
+  "teamName": "France",
+  "worldCupHistory": {
+    "totalAppearances": 16,
+    "titles": 2,
+    "titleYears": [1998, 2018],
+    "bestFinish": "Winners",
+    "bestFinishYear": 2018,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1934, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1938, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1958, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1966, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1978, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1982, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1986, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1998, "result": "Winners", "stage": "Final" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "Runners-up", "stage": "Final" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2018, "result": "Winners", "stage": "Final" },
+      { "year": 2022, "result": "Runners-up", "stage": "Final" }
+    ],
+    "allTimeRecord": {
+      "played": 73,
+      "won": 39,
+      "drawn": 13,
+      "lost": 21,
+      "goalsFor": 136,
+      "goalsAgainst": 82
+    },
+    "topScorers": [
+      { "name": "Just Fontaine", "goals": 13, "tournaments": "1958" },
+      { "name": "Kylian Mbappé", "goals": 12, "tournaments": "2018, 2022" },
+      { "name": "Thierry Henry", "goals": 6, "tournaments": "1998, 2002, 2006, 2010" },
+      { "name": "Zinedine Zidane", "goals": 5, "tournaments": "1998, 2002, 2006" },
+      { "name": "Michel Platini", "goals": 5, "tournaments": "1978, 1982, 1986" }
+    ],
+    "notableMoments": [
+      "Played in the first-ever World Cup match in 1930 (beat Mexico 4-1)",
+      "Just Fontaine's 13 goals in 1958 remains the single-tournament record",
+      "Hosted and won their first World Cup in 1998; Zidane scored twice in the final",
+      "Epic semi-final against Germany in 1982 - one of the greatest matches ever",
+      "Zidane's headbutt on Materazzi in the 2006 final",
+      "Won second title in 2018 in Russia with Mbappé starring",
+      "Mbappé scored a hat-trick in the 2022 final but lost on penalties to Argentina",
+      "Four World Cup final appearances in the last seven tournaments (2006-2022)"
+    ]
+  }
+}

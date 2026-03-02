@@ -1,0 +1,42 @@
+{
+  "fifaCode": "POR",
+  "teamName": "Portugal",
+  "worldCupHistory": {
+    "totalAppearances": 8,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 1966,
+    "appearances": [
+      { "year": 1966, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2022, "result": "Quarter-finals", "stage": "Quarter-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 36,
+      "won": 19,
+      "drawn": 6,
+      "lost": 11,
+      "goalsFor": 63,
+      "goalsAgainst": 38
+    },
+    "topScorers": [
+      { "name": "Eusébio", "goals": 9, "tournaments": "1966" },
+      { "name": "Cristiano Ronaldo", "goals": 8, "tournaments": "2006, 2010, 2014, 2018, 2022" },
+      { "name": "Gonçalo Ramos", "goals": 3, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "Eusébio's 9 goals earned the Golden Boot and led Portugal to third place on debut in 1966",
+      "Came from 3-0 down against North Korea to win 5-3 in the 1966 quarter-final",
+      "Fourth place finish in 2006 under Luiz Felipe Scolari",
+      "Cristiano Ronaldo's hat-trick in 3-3 draw vs Spain at the 2018 World Cup",
+      "Gonçalo Ramos scored a hat-trick vs Switzerland in the 2022 Round of 16",
+      "Long absence from World Cups between 1966 and 1986 (20 years)"
+    ]
+  }
+}

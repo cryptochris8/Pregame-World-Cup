@@ -1,0 +1,33 @@
+{
+  "fifaCode": "QAT",
+  "teamName": "Qatar",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2022,
+    "appearances": [
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 1,
+      "goalsAgainst": 7
+    },
+    "topScorers": [
+      { "name": "Mohammed Muntari", "goals": 1, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "Hosted the 2022 World Cup - first Middle Eastern country to do so",
+      "Qualified as hosts for their first-ever World Cup appearance in 2022",
+      "Lost all three group matches (Ecuador 0-2, Senegal 1-3, Netherlands 0-2)",
+      "First host nation to lose the opening match of a World Cup",
+      "Won the 2019 Asian Cup to prove their rising footballing credentials",
+      "2026 marks their first qualification on sporting merit"
+    ]
+  }
+}

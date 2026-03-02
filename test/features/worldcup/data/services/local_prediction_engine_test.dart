@@ -514,28 +514,28 @@ void main() {
   });
 
   // ---------------------------------------------------------------------------
-  // 6. Recent form scoring
+  // 6. Recent form scoring (weighted by opponent quality & competition type)
   // ---------------------------------------------------------------------------
   group('recent form scoring', () {
     test('team with strong recent form is favored', () async {
       // Home team has strong form: WWWWW
       when(() => mockDataService.getRecentForm('USA')).thenReturn({
         'recent_matches': [
-          {'result': 'W', 'opponent': 'CAN'},
-          {'result': 'W', 'opponent': 'MEX'},
-          {'result': 'W', 'opponent': 'JAM'},
-          {'result': 'W', 'opponent': 'CRC'},
-          {'result': 'W', 'opponent': 'HON'},
+          {'result': 'W', 'opponent': 'Canada', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'W', 'opponent': 'Mexico', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'W', 'opponent': 'Jamaica', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'W', 'opponent': 'Costa Rica', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'W', 'opponent': 'Honduras', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
         ],
       });
       // Away team has poor form: LLLLL
       when(() => mockDataService.getRecentForm('BRA')).thenReturn({
         'recent_matches': [
-          {'result': 'L', 'opponent': 'ARG'},
-          {'result': 'L', 'opponent': 'URU'},
-          {'result': 'L', 'opponent': 'COL'},
-          {'result': 'L', 'opponent': 'CHI'},
-          {'result': 'L', 'opponent': 'PAR'},
+          {'result': 'L', 'opponent': 'Argentina', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'Uruguay', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'Colombia', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'Chile', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'Paraguay', 'competition': 'CONMEBOL World Cup Qualifier'},
         ],
       });
       when(() => mockDataService.getRecentFormSummary('USA'))
@@ -575,20 +575,20 @@ void main() {
     test('mixed form (WDLWL) scores differently than perfect form', () async {
       when(() => mockDataService.getRecentForm('USA')).thenReturn({
         'recent_matches': [
-          {'result': 'W', 'opponent': 'CAN'},
-          {'result': 'D', 'opponent': 'MEX'},
-          {'result': 'L', 'opponent': 'JAM'},
-          {'result': 'W', 'opponent': 'CRC'},
-          {'result': 'L', 'opponent': 'HON'},
+          {'result': 'W', 'opponent': 'Canada', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'D', 'opponent': 'Mexico', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'L', 'opponent': 'Jamaica', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'W', 'opponent': 'Costa Rica', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
+          {'result': 'L', 'opponent': 'Honduras', 'competition': 'CONCACAF World Cup Qualifier Final Round'},
         ],
       });
       when(() => mockDataService.getRecentForm('BRA')).thenReturn({
         'recent_matches': [
-          {'result': 'W', 'opponent': 'ARG'},
-          {'result': 'W', 'opponent': 'URU'},
-          {'result': 'W', 'opponent': 'COL'},
-          {'result': 'W', 'opponent': 'CHI'},
-          {'result': 'W', 'opponent': 'PAR'},
+          {'result': 'W', 'opponent': 'Argentina', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'W', 'opponent': 'Uruguay', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'W', 'opponent': 'Colombia', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'W', 'opponent': 'Chile', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'W', 'opponent': 'Paraguay', 'competition': 'CONMEBOL World Cup Qualifier'},
         ],
       });
 
@@ -611,6 +611,161 @@ void main() {
       // Away team has better form, so should be favored
       expect(prediction.awayWinProbability,
           greaterThan(prediction.homeWinProbability));
+    });
+
+    test('wins against top-ranked opponents score higher than wins against weak teams', () async {
+      // Home team beats top-10 opponents in WC qualifiers
+      when(() => mockDataService.getRecentForm('USA')).thenReturn({
+        'recent_matches': [
+          {'result': 'W', 'opponent': 'Spain', 'competition': 'International Friendly'},
+          {'result': 'W', 'opponent': 'Argentina', 'competition': 'International Friendly'},
+          {'result': 'W', 'opponent': 'France', 'competition': 'International Friendly'},
+        ],
+      });
+      // Away team beats low-ranked opponents in friendlies
+      when(() => mockDataService.getRecentForm('BRA')).thenReturn({
+        'recent_matches': [
+          {'result': 'W', 'opponent': 'Gibraltar', 'competition': 'International Friendly'},
+          {'result': 'W', 'opponent': 'San Marino', 'competition': 'International Friendly'},
+          {'result': 'W', 'opponent': 'Liechtenstein', 'competition': 'International Friendly'},
+        ],
+      });
+
+      final match = defaultMatch();
+      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final away = awayTeam(
+        fifaRanking: 20,
+        worldCupTitles: 0,
+        worldCupAppearances: 10,
+        bestFinish: 'Quarter-finals',
+        isHostNation: false,
+      );
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // Home team's wins vs top opponents should score higher
+      expect(prediction.homeWinProbability,
+          greaterThan(prediction.awayWinProbability));
+    });
+
+    test('losses to strong teams are penalized less than losses to weak teams', () async {
+      // Home team lost to top-3 teams
+      when(() => mockDataService.getRecentForm('USA')).thenReturn({
+        'recent_matches': [
+          {'result': 'L', 'opponent': 'Spain', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'Argentina', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'France', 'competition': 'CONMEBOL World Cup Qualifier'},
+        ],
+      });
+      // Away team lost to very weak teams
+      when(() => mockDataService.getRecentForm('BRA')).thenReturn({
+        'recent_matches': [
+          {'result': 'L', 'opponent': 'Gibraltar', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'San Marino', 'competition': 'CONMEBOL World Cup Qualifier'},
+          {'result': 'L', 'opponent': 'Andorra', 'competition': 'CONMEBOL World Cup Qualifier'},
+        ],
+      });
+
+      final match = defaultMatch();
+      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final away = awayTeam(
+        fifaRanking: 20,
+        worldCupTitles: 0,
+        worldCupAppearances: 10,
+        bestFinish: 'Quarter-finals',
+        isHostNation: false,
+      );
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // Home team lost to strong teams (less penalty), so should be favored
+      expect(prediction.homeWinProbability,
+          greaterThan(prediction.awayWinProbability));
+    });
+
+    test('continental championship results weighted higher than friendlies', () async {
+      // Home team won in continental championship (AFCON)
+      when(() => mockDataService.getRecentForm('USA')).thenReturn({
+        'recent_matches': [
+          {'result': 'W', 'opponent': 'Morocco', 'competition': 'AFCON 2025 Group Stage'},
+          {'result': 'W', 'opponent': 'Nigeria', 'competition': 'AFCON 2025 Quarterfinal'},
+          {'result': 'W', 'opponent': 'Senegal', 'competition': 'AFCON 2025 Final'},
+        ],
+      });
+      // Away team won in friendlies against same caliber
+      when(() => mockDataService.getRecentForm('BRA')).thenReturn({
+        'recent_matches': [
+          {'result': 'W', 'opponent': 'Morocco', 'competition': 'International Friendly'},
+          {'result': 'W', 'opponent': 'Nigeria', 'competition': 'International Friendly'},
+          {'result': 'W', 'opponent': 'Senegal', 'competition': 'International Friendly'},
+        ],
+      });
+
+      final match = defaultMatch();
+      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final away = awayTeam(
+        fifaRanking: 20,
+        worldCupTitles: 0,
+        worldCupAppearances: 10,
+        bestFinish: 'Quarter-finals',
+        isHostNation: false,
+      );
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // Home team's continental championship wins should score higher than friendlies
+      expect(prediction.homeWinProbability,
+          greaterThan(prediction.awayWinProbability));
+    });
+
+    test('form data without opponent/competition fields still works', () async {
+      // Backwards compatibility: minimal form data with no opponent/competition
+      when(() => mockDataService.getRecentForm('USA')).thenReturn({
+        'recent_matches': [
+          {'result': 'W'},
+          {'result': 'W'},
+          {'result': 'W'},
+        ],
+      });
+      when(() => mockDataService.getRecentForm('BRA')).thenReturn({
+        'recent_matches': [
+          {'result': 'L'},
+          {'result': 'L'},
+          {'result': 'L'},
+        ],
+      });
+
+      final match = defaultMatch();
+      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final away = awayTeam(
+        fifaRanking: 20,
+        worldCupTitles: 0,
+        worldCupAppearances: 10,
+        bestFinish: 'Quarter-finals',
+        isHostNation: false,
+      );
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // All-wins should still beat all-losses even with default weights
+      expect(prediction.homeWinProbability,
+          greaterThan(prediction.awayWinProbability));
     });
   });
 

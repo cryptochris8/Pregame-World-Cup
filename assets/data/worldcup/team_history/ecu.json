@@ -1,0 +1,37 @@
+{
+  "fifaCode": "ECU",
+  "teamName": "Ecuador",
+  "worldCupHistory": {
+    "totalAppearances": 4,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 2006,
+    "appearances": [
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 12,
+      "won": 4,
+      "drawn": 1,
+      "lost": 7,
+      "goalsFor": 12,
+      "goalsAgainst": 18
+    },
+    "topScorers": [
+      { "name": "Enner Valencia", "goals": 6, "tournaments": "2014, 2022" },
+      { "name": "Agustín Delgado", "goals": 3, "tournaments": "2002, 2006" },
+      { "name": "Carlos Tenorio", "goals": 1, "tournaments": "2006" }
+    ],
+    "notableMoments": [
+      "Made World Cup debut in 2002 - the last South American team to qualify for a World Cup",
+      "Best finish came in 2006 reaching the Round of 16 in Germany",
+      "Enner Valencia scored in every World Cup match he played (2014 and 2022)",
+      "Valencia opened the 2022 World Cup with the first goal of the tournament vs Qatar",
+      "Known for passionate fan support and altitude advantage in qualifiers at Quito (2,850m)"
+    ]
+  }
+}

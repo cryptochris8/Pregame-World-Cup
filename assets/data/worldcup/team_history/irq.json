@@ -1,0 +1,32 @@
+{
+  "fifaCode": "IRQ",
+  "teamName": "Iraq",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1986,
+    "appearances": [
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 1,
+      "goalsAgainst": 4
+    },
+    "topScorers": [
+      { "name": "Ahmed Radhi", "goals": 1, "tournaments": "1986" }
+    ],
+    "notableMoments": [
+      "Only World Cup appearance came in 1986 in Mexico",
+      "Ahmed Radhi scored Iraq's only World Cup goal - against Belgium in 1986",
+      "Won the 2007 AFC Asian Cup during a period of great turmoil in the country",
+      "40-year wait for a return to the World Cup ended with 2026 qualification",
+      "Iraqi football has produced talent despite decades of conflict and instability"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "fifaCode": "AUT",
+  "teamName": "Austria",
+  "worldCupHistory": {
+    "totalAppearances": 7,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 1954,
+    "appearances": [
+      { "year": 1934, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1954, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1958, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1978, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1982, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1990, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 29,
+      "won": 12,
+      "drawn": 4,
+      "lost": 13,
+      "goalsFor": 43,
+      "goalsAgainst": 47
+    },
+    "topScorers": [
+      { "name": "Erich Probst", "goals": 6, "tournaments": "1954" },
+      { "name": "Hans Krankl", "goals": 4, "tournaments": "1978, 1982" },
+      { "name": "Theodor Wagner", "goals": 3, "tournaments": "1954" }
+    ],
+    "notableMoments": [
+      "Third place at the 1954 World Cup remains their best-ever result",
+      "Beat Switzerland 7-5 in the 1954 quarter-final - the highest-scoring World Cup match ever",
+      "Famous 3-2 win over West Germany in 1978 ('The Miracle of Córdoba')",
+      "Involved in the 'Disgrace of Gijón' in 1982 (suspected match-fixing with Germany vs Algeria)",
+      "Returning to the World Cup in 2026 after a 28-year absence (last appeared in 1998)",
+      "Strong performance at Euro 2024 under Ralf Rangnick boosted confidence"
+    ]
+  }
+}

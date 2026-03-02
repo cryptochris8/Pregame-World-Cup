@@ -1,0 +1,33 @@
+{
+  "fifaCode": "PAN",
+  "teamName": "Panama",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2018,
+    "appearances": [
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 11
+    },
+    "topScorers": [
+      { "name": "Felipe Baloy", "goals": 1, "tournaments": "2018" },
+      { "name": "José Luis Rodríguez", "goals": 1, "tournaments": "2018" }
+    ],
+    "notableMoments": [
+      "Made their World Cup debut in 2018 after qualifying for the first time in history",
+      "Qualification sparked nationwide celebrations and a national holiday was declared",
+      "Felipe Baloy scored Panama's first-ever World Cup goal vs England in 2018",
+      "Lost to Belgium 0-3, England 1-6, and Tunisia 1-2 in their debut campaign",
+      "Despite losing all games, the experience was celebrated as historic for the nation"
+    ]
+  }
+}

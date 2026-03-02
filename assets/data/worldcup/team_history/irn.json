@@ -1,0 +1,40 @@
+{
+  "fifaCode": "IRN",
+  "teamName": "Iran",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2022,
+    "appearances": [
+      { "year": 1978, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 18,
+      "won": 3,
+      "drawn": 4,
+      "lost": 11,
+      "goalsFor": 12,
+      "goalsAgainst": 32
+    },
+    "topScorers": [
+      { "name": "Sardar Azmoun", "goals": 1, "tournaments": "2018, 2022" },
+      { "name": "Mehdi Taremi", "goals": 2, "tournaments": "2018, 2022" },
+      { "name": "Rouzbeh Cheshmi", "goals": 1, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "First Asian team to win a World Cup match: beat USA 2-1 in 1998 in a politically charged game",
+      "20-year gap between first (1978) and second (1998) World Cup appearances",
+      "Narrowly missed Round of 16 in 2014 (lost 1-0 to Argentina in injury time)",
+      "Beat Wales 2-0 in the 2022 group stage for their first World Cup win in 20 years",
+      "Known for their passionate and vocal fanbase at World Cups",
+      "Six appearances but never progressed beyond the group stage"
+    ]
+  }
+}

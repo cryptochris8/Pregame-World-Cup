@@ -1,0 +1,37 @@
+{
+  "fifaCode": "SEN",
+  "teamName": "Senegal",
+  "worldCupHistory": {
+    "totalAppearances": 3,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 2002,
+    "appearances": [
+      { "year": 2002, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 12,
+      "won": 5,
+      "drawn": 3,
+      "lost": 4,
+      "goalsFor": 14,
+      "goalsAgainst": 13
+    },
+    "topScorers": [
+      { "name": "Papa Bouba Diop", "goals": 3, "tournaments": "2002" },
+      { "name": "Henri Camara", "goals": 3, "tournaments": "2002" },
+      { "name": "Moussa Konaté", "goals": 1, "tournaments": "2018" }
+    ],
+    "notableMoments": [
+      "Stunning debut in 2002 - beat defending champions France 1-0 in the opening match",
+      "Reached the quarter-finals on their World Cup debut (2002)",
+      "Papa Bouba Diop scored the winner vs France and celebrated with the iconic shirt dance",
+      "Eliminated in 2018 on fair play tiebreaker - the first team ever eliminated by this rule",
+      "Won the 2021 Africa Cup of Nations (AFCON) for the first time",
+      "Sadio Mané became the face of Senegalese football in the 2020s"
+    ]
+  }
+}

@@ -114,6 +114,7 @@ flutter:
     - assets/data/worldcup/head_to_head/
     - assets/data/worldcup/match_summaries/
     - assets/data/worldcup/history/
+    - assets/data/worldcup/team_history/
     - assets/data/worldcup/player_stats/
     - assets/data/worldcup/player_profiles/
     - assets/data/worldcup/player_name_index.json

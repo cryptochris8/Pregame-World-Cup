@@ -1,0 +1,54 @@
+{
+  "fifaCode": "MEX",
+  "teamName": "Mexico",
+  "worldCupHistory": {
+    "totalAppearances": 17,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 1986,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1958, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1962, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1966, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1970, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1978, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1994, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2018, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 60,
+      "won": 17,
+      "drawn": 15,
+      "lost": 28,
+      "goalsFor": 63,
+      "goalsAgainst": 98
+    },
+    "topScorers": [
+      { "name": "Luis Hernández", "goals": 4, "tournaments": "1998, 2002" },
+      { "name": "Javier Hernández", "goals": 4, "tournaments": "2010, 2014, 2018" },
+      { "name": "Rafael Márquez", "goals": 3, "tournaments": "2006, 2010, 2014" },
+      { "name": "Cuauhtémoc Blanco", "goals": 3, "tournaments": "1998, 2010" }
+    ],
+    "notableMoments": [
+      "One of four teams to play in the first World Cup in 1930",
+      "Hosted the World Cup twice: 1970 and 1986",
+      "The Estadio Azteca is the only venue to host two World Cup finals (1970, 1986)",
+      "Quarter-final runs in 1970 (as hosts) and 1986 (as hosts)",
+      "Made the Round of 16 in seven consecutive World Cups (1994-2018) but never advanced further",
+      "Broke the 'fifth game curse' barrier never reached in 2022 by failing to exit the group",
+      "Hugo Sánchez, despite being Mexico's greatest player, never shone at a World Cup",
+      "Co-hosting the 2026 World Cup with USA and Canada"
+    ]
+  }
+}

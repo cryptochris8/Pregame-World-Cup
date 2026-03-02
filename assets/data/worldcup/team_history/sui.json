@@ -1,0 +1,47 @@
+{
+  "fifaCode": "SUI",
+  "teamName": "Switzerland",
+  "worldCupHistory": {
+    "totalAppearances": 12,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 1954,
+    "appearances": [
+      { "year": 1934, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1938, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1954, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1962, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1966, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1994, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2018, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 40,
+      "won": 14,
+      "drawn": 7,
+      "lost": 19,
+      "goalsFor": 60,
+      "goalsAgainst": 72
+    },
+    "topScorers": [
+      { "name": "Josef Hügi", "goals": 6, "tournaments": "1954" },
+      { "name": "Xherdan Shaqiri", "goals": 4, "tournaments": "2014, 2018, 2022" },
+      { "name": "André Abegglen", "goals": 4, "tournaments": "1934, 1938" },
+      { "name": "Seferovic", "goals": 2, "tournaments": "2014, 2018" }
+    ],
+    "notableMoments": [
+      "Hosted the 1954 World Cup which featured the 'Miracle of Bern' final",
+      "Quarter-finals in three of their first four World Cups (1934, 1938, 1954)",
+      "Involved in the highest-scoring World Cup match ever: Austria 7-5 Switzerland in 1954",
+      "Five consecutive Round of 16 appearances from 2006 to 2022 (except 2010)",
+      "Beat France on penalties in the 2020 Euros Round of 16 (played 2021)",
+      "Xherdan Shaqiri's bicycle kick vs Poland in Euro 2016 was iconic"
+    ]
+  }
+}

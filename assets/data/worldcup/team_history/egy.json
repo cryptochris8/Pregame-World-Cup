@@ -1,0 +1,36 @@
+{
+  "fifaCode": "EGY",
+  "teamName": "Egypt",
+  "worldCupHistory": {
+    "totalAppearances": 3,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2018,
+    "appearances": [
+      { "year": 1934, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1990, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 7,
+      "won": 0,
+      "drawn": 2,
+      "lost": 5,
+      "goalsFor": 5,
+      "goalsAgainst": 14
+    },
+    "topScorers": [
+      { "name": "Mohamed Salah", "goals": 2, "tournaments": "2018" },
+      { "name": "Abdulrahman Fawzi", "goals": 2, "tournaments": "1934" }
+    ],
+    "notableMoments": [
+      "First African nation to play in a World Cup (1934)",
+      "56-year gap between first (1934) and second (1990) appearances",
+      "Record 7-time Africa Cup of Nations champions",
+      "Mohamed Salah led Egypt's return to the World Cup in 2018 after 28 years",
+      "Salah played through a shoulder injury sustained in the 2018 Champions League final",
+      "Lost all three games in 2018 but the qualification campaign was celebrated nationwide"
+    ]
+  }
+}

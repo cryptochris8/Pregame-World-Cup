@@ -1,0 +1,41 @@
+{
+  "fifaCode": "JPN",
+  "teamName": "Japan",
+  "worldCupHistory": {
+    "totalAppearances": 7,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 2022,
+    "appearances": [
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 24,
+      "won": 8,
+      "drawn": 5,
+      "lost": 11,
+      "goalsFor": 29,
+      "goalsAgainst": 33
+    },
+    "topScorers": [
+      { "name": "Keisuke Honda", "goals": 4, "tournaments": "2010, 2014, 2018" },
+      { "name": "Shinji Okazaki", "goals": 3, "tournaments": "2010, 2014" },
+      { "name": "Junichi Inamoto", "goals": 3, "tournaments": "2002, 2006" }
+    ],
+    "notableMoments": [
+      "Co-hosted the 2002 World Cup with South Korea and reached the Round of 16",
+      "Beat Germany and Spain in the 2022 group stage to top the group",
+      "Lost to Croatia on penalties in the 2022 Round of 16 after dominating the group",
+      "Lost to Belgium 3-2 in the 2018 Round of 16 after leading 2-0",
+      "Known for fans cleaning the stadium after matches - a cultural trademark",
+      "Qualified for every World Cup since their debut in 1998"
+    ]
+  }
+}

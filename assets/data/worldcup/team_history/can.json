@@ -1,0 +1,34 @@
+{
+  "fifaCode": "CAN",
+  "teamName": "Canada",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2022,
+    "appearances": [
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 6,
+      "won": 0,
+      "drawn": 1,
+      "lost": 5,
+      "goalsFor": 2,
+      "goalsAgainst": 11
+    },
+    "topScorers": [
+      { "name": "Alphonso Davies", "goals": 1, "tournaments": "2022" },
+      { "name": "Cyle Larin", "goals": 0, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "First World Cup appearance in 1986 - lost all three group games without scoring",
+      "36-year wait for second World Cup appearance ended in 2022",
+      "Alphonso Davies scored Canada's first-ever World Cup goal vs Croatia in 2022",
+      "Despite group-stage exit in 2022, showed competitiveness against Belgium and Croatia",
+      "Co-hosting the 2026 World Cup with USA and Mexico"
+    ]
+  }
+}

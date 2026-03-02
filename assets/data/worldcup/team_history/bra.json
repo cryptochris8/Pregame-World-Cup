@@ -1,0 +1,62 @@
+{
+  "fifaCode": "BRA",
+  "teamName": "Brazil",
+  "worldCupHistory": {
+    "totalAppearances": 22,
+    "titles": 5,
+    "titleYears": [1958, 1962, 1970, 1994, 2002],
+    "bestFinish": "Winners",
+    "bestFinishYear": 2002,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1934, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1938, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1950, "result": "Runners-up", "stage": "Final Round" },
+      { "year": 1954, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1958, "result": "Winners", "stage": "Final" },
+      { "year": 1962, "result": "Winners", "stage": "Final" },
+      { "year": 1966, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1970, "result": "Winners", "stage": "Final" },
+      { "year": 1974, "result": "Fourth Place", "stage": "Third-place match" },
+      { "year": 1978, "result": "Third Place", "stage": "Second Round" },
+      { "year": 1982, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1986, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1990, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1994, "result": "Winners", "stage": "Final" },
+      { "year": 1998, "result": "Runners-up", "stage": "Final" },
+      { "year": 2002, "result": "Winners", "stage": "Final" },
+      { "year": 2006, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2010, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2014, "result": "Fourth Place", "stage": "Third-place match" },
+      { "year": 2018, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2022, "result": "Quarter-finals", "stage": "Quarter-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 114,
+      "won": 76,
+      "drawn": 19,
+      "lost": 19,
+      "goalsFor": 237,
+      "goalsAgainst": 108
+    },
+    "topScorers": [
+      { "name": "Ronaldo", "goals": 15, "tournaments": "1998, 2002, 2006" },
+      { "name": "Pelé", "goals": 12, "tournaments": "1958, 1962, 1966, 1970" },
+      { "name": "Neymar", "goals": 8, "tournaments": "2014, 2018, 2022" },
+      { "name": "Rivaldo", "goals": 8, "tournaments": "1998, 2002" },
+      { "name": "Ademir", "goals": 9, "tournaments": "1950" },
+      { "name": "Jairzinho", "goals": 7, "tournaments": "1970, 1974" },
+      { "name": "Vavá", "goals": 7, "tournaments": "1958, 1962" },
+      { "name": "Leônidas", "goals": 7, "tournaments": "1934, 1938" }
+    ],
+    "notableMoments": [
+      "Only nation to appear in every World Cup since 1930",
+      "Record 5 World Cup titles (1958, 1962, 1970, 1994, 2002)",
+      "17-year-old Pelé burst onto the world stage in 1958",
+      "1970 team widely regarded as the greatest ever World Cup side",
+      "Romário and Bebeto led 1994 triumph with penalty shootout win over Italy",
+      "Ronaldo scored twice in the 2002 final vs Germany for fifth title",
+      "Suffered historic 7-1 semi-final defeat to Germany at home in 2014"
+    ]
+  }
+}

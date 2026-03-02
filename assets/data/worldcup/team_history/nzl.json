@@ -1,0 +1,36 @@
+{
+  "fifaCode": "NZL",
+  "teamName": "New Zealand",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2010,
+    "appearances": [
+      { "year": 1982, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 6,
+      "won": 0,
+      "drawn": 3,
+      "lost": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 12
+    },
+    "topScorers": [
+      { "name": "Winston Reid", "goals": 1, "tournaments": "2010" },
+      { "name": "Shane Smeltz", "goals": 1, "tournaments": "2010" },
+      { "name": "Steve Sumner", "goals": 1, "tournaments": "1982" }
+    ],
+    "notableMoments": [
+      "Went unbeaten in the 2010 World Cup group stage with three draws (including vs Italy)",
+      "Only unbeaten team at the 2010 World Cup besides eventual champions Spain",
+      "Drew 1-1 with reigning champions Italy in the 2010 group stage",
+      "28-year gap between first (1982) and second (2010) World Cup appearances",
+      "Lost all three matches in their 1982 debut including 5-2 to Scotland",
+      "Known as the 'All Whites' - OFC's most successful football nation"
+    ]
+  }
+}

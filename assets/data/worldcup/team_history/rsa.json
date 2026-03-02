@@ -1,0 +1,37 @@
+{
+  "fifaCode": "RSA",
+  "teamName": "South Africa",
+  "worldCupHistory": {
+    "totalAppearances": 3,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2010,
+    "appearances": [
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 9,
+      "won": 2,
+      "drawn": 4,
+      "lost": 3,
+      "goalsFor": 11,
+      "goalsAgainst": 15
+    },
+    "topScorers": [
+      { "name": "Siphiwe Tshabalala", "goals": 1, "tournaments": "2010" },
+      { "name": "Bongani Khumalo", "goals": 1, "tournaments": "2010" },
+      { "name": "Benni McCarthy", "goals": 3, "tournaments": "1998, 2002" }
+    ],
+    "notableMoments": [
+      "Hosted the 2010 World Cup - the first on African soil",
+      "Siphiwe Tshabalala's stunning opening goal of the 2010 World Cup vs Mexico",
+      "The vuvuzela became the iconic sound of the 2010 World Cup",
+      "Were banned from international football during apartheid (1961-1992)",
+      "Won the 1996 Africa Cup of Nations on home soil shortly after readmission",
+      "Only host nation (along with Qatar 2022) to be eliminated in the group stage"
+    ]
+  }
+}

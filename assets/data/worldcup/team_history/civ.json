@@ -1,0 +1,37 @@
+{
+  "fifaCode": "CIV",
+  "teamName": "Ivory Coast",
+  "worldCupHistory": {
+    "totalAppearances": 3,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2014,
+    "appearances": [
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 9,
+      "won": 3,
+      "drawn": 1,
+      "lost": 5,
+      "goalsFor": 12,
+      "goalsAgainst": 15
+    },
+    "topScorers": [
+      { "name": "Didier Drogba", "goals": 3, "tournaments": "2006, 2010, 2014" },
+      { "name": "Gervinho", "goals": 2, "tournaments": "2010, 2014" },
+      { "name": "Yaya Touré", "goals": 1, "tournaments": "2006, 2010, 2014" }
+    ],
+    "notableMoments": [
+      "Didier Drogba was the face of Ivorian football and helped end the country's civil war",
+      "Drew into the 'Group of Death' at both the 2006 and 2010 World Cups",
+      "2006 squad was dubbed the 'golden generation' with Drogba, Touré, Eboué, and Kalou",
+      "Won the 2024 Africa Cup of Nations as hosts despite a rocky start",
+      "Never advanced past the group stage despite consistently strong squads",
+      "Returning to the World Cup in 2026 after missing the 2018 and 2022 editions"
+    ]
+  }
+}

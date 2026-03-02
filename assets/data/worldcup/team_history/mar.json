@@ -1,0 +1,40 @@
+{
+  "fifaCode": "MAR",
+  "teamName": "Morocco",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Semi-finals",
+    "bestFinishYear": 2022,
+    "appearances": [
+      { "year": 1970, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1994, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "Fourth Place", "stage": "Semi-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 23,
+      "won": 7,
+      "drawn": 6,
+      "lost": 10,
+      "goalsFor": 22,
+      "goalsAgainst": 27
+    },
+    "topScorers": [
+      { "name": "Youssef En-Nesyri", "goals": 3, "tournaments": "2018, 2022" },
+      { "name": "Abderrazak Khairi", "goals": 2, "tournaments": "1986" },
+      { "name": "Salaheddine Bassir", "goals": 2, "tournaments": "1994, 1998" }
+    ],
+    "notableMoments": [
+      "First African team to top a World Cup group (1986)",
+      "Made history in 2022 as the first African and Arab nation to reach a World Cup semi-final",
+      "Beat Belgium, Spain, and Portugal in the 2022 knockout rounds",
+      "Achraf Hakimi's panenka penalty vs Spain in the 2022 Round of 16 was iconic",
+      "Lost to France 2-0 in the 2022 semi-final but finished fourth overall",
+      "The 2022 run united the entire Arab and African world behind their team"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fifaCode": "KOR",
+  "teamName": "Korea Republic",
+  "worldCupHistory": {
+    "totalAppearances": 11,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Fourth Place",
+    "bestFinishYear": 2002,
+    "appearances": [
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1990, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1994, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 37,
+      "won": 8,
+      "drawn": 10,
+      "lost": 19,
+      "goalsFor": 39,
+      "goalsAgainst": 72
+    },
+    "topScorers": [
+      { "name": "Ahn Jung-hwan", "goals": 3, "tournaments": "1998, 2002" },
+      { "name": "Park Ji-sung", "goals": 3, "tournaments": "2002, 2006, 2010" },
+      { "name": "Son Heung-min", "goals": 3, "tournaments": "2014, 2018, 2022" }
+    ],
+    "notableMoments": [
+      "Fourth place at the 2002 World Cup as co-hosts - the best finish by an Asian team",
+      "Beat Spain and Italy in the 2002 knockout rounds (both controversial results)",
+      "Son Heung-min scored against Germany in their shock 2-0 win at the 2018 World Cup",
+      "Germany's 2018 group-stage elimination was sealed by South Korea's 2-0 victory",
+      "One of only three non-European/South American teams to reach the semi-finals",
+      "Qualified for 10 consecutive World Cups from 1986 to 2022"
+    ]
+  }
+}

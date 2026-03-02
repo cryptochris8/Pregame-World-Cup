@@ -1,0 +1,29 @@
+{
+  "fifaCode": "CUW",
+  "teamName": "Curacao",
+  "worldCupHistory": {
+    "totalAppearances": 0,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "First appearance (2026)",
+    "bestFinishYear": null,
+    "appearances": [],
+    "allTimeRecord": {
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0
+    },
+    "topScorers": [],
+    "notableMoments": [
+      "2026 marks Curacao's first-ever FIFA World Cup appearance",
+      "Smallest country by population (~156,000) ever to qualify for the World Cup",
+      "Previously competed as part of the Netherlands Antilles until 2010",
+      "Historic qualification through the CONCACAF pathway in November 2025",
+      "Dick Advocaat, the experienced Dutch coach, guided their qualification",
+      "Island nation in the Caribbean making football history"
+    ]
+  }
+}

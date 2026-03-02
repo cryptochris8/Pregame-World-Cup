@@ -1,0 +1,41 @@
+{
+  "fifaCode": "COL",
+  "teamName": "Colombia",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 2014,
+    "appearances": [
+      { "year": 1962, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1990, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1994, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2018, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 21,
+      "won": 9,
+      "drawn": 3,
+      "lost": 9,
+      "goalsFor": 32,
+      "goalsAgainst": 30
+    },
+    "topScorers": [
+      { "name": "James Rodríguez", "goals": 6, "tournaments": "2014, 2018" },
+      { "name": "Arnoldo Iguarán", "goals": 2, "tournaments": "1990" },
+      { "name": "Faustino Asprilla", "goals": 2, "tournaments": "1994, 1998" },
+      { "name": "Freddy Rincón", "goals": 2, "tournaments": "1990, 1994, 1998" }
+    ],
+    "notableMoments": [
+      "James Rodríguez won the 2014 Golden Boot with 6 goals including a spectacular volley vs Uruguay",
+      "Best-ever finish of quarter-finals in 2014 in Brazil",
+      "Carlos Valderrama's iconic hair and playmaking defined Colombia in the 1990s",
+      "Tragic own goal by Andrés Escobar in 1994 led to his murder after returning home",
+      "The 1990 team featuring Valderrama and Higuita surprised the world",
+      "Higuita's famous 'Scorpion Kick' was in a friendly, but he defined Colombia's flair"
+    ]
+  }
+}

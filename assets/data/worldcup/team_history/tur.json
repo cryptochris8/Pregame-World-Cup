@@ -1,0 +1,36 @@
+{
+  "fifaCode": "TUR",
+  "teamName": "Turkey",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 2002,
+    "appearances": [
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "Third Place", "stage": "Semi-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 10,
+      "won": 5,
+      "drawn": 1,
+      "lost": 4,
+      "goalsFor": 20,
+      "goalsAgainst": 17
+    },
+    "topScorers": [
+      { "name": "Hakan Şükür", "goals": 3, "tournaments": "2002" },
+      { "name": "İlhan Mansız", "goals": 3, "tournaments": "2002" },
+      { "name": "Suat Mamat", "goals": 3, "tournaments": "1954" }
+    ],
+    "notableMoments": [
+      "Third place at the 2002 World Cup was a stunning achievement on just their second appearance",
+      "Hakan Şükür scored the fastest goal in World Cup history (11 seconds) vs South Korea in the 2002 third-place match",
+      "Beat co-hosts South Korea in the 2002 third-place match",
+      "Eliminated Senegal in the 2002 semi-final with a golden goal",
+      "48-year gap between their first (1954) and second (2002) World Cup appearances",
+      "Returning to the World Cup in 2026 after a 24-year absence"
+    ]
+  }
+}

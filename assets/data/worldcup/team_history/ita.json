@@ -1,0 +1,55 @@
+{
+  "fifaCode": "ITA",
+  "teamName": "Italy",
+  "worldCupHistory": {
+    "totalAppearances": 18,
+    "titles": 4,
+    "titleYears": [1934, 1938, 1982, 2006],
+    "bestFinish": "Winners",
+    "bestFinishYear": 2006,
+    "appearances": [
+      { "year": 1934, "result": "Winners", "stage": "Final" },
+      { "year": 1938, "result": "Winners", "stage": "Final" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1962, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1966, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1970, "result": "Runners-up", "stage": "Final" },
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1978, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1982, "result": "Winners", "stage": "Final" },
+      { "year": 1986, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1990, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1994, "result": "Runners-up", "stage": "Final" },
+      { "year": 1998, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "Winners", "stage": "Final" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 83,
+      "won": 45,
+      "drawn": 21,
+      "lost": 17,
+      "goalsFor": 128,
+      "goalsAgainst": 77
+    },
+    "topScorers": [
+      { "name": "Paolo Rossi", "goals": 9, "tournaments": "1978, 1982, 1986" },
+      { "name": "Roberto Baggio", "goals": 9, "tournaments": "1990, 1994, 1998" },
+      { "name": "Christian Vieri", "goals": 9, "tournaments": "1998, 2002" },
+      { "name": "Salvatore Schillaci", "goals": 6, "tournaments": "1990" },
+      { "name": "Alessandro Altobelli", "goals": 5, "tournaments": "1982, 1986" }
+    ],
+    "notableMoments": [
+      "Won back-to-back World Cups in 1934 and 1938 - only Italy and Brazil have achieved this",
+      "Paolo Rossi's Golden Boot-winning performance led Italy to glory in 1982",
+      "Roberto Baggio's missed penalty in the 1994 final shootout remains iconic",
+      "Hosted the 1990 World Cup with Schillaci's 'Notti Magiche' (Magical Nights)",
+      "Materazzi-Zidane headbutt incident in the 2006 final; Italy won on penalties",
+      "Failed to qualify for the 2018 and 2022 World Cups - first absences since 1958",
+      "Return to the World Cup in 2026 after missing two consecutive tournaments"
+    ]
+  }
+}

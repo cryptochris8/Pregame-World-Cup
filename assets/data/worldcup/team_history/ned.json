@@ -1,0 +1,48 @@
+{
+  "fifaCode": "NED",
+  "teamName": "Netherlands",
+  "worldCupHistory": {
+    "totalAppearances": 11,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Runners-up",
+    "bestFinishYear": 2010,
+    "appearances": [
+      { "year": 1934, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1938, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1974, "result": "Runners-up", "stage": "Final" },
+      { "year": 1978, "result": "Runners-up", "stage": "Final" },
+      { "year": 1990, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1994, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1998, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "Runners-up", "stage": "Final" },
+      { "year": 2014, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 2022, "result": "Quarter-finals", "stage": "Quarter-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 55,
+      "won": 30,
+      "drawn": 14,
+      "lost": 11,
+      "goalsFor": 96,
+      "goalsAgainst": 52
+    },
+    "topScorers": [
+      { "name": "Robin van Persie", "goals": 6, "tournaments": "2006, 2010, 2014" },
+      { "name": "Dennis Bergkamp", "goals": 6, "tournaments": "1994, 1998" },
+      { "name": "Johnny Rep", "goals": 7, "tournaments": "1974, 1978" },
+      { "name": "Wesley Sneijder", "goals": 6, "tournaments": "2006, 2010, 2014" },
+      { "name": "Rob Rensenbrink", "goals": 6, "tournaments": "1974, 1978" }
+    ],
+    "notableMoments": [
+      "Three World Cup final appearances without ever winning - a record",
+      "Johan Cruyff's 'Total Football' revolutionized the game in 1974",
+      "Cruyff Turn became one of football's most iconic moves (1974 vs Sweden)",
+      "Runners-up in three finals: 1974, 1978, and 2010",
+      "Robin van Persie's diving header vs Spain in the 2014 group stage became iconic",
+      "Beat Brazil 3-0 in the 2014 third-place match",
+      "Failed to qualify for 2002 and 2018 World Cups"
+    ]
+  }
+}

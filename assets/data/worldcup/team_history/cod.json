@@ -1,0 +1,31 @@
+{
+  "fifaCode": "COD",
+  "teamName": "DR Congo",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1974,
+    "appearances": [
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 0,
+      "goalsAgainst": 14
+    },
+    "topScorers": [],
+    "notableMoments": [
+      "Only World Cup appearance was in 1974 as Zaire (former name of DR Congo)",
+      "Lost all three group matches: Scotland 0-2, Yugoslavia 0-9, Brazil 0-3",
+      "The 0-9 defeat to Yugoslavia remains the joint-worst World Cup loss",
+      "Ilunga Mwepu's infamous free kick incident against Brazil in 1974 is part of World Cup folklore",
+      "Won the Africa Cup of Nations in 1968 and 1974 as Zaire",
+      "Returning to the World Cup after a 52-year absence"
+    ]
+  }
+}

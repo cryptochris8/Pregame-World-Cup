@@ -1,0 +1,39 @@
+{
+  "fifaCode": "DEN",
+  "teamName": "Denmark",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 1998,
+    "appearances": [
+      { "year": 1986, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 22,
+      "won": 9,
+      "drawn": 5,
+      "lost": 8,
+      "goalsFor": 33,
+      "goalsAgainst": 28
+    },
+    "topScorers": [
+      { "name": "Jon Dahl Tomasson", "goals": 5, "tournaments": "1998, 2002, 2010" },
+      { "name": "Preben Elkjær", "goals": 4, "tournaments": "1986" },
+      { "name": "Michael Laudrup", "goals": 2, "tournaments": "1986, 1998" }
+    ],
+    "notableMoments": [
+      "Debuted at the 1986 World Cup with 'Danish Dynamite' - won all group games before losing to Spain",
+      "Best finish of quarter-finals in 1998 in France, beating Nigeria 4-1 in the Round of 16",
+      "Known for their 1992 European Championship fairy tale (called up last-minute, won the tournament)",
+      "Christian Eriksen collapsed on the pitch at Euro 2020, made remarkable recovery and played at the 2022 World Cup",
+      "Michael and Brian Laudrup were among the greatest Danish players of all time"
+    ]
+  }
+}

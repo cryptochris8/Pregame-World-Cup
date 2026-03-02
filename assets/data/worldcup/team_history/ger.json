@@ -1,0 +1,59 @@
+{
+  "fifaCode": "GER",
+  "teamName": "Germany",
+  "worldCupHistory": {
+    "totalAppearances": 20,
+    "titles": 4,
+    "titleYears": [1954, 1974, 1990, 2014],
+    "bestFinish": "Winners",
+    "bestFinishYear": 2014,
+    "appearances": [
+      { "year": 1934, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1938, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1954, "result": "Winners", "stage": "Final" },
+      { "year": 1958, "result": "Fourth Place", "stage": "Semi-finals" },
+      { "year": 1962, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1966, "result": "Runners-up", "stage": "Final" },
+      { "year": 1970, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 1974, "result": "Winners", "stage": "Final" },
+      { "year": 1978, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1982, "result": "Runners-up", "stage": "Final" },
+      { "year": 1986, "result": "Runners-up", "stage": "Final" },
+      { "year": 1990, "result": "Winners", "stage": "Final" },
+      { "year": 1994, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1998, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2002, "result": "Runners-up", "stage": "Final" },
+      { "year": 2006, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 2010, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 2014, "result": "Winners", "stage": "Final" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 114,
+      "won": 72,
+      "drawn": 21,
+      "lost": 21,
+      "goalsFor": 232,
+      "goalsAgainst": 130
+    },
+    "topScorers": [
+      { "name": "Miroslav Klose", "goals": 16, "tournaments": "2002, 2006, 2010, 2014" },
+      { "name": "Gerd Müller", "goals": 14, "tournaments": "1970, 1974" },
+      { "name": "Jürgen Klinsmann", "goals": 11, "tournaments": "1990, 1994, 1998" },
+      { "name": "Thomas Müller", "goals": 10, "tournaments": "2010, 2014, 2018, 2022" },
+      { "name": "Helmut Rahn", "goals": 10, "tournaments": "1954, 1958" }
+    ],
+    "notableMoments": [
+      "The 'Miracle of Bern' - stunning upset win in the 1954 final vs Hungary",
+      "Hosted and won the 1974 World Cup with Beckenbauer and Müller",
+      "Reunification triumph winning the 1990 World Cup in Italy",
+      "Historic 7-1 demolition of Brazil in the 2014 semi-final in Belo Horizonte",
+      "Götze's extra-time goal won the 2014 final against Argentina",
+      "Record 8 World Cup final appearances",
+      "12 podium finishes (3rd or better) - more than any other nation",
+      "Miroslav Klose became all-time World Cup top scorer with 16 goals",
+      "Consecutive group-stage exits in 2018 and 2022 ended dominant era"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "fifaCode": "AUS",
+  "teamName": "Australia",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 2022,
+    "appearances": [
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 20,
+      "won": 5,
+      "drawn": 4,
+      "lost": 11,
+      "goalsFor": 21,
+      "goalsAgainst": 36
+    },
+    "topScorers": [
+      { "name": "Tim Cahill", "goals": 5, "tournaments": "2006, 2010, 2014" },
+      { "name": "John Aloisi", "goals": 1, "tournaments": "2006" },
+      { "name": "Craig Moore", "goals": 1, "tournaments": "2006" }
+    ],
+    "notableMoments": [
+      "First World Cup appearance in 1974 under the OFC confederation",
+      "Switched from OFC to AFC in 2006 and immediately reached the Round of 16",
+      "Tim Cahill became Australia's greatest World Cup scorer with 5 goals",
+      "Beat Denmark 1-0 and Tunisia 1-0 in the 2022 group stage to reach the Round of 16",
+      "32-year gap between first (1974) and second (2006) World Cup appearances",
+      "Harry Kewell's generation transformed Australian football in the 2000s"
+    ]
+  }
+}

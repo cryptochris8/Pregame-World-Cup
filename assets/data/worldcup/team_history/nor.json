@@ -1,0 +1,37 @@
+{
+  "fifaCode": "NOR",
+  "teamName": "Norway",
+  "worldCupHistory": {
+    "totalAppearances": 3,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 1998,
+    "appearances": [
+      { "year": 1938, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1994, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 8,
+      "won": 2,
+      "drawn": 3,
+      "lost": 3,
+      "goalsFor": 7,
+      "goalsAgainst": 8
+    },
+    "topScorers": [
+      { "name": "Tore André Flo", "goals": 2, "tournaments": "1998" },
+      { "name": "Kjetil Rekdal", "goals": 1, "tournaments": "1994, 1998" },
+      { "name": "Arne Brustad", "goals": 1, "tournaments": "1938" }
+    ],
+    "notableMoments": [
+      "First World Cup appearance in 1938, lost 2-1 to Italy in extra time",
+      "56-year gap between first (1938) and second (1994) World Cup appearances",
+      "Beat Brazil 2-1 in the 1998 group stage - one of Norway's greatest results",
+      "Reached the Round of 16 in 1998 before losing to Italy",
+      "Returning to the World Cup in 2026 after a 28-year absence",
+      "Erling Haaland making his World Cup debut in 2026"
+    ]
+  }
+}

@@ -204,7 +204,10 @@ class LocalPredictionEngine {
     return _tanh(diff / 20.0);
   }
 
-  /// Factor 3: Recent form (W=3, D=1, L=0) over last matches
+  /// Factor 3: Recent form weighted by opponent quality and competition type.
+  ///
+  /// Uses tanh scaling on the difference so that a ~1.5 point gap maps to
+  /// approximately +/-0.8, providing smooth saturation.
   double _scoreRecentForm(String homeCode, String awayCode) {
     final homeForm = _data.getRecentForm(homeCode);
     final awayForm = _data.getRecentForm(awayCode);
@@ -213,12 +216,11 @@ class LocalPredictionEngine {
     final awayPoints = _formPoints(awayForm);
 
     if (homePoints == null && awayPoints == null) return 0.0;
-    final hp = homePoints ?? 1.5; // neutral default
-    final ap = awayPoints ?? 1.5;
+    final hp = homePoints ?? 0.75; // neutral default (midpoint of typical range)
+    final ap = awayPoints ?? 0.75;
 
-    if (hp + ap == 0) return 0.0;
-    final diff = (hp - ap) / (hp + ap);
-    return diff.clamp(-1.0, 1.0);
+    // Use tanh scaling: a difference of ~1.5 points maps to ~0.8
+    return _tanh((hp - ap) / 1.5);
   }
 
   /// Factor 4: Squad market value ratio
@@ -690,23 +692,269 @@ class LocalPredictionEngine {
     return (e2x - 1) / (e2x + 1);
   }
 
-  /// Compute form points from recent matches (W=3, D=1, L=0), averaged per game
+  /// Compute form points from recent matches, weighted by opponent quality
+  /// and competition importance.
+  ///
+  /// For each match:
+  ///   - Base points: W=3, D=1, L=0
+  ///   - Opponent weight: `max(0.5, min(2.0, (200 - opponentRank) / 100))`
+  ///     so rank 1 -> 1.99, rank 50 -> 1.5, rank 100 -> 1.0, rank 200 -> 0.5
+  ///   - Competition multiplier: WC qualifier 1.2, continental 1.3, friendly 0.7, etc.
+  ///   - For wins: `3.0 * opponentWeight * competitionMultiplier`
+  ///   - For draws: `1.0 * opponentWeight * competitionMultiplier`
+  ///   - For losses: penalty = `-0.5 * (1.0 / opponentWeight) * competitionMultiplier`
+  ///     (losing to weak teams penalizes more than losing to strong teams)
+  ///
+  /// Returns weighted average points per match.
   double? _formPoints(Map<String, dynamic>? form) {
     if (form == null) return null;
     final matches = (form['recent_matches'] ?? form['matches']) as List<dynamic>?;
     if (matches == null || matches.isEmpty) return null;
 
-    double total = 0;
+    double totalWeighted = 0;
+    double totalWeight = 0;
+
     for (final m in matches) {
-      final result = (m as Map<String, dynamic>)['result'] as String?;
+      final match = m as Map<String, dynamic>;
+      final result = match['result'] as String?;
+      final opponent = match['opponent'] as String?;
+      final competition = match['competition'] as String?;
+
+      final opponentRank = _estimateOpponentRank(opponent);
+      final opponentWeight = _opponentQualityWeight(opponentRank);
+      final compMultiplier = _competitionMultiplier(competition);
+
+      double points;
       if (result == 'W') {
-        total += 3;
+        points = 3.0 * opponentWeight * compMultiplier;
       } else if (result == 'D') {
-        total += 1;
+        points = 1.0 * opponentWeight * compMultiplier;
+      } else {
+        // Loss: penalty inversely proportional to opponent strength
+        // Losing to rank 1 team: -0.5 * (1/1.99) * comp = ~-0.25
+        // Losing to rank 150 team: -0.5 * (1/0.5) * comp = -1.0
+        points = -0.5 * (1.0 / opponentWeight) * compMultiplier;
       }
+
+      totalWeighted += points;
+      totalWeight += compMultiplier;
     }
-    return total / matches.length;
+
+    if (totalWeight == 0) return null;
+    // Normalize so the scale is comparable to the old 0-3 range:
+    // Perfect form (all wins vs top teams at continental level):
+    //   3.0 * 2.0 * 1.3 = 7.8 per match, but we normalize by weight sum
+    //   so a perfect run ~ 7.8 * N / (1.3 * N) = 6.0
+    // We scale back to roughly 0-3 range by dividing by 2
+    return (totalWeighted / totalWeight) / 2.0;
   }
+
+  /// Estimate FIFA ranking for an opponent by name.
+  /// Uses a lookup of approximate rankings for all known opponents.
+  /// Returns 100 as default for truly unknown opponents.
+  int _estimateOpponentRank(String? opponentName) {
+    if (opponentName == null) return 100;
+    return _opponentRankings[opponentName] ?? 100;
+  }
+
+  /// Compute opponent quality weight from estimated FIFA ranking.
+  /// Range: 0.5 (rank 200+) to 2.0 (rank ~1).
+  double _opponentQualityWeight(int rank) {
+    return ((200 - rank) / 100.0).clamp(0.5, 2.0);
+  }
+
+  /// Competition importance multiplier.
+  /// World Cup qualifiers: 1.2x, continental championships: 1.3x,
+  /// Nations League: 1.0x, friendlies: 0.7x.
+  double _competitionMultiplier(String? competition) {
+    if (competition == null) return 1.0;
+    final lower = competition.toLowerCase();
+
+    // Continental championships (highest importance after WC itself)
+    if (lower.contains('afcon') ||
+        lower.contains('africa cup') ||
+        lower.contains('copa america') ||
+        lower.contains('euro ') ||
+        lower.contains('european championship') ||
+        lower.contains('asian cup') ||
+        lower.contains('gold cup') ||
+        lower.contains('arab cup')) {
+      return 1.3;
+    }
+
+    // World Cup qualifiers
+    if (lower.contains('world cup qual') ||
+        lower.contains('wcq') ||
+        lower.contains('world cup qualifier')) {
+      return 1.2;
+    }
+
+    // Nations League (competitive but not as high-stakes)
+    if (lower.contains('nations league')) {
+      return 1.0;
+    }
+
+    // Friendlies
+    if (lower.contains('friendly') || lower.contains('kirin cup') ||
+        lower.contains('soccer ashes') || lower.contains('al ain')) {
+      return 0.7;
+    }
+
+    // Default for unknown competitions
+    return 1.0;
+  }
+
+  /// Approximate FIFA rankings for all known opponents in the recent form data.
+  /// Rankings are based on the FIFA/Coca-Cola Men's World Ranking (Jan 2026).
+  /// Non-WC teams use estimated rankings from publicly available data.
+  static const Map<String, int> _opponentRankings = {
+    // WC 2026 qualified teams (48 teams)
+    'Spain': 1,
+    'Argentina': 2,
+    'France': 3,
+    'England': 4,
+    'Brazil': 5,
+    'Belgium': 6,
+    'Netherlands': 7,
+    'Morocco': 8,
+    'Portugal': 9,
+    'Colombia': 10,
+    'Italy': 11,
+    'Senegal': 12,
+    'Germany': 13,
+    'Croatia': 14,
+    'Uruguay': 15,
+    'Japan': 16,
+    'United States': 17,
+    'Mexico': 18,
+    'Ecuador': 19,
+    'Denmark': 20,
+    'Turkey': 21,
+    'Egypt': 22,
+    'Serbia': 23,
+    'South Korea': 24,
+    'Switzerland': 25,
+    'Iran': 26,
+    'Australia': 27,
+    'Nigeria': 28,
+    'Norway': 29,
+    'Poland': 30,
+    'Canada': 31,
+    'Saudi Arabia': 32,
+    'Cameroon': 33,
+    'Panama': 34,
+    'Qatar': 35,
+    'Paraguay': 36,
+    'Slovenia': 37,
+    'Costa Rica': 38,
+    'Bolivia': 39,
+    'Uzbekistan': 40,
+    'Jamaica': 41,
+    'Indonesia': 42,
+    'Albania': 43,
+    'Chile': 44,
+    'Peru': 45,
+    'Honduras': 46,
+    'New Zealand': 47,
+    'Trinidad and Tobago': 48,
+    // Non-WC opponents (estimated from FIFA rankings)
+    'Algeria': 35,
+    'Andorra': 155,
+    'Angola': 80,
+    'Armenia': 95,
+    'Azerbaijan': 110,
+    'Bahrain': 85,
+    'Belarus': 90,
+    'Benin': 90,
+    'Bermuda': 170,
+    'Bosnia and Herzegovina': 55,
+    'Botswana': 140,
+    'Bulgaria': 70,
+    'Burkina Faso': 50,
+    'Cape Verde': 60,
+    'Central African Republic': 130,
+    'Chad': 160,
+    'China': 75,
+    'Comoros': 110,
+    'Congo': 85,
+    'Cote d\'Ivoire': 38,
+    'Ivory Coast': 38,
+    'Cuba': 170,
+    'Curacao': 80,
+    'Cyprus': 105,
+    'Czech Republic': 40,
+    'DR Congo': 55,
+    'Dominican Republic': 150,
+    'El Salvador': 75,
+    'Equatorial Guinea': 90,
+    'Estonia': 115,
+    'Eswatini': 150,
+    'Faroe Islands': 120,
+    'Fiji': 160,
+    'Finland': 60,
+    'Gabon': 85,
+    'Georgia': 50,
+    'Ghana': 45,
+    'Gibraltar': 195,
+    'Greece': 45,
+    'Guadeloupe': 165,
+    'Guatemala': 80,
+    'Haiti': 85,
+    'Hungary': 35,
+    'Iceland': 65,
+    'Iraq': 55,
+    'Israel': 70,
+    'Jordan': 65,
+    'Kazakhstan': 100,
+    'Kenya': 95,
+    'Kosovo': 100,
+    'Kuwait': 140,
+    'Kyrgyz Republic': 95,
+    'Kyrgyzstan': 95,
+    'Latvia': 110,
+    'Lesotho': 145,
+    'Liberia': 120,
+    'Libya': 95,
+    'Liechtenstein': 190,
+    'Lithuania': 115,
+    'Luxembourg': 85,
+    'Malaysia': 130,
+    'Mali': 45,
+    'Malta': 165,
+    'Mauritius': 175,
+    'Moldova': 115,
+    'Montenegro': 70,
+    'Mozambique': 95,
+    'New Caledonia': 160,
+    'Nicaragua': 140,
+    'North Korea': 110,
+    'North Macedonia': 65,
+    'Northern Ireland': 55,
+    'Oman': 75,
+    'Palestine': 100,
+    'Puerto Rico': 170,
+    'Republic of Ireland': 55,
+    'Romania': 35,
+    'Rwanda': 120,
+    'San Marino': 210,
+    'Scotland': 40,
+    'Seychelles': 195,
+    'Slovakia': 45,
+    'South Africa': 55,
+    'Sudan': 120,
+    'Suriname': 130,
+    'Sweden': 40,
+    'Tanzania': 115,
+    'Tunisia': 35,
+    'UAE': 65,
+    'United Arab Emirates': 65,
+    'Uganda': 80,
+    'Ukraine': 25,
+    'Venezuela': 45,
+    'Wales': 60,
+    'Zambia': 80,
+    'Zimbabwe': 105,
+  };
 
   /// Bonus score for best World Cup finish
   double _bestFinishBonus(String? bestFinish) {

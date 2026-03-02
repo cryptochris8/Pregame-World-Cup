@@ -1,0 +1,41 @@
+{
+  "fifaCode": "CRO",
+  "teamName": "Croatia",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Runners-up",
+    "bestFinishYear": 2018,
+    "appearances": [
+      { "year": 1998, "result": "Third Place", "stage": "Semi-finals" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "Runners-up", "stage": "Final" },
+      { "year": 2022, "result": "Third Place", "stage": "Semi-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 33,
+      "won": 14,
+      "drawn": 6,
+      "lost": 13,
+      "goalsFor": 45,
+      "goalsAgainst": 40
+    },
+    "topScorers": [
+      { "name": "Davor Šuker", "goals": 6, "tournaments": "1998" },
+      { "name": "Ivan Perišić", "goals": 4, "tournaments": "2014, 2018, 2022" },
+      { "name": "Mario Mandžukić", "goals": 3, "tournaments": "2014, 2018" }
+    ],
+    "notableMoments": [
+      "Remarkable debut at the 1998 World Cup - third place in their first ever tournament",
+      "Davor Šuker won the Golden Boot with 6 goals in 1998",
+      "Reached the 2018 final as one of the smallest countries ever to do so (population ~4 million)",
+      "Lost the 2018 final 4-2 to France but captured hearts worldwide",
+      "Won three consecutive knockout games via extra time/penalties in 2018",
+      "Third consecutive podium finish: 3rd (1998), 2nd (2018), 3rd (2022)",
+      "Luka Modrić won the 2018 Golden Ball award"
+    ]
+  }
+}

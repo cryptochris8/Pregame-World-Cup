@@ -1,0 +1,33 @@
+{
+  "fifaCode": "HAI",
+  "teamName": "Haiti",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1974,
+    "appearances": [
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 14
+    },
+    "topScorers": [
+      { "name": "Emmanuel Sanon", "goals": 2, "tournaments": "1974" }
+    ],
+    "notableMoments": [
+      "Only previous World Cup appearance was in 1974 in West Germany",
+      "Emmanuel Sanon broke Italy goalkeeper Dino Zoff's record of 1,142 minutes without conceding",
+      "Sanon's goal against Italy in 1974 was a historic moment for Caribbean football",
+      "52-year wait for a return to the World Cup ends with 2026 qualification",
+      "Became the second Caribbean nation (after Curacao) to qualify for 2026",
+      "Known as 'Les Grenadiers' - a proud football tradition despite economic challenges"
+    ]
+  }
+}
