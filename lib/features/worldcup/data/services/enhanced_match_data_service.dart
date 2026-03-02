@@ -29,7 +29,9 @@ class EnhancedMatchDataService {
   Map<String, dynamic>? _confederationRecords;
   Map<String, dynamic>? _bettingOdds;
   Map<String, dynamic>? _injuryTracker;
+  Map<String, dynamic>? _teamsMetadata;
   final Map<String, Map<String, dynamic>> _h2hCache = {};
+  final Map<String, Map<String, dynamic>?> _teamSquadCache = {};
   bool _isInitialized = false;
 
   /// Initialize the service by loading all data files
@@ -43,6 +45,7 @@ class EnhancedMatchDataService {
       _loadConfederationRecords(),
       _loadBettingOdds(),
       _loadInjuryTracker(),
+      _loadTeamsMetadata(),
     ]);
 
     _isInitialized = true;
@@ -90,6 +93,10 @@ class EnhancedMatchDataService {
 
   Future<void> _loadInjuryTracker() async {
     _injuryTracker = await _loadJsonAsset('assets/data/worldcup/injury_tracker.json');
+  }
+
+  Future<void> _loadTeamsMetadata() async {
+    _teamsMetadata = await _loadJsonAsset('assets/data/worldcup/teams_metadata.json');
   }
 
   Future<Map<String, dynamic>?> _loadJsonAsset(String path) async {
@@ -309,6 +316,35 @@ class EnhancedMatchDataService {
             (p as Map<String, dynamic>)['availabilityStatus'] != 'fit')
         .map((p) => p as Map<String, dynamic>)
         .toList();
+  }
+
+  /// Get the confederation string for a team from teams_metadata.json.
+  ///
+  /// Returns the confederation abbreviation (e.g., 'UEFA', 'CONMEBOL', 'AFC')
+  /// or null if not found.
+  String? getTeamConfederation(String teamCode) {
+    if (_teamsMetadata == null) return null;
+    final teamData = _teamsMetadata![teamCode] as Map<String, dynamic>?;
+    return teamData?['confederation'] as String?;
+  }
+
+  /// Get the full confederation records data.
+  Map<String, dynamic>? getConfederationRecords() {
+    return _confederationRecords;
+  }
+
+  /// Get team squad player list (lazy loaded and cached).
+  ///
+  /// Returns the parsed JSON for the team file at
+  /// `assets/data/worldcup/teams/<code>.json`, which contains a `players`
+  /// list with position and marketValue for each player.
+  Future<Map<String, dynamic>?> getTeamSquadPlayers(String teamCode) async {
+    final lower = teamCode.toLowerCase();
+    if (_teamSquadCache.containsKey(lower)) return _teamSquadCache[lower];
+
+    final data = await _loadJsonAsset('assets/data/worldcup/teams/$lower.json');
+    _teamSquadCache[lower] = data;
+    return data;
   }
 
   /// Get manager tactical profile for a team

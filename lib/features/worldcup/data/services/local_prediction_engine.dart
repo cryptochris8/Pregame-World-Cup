@@ -7,10 +7,15 @@ import 'enhanced_match_data_service.dart';
 /// Deterministic local prediction engine that generates match predictions
 /// entirely from local JSON data — no external API calls.
 ///
-/// Uses a 9-factor weighted scoring algorithm:
-///   Betting Odds (25%), FIFA Ranking (20%), Recent Form (15%),
+/// Uses a 10-factor weighted scoring algorithm:
+///   Betting Odds (23%), FIFA Ranking (18%), Recent Form (15%),
 ///   Squad Value (10%), Head-to-Head (10%), Manager (5%),
-///   Host Advantage (5%), WC Experience (5%), Injury Impact (5%)
+///   Host Advantage (5%), WC Experience (5%), Injury Impact (5%),
+///   Confederation Records (4%)
+///
+/// Score prediction uses a Poisson distribution model calibrated to the
+/// World Cup average of ~2.5 goals per match, with attack/defense strength
+/// decomposition from positional squad market values.
 class LocalPredictionEngine {
   final EnhancedMatchDataService _data;
 
@@ -20,8 +25,8 @@ class LocalPredictionEngine {
   static const _hostNations = {'USA', 'MEX', 'CAN'};
 
   // Factor weights (sum = 1.0)
-  static const _wBettingOdds = 0.25;
-  static const _wFifaRanking = 0.20;
+  static const _wBettingOdds = 0.23;
+  static const _wFifaRanking = 0.18;
   static const _wRecentForm = 0.15;
   static const _wSquadValue = 0.10;
   static const _wHeadToHead = 0.10;
@@ -29,6 +34,7 @@ class LocalPredictionEngine {
   static const _wHostAdvantage = 0.05;
   static const _wWcExperience = 0.05;
   static const _wInjuryImpact = 0.05;
+  static const _wConfederationRecord = 0.04;
 
   LocalPredictionEngine({required EnhancedMatchDataService enhancedDataService})
       : _data = enhancedDataService;
@@ -59,6 +65,7 @@ class LocalPredictionEngine {
     final hostScore = _scoreHostAdvantage(homeCode, awayCode);
     final wcExpScore = _scoreWorldCupExperience(homeTeam, awayTeam);
     final injuryScore = _scoreInjuryImpact(homeCode, awayCode);
+    final confScore = _scoreConfederationRecord(homeTeam, awayTeam);
 
     // Weighted composite
     final composite = bettingScore * _wBettingOdds +
@@ -69,7 +76,8 @@ class LocalPredictionEngine {
         managerScore * _wManager +
         hostScore * _wHostAdvantage +
         wcExpScore * _wWcExperience +
-        injuryScore * _wInjuryImpact;
+        injuryScore * _wInjuryImpact +
+        confScore * _wConfederationRecord;
 
     // --- Probabilities ---
     final probs = _computeProbabilities(composite, match.stage.isKnockout);
@@ -77,8 +85,18 @@ class LocalPredictionEngine {
     final drawProb = probs['draw']!;
     final awayProb = probs['away']!;
 
-    // --- Score prediction ---
-    final scores = _predictScore(homeProb, drawProb, awayProb, match.stage.isKnockout);
+    // --- Attack/Defense strength decomposition ---
+    final homeStrength = await _computeTeamStrength(homeCode);
+    final awayStrength = await _computeTeamStrength(awayCode);
+
+    // --- Score prediction (Poisson model with attack/defense adjustment) ---
+    final scores = _predictScore(
+      homeProb, drawProb, awayProb, match.stage.isKnockout,
+      homeAttack: homeStrength?['attack'],
+      homeDefense: homeStrength?['defense'],
+      awayAttack: awayStrength?['attack'],
+      awayDefense: awayStrength?['defense'],
+    );
     final homeScore = scores['home']!;
     final awayScore = scores['away']!;
 
@@ -362,6 +380,98 @@ class LocalPredictionEngine {
     return _tanh((awayImpact - homeImpact) / 3.0);
   }
 
+  /// Factor 10: Confederation historical record at World Cups
+  ///
+  /// Looks up the head-to-head record between the two teams' confederations
+  /// from `confederation_records.json` and scores based on historical win
+  /// percentages. Returns 0.0 for intra-confederation matches or missing data.
+  double _scoreConfederationRecord(
+    NationalTeam? homeTeam,
+    NationalTeam? awayTeam,
+  ) {
+    if (homeTeam == null || awayTeam == null) return 0.0;
+
+    final homeConf = homeTeam.confederation.displayName;
+    final awayConf = awayTeam.confederation.displayName;
+
+    // Same confederation → no inter-confederation advantage
+    if (homeConf == awayConf) return 0.0;
+
+    final record = _data.getConfederationMatchup(homeConf, awayConf);
+    if (record == null) return 0.0;
+
+    final conf1 = record['confederation1'] as String? ?? '';
+    final conf1WinPct = ((record['confederation1WinPct'] as num?) ?? 0).toDouble();
+    final conf2WinPct = ((record['confederation2WinPct'] as num?) ?? 0).toDouble();
+
+    // Map to home/away perspective
+    final homeWinPct = (conf1 == homeConf) ? conf1WinPct : conf2WinPct;
+    final awayWinPct = (conf1 == homeConf) ? conf2WinPct : conf1WinPct;
+
+    if (homeWinPct + awayWinPct == 0) return 0.0;
+
+    // Normalize difference to [-1, 1]
+    final diff = (homeWinPct - awayWinPct) / (homeWinPct + awayWinPct);
+    return diff.clamp(-1.0, 1.0);
+  }
+
+  // ========== ATTACK/DEFENSE STRENGTH DECOMPOSITION ==========
+
+  /// Compute attack, defense, and midfield strength scores for a team
+  /// based on positional market values from the squad roster.
+  ///
+  /// Positions are classified as:
+  ///   - Attack: ST, LW, RW, CF, SS (strikers and wingers)
+  ///   - Midfield: CAM, CM, CDM, LM, RM (all midfield roles)
+  ///   - Defense: CB, LB, RB, LWB, RWB, GK (defenders and goalkeepers)
+  ///
+  /// Returns a map with keys 'attack', 'defense', 'midfield' containing
+  /// the total market value for each unit, or null if data unavailable.
+  Future<Map<String, double>?> _computeTeamStrength(String teamCode) async {
+    final teamData = await _data.getTeamSquadPlayers(teamCode);
+    if (teamData == null) return null;
+
+    final players = teamData['players'] as List<dynamic>?;
+    if (players == null || players.isEmpty) return null;
+
+    double attackValue = 0;
+    double defenseValue = 0;
+    double midfieldValue = 0;
+
+    for (final p in players) {
+      final player = p as Map<String, dynamic>;
+      final position = (player['position'] as String?) ?? '';
+      final value = ((player['marketValue'] as num?) ?? 0).toDouble();
+
+      if (_isAttackPosition(position)) {
+        attackValue += value;
+      } else if (_isDefensePosition(position)) {
+        defenseValue += value;
+      } else {
+        // Midfield and any unrecognized positions
+        midfieldValue += value;
+      }
+    }
+
+    return {
+      'attack': attackValue,
+      'defense': defenseValue,
+      'midfield': midfieldValue,
+    };
+  }
+
+  /// Whether a position code is an attacking role
+  bool _isAttackPosition(String position) {
+    const attackPositions = {'ST', 'LW', 'RW', 'CF', 'SS'};
+    return attackPositions.contains(position.toUpperCase());
+  }
+
+  /// Whether a position code is a defensive role (including GK)
+  bool _isDefensePosition(String position) {
+    const defensePositions = {'CB', 'LB', 'RB', 'LWB', 'RWB', 'GK'};
+    return defensePositions.contains(position.toUpperCase());
+  }
+
   // ========== PROBABILITY CALCULATION ==========
 
   Map<String, double> _computeProbabilities(double S, bool isKnockout) {
@@ -398,42 +508,100 @@ class LocalPredictionEngine {
     };
   }
 
-  // ========== SCORE PREDICTION ==========
+  // ========== SCORE PREDICTION (Poisson Model) ==========
 
+  /// Predict the most likely scoreline using a Poisson distribution model.
+  ///
+  /// Estimates expected goals for each team from win/draw/away probabilities,
+  /// then optionally adjusts for attack/defense strength imbalances using
+  /// positional squad market values. Finally, evaluates all scorelines from
+  /// 0-0 through 5-5 and returns the most probable one.
+  ///
+  /// The base expected goals use the World Cup average of ~2.5 goals per
+  /// match, distributed according to each team's share of the outcome
+  /// probabilities.
   Map<String, int> _predictScore(
     double homeProb,
     double drawProb,
     double awayProb,
-    bool isKnockout,
-  ) {
-    // World Cup score distribution lookup
-    // Maps dominant probability to most likely scoreline
-    if (drawProb >= homeProb && drawProb >= awayProb) {
-      // Draw most likely
-      return homeProb > awayProb
-          ? {'home': 1, 'away': 1}
-          : {'home': 0, 'away': 0};
+    bool isKnockout, {
+    double? homeAttack,
+    double? homeDefense,
+    double? awayAttack,
+    double? awayDefense,
+  }) {
+    // World Cup average ~2.5 goals per match
+    const totalExpectedGoals = 2.5;
+    final totalProb = homeProb + drawProb + awayProb;
+
+    // Base expected goals: each team gets goals proportional to their
+    // win probability + half the draw probability (shared goal expectation)
+    var homeExpected =
+        totalExpectedGoals * (homeProb + drawProb * 0.5) / totalProb;
+    var awayExpected =
+        totalExpectedGoals * (awayProb + drawProb * 0.5) / totalProb;
+
+    // --- Attack/Defense adjustment ---
+    // If we have positional strength data for both teams, adjust expected
+    // goals based on the matchup: home attack vs away defense, and vice versa.
+    if (homeAttack != null &&
+        homeDefense != null &&
+        awayAttack != null &&
+        awayDefense != null &&
+        homeAttack > 0 &&
+        homeDefense > 0 &&
+        awayAttack > 0 &&
+        awayDefense > 0) {
+      // Ratio > 1 means attacker's unit outvalues defender's unit
+      final homeAttackRatio = homeAttack / awayDefense;
+      final awayAttackRatio = awayAttack / homeDefense;
+
+      // Use log ratio so extreme differences are dampened, capped at +/-20%
+      final homeAdjust =
+          (math.log(homeAttackRatio) / math.log(3)).clamp(-0.20, 0.20);
+      final awayAdjust =
+          (math.log(awayAttackRatio) / math.log(3)).clamp(-0.20, 0.20);
+
+      homeExpected *= (1.0 + homeAdjust);
+      awayExpected *= (1.0 + awayAdjust);
     }
 
-    if (homeProb > awayProb) {
-      // Home favored
-      if (homeProb > 0.55) {
-        return {'home': 2, 'away': 0};
-      } else if (homeProb > 0.45) {
-        return {'home': 2, 'away': 1};
-      } else {
-        return {'home': 1, 'away': 0};
-      }
-    } else {
-      // Away favored
-      if (awayProb > 0.55) {
-        return {'home': 0, 'away': 2};
-      } else if (awayProb > 0.45) {
-        return {'home': 1, 'away': 2};
-      } else {
-        return {'home': 0, 'away': 1};
+    // Clamp expected goals to a realistic range
+    homeExpected = homeExpected.clamp(0.3, 3.5);
+    awayExpected = awayExpected.clamp(0.3, 3.5);
+
+    // Find the most likely scoreline using Poisson PMF
+    double bestProb = 0;
+    int bestHome = 0;
+    int bestAway = 0;
+
+    for (int h = 0; h <= 5; h++) {
+      for (int a = 0; a <= 5; a++) {
+        final p = _poissonPMF(h, homeExpected) * _poissonPMF(a, awayExpected);
+        if (p > bestProb) {
+          bestProb = p;
+          bestHome = h;
+          bestAway = a;
+        }
       }
     }
+
+    return {'home': bestHome, 'away': bestAway};
+  }
+
+  /// Poisson probability mass function: P(X = k) = (lambda^k * e^-lambda) / k!
+  double _poissonPMF(int k, double lambda) {
+    return math.pow(lambda, k) * math.exp(-lambda) / _factorial(k);
+  }
+
+  /// Factorial for small non-negative integers (k <= 5 in practice)
+  int _factorial(int n) {
+    if (n <= 1) return 1;
+    int result = 1;
+    for (int i = 2; i <= n; i++) {
+      result *= i;
+    }
+    return result;
   }
 
   // ========== CONFIDENCE ==========
