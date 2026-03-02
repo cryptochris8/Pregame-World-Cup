@@ -8,10 +8,14 @@ import 'enhanced_match_data_service.dart';
 /// entirely from local JSON data — no external API calls.
 ///
 /// Uses a 10-factor weighted scoring algorithm:
-///   Betting Odds (23%), FIFA Ranking (18%), Recent Form (15%),
+///   Betting Odds (23%), Elo Rating (18%), Recent Form (15%),
 ///   Squad Value (10%), Head-to-Head (10%), Manager (5%),
 ///   Host Advantage (5%), WC Experience (5%), Injury Impact (5%),
 ///   Confederation Records (4%)
+///
+/// The Elo Rating factor replaces the former FIFA Ranking factor, using the
+/// World Football Elo Rating system which better reflects true team strength
+/// by incorporating margin of victory, match importance, and home advantage.
 ///
 /// Score prediction uses a Poisson distribution model calibrated to the
 /// World Cup average of ~2.5 goals per match, with attack/defense strength
@@ -26,7 +30,7 @@ class LocalPredictionEngine {
 
   // Factor weights (sum = 1.0)
   static const _wBettingOdds = 0.23;
-  static const _wFifaRanking = 0.18;
+  static const _wEloRating = 0.18;
   static const _wRecentForm = 0.15;
   static const _wSquadValue = 0.10;
   static const _wHeadToHead = 0.10;
@@ -57,7 +61,7 @@ class LocalPredictionEngine {
 
     // --- Compute each factor score (-1 to +1, positive = home-favored) ---
     final bettingScore = _scoreBettingOdds(homeCode, awayCode);
-    final rankingScore = _scoreRanking(homeTeam, awayTeam);
+    final eloScore = _scoreEloRating(homeCode, awayCode, homeTeam, awayTeam);
     final formScore = _scoreRecentForm(homeCode, awayCode);
     final squadScore = _scoreSquadValue(homeCode, awayCode);
     final h2hScore = await _scoreHeadToHead(homeCode, awayCode);
@@ -69,7 +73,7 @@ class LocalPredictionEngine {
 
     // Weighted composite
     final composite = bettingScore * _wBettingOdds +
-        rankingScore * _wFifaRanking +
+        eloScore * _wEloRating +
         formScore * _wRecentForm +
         squadScore * _wSquadValue +
         h2hScore * _wHeadToHead +
@@ -125,13 +129,16 @@ class LocalPredictionEngine {
       homeCode: homeCode,
       awayCode: awayCode,
       bettingScore: bettingScore,
-      rankingScore: rankingScore,
+      eloScore: eloScore,
       formScore: formScore,
       squadScore: squadScore,
       h2hScore: h2hScore,
       hostScore: hostScore,
       injuryScore: injuryScore,
     );
+
+    // --- Load match summary for narrative enrichment ---
+    final matchSummary = await _data.getMatchSummary(homeCode, awayCode);
 
     final analysis = _generateAnalysis(
       homeName: homeName,
@@ -141,6 +148,7 @@ class LocalPredictionEngine {
       confidence: confidence,
       composite: composite,
       match: match,
+      matchSummary: matchSummary,
     );
 
     final quickInsight = _generateQuickInsight(
@@ -149,6 +157,7 @@ class LocalPredictionEngine {
       homeScore: homeScore,
       awayScore: awayScore,
       confidence: confidence,
+      matchSummary: matchSummary,
     );
 
     // Enhanced narrative sections
@@ -210,8 +219,33 @@ class LocalPredictionEngine {
     return diff.clamp(-1.0, 1.0);
   }
 
-  /// Factor 2: FIFA ranking comparison using tanh curve
-  double _scoreRanking(NationalTeam? homeTeam, NationalTeam? awayTeam) {
+  /// Factor 2: Elo rating comparison using tanh curve.
+  ///
+  /// Uses the World Football Elo Rating system, which is strictly superior
+  /// to FIFA rankings because it accounts for margin of victory, match
+  /// importance, and home advantage. Falls back to FIFA rankings if Elo
+  /// data is unavailable.
+  double _scoreEloRating(
+    String homeCode,
+    String awayCode,
+    NationalTeam? homeTeam,
+    NationalTeam? awayTeam,
+  ) {
+    final homeElo = _data.getEloRating(homeCode);
+    final awayElo = _data.getEloRating(awayCode);
+
+    if (homeElo != null && awayElo != null) {
+      final homeRating =
+          ((homeElo['eloRating'] as num?) ?? 1500).toDouble();
+      final awayRating =
+          ((awayElo['eloRating'] as num?) ?? 1500).toDouble();
+
+      // Elo difference of ~200 points ≈ 75% expected win rate.
+      // Scale so 200-point gap maps to ~0.76 via tanh(200/200).
+      return _tanh((homeRating - awayRating) / 200.0);
+    }
+
+    // Fallback: use FIFA rankings if Elo data is not available
     final homeRank = homeTeam?.fifaRanking ?? 50;
     final awayRank = awayTeam?.fifaRanking ?? 50;
 
@@ -628,7 +662,7 @@ class LocalPredictionEngine {
     required String homeCode,
     required String awayCode,
     required double bettingScore,
-    required double rankingScore,
+    required double eloScore,
     required double formScore,
     required double squadScore,
     required double h2hScore,
@@ -637,15 +671,27 @@ class LocalPredictionEngine {
   }) {
     final factors = <_FactorEntry>[];
 
-    // Ranking
-    if (homeTeam?.fifaRanking != null && awayTeam?.fifaRanking != null) {
-      final fav = rankingScore > 0 ? homeName : awayName;
-      final favRank = rankingScore > 0 ? homeTeam!.fifaRanking : awayTeam!.fifaRanking;
-      final undRank = rankingScore > 0 ? awayTeam!.fifaRanking : homeTeam!.fifaRanking;
-      factors.add(_FactorEntry(
-        rankingScore.abs(),
-        '$fav ranked #$favRank vs #$undRank in FIFA rankings',
-      ));
+    // Elo Rating (with fallback description for FIFA ranking)
+    if (eloScore.abs() > 0.01) {
+      final homeElo = _data.getEloRating(homeCode);
+      final awayElo = _data.getEloRating(awayCode);
+      if (homeElo != null && awayElo != null) {
+        final fav = eloScore > 0 ? homeName : awayName;
+        final favRating = eloScore > 0 ? homeElo['eloRating'] : awayElo['eloRating'];
+        final undRating = eloScore > 0 ? awayElo['eloRating'] : homeElo['eloRating'];
+        factors.add(_FactorEntry(
+          eloScore.abs(),
+          '$fav rated $favRating vs $undRating in Elo ratings',
+        ));
+      } else if (homeTeam?.fifaRanking != null && awayTeam?.fifaRanking != null) {
+        final fav = eloScore > 0 ? homeName : awayName;
+        final favRank = eloScore > 0 ? homeTeam!.fifaRanking : awayTeam!.fifaRanking;
+        final undRank = eloScore > 0 ? awayTeam!.fifaRanking : homeTeam!.fifaRanking;
+        factors.add(_FactorEntry(
+          eloScore.abs(),
+          '$fav ranked #$favRank vs #$undRank in FIFA rankings',
+        ));
+      }
     }
 
     // Form
@@ -730,6 +776,7 @@ class LocalPredictionEngine {
     required int confidence,
     required double composite,
     required WorldCupMatch match,
+    Map<String, dynamic>? matchSummary,
   }) {
     final winner = homeScore > awayScore
         ? homeName
@@ -738,17 +785,31 @@ class LocalPredictionEngine {
             : null;
     final stage = match.stage.displayName;
 
+    final buffer = StringBuffer();
+
+    // Prepend historical context from match summary if available
+    final historicalAnalysis =
+        matchSummary?['historicalAnalysis'] as String?;
+    if (historicalAnalysis != null && historicalAnalysis.isNotEmpty) {
+      // Use just the first sentence or two for conciseness
+      final sentences = historicalAnalysis.split(RegExp(r'(?<=\.)\s+'));
+      final snippet = sentences.take(2).join(' ');
+      buffer.write('$snippet ');
+    }
+
     if (winner != null) {
       final margin = (homeScore - awayScore).abs();
       final marginDesc = margin >= 2 ? 'comfortably' : 'narrowly';
-      return 'Our analysis points to $winner winning $marginDesc $homeScore-$awayScore '
+      buffer.write('Our analysis points to $winner winning $marginDesc $homeScore-$awayScore '
           'in this $stage clash. '
-          '${confidence >= 65 ? 'Multiple factors align strongly in their favor.' : 'However, this could be a tight affair with margins thin between the two sides.'}';
+          '${confidence >= 65 ? 'Multiple factors align strongly in their favor.' : 'However, this could be a tight affair with margins thin between the two sides.'}');
     } else {
-      return 'This $stage match looks evenly balanced, with a $homeScore-$awayScore draw '
+      buffer.write('This $stage match looks evenly balanced, with a $homeScore-$awayScore draw '
           'the most likely outcome. '
-          'Neither side holds a decisive advantage across the key factors.';
+          'Neither side holds a decisive advantage across the key factors.');
     }
+
+    return buffer.toString();
   }
 
   String _generateQuickInsight({
@@ -757,14 +818,25 @@ class LocalPredictionEngine {
     required int homeScore,
     required int awayScore,
     required int confidence,
+    Map<String, dynamic>? matchSummary,
   }) {
+    String scorePart;
     if (homeScore > awayScore) {
-      return '$homeName $homeScore-$awayScore ($confidence%)';
+      scorePart = '$homeName $homeScore-$awayScore ($confidence%)';
     } else if (awayScore > homeScore) {
-      return '$awayName $awayScore-$homeScore ($confidence%)';
+      scorePart = '$awayName $awayScore-$homeScore ($confidence%)';
     } else {
-      return 'Draw $homeScore-$awayScore ($confidence%)';
+      scorePart = 'Draw $homeScore-$awayScore ($confidence%)';
     }
+
+    // Append a key storyline from the match summary if available
+    final storylines = matchSummary?['keyStorylines'] as List<dynamic>?;
+    if (storylines != null && storylines.isNotEmpty) {
+      final storyline = storylines.first as String;
+      return '$scorePart — $storyline';
+    }
+
+    return scorePart;
   }
 
   String? _buildSquadValueNarrative(String homeCode, String awayCode) {

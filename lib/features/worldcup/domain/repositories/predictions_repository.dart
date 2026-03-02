@@ -55,4 +55,10 @@ abstract class PredictionsRepository {
 
   /// Clear all predictions
   Future<void> clearAllPredictions();
+
+  /// Sync all local predictions to Firestore (best-effort)
+  Future<void> syncToFirestore();
+
+  /// Pull predictions from Firestore to local storage (for new device login)
+  Future<void> syncFromFirestore();
 }

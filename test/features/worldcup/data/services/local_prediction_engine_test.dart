@@ -43,6 +43,9 @@ void main() {
     when(() => mockDataService.getConfederationRecords()).thenReturn(null);
     when(() => mockDataService.getTeamSquadPlayers(any()))
         .thenAnswer((_) async => null);
+    when(() => mockDataService.getEloRating(any())).thenReturn(null);
+    when(() => mockDataService.getMatchSummary(any(), any()))
+        .thenAnswer((_) async => null);
   });
 
   // ---------------------------------------------------------------------------
@@ -337,14 +340,27 @@ void main() {
   });
 
   // ---------------------------------------------------------------------------
-  // 4. FIFA ranking scoring
+  // 4. Elo rating scoring (replaces FIFA ranking)
   // ---------------------------------------------------------------------------
-  group('FIFA ranking scoring', () {
-    test('higher ranked home team produces home-favored prediction', () async {
+  group('Elo rating scoring', () {
+    test('higher Elo-rated home team produces home-favored prediction', () async {
+      when(() => mockDataService.getEloRating('USA')).thenReturn({
+        'teamCode': 'USA',
+        'teamName': 'United States',
+        'eloRating': 1800,
+        'rank': 5,
+      });
+      when(() => mockDataService.getEloRating('BRA')).thenReturn({
+        'teamCode': 'BRA',
+        'teamName': 'Brazil',
+        'eloRating': 1550,
+        'rank': 40,
+      });
+
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 1, isHostNation: false);
+      final home = homeTeam(fifaRanking: 10, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 50,
+        fifaRanking: 10,
         worldCupTitles: 0,
         worldCupAppearances: 2,
         bestFinish: null,
@@ -361,16 +377,29 @@ void main() {
           greaterThan(prediction.awayWinProbability));
     });
 
-    test('higher ranked away team produces away-favored prediction', () async {
+    test('higher Elo-rated away team produces away-favored prediction', () async {
+      when(() => mockDataService.getEloRating('USA')).thenReturn({
+        'teamCode': 'USA',
+        'teamName': 'United States',
+        'eloRating': 1550,
+        'rank': 40,
+      });
+      when(() => mockDataService.getEloRating('BRA')).thenReturn({
+        'teamCode': 'BRA',
+        'teamName': 'Brazil',
+        'eloRating': 1800,
+        'rank': 5,
+      });
+
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 50,
+        fifaRanking: 10,
         worldCupTitles: 0,
         worldCupAppearances: 2,
         bestFinish: null,
         isHostNation: false,
       );
-      final away = awayTeam(fifaRanking: 1);
+      final away = awayTeam(fifaRanking: 10);
 
       final prediction = await engine.generatePrediction(
         match: match,
@@ -382,7 +411,20 @@ void main() {
           greaterThan(prediction.homeWinProbability));
     });
 
-    test('equal rankings produce balanced probabilities', () async {
+    test('equal Elo ratings produce balanced probabilities', () async {
+      when(() => mockDataService.getEloRating('USA')).thenReturn({
+        'teamCode': 'USA',
+        'teamName': 'United States',
+        'eloRating': 1700,
+        'rank': 15,
+      });
+      when(() => mockDataService.getEloRating('BRA')).thenReturn({
+        'teamCode': 'BRA',
+        'teamName': 'Brazil',
+        'eloRating': 1700,
+        'rank': 15,
+      });
+
       final match = defaultMatch();
       final home = homeTeam(
         fifaRanking: 15,
@@ -408,6 +450,69 @@ void main() {
       final diff =
           (prediction.homeWinProbability - prediction.awayWinProbability).abs();
       expect(diff, lessThan(15));
+    });
+
+    test('falls back to FIFA ranking when Elo data is null', () async {
+      // Default stubs return null for getEloRating
+      final match = defaultMatch();
+      final home = homeTeam(fifaRanking: 1, isHostNation: false);
+      final away = awayTeam(
+        fifaRanking: 50,
+        worldCupTitles: 0,
+        worldCupAppearances: 2,
+        bestFinish: null,
+        isHostNation: false,
+      );
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      expect(prediction.homeWinProbability,
+          greaterThan(prediction.awayWinProbability));
+    });
+
+    test('Elo key factors show Elo rating text when data available', () async {
+      when(() => mockDataService.getEloRating('USA')).thenReturn({
+        'teamCode': 'USA',
+        'teamName': 'United States',
+        'eloRating': 1800,
+        'rank': 5,
+      });
+      when(() => mockDataService.getEloRating('JAM')).thenReturn({
+        'teamCode': 'JAM',
+        'teamName': 'Jamaica',
+        'eloRating': 1500,
+        'rank': 42,
+      });
+
+      final match = defaultMatch(
+        homeTeamCode: 'USA',
+        awayTeamCode: 'JAM',
+        awayTeamName: 'Jamaica',
+      );
+      final home = homeTeam(fifaRanking: 10, isHostNation: false);
+      final away = awayTeam(
+        fifaCode: 'JAM',
+        fifaRanking: 60,
+        worldCupTitles: 0,
+        worldCupAppearances: 0,
+        bestFinish: null,
+        isHostNation: false,
+      );
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      final hasEloFactor = prediction.keyFactors.any(
+        (f) => f.contains('Elo ratings'),
+      );
+      expect(hasEloFactor, isTrue);
     });
   });
 
@@ -2112,7 +2217,7 @@ void main() {
       // This test ensures the weights are properly balanced
       const weights = [
         0.23, // betting
-        0.18, // ranking
+        0.18, // elo rating
         0.15, // form
         0.10, // squad
         0.10, // h2h
@@ -2125,6 +2230,131 @@ void main() {
 
       final sum = weights.reduce((a, b) => a + b);
       expect(sum, closeTo(1.0, 0.001));
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // 19. Match summary integration
+  // ---------------------------------------------------------------------------
+  group('match summary integration', () {
+    test('analysis includes historical context when match summary available',
+        () async {
+      when(() => mockDataService.getMatchSummary('USA', 'BRA'))
+          .thenAnswer((_) async => {
+                'historicalAnalysis':
+                    'Brazil vs USA is a classic CONCACAF-CONMEBOL rivalry. These teams have met 20 times.',
+                'keyStorylines': [
+                  'Battle of the Americas on home soil',
+                  'USA seeking redemption after 2022 exit',
+                ],
+                'playersToWatch': [
+                  {
+                    'name': 'Christian Pulisic',
+                    'teamCode': 'USA',
+                    'position': 'Winger',
+                    'reason': 'Captain America leading the charge at home',
+                  },
+                ],
+              });
+
+      final match = defaultMatch();
+      final home = homeTeam();
+      final away = awayTeam();
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // Analysis should contain the historical context
+      expect(prediction.analysis, contains('classic CONCACAF-CONMEBOL'));
+    });
+
+    test('quickInsight includes key storyline when match summary available',
+        () async {
+      when(() => mockDataService.getMatchSummary('USA', 'BRA'))
+          .thenAnswer((_) async => {
+                'historicalAnalysis': 'Classic rivalry.',
+                'keyStorylines': [
+                  'Defending champions face the hosts',
+                ],
+                'playersToWatch': [],
+              });
+
+      final match = defaultMatch();
+      final home = homeTeam();
+      final away = awayTeam();
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // Quick insight should contain the key storyline
+      expect(prediction.quickInsight, contains('Defending champions'));
+    });
+
+    test('analysis works without match summary (null)', () async {
+      // Default stub returns null for getMatchSummary
+      final match = defaultMatch();
+      final home = homeTeam();
+      final away = awayTeam();
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      expect(prediction.analysis, isNotEmpty);
+      expect(prediction.quickInsight, isNotEmpty);
+    });
+
+    test('analysis handles empty historicalAnalysis gracefully', () async {
+      when(() => mockDataService.getMatchSummary('USA', 'BRA'))
+          .thenAnswer((_) async => {
+                'historicalAnalysis': '',
+                'keyStorylines': [],
+                'playersToWatch': [],
+              });
+
+      final match = defaultMatch();
+      final home = homeTeam();
+      final away = awayTeam();
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      expect(prediction.analysis, isNotEmpty);
+    });
+
+    test('quickInsight uses standard format when no storylines', () async {
+      when(() => mockDataService.getMatchSummary('USA', 'BRA'))
+          .thenAnswer((_) async => {
+                'historicalAnalysis': 'Some history.',
+                'keyStorylines': [],
+                'playersToWatch': [],
+              });
+
+      final match = defaultMatch();
+      final home = homeTeam();
+      final away = awayTeam();
+
+      final prediction = await engine.generatePrediction(
+        match: match,
+        homeTeam: home,
+        awayTeam: away,
+      );
+
+      // Without storylines, quickInsight should use standard format with %
+      expect(prediction.quickInsight, contains('%'));
+      // Should not contain the dash separator used for storylines
+      expect(prediction.quickInsight, isNot(contains(' — ')));
     });
   });
 }

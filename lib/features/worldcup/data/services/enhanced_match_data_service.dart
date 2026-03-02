@@ -30,8 +30,10 @@ class EnhancedMatchDataService {
   Map<String, dynamic>? _bettingOdds;
   Map<String, dynamic>? _injuryTracker;
   Map<String, dynamic>? _teamsMetadata;
+  Map<String, dynamic>? _eloRatings;
   final Map<String, Map<String, dynamic>> _h2hCache = {};
   final Map<String, Map<String, dynamic>?> _teamSquadCache = {};
+  final Map<String, Map<String, dynamic>?> _matchSummaryCache = {};
   bool _isInitialized = false;
 
   /// Initialize the service by loading all data files
@@ -46,6 +48,7 @@ class EnhancedMatchDataService {
       _loadBettingOdds(),
       _loadInjuryTracker(),
       _loadTeamsMetadata(),
+      _loadEloRatings(),
     ]);
 
     _isInitialized = true;
@@ -97,6 +100,10 @@ class EnhancedMatchDataService {
 
   Future<void> _loadTeamsMetadata() async {
     _teamsMetadata = await _loadJsonAsset('assets/data/worldcup/teams_metadata.json');
+  }
+
+  Future<void> _loadEloRatings() async {
+    _eloRatings = await _loadJsonAsset('assets/data/worldcup/elo_ratings.json');
   }
 
   Future<Map<String, dynamic>?> _loadJsonAsset(String path) async {
@@ -379,6 +386,53 @@ class EnhancedMatchDataService {
       _h2hCache[key2] = data;
       return data;
     }
+    return null;
+  }
+
+  /// Get Elo rating data for a team by FIFA code.
+  ///
+  /// Returns a map with keys: teamCode, teamName, eloRating, rank.
+  /// Returns null if the team code is not found or data is not loaded.
+  Map<String, dynamic>? getEloRating(String teamCode) {
+    if (_eloRatings == null) return null;
+    final ratings = _eloRatings!['ratings'] as Map<String, dynamic>?;
+    if (ratings == null) return null;
+    return ratings[teamCode.toUpperCase()] as Map<String, dynamic>?;
+  }
+
+  /// Get match summary data for a specific team pairing (lazy loaded and cached).
+  ///
+  /// Match summary files use alphabetically sorted team codes as filenames
+  /// (e.g., ARG_BRA.json). Contains historicalAnalysis, keyStorylines,
+  /// playersToWatch, tacticalPreview, and more.
+  Future<Map<String, dynamic>?> getMatchSummary(
+    String code1,
+    String code2,
+  ) async {
+    final upper1 = code1.toUpperCase();
+    final upper2 = code2.toUpperCase();
+
+    // Try both orderings in cache
+    final key1 = '${upper1}_$upper2';
+    final key2 = '${upper2}_$upper1';
+    if (_matchSummaryCache.containsKey(key1)) return _matchSummaryCache[key1];
+    if (_matchSummaryCache.containsKey(key2)) return _matchSummaryCache[key2];
+
+    // Try loading with first ordering
+    var data = await _loadJsonAsset(
+        'assets/data/worldcup/match_summaries/$key1.json');
+    if (data != null) {
+      _matchSummaryCache[key1] = data;
+      return data;
+    }
+    // Try second ordering
+    data = await _loadJsonAsset(
+        'assets/data/worldcup/match_summaries/$key2.json');
+    if (data != null) {
+      _matchSummaryCache[key2] = data;
+      return data;
+    }
+    _matchSummaryCache[key1] = null;
     return null;
   }
 

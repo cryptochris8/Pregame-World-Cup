@@ -75,6 +75,20 @@ void main() {
     });
   });
 
+  group('getEloRating', () {
+    test('returns null when not initialized', () {
+      expect(service.getEloRating('USA'), isNull);
+    });
+
+    test('returns null for empty team code', () {
+      expect(service.getEloRating(''), isNull);
+    });
+
+    test('returns null for nonexistent team code', () {
+      expect(service.getEloRating('XYZ'), isNull);
+    });
+  });
+
   group('buildEnhancedPromptSection', () {
     test('returns empty string for empty context', () {
       final result = service.buildEnhancedPromptSection({});

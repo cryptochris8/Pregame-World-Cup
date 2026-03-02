@@ -73,6 +73,8 @@ void registerWorldCupServices(GetIt sl) {
   sl.registerLazySingleton<PredictionsRepository>(
     () => PredictionsRepositoryImpl(
       sharedPreferences: sl(),
+      firestore: sl(),
+      firebaseAuth: sl(),
     ),
   );
 

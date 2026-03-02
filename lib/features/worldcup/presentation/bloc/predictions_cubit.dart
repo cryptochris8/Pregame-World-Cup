@@ -242,6 +242,33 @@ class PredictionsCubit extends Cubit<PredictionsState> {
     }
   }
 
+  /// Sync local predictions to Firestore (call after login or periodically)
+  Future<void> syncToFirestore() async {
+    try {
+      await _predictionsRepository.syncToFirestore();
+    } catch (e) {
+      // Best-effort: don't emit error for background sync
+    }
+  }
+
+  /// Pull predictions from Firestore (call on new device login)
+  Future<void> syncFromFirestore() async {
+    try {
+      await _predictionsRepository.syncFromFirestore();
+
+      // Reload predictions after sync
+      final predictions = await _predictionsRepository.getAllPredictions();
+      final stats = PredictionStats.fromPredictions(predictions);
+
+      emit(state.copyWith(
+        predictions: predictions,
+        stats: stats,
+      ));
+    } catch (e) {
+      // Best-effort: don't emit error for background sync
+    }
+  }
+
   /// Clear error message
   void clearError() {
     emit(state.copyWith(clearError: true));

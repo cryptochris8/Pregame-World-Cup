@@ -126,6 +126,7 @@ flutter:
     - assets/data/worldcup/confederation_records.json
     - assets/data/worldcup/historical_patterns.json
     - assets/data/worldcup/injury_tracker.json
+    - assets/data/worldcup/elo_ratings.json
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

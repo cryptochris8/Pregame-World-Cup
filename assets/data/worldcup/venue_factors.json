@@ -1,0 +1,724 @@
+{
+  "metadata": {
+    "title": "FIFA World Cup 2026 Venue Factor Analysis",
+    "description": "Altitude, climate, travel, and capacity factors for all 16 host venues",
+    "last_updated": "2026-03-01",
+    "sources": [
+      "FIFA.com official match schedule",
+      "Wikipedia stadium articles",
+      "Weather Spark / Climate-Data.org",
+      "MAPLOGS elevation data",
+      "Stadium official websites"
+    ]
+  },
+  "venues": {
+    "metlife": {
+      "venueId": "metlife",
+      "venueName": "MetLife Stadium",
+      "fifaTournamentName": "New York New Jersey Stadium",
+      "city": "East Rutherford, NJ",
+      "country": "USA",
+      "latitude": 40.8128,
+      "longitude": -74.0742,
+      "altitude_meters": 3,
+      "capacity": 87157,
+      "climate": {
+        "junAvgHighC": 25,
+        "junAvgLowC": 17,
+        "julAvgHighC": 30,
+        "julAvgLowC": 20,
+        "avgHumidity": 65,
+        "climateType": "Humid subtropical",
+        "heatRisk": "Medium"
+      },
+      "travelFactors": {
+        "nearestAirport": "Newark Liberty International (EWR)",
+        "otherAirports": ["John F. Kennedy International (JFK)", "LaGuardia (LGA)"],
+        "timezone": "America/New_York",
+        "utcOffset": -4,
+        "hostTeamAdvantage": {
+          "USA": "High",
+          "MEX": "None",
+          "CAN": "Low"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 8,
+        "stages": ["Group stage", "Round of 32", "Round of 16", "Final"]
+      },
+      "notes": "Final venue. Temporary grass installed over FieldTurf synthetic surface. One of the largest World Cup final venues ever. Strong transportation links to NYC metro area."
+    },
+    "azteca": {
+      "venueId": "azteca",
+      "venueName": "Estadio Azteca",
+      "fifaTournamentName": "Estadio Azteca Mexico City",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "latitude": 19.3029,
+      "longitude": -99.1506,
+      "altitude_meters": 2200,
+      "capacity": 87523,
+      "climate": {
+        "junAvgHighC": 24,
+        "junAvgLowC": 13,
+        "julAvgHighC": 24,
+        "julAvgLowC": 13,
+        "avgHumidity": 62,
+        "climateType": "Subtropical highland",
+        "heatRisk": "Low",
+        "rainfallNote": "Heavy rainy season June-September; frequent afternoon/evening showers"
+      },
+      "travelFactors": {
+        "nearestAirport": "Mexico City International (MEX)",
+        "otherAirports": ["Felipe Angeles International (NLU)"],
+        "timezone": "America/Mexico_City",
+        "utcOffset": -6,
+        "hostTeamAdvantage": {
+          "USA": "None",
+          "MEX": "Very High",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Natural grass (permanent)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 5,
+        "stages": ["Opening match", "Group stage", "Round of 32", "Round of 16"]
+      },
+      "altitudeImpact": {
+        "significance": "Critical",
+        "description": "At 2,200m, oxygen levels are approximately 20% lower than at sea level. Teams not acclimatized may experience reduced stamina, slower recovery, and impaired aerobic performance. Mexico has historically leveraged this advantage in World Cup qualifiers.",
+        "acclimatizationDays": 5,
+        "affectedMetrics": ["VO2max reduction 15-20%", "Increased heart rate", "Faster dehydration", "Ball flight altered (less air resistance)"]
+      },
+      "notes": "First stadium to host three World Cup finals (1970, 1986, 2026 group stage). Altitude is the single biggest venue factor in the tournament. Hosts the opening match on June 11. Cool temperatures offset altitude challenge somewhat."
+    },
+    "att": {
+      "venueId": "att",
+      "venueName": "AT&T Stadium",
+      "fifaTournamentName": "Dallas Stadium",
+      "city": "Arlington, TX",
+      "country": "USA",
+      "latitude": 32.7473,
+      "longitude": -97.0945,
+      "altitude_meters": 184,
+      "capacity": 92967,
+      "climate": {
+        "junAvgHighC": 34,
+        "junAvgLowC": 22,
+        "julAvgHighC": 36,
+        "julAvgLowC": 24,
+        "avgHumidity": 61,
+        "climateType": "Humid subtropical",
+        "heatRisk": "High (mitigated by retractable roof)"
+      },
+      "travelFactors": {
+        "nearestAirport": "Dallas/Fort Worth International (DFW)",
+        "otherAirports": ["Dallas Love Field (DAL)"],
+        "timezone": "America/Chicago",
+        "utcOffset": -5,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "Low",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Retractable",
+      "matchesHosted": {
+        "total": 9,
+        "stages": ["Group stage", "Round of 32", "Round of 16", "Semi-final"]
+      },
+      "notes": "Highest match count of any venue (9). Largest capacity stadium in the tournament (92,967). Retractable roof means climate-controlled conditions possible. Hosts one of two semi-finals. Temporary grass over permanent artificial turf."
+    },
+    "arrowhead": {
+      "venueId": "arrowhead",
+      "venueName": "Arrowhead Stadium",
+      "fifaTournamentName": "Kansas City Stadium",
+      "city": "Kansas City, MO",
+      "country": "USA",
+      "latitude": 39.0489,
+      "longitude": -94.4839,
+      "altitude_meters": 290,
+      "capacity": 76640,
+      "climate": {
+        "junAvgHighC": 30,
+        "junAvgLowC": 19,
+        "julAvgHighC": 33,
+        "julAvgLowC": 21,
+        "avgHumidity": 69,
+        "climateType": "Humid continental",
+        "heatRisk": "Medium-High"
+      },
+      "travelFactors": {
+        "nearestAirport": "Kansas City International (MCI)",
+        "otherAirports": [],
+        "timezone": "America/Chicago",
+        "utcOffset": -5,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "None",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Natural grass (permanent)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 6,
+        "stages": ["Group stage", "Round of 32", "Quarter-final"]
+      },
+      "notes": "Open-air venue with natural grass. Known for extreme crowd noise (Guinness World Record holder). Hosts a quarter-final on July 11. Hot and humid conditions possible for evening matches."
+    },
+    "mercedes_benz": {
+      "venueId": "mercedes_benz",
+      "venueName": "Mercedes-Benz Stadium",
+      "fifaTournamentName": "Atlanta Stadium",
+      "city": "Atlanta, GA",
+      "country": "USA",
+      "latitude": 33.7553,
+      "longitude": -84.4006,
+      "altitude_meters": 320,
+      "capacity": 75000,
+      "climate": {
+        "junAvgHighC": 33,
+        "junAvgLowC": 21,
+        "julAvgHighC": 33,
+        "julAvgLowC": 22,
+        "avgHumidity": 72,
+        "climateType": "Humid subtropical",
+        "heatRisk": "Low (retractable roof, climate controlled)"
+      },
+      "travelFactors": {
+        "nearestAirport": "Hartsfield-Jackson Atlanta International (ATL)",
+        "otherAirports": [],
+        "timezone": "America/New_York",
+        "utcOffset": -4,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "None",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Retractable (pinwheel design, 8 triangular panels)",
+      "matchesHosted": {
+        "total": 8,
+        "stages": ["Group stage", "Round of 32", "Round of 16", "Semi-final"]
+      },
+      "notes": "Hosts one of two semi-finals (July 15). Iconic retractable roof with pinwheel design. ATL is the world's busiest airport, excellent connectivity. Climate-controlled interior eliminates weather concerns. MARTA rail provides direct stadium access."
+    },
+    "nrg": {
+      "venueId": "nrg",
+      "venueName": "NRG Stadium",
+      "fifaTournamentName": "Houston Stadium",
+      "city": "Houston, TX",
+      "country": "USA",
+      "latitude": 29.6847,
+      "longitude": -95.4107,
+      "altitude_meters": 15,
+      "capacity": 72220,
+      "climate": {
+        "junAvgHighC": 33,
+        "junAvgLowC": 24,
+        "julAvgHighC": 35,
+        "julAvgLowC": 25,
+        "avgHumidity": 73,
+        "climateType": "Humid subtropical",
+        "heatRisk": "Low (retractable roof, climate controlled)",
+        "outdoorHeatRisk": "Very High"
+      },
+      "travelFactors": {
+        "nearestAirport": "George Bush Intercontinental (IAH)",
+        "otherAirports": ["William P. Hobby (HOU)"],
+        "timezone": "America/Chicago",
+        "utcOffset": -5,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "Low",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Retractable",
+      "matchesHosted": {
+        "total": 7,
+        "stages": ["Group stage", "Round of 32", "Round of 16"]
+      },
+      "notes": "First NFL stadium with a retractable roof. Extreme heat and humidity outdoors (35C+ with 73% humidity) but fully climate-controlled when roof is closed. Roof opens/closes in 7 minutes. Temporary grass installation required."
+    },
+    "levis": {
+      "venueId": "levis",
+      "venueName": "Levi's Stadium",
+      "fifaTournamentName": "San Francisco Bay Area Stadium",
+      "city": "Santa Clara, CA",
+      "country": "USA",
+      "latitude": 37.4030,
+      "longitude": -121.9700,
+      "altitude_meters": 1,
+      "capacity": 70909,
+      "climate": {
+        "junAvgHighC": 25,
+        "junAvgLowC": 13,
+        "julAvgHighC": 27,
+        "julAvgLowC": 14,
+        "avgHumidity": 60,
+        "climateType": "Mediterranean",
+        "heatRisk": "Low"
+      },
+      "travelFactors": {
+        "nearestAirport": "San Jose International (SJC)",
+        "otherAirports": ["San Francisco International (SFO)", "Oakland International (OAK)"],
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -7,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "Low",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Natural grass (permanent)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 6,
+        "stages": ["Group stage", "Round of 32"]
+      },
+      "notes": "Pleasant Mediterranean climate; one of the most comfortable venues weather-wise. Open-air with permanent natural grass. Near FAA flight path so no roof additions possible. Close to Silicon Valley tech corridor."
+    },
+    "sofi": {
+      "venueId": "sofi",
+      "venueName": "SoFi Stadium",
+      "fifaTournamentName": "Los Angeles Stadium",
+      "city": "Inglewood, CA",
+      "country": "USA",
+      "latitude": 33.9534,
+      "longitude": -118.3390,
+      "altitude_meters": 40,
+      "capacity": 70240,
+      "climate": {
+        "junAvgHighC": 24,
+        "junAvgLowC": 15,
+        "julAvgHighC": 28,
+        "julAvgLowC": 17,
+        "avgHumidity": 68,
+        "climateType": "Mediterranean",
+        "heatRisk": "Low (fixed canopy roof, open-air sides)"
+      },
+      "travelFactors": {
+        "nearestAirport": "Los Angeles International (LAX)",
+        "otherAirports": ["Long Beach (LGB)", "John Wayne (SNA)"],
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -7,
+        "hostTeamAdvantage": {
+          "USA": "High",
+          "MEX": "Medium",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Fixed ETFE canopy (translucent, open sides, not fully enclosed)",
+      "matchesHosted": {
+        "total": 8,
+        "stages": ["Group stage", "Round of 32", "Quarter-final"]
+      },
+      "notes": "Hosts USA's opening match (June 12). Sunken 100 feet below ground level due to LAX flight path restrictions. ETFE translucent canopy with 46 operable panels provides shade and ventilation but is not a sealed roof. Mild LA coastal climate. Third-place match also hosted here."
+    },
+    "gillette": {
+      "venueId": "gillette",
+      "venueName": "Gillette Stadium",
+      "fifaTournamentName": "Boston Stadium",
+      "city": "Foxborough, MA",
+      "country": "USA",
+      "latitude": 42.0909,
+      "longitude": -71.2643,
+      "altitude_meters": 88,
+      "capacity": 70000,
+      "climate": {
+        "junAvgHighC": 25,
+        "junAvgLowC": 14,
+        "julAvgHighC": 29,
+        "julAvgLowC": 18,
+        "avgHumidity": 67,
+        "climateType": "Humid continental",
+        "heatRisk": "Low-Medium"
+      },
+      "travelFactors": {
+        "nearestAirport": "Boston Logan International (BOS)",
+        "otherAirports": ["T.F. Green International (PVD)"],
+        "timezone": "America/New_York",
+        "utcOffset": -4,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "None",
+          "CAN": "Low"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 7,
+        "stages": ["Group stage", "Round of 32", "Quarter-final"]
+      },
+      "notes": "Hosts a quarter-final (July 9). Open-air venue with temporary grass. Pleasant summer climate. Located 35 miles southwest of Boston; limited public transit options compared to other venues."
+    },
+    "lincoln_financial": {
+      "venueId": "lincoln_financial",
+      "venueName": "Lincoln Financial Field",
+      "fifaTournamentName": "Philadelphia Stadium",
+      "city": "Philadelphia, PA",
+      "country": "USA",
+      "latitude": 39.9008,
+      "longitude": -75.1675,
+      "altitude_meters": 12,
+      "capacity": 69328,
+      "climate": {
+        "junAvgHighC": 27,
+        "junAvgLowC": 17,
+        "julAvgHighC": 31,
+        "julAvgLowC": 20,
+        "avgHumidity": 66,
+        "climateType": "Humid subtropical",
+        "heatRisk": "Medium"
+      },
+      "travelFactors": {
+        "nearestAirport": "Philadelphia International (PHL)",
+        "otherAirports": [],
+        "timezone": "America/New_York",
+        "utcOffset": -4,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "None",
+          "CAN": "Low"
+        }
+      },
+      "surfaceType": "Natural grass (permanent, Bermuda/ryegrass hybrid)",
+      "roofType": "Open air (partial canopy over upper deck)",
+      "matchesHosted": {
+        "total": 6,
+        "stages": ["Group stage", "Round of 16"]
+      },
+      "notes": "Hosts matches featuring Brazil and France in group stage. Permanent natural grass surface (no conversion needed). Round of 16 match on July 4. Good public transit access via SEPTA subway."
+    },
+    "lumen": {
+      "venueId": "lumen",
+      "venueName": "Lumen Field",
+      "fifaTournamentName": "Seattle Stadium",
+      "city": "Seattle, WA",
+      "country": "USA",
+      "latitude": 47.5952,
+      "longitude": -122.3316,
+      "altitude_meters": 5,
+      "capacity": 69000,
+      "climate": {
+        "junAvgHighC": 21,
+        "junAvgLowC": 11,
+        "julAvgHighC": 24,
+        "julAvgLowC": 13,
+        "avgHumidity": 73,
+        "climateType": "Oceanic (marine west coast)",
+        "heatRisk": "Very Low"
+      },
+      "travelFactors": {
+        "nearestAirport": "Seattle-Tacoma International (SEA)",
+        "otherAirports": [],
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -7,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "None",
+          "CAN": "Low"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Partial roof (covers 70% of seats, field is open)",
+      "matchesHosted": {
+        "total": 6,
+        "stages": ["Group stage", "Round of 32", "Round of 16"]
+      },
+      "notes": "One of the most comfortable venues climate-wise with mild Pacific Northwest summer weather. Partial roof covers majority of spectators. Known for extreme crowd noise due to architectural design. Light rail access from airport."
+    },
+    "hard_rock": {
+      "venueId": "hard_rock",
+      "venueName": "Hard Rock Stadium",
+      "fifaTournamentName": "Miami Stadium",
+      "city": "Miami Gardens, FL",
+      "country": "USA",
+      "latitude": 25.9580,
+      "longitude": -80.2389,
+      "altitude_meters": 7,
+      "capacity": 67518,
+      "climate": {
+        "junAvgHighC": 32,
+        "junAvgLowC": 25,
+        "julAvgHighC": 33,
+        "julAvgLowC": 26,
+        "avgHumidity": 73,
+        "climateType": "Tropical monsoon",
+        "heatRisk": "Very High",
+        "heatIndexNote": "Heat index regularly exceeds 40C (104F) in June-July due to extreme humidity"
+      },
+      "travelFactors": {
+        "nearestAirport": "Miami International (MIA)",
+        "otherAirports": ["Fort Lauderdale-Hollywood International (FLL)"],
+        "timezone": "America/New_York",
+        "utcOffset": -4,
+        "hostTeamAdvantage": {
+          "USA": "Medium",
+          "MEX": "Low",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Natural grass (permanent)",
+      "roofType": "Open air with canopy (covers 92% of seats, field exposed)",
+      "matchesHosted": {
+        "total": 7,
+        "stages": ["Group stage", "Round of 32", "Quarter-final", "Third-place match"]
+      },
+      "notes": "Extreme heat and humidity make this the most challenging climate venue. Heat index regularly exceeds 40C. Canopy shades fans but field remains exposed. Hosts a quarter-final (July 11) and the third-place match. Frequent afternoon thunderstorms in summer. Permanent natural grass. Brazil and Portugal play group stage matches here."
+    },
+    "bbva": {
+      "venueId": "bbva",
+      "venueName": "Estadio BBVA",
+      "fifaTournamentName": "Estadio Monterrey",
+      "city": "Guadalupe, Mexico (Monterrey metro)",
+      "country": "Mexico",
+      "latitude": 25.6702,
+      "longitude": -100.2437,
+      "altitude_meters": 540,
+      "capacity": 53500,
+      "climate": {
+        "junAvgHighC": 33,
+        "junAvgLowC": 22,
+        "julAvgHighC": 35,
+        "julAvgLowC": 23,
+        "avgHumidity": 61,
+        "climateType": "Semi-arid (hot steppe)",
+        "heatRisk": "High",
+        "heatNote": "Extreme heat spikes possible (39-45C) due to foehn winds from Sierra Madre"
+      },
+      "travelFactors": {
+        "nearestAirport": "Monterrey International (MTY)",
+        "otherAirports": [],
+        "timezone": "America/Monterrey",
+        "utcOffset": -6,
+        "hostTeamAdvantage": {
+          "USA": "None",
+          "MEX": "High",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Natural grass (permanent)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 4,
+        "stages": ["Group stage", "Round of 32"]
+      },
+      "notes": "Extreme heat is the primary concern. Temperatures can spike to 39-45C due to hot foehn winds from the Sierra Madre Oriental mountains. Moderate altitude (540m) has minimal performance impact. Modern stadium opened in 2015."
+    },
+    "bc_place": {
+      "venueId": "bc_place",
+      "venueName": "BC Place",
+      "fifaTournamentName": "BC Place Vancouver",
+      "city": "Vancouver, BC",
+      "country": "Canada",
+      "latitude": 49.2768,
+      "longitude": -123.1117,
+      "altitude_meters": 10,
+      "capacity": 54500,
+      "climate": {
+        "junAvgHighC": 18,
+        "junAvgLowC": 11,
+        "julAvgHighC": 22,
+        "julAvgLowC": 14,
+        "avgHumidity": 76,
+        "climateType": "Oceanic (marine west coast)",
+        "heatRisk": "Very Low"
+      },
+      "travelFactors": {
+        "nearestAirport": "Vancouver International (YVR)",
+        "otherAirports": [],
+        "timezone": "America/Vancouver",
+        "utcOffset": -7,
+        "hostTeamAdvantage": {
+          "USA": "Low",
+          "MEX": "None",
+          "CAN": "High"
+        }
+      },
+      "surfaceType": "Temporary natural grass (over permanent artificial turf)",
+      "roofType": "Retractable (world's largest cable-supported retractable roof)",
+      "matchesHosted": {
+        "total": 7,
+        "stages": ["Group stage", "Round of 32", "Round of 16"]
+      },
+      "notes": "Coolest venue in the tournament. Retractable roof provides full weather protection. Excellent for teams sensitive to heat. Downtown Vancouver location with SkyTrain access. Temporary grass installation over permanent artificial surface. Canada plays two group stage matches here."
+    },
+    "akron": {
+      "venueId": "akron",
+      "venueName": "Estadio Akron",
+      "fifaTournamentName": "Estadio Guadalajara",
+      "city": "Zapopan, Mexico (Guadalajara metro)",
+      "country": "Mexico",
+      "latitude": 20.6817,
+      "longitude": -103.4628,
+      "altitude_meters": 1560,
+      "capacity": 48071,
+      "climate": {
+        "junAvgHighC": 30,
+        "junAvgLowC": 18,
+        "julAvgHighC": 27,
+        "julAvgLowC": 17,
+        "avgHumidity": 70,
+        "climateType": "Subtropical highland",
+        "heatRisk": "Low-Medium",
+        "rainfallNote": "Peak rainy season; 187mm rainfall in July with frequent afternoon showers"
+      },
+      "travelFactors": {
+        "nearestAirport": "Guadalajara International (GDL)",
+        "otherAirports": [],
+        "timezone": "America/Mexico_City",
+        "utcOffset": -6,
+        "hostTeamAdvantage": {
+          "USA": "None",
+          "MEX": "High",
+          "CAN": "None"
+        }
+      },
+      "surfaceType": "Natural grass (permanent)",
+      "roofType": "Open air",
+      "matchesHosted": {
+        "total": 4,
+        "stages": ["Group stage"]
+      },
+      "altitudeImpact": {
+        "significance": "Moderate",
+        "description": "At 1,560m, altitude has a noticeable but less severe impact than Mexico City. Some reduction in aerobic performance for unacclimatized teams. Ball flight slightly affected.",
+        "acclimatizationDays": 3,
+        "affectedMetrics": ["VO2max reduction 8-12%", "Slightly increased heart rate", "Minor ball flight changes"]
+      },
+      "notes": "Only venue hosting exclusively group stage matches (no knockout rounds). Moderate altitude (1,560m) provides some advantage to acclimatized teams. Heavy rainfall expected in late June/July. Smallest capacity of all three Mexican venues."
+    },
+    "bmo": {
+      "venueId": "bmo",
+      "venueName": "BMO Field",
+      "fifaTournamentName": "Toronto Stadium",
+      "city": "Toronto, ON",
+      "country": "Canada",
+      "latitude": 43.6332,
+      "longitude": -79.4186,
+      "altitude_meters": 76,
+      "capacity": 45736,
+      "climate": {
+        "junAvgHighC": 24,
+        "junAvgLowC": 14,
+        "julAvgHighC": 27,
+        "julAvgLowC": 18,
+        "avgHumidity": 68,
+        "climateType": "Humid continental",
+        "heatRisk": "Low-Medium"
+      },
+      "travelFactors": {
+        "nearestAirport": "Toronto Pearson International (YYZ)",
+        "otherAirports": ["Billy Bishop Toronto City (YTZ)"],
+        "timezone": "America/Toronto",
+        "utcOffset": -4,
+        "hostTeamAdvantage": {
+          "USA": "Low",
+          "MEX": "None",
+          "CAN": "Very High"
+        }
+      },
+      "surfaceType": "Natural grass (permanent, heated hybrid pitch)",
+      "roofType": "Partial roof (covers some permanent seating areas)",
+      "matchesHosted": {
+        "total": 6,
+        "stages": ["Group stage", "Round of 32"]
+      },
+      "notes": "Smallest capacity venue in the tournament (45,736 with temporary expansion). Canada's opening match on June 12. Undergoing $146M renovation including 17,000 temporary seats, new luxury boxes, and rooftop patio. Located on Toronto waterfront. Pleasant summer climate."
+    }
+  },
+  "factorSummary": {
+    "altitudeRanking": [
+      {"venueId": "azteca", "altitude_meters": 2200, "impact": "Critical"},
+      {"venueId": "akron", "altitude_meters": 1560, "impact": "Moderate"},
+      {"venueId": "bbva", "altitude_meters": 540, "impact": "Minimal"},
+      {"venueId": "mercedes_benz", "altitude_meters": 320, "impact": "None"},
+      {"venueId": "arrowhead", "altitude_meters": 290, "impact": "None"},
+      {"venueId": "att", "altitude_meters": 184, "impact": "None"},
+      {"venueId": "gillette", "altitude_meters": 88, "impact": "None"},
+      {"venueId": "bmo", "altitude_meters": 76, "impact": "None"},
+      {"venueId": "sofi", "altitude_meters": 40, "impact": "None"},
+      {"venueId": "nrg", "altitude_meters": 15, "impact": "None"},
+      {"venueId": "lincoln_financial", "altitude_meters": 12, "impact": "None"},
+      {"venueId": "bc_place", "altitude_meters": 10, "impact": "None"},
+      {"venueId": "hard_rock", "altitude_meters": 7, "impact": "None"},
+      {"venueId": "lumen", "altitude_meters": 5, "impact": "None"},
+      {"venueId": "metlife", "altitude_meters": 3, "impact": "None"},
+      {"venueId": "levis", "altitude_meters": 1, "impact": "None"}
+    ],
+    "heatRiskRanking": [
+      {"venueId": "hard_rock", "heatRisk": "Very High", "julAvgHighC": 33, "humidity": 73},
+      {"venueId": "bbva", "heatRisk": "High", "julAvgHighC": 35, "humidity": 61},
+      {"venueId": "att", "heatRisk": "High (roof mitigates)", "julAvgHighC": 36, "humidity": 61},
+      {"venueId": "nrg", "heatRisk": "High (roof mitigates)", "julAvgHighC": 35, "humidity": 73},
+      {"venueId": "arrowhead", "heatRisk": "Medium-High", "julAvgHighC": 33, "humidity": 69},
+      {"venueId": "mercedes_benz", "heatRisk": "Medium (roof mitigates)", "julAvgHighC": 33, "humidity": 72},
+      {"venueId": "lincoln_financial", "heatRisk": "Medium", "julAvgHighC": 31, "humidity": 66},
+      {"venueId": "metlife", "heatRisk": "Medium", "julAvgHighC": 30, "humidity": 65},
+      {"venueId": "gillette", "heatRisk": "Low-Medium", "julAvgHighC": 29, "humidity": 67},
+      {"venueId": "akron", "heatRisk": "Low-Medium", "julAvgHighC": 27, "humidity": 70},
+      {"venueId": "bmo", "heatRisk": "Low-Medium", "julAvgHighC": 27, "humidity": 68},
+      {"venueId": "sofi", "heatRisk": "Low", "julAvgHighC": 28, "humidity": 68},
+      {"venueId": "levis", "heatRisk": "Low", "julAvgHighC": 27, "humidity": 60},
+      {"venueId": "azteca", "heatRisk": "Low", "julAvgHighC": 24, "humidity": 62},
+      {"venueId": "lumen", "heatRisk": "Very Low", "julAvgHighC": 24, "humidity": 73},
+      {"venueId": "bc_place", "heatRisk": "Very Low", "julAvgHighC": 22, "humidity": 76}
+    ],
+    "roofedVenues": [
+      {"venueId": "att", "roofType": "Retractable", "climateControlled": true},
+      {"venueId": "mercedes_benz", "roofType": "Retractable", "climateControlled": true},
+      {"venueId": "nrg", "roofType": "Retractable", "climateControlled": true},
+      {"venueId": "bc_place", "roofType": "Retractable", "climateControlled": true},
+      {"venueId": "sofi", "roofType": "Fixed ETFE canopy", "climateControlled": false}
+    ],
+    "temporaryGrassVenues": [
+      "metlife", "att", "mercedes_benz", "nrg", "sofi", "gillette", "lumen", "bc_place"
+    ],
+    "permanentGrassVenues": [
+      "azteca", "arrowhead", "levis", "lincoln_financial", "hard_rock", "bbva", "akron", "bmo"
+    ],
+    "timezoneGroups": {
+      "Eastern (UTC-4)": ["metlife", "mercedes_benz", "gillette", "lincoln_financial", "hard_rock", "bmo"],
+      "Central (UTC-5)": ["att", "arrowhead", "nrg"],
+      "Pacific (UTC-7)": ["levis", "sofi", "lumen", "bc_place"],
+      "Mexico Central (UTC-6)": ["azteca", "bbva", "akron"]
+    },
+    "capacityRanking": [
+      {"venueId": "att", "capacity": 92967},
+      {"venueId": "azteca", "capacity": 87523},
+      {"venueId": "metlife", "capacity": 87157},
+      {"venueId": "arrowhead", "capacity": 76640},
+      {"venueId": "mercedes_benz", "capacity": 75000},
+      {"venueId": "nrg", "capacity": 72220},
+      {"venueId": "levis", "capacity": 70909},
+      {"venueId": "sofi", "capacity": 70240},
+      {"venueId": "gillette", "capacity": 70000},
+      {"venueId": "lincoln_financial", "capacity": 69328},
+      {"venueId": "lumen", "capacity": 69000},
+      {"venueId": "hard_rock", "capacity": 67518},
+      {"venueId": "bc_place", "capacity": 54500},
+      {"venueId": "bbva", "capacity": 53500},
+      {"venueId": "akron", "capacity": 48071},
+      {"venueId": "bmo", "capacity": 45736}
+    ],
+    "knockoutVenueProgression": {
+      "roundOf32": ["metlife", "azteca", "att", "arrowhead", "mercedes_benz", "nrg", "levis", "sofi", "gillette", "lincoln_financial", "lumen", "hard_rock", "bbva", "bc_place", "bmo"],
+      "roundOf16": ["metlife", "azteca", "att", "mercedes_benz", "nrg", "sofi", "gillette", "lincoln_financial", "lumen", "hard_rock", "bc_place"],
+      "quarterFinals": ["sofi", "gillette", "hard_rock", "arrowhead"],
+      "semiFinals": ["att", "mercedes_benz"],
+      "thirdPlace": ["hard_rock"],
+      "final": ["metlife"]
+    }
+  }
+}
