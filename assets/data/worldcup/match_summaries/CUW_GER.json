@@ -1,6 +1,6 @@
 {
   "team1Code": "GER",
-  "team2Code": "CUR",
+  "team2Code": "CUW",
   "team1Name": "Germany",
   "team2Name": "Curaçao",
   "historicalAnalysis": "This is a David vs Goliath matchup of historic proportions. Germany, four-time World Cup champions, face Curaçao, a tiny Caribbean island nation making their World Cup debut with a population of just 150,000.\n\nGermany's recent World Cup performances have been disappointing—group stage exits in 2018 and 2022 have shaken German football's foundations. Die Mannschaft are desperate to restore their reputation on the world stage.\n\nCuraçao's qualification is the ultimate underdog story. Competing against nations with far greater resources, they've emerged from CONCACAF through sheer determination and excellent coaching. This is the culmination of years of development in Dutch Caribbean football.",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Juninho Bacuna",
-      "teamCode": "CUR",
+      "teamCode": "CUW",
       "position": "Midfielder",
       "reason": "Curaçao's most experienced player with Championship pedigree"
     },
@@ -31,7 +31,7 @@
     },
     {
       "name": "Kenji Gorré",
-      "teamCode": "CUR",
+      "teamCode": "CUW",
       "position": "Winger",
       "reason": "Tricky winger who can cause problems on the counter"
     }

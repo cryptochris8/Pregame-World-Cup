@@ -288,21 +288,6 @@
       "goals": 4
     },
     {
-      "firstName": "Jesús",
-      "lastName": "Navas",
-      "jerseyNumber": 20,
-      "position": "RB",
-      "dateOfBirth": "1985-11-21",
-      "height": 172,
-      "weight": 60,
-      "preferredFoot": "Right",
-      "club": "Sevilla",
-      "clubLeague": "La Liga",
-      "marketValue": 1250000,
-      "caps": 60,
-      "goals": 5
-    },
-    {
       "firstName": "Mikel",
       "lastName": "Oyarzabal",
       "jerseyNumber": 21,

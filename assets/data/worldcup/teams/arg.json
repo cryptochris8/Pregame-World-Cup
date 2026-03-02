@@ -153,21 +153,6 @@
       "goals": 109
     },
     {
-      "firstName": "Ángel",
-      "lastName": "Di María",
-      "jerseyNumber": 11,
-      "position": "RW",
-      "dateOfBirth": "1988-02-14",
-      "height": 180,
-      "weight": 75,
-      "preferredFoot": "Left",
-      "club": "Benfica",
-      "clubLeague": "Primeira Liga",
-      "marketValue": 10000000,
-      "caps": 140,
-      "goals": 30
-    },
-    {
       "firstName": "Gerónimo",
       "lastName": "Rulli",
       "jerseyNumber": 12,
@@ -251,8 +236,8 @@
       "height": 180,
       "weight": 72,
       "preferredFoot": "Right",
-      "club": "Napoli",
-      "clubLeague": "Serie A",
+      "club": "Chelsea",
+      "clubLeague": "Premier League",
       "marketValue": 62500000,
       "caps": 10,
       "goals": 2

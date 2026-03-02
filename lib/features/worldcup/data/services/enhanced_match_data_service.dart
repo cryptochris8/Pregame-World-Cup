@@ -29,6 +29,7 @@ class EnhancedMatchDataService {
   Map<String, dynamic>? _confederationRecords;
   Map<String, dynamic>? _bettingOdds;
   Map<String, dynamic>? _injuryTracker;
+  final Map<String, Map<String, dynamic>> _h2hCache = {};
   bool _isInitialized = false;
 
   /// Initialize the service by loading all data files
@@ -314,6 +315,35 @@ class EnhancedMatchDataService {
   Future<Map<String, dynamic>?> getManagerProfile(String teamCode) async {
     return _loadJsonAsset(
         'assets/data/worldcup/managers/${teamCode.toLowerCase()}.json');
+  }
+
+  /// Get head-to-head data for two teams (lazy loaded and cached).
+  ///
+  /// H2H files use alphabetically sorted team codes as filenames
+  /// (e.g., ARG_BRA.json, not BRA_ARG.json).
+  Future<Map<String, dynamic>?> getHeadToHead(String code1, String code2) async {
+    final upper1 = code1.toUpperCase();
+    final upper2 = code2.toUpperCase();
+
+    // Try both orderings in cache
+    final key1 = '${upper1}_$upper2';
+    final key2 = '${upper2}_$upper1';
+    if (_h2hCache.containsKey(key1)) return _h2hCache[key1];
+    if (_h2hCache.containsKey(key2)) return _h2hCache[key2];
+
+    // Try loading with first ordering
+    var data = await _loadJsonAsset('assets/data/worldcup/head_to_head/$key1.json');
+    if (data != null) {
+      _h2hCache[key1] = data;
+      return data;
+    }
+    // Try second ordering
+    data = await _loadJsonAsset('assets/data/worldcup/head_to_head/$key2.json');
+    if (data != null) {
+      _h2hCache[key2] = data;
+      return data;
+    }
+    return null;
   }
 
   /// Build a comprehensive enhanced context for AI prompts

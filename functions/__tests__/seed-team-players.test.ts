@@ -343,7 +343,7 @@ describe("seed-team-players", () => {
     expect(mockBatchWrite).toHaveBeenCalledWith(mockDb, "worldcup_players", expect.any(Array), true);
   });
 
-  it("should calculate assists as floor(goals * 0.5) in players collection", async () => {
+  it("should use player.assists or 0 for assists (no fabrication)", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([mockTeam]);
     mockBatchWrite.mockResolvedValue(2);
@@ -352,13 +352,12 @@ describe("seed-team-players", () => {
     await new Promise((r) => setTimeout(r, 200));
 
     const playersDocs = mockBatchWrite.mock.calls[0][2];
-    // Pulisic has 28 goals, assists should be floor(28 * 0.5) = 14
-    expect(playersDocs[0].data.assists).toBe(14);
-    // McKennie has 10 goals, assists should be floor(10 * 0.5) = 5
-    expect(playersDocs[1].data.assists).toBe(5);
+    // No assists field in mock data, so should default to 0
+    expect(playersDocs[0].data.assists).toBe(0);
+    expect(playersDocs[1].data.assists).toBe(0);
   });
 
-  it("should set international minutesPlayed as caps * 70", async () => {
+  it("should set international minutesPlayed to 0 (no fabrication)", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([mockTeam]);
     mockBatchWrite.mockResolvedValue(2);
@@ -367,10 +366,9 @@ describe("seed-team-players", () => {
     await new Promise((r) => setTimeout(r, 200));
 
     const playersDocs = mockBatchWrite.mock.calls[0][2];
-    // Pulisic has 70 caps
-    expect(playersDocs[0].data.stats.international.minutesPlayed).toBe(70 * 70);
-    // McKennie has 50 caps
-    expect(playersDocs[1].data.stats.international.minutesPlayed).toBe(50 * 70);
+    // minutesPlayed should be 0, not fabricated from caps
+    expect(playersDocs[0].data.stats.international.minutesPlayed).toBe(0);
+    expect(playersDocs[1].data.stats.international.minutesPlayed).toBe(0);
   });
 
   it("should handle team with many players", async () => {

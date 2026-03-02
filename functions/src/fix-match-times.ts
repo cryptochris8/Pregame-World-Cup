@@ -76,7 +76,7 @@ const OFFICIAL_TIMES: [number, string, string, string][] = [
 
   // === JUNE 14 (Day 4) ===
   [9, '2026-06-14', '15:00', 'Dallas'],           // NED vs JPN - confirmed 3 PM local / 4 PM ET
-  [10, '2026-06-14', '12:00', 'Houston'],         // GER vs CUR - confirmed 12 PM local / 1 PM ET
+  [10, '2026-06-14', '12:00', 'Houston'],         // GER vs CUW - confirmed 12 PM local / 1 PM ET
   [11, '2026-06-14', '15:00', 'Philadelphia'],    // CIV vs ECU
   [12, '2026-06-14', '18:00', 'Monterrey'],       // TBD vs TUN
 
@@ -112,7 +112,7 @@ const OFFICIAL_TIMES: [number, string, string, string][] = [
 
   // === JUNE 20 (Day 10) ===
   [33, '2026-06-20', '13:00', 'Houston'],         // NED vs TBD
-  [34, '2026-06-20', '16:00', 'Kansas City'],     // ECU vs CUR
+  [34, '2026-06-20', '16:00', 'Kansas City'],     // ECU vs CUW
   [35, '2026-06-20', '16:00', 'Toronto'],         // GER vs CIV
   [36, '2026-06-20', '22:00', 'Monterrey'],       // TUN vs JPN - confirmed 10 PM local (1000th WC match)
 
@@ -147,7 +147,7 @@ const OFFICIAL_TIMES: [number, string, string, string][] = [
   [56, '2026-06-25', '16:00', 'Dallas'],          // JPN vs TBD
   [57, '2026-06-25', '16:00', 'Kansas City'],     // TUN vs NED
   [58, '2026-06-25', '16:00', 'New York'],        // ECU vs GER
-  [59, '2026-06-25', '16:00', 'Philadelphia'],    // CUR vs CIV
+  [59, '2026-06-25', '16:00', 'Philadelphia'],    // CUW vs CIV
   [60, '2026-06-25', '19:00', 'San Francisco'],   // PAR vs AUS
 
   // === JUNE 26 (Day 16) ===

@@ -26,6 +26,8 @@ void main() {
     when(() => mockDataService.getInjuryConcerns(any())).thenReturn([]);
     when(() => mockDataService.getManagerProfile(any()))
         .thenAnswer((_) async => null);
+    when(() => mockDataService.getHeadToHead(any(), any()))
+        .thenAnswer((_) async => null);
     when(() => mockDataService.getSquadValueComparison(any(), any()))
         .thenReturn(null);
     when(() => mockDataService.getRelevantPatterns(

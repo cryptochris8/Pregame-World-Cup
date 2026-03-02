@@ -1,6 +1,6 @@
 {
   "team1Code": "ECU",
-  "team2Code": "CUR",
+  "team2Code": "CUW",
   "team1Name": "Ecuador",
   "team2Name": "Curaçao",
   "historicalAnalysis": "This is a first ever meeting between Ecuador and Curaçao. Ecuador are experienced World Cup participants, having qualified for 4 of the last 5 tournaments. Curaçao make their historic debut as the smallest nation ever to qualify.\n\nEcuador's 2022 World Cup saw them beat Qatar and draw with the Netherlands before losing to Senegal. Their young, dynamic squad has only improved since.\n\nFor Curaçao, every moment is historic. Their journey from tiny Caribbean island to the World Cup stage is one of football's great underdog stories.",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Juninho Bacuna",
-      "teamCode": "CUR",
+      "teamCode": "CUW",
       "position": "Midfielder",
       "reason": "Curaçao's experienced Championship player"
     },
@@ -31,7 +31,7 @@
     },
     {
       "name": "Kenji Gorré",
-      "teamCode": "CUR",
+      "teamCode": "CUW",
       "position": "Winger",
       "reason": "Tricky winger with pace"
     }

@@ -88,25 +88,23 @@ function buildPlayersDoc(team: any, player: any, index: number) {
       marketValue: player.marketValue,
       caps: player.caps,
       goals: player.goals,
-      assists: Math.floor(player.goals * 0.5),
-      worldCupAppearances: Math.floor(Math.random() * 3),
-      worldCupGoals: Math.floor(Math.random() * 3),
+      assists: player.assists || 0,
+      worldCupAppearances: 0,
+      worldCupGoals: 0,
       previousWorldCups: [],
       stats: {
         club: {
           season: "2024-25",
-          appearances: Math.floor(Math.random() * 30) + 10,
-          goals: ["ST", "CF", "LW", "RW"].includes(pos)
-            ? Math.floor(Math.random() * 15)
-            : Math.floor(Math.random() * 5),
-          assists: Math.floor(Math.random() * 10),
-          minutesPlayed: Math.floor(Math.random() * 2000) + 500,
+          appearances: 0,
+          goals: 0,
+          assists: 0,
+          minutesPlayed: 0,
         },
         international: {
           appearances: player.caps,
           goals: player.goals,
-          assists: Math.floor(player.goals * 0.5),
-          minutesPlayed: player.caps * 70,
+          assists: player.assists || 0,
+          minutesPlayed: 0,
         },
       },
       honors: [],
@@ -116,7 +114,7 @@ function buildPlayersDoc(team: any, player: any, index: number) {
       keyMoment: `Key contributor in ${team.countryName}'s World Cup 2026 qualification campaign`,
       comparisonToLegend: "",
       worldCup2026Prediction: `Expected to play a key role for ${team.countryName} in World Cup 2026`,
-      socialMedia: { instagram: "", twitter: "", followers: Math.floor(Math.random() * 5000000) },
+      socialMedia: { instagram: "", twitter: "", followers: 0 },
       trivia: [],
     },
   };

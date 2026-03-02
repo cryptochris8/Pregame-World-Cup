@@ -1,5 +1,5 @@
 {
-  "team1Code": "CUR",
+  "team1Code": "CUW",
   "team2Code": "CIV",
   "team1Name": "Curaçao",
   "team2Name": "Ivory Coast",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Juninho Bacuna",
-      "teamCode": "CUR",
+      "teamCode": "CUW",
       "position": "Midfielder",
       "reason": "Curaçao's most experienced player"
     },
@@ -31,7 +31,7 @@
     },
     {
       "name": "Kenji Gorré",
-      "teamCode": "CUR",
+      "teamCode": "CUW",
       "position": "Winger",
       "reason": "Tricky winger with pace"
     }

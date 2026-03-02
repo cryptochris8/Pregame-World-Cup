@@ -240,7 +240,7 @@ class ChatbotKnowledgeBase {
       'honduras': 'HON', 'los catrachos': 'HON',
       'jamaica': 'JAM', 'reggae boyz': 'JAM',
       'haiti': 'HAI',
-      'curacao': 'CUR', 'curaçao': 'CUR',
+      'curacao': 'CUW', 'curaçao': 'CUW',
       'cape verde': 'CPV', 'cabo verde': 'CPV', 'blue sharks': 'CPV',
       'qatar': 'QAT',
       'jordan': 'JOR',

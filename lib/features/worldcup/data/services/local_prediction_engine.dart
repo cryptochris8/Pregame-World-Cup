@@ -54,7 +54,7 @@ class LocalPredictionEngine {
     final rankingScore = _scoreRanking(homeTeam, awayTeam);
     final formScore = _scoreRecentForm(homeCode, awayCode);
     final squadScore = _scoreSquadValue(homeCode, awayCode);
-    final h2hScore = _scoreHeadToHead(homeCode, awayCode);
+    final h2hScore = await _scoreHeadToHead(homeCode, awayCode);
     final managerScore = await _scoreManager(homeCode, awayCode);
     final hostScore = _scoreHostAdvantage(homeCode, awayCode);
     final wcExpScore = _scoreWorldCupExperience(homeTeam, awayTeam);
@@ -237,20 +237,65 @@ class LocalPredictionEngine {
     return _tanh(math.log(ratio) / math.log(3));
   }
 
-  /// Factor 5: Head-to-head historical record
-  double _scoreHeadToHead(String homeCode, String awayCode) {
-    // H2H data is loaded per-pair; use confederation matchup as proxy
-    // since individual H2H requires loading specific files
-    final homeOdds = _data.getBettingOdds(homeCode);
-    final awayOdds = _data.getBettingOdds(awayCode);
+  /// Factor 5: Head-to-head historical record from actual H2H JSON data.
+  ///
+  /// Loads the H2H file for the team pairing and computes a score based on:
+  ///   - Overall win percentage (40% of H2H score)
+  ///   - World Cup-specific record (40% of H2H score)
+  ///   - Goal difference ratio (20% of H2H score)
+  ///
+  /// Returns neutral 0.0 if no H2H file exists for the pairing.
+  Future<double> _scoreHeadToHead(String homeCode, String awayCode) async {
+    final h2h = await _data.getHeadToHead(homeCode, awayCode);
+    if (h2h == null) return 0.0;
 
-    // Use tier comparison as H2H proxy (favorites historically beat underdogs)
-    if (homeOdds == null || awayOdds == null) return 0.0;
+    final team1Code = (h2h['team1Code'] as String?) ?? '';
+    final totalMatches = ((h2h['totalMatches'] as num?) ?? 0).toInt();
+    if (totalMatches == 0) return 0.0;
 
-    final homeTier = _tierToScore(homeOdds['tier'] as String?);
-    final awayTier = _tierToScore(awayOdds['tier'] as String?);
+    // Determine which team in the H2H file corresponds to home/away
+    final bool homeIsTeam1 = team1Code.toUpperCase() == homeCode.toUpperCase();
 
-    return _tanh((homeTier - awayTier) / 2.0);
+    final team1Wins = ((h2h['team1Wins'] as num?) ?? 0).toDouble();
+    final team2Wins = ((h2h['team2Wins'] as num?) ?? 0).toDouble();
+    final team1Goals = ((h2h['team1Goals'] as num?) ?? 0).toDouble();
+    final team2Goals = ((h2h['team2Goals'] as num?) ?? 0).toDouble();
+    final wcMatches = ((h2h['worldCupMatches'] as num?) ?? 0).toInt();
+    final team1WcWins = ((h2h['team1WorldCupWins'] as num?) ?? 0).toDouble();
+    final team2WcWins = ((h2h['team2WorldCupWins'] as num?) ?? 0).toDouble();
+
+    // Map to home/away perspective
+    final homeWins = homeIsTeam1 ? team1Wins : team2Wins;
+    final awayWins = homeIsTeam1 ? team2Wins : team1Wins;
+    final homeGoals = homeIsTeam1 ? team1Goals : team2Goals;
+    final awayGoals = homeIsTeam1 ? team2Goals : team1Goals;
+    final homeWcWins = homeIsTeam1 ? team1WcWins : team2WcWins;
+    final awayWcWins = homeIsTeam1 ? team2WcWins : team1WcWins;
+
+    // --- 1. Overall win percentage (40% of H2H score) ---
+    // Normalize: homeWinPct - awayWinPct, range [-1, 1]
+    final homeWinPct = homeWins / totalMatches;
+    final awayWinPct = awayWins / totalMatches;
+    final overallScore = (homeWinPct - awayWinPct).clamp(-1.0, 1.0);
+
+    // --- 2. World Cup-specific record (40% of H2H score) ---
+    double wcScore = 0.0;
+    if (wcMatches > 0) {
+      final homeWcPct = homeWcWins / wcMatches;
+      final awayWcPct = awayWcWins / wcMatches;
+      wcScore = (homeWcPct - awayWcPct).clamp(-1.0, 1.0);
+    }
+
+    // --- 3. Goal difference ratio (20% of H2H score) ---
+    double goalScore = 0.0;
+    final totalGoals = homeGoals + awayGoals;
+    if (totalGoals > 0) {
+      goalScore = ((homeGoals - awayGoals) / totalGoals).clamp(-1.0, 1.0);
+    }
+
+    // Weighted blend
+    final composite = overallScore * 0.4 + wcScore * 0.4 + goalScore * 0.2;
+    return composite.clamp(-1.0, 1.0);
   }
 
   /// Factor 6: Manager WC experience and career win rate
@@ -661,26 +706,6 @@ class LocalPredictionEngine {
       }
     }
     return total / matches.length;
-  }
-
-  /// Convert betting tier to numeric score
-  double _tierToScore(String? tier) {
-    switch (tier?.toLowerCase()) {
-      case 'favorite':
-        return 3.0;
-      case 'contender':
-        return 2.0;
-      case 'dark_horse':
-      case 'dark horse':
-        return 1.0;
-      case 'outsider':
-        return 0.0;
-      case 'long_shot':
-      case 'long shot':
-        return -1.0;
-      default:
-        return 0.0;
-    }
   }
 
   /// Bonus score for best World Cup finish
