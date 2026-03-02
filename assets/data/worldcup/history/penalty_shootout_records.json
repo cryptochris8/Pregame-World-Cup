@@ -1,0 +1,953 @@
+{
+  "metadata": {
+    "title": "FIFA World Cup Penalty Shootout Records by Nation",
+    "description": "Complete penalty shootout win/loss records for all nations in FIFA World Cup history (1982-2022)",
+    "last_updated": "2026-03-01",
+    "total_shootouts": 35,
+    "sources": ["FIFA.com", "Wikipedia - List of FIFA World Cup penalty shoot-outs"]
+  },
+  "records": [
+    {
+      "teamCode": "GER",
+      "teamName": "Germany",
+      "wins": 4,
+      "losses": 0,
+      "totalShootouts": 4,
+      "winPercentage": 100.0,
+      "note": "Includes matches played as West Germany (1982, 1986, 1990)",
+      "shootouts": [
+        {
+          "year": 1982,
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "stage": "Semi-Final",
+          "result": "5-4",
+          "won": true,
+          "venue": "Seville, Spain"
+        },
+        {
+          "year": 1986,
+          "opponent": "Mexico",
+          "opponentCode": "MEX",
+          "stage": "Quarter-Final",
+          "result": "4-1",
+          "won": true,
+          "venue": "Monterrey, Mexico"
+        },
+        {
+          "year": 1990,
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "stage": "Semi-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Turin, Italy"
+        },
+        {
+          "year": 2006,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Quarter-Final",
+          "result": "4-2",
+          "won": true,
+          "venue": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "teamCode": "CRO",
+      "teamName": "Croatia",
+      "wins": 4,
+      "losses": 0,
+      "totalShootouts": 4,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2018,
+          "opponent": "Denmark",
+          "opponentCode": "DEN",
+          "stage": "Round of 16",
+          "result": "3-2",
+          "won": true,
+          "venue": "Nizhny Novgorod, Russia"
+        },
+        {
+          "year": 2018,
+          "opponent": "Russia",
+          "opponentCode": "RUS",
+          "stage": "Quarter-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Sochi, Russia"
+        },
+        {
+          "year": 2022,
+          "opponent": "Japan",
+          "opponentCode": "JPN",
+          "stage": "Round of 16",
+          "result": "3-1",
+          "won": true,
+          "venue": "Al Wakrah, Qatar"
+        },
+        {
+          "year": 2022,
+          "opponent": "Brazil",
+          "opponentCode": "BRA",
+          "stage": "Quarter-Final",
+          "result": "4-2",
+          "won": true,
+          "venue": "Al Rayyan, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "URU",
+      "teamName": "Uruguay",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2010,
+          "opponent": "Ghana",
+          "opponentCode": "GHA",
+          "stage": "Quarter-Final",
+          "result": "4-2",
+          "won": true,
+          "venue": "Johannesburg, South Africa"
+        }
+      ]
+    },
+    {
+      "teamCode": "UKR",
+      "teamName": "Ukraine",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2006,
+          "opponent": "Switzerland",
+          "opponentCode": "SUI",
+          "stage": "Round of 16",
+          "result": "3-0",
+          "won": true,
+          "venue": "Cologne, Germany"
+        }
+      ]
+    },
+    {
+      "teamCode": "PAR",
+      "teamName": "Paraguay",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2010,
+          "opponent": "Japan",
+          "opponentCode": "JPN",
+          "stage": "Round of 16",
+          "result": "5-3",
+          "won": true,
+          "venue": "Pretoria, South Africa"
+        }
+      ]
+    },
+    {
+      "teamCode": "MAR",
+      "teamName": "Morocco",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2022,
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "stage": "Round of 16",
+          "result": "3-0",
+          "won": true,
+          "venue": "Al Rayyan, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "BUL",
+      "teamName": "Bulgaria",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 1994,
+          "opponent": "Mexico",
+          "opponentCode": "MEX",
+          "stage": "Round of 16",
+          "result": "3-1",
+          "won": true,
+          "venue": "East Rutherford, United States"
+        }
+      ]
+    },
+    {
+      "teamCode": "SWE",
+      "teamName": "Sweden",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 1994,
+          "opponent": "Romania",
+          "opponentCode": "ROU",
+          "stage": "Quarter-Final",
+          "result": "5-4",
+          "won": true,
+          "venue": "Stanford, United States"
+        }
+      ]
+    },
+    {
+      "teamCode": "BEL",
+      "teamName": "Belgium",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 1986,
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "stage": "Quarter-Final",
+          "result": "5-4",
+          "won": true,
+          "venue": "Puebla, Mexico"
+        }
+      ]
+    },
+    {
+      "teamCode": "KOR",
+      "teamName": "South Korea",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2002,
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "stage": "Quarter-Final",
+          "result": "5-3",
+          "won": true,
+          "venue": "Gwangju, South Korea"
+        }
+      ]
+    },
+    {
+      "teamCode": "POR",
+      "teamName": "Portugal",
+      "wins": 1,
+      "losses": 0,
+      "totalShootouts": 1,
+      "winPercentage": 100.0,
+      "shootouts": [
+        {
+          "year": 2006,
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "stage": "Quarter-Final",
+          "result": "3-1",
+          "won": true,
+          "venue": "Gelsenkirchen, Germany"
+        }
+      ]
+    },
+    {
+      "teamCode": "ARG",
+      "teamName": "Argentina",
+      "wins": 6,
+      "losses": 1,
+      "totalShootouts": 7,
+      "winPercentage": 85.7,
+      "shootouts": [
+        {
+          "year": 1990,
+          "opponent": "Yugoslavia",
+          "opponentCode": "YUG",
+          "stage": "Quarter-Final",
+          "result": "3-2",
+          "won": true,
+          "venue": "Florence, Italy"
+        },
+        {
+          "year": 1990,
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "stage": "Semi-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Naples, Italy"
+        },
+        {
+          "year": 1998,
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "stage": "Round of 16",
+          "result": "4-3",
+          "won": true,
+          "venue": "Saint-Etienne, France"
+        },
+        {
+          "year": 2006,
+          "opponent": "Germany",
+          "opponentCode": "GER",
+          "stage": "Quarter-Final",
+          "result": "2-4",
+          "won": false,
+          "venue": "Berlin, Germany"
+        },
+        {
+          "year": 2014,
+          "opponent": "Netherlands",
+          "opponentCode": "NED",
+          "stage": "Semi-Final",
+          "result": "4-2",
+          "won": true,
+          "venue": "Sao Paulo, Brazil"
+        },
+        {
+          "year": 2022,
+          "opponent": "Netherlands",
+          "opponentCode": "NED",
+          "stage": "Quarter-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Lusail, Qatar"
+        },
+        {
+          "year": 2022,
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "stage": "Final",
+          "result": "4-2",
+          "won": true,
+          "venue": "Lusail, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "BRA",
+      "teamName": "Brazil",
+      "wins": 3,
+      "losses": 2,
+      "totalShootouts": 5,
+      "winPercentage": 60.0,
+      "shootouts": [
+        {
+          "year": 1986,
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "stage": "Quarter-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Guadalajara, Mexico"
+        },
+        {
+          "year": 1994,
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "stage": "Final",
+          "result": "3-2",
+          "won": true,
+          "venue": "Pasadena, United States"
+        },
+        {
+          "year": 1998,
+          "opponent": "Netherlands",
+          "opponentCode": "NED",
+          "stage": "Semi-Final",
+          "result": "4-2",
+          "won": true,
+          "venue": "Marseille, France"
+        },
+        {
+          "year": 2014,
+          "opponent": "Chile",
+          "opponentCode": "CHI",
+          "stage": "Round of 16",
+          "result": "3-2",
+          "won": true,
+          "venue": "Belo Horizonte, Brazil"
+        },
+        {
+          "year": 2022,
+          "opponent": "Croatia",
+          "opponentCode": "CRO",
+          "stage": "Quarter-Final",
+          "result": "2-4",
+          "won": false,
+          "venue": "Al Rayyan, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "RUS",
+      "teamName": "Russia",
+      "wins": 1,
+      "losses": 1,
+      "totalShootouts": 2,
+      "winPercentage": 50.0,
+      "shootouts": [
+        {
+          "year": 2018,
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "stage": "Round of 16",
+          "result": "4-3",
+          "won": true,
+          "venue": "Moscow, Russia"
+        },
+        {
+          "year": 2018,
+          "opponent": "Croatia",
+          "opponentCode": "CRO",
+          "stage": "Quarter-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Sochi, Russia"
+        }
+      ]
+    },
+    {
+      "teamCode": "CRC",
+      "teamName": "Costa Rica",
+      "wins": 1,
+      "losses": 1,
+      "totalShootouts": 2,
+      "winPercentage": 50.0,
+      "shootouts": [
+        {
+          "year": 2014,
+          "opponent": "Greece",
+          "opponentCode": "GRE",
+          "stage": "Round of 16",
+          "result": "5-3",
+          "won": true,
+          "venue": "Recife, Brazil"
+        },
+        {
+          "year": 2014,
+          "opponent": "Netherlands",
+          "opponentCode": "NED",
+          "stage": "Quarter-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Salvador, Brazil"
+        }
+      ]
+    },
+    {
+      "teamCode": "IRL",
+      "teamName": "Republic of Ireland",
+      "wins": 1,
+      "losses": 1,
+      "totalShootouts": 2,
+      "winPercentage": 50.0,
+      "shootouts": [
+        {
+          "year": 1990,
+          "opponent": "Romania",
+          "opponentCode": "ROU",
+          "stage": "Round of 16",
+          "result": "5-4",
+          "won": true,
+          "venue": "Genoa, Italy"
+        },
+        {
+          "year": 2002,
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "stage": "Round of 16",
+          "result": "2-3",
+          "won": false,
+          "venue": "Suwon, South Korea"
+        }
+      ]
+    },
+    {
+      "teamCode": "FRA",
+      "teamName": "France",
+      "wins": 2,
+      "losses": 3,
+      "totalShootouts": 5,
+      "winPercentage": 40.0,
+      "shootouts": [
+        {
+          "year": 1982,
+          "opponent": "West Germany",
+          "opponentCode": "GER",
+          "stage": "Semi-Final",
+          "result": "4-5",
+          "won": false,
+          "venue": "Seville, Spain"
+        },
+        {
+          "year": 1986,
+          "opponent": "Brazil",
+          "opponentCode": "BRA",
+          "stage": "Quarter-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Guadalajara, Mexico"
+        },
+        {
+          "year": 1998,
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "stage": "Quarter-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Saint-Denis, France"
+        },
+        {
+          "year": 2006,
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "stage": "Final",
+          "result": "3-5",
+          "won": false,
+          "venue": "Berlin, Germany"
+        },
+        {
+          "year": 2022,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Final",
+          "result": "2-4",
+          "won": false,
+          "venue": "Lusail, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "ITA",
+      "teamName": "Italy",
+      "wins": 1,
+      "losses": 3,
+      "totalShootouts": 4,
+      "winPercentage": 25.0,
+      "shootouts": [
+        {
+          "year": 1990,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Semi-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Naples, Italy"
+        },
+        {
+          "year": 1994,
+          "opponent": "Brazil",
+          "opponentCode": "BRA",
+          "stage": "Final",
+          "result": "2-3",
+          "won": false,
+          "venue": "Pasadena, United States"
+        },
+        {
+          "year": 1998,
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "stage": "Quarter-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Saint-Denis, France"
+        },
+        {
+          "year": 2006,
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "stage": "Final",
+          "result": "5-3",
+          "won": true,
+          "venue": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "teamCode": "NED",
+      "teamName": "Netherlands",
+      "wins": 1,
+      "losses": 3,
+      "totalShootouts": 4,
+      "winPercentage": 25.0,
+      "shootouts": [
+        {
+          "year": 1998,
+          "opponent": "Brazil",
+          "opponentCode": "BRA",
+          "stage": "Semi-Final",
+          "result": "2-4",
+          "won": false,
+          "venue": "Marseille, France"
+        },
+        {
+          "year": 2014,
+          "opponent": "Costa Rica",
+          "opponentCode": "CRC",
+          "stage": "Quarter-Final",
+          "result": "4-3",
+          "won": true,
+          "venue": "Salvador, Brazil"
+        },
+        {
+          "year": 2014,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Semi-Final",
+          "result": "2-4",
+          "won": false,
+          "venue": "Sao Paulo, Brazil"
+        },
+        {
+          "year": 2022,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Quarter-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Lusail, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "ENG",
+      "teamName": "England",
+      "wins": 1,
+      "losses": 3,
+      "totalShootouts": 4,
+      "winPercentage": 25.0,
+      "shootouts": [
+        {
+          "year": 1990,
+          "opponent": "West Germany",
+          "opponentCode": "GER",
+          "stage": "Semi-Final",
+          "result": "3-4",
+          "won": false,
+          "venue": "Turin, Italy"
+        },
+        {
+          "year": 1998,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Round of 16",
+          "result": "3-4",
+          "won": false,
+          "venue": "Saint-Etienne, France"
+        },
+        {
+          "year": 2006,
+          "opponent": "Portugal",
+          "opponentCode": "POR",
+          "stage": "Quarter-Final",
+          "result": "1-3",
+          "won": false,
+          "venue": "Gelsenkirchen, Germany"
+        },
+        {
+          "year": 2018,
+          "opponent": "Colombia",
+          "opponentCode": "COL",
+          "stage": "Round of 16",
+          "result": "4-3",
+          "won": true,
+          "venue": "Moscow, Russia"
+        }
+      ]
+    },
+    {
+      "teamCode": "ESP",
+      "teamName": "Spain",
+      "wins": 1,
+      "losses": 4,
+      "totalShootouts": 5,
+      "winPercentage": 20.0,
+      "shootouts": [
+        {
+          "year": 1986,
+          "opponent": "Belgium",
+          "opponentCode": "BEL",
+          "stage": "Quarter-Final",
+          "result": "4-5",
+          "won": false,
+          "venue": "Puebla, Mexico"
+        },
+        {
+          "year": 2002,
+          "opponent": "Republic of Ireland",
+          "opponentCode": "IRL",
+          "stage": "Round of 16",
+          "result": "3-2",
+          "won": true,
+          "venue": "Suwon, South Korea"
+        },
+        {
+          "year": 2002,
+          "opponent": "South Korea",
+          "opponentCode": "KOR",
+          "stage": "Quarter-Final",
+          "result": "3-5",
+          "won": false,
+          "venue": "Gwangju, South Korea"
+        },
+        {
+          "year": 2018,
+          "opponent": "Russia",
+          "opponentCode": "RUS",
+          "stage": "Round of 16",
+          "result": "3-4",
+          "won": false,
+          "venue": "Moscow, Russia"
+        },
+        {
+          "year": 2022,
+          "opponent": "Morocco",
+          "opponentCode": "MAR",
+          "stage": "Round of 16",
+          "result": "0-3",
+          "won": false,
+          "venue": "Al Rayyan, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "MEX",
+      "teamName": "Mexico",
+      "wins": 0,
+      "losses": 2,
+      "totalShootouts": 2,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 1986,
+          "opponent": "West Germany",
+          "opponentCode": "GER",
+          "stage": "Quarter-Final",
+          "result": "1-4",
+          "won": false,
+          "venue": "Monterrey, Mexico"
+        },
+        {
+          "year": 1994,
+          "opponent": "Bulgaria",
+          "opponentCode": "BUL",
+          "stage": "Round of 16",
+          "result": "1-3",
+          "won": false,
+          "venue": "East Rutherford, United States"
+        }
+      ]
+    },
+    {
+      "teamCode": "ROU",
+      "teamName": "Romania",
+      "wins": 0,
+      "losses": 2,
+      "totalShootouts": 2,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 1990,
+          "opponent": "Republic of Ireland",
+          "opponentCode": "IRL",
+          "stage": "Round of 16",
+          "result": "4-5",
+          "won": false,
+          "venue": "Genoa, Italy"
+        },
+        {
+          "year": 1994,
+          "opponent": "Sweden",
+          "opponentCode": "SWE",
+          "stage": "Quarter-Final",
+          "result": "4-5",
+          "won": false,
+          "venue": "Stanford, United States"
+        }
+      ]
+    },
+    {
+      "teamCode": "JPN",
+      "teamName": "Japan",
+      "wins": 0,
+      "losses": 2,
+      "totalShootouts": 2,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2010,
+          "opponent": "Paraguay",
+          "opponentCode": "PAR",
+          "stage": "Round of 16",
+          "result": "3-5",
+          "won": false,
+          "venue": "Pretoria, South Africa"
+        },
+        {
+          "year": 2022,
+          "opponent": "Croatia",
+          "opponentCode": "CRO",
+          "stage": "Round of 16",
+          "result": "1-3",
+          "won": false,
+          "venue": "Al Wakrah, Qatar"
+        }
+      ]
+    },
+    {
+      "teamCode": "GHA",
+      "teamName": "Ghana",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2010,
+          "opponent": "Uruguay",
+          "opponentCode": "URU",
+          "stage": "Quarter-Final",
+          "result": "2-4",
+          "won": false,
+          "venue": "Johannesburg, South Africa"
+        }
+      ]
+    },
+    {
+      "teamCode": "YUG",
+      "teamName": "Yugoslavia",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "note": "Defunct national team (dissolved 1992)",
+      "shootouts": [
+        {
+          "year": 1990,
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "stage": "Quarter-Final",
+          "result": "2-3",
+          "won": false,
+          "venue": "Florence, Italy"
+        }
+      ]
+    },
+    {
+      "teamCode": "SUI",
+      "teamName": "Switzerland",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2006,
+          "opponent": "Ukraine",
+          "opponentCode": "UKR",
+          "stage": "Round of 16",
+          "result": "0-3",
+          "won": false,
+          "venue": "Cologne, Germany"
+        }
+      ]
+    },
+    {
+      "teamCode": "COL",
+      "teamName": "Colombia",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2018,
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "stage": "Round of 16",
+          "result": "3-4",
+          "won": false,
+          "venue": "Moscow, Russia"
+        }
+      ]
+    },
+    {
+      "teamCode": "DEN",
+      "teamName": "Denmark",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2018,
+          "opponent": "Croatia",
+          "opponentCode": "CRO",
+          "stage": "Round of 16",
+          "result": "2-3",
+          "won": false,
+          "venue": "Nizhny Novgorod, Russia"
+        }
+      ]
+    },
+    {
+      "teamCode": "CHI",
+      "teamName": "Chile",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2014,
+          "opponent": "Brazil",
+          "opponentCode": "BRA",
+          "stage": "Round of 16",
+          "result": "2-3",
+          "won": false,
+          "venue": "Belo Horizonte, Brazil"
+        }
+      ]
+    },
+    {
+      "teamCode": "GRE",
+      "teamName": "Greece",
+      "wins": 0,
+      "losses": 1,
+      "totalShootouts": 1,
+      "winPercentage": 0.0,
+      "shootouts": [
+        {
+          "year": 2014,
+          "opponent": "Costa Rica",
+          "opponentCode": "CRC",
+          "stage": "Round of 16",
+          "result": "3-5",
+          "won": false,
+          "venue": "Recife, Brazil"
+        }
+      ]
+    }
+  ]
+}
