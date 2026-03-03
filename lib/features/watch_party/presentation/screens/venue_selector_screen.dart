@@ -4,6 +4,7 @@ import 'package:geolocator/geolocator.dart';
 import '../../../../features/recommendations/data/datasources/places_api_datasource.dart';
 import '../../../../features/recommendations/domain/entities/place.dart';
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Screen for selecting a venue for a watch party
 class VenueSelectorScreen extends StatefulWidget {
@@ -181,7 +182,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Search sports bars, restaurants...',
+                hintText: AppLocalizations.of(context).watchPartyVenueSearchHint,
                 prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/calendar_event.dart';
 import '../../domain/services/calendar_service.dart';
 
@@ -150,28 +151,28 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
                 context,
                 icon: Icons.calendar_month,
                 iconColor: Colors.blue,
-                title: 'Google Calendar',
+                title: AppLocalizations.of(context).calendarGoogle,
                 onTap: () => _addToGoogle(context),
               ),
               _buildOption(
                 context,
                 icon: Icons.apple,
                 iconColor: Colors.grey.shade800,
-                title: 'Apple Calendar',
+                title: AppLocalizations.of(context).calendarApple,
                 onTap: () => _downloadICS(context),
               ),
               _buildOption(
                 context,
                 icon: Icons.share,
                 iconColor: Colors.green,
-                title: 'Share .ics File',
+                title: AppLocalizations.of(context).calendarShareIcsFile,
                 onTap: () => _shareICS(context),
               ),
               _buildOption(
                 context,
                 icon: Icons.link,
                 iconColor: Colors.orange,
-                title: 'Copy Google Calendar Link',
+                title: AppLocalizations.of(context).calendarCopyGoogleLink,
                 onTap: () => _copyGoogleLink(context),
               ),
             ],
@@ -256,8 +257,8 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
     Navigator.pop(context);
 
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Google Calendar link copied'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context).calendarCopyGoogleLink),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -266,8 +267,8 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
   void _showResult(BuildContext context, CalendarResult result) {
     if (result.success) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Added to calendar'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).calendarAdded),
           backgroundColor: Colors.green,
           behavior: SnackBarBehavior.floating,
         ),

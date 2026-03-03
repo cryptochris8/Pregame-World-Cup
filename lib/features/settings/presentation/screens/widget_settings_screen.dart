@@ -63,8 +63,8 @@ class _WidgetSettingsScreenState extends State<WidgetSettingsScreen> {
       await service.updateConfiguration(_config);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Widget settings saved'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).widgetSettingsSaved),
             behavior: SnackBarBehavior.floating,
           ),
         );
@@ -73,7 +73,7 @@ class _WidgetSettingsScreenState extends State<WidgetSettingsScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to save settings: $e'),
+            content: Text(AppLocalizations.of(context).widgetSettingsSaveFailed(e.toString())),
             backgroundColor: Colors.red,
             behavior: SnackBarBehavior.floating,
           ),
@@ -540,8 +540,8 @@ class _WidgetSettingsScreenState extends State<WidgetSettingsScreen> {
       await service.syncToWidgets();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Widget refreshed'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).widgetRefreshed),
             behavior: SnackBarBehavior.floating,
           ),
         );
@@ -550,7 +550,7 @@ class _WidgetSettingsScreenState extends State<WidgetSettingsScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to refresh: $e'),
+            content: Text(AppLocalizations.of(context).widgetRefreshFailed(e.toString())),
             backgroundColor: Colors.red,
             behavior: SnackBarBehavior.floating,
           ),

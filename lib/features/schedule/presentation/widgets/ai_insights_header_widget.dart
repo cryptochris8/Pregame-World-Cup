@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Header row for the Enhanced AI Insights panel.
 ///
@@ -71,7 +72,7 @@ class AIInsightsHeaderWidget extends StatelessWidget {
                   ),
                 )
               : const Icon(Icons.refresh, color: Colors.orange, size: 20),
-          tooltip: 'Refresh Analysis',
+          tooltip: AppLocalizations.of(context).refreshAnalysis,
         ),
       ],
     );

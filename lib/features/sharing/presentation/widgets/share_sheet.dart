@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/shareable_content.dart';
 import '../../domain/services/social_sharing_service.dart';
 
@@ -114,8 +115,8 @@ class _ShareSheetState extends State<ShareSheet> {
             _buildOptionTile(
               context,
               icon: Icons.link,
-              title: 'Copy Link',
-              subtitle: 'Copy shareable link to clipboard',
+              title: AppLocalizations.of(context).shareCopyLink,
+              subtitle: AppLocalizations.of(context).shareCopyLinkSubtitle,
               onTap: () => _copyLink(),
             ),
 
@@ -123,8 +124,8 @@ class _ShareSheetState extends State<ShareSheet> {
             _buildOptionTile(
               context,
               icon: Icons.share,
-              title: 'More Apps',
-              subtitle: 'Share using other apps',
+              title: AppLocalizations.of(context).shareMoreApps,
+              subtitle: AppLocalizations.of(context).shareMoreAppsSubtitle,
               onTap: () => _systemShare(),
             ),
 
@@ -133,8 +134,8 @@ class _ShareSheetState extends State<ShareSheet> {
               _buildOptionTile(
                 context,
                 icon: Icons.image,
-                title: 'Share as Image',
-                subtitle: 'Create a shareable image',
+                title: AppLocalizations.of(context).shareAsImage,
+                subtitle: AppLocalizations.of(context).shareAsImageSubtitle,
                 onTap: () => _shareAsImage(),
               ),
 
@@ -331,9 +332,9 @@ class _ShareSheetState extends State<ShareSheet> {
     if (mounted) {
       Navigator.pop(context);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Link copied to clipboard'),
-          duration: Duration(seconds: 2),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).shareLinkCopied),
+          duration: const Duration(seconds: 2),
         ),
       );
     }

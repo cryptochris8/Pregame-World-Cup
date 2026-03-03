@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../worldcup/domain/entities/world_cup_match.dart';
 import '../../../worldcup/domain/repositories/world_cup_match_repository.dart';
 import '../../../worldcup/presentation/widgets/team_flag.dart';
@@ -127,7 +128,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Search teams, venues...',
+                hintText: AppLocalizations.of(context).watchPartyGameSearchHint,
                 prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),

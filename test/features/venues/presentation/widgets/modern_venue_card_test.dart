@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/venues/widgets/modern_venue_card.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 import '../../venue_test_helpers.dart';
 
@@ -18,6 +19,8 @@ void main() {
 
   Widget buildTestWidget(Widget child) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: Scaffold(
         body: SingleChildScrollView(
           child: SizedBox(

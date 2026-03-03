@@ -12,7 +12,6 @@ import 'package:pregame_world_cup/injection_container.dart';
 ///
 /// We test:
 ///   - The global `sl` is the GetIt.instance
-///   - ANDROID_DIAGNOSTIC_MODE is false
 ///   - setupLocator structure (we cannot fully call it without all platform
 ///     channels, but we can test the top-level contract)
 void main() {
@@ -25,11 +24,6 @@ void main() {
   group('injection_container.dart - globals', () {
     test('sl is GetIt.instance', () {
       expect(identical(sl, GetIt.instance), isTrue);
-    });
-
-    test('ANDROID_DIAGNOSTIC_MODE is false for production', () {
-      // ignore: constant_identifier_names
-      expect(ANDROID_DIAGNOSTIC_MODE, isFalse);
     });
   });
 

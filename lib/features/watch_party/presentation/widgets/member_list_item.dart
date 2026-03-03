@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/watch_party_member.dart';
 import 'member_avatar_row.dart';
 
@@ -67,7 +68,7 @@ class MemberListItem extends StatelessWidget {
       ),
       subtitle: Row(
         children: [
-          _buildRoleBadge(),
+          _buildRoleBadge(context),
           const SizedBox(width: 8),
           _buildAttendanceIndicator(),
           if (member.isMuted) ...[
@@ -167,22 +168,23 @@ class MemberListItem extends StatelessWidget {
     );
   }
 
-  Widget _buildRoleBadge() {
+  Widget _buildRoleBadge(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     Color color;
     String label;
 
     switch (member.role) {
       case WatchPartyMemberRole.host:
         color = const Color(0xFF7C3AED);
-        label = 'Host';
+        label = l10n.watchPartyRoleHost;
         break;
       case WatchPartyMemberRole.coHost:
         color = const Color(0xFF2563EB);
-        label = 'Co-Host';
+        label = l10n.watchPartyRoleCoHost;
         break;
       case WatchPartyMemberRole.member:
         color = Colors.grey;
-        label = 'Member';
+        label = l10n.watchPartyRoleMember;
         break;
     }
 

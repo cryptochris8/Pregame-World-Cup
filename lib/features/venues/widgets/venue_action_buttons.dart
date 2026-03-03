@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
+import '../../../l10n/app_localizations.dart';
 
 class VenueActionButtons extends StatelessWidget {
   final Place venue;
@@ -19,6 +20,7 @@ class VenueActionButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: padding,
       decoration: const BoxDecoration(
@@ -33,28 +35,28 @@ class VenueActionButtons extends StatelessWidget {
           _buildActionButton(
             context,
             icon: Icons.phone,
-            label: 'Call',
+            label: l10n.venueActionCall,
             color: const Color(0xFF2E7D32),
             onTap: () => _callVenue(context),
           ),
           _buildActionButton(
             context,
             icon: Icons.directions,
-            label: 'Directions',
+            label: l10n.venueActionDirections,
             color: const Color(0xFF1976D2),
             onTap: () => _getDirections(context),
           ),
           _buildActionButton(
             context,
             icon: Icons.language,
-            label: 'Website',
+            label: l10n.venueActionWebsite,
             color: const Color(0xFF8B4513),
             onTap: () => _openWebsite(context),
           ),
           _buildActionButton(
             context,
             icon: Icons.share,
-            label: 'Share',
+            label: l10n.venueActionShare,
             color: const Color(0xFF7B1FA2),
             onTap: () => _shareVenue(context),
           ),
@@ -129,12 +131,13 @@ class VenueActionButtons extends StatelessWidget {
   }
 
   Future<void> _callVenue(BuildContext context) async {
+    final l10n = AppLocalizations.of(context);
     // In a real app, you would get the phone number from venue details
     // For now, we'll show a dialog
     _showActionDialog(
       context,
-      title: 'Call ${venue.name}',
-      content: 'Phone number would be retrieved from venue details.\nThis feature will be available soon!',
+      title: l10n.venueCallTitle(venue.name),
+      content: l10n.venuePhoneComingSoon,
       icon: Icons.phone,
       iconColor: const Color(0xFF2E7D32),
     );
@@ -177,29 +180,31 @@ class VenueActionButtons extends StatelessWidget {
   }
 
   Future<void> _openWebsite(BuildContext context) async {
+    final l10n = AppLocalizations.of(context);
     // In a real app, you would get the website from venue details
     _showActionDialog(
       context,
-      title: 'Visit ${venue.name} Website',
-      content: 'Website URL would be retrieved from venue details.\nThis feature will be available soon!',
+      title: l10n.venueWebsiteTitle(venue.name),
+      content: l10n.venueWebsiteComingSoon,
       icon: Icons.language,
       iconColor: const Color(0xFF8B4513),
     );
   }
 
   Future<void> _shareVenue(BuildContext context) async {
+    final l10n = AppLocalizations.of(context);
     try {
       final shareText = _buildShareText();
-      
+
       // For now, we'll show the share dialog
       // In a real app, you would use the share package
       _showActionDialog(
         context,
-        title: 'Share ${venue.name}',
+        title: '${l10n.venueActionShare} ${venue.name}',
         content: shareText,
         icon: Icons.share,
         iconColor: const Color(0xFF7B1FA2),
-        actionText: 'Copy to Clipboard',
+        actionText: l10n.copyToClipboard,
         onAction: () {
           Clipboard.setData(ClipboardData(text: shareText));
           Navigator.of(context).pop();

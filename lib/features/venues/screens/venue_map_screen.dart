@@ -3,6 +3,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:math' as math;
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
+import '../../../l10n/app_localizations.dart';
 import '../widgets/venue_map_info_card.dart';
 import '../widgets/venue_route_panel.dart';
 import '../widgets/venue_map_top_controls.dart';
@@ -50,6 +51,8 @@ class _VenueMapScreenState extends State<VenueMapScreen>
   // Filter state
   List<Place> _filteredVenues = [];
 
+  bool _mapInitialized = false;
+
   @override
   void initState() {
     super.initState();
@@ -65,7 +68,15 @@ class _VenueMapScreenState extends State<VenueMapScreen>
     );
 
     _filteredVenues = widget.venues;
-    _initializeMap();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (!_mapInitialized) {
+      _mapInitialized = true;
+      _initializeMap();
+    }
   }
 
   @override
@@ -162,12 +173,13 @@ class _VenueMapScreenState extends State<VenueMapScreen>
 
     // Add stadium marker if available
     if (widget.stadiumLocation != null) {
+      final l10n = AppLocalizations.of(context);
       markers.add(Marker(
         markerId: const MarkerId('stadium'),
         position: widget.stadiumLocation!,
         icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
-          title: 'Stadium',
+          title: l10n.venueStadium,
           snippet: widget.gameLocation ?? 'Game Location',
         ),
         onTap: () => _onStadiumTap(),

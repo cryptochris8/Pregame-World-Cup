@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
+import '../../../l10n/app_localizations.dart';
 
 class VenueMapInfoCard extends StatelessWidget {
   final Place venue;
@@ -21,6 +22,7 @@ class VenueMapInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final category = VenueRecommendationService.categorizeVenue(venue);
     final isPopular = VenueRecommendationService.isPopular(venue);
     
@@ -250,31 +252,31 @@ class VenueMapInfoCard extends StatelessWidget {
                 Expanded(
                   child: _buildActionButton(
                     icon: Icons.directions,
-                    label: 'Directions',
+                    label: l10n.venueActionDirections,
                     color: const Color(0xFF1976D2),
                     onPressed: onDirectionsPressed,
                   ),
                 ),
-                
+
                 const SizedBox(width: 12),
-                
+
                 // Call button
                 Expanded(
                   child: _buildActionButton(
                     icon: Icons.phone,
-                    label: 'Call',
+                    label: l10n.venueActionCall,
                     color: const Color(0xFF2E7D32),
                     onPressed: onCallPressed,
                   ),
                 ),
-                
+
                 const SizedBox(width: 12),
-                
+
                 // Details button
                 Expanded(
                   child: _buildActionButton(
                     icon: Icons.info,
-                    label: 'Details',
+                    label: l10n.venueActionDetails,
                     color: const Color(0xFF8B4513),
                     onPressed: onDetailsPressed,
                   ),

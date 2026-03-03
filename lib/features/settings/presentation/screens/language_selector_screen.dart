@@ -106,13 +106,14 @@ class _LanguageSelectorScreenState extends State<LanguageSelectorScreen> {
 
     if (mounted) {
       // Show confirmation
+      final l10n = AppLocalizations.of(context);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Language changed to ${language.nativeName}',
+            l10n.languageChangedTo(language.nativeName),
           ),
           action: SnackBarAction(
-            label: 'OK',
+            label: l10n.ok,
             onPressed: () {},
           ),
         ),

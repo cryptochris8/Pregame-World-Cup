@@ -14,10 +14,6 @@ import 'di/extended_features_di.dart';
 // Global GetIt instance
 final sl = GetIt.instance; // sl stands for Service Locator
 
-/// Android diagnostic mode - set to false for production
-// ignore: constant_identifier_names
-const bool ANDROID_DIAGNOSTIC_MODE = false;
-
 /// Debug-only log helper. Stripped by tree-shaking in release builds.
 void _diLog(String message) {
   if (kDebugMode) {
@@ -26,10 +22,6 @@ void _diLog(String message) {
 }
 
 Future<void> setupLocator() async {
-  if (ANDROID_DIAGNOSTIC_MODE) {
-    _diLog('DI: Starting in Android diagnostic mode');
-  }
-
   try {
     // Steps 1-2: Core dependencies and essential services (must succeed)
     _diLog('DI STEPS 1-2: Core Dependencies & Services');
@@ -108,15 +100,8 @@ Future<void> setupLocator() async {
       _diLog('DI STEPS 14-16: Extended Features - FAILED: $e');
     }
 
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      _diLog('DI: All steps completed');
-    }
-
   } catch (e) {
     _diLog('DI: Critical failure: $e');
-    if (ANDROID_DIAGNOSTIC_MODE) {
-      _diLog('DIAGNOSTIC: This is a critical error that will prevent app startup');
-    }
     rethrow;
   }
 }

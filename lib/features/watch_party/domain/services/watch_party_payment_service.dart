@@ -5,6 +5,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../../../services/zapier_service.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/performance_monitor.dart';
@@ -354,10 +355,11 @@ class WatchPartyPaymentService {
 
   /// Show error dialog
   void _showErrorDialog(BuildContext context, String message) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Payment Error'),
+        title: Text(l10n.paymentErrorTitle),
         content: Text(message),
         actions: [
           TextButton(
@@ -371,10 +373,11 @@ class WatchPartyPaymentService {
 
   /// Show success dialog
   void _showSuccessDialog(BuildContext context, String message) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Success!'),
+        title: Text(l10n.paymentSuccessTitle),
         content: Text(message),
         actions: [
           TextButton(

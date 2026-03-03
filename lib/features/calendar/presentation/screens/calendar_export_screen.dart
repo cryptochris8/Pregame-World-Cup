@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/calendar_event.dart';
 import '../../domain/services/calendar_service.dart';
 
@@ -104,8 +105,8 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
             theme,
             icon: Icons.calendar_month,
             iconColor: Colors.blue,
-            title: 'Google Calendar',
-            subtitle: 'Open in Google Calendar',
+            title: AppLocalizations.of(context).calendarGoogle,
+            subtitle: AppLocalizations.of(context).calendarGoogleSubtitle,
             onTap: () => _exportToGoogle(context),
           ),
 
@@ -114,8 +115,8 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
             theme,
             icon: Icons.apple,
             iconColor: Colors.grey.shade800,
-            title: 'Apple Calendar',
-            subtitle: 'Download .ics file',
+            title: AppLocalizations.of(context).calendarApple,
+            subtitle: AppLocalizations.of(context).calendarAppleSubtitle,
             onTap: () => _downloadICalFile(context),
           ),
 
@@ -124,8 +125,8 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
             theme,
             icon: Icons.share,
             iconColor: Colors.green,
-            title: 'Share Calendar File',
-            subtitle: 'Share .ics file to any app',
+            title: AppLocalizations.of(context).calendarShareFile,
+            subtitle: AppLocalizations.of(context).calendarShareFileSubtitle,
             onTap: () => _shareICalFile(context),
           ),
 
@@ -152,8 +153,8 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
             theme,
             icon: Icons.link,
             iconColor: Colors.orange,
-            title: 'Copy Calendar Feed URL',
-            subtitle: 'For calendar subscription',
+            title: AppLocalizations.of(context).calendarCopyFeedUrl,
+            subtitle: AppLocalizations.of(context).calendarCopyFeedUrlSubtitle,
             onTap: () => _copyFeedUrl(context),
           ),
 
@@ -338,8 +339,8 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
     Clipboard.setData(ClipboardData(text: feedUrl));
 
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Calendar feed URL copied to clipboard'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context).calendarFeedUrlCopied),
         behavior: SnackBarBehavior.floating,
       ),
     );

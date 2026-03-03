@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/watch_party_bloc.dart';
 import '../widgets/visibility_badge.dart';
 import '../../domain/entities/watch_party.dart';
@@ -152,10 +153,10 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                 // Name field
                 TextFormField(
                   controller: _nameController,
-                  decoration: const InputDecoration(
-                    labelText: 'Party Name',
-                    hintText: 'e.g., USA vs Mexico Watch Party',
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: AppLocalizations.of(context).watchPartyNameLabel,
+                    hintText: AppLocalizations.of(context).watchPartyNameHint,
+                    border: const OutlineInputBorder(),
                   ),
                   validator: (value) {
                     if (value == null || value.trim().isEmpty) {
@@ -169,10 +170,10 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                 // Description field
                 TextFormField(
                   controller: _descriptionController,
-                  decoration: const InputDecoration(
-                    labelText: 'Description',
-                    hintText: 'Tell people about your watch party...',
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: AppLocalizations.of(context).watchPartyDescriptionLabel,
+                    hintText: AppLocalizations.of(context).watchPartyDescriptionHint,
+                    border: const OutlineInputBorder(),
                   ),
                   maxLines: 3,
                 ),
@@ -310,11 +311,11 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                             const SizedBox(height: 16),
                             TextFormField(
                               controller: _feeController,
-                              decoration: const InputDecoration(
-                                labelText: 'Virtual Attendance Fee',
+                              decoration: InputDecoration(
+                                labelText: AppLocalizations.of(context).watchPartyVirtualFeeLabel,
                                 prefixText: '\$ ',
-                                hintText: '0.00 for free',
-                                border: OutlineInputBorder(),
+                                hintText: AppLocalizations.of(context).watchPartyVirtualFeeHint,
+                                border: const OutlineInputBorder(),
                               ),
                               keyboardType: TextInputType.number,
                             ),
@@ -406,11 +407,12 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
   Future<bool> _onWillPop() async {
     if (!_hasChanges) return true;
 
+    final l10n = AppLocalizations.of(context);
     final result = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Discard Changes?'),
-        content: const Text('You have unsaved changes. Are you sure you want to leave?'),
+        title: Text(l10n.discardChangesTitle),
+        content: Text(l10n.discardChangesMessage),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),

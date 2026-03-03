@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/ai/services/ai_service.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/game_schedule.dart';
 import '../../../../injection_container.dart';
 
@@ -204,7 +205,7 @@ Keep it concise and engaging for fans planning their game day experience.
                   ),
                 )
               : const Icon(Icons.refresh, color: Colors.orange, size: 20),
-          tooltip: 'Refresh AI Analysis',
+          tooltip: AppLocalizations.of(context).refreshAnalysis,
         ),
       ],
     );
@@ -266,7 +267,7 @@ Keep it concise and engaging for fans planning their game day experience.
         if (_aiPrediction != null) ...[
           _buildInsightSection(
             icon: Icons.psychology,
-            title: 'AI Prediction',
+            title: AppLocalizations.of(context).aiPredictionTitle,
             content: _aiPrediction!,
             color: Colors.blue,
           ),
@@ -277,7 +278,7 @@ Keep it concise and engaging for fans planning their game day experience.
         if (_keyInsights != null) ...[
           _buildInsightSection(
             icon: Icons.lightbulb,
-            title: 'Key Factors to Watch',
+            title: AppLocalizations.of(context).keyFactorsToWatch,
             content: _keyInsights!,
             color: Colors.orange,
           ),

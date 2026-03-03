@@ -2917,4 +2917,255 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get activeUsers7Days => 'Active Users (7 days)';
+
+  @override
+  String get venueActionCall => 'Call';
+
+  @override
+  String get venueActionDirections => 'Directions';
+
+  @override
+  String get venueActionDetails => 'Details';
+
+  @override
+  String get venueActionShare => 'Share';
+
+  @override
+  String get venueActionWebsite => 'Website';
+
+  @override
+  String venueCallTitle(String venueName) {
+    return 'Call $venueName';
+  }
+
+  @override
+  String get venuePhoneComingSoon =>
+      'Phone number would be retrieved from venue details.\nThis feature will be available soon!';
+
+  @override
+  String venueWebsiteTitle(String venueName) {
+    return 'Visit $venueName Website';
+  }
+
+  @override
+  String get venueWebsiteComingSoon =>
+      'Website URL would be retrieved from venue details.\nThis feature will be available soon!';
+
+  @override
+  String get copyToClipboard => 'Copy to Clipboard';
+
+  @override
+  String get venueStadium => 'Stadium';
+
+  @override
+  String get venueDistanceVeryClose => 'Very Close';
+
+  @override
+  String get venueDistance2to5min => '2-5 min walk';
+
+  @override
+  String get venueDistanceClose => 'Close';
+
+  @override
+  String get venueDistance8to12min => '8-12 min walk';
+
+  @override
+  String get venueDistanceModerate => 'Moderate';
+
+  @override
+  String get venueDistance15to20min => '15-20 min walk';
+
+  @override
+  String get venueDistanceFar => 'Far';
+
+  @override
+  String get venueDistance20plusMin => '20+ min walk';
+
+  @override
+  String get venueDistanceImmediate => 'Immediate';
+
+  @override
+  String get venueDistance1to3min => '1-3 min walk';
+
+  @override
+  String get venueDistanceQuick => 'Quick';
+
+  @override
+  String get venueDistance5to8min => '5-8 min walk';
+
+  @override
+  String get venueDistanceAccessible => 'Accessible';
+
+  @override
+  String get venueDistance12to18min => '12-18 min walk';
+
+  @override
+  String get venueMapRings => 'Rings';
+
+  @override
+  String get venueMapListView => 'List View';
+
+  @override
+  String get venueMapMyLocation => 'My Location';
+
+  @override
+  String get watchPartyChatHint => 'Type a message...';
+
+  @override
+  String get watchPartyVenueSearchHint => 'Search sports bars, restaurants...';
+
+  @override
+  String get watchPartyNameLabel => 'Party Name';
+
+  @override
+  String get watchPartyNameHint => 'e.g., USA vs Mexico Watch Party';
+
+  @override
+  String get watchPartyDescriptionLabel => 'Description';
+
+  @override
+  String get watchPartyDescriptionHint =>
+      'Tell people about your watch party...';
+
+  @override
+  String get watchPartyVirtualFeeLabel => 'Virtual Attendance Fee';
+
+  @override
+  String get watchPartyVirtualFeeHint => '0.00 for free';
+
+  @override
+  String get discardChangesTitle => 'Discard Changes?';
+
+  @override
+  String get discardChangesMessage =>
+      'You have unsaved changes. Are you sure you want to leave?';
+
+  @override
+  String get watchPartyGameSearchHint => 'Search teams, venues...';
+
+  @override
+  String get watchPartyRoleHost => 'Host';
+
+  @override
+  String get watchPartyRoleCoHost => 'Co-Host';
+
+  @override
+  String get watchPartyRoleMember => 'Member';
+
+  @override
+  String get paymentErrorTitle => 'Payment Error';
+
+  @override
+  String get paymentSuccessTitle => 'Success!';
+
+  @override
+  String get calendarGoogle => 'Google Calendar';
+
+  @override
+  String get calendarGoogleSubtitle => 'Open in Google Calendar';
+
+  @override
+  String get calendarApple => 'Apple Calendar';
+
+  @override
+  String get calendarAppleSubtitle => 'Download .ics file';
+
+  @override
+  String get calendarShareFile => 'Share Calendar File';
+
+  @override
+  String get calendarShareFileSubtitle => 'Share .ics file to any app';
+
+  @override
+  String get calendarCopyFeedUrl => 'Copy Calendar Feed URL';
+
+  @override
+  String get calendarCopyFeedUrlSubtitle => 'For calendar subscription';
+
+  @override
+  String get calendarAdded => 'Added to calendar';
+
+  @override
+  String get calendarFeedUrlCopied => 'Calendar feed URL copied to clipboard';
+
+  @override
+  String get calendarShareIcsFile => 'Share .ics File';
+
+  @override
+  String get calendarCopyGoogleLink => 'Copy Google Calendar Link';
+
+  @override
+  String get shareCopyLink => 'Copy Link';
+
+  @override
+  String get shareCopyLinkSubtitle => 'Copy shareable link to clipboard';
+
+  @override
+  String get shareMoreApps => 'More Apps';
+
+  @override
+  String get shareMoreAppsSubtitle => 'Share using other apps';
+
+  @override
+  String get shareAsImageSubtitle => 'Create a shareable image';
+
+  @override
+  String get shareLinkCopied => 'Link copied to clipboard';
+
+  @override
+  String languageChangedTo(String languageName) {
+    return 'Language changed to $languageName';
+  }
+
+  @override
+  String get accessibilityResetLabel =>
+      'Reset all accessibility settings to defaults';
+
+  @override
+  String get accessibilityHighContrast => 'High contrast mode';
+
+  @override
+  String get accessibilityBoldText => 'Bold text';
+
+  @override
+  String get accessibilityReduceMotion => 'Reduce motion';
+
+  @override
+  String get accessibilityLargerTargets => 'Larger touch targets';
+
+  @override
+  String get accessibilityTextSizeSlider => 'Text size slider';
+
+  @override
+  String accessibilitySetTextSize(String size) {
+    return 'Set text size to $size';
+  }
+
+  @override
+  String get accessibilityScreenReader => 'Screen reader optimization';
+
+  @override
+  String get widgetSettingsSaved => 'Widget settings saved';
+
+  @override
+  String widgetSettingsSaveFailed(String error) {
+    return 'Failed to save settings: $error';
+  }
+
+  @override
+  String get widgetRefreshed => 'Widget refreshed';
+
+  @override
+  String widgetRefreshFailed(String error) {
+    return 'Failed to refresh: $error';
+  }
+
+  @override
+  String get aiPredictionTitle => 'AI Prediction';
+
+  @override
+  String get keyFactorsToWatch => 'Key Factors to Watch';
+
+  @override
+  String get refreshAnalysis => 'Refresh Analysis';
 }

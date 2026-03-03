@@ -72,7 +72,7 @@ class _AccessibilityPreferencesScreenState
         elevation: 0,
         actions: [
           Semantics(
-            label: 'Reset all accessibility settings to defaults',
+            label: l10n.accessibilityResetLabel,
             button: true,
             child: TextButton(
               onPressed: () async {
@@ -193,7 +193,7 @@ class _AccessibilityPreferencesScreenState
       icon: Icons.visibility,
       children: [
         Semantics(
-          label: 'High contrast mode',
+          label: l10n.accessibilityHighContrast,
           hint: _settings.highContrast
               ? 'Currently enabled. Tap to disable high contrast colors'
               : 'Currently disabled. Tap to enable high contrast colors for better visibility',
@@ -209,7 +209,7 @@ class _AccessibilityPreferencesScreenState
         ),
         const Divider(color: Colors.white24, indent: 56),
         Semantics(
-          label: 'Bold text',
+          label: l10n.accessibilityBoldText,
           hint: _settings.boldText
               ? 'Currently enabled. Tap to disable bold text'
               : 'Currently disabled. Tap to make all text bolder',
@@ -235,7 +235,7 @@ class _AccessibilityPreferencesScreenState
       icon: Icons.animation,
       children: [
         Semantics(
-          label: 'Reduce motion',
+          label: l10n.accessibilityReduceMotion,
           hint: _settings.reduceMotion
               ? 'Currently enabled. Animations are disabled'
               : 'Currently disabled. Tap to reduce or disable animations',
@@ -261,7 +261,7 @@ class _AccessibilityPreferencesScreenState
       icon: Icons.touch_app,
       children: [
         Semantics(
-          label: 'Larger touch targets',
+          label: l10n.accessibilityLargerTargets,
           hint: _settings.largerTouchTargets
               ? 'Currently enabled. Buttons and controls are larger'
               : 'Currently disabled. Tap to make buttons and controls larger',
@@ -353,7 +353,7 @@ class _AccessibilityPreferencesScreenState
               const SizedBox(height: 16),
               // Scale Slider
               Semantics(
-                label: 'Text size slider',
+                label: l10n.accessibilityTextSizeSlider,
                 value: scaleLabel,
                 hint: 'Slide to adjust text size from small to extra large',
                 child: Row(
@@ -436,7 +436,7 @@ class _AccessibilityPreferencesScreenState
   Widget _buildScaleOption(ThemeData theme, double scale, String label) {
     final isSelected = (_settings.textScaleFactor ?? 1.0) == scale;
     return Semantics(
-      label: 'Set text size to $label',
+      label: AppLocalizations.of(context).accessibilitySetTextSize(label),
       selected: isSelected,
       button: true,
       child: GestureDetector(
@@ -489,7 +489,7 @@ class _AccessibilityPreferencesScreenState
       icon: Icons.record_voice_over,
       children: [
         Semantics(
-          label: 'Screen reader optimization',
+          label: l10n.accessibilityScreenReader,
           hint: _settings.screenReaderOptimized
               ? 'Currently enabled. App is optimized for screen readers'
               : 'Currently disabled. Tap to optimize for VoiceOver and TalkBack',

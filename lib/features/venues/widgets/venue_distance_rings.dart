@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import '../../../l10n/app_localizations.dart';
 
 class VenueDistanceRings extends StatefulWidget {
   final LatLng centerLocation;
@@ -242,60 +243,61 @@ class DistanceRing {
 
 // Predefined distance rings for game day venues
 class GameDayDistanceRings {
-  static List<DistanceRing> get defaultRings => [
+  static List<DistanceRing> getDefaultRings(AppLocalizations l10n) => [
     DistanceRing(
       radiusKm: 0.5,
-      label: 'Very Close',
-      description: '2-5 min walk',
+      label: l10n.venueDistanceVeryClose,
+      description: l10n.venueDistance2to5min,
       color: const Color(0xFF2D6A4F),
       estimatedWalkTime: 3,
     ),
     DistanceRing(
       radiusKm: 1.0,
-      label: 'Close',
-      description: '8-12 min walk',
+      label: l10n.venueDistanceClose,
+      description: l10n.venueDistance8to12min,
       color: const Color(0xFFFFB300),
       estimatedWalkTime: 10,
     ),
     DistanceRing(
       radiusKm: 1.5,
-      label: 'Moderate',
-      description: '15-20 min walk',
+      label: l10n.venueDistanceModerate,
+      description: l10n.venueDistance15to20min,
       color: const Color(0xFFFF8F00),
       estimatedWalkTime: 18,
     ),
     DistanceRing(
       radiusKm: 2.0,
-      label: 'Far',
-      description: '20+ min walk',
+      label: l10n.venueDistanceFar,
+      description: l10n.venueDistance20plusMin,
       color: const Color(0xFFD32F2F),
       estimatedWalkTime: 25,
     ),
   ];
 
-  static List<DistanceRing> get quickAccessRings => [
+  static List<DistanceRing> getQuickAccessRings(AppLocalizations l10n) => [
     DistanceRing(
       radiusKm: 0.3,
-      label: 'Immediate',
-      description: '1-3 min walk',
+      label: l10n.venueDistanceImmediate,
+      description: l10n.venueDistance1to3min,
       color: const Color(0xFF1B5E20),
       estimatedWalkTime: 2,
     ),
     DistanceRing(
       radiusKm: 0.8,
-      label: 'Quick',
-      description: '5-8 min walk',
+      label: l10n.venueDistanceQuick,
+      description: l10n.venueDistance5to8min,
       color: const Color(0xFF388E3C),
       estimatedWalkTime: 7,
     ),
     DistanceRing(
       radiusKm: 1.5,
-      label: 'Accessible',
-      description: '12-18 min walk',
+      label: l10n.venueDistanceAccessible,
+      description: l10n.venueDistance12to18min,
       color: const Color(0xFFF57C00),
       estimatedWalkTime: 15,
     ),
   ];
+
 }
 
 // Helper widget for distance-based venue organization

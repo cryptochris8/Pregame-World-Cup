@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../../l10n/app_localizations.dart';
 
 /// Bottom control bar for the venue map screen.
 ///
@@ -20,6 +21,7 @@ class VenueMapBottomControls extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Positioned(
       bottom: 16,
       left: 16,
@@ -29,18 +31,18 @@ class VenueMapBottomControls extends StatelessWidget {
         children: [
           _buildControlButton(
             icon: Icons.layers,
-            label: 'Rings',
+            label: l10n.venueMapRings,
             isActive: showDistanceRings,
             onPressed: onToggleRings,
           ),
           _buildControlButton(
             icon: Icons.list,
-            label: 'List View',
+            label: l10n.venueMapListView,
             onPressed: onListView,
           ),
           _buildControlButton(
             icon: Icons.my_location,
-            label: 'My Location',
+            label: l10n.venueMapMyLocation,
             onPressed: onMyLocation,
           ),
         ],

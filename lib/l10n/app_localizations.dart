@@ -5399,6 +5399,474 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Active Users (7 days)'**
   String get activeUsers7Days;
+
+  /// No description provided for @venueActionCall.
+  ///
+  /// In en, this message translates to:
+  /// **'Call'**
+  String get venueActionCall;
+
+  /// No description provided for @venueActionDirections.
+  ///
+  /// In en, this message translates to:
+  /// **'Directions'**
+  String get venueActionDirections;
+
+  /// No description provided for @venueActionDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get venueActionDetails;
+
+  /// No description provided for @venueActionShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get venueActionShare;
+
+  /// No description provided for @venueActionWebsite.
+  ///
+  /// In en, this message translates to:
+  /// **'Website'**
+  String get venueActionWebsite;
+
+  /// No description provided for @venueCallTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Call {venueName}'**
+  String venueCallTitle(String venueName);
+
+  /// No description provided for @venuePhoneComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number would be retrieved from venue details.\nThis feature will be available soon!'**
+  String get venuePhoneComingSoon;
+
+  /// No description provided for @venueWebsiteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Visit {venueName} Website'**
+  String venueWebsiteTitle(String venueName);
+
+  /// No description provided for @venueWebsiteComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Website URL would be retrieved from venue details.\nThis feature will be available soon!'**
+  String get venueWebsiteComingSoon;
+
+  /// No description provided for @copyToClipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy to Clipboard'**
+  String get copyToClipboard;
+
+  /// No description provided for @venueStadium.
+  ///
+  /// In en, this message translates to:
+  /// **'Stadium'**
+  String get venueStadium;
+
+  /// No description provided for @venueDistanceVeryClose.
+  ///
+  /// In en, this message translates to:
+  /// **'Very Close'**
+  String get venueDistanceVeryClose;
+
+  /// No description provided for @venueDistance2to5min.
+  ///
+  /// In en, this message translates to:
+  /// **'2-5 min walk'**
+  String get venueDistance2to5min;
+
+  /// No description provided for @venueDistanceClose.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get venueDistanceClose;
+
+  /// No description provided for @venueDistance8to12min.
+  ///
+  /// In en, this message translates to:
+  /// **'8-12 min walk'**
+  String get venueDistance8to12min;
+
+  /// No description provided for @venueDistanceModerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderate'**
+  String get venueDistanceModerate;
+
+  /// No description provided for @venueDistance15to20min.
+  ///
+  /// In en, this message translates to:
+  /// **'15-20 min walk'**
+  String get venueDistance15to20min;
+
+  /// No description provided for @venueDistanceFar.
+  ///
+  /// In en, this message translates to:
+  /// **'Far'**
+  String get venueDistanceFar;
+
+  /// No description provided for @venueDistance20plusMin.
+  ///
+  /// In en, this message translates to:
+  /// **'20+ min walk'**
+  String get venueDistance20plusMin;
+
+  /// No description provided for @venueDistanceImmediate.
+  ///
+  /// In en, this message translates to:
+  /// **'Immediate'**
+  String get venueDistanceImmediate;
+
+  /// No description provided for @venueDistance1to3min.
+  ///
+  /// In en, this message translates to:
+  /// **'1-3 min walk'**
+  String get venueDistance1to3min;
+
+  /// No description provided for @venueDistanceQuick.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick'**
+  String get venueDistanceQuick;
+
+  /// No description provided for @venueDistance5to8min.
+  ///
+  /// In en, this message translates to:
+  /// **'5-8 min walk'**
+  String get venueDistance5to8min;
+
+  /// No description provided for @venueDistanceAccessible.
+  ///
+  /// In en, this message translates to:
+  /// **'Accessible'**
+  String get venueDistanceAccessible;
+
+  /// No description provided for @venueDistance12to18min.
+  ///
+  /// In en, this message translates to:
+  /// **'12-18 min walk'**
+  String get venueDistance12to18min;
+
+  /// No description provided for @venueMapRings.
+  ///
+  /// In en, this message translates to:
+  /// **'Rings'**
+  String get venueMapRings;
+
+  /// No description provided for @venueMapListView.
+  ///
+  /// In en, this message translates to:
+  /// **'List View'**
+  String get venueMapListView;
+
+  /// No description provided for @venueMapMyLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'My Location'**
+  String get venueMapMyLocation;
+
+  /// No description provided for @watchPartyChatHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a message...'**
+  String get watchPartyChatHint;
+
+  /// No description provided for @watchPartyVenueSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search sports bars, restaurants...'**
+  String get watchPartyVenueSearchHint;
+
+  /// No description provided for @watchPartyNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Party Name'**
+  String get watchPartyNameLabel;
+
+  /// No description provided for @watchPartyNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., USA vs Mexico Watch Party'**
+  String get watchPartyNameHint;
+
+  /// No description provided for @watchPartyDescriptionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get watchPartyDescriptionLabel;
+
+  /// No description provided for @watchPartyDescriptionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell people about your watch party...'**
+  String get watchPartyDescriptionHint;
+
+  /// No description provided for @watchPartyVirtualFeeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Attendance Fee'**
+  String get watchPartyVirtualFeeLabel;
+
+  /// No description provided for @watchPartyVirtualFeeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'0.00 for free'**
+  String get watchPartyVirtualFeeHint;
+
+  /// No description provided for @discardChangesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discard Changes?'**
+  String get discardChangesTitle;
+
+  /// No description provided for @discardChangesMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You have unsaved changes. Are you sure you want to leave?'**
+  String get discardChangesMessage;
+
+  /// No description provided for @watchPartyGameSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search teams, venues...'**
+  String get watchPartyGameSearchHint;
+
+  /// No description provided for @watchPartyRoleHost.
+  ///
+  /// In en, this message translates to:
+  /// **'Host'**
+  String get watchPartyRoleHost;
+
+  /// No description provided for @watchPartyRoleCoHost.
+  ///
+  /// In en, this message translates to:
+  /// **'Co-Host'**
+  String get watchPartyRoleCoHost;
+
+  /// No description provided for @watchPartyRoleMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Member'**
+  String get watchPartyRoleMember;
+
+  /// No description provided for @paymentErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Error'**
+  String get paymentErrorTitle;
+
+  /// No description provided for @paymentSuccessTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Success!'**
+  String get paymentSuccessTitle;
+
+  /// No description provided for @calendarGoogle.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Calendar'**
+  String get calendarGoogle;
+
+  /// No description provided for @calendarGoogleSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Google Calendar'**
+  String get calendarGoogleSubtitle;
+
+  /// No description provided for @calendarApple.
+  ///
+  /// In en, this message translates to:
+  /// **'Apple Calendar'**
+  String get calendarApple;
+
+  /// No description provided for @calendarAppleSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Download .ics file'**
+  String get calendarAppleSubtitle;
+
+  /// No description provided for @calendarShareFile.
+  ///
+  /// In en, this message translates to:
+  /// **'Share Calendar File'**
+  String get calendarShareFile;
+
+  /// No description provided for @calendarShareFileSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Share .ics file to any app'**
+  String get calendarShareFileSubtitle;
+
+  /// No description provided for @calendarCopyFeedUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Calendar Feed URL'**
+  String get calendarCopyFeedUrl;
+
+  /// No description provided for @calendarCopyFeedUrlSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'For calendar subscription'**
+  String get calendarCopyFeedUrlSubtitle;
+
+  /// No description provided for @calendarAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Added to calendar'**
+  String get calendarAdded;
+
+  /// No description provided for @calendarFeedUrlCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar feed URL copied to clipboard'**
+  String get calendarFeedUrlCopied;
+
+  /// No description provided for @calendarShareIcsFile.
+  ///
+  /// In en, this message translates to:
+  /// **'Share .ics File'**
+  String get calendarShareIcsFile;
+
+  /// No description provided for @calendarCopyGoogleLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Google Calendar Link'**
+  String get calendarCopyGoogleLink;
+
+  /// No description provided for @shareCopyLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Link'**
+  String get shareCopyLink;
+
+  /// No description provided for @shareCopyLinkSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy shareable link to clipboard'**
+  String get shareCopyLinkSubtitle;
+
+  /// No description provided for @shareMoreApps.
+  ///
+  /// In en, this message translates to:
+  /// **'More Apps'**
+  String get shareMoreApps;
+
+  /// No description provided for @shareMoreAppsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Share using other apps'**
+  String get shareMoreAppsSubtitle;
+
+  /// No description provided for @shareAsImageSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a shareable image'**
+  String get shareAsImageSubtitle;
+
+  /// No description provided for @shareLinkCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Link copied to clipboard'**
+  String get shareLinkCopied;
+
+  /// Snackbar message when language is changed
+  ///
+  /// In en, this message translates to:
+  /// **'Language changed to {languageName}'**
+  String languageChangedTo(String languageName);
+
+  /// Semantics label for reset accessibility settings button
+  ///
+  /// In en, this message translates to:
+  /// **'Reset all accessibility settings to defaults'**
+  String get accessibilityResetLabel;
+
+  /// Semantics label for high contrast toggle
+  ///
+  /// In en, this message translates to:
+  /// **'High contrast mode'**
+  String get accessibilityHighContrast;
+
+  /// Semantics label for bold text toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Bold text'**
+  String get accessibilityBoldText;
+
+  /// Semantics label for reduce motion toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Reduce motion'**
+  String get accessibilityReduceMotion;
+
+  /// Semantics label for larger touch targets toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Larger touch targets'**
+  String get accessibilityLargerTargets;
+
+  /// Semantics label for text size slider
+  ///
+  /// In en, this message translates to:
+  /// **'Text size slider'**
+  String get accessibilityTextSizeSlider;
+
+  /// Semantics label for text size option button
+  ///
+  /// In en, this message translates to:
+  /// **'Set text size to {size}'**
+  String accessibilitySetTextSize(String size);
+
+  /// Semantics label for screen reader optimization toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Screen reader optimization'**
+  String get accessibilityScreenReader;
+
+  /// Snackbar message when widget settings are saved
+  ///
+  /// In en, this message translates to:
+  /// **'Widget settings saved'**
+  String get widgetSettingsSaved;
+
+  /// Snackbar message when widget settings fail to save
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to save settings: {error}'**
+  String widgetSettingsSaveFailed(String error);
+
+  /// Snackbar message when widget is refreshed
+  ///
+  /// In en, this message translates to:
+  /// **'Widget refreshed'**
+  String get widgetRefreshed;
+
+  /// Snackbar message when widget refresh fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to refresh: {error}'**
+  String widgetRefreshFailed(String error);
+
+  /// Title for AI prediction section in game insights
+  ///
+  /// In en, this message translates to:
+  /// **'AI Prediction'**
+  String get aiPredictionTitle;
+
+  /// Title for key factors section in game insights
+  ///
+  /// In en, this message translates to:
+  /// **'Key Factors to Watch'**
+  String get keyFactorsToWatch;
+
+  /// Tooltip for refresh AI analysis button
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh Analysis'**
+  String get refreshAnalysis;
 }
 
 class _AppLocalizationsDelegate

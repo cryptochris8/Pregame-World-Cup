@@ -7,6 +7,7 @@ import '../../../core/services/venue_photo_service.dart';
 import '../../../core/services/logging_service.dart';
 import '../screens/venue_detail_screen.dart';
 import '../../../config/api_keys.dart';
+import '../../../l10n/app_localizations.dart';
 import 'venue_card_photo_section.dart';
 import 'venue_card_content_section.dart';
 
@@ -161,6 +162,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
   }
 
   Widget _buildQuickActions() {
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       decoration: BoxDecoration(
@@ -172,25 +174,25 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
         children: [
           _buildActionButton(
             icon: Icons.phone,
-            label: 'Call',
+            label: l10n.venueActionCall,
             color: const Color(0xFF2E7D32),
             onTap: () => _callVenue(),
           ),
           _buildActionButton(
             icon: Icons.directions,
-            label: 'Directions',
+            label: l10n.venueActionDirections,
             color: const Color(0xFF1976D2),
             onTap: () => _getDirections(),
           ),
           _buildActionButton(
             icon: Icons.info,
-            label: 'Details',
+            label: l10n.venueActionDetails,
             color: const Color(0xFF8B4513),
             onTap: () => _navigateToDetails(),
           ),
           _buildActionButton(
             icon: Icons.share,
-            label: 'Share',
+            label: l10n.venueActionShare,
             color: const Color(0xFF7B1FA2),
             onTap: () => _shareVenue(),
           ),

@@ -12,6 +12,7 @@ import 'package:pregame_world_cup/features/venues/widgets/venue_operating_hours_
 import 'package:pregame_world_cup/core/services/unified_venue_service.dart';
 import 'package:pregame_world_cup/features/social/domain/services/social_service.dart';
 import 'package:pregame_world_cup/features/venue_portal/domain/services/venue_enhancement_service.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 // Mock classes for DI dependencies used by child widgets
 class MockUnifiedVenueService extends Mock implements UnifiedVenueService {}
@@ -106,6 +107,8 @@ void main() {
     return MediaQuery(
       data: const MediaQueryData(size: Size(414, 896)),
       child: MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: VenueDetailScreen(venue: venue),
       ),
     );
@@ -271,9 +274,9 @@ void main() {
       );
 
       expect(find.text('Contact Information'), findsOneWidget);
-      // Phone is always displayed with a placeholder
-      expect(find.text('Phone'), findsOneWidget);
-      expect(find.text('+1 (555) 123-4567'), findsOneWidget);
+      // Address is shown when venue has vicinity data
+      expect(find.text('Address'), findsOneWidget);
+      expect(find.text('456 Oak Ave'), findsAtLeastNWidgets(1));
     });
 
     testWidgets('shows action buttons widget', (tester) async {

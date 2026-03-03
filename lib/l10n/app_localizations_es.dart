@@ -497,7 +497,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get moreApps => 'Más Aplicaciones';
 
   @override
-  String get shareAsImage => 'Compartir como Imagen';
+  String get shareAsImage => 'Compartir como imagen';
 
   @override
   String get addToCalendar => 'Agregar al Calendario';
@@ -2953,4 +2953,260 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get activeUsers7Days => 'Usuarios Activos (7 días)';
+
+  @override
+  String get venueActionCall => 'Llamar';
+
+  @override
+  String get venueActionDirections => 'Cómo llegar';
+
+  @override
+  String get venueActionDetails => 'Detalles';
+
+  @override
+  String get venueActionShare => 'Compartir';
+
+  @override
+  String get venueActionWebsite => 'Sitio web';
+
+  @override
+  String venueCallTitle(String venueName) {
+    return 'Llamar a $venueName';
+  }
+
+  @override
+  String get venuePhoneComingSoon =>
+      'El número de teléfono se obtendrá de los datos del local.\n¡Esta función estará disponible pronto!';
+
+  @override
+  String venueWebsiteTitle(String venueName) {
+    return 'Visitar sitio web de $venueName';
+  }
+
+  @override
+  String get venueWebsiteComingSoon =>
+      'La URL del sitio web se obtendrá de los datos del local.\n¡Esta función estará disponible pronto!';
+
+  @override
+  String get copyToClipboard => 'Copiar al portapapeles';
+
+  @override
+  String get venueStadium => 'Estadio';
+
+  @override
+  String get venueDistanceVeryClose => 'Muy cerca';
+
+  @override
+  String get venueDistance2to5min => '2-5 min caminando';
+
+  @override
+  String get venueDistanceClose => 'Cerca';
+
+  @override
+  String get venueDistance8to12min => '8-12 min caminando';
+
+  @override
+  String get venueDistanceModerate => 'Moderado';
+
+  @override
+  String get venueDistance15to20min => '15-20 min caminando';
+
+  @override
+  String get venueDistanceFar => 'Lejos';
+
+  @override
+  String get venueDistance20plusMin => '20+ min caminando';
+
+  @override
+  String get venueDistanceImmediate => 'Inmediato';
+
+  @override
+  String get venueDistance1to3min => '1-3 min caminando';
+
+  @override
+  String get venueDistanceQuick => 'Rápido';
+
+  @override
+  String get venueDistance5to8min => '5-8 min caminando';
+
+  @override
+  String get venueDistanceAccessible => 'Accesible';
+
+  @override
+  String get venueDistance12to18min => '12-18 min caminando';
+
+  @override
+  String get venueMapRings => 'Anillos';
+
+  @override
+  String get venueMapListView => 'Vista de lista';
+
+  @override
+  String get venueMapMyLocation => 'Mi ubicación';
+
+  @override
+  String get watchPartyChatHint => 'Escribe un mensaje...';
+
+  @override
+  String get watchPartyVenueSearchHint =>
+      'Buscar bares deportivos, restaurantes...';
+
+  @override
+  String get watchPartyNameLabel => 'Nombre de la fiesta';
+
+  @override
+  String get watchPartyNameHint => 'ej., Fiesta USA vs México';
+
+  @override
+  String get watchPartyDescriptionLabel => 'Descripción';
+
+  @override
+  String get watchPartyDescriptionHint =>
+      'Cuéntale a la gente sobre tu fiesta...';
+
+  @override
+  String get watchPartyVirtualFeeLabel => 'Tarifa de asistencia virtual';
+
+  @override
+  String get watchPartyVirtualFeeHint => '0.00 para gratis';
+
+  @override
+  String get discardChangesTitle => '¿Descartar cambios?';
+
+  @override
+  String get discardChangesMessage =>
+      'Tienes cambios sin guardar. ¿Estás seguro de que quieres salir?';
+
+  @override
+  String get watchPartyGameSearchHint => 'Buscar equipos, sedes...';
+
+  @override
+  String get watchPartyRoleHost => 'Anfitrión';
+
+  @override
+  String get watchPartyRoleCoHost => 'Co-Anfitrión';
+
+  @override
+  String get watchPartyRoleMember => 'Miembro';
+
+  @override
+  String get paymentErrorTitle => 'Error de pago';
+
+  @override
+  String get paymentSuccessTitle => '¡Éxito!';
+
+  @override
+  String get calendarGoogle => 'Google Calendar';
+
+  @override
+  String get calendarGoogleSubtitle => 'Abrir en Google Calendar';
+
+  @override
+  String get calendarApple => 'Calendario de Apple';
+
+  @override
+  String get calendarAppleSubtitle => 'Descargar archivo .ics';
+
+  @override
+  String get calendarShareFile => 'Compartir archivo de calendario';
+
+  @override
+  String get calendarShareFileSubtitle =>
+      'Compartir archivo .ics con cualquier app';
+
+  @override
+  String get calendarCopyFeedUrl => 'Copiar URL del calendario';
+
+  @override
+  String get calendarCopyFeedUrlSubtitle => 'Para suscripción al calendario';
+
+  @override
+  String get calendarAdded => 'Añadido al calendario';
+
+  @override
+  String get calendarFeedUrlCopied =>
+      'URL del calendario copiada al portapapeles';
+
+  @override
+  String get calendarShareIcsFile => 'Compartir archivo .ics';
+
+  @override
+  String get calendarCopyGoogleLink => 'Copiar enlace de Google Calendar';
+
+  @override
+  String get shareCopyLink => 'Copiar enlace';
+
+  @override
+  String get shareCopyLinkSubtitle =>
+      'Copiar enlace compartible al portapapeles';
+
+  @override
+  String get shareMoreApps => 'Más aplicaciones';
+
+  @override
+  String get shareMoreAppsSubtitle => 'Compartir con otras aplicaciones';
+
+  @override
+  String get shareAsImageSubtitle => 'Crear una imagen compartible';
+
+  @override
+  String get shareLinkCopied => 'Enlace copiado al portapapeles';
+
+  @override
+  String languageChangedTo(String languageName) {
+    return 'Idioma cambiado a $languageName';
+  }
+
+  @override
+  String get accessibilityResetLabel =>
+      'Restablecer todos los ajustes de accesibilidad a los valores predeterminados';
+
+  @override
+  String get accessibilityHighContrast => 'Modo de alto contraste';
+
+  @override
+  String get accessibilityBoldText => 'Texto en negrita';
+
+  @override
+  String get accessibilityReduceMotion => 'Reducir movimiento';
+
+  @override
+  String get accessibilityLargerTargets => 'Objetivos táctiles más grandes';
+
+  @override
+  String get accessibilityTextSizeSlider =>
+      'Control deslizante de tamaño de texto';
+
+  @override
+  String accessibilitySetTextSize(String size) {
+    return 'Establecer tamaño de texto a $size';
+  }
+
+  @override
+  String get accessibilityScreenReader => 'Optimización del lector de pantalla';
+
+  @override
+  String get widgetSettingsSaved => 'Configuración del widget guardada';
+
+  @override
+  String widgetSettingsSaveFailed(String error) {
+    return 'Error al guardar la configuración: $error';
+  }
+
+  @override
+  String get widgetRefreshed => 'Widget actualizado';
+
+  @override
+  String widgetRefreshFailed(String error) {
+    return 'Error al actualizar: $error';
+  }
+
+  @override
+  String get aiPredictionTitle => 'Predicción IA';
+
+  @override
+  String get keyFactorsToWatch => 'Factores Clave a Observar';
+
+  @override
+  String get refreshAnalysis => 'Actualizar Análisis';
 }

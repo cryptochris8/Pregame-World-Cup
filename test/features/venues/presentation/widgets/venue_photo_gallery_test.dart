@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/venues/widgets/venue_photo_gallery.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 void main() {
   // Suppress overflow and network errors in constrained test environments
@@ -20,6 +21,8 @@ void main() {
 
   Widget buildTestWidget(Widget child) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: Scaffold(
         body: SizedBox(
           width: 414,

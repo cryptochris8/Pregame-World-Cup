@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../l10n/app_localizations.dart';
+
 /// Chat input widget for watch party messaging
 class WatchPartyChatInput extends StatefulWidget {
   final Function(String) onSend;
@@ -114,10 +116,10 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
                         textCapitalization: TextCapitalization.sentences,
                         maxLines: 4,
                         minLines: 1,
-                        decoration: const InputDecoration(
-                          hintText: 'Type a message...',
+                        decoration: InputDecoration(
+                          hintText: AppLocalizations.of(context).watchPartyChatHint,
                           border: InputBorder.none,
-                          contentPadding: EdgeInsets.symmetric(
+                          contentPadding: const EdgeInsets.symmetric(
                             horizontal: 16,
                             vertical: 10,
                           ),

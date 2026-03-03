@@ -3893,5 +3893,159 @@
   "activeUsers7Days": "Active Users (7 days)",
   "@activeUsers7Days": {
     "description": "Active users 7 days audience label"
+  },
+
+  "venueActionCall": "Call",
+  "venueActionDirections": "Directions",
+  "venueActionDetails": "Details",
+  "venueActionShare": "Share",
+  "venueActionWebsite": "Website",
+  "venueCallTitle": "Call {venueName}",
+  "@venueCallTitle": {
+    "placeholders": {
+      "venueName": {"type": "String"}
+    }
+  },
+  "venuePhoneComingSoon": "Phone number would be retrieved from venue details.\nThis feature will be available soon!",
+  "venueWebsiteTitle": "Visit {venueName} Website",
+  "@venueWebsiteTitle": {
+    "placeholders": {
+      "venueName": {"type": "String"}
+    }
+  },
+  "venueWebsiteComingSoon": "Website URL would be retrieved from venue details.\nThis feature will be available soon!",
+  "copyToClipboard": "Copy to Clipboard",
+  "venueStadium": "Stadium",
+  "venueDistanceVeryClose": "Very Close",
+  "venueDistance2to5min": "2-5 min walk",
+  "venueDistanceClose": "Close",
+  "venueDistance8to12min": "8-12 min walk",
+  "venueDistanceModerate": "Moderate",
+  "venueDistance15to20min": "15-20 min walk",
+  "venueDistanceFar": "Far",
+  "venueDistance20plusMin": "20+ min walk",
+  "venueDistanceImmediate": "Immediate",
+  "venueDistance1to3min": "1-3 min walk",
+  "venueDistanceQuick": "Quick",
+  "venueDistance5to8min": "5-8 min walk",
+  "venueDistanceAccessible": "Accessible",
+  "venueDistance12to18min": "12-18 min walk",
+  "venueMapRings": "Rings",
+  "venueMapListView": "List View",
+  "venueMapMyLocation": "My Location",
+
+  "watchPartyChatHint": "Type a message...",
+  "watchPartyVenueSearchHint": "Search sports bars, restaurants...",
+  "watchPartyNameLabel": "Party Name",
+  "watchPartyNameHint": "e.g., USA vs Mexico Watch Party",
+  "watchPartyDescriptionLabel": "Description",
+  "watchPartyDescriptionHint": "Tell people about your watch party...",
+  "watchPartyVirtualFeeLabel": "Virtual Attendance Fee",
+  "watchPartyVirtualFeeHint": "0.00 for free",
+  "discardChangesTitle": "Discard Changes?",
+  "discardChangesMessage": "You have unsaved changes. Are you sure you want to leave?",
+  "watchPartyGameSearchHint": "Search teams, venues...",
+  "watchPartyRoleHost": "Host",
+  "watchPartyRoleCoHost": "Co-Host",
+  "watchPartyRoleMember": "Member",
+  "paymentErrorTitle": "Payment Error",
+  "paymentSuccessTitle": "Success!",
+
+  "calendarGoogle": "Google Calendar",
+  "calendarGoogleSubtitle": "Open in Google Calendar",
+  "calendarApple": "Apple Calendar",
+  "calendarAppleSubtitle": "Download .ics file",
+  "calendarShareFile": "Share Calendar File",
+  "calendarShareFileSubtitle": "Share .ics file to any app",
+  "calendarCopyFeedUrl": "Copy Calendar Feed URL",
+  "calendarCopyFeedUrlSubtitle": "For calendar subscription",
+  "calendarAdded": "Added to calendar",
+  "calendarFeedUrlCopied": "Calendar feed URL copied to clipboard",
+  "calendarShareIcsFile": "Share .ics File",
+  "calendarCopyGoogleLink": "Copy Google Calendar Link",
+
+  "shareCopyLink": "Copy Link",
+  "shareCopyLinkSubtitle": "Copy shareable link to clipboard",
+  "shareMoreApps": "More Apps",
+  "shareMoreAppsSubtitle": "Share using other apps",
+  "shareAsImage": "Share as Image",
+  "shareAsImageSubtitle": "Create a shareable image",
+  "shareLinkCopied": "Link copied to clipboard",
+
+  "languageChangedTo": "Language changed to {languageName}",
+  "@languageChangedTo": {
+    "description": "Snackbar message when language is changed",
+    "placeholders": {
+      "languageName": {"type": "String"}
+    }
+  },
+  "accessibilityResetLabel": "Reset all accessibility settings to defaults",
+  "@accessibilityResetLabel": {
+    "description": "Semantics label for reset accessibility settings button"
+  },
+  "accessibilityHighContrast": "High contrast mode",
+  "@accessibilityHighContrast": {
+    "description": "Semantics label for high contrast toggle"
+  },
+  "accessibilityBoldText": "Bold text",
+  "@accessibilityBoldText": {
+    "description": "Semantics label for bold text toggle"
+  },
+  "accessibilityReduceMotion": "Reduce motion",
+  "@accessibilityReduceMotion": {
+    "description": "Semantics label for reduce motion toggle"
+  },
+  "accessibilityLargerTargets": "Larger touch targets",
+  "@accessibilityLargerTargets": {
+    "description": "Semantics label for larger touch targets toggle"
+  },
+  "accessibilityTextSizeSlider": "Text size slider",
+  "@accessibilityTextSizeSlider": {
+    "description": "Semantics label for text size slider"
+  },
+  "accessibilitySetTextSize": "Set text size to {size}",
+  "@accessibilitySetTextSize": {
+    "description": "Semantics label for text size option button",
+    "placeholders": {
+      "size": {"type": "String"}
+    }
+  },
+  "accessibilityScreenReader": "Screen reader optimization",
+  "@accessibilityScreenReader": {
+    "description": "Semantics label for screen reader optimization toggle"
+  },
+  "widgetSettingsSaved": "Widget settings saved",
+  "@widgetSettingsSaved": {
+    "description": "Snackbar message when widget settings are saved"
+  },
+  "widgetSettingsSaveFailed": "Failed to save settings: {error}",
+  "@widgetSettingsSaveFailed": {
+    "description": "Snackbar message when widget settings fail to save",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "widgetRefreshed": "Widget refreshed",
+  "@widgetRefreshed": {
+    "description": "Snackbar message when widget is refreshed"
+  },
+  "widgetRefreshFailed": "Failed to refresh: {error}",
+  "@widgetRefreshFailed": {
+    "description": "Snackbar message when widget refresh fails",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "aiPredictionTitle": "AI Prediction",
+  "@aiPredictionTitle": {
+    "description": "Title for AI prediction section in game insights"
+  },
+  "keyFactorsToWatch": "Key Factors to Watch",
+  "@keyFactorsToWatch": {
+    "description": "Title for key factors section in game insights"
+  },
+  "refreshAnalysis": "Refresh Analysis",
+  "@refreshAnalysis": {
+    "description": "Tooltip for refresh AI analysis button"
   }
 }

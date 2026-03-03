@@ -27,13 +27,6 @@ import 'services/revenuecat_service.dart';
 import 'features/social/domain/services/social_service.dart';
 import 'features/worldcup/utils/timezone_utils.dart';
 
-/// DIAGNOSTIC MODE
-/// Automatically disabled in release builds for App Store compliance
-/// Set to true during development for detailed logging
-const bool _diagnosticModeOverride = false;
-// ignore: non_constant_identifier_names
-bool get DIAGNOSTIC_MODE => kDebugMode && _diagnosticModeOverride;
-
 /// Production-safe logging function - only logs in debug mode
 void debugLog(String message) {
   if (kDebugMode) {
@@ -88,10 +81,6 @@ Future<void> initializeApp() async {
     debugLog('INIT STEP 2: Firebase Core - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 2: Firebase Core - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Firebase initialization failed. This could prevent app startup.');
-      debugLog('DIAGNOSTIC: Check google-services.json configuration');
-    }
   }
 
   // Step 3: Hive Database Initialization
@@ -101,9 +90,6 @@ Future<void> initializeApp() async {
     debugLog('INIT STEP 3: Hive Database - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 3: Hive Database - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Hive database failed. This affects caching and may cause hangs.');
-    }
   }
 
   // Step 4: Hive Adapters Registration
@@ -122,9 +108,6 @@ Future<void> initializeApp() async {
     debugLog('INIT STEP 4: Hive Adapters - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 4: Hive Adapters - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Hive adapters failed. This may cause serialization issues.');
-    }
   }
 
   // Step 5: Cache Service Initialization
@@ -139,9 +122,6 @@ Future<void> initializeApp() async {
     debugLog('INIT STEP 5: Cache Service - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 5: Cache Service - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Cache service failed. App will continue without caching.');
-    }
   }
 
   // Step 5.5: Timezone Database Initialization
@@ -151,9 +131,6 @@ Future<void> initializeApp() async {
     debugLog('INIT STEP 5.5: Timezone Database - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 5.5: Timezone Database - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Timezone database failed. Match times may not convert correctly.');
-    }
   }
 
   // Step 6: Dependency Injection Setup
@@ -163,10 +140,6 @@ Future<void> initializeApp() async {
     debugLog('INIT STEP 6: Dependency Injection - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 6: Dependency Injection - FAILED: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Service locator failed. This will prevent app features from working.');
-      debugLog('DIAGNOSTIC: This is likely related to ESPN/API service initialization');
-    }
   }
 
   // Step 6.5: API Keys Validation
@@ -219,10 +192,6 @@ Future<void> initializeApp() async {
   debugLog('INIT STEP 7.11: Accessibility Service');
   await _initializeAccessibilityService();
 
-  if (DIAGNOSTIC_MODE) {
-    debugLog('DIAGNOSTIC: All initialization steps completed');
-    debugLog('DIAGNOSTIC: If app hangs after this point, check ESPN service initialization');
-  }
 }
 
 // ---------------------------------------------------------------------------
@@ -243,9 +212,6 @@ void _initializeAppCheckBackground() async {
     debugLog('APP CHECK: Background initialization completed');
   } catch (e) {
     debugLog('APP CHECK: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: App Check failed but app will continue');
-    }
   }
 }
 
@@ -266,9 +232,6 @@ void _initializeAIServicesBackground() async {
     debugLog('AI SERVICES: Background initialization completed');
   } catch (e) {
     debugLog('AI SERVICES: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: AI Services failed but app will continue');
-    }
   }
 }
 
@@ -313,9 +276,6 @@ void _initializeAdMobBackground() async {
     debugLog('ADMOB: Background initialization completed');
   } catch (e) {
     debugLog('ADMOB: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: AdMob failed but app will continue');
-    }
   }
 }
 
@@ -341,9 +301,6 @@ void _initializeRevenueCatBackground() async {
     debugLog('REVENUECAT: Background initialization completed');
   } catch (e) {
     debugLog('REVENUECAT: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: RevenueCat failed but app will continue');
-    }
   }
 }
 
@@ -368,9 +325,6 @@ void _initializeStripeBackground() async {
     }
   } catch (e) {
     debugLog('STRIPE: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Stripe failed but app will continue');
-    }
   }
 }
 
@@ -389,9 +343,6 @@ void _initializeAnalyticsBackground() async {
     debugLog('ANALYTICS: Background initialization completed');
   } catch (e) {
     debugLog('ANALYTICS: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Analytics failed but app will continue');
-    }
   }
 }
 
@@ -418,9 +369,6 @@ void _initializeDeepLinkServiceBackground() async {
     debugLog('DEEP LINKS: Background initialization completed');
   } catch (e) {
     debugLog('DEEP LINKS: Background initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Deep links failed but app will continue');
-    }
   }
 }
 
@@ -451,9 +399,6 @@ Future<void> _initializeAccessibilityService() async {
     debugLog('ACCESSIBILITY: Initialization completed');
   } catch (e) {
     debugLog('ACCESSIBILITY: Initialization failed: $e');
-    if (DIAGNOSTIC_MODE) {
-      debugLog('DIAGNOSTIC: Accessibility failed but app will continue');
-    }
   }
 }
 

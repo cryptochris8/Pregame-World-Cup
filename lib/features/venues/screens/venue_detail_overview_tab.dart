@@ -65,25 +65,12 @@ class VenueDetailOverviewTab extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          if (venue.vicinity?.isNotEmpty == true) ...[
+          if (venue.vicinity?.isNotEmpty == true)
             _buildContactRow(
               Icons.location_on,
               'Address',
               venue.vicinity!,
             ),
-            const SizedBox(height: 12),
-          ],
-          _buildContactRow(
-            Icons.phone,
-            'Phone',
-            '+1 (555) 123-4567',
-          ),
-          const SizedBox(height: 12),
-          _buildContactRow(
-            Icons.language,
-            'Website',
-            'www.${venue.name.toLowerCase().replaceAll(' ', '')}.com',
-          ),
         ],
       ),
     );
@@ -141,10 +128,10 @@ class VenueDetailOverviewTab extends StatelessWidget {
           ),
         ],
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             'About',
             style: TextStyle(
               fontSize: 18,
@@ -152,10 +139,10 @@ class VenueDetailOverviewTab extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          SizedBox(height: 12),
+          const SizedBox(height: 12),
           Text(
-            'Great venue for game day! Located in the heart of the action with excellent food and atmosphere.',
-            style: TextStyle(
+            venue.vicinity!,
+            style: const TextStyle(
               fontSize: 16,
               color: Colors.white70,
               height: 1.5,
