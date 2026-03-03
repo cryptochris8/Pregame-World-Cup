@@ -2591,4 +2591,366 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get unexpectedErrorMessage =>
       'Ocurrió un error inesperado. Por favor reinicia la aplicación.';
+
+  @override
+  String get newChat => 'Nuevo Chat';
+
+  @override
+  String get team => 'Equipo';
+
+  @override
+  String get groupName => 'Nombre del Grupo';
+
+  @override
+  String get descriptionOptional => 'Descripción (opcional)';
+
+  @override
+  String get searchFriendsToAdd => 'Buscar amigos para agregar...';
+
+  @override
+  String get createGroup => 'Crear Grupo';
+
+  @override
+  String get teamName => 'Nombre del Equipo';
+
+  @override
+  String get teamDescriptionOptional => 'Descripción del Equipo (opcional)';
+
+  @override
+  String get searchFriendsToAddToTeam =>
+      'Buscar amigos para agregar al equipo...';
+
+  @override
+  String get createTeam => 'Crear Equipo';
+
+  @override
+  String failedToLoadFriends(String error) {
+    return 'Error al cargar amigos: $error';
+  }
+
+  @override
+  String failedToCreateDirectChat(String error) {
+    return 'Error al crear chat directo: $error';
+  }
+
+  @override
+  String failedToCreateGroupChat(String error) {
+    return 'Error al crear chat grupal: $error';
+  }
+
+  @override
+  String failedToCreateTeamChat(String error) {
+    return 'Error al crear chat de equipo: $error';
+  }
+
+  @override
+  String get clearChatHistoryConfirmation =>
+      '¿Estás seguro de que quieres borrar todos los mensajes de este chat? Esta acción no se puede deshacer.';
+
+  @override
+  String get leaveChatConfirmation =>
+      '¿Estás seguro de que quieres salir de este chat?';
+
+  @override
+  String get leave => 'Salir';
+
+  @override
+  String get unblockUserConfirmation =>
+      '¿Estás seguro de que quieres desbloquear a este usuario? Podrá enviarte mensajes de nuevo.';
+
+  @override
+  String get addMembers => 'Agregar Miembros';
+
+  @override
+  String get selectFriendToAdd =>
+      'Selecciona un amigo para agregar a este chat';
+
+  @override
+  String get noFriendsToAdd => 'No hay amigos para agregar';
+
+  @override
+  String get allFriendsAlreadyInChat =>
+      'Todos tus amigos ya están en este chat';
+
+  @override
+  String memberAddedToChat(String name) {
+    return '$name agregado al chat';
+  }
+
+  @override
+  String failedToAddMember(String name) {
+    return 'Error al agregar a $name';
+  }
+
+  @override
+  String get editProfile => 'Editar Perfil';
+
+  @override
+  String get maxFavoriteTeamsMessage =>
+      'Puedes seleccionar hasta 5 equipos favoritos';
+
+  @override
+  String get profileUpdatedSuccessfully => '¡Perfil actualizado exitosamente!';
+
+  @override
+  String get failedToUpdateProfile =>
+      'Error al actualizar el perfil. Inténtalo de nuevo.';
+
+  @override
+  String failedToUpdateProfileError(String error) {
+    return 'Error al actualizar el perfil: $error';
+  }
+
+  @override
+  String get removeFriend => 'Eliminar Amigo';
+
+  @override
+  String removeFriendConfirm(String name) {
+    return '¿Estás seguro de que quieres eliminar a $name de tus amigos?';
+  }
+
+  @override
+  String get blockUser => 'Bloquear Usuario';
+
+  @override
+  String blockUserConfirm(String name) {
+    return '¿Estás seguro de que quieres bloquear a $name? Será eliminado de tus amigos y no podrá contactarte.';
+  }
+
+  @override
+  String get block => 'Bloquear';
+
+  @override
+  String get aiPredictionsNotAvailable => 'Predicciones de IA no disponibles';
+
+  @override
+  String aiSuggestionFailed(String error) {
+    return 'Sugerencia de IA fallida: $error';
+  }
+
+  @override
+  String get editPrediction => 'Editar Predicción';
+
+  @override
+  String get makeYourPrediction => 'Haz Tu Predicción';
+
+  @override
+  String get vs => 'VS';
+
+  @override
+  String poweredByProvider(String provider) {
+    return 'Impulsado por $provider';
+  }
+
+  @override
+  String get savePrediction => 'Guardar Predicción';
+
+  @override
+  String teamWins(String team) {
+    return '$team gana';
+  }
+
+  @override
+  String get aiThinking => 'IA pensando...';
+
+  @override
+  String get aiSuggest => 'Sugerencia IA';
+
+  @override
+  String yourPredictionDisplay(String prediction) {
+    return 'Tu predicción: $prediction';
+  }
+
+  @override
+  String get predict => 'Predecir';
+
+  @override
+  String get unknown => 'Desconocido';
+
+  @override
+  String get venueClaims => 'Reclamaciones de Locales';
+
+  @override
+  String get venueClaimsDesc =>
+      'Revisar reclamaciones y disputas de locales pendientes';
+
+  @override
+  String errorLoadingData(String error) {
+    return 'Error al cargar datos: $error';
+  }
+
+  @override
+  String errorWithMessage(String error) {
+    return 'Error: $error';
+  }
+
+  @override
+  String get claimsTab => 'Reclamaciones';
+
+  @override
+  String get disputesTab => 'Disputas';
+
+  @override
+  String get noPendingClaims => 'Sin Reclamaciones Pendientes';
+
+  @override
+  String get allVenueClaimsReviewed =>
+      'Todas las reclamaciones de locales han sido revisadas.';
+
+  @override
+  String get noPendingDisputes => 'Sin Disputas Pendientes';
+
+  @override
+  String get allVenueDisputesReviewed =>
+      'Todas las disputas de locales han sido revisadas.';
+
+  @override
+  String get reject => 'Rechazar';
+
+  @override
+  String get approve => 'Aprobar';
+
+  @override
+  String rejectVenueConfirm(String name) {
+    return '¿Rechazar $name?';
+  }
+
+  @override
+  String get rejectionReasonHint => 'Motivo del rechazo (opcional)';
+
+  @override
+  String get claimApprovedSuccessfully => 'Reclamación aprobada exitosamente.';
+
+  @override
+  String get claimRejectedSuccessfully => 'Reclamación rechazada exitosamente.';
+
+  @override
+  String disputeLabel(String reason) {
+    return 'Disputa: $reason';
+  }
+
+  @override
+  String get upholdAction => 'Confirmar';
+
+  @override
+  String disputeResolution(String resolution) {
+    return 'Disputa $resolution.';
+  }
+
+  @override
+  String get broadcastWarning =>
+      'Las notificaciones de difusión se envían a todos los usuarios de la audiencia seleccionada. Úsalas con moderación.';
+
+  @override
+  String get targetAudience => 'Audiencia Objetivo';
+
+  @override
+  String get selectTeam => 'Seleccionar Equipo';
+
+  @override
+  String get pleaseSelectATeam => 'Por favor selecciona un equipo';
+
+  @override
+  String get notificationContentLabel => 'Contenido de la Notificación';
+
+  @override
+  String get titleLabel => 'Título';
+
+  @override
+  String get enterNotificationTitle => 'Ingresa el título de la notificación';
+
+  @override
+  String get pleaseEnterTitle => 'Por favor ingresa un título';
+
+  @override
+  String get titleMinLength => 'El título debe tener al menos 3 caracteres';
+
+  @override
+  String get messageLabel => 'Mensaje';
+
+  @override
+  String get enterNotificationMessage =>
+      'Ingresa el mensaje de la notificación';
+
+  @override
+  String get pleaseEnterMessage => 'Por favor ingresa un mensaje';
+
+  @override
+  String get messageMinLength => 'El mensaje debe tener al menos 10 caracteres';
+
+  @override
+  String get previewLabel => 'Vista Previa';
+
+  @override
+  String get notificationTitlePlaceholder => 'Título de la Notificación';
+
+  @override
+  String get notificationPreviewPlaceholder =>
+      'Tu mensaje de notificación aparecerá aquí...';
+
+  @override
+  String get sending => 'Enviando...';
+
+  @override
+  String get sendNotification => 'Enviar Notificación';
+
+  @override
+  String get confirmSend => 'Confirmar Envío';
+
+  @override
+  String get confirmSendNotification =>
+      '¿Estás seguro de que quieres enviar esta notificación?';
+
+  @override
+  String get notificationSentSuccessfully =>
+      'Notificación enviada exitosamente';
+
+  @override
+  String get failedToSendNotification => 'Error al enviar la notificación';
+
+  @override
+  String get recentBroadcasts => 'Difusiones Recientes';
+
+  @override
+  String get recentBroadcastHistory =>
+      'El historial de difusiones recientes aparecerá aquí';
+
+  @override
+  String get allUsersAudience => 'Todos los Usuarios';
+
+  @override
+  String get sendToEveryone => 'Enviar a todos';
+
+  @override
+  String get premiumUsersAudience => 'Usuarios Premium';
+
+  @override
+  String get superfanPassHoldersOnly => 'Solo poseedores del Pase Superfan';
+
+  @override
+  String get teamFansAudience => 'Fans del Equipo';
+
+  @override
+  String get usersFollowSpecificTeam =>
+      'Usuarios que siguen un equipo específico';
+
+  @override
+  String get activeUsersAudience => 'Usuarios Activos';
+
+  @override
+  String get usersActiveLast7Days => 'Usuarios activos en los últimos 7 días';
+
+  @override
+  String get audienceLabel => 'Audiencia';
+
+  @override
+  String get nowLabel => 'ahora';
+
+  @override
+  String teamFansWithTeam(String team) {
+    return 'Fans del Equipo ($team)';
+  }
+
+  @override
+  String get activeUsers7Days => 'Usuarios Activos (7 días)';
 }

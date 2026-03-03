@@ -2605,4 +2605,367 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get unexpectedErrorMessage =>
       'Une erreur inattendue s\'est produite. Veuillez redémarrer l\'application.';
+
+  @override
+  String get newChat => 'Nouvelle Discussion';
+
+  @override
+  String get team => 'Équipe';
+
+  @override
+  String get groupName => 'Nom du Groupe';
+
+  @override
+  String get descriptionOptional => 'Description (facultatif)';
+
+  @override
+  String get searchFriendsToAdd => 'Rechercher des amis à ajouter...';
+
+  @override
+  String get createGroup => 'Créer un Groupe';
+
+  @override
+  String get teamName => 'Nom de l\'Équipe';
+
+  @override
+  String get teamDescriptionOptional => 'Description de l\'Équipe (facultatif)';
+
+  @override
+  String get searchFriendsToAddToTeam =>
+      'Rechercher des amis à ajouter à l\'équipe...';
+
+  @override
+  String get createTeam => 'Créer une Équipe';
+
+  @override
+  String failedToLoadFriends(String error) {
+    return 'Échec du chargement des amis : $error';
+  }
+
+  @override
+  String failedToCreateDirectChat(String error) {
+    return 'Échec de la création du chat direct : $error';
+  }
+
+  @override
+  String failedToCreateGroupChat(String error) {
+    return 'Échec de la création du chat de groupe : $error';
+  }
+
+  @override
+  String failedToCreateTeamChat(String error) {
+    return 'Échec de la création du chat d\'équipe : $error';
+  }
+
+  @override
+  String get clearChatHistoryConfirmation =>
+      'Êtes-vous sûr de vouloir effacer tous les messages de cette discussion ? Cette action est irréversible.';
+
+  @override
+  String get leaveChatConfirmation =>
+      'Êtes-vous sûr de vouloir quitter cette discussion ?';
+
+  @override
+  String get leave => 'Quitter';
+
+  @override
+  String get unblockUserConfirmation =>
+      'Êtes-vous sûr de vouloir débloquer cet utilisateur ? Il pourra vous envoyer des messages à nouveau.';
+
+  @override
+  String get addMembers => 'Ajouter des Membres';
+
+  @override
+  String get selectFriendToAdd =>
+      'Sélectionnez un ami à ajouter à cette discussion';
+
+  @override
+  String get noFriendsToAdd => 'Aucun ami à ajouter';
+
+  @override
+  String get allFriendsAlreadyInChat =>
+      'Tous vos amis sont déjà dans cette discussion';
+
+  @override
+  String memberAddedToChat(String name) {
+    return '$name ajouté à la discussion';
+  }
+
+  @override
+  String failedToAddMember(String name) {
+    return 'Échec de l\'ajout de $name';
+  }
+
+  @override
+  String get editProfile => 'Modifier le Profil';
+
+  @override
+  String get maxFavoriteTeamsMessage =>
+      'Vous pouvez sélectionner jusqu\'à 5 équipes favorites';
+
+  @override
+  String get profileUpdatedSuccessfully => 'Profil mis à jour avec succès !';
+
+  @override
+  String get failedToUpdateProfile =>
+      'Échec de la mise à jour du profil. Veuillez réessayer.';
+
+  @override
+  String failedToUpdateProfileError(String error) {
+    return 'Échec de la mise à jour du profil : $error';
+  }
+
+  @override
+  String get removeFriend => 'Supprimer l\'Ami';
+
+  @override
+  String removeFriendConfirm(String name) {
+    return 'Êtes-vous sûr de vouloir supprimer $name de vos amis ?';
+  }
+
+  @override
+  String get blockUser => 'Bloquer l\'Utilisateur';
+
+  @override
+  String blockUserConfirm(String name) {
+    return 'Êtes-vous sûr de vouloir bloquer $name ? Il sera supprimé de vos amis et ne pourra plus vous contacter.';
+  }
+
+  @override
+  String get block => 'Bloquer';
+
+  @override
+  String get aiPredictionsNotAvailable => 'Prédictions IA non disponibles';
+
+  @override
+  String aiSuggestionFailed(String error) {
+    return 'Suggestion IA échouée : $error';
+  }
+
+  @override
+  String get editPrediction => 'Modifier la Prédiction';
+
+  @override
+  String get makeYourPrediction => 'Faites Votre Prédiction';
+
+  @override
+  String get vs => 'VS';
+
+  @override
+  String poweredByProvider(String provider) {
+    return 'Propulsé par $provider';
+  }
+
+  @override
+  String get savePrediction => 'Enregistrer la Prédiction';
+
+  @override
+  String teamWins(String team) {
+    return '$team gagne';
+  }
+
+  @override
+  String get aiThinking => 'IA en réflexion...';
+
+  @override
+  String get aiSuggest => 'Suggestion IA';
+
+  @override
+  String yourPredictionDisplay(String prediction) {
+    return 'Votre prédiction : $prediction';
+  }
+
+  @override
+  String get predict => 'Prédire';
+
+  @override
+  String get unknown => 'Inconnu';
+
+  @override
+  String get venueClaims => 'Réclamations de Lieux';
+
+  @override
+  String get venueClaimsDesc =>
+      'Examiner les réclamations et litiges de lieux en attente';
+
+  @override
+  String errorLoadingData(String error) {
+    return 'Erreur de chargement des données : $error';
+  }
+
+  @override
+  String errorWithMessage(String error) {
+    return 'Erreur : $error';
+  }
+
+  @override
+  String get claimsTab => 'Réclamations';
+
+  @override
+  String get disputesTab => 'Litiges';
+
+  @override
+  String get noPendingClaims => 'Aucune Réclamation en Attente';
+
+  @override
+  String get allVenueClaimsReviewed =>
+      'Toutes les réclamations de lieux ont été examinées.';
+
+  @override
+  String get noPendingDisputes => 'Aucun Litige en Attente';
+
+  @override
+  String get allVenueDisputesReviewed =>
+      'Tous les litiges de lieux ont été examinés.';
+
+  @override
+  String get reject => 'Rejeter';
+
+  @override
+  String get approve => 'Approuver';
+
+  @override
+  String rejectVenueConfirm(String name) {
+    return 'Rejeter $name ?';
+  }
+
+  @override
+  String get rejectionReasonHint => 'Motif du rejet (facultatif)';
+
+  @override
+  String get claimApprovedSuccessfully => 'Réclamation approuvée avec succès.';
+
+  @override
+  String get claimRejectedSuccessfully => 'Réclamation rejetée avec succès.';
+
+  @override
+  String disputeLabel(String reason) {
+    return 'Litige : $reason';
+  }
+
+  @override
+  String get upholdAction => 'Confirmer';
+
+  @override
+  String disputeResolution(String resolution) {
+    return 'Litige $resolution.';
+  }
+
+  @override
+  String get broadcastWarning =>
+      'Les notifications de diffusion sont envoyées à tous les utilisateurs de l\'audience sélectionnée. À utiliser avec modération.';
+
+  @override
+  String get targetAudience => 'Audience Cible';
+
+  @override
+  String get selectTeam => 'Sélectionner l\'Équipe';
+
+  @override
+  String get pleaseSelectATeam => 'Veuillez sélectionner une équipe';
+
+  @override
+  String get notificationContentLabel => 'Contenu de la Notification';
+
+  @override
+  String get titleLabel => 'Titre';
+
+  @override
+  String get enterNotificationTitle => 'Entrez le titre de la notification';
+
+  @override
+  String get pleaseEnterTitle => 'Veuillez entrer un titre';
+
+  @override
+  String get titleMinLength => 'Le titre doit contenir au moins 3 caractères';
+
+  @override
+  String get messageLabel => 'Message';
+
+  @override
+  String get enterNotificationMessage => 'Entrez le message de la notification';
+
+  @override
+  String get pleaseEnterMessage => 'Veuillez entrer un message';
+
+  @override
+  String get messageMinLength =>
+      'Le message doit contenir au moins 10 caractères';
+
+  @override
+  String get previewLabel => 'Aperçu';
+
+  @override
+  String get notificationTitlePlaceholder => 'Titre de la Notification';
+
+  @override
+  String get notificationPreviewPlaceholder =>
+      'Votre message de notification apparaîtra ici...';
+
+  @override
+  String get sending => 'Envoi en cours...';
+
+  @override
+  String get sendNotification => 'Envoyer la Notification';
+
+  @override
+  String get confirmSend => 'Confirmer l\'Envoi';
+
+  @override
+  String get confirmSendNotification =>
+      'Êtes-vous sûr de vouloir envoyer cette notification ?';
+
+  @override
+  String get notificationSentSuccessfully => 'Notification envoyée avec succès';
+
+  @override
+  String get failedToSendNotification => 'Échec de l\'envoi de la notification';
+
+  @override
+  String get recentBroadcasts => 'Diffusions Récentes';
+
+  @override
+  String get recentBroadcastHistory =>
+      'L\'historique des diffusions récentes apparaîtra ici';
+
+  @override
+  String get allUsersAudience => 'Tous les Utilisateurs';
+
+  @override
+  String get sendToEveryone => 'Envoyer à tous';
+
+  @override
+  String get premiumUsersAudience => 'Utilisateurs Premium';
+
+  @override
+  String get superfanPassHoldersOnly =>
+      'Détenteurs du Passe Superfan uniquement';
+
+  @override
+  String get teamFansAudience => 'Fans de l\'Équipe';
+
+  @override
+  String get usersFollowSpecificTeam =>
+      'Utilisateurs qui suivent une équipe spécifique';
+
+  @override
+  String get activeUsersAudience => 'Utilisateurs Actifs';
+
+  @override
+  String get usersActiveLast7Days =>
+      'Utilisateurs actifs au cours des 7 derniers jours';
+
+  @override
+  String get audienceLabel => 'Audience';
+
+  @override
+  String get nowLabel => 'maintenant';
+
+  @override
+  String teamFansWithTeam(String team) {
+    return 'Fans de l\'Équipe ($team)';
+  }
+
+  @override
+  String get activeUsers7Days => 'Utilisateurs Actifs (7 jours)';
 }

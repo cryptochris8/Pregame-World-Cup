@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/admin_user.dart';
 import '../../domain/services/admin_service.dart';
 
@@ -54,7 +55,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Push Notifications'),
+        title: Text(AppLocalizations.of(context).pushNotifications),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -74,7 +75,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                       const SizedBox(width: 12),
                       Expanded(
                         child: Text(
-                          'Broadcast notifications are sent to all users in the selected audience. Use sparingly.',
+                          AppLocalizations.of(context).broadcastWarning,
                           style: TextStyle(color: Colors.amber.shade900),
                         ),
                       ),
@@ -86,7 +87,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
 
               // Audience selection
               Text(
-                'Target Audience',
+                AppLocalizations.of(context).targetAudience,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -98,7 +99,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
               // Team selector (only for team fans)
               if (_selectedAudience == NotificationAudience.teamFans) ...[
                 Text(
-                  'Select Team',
+                  AppLocalizations.of(context).selectTeam,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -106,9 +107,9 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                 const SizedBox(height: 12),
                 DropdownButtonFormField<String>(
                   value: _selectedTeam,
-                  decoration: const InputDecoration(
-                    labelText: 'Team',
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: AppLocalizations.of(context).selectTeam,
+                    border: const OutlineInputBorder(),
                   ),
                   items: _teams
                       .map((team) => DropdownMenuItem(
@@ -118,14 +119,14 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                       .toList(),
                   onChanged: (value) => setState(() => _selectedTeam = value),
                   validator: (value) =>
-                      value == null ? 'Please select a team' : null,
+                      value == null ? AppLocalizations.of(context).pleaseSelectATeam : null,
                 ),
                 const SizedBox(height: 24),
               ],
 
               // Notification content
               Text(
-                'Notification Content',
+                AppLocalizations.of(context).notificationContentLabel,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -133,18 +134,18 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
               const SizedBox(height: 12),
               TextFormField(
                 controller: _titleController,
-                decoration: const InputDecoration(
-                  labelText: 'Title',
-                  hintText: 'Enter notification title',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context).titleLabel,
+                  hintText: AppLocalizations.of(context).enterNotificationTitle,
+                  border: const OutlineInputBorder(),
                 ),
                 maxLength: 65,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a title';
+                    return AppLocalizations.of(context).pleaseEnterTitle;
                   }
                   if (value.length < 3) {
-                    return 'Title must be at least 3 characters';
+                    return AppLocalizations.of(context).titleMinLength;
                   }
                   return null;
                 },
@@ -152,20 +153,20 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _bodyController,
-                decoration: const InputDecoration(
-                  labelText: 'Message',
-                  hintText: 'Enter notification message',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context).messageLabel,
+                  hintText: AppLocalizations.of(context).enterNotificationMessage,
+                  border: const OutlineInputBorder(),
                   alignLabelWithHint: true,
                 ),
                 maxLines: 4,
                 maxLength: 240,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a message';
+                    return AppLocalizations.of(context).pleaseEnterMessage;
                   }
                   if (value.length < 10) {
-                    return 'Message must be at least 10 characters';
+                    return AppLocalizations.of(context).messageMinLength;
                   }
                   return null;
                 },
@@ -174,7 +175,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
 
               // Preview card
               Text(
-                'Preview',
+                AppLocalizations.of(context).previewLabel,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -195,7 +196,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
                       : const Icon(Icons.send),
-                  label: Text(_isSending ? 'Sending...' : 'Send Notification'),
+                  label: Text(_isSending ? AppLocalizations.of(context).sending : AppLocalizations.of(context).sendNotification),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.all(16),
                     backgroundColor: theme.colorScheme.primary,
@@ -215,34 +216,35 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
   }
 
   Widget _buildAudienceSelector(ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     return Column(
       children: [
         _buildAudienceOption(
           theme,
           NotificationAudience.allUsers,
-          'All Users',
-          'Send to everyone',
+          l10n.allUsersAudience,
+          l10n.sendToEveryone,
           Icons.public,
         ),
         _buildAudienceOption(
           theme,
           NotificationAudience.premiumUsers,
-          'Premium Users',
-          'Superfan Pass holders only',
+          l10n.premiumUsersAudience,
+          l10n.superfanPassHoldersOnly,
           Icons.star,
         ),
         _buildAudienceOption(
           theme,
           NotificationAudience.teamFans,
-          'Team Fans',
-          'Users who follow a specific team',
+          l10n.teamFansAudience,
+          l10n.usersFollowSpecificTeam,
           Icons.groups,
         ),
         _buildAudienceOption(
           theme,
           NotificationAudience.activeUsers,
-          'Active Users',
-          'Users active in the last 7 days',
+          l10n.activeUsersAudience,
+          l10n.usersActiveLast7Days,
           Icons.trending_up,
         ),
       ],
@@ -332,7 +334,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                       ),
                       Text(
                         _titleController.text.isEmpty
-                            ? 'Notification Title'
+                            ? AppLocalizations.of(context).notificationTitlePlaceholder
                             : _titleController.text,
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
@@ -344,7 +346,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                   ),
                 ),
                 Text(
-                  'now',
+                  AppLocalizations.of(context).nowLabel,
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: theme.colorScheme.outline,
                   ),
@@ -354,7 +356,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
             const SizedBox(height: 8),
             Text(
               _bodyController.text.isEmpty
-                  ? 'Your notification message will appear here...'
+                  ? AppLocalizations.of(context).notificationPreviewPlaceholder
                   : _bodyController.text,
               style: theme.textTheme.bodyMedium,
               maxLines: 3,
@@ -372,7 +374,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
       children: [
         const Divider(height: 32),
         Text(
-          'Recent Broadcasts',
+          AppLocalizations.of(context).recentBroadcasts,
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -392,7 +394,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Recent broadcast history will appear here',
+                    AppLocalizations.of(context).recentBroadcastHistory,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: theme.colorScheme.outline,
                     ),
@@ -412,7 +414,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
     if (_selectedAudience == NotificationAudience.teamFans &&
         _selectedTeam == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please select a team')),
+        SnackBar(content: Text(AppLocalizations.of(context).pleaseSelectATeam)),
       );
       return;
     }
@@ -421,27 +423,27 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Confirm Send'),
+        title: Text(AppLocalizations.of(context).confirmSend),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Are you sure you want to send this notification?'),
+            Text(AppLocalizations.of(context).confirmSendNotification),
             const SizedBox(height: 16),
-            _buildConfirmDetail('Audience', _getAudienceLabel()),
-            _buildConfirmDetail('Title', _titleController.text),
-            _buildConfirmDetail('Message', _bodyController.text),
+            _buildConfirmDetail(AppLocalizations.of(context).audienceLabel, _getAudienceLabel()),
+            _buildConfirmDetail(AppLocalizations.of(context).titleLabel, _titleController.text),
+            _buildConfirmDetail(AppLocalizations.of(context).messageLabel, _bodyController.text),
           ],
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context).cancel),
           ),
           ElevatedButton(
             onPressed: () => Navigator.pop(context, true),
             style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-            child: const Text('Send'),
+            child: Text(AppLocalizations.of(context).send),
           ),
         ],
       ),
@@ -463,8 +465,8 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
     if (mounted) {
       if (success) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Notification sent successfully'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).notificationSentSuccessfully),
             backgroundColor: Colors.green,
           ),
         );
@@ -477,8 +479,8 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
         });
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Failed to send notification'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context).failedToSendNotification),
             backgroundColor: Colors.red,
           ),
         );
@@ -512,15 +514,16 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
   }
 
   String _getAudienceLabel() {
+    final l10n = AppLocalizations.of(context);
     switch (_selectedAudience) {
       case NotificationAudience.allUsers:
-        return 'All Users';
+        return l10n.allUsersAudience;
       case NotificationAudience.premiumUsers:
-        return 'Premium Users';
+        return l10n.premiumUsersAudience;
       case NotificationAudience.teamFans:
-        return 'Team Fans ($_selectedTeam)';
+        return l10n.teamFansWithTeam(_selectedTeam ?? '');
       case NotificationAudience.activeUsers:
-        return 'Active Users (7 days)';
+        return l10n.activeUsers7Days;
     }
   }
 }

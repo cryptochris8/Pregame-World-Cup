@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Helper class providing confirmation dialogs for friend actions.
 class FriendActionDialogs {
@@ -10,20 +11,21 @@ class FriendActionDialogs {
     BuildContext context, {
     required String displayName,
   }) {
+    final l10n = AppLocalizations.of(context);
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Remove Friend'),
-        content: Text('Are you sure you want to remove $displayName from your friends?'),
+        title: Text(l10n.removeFriend),
+        content: Text(l10n.removeFriendConfirm(displayName)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Remove'),
+            child: Text(l10n.remove),
           ),
         ],
       ),
@@ -36,22 +38,21 @@ class FriendActionDialogs {
     BuildContext context, {
     required String displayName,
   }) {
+    final l10n = AppLocalizations.of(context);
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Block User'),
-        content: Text(
-          'Are you sure you want to block $displayName? They will be removed from your friends and won\'t be able to contact you.',
-        ),
+        title: Text(l10n.blockUser),
+        content: Text(l10n.blockUserConfirm(displayName)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Block'),
+            child: Text(l10n.block),
           ),
         ],
       ),

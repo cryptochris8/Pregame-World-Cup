@@ -2579,4 +2579,365 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get unexpectedErrorMessage =>
       'Ocorreu um erro inesperado. Por favor, reinicie o aplicativo.';
+
+  @override
+  String get newChat => 'Nova Conversa';
+
+  @override
+  String get team => 'Time';
+
+  @override
+  String get groupName => 'Nome do Grupo';
+
+  @override
+  String get descriptionOptional => 'Descrição (opcional)';
+
+  @override
+  String get searchFriendsToAdd => 'Buscar amigos para adicionar...';
+
+  @override
+  String get createGroup => 'Criar Grupo';
+
+  @override
+  String get teamName => 'Nome do Time';
+
+  @override
+  String get teamDescriptionOptional => 'Descrição do Time (opcional)';
+
+  @override
+  String get searchFriendsToAddToTeam =>
+      'Buscar amigos para adicionar ao time...';
+
+  @override
+  String get createTeam => 'Criar Time';
+
+  @override
+  String failedToLoadFriends(String error) {
+    return 'Falha ao carregar amigos: $error';
+  }
+
+  @override
+  String failedToCreateDirectChat(String error) {
+    return 'Falha ao criar conversa direta: $error';
+  }
+
+  @override
+  String failedToCreateGroupChat(String error) {
+    return 'Falha ao criar conversa em grupo: $error';
+  }
+
+  @override
+  String failedToCreateTeamChat(String error) {
+    return 'Falha ao criar conversa de time: $error';
+  }
+
+  @override
+  String get clearChatHistoryConfirmation =>
+      'Tem certeza de que deseja limpar todas as mensagens desta conversa? Esta ação não pode ser desfeita.';
+
+  @override
+  String get leaveChatConfirmation =>
+      'Tem certeza de que deseja sair desta conversa?';
+
+  @override
+  String get leave => 'Sair';
+
+  @override
+  String get unblockUserConfirmation =>
+      'Tem certeza de que deseja desbloquear este usuário? Ele poderá enviar mensagens novamente.';
+
+  @override
+  String get addMembers => 'Adicionar Membros';
+
+  @override
+  String get selectFriendToAdd =>
+      'Selecione um amigo para adicionar a esta conversa';
+
+  @override
+  String get noFriendsToAdd => 'Nenhum amigo para adicionar';
+
+  @override
+  String get allFriendsAlreadyInChat =>
+      'Todos os seus amigos já estão nesta conversa';
+
+  @override
+  String memberAddedToChat(String name) {
+    return '$name adicionado à conversa';
+  }
+
+  @override
+  String failedToAddMember(String name) {
+    return 'Falha ao adicionar $name';
+  }
+
+  @override
+  String get editProfile => 'Editar Perfil';
+
+  @override
+  String get maxFavoriteTeamsMessage =>
+      'Você pode selecionar até 5 times favoritos';
+
+  @override
+  String get profileUpdatedSuccessfully => 'Perfil atualizado com sucesso!';
+
+  @override
+  String get failedToUpdateProfile =>
+      'Falha ao atualizar o perfil. Tente novamente.';
+
+  @override
+  String failedToUpdateProfileError(String error) {
+    return 'Falha ao atualizar o perfil: $error';
+  }
+
+  @override
+  String get removeFriend => 'Remover Amigo';
+
+  @override
+  String removeFriendConfirm(String name) {
+    return 'Tem certeza de que deseja remover $name dos seus amigos?';
+  }
+
+  @override
+  String get blockUser => 'Bloquear Usuário';
+
+  @override
+  String blockUserConfirm(String name) {
+    return 'Tem certeza de que deseja bloquear $name? Ele será removido dos seus amigos e não poderá entrar em contato com você.';
+  }
+
+  @override
+  String get block => 'Bloquear';
+
+  @override
+  String get aiPredictionsNotAvailable => 'Previsões de IA não disponíveis';
+
+  @override
+  String aiSuggestionFailed(String error) {
+    return 'Sugestão de IA falhou: $error';
+  }
+
+  @override
+  String get editPrediction => 'Editar Previsão';
+
+  @override
+  String get makeYourPrediction => 'Faça Sua Previsão';
+
+  @override
+  String get vs => 'VS';
+
+  @override
+  String poweredByProvider(String provider) {
+    return 'Desenvolvido por $provider';
+  }
+
+  @override
+  String get savePrediction => 'Salvar Previsão';
+
+  @override
+  String teamWins(String team) {
+    return '$team vence';
+  }
+
+  @override
+  String get aiThinking => 'IA pensando...';
+
+  @override
+  String get aiSuggest => 'Sugestão IA';
+
+  @override
+  String yourPredictionDisplay(String prediction) {
+    return 'Sua previsão: $prediction';
+  }
+
+  @override
+  String get predict => 'Prever';
+
+  @override
+  String get unknown => 'Desconhecido';
+
+  @override
+  String get venueClaims => 'Reivindicações de Locais';
+
+  @override
+  String get venueClaimsDesc =>
+      'Revisar reivindicações e disputas de locais pendentes';
+
+  @override
+  String errorLoadingData(String error) {
+    return 'Erro ao carregar dados: $error';
+  }
+
+  @override
+  String errorWithMessage(String error) {
+    return 'Erro: $error';
+  }
+
+  @override
+  String get claimsTab => 'Reivindicações';
+
+  @override
+  String get disputesTab => 'Disputas';
+
+  @override
+  String get noPendingClaims => 'Sem Reivindicações Pendentes';
+
+  @override
+  String get allVenueClaimsReviewed =>
+      'Todas as reivindicações de locais foram revisadas.';
+
+  @override
+  String get noPendingDisputes => 'Sem Disputas Pendentes';
+
+  @override
+  String get allVenueDisputesReviewed =>
+      'Todas as disputas de locais foram revisadas.';
+
+  @override
+  String get reject => 'Rejeitar';
+
+  @override
+  String get approve => 'Aprovar';
+
+  @override
+  String rejectVenueConfirm(String name) {
+    return 'Rejeitar $name?';
+  }
+
+  @override
+  String get rejectionReasonHint => 'Motivo da rejeição (opcional)';
+
+  @override
+  String get claimApprovedSuccessfully => 'Reivindicação aprovada com sucesso.';
+
+  @override
+  String get claimRejectedSuccessfully =>
+      'Reivindicação rejeitada com sucesso.';
+
+  @override
+  String disputeLabel(String reason) {
+    return 'Disputa: $reason';
+  }
+
+  @override
+  String get upholdAction => 'Confirmar';
+
+  @override
+  String disputeResolution(String resolution) {
+    return 'Disputa $resolution.';
+  }
+
+  @override
+  String get broadcastWarning =>
+      'As notificações de difusão são enviadas a todos os usuários da audiência selecionada. Use com moderação.';
+
+  @override
+  String get targetAudience => 'Audiência Alvo';
+
+  @override
+  String get selectTeam => 'Selecionar Time';
+
+  @override
+  String get pleaseSelectATeam => 'Por favor selecione um time';
+
+  @override
+  String get notificationContentLabel => 'Conteúdo da Notificação';
+
+  @override
+  String get titleLabel => 'Título';
+
+  @override
+  String get enterNotificationTitle => 'Digite o título da notificação';
+
+  @override
+  String get pleaseEnterTitle => 'Por favor digite um título';
+
+  @override
+  String get titleMinLength => 'O título deve ter pelo menos 3 caracteres';
+
+  @override
+  String get messageLabel => 'Mensagem';
+
+  @override
+  String get enterNotificationMessage => 'Digite a mensagem da notificação';
+
+  @override
+  String get pleaseEnterMessage => 'Por favor digite uma mensagem';
+
+  @override
+  String get messageMinLength => 'A mensagem deve ter pelo menos 10 caracteres';
+
+  @override
+  String get previewLabel => 'Pré-visualização';
+
+  @override
+  String get notificationTitlePlaceholder => 'Título da Notificação';
+
+  @override
+  String get notificationPreviewPlaceholder =>
+      'Sua mensagem de notificação aparecerá aqui...';
+
+  @override
+  String get sending => 'Enviando...';
+
+  @override
+  String get sendNotification => 'Enviar Notificação';
+
+  @override
+  String get confirmSend => 'Confirmar Envio';
+
+  @override
+  String get confirmSendNotification =>
+      'Tem certeza de que deseja enviar esta notificação?';
+
+  @override
+  String get notificationSentSuccessfully => 'Notificação enviada com sucesso';
+
+  @override
+  String get failedToSendNotification => 'Falha ao enviar a notificação';
+
+  @override
+  String get recentBroadcasts => 'Difusões Recentes';
+
+  @override
+  String get recentBroadcastHistory =>
+      'O histórico de difusões recentes aparecerá aqui';
+
+  @override
+  String get allUsersAudience => 'Todos os Usuários';
+
+  @override
+  String get sendToEveryone => 'Enviar para todos';
+
+  @override
+  String get premiumUsersAudience => 'Usuários Premium';
+
+  @override
+  String get superfanPassHoldersOnly => 'Apenas portadores do Passe Superfã';
+
+  @override
+  String get teamFansAudience => 'Fãs do Time';
+
+  @override
+  String get usersFollowSpecificTeam =>
+      'Usuários que seguem um time específico';
+
+  @override
+  String get activeUsersAudience => 'Usuários Ativos';
+
+  @override
+  String get usersActiveLast7Days => 'Usuários ativos nos últimos 7 dias';
+
+  @override
+  String get audienceLabel => 'Audiência';
+
+  @override
+  String get nowLabel => 'agora';
+
+  @override
+  String teamFansWithTeam(String team) {
+    return 'Fãs do Time ($team)';
+  }
+
+  @override
+  String get activeUsers7Days => 'Usuários Ativos (7 dias)';
 }

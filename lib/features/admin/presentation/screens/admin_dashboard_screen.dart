@@ -142,7 +142,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    adminUser?.displayName ?? 'Admin',
+                    adminUser?.displayName ?? AppLocalizations.of(context).admin,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -155,7 +155,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
-                      adminUser?.role.displayName ?? 'Unknown',
+                      adminUser?.role.displayName ?? AppLocalizations.of(context).unknown,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -346,8 +346,8 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
         if (role?.canManageUsers() ?? false)
           _buildActionTile(
             theme,
-            'Venue Claims',
-            'Review pending venue claims & disputes',
+            AppLocalizations.of(context).venueClaims,
+            AppLocalizations.of(context).venueClaimsDesc,
             Icons.storefront_outlined,
             () => Navigator.push(
               context,

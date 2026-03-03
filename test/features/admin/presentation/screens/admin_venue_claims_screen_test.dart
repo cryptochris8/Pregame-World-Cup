@@ -3,6 +3,7 @@ import 'package:firebase_core_platform_interface/test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/admin/presentation/screens/admin_venue_claims_screen.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 /// Tests for AdminVenueClaimsScreen.
 ///
@@ -36,6 +37,8 @@ void main() {
 
   Widget buildTestWidget() {
     return const MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: MediaQuery(
         data: MediaQueryData(size: Size(500, 1000)),
         child: AdminVenueClaimsScreen(),

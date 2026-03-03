@@ -5,6 +5,7 @@ import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../screens/chat_screen.dart';
 import 'direct_chat_tab.dart';
 import 'chat_member_selector.dart';
@@ -79,7 +80,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
         });
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to load friends: $e'),
+            content: Text(AppLocalizations.of(context).failedToLoadFriends(e.toString())),
             backgroundColor: Colors.red,
           ),
         );
@@ -132,9 +133,9 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
             ),
             child: Row(
               children: [
-                const Text(
-                  'New Chat',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context).newChat,
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -160,10 +161,10 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
               indicatorColor: Colors.orange[300],
               labelColor: Colors.orange[300],
               unselectedLabelColor: Colors.white70,
-              tabs: const [
-                Tab(text: 'Direct'),
-                Tab(text: 'Group'),
-                Tab(text: 'Team'),
+              tabs: [
+                Tab(text: AppLocalizations.of(context).direct),
+                Tab(text: AppLocalizations.of(context).group),
+                Tab(text: AppLocalizations.of(context).team),
               ],
             ),
           ),
@@ -184,10 +185,10 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                   nameController: _groupNameController,
                   descriptionController: _groupDescriptionController,
                   searchController: _searchController,
-                  nameLabel: 'Group Name',
-                  descriptionLabel: 'Description (optional)',
-                  searchHint: 'Search friends to add...',
-                  createButtonLabel: 'Create Group',
+                  nameLabel: AppLocalizations.of(context).groupName,
+                  descriptionLabel: AppLocalizations.of(context).descriptionOptional,
+                  searchHint: AppLocalizations.of(context).searchFriendsToAdd,
+                  createButtonLabel: AppLocalizations.of(context).createGroup,
                   selectedFriendIds: _selectedFriendIds,
                   friends: _friends,
                   filteredFriends: _filteredFriends,
@@ -205,10 +206,10 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
                   nameController: _groupNameController,
                   descriptionController: _groupDescriptionController,
                   searchController: _searchController,
-                  nameLabel: 'Team Name',
-                  descriptionLabel: 'Team Description (optional)',
-                  searchHint: 'Search friends to add to team...',
-                  createButtonLabel: 'Create Team',
+                  nameLabel: AppLocalizations.of(context).teamName,
+                  descriptionLabel: AppLocalizations.of(context).teamDescriptionOptional,
+                  searchHint: AppLocalizations.of(context).searchFriendsToAddToTeam,
+                  createButtonLabel: AppLocalizations.of(context).createTeam,
                   selectedFriendIds: _selectedFriendIds,
                   friends: _friends,
                   filteredFriends: _filteredFriends,
@@ -262,7 +263,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to create direct chat: $e'),
+            content: Text(AppLocalizations.of(context).failedToCreateDirectChat(e.toString())),
             backgroundColor: Colors.red,
           ),
         );
@@ -312,7 +313,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to create group chat: $e'),
+            content: Text(AppLocalizations.of(context).failedToCreateGroupChat(e.toString())),
             backgroundColor: Colors.red,
           ),
         );
@@ -362,7 +363,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to create team chat: $e'),
+            content: Text(AppLocalizations.of(context).failedToCreateTeamChat(e.toString())),
             backgroundColor: Colors.red,
           ),
         );

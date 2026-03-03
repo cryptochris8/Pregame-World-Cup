@@ -3409,5 +3409,489 @@
   "unexpectedErrorMessage": "An unexpected error occurred. Please restart the app.",
   "@unexpectedErrorMessage": {
     "description": "Generic error message for error boundary screen"
+  },
+
+  "newChat": "New Chat",
+  "@newChat": {
+    "description": "Title for new chat bottom sheet"
+  },
+  "team": "Team",
+  "@team": {
+    "description": "Tab label for team chat"
+  },
+  "groupName": "Group Name",
+  "@groupName": {
+    "description": "Label for group name input field"
+  },
+  "descriptionOptional": "Description (optional)",
+  "@descriptionOptional": {
+    "description": "Label for optional description input field"
+  },
+  "searchFriendsToAdd": "Search friends to add...",
+  "@searchFriendsToAdd": {
+    "description": "Hint text for search friends input in group chat creation"
+  },
+  "createGroup": "Create Group",
+  "@createGroup": {
+    "description": "Button label to create a group chat"
+  },
+  "teamName": "Team Name",
+  "@teamName": {
+    "description": "Label for team name input field"
+  },
+  "teamDescriptionOptional": "Team Description (optional)",
+  "@teamDescriptionOptional": {
+    "description": "Label for optional team description input field"
+  },
+  "searchFriendsToAddToTeam": "Search friends to add to team...",
+  "@searchFriendsToAddToTeam": {
+    "description": "Hint text for search friends input in team chat creation"
+  },
+  "createTeam": "Create Team",
+  "@createTeam": {
+    "description": "Button label to create a team chat"
+  },
+  "failedToLoadFriends": "Failed to load friends: {error}",
+  "@failedToLoadFriends": {
+    "description": "Error message when friends list fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToCreateDirectChat": "Failed to create direct chat: {error}",
+  "@failedToCreateDirectChat": {
+    "description": "Error message when creating a direct chat fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToCreateGroupChat": "Failed to create group chat: {error}",
+  "@failedToCreateGroupChat": {
+    "description": "Error message when creating a group chat fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToCreateTeamChat": "Failed to create team chat: {error}",
+  "@failedToCreateTeamChat": {
+    "description": "Error message when creating a team chat fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "clearChatHistoryConfirmation": "Are you sure you want to clear all messages in this chat? This action cannot be undone.",
+  "@clearChatHistoryConfirmation": {
+    "description": "Confirmation message for clearing chat history"
+  },
+  "leaveChatConfirmation": "Are you sure you want to leave this chat?",
+  "@leaveChatConfirmation": {
+    "description": "Confirmation message for leaving a chat"
+  },
+  "leave": "Leave",
+  "@leave": {
+    "description": "Button label to leave a chat"
+  },
+  "unblockUserConfirmation": "Are you sure you want to unblock this user? They will be able to message you again.",
+  "@unblockUserConfirmation": {
+    "description": "Confirmation message for unblocking a user"
+  },
+  "addMembers": "Add Members",
+  "@addMembers": {
+    "description": "Title for add members bottom sheet"
+  },
+  "selectFriendToAdd": "Select a friend to add to this chat",
+  "@selectFriendToAdd": {
+    "description": "Subtitle text in add members sheet"
+  },
+  "noFriendsToAdd": "No friends to add",
+  "@noFriendsToAdd": {
+    "description": "Message when no friends are available to add"
+  },
+  "allFriendsAlreadyInChat": "All your friends are already in this chat",
+  "@allFriendsAlreadyInChat": {
+    "description": "Message when all friends are already chat members"
+  },
+  "memberAddedToChat": "{name} added to chat",
+  "@memberAddedToChat": {
+    "description": "Success message when a member is added to chat",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToAddMember": "Failed to add {name}",
+  "@failedToAddMember": {
+    "description": "Error message when adding a member to chat fails",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "editProfile": "Edit Profile",
+  "@editProfile": {
+    "description": "Edit profile screen title"
+  },
+  "maxFavoriteTeamsMessage": "You can select up to 5 favorite teams",
+  "@maxFavoriteTeamsMessage": {
+    "description": "Snackbar when user tries to select more than 5 teams"
+  },
+  "profileUpdatedSuccessfully": "Profile updated successfully!",
+  "@profileUpdatedSuccessfully": {
+    "description": "Success snackbar after profile update"
+  },
+  "failedToUpdateProfile": "Failed to update profile. Please try again.",
+  "@failedToUpdateProfile": {
+    "description": "Error snackbar when profile update fails"
+  },
+  "failedToUpdateProfileError": "Failed to update profile: {error}",
+  "@failedToUpdateProfileError": {
+    "description": "Error snackbar when profile update fails with details",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "removeFriend": "Remove Friend",
+  "@removeFriend": {
+    "description": "Remove friend dialog title"
+  },
+  "removeFriendConfirm": "Are you sure you want to remove {name} from your friends?",
+  "@removeFriendConfirm": {
+    "description": "Remove friend confirmation message",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "blockUser": "Block User",
+  "@blockUser": {
+    "description": "Block user dialog title"
+  },
+  "blockUserConfirm": "Are you sure you want to block {name}? They will be removed from your friends and won't be able to contact you.",
+  "@blockUserConfirm": {
+    "description": "Block user confirmation message",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "block": "Block",
+  "@block": {
+    "description": "Block button label"
+  },
+
+  "aiPredictionsNotAvailable": "AI predictions not available",
+  "@aiPredictionsNotAvailable": {
+    "description": "Snackbar when AI predictions are not available"
+  },
+  "aiSuggestionFailed": "AI suggestion failed: {error}",
+  "@aiSuggestionFailed": {
+    "description": "Snackbar when AI suggestion fails",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "editPrediction": "Edit Prediction",
+  "@editPrediction": {
+    "description": "Dialog title when editing existing prediction"
+  },
+  "makeYourPrediction": "Make Your Prediction",
+  "@makeYourPrediction": {
+    "description": "Dialog title when making new prediction"
+  },
+  "vs": "VS",
+  "@vs": {
+    "description": "Versus label between teams"
+  },
+  "poweredByProvider": "Powered by {provider}",
+  "@poweredByProvider": {
+    "description": "AI provider attribution",
+    "placeholders": {
+      "provider": {"type": "String"}
+    }
+  },
+  "savePrediction": "Save Prediction",
+  "@savePrediction": {
+    "description": "Save prediction button"
+  },
+  "teamWins": "{team} wins",
+  "@teamWins": {
+    "description": "Predicted outcome showing winning team",
+    "placeholders": {
+      "team": {"type": "String"}
+    }
+  },
+  "aiThinking": "AI thinking...",
+  "@aiThinking": {
+    "description": "Label while AI is generating suggestion"
+  },
+  "aiSuggest": "AI Suggest",
+  "@aiSuggest": {
+    "description": "AI suggest button label"
+  },
+  "yourPredictionDisplay": "Your prediction: {prediction}",
+  "@yourPredictionDisplay": {
+    "description": "Shows user prediction on live match",
+    "placeholders": {
+      "prediction": {"type": "String"}
+    }
+  },
+  "predict": "Predict",
+  "@predict": {
+    "description": "Predict button label"
+  },
+
+  "unknown": "Unknown",
+  "@unknown": {
+    "description": "Fallback text for unknown values"
+  },
+  "venueClaims": "Venue Claims",
+  "@venueClaims": {
+    "description": "Venue claims admin action title"
+  },
+  "venueClaimsDesc": "Review pending venue claims & disputes",
+  "@venueClaimsDesc": {
+    "description": "Venue claims admin action description"
+  },
+
+  "errorLoadingData": "Error loading data: {error}",
+  "@errorLoadingData": {
+    "description": "Error snackbar when loading data fails",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "errorWithMessage": "Error: {error}",
+  "@errorWithMessage": {
+    "description": "Generic error with message",
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "claimsTab": "Claims",
+  "@claimsTab": {
+    "description": "Claims tab label"
+  },
+  "disputesTab": "Disputes",
+  "@disputesTab": {
+    "description": "Disputes tab label"
+  },
+  "noPendingClaims": "No Pending Claims",
+  "@noPendingClaims": {
+    "description": "Empty state title for no pending claims"
+  },
+  "allVenueClaimsReviewed": "All venue claims have been reviewed.",
+  "@allVenueClaimsReviewed": {
+    "description": "Empty state subtitle for no pending claims"
+  },
+  "noPendingDisputes": "No Pending Disputes",
+  "@noPendingDisputes": {
+    "description": "Empty state title for no pending disputes"
+  },
+  "allVenueDisputesReviewed": "All venue disputes have been reviewed.",
+  "@allVenueDisputesReviewed": {
+    "description": "Empty state subtitle for no pending disputes"
+  },
+  "reject": "Reject",
+  "@reject": {
+    "description": "Reject button label"
+  },
+  "approve": "Approve",
+  "@approve": {
+    "description": "Approve button label"
+  },
+  "rejectVenueConfirm": "Reject {name}?",
+  "@rejectVenueConfirm": {
+    "description": "Reject venue claim confirmation title",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "rejectionReasonHint": "Rejection reason (optional)",
+  "@rejectionReasonHint": {
+    "description": "Hint for rejection reason text field"
+  },
+  "claimApprovedSuccessfully": "Claim approved successfully.",
+  "@claimApprovedSuccessfully": {
+    "description": "Snackbar when claim is approved"
+  },
+  "claimRejectedSuccessfully": "Claim rejected successfully.",
+  "@claimRejectedSuccessfully": {
+    "description": "Snackbar when claim is rejected"
+  },
+  "disputeLabel": "Dispute: {reason}",
+  "@disputeLabel": {
+    "description": "Dispute card title with reason",
+    "placeholders": {
+      "reason": {"type": "String"}
+    }
+  },
+  "upholdAction": "Uphold",
+  "@upholdAction": {
+    "description": "Uphold dispute button"
+  },
+  "disputeResolution": "Dispute {resolution}.",
+  "@disputeResolution": {
+    "description": "Dispute resolution snackbar",
+    "placeholders": {
+      "resolution": {"type": "String"}
+    }
+  },
+
+  "broadcastWarning": "Broadcast notifications are sent to all users in the selected audience. Use sparingly.",
+  "@broadcastWarning": {
+    "description": "Warning message on admin notifications screen"
+  },
+  "targetAudience": "Target Audience",
+  "@targetAudience": {
+    "description": "Target audience section title"
+  },
+  "selectTeam": "Select Team",
+  "@selectTeam": {
+    "description": "Select team section title"
+  },
+  "pleaseSelectATeam": "Please select a team",
+  "@pleaseSelectATeam": {
+    "description": "Validation when no team selected"
+  },
+  "notificationContentLabel": "Notification Content",
+  "@notificationContentLabel": {
+    "description": "Notification content section title"
+  },
+  "titleLabel": "Title",
+  "@titleLabel": {
+    "description": "Title field label"
+  },
+  "enterNotificationTitle": "Enter notification title",
+  "@enterNotificationTitle": {
+    "description": "Title field hint"
+  },
+  "pleaseEnterTitle": "Please enter a title",
+  "@pleaseEnterTitle": {
+    "description": "Title validation error"
+  },
+  "titleMinLength": "Title must be at least 3 characters",
+  "@titleMinLength": {
+    "description": "Title minimum length validation"
+  },
+  "messageLabel": "Message",
+  "@messageLabel": {
+    "description": "Message field label"
+  },
+  "enterNotificationMessage": "Enter notification message",
+  "@enterNotificationMessage": {
+    "description": "Message field hint"
+  },
+  "pleaseEnterMessage": "Please enter a message",
+  "@pleaseEnterMessage": {
+    "description": "Message validation error"
+  },
+  "messageMinLength": "Message must be at least 10 characters",
+  "@messageMinLength": {
+    "description": "Message minimum length validation"
+  },
+  "previewLabel": "Preview",
+  "@previewLabel": {
+    "description": "Preview section title"
+  },
+  "notificationTitlePlaceholder": "Notification Title",
+  "@notificationTitlePlaceholder": {
+    "description": "Placeholder for notification title in preview"
+  },
+  "notificationPreviewPlaceholder": "Your notification message will appear here...",
+  "@notificationPreviewPlaceholder": {
+    "description": "Placeholder for notification body in preview"
+  },
+  "sending": "Sending...",
+  "@sending": {
+    "description": "Sending button label"
+  },
+  "sendNotification": "Send Notification",
+  "@sendNotification": {
+    "description": "Send notification button label"
+  },
+  "confirmSend": "Confirm Send",
+  "@confirmSend": {
+    "description": "Confirm send dialog title"
+  },
+  "confirmSendNotification": "Are you sure you want to send this notification?",
+  "@confirmSendNotification": {
+    "description": "Confirm send dialog message"
+  },
+  "notificationSentSuccessfully": "Notification sent successfully",
+  "@notificationSentSuccessfully": {
+    "description": "Success snackbar after sending notification"
+  },
+  "failedToSendNotification": "Failed to send notification",
+  "@failedToSendNotification": {
+    "description": "Error snackbar when notification sending fails"
+  },
+  "recentBroadcasts": "Recent Broadcasts",
+  "@recentBroadcasts": {
+    "description": "Recent broadcasts section title"
+  },
+  "recentBroadcastHistory": "Recent broadcast history will appear here",
+  "@recentBroadcastHistory": {
+    "description": "Placeholder for recent broadcasts"
+  },
+  "allUsersAudience": "All Users",
+  "@allUsersAudience": {
+    "description": "All users audience option"
+  },
+  "sendToEveryone": "Send to everyone",
+  "@sendToEveryone": {
+    "description": "All users audience description"
+  },
+  "premiumUsersAudience": "Premium Users",
+  "@premiumUsersAudience": {
+    "description": "Premium users audience option"
+  },
+  "superfanPassHoldersOnly": "Superfan Pass holders only",
+  "@superfanPassHoldersOnly": {
+    "description": "Premium users audience description"
+  },
+  "teamFansAudience": "Team Fans",
+  "@teamFansAudience": {
+    "description": "Team fans audience option"
+  },
+  "usersFollowSpecificTeam": "Users who follow a specific team",
+  "@usersFollowSpecificTeam": {
+    "description": "Team fans audience description"
+  },
+  "activeUsersAudience": "Active Users",
+  "@activeUsersAudience": {
+    "description": "Active users audience option"
+  },
+  "usersActiveLast7Days": "Users active in the last 7 days",
+  "@usersActiveLast7Days": {
+    "description": "Active users audience description"
+  },
+  "audienceLabel": "Audience",
+  "@audienceLabel": {
+    "description": "Audience label in confirm dialog"
+  },
+  "nowLabel": "now",
+  "@nowLabel": {
+    "description": "Time label for now"
+  },
+  "teamFansWithTeam": "Team Fans ({team})",
+  "@teamFansWithTeam": {
+    "description": "Team fans audience label with selected team",
+    "placeholders": {
+      "team": {"type": "String"}
+    }
+  },
+  "activeUsers7Days": "Active Users (7 days)",
+  "@activeUsers7Days": {
+    "description": "Active users 7 days audience label"
   }
 }

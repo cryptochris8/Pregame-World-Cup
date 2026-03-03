@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/entities.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/bloc.dart';
 import 'team_flag.dart';
 
@@ -72,7 +73,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
     final aiCubit = context.read<WorldCupAICubit?>();
     if (aiCubit == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('AI predictions not available')),
+        SnackBar(content: Text(AppLocalizations.of(context).aiPredictionsNotAvailable)),
       );
       return;
     }
@@ -102,7 +103,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
       if (mounted) {
         setState(() => _isLoadingAI = false);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('AI suggestion failed: $e')),
+          SnackBar(content: Text(AppLocalizations.of(context).aiSuggestionFailed(e.toString()))),
         );
       }
     }
@@ -113,9 +114,11 @@ class _PredictionDialogState extends State<PredictionDialog> {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
+    final l10n = AppLocalizations.of(context);
+
     return AlertDialog(
       title: Text(
-        widget.existingPrediction != null ? 'Edit Prediction' : 'Make Your Prediction',
+        widget.existingPrediction != null ? l10n.editPrediction : l10n.makeYourPrediction,
         textAlign: TextAlign.center,
       ),
       content: SingleChildScrollView(
@@ -180,7 +183,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
-                    'VS',
+                    l10n.vs,
                     style: theme.textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: colorScheme.primary,
@@ -259,7 +262,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
                           ),
                           if (_aiProvider != null)
                             Text(
-                              'Powered by $_aiProvider',
+                              l10n.poweredByProvider(_aiProvider!),
                               style: theme.textTheme.labelSmall?.copyWith(
                                 color: colorScheme.onSurfaceVariant,
                                 fontSize: 10,
@@ -295,7 +298,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(l10n.cancel),
         ),
         FilledButton(
           onPressed: () {
@@ -305,19 +308,20 @@ class _PredictionDialogState extends State<PredictionDialog> {
               'awayScore': _awayScore,
             });
           },
-          child: const Text('Save Prediction'),
+          child: Text(l10n.savePrediction),
         ),
       ],
     );
   }
 
   String _getPredictedOutcome() {
+    final l10n = AppLocalizations.of(context);
     if (_homeScore > _awayScore) {
-      return '${widget.match.homeTeamName} wins';
+      return l10n.teamWins(widget.match.homeTeamName);
     } else if (_awayScore > _homeScore) {
-      return '${widget.match.awayTeamName} wins';
+      return l10n.teamWins(widget.match.awayTeamName);
     } else {
-      return 'Draw';
+      return l10n.draw;
     }
   }
 
@@ -350,7 +354,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
             ),
             const SizedBox(width: 8),
             Text(
-              'AI thinking...',
+              AppLocalizations.of(context).aiThinking,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: Colors.purple.shade400,
               ),
@@ -368,7 +372,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
         color: Colors.purple.shade400,
       ),
       label: Text(
-        'AI Suggest',
+        AppLocalizations.of(context).aiSuggest,
         style: TextStyle(color: Colors.purple.shade400),
       ),
       style: OutlinedButton.styleFrom(
@@ -480,7 +484,7 @@ class QuickPredictionButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
           ),
           child: Text(
-            'Your prediction: ${prediction!.predictionDisplay}',
+            AppLocalizations.of(context).yourPredictionDisplay(prediction!.predictionDisplay),
             style: theme.textTheme.bodySmall?.copyWith(
               color: colorScheme.onPrimaryContainer,
               fontWeight: FontWeight.w500,
@@ -528,7 +532,7 @@ class QuickPredictionButton extends StatelessWidget {
     return TextButton.icon(
       onPressed: () => _showPredictionDialog(context),
       icon: const Icon(Icons.sports_soccer, size: 16),
-      label: const Text('Predict'),
+      label: Text(AppLocalizations.of(context).predict),
       style: TextButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       ),

@@ -4787,6 +4787,618 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'An unexpected error occurred. Please restart the app.'**
   String get unexpectedErrorMessage;
+
+  /// Title for new chat bottom sheet
+  ///
+  /// In en, this message translates to:
+  /// **'New Chat'**
+  String get newChat;
+
+  /// Tab label for team chat
+  ///
+  /// In en, this message translates to:
+  /// **'Team'**
+  String get team;
+
+  /// Label for group name input field
+  ///
+  /// In en, this message translates to:
+  /// **'Group Name'**
+  String get groupName;
+
+  /// Label for optional description input field
+  ///
+  /// In en, this message translates to:
+  /// **'Description (optional)'**
+  String get descriptionOptional;
+
+  /// Hint text for search friends input in group chat creation
+  ///
+  /// In en, this message translates to:
+  /// **'Search friends to add...'**
+  String get searchFriendsToAdd;
+
+  /// Button label to create a group chat
+  ///
+  /// In en, this message translates to:
+  /// **'Create Group'**
+  String get createGroup;
+
+  /// Label for team name input field
+  ///
+  /// In en, this message translates to:
+  /// **'Team Name'**
+  String get teamName;
+
+  /// Label for optional team description input field
+  ///
+  /// In en, this message translates to:
+  /// **'Team Description (optional)'**
+  String get teamDescriptionOptional;
+
+  /// Hint text for search friends input in team chat creation
+  ///
+  /// In en, this message translates to:
+  /// **'Search friends to add to team...'**
+  String get searchFriendsToAddToTeam;
+
+  /// Button label to create a team chat
+  ///
+  /// In en, this message translates to:
+  /// **'Create Team'**
+  String get createTeam;
+
+  /// Error message when friends list fails to load
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load friends: {error}'**
+  String failedToLoadFriends(String error);
+
+  /// Error message when creating a direct chat fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to create direct chat: {error}'**
+  String failedToCreateDirectChat(String error);
+
+  /// Error message when creating a group chat fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to create group chat: {error}'**
+  String failedToCreateGroupChat(String error);
+
+  /// Error message when creating a team chat fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to create team chat: {error}'**
+  String failedToCreateTeamChat(String error);
+
+  /// Confirmation message for clearing chat history
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to clear all messages in this chat? This action cannot be undone.'**
+  String get clearChatHistoryConfirmation;
+
+  /// Confirmation message for leaving a chat
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to leave this chat?'**
+  String get leaveChatConfirmation;
+
+  /// Button label to leave a chat
+  ///
+  /// In en, this message translates to:
+  /// **'Leave'**
+  String get leave;
+
+  /// Confirmation message for unblocking a user
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to unblock this user? They will be able to message you again.'**
+  String get unblockUserConfirmation;
+
+  /// Title for add members bottom sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Add Members'**
+  String get addMembers;
+
+  /// Subtitle text in add members sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Select a friend to add to this chat'**
+  String get selectFriendToAdd;
+
+  /// Message when no friends are available to add
+  ///
+  /// In en, this message translates to:
+  /// **'No friends to add'**
+  String get noFriendsToAdd;
+
+  /// Message when all friends are already chat members
+  ///
+  /// In en, this message translates to:
+  /// **'All your friends are already in this chat'**
+  String get allFriendsAlreadyInChat;
+
+  /// Success message when a member is added to chat
+  ///
+  /// In en, this message translates to:
+  /// **'{name} added to chat'**
+  String memberAddedToChat(String name);
+
+  /// Error message when adding a member to chat fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to add {name}'**
+  String failedToAddMember(String name);
+
+  /// Edit profile screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Profile'**
+  String get editProfile;
+
+  /// Snackbar when user tries to select more than 5 teams
+  ///
+  /// In en, this message translates to:
+  /// **'You can select up to 5 favorite teams'**
+  String get maxFavoriteTeamsMessage;
+
+  /// Success snackbar after profile update
+  ///
+  /// In en, this message translates to:
+  /// **'Profile updated successfully!'**
+  String get profileUpdatedSuccessfully;
+
+  /// Error snackbar when profile update fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to update profile. Please try again.'**
+  String get failedToUpdateProfile;
+
+  /// Error snackbar when profile update fails with details
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to update profile: {error}'**
+  String failedToUpdateProfileError(String error);
+
+  /// Remove friend dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Friend'**
+  String get removeFriend;
+
+  /// Remove friend confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to remove {name} from your friends?'**
+  String removeFriendConfirm(String name);
+
+  /// Block user dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Block User'**
+  String get blockUser;
+
+  /// Block user confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to block {name}? They will be removed from your friends and won\'t be able to contact you.'**
+  String blockUserConfirm(String name);
+
+  /// Block button label
+  ///
+  /// In en, this message translates to:
+  /// **'Block'**
+  String get block;
+
+  /// Snackbar when AI predictions are not available
+  ///
+  /// In en, this message translates to:
+  /// **'AI predictions not available'**
+  String get aiPredictionsNotAvailable;
+
+  /// Snackbar when AI suggestion fails
+  ///
+  /// In en, this message translates to:
+  /// **'AI suggestion failed: {error}'**
+  String aiSuggestionFailed(String error);
+
+  /// Dialog title when editing existing prediction
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Prediction'**
+  String get editPrediction;
+
+  /// Dialog title when making new prediction
+  ///
+  /// In en, this message translates to:
+  /// **'Make Your Prediction'**
+  String get makeYourPrediction;
+
+  /// Versus label between teams
+  ///
+  /// In en, this message translates to:
+  /// **'VS'**
+  String get vs;
+
+  /// AI provider attribution
+  ///
+  /// In en, this message translates to:
+  /// **'Powered by {provider}'**
+  String poweredByProvider(String provider);
+
+  /// Save prediction button
+  ///
+  /// In en, this message translates to:
+  /// **'Save Prediction'**
+  String get savePrediction;
+
+  /// Predicted outcome showing winning team
+  ///
+  /// In en, this message translates to:
+  /// **'{team} wins'**
+  String teamWins(String team);
+
+  /// Label while AI is generating suggestion
+  ///
+  /// In en, this message translates to:
+  /// **'AI thinking...'**
+  String get aiThinking;
+
+  /// AI suggest button label
+  ///
+  /// In en, this message translates to:
+  /// **'AI Suggest'**
+  String get aiSuggest;
+
+  /// Shows user prediction on live match
+  ///
+  /// In en, this message translates to:
+  /// **'Your prediction: {prediction}'**
+  String yourPredictionDisplay(String prediction);
+
+  /// Predict button label
+  ///
+  /// In en, this message translates to:
+  /// **'Predict'**
+  String get predict;
+
+  /// Fallback text for unknown values
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get unknown;
+
+  /// Venue claims admin action title
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Claims'**
+  String get venueClaims;
+
+  /// Venue claims admin action description
+  ///
+  /// In en, this message translates to:
+  /// **'Review pending venue claims & disputes'**
+  String get venueClaimsDesc;
+
+  /// Error snackbar when loading data fails
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading data: {error}'**
+  String errorLoadingData(String error);
+
+  /// Generic error with message
+  ///
+  /// In en, this message translates to:
+  /// **'Error: {error}'**
+  String errorWithMessage(String error);
+
+  /// Claims tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Claims'**
+  String get claimsTab;
+
+  /// Disputes tab label
+  ///
+  /// In en, this message translates to:
+  /// **'Disputes'**
+  String get disputesTab;
+
+  /// Empty state title for no pending claims
+  ///
+  /// In en, this message translates to:
+  /// **'No Pending Claims'**
+  String get noPendingClaims;
+
+  /// Empty state subtitle for no pending claims
+  ///
+  /// In en, this message translates to:
+  /// **'All venue claims have been reviewed.'**
+  String get allVenueClaimsReviewed;
+
+  /// Empty state title for no pending disputes
+  ///
+  /// In en, this message translates to:
+  /// **'No Pending Disputes'**
+  String get noPendingDisputes;
+
+  /// Empty state subtitle for no pending disputes
+  ///
+  /// In en, this message translates to:
+  /// **'All venue disputes have been reviewed.'**
+  String get allVenueDisputesReviewed;
+
+  /// Reject button label
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get reject;
+
+  /// Approve button label
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get approve;
+
+  /// Reject venue claim confirmation title
+  ///
+  /// In en, this message translates to:
+  /// **'Reject {name}?'**
+  String rejectVenueConfirm(String name);
+
+  /// Hint for rejection reason text field
+  ///
+  /// In en, this message translates to:
+  /// **'Rejection reason (optional)'**
+  String get rejectionReasonHint;
+
+  /// Snackbar when claim is approved
+  ///
+  /// In en, this message translates to:
+  /// **'Claim approved successfully.'**
+  String get claimApprovedSuccessfully;
+
+  /// Snackbar when claim is rejected
+  ///
+  /// In en, this message translates to:
+  /// **'Claim rejected successfully.'**
+  String get claimRejectedSuccessfully;
+
+  /// Dispute card title with reason
+  ///
+  /// In en, this message translates to:
+  /// **'Dispute: {reason}'**
+  String disputeLabel(String reason);
+
+  /// Uphold dispute button
+  ///
+  /// In en, this message translates to:
+  /// **'Uphold'**
+  String get upholdAction;
+
+  /// Dispute resolution snackbar
+  ///
+  /// In en, this message translates to:
+  /// **'Dispute {resolution}.'**
+  String disputeResolution(String resolution);
+
+  /// Warning message on admin notifications screen
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcast notifications are sent to all users in the selected audience. Use sparingly.'**
+  String get broadcastWarning;
+
+  /// Target audience section title
+  ///
+  /// In en, this message translates to:
+  /// **'Target Audience'**
+  String get targetAudience;
+
+  /// Select team section title
+  ///
+  /// In en, this message translates to:
+  /// **'Select Team'**
+  String get selectTeam;
+
+  /// Validation when no team selected
+  ///
+  /// In en, this message translates to:
+  /// **'Please select a team'**
+  String get pleaseSelectATeam;
+
+  /// Notification content section title
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Content'**
+  String get notificationContentLabel;
+
+  /// Title field label
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get titleLabel;
+
+  /// Title field hint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter notification title'**
+  String get enterNotificationTitle;
+
+  /// Title validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a title'**
+  String get pleaseEnterTitle;
+
+  /// Title minimum length validation
+  ///
+  /// In en, this message translates to:
+  /// **'Title must be at least 3 characters'**
+  String get titleMinLength;
+
+  /// Message field label
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get messageLabel;
+
+  /// Message field hint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter notification message'**
+  String get enterNotificationMessage;
+
+  /// Message validation error
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a message'**
+  String get pleaseEnterMessage;
+
+  /// Message minimum length validation
+  ///
+  /// In en, this message translates to:
+  /// **'Message must be at least 10 characters'**
+  String get messageMinLength;
+
+  /// Preview section title
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get previewLabel;
+
+  /// Placeholder for notification title in preview
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Title'**
+  String get notificationTitlePlaceholder;
+
+  /// Placeholder for notification body in preview
+  ///
+  /// In en, this message translates to:
+  /// **'Your notification message will appear here...'**
+  String get notificationPreviewPlaceholder;
+
+  /// Sending button label
+  ///
+  /// In en, this message translates to:
+  /// **'Sending...'**
+  String get sending;
+
+  /// Send notification button label
+  ///
+  /// In en, this message translates to:
+  /// **'Send Notification'**
+  String get sendNotification;
+
+  /// Confirm send dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Send'**
+  String get confirmSend;
+
+  /// Confirm send dialog message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to send this notification?'**
+  String get confirmSendNotification;
+
+  /// Success snackbar after sending notification
+  ///
+  /// In en, this message translates to:
+  /// **'Notification sent successfully'**
+  String get notificationSentSuccessfully;
+
+  /// Error snackbar when notification sending fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send notification'**
+  String get failedToSendNotification;
+
+  /// Recent broadcasts section title
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Broadcasts'**
+  String get recentBroadcasts;
+
+  /// Placeholder for recent broadcasts
+  ///
+  /// In en, this message translates to:
+  /// **'Recent broadcast history will appear here'**
+  String get recentBroadcastHistory;
+
+  /// All users audience option
+  ///
+  /// In en, this message translates to:
+  /// **'All Users'**
+  String get allUsersAudience;
+
+  /// All users audience description
+  ///
+  /// In en, this message translates to:
+  /// **'Send to everyone'**
+  String get sendToEveryone;
+
+  /// Premium users audience option
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Users'**
+  String get premiumUsersAudience;
+
+  /// Premium users audience description
+  ///
+  /// In en, this message translates to:
+  /// **'Superfan Pass holders only'**
+  String get superfanPassHoldersOnly;
+
+  /// Team fans audience option
+  ///
+  /// In en, this message translates to:
+  /// **'Team Fans'**
+  String get teamFansAudience;
+
+  /// Team fans audience description
+  ///
+  /// In en, this message translates to:
+  /// **'Users who follow a specific team'**
+  String get usersFollowSpecificTeam;
+
+  /// Active users audience option
+  ///
+  /// In en, this message translates to:
+  /// **'Active Users'**
+  String get activeUsersAudience;
+
+  /// Active users audience description
+  ///
+  /// In en, this message translates to:
+  /// **'Users active in the last 7 days'**
+  String get usersActiveLast7Days;
+
+  /// Audience label in confirm dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Audience'**
+  String get audienceLabel;
+
+  /// Time label for now
+  ///
+  /// In en, this message translates to:
+  /// **'now'**
+  String get nowLabel;
+
+  /// Team fans audience label with selected team
+  ///
+  /// In en, this message translates to:
+  /// **'Team Fans ({team})'**
+  String teamFansWithTeam(String team);
+
+  /// Active users 7 days audience label
+  ///
+  /// In en, this message translates to:
+  /// **'Active Users (7 days)'**
+  String get activeUsers7Days;
 }
 
 class _AppLocalizationsDelegate

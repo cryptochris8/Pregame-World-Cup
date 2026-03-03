@@ -7,6 +7,7 @@ import '../../../../injection_container.dart';
 import '../../../messaging/domain/services/file_upload_service.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../widgets/edit_profile_photo_section.dart';
 import '../widgets/edit_profile_basic_info_section.dart';
 import '../widgets/edit_profile_favorite_teams_section.dart';
@@ -112,9 +113,9 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           const SizedBox(width: 12),
           TeamLogoHelper.getPregameLogo(height: 28),
           const SizedBox(width: 12),
-          const Text(
-            'Edit Profile',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).editProfile,
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 24,
               color: Colors.white,
@@ -148,9 +149,9 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             AlwaysStoppedAnimation<Color>(Colors.white),
                       ),
                     )
-                  : const Text(
-                      'Save',
-                      style: TextStyle(
+                  : Text(
+                      AppLocalizations.of(context).save,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
                       ),
@@ -255,7 +256,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           });
         },
         onMaxReached: () {
-          _showErrorSnackBar('You can select up to 5 favorite teams');
+          _showErrorSnackBar(AppLocalizations.of(context).maxFavoriteTeamsMessage);
         },
       ),
     );
@@ -292,13 +293,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       if (mounted) {
         if (success) {
           Navigator.pop(context, updatedProfile);
-          _showSuccessSnackBar('Profile updated successfully!');
+          _showSuccessSnackBar(AppLocalizations.of(context).profileUpdatedSuccessfully);
         } else {
-          _showErrorSnackBar('Failed to update profile. Please try again.');
+          _showErrorSnackBar(AppLocalizations.of(context).failedToUpdateProfile);
         }
       }
     } catch (e) {
-      _showErrorSnackBar('Failed to update profile: $e');
+      _showErrorSnackBar(AppLocalizations.of(context).failedToUpdateProfileError(e.toString()));
     } finally {
       if (mounted) {
         setState(() {

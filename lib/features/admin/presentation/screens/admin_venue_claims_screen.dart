@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import '../../../../l10n/app_localizations.dart';
 
 class AdminVenueClaimsScreen extends StatefulWidget {
   const AdminVenueClaimsScreen({super.key});
@@ -64,7 +65,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
       setState(() => _isLoading = false);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading data: $e'), backgroundColor: Colors.red),
+          SnackBar(content: Text(AppLocalizations.of(context).errorLoadingData(e.toString())), backgroundColor: Colors.red),
         );
       }
     }
@@ -76,7 +77,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Venue Claims'),
+        title: Text(AppLocalizations.of(context).venueClaims),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
@@ -90,7 +91,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('Claims'),
+                  Text(AppLocalizations.of(context).claimsTab),
                   if (_pendingClaims.isNotEmpty) ...[
                     const SizedBox(width: 6),
                     _buildBadge(_pendingClaims.length),
@@ -102,7 +103,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('Disputes'),
+                  Text(AppLocalizations.of(context).disputesTab),
                   if (_pendingDisputes.isNotEmpty) ...[
                     const SizedBox(width: 6),
                     _buildBadge(_pendingDisputes.length),
@@ -147,9 +148,9 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
           children: [
             Icon(Icons.check_circle_outline, size: 64, color: theme.colorScheme.primary),
             const SizedBox(height: 16),
-            Text('No Pending Claims', style: theme.textTheme.titleMedium),
+            Text(AppLocalizations.of(context).noPendingClaims, style: theme.textTheme.titleMedium),
             const SizedBox(height: 8),
-            Text('All venue claims have been reviewed.', style: theme.textTheme.bodyMedium),
+            Text(AppLocalizations.of(context).allVenueClaimsReviewed, style: theme.textTheme.bodyMedium),
           ],
         ),
       );
@@ -167,7 +168,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
 
   Widget _buildClaimCard(ThemeData theme, Map<String, dynamic> claim) {
     final venueId = claim['docId'] as String;
-    final businessName = claim['businessName'] as String? ?? 'Unknown';
+    final businessName = claim['businessName'] as String? ?? AppLocalizations.of(context).unknown;
     final ownerRole = claim['ownerRole'] as String? ?? '';
     final contactEmail = claim['contactEmail'] as String? ?? '';
     final contactPhone = claim['contactPhone'] as String? ?? '';
@@ -225,7 +226,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
                   child: OutlinedButton.icon(
                     onPressed: () => _showRejectDialog(venueId, businessName),
                     icon: const Icon(Icons.close, size: 18),
-                    label: const Text('Reject'),
+                    label: Text(AppLocalizations.of(context).reject),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Colors.red,
                       side: const BorderSide(color: Colors.red),
@@ -237,7 +238,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
                   child: ElevatedButton.icon(
                     onPressed: () => _reviewClaim(venueId, 'approve', ''),
                     icon: const Icon(Icons.check, size: 18),
-                    label: const Text('Approve'),
+                    label: Text(AppLocalizations.of(context).approve),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
@@ -273,19 +274,19 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: Text('Reject $businessName?'),
+        title: Text(AppLocalizations.of(context).rejectVenueConfirm(businessName)),
         content: TextField(
           controller: notesController,
           maxLines: 3,
-          decoration: const InputDecoration(
-            hintText: 'Rejection reason (optional)',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            hintText: AppLocalizations.of(context).rejectionReasonHint,
+            border: const OutlineInputBorder(),
           ),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context).cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -293,7 +294,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
               _reviewClaim(venueId, 'reject', notesController.text);
             },
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red, foregroundColor: Colors.white),
-            child: const Text('Reject'),
+            child: Text(AppLocalizations.of(context).reject),
           ),
         ],
       ),
@@ -312,7 +313,9 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Claim ${action == 'approve' ? 'approved' : 'rejected'} successfully.'),
+            content: Text(action == 'approve'
+                ? AppLocalizations.of(context).claimApprovedSuccessfully
+                : AppLocalizations.of(context).claimRejectedSuccessfully),
             backgroundColor: action == 'approve' ? Colors.green : Colors.orange,
           ),
         );
@@ -322,7 +325,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e'), backgroundColor: Colors.red),
+          SnackBar(content: Text(AppLocalizations.of(context).errorWithMessage(e.toString())), backgroundColor: Colors.red),
         );
       }
     }
@@ -336,9 +339,9 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
           children: [
             Icon(Icons.check_circle_outline, size: 64, color: theme.colorScheme.primary),
             const SizedBox(height: 16),
-            Text('No Pending Disputes', style: theme.textTheme.titleMedium),
+            Text(AppLocalizations.of(context).noPendingDisputes, style: theme.textTheme.titleMedium),
             const SizedBox(height: 8),
-            Text('All venue disputes have been reviewed.', style: theme.textTheme.bodyMedium),
+            Text(AppLocalizations.of(context).allVenueDisputesReviewed, style: theme.textTheme.bodyMedium),
           ],
         ),
       );
@@ -377,7 +380,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    'Dispute: $reason',
+                    AppLocalizations.of(context).disputeLabel(reason),
                     style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -400,7 +403,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
                 Expanded(
                   child: OutlinedButton(
                     onPressed: () => _resolveDispute(dispute['docId'] as String, 'dismissed'),
-                    child: const Text('Dismiss'),
+                    child: Text(AppLocalizations.of(context).dismiss),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -411,7 +414,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
                       backgroundColor: Colors.orange,
                       foregroundColor: Colors.white,
                     ),
-                    child: const Text('Uphold'),
+                    child: Text(AppLocalizations.of(context).upholdAction),
                   ),
                 ),
               ],
@@ -435,7 +438,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Dispute $resolution.'),
+            content: Text(AppLocalizations.of(context).disputeResolution(resolution)),
             backgroundColor: resolution == 'upheld' ? Colors.orange : Colors.grey,
           ),
         );
@@ -445,7 +448,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e'), backgroundColor: Colors.red),
+          SnackBar(content: Text(AppLocalizations.of(context).errorWithMessage(e.toString())), backgroundColor: Colors.red),
         );
       }
     }

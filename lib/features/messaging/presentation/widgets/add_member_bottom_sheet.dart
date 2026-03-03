@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Bottom sheet for adding members to a group chat.
 /// Shows a list of friends who are not already in the chat.
@@ -75,7 +76,7 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
       if (success) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('${friend.displayName} added to chat'),
+            content: Text(AppLocalizations.of(context).memberAddedToChat(friend.displayName)),
             backgroundColor: Colors.green,
           ),
         );
@@ -83,7 +84,7 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to add ${friend.displayName}'),
+            content: Text(AppLocalizations.of(context).failedToAddMember(friend.displayName)),
             backgroundColor: Colors.red,
           ),
         );
@@ -101,9 +102,9 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
         children: [
           Row(
             children: [
-              const Text(
-                'Add Members',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).addMembers,
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -117,9 +118,9 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
             ],
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Select a friend to add to this chat',
-            style: TextStyle(color: Colors.white70, fontSize: 14),
+          Text(
+            AppLocalizations.of(context).selectFriendToAdd,
+            style: const TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const Divider(color: Colors.white24),
           const SizedBox(height: 8),
@@ -138,15 +139,15 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
                                 size: 64,
                                 color: Colors.white.withValues(alpha:0.3)),
                             const SizedBox(height: 16),
-                            const Text(
-                              'No friends to add',
-                              style: TextStyle(
+                            Text(
+                              AppLocalizations.of(context).noFriendsToAdd,
+                              style: const TextStyle(
                                   color: Colors.white70, fontSize: 16),
                             ),
                             const SizedBox(height: 8),
-                            const Text(
-                              'All your friends are already in this chat',
-                              style: TextStyle(
+                            Text(
+                              AppLocalizations.of(context).allFriendsAlreadyInChat,
+                              style: const TextStyle(
                                   color: Colors.white54, fontSize: 14),
                               textAlign: TextAlign.center,
                             ),
