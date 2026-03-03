@@ -216,27 +216,6 @@ class TestableAuthService extends AuthService {
     }
   }
 
-  @override
-  Future<UserCredential?> createOrSignInTestUser() async {
-    const testEmail = 'test@pregame.dev';
-    const testPassword = 'testuser123';
-
-    try {
-      return await signInWithEmailAndPassword(
-        email: testEmail,
-        password: testPassword,
-      );
-    } catch (e) {
-      try {
-        return await signUpWithEmailAndPassword(
-          email: testEmail,
-          password: testPassword,
-        );
-      } catch (createError) {
-        rethrow;
-      }
-    }
-  }
 }
 
 void main() {
@@ -1160,80 +1139,6 @@ void main() {
       final savedProfile = captured.first as UserProfile;
       expect(savedProfile.email, equals('email@example.com'));
       expect(savedProfile.userId, equals('uid_email'));
-    });
-  });
-
-  // ========================================================
-  // CREATE OR SIGN IN TEST USER
-  // ========================================================
-
-  group('createOrSignInTestUser', () {
-    test('signs in with test credentials when user already exists', () async {
-      final mockCredential = MockUserCredential();
-      when(() => mockAuth.signInWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).thenAnswer((_) async => mockCredential);
-
-      final result = await authService.createOrSignInTestUser();
-
-      expect(result, isNotNull);
-      verify(() => mockAuth.signInWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).called(1);
-    });
-
-    test('creates test user when sign in fails', () async {
-      final mockCredential = MockUserCredential();
-      when(() => mockCredential.user).thenReturn(mockUser);
-      when(() => mockUser.sendEmailVerification()).thenAnswer((_) async {});
-
-      // signIn fails first
-      when(() => mockAuth.signInWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).thenThrow(TestFirebaseAuthException(
-        code: 'user-not-found',
-        message: 'No user found.',
-      ));
-
-      // Then signUp succeeds
-      when(() => mockAuth.createUserWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).thenAnswer((_) async => mockCredential);
-
-      final result = await authService.createOrSignInTestUser();
-
-      expect(result, isNotNull);
-      verify(() => mockAuth.createUserWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).called(1);
-    });
-
-    test('rethrows when both sign in and sign up fail', () async {
-      when(() => mockAuth.signInWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).thenThrow(TestFirebaseAuthException(
-        code: 'user-not-found',
-        message: 'No user found.',
-      ));
-
-      when(() => mockAuth.createUserWithEmailAndPassword(
-            email: 'test@pregame.dev',
-            password: 'testuser123',
-          )).thenThrow(TestFirebaseAuthException(
-        code: 'network-request-failed',
-        message: 'No internet connection.',
-      ));
-
-      expect(
-        () => authService.createOrSignInTestUser(),
-        throwsA(isA<Exception>()),
-      );
     });
   });
 

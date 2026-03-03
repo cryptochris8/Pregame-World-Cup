@@ -104,19 +104,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       // Check if widget is still mounted before proceeding
       if (!mounted) return;
       
-      // DISABLED: Automatic test user creation - users should see login screen
-      // In development mode, create a test user if no user is authenticated
-      // if (kDebugMode && FirebaseAuth.instance.currentUser == null) {
-      //   LoggingService.info('Development mode: Creating test user for social features', tag: 'MainNavigation');
-      //   try {
-      //     final authService = AuthService();
-      //     await authService.createOrSignInTestUser();
-      //     LoggingService.info('Test user created/signed in successfully', tag: 'MainNavigation');
-      //   } catch (e) {
-      //     LoggingService.error('Failed to create test user: $e', tag: 'MainNavigation');
-      //   }
-      // }
-      
       await _notificationService.initialize();
       if (!mounted) return; // Check again after async operation
       

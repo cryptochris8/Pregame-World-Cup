@@ -41,9 +41,54 @@ class ProfanityFilterService {
   /// Severe profanity that should be auto-rejected
   static const Set<String> _severeProfanity = {
     // Racial slurs and hate speech - auto-reject
-    'n-word-variants', // Placeholder - actual words in production
-    // Extreme violence terms
-    // Terrorist content terms
+    'nigger',
+    'niggers',
+    'nigga',
+    'niggas',
+    'kike',
+    'kikes',
+    'spic',
+    'spics',
+    'wetback',
+    'wetbacks',
+    'chink',
+    'chinks',
+    'gook',
+    'gooks',
+    'beaner',
+    'beaners',
+    'raghead',
+    'ragheads',
+    'towelhead',
+    'towelheads',
+    'coon',
+    'coons',
+    'darkie',
+    'darkies',
+    'redskin',
+    'redskins',
+    'zipperhead',
+    // Extreme violence / terrorism
+    'kill yourself',
+    'kys',
+    'go die',
+    'hang yourself',
+    'slit your wrists',
+    'school shooting',
+    'mass shooting',
+    'jihad',
+    'allahu akbar',
+    'heil hitler',
+    'sieg heil',
+    'white power',
+    'gas the',
+    'lynch',
+    // Spanish/Portuguese hate speech
+    'negro de mierda',
+    'sudaca',
+    'indio de mierda',
+    'macaco',
+    'macaca',
   };
 
   /// Standard profanity list (common words to filter)

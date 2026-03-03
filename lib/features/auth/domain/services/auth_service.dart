@@ -215,32 +215,6 @@ class AuthService {
     }
   }
 
-  // Development helper: Create or sign in test user
-  Future<UserCredential?> createOrSignInTestUser() async {
-    const testEmail = 'test@pregame.dev';
-    const testPassword = 'testuser123';
-    
-    try {
-      // Try to sign in first
-      return await signInWithEmailAndPassword(
-        email: testEmail,
-        password: testPassword,
-      );
-    } catch (e) {
-      // If sign in fails, try to create the user
-      try {
-        LoggingService.info('Creating test user for development', tag: 'AuthService');
-        return await signUpWithEmailAndPassword(
-          email: testEmail,
-          password: testPassword,
-        );
-      } catch (createError) {
-        LoggingService.error('Failed to create test user: $createError', tag: 'AuthService');
-        rethrow;
-      }
-    }
-  }
-
   // Get user's favorite teams
   Future<List<String>> getFavoriteTeams(String userId) async {
     try {
