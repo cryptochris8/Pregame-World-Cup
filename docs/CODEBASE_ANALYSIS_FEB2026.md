@@ -67,7 +67,7 @@
 - **Stripe payment system**: 3 webhook endpoints, lazy initialization (v2 Cloud Run fix), idempotency helpers
 - **All 427 backend tests passing** (10 Jest test suites)
 - **TypeScript compiles cleanly** with strict mode
-- Price tiers: Fan Pass $14.99, Superfan $29.99, Venue Premium $99
+- Price tiers: Fan Pass $14.99, Superfan $29.99, Venue Premium $499
 - Rate limiting implemented on HTTP functions
 - Only issue: `getNearbyVenuesHttp` has PLACES_API_KEY conflict
 
@@ -177,7 +177,7 @@ Android falls back to Stripe browser checkout without RevenueCat - poor UX and p
 ### Price Configuration
 - Fan Pass: $14.99 (`price_1SnYT9LmA106gMF6SK1oDaWE`)
 - Superfan Pass: $29.99 (`price_1SnYi4LmA106gMF6h5yRgzLL`)
-- Venue Premium: $99 (`price_1SnYm5LmA106gMF63sYAuEB5`) - Stripe only (B2B)
+- Venue Premium: $499 (`price_1SnYm5LmA106gMF63sYAuEB5`) - Stripe only (B2B)
 
 ---
 

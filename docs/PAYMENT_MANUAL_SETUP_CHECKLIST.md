@@ -119,7 +119,7 @@ The app has three hardcoded Stripe Price IDs. These must correspond to real prod
    |---------|------|--------|-------------------|
    | Fan Pass | One-time payment | $14.99 | `price_1SnYT9LmA106gMF6SK1oDaWE` |
    | Superfan Pass | One-time payment | $29.99 | `price_1SnYi4LmA106gMF6h5yRgzLL` |
-   | Venue Premium | One-time payment | $99.00 | `price_1SnYm5LmA106gMF63sYAuEB5` |
+   | Venue Premium | One-time payment | $499.00 | `price_1SnYm5LmA106gMF63sYAuEB5` |
 
 3. Click each product and check:
    - The **Price ID** matches the value in the table above

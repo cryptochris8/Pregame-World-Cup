@@ -8,7 +8,7 @@
 
 - **Stripe** (web/backend): Checkout sessions, webhooks, subscription management
 - **RevenueCat** (native iOS/Android): In-app purchases
-- **Products**: Fan Pass ($14.99), Superfan Pass ($29.99), Venue Premium ($99)
+- **Products**: Fan Pass ($14.99), Superfan Pass ($29.99), Venue Premium ($499)
 - **Flutter**: Facade pattern via `WorldCupPaymentService` → delegates to `PaymentAccessService`, `PaymentCheckoutService`, `PaymentHistoryService`
 - **Cloud Functions**: `stripe-simple.ts` (648 lines), `world-cup-payments.ts` (713 lines), `watch-party-payments.ts` (399 lines)
 - **Feature Gating**: `FanPassFeatureGate` widget for premium content

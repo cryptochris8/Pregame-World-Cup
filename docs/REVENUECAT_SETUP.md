@@ -6,7 +6,7 @@ This guide covers setting up RevenueCat for native in-app purchases in the Prega
 
 - **Fan Pass**: $14.99 (one-time purchase)
 - **Superfan Pass**: $29.99 (one-time purchase)
-- **Venue Premium**: $99.00 (stays on Stripe - B2B, exempt from IAP rules)
+- **Venue Premium**: $499.00 (stays on Stripe - B2B, exempt from IAP rules)
 
 ---
 

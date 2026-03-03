@@ -29,7 +29,7 @@
 | **AI-Powered Insights** | OpenAI + Claude integration for match analysis and predictions |
 | **Social Features** | Friends system, messaging with voice/video, activity feeds |
 | **Watch Party Network** | Create/discover viewing events with venue integration |
-| **Dual Monetization** | Fan Pass ($14.99), Superfan Pass ($29.99), Venue Premium ($99/mo) |
+| **Dual Monetization** | Fan Pass ($14.99), Superfan Pass ($29.99), Venue Premium ($499) |
 | **Production-Ready** | Firebase backend, RevenueCat payments, 355+ Dart files, clean architecture |
 
 ### Market Opportunity

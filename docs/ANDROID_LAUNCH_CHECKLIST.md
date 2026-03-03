@@ -102,7 +102,7 @@ The Android build infrastructure is fully configured (signing, CI/CD, Firebase, 
 
 ## Notes
 
-- Venue Premium ($99) stays on Stripe (B2B, exempt from IAP rules)
+- Venue Premium ($499) stays on Stripe (B2B, exempt from IAP rules)
 - If RevenueCat is not configured, the app gracefully falls back to Stripe browser checkout
 - The Codemagic Android workflow automatically publishes to Play Store internal track on push to main
 - All API keys are injected via `--dart-define` at build time, not hardcoded in the app

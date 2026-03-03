@@ -141,9 +141,7 @@ The payment system uses a **dual-billing architecture**:
 |---|---|---|---|
 | Fan Pass | $14.99 | One-time | RevenueCat (native IAP) or Stripe (browser fallback) |
 | Superfan Pass | $29.99 | One-time | RevenueCat (native IAP) or Stripe (browser fallback) |
-| Venue Premium | $99 (docs) / $499 (code) | One-time | Stripe only |
-
-**IMPORTANT PRICE DISCREPANCY**: MEMORY.md and PAYMENT_MANUAL_SETUP_CHECKLIST.md say Venue Premium is $99, but ALL code files (`stripe-simple.ts`, `world-cup-payments.ts`, `payment_models.dart`) specify $499.00 (49900 cents). The Stripe Price ID in the Stripe dashboard is the ground truth. This must be reconciled.
+| Venue Premium | $499 | One-time | Stripe only |
 
 ### What's Working
 
@@ -501,7 +499,7 @@ When RevenueCat is not configured, the app falls back to Stripe browser checkout
 5. Get the production API key (`goog_...`) from RevenueCat
 6. Set `REVENUECAT_ANDROID_API_KEY` in Codemagic vault with the real key
 
-**Note:** Venue Premium ($99/$499) stays on Stripe only (B2B, exempt from IAP rules).
+**Note:** Venue Premium ($499) stays on Stripe only (B2B, exempt from IAP rules).
 
 ### Store Listing Preparation
 
@@ -674,7 +672,7 @@ publishing:
 - [ ] Set up `assetlinks.json` for Android App Links
 
 #### Payment Systems
-- [ ] Reconcile Venue Premium price ($99 vs $499)
+- [x] Reconcile Venue Premium price -- confirmed $499 is correct, docs updated
 - [x] Add idempotency to `handleWatchPartyWebhook` -- DONE Feb 27
 - [ ] Run end-to-end payment tests (Stripe test mode)
 - [ ] Configure Firestore TTL policies on `expiresAt` field

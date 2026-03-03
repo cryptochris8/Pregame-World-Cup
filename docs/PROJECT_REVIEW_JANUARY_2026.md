@@ -64,7 +64,7 @@ This is a **full-stack sports fan ecosystem** built for FIFA World Cup 2026, con
 | **Free** | $0 | Basic schedule, venue discovery, notifications |
 | **Fan Pass** | $14.99 | Ad-free, advanced stats, custom alerts, social |
 | **Superfan Pass** | $29.99 | AI insights, exclusive content, priority features |
-| **Venue Premium** | $99/mo | Full venue portal, analytics, featured listing |
+| **Venue Premium** | $499 | Full venue portal, analytics, featured listing |
 
 ---
 
