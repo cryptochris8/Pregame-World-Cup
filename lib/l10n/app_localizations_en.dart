@@ -3411,4 +3411,54 @@ class AppLocalizationsEn extends AppLocalizations {
   String venuePortalWaitTimeMinutes(int minutes) {
     return '~${minutes}m';
   }
+
+  @override
+  String get selectFavoriteTeams => 'Select Favorite Teams';
+
+  @override
+  String get saveFavorites => 'Save Favorites';
+
+  @override
+  String get loadingFavoriteTeams => 'Loading your favorite teams...';
+
+  @override
+  String teamsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'teams',
+      one: 'team',
+    );
+    return '$count $_temp0 selected';
+  }
+
+  @override
+  String get favoriteTeamsSavedSynced => 'Favorite teams saved & synced!';
+
+  @override
+  String get favoriteTeamsSaved => 'Favorite teams saved!';
+
+  @override
+  String get errorSavingFavorites =>
+      'Error saving favorites. Please try again.';
+
+  @override
+  String get couldNotLoadFavorites =>
+      'Could not load saved favorites. You can still select teams below.';
+
+  @override
+  String get copaClearChat => 'Clear Chat';
+
+  @override
+  String get copaClearChatConfirm =>
+      'This will clear the conversation and start fresh. Continue?';
+
+  @override
+  String get copaThinking => 'Thinking...';
+
+  @override
+  String get copaHintText => 'Ask Copa about teams, matches, players...';
+
+  @override
+  String get copaClearTooltip => 'Clear chat';
 }

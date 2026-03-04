@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:pregame_world_cup/features/auth/presentation/screens/favorite_teams_screen.dart';
 import 'package:pregame_world_cup/features/auth/domain/services/auth_service.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 // ==================== MOCKS ====================
 
@@ -52,6 +53,8 @@ void main() {
   /// parent route) so that Navigator.pop works correctly during save.
   Widget buildTestWidgetWithNavigation() {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: Builder(
         builder: (context) {
           // Auto-navigate to FavoriteTeamsScreen after first build
@@ -71,8 +74,10 @@ void main() {
 
   /// Simple widget without navigation context (for rendering-only tests)
   Widget buildTestWidget() {
-    return const MaterialApp(
-      home: FavoriteTeamsScreen(),
+    return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: const FavoriteTeamsScreen(),
     );
   }
 
@@ -591,6 +596,8 @@ void main() {
 
       List<String>? popResult;
       await tester.pumpWidget(MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: Builder(
           builder: (context) => ElevatedButton(
             onPressed: () async {
@@ -627,6 +634,8 @@ void main() {
 
       List<String>? popResult;
       await tester.pumpWidget(MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: Builder(
           builder: (context) => ElevatedButton(
             onPressed: () async {

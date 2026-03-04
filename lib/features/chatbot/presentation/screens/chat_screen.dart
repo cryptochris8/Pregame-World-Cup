@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/chat_message.dart';
 import '../bloc/chatbot_cubit.dart';
 import '../widgets/chat_message_list_item.dart';
@@ -64,24 +65,25 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
   }
 
   void _showClearChatDialog() {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (dialogContext) => AlertDialog(
-        title: const Text('Clear Chat'),
-        content: const Text(
-          'This will clear the conversation and start fresh. Continue?',
+        title: Text(l10n.copaClearChat),
+        content: Text(
+          l10n.copaClearChatConfirm,
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dialogContext).pop(),
-            child: const Text('Cancel'),
+            child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
           ),
           TextButton(
             onPressed: () {
               Navigator.of(dialogContext).pop();
               context.read<ChatbotCubit>().clearChat();
             },
-            child: const Text('Clear'),
+            child: Text(l10n.copaClearChat),
           ),
         ],
       ),
@@ -112,7 +114,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
                   if (isLoading && index == 0) {
                     return ChatMessageListItem(
                       message: ChatMessage(
-                        text: 'Thinking...',
+                        text: AppLocalizations.of(context)!.copaThinking,
                         type: ChatMessageType.thinking,
                       ),
                     );
@@ -178,7 +180,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
                 ),
                 IconButton(
                   icon: const Icon(Icons.delete_outline),
-                  tooltip: 'Clear chat',
+                  tooltip: AppLocalizations.of(context)!.copaClearTooltip,
                   onPressed: _showClearChatDialog,
                 ),
               ],
@@ -207,7 +209,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
               Icons.delete_outline,
               color: Theme.of(context).colorScheme.onPrimary,
             ),
-            tooltip: 'Clear chat',
+            tooltip: AppLocalizations.of(context)!.copaClearTooltip,
             onPressed: _showClearChatDialog,
           ),
         ],
@@ -233,8 +235,8 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
                   child: TextField(
                     controller: _textController,
                     onSubmitted: isLoading ? null : _handleSubmitted,
-                    decoration: const InputDecoration.collapsed(
-                      hintText: 'Ask Copa about teams, matches, players...',
+                    decoration: InputDecoration.collapsed(
+                      hintText: AppLocalizations.of(context)!.copaHintText,
                     ),
                     enabled: !isLoading,
                   ),

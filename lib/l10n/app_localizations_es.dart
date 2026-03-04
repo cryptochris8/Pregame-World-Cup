@@ -3458,4 +3458,62 @@ class AppLocalizationsEs extends AppLocalizations {
   String venuePortalWaitTimeMinutes(int minutes) {
     return '~${minutes}m';
   }
+
+  @override
+  String get selectFavoriteTeams => 'Seleccionar equipos favoritos';
+
+  @override
+  String get saveFavorites => 'Guardar favoritos';
+
+  @override
+  String get loadingFavoriteTeams => 'Cargando tus equipos favoritos...';
+
+  @override
+  String teamsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'equipos',
+      one: 'equipo',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 's',
+      one: '',
+    );
+    return '$count $_temp0 seleccionado$_temp1';
+  }
+
+  @override
+  String get favoriteTeamsSavedSynced =>
+      '¡Equipos favoritos guardados y sincronizados!';
+
+  @override
+  String get favoriteTeamsSaved => '¡Equipos favoritos guardados!';
+
+  @override
+  String get errorSavingFavorites =>
+      'Error al guardar favoritos. Inténtalo de nuevo.';
+
+  @override
+  String get couldNotLoadFavorites =>
+      'No se pudieron cargar los favoritos. Puedes seleccionar equipos abajo.';
+
+  @override
+  String get copaClearChat => 'Borrar chat';
+
+  @override
+  String get copaClearChatConfirm =>
+      'Esto borrará la conversación y empezará de nuevo. ¿Continuar?';
+
+  @override
+  String get copaThinking => 'Pensando...';
+
+  @override
+  String get copaHintText =>
+      'Pregunta a Copa sobre equipos, partidos, jugadores...';
+
+  @override
+  String get copaClearTooltip => 'Borrar chat';
 }

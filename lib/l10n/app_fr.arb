@@ -1090,5 +1090,18 @@
   "venuePortalVenueLabel": "Lieu : {name}",
   "venuePortalVenueVibe": "Ambiance du Lieu",
   "venuePortalVibeTagsDesc": "Sélectionnez les tags qui décrivent l'ambiance de votre lieu",
-  "venuePortalWaitTimeMinutes": "~{minutes}m"
+  "venuePortalWaitTimeMinutes": "~{minutes}m",
+  "selectFavoriteTeams": "Sélectionner les équipes favorites",
+  "saveFavorites": "Enregistrer les favoris",
+  "loadingFavoriteTeams": "Chargement de vos équipes favorites...",
+  "teamsSelected": "{count} {count, plural, =1{équipe} other{équipes}} sélectionnée{count, plural, =1{} other{s}}",
+  "favoriteTeamsSavedSynced": "Équipes favorites enregistrées et synchronisées !",
+  "favoriteTeamsSaved": "Équipes favorites enregistrées !",
+  "errorSavingFavorites": "Erreur lors de l'enregistrement des favoris. Veuillez réessayer.",
+  "couldNotLoadFavorites": "Impossible de charger les favoris. Vous pouvez sélectionner des équipes ci-dessous.",
+  "copaClearChat": "Effacer le chat",
+  "copaClearChatConfirm": "Cela effacera la conversation et recommencera à zéro. Continuer ?",
+  "copaThinking": "Réflexion...",
+  "copaHintText": "Demandez à Copa des informations sur les équipes, matchs, joueurs...",
+  "copaClearTooltip": "Effacer le chat"
 }

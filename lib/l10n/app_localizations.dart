@@ -6305,6 +6305,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'~{minutes}m'**
   String venuePortalWaitTimeMinutes(int minutes);
+
+  /// Title for the favorite teams selection screen
+  ///
+  /// In en, this message translates to:
+  /// **'Select Favorite Teams'**
+  String get selectFavoriteTeams;
+
+  /// Button label to save favorite teams
+  ///
+  /// In en, this message translates to:
+  /// **'Save Favorites'**
+  String get saveFavorites;
+
+  /// Loading message while fetching favorite teams
+  ///
+  /// In en, this message translates to:
+  /// **'Loading your favorite teams...'**
+  String get loadingFavoriteTeams;
+
+  /// Text showing number of teams selected
+  ///
+  /// In en, this message translates to:
+  /// **'{count} {count, plural, =1{team} other{teams}} selected'**
+  String teamsSelected(int count);
+
+  /// Success message when favorite teams are saved and synced
+  ///
+  /// In en, this message translates to:
+  /// **'Favorite teams saved & synced!'**
+  String get favoriteTeamsSavedSynced;
+
+  /// Success message when favorite teams are saved locally
+  ///
+  /// In en, this message translates to:
+  /// **'Favorite teams saved!'**
+  String get favoriteTeamsSaved;
+
+  /// Error message when saving favorites fails
+  ///
+  /// In en, this message translates to:
+  /// **'Error saving favorites. Please try again.'**
+  String get errorSavingFavorites;
+
+  /// Error message when loading saved favorites fails
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load saved favorites. You can still select teams below.'**
+  String get couldNotLoadFavorites;
+
+  /// Button label to clear the chat conversation
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Chat'**
+  String get copaClearChat;
+
+  /// Confirmation message when clearing chat
+  ///
+  /// In en, this message translates to:
+  /// **'This will clear the conversation and start fresh. Continue?'**
+  String get copaClearChatConfirm;
+
+  /// Message shown when Copa is processing a request
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking...'**
+  String get copaThinking;
+
+  /// Hint text for the chat input field
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Copa about teams, matches, players...'**
+  String get copaHintText;
+
+  /// Tooltip for the clear chat button
+  ///
+  /// In en, this message translates to:
+  /// **'Clear chat'**
+  String get copaClearTooltip;
 }
 
 class _AppLocalizationsDelegate

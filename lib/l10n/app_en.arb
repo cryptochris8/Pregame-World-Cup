@@ -4359,5 +4359,60 @@
     "placeholders": {
       "minutes": {"type": "int"}
     }
+  },
+  "selectFavoriteTeams": "Select Favorite Teams",
+  "@selectFavoriteTeams": {
+    "description": "Title for the favorite teams selection screen"
+  },
+  "saveFavorites": "Save Favorites",
+  "@saveFavorites": {
+    "description": "Button label to save favorite teams"
+  },
+  "loadingFavoriteTeams": "Loading your favorite teams...",
+  "@loadingFavoriteTeams": {
+    "description": "Loading message while fetching favorite teams"
+  },
+  "teamsSelected": "{count} {count, plural, =1{team} other{teams}} selected",
+  "@teamsSelected": {
+    "description": "Text showing number of teams selected",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "favoriteTeamsSavedSynced": "Favorite teams saved & synced!",
+  "@favoriteTeamsSavedSynced": {
+    "description": "Success message when favorite teams are saved and synced"
+  },
+  "favoriteTeamsSaved": "Favorite teams saved!",
+  "@favoriteTeamsSaved": {
+    "description": "Success message when favorite teams are saved locally"
+  },
+  "errorSavingFavorites": "Error saving favorites. Please try again.",
+  "@errorSavingFavorites": {
+    "description": "Error message when saving favorites fails"
+  },
+  "couldNotLoadFavorites": "Could not load saved favorites. You can still select teams below.",
+  "@couldNotLoadFavorites": {
+    "description": "Error message when loading saved favorites fails"
+  },
+  "copaClearChat": "Clear Chat",
+  "@copaClearChat": {
+    "description": "Button label to clear the chat conversation"
+  },
+  "copaClearChatConfirm": "This will clear the conversation and start fresh. Continue?",
+  "@copaClearChatConfirm": {
+    "description": "Confirmation message when clearing chat"
+  },
+  "copaThinking": "Thinking...",
+  "@copaThinking": {
+    "description": "Message shown when Copa is processing a request"
+  },
+  "copaHintText": "Ask Copa about teams, matches, players...",
+  "@copaHintText": {
+    "description": "Hint text for the chat input field"
+  },
+  "copaClearTooltip": "Clear chat",
+  "@copaClearTooltip": {
+    "description": "Tooltip for the clear chat button"
   }
 }

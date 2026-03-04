@@ -3470,4 +3470,62 @@ class AppLocalizationsFr extends AppLocalizations {
   String venuePortalWaitTimeMinutes(int minutes) {
     return '~${minutes}m';
   }
+
+  @override
+  String get selectFavoriteTeams => 'Sélectionner les équipes favorites';
+
+  @override
+  String get saveFavorites => 'Enregistrer les favoris';
+
+  @override
+  String get loadingFavoriteTeams => 'Chargement de vos équipes favorites...';
+
+  @override
+  String teamsSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'équipes',
+      one: 'équipe',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 's',
+      one: '',
+    );
+    return '$count $_temp0 sélectionnée$_temp1';
+  }
+
+  @override
+  String get favoriteTeamsSavedSynced =>
+      'Équipes favorites enregistrées et synchronisées !';
+
+  @override
+  String get favoriteTeamsSaved => 'Équipes favorites enregistrées !';
+
+  @override
+  String get errorSavingFavorites =>
+      'Erreur lors de l\'enregistrement des favoris. Veuillez réessayer.';
+
+  @override
+  String get couldNotLoadFavorites =>
+      'Impossible de charger les favoris. Vous pouvez sélectionner des équipes ci-dessous.';
+
+  @override
+  String get copaClearChat => 'Effacer le chat';
+
+  @override
+  String get copaClearChatConfirm =>
+      'Cela effacera la conversation et recommencera à zéro. Continuer ?';
+
+  @override
+  String get copaThinking => 'Réflexion...';
+
+  @override
+  String get copaHintText =>
+      'Demandez à Copa des informations sur les équipes, matchs, joueurs...';
+
+  @override
+  String get copaClearTooltip => 'Effacer le chat';
 }
