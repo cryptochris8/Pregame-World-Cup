@@ -50,13 +50,13 @@ class AIInsightsAnalysisHelper {
     };
 
     if (game.week != null) {
-      stats['week'] = game.week;
-      if (game.week! > 10) {
-        stats['context'] = 'Late season - playoff implications possible';
-      } else if (game.week! < 4) {
-        stats['context'] = 'Early season - teams still finding rhythm';
+      stats['matchday'] = game.week;
+      if (game.week! > 6) {
+        stats['context'] = 'Knockout stage - single elimination, every moment counts';
+      } else if (game.week! <= 2) {
+        stats['context'] = 'Group stage opener - teams finding their footing in the tournament';
       } else {
-        stats['context'] = 'Mid-season conference play';
+        stats['context'] = 'Group stage - qualification battle intensifying';
       }
     }
 
@@ -150,8 +150,8 @@ class AIInsightsAnalysisHelper {
       if (prediction == null) return generateFallbackPrediction();
       final predictionMap = Map<String, dynamic>.from(prediction as Map);
       return {
-        'homeScore': predictionMap['homeScore']?.toString() ?? '24',
-        'awayScore': predictionMap['awayScore']?.toString() ?? '21',
+        'homeScore': predictionMap['homeScore']?.toString() ?? '2',
+        'awayScore': predictionMap['awayScore']?.toString() ?? '1',
         'winner': predictionMap['winner']?.toString() ?? game.homeTeamName,
         'confidence': predictionMap['confidence']?.toString() ?? '0.65',
         'keyFactors': extractKeyFactors(predictionMap),
@@ -216,7 +216,7 @@ class AIInsightsAnalysisHelper {
         'Historical matchup trends',
       ];
     } catch (e) {
-      return ['Team offensive capabilities', 'Defensive matchup advantages', 'Special teams impact'];
+      return ['Team attacking capabilities', 'Defensive matchup advantages', 'Set piece effectiveness'];
     }
   }
 
@@ -226,11 +226,11 @@ class AIInsightsAnalysisHelper {
 
   Map<String, dynamic> generateFallbackPrediction() {
     return {
-      'homeScore': '27',
-      'awayScore': '24',
+      'homeScore': '2',
+      'awayScore': '1',
       'winner': game.homeTeamName,
       'confidence': '0.68',
-      'keyFactors': ['Home field advantage', 'Recent team momentum', 'Defensive matchups'],
+      'keyFactors': ['Home crowd advantage', 'Recent team momentum', 'Defensive matchups'],
       'analysis': 'Competitive matchup with ${game.homeTeamName} having a slight edge at home.',
     };
   }
@@ -241,22 +241,24 @@ class AIInsightsAnalysisHelper {
 
   Map<String, dynamic> generateFallbackSeasonData(String teamName) {
     final hash = teamName.hashCode.abs();
-    final wins = 6 + (hash % 7);
-    final losses = 12 - wins;
-    final avgPointsFor = 24 + (hash % 14);
-    final avgPointsAgainst = 20 + ((hash * 13) % 12);
+    final wins = 4 + (hash % 5);
+    final draws = 2 + (hash % 3);
+    final losses = 10 - wins - draws;
+    final goalsFor = 12 + (hash % 10);
+    final goalsAgainst = 8 + ((hash * 13) % 8);
 
     return {
       'performance': {
-        'record': '$wins-$losses',
+        'record': '${wins}W-${draws}D-${losses}L',
         'wins': wins,
+        'draws': draws,
         'losses': losses,
-        'avgPointsFor': avgPointsFor,
-        'avgPointsAgainst': avgPointsAgainst,
-        'pointDifferential': avgPointsFor - avgPointsAgainst,
+        'goalsFor': goalsFor,
+        'goalsAgainst': goalsAgainst,
+        'goalDifferential': goalsFor - goalsAgainst,
       },
-      'narrative': '$teamName showed ${wins >= 8 ? "strong" : wins >= 6 ? "competitive" : "developing"} performance this season, '
-                   'averaging $avgPointsFor points per game.',
+      'narrative': '$teamName showed ${wins >= 7 ? "strong" : wins >= 5 ? "competitive" : "developing"} form in recent qualifying and friendlies, '
+                   'scoring $goalsFor goals across their last 10 matches.',
       'dataSource': 'fallback_realistic_data',
     };
   }
@@ -294,8 +296,8 @@ class AIInsightsAnalysisHelper {
     final homeHash = game.homeTeamName.hashCode.abs();
     final awayHash = game.awayTeamName.hashCode.abs();
 
-    final homeScore = 17 + (homeHash % 21) + 3;
-    final awayScore = 14 + (awayHash % 21);
+    final homeScore = 1 + (homeHash % 3);
+    final awayScore = (awayHash % 3);
 
     return {
       'prediction': {
@@ -412,14 +414,14 @@ class AIInsightsAnalysisHelper {
       }
     }
 
-    if (_areInSameConference(homeTeam, awayTeam)) {
-      return 'Competitive conference series';
+    if (_areInSameConfederation(homeTeam, awayTeam)) {
+      return 'Confederation rivals - competitive history';
     }
 
     return 'First-time matchup or limited series history';
   }
 
-  bool _areInSameConference(String team1, String team2) {
+  bool _areInSameConfederation(String team1, String team2) {
     final conmebol = ['Brazil', 'Argentina', 'Uruguay', 'Colombia', 'Ecuador', 'Paraguay', 'Chile', 'Peru', 'Venezuela', 'Bolivia'];
     final uefa = ['France', 'Germany', 'Spain', 'England', 'Italy', 'Netherlands', 'Portugal', 'Belgium', 'Croatia', 'Denmark',
                    'Switzerland', 'Austria', 'Serbia', 'Scotland', 'Poland', 'Ukraine', 'Turkey', 'Wales', 'Czech Republic', 'Hungary'];
@@ -503,7 +505,7 @@ class AIInsightsAnalysisHelper {
         },
         {
           'title': 'Weather Impact',
-          'description': 'Weather conditions could favor the running game',
+          'description': 'Weather conditions could influence possession and tempo',
           'advantage': 'Even',
           'icon': Icons.cloud,
         },

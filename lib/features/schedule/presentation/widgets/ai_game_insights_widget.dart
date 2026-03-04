@@ -82,15 +82,15 @@ Keep it concise and engaging for casual fans.
     };
 
     if (widget.game.week != null) {
-      stats['week'] = widget.game.week;
+      stats['matchday'] = widget.game.week;
       
-      // Add context based on week
-      if (widget.game.week! > 10) {
-        stats['context'] = 'Late season - playoff implications possible';
-      } else if (widget.game.week! < 4) {
-        stats['context'] = 'Early season - teams still finding rhythm';
+      // Add context based on tournament phase
+      if (widget.game.week! > 6) {
+        stats['context'] = 'Knockout stage - single elimination, every moment counts';
+      } else if (widget.game.week! <= 2) {
+        stats['context'] = 'Group stage opener - teams finding their footing in the tournament';
       } else {
-        stats['context'] = 'Mid-season conference play';
+        stats['context'] = 'Group stage - qualification battle intensifying';
       }
     }
 
