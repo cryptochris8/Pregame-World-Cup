@@ -1,10 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../core/services/logging_service.dart';
 import '../../domain/models/player.dart';
 
 /// Service for fetching player data from Firestore
 class PlayerService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static const String _collectionName = 'players';
+  static const String _logTag = 'PlayerService';
 
   // Caching
   List<Player>? _allPlayersCache;
@@ -70,6 +72,7 @@ class PlayerService {
 
       return players;
     } catch (e) {
+      LoggingService.error('Failed to get all players: $e', tag: _logTag);
       return [];
     }
   }
@@ -106,7 +109,7 @@ class PlayerService {
 
       return players;
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get players by team $fifaCode: $e', tag: _logTag);
       return [];
     }
   }
@@ -124,7 +127,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get players by position $position: $e', tag: _logTag);
       return [];
     }
   }
@@ -173,7 +176,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get players by category $category: $e', tag: _logTag);
       return [];
     }
   }
@@ -191,7 +194,7 @@ class PlayerService {
       }
       return null;
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get player by ID $playerId: $e', tag: _logTag);
       return null;
     }
   }
@@ -210,7 +213,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get top players by value: $e', tag: _logTag);
       return [];
     }
   }
@@ -228,7 +231,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get top scorers: $e', tag: _logTag);
       return [];
     }
   }
@@ -246,7 +249,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get most capped players: $e', tag: _logTag);
       return [];
     }
   }
@@ -264,7 +267,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get youngest players: $e', tag: _logTag);
       return [];
     }
   }
@@ -282,7 +285,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get oldest players: $e', tag: _logTag);
       return [];
     }
   }
@@ -300,7 +303,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get World Cup veterans: $e', tag: _logTag);
       return [];
     }
   }
@@ -318,7 +321,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get World Cup top scorers: $e', tag: _logTag);
       return [];
     }
   }
@@ -336,7 +339,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get World Cup top assists: $e', tag: _logTag);
       return [];
     }
   }
@@ -361,7 +364,7 @@ class PlayerService {
 
       return wcPlayers.take(limit).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get World Cup best ratios: $e', tag: _logTag);
       return [];
     }
   }
@@ -380,7 +383,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get players by club $club: $e', tag: _logTag);
       return [];
     }
   }
@@ -401,7 +404,7 @@ class PlayerService {
                player.club.toLowerCase().contains(lowerQuery);
       }).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to search players for "$query": $e', tag: _logTag);
       return [];
     }
   }
@@ -456,7 +459,7 @@ class PlayerService {
         'playersByPosition': _groupPlayersByPosition(players),
       };
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get player statistics: $e', tag: _logTag);
       return {};
     }
   }

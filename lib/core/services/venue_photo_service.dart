@@ -33,17 +33,19 @@ class VenuePhotoService {
   
   /// Clean expired photos from cache
   Future<void> _cleanExpiredPhotos() async {
+    final box = _photosBox;
+    if (box == null) return;
     final keysToDelete = <String>[];
-    
-    for (final key in _photosBox!.keys) {
-      final cachedPhotos = _photosBox!.get(key);
+
+    for (final key in box.keys) {
+      final cachedPhotos = box.get(key);
       if (cachedPhotos != null && cachedPhotos.isExpired()) {
         keysToDelete.add(key.toString());
       }
     }
-    
+
     for (final key in keysToDelete) {
-      await _photosBox!.delete(key);
+      await box.delete(key);
     }
   }
   
@@ -223,7 +225,7 @@ class VenuePhotoService {
   /// Clear photo cache
   Future<void> clearCache() async {
     _memoryCache.clear();
-    await _photosBox!.clear();
+    await _photosBox?.clear();
   }
   
   /// Clear expired photos
@@ -233,12 +235,13 @@ class VenuePhotoService {
   
   /// Get cache statistics
   Map<String, dynamic> getCacheStats() {
+    final box = _photosBox;
     final memoryCount = _memoryCache.length;
-    final persistentCount = _photosBox!.length;
-    final totalPhotos = _photosBox!.values
+    final persistentCount = box?.length ?? 0;
+    final totalPhotos = box?.values
         .map((cached) => cached.photoCount)
-        .fold(0, (sum, count) => sum + count);
-    
+        .fold(0, (sum, count) => sum + count) ?? 0;
+
     return {
       'memory_entries': memoryCount,
       'persistent_entries': persistentCount,
@@ -246,13 +249,15 @@ class VenuePhotoService {
       'cache_size_mb': _estimateCacheSize(),
     };
   }
-  
+
   double _estimateCacheSize() {
+    final box = _photosBox;
+    if (box == null) return 0.0;
     // Rough estimation: each photo URL is ~200 bytes
-    final totalUrls = _photosBox!.values
+    final totalUrls = box.values
         .map((cached) => cached.photoCount)
         .fold(0, (sum, count) => sum + count);
-    
+
     return (totalUrls * 200) / (1024 * 1024); // Convert to MB
   }
 }

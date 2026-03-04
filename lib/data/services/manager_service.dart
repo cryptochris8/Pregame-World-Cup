@@ -1,10 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../core/services/logging_service.dart';
 import '../../domain/models/manager.dart';
 
 /// Service for fetching manager data from Firestore
 class ManagerService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static const String _collectionName = 'managers';
+  static const String _logTag = 'ManagerService';
 
   // Caching
   List<Manager>? _allManagersCache;
@@ -52,6 +54,7 @@ class ManagerService {
 
       return managers;
     } catch (e) {
+      LoggingService.error('Failed to get all managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -84,7 +87,7 @@ class ManagerService {
       }
       return null;
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get manager for team $fifaCode: $e', tag: _logTag);
       return null;
     }
   }
@@ -102,7 +105,7 @@ class ManagerService {
       }
       return null;
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get manager by ID $managerId: $e', tag: _logTag);
       return null;
     }
   }
@@ -120,7 +123,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get most experienced managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -138,7 +141,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get youngest managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -156,7 +159,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get oldest managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -172,7 +175,7 @@ class ManagerService {
 
       return managers.take(limit).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get top winning managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -188,7 +191,7 @@ class ManagerService {
 
       return managers.take(limit).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get most successful managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -204,7 +207,7 @@ class ManagerService {
 
       return managers.take(limit).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get most experienced managers by matches: $e', tag: _logTag);
       return [];
     }
   }
@@ -221,7 +224,7 @@ class ManagerService {
           .map((doc) => Manager.fromFirestore(doc))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get managers by nationality $nationality: $e', tag: _logTag);
       return [];
     }
   }
@@ -234,7 +237,7 @@ class ManagerService {
       // Filter managers with controversies
       return managers.where((m) => m.isControversial).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get controversial managers: $e', tag: _logTag);
       return [];
     }
   }
@@ -252,7 +255,7 @@ class ManagerService {
                manager.currentTeam.toLowerCase().contains(lowerQuery);
       }).toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to search managers for "$query": $e', tag: _logTag);
       return [];
     }
   }
@@ -314,7 +317,7 @@ class ManagerService {
         'managersByNationality': _groupManagersByNationality(managers),
       };
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get manager statistics: $e', tag: _logTag);
       return {};
     }
   }
@@ -341,7 +344,7 @@ class ManagerService {
           manager.tacticalStyle.toLowerCase().contains(style.toLowerCase()))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get managers by style $style: $e', tag: _logTag);
       return [];
     }
   }
@@ -359,7 +362,7 @@ class ManagerService {
               !honor.toLowerCase().contains('place')))
           .toList();
     } catch (e) {
-      // Error handled silently
+      LoggingService.error('Failed to get World Cup winning managers: $e', tag: _logTag);
       return [];
     }
   }

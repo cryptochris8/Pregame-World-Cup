@@ -256,12 +256,14 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
 
     Navigator.pop(context);
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(AppLocalizations.of(context).calendarCopyGoogleLink),
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context).calendarCopyGoogleLink),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    }
   }
 
   void _showResult(BuildContext context, CalendarResult result) {

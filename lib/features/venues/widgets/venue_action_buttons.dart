@@ -208,12 +208,14 @@ class VenueActionButtons extends StatelessWidget {
         onAction: () {
           Clipboard.setData(ClipboardData(text: shareText));
           Navigator.of(context).pop();
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Venue details copied to clipboard!'),
-              duration: Duration(seconds: 2),
-            ),
-          );
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Venue details copied to clipboard!'),
+                duration: Duration(seconds: 2),
+              ),
+            );
+          }
         },
       );
     } catch (e) {
