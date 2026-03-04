@@ -601,7 +601,7 @@ void main() {
     });
 
     test('returns correct color for Germany', () {
-      expect(AppTheme.getTeamColor('germany'), const Color(0xFFFFFFFF));
+      expect(AppTheme.getTeamColor('germany'), const Color(0xFFFFCE00));
     });
 
     test('returns correct color for France', () {
@@ -613,7 +613,7 @@ void main() {
     });
 
     test('returns correct color for England', () {
-      expect(AppTheme.getTeamColor('england'), const Color(0xFFFFFFFF));
+      expect(AppTheme.getTeamColor('england'), const Color(0xFFCF081F));
     });
 
     test('returns correct color for Mexico and Mexico with accent', () {

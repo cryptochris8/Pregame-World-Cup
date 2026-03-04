@@ -643,35 +643,143 @@ class AppTheme {
     }
   }
   
-  /// Get color for a World Cup national team
+  /// Get color for a World Cup 2026 national team (all 48 teams)
   static Color getTeamColor(String teamName) {
     switch (teamName.toLowerCase()) {
+      // CONMEBOL
       case 'brazil':
-        return const Color(0xFFFFDF00); // Brazil yellow
+        return const Color(0xFFFFDF00); // Canarinho yellow
       case 'argentina':
-        return const Color(0xFF75AADB); // Argentina light blue
-      case 'germany':
-        return const Color(0xFFFFFFFF); // Germany white
+        return const Color(0xFF75AADB); // Albiceleste light blue
+      case 'uruguay':
+        return const Color(0xFF5CBFEB); // Celeste sky blue
+      case 'colombia':
+        return const Color(0xFFFCD116); // Tricolor yellow
+      case 'ecuador':
+        return const Color(0xFFFFD100); // La Tri yellow
+      case 'chile':
+        return const Color(0xFFD52B1E); // La Roja red
+      case 'paraguay':
+        return const Color(0xFFDA121A); // Albirroja red
+      case 'peru':
+        return const Color(0xFFD91023); // Blanquirroja red
+
+      // UEFA
       case 'france':
-        return const Color(0xFF002395); // France blue
+        return const Color(0xFF002395); // Les Bleus blue
       case 'spain':
-        return const Color(0xFFAA151B); // Spain red
+      case 'españa':
+        return const Color(0xFFAA151B); // La Roja red
       case 'england':
-        return const Color(0xFFFFFFFF); // England white
+        return const Color(0xFFCF081F); // Three Lions red
+      case 'germany':
+        return const Color(0xFFFFCE00); // Die Mannschaft gold
+      case 'portugal':
+        return const Color(0xFFDA291C); // Seleção red
+      case 'netherlands':
+      case 'the netherlands':
+        return const Color(0xFFFF6600); // Oranje orange
+      case 'italy':
+        return const Color(0xFF0066B2); // Azzurri blue
+      case 'croatia':
+        return const Color(0xFFFF0000); // Vatreni red/white checkers
+      case 'belgium':
+        return const Color(0xFFED2939); // Red Devils red
+      case 'serbia':
+        return const Color(0xFFC6363C); // Orlovi red
+      case 'denmark':
+        return const Color(0xFFC60C30); // Danish Dynamite red
+      case 'switzerland':
+        return const Color(0xFFFF0000); // Nati red
+      case 'poland':
+        return const Color(0xFFDC143C); // Biało-czerwoni red
+      case 'austria':
+        return const Color(0xFFED2939); // Das Team red
+      case 'scotland':
+        return const Color(0xFF003399); // Tartan Army blue
+      case 'norway':
+        return const Color(0xFFBA0C2F); // Norse red
+      case 'turkey':
+      case 'türkiye':
+        return const Color(0xFFE30A17); // Ay-yıldızlılar red
+
+      // CONCACAF
       case 'mexico':
       case 'méxico':
-        return const Color(0xFF006847); // Mexico green
+        return const Color(0xFF006847); // El Tri green
       case 'usa':
       case 'united states':
-        return const Color(0xFF002868); // USA navy
-      case 'portugal':
-        return const Color(0xFFDA291C); // Portugal red
-      case 'netherlands':
-        return const Color(0xFFFF6600); // Netherlands orange
-      case 'italy':
-        return const Color(0xFF0066B2); // Italy blue
+        return const Color(0xFF002868); // USMNT navy
+      case 'canada':
+        return const Color(0xFFFF0000); // Les Rouges red
+      case 'jamaica':
+        return const Color(0xFF009B3A); // Reggae Boyz green
+      case 'panama':
+      case 'panamá':
+        return const Color(0xFFDA121A); // Canaleros red
+      case 'costa rica':
+        return const Color(0xFFDA291C); // Los Ticos red
+      case 'honduras':
+        return const Color(0xFF0051A5); // La H blue
+      case 'haiti':
+      case 'haïti':
+        return const Color(0xFF00209F); // Les Grenadiers blue
+      case 'curacao':
+      case 'curaçao':
+        return const Color(0xFF002B7F); // Curaçao blue
+
+      // AFC
       case 'japan':
-        return const Color(0xFF000080); // Japan blue
+        return const Color(0xFF000080); // Samurai Blue
+      case 'south korea':
+      case 'korea republic':
+        return const Color(0xFFCD2E3A); // Taegeuk Warriors red
+      case 'saudi arabia':
+        return const Color(0xFF006C35); // Green Falcons
+      case 'iran':
+        return const Color(0xFF239F40); // Team Melli green
+      case 'australia':
+        return const Color(0xFFFFCD00); // Socceroos gold
+      case 'qatar':
+        return const Color(0xFF8A1538); // Al-Annabi maroon
+      case 'jordan':
+        return const Color(0xFF007A3D); // Al-Nashama green
+      case 'uzbekistan':
+        return const Color(0xFF1EB53A); // White Wolves green
+      case 'iraq':
+        return const Color(0xFF007A33); // Lions of Mesopotamia green
+      case 'indonesia':
+        return const Color(0xFFFF0000); // Garuda red
+
+      // CAF
+      case 'morocco':
+        return const Color(0xFFC1272D); // Atlas Lions red
+      case 'senegal':
+        return const Color(0xFF009639); // Lions of Teranga green
+      case 'nigeria':
+        return const Color(0xFF008753); // Super Eagles green
+      case 'cameroon':
+        return const Color(0xFF007A5E); // Indomitable Lions green
+      case 'egypt':
+        return const Color(0xFFCE1126); // Pharaohs red
+      case 'south africa':
+        return const Color(0xFF007749); // Bafana Bafana green
+      case 'ghana':
+        return const Color(0xFFFFD700); // Black Stars gold
+      case 'algeria':
+        return const Color(0xFF006233); // Les Fennecs green
+      case 'tunisia':
+        return const Color(0xFFE70013); // Eagles of Carthage red
+      case "côte d'ivoire":
+      case 'ivory coast':
+        return const Color(0xFFFF8200); // Elephants orange
+      case 'cape verde':
+      case 'cabo verde':
+        return const Color(0xFF003893); // Blue Sharks blue
+      case 'dr congo':
+      case 'congo dr':
+        return const Color(0xFF007FFF); // Leopards blue
+
       default:
         return primaryPurple;
     }
