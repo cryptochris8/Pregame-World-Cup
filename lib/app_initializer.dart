@@ -13,7 +13,6 @@ import 'firebase_options.dart';
 import 'injection_container.dart' as di;
 import 'core/services/cache_service.dart';
 import 'core/ai/services/multi_provider_ai_service.dart';
-import 'core/entities/game_intelligence.dart';
 import 'core/entities/cached_venue_data.dart';
 import 'core/entities/cached_geocoding_data.dart';
 import 'core/services/firebase_app_check_service.dart';
@@ -102,9 +101,6 @@ Future<void> initializeApp() async {
     }
     if (!Hive.isAdapterRegistered(1)) {
       Hive.registerAdapter(CachedGeocodingDataAdapter());
-    }
-    if (!Hive.isAdapterRegistered(5)) {
-      Hive.registerAdapter(GameIntelligenceAdapter());
     }
     debugLog('INIT STEP 4: Hive Adapters - SUCCESS');
   } catch (e) {
