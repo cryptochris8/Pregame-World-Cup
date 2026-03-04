@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import 'match_list_page.dart';
@@ -93,6 +94,7 @@ class WorldCupDashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return MultiBlocProvider(
       providers: [
         BlocProvider<MatchListCubit>(
@@ -122,7 +124,7 @@ class WorldCupDashboardPage extends StatelessWidget {
                 errorBuilder: (_, __, ___) => const Icon(Icons.sports_soccer),
               ),
               const SizedBox(width: 8),
-              const Text('World Cup 2026'),
+              Text(l10n.worldCup2026Title),
             ],
           ),
           centerTitle: true,
@@ -143,7 +145,7 @@ class WorldCupDashboardPage extends StatelessWidget {
                 // Live matches section
                 _buildSection(
                   context,
-                  title: 'Live Now',
+                  title: l10n.liveNow,
                   icon: Icons.play_circle_fill,
                   iconColor: Colors.red,
                   child: BlocBuilder<MatchListCubit, MatchListState>(
@@ -157,7 +159,7 @@ class WorldCupDashboardPage extends StatelessWidget {
                           ),
                           child: Center(
                             child: Text(
-                              'No live matches',
+                              l10n.noLiveMatches,
                               style: TextStyle(color: Colors.grey.shade600),
                             ),
                           ),
@@ -176,11 +178,11 @@ class WorldCupDashboardPage extends StatelessWidget {
                 // Upcoming matches
                 _buildSection(
                   context,
-                  title: 'Upcoming Matches',
+                  title: l10n.upcomingMatches,
                   icon: Icons.schedule,
                   action: TextButton(
                     onPressed: () => _navigateTo(context, 0),
-                    child: const Text('See all'),
+                    child: Text(l10n.seeAll),
                   ),
                   child: BlocBuilder<MatchListCubit, MatchListState>(
                     builder: (context, state) {
@@ -190,7 +192,7 @@ class WorldCupDashboardPage extends StatelessWidget {
                           .toList();
 
                       if (upcoming.isEmpty) {
-                        return const Text('No upcoming matches');
+                        return Text(l10n.noUpcomingMatches);
                       }
 
                       return Column(

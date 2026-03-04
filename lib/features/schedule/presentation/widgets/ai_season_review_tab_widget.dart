@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/ai/services/ai_team_season_summary_service.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Widget for the Season Review tab in the Enhanced AI Insights view.
 /// Displays comprehensive team season summaries with AI-powered analysis.
@@ -125,7 +126,7 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         } else if (snapshot.hasData) {
           return _buildSeasonSummaryContent(snapshot.data!, isAway: isAway);
         } else {
-          return _buildSeasonSummaryFallback(teamName, isAway: isAway);
+          return _buildSeasonSummaryFallback(context, teamName, isAway: isAway);
         }
       },
     );
@@ -523,7 +524,8 @@ class AISeasonReviewTabWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildSeasonSummaryFallback(String teamName, {required bool isAway}) {
+  Widget _buildSeasonSummaryFallback(BuildContext context, String teamName, {required bool isAway}) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -539,10 +541,10 @@ class AISeasonReviewTabWidget extends StatelessWidget {
         children: [
           _buildTeamHeader(teamName, isAway: isAway),
           const SizedBox(height: 16),
-          const Text(
-            'Season analysis coming soon - historical data being processed',
+          Text(
+            l10n.seasonAnalysisComingSoon,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white70,
               fontSize: 14,
             ),

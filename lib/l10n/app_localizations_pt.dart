@@ -3195,4 +3195,18 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get refreshAnalysis => 'Atualizar Análise';
+
+  @override
+  String get noLiveMatches => 'Nenhum jogo ao vivo';
+
+  @override
+  String get upcomingMatches => 'Próximos Jogos';
+
+  @override
+  String get seasonAnalysisComingSoon =>
+      'Análise da temporada em breve - dados históricos sendo processados';
+
+  @override
+  String get locationSharingComingSoon =>
+      'Compartilhamento de localização em breve!';
 }

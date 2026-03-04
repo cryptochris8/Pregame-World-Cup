@@ -1016,5 +1016,9 @@
   "widgetRefreshFailed": "Échec de l'actualisation : {error}",
   "aiPredictionTitle": "Prédiction IA",
   "keyFactorsToWatch": "Facteurs Clés à Surveiller",
-  "refreshAnalysis": "Actualiser l'Analyse"
+  "refreshAnalysis": "Actualiser l'Analyse",
+  "noLiveMatches": "Aucun match en direct",
+  "upcomingMatches": "Matchs à Venir",
+  "seasonAnalysisComingSoon": "Analyse de saison bientôt disponible - données historiques en cours de traitement",
+  "locationSharingComingSoon": "Partage de localisation bientôt disponible !"
 }

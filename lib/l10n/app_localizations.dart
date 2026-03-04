@@ -5867,6 +5867,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Refresh Analysis'**
   String get refreshAnalysis;
+
+  /// Empty state text when no live matches are available
+  ///
+  /// In en, this message translates to:
+  /// **'No live matches'**
+  String get noLiveMatches;
+
+  /// Section title for upcoming matches
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming Matches'**
+  String get upcomingMatches;
+
+  /// Fallback text when season analysis data is not yet available
+  ///
+  /// In en, this message translates to:
+  /// **'Season analysis coming soon - historical data being processed'**
+  String get seasonAnalysisComingSoon;
+
+  /// Snackbar message when location sharing is not yet available
+  ///
+  /// In en, this message translates to:
+  /// **'Location sharing coming soon!'**
+  String get locationSharingComingSoon;
 }
 
 class _AppLocalizationsDelegate

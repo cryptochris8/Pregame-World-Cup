@@ -434,34 +434,32 @@ class AITeamSeasonSummaryService {
     return {
       'teamName': teamName,
       'season': season,
-      'quickSummary': '$season season data not available in current sample - comprehensive analysis coming soon',
+      'quickSummary': 'Detailed analysis for $teamName is currently being prepared',
       'seasonRecord': {
         'overall': {'wins': 0, 'losses': 0},
-        'conference': {'wins': 0, 'losses': 0},
-        'home': {'wins': 0, 'losses': 0},
-        'away': {'wins': 0, 'losses': 0},
-        'scoring': {'averageScored': 0, 'averageAllowed': 0}
+        'qualifying': {'wins': 0, 'losses': 0, 'draws': 0},
+        'friendlies': {'wins': 0, 'losses': 0, 'draws': 0},
+        'scoring': {'averageScored': 0, 'averageConceded': 0}
       },
       'keyInsights': [
-        'Team not included in current $season data sample',
-        'Historical analysis being expanded to include more teams',
-        'Check back soon for complete season breakdown'
+        'Full match history and form data for $teamName is being compiled',
+        'Check back for comprehensive pre-tournament analysis',
       ],
       'overallAssessment': {
-        'seasonGrade': 'Data Pending',
-        'assessment': 'Season analysis will be available when data expansion is complete',
-        'keyAchievements': ['Data processing in progress'],
-        'improvementAreas': ['Comprehensive analysis coming soon'],
-        'outlook2025': 'Complete historical analysis will provide detailed outlook'
+        'seasonGrade': 'Pending',
+        'assessment': 'Full analysis will be available closer to the tournament',
+        'keyAchievements': [],
+        'improvementAreas': [],
+        'worldCupOutlook': 'Detailed outlook pending data compilation'
       },
       'playersAnalysis': {
         'starPlayers': [],
         'breakoutPerformers': []
       },
-      'postseasonAnalysis': {
-        'bowlEligibility': 'Data Pending',
-        'bowlGame': 'Analysis pending',
-        'seasonOutcome': 'Comprehensive review coming soon',
+      'tournamentAnalysis': {
+        'groupStage': 'Pending',
+        'knockoutPotential': 'Analysis pending',
+        'tournamentOutlook': 'Full preview will be available before kickoff',
       }
     };
   }

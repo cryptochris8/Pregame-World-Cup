@@ -4047,5 +4047,21 @@
   "refreshAnalysis": "Refresh Analysis",
   "@refreshAnalysis": {
     "description": "Tooltip for refresh AI analysis button"
+  },
+  "noLiveMatches": "No live matches",
+  "@noLiveMatches": {
+    "description": "Empty state text when no live matches are available"
+  },
+  "upcomingMatches": "Upcoming Matches",
+  "@upcomingMatches": {
+    "description": "Section title for upcoming matches"
+  },
+  "seasonAnalysisComingSoon": "Season analysis coming soon - historical data being processed",
+  "@seasonAnalysisComingSoon": {
+    "description": "Fallback text when season analysis data is not yet available"
+  },
+  "locationSharingComingSoon": "Location sharing coming soon!",
+  "@locationSharingComingSoon": {
+    "description": "Snackbar message when location sharing is not yet available"
   }
 }

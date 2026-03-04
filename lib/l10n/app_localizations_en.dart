@@ -3168,4 +3168,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get refreshAnalysis => 'Refresh Analysis';
+
+  @override
+  String get noLiveMatches => 'No live matches';
+
+  @override
+  String get upcomingMatches => 'Upcoming Matches';
+
+  @override
+  String get seasonAnalysisComingSoon =>
+      'Season analysis coming soon - historical data being processed';
+
+  @override
+  String get locationSharingComingSoon => 'Location sharing coming soon!';
 }

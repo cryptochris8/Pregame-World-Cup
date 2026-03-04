@@ -3222,4 +3222,18 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get refreshAnalysis => 'Actualiser l\'Analyse';
+
+  @override
+  String get noLiveMatches => 'Aucun match en direct';
+
+  @override
+  String get upcomingMatches => 'Matchs à Venir';
+
+  @override
+  String get seasonAnalysisComingSoon =>
+      'Analyse de saison bientôt disponible - données historiques en cours de traitement';
+
+  @override
+  String get locationSharingComingSoon =>
+      'Partage de localisation bientôt disponible !';
 }

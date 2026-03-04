@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../domain/services/file_upload_service.dart';
 import '../../domain/entities/message.dart';
@@ -397,9 +398,10 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
   void _shareLocation() {
     // Location sharing requires geolocator package integration and a map
     // preview widget. Planned for post-launch update (v1.1).
+    final l10n = AppLocalizations.of(context);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: const Text('Location sharing coming soon!'),
+        content: Text(l10n.locationSharingComingSoon),
         backgroundColor: Colors.orange[600],
       ),
     );

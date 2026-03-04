@@ -3209,4 +3209,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get refreshAnalysis => 'Actualizar Análisis';
+
+  @override
+  String get noLiveMatches => 'No hay partidos en vivo';
+
+  @override
+  String get upcomingMatches => 'Próximos Partidos';
+
+  @override
+  String get seasonAnalysisComingSoon =>
+      'Análisis de temporada próximamente - datos históricos en procesamiento';
+
+  @override
+  String get locationSharingComingSoon =>
+      '¡Compartir ubicación disponible pronto!';
 }

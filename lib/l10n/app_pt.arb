@@ -1016,5 +1016,9 @@
   "widgetRefreshFailed": "Falha ao atualizar: {error}",
   "aiPredictionTitle": "Previsão IA",
   "keyFactorsToWatch": "Fatores Chave a Observar",
-  "refreshAnalysis": "Atualizar Análise"
+  "refreshAnalysis": "Atualizar Análise",
+  "noLiveMatches": "Nenhum jogo ao vivo",
+  "upcomingMatches": "Próximos Jogos",
+  "seasonAnalysisComingSoon": "Análise da temporada em breve - dados históricos sendo processados",
+  "locationSharingComingSoon": "Compartilhamento de localização em breve!"
 }

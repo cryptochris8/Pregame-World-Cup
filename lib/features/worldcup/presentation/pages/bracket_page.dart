@@ -275,7 +275,7 @@ class FullBracketView extends StatelessWidget {
     return BlocBuilder<BracketCubit, BracketState>(
       builder: (context, state) {
         if (state.bracket == null) {
-          return const Center(child: Text('No bracket data'));
+          return Center(child: Text(AppLocalizations.of(context).noBracketData));
         }
 
         return SingleChildScrollView(
