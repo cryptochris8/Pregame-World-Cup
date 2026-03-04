@@ -4063,5 +4063,301 @@
   "locationSharingComingSoon": "Location sharing coming soon!",
   "@locationSharingComingSoon": {
     "description": "Snackbar message when location sharing is not yet available"
+  },
+
+  "venuePortalAcceptingReservations": "Accepting Reservations",
+  "@venuePortalAcceptingReservations": {
+    "description": "Title for reservations toggle in venue capacity screen"
+  },
+  "venuePortalAddSpecial": "Add Special",
+  "@venuePortalAddSpecial": {
+    "description": "FAB label to add a game day special"
+  },
+  "venuePortalAddTeamHint": "Team code (e.g., USA)",
+  "@venuePortalAddTeamHint": {
+    "description": "Hint text for team affinity input field"
+  },
+  "venuePortalAdditionalDetails": "Additional details...",
+  "@venuePortalAdditionalDetails": {
+    "description": "Hint text for dispute additional details field"
+  },
+  "venuePortalAlmostFull": "Almost Full",
+  "@venuePortalAlmostFull": {
+    "description": "Capacity status when venue is almost full"
+  },
+  "venuePortalAtCapacity": "At Capacity",
+  "@venuePortalAtCapacity": {
+    "description": "Capacity status when venue is at max capacity"
+  },
+  "venuePortalAtmosphereSettings": "Atmosphere Settings",
+  "@venuePortalAtmosphereSettings": {
+    "description": "Title for atmosphere settings screen"
+  },
+  "venuePortalAtmosphereSettingsSaved": "Atmosphere settings saved",
+  "@venuePortalAtmosphereSettingsSaved": {
+    "description": "Snackbar when atmosphere settings are saved"
+  },
+  "venuePortalBroadcastingInfo": "Select the matches your venue will be broadcasting. Users will see your venue when searching for places to watch these matches.",
+  "@venuePortalBroadcastingInfo": {
+    "description": "Info text explaining match broadcasting selection"
+  },
+  "venuePortalBroadcastingScheduleSaved": "Broadcasting schedule saved",
+  "@venuePortalBroadcastingScheduleSaved": {
+    "description": "Snackbar when broadcasting schedule is saved"
+  },
+  "venuePortalBusy": "Busy",
+  "@venuePortalBusy": {
+    "description": "Capacity status when venue is busy"
+  },
+  "venuePortalCapacityUpdated": "Capacity updated",
+  "@venuePortalCapacityUpdated": {
+    "description": "Snackbar when capacity is updated"
+  },
+  "venuePortalClaimStatus": "Claim Status",
+  "@venuePortalClaimStatus": {
+    "description": "Title for claim status dialog"
+  },
+  "venuePortalClaimUnderReview": "Your claim is being reviewed by an admin. You'll be notified when it's approved.",
+  "@venuePortalClaimUnderReview": {
+    "description": "Message when venue claim is pending admin review"
+  },
+  "venuePortalCompletePhoneVerification": "Please complete phone verification to proceed.",
+  "@venuePortalCompletePhoneVerification": {
+    "description": "Message when venue claim needs phone verification"
+  },
+  "venuePortalCreateFirstSpecial": "Create Your First Special",
+  "@venuePortalCreateFirstSpecial": {
+    "description": "Button to create the first game day special"
+  },
+  "venuePortalCrowdDensityDesc": "How crowded is your venue during matches?",
+  "@venuePortalCrowdDensityDesc": {
+    "description": "Description for crowd density section"
+  },
+  "venuePortalCurrentOccupancy": "Current Occupancy",
+  "@venuePortalCurrentOccupancy": {
+    "description": "Title for current occupancy section"
+  },
+  "venuePortalCurrentStatus": "Current Status",
+  "@venuePortalCurrentStatus": {
+    "description": "Label for current capacity status"
+  },
+  "venuePortalDeleteSpecial": "Delete Special?",
+  "@venuePortalDeleteSpecial": {
+    "description": "Title for delete special confirmation dialog"
+  },
+  "venuePortalDeleteSpecialConfirm": "Are you sure you want to delete \"{title}\"?",
+  "@venuePortalDeleteSpecialConfirm": {
+    "description": "Confirmation message for deleting a special",
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "venuePortalDescribeSpecial": "Describe your special...",
+  "@venuePortalDescribeSpecial": {
+    "description": "Hint text for special description field"
+  },
+  "venuePortalDisputeSubmitted": "Dispute submitted for review.",
+  "@venuePortalDisputeSubmitted": {
+    "description": "Snackbar when dispute is successfully submitted"
+  },
+  "venuePortalDisputeVenueClaim": "Dispute Venue Claim",
+  "@venuePortalDisputeVenueClaim": {
+    "description": "Title for dispute venue claim bottom sheet"
+  },
+  "venuePortalEditSpecial": "Edit Special",
+  "@venuePortalEditSpecial": {
+    "description": "Title for edit special bottom sheet"
+  },
+  "venuePortalEmptySpecialsMessage": "Add game day specials to attract more fans to your venue during matches.",
+  "@venuePortalEmptySpecialsMessage": {
+    "description": "Empty state description for game day specials"
+  },
+  "venuePortalEstimatedWaitTime": "Estimated Wait Time",
+  "@venuePortalEstimatedWaitTime": {
+    "description": "Title for estimated wait time section"
+  },
+  "venuePortalFanBaseAffinity": "Fan Base Affinity",
+  "@venuePortalFanBaseAffinity": {
+    "description": "Title for fan base affinity section"
+  },
+  "venuePortalFanBaseAffinityDesc": "Add team codes that your venue typically supports (e.g., USA, MEX, ARG)",
+  "@venuePortalFanBaseAffinityDesc": {
+    "description": "Description for fan base affinity section"
+  },
+  "venuePortalGameDaySpecials": "Game Day Specials",
+  "@venuePortalGameDaySpecials": {
+    "description": "Title for game day specials screen"
+  },
+  "venuePortalGuestsCount": "{current} / {max} guests",
+  "@venuePortalGuestsCount": {
+    "description": "Current and max guest count display",
+    "placeholders": {
+      "current": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "venuePortalLiveCapacity": "Live Capacity",
+  "@venuePortalLiveCapacity": {
+    "description": "Title for live capacity screen"
+  },
+  "venuePortalMatchBroadcasting": "Match Broadcasting",
+  "@venuePortalMatchBroadcasting": {
+    "description": "Title for match broadcasting screen"
+  },
+  "venuePortalMaxCapacity": "Max Capacity",
+  "@venuePortalMaxCapacity": {
+    "description": "Label for max capacity input field"
+  },
+  "venuePortalMaxCapacityDesc": "Set the maximum number of guests your venue can accommodate",
+  "@venuePortalMaxCapacityDesc": {
+    "description": "Description for maximum capacity section"
+  },
+  "venuePortalMaximumCapacity": "Maximum Capacity",
+  "@venuePortalMaximumCapacity": {
+    "description": "Title for maximum capacity section"
+  },
+  "venuePortalModerate": "Moderate",
+  "@venuePortalModerate": {
+    "description": "Capacity status when venue is moderately full"
+  },
+  "venuePortalNewSpecial": "New Special",
+  "@venuePortalNewSpecial": {
+    "description": "Title for new special bottom sheet"
+  },
+  "venuePortalNoSpecialsYet": "No Specials Yet",
+  "@venuePortalNoSpecialsYet": {
+    "description": "Empty state title for game day specials"
+  },
+  "venuePortalNoUpcomingMatches": "No upcoming matches found",
+  "@venuePortalNoUpcomingMatches": {
+    "description": "Empty state when no upcoming matches are found for broadcasting"
+  },
+  "venuePortalNoWait": "No Wait",
+  "@venuePortalNoWait": {
+    "description": "Wait time label for no wait"
+  },
+  "venuePortalNoiseLevelDesc": "What's the typical noise level during matches?",
+  "@venuePortalNoiseLevelDesc": {
+    "description": "Description for noise level section"
+  },
+  "venuePortalNoiseLevelTitle": "Noise Level",
+  "@venuePortalNoiseLevelTitle": {
+    "description": "Title for noise level section"
+  },
+  "venuePortalOneHourPlus": "1hr+",
+  "@venuePortalOneHourPlus": {
+    "description": "Wait time label for one hour or more"
+  },
+  "venuePortalPendingAdminReview": "Pending Admin Review",
+  "@venuePortalPendingAdminReview": {
+    "description": "Claim status when pending admin review"
+  },
+  "venuePortalPendingVerification": "Pending Verification",
+  "@venuePortalPendingVerification": {
+    "description": "Claim status when pending phone verification"
+  },
+  "venuePortalPitcherSpecialHint": "e.g., $5 Pitcher Special",
+  "@venuePortalPitcherSpecialHint": {
+    "description": "Hint text for special title field"
+  },
+  "venuePortalPlentyOfRoom": "Plenty of Room",
+  "@venuePortalPlentyOfRoom": {
+    "description": "Capacity status when venue has plenty of room"
+  },
+  "venuePortalReportDisputeClaim": "Report / Dispute Claim",
+  "@venuePortalReportDisputeClaim": {
+    "description": "Button to report or dispute a venue claim"
+  },
+  "venuePortalReportIncorrectClaim": "Report an incorrect claim on {venueName}",
+  "@venuePortalReportIncorrectClaim": {
+    "description": "Description for dispute bottom sheet",
+    "placeholders": {
+      "venueName": {"type": "String"}
+    }
+  },
+  "venuePortalReservationsClosed": "Reservations are closed",
+  "@venuePortalReservationsClosed": {
+    "description": "Subtitle when reservations are closed"
+  },
+  "venuePortalReservationsOpen": "Reservations are currently open",
+  "@venuePortalReservationsOpen": {
+    "description": "Subtitle when reservations are open"
+  },
+  "venuePortalSaveSelection": "Save Selection",
+  "@venuePortalSaveSelection": {
+    "description": "Button to save broadcasting match selection"
+  },
+  "venuePortalSaveSettings": "Save Settings",
+  "@venuePortalSaveSettings": {
+    "description": "Button to save atmosphere settings"
+  },
+  "venuePortalSaving": "Saving...",
+  "@venuePortalSaving": {
+    "description": "Button label while saving in progress"
+  },
+  "venuePortalSelectAll": "Select All",
+  "@venuePortalSelectAll": {
+    "description": "Button to select all matches for broadcasting"
+  },
+  "venuePortalSelectedCount": "{count} selected",
+  "@venuePortalSelectedCount": {
+    "description": "Chip showing number of selected matches",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "venuePortalSpecialActive": "Special is visible to users",
+  "@venuePortalSpecialActive": {
+    "description": "Subtitle for active special toggle"
+  },
+  "venuePortalSpecialPleaseEnterDescription": "Please enter a description",
+  "@venuePortalSpecialPleaseEnterDescription": {
+    "description": "Validation message for empty special description"
+  },
+  "venuePortalSpecialPleaseEnterTitle": "Please enter a title",
+  "@venuePortalSpecialPleaseEnterTitle": {
+    "description": "Validation message for empty special title"
+  },
+  "venuePortalSubmitDispute": "Submit Dispute",
+  "@venuePortalSubmitDispute": {
+    "description": "Button to submit a venue dispute"
+  },
+  "venuePortalSuffixGuests": "guests",
+  "@venuePortalSuffixGuests": {
+    "description": "Suffix text for max capacity input"
+  },
+  "venuePortalTypicalCrowd": "Typical Crowd",
+  "@venuePortalTypicalCrowd": {
+    "description": "Title for typical crowd section"
+  },
+  "venuePortalUnknownWait": "Unknown",
+  "@venuePortalUnknownWait": {
+    "description": "Wait time label for unknown wait"
+  },
+  "venuePortalUpdateCapacity": "Update Capacity",
+  "@venuePortalUpdateCapacity": {
+    "description": "Button to update venue capacity"
+  },
+  "venuePortalVenueLabel": "Venue: {name}",
+  "@venuePortalVenueLabel": {
+    "description": "Venue label in claim status dialog",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "venuePortalVenueVibe": "Venue Vibe",
+  "@venuePortalVenueVibe": {
+    "description": "Title for venue vibe tags section"
+  },
+  "venuePortalVibeTagsDesc": "Select tags that describe your venue's atmosphere",
+  "@venuePortalVibeTagsDesc": {
+    "description": "Description for venue vibe tags section"
+  },
+  "venuePortalWaitTimeMinutes": "~{minutes}m",
+  "@venuePortalWaitTimeMinutes": {
+    "description": "Wait time label in minutes",
+    "placeholders": {
+      "minutes": {"type": "int"}
+    }
   }
 }

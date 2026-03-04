@@ -5891,6 +5891,420 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Location sharing coming soon!'**
   String get locationSharingComingSoon;
+
+  /// Title for reservations toggle in venue capacity screen
+  ///
+  /// In en, this message translates to:
+  /// **'Accepting Reservations'**
+  String get venuePortalAcceptingReservations;
+
+  /// FAB label to add a game day special
+  ///
+  /// In en, this message translates to:
+  /// **'Add Special'**
+  String get venuePortalAddSpecial;
+
+  /// Hint text for team affinity input field
+  ///
+  /// In en, this message translates to:
+  /// **'Team code (e.g., USA)'**
+  String get venuePortalAddTeamHint;
+
+  /// Hint text for dispute additional details field
+  ///
+  /// In en, this message translates to:
+  /// **'Additional details...'**
+  String get venuePortalAdditionalDetails;
+
+  /// Capacity status when venue is almost full
+  ///
+  /// In en, this message translates to:
+  /// **'Almost Full'**
+  String get venuePortalAlmostFull;
+
+  /// Capacity status when venue is at max capacity
+  ///
+  /// In en, this message translates to:
+  /// **'At Capacity'**
+  String get venuePortalAtCapacity;
+
+  /// Title for atmosphere settings screen
+  ///
+  /// In en, this message translates to:
+  /// **'Atmosphere Settings'**
+  String get venuePortalAtmosphereSettings;
+
+  /// Snackbar when atmosphere settings are saved
+  ///
+  /// In en, this message translates to:
+  /// **'Atmosphere settings saved'**
+  String get venuePortalAtmosphereSettingsSaved;
+
+  /// Info text explaining match broadcasting selection
+  ///
+  /// In en, this message translates to:
+  /// **'Select the matches your venue will be broadcasting. Users will see your venue when searching for places to watch these matches.'**
+  String get venuePortalBroadcastingInfo;
+
+  /// Snackbar when broadcasting schedule is saved
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcasting schedule saved'**
+  String get venuePortalBroadcastingScheduleSaved;
+
+  /// Capacity status when venue is busy
+  ///
+  /// In en, this message translates to:
+  /// **'Busy'**
+  String get venuePortalBusy;
+
+  /// Snackbar when capacity is updated
+  ///
+  /// In en, this message translates to:
+  /// **'Capacity updated'**
+  String get venuePortalCapacityUpdated;
+
+  /// Title for claim status dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Claim Status'**
+  String get venuePortalClaimStatus;
+
+  /// Message when venue claim is pending admin review
+  ///
+  /// In en, this message translates to:
+  /// **'Your claim is being reviewed by an admin. You\'ll be notified when it\'s approved.'**
+  String get venuePortalClaimUnderReview;
+
+  /// Message when venue claim needs phone verification
+  ///
+  /// In en, this message translates to:
+  /// **'Please complete phone verification to proceed.'**
+  String get venuePortalCompletePhoneVerification;
+
+  /// Button to create the first game day special
+  ///
+  /// In en, this message translates to:
+  /// **'Create Your First Special'**
+  String get venuePortalCreateFirstSpecial;
+
+  /// Description for crowd density section
+  ///
+  /// In en, this message translates to:
+  /// **'How crowded is your venue during matches?'**
+  String get venuePortalCrowdDensityDesc;
+
+  /// Title for current occupancy section
+  ///
+  /// In en, this message translates to:
+  /// **'Current Occupancy'**
+  String get venuePortalCurrentOccupancy;
+
+  /// Label for current capacity status
+  ///
+  /// In en, this message translates to:
+  /// **'Current Status'**
+  String get venuePortalCurrentStatus;
+
+  /// Title for delete special confirmation dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Special?'**
+  String get venuePortalDeleteSpecial;
+
+  /// Confirmation message for deleting a special
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete \"{title}\"?'**
+  String venuePortalDeleteSpecialConfirm(String title);
+
+  /// Hint text for special description field
+  ///
+  /// In en, this message translates to:
+  /// **'Describe your special...'**
+  String get venuePortalDescribeSpecial;
+
+  /// Snackbar when dispute is successfully submitted
+  ///
+  /// In en, this message translates to:
+  /// **'Dispute submitted for review.'**
+  String get venuePortalDisputeSubmitted;
+
+  /// Title for dispute venue claim bottom sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Dispute Venue Claim'**
+  String get venuePortalDisputeVenueClaim;
+
+  /// Title for edit special bottom sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Special'**
+  String get venuePortalEditSpecial;
+
+  /// Empty state description for game day specials
+  ///
+  /// In en, this message translates to:
+  /// **'Add game day specials to attract more fans to your venue during matches.'**
+  String get venuePortalEmptySpecialsMessage;
+
+  /// Title for estimated wait time section
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated Wait Time'**
+  String get venuePortalEstimatedWaitTime;
+
+  /// Title for fan base affinity section
+  ///
+  /// In en, this message translates to:
+  /// **'Fan Base Affinity'**
+  String get venuePortalFanBaseAffinity;
+
+  /// Description for fan base affinity section
+  ///
+  /// In en, this message translates to:
+  /// **'Add team codes that your venue typically supports (e.g., USA, MEX, ARG)'**
+  String get venuePortalFanBaseAffinityDesc;
+
+  /// Title for game day specials screen
+  ///
+  /// In en, this message translates to:
+  /// **'Game Day Specials'**
+  String get venuePortalGameDaySpecials;
+
+  /// Current and max guest count display
+  ///
+  /// In en, this message translates to:
+  /// **'{current} / {max} guests'**
+  String venuePortalGuestsCount(int current, int max);
+
+  /// Title for live capacity screen
+  ///
+  /// In en, this message translates to:
+  /// **'Live Capacity'**
+  String get venuePortalLiveCapacity;
+
+  /// Title for match broadcasting screen
+  ///
+  /// In en, this message translates to:
+  /// **'Match Broadcasting'**
+  String get venuePortalMatchBroadcasting;
+
+  /// Label for max capacity input field
+  ///
+  /// In en, this message translates to:
+  /// **'Max Capacity'**
+  String get venuePortalMaxCapacity;
+
+  /// Description for maximum capacity section
+  ///
+  /// In en, this message translates to:
+  /// **'Set the maximum number of guests your venue can accommodate'**
+  String get venuePortalMaxCapacityDesc;
+
+  /// Title for maximum capacity section
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum Capacity'**
+  String get venuePortalMaximumCapacity;
+
+  /// Capacity status when venue is moderately full
+  ///
+  /// In en, this message translates to:
+  /// **'Moderate'**
+  String get venuePortalModerate;
+
+  /// Title for new special bottom sheet
+  ///
+  /// In en, this message translates to:
+  /// **'New Special'**
+  String get venuePortalNewSpecial;
+
+  /// Empty state title for game day specials
+  ///
+  /// In en, this message translates to:
+  /// **'No Specials Yet'**
+  String get venuePortalNoSpecialsYet;
+
+  /// Empty state when no upcoming matches are found for broadcasting
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming matches found'**
+  String get venuePortalNoUpcomingMatches;
+
+  /// Wait time label for no wait
+  ///
+  /// In en, this message translates to:
+  /// **'No Wait'**
+  String get venuePortalNoWait;
+
+  /// Description for noise level section
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s the typical noise level during matches?'**
+  String get venuePortalNoiseLevelDesc;
+
+  /// Title for noise level section
+  ///
+  /// In en, this message translates to:
+  /// **'Noise Level'**
+  String get venuePortalNoiseLevelTitle;
+
+  /// Wait time label for one hour or more
+  ///
+  /// In en, this message translates to:
+  /// **'1hr+'**
+  String get venuePortalOneHourPlus;
+
+  /// Claim status when pending admin review
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Admin Review'**
+  String get venuePortalPendingAdminReview;
+
+  /// Claim status when pending phone verification
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Verification'**
+  String get venuePortalPendingVerification;
+
+  /// Hint text for special title field
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., \$5 Pitcher Special'**
+  String get venuePortalPitcherSpecialHint;
+
+  /// Capacity status when venue has plenty of room
+  ///
+  /// In en, this message translates to:
+  /// **'Plenty of Room'**
+  String get venuePortalPlentyOfRoom;
+
+  /// Button to report or dispute a venue claim
+  ///
+  /// In en, this message translates to:
+  /// **'Report / Dispute Claim'**
+  String get venuePortalReportDisputeClaim;
+
+  /// Description for dispute bottom sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Report an incorrect claim on {venueName}'**
+  String venuePortalReportIncorrectClaim(String venueName);
+
+  /// Subtitle when reservations are closed
+  ///
+  /// In en, this message translates to:
+  /// **'Reservations are closed'**
+  String get venuePortalReservationsClosed;
+
+  /// Subtitle when reservations are open
+  ///
+  /// In en, this message translates to:
+  /// **'Reservations are currently open'**
+  String get venuePortalReservationsOpen;
+
+  /// Button to save broadcasting match selection
+  ///
+  /// In en, this message translates to:
+  /// **'Save Selection'**
+  String get venuePortalSaveSelection;
+
+  /// Button to save atmosphere settings
+  ///
+  /// In en, this message translates to:
+  /// **'Save Settings'**
+  String get venuePortalSaveSettings;
+
+  /// Button label while saving in progress
+  ///
+  /// In en, this message translates to:
+  /// **'Saving...'**
+  String get venuePortalSaving;
+
+  /// Button to select all matches for broadcasting
+  ///
+  /// In en, this message translates to:
+  /// **'Select All'**
+  String get venuePortalSelectAll;
+
+  /// Chip showing number of selected matches
+  ///
+  /// In en, this message translates to:
+  /// **'{count} selected'**
+  String venuePortalSelectedCount(int count);
+
+  /// Subtitle for active special toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Special is visible to users'**
+  String get venuePortalSpecialActive;
+
+  /// Validation message for empty special description
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a description'**
+  String get venuePortalSpecialPleaseEnterDescription;
+
+  /// Validation message for empty special title
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a title'**
+  String get venuePortalSpecialPleaseEnterTitle;
+
+  /// Button to submit a venue dispute
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Dispute'**
+  String get venuePortalSubmitDispute;
+
+  /// Suffix text for max capacity input
+  ///
+  /// In en, this message translates to:
+  /// **'guests'**
+  String get venuePortalSuffixGuests;
+
+  /// Title for typical crowd section
+  ///
+  /// In en, this message translates to:
+  /// **'Typical Crowd'**
+  String get venuePortalTypicalCrowd;
+
+  /// Wait time label for unknown wait
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get venuePortalUnknownWait;
+
+  /// Button to update venue capacity
+  ///
+  /// In en, this message translates to:
+  /// **'Update Capacity'**
+  String get venuePortalUpdateCapacity;
+
+  /// Venue label in claim status dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Venue: {name}'**
+  String venuePortalVenueLabel(String name);
+
+  /// Title for venue vibe tags section
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Vibe'**
+  String get venuePortalVenueVibe;
+
+  /// Description for venue vibe tags section
+  ///
+  /// In en, this message translates to:
+  /// **'Select tags that describe your venue\'s atmosphere'**
+  String get venuePortalVibeTagsDesc;
+
+  /// Wait time label in minutes
+  ///
+  /// In en, this message translates to:
+  /// **'~{minutes}m'**
+  String venuePortalWaitTimeMinutes(int minutes);
 }
 
 class _AppLocalizationsDelegate

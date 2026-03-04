@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
@@ -21,7 +22,7 @@ class GameDaySpecialsScreen extends StatelessWidget {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Game Day Specials'),
+            title: Text(AppLocalizations.of(context).venuePortalGameDaySpecials),
           ),
           body: state.gameSpecials.isEmpty
               ? _buildEmptyState(context)
@@ -29,7 +30,7 @@ class GameDaySpecialsScreen extends StatelessWidget {
           floatingActionButton: FloatingActionButton.extended(
             onPressed: () => _showAddSpecialDialog(context),
             icon: const Icon(Icons.add),
-            label: const Text('Add Special'),
+            label: Text(AppLocalizations.of(context).venuePortalAddSpecial),
           ),
         );
       },
@@ -52,12 +53,12 @@ class GameDaySpecialsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              'No Specials Yet',
+              AppLocalizations.of(context).venuePortalNoSpecialsYet,
               style: theme.textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
             Text(
-              'Add game day specials to attract more fans to your venue during matches.',
+              AppLocalizations.of(context).venuePortalEmptySpecialsMessage,
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -67,7 +68,7 @@ class GameDaySpecialsScreen extends StatelessWidget {
             FilledButton.icon(
               onPressed: () => _showAddSpecialDialog(context),
               icon: const Icon(Icons.add),
-              label: const Text('Create Your First Special'),
+              label: Text(AppLocalizations.of(context).venuePortalCreateFirstSpecial),
             ),
           ],
         ),
@@ -146,11 +147,11 @@ class GameDaySpecialsScreen extends StatelessWidget {
                     }
                   },
                   itemBuilder: (context) => [
-                    const PopupMenuItem(
+                    PopupMenuItem(
                       value: 'edit',
                       child: ListTile(
-                        leading: Icon(Icons.edit),
-                        title: Text('Edit'),
+                        leading: const Icon(Icons.edit),
+                        title: Text(AppLocalizations.of(context).edit),
                         contentPadding: EdgeInsets.zero,
                       ),
                     ),
@@ -160,15 +161,15 @@ class GameDaySpecialsScreen extends StatelessWidget {
                         leading: Icon(
                           special.isActive ? Icons.pause : Icons.play_arrow,
                         ),
-                        title: Text(special.isActive ? 'Deactivate' : 'Activate'),
+                        title: Text(special.isActive ? AppLocalizations.of(context).disabled : AppLocalizations.of(context).enabled),
                         contentPadding: EdgeInsets.zero,
                       ),
                     ),
-                    const PopupMenuItem(
+                    PopupMenuItem(
                       value: 'delete',
                       child: ListTile(
-                        leading: Icon(Icons.delete, color: Colors.red),
-                        title: Text('Delete', style: TextStyle(color: Colors.red)),
+                        leading: const Icon(Icons.delete, color: Colors.red),
+                        title: Text(AppLocalizations.of(context).delete, style: const TextStyle(color: Colors.red)),
                         contentPadding: EdgeInsets.zero,
                       ),
                     ),
@@ -264,12 +265,12 @@ class GameDaySpecialsScreen extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Delete Special?'),
-        content: Text('Are you sure you want to delete "${special.title}"?'),
+        title: Text(AppLocalizations.of(context).venuePortalDeleteSpecial),
+        content: Text(AppLocalizations.of(context).venuePortalDeleteSpecialConfirm(special.title)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context).cancel),
           ),
           FilledButton(
             onPressed: () {
@@ -279,7 +280,7 @@ class GameDaySpecialsScreen extends StatelessWidget {
             style: FilledButton.styleFrom(
               backgroundColor: Theme.of(context).colorScheme.error,
             ),
-            child: const Text('Delete'),
+            child: Text(AppLocalizations.of(context).delete),
           ),
         ],
       ),
@@ -375,7 +376,7 @@ class _SpecialEditorSheetState extends State<_SpecialEditorSheet> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                widget.existing != null ? 'Edit Special' : 'New Special',
+                widget.existing != null ? AppLocalizations.of(context).venuePortalEditSpecial : AppLocalizations.of(context).venuePortalNewSpecial,
                 style: theme.textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -383,14 +384,14 @@ class _SpecialEditorSheetState extends State<_SpecialEditorSheet> {
               const SizedBox(height: 24),
               TextFormField(
                 controller: _titleController,
-                decoration: const InputDecoration(
-                  labelText: 'Title',
-                  hintText: 'e.g., \$5 Pitcher Special',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context).titleLabel,
+                  hintText: AppLocalizations.of(context).venuePortalPitcherSpecialHint,
+                  border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a title';
+                    return AppLocalizations.of(context).venuePortalSpecialPleaseEnterTitle;
                   }
                   return null;
                 },
@@ -398,15 +399,15 @@ class _SpecialEditorSheetState extends State<_SpecialEditorSheet> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _descriptionController,
-                decoration: const InputDecoration(
-                  labelText: 'Description',
-                  hintText: 'Describe your special...',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context).description,
+                  hintText: AppLocalizations.of(context).venuePortalDescribeSpecial,
+                  border: const OutlineInputBorder(),
                 ),
                 maxLines: 2,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a description';
+                    return AppLocalizations.of(context).venuePortalSpecialPleaseEnterDescription;
                   }
                   return null;
                 },
@@ -470,8 +471,8 @@ class _SpecialEditorSheetState extends State<_SpecialEditorSheet> {
                     _isActive = value;
                   });
                 },
-                title: const Text('Active'),
-                subtitle: const Text('Special is visible to users'),
+                title: Text(AppLocalizations.of(context).enabled),
+                subtitle: Text(AppLocalizations.of(context).venuePortalSpecialActive),
                 contentPadding: EdgeInsets.zero,
               ),
               const SizedBox(height: 24),
@@ -479,7 +480,7 @@ class _SpecialEditorSheetState extends State<_SpecialEditorSheet> {
                 width: double.infinity,
                 child: FilledButton(
                   onPressed: _save,
-                  child: Text(widget.existing != null ? 'Update' : 'Create'),
+                  child: Text(widget.existing != null ? AppLocalizations.of(context).save : AppLocalizations.of(context).create),
                 ),
               ),
             ],

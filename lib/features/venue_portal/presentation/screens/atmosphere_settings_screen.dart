@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
@@ -61,8 +62,8 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Atmosphere settings saved'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).venuePortalAtmosphereSettingsSaved),
           backgroundColor: Colors.green,
         ),
       );
@@ -75,7 +76,7 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Atmosphere Settings'),
+            title: Text(AppLocalizations.of(context).venuePortalAtmosphereSettings),
           ),
           body: SingleChildScrollView(
             padding: const EdgeInsets.all(16),
@@ -119,7 +120,7 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
                         ),
                       )
                     : const Icon(Icons.save),
-                label: Text(state.isSaving ? 'Saving...' : 'Save Settings'),
+                label: Text(state.isSaving ? AppLocalizations.of(context).venuePortalSaving : AppLocalizations.of(context).venuePortalSaveSettings),
               ),
             ),
           ),
@@ -135,14 +136,14 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Venue Vibe',
+          AppLocalizations.of(context).venuePortalVenueVibe,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 8),
         Text(
-          'Select tags that describe your venue\'s atmosphere',
+          AppLocalizations.of(context).venuePortalVibeTagsDesc,
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
@@ -186,14 +187,14 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Noise Level',
+          AppLocalizations.of(context).venuePortalNoiseLevelTitle,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 8),
         Text(
-          'What\'s the typical noise level during matches?',
+          AppLocalizations.of(context).venuePortalNoiseLevelDesc,
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
@@ -230,14 +231,14 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Typical Crowd',
+          AppLocalizations.of(context).venuePortalTypicalCrowd,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 8),
         Text(
-          'How crowded is your venue during matches?',
+          AppLocalizations.of(context).venuePortalCrowdDensityDesc,
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
@@ -334,14 +335,14 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Fan Base Affinity',
+          AppLocalizations.of(context).venuePortalFanBaseAffinity,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 8),
         Text(
-          'Add team codes that your venue typically supports (e.g., USA, MEX, ARG)',
+          AppLocalizations.of(context).venuePortalFanBaseAffinityDesc,
           style: theme.textTheme.bodySmall?.copyWith(
             color: colorScheme.onSurfaceVariant,
           ),
@@ -369,9 +370,9 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
             Expanded(
               child: TextField(
                 controller: _teamController,
-                decoration: const InputDecoration(
-                  hintText: 'Team code (e.g., USA)',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  hintText: AppLocalizations.of(context).venuePortalAddTeamHint,
+                  border: const OutlineInputBorder(),
                 ),
                 textCapitalization: TextCapitalization.characters,
                 maxLength: 3,
@@ -389,7 +390,7 @@ class _AtmosphereSettingsScreenState extends State<AtmosphereSettingsScreen> {
                 }
               },
               icon: const Icon(Icons.add),
-              label: const Text('Add'),
+              label: Text(AppLocalizations.of(context).add),
             ),
           ],
         ),

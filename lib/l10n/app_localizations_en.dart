@@ -3181,4 +3181,234 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get locationSharingComingSoon => 'Location sharing coming soon!';
+
+  @override
+  String get venuePortalAcceptingReservations => 'Accepting Reservations';
+
+  @override
+  String get venuePortalAddSpecial => 'Add Special';
+
+  @override
+  String get venuePortalAddTeamHint => 'Team code (e.g., USA)';
+
+  @override
+  String get venuePortalAdditionalDetails => 'Additional details...';
+
+  @override
+  String get venuePortalAlmostFull => 'Almost Full';
+
+  @override
+  String get venuePortalAtCapacity => 'At Capacity';
+
+  @override
+  String get venuePortalAtmosphereSettings => 'Atmosphere Settings';
+
+  @override
+  String get venuePortalAtmosphereSettingsSaved => 'Atmosphere settings saved';
+
+  @override
+  String get venuePortalBroadcastingInfo =>
+      'Select the matches your venue will be broadcasting. Users will see your venue when searching for places to watch these matches.';
+
+  @override
+  String get venuePortalBroadcastingScheduleSaved =>
+      'Broadcasting schedule saved';
+
+  @override
+  String get venuePortalBusy => 'Busy';
+
+  @override
+  String get venuePortalCapacityUpdated => 'Capacity updated';
+
+  @override
+  String get venuePortalClaimStatus => 'Claim Status';
+
+  @override
+  String get venuePortalClaimUnderReview =>
+      'Your claim is being reviewed by an admin. You\'ll be notified when it\'s approved.';
+
+  @override
+  String get venuePortalCompletePhoneVerification =>
+      'Please complete phone verification to proceed.';
+
+  @override
+  String get venuePortalCreateFirstSpecial => 'Create Your First Special';
+
+  @override
+  String get venuePortalCrowdDensityDesc =>
+      'How crowded is your venue during matches?';
+
+  @override
+  String get venuePortalCurrentOccupancy => 'Current Occupancy';
+
+  @override
+  String get venuePortalCurrentStatus => 'Current Status';
+
+  @override
+  String get venuePortalDeleteSpecial => 'Delete Special?';
+
+  @override
+  String venuePortalDeleteSpecialConfirm(String title) {
+    return 'Are you sure you want to delete \"$title\"?';
+  }
+
+  @override
+  String get venuePortalDescribeSpecial => 'Describe your special...';
+
+  @override
+  String get venuePortalDisputeSubmitted => 'Dispute submitted for review.';
+
+  @override
+  String get venuePortalDisputeVenueClaim => 'Dispute Venue Claim';
+
+  @override
+  String get venuePortalEditSpecial => 'Edit Special';
+
+  @override
+  String get venuePortalEmptySpecialsMessage =>
+      'Add game day specials to attract more fans to your venue during matches.';
+
+  @override
+  String get venuePortalEstimatedWaitTime => 'Estimated Wait Time';
+
+  @override
+  String get venuePortalFanBaseAffinity => 'Fan Base Affinity';
+
+  @override
+  String get venuePortalFanBaseAffinityDesc =>
+      'Add team codes that your venue typically supports (e.g., USA, MEX, ARG)';
+
+  @override
+  String get venuePortalGameDaySpecials => 'Game Day Specials';
+
+  @override
+  String venuePortalGuestsCount(int current, int max) {
+    return '$current / $max guests';
+  }
+
+  @override
+  String get venuePortalLiveCapacity => 'Live Capacity';
+
+  @override
+  String get venuePortalMatchBroadcasting => 'Match Broadcasting';
+
+  @override
+  String get venuePortalMaxCapacity => 'Max Capacity';
+
+  @override
+  String get venuePortalMaxCapacityDesc =>
+      'Set the maximum number of guests your venue can accommodate';
+
+  @override
+  String get venuePortalMaximumCapacity => 'Maximum Capacity';
+
+  @override
+  String get venuePortalModerate => 'Moderate';
+
+  @override
+  String get venuePortalNewSpecial => 'New Special';
+
+  @override
+  String get venuePortalNoSpecialsYet => 'No Specials Yet';
+
+  @override
+  String get venuePortalNoUpcomingMatches => 'No upcoming matches found';
+
+  @override
+  String get venuePortalNoWait => 'No Wait';
+
+  @override
+  String get venuePortalNoiseLevelDesc =>
+      'What\'s the typical noise level during matches?';
+
+  @override
+  String get venuePortalNoiseLevelTitle => 'Noise Level';
+
+  @override
+  String get venuePortalOneHourPlus => '1hr+';
+
+  @override
+  String get venuePortalPendingAdminReview => 'Pending Admin Review';
+
+  @override
+  String get venuePortalPendingVerification => 'Pending Verification';
+
+  @override
+  String get venuePortalPitcherSpecialHint => 'e.g., \$5 Pitcher Special';
+
+  @override
+  String get venuePortalPlentyOfRoom => 'Plenty of Room';
+
+  @override
+  String get venuePortalReportDisputeClaim => 'Report / Dispute Claim';
+
+  @override
+  String venuePortalReportIncorrectClaim(String venueName) {
+    return 'Report an incorrect claim on $venueName';
+  }
+
+  @override
+  String get venuePortalReservationsClosed => 'Reservations are closed';
+
+  @override
+  String get venuePortalReservationsOpen => 'Reservations are currently open';
+
+  @override
+  String get venuePortalSaveSelection => 'Save Selection';
+
+  @override
+  String get venuePortalSaveSettings => 'Save Settings';
+
+  @override
+  String get venuePortalSaving => 'Saving...';
+
+  @override
+  String get venuePortalSelectAll => 'Select All';
+
+  @override
+  String venuePortalSelectedCount(int count) {
+    return '$count selected';
+  }
+
+  @override
+  String get venuePortalSpecialActive => 'Special is visible to users';
+
+  @override
+  String get venuePortalSpecialPleaseEnterDescription =>
+      'Please enter a description';
+
+  @override
+  String get venuePortalSpecialPleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get venuePortalSubmitDispute => 'Submit Dispute';
+
+  @override
+  String get venuePortalSuffixGuests => 'guests';
+
+  @override
+  String get venuePortalTypicalCrowd => 'Typical Crowd';
+
+  @override
+  String get venuePortalUnknownWait => 'Unknown';
+
+  @override
+  String get venuePortalUpdateCapacity => 'Update Capacity';
+
+  @override
+  String venuePortalVenueLabel(String name) {
+    return 'Venue: $name';
+  }
+
+  @override
+  String get venuePortalVenueVibe => 'Venue Vibe';
+
+  @override
+  String get venuePortalVibeTagsDesc =>
+      'Select tags that describe your venue\'s atmosphere';
+
+  @override
+  String venuePortalWaitTimeMinutes(int minutes) {
+    return '~${minutes}m';
+  }
 }

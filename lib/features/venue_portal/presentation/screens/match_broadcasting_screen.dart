@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
 
@@ -90,8 +91,8 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Broadcasting schedule saved'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).venuePortalBroadcastingScheduleSaved),
           backgroundColor: Colors.green,
         ),
       );
@@ -104,13 +105,13 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Match Broadcasting'),
+            title: Text(AppLocalizations.of(context).venuePortalMatchBroadcasting),
             actions: [
               if (_selectedMatchIds.isNotEmpty)
                 Padding(
                   padding: const EdgeInsets.only(right: 8),
                   child: Chip(
-                    label: Text('${_selectedMatchIds.length} selected'),
+                    label: Text(AppLocalizations.of(context).venuePortalSelectedCount(_selectedMatchIds.length)),
                     backgroundColor: Theme.of(context).colorScheme.primaryContainer,
                   ),
                 ),
@@ -131,7 +132,7 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
                     const SizedBox(width: 12),
                     Expanded(
                       child: Text(
-                        'Select the matches your venue will be broadcasting. Users will see your venue when searching for places to watch these matches.',
+                        AppLocalizations.of(context).venuePortalBroadcastingInfo,
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
@@ -151,7 +152,7 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
                         });
                       },
                       icon: const Icon(Icons.select_all, size: 18),
-                      label: const Text('Select All'),
+                      label: Text(AppLocalizations.of(context).venuePortalSelectAll),
                     ),
                     const SizedBox(width: 8),
                     OutlinedButton.icon(
@@ -161,7 +162,7 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
                         });
                       },
                       icon: const Icon(Icons.deselect, size: 18),
-                      label: const Text('Clear'),
+                      label: Text(AppLocalizations.of(context).clear),
                     ),
                   ],
                 ),
@@ -186,14 +187,14 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
                                 const SizedBox(height: 16),
                                 FilledButton(
                                   onPressed: _loadUpcomingMatches,
-                                  child: const Text('Retry'),
+                                  child: Text(AppLocalizations.of(context).retry),
                                 ),
                               ],
                             ),
                           )
                         : _upcomingMatches.isEmpty
-                            ? const Center(
-                                child: Text('No upcoming matches found'),
+                            ? Center(
+                                child: Text(AppLocalizations.of(context).venuePortalNoUpcomingMatches),
                               )
                             : ListView.builder(
                                 itemCount: _upcomingMatches.length,
@@ -221,7 +222,7 @@ class _MatchBroadcastingScreenState extends State<MatchBroadcastingScreen> {
                         ),
                       )
                     : const Icon(Icons.save),
-                label: Text(state.isSaving ? 'Saving...' : 'Save Selection'),
+                label: Text(state.isSaving ? AppLocalizations.of(context).venuePortalSaving : AppLocalizations.of(context).venuePortalSaveSelection),
               ),
             ),
           ),

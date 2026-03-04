@@ -3209,4 +3209,238 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get locationSharingComingSoon =>
       'Compartilhamento de localização em breve!';
+
+  @override
+  String get venuePortalAcceptingReservations => 'Aceitando Reservas';
+
+  @override
+  String get venuePortalAddSpecial => 'Adicionar Oferta';
+
+  @override
+  String get venuePortalAddTeamHint => 'Código do time (ex., USA)';
+
+  @override
+  String get venuePortalAdditionalDetails => 'Detalhes adicionais...';
+
+  @override
+  String get venuePortalAlmostFull => 'Quase Lotado';
+
+  @override
+  String get venuePortalAtCapacity => 'Lotado';
+
+  @override
+  String get venuePortalAtmosphereSettings => 'Configurações de Ambiente';
+
+  @override
+  String get venuePortalAtmosphereSettingsSaved =>
+      'Configurações de ambiente salvas';
+
+  @override
+  String get venuePortalBroadcastingInfo =>
+      'Selecione os jogos que seu local vai transmitir. Os usuários verão seu local ao procurar lugares para assistir a esses jogos.';
+
+  @override
+  String get venuePortalBroadcastingScheduleSaved =>
+      'Programação de transmissão salva';
+
+  @override
+  String get venuePortalBusy => 'Movimentado';
+
+  @override
+  String get venuePortalCapacityUpdated => 'Capacidade atualizada';
+
+  @override
+  String get venuePortalClaimStatus => 'Status da Reivindicação';
+
+  @override
+  String get venuePortalClaimUnderReview =>
+      'Sua reivindicação está sendo analisada por um administrador. Você será notificado quando for aprovada.';
+
+  @override
+  String get venuePortalCompletePhoneVerification =>
+      'Por favor, complete a verificação telefônica para continuar.';
+
+  @override
+  String get venuePortalCreateFirstSpecial => 'Crie Sua Primeira Oferta';
+
+  @override
+  String get venuePortalCrowdDensityDesc =>
+      'Qual a lotação do seu local durante os jogos?';
+
+  @override
+  String get venuePortalCurrentOccupancy => 'Ocupação Atual';
+
+  @override
+  String get venuePortalCurrentStatus => 'Status Atual';
+
+  @override
+  String get venuePortalDeleteSpecial => 'Excluir Oferta?';
+
+  @override
+  String venuePortalDeleteSpecialConfirm(String title) {
+    return 'Tem certeza de que deseja excluir \"$title\"?';
+  }
+
+  @override
+  String get venuePortalDescribeSpecial => 'Descreva sua oferta...';
+
+  @override
+  String get venuePortalDisputeSubmitted => 'Contestação enviada para análise.';
+
+  @override
+  String get venuePortalDisputeVenueClaim => 'Contestar Reivindicação do Local';
+
+  @override
+  String get venuePortalEditSpecial => 'Editar Oferta';
+
+  @override
+  String get venuePortalEmptySpecialsMessage =>
+      'Adicione ofertas do dia do jogo para atrair mais torcedores ao seu local durante os jogos.';
+
+  @override
+  String get venuePortalEstimatedWaitTime => 'Tempo de Espera Estimado';
+
+  @override
+  String get venuePortalFanBaseAffinity => 'Afinidade de Torcida';
+
+  @override
+  String get venuePortalFanBaseAffinityDesc =>
+      'Adicione códigos dos times que seu local normalmente apoia (ex., USA, MEX, ARG)';
+
+  @override
+  String get venuePortalGameDaySpecials => 'Ofertas do Dia do Jogo';
+
+  @override
+  String venuePortalGuestsCount(int current, int max) {
+    return '$current / $max convidados';
+  }
+
+  @override
+  String get venuePortalLiveCapacity => 'Capacidade ao Vivo';
+
+  @override
+  String get venuePortalMatchBroadcasting => 'Transmissão de Jogos';
+
+  @override
+  String get venuePortalMaxCapacity => 'Capacidade Máxima';
+
+  @override
+  String get venuePortalMaxCapacityDesc =>
+      'Defina o número máximo de convidados que seu local pode acomodar';
+
+  @override
+  String get venuePortalMaximumCapacity => 'Capacidade Máxima';
+
+  @override
+  String get venuePortalModerate => 'Moderado';
+
+  @override
+  String get venuePortalNewSpecial => 'Nova Oferta';
+
+  @override
+  String get venuePortalNoSpecialsYet => 'Sem Ofertas Ainda';
+
+  @override
+  String get venuePortalNoUpcomingMatches => 'Nenhum jogo próximo encontrado';
+
+  @override
+  String get venuePortalNoWait => 'Sem Espera';
+
+  @override
+  String get venuePortalNoiseLevelDesc =>
+      'Qual é o nível de barulho típico durante os jogos?';
+
+  @override
+  String get venuePortalNoiseLevelTitle => 'Nível de Barulho';
+
+  @override
+  String get venuePortalOneHourPlus => '1h+';
+
+  @override
+  String get venuePortalPendingAdminReview => 'Aguardando Revisão do Admin';
+
+  @override
+  String get venuePortalPendingVerification => 'Verificação Pendente';
+
+  @override
+  String get venuePortalPitcherSpecialHint => 'ex., Jarra por R\$25';
+
+  @override
+  String get venuePortalPlentyOfRoom => 'Bastante Espaço';
+
+  @override
+  String get venuePortalReportDisputeClaim =>
+      'Reportar / Contestar Reivindicação';
+
+  @override
+  String venuePortalReportIncorrectClaim(String venueName) {
+    return 'Reportar uma reivindicação incorreta em $venueName';
+  }
+
+  @override
+  String get venuePortalReservationsClosed => 'As reservas estão fechadas';
+
+  @override
+  String get venuePortalReservationsOpen => 'As reservas estão abertas';
+
+  @override
+  String get venuePortalSaveSelection => 'Salvar Seleção';
+
+  @override
+  String get venuePortalSaveSettings => 'Salvar Configurações';
+
+  @override
+  String get venuePortalSaving => 'Salvando...';
+
+  @override
+  String get venuePortalSelectAll => 'Selecionar Tudo';
+
+  @override
+  String venuePortalSelectedCount(int count) {
+    return '$count selecionados';
+  }
+
+  @override
+  String get venuePortalSpecialActive =>
+      'A oferta está visível para os usuários';
+
+  @override
+  String get venuePortalSpecialPleaseEnterDescription =>
+      'Por favor, insira uma descrição';
+
+  @override
+  String get venuePortalSpecialPleaseEnterTitle =>
+      'Por favor, insira um título';
+
+  @override
+  String get venuePortalSubmitDispute => 'Enviar Contestação';
+
+  @override
+  String get venuePortalSuffixGuests => 'convidados';
+
+  @override
+  String get venuePortalTypicalCrowd => 'Lotação Típica';
+
+  @override
+  String get venuePortalUnknownWait => 'Desconhecido';
+
+  @override
+  String get venuePortalUpdateCapacity => 'Atualizar Capacidade';
+
+  @override
+  String venuePortalVenueLabel(String name) {
+    return 'Local: $name';
+  }
+
+  @override
+  String get venuePortalVenueVibe => 'Clima do Local';
+
+  @override
+  String get venuePortalVibeTagsDesc =>
+      'Selecione tags que descrevam o ambiente do seu local';
+
+  @override
+  String venuePortalWaitTimeMinutes(int minutes) {
+    return '~${minutes}m';
+  }
 }

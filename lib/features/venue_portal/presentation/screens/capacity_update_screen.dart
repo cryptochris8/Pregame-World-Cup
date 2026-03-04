@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
 
@@ -57,8 +58,8 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Capacity updated'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).venuePortalCapacityUpdated),
           backgroundColor: Colors.green,
         ),
       );
@@ -71,7 +72,7 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Live Capacity'),
+            title: Text(AppLocalizations.of(context).venuePortalLiveCapacity),
           ),
           body: SingleChildScrollView(
             padding: const EdgeInsets.all(16),
@@ -120,7 +121,7 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
                         ),
                       )
                     : const Icon(Icons.save),
-                label: Text(state.isSaving ? 'Saving...' : 'Update Capacity'),
+                label: Text(state.isSaving ? AppLocalizations.of(context).venuePortalSaving : AppLocalizations.of(context).venuePortalUpdateCapacity),
               ),
             ),
           ),
@@ -137,23 +138,24 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
         ? (_currentOccupancy / _maxCapacity * 100).clamp(0.0, 100.0)
         : 0.0;
 
+    final l10n = AppLocalizations.of(context);
     Color statusColor;
     String statusText;
     if (occupancyPercent >= 95) {
       statusColor = Colors.red;
-      statusText = 'At Capacity';
+      statusText = l10n.venuePortalAtCapacity;
     } else if (occupancyPercent >= 80) {
       statusColor = Colors.orange;
-      statusText = 'Almost Full';
+      statusText = l10n.venuePortalAlmostFull;
     } else if (occupancyPercent >= 50) {
       statusColor = Colors.yellow.shade700;
-      statusText = 'Busy';
+      statusText = l10n.venuePortalBusy;
     } else if (occupancyPercent >= 25) {
       statusColor = Colors.green;
-      statusText = 'Moderate';
+      statusText = l10n.venuePortalModerate;
     } else {
       statusColor = Colors.green.shade700;
-      statusText = 'Plenty of Room';
+      statusText = l10n.venuePortalPlentyOfRoom;
     }
 
     return Card(
@@ -168,7 +170,7 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Current Status',
+                      AppLocalizations.of(context).venuePortalCurrentStatus,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: colorScheme.onSurfaceVariant,
                       ),
@@ -211,7 +213,7 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              '$_currentOccupancy / $_maxCapacity guests',
+              AppLocalizations.of(context).venuePortalGuestsCount(_currentOccupancy, _maxCapacity),
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),
@@ -229,14 +231,14 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Maximum Capacity',
+          AppLocalizations.of(context).venuePortalMaximumCapacity,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 8),
         Text(
-          'Set the maximum number of guests your venue can accommodate',
+          AppLocalizations.of(context).venuePortalMaxCapacityDesc,
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
@@ -244,10 +246,10 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
         const SizedBox(height: 16),
         TextFormField(
           initialValue: _maxCapacity.toString(),
-          decoration: const InputDecoration(
-            labelText: 'Max Capacity',
-            suffixText: 'guests',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            labelText: AppLocalizations.of(context).venuePortalMaxCapacity,
+            suffixText: AppLocalizations.of(context).venuePortalSuffixGuests,
+            border: const OutlineInputBorder(),
           ),
           keyboardType: TextInputType.number,
           onChanged: (value) {
@@ -277,7 +279,7 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Current Occupancy',
+              AppLocalizations.of(context).venuePortalCurrentOccupancy,
               style: theme.textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
@@ -337,7 +339,7 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Estimated Wait Time',
+          AppLocalizations.of(context).venuePortalEstimatedWaitTime,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -348,15 +350,16 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
           runSpacing: 8,
           children: waitTimes.map((time) {
             final isSelected = _waitTimeMinutes == time;
+            final l10n = AppLocalizations.of(context);
             String label;
             if (time == null) {
-              label = 'Unknown';
+              label = l10n.venuePortalUnknownWait;
             } else if (time == 0) {
-              label = 'No Wait';
+              label = l10n.venuePortalNoWait;
             } else if (time < 60) {
-              label = '~${time}m';
+              label = l10n.venuePortalWaitTimeMinutes(time);
             } else {
-              label = '1hr+';
+              label = l10n.venuePortalOneHourPlus;
             }
 
             return ChoiceChip(
@@ -386,15 +389,15 @@ class _CapacityUpdateScreenState extends State<CapacityUpdateScreen> {
           });
         },
         title: Text(
-          'Accepting Reservations',
+          AppLocalizations.of(context).venuePortalAcceptingReservations,
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.w600,
           ),
         ),
         subtitle: Text(
           _reservationsAvailable
-              ? 'Reservations are currently open'
-              : 'Reservations are closed',
+              ? AppLocalizations.of(context).venuePortalReservationsOpen
+              : AppLocalizations.of(context).venuePortalReservationsClosed,
         ),
         secondary: Icon(
           _reservationsAvailable ? Icons.check_circle : Icons.cancel,

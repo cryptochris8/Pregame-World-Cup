@@ -181,9 +181,10 @@ class ManageVenueButton extends StatelessWidget {
   }
 
   Widget _buildClaimPendingButton(BuildContext context, VenueEnhancement enhancement) {
+    final l10n = AppLocalizations.of(context);
     final statusText = enhancement.claimStatus == VenueClaimStatus.pendingVerification
-        ? 'Pending Verification'
-        : 'Pending Admin Review';
+        ? l10n.venuePortalPendingVerification
+        : l10n.venuePortalPendingAdminReview;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
@@ -195,25 +196,25 @@ class ManageVenueButton extends StatelessWidget {
             showDialog(
               context: context,
               builder: (ctx) => AlertDialog(
-                title: const Text('Claim Status'),
+                title: Text(l10n.venuePortalClaimStatus),
                 content: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Venue: ${venue.name}'),
+                    Text(l10n.venuePortalVenueLabel(venue.name)),
                     const SizedBox(height: 8),
-                    Text('Status: $statusText'),
+                    Text('${l10n.status}: $statusText'),
                     const SizedBox(height: 8),
                     if (enhancement.claimStatus == VenueClaimStatus.pendingVerification)
-                      const Text('Please complete phone verification to proceed.')
+                      Text(l10n.venuePortalCompletePhoneVerification)
                     else
-                      const Text('Your claim is being reviewed by an admin. You\'ll be notified when it\'s approved.'),
+                      Text(l10n.venuePortalClaimUnderReview),
                   ],
                 ),
                 actions: [
                   TextButton(
                     onPressed: () => Navigator.pop(ctx),
-                    child: const Text('OK'),
+                    child: Text(l10n.ok),
                   ),
                 ],
               ),
@@ -284,7 +285,7 @@ class ManageVenueButton extends StatelessWidget {
           TextButton.icon(
             onPressed: () => _showDisputeSheet(context, enhancement),
             icon: const Icon(Icons.flag_outlined, size: 16),
-            label: const Text('Report / Dispute Claim'),
+            label: Text(AppLocalizations.of(context).venuePortalReportDisputeClaim),
             style: TextButton.styleFrom(
               foregroundColor: Colors.white54,
             ),
@@ -317,9 +318,9 @@ class ManageVenueButton extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Dispute Venue Claim',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context).venuePortalDisputeVenueClaim,
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -327,7 +328,7 @@ class ManageVenueButton extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'Report an incorrect claim on ${venue.name}',
+                AppLocalizations.of(context).venuePortalReportIncorrectClaim(venue.name),
                 style: const TextStyle(color: Colors.white60, fontSize: 14),
               ),
               const SizedBox(height: 16),
@@ -361,7 +362,7 @@ class ManageVenueButton extends StatelessWidget {
                 maxLines: 3,
                 style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration(
-                  hintText: 'Additional details...',
+                  hintText: AppLocalizations.of(context).venuePortalAdditionalDetails,
                   hintStyle: const TextStyle(color: Colors.white38),
                   filled: true,
                   fillColor: const Color(0xFF334155),
@@ -388,9 +389,9 @@ class ManageVenueButton extends StatelessWidget {
                             if (ctx.mounted) {
                               Navigator.pop(ctx);
                               ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Dispute submitted for review.'),
-                                  backgroundColor: Color(0xFF10B981),
+                                SnackBar(
+                                  content: Text(AppLocalizations.of(context).venuePortalDisputeSubmitted),
+                                  backgroundColor: const Color(0xFF10B981),
                                 ),
                               );
                             }
@@ -415,9 +416,9 @@ class ManageVenueButton extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'Submit Dispute',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  child: Text(
+                    AppLocalizations.of(context).venuePortalSubmitDispute,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
