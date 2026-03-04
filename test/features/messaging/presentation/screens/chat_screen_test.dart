@@ -7,6 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:pregame_world_cup/features/messaging/domain/entities/chat.dart';
+import 'package:pregame_world_cup/features/messaging/domain/services/messaging_service.dart';
 import 'package:pregame_world_cup/features/messaging/presentation/screens/chat_screen.dart';
 import 'package:pregame_world_cup/features/messaging/presentation/widgets/chat_app_bar_title.dart';
 import 'package:pregame_world_cup/features/social/domain/services/social_service.dart';
@@ -84,6 +85,11 @@ void main() {
     // Register mock SocialService in GetIt (used by _unblockUser).
     if (!sl.isRegistered<SocialService>()) {
       sl.registerSingleton<SocialService>(MockSocialService());
+    }
+
+    // Register MessagingService in GetIt (screen resolves via sl<MessagingService>()).
+    if (!sl.isRegistered<MessagingService>()) {
+      sl.registerSingleton<MessagingService>(MessagingService());
     }
   });
 

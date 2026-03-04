@@ -10,6 +10,7 @@ import '../entities/watch_party_invite.dart';
 import '../../../../core/services/performance_monitor.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/analytics_service.dart';
+import '../../../../injection_container.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../moderation/moderation.dart';
 import 'watch_party_chat_service.dart';
@@ -34,7 +35,7 @@ class WatchPartyService {
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final AnalyticsService _analyticsService = AnalyticsService();
+  final AnalyticsService _analyticsService = sl<AnalyticsService>();
 
   late Box<WatchParty> _partiesBox;
 

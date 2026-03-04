@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../injection_container.dart';
 
 import '../../../watch_party/domain/entities/watch_party.dart';
 import '../../domain/services/admin_service.dart';
@@ -12,7 +13,7 @@ class AdminWatchPartiesScreen extends StatefulWidget {
 }
 
 class _AdminWatchPartiesScreenState extends State<AdminWatchPartiesScreen> {
-  final AdminService _adminService = AdminService();
+  final AdminService _adminService = sl<AdminService>();
 
   List<WatchParty> _parties = [];
   bool _isLoading = true;

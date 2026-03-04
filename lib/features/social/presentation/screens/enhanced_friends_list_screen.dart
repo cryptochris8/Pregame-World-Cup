@@ -578,7 +578,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
     );
 
     try {
-      final messagingService = MessagingService();
+      final messagingService = sl<MessagingService>();
       final chat = await messagingService.createDirectChat(
         friend.userId,
         friend.displayName,

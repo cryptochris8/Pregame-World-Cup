@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../injection_container.dart';
 
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/admin_user.dart';
@@ -13,7 +14,7 @@ class AdminNotificationsScreen extends StatefulWidget {
 }
 
 class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
-  final AdminService _adminService = AdminService();
+  final AdminService _adminService = sl<AdminService>();
   final _formKey = GlobalKey<FormState>();
 
   final _titleController = TextEditingController();

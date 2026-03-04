@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../domain/services/file_upload_service.dart';
 import '../../domain/entities/message.dart';
@@ -36,7 +37,7 @@ class MessageInputWidget extends StatefulWidget {
 class _MessageInputWidgetState extends State<MessageInputWidget> {
   final TextEditingController _textController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
-  final MessagingService _messagingService = MessagingService();
+  final MessagingService _messagingService = sl<MessagingService>();
   final FileUploadService _fileUploadService = FileUploadService();
   final ImagePicker _imagePicker = ImagePicker();
 

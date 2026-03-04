@@ -29,7 +29,7 @@ class NewChatBottomSheet extends StatefulWidget {
 class _NewChatBottomSheetState extends State<NewChatBottomSheet>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  final MessagingService _messagingService = MessagingService();
+  final MessagingService _messagingService = sl<MessagingService>();
   final SocialService _socialService = sl<SocialService>();
 
   final TextEditingController _searchController = TextEditingController();

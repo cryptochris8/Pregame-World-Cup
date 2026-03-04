@@ -247,9 +247,12 @@ void main() {
     mockRevenueCatService = MockRevenueCatService();
     mockUser = MockUser();
 
-    // Register SocialService in GetIt so AuthService constructor can resolve it
+    // Register services in GetIt so AuthService constructor can resolve them
     if (!sl.isRegistered<SocialService>()) {
       sl.registerLazySingleton<SocialService>(() => mockSocialService);
+    }
+    if (!sl.isRegistered<AnalyticsService>()) {
+      sl.registerSingleton<AnalyticsService>(mockAnalyticsService);
     }
 
     authService = TestableAuthService(

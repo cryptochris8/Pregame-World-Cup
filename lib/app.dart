@@ -291,7 +291,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
       debugLog('NOTIFICATION: Navigating to chat $chatId');
 
       // Get the chat from MessagingService
-      final messagingService = MessagingService();
+      final messagingService = di.sl<MessagingService>();
       final chat = await messagingService.getChatById(chatId);
 
       if (chat != null && mounted) {

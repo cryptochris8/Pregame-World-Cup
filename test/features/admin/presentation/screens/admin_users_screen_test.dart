@@ -2,6 +2,7 @@ import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:get_it/get_it.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:pregame_world_cup/features/admin/domain/entities/admin_user.dart';
 import 'package:pregame_world_cup/features/admin/domain/services/admin_service.dart';
@@ -51,8 +52,9 @@ void main() {
     when(() => mockAuth.currentUser).thenReturn(mockUser);
   });
 
-  tearDown(() {
+  tearDown(() async {
     AdminService.resetInstance();
+    await GetIt.instance.reset();
   });
 
   /// Seed an admin user document, initialize the AdminService singleton
@@ -78,6 +80,11 @@ void main() {
       moderationService: mockModerationService,
       pushService: mockPushService,
     );
+
+    // Register in GetIt so the screen can resolve it via sl<AdminService>()
+    final sl = GetIt.instance;
+    if (sl.isRegistered<AdminService>()) sl.unregister<AdminService>();
+    sl.registerSingleton<AdminService>(service);
 
     // Initialize so that isAdmin becomes true (loads admin doc)
     await service.initialize();

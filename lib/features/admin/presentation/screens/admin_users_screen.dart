@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../injection_container.dart';
 
 import '../../../social/domain/entities/user_profile.dart';
 import '../../domain/services/admin_service.dart';
@@ -12,7 +13,7 @@ class AdminUsersScreen extends StatefulWidget {
 }
 
 class _AdminUsersScreenState extends State<AdminUsersScreen> {
-  final AdminService _adminService = AdminService();
+  final AdminService _adminService = sl<AdminService>();
   final TextEditingController _searchController = TextEditingController();
 
   List<UserProfile> _users = [];

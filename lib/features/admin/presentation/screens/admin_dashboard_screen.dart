@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 
 import '../../domain/entities/admin_user.dart';
 import '../../domain/services/admin_service.dart';
@@ -19,7 +20,7 @@ class AdminDashboardScreen extends StatefulWidget {
 }
 
 class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
-  final AdminService _adminService = AdminService();
+  final AdminService _adminService = sl<AdminService>();
   AdminDashboardStats _stats = AdminDashboardStats.empty();
   bool _isLoading = true;
   String? _error;

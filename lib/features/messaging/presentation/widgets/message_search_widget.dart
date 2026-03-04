@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/services/messaging_service.dart';
+import '../../../../injection_container.dart';
 import '../../../../core/services/logging_service.dart';
 
 class MessageSearchWidget extends StatefulWidget {
@@ -19,7 +20,7 @@ class MessageSearchWidget extends StatefulWidget {
 
 class _MessageSearchWidgetState extends State<MessageSearchWidget> {
   final TextEditingController _searchController = TextEditingController();
-  final MessagingService _messagingService = MessagingService();
+  final MessagingService _messagingService = sl<MessagingService>();
   List<Message> _searchResults = [];
   bool _isSearching = false;
   String _searchQuery = '';

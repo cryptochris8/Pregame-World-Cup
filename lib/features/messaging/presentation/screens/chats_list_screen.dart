@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
 import '../widgets/chat_list_item.dart';
@@ -21,7 +22,7 @@ class ChatsListScreen extends StatefulWidget {
 }
 
 class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderStateMixin {
-  final MessagingService _messagingService = MessagingService();
+  final MessagingService _messagingService = sl<MessagingService>();
   final TextEditingController _searchController = TextEditingController();
 
   late TabController _tabController;

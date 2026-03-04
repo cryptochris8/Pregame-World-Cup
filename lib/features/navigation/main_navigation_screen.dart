@@ -36,7 +36,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     with TickerProviderStateMixin {
   late int _selectedIndex;
   final NotificationService _notificationService = di.sl<NotificationService>();
-  final MessagingService _messagingService = MessagingService();
+  final MessagingService _messagingService = di.sl<MessagingService>();
   int _unreadNotifications = 0;
   int _unreadMessages = 0;
   StreamSubscription<int>? _notificationSubscription;

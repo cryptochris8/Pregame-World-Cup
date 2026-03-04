@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'analytics_service.dart';
+import '../../injection_container.dart';
 
 /// Mixin for automatic screen view tracking
 ///
@@ -24,7 +25,7 @@ mixin AnalyticsScreenMixin<T extends StatefulWidget> on State<T> {
   /// Override to add custom tracking parameters
   Map<String, Object>? get screenParameters => null;
 
-  final AnalyticsService _analyticsService = AnalyticsService();
+  AnalyticsService get _analyticsService => sl<AnalyticsService>();
 
   @override
   void initState() {
@@ -94,7 +95,7 @@ class _AnalyticsScreenWrapperState extends State<AnalyticsScreenWrapper> {
   @override
   void initState() {
     super.initState();
-    AnalyticsService().logScreenView(
+    sl<AnalyticsService>().logScreenView(
       screenName: widget.screenName,
       screenClass: widget.screenClass,
     );
@@ -108,7 +109,7 @@ class _AnalyticsScreenWrapperState extends State<AnalyticsScreenWrapper> {
 
 /// Route observer for automatic screen tracking with Navigator
 class AnalyticsRouteObserver extends RouteObserver<PageRoute<dynamic>> {
-  final AnalyticsService _analyticsService = AnalyticsService();
+  AnalyticsService get _analyticsService => sl<AnalyticsService>();
 
   void _sendScreenView(PageRoute<dynamic> route) {
     final screenName = route.settings.name;

@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/services/logging_service.dart';
 import '../../../../core/services/analytics_service.dart';
+import '../../../../injection_container.dart';
 import '../entities/shareable_content.dart';
 
 /// Service for sharing content to social media platforms
@@ -20,7 +21,7 @@ class SocialSharingService {
   final AnalyticsService _analytics;
 
   SocialSharingService._({AnalyticsService? analytics})
-      : _analytics = analytics ?? AnalyticsService();
+      : _analytics = analytics ?? sl<AnalyticsService>();
 
   factory SocialSharingService({AnalyticsService? analytics}) {
     _instance ??= SocialSharingService._(analytics: analytics);

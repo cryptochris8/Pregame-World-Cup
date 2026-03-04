@@ -3,6 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 
+import 'package:pregame_world_cup/core/services/analytics_service.dart';
 import 'package:pregame_world_cup/features/chatbot/data/services/chatbot_knowledge_base.dart';
 import 'package:pregame_world_cup/features/chatbot/domain/services/intent_classifier.dart';
 import 'package:pregame_world_cup/features/chatbot/domain/services/response_generator.dart';
@@ -32,6 +33,8 @@ void main() {
 
   setUp(() async {
     await sl.reset();
+    // Register prerequisites needed by SocialSharingService
+    sl.registerLazySingleton<AnalyticsService>(() => AnalyticsService());
   });
 
   group('Extended Features DI - registerExtendedFeatures', () {

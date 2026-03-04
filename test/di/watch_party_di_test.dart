@@ -3,6 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 
+import 'package:pregame_world_cup/core/services/analytics_service.dart';
 import 'package:pregame_world_cup/features/watch_party/domain/services/watch_party_service.dart';
 import 'package:pregame_world_cup/features/watch_party/domain/services/watch_party_payment_service.dart';
 import 'package:pregame_world_cup/features/watch_party/presentation/bloc/watch_party_bloc.dart';
@@ -26,6 +27,8 @@ void main() {
 
   setUp(() async {
     await sl.reset();
+    // Register prerequisites needed by WatchPartyService
+    sl.registerLazySingleton<AnalyticsService>(() => AnalyticsService());
   });
 
   group('Watch Party DI - registerWatchPartyServices', () {

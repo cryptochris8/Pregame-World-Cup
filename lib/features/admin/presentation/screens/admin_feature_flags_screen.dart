@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 
 import '../../domain/entities/admin_user.dart';
 import '../../domain/services/admin_service.dart';
@@ -13,7 +14,7 @@ class AdminFeatureFlagsScreen extends StatefulWidget {
 }
 
 class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
-  final AdminService _adminService = AdminService();
+  final AdminService _adminService = sl<AdminService>();
 
   List<FeatureFlag> _flags = [];
   bool _isLoading = true;

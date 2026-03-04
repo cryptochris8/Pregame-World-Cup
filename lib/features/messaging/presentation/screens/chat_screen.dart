@@ -32,7 +32,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  final MessagingService _messagingService = MessagingService();
+  final MessagingService _messagingService = sl<MessagingService>();
   final ScrollController _scrollController = ScrollController();
   String? _replyToMessageId;
   bool _isLoading = true;

@@ -11,7 +11,7 @@ class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final SocialService _socialService = sl<SocialService>();
-  final AnalyticsService _analyticsService = AnalyticsService();
+  final AnalyticsService _analyticsService = sl<AnalyticsService>();
 
   // Stream to listen to authentication state changes
   Stream<User?> get authStateChanges => _firebaseAuth.authStateChanges();

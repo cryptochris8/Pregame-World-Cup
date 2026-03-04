@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 
 import '../../../moderation/domain/entities/report.dart';
 import '../../domain/services/admin_service.dart';
@@ -13,7 +14,7 @@ class AdminModerationScreen extends StatefulWidget {
 }
 
 class _AdminModerationScreenState extends State<AdminModerationScreen> {
-  final AdminService _adminService = AdminService();
+  final AdminService _adminService = sl<AdminService>();
 
   List<Report> _reports = [];
   bool _isLoading = true;

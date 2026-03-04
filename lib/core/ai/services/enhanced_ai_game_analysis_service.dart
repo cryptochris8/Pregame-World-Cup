@@ -172,28 +172,28 @@ class EnhancedAIGameAnalysisService {
   /// Generate mock team data for fallback
   Map<String, dynamic> _getMockTeamData(String teamName) {
     return {
-      'roster': _generateMockRoster(teamName),
-      'playerCount': 25,
+      'squad': _generateMockSquad(teamName),
+      'playerCount': 26,
       'dataSource': 'mock',
       'quality': 'fallback',
       'stats': {
-        'wins': 7,
-        'losses': 3,
-        'avgPointsFor': 28.5,
-        'avgPointsAgainst': 21.2,
-        'winPercentage': 0.7,
+        'wins': 5,
+        'draws': 3,
+        'losses': 2,
+        'goalsFor': 14,
+        'goalsAgainst': 8,
+        'winPercentage': 0.5,
       }
     };
   }
-  
-  /// Generate mock roster for fallback
-  List<Map<String, dynamic>> _generateMockRoster(String teamName) {
-    final positions = ['QB', 'RB', 'WR', 'TE', 'OL', 'DL', 'LB', 'CB', 'S', 'K'];
-    return List.generate(25, (index) => {
+
+  /// Generate mock squad for fallback
+  List<Map<String, dynamic>> _generateMockSquad(String teamName) {
+    final positions = ['GK', 'CB', 'CB', 'LB', 'RB', 'CDM', 'CM', 'CM', 'LW', 'RW', 'ST'];
+    return List.generate(26, (index) => {
       'name': '$teamName Player ${index + 1}',
       'position': positions[index % positions.length],
       'number': index + 1,
-      'class': ['FR', 'SO', 'JR', 'SR'][index % 4],
     });
   }
   
@@ -202,10 +202,10 @@ class EnhancedAIGameAnalysisService {
     try {
       // Use intelligent prediction based on available data
       return {
-        'homeTeamWinProbability': 0.52, // Slight home field advantage
+        'homeTeamWinProbability': 0.52, // Slight home advantage
         'predictedScore': {
-          'home': 24,
-          'away': 21,
+          'home': 2,
+          'away': 1,
         },
         'confidence': 0.65,
         'keyFactors': [
@@ -287,28 +287,28 @@ class EnhancedAIGameAnalysisService {
       buffer.writeln('${game.homeTeamName} SEASON ANALYSIS:');
       if (performance != null) {
         buffer.writeln('• Record: ${performance['record']}');
-        buffer.writeln('• Avg Points Scored: ${performance['avgPointsFor']}');
-        buffer.writeln('• Avg Points Allowed: ${performance['avgPointsAgainst']}');
-        buffer.writeln('• Point Differential: ${performance['pointDifferential']}');
+        buffer.writeln('• Goals Scored: ${performance['avgPointsFor']}');
+        buffer.writeln('• Goals Conceded: ${performance['avgPointsAgainst']}');
+        buffer.writeln('• Goal Differential: ${performance['pointDifferential']}');
       }
-      buffer.writeln('• Season Story: ${review['narrative']}');
+      buffer.writeln('• Campaign Summary: ${review['narrative']}');
       buffer.writeln('');
     }
-    
+
     if (awayData != null && awayData['seasonReview'] != null) {
       final review = awayData['seasonReview'] as Map<String, dynamic>;
       final performance = review['performance'] as Map<String, dynamic>?;
       buffer.writeln('${game.awayTeamName} SEASON ANALYSIS:');
       if (performance != null) {
         buffer.writeln('• Record: ${performance['record']}');
-        buffer.writeln('• Avg Points Scored: ${performance['avgPointsFor']}');
-        buffer.writeln('• Avg Points Allowed: ${performance['avgPointsAgainst']}');
-        buffer.writeln('• Point Differential: ${performance['pointDifferential']}');
+        buffer.writeln('• Goals Scored: ${performance['avgPointsFor']}');
+        buffer.writeln('• Goals Conceded: ${performance['avgPointsAgainst']}');
+        buffer.writeln('• Goal Differential: ${performance['pointDifferential']}');
       }
-      buffer.writeln('• Season Story: ${review['narrative']}');
+      buffer.writeln('• Campaign Summary: ${review['narrative']}');
       buffer.writeln('');
     }
-    
+
     // Add head-to-head history if available
     if (headToHead != null && headToHead['narrative'] != null) {
       buffer.writeln('HEAD-TO-HEAD HISTORY:');
@@ -320,7 +320,7 @@ class EnhancedAIGameAnalysisService {
     buffer.writeln('Create a compelling, detailed analysis focusing on:');
     buffer.writeln('1. SEASON SUMMARY: How each team has performed this season with specific stats');
     buffer.writeln('2. HISTORICAL CONTEXT: Use the head-to-head narrative to build excitement');
-    buffer.writeln('3. KEY MATCHUP FACTORS: Offensive vs defensive strengths, point differentials');
+    buffer.writeln('3. KEY MATCHUP FACTORS: Attacking vs defensive strengths, goal differentials');
     buffer.writeln('4. PREDICTION: Winner with score prediction and confidence level');
     buffer.writeln('');
     buffer.writeln('Write in an engaging, sports analyst style with specific statistics and compelling storylines.');
