@@ -35,7 +35,7 @@ class MainNavigationScreen extends StatefulWidget {
 class _MainNavigationScreenState extends State<MainNavigationScreen>
     with TickerProviderStateMixin {
   late int _selectedIndex;
-  final NotificationService _notificationService = NotificationService();
+  final NotificationService _notificationService = di.sl<NotificationService>();
   final MessagingService _messagingService = MessagingService();
   int _unreadNotifications = 0;
   int _unreadMessages = 0;

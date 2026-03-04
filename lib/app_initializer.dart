@@ -25,6 +25,7 @@ import 'core/services/deep_link_navigator.dart';
 import 'core/services/accessibility_service.dart';
 import 'services/revenuecat_service.dart';
 import 'features/social/domain/services/social_service.dart';
+import 'features/social/domain/services/notification_service.dart';
 import 'features/worldcup/utils/timezone_utils.dart';
 
 /// Production-safe logging function - only logs in debug mode
@@ -382,6 +383,9 @@ void _initializeSocialServiceBackground() async {
 
     final socialService = di.sl<SocialService>();
     await socialService.initialize();
+
+    final notificationService = di.sl<NotificationService>();
+    await notificationService.initialize();
 
     debugLog('SOCIAL: Background initialization completed');
   } catch (e) {

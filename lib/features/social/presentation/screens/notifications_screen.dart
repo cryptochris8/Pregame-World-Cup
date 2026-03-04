@@ -4,6 +4,7 @@ import '../../domain/entities/notification.dart';
 import '../../domain/services/notification_service.dart';
 import '../widgets/notification_item_widget.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../injection_container.dart';
 
 import '../../../../core/utils/team_logo_helper.dart';
 
@@ -16,7 +17,7 @@ class NotificationsScreen extends StatefulWidget {
 
 class _NotificationsScreenState extends State<NotificationsScreen>
     with SingleTickerProviderStateMixin {
-  final NotificationService _notificationService = NotificationService();
+  final NotificationService _notificationService = sl<NotificationService>();
   
   List<SocialNotification> _notifications = [];
   bool _isLoading = true;

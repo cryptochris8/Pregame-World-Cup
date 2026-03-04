@@ -8,16 +8,19 @@ class NotificationService {
   static const String _preferencesBoxName = 'notification_preferences';
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  
+
   late Box<SocialNotification> _notificationsBox;
   late Box<NotificationPreferences> _preferencesBox;
-  
+
   // In-memory cache
   final Map<String, List<SocialNotification>> _userNotificationsCache = {};
   final Map<String, NotificationPreferences> _preferencesCache = {};
 
-  /// Initialize the notification service
+  bool _isInitialized = false;
+
+  /// Initialize the notification service (idempotent - safe to call multiple times)
   Future<void> initialize() async {
+    if (_isInitialized) return;
     try {
       // Register Hive adapters if not already registered
       if (!Hive.isAdapterRegistered(16)) {
@@ -35,8 +38,8 @@ class NotificationService {
       
       _notificationsBox = await Hive.openBox<SocialNotification>(_notificationsBoxName);
       _preferencesBox = await Hive.openBox<NotificationPreferences>(_preferencesBoxName);
-      
-      // Service initialized
+
+      _isInitialized = true;
     } catch (e) {
       // Error handled silently
       rethrow;

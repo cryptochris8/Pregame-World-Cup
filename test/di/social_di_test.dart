@@ -10,6 +10,7 @@ import 'package:mocktail/mocktail.dart';
 
 import 'package:pregame_world_cup/features/social/data/datasources/social_datasource.dart';
 import 'package:pregame_world_cup/features/social/domain/services/social_service.dart';
+import 'package:pregame_world_cup/features/social/domain/services/notification_service.dart';
 import 'package:pregame_world_cup/features/schedule/data/datasources/live_scores_datasource.dart';
 import 'package:pregame_world_cup/services/zapier_service.dart';
 
@@ -19,6 +20,7 @@ import 'package:pregame_world_cup/di/social_di.dart';
 ///
 /// registerSocialServices registers:
 ///   - SocialService
+///   - NotificationService
 ///   - SocialDataSource -> SocialDataSourceImpl (needs firestore + auth)
 ///   - ZapierService (needs Dio)
 ///   - LiveScoresDataSource -> LiveScoresDataSourceImpl (needs Dio + apiKey)
@@ -44,8 +46,9 @@ void main() {
       registerSocialServices(sl);
     });
 
-    test('registers all 4 expected types', () {
+    test('registers all 5 expected types', () {
       expect(sl.isRegistered<SocialService>(), isTrue);
+      expect(sl.isRegistered<NotificationService>(), isTrue);
       expect(sl.isRegistered<SocialDataSource>(), isTrue);
       expect(sl.isRegistered<ZapierService>(), isTrue);
       expect(sl.isRegistered<LiveScoresDataSource>(), isTrue);
@@ -54,6 +57,12 @@ void main() {
     test('SocialService is a lazy singleton', () {
       final a = sl<SocialService>();
       final b = sl<SocialService>();
+      expect(identical(a, b), isTrue);
+    });
+
+    test('NotificationService is a lazy singleton', () {
+      final a = sl<NotificationService>();
+      final b = sl<NotificationService>();
       expect(identical(a, b), isTrue);
     });
 
