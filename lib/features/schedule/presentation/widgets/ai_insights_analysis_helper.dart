@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import '../../domain/entities/game_schedule.dart';
 import '../../../../core/services/logging_service.dart';
-import '../../../../core/ai/services/ai_team_season_summary_service.dart';
 import '../../../../core/ai/services/enhanced_ai_game_analysis_service.dart';
 import '../../../../core/entities/player.dart';
 import '../../../../core/entities/team_statistics.dart';
@@ -13,7 +12,6 @@ import '../../../../injection_container.dart';
 class AIInsightsAnalysisHelper {
   final GameSchedule game;
 
-  late final AITeamSeasonSummaryService seasonSummaryService;
   late final EnhancedAIGameAnalysisService enhancedAnalysisService;
 
   // Data state
@@ -33,7 +31,6 @@ class AIInsightsAnalysisHelper {
   /// Initialize services. Returns an error string if initialization fails, null on success.
   String? initializeServices() {
     try {
-      seasonSummaryService = sl<AITeamSeasonSummaryService>();
       enhancedAnalysisService = sl<EnhancedAIGameAnalysisService>();
       return null;
     } catch (e, stack) {
@@ -239,29 +236,7 @@ class AIInsightsAnalysisHelper {
   }
 
   Future<Map<String, dynamic>> getRealSeasonData(String teamName) async {
-    try {
-      final seasonSummary = await seasonSummaryService.generateTeamSeasonSummary(teamName);
-      final performance = seasonSummary['performance'] as Map<String, dynamic>? ?? {};
-      final record = performance['record'] as String? ?? '0-0';
-      final wins = performance['wins'] as int? ?? 0;
-      final losses = performance['losses'] as int? ?? 0;
-
-      return {
-        'performance': {
-          'record': record,
-          'wins': wins,
-          'losses': losses,
-          'avgPointsFor': performance['avgPointsFor'] ?? 24,
-          'avgPointsAgainst': performance['avgPointsAgainst'] ?? 24,
-          'pointDifferential': (performance['avgPointsFor'] ?? 24) - (performance['avgPointsAgainst'] ?? 24),
-        },
-        'narrative': seasonSummary['narrative'] ?? '$teamName had a competitive season.',
-        'highlights': seasonSummary['highlights'] ?? ['Strong team performance', 'Key victories throughout season', 'Competitive play'],
-        'dataSource': 'Real historical data',
-      };
-    } catch (e) {
-      return generateFallbackSeasonData(teamName);
-    }
+    return generateFallbackSeasonData(teamName);
   }
 
   Map<String, dynamic> generateFallbackSeasonData(String teamName) {

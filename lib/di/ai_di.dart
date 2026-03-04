@@ -5,7 +5,6 @@ import '../core/ai/services/ai_service.dart';
 import '../core/ai/services/claude_service.dart';
 import '../core/ai/services/multi_provider_ai_service.dart';
 import '../core/ai/services/ai_historical_knowledge_service.dart';
-import '../core/ai/services/ai_team_season_summary_service.dart';
 import '../core/ai/services/enhanced_ai_game_analysis_service.dart';
 import '../core/services/historical_game_analysis_service.dart';
 import '../core/services/user_learning_service.dart';
@@ -23,7 +22,6 @@ void registerAIServices(GetIt sl) {
   sl.registerLazySingleton(() => UserLearningService());
 
   sl.registerLazySingleton(() => AIHistoricalKnowledgeService.instance);
-  sl.registerLazySingleton(() => AITeamSeasonSummaryService.instance);
   sl.registerLazySingleton(() => EnhancedAIGameAnalysisService.instance);
   sl.registerLazySingleton(() => HistoricalGameAnalysisService());
 }

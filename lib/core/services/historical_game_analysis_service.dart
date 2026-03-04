@@ -3,8 +3,6 @@ import 'dart:math';
 import 'package:pregame_world_cup/config/api_keys.dart';
 import 'package:pregame_world_cup/core/services/logging_service.dart';
 import 'package:pregame_world_cup/core/services/team_mapping_service.dart';
-import 'package:pregame_world_cup/core/ai/services/ai_team_season_summary_service.dart';
-import 'package:pregame_world_cup/injection_container.dart';
 import 'package:http/http.dart' as http;
 
 /// Service for analyzing historical game data and creating compelling narratives
@@ -410,34 +408,9 @@ class HistoricalGameAnalysisService {
     return narrativeParts.join(' ');
   }
   
-  /// Generate fallback season review when real data isn't available - now uses AI service for consistency
+  /// Generate fallback season review when real data isn't available
   Future<Map<String, dynamic>> _generateFallbackSeasonReview(String teamName, int season) async {
-    try {
-      // Try to get real data from the same service the Season tab uses
-      final aiSeasonService = sl<AITeamSeasonSummaryService>();
-      final realData = await aiSeasonService.generateTeamSeasonSummary(teamName, season: season);
-      
-      // Extract the data in the format this service expects
-      final performance = realData['performance'] as Map<String, dynamic>? ?? {};
-      final narrative = realData['narrative'] as String? ?? realData['seasonNarrative'] as String? ?? '';
-      
-      return {
-        'teamName': teamName,
-        'season': season,
-        'narrative': narrative.isNotEmpty ? narrative : _generateGenericNarrative(teamName, season),
-        'performance': {
-          'wins': performance['wins'] ?? 4,
-          'losses': performance['losses'] ?? 3,
-          'avgPointsFor': performance['avgPointsFor'] ?? 2,
-          'avgPointsAgainst': performance['avgPointsAgainst'] ?? 1,
-        },
-        'dataSource': 'ai_team_season_service',
-        'gameCount': 12,
-      };
-    } catch (e) {
-      // Debug output removed
-      return _generateGenericFallback(teamName, season);
-    }
+    return _generateGenericFallback(teamName, season);
   }
 
   /// Generate generic narrative when all else fails

@@ -8,7 +8,6 @@ import 'ai_insights_state_widgets.dart';
 import 'ai_insights_detail_sheet.dart';
 import 'ai_prediction_tab_widget.dart';
 import 'ai_key_factors_tab_widget.dart';
-import 'ai_season_review_tab_widget.dart';
 import 'ai_historical_analysis_tab_widget.dart';
 import 'ai_compact_content_widget.dart';
 
@@ -51,7 +50,7 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
     );
 
     _helper = AIInsightsAnalysisHelper(game: widget.game);
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
 
     final initError = _helper.initializeServices();
     if (initError != null) {
@@ -207,11 +206,6 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
                 AIKeyFactorsTabWidget(
                   analysisData: _analysisData!,
                 ),
-                AISeasonReviewTabWidget(
-                  homeTeamName: widget.game.homeTeamName,
-                  awayTeamName: widget.game.awayTeamName,
-                  seasonSummaryService: _helper.seasonSummaryService,
-                ),
               ],
             ),
           ),
@@ -232,7 +226,6 @@ class _EnhancedAIInsightsWidgetState extends State<EnhancedAIInsightsWidget>
           Tab(text: 'Predict'),
           Tab(text: 'Analysis'),
           Tab(text: 'Key Factors'),
-          Tab(text: 'Season'),
         ],
       ),
     );

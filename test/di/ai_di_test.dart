@@ -8,7 +8,6 @@ import 'package:pregame_world_cup/core/ai/services/ai_service.dart';
 import 'package:pregame_world_cup/core/ai/services/claude_service.dart';
 import 'package:pregame_world_cup/core/ai/services/multi_provider_ai_service.dart';
 import 'package:pregame_world_cup/core/ai/services/ai_historical_knowledge_service.dart';
-import 'package:pregame_world_cup/core/ai/services/ai_team_season_summary_service.dart';
 import 'package:pregame_world_cup/core/ai/services/enhanced_ai_game_analysis_service.dart';
 import 'package:pregame_world_cup/core/services/historical_game_analysis_service.dart';
 import 'package:pregame_world_cup/core/services/user_learning_service.dart';
@@ -21,7 +20,7 @@ import 'package:pregame_world_cup/di/ai_di.dart';
 ///   Step 3: UnifiedVenueService
 ///   Step 4: AIService, ClaudeService, MultiProviderAIService,
 ///           UserLearningService, AIHistoricalKnowledgeService,
-///           AITeamSeasonSummaryService, EnhancedAIGameAnalysisService,
+///           EnhancedAIGameAnalysisService,
 ///           HistoricalGameAnalysisService
 void main() {
   final sl = GetIt.instance;
@@ -41,14 +40,13 @@ void main() {
       registerAIServices(sl);
     });
 
-    test('registers all 9 expected types', () {
+    test('registers all 8 expected types', () {
       expect(sl.isRegistered<UnifiedVenueService>(), isTrue);
       expect(sl.isRegistered<AIService>(), isTrue);
       expect(sl.isRegistered<ClaudeService>(), isTrue);
       expect(sl.isRegistered<MultiProviderAIService>(), isTrue);
       expect(sl.isRegistered<UserLearningService>(), isTrue);
       expect(sl.isRegistered<AIHistoricalKnowledgeService>(), isTrue);
-      expect(sl.isRegistered<AITeamSeasonSummaryService>(), isTrue);
       expect(sl.isRegistered<EnhancedAIGameAnalysisService>(), isTrue);
       expect(sl.isRegistered<HistoricalGameAnalysisService>(), isTrue);
     });
@@ -89,12 +87,6 @@ void main() {
       expect(identical(a, b), isTrue);
     });
 
-    test('AITeamSeasonSummaryService is a lazy singleton', () {
-      final a = sl<AITeamSeasonSummaryService>();
-      final b = sl<AITeamSeasonSummaryService>();
-      expect(identical(a, b), isTrue);
-    });
-
     test('EnhancedAIGameAnalysisService is a lazy singleton', () {
       final a = sl<EnhancedAIGameAnalysisService>();
       final b = sl<EnhancedAIGameAnalysisService>();
@@ -120,7 +112,6 @@ void main() {
       expect(sl<MultiProviderAIService>(), isA<MultiProviderAIService>());
       expect(sl<UserLearningService>(), isA<UserLearningService>());
       expect(sl<AIHistoricalKnowledgeService>(), isA<AIHistoricalKnowledgeService>());
-      expect(sl<AITeamSeasonSummaryService>(), isA<AITeamSeasonSummaryService>());
       expect(sl<EnhancedAIGameAnalysisService>(), isA<EnhancedAIGameAnalysisService>());
       expect(sl<HistoricalGameAnalysisService>(), isA<HistoricalGameAnalysisService>());
     });
