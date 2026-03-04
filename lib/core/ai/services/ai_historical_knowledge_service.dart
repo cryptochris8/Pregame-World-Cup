@@ -148,8 +148,8 @@ class AIHistoricalKnowledgeService {
         'seasonRecords': <int, Map<String, dynamic>>{},
         'overallTrend': 'stable',
         'strengthOfSchedule': <int, double>{},
-        'bowlAppearances': 0,
-        'championshipAppearances': 0,
+        'worldCupAppearances': 0,
+        'knockoutRoundAppearances': 0,
       };
       
       for (final season in _allHistoricalSeasons) {
