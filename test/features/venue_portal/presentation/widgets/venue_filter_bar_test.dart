@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 import 'package:pregame_world_cup/features/venue_portal/presentation/bloc/venue_filter_cubit.dart';
 import 'package:pregame_world_cup/features/venue_portal/domain/entities/venue_filter_criteria.dart';
 import 'package:pregame_world_cup/features/venue_portal/presentation/widgets/venue_filter_bar.dart';
@@ -139,6 +140,8 @@ void main() {
     String? matchLabel,
   }) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: Scaffold(
         body: BlocProvider<VenueFilterCubit>.value(
           value: cubit,

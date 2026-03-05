@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/activity_feed.dart';
 
 class CreateActivityBottomSheet extends StatefulWidget {
@@ -47,8 +48,8 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
     final content = _contentController.text.trim();
     if (content.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please add some content'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).pleaseAddContent),
           backgroundColor: Colors.red,
         ),
       );
@@ -61,8 +62,8 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
       case ActivityType.checkIn:
         if (_venueController.text.trim().isEmpty) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Please enter a venue name'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).pleaseEnterVenueName),
               backgroundColor: Colors.red,
             ),
           );
@@ -83,8 +84,8 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
       case ActivityType.gameAttendance:
         if (_gameController.text.trim().isEmpty) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Please enter a game title'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).pleaseEnterGameTitle),
               backgroundColor: Colors.red,
             ),
           );
@@ -106,8 +107,8 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
       case ActivityType.venueReview:
         if (_venueController.text.trim().isEmpty) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Please enter a venue name'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context).pleaseEnterVenueName),
               backgroundColor: Colors.red,
             ),
           );
@@ -168,9 +169,9 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
             ),
             child: Row(
               children: [
-                const Text(
-                  'Create Activity',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context).createActivity,
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
@@ -180,7 +181,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                 
                 TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('Cancel'),
+                  child: Text(AppLocalizations.of(context).cancelButton),
                 ),
                 
                 const SizedBox(width: 8),
@@ -191,7 +192,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                     backgroundColor: const Color(0xFF8B4513),
                     foregroundColor: Colors.white,
                   ),
-                  child: const Text('Post'),
+                  child: Text(AppLocalizations.of(context).postButton),
                 ),
               ],
             ),
@@ -221,22 +222,22 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                 }
               });
             },
-            tabs: const [
+            tabs: [
               Tab(
-                icon: Icon(Icons.location_on),
-                text: 'Check-in',
+                icon: const Icon(Icons.location_on),
+                text: AppLocalizations.of(context).tabCheckIn,
               ),
               Tab(
-                icon: Icon(Icons.sports_soccer),
-                text: 'Game',
+                icon: const Icon(Icons.sports_soccer),
+                text: AppLocalizations.of(context).tabGame,
               ),
               Tab(
-                icon: Icon(Icons.rate_review),
-                text: 'Review',
+                icon: const Icon(Icons.rate_review),
+                text: AppLocalizations.of(context).tabReview,
               ),
               Tab(
-                icon: Icon(Icons.photo_camera),
-                text: 'Photo',
+                icon: const Icon(Icons.photo_camera),
+                text: AppLocalizations.of(context).tabPhoto,
               ),
             ],
           ),
@@ -264,9 +265,9 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Where are you checking in?',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).checkInQuestion,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -277,20 +278,20 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
           TextField(
             controller: _venueController,
             decoration: InputDecoration(
-              labelText: 'Venue Name',
+              labelText: AppLocalizations.of(context).venueNameLabel,
               prefixIcon: const Icon(Icons.restaurant),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              hintText: 'e.g., The Sports Bar',
+              hintText: AppLocalizations.of(context).venueNameHint,
             ),
           ),
           
           const SizedBox(height: 16),
           
-          const Text(
-            'Add a note (optional)',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).addNoteOptional,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -304,7 +305,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
               maxLines: null,
               expands: true,
               decoration: InputDecoration(
-                hintText: 'What\'s happening? How\'s the atmosphere?',
+                hintText: AppLocalizations.of(context).checkInNoteHint,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -324,9 +325,9 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Which game are you attending?',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).gameAttendanceQuestion,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -337,12 +338,12 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
           TextField(
             controller: _gameController,
             decoration: InputDecoration(
-              labelText: 'Game Title',
+              labelText: AppLocalizations.of(context).gameTitleLabel,
               prefixIcon: const Icon(Icons.sports_soccer),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              hintText: 'e.g., Brazil vs Argentina',
+              hintText: AppLocalizations.of(context).gameTitleHint,
             ),
           ),
           
@@ -351,20 +352,20 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
           TextField(
             controller: _venueController,
             decoration: InputDecoration(
-              labelText: 'Venue (optional)',
+              labelText: AppLocalizations.of(context).venueOptionalLabel,
               prefixIcon: const Icon(Icons.stadium),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              hintText: 'e.g., Mercedes-Benz Stadium',
+              hintText: AppLocalizations.of(context).venueOptionalHint,
             ),
           ),
           
           const SizedBox(height: 16),
           
-          const Text(
-            'Share your thoughts',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).shareThoughts,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -378,7 +379,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
               maxLines: null,
               expands: true,
               decoration: InputDecoration(
-                hintText: 'How excited are you? Any predictions?',
+                hintText: AppLocalizations.of(context).gameThoughtsHint,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -398,9 +399,9 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Which venue are you reviewing?',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).reviewQuestion,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -411,20 +412,20 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
           TextField(
             controller: _venueController,
             decoration: InputDecoration(
-              labelText: 'Venue Name',
+              labelText: AppLocalizations.of(context).venueNameLabel,
               prefixIcon: const Icon(Icons.restaurant),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              hintText: 'e.g., Murphy\'s Tavern',
+              hintText: AppLocalizations.of(context).reviewVenueNameHint,
             ),
           ),
           
           const SizedBox(height: 16),
           
-          const Text(
-            'Your review',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).yourReview,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -438,7 +439,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
               maxLines: null,
               expands: true,
               decoration: InputDecoration(
-                hintText: 'Share your experience... How was the food, service, atmosphere?',
+                hintText: AppLocalizations.of(context).reviewHint,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -479,7 +480,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Tap to add photos',
+                  AppLocalizations.of(context).tapToAddPhotos,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey[600],
@@ -487,7 +488,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  '(Coming Soon)',
+                  AppLocalizations.of(context).comingSoon,
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.grey[500],
@@ -499,9 +500,9 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
           
           const SizedBox(height: 16),
           
-          const Text(
-            'Caption',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context).captionLabel,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
@@ -515,7 +516,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
               maxLines: null,
               expands: true,
               decoration: InputDecoration(
-                hintText: 'Write a caption for your photos...',
+                hintText: AppLocalizations.of(context).captionHint,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),

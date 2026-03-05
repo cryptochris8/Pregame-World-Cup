@@ -24,7 +24,7 @@ class AddToCalendarButton extends StatelessWidget {
       return IconButton(
         icon: const Icon(Icons.calendar_today),
         onPressed: () => _showOptions(context),
-        tooltip: 'Add to Calendar',
+        tooltip: AppLocalizations.of(context).addToCalendar,
       );
     }
 
@@ -32,14 +32,14 @@ class AddToCalendarButton extends StatelessWidget {
       return OutlinedButton.icon(
         onPressed: () => _showOptions(context),
         icon: const Icon(Icons.calendar_today, size: 18),
-        label: const Text('Add to Calendar'),
+        label: Text(AppLocalizations.of(context).addToCalendar),
       );
     }
 
     return IconButton.outlined(
       onPressed: () => _showOptions(context),
       icon: const Icon(Icons.calendar_today),
-      tooltip: 'Add to Calendar',
+      tooltip: AppLocalizations.of(context).addToCalendar,
     );
   }
 
@@ -93,7 +93,7 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Text(
-                'Add to Calendar',
+                AppLocalizations.of(context).addToCalendar,
                 style: theme.textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -278,7 +278,7 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(result.error ?? 'Failed to add to calendar'),
+          content: Text(result.error ?? AppLocalizations.of(context).calendarAddFailed),
           backgroundColor: Colors.red,
           behavior: SnackBarBehavior.floating,
         ),

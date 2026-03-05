@@ -4414,5 +4414,405 @@
   "copaClearTooltip": "Clear chat",
   "@copaClearTooltip": {
     "description": "Tooltip for the clear chat button"
+  },
+  "addToCalendar": "Add to Calendar",
+  "@addToCalendar": {
+    "description": "Button/title for adding events to calendar"
+  },
+  "calendarAddFailed": "Failed to add to calendar",
+  "@calendarAddFailed": {
+    "description": "Error message when calendar add fails"
+  },
+  "watchPartyUpdated": "Watch party updated!",
+  "@watchPartyUpdated": {
+    "description": "Success message after updating watch party"
+  },
+  "editWatchParty": "Edit Watch Party",
+  "@editWatchParty": {
+    "description": "Title for the edit watch party screen"
+  },
+  "saveButton": "Save",
+  "@saveButton": {
+    "description": "Generic save button label"
+  },
+  "saveChanges": "Save Changes",
+  "@saveChanges": {
+    "description": "Button label for saving changes"
+  },
+  "fieldsCannotBeEdited": "Some fields cannot be edited after the party has started.",
+  "@fieldsCannotBeEdited": {
+    "description": "Warning when editing active watch party"
+  },
+  "pleaseEnterName": "Please enter a name",
+  "@pleaseEnterName": {
+    "description": "Validation error for empty name field"
+  },
+  "visibilityLabel": "Visibility",
+  "@visibilityLabel": {
+    "description": "Label for visibility setting"
+  },
+  "visibilityPublicDesc": "Anyone can discover and join this party",
+  "@visibilityPublicDesc": {
+    "description": "Description for public visibility"
+  },
+  "visibilityPrivateDesc": "Only invited people can join",
+  "@visibilityPrivateDesc": {
+    "description": "Description for private visibility"
+  },
+  "gameLabel": "Game",
+  "@gameLabel": {
+    "description": "Label for game section"
+  },
+  "gameCannotBeChanged": "Game cannot be changed",
+  "@gameCannotBeChanged": {
+    "description": "Subtitle when game is read-only"
+  },
+  "venueLabel": "Venue",
+  "@venueLabel": {
+    "description": "Label for venue section"
+  },
+  "maximumAttendees": "Maximum Attendees",
+  "@maximumAttendees": {
+    "description": "Label for max attendees slider"
+  },
+  "virtualAttendance": "Virtual Attendance",
+  "@virtualAttendance": {
+    "description": "Label for virtual attendance toggle"
+  },
+  "virtualAttendanceDesc": "Allow fans to join virtually and participate in chat",
+  "@virtualAttendanceDesc": {
+    "description": "Description for virtual attendance"
+  },
+  "keepEditing": "Keep Editing",
+  "@keepEditing": {
+    "description": "Button to continue editing"
+  },
+  "discard": "Discard",
+  "@discard": {
+    "description": "Button to discard changes"
+  },
+  "createActivity": "Create Activity",
+  "@createActivity": {
+    "description": "Title for create activity sheet"
+  },
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "description": "Generic cancel button label"
+  },
+  "postButton": "Post",
+  "@postButton": {
+    "description": "Button to post an activity"
+  },
+  "pleaseAddContent": "Please add some content",
+  "@pleaseAddContent": {
+    "description": "Validation error for empty content"
+  },
+  "pleaseEnterVenueName": "Please enter a venue name",
+  "@pleaseEnterVenueName": {
+    "description": "Validation error for empty venue name"
+  },
+  "pleaseEnterGameTitle": "Please enter a game title",
+  "@pleaseEnterGameTitle": {
+    "description": "Validation error for empty game title"
+  },
+  "tabCheckIn": "Check-in",
+  "@tabCheckIn": {
+    "description": "Tab label for check-in activity"
+  },
+  "tabGame": "Game",
+  "@tabGame": {
+    "description": "Tab label for game attendance activity"
+  },
+  "tabReview": "Review",
+  "@tabReview": {
+    "description": "Tab label for venue review activity"
+  },
+  "tabPhoto": "Photo",
+  "@tabPhoto": {
+    "description": "Tab label for photo sharing activity"
+  },
+  "checkInQuestion": "Where are you checking in?",
+  "@checkInQuestion": {
+    "description": "Prompt for check-in location"
+  },
+  "venueNameLabel": "Venue Name",
+  "@venueNameLabel": {
+    "description": "Label for venue name input"
+  },
+  "venueNameHint": "e.g., The Sports Bar",
+  "@venueNameHint": {
+    "description": "Hint for venue name input"
+  },
+  "addNoteOptional": "Add a note (optional)",
+  "@addNoteOptional": {
+    "description": "Label for optional note"
+  },
+  "checkInNoteHint": "What's happening? How's the atmosphere?",
+  "@checkInNoteHint": {
+    "description": "Hint for check-in note input"
+  },
+  "gameAttendanceQuestion": "Which game are you attending?",
+  "@gameAttendanceQuestion": {
+    "description": "Prompt for game attendance"
+  },
+  "gameTitleLabel": "Game Title",
+  "@gameTitleLabel": {
+    "description": "Label for game title input"
+  },
+  "gameTitleHint": "e.g., Brazil vs Argentina",
+  "@gameTitleHint": {
+    "description": "Hint for game title input"
+  },
+  "venueOptionalLabel": "Venue (optional)",
+  "@venueOptionalLabel": {
+    "description": "Label for optional venue input"
+  },
+  "venueOptionalHint": "e.g., Mercedes-Benz Stadium",
+  "@venueOptionalHint": {
+    "description": "Hint for optional venue input"
+  },
+  "shareThoughts": "Share your thoughts",
+  "@shareThoughts": {
+    "description": "Label for sharing thoughts"
+  },
+  "gameThoughtsHint": "How excited are you? Any predictions?",
+  "@gameThoughtsHint": {
+    "description": "Hint for game thoughts input"
+  },
+  "reviewQuestion": "Which venue are you reviewing?",
+  "@reviewQuestion": {
+    "description": "Prompt for venue review"
+  },
+  "reviewVenueNameHint": "e.g., Murphy's Tavern",
+  "@reviewVenueNameHint": {
+    "description": "Hint for review venue name"
+  },
+  "yourReview": "Your review",
+  "@yourReview": {
+    "description": "Label for review text"
+  },
+  "reviewHint": "Share your experience... How was the food, service, atmosphere?",
+  "@reviewHint": {
+    "description": "Hint for review content"
+  },
+  "tapToAddPhotos": "Tap to add photos",
+  "@tapToAddPhotos": {
+    "description": "Placeholder for photo upload"
+  },
+  "comingSoon": "(Coming Soon)",
+  "@comingSoon": {
+    "description": "Label for upcoming features"
+  },
+  "captionLabel": "Caption",
+  "@captionLabel": {
+    "description": "Label for photo caption"
+  },
+  "captionHint": "Write a caption for your photos...",
+  "@captionHint": {
+    "description": "Hint for photo caption input"
+  },
+  "predictionSaved": "Prediction saved!",
+  "@predictionSaved": {
+    "description": "Success message when prediction is saved"
+  },
+  "errorSavingPrediction": "Error saving prediction",
+  "@errorSavingPrediction": {
+    "description": "Error message when saving prediction fails"
+  },
+  "makePrediction": "Make Prediction",
+  "@makePrediction": {
+    "description": "Button to make a game prediction"
+  },
+  "gamePrediction": "Game Prediction",
+  "@gamePrediction": {
+    "description": "Title for game prediction section"
+  },
+  "predicted": "Predicted",
+  "@predicted": {
+    "description": "Badge label when prediction exists"
+  },
+  "filterShowsMatch": "Shows Match",
+  "@filterShowsMatch": {
+    "description": "Filter chip for match broadcasting"
+  },
+  "filterHasTvs": "Has TVs",
+  "@filterHasTvs": {
+    "description": "Filter chip for venues with TVs"
+  },
+  "filterSpecials": "Specials",
+  "@filterSpecials": {
+    "description": "Filter chip for venue specials"
+  },
+  "filterClear": "Clear",
+  "@filterClear": {
+    "description": "Button to clear all filters"
+  },
+  "filterVenues": "Filter Venues",
+  "@filterVenues": {
+    "description": "Title for filter venues sheet"
+  },
+  "filterClearAll": "Clear All",
+  "@filterClearAll": {
+    "description": "Button to clear all filters"
+  },
+  "filterBroadcasting": "Broadcasting",
+  "@filterBroadcasting": {
+    "description": "Section header for broadcasting filters"
+  },
+  "filterShowsThisMatch": "Shows This Match",
+  "@filterShowsThisMatch": {
+    "description": "Toggle label for showing match"
+  },
+  "filterShowsThisMatchDesc": "Only show venues broadcasting this match",
+  "@filterShowsThisMatchDesc": {
+    "description": "Description for match broadcasting filter"
+  },
+  "filterSetup": "Setup",
+  "@filterSetup": {
+    "description": "Section header for setup filters"
+  },
+  "filterHasTvsDesc": "Venues with TV/screen information",
+  "@filterHasTvsDesc": {
+    "description": "Description for TV filter"
+  },
+  "filterOffers": "Offers",
+  "@filterOffers": {
+    "description": "Section header for offers filters"
+  },
+  "filterHasSpecials": "Has Specials",
+  "@filterHasSpecials": {
+    "description": "Toggle label for specials filter"
+  },
+  "filterHasSpecialsDesc": "Venues with active deals",
+  "@filterHasSpecialsDesc": {
+    "description": "Description for specials filter"
+  },
+  "filterAvailability": "Availability",
+  "@filterAvailability": {
+    "description": "Section header for availability filters"
+  },
+  "filterLiveCapacity": "Live Capacity Info",
+  "@filterLiveCapacity": {
+    "description": "Toggle label for capacity filter"
+  },
+  "filterLiveCapacityDesc": "Shows real-time occupancy data",
+  "@filterLiveCapacityDesc": {
+    "description": "Description for capacity filter"
+  },
+  "filterAtmosphere": "Atmosphere",
+  "@filterAtmosphere": {
+    "description": "Section header for atmosphere filters"
+  },
+  "filterApplyCount": "Apply {count} {count, plural, =1{Filter} other{Filters}}",
+  "@filterApplyCount": {
+    "description": "Button showing filter count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filterDone": "Done",
+  "@filterDone": {
+    "description": "Button when no filters are active"
+  },
+  "tvScreenSetup": "TV & Screen Setup",
+  "@tvScreenSetup": {
+    "description": "Title for TV setup screen"
+  },
+  "tvSetupSaved": "TV setup saved",
+  "@tvSetupSaved": {
+    "description": "Success message when TV setup is saved"
+  },
+  "addScreen": "Add Screen",
+  "@addScreen": {
+    "description": "Button to add a new screen"
+  },
+  "savingLabel": "Saving...",
+  "@savingLabel": {
+    "description": "Label while saving"
+  },
+  "saveSetup": "Save Setup",
+  "@saveSetup": {
+    "description": "Button to save TV setup"
+  },
+  "totalScreens": "Total Screens",
+  "@totalScreens": {
+    "description": "Label for total screen count"
+  },
+  "screensConfigured": "{count} screens configured",
+  "@screensConfigured": {
+    "description": "Subtitle showing configured screen count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "audioSetup": "Audio Setup",
+  "@audioSetup": {
+    "description": "Section header for audio setup"
+  },
+  "audioDedicated": "Game audio on main sound system",
+  "@audioDedicated": {
+    "description": "Description for dedicated audio setup"
+  },
+  "audioShared": "Game audio mixed with venue music",
+  "@audioShared": {
+    "description": "Description for shared audio setup"
+  },
+  "audioHeadphones": "Guests can request headphones",
+  "@audioHeadphones": {
+    "description": "Description for headphones available setup"
+  },
+  "screenDetails": "Screen Details",
+  "@screenDetails": {
+    "description": "Section header for screen details"
+  },
+  "noScreensConfigured": "No screens configured",
+  "@noScreensConfigured": {
+    "description": "Empty state message"
+  },
+  "tapAddScreenToStart": "Tap \"Add Screen\" to get started",
+  "@tapAddScreenToStart": {
+    "description": "Empty state hint"
+  },
+  "screenNumber": "Screen {number}",
+  "@screenNumber": {
+    "description": "Label for individual screen",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "screenPrimary": "Screen {number} (Primary)",
+  "@screenPrimary": {
+    "description": "Label for primary screen",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "screenSizeLabel": "Screen Size",
+  "@screenSizeLabel": {
+    "description": "Label for screen size dropdown"
+  },
+  "locationLabel": "Location",
+  "@locationLabel": {
+    "description": "Label for location input"
+  },
+  "locationHint": "e.g., Main Bar, Patio, Private Room",
+  "@locationHint": {
+    "description": "Hint for location input"
+  },
+  "hasAudio": "Has Audio",
+  "@hasAudio": {
+    "description": "Checkbox label for audio availability"
+  },
+  "primary": "Primary",
+  "@primary": {
+    "description": "Checkbox label for primary screen"
   }
 }

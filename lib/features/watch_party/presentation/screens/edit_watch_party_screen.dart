@@ -87,7 +87,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
       listener: (context, state) {
         if (state is WatchPartyUpdated) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Watch party updated!')),
+            SnackBar(content: Text(AppLocalizations.of(context).watchPartyUpdated)),
           );
           Navigator.pop(context, true);
         }
@@ -112,12 +112,12 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
         },
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Edit Watch Party'),
+            title: Text(AppLocalizations.of(context).editWatchParty),
             actions: [
               if (_hasChanges)
                 TextButton(
                   onPressed: _isLoading ? null : _saveChanges,
-                  child: const Text('Save', style: TextStyle(color: Colors.white)),
+                  child: Text(AppLocalizations.of(context).saveButton, style: const TextStyle(color: Colors.white)),
                 ),
             ],
           ),
@@ -142,7 +142,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            'Some fields cannot be edited after the party has started.',
+                            AppLocalizations.of(context).fieldsCannotBeEdited,
                             style: TextStyle(color: Colors.orange[800], fontSize: 13),
                           ),
                         ),
@@ -160,7 +160,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                   ),
                   validator: (value) {
                     if (value == null || value.trim().isEmpty) {
-                      return 'Please enter a name';
+                      return AppLocalizations.of(context).pleaseEnterName;
                     }
                     return null;
                   },
@@ -181,9 +181,9 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
 
                 // Visibility toggle (only for upcoming parties)
                 if (widget.watchParty.status == WatchPartyStatus.upcoming) ...[
-                  const Text(
-                    'Visibility',
-                    style: TextStyle(fontWeight: FontWeight.w600),
+                  Text(
+                    AppLocalizations.of(context).visibilityLabel,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 8),
                   VisibilityToggle(
@@ -198,33 +198,33 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                   const SizedBox(height: 8),
                   Text(
                     _visibility == WatchPartyVisibility.public
-                        ? 'Anyone can discover and join this party'
-                        : 'Only invited people can join',
+                        ? AppLocalizations.of(context).visibilityPublicDesc
+                        : AppLocalizations.of(context).visibilityPrivateDesc,
                     style: TextStyle(color: Colors.grey[600], fontSize: 12),
                   ),
                   const SizedBox(height: 24),
                 ],
 
                 // Game info (read-only)
-                const Text(
-                  'Game',
-                  style: TextStyle(fontWeight: FontWeight.w600),
+                Text(
+                  AppLocalizations.of(context).gameLabel,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 8),
                 Card(
                   child: ListTile(
                     leading: const Icon(Icons.sports_soccer, color: Color(0xFF1E3A8A)),
                     title: Text(widget.watchParty.gameName),
-                    subtitle: const Text('Game cannot be changed'),
+                    subtitle: Text(AppLocalizations.of(context).gameCannotBeChanged),
                     enabled: false,
                   ),
                 ),
                 const SizedBox(height: 24),
 
                 // Venue selection (can be changed for upcoming parties)
-                const Text(
-                  'Venue',
-                  style: TextStyle(fontWeight: FontWeight.w600),
+                Text(
+                  AppLocalizations.of(context).venueLabel,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 8),
                 _buildVenueSelector(),
@@ -232,9 +232,9 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
 
                 // Max attendees (only for upcoming parties)
                 if (widget.watchParty.status == WatchPartyStatus.upcoming) ...[
-                  const Text(
-                    'Maximum Attendees',
-                    style: TextStyle(fontWeight: FontWeight.w600),
+                  Text(
+                    AppLocalizations.of(context).maximumAttendees,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 8),
                   Row(
@@ -282,10 +282,10 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                             children: [
                               const Icon(Icons.videocam, color: Color(0xFF059669)),
                               const SizedBox(width: 8),
-                              const Expanded(
+                              Expanded(
                                 child: Text(
-                                  'Virtual Attendance',
-                                  style: TextStyle(fontWeight: FontWeight.w600),
+                                  AppLocalizations.of(context).virtualAttendance,
+                                  style: const TextStyle(fontWeight: FontWeight.w600),
                                 ),
                               ),
                               Switch(
@@ -302,7 +302,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                           if (_allowVirtualAttendance) ...[
                             const SizedBox(height: 12),
                             Text(
-                              'Allow fans to join virtually and participate in chat',
+                              AppLocalizations.of(context).virtualAttendanceDesc,
                               style: TextStyle(
                                 color: Colors.grey[600],
                                 fontSize: 12,
@@ -378,7 +378,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                   height: 20,
                   child: CircularProgressIndicator(strokeWidth: 2),
                 )
-              : const Text('Save Changes'),
+              : Text(AppLocalizations.of(context).saveChanges),
         ),
       ),
     );
@@ -416,12 +416,12 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Keep Editing'),
+            child: Text(l10n.keepEditing),
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Discard'),
+            child: Text(l10n.discard),
           ),
         ],
       ),

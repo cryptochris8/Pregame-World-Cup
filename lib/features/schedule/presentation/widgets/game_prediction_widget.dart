@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/game_schedule.dart';
 import '../../domain/entities/game_prediction.dart';
 import '../../../../services/prediction_service.dart';
@@ -150,7 +151,7 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
               children: [
                 Icon(Icons.check_circle, color: Colors.green[300]),
                 const SizedBox(width: 8),
-                const Text('Prediction saved! 🎯'),
+                Text('${AppLocalizations.of(context).predictionSaved} 🎯'),
               ],
             ),
             backgroundColor: ThemeHelper.primaryColor(context),
@@ -165,7 +166,7 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Error saving prediction: $e'),
+            content: Text('${AppLocalizations.of(context).errorSavingPrediction}: $e'),
             backgroundColor: Colors.red[700],
           ),
         );
@@ -219,7 +220,7 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
             ),
             const SizedBox(width: 8),
             Text(
-              'Make Prediction',
+              AppLocalizations.of(context).makePrediction,
               style: TextStyle(
                 color: ThemeHelper.favoriteColor,
                 fontSize: 16,
@@ -275,9 +276,9 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
                         size: 24,
                       ),
                       const SizedBox(width: 8),
-                      const Text(
-                        'Game Prediction',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context).gamePrediction,
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -295,9 +296,9 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(color: Colors.green),
                           ),
-                          child: const Text(
-                            'Predicted',
-                            style: TextStyle(
+                          child: Text(
+                            AppLocalizations.of(context).predicted,
+                            style: const TextStyle(
                               color: Colors.green,
                               fontSize: 12,
                               fontWeight: FontWeight.w500,

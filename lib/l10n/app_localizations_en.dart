@@ -2226,7 +2226,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get virtualAttendanceDesc =>
-      'Allow virtual attendees to join remotely';
+      'Allow fans to join virtually and participate in chat';
 
   @override
   String get virtualAttendanceFee => 'Virtual Attendance Fee';
@@ -3461,4 +3461,279 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get copaClearTooltip => 'Clear chat';
+
+  @override
+  String get calendarAddFailed => 'Failed to add to calendar';
+
+  @override
+  String get watchPartyUpdated => 'Watch party updated!';
+
+  @override
+  String get editWatchParty => 'Edit Watch Party';
+
+  @override
+  String get saveButton => 'Save';
+
+  @override
+  String get saveChanges => 'Save Changes';
+
+  @override
+  String get fieldsCannotBeEdited =>
+      'Some fields cannot be edited after the party has started.';
+
+  @override
+  String get visibilityLabel => 'Visibility';
+
+  @override
+  String get visibilityPublicDesc => 'Anyone can discover and join this party';
+
+  @override
+  String get visibilityPrivateDesc => 'Only invited people can join';
+
+  @override
+  String get gameLabel => 'Game';
+
+  @override
+  String get gameCannotBeChanged => 'Game cannot be changed';
+
+  @override
+  String get venueLabel => 'Venue';
+
+  @override
+  String get keepEditing => 'Keep Editing';
+
+  @override
+  String get discard => 'Discard';
+
+  @override
+  String get cancelButton => 'Cancel';
+
+  @override
+  String get postButton => 'Post';
+
+  @override
+  String get pleaseAddContent => 'Please add some content';
+
+  @override
+  String get pleaseEnterVenueName => 'Please enter a venue name';
+
+  @override
+  String get pleaseEnterGameTitle => 'Please enter a game title';
+
+  @override
+  String get tabCheckIn => 'Check-in';
+
+  @override
+  String get tabGame => 'Game';
+
+  @override
+  String get tabReview => 'Review';
+
+  @override
+  String get tabPhoto => 'Photo';
+
+  @override
+  String get checkInQuestion => 'Where are you checking in?';
+
+  @override
+  String get venueNameLabel => 'Venue Name';
+
+  @override
+  String get venueNameHint => 'e.g., The Sports Bar';
+
+  @override
+  String get addNoteOptional => 'Add a note (optional)';
+
+  @override
+  String get checkInNoteHint => 'What\'s happening? How\'s the atmosphere?';
+
+  @override
+  String get gameAttendanceQuestion => 'Which game are you attending?';
+
+  @override
+  String get gameTitleLabel => 'Game Title';
+
+  @override
+  String get gameTitleHint => 'e.g., Brazil vs Argentina';
+
+  @override
+  String get venueOptionalLabel => 'Venue (optional)';
+
+  @override
+  String get venueOptionalHint => 'e.g., Mercedes-Benz Stadium';
+
+  @override
+  String get shareThoughts => 'Share your thoughts';
+
+  @override
+  String get gameThoughtsHint => 'How excited are you? Any predictions?';
+
+  @override
+  String get reviewQuestion => 'Which venue are you reviewing?';
+
+  @override
+  String get reviewVenueNameHint => 'e.g., Murphy\'s Tavern';
+
+  @override
+  String get yourReview => 'Your review';
+
+  @override
+  String get reviewHint =>
+      'Share your experience... How was the food, service, atmosphere?';
+
+  @override
+  String get tapToAddPhotos => 'Tap to add photos';
+
+  @override
+  String get comingSoon => '(Coming Soon)';
+
+  @override
+  String get captionLabel => 'Caption';
+
+  @override
+  String get captionHint => 'Write a caption for your photos...';
+
+  @override
+  String get errorSavingPrediction => 'Error saving prediction';
+
+  @override
+  String get gamePrediction => 'Game Prediction';
+
+  @override
+  String get predicted => 'Predicted';
+
+  @override
+  String get filterShowsMatch => 'Shows Match';
+
+  @override
+  String get filterHasTvs => 'Has TVs';
+
+  @override
+  String get filterSpecials => 'Specials';
+
+  @override
+  String get filterClear => 'Clear';
+
+  @override
+  String get filterClearAll => 'Clear All';
+
+  @override
+  String get filterBroadcasting => 'Broadcasting';
+
+  @override
+  String get filterShowsThisMatch => 'Shows This Match';
+
+  @override
+  String get filterShowsThisMatchDesc =>
+      'Only show venues broadcasting this match';
+
+  @override
+  String get filterSetup => 'Setup';
+
+  @override
+  String get filterHasTvsDesc => 'Venues with TV/screen information';
+
+  @override
+  String get filterOffers => 'Offers';
+
+  @override
+  String get filterHasSpecials => 'Has Specials';
+
+  @override
+  String get filterHasSpecialsDesc => 'Venues with active deals';
+
+  @override
+  String get filterAvailability => 'Availability';
+
+  @override
+  String get filterLiveCapacity => 'Live Capacity Info';
+
+  @override
+  String get filterLiveCapacityDesc => 'Shows real-time occupancy data';
+
+  @override
+  String get filterAtmosphere => 'Atmosphere';
+
+  @override
+  String filterApplyCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Filters',
+      one: 'Filter',
+    );
+    return 'Apply $count $_temp0';
+  }
+
+  @override
+  String get filterDone => 'Done';
+
+  @override
+  String get tvScreenSetup => 'TV & Screen Setup';
+
+  @override
+  String get tvSetupSaved => 'TV setup saved';
+
+  @override
+  String get addScreen => 'Add Screen';
+
+  @override
+  String get savingLabel => 'Saving...';
+
+  @override
+  String get saveSetup => 'Save Setup';
+
+  @override
+  String get totalScreens => 'Total Screens';
+
+  @override
+  String screensConfigured(int count) {
+    return '$count screens configured';
+  }
+
+  @override
+  String get audioSetup => 'Audio Setup';
+
+  @override
+  String get audioDedicated => 'Game audio on main sound system';
+
+  @override
+  String get audioShared => 'Game audio mixed with venue music';
+
+  @override
+  String get audioHeadphones => 'Guests can request headphones';
+
+  @override
+  String get screenDetails => 'Screen Details';
+
+  @override
+  String get noScreensConfigured => 'No screens configured';
+
+  @override
+  String get tapAddScreenToStart => 'Tap \"Add Screen\" to get started';
+
+  @override
+  String screenNumber(int number) {
+    return 'Screen $number';
+  }
+
+  @override
+  String screenPrimary(int number) {
+    return 'Screen $number (Primary)';
+  }
+
+  @override
+  String get screenSizeLabel => 'Screen Size';
+
+  @override
+  String get locationLabel => 'Location';
+
+  @override
+  String get locationHint => 'e.g., Main Bar, Patio, Private Room';
+
+  @override
+  String get hasAudio => 'Has Audio';
+
+  @override
+  String get primary => 'Primary';
 }

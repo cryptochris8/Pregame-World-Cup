@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/venue_filter_cubit.dart';
 
 /// Filter bar for venue searches, allowing users to filter by
@@ -27,7 +28,7 @@ class VenueFilterBar extends StatelessWidget {
               if (matchId != null)
                 _buildFilterChip(
                   context,
-                  label: 'Shows Match',
+                  label: AppLocalizations.of(context).filterShowsMatch,
                   icon: Icons.live_tv,
                   isSelected: state.criteria.showsMatchId == matchId,
                   onTap: () {
@@ -43,7 +44,7 @@ class VenueFilterBar extends StatelessWidget {
               // Has TVs filter
               _buildFilterChip(
                 context,
-                label: 'Has TVs',
+                label: AppLocalizations.of(context).filterHasTvs,
                 icon: Icons.tv,
                 isSelected: state.criteria.hasTvs == true,
                 onTap: () {
@@ -54,7 +55,7 @@ class VenueFilterBar extends StatelessWidget {
               // Has Specials filter
               _buildFilterChip(
                 context,
-                label: 'Specials',
+                label: AppLocalizations.of(context).filterSpecials,
                 icon: Icons.local_offer,
                 isSelected: state.criteria.hasSpecials == true,
                 onTap: () {
@@ -68,7 +69,7 @@ class VenueFilterBar extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 8),
                   child: ActionChip(
                     avatar: const Icon(Icons.clear, size: 16),
-                    label: const Text('Clear'),
+                    label: Text(AppLocalizations.of(context).filterClear),
                     onPressed: () {
                       context.read<VenueFilterCubit>().clearAllFilters();
                     },
@@ -149,7 +150,7 @@ class VenueFilterSheet extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Filter Venues',
+                          AppLocalizations.of(context).filterVenues,
                           style: theme.textTheme.titleLarge?.copyWith(
                             fontWeight: FontWeight.bold,
                           ),
@@ -159,7 +160,7 @@ class VenueFilterSheet extends StatelessWidget {
                             onPressed: () {
                               context.read<VenueFilterCubit>().clearAllFilters();
                             },
-                            child: const Text('Clear All'),
+                            child: Text(AppLocalizations.of(context).filterClearAll),
                           ),
                       ],
                     ),
@@ -175,23 +176,23 @@ class VenueFilterSheet extends StatelessWidget {
                       children: [
                         // Broadcasting
                         if (matchId != null) ...[
-                          _buildSectionHeader(context, 'Broadcasting'),
+                          _buildSectionHeader(context, AppLocalizations.of(context).filterBroadcasting),
                           SwitchListTile(
                             value: state.criteria.showsMatchId == matchId,
                             onChanged: (value) {
                               final cubit = context.read<VenueFilterCubit>();
                               cubit.setShowsMatchFilter(value ? matchId : null);
                             },
-                            title: const Text('Shows This Match'),
-                            subtitle: const Text(
-                                'Only show venues broadcasting this match'),
+                            title: Text(AppLocalizations.of(context).filterShowsThisMatch),
+                            subtitle: Text(
+                                AppLocalizations.of(context).filterShowsThisMatchDesc),
                             secondary: const Icon(Icons.live_tv),
                           ),
                           const SizedBox(height: 16),
                         ],
 
                         // Setup
-                        _buildSectionHeader(context, 'Setup'),
+                        _buildSectionHeader(context, AppLocalizations.of(context).filterSetup),
                         SwitchListTile(
                           value: state.criteria.hasTvs == true,
                           onChanged: (value) {
@@ -199,16 +200,16 @@ class VenueFilterSheet extends StatelessWidget {
                                 .read<VenueFilterCubit>()
                                 .setHasTvsFilter(value ? true : null);
                           },
-                          title: const Text('Has TVs'),
+                          title: Text(AppLocalizations.of(context).filterHasTvs),
                           subtitle:
-                              const Text('Venues with TV/screen information'),
+                              Text(AppLocalizations.of(context).filterHasTvsDesc),
                           secondary: const Icon(Icons.tv),
                         ),
 
                         const SizedBox(height: 16),
 
                         // Specials
-                        _buildSectionHeader(context, 'Offers'),
+                        _buildSectionHeader(context, AppLocalizations.of(context).filterOffers),
                         SwitchListTile(
                           value: state.criteria.hasSpecials == true,
                           onChanged: (value) {
@@ -216,15 +217,15 @@ class VenueFilterSheet extends StatelessWidget {
                                 .read<VenueFilterCubit>()
                                 .setHasSpecialsFilter(value ? true : null);
                           },
-                          title: const Text('Has Specials'),
-                          subtitle: const Text('Venues with active deals'),
+                          title: Text(AppLocalizations.of(context).filterHasSpecials),
+                          subtitle: Text(AppLocalizations.of(context).filterHasSpecialsDesc),
                           secondary: const Icon(Icons.local_offer),
                         ),
 
                         const SizedBox(height: 16),
 
                         // Capacity
-                        _buildSectionHeader(context, 'Availability'),
+                        _buildSectionHeader(context, AppLocalizations.of(context).filterAvailability),
                         SwitchListTile(
                           value: state.criteria.hasCapacityInfo == true,
                           onChanged: (value) {
@@ -232,16 +233,16 @@ class VenueFilterSheet extends StatelessWidget {
                                 .read<VenueFilterCubit>()
                                 .setHasCapacityFilter(value ? true : null);
                           },
-                          title: const Text('Live Capacity Info'),
+                          title: Text(AppLocalizations.of(context).filterLiveCapacity),
                           subtitle:
-                              const Text('Shows real-time occupancy data'),
+                              Text(AppLocalizations.of(context).filterLiveCapacityDesc),
                           secondary: const Icon(Icons.groups),
                         ),
 
                         const SizedBox(height: 16),
 
                         // Atmosphere tags
-                        _buildSectionHeader(context, 'Atmosphere'),
+                        _buildSectionHeader(context, AppLocalizations.of(context).filterAtmosphere),
                         const SizedBox(height: 8),
                         Wrap(
                           spacing: 8,
@@ -284,8 +285,8 @@ class VenueFilterSheet extends StatelessWidget {
                         onPressed: () => Navigator.pop(context),
                         child: Text(
                           state.hasActiveFilters
-                              ? 'Apply ${state.activeFilterCount} Filter${state.activeFilterCount == 1 ? '' : 's'}'
-                              : 'Done',
+                              ? AppLocalizations.of(context).filterApplyCount(state.activeFilterCount)
+                              : AppLocalizations.of(context).filterDone,
                         ),
                       ),
                     ),

@@ -798,7 +798,7 @@ abstract class AppLocalizations {
   /// **'Predictions'**
   String get predictions;
 
-  /// Make prediction button
+  /// Button to make a game prediction
   ///
   /// In en, this message translates to:
   /// **'Make Prediction'**
@@ -810,7 +810,7 @@ abstract class AppLocalizations {
   /// **'Your Prediction'**
   String get yourPrediction;
 
-  /// Prediction saved confirmation
+  /// Success message when prediction is saved
   ///
   /// In en, this message translates to:
   /// **'Prediction saved!'**
@@ -1038,7 +1038,7 @@ abstract class AppLocalizations {
   /// **'Share as Image'**
   String get shareAsImage;
 
-  /// Add to calendar button
+  /// Button/title for adding events to calendar
   ///
   /// In en, this message translates to:
   /// **'Add to Calendar'**
@@ -2118,7 +2118,7 @@ abstract class AppLocalizations {
   /// **'Be the first to share something!\nConnect with friends to see their activities.'**
   String get beFirstToShare;
 
-  /// Create activity button
+  /// Title for create activity sheet
   ///
   /// In en, this message translates to:
   /// **'Create Activity'**
@@ -4002,7 +4002,7 @@ abstract class AppLocalizations {
   /// **'Create'**
   String get create;
 
-  /// Filter venues screen title
+  /// Title for filter venues sheet
   ///
   /// In en, this message translates to:
   /// **'Filter Venues'**
@@ -4122,7 +4122,7 @@ abstract class AppLocalizations {
   /// **'Give your party a fun name'**
   String get partyNameHint;
 
-  /// Name validation error
+  /// Validation error for empty name field
   ///
   /// In en, this message translates to:
   /// **'Please enter a name'**
@@ -4158,22 +4158,22 @@ abstract class AppLocalizations {
   /// **'Game'**
   String get game;
 
-  /// Maximum attendees field label
+  /// Label for max attendees slider
   ///
   /// In en, this message translates to:
   /// **'Maximum Attendees'**
   String get maximumAttendees;
 
-  /// Virtual attendance section label
+  /// Label for virtual attendance toggle
   ///
   /// In en, this message translates to:
   /// **'Virtual Attendance'**
   String get virtualAttendance;
 
-  /// Virtual attendance description
+  /// Description for virtual attendance
   ///
   /// In en, this message translates to:
-  /// **'Allow virtual attendees to join remotely'**
+  /// **'Allow fans to join virtually and participate in chat'**
   String get virtualAttendanceDesc;
 
   /// Virtual fee field label
@@ -6383,6 +6383,522 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Clear chat'**
   String get copaClearTooltip;
+
+  /// Error message when calendar add fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to add to calendar'**
+  String get calendarAddFailed;
+
+  /// Success message after updating watch party
+  ///
+  /// In en, this message translates to:
+  /// **'Watch party updated!'**
+  String get watchPartyUpdated;
+
+  /// Title for the edit watch party screen
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Watch Party'**
+  String get editWatchParty;
+
+  /// Generic save button label
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get saveButton;
+
+  /// Button label for saving changes
+  ///
+  /// In en, this message translates to:
+  /// **'Save Changes'**
+  String get saveChanges;
+
+  /// Warning when editing active watch party
+  ///
+  /// In en, this message translates to:
+  /// **'Some fields cannot be edited after the party has started.'**
+  String get fieldsCannotBeEdited;
+
+  /// Label for visibility setting
+  ///
+  /// In en, this message translates to:
+  /// **'Visibility'**
+  String get visibilityLabel;
+
+  /// Description for public visibility
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone can discover and join this party'**
+  String get visibilityPublicDesc;
+
+  /// Description for private visibility
+  ///
+  /// In en, this message translates to:
+  /// **'Only invited people can join'**
+  String get visibilityPrivateDesc;
+
+  /// Label for game section
+  ///
+  /// In en, this message translates to:
+  /// **'Game'**
+  String get gameLabel;
+
+  /// Subtitle when game is read-only
+  ///
+  /// In en, this message translates to:
+  /// **'Game cannot be changed'**
+  String get gameCannotBeChanged;
+
+  /// Label for venue section
+  ///
+  /// In en, this message translates to:
+  /// **'Venue'**
+  String get venueLabel;
+
+  /// Button to continue editing
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Editing'**
+  String get keepEditing;
+
+  /// Button to discard changes
+  ///
+  /// In en, this message translates to:
+  /// **'Discard'**
+  String get discard;
+
+  /// Generic cancel button label
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancelButton;
+
+  /// Button to post an activity
+  ///
+  /// In en, this message translates to:
+  /// **'Post'**
+  String get postButton;
+
+  /// Validation error for empty content
+  ///
+  /// In en, this message translates to:
+  /// **'Please add some content'**
+  String get pleaseAddContent;
+
+  /// Validation error for empty venue name
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a venue name'**
+  String get pleaseEnterVenueName;
+
+  /// Validation error for empty game title
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a game title'**
+  String get pleaseEnterGameTitle;
+
+  /// Tab label for check-in activity
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in'**
+  String get tabCheckIn;
+
+  /// Tab label for game attendance activity
+  ///
+  /// In en, this message translates to:
+  /// **'Game'**
+  String get tabGame;
+
+  /// Tab label for venue review activity
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get tabReview;
+
+  /// Tab label for photo sharing activity
+  ///
+  /// In en, this message translates to:
+  /// **'Photo'**
+  String get tabPhoto;
+
+  /// Prompt for check-in location
+  ///
+  /// In en, this message translates to:
+  /// **'Where are you checking in?'**
+  String get checkInQuestion;
+
+  /// Label for venue name input
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Name'**
+  String get venueNameLabel;
+
+  /// Hint for venue name input
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., The Sports Bar'**
+  String get venueNameHint;
+
+  /// Label for optional note
+  ///
+  /// In en, this message translates to:
+  /// **'Add a note (optional)'**
+  String get addNoteOptional;
+
+  /// Hint for check-in note input
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s happening? How\'s the atmosphere?'**
+  String get checkInNoteHint;
+
+  /// Prompt for game attendance
+  ///
+  /// In en, this message translates to:
+  /// **'Which game are you attending?'**
+  String get gameAttendanceQuestion;
+
+  /// Label for game title input
+  ///
+  /// In en, this message translates to:
+  /// **'Game Title'**
+  String get gameTitleLabel;
+
+  /// Hint for game title input
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., Brazil vs Argentina'**
+  String get gameTitleHint;
+
+  /// Label for optional venue input
+  ///
+  /// In en, this message translates to:
+  /// **'Venue (optional)'**
+  String get venueOptionalLabel;
+
+  /// Hint for optional venue input
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., Mercedes-Benz Stadium'**
+  String get venueOptionalHint;
+
+  /// Label for sharing thoughts
+  ///
+  /// In en, this message translates to:
+  /// **'Share your thoughts'**
+  String get shareThoughts;
+
+  /// Hint for game thoughts input
+  ///
+  /// In en, this message translates to:
+  /// **'How excited are you? Any predictions?'**
+  String get gameThoughtsHint;
+
+  /// Prompt for venue review
+  ///
+  /// In en, this message translates to:
+  /// **'Which venue are you reviewing?'**
+  String get reviewQuestion;
+
+  /// Hint for review venue name
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., Murphy\'s Tavern'**
+  String get reviewVenueNameHint;
+
+  /// Label for review text
+  ///
+  /// In en, this message translates to:
+  /// **'Your review'**
+  String get yourReview;
+
+  /// Hint for review content
+  ///
+  /// In en, this message translates to:
+  /// **'Share your experience... How was the food, service, atmosphere?'**
+  String get reviewHint;
+
+  /// Placeholder for photo upload
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to add photos'**
+  String get tapToAddPhotos;
+
+  /// Label for upcoming features
+  ///
+  /// In en, this message translates to:
+  /// **'(Coming Soon)'**
+  String get comingSoon;
+
+  /// Label for photo caption
+  ///
+  /// In en, this message translates to:
+  /// **'Caption'**
+  String get captionLabel;
+
+  /// Hint for photo caption input
+  ///
+  /// In en, this message translates to:
+  /// **'Write a caption for your photos...'**
+  String get captionHint;
+
+  /// Error message when saving prediction fails
+  ///
+  /// In en, this message translates to:
+  /// **'Error saving prediction'**
+  String get errorSavingPrediction;
+
+  /// Title for game prediction section
+  ///
+  /// In en, this message translates to:
+  /// **'Game Prediction'**
+  String get gamePrediction;
+
+  /// Badge label when prediction exists
+  ///
+  /// In en, this message translates to:
+  /// **'Predicted'**
+  String get predicted;
+
+  /// Filter chip for match broadcasting
+  ///
+  /// In en, this message translates to:
+  /// **'Shows Match'**
+  String get filterShowsMatch;
+
+  /// Filter chip for venues with TVs
+  ///
+  /// In en, this message translates to:
+  /// **'Has TVs'**
+  String get filterHasTvs;
+
+  /// Filter chip for venue specials
+  ///
+  /// In en, this message translates to:
+  /// **'Specials'**
+  String get filterSpecials;
+
+  /// Button to clear all filters
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get filterClear;
+
+  /// Button to clear all filters
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get filterClearAll;
+
+  /// Section header for broadcasting filters
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcasting'**
+  String get filterBroadcasting;
+
+  /// Toggle label for showing match
+  ///
+  /// In en, this message translates to:
+  /// **'Shows This Match'**
+  String get filterShowsThisMatch;
+
+  /// Description for match broadcasting filter
+  ///
+  /// In en, this message translates to:
+  /// **'Only show venues broadcasting this match'**
+  String get filterShowsThisMatchDesc;
+
+  /// Section header for setup filters
+  ///
+  /// In en, this message translates to:
+  /// **'Setup'**
+  String get filterSetup;
+
+  /// Description for TV filter
+  ///
+  /// In en, this message translates to:
+  /// **'Venues with TV/screen information'**
+  String get filterHasTvsDesc;
+
+  /// Section header for offers filters
+  ///
+  /// In en, this message translates to:
+  /// **'Offers'**
+  String get filterOffers;
+
+  /// Toggle label for specials filter
+  ///
+  /// In en, this message translates to:
+  /// **'Has Specials'**
+  String get filterHasSpecials;
+
+  /// Description for specials filter
+  ///
+  /// In en, this message translates to:
+  /// **'Venues with active deals'**
+  String get filterHasSpecialsDesc;
+
+  /// Section header for availability filters
+  ///
+  /// In en, this message translates to:
+  /// **'Availability'**
+  String get filterAvailability;
+
+  /// Toggle label for capacity filter
+  ///
+  /// In en, this message translates to:
+  /// **'Live Capacity Info'**
+  String get filterLiveCapacity;
+
+  /// Description for capacity filter
+  ///
+  /// In en, this message translates to:
+  /// **'Shows real-time occupancy data'**
+  String get filterLiveCapacityDesc;
+
+  /// Section header for atmosphere filters
+  ///
+  /// In en, this message translates to:
+  /// **'Atmosphere'**
+  String get filterAtmosphere;
+
+  /// Button showing filter count
+  ///
+  /// In en, this message translates to:
+  /// **'Apply {count} {count, plural, =1{Filter} other{Filters}}'**
+  String filterApplyCount(int count);
+
+  /// Button when no filters are active
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get filterDone;
+
+  /// Title for TV setup screen
+  ///
+  /// In en, this message translates to:
+  /// **'TV & Screen Setup'**
+  String get tvScreenSetup;
+
+  /// Success message when TV setup is saved
+  ///
+  /// In en, this message translates to:
+  /// **'TV setup saved'**
+  String get tvSetupSaved;
+
+  /// Button to add a new screen
+  ///
+  /// In en, this message translates to:
+  /// **'Add Screen'**
+  String get addScreen;
+
+  /// Label while saving
+  ///
+  /// In en, this message translates to:
+  /// **'Saving...'**
+  String get savingLabel;
+
+  /// Button to save TV setup
+  ///
+  /// In en, this message translates to:
+  /// **'Save Setup'**
+  String get saveSetup;
+
+  /// Label for total screen count
+  ///
+  /// In en, this message translates to:
+  /// **'Total Screens'**
+  String get totalScreens;
+
+  /// Subtitle showing configured screen count
+  ///
+  /// In en, this message translates to:
+  /// **'{count} screens configured'**
+  String screensConfigured(int count);
+
+  /// Section header for audio setup
+  ///
+  /// In en, this message translates to:
+  /// **'Audio Setup'**
+  String get audioSetup;
+
+  /// Description for dedicated audio setup
+  ///
+  /// In en, this message translates to:
+  /// **'Game audio on main sound system'**
+  String get audioDedicated;
+
+  /// Description for shared audio setup
+  ///
+  /// In en, this message translates to:
+  /// **'Game audio mixed with venue music'**
+  String get audioShared;
+
+  /// Description for headphones available setup
+  ///
+  /// In en, this message translates to:
+  /// **'Guests can request headphones'**
+  String get audioHeadphones;
+
+  /// Section header for screen details
+  ///
+  /// In en, this message translates to:
+  /// **'Screen Details'**
+  String get screenDetails;
+
+  /// Empty state message
+  ///
+  /// In en, this message translates to:
+  /// **'No screens configured'**
+  String get noScreensConfigured;
+
+  /// Empty state hint
+  ///
+  /// In en, this message translates to:
+  /// **'Tap \"Add Screen\" to get started'**
+  String get tapAddScreenToStart;
+
+  /// Label for individual screen
+  ///
+  /// In en, this message translates to:
+  /// **'Screen {number}'**
+  String screenNumber(int number);
+
+  /// Label for primary screen
+  ///
+  /// In en, this message translates to:
+  /// **'Screen {number} (Primary)'**
+  String screenPrimary(int number);
+
+  /// Label for screen size dropdown
+  ///
+  /// In en, this message translates to:
+  /// **'Screen Size'**
+  String get screenSizeLabel;
+
+  /// Label for location input
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get locationLabel;
+
+  /// Hint for location input
+  ///
+  /// In en, this message translates to:
+  /// **'e.g., Main Bar, Patio, Private Room'**
+  String get locationHint;
+
+  /// Checkbox label for audio availability
+  ///
+  /// In en, this message translates to:
+  /// **'Has Audio'**
+  String get hasAudio;
+
+  /// Checkbox label for primary screen
+  ///
+  /// In en, this message translates to:
+  /// **'Primary'**
+  String get primary;
 }
 
 class _AppLocalizationsDelegate

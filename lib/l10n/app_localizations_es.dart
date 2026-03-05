@@ -2226,7 +2226,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get partyNameHint => 'Dale un nombre divertido a tu fiesta';
 
   @override
-  String get pleaseEnterName => 'Ingresa un nombre';
+  String get pleaseEnterName => 'Por favor ingresa un nombre';
 
   @override
   String get descriptionHint => 'Cuéntale a los invitados qué esperar...';
@@ -2244,13 +2244,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get game => 'Partido';
 
   @override
-  String get maximumAttendees => 'Asistentes Máximos';
+  String get maximumAttendees => 'Máximo de Asistentes';
 
   @override
   String get virtualAttendance => 'Asistencia Virtual';
 
   @override
-  String get virtualAttendanceDesc => 'Permitir asistentes virtuales remotos';
+  String get virtualAttendanceDesc =>
+      'Permitir que los fans se unan virtualmente y participen en el chat';
 
   @override
   String get virtualAttendanceFee => 'Tarifa de Asistencia Virtual';
@@ -3516,4 +3517,284 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get copaClearTooltip => 'Borrar chat';
+
+  @override
+  String get calendarAddFailed => 'Error al agregar al calendario';
+
+  @override
+  String get watchPartyUpdated => '¡Fiesta actualizada!';
+
+  @override
+  String get editWatchParty => 'Editar Fiesta';
+
+  @override
+  String get saveButton => 'Guardar';
+
+  @override
+  String get saveChanges => 'Guardar Cambios';
+
+  @override
+  String get fieldsCannotBeEdited =>
+      'Algunos campos no se pueden editar después de que la fiesta haya comenzado.';
+
+  @override
+  String get visibilityLabel => 'Visibilidad';
+
+  @override
+  String get visibilityPublicDesc =>
+      'Cualquiera puede descubrir y unirse a esta fiesta';
+
+  @override
+  String get visibilityPrivateDesc =>
+      'Solo las personas invitadas pueden unirse';
+
+  @override
+  String get gameLabel => 'Partido';
+
+  @override
+  String get gameCannotBeChanged => 'El partido no se puede cambiar';
+
+  @override
+  String get venueLabel => 'Lugar';
+
+  @override
+  String get keepEditing => 'Seguir Editando';
+
+  @override
+  String get discard => 'Descartar';
+
+  @override
+  String get cancelButton => 'Cancelar';
+
+  @override
+  String get postButton => 'Publicar';
+
+  @override
+  String get pleaseAddContent => 'Por favor agrega contenido';
+
+  @override
+  String get pleaseEnterVenueName => 'Por favor ingresa un nombre de lugar';
+
+  @override
+  String get pleaseEnterGameTitle => 'Por favor ingresa un título de partido';
+
+  @override
+  String get tabCheckIn => 'Check-in';
+
+  @override
+  String get tabGame => 'Partido';
+
+  @override
+  String get tabReview => 'Reseña';
+
+  @override
+  String get tabPhoto => 'Foto';
+
+  @override
+  String get checkInQuestion => '¿Dónde estás haciendo check-in?';
+
+  @override
+  String get venueNameLabel => 'Nombre del Lugar';
+
+  @override
+  String get venueNameHint => 'ej., El Bar Deportivo';
+
+  @override
+  String get addNoteOptional => 'Agregar una nota (opcional)';
+
+  @override
+  String get checkInNoteHint => '¿Qué está pasando? ¿Cómo está el ambiente?';
+
+  @override
+  String get gameAttendanceQuestion => '¿A qué partido estás asistiendo?';
+
+  @override
+  String get gameTitleLabel => 'Título del Partido';
+
+  @override
+  String get gameTitleHint => 'ej., Brasil vs Argentina';
+
+  @override
+  String get venueOptionalLabel => 'Lugar (opcional)';
+
+  @override
+  String get venueOptionalHint => 'ej., Estadio Mercedes-Benz';
+
+  @override
+  String get shareThoughts => 'Comparte tus pensamientos';
+
+  @override
+  String get gameThoughtsHint =>
+      '¿Qué tan emocionado estás? ¿Alguna predicción?';
+
+  @override
+  String get reviewQuestion => '¿Qué lugar estás reseñando?';
+
+  @override
+  String get reviewVenueNameHint => 'ej., La Taberna de Murphy';
+
+  @override
+  String get yourReview => 'Tu reseña';
+
+  @override
+  String get reviewHint =>
+      'Comparte tu experiencia... ¿Cómo estuvo la comida, el servicio, el ambiente?';
+
+  @override
+  String get tapToAddPhotos => 'Toca para agregar fotos';
+
+  @override
+  String get comingSoon => '(Próximamente)';
+
+  @override
+  String get captionLabel => 'Descripción';
+
+  @override
+  String get captionHint => 'Escribe una descripción para tus fotos...';
+
+  @override
+  String get errorSavingPrediction => 'Error al guardar predicción';
+
+  @override
+  String get gamePrediction => 'Predicción del Partido';
+
+  @override
+  String get predicted => 'Predicho';
+
+  @override
+  String get filterShowsMatch => 'Muestra Partido';
+
+  @override
+  String get filterHasTvs => 'Tiene TVs';
+
+  @override
+  String get filterSpecials => 'Ofertas';
+
+  @override
+  String get filterClear => 'Limpiar';
+
+  @override
+  String get filterClearAll => 'Limpiar Todo';
+
+  @override
+  String get filterBroadcasting => 'Transmisión';
+
+  @override
+  String get filterShowsThisMatch => 'Muestra Este Partido';
+
+  @override
+  String get filterShowsThisMatchDesc =>
+      'Solo mostrar lugares que transmiten este partido';
+
+  @override
+  String get filterSetup => 'Configuración';
+
+  @override
+  String get filterHasTvsDesc => 'Lugares con información de TV/pantallas';
+
+  @override
+  String get filterOffers => 'Ofertas';
+
+  @override
+  String get filterHasSpecials => 'Tiene Ofertas';
+
+  @override
+  String get filterHasSpecialsDesc => 'Lugares con ofertas activas';
+
+  @override
+  String get filterAvailability => 'Disponibilidad';
+
+  @override
+  String get filterLiveCapacity => 'Capacidad en Vivo';
+
+  @override
+  String get filterLiveCapacityDesc =>
+      'Muestra datos de ocupación en tiempo real';
+
+  @override
+  String get filterAtmosphere => 'Ambiente';
+
+  @override
+  String filterApplyCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Filtros',
+      one: 'Filtro',
+    );
+    return 'Aplicar $count $_temp0';
+  }
+
+  @override
+  String get filterDone => 'Listo';
+
+  @override
+  String get tvScreenSetup => 'Configuración de TV y Pantallas';
+
+  @override
+  String get tvSetupSaved => 'Configuración de TV guardada';
+
+  @override
+  String get addScreen => 'Agregar Pantalla';
+
+  @override
+  String get savingLabel => 'Guardando...';
+
+  @override
+  String get saveSetup => 'Guardar Configuración';
+
+  @override
+  String get totalScreens => 'Total de Pantallas';
+
+  @override
+  String screensConfigured(int count) {
+    return '$count pantallas configuradas';
+  }
+
+  @override
+  String get audioSetup => 'Configuración de Audio';
+
+  @override
+  String get audioDedicated =>
+      'Audio del partido en sistema de sonido principal';
+
+  @override
+  String get audioShared => 'Audio del partido mezclado con música del lugar';
+
+  @override
+  String get audioHeadphones => 'Los invitados pueden solicitar auriculares';
+
+  @override
+  String get screenDetails => 'Detalles de Pantallas';
+
+  @override
+  String get noScreensConfigured => 'No hay pantallas configuradas';
+
+  @override
+  String get tapAddScreenToStart => 'Toca \"Agregar Pantalla\" para comenzar';
+
+  @override
+  String screenNumber(int number) {
+    return 'Pantalla $number';
+  }
+
+  @override
+  String screenPrimary(int number) {
+    return 'Pantalla $number (Principal)';
+  }
+
+  @override
+  String get screenSizeLabel => 'Tamaño de Pantalla';
+
+  @override
+  String get locationLabel => 'Ubicación';
+
+  @override
+  String get locationHint => 'ej., Bar Principal, Terraza, Sala Privada';
+
+  @override
+  String get hasAudio => 'Tiene Audio';
+
+  @override
+  String get primary => 'Principal';
 }

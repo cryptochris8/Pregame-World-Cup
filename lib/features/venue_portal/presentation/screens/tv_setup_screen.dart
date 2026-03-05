@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
@@ -50,8 +51,8 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('TV setup saved'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).tvSetupSaved),
           backgroundColor: Colors.green,
         ),
       );
@@ -84,7 +85,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text('TV & Screen Setup'),
+            title: Text(AppLocalizations.of(context).tvScreenSetup),
           ),
           body: SingleChildScrollView(
             padding: const EdgeInsets.all(16),
@@ -111,7 +112,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
           floatingActionButton: FloatingActionButton.extended(
             onPressed: _addScreen,
             icon: const Icon(Icons.add),
-            label: const Text('Add Screen'),
+            label: Text(AppLocalizations.of(context).addScreen),
           ),
           bottomNavigationBar: SafeArea(
             child: Padding(
@@ -128,7 +129,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                         ),
                       )
                     : const Icon(Icons.save),
-                label: Text(state.isSaving ? 'Saving...' : 'Save Setup'),
+                label: Text(state.isSaving ? AppLocalizations.of(context).savingLabel : AppLocalizations.of(context).saveSetup),
               ),
             ),
           ),
@@ -165,13 +166,13 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Total Screens',
+                    AppLocalizations.of(context).totalScreens,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
-                    '$_totalScreens screens configured',
+                    AppLocalizations.of(context).screensConfigured(_totalScreens),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: colorScheme.onSurfaceVariant,
                     ),
@@ -199,7 +200,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Audio Setup',
+          AppLocalizations.of(context).audioSetup,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -219,7 +220,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                   }
                 },
                 title: Text(setup.displayName),
-                subtitle: Text(_getAudioDescription(setup)),
+                subtitle: Text(_getAudioDescription(setup, context)),
               );
             }).toList(),
           ),
@@ -228,14 +229,14 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
     );
   }
 
-  String _getAudioDescription(AudioSetup setup) {
+  String _getAudioDescription(AudioSetup setup, BuildContext context) {
     switch (setup) {
       case AudioSetup.dedicated:
-        return 'Game audio on main sound system';
+        return AppLocalizations.of(context).audioDedicated;
       case AudioSetup.shared:
-        return 'Game audio mixed with venue music';
+        return AppLocalizations.of(context).audioShared;
       case AudioSetup.headphonesAvailable:
-        return 'Guests can request headphones';
+        return AppLocalizations.of(context).audioHeadphones;
     }
   }
 
@@ -246,7 +247,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Screen Details',
+          AppLocalizations.of(context).screenDetails,
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -266,12 +267,12 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'No screens configured',
+                      AppLocalizations.of(context).noScreensConfigured,
                       style: theme.textTheme.bodyLarge,
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'Tap "Add Screen" to get started',
+                      AppLocalizations.of(context).tapAddScreenToStart,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: theme.colorScheme.onSurfaceVariant,
                       ),
@@ -313,7 +314,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                 : colorScheme.onSurfaceVariant,
           ),
         ),
-        title: Text('Screen ${index + 1}${screen.isPrimary ? ' (Primary)' : ''}'),
+        title: Text(screen.isPrimary ? AppLocalizations.of(context).screenPrimary(index + 1) : AppLocalizations.of(context).screenNumber(index + 1)),
         subtitle: Text('${screen.size} • ${screen.location}'),
         trailing: IconButton(
           icon: const Icon(Icons.delete_outline),
@@ -327,9 +328,9 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                 // Size dropdown
                 DropdownButtonFormField<String>(
                   value: screen.size,
-                  decoration: const InputDecoration(
-                    labelText: 'Screen Size',
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: AppLocalizations.of(context).screenSizeLabel,
+                    border: const OutlineInputBorder(),
                   ),
                   items: ['32"', '42"', '55"', '65"', '75"', '85"', 'Projector']
                       .map((size) => DropdownMenuItem(
@@ -349,10 +350,10 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                 // Location
                 TextFormField(
                   initialValue: screen.location,
-                  decoration: const InputDecoration(
-                    labelText: 'Location',
-                    hintText: 'e.g., Main Bar, Patio, Private Room',
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: AppLocalizations.of(context).locationLabel,
+                    hintText: AppLocalizations.of(context).locationHint,
+                    border: const OutlineInputBorder(),
                   ),
                   onChanged: (value) {
                     setState(() {
@@ -373,7 +374,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                                 screen.copyWith(hasAudio: value ?? false);
                           });
                         },
-                        title: const Text('Has Audio'),
+                        title: Text(AppLocalizations.of(context).hasAudio),
                         controlAffinity: ListTileControlAffinity.leading,
                         contentPadding: EdgeInsets.zero,
                       ),
@@ -390,7 +391,7 @@ class _TvSetupScreenState extends State<TvSetupScreen> {
                             }
                           });
                         },
-                        title: const Text('Primary'),
+                        title: Text(AppLocalizations.of(context).primary),
                         controlAffinity: ListTileControlAffinity.leading,
                         contentPadding: EdgeInsets.zero,
                       ),
