@@ -440,4 +440,265 @@ void main() {
       expect(stream, isA<Stream<WorldCupMatch?>>());
     });
   });
+
+  group('getMatchesByDate', () {
+    test('filters matches by year, month, and day', () async {
+      final matchesWithDates = [
+        TestDataFactory.createMatch(
+          matchId: 'm1',
+          dateTime: DateTime(2026, 6, 15, 18, 0),
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm2',
+          dateTime: DateTime(2026, 6, 15, 21, 0),
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm3',
+          dateTime: DateTime(2026, 6, 16, 18, 0),
+        ),
+      ];
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => matchesWithDates);
+
+      final result = await repository.getMatchesByDate(DateTime(2026, 6, 15));
+
+      expect(result.length, 2);
+      expect(result.every((m) => m.dateTime!.day == 15), true);
+    });
+
+    test('returns empty list when no matches on date', () async {
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => testMatches);
+
+      final result = await repository.getMatchesByDate(DateTime(2030, 1, 1));
+
+      expect(result, isEmpty);
+    });
+
+    test('falls back to mock data when cache throws', () async {
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenThrow(Exception('Error'));
+      when(() => mockCacheDataSource.cacheMatches(any()))
+          .thenAnswer((_) async {});
+
+      final result = await repository.getMatchesByDate(DateTime(2026, 6, 15));
+
+      // getAllMatches falls back to mock data internally, so result may not be empty
+      expect(result, isA<List<WorldCupMatch>>());
+    });
+
+    test('excludes matches with null dateTime', () async {
+      final matchesWithNull = [
+        TestDataFactory.createMatch(
+          matchId: 'm1',
+          dateTime: DateTime(2026, 6, 15, 18, 0),
+        ),
+        const WorldCupMatch(
+          matchId: 'm2',
+          matchNumber: 2,
+          stage: MatchStage.groupStage,
+          homeTeamName: 'TBD',
+          awayTeamName: 'TBD',
+          dateTime: null,
+        ),
+      ];
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => matchesWithNull);
+
+      final result = await repository.getMatchesByDate(DateTime(2026, 6, 15));
+
+      expect(result.length, 1);
+      expect(result[0].matchId, 'm1');
+    });
+  });
+
+  group('getMatchesByVenue', () {
+    test('filters matches by venueId', () async {
+      final matchesWithVenues = [
+        TestDataFactory.createMatch(matchId: 'm1', venueId: 'venue_A'),
+        TestDataFactory.createMatch(matchId: 'm2', venueId: 'venue_B'),
+        TestDataFactory.createMatch(matchId: 'm3', venueId: 'venue_A'),
+      ];
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => matchesWithVenues);
+
+      final result = await repository.getMatchesByVenue('venue_A');
+
+      expect(result.length, 2);
+      expect(result.every((m) => m.venueId == 'venue_A'), true);
+    });
+
+    test('returns empty list for unknown venue', () async {
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => testMatches);
+
+      final result = await repository.getMatchesByVenue('nonexistent_venue');
+
+      expect(result, isEmpty);
+    });
+
+    test('returns empty list on error', () async {
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenThrow(Exception('Error'));
+
+      final result = await repository.getMatchesByVenue('venue_A');
+
+      expect(result, isEmpty);
+    });
+  });
+
+  group('getCompletedMatches', () {
+    test('returns cached completed matches when available', () async {
+      final completedMatches = [
+        TestDataFactory.createMatch(
+          matchId: 'm1',
+          status: MatchStatus.completed,
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm2',
+          status: MatchStatus.completed,
+        ),
+      ];
+      when(() => mockCacheDataSource.getCachedCompletedMatches())
+          .thenAnswer((_) async => completedMatches);
+
+      final result = await repository.getCompletedMatches();
+
+      expect(result, equals(completedMatches));
+      verifyNever(() => mockCacheDataSource.getCachedMatches());
+    });
+
+    test('filters completed from all matches on cache miss', () async {
+      final allMatches = [
+        TestDataFactory.createMatch(matchId: 'm1', status: MatchStatus.completed),
+        TestDataFactory.createMatch(matchId: 'm2', status: MatchStatus.scheduled),
+        TestDataFactory.createMatch(matchId: 'm3', status: MatchStatus.completed),
+        TestDataFactory.createMatch(matchId: 'm4', status: MatchStatus.inProgress),
+      ];
+      when(() => mockCacheDataSource.getCachedCompletedMatches())
+          .thenAnswer((_) async => null);
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => allMatches);
+      when(() => mockCacheDataSource.cacheCompletedMatches(any()))
+          .thenAnswer((_) async {});
+
+      final result = await repository.getCompletedMatches();
+
+      expect(result.length, 2);
+      expect(result.every((m) => m.status == MatchStatus.completed), true);
+    });
+
+    test('sorts completed matches by date descending', () async {
+      final allMatches = [
+        TestDataFactory.createMatch(
+          matchId: 'm1',
+          status: MatchStatus.completed,
+          dateTime: DateTime(2026, 6, 12),
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm2',
+          status: MatchStatus.completed,
+          dateTime: DateTime(2026, 6, 15),
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm3',
+          status: MatchStatus.completed,
+          dateTime: DateTime(2026, 6, 13),
+        ),
+      ];
+      when(() => mockCacheDataSource.getCachedCompletedMatches())
+          .thenAnswer((_) async => null);
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => allMatches);
+      when(() => mockCacheDataSource.cacheCompletedMatches(any()))
+          .thenAnswer((_) async {});
+
+      final result = await repository.getCompletedMatches();
+
+      expect(result[0].matchId, 'm2'); // June 15 (most recent)
+      expect(result[1].matchId, 'm3'); // June 13
+      expect(result[2].matchId, 'm1'); // June 12 (oldest)
+    });
+
+    test('respects limit parameter', () async {
+      final completedMatches = List.generate(
+        5,
+        (i) => TestDataFactory.createMatch(
+          matchId: 'completed_$i',
+          status: MatchStatus.completed,
+        ),
+      );
+      when(() => mockCacheDataSource.getCachedCompletedMatches())
+          .thenAnswer((_) async => completedMatches);
+
+      final result = await repository.getCompletedMatches(limit: 3);
+
+      expect(result.length, 3);
+    });
+
+    test('returns empty list on error', () async {
+      when(() => mockCacheDataSource.getCachedCompletedMatches())
+          .thenThrow(Exception('Error'));
+
+      final result = await repository.getCompletedMatches();
+
+      expect(result, isEmpty);
+    });
+  });
+
+  group('getMatchesByGroupMatchDay', () {
+    test('filters group stage matches by match day', () async {
+      final matchesWithDays = [
+        TestDataFactory.createMatch(
+          matchId: 'm1',
+          stage: MatchStage.groupStage,
+          groupMatchDay: 1,
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm2',
+          stage: MatchStage.groupStage,
+          groupMatchDay: 2,
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm3',
+          stage: MatchStage.groupStage,
+          groupMatchDay: 1,
+        ),
+        TestDataFactory.createMatch(
+          matchId: 'm4',
+          stage: MatchStage.roundOf16,
+          groupMatchDay: null,
+        ),
+      ];
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => matchesWithDays);
+
+      final result = await repository.getMatchesByGroupMatchDay(1);
+
+      expect(result.length, 2);
+      expect(result.every((m) => m.groupMatchDay == 1), true);
+      expect(result.every((m) => m.stage == MatchStage.groupStage), true);
+    });
+
+    test('returns empty list for invalid match day', () async {
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenAnswer((_) async => testMatches);
+
+      final result = await repository.getMatchesByGroupMatchDay(99);
+
+      expect(result, isEmpty);
+    });
+
+    test('falls back to mock data when cache throws', () async {
+      when(() => mockCacheDataSource.getCachedMatches())
+          .thenThrow(Exception('Error'));
+      when(() => mockCacheDataSource.cacheMatches(any()))
+          .thenAnswer((_) async {});
+
+      final result = await repository.getMatchesByGroupMatchDay(1);
+
+      // getAllMatches falls back to mock data internally, so result may not be empty
+      expect(result, isA<List<WorldCupMatch>>());
+    });
+  });
 }

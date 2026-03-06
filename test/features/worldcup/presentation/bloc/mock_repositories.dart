@@ -15,6 +15,7 @@ class TestDataFactory {
     int matchNumber = 1,
     MatchStage stage = MatchStage.groupStage,
     String? group = 'A',
+    int? groupMatchDay = 1,
     String? homeTeamCode = 'USA',
     String homeTeamName = 'United States',
     String? awayTeamCode = 'MEX',
@@ -23,12 +24,14 @@ class TestDataFactory {
     int? awayScore,
     MatchStatus status = MatchStatus.scheduled,
     DateTime? dateTime,
+    String? venueId = 'venue_1',
   }) {
     return WorldCupMatch(
       matchId: matchId,
       matchNumber: matchNumber,
       stage: stage,
       group: group,
+      groupMatchDay: groupMatchDay,
       homeTeamCode: homeTeamCode,
       homeTeamName: homeTeamName,
       awayTeamCode: awayTeamCode,
@@ -37,6 +40,7 @@ class TestDataFactory {
       awayScore: awayScore,
       status: status,
       dateTime: dateTime ?? DateTime(2026, 6, 11, 18, 0),
+      venueId: venueId,
     );
   }
 
