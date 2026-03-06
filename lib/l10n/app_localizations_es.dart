@@ -255,8 +255,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noGroupDataAvailable => 'No hay datos de grupos disponibles';
 
   @override
-  String get knockoutBracketNotAvailableYet =>
-      'El cuadro eliminatorio aún no está disponible';
+  String get knockoutBracketNotAvailableYet => 'El cuadro eliminatorio aún no está disponible';
 
   @override
   String get checkBackAfterGroupStage => 'Vuelve después de la fase de grupos';
@@ -265,8 +264,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noFavoriteTeamsYet => 'Aún no hay equipos favoritos';
 
   @override
-  String get tapHeartIconToAddFavorites =>
-      'Toca el ícono de corazón en cualquier equipo para agregarlo a favoritos';
+  String get tapHeartIconToAddFavorites => 'Toca el ícono de corazón en cualquier equipo para agregarlo a favoritos';
 
   @override
   String teamsCount(int count) {
@@ -280,8 +278,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noFavoritesYet => 'Aún No Hay Favoritos';
 
   @override
-  String get tapHeartIconMessage =>
-      'Toca el ícono de corazón en cualquier partido o equipo\npara agregarlos a tus favoritos';
+  String get tapHeartIconMessage => 'Toca el ícono de corazón en cualquier partido o equipo\npara agregarlos a tus favoritos';
 
   @override
   String get browseMatches => 'Explorar Partidos';
@@ -721,15 +718,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get widgetSettings => 'Configuración del Widget';
 
   @override
-  String get widgetSettingsDescription =>
-      'Configura los widgets de la pantalla de inicio';
+  String get widgetSettingsDescription => 'Configura los widgets de la pantalla de inicio';
 
   @override
   String get addWidgetToHomeScreen => 'Agregar Widget a la Pantalla de Inicio';
 
   @override
-  String get widgetInstructions =>
-      'Mantén presionada la pantalla de inicio, toca el botón +, busca \'Pregame World Cup\' y selecciona un tamaño de widget.';
+  String get widgetInstructions => 'Mantén presionada la pantalla de inicio, toca el botón +, busca \'Pregame World Cup\' y selecciona un tamaño de widget.';
 
   @override
   String get displaySettings => 'Configuración de Pantalla';
@@ -738,15 +733,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get showLiveScores => 'Mostrar Marcadores en Vivo';
 
   @override
-  String get showLiveScoresDescription =>
-      'Mostrar marcadores de partidos en vivo en el widget';
+  String get showLiveScoresDescription => 'Mostrar marcadores de partidos en vivo en el widget';
 
   @override
   String get showUpcomingMatches => 'Mostrar Próximos Partidos';
 
   @override
-  String get showUpcomingMatchesDescription =>
-      'Mostrar próximos partidos en el widget';
+  String get showUpcomingMatchesDescription => 'Mostrar próximos partidos en el widget';
 
   @override
   String get compactMode => 'Modo Compacto';
@@ -763,8 +756,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get matchCountDescription =>
-      'Más partidos requieren un widget de mayor tamaño';
+  String get matchCountDescription => 'Más partidos requieren un widget de mayor tamaño';
 
   @override
   String get favoriteTeam => 'Equipo Favorito';
@@ -903,8 +895,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get pleaseEnterValidEmail => 'Ingresa un correo válido';
 
   @override
-  String get passwordMinLength =>
-      'La contraseña debe tener al menos 6 caracteres';
+  String get passwordMinLength => 'Ingresa tu contraseña';
+
+  @override
+  String get passwordRequirements =>
+      'La contraseña debe tener al menos 8 caracteres con una mayúscula, un número y un carácter especial';
 
   @override
   String get signIn => 'Iniciar Sesión';

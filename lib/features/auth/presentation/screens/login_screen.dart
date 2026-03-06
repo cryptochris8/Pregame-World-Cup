@@ -349,8 +349,16 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             obscureText: true,
                             validator: (value) {
-                              if (value == null || value.isEmpty || value.length < 6) {
+                              if (value == null || value.isEmpty) {
                                 return l10n.passwordMinLength;
+                              }
+                              if (!_isLoginMode) {
+                                if (value.length < 8 ||
+                                    !RegExp(r'[A-Z]').hasMatch(value) ||
+                                    !RegExp(r'[0-9]').hasMatch(value) ||
+                                    !RegExp(r'[!@#$%^&*(),.?":{}|<>]').hasMatch(value)) {
+                                  return l10n.passwordRequirements;
+                                }
                               }
                               return null;
                             },

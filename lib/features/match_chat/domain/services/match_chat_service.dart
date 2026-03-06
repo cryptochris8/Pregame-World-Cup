@@ -32,6 +32,7 @@ class MatchChatService {
   final Map<String, StreamController<List<MatchChatMessage>>> _messageStreams = {};
   final Map<String, StreamSubscription> _messageSubscriptions = {};
   final Map<String, StreamController<int>> _participantCountStreams = {};
+  final Map<String, StreamSubscription> _participantCountSubscriptions = {};
 
   // Current user info cache
   UserProfile? _currentUserProfile;
@@ -250,7 +251,8 @@ class MatchChatService {
       final controller = StreamController<int>.broadcast();
       _participantCountStreams[chatId] = controller;
 
-      _firestore
+      _participantCountSubscriptions[chatId]?.cancel();
+      _participantCountSubscriptions[chatId] = _firestore
           .collection(_matchChatsCollection)
           .doc(chatId)
           .snapshots()
@@ -562,6 +564,8 @@ class MatchChatService {
     _messageSubscriptions.remove(chatId);
     _messageStreams[chatId]?.close();
     _messageStreams.remove(chatId);
+    _participantCountSubscriptions[chatId]?.cancel();
+    _participantCountSubscriptions.remove(chatId);
     _participantCountStreams[chatId]?.close();
     _participantCountStreams.remove(chatId);
   }
@@ -577,6 +581,11 @@ class MatchChatService {
       controller.close();
     }
     _messageStreams.clear();
+
+    for (final subscription in _participantCountSubscriptions.values) {
+      subscription.cancel();
+    }
+    _participantCountSubscriptions.clear();
 
     for (final controller in _participantCountStreams.values) {
       controller.close();

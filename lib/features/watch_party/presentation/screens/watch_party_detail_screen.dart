@@ -74,6 +74,12 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
           );
           _loadWatchParty();
         }
+        if (state is VirtualAttendancePurchased) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(AppLocalizations.of(context).successfullyJoined)),
+          );
+          _loadWatchParty();
+        }
         if (state is WatchPartyLeft) {
           Navigator.pop(context);
         }
@@ -566,7 +572,6 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
     context.read<WatchPartyBloc>().add(
           PurchaseVirtualAttendanceEvent(
             watchPartyId: widget.watchPartyId,
-            context: context,
           ),
         );
   }

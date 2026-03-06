@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pregame_world_cup/core/services/logging_service.dart';
 import '../../domain/entities/entities.dart';
 import '../../domain/repositories/predictions_repository.dart';
 import '../../domain/repositories/world_cup_match_repository.dart';
@@ -37,7 +38,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
       // Subscribe to changes
       _subscribeToChanges();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to initialize predictions: $e', tag: 'PredictionsCubit');
       emit(state.copyWith(
         isLoading: false,
         errorMessage: 'Failed to load predictions: $e',
@@ -53,7 +54,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         emit(state.copyWith(predictions: predictions));
       },
       onError: (e) {
-        // Debug output removed
+        LoggingService.error('Predictions stream error: $e', tag: 'PredictionsCubit');
       },
     );
 
@@ -63,7 +64,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         emit(state.copyWith(stats: stats));
       },
       onError: (e) {
-        // Debug output removed
+        LoggingService.error('Prediction stats stream error: $e', tag: 'PredictionsCubit');
       },
     );
   }
@@ -112,7 +113,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'Prediction saved!',
       ));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to save prediction for match=$matchId: $e', tag: 'PredictionsCubit');
       emit(state.copyWith(
         isSaving: false,
         errorMessage: 'Failed to save prediction: $e',
@@ -154,7 +155,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'Prediction deleted',
       ));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to delete prediction id=$predictionId: $e', tag: 'PredictionsCubit');
       emit(state.copyWith(errorMessage: 'Failed to delete prediction: $e'));
     }
   }
@@ -175,7 +176,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'Prediction deleted',
       ));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to delete prediction for match=$matchId: $e', tag: 'PredictionsCubit');
       emit(state.copyWith(errorMessage: 'Failed to delete prediction: $e'));
     }
   }
@@ -205,7 +206,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
       ));
 
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to evaluate predictions: $e', tag: 'PredictionsCubit');
     }
   }
 
@@ -237,7 +238,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
         successMessage: 'All predictions cleared',
       ));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to clear all predictions: $e', tag: 'PredictionsCubit');
       emit(state.copyWith(errorMessage: 'Failed to clear predictions: $e'));
     }
   }
@@ -248,6 +249,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
       await _predictionsRepository.syncToFirestore();
     } catch (e) {
       // Best-effort: don't emit error for background sync
+      LoggingService.warning('Background sync to Firestore failed: $e', tag: 'PredictionsCubit');
     }
   }
 
@@ -266,6 +268,7 @@ class PredictionsCubit extends Cubit<PredictionsState> {
       ));
     } catch (e) {
       // Best-effort: don't emit error for background sync
+      LoggingService.warning('Background sync from Firestore failed: $e', tag: 'PredictionsCubit');
     }
   }
 

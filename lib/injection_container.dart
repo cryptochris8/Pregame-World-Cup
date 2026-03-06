@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 import 'package:flutter/foundation.dart';
 
+import 'core/services/logging_service.dart';
 import 'di/core_di.dart';
 import 'di/ai_di.dart';
 import 'di/data_services_di.dart';
@@ -17,7 +18,7 @@ final sl = GetIt.instance; // sl stands for Service Locator
 /// Debug-only log helper. Stripped by tree-shaking in release builds.
 void _diLog(String message) {
   if (kDebugMode) {
-    print(message);
+    LoggingService.debug(message, tag: 'DI');
   }
 }
 

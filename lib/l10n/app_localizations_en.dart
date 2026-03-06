@@ -255,8 +255,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noGroupDataAvailable => 'No group data available';
 
   @override
-  String get knockoutBracketNotAvailableYet =>
-      'Knockout bracket not available yet';
+  String get knockoutBracketNotAvailableYet => 'Knockout bracket not available yet';
 
   @override
   String get checkBackAfterGroupStage => 'Check back after group stage';
@@ -265,8 +264,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFavoriteTeamsYet => 'No favorite teams yet';
 
   @override
-  String get tapHeartIconToAddFavorites =>
-      'Tap the heart icon on any team to add it to your favorites';
+  String get tapHeartIconToAddFavorites => 'Tap the heart icon on any team to add it to your favorites';
 
   @override
   String teamsCount(int count) {
@@ -280,8 +278,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFavoritesYet => 'No Favorites Yet';
 
   @override
-  String get tapHeartIconMessage =>
-      'Tap the heart icon on any match or team\nto add them to your favorites';
+  String get tapHeartIconMessage => 'Tap the heart icon on any match or team\nto add them to your favorites';
 
   @override
   String get browseMatches => 'Browse Matches';
@@ -727,8 +724,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get addWidgetToHomeScreen => 'Add Widget to Home Screen';
 
   @override
-  String get widgetInstructions =>
-      'Long press on your home screen, tap the + button, search for \'Pregame World Cup\', and select a widget size.';
+  String get widgetInstructions => 'Long press on your home screen, tap the + button, search for \'Pregame World Cup\', and select a widget size.';
 
   @override
   String get displaySettings => 'Display Settings';
@@ -743,8 +739,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get showUpcomingMatches => 'Show Upcoming Matches';
 
   @override
-  String get showUpcomingMatchesDescription =>
-      'Display upcoming matches on widget';
+  String get showUpcomingMatchesDescription => 'Display upcoming matches on widget';
 
   @override
   String get compactMode => 'Compact Mode';
@@ -761,8 +756,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get matchCountDescription =>
-      'More matches require a larger widget size';
+  String get matchCountDescription => 'More matches require a larger widget size';
 
   @override
   String get favoriteTeam => 'Favorite Team';
@@ -901,7 +895,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pleaseEnterValidEmail => 'Please enter a valid email';
 
   @override
-  String get passwordMinLength => 'Password must be at least 6 characters';
+  String get passwordMinLength => 'Please enter your password';
+
+  @override
+  String get passwordRequirements => 'Password must be at least 8 characters with one uppercase letter, one number, and one special character';
 
   @override
   String get signIn => 'Sign In';

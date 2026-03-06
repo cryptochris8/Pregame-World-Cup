@@ -239,11 +239,9 @@ class LoadPendingInvitesEvent extends WatchPartyEvent {
 /// Purchase virtual attendance
 class PurchaseVirtualAttendanceEvent extends WatchPartyEvent {
   final String watchPartyId;
-  final BuildContext context;
 
   const PurchaseVirtualAttendanceEvent({
     required this.watchPartyId,
-    required this.context,
   });
 
   @override

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -24,6 +26,7 @@ class ChatsListScreen extends StatefulWidget {
 class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderStateMixin {
   final MessagingService _messagingService = sl<MessagingService>();
   final TextEditingController _searchController = TextEditingController();
+  StreamSubscription<List<Chat>>? _chatsSubscription;
 
   late TabController _tabController;
   List<Chat> _allChats = [];
@@ -41,6 +44,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
 
   @override
   void dispose() {
+    _chatsSubscription?.cancel();
     _tabController.dispose();
     _searchController.dispose();
     super.dispose();
@@ -51,7 +55,8 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
       await _messagingService.initialize();
       
       // Listen to real-time chat updates
-      _messagingService.chatsStream.listen((chats) {
+      _chatsSubscription?.cancel();
+      _chatsSubscription = _messagingService.chatsStream.listen((chats) {
         if (mounted) {
           setState(() {
             _allChats = chats;

@@ -1236,9 +1236,13 @@
   "@pleaseEnterValidEmail": {
     "description": "Email validation error"
   },
-  "passwordMinLength": "Password must be at least 6 characters",
+  "passwordMinLength": "Please enter your password",
   "@passwordMinLength": {
-    "description": "Password validation error"
+    "description": "Password validation error for login"
+  },
+  "passwordRequirements": "Password must be at least 8 characters with one uppercase letter, one number, and one special character",
+  "@passwordRequirements": {
+    "description": "Password validation error for signup"
   },
   "signIn": "Sign In",
   "@signIn": {

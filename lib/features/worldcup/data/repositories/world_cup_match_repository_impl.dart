@@ -1,3 +1,4 @@
+import 'package:pregame_world_cup/core/services/logging_service.dart';
 import '../../domain/entities/entities.dart';
 import '../../domain/repositories/world_cup_match_repository.dart';
 import '../datasources/world_cup_api_datasource.dart';
@@ -35,11 +36,10 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
         final firestoreMatches = await _firestoreDataSource.getAllMatches();
         if (firestoreMatches.isNotEmpty) {
           await _cacheDataSource.cacheMatches(firestoreMatches);
-          // Debug output removed
           return firestoreMatches;
         }
       } catch (e) {
-        // Debug output removed
+        LoggingService.error('Firestore getAllMatches failed, falling back to API: $e', tag: 'WorldCupMatchRepository');
       }
 
       // Fetch from API
@@ -49,7 +49,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
           return apiMatches;
         }
       } catch (e) {
-        // Debug output removed
+        LoggingService.error('API refreshMatches failed, falling back to mock data: $e', tag: 'WorldCupMatchRepository');
       }
 
       // Fallback to mock data for development/testing
@@ -58,7 +58,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       await _cacheDataSource.cacheMatches(mockMatches);
       return mockMatches;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('getAllMatches failed completely, returning mock data: $e', tag: 'WorldCupMatchRepository');
       // Return mock data as final fallback
       return WorldCupMockData.groupStageMatches;
     }
@@ -75,7 +75,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       final matches = await _firestoreDataSource.getMatchesByStage(stage);
       return matches;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get matches by stage=${stage.name}: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -90,7 +90,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return await _firestoreDataSource.getMatchesByGroup(groupLetter);
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get matches by group=$groupLetter: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -106,7 +106,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
                match.dateTime!.day == date.day;
       }).toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get matches by date=$date: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -116,7 +116,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
     try {
       return await _firestoreDataSource.getMatchesByTeam(teamCode);
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get matches by team=$teamCode: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -127,7 +127,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       final allMatches = await getAllMatches();
       return allMatches.where((m) => m.venueId == venueId).toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get matches by venue=$venueId: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -143,7 +143,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return await _firestoreDataSource.getMatchById(matchId);
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get match by id=$matchId: $e', tag: 'WorldCupMatchRepository');
       return null;
     }
   }
@@ -165,7 +165,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       }
       return matches;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get upcoming matches: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -190,13 +190,14 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
           }
           return apiMatches;
         }
-      } catch (_) {
+      } catch (e) {
         // Fall through to Firestore
+        LoggingService.warning('API fetchLiveMatches failed, falling back to Firestore: $e', tag: 'WorldCupMatchRepository');
       }
 
       return await _firestoreDataSource.getLiveMatches();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get live matches: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -218,7 +219,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       }
       return matches;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get today\'s matches: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -254,7 +255,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return completed.take(limit).toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get completed matches: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -268,7 +269,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
                         m.groupMatchDay == matchDay)
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to get matches by group match day=$matchDay: $e', tag: 'WorldCupMatchRepository');
       return [];
     }
   }
@@ -280,7 +281,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
       // Invalidate cache
       await _cacheDataSource.clearCache('worldcup_matches');
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to update match: $e', tag: 'WorldCupMatchRepository');
       throw Exception('Failed to update match: $e');
     }
   }
@@ -302,7 +303,7 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
       return [];
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Failed to refresh matches from API: $e', tag: 'WorldCupMatchRepository');
       throw Exception('Failed to refresh matches: $e');
     }
   }

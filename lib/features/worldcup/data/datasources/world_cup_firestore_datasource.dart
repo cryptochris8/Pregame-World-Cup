@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:pregame_world_cup/core/services/logging_service.dart';
 import '../../domain/entities/entities.dart';
 
 /// Firestore Data Source for World Cup 2026 data
@@ -35,7 +36,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllMatches failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -53,7 +54,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getMatchesByStage failed for stage=${stage.name}: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -71,7 +72,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getMatchesByGroup failed for group=$groupLetter: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -100,7 +101,7 @@ class WorldCupFirestoreDataSource {
       matches.sort((a, b) => a.matchNumber.compareTo(b.matchNumber));
       return matches;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getMatchesByTeam failed for team=$teamCode: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -118,7 +119,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getMatchById failed for id=$matchId: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -140,7 +141,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getLiveMatches failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -161,7 +162,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupMatch.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getUpcomingMatches failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -174,7 +175,7 @@ class WorldCupFirestoreDataSource {
           .doc(match.matchId)
           .set(match.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveMatch failed for id=${match.matchId}: $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save match: $e');
     }
   }
@@ -191,7 +192,7 @@ class WorldCupFirestoreDataSource {
 
       await batch.commit();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveMatches batch failed (${matches.length} matches): $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save matches: $e');
     }
   }
@@ -240,7 +241,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => NationalTeam.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllTeams failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -257,7 +258,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => NationalTeam.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getTeamsByGroup failed for group=$groupLetter: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -275,7 +276,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getTeamByCode failed for code=$fifaCode: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -288,7 +289,7 @@ class WorldCupFirestoreDataSource {
           .doc(team.fifaCode)
           .set(team.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveTeam failed for code=${team.fifaCode}: $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save team: $e');
     }
   }
@@ -305,7 +306,7 @@ class WorldCupFirestoreDataSource {
 
       await batch.commit();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveTeams batch failed (${teams.length} teams): $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save teams: $e');
     }
   }
@@ -335,7 +336,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupGroup.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllGroups failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -353,7 +354,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getGroupByLetter failed for group=$groupLetter: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -366,7 +367,7 @@ class WorldCupFirestoreDataSource {
           .doc(group.groupLetter)
           .set(group.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveGroup failed for group=${group.groupLetter}: $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save group: $e');
     }
   }
@@ -411,7 +412,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getBracket failed: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -424,7 +425,7 @@ class WorldCupFirestoreDataSource {
           .doc('2026')
           .set(bracket.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveBracket failed: $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save bracket: $e');
     }
   }
@@ -461,7 +462,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupVenue.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.warning('Firestore getAllVenues failed, using static fallback: $e', tag: 'WorldCupFirestore');
       // Return static venue data as fallback
       return WorldCupVenues.all;
     }
@@ -482,7 +483,7 @@ class WorldCupFirestoreDataSource {
       // Try static data
       return WorldCupVenues.getById(venueId);
     } catch (e) {
-      // Debug output removed
+      LoggingService.warning('Firestore getVenueById failed for id=$venueId, using static fallback: $e', tag: 'WorldCupFirestore');
       return WorldCupVenues.getById(venueId);
     }
   }
@@ -499,7 +500,7 @@ class WorldCupFirestoreDataSource {
 
       await batch.commit();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore saveVenues batch failed (${venues.length} venues): $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save venues: $e');
     }
   }
@@ -528,7 +529,7 @@ class WorldCupFirestoreDataSource {
         await batch.commit();
       }
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore clearAllData failed: $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to clear data: $e');
     }
   }
@@ -552,7 +553,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getHeadToHead failed for $team1Code vs $team2Code: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -583,7 +584,7 @@ class WorldCupFirestoreDataSource {
 
       return results;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getHeadToHeadForTeam failed for team=$teamCode: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -599,7 +600,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => HeadToHead.fromMap(doc.data()))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllHeadToHead failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -618,7 +619,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupTournament.fromFirestore(doc.data()))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllWorldCupHistory failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -636,7 +637,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getWorldCupByYear failed for year=$year: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -654,7 +655,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupTournament.fromFirestore(doc.data()))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getWorldCupsByWinner failed for team=$teamCode: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -672,7 +673,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupRecord.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllWorldCupRecords failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -689,7 +690,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => WorldCupRecord.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getWorldCupRecordsByType failed for type=$holderType: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }
@@ -708,7 +709,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getWorldCupRecordByCategory failed for category=$category: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -732,7 +733,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getMatchSummary failed for $team1Code vs $team2Code: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -748,7 +749,7 @@ class WorldCupFirestoreDataSource {
           .map((doc) => MatchSummary.fromFirestore(doc.data(), doc.id))
           .toList();
     } catch (e) {
-      // Debug output removed
+      LoggingService.error('Firestore getAllMatchSummaries failed: $e', tag: 'WorldCupFirestore');
       return [];
     }
   }

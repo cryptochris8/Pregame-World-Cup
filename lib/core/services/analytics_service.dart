@@ -155,16 +155,9 @@ class AnalyticsService {
       // Configure Crashlytics
       await _crashlytics.setCrashlyticsCollectionEnabled(!kDebugMode);
 
-      // Set up error handling
-      FlutterError.onError = (errorDetails) {
-        _crashlytics.recordFlutterFatalError(errorDetails);
-      };
-
-      // Pass all uncaught async errors to Crashlytics
-      PlatformDispatcher.instance.onError = (error, stack) {
-        _crashlytics.recordError(error, stack, fatal: true);
-        return true;
-      };
+      // NOTE: FlutterError.onError and PlatformDispatcher.instance.onError
+      // are already registered in main.dart. Do NOT register them here
+      // as that would override the main.dart handlers.
 
       // Track session start
       _sessionStartTime = DateTime.now();

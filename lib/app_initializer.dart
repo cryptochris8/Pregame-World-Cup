@@ -17,6 +17,7 @@ import 'core/entities/cached_venue_data.dart';
 import 'core/entities/cached_geocoding_data.dart';
 import 'core/services/firebase_app_check_service.dart';
 import 'config/api_keys.dart';
+import 'core/services/logging_service.dart';
 import 'core/services/ad_service.dart';
 import 'core/services/analytics_service.dart';
 import 'core/services/deep_link_service.dart';
@@ -30,7 +31,7 @@ import 'features/worldcup/utils/timezone_utils.dart';
 /// Production-safe logging function - only logs in debug mode
 void debugLog(String message) {
   if (kDebugMode) {
-    print(message);
+    LoggingService.debug(message, tag: 'AppInit');
   }
 }
 
@@ -43,7 +44,7 @@ Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   );
   // Note: debugLog not available here as it's a top-level isolate
   if (kDebugMode) {
-    print('Background message received: ${message.messageId}');
+    LoggingService.debug('Background message received: ${message.messageId}', tag: 'AppInit');
   }
 }
 

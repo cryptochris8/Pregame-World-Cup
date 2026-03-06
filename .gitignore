@@ -37,3 +37,5 @@ functions/coverage/
 nul
 *.bak
 service-account-key.json
+firebase-service-account.json
+*-service-account*.json

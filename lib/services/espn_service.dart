@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:pregame_world_cup/core/entities/game_intelligence.dart';
+import 'package:pregame_world_cup/core/services/logging_service.dart';
 import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedule.dart';
 import 'package:hive/hive.dart';
 import 'espn_historical_service.dart';
@@ -52,6 +53,7 @@ class ESPNService {
       _gameIntelligenceBox = await Hive.openBox<GameIntelligence>('game_intelligence');
     } catch (e) {
       // If Hive isn't ready, we'll try again later
+      LoggingService.warning('Hive initialization failed, will retry later: $e', tag: 'ESPNService');
       _gameIntelligenceBox = null;
     }
   }
@@ -85,6 +87,7 @@ class ESPNService {
 
       return intelligence;
     } catch (e) {
+      LoggingService.error('Failed to get game intelligence for gameId=$gameId: $e', tag: 'ESPNService');
       return null;
     }
   }
@@ -106,6 +109,7 @@ class ESPNService {
       }
       return null;
     } catch (e) {
+      LoggingService.error('Failed to fetch ESPN game data for gameId=$gameId: $e', tag: 'ESPNService');
       return null;
     }
   }
@@ -124,6 +128,7 @@ class ESPNService {
       }
       return [];
     } catch (e) {
+      LoggingService.error('Failed to fetch current games from ESPN scoreboard: $e', tag: 'ESPNService');
       return [];
     }
   }
@@ -161,6 +166,7 @@ class ESPNService {
             }
           } catch (e) {
             // Skip events that fail to parse
+            LoggingService.warning('Failed to parse ESPN event in schedule: $e', tag: 'ESPNService');
           }
         }
 
@@ -176,6 +182,7 @@ class ESPNService {
         return [];
       }
     } catch (e) {
+      LoggingService.error('Failed to fetch 2025 schedule from ESPN: $e', tag: 'ESPNService');
       return [];
     }
   }
@@ -215,6 +222,7 @@ class ESPNService {
             }
           } catch (e) {
             // Skip events that fail to parse
+            LoggingService.warning('Failed to parse ESPN event in upcoming games: $e', tag: 'ESPNService');
           }
         }
 
@@ -230,6 +238,7 @@ class ESPNService {
 
       return [];
     } catch (e) {
+      LoggingService.error('Failed to fetch upcoming games from ESPN: $e', tag: 'ESPNService');
       return [];
     }
   }
@@ -299,6 +308,7 @@ class ESPNService {
         return [];
       }
     } catch (e) {
+      LoggingService.error('Failed to fetch schedule for year=$year from ESPN: $e', tag: 'ESPNService');
       return [];
     }
   }
@@ -386,6 +396,7 @@ class ESPNService {
         }
       };
     } catch (e) {
+      LoggingService.error('Failed to get game intelligence with history for gameId=$gameId: $e', tag: 'ESPNService');
       return null;
     }
   }
@@ -441,6 +452,7 @@ class ESPNService {
 
       return null;
     } catch (e) {
+      LoggingService.error('Failed to find ESPN game ID for $homeTeam vs $awayTeam: $e', tag: 'ESPNService');
       return null;
     }
   }
@@ -466,6 +478,7 @@ class ESPNService {
 
       return enhancedGames;
     } catch (e) {
+      LoggingService.error('Failed to get week 1 games with history: $e', tag: 'ESPNService');
       return [];
     }
   }

@@ -19,6 +19,10 @@ class MessagingStreamService {
   final Map<String, StreamController<List<TypingIndicator>>> _typingStreams = {};
   final StreamController<List<Chat>> _chatsStreamController = StreamController<List<Chat>>.broadcast();
 
+  // Firestore snapshot subscriptions
+  final Map<String, StreamSubscription> _firestoreSubscriptions = {};
+  StreamSubscription? _chatsSubscription;
+
   // Typing indicator timers
   final Map<String, Timer> _typingTimers = {};
 
@@ -33,7 +37,8 @@ class MessagingStreamService {
 
   /// Start listening to the user's chat list
   void listenToUserChats(String userId) {
-    _firestore
+    _chatsSubscription?.cancel();
+    _chatsSubscription = _firestore
         .collection('chats')
         .where('participantIds', arrayContains: userId)
         .where('isActive', isEqualTo: true)
@@ -51,7 +56,8 @@ class MessagingStreamService {
       final controller = StreamController<List<Message>>();
       _messageStreams[chatId] = controller;
 
-      _firestore
+      _firestoreSubscriptions['messages_$chatId']?.cancel();
+      _firestoreSubscriptions['messages_$chatId'] = _firestore
           .collection('messages')
           .where('chatId', isEqualTo: chatId)
           .where('isDeleted', isEqualTo: false)
@@ -109,6 +115,11 @@ class MessagingStreamService {
 
   /// Dispose all stream controllers and timers
   void dispose() {
+    _chatsSubscription?.cancel();
+    for (final subscription in _firestoreSubscriptions.values) {
+      subscription.cancel();
+    }
+    _firestoreSubscriptions.clear();
     for (final controller in _messageStreams.values) {
       controller.close();
     }
@@ -127,7 +138,8 @@ class MessagingStreamService {
   // ==================== Private Helpers ====================
 
   void _listenToTypingIndicators(String chatId) {
-    _firestore
+    _firestoreSubscriptions['typing_$chatId']?.cancel();
+    _firestoreSubscriptions['typing_$chatId'] = _firestore
         .collection('typing_indicators')
         .where('chatId', isEqualTo: chatId)
         .where('isTyping', isEqualTo: true)

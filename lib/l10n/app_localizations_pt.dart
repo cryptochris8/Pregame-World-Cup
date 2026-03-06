@@ -255,8 +255,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noGroupDataAvailable => 'Dados dos grupos indisponíveis';
 
   @override
-  String get knockoutBracketNotAvailableYet =>
-      'Chaveamento ainda não disponível';
+  String get knockoutBracketNotAvailableYet => 'Chaveamento ainda não disponível';
 
   @override
   String get checkBackAfterGroupStage => 'Volte após a fase de grupos';
@@ -265,8 +264,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noFavoriteTeamsYet => 'Ainda não há seleções favoritas';
 
   @override
-  String get tapHeartIconToAddFavorites =>
-      'Toque no ícone de coração em qualquer seleção para adicionar aos favoritos';
+  String get tapHeartIconToAddFavorites => 'Toque no ícone de coração em qualquer seleção para adicionar aos favoritos';
 
   @override
   String teamsCount(int count) {
@@ -280,8 +278,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noFavoritesYet => 'Ainda Não Há Favoritos';
 
   @override
-  String get tapHeartIconMessage =>
-      'Toque no ícone de coração em qualquer jogo ou seleção\npara adicionar aos seus favoritos';
+  String get tapHeartIconMessage => 'Toque no ícone de coração em qualquer jogo ou seleção\npara adicionar aos seus favoritos';
 
   @override
   String get browseMatches => 'Ver Jogos';
@@ -721,15 +718,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get widgetSettings => 'Configurações do Widget';
 
   @override
-  String get widgetSettingsDescription =>
-      'Configure os widgets da tela inicial';
+  String get widgetSettingsDescription => 'Configure os widgets da tela inicial';
 
   @override
   String get addWidgetToHomeScreen => 'Adicionar Widget à Tela Inicial';
 
   @override
-  String get widgetInstructions =>
-      'Pressione e segure a tela inicial, toque no botão +, procure \'Pregame World Cup\' e selecione um tamanho de widget.';
+  String get widgetInstructions => 'Pressione e segure a tela inicial, toque no botão +, procure \'Pregame World Cup\' e selecione um tamanho de widget.';
 
   @override
   String get displaySettings => 'Configurações de Exibição';
@@ -738,15 +733,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get showLiveScores => 'Mostrar Placar Ao Vivo';
 
   @override
-  String get showLiveScoresDescription =>
-      'Exibir placares de jogos ao vivo no widget';
+  String get showLiveScoresDescription => 'Exibir placares de jogos ao vivo no widget';
 
   @override
   String get showUpcomingMatches => 'Mostrar Próximos Jogos';
 
   @override
-  String get showUpcomingMatchesDescription =>
-      'Exibir próximos jogos no widget';
+  String get showUpcomingMatchesDescription => 'Exibir próximos jogos no widget';
 
   @override
   String get compactMode => 'Modo Compacto';
@@ -763,8 +756,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get matchCountDescription =>
-      'Mais jogos requerem um widget de tamanho maior';
+  String get matchCountDescription => 'Mais jogos requerem um widget de tamanho maior';
 
   @override
   String get favoriteTeam => 'Time Favorito';
@@ -903,7 +895,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get pleaseEnterValidEmail => 'Digite um e-mail válido';
 
   @override
-  String get passwordMinLength => 'A senha deve ter pelo menos 6 caracteres';
+  String get passwordMinLength => 'Digite sua senha';
+
+  @override
+  String get passwordRequirements =>
+      'A senha deve ter pelo menos 8 caracteres com uma maiúscula, um número e um caractere especial';
 
   @override
   String get signIn => 'Entrar';

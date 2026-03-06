@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../domain/entities/watch_party.dart';
@@ -443,7 +442,6 @@ class WatchPartyBloc extends Bloc<WatchPartyEvent, WatchPartyState> {
     try {
       final success = await paymentService.purchaseVirtualAttendance(
         watchPartyId: event.watchPartyId,
-        context: event.context,
       );
       if (success) {
         emit(VirtualAttendancePurchased(event.watchPartyId));

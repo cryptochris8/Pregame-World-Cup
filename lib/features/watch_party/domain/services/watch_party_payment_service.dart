@@ -31,7 +31,6 @@ class WatchPartyPaymentService {
   /// Returns true if payment was successful and user was added as virtual member
   Future<bool> purchaseVirtualAttendance({
     required String watchPartyId,
-    required BuildContext context,
   }) async {
     final traceId = 'purchase_virtual_attendance_${DateTime.now().millisecondsSinceEpoch}';
     PerformanceMonitor.startApiCall(traceId);
@@ -39,10 +38,7 @@ class WatchPartyPaymentService {
     try {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) {
-        if (context.mounted) {
-          _showErrorDialog(context, 'Please sign in to purchase virtual attendance');
-        }
-        return false;
+        throw Exception('Please sign in to purchase virtual attendance');
       }
 
       // Get watch party details
@@ -50,25 +46,17 @@ class WatchPartyPaymentService {
       final watchParty = await watchPartyService.getWatchParty(watchPartyId);
 
       if (watchParty == null) {
-        if (context.mounted) {
-          _showErrorDialog(context, 'Watch party not found');
-        }
-        return false;
+        throw Exception('Watch party not found');
       }
 
       if (!watchParty.allowVirtualAttendance) {
-        if (context.mounted) {
-          _showErrorDialog(context, 'This watch party does not allow virtual attendance');
-        }
-        return false;
+        throw Exception('This watch party does not allow virtual attendance');
       }
 
       if (watchParty.virtualAttendanceFee <= 0) {
         // Free virtual attendance - just join directly
         await _joinAsVirtualMember(watchPartyId, watchParty, user);
-        if (context.mounted) {
-          _showSuccessDialog(context, 'You\'ve joined the watch party virtually!');
-        }
+        PerformanceMonitor.endApiCall(traceId, success: true);
         return true;
       }
 
@@ -79,18 +67,13 @@ class WatchPartyPaymentService {
       );
 
       if (clientSecret == null) {
-        if (context.mounted) {
-          _showErrorDialog(context, 'Failed to create payment. Please try again.');
-        }
-        return false;
+        throw Exception('Failed to create payment. Please try again.');
       }
 
       // Present payment sheet
-      if (!context.mounted) return false;
       final paymentSuccess = await _presentPaymentSheet(
         clientSecret: clientSecret,
         watchPartyName: watchParty.name,
-        context: context,
       );
 
       if (paymentSuccess) {
@@ -112,9 +95,6 @@ class WatchPartyPaymentService {
           amount: watchParty.virtualAttendanceFee,
         );
 
-        if (context.mounted) {
-          _showSuccessDialog(context, 'Welcome to ${watchParty.name}! You\'re now a virtual attendee.');
-        }
         PerformanceMonitor.endApiCall(traceId, success: true);
         return true;
       }
@@ -123,11 +103,8 @@ class WatchPartyPaymentService {
       return false;
     } catch (e) {
       LoggingService.error('Error purchasing virtual attendance: $e', tag: _logTag);
-      if (context.mounted) {
-        _showErrorDialog(context, 'An error occurred. Please try again.');
-      }
       PerformanceMonitor.endApiCall(traceId, success: false);
-      return false;
+      rethrow;
     }
   }
 
@@ -158,7 +135,6 @@ class WatchPartyPaymentService {
   Future<bool> _presentPaymentSheet({
     required String clientSecret,
     required String watchPartyName,
-    required BuildContext context,
   }) async {
     try {
       await Stripe.instance.initPaymentSheet(
@@ -177,17 +153,13 @@ class WatchPartyPaymentService {
       await Stripe.instance.presentPaymentSheet();
       return true;
     } on StripeException catch (e) {
-      // Debug output removed
-      if (e.error.code != FailureCode.Canceled && context.mounted) {
-        _showErrorDialog(context, e.error.localizedMessage ?? 'Payment failed');
+      if (e.error.code == FailureCode.Canceled) {
+        return false;
       }
-      return false;
+      throw Exception(e.error.localizedMessage ?? 'Payment failed');
     } catch (e) {
       LoggingService.error('Payment sheet error: $e', tag: _logTag);
-      if (context.mounted) {
-        _showErrorDialog(context, 'Payment failed. Please try again.');
-      }
-      return false;
+      rethrow;
     }
   }
 

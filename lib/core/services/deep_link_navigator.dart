@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'deep_link_service.dart';
 import 'logging_service.dart';
 import '../../features/worldcup/domain/services/world_cup_payment_service.dart';
+import '../../features/navigation/main_navigation_screen.dart';
+import '../../features/social/presentation/screens/user_profile_screen.dart';
+import '../../features/worldcup/presentation/screens/tournament_leaderboards_screen.dart';
 
 /// Navigator helper for handling deep link routing
 class DeepLinkNavigator {
@@ -79,110 +82,82 @@ class DeepLinkNavigator {
     }
   }
 
-  /// Navigate to a match detail screen
-  Future<void> _navigateToMatch(String matchId, Map<String, String>? params) async {
-    // Navigate to main app first, then to match detail
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
+  /// Navigate to the home screen (MainNavigationScreen), clearing the stack.
+  /// Optionally specify [tabIndex] to open a specific tab.
+  void _navigateToHome({int tabIndex = 0}) {
+    navigator?.pushAndRemoveUntil(
+      MaterialPageRoute(
+        builder: (_) => MainNavigationScreen(initialTabIndex: tabIndex),
+      ),
       (route) => false,
     );
+  }
 
-    // Small delay to let the home screen load
-    await Future.delayed(const Duration(milliseconds: 300));
-
-    navigator?.pushNamed(
-      '/match-detail',
-      arguments: {'matchId': matchId, ...?params},
-    );
+  /// Navigate to a match detail screen
+  Future<void> _navigateToMatch(String matchId, Map<String, String>? params) async {
+    // TODO: To deep link directly to MatchDetailPage, we'd need to fetch the
+    // WorldCupMatch object by matchId from the datasource first. For now,
+    // navigate to the home screen on the matches tab (index 0).
+    _navigateToHome(tabIndex: 0);
   }
 
   /// Navigate to a team detail screen
   Future<void> _navigateToTeam(String teamId, Map<String, String>? params) async {
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
-
-    await Future.delayed(const Duration(milliseconds: 300));
-
-    navigator?.pushNamed(
-      '/team-detail',
-      arguments: {'teamId': teamId, ...?params},
-    );
+    // TODO: To deep link directly to TeamDetailPage, we'd need to fetch the
+    // NationalTeam object by teamId from the datasource first. For now,
+    // navigate to the home screen on the matches tab (index 0).
+    _navigateToHome(tabIndex: 0);
   }
 
   /// Navigate to a watch party detail screen
   Future<void> _navigateToWatchParty(String partyId, Map<String, String>? params) async {
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
-
-    await Future.delayed(const Duration(milliseconds: 300));
-
-    navigator?.pushNamed(
-      '/watch-party-detail',
-      arguments: {'partyId': partyId, ...?params},
-    );
+    // TODO: To deep link directly to WatchPartyDetailScreen, we'd need a
+    // BlocProvider<WatchPartyBloc> in the widget tree. For now, navigate to
+    // the home screen. Consider wrapping the push with a BlocProvider.
+    _navigateToHome(tabIndex: 0);
   }
 
   /// Navigate to a prediction detail screen
   Future<void> _navigateToPrediction(String predictionId, Map<String, String>? params) async {
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
-
-    await Future.delayed(const Duration(milliseconds: 300));
-
-    navigator?.pushNamed(
-      '/predictions',
-      arguments: {'predictionId': predictionId, ...?params},
-    );
+    // TODO: To deep link directly to PredictionsPage, we'd need the
+    // PredictionsCubit and other World Cup BLoC providers in the widget tree.
+    // For now, navigate to the home screen on the matches tab (index 0).
+    _navigateToHome(tabIndex: 0);
   }
 
   /// Navigate to a user profile screen
-  Future<void> _navigateToProfile(String usualId, Map<String, String>? params) async {
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
+  Future<void> _navigateToProfile(String userId, Map<String, String>? params) async {
+    _navigateToHome();
 
+    // Small delay to let the home screen load
     await Future.delayed(const Duration(milliseconds: 300));
 
-    navigator?.pushNamed(
-      '/profile',
-      arguments: {'usualId': usualId, ...?params},
+    navigator?.push(
+      MaterialPageRoute(
+        builder: (_) => UserProfileScreen(userId: userId),
+      ),
     );
   }
 
   /// Navigate to a venue detail screen
   Future<void> _navigateToVenue(String venueId, Map<String, String>? params) async {
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
-
-    await Future.delayed(const Duration(milliseconds: 300));
-
-    navigator?.pushNamed(
-      '/venue-detail',
-      arguments: {'venueId': venueId, ...?params},
-    );
+    // TODO: To deep link directly to VenueDetailScreen, we'd need to fetch the
+    // Place object by venueId from the datasource first. For now, navigate to
+    // the home screen.
+    _navigateToHome(tabIndex: 0);
   }
 
   /// Navigate to the leaderboard screen
   Future<void> _navigateToLeaderboard(Map<String, String>? params) async {
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
+    _navigateToHome();
 
+    // Small delay to let the home screen load
     await Future.delayed(const Duration(milliseconds: 300));
 
-    navigator?.pushNamed(
-      '/leaderboard',
-      arguments: params,
+    navigator?.push(
+      MaterialPageRoute(
+        builder: (_) => const TournamentLeaderboardsScreen(),
+      ),
     );
   }
 
@@ -204,10 +179,7 @@ class DeepLinkNavigator {
     paymentService.markBrowserCheckoutComplete();
 
     // Navigate to home then fan pass screen
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
+    _navigateToHome();
 
     await Future.delayed(const Duration(milliseconds: 300));
 
@@ -237,10 +209,7 @@ class DeepLinkNavigator {
     paymentService.markBrowserCheckoutComplete();
 
     // Navigate to home
-    navigator?.pushNamedAndRemoveUntil(
-      '/home',
-      (route) => false,
-    );
+    _navigateToHome();
 
     await Future.delayed(const Duration(milliseconds: 300));
 
