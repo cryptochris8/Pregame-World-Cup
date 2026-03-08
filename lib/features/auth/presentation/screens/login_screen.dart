@@ -19,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _isLoading = false;
   String? _errorMessage;
   bool _isLoginMode = true;
+  bool _isGoogleLoading = false;
 
   @override
   void dispose() {
@@ -152,6 +153,29 @@ class _LoginScreenState extends State<LoginScreen> {
     }
 
     resetEmailController.dispose();
+  }
+
+  Future<void> _signInWithGoogle() async {
+    setState(() {
+      _isGoogleLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      await _authService.signInWithGoogle();
+    } on Exception catch (e) {
+      if (mounted) {
+        setState(() {
+          _errorMessage = e.toString().replaceFirst("Exception: ", "");
+        });
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isGoogleLoading = false;
+        });
+      }
+    }
   }
 
   void _switchAuthMode() {
@@ -454,6 +478,81 @@ class _LoginScreenState extends State<LoginScreen> {
                                       ),
                                     ),
                                   ),
+                          ),
+
+                          const SizedBox(height: 20),
+
+                          // OR Divider
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Divider(
+                                  color: AppTheme.textTertiary.withValues(alpha: 0.3),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: Text(
+                                  l10n.orContinueWith,
+                                  style: const TextStyle(
+                                    color: AppTheme.textSecondary,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Divider(
+                                  color: AppTheme.textTertiary.withValues(alpha: 0.3),
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          const SizedBox(height: 20),
+
+                          // Google Sign-In Button
+                          SizedBox(
+                            width: double.infinity,
+                            height: 56,
+                            child: OutlinedButton.icon(
+                              onPressed: (_isLoading || _isGoogleLoading)
+                                  ? null
+                                  : _signInWithGoogle,
+                              icon: _isGoogleLoading
+                                  ? const SizedBox(
+                                      width: 20,
+                                      height: 20,
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        color: AppTheme.textWhite,
+                                      ),
+                                    )
+                                  : const Text(
+                                      'G',
+                                      style: TextStyle(
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                              label: Text(
+                                l10n.continueWithGoogle,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: AppTheme.textWhite,
+                                ),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                side: BorderSide(
+                                  color: AppTheme.textTertiary.withValues(alpha: 0.4),
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(25),
+                                ),
+                              ),
+                            ),
                           ),
 
                           const SizedBox(height: 24),

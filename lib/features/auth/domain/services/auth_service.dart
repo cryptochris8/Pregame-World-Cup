@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../injection_container.dart';
@@ -10,6 +11,7 @@ import '../../../../services/revenuecat_service.dart';
 class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
   final SocialService _socialService = sl<SocialService>();
   final AnalyticsService _analyticsService = sl<AnalyticsService>();
 
@@ -119,6 +121,38 @@ class AuthService {
     }
   }
 
+  // Sign in with Google
+  Future<UserCredential?> signInWithGoogle() async {
+    try {
+      final googleUser = await _googleSignIn.signIn();
+      if (googleUser == null) {
+        // User cancelled the sign-in flow
+        return null;
+      }
+
+      final googleAuth = await googleUser.authentication;
+      final credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+
+      final userCredential = await _firebaseAuth.signInWithCredential(credential);
+      await _analyticsService.logLogin(method: 'google');
+      LoggingService.info('Google sign-in successful for ${userCredential.user?.email}', tag: 'AuthService');
+      return userCredential;
+    } on FirebaseAuthException catch (e) {
+      LoggingService.error('FirebaseAuthException on Google sign in: ${e.message}', tag: 'AuthService');
+      await _analyticsService.logError(
+        errorType: 'auth_error',
+        message: 'Google sign in failed: ${e.message}',
+      );
+      throw Exception(e.message);
+    } catch (e) {
+      LoggingService.error('Error during Google sign in: $e', tag: 'AuthService');
+      throw Exception('An unexpected error occurred during Google sign in.');
+    }
+  }
+
   // Sign out
   Future<void> signOut() async {
     try {
@@ -132,10 +166,16 @@ class AuthService {
         LoggingService.error('RevenueCat logout failed (non-blocking): $e', tag: 'AuthService');
       }
 
+      // Sign out from Google if signed in via Google
+      try {
+        await _googleSignIn.signOut();
+      } catch (e) {
+        LoggingService.error('Google sign-out failed (non-blocking): $e', tag: 'AuthService');
+      }
+
       await _firebaseAuth.signOut();
     } catch (e) {
       LoggingService.error('Error signing out: $e', tag: 'AuthService');
-      // Optionally handle error more gracefully
     }
   }
 
@@ -202,7 +242,14 @@ class AuthService {
         LoggingService.warning('RevenueCat logout failed during deletion: $e', tag: 'AuthService');
       }
 
-      // 5. Delete Firebase Auth account
+      // 5. Sign out from Google if signed in via Google
+      try {
+        await _googleSignIn.signOut();
+      } catch (e) {
+        LoggingService.warning('Google sign-out failed during deletion: $e', tag: 'AuthService');
+      }
+
+      // 6. Delete Firebase Auth account
       await user.delete();
       LoggingService.info('Account deleted for $uid', tag: 'AuthService');
     } on FirebaseAuthException catch (e) {

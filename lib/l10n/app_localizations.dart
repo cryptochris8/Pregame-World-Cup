@@ -1809,7 +1809,7 @@ abstract class AppLocalizations {
   /// **'Please enter a valid email'**
   String get pleaseEnterValidEmail;
 
-  /// Password validation error
+  /// Password validation error for login
   ///
   /// In en, this message translates to:
   /// **'Please enter your password'**
@@ -6902,6 +6902,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Primary'**
   String get primary;
+
+  /// Divider text between email login and social login
+  ///
+  /// In en, this message translates to:
+  /// **'OR'**
+  String get orContinueWith;
+
+  /// Google sign-in button label
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get continueWithGoogle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

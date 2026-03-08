@@ -4818,5 +4818,14 @@
   "primary": "Primary",
   "@primary": {
     "description": "Checkbox label for primary screen"
+  },
+
+  "orContinueWith": "OR",
+  "@orContinueWith": {
+    "description": "Divider text between email login and social login"
+  },
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": "Google sign-in button label"
   }
 }

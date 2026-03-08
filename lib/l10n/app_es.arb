@@ -1199,5 +1199,7 @@
   "locationLabel": "Ubicación",
   "locationHint": "ej., Bar Principal, Terraza, Sala Privada",
   "hasAudio": "Tiene Audio",
-  "primary": "Principal"
+  "primary": "Principal",
+  "orContinueWith": "O",
+  "continueWithGoogle": "Continuar con Google"
 }

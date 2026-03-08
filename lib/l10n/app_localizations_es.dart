@@ -802,8 +802,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get completePurchaseInBrowser =>
-      'Completa tu compra en el navegador. Tu pase se activará automáticamente.';
+  String get completePurchaseInBrowser => 'Completa tu compra en el navegador. Tu pase se activará automáticamente.';
 
   @override
   String get purchaseFailedRetry => 'La compra falló. Intenta de nuevo.';
@@ -898,8 +897,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get passwordMinLength => 'Ingresa tu contraseña';
 
   @override
-  String get passwordRequirements =>
-      'La contraseña debe tener al menos 8 caracteres con una mayúscula, un número y un carácter especial';
+  String get passwordRequirements => 'La contraseña debe tener al menos 8 caracteres con una mayúscula, un número y un carácter especial';
 
   @override
   String get signIn => 'Iniciar Sesión';
@@ -917,19 +915,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get signUp => 'Registrarse';
 
   @override
-  String get whereSportsFansConnect =>
-      'Donde los Fanáticos del Deporte se Conectan';
+  String get whereSportsFansConnect => 'Donde los Fanáticos del Deporte se Conectan';
 
   @override
   String get verifyYourEmail => 'Verifica tu Correo';
 
   @override
-  String get verificationLinkSent =>
-      'Hemos enviado un enlace de verificación a:';
+  String get verificationLinkSent => 'Hemos enviado un enlace de verificación a:';
 
   @override
-  String get clickLinkToVerify =>
-      'Haz clic en el enlace de tu correo para verificar tu cuenta.';
+  String get clickLinkToVerify => 'Haz clic en el enlace de tu correo para verificar tu cuenta.';
 
   @override
   String get checkSpamFolder => 'Revisa tu carpeta de spam si no lo ves.';
@@ -949,8 +944,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get emailVerifiedRedirecting => '¡Correo verificado! Redirigiendo...';
 
   @override
-  String get emailNotVerifiedYet =>
-      'Correo aún no verificado. Revisa tu bandeja.';
+  String get emailNotVerifiedYet => 'Correo aún no verificado. Revisa tu bandeja.';
 
   @override
   String get verificationEmailSent => '¡Correo de verificación enviado!';
@@ -964,8 +958,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get wrongEmail => '¿Correo incorrecto? ';
 
   @override
-  String get autoCheckingVerification =>
-      'Verificando estado automáticamente...';
+  String get autoCheckingVerification => 'Verificando estado automáticamente...';
 
   @override
   String get worldCup => 'Copa del Mundo';
@@ -1010,8 +1003,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noLiveGamesAvailable => 'No Hay Juegos en Vivo Actualmente';
 
   @override
-  String get worldCupMatchesDaily =>
-      'Los partidos de la Copa del Mundo se juegan diariamente durante el torneo.\n¡Vuelve durante la hora del partido para ver marcadores en vivo!';
+  String get worldCupMatchesDaily => 'Los partidos de la Copa del Mundo se juegan diariamente durante el torneo.\n¡Vuelve durante la hora del partido para ver marcadores en vivo!';
 
   @override
   String get failedToLoadGames => 'Error al Cargar Juegos';
@@ -1032,8 +1024,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noLiveGames => 'No hay juegos en vivo en este momento';
 
   @override
-  String get setFavoriteTeamsPrompt =>
-      'Configura tus equipos favoritos para ver juegos personalizados';
+  String get setFavoriteTeamsPrompt => 'Configura tus equipos favoritos para ver juegos personalizados';
 
   @override
   String get setFavoriteTeams => 'Configurar Equipos Favoritos';
@@ -1042,8 +1033,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noUpcomingGames => 'No Hay Próximos Juegos';
 
   @override
-  String get socialFeaturesAvailable =>
-      'Las funciones sociales estarán disponibles para próximos juegos';
+  String get socialFeaturesAvailable => 'Las funciones sociales estarán disponibles para próximos juegos';
 
   @override
   String get activityFeed => 'Actividad';
@@ -1061,8 +1051,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noActivitiesYet => 'Aún no hay actividades';
 
   @override
-  String get beFirstToShare =>
-      '¡Sé el primero en compartir algo!\nConecta con amigos para ver sus actividades.';
+  String get beFirstToShare => '¡Sé el primero en compartir algo!\nConecta con amigos para ver sus actividades.';
 
   @override
   String get createActivity => 'Crear Actividad';
@@ -1112,8 +1101,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get unblockUser => 'Desbloquear Usuario';
 
   @override
-  String get unblockUserConfirm =>
-      '¿Estás seguro de que quieres desbloquear a este usuario? Podrá enviarte mensajes de nuevo.';
+  String get unblockUserConfirm => '¿Estás seguro de que quieres desbloquear a este usuario? Podrá enviarte mensajes de nuevo.';
 
   @override
   String get userUnblocked => 'Usuario desbloqueado';
@@ -1141,8 +1129,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chatUnmuted => 'Chat con sonido';
 
   @override
-  String get failedToUpdateMute =>
-      'Error al actualizar configuración de silencio';
+  String get failedToUpdateMute => 'Error al actualizar configuración de silencio';
 
   @override
   String get chatHistoryCleared => 'Historial del chat borrado';
@@ -1157,8 +1144,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get failedToLeaveChat => 'Error al salir del chat';
 
   @override
-  String get promoteAdminFirst =>
-      'Debes promover otro administrador antes de salir';
+  String get promoteAdminFirst => 'Debes promover otro administrador antes de salir';
 
   @override
   String get muteNotificationsTitle => 'Silenciar notificaciones';
@@ -1179,12 +1165,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get forever => 'Para siempre';
 
   @override
-  String get clearChatHistoryConfirm =>
-      '¿Estás seguro de que quieres borrar todos los mensajes de este chat? Esta acción no se puede deshacer.';
+  String get clearChatHistoryConfirm => '¿Estás seguro de que quieres borrar todos los mensajes de este chat? Esta acción no se puede deshacer.';
 
   @override
-  String get leaveChatConfirm =>
-      '¿Estás seguro de que quieres salir de este chat?';
+  String get leaveChatConfirm => '¿Estás seguro de que quieres salir de este chat?';
 
   @override
   String get unableToSendMessages => 'No se pueden enviar mensajes';
@@ -1224,8 +1208,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get youWillReceiveNotifications => 'Recibirás notificaciones';
 
   @override
-  String get allNotificationsDisabled =>
-      'Todas las notificaciones están desactivadas';
+  String get allNotificationsDisabled => 'Todas las notificaciones están desactivadas';
 
   @override
   String get quietHours => 'Horas de Silencio';
@@ -1239,8 +1222,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get receiveNotificationsAnytime =>
-      'Recibir notificaciones en cualquier momento';
+  String get receiveNotificationsAnytime => 'Recibir notificaciones en cualquier momento';
 
   @override
   String get startTime => 'Hora de Inicio';
@@ -1249,8 +1231,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get endTime => 'Hora de Fin';
 
   @override
-  String get getRemindedBeforeMatches =>
-      'Recibe recordatorios antes de los partidos';
+  String get getRemindedBeforeMatches => 'Recibe recordatorios antes de los partidos';
 
   @override
   String get defaultReminderTime => 'Tiempo de Recordatorio Predeterminado';
@@ -1259,22 +1240,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get favoriteTeamMatchesLabel => 'Partidos de Equipos Favoritos';
 
   @override
-  String get favoriteTeamMatchesDesc =>
-      'Recibe notificaciones cuando juegan tus equipos favoritos';
+  String get favoriteTeamMatchesDesc => 'Recibe notificaciones cuando juegan tus equipos favoritos';
 
   @override
   String get dayBeforeNotification => 'Notificación del Día Anterior';
 
   @override
-  String get dayBeforeNotificationDesc =>
-      'Recuérdame el día antes de que juegue mi equipo';
+  String get dayBeforeNotificationDesc => 'Recuérdame el día antes de que juegue mi equipo';
 
   @override
   String get liveMatchAlerts => 'Alertas de Partidos en Vivo';
 
   @override
-  String get liveMatchAlertsDesc =>
-      'Recibe notificaciones instantáneas durante los partidos en vivo';
+  String get liveMatchAlertsDesc => 'Recibe notificaciones instantáneas durante los partidos en vivo';
 
   @override
   String get whenGoalScored => 'Cuando se anota un gol';
@@ -1289,8 +1267,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get halftimeLabel => 'Medio Tiempo';
 
   @override
-  String get halftimeScoreUpdates =>
-      'Actualizaciones del marcador en medio tiempo';
+  String get halftimeScoreUpdates => 'Actualizaciones del marcador en medio tiempo';
 
   @override
   String get matchEnd => 'Fin del Partido';
@@ -1311,15 +1288,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get watchPartyInvites => 'Invitaciones a Fiestas';
 
   @override
-  String get watchPartyInvitesDesc =>
-      'Cuando alguien te invita a una fiesta de visualización';
+  String get watchPartyInvitesDesc => 'Cuando alguien te invita a una fiesta de visualización';
 
   @override
   String get watchPartyReminders => 'Recordatorios de Fiestas';
 
   @override
-  String get watchPartyRemindersDesc =>
-      'Recuérdame antes de las fiestas a las que me uní';
+  String get watchPartyRemindersDesc => 'Recuérdame antes de las fiestas a las que me uní';
 
   @override
   String get reminderTime => 'Hora del Recordatorio';
@@ -1328,8 +1303,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get watchPartyUpdates => 'Actualizaciones de Fiestas';
 
   @override
-  String get watchPartyUpdatesDesc =>
-      'Mensajes del anfitrión y cambios de la fiesta';
+  String get watchPartyUpdatesDesc => 'Mensajes del anfitrión y cambios de la fiesta';
 
   @override
   String get social => 'Social';
@@ -1338,8 +1312,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get friendRequests => 'Solicitudes de Amistad';
 
   @override
-  String get friendRequestsDesc =>
-      'Cuando alguien te envía una solicitud de amistad';
+  String get friendRequestsDesc => 'Cuando alguien te envía una solicitud de amistad';
 
   @override
   String get messagesNotification => 'Mensajes';
@@ -1396,8 +1369,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get sharedFromPregame =>
-      'Compartido desde Pregame Copa del Mundo 2026';
+  String get sharedFromPregame => 'Compartido desde Pregame Copa del Mundo 2026';
 
   @override
   String matchInProgressWithMinute(String minute) {
@@ -1413,8 +1385,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get aiMatchAnalysisGate =>
-      'Obtén análisis de partidos con IA, perspectivas históricas y enfrentamientos clave con el Pase Superfan.';
+  String get aiMatchAnalysisGate => 'Obtén análisis de partidos con IA, perspectivas históricas y enfrentamientos clave con el Pase Superfan.';
 
   @override
   String get hostNation => 'País Anfitrión';
@@ -1469,8 +1440,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get viewStandings => 'Ver Clasificación';
 
   @override
-  String get tapToSeeGroupStandings =>
-      'Toca para ver la clasificación completa del grupo';
+  String get tapToSeeGroupStandings => 'Toca para ver la clasificación completa del grupo';
 
   @override
   String get teamMatchesWillAppear => 'Los partidos del equipo aparecerán aquí';
@@ -1517,8 +1487,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noPredictionsYet => 'Sin Predicciones Aún';
 
   @override
-  String get makePredictionsPrompt =>
-      'Haz predicciones en próximos partidos\npara seguir tu precisión y ganar puntos!';
+  String get makePredictionsPrompt => 'Haz predicciones en próximos partidos\npara seguir tu precisión y ganar puntos!';
 
   @override
   String get goToMatches => 'Ir a Partidos';
@@ -1547,8 +1516,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get clearAllPredictions => '¿Borrar Todas las Predicciones?';
 
   @override
-  String get clearAllPredictionsConfirm =>
-      'Esto eliminará permanentemente todas tus predicciones. Esta acción no se puede deshacer.';
+  String get clearAllPredictionsConfirm => 'Esto eliminará permanentemente todas tus predicciones. Esta acción no se puede deshacer.';
 
   @override
   String get exactScore => '¡Resultado Exacto!';
@@ -1586,8 +1554,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tiebreakers => 'Desempates (en orden):';
 
   @override
-  String get tiebreakersList =>
-      '1. Puntos\n2. Diferencia de goles\n3. Goles a favor\n4. Puntos entre sí\n5. Fair play (tarjetas)\n6. Sorteo';
+  String get tiebreakersList => '1. Puntos\n2. Diferencia de goles\n3. Goles a favor\n4. Puntos entre sí\n5. Fair play (tarjetas)\n6. Sorteo';
 
   @override
   String get knockoutBracket => 'Cuadro Eliminatorio';
@@ -1602,8 +1569,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get matchesNotYetDetermined => 'Partidos aún no determinados';
 
   @override
-  String get teamsSetAfterGroupStage =>
-      'Los equipos se definirán después de la fase de grupos';
+  String get teamsSetAfterGroupStage => 'Los equipos se definirán después de la fase de grupos';
 
   @override
   String get thirdPlacePlayoff => 'Partido por el Tercer Lugar';
@@ -1617,8 +1583,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noBracketData => 'Sin datos del cuadro';
 
   @override
-  String get noMatchesScheduledForDay =>
-      'No hay partidos programados para este día';
+  String get noMatchesScheduledForDay => 'No hay partidos programados para este día';
 
   @override
   String get tryDifferentDate => 'Intenta seleccionar otra fecha';
@@ -1669,23 +1634,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileCustomization => 'Personalización de Perfil';
 
   @override
-  String get profileCustomizationDesc =>
-      'Sube fotos, elige equipos favoritos y personaliza tu perfil';
+  String get profileCustomizationDesc => 'Sube fotos, elige equipos favoritos y personaliza tu perfil';
 
   @override
-  String get activityFeedDesc =>
-      'Sigue tus predicciones, check-ins y actividad social';
+  String get activityFeedDesc => 'Sigue tus predicciones, check-ins y actividad social';
 
   @override
   String get achievements => 'Logros';
 
   @override
-  String get achievementsDesc =>
-      'Desbloquea insignias por predicciones, actividad social y descubrimientos';
+  String get achievementsDesc => 'Desbloquea insignias por predicciones, actividad social y descubrimientos';
 
   @override
-  String get accessibilityCustomizeDesc =>
-      'Personaliza tamaño de texto, contraste, movimiento y más';
+  String get accessibilityCustomizeDesc => 'Personaliza tamaño de texto, contraste, movimiento y más';
 
   @override
   String get findFriends => 'Encontrar Amigos';
@@ -1702,8 +1663,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get tryDifferentSearch =>
-      'Intenta buscar un nombre o equipo diferente';
+  String get tryDifferentSearch => 'Intenta buscar un nombre o equipo diferente';
 
   @override
   String get add => 'Agregar';
@@ -1714,16 +1674,13 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get failedToSendFriendRequest =>
-      'Error al enviar solicitud de amistad';
+  String get failedToSendFriendRequest => 'Error al enviar solicitud de amistad';
 
   @override
-  String get errorSendingFriendRequest =>
-      'Error al enviar solicitud de amistad';
+  String get errorSendingFriendRequest => 'Error al enviar solicitud de amistad';
 
   @override
-  String get errorSearchingUsers =>
-      'Error al buscar usuarios. Intenta de nuevo.';
+  String get errorSearchingUsers => 'Error al buscar usuarios. Intenta de nuevo.';
 
   @override
   String get requests => 'Solicitudes';
@@ -1773,8 +1730,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get openingChat => 'Abriendo chat...';
 
   @override
-  String get unableToStartChat =>
-      'No se puede iniciar el chat. El usuario puede estar bloqueado.';
+  String get unableToStartChat => 'No se puede iniciar el chat. El usuario puede estar bloqueado.';
 
   @override
   String failedToStartChat(String error) {
@@ -1826,8 +1782,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cancelWatchParty => '¿Cancelar la Fiesta?';
 
   @override
-  String get cancelWatchPartyConfirm =>
-      'Esta acción no se puede deshacer. Se notificará a todos los asistentes.';
+  String get cancelWatchPartyConfirm => 'Esta acción no se puede deshacer. Se notificará a todos los asistentes.';
 
   @override
   String get keep => 'Mantener';
@@ -1862,15 +1817,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get accessibilitySettingsTitle => 'Configuración de Accesibilidad';
 
   @override
-  String get accessibilitySettingsIntro =>
-      'Personaliza tu experiencia para que Pregame Copa del Mundo sea más fácil de usar.';
+  String get accessibilitySettingsIntro => 'Personaliza tu experiencia para que Pregame Copa del Mundo sea más fácil de usar.';
 
   @override
   String get vision => 'Visión';
 
   @override
-  String get highContrastSubtitle =>
-      'Usa colores de alto contraste para mejor visibilidad';
+  String get highContrastSubtitle => 'Usa colores de alto contraste para mejor visibilidad';
 
   @override
   String get boldTextSubtitle => 'Haz todo el texto más grueso y fácil de leer';
@@ -1879,8 +1832,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get motion => 'Movimiento';
 
   @override
-  String get reduceMotionSubtitle =>
-      'Minimiza animaciones y efectos de movimiento';
+  String get reduceMotionSubtitle => 'Minimiza animaciones y efectos de movimiento';
 
   @override
   String get interaction => 'Interacción';
@@ -1889,8 +1841,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get largerTouchTargets => 'Áreas de Toque Más Grandes';
 
   @override
-  String get largerTouchTargetsSubtitle =>
-      'Haz botones y controles más fáciles de tocar';
+  String get largerTouchTargetsSubtitle => 'Haz botones y controles más fáciles de tocar';
 
   @override
   String get textSize => 'Tamaño del Texto';
@@ -1929,15 +1880,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get screenReaderOptimized => 'Optimizado para Lector de Pantalla';
 
   @override
-  String get screenReaderSubtitle =>
-      'Mejorar compatibilidad con VoiceOver y TalkBack';
+  String get screenReaderSubtitle => 'Mejorar compatibilidad con VoiceOver y TalkBack';
 
   @override
   String get systemSettings => 'Configuración del Sistema';
 
   @override
-  String get systemSettingsInfo =>
-      'Estos ajustes funcionan junto con la configuración de accesibilidad de tu dispositivo. Para más opciones, visita Configuración > Accesibilidad.';
+  String get systemSettingsInfo => 'Estos ajustes funcionan junto con la configuración de accesibilidad de tu dispositivo. Para más opciones, visita Configuración > Accesibilidad.';
 
   @override
   String get resetAllSettings => 'Restablecer';
@@ -1997,8 +1946,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get userManagement => 'Gestión de Usuarios';
 
   @override
-  String get userManagementDesc =>
-      'Ver, editar y gestionar cuentas de usuarios';
+  String get userManagementDesc => 'Ver, editar y gestionar cuentas de usuarios';
 
   @override
   String get contentModeration => 'Moderación de Contenido';
@@ -2063,8 +2011,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get muteUser24h => 'Silenciar Usuario (24h)';
 
   @override
-  String get temporarilyPreventPosting =>
-      'Impedir temporalmente que el usuario publique';
+  String get temporarilyPreventPosting => 'Impedir temporalmente que el usuario publique';
 
   @override
   String get suspendUser7Days => 'Suspender Usuario (7 días)';
@@ -2154,8 +2101,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get searchSpecificFeatures => 'Buscar Características Específicas';
 
   @override
-  String get keywordSearchHint =>
-      'ej., alitas, cerveza artesanal, música en vivo';
+  String get keywordSearchHint => 'ej., alitas, cerveza artesanal, música en vivo';
 
   @override
   String get applyFilters => 'Aplicar Filtros';
@@ -2186,8 +2132,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noFriendsToInvite => 'No hay amigos para invitar';
 
   @override
-  String get followPeopleToInvite =>
-      'Sigue a personas para invitarlas a fiestas';
+  String get followPeopleToInvite => 'Sigue a personas para invitarlas a fiestas';
 
   @override
   String sendInvites(int count) {
@@ -2245,8 +2190,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get virtualAttendance => 'Asistencia Virtual';
 
   @override
-  String get virtualAttendanceDesc =>
-      'Permitir que los fans se unan virtualmente y participen en el chat';
+  String get virtualAttendanceDesc => 'Permitir que los fans se unan virtualmente y participen en el chat';
 
   @override
   String get virtualAttendanceFee => 'Tarifa de Asistencia Virtual';
@@ -2273,8 +2217,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noWatchPartiesFound => 'No Se Encontraron Fiestas';
 
   @override
-  String get beFirstToCreateForMatch =>
-      '¡Sé el primero en crear una fiesta para este partido!';
+  String get beFirstToCreateForMatch => '¡Sé el primero en crear una fiesta para este partido!';
 
   @override
   String get beFirstToCreate => '¡Sé el primero en crear una fiesta!';
@@ -2319,15 +2262,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noWatchPartiesToAttend => 'No hay fiestas para asistir';
 
   @override
-  String get discoverOrAcceptInvitations =>
-      'Descubre fiestas o acepta invitaciones';
+  String get discoverOrAcceptInvitations => 'Descubre fiestas o acepta invitaciones';
 
   @override
   String get noPastWatchParties => 'Sin fiestas pasadas';
 
   @override
-  String get completedPartiesAppearHere =>
-      'Las fiestas completadas aparecerán aquí';
+  String get completedPartiesAppearHere => 'Las fiestas completadas aparecerán aquí';
 
   @override
   String get liveChat => 'Chat en Vivo';
@@ -2339,8 +2280,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get joinLiveChat => 'Únete al Chat en Vivo';
 
   @override
-  String get chatWithFans =>
-      '¡Chatea con otros fans sobre este partido en tiempo real!';
+  String get chatWithFans => '¡Chatea con otros fans sobre este partido en tiempo real!';
 
   @override
   String fansInChat(int count) {
@@ -2380,8 +2320,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noConversationsYet => 'Aún no hay conversaciones';
 
   @override
-  String get startConversationWithFriends =>
-      '¡Inicia una conversación con tus amigos!';
+  String get startConversationWithFriends => '¡Inicia una conversación con tus amigos!';
 
   @override
   String get startChatting => 'Empezar a Chatear';
@@ -2399,16 +2338,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get markedAsRead => 'Marcado como leído';
 
   @override
-  String get completePremiumPurchaseInBrowser =>
-      'Completa tu compra en el navegador. Tu Premium se activará automáticamente.';
+  String get completePremiumPurchaseInBrowser => 'Completa tu compra en el navegador. Tu Premium se activará automáticamente.';
 
   @override
-  String get venuePremiumActivatedSuccessfully =>
-      '¡Venue Premium activado exitosamente!';
+  String get venuePremiumActivatedSuccessfully => '¡Venue Premium activado exitosamente!';
 
   @override
-  String get oneTimePaymentForWorldCup =>
-      'Pago único para la Copa del Mundo 2026';
+  String get oneTimePaymentForWorldCup => 'Pago único para la Copa del Mundo 2026';
 
   @override
   String get premiumFeaturesInclude => 'Las funciones Premium incluyen:';
@@ -2420,15 +2356,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tvScreenConfiguration => 'Configuración de TV y pantallas';
 
   @override
-  String get gameDaySpecialsDeals =>
-      'Ofertas y promociones del día del partido';
+  String get gameDaySpecialsDeals => 'Ofertas y promociones del día del partido';
 
   @override
   String get atmosphereVibeSettings => 'Configuración de ambiente y atmósfera';
 
   @override
-  String get realTimeCapacityUpdates =>
-      'Actualizaciones de capacidad en tiempo real';
+  String get realTimeCapacityUpdates => 'Actualizaciones de capacidad en tiempo real';
 
   @override
   String get priorityListingInSearches => 'Listado prioritario en búsquedas';
@@ -2437,8 +2371,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get analyticsDashboard => 'Panel de análisis';
 
   @override
-  String get validForEntireTournament =>
-      'Válido para todo el torneo (11 de junio - 19 de julio de 2026)';
+  String get validForEntireTournament => 'Válido para todo el torneo (11 de junio - 19 de julio de 2026)';
 
   @override
   String get waitingForActivation => 'Esperando activación...';
@@ -2459,8 +2392,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noTransactionsYet => 'Sin Transacciones Aún';
 
   @override
-  String get purchaseHistoryWillAppearHere =>
-      'Tu historial de compras aparecerá aquí\nuna vez que realices tu primera transacción.';
+  String get purchaseHistoryWillAppearHere => 'Tu historial de compras aparecerá aquí\nuna vez que realices tu primera transacción.';
 
   @override
   String get exploreFanPass => 'Explorar Fan Pass';
@@ -2484,8 +2416,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venueAlreadyManaged => 'Local Ya Gestionado';
 
   @override
-  String get venueAlreadyManagedDesc =>
-      'Este local ya está siendo gestionado por otro propietario. Si crees que es un error, contacta con soporte.';
+  String get venueAlreadyManagedDesc => 'Este local ya está siendo gestionado por otro propietario. Si crees que es un error, contacta con soporte.';
 
   @override
   String get goBack => 'Volver';
@@ -2497,8 +2428,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venueOnboardingStep1Title => 'Información del Negocio';
 
   @override
-  String get venueOnboardingStep1Desc =>
-      'Cuéntanos sobre tu negocio para configurar tu portal de local.';
+  String get venueOnboardingStep1Desc => 'Cuéntanos sobre tu negocio para configurar tu portal de local.';
 
   @override
   String get businessName => 'Nombre del Negocio';
@@ -2522,22 +2452,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venueOnboardingStep2Title => 'Confirmar Tu Local';
 
   @override
-  String get venueOnboardingStep2Desc =>
-      'Verifica los detalles del local y confirma que estás autorizado para gestionarlo.';
+  String get venueOnboardingStep2Desc => 'Verifica los detalles del local y confirma que estás autorizado para gestionarlo.';
 
   @override
   String get venueTypeLabel => 'Tipo de Local';
 
   @override
-  String get venueAuthorizationConfirm =>
-      'Confirmo que estoy autorizado para gestionar este local y representar al negocio en esta aplicación.';
+  String get venueAuthorizationConfirm => 'Confirmo que estoy autorizado para gestionar este local y representar al negocio en esta aplicación.';
 
   @override
   String get venueOnboardingStep3Title => 'Revisar y Reclamar';
 
   @override
-  String get venueOnboardingStep3Desc =>
-      'Revisa tu información y reclama el local para comenzar a gestionarlo.';
+  String get venueOnboardingStep3Desc => 'Revisa tu información y reclama el local para comenzar a gestionarlo.';
 
   @override
   String get claimThisVenue => 'Reclamar Este Local';
@@ -2546,16 +2473,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get forgotPassword => '¿Olvidaste tu contraseña?';
 
   @override
-  String get resetPasswordSent =>
-      'Correo de restablecimiento enviado. Revisa tu bandeja de entrada.';
+  String get resetPasswordSent => 'Correo de restablecimiento enviado. Revisa tu bandeja de entrada.';
 
   @override
-  String get resetPasswordError =>
-      'No se pudo enviar el correo. Verifica la dirección e intenta de nuevo.';
+  String get resetPasswordError => 'No se pudo enviar el correo. Verifica la dirección e intenta de nuevo.';
 
   @override
-  String get enterEmailForReset =>
-      'Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.';
+  String get enterEmailForReset => 'Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.';
 
   @override
   String get send => 'Enviar';
@@ -2564,19 +2488,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get deleteAccountConfirmTitle => 'Eliminar Cuenta';
 
   @override
-  String get deleteAccountConfirmMessage =>
-      'Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer. Escribe DELETE para confirmar.';
+  String get deleteAccountConfirmMessage => 'Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer. Escribe DELETE para confirmar.';
 
   @override
-  String get deleteAccountRequiresRecentLogin =>
-      'Por seguridad, cierra sesión y vuelve a iniciar sesión antes de eliminar tu cuenta.';
+  String get deleteAccountRequiresRecentLogin => 'Por seguridad, cierra sesión y vuelve a iniciar sesión antes de eliminar tu cuenta.';
 
   @override
   String get deleteAccountSuccess => 'Tu cuenta ha sido eliminada.';
 
   @override
-  String get deleteAccountError =>
-      'No se pudo eliminar la cuenta. Inténtalo de nuevo.';
+  String get deleteAccountError => 'No se pudo eliminar la cuenta. Inténtalo de nuevo.';
 
   @override
   String get typeDeleteToConfirm => 'Escribe DELETE para confirmar';
@@ -2585,8 +2506,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get somethingWentWrong => 'Algo salió mal';
 
   @override
-  String get unexpectedErrorMessage =>
-      'Ocurrió un error inesperado. Por favor reinicia la aplicación.';
+  String get unexpectedErrorMessage => 'Ocurrió un error inesperado. Por favor reinicia la aplicación.';
 
   @override
   String get newChat => 'Nuevo Chat';
@@ -2613,8 +2533,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get teamDescriptionOptional => 'Descripción del Equipo (opcional)';
 
   @override
-  String get searchFriendsToAddToTeam =>
-      'Buscar amigos para agregar al equipo...';
+  String get searchFriendsToAddToTeam => 'Buscar amigos para agregar al equipo...';
 
   @override
   String get createTeam => 'Crear Equipo';
@@ -2640,33 +2559,28 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get clearChatHistoryConfirmation =>
-      '¿Estás seguro de que quieres borrar todos los mensajes de este chat? Esta acción no se puede deshacer.';
+  String get clearChatHistoryConfirmation => '¿Estás seguro de que quieres borrar todos los mensajes de este chat? Esta acción no se puede deshacer.';
 
   @override
-  String get leaveChatConfirmation =>
-      '¿Estás seguro de que quieres salir de este chat?';
+  String get leaveChatConfirmation => '¿Estás seguro de que quieres salir de este chat?';
 
   @override
   String get leave => 'Salir';
 
   @override
-  String get unblockUserConfirmation =>
-      '¿Estás seguro de que quieres desbloquear a este usuario? Podrá enviarte mensajes de nuevo.';
+  String get unblockUserConfirmation => '¿Estás seguro de que quieres desbloquear a este usuario? Podrá enviarte mensajes de nuevo.';
 
   @override
   String get addMembers => 'Agregar Miembros';
 
   @override
-  String get selectFriendToAdd =>
-      'Selecciona un amigo para agregar a este chat';
+  String get selectFriendToAdd => 'Selecciona un amigo para agregar a este chat';
 
   @override
   String get noFriendsToAdd => 'No hay amigos para agregar';
 
   @override
-  String get allFriendsAlreadyInChat =>
-      'Todos tus amigos ya están en este chat';
+  String get allFriendsAlreadyInChat => 'Todos tus amigos ya están en este chat';
 
   @override
   String memberAddedToChat(String name) {
@@ -2682,15 +2596,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get editProfile => 'Editar Perfil';
 
   @override
-  String get maxFavoriteTeamsMessage =>
-      'Puedes seleccionar hasta 5 equipos favoritos';
+  String get maxFavoriteTeamsMessage => 'Puedes seleccionar hasta 5 equipos favoritos';
 
   @override
   String get profileUpdatedSuccessfully => '¡Perfil actualizado exitosamente!';
 
   @override
-  String get failedToUpdateProfile =>
-      'Error al actualizar el perfil. Inténtalo de nuevo.';
+  String get failedToUpdateProfile => 'Error al actualizar el perfil. Inténtalo de nuevo.';
 
   @override
   String failedToUpdateProfileError(String error) {
@@ -2767,8 +2679,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venueClaims => 'Reclamaciones de Locales';
 
   @override
-  String get venueClaimsDesc =>
-      'Revisar reclamaciones y disputas de locales pendientes';
+  String get venueClaimsDesc => 'Revisar reclamaciones y disputas de locales pendientes';
 
   @override
   String errorLoadingData(String error) {
@@ -2790,15 +2701,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noPendingClaims => 'Sin Reclamaciones Pendientes';
 
   @override
-  String get allVenueClaimsReviewed =>
-      'Todas las reclamaciones de locales han sido revisadas.';
+  String get allVenueClaimsReviewed => 'Todas las reclamaciones de locales han sido revisadas.';
 
   @override
   String get noPendingDisputes => 'Sin Disputas Pendientes';
 
   @override
-  String get allVenueDisputesReviewed =>
-      'Todas las disputas de locales han sido revisadas.';
+  String get allVenueDisputesReviewed => 'Todas las disputas de locales han sido revisadas.';
 
   @override
   String get reject => 'Rechazar';
@@ -2834,8 +2743,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get broadcastWarning =>
-      'Las notificaciones de difusión se envían a todos los usuarios de la audiencia seleccionada. Úsalas con moderación.';
+  String get broadcastWarning => 'Las notificaciones de difusión se envían a todos los usuarios de la audiencia seleccionada. Úsalas con moderación.';
 
   @override
   String get targetAudience => 'Audiencia Objetivo';
@@ -2865,8 +2773,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get messageLabel => 'Mensaje';
 
   @override
-  String get enterNotificationMessage =>
-      'Ingresa el mensaje de la notificación';
+  String get enterNotificationMessage => 'Ingresa el mensaje de la notificación';
 
   @override
   String get pleaseEnterMessage => 'Por favor ingresa un mensaje';
@@ -2881,8 +2788,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notificationTitlePlaceholder => 'Título de la Notificación';
 
   @override
-  String get notificationPreviewPlaceholder =>
-      'Tu mensaje de notificación aparecerá aquí...';
+  String get notificationPreviewPlaceholder => 'Tu mensaje de notificación aparecerá aquí...';
 
   @override
   String get sending => 'Enviando...';
@@ -2894,12 +2800,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get confirmSend => 'Confirmar Envío';
 
   @override
-  String get confirmSendNotification =>
-      '¿Estás seguro de que quieres enviar esta notificación?';
+  String get confirmSendNotification => '¿Estás seguro de que quieres enviar esta notificación?';
 
   @override
-  String get notificationSentSuccessfully =>
-      'Notificación enviada exitosamente';
+  String get notificationSentSuccessfully => 'Notificación enviada exitosamente';
 
   @override
   String get failedToSendNotification => 'Error al enviar la notificación';
@@ -2908,8 +2812,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get recentBroadcasts => 'Difusiones Recientes';
 
   @override
-  String get recentBroadcastHistory =>
-      'El historial de difusiones recientes aparecerá aquí';
+  String get recentBroadcastHistory => 'El historial de difusiones recientes aparecerá aquí';
 
   @override
   String get allUsersAudience => 'Todos los Usuarios';
@@ -2927,8 +2830,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get teamFansAudience => 'Fans del Equipo';
 
   @override
-  String get usersFollowSpecificTeam =>
-      'Usuarios que siguen un equipo específico';
+  String get usersFollowSpecificTeam => 'Usuarios que siguen un equipo específico';
 
   @override
   String get activeUsersAudience => 'Usuarios Activos';
@@ -2971,8 +2873,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get venuePhoneComingSoon =>
-      'El número de teléfono se obtendrá de los datos del local.\n¡Esta función estará disponible pronto!';
+  String get venuePhoneComingSoon => 'El número de teléfono se obtendrá de los datos del local.\n¡Esta función estará disponible pronto!';
 
   @override
   String venueWebsiteTitle(String venueName) {
@@ -2980,8 +2881,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get venueWebsiteComingSoon =>
-      'La URL del sitio web se obtendrá de los datos del local.\n¡Esta función estará disponible pronto!';
+  String get venueWebsiteComingSoon => 'La URL del sitio web se obtendrá de los datos del local.\n¡Esta función estará disponible pronto!';
 
   @override
   String get copyToClipboard => 'Copiar al portapapeles';
@@ -3044,8 +2944,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get watchPartyChatHint => 'Escribe un mensaje...';
 
   @override
-  String get watchPartyVenueSearchHint =>
-      'Buscar bares deportivos, restaurantes...';
+  String get watchPartyVenueSearchHint => 'Buscar bares deportivos, restaurantes...';
 
   @override
   String get watchPartyNameLabel => 'Nombre de la fiesta';
@@ -3057,8 +2956,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get watchPartyDescriptionLabel => 'Descripción';
 
   @override
-  String get watchPartyDescriptionHint =>
-      'Cuéntale a la gente sobre tu fiesta...';
+  String get watchPartyDescriptionHint => 'Cuéntale a la gente sobre tu fiesta...';
 
   @override
   String get watchPartyVirtualFeeLabel => 'Tarifa de asistencia virtual';
@@ -3070,8 +2968,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discardChangesTitle => '¿Descartar cambios?';
 
   @override
-  String get discardChangesMessage =>
-      'Tienes cambios sin guardar. ¿Estás seguro de que quieres salir?';
+  String get discardChangesMessage => 'Tienes cambios sin guardar. ¿Estás seguro de que quieres salir?';
 
   @override
   String get watchPartyGameSearchHint => 'Buscar equipos, sedes...';
@@ -3107,8 +3004,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get calendarShareFile => 'Compartir archivo de calendario';
 
   @override
-  String get calendarShareFileSubtitle =>
-      'Compartir archivo .ics con cualquier app';
+  String get calendarShareFileSubtitle => 'Compartir archivo .ics con cualquier app';
 
   @override
   String get calendarCopyFeedUrl => 'Copiar URL del calendario';
@@ -3120,8 +3016,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get calendarAdded => 'Añadido al calendario';
 
   @override
-  String get calendarFeedUrlCopied =>
-      'URL del calendario copiada al portapapeles';
+  String get calendarFeedUrlCopied => 'URL del calendario copiada al portapapeles';
 
   @override
   String get calendarShareIcsFile => 'Compartir archivo .ics';
@@ -3133,8 +3028,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get shareCopyLink => 'Copiar enlace';
 
   @override
-  String get shareCopyLinkSubtitle =>
-      'Copiar enlace compartible al portapapeles';
+  String get shareCopyLinkSubtitle => 'Copiar enlace compartible al portapapeles';
 
   @override
   String get shareMoreApps => 'Más aplicaciones';
@@ -3154,8 +3048,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get accessibilityResetLabel =>
-      'Restablecer todos los ajustes de accesibilidad a los valores predeterminados';
+  String get accessibilityResetLabel => 'Restablecer todos los ajustes de accesibilidad a los valores predeterminados';
 
   @override
   String get accessibilityHighContrast => 'Modo de alto contraste';
@@ -3170,8 +3063,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get accessibilityLargerTargets => 'Objetivos táctiles más grandes';
 
   @override
-  String get accessibilityTextSizeSlider =>
-      'Control deslizante de tamaño de texto';
+  String get accessibilityTextSizeSlider => 'Control deslizante de tamaño de texto';
 
   @override
   String accessibilitySetTextSize(String size) {
@@ -3213,12 +3105,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get upcomingMatches => 'Próximos Partidos';
 
   @override
-  String get seasonAnalysisComingSoon =>
-      'Análisis de temporada próximamente - datos históricos en procesamiento';
+  String get seasonAnalysisComingSoon => 'Análisis de temporada próximamente - datos históricos en procesamiento';
 
   @override
-  String get locationSharingComingSoon =>
-      '¡Compartir ubicación disponible pronto!';
+  String get locationSharingComingSoon => '¡Compartir ubicación disponible pronto!';
 
   @override
   String get venuePortalAcceptingReservations => 'Aceptando Reservas';
@@ -3242,16 +3132,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalAtmosphereSettings => 'Configuración de Ambiente';
 
   @override
-  String get venuePortalAtmosphereSettingsSaved =>
-      'Configuración de ambiente guardada';
+  String get venuePortalAtmosphereSettingsSaved => 'Configuración de ambiente guardada';
 
   @override
-  String get venuePortalBroadcastingInfo =>
-      'Selecciona los partidos que transmitirá tu local. Los usuarios verán tu local al buscar lugares para ver estos partidos.';
+  String get venuePortalBroadcastingInfo => 'Selecciona los partidos que transmitirá tu local. Los usuarios verán tu local al buscar lugares para ver estos partidos.';
 
   @override
-  String get venuePortalBroadcastingScheduleSaved =>
-      'Programación de transmisión guardada';
+  String get venuePortalBroadcastingScheduleSaved => 'Programación de transmisión guardada';
 
   @override
   String get venuePortalBusy => 'Concurrido';
@@ -3263,19 +3150,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalClaimStatus => 'Estado de Reclamación';
 
   @override
-  String get venuePortalClaimUnderReview =>
-      'Tu reclamación está siendo revisada por un administrador. Se te notificará cuando sea aprobada.';
+  String get venuePortalClaimUnderReview => 'Tu reclamación está siendo revisada por un administrador. Se te notificará cuando sea aprobada.';
 
   @override
-  String get venuePortalCompletePhoneVerification =>
-      'Por favor completa la verificación telefónica para continuar.';
+  String get venuePortalCompletePhoneVerification => 'Por favor completa la verificación telefónica para continuar.';
 
   @override
   String get venuePortalCreateFirstSpecial => 'Crea Tu Primera Oferta';
 
   @override
-  String get venuePortalCrowdDensityDesc =>
-      '¿Qué tan lleno está tu local durante los partidos?';
+  String get venuePortalCrowdDensityDesc => '¿Qué tan lleno está tu local durante los partidos?';
 
   @override
   String get venuePortalCurrentOccupancy => 'Ocupación Actual';
@@ -3304,8 +3188,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalEditSpecial => 'Editar Oferta';
 
   @override
-  String get venuePortalEmptySpecialsMessage =>
-      'Agrega ofertas del día del partido para atraer más fanáticos a tu local durante los partidos.';
+  String get venuePortalEmptySpecialsMessage => 'Agrega ofertas del día del partido para atraer más fanáticos a tu local durante los partidos.';
 
   @override
   String get venuePortalEstimatedWaitTime => 'Tiempo de Espera Estimado';
@@ -3314,8 +3197,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalFanBaseAffinity => 'Afinidad de Fanáticos';
 
   @override
-  String get venuePortalFanBaseAffinityDesc =>
-      'Agrega códigos de equipos que tu local normalmente apoya (ej., USA, MEX, ARG)';
+  String get venuePortalFanBaseAffinityDesc => 'Agrega códigos de equipos que tu local normalmente apoya (ej., USA, MEX, ARG)';
 
   @override
   String get venuePortalGameDaySpecials => 'Ofertas del Día del Partido';
@@ -3335,8 +3217,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalMaxCapacity => 'Capacidad Máxima';
 
   @override
-  String get venuePortalMaxCapacityDesc =>
-      'Establece el número máximo de invitados que tu local puede acomodar';
+  String get venuePortalMaxCapacityDesc => 'Establece el número máximo de invitados que tu local puede acomodar';
 
   @override
   String get venuePortalMaximumCapacity => 'Capacidad Máxima';
@@ -3351,15 +3232,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalNoSpecialsYet => 'Sin Ofertas Aún';
 
   @override
-  String get venuePortalNoUpcomingMatches =>
-      'No se encontraron partidos próximos';
+  String get venuePortalNoUpcomingMatches => 'No se encontraron partidos próximos';
 
   @override
   String get venuePortalNoWait => 'Sin Espera';
 
   @override
-  String get venuePortalNoiseLevelDesc =>
-      '¿Cuál es el nivel de ruido típico durante los partidos?';
+  String get venuePortalNoiseLevelDesc => '¿Cuál es el nivel de ruido típico durante los partidos?';
 
   @override
   String get venuePortalNoiseLevelTitle => 'Nivel de Ruido';
@@ -3391,8 +3270,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalReservationsClosed => 'Las reservas están cerradas';
 
   @override
-  String get venuePortalReservationsOpen =>
-      'Las reservas están abiertas actualmente';
+  String get venuePortalReservationsOpen => 'Las reservas están abiertas actualmente';
 
   @override
   String get venuePortalSaveSelection => 'Guardar Selección';
@@ -3412,16 +3290,13 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get venuePortalSpecialActive =>
-      'La oferta es visible para los usuarios';
+  String get venuePortalSpecialActive => 'La oferta es visible para los usuarios';
 
   @override
-  String get venuePortalSpecialPleaseEnterDescription =>
-      'Por favor ingresa una descripción';
+  String get venuePortalSpecialPleaseEnterDescription => 'Por favor ingresa una descripción';
 
   @override
-  String get venuePortalSpecialPleaseEnterTitle =>
-      'Por favor ingresa un título';
+  String get venuePortalSpecialPleaseEnterTitle => 'Por favor ingresa un título';
 
   @override
   String get venuePortalSubmitDispute => 'Enviar Disputa';
@@ -3447,8 +3322,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get venuePortalVenueVibe => 'Ambiente del Local';
 
   @override
-  String get venuePortalVibeTagsDesc =>
-      'Selecciona etiquetas que describan el ambiente de tu local';
+  String get venuePortalVibeTagsDesc => 'Selecciona etiquetas que describan el ambiente de tu local';
 
   @override
   String venuePortalWaitTimeMinutes(int minutes) {
@@ -3482,33 +3356,28 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get favoriteTeamsSavedSynced =>
-      '¡Equipos favoritos guardados y sincronizados!';
+  String get favoriteTeamsSavedSynced => '¡Equipos favoritos guardados y sincronizados!';
 
   @override
   String get favoriteTeamsSaved => '¡Equipos favoritos guardados!';
 
   @override
-  String get errorSavingFavorites =>
-      'Error al guardar favoritos. Inténtalo de nuevo.';
+  String get errorSavingFavorites => 'Error al guardar favoritos. Inténtalo de nuevo.';
 
   @override
-  String get couldNotLoadFavorites =>
-      'No se pudieron cargar los favoritos. Puedes seleccionar equipos abajo.';
+  String get couldNotLoadFavorites => 'No se pudieron cargar los favoritos. Puedes seleccionar equipos abajo.';
 
   @override
   String get copaClearChat => 'Borrar chat';
 
   @override
-  String get copaClearChatConfirm =>
-      'Esto borrará la conversación y empezará de nuevo. ¿Continuar?';
+  String get copaClearChatConfirm => 'Esto borrará la conversación y empezará de nuevo. ¿Continuar?';
 
   @override
   String get copaThinking => 'Pensando...';
 
   @override
-  String get copaHintText =>
-      'Pregunta a Copa sobre equipos, partidos, jugadores...';
+  String get copaHintText => 'Pregunta a Copa sobre equipos, partidos, jugadores...';
 
   @override
   String get copaClearTooltip => 'Borrar chat';
@@ -3529,19 +3398,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get saveChanges => 'Guardar Cambios';
 
   @override
-  String get fieldsCannotBeEdited =>
-      'Algunos campos no se pueden editar después de que la fiesta haya comenzado.';
+  String get fieldsCannotBeEdited => 'Algunos campos no se pueden editar después de que la fiesta haya comenzado.';
 
   @override
   String get visibilityLabel => 'Visibilidad';
 
   @override
-  String get visibilityPublicDesc =>
-      'Cualquiera puede descubrir y unirse a esta fiesta';
+  String get visibilityPublicDesc => 'Cualquiera puede descubrir y unirse a esta fiesta';
 
   @override
-  String get visibilityPrivateDesc =>
-      'Solo las personas invitadas pueden unirse';
+  String get visibilityPrivateDesc => 'Solo las personas invitadas pueden unirse';
 
   @override
   String get gameLabel => 'Partido';
@@ -3619,8 +3485,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get shareThoughts => 'Comparte tus pensamientos';
 
   @override
-  String get gameThoughtsHint =>
-      '¿Qué tan emocionado estás? ¿Alguna predicción?';
+  String get gameThoughtsHint => '¿Qué tan emocionado estás? ¿Alguna predicción?';
 
   @override
   String get reviewQuestion => '¿Qué lugar estás reseñando?';
@@ -3632,8 +3497,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get yourReview => 'Tu reseña';
 
   @override
-  String get reviewHint =>
-      'Comparte tu experiencia... ¿Cómo estuvo la comida, el servicio, el ambiente?';
+  String get reviewHint => 'Comparte tu experiencia... ¿Cómo estuvo la comida, el servicio, el ambiente?';
 
   @override
   String get tapToAddPhotos => 'Toca para agregar fotos';
@@ -3678,8 +3542,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get filterShowsThisMatch => 'Muestra Este Partido';
 
   @override
-  String get filterShowsThisMatchDesc =>
-      'Solo mostrar lugares que transmiten este partido';
+  String get filterShowsThisMatchDesc => 'Solo mostrar lugares que transmiten este partido';
 
   @override
   String get filterSetup => 'Configuración';
@@ -3703,8 +3566,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get filterLiveCapacity => 'Capacidad en Vivo';
 
   @override
-  String get filterLiveCapacityDesc =>
-      'Muestra datos de ocupación en tiempo real';
+  String get filterLiveCapacityDesc => 'Muestra datos de ocupación en tiempo real';
 
   @override
   String get filterAtmosphere => 'Ambiente';
@@ -3750,8 +3612,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get audioSetup => 'Configuración de Audio';
 
   @override
-  String get audioDedicated =>
-      'Audio del partido en sistema de sonido principal';
+  String get audioDedicated => 'Audio del partido en sistema de sonido principal';
 
   @override
   String get audioShared => 'Audio del partido mezclado con música del lugar';
@@ -3792,4 +3653,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get primary => 'Principal';
+
+  @override
+  String get orContinueWith => 'O';
+
+  @override
+  String get continueWithGoogle => 'Continuar con Google';
 }
