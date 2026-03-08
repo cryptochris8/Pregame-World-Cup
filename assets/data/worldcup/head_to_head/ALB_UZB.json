@@ -1,0 +1,29 @@
+{
+  "id": "ALB_UZB",
+  "team1Code": "ALB",
+  "team2Code": "UZB",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 2,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2010-08-11",
+  "firstMeeting": "2010-08-11",
+  "notableMatches": [
+    {
+      "year": 2010,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ALB",
+      "location": "Tirana, Albania",
+      "description": "Albania edges Uzbekistan in the only meeting between these two sides"
+    }
+  ]
+}

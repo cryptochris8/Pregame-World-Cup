@@ -1,0 +1,44 @@
+{
+  "fifaCode": "CMR",
+  "teamName": "Cameroon",
+  "worldCupHistory": {
+    "totalAppearances": 8,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 1990,
+    "appearances": [
+      { "year": 1982, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1990, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1994, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 23,
+      "won": 4,
+      "drawn": 7,
+      "lost": 12,
+      "goalsFor": 20,
+      "goalsAgainst": 39
+    },
+    "topScorers": [
+      { "name": "Roger Milla", "goals": 5, "tournaments": "1982, 1990, 1994" },
+      { "name": "Samuel Eto'o", "goals": 3, "tournaments": "1998, 2002, 2010, 2014" },
+      { "name": "François Omam-Biyik", "goals": 3, "tournaments": "1990, 1994, 1998" },
+      { "name": "Patrick Mboma", "goals": 2, "tournaments": "1998, 2002" },
+      { "name": "Vincent Aboubakar", "goals": 2, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "Roger Milla's iconic corner flag dance celebrations at Italia 90 became a World Cup symbol",
+      "Defeated reigning champions Argentina 1-0 in the 1990 World Cup opening match",
+      "Reached the quarter-finals in 1990, the first African nation to do so",
+      "Roger Milla became the oldest World Cup scorer at age 42 in 1994",
+      "First African team to beat a South American team in a World Cup (Argentina, 1990)",
+      "Vincent Aboubakar scored a stunning stoppage-time bicycle kick against Serbia in 2022"
+    ]
+  }
+}

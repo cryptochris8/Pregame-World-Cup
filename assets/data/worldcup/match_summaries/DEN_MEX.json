@@ -1,0 +1,55 @@
+{
+  "team1Code": "DEN",
+  "team2Code": "MEX",
+  "team1Name": "Denmark",
+  "team2Name": "Mexico",
+  "historicalAnalysis": "Denmark and Mexico have met at the World Cup before, most notably at the 2018 World Cup in Russia where they were in different groups. However, their encounters in friendlies and minor tournaments have been competitive. Both nations are established World Cup regulars who consistently qualify and aim to advance deep into the tournament.\n\nDenmark's tournament pedigree includes the 1992 European Championship triumph and their 2020 Euro semi-final run. Their squad features a strong spine of players at top European clubs, with Christian Eriksen's continued presence adding both quality and emotional inspiration. Denmark are one of Europe's most consistent performers in qualifying.\n\nMexico, as co-hosts of the 2026 World Cup, face enormous expectations. El Tri have qualified for every World Cup since 1994 but have been eliminated in the Round of 16 at each of the last seven tournaments. This matchday 3 encounter could decide the final standings in Group A, making it a must-watch fixture.",
+  "keyStorylines": [
+    "Group A decider with knockout round qualification potentially at stake",
+    "Mexico seeking to break their Round of 16 curse as co-hosts",
+    "Denmark's European consistency vs Mexico's home support advantage",
+    "Matchday 3 drama with both teams' fates potentially hanging in the balance"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Eriksen",
+      "teamCode": "DEN",
+      "position": "Midfielder",
+      "reason": "Denmark's talisman whose vision and set-piece delivery can decide matches"
+    },
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "position": "Winger",
+      "reason": "El Chucky's pace and directness are Mexico's primary attacking weapons"
+    },
+    {
+      "name": "Rasmus Hojlund",
+      "teamCode": "DEN",
+      "position": "Forward",
+      "reason": "Young powerhouse striker who gives Denmark a physical edge"
+    },
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "position": "Midfielder",
+      "reason": "Mexico's midfield anchor who provides defensive solidity and distribution"
+    }
+  ],
+  "tacticalPreview": "Denmark's 3-4-3 system relies on wing-back dominance and Eriksen's creative distribution. Their defensive three provides solidity, while the formation's flexibility allows them to shift between defensive and attacking shapes seamlessly. Set-pieces are a significant weapon, with multiple aerial threats.\n\nMexico will likely play their attacking 4-3-3, particularly at the Estadio Azteca where the crowd demands positive football. Their pressing is designed to force turnovers, while the wide attackers look to isolate defenders in one-on-one situations. The tactical battle will center on whether Mexico can impose their tempo at home or whether Denmark's composure and organization can neutralize the hostile atmosphere.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Mexico's co-host advantage and the passionate Azteca crowd give them a narrow edge in what should be a tight match. Denmark's quality means they will score, but Mexico's attacking flair and home support could prove decisive.",
+    "alternativeScenario": "Denmark's big-game experience and tactical discipline could see them frustrate Mexico and steal a 1-0 victory, similar to how they've performed in past tournament matches. A 0-0 draw is also possible if both teams prioritize not losing."
+  },
+  "pastEncountersSummary": "Denmark and Mexico have met occasionally in friendlies with neither side establishing dominance. Both teams are competitive at World Cups but have never met in the tournament itself, making this a historic first World Cup encounter between the two nations.",
+  "funFacts": [
+    "Mexico have been eliminated in the World Cup Round of 16 at the last seven consecutive tournaments",
+    "Denmark won Euro 1992 after being called up as last-minute replacements",
+    "The Estadio Azteca has hosted two World Cup finals and will be in its third World Cup",
+    "Mexico's 'no era penal' controversy against the Netherlands in 2014 remains a sore point"
+  ],
+  "isFirstMeeting": false
+}

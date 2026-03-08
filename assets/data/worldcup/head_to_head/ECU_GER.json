@@ -1,0 +1,39 @@
+{
+  "id": "ECU_GER",
+  "team1Code": "ECU",
+  "team2Code": "GER",
+  "totalMatches": 2,
+  "team1Wins": 0,
+  "team2Wins": 2,
+  "draws": 0,
+  "team1Goals": 0,
+  "team2Goals": 7,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2013-05-29",
+  "firstMeeting": "2006-06-20",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 3,
+      "winnerCode": "GER",
+      "location": "Berlin, Germany",
+      "description": "Klose double and Podolski goal as hosts Germany cruise past Ecuador"
+    },
+    {
+      "year": 2013,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 4,
+      "winnerCode": "GER",
+      "location": "Jacksonville, USA",
+      "description": "Germany dominate Ecuador in US-based friendly"
+    }
+  ]
+}

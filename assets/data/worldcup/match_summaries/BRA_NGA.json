@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "NGA",
+  "team1Name": "Brazil",
+  "team2Name": "Nigeria",
+  "historicalAnalysis": "Brazil and Nigeria have produced some of the most entertaining football matches in World Cup and Olympic history. Their most iconic encounter came at the 1996 Olympics in Atlanta, where Nigeria stunned Brazil 4-3 in the semi-final on their way to winning the gold medal. That match remains one of the greatest football games ever played, featuring a breathtaking comeback by the Super Eagles.\n\nAt the 1998 World Cup in France, Brazil defeated Nigeria 3-0 in the group stage, showcasing the gulf in quality between the sides in a competitive context. However, Nigeria have consistently produced talented generations of players who thrill with their pace, power, and technical ability.\n\nBrazil, five-time World Cup champions, arrive at the 2026 tournament desperate to end their title drought that extends back to 2002. Their young, exciting squad features some of the world's most talented players. Nigeria's Super Eagles represent the best of African football, with a squad that blends European club experience with raw African talent.",
+  "keyStorylines": [
+    "Brazil seeking to end their 24-year World Cup drought",
+    "The legacy of the 1996 Olympic classic adds historical weight",
+    "Nigeria as one of Africa's strongest representatives at the tournament",
+    "South American flair vs West African power in a Group C blockbuster"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's most electrifying player whose dribbling can destroy any defense"
+    },
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "position": "Forward",
+      "reason": "One of the world's deadliest strikers with pace, power, and finishing"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Real Madrid star who provides goals and creativity from multiple positions"
+    },
+    {
+      "name": "Ademola Lookman",
+      "teamCode": "NGA",
+      "position": "Forward",
+      "reason": "Atalanta star who scored a hat-trick in the 2024 Europa League final"
+    }
+  ],
+  "tacticalPreview": "Brazil's 4-2-3-1 is built around Vinicius Jr.'s dribbling genius and the creative interplay between their attacking quartet. The double pivot provides defensive stability while allowing the full-backs to overlap. Brazil's pressing has improved significantly, adding a defensive dimension to their natural attacking flair.\n\nNigeria's 4-3-3 is designed to maximize Osimhen's predatory instincts. The Super Eagles play with high intensity, pressing aggressively and transitioning quickly. Their midfield is combative and technically capable, while their defenders are physically imposing. The key battle will be Nigeria's ability to match Brazil's tempo while protecting against Vinicius Jr.'s dribbling runs.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Brazil's individual quality gives them the edge, but Nigeria's attacking firepower through Osimhen and Lookman means they will score. This should be one of the most entertaining group stage matches of the tournament.",
+    "alternativeScenario": "Nigeria's pace and power could overwhelm Brazil's defense, particularly on counter-attacks. A 2-2 draw or even a shock Nigerian victory are realistic possibilities given the Super Eagles' attacking talent."
+  },
+  "pastEncountersSummary": "Their history includes Nigeria's unforgettable 4-3 Olympic semi-final victory in 1996 and Brazil's dominant 3-0 World Cup win in 1998. These matchups consistently produce exciting, high-scoring football between two of the world's most naturally gifted football nations.",
+  "funFacts": [
+    "Nigeria's 4-3 victory over Brazil at the 1996 Olympics is considered one of the greatest football matches ever",
+    "Brazil have won a record 5 World Cups but none since 2002",
+    "Victor Osimhen was African Footballer of the Year and one of the world's most sought-after strikers",
+    "Both nations have produced multiple Ballon d'Or/African Footballer of the Year winners"
+  ],
+  "isFirstMeeting": false
+}

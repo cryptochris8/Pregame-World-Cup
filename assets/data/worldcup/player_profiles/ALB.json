@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Etrit Berisha": {
+      "bio": "One of the most experienced Albanian footballers of his generation, Etrit Berisha has been a stalwart between the posts for over a decade. His career has spanned top Italian clubs including Lazio and Atalanta before moving to Scandinavia, and he has been a pillar of Albanian goalkeeping through two major tournament qualifications.",
+      "playingStyle": "Experienced, commanding goalkeeper with excellent shot-stopping ability, strong positioning, and the vocal leadership to organize his defensive line effectively",
+      "keyStrengths": ["Shot-stopping consistency and experience", "Vocal communication and defensive organization", "Composure under pressure in big matches"],
+      "worldCup2026Role": "Veteran first-choice goalkeeper whose experience across multiple European leagues gives Albania reliability and calm in their historic first World Cup appearance",
+      "notableFact": "Was Albania's starting goalkeeper during their historic Euro 2016 campaign, their first-ever major tournament, where he earned praise for several crucial saves"
+    },
+    "Thomas Strakosha": {
+      "bio": "A talented goalkeeper who rose to prominence during a long stint at Lazio in Serie A, where he was the starting keeper for several seasons. Born in Greece to Albanian parents, Strakosha chose to represent Albania and has been a key figure in the national team setup as a reliable backup and competitor for the number one shirt.",
+      "playingStyle": "Technically proficient goalkeeper with excellent reflexes, good distribution skills, and the ability to command his area during set pieces and crosses",
+      "keyStrengths": ["Quick reflexes and shot-stopping", "Distribution and ability to start attacks", "Experience in high-pressure Serie A matches"],
+      "worldCup2026Role": "Strong backup goalkeeper who provides genuine competition for the starting spot; his Serie A pedigree means Albania have no drop-off in quality if called upon",
+      "notableFact": "Made over 150 appearances for Lazio in Serie A and was part of the squad that competed in the UEFA Champions League, giving him elite-level European experience"
+    },
+    "Simon Simoni": {
+      "bio": "A young and promising goalkeeper who represents the future of Albanian goalkeeping. At just 21, Simoni has already caught the eye of scouts with his performances in the German second division with Kaiserslautern, and his selection for the World Cup squad reflects Albania's confidence in his development trajectory.",
+      "playingStyle": "Athletic, modern goalkeeper with impressive height, quick reactions, and the willingness to play out from the back that suits contemporary tactical demands",
+      "keyStrengths": ["Athletic ability and impressive wingspan", "Quick reactions at close range", "Confidence playing with the ball at his feet"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience at a young age; his inclusion signals Albania's investment in developing the next generation of talent",
+      "notableFact": "At 195cm tall, he is one of the tallest players in the Albanian squad and has been developing his craft in the competitive German 2. Bundesliga with Kaiserslautern"
+    },
+    "Berat Djimsiti": {
+      "bio": "A cornerstone of Atalanta's remarkable rise in Serie A and European competition, Djimsiti has become one of the most respected Albanian players in European football. His consistency, intelligence, and reading of the game have made him a fixture in both Atalanta's and Albania's defensive setup for nearly a decade.",
+      "playingStyle": "Intelligent, composed center-back who reads the game exceptionally well, excels in positional play, and contributes with clean ball progression from the back line",
+      "keyStrengths": ["Exceptional reading of the game and positioning", "Ball-playing ability from defense", "Experience in European competition with Atalanta"],
+      "worldCup2026Role": "Starting center-back and defensive leader whose experience in Atalanta's sophisticated tactical system provides Albania with a world-class defensive foundation",
+      "notableFact": "Won the Europa League with Atalanta in 2024, becoming one of the few Albanian players to win a major European trophy, capping a remarkable journey with the Bergamo club"
+    },
+    "Ardian Ismajli": {
+      "bio": "A strong, no-nonsense center-back who earned his move to Serie A through consistent performances in Portuguese and Italian football. Ismajli's physicality and aerial dominance have made him a dependable presence in Albania's backline, and his move to Torino cemented his status as one of Albania's most valuable defenders.",
+      "playingStyle": "Physically imposing center-back who excels in aerial duels, aggressive marking, and providing a solid defensive foundation through disciplined positioning and strength",
+      "keyStrengths": ["Aerial dominance and physical presence", "Aggressive man-marking ability", "Consistent performances in Serie A"],
+      "worldCup2026Role": "Starting center-back alongside Djimsiti, forming a Serie A-hardened defensive partnership that gives Albania the solidity needed to compete at the World Cup level",
+      "notableFact": "Developed through Empoli's academy and was instrumental in their Serie A survival campaigns before earning his transfer to Torino, proving himself among Italy's most consistent defenders"
+    },
+    "Marash Kumbulla": {
+      "bio": "Born in Italy to Albanian parents, Kumbulla burst onto the scene as one of Serie A's most exciting young defenders at Hellas Verona before earning a move to Roma. Though injuries have slowed his trajectory, his talent remains undeniable, and his move to La Liga with Mallorca has revitalized his career.",
+      "playingStyle": "Technically gifted, ball-playing center-back who combines composure on the ball with solid defensive instincts and the ability to step out and carry the ball from deep positions",
+      "keyStrengths": ["Ball-playing ability and composure in possession", "Tactical intelligence and positioning", "Versatility across defensive systems"],
+      "worldCup2026Role": "Versatile defensive depth option who can slot into multiple systems; his technical quality on the ball gives Albania an alternative approach to building from the back",
+      "notableFact": "Was born and raised in Italy and played through the Italian youth national teams before committing his senior international career to Albania, representing the strong Italian-Albanian football connection"
+    },
+    "Arlind Ajeti": {
+      "bio": "A veteran defender and former Albanian national team captain, Ajeti has been a loyal servant to Albanian football throughout his career. His experience spans multiple European leagues, and his leadership qualities have made him a respected figure in the squad throughout Albania's qualifying campaigns.",
+      "playingStyle": "Experienced, combative center-back who leads by example with aggressive defending, solid aerial ability, and the organizational skills to marshal the backline",
+      "keyStrengths": ["Leadership and experience", "Aerial ability and physical defending", "Organizational skills and communication"],
+      "worldCup2026Role": "Veteran defensive presence providing leadership and squad depth; his years of international experience make him a valuable mentor for the younger defenders in the squad",
+      "notableFact": "Has captained the Albanian national team on numerous occasions and was part of the historic squad that qualified for Euro 2016, Albania's first major tournament"
+    },
+    "Klisman Cake": {
+      "bio": "A young center-back who has been developing his career across Eastern European football. Cake's physicality and defensive awareness have earned him call-ups to the senior national team, and he represents part of Albania's effort to build defensive depth for the future.",
+      "playingStyle": "Strong, physical center-back who relies on his defensive positioning, aerial prowess, and willingness to engage in physical duels to win the ball",
+      "keyStrengths": ["Physical strength and aerial ability", "Defensive positioning and awareness", "Willingness to compete in physical battles"],
+      "worldCup2026Role": "Young defensive depth option gaining exposure at the highest level; his inclusion provides Albania with additional cover in the center-back positions",
+      "notableFact": "Playing in the Russian Premier League has tested him against some of the most physical strikers in European football, helping develop his robust defensive style"
+    },
+    "Elseid Hysaj": {
+      "bio": "Albania's most-capped outfield player and the nation's most decorated defender, Hysaj has spent the majority of his career in Serie A with Napoli and Lazio. His consistency, tactical intelligence, and ability to perform in the biggest matches have made him one of Albania's greatest ever players.",
+      "playingStyle": "Defensively disciplined, tactically intelligent fullback who positions himself excellently, rarely gets beaten one-on-one, and provides reliable width and overlapping runs when his team has possession",
+      "keyStrengths": ["Tactical intelligence and defensive discipline", "Consistency and reliability over a long career", "Versatility to play on either flank"],
+      "worldCup2026Role": "Veteran right-back and squad leader whose near-100 caps and years in Serie A provide Albania with invaluable experience and defensive stability in their World Cup debut",
+      "notableFact": "Has spent over a decade in Serie A with Napoli and Lazio, amassing well over 200 appearances in Italy's top flight, making him one of the most experienced Albanian players in a top-five European league"
+    },
+    "Ivan Balliu": {
+      "bio": "Born in Albania but raised in Spain, Balliu has built a solid career in La Liga with Rayo Vallecano. His understanding of Spanish football's tactical demands and his reliable defending have earned him a role in the Albanian national team as a dependable fullback option.",
+      "playingStyle": "Technically sound right-back with good tactical awareness developed in La Liga, consistent crossing ability, and solid one-on-one defending against tricky wingers",
+      "keyStrengths": ["La Liga tactical intelligence", "Reliable defending and positioning", "Crossing ability from wide positions"],
+      "worldCup2026Role": "Backup right-back who provides experienced cover and tactical versatility; his years in La Liga give Albania a player accustomed to high-level football across different tactical setups",
+      "notableFact": "Despite being born in Albania, he moved to Spain as a youngster and worked his way through the Spanish lower divisions before establishing himself in La Liga with Rayo Vallecano"
+    },
+    "Mario Mitaj": {
+      "bio": "One of Albania's most exciting young talents, Mitaj is a dynamic left-back who has quickly become a key player for the national team. His attacking prowess and ability to drive forward from deep positions have attracted interest from top European clubs and made him one of Albania's most valuable assets.",
+      "playingStyle": "Dynamic, attack-minded left-back with excellent pace, driving runs up the flank, quality crossing, and the energy to contribute at both ends of the pitch throughout the full match",
+      "keyStrengths": ["Pace and driving runs from left-back", "Crossing quality and attacking contribution", "Energy and stamina to cover the entire left flank"],
+      "worldCup2026Role": "Starting left-back and one of Albania's most dangerous attacking outlets; his pace and directness provide width and attacking threat that stretches opposition defenses",
+      "notableFact": "At just 22, he has already established himself as Albania's first-choice left-back and attracted attention from major European clubs with his dynamic attacking displays"
+    },
+    "Kristjan Asllani": {
+      "bio": "The crown jewel of Albanian football, Asllani is a supremely gifted midfielder who learned his craft at Inter Milan under Simone Inzaghi before moving to Besiktas. His elegance on the ball, passing range, and composure have drawn comparisons to some of Italy's finest deep-lying playmakers, and he represents Albania's brightest star.",
+      "playingStyle": "Elegant, technically brilliant deep-lying playmaker with outstanding passing range, exceptional vision, and the composure to control the tempo of matches from the base of midfield",
+      "keyStrengths": ["Exceptional passing range and vision", "Composure and technical quality under pressure", "Ability to control the tempo and rhythm of matches"],
+      "worldCup2026Role": "Starting midfielder and the heartbeat of Albania's team; his ability to dictate play from deep positions is central to Albania's game plan and their hopes of competing with the world's best",
+      "notableFact": "Trained at Inter Milan's academy and was understudy to Marcelo Brozovic, learning the regista role from one of the best before establishing himself as Albania's most valuable player"
+    },
+    "Ylber Ramadani": {
+      "bio": "A hardworking and reliable central midfielder who has been a consistent presence in the Albanian national team. Ramadani's tireless work rate, ball-winning ability, and tactical discipline have made him a crucial part of Albania's midfield setup throughout their qualifying campaigns.",
+      "playingStyle": "Tenacious, box-to-box midfielder who combines relentless pressing and ball-winning with efficient passing and the positional discipline to shield the defense effectively",
+      "keyStrengths": ["Tireless work rate and pressing intensity", "Ball-winning ability and tackling", "Positional discipline and tactical awareness"],
+      "worldCup2026Role": "Starting defensive midfielder who provides the engine room with energy and protection; his tireless running and tackling allow Albania's more creative players to express themselves",
+      "notableFact": "Has been one of Albania's most consistent performers in recent qualifying campaigns, earning recognition for his ability to perform against technically superior opponents through sheer determination"
+    },
+    "Qazim Laci": {
+      "bio": "An experienced midfielder who has plied his trade across several European leagues, Laci brings intelligence, versatility, and a calm presence to Albania's midfield. His ability to read the game and deliver in crucial moments has made him a trusted member of the squad for years.",
+      "playingStyle": "Intelligent, experienced central midfielder with good reading of the game, neat passing in tight spaces, and the tactical awareness to fill gaps and maintain team shape",
+      "keyStrengths": ["Game intelligence and reading of play", "Neat, efficient passing", "Positional versatility in midfield"],
+      "worldCup2026Role": "Experienced midfield rotation option who provides tactical intelligence and reliability; ideal for managing games when Albania need to control tempo and protect a result",
+      "notableFact": "Has represented Albania across multiple qualifying campaigns and major tournaments, becoming one of the most trusted players in the manager's squad rotation"
+    },
+    "Medon Berisha": {
+      "bio": "A rising young midfielder making his mark in Serie A with Lecce, Medon Berisha represents the next wave of Albanian football talent. His combination of physical presence, technical ability, and youthful energy has caught the eye of national team selectors as they build a squad for the future.",
+      "playingStyle": "Dynamic young midfielder with good physical attributes, an eye for a forward pass, and the composure to handle the ball under pressure in competitive Serie A matches",
+      "keyStrengths": ["Physical presence and athleticism", "Forward passing ability", "Composure on the ball in high-pressure situations"],
+      "worldCup2026Role": "Young midfield talent gaining World Cup experience; his energy and ability to play in Serie A demonstrate the quality of Albania's emerging generation of footballers",
+      "notableFact": "At just 22, he has already broken into Serie A with Lecce and earned senior international recognition, part of a wave of talented young Albanian players emerging in Italian football"
+    },
+    "Adrion Pajaziti": {
+      "bio": "A promising young defensive midfielder who has been developing his career in Croatian football with Hajduk Split. Pajaziti's tenacity, tactical awareness, and ability to break up play have earned him early call-ups to the Albanian national team as part of their long-term squad development.",
+      "playingStyle": "Energetic, disciplined defensive midfielder who excels at breaking up opposition attacks, maintaining team structure, and providing a solid platform for the more creative players ahead",
+      "keyStrengths": ["Defensive positioning and interceptions", "Energy and work rate", "Tactical discipline and team structure maintenance"],
+      "worldCup2026Role": "Young defensive midfield option providing depth and energy; his inclusion reflects Albania's commitment to integrating young talent into their World Cup squad",
+      "notableFact": "Has been developing in the competitive Croatian league with Hajduk Split, one of the most storied clubs in Balkan football, gaining valuable experience in a demanding environment"
+    },
+    "Juljan Shehu": {
+      "bio": "A versatile central midfielder who has been carving out a career in Polish football with Widzew Lodz. Shehu's physical presence, box-to-box capability, and willingness to do the unglamorous work have earned him a place in Albania's expanded World Cup squad.",
+      "playingStyle": "Box-to-box midfielder with strong physical attributes, good stamina to cover large areas of the pitch, and the willingness to contribute at both ends of the field",
+      "keyStrengths": ["Physical presence and stamina", "Box-to-box running capability", "Willingness to work defensively and offensively"],
+      "worldCup2026Role": "Midfield depth option who can provide fresh energy and physical presence off the bench; his versatility gives the coaching staff tactical flexibility in squad rotation",
+      "notableFact": "Has been building his career in the Polish Ekstraklasa, gaining experience in a competitive European league that tests both physical and technical capabilities"
+    },
+    "Nedim Bajrami": {
+      "bio": "Albania's creative talisman and the man who wears the iconic number 10 shirt, Bajrami is a gifted attacking midfielder with an eye for the spectacular. His technical quality, vision, and ability to produce moments of magic have made him Albania's most dangerous creative threat and a fan favorite.",
+      "playingStyle": "Creative, left-footed attacking midfielder with superb technical ability, excellent set-piece delivery, and the vision to unlock defenses with incisive through balls and clever movement between the lines",
+      "keyStrengths": ["Creative vision and incisive passing", "Set-piece expertise and dead-ball delivery", "Left-footed technical brilliance"],
+      "worldCup2026Role": "Starting number 10 and Albania's chief creative force; his ability to produce decisive moments of quality is central to Albania's hopes of creating chances against superior opponents",
+      "notableFact": "Scored the fastest goal in European Championship history when he netted after just 23 seconds against Italy at Euro 2024, announcing Albania's presence on the biggest stage"
+    },
+    "Arber Hoxha": {
+      "bio": "A talented winger who has been a standout performer in Croatian football with Dinamo Zagreb. Hoxha's pace, directness, and ability to create from wide positions have made him an important attacking option for the Albanian national team in their quest for World Cup glory.",
+      "playingStyle": "Quick, direct winger who loves to take on defenders, deliver dangerous crosses, and create scoring opportunities through his pace and willingness to run at the opposition",
+      "keyStrengths": ["Pace and directness in one-on-one situations", "Crossing ability and delivery from wide areas", "Work rate and willingness to track back"],
+      "worldCup2026Role": "Wide attacking option providing pace and directness from the left wing; his ability to stretch defenses and create chances from wide positions adds a crucial attacking dimension",
+      "notableFact": "Has been a regular contributor in European competition with Dinamo Zagreb, performing on some of the biggest stages in European club football"
+    },
+    "Myrto Uzuni": {
+      "bio": "A versatile and prolific forward who has scored goals wherever he has played, from Albania to Hungary to MLS. Uzuni's pace, movement, and finishing ability have made him one of Albania's most reliable goal threats, and his experience across multiple leagues adds valuable versatility to the attack.",
+      "playingStyle": "Quick, intelligent forward who excels at finding space in behind defenses, making clever runs off the shoulder of defenders, and finishing with clinical efficiency when chances arrive",
+      "keyStrengths": ["Pace and intelligent movement off the ball", "Clinical finishing ability", "Versatility to play across the front line"],
+      "worldCup2026Role": "Versatile attacking option who can play on the wing or as a striker; his goal-scoring record and adaptability make him a valuable squad member for different tactical approaches",
+      "notableFact": "Became famous for his iconic celebration and was one of the top scorers in Hungarian football with Ferencvaros before his move to MLS, consistently proving his goal-scoring credentials"
+    },
+    "Jasir Asani": {
+      "bio": "A skilful right winger with a deadly left foot, Asani has built a reputation as one of Albania's most creative wide players. His dribbling, crossing, and eye for goal from the right flank have made him a consistent threat in the Albanian attack throughout their World Cup qualifying campaign.",
+      "playingStyle": "Skilful, left-footed right winger who cuts inside to create shooting opportunities, delivers dangerous crosses with his weaker foot, and uses close control to beat defenders in tight spaces",
+      "keyStrengths": ["Left-footed quality cutting in from the right", "Dribbling and close control", "Goal-scoring ability from wide positions"],
+      "worldCup2026Role": "Right wing option providing creativity and goal threat; his ability to cut inside on his left foot and create chances adds an important tactical variant to Albania's attack",
+      "notableFact": "Has scored crucial qualifying goals for Albania and is known for his ability to produce important goals in big matches, making him a reliable performer on the international stage"
+    },
+    "Mirlind Daku": {
+      "bio": "A tall, powerful striker who has emerged as one of Albania's most exciting young forwards. Daku's combination of physical presence, aerial ability, and improving all-round game has made him a key figure in Albania's attack, and his prolific scoring in the Russian Premier League has boosted his reputation significantly.",
+      "playingStyle": "Tall, powerful center forward who excels in aerial duels, holds the ball up effectively to bring others into play, and uses his physicality to bully defenders while possessing a surprisingly deft touch",
+      "keyStrengths": ["Aerial dominance and physical presence", "Hold-up play and link-up ability", "Improving goal-scoring record and finishing"],
+      "worldCup2026Role": "Starting striker whose physical presence gives Albania a focal point in attack; his ability to win aerial duels and hold up the ball allows Albania to build attacks and bring wingers into dangerous positions",
+      "notableFact": "Has become one of the most prolific Albanian strikers in recent years and drew attention at Euro 2024 for his passionate performances, though he also courted controversy with his celebrations"
+    },
+    "Armando Broja": {
+      "bio": "Born in England to Albanian parents, Broja is a powerful, explosive striker who came through Chelsea's academy before establishing himself as one of the most exciting young forwards in English football. His pace, physicality, and finishing ability have made him Albania's most high-profile attacking player and a genuine goal threat at the international level.",
+      "playingStyle": "Explosive, powerful striker with blistering pace, direct running at defenders, strong physical presence, and the ability to score spectacular goals with both power and precision",
+      "keyStrengths": ["Explosive pace and direct running", "Physical strength and hold-up play", "Finishing ability with both feet"],
+      "worldCup2026Role": "Key attacking player whose pace and power terrify defenders; his ability to run channels, hold the ball up, and finish clinically makes him Albania's most dangerous offensive weapon on the counter-attack",
+      "notableFact": "Came through Chelsea's academy alongside some of the best young talent in English football and chose to represent Albania internationally, becoming one of the country's most prized assets"
+    },
+    "Rey Manaj": {
+      "bio": "A well-traveled striker who has experienced football across Italy, Spain, and Turkey. Manaj's intelligence, positioning, and technical ability in the final third have made him one of Albania's most reliable goal scorers, with his decade-plus international career providing invaluable experience to the squad.",
+      "playingStyle": "Intelligent, technically gifted striker with excellent positioning inside the box, good link-up play, and the ability to score different types of goals including headers, volleys, and placed finishes",
+      "keyStrengths": ["Intelligent movement and positioning in the box", "Technical finishing ability", "Link-up play and combination with teammates"],
+      "worldCup2026Role": "Experienced attacking option who can play as a lone striker or alongside a partner; his goal-scoring record for Albania and tactical intelligence make him a valuable rotation option",
+      "notableFact": "Is Albania's joint-top scorer in the current generation and has scored goals across multiple European leagues including Serie A and La Liga, showcasing his adaptability"
+    },
+    "Indrit Tuci": {
+      "bio": "A young striker developing in Turkish football who has shown promise with his physical presence and goal-scoring instincts. Tuci's inclusion in the World Cup squad reflects Albania's depth in the forward positions and their investment in blooding young talent alongside experienced campaigners.",
+      "playingStyle": "Tall, physical striker who uses his height and strength to compete aerially, hold the ball up for teammates, and create space for others through his willingness to make selfless runs",
+      "keyStrengths": ["Physical presence and aerial ability", "Hold-up play and target-man qualities", "Work rate and team-first mentality"],
+      "worldCup2026Role": "Young forward depth option who can provide a physical presence off the bench; his aerial threat makes him a useful option when Albania need to change their attacking approach",
+      "notableFact": "Has been developing his game in the Turkish Super Lig, gaining valuable experience in a competitive league that has produced many talented strikers over the years"
+    },
+    "Naser Aliji": {
+      "bio": "A veteran left-back who has been a loyal servant to Albanian football both domestically and internationally. Aliji's experience, defensive reliability, and understanding of the national team setup make him a valuable squad member who can be called upon when needed.",
+      "playingStyle": "Experienced, defensively solid left-back who prioritizes positional discipline, reliable tackling, and providing consistent cover on the left side of defense",
+      "keyStrengths": ["Defensive reliability and experience", "Positional discipline and awareness", "Understanding of the national team system"],
+      "worldCup2026Role": "Experienced backup left-back providing depth and squad stability; his knowledge of Albanian football's tactical approach makes him a dependable option if called upon",
+      "notableFact": "Has been a consistent presence in Albanian domestic football and the national team setup, contributing to the nation's rise from minnows to World Cup qualifiers over the past decade"
+    }
+  }
+}

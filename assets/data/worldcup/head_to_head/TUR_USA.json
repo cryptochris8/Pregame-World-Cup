@@ -1,0 +1,49 @@
+{
+  "id": "TUR_USA",
+  "team1Code": "TUR",
+  "team2Code": "USA",
+  "totalMatches": 5,
+  "team1Wins": 2,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 7,
+  "team2Goals": 6,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2025-06-07",
+  "firstMeeting": "1991-06-02",
+  "notableMatches": [
+    {
+      "year": 2025,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "TUR",
+      "location": "USA",
+      "description": "Turkey edge USA in pre-World Cup friendly as both prepare for 2026"
+    },
+    {
+      "year": 2003,
+      "tournament": "FIFA Confederations Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "TUR",
+      "location": "France",
+      "description": "Turkey come from behind to beat USA in Confederations Cup"
+    },
+    {
+      "year": 2010,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "USA",
+      "location": "Philadelphia, USA",
+      "description": "USA defeat Turkey in home friendly"
+    }
+  ]
+}

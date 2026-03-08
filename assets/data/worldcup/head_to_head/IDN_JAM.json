@@ -1,0 +1,29 @@
+{
+  "id": "IDN_JAM",
+  "team1Code": "IDN",
+  "team2Code": "JAM",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 2,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2007-06-21",
+  "firstMeeting": "2007-06-21",
+  "notableMatches": [
+    {
+      "year": 2007,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "IDN",
+      "location": "Jakarta, Indonesia",
+      "description": "Indonesia beat Jamaica in their only meeting to date"
+    }
+  ]
+}

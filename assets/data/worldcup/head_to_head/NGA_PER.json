@@ -1,0 +1,39 @@
+{
+  "id": "NGA_PER",
+  "team1Code": "NGA",
+  "team2Code": "PER",
+  "totalMatches": 3,
+  "team1Wins": 1,
+  "team2Wins": 2,
+  "draws": 0,
+  "team1Goals": 3,
+  "team2Goals": 4,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2018-06-26",
+  "firstMeeting": "2003-05-28",
+  "notableMatches": [
+    {
+      "year": 2012,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "PER",
+      "location": "Lima, Peru",
+      "description": "Paolo Guerrero goal gives Peru narrow win over Nigeria"
+    },
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "NGA",
+      "location": "London, England",
+      "description": "Nigeria edge Peru in pre-World Cup friendly at Wembley"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "IRN_NZL",
+  "team1Code": "IRN",
+  "team2Code": "NZL",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 3,
+  "team2Goals": 0,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2009-11-14",
+  "firstMeeting": "2006-05-25",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Christchurch, New Zealand",
+      "description": "First meeting between Iran and New Zealand ends goalless"
+    },
+    {
+      "year": 2009,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "IRN",
+      "location": "Tehran, Iran",
+      "description": "Iran dominates in comfortable home victory"
+    }
+  ]
+}

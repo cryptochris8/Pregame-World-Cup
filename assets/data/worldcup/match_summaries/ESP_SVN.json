@@ -1,0 +1,55 @@
+{
+  "team1Code": "ESP",
+  "team2Code": "SVN",
+  "team1Name": "Spain",
+  "team2Name": "Slovenia",
+  "historicalAnalysis": "Spain and Slovenia have met in European Championship and World Cup qualifying campaigns, with Spain dominating most encounters. Their most notable competitive meetings came during Euro 2004 qualifying and subsequent campaigns, where Spain's superior quality typically prevailed.\n\nAt Euro 2024, Slovenia emerged as a surprise package, qualifying for the knockout rounds for the first time in their history. Led by the brilliant Jan Oblak in goal and the creative Benjamin Sesko up front, Slovenia showed they could compete with Europe's best. Their Round of 16 exit to Portugal, decided on penalties after a 0-0 draw, proved their defensive resilience against elite opponents.\n\nSpain arrive at the 2026 World Cup as Euro 2024 champions, having dominated the tournament with their young, exciting squad. Lamine Yamal's emergence as a global superstar and the depth of Spain's midfield make them genuine World Cup contenders. This Group H opener sees the reigning European champions against one of Euro 2024's surprise packages.",
+  "keyStorylines": [
+    "Euro 2024 champions Spain opening their World Cup campaign",
+    "Slovenia seeking to build on their breakthrough Euro 2024 performance",
+    "Lamine Yamal leading Spain's new generation on the World Cup stage",
+    "Jan Oblak vs Spain's attack: world-class goalkeeper vs world-class offense"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "position": "Winger",
+      "reason": "The teenage sensation who lit up Euro 2024 and is now a global superstar"
+    },
+    {
+      "name": "Jan Oblak",
+      "teamCode": "SVN",
+      "position": "Goalkeeper",
+      "reason": "One of the world's best goalkeepers who kept Slovenia in games at Euro 2024"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "position": "Midfielder",
+      "reason": "Barcelona's midfield maestro who controls Spain's tempo and rhythm"
+    },
+    {
+      "name": "Benjamin Sesko",
+      "teamCode": "SVN",
+      "position": "Forward",
+      "reason": "RB Leipzig's powerful young striker who is Slovenia's main attacking outlet"
+    }
+  ],
+  "tacticalPreview": "Spain's 4-3-3 is the gold standard of modern football. Their possession-based system, refined over decades, now combines with explosive pace through Yamal and Nico Williams on the wings. Pedri and Gavi provide midfield control, while the defensive structure has improved significantly under Luis de la Fuente.\n\nSlovenia will likely set up in a compact 4-4-2 or 4-4-1-1, looking to deny Spain space and hit them on the break through Sesko's pace and power. Oblak's presence in goal gives Slovenia a fighting chance against any opponent. Their Euro 2024 approach of disciplined defense and clinical counter-attacks could be effective if they can withstand Spain's possession onslaught.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "2-0",
+    "confidence": 80,
+    "reasoning": "Spain's Euro 2024-winning quality and attacking depth should be too much for Slovenia, despite Oblak's brilliance. Spain's ability to control possession and create chances will eventually wear down Slovenia's resistance.",
+    "alternativeScenario": "Slovenia's Euro 2024 showed they can frustrate elite teams. If Oblak produces a masterclass and Sesko scores on the counter, a 1-1 draw or even a shock 1-0 Slovenian victory is within reach."
+  },
+  "pastEncountersSummary": "Spain have won most of their meetings with Slovenia across European qualifying campaigns. However, Slovenia's recent improvement, highlighted by their Euro 2024 performance, suggests this will be more competitive than previous encounters.",
+  "funFacts": [
+    "Spain won Euro 2024 with Lamine Yamal becoming the youngest goalscorer in European Championship history",
+    "Jan Oblak has the best save percentage among active goalkeepers in the Champions League",
+    "Slovenia have never beaten Spain in a competitive match",
+    "Benjamin Sesko turned down moves to top clubs to develop at RB Leipzig"
+  ],
+  "isFirstMeeting": false
+}

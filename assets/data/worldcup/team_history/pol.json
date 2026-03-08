@@ -1,0 +1,45 @@
+{
+  "fifaCode": "POL",
+  "teamName": "Poland",
+  "worldCupHistory": {
+    "totalAppearances": 9,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 1974,
+    "appearances": [
+      { "year": 1938, "result": "First Round", "stage": "Round of 16" },
+      { "year": 1974, "result": "Third Place", "stage": "Third Place Match" },
+      { "year": 1978, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1982, "result": "Third Place", "stage": "Third Place Match" },
+      { "year": 1986, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 34,
+      "won": 15,
+      "drawn": 5,
+      "lost": 14,
+      "goalsFor": 46,
+      "goalsAgainst": 45
+    },
+    "topScorers": [
+      { "name": "Grzegorz Lato", "goals": 10, "tournaments": "1974, 1978, 1982" },
+      { "name": "Andrzej Szarmach", "goals": 7, "tournaments": "1974, 1978, 1982" },
+      { "name": "Robert Lewandowski", "goals": 2, "tournaments": "2018, 2022" },
+      { "name": "Zbigniew Boniek", "goals": 4, "tournaments": "1978, 1982, 1986" },
+      { "name": "Ernest Wilimowski", "goals": 4, "tournaments": "1938" }
+    ],
+    "notableMoments": [
+      "Third place at the 1974 World Cup in West Germany, led by Golden Boot winner Grzegorz Lato",
+      "Third place again at the 1982 World Cup in Spain behind Italy and West Germany",
+      "Grzegorz Lato won the Golden Boot in 1974 with 7 goals",
+      "Ernest Wilimowski scored 4 goals in a single match against Brazil in 1938 (5-6 loss)",
+      "Golden generation of the 1970s-80s with Lato, Deyna, Boniek, and Szarmach",
+      "Robert Lewandowski led Poland to the Round of 16 at the 2022 World Cup in Qatar"
+    ]
+  }
+}

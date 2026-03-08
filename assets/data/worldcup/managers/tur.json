@@ -1,0 +1,21 @@
+{
+  "id": "manager_tur",
+  "firstName": "Vincenzo",
+  "lastName": "Montella",
+  "commonName": "Vincenzo Montella",
+  "dateOfBirth": "1974-06-18",
+  "nationality": "Italy",
+  "currentTeam": "Turkey",
+  "currentTeamCode": "TUR",
+  "photoUrl": "assets/managers/montella.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Attacking",
+  "yearsExperience": 13,
+  "previousTeams": ["Catania", "Fiorentina", "AC Milan", "Sevilla", "Fiorentina (2nd stint)", "Adana Demirspor"],
+  "trophies": ["Supercoppa Italiana 2016 (AC Milan)"],
+  "careerWins": 145,
+  "careerDraws": 85,
+  "careerLosses": 110,
+  "careerWinPercentage": 43,
+  "bio": "Known as 'L'Aeroplanino' during his prolific playing career at Roma and Sampdoria, Montella transitioned into management with stints across Italy and Spain. Appointed Turkey coach in 2023, he led the team to the Euro 2024 quarter-finals and secured World Cup 2026 qualification."
+}

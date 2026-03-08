@@ -1,0 +1,39 @@
+{
+  "id": "ARG_SRB",
+  "team1Code": "ARG",
+  "team2Code": "SRB",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 6,
+  "team2Goals": 1,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2014-11-18",
+  "firstMeeting": "2006-06-16",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 6,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Gelsenkirchen, Germany",
+      "description": "Maxi Rodriguez brace, Cambiasso wonder-goal after 24 passes, Crespo, Tevez, and Messi's first World Cup goal in stunning demolition"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "SRB",
+      "location": "Belgrade, Serbia",
+      "description": "Serbia records upset victory against Argentina in friendly"
+    }
+  ]
+}

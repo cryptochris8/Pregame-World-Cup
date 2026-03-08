@@ -1,0 +1,49 @@
+{
+  "id": "ARG_POL",
+  "team1Code": "ARG",
+  "team2Code": "POL",
+  "totalMatches": 11,
+  "team1Wins": 6,
+  "team2Wins": 3,
+  "draws": 2,
+  "team1Goals": 18,
+  "team2Goals": 12,
+  "worldCupMatches": 3,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-11-30",
+  "firstMeeting": "1966-01-05",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Doha, Qatar",
+      "description": "Mac Allister and Alvarez score as Argentina tops Group C; Szczesny saves Messi penalty"
+    },
+    {
+      "year": 1978,
+      "tournament": "FIFA World Cup",
+      "stage": "Second Round",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "ARG",
+      "location": "Rosario, Argentina",
+      "description": "Host nation Argentina defeats Poland on path to first World Cup title with Kempes starring"
+    },
+    {
+      "year": 1974,
+      "tournament": "FIFA World Cup",
+      "stage": "Second Round",
+      "team1Score": 2,
+      "team2Score": 3,
+      "winnerCode": "POL",
+      "location": "Stuttgart, West Germany",
+      "description": "Lato brace and Szarmach goal give Poland famous 3-2 win over Argentina"
+    }
+  ]
+}

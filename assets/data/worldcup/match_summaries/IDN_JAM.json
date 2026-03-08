@@ -1,0 +1,55 @@
+{
+  "team1Code": "IDN",
+  "team2Code": "JAM",
+  "team1Name": "Indonesia",
+  "team2Name": "Jamaica",
+  "historicalAnalysis": "Indonesia and Jamaica have never met in international football, making this Group F encounter a truly unique and historic first meeting. Both nations are World Cup newcomers or near-newcomers, and this match represents perhaps the most unexpected fixture of the 2026 tournament.\n\nIndonesia's qualification for the 2026 World Cup is one of the greatest stories in Asian football history. The world's fourth most populous nation, with over 275 million people and a football-mad culture, has finally realized a decades-long dream of reaching the World Cup. Their qualifying campaign captured the imagination of a nation and the wider football world.\n\nJamaica's football history is highlighted by their iconic 1998 World Cup appearance, immortalized in the film 'Cool Runnings' of football. The Reggae Boyz, powered by a squad that included several English Premier League players, qualified in thrilling fashion. Their 2026 qualification would represent another watershed moment for Caribbean football.",
+  "keyStorylines": [
+    "Two World Cup underdogs facing off in a match they must win",
+    "Indonesia's historic first World Cup against Jamaica's second appearance",
+    "The most populous nation at the World Cup vs a Caribbean island nation",
+    "A potential match to decide who finishes third or fourth in Group F"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Pratama Arhan",
+      "teamCode": "IDN",
+      "position": "Defender",
+      "reason": "Indonesia's dynamic left-back who brings energy and attacking threat"
+    },
+    {
+      "name": "Michail Antonio",
+      "teamCode": "JAM",
+      "position": "Forward",
+      "reason": "West Ham striker bringing Premier League experience and physicality"
+    },
+    {
+      "name": "Egy Maulana Vikri",
+      "teamCode": "IDN",
+      "position": "Midfielder",
+      "reason": "Indonesia's most technically gifted player and creative spark"
+    },
+    {
+      "name": "Leon Bailey",
+      "teamCode": "JAM",
+      "position": "Winger",
+      "reason": "Aston Villa's explosive winger whose pace can terrorize any defense"
+    }
+  ],
+  "tacticalPreview": "Indonesia will likely play an organized 4-3-3 or 4-2-3-1, relying on team cohesion and work ethic to compensate for individual quality gaps against other Group F teams. Their pressing and defensive discipline are essential, while their attacking play will look to exploit transitions.\n\nJamaica's strength lies in their athletic, physical approach, with players like Antonio and Bailey providing Premier League quality. Their 4-4-2 or 4-3-3 uses pace on the wings and directness in attack. Jamaica's advantage is having several players at top European clubs, giving them experience at a higher level. This match is likely to be decided by which team handles the World Cup occasion better.",
+  "prediction": {
+    "predictedOutcome": "JAM",
+    "predictedScore": "2-1",
+    "confidence": 55,
+    "reasoning": "Jamaica's individual quality, particularly through their European-based players, gives them a slight edge. However, Indonesia's passionate fan support and the emotional weight of their first World Cup could lift them to compete fiercely.",
+    "alternativeScenario": "Indonesia's collective spirit and the weight of 275 million fans behind them could produce a stunning 1-0 victory. This match has the potential to be one of the tournament's most emotionally charged encounters."
+  },
+  "pastEncountersSummary": "Indonesia and Jamaica have never played each other in any competition. This historic first meeting at the 2026 World Cup adds an extra layer of significance to what is already a momentous occasion for both nations.",
+  "funFacts": [
+    "Indonesia has a population of over 275 million, making them the most populous nation at the World Cup",
+    "Jamaica's 1998 World Cup squad included several English Premier League players",
+    "Indonesia's football fan culture is among the most passionate in the world",
+    "Jamaica's 'Reggae Boyz' became cultural icons after their 1998 World Cup qualification"
+  ],
+  "isFirstMeeting": true
+}

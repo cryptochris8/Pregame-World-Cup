@@ -1,0 +1,55 @@
+{
+  "team1Code": "AUS",
+  "team2Code": "TUR",
+  "team1Name": "Australia",
+  "team2Name": "Turkey",
+  "historicalAnalysis": "Australia and Turkey share a profound historical connection that extends far beyond football. The Battle of Gallipoli in 1915 forged a bond between these two nations that is commemorated annually on ANZAC Day. When they meet on the football pitch, there is always an undercurrent of mutual respect rooted in shared history.\n\nOn the football field, their meetings have been limited but meaningful. Australia and Turkey have played friendly matches that were competitive affairs, with both nations showing growing football ambitions. Turkey's quarter-final run at the 2002 World Cup and their semi-final appearance at Euro 2008 showcase their potential, while Australia's consistent World Cup qualification since 2006 demonstrates their rise as an Asian football power.\n\nThis Group D encounter brings together two teams with different footballing identities but similar ambitions. Turkey's return to the World Cup after missing the 2022 tournament represents a redemption story, while Australia look to build on their strong showing at the 2022 World Cup where they reached the Round of 16.",
+  "keyStorylines": [
+    "The Gallipoli connection adds historical significance beyond football",
+    "Turkey's return to the World Cup after missing 2022",
+    "Australia seeking to replicate their 2022 Round of 16 run",
+    "Group D opener with both teams needing a result before facing the USA"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Hakan Calhanoglu",
+      "teamCode": "TUR",
+      "position": "Midfielder",
+      "reason": "Inter Milan's midfield metronome whose set-piece delivery is world-class"
+    },
+    {
+      "name": "Mathew Leckie",
+      "teamCode": "AUS",
+      "position": "Forward",
+      "reason": "Experienced Socceroo whose goal against Denmark at the 2022 World Cup was iconic"
+    },
+    {
+      "name": "Arda Guler",
+      "teamCode": "TUR",
+      "position": "Midfielder",
+      "reason": "Real Madrid's Turkish prodigy who electrified Euro 2024 as a teenager"
+    },
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "position": "Midfielder",
+      "reason": "Australia's midfield engine who provides leadership and tireless running"
+    }
+  ],
+  "tacticalPreview": "Turkey under their coach will likely deploy a dynamic 4-2-3-1, with Arda Guler given freedom to create behind the striker. Calhanoglu provides the defensive shield and distribution, while Turkish full-backs push high to provide width. Their Euro 2024 campaign showed they can play attractive, attacking football.\n\nAustralia will counter with their characteristic high-energy 4-3-3, built on pressing and physicality. The Socceroos' strength lies in their collective work rate and ability to disrupt more technically gifted opponents. The key matchup will be Australia's pressing against Turkey's technical superiority in midfield. If Australia can force turnovers in dangerous areas, they can trouble Turkey.",
+  "prediction": {
+    "predictedOutcome": "TUR",
+    "predictedScore": "2-1",
+    "confidence": 58,
+    "reasoning": "Turkey's individual quality, particularly through Arda Guler and Calhanoglu, gives them a slight edge. However, Australia's 2022 World Cup experience and never-say-die attitude make this a genuine toss-up.",
+    "alternativeScenario": "Australia's pressing intensity could overwhelm Turkey early, leading to a surprise lead. If the Socceroos take the lead, their defensive organization could see them through to a 1-0 or 2-1 victory."
+  },
+  "pastEncountersSummary": "Limited competitive history between these two nations, but their encounters have always carried an extra layer of meaning due to the Gallipoli connection. Both teams will approach this with mutual respect but fierce determination.",
+  "funFacts": [
+    "Australia and Turkey commemorate the Battle of Gallipoli jointly each year on ANZAC Day",
+    "Turkey finished third at the 2002 World Cup, their best-ever result",
+    "Australia have qualified for the last five World Cups since 2006",
+    "Arda Guler became Real Madrid's youngest-ever goalscorer in La Liga"
+  ],
+  "isFirstMeeting": false
+}

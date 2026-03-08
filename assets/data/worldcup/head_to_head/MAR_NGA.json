@@ -1,0 +1,59 @@
+{
+  "id": "MAR_NGA",
+  "team1Code": "MAR",
+  "team2Code": "NGA",
+  "totalMatches": 12,
+  "team1Wins": 6,
+  "team2Wins": 3,
+  "draws": 3,
+  "team1Goals": 14,
+  "team2Goals": 10,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2026-01-14",
+  "firstMeeting": "1976-03-06",
+  "notableMatches": [
+    {
+      "year": 2026,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Semi-Final",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": "MAR",
+      "location": "Rabat, Morocco",
+      "description": "Morocco beat Nigeria 4-2 on penalties after goalless draw to reach AFCON 2025 final"
+    },
+    {
+      "year": 2004,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "MAR",
+      "location": "Tunisia",
+      "description": "Youssef Hadji goal earns Morocco narrow AFCON group win"
+    },
+    {
+      "year": 2000,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "NGA",
+      "location": "Nigeria/Ghana",
+      "description": "Finidi George and Aghahowa goals see Nigeria eliminate Morocco from AFCON"
+    },
+    {
+      "year": 1976,
+      "tournament": "Africa Cup of Nations",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "MAR",
+      "location": "Ethiopia",
+      "description": "Morocco dominate first ever meeting between the two African rivals"
+    }
+  ]
+}

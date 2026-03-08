@@ -1,0 +1,55 @@
+{
+  "team1Code": "ALB",
+  "team2Code": "UZB",
+  "team1Name": "Albania",
+  "team2Name": "Uzbekistan",
+  "historicalAnalysis": "Albania and Uzbekistan have never faced each other in any competition, making this Group K encounter a truly historic first meeting. Both nations represent remarkable qualification stories for the 2026 World Cup, arriving at the tournament as underdogs with passionate fan bases and points to prove.\n\nAlbania's football journey has been one of steady progress. After their breakthrough at Euro 2016, they continued to develop as a competitive European side, with a growing contingent of players in top European leagues. Their qualification for the 2026 World Cup confirms they are no longer mere participants but genuine competitors.\n\nUzbekistan's qualification is equally significant for Asian football. The Central Asian nation has long been a strong force in AFC competitions but had never broken through to the World Cup. Their 2026 qualification represents the culmination of decades of investment in football development. This match could be a group-defining encounter, as both teams will see it as their best opportunity to pick up points in a group also containing Colombia and Portugal.",
+  "keyStorylines": [
+    "Two World Cup debutants/newcomers battling for a potential knockout round spot",
+    "The must-win match for both teams' advancement hopes",
+    "First-ever meeting between Albania and Uzbekistan",
+    "European vs Asian qualifying paths converging on the World Cup stage"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Armando Broja",
+      "teamCode": "ALB",
+      "position": "Forward",
+      "reason": "Albania's star striker whose goals could be the difference in a tight contest"
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "teamCode": "UZB",
+      "position": "Forward",
+      "reason": "Serie A-experienced striker who leads Uzbekistan's attack"
+    },
+    {
+      "name": "Berat Djimsiti",
+      "teamCode": "ALB",
+      "position": "Defender",
+      "reason": "Experienced Serie A defender who anchors Albania's backline"
+    },
+    {
+      "name": "Jaloliddin Masharipov",
+      "teamCode": "UZB",
+      "position": "Midfielder",
+      "reason": "Creative playmaker whose skill on the ball can unlock defenses"
+    }
+  ],
+  "tacticalPreview": "This promises to be a tense, closely-fought contest between two evenly-matched sides. Albania's European-honed defensive discipline will face Uzbekistan's quick, technical attacking play. Albania will likely set up in a structured 4-4-2, relying on defensive solidity and set-pieces.\n\nUzbekistan play an energetic pressing style with quick transitions from defense to attack. Their Central Asian qualifying campaign showed they can be ruthless in front of goal against opponents they are expected to beat. The key tactical battle will be in midfield, where control of tempo could determine the outcome. Both teams will be acutely aware that this could be the match that decides their World Cup fate.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 42,
+    "reasoning": "With both sides evenly matched and under enormous pressure to get a result, a draw seems the most likely outcome. Neither team can afford to lose, which may lead to a cautious approach from both sides.",
+    "alternativeScenario": "The team that scores first could win this 1-0 or 2-1, as the other side will be forced to open up. Albania's European pedigree gives them a slight edge, but Uzbekistan's attacking quality should not be underestimated."
+  },
+  "pastEncountersSummary": "This will be the first-ever meeting between Albania and Uzbekistan. Neither nation has any historical reference point for this matchup, adding unpredictability to an already fascinating Group K encounter.",
+  "funFacts": [
+    "Uzbekistan have been Asian Cup semi-finalists multiple times but never reached a World Cup until 2026",
+    "Albania's population (2.8 million) and Uzbekistan's population (36 million) show the vast demographic difference",
+    "Both teams will be making their World Cup debut or near-debut at the 2026 tournament",
+    "This match will likely be played in front of one of the most diverse crowds at the tournament"
+  ],
+  "isFirstMeeting": true
+}

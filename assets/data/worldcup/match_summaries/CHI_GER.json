@@ -1,0 +1,55 @@
+{
+  "team1Code": "CHI",
+  "team2Code": "GER",
+  "team1Name": "Chile",
+  "team2Name": "Germany",
+  "historicalAnalysis": "Chile and Germany have produced memorable encounters across World Cups and major tournaments. Their most significant meeting came at the 2017 Confederations Cup final in Russia, where Germany fielded a young, experimental squad and won 1-0. That match was the culmination of Chile's golden generation, which had won back-to-back Copa Americas in 2015 and 2016.\n\nAt the 1962 World Cup in Chile, the host nation and West Germany met in the group stage, with Chile securing a famous 2-0 victory on home soil. That tournament saw Chile reach the semi-finals, their best-ever World Cup result. The 1974 World Cup also featured a meeting between these sides, with West Germany winning 1-0.\n\nChile's qualification for the 2026 World Cup represents a renaissance after missing the 2022 tournament. Germany, four-time World Cup champions, are looking to bounce back from disappointing early exits at the 2018 and 2022 World Cups. This Group E opener carries enormous weight for both teams.",
+  "keyStorylines": [
+    "Germany seeking redemption after consecutive World Cup group-stage exits",
+    "Chile's return to the World Cup after missing the 2022 tournament",
+    "Rematch of the 2017 Confederations Cup final",
+    "Four-time champions vs South American dark horses in Group E"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayern Munich's prodigy whose silky dribbling and vision have made him Germany's key player"
+    },
+    {
+      "name": "Alexis Sanchez",
+      "teamCode": "CHI",
+      "position": "Forward",
+      "reason": "Chile's all-time leading scorer bringing experience and big-game pedigree"
+    },
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayer Leverkusen's creative genius who forms a devastating partnership with Musiala"
+    },
+    {
+      "name": "Ben Brereton Diaz",
+      "teamCode": "CHI",
+      "position": "Forward",
+      "reason": "Dual-national striker who has become a fan favorite and key goal threat for Chile"
+    }
+  ],
+  "tacticalPreview": "Germany's 4-2-3-1 under their coach features the explosive Musiala-Wirtz partnership behind a central striker. This creative axis is among the best in world football, capable of dismantling any defense. Germany's pressing has improved significantly, and their full-backs provide constant width.\n\nChile's high-pressing 4-3-3, inspired by Marcelo Bielsa's legacy, demands enormous fitness and intensity. La Roja press aggressively from the front, looking to win the ball high and create chances quickly. The key question is whether Chile's aging squad can sustain this energy for 90 minutes against Germany's technical quality. If Chile can press effectively, they can trouble Germany; if their press breaks down, Germany have the quality to punish them.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "2-1",
+    "confidence": 68,
+    "reasoning": "Germany's superior individual quality, particularly through Musiala and Wirtz, gives them the edge. However, Chile's pressing intensity and big-game experience mean they will compete fiercely and likely score.",
+    "alternativeScenario": "Chile's pressing could overwhelm Germany early, as happened to the Germans against Japan at the 2022 World Cup. An early Chilean goal could create panic, leading to a shock 2-1 Chile victory."
+  },
+  "pastEncountersSummary": "Their history includes Chile's famous 2-0 win at the 1962 World Cup, Germany's 1-0 victory in the 2017 Confederations Cup final, and various competitive and friendly encounters. The rivalry has produced closely-fought matches with both sides trading victories.",
+  "funFacts": [
+    "Chile won back-to-back Copa Americas in 2015 and 2016, their only major trophies",
+    "Germany have been eliminated in the World Cup group stage in both 2018 and 2022",
+    "Chile hosted the 1962 World Cup and finished third, their best-ever result",
+    "Jamal Musiala chose Germany over England for his international career"
+  ],
+  "isFirstMeeting": false
+}

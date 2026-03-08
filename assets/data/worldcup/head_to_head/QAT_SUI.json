@@ -1,0 +1,29 @@
+{
+  "id": "QAT_SUI",
+  "team1Code": "QAT",
+  "team2Code": "SUI",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 1,
+  "team2Goals": 0,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2018-11-14",
+  "firstMeeting": "2018-11-14",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "QAT",
+      "location": "Lugano, Switzerland",
+      "description": "Qatar edge Switzerland in their sole meeting to date"
+    }
+  ]
+}

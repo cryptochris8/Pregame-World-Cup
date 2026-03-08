@@ -1,0 +1,49 @@
+{
+  "id": "ALB_POR",
+  "team1Code": "ALB",
+  "team2Code": "POR",
+  "totalMatches": 5,
+  "team1Wins": 1,
+  "team2Wins": 3,
+  "draws": 1,
+  "team1Goals": 3,
+  "team2Goals": 8,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-09-07",
+  "firstMeeting": "2014-09-07",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "Euro 2016 Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ALB",
+      "location": "Aveiro, Portugal",
+      "description": "Albania stuns Portugal with shock away victory in Euro 2016 qualifying"
+    },
+    {
+      "year": 2015,
+      "tournament": "Euro 2016 Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "POR",
+      "location": "Elbasan, Albania",
+      "description": "Miguel Veloso stoppage-time winner denies Albania a deserved point"
+    },
+    {
+      "year": 2016,
+      "tournament": "UEFA Euro",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "POR",
+      "location": "Lyon, France",
+      "description": "Portugal edges Albania in Euro 2016 group stage match"
+    }
+  ]
+}

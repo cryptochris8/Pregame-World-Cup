@@ -1,0 +1,55 @@
+{
+  "team1Code": "CAN",
+  "team2Code": "ITA",
+  "team1Name": "Canada",
+  "team2Name": "Italy",
+  "historicalAnalysis": "Canada and Italy share a unique connection through the massive Italian diaspora in Canada. Cities like Toronto, Montreal, and Vancouver have large Italian-Canadian communities, meaning this match will divide loyalties among the host nation's fans in a way few other fixtures could.\n\nCanada's football journey has accelerated dramatically. After qualifying for their first World Cup in 1986 (where they lost all three matches without scoring), Canada returned to the World Cup in 2022 in Qatar. Though they were eliminated in the group stage, their performances showed real quality, including a spirited display against Belgium. As co-hosts of the 2026 tournament, Canada carry the expectations of a nation.\n\nItaly, four-time World Cup champions, bring a pedigree unmatched by most nations. Despite the shock of failing to qualify for the 2018 and 2022 World Cups, the Azzurri won Euro 2020, proving their ability to peak at tournaments. Their qualification for 2026 marks a return to the stage they have graced so memorably throughout history.",
+  "keyStorylines": [
+    "Italian diaspora in Canada creates a unique atmosphere and divided loyalties",
+    "Canada hosting their first World Cup match as co-hosts at BMO Field in Toronto",
+    "Italy returning to the World Cup after missing 2018 and 2022",
+    "Co-hosts vs four-time champions in a Group B blockbuster opener"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "position": "Defender/Winger",
+      "reason": "Bayern Munich's blistering pace and attacking runs make him Canada's most dangerous player"
+    },
+    {
+      "name": "Federico Chiesa",
+      "teamCode": "ITA",
+      "position": "Forward",
+      "reason": "Euro 2020 hero who can produce moments of magic when it matters most"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "position": "Forward",
+      "reason": "Prolific striker whose goals in Ligue 1 have attracted top European clubs"
+    },
+    {
+      "name": "Nicolo Barella",
+      "teamCode": "ITA",
+      "position": "Midfielder",
+      "reason": "Inter Milan's midfield dynamo who drives Italy's play with energy and quality"
+    }
+  ],
+  "tacticalPreview": "Canada under their coach will look to use Alphonso Davies' electric pace as a weapon, either from left-back or pushed further forward. Their 4-3-3 is built on pressing and transitions, with Jonathan David providing the finishing prowess up front. The home crowd at BMO Field will drive their intensity.\n\nItaly's tactical DNA is built on defensive organization and controlled possession. Their 3-5-2 or 4-3-3 provides structural solidity, with Barella and Jorginho managing tempo in midfield. Italy's ability to adapt tactically mid-game is a significant strength. The key battle will be Davies' runs against Italy's disciplined defensive line. If Canada can exploit space behind Italy's wing-backs, they have the pace to punish.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 45,
+    "reasoning": "The atmosphere at BMO Field will give Canada an enormous boost, but Italy's tournament experience and tactical discipline make them hard to beat. A draw seems likely as Italy manage the game and Canada's energy fades in the second half.",
+    "alternativeScenario": "Canada's home crowd advantage and pace could overwhelm Italy for a famous 2-1 victory. Alternatively, Italy's big-game experience could see them steal a 1-0 win through a late goal."
+  },
+  "pastEncountersSummary": "Canada and Italy have rarely met in competitive fixtures. The Italian-Canadian connection adds emotional weight to this encounter that goes beyond the pitch. Canada's improving quality means this will be far more competitive than historical meetings might suggest.",
+  "funFacts": [
+    "Over 1.5 million Canadians have Italian heritage, creating divided loyalties for this match",
+    "Italy failed to qualify for both the 2018 and 2022 World Cups despite winning Euro 2020",
+    "Alphonso Davies became the first Canadian to play in a Champions League final",
+    "BMO Field in Toronto will host this Group B opener in front of a passionate Canadian crowd"
+  ],
+  "isFirstMeeting": false
+}

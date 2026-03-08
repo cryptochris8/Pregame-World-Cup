@@ -1,0 +1,29 @@
+{
+  "id": "FRA_HON",
+  "team1Code": "FRA",
+  "team2Code": "HON",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 3,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2014-06-15",
+  "firstMeeting": "2014-06-15",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "FRA",
+      "location": "Porto Alegre, Brazil",
+      "description": "Benzema scores twice and goal-line technology confirms an own goal in France's comfortable group opener; Honduras reduced to 10 men after Palacios red card"
+    }
+  ]
+}

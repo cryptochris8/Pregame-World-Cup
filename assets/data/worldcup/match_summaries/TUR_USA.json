@@ -1,0 +1,55 @@
+{
+  "team1Code": "TUR",
+  "team2Code": "USA",
+  "team1Name": "Turkey",
+  "team2Name": "United States",
+  "historicalAnalysis": "Turkey and the United States have a football rivalry that traces back to the 1950 World Cup in Brazil, though their most recent connections have been through friendlies and the broader sporting relationship between the two nations. The United States' shocking 1-0 victory over England at the 1950 World Cup remains one of football's greatest upsets, and Turkey finished fourth at that same tournament.\n\nTurkey's football has experienced dramatic highs and lows. Their remarkable third-place finish at the 2002 World Cup, featuring players like Hakan Sukur (who scored the fastest World Cup goal in history, 11 seconds into the third-place match), remains their finest hour. Their Euro 2024 quarter-final run showed the new generation, led by Arda Guler, is capable of similar heroics.\n\nThe United States, as co-hosts of the 2026 World Cup, carry enormous expectations. Their young, talented squad features players at top European clubs, and the home support will be a powerful 12th man. This Group D matchday 3 encounter at SoFi Stadium in Los Angeles could be a group decider with both teams fighting for advancement.",
+  "keyStorylines": [
+    "Co-host USA in a must-win Group D decider",
+    "Turkey's Arda Guler vs USA's Christian Pulisic: battle of the playmakers",
+    "SoFi Stadium's 70,000+ crowd creating a fortress for the USMNT",
+    "Group D conclusion with knockout round advancement at stake"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "position": "Winger",
+      "reason": "AC Milan's star and the face of American soccer on the biggest stage"
+    },
+    {
+      "name": "Arda Guler",
+      "teamCode": "TUR",
+      "position": "Midfielder",
+      "reason": "Real Madrid's teenage sensation whose creativity can decide any match"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "position": "Midfielder",
+      "reason": "Juventus' box-to-box midfielder providing energy and defensive cover"
+    },
+    {
+      "name": "Hakan Calhanoglu",
+      "teamCode": "TUR",
+      "position": "Midfielder",
+      "reason": "Inter Milan's metronome whose passing and set-pieces are world-class"
+    }
+  ],
+  "tacticalPreview": "The United States will play an aggressive 4-3-3, using their home crowd to fuel a high-pressing approach. Pulisic and Reyna provide creativity on the wings, while the midfield trio of McKennie, Musah, and Adams offers the perfect blend of energy and quality. The home advantage at SoFi Stadium will be enormous.\n\nTurkey's 4-2-3-1 gives Arda Guler the freedom to operate between the lines, picking apart defenses with his vision and passing. Calhanoglu provides the tactical intelligence from deep, while Turkish pace on the wings can exploit the spaces left by USA's attacking full-backs. Turkey must manage the hostile atmosphere and avoid being overwhelmed by USA's early intensity.",
+  "prediction": {
+    "predictedOutcome": "USA",
+    "predictedScore": "2-1",
+    "confidence": 60,
+    "reasoning": "The home advantage at SoFi Stadium and the emotional energy of a World Cup host nation give the USA a significant edge. However, Turkey's quality through Guler and Calhanoglu means they will be competitive throughout. This should be a fantastic match.",
+    "alternativeScenario": "Turkey's big-tournament experience and individual quality could silence the crowd with an early goal. A 1-0 Turkey victory or a 2-2 draw that produces drama until the final whistle are both realistic."
+  },
+  "pastEncountersSummary": "The United States and Turkey have met sporadically in friendlies and have limited competitive history. Both nations have produced memorable World Cup moments in their respective journeys, and this Group D encounter adds a new chapter to their football relationship.",
+  "funFacts": [
+    "Turkey's Hakan Sukur scored the fastest World Cup goal ever (11 seconds) in 2002",
+    "SoFi Stadium in Los Angeles cost $5 billion to build, making it the most expensive stadium ever",
+    "The USA hosted the 1994 World Cup, which remains the best-attended World Cup in history",
+    "Arda Guler and Christian Pulisic both play for clubs in European football's elite"
+  ],
+  "isFirstMeeting": false
+}

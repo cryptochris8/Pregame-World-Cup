@@ -1,0 +1,59 @@
+{
+  "id": "BRA_PER",
+  "team1Code": "BRA",
+  "team2Code": "PER",
+  "totalMatches": 48,
+  "team1Wins": 35,
+  "team2Wins": 5,
+  "draws": 8,
+  "team1Goals": 120,
+  "team2Goals": 38,
+  "worldCupMatches": 3,
+  "team1WorldCupWins": 3,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-10-16",
+  "firstMeeting": "1937-01-17",
+  "notableMatches": [
+    {
+      "year": 2024,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 4,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Brasilia, Brazil",
+      "description": "Brazil thrash Peru in emphatic World Cup qualifying win"
+    },
+    {
+      "year": 2019,
+      "tournament": "Copa America",
+      "stage": "Final",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Brazil claim Copa America title on home soil with final victory over Peru"
+    },
+    {
+      "year": 1970,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 4,
+      "team2Score": 2,
+      "winnerCode": "BRA",
+      "location": "Guadalajara, Mexico",
+      "description": "Jairzinho and Tostao star as Brazil overcome brave Peru en route to their 3rd title"
+    },
+    {
+      "year": 2021,
+      "tournament": "Copa America",
+      "stage": "Semi-Final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Paqueta goal sends Brazil to another Copa America final"
+    }
+  ]
+}

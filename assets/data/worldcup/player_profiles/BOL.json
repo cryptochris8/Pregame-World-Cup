@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Carlos Lampe": {
+      "bio": "A veteran goalkeeper and one of the most experienced players in Bolivian football history, Lampe has been the last line of defense for La Verde for over a decade. His heroic performances in the altitude of La Paz and in crucial qualifying matches have made him a beloved figure in Bolivian football.",
+      "playingStyle": "Experienced, shot-stopping goalkeeper with excellent reflexes, strong aerial command, and the ability to make match-saving interventions that have kept Bolivia in countless qualifying matches",
+      "keyStrengths": ["Match-saving reflexes and shot-stopping", "Aerial command and cross-claiming", "Experience and composure in high-altitude matches"],
+      "worldCup2026Role": "Veteran first-choice goalkeeper whose experience and shot-stopping ability are crucial to Bolivia's defensive stability; his knowledge of altitude football in La Paz gives Bolivia a unique home advantage",
+      "notableFact": "Has been one of Bolivia's most important players in their World Cup qualification campaign, making several penalty saves and crucial stops in altitude matches in La Paz"
+    },
+    "Guillermo Viscarra": {
+      "bio": "A reliable goalkeeper who has been a consistent performer in South American club football, Viscarra provides Bolivia with an experienced backup option. His time at Alianza Lima in Peru has exposed him to competitive continental football and broadened his experience beyond the Bolivian league.",
+      "playingStyle": "Steady, reliable goalkeeper with good positioning, solid handling, and the composure to perform under pressure in both domestic and continental competitions",
+      "keyStrengths": ["Reliable positioning and handling", "Composure under pressure", "Experience in South American continental competition"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced depth; his club experience in both Bolivia and Peru means he is well-prepared to step in if called upon at the World Cup",
+      "notableFact": "Has gained valuable continental experience playing for Alianza Lima in Peru, competing in Copa Libertadores and Copa Sudamericana matches across South America"
+    },
+    "Bruno Poveda": {
+      "bio": "A young goalkeeper who represents the future of Bolivian goalkeeping. At just 22, Poveda has already shown enough promise in the Bolivian league to earn a place in the World Cup squad, reflecting the federation's commitment to developing young talent alongside veterans.",
+      "playingStyle": "Young, athletic goalkeeper with quick reactions, good shot-stopping instincts, and the potential to develop into Bolivia's long-term number one between the posts",
+      "keyStrengths": ["Athletic ability and quick reactions", "Shot-stopping potential", "Youth and hunger to develop"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience; his inclusion demonstrates Bolivia's faith in the next generation of players who will carry the nation's football future",
+      "notableFact": "One of the youngest players in Bolivia's World Cup squad, his selection highlights the country's investment in developing homegrown talent through the domestic league system"
+    },
+    "José Sagredo": {
+      "bio": "A seasoned center-back who has been a bedrock of Bolivian football for years, Jose Sagredo brings experience, aerial dominance, and defensive know-how to the backline. His long career with Bolivar, the country's most successful club, has made him one of the most trusted defenders in the national team setup.",
+      "playingStyle": "Experienced, commanding center-back who excels in aerial duels, organizes the defensive line, and uses his positional intelligence to compensate for any physical limitations as he enters his thirties",
+      "keyStrengths": ["Aerial dominance and heading ability", "Defensive organization and leadership", "Positional intelligence and experience"],
+      "worldCup2026Role": "Starting center-back and defensive leader whose experience and aerial ability anchor Bolivia's backline; his vocal leadership organizes the defense in high-pressure World Cup matches",
+      "notableFact": "Has been a loyal servant to Bolivar, the most decorated club in Bolivian football, and has captained both club and country throughout a distinguished career"
+    },
+    "Jesús Sagredo": {
+      "bio": "The twin brother of Jose Sagredo, Jesus brings a unique family connection to the Bolivian squad. A versatile defender who can play at right-back or center-back, he has followed a similar path to his brother through Bolivar and into the national team setup.",
+      "playingStyle": "Versatile, hard-working defender who can operate across the backline, combining solid defensive work with the ability to contribute going forward from fullback positions",
+      "keyStrengths": ["Versatility across defensive positions", "Solid defensive fundamentals", "Understanding and chemistry with his twin brother in defense"],
+      "worldCup2026Role": "Defensive utility player providing versatile cover across the backline; his ability to play multiple positions and his unique chemistry with his twin brother add a special dimension to Bolivia's defense",
+      "notableFact": "Is the twin brother of center-back Jose Sagredo, making them one of the few sets of twins to represent the same country at a FIFA World Cup"
+    },
+    "Diego Arroyo": {
+      "bio": "One of the most exciting young prospects in Bolivian football, Arroyo earned a groundbreaking move to Shakhtar Donetsk in Ukraine, making him one of the few Bolivian players to play in a top European league. His rapid development and willingness to challenge himself abroad have made him a symbol of Bolivia's emerging talent.",
+      "playingStyle": "Young, composed center-back with good technical ability on the ball, strong tactical awareness, and the physical attributes to compete in European football's demanding environment",
+      "keyStrengths": ["Composure and ball-playing ability from defense", "Tactical awareness and positional intelligence", "Physical development and European experience"],
+      "worldCup2026Role": "Young defensive prospect whose European experience gives Bolivia a modern, ball-playing option at center-back; his development at Shakhtar Donetsk represents a new era for Bolivian football",
+      "notableFact": "Is one of the very few Bolivian players to secure a move to a major European club, joining Shakhtar Donetsk in Ukraine and representing a pioneering step for Bolivian football abroad"
+    },
+    "Diego Medina": {
+      "bio": "A dynamic right-back who has gained valuable experience playing in European football with CSKA 1948 Sofia in Bulgaria. Medina's pace, energy, and willingness to attack from deep positions have made him a regular in Bolivia's squad and one of their most promising defenders.",
+      "playingStyle": "Energetic, attack-minded right-back with good pace, overlapping ability, and the defensive awareness to recover quickly after making forward runs",
+      "keyStrengths": ["Pace and energy in attack and defense", "Overlapping runs and crossing ability", "Defensive recovery speed"],
+      "worldCup2026Role": "Starting right-back whose pace and attacking threat from deep give Bolivia a genuine outlet on the right flank; his European experience adds a level of tactical sophistication",
+      "notableFact": "Has established himself in European football at a young age, playing in the Bulgarian league and gaining continental experience that is rare for Bolivian players of his generation"
+    },
+    "Richet Gómez": {
+      "bio": "A solid and dependable center-back from the Bolivian domestic league, Gomez has earned his place in the national team through consistent performances with Club Always Ready. His defensive fundamentals and willingness to compete make him a useful squad member.",
+      "playingStyle": "Strong, physical center-back who relies on aggressive defending, aerial presence, and a no-nonsense approach to keep attackers at bay",
+      "keyStrengths": ["Physical strength and aerial ability", "Aggressive defending and tackling", "Reliability in domestic league competition"],
+      "worldCup2026Role": "Defensive depth option providing additional cover at center-back; his familiarity with the altitude of La Paz makes him particularly effective in home qualifying matches",
+      "notableFact": "Has scored for Bolivia in international competition, showing his ability to contribute at both ends of the pitch despite being primarily a defensive player"
+    },
+    "Leonardo Zabala": {
+      "bio": "A young center-back who has been developing his career in Mexican football with Cancun FC. Zabala's height, athleticism, and potential have earned him early recognition with the Bolivian national team as they look to build defensive depth for the future.",
+      "playingStyle": "Tall, athletic young center-back with good aerial presence, developing positional awareness, and the physical tools to become a commanding defender as he gains more experience",
+      "keyStrengths": ["Height and aerial dominance", "Athletic ability and physical potential", "Developing defensive awareness"],
+      "worldCup2026Role": "Young defensive prospect gaining World Cup experience; his physical attributes and potential make him a long-term investment for Bolivian football beyond the 2026 tournament",
+      "notableFact": "Is one of the youngest defenders in Bolivia's World Cup squad and has chosen to develop his career in Mexican football, gaining experience in a competitive North American league environment"
+    },
+    "Dieguito Rodríguez": {
+      "bio": "A young left-back who has emerged through the Bolivian domestic league with Oriente Petrolero. Rodriguez's energy, attacking instincts, and defensive development have earned him a place in the squad as Bolivia looks to build their fullback positions with young talent.",
+      "playingStyle": "Young, energetic left-back who combines solid defensive positioning with an eagerness to get forward and deliver crosses from the left flank",
+      "keyStrengths": ["Energy and attacking runs from left-back", "Crossing ability from wide positions", "Developing defensive skills and awareness"],
+      "worldCup2026Role": "Young left-back option providing energy and attacking threat; his development trajectory makes him an important part of Bolivia's plans both for 2026 and beyond",
+      "notableFact": "At just 22, he is one of the youngest players in the Bolivian squad and represents the next generation of Bolivian defenders emerging from the domestic league system"
+    },
+    "Luis Paz": {
+      "bio": "A young and versatile defender from Bolivar who can operate at right-back or as a wing-back. Paz's technical ability, pace, and tactical understanding have earned him early international recognition as Bolivia looks to develop players for the World Cup and beyond.",
+      "playingStyle": "Quick, technically capable young fullback who combines defensive discipline with the ability to join attacks and provide width from the right side of defense",
+      "keyStrengths": ["Pace and technical ability", "Tactical understanding and positional play", "Versatility in defensive roles"],
+      "worldCup2026Role": "Young defensive talent providing depth at right-back; his inclusion signals Bolivia's investment in developing versatile young defenders alongside their experienced campaigners",
+      "notableFact": "Despite his young age, he has already established himself in the squad of Bolivar, the most successful club in Bolivian football, earning early international recognition"
+    },
+    "Leonel Justiniano": {
+      "bio": "A veteran defensive midfielder and one of the most respected players in Bolivian football, Justiniano has been the shield in front of Bolivia's defense for years. His reading of the game, tackling ability, and leadership qualities have made him an indispensable figure in the national team.",
+      "playingStyle": "Disciplined, experienced defensive midfielder who reads the game excellently, breaks up opposition attacks with well-timed tackles, and provides a protective screen in front of the defense",
+      "keyStrengths": ["Reading of the game and interceptions", "Tackling and ball-winning ability", "Leadership and defensive discipline"],
+      "worldCup2026Role": "Veteran holding midfielder whose experience and defensive nous anchor Bolivia's midfield; his ability to protect the defense and break up attacks is essential to Bolivia's tactical structure",
+      "notableFact": "Has been one of Bolivar's most consistent performers for many years and brings over 50 international caps of experience to Bolivia's World Cup campaign"
+    },
+    "Gabriel Villamíl": {
+      "bio": "A technically gifted young midfielder who has earned a move to LDU Quito in Ecuador, Villamil represents the growing internationalization of Bolivian football talent. His passing ability, vision, and composure in possession have made him a key part of Bolivia's midfield.",
+      "playingStyle": "Composed, technically skilled central midfielder with good passing range, ability to control tempo, and the maturity to perform consistently in South American club competition",
+      "keyStrengths": ["Technical quality and passing ability", "Composure in possession and under pressure", "Ability to control the tempo of matches"],
+      "worldCup2026Role": "Starting midfielder whose technical quality and passing range help Bolivia maintain possession and build attacks; his youth and ability make him central to Bolivia's present and future plans",
+      "notableFact": "His move to LDU Quito in Ecuador represents part of a growing trend of Bolivian players seeking competitive experiences abroad in South American football"
+    },
+    "Ervin Vaca": {
+      "bio": "A young defensive midfielder from Bolivar who has burst onto the scene with energetic performances in the Bolivian league. His combative style, tactical intelligence, and ability to contribute with goals from midfield have earned him early international recognition despite his tender age.",
+      "playingStyle": "Energetic, combative young defensive midfielder who combines aggressive ball-winning with surprising attacking contributions and the stamina to cover large areas of the pitch",
+      "keyStrengths": ["Energy and combative midfield play", "Surprising goal-scoring ability from deep", "Stamina and pitch coverage"],
+      "worldCup2026Role": "Young midfield option bringing energy and dynamism off the bench; his combative style and ability to score make him a useful tactical weapon in different match situations",
+      "notableFact": "Has already scored for the national team despite being only 21, demonstrating his ability to contribute both defensively and offensively from midfield"
+    },
+    "Moisés Villarroel": {
+      "bio": "A hardworking central midfielder who has been a consistent performer in the Bolivian domestic league with Blooming. Villarroel's reliability, work rate, and understanding of Bolivia's tactical system have kept him in the national team picture throughout the qualifying campaign.",
+      "playingStyle": "Hardworking, reliable central midfielder who contributes with steady passing, defensive cover, and the intelligence to maintain team shape in both attack and defense",
+      "keyStrengths": ["Work rate and reliable contributions", "Defensive cover and positional play", "Tactical intelligence and team awareness"],
+      "worldCup2026Role": "Midfield squad depth option who provides reliability and tactical intelligence; his understanding of Bolivia's system makes him a safe pair of hands when rotation or tactical changes are needed",
+      "notableFact": "Has been a consistent presence in the Bolivian domestic league and has contributed goals in key qualifying matches for the national team"
+    },
+    "Robson Matheus": {
+      "bio": "A young and technically capable midfielder from Bolivar who adds depth and youthful energy to Bolivia's midfield options. His Brazilian-born heritage and technical skills bring a different flavor to Bolivia's traditionally combative midfield setup.",
+      "playingStyle": "Technical, neat-passing midfielder who combines good close control with efficient ball circulation and the ability to link defense and attack through intelligent movement",
+      "keyStrengths": ["Technical ability and close control", "Neat, efficient passing", "Intelligent movement and positional play"],
+      "worldCup2026Role": "Young midfield option providing technical quality and squad depth; his composure on the ball offers Bolivia a different midfield profile when matches demand more possession-based play",
+      "notableFact": "Has been developing at Bolivar, Bolivia's most successful club, and represents the multicultural nature of Bolivian football with his Brazilian heritage"
+    },
+    "Ramiro Vaca": {
+      "bio": "Bolivia's creative heartbeat and the player who wears the iconic number 10 shirt, Ramiro Vaca is the most naturally gifted playmaker in the squad. His vision, technical quality, and ability to produce moments of magic have made him the focal point of Bolivia's attacking play throughout their historic World Cup qualification.",
+      "playingStyle": "Creative, technically brilliant attacking midfielder with excellent vision, precise through balls, and the ability to unlock defenses with moments of individual brilliance from the number 10 position",
+      "keyStrengths": ["Creative vision and through ball delivery", "Technical quality and close control", "Set-piece expertise and dead-ball ability"],
+      "worldCup2026Role": "Starting number 10 and Bolivia's chief creator; his ability to find decisive passes and create chances from nothing is essential to Bolivia's hopes of scoring against superior opponents",
+      "notableFact": "Has been Bolivia's most important creative player throughout their World Cup qualifying campaign, producing key assists and goals that were vital to their historic qualification"
+    },
+    "Erwin Saavedra": {
+      "bio": "An experienced wide midfielder who has been a fixture in the Bolivian national team for nearly a decade. Saavedra's technical ability, crossing quality, and experience in South American football have made him a reliable contributor from wide positions throughout Bolivia's qualifying campaigns.",
+      "playingStyle": "Experienced, technically skilled wide midfielder with good crossing ability, decent set-piece delivery, and the intelligence to drift into dangerous positions and create scoring opportunities",
+      "keyStrengths": ["Crossing quality and delivery from wide areas", "Technical ability and set-piece expertise", "Experience and tactical awareness"],
+      "worldCup2026Role": "Experienced wide midfield option providing technical quality and set-piece expertise; his years of international experience make him a reliable squad member for crucial matches",
+      "notableFact": "Has scored spectacular goals for Bolivia in qualifying matches, including free kicks that showcase his excellent dead-ball technique and left-footed quality"
+    },
+    "Roberto Fernández": {
+      "bio": "A talented left-sided midfielder who has gained valuable experience playing in European football with clubs in Russia. Roberto Carlos Fernandez's pace, directness, and ability to create from wide areas have made him an important part of Bolivia's attacking setup and one of their most dangerous wide players.",
+      "playingStyle": "Quick, direct left-sided midfielder who uses his pace to beat defenders, delivers dangerous crosses from wide areas, and can cut inside to create shooting opportunities with his stronger foot",
+      "keyStrengths": ["Pace and directness on the left flank", "Crossing ability and delivery", "European experience and competitive hardening"],
+      "worldCup2026Role": "Wide midfield option providing pace and directness on the left side; his experience in European football gives Bolivia a player accustomed to the higher tempo and physical demands of international competition",
+      "notableFact": "One of the few Bolivian players to have played professionally in Europe, gaining experience in the Russian Premier League that has broadened his football education beyond South America"
+    },
+    "Miguel Terceros": {
+      "bio": "The brightest young talent in Bolivian football and arguably the most exciting player to emerge from the country in a generation, Terceros earned a historic move to Santos FC in Brazil's Serie A. His technical brilliance, creativity, and fearlessness have drawn comparisons to some of the best South American playmakers, and at just 21, his potential is enormous.",
+      "playingStyle": "Gifted, creative attacking midfielder with outstanding dribbling ability, vision beyond his years, and the left-footed technical quality to produce moments of magic that can decide matches",
+      "keyStrengths": ["Outstanding dribbling and creative ability", "Left-footed technical brilliance", "Vision and maturity beyond his young age"],
+      "worldCup2026Role": "Key creative talent and Bolivia's most exciting attacker; his ability to create something from nothing with his dribbling and passing makes him the player most likely to produce a moment of World Cup magic for Bolivia",
+      "notableFact": "His transfer to Santos FC in Brazil made him one of the most high-profile Bolivian transfers in history, and he has been compared to some of the finest young talents in South American football"
+    },
+    "Diego Bejarano": {
+      "bio": "One of the most experienced players in the Bolivian squad, Bejarano is a veteran defender who has served the national team with dedication and consistency for many years. His versatility, professionalism, and deep understanding of Bolivian football make him a valued squad presence.",
+      "playingStyle": "Experienced, versatile defensive player who can operate at right-back or in midfield, bringing tactical intelligence, reliable defending, and professional consistency to every role",
+      "keyStrengths": ["Versatility across defensive and midfield roles", "Experience and professionalism", "Tactical intelligence and understanding"],
+      "worldCup2026Role": "Veteran utility defender providing experienced depth across multiple positions; his years of international service and calm presence add stability to the squad",
+      "notableFact": "Has been part of the Bolivian national team setup for over a decade, making him one of the longest-serving members of the current squad and a bridge between generations"
+    },
+    "Moisés Paniagua": {
+      "bio": "The youngest player in Bolivia's World Cup squad, Paniagua is a prodigiously talented young winger who has already attracted international attention despite being just 18 years old. His dribbling, pace, and fearless attacking play have drawn excitement about Bolivia's footballing future, and his move abroad to Morocco demonstrates his ambition.",
+      "playingStyle": "Explosive, fearless young winger with electrifying pace, dazzling dribbling ability, and the youthful confidence to take on defenders and try the spectacular without hesitation",
+      "keyStrengths": ["Electrifying pace and acceleration", "Dazzling dribbling and close control", "Fearlessness and creative risk-taking"],
+      "worldCup2026Role": "The squad's youngest sensation and a potential game-changer off the bench; his raw pace and dribbling ability make him an exciting wildcard option against tiring defenses in the second half",
+      "notableFact": "At just 18 years old, he is the youngest player in Bolivia's World Cup squad and has already moved abroad to play for Wydad Casablanca in Morocco, showing remarkable maturity and ambition for his age"
+    },
+    "Fernando Nava": {
+      "bio": "A young right winger who has been making a name for himself in the Bolivian domestic league with Club Always Ready. Nava's pace, work rate, and willingness to track back have earned him a spot in the squad as Bolivia looks to add young, energetic options to their wide positions.",
+      "playingStyle": "Quick, hardworking right winger who combines pace and directness in attack with a willingness to defend and contribute to the team's pressing structure",
+      "keyStrengths": ["Pace and directness on the right flank", "Work rate and defensive contribution", "Energy and enthusiasm"],
+      "worldCup2026Role": "Young wide attacking depth option providing energy and pace; his work rate and willingness to track back make him a useful tactical option when Bolivia need fresh legs on the flank",
+      "notableFact": "Has emerged through the domestic league system to earn international recognition at a young age, representing the developing talent pipeline in Bolivian football"
+    },
+    "Henry Vaca": {
+      "bio": "A diminutive but technically gifted forward who uses his low center of gravity and quick feet to create chances in the final third. Vaca's agility, clever movement, and ability to play across the forward line have made him a versatile attacking option for the Bolivian national team.",
+      "playingStyle": "Small, agile forward with excellent close control, quick feet, and the ability to wriggle past defenders in tight spaces using his low center of gravity and clever movement",
+      "keyStrengths": ["Close control and dribbling in tight spaces", "Agility and quick change of direction", "Versatility across the forward positions"],
+      "worldCup2026Role": "Versatile forward option who can operate as a false nine or second striker; his technical ability in tight spaces provides Bolivia with a different attacking profile against packed defenses",
+      "notableFact": "Despite his small stature at just 165cm, he has carved out a career through his exceptional technical ability and has been a regular contributor to the Bolivian national team"
+    },
+    "Bruno Miranda": {
+      "bio": "A strong, combative striker who has proven himself in South American football with experience in both Bolivia and Ecuador. Miranda's physical presence, work rate, and ability to hold the ball up make him a useful target man option who provides Bolivia's attack with a different dimension.",
+      "playingStyle": "Strong, physical center forward who excels in hold-up play, uses his body well to protect the ball, and creates space for teammates through his intelligent runs and physical battles with defenders",
+      "keyStrengths": ["Physical presence and hold-up play", "Work rate and pressing from the front", "Aerial ability and target-man qualities"],
+      "worldCup2026Role": "Forward option providing a physical target man presence; his ability to hold the ball up and bring others into play gives Bolivia a plan B when they need to change their attacking approach",
+      "notableFact": "Has gained valuable experience playing in Ecuador's Serie A, competing in a different South American football culture and adapting his game to succeed away from Bolivia"
+    },
+    "Víctor Ábrego": {
+      "bio": "A well-traveled striker who has played in both South American and North African football. Abrego's experience across different football cultures, his goal-scoring instincts, and his ability to adapt to varying playing styles have earned him a place in Bolivia's World Cup squad.",
+      "playingStyle": "Experienced, goal-poaching striker with good movement inside the box, clinical finishing when chances arrive, and the intelligence to find space between defenders",
+      "keyStrengths": ["Goal-scoring instincts and poaching ability", "Intelligent movement in the penalty area", "Adaptability across different football environments"],
+      "worldCup2026Role": "Forward depth option providing goal-scoring instincts off the bench; his experience in different football cultures means he can adapt to the unique challenges presented by different World Cup opponents",
+      "notableFact": "Has played in Morocco's Botola Pro, making him one of several Bolivian players who have ventured abroad to gain experience in African and international football leagues"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "CHI_GER",
+  "team1Code": "CHI",
+  "team2Code": "GER",
+  "totalMatches": 8,
+  "team1Wins": 2,
+  "team2Wins": 5,
+  "draws": 1,
+  "team1Goals": 7,
+  "team2Goals": 14,
+  "worldCupMatches": 3,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 3,
+  "worldCupDraws": 0,
+  "lastMatch": "2017-07-02",
+  "firstMeeting": "1960-05-01",
+  "notableMatches": [
+    {
+      "year": 2017,
+      "tournament": "FIFA Confederations Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "Saint Petersburg, Russia",
+      "description": "Stindl scores as Germany B-team edge Chile to win Confederations Cup"
+    },
+    {
+      "year": 2017,
+      "tournament": "FIFA Confederations Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Kazan, Russia",
+      "description": "Chile and Germany draw in Confederations Cup group stage"
+    },
+    {
+      "year": 1982,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 4,
+      "winnerCode": "GER",
+      "location": "Gijon, Spain",
+      "description": "West Germany dismantle Chile in 1982 World Cup group match"
+    },
+    {
+      "year": 1974,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "GER",
+      "location": "West Berlin, West Germany",
+      "description": "Hosts West Germany edge past Chile in 1974 World Cup first round"
+    },
+    {
+      "year": 1962,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "GER",
+      "location": "Santiago, Chile",
+      "description": "West Germany beat hosts Chile in 1962 World Cup group stage"
+    }
+  ]
+}

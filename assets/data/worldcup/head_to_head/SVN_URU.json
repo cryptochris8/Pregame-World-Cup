@@ -1,0 +1,29 @@
+{
+  "id": "SVN_URU",
+  "team1Code": "SVN",
+  "team2Code": "URU",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 0,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2014-06-04",
+  "firstMeeting": "2014-06-04",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "URU",
+      "location": "Montevideo, Uruguay",
+      "description": "Cavani and Stuani score as Uruguay wins pre-World Cup friendly"
+    }
+  ]
+}

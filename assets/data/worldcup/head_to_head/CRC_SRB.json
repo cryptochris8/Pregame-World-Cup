@@ -1,0 +1,29 @@
+{
+  "id": "CRC_SRB",
+  "team1Code": "CRC",
+  "team2Code": "SRB",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 0,
+  "team2Goals": 1,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2018-06-17",
+  "firstMeeting": "2018-06-17",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "SRB",
+      "location": "Samara, Russia",
+      "description": "Kolarov's stunning free-kick gives Serbia 1-0 victory in Group E opener"
+    }
+  ]
+}

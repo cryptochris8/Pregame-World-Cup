@@ -1,0 +1,55 @@
+{
+  "team1Code": "IDN",
+  "team2Code": "NED",
+  "team1Name": "Indonesia",
+  "team2Name": "Netherlands",
+  "historicalAnalysis": "Indonesia and the Netherlands share one of the most complex and historically significant relationships in world football. As a former Dutch colony (the Dutch East Indies), Indonesia has deep cultural and historical ties to the Netherlands. The Dutch East Indies actually competed at the 1938 World Cup in France, making them one of the first Asian representatives at the tournament, though they lost 6-0 to Hungary.\n\nThis 2026 World Cup encounter carries weight that goes far beyond football. For many Indonesians, playing against their former colonial power on the World Cup stage represents a full-circle moment of national pride and sporting achievement. The Netherlands, three-time World Cup finalists, bring a footballing legacy that includes Total Football and some of the sport's greatest-ever players.\n\nThe Netherlands' 2022 World Cup campaign saw them reach the quarter-finals before losing to Argentina on penalties. Their squad remains strong, with a blend of experienced campaigners and exciting young talent. Indonesia, meanwhile, will be playing in their first World Cup as an independent nation, a moment of enormous national significance.",
+  "keyStorylines": [
+    "Former colony vs colonizer adds unprecedented historical dimension",
+    "Indonesia's first World Cup as an independent nation vs a three-time finalist",
+    "The Dutch East Indies played at the 1938 World Cup under Dutch rule",
+    "275 million Indonesians watching their team face a football superpower"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "position": "Forward",
+      "reason": "Liverpool's dynamic forward who scored 3 goals at the 2022 World Cup"
+    },
+    {
+      "name": "Egy Maulana Vikri",
+      "teamCode": "IDN",
+      "position": "Midfielder",
+      "reason": "Indonesia's creative talisman carrying the hopes of 275 million fans"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "position": "Defender",
+      "reason": "One of the best defenders in the world and the Dutch captain"
+    },
+    {
+      "name": "Pratama Arhan",
+      "teamCode": "IDN",
+      "position": "Defender",
+      "reason": "Indonesia's J-League-based full-back who brings energy and attacking threat"
+    }
+  ],
+  "tacticalPreview": "The Netherlands will look to dominate possession with their traditional 4-3-3, using width and progressive passing to break down Indonesia's defense. Van Dijk's distribution from the back, combined with Gakpo's movement and the creativity of midfielders, should create numerous chances.\n\nIndonesia must adopt an ultra-defensive approach, likely a 5-4-1 or even 6-3-1, with every player behind the ball. Their entire game plan will be to deny space, limit damage, and hope for the occasional counter-attack or set-piece opportunity. Every minute Indonesia keeps the score level will be celebrated as an achievement. The emotional energy of this fixture could either inspire Indonesia or overwhelm them.",
+  "prediction": {
+    "predictedOutcome": "NED",
+    "predictedScore": "4-0",
+    "confidence": 92,
+    "reasoning": "The quality gap between these sides is enormous. The Netherlands' World Cup pedigree and squad depth should produce a comfortable victory. Indonesia will fight valiantly but are massively outmatched in every department.",
+    "alternativeScenario": "If Indonesia score a goal, it would be a historic moment. A more competitive 2-0 or 3-1 result is possible if Indonesia play with freedom and the Netherlands underestimate them. The emotional significance of the fixture could produce unexpected drama."
+  },
+  "pastEncountersSummary": "The Dutch East Indies (now Indonesia) played at the 1938 World Cup under Dutch colonial rule, losing 6-0 to Hungary. Since Indonesian independence, the two nations have rarely met on the football pitch, making this encounter historically unique and emotionally charged.",
+  "funFacts": [
+    "The Dutch East Indies (now Indonesia) were one of the first Asian teams at a World Cup in 1938",
+    "Indonesia gained independence from the Netherlands in 1945 after centuries of colonial rule",
+    "The Netherlands have reached three World Cup finals (1974, 1978, 2010) without winning",
+    "Indonesia has the largest football fan base in Southeast Asia"
+  ],
+  "isFirstMeeting": false
+}

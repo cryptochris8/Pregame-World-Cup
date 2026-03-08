@@ -1,0 +1,29 @@
+{
+  "id": "NOR_SEN",
+  "team1Code": "NOR",
+  "team2Code": "SEN",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 1,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2006-02-01",
+  "firstMeeting": "2006-02-01",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "SEN",
+      "location": "Dakar, Senegal",
+      "description": "Senegal edges Norway in the only meeting between the two nations"
+    }
+  ]
+}

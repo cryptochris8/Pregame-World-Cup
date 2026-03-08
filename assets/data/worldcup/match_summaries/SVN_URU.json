@@ -1,0 +1,55 @@
+{
+  "team1Code": "SVN",
+  "team2Code": "URU",
+  "team1Name": "Slovenia",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "Slovenia and Uruguay have minimal head-to-head history, but their paths crossed at the 2010 World Cup in South Africa in memorable fashion. In their Group A meeting, Uruguay defeated Slovenia 3-0, with Diego Forlan scoring twice in a dominant display. That tournament saw Uruguay go on to reach the semi-finals, while Slovenia were eliminated in the group stage despite an impressive victory over Algeria.\n\nUruguay, two-time World Cup champions (1930, 1950), continue to punch above their weight as a nation of just 3.5 million people. Their passion for football is legendary, and their squads consistently feature world-class talent. Under Marcelo Bielsa, Uruguay reached the 2024 Copa America semi-finals and continue to be one of South American football's strongest forces.\n\nSlovenia's Euro 2024 breakthrough, where they reached the knockout rounds for the first time, showed their football development has reached new heights. This Group H matchday 2 encounter carries echoes of their 2010 meeting and could be crucial for both teams' tournament ambitions.",
+  "keyStorylines": [
+    "Rematch of their 2010 World Cup group stage meeting won 3-0 by Uruguay",
+    "Slovenia seeking revenge and proving their Euro 2024 was no fluke",
+    "Uruguay's two-time champions pedigree against Slovenia's rising quality",
+    "Group H matchday 2 with advancement implications for both teams"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Darwin Nunez",
+      "teamCode": "URU",
+      "position": "Forward",
+      "reason": "Liverpool's explosive striker who provides pace, power, and goals"
+    },
+    {
+      "name": "Jan Oblak",
+      "teamCode": "SVN",
+      "position": "Goalkeeper",
+      "reason": "World-class goalkeeper who must produce a masterclass to contain Uruguay"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "position": "Midfielder",
+      "reason": "Real Madrid's dynamic midfielder who combines goals, assists, and defensive work"
+    },
+    {
+      "name": "Benjamin Sesko",
+      "teamCode": "SVN",
+      "position": "Forward",
+      "reason": "RB Leipzig's young striker whose physical presence can trouble any defense"
+    }
+  ],
+  "tacticalPreview": "Uruguay under Bielsa play an intense, pressing 4-3-3 that demands extraordinary fitness from every player. Nunez's runs in behind, Valverde's box-to-box dynamism, and the defensive discipline of the back four create a well-rounded side. Uruguay's set-piece delivery and aerial ability are additional weapons.\n\nSlovenia's defensive 4-4-2 will prioritize organization and discipline, with Oblak as the safety net behind a compact backline. Sesko's hold-up play provides an outlet, while the midfield four will aim to deny Uruguay's midfield space. Slovenia's challenge is to contain Nunez's movement and Valverde's driving runs. Their Euro 2024 approach of staying disciplined and hoping for counter-attacking moments could be effective.",
+  "prediction": {
+    "predictedOutcome": "URU",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Uruguay's attacking quality through Nunez and Valverde gives them the edge, but Slovenia's Euro 2024 resilience and Oblak's goalkeeping make this far from straightforward. Uruguay will need to be patient against Slovenia's organized defense.",
+    "alternativeScenario": "If Oblak produces a goalkeeping masterclass and Sesko scores on the break, a shock 1-0 Slovenia victory is possible. A 1-1 draw that reflects both teams' defensive qualities is also a realistic outcome."
+  },
+  "pastEncountersSummary": "Their only notable meeting was the 2010 World Cup group stage, where Uruguay won 3-0 with Diego Forlan scoring twice. Slovenia have improved significantly since then, but Uruguay's World Cup pedigree remains formidable.",
+  "funFacts": [
+    "Uruguay won the inaugural World Cup in 1930 as hosts",
+    "Diego Forlan scored twice against Slovenia at the 2010 World Cup en route to winning the Golden Ball",
+    "Slovenia's population of 2.1 million makes them one of the smallest World Cup nations",
+    "Uruguay have produced more World Cup champions per capita than any other nation"
+  ],
+  "isFirstMeeting": false
+}

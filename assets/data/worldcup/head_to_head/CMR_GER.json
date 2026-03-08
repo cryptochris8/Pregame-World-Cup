@@ -1,0 +1,49 @@
+{
+  "id": "CMR_GER",
+  "team1Code": "CMR",
+  "team2Code": "GER",
+  "totalMatches": 4,
+  "team1Wins": 0,
+  "team2Wins": 3,
+  "draws": 1,
+  "team1Goals": 4,
+  "team2Goals": 10,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2017-06-25",
+  "firstMeeting": "2002-06-11",
+  "notableMatches": [
+    {
+      "year": 2017,
+      "tournament": "FIFA Confederations Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "GER",
+      "location": "Sochi, Russia",
+      "description": "Germany ease past Cameroon to win Confederations Cup group"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Monchengladbach, Germany",
+      "description": "Cameroon rally to earn draw in entertaining pre-World Cup friendly"
+    },
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "GER",
+      "location": "Shizuoka, Japan",
+      "description": "Germany beat Cameroon in ill-tempered World Cup match with record yellow cards"
+    }
+  ]
+}

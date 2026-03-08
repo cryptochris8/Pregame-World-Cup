@@ -1,0 +1,39 @@
+{
+  "id": "AUS_TUR",
+  "team1Code": "AUS",
+  "team2Code": "TUR",
+  "totalMatches": 2,
+  "team1Wins": 0,
+  "team2Wins": 2,
+  "draws": 0,
+  "team1Goals": 1,
+  "team2Goals": 4,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2004-05-24",
+  "firstMeeting": "2004-05-21",
+  "notableMatches": [
+    {
+      "year": 2004,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "TUR",
+      "location": "Sydney, Australia",
+      "description": "Hakan Sukur double leads Turkey to victory in first match of two-game series"
+    },
+    {
+      "year": 2004,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "TUR",
+      "location": "Melbourne, Australia",
+      "description": "Turkey complete clean sweep of Australian tour"
+    }
+  ]
+}

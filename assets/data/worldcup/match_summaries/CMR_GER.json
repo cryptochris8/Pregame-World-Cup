@@ -1,0 +1,55 @@
+{
+  "team1Code": "CMR",
+  "team2Code": "GER",
+  "team1Name": "Cameroon",
+  "team2Name": "Germany",
+  "historicalAnalysis": "Cameroon and Germany have a storied World Cup history that dates back to one of the greatest World Cup matches ever played. At the 2002 World Cup in South Korea/Japan, Cameroon and Germany met in an electrifying group stage encounter that ended 2-0 to Germany but was far more competitive than the scoreline suggested. However, it was the 2014 World Cup in Brazil that saw their most decisive meeting, as Germany crushed Cameroon's hopes en route to winning the tournament.\n\nCameroon are one of Africa's most successful World Cup nations, with their 1990 run under Roger Milla remaining one of football's most beloved stories. The Indomitable Lions reached the quarter-finals that year, and their flamboyant style has made them perennial fan favorites. More recently, at the 2022 World Cup, Cameroon pulled off a stunning 1-0 victory over Brazil in the group stage, proving they can still compete with the very best.\n\nGermany's consecutive World Cup group-stage eliminations in 2018 and 2022 have created an urgent need for redemption. Their young, talented squad featuring Musiala and Wirtz represents a new era of German football, but they must prove they can perform when it matters on the World Cup stage.",
+  "keyStorylines": [
+    "Germany desperate for a strong result after consecutive group-stage exits",
+    "Cameroon seeking to replicate their 2022 shock victory over Brazil",
+    "African passion vs German efficiency in a Group E showdown",
+    "Can Cameroon's Indomitable Lions produce another World Cup upset?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Germany's creative heartbeat who must deliver on the World Cup stage"
+    },
+    {
+      "name": "Andre-Frank Zambo Anguissa",
+      "teamCode": "CMR",
+      "position": "Midfielder",
+      "reason": "Napoli's box-to-box midfielder who brings power and technique"
+    },
+    {
+      "name": "Kai Havertz",
+      "teamCode": "GER",
+      "position": "Forward",
+      "reason": "Arsenal's versatile forward who provides goals and link-up play"
+    },
+    {
+      "name": "Eric Maxim Choupo-Moting",
+      "teamCode": "CMR",
+      "position": "Forward",
+      "reason": "Experienced striker who scored Cameroon's famous winner against Brazil in 2022"
+    }
+  ],
+  "tacticalPreview": "Germany will deploy their 4-2-3-1 with Musiala and Wirtz providing the creative spark. The German press is designed to win the ball high and transition quickly, while their defensive structure has been refined after the 2022 debacle. Set-pieces and wide play will be key avenues of attack.\n\nCameroon's 4-3-3 is built on Anguissa's midfield dominance and the pace of their wide forwards. The Indomitable Lions press in bursts, conserving energy for explosive counter-attacks. Their physical superiority in aerial duels and one-on-one situations can trouble any team. The key for Cameroon is to stay disciplined defensively while being clinical with chances. Germany's vulnerability to pace on the counter, exposed at the 2022 World Cup, could be Cameroon's route to victory.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Germany's technical superiority should prevail, but Cameroon's quality and physicality will make this far from comfortable. Germany's recent World Cup struggles add uncertainty to what should be a winnable match.",
+    "alternativeScenario": "Cameroon have beaten Brazil at the last World Cup and have a history of producing upsets. A 1-1 draw or 2-1 Cameroon victory would not be a massive shock given Germany's recent fragility at World Cups."
+  },
+  "pastEncountersSummary": "Germany have won most competitive meetings, including at the 2002 and 2014 World Cups. However, Cameroon's giant-killing pedigree and their 2022 victory over Brazil show they are always capable of producing a shock result. This rivalry has consistently produced entertaining football.",
+  "funFacts": [
+    "Cameroon's Roger Milla is the oldest World Cup goalscorer, netting at age 42 in 1994",
+    "Germany have been eliminated in the group stage at the last two World Cups",
+    "Cameroon beat Brazil 1-0 at the 2022 World Cup",
+    "Cameroon were the first African team to reach a World Cup quarter-final in 1990"
+  ],
+  "isFirstMeeting": false
+}

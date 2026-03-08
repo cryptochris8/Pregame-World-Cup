@@ -1,0 +1,55 @@
+{
+  "team1Code": "ALB",
+  "team2Code": "COL",
+  "team1Name": "Albania",
+  "team2Name": "Colombia",
+  "historicalAnalysis": "Albania and Colombia have never met in a competitive international fixture, making this World Cup 2026 group stage clash a historic first encounter. Albania, competing in only their second World Cup after making their debut at Euro 2016 (their first major tournament), represent the emergence of Balkan football on the global stage. Their qualification for the 2026 World Cup is a monumental achievement for a nation of under 3 million people.\n\nColombia, by contrast, are seasoned World Cup campaigners with six previous appearances. Los Cafeteros reached the Copa America 2024 final, losing to Argentina, confirming their status as one of South America's strongest sides. Their qualifying campaign showcased a blend of experience and exciting young talent that makes them dangerous opponents for anyone.\n\nThis matchup pits a European underdog riding a wave of national pride against a South American powerhouse with genuine ambitions of a deep tournament run. The contrast in experience and quality is significant, but Albania's Euro 2016 and qualifying journey prove they are no pushovers.",
+  "keyStorylines": [
+    "Albania's historic second major tournament appearance vs Colombia's World Cup pedigree",
+    "Colombia seeking to build on their Copa America 2024 final run",
+    "First-ever meeting between these two nations",
+    "Can Albania's organized defense contain Colombia's explosive attack?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "James Rodriguez",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "Colombia's creative genius who was best player at Copa America 2024"
+    },
+    {
+      "name": "Armando Broja",
+      "teamCode": "ALB",
+      "position": "Forward",
+      "reason": "Albania's biggest attacking threat with Premier League experience"
+    },
+    {
+      "name": "Luis Diaz",
+      "teamCode": "COL",
+      "position": "Winger",
+      "reason": "Liverpool star whose pace and trickery can unlock any defense"
+    },
+    {
+      "name": "Thomas Strakosha",
+      "teamCode": "ALB",
+      "position": "Goalkeeper",
+      "reason": "Experienced shot-stopper who will need to be at his best"
+    }
+  ],
+  "tacticalPreview": "Colombia will look to dominate possession with their technically gifted midfield, using James Rodriguez as the creative fulcrum and Luis Diaz as the primary outlet on the wing. Their 4-2-3-1 system allows for fluid attacking transitions and quick combination play.\n\nAlbania will likely adopt a compact 4-4-2 or 5-3-2 formation, sitting deep and looking to frustrate Colombia before hitting them on the counter-attack. Their defensive discipline was key to qualifying, and they will need every ounce of organization to contain Colombia's attacking movement. The key for Albania is to stay in the game and take any chance that comes their way.",
+  "prediction": {
+    "predictedOutcome": "COL",
+    "predictedScore": "2-0",
+    "confidence": 78,
+    "reasoning": "Colombia's superior quality across the pitch, combined with their Copa America 2024 final experience, makes them strong favorites. Their attacking depth should eventually break down Albania's defensive resistance.",
+    "alternativeScenario": "If Albania score first and lock down defensively, their fighting spirit could produce a shock 1-0 or 1-1 result. Their Euro 2016 experience shows they can compete at the highest level."
+  },
+  "pastEncountersSummary": "These two nations have never played each other before. This World Cup 2026 group stage match will be their first-ever meeting, adding a layer of intrigue as neither side has tactical reference points from previous encounters.",
+  "funFacts": [
+    "Albania's population of under 3 million makes them one of the smallest nations at the World Cup",
+    "Colombia's James Rodriguez has scored 6 World Cup goals across previous tournaments",
+    "Albania scored their first-ever major tournament goal at Euro 2016 against Romania",
+    "Colombia have never lost a World Cup group stage match against a European opponent"
+  ],
+  "isFirstMeeting": true
+}

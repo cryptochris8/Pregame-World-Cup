@@ -1,0 +1,55 @@
+{
+  "team1Code": "BOL",
+  "team2Code": "MEX",
+  "team1Name": "Bolivia",
+  "team2Name": "Mexico",
+  "historicalAnalysis": "Bolivia and Mexico have a long history in South American and CONCACAF football circles, with their most frequent meetings coming in Copa America editions where Mexico has been invited to participate. Mexico has traditionally dominated this fixture, with their superior resources, league infrastructure, and consistent World Cup presence giving them a significant edge.\n\nBolivia's most famous football moment came at the 1994 World Cup in the United States, where they competed in the same tournament that Mexico also participated in. While neither team advanced far, the experience showed Bolivia could compete on the World Cup stage. Their home fortress in La Paz has been the great equalizer in qualifying, but at the 2026 World Cup, they must perform at sea level.\n\nMexico, as co-hosts of the 2026 World Cup, carry enormous expectations. Playing the opening match at the legendary Estadio Azteca, El Tri have the weight of a nation behind them. Their Group A opener against Bolivia is expected to be the launchpad for a deep tournament run that Mexican fans have long dreamed of.",
+  "keyStorylines": [
+    "Mexico opening the 2026 World Cup as co-hosts at the iconic Estadio Azteca",
+    "Bolivia returning to the World Cup stage for the first time since 1994",
+    "The enormous pressure on Mexico to perform in front of their home fans",
+    "Co-host nation expected to dominate the tournament's opening match"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "position": "Winger",
+      "reason": "El Chucky brings pace and excitement as Mexico's key attacking weapon"
+    },
+    {
+      "name": "Marcelo Martins",
+      "teamCode": "BOL",
+      "position": "Forward",
+      "reason": "Bolivia's record goalscorer who must lead the line against a hostile crowd"
+    },
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "position": "Midfielder",
+      "reason": "The midfield enforcer who anchors Mexico's play and breaks up opposition attacks"
+    },
+    {
+      "name": "Carlos Lampe",
+      "teamCode": "BOL",
+      "position": "Goalkeeper",
+      "reason": "Will need a heroic performance to keep Bolivia in the game"
+    }
+  ],
+  "tacticalPreview": "Mexico will play an expansive 4-3-3 designed to thrill the home crowd at the Azteca. Their wingers will look to stretch Bolivia's defense, while the midfield trio provides the creativity and control to dominate possession. The full-backs will push high, creating overloads on the flanks.\n\nBolivia will adopt a deep, defensive 5-4-1 formation, packing the area in front of their goal and looking to survive the initial onslaught. Their game plan will revolve around staying in the match, frustrating Mexico, and trying to catch them on the break or from set-pieces. The altitude of Mexico City (2,240m) could actually help Bolivia slightly, as they are accustomed to playing at elevation.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "3-0",
+    "confidence": 85,
+    "reasoning": "Mexico's home advantage, superior squad, and the emotional energy of opening the World Cup at the Azteca make them overwhelming favorites. Bolivia's inability to perform at this level away from La Paz will be exposed.",
+    "alternativeScenario": "Mexico City's altitude could help Bolivia more than expected, and if the home crowd grows anxious with a 0-0 scoreline, Bolivia could capitalize. A 1-0 Mexico win after a tense affair is a realistic alternative."
+  },
+  "pastEncountersSummary": "Mexico have historically dominated this fixture across Copa America appearances and friendly matches. Bolivia have rarely troubled Mexico, and the quality gap between the two squads has generally been significant. However, football at the World Cup has produced many surprises.",
+  "funFacts": [
+    "This match opens the entire 2026 FIFA World Cup tournament",
+    "The Estadio Azteca is the only stadium to have hosted two World Cup finals (1970, 1986)",
+    "Bolivia's La Paz sits at 3,637m altitude, while Mexico City is at 2,240m",
+    "Mexico have qualified for every World Cup since 1994"
+  ],
+  "isFirstMeeting": false
+}

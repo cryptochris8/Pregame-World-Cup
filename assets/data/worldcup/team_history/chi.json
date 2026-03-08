@@ -1,0 +1,45 @@
+{
+  "fifaCode": "CHI",
+  "teamName": "Chile",
+  "worldCupHistory": {
+    "totalAppearances": 9,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 1962,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1962, "result": "Third Place", "stage": "Third Place Match" },
+      { "year": 1966, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1982, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2014, "result": "Round of 16", "stage": "Round of 16" }
+    ],
+    "allTimeRecord": {
+      "played": 33,
+      "won": 11,
+      "drawn": 6,
+      "lost": 16,
+      "goalsFor": 44,
+      "goalsAgainst": 57
+    },
+    "topScorers": [
+      { "name": "Leonel Sánchez", "goals": 4, "tournaments": "1962, 1966" },
+      { "name": "Marcelo Salas", "goals": 4, "tournaments": "1998" },
+      { "name": "Eduardo Vargas", "goals": 3, "tournaments": "2014" },
+      { "name": "Alexis Sánchez", "goals": 3, "tournaments": "2010, 2014" },
+      { "name": "Iván Zamorano", "goals": 2, "tournaments": "1998" }
+    ],
+    "notableMoments": [
+      "Hosted and achieved third place at the 1962 World Cup, their best-ever finish",
+      "Participated in the inaugural 1930 World Cup in Uruguay",
+      "The 'Battle of Santiago' against Italy in 1962 remains one of the most violent World Cup matches",
+      "Won back-to-back Copa América titles in 2015 and 2016 with their golden generation",
+      "Marcelo Salas scored 4 goals in the 1998 World Cup in France",
+      "Reached the Round of 16 in three of their last four World Cup appearances (1998, 2010, 2014)"
+    ]
+  }
+}

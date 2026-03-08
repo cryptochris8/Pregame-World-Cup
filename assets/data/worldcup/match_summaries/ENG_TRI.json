@@ -1,0 +1,55 @@
+{
+  "team1Code": "ENG",
+  "team2Code": "TRI",
+  "team1Name": "England",
+  "team2Name": "Trinidad and Tobago",
+  "historicalAnalysis": "England and Trinidad and Tobago have a famous World Cup history from the 2006 tournament in Germany. In one of the group stage's most dramatic matches, England struggled for 82 minutes against the resilient Soca Warriors before Peter Crouch and Steven Gerrard scored late goals to secure a 2-0 victory. That match showcased Trinidad and Tobago's incredible defensive resilience and nearly produced one of the World Cup's greatest upsets.\n\nThat 2006 encounter remains Trinidad and Tobago's finest hour on the World Cup stage. Goalkeeper Shaka Hislop and the entire defense produced a heroic rearguard action that frustrated an England side featuring Beckham, Lampard, Rooney, and Gerrard. The Caribbean nation's performance won them admirers worldwide.\n\nEngland's journey since 2006 has included semi-final appearances at the 2018 World Cup and Euro 2020, plus the Euro 2024 final. Their squad is among the most talented in world football, making them serious contenders for the 2026 World Cup. This Group L encounter will test whether Trinidad and Tobago can produce another defensive masterclass.",
+  "keyStorylines": [
+    "Rematch of the famous 2006 World Cup group stage match where Trinidad held England for 82 minutes",
+    "England as one of the tournament favorites vs the ultimate underdogs",
+    "Trinidad and Tobago seeking to replicate their 2006 defensive heroics",
+    "Can the Soca Warriors produce another memorable World Cup performance?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "Real Madrid's superstar and England's most important player"
+    },
+    {
+      "name": "Levi Garcia",
+      "teamCode": "TRI",
+      "position": "Winger",
+      "reason": "Trinidad's most talented player who can create moments of magic"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "position": "Forward",
+      "reason": "England's all-time top scorer seeking World Cup glory"
+    },
+    {
+      "name": "Marvin Phillip",
+      "teamCode": "TRI",
+      "position": "Goalkeeper",
+      "reason": "Following in Shaka Hislop's footsteps as the last line of defense"
+    }
+  ],
+  "tacticalPreview": "England's 4-3-3 features Bellingham as the creative hub, with Kane providing the finishing and hold-up play. Phil Foden and Bukayo Saka add pace and trickery on the wings, while the midfield provides the platform for England's possession game. England will look to dominate from the first whistle.\n\nTrinidad and Tobago will park the bus in a 5-4-1 or 6-3-1 formation, filling every inch of space in front of their goal. Their entire strategy will revolve around heroic defending, last-ditch blocks, and hoping for a goalkeeper performance for the ages. Set-pieces and the occasional counter-attack will be their only offensive weapons. The question is not whether England will create chances, but whether Trinidad can withstand the siege.",
+  "prediction": {
+    "predictedOutcome": "ENG",
+    "predictedScore": "3-0",
+    "confidence": 88,
+    "reasoning": "England's vast quality advantage should produce a comfortable victory. Unlike 2006, this England side is more clinical and tactically mature. Trinidad will defend bravely but are unlikely to hold out for 90 minutes against this caliber of attack.",
+    "alternativeScenario": "If Trinidad and Tobago channel their 2006 spirit and defend heroically, they could keep England to a late 1-0 or 2-0 win. A draw, while extremely unlikely, would be one of the greatest World Cup results ever."
+  },
+  "pastEncountersSummary": "The 2006 World Cup group stage match is the defining encounter: England won 2-0 but needed late goals from Crouch and Gerrard after being frustrated for 82 minutes. That match has become legendary in Trinidadian football folklore and a cautionary tale for England about underestimating opponents.",
+  "funFacts": [
+    "Trinidad and Tobago held England scoreless for 82 minutes at the 2006 World Cup",
+    "Peter Crouch's towering header broke the deadlock in the 83rd minute in 2006",
+    "Trinidad and Tobago's population of 1.4 million is smaller than many English cities",
+    "Dwight Yorke captained Trinidad and Tobago at the 2006 World Cup at age 34"
+  ],
+  "isFirstMeeting": false
+}

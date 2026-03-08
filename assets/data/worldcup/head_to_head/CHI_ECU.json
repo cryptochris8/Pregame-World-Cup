@@ -1,0 +1,49 @@
+{
+  "id": "CHI_ECU",
+  "team1Code": "CHI",
+  "team2Code": "ECU",
+  "totalMatches": 40,
+  "team1Wins": 18,
+  "team2Wins": 12,
+  "draws": 10,
+  "team1Goals": 62,
+  "team2Goals": 46,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2025-03-26",
+  "firstMeeting": "1938-01-23",
+  "notableMatches": [
+    {
+      "year": 2025,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Santiago, Chile",
+      "description": "Chile and Ecuador share goalless draw in tight World Cup qualifier"
+    },
+    {
+      "year": 2015,
+      "tournament": "Copa America",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "CHI",
+      "location": "Santiago, Chile",
+      "description": "Hosts Chile beat Ecuador in opening match of Copa America 2015"
+    },
+    {
+      "year": 2019,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ECU",
+      "location": "Quito, Ecuador",
+      "description": "Ecuador prevail in altitude of Quito against Chile"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "POL_SRB",
+  "team1Code": "POL",
+  "team2Code": "SRB",
+  "totalMatches": 6,
+  "team1Wins": 3,
+  "team2Wins": 0,
+  "draws": 3,
+  "team1Goals": 11,
+  "team2Goals": 8,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2014-03-05",
+  "firstMeeting": "2003-06-07",
+  "notableMatches": [
+    {
+      "year": 2010,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Kufstein, Austria",
+      "description": "Goalless draw in pre-World Cup preparation match"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "POL",
+      "location": "Poznan, Poland",
+      "description": "Poland edges Serbia at home; Poland unbeaten in all-time series"
+    }
+  ]
+}

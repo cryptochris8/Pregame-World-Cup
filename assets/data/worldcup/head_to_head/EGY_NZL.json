@@ -1,0 +1,29 @@
+{
+  "id": "EGY_NZL",
+  "team1Code": "EGY",
+  "team2Code": "NZL",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 1,
+  "team2Goals": 0,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-03-22",
+  "firstMeeting": "2024-03-22",
+  "notableMatches": [
+    {
+      "year": 2024,
+      "tournament": "FIFA Series",
+      "stage": "Semi-final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "EGY",
+      "location": "Cairo, Egypt",
+      "description": "Mostafa Mohamed penalty gives Egypt the win in their only ever meeting"
+    }
+  ]
+}

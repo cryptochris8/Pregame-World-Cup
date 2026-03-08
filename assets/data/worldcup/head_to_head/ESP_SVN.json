@@ -1,0 +1,49 @@
+{
+  "id": "ESP_SVN",
+  "team1Code": "ESP",
+  "team2Code": "SVN",
+  "totalMatches": 5,
+  "team1Wins": 4,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 14,
+  "team2Goals": 4,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-03-04",
+  "firstMeeting": "2000-06-18",
+  "notableMatches": [
+    {
+      "year": 2000,
+      "tournament": "UEFA Euro",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ESP",
+      "location": "Amsterdam, Netherlands",
+      "description": "Raul opens scoring in 4th minute, Etxeberria scores late winner after Zahovic equalizer"
+    },
+    {
+      "year": 2002,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "ESP",
+      "location": "Gwangju, South Korea",
+      "description": "Raul, Valeron, and Hierro penalty lead Spain past Slovenia in World Cup group stage"
+    },
+    {
+      "year": 2024,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 5,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Malaga, Spain",
+      "description": "Spain dominant in comprehensive friendly victory"
+    }
+  ]
+}

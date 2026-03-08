@@ -1,0 +1,49 @@
+{
+  "id": "BOL_MEX",
+  "team1Code": "BOL",
+  "team2Code": "MEX",
+  "totalMatches": 13,
+  "team1Wins": 1,
+  "team2Wins": 10,
+  "draws": 2,
+  "team1Goals": 8,
+  "team2Goals": 28,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2026-01-25",
+  "firstMeeting": "1926-10-31",
+  "notableMatches": [
+    {
+      "year": 2026,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "MEX",
+      "location": "Mexico",
+      "description": "Berterame scores lone goal in Mexico's pre-World Cup friendly win"
+    },
+    {
+      "year": 1997,
+      "tournament": "Copa America",
+      "stage": "Semi-Final",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "BOL",
+      "location": "Sucre, Bolivia",
+      "description": "Bolivia's famous Copa America semi-final upset over Mexico at altitude"
+    },
+    {
+      "year": 2024,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "MEX",
+      "location": "Chicago, USA",
+      "description": "Mexico edge Bolivia at Soldier Field on MexTour"
+    }
+  ]
+}

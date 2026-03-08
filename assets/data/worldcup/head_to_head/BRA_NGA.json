@@ -1,0 +1,49 @@
+{
+  "id": "BRA_NGA",
+  "team1Code": "BRA",
+  "team2Code": "NGA",
+  "totalMatches": 11,
+  "team1Wins": 7,
+  "team2Wins": 2,
+  "draws": 2,
+  "team1Goals": 19,
+  "team2Goals": 11,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-10-13",
+  "firstMeeting": "1996-07-31",
+  "notableMatches": [
+    {
+      "year": 2003,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Abuja, Nigeria",
+      "description": "Brazil dominate in Nigeria with emphatic away victory"
+    },
+    {
+      "year": 2003,
+      "tournament": "FIFA Confederations Cup",
+      "stage": "Semi-Final",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Paris, France",
+      "description": "Goalless semi-final at Confederations Cup settled by penalties"
+    },
+    {
+      "year": 2023,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Portugal",
+      "description": "Nigeria earn creditable draw against Brazil in European friendly"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "EGY_IRN",
+  "team1Code": "EGY",
+  "team2Code": "IRN",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 2,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "1992-10-15",
+  "firstMeeting": "1991-11-08",
+  "notableMatches": [
+    {
+      "year": 1991,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "IRN",
+      "location": "Tehran, Iran",
+      "description": "First meeting between the two North African and Asian sides"
+    },
+    {
+      "year": 1992,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "EGY",
+      "location": "Cairo, Egypt",
+      "description": "Egypt wins the return fixture to level the all-time series"
+    }
+  ]
+}

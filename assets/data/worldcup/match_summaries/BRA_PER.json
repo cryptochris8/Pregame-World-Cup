@@ -1,0 +1,55 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "PER",
+  "team1Name": "Brazil",
+  "team2Name": "Peru",
+  "historicalAnalysis": "Brazil and Peru share one of South American football's most lopsided rivalries. Brazil have dominated this fixture historically, but Peru have produced memorable moments that live long in football history. Most famously, Peru participated in the controversial 1978 World Cup match against Argentina, but their own World Cup encounters with Brazil have been less dramatic.\n\nIn more recent history, these two sides met in the 2019 Copa America final in Brazil, where the hosts won 3-1 with goals from Everton, Gabriel Jesus, and Richarlison. Peru had shocked everyone by reaching the final, led by captain Paolo Guerrero and the tenacious midfield of Yoshimar Yotun. They also met in the 2021 Copa America semi-final, where Brazil won 1-0.\n\nPeru's qualification for the 2026 World Cup was hard-earned through South America's grueling CONMEBOL qualifying campaign. Brazil, meanwhile, endured an uncharacteristically difficult qualifying path that raised questions about their squad depth and tactical identity heading into the tournament.",
+  "keyStorylines": [
+    "Rematch of the 2019 Copa America final won 3-1 by Brazil",
+    "Peru looking to close the gap on their South American rivals",
+    "Brazil's final group stage match with potential advancement implications",
+    "CONMEBOL derby brings South American passion to North American soil"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Brazil's superstar whose individual brilliance can decide any match"
+    },
+    {
+      "name": "Gianluca Lapadula",
+      "teamCode": "PER",
+      "position": "Forward",
+      "reason": "Dual-national striker who has become Peru's main goal threat"
+    },
+    {
+      "name": "Endrick",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Teenage Real Madrid sensation who could be unleashed from the bench"
+    },
+    {
+      "name": "Renato Tapia",
+      "teamCode": "PER",
+      "position": "Midfielder",
+      "reason": "The midfield shield whose defensive work is crucial to Peru's game plan"
+    }
+  ],
+  "tacticalPreview": "Brazil will look to control this South American derby with their characteristic attacking 4-2-3-1. With the creative players given freedom to interchange positions, Brazil's movement can be devastating. Their width through Vinicius Jr. and Raphinha stretches defenses, creating space for runners through the middle.\n\nPeru will employ their trademark defensive resilience in a 4-1-4-1 or 4-2-3-1 that prioritizes organization and discipline. Their game plan against Brazil has traditionally been to stay compact, limit space, and hope for moments of quality on the counter. Peru's defensive record in qualifying was solid, and they will back themselves to make it difficult for Brazil.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "2-0",
+    "confidence": 78,
+    "reasoning": "Brazil's superior quality and depth should prove decisive, even if Peru make it difficult. The Selecao have historically dominated this fixture and have too many match-winners for Peru to contain for 90 minutes.",
+    "alternativeScenario": "Peru's defensive organization could keep this tight, and if they score first from a set-piece or counter-attack, a famous 1-0 upset is possible. A 0-0 draw that helps both teams advance is another scenario."
+  },
+  "pastEncountersSummary": "Brazil have dominated this fixture across decades of South American football. The 2019 Copa America final (3-1) and 2021 semi-final (1-0) are the most recent high-profile meetings. Peru have occasional victories but remain significant underdogs in this matchup.",
+  "funFacts": [
+    "Brazil beat Peru 3-1 in the 2019 Copa America final on home soil",
+    "Peru's best World Cup result was finishing in the quarter-finals in 1970",
+    "Brazil have never lost to Peru at a World Cup",
+    "Peru beat Chile 2-0 in the 2019 Copa America semi-final to reach the final"
+  ],
+  "isFirstMeeting": false
+}

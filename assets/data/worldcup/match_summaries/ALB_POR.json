@@ -1,0 +1,55 @@
+{
+  "team1Code": "ALB",
+  "team2Code": "POR",
+  "team1Name": "Albania",
+  "team2Name": "Portugal",
+  "historicalAnalysis": "Albania and Portugal share a competitive history shaped by European qualification campaigns. Their most notable encounters came during Euro 2016 qualifying, where Portugal won both matches (1-0 in Aveiro and 1-0 in Elbasan). Albania still managed to qualify for Euro 2016 as the best third-place team, marking their first-ever major tournament appearance.\n\nAt Euro 2024, the two sides were drawn together again in Group B. Portugal won 2-1 in a match where Albania actually took an early lead through Nedim Bajrami before Portugal's quality prevailed. That Albania goal showed the progress the Albanian national team has made, and their willingness to attack even against elite opposition.\n\nPortugal are among the favorites for the 2026 World Cup, with a squad that blends the fading brilliance of Cristiano Ronaldo with the emergence of exciting talents. Albania's qualification represents another historic milestone, and they will look to this match as both a measuring stick and an opportunity to make a statement.",
+  "keyStorylines": [
+    "Cristiano Ronaldo potentially playing his final World Cup at age 41",
+    "Albania seeking to build on their Euro 2024 goal against Portugal",
+    "Portugal's quest for a first-ever World Cup title",
+    "Balkan underdogs vs Iberian powerhouse in Group K showdown"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "All-time international leading scorer potentially playing his last World Cup"
+    },
+    {
+      "name": "Armando Broja",
+      "teamCode": "ALB",
+      "position": "Forward",
+      "reason": "Albania's main goal threat who can trouble any defense with his physicality"
+    },
+    {
+      "name": "Bruno Fernandes",
+      "teamCode": "POR",
+      "position": "Midfielder",
+      "reason": "Portugal's creative engine who provides goals and assists in abundance"
+    },
+    {
+      "name": "Berat Djimsiti",
+      "teamCode": "ALB",
+      "position": "Defender",
+      "reason": "Atalanta center-back tasked with marshaling the defense against Ronaldo"
+    }
+  ],
+  "tacticalPreview": "Portugal will control possession with their 4-3-3 system, using the width of their wingers and the movement of Ronaldo to create scoring opportunities. Bruno Fernandes will orchestrate from midfield, while the full-backs push high to overload Albania's flanks.\n\nAlbania will set up to contain and frustrate, likely employing a 5-3-2 to pack the defense and limit Portugal's space in the final third. Their Euro 2024 approach of pressing high in bursts and then retreating showed tactical intelligence. The key for Albania is to remain compact, avoid errors, and capitalize on set-pieces or counter-attacks.",
+  "prediction": {
+    "predictedOutcome": "POR",
+    "predictedScore": "3-1",
+    "confidence": 80,
+    "reasoning": "Portugal's squad depth and individual quality should be too much for Albania. However, Albania have shown at Euro 2024 that they can score against Portugal, so a clean sheet is unlikely for the Portuguese.",
+    "alternativeScenario": "If Albania can keep the score level into the second half, Portuguese frustration could grow and Albania could snatch a draw. A 1-1 result would be a historic achievement for the Albanians."
+  },
+  "pastEncountersSummary": "Portugal have won all recent competitive meetings, including two 1-0 victories in Euro 2016 qualifying and a 2-1 win at Euro 2024. However, Albania's ability to score at Euro 2024 showed their growing confidence against elite opponents.",
+  "funFacts": [
+    "Albania's Nedim Bajrami scored the fastest goal in European Championship history (23 seconds) against Italy at Euro 2024",
+    "Portugal have never lost to Albania in any competition",
+    "Albania qualified for the World Cup for the first time in their history in 2026",
+    "Cristiano Ronaldo has scored in 5 different World Cup tournaments"
+  ],
+  "isFirstMeeting": false
+}

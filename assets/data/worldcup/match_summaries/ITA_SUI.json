@@ -1,0 +1,55 @@
+{
+  "team1Code": "ITA",
+  "team2Code": "SUI",
+  "team1Name": "Italy",
+  "team2Name": "Switzerland",
+  "historicalAnalysis": "Italy and Switzerland are well-acquainted rivals, having been drawn together in qualifying groups and at European Championships multiple times. Their most recent high-profile encounter came at Euro 2024, where Switzerland stunned Italy 2-0 in the Round of 16, a result that sent shockwaves through Italian football and led to significant squad and coaching changes.\n\nThat Euro 2024 defeat was particularly painful for Italy as defending European champions, exposing tactical shortcomings and a lack of squad depth. Switzerland's disciplined performance, with goals from Remo Freuler and Ruben Vargas, was a masterclass in how to neutralize Italian football.\n\nSwitzerland have quietly established themselves as one of Europe's most consistent performers. Their blend of technical ability, tactical discipline, and physical fitness makes them dangerous opponents for anyone. This Group B matchday 2 encounter is effectively a rematch of Euro 2024 and carries enormous psychological weight for both teams.",
+  "keyStorylines": [
+    "Rematch of Switzerland's stunning 2-0 Euro 2024 Round of 16 victory",
+    "Italy seeking revenge and redemption after that embarrassing defeat",
+    "Switzerland proving their Euro 2024 performance was no fluke",
+    "Group B blockbuster with major advancement implications"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Nicolo Barella",
+      "teamCode": "ITA",
+      "position": "Midfielder",
+      "reason": "Italy's best player who must dominate midfield to avoid another Swiss upset"
+    },
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "position": "Midfielder",
+      "reason": "Bayer Leverkusen's midfield general who orchestrates Switzerland's pressing game"
+    },
+    {
+      "name": "Gianluca Scamacca",
+      "teamCode": "ITA",
+      "position": "Forward",
+      "reason": "Italy's physical striker who provides a different attacking dimension"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "position": "Forward",
+      "reason": "Powerful striker whose movement and finishing trouble the best defenses"
+    }
+  ],
+  "tacticalPreview": "Italy will need to approach this match differently than their Euro 2024 encounter, where they were outplayed in every department. A more proactive 4-3-3 with Barella given license to drive forward, combined with higher pressing, should help Italy avoid being pinned back as they were at the Euros.\n\nSwitzerland's 3-4-2-1 under Murat Yakin is built on positional discipline, aggressive pressing triggers, and quick transitions. Xhaka dictates tempo from deep, while the wing-backs provide width and goal threat. Switzerland will be full of confidence after their Euro 2024 victory and will look to replicate the same approach. The key battle is Italy's ability to handle Switzerland's pressing and whether the Azzurri have learned from their previous tactical errors.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 42,
+    "reasoning": "Both teams have the quality to win this match, but the psychological scars from Euro 2024 create uncertainty. Italy's desire for revenge balanced against Switzerland's confidence makes a draw the most likely outcome in a tense, tactical battle.",
+    "alternativeScenario": "Switzerland could replicate their Euro 2024 performance for another convincing 2-0 or 2-1 victory. Equally, Italy's motivation for revenge could produce a dominant 3-1 win if they start aggressively."
+  },
+  "pastEncountersSummary": "Their recent history is dominated by Switzerland's stunning 2-0 Euro 2024 Round of 16 victory. Before that, they met in Euro 2020 qualifying (Italy won both meetings) and have faced each other regularly in various competitions. The rivalry is intense and well-balanced over time.",
+  "funFacts": [
+    "Switzerland eliminated Italy from Euro 2024 with a 2-0 Round of 16 victory",
+    "Italy failed to qualify for the 2022 World Cup partly due to results against Switzerland in qualifying",
+    "Granit Xhaka led Bayer Leverkusen to an unbeaten Bundesliga title",
+    "Switzerland have reached the knockout rounds at the last three major tournaments"
+  ],
+  "isFirstMeeting": false
+}

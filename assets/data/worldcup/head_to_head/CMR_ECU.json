@@ -1,0 +1,29 @@
+{
+  "id": "CMR_ECU",
+  "team1Code": "CMR",
+  "team2Code": "ECU",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 0,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2014-09-10",
+  "firstMeeting": "2014-09-10",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "ECU",
+      "location": "Harrison, USA",
+      "description": "Ecuador edge Cameroon in friendly played in the United States"
+    }
+  ]
+}

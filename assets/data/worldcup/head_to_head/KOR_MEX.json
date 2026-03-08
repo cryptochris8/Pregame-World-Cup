@@ -1,0 +1,49 @@
+{
+  "id": "KOR_MEX",
+  "team1Code": "KOR",
+  "team2Code": "MEX",
+  "totalMatches": 13,
+  "team1Wins": 4,
+  "team2Wins": 8,
+  "draws": 1,
+  "team1Goals": 14,
+  "team2Goals": 26,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 2,
+  "worldCupDraws": 0,
+  "lastMatch": "2025-09-09",
+  "firstMeeting": "1954-06-17",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "MEX",
+      "location": "Rostov-on-Don, Russia",
+      "description": "Vela and Hernandez guide Mexico past South Korea"
+    },
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "MEX",
+      "location": "Lyon, France",
+      "description": "Mexico dominate South Korea despite early Ha Seok-ju goal"
+    },
+    {
+      "year": 2025,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "South Korea",
+      "description": "Entertaining draw in most recent meeting between the sides"
+    }
+  ]
+}

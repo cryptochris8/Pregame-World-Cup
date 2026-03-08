@@ -1,0 +1,29 @@
+{
+  "id": "DEN_KOR",
+  "team1Code": "DEN",
+  "team2Code": "KOR",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 3,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2009-11-14",
+  "firstMeeting": "2009-11-14",
+  "notableMatches": [
+    {
+      "year": 2009,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "DEN",
+      "location": "Copenhagen, Denmark",
+      "description": "Denmark's sole meeting with South Korea ends in convincing friendly win"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "team1Code": "CRO",
+  "team2Code": "TRI",
+  "team1Name": "Croatia",
+  "team2Name": "Trinidad and Tobago",
+  "historicalAnalysis": "Croatia and Trinidad and Tobago share a memorable World Cup connection from the 2006 tournament in Germany, where they were drawn in the same group. In their group stage encounter, Croatia won 2-2... actually, they drew 0-0 in one of the group's tighter matches, before both teams' fates were decided in subsequent fixtures. Croatia advanced while Trinidad and Tobago, in their only previous World Cup appearance, were eliminated.\n\nThat 2006 World Cup remains the pinnacle of Trinidadian football. The Soca Warriors, led by coach Leo Beenhakker, captured the hearts of neutrals worldwide. Their qualification for the 2026 World Cup would represent a return to the global stage after two decades, a remarkable achievement for a Caribbean nation of just 1.4 million people.\n\nCroatia's trajectory since 2006 has been extraordinary. They reached the 2018 World Cup final in Russia and finished third at the 2022 World Cup in Qatar, establishing themselves as one of football's elite nations despite their small population. This Group L matchday 3 fixture sees the tournament aristocrats against the Caribbean underdogs.",
+  "keyStorylines": [
+    "Possible rematch of their 2006 World Cup group stage encounter",
+    "Trinidad and Tobago's fairy-tale return to the World Cup",
+    "Croatia's aging golden generation in a must-win group stage match",
+    "Luka Modric potentially playing his final World Cup matches"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luka Modric",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "The 40-year-old maestro seeking to cap his legendary career with World Cup glory"
+    },
+    {
+      "name": "Levi Garcia",
+      "teamCode": "TRI",
+      "position": "Winger",
+      "reason": "Trinidad's most creative player who brings flair and directness"
+    },
+    {
+      "name": "Josko Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "Manchester City's world-class center-back who anchors Croatia's defense"
+    },
+    {
+      "name": "Duane Muckette",
+      "teamCode": "TRI",
+      "position": "Midfielder",
+      "reason": "Young midfielder representing the future of Trinidadian football"
+    }
+  ],
+  "tacticalPreview": "Croatia's 4-3-3 remains built around midfield excellence, even as the core ages. Modric's ability to control tempo, combined with Kovacic's energy and the creative contributions of their forwards, makes Croatia a tough side to play against. They will look to dominate possession and patiently probe for openings.\n\nTrinidad and Tobago will set up in a deep, compact 5-4-1 or 4-5-1 designed to frustrate Croatia. Their game plan will revolve around denying space in central areas and looking to break quickly when they win the ball. Set-pieces will be a key opportunity, as Caribbean teams traditionally produce excellent athletes who are dangerous in the air. The energy and passion of representing their nation at the World Cup will drive every Trinidadian player.",
+  "prediction": {
+    "predictedOutcome": "CRO",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Croatia's quality gap is significant, and their World Cup pedigree (finalist in 2018, third in 2022) makes them heavy favorites. Trinidad and Tobago will compete with heart but lack the squad depth to sustain resistance for 90 minutes.",
+    "alternativeScenario": "If Trinidad and Tobago defend heroically and keep it 0-0 into the second half, the pressure on Croatia could build. A late 1-0 Croatia win or even a shock draw would be a remarkable achievement for the Soca Warriors."
+  },
+  "pastEncountersSummary": "Their most notable meeting came at the 2006 World Cup in Germany, where they were grouped together. Croatia have the vastly superior record, but Trinidad and Tobago's World Cup experience in 2006 showed they can compete at the highest level for short periods.",
+  "funFacts": [
+    "Trinidad and Tobago's population of 1.4 million makes them one of the smallest nations ever to play at a World Cup",
+    "Croatia reached the World Cup final in 2018 with a population of just 4 million",
+    "Dwight Yorke is Trinidad and Tobago's most famous footballer, having starred at Manchester United",
+    "Both teams have appeared at only a handful of World Cups despite their footballing passion"
+  ],
+  "isFirstMeeting": false
+}

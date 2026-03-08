@@ -1,0 +1,55 @@
+{
+  "team1Code": "HON",
+  "team2Code": "SEN",
+  "team1Name": "Honduras",
+  "team2Name": "Senegal",
+  "historicalAnalysis": "Honduras and Senegal have had minimal encounters in international football, with no notable competitive meetings in their history. This Group I matchday 3 fixture brings together two teams from different confederations with distinct footballing philosophies.\n\nSenegal have established themselves as Africa's premier footballing nation in recent years. Their 2022 Africa Cup of Nations triumph, led by Sadio Mane, was the crowning achievement of a golden generation. At the 2022 World Cup, Senegal reached the Round of 16 before falling to England 3-0. Their squad combines European club experience with raw African talent and incredible athleticism.\n\nHonduras bring a Central American fighting spirit to the tournament. Their World Cup history is modest but proud, and they have shown the ability to compete physically against anyone. This matchday 3 encounter could be decisive for both teams' knockout round hopes, adding enormous stakes to an already compelling cross-continental clash.",
+  "keyStorylines": [
+    "Senegal's golden generation seeking another deep World Cup run",
+    "Honduras fighting for survival in the final group stage match",
+    "African champions vs Central American warriors in Group I",
+    "A potential must-win match for both teams' advancement hopes"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Sadio Mane",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "Africa's best player and Senegal's all-time leading scorer and inspiration"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "position": "Forward",
+      "reason": "Honduras' most dangerous attacker with pace to burn"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "position": "Defender",
+      "reason": "Commanding center-back who anchors Senegal's defense with authority"
+    },
+    {
+      "name": "Luis Palma",
+      "teamCode": "HON",
+      "position": "Winger",
+      "reason": "Celtic's tricky winger who provides creativity for Honduras"
+    }
+  ],
+  "tacticalPreview": "Senegal's 4-3-3 is built on pace, power, and pressing. With Mane leading the attack, their transitions from defense to offense are lightning-fast. The midfield is combative and technically sound, while the defense is organized and physically dominant. Senegal's set-piece quality is another weapon.\n\nHonduras will need to match Senegal's physical intensity while finding ways to create offensive opportunities. Their 4-4-2 will emphasize discipline and structure, with the aim of neutralizing Senegal's speed on the wings. Honduras' strength in aerial duels could be a factor from set-pieces. The key challenge for Honduras is surviving Senegal's pressing and maintaining composure on the ball.",
+  "prediction": {
+    "predictedOutcome": "SEN",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "Senegal's superior quality, particularly in attack through Mane, gives them a clear advantage. Their experience at major tournaments (2022 World Cup, 2022 AFCON winners) provides a composure that Honduras may lack at this level.",
+    "alternativeScenario": "Honduras' physical resilience and familiarity with North American playing conditions could keep this closer than expected. A 1-0 result either way or a 1-1 draw are realistic alternatives."
+  },
+  "pastEncountersSummary": "Honduras and Senegal have no significant head-to-head history. This World Cup 2026 group stage match will be their most high-profile encounter, with both teams having strong motivations to secure a positive result.",
+  "funFacts": [
+    "Senegal won the Africa Cup of Nations for the first time in 2022",
+    "Honduras have never won a match at the World Cup in their four appearances",
+    "Senegal reached the 2002 World Cup quarter-finals in their debut tournament",
+    "Sadio Mane has scored over 40 international goals for Senegal"
+  ],
+  "isFirstMeeting": true
+}

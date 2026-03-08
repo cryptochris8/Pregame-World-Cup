@@ -1,0 +1,21 @@
+{
+  "id": "manager_alb",
+  "firstName": "Sylvinho",
+  "lastName": "Mendes Campos Júnior",
+  "commonName": "Sylvinho",
+  "dateOfBirth": "1974-04-12",
+  "nationality": "Brazil",
+  "currentTeam": "Albania",
+  "currentTeamCode": "ALB",
+  "photoUrl": "assets/managers/sylvinho.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 8,
+  "previousTeams": ["Corinthians", "Lyon", "Albania (Assistant)"],
+  "trophies": [],
+  "careerWins": 42,
+  "careerDraws": 22,
+  "careerLosses": 30,
+  "careerWinPercentage": 45,
+  "bio": "Former Barcelona and Arsenal left-back who transitioned into coaching. Took charge of Albania in 2024 and guided them through World Cup qualifying, bringing tactical discipline and international experience to the Balkan side."
+}

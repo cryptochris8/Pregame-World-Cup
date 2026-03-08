@@ -1,0 +1,55 @@
+{
+  "team1Code": "BOL",
+  "team2Code": "DEN",
+  "team1Name": "Bolivia",
+  "team2Name": "Denmark",
+  "historicalAnalysis": "Bolivia and Denmark have virtually no head-to-head history, making this Group A encounter a novel matchup on the World Cup stage. Bolivia's World Cup history is limited but includes a memorable 1994 campaign where they qualified for the tournament in the United States. Their record at sea level away from their La Paz fortress has been challenging, but their 2026 qualification represents a remarkable achievement.\n\nDenmark, by contrast, are experienced World Cup campaigners with a proud tournament history. Their 1992 European Championship triumph remains one of football's greatest fairy tales, and they reached the semi-finals of Euro 2020. Denmark's golden generation features players across Europe's top leagues, led by Christian Eriksen's inspirational return to international football after his cardiac arrest at Euro 2020.\n\nThis match comes on matchday 2, with Denmark having already faced South Korea and Bolivia having played Mexico. The result could be crucial for both teams' advancement hopes in a competitive Group A.",
+  "keyStorylines": [
+    "Bolivia's return to the World Cup after a long absence",
+    "Denmark looking to dominate Group A as one of the favorites",
+    "Bolivia's altitude advantage is neutralized at North American venues",
+    "Christian Eriksen's continued inspirational story"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Eriksen",
+      "teamCode": "DEN",
+      "position": "Midfielder",
+      "reason": "Denmark's heartbeat whose return from cardiac arrest inspired the world"
+    },
+    {
+      "name": "Marcelo Martins",
+      "teamCode": "BOL",
+      "position": "Forward",
+      "reason": "Bolivia's all-time leading scorer who carries the nation's attacking hopes"
+    },
+    {
+      "name": "Rasmus Hojlund",
+      "teamCode": "DEN",
+      "position": "Forward",
+      "reason": "Young Manchester United striker bringing pace and power to Denmark's attack"
+    },
+    {
+      "name": "Carlos Lampe",
+      "teamCode": "BOL",
+      "position": "Goalkeeper",
+      "reason": "Experienced goalkeeper who will be crucial to Bolivia's defensive efforts"
+    }
+  ],
+  "tacticalPreview": "Denmark's 3-4-3 or 3-5-2 system provides defensive solidity with attacking width through their wing-backs. Eriksen orchestrates play from a central position, while Hojlund provides the focal point up front. Their tactical flexibility under their coach allows them to adapt to different opponents.\n\nBolivia traditionally play a direct 4-4-2 that relies on physicality and defensive discipline. Away from La Paz's altitude, they must find other ways to compete. Their challenge against Denmark will be immense: they must stay organized, limit Danish creativity, and hope for set-piece opportunities or counter-attacking moments. The fitness factor at sea level will be a concern for Bolivian players accustomed to altitude.",
+  "prediction": {
+    "predictedOutcome": "DEN",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Denmark's superior squad quality, tactical sophistication, and experience at major tournaments should prove too much for Bolivia. Without their altitude advantage, Bolivia will struggle to contain Denmark's creative players.",
+    "alternativeScenario": "If Bolivia can keep the score 0-0 into the second half through heroic defending, nerves could become a factor. A 1-0 Denmark win after a hard-fought match is possible."
+  },
+  "pastEncountersSummary": "These two nations have virtually no competitive history against each other. This World Cup group stage meeting will establish the baseline for what is a completely fresh fixture.",
+  "funFacts": [
+    "Bolivia's home ground in La Paz sits at 3,637 meters above sea level",
+    "Denmark won the 1992 European Championship after being late replacements",
+    "Bolivia last appeared at a World Cup in 1994, also hosted in the United States",
+    "Christian Eriksen suffered a cardiac arrest on the pitch at Euro 2020 and made a miraculous recovery"
+  ],
+  "isFirstMeeting": true
+}

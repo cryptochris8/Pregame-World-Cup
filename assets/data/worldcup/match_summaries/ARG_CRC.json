@@ -1,0 +1,55 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "CRC",
+  "team1Name": "Argentina",
+  "team2Name": "Costa Rica",
+  "historicalAnalysis": "Argentina and Costa Rica have a modest history of encounters, but their meetings carry the weight of CONCACAF-vs-CONMEBOL dynamics. Their most memorable World Cup connection came indirectly: Costa Rica's fairy-tale run to the 2014 World Cup quarter-finals in Brazil, where they topped a group containing Uruguay, Italy, and England, was one of the great underdog stories.\n\nCosta Rica have shown they can compete against South American giants. Their resilient defensive style, epitomized by their 2014 run under Jorge Luis Pinto, has been a hallmark of Tico football. However, their 2022 World Cup campaign was disappointing, with an early group-stage exit.\n\nArgentina arrive as defending World Cup champions, having won the 2022 tournament in Qatar with a legendary performance from Lionel Messi. While Messi's involvement in 2026 remains a major storyline, Argentina have built a squad capable of defending their title with or without their iconic captain. This match represents the final Group J fixture, where Argentina will look to seal their knockout round berth.",
+  "keyStorylines": [
+    "Defending champions Argentina looking to finish the group stage strong",
+    "Costa Rica hoping to recapture their 2014 World Cup magic",
+    "Will Lionel Messi feature in what could be his final World Cup match?",
+    "Group J decider with potential knockout round implications"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The GOAT potentially playing his final World Cup games at age 38"
+    },
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "position": "Goalkeeper",
+      "reason": "Legendary Costa Rican goalkeeper whose 2014 heroics defined a generation"
+    },
+    {
+      "name": "Julian Alvarez",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "Argentina's dynamic striker who was crucial to the 2022 World Cup triumph"
+    },
+    {
+      "name": "Jewison Bennette",
+      "teamCode": "CRC",
+      "position": "Winger",
+      "reason": "Young talent representing the future of Costa Rican football"
+    }
+  ],
+  "tacticalPreview": "Argentina's 4-3-3 is among the most balanced systems in world football, combining defensive solidity with devastating attacking transitions. The midfield trio of De Paul, Enzo Fernandez, and Mac Allister provides the perfect platform for their forwards.\n\nCosta Rica will revert to their tried-and-tested defensive approach: a compact 5-4-1 designed to limit space and frustrate superior opponents. Their 2014 blueprint showed that discipline and goalkeeper heroics can overcome quality gaps. However, Argentina's 2022 champions have shown they can break down the most stubborn defenses. Costa Rica will need to be perfect defensively and clinical with their rare opportunities.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "3-0",
+    "confidence": 85,
+    "reasoning": "Argentina's quality and World Cup-winning momentum should see them through comfortably. Costa Rica lack the squad depth to sustain defensive resistance for 90 minutes against this caliber of opposition.",
+    "alternativeScenario": "If Costa Rica can replicate their 2014 defensive heroics and keep it 0-0 deep into the second half, nerves could play a factor. A 1-0 Argentina win or even a shock draw is not impossible."
+  },
+  "pastEncountersSummary": "Argentina and Costa Rica have met sporadically, with Argentina dominating most encounters. Their limited history means there is no intense rivalry, but Costa Rica's ability to punch above their weight against South American teams adds intrigue.",
+  "funFacts": [
+    "Costa Rica topped a 2014 World Cup group containing Uruguay, Italy, and England",
+    "Argentina have won three World Cups (1978, 1986, 2022)",
+    "Costa Rica's Keylor Navas made 3 penalty saves in the 2014 World Cup",
+    "This match will be played at AT&T Stadium in Dallas, one of the largest venues at the tournament"
+  ],
+  "isFirstMeeting": false
+}

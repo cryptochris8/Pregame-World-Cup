@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Maarten Paes": {
+      "bio": "Born in the Netherlands to an Indonesian mother, Paes chose to represent Indonesia and has quickly become the undisputed number one goalkeeper. His MLS experience with FC Dallas and his Dutch footballing education have given Indonesia a goalkeeper of genuine international quality, and he has been a transformative figure in the team's historic World Cup qualification.",
+      "playingStyle": "Modern, athletic goalkeeper with excellent reflexes, confident distribution with both feet, and the composure to play out from the back in possession-based systems",
+      "keyStrengths": ["Outstanding reflexes and shot-stopping", "Confident distribution and playing out from the back", "Athletic ability and command of the penalty area"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and one of Indonesia's most important players; his quality between the posts gives Indonesia a genuine foundation to compete at the World Cup level",
+      "notableFact": "Born and raised in the Netherlands, he chose to represent Indonesia through his mother's heritage and has been instrumental in their historic first-ever World Cup qualification"
+    },
+    "Kevin Diks": {
+      "bio": "A Dutch-born defender with Indonesian heritage who has played at the highest levels of European football, including stints at Fiorentina in Serie A and FC Copenhagen in Denmark. Diks chose to represent Indonesia and his European experience has been invaluable in raising the defensive standard of the national team.",
+      "playingStyle": "Experienced, tactically intelligent right-back with good positional sense developed in European football, reliable defending, and the ability to contribute in attack with quality crosses",
+      "keyStrengths": ["European tactical education and positioning", "Reliable defending and one-on-one ability", "Experience at the highest level of European club football"],
+      "worldCup2026Role": "Starting right-back whose European experience provides Indonesia with defensive stability and tactical intelligence; his quality on the ball helps Indonesia build attacks from deep",
+      "notableFact": "Played for Fiorentina in Serie A and has experience in multiple European leagues including the Danish Superliga, making him one of Indonesia's most technically accomplished defenders"
+    },
+    "Jay Idzes": {
+      "bio": "The cornerstone of Indonesia's defense and one of the most remarkable stories in their World Cup qualification journey. Born in the Netherlands with Indonesian roots, Idzes plays for Sassuolo in Serie A and has brought a level of defensive quality that Indonesia has never previously possessed. His aerial dominance and composure on the ball have been transformative.",
+      "playingStyle": "Commanding, ball-playing center-back with outstanding aerial ability, calm distribution from the back, and the tactical intelligence to read the game at the highest European level",
+      "keyStrengths": ["Aerial dominance and physical presence at 190cm", "Ball-playing ability and composure in possession", "Tactical intelligence honed in Serie A"],
+      "worldCup2026Role": "Starting center-back and the defensive bedrock of the team; his Serie A quality and commanding presence give Indonesia a genuine world-class defensive foundation for their historic World Cup debut",
+      "notableFact": "Plays in Serie A for Sassuolo and is valued at 10 million euros, making him Indonesia's most valuable player and a symbol of the country's transformation through naturalized players"
+    },
+    "Jordi Amat": {
+      "bio": "A Spanish-born center-back with Indonesian ancestry who has played in the Premier League with Swansea City and across European football. Amat's vast experience and defensive know-how have been crucial to Indonesia's improved defensive organization during their qualifying campaign.",
+      "playingStyle": "Experienced, no-nonsense center-back who excels in aerial duels, aggressive marking, and organizing the defensive line with the communication skills developed through years of European football",
+      "keyStrengths": ["Premier League and European experience", "Aerial ability and physical defending", "Defensive organization and leadership"],
+      "worldCup2026Role": "Experienced center-back providing defensive depth and leadership; his years of European football provide Indonesia with a voice of experience in the defensive line",
+      "notableFact": "Played in the Premier League with Swansea City and has experience across multiple European leagues, making him one of the most well-traveled and experienced players in Indonesia's squad"
+    },
+    "Rizky Ridho": {
+      "bio": "One of the few domestically based defenders in Indonesia's squad, Rizky Ridho has been a consistent performer for Persija Jakarta and has earned regular international recognition. His growth alongside the naturalized European defenders has accelerated his development and made him a genuine World Cup-caliber defender.",
+      "playingStyle": "Developing, domestically-based center-back who has grown significantly through exposure to higher-quality teammates, combining improving positioning with physical commitment and growing confidence",
+      "keyStrengths": ["Physical commitment and defensive intensity", "Growth alongside international-quality teammates", "Familiarity with Indonesian football culture and conditions"],
+      "worldCup2026Role": "Defensive depth option representing Indonesia's domestic talent alongside the naturalized European players; his improvement symbolizes the positive impact of Indonesia's squad-building approach",
+      "notableFact": "One of the homegrown Indonesian defenders in the squad who has developed significantly through playing alongside European-raised teammates in the national team setup"
+    },
+    "Sandy Walsh": {
+      "bio": "A Belgian-born right-back of Indonesian descent who has built a strong career in Japanese football with Yokohama F. Marinos. Walsh's pace, technical ability, and tactical intelligence have made him a key figure in Indonesia's defensive setup, and his J-League experience has given him a high level of competitive football.",
+      "playingStyle": "Quick, technically capable right-back who combines solid defensive work with attacking threat, using his pace to support attacks and his tactical awareness to maintain defensive shape",
+      "keyStrengths": ["Pace and attacking threat from right-back", "Tactical intelligence from J-League experience", "Versatility and ability to play in multiple systems"],
+      "worldCup2026Role": "Versatile defensive option who can play at right-back or wing-back; his pace and tactical intelligence give the coaching staff flexibility in their defensive setup",
+      "notableFact": "Born in Belgium and raised through Belgian football before choosing to represent Indonesia, he has thrived in the J-League with Yokohama F. Marinos, one of Japan's top clubs"
+    },
+    "Marselino Ferdinan": {
+      "bio": "One of the brightest homegrown talents in Indonesian football history, Marselino earned a historic move to Oxford United in the English Championship. His flair, creativity, and ability to produce moments of magic have made him a fan favorite and a symbol of Indonesian football's rising ambitions on the world stage.",
+      "playingStyle": "Creative, technically brilliant attacking midfielder with excellent dribbling, clever movement between the lines, and the confidence to attempt the spectacular on the biggest stages",
+      "keyStrengths": ["Outstanding dribbling and close control", "Creative vision and through ball delivery", "Fearlessness and confidence in big matches"],
+      "worldCup2026Role": "Key creative player and one of Indonesia's most talented homegrown footballers; his ability to create chances and unlock defenses is central to Indonesia's attacking ambitions at the World Cup",
+      "notableFact": "Made a groundbreaking move to English football with Oxford United in the Championship, becoming one of the first Indonesian players to play in English professional football"
+    },
+    "Thom Haye": {
+      "bio": "A Dutch-born midfielder with Indonesian heritage who has brought European midfield quality to the national team. Haye's experience in the Eredivisie with Almere City, combined with his physical attributes and passing ability, has given Indonesia a midfield presence they previously lacked at the international level.",
+      "playingStyle": "Tall, physically commanding midfielder with good passing range, the ability to win aerial duels in midfield, and the technical quality to control possession and dictate the tempo of matches",
+      "keyStrengths": ["Physical presence and aerial ability in midfield", "Passing range and ball distribution", "Experience in Dutch professional football"],
+      "worldCup2026Role": "Starting midfielder whose physical presence and passing ability provide Indonesia with control and stability in the engine room; his European experience elevates the quality of Indonesia's midfield play",
+      "notableFact": "Has scored important goals for Indonesia in qualifying and his Dutch football education has brought a level of tactical sophistication to the national team's midfield"
+    },
+    "Rafael Struick": {
+      "bio": "A young striker with Indonesian heritage who was born and raised in the Netherlands before choosing to represent Indonesia. Struick's pace, movement, and clinical finishing have made him one of Indonesia's most exciting attacking prospects, and he burst onto the scene with crucial goals during the qualifying campaign.",
+      "playingStyle": "Quick, intelligent young striker with excellent movement off the ball, clinical finishing when chances arrive, and the pace to exploit spaces behind opposition defenses on the counter-attack",
+      "keyStrengths": ["Pace and intelligent attacking movement", "Clinical finishing and composure in front of goal", "Counter-attacking threat and runs in behind"],
+      "worldCup2026Role": "Starting striker and Indonesia's primary goalscoring threat; his pace and finishing quality make him the player most likely to score Indonesia's goals at the World Cup",
+      "notableFact": "Scored crucial goals during Indonesia's World Cup qualifying campaign, including strikes that helped secure their historic qualification for the 2026 tournament"
+    },
+    "Egy Maulana Vikri": {
+      "bio": "Once hailed as the 'Indonesian Messi' after going viral with stunning goals as a teenager, Egy Maulana Vikri is one of the most naturally gifted footballers Indonesia has ever produced. Despite a career that has had its ups and downs, including a move to Polish football, his technical ability and creative genius remain unmatched among homegrown Indonesian players.",
+      "playingStyle": "Technically gifted playmaker with exceptional close control, creative dribbling ability, and the vision to see passes that others cannot, operating as the creative hub of Indonesia's attack",
+      "keyStrengths": ["Exceptional technical ability and close control", "Creative vision and incisive passing", "Dribbling ability to beat defenders in one-on-one situations"],
+      "worldCup2026Role": "Creative attacking midfielder and Indonesia's most technically gifted homegrown player; his ability to produce moments of individual brilliance makes him a potential match-winner on the World Cup stage",
+      "notableFact": "Went viral as a teenager after scoring stunning goals that earned him the nickname 'Indonesian Messi' and attracted the attention of clubs across Europe and Asia"
+    },
+    "Ragnar Oratmangoen": {
+      "bio": "A Dutch-born winger of Indonesian descent who has played in the Belgian Pro League with FCV Dender. Oratmangoen's pace, directness, and European experience have made him a valuable wide option for Indonesia, and his goal-scoring record from the wing demonstrates his attacking threat.",
+      "playingStyle": "Quick, direct winger who loves to take on defenders with pace and skill, cut inside to create shooting opportunities, and deliver dangerous crosses from wide positions",
+      "keyStrengths": ["Pace and directness on the wing", "Goal-scoring threat from wide positions", "European football experience and competitive edge"],
+      "worldCup2026Role": "Wide attacking option providing pace and goal threat from the left wing; his directness and European competitive experience make him a dangerous weapon in Indonesia's attacking arsenal",
+      "notableFact": "Has scored regularly for Indonesia in qualifying matches, demonstrating his ability to contribute goals from wide positions and making him one of the team's most productive attackers"
+    },
+    "Pratama Arhan": {
+      "bio": "One of the most recognizable Indonesian footballers globally, Pratama Arhan became famous for his spectacular long-throw technique that creates chaos in opposition penalty areas. A left-back who has played in Japan and Thailand, his unique skill set and attacking threat from set pieces have made him a cult figure in Southeast Asian football.",
+      "playingStyle": "Attacking left-back famous for his extraordinary long throw-ins that function as set pieces, combined with strong overlapping runs, decent crossing, and improving defensive awareness",
+      "keyStrengths": ["Extraordinary long throw-in ability that creates set-piece opportunities", "Attacking overlapping runs from left-back", "Energy and willingness to support the attack"],
+      "worldCup2026Role": "Starting left-back whose unique long throw-in ability gives Indonesia an unorthodox attacking weapon; his throws into the box create genuine goal-scoring opportunities from deep positions",
+      "notableFact": "His extraordinarily long throw-ins, which can reach the far post of the penalty area, have gone viral on social media and represent one of the most unique weapons any team will bring to the 2026 World Cup"
+    },
+    "Mees Hilgers": {
+      "bio": "A talented Dutch-born center-back with Indonesian ancestry who plays for FC Twente in the Eredivisie. Hilgers has quickly become one of Indonesia's most important defensive players, bringing Dutch defensive education, composure on the ball, and aerial dominance to the backline.",
+      "playingStyle": "Modern, ball-playing center-back with excellent aerial ability, composure in possession, and the tactical awareness developed through the Dutch football system at FC Twente",
+      "keyStrengths": ["Aerial dominance and heading ability", "Ball-playing composure from the back line", "Dutch tactical education and defensive intelligence"],
+      "worldCup2026Role": "Key center-back option whose Dutch football education and aerial ability strengthen Indonesia's defensive unit; his composure on the ball helps Indonesia play out from the back under pressure",
+      "notableFact": "Plays for FC Twente in the Eredivisie and has quickly become one of Indonesia's most valued defenders since choosing to represent the country through his Indonesian heritage"
+    },
+    "Ivar Jenner": {
+      "bio": "A young Dutch-Indonesian midfielder who has been developing through the FC Utrecht system in the Netherlands. Jenner's technical quality, passing ability, and youthful energy have earned him a place in Indonesia's World Cup squad as part of the country's investment in developing young talent.",
+      "playingStyle": "Young, technically gifted central midfielder with good passing ability, intelligence in finding space, and the Dutch football education that emphasizes composure and ball retention",
+      "keyStrengths": ["Technical quality and passing precision", "Intelligence and spatial awareness", "Dutch football education and tactical understanding"],
+      "worldCup2026Role": "Young midfield talent providing squad depth and technical quality; his development in Dutch football ensures Indonesia have a capable midfielder ready to contribute as needed",
+      "notableFact": "Has been developing through FC Utrecht's respected academy system in the Netherlands and has scored for Indonesia in international competition at a young age"
+    },
+    "Nathan Tjoe-A-On": {
+      "bio": "A Surinamese-born left-back with Indonesian heritage who plays for Swansea City in the English Championship. Tjoe-A-On's experience in competitive English football, defensive reliability, and attacking contribution from full-back have made him a valuable addition to Indonesia's defensive options.",
+      "playingStyle": "Solid, defensively reliable left-back with good stamina, the ability to get forward and support attacks, and the competitive hardness developed through playing in the English Championship",
+      "keyStrengths": ["Defensive reliability and consistency", "Stamina and ability to cover the left flank", "Championship-level competitive experience"],
+      "worldCup2026Role": "Left-back option providing defensive reliability and Championship-level experience; his ability to compete in the demanding English second tier demonstrates his readiness for World Cup football",
+      "notableFact": "Plays in the English Championship with Swansea City, one of the most physically demanding leagues in world football, giving him experience that translates directly to international competition"
+    },
+    "Justin Hubner": {
+      "bio": "One of the most exciting young defensive talents in Indonesian football, Hubner is a towering center-back who has earned a place at Wolverhampton Wanderers in the Premier League. At just 20, his physical attributes, composure, and potential have made him one of the most valuable young players in Southeast Asian football.",
+      "playingStyle": "Tall, imposing young center-back with excellent aerial ability, growing composure on the ball, and the physical presence to compete at the Premier League level despite his young age",
+      "keyStrengths": ["Imposing physical presence at 192cm", "Aerial dominance and defensive heading", "Premier League development and potential"],
+      "worldCup2026Role": "Young defensive talent whose Premier League experience gives Indonesia elite-level depth at center-back; his physical attributes and development trajectory make him one of the squad's most exciting young players",
+      "notableFact": "Signed with Wolverhampton Wanderers in the Premier League, making him one of the highest-profile Indonesian players in world football and a symbol of the country's growing international ambitions"
+    },
+    "Shayne Pattynama": {
+      "bio": "A Dutch-born left-back with Indonesian heritage who has played in the Belgian Pro League. Pattynama's European experience, tactical awareness, and solid defensive work have made him a useful option in Indonesia's squad as they look to strengthen their fullback positions with quality European-based players.",
+      "playingStyle": "Tactical, positionally sound left-back with European competitive experience, reliable defending, and the ability to contribute in attack through overlapping runs and crosses",
+      "keyStrengths": ["European tactical awareness and positioning", "Reliable defending and consistency", "Overlapping runs and crossing ability"],
+      "worldCup2026Role": "Left-back depth option providing European experience and tactical reliability; his Belgian league background ensures Indonesia have quality cover across their defensive positions",
+      "notableFact": "Born in the Netherlands and raised through European football, he chose to represent Indonesia and has brought valuable international experience to the squad"
+    },
+    "Calvin Verdonk": {
+      "bio": "An experienced Dutch-Indonesian defender who has played in the Eredivisie with NEC Nijmegen. Verdonk's versatility, defensive intelligence, and years of competitive Dutch football have made him a reliable squad member who can cover multiple positions across the backline.",
+      "playingStyle": "Versatile, defensively intelligent fullback who can play on either side of defense, combining solid positional play with occasional attacking contributions and consistent performances",
+      "keyStrengths": ["Versatility across the defensive line", "Eredivisie experience and defensive intelligence", "Consistency and reliability"],
+      "worldCup2026Role": "Versatile defensive option who can cover right-back and other defensive positions; his Eredivisie experience and adaptability make him a valuable utility player in the squad",
+      "notableFact": "Has been a consistent performer in the Dutch Eredivisie and his ability to play multiple defensive positions gives Indonesia's coaching staff valuable tactical flexibility"
+    },
+    "Ricky Kambuaya": {
+      "bio": "One of Indonesia's most talented domestically-based midfielders, Kambuaya has been a consistent performer in Liga 1 with his creative play and tireless running. Born in Papua, he represents the diverse geographic talent pool of Indonesian football and has been a regular in the national team.",
+      "playingStyle": "Energetic, box-to-box midfielder who combines relentless running with creative passing, good close control, and the ability to contribute at both ends of the pitch",
+      "keyStrengths": ["Tireless energy and box-to-box running", "Creative passing and close control", "Work rate and defensive contribution"],
+      "worldCup2026Role": "Midfield option providing energy and creativity from the domestic league; his work rate and passion make him a useful impact substitute when Indonesia need to change the tempo of a match",
+      "notableFact": "Born in Papua, he represents the geographic diversity of Indonesian football talent and has been one of the most consistent domestically-based players in the national team"
+    },
+    "Eliano Reijnders": {
+      "bio": "The younger brother of AC Milan star Tijjani Reijnders, Eliano has Indonesian heritage through his father and chose to represent Indonesia internationally. A defensive midfielder with the Dutch football education that runs in the family, he plays for PEC Zwolle in the Eredivisie and adds quality to Indonesia's midfield.",
+      "playingStyle": "Composed, tactically intelligent defensive midfielder with the Dutch passing and positional play instilled through his football education, providing a stabilizing presence in the middle of the park",
+      "keyStrengths": ["Dutch tactical education and positional play", "Composure on the ball under pressure", "Defensive reading of the game and interceptions"],
+      "worldCup2026Role": "Midfield anchor providing composure and tactical intelligence; his Dutch football education and family pedigree suggest enormous potential as a stabilizing force in Indonesia's midfield",
+      "notableFact": "Is the younger brother of AC Milan and Netherlands star Tijjani Reijnders, and both brothers have Indonesian heritage through their father, though they represent different national teams"
+    },
+    "Ole Romeny": {
+      "bio": "A Dutch-born striker with Indonesian roots who plays for Oxford United in the English Championship. Romeny's physical presence, aerial ability, and goal-scoring instincts have given Indonesia an attacking option they have historically lacked at the international level.",
+      "playingStyle": "Tall, physical striker with strong aerial ability, good hold-up play, and the goal-scoring instincts to convert chances in and around the penalty area",
+      "keyStrengths": ["Aerial ability and heading power", "Physical presence and hold-up play", "Goal-scoring instincts and finishing"],
+      "worldCup2026Role": "Attacking option providing aerial threat and physical presence; his Championship experience and goal-scoring ability give Indonesia a different attacking dimension when needed",
+      "notableFact": "Plays alongside fellow Indonesian international Marselino Ferdinan at Oxford United in the English Championship, creating a unique Indonesian connection in English football"
+    },
+    "Nadeo Argawinata": {
+      "bio": "An experienced domestically-based goalkeeper who has been a stalwart of Indonesian club football with Borneo FC. Nadeo's consistency, shot-stopping ability, and familiarity with Indonesian football conditions make him a reliable backup option in the goalkeeping department.",
+      "playingStyle": "Experienced, reliable goalkeeper with good shot-stopping ability, strong command of the penalty area, and the consistency developed through years of competitive domestic football",
+      "keyStrengths": ["Shot-stopping reliability and consistency", "Command of the penalty area", "Experience and familiarity with Indonesian football"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced domestic backup; his years of Liga 1 experience ensure Indonesia have a reliable option behind Maarten Paes if needed",
+      "notableFact": "Has been one of the most consistent goalkeepers in Indonesian domestic football and has served as a loyal backup to Maarten Paes throughout the qualifying campaign"
+    },
+    "Ernando Ari": {
+      "bio": "A young Indonesian goalkeeper who has been developing his skills in Liga 1 with Persebaya. His inclusion in the World Cup squad represents Indonesia's commitment to developing the next generation of homegrown goalkeeping talent alongside their established options.",
+      "playingStyle": "Young, athletic goalkeeper with good reflexes, developing distribution skills, and the potential to grow into a future number one for the national team",
+      "keyStrengths": ["Athletic ability and quick reflexes", "Youth and development potential", "Growing confidence and experience"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience at a young age; his inclusion signals Indonesia's long-term investment in developing homegrown goalkeeping talent",
+      "notableFact": "One of the youngest goalkeepers in any World Cup squad, his selection represents Indonesia's focus on building a sustainable pipeline of domestic talent for future tournaments"
+    },
+    "Muhammad Ferarri": {
+      "bio": "A domestically-based right-back from Persija Jakarta who has earned international recognition through consistent performances in Liga 1. Ferarri's energy, defensive solidity, and familiarity with Indonesian football culture make him a useful squad option.",
+      "playingStyle": "Energetic, committed right-back who combines solid defensive work with willingness to overlap and support attacks, bringing domestic league reliability to the squad",
+      "keyStrengths": ["Defensive commitment and energy", "Overlapping runs and attacking support", "Familiarity with Indonesian playing conditions"],
+      "worldCup2026Role": "Domestic right-back option providing depth and squad balance; his inclusion ensures Indonesia have cover from both European and domestic leagues in every position",
+      "notableFact": "Represents the homegrown Indonesian talent in the squad, having developed his career entirely within the Indonesian domestic league system with Persija Jakarta"
+    },
+    "Joey Pelupessy": {
+      "bio": "An experienced Dutch-born midfielder with Indonesian heritage who has played in the English Championship with Sheffield Wednesday and in the Eredivisie. Pelupessy's experience, defensive midfield intelligence, and tactical understanding have made him a reliable presence in Indonesia's midfield setup.",
+      "playingStyle": "Experienced, disciplined defensive midfielder with good positioning, efficient passing, and the tactical awareness to shield the defense and maintain the team's structural balance",
+      "keyStrengths": ["Defensive positioning and tactical intelligence", "Efficient passing and ball retention", "Experience across multiple European leagues"],
+      "worldCup2026Role": "Experienced holding midfielder providing defensive stability and squad depth; his years in European football add a level of composure and reliability to Indonesia's midfield options",
+      "notableFact": "Played for Sheffield Wednesday in the English Championship and has extensive experience in the Dutch Eredivisie, making him one of the most well-traveled Indonesian internationals"
+    },
+    "Ramadhan Sananta": {
+      "bio": "A homegrown Indonesian striker who has been a consistent scorer in Liga 1 with Persis Solo. Sananta's goal-scoring instincts, movement, and ability to poach goals in the penalty area have earned him international recognition and a place in the World Cup squad.",
+      "playingStyle": "Instinctive, penalty-box striker with good movement inside the area, clinical finishing at close range, and the poaching ability to score goals from half-chances",
+      "keyStrengths": ["Goal-scoring instincts and poaching ability", "Movement and positioning inside the box", "Clinical finishing at close range"],
+      "worldCup2026Role": "Domestic attacking depth option whose goal-scoring instincts could prove valuable off the bench; his ability to score from limited opportunities makes him a potential impact substitute",
+      "notableFact": "Has scored important goals for Indonesia in international competition, proving that domestically-based players can still make a significant impact at the highest level"
+    }
+  }
+}

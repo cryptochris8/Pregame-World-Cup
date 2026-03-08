@@ -1,0 +1,55 @@
+{
+  "team1Code": "FRA",
+  "team2Code": "HON",
+  "team1Name": "France",
+  "team2Name": "Honduras",
+  "historicalAnalysis": "France and Honduras have met at the World Cup before, with their most recent encounter coming at the 2014 World Cup in Brazil. France won that match 3-0, with Karim Benzema scoring twice and Honduras conceding an own goal that was the first decision confirmed by goal-line technology in World Cup history. That match was largely one-sided, but Honduras competed physically throughout.\n\nHonduras have qualified for three World Cups (1982, 2010, 2014) but have never advanced beyond the group stage. Their football identity is built on physicality, pace, and fierce CONCACAF qualifying battles. Their 2026 qualification represents another proud moment for Central American football.\n\nFrance are perennial World Cup contenders, having won the tournament in 1998 and 2018, and reaching the 2022 final where they lost to Argentina on penalties. Kylian Mbappe leads a squad of extraordinary depth and talent. This Group I matchday 2 encounter sees the reigning finalists against determined Central American opponents.",
+  "keyStorylines": [
+    "Rematch of the 2014 World Cup group stage match won 3-0 by France",
+    "France seeking to go one better after losing the 2022 final",
+    "Honduras looking to produce a historic upset against the World Cup heavyweights",
+    "Kylian Mbappe vs Honduras' physical defenders"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "The world's most devastating forward who can single-handedly destroy any defense"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "position": "Forward",
+      "reason": "Honduras' most talented attacker with European experience and electrifying pace"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "France's ultimate big-game player who provides goals and creativity"
+    },
+    {
+      "name": "Maynor Figueroa",
+      "teamCode": "HON",
+      "position": "Defender",
+      "reason": "Veteran leader who brings experience and organization to Honduras' backline"
+    }
+  ],
+  "tacticalPreview": "France's 4-3-3 is built around Mbappe's electric pace and movement. With Griezmann providing the creative link and a world-class midfield featuring Tchouameni and Camavinga, France can overwhelm opponents through multiple channels. Their ability to shift between possession football and devastating counter-attacks makes them unpredictable.\n\nHonduras will deploy a physical, compact 4-4-2 or 5-4-1 designed to limit Mbappe's space. Their approach will be based on aggressive man-marking, tactical fouling, and using their physical strength to disrupt France's rhythm. Honduras must avoid giving Mbappe space to run into, which means a deep defensive line. Their best chances will come from set-pieces and long-range efforts.",
+  "prediction": {
+    "predictedOutcome": "FRA",
+    "predictedScore": "3-0",
+    "confidence": 88,
+    "reasoning": "France's individual quality is on another level compared to Honduras. Mbappe's speed, Griezmann's intelligence, and France's overall depth make them overwhelming favorites. Honduras will compete physically but lack the quality to seriously threaten.",
+    "alternativeScenario": "Honduras' physicality could frustrate France, and if they keep it close into the second half, nerves could play a role. A 1-0 France win after a hard-fought battle is the most realistic alternative."
+  },
+  "pastEncountersSummary": "France won their only previous World Cup meeting 3-0 in 2014, with Benzema scoring twice. That match was notable for the first use of goal-line technology at a World Cup. France have been dominant in this fixture throughout history.",
+  "funFacts": [
+    "The France vs Honduras match in 2014 was the first to use goal-line technology at a World Cup",
+    "France have won 2 World Cups (1998, 2018) and reached the 2022 final",
+    "Honduras have never won a World Cup match in their history",
+    "Kylian Mbappe scored a hat-trick in the 2022 World Cup final at age 23"
+  ],
+  "isFirstMeeting": false
+}

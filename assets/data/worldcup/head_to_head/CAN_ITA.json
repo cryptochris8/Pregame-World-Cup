@@ -1,0 +1,29 @@
+{
+  "id": "CAN_ITA",
+  "team1Code": "CAN",
+  "team2Code": "ITA",
+  "totalMatches": 2,
+  "team1Wins": 0,
+  "team2Wins": 2,
+  "draws": 0,
+  "team1Goals": 0,
+  "team2Goals": 3,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2011-10-07",
+  "firstMeeting": "2004-08-18",
+  "notableMatches": [
+    {
+      "year": 2011,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "ITA",
+      "location": "Montreal, Canada",
+      "description": "Italy comfortably beat Canada in North American friendly"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ESP_SAU",
+  "team1Code": "ESP",
+  "team2Code": "SAU",
+  "totalMatches": 3,
+  "team1Wins": 3,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 9,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2006-06-23",
+  "firstMeeting": "2006-06-23",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Kaiserslautern, Germany",
+      "description": "Juanito header in 36th minute gives Spain narrow World Cup group stage victory"
+    }
+  ]
+}

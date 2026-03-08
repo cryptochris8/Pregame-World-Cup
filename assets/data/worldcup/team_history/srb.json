@@ -1,0 +1,49 @@
+{
+  "fifaCode": "SRB",
+  "teamName": "Serbia",
+  "worldCupHistory": {
+    "totalAppearances": 13,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Semi-finals",
+    "bestFinishYear": 1930,
+    "appearances": [
+      { "year": 1930, "result": "Semi-finals", "stage": "Semi-finals" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1954, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1958, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1962, "result": "Semi-finals", "stage": "Semi-finals" },
+      { "year": 1974, "result": "Second Round", "stage": "Second Round" },
+      { "year": 1982, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1990, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1998, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 46,
+      "won": 17,
+      "drawn": 10,
+      "lost": 19,
+      "goalsFor": 68,
+      "goalsAgainst": 68
+    },
+    "topScorers": [
+      { "name": "Dražan Jerković", "goals": 4, "tournaments": "1958, 1962" },
+      { "name": "Milan Galić", "goals": 4, "tournaments": "1958, 1962" },
+      { "name": "Predrag Mijatović", "goals": 3, "tournaments": "1998" },
+      { "name": "Aleksandar Mitrović", "goals": 2, "tournaments": "2018, 2022" },
+      { "name": "Savo Milošević", "goals": 3, "tournaments": "1998, 2006" }
+    ],
+    "notableMoments": [
+      "As Yugoslavia, reached the semi-finals at the inaugural 1930 World Cup (4th place)",
+      "Semi-finals again in 1962 in Chile, losing to Czechoslovakia",
+      "Quarter-finals at Italia 90 as Yugoslavia, losing on penalties to Argentina",
+      "History spans Yugoslavia (1930-1992), Serbia and Montenegro (2006), and Serbia (2010-present)",
+      "Dragan Stojković scored a famous free kick against Spain in the 1990 Round of 16",
+      "Competed in 13 World Cups across different national identities, one of Europe's most experienced tournament nations"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-02-21",
   "description": "Squad market values for all FIFA World Cup 2026 teams, calculated from individual player market values in team roster JSON files.",
-  "totalTeams": 53,
+  "totalTeams": 48,
   "teams": [
     {
       "rank": 1,
@@ -257,6 +257,30 @@
     },
     {
       "rank": 15,
+      "teamCode": "TUR",
+      "teamName": "Turkey",
+      "playerCount": 26,
+      "totalValue": 483700000,
+      "totalValueFormatted": "483.7M EUR",
+      "averagePlayerValue": 18603846,
+      "averageValueFormatted": "18.6M EUR",
+      "mostValuablePlayer": {
+        "name": "Arda Güler",
+        "position": "CAM",
+        "value": 90000000,
+        "valueFormatted": "90.0M EUR",
+        "club": "Real Madrid"
+      },
+      "leastValuablePlayer": {
+        "name": "Samet Akaydin",
+        "position": "CB",
+        "value": 1200000,
+        "valueFormatted": "1.2M EUR",
+        "club": "Çaykur Rizespor"
+      }
+    },
+    {
+      "rank": 16,
       "teamCode": "USA",
       "teamName": "United States",
       "playerCount": 26,
@@ -274,7 +298,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 17,
       "teamCode": "SUI",
       "teamName": "Switzerland",
       "playerCount": 26,
@@ -292,7 +316,7 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 18,
       "teamCode": "CRO",
       "teamName": "Croatia",
       "playerCount": 26,
@@ -310,7 +334,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 19,
       "teamCode": "ECU",
       "teamName": "Ecuador",
       "playerCount": 26,
@@ -328,7 +352,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "teamCode": "JPN",
       "teamName": "Japan",
       "playerCount": 26,
@@ -346,7 +370,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "teamCode": "MAR",
       "teamName": "Morocco",
       "playerCount": 26,
@@ -361,24 +385,6 @@
       "leastValuablePlayer": {
         "name": "Ahmed Tagnaouti",
         "value": "$625K"
-      }
-    },
-    {
-      "rank": 21,
-      "teamCode": "AUT",
-      "teamName": "Austria",
-      "playerCount": 26,
-      "totalValue": 405000000,
-      "totalValueFormatted": "$405.0M",
-      "averagePlayerValue": 15576923,
-      "averageValueFormatted": "$15.6M",
-      "mostValuablePlayer": {
-        "name": "Konrad Laimer",
-        "value": "$43.8M"
-      },
-      "leastValuablePlayer": {
-        "name": "Heinz Lindner",
-        "value": "$1.9M"
       }
     },
     {
@@ -419,24 +425,6 @@
     },
     {
       "rank": 24,
-      "teamCode": "CIV",
-      "teamName": "Ivory Coast",
-      "playerCount": 26,
-      "totalValue": 356250000,
-      "totalValueFormatted": "$356.0M",
-      "averagePlayerValue": 13701923,
-      "averageValueFormatted": "$13.8M",
-      "mostValuablePlayer": {
-        "name": "Ibrahim Sangaré",
-        "value": "$43.8M"
-      },
-      "leastValuablePlayer": {
-        "name": "Eliezer Ira",
-        "value": "$1.3M"
-      }
-    },
-    {
-      "rank": 25,
       "teamCode": "COL",
       "teamName": "Colombia",
       "playerCount": 26,
@@ -454,7 +442,7 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 25,
       "teamCode": "POL",
       "teamName": "Poland",
       "playerCount": 26,
@@ -472,25 +460,7 @@
       }
     },
     {
-      "rank": 27,
-      "teamCode": "GHA",
-      "teamName": "Ghana",
-      "playerCount": 26,
-      "totalValue": 328750000,
-      "totalValueFormatted": "$329.0M",
-      "averagePlayerValue": 12644231,
-      "averageValueFormatted": "$12.6M",
-      "mostValuablePlayer": {
-        "name": "Mohammed Kudus",
-        "value": "$68.8M"
-      },
-      "leastValuablePlayer": {
-        "name": "Joseph Wollacott",
-        "value": "$625K"
-      }
-    },
-    {
-      "rank": 28,
+      "rank": 26,
       "teamCode": "KOR",
       "teamName": "Korea Republic",
       "playerCount": 26,
@@ -508,7 +478,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 27,
       "teamCode": "CMR",
       "teamName": "Cameroon",
       "playerCount": 26,
@@ -526,7 +496,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 28,
       "teamCode": "EGY",
       "teamName": "Egypt",
       "playerCount": 26,
@@ -544,25 +514,7 @@
       }
     },
     {
-      "rank": 31,
-      "teamCode": "SCO",
-      "teamName": "Scotland",
-      "playerCount": 26,
-      "totalValue": 282125000,
-      "totalValueFormatted": "$282.0M",
-      "averagePlayerValue": 10850961,
-      "averageValueFormatted": "$10.9M",
-      "mostValuablePlayer": {
-        "name": "John McGinn",
-        "value": "$43.8M"
-      },
-      "leastValuablePlayer": {
-        "name": "Craig Gordon",
-        "value": "$500K"
-      }
-    },
-    {
-      "rank": 32,
+      "rank": 29,
       "teamCode": "CAN",
       "teamName": "Canada",
       "playerCount": 26,
@@ -580,25 +532,7 @@
       }
     },
     {
-      "rank": 33,
-      "teamCode": "ALG",
-      "teamName": "Algeria",
-      "playerCount": 26,
-      "totalValue": 268375000,
-      "totalValueFormatted": "$268.0M",
-      "averagePlayerValue": 10322115,
-      "averageValueFormatted": "$10.4M",
-      "mostValuablePlayer": {
-        "name": "Ismaël Bennacer",
-        "value": "$50.0M"
-      },
-      "leastValuablePlayer": {
-        "name": "Raïs M'Bolhi",
-        "value": "$250K"
-      }
-    },
-    {
-      "rank": 34,
+      "rank": 30,
       "teamCode": "MEX",
       "teamName": "Mexico",
       "playerCount": 26,
@@ -616,7 +550,31 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 31,
+      "teamCode": "SVN",
+      "teamName": "Slovenia",
+      "playerCount": 26,
+      "totalValue": 170500000,
+      "totalValueFormatted": "170.5M EUR",
+      "averagePlayerValue": 6557692,
+      "averageValueFormatted": "6.6M EUR",
+      "mostValuablePlayer": {
+        "name": "Benjamin Sesko",
+        "position": "ST",
+        "value": 60000000,
+        "valueFormatted": "60.0M EUR",
+        "club": "Manchester United"
+      },
+      "leastValuablePlayer": {
+        "name": "Vid Belec",
+        "position": "GK",
+        "value": 300000,
+        "valueFormatted": "300K EUR",
+        "club": "APOEL Nicosia"
+      }
+    },
+    {
+      "rank": 32,
       "teamCode": "PAR",
       "teamName": "Paraguay",
       "playerCount": 26,
@@ -634,7 +592,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 33,
       "teamCode": "CHI",
       "teamName": "Chile",
       "playerCount": 26,
@@ -652,7 +610,7 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 34,
       "teamCode": "JAM",
       "teamName": "Jamaica",
       "playerCount": 26,
@@ -670,43 +628,55 @@
       }
     },
     {
-      "rank": 38,
-      "teamCode": "TUN",
-      "teamName": "Tunisia",
-      "playerCount": 26,
-      "totalValue": 114000000,
-      "totalValueFormatted": "$114.0M",
-      "averagePlayerValue": 4384615,
-      "averageValueFormatted": "$4.4M",
-      "mostValuablePlayer": {
-        "name": "Ellyes Skhiri",
-        "value": "$25.0M"
-      },
-      "leastValuablePlayer": {
-        "name": "Hamza Mathlouthi",
-        "value": "$250K"
-      }
-    },
-    {
-      "rank": 39,
-      "teamCode": "KSA",
+      "rank": 35,
+      "teamCode": "SAU",
       "teamName": "Saudi Arabia",
       "playerCount": 26,
       "totalValue": 96875000,
-      "totalValueFormatted": "$96.9M",
+      "totalValueFormatted": "96.9M EUR",
       "averagePlayerValue": 3725961,
-      "averageValueFormatted": "$3.8M",
+      "averageValueFormatted": "3.7M EUR",
       "mostValuablePlayer": {
         "name": "Saud Abdulhamid",
-        "value": "$10.0M"
+        "position": "RB",
+        "value": 10000000,
+        "valueFormatted": "10.0M EUR",
+        "club": "Roma"
       },
       "leastValuablePlayer": {
         "name": "Fawaz Al-Qarni",
-        "value": "$1.3M"
+        "position": "GK",
+        "value": 1250000,
+        "valueFormatted": "1.2M EUR",
+        "club": "Al-Shabab"
       }
     },
     {
-      "rank": 40,
+      "rank": 36,
+      "teamCode": "ALB",
+      "teamName": "Albania",
+      "playerCount": 26,
+      "totalValue": 92600000,
+      "totalValueFormatted": "92.6M EUR",
+      "averagePlayerValue": 3561538,
+      "averageValueFormatted": "3.6M EUR",
+      "mostValuablePlayer": {
+        "name": "Kristjan Asllani",
+        "position": "CDM",
+        "value": 13000000,
+        "valueFormatted": "13.0M EUR",
+        "club": "Besiktas"
+      },
+      "leastValuablePlayer": {
+        "name": "Naser Aliji",
+        "position": "LB",
+        "value": 350000,
+        "valueFormatted": "350K EUR",
+        "club": "FC Dinamo City"
+      }
+    },
+    {
+      "rank": 37,
       "teamCode": "IRN",
       "teamName": "Iran",
       "playerCount": 26,
@@ -724,7 +694,7 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 38,
       "teamCode": "AUS",
       "teamName": "Australia",
       "playerCount": 26,
@@ -742,7 +712,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 39,
       "teamCode": "NZL",
       "teamName": "New Zealand",
       "playerCount": 26,
@@ -760,7 +730,7 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 40,
       "teamCode": "QAT",
       "teamName": "Qatar",
       "playerCount": 26,
@@ -778,7 +748,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 41,
       "teamCode": "PER",
       "teamName": "Peru",
       "playerCount": 26,
@@ -796,7 +766,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 42,
       "teamCode": "CRC",
       "teamName": "Costa Rica",
       "playerCount": 26,
@@ -814,7 +784,7 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 43,
       "teamCode": "HON",
       "teamName": "Honduras",
       "playerCount": 26,
@@ -832,7 +802,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 44,
       "teamCode": "UZB",
       "teamName": "Uzbekistan",
       "playerCount": 26,
@@ -850,7 +820,31 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 45,
+      "teamCode": "IDN",
+      "teamName": "Indonesia",
+      "playerCount": 26,
+      "totalValue": 43650000,
+      "totalValueFormatted": "43.6M EUR",
+      "averagePlayerValue": 1678846,
+      "averageValueFormatted": "1.7M EUR",
+      "mostValuablePlayer": {
+        "name": "Jay Idzes",
+        "position": "CB",
+        "value": 10000000,
+        "valueFormatted": "10.0M EUR",
+        "club": "Sassuolo"
+      },
+      "leastValuablePlayer": {
+        "name": "Ernando Ari",
+        "position": "GK",
+        "value": 200000,
+        "valueFormatted": "200K EUR",
+        "club": "Persebaya"
+      }
+    },
+    {
+      "rank": 46,
       "teamCode": "PAN",
       "teamName": "Panama",
       "playerCount": 26,
@@ -868,93 +862,51 @@
       }
     },
     {
-      "rank": 49,
-      "teamCode": "CPV",
-      "teamName": "Cape Verde",
+      "rank": 47,
+      "teamCode": "BOL",
+      "teamName": "Bolivia",
       "playerCount": 26,
-      "totalValue": 33000000,
-      "totalValueFormatted": "$33.0M",
-      "averagePlayerValue": 1269231,
-      "averageValueFormatted": "$1.3M",
+      "totalValue": 14675000,
+      "totalValueFormatted": "14.7M EUR",
+      "averagePlayerValue": 564423,
+      "averageValueFormatted": "564K EUR",
       "mostValuablePlayer": {
-        "name": "Logan Costa",
-        "value": "$6.3M"
+        "name": "Miguel Terceros",
+        "position": "CAM",
+        "value": 3000000,
+        "valueFormatted": "3.0M EUR",
+        "club": "Santos FC"
       },
       "leastValuablePlayer": {
-        "name": "Kelvin Pires",
-        "value": "$375K"
+        "name": "Carlos Lampe",
+        "position": "GK",
+        "value": 50000,
+        "valueFormatted": "50K EUR",
+        "club": "Bolívar"
       }
     },
     {
-      "rank": 50,
-      "teamCode": "RSA",
-      "teamName": "South Africa",
-      "playerCount": 25,
-      "totalValue": 28000000,
-      "totalValueFormatted": "$28.0M",
-      "averagePlayerValue": 1120000,
-      "averageValueFormatted": "$1120K",
-      "mostValuablePlayer": {
-        "name": "Lyle Foster",
-        "value": "$7.5M"
-      },
-      "leastValuablePlayer": {
-        "name": "Veli Mothwa",
-        "value": "$375K"
-      }
-    },
-    {
-      "rank": 51,
-      "teamCode": "CUW",
-      "teamName": "Curacao",
+      "rank": 48,
+      "teamCode": "TRI",
+      "teamName": "Trinidad and Tobago",
       "playerCount": 26,
-      "totalValue": 24875000,
-      "totalValueFormatted": "$24.9M",
-      "averagePlayerValue": 956731,
-      "averageValueFormatted": "$956K",
+      "totalValue": 13375000,
+      "totalValueFormatted": "13.4M EUR",
+      "averagePlayerValue": 514423,
+      "averageValueFormatted": "514K EUR",
       "mostValuablePlayer": {
-        "name": "Riechedly Bazoer",
-        "value": "$5.0M"
+        "name": "Levi Garcia",
+        "position": "LW",
+        "value": 2500000,
+        "valueFormatted": "2.5M EUR",
+        "club": "Spartak Moscow"
       },
       "leastValuablePlayer": {
-        "name": "Darryl Lachman",
-        "value": "$125K"
-      }
-    },
-    {
-      "rank": 52,
-      "teamCode": "JOR",
-      "teamName": "Jordan",
-      "playerCount": 26,
-      "totalValue": 19500000,
-      "totalValueFormatted": "$19.5M",
-      "averagePlayerValue": 750000,
-      "averageValueFormatted": "$750K",
-      "mostValuablePlayer": {
-        "name": "Mousa Al-Taamari",
-        "value": "$6.3M"
-      },
-      "leastValuablePlayer": {
-        "name": "Baha' Abdulrahman",
-        "value": "$250K"
-      }
-    },
-    {
-      "rank": 53,
-      "teamCode": "HAI",
-      "teamName": "Haiti",
-      "playerCount": 26,
-      "totalValue": 15375000,
-      "totalValueFormatted": "$15.4M",
-      "averagePlayerValue": 591346,
-      "averageValueFormatted": "$591K",
-      "mostValuablePlayer": {
-        "name": "Carlin Isidor",
-        "value": "$3.1M"
-      },
-      "leastValuablePlayer": {
-        "name": "Wilde-Donald Guerrier",
-        "value": "$125K"
+        "name": "Marvin Phillip",
+        "position": "GK",
+        "value": 100000,
+        "valueFormatted": "100K EUR",
+        "club": "Central FC"
       }
     }
   ]

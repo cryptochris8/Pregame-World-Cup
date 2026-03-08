@@ -1,0 +1,21 @@
+{
+  "id": "manager_bol",
+  "firstName": "Óscar",
+  "lastName": "Villegas",
+  "commonName": "Óscar Villegas",
+  "dateOfBirth": "1975-03-15",
+  "nationality": "Bolivia",
+  "currentTeam": "Bolivia",
+  "currentTeamCode": "BOL",
+  "photoUrl": "assets/managers/villegas.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Pragmatic",
+  "yearsExperience": 12,
+  "previousTeams": ["Club Always Ready", "Nacional Potosí", "Real Potosí", "Bolivia U20"],
+  "trophies": ["Bolivian Liga Profesional 2022 (Always Ready)"],
+  "careerWins": 85,
+  "careerDraws": 55,
+  "careerLosses": 60,
+  "careerWinPercentage": 43,
+  "bio": "A Bolivian tactician who earned the national team job after successful stints in the domestic league. Led Bolivia through a historic World Cup qualifying campaign, maximizing home advantage at altitude in La Paz."
+}

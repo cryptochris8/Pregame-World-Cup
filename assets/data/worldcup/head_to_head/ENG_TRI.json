@@ -1,0 +1,39 @@
+{
+  "id": "ENG_TRI",
+  "team1Code": "ENG",
+  "team2Code": "TRI",
+  "totalMatches": 2,
+  "team1Wins": 2,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 5,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2008-06-01",
+  "firstMeeting": "2006-06-15",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "ENG",
+      "location": "Nuremberg, Germany",
+      "description": "Peter Crouch and Steven Gerrard score late as Trinidad and Tobago holds England scoreless for 83 minutes in heroic World Cup display"
+    },
+    {
+      "year": 2008,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "ENG",
+      "location": "Port of Spain, Trinidad",
+      "description": "England cruises to comfortable friendly victory in the Caribbean"
+    }
+  ]
+}

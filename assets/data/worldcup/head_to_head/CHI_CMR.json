@@ -1,0 +1,39 @@
+{
+  "id": "CHI_CMR",
+  "team1Code": "CHI",
+  "team2Code": "CMR",
+  "totalMatches": 4,
+  "team1Wins": 2,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 4,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2017-06-18",
+  "firstMeeting": "1998-02-11",
+  "notableMatches": [
+    {
+      "year": 2017,
+      "tournament": "FIFA Confederations Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Moscow, Russia",
+      "description": "Chile and Cameroon draw in tense Confederations Cup group match"
+    },
+    {
+      "year": 2017,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "CHI",
+      "location": "Austria",
+      "description": "Chile edge Cameroon in European friendly"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "PAN_TRI",
+  "team1Code": "PAN",
+  "team2Code": "TRI",
+  "totalMatches": 14,
+  "team1Wins": 6,
+  "team2Wins": 5,
+  "draws": 3,
+  "team1Goals": 18,
+  "team2Goals": 14,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2021-10-13",
+  "firstMeeting": "2005-02-09",
+  "notableMatches": [
+    {
+      "year": 2015,
+      "tournament": "CONCACAF Gold Cup",
+      "stage": "Quarter-final",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": "PAN",
+      "location": "East Rutherford, USA",
+      "description": "Panama advances on penalties 6-5 after 1-1 draw in thrilling Gold Cup quarter-final"
+    },
+    {
+      "year": 2017,
+      "tournament": "FIFA World Cup Qualifier",
+      "stage": "CONCACAF Hexagonal",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "PAN",
+      "location": "Panama City, Panama",
+      "description": "Panama dominates at home in crucial World Cup qualifying victory"
+    },
+    {
+      "year": 2017,
+      "tournament": "FIFA World Cup Qualifier",
+      "stage": "CONCACAF Hexagonal",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "TRI",
+      "location": "Port of Spain, Trinidad",
+      "description": "Trinidad and Tobago wins at home in CONCACAF World Cup qualifying"
+    }
+  ]
+}

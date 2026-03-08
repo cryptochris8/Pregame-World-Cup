@@ -1,0 +1,55 @@
+{
+  "team1Code": "BOL",
+  "team2Code": "KOR",
+  "team1Name": "Bolivia",
+  "team2Name": "South Korea",
+  "historicalAnalysis": "Bolivia and South Korea's paths have rarely crossed in international football, with no significant competitive encounters in their history. This Group A meeting at the 2026 World Cup represents both a new chapter and a critical clash for each team's tournament ambitions.\n\nSouth Korea are one of Asia's most successful World Cup nations, highlighted by their extraordinary run to the semi-finals as co-hosts in 2002. Since then, they have been regular World Cup participants, reaching the Round of 16 in 2010 and pulling off a stunning 2-1 victory over Germany at the 2018 World Cup. Their squad features several players at top European clubs, led by Tottenham's Son Heung-min, one of the best players in Asia's history.\n\nBolivia's return to the World Cup is a heartwarming story, but they face enormous challenges at sea level. Their footballing DNA is built around the altitude advantage of La Paz, which is stripped away in North America. This match day 3 encounter could be decisive for both teams' chances of advancing from Group A.",
+  "keyStorylines": [
+    "Son Heung-min leading South Korea's charge in a must-win group decider",
+    "Bolivia looking to pull off a shock against an Asian powerhouse",
+    "Matchday 3 encounter with knockout round implications",
+    "Bolivia's challenge of performing without their altitude advantage"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "Asia's greatest-ever player and South Korea's captain and talisman"
+    },
+    {
+      "name": "Marcelo Martins",
+      "teamCode": "BOL",
+      "position": "Forward",
+      "reason": "Bolivia's all-time top scorer and their main hope for goals"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "position": "Midfielder",
+      "reason": "PSG midfielder whose creativity and vision can unlock any defense"
+    },
+    {
+      "name": "Roberto Carlos Fernandez",
+      "teamCode": "BOL",
+      "position": "Midfielder",
+      "reason": "Key midfield organizer who must win the battle for possession"
+    }
+  ],
+  "tacticalPreview": "South Korea play a high-intensity 4-2-3-1 with Son Heung-min often drifting from the left to find shooting positions. Lee Kang-in provides creative spark in the number 10 role, while the double pivot in midfield provides defensive stability. Their pressing is among the best in Asian football.\n\nBolivia will need to be pragmatic, likely setting up in a deep 4-5-1 or 5-4-1 to contain South Korea's attacking threats. Their best hope lies in set-pieces and long-range efforts, as sustained build-up play against Korea's pressing will be difficult. Bolivia's physical strength could be an asset in aerial battles, but South Korea's pace and movement will be the defining challenge.",
+  "prediction": {
+    "predictedOutcome": "KOR",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "South Korea's individual quality, particularly through Son Heung-min and Lee Kang-in, should prove decisive. Bolivia's lack of sea-level international experience will be a significant handicap against a well-organized Korean side.",
+    "alternativeScenario": "If Bolivia's defense holds firm in the first half and the pressure builds on South Korea, the Koreans could become frustrated. A 1-0 Bolivia shock, while unlikely, would be one of the tournament's great stories."
+  },
+  "pastEncountersSummary": "Bolivia and South Korea have no significant competitive history. This World Cup 2026 group stage match will be their most high-profile encounter, with both teams having much to gain from a positive result.",
+  "funFacts": [
+    "South Korea reached the World Cup semi-finals as co-hosts in 2002",
+    "Son Heung-min has scored over 100 goals in the Premier League",
+    "Bolivia's 1994 World Cup appearance was also in the United States",
+    "South Korea beat Germany 2-0 at the 2018 World Cup in one of the tournament's biggest upsets"
+  ],
+  "isFirstMeeting": true
+}

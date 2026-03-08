@@ -1,0 +1,29 @@
+{
+  "id": "CAN_QAT",
+  "team1Code": "CAN",
+  "team2Code": "QAT",
+  "totalMatches": 3,
+  "team1Wins": 2,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2024-09-07",
+  "firstMeeting": "2015-05-22",
+  "notableMatches": [
+    {
+      "year": 2024,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "CAN",
+      "location": "Toronto, Canada",
+      "description": "Canada convincingly beat Qatar ahead of their 2026 World Cup meeting"
+    }
+  ]
+}

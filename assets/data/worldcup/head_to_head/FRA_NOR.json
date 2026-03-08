@@ -1,0 +1,49 @@
+{
+  "id": "FRA_NOR",
+  "team1Code": "FRA",
+  "team2Code": "NOR",
+  "totalMatches": 15,
+  "team1Wins": 8,
+  "team2Wins": 4,
+  "draws": 3,
+  "team1Goals": 22,
+  "team2Goals": 15,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2003-08-20",
+  "firstMeeting": "1923-10-28",
+  "notableMatches": [
+    {
+      "year": 1998,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "FRA",
+      "location": "Saint-Denis, France",
+      "description": "France overcomes Norway in crucial World Cup qualifying match"
+    },
+    {
+      "year": 2000,
+      "tournament": "Euro Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 3,
+      "team2Score": 2,
+      "winnerCode": "FRA",
+      "location": "Saint-Denis, France",
+      "description": "Thrilling five-goal Euro qualifier sees France edge Norway"
+    },
+    {
+      "year": 1968,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "NOR",
+      "location": "Strasbourg, France",
+      "description": "Norway records memorable away victory in France"
+    }
+  ]
+}

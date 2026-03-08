@@ -1,0 +1,55 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "POL",
+  "team1Name": "Argentina",
+  "team2Name": "Poland",
+  "historicalAnalysis": "Argentina and Poland have a rich World Cup history spanning decades. Their most iconic encounter was the 1978 World Cup second round in Rosario, where Argentina demolished Poland 2-0 on their way to winning the tournament on home soil. Mario Kempes starred in that match, as he did throughout the tournament.\n\nMore recently, these two sides met in the 2022 World Cup group stage in Qatar. That match ended 2-0 to Argentina, with goals from Mac Allister and Julian Alvarez, but the real drama came from Lionel Messi having a penalty saved by Wojciech Szczesny. Both teams advanced from the group, but Argentina's dominance was clear.\n\nPoland's World Cup pedigree includes a third-place finish in 1974 and 1982, but their recent tournament history has been less distinguished. Robert Lewandowski, one of the greatest strikers of his generation, has often struggled to replicate his club form on the World Cup stage. This rematch from 2022 carries significant tactical intrigue.",
+  "keyStorylines": [
+    "Rematch of the 2022 World Cup group stage encounter won 2-0 by Argentina",
+    "Szczesny's penalty save against Messi in 2022 adds psychological spice",
+    "Robert Lewandowski seeking World Cup redemption in potentially his last tournament",
+    "Can Poland reverse the trend of losing to Argentina at World Cups?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "Had his penalty saved in the 2022 meeting but still inspired Argentina to victory"
+    },
+    {
+      "name": "Robert Lewandowski",
+      "teamCode": "POL",
+      "position": "Forward",
+      "reason": "One of the greatest strikers ever, hunting for elusive World Cup goals"
+    },
+    {
+      "name": "Enzo Fernandez",
+      "teamCode": "ARG",
+      "position": "Midfielder",
+      "reason": "2022 World Cup Young Player of the Tournament winner who has since become world class"
+    },
+    {
+      "name": "Nicola Zalewski",
+      "teamCode": "POL",
+      "position": "Midfielder",
+      "reason": "Dynamic Roma wing-back who adds energy and creativity to Poland's attacks"
+    }
+  ],
+  "tacticalPreview": "Argentina's 4-3-3 system is built on midfield control and devastating forward play. With Enzo Fernandez pulling the strings, they combine possession football with lethal counter-attacks. The full-backs provide width while the front three interchange positions fluidly.\n\nPoland will likely mirror their 2022 approach with a pragmatic 4-4-2, focusing on defensive organization and hoping Lewandowski can provide moments of magic. Their midfield must compete with Argentina's technically superior engine room. The key battle will be Poland's defensive discipline against Argentina's movement. If Poland sit too deep, Argentina will pin them back; if they press too high, the space behind could be exploited.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "Argentina's 2022 victory set the template for this matchup. Poland have consistently struggled against top-tier South American sides, and Argentina's squad depth gives them multiple ways to win.",
+    "alternativeScenario": "If Lewandowski finds his World Cup scoring touch and Poland take an early lead, they could produce a memorable upset. A 1-1 draw that suits both teams' group-stage math is also possible."
+  },
+  "pastEncountersSummary": "Their World Cup history is firmly in Argentina's favor. The 2-0 win in 1978 and 2-0 win in 2022 show Argentina's dominance in this fixture. Szczesny's penalty save in 2022 was a bright spot for Poland but ultimately inconsequential.",
+  "funFacts": [
+    "Wojciech Szczesny is one of the few goalkeepers to save a Messi penalty at a World Cup",
+    "Argentina and Poland have met at three different World Cups (1978, 2022, 2026)",
+    "Poland's best World Cup finish (3rd place) came in 1974 and 1982",
+    "Robert Lewandowski scored his first-ever World Cup goal in the 2022 tournament"
+  ],
+  "isFirstMeeting": false
+}

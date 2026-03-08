@@ -1,0 +1,55 @@
+{
+  "team1Code": "HON",
+  "team2Code": "NOR",
+  "team1Name": "Honduras",
+  "team2Name": "Norway",
+  "historicalAnalysis": "Honduras and Norway have never met in a competitive international match, making this Group I encounter a historic first meeting between two nations from different continents and footballing traditions. Both teams arrive at the 2026 World Cup with contrasting narratives but shared ambitions.\n\nHonduras' World Cup history includes appearances in 1982, 2010, and 2014, but they have never advanced past the group stage. Known for their physical, combative style developed through bruising CONCACAF qualifying campaigns, Honduras bring intensity and passion to every match. Their qualification for 2026 maintains Central America's presence on the world stage.\n\nNorway's qualification for the 2026 World Cup is arguably the biggest story of the tournament, centered around Erling Haaland. The Manchester City striker is one of the most prolific goalscorers in football history, and the World Cup is the one stage where he has never performed. Norway last appeared at a World Cup in 1998, making this a long-awaited return.",
+  "keyStorylines": [
+    "Erling Haaland's World Cup debut after years of anticipation",
+    "Honduras' physical CONCACAF style vs Norway's European quality",
+    "First-ever meeting between these two nations on any stage",
+    "Norway's return to the World Cup after 28 years away"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Erling Haaland",
+      "teamCode": "NOR",
+      "position": "Forward",
+      "reason": "Manchester City's goal machine playing in his first-ever World Cup"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "position": "Forward",
+      "reason": "Honduras' pacey attacker who must provide offensive threat"
+    },
+    {
+      "name": "Martin Odegaard",
+      "teamCode": "NOR",
+      "position": "Midfielder",
+      "reason": "Arsenal's captain whose creativity feeds Haaland's goal-scoring"
+    },
+    {
+      "name": "Luis Palma",
+      "teamCode": "HON",
+      "position": "Winger",
+      "reason": "Celtic winger whose dribbling and pace can create problems for any defense"
+    }
+  ],
+  "tacticalPreview": "Norway's system is built entirely around getting the best out of Erling Haaland. Martin Odegaard provides the creative supply from midfield, while the rest of the team is organized to create space for their superstar striker. Their 4-3-3 allows Haaland to occupy central positions while wingers stretch the defense.\n\nHonduras will set up in a physical 4-4-2 or 5-3-2, prioritizing man-marking Haaland out of the game. Their defenders will look to engage Haaland physically, denying him space and service. Honduras' challenge is containing Haaland while still posing an attacking threat. Their pace on the wings could be effective against Norway's potentially vulnerable full-backs.",
+  "prediction": {
+    "predictedOutcome": "NOR",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Haaland's quality gives Norway the edge, but Honduras' physical style will make this uncomfortable. Norway's lack of World Cup experience since 1998 adds uncertainty, while Honduras' familiarity with North American conditions gives them a slight logistical advantage.",
+    "alternativeScenario": "If Honduras can nullify Haaland and exploit Norway's defensive vulnerabilities, a 1-0 upset or 1-1 draw is possible. Honduras' CONCACAF experience in hostile environments means they won't be intimidated."
+  },
+  "pastEncountersSummary": "These two nations have never played each other. This Group I encounter will be their first-ever meeting, making it impossible to draw tactical conclusions from previous encounters. Both teams will be approaching this as a must-win match in their World Cup campaigns.",
+  "funFacts": [
+    "Erling Haaland has scored over 200 career club goals but has never played at a World Cup",
+    "Honduras' last World Cup win came in 2014 against... they have never won a World Cup match",
+    "Norway's last World Cup appearance was in 1998 where they beat Brazil 2-1 in the group stage",
+    "Martin Odegaard signed for Real Madrid at age 16, making him their youngest-ever player"
+  ],
+  "isFirstMeeting": true
+}

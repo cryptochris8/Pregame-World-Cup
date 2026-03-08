@@ -1,0 +1,55 @@
+{
+  "team1Code": "PAN",
+  "team2Code": "TRI",
+  "team1Name": "Panama",
+  "team2Name": "Trinidad and Tobago",
+  "historicalAnalysis": "Panama and Trinidad and Tobago are familiar CONCACAF rivals who have battled each other numerous times in regional qualifying campaigns, Gold Cup tournaments, and friendly matches. Their encounters are typically physical, competitive affairs that embody the intensity of Caribbean and Central American football.\n\nPanama's greatest football achievement came with their qualification for the 2018 World Cup in Russia, a moment that sparked national celebrations and a public holiday. Though they lost all three matches and conceded 11 goals, the experience of competing on the world's biggest stage was transformative. Panama's captain, Roman Torres, scored the qualifying goal that sent them to Russia.\n\nTrinidad and Tobago's own World Cup history dates to 2006, and they famously eliminated the United States from 2018 World Cup qualifying with a stunning victory in Couva. Both teams represent the passion and resilience of Caribbean football, and this Group L encounter between CONCACAF neighbors adds a local derby dimension to the World Cup stage.",
+  "keyStorylines": [
+    "CONCACAF derby brings regional rivalry to the World Cup stage",
+    "Both nations seeking their first-ever World Cup victory",
+    "Panama building on the legacy of their 2018 World Cup appearance",
+    "Trinidad and Tobago's historic return to the World Cup after 2006"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jose Fajardo",
+      "teamCode": "PAN",
+      "position": "Forward",
+      "reason": "Panama's most dangerous striker who can decide tight matches"
+    },
+    {
+      "name": "Levi Garcia",
+      "teamCode": "TRI",
+      "position": "Winger",
+      "reason": "Trinidad's most creative player who provides flair and direct running"
+    },
+    {
+      "name": "Eric Davis",
+      "teamCode": "PAN",
+      "position": "Defender",
+      "reason": "Experienced defender and leader who organizes Panama's backline"
+    },
+    {
+      "name": "Duane Muckette",
+      "teamCode": "TRI",
+      "position": "Midfielder",
+      "reason": "Young midfielder who adds energy and creativity to Trinidad's engine room"
+    }
+  ],
+  "tacticalPreview": "Panama play a physical 4-4-2 that emphasizes set-pieces, aerial battles, and defensive organization. Their direct approach bypasses midfield congestion and relies on the physicality of their forwards. Panama's experience from the 2018 World Cup gives them a psychological advantage.\n\nTrinidad and Tobago will set up in a similar 4-4-2, making this a battle of wills rather than tactical sophistication. Both teams will look to impose themselves physically, and the match could be decided by set-pieces, individual errors, or moments of brilliance. The CONCACAF familiarity means there will be no surprises tactically; this will be about heart, desire, and execution.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 40,
+    "reasoning": "These evenly-matched CONCACAF rivals are likely to cancel each other out in a tight, physical encounter. Both teams will see this as their best opportunity to get a result, leading to a cagey approach.",
+    "alternativeScenario": "The team that scores first will have a significant advantage, as both sides prefer to protect leads. A 1-0 result either way seems equally likely, with set-pieces being the most probable source of goals."
+  },
+  "pastEncountersSummary": "Panama and Trinidad and Tobago have a long history of CONCACAF encounters in Gold Cup and World Cup qualifying. Their meetings are typically close, physical affairs with neither side having a decisive edge over the long term.",
+  "funFacts": [
+    "Panama declared a national holiday when they qualified for the 2018 World Cup",
+    "Trinidad and Tobago eliminated the United States from 2018 World Cup qualifying",
+    "Both nations have reached only one World Cup each before 2026",
+    "The CONCACAF qualifying process is one of the toughest regional pathways in world football"
+  ],
+  "isFirstMeeting": false
+}

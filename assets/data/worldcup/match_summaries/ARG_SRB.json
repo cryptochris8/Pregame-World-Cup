@@ -1,0 +1,55 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "SRB",
+  "team1Name": "Argentina",
+  "team2Name": "Serbia",
+  "historicalAnalysis": "Argentina and Serbia have a fascinating football connection that stretches back to the Yugoslavia era. Argentina faced Yugoslavia at the 1962 World Cup in Chile and also at the 1998 World Cup in France, where a goalless draw was a tactical masterclass. Since Serbia became an independent footballing nation, they met at the 2018 World Cup group stage in Russia.\n\nThat 2018 encounter in Saint Petersburg saw Argentina salvage their World Cup hopes with a dramatic late victory. With Messi largely contained, it was a gritty, competitive match that Argentina needed to win to stay in the tournament. Serbia played well but ultimately fell short.\n\nSerbia qualified for the 2026 World Cup with a talented squad featuring several players at top European clubs. Their blend of technical skill and physical power makes them a dangerous opponent for anyone. Argentina, as defending champions, will be expected to dominate, but Serbia have shown they can compete with the very best on their day.",
+  "keyStorylines": [
+    "Defending World Cup champions Argentina opening Group J against a resurgent Serbia",
+    "Rematch of their 2018 World Cup group stage encounter",
+    "Serbia seeking to prove they belong among the world's elite",
+    "Can Serbia contain Argentina's star-studded attack?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "The defending champion and potential farewell World Cup run"
+    },
+    {
+      "name": "Dusan Vlahovic",
+      "teamCode": "SRB",
+      "position": "Forward",
+      "reason": "Juventus striker whose aerial ability and finishing make him a constant threat"
+    },
+    {
+      "name": "Julian Alvarez",
+      "teamCode": "ARG",
+      "position": "Forward",
+      "reason": "Dynamic striker who proved his World Cup credentials in 2022"
+    },
+    {
+      "name": "Sergej Milinkovic-Savic",
+      "teamCode": "SRB",
+      "position": "Midfielder",
+      "reason": "Commanding midfielder whose physicality and passing range can dominate games"
+    }
+  ],
+  "tacticalPreview": "Argentina will deploy their World Cup-winning 4-3-3, with the flexibility to shift shape depending on the game state. Their midfield three of Enzo Fernandez, De Paul, and Mac Allister provides the ideal balance of creativity, industry, and defensive cover.\n\nSerbia will likely set up in a 3-5-2 or 3-4-1-2, using Vlahovic and Mitrovic as a front pair to occupy Argentina's center-backs. Milinkovic-Savic's ability to win aerial duels and spray passes will be crucial. Serbia's challenge is to stay compact while still threatening on the break. Their set-piece quality could be a significant weapon against Argentina.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "2-1",
+    "confidence": 70,
+    "reasoning": "Argentina's World Cup-winning pedigree and superior squad depth give them the edge, but Serbia's talent and physicality will make this competitive. Argentina tend to start tournaments slowly, which could keep this close.",
+    "alternativeScenario": "Serbia's physical midfield could disrupt Argentina's rhythm, and if Vlahovic or Mitrovic score early, an upset is plausible. A 1-1 draw would be a creditable result for Serbia."
+  },
+  "pastEncountersSummary": "Argentina have historically had the upper hand, winning the 2018 World Cup group stage match. Previous meetings against Yugoslavia were tight, competitive affairs. Serbia will be looking to reverse this trend on the biggest stage.",
+  "funFacts": [
+    "Argentina beat Serbia 2-1 at the 2018 World Cup with a late winner",
+    "Serbia's squad features players from some of Europe's biggest clubs",
+    "Argentina are unbeaten in their last 4 World Cup opening matches",
+    "The Argentina vs Yugoslavia match at the 1998 World Cup ended 0-0"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,42 @@
+{
+  "fifaCode": "SAU",
+  "teamName": "Saudi Arabia",
+  "worldCupHistory": {
+    "totalAppearances": 7,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 1994,
+    "appearances": [
+      { "year": 1994, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 18,
+      "won": 4,
+      "drawn": 2,
+      "lost": 12,
+      "goalsFor": 15,
+      "goalsAgainst": 39
+    },
+    "topScorers": [
+      { "name": "Sami Al-Jaber", "goals": 3, "tournaments": "1994, 1998, 2002, 2006" },
+      { "name": "Saeed Al-Owairan", "goals": 2, "tournaments": "1994" },
+      { "name": "Yasser Al-Qahtani", "goals": 2, "tournaments": "2006" },
+      { "name": "Salem Al-Dawsari", "goals": 2, "tournaments": "2018, 2022" },
+      { "name": "Fuad Amin", "goals": 1, "tournaments": "1994" }
+    ],
+    "notableMoments": [
+      "Stunned Argentina 2-1 in the opening match of the 2022 World Cup in Qatar, one of the greatest upsets in history",
+      "Saeed Al-Owairan scored a legendary solo goal against Belgium in 1994, dribbling past five defenders",
+      "Reached the Round of 16 on their World Cup debut in 1994",
+      "Sami Al-Jaber appeared in four consecutive World Cups (1994-2006), a Saudi record",
+      "The victory over Argentina in 2022 was celebrated as a national holiday in Saudi Arabia",
+      "Salem Al-Dawsari's curling strike against Argentina in 2022 became an iconic World Cup goal"
+    ]
+  }
+}

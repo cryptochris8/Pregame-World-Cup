@@ -1,0 +1,39 @@
+{
+  "id": "SAU_URU",
+  "team1Code": "SAU",
+  "team2Code": "URU",
+  "totalMatches": 2,
+  "team1Wins": 0,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 0,
+  "team2Goals": 1,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2018-06-20",
+  "firstMeeting": "2014-10-10",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "URU",
+      "location": "Rostov-on-Don, Russia",
+      "description": "Luis Suarez header on his 100th cap sends Uruguay through and eliminates Saudi Arabia"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Jeddah, Saudi Arabia",
+      "description": "Goalless draw in first-ever meeting between the two nations"
+    }
+  ]
+}

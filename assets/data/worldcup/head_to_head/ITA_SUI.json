@@ -1,0 +1,59 @@
+{
+  "id": "ITA_SUI",
+  "team1Code": "ITA",
+  "team2Code": "SUI",
+  "totalMatches": 62,
+  "team1Wins": 29,
+  "team2Wins": 24,
+  "draws": 9,
+  "team1Goals": 111,
+  "team2Goals": 70,
+  "worldCupMatches": 3,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "2024-06-29",
+  "firstMeeting": "1911-05-28",
+  "notableMatches": [
+    {
+      "year": 2024,
+      "tournament": "European Championship",
+      "stage": "Round of 16",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "SUI",
+      "location": "Berlin, Germany",
+      "description": "Switzerland shock defending champions Italy to reach Euro 2024 quarter-finals"
+    },
+    {
+      "year": 2021,
+      "tournament": "European Championship",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "ITA",
+      "location": "Rome, Italy",
+      "description": "Locatelli brace helps dominant Italy cruise past Switzerland at Euro 2020"
+    },
+    {
+      "year": 2021,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Basel, Switzerland",
+      "description": "Late Jorginho penalty miss as Italy draw leaves qualification in doubt"
+    },
+    {
+      "year": 1954,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 4,
+      "team2Score": 1,
+      "winnerCode": "ITA",
+      "location": "Lausanne, Switzerland",
+      "description": "Italy dominate hosts Switzerland at 1954 World Cup"
+    }
+  ]
+}

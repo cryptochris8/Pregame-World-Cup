@@ -1,0 +1,39 @@
+{
+  "id": "MAR_PER",
+  "team1Code": "MAR",
+  "team2Code": "PER",
+  "totalMatches": 2,
+  "team1Wins": 0,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 0,
+  "team2Goals": 3,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-03-28",
+  "firstMeeting": "1970-06-06",
+  "notableMatches": [
+    {
+      "year": 1970,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 3,
+      "winnerCode": "PER",
+      "location": "Leon, Mexico",
+      "description": "Peru overwhelm Morocco in their 1970 World Cup group match"
+    },
+    {
+      "year": 2023,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Seville, Spain",
+      "description": "Goalless draw in neutral venue friendly 53 years after first meeting"
+    }
+  ]
+}

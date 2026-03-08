@@ -1,0 +1,36 @@
+{
+  "fifaCode": "BOL",
+  "teamName": "Bolivia",
+  "worldCupHistory": {
+    "totalAppearances": 3,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1930,
+    "appearances": [
+      { "year": 1930, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1950, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1994, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 6,
+      "won": 0,
+      "drawn": 1,
+      "lost": 5,
+      "goalsFor": 1,
+      "goalsAgainst": 20
+    },
+    "topScorers": [
+      { "name": "Erwin Sánchez", "goals": 1, "tournaments": "1994" },
+      { "name": "Marco Antonio Etcheverry", "goals": 0, "tournaments": "1994" }
+    ],
+    "notableMoments": [
+      "One of only 13 teams to participate in the inaugural 1930 World Cup in Uruguay",
+      "44-year gap between their second (1950) and third (1994) World Cup appearances",
+      "Erwin Sánchez scored Bolivia's first World Cup goal in 64 years against Spain in 1994",
+      "Held Spain to a 3-1 deficit in 1994 after scoring a memorable consolation goal",
+      "Won the 1963 Copa América as hosts, the greatest achievement in Bolivian football",
+      "Known for their formidable home advantage at the Hernando Siles stadium in La Paz at 3,637m altitude"
+    ]
+  }
+}

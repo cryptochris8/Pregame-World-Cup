@@ -1,0 +1,39 @@
+{
+  "id": "AUS_PAR",
+  "team1Code": "AUS",
+  "team2Code": "PAR",
+  "totalMatches": 5,
+  "team1Wins": 2,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 6,
+  "team2Goals": 7,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2019-11-19",
+  "firstMeeting": "1999-07-14",
+  "notableMatches": [
+    {
+      "year": 1999,
+      "tournament": "Copa America",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "AUS",
+      "location": "Asuncion, Paraguay",
+      "description": "Australia stun hosts Paraguay in Copa America group stage match"
+    },
+    {
+      "year": 2019,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "PAR",
+      "location": "Asuncion, Paraguay",
+      "description": "Paraguay edge Australia in friendly encounter"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "PAR_TUR",
+  "team1Code": "PAR",
+  "team2Code": "TUR",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 5,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2019-06-13",
+  "firstMeeting": "2004-06-01",
+  "notableMatches": [
+    {
+      "year": 2019,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 4,
+      "team2Score": 1,
+      "winnerCode": "PAR",
+      "location": "Asuncion, Paraguay",
+      "description": "Paraguay demolish Turkey in emphatic home friendly victory"
+    },
+    {
+      "year": 2004,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "TUR",
+      "location": "Istanbul, Turkey",
+      "description": "Turkey edge Paraguay in tight friendly encounter"
+    }
+  ]
+}

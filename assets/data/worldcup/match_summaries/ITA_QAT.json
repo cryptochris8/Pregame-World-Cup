@@ -1,0 +1,55 @@
+{
+  "team1Code": "ITA",
+  "team2Code": "QAT",
+  "team1Name": "Italy",
+  "team2Name": "Qatar",
+  "historicalAnalysis": "Italy and Qatar have had limited competitive encounters, with their meetings mostly confined to friendlies. However, the context surrounding both teams at the 2026 World Cup makes this Group B matchday 3 encounter compelling. Italy are four-time World Cup champions returning to the tournament after the embarrassment of failing to qualify for 2018 and 2022. Qatar are the 2022 World Cup hosts and 2019 Asian Cup champions.\n\nQatar's hosting of the 2022 World Cup was a landmark moment for Middle Eastern football, but their on-pitch performances were disappointing. They became the first host nation to lose all three group stage matches, scoring just one goal. Their squad has since undergone a generational shift, with younger players brought in to rebuild.\n\nItaly's Euro 2020 triumph showed they can still compete at the highest level, but their failure to qualify for two consecutive World Cups damaged their reputation. Their return to the World Cup stage in 2026 carries enormous pressure to perform. This matchday 3 encounter could determine Italy's advancement from Group B.",
+  "keyStorylines": [
+    "Italy's redemption tour after missing two World Cups",
+    "Qatar seeking to improve on their disappointing 2022 home tournament",
+    "Four-time World Cup champions vs the 2022 World Cup hosts",
+    "Group B decider with potential knockout round implications"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Nicolo Barella",
+      "teamCode": "ITA",
+      "position": "Midfielder",
+      "reason": "Inter Milan's engine who drives Italy's play with energy, skill, and goals"
+    },
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Asian Player of the Year whose skill and creativity lead Qatar's attack"
+    },
+    {
+      "name": "Federico Chiesa",
+      "teamCode": "ITA",
+      "position": "Forward",
+      "reason": "Euro 2020 hero who can produce match-winning moments"
+    },
+    {
+      "name": "Almoez Ali",
+      "teamCode": "QAT",
+      "position": "Forward",
+      "reason": "Qatar's all-time leading scorer who needs to deliver on the biggest stage"
+    }
+  ],
+  "tacticalPreview": "Italy's tactical DNA is built on defensive organization, patient build-up, and clinical finishing. Their 3-5-2 or 4-3-3 provides structural solidity while allowing creative players like Barella to influence the game. Italy's ability to control matches through possession and tempo is their greatest strength.\n\nQatar will look to play their possession-based 3-5-2, which served them well in winning the 2019 Asian Cup. However, the quality gap between Asian competition and World Cup football was exposed in 2022. Their challenge is to compete physically and technically against Italy's seasoned professionals. Afif's creativity will be key, but Qatar must first ensure they are defensively solid.",
+  "prediction": {
+    "predictedOutcome": "ITA",
+    "predictedScore": "2-0",
+    "confidence": 80,
+    "reasoning": "Italy's superior quality and desperation to perform after missing two World Cups will drive them to a comfortable victory. Qatar's 2022 struggles showed the gap between their level and World Cup standard remains significant.",
+    "alternativeScenario": "If Qatar have improved significantly since 2022 and take an early lead, Italian anxiety could resurface. A 1-1 draw or tight 1-0 Italy win is possible if Qatar's Asian Cup-winning quality shines through."
+  },
+  "pastEncountersSummary": "Italy and Qatar have met in friendlies and minor competitions, with Italy winning most encounters. Qatar's 2022 World Cup hosting gave them tournament experience, but the on-pitch results were poor. Italy will be heavy favorites based on historical pedigree.",
+  "funFacts": [
+    "Italy have won the World Cup 4 times (1934, 1938, 1982, 2006) but failed to qualify in 2018 and 2022",
+    "Qatar became the first host nation to lose all three group stage matches at a World Cup in 2022",
+    "Qatar won the 2019 Asian Cup as the host nation, beating Japan in the final",
+    "Italy won Euro 2020 between their two World Cup qualification failures"
+  ],
+  "isFirstMeeting": false
+}

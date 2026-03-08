@@ -1,0 +1,21 @@
+{
+  "id": "manager_tri",
+  "firstName": "Angus",
+  "lastName": "Eve",
+  "commonName": "Angus Eve",
+  "dateOfBirth": "1974-03-31",
+  "nationality": "Trinidad and Tobago",
+  "currentTeam": "Trinidad and Tobago",
+  "currentTeamCode": "TRI",
+  "photoUrl": "assets/managers/eve.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Counter-Attack",
+  "yearsExperience": 10,
+  "previousTeams": ["Trinidad and Tobago U20", "Trinidad and Tobago U23", "Police FC (Trinidad)", "Club Sando"],
+  "trophies": ["CONCACAF Gold Cup Quarter-finalist 2023"],
+  "careerWins": 45,
+  "careerDraws": 25,
+  "careerLosses": 35,
+  "careerWinPercentage": 43,
+  "bio": "A former Trinidad and Tobago international who took over the national team in 2021. Eve has rebuilt the Soca Warriors program through youth development and tactical discipline, guiding them to World Cup qualification for the first time since 2006."
+}

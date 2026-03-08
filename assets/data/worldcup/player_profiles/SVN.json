@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Jan Oblak": {
+      "bio": "Widely regarded as one of the greatest goalkeepers of his generation, Jan Oblak has been the backbone of Atletico Madrid's defense for over a decade. His extraordinary consistency, record-breaking clean sheet numbers, and virtually unmatched shot-stopping ability have established him as Slovenia's most famous sporting export and one of the best players to ever represent the country.",
+      "playingStyle": "World-class goalkeeper with near-perfect positioning, extraordinary reflexes, calm command of the penalty area, and an almost supernatural ability to make the most difficult saves look routine",
+      "keyStrengths": ["Elite-level shot-stopping and reflexes", "Perfect positioning and reading of the game", "Calm, commanding presence that inspires defensive confidence"],
+      "worldCup2026Role": "The undisputed starting goalkeeper and Slovenia's most important player; his ability to keep clean sheets and produce match-winning saves single-handedly elevates Slovenia's chances of progressing deep into the tournament",
+      "notableFact": "Holds the record for the most clean sheets in La Liga history at Atletico Madrid and has won the Zamora Trophy for best goalkeeper in La Liga multiple times, establishing himself among the all-time greats"
+    },
+    "Vid Belec": {
+      "bio": "An experienced goalkeeper who has served as a reliable backup throughout his career, with spells across Italian, Greek, and Cypriot football. Belec's professionalism, experience, and readiness to perform when called upon have made him a valued member of Slovenia's goalkeeping department for many years.",
+      "playingStyle": "Experienced, steady goalkeeper with good positioning, reliable handling, and the professional attitude to maintain sharpness despite limited playing time behind one of the world's best",
+      "keyStrengths": ["Professional attitude and squad commitment", "Reliable handling and positioning", "Experience across multiple European leagues"],
+      "worldCup2026Role": "Second-choice goalkeeper whose experience and professionalism ensure Slovenia have dependable cover behind Oblak; his readiness to perform if needed is never in question",
+      "notableFact": "Has been a loyal servant to Slovenian football for over a decade, maintaining his professionalism and fitness despite the near-impossible task of displacing Jan Oblak from the starting position"
+    },
+    "Igor Vekic": {
+      "bio": "A young goalkeeper developing in Danish football who represents Slovenia's goalkeeping future beyond the Oblak era. Vekic's height, athletic ability, and growing experience in the Danish Superliga have earned him inclusion in the World Cup squad as a third-choice option.",
+      "playingStyle": "Tall, athletic young goalkeeper with good shot-stopping ability, developing command of his area, and the physical attributes to become a top-level goalkeeper with continued development",
+      "keyStrengths": ["Height and physical presence at 192cm", "Athletic ability and shot-stopping", "Development potential for the future"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining World Cup experience; his inclusion ensures Slovenia are developing the next generation of goalkeeping talent to eventually succeed the legendary Oblak",
+      "notableFact": "Playing in the Danish Superliga with Vejle Boldklub, he is being groomed as a long-term successor in Slovenian goalkeeping, though following Jan Oblak is perhaps the most daunting task in football"
+    },
+    "Jaka Bijol": {
+      "bio": "One of the best center-backs in European football, Bijol has become a Premier League defender after his outstanding performances at Udinese earned him a move to Leeds United. His composure, reading of the game, and ability to play progressive passes from defense have made him one of Slovenia's most valuable outfield players and the defensive partner Oblak deserves.",
+      "playingStyle": "Composed, intelligent center-back with outstanding reading of the game, excellent progressive passing from deep, and the defensive solidity to anchor the backline alongside any partner",
+      "keyStrengths": ["Outstanding reading of the game and anticipation", "Progressive passing and ball-playing from defense", "Defensive composure and consistency"],
+      "worldCup2026Role": "Starting center-back and the anchor of Slovenia's defense in front of Oblak; his composure and passing ability allow Slovenia to build attacks from the back while maintaining their renowned defensive solidity",
+      "notableFact": "His impressive performances at Udinese earned him a transfer to Leeds United in the Premier League, making him one of the most sought-after Slovenian outfield players in European football"
+    },
+    "Vanja Drkusic": {
+      "bio": "A solid, reliable center-back who has built his career in Russian football with Zenit St Petersburg. Drkusic's physicality, defensive consistency, and experience in competitive European club football have made him a regular in Slovenia's defensive setup alongside the more high-profile Bijol.",
+      "playingStyle": "Physical, reliable center-back with strong aerial ability, aggressive tackling, and the defensive solidity to provide a commanding presence at the heart of the backline",
+      "keyStrengths": ["Physical strength and aerial ability", "Aggressive tackling and defensive commitment", "Consistency and reliability"],
+      "worldCup2026Role": "Starting center-back partner to Bijol, providing the physical complement to Bijol's more technical style; his aggression and aerial ability give Slovenia a well-balanced defensive pairing",
+      "notableFact": "Has been a regular performer at Zenit St Petersburg, competing in the Russian Premier League and gaining continental experience at one of Russia's biggest clubs"
+    },
+    "Miha Blazic": {
+      "bio": "A veteran center-back who has spent his career across Hungarian, Slovenian, and UAE football. Blazic's experience, defensive know-how, and understanding of the Slovenian national team system have kept him in the squad picture as a reliable defensive depth option over many years.",
+      "playingStyle": "Experienced, positionally sound center-back who compensates for physical limitations with excellent positioning, smart defending, and intelligent reading of dangerous situations",
+      "keyStrengths": ["Positional intelligence and experience", "Smart, efficient defending", "Understanding of team defensive systems"],
+      "worldCup2026Role": "Experienced defensive depth option whose positional intelligence and understanding of Slovenia's system make him a reliable backup at center-back when rotation or tactical changes are needed",
+      "notableFact": "Has been a fixture in the Slovenian national team setup for many years and was a key member of the squad that qualified for Euro 2024, providing defensive stability across multiple campaigns"
+    },
+    "David Brekalo": {
+      "bio": "A versatile defender who has gained experience in MLS with Orlando City after spells in European football. Brekalo's ability to play across the defensive line and his growing experience in competitive football have earned him a place in Slovenia's expanded World Cup squad.",
+      "playingStyle": "Versatile, adaptable defender who can play in multiple positions across the backline, combining solid defensive fundamentals with a willingness to compete and contribute wherever needed",
+      "keyStrengths": ["Versatility across defensive positions", "Solid defensive fundamentals", "Adaptability to different tactical systems"],
+      "worldCup2026Role": "Versatile defensive depth option who can cover center-back and other positions; his MLS experience and adaptability give Slovenia valuable tactical flexibility in their squad",
+      "notableFact": "Has played in MLS with Orlando City, giving him experience of football in the United States, which could prove valuable as the World Cup is hosted across North America"
+    },
+    "Petar Stojanovic": {
+      "bio": "One of Slovenia's most experienced defenders, Stojanovic has been a reliable right-back for the national team for many years. His career has spanned multiple European leagues including Serie A with Sampdoria, and his defensive consistency and understanding of the national team system make him a trusted squad member.",
+      "playingStyle": "Experienced, defensively focused right-back with good positioning, reliable tackling, and the tactical awareness to fulfill his defensive duties without taking unnecessary risks",
+      "keyStrengths": ["Defensive reliability and positioning", "Tactical awareness and experience", "Consistency across multiple qualifying campaigns"],
+      "worldCup2026Role": "Experienced right-back providing depth and reliability; his years of international experience and understanding of Slovenia's defensive approach make him a dependable option when called upon",
+      "notableFact": "Has accumulated over 60 caps for Slovenia and played in Serie A with Sampdoria, bringing top-level European experience to the national team's defensive options"
+    },
+    "Zan Karnicnik": {
+      "bio": "A hard-working right-back who became a national hero at Euro 2024 when his dramatic goal against Denmark helped Slovenia advance. Despite playing his club football domestically with NK Celje, Karnicnik has proven that he can deliver on the biggest stages with his wholehearted commitment and unexpected attacking contributions.",
+      "playingStyle": "Committed, energetic right-back who defends with full dedication, makes overlapping runs when opportunities arise, and possesses a surprising knack for scoring crucial goals in big moments",
+      "keyStrengths": ["Wholehearted commitment and work rate", "Surprising goal-scoring ability from defense", "Big-game mentality and clutch performances"],
+      "worldCup2026Role": "Starting right-back whose incredible work rate and big-game mentality make him an indispensable part of Slovenia's defensive setup; his ability to produce decisive moments adds an unexpected attacking dimension",
+      "notableFact": "Scored a dramatic goal against Denmark at Euro 2024 that helped Slovenia advance in the tournament, instantly becoming one of the heroes of Slovenia's greatest ever summer of football"
+    },
+    "Erik Janza": {
+      "bio": "A dependable left-back who has been a consistent contributor to the Slovenian national team with his defensive solidity and occasional attacking contributions. Janza's career in Polish football has given him the competitive edge needed for international football.",
+      "playingStyle": "Solid, defensively reliable left-back who provides consistent cover on the left flank, with the ability to contribute going forward with crosses and set-piece delivery when the opportunity arises",
+      "keyStrengths": ["Defensive reliability and positioning", "Set-piece delivery from the left", "Consistent performances and squad commitment"],
+      "worldCup2026Role": "Starting left-back providing defensive stability on the left flank; his consistent performances and understanding of the team's defensive system make him a reliable fixture in the starting eleven",
+      "notableFact": "Scored a memorable goal at Euro 2024 that contributed to Slovenia's impressive tournament performance, adding to his reputation as a defender capable of producing important attacking moments"
+    },
+    "Jure Balkovec": {
+      "bio": "An experienced left-back who has spent much of his career in Italian and Turkish football. Balkovec's tactical intelligence, crossing ability, and years of competitive European football have made him a useful option at left-back for the Slovenian national team across multiple qualifying campaigns.",
+      "playingStyle": "Tactical, experienced left-back with good crossing ability, positional awareness developed in Italian football, and the intelligence to pick the right moments to join attacks",
+      "keyStrengths": ["Tactical awareness from Italian and Turkish football", "Crossing ability and delivery", "Experience and defensive intelligence"],
+      "worldCup2026Role": "Experienced left-back backup providing tactical intelligence and reliable defensive cover; his European experience ensures Slovenia have quality depth in the fullback positions",
+      "notableFact": "Has played in both Italian and Turkish football, gaining tactical education across two demanding football cultures that has shaped his intelligent defensive approach"
+    },
+    "Adam Gnezda Cerin": {
+      "bio": "A dynamic central midfielder who has become one of the most important players in the Slovenian national team with his energy, passing, and goal-scoring ability from deep. Gnezda Cerin's performances in Greek football with Panathinaikos and his consistent international displays have established him as the engine of Slovenia's midfield.",
+      "playingStyle": "Dynamic, technically gifted central midfielder with excellent passing range, the ability to score goals from midfield, and the energy to influence matches at both ends of the pitch",
+      "keyStrengths": ["Goal-scoring ability from central midfield", "Excellent passing range and technical quality", "Energy and dynamism in box-to-box running"],
+      "worldCup2026Role": "Starting midfielder and one of Slovenia's most important outfield players; his goals, assists, and all-round midfield contributions are essential to Slovenia's creative and attacking output",
+      "notableFact": "Has been Slovenia's most productive midfielder in recent years, contributing crucial goals and assists that were instrumental in qualifying for both Euro 2024 and the 2026 World Cup"
+    },
+    "Jasmin Kurtic": {
+      "bio": "The most experienced midfielder in Slovenian football history with nearly 100 caps, Kurtic has been the heartbeat of the national team for over a decade. His career has spanned top-level football in Italy, including spells at Atalanta, Parma, and SPAL, and he brings an unmatched wealth of experience to the squad.",
+      "playingStyle": "Experienced, physically commanding midfielder with excellent aerial ability for a central player, strong tackling, and the intelligence to control the tempo of matches from deep positions",
+      "keyStrengths": ["Aerial ability and physical presence in midfield", "Vast experience across Serie A and international football", "Game intelligence and tempo control"],
+      "worldCup2026Role": "Veteran midfield leader whose nearly 100 caps and Serie A experience provide Slovenia with wisdom, composure, and leadership in the middle of the park; the heartbeat of the team for one last tournament",
+      "notableFact": "Is the most capped midfielder in Slovenian history with nearly 100 international appearances, having represented the country across more than a decade of competitive football"
+    },
+    "Timi Max Elsnik": {
+      "bio": "A versatile and technically gifted midfielder who has been performing well at Red Star Belgrade in the Serbian SuperLiga. Elsnik's ability to play in multiple midfield roles, his composure on the ball, and his improving goal-scoring record have made him an increasingly important figure in Slovenia's midfield.",
+      "playingStyle": "Technically refined, versatile midfielder who can operate as a number 8 or number 10, combining good passing, intelligent movement, and the ability to arrive in dangerous positions to score goals",
+      "keyStrengths": ["Technical quality and versatility in midfield", "Goal-scoring ability from central positions", "Composure on the ball and intelligent movement"],
+      "worldCup2026Role": "Versatile midfield option who can play centrally or in a more advanced role; his technical quality and tactical flexibility give Slovenia's coaching staff multiple options in how they set up their midfield",
+      "notableFact": "Wears the number 10 shirt for Slovenia, reflecting his creative importance to the team, and has been producing consistently impressive performances at Red Star Belgrade"
+    },
+    "Sandi Lovric": {
+      "bio": "A technically skilled central midfielder who has established himself in Serie A with Hellas Verona after impressing at Udinese. Lovric's passing ability, set-piece quality, and consistent attacking contributions from midfield have made him a regular starter for the Slovenian national team.",
+      "playingStyle": "Creative, technically excellent midfielder with outstanding set-piece delivery, precise passing, and the ability to score goals from distance with well-struck shots",
+      "keyStrengths": ["Set-piece delivery and dead-ball quality", "Precise passing and creative vision", "Goal-scoring ability from midfield positions"],
+      "worldCup2026Role": "Starting midfielder whose set-piece quality and creative passing add crucial attacking dimensions; his ability to deliver from dead-ball situations could be decisive in tight World Cup matches",
+      "notableFact": "Has been one of the most consistent Slovenian performers in Serie A, establishing himself as a regular contributor at both Udinese and Hellas Verona"
+    },
+    "Jon Gorenc Stankovic": {
+      "bio": "A disciplined defensive midfielder who has been a consistent performer at Sturm Graz in the Austrian Bundesliga. Gorenc Stankovic's tactical intelligence, ball-winning ability, and reliability in the holding role have made him an important figure in Slovenia's midfield setup.",
+      "playingStyle": "Disciplined, positionally excellent defensive midfielder who provides a shield in front of the defense, wins the ball efficiently, and keeps possession ticking over with simple, effective passes",
+      "keyStrengths": ["Defensive positioning and ball-winning", "Tactical discipline and reliability", "Simple, efficient ball distribution"],
+      "worldCup2026Role": "Defensive midfield option providing balance and protection; ideal for matches where Slovenia need extra security in front of the defense against stronger attacking opponents",
+      "notableFact": "Has been a key performer for Sturm Graz, helping them compete in European competition and the Austrian Bundesliga, and provides an important defensive midfield option for Slovenia"
+    },
+    "Tomi Horvat": {
+      "bio": "A young midfielder who has earned a move to the English Championship with Bristol City through his impressive performances. Horvat's left-footed quality, technical ability, and growing competitive experience make him an exciting addition to Slovenia's midfield depth.",
+      "playingStyle": "Left-footed, technically capable young midfielder with good passing ability, neat close control, and the intelligence to find space and create opportunities in the final third",
+      "keyStrengths": ["Left-footed technical quality", "Neat passing and close control", "Intelligence and spatial awareness"],
+      "worldCup2026Role": "Young midfield talent whose left-footed quality provides Slovenia with a different creative option; his Championship experience adds to his development as he gains World Cup exposure",
+      "notableFact": "Earned a move to the English Championship with Bristol City through his impressive domestic performances, showcasing the depth of midfield talent in Slovenian football"
+    },
+    "Adrian Zeljkovic": {
+      "bio": "A young, tall defensive midfielder who has been developing in Czech football with Viktoria Plzen. Zeljkovic's physical presence, aerial ability, and improving tactical awareness have earned him early international recognition as a future star of Slovenian midfield.",
+      "playingStyle": "Tall, physically imposing young defensive midfielder who uses his height and strength to win aerial duels, break up play, and provide a commanding presence in the middle of the pitch",
+      "keyStrengths": ["Physical presence and aerial ability at 192cm", "Ball-winning ability and defensive strength", "Youth and development potential"],
+      "worldCup2026Role": "Young defensive midfield prospect gaining World Cup experience; his imposing physical presence provides Slovenia with a unique profile that adds depth and tactical flexibility to the midfield",
+      "notableFact": "At 192cm, he is one of the tallest midfielders in any World Cup squad, and his development at Viktoria Plzen in Czech football is building him into a formidable defensive midfield presence"
+    },
+    "Benjamin Verbic": {
+      "bio": "An experienced winger who has played at the highest levels of European football, including stints at Dynamo Kyiv in the Ukrainian Premier League where he was a regular in Champions League football. Verbic's pace, directness, and big-game experience have made him a trusted member of the Slovenian attack for many years.",
+      "playingStyle": "Quick, experienced winger with direct running at defenders, the ability to beat players with pace and skill, and the big-game experience to perform without fear on the largest stages",
+      "keyStrengths": ["Pace and direct running at defenders", "Champions League experience and big-game ability", "Work rate and defensive contribution from the wing"],
+      "worldCup2026Role": "Experienced wide option whose Champions League background and directness provide Slovenia with a proven performer on the biggest stages; his experience adds invaluable squad depth in the attacking positions",
+      "notableFact": "Played regularly in the UEFA Champions League with Dynamo Kyiv, giving him experience at the very highest level of European club football that few Slovenian players can match"
+    },
+    "Benjamin Sesko": {
+      "bio": "The superstar of Slovenian football and one of the most exciting young strikers in the world, Sesko is a towering forward whose combination of height, pace, power, and finishing quality has made him one of the most sought-after players in European football. After an outstanding stint at RB Leipzig, his transfer to Manchester United confirmed his status as a world-class talent. At 23, he is already Slovenia's all-time leading scorer candidate and the player around whom the nation's World Cup hopes are built.",
+      "playingStyle": "Devastating, physically complete striker who combines towering height with explosive pace, thunderous shooting with either foot, elegant technical ability, and the intelligence to drop deep and create as well as score",
+      "keyStrengths": ["Explosive pace combined with 195cm height - an almost unique physical profile", "Thunderous shooting power with both feet", "Technical quality and link-up play that belie his imposing frame"],
+      "worldCup2026Role": "The talisman, the star, and the player around whom Slovenia's entire World Cup campaign is built; his ability to score against anyone, outpace any defender, and dominate physically makes him one of the most dangerous strikers at the entire tournament",
+      "notableFact": "His blockbuster transfer to Manchester United from RB Leipzig made him the most expensive Slovenian player in history, and his goal-scoring exploits have made him a genuinely world-famous striker"
+    },
+    "Andraz Sporar": {
+      "bio": "An experienced striker who has spent his career across multiple European leagues including Portugal, Slovakia, and Greece. Sporar's intelligence, movement, and consistent goal-scoring record have made him a reliable member of the Slovenian national team and a valuable attacking partner or alternative to Sesko.",
+      "playingStyle": "Intelligent, technically skilled striker with excellent movement inside the box, good link-up play, and the ability to score different types of goals including headers and placed finishes",
+      "keyStrengths": ["Intelligent movement and positioning", "Technical finishing ability", "Link-up play and combination with teammates"],
+      "worldCup2026Role": "Experienced attacking option providing depth alongside or behind Sesko; his goal-scoring record for Slovenia and tactical intelligence make him a valuable rotation option in the striking department",
+      "notableFact": "Is one of the most capped attacking players in Slovenian history with over 60 appearances and has scored goals across multiple European leagues, demonstrating his adaptability"
+    },
+    "Zan Celar": {
+      "bio": "A versatile forward who has been performing in the German 2. Bundesliga with Fortuna Dusseldorf. Celar's work rate, physical presence, and ability to play across the front line have earned him regular inclusion in the Slovenian squad as an attacking utility player.",
+      "playingStyle": "Hardworking, physical forward who offers tactical versatility across the front line, combines well with teammates, and provides defensive contribution with his pressing and work rate",
+      "keyStrengths": ["Work rate and pressing from the front", "Physical presence and versatility", "Ability to play multiple attacking positions"],
+      "worldCup2026Role": "Versatile forward option who can cover different attacking positions; his work rate and tactical flexibility make him a useful squad member for different match situations and tactical approaches",
+      "notableFact": "Has been a regular squad member for Slovenia across multiple qualifying campaigns, providing reliable contributions from various attacking positions"
+    },
+    "Zan Vipotnik": {
+      "bio": "One of Slovenia's most exciting young attacking talents, Vipotnik has earned a move to the English Championship with Swansea City through his impressive goal-scoring performances. His movement, finishing, and composure in front of goal suggest he could develop into a genuine partner or successor to Sesko at the international level.",
+      "playingStyle": "Quick, intelligent young striker with excellent movement in the penalty area, clinical finishing, and the composure to score goals in tight situations with precise placement",
+      "keyStrengths": ["Clinical finishing and composure in front of goal", "Intelligent movement and positioning", "Quick acceleration and pace"],
+      "worldCup2026Role": "Exciting young striking option who can partner or replace Sesko; his goal-scoring quality and development potential make him one of the most promising young players in the Slovenian squad",
+      "notableFact": "Valued at 15 million euros, he is one of Slovenia's most valuable young players and his performances in the Championship have attracted attention from bigger European clubs"
+    },
+    "Jan Mlakar": {
+      "bio": "A versatile attacker who has played across multiple European leagues including France. Mlakar's ability to play on either wing, his pace, and his goal contributions have made him a useful squad member for Slovenia across their qualifying campaigns.",
+      "playingStyle": "Quick, versatile attacker who can play on either wing, combining pace with decent crossing ability, and the willingness to work hard for the team in and out of possession",
+      "keyStrengths": ["Pace and versatility across the forward line", "Crossing ability from wide positions", "Work rate and team contribution"],
+      "worldCup2026Role": "Wide attacking depth option providing pace and versatility; his ability to play on either flank gives Slovenia tactical flexibility in their wide attacking positions",
+      "notableFact": "Has represented Slovenia across multiple age groups and into the senior team, showing consistent development through the national team pathway system"
+    },
+    "Nino Zugelj": {
+      "bio": "A young winger who has been developing in Swedish football with Djurgardens IF. Zugelj's left-footed quality from the right wing, direct running, and youthful energy have caught the eye of national team selectors as they build depth in the wide attacking positions.",
+      "playingStyle": "Direct, left-footed right winger who cuts inside to create shooting opportunities, uses his pace to beat defenders, and brings energy and enthusiasm to the attacking play",
+      "keyStrengths": ["Left-footed quality from the right wing", "Direct running and pace", "Energy and youthful enthusiasm"],
+      "worldCup2026Role": "Young wide attacking option providing a left-footed alternative on the right wing; his directness and energy make him a potential impact substitute in the later stages of matches",
+      "notableFact": "Has been developing in Swedish football with Djurgardens IF, one of the most storied clubs in Swedish football, and earned his first cap for Slovenia as part of the emerging generation"
+    },
+    "Josip Ilicic": {
+      "bio": "One of the most naturally talented footballers Slovenia has ever produced, Ilicic is a mercurial genius whose peak performances at Atalanta included some of the most breathtaking individual displays in Champions League history. Though his career has been affected by personal struggles and mental health challenges, his talent remains extraordinary, and his potential inclusion in the World Cup squad represents an emotional storyline for Slovenian football.",
+      "playingStyle": "Supremely gifted playmaker with magical left-footed technique, the ability to score from impossible angles, creative vision that borders on genius, and the capacity to produce moments of pure footballing artistry",
+      "keyStrengths": ["Magical left-footed technique and finishing", "Creative genius and vision", "Ability to produce extraordinary individual moments of brilliance"],
+      "worldCup2026Role": "The romantic wildcard whose extraordinary talent could provide moments of magic that no other Slovenian player can produce; a potential game-changer off the bench when Slovenia need inspiration",
+      "notableFact": "Scored four goals in a single Champions League match against Valencia while playing for Atalanta, one of the most extraordinary individual performances in Champions League history, in a career defined by moments of pure brilliance"
+    }
+  }
+}

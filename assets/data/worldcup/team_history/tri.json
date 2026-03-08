@@ -1,0 +1,37 @@
+{
+  "fifaCode": "TRI",
+  "teamName": "Trinidad and Tobago",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2006,
+    "appearances": [
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 0,
+      "goalsAgainst": 4
+    },
+    "topScorers": [
+      { "name": "Stern John", "goals": 0, "tournaments": "2006" },
+      { "name": "Dwight Yorke", "goals": 0, "tournaments": "2006" },
+      { "name": "Dennis Lawrence", "goals": 0, "tournaments": "2006" },
+      { "name": "Russell Latapy", "goals": 0, "tournaments": "2006" },
+      { "name": "Shaka Hislop", "goals": 0, "tournaments": "2006" }
+    ],
+    "notableMoments": [
+      "Qualified for their first and only World Cup in 2006 by defeating Bahrain in the intercontinental playoff",
+      "Dennis Lawrence headed the decisive goal against Bahrain that sent the twin-island nation to the World Cup",
+      "Held Sweden to a 0-0 draw in their opening World Cup match in Dortmund",
+      "Squad featured veteran stars Dwight Yorke and Shaka Hislop in their final international tournaments",
+      "The smallest nation (by population) to qualify for a World Cup at the time with 1.3 million people",
+      "Entire nation celebrated qualification as the greatest sporting achievement in the country's history"
+    ]
+  }
+}
