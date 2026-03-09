@@ -266,23 +266,26 @@ void main() {
       await tapSubmitButton(tester, 'Sign In');
 
       expect(
-          find.text('Password must be at least 6 characters'), findsOneWidget);
+          find.text('Please enter your password'), findsOneWidget);
     });
 
-    testWidgets('shows error when password is too short', (tester) async {
+    testWidgets('shows error when password is too short in sign up mode', (tester) async {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
+
+      // Switch to sign up mode where password length is validated
+      await tapModeSwitchButton(tester);
 
       final emailField = find.byType(TextFormField).first;
       await tester.enterText(emailField, 'test@example.com');
 
       final passwordField = find.byType(TextFormField).last;
-      await tester.enterText(passwordField, '12345');
+      await tester.enterText(passwordField, 'short');
 
-      await tapSubmitButton(tester, 'Sign In');
+      await tapSubmitButton(tester, 'Create Account');
 
       expect(
-          find.text('Password must be at least 6 characters'), findsOneWidget);
+          find.text('Password must be at least 8 characters with one uppercase letter, one number, and one special character'), findsOneWidget);
     });
 
     testWidgets('no validation error with valid email and password',
@@ -357,7 +360,7 @@ void main() {
 
       expect(find.text('Please enter a valid email'), findsOneWidget);
       expect(
-          find.text('Password must be at least 6 characters'), findsOneWidget);
+          find.text('Please enter your password'), findsOneWidget);
     });
   });
 
@@ -390,7 +393,7 @@ void main() {
         (tester) async {
       when(() => mockAuthService.signUpWithEmailAndPassword(
             email: 'new@example.com',
-            password: 'password123',
+            password: 'Password1!',
           )).thenAnswer((_) async => MockUserCredential());
 
       await tester.pumpWidget(buildTestWidget());
@@ -403,13 +406,13 @@ void main() {
       await tester.enterText(emailField, 'new@example.com');
 
       final passwordField = find.byType(TextFormField).last;
-      await tester.enterText(passwordField, 'password123');
+      await tester.enterText(passwordField, 'Password1!');
 
       await tapSubmitButton(tester, 'Create Account');
 
       verify(() => mockAuthService.signUpWithEmailAndPassword(
             email: 'new@example.com',
-            password: 'password123',
+            password: 'Password1!',
           )).called(1);
     });
 
@@ -449,7 +452,7 @@ void main() {
       await tester.enterText(emailField, 'existing@example.com');
 
       final passwordField = find.byType(TextFormField).last;
-      await tester.enterText(passwordField, 'password123');
+      await tester.enterText(passwordField, 'Password1!');
 
       await tapSubmitButton(tester, 'Create Account');
 
