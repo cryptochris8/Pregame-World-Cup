@@ -84,6 +84,10 @@
 		</dict>
 	</array>
 	
+	<!-- Google Sign-In Client ID (required by google_sign_in_ios 5.7+) -->
+	<key>GIDClientID</key>
+	<string>942034010384-97474ljpraohurjtsq1k7kk6jvd1tauq.apps.googleusercontent.com</string>
+
 	<!-- Minimum iOS Version -->
 	<key>MinimumOSVersion</key>
 	<string>14.0</string>
