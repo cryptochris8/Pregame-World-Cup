@@ -9,6 +9,8 @@ import '../features/worldcup/data/services/match_reminder_service.dart';
 import '../features/worldcup/domain/services/world_cup_payment_service.dart';
 import '../features/recommendations/data/datasources/places_api_datasource.dart';
 import '../features/venue_portal/venue_portal.dart';
+import '../data/services/player_service.dart';
+import '../core/services/venue_photo_service.dart';
 import '../services/revenuecat_service.dart';
 import '../config/api_keys.dart';
 
@@ -152,6 +154,12 @@ void registerWorldCupServices(GetIt sl) {
 
   // World Cup Payment Service
   sl.registerLazySingleton(() => WorldCupPaymentService());
+
+  // Player Service
+  sl.registerLazySingleton(() => PlayerService());
+
+  // Venue Photo Service
+  sl.registerLazySingleton(() => VenuePhotoService());
 
   // RevenueCat Service
   sl.registerLazySingleton(() => RevenueCatService());

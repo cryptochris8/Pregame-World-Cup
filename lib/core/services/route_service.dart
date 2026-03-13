@@ -101,14 +101,14 @@ class RouteService {
 
     return RouteData(
       coordinates: [origin, destination], // Simple direct line
-      distance: '${(distance / 1000).toStringAsFixed(1)} km',
+      distance: '${(distance / 1609.34).toStringAsFixed(1)} mi',
       duration: '${(duration / 60).round()} min',
       distanceValue: distance.round(),
       durationValue: duration,
       steps: [
         RouteStep(
           instruction: 'Walk directly to destination',
-          distance: '${(distance / 1000).toStringAsFixed(1)} km',
+          distance: '${(distance / 1609.34).toStringAsFixed(1)} mi',
           duration: '${(duration / 60).round()} min',
           startLocation: origin,
           endLocation: destination,

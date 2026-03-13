@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import 'transaction_history_screen.dart';
 import 'fan_pass_header.dart';
@@ -26,7 +27,7 @@ class _FanPassScreenState extends State<FanPassScreen>
     with WidgetsBindingObserver {
   static const String _logTag = 'FanPassScreen';
 
-  final WorldCupPaymentService _paymentService = WorldCupPaymentService();
+  final WorldCupPaymentService _paymentService = sl<WorldCupPaymentService>();
 
   FanPassStatus? _currentStatus;
   WorldCupPricing? _pricing;

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/shareable_content.dart';
 import '../../domain/services/social_sharing_service.dart';
@@ -22,7 +23,7 @@ class ShareSheet extends StatefulWidget {
 }
 
 class _ShareSheetState extends State<ShareSheet> {
-  final SocialSharingService _sharingService = SocialSharingService();
+  final SocialSharingService _sharingService = sl<SocialSharingService>();
   bool _isLoading = false;
   String? _loadingPlatform;
 
@@ -432,7 +433,7 @@ class QuickShareMenu extends StatelessWidget {
   }
 
   Future<void> _shareToPlatform(BuildContext context, SharePlatform platform) async {
-    final service = SocialSharingService();
+    final service = sl<SocialSharingService>();
     ShareResult result;
 
     switch (platform) {

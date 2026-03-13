@@ -4827,5 +4827,428 @@
   "continueWithGoogle": "Continue with Google",
   "@continueWithGoogle": {
     "description": "Google sign-in button label"
+  },
+  "continueWithApple": "Continue with Apple",
+  "@continueWithApple": {
+    "description": "Apple sign-in button label"
+  },
+
+  "adminUserManagement": "User Management",
+  "@adminUserManagement": {
+    "description": "Admin user management screen title"
+  },
+  "adminSearchUsersHint": "Search users by name...",
+  "@adminSearchUsersHint": {
+    "description": "Hint text for admin user search field"
+  },
+  "adminNoUsersFound": "No users found",
+  "@adminNoUsersFound": {
+    "description": "Empty state when no users match search"
+  },
+  "adminOnline": "Online",
+  "@adminOnline": {
+    "description": "User online status indicator"
+  },
+  "adminUserId": "User ID",
+  "@adminUserId": {
+    "description": "Label for user ID info row"
+  },
+  "adminLevel": "Level",
+  "@adminLevel": {
+    "description": "Label for user level info row"
+  },
+  "adminLevelValue": "{level} ({title})",
+  "@adminLevelValue": {
+    "description": "User level with title",
+    "placeholders": {
+      "level": {"type": "int"},
+      "title": {"type": "String"}
+    }
+  },
+  "adminJoined": "Joined",
+  "@adminJoined": {
+    "description": "Label for join date info row"
+  },
+  "adminFriends": "Friends",
+  "@adminFriends": {
+    "description": "Label for friends count info row"
+  },
+  "adminTeams": "Teams",
+  "@adminTeams": {
+    "description": "Label for favorite teams info row"
+  },
+  "adminWarn": "Warn",
+  "@adminWarn": {
+    "description": "Warn action button label"
+  },
+  "adminMute": "Mute",
+  "@adminMute": {
+    "description": "Mute action button label"
+  },
+  "adminSuspend": "Suspend",
+  "@adminSuspend": {
+    "description": "Suspend action button label"
+  },
+  "adminBan": "Ban",
+  "@adminBan": {
+    "description": "Ban action button label"
+  },
+  "adminWarnUser": "Warn {name}",
+  "@adminWarnUser": {
+    "description": "Warning dialog title",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "adminMuteUser": "Mute {name}",
+  "@adminMuteUser": {
+    "description": "Mute dialog title",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "adminSuspendUser": "Suspend {name}",
+  "@adminSuspendUser": {
+    "description": "Suspend dialog title",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "adminBanUser": "Ban {name}",
+  "@adminBanUser": {
+    "description": "Ban dialog title",
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "adminReason": "Reason",
+  "@adminReason": {
+    "description": "Label for reason input field"
+  },
+  "adminEnterWarningReason": "Enter warning reason...",
+  "@adminEnterWarningReason": {
+    "description": "Hint for warning reason field"
+  },
+  "adminEnterMuteReason": "Enter mute reason...",
+  "@adminEnterMuteReason": {
+    "description": "Hint for mute reason field"
+  },
+  "adminEnterSuspensionReason": "Enter suspension reason...",
+  "@adminEnterSuspensionReason": {
+    "description": "Hint for suspension reason field"
+  },
+  "adminEnterBanReason": "Enter ban reason...",
+  "@adminEnterBanReason": {
+    "description": "Hint for ban reason field"
+  },
+  "adminDuration": "Duration",
+  "@adminDuration": {
+    "description": "Label for duration dropdown"
+  },
+  "adminDuration1Hour": "1 hour",
+  "@adminDuration1Hour": {
+    "description": "Mute duration option"
+  },
+  "adminDuration24Hours": "24 hours",
+  "@adminDuration24Hours": {
+    "description": "Mute duration option"
+  },
+  "adminDuration7Days": "7 days",
+  "@adminDuration7Days": {
+    "description": "Duration option"
+  },
+  "adminDuration30Days": "30 days",
+  "@adminDuration30Days": {
+    "description": "Duration option"
+  },
+  "adminDuration1Day": "1 day",
+  "@adminDuration1Day": {
+    "description": "Suspend duration option"
+  },
+  "adminDuration90Days": "90 days",
+  "@adminDuration90Days": {
+    "description": "Suspend duration option"
+  },
+  "adminSendWarning": "Send Warning",
+  "@adminSendWarning": {
+    "description": "Send warning button"
+  },
+  "adminMuteUserButton": "Mute User",
+  "@adminMuteUserButton": {
+    "description": "Mute user button"
+  },
+  "adminSuspendUserButton": "Suspend User",
+  "@adminSuspendUserButton": {
+    "description": "Suspend user button"
+  },
+  "adminPermanentlyBan": "Permanently Ban",
+  "@adminPermanentlyBan": {
+    "description": "Permanently ban button"
+  },
+  "adminBanPermanentWarning": "This action is permanent and cannot be undone.",
+  "@adminBanPermanentWarning": {
+    "description": "Warning text in ban dialog"
+  },
+  "adminWarningSent": "Warning sent",
+  "@adminWarningSent": {
+    "description": "Success message after sending warning"
+  },
+  "adminWarningFailed": "Failed to send warning",
+  "@adminWarningFailed": {
+    "description": "Failure message for warning"
+  },
+  "adminUserMuted": "User muted",
+  "@adminUserMuted": {
+    "description": "Success message after muting user"
+  },
+  "adminMuteFailed": "Failed to mute user",
+  "@adminMuteFailed": {
+    "description": "Failure message for mute"
+  },
+  "adminUserSuspended": "User suspended",
+  "@adminUserSuspended": {
+    "description": "Success message after suspending user"
+  },
+  "adminSuspendFailed": "Failed to suspend user",
+  "@adminSuspendFailed": {
+    "description": "Failure message for suspend"
+  },
+  "adminUserBanned": "User banned",
+  "@adminUserBanned": {
+    "description": "Success message after banning user"
+  },
+  "adminBanFailed": "Failed to ban user",
+  "@adminBanFailed": {
+    "description": "Failure message for ban"
+  },
+
+  "reportTitle": "Report",
+  "@reportTitle": {
+    "description": "Default report bottom sheet title"
+  },
+  "reportContentType": "Report {type}",
+  "@reportContentType": {
+    "description": "Report title with content type",
+    "placeholders": {
+      "type": {"type": "String"}
+    }
+  },
+  "reportSelectReason": "Please select a reason for your report",
+  "@reportSelectReason": {
+    "description": "Error when no reason selected"
+  },
+  "reportSubmittedSuccess": "Report submitted successfully. Thank you.",
+  "@reportSubmittedSuccess": {
+    "description": "Success message after report submission"
+  },
+  "reportSubmitFailed": "Failed to submit report. Please try again.",
+  "@reportSubmitFailed": {
+    "description": "Failure message for report submission"
+  },
+  "reportContentBeingReported": "Content being reported:",
+  "@reportContentBeingReported": {
+    "description": "Label above content preview"
+  },
+  "reportWhyReporting": "Why are you reporting this?",
+  "@reportWhyReporting": {
+    "description": "Heading for reason selection"
+  },
+  "reportAdditionalDetails": "Additional details (optional)",
+  "@reportAdditionalDetails": {
+    "description": "Heading for additional details field"
+  },
+  "reportDetailsHint": "Provide any additional context that might help us review this report...",
+  "@reportDetailsHint": {
+    "description": "Hint text for additional details field"
+  },
+  "reportSubmitButton": "Submit Report",
+  "@reportSubmitButton": {
+    "description": "Submit report button text"
+  },
+  "reportDisclaimer": "Reports are reviewed by our moderation team. False reports may result in action against your account.",
+  "@reportDisclaimer": {
+    "description": "Disclaimer text below submit button"
+  },
+  "reportReasonSpam": "Unwanted commercial content or repetitive messages",
+  "@reportReasonSpam": {
+    "description": "Description for spam report reason"
+  },
+  "reportReasonHarassment": "Bullying, threats, or targeted attacks",
+  "@reportReasonHarassment": {
+    "description": "Description for harassment report reason"
+  },
+  "reportReasonHateSpeech": "Discrimination based on race, religion, gender, etc.",
+  "@reportReasonHateSpeech": {
+    "description": "Description for hate speech report reason"
+  },
+  "reportReasonViolence": "Threats of violence or graphic content",
+  "@reportReasonViolence": {
+    "description": "Description for violence report reason"
+  },
+  "reportReasonSexualContent": "Sexually explicit or suggestive content",
+  "@reportReasonSexualContent": {
+    "description": "Description for sexual content report reason"
+  },
+  "reportReasonMisinformation": "False or misleading information",
+  "@reportReasonMisinformation": {
+    "description": "Description for misinformation report reason"
+  },
+  "reportReasonImpersonation": "Pretending to be someone else",
+  "@reportReasonImpersonation": {
+    "description": "Description for impersonation report reason"
+  },
+  "reportReasonScam": "Fraud, phishing, or suspicious requests",
+  "@reportReasonScam": {
+    "description": "Description for scam report reason"
+  },
+  "reportReasonInappropriate": "Content that violates community guidelines",
+  "@reportReasonInappropriate": {
+    "description": "Description for inappropriate content report reason"
+  },
+  "reportReasonOther": "Other issue not listed above",
+  "@reportReasonOther": {
+    "description": "Description for other report reason"
+  },
+
+  "adminPending": "Pending",
+  "@adminPending": {
+    "description": "Pending status badge text"
+  },
+  "adminRole": "Role",
+  "@adminRole": {
+    "description": "Label for role info row"
+  },
+  "adminEmail": "Email",
+  "@adminEmail": {
+    "description": "Label for email info row"
+  },
+  "adminPhone": "Phone",
+  "@adminPhone": {
+    "description": "Label for phone info row"
+  },
+  "adminType": "Type",
+  "@adminType": {
+    "description": "Label for type info row"
+  },
+  "adminVenueId": "Venue ID",
+  "@adminVenueId": {
+    "description": "Label for venue ID info row"
+  },
+  "adminClaimed": "Claimed",
+  "@adminClaimed": {
+    "description": "Label for claimed date info row"
+  },
+  "adminDisputer": "Disputer",
+  "@adminDisputer": {
+    "description": "Label for disputer info row"
+  },
+  "adminCurrentOwner": "Current Owner",
+  "@adminCurrentOwner": {
+    "description": "Label for current owner info row"
+  },
+  "adminDetails": "Details",
+  "@adminDetails": {
+    "description": "Label for details info row"
+  },
+  "adminFiled": "Filed",
+  "@adminFiled": {
+    "description": "Label for filed date info row"
+  },
+
+  "calendarExportTitle": "Export to Calendar",
+  "@calendarExportTitle": {
+    "description": "Default calendar export screen title"
+  },
+  "calendarEventCount": "{count, plural, =1{1 Event} other{{count} Events}}",
+  "@calendarEventCount": {
+    "description": "Event count label with pluralization",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "calendarReadyToExport": "Ready to export",
+  "@calendarReadyToExport": {
+    "description": "Subtitle for event count card"
+  },
+  "calendarExportOptions": "Export Options",
+  "@calendarExportOptions": {
+    "description": "Section heading for export options"
+  },
+  "calendarSubscription": "Calendar Subscription",
+  "@calendarSubscription": {
+    "description": "Section heading for calendar subscription"
+  },
+  "calendarSubscriptionDescription": "Subscribe to get automatic updates when matches are added or times change.",
+  "@calendarSubscriptionDescription": {
+    "description": "Description for calendar subscription section"
+  },
+  "calendarEventsPreview": "Events Preview",
+  "@calendarEventsPreview": {
+    "description": "Section heading for events preview"
+  },
+  "calendarMoreEvents": "+ {count} more events",
+  "@calendarMoreEvents": {
+    "description": "Text showing additional events not displayed",
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "calendarExportedTo": "Exported to {destination}",
+  "@calendarExportedTo": {
+    "description": "Success message after calendar export",
+    "placeholders": {
+      "destination": {"type": "String"}
+    }
+  },
+  "calendarExportFailed": "Export failed",
+  "@calendarExportFailed": {
+    "description": "Fallback failure message for calendar export"
+  },
+
+  "memberYou": "You",
+  "@memberYou": {
+    "description": "Badge label for current user in member list"
+  },
+  "memberUnmute": "Unmute",
+  "@memberUnmute": {
+    "description": "Unmute member popup menu item"
+  },
+  "memberPromoteCoHost": "Promote to Co-Host",
+  "@memberPromoteCoHost": {
+    "description": "Promote member to co-host popup menu item"
+  },
+  "memberDemoteToMember": "Demote to Member",
+  "@memberDemoteToMember": {
+    "description": "Demote co-host to member popup menu item"
+  },
+  "memberRemove": "Remove",
+  "@memberRemove": {
+    "description": "Remove member popup menu item"
+  },
+  "memberVirtual": "Virtual",
+  "@memberVirtual": {
+    "description": "Virtual attendance indicator"
+  },
+  "memberInPerson": "In Person",
+  "@memberInPerson": {
+    "description": "In person attendance indicator"
+  },
+
+  "shareTooltip": "Share",
+  "@shareTooltip": {
+    "description": "Tooltip for share button"
+  },
+  "shareFailed": "Failed to share",
+  "@shareFailed": {
+    "description": "Fallback error message when sharing fails"
+  },
+
+  "gameDetailsNoVenuesForMap": "No venues available to show on map",
+  "@gameDetailsNoVenuesForMap": {
+    "description": "Snackbar message when no venues for map view"
+  },
+  "gameDetailsLocationNotAvailable": "Location data not available for map view",
+  "@gameDetailsLocationNotAvailable": {
+    "description": "Snackbar message when location data is missing"
   }
 }

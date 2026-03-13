@@ -214,9 +214,9 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
     if (!widget.isVisible) return {};
     
     return widget.rings.map((ring) => Circle(
-      circleId: CircleId('ring_${ring.radiusKm}'),
+      circleId: CircleId('ring_${ring.radiusMiles}'),
       center: widget.centerLocation,
-      radius: ring.radiusKm * 1000, // Convert km to meters
+      radius: ring.radiusMiles * 1609.34, // Convert miles to meters
       strokeColor: ring.color.withValues(alpha:0.8),
       strokeWidth: 2,
       fillColor: ring.color.withValues(alpha:0.1),
@@ -226,14 +226,14 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
 
 // Distance ring data model
 class DistanceRing {
-  final double radiusKm;
+  final double radiusMiles;
   final String label;
   final String description;
   final Color color;
   final int estimatedWalkTime;
 
   DistanceRing({
-    required this.radiusKm,
+    required this.radiusMiles,
     required this.label,
     required this.description,
     required this.color,
@@ -245,28 +245,28 @@ class DistanceRing {
 class GameDayDistanceRings {
   static List<DistanceRing> getDefaultRings(AppLocalizations l10n) => [
     DistanceRing(
-      radiusKm: 0.5,
+      radiusMiles: 0.25,
       label: l10n.venueDistanceVeryClose,
       description: l10n.venueDistance2to5min,
       color: const Color(0xFF2D6A4F),
       estimatedWalkTime: 3,
     ),
     DistanceRing(
-      radiusKm: 1.0,
+      radiusMiles: 0.5,
       label: l10n.venueDistanceClose,
       description: l10n.venueDistance8to12min,
       color: const Color(0xFFFFB300),
       estimatedWalkTime: 10,
     ),
     DistanceRing(
-      radiusKm: 1.5,
+      radiusMiles: 1.0,
       label: l10n.venueDistanceModerate,
       description: l10n.venueDistance15to20min,
       color: const Color(0xFFFF8F00),
       estimatedWalkTime: 18,
     ),
     DistanceRing(
-      radiusKm: 2.0,
+      radiusMiles: 1.5,
       label: l10n.venueDistanceFar,
       description: l10n.venueDistance20plusMin,
       color: const Color(0xFFD32F2F),
@@ -276,21 +276,21 @@ class GameDayDistanceRings {
 
   static List<DistanceRing> getQuickAccessRings(AppLocalizations l10n) => [
     DistanceRing(
-      radiusKm: 0.3,
+      radiusMiles: 0.2,
       label: l10n.venueDistanceImmediate,
       description: l10n.venueDistance1to3min,
       color: const Color(0xFF1B5E20),
       estimatedWalkTime: 2,
     ),
     DistanceRing(
-      radiusKm: 0.8,
+      radiusMiles: 0.5,
       label: l10n.venueDistanceQuick,
       description: l10n.venueDistance5to8min,
       color: const Color(0xFF388E3C),
       estimatedWalkTime: 7,
     ),
     DistanceRing(
-      radiusKm: 1.5,
+      radiusMiles: 1.0,
       label: l10n.venueDistanceAccessible,
       description: l10n.venueDistance12to18min,
       color: const Color(0xFFF57C00),

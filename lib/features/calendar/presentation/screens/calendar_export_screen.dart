@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 import '../../domain/entities/calendar_event.dart';
 import '../../domain/services/calendar_service.dart';
 
@@ -23,7 +24,7 @@ class CalendarExportScreen extends StatefulWidget {
 }
 
 class _CalendarExportScreenState extends State<CalendarExportScreen> {
-  final CalendarService _calendarService = CalendarService();
+  final CalendarService _calendarService = sl<CalendarService>();
   bool _isExporting = false;
 
   @override
@@ -32,7 +33,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title ?? 'Export to Calendar'),
+        title: Text(widget.title ?? AppLocalizations.of(context).calendarExportTitle),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -71,13 +72,13 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          '${widget.events.length} ${widget.events.length == 1 ? 'Event' : 'Events'}',
+                          AppLocalizations.of(context).calendarEventCount(widget.events.length),
                           style: theme.textTheme.titleMedium?.copyWith(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
-                          'Ready to export',
+                          AppLocalizations.of(context).calendarReadyToExport,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.outline,
                           ),
@@ -93,7 +94,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
 
           // Export options
           Text(
-            'Export Options',
+            AppLocalizations.of(context).calendarExportOptions,
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
             ),
@@ -134,14 +135,14 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
 
           // Calendar subscription
           Text(
-            'Calendar Subscription',
+            AppLocalizations.of(context).calendarSubscription,
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 8),
           Text(
-            'Subscribe to get automatic updates when matches are added or times change.',
+            AppLocalizations.of(context).calendarSubscriptionDescription,
             style: theme.textTheme.bodyMedium?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
@@ -162,7 +163,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
 
           // Event preview
           Text(
-            'Events Preview',
+            AppLocalizations.of(context).calendarEventsPreview,
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
             ),
@@ -175,7 +176,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8),
               child: Text(
-                '+ ${widget.events.length - 5} more events',
+                AppLocalizations.of(context).calendarMoreEvents(widget.events.length - 5),
                 style: theme.textTheme.bodyMedium?.copyWith(
                   color: theme.colorScheme.outline,
                 ),
@@ -350,7 +351,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
     if (result.success) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Exported to $destination'),
+          content: Text(AppLocalizations.of(context).calendarExportedTo(destination)),
           backgroundColor: Colors.green,
           behavior: SnackBarBehavior.floating,
         ),
@@ -358,7 +359,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(result.error ?? 'Export failed'),
+          content: Text(result.error ?? AppLocalizations.of(context).calendarExportFailed),
           backgroundColor: Colors.red,
           behavior: SnackBarBehavior.floating,
         ),

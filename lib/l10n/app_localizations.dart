@@ -64,7 +64,8 @@ import 'app_localizations_pt.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -72,7 +73,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -84,19 +86,20 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
     Locale('es'),
     Locale('fr'),
-    Locale('pt')
+    Locale('pt'),
   ];
 
   /// App title
@@ -6914,9 +6917,592 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Continue with Google'**
   String get continueWithGoogle;
+
+  /// Apple sign-in button label
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Apple'**
+  String get continueWithApple;
+
+  /// Admin user management screen title
+  ///
+  /// In en, this message translates to:
+  /// **'User Management'**
+  String get adminUserManagement;
+
+  /// Hint text for admin user search field
+  ///
+  /// In en, this message translates to:
+  /// **'Search users by name...'**
+  String get adminSearchUsersHint;
+
+  /// Empty state when no users match search
+  ///
+  /// In en, this message translates to:
+  /// **'No users found'**
+  String get adminNoUsersFound;
+
+  /// User online status indicator
+  ///
+  /// In en, this message translates to:
+  /// **'Online'**
+  String get adminOnline;
+
+  /// Label for user ID info row
+  ///
+  /// In en, this message translates to:
+  /// **'User ID'**
+  String get adminUserId;
+
+  /// Label for user level info row
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get adminLevel;
+
+  /// User level with title
+  ///
+  /// In en, this message translates to:
+  /// **'{level} ({title})'**
+  String adminLevelValue(int level, String title);
+
+  /// Label for join date info row
+  ///
+  /// In en, this message translates to:
+  /// **'Joined'**
+  String get adminJoined;
+
+  /// Label for friends count info row
+  ///
+  /// In en, this message translates to:
+  /// **'Friends'**
+  String get adminFriends;
+
+  /// Label for favorite teams info row
+  ///
+  /// In en, this message translates to:
+  /// **'Teams'**
+  String get adminTeams;
+
+  /// Warn action button label
+  ///
+  /// In en, this message translates to:
+  /// **'Warn'**
+  String get adminWarn;
+
+  /// Mute action button label
+  ///
+  /// In en, this message translates to:
+  /// **'Mute'**
+  String get adminMute;
+
+  /// Suspend action button label
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend'**
+  String get adminSuspend;
+
+  /// Ban action button label
+  ///
+  /// In en, this message translates to:
+  /// **'Ban'**
+  String get adminBan;
+
+  /// Warning dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Warn {name}'**
+  String adminWarnUser(String name);
+
+  /// Mute dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Mute {name}'**
+  String adminMuteUser(String name);
+
+  /// Suspend dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend {name}'**
+  String adminSuspendUser(String name);
+
+  /// Ban dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Ban {name}'**
+  String adminBanUser(String name);
+
+  /// Label for reason input field
+  ///
+  /// In en, this message translates to:
+  /// **'Reason'**
+  String get adminReason;
+
+  /// Hint for warning reason field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter warning reason...'**
+  String get adminEnterWarningReason;
+
+  /// Hint for mute reason field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter mute reason...'**
+  String get adminEnterMuteReason;
+
+  /// Hint for suspension reason field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter suspension reason...'**
+  String get adminEnterSuspensionReason;
+
+  /// Hint for ban reason field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter ban reason...'**
+  String get adminEnterBanReason;
+
+  /// Label for duration dropdown
+  ///
+  /// In en, this message translates to:
+  /// **'Duration'**
+  String get adminDuration;
+
+  /// Mute duration option
+  ///
+  /// In en, this message translates to:
+  /// **'1 hour'**
+  String get adminDuration1Hour;
+
+  /// Mute duration option
+  ///
+  /// In en, this message translates to:
+  /// **'24 hours'**
+  String get adminDuration24Hours;
+
+  /// Duration option
+  ///
+  /// In en, this message translates to:
+  /// **'7 days'**
+  String get adminDuration7Days;
+
+  /// Duration option
+  ///
+  /// In en, this message translates to:
+  /// **'30 days'**
+  String get adminDuration30Days;
+
+  /// Suspend duration option
+  ///
+  /// In en, this message translates to:
+  /// **'1 day'**
+  String get adminDuration1Day;
+
+  /// Suspend duration option
+  ///
+  /// In en, this message translates to:
+  /// **'90 days'**
+  String get adminDuration90Days;
+
+  /// Send warning button
+  ///
+  /// In en, this message translates to:
+  /// **'Send Warning'**
+  String get adminSendWarning;
+
+  /// Mute user button
+  ///
+  /// In en, this message translates to:
+  /// **'Mute User'**
+  String get adminMuteUserButton;
+
+  /// Suspend user button
+  ///
+  /// In en, this message translates to:
+  /// **'Suspend User'**
+  String get adminSuspendUserButton;
+
+  /// Permanently ban button
+  ///
+  /// In en, this message translates to:
+  /// **'Permanently Ban'**
+  String get adminPermanentlyBan;
+
+  /// Warning text in ban dialog
+  ///
+  /// In en, this message translates to:
+  /// **'This action is permanent and cannot be undone.'**
+  String get adminBanPermanentWarning;
+
+  /// Success message after sending warning
+  ///
+  /// In en, this message translates to:
+  /// **'Warning sent'**
+  String get adminWarningSent;
+
+  /// Failure message for warning
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send warning'**
+  String get adminWarningFailed;
+
+  /// Success message after muting user
+  ///
+  /// In en, this message translates to:
+  /// **'User muted'**
+  String get adminUserMuted;
+
+  /// Failure message for mute
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to mute user'**
+  String get adminMuteFailed;
+
+  /// Success message after suspending user
+  ///
+  /// In en, this message translates to:
+  /// **'User suspended'**
+  String get adminUserSuspended;
+
+  /// Failure message for suspend
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to suspend user'**
+  String get adminSuspendFailed;
+
+  /// Success message after banning user
+  ///
+  /// In en, this message translates to:
+  /// **'User banned'**
+  String get adminUserBanned;
+
+  /// Failure message for ban
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to ban user'**
+  String get adminBanFailed;
+
+  /// Default report bottom sheet title
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get reportTitle;
+
+  /// Report title with content type
+  ///
+  /// In en, this message translates to:
+  /// **'Report {type}'**
+  String reportContentType(String type);
+
+  /// Error when no reason selected
+  ///
+  /// In en, this message translates to:
+  /// **'Please select a reason for your report'**
+  String get reportSelectReason;
+
+  /// Success message after report submission
+  ///
+  /// In en, this message translates to:
+  /// **'Report submitted successfully. Thank you.'**
+  String get reportSubmittedSuccess;
+
+  /// Failure message for report submission
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to submit report. Please try again.'**
+  String get reportSubmitFailed;
+
+  /// Label above content preview
+  ///
+  /// In en, this message translates to:
+  /// **'Content being reported:'**
+  String get reportContentBeingReported;
+
+  /// Heading for reason selection
+  ///
+  /// In en, this message translates to:
+  /// **'Why are you reporting this?'**
+  String get reportWhyReporting;
+
+  /// Heading for additional details field
+  ///
+  /// In en, this message translates to:
+  /// **'Additional details (optional)'**
+  String get reportAdditionalDetails;
+
+  /// Hint text for additional details field
+  ///
+  /// In en, this message translates to:
+  /// **'Provide any additional context that might help us review this report...'**
+  String get reportDetailsHint;
+
+  /// Submit report button text
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Report'**
+  String get reportSubmitButton;
+
+  /// Disclaimer text below submit button
+  ///
+  /// In en, this message translates to:
+  /// **'Reports are reviewed by our moderation team. False reports may result in action against your account.'**
+  String get reportDisclaimer;
+
+  /// Description for spam report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Unwanted commercial content or repetitive messages'**
+  String get reportReasonSpam;
+
+  /// Description for harassment report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Bullying, threats, or targeted attacks'**
+  String get reportReasonHarassment;
+
+  /// Description for hate speech report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Discrimination based on race, religion, gender, etc.'**
+  String get reportReasonHateSpeech;
+
+  /// Description for violence report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Threats of violence or graphic content'**
+  String get reportReasonViolence;
+
+  /// Description for sexual content report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Sexually explicit or suggestive content'**
+  String get reportReasonSexualContent;
+
+  /// Description for misinformation report reason
+  ///
+  /// In en, this message translates to:
+  /// **'False or misleading information'**
+  String get reportReasonMisinformation;
+
+  /// Description for impersonation report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Pretending to be someone else'**
+  String get reportReasonImpersonation;
+
+  /// Description for scam report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Fraud, phishing, or suspicious requests'**
+  String get reportReasonScam;
+
+  /// Description for inappropriate content report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Content that violates community guidelines'**
+  String get reportReasonInappropriate;
+
+  /// Description for other report reason
+  ///
+  /// In en, this message translates to:
+  /// **'Other issue not listed above'**
+  String get reportReasonOther;
+
+  /// Pending status badge text
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get adminPending;
+
+  /// Label for role info row
+  ///
+  /// In en, this message translates to:
+  /// **'Role'**
+  String get adminRole;
+
+  /// Label for email info row
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get adminEmail;
+
+  /// Label for phone info row
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get adminPhone;
+
+  /// Label for type info row
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get adminType;
+
+  /// Label for venue ID info row
+  ///
+  /// In en, this message translates to:
+  /// **'Venue ID'**
+  String get adminVenueId;
+
+  /// Label for claimed date info row
+  ///
+  /// In en, this message translates to:
+  /// **'Claimed'**
+  String get adminClaimed;
+
+  /// Label for disputer info row
+  ///
+  /// In en, this message translates to:
+  /// **'Disputer'**
+  String get adminDisputer;
+
+  /// Label for current owner info row
+  ///
+  /// In en, this message translates to:
+  /// **'Current Owner'**
+  String get adminCurrentOwner;
+
+  /// Label for details info row
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get adminDetails;
+
+  /// Label for filed date info row
+  ///
+  /// In en, this message translates to:
+  /// **'Filed'**
+  String get adminFiled;
+
+  /// Default calendar export screen title
+  ///
+  /// In en, this message translates to:
+  /// **'Export to Calendar'**
+  String get calendarExportTitle;
+
+  /// Event count label with pluralization
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 Event} other{{count} Events}}'**
+  String calendarEventCount(int count);
+
+  /// Subtitle for event count card
+  ///
+  /// In en, this message translates to:
+  /// **'Ready to export'**
+  String get calendarReadyToExport;
+
+  /// Section heading for export options
+  ///
+  /// In en, this message translates to:
+  /// **'Export Options'**
+  String get calendarExportOptions;
+
+  /// Section heading for calendar subscription
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar Subscription'**
+  String get calendarSubscription;
+
+  /// Description for calendar subscription section
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe to get automatic updates when matches are added or times change.'**
+  String get calendarSubscriptionDescription;
+
+  /// Section heading for events preview
+  ///
+  /// In en, this message translates to:
+  /// **'Events Preview'**
+  String get calendarEventsPreview;
+
+  /// Text showing additional events not displayed
+  ///
+  /// In en, this message translates to:
+  /// **'+ {count} more events'**
+  String calendarMoreEvents(int count);
+
+  /// Success message after calendar export
+  ///
+  /// In en, this message translates to:
+  /// **'Exported to {destination}'**
+  String calendarExportedTo(String destination);
+
+  /// Fallback failure message for calendar export
+  ///
+  /// In en, this message translates to:
+  /// **'Export failed'**
+  String get calendarExportFailed;
+
+  /// Badge label for current user in member list
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get memberYou;
+
+  /// Unmute member popup menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Unmute'**
+  String get memberUnmute;
+
+  /// Promote member to co-host popup menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Promote to Co-Host'**
+  String get memberPromoteCoHost;
+
+  /// Demote co-host to member popup menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Demote to Member'**
+  String get memberDemoteToMember;
+
+  /// Remove member popup menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get memberRemove;
+
+  /// Virtual attendance indicator
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual'**
+  String get memberVirtual;
+
+  /// In person attendance indicator
+  ///
+  /// In en, this message translates to:
+  /// **'In Person'**
+  String get memberInPerson;
+
+  /// Tooltip for share button
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get shareTooltip;
+
+  /// Fallback error message when sharing fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to share'**
+  String get shareFailed;
+
+  /// Snackbar message when no venues for map view
+  ///
+  /// In en, this message translates to:
+  /// **'No venues available to show on map'**
+  String get gameDetailsNoVenuesForMap;
+
+  /// Snackbar message when location data is missing
+  ///
+  /// In en, this message translates to:
+  /// **'Location data not available for map view'**
+  String get gameDetailsLocationNotAvailable;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -6925,27 +7511,30 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'es', 'fr', 'pt'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['en', 'es', 'fr', 'pt'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'en': return AppLocalizationsEn();
-    case 'es': return AppLocalizationsEs();
-    case 'fr': return AppLocalizationsFr();
-    case 'pt': return AppLocalizationsPt();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'pt':
+      return AppLocalizationsPt();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }

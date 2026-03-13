@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/sharing/domain/entities/shareable_content.dart';
 import 'package:pregame_world_cup/features/sharing/presentation/widgets/share_button.dart';
+import 'package:pregame_world_cup/l10n/app_localizations.dart';
 
 void main() {
   ShareableInvite createTestContent() {
@@ -14,6 +15,8 @@ void main() {
 
   Widget wrapWithMaterialApp(Widget child) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: Scaffold(body: child),
     );
   }
@@ -24,6 +27,7 @@ void main() {
         await tester.pumpWidget(wrapWithMaterialApp(
           ShareButton(content: createTestContent()),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
         // No label text rendered when showLabel is false
@@ -34,6 +38,7 @@ void main() {
         await tester.pumpWidget(wrapWithMaterialApp(
           ShareButton(content: createTestContent(), showLabel: true),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.text('Share'), findsOneWidget);
         expect(find.byIcon(Icons.share), findsOneWidget);
@@ -43,6 +48,7 @@ void main() {
         await tester.pumpWidget(wrapWithMaterialApp(
           ShareButton(content: createTestContent(), compact: true),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
       });
@@ -54,6 +60,7 @@ void main() {
             child: const Text('Custom Share'),
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.text('Custom Share'), findsOneWidget);
       });
@@ -62,6 +69,7 @@ void main() {
         await tester.pumpWidget(wrapWithMaterialApp(
           ShareButton(content: createTestContent()),
         ));
+        await tester.pumpAndSettle();
 
         // Default (no showLabel, no compact) renders an IconButton
         expect(find.byType(IconButton), findsOneWidget);
@@ -82,6 +90,7 @@ void main() {
             userName: 'Chris',
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
       });
@@ -97,6 +106,7 @@ void main() {
             showLabel: true,
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.text('Share'), findsOneWidget);
       });
@@ -114,6 +124,7 @@ void main() {
             stage: 'Group A',
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
       });
@@ -130,6 +141,7 @@ void main() {
             matchMinute: '65',
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
       });
@@ -150,6 +162,7 @@ void main() {
             hostName: 'Chris',
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
       });
@@ -164,6 +177,7 @@ void main() {
             referralCode: 'ABC123',
           ),
         ));
+        await tester.pumpAndSettle();
 
         // invite factory defaults to showLabel: true
         expect(find.text('Share'), findsOneWidget);
@@ -178,6 +192,7 @@ void main() {
             showLabel: false,
           ),
         ));
+        await tester.pumpAndSettle();
 
         expect(find.byIcon(Icons.share), findsOneWidget);
         expect(find.text('Share'), findsNothing);
@@ -190,6 +205,7 @@ void main() {
       await tester.pumpWidget(wrapWithMaterialApp(
         InlineShareButton(content: createTestContent()),
       ));
+      await tester.pumpAndSettle();
 
       expect(find.byIcon(Icons.share), findsOneWidget);
     });
@@ -201,6 +217,7 @@ void main() {
           iconColor: Colors.red,
         ),
       ));
+      await tester.pumpAndSettle();
 
       final icon = tester.widget<IconButton>(find.byType(IconButton));
       expect(icon.color, Colors.red);
@@ -213,6 +230,7 @@ void main() {
           iconSize: 32,
         ),
       ));
+      await tester.pumpAndSettle();
 
       final icon = tester.widget<Icon>(find.byType(Icon));
       expect(icon.size, 32);
@@ -222,6 +240,7 @@ void main() {
       await tester.pumpWidget(wrapWithMaterialApp(
         InlineShareButton(content: createTestContent()),
       ));
+      await tester.pumpAndSettle();
 
       final iconButton = tester.widget<IconButton>(find.byType(IconButton));
       expect(iconButton.tooltip, 'Share');

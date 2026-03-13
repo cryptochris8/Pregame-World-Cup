@@ -22,6 +22,7 @@ import '../../../../core/services/user_learning_service.dart';
 import '../../../../config/theme_helper.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// Enhanced game details screen with venue discovery
 ///
@@ -202,7 +203,7 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
       final places = await placesRepository.getNearbyPlaces(
         latitude: _currentLatitude!,
         longitude: _currentLongitude!,
-        radius: (_currentFilter.maxDistance * 1000).toDouble(),
+        radius: (_currentFilter.maxDistance * 1609.34).toDouble(),
         types: _currentFilter.venueTypesToApi,
       );
 
@@ -388,8 +389,8 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
   void _openMapView() {
     if (_nearbyPlaces == null || _nearbyPlaces!.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('No venues available to show on map'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).gameDetailsNoVenuesForMap),
           backgroundColor: Colors.orange,
         ),
       );
@@ -417,8 +418,8 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
 
     if (stadiumLocation == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Location data not available for map view'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).gameDetailsLocationNotAvailable),
           backgroundColor: Colors.red,
         ),
       );

@@ -7,6 +7,7 @@ import '../widgets/create_activity_bottom_sheet.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 import 'package:share_plus/share_plus.dart';
 import 'user_profile_screen.dart';
 
@@ -19,7 +20,7 @@ class ActivityFeedScreen extends StatefulWidget {
 
 class _ActivityFeedScreenState extends State<ActivityFeedScreen>
     with SingleTickerProviderStateMixin {
-  final ActivityFeedService _activityService = ActivityFeedService();
+  final ActivityFeedService _activityService = sl<ActivityFeedService>();
   
   List<ActivityFeedItem> _activities = [];
   bool _isLoading = true;

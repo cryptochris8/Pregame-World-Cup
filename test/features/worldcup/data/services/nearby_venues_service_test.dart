@@ -60,31 +60,31 @@ void main() {
 
   group('NearbyVenueResult', () {
     group('distanceFormatted', () {
-      test('formats meters for short distances', () {
-        expect(createResult(distanceMeters: 450.0).distanceFormatted, '450m');
+      test('formats miles for short distances', () {
+        expect(createResult(distanceMeters: 450.0).distanceFormatted, '0.3 mi');
       });
 
-      test('formats 0 meters', () {
-        expect(createResult(distanceMeters: 0.0).distanceFormatted, '0m');
+      test('formats very short distances as < 0.1 mi', () {
+        expect(createResult(distanceMeters: 0.0).distanceFormatted, '< 0.1 mi');
       });
 
-      test('formats 999 meters', () {
-        expect(createResult(distanceMeters: 999.0).distanceFormatted, '999m');
+      test('formats 999 meters as miles', () {
+        expect(createResult(distanceMeters: 999.0).distanceFormatted, '0.6 mi');
       });
 
-      test('formats kilometers for long distances', () {
+      test('formats 1000 meters as miles', () {
         expect(
-            createResult(distanceMeters: 1000.0).distanceFormatted, '1.0km');
+            createResult(distanceMeters: 1000.0).distanceFormatted, '0.6 mi');
       });
 
-      test('formats 2.5km', () {
+      test('formats 2500 meters as miles', () {
         expect(
-            createResult(distanceMeters: 2500.0).distanceFormatted, '2.5km');
+            createResult(distanceMeters: 2500.0).distanceFormatted, '1.6 mi');
       });
 
-      test('formats 10.3km', () {
+      test('formats 10300 meters as miles', () {
         expect(
-            createResult(distanceMeters: 10300.0).distanceFormatted, '10.3km');
+            createResult(distanceMeters: 10300.0).distanceFormatted, '6.4 mi');
       });
     });
 

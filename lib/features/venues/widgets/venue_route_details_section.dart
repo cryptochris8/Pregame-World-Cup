@@ -83,7 +83,7 @@ class VenueRouteDetailsSection extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '${(routeDetails.distance / 1000).toStringAsFixed(1)} km via ${_getRouteDescription()}',
+                  '${(routeDetails.distance / 1609.34).toStringAsFixed(1)} mi via ${_getRouteDescription()}',
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.grey[600],

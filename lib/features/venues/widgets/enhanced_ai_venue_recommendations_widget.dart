@@ -156,7 +156,7 @@ class _EnhancedAIVenueRecommendationsWidgetState
     parts.add("Budget preference: ${preferences.preferredPriceRange}");
     
     // Add travel distance
-    parts.add("Within ${preferences.maxTravelDistance}km travel distance");
+    parts.add("Within ${(preferences.maxTravelDistance * 0.621371).toStringAsFixed(0)} mi travel distance");
     
     // Add dietary restrictions if any
     if (preferences.dietaryRestrictions.isNotEmpty) {

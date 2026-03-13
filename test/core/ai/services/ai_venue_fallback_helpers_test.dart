@@ -239,23 +239,23 @@ void main() {
         expect(result, isNot(contains('type4')));
       });
 
-      test('includes distance preferences', () {
+      test('includes distance preferences in miles', () {
         final result =
             AIVenueFallbackHelpers.summarizeBehaviorForVenues({
           'distance_preferences': {
             'preferred_max_distance': 10.0,
           },
         });
-        expect(result, contains('10.0'));
-        expect(result, contains('km'));
+        expect(result, contains('6.2'));
+        expect(result, contains('mi'));
       });
 
-      test('uses default distance of 5.0 when not specified', () {
+      test('uses default distance of 5.0 km converted to miles when not specified', () {
         final result =
             AIVenueFallbackHelpers.summarizeBehaviorForVenues({
           'distance_preferences': <String, dynamic>{},
         });
-        expect(result, contains('5.0'));
+        expect(result, contains('3.1'));
       });
 
       test('includes price preferences', () {

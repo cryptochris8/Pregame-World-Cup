@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/calendar_event.dart';
 import '../../domain/services/calendar_service.dart';
@@ -65,7 +66,7 @@ class CalendarOptionsSheet extends StatefulWidget {
 }
 
 class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
-  final CalendarService _calendarService = CalendarService();
+  final CalendarService _calendarService = sl<CalendarService>();
   bool _isLoading = false;
 
   @override

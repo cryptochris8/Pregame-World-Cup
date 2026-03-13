@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../config/app_theme.dart';
 import '../../../../data/services/player_service.dart';
+import '../../../../injection_container.dart';
 import '../../../../domain/models/player.dart';
 import 'comparison_player_card.dart';
 import 'comparison_stat_widgets.dart';
@@ -24,7 +25,7 @@ class PlayerComparisonScreen extends StatefulWidget {
 }
 
 class _PlayerComparisonScreenState extends State<PlayerComparisonScreen> {
-  final PlayerService _playerService = PlayerService();
+  final PlayerService _playerService = sl<PlayerService>();
 
   Player? _player1;
   Player? _player2;

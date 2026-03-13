@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/shareable_content.dart';
 import '../../domain/services/social_sharing_service.dart';
 import 'share_sheet.dart';
@@ -182,7 +184,7 @@ class ShareButton extends StatelessWidget {
       return IconButton(
         icon: const Icon(Icons.share),
         onPressed: () => _showShareSheet(context),
-        tooltip: 'Share',
+        tooltip: AppLocalizations.of(context).shareTooltip,
       );
     }
 
@@ -190,14 +192,14 @@ class ShareButton extends StatelessWidget {
       return TextButton.icon(
         onPressed: () => _showShareSheet(context),
         icon: const Icon(Icons.share, size: 18),
-        label: const Text('Share'),
+        label: Text(AppLocalizations.of(context).share),
       );
     }
 
     return IconButton(
       icon: const Icon(Icons.share),
       onPressed: () => _showShareSheet(context),
-      tooltip: 'Share',
+      tooltip: AppLocalizations.of(context).shareTooltip,
     );
   }
 
@@ -232,20 +234,20 @@ class InlineShareButton extends StatelessWidget {
       icon: Icon(Icons.share, size: iconSize),
       color: iconColor,
       onPressed: () => _share(context),
-      tooltip: 'Share',
+      tooltip: AppLocalizations.of(context).shareTooltip,
       padding: EdgeInsets.zero,
       constraints: const BoxConstraints(),
     );
   }
 
   Future<void> _share(BuildContext context) async {
-    final service = SocialSharingService();
+    final service = sl<SocialSharingService>();
     final result = await service.share(content);
 
     if (!result.success && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(result.error ?? 'Failed to share'),
+          content: Text(result.error ?? AppLocalizations.of(context).shareFailed),
           backgroundColor: Colors.red,
         ),
       );

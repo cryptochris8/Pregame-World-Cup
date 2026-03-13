@@ -22,7 +22,7 @@ void main() {
 
         expect(sheet.contentType, equals(ReportableContentType.message));
         expect(sheet.contentId, equals('msg_1'));
-        expect(sheet.title, equals('Report'));
+        expect(sheet.title, isNull);
         expect(sheet.contentOwnerId, isNull);
         expect(sheet.contentOwnerDisplayName, isNull);
         expect(sheet.contentSnapshot, isNull);
@@ -44,13 +44,13 @@ void main() {
         expect(sheet.title, equals('Report User'));
       });
 
-      test('default title is Report', () {
+      test('default title is null (uses localized fallback at runtime)', () {
         const sheet = ReportBottomSheet(
           contentType: ReportableContentType.message,
           contentId: 'msg_1',
         );
 
-        expect(sheet.title, equals('Report'));
+        expect(sheet.title, isNull);
       });
 
       test('creates for each content type', () {

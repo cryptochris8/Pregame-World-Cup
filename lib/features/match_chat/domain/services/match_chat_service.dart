@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/services/logging_service.dart';
+import '../../../../injection_container.dart';
 import '../../../moderation/domain/services/moderation_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../entities/match_chat.dart';
@@ -43,7 +44,7 @@ class MatchChatService {
     ModerationService? moderationService,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance,
-        _moderationService = moderationService ?? ModerationService();
+        _moderationService = moderationService ?? sl<ModerationService>();
 
   factory MatchChatService({
     FirebaseFirestore? firestore,

@@ -12,6 +12,8 @@ import 'package:pregame_world_cup/features/worldcup/presentation/pages/match_det
 import 'package:pregame_world_cup/features/worldcup/presentation/widgets/reminder_button.dart';
 import 'package:pregame_world_cup/features/venue_portal/presentation/bloc/venue_filter_cubit.dart';
 import 'package:pregame_world_cup/features/worldcup/data/services/match_reminder_service.dart';
+import 'package:pregame_world_cup/features/worldcup/domain/services/world_cup_payment_service.dart';
+import 'package:pregame_world_cup/features/worldcup/domain/services/payment_models.dart';
 
 import '../../presentation/bloc/mock_repositories.dart';
 
@@ -24,6 +26,7 @@ class MockVenueFilterCubit extends MockCubit<VenueFilterState>
 
 // Mock services
 class MockMatchReminderService extends Mock implements MatchReminderService {}
+class MockWorldCupPaymentService extends Mock implements WorldCupPaymentService {}
 
 void main() {
   late MockNearbyVenuesCubit mockNearbyVenuesCubit;
@@ -80,6 +83,12 @@ void main() {
     sl.registerFactory<NearbyVenuesCubit>(() => mockNearbyVenuesCubit);
     sl.registerFactory<VenueFilterCubit>(() => mockVenueFilterCubit);
     sl.registerSingleton<MatchReminderService>(mockReminderService);
+    final mockPaymentService = MockWorldCupPaymentService();
+    when(() => mockPaymentService.getCachedFanPassStatus(forceRefresh: any(named: 'forceRefresh')))
+        .thenAnswer((_) async => FanPassStatus.free());
+    when(() => mockPaymentService.getCachedFanPassStatus())
+        .thenAnswer((_) async => FanPassStatus.free());
+    sl.registerSingleton<WorldCupPaymentService>(mockPaymentService);
   });
 
   tearDown(() {

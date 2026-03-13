@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/report.dart';
 import '../../domain/services/moderation_service.dart';
 
@@ -10,7 +11,7 @@ class ReportBottomSheet extends StatefulWidget {
   final String? contentOwnerId;
   final String? contentOwnerDisplayName;
   final String? contentSnapshot;
-  final String title;
+  final String? title;
 
   const ReportBottomSheet({
     super.key,
@@ -19,7 +20,7 @@ class ReportBottomSheet extends StatefulWidget {
     this.contentOwnerId,
     this.contentOwnerDisplayName,
     this.contentSnapshot,
-    this.title = 'Report',
+    this.title,
   });
 
   /// Show the report bottom sheet
@@ -42,7 +43,7 @@ class ReportBottomSheet extends StatefulWidget {
         contentOwnerId: contentOwnerId,
         contentOwnerDisplayName: contentOwnerDisplayName,
         contentSnapshot: contentSnapshot,
-        title: title ?? 'Report ${contentType.name}',
+        title: title,
       ),
     );
   }
@@ -66,9 +67,11 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
   }
 
   Future<void> _submitReport() async {
+    final l10n = AppLocalizations.of(context);
+
     if (_selectedReason == null) {
       setState(() {
-        _errorMessage = 'Please select a reason for your report';
+        _errorMessage = l10n.reportSelectReason;
       });
       return;
     }
@@ -97,22 +100,28 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
       if (report != null) {
         Navigator.of(context).pop(report);
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Report submitted successfully. Thank you.'),
+          SnackBar(
+            content: Text(l10n.reportSubmittedSuccess),
             backgroundColor: Colors.green,
           ),
         );
       } else {
         setState(() {
-          _errorMessage = 'Failed to submit report. Please try again.';
+          _errorMessage = l10n.reportSubmitFailed;
         });
       }
     }
   }
 
+  String _getDisplayTitle(AppLocalizations l10n) {
+    if (widget.title != null) return widget.title!;
+    return l10n.reportContentType(widget.contentType.name);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
 
     return Container(
       decoration: BoxDecoration(
@@ -149,7 +158,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                     ),
                     const SizedBox(width: 12),
                     Text(
-                      widget.title,
+                      _getDisplayTitle(l10n),
                       style: theme.textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
@@ -174,7 +183,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                     // Content preview if available
                     if (widget.contentSnapshot != null) ...[
                       Text(
-                        'Content being reported:',
+                        l10n.reportContentBeingReported,
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: Colors.grey[600],
                         ),
@@ -199,7 +208,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
 
                     // Reason selection
                     Text(
-                      'Why are you reporting this?',
+                      l10n.reportWhyReporting,
                       style: theme.textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
                       ),
@@ -223,7 +232,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
 
                     // Additional details
                     Text(
-                      'Additional details (optional)',
+                      l10n.reportAdditionalDetails,
                       style: theme.textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
                       ),
@@ -234,8 +243,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                       maxLines: 4,
                       maxLength: 500,
                       decoration: InputDecoration(
-                        hintText:
-                            'Provide any additional context that might help us review this report...',
+                        hintText: l10n.reportDetailsHint,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
@@ -298,9 +306,9 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                                   color: Colors.white,
                                 ),
                               )
-                            : const Text(
-                                'Submit Report',
-                                style: TextStyle(
+                            : Text(
+                                l10n.reportSubmitButton,
+                                style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -312,7 +320,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
 
                     // Disclaimer
                     Text(
-                      'Reports are reviewed by our moderation team. False reports may result in action against your account.',
+                      l10n.reportDisclaimer,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: Colors.grey[600],
                       ),
@@ -342,28 +350,29 @@ class _ReasonTile extends StatelessWidget {
     required this.onTap,
   });
 
-  String get _reasonDescription {
+  String _getLocalizedDescription(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     switch (reason) {
       case ReportReason.spam:
-        return 'Unwanted commercial content or repetitive messages';
+        return l10n.reportReasonSpam;
       case ReportReason.harassment:
-        return 'Bullying, threats, or targeted attacks';
+        return l10n.reportReasonHarassment;
       case ReportReason.hateSpeech:
-        return 'Discrimination based on race, religion, gender, etc.';
+        return l10n.reportReasonHateSpeech;
       case ReportReason.violence:
-        return 'Threats of violence or graphic content';
+        return l10n.reportReasonViolence;
       case ReportReason.sexualContent:
-        return 'Sexually explicit or suggestive content';
+        return l10n.reportReasonSexualContent;
       case ReportReason.misinformation:
-        return 'False or misleading information';
+        return l10n.reportReasonMisinformation;
       case ReportReason.impersonation:
-        return 'Pretending to be someone else';
+        return l10n.reportReasonImpersonation;
       case ReportReason.scam:
-        return 'Fraud, phishing, or suspicious requests';
+        return l10n.reportReasonScam;
       case ReportReason.inappropriateContent:
-        return 'Content that violates community guidelines';
+        return l10n.reportReasonInappropriate;
       case ReportReason.other:
-        return 'Other issue not listed above';
+        return l10n.reportReasonOther;
     }
   }
 
@@ -446,7 +455,7 @@ class _ReasonTile extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      _reasonDescription,
+                      _getLocalizedDescription(context),
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: Colors.grey[600],
                       ),

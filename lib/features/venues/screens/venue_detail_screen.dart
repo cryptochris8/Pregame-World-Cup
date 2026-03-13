@@ -3,6 +3,7 @@ import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../features/recommendations/data/datasources/places_api_datasource.dart';
 import '../../../core/services/venue_photo_service.dart';
 import '../../../core/services/venue_recommendation_service.dart';
+import '../../../injection_container.dart';
 import '../widgets/venue_photo_gallery.dart';
 import '../widgets/venue_operating_hours_card.dart';
 import '../widgets/venue_action_buttons.dart';
@@ -35,7 +36,7 @@ class VenueDetailScreen extends StatefulWidget {
 class _VenueDetailScreenState extends State<VenueDetailScreen>
     with TickerProviderStateMixin {
   late TabController _tabController;
-  final VenuePhotoService _photoService = VenuePhotoService();
+  final VenuePhotoService _photoService = sl<VenuePhotoService>();
 
   List<String> _venuePhotos = [];
   bool _loadingPhotos = false;

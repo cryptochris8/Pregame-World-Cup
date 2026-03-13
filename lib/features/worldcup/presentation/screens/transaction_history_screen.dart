@@ -3,6 +3,7 @@ import '../../../../l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../injection_container.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 
 /// Screen displaying user's payment transaction history
@@ -14,7 +15,7 @@ class TransactionHistoryScreen extends StatefulWidget {
 }
 
 class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
-  final WorldCupPaymentService _paymentService = WorldCupPaymentService();
+  final WorldCupPaymentService _paymentService = sl<WorldCupPaymentService>();
 
   List<PaymentTransaction> _transactions = [];
   bool _isLoading = true;

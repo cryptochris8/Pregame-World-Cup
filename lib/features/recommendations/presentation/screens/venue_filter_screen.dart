@@ -149,11 +149,11 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
                 children: [
                   Expanded(
                     child: Slider(
-                      min: 0.5,
-                      max: 10.0,
-                      divisions: 19,
+                      min: 0.3,
+                      max: 6.0,
+                      divisions: 57,
                       value: _distanceValue,
-                      label: '${_distanceValue.toStringAsFixed(1)} km',
+                      label: '${_distanceValue.toStringAsFixed(1)} mi',
                       onChanged: (value) {
                         setState(() {
                           _distanceValue = value;
@@ -164,7 +164,7 @@ class _VenueFilterScreenState extends State<VenueFilterScreen> {
                       },
                     ),
                   ),
-                  Text('${_distanceValue.toStringAsFixed(1)} km'),
+                  Text('${_distanceValue.toStringAsFixed(1)} mi'),
                 ],
               ),
               

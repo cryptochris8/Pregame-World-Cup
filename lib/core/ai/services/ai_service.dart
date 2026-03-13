@@ -410,7 +410,7 @@ Consider factors like venue type, location, ratings, user preferences, and game 
     // Summarize venues for AI processing
     final venuesSummary = venues.take(20).map((venue) {
       final v = venue as dynamic;
-      return '${v.name ?? 'Unknown'} (${v.types?.join(', ') ?? 'unknown type'}) - Rating: ${v.rating ?? 'N/A'}, Distance: ${v.distance ?? 'N/A'}km';
+      return '${v.name ?? 'Unknown'} (${v.types?.join(', ') ?? 'unknown type'}) - Rating: ${v.rating ?? 'N/A'}, Distance: ${v.distance != null ? '${(v.distance * 0.621371).toStringAsFixed(1)} mi' : 'N/A'}';
     }).join('\n');
 
     final prompt = '''

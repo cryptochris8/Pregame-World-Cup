@@ -239,7 +239,7 @@ class IntentClassifier {
   }
 
   bool _isTeamQuery(String s) {
-    return s.contains('squad') || s.contains('roster') || s.contains('tell me about') ||
+    return s.contains('squad') || s.contains('tell me about') ||
         s.contains('team') || s.contains('lineup') || s.contains('players');
   }
 

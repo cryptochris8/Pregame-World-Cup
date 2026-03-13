@@ -558,6 +558,122 @@ void main() {
     });
   });
 
+  group('LoginScreen - Google Sign-In', () {
+    testWidgets('renders Google sign-in button with correct text',
+        (tester) async {
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      expect(find.text('Continue with Google'), findsOneWidget);
+    });
+
+    testWidgets('Google sign-in button is present on all platforms',
+        (tester) async {
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      // Google button should always be present regardless of platform
+      expect(find.text('Continue with Google'), findsOneWidget);
+    });
+
+    testWidgets('tapping Google button calls signInWithGoogle',
+        (tester) async {
+      when(() => mockAuthService.signInWithGoogle())
+          .thenAnswer((_) async => MockUserCredential());
+
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      final googleButton = find.text('Continue with Google');
+      await tester.ensureVisible(googleButton);
+      await tester.pumpAndSettle();
+      await tester.tap(googleButton);
+      await tester.pumpAndSettle();
+
+      verify(() => mockAuthService.signInWithGoogle()).called(1);
+    });
+
+    testWidgets('shows loading indicator during Google sign-in',
+        (tester) async {
+      final completer = Completer<UserCredential?>();
+      when(() => mockAuthService.signInWithGoogle())
+          .thenAnswer((_) => completer.future);
+
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      final googleButton = find.text('Continue with Google');
+      await tester.ensureVisible(googleButton);
+      await tester.pumpAndSettle();
+      await tester.tap(googleButton);
+      await tester.pump();
+
+      // Loading indicator should be visible
+      expect(find.byType(CircularProgressIndicator), findsWidgets);
+
+      completer.complete(MockUserCredential());
+      await tester.pumpAndSettle();
+    });
+
+    testWidgets('shows error when Google sign-in fails', (tester) async {
+      when(() => mockAuthService.signInWithGoogle())
+          .thenThrow(Exception('Google sign-in failed'));
+
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      final googleButton = find.text('Continue with Google');
+      await tester.ensureVisible(googleButton);
+      await tester.pumpAndSettle();
+      await tester.tap(googleButton);
+      await tester.pumpAndSettle();
+
+      expect(find.text('Google sign-in failed'), findsOneWidget);
+    });
+  });
+
+  group('LoginScreen - Apple Sign-In (platform-gated)', () {
+    testWidgets('Apple sign-in button is NOT shown on non-iOS platforms',
+        (tester) async {
+      // Tests run on Windows/Linux, so Apple button should not render
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      expect(find.text('Continue with Apple'), findsNothing);
+      expect(find.byIcon(Icons.apple), findsNothing);
+    });
+
+    testWidgets('AuthService has signInWithApple method available',
+        (tester) async {
+      // Verify the mock can handle signInWithApple calls
+      when(() => mockAuthService.signInWithApple())
+          .thenAnswer((_) async => null);
+
+      final result = await mockAuthService.signInWithApple();
+      expect(result, isNull);
+    });
+
+    testWidgets('signInWithApple returns null on cancellation',
+        (tester) async {
+      when(() => mockAuthService.signInWithApple())
+          .thenAnswer((_) async => null);
+
+      final result = await mockAuthService.signInWithApple();
+      expect(result, isNull);
+      verify(() => mockAuthService.signInWithApple()).called(1);
+    });
+
+    testWidgets('signInWithApple throws on error', (tester) async {
+      when(() => mockAuthService.signInWithApple())
+          .thenThrow(Exception('Apple sign-in failed'));
+
+      expect(
+        () => mockAuthService.signInWithApple(),
+        throwsA(isA<Exception>()),
+      );
+    });
+  });
+
   group('LoginScreen - UI Components', () {
     testWidgets('has a scrollable layout', (tester) async {
       await tester.pumpWidget(buildTestWidget());

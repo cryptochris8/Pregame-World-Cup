@@ -1,6 +1,10 @@
+import 'dart:convert';
+import 'dart:math';
+import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../injection_container.dart';
@@ -153,6 +157,66 @@ class AuthService {
     }
   }
 
+  /// Generates a cryptographically secure random nonce.
+  String _generateNonce([int length = 32]) {
+    const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._';
+    final random = Random.secure();
+    return List.generate(length, (_) => charset[random.nextInt(charset.length)]).join();
+  }
+
+  /// Returns the sha256 hash of [input] as a hex string.
+  String _sha256ofString(String input) {
+    final bytes = utf8.encode(input);
+    final digest = sha256.convert(bytes);
+    return digest.toString();
+  }
+
+  // Sign in with Apple
+  Future<UserCredential?> signInWithApple() async {
+    try {
+      final rawNonce = _generateNonce();
+      final nonce = _sha256ofString(rawNonce);
+
+      final appleCredential = await SignInWithApple.getAppleIDCredential(
+        scopes: [
+          AppleIDAuthorizationScopes.email,
+          AppleIDAuthorizationScopes.fullName,
+        ],
+        nonce: nonce,
+      );
+
+      final oauthCredential = OAuthProvider('apple.com').credential(
+        idToken: appleCredential.identityToken,
+        rawNonce: rawNonce,
+      );
+
+      final userCredential = await _firebaseAuth.signInWithCredential(oauthCredential);
+      await _analyticsService.logLogin(method: 'apple');
+      LoggingService.info('Apple sign-in successful for ${userCredential.user?.email}', tag: 'AuthService');
+      return userCredential;
+    } on SignInWithAppleAuthorizationException catch (e) {
+      if (e.code == AuthorizationErrorCode.canceled) {
+        return null;
+      }
+      LoggingService.error('Apple sign-in authorization error: ${e.message}', tag: 'AuthService');
+      await _analyticsService.logError(
+        errorType: 'auth_error',
+        message: 'Apple sign in failed: ${e.message}',
+      );
+      throw Exception(e.message);
+    } on FirebaseAuthException catch (e) {
+      LoggingService.error('FirebaseAuthException on Apple sign in: ${e.message}', tag: 'AuthService');
+      await _analyticsService.logError(
+        errorType: 'auth_error',
+        message: 'Apple sign in failed: ${e.message}',
+      );
+      throw Exception(e.message);
+    } catch (e) {
+      LoggingService.error('Error during Apple sign in: $e', tag: 'AuthService');
+      throw Exception('An unexpected error occurred during Apple sign in.');
+    }
+  }
+
   // Sign out
   Future<void> signOut() async {
     try {
@@ -161,7 +225,7 @@ class AuthService {
 
       // Logout from RevenueCat to prevent entitlement leakage on shared devices
       try {
-        await RevenueCatService().logoutUser();
+        await sl<RevenueCatService>().logoutUser();
       } catch (e) {
         LoggingService.error('RevenueCat logout failed (non-blocking): $e', tag: 'AuthService');
       }
@@ -237,7 +301,7 @@ class AuthService {
 
       // 4. Logout from RevenueCat
       try {
-        await RevenueCatService().logoutUser();
+        await sl<RevenueCatService>().logoutUser();
       } catch (e) {
         LoggingService.warning('RevenueCat logout failed during deletion: $e', tag: 'AuthService');
       }

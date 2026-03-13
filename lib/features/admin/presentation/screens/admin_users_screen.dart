@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../injection_container.dart';
+import '../../../../l10n/app_localizations.dart';
 
 import '../../../social/domain/entities/user_profile.dart';
 import '../../domain/services/admin_service.dart';
@@ -62,10 +63,11 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('User Management'),
+        title: Text(l10n.adminUserManagement),
       ),
       body: Column(
         children: [
@@ -75,7 +77,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Search users by name...',
+                hintText: l10n.adminSearchUsersHint,
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: _searchController.text.isNotEmpty
                     ? IconButton(
@@ -101,7 +103,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                 : _users.isEmpty
                     ? Center(
                         child: Text(
-                          'No users found',
+                          l10n.adminNoUsersFound,
                           style: theme.textTheme.bodyLarge,
                         ),
                       )
@@ -111,7 +113,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                           itemCount: _users.length,
                           itemBuilder: (context, index) {
                             final user = _users[index];
-                            return _buildUserTile(theme, user);
+                            return _buildUserTile(theme, l10n, user);
                           },
                         ),
                       ),
@@ -121,7 +123,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
     );
   }
 
-  Widget _buildUserTile(ThemeData theme, UserProfile user) {
+  Widget _buildUserTile(ThemeData theme, AppLocalizations l10n, UserProfile user) {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       child: ExpansionTile(
@@ -147,7 +149,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  user.isOnline ? 'Online' : user.lastSeenText,
+                  user.isOnline ? l10n.adminOnline : user.lastSeenText,
                   style: theme.textTheme.bodySmall,
                 ),
               ],
@@ -160,36 +162,36 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _buildInfoRow('User ID', user.userId),
-                _buildInfoRow('Level', '${user.level} (${user.levelTitle})'),
-                _buildInfoRow('Joined', _formatDate(user.createdAt)),
-                _buildInfoRow('Friends', user.socialStats.friendsCount.toString()),
+                _buildInfoRow(l10n.adminUserId, user.userId),
+                _buildInfoRow(l10n.adminLevel, l10n.adminLevelValue(user.level, user.levelTitle)),
+                _buildInfoRow(l10n.adminJoined, _formatDate(user.createdAt)),
+                _buildInfoRow(l10n.adminFriends, user.socialStats.friendsCount.toString()),
                 if (user.favoriteTeams.isNotEmpty)
-                  _buildInfoRow('Teams', user.favoriteTeams.join(', ')),
+                  _buildInfoRow(l10n.adminTeams, user.favoriteTeams.join(', ')),
                 const SizedBox(height: 16),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     _buildActionButton(
-                      'Warn',
+                      l10n.adminWarn,
                       Icons.warning_amber,
                       Colors.orange,
                       () => _showWarningDialog(user),
                     ),
                     _buildActionButton(
-                      'Mute',
+                      l10n.adminMute,
                       Icons.volume_off,
                       Colors.blue,
                       () => _showMuteDialog(user),
                     ),
                     _buildActionButton(
-                      'Suspend',
+                      l10n.adminSuspend,
                       Icons.block,
                       Colors.red,
                       () => _showSuspendDialog(user),
                     ),
                     _buildActionButton(
-                      'Ban',
+                      l10n.adminBan,
                       Icons.gavel,
                       Colors.purple,
                       () => _showBanDialog(user),
@@ -242,23 +244,24 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
 
   void _showWarningDialog(UserProfile user) {
     final reasonController = TextEditingController();
+    final l10n = AppLocalizations.of(context);
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Warn ${user.displayName}'),
+        title: Text(l10n.adminWarnUser(user.displayName)),
         content: TextField(
           controller: reasonController,
-          decoration: const InputDecoration(
-            labelText: 'Reason',
-            hintText: 'Enter warning reason...',
+          decoration: InputDecoration(
+            labelText: l10n.adminReason,
+            hintText: l10n.adminEnterWarningReason,
           ),
           maxLines: 3,
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () async {
@@ -272,12 +275,12 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
               if (mounted) {
                 messenger.showSnackBar(
                   SnackBar(
-                    content: Text(success ? 'Warning sent' : 'Failed to send warning'),
+                    content: Text(success ? l10n.adminWarningSent : l10n.adminWarningFailed),
                   ),
                 );
               }
             },
-            child: const Text('Send Warning'),
+            child: Text(l10n.adminSendWarning),
           ),
         ],
       ),
@@ -286,33 +289,34 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
 
   void _showMuteDialog(UserProfile user) {
     final reasonController = TextEditingController();
+    final l10n = AppLocalizations.of(context);
     Duration selectedDuration = const Duration(hours: 24);
 
     showDialog(
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
-          title: Text('Mute ${user.displayName}'),
+          title: Text(l10n.adminMuteUser(user.displayName)),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 controller: reasonController,
-                decoration: const InputDecoration(
-                  labelText: 'Reason',
-                  hintText: 'Enter mute reason...',
+                decoration: InputDecoration(
+                  labelText: l10n.adminReason,
+                  hintText: l10n.adminEnterMuteReason,
                 ),
                 maxLines: 2,
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<Duration>(
                 value: selectedDuration,
-                decoration: const InputDecoration(labelText: 'Duration'),
-                items: const [
-                  DropdownMenuItem(value: Duration(hours: 1), child: Text('1 hour')),
-                  DropdownMenuItem(value: Duration(hours: 24), child: Text('24 hours')),
-                  DropdownMenuItem(value: Duration(days: 7), child: Text('7 days')),
-                  DropdownMenuItem(value: Duration(days: 30), child: Text('30 days')),
+                decoration: InputDecoration(labelText: l10n.adminDuration),
+                items: [
+                  DropdownMenuItem(value: const Duration(hours: 1), child: Text(l10n.adminDuration1Hour)),
+                  DropdownMenuItem(value: const Duration(hours: 24), child: Text(l10n.adminDuration24Hours)),
+                  DropdownMenuItem(value: const Duration(days: 7), child: Text(l10n.adminDuration7Days)),
+                  DropdownMenuItem(value: const Duration(days: 30), child: Text(l10n.adminDuration30Days)),
                 ],
                 onChanged: (value) {
                   if (value != null) {
@@ -325,7 +329,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
+              child: Text(l10n.cancel),
             ),
             ElevatedButton(
               onPressed: () async {
@@ -340,12 +344,12 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                 if (mounted) {
                   messenger.showSnackBar(
                     SnackBar(
-                      content: Text(success ? 'User muted' : 'Failed to mute user'),
+                      content: Text(success ? l10n.adminUserMuted : l10n.adminMuteFailed),
                     ),
                   );
                 }
               },
-              child: const Text('Mute User'),
+              child: Text(l10n.adminMuteUserButton),
             ),
           ],
         ),
@@ -355,33 +359,34 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
 
   void _showSuspendDialog(UserProfile user) {
     final reasonController = TextEditingController();
+    final l10n = AppLocalizations.of(context);
     Duration selectedDuration = const Duration(days: 7);
 
     showDialog(
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
-          title: Text('Suspend ${user.displayName}'),
+          title: Text(l10n.adminSuspendUser(user.displayName)),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               TextField(
                 controller: reasonController,
-                decoration: const InputDecoration(
-                  labelText: 'Reason',
-                  hintText: 'Enter suspension reason...',
+                decoration: InputDecoration(
+                  labelText: l10n.adminReason,
+                  hintText: l10n.adminEnterSuspensionReason,
                 ),
                 maxLines: 2,
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<Duration>(
                 value: selectedDuration,
-                decoration: const InputDecoration(labelText: 'Duration'),
-                items: const [
-                  DropdownMenuItem(value: Duration(days: 1), child: Text('1 day')),
-                  DropdownMenuItem(value: Duration(days: 7), child: Text('7 days')),
-                  DropdownMenuItem(value: Duration(days: 30), child: Text('30 days')),
-                  DropdownMenuItem(value: Duration(days: 90), child: Text('90 days')),
+                decoration: InputDecoration(labelText: l10n.adminDuration),
+                items: [
+                  DropdownMenuItem(value: const Duration(days: 1), child: Text(l10n.adminDuration1Day)),
+                  DropdownMenuItem(value: const Duration(days: 7), child: Text(l10n.adminDuration7Days)),
+                  DropdownMenuItem(value: const Duration(days: 30), child: Text(l10n.adminDuration30Days)),
+                  DropdownMenuItem(value: const Duration(days: 90), child: Text(l10n.adminDuration90Days)),
                 ],
                 onChanged: (value) {
                   if (value != null) {
@@ -394,7 +399,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
+              child: Text(l10n.cancel),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
@@ -410,12 +415,12 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                 if (mounted) {
                   messenger.showSnackBar(
                     SnackBar(
-                      content: Text(success ? 'User suspended' : 'Failed to suspend user'),
+                      content: Text(success ? l10n.adminUserSuspended : l10n.adminSuspendFailed),
                     ),
                   );
                 }
               },
-              child: const Text('Suspend User'),
+              child: Text(l10n.adminSuspendUserButton),
             ),
           ],
         ),
@@ -425,24 +430,25 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
 
   void _showBanDialog(UserProfile user) {
     final reasonController = TextEditingController();
+    final l10n = AppLocalizations.of(context);
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Ban ${user.displayName}'),
+        title: Text(l10n.adminBanUser(user.displayName)),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              'This action is permanent and cannot be undone.',
-              style: TextStyle(color: Colors.red),
+            Text(
+              l10n.adminBanPermanentWarning,
+              style: const TextStyle(color: Colors.red),
             ),
             const SizedBox(height: 16),
             TextField(
               controller: reasonController,
-              decoration: const InputDecoration(
-                labelText: 'Reason',
-                hintText: 'Enter ban reason...',
+              decoration: InputDecoration(
+                labelText: l10n.adminReason,
+                hintText: l10n.adminEnterBanReason,
               ),
               maxLines: 3,
             ),
@@ -451,7 +457,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.purple),
@@ -466,12 +472,12 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
               if (mounted) {
                 messenger.showSnackBar(
                   SnackBar(
-                    content: Text(success ? 'User banned' : 'Failed to ban user'),
+                    content: Text(success ? l10n.adminUserBanned : l10n.adminBanFailed),
                   ),
                 );
               }
             },
-            child: const Text('Permanently Ban'),
+            child: Text(l10n.adminPermanentlyBan),
           ),
         ],
       ),

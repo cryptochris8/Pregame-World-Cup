@@ -120,10 +120,10 @@ class NearbyVenuesWidget extends StatelessWidget {
         context.read<NearbyVenuesCubit>().setRadius(radius);
       },
       itemBuilder: (context) => [
-        const PopupMenuItem(value: 500, child: Text('500m')),
-        const PopupMenuItem(value: 1000, child: Text('1 km')),
-        const PopupMenuItem(value: 2000, child: Text('2 km')),
-        const PopupMenuItem(value: 5000, child: Text('5 km')),
+        const PopupMenuItem(value: 402, child: Text('0.25 mi')),
+        const PopupMenuItem(value: 805, child: Text('0.5 mi')),
+        const PopupMenuItem(value: 1609, child: Text('1 mi')),
+        const PopupMenuItem(value: 4828, child: Text('3 mi')),
       ],
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
@@ -135,9 +135,7 @@ class NearbyVenuesWidget extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              state.radiusMeters < 1000
-                  ? '${state.radiusMeters.toInt()}m'
-                  : '${(state.radiusMeters / 1000).toStringAsFixed(0)}km',
+              '${(state.radiusMeters / 1609.34).toStringAsFixed(1)} mi',
               style: const TextStyle(color: Colors.white70, fontSize: 12),
             ),
             const SizedBox(width: 4),

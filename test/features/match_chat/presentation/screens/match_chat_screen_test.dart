@@ -2,16 +2,41 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/test.dart';
+import 'package:get_it/get_it.dart';
+import 'package:mocktail/mocktail.dart';
+import 'package:pregame_world_cup/features/match_chat/domain/services/match_chat_service.dart';
 import 'package:pregame_world_cup/features/match_chat/presentation/screens/match_chat_screen.dart';
+import 'package:pregame_world_cup/features/moderation/domain/services/moderation_service.dart';
 import 'package:pregame_world_cup/l10n/app_localizations.dart';
+
+class MockMatchChatService extends Mock implements MatchChatService {}
+class MockModerationService extends Mock implements ModerationService {}
 
 void main() {
   final matchDateTime = DateTime(2026, 6, 15, 20, 0);
+  final sl = GetIt.instance;
 
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
     setupFirebaseCoreMocks();
     await Firebase.initializeApp();
+
+    // Register DI mocks needed by MatchChatScreen
+    if (!sl.isRegistered<ModerationService>()) {
+      sl.registerSingleton<ModerationService>(MockModerationService());
+    }
+    if (!sl.isRegistered<MatchChatService>()) {
+      sl.registerSingleton<MatchChatService>(MockMatchChatService());
+    }
+  });
+
+  tearDownAll(() async {
+    if (sl.isRegistered<MatchChatService>()) {
+      sl.unregister<MatchChatService>();
+    }
+    if (sl.isRegistered<ModerationService>()) {
+      sl.unregister<ModerationService>();
+    }
   });
 
   // Suppress overflow and rendering errors in constrained test environments.

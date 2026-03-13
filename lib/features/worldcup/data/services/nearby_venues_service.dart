@@ -158,13 +158,13 @@ class NearbyVenueResult {
     required this.stadium,
   });
 
-  /// Distance formatted as string (e.g., "450m" or "1.2km")
+  /// Distance formatted as string (e.g., "0.3 mi" or "1.2 mi")
   String get distanceFormatted {
-    if (distanceMeters < 1000) {
-      return '${distanceMeters.round()}m';
-    } else {
-      return '${(distanceMeters / 1000).toStringAsFixed(1)}km';
+    final miles = distanceMeters * 0.000621371;
+    if (miles < 0.1) {
+      return '< 0.1 mi';
     }
+    return '${miles.toStringAsFixed(1)} mi';
   }
 
   /// Estimated walking time (assuming 5 km/h walking speed)

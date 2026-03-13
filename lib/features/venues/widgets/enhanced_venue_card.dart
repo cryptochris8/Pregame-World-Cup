@@ -5,6 +5,7 @@ import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import '../../../core/services/venue_photo_service.dart';
 import '../../../core/services/logging_service.dart';
+import '../../../injection_container.dart';
 import '../screens/venue_detail_screen.dart';
 import '../../../config/api_keys.dart';
 import '../../../l10n/app_localizations.dart';
@@ -37,7 +38,7 @@ class EnhancedVenueCard extends StatefulWidget {
 }
 
 class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
-  final VenuePhotoService _photoService = VenuePhotoService();
+  final VenuePhotoService _photoService = sl<VenuePhotoService>();
   List<String> _photoUrls = [];
   bool _loadingPhotos = false;
   bool _photosLoaded = false;

@@ -79,7 +79,7 @@ class AIVenueFallbackHelpers {
         behaviorData['distance_preferences'] as Map<String, dynamic>?;
     if (distancePrefs != null) {
       final maxDistance = distancePrefs['preferred_max_distance'] ?? 5.0;
-      summary.writeln('Preferred distance: within ${maxDistance}km');
+      summary.writeln('Preferred distance: within ${(maxDistance * 0.621371).toStringAsFixed(1)} mi');
     }
 
     // Price preferences
@@ -169,12 +169,12 @@ class AIVenueFallbackHelpers {
       if (v.distance != null) {
         if (v.distance <= 1.0) {
           score += 0.2;
-          reasons.add('Very close (${v.distance.toStringAsFixed(1)}km)');
+          reasons.add('Very close (${(v.distance * 0.621371).toStringAsFixed(1)} mi)');
           tags.add('Nearby');
         } else if (v.distance <= 3.0) {
           score += 0.1;
           reasons.add(
-              'Convenient location (${v.distance.toStringAsFixed(1)}km)');
+              'Convenient location (${(v.distance * 0.621371).toStringAsFixed(1)} mi)');
         } else if (v.distance > 10.0) {
           score -= 0.1; // Penalty for very far venues
         }
@@ -287,7 +287,7 @@ class AIVenueFallbackHelpers {
 
     if (distance != null && distance <= 2.0) {
       buffer.write(
-          'Its convenient location (${distance.toStringAsFixed(1)}km away) makes it easily accessible. ');
+          'Its convenient location (${(distance * 0.621371).toStringAsFixed(1)} mi away) makes it easily accessible. ');
     }
 
     if (reasons.isNotEmpty) {

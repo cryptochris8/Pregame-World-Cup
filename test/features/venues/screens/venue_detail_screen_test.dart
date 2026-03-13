@@ -10,6 +10,7 @@ import 'package:pregame_world_cup/features/venues/screens/venue_detail_screen.da
 import 'package:pregame_world_cup/features/venues/widgets/venue_action_buttons.dart';
 import 'package:pregame_world_cup/features/venues/widgets/venue_operating_hours_card.dart';
 import 'package:pregame_world_cup/core/services/unified_venue_service.dart';
+import 'package:pregame_world_cup/core/services/venue_photo_service.dart';
 import 'package:pregame_world_cup/features/social/domain/services/social_service.dart';
 import 'package:pregame_world_cup/features/venue_portal/domain/services/venue_enhancement_service.dart';
 import 'package:pregame_world_cup/l10n/app_localizations.dart';
@@ -21,6 +22,8 @@ class MockSocialService extends Mock implements SocialService {}
 
 class MockVenueEnhancementService extends Mock
     implements VenueEnhancementService {}
+
+class MockVenuePhotoService extends Mock implements VenuePhotoService {}
 
 final sl = GetIt.instance;
 
@@ -41,6 +44,8 @@ void main() {
     when(() => mockVenueEnhancement.getVenueEnhancement(any()))
         .thenAnswer((_) async => null);
     sl.registerSingleton<VenueEnhancementService>(mockVenueEnhancement);
+
+    sl.registerSingleton<VenuePhotoService>(MockVenuePhotoService());
   });
 
   tearDownAll(() async {

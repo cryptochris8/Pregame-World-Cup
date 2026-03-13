@@ -55,9 +55,9 @@ class MemberListItem extends StatelessWidget {
                 color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: const Text(
-                'You',
-                style: TextStyle(
+              child: Text(
+                AppLocalizations.of(context).memberYou,
+                style: const TextStyle(
                   fontSize: 10,
                   color: Colors.grey,
                 ),
@@ -70,7 +70,7 @@ class MemberListItem extends StatelessWidget {
         children: [
           _buildRoleBadge(context),
           const SizedBox(width: 8),
-          _buildAttendanceIndicator(),
+          _buildAttendanceIndicator(context),
           if (member.isMuted) ...[
             const SizedBox(width: 8),
             Icon(
@@ -103,66 +103,69 @@ class MemberListItem extends StatelessWidget {
                     break;
                 }
               },
-              itemBuilder: (context) => [
-                if (member.isMuted)
-                  const PopupMenuItem(
-                    value: 'unmute',
-                    child: Row(
-                      children: [
-                        Icon(Icons.mic, size: 20),
-                        SizedBox(width: 8),
-                        Text('Unmute'),
-                      ],
-                    ),
-                  )
-                else
-                  const PopupMenuItem(
-                    value: 'mute',
-                    child: Row(
-                      children: [
-                        Icon(Icons.mic_off, size: 20),
-                        SizedBox(width: 8),
-                        Text('Mute'),
-                      ],
-                    ),
-                  ),
-                if (member.isMember && !member.isCoHost)
-                  const PopupMenuItem(
-                    value: 'promote',
-                    child: Row(
-                      children: [
-                        Icon(Icons.arrow_upward, size: 20),
-                        SizedBox(width: 8),
-                        Text('Promote to Co-Host'),
-                      ],
-                    ),
-                  ),
-                if (member.isCoHost)
-                  const PopupMenuItem(
-                    value: 'demote',
-                    child: Row(
-                      children: [
-                        Icon(Icons.arrow_downward, size: 20),
-                        SizedBox(width: 8),
-                        Text('Demote to Member'),
-                      ],
-                    ),
-                  ),
-                const PopupMenuDivider(),
-                const PopupMenuItem(
-                  value: 'remove',
-                  child: Row(
-                    children: [
-                      Icon(Icons.person_remove, size: 20, color: Colors.red),
-                      SizedBox(width: 8),
-                      Text(
-                        'Remove',
-                        style: TextStyle(color: Colors.red),
+              itemBuilder: (context) {
+                final l10n = AppLocalizations.of(context);
+                return [
+                  if (member.isMuted)
+                    PopupMenuItem(
+                      value: 'unmute',
+                      child: Row(
+                        children: [
+                          const Icon(Icons.mic, size: 20),
+                          const SizedBox(width: 8),
+                          Text(l10n.memberUnmute),
+                        ],
                       ),
-                    ],
+                    )
+                  else
+                    PopupMenuItem(
+                      value: 'mute',
+                      child: Row(
+                        children: [
+                          const Icon(Icons.mic_off, size: 20),
+                          const SizedBox(width: 8),
+                          Text(l10n.adminMute),
+                        ],
+                      ),
+                    ),
+                  if (member.isMember && !member.isCoHost)
+                    PopupMenuItem(
+                      value: 'promote',
+                      child: Row(
+                        children: [
+                          const Icon(Icons.arrow_upward, size: 20),
+                          const SizedBox(width: 8),
+                          Text(l10n.memberPromoteCoHost),
+                        ],
+                      ),
+                    ),
+                  if (member.isCoHost)
+                    PopupMenuItem(
+                      value: 'demote',
+                      child: Row(
+                        children: [
+                          const Icon(Icons.arrow_downward, size: 20),
+                          const SizedBox(width: 8),
+                          Text(l10n.memberDemoteToMember),
+                        ],
+                      ),
+                    ),
+                  const PopupMenuDivider(),
+                  PopupMenuItem(
+                    value: 'remove',
+                    child: Row(
+                      children: [
+                        const Icon(Icons.person_remove, size: 20, color: Colors.red),
+                        const SizedBox(width: 8),
+                        Text(
+                          l10n.memberRemove,
+                          style: const TextStyle(color: Colors.red),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ];
+              },
             )
           : null,
     );
@@ -205,8 +208,9 @@ class MemberListItem extends StatelessWidget {
     );
   }
 
-  Widget _buildAttendanceIndicator() {
+  Widget _buildAttendanceIndicator(BuildContext context) {
     final isVirtual = member.isVirtual;
+    final l10n = AppLocalizations.of(context);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
@@ -226,7 +230,7 @@ class MemberListItem extends StatelessWidget {
           ),
           const SizedBox(width: 2),
           Text(
-            isVirtual ? 'Virtual' : 'In Person',
+            isVirtual ? l10n.memberVirtual : l10n.memberInPerson,
             style: TextStyle(
               fontSize: 10,
               color: isVirtual ? const Color(0xFF059669) : Colors.grey[600],

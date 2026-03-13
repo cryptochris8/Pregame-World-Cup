@@ -289,7 +289,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
     }
 
     final Set<Circle> circles = {};
-    final List<double> distances = [0.5, 1.0, 1.5, 2.0]; // km
+    final List<double> distances = [0.25, 0.5, 1.0, 1.5]; // miles
     final List<Color> colors = [
       Colors.green.withValues(alpha:0.1),
       Colors.orange.withValues(alpha:0.1),
@@ -301,7 +301,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
       circles.add(Circle(
         circleId: CircleId('ring_$i'),
         center: widget.stadiumLocation!,
-        radius: distances[i] * 1000,
+        radius: distances[i] * 1609.34,
         strokeColor: colors[i].withValues(alpha:0.5),
         strokeWidth: 2,
         fillColor: colors[i],

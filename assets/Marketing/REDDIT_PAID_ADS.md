@@ -211,3 +211,87 @@ https://testflight.apple.com/join/fUcZMb3y
 6. **Respond to ad comments** — engagement signals boost delivery
 7. **Don't oversell** — Reddit users are skeptical of hype; be authentic
 8. **Update countdown** — refresh the "X days until World Cup" number weekly
+
+---
+
+## Additional Ad Variations (March 2026)
+
+### AD 6 — Indie Dev / Prediction Competition Angle
+
+**Headline (96 chars):**
+```
+I quit my weekends for a year to build a free World Cup app. 95 days to go — need your predictions.
+```
+
+**Body:**
+```
+I've been building Pregame as a solo dev for the past year. No VC money, no ad agency — just one fan who wanted a better World Cup experience than refreshing ESPN.
+
+Here's what I built:
+
+- Predict every match and climb the global leaderboard against other fans
+- AI analysis breaks down all 104 matchups before kickoff (Elo ratings, form, H2H, squad strength — 10 factors total)
+- Full tournament tracker: groups, knockout bracket, all 48 squads with 1,376 players
+- Find watch parties near you or host your own
+- Built-in Copa chatbot — ask it anything about the tournament and get instant answers
+
+The prediction competition is what I'm most excited about. You make your calls before each match, earn points based on accuracy, and see how you stack up against friends and the global community.
+
+It's 100% free. I'm looking for fans to try the beta and help me improve it before the tournament starts June 11.
+
+iOS TestFlight: https://testflight.apple.com/join/fUcZMb3y
+Android coming soon.
+
+What features would make this a must-have for you this summer?
+```
+
+**CTA Button:** Install
+**Image suggestion:** App screenshot showing the prediction leaderboard or match prediction screen with score confidence bars — 1080x1350 (4:5)
+
+**Why this works on Reddit:**
+- Indie dev story resonates with Reddit's anti-corporate culture
+- Asking for predictions invites engagement in comments
+- Ending with a question drives discussion
+- Specific numbers (10 factors, 1,376 players, 104 matches) build credibility without hype
+- Mentioning the leaderboard taps into Reddit's competitive streak
+
+---
+
+### AD 7 — "Copa" Chatbot / Knowledge Angle
+
+**Headline (94 chars):**
+```
+Ask anything about World Cup 2026 and get an instant answer. Free app, no sign-up required.
+```
+
+**Body:**
+```
+We built Copa — an AI chatbot inside our free World Cup app that knows every team, player, venue, and matchup for 2026.
+
+Try asking things like:
+- "Who are the top scorers for Argentina?"
+- "When does the USA play and where?"
+- "What's the head-to-head record between Brazil and Germany?"
+- "Which players should I watch from Japan?"
+
+Copa pulls from 450+ data files covering all 48 teams, 1,376 players, 104 matches, and 16 host cities. No internet needed — it works offline.
+
+The app also includes:
+- AI match predictions with 10-factor analysis
+- Full group standings and knockout bracket
+- Watch party creation and venue discovery
+- Prediction leaderboard to compete with friends
+
+Free on iOS — looking for testers before the June 11 kickoff.
+
+https://testflight.apple.com/join/fUcZMb3y
+```
+
+**CTA Button:** Learn More
+**Image suggestion:** Screenshot of Copa chatbot conversation showing a player lookup or match query — 1080x1350 (4:5)
+
+**Why this works on Reddit:**
+- Interactive/conversational hook — readers imagine their own questions
+- "No sign-up required" removes friction
+- Offline capability is a differentiator Reddit appreciates (privacy-conscious audience)
+- Example queries act as mini-demos without needing video

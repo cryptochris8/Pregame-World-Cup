@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 
 class VenueFilter extends Equatable {
   final List<VenueType> venueTypes;
-  final double maxDistance; // in kilometers
+  final double maxDistance; // in miles
   final double? minRating;
   final PriceLevel? priceLevel;
   final bool openNow;
@@ -10,7 +10,7 @@ class VenueFilter extends Equatable {
 
   const VenueFilter({
     this.venueTypes = const [VenueType.bar, VenueType.restaurant],
-    this.maxDistance = 2.0,
+    this.maxDistance = 1.2,
     this.minRating,
     this.priceLevel,
     this.openNow = false,
@@ -44,19 +44,19 @@ class VenueFilter extends Equatable {
           VenueType.cafe,
           VenueType.nightclub,
         ],
-        maxDistance: 5.0,
+        maxDistance: 3.0,
       );
 
   // Filter for bars only
   factory VenueFilter.barsOnly() => const VenueFilter(
         venueTypes: [VenueType.bar, VenueType.nightclub],
-        maxDistance: 2.0,
+        maxDistance: 1.2,
       );
 
   // Filter for restaurants only
   factory VenueFilter.restaurantsOnly() => const VenueFilter(
         venueTypes: [VenueType.restaurant, VenueType.cafe],
-        maxDistance: 2.0,
+        maxDistance: 1.2,
       );
 
   // Convert venue types to API format

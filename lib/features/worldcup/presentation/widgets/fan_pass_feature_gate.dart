@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../injection_container.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import '../screens/fan_pass_screen.dart';
 
@@ -45,7 +46,7 @@ class FanPassFeatureGate extends StatefulWidget {
 }
 
 class _FanPassFeatureGateState extends State<FanPassFeatureGate> {
-  final WorldCupPaymentService _paymentService = WorldCupPaymentService();
+  final WorldCupPaymentService _paymentService = sl<WorldCupPaymentService>();
   FanPassStatus? _status;
   bool _isLoading = true;
 
@@ -220,7 +221,7 @@ class FanPassUpgradeBanner extends StatefulWidget {
 }
 
 class _FanPassUpgradeBannerState extends State<FanPassUpgradeBanner> {
-  final WorldCupPaymentService _paymentService = WorldCupPaymentService();
+  final WorldCupPaymentService _paymentService = sl<WorldCupPaymentService>();
   FanPassStatus? _status;
   bool _isLoading = true;
 

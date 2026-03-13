@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 import '../../../../config/app_theme.dart';
 import '../../../../data/services/player_service.dart';
+import '../../../../injection_container.dart';
 import '../../../../domain/models/player.dart';
 import '../../../../presentation/screens/player_detail_screen.dart';
 
@@ -20,7 +21,7 @@ class _TournamentLeaderboardsScreenState
     extends State<TournamentLeaderboardsScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  final PlayerService _playerService = PlayerService();
+  final PlayerService _playerService = sl<PlayerService>();
 
   // Leaderboard data
   List<Player> _topScorers = [];
@@ -461,10 +462,12 @@ class _TournamentLeaderboardsScreenState
     final Map<String, String> codeMap = {
       'USA': 'US', 'GER': 'DE', 'ENG': 'GB', 'NED': 'NL', 'CRO': 'HR',
       'SUI': 'CH', 'POR': 'PT', 'KOR': 'KR', 'JPN': 'JP', 'IRN': 'IR',
-      'SAU': 'SA', 'RSA': 'ZA', 'CRC': 'CR', 'URU': 'UY', 'PAR': 'PY',
-      'CHI': 'CL', 'COL': 'CO', 'ECU': 'EC', 'VEN': 'VE', 'ALG': 'DZ',
-      'MAR': 'MA', 'TUN': 'TN', 'NGA': 'NG', 'SEN': 'SN', 'GHA': 'GH',
-      'CMR': 'CM', 'CIV': 'CI', 'EGY': 'EG',
+      'SAU': 'SA', 'CRC': 'CR', 'URU': 'UY', 'PAR': 'PY',
+      'CHI': 'CL', 'COL': 'CO', 'ECU': 'EC', 'NGA': 'NG',
+      'MAR': 'MA', 'SEN': 'SN', 'CMR': 'CM', 'EGY': 'EG',
+      'ALB': 'AL', 'BOL': 'BO', 'HON': 'HN', 'JAM': 'JM',
+      'PER': 'PE', 'POL': 'PL', 'SRB': 'RS', 'SVN': 'SI',
+      'TRI': 'TT', 'IDN': 'ID', 'NOR': 'NO', 'TUR': 'TR',
     };
 
     final code = codeMap[fifaCode] ?? fifaCode.substring(0, 2);

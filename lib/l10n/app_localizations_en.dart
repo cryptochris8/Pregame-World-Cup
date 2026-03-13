@@ -255,7 +255,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noGroupDataAvailable => 'No group data available';
 
   @override
-  String get knockoutBracketNotAvailableYet => 'Knockout bracket not available yet';
+  String get knockoutBracketNotAvailableYet =>
+      'Knockout bracket not available yet';
 
   @override
   String get checkBackAfterGroupStage => 'Check back after group stage';
@@ -264,7 +265,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFavoriteTeamsYet => 'No favorite teams yet';
 
   @override
-  String get tapHeartIconToAddFavorites => 'Tap the heart icon on any team to add it to your favorites';
+  String get tapHeartIconToAddFavorites =>
+      'Tap the heart icon on any team to add it to your favorites';
 
   @override
   String teamsCount(int count) {
@@ -278,7 +280,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFavoritesYet => 'No Favorites Yet';
 
   @override
-  String get tapHeartIconMessage => 'Tap the heart icon on any match or team\nto add them to your favorites';
+  String get tapHeartIconMessage =>
+      'Tap the heart icon on any match or team\nto add them to your favorites';
 
   @override
   String get browseMatches => 'Browse Matches';
@@ -724,7 +727,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get addWidgetToHomeScreen => 'Add Widget to Home Screen';
 
   @override
-  String get widgetInstructions => 'Long press on your home screen, tap the + button, search for \'Pregame World Cup\', and select a widget size.';
+  String get widgetInstructions =>
+      'Long press on your home screen, tap the + button, search for \'Pregame World Cup\', and select a widget size.';
 
   @override
   String get displaySettings => 'Display Settings';
@@ -739,7 +743,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get showUpcomingMatches => 'Show Upcoming Matches';
 
   @override
-  String get showUpcomingMatchesDescription => 'Display upcoming matches on widget';
+  String get showUpcomingMatchesDescription =>
+      'Display upcoming matches on widget';
 
   @override
   String get compactMode => 'Compact Mode';
@@ -756,7 +761,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get matchCountDescription => 'More matches require a larger widget size';
+  String get matchCountDescription =>
+      'More matches require a larger widget size';
 
   @override
   String get favoriteTeam => 'Favorite Team';
@@ -802,7 +808,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get completePurchaseInBrowser => 'Complete your purchase in the browser. Your pass will activate automatically.';
+  String get completePurchaseInBrowser =>
+      'Complete your purchase in the browser. Your pass will activate automatically.';
 
   @override
   String get purchaseFailedRetry => 'Purchase failed. Please try again.';
@@ -897,7 +904,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get passwordMinLength => 'Please enter your password';
 
   @override
-  String get passwordRequirements => 'Password must be at least 8 characters with one uppercase letter, one number, and one special character';
+  String get passwordRequirements =>
+      'Password must be at least 8 characters with one uppercase letter, one number, and one special character';
 
   @override
   String get signIn => 'Sign In';
@@ -924,7 +932,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get verificationLinkSent => 'We\'ve sent a verification link to:';
 
   @override
-  String get clickLinkToVerify => 'Click the link in your email to verify your account.';
+  String get clickLinkToVerify =>
+      'Click the link in your email to verify your account.';
 
   @override
   String get checkSpamFolder => 'Check your spam folder if you don\'t see it.';
@@ -944,7 +953,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get emailVerifiedRedirecting => 'Email verified! Redirecting...';
 
   @override
-  String get emailNotVerifiedYet => 'Email not verified yet. Please check your inbox.';
+  String get emailNotVerifiedYet =>
+      'Email not verified yet. Please check your inbox.';
 
   @override
   String get verificationEmailSent => 'Verification email sent!';
@@ -1003,7 +1013,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noLiveGamesAvailable => 'No Live Games Currently Available';
 
   @override
-  String get worldCupMatchesDaily => 'World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!';
+  String get worldCupMatchesDaily =>
+      'World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!';
 
   @override
   String get failedToLoadGames => 'Failed to Load Games';
@@ -1024,7 +1035,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noLiveGames => 'No live games at the moment';
 
   @override
-  String get setFavoriteTeamsPrompt => 'Set your favorite teams to see personalized games';
+  String get setFavoriteTeamsPrompt =>
+      'Set your favorite teams to see personalized games';
 
   @override
   String get setFavoriteTeams => 'Set Favorite Teams';
@@ -1033,7 +1045,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noUpcomingGames => 'No Upcoming Games';
 
   @override
-  String get socialFeaturesAvailable => 'Social features will be available for upcoming games';
+  String get socialFeaturesAvailable =>
+      'Social features will be available for upcoming games';
 
   @override
   String get activityFeed => 'Activity Feed';
@@ -1051,7 +1064,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noActivitiesYet => 'No activities yet';
 
   @override
-  String get beFirstToShare => 'Be the first to share something!\nConnect with friends to see their activities.';
+  String get beFirstToShare =>
+      'Be the first to share something!\nConnect with friends to see their activities.';
 
   @override
   String get createActivity => 'Create Activity';
@@ -1101,7 +1115,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get unblockUser => 'Unblock User';
 
   @override
-  String get unblockUserConfirm => 'Are you sure you want to unblock this user? They will be able to message you again.';
+  String get unblockUserConfirm =>
+      'Are you sure you want to unblock this user? They will be able to message you again.';
 
   @override
   String get userUnblocked => 'User unblocked';
@@ -1144,7 +1159,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get failedToLeaveChat => 'Failed to leave chat';
 
   @override
-  String get promoteAdminFirst => 'You must promote another admin before leaving';
+  String get promoteAdminFirst =>
+      'You must promote another admin before leaving';
 
   @override
   String get muteNotificationsTitle => 'Mute notifications';
@@ -1165,7 +1181,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get forever => 'Forever';
 
   @override
-  String get clearChatHistoryConfirm => 'Are you sure you want to clear all messages in this chat? This action cannot be undone.';
+  String get clearChatHistoryConfirm =>
+      'Are you sure you want to clear all messages in this chat? This action cannot be undone.';
 
   @override
   String get leaveChatConfirm => 'Are you sure you want to leave this chat?';
@@ -1240,19 +1257,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get favoriteTeamMatchesLabel => 'Favorite Team Matches';
 
   @override
-  String get favoriteTeamMatchesDesc => 'Get notified when your favorite teams play';
+  String get favoriteTeamMatchesDesc =>
+      'Get notified when your favorite teams play';
 
   @override
   String get dayBeforeNotification => 'Day Before Notification';
 
   @override
-  String get dayBeforeNotificationDesc => 'Remind me the day before my team plays';
+  String get dayBeforeNotificationDesc =>
+      'Remind me the day before my team plays';
 
   @override
   String get liveMatchAlerts => 'Live Match Alerts';
 
   @override
-  String get liveMatchAlertsDesc => 'Get instant notifications during live matches';
+  String get liveMatchAlertsDesc =>
+      'Get instant notifications during live matches';
 
   @override
   String get whenGoalScored => 'When a goal is scored';
@@ -1288,13 +1308,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get watchPartyInvites => 'Watch Party Invites';
 
   @override
-  String get watchPartyInvitesDesc => 'When someone invites you to a watch party';
+  String get watchPartyInvitesDesc =>
+      'When someone invites you to a watch party';
 
   @override
   String get watchPartyReminders => 'Watch Party Reminders';
 
   @override
-  String get watchPartyRemindersDesc => 'Remind me before watch parties I joined';
+  String get watchPartyRemindersDesc =>
+      'Remind me before watch parties I joined';
 
   @override
   String get reminderTime => 'Reminder Time';
@@ -1385,7 +1407,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get aiMatchAnalysisGate => 'Get AI-powered match analysis, historical insights, and key player matchups with Superfan Pass.';
+  String get aiMatchAnalysisGate =>
+      'Get AI-powered match analysis, historical insights, and key player matchups with Superfan Pass.';
 
   @override
   String get hostNation => 'Host Nation';
@@ -1440,7 +1463,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get viewStandings => 'View Standings';
 
   @override
-  String get tapToSeeGroupStandings => 'Tap to see full group standings and matches';
+  String get tapToSeeGroupStandings =>
+      'Tap to see full group standings and matches';
 
   @override
   String get teamMatchesWillAppear => 'Team matches will appear here';
@@ -1487,7 +1511,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noPredictionsYet => 'No Predictions Yet';
 
   @override
-  String get makePredictionsPrompt => 'Make predictions on upcoming matches\nto track your accuracy and earn points!';
+  String get makePredictionsPrompt =>
+      'Make predictions on upcoming matches\nto track your accuracy and earn points!';
 
   @override
   String get goToMatches => 'Go to Matches';
@@ -1516,7 +1541,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get clearAllPredictions => 'Clear All Predictions?';
 
   @override
-  String get clearAllPredictionsConfirm => 'This will permanently delete all your predictions. This action cannot be undone.';
+  String get clearAllPredictionsConfirm =>
+      'This will permanently delete all your predictions. This action cannot be undone.';
 
   @override
   String get exactScore => 'Exact Score!';
@@ -1554,7 +1580,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tiebreakers => 'Tiebreakers (in order):';
 
   @override
-  String get tiebreakersList => '1. Points\n2. Goal difference\n3. Goals scored\n4. Head-to-head points\n5. Fair play (yellow/red cards)\n6. Drawing of lots';
+  String get tiebreakersList =>
+      '1. Points\n2. Goal difference\n3. Goals scored\n4. Head-to-head points\n5. Fair play (yellow/red cards)\n6. Drawing of lots';
 
   @override
   String get knockoutBracket => 'Knockout Bracket';
@@ -1634,19 +1661,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileCustomization => 'Profile Customization';
 
   @override
-  String get profileCustomizationDesc => 'Upload photos, set favorite teams, and personalize your sports fan profile';
+  String get profileCustomizationDesc =>
+      'Upload photos, set favorite teams, and personalize your sports fan profile';
 
   @override
-  String get activityFeedDesc => 'Track your game predictions, venue check-ins, and social interactions';
+  String get activityFeedDesc =>
+      'Track your game predictions, venue check-ins, and social interactions';
 
   @override
   String get achievements => 'Achievements';
 
   @override
-  String get achievementsDesc => 'Unlock badges for predictions, social activity, and venue discoveries';
+  String get achievementsDesc =>
+      'Unlock badges for predictions, social activity, and venue discoveries';
 
   @override
-  String get accessibilityCustomizeDesc => 'Customize text size, contrast, motion, and more';
+  String get accessibilityCustomizeDesc =>
+      'Customize text size, contrast, motion, and more';
 
   @override
   String get findFriends => 'Find Friends';
@@ -1782,7 +1813,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cancelWatchParty => 'Cancel Watch Party?';
 
   @override
-  String get cancelWatchPartyConfirm => 'This action cannot be undone. All attendees will be notified.';
+  String get cancelWatchPartyConfirm =>
+      'This action cannot be undone. All attendees will be notified.';
 
   @override
   String get keep => 'Keep';
@@ -1817,13 +1849,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get accessibilitySettingsTitle => 'Accessibility Settings';
 
   @override
-  String get accessibilitySettingsIntro => 'Customize your experience to make Pregame World Cup easier to use.';
+  String get accessibilitySettingsIntro =>
+      'Customize your experience to make Pregame World Cup easier to use.';
 
   @override
   String get vision => 'Vision';
 
   @override
-  String get highContrastSubtitle => 'Use high contrast colors for better visibility';
+  String get highContrastSubtitle =>
+      'Use high contrast colors for better visibility';
 
   @override
   String get boldTextSubtitle => 'Make all text bolder and easier to read';
@@ -1841,7 +1875,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get largerTouchTargets => 'Larger Touch Targets';
 
   @override
-  String get largerTouchTargetsSubtitle => 'Make buttons and controls easier to tap';
+  String get largerTouchTargetsSubtitle =>
+      'Make buttons and controls easier to tap';
 
   @override
   String get textSize => 'Text Size';
@@ -1880,13 +1915,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get screenReaderOptimized => 'Screen Reader Optimized';
 
   @override
-  String get screenReaderSubtitle => 'Enhance compatibility with VoiceOver and TalkBack';
+  String get screenReaderSubtitle =>
+      'Enhance compatibility with VoiceOver and TalkBack';
 
   @override
   String get systemSettings => 'System Settings';
 
   @override
-  String get systemSettingsInfo => 'These settings work alongside your device\'s accessibility settings. For more options, visit your device\'s Settings > Accessibility.';
+  String get systemSettingsInfo =>
+      'These settings work alongside your device\'s accessibility settings. For more options, visit your device\'s Settings > Accessibility.';
 
   @override
   String get resetAllSettings => 'Reset';
@@ -2011,7 +2048,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get muteUser24h => 'Mute User (24h)';
 
   @override
-  String get temporarilyPreventPosting => 'Temporarily prevent user from posting';
+  String get temporarilyPreventPosting =>
+      'Temporarily prevent user from posting';
 
   @override
   String get suspendUser7Days => 'Suspend User (7 days)';
@@ -2132,7 +2170,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFriendsToInvite => 'No friends to invite';
 
   @override
-  String get followPeopleToInvite => 'Follow some people to invite them to watch parties';
+  String get followPeopleToInvite =>
+      'Follow some people to invite them to watch parties';
 
   @override
   String sendInvites(int count) {
@@ -2190,7 +2229,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get virtualAttendance => 'Virtual Attendance';
 
   @override
-  String get virtualAttendanceDesc => 'Allow fans to join virtually and participate in chat';
+  String get virtualAttendanceDesc =>
+      'Allow fans to join virtually and participate in chat';
 
   @override
   String get virtualAttendanceFee => 'Virtual Attendance Fee';
@@ -2217,7 +2257,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noWatchPartiesFound => 'No Watch Parties Found';
 
   @override
-  String get beFirstToCreateForMatch => 'Be the first to create a watch party for this match!';
+  String get beFirstToCreateForMatch =>
+      'Be the first to create a watch party for this match!';
 
   @override
   String get beFirstToCreate => 'Be the first to create a watch party!';
@@ -2262,7 +2303,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noWatchPartiesToAttend => 'No watch parties to attend';
 
   @override
-  String get discoverOrAcceptInvitations => 'Discover parties or accept invitations';
+  String get discoverOrAcceptInvitations =>
+      'Discover parties or accept invitations';
 
   @override
   String get noPastWatchParties => 'No past watch parties';
@@ -2280,7 +2322,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get joinLiveChat => 'Join the Live Chat';
 
   @override
-  String get chatWithFans => 'Chat with fellow fans about this match in real time!';
+  String get chatWithFans =>
+      'Chat with fellow fans about this match in real time!';
 
   @override
   String fansInChat(int count) {
@@ -2320,7 +2363,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noConversationsYet => 'No conversations yet';
 
   @override
-  String get startConversationWithFriends => 'Start a conversation with your friends!';
+  String get startConversationWithFriends =>
+      'Start a conversation with your friends!';
 
   @override
   String get startChatting => 'Start Chatting';
@@ -2338,10 +2382,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get markedAsRead => 'Marked as read';
 
   @override
-  String get completePremiumPurchaseInBrowser => 'Complete your purchase in the browser. Your premium will activate automatically.';
+  String get completePremiumPurchaseInBrowser =>
+      'Complete your purchase in the browser. Your premium will activate automatically.';
 
   @override
-  String get venuePremiumActivatedSuccessfully => 'Venue Premium activated successfully!';
+  String get venuePremiumActivatedSuccessfully =>
+      'Venue Premium activated successfully!';
 
   @override
   String get oneTimePaymentForWorldCup => 'One-time payment for World Cup 2026';
@@ -2371,7 +2417,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get analyticsDashboard => 'Analytics dashboard';
 
   @override
-  String get validForEntireTournament => 'Valid for the entire tournament (June 11 - July 19, 2026)';
+  String get validForEntireTournament =>
+      'Valid for the entire tournament (June 11 - July 19, 2026)';
 
   @override
   String get waitingForActivation => 'Waiting for activation...';
@@ -2392,7 +2439,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noTransactionsYet => 'No Transactions Yet';
 
   @override
-  String get purchaseHistoryWillAppearHere => 'Your purchase history will appear here\nonce you make your first transaction.';
+  String get purchaseHistoryWillAppearHere =>
+      'Your purchase history will appear here\nonce you make your first transaction.';
 
   @override
   String get exploreFanPass => 'Explore Fan Pass';
@@ -2416,7 +2464,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venueAlreadyManaged => 'Venue Already Managed';
 
   @override
-  String get venueAlreadyManagedDesc => 'This venue is already being managed by another owner. If you believe this is an error, please contact support.';
+  String get venueAlreadyManagedDesc =>
+      'This venue is already being managed by another owner. If you believe this is an error, please contact support.';
 
   @override
   String get goBack => 'Go Back';
@@ -2428,7 +2477,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venueOnboardingStep1Title => 'Business Information';
 
   @override
-  String get venueOnboardingStep1Desc => 'Tell us about your business so we can set up your venue portal.';
+  String get venueOnboardingStep1Desc =>
+      'Tell us about your business so we can set up your venue portal.';
 
   @override
   String get businessName => 'Business Name';
@@ -2452,19 +2502,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venueOnboardingStep2Title => 'Confirm Your Venue';
 
   @override
-  String get venueOnboardingStep2Desc => 'Verify the venue details and confirm you are authorized to manage it.';
+  String get venueOnboardingStep2Desc =>
+      'Verify the venue details and confirm you are authorized to manage it.';
 
   @override
   String get venueTypeLabel => 'Venue Type';
 
   @override
-  String get venueAuthorizationConfirm => 'I confirm that I am authorized to manage this venue and represent the business in this app.';
+  String get venueAuthorizationConfirm =>
+      'I confirm that I am authorized to manage this venue and represent the business in this app.';
 
   @override
   String get venueOnboardingStep3Title => 'Review & Claim';
 
   @override
-  String get venueOnboardingStep3Desc => 'Review your information and claim the venue to start managing it.';
+  String get venueOnboardingStep3Desc =>
+      'Review your information and claim the venue to start managing it.';
 
   @override
   String get claimThisVenue => 'Claim This Venue';
@@ -2473,13 +2526,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get forgotPassword => 'Forgot password?';
 
   @override
-  String get resetPasswordSent => 'Password reset email sent. Check your inbox.';
+  String get resetPasswordSent =>
+      'Password reset email sent. Check your inbox.';
 
   @override
-  String get resetPasswordError => 'Could not send reset email. Please check the address and try again.';
+  String get resetPasswordError =>
+      'Could not send reset email. Please check the address and try again.';
 
   @override
-  String get enterEmailForReset => 'Enter your email address and we\'ll send you a link to reset your password.';
+  String get enterEmailForReset =>
+      'Enter your email address and we\'ll send you a link to reset your password.';
 
   @override
   String get send => 'Send';
@@ -2488,16 +2544,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deleteAccountConfirmTitle => 'Delete Account';
 
   @override
-  String get deleteAccountConfirmMessage => 'This will permanently delete your account and all associated data. This action cannot be undone. Type DELETE to confirm.';
+  String get deleteAccountConfirmMessage =>
+      'This will permanently delete your account and all associated data. This action cannot be undone. Type DELETE to confirm.';
 
   @override
-  String get deleteAccountRequiresRecentLogin => 'For security, please sign out and sign back in before deleting your account.';
+  String get deleteAccountRequiresRecentLogin =>
+      'For security, please sign out and sign back in before deleting your account.';
 
   @override
   String get deleteAccountSuccess => 'Your account has been deleted.';
 
   @override
-  String get deleteAccountError => 'Could not delete account. Please try again.';
+  String get deleteAccountError =>
+      'Could not delete account. Please try again.';
 
   @override
   String get typeDeleteToConfirm => 'Type DELETE to confirm';
@@ -2506,7 +2565,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get somethingWentWrong => 'Something went wrong';
 
   @override
-  String get unexpectedErrorMessage => 'An unexpected error occurred. Please restart the app.';
+  String get unexpectedErrorMessage =>
+      'An unexpected error occurred. Please restart the app.';
 
   @override
   String get newChat => 'New Chat';
@@ -2559,16 +2619,19 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get clearChatHistoryConfirmation => 'Are you sure you want to clear all messages in this chat? This action cannot be undone.';
+  String get clearChatHistoryConfirmation =>
+      'Are you sure you want to clear all messages in this chat? This action cannot be undone.';
 
   @override
-  String get leaveChatConfirmation => 'Are you sure you want to leave this chat?';
+  String get leaveChatConfirmation =>
+      'Are you sure you want to leave this chat?';
 
   @override
   String get leave => 'Leave';
 
   @override
-  String get unblockUserConfirmation => 'Are you sure you want to unblock this user? They will be able to message you again.';
+  String get unblockUserConfirmation =>
+      'Are you sure you want to unblock this user? They will be able to message you again.';
 
   @override
   String get addMembers => 'Add Members';
@@ -2580,7 +2643,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFriendsToAdd => 'No friends to add';
 
   @override
-  String get allFriendsAlreadyInChat => 'All your friends are already in this chat';
+  String get allFriendsAlreadyInChat =>
+      'All your friends are already in this chat';
 
   @override
   String memberAddedToChat(String name) {
@@ -2602,7 +2666,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileUpdatedSuccessfully => 'Profile updated successfully!';
 
   @override
-  String get failedToUpdateProfile => 'Failed to update profile. Please try again.';
+  String get failedToUpdateProfile =>
+      'Failed to update profile. Please try again.';
 
   @override
   String failedToUpdateProfileError(String error) {
@@ -2707,7 +2772,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noPendingDisputes => 'No Pending Disputes';
 
   @override
-  String get allVenueDisputesReviewed => 'All venue disputes have been reviewed.';
+  String get allVenueDisputesReviewed =>
+      'All venue disputes have been reviewed.';
 
   @override
   String get reject => 'Reject';
@@ -2743,7 +2809,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get broadcastWarning => 'Broadcast notifications are sent to all users in the selected audience. Use sparingly.';
+  String get broadcastWarning =>
+      'Broadcast notifications are sent to all users in the selected audience. Use sparingly.';
 
   @override
   String get targetAudience => 'Target Audience';
@@ -2788,7 +2855,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notificationTitlePlaceholder => 'Notification Title';
 
   @override
-  String get notificationPreviewPlaceholder => 'Your notification message will appear here...';
+  String get notificationPreviewPlaceholder =>
+      'Your notification message will appear here...';
 
   @override
   String get sending => 'Sending...';
@@ -2800,7 +2868,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get confirmSend => 'Confirm Send';
 
   @override
-  String get confirmSendNotification => 'Are you sure you want to send this notification?';
+  String get confirmSendNotification =>
+      'Are you sure you want to send this notification?';
 
   @override
   String get notificationSentSuccessfully => 'Notification sent successfully';
@@ -2812,7 +2881,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get recentBroadcasts => 'Recent Broadcasts';
 
   @override
-  String get recentBroadcastHistory => 'Recent broadcast history will appear here';
+  String get recentBroadcastHistory =>
+      'Recent broadcast history will appear here';
 
   @override
   String get allUsersAudience => 'All Users';
@@ -2873,7 +2943,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get venuePhoneComingSoon => 'Phone number would be retrieved from venue details.\nThis feature will be available soon!';
+  String get venuePhoneComingSoon =>
+      'Phone number would be retrieved from venue details.\nThis feature will be available soon!';
 
   @override
   String venueWebsiteTitle(String venueName) {
@@ -2881,7 +2952,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get venueWebsiteComingSoon => 'Website URL would be retrieved from venue details.\nThis feature will be available soon!';
+  String get venueWebsiteComingSoon =>
+      'Website URL would be retrieved from venue details.\nThis feature will be available soon!';
 
   @override
   String get copyToClipboard => 'Copy to Clipboard';
@@ -2956,7 +3028,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get watchPartyDescriptionLabel => 'Description';
 
   @override
-  String get watchPartyDescriptionHint => 'Tell people about your watch party...';
+  String get watchPartyDescriptionHint =>
+      'Tell people about your watch party...';
 
   @override
   String get watchPartyVirtualFeeLabel => 'Virtual Attendance Fee';
@@ -2968,7 +3041,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get discardChangesTitle => 'Discard Changes?';
 
   @override
-  String get discardChangesMessage => 'You have unsaved changes. Are you sure you want to leave?';
+  String get discardChangesMessage =>
+      'You have unsaved changes. Are you sure you want to leave?';
 
   @override
   String get watchPartyGameSearchHint => 'Search teams, venues...';
@@ -3048,7 +3122,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get accessibilityResetLabel => 'Reset all accessibility settings to defaults';
+  String get accessibilityResetLabel =>
+      'Reset all accessibility settings to defaults';
 
   @override
   String get accessibilityHighContrast => 'High contrast mode';
@@ -3105,7 +3180,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get upcomingMatches => 'Upcoming Matches';
 
   @override
-  String get seasonAnalysisComingSoon => 'Season analysis coming soon - historical data being processed';
+  String get seasonAnalysisComingSoon =>
+      'Season analysis coming soon - historical data being processed';
 
   @override
   String get locationSharingComingSoon => 'Location sharing coming soon!';
@@ -3135,10 +3211,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalAtmosphereSettingsSaved => 'Atmosphere settings saved';
 
   @override
-  String get venuePortalBroadcastingInfo => 'Select the matches your venue will be broadcasting. Users will see your venue when searching for places to watch these matches.';
+  String get venuePortalBroadcastingInfo =>
+      'Select the matches your venue will be broadcasting. Users will see your venue when searching for places to watch these matches.';
 
   @override
-  String get venuePortalBroadcastingScheduleSaved => 'Broadcasting schedule saved';
+  String get venuePortalBroadcastingScheduleSaved =>
+      'Broadcasting schedule saved';
 
   @override
   String get venuePortalBusy => 'Busy';
@@ -3150,16 +3228,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalClaimStatus => 'Claim Status';
 
   @override
-  String get venuePortalClaimUnderReview => 'Your claim is being reviewed by an admin. You\'ll be notified when it\'s approved.';
+  String get venuePortalClaimUnderReview =>
+      'Your claim is being reviewed by an admin. You\'ll be notified when it\'s approved.';
 
   @override
-  String get venuePortalCompletePhoneVerification => 'Please complete phone verification to proceed.';
+  String get venuePortalCompletePhoneVerification =>
+      'Please complete phone verification to proceed.';
 
   @override
   String get venuePortalCreateFirstSpecial => 'Create Your First Special';
 
   @override
-  String get venuePortalCrowdDensityDesc => 'How crowded is your venue during matches?';
+  String get venuePortalCrowdDensityDesc =>
+      'How crowded is your venue during matches?';
 
   @override
   String get venuePortalCurrentOccupancy => 'Current Occupancy';
@@ -3188,7 +3269,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalEditSpecial => 'Edit Special';
 
   @override
-  String get venuePortalEmptySpecialsMessage => 'Add game day specials to attract more fans to your venue during matches.';
+  String get venuePortalEmptySpecialsMessage =>
+      'Add game day specials to attract more fans to your venue during matches.';
 
   @override
   String get venuePortalEstimatedWaitTime => 'Estimated Wait Time';
@@ -3197,7 +3279,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalFanBaseAffinity => 'Fan Base Affinity';
 
   @override
-  String get venuePortalFanBaseAffinityDesc => 'Add team codes that your venue typically supports (e.g., USA, MEX, ARG)';
+  String get venuePortalFanBaseAffinityDesc =>
+      'Add team codes that your venue typically supports (e.g., USA, MEX, ARG)';
 
   @override
   String get venuePortalGameDaySpecials => 'Game Day Specials';
@@ -3217,7 +3300,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalMaxCapacity => 'Max Capacity';
 
   @override
-  String get venuePortalMaxCapacityDesc => 'Set the maximum number of guests your venue can accommodate';
+  String get venuePortalMaxCapacityDesc =>
+      'Set the maximum number of guests your venue can accommodate';
 
   @override
   String get venuePortalMaximumCapacity => 'Maximum Capacity';
@@ -3238,7 +3322,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalNoWait => 'No Wait';
 
   @override
-  String get venuePortalNoiseLevelDesc => 'What\'s the typical noise level during matches?';
+  String get venuePortalNoiseLevelDesc =>
+      'What\'s the typical noise level during matches?';
 
   @override
   String get venuePortalNoiseLevelTitle => 'Noise Level';
@@ -3293,7 +3378,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalSpecialActive => 'Special is visible to users';
 
   @override
-  String get venuePortalSpecialPleaseEnterDescription => 'Please enter a description';
+  String get venuePortalSpecialPleaseEnterDescription =>
+      'Please enter a description';
 
   @override
   String get venuePortalSpecialPleaseEnterTitle => 'Please enter a title';
@@ -3322,7 +3408,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get venuePortalVenueVibe => 'Venue Vibe';
 
   @override
-  String get venuePortalVibeTagsDesc => 'Select tags that describe your venue\'s atmosphere';
+  String get venuePortalVibeTagsDesc =>
+      'Select tags that describe your venue\'s atmosphere';
 
   @override
   String venuePortalWaitTimeMinutes(int minutes) {
@@ -3356,16 +3443,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get favoriteTeamsSaved => 'Favorite teams saved!';
 
   @override
-  String get errorSavingFavorites => 'Error saving favorites. Please try again.';
+  String get errorSavingFavorites =>
+      'Error saving favorites. Please try again.';
 
   @override
-  String get couldNotLoadFavorites => 'Could not load saved favorites. You can still select teams below.';
+  String get couldNotLoadFavorites =>
+      'Could not load saved favorites. You can still select teams below.';
 
   @override
   String get copaClearChat => 'Clear Chat';
 
   @override
-  String get copaClearChatConfirm => 'This will clear the conversation and start fresh. Continue?';
+  String get copaClearChatConfirm =>
+      'This will clear the conversation and start fresh. Continue?';
 
   @override
   String get copaThinking => 'Thinking...';
@@ -3392,7 +3482,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get saveChanges => 'Save Changes';
 
   @override
-  String get fieldsCannotBeEdited => 'Some fields cannot be edited after the party has started.';
+  String get fieldsCannotBeEdited =>
+      'Some fields cannot be edited after the party has started.';
 
   @override
   String get visibilityLabel => 'Visibility';
@@ -3491,7 +3582,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get yourReview => 'Your review';
 
   @override
-  String get reviewHint => 'Share your experience... How was the food, service, atmosphere?';
+  String get reviewHint =>
+      'Share your experience... How was the food, service, atmosphere?';
 
   @override
   String get tapToAddPhotos => 'Tap to add photos';
@@ -3536,7 +3628,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get filterShowsThisMatch => 'Shows This Match';
 
   @override
-  String get filterShowsThisMatchDesc => 'Only show venues broadcasting this match';
+  String get filterShowsThisMatchDesc =>
+      'Only show venues broadcasting this match';
 
   @override
   String get filterSetup => 'Setup';
@@ -3653,4 +3746,329 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get continueWithGoogle => 'Continue with Google';
+
+  @override
+  String get continueWithApple => 'Continue with Apple';
+
+  @override
+  String get adminUserManagement => 'User Management';
+
+  @override
+  String get adminSearchUsersHint => 'Search users by name...';
+
+  @override
+  String get adminNoUsersFound => 'No users found';
+
+  @override
+  String get adminOnline => 'Online';
+
+  @override
+  String get adminUserId => 'User ID';
+
+  @override
+  String get adminLevel => 'Level';
+
+  @override
+  String adminLevelValue(int level, String title) {
+    return '$level ($title)';
+  }
+
+  @override
+  String get adminJoined => 'Joined';
+
+  @override
+  String get adminFriends => 'Friends';
+
+  @override
+  String get adminTeams => 'Teams';
+
+  @override
+  String get adminWarn => 'Warn';
+
+  @override
+  String get adminMute => 'Mute';
+
+  @override
+  String get adminSuspend => 'Suspend';
+
+  @override
+  String get adminBan => 'Ban';
+
+  @override
+  String adminWarnUser(String name) {
+    return 'Warn $name';
+  }
+
+  @override
+  String adminMuteUser(String name) {
+    return 'Mute $name';
+  }
+
+  @override
+  String adminSuspendUser(String name) {
+    return 'Suspend $name';
+  }
+
+  @override
+  String adminBanUser(String name) {
+    return 'Ban $name';
+  }
+
+  @override
+  String get adminReason => 'Reason';
+
+  @override
+  String get adminEnterWarningReason => 'Enter warning reason...';
+
+  @override
+  String get adminEnterMuteReason => 'Enter mute reason...';
+
+  @override
+  String get adminEnterSuspensionReason => 'Enter suspension reason...';
+
+  @override
+  String get adminEnterBanReason => 'Enter ban reason...';
+
+  @override
+  String get adminDuration => 'Duration';
+
+  @override
+  String get adminDuration1Hour => '1 hour';
+
+  @override
+  String get adminDuration24Hours => '24 hours';
+
+  @override
+  String get adminDuration7Days => '7 days';
+
+  @override
+  String get adminDuration30Days => '30 days';
+
+  @override
+  String get adminDuration1Day => '1 day';
+
+  @override
+  String get adminDuration90Days => '90 days';
+
+  @override
+  String get adminSendWarning => 'Send Warning';
+
+  @override
+  String get adminMuteUserButton => 'Mute User';
+
+  @override
+  String get adminSuspendUserButton => 'Suspend User';
+
+  @override
+  String get adminPermanentlyBan => 'Permanently Ban';
+
+  @override
+  String get adminBanPermanentWarning =>
+      'This action is permanent and cannot be undone.';
+
+  @override
+  String get adminWarningSent => 'Warning sent';
+
+  @override
+  String get adminWarningFailed => 'Failed to send warning';
+
+  @override
+  String get adminUserMuted => 'User muted';
+
+  @override
+  String get adminMuteFailed => 'Failed to mute user';
+
+  @override
+  String get adminUserSuspended => 'User suspended';
+
+  @override
+  String get adminSuspendFailed => 'Failed to suspend user';
+
+  @override
+  String get adminUserBanned => 'User banned';
+
+  @override
+  String get adminBanFailed => 'Failed to ban user';
+
+  @override
+  String get reportTitle => 'Report';
+
+  @override
+  String reportContentType(String type) {
+    return 'Report $type';
+  }
+
+  @override
+  String get reportSelectReason => 'Please select a reason for your report';
+
+  @override
+  String get reportSubmittedSuccess =>
+      'Report submitted successfully. Thank you.';
+
+  @override
+  String get reportSubmitFailed => 'Failed to submit report. Please try again.';
+
+  @override
+  String get reportContentBeingReported => 'Content being reported:';
+
+  @override
+  String get reportWhyReporting => 'Why are you reporting this?';
+
+  @override
+  String get reportAdditionalDetails => 'Additional details (optional)';
+
+  @override
+  String get reportDetailsHint =>
+      'Provide any additional context that might help us review this report...';
+
+  @override
+  String get reportSubmitButton => 'Submit Report';
+
+  @override
+  String get reportDisclaimer =>
+      'Reports are reviewed by our moderation team. False reports may result in action against your account.';
+
+  @override
+  String get reportReasonSpam =>
+      'Unwanted commercial content or repetitive messages';
+
+  @override
+  String get reportReasonHarassment => 'Bullying, threats, or targeted attacks';
+
+  @override
+  String get reportReasonHateSpeech =>
+      'Discrimination based on race, religion, gender, etc.';
+
+  @override
+  String get reportReasonViolence => 'Threats of violence or graphic content';
+
+  @override
+  String get reportReasonSexualContent =>
+      'Sexually explicit or suggestive content';
+
+  @override
+  String get reportReasonMisinformation => 'False or misleading information';
+
+  @override
+  String get reportReasonImpersonation => 'Pretending to be someone else';
+
+  @override
+  String get reportReasonScam => 'Fraud, phishing, or suspicious requests';
+
+  @override
+  String get reportReasonInappropriate =>
+      'Content that violates community guidelines';
+
+  @override
+  String get reportReasonOther => 'Other issue not listed above';
+
+  @override
+  String get adminPending => 'Pending';
+
+  @override
+  String get adminRole => 'Role';
+
+  @override
+  String get adminEmail => 'Email';
+
+  @override
+  String get adminPhone => 'Phone';
+
+  @override
+  String get adminType => 'Type';
+
+  @override
+  String get adminVenueId => 'Venue ID';
+
+  @override
+  String get adminClaimed => 'Claimed';
+
+  @override
+  String get adminDisputer => 'Disputer';
+
+  @override
+  String get adminCurrentOwner => 'Current Owner';
+
+  @override
+  String get adminDetails => 'Details';
+
+  @override
+  String get adminFiled => 'Filed';
+
+  @override
+  String get calendarExportTitle => 'Export to Calendar';
+
+  @override
+  String calendarEventCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Events',
+      one: '1 Event',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarReadyToExport => 'Ready to export';
+
+  @override
+  String get calendarExportOptions => 'Export Options';
+
+  @override
+  String get calendarSubscription => 'Calendar Subscription';
+
+  @override
+  String get calendarSubscriptionDescription =>
+      'Subscribe to get automatic updates when matches are added or times change.';
+
+  @override
+  String get calendarEventsPreview => 'Events Preview';
+
+  @override
+  String calendarMoreEvents(int count) {
+    return '+ $count more events';
+  }
+
+  @override
+  String calendarExportedTo(String destination) {
+    return 'Exported to $destination';
+  }
+
+  @override
+  String get calendarExportFailed => 'Export failed';
+
+  @override
+  String get memberYou => 'You';
+
+  @override
+  String get memberUnmute => 'Unmute';
+
+  @override
+  String get memberPromoteCoHost => 'Promote to Co-Host';
+
+  @override
+  String get memberDemoteToMember => 'Demote to Member';
+
+  @override
+  String get memberRemove => 'Remove';
+
+  @override
+  String get memberVirtual => 'Virtual';
+
+  @override
+  String get memberInPerson => 'In Person';
+
+  @override
+  String get shareTooltip => 'Share';
+
+  @override
+  String get shareFailed => 'Failed to share';
+
+  @override
+  String get gameDetailsNoVenuesForMap => 'No venues available to show on map';
+
+  @override
+  String get gameDetailsLocationNotAvailable =>
+      'Location data not available for map view';
 }

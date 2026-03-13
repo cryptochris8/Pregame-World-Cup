@@ -104,7 +104,7 @@ class PlacesRepositoryImpl implements PlacesRepository {
       final places = await remoteDataSource.fetchFilteredVenues(
         lat: latitude,
         lng: longitude,
-        radius: (filter.maxDistance * 1000).toInt(), // Convert km to meters
+        radius: (filter.maxDistance * 1609.34).toInt(), // Convert miles to meters
         types: filter.venueTypesToApi,
         minPrice: filter.priceLevel?.value,
         maxPrice: filter.priceLevel?.value,

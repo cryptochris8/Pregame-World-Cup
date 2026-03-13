@@ -1,3 +1,5 @@
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import '../../domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
@@ -20,6 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
   String? _errorMessage;
   bool _isLoginMode = true;
   bool _isGoogleLoading = false;
+  bool _isAppleLoading = false;
 
   @override
   void dispose() {
@@ -177,6 +180,31 @@ class _LoginScreenState extends State<LoginScreen> {
       }
     }
   }
+
+  Future<void> _signInWithApple() async {
+    setState(() {
+      _isAppleLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      await _authService.signInWithApple();
+    } on Exception catch (e) {
+      if (mounted) {
+        setState(() {
+          _errorMessage = e.toString().replaceFirst("Exception: ", "");
+        });
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isAppleLoading = false;
+        });
+      }
+    }
+  }
+
+  bool get _showAppleSignIn => !kIsWeb && Platform.isIOS;
 
   void _switchAuthMode() {
     setState(() {
@@ -516,7 +544,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             width: double.infinity,
                             height: 56,
                             child: OutlinedButton.icon(
-                              onPressed: (_isLoading || _isGoogleLoading)
+                              onPressed: (_isLoading || _isGoogleLoading || _isAppleLoading)
                                   ? null
                                   : _signInWithGoogle,
                               icon: _isGoogleLoading
@@ -554,6 +582,50 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                           ),
+
+                          // Apple Sign-In Button (iOS only)
+                          if (_showAppleSignIn) ...[
+                            const SizedBox(height: 12),
+                            SizedBox(
+                              width: double.infinity,
+                              height: 56,
+                              child: OutlinedButton.icon(
+                                onPressed: (_isLoading || _isGoogleLoading || _isAppleLoading)
+                                    ? null
+                                    : _signInWithApple,
+                                icon: _isAppleLoading
+                                    ? const SizedBox(
+                                        width: 20,
+                                        height: 20,
+                                        child: CircularProgressIndicator(
+                                          strokeWidth: 2,
+                                          color: AppTheme.textWhite,
+                                        ),
+                                      )
+                                    : const Icon(
+                                        Icons.apple,
+                                        color: Colors.white,
+                                        size: 24,
+                                      ),
+                                label: Text(
+                                  l10n.continueWithApple,
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: AppTheme.textWhite,
+                                  ),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: AppTheme.textTertiary.withValues(alpha: 0.4),
+                                  ),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
 
                           const SizedBox(height: 24),
 

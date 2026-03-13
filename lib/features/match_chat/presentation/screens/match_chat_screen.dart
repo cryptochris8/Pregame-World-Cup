@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../injection_container.dart';
 
 import '../../domain/services/match_chat_service.dart';
 import '../cubit/match_chat_cubit.dart';
@@ -34,7 +35,7 @@ class MatchChatScreen extends StatefulWidget {
 class _MatchChatScreenState extends State<MatchChatScreen> {
   late MatchChatCubit _cubit;
   final ScrollController _scrollController = ScrollController();
-  final MatchChatService _chatService = MatchChatService();
+  final MatchChatService _chatService = sl<MatchChatService>();
 
   @override
   void initState() {

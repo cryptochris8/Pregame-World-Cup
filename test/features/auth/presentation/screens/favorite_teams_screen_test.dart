@@ -174,9 +174,9 @@ void main() {
   // ========================================================
 
   group('FavoriteTeamsScreen - Team List Data', () {
-    test('worldCupTeams constant has 49 teams', () {
-      // 7 CONCACAF + 10 CONMEBOL + 18 UEFA + 8 AFC + 5 CAF + 1 OFC = 49
-      expect(worldCupTeams, hasLength(49));
+    test('worldCupTeams constant has 48 teams', () {
+      // 8 CONCACAF + 9 CONMEBOL + 17 UEFA + 8 AFC + 5 CAF + 1 OFC = 48
+      expect(worldCupTeams, hasLength(48));
     });
 
     test('worldCupTeams includes all host nations', () {
@@ -194,7 +194,6 @@ void main() {
       expect(worldCupTeams, contains('Chile'));
       expect(worldCupTeams, contains('Paraguay'));
       expect(worldCupTeams, contains('Peru'));
-      expect(worldCupTeams, contains('Venezuela'));
       expect(worldCupTeams, contains('Bolivia'));
     });
 
