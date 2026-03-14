@@ -486,14 +486,6 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                     color: Colors.grey[600],
                   ),
                 ),
-                const SizedBox(height: 8),
-                Text(
-                  AppLocalizations.of(context).comingSoon,
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.grey[500],
-                  ),
-                ),
               ],
             ),
           ),

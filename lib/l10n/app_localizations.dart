@@ -978,6 +978,12 @@ abstract class AppLocalizations {
   /// **'Sign Out'**
   String get signOut;
 
+  /// Button to export/download user data (GDPR)
+  ///
+  /// In en, this message translates to:
+  /// **'Download My Data'**
+  String get exportMyData;
+
   /// Delete account button
   ///
   /// In en, this message translates to:

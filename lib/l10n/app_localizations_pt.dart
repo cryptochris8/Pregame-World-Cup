@@ -470,6 +470,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signOut => 'Sair';
 
   @override
+  String get exportMyData => 'Baixar Meus Dados';
+
+  @override
   String get deleteAccount => 'Excluir Conta';
 
   @override

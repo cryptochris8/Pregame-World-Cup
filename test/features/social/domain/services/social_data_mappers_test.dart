@@ -153,11 +153,11 @@ void main() {
       final result = mappers.parsePrivacySettings(null);
 
       expect(result.profileVisible, isTrue);
-      expect(result.showRealName, isTrue);
-      expect(result.showLocation, isTrue);
+      expect(result.showRealName, isFalse);
+      expect(result.showLocation, isFalse);
       expect(result.showFavoriteTeams, isTrue);
       expect(result.allowMessaging, isTrue);
-      expect(result.showOnlineStatus, isTrue);
+      expect(result.showOnlineStatus, isFalse);
       expect(result.checkInVisibility, equals('friends'));
       expect(result.friendListVisibility, equals('friends'));
     });

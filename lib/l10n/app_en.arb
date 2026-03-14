@@ -642,6 +642,10 @@
   "@signOut": {
     "description": "Sign out button"
   },
+  "exportMyData": "Download My Data",
+  "@exportMyData": {
+    "description": "Button to export/download user data (GDPR)"
+  },
   "deleteAccount": "Delete Account",
   "@deleteAccount": {
     "description": "Delete account button"

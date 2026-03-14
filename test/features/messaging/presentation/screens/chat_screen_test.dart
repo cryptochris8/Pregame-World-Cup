@@ -180,8 +180,6 @@ void main() {
 
       expect(find.byType(AppBar), findsOneWidget);
       expect(find.byIcon(Icons.search), findsOneWidget);
-      expect(find.byIcon(Icons.videocam), findsOneWidget);
-      expect(find.byIcon(Icons.call), findsOneWidget);
       expect(find.byIcon(Icons.more_vert), findsOneWidget);
     });
 

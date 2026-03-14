@@ -469,6 +469,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get signOut => 'Déconnexion';
 
   @override
+  String get exportMyData => 'Télécharger Mes Données';
+
+  @override
   String get deleteAccount => 'Supprimer le Compte';
 
   @override

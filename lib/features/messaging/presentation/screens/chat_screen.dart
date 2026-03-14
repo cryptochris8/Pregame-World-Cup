@@ -171,14 +171,6 @@ class _ChatScreenState extends State<ChatScreen> {
             icon: const Icon(Icons.search),
             onPressed: _showMessageSearch,
           ),
-          IconButton(
-            icon: const Icon(Icons.videocam),
-            onPressed: _startVideoCall,
-          ),
-          IconButton(
-            icon: const Icon(Icons.call),
-            onPressed: _startVoiceCall,
-          ),
           PopupMenuButton<String>(
             icon: const Icon(Icons.more_vert),
             onSelected: _handleMenuSelection,
@@ -384,22 +376,6 @@ class _ChatScreenState extends State<ChatScreen> {
     // Reload messages to show the new message
     _loadMessages();
     _scrollToBottom();
-  }
-
-  void _startVideoCall() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(AppLocalizations.of(context).videoCallingComingSoon),
-      ),
-    );
-  }
-
-  void _startVoiceCall() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(AppLocalizations.of(context).voiceCallingComingSoon),
-      ),
-    );
   }
 
   void _handleMenuSelection(String value) {

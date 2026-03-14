@@ -470,6 +470,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get signOut => 'Cerrar Sesión';
 
   @override
+  String get exportMyData => 'Descargar Mis Datos';
+
+  @override
   String get deleteAccount => 'Eliminar Cuenta';
 
   @override

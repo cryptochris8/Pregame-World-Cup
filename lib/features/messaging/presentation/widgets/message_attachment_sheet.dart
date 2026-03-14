@@ -5,14 +5,12 @@ class MessageAttachmentSheet extends StatelessWidget {
   final VoidCallback onCameraSelected;
   final VoidCallback onGallerySelected;
   final VoidCallback onVideoSelected;
-  final VoidCallback onLocationSelected;
 
   const MessageAttachmentSheet({
     super.key,
     required this.onCameraSelected,
     required this.onGallerySelected,
     required this.onVideoSelected,
-    required this.onLocationSelected,
   });
 
   @override
@@ -82,14 +80,6 @@ class MessageAttachmentSheet extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                   onVideoSelected();
-                },
-              ),
-              _buildAttachmentOption(
-                icon: Icons.location_on,
-                label: 'Location',
-                onTap: () {
-                  Navigator.pop(context);
-                  onLocationSelected();
                 },
               ),
             ],

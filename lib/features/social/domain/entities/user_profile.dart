@@ -571,11 +571,11 @@ class UserPrivacySettings extends Equatable {
 
   const UserPrivacySettings({
     this.profileVisible = true,
-    this.showRealName = true,
-    this.showLocation = true,
+    this.showRealName = false,
+    this.showLocation = false,
     this.showFavoriteTeams = true,
     this.allowMessaging = true,
-    this.showOnlineStatus = true,
+    this.showOnlineStatus = false,
     this.checkInVisibility = 'friends',
     this.friendListVisibility = 'friends',
   });

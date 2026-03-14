@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../../../l10n/app_localizations.dart';
 import '../../../../injection_container.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../domain/services/file_upload_service.dart';
@@ -279,7 +278,6 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
         onCameraSelected: () => _selectPhoto(ImageSource.camera),
         onGallerySelected: () => _selectPhoto(ImageSource.gallery),
         onVideoSelected: _selectVideo,
-        onLocationSelected: _shareLocation,
       ),
     );
   }
@@ -394,18 +392,6 @@ class _MessageInputWidgetState extends State<MessageInputWidget> {
         _isLoading = false;
       });
     }
-  }
-
-  void _shareLocation() {
-    // Location sharing requires geolocator package integration and a map
-    // preview widget. Planned for post-launch update (v1.1).
-    final l10n = AppLocalizations.of(context);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(l10n.locationSharingComingSoon),
-        backgroundColor: Colors.orange[600],
-      ),
-    );
   }
 
   Future<void> _sendImageMessage(XFile imageFile) async {

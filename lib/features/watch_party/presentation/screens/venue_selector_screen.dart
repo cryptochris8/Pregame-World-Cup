@@ -21,7 +21,6 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
   List<Place> _venues = [];
   List<Place> _allVenues = [];
   bool _isLoading = false;
-  bool _isMapView = false;
   String? _error;
   Position? _currentPosition;
   String _selectedCategory = 'Sports Bars';
@@ -167,12 +166,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Select Venue'),
-        actions: [
-          IconButton(
-            icon: Icon(_isMapView ? Icons.list : Icons.map),
-            onPressed: () => setState(() => _isMapView = !_isMapView),
-          ),
-        ],
+        actions: const [],
       ),
       body: Column(
         children: [
@@ -218,9 +212,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
                 ? const Center(child: CircularProgressIndicator())
                 : _error != null
                     ? _buildErrorState()
-                    : _isMapView
-                        ? _buildMapView()
-                        : _buildListView(),
+                    : _buildListView(),
           ),
         ],
       ),
@@ -256,28 +248,6 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
         final venue = _venues[index];
         return _buildVenueCard(venue);
       },
-    );
-  }
-
-  Widget _buildMapView() {
-    // Placeholder for map view
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(Icons.map, size: 80, color: Colors.grey[300]),
-          const SizedBox(height: 16),
-          Text(
-            'Map view coming soon',
-            style: TextStyle(color: Colors.grey[600]),
-          ),
-          const SizedBox(height: 16),
-          ElevatedButton(
-            onPressed: () => setState(() => _isMapView = false),
-            child: const Text('Switch to List View'),
-          ),
-        ],
-      ),
     );
   }
 

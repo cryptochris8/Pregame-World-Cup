@@ -1,3 +1,5 @@
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart' hide Card;
 import 'package:firebase_auth/firebase_auth.dart';
@@ -58,6 +60,15 @@ class WatchPartyPaymentService {
         await _joinAsVirtualMember(watchPartyId, watchParty, user);
         PerformanceMonitor.endApiCall(traceId, success: true);
         return true;
+      }
+
+      // Apple requires digital goods use In-App Purchases on iOS.
+      // Paid virtual attendance via Stripe is not allowed on iOS.
+      if (!kIsWeb && Platform.isIOS) {
+        throw Exception(
+          'Paid virtual attendance is not yet available on iOS. '
+          'Free watch parties are available.',
+        );
       }
 
       // Create payment intent for virtual attendance (amount determined server-side)

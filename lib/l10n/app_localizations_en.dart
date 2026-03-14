@@ -470,6 +470,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signOut => 'Sign Out';
 
   @override
+  String get exportMyData => 'Download My Data';
+
+  @override
   String get deleteAccount => 'Delete Account';
 
   @override

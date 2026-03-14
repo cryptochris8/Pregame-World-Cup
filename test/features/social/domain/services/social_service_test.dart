@@ -762,15 +762,15 @@ void main() {
   // UserPrivacySettings Entity
   // ===========================================================================
   group('UserPrivacySettings', () {
-    test('defaultSettings has all visibility enabled', () {
+    test('defaultSettings has privacy-first defaults', () {
       final settings = UserPrivacySettings.defaultSettings();
 
       expect(settings.profileVisible, isTrue);
-      expect(settings.showRealName, isTrue);
-      expect(settings.showLocation, isTrue);
+      expect(settings.showRealName, isFalse);
+      expect(settings.showLocation, isFalse);
       expect(settings.showFavoriteTeams, isTrue);
       expect(settings.allowMessaging, isTrue);
-      expect(settings.showOnlineStatus, isTrue);
+      expect(settings.showOnlineStatus, isFalse);
       expect(settings.checkInVisibility, equals('friends'));
       expect(settings.friendListVisibility, equals('friends'));
     });

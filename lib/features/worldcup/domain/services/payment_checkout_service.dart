@@ -1,5 +1,7 @@
+import 'dart:io' show Platform;
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -200,6 +202,15 @@ class PaymentCheckoutService {
     }
 
     if (!_revenueCatService.isConfigured) {
+      // On iOS, Apple requires digital goods use In-App Purchases.
+      // Do not fall back to Stripe browser checkout on iOS.
+      if (!kIsWeb && Platform.isIOS) {
+        LoggingService.warning('RevenueCat not configured on iOS — cannot fall back to Stripe', tag: _logTag);
+        return FanPassPurchaseResult(
+          success: false,
+          errorMessage: 'In-app purchases are not available. Please try again later.',
+        );
+      }
       LoggingService.warning('RevenueCat not configured, falling back to browser checkout', tag: _logTag);
       if (!context.mounted) {
         return FanPassPurchaseResult(success: false, errorMessage: 'Context no longer valid');

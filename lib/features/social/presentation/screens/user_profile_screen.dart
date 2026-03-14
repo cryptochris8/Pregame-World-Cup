@@ -1,5 +1,7 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../domain/entities/user_profile.dart';
 import '../../domain/services/social_service.dart';
@@ -178,6 +180,55 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
         }
       }
     }
+  }
+
+  Future<void> _exportUserData() async {
+    final profile = _profile;
+    if (profile == null) return;
+
+    final data = <String, dynamic>{
+      'userId': profile.userId,
+      'displayName': profile.displayName,
+      'email': profile.email,
+      'bio': profile.bio,
+      'homeLocation': profile.homeLocation,
+      'favoriteTeams': profile.favoriteTeams,
+      'level': profile.level,
+      'experiencePoints': profile.experiencePoints,
+      'badges': profile.badges,
+      'createdAt': profile.createdAt.toIso8601String(),
+      'updatedAt': profile.updatedAt.toIso8601String(),
+      'socialStats': {
+        'friendsCount': profile.socialStats.friendsCount,
+        'gamesAttended': profile.socialStats.gamesAttended,
+        'venuesVisited': profile.socialStats.venuesVisited,
+        'reviewsCount': profile.socialStats.reviewsCount,
+        'photosShared': profile.socialStats.photosShared,
+        'likesReceived': profile.socialStats.likesReceived,
+        'checkInsCount': profile.socialStats.checkInsCount,
+        'helpfulVotes': profile.socialStats.helpfulVotes,
+      },
+      'preferences': {
+        'showLocation': profile.preferences.showLocation,
+        'allowFriendRequests': profile.preferences.allowFriendRequests,
+        'receiveNotifications': profile.preferences.receiveNotifications,
+        'preferredVenueTypes': profile.preferences.preferredVenueTypes,
+        'maxTravelDistance': profile.preferences.maxTravelDistance,
+        'dietaryRestrictions': profile.preferences.dietaryRestrictions,
+        'preferredPriceRange': profile.preferences.preferredPriceRange,
+      },
+      'privacySettings': {
+        'profileVisible': profile.privacySettings.profileVisible,
+        'showRealName': profile.privacySettings.showRealName,
+        'showOnlineStatus': profile.privacySettings.showOnlineStatus,
+        'showLocation': profile.privacySettings.showLocation,
+      },
+      'exportedAt': DateTime.now().toIso8601String(),
+    };
+
+    final jsonString = const JsonEncoder.withIndent('  ').convert(data);
+
+    await Share.share(jsonString, subject: 'Pregame World Cup - My Data Export');
   }
 
   Future<void> _signOut() async {
@@ -582,9 +633,18 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             ),
           ],
 
-          // Delete Account (current user only)
+          // Export My Data & Delete Account (current user only)
           if (_isCurrentUser) ...[
             const SizedBox(height: 16),
+            TextButton.icon(
+              onPressed: _exportUserData,
+              icon: Icon(Icons.download, color: Colors.white.withValues(alpha: 0.7)),
+              label: Text(
+                AppLocalizations.of(context).exportMyData,
+                style: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
+              ),
+            ),
+            const SizedBox(height: 8),
             TextButton.icon(
               onPressed: _showDeleteAccountDialog,
               icon: const Icon(Icons.delete_forever, color: Colors.red),

@@ -35,7 +35,6 @@ dependencies:
 
   # Networking
   dio: ^5.4.0 # For making HTTP requests to Sports Data API, etc.
-  google_maps_webservice: ^0.0.20-nullsafety.5 # For Google Places API
 
   # UI & Utilities
   google_maps_flutter: ^2.5.3

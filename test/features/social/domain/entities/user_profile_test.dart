@@ -419,11 +419,11 @@ void main() {
       const settings = UserPrivacySettings();
 
       expect(settings.profileVisible, isTrue);
-      expect(settings.showRealName, isTrue);
-      expect(settings.showLocation, isTrue);
+      expect(settings.showRealName, isFalse);
+      expect(settings.showLocation, isFalse);
       expect(settings.showFavoriteTeams, isTrue);
       expect(settings.allowMessaging, isTrue);
-      expect(settings.showOnlineStatus, isTrue);
+      expect(settings.showOnlineStatus, isFalse);
       expect(settings.checkInVisibility, equals('friends'));
       expect(settings.friendListVisibility, equals('friends'));
     });
@@ -442,7 +442,7 @@ void main() {
 
       expect(copied.profileVisible, isFalse);
       expect(copied.checkInVisibility, equals('private'));
-      expect(copied.showRealName, isTrue); // unchanged
+      expect(copied.showRealName, isFalse); // unchanged (default is now false)
     });
 
     test('fromJson parses correctly', () {

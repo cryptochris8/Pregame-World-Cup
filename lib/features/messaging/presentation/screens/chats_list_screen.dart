@@ -381,13 +381,9 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
               
               return SwipeableWidget(
                 key: ValueKey(chat.chatId),
-                onSwipeLeft: () => _archiveChat(chat),
                 onSwipeRight: () => _markAsRead(chat),
-                leftActionColor: AppTheme.errorColor,
                 rightActionColor: AppTheme.primaryElectricBlue,
-                leftActionIcon: Icons.archive,
                 rightActionIcon: Icons.mark_email_read,
-                leftActionLabel: 'Archive',
                 rightActionLabel: 'Mark Read',
                 swipeThreshold: 120,
                 child: Container(
@@ -537,19 +533,6 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
       _isLoading = true;
     });
     await _initializeMessaging();
-  }
-
-  void _archiveChat(Chat chat) async {
-    // For now, just show a message - archive functionality can be implemented later
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context).archiveComingSoon),
-          backgroundColor: AppTheme.secondaryEmerald,
-          duration: const Duration(seconds: 2),
-        ),
-      );
-    }
   }
 
   void _markAsRead(Chat chat) async {
