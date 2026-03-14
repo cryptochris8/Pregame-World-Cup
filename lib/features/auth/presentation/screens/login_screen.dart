@@ -1,6 +1,7 @@
 import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../config/app_theme.dart';
@@ -661,6 +662,48 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ],
                               ),
                             ),
+                          ),
+
+                          // Privacy Policy & Terms of Service
+                          const SizedBox(height: 8),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              TextButton(
+                                onPressed: () => launchUrl(
+                                  Uri.parse('https://pregameworldcup.com/privacy'),
+                                  mode: LaunchMode.externalApplication,
+                                ),
+                                child: Text(
+                                  l10n.privacyPolicy,
+                                  style: TextStyle(
+                                    color: AppTheme.textTertiary.withValues(alpha: 0.8),
+                                    fontSize: 12,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: AppTheme.textTertiary.withValues(alpha: 0.8),
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                ' | ',
+                                style: TextStyle(color: AppTheme.textTertiary.withValues(alpha: 0.5)),
+                              ),
+                              TextButton(
+                                onPressed: () => launchUrl(
+                                  Uri.parse('https://pregameworldcup.com/terms'),
+                                  mode: LaunchMode.externalApplication,
+                                ),
+                                child: Text(
+                                  l10n.termsOfService,
+                                  style: TextStyle(
+                                    color: AppTheme.textTertiary.withValues(alpha: 0.8),
+                                    fontSize: 12,
+                                    decoration: TextDecoration.underline,
+                                    decorationColor: AppTheme.textTertiary.withValues(alpha: 0.8),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),

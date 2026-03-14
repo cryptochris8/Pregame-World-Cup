@@ -136,8 +136,8 @@ void main() {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
 
-      // In login mode: "Forgot password?" + mode switch = 2 TextButtons
-      expect(find.byType(TextButton), findsNWidgets(2));
+      // In login mode: "Forgot password?" + mode switch + Privacy Policy + Terms of Service = 4 TextButtons
+      expect(find.byType(TextButton), findsNWidgets(4));
     });
 
     testWidgets('renders email icon', (tester) async {
@@ -718,8 +718,8 @@ void main() {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
 
-      // In login mode: "Forgot password?" + mode switch = 2 TextButtons
-      expect(find.byType(TextButton), findsNWidgets(2));
+      // In login mode: "Forgot password?" + mode switch + Privacy Policy + Terms of Service = 4 TextButtons
+      expect(find.byType(TextButton), findsNWidgets(4));
     });
   });
 }
