@@ -9,7 +9,7 @@ void main() {
         const filter = VenueFilter();
 
         expect(filter.venueTypes, containsAll([VenueType.bar, VenueType.restaurant]));
-        expect(filter.maxDistance, equals(2.0));
+        expect(filter.maxDistance, equals(1.2));
         expect(filter.minRating, isNull);
         expect(filter.priceLevel, isNull);
         expect(filter.openNow, isFalse);
@@ -99,7 +99,7 @@ void main() {
         expect(filter.venueTypes, contains(VenueType.cafe));
         expect(filter.venueTypes, contains(VenueType.nightclub));
         expect(filter.venueTypes.length, equals(4));
-        expect(filter.maxDistance, equals(5.0));
+        expect(filter.maxDistance, equals(3.0));
       });
 
       test('barsOnly() returns filter for bars and nightclubs', () {
@@ -108,7 +108,7 @@ void main() {
         expect(filter.venueTypes, contains(VenueType.bar));
         expect(filter.venueTypes, contains(VenueType.nightclub));
         expect(filter.venueTypes.length, equals(2));
-        expect(filter.maxDistance, equals(2.0));
+        expect(filter.maxDistance, equals(1.2));
       });
 
       test('restaurantsOnly() returns filter for restaurants and cafes', () {
@@ -117,7 +117,7 @@ void main() {
         expect(filter.venueTypes, contains(VenueType.restaurant));
         expect(filter.venueTypes, contains(VenueType.cafe));
         expect(filter.venueTypes.length, equals(2));
-        expect(filter.maxDistance, equals(2.0));
+        expect(filter.maxDistance, equals(1.2));
       });
     });
 

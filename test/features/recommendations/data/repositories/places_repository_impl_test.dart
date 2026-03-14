@@ -92,7 +92,7 @@ void main() {
         final repo = PlacesRepositoryImpl(remoteDataSource: mockDataSource);
         const filter = VenueFilter(
           venueTypes: [VenueType.bar, VenueType.restaurant],
-          maxDistance: 2.0,
+          maxDistance: 1.2,
           minRating: 4.0,
           openNow: true,
         );
@@ -100,7 +100,7 @@ void main() {
         when(() => mockDataSource.fetchFilteredVenues(
               lat: _testLat,
               lng: _testLng,
-              radius: 2000,
+              radius: 1931, // 1.2 miles * 1609.34
               types: ['bar', 'restaurant'],
               minPrice: null,
               maxPrice: null,
@@ -156,14 +156,14 @@ void main() {
         );
       });
 
-      test('converts maxDistance from km to meters', () async {
+      test('converts maxDistance from miles to meters', () async {
         final repo = PlacesRepositoryImpl(remoteDataSource: mockDataSource);
         const filter = VenueFilter(maxDistance: 5.0);
 
         when(() => mockDataSource.fetchFilteredVenues(
               lat: _testLat,
               lng: _testLng,
-              radius: 5000, // 5.0 km * 1000
+              radius: 8046, // 5.0 miles * 1609.34
               types: any(named: 'types'),
               minPrice: any(named: 'minPrice'),
               maxPrice: any(named: 'maxPrice'),
@@ -180,7 +180,7 @@ void main() {
         verify(() => mockDataSource.fetchFilteredVenues(
               lat: _testLat,
               lng: _testLng,
-              radius: 5000,
+              radius: 8046,
               types: any(named: 'types'),
               minPrice: any(named: 'minPrice'),
               maxPrice: any(named: 'maxPrice'),
@@ -199,7 +199,7 @@ void main() {
         when(() => mockDataSource.fetchFilteredVenues(
               lat: any(named: 'lat'),
               lng: any(named: 'lng'),
-              radius: any(named: 'radius'),
+              radius: 3218, // 2.0 miles * 1609.34
               types: any(named: 'types'),
               minPrice: 2, // PriceLevel.moderate.value
               maxPrice: 2,
@@ -216,7 +216,7 @@ void main() {
         verify(() => mockDataSource.fetchFilteredVenues(
               lat: _testLat,
               lng: _testLng,
-              radius: 2000,
+              radius: 3218, // 2.0 miles * 1609.34
               types: ['bar', 'restaurant'],
               minPrice: 2,
               maxPrice: 2,
@@ -233,14 +233,14 @@ void main() {
       test('default filter has bars and restaurants', () {
         const filter = VenueFilter();
         expect(filter.venueTypes, [VenueType.bar, VenueType.restaurant]);
-        expect(filter.maxDistance, 2.0);
+        expect(filter.maxDistance, 1.2);
         expect(filter.openNow, false);
       });
 
       test('VenueFilter.all includes all types', () {
         final filter = VenueFilter.all();
         expect(filter.venueTypes.length, 4);
-        expect(filter.maxDistance, 5.0);
+        expect(filter.maxDistance, 3.0);
       });
 
       test('VenueFilter.barsOnly includes only bars and nightclubs', () {
