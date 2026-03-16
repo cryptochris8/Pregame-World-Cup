@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../../l10n/app_localizations.dart';
 
 /// Shown after a venue claim has been submitted and is pending admin review.
 class PendingReviewView extends StatelessWidget {
@@ -8,6 +9,7 @@ class PendingReviewView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -28,9 +30,9 @@ class PendingReviewView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'Claim Submitted',
-              style: TextStyle(
+            Text(
+              l10n.claimSubmitted,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -38,9 +40,9 @@ class PendingReviewView extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Your venue claim has been verified and is now pending admin review. You\'ll be notified once your claim is approved.',
-              style: TextStyle(color: Colors.white60, fontSize: 14),
+            Text(
+              l10n.claimSubmittedDesc,
+              style: const TextStyle(color: Colors.white60, fontSize: 14),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
@@ -67,9 +69,9 @@ class PendingReviewView extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 4),
-                        const Text(
-                          'Pending Review',
-                          style: TextStyle(
+                        Text(
+                          l10n.pendingReviewStatus,
+                          style: const TextStyle(
                             color: Color(0xFFF59E0B),
                             fontSize: 13,
                             fontWeight: FontWeight.w600,
@@ -90,7 +92,7 @@ class PendingReviewView extends StatelessWidget {
                 side: const BorderSide(color: Colors.white24),
                 padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
               ),
-              child: const Text('Done'),
+              child: Text(l10n.doneButton),
             ),
           ],
         ),

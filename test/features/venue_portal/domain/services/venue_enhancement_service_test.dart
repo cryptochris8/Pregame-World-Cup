@@ -610,8 +610,8 @@ void main() {
             VenueClaimStatus.pendingReview);
         expect(VenueClaimStatus.fromJson('approved'), VenueClaimStatus.approved);
         expect(VenueClaimStatus.fromJson('rejected'), VenueClaimStatus.rejected);
-        expect(VenueClaimStatus.fromJson(null), VenueClaimStatus.approved);
-        expect(VenueClaimStatus.fromJson('unknown'), VenueClaimStatus.approved);
+        expect(VenueClaimStatus.fromJson(null), VenueClaimStatus.pendingVerification);
+        expect(VenueClaimStatus.fromJson('unknown'), VenueClaimStatus.pendingVerification);
       });
     });
 
@@ -1021,6 +1021,89 @@ void main() {
         expect(batches[0].length, 10);
         expect(batches[1].length, 10);
         expect(batches[2].length, 5);
+      });
+    });
+
+    // =========================================================================
+    // Cache TTL behavior patterns (mirrors _CacheEntry logic)
+    // =========================================================================
+    group('cache TTL behavior patterns', () {
+      test('fresh entry is not expired', () {
+        final cachedAt = DateTime.now();
+        const ttl = Duration(minutes: 5);
+        final isExpired = DateTime.now().difference(cachedAt) > ttl;
+        expect(isExpired, false);
+      });
+
+      test('entry older than TTL is expired', () {
+        final cachedAt = DateTime.now().subtract(const Duration(minutes: 6));
+        const ttl = Duration(minutes: 5);
+        final isExpired = DateTime.now().difference(cachedAt) > ttl;
+        expect(isExpired, true);
+      });
+
+      test('entry exactly at TTL boundary is not expired', () {
+        final cachedAt = DateTime.now().subtract(const Duration(minutes: 5));
+        const ttl = Duration(minutes: 5);
+        // difference == ttl, not > ttl, so not expired
+        final isExpired = DateTime.now().difference(cachedAt) > ttl;
+        expect(isExpired, false);
+      });
+
+      test('expired entries are removed before adding new ones', () {
+        // Simulates _addToCache eviction of expired entries
+        final now = DateTime.now();
+        final entries = <String, DateTime>{
+          'v1': now.subtract(const Duration(minutes: 10)), // expired
+          'v2': now.subtract(const Duration(minutes: 1)), // fresh
+          'v3': now.subtract(const Duration(minutes: 7)), // expired
+        };
+        const ttl = Duration(minutes: 5);
+
+        entries.removeWhere((_, cachedAt) => now.difference(cachedAt) > ttl);
+
+        expect(entries.length, 1);
+        expect(entries.containsKey('v2'), true);
+      });
+
+      test('oldest entry evicted when cache is at max size', () {
+        const maxSize = 3;
+        final now = DateTime.now();
+        final cache = <String, DateTime>{
+          'v1': now.subtract(const Duration(minutes: 3)), // oldest
+          'v2': now.subtract(const Duration(minutes: 1)),
+          'v3': now,
+        };
+
+        // Simulate adding a new entry when at capacity
+        if (cache.length >= maxSize) {
+          final oldest = cache.entries
+              .reduce((a, b) => a.value.isBefore(b.value) ? a : b);
+          cache.remove(oldest.key);
+        }
+        cache['v4'] = now;
+
+        expect(cache.length, 3);
+        expect(cache.containsKey('v1'), false); // evicted
+        expect(cache.containsKey('v4'), true); // added
+      });
+
+      test('TTL-aware cache skips expired entries on read', () {
+        final now = DateTime.now();
+        final entries = <String, DateTime>{
+          'v1': now.subtract(const Duration(minutes: 6)), // expired
+          'v2': now.subtract(const Duration(minutes: 2)), // fresh
+        };
+        const ttl = Duration(minutes: 5);
+
+        // Simulates getVenueEnhancement cache check
+        DateTime? cachedAt = entries['v1'];
+        bool isExpired = cachedAt != null && now.difference(cachedAt) > ttl;
+        expect(isExpired, true); // should skip v1
+
+        cachedAt = entries['v2'];
+        isExpired = cachedAt != null && now.difference(cachedAt) > ttl;
+        expect(isExpired, false); // should use v2
       });
     });
 

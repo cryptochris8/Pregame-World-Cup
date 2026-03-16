@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/subscription_tier.dart';
 
 /// Widget that gates premium features behind a subscription check.
@@ -33,6 +34,7 @@ class PremiumFeatureGate extends StatelessWidget {
   Widget _buildDefaultLockedWidget(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -63,7 +65,7 @@ class PremiumFeatureGate extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Upgrade to Premium to unlock this feature',
+            l10n.upgradeToPremiumFeature,
             style: theme.textTheme.bodySmall?.copyWith(
               color: colorScheme.onSurfaceVariant,
             ),
@@ -74,7 +76,7 @@ class PremiumFeatureGate extends StatelessWidget {
             FilledButton.icon(
               onPressed: onUpgradePressed,
               icon: const Icon(Icons.star, size: 18),
-              label: const Text('Upgrade to Premium'),
+              label: Text(l10n.upgradeToPremium),
             ),
           ],
         ],
@@ -108,6 +110,7 @@ class PremiumFeatureCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -180,7 +183,7 @@ class PremiumFeatureCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
-                    'PREMIUM',
+                    l10n.premiumBadge,
                     style: theme.textTheme.labelSmall?.copyWith(
                       color: colorScheme.onPrimary,
                       fontWeight: FontWeight.bold,
@@ -212,6 +215,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
 
     return Container(
       margin: const EdgeInsets.all(16),
@@ -245,7 +249,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Unlock Premium Features',
+                l10n.unlockPremiumFeatures,
                 style: theme.textTheme.titleMedium?.copyWith(
                   color: colorScheme.onPrimary,
                   fontWeight: FontWeight.bold,
@@ -266,8 +270,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            customMessage ??
-                'Get advanced features like specific match scheduling, TV setup, game day specials, and real-time capacity updates.',
+            customMessage ?? l10n.premiumFeaturesDesc,
             style: theme.textTheme.bodySmall?.copyWith(
               color: colorScheme.onPrimary.withValues(alpha:0.9),
             ),
@@ -279,7 +282,7 @@ class PremiumUpgradeBanner extends StatelessWidget {
               backgroundColor: colorScheme.onPrimary,
               foregroundColor: colorScheme.primary,
             ),
-            child: const Text('Upgrade Now'),
+            child: Text(l10n.upgradeNow),
           ),
         ],
       ),

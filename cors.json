@@ -1,6 +1,11 @@
 [
   {
-    "origin": ["*"],
+    "origin": [
+      "https://pregame-b089e.web.app",
+      "https://pregame-b089e.firebaseapp.com",
+      "https://pregameworldcup.com",
+      "https://www.pregameworldcup.com"
+    ],
     "method": ["GET", "HEAD"],
     "maxAgeSeconds": 3600,
     "responseHeader": ["Content-Type", "Content-Length", "Accept-Ranges", "Content-Range"]

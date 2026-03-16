@@ -173,6 +173,39 @@ void main() {
     });
 
     // =========================================================================
+    // 5b. VenueClaimStatus.fromJson
+    // =========================================================================
+    group('VenueClaimStatus.fromJson', () {
+      test('returns approved for explicit "approved" string', () {
+        expect(VenueClaimStatus.fromJson('approved'), equals(VenueClaimStatus.approved));
+      });
+
+      test('returns pendingReview for "pendingReview" string', () {
+        expect(VenueClaimStatus.fromJson('pendingReview'), equals(VenueClaimStatus.pendingReview));
+      });
+
+      test('returns rejected for "rejected" string', () {
+        expect(VenueClaimStatus.fromJson('rejected'), equals(VenueClaimStatus.rejected));
+      });
+
+      test('returns pendingVerification for "pendingVerification" string', () {
+        expect(VenueClaimStatus.fromJson('pendingVerification'), equals(VenueClaimStatus.pendingVerification));
+      });
+
+      test('returns pendingVerification for null', () {
+        expect(VenueClaimStatus.fromJson(null), equals(VenueClaimStatus.pendingVerification));
+      });
+
+      test('returns pendingVerification for unknown string', () {
+        expect(VenueClaimStatus.fromJson('garbage'), equals(VenueClaimStatus.pendingVerification));
+      });
+
+      test('returns pendingVerification for empty string', () {
+        expect(VenueClaimStatus.fromJson(''), equals(VenueClaimStatus.pendingVerification));
+      });
+    });
+
+    // =========================================================================
     // 6. fromFirestore with claim fields
     // =========================================================================
     group('fromFirestore claim fields', () {
@@ -252,7 +285,7 @@ void main() {
         expect(enhancement.venuePhoneNumber, equals('+15551234567'));
       });
 
-      test('defaults claimStatus to approved when missing from Firestore', () {
+      test('defaults claimStatus to pendingVerification when missing from Firestore', () {
         final data = {
           'ownerId': 'owner_1',
           'subscriptionTier': 'free',
@@ -265,7 +298,24 @@ void main() {
 
         final enhancement = VenueEnhancement.fromFirestore(data, 'venue_1');
 
-        expect(enhancement.claimStatus, equals(VenueClaimStatus.approved));
+        expect(enhancement.claimStatus, equals(VenueClaimStatus.pendingVerification));
+      });
+
+      test('defaults claimStatus to pendingVerification for unknown values', () {
+        final data = {
+          'ownerId': 'owner_1',
+          'subscriptionTier': 'free',
+          'showsMatches': false,
+          'gameSpecials': <dynamic>[],
+          'claimStatus': 'unknownGarbage',
+          'isVerified': false,
+          'createdAt': Timestamp.fromDate(now),
+          'updatedAt': Timestamp.fromDate(now),
+        };
+
+        final enhancement = VenueEnhancement.fromFirestore(data, 'venue_1');
+
+        expect(enhancement.claimStatus, equals(VenueClaimStatus.pendingVerification));
       });
 
       test('handles null claimedAt and venuePhoneNumber', () {

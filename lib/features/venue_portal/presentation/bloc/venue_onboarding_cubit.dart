@@ -1,3 +1,4 @@
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/entities.dart';
 import '../../domain/services/venue_enhancement_service.dart';
@@ -9,6 +10,14 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
   VenueOnboardingCubit({required VenueEnhancementService service})
       : _service = service,
         super(const VenueOnboardingState());
+
+  /// Extract a user-friendly message from exceptions.
+  String _friendlyError(Object e, String fallback) {
+    if (e is FirebaseFunctionsException) {
+      return e.message ?? fallback;
+    }
+    return fallback;
+  }
 
   /// Check if the venue is available to claim
   Future<void> checkVenueAvailability(String venueId) async {
@@ -32,7 +41,7 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
     } catch (e) {
       emit(state.copyWith(
         status: VenueOnboardingStatus.error,
-        errorMessage: 'Failed to check venue availability: $e',
+        errorMessage: _friendlyError(e, 'Unable to check venue availability. Please check your connection and try again.'),
       ));
     }
   }
@@ -89,7 +98,7 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
     } catch (e) {
       emit(state.copyWith(
         status: VenueOnboardingStatus.error,
-        errorMessage: 'Error claiming venue: $e',
+        errorMessage: _friendlyError(e, 'Unable to claim venue. Please try again.'),
       ));
     }
   }
@@ -116,7 +125,7 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
     } catch (e) {
       emit(state.copyWith(
         status: VenueOnboardingStatus.error,
-        errorMessage: 'Error sending code: $e',
+        errorMessage: _friendlyError(e, 'Unable to send verification code. Please try again.'),
       ));
     }
   }
@@ -143,7 +152,7 @@ class VenueOnboardingCubit extends Cubit<VenueOnboardingState> {
     } catch (e) {
       emit(state.copyWith(
         status: VenueOnboardingStatus.error,
-        errorMessage: 'Error verifying code: $e',
+        errorMessage: _friendlyError(e, 'Unable to verify code. Please try again.'),
       ));
     }
   }

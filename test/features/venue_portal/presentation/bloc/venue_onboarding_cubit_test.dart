@@ -114,7 +114,7 @@ void main() {
                 (s) => s.status, 'status', VenueOnboardingStatus.error)
             .having((s) => s.errorMessage, 'errorMessage', isNotNull)
             .having((s) => s.errorMessage, 'errorMessage',
-                contains('Failed to check venue availability')),
+                contains('Unable to check venue availability')),
       ],
     );
 
@@ -306,7 +306,7 @@ void main() {
             .having(
                 (s) => s.status, 'status', VenueOnboardingStatus.error)
             .having((s) => s.errorMessage, 'errorMessage',
-                contains('Error claiming venue')),
+                contains('Unable to claim venue')),
       ],
     );
 
@@ -376,7 +376,7 @@ void main() {
             .having(
                 (s) => s.status, 'status', VenueOnboardingStatus.error)
             .having((s) => s.errorMessage, 'errorMessage',
-                contains('Error sending code')),
+                contains('Unable to send verification code')),
       ],
     );
 
@@ -446,7 +446,7 @@ void main() {
             .having(
                 (s) => s.status, 'status', VenueOnboardingStatus.error)
             .having((s) => s.errorMessage, 'errorMessage',
-                contains('Error verifying code')),
+                contains('Unable to verify code')),
       ],
     );
 

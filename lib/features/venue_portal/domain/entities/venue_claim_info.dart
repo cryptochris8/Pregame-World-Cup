@@ -39,10 +39,13 @@ class VenueClaimInfo extends Equatable {
     );
   }
 
+  static final _emailRegex = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
+
   bool get isStep1Valid =>
       businessName.isNotEmpty &&
       contactEmail.isNotEmpty &&
-      contactEmail.contains('@');
+      _emailRegex.hasMatch(contactEmail) &&
+      contactPhone.isNotEmpty;
 
   bool get isStep2Valid => authorizedConfirmed;
 

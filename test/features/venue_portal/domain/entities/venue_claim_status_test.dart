@@ -45,21 +45,21 @@ void main() {
             equals(VenueClaimStatus.rejected));
       });
 
-      test('defaults to approved for null value (backward compatibility)', () {
+      test('defaults to pendingVerification for null value (safe default)', () {
         expect(VenueClaimStatus.fromJson(null),
-            equals(VenueClaimStatus.approved));
+            equals(VenueClaimStatus.pendingVerification));
       });
 
-      test('defaults to approved for unknown string (backward compatibility)',
+      test('defaults to pendingVerification for unknown string (safe default)',
           () {
         expect(VenueClaimStatus.fromJson('unknown'),
-            equals(VenueClaimStatus.approved));
+            equals(VenueClaimStatus.pendingVerification));
       });
 
-      test('defaults to approved for empty string (backward compatibility)',
+      test('defaults to pendingVerification for empty string (safe default)',
           () {
         expect(
-            VenueClaimStatus.fromJson(''), equals(VenueClaimStatus.approved));
+            VenueClaimStatus.fromJson(''), equals(VenueClaimStatus.pendingVerification));
       });
     });
 

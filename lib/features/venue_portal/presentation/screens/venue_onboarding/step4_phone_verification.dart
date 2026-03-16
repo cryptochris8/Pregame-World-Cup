@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../../l10n/app_localizations.dart';
 import '../../bloc/venue_onboarding_cubit.dart';
 import '../../bloc/venue_onboarding_state.dart';
 import 'onboarding_form_components.dart';
 
 /// Step 4: Phone verification with code input.
-class Step4PhoneVerification extends StatelessWidget {
+class Step4PhoneVerification extends StatefulWidget {
   final String placeId;
   final String venueName;
   final TextEditingController verificationCodeController;
@@ -20,21 +21,64 @@ class Step4PhoneVerification extends StatelessWidget {
   });
 
   @override
+  State<Step4PhoneVerification> createState() => _Step4PhoneVerificationState();
+}
+
+class _Step4PhoneVerificationState extends State<Step4PhoneVerification> {
+  bool _isCodeValid = false;
+  DateTime? _lastVerifyTap;
+  static const _debounceDuration = Duration(seconds: 3);
+
+  @override
+  void initState() {
+    super.initState();
+    widget.verificationCodeController.addListener(_onCodeChanged);
+    _isCodeValid = widget.verificationCodeController.text.length == 6;
+  }
+
+  @override
+  void dispose() {
+    widget.verificationCodeController.removeListener(_onCodeChanged);
+    super.dispose();
+  }
+
+  void _onCodeChanged() {
+    final valid = widget.verificationCodeController.text.length == 6;
+    if (valid != _isCodeValid) {
+      setState(() => _isCodeValid = valid);
+    }
+  }
+
+  bool get _isDebounced {
+    if (_lastVerifyTap == null) return false;
+    return DateTime.now().difference(_lastVerifyTap!) < _debounceDuration;
+  }
+
+  void _onVerifyTap(VenueOnboardingCubit cubit) {
+    if (_isDebounced) return;
+    setState(() => _lastVerifyTap = DateTime.now());
+    cubit.verifyCode(widget.placeId, widget.verificationCodeController.text);
+  }
+
+  @override
   Widget build(BuildContext context) {
     final cubit = context.read<VenueOnboardingCubit>();
+    final state = widget.state;
     final isSending = state.isSendingCode;
     final isVerifying = state.isVerifying;
     final isPending = state.isPendingVerification;
     final hasSubmitted = isPending || isSending || isVerifying;
+
+    final l10n = AppLocalizations.of(context);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const StepHeader(
-            title: 'Phone Verification',
-            description: 'We\'ll send a verification code to the venue\'s phone number to confirm your connection to this venue.',
+          StepHeader(
+            title: l10n.phoneVerificationTitle,
+            description: l10n.phoneVerificationDesc,
           ),
           const SizedBox(height: 24),
           // Phone number display
@@ -52,15 +96,15 @@ class Step4PhoneVerification extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'Venue Phone',
-                        style: TextStyle(color: Colors.white38, fontSize: 12),
+                      Text(
+                        l10n.venuePhone,
+                        style: const TextStyle(color: Colors.white38, fontSize: 12),
                       ),
                       const SizedBox(height: 2),
                       Text(
                         state.claimInfo.contactPhone.isNotEmpty
                             ? state.claimInfo.contactPhone
-                            : 'No phone number provided',
+                            : l10n.noPhoneProvided,
                         style: const TextStyle(color: Colors.white, fontSize: 15),
                       ),
                     ],
@@ -76,10 +120,10 @@ class Step4PhoneVerification extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  cubit.claimVenue(placeId, venueName);
+                  cubit.claimVenue(widget.placeId, widget.venueName);
                 },
                 icon: const Icon(Icons.send, size: 18),
-                label: const Text('Submit Claim & Send Code'),
+                label: Text(l10n.submitClaimAndSendCode),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFFF6B35),
                   foregroundColor: Colors.white,
@@ -104,7 +148,7 @@ class Step4PhoneVerification extends StatelessWidget {
               child: OutlinedButton.icon(
                 onPressed: isSending
                     ? null
-                    : () => cubit.sendVerificationCode(placeId),
+                    : () => cubit.sendVerificationCode(widget.placeId),
                 icon: isSending
                     ? const SizedBox(
                         width: 16,
@@ -112,7 +156,7 @@ class Step4PhoneVerification extends StatelessWidget {
                         child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
                       )
                     : const Icon(Icons.refresh, size: 18),
-                label: Text(isSending ? 'Sending...' : 'Send Verification Code'),
+                label: Text(isSending ? l10n.sendingEllipsis : l10n.sendVerificationCode),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: Colors.white70,
                   side: const BorderSide(color: Color(0xFFFF6B35)),
@@ -126,21 +170,26 @@ class Step4PhoneVerification extends StatelessWidget {
             const SizedBox(height: 24),
             // Code input
             OnboardingTextField(
-              controller: verificationCodeController,
-              label: 'Verification Code',
+              controller: widget.verificationCodeController,
+              label: l10n.verificationCode,
               icon: Icons.lock_outline,
               keyboardType: TextInputType.number,
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 4),
+            Text(
+              l10n.digitCounter(widget.verificationCodeController.text.length),
+              style: TextStyle(
+                color: _isCodeValid ? const Color(0xFF10B981) : Colors.white38,
+                fontSize: 12,
+              ),
+            ),
+            const SizedBox(height: 12),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: isVerifying || verificationCodeController.text.length != 6
+                onPressed: isVerifying || !_isCodeValid || _isDebounced
                     ? null
-                    : () => cubit.verifyCode(
-                          placeId,
-                          verificationCodeController.text,
-                        ),
+                    : () => _onVerifyTap(cubit),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF10B981),
                   foregroundColor: Colors.white,
@@ -159,9 +208,9 @@ class Step4PhoneVerification extends StatelessWidget {
                           color: Colors.white,
                         ),
                       )
-                    : const Text(
-                        'Verify Code',
-                        style: TextStyle(
+                    : Text(
+                        l10n.verifyCode,
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
@@ -174,13 +223,13 @@ class Step4PhoneVerification extends StatelessWidget {
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: state.isSubmitting ? null : () => cubit.previousStep(),
+                  onPressed: state.isSubmitting || isVerifying ? null : () => cubit.previousStep(),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.white70,
                     side: const BorderSide(color: Colors.white24),
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
-                  child: const Text('Back'),
+                  child: Text(l10n.back),
                 ),
               ),
             ],

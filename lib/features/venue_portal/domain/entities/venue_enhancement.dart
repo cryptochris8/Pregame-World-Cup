@@ -18,15 +18,15 @@ enum VenueClaimStatus {
 
   static VenueClaimStatus fromJson(String? value) {
     switch (value) {
-      case 'pendingVerification':
-        return VenueClaimStatus.pendingVerification;
+      case 'approved':
+        return VenueClaimStatus.approved;
       case 'pendingReview':
         return VenueClaimStatus.pendingReview;
       case 'rejected':
         return VenueClaimStatus.rejected;
-      case 'approved':
+      case 'pendingVerification':
       default:
-        return VenueClaimStatus.approved;
+        return VenueClaimStatus.pendingVerification;
     }
   }
 }

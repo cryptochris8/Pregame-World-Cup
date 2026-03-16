@@ -4,32 +4,46 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/services/logging_service.dart';
 import '../entities/entities.dart';
 
+class _CacheEntry {
+  final VenueEnhancement enhancement;
+  final DateTime cachedAt;
+
+  _CacheEntry(this.enhancement) : cachedAt = DateTime.now();
+
+  bool get isExpired =>
+      DateTime.now().difference(cachedAt) > VenueEnhancementService._cacheTtl;
+}
+
 class VenueEnhancementService {
   static const String _logTag = 'VenueEnhancementService';
   static const String _collection = 'venue_enhancements';
+  static const Duration _cacheTtl = Duration(minutes: 5);
+  static const int _maxCacheSize = 100;
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  // In-memory cache
-  final Map<String, VenueEnhancement> _cache = {};
+  // In-memory cache with TTL
+  final Map<String, _CacheEntry> _cache = {};
 
   /// Get venue enhancement by venue ID
   Future<VenueEnhancement?> getVenueEnhancement(String venueId) async {
     try {
-      // Check cache first
-      if (_cache.containsKey(venueId)) {
-        return _cache[venueId];
+      // Check cache first (with TTL)
+      final cached = _cache[venueId];
+      if (cached != null && !cached.isExpired) {
+        return cached.enhancement;
       }
 
       final doc = await _firestore.collection(_collection).doc(venueId).get();
 
       if (!doc.exists) {
+        _cache.remove(venueId);
         return null;
       }
 
       final enhancement = VenueEnhancement.fromFirestore(doc.data()!, doc.id);
-      _cache[venueId] = enhancement;
+      _addToCache(venueId, enhancement);
       return enhancement;
     } catch (e) {
       LoggingService.error('Error getting venue enhancement: $e', tag: _logTag);
@@ -37,9 +51,33 @@ class VenueEnhancementService {
     }
   }
 
+  /// Add to cache with size limit enforcement
+  void _addToCache(String venueId, VenueEnhancement enhancement) {
+    // Evict expired entries first
+    _cache.removeWhere((_, entry) => entry.isExpired);
+
+    // If still at capacity, remove oldest entry
+    if (_cache.length >= _maxCacheSize) {
+      final oldest = _cache.entries
+          .reduce((a, b) => a.value.cachedAt.isBefore(b.value.cachedAt) ? a : b);
+      _cache.remove(oldest.key);
+    }
+
+    _cache[venueId] = _CacheEntry(enhancement);
+  }
+
   /// Save venue enhancement
   Future<bool> saveVenueEnhancement(VenueEnhancement enhancement) async {
     try {
+      final user = _auth.currentUser;
+      if (user == null || user.uid != enhancement.ownerId) {
+        LoggingService.warning(
+          'Ownership mismatch for venue ${enhancement.venueId}',
+          tag: _logTag,
+        );
+        return false;
+      }
+
       final updatedEnhancement = enhancement.copyWith(updatedAt: DateTime.now());
 
       await _firestore
@@ -47,7 +85,7 @@ class VenueEnhancementService {
           .doc(enhancement.venueId)
           .set(updatedEnhancement.toFirestore());
 
-      _cache[enhancement.venueId] = updatedEnhancement;
+      _addToCache(enhancement.venueId, updatedEnhancement);
 
       LoggingService.info(
         'Saved venue enhancement for ${enhancement.venueId}',
@@ -83,11 +121,15 @@ class VenueEnhancementService {
     }
   }
 
-  /// Check if a venue has already been claimed by any owner
+  /// Check if a venue has already been claimed by any owner.
+  /// Always queries Firestore directly (bypasses cache) to ensure fresh data.
   Future<bool> isVenueClaimed(String venueId) async {
     try {
-      final enhancement = await getVenueEnhancement(venueId);
-      return enhancement != null && enhancement.ownerId.isNotEmpty;
+      final doc = await _firestore.collection(_collection).doc(venueId).get();
+      if (!doc.exists) return false;
+      final data = doc.data();
+      final ownerId = data?['ownerId'] as String? ?? '';
+      return ownerId.isNotEmpty;
     } catch (e) {
       LoggingService.error('Error checking venue claim: $e', tag: _logTag);
       return false;
@@ -421,7 +463,7 @@ class VenueEnhancementService {
 
       // Cache results
       for (final e in enhancements) {
-        _cache[e.venueId] = e;
+        _addToCache(e.venueId, e);
       }
 
       return enhancements;
@@ -491,11 +533,12 @@ class VenueEnhancementService {
     try {
       final results = <String, VenueEnhancement>{};
 
-      // Check cache first
+      // Check cache first (with TTL)
       final uncachedIds = <String>[];
       for (final id in venueIds) {
-        if (_cache.containsKey(id)) {
-          results[id] = _cache[id]!;
+        final cached = _cache[id];
+        if (cached != null && !cached.isExpired) {
+          results[id] = cached.enhancement;
         } else {
           uncachedIds.add(id);
         }
@@ -523,7 +566,7 @@ class VenueEnhancementService {
           final enhancement =
               VenueEnhancement.fromFirestore(doc.data(), doc.id);
           results[doc.id] = enhancement;
-          _cache[doc.id] = enhancement;
+          _addToCache(doc.id, enhancement);
         }
       }
 
@@ -552,7 +595,7 @@ class VenueEnhancementService {
       if (!snapshot.exists) return null;
       final enhancement =
           VenueEnhancement.fromFirestore(snapshot.data()!, snapshot.id);
-      _cache[venueId] = enhancement;
+      _addToCache(venueId, enhancement);
       return enhancement;
     });
   }

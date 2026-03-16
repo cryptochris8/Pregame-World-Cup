@@ -4154,4 +4154,104 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get gameDetailsLocationNotAvailable =>
       'Données de localisation non disponibles pour la vue carte';
+
+  @override
+  String get invalidPhone => 'Veuillez entrer un numéro de téléphone valide';
+
+  @override
+  String get reviewInfoDesc =>
+      'Vérifiez vos informations avant de passer à la vérification téléphonique.';
+
+  @override
+  String get continueToVerification => 'Continuer la Vérification';
+
+  @override
+  String get nextStepPhoneHint =>
+      'Ensuite, nous vérifierons votre lien avec cet établissement par téléphone.';
+
+  @override
+  String get claimSubmitted => 'Demande Soumise';
+
+  @override
+  String get claimSubmittedDesc =>
+      'Votre demande a été vérifiée et est en attente de révision. Vous serez notifié une fois approuvée.';
+
+  @override
+  String get pendingReviewStatus => 'En Attente de Révision';
+
+  @override
+  String get doneButton => 'Terminé';
+
+  @override
+  String get showWorldCupMatches => 'Diffuser les Matchs de la Coupe du Monde';
+
+  @override
+  String get showsMatchesOnDesc =>
+      'Votre établissement est listé comme diffusant des matchs';
+
+  @override
+  String get showsMatchesOffDesc =>
+      'Activez pour apparaître dans les recherches de lieux diffusant des matchs';
+
+  @override
+  String get premiumVenue => 'Établissement Premium';
+
+  @override
+  String get freePlan => 'Plan Gratuit';
+
+  @override
+  String get allFeaturesUnlocked => 'Toutes les fonctionnalités débloquées';
+
+  @override
+  String get basicFeaturesOnly => 'Fonctionnalités de base uniquement';
+
+  @override
+  String get upgradeButton => 'Améliorer';
+
+  @override
+  String get upgradeToPremiumFeature =>
+      'Passez à Premium pour débloquer cette fonctionnalité';
+
+  @override
+  String get unlockPremiumFeatures => 'Débloquer les Fonctionnalités Premium';
+
+  @override
+  String get premiumFeaturesDesc =>
+      'Accédez aux fonctionnalités avancées comme la programmation des matchs, la configuration TV, les offres du jour de match et les mises à jour de capacité en temps réel.';
+
+  @override
+  String get premiumBadge => 'PREMIUM';
+
+  @override
+  String get phoneVerificationTitle => 'Vérification Téléphonique';
+
+  @override
+  String get phoneVerificationDesc =>
+      'Nous enverrons un code de vérification au téléphone de l\'établissement pour confirmer votre lien.';
+
+  @override
+  String get venuePhone => 'Téléphone de l\'Établissement';
+
+  @override
+  String get noPhoneProvided => 'Aucun numéro de téléphone fourni';
+
+  @override
+  String get submitClaimAndSendCode => 'Soumettre et Envoyer le Code';
+
+  @override
+  String get sendVerificationCode => 'Envoyer le Code de Vérification';
+
+  @override
+  String get sendingEllipsis => 'Envoi...';
+
+  @override
+  String get verificationCode => 'Code de Vérification';
+
+  @override
+  String digitCounter(int count) {
+    return '$count/6 chiffres';
+  }
+
+  @override
+  String get verifyCode => 'Vérifier le Code';
 }

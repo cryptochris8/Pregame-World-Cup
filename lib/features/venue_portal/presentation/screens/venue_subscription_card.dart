@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/venue_enhancement_state.dart';
 
 /// Card displaying the venue's current subscription status (Free or Premium)
@@ -17,6 +18,7 @@ class VenueSubscriptionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
     final isPremium = state.isPremium;
 
     return Card(
@@ -46,15 +48,15 @@ class VenueSubscriptionCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    isPremium ? 'Premium Venue' : 'Free Plan',
+                    isPremium ? l10n.premiumVenue : l10n.freePlan,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
                     isPremium
-                        ? 'All features unlocked'
-                        : 'Basic features only',
+                        ? l10n.allFeaturesUnlocked
+                        : l10n.basicFeaturesOnly,
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: colorScheme.onSurfaceVariant,
                     ),
@@ -65,7 +67,7 @@ class VenueSubscriptionCard extends StatelessWidget {
             if (!isPremium)
               FilledButton.tonal(
                 onPressed: onUpgrade,
-                child: const Text('Upgrade'),
+                child: Text(l10n.upgradeButton),
               ),
           ],
         ),

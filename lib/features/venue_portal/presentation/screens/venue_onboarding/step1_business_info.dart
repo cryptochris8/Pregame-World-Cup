@@ -71,7 +71,9 @@ class Step1BusinessInfo extends StatelessWidget {
               keyboardType: TextInputType.emailAddress,
               validator: (v) {
                 if (v == null || v.isEmpty) return l10n.fieldRequired;
-                if (!v.contains('@')) return l10n.invalidEmail;
+                if (!RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$').hasMatch(v)) {
+                  return l10n.invalidEmail;
+                }
                 return null;
               },
               onChanged: (_) => syncClaimInfo(cubit),
@@ -82,12 +84,18 @@ class Step1BusinessInfo extends StatelessWidget {
               label: l10n.contactPhone,
               icon: Icons.phone,
               keyboardType: TextInputType.phone,
+              validator: (v) {
+                if (v == null || v.isEmpty) return l10n.fieldRequired;
+                if (v.length < 10) return l10n.invalidPhone;
+                return null;
+              },
               onChanged: (_) => syncClaimInfo(cubit),
             ),
             const SizedBox(height: 32),
             NextButton(
               enabled: businessNameController.text.isNotEmpty &&
-                  emailController.text.contains('@'),
+                  RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$').hasMatch(emailController.text) &&
+                  phoneController.text.length >= 10,
               onPressed: () {
                 if (formKey.currentState!.validate()) {
                   syncClaimInfo(cubit);

@@ -24,6 +24,21 @@ functions.logger.info("Firestore instance obtained. Project ID from Admin SDK co
 // Google Places API key (set in .env.{project-id} or Cloud Functions environment)
 const PLACES_API_KEY = process.env.PLACES_API_KEY;
 
+// Allowed CORS origins
+const ALLOWED_ORIGINS = [
+  'https://pregame-b089e.web.app',
+  'https://pregame-b089e.firebaseapp.com',
+  'https://pregameworldcup.com',
+  'https://www.pregameworldcup.com',
+];
+
+function getCorsOrigin(requestOrigin: string | undefined): string {
+  if (requestOrigin && ALLOWED_ORIGINS.includes(requestOrigin)) {
+    return requestOrigin;
+  }
+  return ALLOWED_ORIGINS[0];
+}
+
 /**
  * Verify Firebase Auth ID token from Authorization header.
  * Returns the decoded token if valid, or null if missing/invalid.
@@ -54,8 +69,9 @@ if (!PLACES_API_KEY) {
 
 // Cloud Function to get nearby venues using Google Places API
 export const getNearbyVenuesHttp = functions.https.onRequest(async (request, response) => {
-  // Set CORS headers
-  response.set('Access-Control-Allow-Origin', '*');
+  // Set CORS headers (restricted to known origins)
+  const origin = getCorsOrigin(request.headers.origin);
+  response.set('Access-Control-Allow-Origin', origin);
   response.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   response.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
@@ -155,8 +171,9 @@ export const getNearbyVenuesHttp = functions.https.onRequest(async (request, res
 // Cloud Function to proxy Google Places photo requests (avoids CORS issues in browser)
 // Using v1 (Gen 1) functions for simpler deployment without Cloud Run container issues
 export const placePhotoProxy = functionsV1.https.onRequest(async (request, response) => {
-  // Set CORS headers
-  response.set('Access-Control-Allow-Origin', '*');
+  // Set CORS headers (restricted to known origins)
+  const origin = getCorsOrigin(request.headers.origin);
+  response.set('Access-Control-Allow-Origin', origin);
   response.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
   response.set('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -254,8 +271,7 @@ export {
 // Export Favorite Team Notification functions
 export {
   sendFavoriteTeamNotifications,
-  cleanupSentNotificationRecords,
-  testFavoriteTeamNotificationsHttp
+  cleanupSentNotificationRecords
 } from './favorite-team-notifications';
 
 // Export World Cup Payment functions

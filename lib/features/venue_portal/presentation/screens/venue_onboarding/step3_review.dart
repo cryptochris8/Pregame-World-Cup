@@ -29,7 +29,7 @@ class Step3Review extends StatelessWidget {
         children: [
           StepHeader(
             title: l10n.venueOnboardingStep3Title,
-            description: 'Review your information before proceeding to phone verification.',
+            description: l10n.reviewInfoDesc,
           ),
           const SizedBox(height: 24),
           // Summary card
@@ -74,14 +74,14 @@ class Step3Review extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               border: Border.all(color: const Color(0xFFF59E0B).withValues(alpha: 0.3)),
             ),
-            child: const Row(
+            child: Row(
               children: [
-                Icon(Icons.info_outline, color: Color(0xFFF59E0B), size: 20),
-                SizedBox(width: 8),
+                const Icon(Icons.info_outline, color: Color(0xFFF59E0B), size: 20),
+                const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    'Next, we\'ll verify your connection to this venue via phone.',
-                    style: TextStyle(color: Colors.white70, fontSize: 13),
+                    l10n.nextStepPhoneHint,
+                    style: const TextStyle(color: Colors.white70, fontSize: 13),
                   ),
                 ),
               ],
@@ -114,9 +114,9 @@ class Step3Review extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'Continue to Verification',
-                    style: TextStyle(
+                  child: Text(
+                    l10n.continueToVerification,
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),

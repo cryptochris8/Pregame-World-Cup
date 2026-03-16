@@ -195,6 +195,7 @@ void main() {
           claimInfo: VenueClaimInfo(
             businessName: 'My Bar',
             contactEmail: 'test@example.com',
+            contactPhone: '5551234567',
           ),
         );
         const stateInvalid = VenueOnboardingState(

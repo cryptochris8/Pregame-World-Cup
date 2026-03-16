@@ -427,12 +427,10 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
 
   Future<void> _resolveDispute(String disputeId, String resolution) async {
     try {
-      await FirebaseFirestore.instance
-          .collection('venue_disputes')
-          .doc(disputeId)
-          .update({
-        'status': resolution,
-        'resolvedAt': FieldValue.serverTimestamp(),
+      final callable = FirebaseFunctions.instance.httpsCallable('resolveVenueDispute');
+      await callable.call({
+        'disputeId': disputeId,
+        'resolution': resolution,
       });
 
       if (mounted) {

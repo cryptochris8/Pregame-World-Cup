@@ -667,7 +667,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get superfanPass => 'Pase Superfan';
 
   @override
-  String get upgradeToPremium => 'Actualizar a Premium';
+  String get upgradeToPremium => 'Mejorar a Premium';
 
   @override
   String get premiumFeatures => 'Funciones Premium';
@@ -4138,4 +4138,104 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get gameDetailsLocationNotAvailable =>
       'Datos de ubicación no disponibles para la vista del mapa';
+
+  @override
+  String get invalidPhone => 'Ingrese un número de teléfono válido';
+
+  @override
+  String get reviewInfoDesc =>
+      'Revise su información antes de continuar con la verificación telefónica.';
+
+  @override
+  String get continueToVerification => 'Continuar a Verificación';
+
+  @override
+  String get nextStepPhoneHint =>
+      'A continuación, verificaremos su conexión con este local por teléfono.';
+
+  @override
+  String get claimSubmitted => 'Solicitud Enviada';
+
+  @override
+  String get claimSubmittedDesc =>
+      'Su solicitud de local ha sido verificada y está pendiente de revisión. Se le notificará cuando sea aprobada.';
+
+  @override
+  String get pendingReviewStatus => 'Revisión Pendiente';
+
+  @override
+  String get doneButton => 'Listo';
+
+  @override
+  String get showWorldCupMatches => 'Mostrar Partidos del Mundial';
+
+  @override
+  String get showsMatchesOnDesc =>
+      'Su local aparece como que transmite partidos';
+
+  @override
+  String get showsMatchesOffDesc =>
+      'Active para aparecer en búsquedas de locales con partidos';
+
+  @override
+  String get premiumVenue => 'Local Premium';
+
+  @override
+  String get freePlan => 'Plan Gratuito';
+
+  @override
+  String get allFeaturesUnlocked => 'Todas las funciones desbloqueadas';
+
+  @override
+  String get basicFeaturesOnly => 'Solo funciones básicas';
+
+  @override
+  String get upgradeButton => 'Mejorar';
+
+  @override
+  String get upgradeToPremiumFeature =>
+      'Mejore a Premium para desbloquear esta función';
+
+  @override
+  String get unlockPremiumFeatures => 'Desbloquear Funciones Premium';
+
+  @override
+  String get premiumFeaturesDesc =>
+      'Obtenga funciones avanzadas como programación de partidos, configuración de TV, ofertas del día de juego y actualizaciones de capacidad en tiempo real.';
+
+  @override
+  String get premiumBadge => 'PREMIUM';
+
+  @override
+  String get phoneVerificationTitle => 'Verificación Telefónica';
+
+  @override
+  String get phoneVerificationDesc =>
+      'Enviaremos un código de verificación al teléfono del local para confirmar su conexión.';
+
+  @override
+  String get venuePhone => 'Teléfono del Local';
+
+  @override
+  String get noPhoneProvided => 'No se proporcionó número de teléfono';
+
+  @override
+  String get submitClaimAndSendCode => 'Enviar Solicitud y Código';
+
+  @override
+  String get sendVerificationCode => 'Enviar Código de Verificación';
+
+  @override
+  String get sendingEllipsis => 'Enviando...';
+
+  @override
+  String get verificationCode => 'Código de Verificación';
+
+  @override
+  String digitCounter(int count) {
+    return '$count/6 dígitos';
+  }
+
+  @override
+  String get verifyCode => 'Verificar Código';
 }

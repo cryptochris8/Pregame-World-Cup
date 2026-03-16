@@ -1,6 +1,7 @@
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
 import twilio from "twilio";
+import { randomInt } from "crypto";
 
 const db = admin.firestore();
 
@@ -28,6 +29,11 @@ export const claimVenue = functions.https.onCall(async (data: any, context: any)
   }
 
   try {
+    // Count user's existing claims BEFORE the transaction.
+    // This is a pre-check; the transaction ensures the venue isn't double-claimed.
+    // A user counter doc provides the authoritative limit enforcement.
+    const userClaimCountRef = db.collection("user_venue_claim_counts").doc(userId);
+
     const result = await db.runTransaction(async (transaction) => {
       // Check if venue is already claimed
       const venueRef = db.collection("venue_enhancements").doc(venueId);
@@ -43,13 +49,13 @@ export const claimVenue = functions.https.onCall(async (data: any, context: any)
         }
       }
 
-      // Count user's existing claims
-      const userClaimsSnapshot = await db
-        .collection("venue_enhancements")
-        .where("ownerId", "==", userId)
-        .get();
+      // Read user claim count inside the transaction for atomicity
+      const userClaimCountDoc = await transaction.get(userClaimCountRef);
+      const currentCount = userClaimCountDoc.exists
+        ? (userClaimCountDoc.data()?.count || 0)
+        : 0;
 
-      if (userClaimsSnapshot.size >= MAX_VENUES_PER_USER) {
+      if (currentCount >= MAX_VENUES_PER_USER) {
         throw new functions.https.HttpsError(
           "resource-exhausted",
           `You have reached the maximum of ${MAX_VENUES_PER_USER} venue claims.`
@@ -57,6 +63,21 @@ export const claimVenue = functions.https.onCall(async (data: any, context: any)
       }
 
       const now = admin.firestore.FieldValue.serverTimestamp();
+
+      // Atomically increment the user's claim count
+      if (userClaimCountDoc.exists) {
+        transaction.update(userClaimCountRef, {
+          count: admin.firestore.FieldValue.increment(1),
+          updatedAt: now,
+        });
+      } else {
+        transaction.set(userClaimCountRef, {
+          userId,
+          count: 1,
+          createdAt: now,
+          updatedAt: now,
+        });
+      }
 
       transaction.set(venueRef, {
         ownerId: userId,
@@ -139,8 +160,8 @@ export const sendVenueVerificationCode = functions.https.onCall(async (data: any
     }
   }
 
-  // Generate 6-digit code
-  const code = Math.floor(100000 + Math.random() * 900000).toString();
+  // Generate 6-digit code using cryptographically secure random number
+  const code = randomInt(100000, 1000000).toString();
   const now = new Date();
   const expiresAt = new Date(now.getTime() + VERIFICATION_CODE_TTL_MINUTES * 60 * 1000);
   const hourReset = codeDoc.exists && codeDoc.data()!.hourReset?.toDate() > now
@@ -305,11 +326,24 @@ export const reviewVenueClaim = functions.https.onCall(async (data: any, context
 
     functions.logger.info(`Venue ${venueId} claim approved by admin ${context.auth.uid}`);
   } else {
+    const rejectedOwnerId = venueData.ownerId;
     await venueRef.update({
       claimStatus: "rejected",
       ownerId: "",
       updatedAt: now,
     });
+
+    // Decrement the rejected user's claim count
+    if (rejectedOwnerId) {
+      const countRef = db.collection("user_venue_claim_counts").doc(rejectedOwnerId);
+      const countDoc = await countRef.get();
+      if (countDoc.exists && (countDoc.data()?.count || 0) > 0) {
+        await countRef.update({
+          count: admin.firestore.FieldValue.increment(-1),
+          updatedAt: now,
+        });
+      }
+    }
 
     functions.logger.info(`Venue ${venueId} claim rejected by admin ${context.auth.uid}`);
   }
@@ -371,4 +405,91 @@ export const submitVenueDispute = functions.https.onCall(async (data: any, conte
   functions.logger.info(`Venue dispute submitted for ${venueId} by user ${userId}`);
 
   return { success: true, message: "Dispute submitted for review." };
+});
+
+// =====================
+// resolveVenueDispute - Admin resolve a dispute with audit logging
+// =====================
+export const resolveVenueDispute = functions.https.onCall(async (data: any, context: any) => {
+  if (!context.auth) {
+    throw new functions.https.HttpsError("unauthenticated", "Must be logged in.");
+  }
+
+  // Admin check
+  if (!context.auth.token.admin) {
+    throw new functions.https.HttpsError("permission-denied", "Admin access required.");
+  }
+
+  const { disputeId, resolution, adminNotes } = data;
+
+  if (!disputeId || !resolution || !["upheld", "dismissed"].includes(resolution)) {
+    throw new functions.https.HttpsError(
+      "invalid-argument",
+      "Missing disputeId or invalid resolution. Must be 'upheld' or 'dismissed'."
+    );
+  }
+
+  const disputeRef = db.collection("venue_disputes").doc(disputeId);
+  const disputeDoc = await disputeRef.get();
+
+  if (!disputeDoc.exists) {
+    throw new functions.https.HttpsError("not-found", "Dispute not found.");
+  }
+
+  const disputeData = disputeDoc.data()!;
+  const now = admin.firestore.FieldValue.serverTimestamp();
+
+  // Update dispute status
+  await disputeRef.update({
+    status: resolution,
+    resolvedAt: now,
+    resolvedBy: context.auth.uid,
+    adminNotes: adminNotes || "",
+  });
+
+  // If upheld, revoke the current owner's claim
+  if (resolution === "upheld" && disputeData.venueId && disputeData.currentOwnerId) {
+    const venueRef = db.collection("venue_enhancements").doc(disputeData.venueId);
+    const venueDoc = await venueRef.get();
+
+    if (venueDoc.exists && venueDoc.data()?.ownerId === disputeData.currentOwnerId) {
+      await venueRef.update({
+        claimStatus: "rejected",
+        ownerId: "",
+        updatedAt: now,
+      });
+
+      // Decrement the revoked user's claim count
+      const countRef = db.collection("user_venue_claim_counts").doc(disputeData.currentOwnerId);
+      const countDoc = await countRef.get();
+      if (countDoc.exists && (countDoc.data()?.count || 0) > 0) {
+        await countRef.update({
+          count: admin.firestore.FieldValue.increment(-1),
+          updatedAt: now,
+        });
+      }
+
+      functions.logger.info(
+        `Venue ${disputeData.venueId} claim revoked from ${disputeData.currentOwnerId} due to upheld dispute`
+      );
+    }
+  }
+
+  // Log admin action
+  await db.collection("admin_logs").add({
+    action: `venue_dispute_${resolution}`,
+    disputeId,
+    venueId: disputeData.venueId || "",
+    adminId: context.auth.uid,
+    currentOwnerId: disputeData.currentOwnerId || "",
+    disputerId: disputeData.disputerId || "",
+    adminNotes: adminNotes || "",
+    timestamp: now,
+  });
+
+  functions.logger.info(
+    `Dispute ${disputeId} ${resolution} by admin ${context.auth.uid}`
+  );
+
+  return { success: true, resolution };
 });

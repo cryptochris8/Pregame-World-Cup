@@ -20,10 +20,15 @@ class VenueEnhancementCubit extends Cubit<VenueEnhancementState> {
     ));
 
     try {
-      var enhancement = await _service.getVenueEnhancement(venueId);
+      final enhancement = await _service.getVenueEnhancement(venueId);
 
-      // Create new enhancement if none exists
-      enhancement ??= await _service.createVenueEnhancement(venueId: venueId);
+      if (enhancement == null) {
+        emit(state.copyWith(
+          status: VenueEnhancementStatus.error,
+          errorMessage: 'Venue not claimed. Please complete onboarding first.',
+        ));
+        return;
+      }
 
       emit(state.copyWith(
         status: VenueEnhancementStatus.loaded,

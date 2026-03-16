@@ -1368,7 +1368,7 @@ abstract class AppLocalizations {
   /// **'Superfan Pass'**
   String get superfanPass;
 
-  /// Upgrade to premium button
+  /// Button label for premium upgrade
   ///
   /// In en, this message translates to:
   /// **'Upgrade to Premium'**
@@ -7505,6 +7505,186 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Location data not available for map view'**
   String get gameDetailsLocationNotAvailable;
+
+  /// Validation error for phone number field
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid phone number'**
+  String get invalidPhone;
+
+  /// Description for step 3 review screen
+  ///
+  /// In en, this message translates to:
+  /// **'Review your information before proceeding to phone verification.'**
+  String get reviewInfoDesc;
+
+  /// Button to proceed from review to verification
+  ///
+  /// In en, this message translates to:
+  /// **'Continue to Verification'**
+  String get continueToVerification;
+
+  /// Info hint about the next step being phone verification
+  ///
+  /// In en, this message translates to:
+  /// **'Next, we\'ll verify your connection to this venue via phone.'**
+  String get nextStepPhoneHint;
+
+  /// Title for pending review screen
+  ///
+  /// In en, this message translates to:
+  /// **'Claim Submitted'**
+  String get claimSubmitted;
+
+  /// Description on pending review screen
+  ///
+  /// In en, this message translates to:
+  /// **'Your venue claim has been verified and is now pending admin review. You\'ll be notified once your claim is approved.'**
+  String get claimSubmittedDesc;
+
+  /// Badge text for pending review status
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Review'**
+  String get pendingReviewStatus;
+
+  /// Done button label
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get doneButton;
+
+  /// Toggle title for showing matches at venue
+  ///
+  /// In en, this message translates to:
+  /// **'Show World Cup Matches'**
+  String get showWorldCupMatches;
+
+  /// Description when matches toggle is on
+  ///
+  /// In en, this message translates to:
+  /// **'Your venue is listed as showing matches'**
+  String get showsMatchesOnDesc;
+
+  /// Description when matches toggle is off
+  ///
+  /// In en, this message translates to:
+  /// **'Toggle on to appear in match venue searches'**
+  String get showsMatchesOffDesc;
+
+  /// Title for premium subscription card
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Venue'**
+  String get premiumVenue;
+
+  /// Title for free subscription card
+  ///
+  /// In en, this message translates to:
+  /// **'Free Plan'**
+  String get freePlan;
+
+  /// Subtitle for premium subscription
+  ///
+  /// In en, this message translates to:
+  /// **'All features unlocked'**
+  String get allFeaturesUnlocked;
+
+  /// Subtitle for free subscription
+  ///
+  /// In en, this message translates to:
+  /// **'Basic features only'**
+  String get basicFeaturesOnly;
+
+  /// Short upgrade button label
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade'**
+  String get upgradeButton;
+
+  /// Prompt to upgrade shown on locked features
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Premium to unlock this feature'**
+  String get upgradeToPremiumFeature;
+
+  /// Title for premium upgrade banner
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock Premium Features'**
+  String get unlockPremiumFeatures;
+
+  /// Description for premium upgrade banner
+  ///
+  /// In en, this message translates to:
+  /// **'Get advanced features like specific match scheduling, TV setup, game day specials, and real-time capacity updates.'**
+  String get premiumFeaturesDesc;
+
+  /// Badge text for premium features
+  ///
+  /// In en, this message translates to:
+  /// **'PREMIUM'**
+  String get premiumBadge;
+
+  /// Title for step 4 phone verification
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Verification'**
+  String get phoneVerificationTitle;
+
+  /// Description for step 4 phone verification
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ll send a verification code to the venue\'s phone number to confirm your connection to this venue.'**
+  String get phoneVerificationDesc;
+
+  /// Label for venue phone display
+  ///
+  /// In en, this message translates to:
+  /// **'Venue Phone'**
+  String get venuePhone;
+
+  /// Placeholder when no phone number is available
+  ///
+  /// In en, this message translates to:
+  /// **'No phone number provided'**
+  String get noPhoneProvided;
+
+  /// Button to submit claim and send verification code
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Claim & Send Code'**
+  String get submitClaimAndSendCode;
+
+  /// Button to send SMS verification code
+  ///
+  /// In en, this message translates to:
+  /// **'Send Verification Code'**
+  String get sendVerificationCode;
+
+  /// Button text while sending
+  ///
+  /// In en, this message translates to:
+  /// **'Sending...'**
+  String get sendingEllipsis;
+
+  /// Label for verification code input
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Code'**
+  String get verificationCode;
+
+  /// Digit counter below verification code input
+  ///
+  /// In en, this message translates to:
+  /// **'{count}/6 digits'**
+  String digitCounter(int count);
+
+  /// Button to verify the SMS code
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Code'**
+  String get verifyCode;
 }
 
 class _AppLocalizationsDelegate

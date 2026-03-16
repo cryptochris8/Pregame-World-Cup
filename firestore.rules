@@ -212,10 +212,11 @@ service cloud.firestore {
       allow update, delete: if isAuth() && request.auth.uid == resource.data.authorId;
     }
 
-    // Activity likes - auth read, auth create/delete
+    // Activity likes - auth read, own create/delete
     match /activity_likes/{likeId} {
       allow read: if isAuth();
-      allow create, delete: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
+      allow delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
     // Activity comments - auth read, auth create, own delete
@@ -312,8 +313,8 @@ service cloud.firestore {
 
     // User notifications - own data only
     match /notifications/{notificationId} {
-      allow read, write: if isAuth() && request.auth.uid == resource.data.userId;
-      allow create: if isAuth();
+      allow read, update, delete: if isAuth() && request.auth.uid == resource.data.userId;
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
     }
 
     // Internal notification collections - no client access (functions-only)
@@ -512,12 +513,11 @@ service cloud.firestore {
       allow read, write: if isAdmin();
     }
 
-    // User moderation status - own read, admin write, auth can increment report count
+    // User moderation status - own read, admin/Cloud Functions write only
+    // Report count incrementation is handled server-side via Cloud Functions (Admin SDK)
     match /user_moderation_status/{userId} {
       allow read: if isOwner(userId);
       allow read, write: if isAdmin();
-      allow update: if isAuth() &&
-        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['reportCount']);
     }
 
     // ==================== ADMIN ====================

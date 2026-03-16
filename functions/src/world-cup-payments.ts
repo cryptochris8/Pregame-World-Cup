@@ -307,16 +307,28 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
   const userEmail = context.auth.token.email || '';
 
   try {
-    // Check if venue already has premium
+    // Check if venue already has premium and verify ownership
     const venueEnhancement = await db.collection('venue_enhancements').doc(venueId).get();
     if (venueEnhancement.exists) {
       const data = venueEnhancement.data();
+      if (data?.ownerId && data.ownerId !== userId) {
+        throw new functions.https.HttpsError(
+          'permission-denied',
+          'You are not the owner of this venue'
+        );
+      }
       if (data?.subscriptionTier === 'premium') {
         throw new functions.https.HttpsError(
           'already-exists',
           'This venue already has Premium access'
         );
       }
+    } else {
+      // Venue must be claimed before purchasing premium
+      throw new functions.https.HttpsError(
+        'failed-precondition',
+        'Venue must be claimed before upgrading to Premium'
+      );
     }
 
     // Get or create Stripe customer

@@ -5254,5 +5254,135 @@
   "gameDetailsLocationNotAvailable": "Location data not available for map view",
   "@gameDetailsLocationNotAvailable": {
     "description": "Snackbar message when location data is missing"
+  },
+
+  "invalidPhone": "Please enter a valid phone number",
+  "@invalidPhone": {
+    "description": "Validation error for phone number field"
+  },
+  "reviewInfoDesc": "Review your information before proceeding to phone verification.",
+  "@reviewInfoDesc": {
+    "description": "Description for step 3 review screen"
+  },
+  "continueToVerification": "Continue to Verification",
+  "@continueToVerification": {
+    "description": "Button to proceed from review to verification"
+  },
+  "nextStepPhoneHint": "Next, we'll verify your connection to this venue via phone.",
+  "@nextStepPhoneHint": {
+    "description": "Info hint about the next step being phone verification"
+  },
+  "claimSubmitted": "Claim Submitted",
+  "@claimSubmitted": {
+    "description": "Title for pending review screen"
+  },
+  "claimSubmittedDesc": "Your venue claim has been verified and is now pending admin review. You'll be notified once your claim is approved.",
+  "@claimSubmittedDesc": {
+    "description": "Description on pending review screen"
+  },
+  "pendingReviewStatus": "Pending Review",
+  "@pendingReviewStatus": {
+    "description": "Badge text for pending review status"
+  },
+  "doneButton": "Done",
+  "@doneButton": {
+    "description": "Done button label"
+  },
+  "showWorldCupMatches": "Show World Cup Matches",
+  "@showWorldCupMatches": {
+    "description": "Toggle title for showing matches at venue"
+  },
+  "showsMatchesOnDesc": "Your venue is listed as showing matches",
+  "@showsMatchesOnDesc": {
+    "description": "Description when matches toggle is on"
+  },
+  "showsMatchesOffDesc": "Toggle on to appear in match venue searches",
+  "@showsMatchesOffDesc": {
+    "description": "Description when matches toggle is off"
+  },
+  "premiumVenue": "Premium Venue",
+  "@premiumVenue": {
+    "description": "Title for premium subscription card"
+  },
+  "freePlan": "Free Plan",
+  "@freePlan": {
+    "description": "Title for free subscription card"
+  },
+  "allFeaturesUnlocked": "All features unlocked",
+  "@allFeaturesUnlocked": {
+    "description": "Subtitle for premium subscription"
+  },
+  "basicFeaturesOnly": "Basic features only",
+  "@basicFeaturesOnly": {
+    "description": "Subtitle for free subscription"
+  },
+  "upgradeButton": "Upgrade",
+  "@upgradeButton": {
+    "description": "Short upgrade button label"
+  },
+  "upgradeToPremiumFeature": "Upgrade to Premium to unlock this feature",
+  "@upgradeToPremiumFeature": {
+    "description": "Prompt to upgrade shown on locked features"
+  },
+  "upgradeToPremium": "Upgrade to Premium",
+  "@upgradeToPremium": {
+    "description": "Button label for premium upgrade"
+  },
+  "unlockPremiumFeatures": "Unlock Premium Features",
+  "@unlockPremiumFeatures": {
+    "description": "Title for premium upgrade banner"
+  },
+  "premiumFeaturesDesc": "Get advanced features like specific match scheduling, TV setup, game day specials, and real-time capacity updates.",
+  "@premiumFeaturesDesc": {
+    "description": "Description for premium upgrade banner"
+  },
+  "premiumBadge": "PREMIUM",
+  "@premiumBadge": {
+    "description": "Badge text for premium features"
+  },
+  "phoneVerificationTitle": "Phone Verification",
+  "@phoneVerificationTitle": {
+    "description": "Title for step 4 phone verification"
+  },
+  "phoneVerificationDesc": "We'll send a verification code to the venue's phone number to confirm your connection to this venue.",
+  "@phoneVerificationDesc": {
+    "description": "Description for step 4 phone verification"
+  },
+  "venuePhone": "Venue Phone",
+  "@venuePhone": {
+    "description": "Label for venue phone display"
+  },
+  "noPhoneProvided": "No phone number provided",
+  "@noPhoneProvided": {
+    "description": "Placeholder when no phone number is available"
+  },
+  "submitClaimAndSendCode": "Submit Claim & Send Code",
+  "@submitClaimAndSendCode": {
+    "description": "Button to submit claim and send verification code"
+  },
+  "sendVerificationCode": "Send Verification Code",
+  "@sendVerificationCode": {
+    "description": "Button to send SMS verification code"
+  },
+  "sendingEllipsis": "Sending...",
+  "@sendingEllipsis": {
+    "description": "Button text while sending"
+  },
+  "verificationCode": "Verification Code",
+  "@verificationCode": {
+    "description": "Label for verification code input"
+  },
+  "digitCounter": "{count}/6 digits",
+  "@digitCounter": {
+    "description": "Digit counter below verification code input",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "verifyCode": "Verify Code",
+  "@verifyCode": {
+    "description": "Button to verify the SMS code"
   }
 }

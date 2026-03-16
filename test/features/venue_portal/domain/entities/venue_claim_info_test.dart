@@ -35,10 +35,11 @@ void main() {
     });
 
     group('isStep1Valid', () {
-      test('returns true when businessName and valid email provided', () {
+      test('returns true when businessName, valid email, and phone provided', () {
         const info = VenueClaimInfo(
           businessName: 'My Bar',
           contactEmail: 'test@example.com',
+          contactPhone: '5551234567',
         );
         expect(info.isStep1Valid, isTrue);
       });
@@ -47,6 +48,7 @@ void main() {
         const info = VenueClaimInfo(
           businessName: '',
           contactEmail: 'test@example.com',
+          contactPhone: '5551234567',
         );
         expect(info.isStep1Valid, isFalse);
       });
@@ -55,6 +57,7 @@ void main() {
         const info = VenueClaimInfo(
           businessName: 'My Bar',
           contactEmail: '',
+          contactPhone: '5551234567',
         );
         expect(info.isStep1Valid, isFalse);
       });
@@ -63,16 +66,27 @@ void main() {
         const info = VenueClaimInfo(
           businessName: 'My Bar',
           contactEmail: 'notanemail',
+          contactPhone: '5551234567',
         );
         expect(info.isStep1Valid, isFalse);
       });
 
-      test('returns true when both businessName and email with @ are provided', () {
+      test('returns false when contactEmail has no dot after @', () {
         const info = VenueClaimInfo(
           businessName: 'Venue Name',
           contactEmail: 'user@domain',
+          contactPhone: '5551234567',
         );
-        expect(info.isStep1Valid, isTrue);
+        expect(info.isStep1Valid, isFalse);
+      });
+
+      test('returns false when contactPhone is empty', () {
+        const info = VenueClaimInfo(
+          businessName: 'My Bar',
+          contactEmail: 'test@example.com',
+          contactPhone: '',
+        );
+        expect(info.isStep1Valid, isFalse);
       });
     });
 

@@ -134,20 +134,32 @@ Go to **Product catalog** → **Offerings** → **+ New**
 
 ---
 
-## Step 7: Update Code with API Keys
+## Step 7: Add API Keys to Codemagic Vault
 
-Once you have the API keys, update `lib/services/revenuecat_service.dart`:
+API keys are loaded from environment variables at build time (not hardcoded in code).
+See `lib/config/api_keys.dart` — keys come from `String.fromEnvironment()`.
 
-```dart
-// Replace these with your actual keys from RevenueCat dashboard
-static const String _iosApiKey = 'appl_YOUR_IOS_KEY_HERE';
-static const String _androidApiKey = 'goog_YOUR_ANDROID_KEY_HERE';
+### Add to Codemagic:
+1. Go to [Codemagic](https://codemagic.io) → Your App → **Environment variables**
+2. Add these variables (mark as **Secure**):
+
+| Variable | Value | Example |
+|----------|-------|---------|
+| `REVENUECAT_IOS_API_KEY` | Your iOS key from Step 2 | `appl_AbCdEfGhIjKl...` |
+| `REVENUECAT_ANDROID_API_KEY` | Your Android key from Step 3 | `goog_AbCdEfGhIjKl...` |
+
+3. The `codemagic.yaml` already passes these via `--dart-define` at build time
+4. The app validates keys on startup — empty or `test_` prefixed keys are treated as "not configured"
+
+### For Local Testing:
+Run with `--dart-define` flags:
+```bash
+flutter run --dart-define=REVENUECAT_IOS_API_KEY=appl_YOUR_KEY
 ```
 
-For testing only, you can use the Test Store key:
-```dart
-static const String _iosApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
-static const String _androidApiKey = 'test_MFlhygrdunfDNFjjvGIVMCMlnwe';
+Or use the test store key (will show as "not configured" in production checks):
+```bash
+flutter run --dart-define=REVENUECAT_IOS_API_KEY=test_MFlhygrdunfDNFjjvGIVMCMlnwe
 ```
 
 ---

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../l10n/app_localizations.dart';
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
 
@@ -17,6 +18,7 @@ class ShowsMatchesToggle extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
 
     return Card(
       child: Padding(
@@ -35,15 +37,15 @@ class ShowsMatchesToggle extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Show World Cup Matches',
+                    l10n.showWorldCupMatches,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.w600,
                     ),
                   ),
                   Text(
                     state.showsMatches
-                        ? 'Your venue is listed as showing matches'
-                        : 'Toggle on to appear in match venue searches',
+                        ? l10n.showsMatchesOnDesc
+                        : l10n.showsMatchesOffDesc,
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: colorScheme.onSurfaceVariant,
                     ),

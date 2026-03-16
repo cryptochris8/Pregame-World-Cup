@@ -4074,4 +4074,103 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get gameDetailsLocationNotAvailable =>
       'Location data not available for map view';
+
+  @override
+  String get invalidPhone => 'Please enter a valid phone number';
+
+  @override
+  String get reviewInfoDesc =>
+      'Review your information before proceeding to phone verification.';
+
+  @override
+  String get continueToVerification => 'Continue to Verification';
+
+  @override
+  String get nextStepPhoneHint =>
+      'Next, we\'ll verify your connection to this venue via phone.';
+
+  @override
+  String get claimSubmitted => 'Claim Submitted';
+
+  @override
+  String get claimSubmittedDesc =>
+      'Your venue claim has been verified and is now pending admin review. You\'ll be notified once your claim is approved.';
+
+  @override
+  String get pendingReviewStatus => 'Pending Review';
+
+  @override
+  String get doneButton => 'Done';
+
+  @override
+  String get showWorldCupMatches => 'Show World Cup Matches';
+
+  @override
+  String get showsMatchesOnDesc => 'Your venue is listed as showing matches';
+
+  @override
+  String get showsMatchesOffDesc =>
+      'Toggle on to appear in match venue searches';
+
+  @override
+  String get premiumVenue => 'Premium Venue';
+
+  @override
+  String get freePlan => 'Free Plan';
+
+  @override
+  String get allFeaturesUnlocked => 'All features unlocked';
+
+  @override
+  String get basicFeaturesOnly => 'Basic features only';
+
+  @override
+  String get upgradeButton => 'Upgrade';
+
+  @override
+  String get upgradeToPremiumFeature =>
+      'Upgrade to Premium to unlock this feature';
+
+  @override
+  String get unlockPremiumFeatures => 'Unlock Premium Features';
+
+  @override
+  String get premiumFeaturesDesc =>
+      'Get advanced features like specific match scheduling, TV setup, game day specials, and real-time capacity updates.';
+
+  @override
+  String get premiumBadge => 'PREMIUM';
+
+  @override
+  String get phoneVerificationTitle => 'Phone Verification';
+
+  @override
+  String get phoneVerificationDesc =>
+      'We\'ll send a verification code to the venue\'s phone number to confirm your connection to this venue.';
+
+  @override
+  String get venuePhone => 'Venue Phone';
+
+  @override
+  String get noPhoneProvided => 'No phone number provided';
+
+  @override
+  String get submitClaimAndSendCode => 'Submit Claim & Send Code';
+
+  @override
+  String get sendVerificationCode => 'Send Verification Code';
+
+  @override
+  String get sendingEllipsis => 'Sending...';
+
+  @override
+  String get verificationCode => 'Verification Code';
+
+  @override
+  String digitCounter(int count) {
+    return '$count/6 digits';
+  }
+
+  @override
+  String get verifyCode => 'Verify Code';
 }

@@ -164,18 +164,13 @@ void main() {
       );
 
       // =========================================================================
-      // 3. loadEnhancement - creates new when none exists
+      // 3. loadEnhancement - emits error when none exists (no auto-creation)
       // =========================================================================
       blocTest<VenueEnhancementCubit, VenueEnhancementState>(
-        'creates new enhancement when none exists',
+        'emits error when no enhancement exists (requires onboarding first)',
         build: () {
-          final newEnhancement = createTestEnhancement(
-            subscriptionTier: SubscriptionTier.free,
-          );
           when(() => mockService.getVenueEnhancement('venue_1'))
               .thenAnswer((_) async => null);
-          when(() => mockService.createVenueEnhancement(venueId: 'venue_1'))
-              .thenAnswer((_) async => newEnhancement);
           return cubit;
         },
         act: (cubit) => cubit.loadEnhancement('venue_1'),
@@ -183,16 +178,16 @@ void main() {
           // Loading
           isA<VenueEnhancementState>().having(
               (s) => s.status, 'status', VenueEnhancementStatus.loading),
-          // Loaded with newly created enhancement
+          // Error - venue not claimed
           isA<VenueEnhancementState>()
               .having(
-                  (s) => s.status, 'status', VenueEnhancementStatus.loaded)
-              .having((s) => s.enhancement, 'enhancement', isNotNull),
+                  (s) => s.status, 'status', VenueEnhancementStatus.error)
+              .having((s) => s.errorMessage, 'errorMessage',
+                  contains('not claimed')),
         ],
         verify: (_) {
           verify(() => mockService.getVenueEnhancement('venue_1')).called(1);
-          verify(() => mockService.createVenueEnhancement(venueId: 'venue_1'))
-              .called(1);
+          verifyNever(() => mockService.createVenueEnhancement(venueId: any(named: 'venueId')));
         },
       );
 

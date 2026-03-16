@@ -658,7 +658,7 @@ describe('HTTP Functions', () => {
 
       await getNearbyVenuesHttp(req, res);
 
-      expect(res._headers['Access-Control-Allow-Origin']).toBe('*');
+      expect(res._headers['Access-Control-Allow-Origin']).toBe('https://pregame-b089e.web.app');
       expect(res._headers['Access-Control-Allow-Methods']).toBe('GET, POST, OPTIONS');
       expect(res._headers['Access-Control-Allow-Headers']).toBe('Content-Type, Authorization');
     });
@@ -1102,7 +1102,7 @@ describe('HTTP Functions', () => {
 
       await placePhotoProxy(req, res);
 
-      expect(res._headers['Access-Control-Allow-Origin']).toBe('*');
+      expect(res._headers['Access-Control-Allow-Origin']).toBe('https://pregame-b089e.web.app');
       expect(res._headers['Access-Control-Allow-Methods']).toBe('GET, OPTIONS');
     });
   });
