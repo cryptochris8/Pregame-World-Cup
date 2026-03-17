@@ -129,21 +129,33 @@ class _VenueMapScreenState extends State<VenueMapScreen>
               bottom: 100,
               left: 16,
               right: 16,
-              child: VenueMapInfoCard(
-                venue: _selectedVenue!,
-                onDetailsPressed: () => _navigateToVenueDetails(_selectedVenue!),
-                onDirectionsPressed: () => _showDirectionsToVenue(_selectedVenue!),
-                onCallPressed: () => _callVenue(_selectedVenue!),
-                onClose: () => setState(() => _selectedVenue = null),
+              child: Builder(
+                builder: (context) {
+                  final venue = _selectedVenue;
+                  if (venue == null) return const SizedBox.shrink();
+                  return VenueMapInfoCard(
+                    venue: venue,
+                    onDetailsPressed: () => _navigateToVenueDetails(venue),
+                    onDirectionsPressed: () => _showDirectionsToVenue(venue),
+                    onCallPressed: () => _callVenue(venue),
+                    onClose: () => setState(() => _selectedVenue = null),
+                  );
+                },
               ),
             ),
 
           // Route panel (when showing route)
-          if (_showRoutePanel)
-            VenueRoutePanel(
-              venue: _selectedVenue!,
-              stadiumLocation: widget.stadiumLocation,
-              onClose: () => setState(() => _showRoutePanel = false),
+          if (_showRoutePanel && _selectedVenue != null)
+            Builder(
+              builder: (context) {
+                final venue = _selectedVenue;
+                if (venue == null) return const SizedBox.shrink();
+                return VenueRoutePanel(
+                  venue: venue,
+                  stadiumLocation: widget.stadiumLocation,
+                  onClose: () => setState(() => _showRoutePanel = false),
+                );
+              },
             ),
 
           // Bottom controls
@@ -172,11 +184,12 @@ class _VenueMapScreenState extends State<VenueMapScreen>
     final Set<Marker> markers = {};
 
     // Add stadium marker if available
-    if (widget.stadiumLocation != null) {
+    final stadiumLocation = widget.stadiumLocation;
+    if (stadiumLocation != null) {
       final l10n = AppLocalizations.of(context);
       markers.add(Marker(
         markerId: const MarkerId('stadium'),
-        position: widget.stadiumLocation!,
+        position: stadiumLocation,
         icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
         infoWindow: InfoWindow(
           title: l10n.venueStadium,
@@ -251,22 +264,25 @@ class _VenueMapScreenState extends State<VenueMapScreen>
 
     snippetParts.add(category.displayName);
 
-    if (venue.rating != null) {
-      snippetParts.add(venue.rating!.toStringAsFixed(1));
+    final rating = venue.rating;
+    if (rating != null) {
+      snippetParts.add(rating.toStringAsFixed(1));
     }
 
-    if (venue.priceLevel != null && venue.priceLevel! > 0) {
-      snippetParts.add('\$' * venue.priceLevel!);
+    final priceLevel = venue.priceLevel;
+    if (priceLevel != null && priceLevel > 0) {
+      snippetParts.add('\$' * priceLevel);
     }
 
-    if (widget.stadiumLocation != null) {
+    final stadiumLocation = widget.stadiumLocation;
+    if (stadiumLocation != null) {
       final lat = venue.latitude ?? venue.geometry?.location?.lat;
       final lng = venue.longitude ?? venue.geometry?.location?.lng;
 
       if (lat != null && lng != null) {
         final distance = VenueRecommendationService.calculateWalkingDistance(
-          widget.stadiumLocation!.latitude,
-          widget.stadiumLocation!.longitude,
+          stadiumLocation.latitude,
+          stadiumLocation.longitude,
           lat,
           lng,
         );
@@ -279,7 +295,8 @@ class _VenueMapScreenState extends State<VenueMapScreen>
   }
 
   void _createDistanceRings() {
-    if (!_showDistanceRings || widget.stadiumLocation == null) {
+    final stadiumLocation = widget.stadiumLocation;
+    if (!_showDistanceRings || stadiumLocation == null) {
       if (mounted) {
         setState(() {
           _circles = {};
@@ -300,7 +317,7 @@ class _VenueMapScreenState extends State<VenueMapScreen>
     for (int i = 0; i < distances.length; i++) {
       circles.add(Circle(
         circleId: CircleId('ring_$i'),
-        center: widget.stadiumLocation!,
+        center: stadiumLocation,
         radius: distances[i] * 1609.34,
         strokeColor: colors[i].withValues(alpha:0.5),
         strokeWidth: 2,
@@ -323,11 +340,12 @@ class _VenueMapScreenState extends State<VenueMapScreen>
     double minLng = double.infinity;
     double maxLng = -double.infinity;
 
-    if (widget.stadiumLocation != null) {
-      minLat = math.min(minLat, widget.stadiumLocation!.latitude);
-      maxLat = math.max(maxLat, widget.stadiumLocation!.latitude);
-      minLng = math.min(minLng, widget.stadiumLocation!.longitude);
-      maxLng = math.max(maxLng, widget.stadiumLocation!.longitude);
+    final stadiumLocation = widget.stadiumLocation;
+    if (stadiumLocation != null) {
+      minLat = math.min(minLat, stadiumLocation.latitude);
+      maxLat = math.max(maxLat, stadiumLocation.latitude);
+      minLng = math.min(minLng, stadiumLocation.longitude);
+      maxLng = math.max(maxLng, stadiumLocation.longitude);
     }
 
     for (final venue in _filteredVenues) {
@@ -401,17 +419,21 @@ class _VenueMapScreenState extends State<VenueMapScreen>
   }
 
   void _zoomToFitAllMarkers() {
-    if (_mapBounds != null && _mapController != null) {
-      _mapController!.animateCamera(
-        CameraUpdate.newLatLngBounds(_mapBounds!, 50.0),
+    final mapBounds = _mapBounds;
+    final mapController = _mapController;
+    if (mapBounds != null && mapController != null) {
+      mapController.animateCamera(
+        CameraUpdate.newLatLngBounds(mapBounds, 50.0),
       );
     }
   }
 
   void _focusOnStadium() {
-    if (widget.stadiumLocation != null && _mapController != null) {
-      _mapController!.animateCamera(
-        CameraUpdate.newLatLngZoom(widget.stadiumLocation!, 16.0),
+    final stadiumLocation = widget.stadiumLocation;
+    final mapController = _mapController;
+    if (stadiumLocation != null && mapController != null) {
+      mapController.animateCamera(
+        CameraUpdate.newLatLngZoom(stadiumLocation, 16.0),
       );
     }
   }

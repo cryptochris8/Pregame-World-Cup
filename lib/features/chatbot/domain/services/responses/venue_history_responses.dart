@@ -1,0 +1,146 @@
+import '../../../data/services/chatbot_knowledge_base.dart';
+import '../../entities/chat_intent.dart';
+import '../../entities/chat_response.dart';
+import 'response_format_helpers.dart';
+
+/// Handles generation of venue and history-related chatbot responses.
+///
+/// This includes venue information and tournament history.
+class VenueHistoryResponses {
+  /// The knowledge base containing tournament data.
+  final ChatbotKnowledgeBase _kb;
+
+  /// Creates a [VenueHistoryResponses] instance.
+  const VenueHistoryResponses(this._kb);
+
+  /// Generates venue information response.
+  ChatResponse venue(ChatIntent intent) {
+    final venueName = intent.venue;
+
+    if (venueName != null) {
+      final matches = _kb.getVenueMatches(venueName);
+      final buf = StringBuffer('$venueName\n\n');
+
+      if (matches.isNotEmpty) {
+        final city = matches.first['venueCity'] as String? ?? '';
+        if (city.isNotEmpty) buf.writeln('Location: $city');
+        buf.writeln('Matches scheduled: ${matches.length}');
+        buf.writeln();
+
+        for (final m in matches.take(5)) {
+          final date = formatDate(m['date'] as String? ?? '');
+          final home = m['homeTeamName'] ?? '';
+          final away = m['awayTeamName'] ?? '';
+          final stage = m['stage'] as String? ?? '';
+          final stageLabel = stage == 'groupStage' ? 'Group ${m['group']}' : stage;
+          buf.writeln('- $date: $home vs $away ($stageLabel)');
+        }
+        if (matches.length > 5) {
+          buf.writeln('...and ${matches.length - 5} more');
+        }
+      } else {
+        buf.writeln('No match data found for this venue.');
+      }
+
+      return ChatResponse(
+        text: buf.toString().trim(),
+        suggestionChips: ['All venues', 'Tournament schedule'],
+        resolvedIntent: intent,
+      );
+    }
+
+    // List all venues
+    final venues = _kb.getAllVenues();
+    final buf = StringBuffer('World Cup 2026 — 16 Host Venues:\n\n');
+    for (final v in venues) {
+      // Get city from first match at this venue
+      final matches = _kb.getVenueMatches(v);
+      final city = matches.isNotEmpty ? (matches.first['venueCity'] ?? '') : '';
+      buf.writeln('- $v${city.isNotEmpty ? ' ($city)' : ''} — ${matches.length} matches');
+    }
+
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: ['MetLife Stadium', 'SoFi Stadium', 'Estadio Azteca'],
+      resolvedIntent: intent,
+    );
+  }
+
+  /// Generates tournament history response.
+  ChatResponse history(ChatIntent intent) {
+    final yearStr = intent.year;
+
+    if (yearStr != null) {
+      final year = int.tryParse(yearStr);
+      if (year != null) {
+        final tournament = _kb.getTournamentByYear(year);
+        if (tournament != null) {
+          final buf = StringBuffer('World Cup $year — ${tournament['hostCountries']}\n\n');
+          buf.writeln('Winner: ${tournament['winner']}');
+          buf.writeln('Runner-up: ${tournament['runnerUp']}');
+          if (tournament['thirdPlace'] != null) {
+            buf.writeln('Third place: ${tournament['thirdPlace']}');
+          }
+          buf.writeln('Final: ${tournament['finalScore']} at ${tournament['finalVenue']}, ${tournament['finalCity']}');
+          buf.writeln('Top scorer: ${tournament['topScorer']} (${tournament['topScorerGoals']} goals)');
+          buf.writeln('Total matches: ${tournament['totalMatches']} | Goals: ${tournament['totalGoals']}');
+
+          final highlights = tournament['highlights'] as List<dynamic>?;
+          if (highlights != null && highlights.isNotEmpty) {
+            buf.writeln();
+            buf.writeln('Highlights:');
+            for (final h in highlights.take(3)) {
+              buf.writeln('- $h');
+            }
+          }
+
+          // Suggest adjacent tournaments
+          final chips = <String>[];
+          if (year > 1930) chips.add('World Cup ${year - 4}');
+          if (year < 2022) chips.add('World Cup ${year + 4}');
+          chips.add('World Cup records');
+
+          return ChatResponse(
+            text: buf.toString().trim(),
+            suggestionChips: chips,
+            resolvedIntent: intent,
+          );
+        }
+      }
+    }
+
+    // General history / records
+    final records = _kb.getRecords();
+    if (records.isEmpty) {
+      return ChatResponse(
+        text: "I have World Cup history from 1930 to 2022. Ask about a specific year "
+            "(e.g. \"World Cup 2022\") or World Cup records!",
+        suggestionChips: ['World Cup 2022', 'World Cup 2018', 'World Cup records'],
+        resolvedIntent: intent,
+      );
+    }
+
+    final buf = StringBuffer('World Cup Records & History:\n\n');
+    for (final r in records.take(8)) {
+      buf.writeln('${r['category']}: ${r['holder']} (${r['value']})');
+      if (r['details'] != null) buf.writeln('  ${r['details']}');
+    }
+
+    // Recent winners
+    final recentTournaments = _kb.getAllTournaments();
+    if (recentTournaments.isNotEmpty) {
+      buf.writeln();
+      buf.writeln('Recent winners:');
+      final recent = recentTournaments.reversed.take(5).toList();
+      for (final t in recent) {
+        buf.writeln('  ${t['year']}: ${t['winner']}');
+      }
+    }
+
+    return ChatResponse(
+      text: buf.toString().trim(),
+      suggestionChips: ['World Cup 2022', 'World Cup 2018', 'Most goals all time'],
+      resolvedIntent: intent,
+    );
+  }
+}

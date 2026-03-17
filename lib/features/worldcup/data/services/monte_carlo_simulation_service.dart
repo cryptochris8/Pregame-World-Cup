@@ -2,6 +2,9 @@ import 'dart:math' as math;
 
 import '../../domain/entities/entities.dart';
 import '../mock/world_cup_mock_data.dart';
+import 'simulation/simulation_models.dart';
+import 'simulation/simulation_match_engine.dart';
+import 'simulation/simulation_bracket_builder.dart';
 
 /// Result of a full tournament Monte Carlo simulation.
 ///
@@ -144,18 +147,6 @@ class MonteCarloSimulationService {
   /// Default number of simulations to run.
   static const int defaultSimulations = 10000;
 
-  /// Elo scaling factor. A 400-point difference gives ~91% win expectancy.
-  static const double _eloK = 400.0;
-
-  /// Base draw probability for group stage matches.
-  static const double _baseDrawProb = 0.24;
-
-  /// Home advantage boost (Elo points equivalent) for host nations.
-  static const double _hostAdvantage = 60.0;
-
-  /// Host nation FIFA codes for 2026.
-  static const _hostNations = {'USA', 'MEX', 'CAN'};
-
   /// Pre-computed Elo ratings for all 48 teams, derived from FIFA rankings.
   late final Map<String, double> _eloRatings;
 
@@ -167,6 +158,12 @@ class MonteCarloSimulationService {
 
   /// All teams indexed by FIFA code.
   late final Map<String, NationalTeam> _teamsByCode;
+
+  /// Match engine for simulating individual matches.
+  late final SimulationMatchEngine _matchEngine;
+
+  /// Bracket builder for constructing knockout brackets.
+  late final SimulationBracketBuilder _bracketBuilder;
 
   bool _isInitialized = false;
 
@@ -190,6 +187,13 @@ class MonteCarloSimulationService {
       }
     }
 
+    // Initialize match engine and bracket builder
+    _matchEngine = SimulationMatchEngine(_eloRatings);
+    _bracketBuilder = SimulationBracketBuilder(
+      _teamsByCode.keys.toSet(),
+      _matchEngine,
+    );
+
     _isInitialized = true;
   }
 
@@ -205,48 +209,49 @@ class MonteCarloSimulationService {
     return 2200.0 - 400.0 * math.log(r) / math.log(50);
   }
 
-  /// Compute the expected win probability for teamA vs teamB using Elo.
+  /// Compute match probabilities between two teams.
   ///
-  /// Returns a map with keys 'homeWin', 'draw', 'awayWin' summing to 1.0.
-  /// [isKnockout] reduces draw probability (draws resolved via penalties).
+  /// Returns a map with keys 'homeWin', 'draw', 'awayWin' representing
+  /// the probabilities of each outcome.
+  ///
+  /// If [isKnockout] is true, the draw probability is reduced (since knockout
+  /// matches are more likely to be decided in regulation).
+  ///
+  /// Delegates to the match engine for base computation.
   Map<String, double> computeMatchProbabilities(
     String teamACode,
     String teamBCode, {
     bool isKnockout = false,
   }) {
-    final eloA = _eloRatings[teamACode] ?? 1500.0;
-    final eloB = _eloRatings[teamBCode] ?? 1500.0;
-
-    // Apply host advantage
-    final adjustedA = eloA + (_hostNations.contains(teamACode) ? _hostAdvantage : 0);
-    final adjustedB = eloB + (_hostNations.contains(teamBCode) ? _hostAdvantage : 0);
-
-    // Standard Elo expected score
-    final diff = adjustedA - adjustedB;
-    final expectedA = 1.0 / (1.0 + math.pow(10, -diff / _eloK));
-
-    // Split into win/draw/away using the draw bridge model
-    double drawProb = _baseDrawProb * (1.0 - 0.5 * (expectedA - 0.5).abs());
-    if (isKnockout) {
-      drawProb *= 0.4; // Knockouts rarely go to penalties in simulation terms
+    if (!_isInitialized) {
+      throw StateError('Service must be initialized before computing probabilities');
     }
-    drawProb = drawProb.clamp(0.03, 0.35);
 
-    var homeWin = expectedA - drawProb / 2.0;
-    var awayWin = (1.0 - expectedA) - drawProb / 2.0;
+    final probs = _matchEngine.computeMatchProbabilities(teamACode, teamBCode);
 
-    // Clamp and renormalize
-    homeWin = homeWin.clamp(0.03, 0.94);
-    awayWin = awayWin.clamp(0.03, 0.94);
-    drawProb = drawProb.clamp(0.03, 0.94);
+    var homeWin = probs['win']!;
+    var draw = probs['draw']!;
+    var awayWin = probs['loss']!;
 
-    final total = homeWin + drawProb + awayWin;
+    // Reduce draw probability for knockout matches
+    if (isKnockout) {
+      draw *= 0.4; // Reduce draw probability by 60%
+      // Redistribute to win/loss proportionally
+      final remaining = homeWin + awayWin;
+      final redistribution = (probs['draw']! - draw);
+      homeWin += redistribution * (homeWin / remaining);
+      awayWin += redistribution * (awayWin / remaining);
+    }
+
+    // Renormalize to ensure sum = 1.0
+    final total = homeWin + draw + awayWin;
     return {
       'homeWin': homeWin / total,
-      'draw': drawProb / total,
+      'draw': draw / total,
       'awayWin': awayWin / total,
     };
   }
+
 
   /// Run a full Monte Carlo tournament simulation.
   ///
@@ -289,13 +294,9 @@ class MonteCarloSimulationService {
       totalGroupPoints[code] = 0;
     }
 
-    // Pre-compute all pairwise probabilities for efficiency
-    final pairwiseProbs = _precomputePairwiseProbs();
-
     for (int sim = 0; sim < simulations; sim++) {
       _runSingleSimulation(
         rng: rng,
-        pairwiseProbs: pairwiseProbs,
         groupWinnerCount: groupWinnerCount,
         reachedR32: reachedR32,
         reachedR16: reachedR16,
@@ -342,42 +343,9 @@ class MonteCarloSimulationService {
     );
   }
 
-  /// Pre-compute win/draw/loss probabilities for every possible team pairing.
-  ///
-  /// Returns a nested map: pairwiseProbs[teamA][teamB] = {'homeWin', 'draw', 'awayWin'}.
-  /// Both orderings are stored for O(1) lookup during simulation.
-  Map<String, Map<String, Map<String, double>>> _precomputePairwiseProbs() {
-    final codes = _teamsByCode.keys.toList();
-    final result = <String, Map<String, Map<String, double>>>{};
-
-    for (final code in codes) {
-      result[code] = {};
-    }
-
-    for (int i = 0; i < codes.length; i++) {
-      for (int j = i + 1; j < codes.length; j++) {
-        final a = codes[i];
-        final b = codes[j];
-
-        // Group stage probabilities (with draws)
-        final groupProbs = computeMatchProbabilities(a, b, isKnockout: false);
-        result[a]![b] = groupProbs;
-        // Reverse for b vs a
-        result[b]![a] = {
-          'homeWin': groupProbs['awayWin']!,
-          'draw': groupProbs['draw']!,
-          'awayWin': groupProbs['homeWin']!,
-        };
-      }
-    }
-
-    return result;
-  }
-
   /// Run a single tournament simulation, updating all accumulator maps.
   void _runSingleSimulation({
     required math.Random rng,
-    required Map<String, Map<String, Map<String, double>>> pairwiseProbs,
     required Map<String, int> groupWinnerCount,
     required Map<String, int> reachedR32,
     required Map<String, int> reachedR16,
@@ -388,51 +356,47 @@ class MonteCarloSimulationService {
     required Map<String, double> totalGroupPoints,
   }) {
     // --- Phase 1: Group Stage ---
-    final groupWinners = <String, String>{}; // group -> 1st place code
-    final groupRunners = <String, String>{}; // group -> 2nd place code
-    final thirdPlaceTeams = <_ThirdPlaceEntry>[];
+    final groupStandings = _matchEngine.simulateGroupStage(_groups, rng);
 
-    for (final entry in _groups.entries) {
+    final groupWinners = <String, String>{};
+    final groupRunners = <String, String>{};
+    final thirdPlaceTeams = <ThirdPlaceEntry>[];
+
+    for (final entry in groupStandings.entries) {
       final group = entry.key;
-      final teamCodes = entry.value;
-      if (teamCodes.length < 2) continue;
-
-      final standings = _simulateGroupStage(teamCodes, rng, pairwiseProbs);
+      final standings = entry.value;
 
       // Accumulate group points
       for (final standing in standings) {
-        totalGroupPoints[standing.code] =
-            (totalGroupPoints[standing.code] ?? 0) + standing.points;
+        totalGroupPoints[standing.team] =
+            (totalGroupPoints[standing.team] ?? 0) + standing.points;
       }
 
       // Top 2 advance, track 3rd for best 3rd-place
       if (standings.isNotEmpty) {
-        groupWinners[group] = standings[0].code;
-        groupWinnerCount[standings[0].code] =
-            (groupWinnerCount[standings[0].code] ?? 0) + 1;
+        groupWinners[group] = standings[0].team;
+        groupWinnerCount[standings[0].team] =
+            (groupWinnerCount[standings[0].team] ?? 0) + 1;
       }
       if (standings.length >= 2) {
-        groupRunners[group] = standings[1].code;
+        groupRunners[group] = standings[1].team;
       }
       if (standings.length >= 3) {
-        thirdPlaceTeams.add(_ThirdPlaceEntry(
-          code: standings[2].code,
+        thirdPlaceTeams.add(ThirdPlaceEntry(
           group: group,
+          team: standings[2].team,
           points: standings[2].points,
-          goalDifference: standings[2].goalDifference,
-          goalsFor: standings[2].goalsFor,
+          goalDiff: standings[2].goalDiff,
+          goalsScored: standings[2].goalsScored,
         ));
       }
     }
 
     // --- Determine 8 best 3rd-place teams ---
     thirdPlaceTeams.sort((a, b) {
-      // Sort by points desc, then GD desc, then GF desc
-      final ptsDiff = b.points.compareTo(a.points);
-      if (ptsDiff != 0) return ptsDiff;
-      final gdDiff = b.goalDifference.compareTo(a.goalDifference);
-      if (gdDiff != 0) return gdDiff;
-      return b.goalsFor.compareTo(a.goalsFor);
+      if (a.points != b.points) return b.points.compareTo(a.points);
+      if (a.goalDiff != b.goalDiff) return b.goalDiff.compareTo(a.goalDiff);
+      return b.goalsScored.compareTo(a.goalsScored);
     });
     final qualifiedThirds = thirdPlaceTeams.take(8).toList();
 
@@ -441,7 +405,7 @@ class MonteCarloSimulationService {
     r32Teams.addAll(groupWinners.values);
     r32Teams.addAll(groupRunners.values);
     for (final t in qualifiedThirds) {
-      r32Teams.add(t.code);
+      r32Teams.add(t.team);
     }
 
     for (final code in r32Teams) {
@@ -449,31 +413,11 @@ class MonteCarloSimulationService {
     }
 
     // --- Phase 2: Round of 32 ---
-    // Build R32 bracket: 16 matches
-    // FIFA bracket structure for 2026 with 48 teams:
-    //   Match 1: 1A vs 3C/D/E    Match 9:  1E vs 3A/B/F
-    //   Match 2: 2C vs 2D        Match 10: 2A vs 2B
-    //   Match 3: 1B vs 3A/E/F    Match 11: 1F vs 3B/C/D
-    //   Match 4: 2E vs 2F        Match 12: 2G vs 2H
-    //   Match 5: 1C vs 3B/G/H    Match 13: 1G vs 3E/F/I
-    //   Match 6: 2I vs 2J        Match 14: 2K vs 2L
-    //   Match 7: 1D vs 3F/I/J    Match 15: 1H vs 3G/J/K
-    //   Match 8: 2K vs 2L        Match 16: 1I vs 3H/K/L
-    //
-    // Simplified: pair group winners with best 3rd-place teams from specific
-    // groups, and runners-up face each other. For simulation purposes, we use
-    // a deterministic bracket that respects the FIFA pairing principles.
-    final r32Matchups = _buildR32Bracket(
-      groupWinners: groupWinners,
-      groupRunners: groupRunners,
-      qualifiedThirds: qualifiedThirds,
-    );
+    final r32Matchups = _bracketBuilder.buildR32Bracket(groupStandings);
 
     final r16Teams = <String>[];
     for (final matchup in r32Matchups) {
-      final winner = _simulateKnockoutMatch(
-        matchup[0], matchup[1], rng, pairwiseProbs,
-      );
+      final winner = _matchEngine.simulateKnockoutMatch(matchup[0], matchup[1], rng);
       r16Teams.add(winner);
     }
 
@@ -485,9 +429,7 @@ class MonteCarloSimulationService {
     if (r16Teams.length < 16) return;
     final qfTeams = <String>[];
     for (int i = 0; i < 16; i += 2) {
-      final winner = _simulateKnockoutMatch(
-        r16Teams[i], r16Teams[i + 1], rng, pairwiseProbs,
-      );
+      final winner = _matchEngine.simulateKnockoutMatch(r16Teams[i], r16Teams[i + 1], rng);
       qfTeams.add(winner);
     }
 
@@ -499,9 +441,7 @@ class MonteCarloSimulationService {
     if (qfTeams.length < 8) return;
     final sfTeams = <String>[];
     for (int i = 0; i < 8; i += 2) {
-      final winner = _simulateKnockoutMatch(
-        qfTeams[i], qfTeams[i + 1], rng, pairwiseProbs,
-      );
+      final winner = _matchEngine.simulateKnockoutMatch(qfTeams[i], qfTeams[i + 1], rng);
       sfTeams.add(winner);
     }
 
@@ -513,9 +453,7 @@ class MonteCarloSimulationService {
     if (sfTeams.length < 4) return;
     final finalists = <String>[];
     for (int i = 0; i < 4; i += 2) {
-      final winner = _simulateKnockoutMatch(
-        sfTeams[i], sfTeams[i + 1], rng, pairwiseProbs,
-      );
+      final winner = _matchEngine.simulateKnockoutMatch(sfTeams[i], sfTeams[i + 1], rng);
       finalists.add(winner);
     }
 
@@ -525,244 +463,10 @@ class MonteCarloSimulationService {
 
     // --- Phase 6: Final ---
     if (finalists.length < 2) return;
-    final champion = _simulateKnockoutMatch(
-      finalists[0], finalists[1], rng, pairwiseProbs,
-    );
+    final champion = _matchEngine.simulateKnockoutMatch(finalists[0], finalists[1], rng);
     wonTournament[champion] = (wonTournament[champion] ?? 0) + 1;
   }
 
-  /// Simulate the group stage for a set of teams.
-  ///
-  /// Each team plays every other team once (round-robin). Returns standings
-  /// sorted by points, then goal difference, then goals scored.
-  List<_GroupStanding> _simulateGroupStage(
-    List<String> teamCodes,
-    math.Random rng,
-    Map<String, Map<String, Map<String, double>>> pairwiseProbs,
-  ) {
-    final standings = <String, _GroupStanding>{};
-    for (final code in teamCodes) {
-      standings[code] = _GroupStanding(code: code);
-    }
-
-    // Round-robin: each pair plays once
-    for (int i = 0; i < teamCodes.length; i++) {
-      for (int j = i + 1; j < teamCodes.length; j++) {
-        final home = teamCodes[i];
-        final away = teamCodes[j];
-
-        final probs = pairwiseProbs[home]?[away];
-        if (probs == null) continue;
-
-        final roll = rng.nextDouble();
-        final homeWinProb = probs['homeWin']!;
-        final drawProb = probs['draw']!;
-
-        if (roll < homeWinProb) {
-          // Home win
-          final goals = _simulateGoals(rng, isWinner: true);
-          final loserGoals = _simulateGoals(rng, isWinner: false);
-          final homeGoals = math.max(goals, loserGoals + 1);
-          standings[home]!.addResult(3, homeGoals, loserGoals);
-          standings[away]!.addResult(0, loserGoals, homeGoals);
-        } else if (roll < homeWinProb + drawProb) {
-          // Draw
-          final goals = _simulateGoals(rng, isDraw: true);
-          standings[home]!.addResult(1, goals, goals);
-          standings[away]!.addResult(1, goals, goals);
-        } else {
-          // Away win
-          final goals = _simulateGoals(rng, isWinner: true);
-          final loserGoals = _simulateGoals(rng, isWinner: false);
-          final awayGoals = math.max(goals, loserGoals + 1);
-          standings[away]!.addResult(3, awayGoals, loserGoals);
-          standings[home]!.addResult(0, loserGoals, awayGoals);
-        }
-      }
-    }
-
-    // Sort standings
-    final sorted = standings.values.toList();
-    sorted.sort((a, b) {
-      // 1. Points descending
-      final ptsDiff = b.points.compareTo(a.points);
-      if (ptsDiff != 0) return ptsDiff;
-      // 2. Goal difference descending
-      final gdDiff = b.goalDifference.compareTo(a.goalDifference);
-      if (gdDiff != 0) return gdDiff;
-      // 3. Goals scored descending
-      final gfDiff = b.goalsFor.compareTo(a.goalsFor);
-      if (gfDiff != 0) return gfDiff;
-      // 4. Random tiebreaker (simulates drawing of lots)
-      return rng.nextBool() ? 1 : -1;
-    });
-
-    return sorted;
-  }
-
-  /// Simulate a knockout match between two teams. Always produces a winner.
-  ///
-  /// If the Elo model draws, a weighted coin flip decides (favoring the
-  /// stronger team, simulating extra time / penalties).
-  String _simulateKnockoutMatch(
-    String teamA,
-    String teamB,
-    math.Random rng,
-    Map<String, Map<String, Map<String, double>>> pairwiseProbs,
-  ) {
-    final probs = pairwiseProbs[teamA]?[teamB];
-    if (probs == null) {
-      // Fallback: coin flip
-      return rng.nextBool() ? teamA : teamB;
-    }
-
-    final homeWin = probs['homeWin']!;
-    final drawProb = probs['draw']!;
-    final roll = rng.nextDouble();
-
-    if (roll < homeWin) {
-      return teamA;
-    } else if (roll < homeWin + drawProb) {
-      // Draw in regulation -> extra time / penalties
-      // Weighted coin flip: stronger team slightly favored
-      final eloA = _eloRatings[teamA] ?? 1500.0;
-      final eloB = _eloRatings[teamB] ?? 1500.0;
-      // In penalties, advantage is smaller (60/40 rather than full Elo edge)
-      final penaltyAdvA = 1.0 / (1.0 + math.pow(10, -(eloA - eloB) / 800.0));
-      return rng.nextDouble() < penaltyAdvA ? teamA : teamB;
-    } else {
-      return teamB;
-    }
-  }
-
-  /// Generate a plausible goal count for a team in a group match.
-  int _simulateGoals(math.Random rng, {bool isWinner = false, bool isDraw = false}) {
-    if (isDraw) {
-      // Draw goals: 0, 1, or 2 (heavily weighted toward 0-1)
-      final roll = rng.nextDouble();
-      if (roll < 0.25) return 0;
-      if (roll < 0.65) return 1;
-      if (roll < 0.90) return 2;
-      return 3;
-    }
-    if (isWinner) {
-      // Winner goals: 1-4
-      final roll = rng.nextDouble();
-      if (roll < 0.40) return 1;
-      if (roll < 0.75) return 2;
-      if (roll < 0.92) return 3;
-      return 4;
-    }
-    // Loser goals: 0-2
-    final roll = rng.nextDouble();
-    if (roll < 0.50) return 0;
-    if (roll < 0.85) return 1;
-    return 2;
-  }
-
-  /// Build the Round of 32 bracket matchups.
-  ///
-  /// Uses a simplified but realistic FIFA-style bracket: group winners face
-  /// 3rd-place qualifiers, runners-up face each other. The bracket structure
-  /// ensures teams from the same group cannot meet until the Quarter-Finals.
-  List<List<String>> _buildR32Bracket({
-    required Map<String, String> groupWinners,
-    required Map<String, String> groupRunners,
-    required List<_ThirdPlaceEntry> qualifiedThirds,
-  }) {
-    // Map qualified thirds by group for assignment
-    final thirdsByGroup = <String, String>{};
-    for (final t in qualifiedThirds) {
-      thirdsByGroup[t.group] = t.code;
-    }
-
-    // Build matchups: 16 R32 matches
-    // Structure: Group winners (1st) vs 3rd-place from designated groups,
-    //            Group runners (2nd) vs 2nd-place from other groups
-    //
-    // FIFA bracket for 2026 (simplified mapping):
-    // Upper half of bracket:
-    //   1A vs best available 3rd   |   2C vs 2D
-    //   1B vs best available 3rd   |   2E vs 2F
-    //   1C vs best available 3rd   |   2A vs 2B
-    //   1D vs best available 3rd   |   2G vs 2H
-    // Lower half of bracket:
-    //   1E vs best available 3rd   |   2I vs 2J
-    //   1F vs best available 3rd   |   2K vs 2L
-    //   1G vs best available 3rd   |   1I vs best available 3rd
-    //   1H vs best available 3rd   |   1J vs best available 3rd
-    //
-    // NOTE: With 12 group winners and only 8 thirds, some winners face runners
-    // instead. For simulation purposes, we use a deterministic pattern.
-
-    final matchups = <List<String>>[];
-    final groupLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
-
-    // Assign group winners to 3rd-place opponents
-    // Winners from groups A-H get paired with available 3rd-place teams
-    final availableThirds = List<String>.from(qualifiedThirds.map((t) => t.code));
-
-    // 8 matches: group winner vs 3rd-place
-    for (int i = 0; i < math.min(groupLetters.length, 8 + availableThirds.length); i++) {
-      if (i < groupLetters.length && availableThirds.isNotEmpty) {
-        final winner = groupWinners[groupLetters[i]];
-        if (winner != null && i < 8) {
-          // First 8 group winners pair with 3rd-place teams
-          final third = availableThirds.removeAt(0);
-          matchups.add([winner, third]);
-        }
-      }
-    }
-
-    // 4 remaining group winners pair with runners from specific groups
-    // 1I vs 2H, 1J vs 2G, 1K vs 2J, 1L vs 2I
-    final winnerRunnerPairs = [
-      ['I', 'H'],
-      ['J', 'G'],
-      ['K', 'J'],
-      ['L', 'I'],
-    ];
-    for (final pair in winnerRunnerPairs) {
-      final winner = groupWinners[pair[0]];
-      final runner = groupRunners[pair[1]];
-      if (winner != null && runner != null) {
-        matchups.add([winner, runner]);
-      }
-    }
-
-    // Runner-up vs runner-up matches (4 matches)
-    final runnerPairs = [
-      ['A', 'B'],
-      ['C', 'D'],
-      ['E', 'F'],
-      ['K', 'L'],
-    ];
-    for (final pair in runnerPairs) {
-      final runner1 = groupRunners[pair[0]];
-      final runner2 = groupRunners[pair[1]];
-      if (runner1 != null && runner2 != null) {
-        matchups.add([runner1, runner2]);
-      }
-    }
-
-    // Ensure we have exactly 16 matchups; pad with any missing teams
-    // This handles edge cases where groups might be incomplete
-    while (matchups.length < 16) {
-      // Fill with dummy matchups from remaining R32 teams
-      final usedTeams = <String>{};
-      for (final m in matchups) {
-        usedTeams.addAll(m);
-      }
-      final remaining = _teamsByCode.keys.where((c) => !usedTeams.contains(c)).toList();
-      if (remaining.length >= 2) {
-        matchups.add([remaining[0], remaining[1]]);
-      } else {
-        break;
-      }
-    }
-
-    return matchups;
-  }
 
   /// Get the Elo rating for a team. Returns null if not initialized.
   double? getEloRating(String teamCode) {
@@ -772,39 +476,4 @@ class MonteCarloSimulationService {
 
   /// Check if the service is initialized.
   bool get isInitialized => _isInitialized;
-}
-
-/// Internal helper for tracking group standings during simulation.
-class _GroupStanding {
-  final String code;
-  int points = 0;
-  int goalsFor = 0;
-  int goalsAgainst = 0;
-
-  _GroupStanding({required this.code});
-
-  int get goalDifference => goalsFor - goalsAgainst;
-
-  void addResult(int pts, int gf, int ga) {
-    points += pts;
-    goalsFor += gf;
-    goalsAgainst += ga;
-  }
-}
-
-/// Internal helper for tracking 3rd-place teams across groups.
-class _ThirdPlaceEntry {
-  final String code;
-  final String group;
-  final int points;
-  final int goalDifference;
-  final int goalsFor;
-
-  const _ThirdPlaceEntry({
-    required this.code,
-    required this.group,
-    required this.points,
-    required this.goalDifference,
-    required this.goalsFor,
-  });
 }

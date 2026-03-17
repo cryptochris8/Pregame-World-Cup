@@ -58,7 +58,10 @@ class AdminService {
   AdminUser? get currentAdminUser => _currentAdminUser;
 
   /// Whether the current user is an admin
-  bool get isAdmin => _currentAdminUser != null && _currentAdminUser!.isActive;
+  bool get isAdmin {
+    final user = _currentAdminUser;
+    return user != null && user.isActive;
+  }
 
   /// Current admin role
   AdminRole? get currentRole => _currentAdminUser?.role;
@@ -77,7 +80,8 @@ class AdminService {
       final adminDoc = await _firestore.collection(_adminsCollection).doc(userId).get();
 
       if (adminDoc.exists && adminDoc.data() != null) {
-        _currentAdminUser = AdminUser.fromJson(adminDoc.data()!);
+        final adminUser = AdminUser.fromJson(adminDoc.data()!);
+        _currentAdminUser = adminUser;
 
         // Update last login
         await _firestore.collection(_adminsCollection).doc(userId).update({
@@ -85,7 +89,7 @@ class AdminService {
         });
 
         LoggingService.info(
-          'Admin authenticated: ${_currentAdminUser!.displayName} (${_currentAdminUser!.role.displayName})',
+          'Admin authenticated: ${adminUser.displayName} (${adminUser.role.displayName})',
           tag: _logTag,
         );
       }
@@ -99,8 +103,9 @@ class AdminService {
 
   /// Check if current user has a specific permission
   bool hasPermission(String permission) {
-    if (_currentAdminUser == null) return false;
-    return _currentAdminUser!.hasPermission(permission);
+    final user = _currentAdminUser;
+    if (user == null) return false;
+    return user.hasPermission(permission);
   }
 
   // ==================== DASHBOARD STATS ====================
@@ -201,7 +206,8 @@ class AdminService {
     int limit = 50,
     DocumentSnapshot? startAfter,
   }) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) {
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageUsers()) {
       return [];
     }
 
@@ -248,7 +254,8 @@ class AdminService {
 
   /// Warn user
   Future<bool> warnUser(String userId, String reason) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageUsers()) return false;
 
     try {
       await _moderationService.issueWarning(
@@ -270,7 +277,8 @@ class AdminService {
 
   /// Mute user
   Future<bool> muteUser(String userId, String reason, Duration duration) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageUsers()) return false;
 
     try {
       await _moderationService.muteUser(
@@ -294,7 +302,8 @@ class AdminService {
 
   /// Suspend user
   Future<bool> suspendUser(String userId, String reason, Duration duration) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageUsers()) return false;
 
     try {
       await _moderationService.suspendUser(
@@ -318,7 +327,8 @@ class AdminService {
 
   /// Ban user permanently
   Future<bool> banUser(String userId, String reason) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageUsers()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageUsers()) return false;
 
     try {
       await _moderationService.banUser(userId: userId, reason: reason);
@@ -337,13 +347,14 @@ class AdminService {
 
   /// Delete user (soft delete - marks as deleted)
   Future<bool> deleteUser(String userId, String reason) async {
-    if (!isAdmin || _currentAdminUser!.role != AdminRole.superAdmin) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || user.role != AdminRole.superAdmin) return false;
 
     try {
       await _firestore.collection('user_profiles').doc(userId).update({
         'isDeleted': true,
         'deletedAt': FieldValue.serverTimestamp(),
-        'deletedBy': _currentAdminUser!.userId,
+        'deletedBy': user.userId,
         'deletionReason': reason,
       });
 
@@ -367,7 +378,8 @@ class AdminService {
     int limit = 50,
     DocumentSnapshot? startAfter,
   }) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageWatchParties()) {
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageWatchParties()) {
       return [];
     }
 
@@ -395,13 +407,14 @@ class AdminService {
 
   /// Delete watch party
   Future<bool> deleteWatchParty(String partyId, String reason) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageWatchParties()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageWatchParties()) return false;
 
     try {
       await _firestore.collection('watch_parties').doc(partyId).update({
         'isDeleted': true,
         'deletedAt': FieldValue.serverTimestamp(),
-        'deletedBy': _currentAdminUser!.userId,
+        'deletedBy': user.userId,
         'deletionReason': reason,
       });
 
@@ -421,7 +434,8 @@ class AdminService {
 
   /// Get pending reports
   Future<List<Report>> getPendingReports({int limit = 50}) async {
-    if (!isAdmin || !_currentAdminUser!.role.canModerateContent()) {
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canModerateContent()) {
       return [];
     }
 
@@ -430,7 +444,8 @@ class AdminService {
 
   /// Resolve a report
   Future<bool> resolveReport(String reportId, ModerationAction action, String? notes) async {
-    if (!isAdmin || !_currentAdminUser!.role.canModerateContent()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canModerateContent()) return false;
 
     final result = await _moderationService.resolveReport(
       reportId: reportId,
@@ -466,13 +481,14 @@ class AdminService {
 
   /// Update feature flag
   Future<bool> updateFeatureFlag(String flagId, bool isEnabled) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageFeatureFlags()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageFeatureFlags()) return false;
 
     try {
       await _firestore.collection(_featureFlagsCollection).doc(flagId).update({
         'isEnabled': isEnabled,
         'updatedAt': DateTime.now().toIso8601String(),
-        'updatedBy': _currentAdminUser!.userId,
+        'updatedBy': user.userId,
       });
 
       await _logAdminAction('update_feature_flag', {
@@ -489,7 +505,8 @@ class AdminService {
 
   /// Create a new feature flag
   Future<bool> createFeatureFlag(String name, String description) async {
-    if (!isAdmin || !_currentAdminUser!.role.canManageFeatureFlags()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canManageFeatureFlags()) return false;
 
     try {
       final flagId = name.toLowerCase().replaceAll(' ', '_');
@@ -500,7 +517,7 @@ class AdminService {
         isEnabled: false,
         createdAt: DateTime.now(),
         updatedAt: DateTime.now(),
-        updatedBy: _currentAdminUser!.userId,
+        updatedBy: user.userId,
       );
 
       await _firestore.collection(_featureFlagsCollection).doc(flagId).set(flag.toJson());
@@ -528,7 +545,8 @@ class AdminService {
     String? topic,
     Map<String, String>? data,
   }) async {
-    if (!isAdmin || !_currentAdminUser!.role.canSendPushNotifications()) return false;
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || !user.role.canSendPushNotifications()) return false;
 
     try {
       // Determine the FCM topic based on audience
@@ -558,7 +576,7 @@ class AdminService {
         'teamCode': teamCode,
         'data': data,
         'createdAt': FieldValue.serverTimestamp(),
-        'createdBy': _currentAdminUser!.userId,
+        'createdBy': user.userId,
         'status': 'pending',
       });
 
@@ -579,12 +597,15 @@ class AdminService {
   // ==================== ADMIN LOGGING ====================
 
   Future<void> _logAdminAction(String action, Map<String, dynamic> details) async {
+    final user = _currentAdminUser;
+    if (user == null) return;
+
     try {
       await _firestore.collection(_adminLogsCollection).add({
         'action': action,
-        'adminId': _currentAdminUser!.userId,
-        'adminEmail': _currentAdminUser!.email,
-        'adminRole': _currentAdminUser!.role.name,
+        'adminId': user.userId,
+        'adminEmail': user.email,
+        'adminRole': user.role.name,
         'details': details,
         'timestamp': FieldValue.serverTimestamp(),
       });
@@ -595,7 +616,8 @@ class AdminService {
 
   /// Get admin activity logs
   Future<List<Map<String, dynamic>>> getAdminLogs({int limit = 100}) async {
-    if (!isAdmin || _currentAdminUser!.role != AdminRole.superAdmin) return [];
+    final user = _currentAdminUser;
+    if (!isAdmin || user == null || user.role != AdminRole.superAdmin) return [];
 
     try {
       final snapshot = await _firestore

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../domain/services/messaging_service.dart';
+import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -24,7 +25,7 @@ class AddMemberBottomSheet extends StatefulWidget {
 
 class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
   final SocialService _socialService = sl<SocialService>();
-  List<dynamic> _friends = [];
+  List<UserProfile> _friends = [];
   bool _isLoading = true;
   bool _isAdding = false;
 
@@ -57,7 +58,7 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
     }
   }
 
-  Future<void> _addMember(dynamic friend) async {
+  Future<void> _addMember(UserProfile friend) async {
     setState(() {
       _isAdding = true;
     });

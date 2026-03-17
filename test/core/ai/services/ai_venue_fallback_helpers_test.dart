@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:pregame_world_cup/core/ai/models/scored_venue_data.dart';
 import 'package:pregame_world_cup/core/ai/services/ai_venue_fallback_helpers.dart';
 
 void main() {
@@ -793,14 +794,17 @@ void main() {
   });
 }
 
-/// Mock venue object that mimics the dynamic venue interface used by the
-/// fallback helpers. The source code accesses properties via dynamic dispatch:
-/// v.name, v.rating, v.distance, v.types, v.priceLevel
-class _MockVenue {
+/// Mock venue object implementing [ScoredVenueData] for type-safe testing.
+class _MockVenue implements ScoredVenueData {
+  @override
   final String? name;
+  @override
   final double? rating;
+  @override
   final double? distance;
+  @override
   final List<String> types;
+  @override
   final int? priceLevel;
 
   _MockVenue({

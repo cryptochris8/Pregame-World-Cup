@@ -46,9 +46,12 @@ class _ModerationStatusBannerState extends State<ModerationStatusBanner> {
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading || !widget.showBanner || _restrictionMessage == null) {
+    final restrictionMessage = _restrictionMessage;
+    if (_isLoading || !widget.showBanner || restrictionMessage == null) {
       return widget.child;
     }
+
+    final orangeBorderColor = Colors.orange[300] ?? Colors.orange;
 
     return Column(
       children: [
@@ -58,7 +61,7 @@ class _ModerationStatusBannerState extends State<ModerationStatusBanner> {
           decoration: BoxDecoration(
             color: Colors.orange[100],
             border: Border(
-              bottom: BorderSide(color: Colors.orange[300]!),
+              bottom: BorderSide(color: orangeBorderColor),
             ),
           ),
           child: Row(
@@ -71,7 +74,7 @@ class _ModerationStatusBannerState extends State<ModerationStatusBanner> {
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  _restrictionMessage!,
+                  restrictionMessage,
                   style: TextStyle(
                     color: Colors.orange[900],
                     fontSize: 13,
@@ -207,16 +210,17 @@ class _ModerationStatusCardState extends State<ModerationStatusCard> {
       );
     }
 
-    if (_status == null) {
+    final status = _status;
+    if (status == null) {
       return const SizedBox.shrink();
     }
 
     // Don't show anything if user has clean record and showIfClean is false
     if (!widget.showIfClean &&
-        _status!.warningCount == 0 &&
-        !_status!.isMuted &&
-        !_status!.isSuspended &&
-        !_status!.isBanned) {
+        status.warningCount == 0 &&
+        !status.isMuted &&
+        !status.isSuspended &&
+        !status.isBanned) {
       return const SizedBox.shrink();
     }
 
@@ -230,8 +234,8 @@ class _ModerationStatusCardState extends State<ModerationStatusCard> {
             Row(
               children: [
                 Icon(
-                  _getStatusIcon(),
-                  color: _getStatusColor(),
+                  _getStatusIcon(status),
+                  color: _getStatusColor(status),
                 ),
                 const SizedBox(width: 8),
                 Text(
@@ -243,21 +247,21 @@ class _ModerationStatusCardState extends State<ModerationStatusCard> {
               ],
             ),
             const SizedBox(height: 12),
-            _buildStatusRow('Warnings', '${_status!.warningCount}'),
-            _buildStatusRow('Reports received', '${_status!.reportCount}'),
-            if (_status!.isMuted)
+            _buildStatusRow('Warnings', '${status.warningCount}'),
+            _buildStatusRow('Reports received', '${status.reportCount}'),
+            if (status.isMuted)
               _buildStatusRow(
                 'Muted until',
-                _formatDateTime(_status!.mutedUntil),
+                _formatDateTime(status.mutedUntil),
                 isWarning: true,
               ),
-            if (_status!.isSuspended)
+            if (status.isSuspended)
               _buildStatusRow(
                 'Suspended until',
-                _formatDateTime(_status!.suspendedUntil),
+                _formatDateTime(status.suspendedUntil),
                 isWarning: true,
               ),
-            if (_status!.isBanned)
+            if (status.isBanned)
               _buildStatusRow(
                 'Status',
                 'Permanently banned',
@@ -296,19 +300,21 @@ class _ModerationStatusCardState extends State<ModerationStatusCard> {
     );
   }
 
-  IconData _getStatusIcon() {
-    if (_status!.isBanned) return Icons.block;
-    if (_status!.isSuspended) return Icons.pause_circle;
-    if (_status!.isMuted) return Icons.volume_off;
-    if (_status!.warningCount > 0) return Icons.warning;
+  IconData _getStatusIcon(UserModerationStatus status) {
+    if (status.isBanned) return Icons.block;
+    if (status.isSuspended) return Icons.pause_circle;
+    if (status.isMuted) return Icons.volume_off;
+    if (status.warningCount > 0) return Icons.warning;
     return Icons.check_circle;
   }
 
-  Color _getStatusColor() {
-    if (_status!.isBanned) return Colors.red;
-    if (_status!.isSuspended) return Colors.orange;
-    if (_status!.isMuted) return Colors.amber;
-    if (_status!.warningCount > 0) return Colors.yellow[700]!;
+  Color _getStatusColor(UserModerationStatus status) {
+    if (status.isBanned) return Colors.red;
+    if (status.isSuspended) return Colors.orange;
+    if (status.isMuted) return Colors.amber;
+    if (status.warningCount > 0) {
+      return Colors.yellow[700] ?? Colors.yellow;
+    }
     return Colors.green;
   }
 

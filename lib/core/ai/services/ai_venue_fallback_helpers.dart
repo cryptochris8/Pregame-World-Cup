@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import '../models/scored_venue_data.dart';
+
 /// Helpers for building fallback venue recommendations when the OpenAI API is
 /// unavailable. Extracted from AIService to keep that class focused on
 /// API interaction and orchestration.
@@ -99,7 +101,7 @@ class AIVenueFallbackHelpers {
 
   /// Generate enhanced fallback venue recommendations when AI fails
   static String generateFallbackVenueRecommendations(
-      List<dynamic> venues, Map<String, dynamic> context) {
+      List<ScoredVenueData> venues, Map<String, dynamic> context) {
     final venueContext = context['context'] ?? 'general';
     final gameInfo = context['game_info'] as Map<String, dynamic>?;
     final userBehavior = context['user_behavior'] as Map<String, dynamic>?;
@@ -107,26 +109,26 @@ class AIVenueFallbackHelpers {
 
     // Enhanced scoring algorithm
     for (final venue in venues.take(15)) {
-      final v = venue as dynamic;
       double score = 0.4; // Base score
       final reasons = <String>[];
       final tags = <String>[];
 
       // Rating contribution (weighted heavily)
-      if (v.rating != null && v.rating > 0) {
-        final ratingScore = ((v.rating - 2.5) / 2.5).clamp(0.0, 1.0);
+      final venueRating = venue.rating;
+      if (venueRating != null && venueRating > 0) {
+        final ratingScore = ((venueRating - 2.5) / 2.5).clamp(0.0, 1.0);
         score += ratingScore * 0.3;
-        if (v.rating >= 4.5) {
-          reasons.add('Highly rated (${v.rating}⭐)');
+        if (venueRating >= 4.5) {
+          reasons.add('Highly rated ($venueRating⭐)');
           tags.add('Top Rated');
-        } else if (v.rating >= 4.0) {
-          reasons.add('Well reviewed (${v.rating}⭐)');
+        } else if (venueRating >= 4.0) {
+          reasons.add('Well reviewed ($venueRating⭐)');
           tags.add('Popular');
         }
       }
 
       // Context-based type scoring
-      final types = v.types as List<String>? ?? [];
+      final types = venue.types ?? [];
       if (venueContext == 'pre_game') {
         if (types.any(
             (t) => ['restaurant', 'meal_takeaway', 'food'].contains(t))) {
@@ -166,16 +168,17 @@ class AIVenueFallbackHelpers {
       }
 
       // Distance-based scoring
-      if (v.distance != null) {
-        if (v.distance <= 1.0) {
+      final venueDistance = venue.distance;
+      if (venueDistance != null) {
+        if (venueDistance <= 1.0) {
           score += 0.2;
-          reasons.add('Very close (${(v.distance * 0.621371).toStringAsFixed(1)} mi)');
+          reasons.add('Very close (${(venueDistance * 0.621371).toStringAsFixed(1)} mi)');
           tags.add('Nearby');
-        } else if (v.distance <= 3.0) {
+        } else if (venueDistance <= 3.0) {
           score += 0.1;
           reasons.add(
-              'Convenient location (${(v.distance * 0.621371).toStringAsFixed(1)} mi)');
-        } else if (v.distance > 10.0) {
+              'Convenient location (${(venueDistance * 0.621371).toStringAsFixed(1)} mi)');
+        } else if (venueDistance > 10.0) {
           score -= 0.1; // Penalty for very far venues
         }
       }
@@ -185,11 +188,12 @@ class AIVenueFallbackHelpers {
         final homeTeam = gameInfo['home_team'] as String?;
 
         // If venue name contains team references
-        if (homeTeam != null && v.name != null) {
-          final venueName = (v.name as String).toLowerCase();
+        final venueName = venue.name;
+        if (homeTeam != null && venueName != null) {
+          final venueNameLower = venueName.toLowerCase();
           final teamKeywords = _getTeamKeywords(homeTeam);
           if (teamKeywords
-              .any((keyword) => venueName.contains(keyword.toLowerCase()))) {
+              .any((keyword) => venueNameLower.contains(keyword.toLowerCase()))) {
             score += 0.15;
             reasons.add('Team-themed venue');
             tags.add('Team Spirit');
@@ -215,8 +219,9 @@ class AIVenueFallbackHelpers {
       }
 
       // Price level consideration
-      if (v.priceLevel != null) {
-        final priceLevel = v.priceLevel as int;
+      final venuePriceLevel = venue.priceLevel;
+      if (venuePriceLevel != null) {
+        final priceLevel = venuePriceLevel;
         if (priceLevel <= 2) {
           reasons.add('Budget-friendly');
           tags.add('Affordable');
@@ -228,16 +233,16 @@ class AIVenueFallbackHelpers {
 
       // Generate contextual reasoning
       String contextualReasoning =
-          _generateContextualReasoning(v, venueContext, gameInfo, reasons);
+          _generateContextualReasoning(venue, venueContext, gameInfo, reasons);
 
       recommendations.add({
-        'name': v.name ?? 'Unknown Venue',
+        'name': venue.name ?? 'Unknown Venue',
         'score': score.clamp(0.0, 1.0),
         'reasoning': contextualReasoning,
         'tags': tags.isEmpty ? ['Recommended'] : tags,
         'context_match': venueContext,
-        'distance': v.distance,
-        'rating': v.rating,
+        'distance': venue.distance,
+        'rating': venue.rating,
         'types': types,
         'reasons': reasons,
       });
@@ -260,7 +265,7 @@ class AIVenueFallbackHelpers {
 
   /// Generate contextual reasoning for venue recommendations
   static String _generateContextualReasoning(
-      dynamic venue,
+      ScoredVenueData venue,
       String context,
       Map<String, dynamic>? gameInfo,
       List<String> reasons) {

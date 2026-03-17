@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import '../../../core/services/logging_service.dart';
 import '../../../core/services/performance_monitor.dart';
 import '../../../config/api_keys.dart';
+import '../models/scored_venue_data.dart';
 import 'ai_fallback_helpers.dart';
 import 'ai_venue_fallback_helpers.dart';
 
@@ -392,7 +393,7 @@ Provide prediction in JSON format:
 
   /// Generate AI-powered venue recommendations
   Future<String> generateVenueRecommendations({
-    required List<dynamic> venues,
+    required List<ScoredVenueData> venues,
     required Map<String, dynamic> context,
   }) async {
     const systemMessage = '''
@@ -409,8 +410,8 @@ Consider factors like venue type, location, ratings, user preferences, and game 
 
     // Summarize venues for AI processing
     final venuesSummary = venues.take(20).map((venue) {
-      final v = venue as dynamic;
-      return '${v.name ?? 'Unknown'} (${v.types?.join(', ') ?? 'unknown type'}) - Rating: ${v.rating ?? 'N/A'}, Distance: ${v.distance != null ? '${(v.distance * 0.621371).toStringAsFixed(1)} mi' : 'N/A'}';
+      final venueDistance = venue.distance;
+      return '${venue.name ?? 'Unknown'} (${venue.types?.join(', ') ?? 'unknown type'}) - Rating: ${venue.rating ?? 'N/A'}, Distance: ${venueDistance != null ? '${(venueDistance * 0.621371).toStringAsFixed(1)} mi' : 'N/A'}';
     }).join('\n');
 
     final prompt = '''

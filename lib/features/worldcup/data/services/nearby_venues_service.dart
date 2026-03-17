@@ -1,4 +1,5 @@
 import 'dart:math';
+import '../../../../core/ai/models/scored_venue_data.dart';
 import '../../../recommendations/data/datasources/places_api_datasource.dart';
 import '../../../recommendations/domain/entities/place.dart';
 import '../../domain/entities/world_cup_venue.dart';
@@ -147,7 +148,7 @@ class NearbyVenuesService {
 }
 
 /// Result containing a place with its distance from the stadium
-class NearbyVenueResult {
+class NearbyVenueResult implements ScoredVenueData {
   final Place place;
   final double distanceMeters;
   final WorldCupVenue stadium;
@@ -157,6 +158,22 @@ class NearbyVenueResult {
     required this.distanceMeters,
     required this.stadium,
   });
+
+  @override
+  String? get name => place.name;
+
+  @override
+  double? get rating => place.rating;
+
+  /// Distance in kilometres (converted from metres).
+  @override
+  double get distance => distanceMeters / 1000.0;
+
+  @override
+  List<String>? get types => place.types;
+
+  @override
+  int? get priceLevel => place.priceLevel;
 
   /// Distance formatted as string (e.g., "0.3 mi" or "1.2 mi")
   String get distanceFormatted {

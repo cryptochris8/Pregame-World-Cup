@@ -29,18 +29,20 @@ class MultiProviderAIService {
     
     // Initialize OpenAI service (graceful failure)
     try {
-      _openAI = sl<AIService>();
-      await _openAI!.initialize();
+      final openAI = sl<AIService>();
+      _openAI = openAI;
+      await openAI.initialize();
       LoggingService.info('✅ OpenAI service ready', tag: _logTag);
     } catch (e) {
       LoggingService.error('❌ OpenAI initialization failed: $e', tag: _logTag);
       _openAI = null;
     }
-    
+
     // Initialize Claude service (graceful failure)
     try {
-      _claude = ClaudeService();
-      await _claude!.initialize();
+      final claude = ClaudeService();
+      _claude = claude;
+      await claude.initialize();
       LoggingService.info('✅ Claude service ready', tag: _logTag);
     } catch (e) {
       LoggingService.error('❌ Claude initialization failed: $e', tag: _logTag);
@@ -65,42 +67,47 @@ class MultiProviderAIService {
   }) async {
     try {
       // Use Claude for deep strategic analysis, OpenAI as fallback
-      if (_claude?.isAvailable == true) {
+      final claude = _claude;
+      if (claude != null && claude.isAvailable) {
         LoggingService.info('Using Claude for enhanced game prediction', tag: _logTag);
-        
-        final claudePrediction = await _claude!.generateGamePrediction(
+
+        final claudePrediction = await claude.generateGamePrediction(
           homeTeam: homeTeam,
           awayTeam: awayTeam,
           gameStats: gameStats,
         );
-        
+
         // Enhance with OpenAI embeddings for similar games if available
-        if (_openAI?.isAvailable == true) {
-          final embedding = await _openAI!.generateEmbeddings(
+        final openAI = _openAI;
+        if (openAI != null && openAI.isAvailable) {
+          final embedding = await openAI.generateEmbeddings(
             '$homeTeam vs $awayTeam prediction analysis'
           );
           claudePrediction['embedding'] = embedding;
         }
-        
+
         claudePrediction['provider'] = 'Claude Sonnet 4';
         return claudePrediction;
-        
-      } else if (_openAI?.isAvailable == true) {
-        LoggingService.info('Using OpenAI fallback for game prediction', tag: _logTag);
-        
-        final openAIPrediction = await _openAI!.generateGamePrediction(
-          homeTeam: homeTeam,
-          awayTeam: awayTeam,
-          gameStats: gameStats,
-        );
-        
-        return {
-          'prediction': openAIPrediction,
-          'confidence': 65,
-          'keyFactors': ['Statistical analysis', 'Recent team performance'],
-          'analysis': openAIPrediction,
-          'provider': 'OpenAI GPT-3.5',
-        };
+
+      } else {
+        final openAI = _openAI;
+        if (openAI != null && openAI.isAvailable) {
+          LoggingService.info('Using OpenAI fallback for game prediction', tag: _logTag);
+
+          final openAIPrediction = await openAI.generateGamePrediction(
+            homeTeam: homeTeam,
+            awayTeam: awayTeam,
+            gameStats: gameStats,
+          );
+
+          return {
+            'prediction': openAIPrediction,
+            'confidence': 65,
+            'keyFactors': ['Statistical analysis', 'Recent team performance'],
+            'analysis': openAIPrediction,
+            'provider': 'OpenAI GPT-3.5',
+          };
+        }
       }
       
       // Fallback response
@@ -119,20 +126,24 @@ class MultiProviderAIService {
     required Map<String, dynamic> gameContext,
   }) async {
     try {
-      if (_claude?.isAvailable == true) {
+      final claude = _claude;
+      if (claude != null && claude.isAvailable) {
         LoggingService.info('Using Claude for comprehensive sports analysis', tag: _logTag);
-        return await _claude!.generateSportsAnalysis(
+        return await claude.generateSportsAnalysis(
           homeTeam: homeTeam,
           awayTeam: awayTeam,
           gameContext: gameContext,
         );
-      } else if (_openAI?.isAvailable == true) {
-        LoggingService.info('Using OpenAI fallback for sports analysis', tag: _logTag);
-        return await _openAI!.generateCompletion(
-          prompt: 'Analyze the matchup between $awayTeam and $homeTeam considering: ${gameContext.toString()}',
-          systemMessage: 'You are an international soccer analyst. Provide insights about this upcoming match.',
-          maxTokens: 300,
-        );
+      } else {
+        final openAI = _openAI;
+        if (openAI != null && openAI.isAvailable) {
+          LoggingService.info('Using OpenAI fallback for sports analysis', tag: _logTag);
+          return await openAI.generateCompletion(
+            prompt: 'Analyze the matchup between $awayTeam and $homeTeam considering: ${gameContext.toString()}',
+            systemMessage: 'You are an international soccer analyst. Provide insights about this upcoming match.',
+            maxTokens: 300,
+          );
+        }
       }
       
       return 'This should be an exciting matchup between $awayTeam and $homeTeam! Both teams have their strengths.';
@@ -151,19 +162,24 @@ class MultiProviderAIService {
   }) async {
     try {
       LoggingService.info('🏟️ Generating venue recommendations with OpenAI...', tag: _logTag);
-      
+
       // Use OpenAI for venue recommendations (faster, optimized for this)
-      final recommendation = await _openAI!.generateVenueRecommendation(
+      final openAI = _openAI;
+      if (openAI == null) {
+        throw StateError('OpenAI service not available');
+      }
+
+      final recommendation = await openAI.generateVenueRecommendation(
         userPreferences: userPreferences,
         gameContext: gameContext,
         nearbyVenues: nearbyVenues,
       );
-      
+
       LoggingService.info('✅ Venue recommendations generated', tag: _logTag);
       return recommendation;
     } catch (e) {
       LoggingService.error('❌ Error generating venue recommendations: $e', tag: _logTag);
-      
+
       // Fallback response
       final venueList = nearbyVenues.take(2).join(' and ');
       return 'Consider watching at $venueList for a great game day experience!';
@@ -177,20 +193,24 @@ class MultiProviderAIService {
     required Map<String, dynamic> historicalData,
   }) async {
     try {
-      if (_claude?.isAvailable == true) {
+      final claude = _claude;
+      if (claude != null && claude.isAvailable) {
         LoggingService.info('Using Claude for historical analysis', tag: _logTag);
-        return await _claude!.generateHistoricalAnalysis(
+        return await claude.generateHistoricalAnalysis(
           team1: team1,
           team2: team2,
           historicalData: historicalData,
         );
-      } else if (_openAI?.isAvailable == true) {
-        LoggingService.info('Using OpenAI fallback for historical analysis', tag: _logTag);
-        return await _openAI!.generateCompletion(
-          prompt: 'Provide historical context for $team1 vs $team2: ${historicalData.toString()}',
-          systemMessage: 'You are an international soccer historian.',
-          maxTokens: 250,
-        );
+      } else {
+        final openAI = _openAI;
+        if (openAI != null && openAI.isAvailable) {
+          LoggingService.info('Using OpenAI fallback for historical analysis', tag: _logTag);
+          return await openAI.generateCompletion(
+            prompt: 'Provide historical context for $team1 vs $team2: ${historicalData.toString()}',
+            systemMessage: 'You are an international soccer historian.',
+            maxTokens: 250,
+          );
+        }
       }
       
       return 'The $team1 vs $team2 matchup has an interesting history with competitive games over the years.';
@@ -209,13 +229,18 @@ class MultiProviderAIService {
     
     try {
       LoggingService.info('🔤 Generating embedding with OpenAI...', tag: _logTag);
-      
+
       // Use OpenAI for embeddings (Claude doesn't support this)
-      final embedding = await _openAI!.generateEmbeddings(
+      final openAI = _openAI;
+      if (openAI == null) {
+        throw StateError('OpenAI service not available');
+      }
+
+      final embedding = await openAI.generateEmbeddings(
         text,
         model: 'text-embedding-3-small',
       );
-      
+
       LoggingService.info('✅ Embedding generated successfully', tag: _logTag);
       return embedding;
     } catch (e) {
@@ -230,20 +255,24 @@ class MultiProviderAIService {
     String? systemMessage,
   }) async {
     try {
-      if (_openAI?.isAvailable == true) {
-        return await _openAI!.generateCompletion(
+      final openAI = _openAI;
+      if (openAI != null && openAI.isAvailable) {
+        return await openAI.generateCompletion(
           prompt: prompt,
           systemMessage: systemMessage,
           maxTokens: 150,
           temperature: 0.8,
         );
-      } else if (_claude?.isAvailable == true) {
-        return await _claude!.generateCompletion(
-          prompt: prompt,
-          systemMessage: systemMessage,
-          maxTokens: 150,
-          temperature: 0.8,
-        );
+      } else {
+        final claude = _claude;
+        if (claude != null && claude.isAvailable) {
+          return await claude.generateCompletion(
+            prompt: prompt,
+            systemMessage: systemMessage,
+            maxTokens: 150,
+            temperature: 0.8,
+          );
+        }
       }
       
       return 'I\'m here to help with your Pregame experience! Ask me about games, venues, or predictions.';

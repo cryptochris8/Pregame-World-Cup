@@ -263,12 +263,14 @@ void main() {
       testRevenueCatService: mockRevenueCatService,
     );
 
-    // Default stubs for analytics (called on most operations)
-    when(() => mockAnalyticsService.logSignUp(method: any(named: 'method')))
-        .thenAnswer((_) async {});
-    when(() => mockAnalyticsService.logLogin(method: any(named: 'method')))
-        .thenAnswer((_) async {});
-    when(() => mockAnalyticsService.logLogout()).thenAnswer((_) async {});
+    // Stub the underlying methods that extension methods delegate to.
+    // logSignUp, logLogin, logLogout are extension methods (resolved statically),
+    // so we stub logEvent + clearUserId which they call internally.
+    when(() => mockAnalyticsService.logEvent(
+          any(),
+          parameters: any(named: 'parameters'),
+        )).thenAnswer((_) async {});
+    when(() => mockAnalyticsService.clearUserId()).thenAnswer((_) async {});
     when(() => mockAnalyticsService.logError(
           errorType: any(named: 'errorType'),
           message: any(named: 'message'),
@@ -333,7 +335,8 @@ void main() {
         password: 'password123',
       );
 
-      verify(() => mockAnalyticsService.logSignUp(method: 'email')).called(1);
+      verify(() => mockAnalyticsService.logEvent('sign_up',
+          parameters: {'method': 'email'})).called(1);
     });
 
     test('does not send verification email when user is null', () async {
@@ -350,8 +353,8 @@ void main() {
       );
 
       verifyNever(() => mockUser.sendEmailVerification());
-      verifyNever(
-          () => mockAnalyticsService.logSignUp(method: any(named: 'method')));
+      verifyNever(() => mockAnalyticsService.logEvent('sign_up',
+          parameters: any(named: 'parameters')));
     });
 
     test('throws Exception on email-already-in-use error', () async {
@@ -512,7 +515,8 @@ void main() {
         password: 'password123',
       );
 
-      verify(() => mockAnalyticsService.logLogin(method: 'email')).called(1);
+      verify(() => mockAnalyticsService.logEvent('login',
+          parameters: {'method': 'email'})).called(1);
     });
 
     test('throws Exception on wrong-password error', () async {
@@ -661,7 +665,8 @@ void main() {
 
       await authService.signOut();
 
-      verify(() => mockAnalyticsService.logLogout()).called(1);
+      verify(() => mockAnalyticsService.logEvent('logout',
+          parameters: any(named: 'parameters'))).called(1);
     });
 
     test('calls RevenueCat logoutUser to prevent entitlement leakage',
@@ -1238,7 +1243,8 @@ void main() {
         password: 'password123',
       );
       expect(result, isNotNull);
-      verify(() => mockAnalyticsService.logLogin(method: 'email')).called(1);
+      verify(() => mockAnalyticsService.logEvent('login',
+          parameters: {'method': 'email'})).called(1);
 
       // Step 2: Check verified
       when(() => mockAuth.currentUser).thenReturn(mockUser);
@@ -1250,7 +1256,8 @@ void main() {
       when(() => mockRevenueCatService.logoutUser())
           .thenAnswer((_) async {});
       await authService.signOut();
-      verify(() => mockAnalyticsService.logLogout()).called(1);
+      verify(() => mockAnalyticsService.logEvent('logout',
+          parameters: any(named: 'parameters'))).called(1);
     });
   });
 }

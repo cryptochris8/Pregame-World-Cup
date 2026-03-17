@@ -26,15 +26,10 @@ void main() {
     mockAppLinks = MockAppLinks();
     mockAnalyticsService = MockAnalyticsService();
 
-    // Stub analytics methods that may be called during tests
+    // Stub the underlying logEvent method that extension methods delegate to
     when(() => mockAnalyticsService.logEvent(
           any(),
           parameters: any(named: 'parameters'),
-        )).thenAnswer((_) async {});
-    when(() => mockAnalyticsService.logShare(
-          contentType: any(named: 'contentType'),
-          itemId: any(named: 'itemId'),
-          method: any(named: 'method'),
         )).thenAnswer((_) async {});
 
     service = DeepLinkService(

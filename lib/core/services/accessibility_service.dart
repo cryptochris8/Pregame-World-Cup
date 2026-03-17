@@ -108,7 +108,7 @@ class AccessibilityService extends ChangeNotifier {
 
   AccessibilitySettings _settings = const AccessibilitySettings();
   bool _isInitialized = false;
-  SharedPreferences? _prefs;
+  late final SharedPreferences _prefs;
 
   // Keys for SharedPreferences
   static const String _keyHighContrast = 'accessibility_high_contrast';
@@ -147,32 +147,29 @@ class AccessibilityService extends ChangeNotifier {
 
   /// Load settings from SharedPreferences
   Future<void> _loadSettings() async {
-    if (_prefs == null) return;
-
     _settings = AccessibilitySettings(
-      highContrast: _prefs!.getBool(_keyHighContrast) ?? false,
-      reduceMotion: _prefs!.getBool(_keyReduceMotion) ?? false,
-      largerTouchTargets: _prefs!.getBool(_keyLargerTouchTargets) ?? false,
-      textScaleFactor: _prefs!.getDouble(_keyTextScaleFactor),
-      screenReaderOptimized: _prefs!.getBool(_keyScreenReaderOptimized) ?? false,
-      boldText: _prefs!.getBool(_keyBoldText) ?? false,
+      highContrast: _prefs.getBool(_keyHighContrast) ?? false,
+      reduceMotion: _prefs.getBool(_keyReduceMotion) ?? false,
+      largerTouchTargets: _prefs.getBool(_keyLargerTouchTargets) ?? false,
+      textScaleFactor: _prefs.getDouble(_keyTextScaleFactor),
+      screenReaderOptimized: _prefs.getBool(_keyScreenReaderOptimized) ?? false,
+      boldText: _prefs.getBool(_keyBoldText) ?? false,
     );
   }
 
   /// Save settings to SharedPreferences
   Future<void> _saveSettings() async {
-    if (_prefs == null) return;
-
-    await _prefs!.setBool(_keyHighContrast, _settings.highContrast);
-    await _prefs!.setBool(_keyReduceMotion, _settings.reduceMotion);
-    await _prefs!.setBool(_keyLargerTouchTargets, _settings.largerTouchTargets);
-    if (_settings.textScaleFactor != null) {
-      await _prefs!.setDouble(_keyTextScaleFactor, _settings.textScaleFactor!);
+    await _prefs.setBool(_keyHighContrast, _settings.highContrast);
+    await _prefs.setBool(_keyReduceMotion, _settings.reduceMotion);
+    await _prefs.setBool(_keyLargerTouchTargets, _settings.largerTouchTargets);
+    final textScaleFactor = _settings.textScaleFactor;
+    if (textScaleFactor != null) {
+      await _prefs.setDouble(_keyTextScaleFactor, textScaleFactor);
     } else {
-      await _prefs!.remove(_keyTextScaleFactor);
+      await _prefs.remove(_keyTextScaleFactor);
     }
-    await _prefs!.setBool(_keyScreenReaderOptimized, _settings.screenReaderOptimized);
-    await _prefs!.setBool(_keyBoldText, _settings.boldText);
+    await _prefs.setBool(_keyScreenReaderOptimized, _settings.screenReaderOptimized);
+    await _prefs.setBool(_keyBoldText, _settings.boldText);
   }
 
   /// Update accessibility settings
