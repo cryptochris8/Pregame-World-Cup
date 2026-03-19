@@ -51,7 +51,7 @@ class PredictionNarrativeBuilder {
         final undRank = eloScore > 0 ? awayTeam!.fifaRanking : homeTeam!.fifaRanking;
         factors.add(_FactorEntry(
           eloScore.abs(),
-          '$fav ranked #$favRank vs #$undRank in FIFA rankings',
+          '$fav ranked #$favRank vs #$undRank in world rankings',
         ));
       }
     }

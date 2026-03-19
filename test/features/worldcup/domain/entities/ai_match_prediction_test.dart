@@ -472,7 +472,7 @@ void main() {
         );
 
         expect(prediction.keyFactors, hasLength(3));
-        expect(prediction.keyFactors[0], contains('FIFA'));
+        expect(prediction.keyFactors[0], contains('World Rankings'));
         expect(prediction.analysis, contains('rankings'));
         expect(prediction.quickInsight, contains('Ranking'));
       });

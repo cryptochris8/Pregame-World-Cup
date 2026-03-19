@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "title": "FIFA World Cup 2026 Betting Odds & Predictions",
+    "title": "World Cup 2026 Betting Odds & Predictions",
     "description": "Compiled outright winner odds, group winner odds, golden boot odds, power rankings, and analyst predictions from major bookmakers and sports outlets",
     "last_updated": "2026-03-08",
     "data_freshness_note": "Outright and group winner odds primarily sourced from December 2025 post-draw lines. Prediction market data (Polymarket/Kalshi) updated through February 2026. Power rankings reflect January-February 2026 analysis. Updated March 2026 to reflect final qualified teams. Odds will continue to shift as the tournament approaches.",
     "tournament": {
-      "name": "2026 FIFA World Cup",
+      "name": "2026 World Cup",
       "dates": "June 11 - July 19, 2026",
       "host_countries": ["USA", "Canada", "Mexico"],
       "final_venue": "MetLife Stadium, New Jersey",
@@ -14,7 +14,7 @@
     }
   },
   "outright_winner_odds": {
-    "description": "Odds to win the 2026 FIFA World Cup outright",
+    "description": "Odds to win the 2026 World Cup outright",
     "sources": [
       {
         "bookmaker": "DraftKings",
@@ -55,7 +55,7 @@
         "betmgm_odds": "+400",
         "fanduel_odds": "+410",
         "tier": "favorite",
-        "notes": "Reigning European champions. Won Euro 2024. Top of FIFA rankings. Favored across all bookmakers."
+        "notes": "Reigning European champions. Won Euro 2024. Top of world rankings. Favored across all bookmakers."
       },
       {
         "team": "England",
@@ -1050,7 +1050,7 @@
       "date": "2025-12-10",
       "title": "Post-Draw Power Rankings",
       "rankings": [
-        {"rank": 1, "team": "Spain", "code": "ESP", "notes": "Top of FIFA world rankings. Euro 2024 champions."},
+        {"rank": 1, "team": "Spain", "code": "ESP", "notes": "Top of world rankings. Euro 2024 champions."},
         {"rank": 2, "team": "Argentina", "code": "ARG", "notes": "Defending World Cup champions. Copa America winners."},
         {"rank": 3, "team": "France", "code": "FRA", "notes": "Reached final in 4 of last 7 World Cups."},
         {"rank": 4, "team": "England", "code": "ENG", "notes": "Perfect qualifying record under Tuchel."},
@@ -1185,7 +1185,7 @@
         "source_url": "https://www.espn.com/soccer/story/_/id/47211639/2026-world-cup-draw-groups-takeaways-predictions-see-games",
         "date": "2025-12-05",
         "predicted_winner": "Spain",
-        "reasoning": "Current favorites after European success. Top of FIFA world rankings."
+        "reasoning": "Current favorites after European success. Top of world rankings."
       },
       {
         "source": "NBC Sports (Joe Prince-Wright)",

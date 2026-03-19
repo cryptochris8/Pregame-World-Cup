@@ -340,11 +340,11 @@ class AIMatchPrediction extends Equatable {
       drawProbability: drawProb,
       awayWinProbability: awayProb,
       keyFactors: const [
-        'FIFA World Rankings comparison',
+        'World Rankings comparison',
         'Historical World Cup performance',
         'Tournament stage dynamics',
       ],
-      analysis: 'Based on FIFA rankings and historical data.',
+      analysis: 'Based on world rankings and historical data.',
       quickInsight: 'Ranking-based prediction',
       provider: 'Fallback',
       generatedAt: DateTime.now(),

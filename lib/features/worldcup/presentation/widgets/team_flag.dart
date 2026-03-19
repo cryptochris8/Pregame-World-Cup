@@ -63,7 +63,7 @@ class TeamFlag extends StatelessWidget {
         Text(
           teamCode!,
           style: TextStyle(
-            fontSize: size * 0.35,
+            fontSize: (size * 0.35).clamp(11.0, double.infinity),
             fontWeight: FontWeight.bold,
             color: Colors.grey.shade700,
           ),
@@ -96,7 +96,7 @@ class TeamFlag extends StatelessWidget {
             ? Text(
                 teamCode!.substring(0, teamCode!.length.clamp(0, 2)),
                 style: TextStyle(
-                  fontSize: size * 0.4,
+                  fontSize: (size * 0.4).clamp(11.0, double.infinity),
                   fontWeight: FontWeight.bold,
                   color: Colors.grey.shade600,
                 ),

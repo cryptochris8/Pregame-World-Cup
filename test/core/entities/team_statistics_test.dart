@@ -239,7 +239,7 @@ void main() {
         );
 
         expect(rankedStats.isTopRanked, isTrue);
-        expect(rankedStats.rankingDisplay, equals('FIFA #1'));
+        expect(rankedStats.rankingDisplay, equals('Ranked #1'));
       });
 
       test('isTopRanked returns false for unranked teams', () {

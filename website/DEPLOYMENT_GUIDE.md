@@ -153,7 +153,7 @@ netlify deploy --prod
 
 8. **Social Media**
    - Share the website on Twitter, Instagram, Facebook
-   - Use hashtags: #WorldCup2026 #FIFA2026 #PregameApp
+   - Use hashtags: #WorldCup2026 #WC2026 #PregameApp
 
 9. **App Store Optimization**
    - Link website in App Store/Play Store listings

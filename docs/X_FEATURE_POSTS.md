@@ -29,7 +29,7 @@ pregameworldcup.com
 
 9 factors power each one:
 
-📊 FIFA rankings
+📊 World rankings
 💰 Betting odds & squad value
 📈 Recent form
 🤝 Head-to-head history
@@ -79,7 +79,7 @@ pregameworldcup.com
 
 Tap any of the 48 teams and get everything:
 
-🏅 FIFA ranking & World Cup history
+🏅 World ranking & World Cup history
 👥 Full 26-player squad
 🧠 Manager profile & formation
 ⚽ Every group stage match
@@ -205,7 +205,7 @@ Context that makes every World Cup game better 🔥
 
 pregameworldcup.com
 
-#FIFA
+#WorldCup2026
 
 
 ## Post 13 - Predictions & Leaderboards
@@ -268,12 +268,11 @@ pregameworldcup.com
 
 Tag 1-2 per post max. Match the account to the post topic.
 
-### 🏛️ Official FIFA & World Cup
+### 🏛️ Official World Cup
 | Account | Why Tag |
 |---------|---------|
 | @FIFAWorldCup | Main World Cup account (60M+ followers) — tag on big posts |
-| @FIFAcom | FIFA's main account — tag on tournament-wide posts |
-| @FIFAMediaInfo | FIFA's press/media — tag if seeking press pickup |
+| @FIFAcom | Official tournament account — tag on tournament-wide posts |
 
 ### 🏟️ Host City Accounts (Tag on Venue Finder & Watch Party posts)
 | Account | City |
@@ -360,7 +359,7 @@ Tag 1-2 per post max. Match the account to the post topic.
 ## Hashtag Strategy
 
 ### 🔥 Primary (use on most posts — high volume, high discovery)
-#WorldCup2026 #WC2026 #FIFA #FIFAWorldCup
+#WorldCup2026 #WC2026 #WorldCup #Football
 
 ### ⚽ Soccer Community (rotate 1-2 per post)
 #Football #Soccer #CopaDelMundo #FutbolMundial
@@ -394,20 +393,20 @@ These will spike as the tournament approaches — jump on them:
 
 | Post | Accounts to Tag | Hashtags |
 |------|----------------|----------|
-| 1 - App Intro | @FIFAWorldCup | #WorldCup2026 #FIFAWorldCup |
+| 1 - App Intro | @FIFAWorldCup | #WorldCup2026 #WC2026 |
 | 2 - AI Predictions | @AnthropicAI @ESPNFC | #WorldCup2026 #AIpredictions |
-| 3 - Match Schedule | @FIFAWorldCup @FOXSoccer | #WorldCup2026 #WC2026 |
-| 4 - Groups & Standings | @ESPNFC @433 | #WorldCup2026 #FIFA |
+| 3 - Match Schedule | @FOXSoccer @ESPNFC | #WorldCup2026 #WC2026 |
+| 4 - Groups & Standings | @ESPNFC @433 | #WorldCup2026 #Football |
 | 5 - Team Profiles | @ussoccer or team-specific | #WorldCup2026 + team tag |
 | 6 - Player Comparison | @FabrizioRomano @GOAL | #WorldCup2026 #Football |
 | 7 - Watch Parties | @AmericanOutlaws + host city | #WorldCup2026 #WatchParty + city |
 | 8 - Live Match Chat | @MenInBlazers @BleacherReport | #WorldCup2026 #WC2026 |
 | 9 - Venue Finder | 2-3 host city accounts | #WorldCup2026 + city tags |
 | 10 - Manager Profiles | @TheAthleticFC @CBSSportsGolazo | #WorldCup2026 #Football |
-| 11 - Multi-Language | @FIFAcom @miseleccionmx | #CopaDelMundo #FutbolMundial |
+| 11 - Multi-Language | @miseleccionmx @CBF_Futebol | #CopaDelMundo #FutbolMundial |
 | 12 - Head-to-Head | Team accounts for the matchup | #WorldCup2026 + team tags |
 | 13 - Predictions | @MenInBlazers @HerculezGomez | #WorldCup2026 #MatchPredictions |
-| 14 - Notifications | @FIFAWorldCup | #WorldCup2026 #WC2026 |
+| 14 - Notifications | @ESPNFC @FOXSoccer | #WorldCup2026 #WC2026 |
 
 
 ## Posting Tips

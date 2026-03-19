@@ -73,7 +73,7 @@ class TeamStatistics {
   bool get isTopRanked => fifaRanking > 0 && fifaRanking <= 20;
 
   /// Get formatted ranking display
-  String get rankingDisplay => fifaRanking > 0 ? 'FIFA #$fifaRanking' : 'Unranked';
+  String get rankingDisplay => fifaRanking > 0 ? 'Ranked #$fifaRanking' : 'Unranked';
 }
 
 /// Attack statistics for team performance in soccer

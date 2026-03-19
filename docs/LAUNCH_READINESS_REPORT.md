@@ -505,7 +505,7 @@ When RevenueCat is not configured, the app falls back to Stripe browser checkout
 
 **Already prepared (in `PLAY_STORE_SUBMISSION.md`):**
 - App name: Pregame World Cup 2026
-- Short description (80 chars): "Your ultimate companion for FIFA World Cup 2026. Live scores, watch parties & more!"
+- Short description (80 chars): "Your ultimate companion for World Cup 2026. Live scores, watch parties & more!"
 - Full description (4000 chars): Detailed, covers features, premium upsell
 - Category: App (not Game), Free with in-app purchases
 - Default language: English (US)

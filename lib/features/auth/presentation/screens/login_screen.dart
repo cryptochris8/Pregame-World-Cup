@@ -714,7 +714,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               l10n.appDisclaimer,
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: AppTheme.textTertiary.withValues(alpha: 0.6),
+                                color: AppTheme.textTertiary.withValues(alpha: 0.8),
                                 fontSize: 11,
                               ),
                             ),

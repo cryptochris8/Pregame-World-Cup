@@ -15,7 +15,7 @@ This resubmission addresses both issues identified during the initial App Store 
 1. **Guideline 5.2.1 — Legal: Intellectual Property** — Unauthorized use of FIFA trademarks
 2. **Guideline 4 — Design: Minimum Legibility** — Font sizes too small to read comfortably
 
-All changes have been verified and tested. The full test suite (9,700+ tests) passes without regressions.
+All changes have been verified and tested. The full test suite (9,711 tests) passes without regressions.
 
 ---
 
@@ -112,6 +112,46 @@ Translated into all 4 supported languages (English, Spanish, French, Portuguese)
 | `assets/Marketing/REDDIT_KEYWORDS.txt` | "FIFA World Cup" → "World Cup 2026"; "FIFA 2026" → "World Cup 2026" |
 | `assets/Marketing/REDDIT_VIDEO_AD.md` | r/FIFA → r/soccer |
 
+#### Deep Audit — Additional Source Code Fixes (6 files, 8 edits)
+
+A second comprehensive audit identified additional user-facing FIFA strings in AI prediction and ranking logic:
+
+| File | Change |
+|------|--------|
+| `lib/core/entities/team_statistics.dart` | Ranking display: "FIFA #N" → "Ranked #N" |
+| `lib/features/worldcup/domain/entities/ai_match_prediction.dart` | Fallback key factors: "FIFA World Rankings comparison" → "World Rankings comparison"; analysis: "Based on FIFA rankings" → "Based on world rankings" |
+| `lib/services/espn_historical_service.dart` | Match summary ranking labels: "(FIFA #N)" → "(#N)" |
+| `lib/features/worldcup/data/services/prediction/prediction_narrative_builder.dart` | Narrative: "in FIFA rankings" → "in world rankings" |
+| `lib/features/worldcup/data/services/world_cup_ai_service.dart` | Fallback reasoning: "higher FIFA ranking" → "higher world ranking" (2 instances) |
+
+#### Deep Audit — Additional Documentation Fixes (4 files, 4 edits)
+
+| File | Change |
+|------|--------|
+| `docs/X_FEATURE_POSTS.md` | Replaced "FIFA rankings" with "World rankings"; removed #FIFA/#FIFAWorldCup hashtags; replaced @FIFAcom/@FIFAMediaInfo account tags with non-FIFA alternatives |
+| `docs/LAUNCH_READINESS_REPORT.md` | Short description: "FIFA World Cup 2026" → "World Cup 2026" |
+| `docs/TERMS_OF_SERVICE.md` | Service description: "FIFA World Cup 2026" → "World Cup 2026" |
+| `website/DEPLOYMENT_GUIDE.md` | Hashtag: "#FIFA2026" → "#WC2026" |
+
+#### Deep Audit — Data File Fixes (1 file, 6 edits)
+
+| File | Change |
+|------|--------|
+| `assets/data/worldcup/betting_odds.json` | Removed "FIFA" from title, tournament name, description, and team notes; "FIFA World Cup" → "World Cup", "Top of FIFA rankings" → "Top of world rankings" |
+
+#### Deep Audit — Typography: Dynamic Font Size Fix (1 file, 2 edits)
+
+| File | Change |
+|------|--------|
+| `lib/features/worldcup/presentation/widgets/team_flag.dart` | Dynamic font calculations now enforce minimum 11pt: `fontSize: (size * 0.35).clamp(11.0, double.infinity)` and `fontSize: (size * 0.4).clamp(11.0, double.infinity)`. Previously could produce 7-8pt text when widget was rendered at small sizes. |
+
+#### Deep Audit — Contrast Improvements (2 files, 2 edits)
+
+| File | Change |
+|------|--------|
+| `lib/features/auth/presentation/screens/login_screen.dart` | Disclaimer text alpha increased from 0.6 → 0.8 for better legibility |
+| `lib/features/social/presentation/widgets/profile_account_actions.dart` | Disclaimer text opacity increased from 0.5 → 0.7 for better legibility |
+
 ### What Remains (Intentionally)
 
 The following FIFA references remain in the codebase and are **not** user-facing trademark uses:
@@ -185,7 +225,7 @@ All `fontSize: 10` instances updated to `fontSize: 11` across the following widg
 ## Testing & Verification
 
 1. **`flutter gen-l10n`** — Completed successfully, all 4 language files regenerated
-2. **`flutter test`** — Full test suite executed (9,700+ tests)
+2. **`flutter test`** — Full test suite executed (9,711 tests, all passing)
 3. **FIFA grep audit** — Verified no unauthorized FIFA trademark usage in user-facing content
 4. **Font size audit** — Verified no font sizes below 11pt remain in application code
 
@@ -201,8 +241,13 @@ All `fontSize: 10` instances updated to `fontSize: 11` across the following widg
 | FIFA IP — Website | 2 | 2 |
 | FIFA IP — Documentation | 4 | 10 |
 | FIFA IP — Marketing | 6 | ~30 |
+| FIFA IP — Deep Audit Source Code | 6 | 8 |
+| FIFA IP — Deep Audit Docs | 4 | 4 |
+| FIFA IP — Deep Audit Data Files | 1 | 6 |
 | Typography — Font Sizes | 27 | 53 |
-| **Total** | **~50 files** | **~135 edits** |
+| Typography — Dynamic Font Clamp | 1 | 2 |
+| Typography — Contrast Improvements | 2 | 2 |
+| **Total** | **~60 files** | **~157 edits** |
 
 ---
 

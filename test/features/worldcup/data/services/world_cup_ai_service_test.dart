@@ -189,7 +189,7 @@ void main() {
         expect(result.matchId, 'match_1');
         expect(result.provider, 'Fallback');
         expect(result.confidence, 40);
-        expect(result.keyFactors, contains('FIFA World Rankings comparison'));
+        expect(result.keyFactors, contains('World Rankings comparison'));
       });
 
       test('fallback uses team rankings to determine prediction', () async {
@@ -433,8 +433,8 @@ void main() {
         expect(result['provider'], 'Fallback');
         expect(result['confidence'], 40);
         // Fallback uses AIMatchPrediction.fallback which has
-        // keyFactors: ['FIFA World Rankings comparison', ...]
-        expect(result['reasoning'], 'FIFA World Rankings comparison');
+        // keyFactors: ['World Rankings comparison', ...]
+        expect(result['reasoning'], 'World Rankings comparison');
         // homeRank=3, awayRank=1: away team ranked higher, diff=2
         // awayScore = diff > 20 ? 2 : 1 -> 1
         // homeScore = diff > 30 ? 0 : 1 -> 1
@@ -469,7 +469,7 @@ void main() {
         // awayScore = diff > 30 ? 0 : 1 -> 0
         expect(result['homeScore'], 2);
         expect(result['awayScore'], 0);
-        expect(result['reasoning'], 'FIFA World Rankings comparison');
+        expect(result['reasoning'], 'World Rankings comparison');
       });
 
       test('fallback suggestion for evenly matched teams', () async {
@@ -497,7 +497,7 @@ void main() {
         expect(result['homeScore'], 1);
         expect(result['awayScore'], 1);
         expect(result['confidence'], 40);
-        expect(result['reasoning'], 'FIFA World Rankings comparison');
+        expect(result['reasoning'], 'World Rankings comparison');
       });
 
       test('fallback suggestion with null teams', () async {

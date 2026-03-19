@@ -498,14 +498,14 @@ class ESPNHistoricalService {
 
     // Add FIFA ranking context
     if (homeRank != null && homeRank <= 50) {
-      summary += '(FIFA #$homeRank) ';
+      summary += '(#$homeRank) ';
     }
     summary += homeTeam;
 
     summary += ' vs ';
 
     if (awayRank != null && awayRank <= 50) {
-      summary += '(FIFA #$awayRank) ';
+      summary += '(#$awayRank) ';
     }
     summary += awayTeam;
 

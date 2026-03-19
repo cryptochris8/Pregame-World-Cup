@@ -12,7 +12,7 @@ By downloading, installing, or using Pregame World Cup 2026 ("App"), you agree t
 
 Pregame World Cup 2026 is a mobile application that provides:
 
-- FIFA World Cup 2026 match schedules and information
+- World Cup 2026 match schedules and information
 - AI-powered match predictions and insights
 - Venue and watch party discovery
 - Social features for connecting with other fans

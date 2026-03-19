@@ -137,7 +137,7 @@ class WorldCupAIService {
         'homeScore': 2,
         'awayScore': 1,
         'confidence': 55,
-        'reasoning': 'Home team has higher FIFA ranking',
+        'reasoning': 'Home team has higher world ranking',
         'provider': 'Fallback',
       };
     } else if (awayRank < homeRank) {
@@ -145,7 +145,7 @@ class WorldCupAIService {
         'homeScore': 1,
         'awayScore': 2,
         'confidence': 55,
-        'reasoning': 'Away team has higher FIFA ranking',
+        'reasoning': 'Away team has higher world ranking',
         'provider': 'Fallback',
       };
     } else {
