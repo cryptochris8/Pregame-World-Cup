@@ -72,6 +72,19 @@ Localization files regenerated via `flutter gen-l10n` after edits.
 | `lib/services/espn_team_matcher.dart` | Comment: "FIFA World Cup" → "World Cup" |
 | `lib/core/ai/README.md` | Documentation: "FIFA World Cup 2026" → "World Cup 2026" |
 
+#### In-App Legal Disclaimer (2 files, 2 additions)
+
+A localized disclaimer was added to two key screens visible to reviewers and users:
+
+| File | Location |
+|------|----------|
+| `lib/features/auth/presentation/screens/login_screen.dart` | Below Privacy Policy / Terms of Service links on the login screen |
+| `lib/features/social/presentation/widgets/profile_account_actions.dart` | Below Privacy Policy / Terms of Service links on the user profile screen |
+
+Disclaimer text (English): *"Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization."*
+
+Translated into all 4 supported languages (English, Spanish, French, Portuguese) via the localization system.
+
 #### Website (2 files, 2 edits)
 
 | File | Change |

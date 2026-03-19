@@ -1338,5 +1338,6 @@
   "sendingEllipsis": "Enviando...",
   "verificationCode": "Código de Verificação",
   "digitCounter": "{count}/6 dígitos",
-  "verifyCode": "Verificar Código"
+  "verifyCode": "Verificar Código",
+  "appDisclaimer": "Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado pela FIFA ou por qualquer organização oficial do torneio."
 }

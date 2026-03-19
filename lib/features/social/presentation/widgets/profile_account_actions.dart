@@ -67,6 +67,20 @@ class ProfileAccountActions extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: 12),
+
+        // Independent app disclaimer
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 32),
+          child: Text(
+            l10n.appDisclaimer,
+            textAlign: TextAlign.center,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.textTheme.bodyMedium?.color?.withOpacity(0.5),
+              fontSize: 11,
+            ),
+          ),
+        ),
         const SizedBox(height: 24),
 
         // Export Data Button

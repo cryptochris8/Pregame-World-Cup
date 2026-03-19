@@ -7685,6 +7685,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Verify Code'**
   String get verifyCode;
+
+  /// Legal disclaimer shown on login and profile screens
+  ///
+  /// In en, this message translates to:
+  /// **'Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization.'**
+  String get appDisclaimer;
 }
 
 class _AppLocalizationsDelegate

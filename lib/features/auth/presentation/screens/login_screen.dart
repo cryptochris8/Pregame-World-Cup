@@ -705,6 +705,20 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ],
                           ),
+
+                          // Independent app disclaimer
+                          const SizedBox(height: 12),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 32),
+                            child: Text(
+                              l10n.appDisclaimer,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: AppTheme.textTertiary.withValues(alpha: 0.6),
+                                fontSize: 11,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),

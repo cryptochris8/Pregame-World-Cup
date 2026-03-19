@@ -4173,4 +4173,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get verifyCode => 'Verify Code';
+
+  @override
+  String get appDisclaimer =>
+      'Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization.';
 }

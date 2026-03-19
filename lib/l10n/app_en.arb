@@ -5384,5 +5384,9 @@
   "verifyCode": "Verify Code",
   "@verifyCode": {
     "description": "Button to verify the SMS code"
+  },
+  "appDisclaimer": "Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization.",
+  "@appDisclaimer": {
+    "description": "Legal disclaimer shown on login and profile screens"
   }
 }
