@@ -167,7 +167,7 @@ class EnhancedVenueCard extends StatelessWidget {
             'Popular',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -224,7 +224,7 @@ class EnhancedVenueCard extends StatelessWidget {
             'Open',
             style: TextStyle(
               color: Color(0xFF10B981), // Success green from app theme
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: FontWeight.bold,
             ),
           ),

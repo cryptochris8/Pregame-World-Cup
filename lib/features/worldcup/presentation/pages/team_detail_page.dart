@@ -247,7 +247,7 @@ class TeamDetailPage extends StatelessWidget {
             Text(
               label,
               style: const TextStyle(
-                fontSize: 10,
+                fontSize: 11,
                 color: Colors.white60,
               ),
               textAlign: TextAlign.center,

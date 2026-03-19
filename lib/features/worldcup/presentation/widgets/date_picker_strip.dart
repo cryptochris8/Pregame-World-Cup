@@ -318,7 +318,7 @@ class _CompactDateItem extends StatelessWidget {
               dayOfWeek,
               style: TextStyle(
                 color: isSelected ? Colors.white : Colors.white54,
-                fontSize: 10,
+                fontSize: 11,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -347,7 +347,7 @@ class _CompactDateItem extends StatelessWidget {
                     '$matchCount',
                     style: TextStyle(
                       color: isSelected ? Colors.white : Colors.white,
-                      fontSize: 10,
+                      fontSize: 11,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

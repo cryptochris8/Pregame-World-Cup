@@ -212,7 +212,7 @@ class OfflineStatusIcon extends StatelessWidget {
                       '${service.pendingActionsCount}',
                       style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 10,
+                        fontSize: 11,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.center,

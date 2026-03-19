@@ -54,7 +54,7 @@ class BracketMatchCard extends StatelessWidget {
                       Text(
                         _getStageLabel(),
                         style: const TextStyle(
-                          fontSize: 9,
+                          fontSize: 11,
                           color: Colors.white60,
                           fontWeight: FontWeight.w500,
                         ),
@@ -84,7 +84,7 @@ class BracketMatchCard extends StatelessWidget {
                     Text(
                       _formatDateTime(),
                       style: const TextStyle(
-                        fontSize: 10,
+                        fontSize: 11,
                         color: Colors.white38,
                       ),
                     ),

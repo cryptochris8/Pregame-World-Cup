@@ -72,7 +72,7 @@ void main() {
         expect(event.endTime, matchTime.add(const Duration(hours: 2)));
         expect(event.type, CalendarEventType.match);
         expect(event.location, 'MetLife Stadium, East Rutherford');
-        expect(event.description, contains('FIFA World Cup 2026'));
+        expect(event.description, contains('World Cup 2026'));
         expect(event.description, contains('Brazil vs Argentina'));
         expect(event.description, contains('Stage: Group A'));
         expect(event.description, contains('Venue: MetLife Stadium, East Rutherford'));

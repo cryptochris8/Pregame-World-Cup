@@ -325,7 +325,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                                   badgeCount > 99 ? '99+' : '$badgeCount',
                                   style: const TextStyle(
                                     color: Colors.white,
-                                    fontSize: 8,
+                                    fontSize: 11,
                                     fontWeight: FontWeight.bold,
                                   ),
                                   textAlign: TextAlign.center,
@@ -339,7 +339,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                     AnimatedDefaultTextStyle(
                       duration: const Duration(milliseconds: 200),
                       style: TextStyle(
-                        fontSize: 9,
+                        fontSize: 11,
                         color: isSelected ? color : Colors.grey[600],
                         fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                       ),

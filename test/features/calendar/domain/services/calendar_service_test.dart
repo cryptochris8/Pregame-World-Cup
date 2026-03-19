@@ -104,10 +104,10 @@ void main() {
         final events = [createTestEvent()];
         final ical = calendarService.generateICalContent(
           events,
-          calendarName: 'FIFA World Cup 2026',
+          calendarName: 'World Cup 2026',
         );
 
-        expect(ical, contains('X-WR-CALNAME:FIFA World Cup 2026'));
+        expect(ical, contains('X-WR-CALNAME:World Cup 2026'));
       });
 
       test('does not include calendar name when not provided', () {

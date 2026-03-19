@@ -126,7 +126,7 @@ class MatchupNotableMatches extends StatelessWidget {
                   child: Text(
                     match.stage!,
                     style: TextStyle(
-                      fontSize: 10,
+                      fontSize: 11,
                       color: _getStageColor(match.stage!),
                       fontWeight: FontWeight.w500,
                     ),

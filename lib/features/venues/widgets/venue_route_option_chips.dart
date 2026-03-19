@@ -93,7 +93,7 @@ class VenueRouteOptionChips extends StatelessWidget {
                 Text(
                   VenueRecommendationService.formatWalkingTime(estimatedTime),
                   style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 11,
                     color: isSelected ? Colors.white.withValues(alpha: 0.8) : Colors.grey[500],
                   ),
                 ),

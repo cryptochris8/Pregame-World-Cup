@@ -3,7 +3,7 @@
 ## Bio Options (160 char limit)
 
 ### Option 1 - Feature-packed
-The ultimate FIFA World Cup 2026 companion app. Live scores, AI predictions, watch parties, 48 teams, 104 matches. Free on iOS & Android. pregameworldcup.com
+The ultimate World Cup 2026 companion app. Live scores, AI predictions, watch parties, 48 teams, 104 matches. Free on iOS & Android. pregameworldcup.com
 
 ### Option 2 - Hype/Community-focused
 World Cup 2026 starts June 11. Track every match, predict outcomes, find watch parties & connect with fans across USA, Mexico & Canada. pregameworldcup.com
@@ -15,7 +15,7 @@ AI-powered fan app for the biggest World Cup ever. 48 teams. 104 matches. 16 cit
 
 ## Expanded Bio (~300 chars, for profile or longer format)
 
-Your ultimate companion for FIFA World Cup 2026. AI-powered match predictions, live scores, watch party discovery, 48 teams, 104 matches across 16 host cities in USA, Mexico & Canada. Connect with fans worldwide. Free on iOS & Android.
+Your ultimate companion for World Cup 2026. AI-powered match predictions, live scores, watch party discovery, 48 teams, 104 matches across 16 host cities in USA, Mexico & Canada. Connect with fans worldwide. Free on iOS & Android.
 
 pregameworldcup.com
 
@@ -23,7 +23,7 @@ pregameworldcup.com
 
 ## Pinned Post / Thread
 
-Pregame World Cup 2026 - the all-in-one fan app for the largest FIFA World Cup in history.
+Pregame World Cup 2026 - the all-in-one fan app for the largest World Cup in history.
 
 What you get:
 - Live scores & match updates for all 104 matches
@@ -37,4 +37,4 @@ What you get:
 Free on iOS (TestFlight) & coming to Android.
 pregameworldcup.com
 
-#WorldCup2026 #FIFA #WC2026
+#WorldCup2026 #WC2026

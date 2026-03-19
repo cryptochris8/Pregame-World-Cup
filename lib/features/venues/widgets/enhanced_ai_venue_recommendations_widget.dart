@@ -311,7 +311,7 @@ class _EnhancedAIVenueRecommendationsWidgetState
                 Text(
                   'Personalized',
                   style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 11,
                     color: Colors.green,
                     fontWeight: FontWeight.w600,
                   ),

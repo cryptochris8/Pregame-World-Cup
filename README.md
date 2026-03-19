@@ -1,18 +1,18 @@
 # Pregame World Cup 2026
 
-A mobile sports fan app for FIFA World Cup 2026, connecting fans with matches, venues, watch parties, and fellow supporters across the USA, Mexico, and Canada.
+A mobile sports fan app for World Cup 2026, connecting fans with matches, venues, watch parties, and fellow supporters across the USA, Mexico, and Canada.
 
 **Forked from**: [Pregame](../Pregame) (College Football version)
 
 ## Overview
 
-Pregame World Cup 2026 is a cross-platform mobile app (Flutter) with a companion web portal (React) designed to enhance the fan experience for the FIFA World Cup 2026 tournament.
+Pregame World Cup 2026 is a cross-platform mobile app (Flutter) with a companion web portal (React) designed to enhance the fan experience for the World Cup 2026 tournament.
 
 ### Key Features
 
 - **Match Schedule** - All 104 World Cup matches with live scores
 - **Team Tracking** - Follow your favorite national teams through the tournament
-- **Venue Discovery** - Find FIFA Fan Festivals, sports bars, and watch parties
+- **Venue Discovery** - Find official World Cup fan zones, sports bars, and watch parties
 - **Predictions** - Predict match results and compete on leaderboards
 - **Social Features** - Connect with fans, share photos, send messages
 - **Real-time Chat** - Message friends with text, voice, and media
@@ -121,7 +121,7 @@ This project is being adapted from the original college football version:
 - [ ] Replace SEC team logos with national team flags
 - [ ] Create group stage tables view
 - [ ] Create knockout bracket view
-- [ ] Update venue discovery for FIFA Fan Festivals
+- [ ] Update venue discovery for official World Cup fan zones
 - [ ] Add country selector for favorite teams
 
 ### Features

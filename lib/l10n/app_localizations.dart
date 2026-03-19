@@ -525,7 +525,7 @@ abstract class AppLocalizations {
   /// Title for FIFA World Cup
   ///
   /// In en, this message translates to:
-  /// **'FIFA World Cup'**
+  /// **'World Cup'**
   String get fifaWorldCup;
 
   /// Label for live matches
@@ -1995,7 +1995,7 @@ abstract class AppLocalizations {
   /// FIFA World Cup 2026 badge text
   ///
   /// In en, this message translates to:
-  /// **'FIFA World Cup 2026'**
+  /// **'World Cup 2026'**
   String get fifaWorldCup2026;
 
   /// Live ESPN data badge
@@ -2793,7 +2793,7 @@ abstract class AppLocalizations {
   /// FIFA code label
   ///
   /// In en, this message translates to:
-  /// **'FIFA Code'**
+  /// **'Country Code'**
   String get fifaCode;
 
   /// Confederation label

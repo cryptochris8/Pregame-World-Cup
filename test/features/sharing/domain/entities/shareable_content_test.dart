@@ -246,9 +246,9 @@ void main() {
         expect(result.hashtags, isNot(contains('LiveScore')));
       });
 
-      test('includes FIFA hashtag', () {
+      test('includes WorldCup hashtag', () {
         final result = createResult();
-        expect(result.hashtags, contains('FIFA'));
+        expect(result.hashtags, contains('WorldCup'));
       });
     });
   });

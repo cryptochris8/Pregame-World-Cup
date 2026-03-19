@@ -374,7 +374,7 @@ class WorldCupDashboardPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'FIFA World Cup 2026',
+              'World Cup 2026',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

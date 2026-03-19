@@ -187,7 +187,7 @@ class ShareableMatchResult extends ShareableContent {
         if (isLive) 'LiveScore',
         homeTeam.replaceAll(' ', ''),
         awayTeam.replaceAll(' ', ''),
-        'FIFA',
+        'WorldCup',
       ];
 }
 

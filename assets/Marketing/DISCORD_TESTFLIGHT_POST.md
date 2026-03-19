@@ -11,7 +11,7 @@ Copy and paste the content below into your Discord:
 
 ⚽ FREE SUPERFAN PASS - Help Test My New World Cup 2026 App! 🏆
 
-Hey Hytopia fam! I've been building something BIG outside of gaming - the ultimate FIFA World Cup 2026 fan app, and it just went LIVE on TestFlight!
+Hey Hytopia fam! I've been building something BIG outside of gaming - the ultimate World Cup 2026 fan app, and it just went LIVE on TestFlight!
 
 🎁 What you get for helping test:
 ✅ FREE Lifetime Superfan Pass (normally paid)
@@ -49,7 +49,7 @@ Hey everyone! 👋
 
 You know me from building Hytopia games, but I've been working on something completely different - and it's finally ready for testing!
 
-**PREGAME - World Cup 2026** is a fan app I've been developing for the upcoming FIFA World Cup in the USA, Mexico, and Canada. It just went live on TestFlight and I need YOUR help finding bugs before the public launch!
+**PREGAME - World Cup 2026** is a fan app I've been developing for the upcoming World Cup in the USA, Mexico, and Canada. It just went live on TestFlight and I need YOUR help finding bugs before the public launch!
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -229,5 +229,5 @@ Create a Google Sheet or Notion to track:
 ## HASHTAGS FOR SOCIAL MEDIA CROSS-POSTING
 
 ```
-#WorldCup2026 #FIFA #Pregame #BetaTesting #TestFlight #iOS #SoccerApp #FutbolApp #WorldCup #USA2026 #BuildInPublic #IndieApp
+#WorldCup2026 #Pregame #BetaTesting #TestFlight #iOS #SoccerApp #FutbolApp #WorldCup #USA2026 #BuildInPublic #IndieApp
 ```

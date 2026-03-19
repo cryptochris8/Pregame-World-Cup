@@ -176,7 +176,7 @@ class WatchPartyChatMessage extends StatelessWidget {
                     child: Text(
                       message.formattedTime,
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 11,
                         color: Colors.grey[500],
                       ),
                     ),
@@ -241,7 +241,7 @@ class WatchPartyChatMessage extends StatelessWidget {
       child: Text(
         message.isFromHost ? 'Host' : 'Co-Host',
         style: TextStyle(
-          fontSize: 9,
+          fontSize: 11,
           fontWeight: FontWeight.bold,
           color: _getRoleColor(message.senderRole),
         ),
@@ -315,7 +315,7 @@ class WatchPartyChatMessage extends StatelessWidget {
                   const SizedBox(width: 2),
                   Text(
                     '$count',
-                    style: const TextStyle(fontSize: 10),
+                    style: const TextStyle(fontSize: 11),
                   ),
                 ],
               ],

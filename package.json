@@ -1,7 +1,7 @@
 {
   "name": "pregame-worldcup-portal",
   "version": "1.0.0",
-  "description": "Pregame World Cup 2026 - Venue & Watch Party Portal for FIFA World Cup",
+  "description": "Pregame World Cup 2026 - Venue & Watch Party Portal for World Cup 2026",
   "main": "src/index.tsx",
   "scripts": {
     "start": "webpack serve --mode development",

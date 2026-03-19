@@ -9,7 +9,7 @@ Initial release for iOS App Store and Google Play Store.
 ### Features
 
 #### Core World Cup Experience
-- Full FIFA World Cup 2026 match schedule with all 104 matches across 16 venues
+- Full World Cup 2026 match schedule with all 104 matches across 16 venues
 - All 48 qualified national teams with rosters, manager profiles, and team colors
 - Multi-timezone support for match times with automatic local conversion
 - Player Spotlight with detailed profiles, stats, and World Cup history

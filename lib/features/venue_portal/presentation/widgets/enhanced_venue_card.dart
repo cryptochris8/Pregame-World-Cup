@@ -241,7 +241,7 @@ class EnhancedVenueCard extends StatelessWidget {
             label,
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -287,7 +287,7 @@ class EnhancedVenueCard extends StatelessWidget {
             capacity.occupancyText,
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -312,7 +312,7 @@ class EnhancedVenueCard extends StatelessWidget {
       child: Text(
         formattedTag,
         style: TextStyle(
-          fontSize: 10,
+          fontSize: 11,
           color: colorScheme.onSurfaceVariant,
         ),
       ),
@@ -483,7 +483,7 @@ class EnhancedVenueListTile extends StatelessWidget {
             Text(
               label,
               style: TextStyle(
-                fontSize: 10,
+                fontSize: 11,
                 fontWeight: FontWeight.bold,
                 color: color ?? Colors.blue,
               ),

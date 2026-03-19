@@ -280,7 +280,7 @@ class CalendarService {
       return await shareICalFile(
         allMatches,
         filename: 'world_cup_2026_full.ics',
-        calendarName: 'FIFA World Cup 2026',
+        calendarName: 'World Cup 2026',
       );
     } catch (e) {
       LoggingService.error('Error exporting full calendar: $e', tag: _logTag);

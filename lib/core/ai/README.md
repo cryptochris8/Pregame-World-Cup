@@ -220,7 +220,7 @@ When no API key is configured, the service runs in mock mode:
 final venueResponse = await aiService.generateCompletion(
   prompt: 'Recommend a venue for the World Cup quarter-final',
   systemMessage: '''
-    You are a local sports venue expert for the FIFA World Cup 2026. Consider:
+    You are a local sports venue expert for the World Cup 2026. Consider:
     - Atmosphere and crowd energy
     - Food quality and variety
     - TV screen visibility

@@ -223,7 +223,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get favorites => 'Favoritos';
 
   @override
-  String get fifaWorldCup => 'Copa Mundial de la FIFA';
+  String get fifaWorldCup => 'Copa Mundial';
 
   @override
   String get live => 'En Vivo';
@@ -1003,7 +1003,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get schedule => 'Calendario';
 
   @override
-  String get fifaWorldCup2026 => 'Copa del Mundo FIFA 2026';
+  String get fifaWorldCup2026 => 'Copa del Mundo 2026';
 
   @override
   String get liveEspnData => 'DATOS EN VIVO ESPN';
@@ -1446,7 +1446,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get country => 'País';
 
   @override
-  String get fifaCode => 'Código FIFA';
+  String get fifaCode => 'Código de País';
 
   @override
   String get confederation => 'Confederación';

@@ -278,7 +278,7 @@ class ReminderIndicator extends StatelessWidget {
           Text(
             'Reminder',
             style: TextStyle(
-              fontSize: 10,
+              fontSize: 11,
               color: Colors.amber,
               fontWeight: FontWeight.w500,
             ),

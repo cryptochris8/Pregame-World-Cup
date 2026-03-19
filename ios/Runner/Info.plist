@@ -42,9 +42,9 @@
 	
 	<!-- Location Services -->
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for FIFA World Cup 2026.</string>
+	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for World Cup 2026.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for FIFA World Cup 2026.</string>
+	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for World Cup 2026.</string>
 	
 	<!-- Camera and Photo Library -->
 	<key>NSCameraUsageDescription</key>

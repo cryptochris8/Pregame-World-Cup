@@ -167,7 +167,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
               Text(
                 ring.description,
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 11,
                   color: Colors.grey[600],
                 ),
               ),

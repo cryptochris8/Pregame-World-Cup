@@ -73,7 +73,7 @@ class TeamTile extends StatelessWidget {
                 child: const Text(
                   'HOST',
                   style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 11,
                     fontWeight: FontWeight.bold,
                     color: AppTheme.accentGold,
                   ),
@@ -251,7 +251,7 @@ class TeamCard extends StatelessWidget {
                             child: Text(
                               team.group!,
                               style: const TextStyle(
-                                fontSize: 10,
+                                fontSize: 11,
                                 color: AppTheme.primaryBlue,
                                 fontWeight: FontWeight.bold,
                               ),

@@ -484,7 +484,7 @@ class ESPNHistoricalService {
         'Did you know: $seriesRecord',
         'Last time these nations met: ${lastMeeting['result'] ?? 'Epic showdown'}',
         'Get ready for $rivalryName atmosphere at our watch party!',
-        '#WorldCup2026 #${rivalryName.replaceAll(' ', '')} #FIFA'
+        '#WorldCup2026 #${rivalryName.replaceAll(' ', '')}'
       ]
     };
   }
@@ -526,7 +526,7 @@ class ESPNHistoricalService {
         }
       }
     } else {
-      summary += ' in a FIFA World Cup 2026 clash.';
+      summary += ' in a World Cup 2026 clash.';
     }
 
     return summary;
@@ -768,7 +768,7 @@ class ESPNHistoricalService {
           'Set up multiple viewing screens',
           'Promote on social media with #WorldCup2026',
         ],
-        'marketing_emphasis': 'FIFA World Cup 2026 live viewing experience'
+        'marketing_emphasis': 'World Cup 2026 live viewing experience'
       }
     };
   }

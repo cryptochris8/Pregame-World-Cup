@@ -234,7 +234,7 @@ class SocialStatsCard extends StatelessWidget {
           Text(
             label,
             style: TextStyle(
-              fontSize: 10,
+              fontSize: 11,
               color: Colors.white.withValues(alpha:0.8),
               fontWeight: FontWeight.w500,
             ),

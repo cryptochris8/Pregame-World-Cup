@@ -55,12 +55,12 @@ Social Networking
 
 ### Promotional Text (max 170 characters - can be updated anytime)
 ```
-The 2026 FIFA World Cup is coming to North America! Get AI match predictions, find watch parties near you, chat with fans worldwide, and never miss a match. Download free.
+The 2026 World Cup is coming to North America! Get AI match predictions, find watch parties near you, chat with fans worldwide, and never miss a match. Download free.
 ```
 
 ### Description (max 4000 characters)
 ```
-Your ultimate companion for the 2026 FIFA World Cup in the USA, Mexico, and Canada.
+Your ultimate companion for the 2026 World Cup in the USA, Mexico, and Canada.
 
 Pregame brings everything a World Cup fan needs into one app -- live scores, AI-powered match predictions, watch party planning, real-time fan chat, venue discovery, and deep tournament coverage for all 48 teams across 104 matches.
 
@@ -106,12 +106,12 @@ Download free and start your Pregame today.
 
 ### Keywords (max 100 characters, comma-separated)
 ```
-world cup 2026,soccer,football,FIFA,predictions,watch party,live scores,fan,match,teams,chat,venues
+world cup 2026,soccer,football,predictions,watch party,live scores,fan,match,teams,chat,venues
 ```
 
 ### What's New (Version 1.0.0)
 ```
-Welcome to Pregame -- your 2026 FIFA World Cup companion!
+Welcome to Pregame -- your 2026 World Cup companion!
 
 - Full match schedule for all 104 matches across USA, Mexico & Canada
 - AI-powered match predictions with 10-factor analysis engine
@@ -230,7 +230,7 @@ Password: [CREATE A STRONG TEST PASSWORD]
 
 ### Notes for Reviewer
 ```
-Pregame World Cup 2026 is a fan companion app for the upcoming FIFA World Cup.
+Pregame World Cup 2026 is a fan companion app for the upcoming World Cup.
 
 KEY FEATURES TO TEST:
 1. Browse Matches: Main tab shows all World Cup matches with filters
@@ -258,7 +258,7 @@ CONTENT MODERATION:
 - User reporting and blocking system
 - Content moderation tools for flagged content
 
-The app is not affiliated with or endorsed by FIFA.
+Not affiliated with or endorsed by FIFA or any official World Cup organizing bodies.
 ```
 
 ### Contact Information

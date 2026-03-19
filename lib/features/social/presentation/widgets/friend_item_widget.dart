@@ -158,7 +158,7 @@ class FriendItemWidget extends StatelessWidget {
                             ),
                             child: Text(
                               team,
-                              style: const TextStyle(fontSize: 10),
+                              style: const TextStyle(fontSize: 11),
                             ),
                           ),
                         ).toList(),

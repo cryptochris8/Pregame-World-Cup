@@ -184,7 +184,7 @@ class ChatInfoBottomSheet extends StatelessWidget {
                                   'Owner',
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 10),
+                                      fontSize: 11),
                                 ),
                               )
                             else if (member.isAdmin)
@@ -202,7 +202,7 @@ class ChatInfoBottomSheet extends StatelessWidget {
                                   'Admin',
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 10),
+                                      fontSize: 11),
                                 ),
                               ),
                           ],

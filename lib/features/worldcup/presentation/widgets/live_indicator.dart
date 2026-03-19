@@ -103,7 +103,7 @@ class LiveBadge extends StatelessWidget {
             'LIVE',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: FontWeight.bold,
               letterSpacing: 1,
             ),

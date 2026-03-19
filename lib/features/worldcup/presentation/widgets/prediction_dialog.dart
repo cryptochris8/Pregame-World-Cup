@@ -265,7 +265,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
                               l10n.poweredByProvider(_aiProvider!),
                               style: theme.textTheme.labelSmall?.copyWith(
                                 color: colorScheme.onSurfaceVariant,
-                                fontSize: 10,
+                                fontSize: 11,
                               ),
                             ),
                         ],

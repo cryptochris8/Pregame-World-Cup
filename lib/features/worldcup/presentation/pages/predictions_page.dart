@@ -182,7 +182,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
                 '$count',
                 style: TextStyle(
                   color: isSelected ? color : Colors.white,
-                  fontSize: 10,
+                  fontSize: 11,
                   fontWeight: FontWeight.bold,
                 ),
               ),

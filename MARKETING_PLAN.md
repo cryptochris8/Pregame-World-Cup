@@ -1,7 +1,7 @@
 # Pregame World Cup 2026 - Comprehensive Marketing Plan
 
 > **Last Updated:** January 2026
-> **Target Launch Window:** Before FIFA World Cup 2026 (June 11 - July 19, 2026)
+> **Target Launch Window:** Before World Cup 2026 (June 11 - July 19, 2026)
 
 ---
 
@@ -29,7 +29,7 @@
 
 ## Executive Summary
 
-The Pregame World Cup 2026 app is positioned to capitalize on an unprecedented market opportunity. The 2026 FIFA World Cup will be hosted across the USA, Mexico, and Canada, with 104 matches over 39 days. This is the first World Cup hosted in North America since 1994 and the first-ever tri-nation tournament.
+The Pregame World Cup 2026 app is positioned to capitalize on an unprecedented market opportunity. The 2026 World Cup will be hosted across the USA, Mexico, and Canada, with 104 matches over 39 days. This is the first World Cup hosted in North America since 1994 and the first-ever tri-nation tournament.
 
 **Key Stats:**
 - 65% of US Gen Z are projected to engage with the World Cup
@@ -89,7 +89,7 @@ Include primary keywords in title (30 character limit on iOS, 50 on Android)
 
 #### Keyword Research (iOS App Store - 100 characters)
 ```
-Primary: World Cup 2026, FIFA, soccer, football
+Primary: World Cup 2026, soccer, football, World Cup
 Secondary: watch party, match schedule, predictions
 Long-tail: World Cup USA, Mexico Canada World Cup, soccer fans
 ```
@@ -126,7 +126,7 @@ Long-tail: World Cup USA, Mexico Canada World Cup, soccer fans
 
 #### TikTok Strategy (Priority #1)
 
-TikTok is FIFA's official preferred platform for 2026. 75% of US TikTok users identify as sports fans.
+TikTok is the official preferred platform for the 2026 World Cup. 75% of US TikTok users identify as sports fans.
 
 **Content Pillars:**
 
@@ -141,7 +141,7 @@ TikTok is FIFA's official preferred platform for 2026. 75% of US TikTok users id
 1. **Hook in first 1-3 seconds** - Most critical factor
 2. **High completion rate** - Keep videos 15-45 seconds
 3. **Trending sounds** - Use popular audio
-4. **Hashtag strategy**: #WorldCup2026 #FIFA #Soccer #Football #WatchParty
+4. **Hashtag strategy**: #WorldCup2026 #Soccer #Football #WatchParty #USA2026
 
 **Content Ideas:**
 - "Things Americans don't know about the World Cup"
@@ -315,7 +315,7 @@ Create a blog on your website targeting these content pillars:
 #### Pillar 3: Fan Guides
 - "First-Time World Cup Fan Guide"
 - "World Cup 2026 for American Soccer Beginners"
-- "Understanding FIFA World Cup Format"
+- "Understanding World Cup Format"
 - "Top 50 Players to Watch at World Cup 2026"
 
 #### Pillar 4: Predictions & Analysis
@@ -575,7 +575,7 @@ Highest intent users - they're actively searching for apps.
 - Soccer app
 - Football app
 - Watch party app
-- FIFA World Cup
+- World Cup
 
 **Competitor Keywords:**
 - ESPN
@@ -682,7 +682,7 @@ Reaches users across Search, YouTube, Display, and Play Store.
 >
 > Hi [Name],
 >
-> I'm reaching out about a partnership opportunity for the FIFA World Cup 2026. Our app, Pregame, connects soccer fans with watch parties and venues in their area.
+> I'm reaching out about a partnership opportunity for the World Cup 2026. Our app, Pregame, connects soccer fans with watch parties and venues in their area.
 >
 > We'd love to feature [Venue Name] as a premier World Cup watching destination. This means:
 > - Free listing in our venue directory
@@ -696,7 +696,7 @@ Reaches users across Search, YouTube, Display, and Play Store.
 Alcohol brands are actively seeking World Cup activation opportunities.
 
 **Potential Partners:**
-- Budweiser (FIFA sponsor)
+- Budweiser (World Cup sponsor)
 - Heineken
 - Corona
 - Modelo

@@ -172,7 +172,7 @@ class _NearbyVenueCardState extends State<NearbyVenueCard> {
               venue.walkingTimeFormatted,
               style: const TextStyle(
                 color: Colors.white38,
-                fontSize: 10,
+                fontSize: 11,
               ),
             ),
           ],
@@ -304,7 +304,7 @@ class _NearbyVenueCardState extends State<NearbyVenueCard> {
             label,
             style: TextStyle(
               color: color,
-              fontSize: 9,
+              fontSize: 11,
               fontWeight: FontWeight.bold,
             ),
           ),

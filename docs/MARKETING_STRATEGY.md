@@ -12,7 +12,7 @@
 4. [Journalist Pitch Platforms](#journalist-pitch-platforms-haro-alternatives)
 5. [Apple App Store Editorial Feature](#apple-app-store-editorial-feature)
 6. [Host City Local Media](#host-city-local-media-16-cities)
-7. [TikTok Creator Program](#tiktok-creator-program-fifa-partnership)
+7. [TikTok Creator Program](#tiktok-creator-program-world-cup-partnership)
 8. [Industry Conference Speaking](#industry-conference-speaking)
 9. [PR Agency Consideration](#pr-agency-consideration)
 10. [Priority Action Timeline](#recommended-priority-actions)
@@ -253,7 +253,7 @@ Write these before entering App Store Connect:
 **Primary Description** (What you're launching):
 ```
 Pregame World Cup 2026 is an AI-powered companion app for the largest
-FIFA World Cup in history. Launching ahead of the June 2026 tournament,
+World Cup in history. Launching ahead of the June 2026 tournament,
 the app combines Claude and OpenAI to deliver real-time match predictions,
 helps fans discover and create watch parties across all 16 host cities,
 and connects supporters through social features including voice messaging
@@ -315,7 +315,7 @@ This is the most important field. Use the narrative you prepared:
 ```
 WHAT WE'RE LAUNCHING:
 Pregame World Cup 2026 - an AI-powered companion app for the largest
-FIFA World Cup in history (104 matches, 48 teams, 16 host cities across
+World Cup in history (104 matches, 48 teams, 16 host cities across
 USA, Mexico, and Canada).
 
 KEY FEATURES:
@@ -327,7 +327,7 @@ KEY FEATURES:
 • Complete Tournament Coverage: All 104 matches with live updates
 
 WHY NOW:
-The FIFA World Cup 2026 begins June 11, 2026. We're launching ahead
+The World Cup 2026 begins June 11, 2026. We're launching ahead
 of the tournament to help fans prepare, connect, and plan their
 viewing experience for this historic event.
 
@@ -436,7 +436,7 @@ Here's a complete example of what your nomination could look like:
 **Primary Description:**
 ```
 Pregame World Cup 2026 is the ultimate companion app for fans of the
-largest FIFA World Cup in history. Launching ahead of the June 2026
+largest World Cup in history. Launching ahead of the June 2026
 tournament, Pregame combines artificial intelligence with social
 features to create an unmatched fan experience.
 
@@ -651,24 +651,24 @@ Best,
 ```
 
 **Sources:**
-- [FIFA Host Cities](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/host-cities)
+- [World Cup 2026 Host Cities](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/host-cities)
 - [ShareAmerica on Host Cities](https://share.america.gov/already-destinations-us-cities-embrace-fifa-world-cup-2026/)
 - [FOX4 KC on Training Camps](https://fox4kc.com/sports/2026-world-cup/argentina-england-netherlands-to-base-2026-world-cup-camps-in-kansas-city-metro-sources/)
 
 ---
 
-## TikTok Creator Program (FIFA Partnership)
+## TikTok Creator Program (World Cup Partnership)
 
-> FIFA announced TikTok as their **first-ever "Preferred Platform"** for World Cup 2026.
+> World Cup organizers announced TikTok as their **first-ever "Preferred Platform"** for World Cup 2026.
 
 ### The Opportunity
 
-- FIFA is creating a **dedicated creator program**
+- World Cup organizers are creating a **dedicated creator program**
 - Select creators get exclusive access to:
   - Press conferences
   - Training sessions
   - Archival footage
-- First-ever partnership of this kind for FIFA
+- First-ever partnership of this kind for the World Cup
 
 ### Why This Matters
 
@@ -676,15 +676,15 @@ Best,
 |-----------|-------------|
 | 76% of football fans are Millennials/Gen Z | TikTok's core demographic |
 | 355% increase in podcast listening over past decade | Audio content is exploding |
-| TikTok is FIFA's "Preferred Platform" | Official partnership = legitimacy |
+| TikTok is World Cup organizers' "Preferred Platform" | Official partnership = legitimacy |
 
 ### Action Items
 
-1. **Monitor FIFA announcements** for creator program applications
+1. **Monitor World Cup organizer announcements** for creator program applications
 2. **Build TikTok presence now** with World Cup countdown content
 3. **Position app's AI insights** as unique content fuel for creators
 4. **Create shareable content** (predictions, match previews, watch party tips)
-5. **Engage with FIFA's TikTok account** to build visibility
+5. **Engage with the World Cup's official TikTok account** to build visibility
 
 ### Content Ideas for TikTok
 
@@ -696,7 +696,7 @@ Best,
 - Match day countdowns
 
 **Sources:**
-- [FIFA TikTok Partnership - Variety](https://variety.com/2026/tv/news/fifa-tiktok-preferred-platform-world-cup-2026-1236626066/)
+- [World Cup TikTok Partnership - Variety](https://variety.com/2026/tv/news/fifa-tiktok-preferred-platform-world-cup-2026-1236626066/)
 - [Barrett Media](https://barrettmedia.com/2026/01/09/fifa-names-tiktok-preferred-platform-of-world-cup-2026/)
 
 ---
@@ -786,7 +786,7 @@ Best,
 ### Q2-Q3 2025
 
 - [ ] Pitch local media in top 5 host cities (Dallas, NYC, LA, Miami, Houston)
-- [ ] Apply for TikTok/FIFA creator program (when announced)
+- [ ] Apply for TikTok/World Cup creator program (when announced)
 - [ ] Submit speaker proposals to SXSW and sports tech conferences
 - [ ] Build relationships with 10-15 journalists through HARO alternatives
 - [ ] Create TikTok content strategy and begin posting
@@ -820,11 +820,11 @@ Best,
 
 | Statistic | Source |
 |-----------|--------|
-| 6+ billion expected viewers | FIFA/Nielsen |
-| 6.5+ million expected attendees | FIFA |
-| 104 matches (most ever) | FIFA |
-| 48 teams (expanded from 32) | FIFA |
-| 16 host cities across 3 countries | FIFA |
+| 6+ billion expected viewers | World Cup organizers/Nielsen |
+| 6.5+ million expected attendees | World Cup organizers |
+| 104 matches (most ever) | World Cup organizers |
+| 48 teams (expanded from 32) | World Cup organizers |
+| 16 host cities across 3 countries | World Cup organizers |
 | $5+ billion economic impact | Industry estimates |
 | 62+ million US soccer fans | Nielsen |
 | 76% of football fans are Millennials/Gen Z | Nielsen |
@@ -869,7 +869,7 @@ Subject: Story Pitch: AI App Prepares Fans for Largest World Cup Ever
 
 Hi [Journalist Name],
 
-With the FIFA World Cup 2026 approaching, I wanted to share an angle
+With the World Cup 2026 approaching, I wanted to share an angle
 that might interest your readers.
 
 Pregame World Cup 2026 is a mobile app combining AI (Claude + OpenAI)
@@ -909,7 +909,7 @@ Best,
 
 ### Useful Links
 
-- [FIFA World Cup 2026 Official Site](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+- [World Cup 2026 Official Site](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
 - [Apple App Store Connect](https://appstoreconnect.apple.com/)
 - [Product Hunt](https://www.producthunt.com/)
 - [TechCrunch](https://techcrunch.com/)

@@ -113,7 +113,7 @@ class CalendarEvent extends Equatable {
     String? venue,
   }) {
     final buffer = StringBuffer();
-    buffer.writeln('FIFA World Cup 2026');
+    buffer.writeln('World Cup 2026');
     buffer.writeln('$homeTeam vs $awayTeam');
     if (stage != null) buffer.writeln('Stage: $stage');
     if (venue != null) buffer.writeln('Venue: $venue');

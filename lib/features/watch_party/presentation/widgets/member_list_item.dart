@@ -58,7 +58,7 @@ class MemberListItem extends StatelessWidget {
               child: Text(
                 AppLocalizations.of(context).memberYou,
                 style: const TextStyle(
-                  fontSize: 10,
+                  fontSize: 11,
                   color: Colors.grey,
                 ),
               ),
@@ -200,7 +200,7 @@ class MemberListItem extends StatelessWidget {
       child: Text(
         label,
         style: TextStyle(
-          fontSize: 10,
+          fontSize: 11,
           fontWeight: FontWeight.w600,
           color: color,
         ),
@@ -232,7 +232,7 @@ class MemberListItem extends StatelessWidget {
           Text(
             isVirtual ? l10n.memberVirtual : l10n.memberInPerson,
             style: TextStyle(
-              fontSize: 10,
+              fontSize: 11,
               color: isVirtual ? const Color(0xFF059669) : Colors.grey[600],
             ),
           ),

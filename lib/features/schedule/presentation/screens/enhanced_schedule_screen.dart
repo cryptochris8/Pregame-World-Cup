@@ -330,7 +330,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                     l10n.liveEspnData,
                     style: const TextStyle(
                       color: Colors.orange,
-                      fontSize: 10,
+                      fontSize: 11,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

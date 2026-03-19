@@ -30,7 +30,7 @@ class FanPassHeader extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const Text(
-            'FIFA World Cup 2026',
+            'World Cup 2026',
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,

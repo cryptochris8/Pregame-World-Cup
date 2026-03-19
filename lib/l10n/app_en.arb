@@ -294,7 +294,7 @@
   "@favorites": {
     "description": "Tab label for favorites"
   },
-  "fifaWorldCup": "FIFA World Cup",
+  "fifaWorldCup": "World Cup",
   "@fifaWorldCup": {
     "description": "Title for FIFA World Cup"
   },
@@ -1370,7 +1370,7 @@
   "@schedule": {
     "description": "Schedule tab"
   },
-  "fifaWorldCup2026": "FIFA World Cup 2026",
+  "fifaWorldCup2026": "World Cup 2026",
   "@fifaWorldCup2026": {
     "description": "FIFA World Cup 2026 badge text"
   },
@@ -1968,7 +1968,7 @@
   "@country": {
     "description": "Country label"
   },
-  "fifaCode": "FIFA Code",
+  "fifaCode": "Country Code",
   "@fifaCode": {
     "description": "FIFA code label"
   },

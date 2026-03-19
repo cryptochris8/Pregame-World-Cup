@@ -1,5 +1,5 @@
 /// Handles international team name matching, normalization, and rivalry detection
-/// for FIFA World Cup soccer matches.
+/// for World Cup soccer matches.
 class ESPNTeamMatcher {
   /// Major World Cup rivalries and historic derby matches
   static const List<Set<String>> _rivalries = [

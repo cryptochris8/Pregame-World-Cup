@@ -80,7 +80,7 @@ class FriendSuggestionsSection extends StatelessWidget {
                 Text(
                   suggestion.suggestionText,
                   style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 11,
                     color: Colors.grey[600],
                   ),
                   textAlign: TextAlign.center,

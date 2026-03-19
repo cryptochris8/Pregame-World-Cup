@@ -236,12 +236,12 @@ Now you'll go through each data type. Here's exactly what to select:
 **App Details:**
 - [ ] **Step 2 — Short description** (max 80 characters):
 ```
-Your ultimate companion for FIFA World Cup 2026. Predictions, chat & more!
+Your ultimate companion for World Cup 2026. Predictions, chat & more!
 ```
 
 - [ ] **Step 3 — Full description** (max 4000 characters):
 ```
-Your ultimate companion for the 2026 FIFA World Cup in the USA, Mexico, and Canada.
+Your ultimate companion for the 2026 World Cup in the USA, Mexico, and Canada.
 
 Pregame brings everything a World Cup fan needs into one app -- live scores, AI-powered match predictions, watch party planning, real-time fan chat, venue discovery, and deep tournament coverage for all 48 teams across 104 matches.
 

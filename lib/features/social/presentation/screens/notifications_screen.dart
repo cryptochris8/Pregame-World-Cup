@@ -244,7 +244,7 @@ class _NotificationsScreenState extends State<NotificationsScreen>
                     ),
                     child: Text(
                       '${_notifications.length}',
-                      style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
@@ -266,7 +266,7 @@ class _NotificationsScreenState extends State<NotificationsScreen>
                     ),
                     child: Text(
                       '$_unreadCount',
-                      style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],

@@ -80,11 +80,11 @@ Output: `build/app/outputs/flutter-apk/app-release.apk`
 #### Main Store Listing
 - **App name**: Pregame World Cup 2026
 - **Short description** (80 chars max):
-  > Your ultimate companion for FIFA World Cup 2026. Live scores, watch parties & more!
+  > Your ultimate companion for World Cup 2026. Live scores, watch parties & more!
 
 - **Full description** (4000 chars max):
   ```
-  Get ready for the biggest World Cup ever! Pregame World Cup 2026 is your all-in-one companion for the FIFA World Cup in USA, Canada, and Mexico.
+  Get ready for the biggest World Cup ever! Pregame World Cup 2026 is your all-in-one companion for the World Cup in USA, Canada, and Mexico.
 
   FEATURES:
   • Live Scores & Match Updates - Real-time scores and match events

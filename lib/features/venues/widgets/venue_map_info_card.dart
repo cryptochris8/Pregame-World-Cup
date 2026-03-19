@@ -409,7 +409,7 @@ class VenueMapInfoChip extends StatelessWidget {
               Text(
                 venue.rating!.toStringAsFixed(1),
                 style: const TextStyle(
-                  fontSize: 10,
+                  fontSize: 11,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF2D1810),
                 ),

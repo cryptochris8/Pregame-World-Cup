@@ -46,7 +46,7 @@
 *Copy this into the main description field:*
 
 ```
-Pregame World Cup 2026 is an AI-powered companion app for the largest FIFA
+Pregame World Cup 2026 is an AI-powered companion app for the largest
 World Cup in history—104 matches across 48 teams in 16 host cities spanning
 the USA, Mexico, and Canada.
 
@@ -61,7 +61,7 @@ KEY FEATURES:
   standings, knockout bracket, and push notifications
 
 WHY NOW:
-The FIFA World Cup 2026 begins June 11, 2026. We're launching ahead of
+The World Cup 2026 begins June 11, 2026. We're launching ahead of
 the tournament to help fans prepare, connect, and plan their viewing
 experience for this historic event.
 

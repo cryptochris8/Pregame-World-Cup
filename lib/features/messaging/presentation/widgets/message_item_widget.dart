@@ -149,7 +149,7 @@ class MessageItemWidget extends StatelessWidget {
                 color: isOwnMessage 
                     ? Colors.grey[400]
                     : Colors.white.withValues(alpha:0.5),
-                fontSize: 10,
+                fontSize: 11,
                 fontStyle: FontStyle.italic,
               ),
             ),
@@ -331,7 +331,7 @@ class MessageItemWidget extends StatelessWidget {
         Text(
           _formatTime(message.createdAt),
           style: TextStyle(
-            fontSize: 10,
+            fontSize: 11,
             color: isOwnMessage
                 ? Colors.brown[600]
                 : Colors.white.withValues(alpha:0.7),
@@ -415,7 +415,7 @@ class MessageItemWidget extends StatelessWidget {
         Text(
           readCount >= totalRecipients ? 'All' : '$readCount',
           style: TextStyle(
-            fontSize: 9,
+            fontSize: 11,
             color: Colors.orange[300],
             fontWeight: FontWeight.w600,
           ),

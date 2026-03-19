@@ -63,7 +63,7 @@ class MatchupWorldCupRecord extends StatelessWidget {
                   Text(
                     team1Name,
                     style: TextStyle(
-                      fontSize: 10,
+                      fontSize: 11,
                       color: Colors.white.withValues(alpha: 0.6),
                     ),
                   ),
@@ -96,7 +96,7 @@ class MatchupWorldCupRecord extends StatelessWidget {
                   Text(
                     team2Name,
                     style: TextStyle(
-                      fontSize: 10,
+                      fontSize: 11,
                       color: Colors.white.withValues(alpha: 0.6),
                     ),
                   ),

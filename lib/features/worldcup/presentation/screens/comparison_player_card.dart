@@ -94,7 +94,7 @@ class ComparisonPlayerCard extends StatelessWidget {
           'Tap to change',
           style: TextStyle(
             color: Colors.white.withValues(alpha: 0.4),
-            fontSize: 10,
+            fontSize: 11,
           ),
         ),
       ],

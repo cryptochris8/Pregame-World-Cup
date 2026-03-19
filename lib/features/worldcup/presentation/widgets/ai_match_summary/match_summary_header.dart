@@ -47,7 +47,7 @@ class MatchSummaryHeader extends StatelessWidget {
                     'AI MATCH PREVIEW',
                     style: TextStyle(
                       color: AppTheme.primaryPurple,
-                      fontSize: 10,
+                      fontSize: 11,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.5,
                     ),
@@ -84,7 +84,7 @@ class MatchSummaryHeader extends StatelessWidget {
                       'FIRST MEETING',
                       style: TextStyle(
                         color: AppTheme.accentGold,
-                        fontSize: 9,
+                        fontSize: 11,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
