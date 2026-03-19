@@ -2,7 +2,7 @@ name: pregame_world_cup
 description: "Pregame World Cup 2026 - Connect with fans and venues for World Cup 2026"
 publish_to: 'none' # Prevent accidental publishing
 
-version: 1.0.0+1
+version: 1.0.0+3
 
 environment:
   sdk: '>=3.7.0 <4.0.0'
