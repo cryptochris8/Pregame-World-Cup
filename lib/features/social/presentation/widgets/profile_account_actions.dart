@@ -104,12 +104,11 @@ class ProfileAccountActions extends StatelessWidget {
           icon: const Icon(Icons.delete_forever),
           label: Text(l10n.deleteAccount),
           style: OutlinedButton.styleFrom(
-            foregroundColor: Colors.red,
             padding: const EdgeInsets.symmetric(
               horizontal: 24,
               vertical: 12,
             ),
-            side: const BorderSide(color: Colors.red),
+            side: BorderSide(color: theme.primaryColor),
           ),
         ),
       ],
