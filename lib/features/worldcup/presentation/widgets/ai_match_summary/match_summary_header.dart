@@ -7,12 +7,14 @@ class MatchSummaryHeader extends StatelessWidget {
   final MatchSummary summary;
   final bool isExpanded;
   final VoidCallback onToggle;
+  final String? homeTeamCode;
 
   const MatchSummaryHeader({
     super.key,
     required this.summary,
     required this.isExpanded,
     required this.onToggle,
+    this.homeTeamCode,
   });
 
   @override
@@ -54,7 +56,9 @@ class MatchSummaryHeader extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    '${summary.team1Name} vs ${summary.team2Name}',
+                    homeTeamCode != null && summary.team1Code != homeTeamCode
+                        ? '${summary.team2Name} vs ${summary.team1Name}'
+                        : '${summary.team1Name} vs ${summary.team2Name}',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 16,

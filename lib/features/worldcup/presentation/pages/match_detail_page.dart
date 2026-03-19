@@ -334,6 +334,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       child: AIMatchSummaryWidget(
         summary: _matchSummary!,
         initiallyExpanded: false,
+        homeTeamCode: match.homeTeamCode,
         localPrediction: _localPrediction,
       ),
     );

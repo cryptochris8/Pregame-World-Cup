@@ -7,12 +7,30 @@ import 'prediction_components.dart';
 /// Fallback prediction tab using basic Firestore MatchPredictionSummary data.
 class FirestorePredictionTab extends StatelessWidget {
   final MatchSummary summary;
+  final String? homeTeamCode;
 
-  const FirestorePredictionTab({super.key, required this.summary});
+  const FirestorePredictionTab({
+    super.key,
+    required this.summary,
+    this.homeTeamCode,
+  });
+
+  /// Whether summary team order is reversed relative to home/away.
+  bool get _isReversed =>
+      homeTeamCode != null && summary.team1Code != homeTeamCode;
 
   @override
   Widget build(BuildContext context) {
     final prediction = summary.prediction;
+
+    // Reorder teams and score to match home/away
+    final leftCode = _isReversed ? summary.team2Code : summary.team1Code;
+    final rightCode = _isReversed ? summary.team1Code : summary.team2Code;
+
+    // Reverse the score string if teams are in wrong order
+    final displayScore = _isReversed
+        ? prediction.predictedScore.split('-').reversed.join('-')
+        : prediction.predictedScore;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +64,7 @@ class FirestorePredictionTab extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  TeamFlag(teamCode: summary.team1Code, size: 36),
+                  TeamFlag(teamCode: leftCode, size: 36),
                   const SizedBox(width: 16),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -57,7 +75,7 @@ class FirestorePredictionTab extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
-                      prediction.predictedScore,
+                      displayScore,
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 24,
@@ -66,7 +84,7 @@ class FirestorePredictionTab extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 16),
-                  TeamFlag(teamCode: summary.team2Code, size: 36),
+                  TeamFlag(teamCode: rightCode, size: 36),
                 ],
               ),
               const SizedBox(height: 12),

@@ -20,6 +20,11 @@ class AIMatchSummaryWidget extends StatefulWidget {
   final MatchSummary summary;
   final bool initiallyExpanded;
 
+  /// The actual home team code from the match data.
+  /// Used to correctly orient scores and probabilities when the
+  /// summary's alphabetical team ordering differs from home/away.
+  final String? homeTeamCode;
+
   /// Optional rich prediction from LocalPredictionEngine.
   /// When provided, the Prediction tab shows full engine output
   /// instead of the basic Firestore MatchPredictionSummary.
@@ -29,6 +34,7 @@ class AIMatchSummaryWidget extends StatefulWidget {
     super.key,
     required this.summary,
     this.initiallyExpanded = false,
+    this.homeTeamCode,
     this.localPrediction,
   });
 
@@ -70,6 +76,7 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
             summary: widget.summary,
             isExpanded: _isExpanded,
             onToggle: () => setState(() => _isExpanded = !_isExpanded),
+            homeTeamCode: widget.homeTeamCode,
           ),
           if (_isExpanded) ...[
             MatchSummaryTabBar(
@@ -102,8 +109,15 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
   Widget _buildPredictionTab() {
     final lp = widget.localPrediction;
     if (lp != null) {
-      return PredictionTab(prediction: lp, summary: widget.summary);
+      return PredictionTab(
+        prediction: lp,
+        summary: widget.summary,
+        homeTeamCode: widget.homeTeamCode,
+      );
     }
-    return FirestorePredictionTab(summary: widget.summary);
+    return FirestorePredictionTab(
+      summary: widget.summary,
+      homeTeamCode: widget.homeTeamCode,
+    );
   }
 }

@@ -8,24 +8,37 @@ import 'prediction_components.dart';
 class PredictionTab extends StatelessWidget {
   final AIMatchPrediction prediction;
   final MatchSummary summary;
+  final String? homeTeamCode;
 
   const PredictionTab({
     super.key,
     required this.prediction,
     required this.summary,
+    this.homeTeamCode,
   });
+
+  /// Whether summary team order is reversed relative to home/away.
+  /// Summary stores teams alphabetically, but predictions use home/away.
+  bool get _isReversed =>
+      homeTeamCode != null && summary.team1Code != homeTeamCode;
 
   @override
   Widget build(BuildContext context) {
+    // Reorder teams to match home/away when needed
+    final displayTeam1Code = _isReversed ? summary.team2Code : summary.team1Code;
+    final displayTeam2Code = _isReversed ? summary.team1Code : summary.team2Code;
+    final displayTeam1Name = _isReversed ? summary.team2Name : summary.team1Name;
+    final displayTeam2Name = _isReversed ? summary.team1Name : summary.team2Name;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         PredictionHeader(
           prediction: prediction,
-          team1Code: summary.team1Code,
-          team2Code: summary.team2Code,
-          team1Name: summary.team1Name,
-          team2Name: summary.team2Name,
+          team1Code: displayTeam1Code,
+          team2Code: displayTeam2Code,
+          team1Name: displayTeam1Name,
+          team2Name: displayTeam2Name,
         ),
         const SizedBox(height: 16),
 
@@ -86,12 +99,12 @@ class PredictionTab extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 if (prediction.homeRecentForm != null)
-                  FormRow(teamName: summary.team1Name, form: prediction.homeRecentForm!),
+                  FormRow(teamName: displayTeam1Name, form: prediction.homeRecentForm!),
                 if (prediction.homeRecentForm != null &&
                     prediction.awayRecentForm != null)
                   const SizedBox(height: 8),
                 if (prediction.awayRecentForm != null)
-                  FormRow(teamName: summary.team2Name, form: prediction.awayRecentForm!),
+                  FormRow(teamName: displayTeam2Name, form: prediction.awayRecentForm!),
               ],
             ),
           ),
