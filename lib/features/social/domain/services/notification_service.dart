@@ -146,10 +146,14 @@ class NotificationService {
       if (cachedNotification != null) {
         final updatedNotification = cachedNotification.markAsRead();
         await _notificationsBox.put(notificationId, updatedNotification);
+        // Invalidate only this user's notification caches
+        final uid = cachedNotification.userId;
+        _userNotificationsCache.remove('${uid}_all');
+        _userNotificationsCache.remove('${uid}_unread');
+      } else {
+        // Can't determine user, clear all
+        _userNotificationsCache.clear();
       }
-      
-      // Clear relevant caches
-      _userNotificationsCache.clear();
       
       PerformanceMonitor.endApiCall('mark_notification_read', success: true);
       return true;
@@ -179,9 +183,10 @@ class NotificationService {
       }
       
       await batch.commit();
-      
-      // Clear caches
-      _userNotificationsCache.clear();
+
+      // Invalidate only this user's notification caches
+      _userNotificationsCache.remove('${userId}_all');
+      _userNotificationsCache.remove('${userId}_unread');
       
       PerformanceMonitor.endApiCall('mark_all_notifications_read', success: true);
       return true;
@@ -286,11 +291,16 @@ class NotificationService {
           .doc(notificationId)
           .delete();
       
-      // Remove from local cache
+      // Remove from local cache and invalidate per-user
+      final cachedNotif = _notificationsBox.get(notificationId);
       await _notificationsBox.delete(notificationId);
-      
-      // Clear relevant caches
-      _userNotificationsCache.clear();
+      if (cachedNotif != null) {
+        final uid = cachedNotif.userId;
+        _userNotificationsCache.remove('${uid}_all');
+        _userNotificationsCache.remove('${uid}_unread');
+      } else {
+        _userNotificationsCache.clear();
+      }
       
       return true;
       
@@ -310,15 +320,18 @@ class NotificationService {
         .snapshots()
         .map((snapshot) {
       final notifications = <SocialNotification>[];
-      
+
       for (final doc in snapshot.docs) {
         final notification = _notificationFromFirestore(doc.data(), doc.id);
         if (notification != null) {
           notifications.add(notification);
         }
       }
-      
+
       return notifications;
+    }).handleError((error) {
+      // Return empty list on error to prevent stream from dying
+      return <SocialNotification>[];
     });
   }
 
@@ -517,6 +530,10 @@ class NotificationService {
         .where('userId', isEqualTo: userId)
         .where('isRead', isEqualTo: false)
         .snapshots()
-        .map((snapshot) => snapshot.docs.length);
+        .map((snapshot) => snapshot.docs.length)
+        .handleError((error) {
+      // Return 0 on error to prevent stream from dying
+      return 0;
+    });
   }
 } 

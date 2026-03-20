@@ -73,7 +73,7 @@ class ActivityFeedService {
       // Cache locally
       await _activitiesBox.put(activity.activityId, activity);
       
-      // Clear feed cache to force refresh
+      // Invalidate all feed caches since any user's feed could include this activity
       _feedCache.clear();
       
       PerformanceMonitor.endApiCall('create_activity', success: true);
@@ -129,29 +129,38 @@ class ActivityFeedService {
       try {
         // Get activities from friends and self
         if (friendIds.isNotEmpty) {
-          // Firebase whereIn has a limit of 10 items
-          final friendIdsList = friendIds.take(10).toList();
-          
-          final activitiesQuery = await _firestore
-              .collection('activities')
-              .where('userId', whereIn: friendIdsList)
-              .where('isPublic', isEqualTo: true)
-              .orderBy('createdAt', descending: true)
-              .limit(limit * 2) // Get more to account for filtering
-              .get();
+          // Firebase whereIn has a limit of 10 items, so batch in chunks
+          final friendIdsList = friendIds.toList();
+          final chunks = <List<String>>[];
+          for (var i = 0; i < friendIdsList.length; i += 10) {
+            chunks.add(friendIdsList.sublist(
+              i,
+              i + 10 > friendIdsList.length ? friendIdsList.length : i + 10,
+            ));
+          }
 
-          for (final doc in activitiesQuery.docs) {
-            try {
-              final activity = _activityFromFirestore(doc.data(), doc.id);
-              if (activity != null) {
-                activities.add(activity);
-                // Cache individual activity
-                if (_activitiesBox.isOpen) {
-                  await _activitiesBox.put(activity.activityId, activity);
+          for (final chunk in chunks) {
+            final activitiesQuery = await _firestore
+                .collection('activities')
+                .where('userId', whereIn: chunk)
+                .where('isPublic', isEqualTo: true)
+                .orderBy('createdAt', descending: true)
+                .limit(limit * 2)
+                .get();
+
+            for (final doc in activitiesQuery.docs) {
+              try {
+                final activity = _activityFromFirestore(doc.data(), doc.id);
+                if (activity != null) {
+                  activities.add(activity);
+                  // Cache individual activity
+                  if (_activitiesBox.isOpen) {
+                    await _activitiesBox.put(activity.activityId, activity);
+                  }
                 }
+              } catch (e) {
+                continue;
               }
-            } catch (e) {
-              continue;
             }
           }
         }
@@ -261,9 +270,9 @@ class ActivityFeedService {
       
       // Cache like locally
       await _likesBox.put(likeId, like);
-      
-      // Clear relevant caches
-      _feedCache.clear();
+
+      // Invalidate the liker's feed cache (other users' feeds refresh on next load)
+      _feedCache.remove(userId);
       
       PerformanceMonitor.endApiCall('like_activity', success: true);
       return true;
@@ -292,9 +301,9 @@ class ActivityFeedService {
       
       // Remove from local cache
       await _likesBox.delete(likeId);
-      
-      // Clear relevant caches
-      _feedCache.clear();
+
+      // Invalidate the user's feed cache
+      _feedCache.remove(userId);
       
       PerformanceMonitor.endApiCall('unlike_activity', success: true);
       return true;
@@ -359,8 +368,8 @@ class ActivityFeedService {
       // Cache comment locally
       await _commentsBox.put(activityComment.commentId, activityComment);
       
-      // Clear relevant caches
-      _feedCache.clear();
+      // Invalidate the commenter's feed cache and comment cache
+      _feedCache.remove(userId);
       _commentsCache.remove(activityId);
       
       PerformanceMonitor.endApiCall('comment_activity', success: true);
