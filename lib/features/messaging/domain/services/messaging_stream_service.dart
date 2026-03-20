@@ -44,10 +44,18 @@ class MessagingStreamService {
         .where('isActive', isEqualTo: true)
         .orderBy('lastMessageTime', descending: true)
         .snapshots()
-        .listen((snapshot) {
-      final chats = snapshot.docs.map(chatFromFirestore).toList();
-      _chatsStreamController.add(chats);
-    });
+        .listen(
+      (snapshot) {
+        final chats = snapshot.docs.map(chatFromFirestore).toList();
+        _chatsStreamController.add(chats);
+      },
+      onError: (error) {
+        LoggingService.error('Error listening to user chats: $error', tag: 'MessagingStreamService');
+        _chatsStreamController.addError(error);
+        // Emit empty list as fallback to transition UI from loading to empty state
+        _chatsStreamController.add([]);
+      },
+    );
   }
 
   /// Get a real-time message stream for a chat
@@ -63,10 +71,18 @@ class MessagingStreamService {
           .where('isDeleted', isEqualTo: false)
           .orderBy('createdAt', descending: false)
           .snapshots()
-          .listen((snapshot) {
-        final messages = snapshot.docs.map(_messageFromFirestore).toList();
-        controller.add(messages);
-      });
+          .listen(
+        (snapshot) {
+          final messages = snapshot.docs.map(_messageFromFirestore).toList();
+          controller.add(messages);
+        },
+        onError: (error) {
+          LoggingService.error('Error listening to messages for chat $chatId: $error', tag: 'MessagingStreamService');
+          controller.addError(error);
+          // Emit empty list as fallback to transition UI from loading to empty state
+          controller.add([]);
+        },
+      );
     }
 
     return _messageStreams[chatId]!.stream;
@@ -144,16 +160,24 @@ class MessagingStreamService {
         .where('chatId', isEqualTo: chatId)
         .where('isTyping', isEqualTo: true)
         .snapshots()
-        .listen((snapshot) {
-      final indicators = snapshot.docs
-          .map((doc) => TypingIndicator.fromJson(doc.data()))
-          .where((indicator) => !indicator.isExpired)
-          .toList();
+        .listen(
+      (snapshot) {
+        final indicators = snapshot.docs
+            .map((doc) => TypingIndicator.fromJson(doc.data()))
+            .where((indicator) => !indicator.isExpired)
+            .toList();
 
-      if (_typingStreams.containsKey(chatId)) {
-        _typingStreams[chatId]!.add(indicators);
-      }
-    });
+        if (_typingStreams.containsKey(chatId)) {
+          _typingStreams[chatId]!.add(indicators);
+        }
+      },
+      onError: (error) {
+        LoggingService.error('Error listening to typing indicators for chat $chatId: $error', tag: 'MessagingStreamService');
+        if (_typingStreams.containsKey(chatId)) {
+          _typingStreams[chatId]!.addError(error);
+        }
+      },
+    );
   }
 
   Message _messageFromFirestore(DocumentSnapshot doc) {

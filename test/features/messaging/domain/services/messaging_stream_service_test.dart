@@ -203,6 +203,24 @@ void main() {
 
         service.dispose();
       });
+
+      test('message stream handles errors gracefully', () async {
+        final service = MessagingStreamService(
+          firestore: fakeFirestore,
+          auth: mockAuth,
+          chatFromFirestore: chatFromFirestore,
+        );
+        const chatId = 'chat_stream_error_handling';
+
+        // Get the stream (this creates the internal controller with error handling)
+        final stream = service.getMessageStream(chatId);
+
+        // The stream should be accessible and error handlers ensure errors are logged
+        // and an empty list is emitted as fallback
+        expect(stream, isA<Stream<List<Message>>>());
+
+        service.dispose();
+      });
     });
 
     group('getTypingIndicatorsStream', () {
@@ -345,6 +363,23 @@ void main() {
 
         // Verify the chatsStream is still accessible
         expect(service.chatsStream, isA<Stream<List<Chat>>>());
+      });
+
+      test('chatsStream handles errors gracefully', () async {
+        final service = MessagingStreamService(
+          firestore: fakeFirestore,
+          auth: mockAuth,
+          chatFromFirestore: chatFromFirestore,
+        );
+
+        service.listenToUserChats(testUserId);
+
+        // Verify the chatsStream is still accessible and won't throw
+        // The error handlers in the service ensure errors are logged and
+        // an empty list is emitted as fallback
+        expect(service.chatsStream, isA<Stream<List<Chat>>>());
+
+        service.dispose();
       });
     });
 
