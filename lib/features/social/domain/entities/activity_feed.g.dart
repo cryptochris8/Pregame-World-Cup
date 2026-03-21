@@ -32,13 +32,14 @@ class ActivityFeedItemAdapter extends TypeAdapter<ActivityFeedItem> {
       likesCount: fields[12] as int,
       commentsCount: fields[13] as int,
       isPublic: fields[14] as bool,
+      isLikedByCurrentUser: fields[15] == null ? false : fields[15] as bool,
     );
   }
 
   @override
   void write(BinaryWriter writer, ActivityFeedItem obj) {
     writer
-      ..writeByte(15)
+      ..writeByte(16)
       ..writeByte(0)
       ..write(obj.activityId)
       ..writeByte(1)
@@ -68,7 +69,9 @@ class ActivityFeedItemAdapter extends TypeAdapter<ActivityFeedItem> {
       ..writeByte(13)
       ..write(obj.commentsCount)
       ..writeByte(14)
-      ..write(obj.isPublic);
+      ..write(obj.isPublic)
+      ..writeByte(15)
+      ..write(obj.isLikedByCurrentUser);
   }
 
   @override
