@@ -332,8 +332,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
           padding: const EdgeInsets.only(bottom: 16),
           child: ActivityFeedItemWidget(
             activity: activity,
-            // TODO: pass initialIsLiked when ActivityFeedItem gains an isLikedByCurrentUser field
-            initialIsLiked: false,
+            initialIsLiked: activity.isLikedByCurrentUser,
             onLike: (activityId) => _handleLike(activityId, activity),
             onComment: (activityId, comment) => _handleComment(activityId, comment, activity),
             onShare: (activity) => _handleShare(activity),

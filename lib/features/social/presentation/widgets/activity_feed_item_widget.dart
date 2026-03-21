@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../domain/entities/activity_feed.dart';
+import '../../domain/services/activity_feed_service.dart';
+import '../../../../injection_container.dart';
 
 class ActivityFeedItemWidget extends StatefulWidget {
   final ActivityFeedItem activity;
@@ -33,6 +35,8 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
     with SingleTickerProviderStateMixin {
   late bool _isLiked;
   bool _showComments = false;
+  List<ActivityComment> _loadedComments = [];
+  bool _isLoadingComments = false;
   final TextEditingController _commentController = TextEditingController();
   late AnimationController _animationController;
   late Animation<double> _scaleAnimation;
@@ -77,9 +81,26 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
   }
 
   void _toggleComments() {
-    setState(() {
-      _showComments = !_showComments;
-    });
+    setState(() => _showComments = !_showComments);
+    if (_showComments && _loadedComments.isEmpty) {
+      _loadComments();
+    }
+  }
+
+  Future<void> _loadComments() async {
+    setState(() => _isLoadingComments = true);
+    try {
+      final service = sl<ActivityFeedService>();
+      final comments = await service.getActivityComments(widget.activity.activityId);
+      if (mounted) {
+        setState(() {
+          _loadedComments = comments;
+          _isLoadingComments = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) setState(() => _isLoadingComments = false);
+    }
   }
 
   void _submitComment() {
@@ -402,20 +423,75 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
             ],
           ),
           
-          // Comments list placeholder
-          if (widget.activity.commentsCount > 0) ...[
-            const SizedBox(height: 16),
-            Container(
-              alignment: Alignment.center,
-              child: Text(
-                'View ${widget.activity.commentsCount} comment${widget.activity.commentsCount > 1 ? 's' : ''}',
-                style: const TextStyle(
-                  color: Colors.white70,
-                  fontWeight: FontWeight.w500,
+          // Comments list
+          const SizedBox(height: 16),
+          if (_isLoadingComments)
+            const Center(
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  color: Color(0xFFFF8C00),
                 ),
               ),
+            )
+          else if (_loadedComments.isEmpty)
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 8),
+              child: Center(
+                child: Text(
+                  'Be the first to comment!',
+                  style: TextStyle(color: Colors.white54, fontSize: 13),
+                ),
+              ),
+            )
+          else
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: _loadedComments.length,
+              itemBuilder: (context, index) {
+                final comment = _loadedComments[index];
+                return ListTile(
+                  leading: CircleAvatar(
+                    radius: 16,
+                    backgroundColor: const Color(0xFF334155),
+                    backgroundImage: comment.userProfileImage != null
+                        ? CachedNetworkImageProvider(comment.userProfileImage!)
+                        : null,
+                    child: comment.userProfileImage == null
+                        ? Text(
+                            comment.userName.isNotEmpty
+                                ? comment.userName[0].toUpperCase()
+                                : '?',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                            ),
+                          )
+                        : null,
+                  ),
+                  title: Text(
+                    comment.userName,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 13,
+                    ),
+                  ),
+                  subtitle: Text(
+                    comment.comment,
+                    style: const TextStyle(color: Colors.white70, fontSize: 13),
+                  ),
+                  trailing: Text(
+                    comment.timeAgo,
+                    style: const TextStyle(color: Colors.white38, fontSize: 11),
+                  ),
+                  dense: true,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+                );
+              },
             ),
-          ],
         ],
       ),
     );

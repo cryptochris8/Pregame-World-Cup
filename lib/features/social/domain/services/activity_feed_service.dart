@@ -200,7 +200,15 @@ class ActivityFeedService {
 
       // Sort by creation time and limit
       activities.sort((a, b) => b.createdAt.compareTo(a.createdAt));
-      final limitedActivities = activities.take(limit).toList();
+      final sortedActivities = activities.take(limit).toList();
+
+      // Populate isLikedByCurrentUser for each activity in parallel
+      final likedStatuses = await Future.wait(
+        sortedActivities.map((a) => hasUserLikedActivity(a.activityId, userId))
+      );
+      final limitedActivities = List.generate(sortedActivities.length, (i) =>
+        sortedActivities[i].copyWith(isLikedByCurrentUser: likedStatuses[i])
+      );
 
       // Fix 5: evict oldest entry when feed cache exceeds 10 entries
       if (startAfter == null) {
@@ -258,8 +266,16 @@ class ActivityFeedService {
         }
       }
 
+      // Populate isLikedByCurrentUser for each activity in parallel
+      final likedStatuses = await Future.wait(
+        activities.map((a) => hasUserLikedActivity(a.activityId, userId))
+      );
+      final activitiesWithLikeState = List.generate(activities.length, (i) =>
+        activities[i].copyWith(isLikedByCurrentUser: likedStatuses[i])
+      );
+
       PerformanceMonitor.endApiCall('get_user_activities', success: true);
-      return activities;
+      return activitiesWithLikeState;
 
     } catch (e) {
       PerformanceMonitor.endApiCall('get_user_activities', success: false);

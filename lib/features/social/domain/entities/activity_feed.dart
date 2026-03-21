@@ -50,6 +50,9 @@ class ActivityFeedItem extends Equatable {
   @HiveField(14)
   final bool isPublic;
 
+  @HiveField(15)
+  final bool isLikedByCurrentUser;
+
   const ActivityFeedItem({
     required this.activityId,
     required this.userId,
@@ -66,6 +69,7 @@ class ActivityFeedItem extends Equatable {
     this.likesCount = 0,
     this.commentsCount = 0,
     this.isPublic = true,
+    this.isLikedByCurrentUser = false,
   });
 
   factory ActivityFeedItem.createCheckIn({
@@ -176,6 +180,7 @@ class ActivityFeedItem extends Equatable {
     int? likesCount,
     int? commentsCount,
     Map<String, dynamic>? metadata,
+    bool? isLikedByCurrentUser,
   }) {
     return ActivityFeedItem(
       activityId: activityId,
@@ -193,6 +198,7 @@ class ActivityFeedItem extends Equatable {
       likesCount: likesCount ?? this.likesCount,
       commentsCount: commentsCount ?? this.commentsCount,
       isPublic: isPublic,
+      isLikedByCurrentUser: isLikedByCurrentUser ?? this.isLikedByCurrentUser,
     );
   }
 
@@ -236,6 +242,7 @@ class ActivityFeedItem extends Equatable {
         likesCount,
         commentsCount,
         isPublic,
+        isLikedByCurrentUser,
       ];
 }
 
