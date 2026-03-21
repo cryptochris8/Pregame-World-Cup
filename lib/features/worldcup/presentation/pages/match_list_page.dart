@@ -32,6 +32,7 @@ class _MatchListPageState extends State<MatchListPage> {
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           BlocBuilder<MatchListCubit, MatchListState>(
+            buildWhen: (prev, curr) => prev.isRefreshing != curr.isRefreshing,
             builder: (context, state) {
               if (state.isRefreshing) {
                 return const Padding(
@@ -55,6 +56,14 @@ class _MatchListPageState extends State<MatchListPage> {
         decoration: AppTheme.mainGradientDecoration,
         child: SafeArea(
           child: BlocBuilder<MatchListCubit, MatchListState>(
+        buildWhen: (prev, curr) =>
+            prev.isLoading != curr.isLoading ||
+            prev.errorMessage != curr.errorMessage ||
+            prev.matches != curr.matches ||
+            prev.filteredMatches != curr.filteredMatches ||
+            prev.liveMatches != curr.liveMatches ||
+            prev.filter != curr.filter ||
+            prev.selectedGroup != curr.selectedGroup,
         builder: (context, state) {
           if (state.isLoading) {
             return const Center(child: CircularProgressIndicator(color: Colors.white));
@@ -83,8 +92,11 @@ class _MatchListPageState extends State<MatchListPage> {
           }
 
           return BlocBuilder<FavoritesCubit, FavoritesState>(
+            buildWhen: (prev, curr) =>
+                prev.preferences.favoriteMatchIds != curr.preferences.favoriteMatchIds,
             builder: (context, favoritesState) {
               return BlocBuilder<PredictionsCubit, PredictionsState>(
+                buildWhen: (prev, curr) => prev.predictions != curr.predictions,
                 builder: (context, predictionsState) {
                   // Get favorite match count
                   final favoriteMatchIds = favoritesState.preferences.favoriteMatchIds;

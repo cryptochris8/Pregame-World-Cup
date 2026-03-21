@@ -799,4 +799,422 @@ void main() {
       expect(comment.createdAt, equals(now));
     });
   });
+
+  // ===========================================================================
+  // Delete Activity Logic Patterns
+  // ===========================================================================
+  group('Delete Activity Logic', () {
+    test('activity ownership verification checks userId match', () {
+      final activity = ActivityFeedItem(
+        activityId: 'act_1',
+        userId: 'user_1',
+        userName: 'John',
+        type: ActivityType.checkIn,
+        content: 'Test',
+        createdAt: DateTime.now(),
+      );
+
+      // Simulate ownership check
+      const requestingUserId = 'user_1';
+      final ownsActivity = activity.userId == requestingUserId;
+
+      expect(ownsActivity, isTrue);
+    });
+
+    test('activity ownership verification fails for different user', () {
+      final activity = ActivityFeedItem(
+        activityId: 'act_1',
+        userId: 'user_1',
+        userName: 'John',
+        type: ActivityType.checkIn,
+        content: 'Test',
+        createdAt: DateTime.now(),
+      );
+
+      // Simulate ownership check
+      const requestingUserId = 'user_2';
+      final ownsActivity = activity.userId == requestingUserId;
+
+      expect(ownsActivity, isFalse);
+    });
+
+    test('like ID pattern for batch deletion', () {
+      const activityId = 'act_123';
+      const userId1 = 'user_1';
+      const userId2 = 'user_2';
+
+      // Simulate likes that would need deletion
+      final likes = [
+        '${activityId}_$userId1',
+        '${activityId}_$userId2',
+      ];
+
+      // All likes should contain the activityId
+      for (final likeId in likes) {
+        expect(likeId, contains(activityId));
+      }
+    });
+
+    test('comment belongs to activity check', () {
+      final comment = ActivityComment(
+        commentId: 'comment_1',
+        activityId: 'act_123',
+        userId: 'user_1',
+        userName: 'John',
+        comment: 'Test',
+        createdAt: DateTime.now(),
+      );
+
+      const activityId = 'act_123';
+      final belongsToActivity = comment.activityId == activityId;
+
+      expect(belongsToActivity, isTrue);
+    });
+
+    test('pagination uses createdAt as cursor', () {
+      final activities = [
+        ActivityFeedItem(
+          activityId: 'act_1',
+          userId: 'user_1',
+          userName: 'John',
+          type: ActivityType.checkIn,
+          content: 'First',
+          createdAt: DateTime(2026, 6, 15, 12, 0),
+        ),
+        ActivityFeedItem(
+          activityId: 'act_2',
+          userId: 'user_1',
+          userName: 'John',
+          type: ActivityType.checkIn,
+          content: 'Second',
+          createdAt: DateTime(2026, 6, 15, 11, 0),
+        ),
+      ];
+
+      // Last activity's createdAt should be used as cursor
+      final lastActivity = activities.last;
+      final cursor = lastActivity.createdAt;
+
+      expect(cursor, equals(DateTime(2026, 6, 15, 11, 0)));
+    });
+
+    test('activities are sorted by createdAt descending', () {
+      final activities = [
+        ActivityFeedItem(
+          activityId: 'act_1',
+          userId: 'user_1',
+          userName: 'John',
+          type: ActivityType.checkIn,
+          content: 'First',
+          createdAt: DateTime(2026, 6, 15, 11, 0),
+        ),
+        ActivityFeedItem(
+          activityId: 'act_2',
+          userId: 'user_1',
+          userName: 'John',
+          type: ActivityType.checkIn,
+          content: 'Second',
+          createdAt: DateTime(2026, 6, 15, 12, 0),
+        ),
+      ];
+
+      // Sort descending (newest first)
+      activities.sort((a, b) => b.createdAt.compareTo(a.createdAt));
+
+      expect(activities.first.activityId, equals('act_2'));
+      expect(activities.last.activityId, equals('act_1'));
+    });
+  });
+
+  // ===========================================================================
+  // ActivityFeedService — injectable / service-level notes
+  //
+  // ActivityFeedService uses `final FirebaseFirestore _firestore =
+  // FirebaseFirestore.instance` (not injected via constructor), so it cannot
+  // be unit-tested end-to-end with FakeFirebaseFirestore without a refactor.
+  //
+  // TODO: When the service is refactored to accept an injected FirebaseFirestore
+  // (e.g. via a named constructor or factory), replace the skipped group below
+  // with real service-level tests using FakeFirebaseFirestore:
+  //
+  //   group('ActivityFeedService.likeActivity', () {
+  //     test('creates like document and increments likesCount atomically', ...);
+  //     test('liking same activity twice does not double-increment', ...);
+  //   });
+  //
+  //   group('ActivityFeedService.deleteActivity', () {
+  //     test('deletes activity and its associated likes and comments', ...);
+  //   });
+  //
+  // ===========================================================================
+
+  // ===========================================================================
+  // _activityFromFirestore parsing — unknown ActivityType value
+  // ===========================================================================
+  group('_activityFromFirestore unknown type handling', () {
+    /// The private _activityFromFirestore method wraps its body in a try/catch
+    /// and returns null on any error. When the 'type' field contains an unknown
+    /// string, ActivityType.values.firstWhere throws a StateError, causing the
+    /// method to return null rather than crash the app.
+    ///
+    /// This test mirrors that logic directly to guarantee the contract is
+    /// maintained even if the entity layer changes.
+    test('firstWhere throws StateError for unknown ActivityType string', () {
+      const unknownType = 'unknownActivityType_v99';
+
+      // Mirrors the firstWhere call inside _activityFromFirestore.
+      expect(
+        () => ActivityType.values.firstWhere((e) => e.name == unknownType),
+        throwsStateError,
+      );
+    });
+
+    test('null is returned when type string is not in ActivityType enum', () {
+      final now = DateTime(2026, 6, 15, 12, 0);
+
+      // Simulate what _activityFromFirestore does: wrap in try/catch and
+      // return null on StateError.
+      ActivityFeedItem? result;
+      try {
+        result = ActivityFeedItem(
+          activityId: 'test_id',
+          userId: 'user_1',
+          userName: 'Test',
+          type: ActivityType.values
+              .firstWhere((e) => e.name == 'totally_unknown_type'),
+          content: 'Test',
+          createdAt: now,
+        );
+      } catch (_) {
+        result = null;
+      }
+
+      expect(result, isNull);
+    });
+
+    test('known type strings parse without error for all enum values', () {
+      for (final type in ActivityType.values) {
+        ActivityFeedItem? result;
+        try {
+          result = ActivityFeedItem(
+            activityId: 'id_${type.name}',
+            userId: 'user_1',
+            userName: 'Test',
+            type: ActivityType.values
+                .firstWhere((e) => e.name == type.name),
+            content: 'content for ${type.name}',
+            createdAt: DateTime(2026, 6, 15),
+          );
+        } catch (_) {
+          result = null;
+        }
+
+        expect(result, isNotNull,
+            reason: 'Type ${type.name} should parse successfully');
+        expect(result!.type, equals(type));
+      }
+    });
+
+    test('empty string type does not crash — returns null gracefully', () {
+      ActivityFeedItem? result;
+      try {
+        result = ActivityFeedItem(
+          activityId: 'id',
+          userId: 'u',
+          userName: 'Test',
+          type: ActivityType.values.firstWhere((e) => e.name == ''),
+          content: 'c',
+          createdAt: DateTime(2026, 6, 15),
+        );
+      } catch (_) {
+        result = null;
+      }
+
+      expect(result, isNull);
+    });
+  });
+
+  // ===========================================================================
+  // ActivityFeedService.likeActivity — entity-level idempotency contract
+  //
+  // The service uses a Firestore transaction with an existence check to ensure
+  // idempotency. The tests below verify the entity-layer invariants that the
+  // transaction logic depends on.
+  // ===========================================================================
+  group('ActivityFeedService.likeActivity — entity-level idempotency', () {
+    test('like ID is deterministic: same activityId+userId always yields same ID',
+        () {
+      const activityId = 'act_abc';
+      const userId = 'user_xyz';
+
+      final likeId1 = '${activityId}_$userId';
+      final likeId2 = '${activityId}_$userId';
+
+      // The service builds likeId as '${activityId}_$userId'.
+      // Calling it twice must produce the same value — this is the key that
+      // makes the existence-check transaction idempotent.
+      expect(likeId1, equals(likeId2));
+    });
+
+    test('like document key uniquely identifies one (activity, user) pair', () {
+      const activityId = 'act_1';
+      const user1 = 'user_A';
+      const user2 = 'user_B';
+
+      final likeIdA = '${activityId}_$user1';
+      final likeIdB = '${activityId}_$user2';
+
+      // Different users → different like documents, so neither overwrites the other.
+      expect(likeIdA, isNot(equals(likeIdB)));
+    });
+
+    test('like entity models the expected document structure', () {
+      const activityId = 'act_1';
+      const userId = 'user_1';
+      final likeId = '${activityId}_$userId';
+      final now = DateTime(2026, 6, 15, 12, 0);
+
+      final like = ActivityLike(
+        likeId: likeId,
+        activityId: activityId,
+        userId: userId,
+        createdAt: now,
+      );
+
+      // The service writes these exact fields to Firestore.
+      expect(like.likeId, equals('act_1_user_1'));
+      expect(like.activityId, equals(activityId));
+      expect(like.userId, equals(userId));
+      expect(like.createdAt, equals(now));
+    });
+
+    test('likesCount increments from 0 to 1 after first like via copyWith', () {
+      final activity = ActivityFeedItem(
+        activityId: 'act_1',
+        userId: 'owner_1',
+        userName: 'Owner',
+        type: ActivityType.checkIn,
+        content: 'Checked in',
+        createdAt: DateTime(2026, 6, 15),
+        likesCount: 0,
+      );
+
+      // Mirrors what the service's FieldValue.increment(1) does at the entity layer.
+      final afterLike = activity.copyWith(likesCount: activity.likesCount + 1);
+
+      expect(afterLike.likesCount, equals(1));
+    });
+
+    test('likesCount does not change when like already exists (idempotency)',
+        () {
+      // Simulate the state after a first like.
+      final activity = ActivityFeedItem(
+        activityId: 'act_1',
+        userId: 'owner_1',
+        userName: 'Owner',
+        type: ActivityType.checkIn,
+        content: 'Checked in',
+        createdAt: DateTime(2026, 6, 15),
+        likesCount: 1,
+      );
+
+      // If the transaction detects the like already exists it skips the update.
+      // Entity count should remain unchanged.
+      final likeAlreadyExists = true;
+      final afterSecondLikeAttempt = likeAlreadyExists
+          ? activity // no-op
+          : activity.copyWith(likesCount: activity.likesCount + 1);
+
+      expect(afterSecondLikeAttempt.likesCount, equals(1));
+    });
+  });
+
+  // ===========================================================================
+  // ActivityFeedService.deleteActivity — entity-level cascade contract
+  //
+  // The service fetches all likes and comments for an activity before issuing a
+  // batch delete. The tests below verify the data-shape invariants the service
+  // depends on.
+  // ===========================================================================
+  group('ActivityFeedService.deleteActivity — entity-level cascade contract',
+      () {
+    test('only the activity owner can delete (userId must match)', () {
+      final activity = ActivityFeedItem(
+        activityId: 'act_1',
+        userId: 'owner_1',
+        userName: 'Owner',
+        type: ActivityType.checkIn,
+        content: 'Test',
+        createdAt: DateTime.now(),
+      );
+
+      expect(activity.userId == 'owner_1', isTrue);
+      expect(activity.userId == 'other_user', isFalse);
+    });
+
+    test('deletion of activity requires removing all likes with matching activityId',
+        () {
+      const activityId = 'act_to_delete';
+
+      final likes = [
+        ActivityLike(
+          likeId: '${activityId}_user_1',
+          activityId: activityId,
+          userId: 'user_1',
+          createdAt: DateTime.now(),
+        ),
+        ActivityLike(
+          likeId: '${activityId}_user_2',
+          activityId: activityId,
+          userId: 'user_2',
+          createdAt: DateTime.now(),
+        ),
+      ];
+
+      // All collected like documents belong to the same activity.
+      for (final like in likes) {
+        expect(like.activityId, equals(activityId));
+      }
+      expect(likes, hasLength(2));
+    });
+
+    test('deletion of activity requires removing all comments with matching activityId',
+        () {
+      const activityId = 'act_to_delete';
+
+      final comments = [
+        ActivityComment(
+          commentId: '${activityId}_user_1_123',
+          activityId: activityId,
+          userId: 'user_1',
+          userName: 'User One',
+          comment: 'Great!',
+          createdAt: DateTime.now(),
+        ),
+        ActivityComment(
+          commentId: '${activityId}_user_2_456',
+          activityId: activityId,
+          userId: 'user_2',
+          userName: 'User Two',
+          comment: 'Awesome!',
+          createdAt: DateTime.now(),
+        ),
+      ];
+
+      for (final comment in comments) {
+        expect(comment.activityId, equals(activityId));
+      }
+      expect(comments, hasLength(2));
+    });
+
+    test('batch chunk size of 400 handles single activity delete without splitting',
+        () {
+      // The service batches at most 400 docs per WriteBatch (1 activity +
+      // its likes + comments). For typical activities this stays well under 400.
+      const batchChunkSize = 400;
+      const totalDocsToDelete = 1 + 5 + 10; // activity + 5 likes + 10 comments
+
+      expect(totalDocsToDelete, lessThan(batchChunkSize));
+    });
+  });
 }

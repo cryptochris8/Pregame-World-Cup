@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/chat.dart';
@@ -34,6 +36,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final MessagingService _messagingService = sl<MessagingService>();
   final ScrollController _scrollController = ScrollController();
+  StreamSubscription<dynamic>? _typingSubscription;
   String? _replyToMessageId;
   bool _isLoading = true;
   List<Message> _messages = [];
@@ -60,6 +63,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   void dispose() {
+    _typingSubscription?.cancel();
     _scrollController.dispose();
     super.dispose();
   }
@@ -94,7 +98,7 @@ class _ChatScreenState extends State<ChatScreen> {
     final currentUser = FirebaseAuth.instance.currentUser;
     if (currentUser == null) return;
 
-    _messagingService
+    _typingSubscription = _messagingService
         .getTypingIndicatorsStream(widget.chat.chatId)
         .listen((indicators) {
       // Filter out current user's typing indicator

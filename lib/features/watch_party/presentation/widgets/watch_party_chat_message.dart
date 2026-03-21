@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../domain/entities/watch_party_message.dart';
@@ -203,10 +204,11 @@ class WatchPartyChatMessage extends StatelessWidget {
       ),
       child: ClipOval(
         child: message.senderImageUrl != null
-            ? Image.network(
-                message.senderImageUrl!,
+            ? CachedNetworkImage(
+                imageUrl: message.senderImageUrl!,
                 fit: BoxFit.cover,
-                errorBuilder: (_, __, ___) => _buildAvatarPlaceholder(),
+                placeholder: (context, url) => _buildAvatarPlaceholder(),
+                errorWidget: (context, url, error) => _buildAvatarPlaceholder(),
               )
             : _buildAvatarPlaceholder(),
       ),
@@ -252,21 +254,20 @@ class WatchPartyChatMessage extends StatelessWidget {
   Widget _buildImage(String url) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8),
-      child: Image.network(
-        url,
+      child: CachedNetworkImage(
+        imageUrl: url,
         fit: BoxFit.cover,
-        loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) return child;
-          return Container(
-            width: 200,
-            height: 150,
-            color: Colors.grey[300],
-            child: const Center(
-              child: CircularProgressIndicator(),
-            ),
-          );
-        },
-        errorBuilder: (_, __, ___) => Container(
+        width: 200,
+        height: 150,
+        placeholder: (context, url) => Container(
+          width: 200,
+          height: 150,
+          color: Colors.grey[300],
+          child: const Center(
+            child: CircularProgressIndicator(),
+          ),
+        ),
+        errorWidget: (context, url, error) => Container(
           width: 200,
           height: 150,
           color: Colors.grey[300],
@@ -279,10 +280,12 @@ class WatchPartyChatMessage extends StatelessWidget {
   Widget _buildGif(String url) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8),
-      child: Image.network(
-        url,
+      child: CachedNetworkImage(
+        imageUrl: url,
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => Container(
+        width: 200,
+        height: 150,
+        errorWidget: (context, url, error) => Container(
           width: 200,
           height: 150,
           color: Colors.grey[300],

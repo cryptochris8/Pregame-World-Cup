@@ -42,10 +42,6 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
   void dispose() {
     _tabController.dispose();
     _chatScrollController.dispose();
-    // Unsubscribe from messages
-    context
-        .read<WatchPartyBloc>()
-        .add(const UnsubscribeFromMessagesEvent());
     super.dispose();
   }
 
@@ -677,7 +673,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(AppLocalizations.of(context).errorOpeningMaps(e.toString())),
+            content: Text(AppLocalizations.of(context).couldNotOpenMaps),
             backgroundColor: Colors.red,
           ),
         );

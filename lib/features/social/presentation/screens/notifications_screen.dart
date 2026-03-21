@@ -88,8 +88,8 @@ class _NotificationsScreenState extends State<NotificationsScreen>
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to mark as read: $e'),
+          const SnackBar(
+            content: Text('Unable to mark notification as read'),
             backgroundColor: AppTheme.errorColor,
           ),
         );
@@ -107,8 +107,8 @@ class _NotificationsScreenState extends State<NotificationsScreen>
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to mark all as read: $e'),
+          const SnackBar(
+            content: Text('Unable to mark notifications as read'),
             backgroundColor: AppTheme.errorColor,
           ),
         );
@@ -447,8 +447,8 @@ class _NotificationsScreenState extends State<NotificationsScreen>
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to delete notification: $e'),
+          const SnackBar(
+            content: Text('Unable to delete notification'),
             backgroundColor: AppTheme.errorColor,
           ),
         );
@@ -457,30 +457,406 @@ class _NotificationsScreenState extends State<NotificationsScreen>
   }
 
   void _showNotificationSettings() {
-    showDialog(
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    showModalBottomSheet(
       context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppTheme.backgroundCard,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        title: const Text(
-          'Notification Settings',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-        ),
-        content: const Text(
-          'Notification settings will be available soon.',
-          style: TextStyle(color: Colors.white70),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            style: TextButton.styleFrom(
-              foregroundColor: AppTheme.primaryOrange,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (context) => _NotificationSettingsSheet(
+        userId: currentUser.uid,
+        notificationService: _notificationService,
+      ),
+    );
+  }
+}
+
+class _NotificationSettingsSheet extends StatefulWidget {
+  final String userId;
+  final NotificationService notificationService;
+
+  const _NotificationSettingsSheet({
+    required this.userId,
+    required this.notificationService,
+  });
+
+  @override
+  State<_NotificationSettingsSheet> createState() => _NotificationSettingsSheetState();
+}
+
+class _NotificationSettingsSheetState extends State<_NotificationSettingsSheet> {
+  NotificationPreferences? _preferences;
+  bool _isLoading = true;
+  bool _isSaving = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPreferences();
+  }
+
+  Future<void> _loadPreferences() async {
+    try {
+      final prefs = await widget.notificationService.getUserNotificationPreferences(widget.userId);
+      if (mounted) {
+        setState(() {
+          _preferences = prefs;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _preferences = NotificationPreferences.defaultPreferences();
+          _isLoading = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _savePreferences() async {
+    if (_preferences == null || _isSaving) return;
+
+    setState(() => _isSaving = true);
+
+    try {
+      final success = await widget.notificationService.saveUserNotificationPreferences(
+        widget.userId,
+        _preferences!,
+      );
+
+      if (mounted) {
+        setState(() => _isSaving = false);
+
+        if (success) {
+          Navigator.of(context).pop();
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Notification preferences saved'),
+              backgroundColor: AppTheme.successColor,
             ),
-            child: const Text('OK'),
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Failed to save preferences'),
+              backgroundColor: AppTheme.errorColor,
+            ),
+          );
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isSaving = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Error saving preferences'),
+            backgroundColor: AppTheme.errorColor,
           ),
+        );
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppTheme.backgroundCard,
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Header
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: Colors.white.withValues(alpha: 0.1),
+                  width: 1,
+                ),
+              ),
+            ),
+            child: Row(
+              children: [
+                const Text(
+                  'Notification Settings',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Spacer(),
+                IconButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  icon: const Icon(Icons.close, color: Colors.white),
+                  style: IconButton.styleFrom(
+                    backgroundColor: Colors.white.withValues(alpha: 0.1),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          // Content
+          if (_isLoading)
+            const Padding(
+              padding: EdgeInsets.all(48),
+              child: Center(
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
+                ),
+              ),
+            )
+          else if (_preferences != null)
+            Flexible(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Push Notifications section
+                    _buildSectionHeader('Push Notifications'),
+                    _buildSwitchTile(
+                      title: 'Enable Push Notifications',
+                      subtitle: 'Receive notifications on this device',
+                      value: _preferences!.pushNotifications,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(pushNotifications: value);
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 24),
+
+                    // Notification Types section
+                    _buildSectionHeader('Notification Types'),
+                    _buildSwitchTile(
+                      title: 'Friend Requests',
+                      subtitle: 'When someone sends you a friend request',
+                      value: _preferences!.friendRequests,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(friendRequests: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'Activity Likes',
+                      subtitle: 'When someone likes your activity',
+                      value: _preferences!.activityLikes,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(activityLikes: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'Activity Comments',
+                      subtitle: 'When someone comments on your activity',
+                      value: _preferences!.activityComments,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(activityComments: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'Game Invites',
+                      subtitle: 'Watch party invites and match reminders',
+                      value: _preferences!.gameInvites,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(gameInvites: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'Venue Recommendations',
+                      subtitle: 'Suggested venues near you',
+                      value: _preferences!.venueRecommendations,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(venueRecommendations: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'New Followers',
+                      subtitle: 'When someone follows you',
+                      value: _preferences!.newFollowers,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(newFollowers: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'Group Activity',
+                      subtitle: 'Updates from groups you joined',
+                      value: _preferences!.groupActivity,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(groupActivity: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'Achievements',
+                      subtitle: 'When you unlock achievements',
+                      value: _preferences!.achievements,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(achievements: value);
+                        });
+                      },
+                    ),
+                    _buildSwitchTile(
+                      title: 'System Updates',
+                      subtitle: 'Important app updates and announcements',
+                      value: _preferences!.systemUpdates,
+                      onChanged: (value) {
+                        setState(() {
+                          _preferences = _preferences!.copyWith(systemUpdates: value);
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 24),
+
+                    // Quiet Hours section
+                    _buildSectionHeader('Quiet Hours'),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.05),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.bedtime, color: Colors.white70, size: 20),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Quiet Hours',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  '${_preferences!.quietHoursStart} - ${_preferences!.quietHoursEnd}',
+                                  style: const TextStyle(
+                                    color: Colors.white70,
+                                    fontSize: 13,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+
+                    // Save button
+                    SizedBox(
+                      width: double.infinity,
+                      height: 50,
+                      child: ElevatedButton(
+                        onPressed: _isSaving ? null : _savePreferences,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.primaryOrange,
+                          foregroundColor: Colors.white,
+                          disabledBackgroundColor: AppTheme.primaryOrange.withValues(alpha: 0.5),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                        child: _isSaving
+                            ? const SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                ),
+                              )
+                            : const Text(
+                                'Save Preferences',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                      ),
+                    ),
+                    SizedBox(height: MediaQuery.of(context).viewInsets.bottom + 16),
+                  ],
+                ),
+              ),
+            ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildSectionHeader(String title) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Text(
+        title,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSwitchTile({
+    required String title,
+    required String subtitle,
+    required bool value,
+    required ValueChanged<bool> onChanged,
+  }) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.05),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: SwitchListTile(
+        title: Text(
+          title,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        subtitle: Text(
+          subtitle,
+          style: const TextStyle(
+            color: Colors.white70,
+            fontSize: 12,
+          ),
+        ),
+        value: value,
+        onChanged: onChanged,
+        activeColor: AppTheme.primaryOrange,
+        activeTrackColor: AppTheme.primaryOrange.withValues(alpha: 0.5),
+        inactiveThumbColor: Colors.white54,
+        inactiveTrackColor: Colors.white.withValues(alpha: 0.2),
       ),
     );
   }

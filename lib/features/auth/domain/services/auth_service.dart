@@ -62,6 +62,28 @@ class AuthService {
     }
   }
 
+  /// Maps a FirebaseAuthException to a user-facing message.
+  /// Sensitive codes (user-not-found, wrong-password, invalid-credential) are
+  /// deliberately collapsed into a single generic message to prevent user enumeration.
+  String _mapAuthError(FirebaseAuthException e) {
+    switch (e.code) {
+      case 'user-not-found':
+      case 'wrong-password':
+      case 'invalid-credential':
+        return 'Invalid email or password.';
+      case 'email-already-in-use':
+        return 'An account already exists for that email.';
+      case 'weak-password':
+        return 'Password is too weak. Please choose a stronger password.';
+      case 'too-many-requests':
+        return 'Too many attempts. Please try again later.';
+      case 'network-request-failed':
+        return 'A network error occurred. Please check your connection.';
+      default:
+        return e.message ?? 'An authentication error occurred.';
+    }
+  }
+
   // Sign up with email and password
   Future<UserCredential?> signUpWithEmailAndPassword({
     required String email,
@@ -86,13 +108,12 @@ class AuthService {
 
       return userCredential;
     } on FirebaseAuthException catch (e) {
-      // Consider mapping e.code to user-friendly messages
-      LoggingService.error('FirebaseAuthException on sign up: ${e.message}', tag: 'AuthService');
+      LoggingService.error('FirebaseAuthException on sign up: ${e.code}', tag: 'AuthService');
       await _analyticsService.logError(
         errorType: 'auth_error',
-        message: 'Sign up failed: ${e.message}',
+        message: 'Sign up failed: ${e.code}',
       );
-      throw Exception(e.message); // Rethrow or handle more gracefully
+      throw Exception(_mapAuthError(e));
     } catch (e) {
       LoggingService.error('Unexpected error on sign up: $e', tag: 'AuthService');
       throw Exception('An unexpected error occurred during sign up.');
@@ -113,12 +134,12 @@ class AuthService {
       await _analyticsService.logLogin(method: 'email');
       return result;
     } on FirebaseAuthException catch (e) {
-      LoggingService.error('FirebaseAuthException on sign in: ${e.message}', tag: 'AuthService');
+      LoggingService.error('FirebaseAuthException on sign in: ${e.code}', tag: 'AuthService');
       await _analyticsService.logError(
         errorType: 'auth_error',
-        message: 'Sign in failed: ${e.message}',
+        message: 'Sign in failed: ${e.code}',
       );
-      throw Exception(e.message);
+      throw Exception(_mapAuthError(e));
     } catch (e) {
       LoggingService.error('Unexpected error on sign in: $e', tag: 'AuthService');
       throw Exception('An unexpected error occurred during sign in.');

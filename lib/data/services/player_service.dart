@@ -14,22 +14,49 @@ class PlayerService {
   static const Duration _cacheDuration = Duration(minutes: 30);
 
   /// Get all players (260 players total)
-  /// With optional pagination support
-  Future<List<Player>> getAllPlayers({int? limit, int? offset}) async {
+  /// With optional pagination support.
+  ///
+  /// Prefer cursor-based pagination: pass [lastDocument] (the last
+  /// [DocumentSnapshot] from the previous page) together with [limit].
+  /// The legacy [offset] parameter is retained for backwards-compatibility but
+  /// is inefficient for large offsets because it fetches and discards documents.
+  Future<List<Player>> getAllPlayers({
+    int? limit,
+    int? offset,
+    DocumentSnapshot? lastDocument,
+  }) async {
     try {
       // Check cache first if no pagination is used
-      if (limit == null && offset == null && _isCacheValid()) {
+      if (limit == null && offset == null && lastDocument == null && _isCacheValid()) {
         return _allPlayersCache!;
       }
 
       Query query = _firestore.collection(_collectionName);
 
+      // Cursor-based pagination (preferred over offset)
+      if (lastDocument != null) {
+        query = query.startAfterDocument(lastDocument);
+        if (limit != null) {
+          query = query.limit(limit);
+        }
+        final snapshot = await query.get();
+        final players = snapshot.docs
+            .map((doc) => Player.fromFirestore(doc))
+            .toList();
+        players.sort((a, b) {
+          final codeCompare = a.fifaCode.compareTo(b.fifaCode);
+          if (codeCompare != 0) return codeCompare;
+          return a.jerseyNumber.compareTo(b.jerseyNumber);
+        });
+        return players;
+      }
+
       // Apply pagination if specified
       if (offset != null && offset > 0) {
-        // For offset, we need to get all documents up to offset + limit
-        // Then skip the first offset items
-        // Note: This is not the most efficient approach for large offsets
-        // For production, consider using startAfter with DocumentSnapshot
+        // TODO: Replace offset-based pagination with cursor-based pagination
+        // using DocumentSnapshot.startAfterDocument() for better performance.
+        // The current approach fetches (offset + limit) docs and discards the
+        // first `offset`, which is wasteful for large offsets.
         final allDocs = await query
             .limit(offset + (limit ?? 50))
             .get();
@@ -133,7 +160,14 @@ class PlayerService {
   }
 
   /// Get players by position category (Defender, Midfielder, Forward, Goalkeeper)
-  Future<List<Player>> getPlayersByCategory(String category, {int? limit, int? offset}) async {
+  ///
+  /// Pass [lastDocument] for efficient cursor-based pagination instead of [offset].
+  Future<List<Player>> getPlayersByCategory(
+    String category, {
+    int? limit,
+    int? offset,
+    DocumentSnapshot? lastDocument,
+  }) async {
     try {
       List<String> positions;
 
@@ -159,8 +193,22 @@ class PlayerService {
           .where('position', whereIn: positions)
           .orderBy('marketValue', descending: true);
 
+      // Cursor-based pagination (preferred over offset)
+      if (lastDocument != null) {
+        query = query.startAfterDocument(lastDocument);
+        if (limit != null) {
+          query = query.limit(limit);
+        }
+        final snapshot = await query.get();
+        return snapshot.docs
+            .map((doc) => Player.fromFirestore(doc))
+            .toList();
+      }
+
       // Apply pagination
       if (offset != null && offset > 0) {
+        // TODO: Replace offset-based pagination with cursor-based pagination
+        // using DocumentSnapshot.startAfterDocument() for better performance.
         final allDocs = await query.limit(offset + (limit ?? 50)).get();
         return allDocs.docs
             .skip(offset)
@@ -410,11 +458,15 @@ class PlayerService {
   }
 
   /// Stream all players (real-time updates)
+  // TODO: Consider replacing with a one-time get() if real-time updates aren't
+  // required for this use case — a live snapshot listener keeps a persistent
+  // connection open and re-transfers all matched documents on every write.
   Stream<List<Player>> streamAllPlayers() {
     return _firestore
         .collection(_collectionName)
         .orderBy('fifaCode')
         .orderBy('jerseyNumber')
+        .limit(500) // Cap unbounded stream; tournament has ~260 players
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => Player.fromFirestore(doc))

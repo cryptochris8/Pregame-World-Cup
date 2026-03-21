@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/entities.dart';
 
@@ -74,14 +75,11 @@ class TeamFlag extends StatelessWidget {
 
   Widget _buildFlagImage() {
     if (flagUrl != null && flagUrl!.isNotEmpty) {
-      return Image.network(
-        flagUrl!,
+      return CachedNetworkImage(
+        imageUrl: flagUrl!,
         fit: BoxFit.cover,
-        errorBuilder: (context, error, stackTrace) => _buildPlaceholder(),
-        loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) return child;
-          return _buildPlaceholder();
-        },
+        placeholder: (context, url) => _buildPlaceholder(),
+        errorWidget: (context, url, error) => _buildPlaceholder(),
       );
     }
 

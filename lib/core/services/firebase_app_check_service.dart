@@ -21,21 +21,14 @@ class FirebaseAppCheckService {
     try {
       LoggingService.info('Initializing Firebase App Check...', tag: _logTag);
       
+      // Initialize with explicit providers for both debug and production
+      await FirebaseAppCheck.instance.activate(
+        androidProvider: kDebugMode ? AndroidProvider.debug : AndroidProvider.playIntegrity,
+        appleProvider: kDebugMode ? AppleProvider.debug : AppleProvider.deviceCheck,
+      );
       if (kDebugMode || ApiKeys.isDevelopment) {
-        // Use debug provider in development
-        await FirebaseAppCheck.instance.activate(
-          // Debug provider for development/testing
-          // Note: debugProvider parameter has been removed in newer versions
-          // App Check will automatically use debug tokens in debug mode
-        );
         LoggingService.info('App Check initialized with debug provider', tag: _logTag);
       } else {
-        // Production configuration
-        await FirebaseAppCheck.instance.activate(
-          // Production providers will be auto-configured
-          // iOS: deviceCheckProvider (requires iOS 11+)
-          // Android: playIntegrityProvider (replaces safetyNet)
-        );
         LoggingService.info('App Check initialized with production providers', tag: _logTag);
       }
 

@@ -22,8 +22,13 @@ class FavoritesTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<FavoritesCubit, FavoritesState>(
+      buildWhen: (prev, curr) =>
+          prev.preferences.favoriteMatchIds != curr.preferences.favoriteMatchIds ||
+          prev.preferences.favoriteTeamCodes != curr.preferences.favoriteTeamCodes,
       builder: (context, favoritesState) {
         return BlocBuilder<PredictionsCubit, PredictionsState>(
+          buildWhen: (prev, curr) =>
+              prev.predictions != curr.predictions || prev.stats != curr.stats,
           builder: (context, predictionsState) {
             final favoriteMatchIds = favoritesState.preferences.favoriteMatchIds;
             final favoriteTeamCodes = favoritesState.preferences.favoriteTeamCodes;
@@ -77,8 +82,13 @@ class FavoritesTab extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   BlocBuilder<MatchListCubit, MatchListState>(
+                    buildWhen: (prev, curr) =>
+                        prev.matches != curr.matches ||
+                        prev.isLoading != curr.isLoading,
                     builder: (context, matchState) {
                       return BlocBuilder<PredictionsCubit, PredictionsState>(
+                        buildWhen: (prev, curr) =>
+                            prev.predictions != curr.predictions,
                         builder: (context, predictionsState) {
                           final favoriteMatches = matchState.matches
                               .where((m) => favoriteMatchIds.contains(m.matchId))
@@ -124,6 +134,9 @@ class FavoritesTab extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   BlocBuilder<TeamsCubit, TeamsState>(
+                    buildWhen: (prev, curr) =>
+                        prev.teams != curr.teams ||
+                        prev.isLoading != curr.isLoading,
                     builder: (context, teamsState) {
                       final favoriteTeams = teamsState.teams
                           .where((t) => favoriteTeamCodes.contains(t.fifaCode))

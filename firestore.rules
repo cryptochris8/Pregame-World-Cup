@@ -222,14 +222,14 @@ service cloud.firestore {
     // Activity comments - auth read, auth create, own delete
     match /activity_comments/{commentId} {
       allow read: if isAuth();
-      allow create: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.authorId;
       allow delete: if isAuth() && request.auth.uid == resource.data.authorId;
     }
 
     // Comments (general) - auth read, auth create, own delete
     match /comments/{commentId} {
       allow read: if isAuth();
-      allow create: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.authorId;
       allow delete: if isAuth() && request.auth.uid == resource.data.authorId;
     }
 
@@ -286,14 +286,14 @@ service cloud.firestore {
     // Game predictions - auth read/write (leaderboard feature)
     match /game_predictions/{predictionId} {
       allow read: if isAuth();
-      allow create: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
     // User predictions - own data
     match /user_predictions/{predictionId} {
       allow read: if isAuth();
-      allow create: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
@@ -523,15 +523,15 @@ service cloud.firestore {
     // ==================== ADMIN ====================
 
     match /admin_users/{docId} {
-      // Auth users can read to check their own admin status; only admins can write
-      allow read: if isAuth();
+      // Users can only read their own admin status document; only admins can write
+      allow read: if isOwner(docId);
       allow write: if isAdmin();
     }
 
     // Clearance users (beta testers, influencers, friends & family)
     match /clearance_users/{docId} {
-      // Auth users can read to check their own clearance status; only admins can write
-      allow read: if isAuth();
+      // Users can only read their own clearance status document; only admins can write
+      allow read: if isOwner(docId);
       allow write: if isAdmin();
     }
 

@@ -85,18 +85,21 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
       final friendProfiles = <UserProfile>[];
       final connectionMap = <String, SocialConnection>{};
-      for (final connection in friendConnections) {
-        final friendUserId = connection.fromUserId == currentUser.uid
-            ? connection.toUserId
-            : connection.fromUserId;
-        try {
-          final profile = await _socialService.getUserProfile(friendUserId);
-          if (profile != null) {
-            friendProfiles.add(profile);
-            connectionMap[profile.userId] = connection;
-          }
-        } catch (e) {
-          // Error loading profile handled silently
+
+      final profileResults = await Future.wait(
+        friendConnections.map((connection) {
+          final friendUserId = connection.fromUserId == currentUser.uid
+              ? connection.toUserId
+              : connection.fromUserId;
+          return _socialService.getUserProfile(friendUserId).catchError((_) => null);
+        }),
+      );
+
+      for (var i = 0; i < friendConnections.length; i++) {
+        final profile = profileResults[i];
+        if (profile != null) {
+          friendProfiles.add(profile);
+          connectionMap[profile.userId] = friendConnections[i];
         }
       }
 
@@ -603,7 +606,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(AppLocalizations.of(context).failedToStartChat(e.toString())),
+            content: Text(AppLocalizations.of(context).unableToStartChat),
             backgroundColor: Colors.red,
           ),
         );

@@ -257,6 +257,8 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
 
   Widget _buildShowMoreNearbyVenuesButton() {
     return BlocBuilder<NearbyVenuesCubit, NearbyVenuesState>(
+      buildWhen: (prev, curr) =>
+          prev.venues != curr.venues || prev.selectedType != curr.selectedType,
       builder: (context, state) {
         final totalVenues = state.filteredVenues.length;
 

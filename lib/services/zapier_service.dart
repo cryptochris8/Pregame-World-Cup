@@ -7,7 +7,9 @@ import '../core/services/logging_service.dart';
 class ZapierService {
   final Dio _dio;
   
-  // Zapier MCP endpoint from your configuration
+  // TODO(SECURITY): This URL contains embedded auth credentials.
+  // Move Zapier triggers to a Cloud Function so this endpoint is never in the client binary.
+  // Rotate/revoke this endpoint URL immediately.
   static const String _mcpUrl = 'https://mcp.zapier.com/api/mcp/s/OTFlMzY0OTAtODAzMS00NzQ3LTgwZTQtMWJiNDAzYjE2N2JlOjc0NWI0MWUyLTI2OGQtNGU0Zi05NmVhLWE4OTA1YWM4OTI2MQ==/sse';
   
   // Feature flag for gradual rollout

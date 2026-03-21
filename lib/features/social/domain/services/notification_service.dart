@@ -199,16 +199,18 @@ class NotificationService {
   }
 
   /// Get unread notification count
+  /// Uses AggregateQuery (count) to avoid fetching full document payloads.
   Future<int> getUnreadNotificationCount(String userId) async {
     try {
-      final querySnapshot = await _firestore
+      final countQuery = await _firestore
           .collection('notifications')
           .where('userId', isEqualTo: userId)
           .where('isRead', isEqualTo: false)
+          .count()
           .get();
-      
-      return querySnapshot.docs.length;
-      
+
+      return countQuery.count ?? 0;
+
     } catch (e) {
       // Error handled silently
       return 0;

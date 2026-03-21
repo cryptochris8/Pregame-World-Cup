@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../domain/entities/activity_feed.dart';
@@ -8,6 +9,9 @@ class ActivityFeedItemWidget extends StatefulWidget {
   final Function(String, String) onComment;
   final Function(ActivityFeedItem) onShare;
   final Function(String) onUserPressed;
+  final Function(String)? onDelete;
+  final String? currentUserId;
+  final bool initialIsLiked;
 
   const ActivityFeedItemWidget({
     super.key,
@@ -16,6 +20,9 @@ class ActivityFeedItemWidget extends StatefulWidget {
     required this.onComment,
     required this.onShare,
     required this.onUserPressed,
+    this.onDelete,
+    this.currentUserId,
+    this.initialIsLiked = false,
   });
 
   @override
@@ -24,7 +31,7 @@ class ActivityFeedItemWidget extends StatefulWidget {
 
 class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
     with SingleTickerProviderStateMixin {
-  bool _isLiked = false;
+  late bool _isLiked;
   bool _showComments = false;
   final TextEditingController _commentController = TextEditingController();
   late AnimationController _animationController;
@@ -33,6 +40,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
   @override
   void initState() {
     super.initState();
+    _isLiked = widget.initialIsLiked;
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 150),
       vsync: this,
@@ -119,11 +127,11 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
             radius: 20,
             backgroundColor: const Color(0xFF8B4513),
             backgroundImage: widget.activity.userProfileImage != null
-                ? NetworkImage(widget.activity.userProfileImage!)
+                ? CachedNetworkImageProvider(widget.activity.userProfileImage!)
                 : null,
             child: widget.activity.userProfileImage == null
                 ? Text(
-                    widget.activity.userName.isNotEmpty 
+                    widget.activity.userName.isNotEmpty
                         ? widget.activity.userName[0].toUpperCase()
                         : '?',
                     style: const TextStyle(
@@ -177,6 +185,39 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
               size: 16,
             ),
           ),
+
+          // Delete menu (only show for own activities)
+          if (widget.onDelete != null &&
+              widget.currentUserId != null &&
+              widget.activity.userId == widget.currentUserId)
+            PopupMenuButton<String>(
+              icon: const Icon(
+                Icons.more_vert,
+                color: Colors.white70,
+                size: 20,
+              ),
+              color: const Color(0xFF1E293B),
+              onSelected: (value) {
+                if (value == 'delete') {
+                  widget.onDelete!(widget.activity.activityId);
+                }
+              },
+              itemBuilder: (context) => [
+                const PopupMenuItem<String>(
+                  value: 'delete',
+                  child: Row(
+                    children: [
+                      Icon(Icons.delete, color: Colors.red, size: 20),
+                      SizedBox(width: 8),
+                      Text(
+                        'Delete',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
         ],
       ),
     );

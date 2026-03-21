@@ -21,22 +21,36 @@ class ActivityFeedScreen extends StatefulWidget {
 class _ActivityFeedScreenState extends State<ActivityFeedScreen>
     with SingleTickerProviderStateMixin {
   final ActivityFeedService _activityService = sl<ActivityFeedService>();
-  
-  List<ActivityFeedItem> _activities = [];
+  final ScrollController _scrollController = ScrollController();
+
+  List<ActivityFeedItem> _feedActivities = [];
+  List<ActivityFeedItem> _userActivities = [];
   bool _isLoading = true;
+  bool _isLoadingMore = false;
+  bool _hasMore = true;
   late TabController _tabController;
   
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
+    _scrollController.addListener(_onScroll);
     _initializeAndLoadFeed();
   }
 
   @override
   void dispose() {
     _tabController.dispose();
+    _scrollController.dispose();
     super.dispose();
+  }
+
+  void _onScroll() {
+    if (_scrollController.position.pixels >= _scrollController.position.maxScrollExtent - 200) {
+      if (!_isLoadingMore && _hasMore) {
+        _loadMore();
+      }
+    }
   }
 
   Future<void> _initializeAndLoadFeed() async {
@@ -61,21 +75,56 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
     }
 
     if (mounted) {
-      setState(() => _isLoading = true);
+      setState(() {
+        _isLoading = true;
+        _hasMore = true;
+      });
     }
-    
+
     try {
       final activities = await _activityService.getActivityFeed(currentUser.uid);
 
       if (mounted) {
         setState(() {
-          _activities = activities;
+          _feedActivities = activities;
           _isLoading = false;
+          _hasMore = activities.length >= 20;
         });
       }
     } catch (e) {
       if (mounted) {
         setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  Future<void> _loadMore() async {
+    if (_feedActivities.isEmpty || !_hasMore || _isLoadingMore) return;
+
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    if (mounted) {
+      setState(() => _isLoadingMore = true);
+    }
+
+    try {
+      final lastActivity = _feedActivities.last;
+      final moreActivities = await _activityService.getActivityFeed(
+        currentUser.uid,
+        startAfter: lastActivity.createdAt,
+      );
+
+      if (mounted) {
+        setState(() {
+          _feedActivities.addAll(moreActivities);
+          _isLoadingMore = false;
+          _hasMore = moreActivities.length >= 20;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isLoadingMore = false);
       }
     }
   }
@@ -91,7 +140,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
       if (mounted) {
         setState(() {
-          _activities = activities;
+          _feedActivities = activities;
         });
       }
     } catch (e) {
@@ -117,7 +166,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
 
       if (mounted) {
         setState(() {
-          _activities = activities;
+          _userActivities = activities;
           _isLoading = false;
         });
       }
@@ -134,9 +183,18 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (context) => CreateActivityBottomSheet(
-        onActivityCreated: (activity) {
-          _activityService.createActivity(activity);
-          _refreshFeed();
+        onActivityCreated: (activity) async {
+          final success = await _activityService.createActivity(activity);
+          if (success) {
+            _refreshFeed();
+          } else {
+            // Show error snackbar
+            if (mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Failed to post activity. Please try again.')),
+              );
+            }
+          }
         },
       ),
     );
@@ -233,10 +291,6 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       );
     }
 
-    if (_activities.isEmpty) {
-      return _buildEmptyState();
-    }
-
     return RefreshIndicator(
       onRefresh: _refreshFeed,
       color: AppTheme.primaryOrange,
@@ -245,27 +299,47 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
       child: TabBarView(
         controller: _tabController,
         children: [
-          _buildActivityList(),
-          _buildActivityList(),
+          _feedActivities.isEmpty ? _buildEmptyState() : _buildActivityList(_feedActivities),
+          _userActivities.isEmpty ? _buildEmptyState() : _buildActivityList(_userActivities),
         ],
       ),
     );
   }
 
-  Widget _buildActivityList() {
+  Widget _buildActivityList(List<ActivityFeedItem> activities) {
+    final currentUser = FirebaseAuth.instance.currentUser;
+
     return ListView.builder(
+      controller: _scrollController,
       padding: const EdgeInsets.all(16),
-      itemCount: _activities.length,
+      itemCount: activities.length + (_isLoadingMore ? 1 : 0),
       itemBuilder: (context, index) {
-        final activity = _activities[index];
+        if (index == activities.length) {
+          // Loading indicator at the bottom
+          return const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Center(
+              child: CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
+                strokeWidth: 3,
+              ),
+            ),
+          );
+        }
+
+        final activity = activities[index];
         return Padding(
           padding: const EdgeInsets.only(bottom: 16),
           child: ActivityFeedItemWidget(
             activity: activity,
+            // TODO: pass initialIsLiked when ActivityFeedItem gains an isLikedByCurrentUser field
+            initialIsLiked: false,
             onLike: (activityId) => _handleLike(activityId, activity),
             onComment: (activityId, comment) => _handleComment(activityId, comment, activity),
             onShare: (activity) => _handleShare(activity),
             onUserPressed: (userId) => _navigateToProfile(userId),
+            onDelete: _handleDelete,
+            currentUserId: currentUser?.uid,
           ),
         );
       },
@@ -403,6 +477,76 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
     final text = '${activity.userName}: ${activity.content}\n\n'
         '${l10n.sharedFromPregame}';
     Share.share(text, subject: l10n.appTitle);
+  }
+
+  Future<void> _handleDelete(String activityId) async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    // Show confirmation dialog
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1E293B),
+        title: const Text(
+          'Delete Activity?',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: const Text(
+          'This action cannot be undone.',
+          style: TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text(
+              'Cancel',
+              style: TextStyle(color: Colors.white70),
+            ),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text(
+              'Delete',
+              style: TextStyle(color: Colors.red),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true || !mounted) return;
+
+    try {
+      final success = await _activityService.deleteActivity(activityId, currentUser.uid);
+
+      if (!mounted) return;
+
+      if (success) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Activity deleted successfully'),
+            backgroundColor: Colors.green,
+          ),
+        );
+        _refreshFeed();
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Failed to delete activity'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Error deleting activity'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
   }
 
   void _navigateToProfile(String userId) {
