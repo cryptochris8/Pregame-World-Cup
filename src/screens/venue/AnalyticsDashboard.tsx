@@ -76,7 +76,7 @@ const AnalyticsDashboard: React.FC = () => {
       { name: 'Craft Beer Flight', sales: 298, revenue: 3576.00 },
       { name: 'Loaded Nachos', sales: 267, revenue: 3204.00 },
       { name: 'BBQ Burger', sales: 234, revenue: 3276.00 },
-      { name: 'Game Day Special', sales: 189, revenue: 2646.00 },
+      { name: 'Match Day Special', sales: 189, revenue: 2646.00 },
     ],
     
     hourlyTraffic: [
@@ -126,17 +126,17 @@ const AnalyticsDashboard: React.FC = () => {
     ],
     
     locationData: [
-      { city: 'Auburn', visitors: 3456 },
-      { city: 'Montgomery', visitors: 2345 },
-      { city: 'Birmingham', visitors: 1890 },
-      { city: 'Mobile', visitors: 1234 },
-      { city: 'Huntsville', visitors: 987 },
+      { city: 'New York', visitors: 3456 },
+      { city: 'Los Angeles', visitors: 2345 },
+      { city: 'Dallas', visitors: 1890 },
+      { city: 'Miami', visitors: 1234 },
+      { city: 'Chicago', visitors: 987 },
     ],
-    
+
     gameDayPerformance: [
-      { date: '2024-01-15', game: 'Auburn vs Alabama', attendance: 2345, revenue: 23456, avgSpend: 45.67 },
-      { date: '2024-01-22', game: 'Auburn vs Georgia', attendance: 2156, revenue: 21234, avgSpend: 43.21 },
-      { date: '2024-01-29', game: 'Auburn vs LSU', attendance: 2456, revenue: 25678, avgSpend: 47.89 },
+      { date: '2026-06-15', game: 'USA vs Mexico', attendance: 2345, revenue: 23456, avgSpend: 45.67 },
+      { date: '2026-06-22', game: 'Brazil vs Argentina', attendance: 2156, revenue: 21234, avgSpend: 43.21 },
+      { date: '2026-06-29', game: 'England vs France', attendance: 2456, revenue: 25678, avgSpend: 47.89 },
     ],
   };
 
@@ -364,8 +364,8 @@ const AnalyticsDashboard: React.FC = () => {
           </div>
         </div>
 
-        {/* Game Day Performance */}
-        <ChartCard title="Game Day Performance" subtitle="Revenue and attendance during game days">
+        {/* Match Day Performance */}
+        <ChartCard title="Match Day Performance" subtitle="Revenue and attendance during World Cup matches">
           <div className="overflow-x-auto">
             <table className="w-full text-white">
               <thead>

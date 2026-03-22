@@ -36,7 +36,7 @@ const GameScreen: React.FC = () => {
                   📍 Nearby Venues
                 </h3>
                 <p className="venue-details">
-                  Find the best sports bars and restaurants for game day experiences
+                  Find the best sports bars and restaurants for match day experiences
                 </p>
                 <div className="mt-4">
                   <span className="badge-upcoming">Discover</span>

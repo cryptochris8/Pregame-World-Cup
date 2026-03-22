@@ -1,0 +1,57 @@
+{
+  "team1Code": "KOR",
+  "team2Code": "RSA",
+  "team1Name": "South Korea",
+  "team2Name": "South Africa",
+  "historicalAnalysis": "South Korea and South Africa share a unique distinction — both are nations that transformed their football by hosting the FIFA World Cup. South Korea's co-hosting of the 2002 tournament saw them achieve one of the greatest underdog runs in World Cup history, reaching the semi-finals on home soil. South Africa made history in 2010 as the first African nation to host the tournament, uniting the Rainbow Nation through football.\n\nTheir competitive meetings have been rare, mostly limited to friendly matches and tournament encounters. Both nations have produced memorable World Cup moments: South Korea's 2002 semi-final run and their stunning 2-0 victory over Germany at the 2018 World Cup, and South Africa's unforgettable 2010 opening match goal by Siphiwe Tshabalala.\n\nThis matchday 3 encounter in Group A could be decisive for both teams' knockout round hopes. With Mexico and Denmark as the other two teams in the group, this match between the two lower-seeded sides could determine who advances and who goes home. The stakes add enormous pressure to what promises to be a tense, tactical battle between two proud football nations.",
+  "keyStorylines": [
+    "A potential group-deciding clash between two former World Cup hosts",
+    "Son Heung-min's quest to lead South Korea deep into the tournament",
+    "South Africa fighting to advance past the group stage for the first time",
+    "Matchday 3 permutations — both teams may need a result to qualify",
+    "Two nations who know the power of hosting the World Cup meeting on neutral ground"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "position": "Forward",
+      "reason": "Asia's greatest player and South Korea's captain — capable of deciding any match with a moment of brilliance"
+    },
+    {
+      "name": "Percy Tau",
+      "teamCode": "RSA",
+      "position": "Forward",
+      "reason": "Bafana Bafana's most dangerous attacker with European experience and an eye for goal"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "position": "Midfielder",
+      "reason": "PSG midfielder whose creativity, vision, and set-piece delivery can unlock any defense"
+    },
+    {
+      "name": "Ronwen Williams",
+      "teamCode": "RSA",
+      "position": "Goalkeeper",
+      "reason": "Africa's best goalkeeper who will be vital if South Africa are to contain South Korea's attack"
+    }
+  ],
+  "tacticalPreview": "South Korea play a high-pressing 4-2-3-1 with Son Heung-min as the primary attacking threat, often cutting inside from the left. Lee Kang-in provides creative spark as the playmaker, and the double pivot in midfield provides a platform for their aggressive pressing game. South Korea's work rate and intensity off the ball are among the best in Asian football.\n\nSouth Africa will set up pragmatically, likely in a 4-4-2 with quick transitions in mind. Bafana Bafana's strength lies in their pace in wide areas and their physical presence in midfield. They will look to disrupt South Korea's passing rhythm, win second balls, and launch fast counters through Percy Tau and their wide players. Aerial ability from set pieces could be another weapon against South Korea's smaller defensive line.",
+  "prediction": {
+    "predictedOutcome": "KOR",
+    "predictedScore": "1-0",
+    "confidence": 60,
+    "reasoning": "South Korea's individual quality, particularly through Son Heung-min and Lee Kang-in, gives them an edge. However, this could easily go either way — South Africa's physicality and defensive organization under Ronwen Williams makes them tough to break down. The pressure of a must-win matchday 3 scenario could make this a cagey affair.",
+    "alternativeScenario": "South Africa's counter-attacking speed and aerial threat could see them snatch a 1-0 win. If the group situation requires South Africa to win or draw, their defensive resilience could frustrate South Korea into errors. A tense, hard-fought draw is the most likely alternative outcome."
+  },
+  "pastEncountersSummary": "South Korea and South Africa have met infrequently, with most encounters coming in friendly matches. Both teams bring World Cup hosting experience and a deep national pride in their football. This Group A clash could be the most significant competitive meeting between these two nations in their history.",
+  "funFacts": [
+    "Both nations have hosted the FIFA World Cup — South Korea in 2002, South Africa in 2010",
+    "South Korea reached the World Cup semi-finals in 2002 and beat Germany 2-0 in 2018",
+    "Son Heung-min has scored over 100 goals in the Premier League with Tottenham",
+    "South Africa's Ronwen Williams was named CAF Goalkeeper of the Year in 2024",
+    "This could be the first competitive meeting between these two former World Cup host nations"
+  ],
+  "isFirstMeeting": true
+}

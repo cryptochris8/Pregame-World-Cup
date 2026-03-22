@@ -29,15 +29,15 @@ const VenueProfile: React.FC = () => {
   const [activeTab, setActiveTab] = useState('basic');
   const [isEditing, setIsEditing] = useState(false);
   const [profileData, setProfileData] = useState<VenueProfileData>({
-    name: "The Sports Den",
-    description: "Auburn's premier sports bar and grill featuring 20+ HD TVs, game day specials, and the best atmosphere for watching SEC football!",
-    address: "123 College Street, Auburn, AL 36830",
-    phone: "(334) 555-0123",
-    email: "info@thesportsden.com",
-    website: "www.thesportsden.com",
-    capacity: 150,
+    name: "Your Venue",
+    description: "The ultimate destination to watch World Cup 2026! Multiple HD screens, match day specials, and an electric atmosphere for every match.",
+    address: "",
+    phone: "",
+    email: "",
+    website: "",
+    capacity: 0,
     venueType: "Sports Bar",
-    amenities: ["Large TVs", "Outdoor Seating", "Live Music", "Game Day Specials", "Parking"],
+    amenities: ["Large TVs", "Outdoor Seating", "Live Music", "Match Day Specials", "Parking"],
     regularHours: {
       monday: { open: "11:00", close: "22:00", isClosed: false },
       tuesday: { open: "11:00", close: "22:00", isClosed: false },
@@ -57,9 +57,9 @@ const VenueProfile: React.FC = () => {
       sunday: { open: "10:00", close: "24:00", isClosed: false }
     },
     socialMedia: {
-      facebook: "thesportsdenauburn",
-      instagram: "@sportsden_auburn",
-      twitter: "@SportsdenAU"
+      facebook: "",
+      instagram: "",
+      twitter: ""
     }
   });
 
@@ -73,7 +73,7 @@ const VenueProfile: React.FC = () => {
   const dayLabels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
   const availableAmenities = [
-    "Large TVs", "Outdoor Seating", "Live Music", "Game Day Specials", 
+    "Large TVs", "Outdoor Seating", "Live Music", "Match Day Specials", 
     "Parking", "WiFi", "Pool Tables", "Dartboards", "Private Events",
     "Full Bar", "Kitchen", "Takeout", "Delivery", "Group Reservations"
   ];
@@ -365,9 +365,9 @@ const VenueProfile: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Game Day Hours */}
+                {/* Match Day Hours */}
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Game Day Hours</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Match Day Hours</h3>
                   <div className="space-y-3">
                     {days.map((day, index) => (
                       <div key={day} className="flex items-center space-x-4">

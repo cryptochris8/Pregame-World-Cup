@@ -1,0 +1,57 @@
+{
+  "team1Code": "COD",
+  "team2Code": "UZB",
+  "team1Name": "DR Congo",
+  "team2Name": "Uzbekistan",
+  "historicalAnalysis": "DR Congo and Uzbekistan meet in what is arguably the most evenly-matched fixture in Group K, with both nations representing the underdogs against heavyweights Portugal and Colombia. This match could prove decisive in determining which team has a realistic shot at advancing to the knockout rounds.\n\nUzbekistan are making their World Cup debut in 2026, a historic milestone for the Central Asian nation. The White Wolves have been a consistent force in Asian football, regularly reaching the later stages of AFC Asian Cup tournaments, but a World Cup berth had always eluded them until now. Their qualification is a landmark moment for Central Asian football.\n\nDR Congo's appearance is only their second at a World Cup, coming 52 years after their debut as Zaire in 1974 in West Germany. The Leopards have re-established themselves as one of Africa's top teams and their qualification through the highly competitive African pathway is a significant achievement.\n\nBoth teams share the experience of being historic qualifiers with passionate fanbases. Neither will want to leave the tournament without at least one victory, making this match a potential six-pointer. The winner could realistically dream of the Round of 32, while the loser may face elimination.",
+  "keyStorylines": [
+    "Uzbekistan's first-ever World Cup match in history",
+    "DR Congo's second World Cup appearance, 52 years after their first",
+    "A must-win match for both teams' knockout round hopes",
+    "Central Asian football meets African football on the world stage",
+    "Both teams looking to write history as World Cup underdogs"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Eldor Shomurodov",
+      "teamCode": "UZB",
+      "position": "Forward",
+      "reason": "Uzbekistan's star striker with Serie A experience at Roma and Cagliari"
+    },
+    {
+      "name": "Abbosbek Fayzullaev",
+      "teamCode": "UZB",
+      "position": "Midfielder",
+      "reason": "Young and dynamic attacking talent, one of Uzbekistan's brightest prospects"
+    },
+    {
+      "name": "Cédric Bakambu",
+      "teamCode": "COD",
+      "position": "Forward",
+      "reason": "DR Congo's experienced frontman with spells in Spain, China, and France"
+    },
+    {
+      "name": "Arthur Masuaku",
+      "teamCode": "COD",
+      "position": "Defender",
+      "reason": "Versatile left-sided player with Premier League experience at West Ham"
+    }
+  ],
+  "tacticalPreview": "Uzbekistan play an organized and disciplined style, typically in a 4-2-3-1 formation. Their football emphasizes collective movement and quick passing combinations. Shomurodov's hold-up play and finishing ability gives them a clear focal point, while the midfield works hard to press and win possession in key areas.\n\nDR Congo will look to use their physical advantages and pace to unsettle Uzbekistan. Playing in a 4-4-2 or 4-3-3, the Leopards will try to dominate in wide areas and deliver crosses to exploit their aerial threat. Defensively, both teams will be wary of conceding, knowing that goal difference could play a role in determining group advancement.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 60,
+    "reasoning": "This is a closely-matched fixture between two teams of similar quality. Both will be cautious about conceding, leading to a tight and cagey encounter where a draw is the most likely outcome.",
+    "alternativeScenario": "If one team scores early, the other will be forced to open up, potentially leading to a more entertaining match. DR Congo's pace could be the difference in a 2-1 victory."
+  },
+  "pastEncountersSummary": "DR Congo and Uzbekistan have no history of competitive meetings at senior level. This World Cup group stage match will be their first-ever encounter on the global stage.",
+  "funFacts": [
+    "Uzbekistan are the first Central Asian nation to qualify for a FIFA World Cup",
+    "DR Congo's 52-year gap between World Cup appearances (1974-2026) is one of the longest in history",
+    "Eldor Shomurodov became the first Uzbek player to score in Serie A when he netted for Genoa",
+    "Uzbekistan won the AFC U-20 Asian Cup in 2023, showcasing their emerging talent pipeline",
+    "DR Congo's football federation was founded in 1919, making it one of Africa's oldest"
+  ],
+  "isFirstMeeting": true
+}

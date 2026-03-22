@@ -20,7 +20,7 @@ const VenueOwnerDashboard: React.FC = () => {
   });
 
   const [isLiveStreaming, setIsLiveStreaming] = useState(false);
-  const [venueName, setVenueName] = useState("Your Sports Bar");
+  const [venueName, setVenueName] = useState("Your Venue");
 
   // Simulate loading venue data
   useEffect(() => {
@@ -131,7 +131,7 @@ const VenueOwnerDashboard: React.FC = () => {
               <h3 className="text-lg font-semibold" style={{ color: 'var(--pregame-text-light)' }}>Live Stream</h3>
               <div className={`w-3 h-3 rounded-full ${isLiveStreaming ? 'bg-red-500' : 'bg-gray-500'}`}></div>
             </div>
-            <p style={{ color: 'var(--pregame-text-muted)' }} className="mb-4">Manage your venue's live stream for game day atmosphere</p>
+            <p style={{ color: 'var(--pregame-text-muted)' }} className="mb-4">Manage your venue's live stream for match day atmosphere</p>
             <div className="flex items-center font-medium" style={{ color: 'var(--pregame-orange)' }}>
               <span>{isLiveStreaming ? 'Stream Active' : 'Start Streaming'}</span>
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,12 +143,12 @@ const VenueOwnerDashboard: React.FC = () => {
           {/* Food & Drink Specials */}
           <Link to="/venue/specials" className="pregame-card block hover:border-orange-500 transition-all duration-200">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold" style={{ color: 'var(--pregame-text-light)' }}>Game Day Specials</h3>
+              <h3 className="text-lg font-semibold" style={{ color: 'var(--pregame-text-light)' }}>Match Day Specials</h3>
               <svg className="w-6 h-6" style={{ color: 'var(--pregame-orange)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
               </svg>
             </div>
-            <p style={{ color: 'var(--pregame-text-muted)' }} className="mb-4">Create and manage food & drink specials for game days</p>
+            <p style={{ color: 'var(--pregame-text-muted)' }} className="mb-4">Create and manage food & drink specials for match days</p>
             <div className="flex items-center font-medium" style={{ color: 'var(--pregame-orange)' }}>
               <span>Manage Specials</span>
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

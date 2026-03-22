@@ -1,0 +1,21 @@
+{
+  "id": "manager_tun",
+  "firstName": "Sabri",
+  "lastName": "Lamouchi",
+  "commonName": "Sabri Lamouchi",
+  "dateOfBirth": "1971-11-09",
+  "nationality": "France",
+  "currentTeam": "Tunisia",
+  "currentTeamCode": "TUN",
+  "photoUrl": "assets/managers/lamouchi.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 14,
+  "previousTeams": ["Ivory Coast NT", "Rennes", "Nottingham Forest", "Al-Duhail", "Cardiff City", "Al-Riyadh"],
+  "trophies": ["Ligue 1 runner-up (Rennes, Europa League qualification)"],
+  "careerWins": 100,
+  "careerDraws": 55,
+  "careerLosses": 70,
+  "careerWinPercentage": 44,
+  "bio": "French-Tunisian manager appointed to lead Tunisia at the 2026 World Cup after Sami Trabelsi's dismissal. A former France international midfielder, Lamouchi previously led Ivory Coast to the 2014 World Cup and managed Nottingham Forest and Rennes in Europe."
+}

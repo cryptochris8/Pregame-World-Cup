@@ -1,0 +1,57 @@
+{
+  "team1Code": "CPV",
+  "team2Code": "URU",
+  "team1Name": "Cabo Verde",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "This World Cup encounter pits the tournament's most heartwarming debutants against one of its most decorated historical powers. Cabo Verde, with a population of just 600,000, have achieved the extraordinary by qualifying for the 2026 FIFA World Cup — their first appearance at football's grandest stage. Their journey is a triumph of determination and organization over limited resources.\n\nUruguay are two-time World Cup champions, having won the inaugural tournament on home soil in 1930 and then producing arguably the greatest upset in football history by defeating Brazil in the 1950 final at the Maracana in what became known as the 'Maracanazo.' The Celeste have been a consistent force in South American football, reaching the 2010 World Cup semifinals and the 2022 World Cup group stage. Despite a population of only 3.5 million, Uruguay have historically punched well above their weight — a trait they share with their opponents in this match.\n\nUruguay's modern squad combines the famous 'garra charrua' (fighting spirit) with genuine world-class talent. Darwin Nunez provides explosive attacking power at Liverpool, while Federico Valverde has established himself as one of the world's most complete midfielders at Real Madrid. Ronald Araujo brings defensive steel from Barcelona's backline. This is a squad capable of competing with anyone, and they will be heavy favorites against the World Cup debutants.",
+  "keyStorylines": [
+    "Two-time World Cup winners Uruguay facing the smallest nation at the 2026 tournament in Cabo Verde",
+    "Both nations share the distinction of being small countries that have overachieved in football relative to their population",
+    "Darwin Nunez and Federico Valverde headlining a Uruguayan squad packed with top European league talent",
+    "Cabo Verde's historic debut against one of football's most legendary nations",
+    "Uruguay seeking to assert their dominance in what should be a crucial group-stage fixture"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Darwin Nunez",
+      "position": "Striker",
+      "teamCode": "URU",
+      "reason": "The explosive Liverpool striker combines blistering pace with aerial power and an unpredictable style that terrifies defenders. His work rate and intensity embody Uruguay's famous fighting spirit."
+    },
+    {
+      "name": "Federico Valverde",
+      "position": "Midfielder",
+      "teamCode": "URU",
+      "reason": "One of the most complete midfielders in world football, Valverde combines box-to-box energy with technical excellence, long-range shooting, and the ability to play multiple positions for Real Madrid."
+    },
+    {
+      "name": "Ronald Araujo",
+      "position": "Centre-back",
+      "teamCode": "URU",
+      "reason": "The powerful Barcelona centre-back brings pace, physicality, and aerial dominance to Uruguay's defense. His ability to recover and win duels makes him one of the best defenders in La Liga."
+    },
+    {
+      "name": "Ryan Mendes",
+      "position": "Forward",
+      "teamCode": "CPV",
+      "reason": "Cabo Verde's experienced attacker will need to produce the performance of his career to trouble Uruguay's defense. His movement and finishing will be crucial to any chances the islanders create."
+    }
+  ],
+  "tacticalPreview": "Uruguay typically deploy a 4-3-3 or 4-4-2 formation that emphasizes defensive solidity, midfield control, and devastating counter-attacks. Valverde's ability to drive from midfield and Nunez's explosive runs in behind create a potent transition threat. Uruguay are also dangerous from set pieces, with aerial threats like Araujo and Nunez making them formidable from corners and free kicks. The Celeste will look to control this match from the outset and use their physical and technical superiority to wear Cabo Verde down.\n\nCabo Verde will need to produce the most disciplined defensive performance in their history. A deep 5-4-1 or 5-3-2 formation is likely, with the entire team committed to denying Uruguay space in the final third. Set pieces will be Cabo Verde's most realistic avenue to goal, and they will look to be physical and competitive in aerial duels. Counter-attacks through their quickest players offer another route, though opportunities will be rare against Uruguay's organized defense. The key for Cabo Verde is staying in the match mentally — if they concede early, the floodgates could open.",
+  "prediction": {
+    "predictedOutcome": "URU",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Uruguay's quality across the pitch is vastly superior to Cabo Verde's, and the South Americans possess the tactical experience and individual brilliance to break down deep defensive blocks. Nunez's pace and Valverde's driving runs should create numerous chances, and Uruguay's set-piece prowess adds another dimension.",
+    "alternativeScenario": "Cabo Verde could produce a heroic defensive display and keep the score respectable. If they can frustrate Uruguay in the first half and stay organized, nerves could creep in for the favorites. A narrow 1-0 Uruguay win or even a shock 0-0 draw, while unlikely, would be a massive achievement for the island nation."
+  },
+  "pastEncountersSummary": "Cabo Verde and Uruguay have never met in an official international match. The two nations come from different confederations and vastly different footballing traditions, meaning this World Cup encounter represents completely uncharted territory. Uruguay's experience against African opposition has been limited primarily to World Cup group stages, while Cabo Verde have never faced a South American opponent of this caliber.",
+  "funFacts": [
+    "Uruguay won the first-ever FIFA World Cup in 1930, defeating Argentina 4-2 in the final held in Montevideo",
+    "Uruguay's 1950 World Cup final victory over Brazil at the Maracana — the 'Maracanazo' — is considered one of the greatest upsets in sporting history",
+    "Cabo Verde has a larger diaspora population than its resident population, with more Cabo Verdeans living abroad (mainly in the US, Portugal, and France) than on the islands",
+    "Federico Valverde was named the Best Young Player at the 2023 Club World Cup and has won multiple Champions League titles with Real Madrid",
+    "Both Uruguay (3.5 million) and Cabo Verde (600,000) are among the smallest nations at the 2026 World Cup, though their footballing histories could not be more different"
+  ],
+  "isFirstMeeting": true
+}

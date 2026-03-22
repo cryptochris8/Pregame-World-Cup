@@ -1,0 +1,57 @@
+{
+  "team1Code": "COD",
+  "team2Code": "COL",
+  "team1Name": "DR Congo",
+  "team2Name": "Colombia",
+  "historicalAnalysis": "DR Congo and Colombia meet in what promises to be one of the more intriguing Group K fixtures. Colombia are South American football royalty, having reached the 2014 World Cup quarterfinals where James Rodríguez won the Golden Boot with six goals. Los Cafeteros have been a consistent force in South American football, qualifying for six World Cups overall.\n\nDR Congo, formerly known as Zaire, have a deep football history. They were the first sub-Saharan African nation to compete at a World Cup, appearing at the 1974 tournament in West Germany. That squad, representing Zaire, lost all three group matches but made history simply by being there. The 2026 World Cup marks DR Congo's return to the biggest stage after over 50 years.\n\nColombia's current squad blends experienced campaigners with exciting young talent. Luis Díaz at Liverpool has established himself as one of the Premier League's most exciting wingers, while the team retains the flair and technical quality that has long defined Colombian football.\n\nDR Congo's qualification is a triumph for Congolese football. The Leopards have long been a force in African football, winning the Africa Cup of Nations twice (1968 and 1974), and their return to the World Cup has been celebrated across the continent. Their squad features several players competing in top European leagues.",
+  "keyStorylines": [
+    "DR Congo's first World Cup since 1974 (as Zaire)",
+    "Colombia looking to match or surpass their 2014 quarterfinal run",
+    "Luis Díaz leading a new generation of Colombian talent",
+    "DR Congo carrying the hopes of Congolese football's renaissance",
+    "A meeting of South American flair and African footballing pride"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Luis Díaz",
+      "teamCode": "COL",
+      "position": "Forward",
+      "reason": "Liverpool winger with devastating pace and dribbling ability"
+    },
+    {
+      "name": "Jhon Arias",
+      "teamCode": "COL",
+      "position": "Midfielder",
+      "reason": "Versatile attacking midfielder who starred in Colombia's qualifying campaign"
+    },
+    {
+      "name": "Cédric Bakambu",
+      "teamCode": "COD",
+      "position": "Forward",
+      "reason": "Experienced striker and DR Congo's most high-profile attacking threat"
+    },
+    {
+      "name": "Chancel Mbemba",
+      "teamCode": "COD",
+      "position": "Defender",
+      "reason": "Veteran center-back with extensive European experience including Marseille"
+    }
+  ],
+  "tacticalPreview": "Colombia will look to impose their technical superiority through possession-based football in a 4-2-3-1 or 4-3-3 shape. Luis Díaz's ability to beat defenders one-on-one on the left wing will be central to their attacking plan, while the midfield will aim to control tempo and dictate play.\n\nDR Congo will rely on their physical strength and pace to compete. Likely playing in a 4-4-2 or 4-5-1, the Leopards will look to stay organized defensively and use their speed on the counter-attack. DR Congo's aerial threat from set pieces could also be a factor against Colombia's defense.",
+  "prediction": {
+    "predictedOutcome": "COL",
+    "predictedScore": "2-1",
+    "confidence": 68,
+    "reasoning": "Colombia's squad depth and World Cup experience give them a clear advantage, but DR Congo's physicality and counter-attacking ability means this won't be a walkover.",
+    "alternativeScenario": "DR Congo's pace and power could cause Colombia real problems in transition. If the Leopards score first, their defensive resilience could see them hold on for a famous draw or even victory."
+  },
+  "pastEncountersSummary": "DR Congo (formerly Zaire) and Colombia have had minimal competitive meetings at senior level. This World Cup encounter will be their most significant meeting in football history.",
+  "funFacts": [
+    "Zaire (now DR Congo) were the first sub-Saharan African team to play at a World Cup in 1974",
+    "James Rodríguez won the 2014 World Cup Golden Boot with 6 goals for Colombia",
+    "DR Congo have won the Africa Cup of Nations twice (1968, 1974)",
+    "Colombia's 5-0 victory over Argentina in 2024 World Cup qualifying was one of their greatest results",
+    "DR Congo's gap between World Cup appearances (1974-2026) is 52 years"
+  ],
+  "isFirstMeeting": true
+}

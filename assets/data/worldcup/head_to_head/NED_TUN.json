@@ -1,0 +1,29 @@
+{
+  "id": "NED_TUN",
+  "team1Code": "NED",
+  "team2Code": "TUN",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 4,
+  "team2Goals": 0,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "1978-04-05",
+  "firstMeeting": "1978-04-05",
+  "notableMatches": [
+    {
+      "year": 1978,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 4,
+      "team2Score": 0,
+      "winnerCode": "NED",
+      "location": "Tunis, Tunisia",
+      "description": "Netherlands thrash Tunisia in pre-World Cup friendly ahead of the 1978 tournament"
+    }
+  ]
+}

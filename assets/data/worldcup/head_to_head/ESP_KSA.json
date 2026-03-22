@@ -1,0 +1,39 @@
+{
+  "id": "ESP_KSA",
+  "team1Code": "ESP",
+  "team2Code": "KSA",
+  "totalMatches": 4,
+  "team1Wins": 4,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 10,
+  "team2Goals": 1,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 2,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-11-23",
+  "firstMeeting": "2006-06-23",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 7,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Al Rayyan, Qatar",
+      "description": "Spain demolish Saudi Arabia in record World Cup group stage victory"
+    },
+    {
+      "year": 2006,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ESP",
+      "location": "Kaiserslautern, Germany",
+      "description": "Juanito header in 36th minute gives Spain narrow World Cup group stage victory"
+    }
+  ]
+}

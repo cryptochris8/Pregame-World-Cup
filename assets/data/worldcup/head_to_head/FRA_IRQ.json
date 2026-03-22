@@ -1,0 +1,29 @@
+{
+  "id": "FRA_IRQ",
+  "team1Code": "FRA",
+  "team2Code": "IRQ",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 2,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2012-06-01",
+  "firstMeeting": "2012-06-01",
+  "notableMatches": [
+    {
+      "year": 2012,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "FRA",
+      "location": "Sion, Switzerland",
+      "description": "France edge Iraq in pre-Euro 2012 friendly"
+    }
+  ]
+}

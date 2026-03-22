@@ -1,0 +1,57 @@
+{
+  "team1Code": "IRQ",
+  "team2Code": "SEN",
+  "team1Name": "Iraq",
+  "team2Name": "Senegal",
+  "historicalAnalysis": "Iraq and Senegal bring contrasting but equally compelling football stories to this World Cup encounter. Senegal have established themselves as Africa's premier footballing nation, winning the 2022 Africa Cup of Nations in Cameroon and reaching the Round of 16 at the 2022 World Cup in Qatar. The Teranga Lions have a proud World Cup history dating back to their remarkable 2002 debut, when they beat reigning champions France in the opening match and reached the quarterfinals.\n\nIraq's return to the World Cup after a 40-year absence is a story of resilience. Iraqi football's crowning moment came at the 2007 Asian Cup, where they won the tournament in one of sport's most emotionally powerful underdog stories. The current generation carries the hopes of rebuilding Iraqi football's international reputation.\n\nSenegal's squad is built on a core of players competing at the highest levels of European football. While the legendary Sadio Mané, who scored the winning penalty in the 2022 AFCON final and was a Champions League winner with Liverpool, has entered the twilight of his career, Senegal continue to produce outstanding talent.\n\nThis match represents a clash of continental champions—Senegal's 2022 AFCON title against Iraq's 2007 Asian Cup. Both nations know what it means to defy expectations on the international stage, and both will be determined to make their mark at this World Cup.",
+  "keyStorylines": [
+    "A clash between continental champions: Senegal (AFCON 2022) vs Iraq (Asian Cup 2007)",
+    "Senegal looking to build on their 2002 and 2022 World Cup successes",
+    "Iraq's emotional return to the World Cup after four decades",
+    "Senegal's next generation stepping out of Sadio Mané's shadow",
+    "Both teams fighting for a knockout round berth from Group I"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Ismaïla Sarr",
+      "teamCode": "SEN",
+      "position": "Forward",
+      "reason": "Explosive winger with pace and directness, key to Senegal's attack"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "position": "Defender",
+      "reason": "Experienced center-back and Senegal's defensive leader"
+    },
+    {
+      "name": "Aymen Hussein",
+      "teamCode": "IRQ",
+      "position": "Forward",
+      "reason": "Iraq's leading scorer and attacking spearhead"
+    },
+    {
+      "name": "Ammar Yaser",
+      "teamCode": "IRQ",
+      "position": "Midfielder",
+      "reason": "Creative playmaker who drives Iraq's attacking play"
+    }
+  ],
+  "tacticalPreview": "Senegal typically deploy a 4-3-3 or 4-2-3-1 formation that emphasizes pace on the wings and physical dominance in midfield. Their pressing intensity and ability to win the ball high up the pitch can suffocate opponents. Senegal's set-piece threat, particularly from corners and free kicks, is also a major weapon.\n\nIraq will need to be compact and organized defensively against Senegal's athleticism and pace. A low defensive block with quick transitions could be Iraq's best route to an upset. Iraq's technical midfielders will look to slow the tempo and frustrate Senegal's high-energy approach.",
+  "prediction": {
+    "predictedOutcome": "SEN",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Senegal's experience at World Cups and superior squad depth across all positions should give them the edge. Their physicality and pace will be difficult for Iraq to contain over 90 minutes.",
+    "alternativeScenario": "If Iraq can keep the score level past the hour mark and Senegal become frustrated, a late Iraqi goal on the counter could produce a stunning 1-0 upset."
+  },
+  "pastEncountersSummary": "Iraq and Senegal have no notable history of competitive meetings. This World Cup group stage match will be their first significant encounter on the global stage.",
+  "funFacts": [
+    "Senegal beat reigning champions France 1-0 in their World Cup debut match in 2002",
+    "Iraq's 2007 Asian Cup final victory over Saudi Arabia was watched by millions across the Middle East",
+    "Senegal's 2022 AFCON triumph was their first-ever continental title",
+    "Iraq produced the Asian Young Footballer of the Year in Mohanad Ali in 2018",
+    "Senegal have qualified for three of the last four World Cups (2002, 2018, 2022, 2026)"
+  ],
+  "isFirstMeeting": true
+}

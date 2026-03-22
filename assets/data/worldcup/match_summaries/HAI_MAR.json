@@ -1,0 +1,57 @@
+{
+  "team1Code": "HAI",
+  "team2Code": "MAR",
+  "team1Name": "Haiti",
+  "team2Name": "Morocco",
+  "historicalAnalysis": "Haiti and Morocco bring vastly different trajectories to this World Cup encounter. Morocco are riding a wave of historic success after their extraordinary run to the semi-finals of the 2022 World Cup in Qatar, where they became the first African and first Arab nation to reach the last four. Along the way, they defeated Belgium in the group stage and eliminated Spain and Portugal in the knockout rounds, capturing the imagination of football fans worldwide.\n\nHaiti's story is one of resilience and redemption. Their only previous World Cup appearance came in 1974 in West Germany, where Emmanuel Sanon's goal against Italy became a moment of Caribbean football legend. Returning to the world stage after more than five decades, Haiti represent the underdog spirit that makes the World Cup special. Despite limited resources and infrastructure challenges, Haitian football has produced talent that has competed across North America and Europe.\n\nThis matchup pits Morocco's ambition to prove 2022 was no fluke against Haiti's desire to simply compete and make their nation proud. Morocco, with their blend of European-based stars and tactically astute coaching under Walid Regragui, will be heavy favorites. But Haiti's players will draw on the memory of 1974 and the knowledge that they represent millions of Haitians worldwide who see this World Cup as a source of hope and unity.",
+  "keyStorylines": [
+    "Morocco's quest to prove their 2022 World Cup semi-final run was the start of a new era, not a one-off",
+    "Haiti returning to the World Cup after 52 years, facing one of the tournament's form teams",
+    "A clash between Africa's and the Caribbean's footballing ambitions on the world stage",
+    "Walid Regragui's Morocco looking to build on their legacy as pioneers for African football",
+    "Haiti seeking to avoid being overwhelmed and write new chapters in their World Cup story"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Right-Back",
+      "reason": "PSG's dynamic defender who scored the decisive Panenka penalty against Spain in 2022, one of the World Cup's most iconic moments"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "position": "Winger/Attacking Midfielder",
+      "reason": "Creative playmaker whose vision and set-piece delivery can unlock any defense, a key figure in Morocco's 2022 run"
+    },
+    {
+      "name": "Yassine Bounou",
+      "teamCode": "MAR",
+      "position": "Goalkeeper",
+      "reason": "The hero of Morocco's 2022 penalty shootout victories whose commanding presence anchors their famously tight defense"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "position": "Winger",
+      "reason": "Haiti's most experienced attacking player, an MLS veteran who provides pace and directness on the counter-attack"
+    }
+  ],
+  "tacticalPreview": "Morocco under Walid Regragui play a disciplined 4-3-3 that is exceptionally well-organized defensively while being devastating on the counter-attack. Hakimi's overlapping runs from right-back provide width, while Ziyech's creativity from the right or through the middle creates chances. Their midfield pressing and defensive structure were world-class in 2022, and they have only improved since.\n\nHaiti will need to be extremely disciplined and compact, likely deploying a deep-sitting 5-4-1 to limit Morocco's space. Their primary objective will be to stay in the game as long as possible and look for set-piece opportunities or counter-attacks. Haiti's pace on the wings could cause problems if Morocco push too many players forward, but the quality gap means Morocco should dominate possession and territory throughout.",
+  "prediction": {
+    "predictedOutcome": "MAR",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Morocco's squad depth, tactical sophistication, and big-tournament experience from 2022 make them overwhelming favorites. Haiti will compete bravely but lack the quality to trouble Morocco's well-organized defense. Morocco's attacking talent should create enough chances to win comfortably.",
+    "alternativeScenario": "Haiti could make this closer than expected if they maintain concentration and defensive shape for the full 90 minutes. A 1-0 or 2-1 Morocco win is possible if Haiti can score on a set piece or counter-attack, which would be celebrated as a moral victory."
+  },
+  "pastEncountersSummary": "Haiti and Morocco have had very limited footballing interaction. Any previous meetings have been confined to minor friendlies or youth tournaments. This 2026 World Cup match represents their first significant competitive encounter on the global stage, making it a historic occasion for both nations.",
+  "funFacts": [
+    "Morocco's 2022 World Cup run included victories over Belgium, Spain, and Portugal before falling to France in the semi-finals",
+    "Haiti's Emmanuel Sanon scored against Italy in the 1974 World Cup, ending Dino Zoff's record unbeaten streak",
+    "Achraf Hakimi's Panenka penalty against Spain in the 2022 World Cup round of 16 is considered one of the most audacious moments in tournament history",
+    "Morocco conceded only one goal from open play in the entire 2022 World Cup before the semi-final against France",
+    "Haiti's football federation was founded in 1904, making it one of the oldest in the Caribbean"
+  ],
+  "isFirstMeeting": true
+}

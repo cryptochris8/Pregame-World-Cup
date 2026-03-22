@@ -164,15 +164,15 @@
         "notes": "Drawn in tough Group B with Switzerland and Canada."
       },
       {
-        "team": "Serbia",
-        "code": "SRB",
-        "odds_american": "+4000",
-        "odds_decimal": 41.00,
-        "implied_probability_pct": 2.4,
+        "team": "Jordan",
+        "code": "JOR",
+        "odds_american": "+25000",
+        "odds_decimal": 251.00,
+        "implied_probability_pct": 0.4,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "dark_horse",
-        "notes": "Elo rank 22. Experienced squad led by Mitrovic and Vlahovic. Qualified through UEFA playoffs."
+        "tier": "outsider",
+        "notes": "Elo rank 75. 2023 Asian Cup finalists. First World Cup appearance. Organized and disciplined side."
       },
       {
         "team": "Belgium",
@@ -186,15 +186,15 @@
         "notes": "Golden generation aging but still talented. Lukaku remains prolific."
       },
       {
-        "team": "Poland",
-        "code": "POL",
+        "team": "Austria",
+        "code": "AUT",
         "odds_american": "+5000",
         "odds_decimal": 51.00,
         "implied_probability_pct": 1.9,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "dark_horse",
-        "notes": "Elo rank 27. Lewandowski still lethal. Strong squad with Champions League quality throughout."
+        "notes": "Elo rank 28. Ralf Rangnick's high-pressing system transformed the squad. Euro 2024 round of 16. Strong Bundesliga core."
       },
       {
         "team": "Colombia",
@@ -208,15 +208,15 @@
         "notes": "Strong qualifying campaign. Drawn with Portugal in Group K."
       },
       {
-        "team": "Nigeria",
-        "code": "NGA",
-        "odds_american": "+6000",
-        "odds_decimal": 61.00,
-        "implied_probability_pct": 1.6,
+        "team": "Scotland",
+        "code": "SCO",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "dark_horse",
-        "notes": "Elo rank 28. Victor Osimhen leads a talented Super Eagles squad. Strong African pedigree."
+        "tier": "longshot",
+        "notes": "Elo rank 35. Strong Premier League contingent. Experienced squad with tournament pedigree from Euro 2024."
       },
       {
         "team": "Uruguay",
@@ -287,15 +287,15 @@
         "notes": "Co-hosts. Favorable Group A draw. Historically strong World Cup performers."
       },
       {
-        "team": "Cameroon",
-        "code": "CMR",
-        "odds_american": "+10000",
-        "odds_decimal": 101.00,
-        "implied_probability_pct": 1.0,
+        "team": "Curaçao",
+        "code": "CUR",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "longshot",
-        "notes": "Elo rank 32. Indomitable Lions return to the World Cup stage. Strong AFCON pedigree with 5 titles."
+        "tier": "outsider",
+        "notes": "Elo rank 100. Small Caribbean island making first World Cup appearance. Dutch-influenced football culture."
       },
       {
         "team": "Croatia",
@@ -331,37 +331,37 @@
         "notes": "AFCON 2025 champions. Beat England 3-1. Sadio Mane leading a confident squad."
       },
       {
-        "team": "Chile",
-        "code": "CHI",
-        "odds_american": "+15000",
-        "odds_decimal": 151.00,
-        "implied_probability_pct": 0.7,
+        "team": "Ivory Coast",
+        "code": "CIV",
+        "odds_american": "+10000",
+        "odds_decimal": 101.00,
+        "implied_probability_pct": 1.0,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "longshot",
-        "notes": "Elo rank 41. Back-to-back Copa America champions (2015-16). Experienced squad looking to recapture former glory."
+        "notes": "Elo rank 42. AFCON 2023 champions on home soil. Strong squad with European league talent throughout."
       },
       {
         "team": "Saudi Arabia",
-        "code": "SAU",
+        "code": "KSA",
         "odds_american": "+15000",
         "odds_decimal": 151.00,
         "implied_probability_pct": 0.7,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "longshot",
-        "notes": "Elo rank 34. Famous for beating Argentina at 2022 World Cup. Strong domestic league investment boosting squad quality."
+        "notes": "Elo rank 60. Famous for beating Argentina at 2022 World Cup. Strong domestic league investment boosting squad quality."
       },
       {
-        "team": "Slovenia",
-        "code": "SVN",
-        "odds_american": "+15000",
-        "odds_decimal": 151.00,
-        "implied_probability_pct": 0.7,
+        "team": "Cabo Verde",
+        "code": "CPV",
+        "odds_american": "+75000",
+        "odds_decimal": 751.00,
+        "implied_probability_pct": 0.1,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "longshot",
-        "notes": "Elo rank 37. Compact, well-organized side. Oblak in goal provides elite shot-stopping."
+        "tier": "outsider",
+        "notes": "Elo rank 88. Small island nation making first World Cup appearance. Surprising African qualifier."
       },
       {
         "team": "Sweden",
@@ -414,37 +414,37 @@
         "tier": "longshot"
       },
       {
-        "team": "Albania",
-        "code": "ALB",
+        "team": "DR Congo",
+        "code": "COD",
         "odds_american": "+20000",
         "odds_decimal": 201.00,
         "implied_probability_pct": 0.5,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "longshot",
-        "notes": "Elo rank 39. Qualified through UEFA playoffs. Compact defensive style could cause upsets."
+        "notes": "Elo rank 58. Talented squad with European league players. AFCON 2024 semifinalists. First World Cup since 1974."
       },
       {
-        "team": "Costa Rica",
-        "code": "CRC",
-        "odds_american": "+20000",
-        "odds_decimal": 201.00,
-        "implied_probability_pct": 0.5,
+        "team": "Algeria",
+        "code": "ALG",
+        "odds_american": "+12000",
+        "odds_decimal": 121.00,
+        "implied_probability_pct": 0.8,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "longshot",
-        "notes": "Elo rank 38. 2014 World Cup quarter-finalists. Experienced CONCACAF side with tournament pedigree."
+        "notes": "Elo rank 45. AFCON 2019 champions. Strong squad depth with European league talent. Passionate support."
       },
       {
-        "team": "Bolivia",
-        "code": "BOL",
-        "odds_american": "+25000",
-        "odds_decimal": 251.00,
-        "implied_probability_pct": 0.4,
+        "team": "South Africa",
+        "code": "RSA",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "longshot",
-        "notes": "Elo rank 40. Returning to the World Cup stage. Altitude advantage at home helped qualifying campaign."
+        "notes": "Elo rank 55. 2010 World Cup hosts return to the stage. AFCON 2024 semifinalists. Growing squad quality."
       },
       {
         "team": "Turkey",
@@ -479,26 +479,26 @@
         "notes": "Co-hosts. Alphonso Davies, Jonathan David, Cyle Larin, Tajon Buchanan all in prime years."
       },
       {
-        "team": "Jamaica",
-        "code": "JAM",
-        "odds_american": "+30000",
-        "odds_decimal": 301.00,
-        "implied_probability_pct": 0.3,
+        "team": "Tunisia",
+        "code": "TUN",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "outsider",
-        "notes": "Elo rank 42. Leon Bailey and Michail Antonio headline a squad of Premier League talent."
+        "tier": "longshot",
+        "notes": "Elo rank 50. Experienced World Cup campaigners with 6 appearances. Disciplined and tactically astute."
       },
       {
-        "team": "Peru",
-        "code": "PER",
-        "odds_american": "+30000",
-        "odds_decimal": 301.00,
-        "implied_probability_pct": 0.3,
+        "team": "Haiti",
+        "code": "HAI",
+        "odds_american": "+100000",
+        "odds_decimal": 1001.00,
+        "implied_probability_pct": 0.1,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "outsider",
-        "notes": "Elo rank 44. 2018 World Cup experience. Passionate support and organized defense."
+        "notes": "Elo rank 90. First World Cup since 1974. Caribbean minnows with a proud footballing history."
       },
       {
         "team": "Wales",
@@ -571,15 +571,15 @@
         "tier": "outsider"
       },
       {
-        "team": "Honduras",
-        "code": "HON",
-        "odds_american": "+50000",
-        "odds_decimal": 501.00,
-        "implied_probability_pct": 0.2,
+        "team": "Iraq",
+        "code": "IRQ",
+        "odds_american": "+30000",
+        "odds_decimal": 301.00,
+        "implied_probability_pct": 0.3,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
         "tier": "outsider",
-        "notes": "Elo rank 45. CONCACAF qualifier with strong home support. Physical and competitive side."
+        "notes": "Elo rank 65. 2007 Asian Cup champions. Passionate fanbase. First World Cup since 1986."
       },
       {
         "team": "Kosovo",
@@ -642,15 +642,15 @@
         "tier": "outsider"
       },
       {
-        "team": "Trinidad and Tobago",
-        "code": "TRI",
-        "odds_american": "+100000",
-        "odds_decimal": 1001.00,
-        "implied_probability_pct": 0.1,
+        "team": "Ghana",
+        "code": "GHA",
+        "odds_american": "+20000",
+        "odds_decimal": 201.00,
+        "implied_probability_pct": 0.5,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "outsider",
-        "notes": "Elo rank 48. Return to the World Cup for the first time since 2006. Small island nation with passionate support."
+        "tier": "longshot",
+        "notes": "Elo rank 52. 2010 World Cup quarter-finalists. Strong African pedigree with talented diaspora players."
       },
       {
         "team": "Indonesia",
@@ -698,10 +698,10 @@
           {"team": "Mexico", "code": "MEX", "odds": "+110"},
           {"team": "South Korea", "code": "KOR", "odds": "+350"},
           {"team": "Denmark", "code": "DEN", "odds": "+450"},
-          {"team": "Bolivia", "code": "BOL", "odds": "+1200"}
+          {"team": "South Africa", "code": "RSA", "odds": "+1200"}
         ],
         "predicted_winner": "Mexico",
-        "notes": "Mexico benefits from gentle draw as hosts. Bolivia replace South Africa."
+        "notes": "Mexico benefits from gentle draw as hosts."
       },
       "B": {
         "teams": [
@@ -717,11 +717,11 @@
         "teams": [
           {"team": "Brazil", "code": "BRA", "odds": "-475"},
           {"team": "Morocco", "code": "MAR", "odds": "+450"},
-          {"team": "Nigeria", "code": "NGA", "odds": "+800"},
-          {"team": "Peru", "code": "PER", "odds": "+3500"}
+          {"team": "Scotland", "code": "SCO", "odds": "+800"},
+          {"team": "Haiti", "code": "HAI", "odds": "+5000"}
         ],
         "predicted_winner": "Brazil",
-        "notes": "Brazil heavy favorite but Morocco a genuine threat. Nigeria add real quality. Brazil-Morocco clash likely decides group."
+        "notes": "Brazil heavy favorite but Morocco a genuine threat. Scotland add European quality. Brazil-Morocco clash likely decides group."
       },
       "D": {
         "teams": [
@@ -737,21 +737,21 @@
         "teams": [
           {"team": "Germany", "code": "GER", "odds": "-200"},
           {"team": "Ecuador", "code": "ECU", "odds": "+250"},
-          {"team": "Cameroon", "code": "CMR", "odds": "+700"},
-          {"team": "Chile", "code": "CHI", "odds": "+1200"}
+          {"team": "Curaçao", "code": "CUR", "odds": "+5000"},
+          {"team": "Ivory Coast", "code": "CIV", "odds": "+700"}
         ],
         "predicted_winner": "Germany",
-        "notes": "Germany strong favorite. Ecuador the main challenger. Cameroon and Chile add experience."
+        "notes": "Germany strong favorite. Ecuador the main challenger. Ivory Coast add AFCON champion quality."
       },
       "F": {
         "teams": [
           {"team": "Netherlands", "code": "NED", "odds": "-135"},
           {"team": "Japan", "code": "JPN", "odds": "+275"},
-          {"team": "Jamaica", "code": "JAM", "odds": "+1200"},
+          {"team": "Tunisia", "code": "TUN", "odds": "+1200"},
           {"team": "Indonesia", "code": "IDN", "odds": "+6500"}
         ],
         "predicted_winner": "Netherlands",
-        "notes": "Japan a strong second seed. Jamaica bring Premier League talent."
+        "notes": "Japan a strong second seed. Tunisia bring World Cup experience."
       },
       "G": {
         "teams": [
@@ -767,8 +767,8 @@
         "teams": [
           {"team": "Spain", "code": "ESP", "odds": "-500"},
           {"team": "Uruguay", "code": "URU", "odds": "+400"},
-          {"team": "Saudi Arabia", "code": "SAU", "odds": "+1600"},
-          {"team": "Slovenia", "code": "SVN", "odds": "+3000"}
+          {"team": "Saudi Arabia", "code": "KSA", "odds": "+1600"},
+          {"team": "Cabo Verde", "code": "CPV", "odds": "+5000"}
         ],
         "predicted_winner": "Spain",
         "notes": "Spain overwhelming favorite. Uruguay the clear second. Saudi Arabia famous for 2022 upset of Argentina."
@@ -778,37 +778,37 @@
           {"team": "France", "code": "FRA", "odds": "-200"},
           {"team": "Norway", "code": "NOR", "odds": "+260"},
           {"team": "Senegal", "code": "SEN", "odds": "+550"},
-          {"team": "Honduras", "code": "HON", "odds": "+4000"}
+          {"team": "Iraq", "code": "IRQ", "odds": "+4000"}
         ],
         "predicted_winner": "France",
-        "notes": "Potential Group of Death. Norway and Senegal both dangerous. Honduras replace Iraq."
+        "notes": "Potential Group of Death. Norway and Senegal both dangerous."
       },
       "J": {
         "teams": [
           {"team": "Argentina", "code": "ARG", "odds": "-340"},
-          {"team": "Serbia", "code": "SRB", "odds": "+400"},
-          {"team": "Poland", "code": "POL", "odds": "+500"},
-          {"team": "Costa Rica", "code": "CRC", "odds": "+2500"}
+          {"team": "Jordan", "code": "JOR", "odds": "+1200"},
+          {"team": "Austria", "code": "AUT", "odds": "+400"},
+          {"team": "Algeria", "code": "ALG", "odds": "+600"}
         ],
         "predicted_winner": "Argentina",
-        "notes": "Argentina heavy favorite. Serbia and Poland provide strong European opposition. Polymarket gives Argentina 75% chance to win group."
+        "notes": "Argentina heavy favorite. Austria and Algeria provide strong opposition. Polymarket gives Argentina 75% chance to win group."
       },
       "K": {
         "teams": [
           {"team": "Portugal", "code": "POR", "odds": "-185"},
           {"team": "Colombia", "code": "COL", "odds": "+225"},
-          {"team": "Albania", "code": "ALB", "odds": "+1200"},
+          {"team": "DR Congo", "code": "COD", "odds": "+1200"},
           {"team": "Uzbekistan", "code": "UZB", "odds": "+3000"}
         ],
         "predicted_winner": "Portugal",
-        "notes": "Strong group. Colombia a serious threat to top it. Albania compact and defensively solid."
+        "notes": "Strong group. Colombia a serious threat to top it. DR Congo athletic and talented."
       },
       "L": {
         "teams": [
           {"team": "England", "code": "ENG", "odds": "-340"},
           {"team": "Croatia", "code": "CRO", "odds": "+400"},
           {"team": "Panama", "code": "PAN", "odds": "+2500"},
-          {"team": "Trinidad and Tobago", "code": "TRI", "odds": "+6500"}
+          {"team": "Ghana", "code": "GHA", "odds": "+3500"}
         ],
         "predicted_winner": "England",
         "notes": "England heavy favorite with perfect qualifying record. Croatia experienced but aging."
@@ -996,31 +996,31 @@
         "notes": "Arsenal and England winger. Key creator and scorer."
       },
       {
-        "player": "Victor Osimhen",
-        "team": "Nigeria",
-        "team_code": "NGA",
-        "odds_american": "+5000",
-        "odds_decimal": 51.00,
-        "implied_probability_pct": 1.9,
-        "notes": "World-class striker. Nigeria's talisman and one of Africa's most prolific forwards."
+        "player": "Che Adams",
+        "team": "Scotland",
+        "team_code": "SCO",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
+        "notes": "Scotland's main striker. Torino forward with Premier League experience."
       },
       {
-        "player": "Robert Lewandowski",
-        "team": "Poland",
-        "team_code": "POL",
-        "odds_american": "+5000",
-        "odds_decimal": 51.00,
-        "implied_probability_pct": 1.9,
-        "notes": "Prolific Barcelona and Poland striker. One of the greatest goal scorers of his generation."
-      },
-      {
-        "player": "Aleksandar Mitrovic",
-        "team": "Serbia",
-        "team_code": "SRB",
+        "player": "Marko Arnautovic",
+        "team": "Austria",
+        "team_code": "AUT",
         "odds_american": "+6000",
         "odds_decimal": 61.00,
         "implied_probability_pct": 1.6,
-        "notes": "Serbia's all-time top scorer. Prolific in Saudi Pro League with Al Hilal."
+        "notes": "Austria's experienced striker. Inter Milan forward with international pedigree."
+      },
+      {
+        "player": "Yasin Al-Nakhli",
+        "team": "Jordan",
+        "team_code": "JOR",
+        "odds_american": "+15000",
+        "odds_decimal": 151.00,
+        "implied_probability_pct": 0.7,
+        "notes": "Jordan's key forward. 2023 Asian Cup finalist looking to make an impact."
       }
     ],
     "format_note": "Expanded 48-team format with extra knockout round means top scorers may exceed the typical 5-8 goal range. Teams reaching the final play 7-8 matches."
@@ -1141,18 +1141,18 @@
         "reasoning": "Quietly dangerous. Built around Moises Caicedo. Resilient defensive structure. Consistent CONMEBOL qualifier."
       },
       {
-        "team": "Nigeria",
-        "code": "NGA",
-        "outright_odds": "+6000",
+        "team": "Scotland",
+        "code": "SCO",
+        "outright_odds": "+8000",
         "sources": ["NBC Sports", "Goal.com"],
-        "reasoning": "Victor Osimhen leads a talented Super Eagles squad. Strong African pedigree with multiple World Cup knockout stage appearances."
+        "reasoning": "Strong Premier League contingent led by experienced players. Euro 2024 experience. Could surprise in group stage."
       },
       {
-        "team": "Serbia",
-        "code": "SRB",
-        "outright_odds": "+4000",
+        "team": "Austria",
+        "code": "AUT",
+        "outright_odds": "+5000",
         "sources": ["CBS Sports", "NBC Sports"],
-        "reasoning": "Mitrovic and Vlahovic provide elite forward options. Experienced squad with Champions League regulars throughout."
+        "reasoning": "Ralf Rangnick's high-pressing system has transformed Austria. Euro 2024 round of 16. Strong Bundesliga core throughout the squad."
       },
       {
         "team": "Canada",
@@ -1246,8 +1246,8 @@
     ],
     "groups": {
       "A": {
-        "espn_prediction": ["Mexico", "South Korea", "Bolivia"],
-        "nbc_prediction": ["Mexico", "South Korea", "Denmark", "Bolivia"],
+        "espn_prediction": ["Mexico", "South Korea", "South Africa"],
+        "nbc_prediction": ["Mexico", "South Korea", "Denmark", "South Africa"],
         "notes": "Mexico benefits from gentle draw as hosts."
       },
       "B": {
@@ -1256,9 +1256,9 @@
         "notes": "Italy not mentioned as favorite by NBC. Canada depends on Alphonso Davies ACL recovery."
       },
       "C": {
-        "espn_prediction": ["Brazil", "Morocco", "Nigeria", "Peru"],
-        "nbc_prediction": ["Morocco", "Brazil", "Nigeria", "Peru"],
-        "notes": "Brazil-Morocco clash decides group. NBC Sports boldly picks Morocco 1st. Nigeria add genuine quality."
+        "espn_prediction": ["Brazil", "Morocco", "Scotland", "Haiti"],
+        "nbc_prediction": ["Morocco", "Brazil", "Scotland", "Haiti"],
+        "notes": "Brazil-Morocco clash decides group. NBC Sports boldly picks Morocco 1st. Scotland add European quality."
       },
       "D": {
         "espn_prediction": ["USA"],
@@ -1267,7 +1267,7 @@
       },
       "E": {
         "espn_prediction": ["Germany", "Ecuador"],
-        "nbc_prediction": ["Germany", "Ecuador", "Cameroon", "Chile"],
+        "nbc_prediction": ["Germany", "Ecuador", "Ivory Coast", "Curaçao"],
         "notes": "Germany and Ecuador expected to advance comfortably."
       },
       "F": {
@@ -1280,23 +1280,23 @@
         "notes": "Belgium favored. Egypt the potential upset threat."
       },
       "H": {
-        "nbc_prediction": ["Spain", "Uruguay", "Saudi Arabia", "Slovenia"],
+        "nbc_prediction": ["Spain", "Uruguay", "Saudi Arabia", "Cabo Verde"],
         "notes": "Spain overwhelming favorite. Uruguay clear second."
       },
       "I": {
-        "nbc_prediction": ["France", "Norway", "Senegal", "Honduras"],
+        "nbc_prediction": ["France", "Norway", "Senegal", "Iraq"],
         "notes": "Potential Group of Death. All three of France, Norway, Senegal capable of advancing."
       },
       "J": {
-        "nbc_prediction": ["Argentina", "Serbia", "Poland", "Costa Rica"],
-        "notes": "Argentina 75% to win group per Polymarket. Serbia and Poland provide stiff European competition."
+        "nbc_prediction": ["Argentina", "Austria", "Algeria", "Jordan"],
+        "notes": "Argentina 75% to win group per Polymarket. Austria and Algeria provide stiff competition."
       },
       "K": {
-        "nbc_prediction": ["Portugal", "Colombia", "Albania", "Uzbekistan"],
+        "nbc_prediction": ["Portugal", "Colombia", "DR Congo", "Uzbekistan"],
         "notes": "Strong top two. Colombia a genuine threat to top the group."
       },
       "L": {
-        "nbc_prediction": ["England", "Croatia", "Panama", "Trinidad and Tobago"],
+        "nbc_prediction": ["England", "Croatia", "Panama", "Ghana"],
         "notes": "England heavy favorite after perfect qualifying campaign."
       }
     },
@@ -1335,7 +1335,7 @@
       },
       {
         "title": "Africa's Rising Tide",
-        "detail": "Senegal (AFCON champs), Morocco (2022 semifinalists), Nigeria (Super Eagles), Egypt (Salah-led) all genuine contenders. Can Africa produce a first-ever World Cup winner?"
+        "detail": "Senegal (AFCON champs), Morocco (2022 semifinalists), Ivory Coast (AFCON 2023 champs), Egypt (Salah-led) all genuine contenders. Can Africa produce a first-ever World Cup winner?"
       },
       {
         "title": "Host Nation Advantage",

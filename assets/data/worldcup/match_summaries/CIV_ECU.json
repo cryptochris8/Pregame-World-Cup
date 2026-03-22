@@ -1,0 +1,57 @@
+{
+  "team1Code": "CIV",
+  "team2Code": "ECU",
+  "team1Name": "Ivory Coast",
+  "team2Name": "Ecuador",
+  "historicalAnalysis": "Ivory Coast and Ecuador represent two of the most compelling rising forces in world football, yet they have never met at a World Cup. Both nations have emerged as consistent qualifiers in their respective confederations in the 21st century, and their Group E meeting could be pivotal in determining which team advances to the knockout rounds.\n\nIvory Coast's football history is defined by two eras: the golden generation led by Didier Drogba, Yaya Touré, and Kolo Touré that appeared at three consecutive World Cups (2006, 2010, 2014) but never escaped the group stage, and the new wave that spectacularly won the 2024 Africa Cup of Nations on home soil. The AFCON triumph, achieved after a mid-tournament coaching change and a dramatic run through the knockout rounds, has reinvigorated Ivorian football and given this squad a winning mentality heading into the World Cup.\n\nEcuador have quietly become one of South America's most reliable World Cup nations, qualifying for four of the last six tournaments (2002, 2006, 2014, 2022). Their 2022 campaign saw them defeat hosts Qatar in the opening match before narrowly missing the knockout rounds. The current generation is arguably their most talented ever, anchored by Moisés Caicedo, who became the most expensive British transfer at over 115 million pounds when he joined Chelsea in 2023, and Piero Hincapié, who has established himself as a top-level center-back at Bayer Leverkusen during their historic unbeaten Bundesliga campaign in 2023-24.\n\nThis matchup could prove to be the key game in Group E, as both teams will fancy their chances of finishing second behind Germany. Whoever wins this encounter will take a massive step toward the Round of 32.",
+  "keyStorylines": [
+    "A potential Group E decider between two ambitious nations aiming for the knockout rounds",
+    "AFCON champions vs South America's rising force in a first ever World Cup meeting",
+    "Chelsea's Caicedo vs Ivory Coast's formidable midfield engine",
+    "Both nations seeking to break their World Cup knockout round glass ceiling",
+    "Two squads loaded with European-based talent facing off"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Seko Fofana",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Dynamic box-to-box midfielder whose driving runs and physicality were central to Ivory Coast's AFCON triumph"
+    },
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Chelsea's world-class defensive midfielder and Ecuador's talisman, one of the Premier League's best players"
+    },
+    {
+      "name": "Simon Adingra",
+      "teamCode": "CIV",
+      "position": "Winger",
+      "reason": "Brighton's electric winger whose pace and directness make him one of the most exciting young players in world football"
+    },
+    {
+      "name": "Piero Hincapié",
+      "teamCode": "ECU",
+      "position": "Defender",
+      "reason": "Bayer Leverkusen's composed center-back who was part of their historic unbeaten Bundesliga title-winning squad"
+    }
+  ],
+  "tacticalPreview": "Ivory Coast under Emerse Faé play an energetic 4-3-3 that relies on the athleticism and technical quality of their midfield trio. Seko Fofana's powerful driving runs, combined with Franck Kessié's experience and Adingra's electrifying wing play, give them multiple avenues of attack. Their pressing is intense but can leave spaces behind, which Ecuador's quick passing could exploit.\n\nEcuador typically deploy a 4-4-2 or 4-2-3-1 built around Caicedo's ability to screen the defense and launch attacks. Their build-up is patient and technically proficient, with Hincapié comfortable stepping into midfield with the ball. The key battle will be in central midfield: Caicedo's composure and interceptions against Fofana's power and athleticism could determine the outcome. Ecuador's ability to control tempo and deny Ivory Coast space for transitions will be critical.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 60,
+    "reasoning": "These are two evenly matched teams with similar aspirations. Both possess strong midfields and organized defenses. The stakes may produce a cagey encounter where neither team wants to lose, resulting in a competitive draw.",
+    "alternativeScenario": "If either team scores early, the match could open up considerably. Ivory Coast's AFCON-winning mentality could give them a psychological edge in a tight game, potentially resulting in a 2-1 Ivory Coast victory."
+  },
+  "pastEncountersSummary": "Ivory Coast and Ecuador have never met at a World Cup and have very limited history in friendly matches. This will essentially be their first meaningful competitive encounter on the world stage.",
+  "funFacts": [
+    "Ecuador's Moisés Caicedo became the most expensive British football transfer in history when Chelsea paid over 115 million pounds for him in August 2023",
+    "Ivory Coast have never advanced past the World Cup group stage despite appearing at three previous tournaments",
+    "Ecuador's Enner Valencia holds the record for most World Cup goals scored by an Ecuadorian with 6 goals across three tournaments",
+    "Ivory Coast's dramatic 2024 AFCON run included coming from behind in the knockout rounds against Senegal, Mali, and DR Congo",
+    "Both nations' squads feature players predominantly based in Europe's top five leagues"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,57 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "AUT",
+  "team1Name": "Argentina",
+  "team2Name": "Austria",
+  "historicalAnalysis": "Argentina and Austria share a World Cup history that stretches back to the early decades of the tournament. Their most notable encounters came during the golden ages of both footballing nations. Austria's football tradition is one of the oldest in continental Europe, with the celebrated 'Wunderteam' of the 1930s and a third-place finish at the 1954 World Cup representing their historical peaks. Argentina, of course, have gone on to become one of football's ultimate powerhouses, winning the World Cup three times in 1978, 1986, and 2022.\n\nThe two nations met in the group stage of the 1978 World Cup in Argentina, with the hosts winning in a tournament they would go on to lift for the first time. That match was played in an era of intense political tension, with Argentina's military junta using the tournament for propaganda purposes. The meeting in 2026 carries none of that political weight but maintains significant sporting intrigue as the defending world champions face a resurgent Austrian side.\n\nArgentina's victory at the 2022 World Cup in Qatar cemented a new golden era for the Albiceleste. Under Lionel Scaloni, they have developed a balanced squad that combines Lionel Messi's genius with the intensity and tactical discipline of a new generation featuring Julian Alvarez, Enzo Fernandez, and Alexis Mac Allister. The question entering the 2026 tournament is whether an aging Messi can still perform at the highest level and whether Argentina's supporting cast can maintain their extraordinary standards.\n\nAustria have undergone a tactical revolution under the influence of Ralf Rangnick, transforming into one of Europe's most organized and physically demanding teams. Their performances at Euro 2024, where they topped a group containing France, Netherlands, and Poland, signaled that Austrian football had entered a new competitive era. With a squad featuring players from Bayern Munich, Real Madrid, and other top clubs, Austria are no longer mere participants at major tournaments but genuine competitors.",
+  "keyStorylines": [
+    "Defending world champions Argentina face an Austrian side that topped their Euro 2024 group ahead of France and Netherlands",
+    "Lionel Messi's potential farewell World Cup continues — every match could be the last time the world sees the greatest player of his generation on this stage",
+    "Austria's tactical revolution under Rangnick's pressing philosophy represents a genuine test for Argentina's possession-based approach",
+    "A repeat of the 1978 World Cup group-stage meeting, when host nation Argentina defeated Austria en route to their first World Cup title",
+    "The Group J subplot — Austria and West Germany's 'Disgrace of Gijon' in 1982 is part of this group's DNA, with Algeria also present"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "position": "Forward",
+      "teamCode": "ARG",
+      "reason": "Eight-time Ballon d'Or winner and Argentina's all-time greatest player — still capable of deciding any match with a moment of genius"
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "position": "Attacking Midfielder",
+      "teamCode": "AUT",
+      "reason": "RB Leipzig's dynamic attacking midfielder who starred at Euro 2024 with his movement and finishing"
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "position": "Midfielder",
+      "teamCode": "ARG",
+      "reason": "Liverpool's World Cup winner combines elegance with industry in the heart of midfield"
+    },
+    {
+      "name": "Konrad Laimer",
+      "position": "Midfielder",
+      "teamCode": "AUT",
+      "reason": "Bayern Munich's tireless midfielder provides energy, pressing intensity, and tactical discipline"
+    }
+  ],
+  "tacticalPreview": "Argentina's system under Scaloni is built on controlled possession, positional superiority, and moments of individual brilliance from Messi. The 4-3-3 formation allows Enzo Fernandez and Alexis Mac Allister to dominate the middle third, while Julian Alvarez's movement creates space for Messi to receive the ball in dangerous areas. Argentina's defensive line, led by Cristian Romero, plays relatively high and looks to compress the pitch, limiting opponents' time on the ball. The full-backs, particularly Nahuel Molina, provide width and overlapping runs.\n\nAustria's approach will be to make this match as physically demanding and uncomfortable as possible for Argentina. Rangnick's pressing traps are designed to force turnovers in dangerous areas, and Austria will look to press Argentina's build-up aggressively, targeting the moments when the ball travels between defense and midfield. When in possession, Austria play direct, vertical football, looking to move the ball quickly into the final third. The key matchup will be whether Argentina's technical quality can play through Austria's press, or whether the Austrians' intensity disrupts the champions' rhythm.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "1-0",
+    "confidence": 68,
+    "reasoning": "Argentina's superior individual quality and tournament experience should edge a tight, tactical encounter. Austria's pressing will make this uncomfortable for the champions, but Argentina have repeatedly shown the ability to find a way to win close matches. Messi's big-game pedigree and the team's defensive solidity point toward a narrow victory.",
+    "alternativeScenario": "Austria's Euro 2024 form showed they can compete with and beat the best teams in the world. Their pressing could overwhelm an aging Argentine midfield, and a 1-1 draw or even an Austrian victory is a realistic possibility if Baumgartner and the attacking players are clinical."
+  },
+  "pastEncountersSummary": "Argentina and Austria have met several times historically, including at the 1978 World Cup in Argentina where the host nation won during their run to their first World Cup title. The overall head-to-head record favors Argentina, but matches between the two have often been competitive. Their encounters span several decades of international football, reflecting the long histories of both footballing nations.",
+  "funFacts": [
+    "Austria's 7-5 victory over Switzerland at the 1954 World Cup remains the highest-scoring match in World Cup history, with 12 goals in a single game",
+    "Argentina's 2022 World Cup triumph made Lionel Scaloni the youngest coach to win the World Cup since 1978, when Cesar Luis Menotti was 39",
+    "Austria topped their Euro 2024 group ahead of France and the Netherlands, finishing with 6 points and conceding just 3 goals in 3 matches",
+    "Argentina have appeared at every World Cup since 1974, one of only a handful of nations with such a consistent qualification record",
+    "The 1978 World Cup in Argentina, where these two teams last met in a major tournament, was controversially hosted during Argentina's military dictatorship"
+  ],
+  "isFirstMeeting": false
+}

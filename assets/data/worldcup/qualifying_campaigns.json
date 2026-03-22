@@ -3,10 +3,53 @@
     "title": "FIFA World Cup 2026 Qualifying Campaign Statistics",
     "description": "Complete qualifying records for all 48 qualified teams across all confederations",
     "last_updated": "2026-03-08",
-    "sources": ["FIFA.com", "UEFA.com", "CONCACAF.com", "the-AFC.com", "CAFonline.com", "ESPN", "NBC Sports", "TNT Sports"],
+    "sources": [
+      "FIFA.com",
+      "UEFA.com",
+      "CONCACAF.com",
+      "the-AFC.com",
+      "CAFonline.com",
+      "ESPN",
+      "NBC Sports",
+      "TNT Sports"
+    ],
     "notes": "UEFA playoffs and intercontinental playoffs scheduled for March 2026. Some teams' qualification status is projected based on app roster. Stats for playoff-path teams reflect group stage only."
   },
   "campaigns": {
+    "ALG": {
+      "teamCode": "ALG",
+      "teamName": "Algeria",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group E winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 10,
+      "wins": 7,
+      "draws": 1,
+      "losses": 2,
+      "goalsFor": 19,
+      "goalsAgainst": 8,
+      "goalDifference": 11,
+      "points": 22,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Baghdad Bounedjah",
+        "goals": 5
+      },
+      "qualifyingHighlight": "Petković's organized side topped CAF Group E; Bennacer and Mahrez controlled midfield throughout qualifying",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 2
+      },
+      "cleanSheets": 4,
+      "biggestWin": "4-0 vs Mozambique",
+      "worstDefeat": "1-2 vs Egypt"
+    },
     "ARG": {
       "teamCode": "ARG",
       "teamName": "Argentina",
@@ -27,11 +70,121 @@
         "goals": 8
       },
       "qualifyingHighlight": "Topped the table wire-to-wire; Messi hat-trick in 6-0 win over Bolivia",
-      "homeRecord": { "wins": 7, "draws": 1, "losses": 1 },
-      "awayRecord": { "wins": 5, "draws": 1, "losses": 3 },
+      "homeRecord": {
+        "wins": 7,
+        "draws": 1,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 5,
+        "draws": 1,
+        "losses": 3
+      },
       "cleanSheets": 10,
       "biggestWin": "6-0 vs Bolivia",
       "worstDefeat": "1-2 vs Uruguay"
+    },
+    "AUS": {
+      "teamCode": "AUS",
+      "teamName": "Australia",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Third Round - Group C runner-up",
+      "qualificationDate": "2025-06-10",
+      "matches": 10,
+      "wins": 5,
+      "draws": 4,
+      "losses": 1,
+      "goalsFor": 16,
+      "goalsAgainst": 7,
+      "goalDifference": 9,
+      "points": 19,
+      "groupPosition": 2,
+      "topScorer": {
+        "name": "Kusini Yengi",
+        "goals": 6
+      },
+      "qualifyingHighlight": "Secured automatic qualification as Group C runner-up with consistent results",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 2,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "cleanSheets": 4,
+      "biggestWin": "3-0 vs Bahrain",
+      "worstDefeat": "0-2 vs Japan"
+    },
+    "AUT": {
+      "teamCode": "AUT",
+      "teamName": "Austria",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group F winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 8,
+      "wins": 6,
+      "draws": 1,
+      "losses": 1,
+      "goalsFor": 18,
+      "goalsAgainst": 7,
+      "goalDifference": 11,
+      "points": 19,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Christoph Baumgartner",
+        "goals": 5
+      },
+      "qualifyingHighlight": "Rangnick's pressing revolution continued; topped Group F with dominant performances; carried Euro 2024 momentum into qualifying",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 4,
+      "biggestWin": "4-0 vs Azerbaijan",
+      "worstDefeat": "1-2 vs France"
+    },
+    "BEL": {
+      "teamCode": "BEL",
+      "teamName": "Belgium",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group J winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 8,
+      "wins": 5,
+      "draws": 3,
+      "losses": 0,
+      "goalsFor": 29,
+      "goalsAgainst": 7,
+      "goalDifference": 22,
+      "points": 18,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Kevin De Bruyne",
+        "goals": 6
+      },
+      "qualifyingHighlight": "Unbeaten campaign; De Bruyne orchestrated the attack with 6 goals and multiple assists",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 0
+      },
+      "cleanSheets": 3,
+      "biggestWin": "7-0 vs Liechtenstein",
+      "worstDefeat": "N/A (unbeaten)"
     },
     "BRA": {
       "teamCode": "BRA",
@@ -53,37 +206,121 @@
         "goals": 3
       },
       "qualifyingHighlight": "Qualified on final matchday after turbulent campaign under Ancelotti",
-      "homeRecord": { "wins": 5, "draws": 2, "losses": 2 },
-      "awayRecord": { "wins": 3, "draws": 2, "losses": 4 },
+      "homeRecord": {
+        "wins": 5,
+        "draws": 2,
+        "losses": 2
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 2,
+        "losses": 4
+      },
       "cleanSheets": 6,
       "biggestWin": "4-1 vs Paraguay",
       "worstDefeat": "0-1 vs Paraguay"
     },
-    "URU": {
-      "teamCode": "URU",
-      "teamName": "Uruguay",
-      "confederation": "CONMEBOL",
-      "qualificationMethod": "CONMEBOL South American Qualifiers",
-      "qualificationDate": "2025-11-18",
-      "matches": 18,
-      "wins": 7,
-      "draws": 7,
-      "losses": 4,
-      "goalsFor": 22,
-      "goalsAgainst": 12,
-      "goalDifference": 10,
-      "points": 28,
-      "groupPosition": 4,
+    "CAN": {
+      "teamCode": "CAN",
+      "teamName": "Canada",
+      "confederation": "CONCACAF",
+      "qualificationMethod": "Automatic (host nation)",
+      "qualificationDate": "2018-06-13",
+      "matches": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "points": 0,
+      "groupPosition": null,
       "topScorer": {
-        "name": "Darwin Nunez",
+        "name": "N/A",
+        "goals": 0
+      },
+      "qualifyingHighlight": "Automatic qualification as co-host nation; did not participate in qualifying",
+      "homeRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
+      "cleanSheets": 0,
+      "biggestWin": "N/A",
+      "worstDefeat": "N/A"
+    },
+    "CIV": {
+      "teamCode": "CIV",
+      "teamName": "Ivory Coast",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group B winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 10,
+      "wins": 6,
+      "draws": 3,
+      "losses": 1,
+      "goalsFor": 18,
+      "goalsAgainst": 8,
+      "goalDifference": 10,
+      "points": 21,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Sébastien Haller",
         "goals": 5
       },
-      "qualifyingHighlight": "Solid defensive record under Bielsa; beat Argentina 2-0 at home",
-      "homeRecord": { "wins": 5, "draws": 3, "losses": 1 },
-      "awayRecord": { "wins": 2, "draws": 4, "losses": 3 },
-      "cleanSheets": 8,
-      "biggestWin": "3-0 vs Chile",
-      "worstDefeat": "0-2 vs Ecuador"
+      "qualifyingHighlight": "AFCON 2023 champions carried momentum into qualifying; topped Group B with strong home record under Faé",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "cleanSheets": 4,
+      "biggestWin": "3-0 vs Gabon",
+      "worstDefeat": "0-1 vs Morocco"
+    },
+    "COD": {
+      "teamCode": "COD",
+      "teamName": "DR Congo",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group C 3rd place + CAF Playoffs",
+      "qualificationDate": "2026-03-31",
+      "matches": 12,
+      "wins": 5,
+      "draws": 4,
+      "losses": 3,
+      "goalsFor": 15,
+      "goalsAgainst": 11,
+      "goalDifference": 4,
+      "points": 19,
+      "groupPosition": 3,
+      "topScorer": {
+        "name": "Cédric Bakambu",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Finished 3rd in CAF Group C; qualified through CAF playoff route; AFCON 2024 semi-final experience boosted the squad",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 2,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 2
+      },
+      "cleanSheets": 3,
+      "biggestWin": "3-0 vs Lesotho",
+      "worstDefeat": "0-2 vs South Africa"
     },
     "COL": {
       "teamCode": "COL",
@@ -105,11 +342,155 @@
         "goals": 7
       },
       "qualifyingHighlight": "Luis Diaz spearheaded attack with 7 goals; consistent home form",
-      "homeRecord": { "wins": 5, "draws": 3, "losses": 1 },
-      "awayRecord": { "wins": 2, "draws": 4, "losses": 3 },
+      "homeRecord": {
+        "wins": 5,
+        "draws": 3,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 4,
+        "losses": 3
+      },
       "cleanSheets": 6,
       "biggestWin": "4-0 vs Chile",
       "worstDefeat": "0-1 vs Ecuador"
+    },
+    "CPV": {
+      "teamCode": "CPV",
+      "teamName": "Cabo Verde",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group D winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 10,
+      "wins": 6,
+      "draws": 2,
+      "losses": 2,
+      "goalsFor": 13,
+      "goalsAgainst": 7,
+      "goalDifference": 6,
+      "points": 20,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Ryan Mendes",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Historic first World Cup qualification; topped CAF Group D ahead of Cameroon; Bubista's organized side punched well above their weight",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 2
+      },
+      "cleanSheets": 4,
+      "biggestWin": "2-0 vs Cameroon",
+      "worstDefeat": "0-2 vs Morocco"
+    },
+    "CRO": {
+      "teamCode": "CRO",
+      "teamName": "Croatia",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group L winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 8,
+      "wins": 7,
+      "draws": 1,
+      "losses": 0,
+      "goalsFor": 26,
+      "goalsAgainst": 4,
+      "goalDifference": 22,
+      "points": 22,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Andrej Kramaric",
+        "goals": 6
+      },
+      "qualifyingHighlight": "Dominant unbeaten run; Kramaric and Modric partnership drove the team",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 1,
+        "losses": 0
+      },
+      "cleanSheets": 5,
+      "biggestWin": "6-0 vs Gibraltar",
+      "worstDefeat": "N/A (unbeaten)"
+    },
+    "CUR": {
+      "teamCode": "CUR",
+      "teamName": "Curaçao",
+      "confederation": "CONCACAF",
+      "qualificationMethod": "CONCACAF Third Round - Group B winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 6,
+      "wins": 4,
+      "draws": 1,
+      "losses": 1,
+      "goalsFor": 10,
+      "goalsAgainst": 4,
+      "goalDifference": 6,
+      "points": 13,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Juninho Bacuna",
+        "goals": 3
+      },
+      "qualifyingHighlight": "Topped CONCACAF Group B under Dick Advocaat's experienced guidance; historic first World Cup qualification for the island nation",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 3,
+      "biggestWin": "3-0 vs Bermuda",
+      "worstDefeat": "0-1 vs Jamaica"
+    },
+    "DEN": {
+      "teamCode": "DEN",
+      "teamName": "Denmark",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group C runner-up + Playoffs (Path D)",
+      "qualificationDate": "2026-03-31",
+      "matches": 6,
+      "wins": 3,
+      "draws": 2,
+      "losses": 1,
+      "goalsFor": 16,
+      "goalsAgainst": 7,
+      "goalDifference": 9,
+      "points": 11,
+      "groupPosition": 2,
+      "topScorer": {
+        "name": "Rasmus Hojlund",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Finished 2nd behind Scotland; qualified via playoff Path D",
+      "homeRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 2,
+      "biggestWin": "5-0 vs Belarus",
+      "worstDefeat": "2-4 vs Scotland"
     },
     "ECU": {
       "teamCode": "ECU",
@@ -131,140 +512,52 @@
         "goals": 6
       },
       "qualifyingHighlight": "Best defensive record in CONMEBOL qualifying (5 goals conceded); 3-point deduction for player documentation issue",
-      "homeRecord": { "wins": 5, "draws": 4, "losses": 0 },
-      "awayRecord": { "wins": 3, "draws": 4, "losses": 2 },
+      "homeRecord": {
+        "wins": 5,
+        "draws": 4,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 4,
+        "losses": 2
+      },
       "cleanSheets": 12,
       "biggestWin": "3-0 vs Bolivia",
       "worstDefeat": "0-1 vs Argentina"
     },
-    "PAR": {
-      "teamCode": "PAR",
-      "teamName": "Paraguay",
-      "confederation": "CONMEBOL",
-      "qualificationMethod": "CONMEBOL South American Qualifiers",
-      "qualificationDate": "2025-11-18",
-      "matches": 18,
-      "wins": 7,
-      "draws": 7,
-      "losses": 4,
-      "goalsFor": 14,
-      "goalsAgainst": 10,
-      "goalDifference": 4,
-      "points": 28,
-      "groupPosition": 6,
-      "topScorer": {
-        "name": "Antonio Sanabria",
-        "goals": 4
-      },
-      "qualifyingHighlight": "Secured 6th-place finish to qualify directly; disciplined defensive approach",
-      "homeRecord": { "wins": 5, "draws": 3, "losses": 1 },
-      "awayRecord": { "wins": 2, "draws": 4, "losses": 3 },
-      "cleanSheets": 8,
-      "biggestWin": "2-0 vs Venezuela",
-      "worstDefeat": "0-2 vs Argentina"
-    },
-    "BOL": {
-      "teamCode": "BOL",
-      "teamName": "Bolivia",
-      "confederation": "CONMEBOL",
-      "qualificationMethod": "CONMEBOL South American Qualifiers (7th place) + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 18,
-      "wins": 6,
+    "EGY": {
+      "teamCode": "EGY",
+      "teamName": "Egypt",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group A winner",
+      "qualificationDate": "2025-10-13",
+      "matches": 10,
+      "wins": 8,
       "draws": 2,
-      "losses": 10,
-      "goalsFor": 17,
-      "goalsAgainst": 35,
-      "goalDifference": -18,
-      "points": 20,
-      "groupPosition": 7,
-      "topScorer": {
-        "name": "Miguel Terceros",
-        "goals": 4
-      },
-      "qualifyingHighlight": "Shock 1-0 win over Brazil on final matchday clinched playoff spot; qualified via intercontinental playoff",
-      "homeRecord": { "wins": 5, "draws": 1, "losses": 3 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 7 },
-      "cleanSheets": 3,
-      "biggestWin": "4-0 vs Peru",
-      "worstDefeat": "0-6 vs Argentina"
-    },
-    "CHI": {
-      "teamCode": "CHI",
-      "teamName": "Chile",
-      "confederation": "CONMEBOL",
-      "qualificationMethod": "CONMEBOL South American Qualifiers (9th place) + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 18,
-      "wins": 2,
-      "draws": 5,
-      "losses": 11,
-      "goalsFor": 9,
-      "goalsAgainst": 27,
-      "goalDifference": -18,
-      "points": 11,
-      "groupPosition": 10,
-      "topScorer": {
-        "name": "Alexis Sanchez",
-        "goals": 3
-      },
-      "qualifyingHighlight": "Struggled throughout qualifying finishing last; earned lifeline via intercontinental playoff repechage",
-      "homeRecord": { "wins": 2, "draws": 2, "losses": 5 },
-      "awayRecord": { "wins": 0, "draws": 3, "losses": 6 },
-      "cleanSheets": 2,
-      "biggestWin": "2-0 vs Peru",
-      "worstDefeat": "0-4 vs Colombia"
-    },
-    "PER": {
-      "teamCode": "PER",
-      "teamName": "Peru",
-      "confederation": "CONMEBOL",
-      "qualificationMethod": "CONMEBOL South American Qualifiers (9th place) + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 18,
-      "wins": 2,
-      "draws": 6,
-      "losses": 10,
-      "goalsFor": 6,
-      "goalsAgainst": 21,
-      "goalDifference": -15,
-      "points": 12,
-      "groupPosition": 9,
-      "topScorer": {
-        "name": "Gianluca Lapadula",
-        "goals": 2
-      },
-      "qualifyingHighlight": "Lowest-scoring team in CONMEBOL qualifying with just 6 goals; earned World Cup berth via intercontinental playoff",
-      "homeRecord": { "wins": 2, "draws": 3, "losses": 4 },
-      "awayRecord": { "wins": 0, "draws": 3, "losses": 6 },
-      "cleanSheets": 4,
-      "biggestWin": "1-0 vs Venezuela",
-      "worstDefeat": "0-3 vs Brazil"
-    },
-    "FRA": {
-      "teamCode": "FRA",
-      "teamName": "France",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group D winner",
-      "qualificationDate": "2025-10-14",
-      "matches": 6,
-      "wins": 5,
-      "draws": 1,
       "losses": 0,
-      "goalsFor": 16,
-      "goalsAgainst": 4,
-      "goalDifference": 12,
-      "points": 16,
+      "goalsFor": 20,
+      "goalsAgainst": 2,
+      "goalDifference": 18,
+      "points": 26,
       "groupPosition": 1,
       "topScorer": {
-        "name": "Kylian Mbappe",
-        "goals": 4
+        "name": "Mohamed Salah",
+        "goals": 9
       },
-      "qualifyingHighlight": "Won Group D comfortably; only unbeaten team in qualifying",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 1, "losses": 0 },
-      "cleanSheets": 3,
-      "biggestWin": "4-0 vs Azerbaijan",
+      "qualifyingHighlight": "Salah scored 9 goals to lead Africa's scoring charts; unbeaten with only 2 goals conceded",
+      "homeRecord": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 2,
+        "losses": 0
+      },
+      "cleanSheets": 7,
+      "biggestWin": "4-0 vs Djibouti",
       "worstDefeat": "N/A (unbeaten)"
     },
     "ENG": {
@@ -287,8 +580,16 @@
         "goals": 8
       },
       "qualifyingHighlight": "Perfect record; only team in UEFA qualifying to not concede a single goal; first to qualify with 2 games to spare",
-      "homeRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 4, "draws": 0, "losses": 0 },
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
       "cleanSheets": 8,
       "biggestWin": "5-0 vs Andorra",
       "worstDefeat": "N/A (unbeaten)"
@@ -313,10 +614,52 @@
         "goals": 6
       },
       "qualifyingHighlight": "Dominant group campaign; best goal difference in UEFA qualifying among 4-team groups",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 1, "losses": 0 },
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 0
+      },
       "cleanSheets": 4,
       "biggestWin": "7-0 vs Bulgaria",
+      "worstDefeat": "N/A (unbeaten)"
+    },
+    "FRA": {
+      "teamCode": "FRA",
+      "teamName": "France",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group D winner",
+      "qualificationDate": "2025-10-14",
+      "matches": 6,
+      "wins": 5,
+      "draws": 1,
+      "losses": 0,
+      "goalsFor": 16,
+      "goalsAgainst": 4,
+      "goalDifference": 12,
+      "points": 16,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Kylian Mbappe",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Won Group D comfortably; only unbeaten team in qualifying",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 0
+      },
+      "cleanSheets": 3,
+      "biggestWin": "4-0 vs Azerbaijan",
       "worstDefeat": "N/A (unbeaten)"
     },
     "GER": {
@@ -339,89 +682,189 @@
         "goals": 4
       },
       "qualifyingHighlight": "Topped Group A with 5 wins; strong attacking play under Nagelsmann",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 0, "losses": 1 },
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 1
+      },
       "cleanSheets": 3,
       "biggestWin": "5-0 vs Luxembourg",
       "worstDefeat": "1-2 vs Slovakia"
     },
-    "NED": {
-      "teamCode": "NED",
-      "teamName": "Netherlands",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group G winner",
-      "qualificationDate": "2025-11-18",
-      "matches": 8,
+    "GHA": {
+      "teamCode": "GHA",
+      "teamName": "Ghana",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group B runner-up + CAF Playoffs",
+      "qualificationDate": "2026-03-31",
+      "matches": 12,
       "wins": 6,
-      "draws": 2,
-      "losses": 0,
-      "goalsFor": 27,
-      "goalsAgainst": 4,
-      "goalDifference": 23,
-      "points": 20,
-      "groupPosition": 1,
+      "draws": 3,
+      "losses": 3,
+      "goalsFor": 17,
+      "goalsAgainst": 10,
+      "goalDifference": 7,
+      "points": 21,
+      "groupPosition": 2,
       "topScorer": {
-        "name": "Memphis Depay",
-        "goals": 8
-      },
-      "qualifyingHighlight": "Unbeaten in qualifying; Memphis Depay scored 8 goals in 8 matches",
-      "homeRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 0 },
-      "cleanSheets": 5,
-      "biggestWin": "6-0 vs Malta",
-      "worstDefeat": "N/A (unbeaten)"
-    },
-    "POR": {
-      "teamCode": "POR",
-      "teamName": "Portugal",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group F winner",
-      "qualificationDate": "2025-10-14",
-      "matches": 6,
-      "wins": 4,
-      "draws": 1,
-      "losses": 1,
-      "goalsFor": 20,
-      "goalsAgainst": 7,
-      "goalDifference": 13,
-      "points": 13,
-      "groupPosition": 1,
-      "topScorer": {
-        "name": "Cristiano Ronaldo",
+        "name": "Mohammed Kudus",
         "goals": 5
       },
-      "qualifyingHighlight": "Ronaldo extended his record World Cup qualifying tally to 41 goals",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 1 },
-      "cleanSheets": 2,
-      "biggestWin": "5-0 vs Armenia",
-      "worstDefeat": "1-2 vs Republic of Ireland"
+      "qualifyingHighlight": "Finished 2nd in CAF Group B behind Ivory Coast; Kudus and Partey led the squad through playoffs to qualify",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 2
+      },
+      "cleanSheets": 4,
+      "biggestWin": "3-0 vs Comoros",
+      "worstDefeat": "0-2 vs Ivory Coast"
     },
-    "BEL": {
-      "teamCode": "BEL",
-      "teamName": "Belgium",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group J winner",
-      "qualificationDate": "2025-11-18",
-      "matches": 8,
-      "wins": 5,
-      "draws": 3,
-      "losses": 0,
-      "goalsFor": 29,
+    "HAI": {
+      "teamCode": "HAI",
+      "teamName": "Haiti",
+      "confederation": "CONCACAF",
+      "qualificationMethod": "CONCACAF Third Round - Group C + Intercontinental Playoff",
+      "qualificationDate": "2026-03-31",
+      "matches": 6,
+      "wins": 2,
+      "draws": 2,
+      "losses": 2,
+      "goalsFor": 6,
       "goalsAgainst": 7,
-      "goalDifference": 22,
-      "points": 18,
+      "goalDifference": -1,
+      "points": 8,
+      "groupPosition": 3,
+      "topScorer": {
+        "name": "Frantzdy Pierrot",
+        "goals": 2
+      },
+      "qualifyingHighlight": "Battled through CONCACAF qualifying with resilient defensive performances; earned World Cup berth via intercontinental playoff",
+      "homeRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 0,
+        "draws": 1,
+        "losses": 2
+      },
+      "cleanSheets": 2,
+      "biggestWin": "2-0 vs Nicaragua",
+      "worstDefeat": "0-2 vs Honduras"
+    },
+    "IDN": {
+      "teamCode": "IDN",
+      "teamName": "Indonesia",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Third Round + Intercontinental Playoff",
+      "qualificationDate": "2026-03-31",
+      "matches": 12,
+      "wins": 3,
+      "draws": 3,
+      "losses": 6,
+      "goalsFor": 11,
+      "goalsAgainst": 24,
+      "goalDifference": -13,
+      "points": 12,
+      "groupPosition": 4,
+      "topScorer": {
+        "name": "Rafael Struick",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Historic first World Cup appearance for the world's 4th most populous nation; qualified via intercontinental playoff",
+      "homeRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 1,
+        "losses": 5
+      },
+      "cleanSheets": 2,
+      "biggestWin": "2-0 vs Bahrain",
+      "worstDefeat": "0-5 vs Japan"
+    },
+    "IRN": {
+      "teamCode": "IRN",
+      "teamName": "Iran",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Third Round - Group A winner",
+      "qualificationDate": "2025-06-10",
+      "matches": 10,
+      "wins": 7,
+      "draws": 2,
+      "losses": 1,
+      "goalsFor": 19,
+      "goalsAgainst": 8,
+      "goalDifference": 11,
+      "points": 23,
       "groupPosition": 1,
       "topScorer": {
-        "name": "Kevin De Bruyne",
-        "goals": 6
+        "name": "Mehdi Taremi",
+        "goals": 10
       },
-      "qualifyingHighlight": "Unbeaten campaign; De Bruyne orchestrated the attack with 6 goals and multiple assists",
-      "homeRecord": { "wins": 3, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 0 },
+      "qualifyingHighlight": "Topped Group A; Taremi scored 10 goals to lead the attack; 6th World Cup appearance",
+      "homeRecord": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "cleanSheets": 4,
+      "biggestWin": "4-0 vs North Korea",
+      "worstDefeat": "0-1 vs Uzbekistan"
+    },
+    "IRQ": {
+      "teamCode": "IRQ",
+      "teamName": "Iraq",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Third Round - Group B 3rd place + AFC Fourth Round playoff",
+      "qualificationDate": "2026-03-31",
+      "matches": 10,
+      "wins": 3,
+      "draws": 4,
+      "losses": 3,
+      "goalsFor": 9,
+      "goalsAgainst": 10,
+      "goalDifference": -1,
+      "points": 13,
+      "groupPosition": 3,
+      "topScorer": {
+        "name": "Mohanad Ali",
+        "goals": 3
+      },
+      "qualifyingHighlight": "Qualified through AFC play-off route after finishing 3rd in Group B; showed resilience and competitive spirit under Casas",
+      "homeRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 2,
+        "losses": 2
+      },
       "cleanSheets": 3,
-      "biggestWin": "7-0 vs Liechtenstein",
-      "worstDefeat": "N/A (unbeaten)"
+      "biggestWin": "2-0 vs Vietnam",
+      "worstDefeat": "0-2 vs Japan"
     },
     "ITA": {
       "teamCode": "ITA",
@@ -443,453 +886,53 @@
         "goals": 5
       },
       "qualifyingHighlight": "Finished 2nd behind Norway's perfect record; qualified via playoff Path A",
-      "homeRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 0, "losses": 2 },
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 2
+      },
       "cleanSheets": 3,
       "biggestWin": "5-0 vs Moldova",
       "worstDefeat": "1-3 vs Norway"
     },
-    "CRO": {
-      "teamCode": "CRO",
-      "teamName": "Croatia",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group L winner",
-      "qualificationDate": "2025-11-18",
-      "matches": 8,
-      "wins": 7,
-      "draws": 1,
-      "losses": 0,
-      "goalsFor": 26,
-      "goalsAgainst": 4,
-      "goalDifference": 22,
-      "points": 22,
-      "groupPosition": 1,
-      "topScorer": {
-        "name": "Andrej Kramaric",
-        "goals": 6
-      },
-      "qualifyingHighlight": "Dominant unbeaten run; Kramaric and Modric partnership drove the team",
-      "homeRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 3, "draws": 1, "losses": 0 },
-      "cleanSheets": 5,
-      "biggestWin": "6-0 vs Gibraltar",
-      "worstDefeat": "N/A (unbeaten)"
-    },
-    "DEN": {
-      "teamCode": "DEN",
-      "teamName": "Denmark",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group C runner-up + Playoffs (Path D)",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 3,
-      "draws": 2,
-      "losses": 1,
-      "goalsFor": 16,
-      "goalsAgainst": 7,
-      "goalDifference": 9,
-      "points": 11,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Rasmus Hojlund",
-        "goals": 4
-      },
-      "qualifyingHighlight": "Finished 2nd behind Scotland; qualified via playoff Path D",
-      "homeRecord": { "wins": 2, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 1 },
-      "cleanSheets": 2,
-      "biggestWin": "5-0 vs Belarus",
-      "worstDefeat": "2-4 vs Scotland"
-    },
-    "SUI": {
-      "teamCode": "SUI",
-      "teamName": "Switzerland",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group B winner",
-      "qualificationDate": "2025-10-14",
-      "matches": 6,
-      "wins": 4,
-      "draws": 2,
-      "losses": 0,
-      "goalsFor": 14,
-      "goalsAgainst": 2,
-      "goalDifference": 12,
-      "points": 14,
-      "groupPosition": 1,
-      "topScorer": {
-        "name": "Breel Embolo",
-        "goals": 4
-      },
-      "qualifyingHighlight": "Unbeaten campaign; conceded only 2 goals in 6 matches",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 2, "losses": 0 },
-      "cleanSheets": 4,
-      "biggestWin": "4-0 vs Sweden",
-      "worstDefeat": "N/A (unbeaten)"
-    },
-    "TUR": {
-      "teamCode": "TUR",
-      "teamName": "Turkey",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group E runner-up + Playoffs (Path C)",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 4,
-      "draws": 1,
-      "losses": 1,
-      "goalsFor": 17,
-      "goalsAgainst": 12,
-      "goalDifference": 5,
-      "points": 13,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Kenan Yildiz",
-        "goals": 4
-      },
-      "qualifyingHighlight": "Finished 2nd behind Spain; qualified via playoff Path C",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 1 },
-      "cleanSheets": 1,
-      "biggestWin": "5-1 vs Bulgaria",
-      "worstDefeat": "0-3 vs Spain"
-    },
-    "NOR": {
-      "teamCode": "NOR",
-      "teamName": "Norway",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group I winner",
-      "qualificationDate": "2025-10-14",
-      "matches": 8,
-      "wins": 8,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 37,
-      "goalsAgainst": 5,
-      "goalDifference": 32,
-      "points": 24,
-      "groupPosition": 1,
-      "topScorer": {
-        "name": "Erling Haaland",
-        "goals": 16
-      },
-      "qualifyingHighlight": "Perfect 8 wins from 8; Haaland scored 16 goals to become all-time top scorer in a single UEFA qualifying campaign",
-      "homeRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "cleanSheets": 4,
-      "biggestWin": "8-0 vs Moldova",
-      "worstDefeat": "N/A (unbeaten)"
-    },
-    "ALB": {
-      "teamCode": "ALB",
-      "teamName": "Albania",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group K runner-up + Playoffs (Path B)",
-      "qualificationDate": "2026-03-31",
-      "matches": 8,
-      "wins": 4,
-      "draws": 2,
-      "losses": 2,
-      "goalsFor": 9,
-      "goalsAgainst": 5,
-      "goalDifference": 4,
-      "points": 14,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Armando Broja",
-        "goals": 3
-      },
-      "qualifyingHighlight": "Secured 2nd place in Group K behind England; beat Serbia 1-0 away; qualified via playoff Path B",
-      "homeRecord": { "wins": 3, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 2 },
-      "cleanSheets": 4,
-      "biggestWin": "3-0 vs Andorra",
-      "worstDefeat": "0-2 vs England"
-    },
-    "POL": {
-      "teamCode": "POL",
-      "teamName": "Poland",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group G runner-up + Playoffs (Path B)",
-      "qualificationDate": "2026-03-31",
-      "matches": 8,
+    "JOR": {
+      "teamCode": "JOR",
+      "teamName": "Jordan",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Third Round - Group A runner-up",
+      "qualificationDate": "2025-06-10",
+      "matches": 10,
       "wins": 5,
-      "draws": 2,
-      "losses": 1,
-      "goalsFor": 14,
+      "draws": 3,
+      "losses": 2,
+      "goalsFor": 12,
       "goalsAgainst": 7,
-      "goalDifference": 7,
-      "points": 17,
+      "goalDifference": 5,
+      "points": 18,
       "groupPosition": 2,
       "topScorer": {
-        "name": "Robert Lewandowski",
-        "goals": 5
-      },
-      "qualifyingHighlight": "Finished 2nd behind Netherlands in Group G; Lewandowski led the line with 5 goals; qualified via playoff Path B",
-      "homeRecord": { "wins": 3, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 1, "losses": 1 },
-      "cleanSheets": 3,
-      "biggestWin": "3-0 vs Lithuania",
-      "worstDefeat": "0-2 vs Netherlands"
-    },
-    "SRB": {
-      "teamCode": "SRB",
-      "teamName": "Serbia",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group K 3rd place + Playoffs (Path C)",
-      "qualificationDate": "2026-03-31",
-      "matches": 8,
-      "wins": 4,
-      "draws": 1,
-      "losses": 3,
-      "goalsFor": 12,
-      "goalsAgainst": 8,
-      "goalDifference": 4,
-      "points": 13,
-      "groupPosition": 3,
-      "topScorer": {
-        "name": "Aleksandar Mitrovic",
+        "name": "Yazan Al-Naimat",
         "goals": 4
       },
-      "qualifyingHighlight": "Finished 3rd in Group K behind England and Albania; Mitrovic provided goals; qualified via Nations League playoff Path C",
-      "homeRecord": { "wins": 3, "draws": 0, "losses": 1 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 2 },
-      "cleanSheets": 3,
-      "biggestWin": "3-0 vs Andorra",
-      "worstDefeat": "0-1 vs Albania"
-    },
-    "SVN": {
-      "teamCode": "SVN",
-      "teamName": "Slovenia",
-      "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group B 3rd place + Playoffs (Path A)",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 2,
-      "draws": 2,
-      "losses": 2,
-      "goalsFor": 8,
-      "goalsAgainst": 7,
-      "goalDifference": 1,
-      "points": 8,
-      "groupPosition": 3,
-      "topScorer": {
-        "name": "Benjamin Sesko",
-        "goals": 3
+      "qualifyingHighlight": "Built on 2024 Asian Cup final momentum; qualified as Group A runner-up behind Japan; Al-Tamari's creativity was key throughout",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 2,
+        "losses": 0
       },
-      "qualifyingHighlight": "Finished 3rd in Group B behind Switzerland; Sesko emerged as key striker; qualified via Nations League playoff Path A",
-      "homeRecord": { "wins": 2, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 1, "losses": 2 },
-      "cleanSheets": 2,
-      "biggestWin": "2-0 vs Kosovo",
-      "worstDefeat": "0-2 vs Switzerland"
-    },
-    "USA": {
-      "teamCode": "USA",
-      "teamName": "United States",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "Automatic (host nation)",
-      "qualificationDate": "2018-06-13",
-      "matches": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0,
-      "groupPosition": null,
-      "topScorer": {
-        "name": "N/A",
-        "goals": 0
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 2
       },
-      "qualifyingHighlight": "Automatic qualification as co-host nation; did not participate in qualifying",
-      "homeRecord": { "wins": 0, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 0, "losses": 0 },
-      "cleanSheets": 0,
-      "biggestWin": "N/A",
-      "worstDefeat": "N/A"
-    },
-    "MEX": {
-      "teamCode": "MEX",
-      "teamName": "Mexico",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "Automatic (host nation)",
-      "qualificationDate": "2018-06-13",
-      "matches": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0,
-      "groupPosition": null,
-      "topScorer": {
-        "name": "N/A",
-        "goals": 0
-      },
-      "qualifyingHighlight": "Automatic qualification as co-host nation; did not participate in qualifying",
-      "homeRecord": { "wins": 0, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 0, "losses": 0 },
-      "cleanSheets": 0,
-      "biggestWin": "N/A",
-      "worstDefeat": "N/A"
-    },
-    "CAN": {
-      "teamCode": "CAN",
-      "teamName": "Canada",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "Automatic (host nation)",
-      "qualificationDate": "2018-06-13",
-      "matches": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0,
-      "groupPosition": null,
-      "topScorer": {
-        "name": "N/A",
-        "goals": 0
-      },
-      "qualifyingHighlight": "Automatic qualification as co-host nation; did not participate in qualifying",
-      "homeRecord": { "wins": 0, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 0, "losses": 0 },
-      "cleanSheets": 0,
-      "biggestWin": "N/A",
-      "worstDefeat": "N/A"
-    },
-    "PAN": {
-      "teamCode": "PAN",
-      "teamName": "Panama",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "CONCACAF Third Round - Group A winner",
-      "qualificationDate": "2025-11-18",
-      "matches": 6,
-      "wins": 3,
-      "draws": 3,
-      "losses": 0,
-      "goalsFor": 9,
-      "goalsAgainst": 4,
-      "goalDifference": 5,
-      "points": 12,
-      "groupPosition": 1,
-      "topScorer": {
-        "name": "Jose Fajardo",
-        "goals": 3
-      },
-      "qualifyingHighlight": "Won group on final matchday with 2-0 win over El Salvador as Suriname lost; unbeaten in third round",
-      "homeRecord": { "wins": 2, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 2, "losses": 0 },
-      "cleanSheets": 3,
-      "biggestWin": "3-0 vs El Salvador",
-      "worstDefeat": "N/A (unbeaten)"
-    },
-    "JAM": {
-      "teamCode": "JAM",
-      "teamName": "Jamaica",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "CONCACAF Third Round - Group B runner-up + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 3,
-      "draws": 2,
-      "losses": 1,
-      "goalsFor": 10,
-      "goalsAgainst": 4,
-      "goalDifference": 6,
-      "points": 11,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Michail Antonio",
-        "goals": 3
-      },
-      "qualifyingHighlight": "Finished 2nd in Group B behind Curacao; qualified as best runner-up and won intercontinental playoff",
-      "homeRecord": { "wins": 2, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 1 },
-      "cleanSheets": 3,
-      "biggestWin": "4-0 vs Bermuda",
-      "worstDefeat": "0-1 vs Curacao"
-    },
-    "CRC": {
-      "teamCode": "CRC",
-      "teamName": "Costa Rica",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "CONCACAF Third Round - Group C 3rd place + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 1,
-      "draws": 4,
-      "losses": 1,
-      "goalsFor": 5,
-      "goalsAgainst": 4,
-      "goalDifference": 1,
-      "points": 7,
-      "groupPosition": 3,
-      "topScorer": {
-        "name": "Joel Campbell",
-        "goals": 2
-      },
-      "qualifyingHighlight": "Finished 3rd in Group C; drew 0-0 with Honduras on final day ending both teams' direct hopes; earned World Cup berth via intercontinental playoff",
-      "homeRecord": { "wins": 1, "draws": 2, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 2, "losses": 1 },
-      "cleanSheets": 3,
-      "biggestWin": "2-0 vs Nicaragua",
-      "worstDefeat": "0-1 vs Haiti"
-    },
-    "HON": {
-      "teamCode": "HON",
-      "teamName": "Honduras",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "CONCACAF Third Round - Group C runner-up + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 2,
-      "draws": 3,
-      "losses": 1,
-      "goalsFor": 6,
-      "goalsAgainst": 5,
-      "goalDifference": 1,
-      "points": 9,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Alberth Elis",
-        "goals": 2
-      },
-      "qualifyingHighlight": "Finished 2nd in Group C; 3-0 win over Haiti showed potential; stunned by 2-0 loss to Nicaragua; qualified via intercontinental playoff",
-      "homeRecord": { "wins": 2, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 2, "losses": 1 },
-      "cleanSheets": 2,
-      "biggestWin": "3-0 vs Haiti",
-      "worstDefeat": "0-2 vs Nicaragua"
-    },
-    "TRI": {
-      "teamCode": "TRI",
-      "teamName": "Trinidad and Tobago",
-      "confederation": "CONCACAF",
-      "qualificationMethod": "CONCACAF Third Round - Group B 3rd place + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 1,
-      "draws": 3,
-      "losses": 2,
-      "goalsFor": 7,
-      "goalsAgainst": 8,
-      "goalDifference": -1,
-      "points": 6,
-      "groupPosition": 3,
-      "topScorer": {
-        "name": "Levi Garcia",
-        "goals": 2
-      },
-      "qualifyingHighlight": "Drew 1-1 with Curacao and Jamaica; 3-0 win over Bermuda; earned World Cup berth via intercontinental playoff repechage",
-      "homeRecord": { "wins": 1, "draws": 1, "losses": 1 },
-      "awayRecord": { "wins": 0, "draws": 2, "losses": 1 },
-      "cleanSheets": 1,
-      "biggestWin": "3-0 vs Bermuda",
-      "worstDefeat": "0-2 vs Jamaica"
+      "cleanSheets": 4,
+      "biggestWin": "3-0 vs Indonesia",
+      "worstDefeat": "0-2 vs Japan"
     },
     "JPN": {
       "teamCode": "JPN",
@@ -911,8 +954,16 @@
         "goals": 8
       },
       "qualifyingHighlight": "Dominated Group C; conceded only 3 goals in 10 matches; best goal difference in AFC qualifying",
-      "homeRecord": { "wins": 5, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 1 },
+      "homeRecord": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
       "cleanSheets": 7,
       "biggestWin": "5-0 vs Bahrain",
       "worstDefeat": "0-1 vs Saudi Arabia"
@@ -937,66 +988,22 @@
         "goals": 10
       },
       "qualifyingHighlight": "Unbeaten in third round; Son Heung-min scored 10 goals across qualifying",
-      "homeRecord": { "wins": 4, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 3, "losses": 0 },
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 3,
+        "losses": 0
+      },
       "cleanSheets": 6,
       "biggestWin": "3-0 vs Kuwait",
       "worstDefeat": "N/A (unbeaten)"
     },
-    "AUS": {
-      "teamCode": "AUS",
-      "teamName": "Australia",
-      "confederation": "AFC",
-      "qualificationMethod": "AFC Third Round - Group C runner-up",
-      "qualificationDate": "2025-06-10",
-      "matches": 10,
-      "wins": 5,
-      "draws": 4,
-      "losses": 1,
-      "goalsFor": 16,
-      "goalsAgainst": 7,
-      "goalDifference": 9,
-      "points": 19,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Kusini Yengi",
-        "goals": 6
-      },
-      "qualifyingHighlight": "Secured automatic qualification as Group C runner-up with consistent results",
-      "homeRecord": { "wins": 3, "draws": 2, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 1 },
-      "cleanSheets": 4,
-      "biggestWin": "3-0 vs Bahrain",
-      "worstDefeat": "0-2 vs Japan"
-    },
-    "IRN": {
-      "teamCode": "IRN",
-      "teamName": "Iran",
-      "confederation": "AFC",
-      "qualificationMethod": "AFC Third Round - Group A winner",
-      "qualificationDate": "2025-06-10",
-      "matches": 10,
-      "wins": 7,
-      "draws": 2,
-      "losses": 1,
-      "goalsFor": 19,
-      "goalsAgainst": 8,
-      "goalDifference": 11,
-      "points": 23,
-      "groupPosition": 1,
-      "topScorer": {
-        "name": "Mehdi Taremi",
-        "goals": 10
-      },
-      "qualifyingHighlight": "Topped Group A; Taremi scored 10 goals to lead the attack; 6th World Cup appearance",
-      "homeRecord": { "wins": 5, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 1 },
-      "cleanSheets": 4,
-      "biggestWin": "4-0 vs North Korea",
-      "worstDefeat": "0-1 vs Uzbekistan"
-    },
-    "SAU": {
-      "teamCode": "SAU",
+    "KSA": {
+      "teamCode": "KSA",
       "teamName": "Saudi Arabia",
       "confederation": "AFC",
       "qualificationMethod": "AFC Fourth Round - Group B winner",
@@ -1015,89 +1022,19 @@
         "goals": 4
       },
       "qualifyingHighlight": "Qualified via fourth round after finishing 3rd in Group C; won fourth round Group B with 0-0 draw vs Iraq",
-      "homeRecord": { "wins": 3, "draws": 3, "losses": 0 },
-      "awayRecord": { "wins": 1, "draws": 2, "losses": 3 },
+      "homeRecord": {
+        "wins": 3,
+        "draws": 3,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 2,
+        "losses": 3
+      },
       "cleanSheets": 4,
       "biggestWin": "3-2 vs Indonesia (fourth round)",
       "worstDefeat": "0-2 vs Japan"
-    },
-    "QAT": {
-      "teamCode": "QAT",
-      "teamName": "Qatar",
-      "confederation": "AFC",
-      "qualificationMethod": "AFC Fourth Round - Group A winner",
-      "qualificationDate": "2025-10-14",
-      "matches": 12,
-      "wins": 6,
-      "draws": 2,
-      "losses": 4,
-      "goalsFor": 19,
-      "goalsAgainst": 25,
-      "goalDifference": -6,
-      "points": 17,
-      "groupPosition": 4,
-      "topScorer": {
-        "name": "Almoez Ali",
-        "goals": 12
-      },
-      "qualifyingHighlight": "Almoez Ali was AFC's top scorer with 12 goals; qualified via fourth round as Group A winner",
-      "homeRecord": { "wins": 4, "draws": 1, "losses": 1 },
-      "awayRecord": { "wins": 2, "draws": 1, "losses": 3 },
-      "cleanSheets": 3,
-      "biggestWin": "4-0 vs Kyrgyzstan",
-      "worstDefeat": "1-4 vs Iran"
-    },
-    "IDN": {
-      "teamCode": "IDN",
-      "teamName": "Indonesia",
-      "confederation": "AFC",
-      "qualificationMethod": "AFC Third Round + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 12,
-      "wins": 3,
-      "draws": 3,
-      "losses": 6,
-      "goalsFor": 11,
-      "goalsAgainst": 24,
-      "goalDifference": -13,
-      "points": 12,
-      "groupPosition": 4,
-      "topScorer": {
-        "name": "Rafael Struick",
-        "goals": 4
-      },
-      "qualifyingHighlight": "Historic first World Cup appearance for the world's 4th most populous nation; qualified via intercontinental playoff",
-      "homeRecord": { "wins": 2, "draws": 2, "losses": 1 },
-      "awayRecord": { "wins": 1, "draws": 1, "losses": 5 },
-      "cleanSheets": 2,
-      "biggestWin": "2-0 vs Bahrain",
-      "worstDefeat": "0-5 vs Japan"
-    },
-    "UZB": {
-      "teamCode": "UZB",
-      "teamName": "Uzbekistan",
-      "confederation": "AFC",
-      "qualificationMethod": "AFC Third Round - Group A runner-up",
-      "qualificationDate": "2025-06-10",
-      "matches": 10,
-      "wins": 6,
-      "draws": 3,
-      "losses": 1,
-      "goalsFor": 14,
-      "goalsAgainst": 7,
-      "goalDifference": 7,
-      "points": 21,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Eldor Shomurodov",
-        "goals": 5
-      },
-      "qualifyingHighlight": "Historic first World Cup qualification; strong defensive record in Group A",
-      "homeRecord": { "wins": 4, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 1 },
-      "cleanSheets": 4,
-      "biggestWin": "3-0 vs Kyrgyzstan",
-      "worstDefeat": "0-1 vs Iran"
     },
     "MAR": {
       "teamCode": "MAR",
@@ -1119,115 +1056,121 @@
         "goals": 5
       },
       "qualifyingHighlight": "Perfect record: 8 wins from 8; conceded only 2 goals; dominated Group E in a 4-team group format",
-      "homeRecord": { "wins": 4, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 4, "draws": 0, "losses": 0 },
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
       "cleanSheets": 6,
       "biggestWin": "5-0 vs Zambia",
       "worstDefeat": "N/A (unbeaten)"
     },
-    "SEN": {
-      "teamCode": "SEN",
-      "teamName": "Senegal",
-      "confederation": "CAF",
-      "qualificationMethod": "CAF Group B winner",
-      "qualificationDate": "2025-10-13",
-      "matches": 10,
-      "wins": 7,
-      "draws": 3,
+    "MEX": {
+      "teamCode": "MEX",
+      "teamName": "Mexico",
+      "confederation": "CONCACAF",
+      "qualificationMethod": "Automatic (host nation)",
+      "qualificationDate": "2018-06-13",
+      "matches": 0,
+      "wins": 0,
+      "draws": 0,
       "losses": 0,
-      "goalsFor": 22,
-      "goalsAgainst": 3,
-      "goalDifference": 19,
-      "points": 24,
-      "groupPosition": 1,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "points": 0,
+      "groupPosition": null,
       "topScorer": {
-        "name": "Sadio Mane",
-        "goals": 5
+        "name": "N/A",
+        "goals": 0
       },
-      "qualifyingHighlight": "Unbeaten through entire qualifying; conceded only 3 goals; strong defense led the way",
-      "homeRecord": { "wins": 4, "draws": 1, "losses": 0 },
-      "awayRecord": { "wins": 3, "draws": 2, "losses": 0 },
-      "cleanSheets": 7,
-      "biggestWin": "4-0 vs Togo",
-      "worstDefeat": "N/A (unbeaten)"
+      "qualifyingHighlight": "Automatic qualification as co-host nation; did not participate in qualifying",
+      "homeRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
+      "cleanSheets": 0,
+      "biggestWin": "N/A",
+      "worstDefeat": "N/A"
     },
-    "EGY": {
-      "teamCode": "EGY",
-      "teamName": "Egypt",
-      "confederation": "CAF",
-      "qualificationMethod": "CAF Group A winner",
-      "qualificationDate": "2025-10-13",
-      "matches": 10,
-      "wins": 8,
+    "NED": {
+      "teamCode": "NED",
+      "teamName": "Netherlands",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group G winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 8,
+      "wins": 6,
       "draws": 2,
       "losses": 0,
-      "goalsFor": 20,
-      "goalsAgainst": 2,
-      "goalDifference": 18,
-      "points": 26,
+      "goalsFor": 27,
+      "goalsAgainst": 4,
+      "goalDifference": 23,
+      "points": 20,
       "groupPosition": 1,
       "topScorer": {
-        "name": "Mohamed Salah",
-        "goals": 9
+        "name": "Memphis Depay",
+        "goals": 8
       },
-      "qualifyingHighlight": "Salah scored 9 goals to lead Africa's scoring charts; unbeaten with only 2 goals conceded",
-      "homeRecord": { "wins": 5, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 3, "draws": 2, "losses": 0 },
-      "cleanSheets": 7,
-      "biggestWin": "4-0 vs Djibouti",
+      "qualifyingHighlight": "Unbeaten in qualifying; Memphis Depay scored 8 goals in 8 matches",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 0
+      },
+      "cleanSheets": 5,
+      "biggestWin": "6-0 vs Malta",
       "worstDefeat": "N/A (unbeaten)"
     },
-    "NGA": {
-      "teamCode": "NGA",
-      "teamName": "Nigeria",
-      "confederation": "CAF",
-      "qualificationMethod": "CAF Group C runner-up + CAF Playoffs + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 14,
-      "wins": 6,
-      "draws": 5,
-      "losses": 3,
-      "goalsFor": 19,
-      "goalsAgainst": 11,
-      "goalDifference": 8,
-      "points": 23,
-      "groupPosition": 2,
-      "topScorer": {
-        "name": "Victor Osimhen",
-        "goals": 6
-      },
-      "qualifyingHighlight": "Finished 2nd in Group C behind South Africa by 1 point; beat Gabon in CAF playoffs; qualified via intercontinental playoff",
-      "homeRecord": { "wins": 4, "draws": 2, "losses": 1 },
-      "awayRecord": { "wins": 2, "draws": 3, "losses": 2 },
-      "cleanSheets": 4,
-      "biggestWin": "3-0 vs Lesotho",
-      "worstDefeat": "0-2 vs South Africa"
-    },
-    "CMR": {
-      "teamCode": "CMR",
-      "teamName": "Cameroon",
-      "confederation": "CAF",
-      "qualificationMethod": "CAF Group D runner-up + CAF Playoffs + Intercontinental Playoff",
-      "qualificationDate": "2026-03-31",
-      "matches": 14,
-      "wins": 7,
-      "draws": 3,
-      "losses": 4,
-      "goalsFor": 20,
-      "goalsAgainst": 12,
-      "goalDifference": 8,
+    "NOR": {
+      "teamCode": "NOR",
+      "teamName": "Norway",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group I winner",
+      "qualificationDate": "2025-10-14",
+      "matches": 8,
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 37,
+      "goalsAgainst": 5,
+      "goalDifference": 32,
       "points": 24,
-      "groupPosition": 2,
+      "groupPosition": 1,
       "topScorer": {
-        "name": "Eric Maxim Choupo-Moting",
-        "goals": 5
+        "name": "Erling Haaland",
+        "goals": 16
       },
-      "qualifyingHighlight": "Finished 2nd in Group D behind Cabo Verde; recovered from CAF playoff loss; qualified via intercontinental playoff repechage",
-      "homeRecord": { "wins": 5, "draws": 1, "losses": 1 },
-      "awayRecord": { "wins": 2, "draws": 2, "losses": 3 },
+      "qualifyingHighlight": "Perfect 8 wins from 8; Haaland scored 16 goals to become all-time top scorer in a single UEFA qualifying campaign",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
       "cleanSheets": 4,
-      "biggestWin": "4-0 vs Mauritius",
-      "worstDefeat": "0-2 vs Cabo Verde"
+      "biggestWin": "8-0 vs Moldova",
+      "worstDefeat": "N/A (unbeaten)"
     },
     "NZL": {
       "teamCode": "NZL",
@@ -1249,11 +1192,461 @@
         "goals": 9
       },
       "qualifyingHighlight": "Won all 5 matches; first OFC team to earn a direct World Cup berth; Wood scored 9 goals including 2 in 72 seconds vs Vanuatu",
-      "homeRecord": { "wins": 5, "draws": 0, "losses": 0 },
-      "awayRecord": { "wins": 0, "draws": 0, "losses": 0 },
+      "homeRecord": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
       "cleanSheets": 4,
       "biggestWin": "8-0 vs Samoa",
       "worstDefeat": "N/A (unbeaten)"
+    },
+    "PAN": {
+      "teamCode": "PAN",
+      "teamName": "Panama",
+      "confederation": "CONCACAF",
+      "qualificationMethod": "CONCACAF Third Round - Group A winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 6,
+      "wins": 3,
+      "draws": 3,
+      "losses": 0,
+      "goalsFor": 9,
+      "goalsAgainst": 4,
+      "goalDifference": 5,
+      "points": 12,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Jose Fajardo",
+        "goals": 3
+      },
+      "qualifyingHighlight": "Won group on final matchday with 2-0 win over El Salvador as Suriname lost; unbeaten in third round",
+      "homeRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 2,
+        "losses": 0
+      },
+      "cleanSheets": 3,
+      "biggestWin": "3-0 vs El Salvador",
+      "worstDefeat": "N/A (unbeaten)"
+    },
+    "PAR": {
+      "teamCode": "PAR",
+      "teamName": "Paraguay",
+      "confederation": "CONMEBOL",
+      "qualificationMethod": "CONMEBOL South American Qualifiers",
+      "qualificationDate": "2025-11-18",
+      "matches": 18,
+      "wins": 7,
+      "draws": 7,
+      "losses": 4,
+      "goalsFor": 14,
+      "goalsAgainst": 10,
+      "goalDifference": 4,
+      "points": 28,
+      "groupPosition": 6,
+      "topScorer": {
+        "name": "Antonio Sanabria",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Secured 6th-place finish to qualify directly; disciplined defensive approach",
+      "homeRecord": {
+        "wins": 5,
+        "draws": 3,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 4,
+        "losses": 3
+      },
+      "cleanSheets": 8,
+      "biggestWin": "2-0 vs Venezuela",
+      "worstDefeat": "0-2 vs Argentina"
+    },
+    "POR": {
+      "teamCode": "POR",
+      "teamName": "Portugal",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group F winner",
+      "qualificationDate": "2025-10-14",
+      "matches": 6,
+      "wins": 4,
+      "draws": 1,
+      "losses": 1,
+      "goalsFor": 20,
+      "goalsAgainst": 7,
+      "goalDifference": 13,
+      "points": 13,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Cristiano Ronaldo",
+        "goals": 5
+      },
+      "qualifyingHighlight": "Ronaldo extended his record World Cup qualifying tally to 41 goals",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 2,
+      "biggestWin": "5-0 vs Armenia",
+      "worstDefeat": "1-2 vs Republic of Ireland"
+    },
+    "QAT": {
+      "teamCode": "QAT",
+      "teamName": "Qatar",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Fourth Round - Group A winner",
+      "qualificationDate": "2025-10-14",
+      "matches": 12,
+      "wins": 6,
+      "draws": 2,
+      "losses": 4,
+      "goalsFor": 19,
+      "goalsAgainst": 25,
+      "goalDifference": -6,
+      "points": 17,
+      "groupPosition": 4,
+      "topScorer": {
+        "name": "Almoez Ali",
+        "goals": 12
+      },
+      "qualifyingHighlight": "Almoez Ali was AFC's top scorer with 12 goals; qualified via fourth round as Group A winner",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 3
+      },
+      "cleanSheets": 3,
+      "biggestWin": "4-0 vs Kyrgyzstan",
+      "worstDefeat": "1-4 vs Iran"
+    },
+    "RSA": {
+      "teamCode": "RSA",
+      "teamName": "South Africa",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group C winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 10,
+      "wins": 7,
+      "draws": 2,
+      "losses": 1,
+      "goalsFor": 16,
+      "goalsAgainst": 5,
+      "goalDifference": 11,
+      "points": 23,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Percy Tau",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Topped CAF Group C ahead of Nigeria; Hugo Broos' rebuilt squad dominated qualifying with defensive solidity and Ronwen Williams' goalkeeping",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 6,
+      "biggestWin": "3-0 vs Lesotho",
+      "worstDefeat": "0-1 vs Nigeria"
+    },
+    "SCO": {
+      "teamCode": "SCO",
+      "teamName": "Scotland",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group A runner-up + Playoffs",
+      "qualificationDate": "2026-03-31",
+      "matches": 8,
+      "wins": 5,
+      "draws": 2,
+      "losses": 1,
+      "goalsFor": 12,
+      "goalsAgainst": 5,
+      "goalDifference": 7,
+      "points": 17,
+      "groupPosition": 2,
+      "topScorer": {
+        "name": "Scott McTominay",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Finished 2nd in Group A; McTominay's goals from midfield were decisive; qualified via UEFA playoff",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 4,
+      "biggestWin": "3-0 vs Gibraltar",
+      "worstDefeat": "0-1 vs Spain"
+    },
+    "SEN": {
+      "teamCode": "SEN",
+      "teamName": "Senegal",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group B winner",
+      "qualificationDate": "2025-10-13",
+      "matches": 10,
+      "wins": 7,
+      "draws": 3,
+      "losses": 0,
+      "goalsFor": 22,
+      "goalsAgainst": 3,
+      "goalDifference": 19,
+      "points": 24,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Sadio Mane",
+        "goals": 5
+      },
+      "qualifyingHighlight": "Unbeaten through entire qualifying; conceded only 3 goals; strong defense led the way",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 3,
+        "draws": 2,
+        "losses": 0
+      },
+      "cleanSheets": 7,
+      "biggestWin": "4-0 vs Togo",
+      "worstDefeat": "N/A (unbeaten)"
+    },
+    "SUI": {
+      "teamCode": "SUI",
+      "teamName": "Switzerland",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group B winner",
+      "qualificationDate": "2025-10-14",
+      "matches": 6,
+      "wins": 4,
+      "draws": 2,
+      "losses": 0,
+      "goalsFor": 14,
+      "goalsAgainst": 2,
+      "goalDifference": 12,
+      "points": 14,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Breel Embolo",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Unbeaten campaign; conceded only 2 goals in 6 matches",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 2,
+        "losses": 0
+      },
+      "cleanSheets": 4,
+      "biggestWin": "4-0 vs Sweden",
+      "worstDefeat": "N/A (unbeaten)"
+    },
+    "TUN": {
+      "teamCode": "TUN",
+      "teamName": "Tunisia",
+      "confederation": "CAF",
+      "qualificationMethod": "CAF Group A winner",
+      "qualificationDate": "2025-11-18",
+      "matches": 10,
+      "wins": 6,
+      "draws": 3,
+      "losses": 1,
+      "goalsFor": 14,
+      "goalsAgainst": 5,
+      "goalDifference": 9,
+      "points": 21,
+      "groupPosition": 1,
+      "topScorer": {
+        "name": "Ellyes Skhiri",
+        "goals": 3
+      },
+      "qualifyingHighlight": "Topped CAF Group A with trademark defensive discipline; Benzarti's organized side conceded just 5 goals in 10 matches",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "cleanSheets": 5,
+      "biggestWin": "2-0 vs Mali",
+      "worstDefeat": "0-1 vs Senegal"
+    },
+    "TUR": {
+      "teamCode": "TUR",
+      "teamName": "Turkey",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Group E runner-up + Playoffs (Path C)",
+      "qualificationDate": "2026-03-31",
+      "matches": 6,
+      "wins": 4,
+      "draws": 1,
+      "losses": 1,
+      "goalsFor": 17,
+      "goalsAgainst": 12,
+      "goalDifference": 5,
+      "points": 13,
+      "groupPosition": 2,
+      "topScorer": {
+        "name": "Kenan Yildiz",
+        "goals": 4
+      },
+      "qualifyingHighlight": "Finished 2nd behind Spain; qualified via playoff Path C",
+      "homeRecord": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 1,
+        "draws": 1,
+        "losses": 1
+      },
+      "cleanSheets": 1,
+      "biggestWin": "5-1 vs Bulgaria",
+      "worstDefeat": "0-3 vs Spain"
+    },
+    "URU": {
+      "teamCode": "URU",
+      "teamName": "Uruguay",
+      "confederation": "CONMEBOL",
+      "qualificationMethod": "CONMEBOL South American Qualifiers",
+      "qualificationDate": "2025-11-18",
+      "matches": 18,
+      "wins": 7,
+      "draws": 7,
+      "losses": 4,
+      "goalsFor": 22,
+      "goalsAgainst": 12,
+      "goalDifference": 10,
+      "points": 28,
+      "groupPosition": 4,
+      "topScorer": {
+        "name": "Darwin Nunez",
+        "goals": 5
+      },
+      "qualifyingHighlight": "Solid defensive record under Bielsa; beat Argentina 2-0 at home",
+      "homeRecord": {
+        "wins": 5,
+        "draws": 3,
+        "losses": 1
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 4,
+        "losses": 3
+      },
+      "cleanSheets": 8,
+      "biggestWin": "3-0 vs Chile",
+      "worstDefeat": "0-2 vs Ecuador"
+    },
+    "USA": {
+      "teamCode": "USA",
+      "teamName": "United States",
+      "confederation": "CONCACAF",
+      "qualificationMethod": "Automatic (host nation)",
+      "qualificationDate": "2018-06-13",
+      "matches": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0,
+      "points": 0,
+      "groupPosition": null,
+      "topScorer": {
+        "name": "N/A",
+        "goals": 0
+      },
+      "qualifyingHighlight": "Automatic qualification as co-host nation; did not participate in qualifying",
+      "homeRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0
+      },
+      "cleanSheets": 0,
+      "biggestWin": "N/A",
+      "worstDefeat": "N/A"
+    },
+    "UZB": {
+      "teamCode": "UZB",
+      "teamName": "Uzbekistan",
+      "confederation": "AFC",
+      "qualificationMethod": "AFC Third Round - Group A runner-up",
+      "qualificationDate": "2025-06-10",
+      "matches": 10,
+      "wins": 6,
+      "draws": 3,
+      "losses": 1,
+      "goalsFor": 14,
+      "goalsAgainst": 7,
+      "goalDifference": 7,
+      "points": 21,
+      "groupPosition": 2,
+      "topScorer": {
+        "name": "Eldor Shomurodov",
+        "goals": 5
+      },
+      "qualifyingHighlight": "Historic first World Cup qualification; strong defensive record in Group A",
+      "homeRecord": {
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
+      },
+      "awayRecord": {
+        "wins": 2,
+        "draws": 2,
+        "losses": 1
+      },
+      "cleanSheets": 4,
+      "biggestWin": "3-0 vs Kyrgyzstan",
+      "worstDefeat": "0-1 vs Iran"
     }
   }
 }

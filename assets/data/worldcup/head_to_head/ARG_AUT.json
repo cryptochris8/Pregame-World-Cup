@@ -1,0 +1,49 @@
+{
+  "id": "ARG_AUT",
+  "team1Code": "ARG",
+  "team2Code": "AUT",
+  "totalMatches": 5,
+  "team1Wins": 3,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 8,
+  "team2Goals": 4,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2011-03-02",
+  "firstMeeting": "1958-06-15",
+  "notableMatches": [
+    {
+      "year": 1978,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ARG",
+      "location": "Buenos Aires, Argentina",
+      "description": "Host nation Argentina overcome Austria in World Cup group stage on their way to winning the tournament"
+    },
+    {
+      "year": 1958,
+      "tournament": "FIFA World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "AUT",
+      "location": "Buenos Aires, Argentina",
+      "description": "Austria defeat Argentina in a qualifying playoff for the 1958 World Cup"
+    },
+    {
+      "year": 2011,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "ARG",
+      "location": "Munich, Germany",
+      "description": "Argentina beat Austria in friendly held in Germany"
+    }
+  ]
+}

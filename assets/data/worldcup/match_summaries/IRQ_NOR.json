@@ -1,0 +1,57 @@
+{
+  "team1Code": "IRQ",
+  "team2Code": "NOR",
+  "team1Name": "Iraq",
+  "team2Name": "Norway",
+  "historicalAnalysis": "Iraq and Norway meet at the World Cup for the first time, in a match that pits two nations returning to football's biggest stage after long absences. Norway last appeared at the 1998 World Cup in France, where they famously beat Brazil 2-1 in the group stage. Iraq's last World Cup was even further back—Mexico 1986.\n\nNorway's qualification was built around the goalscoring exploits of Erling Haaland, Manchester City's prolific striker, and the creative brilliance of Arsenal captain Martin Ødegaard. These two players give Norway genuine world-class quality in key positions, transforming them from plucky outsiders into serious contenders.\n\nIraq's football identity is rooted in technical skill and passionate support. Their 2007 Asian Cup triumph, achieved against a backdrop of enormous national hardship, remains one of football's most inspiring stories. The current generation carries that legacy and the hopes of millions of Iraqi fans worldwide.\n\nThis match could be pivotal for both teams' hopes of advancing from Group I. With France expected to top the group, the Iraq vs Norway fixture may effectively decide who claims second place and a potential route to the knockout rounds.",
+  "keyStorylines": [
+    "Both teams returning to the World Cup after long absences",
+    "Erling Haaland seeking to make his World Cup debut count",
+    "Iraq aiming to prove their qualification was no fluke",
+    "A potential group-deciding match for second place behind France",
+    "Martin Ødegaard captaining Norway at a major tournament"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Erling Haaland",
+      "teamCode": "NOR",
+      "position": "Forward",
+      "reason": "Manchester City's record-breaking striker, the world's most feared number 9"
+    },
+    {
+      "name": "Martin Ødegaard",
+      "teamCode": "NOR",
+      "position": "Midfielder",
+      "reason": "Arsenal captain and Norway's creative heartbeat"
+    },
+    {
+      "name": "Aymen Hussein",
+      "teamCode": "IRQ",
+      "position": "Forward",
+      "reason": "Iraq's prolific goalscorer and talisman in World Cup qualifying"
+    },
+    {
+      "name": "Ibrahim Bayesh",
+      "teamCode": "IRQ",
+      "position": "Midfielder",
+      "reason": "Iraq's midfield general who controls tempo and distributes play"
+    }
+  ],
+  "tacticalPreview": "Norway play a direct 4-3-3 system designed to maximize Haaland's goal threat. Ødegaard operates as the creative fulcrum, while the wide players and fullbacks provide width and crossing opportunities. Norway are most dangerous in transition, where Haaland's movement and finishing are devastating.\n\nIraq will likely adopt a disciplined defensive shape, potentially a 4-2-3-1, looking to stay compact and limit the supply to Haaland. Iraq's technical midfielders will try to retain possession in midfield and use quick combinations to create openings. Set pieces could be crucial for Iraq in this fixture.",
+  "prediction": {
+    "predictedOutcome": "NOR",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Norway's Haaland-Ødegaard combination gives them a significant edge in quality, but Iraq's organization and fighting spirit will make this a competitive match.",
+    "alternativeScenario": "If Iraq neutralize Haaland's supply line and score early, they could hold on for a shock victory or draw that would throw the group wide open."
+  },
+  "pastEncountersSummary": "Iraq and Norway have no significant history of competitive meetings. This World Cup group stage encounter will be their most high-profile fixture against each other.",
+  "funFacts": [
+    "Norway famously beat Brazil 2-1 at the 1998 World Cup",
+    "Haaland scored 52 goals in his debut season at Manchester City in 2022-23",
+    "Iraq's 2007 Asian Cup victory was achieved while the country was in the midst of civil conflict",
+    "Ødegaard signed for Real Madrid aged 16, making him the youngest player to represent the club at the time",
+    "Combined, these two teams had not appeared at a World Cup for over 60 years before 2026"
+  ],
+  "isFirstMeeting": true
+}

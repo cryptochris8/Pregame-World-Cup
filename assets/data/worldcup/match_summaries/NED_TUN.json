@@ -1,0 +1,57 @@
+{
+  "team1Code": "NED",
+  "team2Code": "TUN",
+  "team1Name": "Netherlands",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "The Netherlands are one of European football's most storied nations, with three World Cup final appearances (1974, 1978, 2010) and a legacy of Total Football that has influenced the global game. At the 2022 World Cup in Qatar, the Oranje reached the quarterfinals under Louis van Gaal before losing to eventual champions Argentina on penalties. The Dutch squad combines experienced Premier League and European stars with emerging talent from the prolific Eredivisie development system.\n\nTunisia arrive at their sixth World Cup with a growing reputation as one of Africa's toughest opponents. Their 2022 campaign in Qatar was defined by the famous 1-0 victory over reigning champions France, a result that underlined their tactical discipline and competitive spirit. The Eagles of Carthage have historically been difficult to beat at World Cups, often keeping games tight against superior opposition, and their defensive organization is among the best on the African continent.\n\nThere is also a fascinating cultural subplot to this match. The Netherlands has a significant Tunisian and North African diaspora community, and Dutch football has been enriched over the decades by players of Moroccan and Tunisian heritage. Several Dutch players of North African descent have represented the Netherlands at the highest level, adding a layer of cultural significance to this encounter that extends beyond the pitch.",
+  "keyStorylines": [
+    "The Netherlands seeking to build on their 2022 quarterfinal run with an even deeper tournament push",
+    "Tunisia aiming to replicate their giant-killing form from 2022 when they defeated France",
+    "The cultural connections between the Netherlands and North Africa through the Dutch-Tunisian diaspora community",
+    "Virgil van Dijk's commanding presence in defense as he leads the Oranje in what could be his final World Cup",
+    "Cody Gakpo looking to replicate his outstanding 2022 World Cup form where he scored three group-stage goals"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Cody Gakpo",
+      "position": "Forward/Winger",
+      "teamCode": "NED",
+      "reason": "The explosive Liverpool forward was one of the stars of the 2022 World Cup, scoring in all three group-stage matches. His pace, power, and ability to cut inside from the left wing make him a constant threat."
+    },
+    {
+      "name": "Virgil van Dijk",
+      "position": "Centre-back",
+      "teamCode": "NED",
+      "reason": "One of the finest defenders of his generation, Van Dijk brings leadership, aerial dominance, and composure to the Dutch backline. His presence is a calming influence on the entire team."
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "position": "Midfielder",
+      "teamCode": "TUN",
+      "reason": "The creative midfielder with English football experience is Tunisia's key playmaker, capable of unlocking defenses with his passing range and technical ability."
+    },
+    {
+      "name": "Youssef Msakni",
+      "position": "Forward",
+      "teamCode": "TUN",
+      "reason": "Tunisia's veteran captain and talisman, Msakni has been the heartbeat of Tunisian football for years. His experience in big matches and ability to produce clutch moments make him essential."
+    }
+  ],
+  "tacticalPreview": "The Netherlands have evolved tactically over recent years, blending their traditional possession-based philosophy with a more pragmatic approach. Under their coaching setup, the Dutch typically use a 3-4-1-2 or 4-3-3 system, leveraging the width of their wing-backs and the creativity of their midfielders. Gakpo's ability to drift inside from the left and Van Dijk's distribution from the back are key elements. The Dutch will look to dominate possession and use their technical superiority to control the tempo.\n\nTunisia will almost certainly adopt a deep defensive block, looking to frustrate the Netherlands and deny them space in the final third. The Eagles of Carthage proved against France in 2022 that they can execute a low-block defensive strategy to perfection against elite opposition. Their game plan will revolve around compact defending, quick transitions through Msakni and their pacey forwards, and set-piece opportunities. Tunisia will be happy to let the Netherlands have the ball if they can control the spaces that matter.",
+  "prediction": {
+    "predictedOutcome": "NED",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "The Netherlands possess superior individual quality across the pitch, particularly in attack with Gakpo and in defense with Van Dijk. Their experience at major tournaments and the depth of their squad should prove decisive. However, Tunisia will make this difficult and the Dutch may need patience to break down their organized defense.",
+    "alternativeScenario": "Tunisia have proven they can beat anyone on their day. If they can keep the game goalless into the second half and grow in confidence, a set-piece goal or counter-attack could produce a shock result similar to their 2022 victory over France. A 0-0 or 1-1 draw is a realistic outcome."
+  },
+  "pastEncountersSummary": "The Netherlands and Tunisia have had limited head-to-head encounters in competitive football. Their meetings have been sporadic, with the two nations rarely crossing paths in World Cup qualifying or major tournament group stages. The relative lack of history between the two sides means this match carries the freshness of an unfamiliar rivalry, though both teams will have extensive scouting data available from recent tournaments.",
+  "funFacts": [
+    "The Netherlands have appeared in three World Cup finals (1974, 1978, 2010) but have never won the tournament — making them the most successful nation to have never lifted the trophy",
+    "Cody Gakpo scored in all three of the Netherlands' group-stage matches at the 2022 World Cup, finishing as one of the tournament's top scorers",
+    "Tunisia's 1-0 win over France at the 2022 World Cup came despite France fielding a team with nine changes from their previous match",
+    "The Netherlands has one of the largest Tunisian and North African diaspora communities in Western Europe, with deep cultural connections between the two nations",
+    "Virgil van Dijk was voted the best defender in the world during his peak years at Liverpool, winning the PFA Players' Player of the Year in 2019"
+  ],
+  "isFirstMeeting": false
+}

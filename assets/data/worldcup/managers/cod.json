@@ -1,0 +1,21 @@
+{
+  "id": "manager_cod",
+  "firstName": "Sébastien",
+  "lastName": "Desabre",
+  "commonName": "Sébastien Desabre",
+  "dateOfBirth": "1976-08-02",
+  "nationality": "France",
+  "currentTeam": "DR Congo",
+  "currentTeamCode": "COD",
+  "photoUrl": "assets/managers/desabre.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Counter-Attack",
+  "yearsExperience": 18,
+  "previousTeams": ["ES Cannet Rocheville", "ASEC Mimosas", "Coton Sport", "Primeiro de Agosto", "Uganda NT", "Pyramids FC", "Wydad AC", "Chamois Niortais"],
+  "trophies": ["Ivory Coast Cup 2011 (ASEC Mimosas)", "Cameroon Ligue 1 2013 (Coton Sport)", "Girabola 2015 (Primeiro de Agosto)"],
+  "careerWins": 130,
+  "careerDraws": 60,
+  "careerLosses": 75,
+  "careerWinPercentage": 49,
+  "bio": "French manager nicknamed 'The Florist' with over 20 years of coaching experience across Africa. Appointed DR Congo coach in 2022, he has built a competitive squad featuring numerous dual-national players and previously led Uganda to the 2019 AFCON Round of 16."
+}

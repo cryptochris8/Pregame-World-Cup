@@ -1,0 +1,57 @@
+{
+  "team1Code": "ALG",
+  "team2Code": "ARG",
+  "team1Name": "Algeria",
+  "team2Name": "Argentina",
+  "historicalAnalysis": "Algeria and Argentina share one of the most emotionally charged histories in World Cup football, though they have rarely met on the pitch. Algeria's World Cup story is forever intertwined with the 1982 tournament in Spain, where they stunned West Germany 2-1 in their opening match — one of the greatest upsets in World Cup history. That victory, however, was cruelly undone when West Germany and Austria played out a mutually beneficial 1-0 result in the final group match, eliminating Algeria on goal difference. The incident, known as the 'Disgrace of Gijon,' led FIFA to mandate that final group-stage matches be played simultaneously, a rule still in effect today.\n\nArgentina enter this tournament as defending World Cup champions, having lifted the trophy in Qatar in 2022 with a thrilling penalty shootout victory over France in what many consider the greatest World Cup final ever played. Lionel Messi, now 38, cemented his legacy as the greatest player of his generation with that triumph. His participation in the 2026 World Cup, playing domestically for Inter Miami in MLS, makes this potentially his farewell on the grandest stage of international football.\n\nAlgeria's football identity is built on passion, resilience, and a proud tradition of producing technically gifted players. Their 2019 Africa Cup of Nations triumph under Djamel Belmadi was a landmark achievement, and the Desert Foxes have continued to develop as a force in African football. This World Cup appearance continues a tradition that began in 1982 and has seen Algeria compete in 1986, 2010, and 2014, where they memorably reached the Round of 16 for the first time.\n\nThe meeting of these two nations in the group stage carries enormous weight. For Algeria, facing the defending champions is an opportunity to create another iconic World Cup moment. For Argentina, the match represents the kind of potential banana skin that has tripped favorites throughout World Cup history.",
+  "keyStorylines": [
+    "Lionel Messi's potential farewell World Cup — the Argentine icon, now 38, could be playing his final matches on the world's biggest stage after his crowning glory in Qatar 2022",
+    "Algeria's World Cup return evokes memories of 1982 and the 'Disgrace of Gijon' — this group stage features Austria, making the historical parallels impossible to ignore",
+    "Argentina's quest to become the first team to win back-to-back World Cups since Brazil in 1958 and 1962, continuing their dynasty under Lionel Scaloni",
+    "Algeria's golden generation led by European-based stars looking to surpass their 2014 achievement of reaching the Round of 16 for the first time",
+    "The clash of footballing cultures — Argentina's possession-based, technically brilliant style against Algeria's physical, counter-attacking approach honed in African football"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lionel Messi",
+      "position": "Forward",
+      "teamCode": "ARG",
+      "reason": "Eight-time Ballon d'Or winner and Argentina's all-time greatest player — still capable of deciding any match with a moment of genius"
+    },
+    {
+      "name": "Julian Alvarez",
+      "position": "Forward",
+      "teamCode": "ARG",
+      "reason": "Atletico Madrid's versatile striker combines relentless work rate with clinical finishing"
+    },
+    {
+      "name": "Amine Gouiri",
+      "position": "Forward",
+      "teamCode": "ALG",
+      "reason": "Algeria's most creative attacker, capable of unlocking defenses with his dribbling and vision"
+    },
+    {
+      "name": "Enzo Fernandez",
+      "position": "Midfielder",
+      "teamCode": "ARG",
+      "reason": "Chelsea's World Cup-winning midfielder brings composure, passing range, and leadership"
+    }
+  ],
+  "tacticalPreview": "Argentina under Lionel Scaloni play a fluid, possession-dominant system typically set up in a 4-3-3 formation. Enzo Fernandez and Alexis Mac Allister control the midfield tempo, while the fullbacks push high to create width. The attack flows through Messi, who operates as a free-roaming playmaker capable of dropping deep or drifting wide. Julian Alvarez provides the relentless pressing and movement off the ball that complements Messi's genius. Argentina's defensive solidity, anchored by Cristian Romero and Lisandro Martinez, gives them a platform to dominate possession against most opponents.\n\nAlgeria are likely to adopt a pragmatic, defensively disciplined approach against the world champions. Expect a compact 4-4-2 or 5-4-1 shape designed to deny space in the central areas where Messi operates. Algeria's threat will come from quick transitions, using the pace of their wide players to exploit the space behind Argentina's advanced fullbacks. Set pieces could also be a factor, as Algeria possess aerial threats. The key tactical battle will be whether Algeria can maintain their defensive shape for 90 minutes against Argentina's relentless probing, or whether fatigue and individual quality eventually break them down.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "2-0",
+    "confidence": 78,
+    "reasoning": "Argentina's depth of quality, big-game experience, and tactical sophistication should prove decisive. The defending champions have the individual talent and collective organization to break down Algeria's defensive setup, though it may take time. Argentina's tournament pedigree under Scaloni makes them formidable in group-stage openers.",
+    "alternativeScenario": "Algeria have a proud history of upsetting favorites at the World Cup. If they can stay compact and take one of their chances on the counter, a 1-1 draw is possible, echoing the spirit of their 1982 heroics against West Germany."
+  },
+  "pastEncountersSummary": "Algeria and Argentina have had limited direct meetings in competitive football. Their encounters have primarily come in friendly matches. The two nations have never met at a World Cup, making this a historic first in the tournament's history. Algeria's World Cup narrative, however, is deeply connected to Argentina's 1982 group — the ripple effects of Algeria's shock win over West Germany and the subsequent Gijon scandal shaped World Cup regulations forever.",
+  "funFacts": [
+    "Algeria's 2-1 victory over West Germany at the 1982 World Cup is considered one of the greatest upsets in football history and directly led to FIFA's rule that final group matches must kick off simultaneously",
+    "Lionel Messi has scored 13 World Cup goals across five tournaments (2006, 2010, 2014, 2018, 2022), and the 2026 edition would make him the first player to appear in six World Cups if he features",
+    "Algeria's 2019 AFCON title, won in Egypt under coach Djamel Belmadi, was only their second continental championship after their first in 1990",
+    "Argentina have won the World Cup three times (1978, 1986, 2022) and the Copa America a record 16 times, making them one of the most decorated nations in football history",
+    "The 'Disgrace of Gijon' in 1982, which eliminated Algeria, involved West Germany and Austria — remarkably, all three nations are now in the same 2026 World Cup Group J"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,57 @@
+{
+  "team1Code": "CRO",
+  "team2Code": "GHA",
+  "team1Name": "Croatia",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "Croatia and Ghana have a brief but memorable World Cup history. They met at the 2014 World Cup in Brazil, where Croatia won 1-0 in the group stage. Both nations have been consistent World Cup performers in recent decades, making this a quality fixture in Group L.\n\nCroatia have been one of the great overachievers in modern football. The Vatreni reached the 2018 World Cup final (losing to France) and finished third at the 2022 World Cup in Qatar. Led by the incomparable Luka Modrić, who won the 2018 Ballon d'Or, Croatia have consistently punched above their weight with a population of just four million. While Modrić is now in the twilight of his career, a new generation led by Joško Gvardiol (Manchester City) is ready to carry the torch.\n\nGhana's World Cup story is one of pride and heartbreak. The Black Stars made their debut in 2006 and reached the quarterfinals in 2010 in South Africa, where they were denied a historic semifinal berth by Luis Suárez's infamous handball on the line. Asamoah Gyan's missed penalty in the ensuing moments remains one of the World Cup's most painful memories.\n\nGhana have qualified for four World Cups (2006, 2010, 2014, 2022, 2026) and continue to produce talented players who compete across Europe's top leagues. This fixture in Group L could be crucial for both teams' hopes of progressing alongside or ahead of England.",
+  "keyStorylines": [
+    "Rematch of their 2014 World Cup group stage meeting",
+    "Luka Modrić potentially playing his final World Cup",
+    "Ghana seeking to recapture the magic of their 2010 quarterfinal run",
+    "Joško Gvardiol leading Croatia's new defensive generation",
+    "A potential group-deciding match for knockout round qualification"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Joško Gvardiol",
+      "teamCode": "CRO",
+      "position": "Defender",
+      "reason": "Manchester City's dominant young center-back, already a World Cup veteran"
+    },
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "position": "Midfielder",
+      "reason": "Ballon d'Or winner and Croatia's all-time great, potentially his last World Cup"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "West Ham's dynamic attacker with flair, pace, and an eye for goal"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal's powerful midfielder and Ghana's most experienced player"
+    }
+  ],
+  "tacticalPreview": "Croatia's 4-3-3 is built on midfield dominance. Even as Modrić ages, Croatia's ability to control games through possession and patient build-up remains their hallmark. Gvardiol's ability to carry the ball from defense adds a modern dimension, while Mateo Kovačić provides the tireless engine in midfield.\n\nGhana will look to match Croatia's energy with their own athleticism and pace. Playing a 4-2-3-1, the Black Stars will target the channels behind Croatia's fullbacks and use Kudus's ability to drive at defenders. Ghana's pressing intensity in the first half could be key to unsettling Croatia's rhythm.",
+  "prediction": {
+    "predictedOutcome": "CRO",
+    "predictedScore": "2-1",
+    "confidence": 63,
+    "reasoning": "Croatia's tournament pedigree and midfield mastery give them a slight edge, but Ghana's pace and energy will make this a closely contested match.",
+    "alternativeScenario": "If Ghana's pressing disrupts Croatia's midfield control early and Kudus is in inspired form, the Black Stars could pull off a 2-1 upset."
+  },
+  "pastEncountersSummary": "Croatia beat Ghana 1-0 at the 2014 World Cup in Brazil. They also met at the 2014 pre-tournament friendly, with Croatia winning again.",
+  "funFacts": [
+    "Croatia's population of 4 million makes them the smallest nation to reach a World Cup final (2018)",
+    "Ghana's Asamoah Gyan missed the penalty after Suárez's handball in the 2010 World Cup quarterfinal",
+    "Luka Modrić won the 2018 Ballon d'Or, breaking the Messi-Ronaldo duopoly",
+    "Mohammed Kudus scored twice against South Korea at the 2022 World Cup",
+    "Croatia have finished in the top three at two of the last three World Cups (2018: 2nd, 2022: 3rd)"
+  ],
+  "isFirstMeeting": false
+}

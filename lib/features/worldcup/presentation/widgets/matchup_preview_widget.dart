@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../../../../config/app_theme.dart';
 import '../../data/datasources/world_cup_firestore_datasource.dart';
 import '../../domain/entities/head_to_head.dart';
@@ -65,11 +67,16 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
     });
 
     try {
+      // Try Firestore first
       final datasource = WorldCupFirestoreDataSource();
-      final h2h = await datasource.getHeadToHead(
+      var h2h = await datasource.getHeadToHead(
         widget.team1Code,
         widget.team2Code,
       );
+
+      // Fall back to local JSON if Firestore doesn't have it
+      h2h ??= await _loadLocalHeadToHead(widget.team1Code, widget.team2Code);
+
       if (mounted) {
         setState(() {
           _headToHead = h2h;
@@ -83,6 +90,20 @@ class _MatchupPreviewWidgetState extends State<MatchupPreviewWidget> {
           _isLoading = false;
         });
       }
+    }
+  }
+
+  /// Loads head-to-head data from local JSON assets as a fallback.
+  Future<HeadToHead?> _loadLocalHeadToHead(String code1, String code2) async {
+    final codes = [code1.toUpperCase(), code2.toUpperCase()]..sort();
+    final key = '${codes[0]}_${codes[1]}';
+    try {
+      final jsonString = await rootBundle
+          .loadString('assets/data/worldcup/head_to_head/$key.json');
+      final data = json.decode(jsonString) as Map<String, dynamic>;
+      return HeadToHead.fromMap(data);
+    } catch (_) {
+      return null;
     }
   }
 

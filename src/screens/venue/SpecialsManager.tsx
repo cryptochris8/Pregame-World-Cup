@@ -42,7 +42,7 @@ const SpecialsManager: React.FC = () => {
     setSpecials([
       {
         id: '1',
-        name: 'Game Day Wings',
+        name: 'Match Day Wings',
         description: '10 buffalo wings with your choice of sauce',
         originalPrice: 16.99,
         specialPrice: 12.99,
@@ -51,25 +51,25 @@ const SpecialsManager: React.FC = () => {
         startTime: '11:00',
         endTime: '23:00',
         gameSpecific: true,
-        scheduledGames: ['Auburn vs LSU', 'Alabama vs Georgia']
+        scheduledGames: ['Group Stage Matches', 'Knockout Rounds']
       },
       {
         id: '2',
-        name: '$2 Beers',
-        description: 'Domestic draft beers during game hours',
-        originalPrice: 5.00,
-        specialPrice: 2.00,
+        name: 'World Cup Pint',
+        description: 'Draft beers during all World Cup matches',
+        originalPrice: 7.00,
+        specialPrice: 5.00,
         category: 'drink',
         isActive: true,
         startTime: '12:00',
-        endTime: '18:00',
+        endTime: '23:00',
         gameSpecific: false,
         scheduledGames: []
       },
       {
         id: '3',
-        name: 'Tailgate Combo',
-        description: 'Burger, fries, and a beer',
+        name: 'Watch Party Combo',
+        description: 'Burger, fries, and a beer — perfect for the big match',
         originalPrice: 22.99,
         specialPrice: 18.99,
         category: 'combo',
@@ -77,7 +77,7 @@ const SpecialsManager: React.FC = () => {
         startTime: '11:00',
         endTime: '15:00',
         gameSpecific: true,
-        scheduledGames: ['SEC Championship']
+        scheduledGames: ['World Cup Final']
       }
     ]);
   }, []);
@@ -169,7 +169,7 @@ const SpecialsManager: React.FC = () => {
               </Link>
               <img src={PregameLogo} alt="Pregame" className="h-10 w-auto mr-4" />
               <div>
-                <h1 className="text-3xl font-bold">Game Day Specials</h1>
+                <h1 className="text-3xl font-bold">Match Day Specials</h1>
                 <p className="text-blue-100">Create and manage your venue's food & drink specials</p>
               </div>
             </div>
@@ -357,7 +357,7 @@ const SpecialsManager: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
             </svg>
             <h3 className="text-lg font-medium text-gray-900 mb-2">No specials found</h3>
-            <p className="text-gray-600 mb-4">Get started by creating your first game day special!</p>
+            <p className="text-gray-600 mb-4">Get started by creating your first match day special!</p>
             <button
               onClick={() => setShowCreateModal(true)}
               className="bg-[#355E3B] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#2d4f31] transition-colors"
@@ -402,7 +402,7 @@ const SpecialsManager: React.FC = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B]"
-                      placeholder="e.g., Game Day Wings"
+                      placeholder="e.g., Match Day Wings"
                     />
                   </div>
 

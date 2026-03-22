@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart' as di;
 import '../../../../l10n/app_localizations.dart';
-import '../../data/datasources/world_cup_firestore_datasource.dart';
+import '../../data/services/local_match_summary_service.dart';
 import '../../data/services/local_prediction_engine.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/nearby_venues_cubit.dart';
@@ -39,7 +39,11 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     _loadLocalPrediction();
   }
 
-  /// Load AI match summary from Firestore
+  /// Load match summary from locally-bundled JSON assets.
+  ///
+  /// All match preview content is stored in assets/data/worldcup/match_summaries/
+  /// as pre-researched JSON files. No live API or Firestore calls are made here —
+  /// content is updated offline and shipped with each app release.
   Future<void> _loadMatchSummary() async {
     if (widget.match.homeTeamCode == null || widget.match.awayTeamCode == null) {
       return;
@@ -48,8 +52,8 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     setState(() => _isLoadingSummary = true);
 
     try {
-      final datasource = WorldCupFirestoreDataSource();
-      final summary = await datasource.getMatchSummary(
+      final service = di.sl<LocalMatchSummaryService>();
+      final summary = await service.getMatchSummary(
         widget.match.homeTeamCode!,
         widget.match.awayTeamCode!,
       );
@@ -326,8 +330,10 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       );
     }
 
+    // Show a teaser card when local research hasn't been written yet.
+    // This is temporary — every match will eventually have a JSON file.
     if (_matchSummary == null) {
-      return const SizedBox.shrink();
+      return _buildAnalysisComingSoon();
     }
 
     return FanPassFeatureGate(
@@ -338,6 +344,53 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
         initiallyExpanded: false,
         homeTeamCode: match.homeTeamCode,
         localPrediction: _localPrediction,
+      ),
+    );
+  }
+
+  /// Shown when a match hasn't had its research file written yet.
+  Widget _buildAnalysisComingSoon() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: AppTheme.backgroundElevated,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: AppTheme.primaryPurple.withValues(alpha: 0.3),
+        ),
+      ),
+      child: Row(
+        children: [
+          Icon(
+            Icons.analytics_outlined,
+            color: AppTheme.primaryPurple.withValues(alpha: 0.7),
+            size: 32,
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Match Analysis',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'In-depth analysis for this match is being researched and will be available soon.',
+                  style: TextStyle(
+                    color: Colors.white.withValues(alpha: 0.6),
+                    fontSize: 13,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

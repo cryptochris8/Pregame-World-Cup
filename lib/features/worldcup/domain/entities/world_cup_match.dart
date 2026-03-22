@@ -254,7 +254,9 @@ class WorldCupMatch extends Equatable {
       awayTeamFlagUrl: data['awayTeamFlagUrl'] as String?,
       homeTeamPlaceholder: data['homeTeamPlaceholder'] as String?,
       awayTeamPlaceholder: data['awayTeamPlaceholder'] as String?,
-      dateTime: WorldCupMatchParsers.parseDateTime(data['dateTime']),
+      dateTime: WorldCupMatchParsers.parseDateTime(data['dateTime'])
+          ?? WorldCupMatchParsers.parseDateAndTime(
+               data['date'] as String?, data['time'] as String?),
       dateTimeUtc: WorldCupMatchParsers.parseDateTime(data['dateTimeUtc']),
       venueId: data['venueId'] as String?,
       venue: data['venue'] != null
@@ -431,7 +433,8 @@ class WorldCupMatch extends Equatable {
       awayTeamPlaceholder: map['awayTeamPlaceholder'] as String?,
       dateTime: map['dateTime'] != null
           ? DateTime.tryParse(map['dateTime'] as String)
-          : null,
+          : WorldCupMatchParsers.parseDateAndTime(
+              map['date'] as String?, map['time'] as String?),
       dateTimeUtc: map['dateTimeUtc'] != null
           ? DateTime.tryParse(map['dateTimeUtc'] as String)
           : null,

@@ -1,0 +1,59 @@
+{
+  "id": "BRA_SCO",
+  "team1Code": "BRA",
+  "team2Code": "SCO",
+  "totalMatches": 6,
+  "team1Wins": 4,
+  "team2Wins": 0,
+  "draws": 2,
+  "team1Goals": 11,
+  "team2Goals": 2,
+  "worldCupMatches": 4,
+  "team1WorldCupWins": 3,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "2011-03-27",
+  "firstMeeting": "1974-06-18",
+  "notableMatches": [
+    {
+      "year": 1998,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Saint-Denis, France",
+      "description": "Opening match of 1998 World Cup; Cesar Sampaio and a Tom Boyd own goal secure Brazil victory"
+    },
+    {
+      "year": 1982,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 4,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Seville, Spain",
+      "description": "Zico, Oscar, Eder and Falcao star in famous Brazil side's dominant display"
+    },
+    {
+      "year": 1974,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Frankfurt, West Germany",
+      "description": "Scotland hold Brazil to a goalless draw in their first-ever meeting"
+    },
+    {
+      "year": 2011,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "London, England",
+      "description": "Young Neymar scores twice including a penalty at the Emirates Stadium"
+    }
+  ]
+}

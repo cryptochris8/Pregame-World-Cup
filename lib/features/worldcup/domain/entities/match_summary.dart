@@ -64,7 +64,29 @@ class MatchSummary extends Equatable {
   @override
   List<Object?> get props => [id, team1Code, team2Code];
 
+  /// Load from a Firestore document snapshot.
   factory MatchSummary.fromFirestore(Map<String, dynamic> data, String docId) {
+    return MatchSummary._fromMap(data, docId);
+  }
+
+  /// Load from a locally-bundled JSON asset file.
+  ///
+  /// ARCHITECTURE NOTE: Match summaries are bundled as JSON assets in
+  /// assets/data/worldcup/match_summaries/{TEAM1}_{TEAM2}.json (sorted
+  /// alphabetically). This is the primary data source — no live API calls
+  /// are made for match preview content. Research is updated offline and
+  /// shipped with app updates.
+  factory MatchSummary.fromJson(Map<String, dynamic> data) {
+    // Derive a consistent ID from the team codes
+    final codes = [
+      (data['team1Code'] as String).toUpperCase(),
+      (data['team2Code'] as String).toUpperCase(),
+    ]..sort();
+    final docId = '${codes[0]}_${codes[1]}';
+    return MatchSummary._fromMap(data, docId);
+  }
+
+  factory MatchSummary._fromMap(Map<String, dynamic> data, String docId) {
     return MatchSummary(
       id: docId,
       team1Code: data['team1Code'] as String,

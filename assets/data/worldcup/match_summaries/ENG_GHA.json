@@ -1,0 +1,57 @@
+{
+  "team1Code": "ENG",
+  "team2Code": "GHA",
+  "team1Name": "England",
+  "team2Name": "Ghana",
+  "historicalAnalysis": "England and Ghana have a fascinating football relationship, intertwined with cultural and diaspora connections. Many players of Ghanaian heritage have represented England, and vice versa, making this a match with personal significance for several players on both sides. At the 2022 World Cup in Qatar, England defeated Ghana 3-0 in the group stage, with goals from Saka and others.\n\nEngland have become genuine contenders under recent management, reaching the 2018 World Cup semifinal, the Euro 2020 final (lost to Italy on penalties), the 2022 World Cup quarterfinal, and the Euro 2024 final (lost to Spain). The Three Lions boast arguably the most talented squad in their history, with Jude Bellingham (Real Madrid), Bukayo Saka (Arsenal), and Phil Foden (Manchester City) forming a world-class attacking core.\n\nGhana's World Cup journey has been filled with memorable moments. Their 2006 debut saw them reach the Round of 16, and the 2010 quarterfinal run in South Africa—ended by Suárez's handball—remains one of the tournament's most dramatic chapters. The Black Stars have a passionate global fanbase and continue to develop talented players.\n\nThis Group L fixture could be pivotal for Ghana's hopes of advancing. England will be heavy favorites, but Ghana have shown at previous World Cups that they can compete with the best. The 2022 World Cup group stage meeting provides recent tactical reference points for both coaching staffs.",
+  "keyStorylines": [
+    "Rematch of the 2022 World Cup group stage (England won 3-0)",
+    "Jude Bellingham leading England's golden generation",
+    "Ghanaian heritage connections across both squads",
+    "England seeking their first World Cup trophy since 1966",
+    "Ghana looking to avenge the 2022 group stage defeat"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "position": "Midfielder",
+      "reason": "Real Madrid's complete midfielder and England's most important player"
+    },
+    {
+      "name": "Bukayo Saka",
+      "teamCode": "ENG",
+      "position": "Forward",
+      "reason": "Arsenal's electric winger who scored against Ghana at the 2022 World Cup"
+    },
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "West Ham's skilful attacker, Ghana's biggest creative threat"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal midfielder who knows England's top players intimately from club football"
+    }
+  ],
+  "tacticalPreview": "England's 4-3-3 or 4-2-3-1 system is designed to get the best from their attacking talent. Bellingham's runs from deep, Saka's one-on-one ability on the right, and Foden's creative intelligence give England multiple attacking dimensions. The fullbacks push high to provide width and overloads.\n\nGhana will need to be defensively disciplined while looking to exploit transitions. A compact 4-5-1 or 4-4-2 shape could help Ghana stay in the game, with Kudus given license to break forward. Ghana's midfield battle, led by Partey, will be crucial—if they can disrupt England's build-up, opportunities will come on the counter.",
+  "prediction": {
+    "predictedOutcome": "ENG",
+    "predictedScore": "2-0",
+    "confidence": 75,
+    "reasoning": "England's squad depth and individual quality across every position makes them strong favorites. Bellingham and Saka should have too much for Ghana's defense.",
+    "alternativeScenario": "If Ghana keep it tight until halftime and Kudus produces a moment of magic, a shock 1-1 draw could throw the group wide open and boost Ghana's advancement hopes."
+  },
+  "pastEncountersSummary": "England beat Ghana 3-0 at the 2022 World Cup in Qatar, with Bukayo Saka scoring. They have also met in friendlies, including a 1-1 draw in 2011.",
+  "funFacts": [
+    "Bukayo Saka scored his first World Cup goal against Ghana in 2022",
+    "Several England-eligible players have chosen to represent Ghana, and vice versa, due to diaspora connections",
+    "England have reached the final of three of the last four major tournaments they've entered (Euro 2020, 2022 WC QF, Euro 2024)",
+    "Ghana's 2010 World Cup quarterfinal is the furthest any African team has gone at the tournament (alongside Cameroon 1990 and Senegal 2002)",
+    "Jude Bellingham became Real Madrid's youngest Champions League scorer in his debut season"
+  ],
+  "isFirstMeeting": false
+}

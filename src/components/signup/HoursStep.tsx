@@ -157,7 +157,7 @@ const HoursStep: React.FC<HoursStepProps> = ({
         </div>
 
         <p className="text-xs text-center pt-2" style={{ color: 'var(--pregame-text-muted)' }}>
-          You can set special game day hours after completing signup
+          You can set special match day hours after completing signup
         </p>
 
         {/* Navigation Buttons */}

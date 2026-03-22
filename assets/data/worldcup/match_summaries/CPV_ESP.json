@@ -1,0 +1,57 @@
+{
+  "team1Code": "CPV",
+  "team2Code": "ESP",
+  "team1Name": "Cabo Verde",
+  "team2Name": "Spain",
+  "historicalAnalysis": "This match represents one of the most extraordinary David vs Goliath stories in World Cup history. Cabo Verde, an archipelago nation of approximately 600,000 people off the west coast of Africa, have achieved the remarkable feat of qualifying for their first-ever FIFA World Cup. Their journey through African qualifying is a testament to the passion and determination of a tiny island nation punching astronomically above its weight on the global stage.\n\nSpain, by contrast, are footballing royalty. Winners of the 2010 World Cup in South Africa — where they defeated the Netherlands 1-0 in the final thanks to Andres Iniesta's iconic extra-time goal — Spain have been a dominant force in international football for decades. La Roja also won three consecutive major tournaments (Euro 2008, World Cup 2010, Euro 2012) during their golden era. At the 2022 World Cup, Spain topped their group with a stunning 7-0 demolition of Costa Rica before controversially exiting to Morocco on penalties in the Round of 16.\n\nSpain's current generation represents a thrilling new chapter, with Barcelona's young prodigies leading the charge. The emergence of players like Pedri, Gavi, and the sensational Lamine Yamal — who became one of the youngest players in European Championship history at Euro 2024 — has given Spain a squad blending youthful exuberance with technical brilliance. For Cabo Verde, simply being on the same pitch as these stars represents the pinnacle of their footballing achievement.\n\nCabo Verde's football identity is closely linked to the Portuguese-speaking world, with many of their players competing in Portugal's lower and middle divisions. The nation has also produced players who have chosen to represent Portugal instead, most notably Nani, whose family originates from Cabo Verde.",
+  "keyStorylines": [
+    "Cabo Verde making their World Cup debut — the smallest nation by population at the 2026 tournament",
+    "Spain's new golden generation led by Barcelona's teenage sensation Lamine Yamal and midfield maestro Pedri",
+    "The ultimate David vs Goliath matchup: a nation of 600,000 vs 2010 World Cup champions",
+    "Cabo Verde's deep connections to Portuguese football and the Lusophone world",
+    "Spain looking to replicate their dominant 7-0 group-stage victory over Costa Rica from the 2022 World Cup"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "position": "Right Winger",
+      "teamCode": "ESP",
+      "reason": "The teenage sensation has taken world football by storm with his dazzling dribbling, creativity, and maturity beyond his years. He became a star at Euro 2024 and is already one of the most exciting talents on the planet."
+    },
+    {
+      "name": "Pedri",
+      "position": "Central Midfielder",
+      "teamCode": "ESP",
+      "reason": "The elegant midfielder is the metronome of Spain's possession-based system. His ability to control tempo, find pockets of space, and deliver incisive passes makes him one of the world's best midfielders."
+    },
+    {
+      "name": "Ryan Mendes",
+      "position": "Forward",
+      "teamCode": "CPV",
+      "reason": "One of Cabo Verde's most experienced internationals, Mendes has been a key figure in the national team for years and brings much-needed experience and attacking threat to the squad."
+    },
+    {
+      "name": "Gavi",
+      "position": "Central Midfielder",
+      "teamCode": "ESP",
+      "reason": "The fiery young midfielder combines relentless energy with exceptional technical ability. His pressing intensity and ball-winning capabilities set the tone for Spain's midfield dominance."
+    }
+  ],
+  "tacticalPreview": "Spain will approach this match with their trademark tiki-taka inspired possession game, expecting to dominate the ball for extended periods. La Roja typically deploy a 4-3-3 formation with fluid positional interchanges, particularly in midfield where Pedri and Gavi orchestrate play. Lamine Yamal's ability to create from the right flank, combined with Spain's fullbacks pushing high, will give them multiple avenues of attack. Spain will look to suffocate Cabo Verde with possession and press aggressively when they lose the ball.\n\nCabo Verde will need to adopt an extremely disciplined defensive approach, likely deploying a deep 5-4-1 or 5-3-2 formation to pack the defensive third and limit the spaces available to Spain's creative players. Their game plan will revolve around maintaining defensive shape for as long as possible and looking for occasional counter-attacks or set-piece opportunities. Keeping the scoreline respectable would be considered a significant achievement, while any sort of positive result would be historic.",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "4-0",
+    "confidence": 85,
+    "reasoning": "The gulf in quality between these two sides is enormous. Spain possess world-class talent in virtually every position, and their ability to dominate possession and create chances against deeper defensive blocks has been repeatedly demonstrated. Cabo Verde will struggle to contain Spain's movement and technical quality over 90 minutes.",
+    "alternativeScenario": "Cabo Verde could adopt an ultra-defensive approach and frustrate Spain for longer than expected, similar to how smaller nations occasionally produce heroic defensive displays at World Cups. If they can keep the score down in the first half, fatigue and nerves could become factors. A narrow 1-0 or 2-0 Spain win would be a moral victory for the islanders."
+  },
+  "pastEncountersSummary": "Spain and Cabo Verde have never met in a competitive international match. This World Cup encounter will be their first official meeting, making it a truly historic occasion. The two nations exist in entirely different footballing ecosystems — Spain among Europe's elite and Cabo Verde as one of Africa's smaller footballing nations — meaning their paths have simply never crossed at this level.",
+  "funFacts": [
+    "Cabo Verde has a population of approximately 600,000 — making them one of the smallest nations ever to qualify for a FIFA World Cup",
+    "Several players of Cabo Verdean descent have represented other nations, most notably Portugal's Nani, whose family originates from the islands",
+    "Spain's 7-0 victory over Costa Rica at the 2022 World Cup was the largest winning margin in the group stage of that tournament",
+    "Lamine Yamal became one of the youngest players to appear at a European Championship when he featured for Spain at Euro 2024 at age 16",
+    "Cabo Verde gained independence from Portugal in 1975 and joined FIFA in 1986, beginning their long journey to World Cup qualification"
+  ],
+  "isFirstMeeting": true
+}

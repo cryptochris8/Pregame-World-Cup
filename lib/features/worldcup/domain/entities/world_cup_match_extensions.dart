@@ -167,4 +167,16 @@ class WorldCupMatchParsers {
     if (value is int) return DateTime.fromMillisecondsSinceEpoch(value);
     return null;
   }
+
+  /// Combine separate "date" and "time" fields into a [DateTime].
+  ///
+  /// Handles the case where Firestore documents have "date": "2026-06-11"
+  /// and "time": "15:00" as separate fields instead of a combined "dateTime".
+  static DateTime? parseDateAndTime(String? date, String? time) {
+    if (date == null) return null;
+    if (time != null) {
+      return DateTime.tryParse('${date}T$time:00');
+    }
+    return DateTime.tryParse(date);
+  }
 }

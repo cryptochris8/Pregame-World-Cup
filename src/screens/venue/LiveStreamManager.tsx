@@ -19,14 +19,14 @@ const LiveStreamManager: React.FC = () => {
     bitrate: '2500 kbps'
   });
   
-  const [streamTitle, setStreamTitle] = useState('Game Day Live at Our Venue');
-  const [streamDescription, setStreamDescription] = useState('Join us for live game day atmosphere!');
+  const [streamTitle, setStreamTitle] = useState('Match Day Live at Our Venue');
+  const [streamDescription, setStreamDescription] = useState('Join us for live World Cup match atmosphere!');
   const [selectedCamera, setSelectedCamera] = useState('main');
   const [audioLevel, setAudioLevel] = useState(75);
   const [chatEnabled, setChatEnabled] = useState(true);
   
   const videoRef = useRef<HTMLVideoElement>(null);
-  const streamDurationRef = useRef<number>();
+  const streamDurationRef = useRef<ReturnType<typeof setInterval>>();
 
   // Simulate live stream stats updates
   useEffect(() => {
@@ -115,7 +115,7 @@ const LiveStreamManager: React.FC = () => {
               <img src={PregameLogo} alt="Pregame" className="h-10 w-auto mr-4" />
               <div>
                 <h1 className="text-3xl font-bold">Live Stream Manager</h1>
-                <p className="text-blue-100">Broadcast your venue's game day atmosphere</p>
+                <p className="text-blue-100">Broadcast your venue's match day atmosphere</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -359,15 +359,15 @@ const LiveStreamManager: React.FC = () => {
                   {isStreaming ? (
                     <>
                       <div className="text-sm">
-                        <span className="font-medium" style={{ color: 'var(--pregame-blue-start)' }}>GameFan2024:</span>
-                        <span className="ml-2" style={{ color: 'var(--pregame-text-light)' }}>Great atmosphere! 🏈</span>
+                        <span className="font-medium" style={{ color: 'var(--pregame-blue-start)' }}>SoccerFan2026:</span>
+                        <span className="ml-2" style={{ color: 'var(--pregame-text-light)' }}>Great atmosphere! ⚽</span>
                       </div>
                       <div className="text-sm">
-                        <span className="font-medium text-green-400">SECFan:</span>
+                        <span className="font-medium text-green-400">WorldCupFan:</span>
                         <span className="ml-2" style={{ color: 'var(--pregame-text-light)' }}>Love the energy here!</span>
                       </div>
                       <div className="text-sm">
-                        <span className="font-medium text-purple-400">TigerFan:</span>
+                        <span className="font-medium text-purple-400">PregameFan:</span>
                         <span className="ml-2" style={{ color: 'var(--pregame-text-light)' }}>What's the special today?</span>
                       </div>
                     </>

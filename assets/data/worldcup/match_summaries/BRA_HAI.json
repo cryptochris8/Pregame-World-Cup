@@ -1,0 +1,57 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "HAI",
+  "team1Name": "Brazil",
+  "team2Name": "Haiti",
+  "historicalAnalysis": "Brazil and Haiti occupy opposite ends of the footballing spectrum, yet both carry rich histories. Brazil are the most successful nation in World Cup history with five titles (1958, 1962, 1970, 1994, 2002), while Haiti's sole World Cup appearance in 1974 in West Germany remains one of the most remarkable qualification stories in CONCACAF history. That Haitian side, led by Emmanuel Sanon, stunned the world when Sanon scored against Italy's legendary goalkeeper Dino Zoff, ending his record run of 1,142 minutes without conceding an international goal.\n\nHaiti's return to the World Cup stage after more than fifty years is a moment of enormous significance for Caribbean football. The country has endured devastating natural disasters, political instability, and economic hardship, yet football has remained a source of pride and unity. Their qualification for 2026 through the expanded 48-team format represents both the growth of the tournament and the resilience of Haitian football.\n\nBrazil, meanwhile, are in the midst of a generational transition. The Seleção have not lifted the World Cup trophy since 2002, their longest drought in history. A young, talented squad led by Vinicius Jr. and Rodrygo is desperate to restore Brazil to the summit of world football. This match represents a must-win for Brazil to set the tone in Group C, while for Haiti, simply being on the same pitch as the five-time champions is a triumph in itself.",
+  "keyStorylines": [
+    "Haiti's historic return to the World Cup after 52 years, echoing their legendary 1974 campaign",
+    "Brazil's young generation seeking to end a title drought stretching back to 2002",
+    "The enormous gulf in resources and rankings between the tournament's most successful nation and one of its smallest",
+    "Emmanuel Sanon's 1974 goal against Italy as inspiration for a new generation of Haitian players",
+    "Can Haiti avoid a heavy defeat and use this match as a springboard for their remaining group games?"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Real Madrid superstar and 2024 Ballon d'Or winner, Brazil's most dangerous attacking threat"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Versatile Real Madrid forward who provides creativity and goals from multiple positions"
+    },
+    {
+      "name": "Endrick",
+      "teamCode": "BRA",
+      "position": "Forward",
+      "reason": "Teenage prodigy at Real Madrid who became Brazil's youngest World Cup squad member"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "position": "Winger",
+      "reason": "Experienced MLS winger who has been a key figure in Haiti's national team and their qualification campaign"
+    }
+  ],
+  "tacticalPreview": "Brazil will look to dominate possession and attack with width through Vinicius Jr. on the left and Raphinha or Rodrygo on the right. Their 4-2-3-1 system is built to overload opponents in wide areas before cutting inside. Expect Brazil to have the majority of the ball and create numerous chances, with the midfield of Bruno Guimaraes and Lucas Paqueta controlling the tempo.\n\nHaiti will need to adopt an ultra-defensive approach, likely sitting deep in a compact 5-4-1 or 5-3-2 formation to limit space. Their best hope is to stay organized, minimize the damage, and look for rare counter-attacking opportunities. Haiti's players will draw on the spirit of 1974, when their predecessors competed fearlessly against the world's best. Keeping the scoreline respectable would be considered a moral victory.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "4-0",
+    "confidence": 85,
+    "reasoning": "The quality gap between these two sides is enormous. Brazil have world-class talent in virtually every position, while Haiti's squad is drawn primarily from MLS and lower-tier leagues. Brazil should control this match from start to finish and score freely.",
+    "alternativeScenario": "Haiti could make it a more competitive affair if they maintain exceptional defensive discipline, potentially keeping the score to 2-0 or 3-1. An early Haitian goal on the counter-attack, echoing Sanon's 1974 strike against Italy, would be one of the great World Cup moments."
+  },
+  "pastEncountersSummary": "Brazil and Haiti have met in competitive football most notably at the 2016 Copa America Centenario, where Brazil won 7-1 in the group stage. Philippe Coutinho scored a hat-trick in that match. The two nations have had very few meetings overall given the vast difference in their footballing stature. Their 2026 World Cup encounter will be only their second significant competitive meeting.",
+  "funFacts": [
+    "Haiti's Emmanuel Sanon ended Italian goalkeeper Dino Zoff's international record of 1,142 minutes without conceding when he scored in the 1974 World Cup",
+    "Brazil have won the World Cup a record five times but have not lifted the trophy since 2002",
+    "Haiti's 2026 World Cup qualification ends a 52-year absence from the tournament, the longest return gap for any nation",
+    "Brazil beat Haiti 7-1 at the 2016 Copa America Centenario, with Philippe Coutinho scoring a hat-trick",
+    "Haiti has a population of roughly 12 million, making them one of the smallest nations by population to qualify for the expanded World Cup"
+  ],
+  "isFirstMeeting": false
+}

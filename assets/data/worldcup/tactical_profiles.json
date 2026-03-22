@@ -13,59 +13,60 @@
     ]
   },
   "profiles": {
-    "ALB": {
-      "teamCode": "ALB",
-      "teamName": "Albania",
-      "coach": "Sylvinho",
+    "ALG": {
+      "teamCode": "ALG",
+      "teamName": "Algeria",
+      "coach": "Vladimir Petković",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
-        "5-3-2"
+        "3-4-3"
       ],
-      "playingStyle": "Compact and disciplined counter-attacking side with strong Italian-influenced defensive organization and creative playmaking through Bajrami",
-      "tempoRating": "Medium",
-      "possessionStyle": "Patient build-up from the back through Asllani's distribution, transitions to 4-2-4 attacking shape with Bajrami free to roam between the lines and link midfield to attack",
-      "pressingIntensity": "Medium",
+      "playingStyle": "Possession-based with creative flair through midfield; Petković's European structure combined with North African technical quality",
+      "tempoRating": "Medium-High",
+      "possessionStyle": "Progressive and possession-oriented; Bennacer dictates tempo from central midfield, Mahrez provides creative spark",
+      "pressingIntensity": "Medium-High",
       "attackingApproach": {
-        "style": "Counter-attacking through quick transitions, wide overloads drawing defensive attention to create central spaces for Bajrami's creativity and Broja's movement",
+        "style": "Creative attacking play through Mahrez and Bennacer; wide overloads and combination play with Bounedjah as the focal striker",
         "strengths": [
-          "Bajrami's positional freedom and creativity between the lines",
-          "Wide overloads creating central space",
-          "Counter-attacking pace through Broja and Uzuni",
-          "Set pieces via Bajrami's delivery"
+          "Mahrez's world-class creativity and dribbling",
+          "Bennacer's elite midfield distribution from AC Milan",
+          "Bounedjah's proven international goal record",
+          "Technical quality across the attacking positions"
         ],
-        "primaryThreat": "Bajrami drifting from the number 10 role into half-spaces to supply Broja and Uzuni, or arriving late into the box himself",
+        "primaryThreat": "Mahrez's ability to create magic from wide positions, combined with Bennacer's progressive passing",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Compact mid-to-low block that transitions to 4-4-2 or 5-3-2 out of possession; deep defensive shape with narrow lines limiting space between the lines",
+        "style": "Organized mid-block with Bennacer shielding the back four; Mandi as the experienced center-back leader",
         "strengths": [
-          "Serie A defensive experience across the back line",
-          "Djimsiti's leadership and aerial dominance",
-          "Compact shape between the lines",
-          "Strakosha's shot-stopping"
+          "Bennacer's ball-winning ability in midfield",
+          "Mandi's experience and defensive leadership",
+          "Tactical discipline under Petković",
+          "Compact defensive shape"
         ],
-        "weakness": "Can be too passive defensively against sustained pressure; limited ability to control possession against top sides; wide areas exposed when fullbacks push forward"
+        "weakness": "Aging key players; can be exposed by pace in behind; transition defense needs improvement against top counter-attacks"
       },
       "keyTacticalFeatures": [
-        "Sylvinho's Brazilian coaching blended with Italian-league defensive discipline from 10+ Serie A players in the squad",
-        "Bajrami operates with total positional freedom, starting as a 10 but drifting into either half-space or dropping deep to create overloads",
-        "Asllani acts as the deep-lying playmaker from the base of midfield, controlling tempo and dictating build-up direction like Jorginho at Inter",
-        "Formation morphs from 4-3-3 in build-up to 2-4-4 in attacking phase, with Bajrami stepping up alongside the striker"
+        "Petković brings Swiss/European tactical structure to a technically gifted Algerian squad",
+        "Bennacer is the heartbeat of the team, controlling tempo from the base of midfield",
+        "The 2019 AFCON triumph's legacy still drives the squad's confidence",
+        "Strong French-Algerian dual-national pipeline provides European-based talent"
       ],
       "strengthsOverall": [
-        "Euro 2024 tournament experience under Sylvinho",
-        "Serie A core provides defensive discipline and tactical intelligence",
-        "Bajrami-Asllani creative axis through the middle",
-        "Strong team spirit and collective identity"
+        "World-class midfield creativity through Bennacer and Mahrez",
+        "Strong European league representation",
+        "Petković's tactical organization and tournament experience",
+        "AFCON-winning mentality and confidence"
       ],
       "weaknessesOverall": [
-        "Limited squad depth beyond the starting XI",
-        "Lack of a proven elite goalscorer",
-        "Can be too defensive and struggle to create in open play against deep blocks"
+        "Aging core from the 2019 AFCON generation",
+        "Inconsistent results since 2019 AFCON peak",
+        "Defensive vulnerabilities against elite attacks",
+        "Generational transition still in progress"
       ],
-      "attackRating": 6,
-      "defenseRating": 7,
+      "attackRating": 7,
+      "defenseRating": 6,
       "midfieldRating": 7,
       "overallTacticalRating": 6
     },
@@ -180,6 +181,63 @@
       "midfieldRating": 5,
       "overallTacticalRating": 5
     },
+    "AUT": {
+      "teamCode": "AUT",
+      "teamName": "Austria",
+      "coach": "Ralf Rangnick",
+      "preferredFormation": "4-2-2-2",
+      "alternateFormations": [
+        "4-4-2",
+        "4-2-3-1"
+      ],
+      "playingStyle": "High-intensity pressing machine under Rangnick; relentless gegenpressing with aggressive counterpressing and vertical transitions",
+      "tempoRating": "Very High",
+      "possessionStyle": "Direct and vertical; Rangnick's system prioritizes winning the ball high and attacking quickly; Laimer and Seiwald as the midfield engine",
+      "pressingIntensity": "Very High",
+      "attackingApproach": {
+        "style": "Aggressive counterpressing to win the ball high; Baumgartner providing the creative link with Arnautovic as the experienced striker",
+        "strengths": [
+          "Baumgartner's creativity and goal threat from the number 10",
+          "Arnautovic's physicality and experience",
+          "Sabitzer's box-to-box contributions and late runs",
+          "Counterpressing creating chances in dangerous areas"
+        ],
+        "primaryThreat": "Winning the ball in the opponent's half through relentless pressing and attacking through Baumgartner's creativity",
+        "setPieceRating": "Above Average"
+      },
+      "defensiveApproach": {
+        "style": "Aggressive high press with immediate counterpressing when possession is lost; back four pushes high",
+        "strengths": [
+          "Relentless pressing intensity disrupts all opponents",
+          "Laimer's elite pressing and recovery running from Real Madrid",
+          "Seiwald's ball-winning and distribution from Leipzig",
+          "Collective commitment to the pressing system"
+        ],
+        "weakness": "High defensive line vulnerable to balls in behind; pressing intensity difficult to maintain for 90 minutes; can be exploited by technical teams"
+      },
+      "keyTacticalFeatures": [
+        "Rangnick has transformed Austria into one of the most exciting pressing teams in world football",
+        "The 4-2-2-2 diamond shape maximizes central overloads and counterpressing triggers",
+        "Laimer (Real Madrid) and Seiwald (RB Leipzig) form the perfect double pivot",
+        "Euro 2024 performance (beat Netherlands, topped group) proved Austria can compete with anyone"
+      ],
+      "strengthsOverall": [
+        "Rangnick's pressing system is world-class",
+        "Bundesliga core provides tactical understanding",
+        "Euro 2024 momentum and belief",
+        "Collective identity over individual stars"
+      ],
+      "weaknessesOverall": [
+        "High line vulnerable to pace in behind",
+        "Pressing intensity can drop in the second half",
+        "Limited individual star quality compared to elite teams",
+        "Depth in the striker position is a concern"
+      ],
+      "attackRating": 7,
+      "defenseRating": 6,
+      "midfieldRating": 8,
+      "overallTacticalRating": 7
+    },
     "BEL": {
       "teamCode": "BEL",
       "teamName": "Belgium",
@@ -235,62 +293,6 @@
       "defenseRating": 6,
       "midfieldRating": 8,
       "overallTacticalRating": 7
-    },
-    "BOL": {
-      "teamCode": "BOL",
-      "teamName": "Bolivia",
-      "coach": "Oscar Villegas",
-      "preferredFormation": "4-3-3",
-      "alternateFormations": [
-        "3-4-3",
-        "4-4-2"
-      ],
-      "playingStyle": "High-energy pressing at home exploiting altitude advantage; pragmatic and direct on the road with counter-attacking transitions",
-      "tempoRating": "Medium-High",
-      "possessionStyle": "Direct and vertical; designed to press opponents into errors at altitude and transition quickly through Algaranaz and wide channels, particularly Roberto Fernandez's overlapping runs from left-back",
-      "pressingIntensity": "High",
-      "attackingApproach": {
-        "style": "High pressing to force turnovers at altitude, direct transitions through Algaranaz as the focal striker, Fernandez providing attacking width from left-back or as a makeshift winger",
-        "strengths": [
-          "Altitude-powered pressing intensity at home",
-          "Algaranaz's goal threat and hold-up play",
-          "Roberto Fernandez's attacking versatility from left-back",
-          "Villegas' aggressive tactical mindset"
-        ],
-        "primaryThreat": "High press forcing errors in the thin air of El Alto (4,090m), followed by quick vertical transitions to Algaranaz",
-        "setPieceRating": "Average"
-      },
-      "defensiveApproach": {
-        "style": "Aggressive high press at home that transitions to a compact mid-block away; relies on altitude-induced fatigue to reduce opponent quality in possession",
-        "strengths": [
-          "Altitude advantage at El Alto is devastating for visitors",
-          "High pressing intensity when playing at home",
-          "Collective commitment and work rate"
-        ],
-        "weakness": "Massive drop in performance away from altitude; individual quality gap against top sides; defensive errors under sustained technical pressure at sea level"
-      },
-      "keyTacticalFeatures": [
-        "Villegas moved Bolivia's home venue to El Alto (4,090m), the highest city in the world, creating a fortress that defeated Brazil 1-0 and Colombia",
-        "Shifted from previous 4-2-3-1 to an aggressive 4-3-3 and occasionally 3-4-3 to maximize pressing at altitude",
-        "Roberto Fernandez operates as a hybrid left-back/left-winger, providing attacking width and crossing quality",
-        "Bolivia are effectively two different teams: aggressive and dominant at altitude, cautious and vulnerable at sea level"
-      ],
-      "strengthsOverall": [
-        "Altitude advantage creates a genuine home fortress",
-        "Villegas transformed Bolivia's mentality from perennial losers to competitors",
-        "Collective work rate and pressing intensity",
-        "Historic victories over Brazil and Colombia in qualifying"
-      ],
-      "weaknessesOverall": [
-        "Dramatic performance drop away from altitude",
-        "Very limited individual quality compared to most World Cup opponents",
-        "No World Cup since 1994; inexperience at this level",
-        "All World Cup matches will be at sea level in North America"
-      ],
-      "attackRating": 4,
-      "defenseRating": 4,
-      "midfieldRating": 5,
-      "overallTacticalRating": 4
     },
     "BRA": {
       "teamCode": "BRA",
@@ -403,117 +405,118 @@
       "midfieldRating": 6,
       "overallTacticalRating": 6
     },
-    "CHI": {
-      "teamCode": "CHI",
-      "teamName": "Chile",
-      "coach": "Ricardo Gareca",
+    "CIV": {
+      "teamCode": "CIV",
+      "teamName": "Ivory Coast",
+      "coach": "Emerse Faé",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
         "4-4-2"
       ],
-      "playingStyle": "Structured possession play with tactical discipline, combining controlled build-up with smart risk-taking in the final third",
-      "tempoRating": "Medium",
-      "possessionStyle": "Patient and controlled build-up through the midfield three, meticulous video analysis-driven patterns, seeking to dominate through positional play rather than individual brilliance",
-      "pressingIntensity": "Medium",
-      "attackingApproach": {
-        "style": "Controlled attacking patterns through central midfield, Alexis Sanchez as the focal point in a false nine role, width from fullbacks rather than traditional wingers",
-        "strengths": [
-          "Alexis Sanchez's experience and intelligence in the final third",
-          "Midfield technical quality through Echeverria and Davila",
-          "Set piece threat from experienced players",
-          "Gareca's meticulous tactical preparation"
-        ],
-        "primaryThreat": "Alexis Sanchez dropping deep to link play and create numerical advantages in midfield, with late runners arriving from deeper positions",
-        "setPieceRating": "Above Average"
-      },
-      "defensiveApproach": {
-        "style": "Compact 4-3-3 that drops into a 4-5-1 defensive block out of possession; emphasis on positional discipline and closing central passing lanes",
-        "strengths": [
-          "Tactical discipline under Gareca",
-          "Experienced defensive core",
-          "Compact midfield shape limiting space between the lines"
-        ],
-        "weakness": "Aging squad lacks pace to recover when the defensive line is breached; generational transition means reduced individual quality compared to the golden era"
-      },
-      "keyTacticalFeatures": [
-        "Gareca shifted Chile from 4-2-3-1 to 4-3-3, creating different passing lines with three in midfield and three up front",
-        "Meticulous video analysis and simple tactical instructions allow players to execute under pressure",
-        "Alexis Sanchez deployed as a lone striker but operates more as a false nine, creating space for runners",
-        "Chile are in a generational transition, blending experienced leaders (Sanchez, Bravo) with younger talents"
-      ],
-      "strengthsOverall": [
-        "Gareca's elite tactical preparation and South American experience",
-        "Technical midfield quality",
-        "Tournament pedigree from Copa America-winning generation",
-        "Tactical flexibility to adapt game-by-game"
-      ],
-      "weaknessesOverall": [
-        "Aging core with declining physical capacity",
-        "Generational transition has reduced overall squad quality",
-        "Lack of a reliable goalscorer beyond Sanchez",
-        "Struggled to win consistently in qualifying"
-      ],
-      "attackRating": 5,
-      "defenseRating": 5,
-      "midfieldRating": 6,
-      "overallTacticalRating": 5
-    },
-    "CMR": {
-      "teamCode": "CMR",
-      "teamName": "Cameroon",
-      "coach": "Marc Brys",
-      "preferredFormation": "3-4-3",
-      "alternateFormations": [
-        "4-3-3",
-        "3-5-2"
-      ],
-      "playingStyle": "Athletic and powerful with European tactical structure; back-three system designed to maximize key players in their club roles",
+      "playingStyle": "Technically gifted and attack-minded with elite individual talent; AFCON 2023 champions with renewed confidence under Faé",
       "tempoRating": "Medium-High",
-      "possessionStyle": "Progressive build-up through a back three of Castelletto, Ngadeu, and Nouhou Tolo, with Anguissa and Baleba controlling central midfield and distributing to wide attackers",
+      "possessionStyle": "Progressive and creative through midfield; Kessié controls tempo centrally while Haller and Pépé provide directness",
       "pressingIntensity": "Medium-High",
       "attackingApproach": {
-        "style": "Mbeumo as the primary creative and goal threat from a wide or inside-forward position, Anguissa driving forward from midfield, wing-backs providing width and delivery",
+        "style": "Pace-driven attack through Pépé and wide forwards cutting inside; Haller as the focal striker with Kessié arriving from deep",
         "strengths": [
-          "Mbeumo's Premier League quality as a creator and finisher",
-          "Anguissa's box-to-box power and technical quality",
-          "Physical dominance and pace across the front line",
-          "Onana's distribution initiating attacks from the back"
+          "Sébastien Haller's aerial presence and finishing",
+          "Nicolas Pépé's direct dribbling and goal threat",
+          "Kessié's box-to-box power and late runs",
+          "AFCON-winning confidence and momentum"
         ],
-        "primaryThreat": "Mbeumo cutting inside from the right to shoot or create, supported by Anguissa's surging runs from midfield",
+        "primaryThreat": "Haller's hold-up play creating space for runners, with Pépé cutting inside from the right",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Back three provides numerical advantage in defense, with Castelletto-Ngadeu-Nouhou Tolo replicating a system they previously played under Conceicao; Anguissa and Baleba screen in front",
+        "style": "Compact mid-block with Kessié providing midfield screening; Bailly and Deli as the center-back partnership",
         "strengths": [
-          "Onana's world-class goalkeeping and commanding presence",
-          "Experienced back three with familiarity in the system",
-          "Anguissa and Baleba as a physical midfield shield",
-          "Aerial dominance from set pieces"
+          "Kessié's ball-winning ability in midfield",
+          "Physical and athletic defensive unit",
+          "Experience from AFCON 2023 triumph",
+          "Collective defensive commitment"
         ],
-        "weakness": "Organizational lapses and internal turmoil have disrupted cohesion; wing-back areas vulnerable when pushed high; inconsistency in concentration levels"
+        "weakness": "Defensive concentration lapses; can be exposed by quick transitions; individual errors under high-intensity pressure"
       },
       "keyTacticalFeatures": [
-        "Brys designed the 3-4-3 system to replicate club environments: Anguissa in Napoli's 3-defender shape, Mbeumo in Brentford's interchangeable front line",
-        "Onana's distribution from goal is a genuine tactical weapon, allowing Cameroon to play out from the back",
-        "Baleba and Anguissa form a physical and technically accomplished double pivot that dominates central midfield",
-        "The Indomitable Lions' greatest asset is individual quality scattered across Europe's top leagues"
+        "Faé took over mid-AFCON 2023 and led Ivory Coast to an improbable home-tournament triumph",
+        "The AFCON 2023 victory transformed the squad's mentality and self-belief",
+        "Kessié operates as the midfield engine combining defensive screening with box-to-box attacking",
+        "European-based attacking talent provides genuine quality in the final third"
       ],
       "strengthsOverall": [
-        "Elite individual talent: Onana, Anguissa, Mbeumo are world-class in their positions",
-        "Physical power and athleticism across the squad",
-        "European tactical structure under Brys",
-        "Strong AFCON pedigree and tournament experience"
+        "AFCON 2023 champions with winning mentality",
+        "Strong European league representation in attack",
+        "Faé's ability to galvanize the squad",
+        "Physical power and athleticism"
       ],
       "weaknessesOverall": [
-        "Internal politics and federation chaos have undermined team cohesion",
-        "Inconsistency in defensive concentration",
-        "Reliance on individual moments rather than collective patterns",
-        "Coaching instability and squad selection controversies"
+        "Defensive reliability remains a concern",
+        "Reliance on individual brilliance over system play",
+        "Aging key players in some positions",
+        "Limited World Cup pedigree in the current squad"
       ],
       "attackRating": 7,
-      "defenseRating": 6,
-      "midfieldRating": 7,
+      "defenseRating": 5,
+      "midfieldRating": 6,
+      "overallTacticalRating": 6
+    },
+    "COD": {
+      "teamCode": "COD",
+      "teamName": "DR Congo",
+      "coach": "Sébastien Desabre",
+      "preferredFormation": "4-3-3",
+      "alternateFormations": [
+        "4-2-3-1",
+        "3-5-2"
+      ],
+      "playingStyle": "Athletic and direct with explosive pace on the flanks; Desabre brings French-influenced tactical structure to a squad rich in individual talent from European leagues",
+      "tempoRating": "Medium-High",
+      "possessionStyle": "Progressive and vertical build-up through midfield; designed to get the ball quickly to wide attackers with Bakambu and Wissa providing goal threat",
+      "pressingIntensity": "Medium",
+      "attackingApproach": {
+        "style": "Pace-driven wing play with Bakambu and Wissa providing goal threat; Kakuta creating from midfield",
+        "strengths": [
+          "Bakambu's experienced movement and finishing",
+          "Wissa's Premier League quality and directness",
+          "Kakuta's creativity and set piece delivery",
+          "Physical presence and aerial threat"
+        ],
+        "primaryThreat": "Bakambu's intelligent runs in behind combined with Wissa's direct running and Kakuta's creative passing",
+        "setPieceRating": "Above Average"
+      },
+      "defensiveApproach": {
+        "style": "Compact mid-block with Mbemba marshaling the back line; physical and aggressive in duels",
+        "strengths": [
+          "Mbemba's experience and leadership at center-back",
+          "Physical and athletic defensive presence",
+          "Collective defensive commitment",
+          "Aggressive pressing in midfield areas"
+        ],
+        "weakness": "Defensive concentration lapses; limited cohesion due to players spread across many European leagues; can be exposed by quick counter-attacks"
+      },
+      "keyTacticalFeatures": [
+        "Desabre brings structured French coaching methodology to maximize DR Congo's raw athletic talent",
+        "Bakambu and Wissa form a dangerous attacking partnership combining experience and Premier League quality",
+        "Kakuta operates as the creative hub linking midfield to attack",
+        "AFCON semi-final run in 2024 provided crucial tournament experience and belief"
+      ],
+      "strengthsOverall": [
+        "Explosive athleticism and pace across the squad",
+        "Strong European league representation",
+        "AFCON 2024 semi-final experience",
+        "Desabre's tactical organization and structure"
+      ],
+      "weaknessesOverall": [
+        "Limited squad cohesion due to scattered club bases",
+        "Inconsistent defensive concentration",
+        "No World Cup experience since 1974",
+        "Depth beyond key players drops significantly"
+      ],
+      "attackRating": 6,
+      "defenseRating": 5,
+      "midfieldRating": 6,
       "overallTacticalRating": 6
     },
     "COL": {
@@ -572,62 +575,62 @@
       "midfieldRating": 7,
       "overallTacticalRating": 7
     },
-    "CRC": {
-      "teamCode": "CRC",
-      "teamName": "Costa Rica",
-      "coach": "Claudio Vivas",
+    "CPV": {
+      "teamCode": "CPV",
+      "teamName": "Cabo Verde",
+      "coach": "Bubista",
       "preferredFormation": "4-4-2",
       "alternateFormations": [
-        "5-3-2",
-        "4-2-3-1"
+        "4-5-1",
+        "5-3-2"
       ],
-      "playingStyle": "Defensively organized with veteran leadership; pragmatic approach built on experience and tactical discipline typical of CONCACAF competition",
+      "playingStyle": "Pragmatic and defensively disciplined island nation football; emphasis on collective organization, set pieces, and counter-attacking",
       "tempoRating": "Medium-Low",
-      "possessionStyle": "Patient build-up through experienced midfielders, emphasis on retaining shape and not overcommitting; controlled tempo through Celso Borges and central midfield",
-      "pressingIntensity": "Medium-Low",
+      "possessionStyle": "Direct and functional; limited possession focus with emphasis on quick transitions and set pieces",
+      "pressingIntensity": "Low-Medium",
       "attackingApproach": {
-        "style": "Joel Campbell and Manfred Ugalde providing goal threat; combination play through midfield with crosses and set pieces as key weapons",
+        "style": "Counter-attacking through pace; set pieces and crosses as primary creative outlets; Portuguese-league based players for quality",
         "strengths": [
-          "Joel Campbell's experience and intelligence in the final third",
-          "Ugalde's movement and finishing from central areas",
-          "Set piece delivery from experienced players",
-          "Tactical discipline in attacking transitions"
+          "Set piece aerial threat from tall defenders",
+          "Counter-attacking pace from wide areas",
+          "Portuguese and French league players providing quality",
+          "Collective determination and work rate"
         ],
-        "primaryThreat": "Ugalde's movement in the box combined with Campbell's creativity and crosses from wide areas; set piece situations",
+        "primaryThreat": "Set piece situations and counter-attacking transitions through players based in Portuguese and French leagues",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Compact defensive block that can morph into a back five; well-drilled positional discipline limiting space through the middle; veteran defenders provide organization",
+        "style": "Deep, compact defensive block; two banks of four designed to limit space and frustrate opponents",
         "strengths": [
-          "Keylor Navas' World Cup experience and shot-stopping quality",
           "Defensive organization and compactness",
-          "Veteran leadership from Waston and Borges",
-          "CONCACAF physicality in duels"
+          "Physical aerial presence",
+          "Collective commitment and team spirit",
+          "Experience in competitive CAF qualifying"
         ],
-        "weakness": "Aging squad lacks pace to defend against quick transitions; limited ability to press high against technical teams; depth beyond experienced core is thin"
+        "weakness": "Individual quality gap against top-level opposition; limited depth and squad size; can be worn down by sustained pressure"
       },
       "keyTacticalFeatures": [
-        "Vivas inherited a team built on the legacy of the 2014 World Cup quarter-final run, with several veterans still contributing",
-        "Costa Rica's strength lies in defensive structure, using a compact 4-4-2 that can transition to 5-3-2 to absorb pressure",
-        "Keylor Navas remains a genuine difference-maker in goal, capable of producing world-class saves to keep Costa Rica in matches",
-        "The team's CONCACAF experience means they are comfortable in physical, attritional matches with limited possession"
+        "Bubista has built a competitive team from a nation of just 600,000 people, drawing from the Portuguese diaspora",
+        "Portuguese dual-national pipeline provides the majority of squad talent",
+        "Defensive organization is the foundation; Cabo Verde aim to frustrate and capitalize on set pieces",
+        "CAF qualifying group winners ahead of Cameroon demonstrates competitive quality"
       ],
       "strengthsOverall": [
-        "World Cup pedigree from 2014 and 2022 campaigns",
-        "Defensive organization and tactical discipline",
-        "Keylor Navas in goal",
-        "Experienced squad knows how to compete at major tournaments"
+        "Exceptional overachievement from a tiny island nation",
+        "Portuguese diaspora provides European-based talent",
+        "Strong defensive organization under Bubista",
+        "CAF qualifying group winners - proven competitive quality"
       ],
       "weaknessesOverall": [
-        "Aging core squad with declining physical capacity",
-        "Very limited creative options in open play",
-        "Squad depth is extremely thin",
-        "Generational transition has not been completed"
+        "Very small player pool limits depth",
+        "Individual quality gap against most World Cup opponents",
+        "First World Cup appearance - no tournament experience",
+        "Limited attacking creativity and goalscoring"
       ],
       "attackRating": 4,
-      "defenseRating": 6,
-      "midfieldRating": 5,
-      "overallTacticalRating": 5
+      "defenseRating": 5,
+      "midfieldRating": 4,
+      "overallTacticalRating": 4
     },
     "CRO": {
       "teamCode": "CRO",
@@ -683,6 +686,63 @@
       "defenseRating": 7,
       "midfieldRating": 9,
       "overallTacticalRating": 8
+    },
+    "CUR": {
+      "teamCode": "CUR",
+      "teamName": "Curaçao",
+      "coach": "Dick Advocaat",
+      "preferredFormation": "4-3-3",
+      "alternateFormations": [
+        "4-5-1",
+        "5-3-2"
+      ],
+      "playingStyle": "Defensively organized with Dutch tactical influence under Advocaat; relies on counter-attacking and set pieces",
+      "tempoRating": "Medium-Low",
+      "possessionStyle": "Patient and conservative; Advocaat's Dutch coaching brings structure but limited individual quality means possession is often yielded",
+      "pressingIntensity": "Low-Medium",
+      "attackingApproach": {
+        "style": "Counter-attacking through quick transitions; reliance on set pieces and dual-national quality from Netherlands",
+        "strengths": [
+          "Bacuna brothers' European experience and quality",
+          "Set piece aerial threat",
+          "Counter-attacking pace from wide areas",
+          "Advocaat's tactical preparation for specific opponents"
+        ],
+        "primaryThreat": "Counter-attacking transitions and set piece situations; Bacuna's creativity from midfield",
+        "setPieceRating": "Average"
+      },
+      "defensiveApproach": {
+        "style": "Deep, compact defensive block with two banks of four; Advocaat prioritizes defensive solidity above all",
+        "strengths": [
+          "Defensive organization under experienced coach Advocaat",
+          "Compact shape limiting space through the middle",
+          "Collective commitment and work rate",
+          "Physical presence in aerial duels"
+        ],
+        "weakness": "Significant quality gap against World Cup-level attackers; limited depth; can be overwhelmed by sustained pressure"
+      },
+      "keyTacticalFeatures": [
+        "Advocaat's appointment brought elite European coaching experience to a small-island nation",
+        "The Dutch connection provides a pipeline of dual-national players from the Netherlands",
+        "Defensive organization is the primary weapon; Curaçao aim to frustrate and hit on the break",
+        "Historic first World Cup qualification provides extraordinary motivation"
+      ],
+      "strengthsOverall": [
+        "Advocaat's elite coaching experience",
+        "Dutch dual-national player pipeline",
+        "Historic motivation from first World Cup appearance",
+        "Strong team spirit and collective identity"
+      ],
+      "weaknessesOverall": [
+        "Massive individual quality gap against most opponents",
+        "Very small player pool and limited depth",
+        "No World Cup experience whatsoever",
+        "Domestic league provides low competitive standard"
+      ],
+      "attackRating": 3,
+      "defenseRating": 4,
+      "midfieldRating": 4,
+      "overallTacticalRating": 4
     },
     "DEN": {
       "teamCode": "DEN",
@@ -1075,62 +1135,119 @@
       "midfieldRating": 9,
       "overallTacticalRating": 8
     },
-    "HON": {
-      "teamCode": "HON",
-      "teamName": "Honduras",
-      "coach": "Reinaldo Rueda",
+    "GHA": {
+      "teamCode": "GHA",
+      "teamName": "Ghana",
+      "coach": "Otto Addo",
       "preferredFormation": "4-2-3-1",
       "alternateFormations": [
-        "4-4-1-1",
-        "4-4-2"
+        "4-3-3",
+        "3-5-2"
       ],
-      "playingStyle": "Organized and physically imposing with direct attacking transitions through pacy wide players; solid defensive structure with aggressive midfield pressing",
-      "tempoRating": "Medium",
-      "possessionStyle": "Direct and functional; build-up designed to progress the ball quickly to Luis Palma and Quioto in wide areas, with an emphasis on dominating possession through midfield intensity",
+      "playingStyle": "Athletic and direct with explosive pace across the front line; European tactical structure from Addo combined with traditional Ghanaian flair",
+      "tempoRating": "Medium-High",
+      "possessionStyle": "Direct and progressive; quick transitions from defense to attack through Kudus in wide areas",
       "pressingIntensity": "Medium-High",
       "attackingApproach": {
-        "style": "Luis Palma as the primary creative threat from the right wing, Quioto providing experience and directness from the left or as a second striker, vertical transitions exploiting opposition defensive transitions",
+        "style": "Mohammed Kudus as the creative hub with pace and directness from wide positions; Ayew offering experience as striker",
         "strengths": [
-          "Luis Palma's European-level quality and goal contributions from wide areas",
-          "Quioto's experience and physical presence",
-          "Direct attacking transitions through pacy wide players",
-          "Set piece aerial threat"
+          "Mohammed Kudus' world-class creativity and dribbling",
+          "Athletic pace across the front line",
+          "Jordan Ayew's experience and intelligent movement",
+          "Set piece threat through aerial presence"
         ],
-        "primaryThreat": "Luis Palma cutting inside from the right to create or score, supported by Quioto's movement and Lozano's hold-up play centrally",
+        "primaryThreat": "Kudus cutting inside or driving forward from the number 10 position, creating for runners or shooting from distance",
+        "setPieceRating": "Above Average"
+      },
+      "defensiveApproach": {
+        "style": "Aggressive mid-block with emphasis on winning the ball and transitioning quickly; Partey anchors the midfield",
+        "strengths": [
+          "Thomas Partey's world-class midfield presence from Arsenal",
+          "Athletic and pacy defenders",
+          "Collective defensive commitment",
+          "Physical presence in aerial and ground duels"
+        ],
+        "weakness": "Defensive concentration lapses; can be disorganized when pressed high; individual errors under sustained technical pressure"
+      },
+      "keyTacticalFeatures": [
+        "Addo's German-Ghanaian background provides a unique blend of European structure and African flair",
+        "Mohammed Kudus is the star player and everything flows through his creativity",
+        "Thomas Partey provides the Arsenal-level defensive midfield quality",
+        "Ghana's dual-national recruiting from Europe has boosted squad quality significantly"
+      ],
+      "strengthsOverall": [
+        "Mohammed Kudus as a genuine world-class talent",
+        "Thomas Partey's midfield quality",
+        "Explosive athleticism and pace",
+        "Rich World Cup history and tournament experience"
+      ],
+      "weaknessesOverall": [
+        "Defensive inconsistency and concentration issues",
+        "Over-reliance on key individuals",
+        "Squad harmony and dual-national integration challenges",
+        "Inconsistent results in recent tournaments"
+      ],
+      "attackRating": 7,
+      "defenseRating": 5,
+      "midfieldRating": 7,
+      "overallTacticalRating": 6
+    },
+    "HAI": {
+      "teamCode": "HAI",
+      "teamName": "Haiti",
+      "coach": "TBD",
+      "preferredFormation": "4-4-2",
+      "alternateFormations": [
+        "4-5-1",
+        "5-4-1"
+      ],
+      "playingStyle": "Pragmatic and defensively compact; relies on collective organization, physical athleticism, and counter-attacking transitions",
+      "tempoRating": "Medium-Low",
+      "possessionStyle": "Direct and functional; limited possession with quick transitions forward through pace and directness",
+      "pressingIntensity": "Low-Medium",
+      "attackingApproach": {
+        "style": "Counter-attacking through pace and directness; relying on set pieces and individual moments",
+        "strengths": [
+          "Athletic and pacy attackers on the counter",
+          "Set piece aerial threat",
+          "MLS-based players providing competitive standard",
+          "Collective determination and spirit"
+        ],
+        "primaryThreat": "Counter-attacking transitions through pacy wide players and set piece situations",
         "setPieceRating": "Average"
       },
       "defensiveApproach": {
-        "style": "Organized mid-block with Julian Martinez anchoring the back line; Arriaga and Flores providing midfield screening in front of the defense",
+        "style": "Deep defensive block absorbing pressure; two compact banks of four limiting space",
         "strengths": [
-          "Defensive organization under experienced Colombian coach Rueda",
-          "Julian Martinez's defensive leadership",
+          "Collective defensive commitment and organization",
           "Physical presence in aerial duels",
-          "Collective defensive commitment"
+          "Compact defensive shape",
+          "Team unity and resilience"
         ],
-        "weakness": "Midfield can lack stability in extended possession phases; defensive errors under sustained technical pressure; limited quality in depth positions"
+        "weakness": "Significant individual quality gap against World Cup-level attackers; limited defensive depth; can be overwhelmed by sustained technical pressure"
       },
       "keyTacticalFeatures": [
-        "Reinaldo Rueda, an experienced Colombian coach with World Cup pedigree (Ecuador 2006, Honduras 2014), brings tactical structure and professionalism",
-        "Luis Palma's development at Celtic and Olympiacos provides genuine European-level quality on the right wing",
-        "Denil Maldonado captains the team and provides organizational leadership from center-back",
-        "Honduras rely on physical intensity and direct transitions rather than elaborate possession play"
+        "Haiti's strength lies in collective spirit and defensive organization rather than individual star power",
+        "MLS and lower-division European league players form the core of the squad",
+        "Counter-attacking transitions and set pieces are the primary attacking weapons",
+        "CONCACAF qualifying experience has hardened the squad for competitive football"
       ],
       "strengthsOverall": [
-        "Rueda's World Cup experience and tactical organization",
-        "Luis Palma as a genuine quality difference-maker",
-        "Physical presence and CONCACAF competitiveness",
-        "Motivated squad seeking to return after missing 2018 and 2022"
+        "Historic World Cup qualification provides massive motivation",
+        "Strong team spirit and collective identity",
+        "Athletic and physically competitive",
+        "CONCACAF qualifying resilience"
       ],
       "weaknessesOverall": [
-        "Limited technical quality in midfield to control games",
-        "Depth beyond the starting XI is thin",
-        "Inconsistency in away performances",
-        "Reliance on a few key individuals for creative output"
+        "Massive quality gap against most World Cup opponents",
+        "Very limited squad depth and individual talent",
+        "No World Cup experience since 1974",
+        "Coaching uncertainty"
       ],
-      "attackRating": 5,
-      "defenseRating": 5,
-      "midfieldRating": 5,
-      "overallTacticalRating": 5
+      "attackRating": 3,
+      "defenseRating": 4,
+      "midfieldRating": 4,
+      "overallTacticalRating": 4
     },
     "IDN": {
       "teamCode": "IDN",
@@ -1244,6 +1361,63 @@
       "midfieldRating": 5,
       "overallTacticalRating": 6
     },
+    "IRQ": {
+      "teamCode": "IRQ",
+      "teamName": "Iraq",
+      "coach": "Jesús Casas",
+      "preferredFormation": "4-2-3-1",
+      "alternateFormations": [
+        "4-3-3",
+        "4-4-2"
+      ],
+      "playingStyle": "Technically proficient Middle Eastern football with emphasis on possession and creative midfield play; passionate and competitive",
+      "tempoRating": "Medium",
+      "possessionStyle": "Patient build-up through midfield with technical quality; Ali Adnan and Mohanad Ali provide creativity and goal threat",
+      "pressingIntensity": "Medium",
+      "attackingApproach": {
+        "style": "Creative midfield play feeding Mohanad Ali as the primary goal threat; set pieces and technical quality through the middle",
+        "strengths": [
+          "Mohanad Ali's pace and finishing ability",
+          "Technical midfield quality",
+          "Set piece delivery and organization",
+          "Ali Adnan's attacking contributions from left-back"
+        ],
+        "primaryThreat": "Mohanad Ali's runs in behind combined with creative service from midfield playmakers",
+        "setPieceRating": "Above Average"
+      },
+      "defensiveApproach": {
+        "style": "Organized mid-block with emphasis on collective discipline; double pivot providing midfield screening",
+        "strengths": [
+          "Collective defensive commitment",
+          "Physical presence in midfield duels",
+          "Organized defensive structure",
+          "Strong home record in qualifying"
+        ],
+        "weakness": "Limited exposure to elite European-level attackers; defensive depth is thin; can be overwhelmed by high-intensity pressing"
+      },
+      "keyTacticalFeatures": [
+        "Casas brings Spanish coaching methodology to a technically gifted Iraqi squad",
+        "Iraq qualified through AFC play-offs, showing resilience and competitive spirit",
+        "The 2007 Asian Cup triumph remains a source of national inspiration and belief",
+        "Domestic league core supplemented by Gulf-based players provides squad cohesion"
+      ],
+      "strengthsOverall": [
+        "Technical quality in midfield",
+        "Strong national team identity and passionate support",
+        "AFC playoff-hardened competitive mentality",
+        "Casas' structured Spanish coaching approach"
+      ],
+      "weaknessesOverall": [
+        "Limited squad depth and individual quality at the highest level",
+        "Very few players in top European leagues",
+        "No World Cup appearance since 1986",
+        "Inconsistency in results against stronger opposition"
+      ],
+      "attackRating": 5,
+      "defenseRating": 5,
+      "midfieldRating": 5,
+      "overallTacticalRating": 5
+    },
     "ITA": {
       "teamCode": "ITA",
       "teamName": "Italy",
@@ -1301,60 +1475,60 @@
       "midfieldRating": 8,
       "overallTacticalRating": 8
     },
-    "JAM": {
-      "teamCode": "JAM",
-      "teamName": "Jamaica",
-      "coach": "Heimir Hallgrimsson",
-      "preferredFormation": "4-3-3",
+    "JOR": {
+      "teamCode": "JOR",
+      "teamName": "Jordan",
+      "coach": "Hussein Ammouta",
+      "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-4-2",
-        "4-2-3-1"
+        "5-3-2"
       ],
-      "playingStyle": "Athletically explosive with European tactical organization; leveraging dual-national talent from England's top leagues to play structured, direct football",
-      "tempoRating": "Medium-High",
-      "possessionStyle": "Direct and progressive; build-up aims to get the ball quickly to dangerous wide players, particularly Leon Bailey, with dual-national talent providing technical quality through the spine",
+      "playingStyle": "Defensively disciplined with emphasis on organization and counter-attacking; builds on Jordan's 2024 Asian Cup final run",
+      "tempoRating": "Medium-Low",
+      "possessionStyle": "Patient and conservative; emphasis on maintaining shape and not overcommitting before counter-attacking opportunities",
       "pressingIntensity": "Medium",
       "attackingApproach": {
-        "style": "Bailey's pace and dribbling as the primary attacking weapon from the left, Nicholson providing aerial presence and hold-up play centrally, Gray creating from the right or through the middle",
+        "style": "Counter-attacking through quick transitions; Al-Tamari as the primary creative outlet with Yazan Al-Naimat providing the goal threat",
         "strengths": [
-          "Leon Bailey's electric pace and dribbling from Aston Villa",
-          "Demarai Gray's creativity and Premier League experience",
-          "Shamar Nicholson's aerial threat and physicality",
-          "Explosive athleticism across the front line"
+          "Al-Tamari's creativity and European experience",
+          "Yazan Al-Naimat's movement and finishing",
+          "Set piece organization and aerial threat",
+          "Counter-attacking efficiency"
         ],
-        "primaryThreat": "Leon Bailey isolating defenders one-on-one on the left wing, cutting inside to shoot or delivering crosses to Nicholson in the box",
-        "setPieceRating": "Average"
+        "primaryThreat": "Al-Tamari's creativity from the number 10 position combined with quick counter-attacks",
+        "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Organized mid-block that can transition to a deep 4-4-2 against stronger opponents; emphasis on compactness and using physicality to win aerial and ground duels",
+        "style": "Compact mid-to-low block with disciplined defensive lines; absorbs pressure and defends in numbers",
         "strengths": [
-          "Ethan Pinnock's Premier League defensive quality",
-          "Andre Blake's outstanding goalkeeping",
-          "Physical and athletic defensive presence",
-          "Hallgrimsson's organized defensive structure"
+          "Defensive organization and tactical discipline",
+          "Physical presence in defensive duels",
+          "Strong collective commitment",
+          "Asian Cup 2024 final experience"
         ],
-        "weakness": "Inconsistent defensive concentration; quality gap in full-back positions; limited cohesion as dual-national players have limited time together"
+        "weakness": "Limited individual quality against world-class attackers; can be too passive; depth beyond the starting XI drops significantly"
       },
       "keyTacticalFeatures": [
-        "Hallgrimsson's Icelandic tactical discipline applied to Jamaica's raw athleticism creates a unique blend of structure and explosiveness",
-        "The dual-national pipeline from England provides Premier League quality: Bailey, Gray, Pinnock, Antonio, and others",
-        "Andre Blake is one of the best goalkeepers in CONCACAF and a genuine match-winner in knockout situations",
-        "Jamaica's challenge is limited squad cohesion as many players have spent most of their careers representing other youth national teams"
+        "Ammouta builds on the momentum from Jordan's historic 2024 Asian Cup final appearance",
+        "The team's strength is collective organization rather than individual star power",
+        "Al-Tamari provides the creative spark that makes counter-attacks effective",
+        "Asian Cup 2024 run proved Jordan can compete with and beat highly-ranked teams"
       ],
       "strengthsOverall": [
-        "Premier League-quality individuals across key positions",
-        "Raw athleticism and pace are elite",
-        "Hallgrimsson's proven ability to organize underdogs (Iceland Euro 2016)",
-        "Andre Blake as a world-class goalkeeper"
+        "2024 Asian Cup finalists - proven tournament pedigree",
+        "Strong defensive organization under Ammouta",
+        "Collective team spirit and national identity",
+        "Al-Tamari as a creative difference-maker"
       ],
       "weaknessesOverall": [
-        "Limited squad cohesion and international chemistry",
-        "Depth beyond the dual-national starters drops dramatically",
-        "No World Cup experience since 1998",
-        "Inconsistency in competitive matches despite talent on paper"
+        "Limited individual quality at the highest level",
+        "Very few players in top European leagues",
+        "First World Cup appearance - no tournament experience",
+        "Can struggle to create against organized defenses"
       ],
-      "attackRating": 6,
-      "defenseRating": 5,
+      "attackRating": 5,
+      "defenseRating": 6,
       "midfieldRating": 5,
       "overallTacticalRating": 5
     },
@@ -1469,6 +1643,63 @@
       "defenseRating": 7,
       "midfieldRating": 6,
       "overallTacticalRating": 7
+    },
+    "KSA": {
+      "teamCode": "KSA",
+      "teamName": "Saudi Arabia",
+      "coach": "Roberto Mancini",
+      "preferredFormation": "4-3-3",
+      "alternateFormations": [
+        "4-2-3-1",
+        "4-4-2"
+      ],
+      "playingStyle": "Structured Italian-influenced possession play with emphasis on tactical discipline; transitioning from counter-attacking to a more proactive system under Mancini",
+      "tempoRating": "Medium",
+      "possessionStyle": "Mancini has implemented a more possession-oriented approach; build-up through Kanno and Al-Faraj in midfield with Saud Abdulhamid providing European-level quality at right-back",
+      "pressingIntensity": "Medium",
+      "attackingApproach": {
+        "style": "Salem Al-Dawsari's creativity and dribbling from the left, Al-Buraikan's pace centrally, with overlapping runs from fullbacks",
+        "strengths": [
+          "Salem Al-Dawsari's big-game creativity and dribbling",
+          "Al-Buraikan's pace and directness",
+          "Set piece organization",
+          "Fullback overlapping runs providing width"
+        ],
+        "primaryThreat": "Salem Al-Dawsari's ability to create moments of magic, as demonstrated against Argentina in Qatar 2022",
+        "setPieceRating": "Average"
+      },
+      "defensiveApproach": {
+        "style": "Mancini's Italian defensive discipline with a compact mid-block; Kanno shielding as the holding midfielder",
+        "strengths": [
+          "Tactical discipline instilled by Mancini",
+          "Compact defensive shape",
+          "Kanno's ball-winning ability in midfield",
+          "Al-Owais's shot-stopping"
+        ],
+        "weakness": "Domestic-only defensive squad lacks exposure to elite attackers; individual errors under high pressure; pace deficit against world-class wingers"
+      },
+      "keyTacticalFeatures": [
+        "Mancini brought Italian tactical structure but has struggled to fully implement his vision with a domestically-based squad",
+        "Saudi Pro League's investment in foreign stars means domestic players train alongside elite company",
+        "Saud Abdulhamid at Roma is the only European-based outfield player, providing crucial tactical education",
+        "The 2022 World Cup victory over Argentina provides massive psychological confidence and belief"
+      ],
+      "strengthsOverall": [
+        "Mancini's elite coaching pedigree",
+        "2022 World Cup giant-killing mentality",
+        "Strong team chemistry from domestic league cohesion",
+        "Home confederation advantage from Asian Cup experience"
+      ],
+      "weaknessesOverall": [
+        "Almost entirely domestic league-based squad",
+        "Quality gap against European and South American opposition",
+        "Mancini's coaching tenure has had mixed results",
+        "Aging core players from 2022 cycle"
+      ],
+      "attackRating": 5,
+      "defenseRating": 5,
+      "midfieldRating": 5,
+      "overallTacticalRating": 5
     },
     "MAR": {
       "teamCode": "MAR",
@@ -1636,63 +1867,6 @@
       "defenseRating": 7,
       "midfieldRating": 8,
       "overallTacticalRating": 8
-    },
-    "NGA": {
-      "teamCode": "NGA",
-      "teamName": "Nigeria",
-      "coach": "Eric Chelle",
-      "preferredFormation": "4-3-3",
-      "alternateFormations": [
-        "4-2-3-1",
-        "3-5-2"
-      ],
-      "playingStyle": "Athletic and direct with explosive pace on the flanks and a world-class striker spearheading the attack",
-      "tempoRating": "High",
-      "possessionStyle": "Progressive and vertical; build-up through Iwobi and Ndidi in central areas, with rapid switches to wide attackers Lookman and Chukwueze",
-      "pressingIntensity": "Medium-High",
-      "attackingApproach": {
-        "style": "Pace-driven wing play feeding Osimhen centrally, with Lookman and Chukwueze providing inverted wide threats and Boniface as a dynamic secondary striker option",
-        "strengths": [
-          "Osimhen's elite movement and finishing",
-          "Lookman's dribbling and creativity from the left",
-          "Chukwueze's direct running on the right",
-          "Physical presence and aerial threat from set pieces"
-        ],
-        "primaryThreat": "Osimhen's relentless runs in behind and aerial dominance, complemented by Lookman cutting inside from the left flank",
-        "setPieceRating": "Strong"
-      },
-      "defensiveApproach": {
-        "style": "Aggressive mid-block with Ndidi as the midfield destroyer screening the back four; Aina and Sanusi provide recovery pace from fullback",
-        "strengths": [
-          "Ndidi's ball-winning ability in midfield",
-          "Bassey's pace and physicality at center-back",
-          "Athletic fullbacks who recover quickly",
-          "Physical aerial dominance"
-        ],
-        "weakness": "Defensive concentration lapses; can be disorganized when pressed high and forced into quick decision-making at the back"
-      },
-      "keyTacticalFeatures": [
-        "Chelle has built around Osimhen as the focal point with service from Lookman and Chukwueze as inverted wingers",
-        "Iwobi operates as the creative hub in midfield, linking defense to attack with progressive passing",
-        "Ndidi provides the defensive shield that allows the front three freedom to press and attack",
-        "Premier League core (Iwobi, Bassey, Aina, Onyeka, Awoniyi) provides tactical discipline and physical intensity"
-      ],
-      "strengthsOverall": [
-        "World-class striker in Osimhen",
-        "Explosive pace across the front line",
-        "Strong Premier League and Serie A representation",
-        "Physical dominance and aerial threat"
-      ],
-      "weaknessesOverall": [
-        "Defensive lapses under sustained pressure",
-        "Over-reliance on individual brilliance rather than system play",
-        "Goalkeeper position lacks elite-level depth",
-        "Coaching transition under Chelle still bedding in"
-      ],
-      "attackRating": 8,
-      "defenseRating": 6,
-      "midfieldRating": 7,
-      "overallTacticalRating": 7
     },
     "NOR": {
       "teamCode": "NOR",
@@ -1918,120 +2092,6 @@
       "midfieldRating": 5,
       "overallTacticalRating": 5
     },
-    "PER": {
-      "teamCode": "PER",
-      "teamName": "Peru",
-      "coach": "Jorge Fossati",
-      "preferredFormation": "3-5-2",
-      "alternateFormations": [
-        "4-4-2",
-        "5-3-2"
-      ],
-      "playingStyle": "Compact and disciplined defensive block with emphasis on structure, experience, and counter-attacking transitions",
-      "tempoRating": "Medium-Low",
-      "possessionStyle": "Patient and conservative; Fossati prioritizes defensive solidity and controlled build-up through Tapia and Yotun in central midfield, rarely committing numbers forward recklessly",
-      "pressingIntensity": "Low",
-      "attackingApproach": {
-        "style": "Counter-attacking through the experience of Lapadula and Guerrero, with Cueva providing creative spark from the number 10 position and Quispe as the emerging talent",
-        "strengths": [
-          "Lapadula's intelligent movement and finishing",
-          "Cueva's creative passing and set piece delivery",
-          "Experienced strike partnership understanding",
-          "Quispe's emerging creative talent"
-        ],
-        "primaryThreat": "Lapadula's movement between the lines and Cueva's through balls on the counter-attack",
-        "setPieceRating": "Above Average"
-      },
-      "defensiveApproach": {
-        "style": "Deep, compact 5-3-2 block out of possession with three experienced center-backs and Tapia as the midfield shield; willing to absorb pressure and defend for long periods",
-        "strengths": [
-          "Defensive organization and discipline",
-          "Gallese's shot-stopping ability",
-          "Experienced defensive unit with international pedigree",
-          "Tapia's screening in front of the defense"
-        ],
-        "weakness": "Lack of pace across the backline; aging squad struggles to sustain defensive intensity for 90 minutes against high-caliber opposition"
-      },
-      "keyTacticalFeatures": [
-        "Fossati's Uruguayan pragmatism has installed a disciplined 3-5-2/5-3-2 system prioritizing defensive solidity",
-        "Tapia operates as the midfield anchor, protecting the back three and distributing to wide areas",
-        "Wing-backs Advincula and Lopez provide the width and are the primary source of attacking thrust",
-        "Cueva and Quispe alternate as the creative fulcrum behind the strikers, providing the only real creative spark"
-      ],
-      "strengthsOverall": [
-        "Exceptional defensive organization",
-        "Tournament experience from 2018 World Cup cycle",
-        "Strong team spirit and collective identity",
-        "Fossati's tactical discipline"
-      ],
-      "weaknessesOverall": [
-        "Aging squad with limited athleticism",
-        "Very low goal-scoring output",
-        "Lack of individual quality compared to most World Cup teams",
-        "Heavy reliance on domestic league players"
-      ],
-      "attackRating": 4,
-      "defenseRating": 6,
-      "midfieldRating": 5,
-      "overallTacticalRating": 5
-    },
-    "POL": {
-      "teamCode": "POL",
-      "teamName": "Poland",
-      "coach": "Michal Probierz",
-      "preferredFormation": "3-5-2",
-      "alternateFormations": [
-        "4-4-2",
-        "3-4-3"
-      ],
-      "playingStyle": "Structured build-up play through midfield with Lewandowski as the focal point; Probierz encourages more possession and creative freedom than predecessors",
-      "tempoRating": "Medium",
-      "possessionStyle": "Controlled possession through Zielinski as the metronome in central midfield, building patiently before accelerating through the final third to find Lewandowski",
-      "pressingIntensity": "Medium",
-      "attackingApproach": {
-        "style": "Channel everything through Lewandowski's elite positioning and finishing; Zielinski and Szymanski provide creative service, Zalewski offers dynamic runs from wing-back",
-        "strengths": [
-          "Lewandowski's world-class finishing and positioning",
-          "Zielinski's creativity and passing range from midfield",
-          "Szymanski's link-up play between the lines",
-          "Set piece threat through Lewandowski's aerial ability"
-        ],
-        "primaryThreat": "Lewandowski's movement inside the box and Zielinski's ability to find him with incisive through balls",
-        "setPieceRating": "Strong"
-      },
-      "defensiveApproach": {
-        "style": "Three center-backs (Kiwior, Bednarek, Walukiewicz) with wing-backs providing width; compact mid-block with Moder screening in front of the defense",
-        "strengths": [
-          "Experienced defensive core",
-          "Szczesny's big-game experience in goal",
-          "Kiwior's composure on the ball from center-back",
-          "Physical presence in defensive duels"
-        ],
-        "weakness": "Wing-back areas can be exploited when pushed back; pace deficit against top-tier attackers; Lewandowski's declining pressing contribution leaves the team front-to-back disconnected"
-      },
-      "keyTacticalFeatures": [
-        "Probierz has implemented a more attacking 3-5-2 system that gives Zielinski creative license to roam",
-        "Lewandowski's age (37) means he conserves energy for the penalty area, requiring midfield to do more running",
-        "Zalewski's dual nationality and Roma experience make him the ideal modern wing-back on the left flank",
-        "Urbanski represents the emerging next generation, providing energy and technical quality off the bench"
-      ],
-      "strengthsOverall": [
-        "Lewandowski remains an elite finisher",
-        "Strong midfield creativity through Zielinski",
-        "Good mix of experience and emerging talent",
-        "Probierz has improved team identity and attacking intent"
-      ],
-      "weaknessesOverall": [
-        "Over-dependence on aging Lewandowski",
-        "Inconsistent defensive record against top teams",
-        "Wing-back depth is limited",
-        "Historical underperformance at World Cups"
-      ],
-      "attackRating": 7,
-      "defenseRating": 6,
-      "midfieldRating": 7,
-      "overallTacticalRating": 7
-    },
     "POR": {
       "teamCode": "POR",
       "teamName": "Portugal",
@@ -2143,62 +2203,119 @@
       "midfieldRating": 5,
       "overallTacticalRating": 5
     },
-    "SAU": {
-      "teamCode": "SAU",
-      "teamName": "Saudi Arabia",
-      "coach": "Roberto Mancini",
+    "RSA": {
+      "teamCode": "RSA",
+      "teamName": "South Africa",
+      "coach": "Hugo Broos",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
-        "4-4-2"
+        "3-4-3"
       ],
-      "playingStyle": "Structured Italian-influenced possession play with emphasis on tactical discipline; transitioning from counter-attacking to a more proactive system under Mancini",
-      "tempoRating": "Medium",
-      "possessionStyle": "Mancini has implemented a more possession-oriented approach compared to Renard's direct style; build-up through Kanno and Al-Faraj in midfield with Saud Abdulhamid providing European-level quality at right-back",
-      "pressingIntensity": "Medium",
+      "playingStyle": "Energetic and youthful pressing side under Broos; emphasis on high-tempo transitions and aggressive pressing",
+      "tempoRating": "Medium-High",
+      "possessionStyle": "Direct and progressive; quick build-up through Mokoena in midfield with rapid transitions to wide attackers Tau and Zwane",
+      "pressingIntensity": "High",
       "attackingApproach": {
-        "style": "Salem Al-Dawsari's creativity and dribbling from the left, Al-Buraikan's pace centrally, with overlapping runs from Saud Abdulhamid and Yasser Al-Shahrani",
+        "style": "Wide attacking play through Tau and Zwane with Shalulile as the focal striker",
         "strengths": [
-          "Salem Al-Dawsari's big-game creativity and dribbling",
-          "Al-Buraikan's pace and directness",
-          "Set piece organization",
-          "Fullback overlapping runs providing width"
+          "Percy Tau's experience and creativity from the wing",
+          "Zwane's direct dribbling and pace",
+          "Shalulile's consistent goal-scoring record domestically",
+          "Set piece threat from experienced players"
         ],
-        "primaryThreat": "Salem Al-Dawsari's ability to create moments of magic, as demonstrated against Argentina in Qatar 2022",
-        "setPieceRating": "Average"
+        "primaryThreat": "Percy Tau cutting inside from the right to create or score, with Zwane providing direct running on the opposite flank",
+        "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Mancini's Italian defensive discipline with a compact mid-block; Al-Bulaihi and Al-Amri provide physical presence, with Kanno shielding as the holding midfielder",
+        "style": "Aggressive high press that transitions to a compact mid-block; young and athletic defenders provide recovery pace",
         "strengths": [
-          "Tactical discipline instilled by Mancini",
-          "Compact defensive shape",
-          "Kanno's ball-winning ability in midfield",
-          "Al-Owais's shot-stopping"
+          "Ronwen Williams' outstanding goalkeeping and shot-stopping",
+          "Young, athletic defensive unit",
+          "High pressing intensity disrupting opponents",
+          "Collective commitment and work rate"
         ],
-        "weakness": "Domestic-only defensive squad lacks exposure to elite attackers; individual errors under high pressure; pace deficit against world-class wingers"
+        "weakness": "Inexperience at the highest level; individual quality gap against elite opposition; can be too aggressive pressing and leave space in behind"
       },
       "keyTacticalFeatures": [
-        "Mancini brought Italian tactical structure but has struggled to fully implement his vision with a domestically-based squad",
-        "Saudi Pro League's investment in foreign stars means the domestic players train alongside elite company but aren't themselves playing at the highest club level",
-        "Saud Abdulhamid at Roma is the only European-based outfield player, providing crucial tactical education",
-        "The 2022 World Cup victory over Argentina provides massive psychological confidence and belief"
+        "Broos completely rebuilt Bafana Bafana with young players, dropping the old guard",
+        "Ronwen Williams is one of Africa's best goalkeepers and a genuine match-winner",
+        "The 4-3-3 pressing system is designed to suffocate opponents and win the ball high",
+        "AFCON 2024 third-place finish restored national confidence and provided tournament experience"
       ],
       "strengthsOverall": [
-        "Mancini's elite coaching pedigree",
-        "2022 World Cup giant-killing mentality",
-        "Strong team chemistry from domestic league cohesion",
-        "Home confederation advantage from Asian Cup experience"
+        "Ronwen Williams as a world-class goalkeeper",
+        "Youthful energy and pressing intensity",
+        "AFCON 2024 tournament experience",
+        "Broos' successful squad overhaul and team identity"
       ],
       "weaknessesOverall": [
-        "Almost entirely domestic league-based squad",
-        "Quality gap against European and South American opposition",
-        "Mancini's coaching tenure has had mixed results",
-        "Aging core players from 2022 cycle"
+        "Limited individual quality compared to top World Cup teams",
+        "Squad largely based in domestic league",
+        "Inexperience at World Cup level",
+        "Lack of a proven elite goalscorer"
       ],
       "attackRating": 5,
-      "defenseRating": 5,
-      "midfieldRating": 5,
+      "defenseRating": 6,
+      "midfieldRating": 6,
       "overallTacticalRating": 5
+    },
+    "SCO": {
+      "teamCode": "SCO",
+      "teamName": "Scotland",
+      "coach": "Steve Clarke",
+      "preferredFormation": "3-5-2",
+      "alternateFormations": [
+        "5-4-1",
+        "3-4-3"
+      ],
+      "playingStyle": "Organized and disciplined defensive structure with wing-backs providing width; Clarke's pragmatic approach prioritizes solidity and set pieces",
+      "tempoRating": "Medium",
+      "possessionStyle": "Patient build-up through the back three with McTominay driving forward from midfield; wing-backs Robertson and Patterson provide width",
+      "pressingIntensity": "Medium",
+      "attackingApproach": {
+        "style": "McTominay's box-to-box runs providing the primary goal threat from midfield; Robertson's delivery from the left",
+        "strengths": [
+          "McTominay's elite box-to-box goal contributions",
+          "Andy Robertson's world-class delivery from left wing-back",
+          "Set piece threat through aerial presence",
+          "Adams' intelligent movement and hold-up play"
+        ],
+        "primaryThreat": "McTominay arriving late into the box from midfield combined with Robertson's crossing delivery",
+        "setPieceRating": "Strong"
+      },
+      "defensiveApproach": {
+        "style": "Deep, compact 5-3-2 block out of possession with three experienced center-backs",
+        "strengths": [
+          "Defensive organization and discipline under Clarke",
+          "Tierney, Hendry, and McKenna as experienced center-back trio",
+          "Physical aerial dominance from set pieces",
+          "Gunn's shot-stopping ability in goal"
+        ],
+        "weakness": "Limited creative quality in open play; can be too passive against sustained pressure; lack of pace in the defensive line"
+      },
+      "keyTacticalFeatures": [
+        "Clarke's 3-5-2 is built on defensive organization with Robertson and Patterson as the primary attacking weapons from wing-back",
+        "McTominay operates as the most advanced midfielder, arriving into the box like a second striker",
+        "The back three of Tierney, Hendry, and McKenna provides Premier League-level defensive quality",
+        "Scotland qualified for Euro 2024 and have grown as a tournament team under Clarke's management"
+      ],
+      "strengthsOverall": [
+        "McTominay as a genuine world-class midfielder",
+        "Andy Robertson's delivery and leadership",
+        "Strong defensive organization under Clarke",
+        "Tournament experience from Euro 2024"
+      ],
+      "weaknessesOverall": [
+        "Limited attacking creativity beyond McTominay",
+        "Lack of a proven elite goalscorer",
+        "Can be too defensive and struggle to create against deep blocks",
+        "Squad depth thins significantly beyond the starting XI"
+      ],
+      "attackRating": 5,
+      "defenseRating": 7,
+      "midfieldRating": 7,
+      "overallTacticalRating": 6
     },
     "SEN": {
       "teamCode": "SEN",
@@ -2257,63 +2374,6 @@
       "midfieldRating": 6,
       "overallTacticalRating": 6
     },
-    "SRB": {
-      "teamCode": "SRB",
-      "teamName": "Serbia",
-      "coach": "Dragan Stojkovic",
-      "preferredFormation": "3-4-2-1",
-      "alternateFormations": [
-        "3-5-2",
-        "4-2-3-1"
-      ],
-      "playingStyle": "Technically gifted and attack-minded with elite individual talent in forward positions; Stojkovic encourages creative freedom and aggressive attacking play",
-      "tempoRating": "Medium-High",
-      "possessionStyle": "Creative and forward-thinking; Milinkovic-Savic dictates tempo from central midfield, Tadic orchestrates in the final third, and the system is designed to supply the strikers with quality service",
-      "pressingIntensity": "Medium",
-      "attackingApproach": {
-        "style": "Dual striker threat with Vlahovic and Mitrovic providing different but complementary profiles; Tadic as the creative number 10 and Kostic delivering from the left",
-        "strengths": [
-          "Vlahovic's power and finishing ability",
-          "Mitrovic's aerial dominance and positioning",
-          "Tadic's creative vision and passing",
-          "Kostic's crossing delivery from the left flank"
-        ],
-        "primaryThreat": "Vlahovic's lethal finishing inside the box and the Tadic-to-Mitrovic/Vlahovic connection through creative service",
-        "setPieceRating": "Strong"
-      },
-      "defensiveApproach": {
-        "style": "Three-at-the-back with Milenkovic as the anchor; Pavlovic's aggression and pace provide the modern defender profile; Gudelj screens in front",
-        "strengths": [
-          "Milenkovic's experience and aerial presence",
-          "Pavlovic's pace and aggressive defending",
-          "Physical defensive unit",
-          "Petrovic's emerging quality in goal"
-        ],
-        "weakness": "Defensive concentration issues; exposed in wide areas when wing-backs push forward; tendency to concede from counter-attacks due to attacking commitment"
-      },
-      "keyTacticalFeatures": [
-        "Stojkovic's 3-4-2-1 maximizes Serbia's attacking talent by playing both Vlahovic and Mitrovic with Tadic behind",
-        "Sergej Milinkovic-Savic provides the complete midfield profile: creativity, physicality, box-to-box energy, and goal threat",
-        "Kostic's delivery from the left wing-back position is a primary creative weapon for crosses into the box",
-        "Ivan Ilic provides a technically gifted alternative in midfield with his left-footed passing range"
-      ],
-      "strengthsOverall": [
-        "Elite attacking talent across the front line",
-        "Sergej Milinkovic-Savic's world-class midfield presence",
-        "Strong aerial threat from multiple players",
-        "Stojkovic's attacking philosophy creates entertainment and goals"
-      ],
-      "weaknessesOverall": [
-        "Defensive vulnerabilities when pushed back",
-        "Wing-back areas exposed in transition",
-        "Squad harmony has been an issue in recent tournaments",
-        "Lack of a clear defensive identity"
-      ],
-      "attackRating": 8,
-      "defenseRating": 6,
-      "midfieldRating": 7,
-      "overallTacticalRating": 7
-    },
     "SUI": {
       "teamCode": "SUI",
       "teamName": "Switzerland",
@@ -2370,119 +2430,62 @@
       "midfieldRating": 7,
       "overallTacticalRating": 7
     },
-    "SVN": {
-      "teamCode": "SVN",
-      "teamName": "Slovenia",
-      "coach": "Matjaz Kek",
-      "preferredFormation": "4-4-2",
+    "TUN": {
+      "teamCode": "TUN",
+      "teamName": "Tunisia",
+      "coach": "Faouzi Benzarti",
+      "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
-        "4-5-1"
+        "4-4-2"
       ],
-      "playingStyle": "Organized and disciplined defensive structure built around world-class goalkeeper Oblak, with Sesko providing the primary attacking outlet on the counter",
-      "tempoRating": "Medium-Low",
-      "possessionStyle": "Pragmatic and structured; Gnezda Cerin and Elsnik control central midfield tempo with short passing, while Kek prioritizes positional discipline over creative risk-taking",
+      "playingStyle": "Defensively disciplined North African side with strong tactical identity; compact shape and efficient counter-attacking",
+      "tempoRating": "Medium",
+      "possessionStyle": "Patient and controlled build-up through midfield; Skhiri dictates tempo centrally with emphasis on keeping possession",
       "pressingIntensity": "Medium",
       "attackingApproach": {
-        "style": "Direct service to Sesko as the spearhead, with Sporar or Vipotnik as the secondary striker; transitions through Lovric and Gnezda Cerin feeding the channels",
+        "style": "Counter-attacking through creativity and direct running; Skhiri arriving from midfield and set piece situations",
         "strengths": [
-          "Sesko's pace, power, and finishing as a genuine world-class threat",
-          "Set piece delivery and aerial presence",
-          "Efficient counter-attacking through Sesko's runs in behind",
-          "Gnezda Cerin's progressive passing from midfield"
+          "Skhiri's Bundesliga-level midfield quality",
+          "Msakni's direct dribbling and pace",
+          "Set piece organization and delivery",
+          "Technical quality through the midfield"
         ],
-        "primaryThreat": "Benjamin Sesko's explosive pace, physicality, and clinical finishing make him one of the most dangerous strikers at the tournament",
+        "primaryThreat": "Counter-attacking transitions through Msakni's pace combined with Skhiri's progressive passing",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Compact and deep defensive block with Oblak providing an elite last line of defense; Bijol marshals the backline with Kek's emphasis on collective discipline",
+        "style": "Compact mid-to-low block with well-organized defensive lines; experienced center-back partnership",
         "strengths": [
-          "Jan Oblak is a top-5 goalkeeper in world football",
-          "Bijol's commanding presence at center-back",
-          "Collective defensive discipline and organization",
-          "Difficult to break down in low-block situations"
+          "Defensive organization and tactical discipline",
+          "Bronn's leadership and aerial presence",
+          "Compact midfield shape limiting space",
+          "World Cup experience from 2018 and 2022"
         ],
-        "weakness": "Limited recovery pace in the defensive line; under sustained pressure the quality gap shows; fullback positions lack depth and top-level quality"
+        "weakness": "Limited attacking creativity against deep blocks; aging core in some positions; can struggle to score when opponents sit back"
       },
       "keyTacticalFeatures": [
-        "Kek has built the entire system around two pillars: Oblak's goalkeeping and Sesko's goal-scoring ability",
-        "The 4-4-2 provides defensive stability with two banks of four, transitioning quickly to release Sesko in behind",
-        "Gnezda Cerin is the midfield engine: pressing, passing, and covering ground to compensate for limited quality elsewhere",
-        "Euro 2024 experience (drew with England, Denmark, and Serbia) proved Slovenia can compete with elite teams through organization"
+        "Benzarti brings decades of North African and Tunisian football knowledge",
+        "Tunisia's defensive discipline is their trademark; they are extremely difficult to break down",
+        "Skhiri is the heartbeat of the team, controlling tempo and providing the link",
+        "World Cup experience from 2018 and 2022 gives the squad tournament know-how"
       ],
       "strengthsOverall": [
-        "World-class goalkeeper in Oblak",
-        "Sesko as a genuine match-winner",
-        "Exceptional defensive organization under Kek",
-        "Recent tournament experience from Euro 2024"
+        "Defensive organization is among the best in Africa",
+        "World Cup experience from recent tournaments",
+        "Technical quality in central midfield",
+        "Strong team identity and spirit"
       ],
       "weaknessesOverall": [
-        "Very limited squad depth beyond key players",
-        "Lack of creative quality in wide areas",
-        "Over-reliance on Oblak-Sesko axis",
-        "Small nation pool limits replacement options"
+        "Limited goalscoring output",
+        "Aging core in several positions",
+        "Lack of a proven world-class attacker",
+        "Can be too cautious in approach"
       ],
-      "attackRating": 6,
+      "attackRating": 5,
       "defenseRating": 7,
-      "midfieldRating": 5,
+      "midfieldRating": 6,
       "overallTacticalRating": 6
-    },
-    "TRI": {
-      "teamCode": "TRI",
-      "teamName": "Trinidad and Tobago",
-      "coach": "Angus Eve",
-      "preferredFormation": "4-4-2",
-      "alternateFormations": [
-        "4-5-1",
-        "4-3-3"
-      ],
-      "playingStyle": "Energetic and committed Caribbean football with emphasis on pace, directness, and collective effort; pragmatic defensive organization against stronger opponents",
-      "tempoRating": "Medium",
-      "possessionStyle": "Direct and functional; limited time on the ball with quick transitions forward through Levi Garcia and the attacking players; reliance on set pieces and individual moments",
-      "pressingIntensity": "Medium",
-      "attackingApproach": {
-        "style": "Direct and pace-driven with Levi Garcia as the primary creative outlet on the left wing; Molino provides experience and guile in the number 10 role; Obikwu and Sealy offer young striker energy",
-        "strengths": [
-          "Levi Garcia's pace and directness from the wing",
-          "Molino's experience and creativity",
-          "Set piece aerial threat from tall defenders",
-          "Young emerging talent (Cardines, Obikwu, Sealy) adds energy"
-        ],
-        "primaryThreat": "Levi Garcia's direct running and crossing from the left, combined with set piece situations",
-        "setPieceRating": "Average"
-      },
-      "defensiveApproach": {
-        "style": "Deep defensive block absorbing pressure; two compact banks of four with Hyland providing midfield protection; willing to defend in numbers and hit on the break",
-        "strengths": [
-          "Collective defensive commitment",
-          "Aubrey David's leadership and experience at center-back",
-          "Joevin Jones' defensive discipline from left-back",
-          "Team spirit and unity"
-        ],
-        "weakness": "Significant individual quality gap against World Cup-level attackers; limited defensive depth; domestic league players not accustomed to sustained world-class pressure"
-      },
-      "keyTacticalFeatures": [
-        "Eve has built a team on collective spirit and organization rather than individual star quality",
-        "Levi Garcia is the key creative outlet and the player everything flows through in attack",
-        "The MLS contingent (Fortune, Frederick, Spicer, Sealy) provides the highest club-level experience in the squad",
-        "First World Cup since 2006 - the historic achievement drives extraordinary motivation and togetherness"
-      ],
-      "strengthsOverall": [
-        "Historic achievement provides massive motivation",
-        "Strong team spirit and collective identity",
-        "Emerging young talent with MLS exposure",
-        "Caribbean pace and athleticism"
-      ],
-      "weaknessesOverall": [
-        "Massive quality gap against most opponents",
-        "Very limited squad depth and individual quality",
-        "Domestic league base provides low competitive standard",
-        "No recent World Cup experience in the squad"
-      ],
-      "attackRating": 3,
-      "defenseRating": 4,
-      "midfieldRating": 4,
-      "overallTacticalRating": 4
     },
     "TUR": {
       "teamCode": "TUR",

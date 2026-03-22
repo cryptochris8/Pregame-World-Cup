@@ -1,0 +1,21 @@
+{
+  "id": "manager_hai",
+  "firstName": "Sébastien",
+  "lastName": "Migné",
+  "commonName": "Sébastien Migné",
+  "dateOfBirth": "1972-11-30",
+  "nationality": "France",
+  "currentTeam": "Haiti",
+  "currentTeamCode": "HAI",
+  "photoUrl": "assets/managers/migne.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 18,
+  "previousTeams": ["Congo NT", "Kenya NT", "Equatorial Guinea NT", "Cameroon NT (assistant)", "Oman NT (assistant)"],
+  "trophies": ["Persian Gulf Cup (Oman, assistant)"],
+  "careerWins": 55,
+  "careerDraws": 35,
+  "careerLosses": 40,
+  "careerWinPercentage": 42,
+  "bio": "French manager who took charge of Haiti in 2024 and guided them to their second-ever World Cup qualification despite never setting foot on the island due to ongoing unrest. Previously managed Kenya at the 2019 AFCON and has extensive experience across African football."
+}

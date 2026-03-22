@@ -1,0 +1,56 @@
+{
+  "team1Code": "CUR",
+  "team2Code": "ECU",
+  "team1Name": "Curaçao",
+  "team2Name": "Ecuador",
+  "historicalAnalysis": "This match pits World Cup debutants Curaçao against one of South America's most consistent qualifiers in recent decades. Ecuador have appeared at four World Cups (2002, 2006, 2014, 2022) and have steadily established themselves as a force in South American football, a remarkable achievement given the strength of CONMEBOL qualifying. Curaçao, a small Caribbean island with a population of approximately 150,000, are experiencing the greatest moment in their football history simply by being at this tournament.\n\nEcuador's World Cup pedigree is built on a strong foundation of emerging talent. Their 2002 debut under Hernán Darío Gómez saw them compete admirably, and by 2006 they had reached the Round of 16 for the first and only time. At the 2022 World Cup in Qatar, Enner Valencia scored in a commanding opening-day victory over the hosts before Ecuador were narrowly eliminated after the group stage. The current squad may be their most talented ever, with Moisés Caicedo anchoring Chelsea's midfield, Piero Hincapié starring at Bayer Leverkusen, and teenage sensation Kendry Páez emerging as one of the most exciting prospects in world football.\n\nCuraçao's journey to the World Cup has been one of football's great underdog stories. As a constituent country of the Kingdom of the Netherlands, many of their players have Dutch heritage and have been developed through the Dutch football system. Their qualification through CONCACAF was a monumental achievement for a nation of their size, and every match at the 2026 World Cup will be a celebration for their people regardless of the result.",
+  "keyStorylines": [
+    "Curaçao's historic World Cup debut against an experienced South American side",
+    "Ecuador looking to use their World Cup experience to secure a comfortable victory",
+    "The contrast between Ecuador's established stars and Curaçao's part-time and lower-league players",
+    "Can Curaçao's Dutch-influenced football style cause Ecuador problems?",
+    "A potential must-win match for both teams depending on earlier Group E results"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Chelsea's record signing and Ecuador's captain, one of the best defensive midfielders in world football"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "position": "Midfielder",
+      "reason": "The most experienced player in Curaçao's squad, with Premier League and Championship experience at Huddersfield and Rangers"
+    },
+    {
+      "name": "Kendry Páez",
+      "teamCode": "ECU",
+      "position": "Midfielder",
+      "reason": "Teenage sensation tipped as one of South America's brightest emerging talents"
+    },
+    {
+      "name": "Elson Hooi",
+      "teamCode": "CUR",
+      "position": "Forward",
+      "reason": "Experienced forward who has been one of Curaçao's most important players in their qualifying campaign"
+    }
+  ],
+  "tacticalPreview": "Ecuador will look to control this match through possession and tempo, with Caicedo dictating play from deep midfield. Their 4-4-2 system allows for patient build-up through Hincapié at the back, with wide players providing pace and crosses. Ecuador will aim to create overloads in wide areas and use their superior technical quality to break down Curaçao's defensive block. Set pieces will be another key avenue of attack given the likely physical and height advantage.\n\nCuraçao will need to be supremely organized and disciplined to stay in this match. A low defensive block in a 5-4-1 or 4-5-1 formation, with compact lines and quick counter-attacks, represents their best chance. Their Dutch coaching influence means they are comfortable on the ball when given time, but against Ecuador's press they will need to be efficient in transition. Long balls to hold-up forwards and set pieces could provide rare opportunities to trouble Ecuador's defense.",
+  "prediction": {
+    "predictedOutcome": "ECU",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "Ecuador's quality advantage is substantial across every position. Their World Cup experience, superior technical ability, and the individual brilliance of players like Caicedo and Páez should lead to a comfortable victory against World Cup debutants.",
+    "alternativeScenario": "If Curaçao can keep the match tight through the first half hour, the occasion and pressure on Ecuador could create nerves. A disciplined Curaçao performance could limit Ecuador to a narrow 1-0 or 2-0 win."
+  },
+  "pastEncountersSummary": "These two nations have never met in any competitive or meaningful friendly fixture. This will be their first encounter, taking place on the biggest stage in world football.",
+  "funFacts": [
+    "Curaçao's entire population of approximately 150,000 is smaller than the capacity of many of the world's largest football stadiums",
+    "Ecuador's Enner Valencia has scored in every World Cup he has appeared at, with 6 goals across the 2014 and 2022 tournaments",
+    "Curaçao only became a separate FIFA member in 2010, previously competing as part of the Netherlands Antilles",
+    "Ecuador's home ground in Quito sits at 2,850 meters above sea level, giving them one of the most extreme home advantages in world football"
+  ],
+  "isFirstMeeting": true
+}

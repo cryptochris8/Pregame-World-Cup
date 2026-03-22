@@ -1,0 +1,39 @@
+{
+  "id": "ALG_JOR",
+  "team1Code": "ALG",
+  "team2Code": "JOR",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 4,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2023-03-28",
+  "firstMeeting": "2014-01-11",
+  "notableMatches": [
+    {
+      "year": 2023,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "ALG",
+      "location": "Algiers, Algeria",
+      "description": "Algeria comfortably beat Jordan in international friendly"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Blida, Algeria",
+      "description": "Algeria and Jordan share the spoils in first-ever meeting"
+    }
+  ]
+}

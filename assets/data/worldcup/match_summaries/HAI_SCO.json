@@ -1,0 +1,57 @@
+{
+  "team1Code": "HAI",
+  "team2Code": "SCO",
+  "team1Name": "Haiti",
+  "team2Name": "Scotland",
+  "historicalAnalysis": "Haiti and Scotland meet in what is almost certainly a first-ever competitive encounter between these two nations. Both carry unique World Cup narratives that add layers of meaning to this fixture. Scotland are one of football's oldest international teams, having played in the very first international match in 1872, yet they have never advanced beyond the World Cup group stage in eight previous appearances. Haiti, meanwhile, are making only their second World Cup appearance, 52 years after their sole previous qualification in 1974.\n\nScotland's World Cup history is a tale of agonizing near-misses. In 1974, they went unbeaten but were eliminated on goal difference. In 1978, they famously beat the Netherlands 3-2 but were already eliminated. In 1982 and 1986, they were knocked out in the group stage by a single goal. The pattern of heartbreak has defined Scottish football for generations, and the 2026 World Cup represents perhaps their best chance to break the cycle with a strong squad featuring Premier League regulars.\n\nHaiti's 1974 World Cup campaign, while ending with three group-stage defeats, produced one of the tournament's most celebrated moments when Emmanuel Sanon scored against Italy. For a tiny Caribbean nation devastated by poverty and natural disasters, football has served as an enduring source of national pride. Their 2026 qualification is a testament to the expanded tournament format and to the development of football across the CONCACAF region.",
+  "keyStorylines": [
+    "Scotland's desperate pursuit of a first-ever World Cup group stage advancement after eight failed attempts",
+    "Haiti's fairytale return to the World Cup stage after a 52-year absence",
+    "Two nations with vastly different footballing resources but equally passionate fan bases",
+    "Scotland treating this as a must-win to have any chance of progressing from a group containing Brazil and Morocco",
+    "Haiti looking to channel the spirit of their 1974 pioneers and produce a memorable result"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Scott McTominay",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Napoli midfielder whose box-to-box energy and goal-scoring ability from midfield make him Scotland's most important outfield player"
+    },
+    {
+      "name": "Andrew Robertson",
+      "teamCode": "SCO",
+      "position": "Left-Back",
+      "reason": "Liverpool captain who provides leadership, experience, and attacking quality from the left side"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "position": "Winger",
+      "reason": "MLS-based attacker who leads Haiti's forward line with pace and direct running"
+    },
+    {
+      "name": "Billy Gilmour",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Napoli's technically gifted midfielder who controls the tempo and provides Scotland with passing quality in the middle of the park"
+    }
+  ],
+  "tacticalPreview": "Scotland under Steve Clarke will set up in their familiar 3-5-2 or 5-4-1 system, though against Haiti they may push higher and adopt a more attacking posture than they would against Brazil or Morocco. McTominay will be encouraged to make late runs into the box, while Robertson will push forward from left wing-back. Scotland's physicality and aerial presence from set pieces could be a decisive advantage.\n\nHaiti will again look to be compact and difficult to break down, but they may show more attacking ambition than in their matches against Brazil and Morocco. A low block with quick transitions could trouble Scotland if the Scots become impatient. Haiti's pace on the wings and willingness to press in bursts could create turnovers in dangerous areas. This is the match where Haiti have their best chance of producing a result.",
+  "prediction": {
+    "predictedOutcome": "SCO",
+    "predictedScore": "2-0",
+    "confidence": 72,
+    "reasoning": "Scotland's superior squad quality, big-match experience from recent European Championships, and physical advantage should see them through. This is a match Scotland must win to have any chance of advancing, and the pressure to perform should drive a professional performance.",
+    "alternativeScenario": "Haiti could make this extremely difficult for Scotland with a disciplined defensive display. A 1-1 draw is possible if Haiti score first and Scotland struggle to break them down, which would fit Scotland's historical pattern of underperforming against supposedly weaker opponents."
+  },
+  "pastEncountersSummary": "Haiti and Scotland have no significant competitive history against each other. This 2026 World Cup group stage match represents their first meaningful meeting, bringing together two nations from different footballing traditions and confederations. Both teams will approach this as a potentially decisive match in their group stage campaigns.",
+  "funFacts": [
+    "Scotland played in the first-ever international football match in 1872, a 0-0 draw against England in Glasgow",
+    "Haiti's 1974 World Cup squad was nicknamed 'Les Grenadiers' and captured the hearts of neutral fans in West Germany",
+    "Scotland have been eliminated from the World Cup group stage eight times, more than any other nation without advancing",
+    "Haiti and Scotland were both founding members of their respective continental confederations (CONCACAF and UEFA)",
+    "Scotland's Tartan Army and Haiti's passionate supporters both travel in large numbers despite their teams' underdog status"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_aut",
+  "firstName": "Ralf",
+  "lastName": "Rangnick",
+  "commonName": "Ralf Rangnick",
+  "dateOfBirth": "1958-06-29",
+  "nationality": "Germany",
+  "currentTeam": "Austria",
+  "currentTeamCode": "AUT",
+  "photoUrl": "assets/managers/rangnick.png",
+  "preferredFormation": "4-2-2-2",
+  "coachingStyle": "High Press",
+  "yearsExperience": 30,
+  "previousTeams": ["Hoffenheim", "Schalke 04", "RB Leipzig", "RB Salzburg (sporting director)", "Manchester United (interim)", "Lokomotiv Moscow"],
+  "trophies": ["DFB-Pokal 2011 (Schalke 04)", "DFL-Supercup 2011 (Schalke 04)"],
+  "careerWins": 280,
+  "careerDraws": 100,
+  "careerLosses": 130,
+  "careerWinPercentage": 55,
+  "bio": "The 'Godfather of Gegenpressing' who revolutionized German football through his pressing philosophy at Hoffenheim and the Red Bull football network. Appointed Austria manager in 2022, he transformed the team into one of Europe's most exciting sides and famously turned down Bayern Munich to stay with the national team."
+}

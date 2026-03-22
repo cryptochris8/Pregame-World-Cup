@@ -1,0 +1,39 @@
+{
+  "id": "BRA_HAI",
+  "team1Code": "BRA",
+  "team2Code": "HAI",
+  "totalMatches": 2,
+  "team1Wins": 2,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 13,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2016-06-08",
+  "firstMeeting": "2004-08-18",
+  "notableMatches": [
+    {
+      "year": 2016,
+      "tournament": "Copa America Centenario",
+      "stage": "Group Stage",
+      "team1Score": 7,
+      "team2Score": 1,
+      "winnerCode": "BRA",
+      "location": "Orlando, USA",
+      "description": "Philippe Coutinho hat-trick leads Brazil rout in Haiti's Copa America debut"
+    },
+    {
+      "year": 2004,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 6,
+      "team2Score": 0,
+      "winnerCode": "BRA",
+      "location": "Port-au-Prince, Haiti",
+      "description": "UN-backed 'Match for Peace' as Brazil visit Haiti; Ronaldinho scores twice"
+    }
+  ]
+}

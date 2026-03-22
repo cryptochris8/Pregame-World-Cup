@@ -1,0 +1,57 @@
+{
+  "team1Code": "ESP",
+  "team2Code": "KSA",
+  "team1Name": "Spain",
+  "team2Name": "Saudi Arabia",
+  "historicalAnalysis": "Spain are one of world football's elite nations, having won the 2010 World Cup in South Africa and bookended that triumph with European Championship victories in 2008 and 2012 during an unprecedented era of dominance. At the 2022 World Cup, Spain demonstrated their enduring quality by demolishing Costa Rica 7-0 in their opening group match, though they later fell to Morocco on penalties in the Round of 16. Spain's current squad represents a thrilling new generation, with Barcelona's young stars leading the charge.\n\nSaudi Arabia shocked the world at the 2022 World Cup with their stunning 2-1 victory over Lionel Messi's Argentina in what many considered the tournament's greatest upset. Goals from Saleh Al-Shehri and Salem Al-Dawsari completed a remarkable comeback, and the result was so significant that the Saudi government declared a national holiday. However, the Green Falcons could not sustain that momentum, losing their remaining group matches to Poland (2-0) and Mexico (2-1) to exit at the group stage.\n\nThis match represents a fascinating tactical battle between Spain's patient, possession-heavy approach and Saudi Arabia's ability to spring surprises through aggressive pressing and quick transitions. Saudi Arabia proved against Argentina that their high defensive line and offside trap can neutralize even the best attacks — but Spain's movement and technical precision present a different kind of challenge. The Saudi Pro League's growth and investment have raised the profile of Saudi football, but Spain's depth of talent from La Liga and Europe's top leagues remains formidable.",
+  "keyStorylines": [
+    "Spain's new golden generation led by Lamine Yamal, Pedri, and Gavi facing Saudi Arabia's giant-killing squad",
+    "Saudi Arabia looking to produce another World Cup shock after their historic 2022 victory over Argentina",
+    "Spain's tiki-taka possession game against Saudi Arabia's aggressive pressing and high defensive line",
+    "The tactical chess match between Spain's patient build-up and Saudi Arabia's offside trap that caught Argentina out repeatedly",
+    "Salem Al-Dawsari seeking to add another World Cup upset to his growing legend"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Lamine Yamal",
+      "position": "Right Winger",
+      "teamCode": "ESP",
+      "reason": "The teenage phenomenon has already established himself as one of world football's most exciting talents, with dazzling dribbling, creative vision, and a fearlessness that belies his young age."
+    },
+    {
+      "name": "Pedri",
+      "position": "Central Midfielder",
+      "teamCode": "ESP",
+      "reason": "Spain's midfield maestro controls the tempo of matches with his exceptional passing, positioning, and composure. His ability to receive the ball in tight spaces and create opportunities is world-class."
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "position": "Winger/Forward",
+      "teamCode": "KSA",
+      "reason": "The hero of the Argentina upset, Al-Dawsari is Saudi Arabia's most dangerous attacking player. His ability to produce moments of individual brilliance in big games makes him a genuine World Cup threat."
+    },
+    {
+      "name": "Mohammed Al-Owais",
+      "position": "Goalkeeper",
+      "teamCode": "KSA",
+      "reason": "The experienced goalkeeper was outstanding against Argentina in 2022, making crucial saves. His shot-stopping will be vital against Spain's array of attacking talent."
+    }
+  ],
+  "tacticalPreview": "Spain will deploy their characteristic possession-based 4-3-3, looking to control the match through midfield dominance via Pedri and Gavi. Their approach involves patient build-up play, with fullbacks pushing high and wide to stretch the opposition, creating space for Yamal to exploit on the right and for central runners to penetrate. Spain's pressing after losing possession is intense, and their ability to recycle play and find gaps in defensive structures is among the best in world football. The 7-0 demolition of Costa Rica in 2022 showed what happens when teams cannot cope with Spain's movement.\n\nSaudi Arabia will look to implement the same aggressive tactical approach that stunned Argentina — a high defensive line with a disciplined offside trap, intense pressing in the opposition half, and quick vertical transitions when they win the ball. The risk is significant against Spain's technical players, who are more accustomed to playing against high lines in La Liga. Al-Dawsari's ability to carry the ball and create in transition will be key. Saudi Arabia must decide whether to press Spain high (risky but potentially rewarding) or sit deeper and absorb pressure (safer but surrendering their strongest tactical weapon).",
+  "prediction": {
+    "predictedOutcome": "ESP",
+    "predictedScore": "3-1",
+    "confidence": 78,
+    "reasoning": "Spain's technical superiority and depth of talent should prove decisive. Unlike Argentina in 2022, Spain's possession-based style is specifically designed to exploit high defensive lines through patient probing and positional play. Pedri and Gavi can manipulate Saudi Arabia's pressing, while Yamal's pace and dribbling will cause problems. However, Saudi Arabia's quality means they should create chances of their own.",
+    "alternativeScenario": "If Saudi Arabia implement their 2022 Argentina game plan to perfection, they could catch Spain early and build confidence. A disciplined first-half performance keeping the score level could create doubt, and Al-Dawsari's individual quality could produce a moment of magic. A draw or narrow Saudi Arabia upset, while unlikely, cannot be ruled out given their proven ability to shock favorites."
+  },
+  "pastEncountersSummary": "Spain and Saudi Arabia have met on several occasions in friendly matches and minor competitions. Spain have generally dominated these encounters, reflecting the difference in quality between the two nations. However, Saudi Arabia's 2022 World Cup performance against Argentina demonstrated that past results matter little when a well-organized team executes a game plan perfectly. This will be one of their highest-profile competitive meetings.",
+  "funFacts": [
+    "Spain's 7-0 victory over Costa Rica at the 2022 World Cup was their largest-ever World Cup winning margin",
+    "Saudi Arabia's victory over Argentina in 2022 was one of the biggest upsets in World Cup history, with Argentina having been on a 36-match unbeaten run",
+    "Lamine Yamal was born in 2007, meaning he was only 15 when Spain played at the 2022 World Cup in Qatar",
+    "Spain's tiki-taka style was inspired by Barcelona's academy system, and their current squad features multiple Barcelona products continuing that tradition",
+    "Saudi Arabia's 2022 World Cup squad was entirely composed of players from the Saudi Pro League — a rarity at the modern World Cup"
+  ],
+  "isFirstMeeting": false
+}

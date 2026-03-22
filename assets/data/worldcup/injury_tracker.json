@@ -2,8 +2,8 @@
   "metadata": {
     "lastUpdated": "2026-03-01",
     "description": "Key player injury and availability tracker for World Cup 2026",
-    "totalPlayers": 213,
-    "totalTeams": 57,
+    "totalPlayers": 184,
+    "totalTeams": 48,
     "notes": "Data sourced from verified sports news outlets and Transfermarkt. Availability statuses: fit, minor_concern, doubt, major_doubt, injured, long_term_injured, retired_international"
   },
   "players": [
@@ -1952,150 +1952,6 @@
       "notes": "Tireless midfielder. No injury concerns. Key to Denmark's midfield discipline."
     },
     {
-      "playerName": "Robert Lewandowski",
-      "teamCode": "POL",
-      "country": "Poland",
-      "club": "Barcelona",
-      "position": "Forward",
-      "injuryType": "Age-related fitness management",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Barcelona (La Liga)",
-        "notes": "Full match played, scored"
-      },
-      "source": "Barcelona, ESPN - Feb 2026",
-      "notes": "Age 37. Still scoring regularly for Barcelona. No specific injury but age means workload management is critical. Poland's all-time top scorer."
-    },
-    {
-      "playerName": "Piotr Zielinski",
-      "teamCode": "POL",
-      "country": "Poland",
-      "club": "Inter Milan",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Inter Milan (Serie A)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Creative midfielder. No injury concerns. Key playmaker for Poland."
-    },
-    {
-      "playerName": "Wojciech Szczesny",
-      "teamCode": "POL",
-      "country": "Poland",
-      "club": "Barcelona",
-      "position": "Goalkeeper",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Barcelona (La Liga)",
-        "notes": "Available"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Came out of retirement to join Barcelona. Experienced goalkeeper. No injury concerns."
-    },
-    {
-      "playerName": "Nicola Zalewski",
-      "teamCode": "POL",
-      "country": "Poland",
-      "club": "AS Roma",
-      "position": "Midfielder/Defender",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "AS Roma (Serie A)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Versatile player for Roma. No injury concerns. Young and dynamic."
-    },
-    {
-      "playerName": "Dusan Vlahovic",
-      "teamCode": "SRB",
-      "country": "Serbia",
-      "club": "Juventus",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Juventus (Serie A)",
-        "notes": "Full match played, scored"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Serbia's main striker. No injury concerns. Prolific scorer for Juventus."
-    },
-    {
-      "playerName": "Aleksandar Mitrovic",
-      "teamCode": "SRB",
-      "country": "Serbia",
-      "club": "Al-Hilal",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Al-Hilal (Saudi Pro League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Serbia's all-time top scorer. Playing well in Saudi league. No injury concerns."
-    },
-    {
-      "playerName": "Sergej Milinkovic-Savic",
-      "teamCode": "SRB",
-      "country": "Serbia",
-      "club": "Al-Hilal",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Al-Hilal (Saudi Pro League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Talented midfielder. No injury concerns. Key creative force for Serbia."
-    },
-    {
-      "playerName": "Dusan Tadic",
-      "teamCode": "SRB",
-      "country": "Serbia",
-      "club": "Fenerbahce",
-      "position": "Midfielder/Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Fenerbahce (Super Lig)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced captain. No injury concerns. Leader and playmaker for Serbia."
-    },
-    {
       "playerName": "Mathew Ryan",
       "teamCode": "AUS",
       "country": "Australia",
@@ -2276,132 +2132,6 @@
       "notes": "Age 35. Qatar's most capped player and captain. Fitness management needed. Veteran leader."
     },
     {
-      "playerName": "Andre Onana",
-      "teamCode": "CMR",
-      "country": "Cameroon",
-      "club": "Manchester United",
-      "position": "Goalkeeper",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Manchester United (Premier League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Premier League goalkeeper. No injury concerns. Cameroon's number one."
-    },
-    {
-      "playerName": "Bryan Mbeumo",
-      "teamCode": "CMR",
-      "country": "Cameroon",
-      "club": "Brentford",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Brentford (Premier League)",
-        "notes": "Full match played, scored"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "In-form Premier League forward. No injury concerns. Key attacking threat for Cameroon."
-    },
-    {
-      "playerName": "Eric Maxim Choupo-Moting",
-      "teamCode": "CMR",
-      "country": "Cameroon",
-      "club": "Free Agent",
-      "position": "Forward",
-      "injuryType": "Limited playing time (free agent)",
-      "injuryDate": null,
-      "expectedReturn": "N/A",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-01-01",
-        "opponent": "N/A",
-        "notes": "Without a club since leaving Bayern Munich"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced striker but currently without a club. Match fitness is a concern. Veteran presence."
-    },
-    {
-      "playerName": "Victor Osimhen",
-      "teamCode": "NGA",
-      "country": "Nigeria",
-      "club": "Galatasaray",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Galatasaray (Super Lig)",
-        "notes": "Full match played, scored"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "One of the world's most lethal strikers. No injury concerns. Nigeria's main goal threat."
-    },
-    {
-      "playerName": "Ademola Lookman",
-      "teamCode": "NGA",
-      "country": "Nigeria",
-      "club": "Atalanta",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Atalanta (Serie A)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "2024 CAF Player of the Year. No injury concerns. In superb form for Atalanta."
-    },
-    {
-      "playerName": "Wilfred Ndidi",
-      "teamCode": "NGA",
-      "country": "Nigeria",
-      "club": "Everton",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Everton (Premier League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced defensive midfielder. No injury concerns. Key to Nigeria's midfield."
-    },
-    {
-      "playerName": "William Troost-Ekong",
-      "teamCode": "NGA",
-      "country": "Nigeria",
-      "club": "Al-Kholood",
-      "position": "Defender",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Al-Kholood (Saudi Pro League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Nigeria's captain. No injury concerns. Defensive leader."
-    },
-    {
       "playerName": "Moises Caicedo",
       "teamCode": "ECU",
       "country": "Ecuador",
@@ -2454,60 +2184,6 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "Age 36. Ecuador's all-time top scorer. Fitness management needed but still an important leader."
-    },
-    {
-      "playerName": "Alexis Sanchez",
-      "teamCode": "CHI",
-      "country": "Chile",
-      "club": "Udinese",
-      "position": "Forward",
-      "injuryType": "Age-related fitness management",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently available",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Udinese (Serie A)",
-        "notes": "Available for selection"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Age 37. Chile's all-time top scorer. Playing for Udinese. Workload management needed."
-    },
-    {
-      "playerName": "Claudio Bravo",
-      "teamCode": "CHI",
-      "country": "Chile",
-      "club": "Retired from club football",
-      "position": "Goalkeeper",
-      "injuryType": "Age/retirement considerations",
-      "injuryDate": null,
-      "expectedReturn": "N/A - status unclear",
-      "availabilityStatus": "doubt",
-      "lastMatchPlayed": {
-        "date": "2025-12-01",
-        "opponent": "N/A",
-        "notes": "Retired from club football"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Age 43. Legendary goalkeeper. May come out of retirement for one final World Cup. Status unclear."
-    },
-    {
-      "playerName": "Ben Brereton Diaz",
-      "teamCode": "CHI",
-      "country": "Chile",
-      "club": "Sheffield United",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Sheffield United (Championship)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Anglo-Chilean forward. No injury concerns. Key striker for Chile."
     },
     {
       "playerName": "Miguel Almiron",
@@ -2564,168 +2240,6 @@
       "notes": "Exciting young talent. No injury concerns. Paraguay's brightest prospect."
     },
     {
-      "playerName": "Gianluca Lapadula",
-      "teamCode": "PER",
-      "country": "Peru",
-      "club": "Cagliari",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Cagliari (Serie A)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Italian-born striker. No injury concerns. Peru's main goal threat."
-    },
-    {
-      "playerName": "Andre Carrillo",
-      "teamCode": "PER",
-      "country": "Peru",
-      "club": "Al-Hilal",
-      "position": "Forward/Winger",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Al-Hilal (Saudi Pro League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced winger. No injury concerns. Key attacking option for Peru."
-    },
-    {
-      "playerName": "Renato Tapia",
-      "teamCode": "PER",
-      "country": "Peru",
-      "club": "Leganés",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Leganés (La Liga)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Defensive midfielder. No injury concerns. Anchors Peru's midfield."
-    },
-    {
-      "playerName": "Keylor Navas",
-      "teamCode": "CRC",
-      "country": "Costa Rica",
-      "club": "Nottingham Forest",
-      "position": "Goalkeeper",
-      "injuryType": "Age-related fitness management",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently available",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Nottingham Forest (Premier League)",
-        "notes": "Available for selection"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Age 39. Former Real Madrid legend. Likely final World Cup. Fitness management needed."
-    },
-    {
-      "playerName": "Joel Campbell",
-      "teamCode": "CRC",
-      "country": "Costa Rica",
-      "club": "LD Alajuelense",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "LD Alajuelense (Costa Rica)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Veteran forward known for 2014 World Cup heroics. No injury concerns."
-    },
-    {
-      "playerName": "Jewison Bennette",
-      "teamCode": "CRC",
-      "country": "Costa Rica",
-      "club": "Sunderland",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Sunderland (Championship)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Young talent playing in England. No injury concerns. Future of Costa Rican football."
-    },
-    {
-      "playerName": "Alberth Elis",
-      "teamCode": "HON",
-      "country": "Honduras",
-      "club": "Girondins de Bordeaux",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Bordeaux (Ligue 2)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Honduras' star forward. No injury concerns. Key goal threat."
-    },
-    {
-      "playerName": "Luis Palma",
-      "teamCode": "HON",
-      "country": "Honduras",
-      "club": "Celtic",
-      "position": "Forward/Winger",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Celtic (Scottish Premiership)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Exciting winger playing in Scotland. No injury concerns. Honduras' most dangerous attacker."
-    },
-    {
-      "playerName": "Kervin Arriaga",
-      "teamCode": "HON",
-      "country": "Honduras",
-      "club": "Club America",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Club America (Liga MX)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Strong midfielder. No injury concerns. Key player for Honduras."
-    },
-    {
       "playerName": "Jose Fajardo",
       "teamCode": "PAN",
       "country": "Panama",
@@ -2778,60 +2292,6 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "Experienced defender. No injury concerns. Panama's defensive leader."
-    },
-    {
-      "playerName": "Leon Bailey",
-      "teamCode": "JAM",
-      "country": "Jamaica",
-      "club": "Aston Villa",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Aston Villa (Premier League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Pacey winger in the Premier League. No injury concerns. Jamaica's star player."
-    },
-    {
-      "playerName": "Michail Antonio",
-      "teamCode": "JAM",
-      "country": "Jamaica",
-      "club": "West Ham United",
-      "position": "Forward",
-      "injuryType": "Previous serious leg injury (fractured tibia/fibula)",
-      "injuryDate": "2024-12-01",
-      "expectedReturn": "Currently fit and playing",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "West Ham (Premier League)",
-        "notes": "Playing regularly"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Remarkable recovery from a serious leg fracture. Currently fit and playing. Physical forward who adds experience."
-    },
-    {
-      "playerName": "Ethan Pinnock",
-      "teamCode": "JAM",
-      "country": "Jamaica",
-      "club": "Brentford",
-      "position": "Defender",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Brentford (Premier League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Solid center-back. No injury concerns. Key defender for Jamaica."
     },
     {
       "playerName": "Eldor Shomurodov",
@@ -3048,6 +2508,816 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "Dutch-Indonesian forward. No injury concerns. Key striker for Indonesia."
+    },
+    {
+      "playerName": "David Alaba",
+      "teamCode": "AUT",
+      "country": "Austria",
+      "club": "Real Madrid",
+      "position": "Defender",
+      "injuryType": "Anterior cruciate ligament tear (left knee)",
+      "injuryDate": "2024-12-17",
+      "expectedReturn": "Racing against time for World Cup",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Real Madrid (league match)",
+        "notes": "Available for selection"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Suffered second ACL tear in December 2024. Undergoing rehabilitation. Austria's captain and leader. World Cup fitness is uncertain."
+    },
+    {
+      "playerName": "Christoph Baumgartner",
+      "teamCode": "AUT",
+      "country": "Austria",
+      "club": "RB Leipzig",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "RB Leipzig (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Key attacking midfielder for Austria. No injury concerns. In good form at Leipzig."
+    },
+    {
+      "playerName": "Marko Arnautovic",
+      "teamCode": "AUT",
+      "country": "Austria",
+      "club": "Inter Milan",
+      "position": "Forward",
+      "injuryType": "Age-related fitness management",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Inter Milan (league match)",
+        "notes": "Available for selection"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Age 37. Veteran striker. Workload management needed but still contributing at Inter."
+    },
+    {
+      "playerName": "Patrick Pentz",
+      "teamCode": "AUT",
+      "country": "Austria",
+      "club": "Real Valladolid",
+      "position": "Goalkeeper",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Real Valladolid (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Austria's first-choice goalkeeper. No injury concerns."
+    },
+    {
+      "playerName": "Mousa Al-Taamari",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Montpellier",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Montpellier (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Jordan's star player. Key to their historic qualification. No injury concerns."
+    },
+    {
+      "playerName": "Yazan Al-Naimat",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Young Boys",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Young Boys (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Talented young striker. No injury concerns."
+    },
+    {
+      "playerName": "Baha Faisal",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Al-Wehdat",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Wehdat (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Key domestic-based forward. Top scorer in Jordan league. No injury concerns."
+    },
+    {
+      "playerName": "Amer Shafi",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Al-Wehdat",
+      "position": "Goalkeeper",
+      "injuryType": "Age-related fitness management",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Wehdat (league match)",
+        "notes": "Available for selection"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced goalkeeper. Age 37. Workload management needed. Jordan's long-serving number one."
+    },
+    {
+      "playerName": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "country": "Curacao",
+      "club": "Rangers",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Rangers (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Curacao's key midfielder playing in Scotland. No injury concerns."
+    },
+    {
+      "playerName": "Kenji Gorre",
+      "teamCode": "CUR",
+      "country": "Curacao",
+      "club": "NAC Breda",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "NAC Breda (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Talented winger. No injury concerns. Important attacking option."
+    },
+    {
+      "playerName": "Eloy Room",
+      "teamCode": "CUR",
+      "country": "Curacao",
+      "club": "Vitesse",
+      "position": "Goalkeeper",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Vitesse (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced goalkeeper. No injury concerns. Curacao's number one."
+    },
+    {
+      "playerName": "Scott McTominay",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Napoli",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Napoli (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Scotland's key midfielder now starring at Napoli. No injury concerns."
+    },
+    {
+      "playerName": "John McGinn",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Aston Villa",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Aston Villa (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced midfielder. No injury concerns. Key leader for Scotland."
+    },
+    {
+      "playerName": "Andrew Robertson",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Liverpool",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Liverpool (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "World-class left-back. No injury concerns. Scotland's captain."
+    },
+    {
+      "playerName": "Che Adams",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Torino",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Torino (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Scotland's main striker. No injury concerns. Performing well in Serie A."
+    },
+    {
+      "playerName": "Sebastien Haller",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Borussia Dortmund",
+      "position": "Forward",
+      "injuryType": "History of testicular cancer (recovered)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Borussia Dortmund (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Fully recovered from cancer treatment. Back to form. Key striker for Ivory Coast."
+    },
+    {
+      "playerName": "Franck Kessie",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Al Ahli",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al Ahli (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Powerful midfielder. No injury concerns. Ivory Coast's midfield anchor."
+    },
+    {
+      "playerName": "Simon Adingra",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Brighton",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Brighton (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Exciting young winger at Brighton. AFCON 2023 Best Young Player. No injury concerns."
+    },
+    {
+      "playerName": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "country": "Haiti",
+      "club": "Goztepe",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Goztepe (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Haiti's main striker. No injury concerns."
+    },
+    {
+      "playerName": "Duckens Nazon",
+      "teamCode": "HAI",
+      "country": "Haiti",
+      "club": "Academica",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Academica (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced forward. No injury concerns. Haiti's all-time top scorer."
+    },
+    {
+      "playerName": "Josue Duverger",
+      "teamCode": "HAI",
+      "country": "Haiti",
+      "club": "Racing Besancon",
+      "position": "Goalkeeper",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Racing Besancon (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Haiti's first-choice goalkeeper. No injury concerns."
+    },
+    {
+      "playerName": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "country": "Tunisia",
+      "club": "Burnley",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Burnley (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Talented young midfielder. No injury concerns. Tunisia's brightest talent."
+    },
+    {
+      "playerName": "Aissa Laidouni",
+      "teamCode": "TUN",
+      "country": "Tunisia",
+      "club": "Union Berlin",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Union Berlin (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Tireless midfielder. No injury concerns. Key to Tunisia's defensive structure."
+    },
+    {
+      "playerName": "Wahbi Khazri",
+      "teamCode": "TUN",
+      "country": "Tunisia",
+      "club": "Montpellier",
+      "position": "Forward",
+      "injuryType": "Age-related fitness management",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Montpellier (league match)",
+        "notes": "Available for selection"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Age 35. Veteran forward and former captain. Workload management needed. Tunisia's experienced leader."
+    },
+    {
+      "playerName": "Mohanad Ali",
+      "teamCode": "IRQ",
+      "country": "Iraq",
+      "club": "Al-Duhail",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Duhail (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Iraq's star forward. No injury concerns. Key goal threat."
+    },
+    {
+      "playerName": "Ibrahim Bayesh",
+      "teamCode": "IRQ",
+      "country": "Iraq",
+      "club": "Al-Quwa Al-Jawiya",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Quwa Al-Jawiya (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Creative midfielder. No injury concerns. Iraq's playmaker."
+    },
+    {
+      "playerName": "Aymen Hussein",
+      "teamCode": "IRQ",
+      "country": "Iraq",
+      "club": "Al-Quwa Al-Jawiya",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Quwa Al-Jawiya (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Prolific domestic scorer. No injury concerns. Iraq's experienced striker."
+    },
+    {
+      "playerName": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "Al-Ahli",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Ahli (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Algeria's star player. Former Man City and Leicester winger. No injury concerns."
+    },
+    {
+      "playerName": "Ismael Bennacer",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "AC Milan",
+      "position": "Midfielder",
+      "injuryType": "Knee injury (recovered)",
+      "injuryDate": "2025-06-15",
+      "expectedReturn": "Fully recovered",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "AC Milan (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Key midfielder at AC Milan. Recovered from previous knee issue. Fit and playing regularly."
+    },
+    {
+      "playerName": "Islam Slimani",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "CR Belouizdad",
+      "position": "Forward",
+      "injuryType": "Age-related fitness management",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "CR Belouizdad (league match)",
+        "notes": "Available for selection"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Age 37. Algeria's all-time top scorer. Veteran leader. Fitness management needed."
+    },
+    {
+      "playerName": "Percy Tau",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Al Ahly",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al Ahly (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "South Africa's star forward playing for Al Ahly. No injury concerns."
+    },
+    {
+      "playerName": "Ronwen Williams",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Mamelodi Sundowns",
+      "position": "Goalkeeper",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Mamelodi Sundowns (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "South Africa's number one. 2024 CAF Goalkeeper of the Year. No injury concerns."
+    },
+    {
+      "playerName": "Themba Zwane",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Mamelodi Sundowns",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Mamelodi Sundowns (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Creative midfielder. Key playmaker for Bafana Bafana. No injury concerns."
+    },
+    {
+      "playerName": "Saud Abdulhamid",
+      "teamCode": "KSA",
+      "country": "Saudi Arabia",
+      "club": "Roma",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Roma (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Saudi Arabia's most valuable player at Roma. No injury concerns."
+    },
+    {
+      "playerName": "Salem Al-Dawsari",
+      "teamCode": "KSA",
+      "country": "Saudi Arabia",
+      "club": "Al-Hilal",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Hilal (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Iconic Saudi player. Hero of Argentina upset at 2022 World Cup. No injury concerns."
+    },
+    {
+      "playerName": "Firas Al-Buraikan",
+      "teamCode": "KSA",
+      "country": "Saudi Arabia",
+      "club": "Al-Ahli",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Ahli (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Young striker. No injury concerns. Saudi Arabia's future star."
+    },
+    {
+      "playerName": "Garry Rodrigues",
+      "teamCode": "CPV",
+      "country": "Cabo Verde",
+      "club": "Olympiacos",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Olympiacos (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Cabo Verde's star player. Experienced winger. No injury concerns."
+    },
+    {
+      "playerName": "Ryan Mendes",
+      "teamCode": "CPV",
+      "country": "Cabo Verde",
+      "club": "Al-Ahli Doha",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Al-Ahli Doha (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced forward. No injury concerns. Key attacking option for Cabo Verde."
+    },
+    {
+      "playerName": "Vozinha",
+      "teamCode": "CPV",
+      "country": "Cabo Verde",
+      "club": "Gil Vicente",
+      "position": "Goalkeeper",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Gil Vicente (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Cabo Verde's long-serving goalkeeper. No injury concerns."
+    },
+    {
+      "playerName": "Chancel Mbemba",
+      "teamCode": "COD",
+      "country": "DR Congo",
+      "club": "Olympique de Marseille",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Olympique de Marseille (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced defender. No injury concerns. DR Congo's key center-back."
+    },
+    {
+      "playerName": "Cedric Bakambu",
+      "teamCode": "COD",
+      "country": "DR Congo",
+      "club": "Real Betis",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Real Betis (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced striker. No injury concerns. Key goal threat for DR Congo."
+    },
+    {
+      "playerName": "Yoane Wissa",
+      "teamCode": "COD",
+      "country": "DR Congo",
+      "club": "Brentford",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Brentford (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Premier League forward in good form. No injury concerns. DR Congo's main attacking threat."
+    },
+    {
+      "playerName": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "West Ham United",
+      "position": "Midfielder/Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "West Ham United (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Ghana's star player at West Ham. No injury concerns. Dynamic and creative."
+    },
+    {
+      "playerName": "Thomas Partey",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Arsenal",
+      "position": "Midfielder",
+      "injuryType": "History of recurring muscle injuries",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Arsenal (league match)",
+        "notes": "Available for selection"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Key midfielder at Arsenal. History of muscle injuries but currently fit. Ghana's midfield anchor."
+    },
+    {
+      "playerName": "Jordan Ayew",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Leicester City",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Leicester City (league match)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced forward. No injury concerns. Ghana's versatile attacker."
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "ALG_AUT",
+  "team1Code": "ALG",
+  "team2Code": "AUT",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 2,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "1982-06-16",
+  "firstMeeting": "1982-06-16",
+  "notableMatches": [
+    {
+      "year": 1982,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "ALG",
+      "location": "Oviedo, Spain",
+      "description": "Algeria stun Austria in their World Cup debut, a result that led to the Disgrace of Gijon when West Germany and Austria later played out a mutually beneficial 1-0 result to eliminate Algeria"
+    }
+  ]
+}

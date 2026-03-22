@@ -1,0 +1,57 @@
+{
+  "team1Code": "JPN",
+  "team2Code": "TUN",
+  "team1Name": "Japan",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "Japan have established themselves as one of Asia's premier footballing nations, with their stunning 2022 World Cup campaign serving as a defining moment. In Qatar, Japan defeated both Germany (2-1) and Spain (2-1) in the group stage, demonstrating tactical sophistication and mental resilience that stunned the footballing world. Although they fell to Croatia on penalties in the Round of 16, Japan proved they belong among the global elite. The Samurai Blue have now qualified for every World Cup since 1998.\n\nTunisia's 2022 World Cup campaign was defined by defensive grit and a famous final-day victory over reigning champions France. The Eagles of Carthage held Denmark to a 0-0 draw and lost narrowly 1-0 to Australia before beating France 1-0, narrowly missing out on progression. Tunisia are now at their sixth World Cup, making them one of the most experienced African nations at the tournament, with a proud tradition of competitive performances.\n\nThe two nations represent the best of their respective confederations — AFC and CAF — and this encounter pits Japan's dynamic, pressing-heavy style against Tunisia's organized and resilient defensive approach. Both teams proved at Qatar 2022 that they are capable of beating European giants, and this match promises a fascinating tactical chess match between two well-coached sides.",
+  "keyStorylines": [
+    "Japan's golden generation seeking to build on their 2022 heroics of beating Germany and Spain in the group stage",
+    "Tunisia looking to replicate their 2022 form when they defeated reigning champions France 1-0",
+    "Takefusa Kubo's emergence as Japan's creative fulcrum following his outstanding form at Real Sociedad in La Liga",
+    "The tactical battle between Japan's high-intensity pressing system and Tunisia's disciplined defensive structure",
+    "Both nations proved capable of toppling European powers in 2022 — this is a match between proven giant-killers"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Takefusa Kubo",
+      "position": "Forward/Winger",
+      "teamCode": "JPN",
+      "reason": "The supremely talented attacker has flourished at Real Sociedad in La Liga, combining dribbling ability, creativity, and an eye for goal that makes him one of Asia's brightest stars."
+    },
+    {
+      "name": "Kaoru Mitoma",
+      "position": "Winger",
+      "teamCode": "JPN",
+      "reason": "The electrifying Brighton winger is known for his devastating dribbling and direct running. His Premier League experience and pace make him a nightmare for defenders."
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "position": "Midfielder",
+      "teamCode": "TUN",
+      "reason": "The former Manchester United academy product is Tunisia's creative engine, possessing excellent technique, vision, and the tenacity to compete in midfield battles."
+    },
+    {
+      "name": "Youssef Msakni",
+      "position": "Forward",
+      "teamCode": "TUN",
+      "reason": "Tunisia's iconic forward and longtime talisman brings experience and quality in the final third. His ability to produce moments of magic in big games makes him a constant threat."
+    }
+  ],
+  "tacticalPreview": "Japan under their coaching setup have continued to evolve the high-pressing, quick-transition style that yielded those famous victories over Germany and Spain in 2022. The Samurai Blue typically deploy a 4-2-3-1 or 4-3-3 formation, using the pace of wingers like Mitoma and Kubo to stretch defenses. In midfield, Japan combine technical players comfortable in possession with tireless workers who lead the press. Their ability to absorb pressure and strike quickly on the counter was the hallmark of their 2022 success.\n\nTunisia will likely set up in a compact 4-3-3 or 4-2-3-1, looking to deny Japan space between the lines and frustrate their attacking players. The Eagles of Carthage proved in 2022 that they are exceptionally difficult to break down when organized, conceding just two goals in three matches. Tunisia's game plan will revolve around maintaining defensive discipline, winning the midfield battle, and using Msakni and their wide players to exploit any space Japan leave when committing numbers forward.",
+  "prediction": {
+    "predictedOutcome": "JPN",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Japan's superior squad depth and the quality of their European-based players give them an edge, particularly in attacking areas where Kubo and Mitoma can create havoc. However, Tunisia's defensive organization means this will not be straightforward, and Japan will need to be patient in breaking them down.",
+    "alternativeScenario": "Tunisia's defensive resilience could frustrate Japan into errors. If the Eagles of Carthage can keep the game tight and take their chances on the counter, a draw or narrow Tunisia victory is very achievable. Tunisia have shown repeatedly they can stifle more talented opponents."
+  },
+  "pastEncountersSummary": "Japan and Tunisia have met in international friendlies and at the FIFA Confederations Cup. Their most notable encounter was at the 2002 Confederations Cup group stage. These matches have generally been closely contested affairs, reflecting the competitive parity between two strong non-European footballing nations. Both teams have evolved significantly since their last meetings, making this World Cup encounter a fresh tactical challenge for both sides.",
+  "funFacts": [
+    "Japan have qualified for every World Cup since their debut in 1998 — a streak of eight consecutive tournaments",
+    "Tunisia became the first African team to win a World Cup match when they beat Mexico 3-1 at the 1978 World Cup",
+    "Japan's 2022 victories over Germany and Spain made them the first Asian team to beat two former World Cup winners in the same tournament group stage",
+    "Kaoru Mitoma wrote his university thesis on dribbling techniques before becoming a professional footballer",
+    "Tunisia and Japan both share the distinction of having defeated reigning or former world champions at the 2022 World Cup"
+  ],
+  "isFirstMeeting": false
+}

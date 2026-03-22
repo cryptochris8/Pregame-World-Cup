@@ -1,0 +1,29 @@
+{
+  "id": "GHA_PAN",
+  "team1Code": "GHA",
+  "team2Code": "PAN",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 1,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2019-06-08",
+  "firstMeeting": "2019-06-08",
+  "notableMatches": [
+    {
+      "year": 2019,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Abu Dhabi, United Arab Emirates",
+      "description": "Ghana and Panama share a 1-1 draw in friendly held in the UAE"
+    }
+  ]
+}

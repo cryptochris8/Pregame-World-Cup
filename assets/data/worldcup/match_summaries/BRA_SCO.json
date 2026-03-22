@@ -1,0 +1,57 @@
+{
+  "team1Code": "BRA",
+  "team2Code": "SCO",
+  "team1Name": "Brazil",
+  "team2Name": "Scotland",
+  "historicalAnalysis": "Brazil and Scotland share one of the most iconic World Cup opening match memories. On June 10, 1998, at the Stade de France in Paris, Scotland faced Brazil in the opening game of the 1998 World Cup. Brazil won 2-1, with goals from Cesar Sampaio and a Tom Boyd own goal, but Scotland earned a moment of pride when John Collins converted a penalty to briefly level the score at 1-1. That match encapsulated Scotland's World Cup experience: competitive, spirited, but ultimately falling short.\n\nScotland's World Cup history is filled with heartbreak. They have qualified for eight World Cups (1954, 1958, 1974, 1978, 1982, 1986, 1990, 1998) but have never advanced beyond the group stage, a record that has become a defining narrative of Scottish football. Their return to major tournament football at Euro 2020 and Euro 2024 reignited hope, and qualifying for the 2026 World Cup represents a chance to finally break through.\n\nBrazil's quest is different but equally urgent. The five-time champions have not won the World Cup since their 2002 triumph in Japan and South Korea, and the 7-1 semi-final humiliation against Germany at home in 2014 remains a scar on the national psyche. A new generation led by Vinicius Jr. carries the weight of restoring Brazilian football to its historic heights. Meeting Scotland again in a World Cup group stage echoes 1998, but the context has evolved significantly for both nations.",
+  "keyStorylines": [
+    "A rematch of the iconic 1998 World Cup opening game at the Stade de France",
+    "Scotland's quest to advance past the World Cup group stage for the first time in their history",
+    "Brazil's new generation trying to end their longest-ever World Cup title drought",
+    "John Collins' 1998 penalty remains one of Scotland's proudest World Cup moments",
+    "Steve Clarke's Scotland side looking to prove they belong among the elite after Euro 2024"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Vinícius Jr.",
+      "teamCode": "BRA",
+      "position": "Winger",
+      "reason": "Ballon d'Or winner whose pace, dribbling, and finishing make him the most feared attacker in world football"
+    },
+    {
+      "name": "John McGinn",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Aston Villa's energetic midfielder and Scotland's vice-captain who drives the team forward with tireless running and goals from midfield"
+    },
+    {
+      "name": "Bruno Guimarães",
+      "teamCode": "BRA",
+      "position": "Midfielder",
+      "reason": "Newcastle United's midfield maestro who provides the balance and press-resistance Brazil need in the center of the park"
+    },
+    {
+      "name": "Andrew Robertson",
+      "teamCode": "SCO",
+      "position": "Left-Back",
+      "reason": "Liverpool's captain and Scotland's leader, one of the best left-backs in world football with vast Champions League experience"
+    }
+  ],
+  "tacticalPreview": "Brazil's 4-2-3-1 will look to dominate possession and exploit Scotland's defensive line with pace in behind. Vinicius Jr. on the left flank against Scotland's right side will be the key matchup. Brazil will want to control the midfield through Bruno Guimaraes and move the ball quickly to their attacking trident. Set pieces could also be important, with Brazil's height advantage in the box.\n\nScotland under Steve Clarke typically set up in a 3-5-2 or 5-4-1 that is compact and hard to break down. Andrew Robertson provides attacking thrust from left wing-back, while the midfield trio of McTominay, Gilmour, and McGinn offers a blend of physicality and technical quality. Scotland will sit deep, remain organized, and look to hit Brazil on quick transitions, much as they did against bigger nations at Euro 2024. Their ability to defend as a unit and capitalize on set pieces will be crucial.",
+  "prediction": {
+    "predictedOutcome": "BRA",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Brazil's individual quality should ultimately be too much for Scotland, but this will not be easy. Scotland's defensive organization under Steve Clarke is among the best of the non-elite nations, and they will make Brazil work hard for every chance. Expect a tight first half before Brazil's class tells in the second.",
+    "alternativeScenario": "Scotland could frustrate Brazil into a 0-0 or 1-1 draw. If they can neutralize Vinicius Jr. and win the midfield battle, a set-piece goal or counter-attack could produce a famous result reminiscent of John Collins' penalty in 1998."
+  },
+  "pastEncountersSummary": "Brazil and Scotland have met multiple times, with the 1998 World Cup opener being the most famous encounter. Brazil won 2-1 that day, with Scotland's John Collins scoring from the penalty spot to briefly equalize. Earlier meetings include a 1-0 Brazil win in a 1972 friendly. Scotland have never beaten Brazil, but the 1998 match showed they can compete with the Seleção.",
+  "funFacts": [
+    "The 1998 Brazil vs Scotland World Cup opener was the first match played at the newly built Stade de France in Saint-Denis",
+    "John Collins' penalty against Brazil in 1998 made Scotland the first team to score at that World Cup",
+    "Scotland have qualified for eight World Cups but have never progressed beyond the group stage",
+    "Brazil's Cesar Sampaio scored the first goal of the 1998 World Cup with a header against Scotland",
+    "Scotland's Tartan Army traveling support is renowned as one of the most passionate and good-natured fan groups in world football"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,57 @@
+{
+  "team1Code": "MAR",
+  "team2Code": "SCO",
+  "team1Name": "Morocco",
+  "team2Name": "Scotland",
+  "historicalAnalysis": "Morocco and Scotland bring contrasting recent trajectories to this World Cup encounter. Morocco arrive as one of the tournament's most exciting teams after their historic run to the 2022 World Cup semi-finals in Qatar, where they became the first African nation to reach the last four. Their victories over Belgium, Spain, and Portugal captured global attention and established Morocco as a genuine force in international football under coach Walid Regragui.\n\nScotland's recent history has been more modest but no less meaningful to their fans. After missing every major tournament from 1998 to 2020, Scotland have re-established themselves as regular qualifiers, appearing at Euro 2020 and Euro 2024. However, the group stage remains their ceiling — Scotland have never advanced beyond it in any World Cup, a record that spans eight previous appearances. The 2026 tournament represents yet another opportunity to break that painful cycle.\n\nThis match could be pivotal in deciding which team advances from Group C alongside likely group winners Brazil. Morocco's blend of defensive solidity and counter-attacking quality, honed against the best teams in the world during 2022, makes them favorites. But Scotland have shown at recent European Championships that they can compete with top-tier opposition, and Steve Clarke's well-drilled side will not be intimidated by Morocco's reputation.",
+  "keyStorylines": [
+    "Morocco looking to confirm their status as a top-tier footballing nation after their 2022 semi-final breakthrough",
+    "Scotland needing a result to have any chance of making World Cup history by advancing from the group",
+    "A potential group-deciding match that could determine who joins Brazil in the knockout rounds",
+    "The tactical battle between Regragui's counter-attacking Morocco and Clarke's disciplined Scotland",
+    "Two sets of passionate fans creating what promises to be one of the group stage's best atmospheres"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "position": "Right-Back",
+      "reason": "PSG's world-class defender whose attacking runs and defensive intelligence make him arguably the best right-back in world football"
+    },
+    {
+      "name": "Scott McTominay",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Former Manchester United midfielder now starring at Napoli, Scotland's talisman who scores crucial goals from midfield"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "position": "Winger/Attacking Midfielder",
+      "reason": "Gifted creator whose left foot can produce moments of magic, vital to Morocco's attacking threat"
+    },
+    {
+      "name": "John McGinn",
+      "teamCode": "SCO",
+      "position": "Midfielder",
+      "reason": "Aston Villa's dynamic midfielder who combines tireless work rate with an eye for goal and never-say-die attitude"
+    }
+  ],
+  "tacticalPreview": "Morocco's 4-3-3 under Regragui is one of the most tactically flexible systems in world football. They can sit deep and absorb pressure before exploding on the counter, as they did against Spain and Portugal in 2022, or they can dominate possession against weaker sides. Hakimi's runs from right-back create overloads, while Ziyech's creativity from the right provides the key to unlocking compact defenses. Their midfield pressing is intense and well-coordinated.\n\nScotland's 3-5-2 system under Clarke is built on defensive organization and collective spirit. The back three provides solidity, while Robertson and the right wing-back offer width in attack. McTominay and Gilmour form a midfield partnership that blends physicality with passing quality. Scotland will look to match Morocco's intensity, win aerial duels, and use set pieces as a weapon. The key for Scotland will be containing Hakimi's forward runs without leaving space for Ziyech to exploit.",
+  "prediction": {
+    "predictedOutcome": "MAR",
+    "predictedScore": "1-0",
+    "confidence": 62,
+    "reasoning": "Morocco's superior individual quality and big-tournament pedigree from 2022 give them the edge in what should be a tight, tactical contest. Their defensive organization is among the best in the world, and they are clinical on the counter-attack. Scotland will make it difficult but may struggle to create clear chances.",
+    "alternativeScenario": "Scotland could produce an upset with a set-piece goal or a McTominay strike from midfield. A 1-1 draw is a realistic outcome if Scotland can stay in the match and capitalize on one of the few chances Morocco's defense concedes. This type of tight, cagey match is where Scotland perform best."
+  },
+  "pastEncountersSummary": "Morocco and Scotland have had very few competitive encounters in their footballing histories. Their paths have rarely crossed in World Cup qualifying given they are in different confederations, and meaningful friendly matches between the two have been scarce. This 2026 World Cup group stage match represents their most significant meeting, with potential knockout stage qualification at stake.",
+  "funFacts": [
+    "Morocco's 2022 World Cup semi-final run included conceding just one goal from open play in the entire tournament before the semi-final",
+    "Scotland have qualified for eight World Cups but have never made it past the group stage, a record unmatched by any nation",
+    "Morocco's Walid Regragui became the first African-born coach to lead a team to a World Cup semi-final in 2022",
+    "Scotland's Andrew Robertson and Morocco's Achraf Hakimi are widely regarded as two of the best full-backs in world football",
+    "Both Morocco and Scotland have passionate traveling fan bases known for creating electric atmospheres at away matches"
+  ],
+  "isFirstMeeting": false
+}

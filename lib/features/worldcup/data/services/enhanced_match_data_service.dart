@@ -365,25 +365,15 @@ class EnhancedMatchDataService {
   /// H2H files use alphabetically sorted team codes as filenames
   /// (e.g., ARG_BRA.json, not BRA_ARG.json).
   Future<Map<String, dynamic>?> getHeadToHead(String code1, String code2) async {
-    final upper1 = code1.toUpperCase();
-    final upper2 = code2.toUpperCase();
+    // Sort alphabetically to match file naming convention (e.g. ARG_BRA.json)
+    final codes = [code1.toUpperCase(), code2.toUpperCase()]..sort();
+    final key = '${codes[0]}_${codes[1]}';
 
-    // Try both orderings in cache
-    final key1 = '${upper1}_$upper2';
-    final key2 = '${upper2}_$upper1';
-    if (_h2hCache.containsKey(key1)) return _h2hCache[key1];
-    if (_h2hCache.containsKey(key2)) return _h2hCache[key2];
+    if (_h2hCache.containsKey(key)) return _h2hCache[key];
 
-    // Try loading with first ordering
-    var data = await _loadJsonAsset('assets/data/worldcup/head_to_head/$key1.json');
+    final data = await _loadJsonAsset('assets/data/worldcup/head_to_head/$key.json');
     if (data != null) {
-      _h2hCache[key1] = data;
-      return data;
-    }
-    // Try second ordering
-    data = await _loadJsonAsset('assets/data/worldcup/head_to_head/$key2.json');
-    if (data != null) {
-      _h2hCache[key2] = data;
+      _h2hCache[key] = data;
       return data;
     }
     return null;
@@ -409,30 +399,19 @@ class EnhancedMatchDataService {
     String code1,
     String code2,
   ) async {
-    final upper1 = code1.toUpperCase();
-    final upper2 = code2.toUpperCase();
+    // Sort alphabetically to match file naming convention (e.g. ARG_BRA.json)
+    final codes = [code1.toUpperCase(), code2.toUpperCase()]..sort();
+    final key = '${codes[0]}_${codes[1]}';
 
-    // Try both orderings in cache
-    final key1 = '${upper1}_$upper2';
-    final key2 = '${upper2}_$upper1';
-    if (_matchSummaryCache.containsKey(key1)) return _matchSummaryCache[key1];
-    if (_matchSummaryCache.containsKey(key2)) return _matchSummaryCache[key2];
+    if (_matchSummaryCache.containsKey(key)) return _matchSummaryCache[key];
 
-    // Try loading with first ordering
-    var data = await _loadJsonAsset(
-        'assets/data/worldcup/match_summaries/$key1.json');
+    final data = await _loadJsonAsset(
+        'assets/data/worldcup/match_summaries/$key.json');
     if (data != null) {
-      _matchSummaryCache[key1] = data;
+      _matchSummaryCache[key] = data;
       return data;
     }
-    // Try second ordering
-    data = await _loadJsonAsset(
-        'assets/data/worldcup/match_summaries/$key2.json');
-    if (data != null) {
-      _matchSummaryCache[key2] = data;
-      return data;
-    }
-    _matchSummaryCache[key1] = null;
+    _matchSummaryCache[key] = null;
     return null;
   }
 

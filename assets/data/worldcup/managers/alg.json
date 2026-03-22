@@ -1,0 +1,21 @@
+{
+  "id": "manager_alg",
+  "firstName": "Vladimir",
+  "lastName": "Petković",
+  "commonName": "Vladimir Petković",
+  "dateOfBirth": "1963-08-15",
+  "nationality": "Bosnia and Herzegovina",
+  "currentTeam": "Algeria",
+  "currentTeamCode": "ALG",
+  "photoUrl": "assets/managers/petkovic.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Tactical",
+  "yearsExperience": 20,
+  "previousTeams": ["Bellinzona", "Young Boys", "Sion", "Lazio", "Switzerland NT", "Bordeaux"],
+  "trophies": ["Swiss Cup 2009 (Sion)", "Coppa Italia runner-up 2013 (Lazio)"],
+  "careerWins": 170,
+  "careerDraws": 80,
+  "careerLosses": 95,
+  "careerWinPercentage": 49,
+  "bio": "Bosnian-Swiss manager who led Switzerland to the Euro 2020 quarterfinals with a famous victory over France. Appointed Algeria coach in February 2024 and guided the Desert Foxes to 2026 World Cup qualification."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "manager_civ",
+  "firstName": "Emerse",
+  "lastName": "Faé",
+  "commonName": "Emerse Faé",
+  "dateOfBirth": "1984-01-24",
+  "nationality": "Ivory Coast",
+  "currentTeam": "Ivory Coast",
+  "currentTeamCode": "CIV",
+  "photoUrl": "assets/managers/fae.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "High Press",
+  "yearsExperience": 12,
+  "previousTeams": ["OGC Nice (academy)", "Ivory Coast NT (assistant)"],
+  "trophies": ["AFCON 2024 (Ivory Coast)"],
+  "careerWins": 30,
+  "careerDraws": 10,
+  "careerLosses": 8,
+  "careerWinPercentage": 63,
+  "bio": "Former Ivory Coast midfielder who made history by winning the 2024 AFCON as interim manager after being appointed mid-tournament, becoming the first coach to win a major tournament in such circumstances. His playing career was cut short at 28 due to recurring blood clots, and he transitioned to coaching through the OGC Nice academy."
+}

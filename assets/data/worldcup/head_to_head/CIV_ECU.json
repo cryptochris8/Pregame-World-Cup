@@ -1,0 +1,29 @@
+{
+  "id": "CIV_ECU",
+  "team1Code": "CIV",
+  "team2Code": "ECU",
+  "totalMatches": 1,
+  "team1Wins": 0,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 2,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2009-08-12",
+  "firstMeeting": "2009-08-12",
+  "notableMatches": [
+    {
+      "year": 2009,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Unknown",
+      "description": "Only meeting between the two nations ends in a draw"
+    }
+  ]
+}

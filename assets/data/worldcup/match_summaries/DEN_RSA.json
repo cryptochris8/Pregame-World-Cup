@@ -1,0 +1,56 @@
+{
+  "team1Code": "DEN",
+  "team2Code": "RSA",
+  "team1Name": "Denmark",
+  "team2Name": "South Africa",
+  "historicalAnalysis": "Denmark and South Africa have had limited but memorable encounters in international football. Their most notable meetings include friendlies and the 1998 World Cup in France, where both teams competed but did not face each other directly. This Group A clash at the 2026 World Cup represents a fascinating contrast in footballing styles and traditions.\n\nDenmark are experienced World Cup campaigners with deep roots in European football. Their 1992 European Championship triumph remains one of the sport's greatest stories — called up as late replacements, they went on to beat Germany in the final. More recently, Denmark reached the semi-finals of Euro 2020 in an emotionally charged tournament following Christian Eriksen's cardiac arrest on the pitch. The squad features players from Europe's top leagues and a tactical sophistication that makes them dangerous opponents.\n\nSouth Africa's football story is inseparable from the nation's broader history. Their return to international football after the end of apartheid, their hosting of the 2010 World Cup, and their continued development of talent through the Premier Soccer League all form part of Bafana Bafana's identity. Qualifying for 2026 on merit marks a new chapter, and this matchup against a strong European side will test their credentials.",
+  "keyStorylines": [
+    "Denmark's tactical sophistication against South Africa's physical intensity",
+    "Christian Eriksen's inspirational story continuing at another World Cup",
+    "South Africa looking to prove they belong among the world's best",
+    "A matchday 2 clash with major implications for Group A progression",
+    "Two teams with proud underdog stories meeting on the biggest stage"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christian Eriksen",
+      "teamCode": "DEN",
+      "position": "Midfielder",
+      "reason": "Denmark's creative heartbeat whose return from cardiac arrest inspired the world"
+    },
+    {
+      "name": "Ronwen Williams",
+      "teamCode": "RSA",
+      "position": "Goalkeeper",
+      "reason": "South Africa's captain and one of Africa's best goalkeepers — the last line of defense"
+    },
+    {
+      "name": "Rasmus Hojlund",
+      "teamCode": "DEN",
+      "position": "Forward",
+      "reason": "Young striker with Premier League experience bringing pace and power to Denmark's attack"
+    },
+    {
+      "name": "Themba Zwane",
+      "teamCode": "RSA",
+      "position": "Midfielder",
+      "reason": "Experienced playmaker whose vision and passing can create opportunities against Denmark's defense"
+    }
+  ],
+  "tacticalPreview": "Denmark's flexible 3-4-3 or 3-5-2 system provides both defensive solidity and attacking width through their wing-backs. Eriksen orchestrates from a central role, with Hojlund as the focal point. Denmark's pressing is well-organized and their tactical discipline under pressure is a hallmark of Scandinavian football.\n\nSouth Africa will likely set up in a compact 4-4-2 or 4-3-3, looking to match Denmark's intensity and use their physical attributes in midfield battles. Bafana Bafana have pace in wide areas and will look to exploit any space behind Denmark's advancing wing-backs on the counter. Set pieces could be crucial for South Africa, where their aerial ability could trouble Denmark's back line.",
+  "prediction": {
+    "predictedOutcome": "DEN",
+    "predictedScore": "2-1",
+    "confidence": 68,
+    "reasoning": "Denmark's squad depth and experience at major tournaments gives them the edge, but South Africa are capable of making this a tight contest. Denmark's creative quality through Eriksen and attacking threat from Hojlund should be enough to secure the result.",
+    "alternativeScenario": "South Africa's physicality and counter-attacking ability could catch Denmark off guard. If Bafana Bafana take an early lead, Denmark might struggle to break down a deep, organized defense. A 1-1 draw is very possible."
+  },
+  "pastEncountersSummary": "Denmark and South Africa have had few competitive meetings, with most encounters coming in friendly matches. The teams represent different footballing traditions but share underdog DNA — Denmark's 1992 Euros triumph and South Africa's post-apartheid football resurgence are both remarkable sporting stories.",
+  "funFacts": [
+    "Denmark won the 1992 European Championship as late replacements after Yugoslavia were disqualified",
+    "South Africa hosted Africa's first FIFA World Cup in 2010",
+    "Christian Eriksen suffered a cardiac arrest on the pitch at Euro 2020 and made a miraculous recovery",
+    "South Africa's vuvuzela horns became the defining sound of the 2010 World Cup"
+  ],
+  "isFirstMeeting": false
+}

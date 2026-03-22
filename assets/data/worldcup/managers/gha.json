@@ -1,0 +1,21 @@
+{
+  "id": "manager_gha",
+  "firstName": "Otto",
+  "lastName": "Addo",
+  "commonName": "Otto Addo",
+  "dateOfBirth": "1975-06-09",
+  "nationality": "Ghana",
+  "currentTeam": "Ghana",
+  "currentTeamCode": "GHA",
+  "photoUrl": "assets/managers/addo.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "High Press",
+  "yearsExperience": 15,
+  "previousTeams": ["Hamburger SV (youth/assistant)", "Borussia Dortmund (talent coach/assistant)", "Ghana NT (interim 2022)"],
+  "trophies": ["Bundesliga 2002 (Borussia Dortmund, as player)"],
+  "careerWins": 30,
+  "careerDraws": 12,
+  "careerLosses": 15,
+  "careerWinPercentage": 53,
+  "bio": "German-born Ghanaian who became the first coach to lead the Black Stars to two separate World Cups. A former Borussia Dortmund player and talent coach, Addo was reappointed as Ghana's head coach in March 2024 and secured qualification for the 2026 World Cup."
+}

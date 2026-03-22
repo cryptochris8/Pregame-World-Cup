@@ -1,0 +1,57 @@
+{
+  "team1Code": "COD",
+  "team2Code": "POR",
+  "team1Name": "DR Congo",
+  "team2Name": "Portugal",
+  "historicalAnalysis": "DR Congo face Portugal in a Group K match that carries historical weight beyond football. Portugal's colonial history with the Congo region adds a layer of significance to this encounter. On the pitch, Portugal are European champions (2016) and Nations League winners (2019), boasting one of the most talented squads in world football.\n\nPortugal's squad is transitioning beyond the Cristiano Ronaldo era. While Ronaldo remains a cultural icon and all-time leading international goalscorer with over 130 goals, the team's future rests with players like Bruno Fernandes (Manchester United), Bernardo Silva (Manchester City), and Rafael Leão (AC Milan). This generation reached the 2022 World Cup quarterfinals and the Euro 2024 quarterfinals.\n\nDR Congo return to the World Cup for only the second time in their history, 52 years after their first appearance as Zaire in 1974. The Leopards have rebuilt their international reputation through strong performances in African football, and their qualification campaign showcased a squad with genuine quality and resilience.\n\nFor DR Congo, this match against Portugal represents both an enormous challenge and an incredible opportunity. A result against the European heavyweights would instantly become one of the greatest moments in Congolese sporting history and would resonate far beyond the football pitch.",
+  "keyStorylines": [
+    "Portugal's post-Ronaldo evolution on full display",
+    "DR Congo's second-ever World Cup match (52 years after their first)",
+    "Historical colonial ties adding significance beyond football",
+    "Bruno Fernandes and Bernardo Silva leading Portugal's golden generation",
+    "DR Congo looking to make history with a result against European royalty"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Bruno Fernandes",
+      "teamCode": "POR",
+      "position": "Midfielder",
+      "reason": "Manchester United captain and Portugal's creative driving force"
+    },
+    {
+      "name": "Rafael Leão",
+      "teamCode": "POR",
+      "position": "Forward",
+      "reason": "AC Milan's explosive winger with pace and skill to burn"
+    },
+    {
+      "name": "Chancel Mbemba",
+      "teamCode": "COD",
+      "position": "Defender",
+      "reason": "DR Congo's experienced defensive leader, formerly of Porto in Portugal's own league"
+    },
+    {
+      "name": "Silas Katompa Mvumpa",
+      "teamCode": "COD",
+      "position": "Forward",
+      "reason": "Known as Silas at VfB Stuttgart, a dynamic and pacy attacker"
+    }
+  ],
+  "tacticalPreview": "Portugal will dominate possession with their technically superior squad, likely in a 4-3-3 formation. Bernardo Silva's close control and passing in tight spaces, combined with Rafael Leão's explosive dribbling on the left, give Portugal multiple attacking dimensions. Set pieces with their height advantage will also be a threat.\n\nDR Congo will need to be defensively disciplined and organized, likely deploying a deep 5-4-1 or 4-5-1. The Leopards' best hope lies in staying compact, frustrating Portugal, and exploiting any spaces left behind on rapid counter-attacks. Mbemba's experience playing in Portuguese football could provide valuable insight into Portugal's playing style.",
+  "prediction": {
+    "predictedOutcome": "POR",
+    "predictedScore": "3-1",
+    "confidence": 78,
+    "reasoning": "Portugal's individual quality and tournament experience should prove decisive. Their depth of attacking talent will be very difficult for DR Congo to contain across the full 90 minutes.",
+    "alternativeScenario": "If DR Congo can stay in the game past halftime and Portugal become frustrated, a spirited Congolese performance could yield a surprise 1-1 draw."
+  },
+  "pastEncountersSummary": "DR Congo and Portugal have no significant history of competitive meetings at senior international level. This will be a first World Cup encounter between the two nations.",
+  "funFacts": [
+    "Cristiano Ronaldo has scored more international goals than any male footballer in history, surpassing 130",
+    "Chancel Mbemba played for Porto in Portugal's Primeira Liga, giving him familiarity with Portuguese football",
+    "DR Congo's 1974 World Cup squad (as Zaire) included the legendary Ndaye Mulamba, African Footballer of the Year",
+    "Portugal won Euro 2016 despite drawing all three group stage matches",
+    "DR Congo's Léopards are two-time African champions (1968, 1974)"
+  ],
+  "isFirstMeeting": true
+}

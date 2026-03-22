@@ -1,0 +1,57 @@
+{
+  "team1Code": "ALG",
+  "team2Code": "AUT",
+  "team1Name": "Algeria",
+  "team2Name": "Austria",
+  "historicalAnalysis": "The meeting of Algeria and Austria at the 2026 World Cup is loaded with historical resonance that transcends their direct footballing relationship. These two nations are forever linked by one of the most controversial episodes in World Cup history: the 'Disgrace of Gijon' at the 1982 World Cup in Spain. In that tournament, Algeria had sensationally beaten West Germany 2-1 in their opening match, but were eliminated from the group after West Germany and Austria played out a cynical 1-0 result that suited both European teams, sending Algeria home on goal difference despite having more points than expected.\n\nThat shameful match led directly to one of FIFA's most important rule changes — the mandate that final group-stage matches must be played simultaneously. Forty-four years later, Algeria and Austria find themselves in the same group once again, along with Argentina, adding layers of narrative intrigue to every match in Group J. For Algerian football, this is a chance for poetic justice on the world's biggest stage.\n\nAustria's football tradition is rich but inconsistent at the highest level. Their golden era came in the 1930s with the legendary 'Wunderteam' and they achieved a third-place finish at the 1954 World Cup. More recently, Austria have become a competitive European side, qualifying for Euro 2016 and Euro 2024, where they impressed under Ralf Rangnick with an energetic, high-pressing style that troubled several top nations. Their Bundesliga and Premier League-based squad provides a solid foundation.\n\nAlgeria's World Cup pedigree includes appearances in 1982, 1986, 2010, and 2014. The 2014 campaign in Brazil was their finest, reaching the Round of 16 where they gave eventual champions Germany a significant scare before losing 2-1 in extra time. Under continued development, Algerian football has maintained its status as one of Africa's strongest programs, bolstered by a deep pool of dual-nationality players based in France and across Europe.",
+  "keyStorylines": [
+    "The 'Disgrace of Gijon' rematch — 44 years after the 1982 World Cup scandal that eliminated Algeria, these two nations meet again on football's grandest stage",
+    "Austria's high-pressing system under Ralf Rangnick's tactical influence faces Algeria's technically gifted, transition-oriented approach",
+    "Algeria's quest to make a statement for African football and avenge a historical injustice that changed World Cup rules forever",
+    "Austria looking to advance past the group stage at a World Cup for the first time since 1982 — the very same tournament as the Gijon incident",
+    "The battle of European-based squads — both teams rely heavily on players from top European leagues, creating a fascinating tactical chess match"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Christoph Baumgartner",
+      "position": "Attacking Midfielder",
+      "teamCode": "AUT",
+      "reason": "RB Leipzig's dynamic attacking midfielder who starred at Euro 2024 with his movement and finishing"
+    },
+    {
+      "name": "Amine Gouiri",
+      "position": "Forward",
+      "teamCode": "ALG",
+      "reason": "Algeria's most creative attacker, capable of unlocking defenses with his dribbling and vision"
+    },
+    {
+      "name": "Konrad Laimer",
+      "position": "Midfielder",
+      "teamCode": "AUT",
+      "reason": "Bayern Munich's tireless midfielder provides energy, pressing intensity, and tactical discipline"
+    },
+    {
+      "name": "Ismael Bennacer",
+      "position": "Midfielder",
+      "teamCode": "ALG",
+      "reason": "AC Milan's midfield anchor who controls tempo and provides defensive solidity for Algeria"
+    }
+  ],
+  "tacticalPreview": "Austria have adopted a modern, aggressive pressing style influenced by Ralf Rangnick's footballing philosophy. They typically line up in a 4-2-3-1 or 4-3-3 formation, pressing high and looking to win the ball in advanced areas. Players like Konrad Laimer and Nicolas Seiwald provide the engine in midfield, while Christoph Baumgartner offers creativity and goals from advanced positions. Austria's defenders are comfortable playing a high line and building from the back, though this can leave them vulnerable to pace on the counter.\n\nAlgeria will look to exploit Austria's high defensive line with quick transitions and direct vertical passes. The Desert Foxes possess the technical quality to play through Austria's press when composed, but their primary threat will come from springing fast attacks when possession is won. Ismael Bennacer's ability to receive under pressure and distribute quickly will be crucial. Algeria's wide players will look to isolate Austria's fullbacks in one-on-one situations, while the midfield battle — high press versus composed build-up — will likely determine the outcome.",
+  "prediction": {
+    "predictedOutcome": "AUT",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Austria's tactical organization, physical intensity, and experience in major tournaments gives them a narrow edge. Their pressing game can disrupt Algeria's build-up play, and they possess more consistent quality across the squad. However, Algeria's counter-attacking threat means this is far from a foregone conclusion.",
+    "alternativeScenario": "Algeria's big-game mentality and desire for historical redemption could see them produce a disciplined, inspired performance. A 1-1 draw would not be surprising, with Algeria taking an early lead and Austria fighting back through sustained pressure."
+  },
+  "pastEncountersSummary": "Algeria and Austria have had very few direct meetings in international football. Their histories are connected not by head-to-head matches but by the infamous 1982 World Cup incident in Gijon, where Austria and West Germany played out a result that eliminated Algeria from the tournament. This indirect but deeply significant connection gives their 2026 World Cup meeting an emotional weight that goes far beyond the result on the pitch.",
+  "funFacts": [
+    "The 'Disgrace of Gijon' in 1982 is one of the most infamous matches in World Cup history — Algerian fans waved banknotes at the players and one fan even burned a Spanish flag in protest",
+    "Austria's best World Cup finish was third place in 1954 in Switzerland, where they beat hosts Switzerland 7-5 in the quarterfinals — still the highest-scoring World Cup match ever",
+    "Algeria have produced several players who could have represented France but chose the Desert Foxes, including Riyad Mahrez, Ismael Bennacer, and Amine Gouiri",
+    "Austria's football culture dates back to the 1900s, and the Austrian 'Wunderteam' of the 1930s under Hugo Meisl is considered one of the first great international football sides",
+    "FIFA's rule requiring simultaneous kick-offs for final group matches — implemented because of what happened to Algeria in 1982 — will apply to this very group in 2026"
+  ],
+  "isFirstMeeting": false
+}

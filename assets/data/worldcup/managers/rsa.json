@@ -1,0 +1,21 @@
+{
+  "id": "manager_rsa",
+  "firstName": "Hugo",
+  "lastName": "Broos",
+  "commonName": "Hugo Broos",
+  "dateOfBirth": "1952-04-10",
+  "nationality": "Belgium",
+  "currentTeam": "South Africa",
+  "currentTeamCode": "RSA",
+  "photoUrl": "assets/managers/broos.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 30,
+  "previousTeams": ["Club Brugge", "Anderlecht", "Cameroon NT", "Trabzonspor", "KRC Genk"],
+  "trophies": ["AFCON 2017 (Cameroon)", "Belgian First Division 2003, 2005 (Club Brugge)", "Belgian Super Cup 2002, 2004 (Club Brugge)"],
+  "careerWins": 250,
+  "careerDraws": 110,
+  "careerLosses": 130,
+  "careerWinPercentage": 51,
+  "bio": "Experienced Belgian manager who transformed Bafana Bafana after his appointment in 2021, building a youthful squad that qualified South Africa for the 2026 World Cup. Previously led Cameroon to AFCON glory in 2017 and managed top Belgian clubs including Club Brugge and Anderlecht."
+}

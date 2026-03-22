@@ -280,7 +280,7 @@ const FanSubscriptionScreen: React.FC = () => {
         <div className="text-center py-12">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-8" style={{ color: 'var(--pregame-text-light)' }}>
-              Join thousands of SEC fans already using Pregame
+              Join thousands of World Cup fans already using Pregame
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="pregame-card text-center">

@@ -1,94 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import PregameLogo from '../../assets/pregame_logo.png';
-import { environment, validateEnvironment } from '../../config/environment';
+import { environment } from '../../config/environment';
 
 // Initialize Stripe with secure environment configuration
 const stripePromise = loadStripe(environment.stripePublishableKey);
 
-interface SubscriptionInfo {
-  status: string;
-  plan: string;
-  currentPeriodEnd: Date | null;
-  stripeCustomerId: string | null;
-}
+const PRICE_ID = 'price_1RYpTMQ811jRCI3C9vVGazTM'; // One-time $499 World Cup listing fee
 
 const VenueSubscriptionSimple: React.FC = () => {
   const [loading, setLoading] = useState(false);
-  const [subscriptionInfo, setSubscriptionInfo] = useState<SubscriptionInfo | null>(null);
+  const [purchased, setPurchased] = useState(false);
 
-  // Early Bird pricing structure (restored original)
-  const subscriptionPlans = {
-    basic: {
-      name: 'Basic (Early Bird Special)',
-      priceId: 'price_1RYpTMQ811jRCI3C9vVGazTM',
-      price: 49,
-      originalPrice: 79,
-      earlyBird: true,
-      popular: false,
-      features: [
-        'Venue profile management',
-        'Basic specials promotion',
-        'Customer messaging',
-        'Basic analytics'
-      ]
-    },
-    pro: {
-      name: 'Pro (Early Bird Special)',
-      priceId: 'price_1RYqeoQ811jRCI3CAq5mVLGw',
-      price: 99,
-      originalPrice: 149,
-      earlyBird: true,
-      popular: true,
-      features: [
-        'Everything in Basic',
-        'Live streaming capability',
-        'Advanced analytics dashboard',
-        'Priority support',
-        'Featured listings'
-      ]
-    },
-    enterprise: {
-      name: 'Enterprise (Early Bird Special)',
-      priceId: 'price_1RYqfIQ811jRCI3CAJbma9Lu',
-      price: 199,
-      originalPrice: 299,
-      earlyBird: true,
-      popular: false,
-      features: [
-        'Everything in Pro',
-        'Multiple locations',
-        'Custom integrations',
-        'Dedicated account manager',
-        'Revenue sharing options'
-      ]
-    }
-  };
-
-  useEffect(() => {
-    // Simulate fetching subscription info
-    // In real app, this would come from your backend
-    setSubscriptionInfo(null); // No active subscription for demo
-  }, []);
-
-  const handleSubscribe = async (priceId: string) => {
+  const handlePurchase = async () => {
     try {
       setLoading(true);
-      
+
       const stripe = await stripePromise;
       if (!stripe) {
         throw new Error('Stripe failed to load');
       }
 
-      // Create checkout session
       const response = await fetch(`https://us-central1-pregame-6c1e9.cloudfunctions.net/createCheckoutSession`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          priceId,
-          venueId: `venue_${Date.now()}`, // In real app, get from user context
+          priceId: PRICE_ID,
+          venueId: `venue_${Date.now()}`,
           successUrl: `${window.location.origin}/venue/dashboard?success=true`,
           cancelUrl: window.location.href,
         }),
@@ -99,26 +37,17 @@ const VenueSubscriptionSimple: React.FC = () => {
       }
 
       const { sessionId } = await response.json();
-
-      // Redirect to Stripe Checkout
-      const result = await stripe.redirectToCheckout({
-        sessionId,
-      });
+      const result = await stripe.redirectToCheckout({ sessionId });
 
       if (result.error) {
         throw new Error(result.error.message);
       }
     } catch (error) {
-      console.error('Subscription error:', error);
-      alert('Subscription failed. Please try again.');
+      console.error('Purchase error:', error);
+      alert('Payment failed. Please try again.');
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleManageSubscription = () => {
-    // In real app, redirect to Stripe customer portal
-    alert('Demo: Would redirect to Stripe customer portal for subscription management');
   };
 
   if (loading) {
@@ -129,201 +58,141 @@ const VenueSubscriptionSimple: React.FC = () => {
     );
   }
 
+  if (purchased) {
+    return (
+      <div className="flex justify-center items-center min-h-screen" style={{ background: 'var(--pregame-dark-bg)' }}>
+        <div className="pregame-card text-center max-w-md">
+          <div className="text-6xl mb-4">✅</div>
+          <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--pregame-text-light)' }}>You're Listed!</h2>
+          <p style={{ color: 'var(--pregame-text-muted)' }}>
+            Your venue is now live on Pregame for World Cup 2026. Fans can find you, RSVP to watch parties, and see your match day specials.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen" style={{ background: 'var(--pregame-dark-bg)' }}>
-      {/* Header with Pregame gradient */}
+      {/* Header */}
       <div className="pregame-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center text-white">
-            <div className="flex items-center justify-center mb-6">
-              <img src={PregameLogo} alt="Pregame" className="h-12 w-auto mr-4" />
-              <h1 className="text-5xl font-bold">for Venues</h1>
-            </div>
-            <p className="mt-4 text-xl opacity-90 max-w-2xl mx-auto">
-              Connect with college football fans and grow your game day business
-            </p>
-            <div className="mt-6 inline-flex items-center px-6 py-3 bg-white bg-opacity-20 backdrop-blur-sm text-white rounded-full text-lg font-medium">
-              🔥 Early Bird Pricing - Limited Time!
-            </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center text-white">
+          <div className="flex items-center justify-center mb-6">
+            <img src={PregameLogo} alt="Pregame" className="h-12 w-auto mr-4" />
+            <h1 className="text-5xl font-bold">for Venues</h1>
           </div>
+          <p className="mt-4 text-xl opacity-90 max-w-2xl mx-auto">
+            Get your venue in front of World Cup 2026 fans looking for the perfect place to watch every match
+          </p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Current Subscription Status */}
-        {subscriptionInfo && subscriptionInfo.status === 'active' && (
-          <div className="pregame-card mb-12 border-l-4 border-green-500">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--pregame-text-light)' }}>✅ Active Subscription</h2>
-                <div className="flex items-center space-x-6">
-                  <div>
-                    <p className="text-sm font-medium" style={{ color: 'var(--pregame-text-muted)' }}>Status</p>
-                    <span className="inline-flex px-3 py-1 text-sm font-semibold rounded-full bg-green-500 bg-opacity-20 text-green-400">
-                      Active
-                    </span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium" style={{ color: 'var(--pregame-text-muted)' }}>Plan</p>
-                    <p className="font-bold" style={{ color: 'var(--pregame-text-light)' }}>{subscriptionInfo.plan}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium" style={{ color: 'var(--pregame-text-muted)' }}>Next Billing</p>
-                    <p className="font-bold" style={{ color: 'var(--pregame-text-light)' }}>
-                      {subscriptionInfo.currentPeriodEnd?.toLocaleDateString()}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <button
-                onClick={handleManageSubscription}
-                className="btn-pregame-primary"
-              >
-                Manage Subscription
-              </button>
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        {/* Single Pricing Card */}
+        <div className="pregame-card text-center mb-12" style={{ borderColor: '#ff6b35', borderWidth: '2px' }}>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-orange-500 bg-opacity-20 text-orange-400 mb-6">
+            ⚽ World Cup 2026 Venue Listing
+          </div>
+
+          <div className="mb-8">
+            <div className="flex items-end justify-center gap-2 mb-2">
+              <span className="text-7xl font-bold" style={{ color: 'var(--pregame-orange)' }}>$499</span>
             </div>
+            <p className="text-lg" style={{ color: 'var(--pregame-text-muted)' }}>
+              One-time fee — full access for the entire tournament
+            </p>
           </div>
-        )}
 
-        {/* Subscription Plans */}
-        {(!subscriptionInfo || subscriptionInfo.status !== 'active') && (
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            {Object.entries(subscriptionPlans).map(([key, plan]) => (
-              <div 
-                key={key} 
-                className={`pregame-card relative ${plan.popular ? 'transform scale-105 border-orange-500' : ''}`}
-                style={plan.popular ? { 
-                  background: 'rgba(255, 165, 0, 0.05)',
-                  borderColor: '#ff6b35'
-                } : {}}
-              >
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <span className="bg-orange-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
-                      🏆 Most Popular
-                    </span>
-                  </div>
-                )}
-                
-                {/* Plan Header */}
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold mb-2" style={{ color: 'var(--pregame-text-light)' }}>
-                    {plan.name}
-                  </h3>
-                  
-                  {/* Early Bird Badge */}
-                  {plan.earlyBird && (
-                    <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-500 bg-opacity-20 text-red-400 mb-4">
-                      🔥 Early Bird Special
-                    </div>
-                  )}
-                  
-                  {/* Price Display */}
-                  <div className="mb-6">
-                    <div className="flex items-center justify-center">
-                      <span className="text-5xl font-bold" style={{ color: plan.popular ? 'var(--pregame-orange)' : 'var(--pregame-text-light)' }}>
-                        ${plan.price}
-                      </span>
-                      <span className="text-xl ml-2" style={{ color: 'var(--pregame-text-muted)' }}>/month</span>
-                    </div>
-                    {plan.earlyBird && (
-                      <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
-                        Regular price: <span className="line-through">${plan.originalPrice}/month</span>
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                {/* Features List */}
-                <div className="mb-8">
-                  <h4 className="font-semibold mb-4" style={{ color: 'var(--pregame-text-light)' }}>What's included:</h4>
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, index) => (
-                      <li key={index} className="flex items-start">
-                        <span style={{ color: plan.popular ? 'var(--pregame-orange)' : '#22c55e' }} className="mr-3 mt-1">✓</span>
-                        <span style={{ color: 'var(--pregame-text-muted)' }}>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* CTA Button */}
-                <button
-                  onClick={() => handleSubscribe(plan.priceId)}
-                  disabled={loading}
-                  className={`w-full py-4 px-6 rounded-lg font-bold text-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
-                    plan.popular 
-                      ? 'btn-pregame-primary' 
-                      : 'bg-white bg-opacity-10 hover:bg-opacity-20 text-white border border-gray-600'
-                  }`}
-                >
-                  {loading ? 'Processing...' : `Get ${plan.name.split(' ')[0]}`}
-                </button>
-              </div>
-            ))}
+          {/* Features */}
+          <div className="text-left mb-10">
+            <h4 className="font-semibold mb-6 text-center text-lg" style={{ color: 'var(--pregame-text-light)' }}>
+              Everything included:
+            </h4>
+            <ul className="space-y-4">
+              {[
+                'Venue profile listed in the Pregame app',
+                'Appear in World Cup match day venue searches',
+                'Host & promote watch parties with fan RSVP',
+                'Post match day specials & drink deals',
+                'Fan check-ins, reviews, and photos',
+                'Live stream your venue atmosphere',
+                'Direct fan messaging & notifications',
+                'Match day crowd & revenue analytics',
+                'Full access through the 2026 World Cup Final',
+              ].map((feature, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-orange-400 mt-0.5 text-lg">✓</span>
+                  <span style={{ color: 'var(--pregame-text-muted)' }}>{feature}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-        )}
+
+          <button
+            onClick={handlePurchase}
+            disabled={loading}
+            className="w-full btn-pregame-primary py-5 text-xl font-bold rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {loading ? 'Processing...' : 'Get Listed for $499'}
+          </button>
+
+          <p className="mt-4 text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
+            Secure payment via Stripe. No recurring charges.
+          </p>
+        </div>
 
         {/* Trust Indicators */}
-        <div className="text-center py-12">
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8" style={{ color: 'var(--pregame-text-light)' }}>
-              Trusted by sports venues across the SEC
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="pregame-card text-center">
-                <div className="text-3xl font-bold" style={{ color: 'var(--pregame-orange)' }}>500+</div>
-                <p style={{ color: 'var(--pregame-text-muted)' }}>Venues Connected</p>
-              </div>
-              <div className="pregame-card text-center">
-                <div className="text-3xl font-bold" style={{ color: 'var(--pregame-orange)' }}>50K+</div>
-                <p style={{ color: 'var(--pregame-text-muted)' }}>Fans Engaged</p>
-              </div>
-              <div className="pregame-card text-center">
-                <div className="text-3xl font-bold" style={{ color: 'var(--pregame-orange)' }}>$2M+</div>
-                <p style={{ color: 'var(--pregame-text-muted)' }}>Revenue Generated</p>
-              </div>
-            </div>
+        <div className="grid grid-cols-3 gap-6 mb-16">
+          <div className="pregame-card text-center py-6">
+            <div className="text-3xl font-bold" style={{ color: 'var(--pregame-orange)' }}>500+</div>
+            <p className="text-sm mt-1" style={{ color: 'var(--pregame-text-muted)' }}>Venues Listed</p>
+          </div>
+          <div className="pregame-card text-center py-6">
+            <div className="text-3xl font-bold" style={{ color: 'var(--pregame-orange)' }}>50K+</div>
+            <p className="text-sm mt-1" style={{ color: 'var(--pregame-text-muted)' }}>Active Fans</p>
+          </div>
+          <div className="pregame-card text-center py-6">
+            <div className="text-3xl font-bold" style={{ color: 'var(--pregame-orange)' }}>104</div>
+            <p className="text-sm mt-1" style={{ color: 'var(--pregame-text-muted)' }}>Matches to Promote</p>
           </div>
         </div>
 
-        {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto py-12">
+        {/* FAQ */}
+        <div>
           <h3 className="text-2xl font-bold text-center mb-8" style={{ color: 'var(--pregame-text-light)' }}>
             Frequently Asked Questions
           </h3>
-          <div className="space-y-6">
-            <div className="pregame-card">
-              <h4 className="font-semibold mb-2" style={{ color: 'var(--pregame-text-light)' }}>
-                How long is the Early Bird pricing available?
-              </h4>
-              <p style={{ color: 'var(--pregame-text-muted)' }}>
-                Early Bird pricing is available for a limited time during our launch phase. 
-                Lock in these rates now and keep them as long as you maintain your subscription.
-              </p>
-            </div>
-            <div className="pregame-card">
-              <h4 className="font-semibold mb-2" style={{ color: 'var(--pregame-text-light)' }}>
-                Can I change plans later?
-              </h4>
-              <p style={{ color: 'var(--pregame-text-muted)' }}>
-                Yes! You can upgrade or downgrade your plan anytime. Changes take effect at your next billing cycle.
-              </p>
-            </div>
-            <div className="pregame-card">
-              <h4 className="font-semibold mb-2" style={{ color: 'var(--pregame-text-light)' }}>
-                What payment methods do you accept?
-              </h4>
-              <p style={{ color: 'var(--pregame-text-muted)' }}>
-                We accept all major credit cards (Visa, MasterCard, American Express) and debit cards 
-                through our secure Stripe payment processing.
-              </p>
-            </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Is this really a one-time fee?',
+                a: 'Yes. Pay $499 once and your venue is listed on Pregame for the entire 2026 FIFA World Cup — from the group stage through the Final in July 2026. No monthly charges, no renewals.',
+              },
+              {
+                q: 'When does my listing go live?',
+                a: 'Immediately after payment. Your venue profile will be visible to fans in the Pregame app right away, and you can start adding specials and watch parties.',
+              },
+              {
+                q: 'What payment methods do you accept?',
+                a: 'All major credit and debit cards (Visa, Mastercard, American Express) via secure Stripe checkout.',
+              },
+              {
+                q: 'What happens after the World Cup?',
+                a: 'Your listing covers the full 2026 tournament. We\'ll reach out closer to the end with options for continued listing for future events.',
+              },
+            ].map((item, i) => (
+              <div key={i} className="pregame-card">
+                <h4 className="font-semibold mb-2" style={{ color: 'var(--pregame-text-light)' }}>{item.q}</h4>
+                <p style={{ color: 'var(--pregame-text-muted)' }}>{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
+
       </div>
     </div>
   );
 };
 
-export default VenueSubscriptionSimple; 
+export default VenueSubscriptionSimple;

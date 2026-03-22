@@ -1,0 +1,57 @@
+{
+  "team1Code": "KSA",
+  "team2Code": "URU",
+  "team1Name": "Saudi Arabia",
+  "team2Name": "Uruguay",
+  "historicalAnalysis": "Saudi Arabia and Uruguay are both nations with proud World Cup traditions, making this a compelling group-stage encounter between two teams with genuine pedigree. Saudi Arabia's 2022 World Cup will forever be remembered for the stunning 2-1 victory over Argentina, one of the greatest upsets in tournament history. The Green Falcons, with goals from Saleh Al-Shehri and the sensational Salem Al-Dawsari, showed the world that they are capable of competing at the highest level when tactically disciplined and mentally focused.\n\nUruguay are two-time World Cup champions, having won the inaugural 1930 tournament and then producing the legendary 'Maracanazo' by defeating Brazil in the 1950 final. The Celeste have continued to be a force in South American football, reaching the 2010 World Cup semifinals under Oscar Tabarez and consistently qualifying for the tournament despite their small population of 3.5 million. At the 2022 World Cup, Uruguay exited at the group stage in dramatic fashion, with a late goal against Ghana insufficient to see them through on goal difference.\n\nBoth nations share a tradition of producing footballers of exceptional quality relative to their resources. Saudi Arabia's investment in the Saudi Pro League has attracted global stars and raised domestic standards, while Uruguay's famous 'garra charrua' continues to produce world-class talents like Federico Valverde and Darwin Nunez who compete at Europe's biggest clubs. This match could be pivotal in determining which team advances from the group.",
+  "keyStorylines": [
+    "Saudi Arabia's 2022 giant-killing reputation against Uruguay's two-time World Cup-winning pedigree",
+    "Federico Valverde and Darwin Nunez leading a Uruguayan attack against Saudi Arabia's organized defense",
+    "A potential group-deciding match between two teams with realistic knockout-stage ambitions",
+    "Saudi Arabia looking to prove their 2022 Argentina victory was no fluke against another South American power",
+    "Uruguay's 2022 group-stage exit adding extra motivation to ensure qualification this time"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Salem Al-Dawsari",
+      "position": "Winger/Forward",
+      "teamCode": "KSA",
+      "reason": "Saudi Arabia's talisman and the hero of the Argentina upset. Al-Dawsari's technical ability, creativity, and penchant for producing moments of magic in major matches make him the Green Falcons' most dangerous player."
+    },
+    {
+      "name": "Federico Valverde",
+      "position": "Midfielder",
+      "teamCode": "URU",
+      "reason": "The complete midfielder combines extraordinary athleticism with technical brilliance. His ability to drive forward, shoot from distance, and cover every blade of grass makes him one of the world's premier midfielders."
+    },
+    {
+      "name": "Darwin Nunez",
+      "position": "Striker",
+      "teamCode": "URU",
+      "reason": "The explosive Liverpool forward is Uruguay's primary attacking threat, combining electric pace, aerial ability, and a relentless work ethic that embodies the Celeste's fighting spirit."
+    },
+    {
+      "name": "Saleh Al-Shehri",
+      "position": "Striker",
+      "teamCode": "KSA",
+      "reason": "The clinical striker scored Saudi Arabia's equalizer against Argentina at the 2022 World Cup. His movement and finishing in the box provide the Green Falcons with a constant goal threat."
+    }
+  ],
+  "tacticalPreview": "Uruguay will set up in their typical 4-3-3 or 4-4-2, prioritizing defensive organization and midfield control before unleashing their attacking weapons on the transition. Valverde's ability to surge from midfield and link with Nunez creates a devastating counter-attacking axis. Uruguay are also formidable at set pieces, with multiple aerial threats in Nunez, Ronald Araujo, and their centre-backs. The Celeste will look to control the tempo and force Saudi Arabia into defensive positions where their high-line tactics become too risky to employ.\n\nSaudi Arabia face a tactical dilemma: whether to employ the aggressive high-pressing approach that worked so brilliantly against Argentina or adopt a more conservative strategy against Uruguay's pacy forwards. Nunez's speed in behind could punish a high line more ruthlessly than Argentina's slower build-up play did. Saudi Arabia's best chance may be to start cautiously and grow into the game, using Al-Dawsari's creativity and Al-Shehri's movement to threaten on the counter. The midfield battle will be crucial — if Saudi Arabia can match Uruguay's intensity in the middle of the park, they have a genuine chance.",
+  "prediction": {
+    "predictedOutcome": "URU",
+    "predictedScore": "2-1",
+    "confidence": 67,
+    "reasoning": "Uruguay's superior individual quality, particularly through Valverde and Nunez, gives them the edge. Their experience in tight, high-stakes matches and the famous garra charrua mental toughness should prove decisive. However, Saudi Arabia have shown they can compete with anyone and this will not be straightforward for the South Americans.",
+    "alternativeScenario": "Saudi Arabia could produce another upset if they replicate their 2022 tactical discipline. If Al-Dawsari and Al-Shehri can capitalize on counter-attacking opportunities and their defense holds firm, a draw or narrow Saudi victory is possible. Uruguay's 2022 group-stage exit shows they are not immune to early exits."
+  },
+  "pastEncountersSummary": "Saudi Arabia and Uruguay have met on a few occasions in friendly matches and at the FIFA Confederations Cup. Their most notable encounter was at the 2018 World Cup in Russia, where Uruguay won 1-0 thanks to a Luis Suarez goal in a tight group-stage contest. That match demonstrated Saudi Arabia's ability to stay competitive against South American opposition while also showing Uruguay's clinical edge in decisive moments.",
+  "funFacts": [
+    "Uruguay won the first-ever FIFA World Cup in 1930, hosted in their capital Montevideo, defeating Argentina 4-2 in the final",
+    "Saudi Arabia's 2-1 victory over Argentina at the 2022 World Cup ended Argentina's 36-match unbeaten run, one of the longest in international football history",
+    "Uruguay and Saudi Arabia met at the 2018 World Cup in Russia, with Uruguay winning 1-0 through a Luis Suarez goal",
+    "Despite having a population of only 3.5 million, Uruguay have won the Copa America a record 15 times — more than any other South American nation",
+    "Saudi Arabia's national team is known as the 'Green Falcons' (Al-Suqour Al-Khudhur), one of the most recognizable team nicknames in Asian football"
+  ],
+  "isFirstMeeting": false
+}

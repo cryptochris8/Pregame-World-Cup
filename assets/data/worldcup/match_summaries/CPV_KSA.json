@@ -1,0 +1,57 @@
+{
+  "team1Code": "CPV",
+  "team2Code": "KSA",
+  "team1Name": "Cabo Verde",
+  "team2Name": "Saudi Arabia",
+  "historicalAnalysis": "This match brings together two nations at very different points in their World Cup journeys. Cabo Verde, the tiny Atlantic archipelago with a population of approximately 600,000, are making their debut at the FIFA World Cup — an achievement that ranks among the most remarkable qualifying stories in tournament history. Their path through CAF qualifying demonstrated resilience and tactical organization that belied their modest footballing resources.\n\nSaudi Arabia, meanwhile, arrive with the confidence of a nation that produced one of the greatest World Cup upsets in history. At the 2022 World Cup in Qatar, the Green Falcons stunned Lionel Messi's Argentina 2-1 in their opening group match, with goals from Saleh Al-Shehri and Salem Al-Dawsari completing a breathtaking comeback after Messi had given Argentina the lead from the penalty spot. That result sent shockwaves through world football and was celebrated as a national holiday in Saudi Arabia.\n\nSaudi Arabia are now appearing at their seventh World Cup, having first qualified in 1994 when they reached the Round of 16 on debut. The Kingdom has invested heavily in football infrastructure and the Saudi Pro League has attracted global attention through high-profile signings. For Cabo Verde, this represents a more manageable challenge than some of their group opponents, offering a genuine opportunity to compete for a result in their historic first tournament.",
+  "keyStorylines": [
+    "Cabo Verde's historic World Cup debut against a Saudi Arabia side still riding the wave of their 2022 Argentina upset",
+    "Salem Al-Dawsari looking to add to his World Cup legend after his stunning goal against Argentina in 2022",
+    "The contrast between Saudi Arabia's massive football investment and Cabo Verde's grassroots achievement",
+    "Both nations representing the hopes of their respective confederations (CAF and AFC) in a competitive group",
+    "Cabo Verde seeking their first-ever World Cup point against an opponent they might consider beatable"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Salem Al-Dawsari",
+      "position": "Winger/Forward",
+      "teamCode": "KSA",
+      "reason": "The hero of Saudi Arabia's famous victory over Argentina at the 2022 World Cup, Al-Dawsari scored one of the goals of the tournament with a curling strike. He remains the talisman and creative force of the Saudi attack."
+    },
+    {
+      "name": "Mohammed Al-Owais",
+      "position": "Goalkeeper",
+      "teamCode": "KSA",
+      "reason": "The commanding goalkeeper was instrumental in Saudi Arabia's 2022 World Cup campaign, making crucial saves against Argentina. His shot-stopping and distribution make him one of Asia's premier goalkeepers."
+    },
+    {
+      "name": "Ryan Mendes",
+      "position": "Forward",
+      "teamCode": "CPV",
+      "reason": "Cabo Verde's experienced international forward carries the team's attacking threat, with the ability to create something from nothing in transition."
+    },
+    {
+      "name": "Garry Rodrigues",
+      "position": "Winger",
+      "teamCode": "CPV",
+      "reason": "The pacy winger has experience in European and Middle Eastern leagues and brings directness and flair to Cabo Verde's attack. His ability to beat defenders one-on-one is a key weapon."
+    }
+  ],
+  "tacticalPreview": "Saudi Arabia typically deploy a 4-3-3 or 4-2-3-1 system that emphasizes high-energy pressing and quick attacking transitions. Their 2022 World Cup performances showed a team capable of implementing a high defensive line and aggressive offside trap — a tactic that caught Argentina offside multiple times. Al-Dawsari's creativity on the flanks and the team's collective pressing intensity are hallmarks of their style. Saudi Arabia will expect to dominate possession against Cabo Verde and attack with width.\n\nCabo Verde will likely adopt a pragmatic defensive approach, setting up in a compact 4-4-2 or 4-5-1 to limit the spaces available to Saudi Arabia's attackers. Their strength lies in defensive organization, physical resilience, and the ability to compete in set-piece situations. On the counter-attack, Cabo Verde possess quick players who can exploit any defensive lapses. This is the match where Cabo Verde have the best chance of getting something from their World Cup group, and they will approach it with determination and tactical discipline.",
+  "prediction": {
+    "predictedOutcome": "KSA",
+    "predictedScore": "2-1",
+    "confidence": 62,
+    "reasoning": "Saudi Arabia's greater World Cup experience and individual quality, particularly through Al-Dawsari, give them the edge. However, this is far from a foregone conclusion — Cabo Verde are organized and competitive, and Saudi Arabia have historically been inconsistent, following their Argentina heroics with a 2-0 loss to Poland at the 2022 World Cup.",
+    "alternativeScenario": "Cabo Verde could pull off a stunning result if they match Saudi Arabia's intensity and capitalize on set pieces or counter-attacks. Saudi Arabia's high defensive line could be vulnerable to pace on the break, and the pressure of being expected to win could weigh on the Saudis. A draw would be a monumental achievement for the island nation."
+  },
+  "pastEncountersSummary": "Cabo Verde and Saudi Arabia have no significant history of competitive encounters. The two nations come from different confederations and have had virtually no opportunity to meet in official matches. This World Cup group-stage encounter will be their first meaningful meeting, adding a sense of novelty and unpredictability to the fixture.",
+  "funFacts": [
+    "Saudi Arabia's 2-1 victory over Argentina at the 2022 World Cup was declared a national holiday by the Saudi government",
+    "Cabo Verde is an archipelago of 10 volcanic islands in the central Atlantic Ocean, located about 570 kilometers off the west coast of Africa",
+    "Salem Al-Dawsari's goal against Argentina — a curling strike into the top corner — was voted one of the best goals of the 2022 World Cup",
+    "Cabo Verde's football federation was only founded in 1982, making their World Cup qualification barely four decades into their organized footballing history",
+    "Saudi Arabia reached the Round of 16 on their World Cup debut in 1994, beating both Morocco and Belgium in the group stage"
+  ],
+  "isFirstMeeting": true
+}

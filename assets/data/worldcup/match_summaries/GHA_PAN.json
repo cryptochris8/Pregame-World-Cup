@@ -1,0 +1,57 @@
+{
+  "team1Code": "GHA",
+  "team2Code": "PAN",
+  "team1Name": "Ghana",
+  "team2Name": "Panama",
+  "historicalAnalysis": "Ghana and Panama meet in a Group L match that could determine which team advances from a group also containing England and Croatia. Both nations are underdogs in the group, making this fixture a potential six-pointer for knockout round qualification.\n\nGhana have the more extensive World Cup pedigree, having appeared at four previous tournaments (2006, 2010, 2014, 2022). Their 2010 quarterfinal run in South Africa, which ended with the infamous Suárez handball and Asamoah Gyan's missed penalty against Uruguay, remains one of the most dramatic stories in World Cup history. The Black Stars have consistently produced talented players and have a passionate global following.\n\nPanama made their World Cup debut in 2018 in Russia, a landmark achievement for the Central American nation. Though they lost all three group matches, including a 6-1 defeat to England, the qualification itself was celebrated as one of the greatest moments in Panamanian sporting history. Veteran captain Román Torres's qualifying goal against Costa Rica that sealed their place is still remembered with immense pride.\n\nFor both teams, this match is likely the most winnable fixture on their Group L schedule. The stakes could not be higher, as a victory would give either team a realistic chance of reaching the knockout rounds. A loss could effectively end their tournament hopes, adding enormous pressure to what promises to be a tense and dramatic encounter.",
+  "keyStorylines": [
+    "A must-win match for both teams' hopes of advancing from Group L",
+    "Ghana's World Cup experience vs Panama's growing international presence",
+    "Both teams looking to upset the established order against England and Croatia",
+    "Ghana seeking to recapture their 2010 World Cup magic",
+    "Panama aiming to improve on their 2018 World Cup debut performance"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "West Ham's dazzling attacker and Ghana's creative talisman"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "position": "Midfielder",
+      "reason": "Arsenal's midfield powerhouse and Ghana's most experienced star"
+    },
+    {
+      "name": "José Fajardo",
+      "teamCode": "PAN",
+      "position": "Forward",
+      "reason": "Panama's leading striker and main goal threat in qualification"
+    },
+    {
+      "name": "Adalberto Carrasquilla",
+      "teamCode": "PAN",
+      "position": "Midfielder",
+      "reason": "Panama's midfield orchestrator, technically gifted and intelligent"
+    }
+  ],
+  "tacticalPreview": "Ghana will look to take the initiative with a 4-2-3-1 formation, using Kudus's ability to create and score to unlock Panama's defense. The Black Stars' pace in wide areas and physicality in midfield should give them advantages to exploit. Ghana will want to play on the front foot and impose their quality.\n\nPanama will be organized and disciplined, likely in a 4-4-2 or 5-4-1 that prioritizes defensive solidity. Los Canaleros are a hardworking team that defends collectively and looks to exploit set pieces and counter-attacks. Panama's physical commitment and tactical discipline in CONCACAF qualifying has been their hallmark, and they will look to frustrate Ghana before hitting on the break.",
+  "prediction": {
+    "predictedOutcome": "GHA",
+    "predictedScore": "2-1",
+    "confidence": 64,
+    "reasoning": "Ghana's greater World Cup experience and higher individual quality, particularly through Kudus and Partey, should give them the edge in this crucial group match.",
+    "alternativeScenario": "If Panama's defensive organization holds firm and they capitalize on set pieces, a 1-0 Panama victory or 1-1 draw is very possible. CONCACAF teams are notoriously difficult to beat."
+  },
+  "pastEncountersSummary": "Ghana and Panama have no significant history of competitive meetings at senior international level. This World Cup group stage match will be their first meaningful encounter.",
+  "funFacts": [
+    "Panama's 2018 World Cup qualification was celebrated with a national holiday",
+    "Ghana's 2010 World Cup quarterfinal was the first time an African team came within one penalty of a semifinal",
+    "Panama's first-ever World Cup goal was scored by Felipe Baloy against England in 2018",
+    "Mohammed Kudus became the first Ghanaian to score a brace at a World Cup when he netted twice against South Korea in 2022",
+    "Both Ghana and Panama qualified through their respective continental pathways (CAF and CONCACAF)"
+  ],
+  "isFirstMeeting": false
+}

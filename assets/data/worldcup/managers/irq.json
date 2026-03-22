@@ -1,0 +1,21 @@
+{
+  "id": "manager_irq",
+  "firstName": "Graham",
+  "lastName": "Arnold",
+  "commonName": "Graham Arnold",
+  "dateOfBirth": "1963-09-03",
+  "nationality": "Australia",
+  "currentTeam": "Iraq",
+  "currentTeamCode": "IRQ",
+  "photoUrl": "assets/managers/arnold.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "High Press",
+  "yearsExperience": 20,
+  "previousTeams": ["Central Coast Mariners", "Sydney FC", "Australia NT", "Vegalta Sendai"],
+  "trophies": ["A-League Championship 2006 (Central Coast Mariners)", "A-League Championship 2017, 2018, 2019 (Sydney FC)", "FFA Cup 2017 (Sydney FC)"],
+  "careerWins": 180,
+  "careerDraws": 70,
+  "careerLosses": 90,
+  "careerWinPercentage": 53,
+  "bio": "Former Australia manager who led the Socceroos to the Round of 16 at the 2022 World Cup, appointed as Iraq coach in May 2025 after the dismissal of Jesús Casas. An experienced Australian football figure with a decorated A-League managerial career."
+}

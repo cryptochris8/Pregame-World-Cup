@@ -1,0 +1,56 @@
+{
+  "team1Code": "CIV",
+  "team2Code": "CUR",
+  "team1Name": "Ivory Coast",
+  "team2Name": "Curaçao",
+  "historicalAnalysis": "This match represents one of the most dramatic contrasts at the 2026 World Cup. Ivory Coast, the reigning Africa Cup of Nations champions after their remarkable triumph on home soil in January 2024, face Curaçao, a tiny Caribbean island nation making their first ever appearance at a FIFA World Cup. These two nations have never met in any competitive or friendly fixture.\n\nIvory Coast's 2024 AFCON victory was one of the great tournament stories in African football history. After a disastrous group stage that saw them lose to Nigeria and Equatorial Guinea, they sacked coach Jean-Louis Gasset mid-tournament. Emerse Faé took over as interim manager and orchestrated an extraordinary run through the knockout rounds, beating Senegal, Mali, DR Congo, and Nigeria in the final to lift the trophy in Abidjan. That triumph has galvanized a new generation of Ivorian talent and restored the nation's belief after years of underachievement following the golden era of Didier Drogba and Yaya Touré.\n\nCuraçao, a constituent country of the Kingdom of the Netherlands with a population of approximately 150,000, qualified for the World Cup through CONCACAF qualifying. Their journey to this point has been built on a pipeline of dual-national players with Dutch and other European heritage. The island's football federation has grown significantly since gaining separate FIFA membership in 2010, and their appearance at the 2026 World Cup represents the culmination of years of development and smart recruitment of eligible diaspora players.",
+  "keyStorylines": [
+    "Curaçao's historic World Cup debut against the reigning AFCON champions",
+    "Ivory Coast looking to prove their 2024 AFCON triumph was no fluke on the world stage",
+    "David vs Goliath: a nation of 150,000 people against one of Africa's football powerhouses",
+    "Curaçao's Dutch-Caribbean dual nationals facing Ivory Coast's European-based stars",
+    "Both teams seeking to advance from a competitive Group E"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Simon Adingra",
+      "teamCode": "CIV",
+      "position": "Winger",
+      "reason": "Brighton's explosive attacker who starred at the 2024 AFCON, winning the Best Young Player award"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "position": "Midfielder",
+      "reason": "Experienced midfielder who has played in the Premier League and Championship, Curaçao's most high-profile player"
+    },
+    {
+      "name": "Franck Kessié",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Former AC Milan captain who brings Serie A and La Liga experience to Ivory Coast's midfield"
+    },
+    {
+      "name": "Rangelo Janga",
+      "teamCode": "CUR",
+      "position": "Forward",
+      "reason": "Curaçao's all-time leading goalscorer with crucial goals throughout their World Cup qualifying campaign"
+    }
+  ],
+  "tacticalPreview": "Ivory Coast will look to dominate possession and use the pace of their wide attackers to stretch Curaçao's defense. Under Emerse Faé, the Elephants play a fluid 4-3-3 that relies on quick transitions and individual brilliance from players like Adingra and Seko Fofana driving from midfield. Their pressing intensity, honed during the AFCON run, should cause problems for Curaçao's build-up play.\n\nCuraçao will likely adopt a compact 4-4-2 or 5-4-1 defensive shape, prioritizing organization and discipline over possession. Their gameplan will center on staying in the match as long as possible, frustrating Ivory Coast, and looking for opportunities on the counter-attack or from set pieces. The Dutch influence on their football means they are technically competent in possession, but against a side of Ivory Coast's quality, pragmatism will be essential.",
+  "prediction": {
+    "predictedOutcome": "CIV",
+    "predictedScore": "3-0",
+    "confidence": 80,
+    "reasoning": "The gulf in quality between the reigning AFCON champions and World Cup debutants Curaçao should be decisive. Ivory Coast's pace, power, and technical quality across the pitch will likely be too much for Curaçao to contain over 90 minutes.",
+    "alternativeScenario": "If Curaçao can stay organized and keep the score level into the second half, the pressure on Ivory Coast could mount. A heroic defensive performance and a set-piece goal could produce a shocking 1-1 draw."
+  },
+  "pastEncountersSummary": "These two nations have never met in any competitive or friendly fixture. This will be their first ever encounter at any level.",
+  "funFacts": [
+    "Curaçao's population of approximately 150,000 makes them one of the smallest nations ever to appear at a World Cup",
+    "Ivory Coast's 2024 AFCON victory came after they were nearly eliminated in the group stage of their own home tournament",
+    "Several Curaçao players were born in the Netherlands and chose to represent the island through family heritage",
+    "Ivory Coast have appeared at three previous World Cups (2006, 2010, 2014) but have never advanced past the group stage"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ENG_GHA",
+  "team1Code": "ENG",
+  "team2Code": "GHA",
+  "totalMatches": 3,
+  "team1Wins": 2,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 4,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "2022-11-28",
+  "firstMeeting": "2010-06-23",
+  "notableMatches": [
+    {
+      "year": 2022,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Al Khor, Qatar",
+      "description": "England and Ghana play out a goalless draw in World Cup group stage"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "ENG",
+      "location": "London, England",
+      "description": "England beat Ghana at Wembley in pre-World Cup warm-up friendly"
+    },
+    {
+      "year": 2010,
+      "tournament": "Friendly",
+      "stage": null,
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "ENG",
+      "location": "London, England",
+      "description": "England ease past Ghana in pre-World Cup friendly at Wembley"
+    }
+  ]
+}

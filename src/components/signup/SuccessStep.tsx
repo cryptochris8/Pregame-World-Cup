@@ -95,7 +95,7 @@ const SuccessStep: React.FC<SuccessStepProps> = ({
             </span>
             <div>
               <p className="font-medium" style={{ color: 'var(--pregame-text-light)' }}>
-                Create game day specials
+                Create match day specials
               </p>
               <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
                 Set up food & drink deals to bring in the crowds

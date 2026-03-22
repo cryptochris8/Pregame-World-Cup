@@ -1,0 +1,57 @@
+{
+  "team1Code": "ARG",
+  "team2Code": "JOR",
+  "team1Name": "Argentina",
+  "team2Name": "Jordan",
+  "historicalAnalysis": "Argentina versus Jordan at the 2026 World Cup represents one of the most dramatic contrasts in tournament history: the three-time world champions and defending titleholders against a nation making its first-ever World Cup appearance. For Jordan, simply sharing a pitch with Lionel Messi and Argentina at a World Cup is the culmination of decades of footballing development and a dream that seemed unimaginable just a few years ago.\n\nJordan's path to the 2026 World Cup is one of the most inspiring stories in recent football history. The Nashama's extraordinary run to the 2024 Asian Cup final in Qatar — where they defeated established Asian powers South Korea and Iraq before falling to the host nation — transformed Jordanian football overnight. That campaign proved Jordan could compete with the continent's best and generated the momentum that carried them through World Cup qualification. For a country with a population of approximately 11 million and limited footballing infrastructure compared to regional rivals, reaching the World Cup is a monumental achievement.\n\nArgentina, by contrast, enter the 2026 World Cup as the team to beat. Their 2022 triumph in Qatar was the crowning glory of the Messi era and established Lionel Scaloni's team as one of the great international sides. The Albiceleste followed that World Cup victory by winning the 2024 Copa America, extending their unbeaten run and confirming their status as the dominant force in world football. With a squad that blends Messi's enduring brilliance with the energy and quality of Julian Alvarez, Enzo Fernandez, and Alexis Mac Allister, Argentina's depth of talent is formidable.\n\nWhile this match appears to be a significant mismatch on paper, World Cup history is filled with moments where underdogs have risen to the occasion. Jordan's collective spirit, tactical discipline, and the pure emotion of their World Cup debut could make them dangerous opponents, even against the world's best.",
+  "keyStorylines": [
+    "Jordan's World Cup debut — the Nashama make history as they step onto football's biggest stage for the first time in the nation's history",
+    "David versus Goliath — the defending world champions against the tournament's most romantic debutants, a contrast that defines the magic of the World Cup",
+    "Lionel Messi potentially playing his final World Cup matches could face Jordan in what would be a surreal experience for the Jordanian players who grew up idolizing him",
+    "Jordan's 2024 Asian Cup heroics showed the world they are not just participants — they are competitors capable of organized, disciplined football",
+    "Argentina's pursuit of consecutive World Cup titles continues against a team with nothing to lose and everything to gain"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Julian Alvarez",
+      "position": "Forward",
+      "teamCode": "ARG",
+      "reason": "Atletico Madrid's versatile striker combines relentless work rate with clinical finishing"
+    },
+    {
+      "name": "Mousa Al-Tamari",
+      "position": "Winger",
+      "teamCode": "JOR",
+      "reason": "Jordan's most dangerous attacker with pace and creativity from wide positions"
+    },
+    {
+      "name": "Enzo Fernandez",
+      "position": "Midfielder",
+      "teamCode": "ARG",
+      "reason": "Chelsea's World Cup-winning midfielder brings composure, passing range, and leadership"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "position": "Forward",
+      "teamCode": "JOR",
+      "reason": "Jordan's clinical striker who was key to their historic 2023 Asian Cup final run"
+    }
+  ],
+  "tacticalPreview": "Argentina will look to assert their dominance from the outset with their trademark possession-based game. Expect Scaloni to use this match to fine-tune tactical patterns and potentially rotate the squad if the group situation allows. The 4-3-3 system, with Messi drifting freely and the midfield trio of Fernandez, Mac Allister, and a holding midfielder controlling tempo, will look to create overloads and find spaces in Jordan's defensive block. Argentina's quality in the final third means they can score from open play, set pieces, and individual brilliance.\n\nJordan will need to produce the most disciplined defensive performance in their history. A low defensive block, likely a 5-4-1 or 4-5-1, will be essential to limit the space available to Messi and Argentina's creative players. Jordan's game plan will center on defensive organization, concentration for 90 minutes, and hoping to catch Argentina on the counter through Al-Tamari's pace or from set-piece situations. The Nashama showed at the Asian Cup that they can execute this type of game plan effectively — the question is whether they can sustain it against the very best in the world.",
+  "prediction": {
+    "predictedOutcome": "ARG",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "The gulf in quality, experience, and squad depth between these two teams is significant. Argentina have the individual talent to break down any defensive setup, and their tournament experience means they are unlikely to take Jordan lightly. While Jordan will compete bravely, the defending champions should control this match from start to finish.",
+    "alternativeScenario": "World Cup debuts can produce miraculous performances. If Jordan can keep it tight in the first half and remain within striking distance, the pressure on Argentina mounts. A 1-0 Argentina win, with Jordan defending heroically, is a realistic alternative that would earn the Nashama worldwide respect."
+  },
+  "pastEncountersSummary": "Argentina and Jordan have had extremely limited footballing interaction. Their encounters have been restricted to rare friendly matches, and they have never met at a World Cup or other major tournament. This 2026 World Cup match represents by far the most significant meeting between the two nations, pitting one of football's most storied nations against a country experiencing the World Cup for the first time.",
+  "funFacts": [
+    "Jordan's run to the 2024 Asian Cup final included a stunning 2-0 victory over South Korea in the semifinals, one of the biggest upsets in Asian Cup history",
+    "Argentina have won 16 Copa America titles, more than any other South American nation, in addition to their three World Cup triumphs",
+    "Jordan's King Abdullah II is a well-known football enthusiast who has been instrumental in supporting the development of the sport in the country",
+    "If Messi plays against Jordan, many of the Jordanian players will face their childhood idol — Messi has been the world's most popular footballer throughout their entire lives",
+    "Jordan's 2026 World Cup qualification makes them only the fourth nation from West Asia to reach the tournament, following Saudi Arabia, Iran, and Iraq"
+  ],
+  "isFirstMeeting": true
+}

@@ -1,0 +1,29 @@
+{
+  "id": "CRO_GHA",
+  "team1Code": "CRO",
+  "team2Code": "GHA",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 1,
+  "team2Goals": 0,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2014-06-18",
+  "firstMeeting": "2014-06-18",
+  "notableMatches": [
+    {
+      "year": 2014,
+      "tournament": "FIFA World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "CRO",
+      "location": "Manaus, Brazil",
+      "description": "Ivica Olic's goal secures Croatia a narrow victory over Ghana; controversial penalty decision denied to Ghana"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "MEX_RSA",
+  "team1Code": "MEX",
+  "team2Code": "RSA",
+  "totalMatches": 4,
+  "team1Wins": 2,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 10,
+  "team2Goals": 5,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "2010-06-11",
+  "firstMeeting": "1993-10-06",
+  "notableMatches": [
+    {
+      "year": 2010,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Johannesburg, South Africa",
+      "description": "Opening match of 2010 World Cup at Soccer City; Siphiwe Tshabalala's stunning goal answered by Rafael Marquez"
+    },
+    {
+      "year": 2005,
+      "tournament": "CONCACAF Gold Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 2,
+      "winnerCode": "RSA",
+      "location": "Carson, USA",
+      "description": "South Africa upset Mexico as invited guests at the 2005 Gold Cup"
+    },
+    {
+      "year": 1993,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 4,
+      "team2Score": 0,
+      "winnerCode": "MEX",
+      "location": "Los Angeles, USA",
+      "description": "Mexico dominate South Africa in their first-ever meeting"
+    }
+  ]
+}

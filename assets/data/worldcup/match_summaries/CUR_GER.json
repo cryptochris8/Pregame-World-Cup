@@ -1,0 +1,57 @@
+{
+  "team1Code": "CUR",
+  "team2Code": "GER",
+  "team1Name": "Curaçao",
+  "team2Name": "Germany",
+  "historicalAnalysis": "This is the ultimate David vs Goliath story at the 2026 World Cup. Curaçao, a small Caribbean island with a population of roughly 150,000 people, face four-time World Cup champions Germany in what will be one of the most lopsided matchups in tournament history. The gap between these two nations in terms of football infrastructure, resources, and history is almost immeasurable, yet the beauty of the World Cup is that they will share the same pitch.\n\nGermany's World Cup legacy is one of the richest in football. Their four titles (1954, 1974, 1990, 2014) span seven decades of dominance, and they have reached the semi-finals or better at 13 World Cups. However, their recent form at the tournament has been alarming: consecutive group-stage eliminations in 2018 (losing to South Korea and Mexico) and 2022 (losing to Japan and drawing with Spain) have shaken the foundations of German football. The rebuild around generational talents Jamal Musiala and Florian Wirtz represents their attempt to return to the summit, and a match against Curaçao should provide an opportunity to build confidence and goal difference.\n\nFor Curaçao, simply being at the World Cup is the achievement. The island, a constituent country of the Kingdom of the Netherlands located in the southern Caribbean Sea, qualified through CONCACAF and has built their squad largely through Dutch-born players of Curaçaoan descent. Their football association has been a FIFA member in their own right only since 2010, having previously competed as part of the Netherlands Antilles. Every minute on the World Cup stage will be a source of immense pride for the island, and while the result against Germany may be a foregone conclusion, the occasion itself will be unforgettable.",
+  "keyStorylines": [
+    "The ultimate David vs Goliath: a nation of 150,000 people against four-time World Cup champions",
+    "Germany looking to build goal difference and momentum after their recent World Cup failures",
+    "A historic occasion for Curaçao regardless of the result",
+    "Can Curaçao avoid a humiliating scoreline and produce a moment to treasure?",
+    "Germany's young stars Musiala and Wirtz expected to dazzle against limited opposition"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayern Munich's brilliant playmaker who will be expected to orchestrate Germany's attack and provide the creative spark"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "position": "Midfielder",
+      "reason": "Curaçao's most accomplished player with Premier League experience, tasked with providing a competitive presence in midfield"
+    },
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayer Leverkusen's wunderkind who helped deliver their first ever Bundesliga title in an unbeaten 2023-24 season"
+    },
+    {
+      "name": "Rangelo Janga",
+      "teamCode": "CUR",
+      "position": "Forward",
+      "reason": "Curaçao's all-time top scorer who carries the hopes of the island every time he leads the line"
+    }
+  ],
+  "tacticalPreview": "Germany will dominate possession and territory in this match, deploying their 4-2-3-1 with Musiala and Wirtz given freedom to create. The full-backs will push high to create a near-constant siege, and Germany will look to score early and often to boost their goal difference, which could prove crucial in a competitive Group E. Rotations and tactical experiments may feature if Germany build a comfortable lead, with coach keen to manage minutes for the bigger tests ahead.\n\nCuraçao's entire gameplan will revolve around damage limitation and seizing any fleeting opportunity. A deep 5-4-1 defensive block with all players behind the ball, compact lines no more than 30 meters apart, and disciplined man-marking of Musiala and Wirtz in the final third will be essential. Counter-attacks will be rare but must be taken when they come. Set pieces, particularly from free kicks and corners, may represent Curaçao's best chance of scoring. The psychological challenge of not being overwhelmed by the occasion and the opposition will be as important as any tactical plan.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "4-0",
+    "confidence": 85,
+    "reasoning": "The quality gap is enormous. Germany have world-class players in virtually every position, and even in their worst recent tournament performances they have shown they can dominate weaker sides. Curaçao's squad, while committed, simply does not have the quality to compete over 90 minutes.",
+    "alternativeScenario": "If Curaçao show incredible discipline and Germany are wasteful in front of goal, the scoreline could be kept more respectable at 2-0 or 3-0. A Curaçao goal would be a moment of absolute jubilation for the island and one of the stories of the tournament."
+  },
+  "pastEncountersSummary": "Germany and Curaçao have never met in any competitive or friendly fixture. Curaçao previously competed internationally as part of the Netherlands Antilles, who also never faced Germany. This is entirely new territory for both nations.",
+  "funFacts": [
+    "Curaçao's population of approximately 150,000 is smaller than the capacity of many major football stadiums including the Maracanã and Wembley",
+    "Germany have scored more World Cup goals than any other nation in history with over 230 goals across all tournaments",
+    "Curaçao is located just 65 kilometers off the coast of Venezuela in the southern Caribbean Sea",
+    "Germany's 7-1 victory over Brazil in the 2014 World Cup semi-final remains one of the most shocking results in football history",
+    "Before gaining separate FIFA membership in 2010, Curaçao competed as part of the Netherlands Antilles national team"
+  ],
+  "isFirstMeeting": true
+}

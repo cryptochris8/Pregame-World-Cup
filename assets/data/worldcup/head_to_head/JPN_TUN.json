@@ -1,0 +1,49 @@
+{
+  "id": "JPN_TUN",
+  "team1Code": "JPN",
+  "team2Code": "TUN",
+  "totalMatches": 3,
+  "team1Wins": 2,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 4,
+  "team2Goals": 3,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2022-06-14",
+  "firstMeeting": "2002-06-14",
+  "notableMatches": [
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "JPN",
+      "location": "Osaka, Japan",
+      "description": "Morishima and Nakata goals help co-hosts Japan advance from Group H"
+    },
+    {
+      "year": 2022,
+      "tournament": "Kirin Cup",
+      "stage": "Final",
+      "team1Score": 0,
+      "team2Score": 3,
+      "winnerCode": "TUN",
+      "location": "Osaka, Japan",
+      "description": "Tunisia stun Japan to win their first Kirin Cup title"
+    },
+    {
+      "year": 2015,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "JPN",
+      "location": "Oita, Japan",
+      "description": "Japan comfortably defeat Tunisia in international friendly"
+    }
+  ]
+}

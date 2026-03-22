@@ -46,7 +46,7 @@ const LoginScreen: React.FC = () => {
             <img src={PregameLogo} alt="Pregame" className="h-20 w-auto mx-auto mb-6" />
             <h1 className="text-5xl font-bold mb-4">Venue Portal</h1>
             <p className="text-xl opacity-90 max-w-md">
-              Manage your sports venue, engage with fans, and maximize your game day potential
+              Manage your sports venue, engage with fans, and maximize your match day potential
             </p>
           </div>
           
@@ -61,8 +61,8 @@ const LoginScreen: React.FC = () => {
               <div className="text-sm opacity-80">Active Fans</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">16</div>
-              <div className="text-sm opacity-80">SEC Schools</div>
+              <div className="text-3xl font-bold mb-2">48</div>
+              <div className="text-sm opacity-80">Host Cities</div>
             </div>
           </div>
         </div>

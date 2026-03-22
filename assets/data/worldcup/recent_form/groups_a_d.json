@@ -24,91 +24,84 @@
     "notes": "All results verified via web search. Dates in YYYY-MM-DD format. Scores shown as team_score-opponent_score from the listed team's perspective."
   },
   "group_A": {
-    "BOL": {
-      "team_name": "Bolivia",
-      "fifa_code": "BOL",
+    "RSA": {
+      "team_name": "South Africa",
+      "fifa_code": "RSA",
       "recent_matches": [
         {
-          "date": "2024-06-23",
-          "opponent": "United States",
-          "score": "0-2",
-          "competition": "Copa America 2024 Group C",
-          "result": "L",
-          "venue": "neutral"
-        },
-        {
-          "date": "2024-06-27",
-          "opponent": "Panama",
-          "score": "1-2",
-          "competition": "Copa America 2024 Group C",
-          "result": "L",
-          "venue": "neutral"
-        },
-        {
-          "date": "2024-07-01",
-          "opponent": "Uruguay",
-          "score": "0-1",
-          "competition": "Copa America 2024 Group C",
-          "result": "L",
-          "venue": "neutral"
-        },
-        {
-          "date": "2024-09-05",
-          "opponent": "Venezuela",
-          "score": "4-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "W",
+          "date": "2024-06-07",
+          "opponent": "Nigeria",
+          "score": "1-1",
+          "competition": "FIFA World Cup 2026 Qualifier - CAF Group C",
+          "result": "D",
           "venue": "home"
         },
         {
-          "date": "2024-09-10",
-          "opponent": "Chile",
-          "score": "2-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
+          "date": "2024-06-11",
+          "opponent": "Zimbabwe",
+          "score": "3-1",
+          "competition": "FIFA World Cup 2026 Qualifier - CAF Group C",
           "result": "W",
           "venue": "away"
         },
         {
-          "date": "2024-10-10",
-          "opponent": "Colombia",
-          "score": "1-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
+          "date": "2024-09-06",
+          "opponent": "Congo",
+          "score": "2-0",
+          "competition": "AFCON 2025 Qualifier Group K",
           "result": "W",
           "venue": "home"
-        },
-        {
-          "date": "2024-10-15",
-          "opponent": "Argentina",
-          "score": "0-6",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "L",
-          "venue": "away"
         },
         {
           "date": "2024-11-14",
-          "opponent": "Ecuador",
-          "score": "0-4",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "L",
+          "opponent": "Uganda",
+          "score": "2-2",
+          "competition": "AFCON 2025 Qualifier Group K",
+          "result": "D",
           "venue": "away"
         },
         {
           "date": "2024-11-19",
-          "opponent": "Paraguay",
-          "score": "2-2",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "D",
+          "opponent": "South Sudan",
+          "score": "3-0",
+          "competition": "AFCON 2025 Qualifier Group K",
+          "result": "W",
           "venue": "home"
         },
         {
-          "date": "2025-03-25",
-          "opponent": "Uruguay",
-          "score": "0-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "D",
-          "venue": "home"
+          "date": "2025-12-22",
+          "opponent": "DR Congo",
+          "score": "1-0",
+          "competition": "AFCON 2025 Group B",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2025-12-26",
+          "opponent": "Egypt",
+          "score": "0-1",
+          "competition": "AFCON 2025 Group B",
+          "result": "L",
+          "venue": "neutral"
+        },
+        {
+          "date": "2025-12-30",
+          "opponent": "Angola",
+          "score": "2-1",
+          "competition": "AFCON 2025 Group B",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-01-04",
+          "opponent": "Cameroon",
+          "score": "1-2",
+          "competition": "AFCON 2025 Round of 16",
+          "result": "L",
+          "venue": "neutral"
         }
-      ]
+      ],
+      "form_summary": "W5 D2 L2 (last 9 matches). Qualified via CAF World Cup qualifiers. Strong AFCON 2025 group stage before Round of 16 exit."
     },
     "DEN": {
       "team_name": "Denmark",
@@ -835,169 +828,150 @@
         }
       ]
     },
-    "NGA": {
-      "team_name": "Nigeria",
-      "fifa_code": "NGA",
+    "SCO": {
+      "team_name": "Scotland",
+      "fifa_code": "SCO",
       "recent_matches": [
         {
-          "date": "2025-05-31",
-          "opponent": "Jamaica",
-          "score": "2-2",
+          "date": "2025-09-06",
+          "opponent": "Portugal",
+          "score": "1-2",
+          "competition": "FIFA World Cup 2026 Qualifier - UEFA",
+          "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Poland",
+          "score": "2-1",
+          "competition": "FIFA World Cup 2026 Qualifier - UEFA",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Croatia",
+          "score": "1-1",
+          "competition": "FIFA World Cup 2026 Qualifier - UEFA",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Portugal",
+          "score": "0-1",
+          "competition": "FIFA World Cup 2026 Qualifier - UEFA",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Poland",
+          "score": "3-1",
+          "competition": "FIFA World Cup 2026 Qualifier - UEFA",
+          "result": "W",
+          "venue": "home",
+          "notes": "Goals: McGinn, McTominay, Adams. Secured qualification."
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Croatia",
+          "score": "0-0",
+          "competition": "FIFA World Cup 2026 Qualifier - UEFA",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2026-03-07",
+          "opponent": "Republic of Ireland",
+          "score": "2-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home",
+          "notes": "Goals: McTominay, Dykes"
+        },
+        {
+          "date": "2026-03-11",
+          "opponent": "Norway",
+          "score": "1-1",
           "competition": "International Friendly",
           "result": "D",
           "venue": "away"
-        },
-        {
-          "date": "2025-12-23",
-          "opponent": "Tanzania",
-          "score": "2-1",
-          "competition": "AFCON 2025 Group C",
-          "result": "W",
-          "venue": "neutral",
-          "notes": "Goals: Ajayi, Lookman"
-        },
-        {
-          "date": "2025-12-27",
-          "opponent": "Tunisia",
-          "score": "3-2",
-          "competition": "AFCON 2025 Group C",
-          "result": "W",
-          "venue": "neutral",
-          "notes": "Goals: Osimhen, Ndidi, Lookman"
-        },
-        {
-          "date": "2025-12-30",
-          "opponent": "Uganda",
-          "score": "3-1",
-          "competition": "AFCON 2025 Group C",
-          "result": "W",
-          "venue": "neutral",
-          "notes": "Goals: Onuachu, Onyedika (2). Perfect group stage."
-        },
-        {
-          "date": "2026-01-05",
-          "opponent": "Mozambique",
-          "score": "4-0",
-          "competition": "AFCON 2025 Round of 16",
-          "result": "W",
-          "venue": "neutral",
-          "notes": "Goals: Akor Adams, Lookman, Osimhen (2)"
-        },
-        {
-          "date": "2026-01-10",
-          "opponent": "Algeria",
-          "score": "2-0",
-          "competition": "AFCON 2025 Quarterfinal",
-          "result": "W",
-          "venue": "neutral",
-          "notes": "Goals: Osimhen, Akor Adams"
-        },
-        {
-          "date": "2026-01-14",
-          "opponent": "Morocco",
-          "score": "0-0",
-          "competition": "AFCON 2025 Semifinal",
-          "result": "L",
-          "venue": "neutral",
-          "notes": "Lost 2-4 on penalties"
-        },
-        {
-          "date": "2026-01-18",
-          "opponent": "Egypt",
-          "score": "0-0",
-          "competition": "AFCON 2025 Third Place",
-          "result": "W",
-          "venue": "neutral",
-          "notes": "Won 4-2 on penalties. Finished 3rd."
         }
       ],
-      "form_summary": "W6 D1 L1 (last 8 matches). Dominant AFCON 2025 run: perfect group stage (3W), reached semifinals. 3rd place finish."
+      "form_summary": "W3 D3 L2 (last 8 matches). Qualified for 2026 World Cup through UEFA qualifying. Solid performances under Steve Clarke with key wins over Poland."
     },
-    "PER": {
-      "team_name": "Peru",
-      "fifa_code": "PER",
+    "HAI": {
+      "team_name": "Haiti",
+      "fifa_code": "HAI",
       "recent_matches": [
         {
-          "date": "2024-06-21",
-          "opponent": "Chile",
-          "score": "0-0",
-          "competition": "Copa America 2024 Group A",
-          "result": "D",
-          "venue": "neutral"
-        },
-        {
-          "date": "2024-06-25",
+          "date": "2025-06-05",
           "opponent": "Canada",
-          "score": "0-1",
-          "competition": "Copa America 2024 Group A",
-          "result": "L",
-          "venue": "neutral"
-        },
-        {
-          "date": "2024-06-29",
-          "opponent": "Argentina",
-          "score": "0-2",
-          "competition": "Copa America 2024 Group A",
-          "result": "L",
-          "venue": "neutral"
-        },
-        {
-          "date": "2024-09-06",
-          "opponent": "Colombia",
-          "score": "1-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "D",
-          "venue": "home"
-        },
-        {
-          "date": "2024-09-10",
-          "opponent": "Ecuador",
-          "score": "0-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
+          "score": "1-2",
+          "competition": "CONCACAF WCQ Final Round",
           "result": "L",
           "venue": "away"
         },
         {
-          "date": "2024-10-11",
-          "opponent": "Uruguay",
-          "score": "1-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
+          "date": "2025-06-08",
+          "opponent": "Honduras",
+          "score": "2-0",
+          "competition": "CONCACAF WCQ Final Round",
           "result": "W",
           "venue": "home"
         },
         {
-          "date": "2024-10-15",
-          "opponent": "Brazil",
-          "score": "0-4",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "L",
+          "date": "2025-09-06",
+          "opponent": "Costa Rica",
+          "score": "1-1",
+          "competition": "CONCACAF WCQ Final Round",
+          "result": "D",
           "venue": "away"
         },
         {
-          "date": "2024-11-15",
-          "opponent": "Chile",
-          "score": "0-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
-          "result": "D",
+          "date": "2025-09-09",
+          "opponent": "Panama",
+          "score": "2-1",
+          "competition": "CONCACAF WCQ Final Round",
+          "result": "W",
           "venue": "home"
         },
         {
-          "date": "2024-11-19",
-          "opponent": "Argentina",
-          "score": "0-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
+          "date": "2025-10-11",
+          "opponent": "Mexico",
+          "score": "0-3",
+          "competition": "CONCACAF WCQ Final Round",
           "result": "L",
           "venue": "away"
         },
         {
-          "date": "2025-03-20",
-          "opponent": "Bolivia",
-          "score": "3-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CONMEBOL",
+          "date": "2025-10-14",
+          "opponent": "El Salvador",
+          "score": "3-0",
+          "competition": "CONCACAF WCQ Final Round",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Jamaica",
+          "score": "1-0",
+          "competition": "CONCACAF WCQ Final Round",
+          "result": "W",
+          "venue": "home",
+          "notes": "Secured World Cup qualification — historic achievement"
+        },
+        {
+          "date": "2026-03-07",
+          "opponent": "Trinidad & Tobago",
+          "score": "2-1",
+          "competition": "International Friendly",
           "result": "W",
           "venue": "home"
         }
-      ]
+      ],
+      "form_summary": "W5 D1 L2 (last 8 matches). Historic qualification for first World Cup through CONCACAF Final Round. Strong home form was decisive."
     }
   },
   "group_D": {

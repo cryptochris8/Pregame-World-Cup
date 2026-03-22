@@ -61,9 +61,9 @@ const FanEngagement: React.FC = () => {
         fanName: 'Jake Thompson',
         fanAvatar: '/api/placeholder/40/40',
         rating: 5,
-        comment: 'Amazing atmosphere during the Auburn game! Great wings and cold beer. Will definitely be back for the next game!',
-        date: '2024-01-15',
-        gameDay: 'Auburn vs LSU'
+        comment: 'Amazing atmosphere during the USA match! Great wings and cold beer. Will definitely be back for the next match!',
+        date: '2026-06-15',
+        gameDay: 'USA vs Mexico'
       },
       {
         id: '2',
@@ -71,26 +71,26 @@ const FanEngagement: React.FC = () => {
         fanAvatar: '/api/placeholder/40/40',
         rating: 4,
         comment: 'Love the new TVs and seating area. Food was good but service was a bit slow during halftime rush.',
-        date: '2024-01-12',
-        response: 'Thanks for the feedback, Sarah! We\'ve added more staff for game days to improve service speed. Hope to see you again soon!',
-        responseDate: '2024-01-13'
+        date: '2026-06-12',
+        response: 'Thanks for the feedback, Sarah! We\'ve added more staff for match days to improve service speed. Hope to see you again soon!',
+        responseDate: '2026-06-13'
       },
       {
         id: '3',
         fanName: 'Mike Wilson',
         fanAvatar: '/api/placeholder/40/40',
         rating: 5,
-        comment: 'Best sports bar in Auburn! The game day specials are unbeatable and the energy is electric.',
-        date: '2024-01-10',
-        gameDay: 'Alabama vs Georgia'
+        comment: 'Best World Cup watch party spot in town! The match day specials are unbeatable and the energy is electric.',
+        date: '2026-06-10',
+        gameDay: 'Brazil vs Argentina'
       },
       {
         id: '4',
         fanName: 'Emma Davis',
         fanAvatar: '/api/placeholder/40/40',
         rating: 3,
-        comment: 'Good place to watch games but could use more vegetarian options on the menu.',
-        date: '2024-01-08'
+        comment: 'Good place to watch matches but could use more vegetarian options on the menu.',
+        date: '2026-06-08'
       }
     ]);
 
@@ -99,8 +99,8 @@ const FanEngagement: React.FC = () => {
         id: '1',
         fanName: 'Connor Riley',
         fanAvatar: '/api/placeholder/40/40',
-        message: 'Hi! Do you take reservations for large groups on game days? Planning to bring 12 people for the championship game.',
-        timestamp: '2024-01-16T14:30:00',
+        message: 'Hi! Do you take reservations for large groups on match days? Planning to bring 12 people for the World Cup Final.',
+        timestamp: '2026-06-16T14:30:00',
         type: 'reservation',
         isRead: false
       },
@@ -108,18 +108,18 @@ const FanEngagement: React.FC = () => {
         id: '2',
         fanName: 'Ashley Chen',
         fanAvatar: '/api/placeholder/40/40',
-        message: 'What time do you usually open on Saturdays? Wanted to catch the early games.',
-        timestamp: '2024-01-16T09:15:00',
+        message: 'What time do you usually open on Saturdays? Wanted to catch the early matches.',
+        timestamp: '2026-06-16T09:15:00',
         type: 'question',
         isRead: true,
-        response: 'We open at 10 AM on Saturdays, 8 AM on game days! See you there!'
+        response: 'We open at 10 AM on Saturdays, 8 AM on match days! See you there!'
       },
       {
         id: '3',
         fanName: 'Tyler Brooks',
         fanAvatar: '/api/placeholder/40/40',
         message: 'The new wing flavors are incredible! Any chance you\'ll add more spicy options?',
-        timestamp: '2024-01-15T20:45:00',
+        timestamp: '2026-06-15T20:45:00',
         type: 'feedback',
         isRead: true
       },
@@ -128,7 +128,7 @@ const FanEngagement: React.FC = () => {
         fanName: 'Madison Taylor',
         fanAvatar: '/api/placeholder/40/40',
         message: 'Love the live stream feature! Can you show more of the outdoor seating area?',
-        timestamp: '2024-01-15T16:20:00',
+        timestamp: '2026-06-15T16:20:00',
         type: 'general',
         isRead: false
       }
@@ -137,9 +137,9 @@ const FanEngagement: React.FC = () => {
     setEvents([
       {
         id: '1',
-        title: 'SEC Championship Watch Party',
-        description: 'Join us for the biggest game of the year! Special menu, drink deals, and prizes!',
-        date: '2024-02-15',
+        title: 'World Cup Final Watch Party',
+        description: 'Join us for the biggest match of the year! Special menu, drink deals, and prizes!',
+        date: '2026-07-19',
         time: '18:00',
         type: 'game',
         attendeesCount: 45,
@@ -149,7 +149,7 @@ const FanEngagement: React.FC = () => {
         id: '2',
         title: 'Trivia Night',
         description: 'Weekly sports trivia with prizes and beer specials!',
-        date: '2024-01-24',
+        date: '2026-06-24',
         time: '19:00',
         type: 'event',
         attendeesCount: 23,
@@ -158,8 +158,8 @@ const FanEngagement: React.FC = () => {
       {
         id: '3',
         title: 'New Menu Launch',
-        description: 'Try our new lineup of game day favorites and craft cocktails!',
-        date: '2024-01-20',
+        description: 'Try our new lineup of match day favorites and craft cocktails!',
+        date: '2026-06-20',
         time: '17:00',
         type: 'special',
         attendeesCount: 12
@@ -583,7 +583,7 @@ const FanEngagement: React.FC = () => {
                   value={newEvent.title}
                   onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B]"
-                  placeholder="e.g., SEC Championship Watch Party"
+                  placeholder="e.g., World Cup Final Watch Party"
                 />
               </div>
 
@@ -637,7 +637,7 @@ const FanEngagement: React.FC = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B]"
                   >
                     <option value="event">General Event</option>
-                    <option value="game">Game Day</option>
+                    <option value="game">Match Day</option>
                     <option value="special">Special Offer</option>
                   </select>
                 </div>

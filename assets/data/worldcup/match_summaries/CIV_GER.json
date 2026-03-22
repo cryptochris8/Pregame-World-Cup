@@ -1,0 +1,57 @@
+{
+  "team1Code": "CIV",
+  "team2Code": "GER",
+  "team1Name": "Ivory Coast",
+  "team2Name": "Germany",
+  "historicalAnalysis": "Ivory Coast and Germany have never faced each other at a World Cup, making this a historic first encounter between two proud football nations. Germany, four-time World Cup champions (1954, 1974, 1990, 2014), enter the 2026 tournament desperate for redemption after the humiliation of consecutive group-stage exits in 2018 and 2022. Those back-to-back failures were unprecedented in German football history and prompted a significant rebuild around exciting young talent.\n\nIvory Coast's World Cup history has been defined by heartbreak. During their golden generation era, they were drawn into the 'Group of Death' at every tournament they attended: alongside Argentina, Netherlands, and Serbia in 2006; Brazil and Portugal in 2010; and Colombia and Greece in 2014. Despite boasting world-class players like Didier Drogba, Yaya Touré, and Gervinho, they never made it past the group stage. A new chapter began with their stunning 2024 Africa Cup of Nations triumph on home soil, achieved after an extraordinary mid-tournament coaching change and a dramatic knockout-round run.\n\nGermany's rebuild has produced arguably the most exciting crop of young talent in European football. Jamal Musiala, who chose Germany over England at youth level, has become one of the world's best players at Bayern Munich. Florian Wirtz anchored Bayer Leverkusen's historic unbeaten Bundesliga title in 2023-24. Together, they represent the future of German football and the nation's best hope of ending their World Cup curse. For Ivory Coast, this is their chance to prove that African football can compete with the traditional European powers at the very highest level.",
+  "keyStorylines": [
+    "Germany desperate to avoid a third consecutive World Cup group-stage exit",
+    "Ivory Coast's AFCON-winning squad looking to finally break their World Cup group stage curse",
+    "Musiala and Wirtz leading Germany's youth revolution against Ivory Coast's battle-hardened winners",
+    "First ever World Cup meeting between these nations",
+    "A potential Group E blockbuster that could determine which teams advance"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Jamal Musiala",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayern Munich's dazzling playmaker whose dribbling and creativity make him one of the world's best players"
+    },
+    {
+      "name": "Seko Fofana",
+      "teamCode": "CIV",
+      "position": "Midfielder",
+      "reason": "Powerful box-to-box midfielder whose driving runs and physicality were crucial during Ivory Coast's 2024 AFCON triumph"
+    },
+    {
+      "name": "Florian Wirtz",
+      "teamCode": "GER",
+      "position": "Midfielder",
+      "reason": "Bayer Leverkusen's prodigy who orchestrated their historic unbeaten Bundesliga season in 2023-24"
+    },
+    {
+      "name": "Simon Adingra",
+      "teamCode": "CIV",
+      "position": "Winger",
+      "reason": "Brighton's explosive attacker and 2024 AFCON Best Young Player who terrorizes defenders with pace and trickery"
+    }
+  ],
+  "tacticalPreview": "Germany's 4-2-3-1 system is built to maximize the creative brilliance of Musiala and Wirtz in the half-spaces behind the striker. Their high pressing and quick ball circulation are designed to suffocate opponents, while Kai Havertz provides a focal point in attack. The full-backs push high to provide width, with the double pivot offering defensive stability. Germany's main vulnerability has been at the back, where they have looked susceptible to pace on the counter-attack at recent tournaments.\n\nIvory Coast's 4-3-3 under Emerse Faé is built on energy, physicality, and devastating transitions. The midfield trio of Fofana, Kessié, and a third runner gives them enormous power in central areas, while Adingra provides explosive pace on the wing. Their pressing is aggressive in bursts, and they are comfortable absorbing pressure before striking quickly. The key for Ivory Coast will be staying compact, winning the midfield battle, and using their pace advantage on the counter to exploit Germany's high defensive line.",
+  "prediction": {
+    "predictedOutcome": "GER",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Germany's superior technical quality and the brilliance of Musiala and Wirtz should prove decisive, but Ivory Coast's physicality, pace, and winning mentality from the AFCON will make this a genuinely competitive encounter.",
+    "alternativeScenario": "Ivory Coast's counter-attacking threat and set-piece prowess could cause Germany real problems. If the Elephants score first and sit deep, Germany's recent history of World Cup collapses could repeat itself, producing a stunning 1-0 or 2-1 Ivory Coast victory."
+  },
+  "pastEncountersSummary": "Germany and Ivory Coast have never met at a World Cup. Their competitive history is extremely limited, with only a handful of friendly matches between the nations. This will be a landmark first encounter on the World Cup stage.",
+  "funFacts": [
+    "Germany's consecutive group-stage exits in 2018 and 2022 were the first time in their history they had been eliminated that early at back-to-back World Cups",
+    "Ivory Coast's 2024 AFCON victory came after they lost two of their three group-stage matches in their own tournament",
+    "Jamal Musiala was born in Stuttgart, raised in England, and represented England at youth level before switching to Germany",
+    "Ivory Coast's golden generation of Drogba and Touré never faced Germany at a World Cup despite attending three consecutive tournaments",
+    "Florian Wirtz became the youngest Bundesliga goalscorer at just 17 years old"
+  ],
+  "isFirstMeeting": false
+}

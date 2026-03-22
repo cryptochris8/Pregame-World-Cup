@@ -1,0 +1,57 @@
+{
+  "team1Code": "IDN",
+  "team2Code": "TUN",
+  "team1Name": "Indonesia",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "Indonesia's qualification for the 2026 FIFA World Cup represents one of the most remarkable stories in Asian football history. The nation of over 270 million people had never previously qualified for a World Cup, with their only prior appearance coming as the Dutch East Indies in 1938. Under the guidance of coach Shin Tae-yong, Indonesia's football renaissance has been fueled by the integration of diaspora players with European experience alongside homegrown talent developed through an improved domestic league system.\n\nTunisia, by contrast, are appearing at their sixth World Cup, making them one of Africa's most experienced tournament participants. The Eagles of Carthage first qualified in 1978 and have since appeared in 1998, 2002, 2006, 2018, and 2022. At the 2022 World Cup in Qatar, Tunisia produced one of the tournament's memorable results by defeating reigning champions France 1-0 in their final group match, though they ultimately exited at the group stage.\n\nThis match represents a fascinating clash of contrasts: Indonesia's raw enthusiasm and historic debut against Tunisia's tournament savvy and tactical discipline. Tunisia have historically been a difficult team to break down, conceding few goals at World Cups, while Indonesia will look to channel the energy of their passionate fanbase, one of the largest in world football.",
+  "keyStorylines": [
+    "Indonesia making their first World Cup appearance as an independent nation, with their only prior involvement as Dutch East Indies in 1938",
+    "Tunisia looking to build on their historic 1-0 victory over France at the 2022 World Cup in Qatar",
+    "The impact of Indonesia's naturalized players with European heritage blending with local talent under coach Shin Tae-yong",
+    "Tunisia's Hannibal Mejbri seeking to establish himself on the biggest stage after his development at Manchester United's academy",
+    "Indonesia's massive fanbase — among the largest in world football — bringing unprecedented support to their debut"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Hannibal Mejbri",
+      "position": "Midfielder",
+      "teamCode": "TUN",
+      "reason": "The technically gifted midfielder developed at Manchester United's academy and brings Premier League experience and creative passing to Tunisia's midfield."
+    },
+    {
+      "name": "Youssef Msakni",
+      "position": "Forward",
+      "teamCode": "TUN",
+      "reason": "Tunisia's veteran talisman and all-time leading scorer in the modern era, Msakni missed the 2018 World Cup through injury and has been a symbol of Tunisian football for over a decade."
+    },
+    {
+      "name": "Pratama Arhan",
+      "position": "Left Back",
+      "teamCode": "IDN",
+      "reason": "The dynamic left-back gained experience in the K League and is known for his powerful long throws and overlapping runs that have become a key attacking weapon for Indonesia."
+    },
+    {
+      "name": "Asnawi Mangkualam",
+      "position": "Defender/Midfielder",
+      "teamCode": "IDN",
+      "reason": "A versatile player who gained experience in South Korean football, Asnawi has been instrumental in Indonesia's defensive organization and is a leader in the squad."
+    }
+  ],
+  "tacticalPreview": "Tunisia under coach Jalel Kadri typically deploy a compact 4-3-3 or 4-2-3-1 formation that prioritizes defensive solidity and quick transitions. Their approach at the 2022 World Cup demonstrated a team comfortable sitting deep, maintaining their shape, and striking on the counter through the pace of their wingers and the creativity of Mejbri in central areas. Set pieces are also a significant weapon for Tunisia, who possess quality delivery from wide areas.\n\nIndonesia under Shin Tae-yong have adopted a disciplined South Korean-influenced tactical approach, typically playing a 4-3-3 or 3-5-2 system that emphasizes collective pressing and rapid attacking transitions. Indonesia's naturalized players provide technical quality in key positions, while the team's physical conditioning has improved dramatically under Shin's demanding training methods. The key for Indonesia will be managing their emotions in a historic match while maintaining tactical discipline against an experienced opponent.",
+  "prediction": {
+    "predictedOutcome": "TUN",
+    "predictedScore": "2-1",
+    "confidence": 68,
+    "reasoning": "Tunisia's extensive World Cup experience and tactical maturity give them a significant edge over debutants Indonesia. The Eagles of Carthage have consistently shown they can compete at this level, and their defensive organization should prove difficult for Indonesia to penetrate consistently. However, Indonesia's passion and the quality of their improved squad means they are capable of scoring.",
+    "alternativeScenario": "Indonesia's historic occasion could fuel an extraordinary performance. If they can weather Tunisia's early pressure and take the game to the North Africans with their energetic pressing, a draw or even an upset victory is possible. World Cup debuts have occasionally produced stunning results."
+  },
+  "pastEncountersSummary": "Indonesia and Tunisia have had very limited competitive encounters in their footballing histories. The two nations have rarely met in official competition, making this World Cup match essentially uncharted territory for both sides. This lack of familiarity adds an extra layer of intrigue to the match, as neither team will have extensive scouting data from direct encounters.",
+  "funFacts": [
+    "Indonesia has the fourth-largest population in the world (over 270 million) but had never qualified for a World Cup as an independent nation before 2026",
+    "Tunisia became the first African nation to win a World Cup match when they defeated Mexico 3-1 at the 1978 World Cup in Argentina",
+    "Indonesia's previous World Cup appearance was as the Dutch East Indies in 1938, where they lost 6-0 to Hungary in the first round",
+    "Tunisia's 1-0 victory over France at the 2022 World Cup was one of the standout results of the group stage, though they still exited the tournament",
+    "Indonesian football fans are among the most passionate in Asia, with domestic league matches regularly attracting crowds of over 50,000"
+  ],
+  "isFirstMeeting": true
+}

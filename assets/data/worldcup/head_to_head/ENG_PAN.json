@@ -1,0 +1,29 @@
+{
+  "id": "ENG_PAN",
+  "team1Code": "ENG",
+  "team2Code": "PAN",
+  "totalMatches": 1,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 0,
+  "team1Goals": 6,
+  "team2Goals": 1,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2018-06-24",
+  "firstMeeting": "2018-06-24",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 6,
+      "team2Score": 1,
+      "winnerCode": "ENG",
+      "location": "Nizhny Novgorod, Russia",
+      "description": "Harry Kane hat-trick powers England to dominant group stage win over Panama in their first ever meeting"
+    }
+  ]
+}

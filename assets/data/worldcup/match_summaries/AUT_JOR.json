@@ -1,0 +1,57 @@
+{
+  "team1Code": "AUT",
+  "team2Code": "JOR",
+  "team1Name": "Austria",
+  "team2Name": "Jordan",
+  "historicalAnalysis": "Austria and Jordan meet at the 2026 World Cup in what is almost certainly the first competitive encounter between these two nations. It is a match that brings together contrasting footballing traditions: Austria's deeply rooted European football heritage against Jordan's rapidly emerging Asian football program. For both teams, this fixture could prove decisive in determining who advances from a group that also contains Argentina and Algeria.\n\nAustria's footballing pedigree dates back over a century. The Austrian 'Wunderteam' of the 1930s was one of the first great international football sides, and Austria achieved a third-place finish at the 1954 World Cup — still their best result in the competition. After decades of inconsistency, Austrian football has experienced a renaissance in recent years. Their performances at Euro 2024 were a revelation, as they topped a group containing France, the Netherlands, and Poland, playing with an intensity and tactical discipline that earned widespread admiration. The influence of Ralf Rangnick's pressing philosophy has transformed Austria into a genuinely competitive force.\n\nJordan's presence at the 2026 World Cup is the crowning achievement of a remarkable footballing journey. The Nashama's run to the 2024 Asian Cup final captured the imagination of the football world, as they defeated established Asian nations with organized, determined football under coach Hussein Ammouta. World Cup qualification followed, making Jordan one of the most compelling debutants the tournament has seen in recent cycles. Their squad blends players from the Jordanian domestic league with professionals based in Europe and the Gulf states.\n\nThis match has the potential to be a pivotal group-stage encounter. If Argentina are expected to top the group, the battle for second place could well come down to how Austria and Jordan perform against each other. Both teams will view this as a must-win fixture, adding pressure and significance that could create a tense, tactical affair.",
+  "keyStorylines": [
+    "A potential Group J decider — with Argentina favored to top the group, this match between Austria and Jordan could determine who claims the second qualification spot",
+    "Austria's established European tournament pedigree versus Jordan's fearless World Cup debutants in a clash of footballing cultures",
+    "Austria's Rangnick-influenced high press faces Jordan's disciplined defensive organization that frustrated Asian powerhouses at the 2024 Asian Cup",
+    "Jordan's World Cup debut continues — every match is historic for a nation experiencing the tournament for the first time",
+    "Austria seeking to advance past the World Cup group stage for the first time since 1982, adding historical pressure to this encounter"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Marcel Sabitzer",
+      "position": "Midfielder",
+      "teamCode": "AUT",
+      "reason": "Borussia Dortmund's experienced midfielder brings big-game pedigree and set-piece quality"
+    },
+    {
+      "name": "Mousa Al-Tamari",
+      "position": "Winger",
+      "teamCode": "JOR",
+      "reason": "Jordan's most dangerous attacker with pace and creativity from wide positions"
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "position": "Attacking Midfielder",
+      "teamCode": "AUT",
+      "reason": "RB Leipzig's dynamic attacking midfielder who starred at Euro 2024 with his movement and finishing"
+    },
+    {
+      "name": "Ehsan Haddadi",
+      "position": "Defender",
+      "teamCode": "JOR",
+      "reason": "Experienced defender who marshals Jordan's backline with organization and aerial presence"
+    }
+  ],
+  "tacticalPreview": "Austria will look to impose their high-pressing game on Jordan from the first whistle. Rangnick's system demands constant pressure on the ball, with coordinated pressing triggers designed to force turnovers in dangerous areas. In possession, Austria play vertical, direct football — looking to move the ball quickly into the final third through Baumgartner and the wide attackers. Marcel Sabitzer's ability to break lines with passes and runs from midfield adds an extra dimension. Austria will expect to dominate possession and territory, testing Jordan's defensive resolve repeatedly.\n\nJordan will rely on the defensive discipline and collective organization that carried them to the Asian Cup final. The Nashama are likely to set up in a compact 4-2-3-1 or 4-4-2, sitting deep and looking to frustrate Austria before hitting on the counter through Al-Tamari's pace. Jordan's midfield will need to be extremely disciplined in their positioning to cope with Austria's pressing and movement. Set pieces will be an important weapon for Jordan, as they possess aerial threat and Austria's high line can be vulnerable when forced to defend in their own box. The key question is whether Jordan can withstand sustained pressure and capitalize on the chances that come their way.",
+  "prediction": {
+    "predictedOutcome": "AUT",
+    "predictedScore": "2-0",
+    "confidence": 70,
+    "reasoning": "Austria's tactical sophistication, physical intensity, and experience at major tournaments gives them a clear advantage. Their squad is packed with players from Europe's top leagues, and the pressing system should cause significant problems for Jordan's build-up play. Austria's ability to sustain pressure over 90 minutes should eventually break down Jordan's defensive resistance.",
+    "alternativeScenario": "Jordan showed at the 2024 Asian Cup that they can stifle more talented opponents and steal results through organization and counter-attacks. A 1-0 Jordan victory, built on defensive heroics and a single clinical counter-attack or set piece, would be one of the great World Cup upsets and is not beyond the realm of possibility."
+  },
+  "pastEncountersSummary": "Austria and Jordan have no significant history of competitive encounters. These two nations come from different football confederations and different footballing traditions, making their 2026 World Cup meeting a historic first on the biggest stage. The lack of familiarity between the teams adds an element of tactical uncertainty, as neither coaching staff will have extensive footage or experience to draw upon when preparing for this match.",
+  "funFacts": [
+    "Austria's last World Cup group-stage advance came in 1982 — the same tournament infamous for the 'Disgrace of Gijon' involving Austria and West Germany",
+    "Jordan's football federation was founded in 1949, just three years after the country gained independence, reflecting the sport's deep cultural significance",
+    "Austria have produced several world-class players over the decades, including Herbert Prohaska, Hans Krankl, and more recently David Alaba, who won multiple Champions League titles with Bayern Munich and Real Madrid",
+    "Jordan's 2024 Asian Cup run was watched by record television audiences in the country, with public screenings in Amman drawing tens of thousands of fans",
+    "If Austria advance from this group, it would end a 44-year wait to progress past the World Cup group stage, a drought that dates back to the 1982 tournament in Spain"
+  ],
+  "isFirstMeeting": true
+}

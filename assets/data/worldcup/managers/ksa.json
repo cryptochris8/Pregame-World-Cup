@@ -1,0 +1,21 @@
+{
+  "id": "manager_ksa",
+  "firstName": "Hervé",
+  "lastName": "Renard",
+  "commonName": "Hervé Renard",
+  "dateOfBirth": "1968-09-30",
+  "nationality": "France",
+  "currentTeam": "Saudi Arabia",
+  "currentTeamCode": "KSA",
+  "photoUrl": "assets/managers/renard.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Balanced",
+  "yearsExperience": 20,
+  "previousTeams": ["Zambia NT", "Ivory Coast NT", "Morocco NT", "Saudi Arabia NT (first stint)", "France Women NT", "Lille", "Sochaux"],
+  "trophies": ["AFCON 2012 (Zambia)", "AFCON 2015 (Ivory Coast)"],
+  "careerWins": 180,
+  "careerDraws": 80,
+  "careerLosses": 90,
+  "careerWinPercentage": 51,
+  "bio": "The only manager to win the Africa Cup of Nations with two different countries, Renard was reappointed as Saudi Arabia coach in October 2024 after Mancini's departure. In his first stint, he famously led Saudi Arabia to their historic 2-1 victory over Argentina at the 2022 World Cup."
+}

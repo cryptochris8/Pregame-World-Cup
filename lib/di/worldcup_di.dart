@@ -2,6 +2,7 @@ import 'package:get_it/get_it.dart';
 
 import '../features/worldcup/worldcup.dart';
 import '../features/worldcup/data/services/enhanced_match_data_service.dart';
+import '../features/worldcup/data/services/local_match_summary_service.dart';
 import '../features/worldcup/data/services/local_prediction_engine.dart';
 import '../features/worldcup/data/services/world_cup_ai_service.dart';
 import '../features/worldcup/data/services/nearby_venues_service.dart';
@@ -110,6 +111,11 @@ void registerWorldCupServices(GetIt sl) {
 
   // Enhanced Match Data Service
   sl.registerLazySingleton(() => EnhancedMatchDataService.instance);
+
+  // Local Match Summary Service
+  // PRIMARY source for all match preview content (history, tactics, storylines,
+  // predictions). Reads from bundled JSON assets — no network calls.
+  sl.registerLazySingleton(() => LocalMatchSummaryService());
 
   // Local Prediction Engine
   sl.registerLazySingleton(() => LocalPredictionEngine(

@@ -1,0 +1,57 @@
+{
+  "team1Code": "ALG",
+  "team2Code": "JOR",
+  "team1Name": "Algeria",
+  "team2Name": "Jordan",
+  "historicalAnalysis": "Algeria and Jordan represent two of the most passionate footballing nations from their respective confederations, and their meeting at the 2026 World Cup marks a rare cross-continental clash with no significant head-to-head history. This is expected to be their first meeting on the World Cup stage, bringing together African and Asian football in a match that could prove pivotal to both teams' hopes of advancing from Group J.\n\nAlgeria are the more experienced World Cup nation, with this being their fifth appearance in the tournament following campaigns in 1982, 1986, 2010, and 2014. The Desert Foxes' proudest recent achievement came in 2019, when they won the Africa Cup of Nations in Egypt, defeating Senegal 1-0 in the final. That triumph, orchestrated by coach Djamel Belmadi, reignited Algerian football pride and demonstrated the depth of talent available from their extensive European-based diaspora.\n\nJordan's journey to the 2026 World Cup is one of the most remarkable stories in Asian football. The Nashama — as the national team is affectionately known — captured the world's attention with their extraordinary run to the 2024 Asian Cup final in Qatar, where they defeated South Korea, Iraq, and Tajikistan before falling to the hosts in the final. That campaign, under coach Hussein Ammouta, transformed Jordan from perennial underdogs into genuine contenders and paved the way for their first-ever World Cup qualification.\n\nFor Jordan, simply being at the World Cup is a historic achievement that represents decades of investment in football infrastructure and development. For Algeria, this match is an opportunity to assert their status as one of Africa's elite footballing nations. Both teams will view this fixture as one of their most winnable in a group that also contains Argentina and Austria.",
+  "keyStorylines": [
+    "Jordan's historic first-ever World Cup appearance — the Nashama's fairy tale continues after their stunning 2024 Asian Cup final run",
+    "A potential group-defining match — with Argentina as heavy favorites, the Algeria vs Jordan fixture could determine who finishes second or third in Group J",
+    "Algeria's 2019 AFCON champions and experienced World Cup campaigners face Jordan's fearless new generation of Asian football",
+    "The diaspora factor — Algeria's squad draws heavily from French and European leagues, while Jordan's squad blends domestic players with Gulf-based professionals",
+    "Both nations carry the hopes of their continents, representing African and Asian football's growing competitiveness on the world stage"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Ismael Bennacer",
+      "position": "Midfielder",
+      "teamCode": "ALG",
+      "reason": "AC Milan's midfield anchor who controls tempo and provides defensive solidity for Algeria"
+    },
+    {
+      "name": "Mousa Al-Tamari",
+      "position": "Winger",
+      "teamCode": "JOR",
+      "reason": "Jordan's most dangerous attacker with pace and creativity from wide positions"
+    },
+    {
+      "name": "Amine Gouiri",
+      "position": "Forward",
+      "teamCode": "ALG",
+      "reason": "Algeria's most creative attacker, capable of unlocking defenses with his dribbling and vision"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "position": "Forward",
+      "teamCode": "JOR",
+      "reason": "Jordan's clinical striker who was key to their historic 2023 Asian Cup final run"
+    }
+  ],
+  "tacticalPreview": "Algeria typically set up in a 4-3-3 or 4-2-3-1 formation, building from the back through Ismael Bennacer and looking to create through their technically superior wide players. Their approach combines elements of French football methodology — many of their players were developed in the French academy system — with the physicality and directness that characterizes North African football. Algeria will look to dominate possession and use patient build-up to break down organized defenses.\n\nJordan under Hussein Ammouta play a disciplined, organized style that proved devastatingly effective at the 2024 Asian Cup. The Nashama typically set up in a 4-2-3-1 with a solid defensive base and look to hit teams on the counter through the pace of Mousa Al-Tamari and the movement of their forwards. Jordan's strength lies in their collective spirit, defensive organization, and ability to absorb pressure before striking on the break. Set pieces are another significant weapon, with Jordan possessing physical presence in the box.",
+  "prediction": {
+    "predictedOutcome": "ALG",
+    "predictedScore": "2-1",
+    "confidence": 65,
+    "reasoning": "Algeria's greater World Cup experience, deeper squad depth, and higher concentration of players at top European clubs gives them a technical and tactical advantage. However, Jordan's incredible team spirit, defensive organization, and the momentum from their Asian Cup run make them dangerous opponents who will not be easily brushed aside.",
+    "alternativeScenario": "Jordan's 2024 Asian Cup run showed they are capable of beating more fancied opponents through sheer determination and tactical discipline. A 1-1 draw is very possible if Jordan can maintain concentration and take one of their counter-attacking opportunities."
+  },
+  "pastEncountersSummary": "Algeria and Jordan have had minimal competitive interaction historically, with their encounters limited to rare friendly matches. They have never met at a World Cup or in any other major tournament. This 2026 World Cup group-stage match represents their most significant meeting, bringing together two proud footballing nations from different confederations in what promises to be a competitive and meaningful encounter.",
+  "funFacts": [
+    "Jordan's run to the 2024 Asian Cup final was the first time the nation had reached a major tournament final in any sport, creating a wave of national celebration",
+    "Algeria's 2019 AFCON victory was their second continental title, with their first coming in 1990 when they hosted the tournament",
+    "The Jordanian national team's nickname 'Al-Nashama' translates to 'The Brave Ones,' a name that resonated powerfully during their 2024 Asian Cup campaign",
+    "Algeria's player pool benefits enormously from the Algerian diaspora in France — estimated at over 4 million people — which produces dual-nationality players trained in the French football system",
+    "Jordan became the smallest country by population (approximately 11 million) to reach an Asian Cup final when they accomplished the feat in 2024"
+  ],
+  "isFirstMeeting": false
+}

@@ -1,0 +1,57 @@
+{
+  "team1Code": "FRA",
+  "team2Code": "IRQ",
+  "team1Name": "France",
+  "team2Name": "Iraq",
+  "historicalAnalysis": "France and Iraq have never met at a World Cup, making this a historic first encounter. France are two-time World Cup champions (1998 and 2018) and were runners-up in 2022, losing to Argentina in one of the greatest finals ever played. Les Bleus boast one of the deepest squads in international football, led by Kylian Mbappé, who moved to Real Madrid in 2024.\n\nIraq return to the World Cup for the first time since 1986, when they competed in Mexico. Iraqi football's greatest achievement came in 2007, when they won the AFC Asian Cup in a remarkable run that united a war-torn nation. That triumph remains one of the most emotionally powerful stories in football history.\n\nFor Iraq, simply qualifying for the 2026 World Cup is a monumental achievement. They will face France knowing the quality gap is significant, but Iraqi football has a proud tradition of producing technically gifted players. The passionate Iraqi fanbase will make this a memorable occasion regardless of the result.\n\nFrance will be expected to dominate this fixture, but complacency is always a danger for tournament favorites. Iraq's qualification campaign showed resilience and tactical discipline, and they will look to frustrate France before looking for opportunities on the counter-attack.",
+  "keyStorylines": [
+    "Iraq's first World Cup appearance since 1986",
+    "France seeking a third World Cup title on North American soil",
+    "Mbappé leading France as the world's most expensive player",
+    "Iraq looking to recreate the magic of their 2007 Asian Cup triumph",
+    "First-ever World Cup meeting between these two nations"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Kylian Mbappé",
+      "teamCode": "FRA",
+      "position": "Forward",
+      "reason": "France captain and Real Madrid superstar, two-time World Cup finalist"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "teamCode": "FRA",
+      "position": "Midfielder",
+      "reason": "Real Madrid's commanding midfield presence and France's engine room"
+    },
+    {
+      "name": "Mohanad Ali",
+      "teamCode": "IRQ",
+      "position": "Forward",
+      "reason": "Iraq's most talented attacker, known for his pace and directness"
+    },
+    {
+      "name": "Aymen Hussein",
+      "teamCode": "IRQ",
+      "position": "Forward",
+      "reason": "Iraq's top scorer in qualification and clinical finisher"
+    }
+  ],
+  "tacticalPreview": "France will likely deploy their familiar 4-3-3 formation with Mbappé as the focal point of the attack. With world-class options across midfield and defense, Les Bleus will look to dominate possession and create chances through their devastating wing play and Mbappé's movement.\n\nIraq will need to be tactically disciplined, likely sitting in a compact 4-5-1 or 5-4-1 to deny France space. Their best chances will come from quick counter-attacks and set pieces. Iraq's coaching staff will study France's defensive transitions carefully, looking for the rare moments when Les Bleus can be caught on the break.",
+  "prediction": {
+    "predictedOutcome": "FRA",
+    "predictedScore": "3-0",
+    "confidence": 82,
+    "reasoning": "France's squad depth and individual quality should be too much for Iraq. Mbappé alone poses a threat Iraq's defense will struggle to contain across 90 minutes.",
+    "alternativeScenario": "If Iraq's defensive discipline holds early and they score first on a counter-attack, a shock 1-1 draw is not impossible—underdog stories at the World Cup are as old as the tournament itself."
+  },
+  "pastEncountersSummary": "France and Iraq have had very limited meetings at senior international level, with no prior World Cup encounters. This will be a historic first on football's biggest stage.",
+  "funFacts": [
+    "Iraq's 2007 Asian Cup victory is considered one of the greatest underdog stories in football history",
+    "France have reached the World Cup final in three of the last four tournaments (2006, 2018, 2022)",
+    "Iraq's last World Cup appearance was in 1986, a 40-year gap",
+    "Mbappé scored a hat-trick in the 2022 World Cup final against Argentina",
+    "Iraq qualified for 2026 through the AFC qualification pathway, their first qualification in four decades"
+  ],
+  "isFirstMeeting": false
+}

@@ -2,17 +2,38 @@
   "id": "BEL_IRN",
   "team1Code": "BEL",
   "team2Code": "IRN",
-  "totalMatches": 0,
-  "team1Wins": 0,
+  "totalMatches": 3,
+  "team1Wins": 2,
   "team2Wins": 0,
-  "draws": 0,
-  "team1Goals": 0,
-  "team2Goals": 0,
-  "worldCupMatches": 0,
-  "team1WorldCupWins": 0,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 2,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 2,
   "team2WorldCupWins": 0,
   "worldCupDraws": 0,
-  "lastMatch": null,
-  "firstMeeting": null,
-  "notableMatches": []
+  "lastMatch": "2018-06-18",
+  "firstMeeting": "1998-05-27",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "BEL",
+      "location": "Saransk, Russia",
+      "description": "Belgium's golden generation cruise past Iran in group stage"
+    },
+    {
+      "year": 2014,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "BEL",
+      "location": "Belo Horizonte, Brazil",
+      "description": "Mertens' late winner secures Belgium's return to World Cup knockout rounds"
+    }
+  ]
 }

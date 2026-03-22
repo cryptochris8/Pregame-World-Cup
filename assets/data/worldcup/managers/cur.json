@@ -1,0 +1,21 @@
+{
+  "id": "manager_cur",
+  "firstName": "Fred",
+  "lastName": "Rutten",
+  "commonName": "Fred Rutten",
+  "dateOfBirth": "1962-12-05",
+  "nationality": "Netherlands",
+  "currentTeam": "Curaçao",
+  "currentTeamCode": "CUR",
+  "photoUrl": "assets/managers/rutten.png",
+  "preferredFormation": "4-3-3",
+  "coachingStyle": "Possession",
+  "yearsExperience": 25,
+  "previousTeams": ["FC Twente", "Schalke 04", "PSV Eindhoven", "Feyenoord", "Vitesse", "Anderlecht", "Al Shabab", "Maccabi Haifa"],
+  "trophies": ["KNVB Cup (Twente)"],
+  "careerWins": 220,
+  "careerDraws": 100,
+  "careerLosses": 130,
+  "careerWinPercentage": 49,
+  "bio": "Experienced Dutch manager appointed to lead Curaçao at the 2026 World Cup after Dick Advocaat stepped down in February 2026. Previously managed top European clubs including Schalke 04, PSV Eindhoven, and Feyenoord, and led PSV on a 39-match unbeaten run."
+}

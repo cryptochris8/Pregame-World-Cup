@@ -1,0 +1,21 @@
+{
+  "id": "manager_sco",
+  "firstName": "Steve",
+  "lastName": "Clarke",
+  "commonName": "Steve Clarke",
+  "dateOfBirth": "1963-08-29",
+  "nationality": "Scotland",
+  "currentTeam": "Scotland",
+  "currentTeamCode": "SCO",
+  "photoUrl": "assets/managers/clarke.png",
+  "preferredFormation": "3-5-2",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 15,
+  "previousTeams": ["Kilmarnock", "West Bromwich Albion", "Reading", "Aston Villa (assistant)", "Chelsea (assistant)"],
+  "trophies": ["Scottish Football Writers' Association Manager of the Year 2019 (Kilmarnock)"],
+  "careerWins": 120,
+  "careerDraws": 60,
+  "careerLosses": 80,
+  "careerWinPercentage": 46,
+  "bio": "Appointed Scotland manager in 2019, Clarke led the nation to consecutive European Championships at Euro 2020 and Euro 2024, ending decades of major tournament absence. A former Chelsea and West Brom assistant known for his organized defensive approach."
+}

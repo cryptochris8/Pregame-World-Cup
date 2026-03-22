@@ -29,7 +29,7 @@ class WorldCupMockData {
         primaryColor: '#C8102E', secondaryColor: '#FFFFFF',
         stars: ['José Luis Rodríguez', 'Édgar Bárcenas', 'Cecilio Waterman', 'Adalberto Carrasquilla'],
         appearances: 2, bestFinish: 'Group Stage (2018, 2022)'),
-    _team('CUW', 'Curaçao', 'CUW', Confederation.concacaf, 85, 'E', 0, false,
+    _team('CUR', 'Curaçao', 'CUR', Confederation.concacaf, 85, 'E', 0, false,
         coach: 'Dick Advocaat', nickname: 'The Island Boys', captain: 'Cuco Martina',
         primaryColor: '#002B7F', secondaryColor: '#F9E814',
         stars: ['Cuco Martina', 'Juninho Bacuna', 'Kenji Gorré', 'Jarchinio Antonia'],
@@ -516,7 +516,7 @@ class WorldCupMockData {
   static const Map<String, String> _fifaToIsoCode = {
     // CONCACAF
     'USA': 'us', 'MEX': 'mx', 'CAN': 'ca', 'PAN': 'pa',
-    'CUW': 'cw', 'HAI': 'ht',
+    'CUR': 'cw', 'HAI': 'ht',
     // CONMEBOL
     'BRA': 'br', 'ARG': 'ar', 'URU': 'uy', 'COL': 'co', 'ECU': 'ec',
     'PAR': 'py',

@@ -1,0 +1,57 @@
+{
+  "team1Code": "MEX",
+  "team2Code": "RSA",
+  "team1Name": "Mexico",
+  "team2Name": "South Africa",
+  "historicalAnalysis": "Mexico and South Africa share a unique World Cup bond — their most famous encounter was the opening match of the 2010 World Cup in Johannesburg, where Bafana Bafana hosted the tournament on African soil for the first time. That match ended 1-1, with Siphiwe Tshabalala's thunderous strike becoming one of the tournament's most iconic goals before Rafael Marquez equalized for El Tri.\n\nNow, 16 years later, history repeats itself with remarkable symmetry. Mexico once again opens a World Cup they are co-hosting, this time at the legendary Estadio Azteca in Mexico City. South Africa, who were the last nation to host a World Cup on their own before the multi-nation format, return to football's biggest stage as qualified participants rather than automatic hosts.\n\nFor Mexico, playing the opening match at the Azteca carries enormous weight. This stadium hosted two World Cup finals (1970 and 1986) and is one of the most atmospheric grounds in world football. El Tri are desperate for a deep tournament run after years of Round of 16 exits, and the opening match sets the tone for their entire campaign. South Africa's qualification for 2026 represents a new era for African football, and they arrive with a talented generation eager to prove themselves on the world stage.",
+  "keyStorylines": [
+    "A rematch of the 2010 World Cup opening match — this time in Mexico City",
+    "Mexico opening the 2026 World Cup as co-hosts at the iconic Estadio Azteca",
+    "South Africa returning to the World Cup as a qualified team, not just hosts",
+    "The Estadio Azteca's 80,000+ fans creating one of football's great atmospheres",
+    "Mexico looking to break their Round of 16 curse with a strong home tournament"
+  ],
+  "playersToWatch": [
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "position": "Winger",
+      "reason": "El Chucky brings pace and creativity as Mexico's most dangerous attacker in front of a home crowd"
+    },
+    {
+      "name": "Percy Tau",
+      "teamCode": "RSA",
+      "position": "Forward",
+      "reason": "South Africa's star attacker who must lead the line against a hostile Azteca crowd"
+    },
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "position": "Midfielder",
+      "reason": "The midfield general who controls tempo and breaks up opposition play for El Tri"
+    },
+    {
+      "name": "Ronwen Williams",
+      "teamCode": "RSA",
+      "position": "Goalkeeper",
+      "reason": "2024 CAF Goalkeeper of the Year and Bafana Bafana's captain — will need a world-class performance"
+    }
+  ],
+  "tacticalPreview": "Mexico will look to play an expansive, high-energy 4-3-3 designed to electrify the home crowd. Their wingers will stretch the South African defense, full-backs will push forward aggressively, and the midfield trio led by Edson Alvarez will aim to dominate possession. The Azteca crowd will act as a 12th man, and Mexico's coach will want early goals to settle any nerves.\n\nSouth Africa will likely set up in a disciplined 4-4-2 or 4-5-1, sitting deep and looking to absorb pressure before countering with pace through their wide players. Bafana Bafana have shown tactical maturity in recent years, and their game plan will revolve around keeping the match tight, frustrating Mexico, and hoping for set-piece opportunities. Mexico City's altitude of 2,240 meters could be a factor for South African players unaccustomed to playing at elevation.",
+  "prediction": {
+    "predictedOutcome": "MEX",
+    "predictedScore": "2-1",
+    "confidence": 72,
+    "reasoning": "Mexico's home advantage at the Azteca, the emotional surge of opening the World Cup, and their superior squad depth make them clear favorites. However, South Africa are a better team than many expect, and their 2010 opening match draw at home shows they know how to rise to the occasion in World Cup openers.",
+    "alternativeScenario": "South Africa have a track record of performing in World Cup openers — they were unbeaten in their opening match in 2010. If Ronwen Williams produces a heroic display and Mexico's nerves get the better of them, a 1-1 draw echoing the 2010 result would be poetic."
+  },
+  "pastEncountersSummary": "The most significant meeting between these two sides was the opening match of the 2010 World Cup in Johannesburg, which ended 1-1. Siphiwe Tshabalala's stunning long-range goal for South Africa remains one of the most celebrated World Cup goals in history, before Rafael Marquez headed in Mexico's equalizer. They have also met in friendly matches, with the fixture generally competitive.",
+  "funFacts": [
+    "This match opens the entire 2026 FIFA World Cup — just as Mexico vs South Africa opened the 2010 edition",
+    "The Estadio Azteca is the only stadium to have hosted two World Cup finals (1970, 1986)",
+    "South Africa's Siphiwe Tshabalala scored the first goal of the 2010 World Cup against Mexico",
+    "Mexico City sits at 2,240 meters altitude — one of the highest World Cup venues in 2026",
+    "Ronwen Williams was named CAF Goalkeeper of the Year in 2024"
+  ],
+  "isFirstMeeting": false
+}

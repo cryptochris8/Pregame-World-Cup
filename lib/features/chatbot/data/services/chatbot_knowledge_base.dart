@@ -348,20 +348,14 @@ class ChatbotKnowledgeBase {
 
   /// Get head-to-head data for two teams (lazy loaded).
   Future<Map<String, dynamic>?> getHeadToHead(String code1, String code2) async {
-    // Try both orderings
-    final key1 = '${code1.toUpperCase()}_${code2.toUpperCase()}';
-    final key2 = '${code2.toUpperCase()}_${code1.toUpperCase()}';
-    if (_h2hCache.containsKey(key1)) return _h2hCache[key1];
-    if (_h2hCache.containsKey(key2)) return _h2hCache[key2];
+    // Sort alphabetically to match file naming convention (e.g. ARG_BRA.json)
+    final codes = [code1.toUpperCase(), code2.toUpperCase()]..sort();
+    final key = '${codes[0]}_${codes[1]}';
+    if (_h2hCache.containsKey(key)) return _h2hCache[key];
 
-    var data = await _loadJsonMap('assets/data/worldcup/head_to_head/$key1.json');
+    final data = await _loadJsonMap('assets/data/worldcup/head_to_head/$key.json');
     if (data != null) {
-      _h2hCache[key1] = data;
-      return data;
-    }
-    data = await _loadJsonMap('assets/data/worldcup/head_to_head/$key2.json');
-    if (data != null) {
-      _h2hCache[key2] = data;
+      _h2hCache[key] = data;
       return data;
     }
     return null;
@@ -369,19 +363,14 @@ class ChatbotKnowledgeBase {
 
   /// Get match summary/preview for two teams (lazy loaded).
   Future<Map<String, dynamic>?> getMatchSummary(String code1, String code2) async {
-    final key1 = '${code1.toUpperCase()}_${code2.toUpperCase()}';
-    final key2 = '${code2.toUpperCase()}_${code1.toUpperCase()}';
-    if (_matchSummaryCache.containsKey(key1)) return _matchSummaryCache[key1];
-    if (_matchSummaryCache.containsKey(key2)) return _matchSummaryCache[key2];
+    // Sort alphabetically to match file naming convention (e.g. ARG_BRA.json)
+    final codes = [code1.toUpperCase(), code2.toUpperCase()]..sort();
+    final key = '${codes[0]}_${codes[1]}';
+    if (_matchSummaryCache.containsKey(key)) return _matchSummaryCache[key];
 
-    var data = await _loadJsonMap('assets/data/worldcup/match_summaries/$key1.json');
+    final data = await _loadJsonMap('assets/data/worldcup/match_summaries/$key.json');
     if (data != null) {
-      _matchSummaryCache[key1] = data;
-      return data;
-    }
-    data = await _loadJsonMap('assets/data/worldcup/match_summaries/$key2.json');
-    if (data != null) {
-      _matchSummaryCache[key2] = data;
+      _matchSummaryCache[key] = data;
       return data;
     }
     return null;
