@@ -384,6 +384,24 @@ class SocialFriendService {
       await connectionsBox.put(blockConnection.connectionId, blockConnection);
       connectionMemoryCache.clear();
 
+      // Notify admins of block action (triggers onReportCreated Cloud Function)
+      try {
+        await _firestore.collection('reports').add({
+          'reporterId': userId,
+          'reportedUserId': blockedUserId,
+          'contentType': 'user',
+          'contentId': blockedUserId,
+          'reason': 'blocked_by_user',
+          'details': 'User blocked another user',
+          'status': 'pending',
+          'createdAt': Timestamp.now(),
+          'isBlockAction': true,
+        });
+      } catch (e) {
+        // Non-critical - block still succeeds even if notification fails
+        LoggingService.warning('Failed to create block report: $e', tag: _logTag);
+      }
+
       PerformanceMonitor.endApiCall('block_user', success: true);
       return true;
     } catch (e) {

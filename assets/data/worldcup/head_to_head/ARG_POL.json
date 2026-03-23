@@ -17,7 +17,7 @@
   "notableMatches": [
     {
       "year": 2022,
-      "tournament": "FIFA World Cup",
+      "tournament": "World Cup",
       "stage": "Group Stage",
       "team1Score": 2,
       "team2Score": 0,
@@ -27,7 +27,7 @@
     },
     {
       "year": 1978,
-      "tournament": "FIFA World Cup",
+      "tournament": "World Cup",
       "stage": "Second Round",
       "team1Score": 2,
       "team2Score": 0,
@@ -37,7 +37,7 @@
     },
     {
       "year": 1974,
-      "tournament": "FIFA World Cup",
+      "tournament": "World Cup",
       "stage": "Second Round",
       "team1Score": 2,
       "team2Score": 3,

@@ -1417,7 +1417,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hostNation => 'Host Nation';
 
   @override
-  String get fifaRanking => 'FIFA Ranking';
+  String get fifaRanking => 'World Ranking';
 
   @override
   String get worldCupTitles => 'World Cup Titles';

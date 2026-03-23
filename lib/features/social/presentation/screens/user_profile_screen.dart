@@ -12,6 +12,7 @@ import '../../../auth/domain/services/auth_service.dart';
 import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
 import '../../../settings/presentation/screens/accessibility_preferences_screen.dart';
 import 'edit_profile_screen.dart';
+import '../../../moderation/presentation/widgets/report_button.dart';
 import '../widgets/profile_header_card.dart';
 import '../widgets/profile_stats_row.dart';
 import '../widgets/profile_feature_cards.dart';
@@ -292,6 +293,12 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                         textAlign: _isCurrentUser ? TextAlign.center : TextAlign.left,
                       ),
                     ),
+                    if (!_isCurrentUser && _profile != null)
+                      ReportButton.user(
+                        userId: _profile!.userId,
+                        displayName: _profile!.displayName,
+                        iconColor: Colors.white70,
+                      ),
                     if (_isCurrentUser) ...[
                       IconButton(
                         onPressed: () {

@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-02-21",
-  "description": "Confederation vs confederation head-to-head records at FIFA World Cup finals (1930-2022). Data sourced from RSSSF (Rec.Sport.Soccer Statistics Foundation), FIFA.com, and Wikipedia.",
-  "dataCoverage": "FIFA World Cup finals 1930-2022 (22 tournaments, 964 matches total)",
+  "description": "Confederation vs confederation head-to-head records at World Cup finals (1930-2022). Data sourced from RSSSF (Rec.Sport.Soccer Statistics Foundation), official records, and Wikipedia.",
+  "dataCoverage": "World Cup finals 1930-2022 (22 tournaments, 964 matches total)",
   "sources": [
     "https://www.rsssf.org/tablesw/wc-confed-hth.html",
     "https://www.planetworldcup.com/STATS/stat_confed.html",

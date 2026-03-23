@@ -17,7 +17,7 @@
   "notableMatches": [
     {
       "year": 1978,
-      "tournament": "FIFA World Cup",
+      "tournament": "World Cup",
       "stage": "Group Stage",
       "team1Score": 2,
       "team2Score": 1,
@@ -27,7 +27,7 @@
     },
     {
       "year": 1958,
-      "tournament": "FIFA World Cup Qualifier",
+      "tournament": "World Cup Qualifier",
       "stage": "Qualifier",
       "team1Score": 1,
       "team2Score": 3,

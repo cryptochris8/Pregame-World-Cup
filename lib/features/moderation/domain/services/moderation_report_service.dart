@@ -20,9 +20,6 @@ class ModerationReportService {
   CollectionReference<Map<String, dynamic>> get _reportsCollection =>
       _firestore.collection('reports');
 
-  CollectionReference<Map<String, dynamic>> get _moderationStatusCollection =>
-      _firestore.collection('user_moderation_status');
-
   String? get _currentUserId => _auth.currentUser?.uid;
 
   /// Submit a report for content or user
@@ -80,10 +77,9 @@ class ModerationReportService {
 
       await _reportsCollection.doc(reportId).set(report.toJson());
 
-      // Update report count for content owner
-      if (contentOwnerId != null) {
-        await _incrementReportCount(contentOwnerId);
-      }
+      // Note: Report count increment and auto-moderation thresholds are handled
+      // server-side by the onReportCreated Cloud Function (which uses Admin SDK
+      // to bypass Firestore rules that restrict client writes to user_moderation_status).
 
       developer.log('Report submitted: $reportId', name: 'ModerationService');
       return report;
@@ -234,10 +230,4 @@ class ModerationReportService {
     }
   }
 
-  Future<void> _incrementReportCount(String userId) async {
-    await _moderationStatusCollection.doc(userId).set({
-      'usualId': userId,
-      'reportCount': FieldValue.increment(1),
-    }, SetOptions(merge: true));
-  }
 }

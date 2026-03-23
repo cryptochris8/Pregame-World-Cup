@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-02-21",
-  "description": "Squad market values for all FIFA World Cup 2026 teams, calculated from individual player market values in team roster JSON files.",
+  "description": "Squad market values for all World Cup 2026 teams, calculated from individual player market values in team roster JSON files.",
   "totalTeams": 48,
   "teams": [
     {

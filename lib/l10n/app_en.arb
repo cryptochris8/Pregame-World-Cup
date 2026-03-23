@@ -1948,7 +1948,7 @@
   "@hostNation": {
     "description": "Host nation badge label"
   },
-  "fifaRanking": "FIFA Ranking",
+  "fifaRanking": "World Ranking",
   "@fifaRanking": {
     "description": "FIFA ranking stat label"
   },

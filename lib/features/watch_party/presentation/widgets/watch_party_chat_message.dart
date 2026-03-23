@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../domain/entities/watch_party_message.dart';
 import '../../domain/entities/watch_party_member.dart';
+import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
+import '../../../moderation/domain/entities/report.dart';
 
 /// Widget displaying a single chat message
 class WatchPartyChatMessage extends StatelessWidget {
@@ -81,9 +83,48 @@ class WatchPartyChatMessage extends StatelessWidget {
     );
   }
 
+  void _showMessageOptionsSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (onLongPress != null)
+              ListTile(
+                leading: const Icon(Icons.more_horiz),
+                title: const Text('More Options'),
+                onTap: () {
+                  Navigator.pop(context);
+                  onLongPress!();
+                },
+              ),
+            if (!isCurrentUser)
+              ListTile(
+                leading: Icon(Icons.flag_outlined, color: Colors.red[400]),
+                title: const Text('Report Message'),
+                onTap: () {
+                  Navigator.pop(context);
+                  ReportBottomSheet.show(
+                    context: context,
+                    contentType: ReportableContentType.message,
+                    contentId: message.messageId,
+                    contentOwnerId: message.senderId,
+                    contentOwnerDisplayName: message.senderName,
+                    contentSnapshot: message.content,
+                    title: 'Report Message',
+                  );
+                },
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _buildUserMessage(BuildContext context) {
     return GestureDetector(
-      onLongPress: onLongPress,
+      onLongPress: () => _showMessageOptionsSheet(context),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
         child: Row(

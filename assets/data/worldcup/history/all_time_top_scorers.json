@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "title": "FIFA World Cup All-Time Top Goalscorers",
-    "description": "Complete ranking of top goalscorers in FIFA World Cup history (1930-2022)",
+    "title": "World Cup All-Time Top Goalscorers",
+    "description": "Complete ranking of top goalscorers in World Cup history (1930-2022)",
     "last_updated": "2026-03-01",
-    "sources": ["FIFA.com", "Olympics.com", "Wikipedia", "FBref.com", "Transfermarkt"]
+    "sources": ["official records", "Olympics.com", "Wikipedia", "FBref.com", "Transfermarkt"]
   },
   "scorers": [
     {
@@ -32,7 +32,7 @@
       "tournamentCount": 4,
       "goldenBoot": true,
       "isActive": false,
-      "notes": "Won Golden Boot in 2002 with 8 goals. Two-time World Cup winner (1994, 2002). Three-time FIFA World Player of the Year."
+      "notes": "Won Golden Boot in 2002 with 8 goals. Two-time World Cup winner (1994, 2002). Three-time World Player of the Year."
     },
     {
       "rank": 3,
@@ -382,7 +382,7 @@
       "tournamentCount": 2,
       "goldenBoot": true,
       "isActive": false,
-      "notes": "Won Golden Boot in 1938 with 7 goals. FIFA revised total from 8 to 7 in 2006 for 1938 alone. 1 goal in 1934. Known as the 'Black Diamond'."
+      "notes": "Won Golden Boot in 1938 with 7 goals. The official total was revised total from 8 to 7 in 2006 for 1938 alone. 1 goal in 1934. Known as the 'Black Diamond'."
     },
     {
       "rank": 26,

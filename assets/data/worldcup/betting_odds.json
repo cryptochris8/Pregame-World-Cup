@@ -1303,8 +1303,8 @@
     "format_note": "Top 2 from each group qualify automatically. Best 8 third-place teams also advance to Round of 32."
   },
   "fifa_rankings_context": {
-    "description": "FIFA/Coca-Cola Men's World Ranking context (January 2026)",
-    "source": "FIFA.com",
+    "description": "Men's World Ranking context (January 2026)",
+    "source": "official records",
     "source_url": "https://inside.fifa.com/fifa-world-ranking",
     "date": "2026-01-30",
     "notable_movements": [

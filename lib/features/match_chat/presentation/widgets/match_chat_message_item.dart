@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../domain/entities/match_chat.dart';
+import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
+import '../../../moderation/domain/entities/report.dart';
 
 /// Widget to display a single message in match chat
 class MatchChatMessageItem extends StatelessWidget {
@@ -30,7 +32,7 @@ class MatchChatMessageItem extends StatelessWidget {
       return _buildEventReaction(theme);
     }
 
-    return _buildChatMessage(theme);
+    return _buildChatMessage(context, theme);
   }
 
   Widget _buildSystemMessage(ThemeData theme) {
@@ -85,7 +87,7 @@ class MatchChatMessageItem extends StatelessWidget {
     );
   }
 
-  Widget _buildChatMessage(ThemeData theme) {
+  Widget _buildChatMessage(BuildContext context, ThemeData theme) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
@@ -99,7 +101,7 @@ class MatchChatMessageItem extends StatelessWidget {
           ],
           Flexible(
             child: GestureDetector(
-              onLongPress: () => _showMessageOptions(theme),
+              onLongPress: () => _showMessageOptions(context, theme),
               child: Column(
                 crossAxisAlignment: isOwnMessage
                     ? CrossAxisAlignment.end
@@ -267,9 +269,111 @@ class MatchChatMessageItem extends StatelessWidget {
     );
   }
 
-  void _showMessageOptions(ThemeData theme) {
-    // This would be implemented with a context menu
-    // For now, just allow adding reactions
+  void _showMessageOptions(BuildContext context, ThemeData theme) {
+    showModalBottomSheet(
+      context: context,
+      builder: (sheetContext) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (onReaction != null)
+              ListTile(
+                leading: const Icon(Icons.add_reaction_outlined),
+                title: const Text('Add Reaction'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  _showReactionPicker(sheetContext);
+                },
+              ),
+            if (isOwnMessage && onDelete != null)
+              ListTile(
+                leading: const Icon(Icons.delete_outline, color: Colors.red),
+                title: const Text('Delete Message'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  onDelete!();
+                },
+              ),
+            if (!isOwnMessage)
+              ListTile(
+                leading: Icon(Icons.flag_outlined, color: Colors.red[400]),
+                title: const Text('Report Message'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  ReportBottomSheet.show(
+                    context: context,
+                    contentType: ReportableContentType.message,
+                    contentId: message.messageId,
+                    contentOwnerId: message.senderId,
+                    contentOwnerDisplayName: message.senderName,
+                    contentSnapshot: message.content,
+                    title: 'Report Message',
+                  );
+                },
+              ),
+            if (!isOwnMessage)
+              ListTile(
+                leading: Icon(Icons.block, color: Colors.orange[400]),
+                title: const Text('Block User'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  _showBlockConfirmation(context);
+                },
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showBlockConfirmation(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Block User'),
+        content: Text(
+          'Are you sure you want to block ${message.senderName}? You will no longer see their messages.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              // Block action will be handled by the parent
+            },
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: const Text('Block'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showReactionPicker(BuildContext context) {
+    final reactions = ['👍', '❤️', '😂', '😮', '😢', '😡'];
+    showModalBottomSheet(
+      context: context,
+      builder: (context) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: reactions.map((emoji) {
+              return GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                  onReaction?.call(emoji);
+                },
+                child: Text(emoji, style: const TextStyle(fontSize: 28)),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
   }
 
   String _formatTime(DateTime time) {

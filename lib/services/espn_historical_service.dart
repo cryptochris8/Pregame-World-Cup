@@ -188,7 +188,7 @@ class ESPNHistoricalService {
       'rivalry_name': 'The East Asian Derby',
       'significance': 'Asia\'s biggest football rivalry, co-hosted 2002 World Cup',
       'key_facts': [
-        'Co-hosted 2002 FIFA World Cup together',
+        'Co-hosted 2002 World Cup together',
         'Both reached knockout rounds in 2022 WC',
         'Historical and cultural rivalry beyond football',
         'Both emerging as consistent World Cup contenders'

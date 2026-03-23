@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'l10n/app_localizations.dart';
@@ -12,6 +13,7 @@ import 'features/auth/domain/services/auth_service.dart';
 import 'features/navigation/main_navigation_screen.dart';
 import 'features/auth/presentation/screens/login_screen.dart';
 import 'features/auth/presentation/screens/email_verification_screen.dart';
+import 'features/auth/presentation/screens/terms_acceptance_screen.dart';
 import 'features/messaging/domain/services/messaging_service.dart';
 import 'features/messaging/presentation/screens/chat_screen.dart';
 import 'services/revenuecat_service.dart';
@@ -143,6 +145,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
   bool _pushNotificationsInitialized = false;
   bool _presenceInitialized = false;
   bool _profileCreationInProgress = false;
+  bool? _termsAccepted; // null = not yet checked, true/false = checked
 
   @override
   void initState() {
@@ -230,6 +233,27 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
       // Set up notification tap handler for navigation
       _setupNotificationNavigation();
     });
+  }
+
+  /// Check if user has accepted terms of service
+  Future<void> _checkTermsAcceptance(String userId) async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('social_profiles')
+          .doc(userId)
+          .get();
+      final data = doc.data();
+      final accepted = data != null && data['termsAcceptedAt'] != null;
+      if (mounted) {
+        setState(() => _termsAccepted = accepted);
+      }
+    } catch (e) {
+      debugLog('TERMS: Error checking terms acceptance: $e');
+      // Default to not accepted so user sees the terms screen
+      if (mounted) {
+        setState(() => _termsAccepted = false);
+      }
+    }
   }
 
   /// Ensure user profile exists after email verification
@@ -393,6 +417,28 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
             _initializeAuthenticatedUserServices();
             // Ensure user profile exists (for first verified login)
             _ensureUserProfileExists(user);
+
+            // Check terms acceptance (Apple Guideline 1.2 requirement)
+            if (_termsAccepted == null) {
+              // Haven't checked yet — start the check
+              _checkTermsAcceptance(user.uid);
+              return const Scaffold(
+                backgroundColor: Color(0xFF0F172A),
+                body: Center(
+                  child: CircularProgressIndicator(color: Colors.orange),
+                ),
+              );
+            }
+
+            if (_termsAccepted == false) {
+              // User hasn't accepted terms — show terms screen
+              return TermsAcceptanceScreen(
+                onAccepted: () {
+                  setState(() => _termsAccepted = true);
+                },
+              );
+            }
+
             return const MainNavigationScreen();
           } else {
             // Email not verified - show verification screen
@@ -400,6 +446,9 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
           }
         }
 
+        // Reset terms state for next login
+        _termsAccepted = null;
+        _pushNotificationsInitialized = false;
         // Show login screen if user is not authenticated
         return const LoginScreen();
       },

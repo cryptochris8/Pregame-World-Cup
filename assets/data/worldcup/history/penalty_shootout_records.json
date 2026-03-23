@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "FIFA World Cup Penalty Shootout Records by Nation",
-    "description": "Complete penalty shootout win/loss records for all nations in FIFA World Cup history (1982-2022)",
+    "title": "World Cup Penalty Shootout Records by Nation",
+    "description": "Complete penalty shootout win/loss records for all nations in World Cup history (1982-2022)",
     "last_updated": "2026-03-01",
     "total_shootouts": 35,
-    "sources": ["FIFA.com", "Wikipedia - List of FIFA World Cup penalty shoot-outs"]
+    "sources": ["official records", "Wikipedia - List of World Cup penalty shoot-outs"]
   },
   "records": [
     {

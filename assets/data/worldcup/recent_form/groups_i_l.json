@@ -1,10 +1,10 @@
 {
   "metadata": {
     "generated": "2026-02-21",
-    "description": "Recent international match results (2024-2026) for FIFA World Cup 2026 Groups A-D teams",
+    "description": "Recent international match results (2024-2026) for World Cup 2026 Groups A-D teams",
     "sources": [
       "ESPN",
-      "FIFA.com",
+      "official records",
       "UEFA.com",
       "CONCACAF.com",
       "CAFonline.com",
@@ -110,7 +110,7 @@
           "date": "2024-09-05",
           "opponent": "South Korea",
           "score": "0-3",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "L",
           "venue": "away"
         },
@@ -118,7 +118,7 @@
           "date": "2024-09-10",
           "opponent": "Palestine",
           "score": "2-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "home"
         },
@@ -126,7 +126,7 @@
           "date": "2024-10-10",
           "opponent": "Jordan",
           "score": "0-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "D",
           "venue": "away"
         },
@@ -134,7 +134,7 @@
           "date": "2024-10-15",
           "opponent": "Oman",
           "score": "1-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "home"
         },
@@ -142,7 +142,7 @@
           "date": "2024-11-14",
           "opponent": "Kuwait",
           "score": "3-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "home"
         },
@@ -150,7 +150,7 @@
           "date": "2024-11-19",
           "opponent": "South Korea",
           "score": "1-3",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "L",
           "venue": "home"
         },
@@ -158,7 +158,7 @@
           "date": "2025-03-20",
           "opponent": "Palestine",
           "score": "2-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "away"
         },
@@ -166,7 +166,7 @@
           "date": "2025-03-25",
           "opponent": "Jordan",
           "score": "1-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "D",
           "venue": "home"
         },
@@ -174,7 +174,7 @@
           "date": "2025-06-05",
           "opponent": "Oman",
           "score": "2-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "away"
         },
@@ -182,7 +182,7 @@
           "date": "2025-06-10",
           "opponent": "Kuwait",
           "score": "1-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "away"
         }
@@ -413,7 +413,7 @@
           "date": "2024-06-06",
           "opponent": "Guinea",
           "score": "2-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CAF Group A",
+          "competition": "World Cup 2026 Qualifier - CAF Group A",
           "result": "W",
           "venue": "home"
         },
@@ -421,7 +421,7 @@
           "date": "2024-06-10",
           "opponent": "Uganda",
           "score": "1-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CAF Group A",
+          "competition": "World Cup 2026 Qualifier - CAF Group A",
           "result": "D",
           "venue": "away"
         },
@@ -603,7 +603,7 @@
           "date": "2024-09-05",
           "opponent": "Kuwait",
           "score": "2-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "home"
         },
@@ -611,7 +611,7 @@
           "date": "2024-09-10",
           "opponent": "South Korea",
           "score": "0-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "D",
           "venue": "away"
         },
@@ -619,7 +619,7 @@
           "date": "2024-10-10",
           "opponent": "Iraq",
           "score": "0-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "D",
           "venue": "home"
         },
@@ -627,7 +627,7 @@
           "date": "2024-10-15",
           "opponent": "Palestine",
           "score": "3-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "away"
         },
@@ -635,7 +635,7 @@
           "date": "2024-11-14",
           "opponent": "Oman",
           "score": "1-0",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "home"
         },
@@ -643,7 +643,7 @@
           "date": "2025-03-20",
           "opponent": "Kuwait",
           "score": "2-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "W",
           "venue": "away"
         },
@@ -651,7 +651,7 @@
           "date": "2025-03-25",
           "opponent": "Iraq",
           "score": "1-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "D",
           "venue": "away"
         },
@@ -659,7 +659,7 @@
           "date": "2025-06-05",
           "opponent": "Oman",
           "score": "0-1",
-          "competition": "FIFA World Cup 2026 Qualifier - AFC 3rd Round",
+          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "L",
           "venue": "away"
         }
@@ -700,7 +700,7 @@
           "date": "2024-06-06",
           "opponent": "Senegal",
           "score": "1-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CAF Group B",
+          "competition": "World Cup 2026 Qualifier - CAF Group B",
           "result": "D",
           "venue": "home"
         },
@@ -708,7 +708,7 @@
           "date": "2024-06-10",
           "opponent": "Togo",
           "score": "2-0",
-          "competition": "FIFA World Cup 2026 Qualifier - CAF Group B",
+          "competition": "World Cup 2026 Qualifier - CAF Group B",
           "result": "W",
           "venue": "away"
         },
@@ -911,7 +911,7 @@
           "date": "2024-11-14",
           "opponent": "Qatar",
           "score": "3-2",
-          "competition": "FIFA World Cup Qualifying - AFC",
+          "competition": "World Cup Qualifying - AFC",
           "result": "W",
           "venue": "home"
         },
@@ -919,7 +919,7 @@
           "date": "2024-11-19",
           "opponent": "North Korea",
           "score": "1-0",
-          "competition": "FIFA World Cup Qualifying - AFC",
+          "competition": "World Cup Qualifying - AFC",
           "result": "W",
           "venue": "away"
         },
@@ -927,7 +927,7 @@
           "date": "2025-03-20",
           "opponent": "Kyrgyz Republic",
           "score": "1-0",
-          "competition": "FIFA World Cup Qualifying - AFC",
+          "competition": "World Cup Qualifying - AFC",
           "result": "W",
           "venue": "away"
         },
@@ -935,7 +935,7 @@
           "date": "2025-03-25",
           "opponent": "Iran",
           "score": "2-2",
-          "competition": "FIFA World Cup Qualifying - AFC",
+          "competition": "World Cup Qualifying - AFC",
           "result": "D",
           "venue": "away"
         },
@@ -943,7 +943,7 @@
           "date": "2025-06-05",
           "opponent": "United Arab Emirates",
           "score": "0-0",
-          "competition": "FIFA World Cup Qualifying - AFC",
+          "competition": "World Cup Qualifying - AFC",
           "result": "D",
           "venue": "home"
         },
@@ -951,7 +951,7 @@
           "date": "2025-06-10",
           "opponent": "Qatar",
           "score": "3-0",
-          "competition": "FIFA World Cup Qualifying - AFC",
+          "competition": "World Cup Qualifying - AFC",
           "result": "W",
           "venue": "home"
         },
@@ -1017,7 +1017,7 @@
           "date": "2025-06-06",
           "opponent": "Gibraltar",
           "score": "7-0",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "away"
         },
@@ -1025,7 +1025,7 @@
           "date": "2025-06-09",
           "opponent": "Czech Republic",
           "score": "5-1",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "home"
         },
@@ -1033,7 +1033,7 @@
           "date": "2025-09-05",
           "opponent": "Faroe Islands",
           "score": "1-0",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "away"
         },
@@ -1041,7 +1041,7 @@
           "date": "2025-09-08",
           "opponent": "Montenegro",
           "score": "4-0",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "home"
         },
@@ -1049,7 +1049,7 @@
           "date": "2025-10-09",
           "opponent": "Czech Republic",
           "score": "0-0",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "D",
           "venue": "away"
         },
@@ -1057,7 +1057,7 @@
           "date": "2025-10-12",
           "opponent": "Gibraltar",
           "score": "3-0",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "home"
         },
@@ -1065,7 +1065,7 @@
           "date": "2025-11-14",
           "opponent": "Faroe Islands",
           "score": "3-1",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "home"
         },
@@ -1073,7 +1073,7 @@
           "date": "2025-11-17",
           "opponent": "Montenegro",
           "score": "2-3",
-          "competition": "FIFA World Cup Qualifying - UEFA",
+          "competition": "World Cup Qualifying - UEFA",
           "result": "L",
           "venue": "away"
         }
@@ -1263,7 +1263,7 @@
           "date": "2024-06-06",
           "opponent": "Mali",
           "score": "1-2",
-          "competition": "FIFA World Cup 2026 Qualifier - CAF Group I",
+          "competition": "World Cup 2026 Qualifier - CAF Group I",
           "result": "L",
           "venue": "away"
         },
@@ -1271,7 +1271,7 @@
           "date": "2024-06-10",
           "opponent": "Central African Republic",
           "score": "4-1",
-          "competition": "FIFA World Cup 2026 Qualifier - CAF Group I",
+          "competition": "World Cup 2026 Qualifier - CAF Group I",
           "result": "W",
           "venue": "home"
         },

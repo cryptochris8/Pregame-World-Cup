@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:hive/hive.dart';
 import '../entities/activity_feed.dart';
 import '../../../../core/services/performance_monitor.dart';
+import '../../../moderation/domain/services/profanity_filter_service.dart';
 
 class ActivityFeedService {
   static const String _activitiesBoxName = 'activity_feed';
@@ -85,6 +86,14 @@ class ActivityFeedService {
     try {
       PerformanceMonitor.startApiCall('create_activity');
 
+      // Filter content for profanity (Apple Guideline 1.2 compliance)
+      final filterService = ProfanityFilterService();
+      final filterResult = filterService.filterContent(activity.content);
+      if (filterResult.shouldAutoReject) {
+        PerformanceMonitor.endApiCall('create_activity', success: false);
+        return false; // Reject objectionable content
+      }
+
       final data = _activityToFirestore(activity);
       await _firestore.collection('activities').doc(activity.activityId).set(data);
 
@@ -145,6 +154,30 @@ class ActivityFeedService {
         // Continue with just the user's own activities
       }
 
+      // Get blocked users in both directions (Apple Guideline 1.2 compliance)
+      final blockedIds = <String>{};
+      try {
+        final blockedByMe = await _firestore
+            .collection('social_connections')
+            .where('fromUserId', isEqualTo: userId)
+            .where('type', isEqualTo: 'block')
+            .get();
+        final blockedMe = await _firestore
+            .collection('social_connections')
+            .where('toUserId', isEqualTo: userId)
+            .where('type', isEqualTo: 'block')
+            .get();
+        for (final doc in blockedByMe.docs) {
+          blockedIds.add(doc.data()['toUserId'] as String);
+        }
+        for (final doc in blockedMe.docs) {
+          blockedIds.add(doc.data()['fromUserId'] as String);
+        }
+        friendIds.removeAll(blockedIds);
+      } catch (e) {
+        // Continue without block filtering if query fails
+      }
+
       final activities = <ActivityFeedItem>[];
 
       try {
@@ -197,6 +230,9 @@ class ActivityFeedService {
           activities.addAll(cachedActivities);
         }
       }
+
+      // Remove any activities from blocked users (Apple Guideline 1.2 compliance)
+      activities.removeWhere((a) => blockedIds.contains(a.userId));
 
       // Sort by creation time and limit
       activities.sort((a, b) => b.createdAt.compareTo(a.createdAt));
@@ -418,6 +454,14 @@ class ActivityFeedService {
 
     try {
       PerformanceMonitor.startApiCall('comment_activity');
+
+      // Filter comment for profanity (Apple Guideline 1.2 compliance)
+      final filterService = ProfanityFilterService();
+      final filterResult = filterService.filterContent(comment);
+      if (filterResult.shouldAutoReject) {
+        PerformanceMonitor.endApiCall('comment_activity', success: false);
+        return false; // Reject objectionable content
+      }
 
       final activityComment = ActivityComment(
         commentId: '${activityId}_${userId}_${DateTime.now().millisecondsSinceEpoch}',

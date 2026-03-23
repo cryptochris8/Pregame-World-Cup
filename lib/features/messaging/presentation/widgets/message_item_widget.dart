@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/entities/chat.dart';
+import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
+import '../../../moderation/domain/entities/report.dart';
 
 class MessageItemWidget extends StatelessWidget {
   final Message message;
@@ -448,6 +450,9 @@ class MessageItemWidget extends StatelessWidget {
   }
 
   void _showMessageOptions(BuildContext context) {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    final isOwnMessage = currentUser?.uid == message.senderId;
+
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.brown[900],
@@ -486,6 +491,23 @@ class MessageItemWidget extends StatelessWidget {
                 );
               },
             ),
+            if (!isOwnMessage)
+              ListTile(
+                leading: Icon(Icons.flag_outlined, color: Colors.red[400]),
+                title: const Text('Report Message', style: TextStyle(color: Colors.white)),
+                onTap: () {
+                  Navigator.pop(context);
+                  ReportBottomSheet.show(
+                    context: context,
+                    contentType: ReportableContentType.message,
+                    contentId: message.messageId,
+                    contentOwnerId: message.senderId,
+                    contentOwnerDisplayName: message.senderName,
+                    contentSnapshot: message.content,
+                    title: 'Report Message',
+                  );
+                },
+              ),
           ],
         ),
       ),

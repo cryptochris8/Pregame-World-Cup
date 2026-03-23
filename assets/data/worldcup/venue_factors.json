@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "FIFA World Cup 2026 Venue Factor Analysis",
+    "title": "World Cup 2026 Venue Factor Analysis",
     "description": "Altitude, climate, travel, and capacity factors for all 16 host venues",
     "last_updated": "2026-03-01",
     "sources": [
-      "FIFA.com official match schedule",
+      "official records official match schedule",
       "Wikipedia stadium articles",
       "Weather Spark / Climate-Data.org",
       "MAPLOGS elevation data",

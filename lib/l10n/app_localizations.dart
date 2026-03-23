@@ -2763,7 +2763,7 @@ abstract class AppLocalizations {
   /// FIFA ranking stat label
   ///
   /// In en, this message translates to:
-  /// **'FIFA Ranking'**
+  /// **'World Ranking'**
   String get fifaRanking;
 
   /// World Cup titles stat label

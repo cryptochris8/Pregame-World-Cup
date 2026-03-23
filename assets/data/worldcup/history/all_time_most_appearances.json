@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "title": "FIFA World Cup All-Time Most Appearances",
-    "description": "Complete ranking of players with most FIFA World Cup match appearances (1930-2022)",
+    "title": "World Cup All-Time Most Appearances",
+    "description": "Complete ranking of players with most World Cup match appearances (1930-2022)",
     "last_updated": "2026-03-01",
-    "sources": ["FIFA.com", "Olympics.com", "Wikipedia", "SI.com", "Opta Analyst"]
+    "sources": ["official records", "Olympics.com", "Wikipedia", "SI.com", "Opta Analyst"]
   },
   "players": [
     {
@@ -30,7 +30,7 @@
       "tournamentCount": 5,
       "position": "Midfielder",
       "isActive": false,
-      "notes": "Held the record for 20 years until surpassed by Messi in 2022. Won 1990 World Cup and FIFA World Player of the Year."
+      "notes": "Held the record for 20 years until surpassed by Messi in 2022. Won 1990 World Cup and World Player of the Year."
     },
     {
       "rank": 3,

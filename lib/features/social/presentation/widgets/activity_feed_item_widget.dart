@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import '../../domain/entities/activity_feed.dart';
 import '../../domain/services/activity_feed_service.dart';
 import '../../../../injection_container.dart';
+import '../../../moderation/presentation/widgets/report_button.dart';
+import '../../../moderation/domain/entities/report.dart';
 
 class ActivityFeedItemWidget extends StatefulWidget {
   final ActivityFeedItem activity;
@@ -207,23 +209,24 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
             ),
           ),
 
-          // Delete menu (only show for own activities)
-          if (widget.onDelete != null &&
-              widget.currentUserId != null &&
-              widget.activity.userId == widget.currentUserId)
-            PopupMenuButton<String>(
-              icon: const Icon(
-                Icons.more_vert,
-                color: Colors.white70,
-                size: 20,
-              ),
-              color: const Color(0xFF1E293B),
-              onSelected: (value) {
-                if (value == 'delete') {
-                  widget.onDelete!(widget.activity.activityId);
-                }
-              },
-              itemBuilder: (context) => [
+          // More options menu (delete for own, report for others)
+          PopupMenuButton<String>(
+            icon: const Icon(
+              Icons.more_vert,
+              color: Colors.white70,
+              size: 20,
+            ),
+            color: const Color(0xFF1E293B),
+            onSelected: (value) {
+              if (value == 'delete' && widget.onDelete != null) {
+                widget.onDelete!(widget.activity.activityId);
+              }
+              // Report is handled by ReportMenuItem's onTap
+            },
+            itemBuilder: (context) => [
+              if (widget.onDelete != null &&
+                  widget.currentUserId != null &&
+                  widget.activity.userId == widget.currentUserId)
                 const PopupMenuItem<String>(
                   value: 'delete',
                   child: Row(
@@ -237,8 +240,19 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
                     ],
                   ),
                 ),
-              ],
-            ),
+              if (widget.currentUserId != null &&
+                  widget.activity.userId != widget.currentUserId)
+                ReportMenuItem(
+                  contentType: widget.activity.type == ActivityType.gameComment
+                      ? ReportableContentType.comment
+                      : ReportableContentType.user,
+                  contentId: widget.activity.activityId,
+                  contentOwnerId: widget.activity.userId,
+                  contentOwnerDisplayName: widget.activity.userName,
+                  contentSnapshot: widget.activity.content,
+                ),
+            ],
+          ),
         ],
       ),
     );

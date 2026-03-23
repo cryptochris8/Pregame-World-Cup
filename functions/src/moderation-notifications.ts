@@ -54,8 +54,14 @@ export const onReportCreated = functions.firestore.onDocumentCreated(
     console.log(`New report created: ${report.reportId}`);
 
     try {
-      // Check if content owner has reached auto-moderation thresholds
+      // Increment report count for content owner (server-side to bypass Firestore rules)
       if (report.contentOwnerId) {
+        await db.collection("user_moderation_status").doc(report.contentOwnerId).set({
+          usualId: report.contentOwnerId,
+          reportCount: admin.firestore.FieldValue.increment(1),
+        }, { merge: true });
+
+        // Check if content owner has reached auto-moderation thresholds
         await checkAutoModerationThresholds(report.contentOwnerId);
       }
 

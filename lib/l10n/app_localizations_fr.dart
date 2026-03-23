@@ -1433,7 +1433,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get hostNation => 'Pays Hôte';
 
   @override
-  String get fifaRanking => 'Classement FIFA';
+  String get fifaRanking => 'Classement Mondial';
 
   @override
   String get worldCupTitles => 'Titres en Coupe du Monde';
