@@ -41,7 +41,7 @@ class ChatbotKnowledgeBase {
   final Map<String, List<Map<String, dynamic>>> _matchesByGroup = {};
   final Map<String, List<Map<String, dynamic>>> _matchesByVenue = {};
 
-  // Team alias map: alias → FIFA code (e.g. "usa" → "USA", "usmnt" → "USA")
+  // Team alias map: alias → team code (e.g. "usa" → "USA", "usmnt" → "USA")
   final Map<String, String> _teamAliases = {};
 
   // Player name map: lowercase name → {playerFile, teamCode}
@@ -250,7 +250,7 @@ class ChatbotKnowledgeBase {
 
   // ─── Public Query Methods ─────────────────────────────────────
 
-  /// Resolve a team name, alias, or code to the FIFA code.
+  /// Resolve a team name, alias, or code to the team code.
   String? resolveTeamCode(String input) {
     final lower = input.toLowerCase().trim();
     return _teamAliases[lower];
@@ -273,7 +273,7 @@ class ChatbotKnowledgeBase {
   Set<String> get knownPlayerNames =>
       {..._playerIndex.keys, ..._playerNameIndex.keys};
 
-  /// Get all matches for a team by FIFA code.
+  /// Get all matches for a team by team code.
   List<Map<String, dynamic>> getMatchesForTeam(String teamCode) {
     return _matchesByTeam[teamCode] ?? [];
   }
@@ -417,7 +417,7 @@ class ChatbotKnowledgeBase {
         if (fullName.contains(lower) || lower.contains(lastName)) {
           return {
             'player': pm,
-            'teamCode': team['fifaCode'],
+            'teamCode': team['teamCode'],
             'teamName': team['countryName'],
           };
         }

@@ -352,21 +352,21 @@ void main() {
       expect(result, isEmpty);
     });
 
-    test('getAllTeams returns teams ordered by fifaRanking', () async {
+    test('getAllTeams returns teams ordered by worldRanking', () async {
       final team1 = TestDataFactory.createTeam(
-        fifaCode: 'BRA',
+        teamCode: 'BRA',
         countryName: 'Brazil',
-        fifaRanking: 5,
+        worldRanking: 5,
       );
       final team2 = TestDataFactory.createTeam(
-        fifaCode: 'ARG',
+        teamCode: 'ARG',
         countryName: 'Argentina',
-        fifaRanking: 1,
+        worldRanking: 1,
       );
       final team3 = TestDataFactory.createTeam(
-        fifaCode: 'FRA',
+        teamCode: 'FRA',
         countryName: 'France',
-        fifaRanking: 3,
+        worldRanking: 3,
       );
 
       await fakeFirestore
@@ -384,18 +384,18 @@ void main() {
 
       final result = await dataSource.getAllTeams();
       expect(result, hasLength(3));
-      expect(result[0].fifaCode, 'ARG');
-      expect(result[1].fifaCode, 'FRA');
-      expect(result[2].fifaCode, 'BRA');
+      expect(result[0].teamCode, 'ARG');
+      expect(result[1].teamCode, 'FRA');
+      expect(result[2].teamCode, 'BRA');
     });
 
     test('getTeamsByGroup returns teams for the specified group', () async {
       final teamA = TestDataFactory.createTeam(
-        fifaCode: 'USA',
+        teamCode: 'USA',
         group: 'A',
       );
       final teamB = TestDataFactory.createTeam(
-        fifaCode: 'BRA',
+        teamCode: 'BRA',
         group: 'B',
       );
 
@@ -410,7 +410,7 @@ void main() {
 
       final result = await dataSource.getTeamsByGroup('A');
       expect(result, hasLength(1));
-      expect(result.first.fifaCode, 'USA');
+      expect(result.first.teamCode, 'USA');
     });
 
     test('getTeamsByGroup returns empty list for group with no teams',
@@ -420,7 +420,7 @@ void main() {
     });
 
     test('getTeamByCode returns team when it exists', () async {
-      final team = TestDataFactory.createTeam(fifaCode: 'GER');
+      final team = TestDataFactory.createTeam(teamCode: 'GER');
       await fakeFirestore
           .collection('worldcup_teams')
           .doc('GER')
@@ -428,11 +428,11 @@ void main() {
 
       final result = await dataSource.getTeamByCode('GER');
       expect(result, isNotNull);
-      expect(result!.fifaCode, 'GER');
+      expect(result!.teamCode, 'GER');
     });
 
     test('getTeamByCode handles lowercase input', () async {
-      final team = TestDataFactory.createTeam(fifaCode: 'ESP');
+      final team = TestDataFactory.createTeam(teamCode: 'ESP');
       await fakeFirestore
           .collection('worldcup_teams')
           .doc('ESP')
@@ -440,7 +440,7 @@ void main() {
 
       final result = await dataSource.getTeamByCode('esp');
       expect(result, isNotNull);
-      expect(result!.fifaCode, 'ESP');
+      expect(result!.teamCode, 'ESP');
     });
 
     test('getTeamByCode returns null when team does not exist', () async {
@@ -449,20 +449,20 @@ void main() {
     });
 
     test('saveTeam writes team to Firestore', () async {
-      final team = TestDataFactory.createTeam(fifaCode: 'ITA');
+      final team = TestDataFactory.createTeam(teamCode: 'ITA');
       await dataSource.saveTeam(team);
 
       final doc =
           await fakeFirestore.collection('worldcup_teams').doc('ITA').get();
       expect(doc.exists, isTrue);
-      expect(doc.data()!['fifaCode'], 'ITA');
+      expect(doc.data()!['teamCode'], 'ITA');
     });
 
     test('saveTeams writes multiple teams in a batch', () async {
       final teams = [
-        TestDataFactory.createTeam(fifaCode: 'USA', fifaRanking: 10),
-        TestDataFactory.createTeam(fifaCode: 'MEX', fifaRanking: 15),
-        TestDataFactory.createTeam(fifaCode: 'CAN', fifaRanking: 40),
+        TestDataFactory.createTeam(teamCode: 'USA', worldRanking: 10),
+        TestDataFactory.createTeam(teamCode: 'MEX', worldRanking: 15),
+        TestDataFactory.createTeam(teamCode: 'CAN', worldRanking: 40),
       ];
       await dataSource.saveTeams(teams);
 
@@ -471,7 +471,7 @@ void main() {
     });
 
     test('watchTeams emits team list updates', () async {
-      final team = TestDataFactory.createTeam(fifaCode: 'POR', fifaRanking: 7);
+      final team = TestDataFactory.createTeam(teamCode: 'POR', worldRanking: 7);
       await fakeFirestore
           .collection('worldcup_teams')
           .doc('POR')
@@ -480,7 +480,7 @@ void main() {
       final stream = dataSource.watchTeams();
       final result = await stream.first;
       expect(result, hasLength(1));
-      expect(result.first.fifaCode, 'POR');
+      expect(result.first.teamCode, 'POR');
     });
   });
 
@@ -732,7 +732,7 @@ void main() {
     test('clearAllData deletes all documents from all collections', () async {
       // Seed data in multiple collections
       final match = TestDataFactory.createMatch(matchId: 'clear_match');
-      final team = TestDataFactory.createTeam(fifaCode: 'USA');
+      final team = TestDataFactory.createTeam(teamCode: 'USA');
       final group = TestDataFactory.createGroup(groupLetter: 'A');
       final bracket = TestDataFactory.createBracket();
       final venue = TestDataFactory.createVenue(venueId: 'clear_venue');

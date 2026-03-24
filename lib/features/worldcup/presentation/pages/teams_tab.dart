@@ -62,13 +62,13 @@ class TeamsTab extends StatelessWidget {
             List<NationalTeam> displayTeams = state.displayTeams;
             if (state.showFavoritesOnly) {
               displayTeams = displayTeams
-                  .where((t) => favoriteTeamCodes.contains(t.fifaCode))
+                  .where((t) => favoriteTeamCodes.contains(t.teamCode))
                   .toList();
             }
 
             // Count favorites
             final favoritesCount = state.teams
-                .where((t) => favoriteTeamCodes.contains(t.fifaCode))
+                .where((t) => favoriteTeamCodes.contains(t.teamCode))
                 .length;
 
             return Column(
@@ -209,10 +209,10 @@ class TeamsTab extends StatelessWidget {
                               return TeamTile(
                                 team: team,
                                 onTap: () => onTeamTap(team),
-                                isFavorite: favoritesState.isTeamFavorite(team.fifaCode),
+                                isFavorite: favoritesState.isTeamFavorite(team.teamCode),
                                 onFavoriteToggle: () => context
                                     .read<FavoritesCubit>()
-                                    .toggleFavoriteTeam(team.fifaCode),
+                                    .toggleFavoriteTeam(team.teamCode),
                               );
                             },
                           ),

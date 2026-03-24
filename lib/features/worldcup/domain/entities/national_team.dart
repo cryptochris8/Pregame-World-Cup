@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
-/// FIFA Confederation enum
+/// Confederation enum
 enum Confederation {
   uefa,      // Europe
   conmebol,  // South America
@@ -49,10 +49,10 @@ extension ConfederationExtension on Confederation {
 }
 
 /// NationalTeam entity representing a country's national football team
-/// for the FIFA World Cup 2026
+/// for the World Cup 2026
 class NationalTeam extends Equatable {
-  /// FIFA 3-letter country code (e.g., USA, MEX, GER, BRA)
-  final String fifaCode;
+  /// 3-letter country code (e.g., USA, MEX, GER, BRA)
+  final String teamCode;
 
   /// Full country name (e.g., "United States", "Germany")
   final String countryName;
@@ -66,11 +66,11 @@ class NationalTeam extends Equatable {
   /// URL to the team's federation/association logo
   final String? federationLogoUrl;
 
-  /// FIFA Confederation the team belongs to
+  /// Confederation the team belongs to
   final Confederation confederation;
 
-  /// Current FIFA World Ranking
-  final int? fifaRanking;
+  /// Current World Ranking
+  final int? worldRanking;
 
   /// Head coach name
   final String? coachName;
@@ -118,13 +118,13 @@ class NationalTeam extends Equatable {
   final DateTime? updatedAt;
 
   const NationalTeam({
-    required this.fifaCode,
+    required this.teamCode,
     required this.countryName,
     required this.shortName,
     required this.flagUrl,
     this.federationLogoUrl,
     required this.confederation,
-    this.fifaRanking,
+    this.worldRanking,
     this.coachName,
     this.primaryColor,
     this.secondaryColor,
@@ -144,12 +144,12 @@ class NationalTeam extends Equatable {
 
   @override
   List<Object?> get props => [
-    fifaCode,
+    teamCode,
     countryName,
     shortName,
     flagUrl,
     confederation,
-    fifaRanking,
+    worldRanking,
     group,
     isQualified,
   ];
@@ -157,13 +157,13 @@ class NationalTeam extends Equatable {
   /// Factory to create from Firestore document
   factory NationalTeam.fromFirestore(Map<String, dynamic> data, String docId) {
     return NationalTeam(
-      fifaCode: data['fifaCode'] as String? ?? docId,
+      teamCode: data['teamCode'] as String? ?? docId,
       countryName: data['countryName'] as String? ?? '',
       shortName: data['shortName'] as String? ?? '',
       flagUrl: data['flagUrl'] as String? ?? '',
       federationLogoUrl: data['federationLogoUrl'] as String?,
       confederation: _parseConfederation(data['confederation'] as String?),
-      fifaRanking: data['fifaRanking'] as int?,
+      worldRanking: data['worldRanking'] as int?,
       coachName: data['coachName'] as String?,
       primaryColor: data['primaryColor'] as String?,
       secondaryColor: data['secondaryColor'] as String?,
@@ -189,13 +189,13 @@ class NationalTeam extends Equatable {
   /// Factory to create from API JSON (SportsData.io format)
   factory NationalTeam.fromApi(Map<String, dynamic> json) {
     return NationalTeam(
-      fifaCode: json['Key'] as String? ?? json['TeamId']?.toString() ?? '',
+      teamCode: json['Key'] as String? ?? json['TeamId']?.toString() ?? '',
       countryName: json['FullName'] as String? ?? json['Name'] as String? ?? '',
       shortName: json['ShortName'] as String? ?? json['Name'] as String? ?? '',
       flagUrl: json['WikipediaLogoUrl'] as String? ??
                json['FlagUrl'] as String? ?? '',
       confederation: _parseConfederation(json['AreaName'] as String?),
-      fifaRanking: json['GlobalTeamRanking'] as int?,
+      worldRanking: json['GlobalTeamRanking'] as int?,
       coachName: json['Coach']?['Name'] as String?,
       isQualified: true, // If in API, assume qualified
       updatedAt: DateTime.now(),
@@ -205,13 +205,13 @@ class NationalTeam extends Equatable {
   /// Convert to Firestore map
   Map<String, dynamic> toFirestore() {
     return {
-      'fifaCode': fifaCode,
+      'teamCode': teamCode,
       'countryName': countryName,
       'shortName': shortName,
       'flagUrl': flagUrl,
       'federationLogoUrl': federationLogoUrl,
       'confederation': confederation.name,
-      'fifaRanking': fifaRanking,
+      'worldRanking': worldRanking,
       'coachName': coachName,
       'primaryColor': primaryColor,
       'secondaryColor': secondaryColor,
@@ -233,13 +233,13 @@ class NationalTeam extends Equatable {
   /// Convert to Map for caching
   Map<String, dynamic> toMap() {
     return {
-      'fifaCode': fifaCode,
+      'teamCode': teamCode,
       'countryName': countryName,
       'shortName': shortName,
       'flagUrl': flagUrl,
       'federationLogoUrl': federationLogoUrl,
       'confederation': confederation.name,
-      'fifaRanking': fifaRanking,
+      'worldRanking': worldRanking,
       'coachName': coachName,
       'primaryColor': primaryColor,
       'secondaryColor': secondaryColor,
@@ -261,13 +261,13 @@ class NationalTeam extends Equatable {
   /// Factory to create from cached Map
   factory NationalTeam.fromMap(Map<String, dynamic> map) {
     return NationalTeam(
-      fifaCode: map['fifaCode'] as String? ?? '',
+      teamCode: map['teamCode'] as String? ?? '',
       countryName: map['countryName'] as String? ?? '',
       shortName: map['shortName'] as String? ?? '',
       flagUrl: map['flagUrl'] as String? ?? '',
       federationLogoUrl: map['federationLogoUrl'] as String?,
       confederation: _parseConfederation(map['confederation'] as String?),
-      fifaRanking: map['fifaRanking'] as int?,
+      worldRanking: map['worldRanking'] as int?,
       coachName: map['coachName'] as String?,
       primaryColor: map['primaryColor'] as String?,
       secondaryColor: map['secondaryColor'] as String?,
@@ -292,13 +292,13 @@ class NationalTeam extends Equatable {
 
   /// Create a copy with updated fields
   NationalTeam copyWith({
-    String? fifaCode,
+    String? teamCode,
     String? countryName,
     String? shortName,
     String? flagUrl,
     String? federationLogoUrl,
     Confederation? confederation,
-    int? fifaRanking,
+    int? worldRanking,
     String? coachName,
     String? primaryColor,
     String? secondaryColor,
@@ -316,13 +316,13 @@ class NationalTeam extends Equatable {
     DateTime? updatedAt,
   }) {
     return NationalTeam(
-      fifaCode: fifaCode ?? this.fifaCode,
+      teamCode: teamCode ?? this.teamCode,
       countryName: countryName ?? this.countryName,
       shortName: shortName ?? this.shortName,
       flagUrl: flagUrl ?? this.flagUrl,
       federationLogoUrl: federationLogoUrl ?? this.federationLogoUrl,
       confederation: confederation ?? this.confederation,
-      fifaRanking: fifaRanking ?? this.fifaRanking,
+      worldRanking: worldRanking ?? this.worldRanking,
       coachName: coachName ?? this.coachName,
       primaryColor: primaryColor ?? this.primaryColor,
       secondaryColor: secondaryColor ?? this.secondaryColor,
@@ -364,13 +364,13 @@ class NationalTeam extends Equatable {
     return Confederation.uefa; // Default
   }
 
-  /// Get flag emoji based on FIFA code
+  /// Get flag emoji based on team code
   String get flagEmoji {
-    // Convert FIFA code to flag emoji using regional indicator symbols
+    // Convert team code to flag emoji using regional indicator symbols
     // This works for most 2-letter country codes
-    final code = fifaCode.length >= 2 ? fifaCode.substring(0, 2).toUpperCase() : 'XX';
+    final code = teamCode.length >= 2 ? teamCode.substring(0, 2).toUpperCase() : 'XX';
 
-    // Special cases where FIFA code differs from ISO code
+    // Special cases where team code differs from ISO code
     final Map<String, String> specialCases = {
       'USA': 'US',
       'GER': 'DE',
@@ -402,7 +402,7 @@ class NationalTeam extends Equatable {
       'EGY': 'EG',
     };
 
-    final isoCode = specialCases[fifaCode] ?? code;
+    final isoCode = specialCases[teamCode] ?? code;
 
     // Convert to regional indicator symbols (flag emoji)
     final firstChar = String.fromCharCode(0x1F1E6 + isoCode.codeUnitAt(0) - 65);
@@ -412,5 +412,5 @@ class NationalTeam extends Equatable {
   }
 
   @override
-  String toString() => '$shortName ($fifaCode)';
+  String toString() => '$shortName ($teamCode)';
 }

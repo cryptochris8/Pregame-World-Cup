@@ -68,7 +68,7 @@ interface PlayerRecord {
   id: string;
   fullName: string;
   commonName?: string;
-  fifaCode?: string;
+  teamCode?: string;
   photoUrl?: string;
 }
 
@@ -137,7 +137,7 @@ async function main() {
         player.fullName,
         'player',
         player.id,
-        player.fifaCode || 'XX',
+        player.teamCode || 'XX',
         player.commonName ? [player.commonName] : undefined,
         player.photoUrl
       );

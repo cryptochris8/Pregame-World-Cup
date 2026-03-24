@@ -28,13 +28,13 @@ void main() {
           penaltyConversionRate: 80.0,
         ),
         record: '8-2-1',
-        fifaRanking: 3,
+        worldRanking: 3,
       );
 
       expect(stats.teamId, equals('team_1'));
       expect(stats.teamName, equals('Brazil'));
       expect(stats.record, equals('8-2-1'));
-      expect(stats.fifaRanking, equals(3));
+      expect(stats.worldRanking, equals(3));
     });
 
     group('fromApi', () {
@@ -63,7 +63,7 @@ void main() {
             'penaltyConversionRate': 85.0,
           },
           'record': '9-1-1',
-          'fifaRanking': 2,
+          'worldRanking': 2,
         };
 
         final stats = TeamStatistics.fromApi(json);
@@ -74,7 +74,7 @@ void main() {
         expect(stats.defense.goalsConceded, equals(0.6));
         expect(stats.setPieces.cornerKicks, equals(7.0));
         expect(stats.record, equals('9-1-1'));
-        expect(stats.fifaRanking, equals(2));
+        expect(stats.worldRanking, equals(2));
       });
 
       test('handles missing fields with defaults', () {
@@ -85,7 +85,7 @@ void main() {
         expect(stats.teamId, isEmpty);
         expect(stats.teamName, equals('Unknown Team'));
         expect(stats.record, equals('0-0-0'));
-        expect(stats.fifaRanking, equals(0));
+        expect(stats.worldRanking, equals(0));
       });
     });
 
@@ -115,7 +115,7 @@ void main() {
             penaltyConversionRate: 75.0,
           ),
           record: '6-3-2',
-          fifaRanking: 15,
+          worldRanking: 15,
         );
 
         final efficiency = stats.overallEfficiency;
@@ -148,7 +148,7 @@ void main() {
             penaltyConversionRate: 75.0,
           ),
           record: '6-3-1',
-          fifaRanking: 15,
+          worldRanking: 15,
         );
 
         // 6 wins out of 10 total games = 0.6
@@ -180,7 +180,7 @@ void main() {
             penaltyConversionRate: 75.0,
           ),
           record: 'invalid',
-          fifaRanking: 0,
+          worldRanking: 0,
         );
 
         expect(stats.winPercentage, equals(0.0));
@@ -211,7 +211,7 @@ void main() {
             penaltyConversionRate: 75.0,
           ),
           record: '6-3-1',
-          fifaRanking: 15,
+          worldRanking: 15,
         );
 
         // (6*3 + 3) / 10 = 21/10 = 2.1
@@ -235,7 +235,7 @@ void main() {
             penaltyConversionRate: 90.0,
           ),
           record: '9-2-0',
-          fifaRanking: 1,
+          worldRanking: 1,
         );
 
         expect(rankedStats.isTopRanked, isTrue);
@@ -259,7 +259,7 @@ void main() {
             penaltyConversionRate: 50.0,
           ),
           record: '3-2-6',
-          fifaRanking: 0,
+          worldRanking: 0,
         );
 
         expect(unrankedStats.isTopRanked, isFalse);

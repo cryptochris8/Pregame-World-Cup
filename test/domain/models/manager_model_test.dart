@@ -101,7 +101,7 @@ void main() {
       final map = manager.toFirestore();
 
       expect(map['managerId'], equals('manager_001'));
-      expect(map['fifaCode'], equals('ARG'));
+      expect(map['teamCode'], equals('ARG'));
       expect(map['commonName'], equals('Lionel Scaloni'));
       expect(map['nationality'], equals('Argentine'));
       expect(map['currentTeam'], equals('Argentina'));
@@ -399,7 +399,7 @@ Manager _createManager({
 }) {
   return Manager(
     managerId: 'test_001',
-    fifaCode: 'TST',
+    teamCode: 'TST',
     firstName: 'Test',
     lastName: 'Manager',
     fullName: 'Test Manager',
@@ -444,7 +444,7 @@ Manager _createManager({
 Manager _createFullManager() {
   return Manager(
     managerId: 'manager_001',
-    fifaCode: 'ARG',
+    teamCode: 'ARG',
     firstName: 'Lionel',
     lastName: 'Scaloni',
     fullName: 'Lionel Sebastián Scaloni',

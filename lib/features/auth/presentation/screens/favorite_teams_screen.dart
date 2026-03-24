@@ -6,7 +6,7 @@ import 'package:pregame_world_cup/core/utils/team_logo_helper.dart';
 import 'package:pregame_world_cup/l10n/app_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// All 48 FIFA World Cup 2026 qualified national teams, grouped by confederation.
+/// All 48 World Cup 2026 qualified national teams, grouped by confederation.
 const List<String> worldCupTeams = [
   // CONCACAF (Host nations first)
   'United States',

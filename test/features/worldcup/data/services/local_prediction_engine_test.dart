@@ -69,19 +69,19 @@ void main() {
   }
 
   NationalTeam homeTeam({
-    String fifaCode = 'USA',
-    int? fifaRanking = 10,
+    String teamCode = 'USA',
+    int? worldRanking = 10,
     int worldCupTitles = 0,
     int worldCupAppearances = 11,
     String? bestFinish = 'Semi-finals',
     bool isHostNation = true,
   }) {
     return TestDataFactory.createTeam(
-      fifaCode: fifaCode,
+      teamCode: teamCode,
       countryName: 'United States',
       shortName: 'USA',
       confederation: Confederation.concacaf,
-      fifaRanking: fifaRanking,
+      worldRanking: worldRanking,
       worldCupTitles: worldCupTitles,
       isHostNation: isHostNation,
     ).copyWith(
@@ -91,19 +91,19 @@ void main() {
   }
 
   NationalTeam awayTeam({
-    String fifaCode = 'BRA',
-    int? fifaRanking = 3,
+    String teamCode = 'BRA',
+    int? worldRanking = 3,
     int worldCupTitles = 5,
     int worldCupAppearances = 22,
     String? bestFinish = 'Winner',
     bool isHostNation = false,
   }) {
     return TestDataFactory.createTeam(
-      fifaCode: fifaCode,
+      teamCode: teamCode,
       countryName: 'Brazil',
       shortName: 'Brazil',
       confederation: Confederation.conmebol,
-      fifaRanking: fifaRanking,
+      worldRanking: worldRanking,
       worldCupTitles: worldCupTitles,
       isHostNation: isHostNation,
     ).copyWith(
@@ -222,10 +222,10 @@ void main() {
         awayTeamCode: 'JAM',
         awayTeamName: 'Jamaica',
       );
-      final home = homeTeam(fifaRanking: 10);
+      final home = homeTeam(worldRanking: 10);
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 0,
         bestFinish: null,
@@ -262,14 +262,14 @@ void main() {
         awayTeamName: 'Brazil',
       );
       final home = homeTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 0,
         bestFinish: null,
         isHostNation: false,
       );
-      final away = awayTeam(fifaRanking: 3);
+      final away = awayTeam(worldRanking: 3);
 
       final prediction = await engine.generatePrediction(
         match: match,
@@ -301,16 +301,16 @@ void main() {
         awayTeamName: 'France',
       );
       final home = homeTeam(
-        fifaCode: 'GER',
-        fifaRanking: 5,
+        teamCode: 'GER',
+        worldRanking: 5,
         worldCupTitles: 4,
         worldCupAppearances: 20,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'FRA',
-        fifaRanking: 5,
+        teamCode: 'FRA',
+        worldRanking: 5,
         worldCupTitles: 2,
         worldCupAppearances: 16,
         bestFinish: 'Winner',
@@ -358,9 +358,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 10, isHostNation: false);
+      final home = homeTeam(worldRanking: 10, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 10,
+        worldRanking: 10,
         worldCupTitles: 0,
         worldCupAppearances: 2,
         bestFinish: null,
@@ -393,13 +393,13 @@ void main() {
 
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 10,
+        worldRanking: 10,
         worldCupTitles: 0,
         worldCupAppearances: 2,
         bestFinish: null,
         isHostNation: false,
       );
-      final away = awayTeam(fifaRanking: 10);
+      final away = awayTeam(worldRanking: 10);
 
       final prediction = await engine.generatePrediction(
         match: match,
@@ -427,14 +427,14 @@ void main() {
 
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -455,9 +455,9 @@ void main() {
     test('falls back to FIFA ranking when Elo data is null', () async {
       // Default stubs return null for getEloRating
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 1, isHostNation: false);
+      final home = homeTeam(worldRanking: 1, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 50,
+        worldRanking: 50,
         worldCupTitles: 0,
         worldCupAppearances: 2,
         bestFinish: null,
@@ -493,10 +493,10 @@ void main() {
         awayTeamCode: 'JAM',
         awayTeamName: 'Jamaica',
       );
-      final home = homeTeam(fifaRanking: 10, isHostNation: false);
+      final home = homeTeam(worldRanking: 10, isHostNation: false);
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 0,
         bestFinish: null,
@@ -525,16 +525,16 @@ void main() {
 
       // Give same rankings to isolate host effect
       final home = homeTeam(
-        fifaCode: 'USA',
-        fifaRanking: 20,
+        teamCode: 'USA',
+        worldRanking: 20,
         isHostNation: true,
         worldCupTitles: 0,
         worldCupAppearances: 11,
         bestFinish: 'Semi-finals',
       );
       final away = awayTeam(
-        fifaCode: 'JPN',
-        fifaRanking: 20,
+        teamCode: 'JPN',
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 7,
         bestFinish: 'Round of 16',
@@ -561,16 +561,16 @@ void main() {
       );
 
       final home = homeTeam(
-        fifaCode: 'JPN',
-        fifaRanking: 20,
+        teamCode: 'JPN',
+        worldRanking: 20,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 7,
         bestFinish: 'Round of 16',
       );
       final away = awayTeam(
-        fifaCode: 'MEX',
-        fifaRanking: 20,
+        teamCode: 'MEX',
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 17,
         bestFinish: 'Quarter-finals',
@@ -597,16 +597,16 @@ void main() {
       );
 
       final home = homeTeam(
-        fifaCode: 'GER',
-        fifaRanking: 15,
+        teamCode: 'GER',
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 4,
         worldCupAppearances: 20,
         bestFinish: 'Winner',
       );
       final away = awayTeam(
-        fifaCode: 'FRA',
-        fifaRanking: 15,
+        teamCode: 'FRA',
+        worldRanking: 15,
         worldCupTitles: 2,
         worldCupAppearances: 16,
         bestFinish: 'Winner',
@@ -655,9 +655,9 @@ void main() {
           .thenReturn('Last 5 matches: 0W 0D 5L');
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final home = homeTeam(worldRanking: 20, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 20,
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -704,9 +704,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final home = homeTeam(worldRanking: 20, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 20,
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -743,9 +743,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final home = homeTeam(worldRanking: 20, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 20,
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -782,9 +782,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final home = homeTeam(worldRanking: 20, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 20,
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -821,9 +821,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final home = homeTeam(worldRanking: 20, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 20,
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -859,9 +859,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 20, isHostNation: false);
+      final home = homeTeam(worldRanking: 20, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 20,
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -905,10 +905,10 @@ void main() {
         awayTeamCode: 'JAM',
         awayTeamName: 'Jamaica',
       );
-      final home = homeTeam(fifaRanking: 15, isHostNation: false);
+      final home = homeTeam(worldRanking: 15, isHostNation: false);
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 15,
+        teamCode: 'JAM',
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 0,
         bestFinish: null,
@@ -948,8 +948,8 @@ void main() {
       );
       // Japan: no titles, 7 appearances
       final home = homeTeam(
-        fifaCode: 'JPN',
-        fifaRanking: 20,
+        teamCode: 'JPN',
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 7,
         bestFinish: 'Round of 16',
@@ -957,8 +957,8 @@ void main() {
       );
       // Brazil: 5 titles, 22 appearances
       final away = awayTeam(
-        fifaCode: 'BRA',
-        fifaRanking: 20,
+        teamCode: 'BRA',
+        worldRanking: 20,
         worldCupTitles: 5,
         worldCupAppearances: 22,
         bestFinish: 'Winner',
@@ -985,16 +985,16 @@ void main() {
         awayTeamName: 'South Korea',
       );
       final home = homeTeam(
-        fifaCode: 'ARG',
-        fifaRanking: 20,
+        teamCode: 'ARG',
+        worldRanking: 20,
         worldCupTitles: 3,
         worldCupAppearances: 18,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'KOR',
-        fifaRanking: 20,
+        teamCode: 'KOR',
+        worldRanking: 20,
         worldCupTitles: 0,
         worldCupAppearances: 11,
         bestFinish: 'Semi-finals',
@@ -1072,16 +1072,16 @@ void main() {
         awayTeamName: 'Jamaica',
       );
       final home = homeTeam(
-        fifaCode: 'BRA',
-        fifaRanking: 3,
+        teamCode: 'BRA',
+        worldRanking: 3,
         worldCupTitles: 5,
         worldCupAppearances: 22,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: 'Group stage',
@@ -1121,10 +1121,10 @@ void main() {
         awayTeamCode: 'JAM',
         awayTeamName: 'Jamaica',
       );
-      final home = homeTeam(fifaRanking: 10);
+      final home = homeTeam(worldRanking: 10);
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: null,
@@ -1160,14 +1160,14 @@ void main() {
         awayTeamName: 'Brazil',
       );
       final home = homeTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: null,
         isHostNation: false,
       );
-      final away = awayTeam(fifaRanking: 3);
+      final away = awayTeam(worldRanking: 3);
 
       final prediction = await engine.generatePrediction(
         match: match,
@@ -1205,14 +1205,14 @@ void main() {
     test('confidence is within 25-92 range for balanced match', () async {
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -1248,16 +1248,16 @@ void main() {
         awayTeamName: 'Jamaica',
       );
       final home = homeTeam(
-        fifaCode: 'BRA',
-        fifaRanking: 3,
+        teamCode: 'BRA',
+        worldRanking: 3,
         worldCupTitles: 5,
         worldCupAppearances: 22,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 70,
+        teamCode: 'JAM',
+        worldRanking: 70,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: null,
@@ -1293,14 +1293,14 @@ void main() {
       final knockoutMatch = defaultMatch(stage: MatchStage.roundOf16);
 
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -1326,9 +1326,9 @@ void main() {
       final match = defaultMatch(stage: MatchStage.quarterFinal);
       final groupMatch = defaultMatch(stage: MatchStage.groupStage);
 
-      final home = homeTeam(fifaRanking: 10, isHostNation: false);
+      final home = homeTeam(worldRanking: 10, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 10,
+        worldRanking: 10,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -1354,9 +1354,9 @@ void main() {
       final match = defaultMatch(stage: MatchStage.final_);
       final groupMatch = defaultMatch(stage: MatchStage.groupStage);
 
-      final home = homeTeam(fifaRanking: 10, isHostNation: false);
+      final home = homeTeam(worldRanking: 10, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 10,
+        worldRanking: 10,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -1403,14 +1403,14 @@ void main() {
       final match = defaultMatch();
       // Give equal rankings to isolate injury effect
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -1458,14 +1458,14 @@ void main() {
 
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -1620,16 +1620,16 @@ void main() {
         awayTeamName: 'Jamaica',
       );
       final home = homeTeam(
-        fifaCode: 'BRA',
-        fifaRanking: 3,
+        teamCode: 'BRA',
+        worldRanking: 3,
         worldCupTitles: 5,
         worldCupAppearances: 22,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: 'Group stage',
@@ -1666,16 +1666,16 @@ void main() {
         awayTeamName: 'Indonesia',
       );
       final home = homeTeam(
-        fifaCode: 'ENG',
-        fifaRanking: 2,
+        teamCode: 'ENG',
+        worldRanking: 2,
         worldCupTitles: 1,
         worldCupAppearances: 16,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'IDN',
-        fifaRanking: 120,
+        teamCode: 'IDN',
+        worldRanking: 120,
         worldCupTitles: 0,
         worldCupAppearances: 0,
         bestFinish: null,
@@ -1705,16 +1705,16 @@ void main() {
         awayTeamName: 'France',
       );
       final home = homeTeam(
-        fifaCode: 'GER',
-        fifaRanking: 10,
+        teamCode: 'GER',
+        worldRanking: 10,
         worldCupTitles: 4,
         worldCupAppearances: 20,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = awayTeam(
-        fifaCode: 'FRA',
-        fifaRanking: 10,
+        teamCode: 'FRA',
+        worldRanking: 10,
         worldCupTitles: 2,
         worldCupAppearances: 16,
         bestFinish: 'Winner',
@@ -1774,10 +1774,10 @@ void main() {
         awayTeamCode: 'JAM',
         awayTeamName: 'Jamaica',
       );
-      final home = homeTeam(fifaRanking: 10);
+      final home = homeTeam(worldRanking: 10);
       final away = awayTeam(
-        fifaCode: 'JAM',
-        fifaRanking: 60,
+        teamCode: 'JAM',
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: null,
@@ -1826,8 +1826,8 @@ void main() {
         awayTeamName: 'Japan',
       );
       final home = homeTeam(
-        fifaCode: 'GER',
-        fifaRanking: 15,
+        teamCode: 'GER',
+        worldRanking: 15,
         worldCupTitles: 4,
         worldCupAppearances: 20,
         bestFinish: 'Winner',
@@ -1835,11 +1835,11 @@ void main() {
       );
       // Create Japan as AFC confederation
       final away = TestDataFactory.createTeam(
-        fifaCode: 'JPN',
+        teamCode: 'JPN',
         countryName: 'Japan',
         shortName: 'Japan',
         confederation: Confederation.afc,
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         isHostNation: false,
       ).copyWith(
@@ -1867,19 +1867,19 @@ void main() {
         awayTeamName: 'France',
       );
       final home = homeTeam(
-        fifaCode: 'GER',
-        fifaRanking: 15,
+        teamCode: 'GER',
+        worldRanking: 15,
         worldCupTitles: 4,
         worldCupAppearances: 20,
         bestFinish: 'Winner',
         isHostNation: false,
       );
       final away = TestDataFactory.createTeam(
-        fifaCode: 'FRA',
+        teamCode: 'FRA',
         countryName: 'France',
         shortName: 'France',
         confederation: Confederation.uefa,
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 2,
         isHostNation: false,
       ).copyWith(
@@ -1933,19 +1933,19 @@ void main() {
       );
       // USA (CONCACAF) vs Brazil (CONMEBOL) — equal rankings to isolate conf
       final home = homeTeam(
-        fifaCode: 'USA',
-        fifaRanking: 15,
+        teamCode: 'USA',
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 11,
         bestFinish: 'Semi-finals',
         isHostNation: false,
       );
       final away = TestDataFactory.createTeam(
-        fifaCode: 'BRA',
+        teamCode: 'BRA',
         countryName: 'Brazil',
         shortName: 'Brazil',
         confederation: Confederation.conmebol,
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         isHostNation: false,
       ).copyWith(
@@ -1973,7 +1973,7 @@ void main() {
       // Home team: strong attackers, weak defense
       when(() => mockDataService.getTeamSquadPlayers('USA'))
           .thenAnswer((_) async => {
-                'fifaCode': 'USA',
+                'teamCode': 'USA',
                 'players': [
                   {'position': 'ST', 'marketValue': 100000000},
                   {'position': 'LW', 'marketValue': 80000000},
@@ -1991,7 +1991,7 @@ void main() {
       // Away team: strong defense, weak attack
       when(() => mockDataService.getTeamSquadPlayers('BRA'))
           .thenAnswer((_) async => {
-                'fifaCode': 'BRA',
+                'teamCode': 'BRA',
                 'players': [
                   {'position': 'ST', 'marketValue': 20000000},
                   {'position': 'LW', 'marketValue': 15000000},
@@ -2010,14 +2010,14 @@ void main() {
       final match = defaultMatch();
       // Equal everything else to isolate attack/defense effect
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -2042,14 +2042,14 @@ void main() {
       // Default stubs return null for getTeamSquadPlayers
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
@@ -2072,7 +2072,7 @@ void main() {
       // Home team has massively better attackers
       when(() => mockDataService.getTeamSquadPlayers('USA'))
           .thenAnswer((_) async => {
-                'fifaCode': 'USA',
+                'teamCode': 'USA',
                 'players': [
                   {'position': 'ST', 'marketValue': 200000000},
                   {'position': 'LW', 'marketValue': 150000000},
@@ -2090,7 +2090,7 @@ void main() {
       // Away team: very weak attack and defense
       when(() => mockDataService.getTeamSquadPlayers('BRA'))
           .thenAnswer((_) async => {
-                'fifaCode': 'BRA',
+                'teamCode': 'BRA',
                 'players': [
                   {'position': 'ST', 'marketValue': 5000000},
                   {'position': 'LW', 'marketValue': 3000000},
@@ -2119,9 +2119,9 @@ void main() {
       });
 
       final match = defaultMatch();
-      final home = homeTeam(fifaRanking: 3, isHostNation: false);
+      final home = homeTeam(worldRanking: 3, isHostNation: false);
       final away = awayTeam(
-        fifaRanking: 60,
+        worldRanking: 60,
         worldCupTitles: 0,
         worldCupAppearances: 1,
         bestFinish: null,
@@ -2146,7 +2146,7 @@ void main() {
     test('position classification correctly categorizes positions', () async {
       when(() => mockDataService.getTeamSquadPlayers('USA'))
           .thenAnswer((_) async => {
-                'fifaCode': 'USA',
+                'teamCode': 'USA',
                 'players': [
                   // Attack positions
                   {'position': 'ST', 'marketValue': 10000000},
@@ -2166,7 +2166,7 @@ void main() {
               });
       when(() => mockDataService.getTeamSquadPlayers('BRA'))
           .thenAnswer((_) async => {
-                'fifaCode': 'BRA',
+                'teamCode': 'BRA',
                 'players': [
                   {'position': 'ST', 'marketValue': 10000000},
                   {'position': 'LW', 'marketValue': 10000000},
@@ -2184,14 +2184,14 @@ void main() {
 
       final match = defaultMatch();
       final home = homeTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         isHostNation: false,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',
       );
       final away = awayTeam(
-        fifaRanking: 15,
+        worldRanking: 15,
         worldCupTitles: 0,
         worldCupAppearances: 10,
         bestFinish: 'Quarter-finals',

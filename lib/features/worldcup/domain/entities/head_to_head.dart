@@ -75,10 +75,10 @@ class HistoricalMatch extends Equatable {
 
 /// Head-to-head record between two national teams
 class HeadToHead extends Equatable {
-  /// FIFA code of first team (alphabetically first)
+  /// Team code of first team (alphabetically first)
   final String team1Code;
 
-  /// FIFA code of second team
+  /// Team code of second team
   final String team2Code;
 
   /// Total matches played between these teams

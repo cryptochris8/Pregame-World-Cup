@@ -11,13 +11,13 @@ abstract class NationalTeamRepository {
   /// Fetches teams in a specific group (A-L)
   Future<List<NationalTeam>> getTeamsByGroup(String groupLetter);
 
-  /// Fetches a single team by FIFA code (e.g., "USA", "GER", "BRA")
-  Future<NationalTeam?> getTeamByCode(String fifaCode);
+  /// Fetches a single team by team code (e.g., "USA", "GER", "BRA")
+  Future<NationalTeam?> getTeamByCode(String teamCode);
 
   /// Fetches host nation teams (USA, Mexico, Canada)
   Future<List<NationalTeam>> getHostNations();
 
-  /// Fetches teams sorted by FIFA ranking
+  /// Fetches teams sorted by world ranking
   Future<List<NationalTeam>> getTeamsByRanking();
 
   /// Searches teams by name or code
@@ -39,5 +39,5 @@ abstract class NationalTeamRepository {
   Stream<List<NationalTeam>> watchTeams();
 
   /// Stream of a specific team's updates
-  Stream<NationalTeam?> watchTeam(String fifaCode);
+  Stream<NationalTeam?> watchTeam(String teamCode);
 }

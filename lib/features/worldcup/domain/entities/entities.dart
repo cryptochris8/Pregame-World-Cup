@@ -1,7 +1,7 @@
 /// World Cup 2026 Domain Entities
 ///
 /// This barrel file exports all World Cup-specific entities for the
-/// FIFA World Cup 2026 tournament.
+/// World Cup 2026 tournament.
 library;
 
 export 'national_team.dart';

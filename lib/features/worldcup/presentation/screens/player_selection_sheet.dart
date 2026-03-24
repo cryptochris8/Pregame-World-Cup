@@ -45,7 +45,7 @@ class _PlayerSelectionSheetState extends State<PlayerSelectionSheet> {
         return player.fullName.toLowerCase().contains(query) ||
             player.commonName.toLowerCase().contains(query) ||
             player.club.toLowerCase().contains(query) ||
-            player.fifaCode.toLowerCase().contains(query);
+            player.teamCode.toLowerCase().contains(query);
       }
 
       return true;
@@ -250,7 +250,7 @@ class _PlayerTile extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        getFlagEmoji(player.fifaCode),
+                        getFlagEmoji(player.teamCode),
                         style: const TextStyle(fontSize: 14),
                       ),
                       const SizedBox(width: 6),

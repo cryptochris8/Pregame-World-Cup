@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 /// User preferences for World Cup features
 /// Stores favorite teams, matches, and user settings
 class UserPreferences extends Equatable {
-  /// List of favorite team FIFA codes
+  /// List of favorite team codes
   final List<String> favoriteTeamCodes;
 
   /// List of favorite match IDs

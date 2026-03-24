@@ -47,7 +47,7 @@ class TeamTile extends StatelessWidget {
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
         leading: TeamFlag(
           flagUrl: team.flagUrl,
-          teamCode: team.fifaCode,
+          teamCode: team.teamCode,
           size: 40,
         ),
         title: Row(
@@ -83,11 +83,11 @@ class TeamTile extends StatelessWidget {
         ),
         subtitle: Row(
           children: [
-            if (showRanking && team.fifaRanking != null) ...[
+            if (showRanking && team.worldRanking != null) ...[
               const Icon(Icons.leaderboard, size: 12, color: Colors.white38),
               const SizedBox(width: 4),
               Text(
-                '#${team.fifaRanking}',
+                '#${team.worldRanking}',
                 style: const TextStyle(fontSize: 12, color: Colors.white60),
               ),
               const SizedBox(width: 12),
@@ -207,7 +207,7 @@ class TeamCard extends StatelessWidget {
                   children: [
                     TeamFlag(
                       flagUrl: team.flagUrl,
-                      teamCode: team.fifaCode,
+                      teamCode: team.teamCode,
                       size: 48,
                     ),
                     const SizedBox(height: 8),
@@ -226,9 +226,9 @@ class TeamCard extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        if (team.fifaRanking != null) ...[
+                        if (team.worldRanking != null) ...[
                           Text(
-                            '#${team.fifaRanking}',
+                            '#${team.worldRanking}',
                             style: const TextStyle(
                               fontSize: 11,
                               color: Colors.white60,
@@ -236,7 +236,7 @@ class TeamCard extends StatelessWidget {
                           ),
                         ],
                         if (team.group != null) ...[
-                          if (team.fifaRanking != null)
+                          if (team.worldRanking != null)
                             const SizedBox(width: 8),
                           Container(
                             padding: const EdgeInsets.symmetric(
@@ -309,11 +309,11 @@ class TeamChip extends StatelessWidget {
       onSelected: onTap != null ? (_) => onTap!() : null,
       avatar: TeamFlag(
         flagUrl: team.flagUrl,
-        teamCode: team.fifaCode,
+        teamCode: team.teamCode,
         size: 20,
         circular: true,
       ),
-      label: Text(team.fifaCode),
+      label: Text(team.teamCode),
       labelStyle: TextStyle(
         fontWeight: selected ? FontWeight.bold : FontWeight.normal,
         color: selected ? Colors.white : Colors.white70,

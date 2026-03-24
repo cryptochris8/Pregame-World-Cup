@@ -8,7 +8,7 @@ import 'world_cup_match_extensions.dart';
 export 'world_cup_match_enums.dart';
 export 'world_cup_match_extensions.dart';
 
-/// WorldCupMatch entity representing a FIFA World Cup 2026 match
+/// WorldCupMatch entity representing a World Cup 2026 match
 class WorldCupMatch extends Equatable {
   /// Unique match ID
   final String matchId;
@@ -25,10 +25,10 @@ class WorldCupMatch extends Equatable {
   /// Match day within group stage (1, 2, or 3)
   final int? groupMatchDay;
 
-  // Team information - using FIFA codes and names
+  // Team information - using team codes and names
   // For knockout matches before teams are determined, these may be placeholders
 
-  /// Home/Team 1 FIFA code
+  /// Home/Team 1 team code
   final String? homeTeamCode;
 
   /// Home/Team 1 name
@@ -37,7 +37,7 @@ class WorldCupMatch extends Equatable {
   /// Home/Team 1 flag URL
   final String? homeTeamFlagUrl;
 
-  /// Away/Team 2 FIFA code
+  /// Away/Team 2 team code
   final String? awayTeamCode;
 
   /// Away/Team 2 name

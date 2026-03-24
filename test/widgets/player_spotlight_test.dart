@@ -12,7 +12,7 @@ void main() {
   // Sample player data for testing
   final samplePlayerData1 = {
     'playerId': 'player_001',
-    'fifaCode': 'BRA',
+    'teamCode': 'BRA',
     'firstName': 'Neymar',
     'lastName': 'da Silva Santos Júnior',
     'fullName': 'Neymar da Silva Santos Júnior',
@@ -77,7 +77,7 @@ void main() {
 
       expect(player.playerId, equals('player_001'));
       expect(player.commonName, equals('Neymar'));
-      expect(player.fifaCode, equals('BRA'));
+      expect(player.teamCode, equals('BRA'));
       expect(player.position, equals('LW'));
     });
 

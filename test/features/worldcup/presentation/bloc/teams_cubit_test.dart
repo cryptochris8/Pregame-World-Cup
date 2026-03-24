@@ -74,11 +74,11 @@ void main() {
         sortOption: TeamsSortOption.alphabetical,
         isLoading: false,
       ),
-      act: (cubit) => cubit.setSortOption(TeamsSortOption.fifaRanking),
+      act: (cubit) => cubit.setSortOption(TeamsSortOption.worldRanking),
       expect: () => [
         isA<TeamsState>()
-            .having((s) => s.sortOption, 'sort', TeamsSortOption.fifaRanking)
-            .having((s) => s.displayTeams.first.fifaRanking, 'first ranking', 1),
+            .having((s) => s.sortOption, 'sort', TeamsSortOption.worldRanking)
+            .having((s) => s.displayTeams.first.worldRanking, 'first ranking', 1),
       ],
     );
 
@@ -87,9 +87,9 @@ void main() {
       build: () => cubit,
       seed: () => TeamsState(
         teams: [
-          TestDataFactory.createTeam(fifaCode: 'USA', confederation: Confederation.concacaf),
-          TestDataFactory.createTeam(fifaCode: 'BRA', confederation: Confederation.conmebol),
-          TestDataFactory.createTeam(fifaCode: 'MEX', confederation: Confederation.concacaf),
+          TestDataFactory.createTeam(teamCode: 'USA', confederation: Confederation.concacaf),
+          TestDataFactory.createTeam(teamCode: 'BRA', confederation: Confederation.conmebol),
+          TestDataFactory.createTeam(teamCode: 'MEX', confederation: Confederation.concacaf),
         ],
         displayTeams: const [],
         isLoading: false,
@@ -108,9 +108,9 @@ void main() {
       build: () => cubit,
       seed: () => TeamsState(
         teams: [
-          TestDataFactory.createTeam(fifaCode: 'USA', countryName: 'United States'),
-          TestDataFactory.createTeam(fifaCode: 'BRA', countryName: 'Brazil'),
-          TestDataFactory.createTeam(fifaCode: 'URU', countryName: 'Uruguay'),
+          TestDataFactory.createTeam(teamCode: 'USA', countryName: 'United States'),
+          TestDataFactory.createTeam(teamCode: 'BRA', countryName: 'Brazil'),
+          TestDataFactory.createTeam(teamCode: 'URU', countryName: 'Uruguay'),
         ],
         displayTeams: const [],
         isLoading: false,
@@ -120,7 +120,7 @@ void main() {
         isA<TeamsState>().having((s) => s.searchQuery, 'query', 'United'),
         isA<TeamsState>()
             .having((s) => s.displayTeams.length, 'filtered count', 1)
-            .having((s) => s.displayTeams.first.fifaCode, 'found', 'USA'),
+            .having((s) => s.displayTeams.first.teamCode, 'found', 'USA'),
       ],
     );
 
@@ -130,7 +130,7 @@ void main() {
       seed: () => TeamsState(
         teams: testTeams,
         displayTeams: [testTeams.first],
-        sortOption: TeamsSortOption.fifaRanking,
+        sortOption: TeamsSortOption.worldRanking,
         selectedConfederation: Confederation.uefa,
         searchQuery: 'test',
         isLoading: false,
@@ -164,10 +164,10 @@ void main() {
     test('getTeamsByConfederation groups teams correctly', () {
       cubit.emit(TeamsState(
         teams: [
-          TestDataFactory.createTeam(fifaCode: 'USA', confederation: Confederation.concacaf),
-          TestDataFactory.createTeam(fifaCode: 'BRA', confederation: Confederation.conmebol),
-          TestDataFactory.createTeam(fifaCode: 'MEX', confederation: Confederation.concacaf),
-          TestDataFactory.createTeam(fifaCode: 'GER', confederation: Confederation.uefa),
+          TestDataFactory.createTeam(teamCode: 'USA', confederation: Confederation.concacaf),
+          TestDataFactory.createTeam(teamCode: 'BRA', confederation: Confederation.conmebol),
+          TestDataFactory.createTeam(teamCode: 'MEX', confederation: Confederation.concacaf),
+          TestDataFactory.createTeam(teamCode: 'GER', confederation: Confederation.uefa),
         ],
         displayTeams: const [],
         isLoading: false,
@@ -182,9 +182,9 @@ void main() {
     test('getConfederationCounts returns correct counts', () {
       cubit.emit(TeamsState(
         teams: [
-          TestDataFactory.createTeam(fifaCode: 'USA', confederation: Confederation.concacaf),
-          TestDataFactory.createTeam(fifaCode: 'BRA', confederation: Confederation.conmebol),
-          TestDataFactory.createTeam(fifaCode: 'MEX', confederation: Confederation.concacaf),
+          TestDataFactory.createTeam(teamCode: 'USA', confederation: Confederation.concacaf),
+          TestDataFactory.createTeam(teamCode: 'BRA', confederation: Confederation.conmebol),
+          TestDataFactory.createTeam(teamCode: 'MEX', confederation: Confederation.concacaf),
         ],
         displayTeams: const [],
         isLoading: false,

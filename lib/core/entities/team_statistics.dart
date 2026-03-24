@@ -7,7 +7,7 @@ class TeamStatistics {
   final DefenseStats defense;
   final SetPieceStats setPieces;
   final String record;
-  final int fifaRanking;
+  final int worldRanking;
 
   const TeamStatistics({
     required this.teamId,
@@ -16,7 +16,7 @@ class TeamStatistics {
     required this.defense,
     required this.setPieces,
     required this.record,
-    required this.fifaRanking,
+    required this.worldRanking,
   });
 
   /// Create TeamStatistics from API response
@@ -28,7 +28,7 @@ class TeamStatistics {
       defense: DefenseStats.fromJson(json['defense'] ?? {}),
       setPieces: SetPieceStats.fromJson(json['setPieces'] ?? json['special'] ?? {}),
       record: json['record'] ?? '0-0-0',
-      fifaRanking: (json['fifaRanking'] ?? json['ranking'] ?? 0) as int,
+      worldRanking: (json['worldRanking'] ?? json['ranking'] ?? 0) as int,
     );
   }
 
@@ -69,11 +69,11 @@ class TeamStatistics {
     return 0.0;
   }
 
-  /// Check if team is in the FIFA top 20
-  bool get isTopRanked => fifaRanking > 0 && fifaRanking <= 20;
+  /// Check if team is in the world top 20
+  bool get isTopRanked => worldRanking > 0 && worldRanking <= 20;
 
   /// Get formatted ranking display
-  String get rankingDisplay => fifaRanking > 0 ? 'Ranked #$fifaRanking' : 'Unranked';
+  String get rankingDisplay => worldRanking > 0 ? 'Ranked #$worldRanking' : 'Unranked';
 }
 
 /// Attack statistics for team performance in soccer

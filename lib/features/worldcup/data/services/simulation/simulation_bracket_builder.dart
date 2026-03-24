@@ -7,7 +7,7 @@ import 'simulation_match_engine.dart';
 /// Handles:
 /// - Constructing the round of 32 bracket from group stage results
 /// - Precomputing pairwise advancement probabilities for bracket paths
-/// - Applying FIFA World Cup bracket rules (group restrictions, etc.)
+/// - Applying World Cup bracket rules (group restrictions, etc.)
 class SimulationBracketBuilder {
   /// Set of all valid team codes in the tournament.
   final Set<String> validTeamCodes;
@@ -29,7 +29,7 @@ class SimulationBracketBuilder {
   /// The World Cup round of 32 bracket follows a specific structure:
   /// - Group winners play third-place teams or runners-up from other groups
   /// - Teams from the same group cannot meet until later rounds
-  /// - The bracket structure is predetermined by FIFA rules
+  /// - The bracket structure is predetermined by tournament rules
   ///
   /// [groupStandings] - Map of group letter to sorted list of standings
   ///
@@ -71,7 +71,7 @@ class SimulationBracketBuilder {
 
     final qualifiedThird = thirdPlace.take(8).toList();
 
-    // FIFA World Cup 2026 bracket structure (simplified version)
+    // World Cup 2026 bracket structure (simplified version)
     // The actual structure is complex and depends on which third-place teams qualify
     // This is a simplified model that creates valid matchups
     final bracket = <List<String>>[];
@@ -82,7 +82,7 @@ class SimulationBracketBuilder {
     final groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
 
     // Simplified bracket construction
-    // In reality, FIFA has a complex predetermined structure
+    // In reality, the tournament has a complex predetermined structure
     final usedTeams = <String>{};
 
     // Match winners with runners-up from different groups

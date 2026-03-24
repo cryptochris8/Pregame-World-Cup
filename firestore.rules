@@ -326,9 +326,9 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
-    // Message notifications - auth can create (trigger), no read
+    // Message notifications - auth can create own notifications (trigger), no read
     match /message_notifications/{docId} {
-      allow create: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.senderId;
       allow read, update, delete: if false;
     }
 
@@ -421,10 +421,10 @@ service cloud.firestore {
 
     // ==================== VENUES & REVIEWS ====================
 
-    // Venue reviews - auth read, own write
+    // Venue reviews - auth read, own write (create must match authenticated user)
     match /venue_reviews/{reviewId} {
       allow read: if isAuth();
-      allow create: if isAuth();
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 
@@ -454,10 +454,10 @@ service cloud.firestore {
       allow read, update: if isAdmin();
     }
 
-    // AI recommendations - auth read, own write
+    // AI recommendations - own read/write only
     match /ai_recommendations/{recommendationId} {
-      allow read: if isAuth();
-      allow create: if isAuth();
+      allow read: if isAuth() && request.auth.uid == resource.data.userId;
+      allow create: if isAuth() && request.auth.uid == request.resource.data.userId;
       allow update, delete: if isAuth() && request.auth.uid == resource.data.userId;
     }
 

@@ -225,7 +225,7 @@ final mockAssetManifest = {
 
 final mockMessiStats = {
   'playerName': 'Lionel Messi',
-  'fifaCode': 'ARG',
+  'teamCode': 'ARG',
   'worldCupAppearances': 26,
   'worldCupGoals': 13,
   'worldCupAssists': 8,
@@ -246,7 +246,7 @@ final mockMessiStats = {
 };
 
 final mockTeamUSA = {
-  'fifaCode': 'USA',
+  'teamCode': 'USA',
   'countryName': 'United States',
   'players': [
     {
@@ -283,7 +283,7 @@ final mockTeamUSA = {
 };
 
 final mockTeamARG = {
-  'fifaCode': 'ARG',
+  'teamCode': 'ARG',
   'countryName': 'Argentina',
   'players': [
     {

@@ -26,12 +26,12 @@ void main() {
     test('Can read national teams from Firestore', () async {
       // Arrange: Add sample team to fake Firestore
       await fakeFirestore.collection('worldcup_teams').doc('USA').set({
-        'fifaCode': 'USA',
+        'teamCode': 'USA',
         'countryName': 'United States',
         'shortName': 'USA',
         'flagUrl': 'assets/worldcup/flags/usa.png',
         'confederation': 'concacaf',
-        'fifaRanking': 13,
+        'worldRanking': 13,
         'group': 'A',
         'worldCupTitles': 0,
         'worldCupAppearances': 11,
@@ -53,7 +53,7 @@ void main() {
       // Assert
       expect(teams, isNotEmpty);
       expect(teams.length, equals(1));
-      expect(teams.first.fifaCode, equals('USA'));
+      expect(teams.first.teamCode, equals('USA'));
       expect(teams.first.countryName, equals('United States'));
       expect(teams.first.confederation, equals(Confederation.concacaf));
       expect(teams.first.isHostNation, isTrue);
@@ -143,19 +143,19 @@ void main() {
     test('Can get teams by confederation', () async {
       // Arrange: Add teams from different confederations
       await fakeFirestore.collection('worldcup_teams').doc('USA').set({
-        'fifaCode': 'USA',
+        'teamCode': 'USA',
         'countryName': 'United States',
         'confederation': 'concacaf',
       });
 
       await fakeFirestore.collection('worldcup_teams').doc('BRA').set({
-        'fifaCode': 'BRA',
+        'teamCode': 'BRA',
         'countryName': 'Brazil',
         'confederation': 'conmebol',
       });
 
       await fakeFirestore.collection('worldcup_teams').doc('GER').set({
-        'fifaCode': 'GER',
+        'teamCode': 'GER',
         'countryName': 'Germany',
         'confederation': 'uefa',
       });
@@ -168,26 +168,26 @@ void main() {
       // Assert
       expect(concacafTeams.length, equals(1));
       expect(uefaTeams.length, equals(1));
-      expect(concacafTeams.first.fifaCode, equals('USA'));
-      expect(uefaTeams.first.fifaCode, equals('GER'));
+      expect(concacafTeams.first.teamCode, equals('USA'));
+      expect(uefaTeams.first.teamCode, equals('GER'));
     });
 
     test('Can get teams by group', () async {
       // Arrange: Add teams in Group A
       await fakeFirestore.collection('worldcup_teams').doc('USA').set({
-        'fifaCode': 'USA',
+        'teamCode': 'USA',
         'countryName': 'United States',
         'group': 'A',
       });
 
       await fakeFirestore.collection('worldcup_teams').doc('BRA').set({
-        'fifaCode': 'BRA',
+        'teamCode': 'BRA',
         'countryName': 'Brazil',
         'group': 'A',
       });
 
       await fakeFirestore.collection('worldcup_teams').doc('ARG').set({
-        'fifaCode': 'ARG',
+        'teamCode': 'ARG',
         'countryName': 'Argentina',
         'group': 'B',
       });
@@ -197,9 +197,9 @@ void main() {
 
       // Assert
       expect(groupATeams.length, equals(2));
-      expect(groupATeams.any((t) => t.fifaCode == 'USA'), isTrue);
-      expect(groupATeams.any((t) => t.fifaCode == 'BRA'), isTrue);
-      expect(groupATeams.any((t) => t.fifaCode == 'ARG'), isFalse);
+      expect(groupATeams.any((t) => t.teamCode == 'USA'), isTrue);
+      expect(groupATeams.any((t) => t.teamCode == 'BRA'), isTrue);
+      expect(groupATeams.any((t) => t.teamCode == 'ARG'), isFalse);
     });
 
     test('WorldCupMatch entity parses all fields correctly', () {
@@ -232,11 +232,11 @@ void main() {
     test('NationalTeam entity parses all fields correctly', () {
       // Arrange
       final teamData = {
-        'fifaCode': 'USA',
+        'teamCode': 'USA',
         'countryName': 'United States',
         'shortName': 'USA',
         'confederation': 'concacaf',
-        'fifaRanking': 13,
+        'worldRanking': 13,
         'worldCupTitles': 0,
         'isHostNation': true,
         'starPlayers': ['Pulisic', 'McKennie'],
@@ -246,7 +246,7 @@ void main() {
       final team = NationalTeam.fromFirestore(teamData, 'USA');
 
       // Assert
-      expect(team.fifaCode, equals('USA'));
+      expect(team.teamCode, equals('USA'));
       expect(team.countryName, equals('United States'));
       expect(team.confederation, equals(Confederation.concacaf));
       expect(team.isHostNation, isTrue);

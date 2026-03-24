@@ -5,6 +5,7 @@ import '../../domain/entities/user_profile.dart';
 import '../../domain/services/social_service.dart';
 import '../../../../injection_container.dart';
 import '../../../messaging/domain/services/file_upload_service.dart';
+import '../../../moderation/moderation.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -42,7 +43,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   bool _isPrivateProfile = false;
   bool _showOnlineStatus = true;
 
-  // FIFA World Cup 2026 qualified national teams (48 teams, alphabetical)
+  // World Cup 2026 qualified national teams (48 teams, alphabetical)
   final List<String> _availableTeams = [
     'Argentina', 'Australia', 'Austria', 'Belgium', 'Bolivia', 'Brazil',
     'Cameroon', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Croatia',
@@ -270,12 +271,32 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     });
 
     try {
+      final profanityFilter = ProfanityFilterService();
+      final displayName = _displayNameController.text.trim();
+      final bio = _bioController.text.trim();
+
+      // Validate display name for profanity/impersonation
+      final nameValidation = profanityFilter.validateUsername(displayName);
+      if (nameValidation.shouldAutoReject) {
+        _showErrorSnackBar('Display name contains inappropriate content');
+        return;
+      }
+
+      // Filter bio content (censor mild profanity, reject severe)
+      String? filteredBio;
+      if (bio.isNotEmpty) {
+        final bioResult = profanityFilter.filterContent(bio);
+        if (bioResult.shouldAutoReject) {
+          _showErrorSnackBar('Bio contains inappropriate content');
+          return;
+        }
+        filteredBio = bioResult.filteredText;
+      }
+
       // Create updated profile with correct field names
       final updatedProfile = widget.profile.copyWith(
-        displayName: _displayNameController.text.trim(),
-        bio: _bioController.text.trim().isNotEmpty
-            ? _bioController.text.trim()
-            : null,
+        displayName: displayName,
+        bio: filteredBio,
         homeLocation: _locationController.text.trim().isNotEmpty
             ? _locationController.text.trim()
             : null,

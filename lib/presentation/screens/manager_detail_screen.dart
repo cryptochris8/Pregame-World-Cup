@@ -268,7 +268,7 @@ class _ManagerHeaderCard extends StatelessWidget {
               runSpacing: 8,
               alignment: WrapAlignment.center,
               children: [
-                _InfoChip(label: manager.fifaCode),
+                _InfoChip(label: manager.teamCode),
                 _InfoChip(label: '${manager.age} years old'),
                 _InfoChip(label: manager.nationality),
                 _InfoChip(label: '${manager.yearsOfExperience}y experience'),

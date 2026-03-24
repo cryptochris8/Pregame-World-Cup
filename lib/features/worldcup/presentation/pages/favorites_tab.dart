@@ -139,7 +139,7 @@ class FavoritesTab extends StatelessWidget {
                         prev.isLoading != curr.isLoading,
                     builder: (context, teamsState) {
                       final favoriteTeams = teamsState.teams
-                          .where((t) => favoriteTeamCodes.contains(t.fifaCode))
+                          .where((t) => favoriteTeamCodes.contains(t.teamCode))
                           .toList();
 
                       if (favoriteTeams.isEmpty && teamsState.isLoading) {
@@ -164,7 +164,7 @@ class FavoritesTab extends StatelessWidget {
                                   isFavorite: true,
                                   onFavoriteToggle: () => context
                                       .read<FavoritesCubit>()
-                                      .toggleFavoriteTeam(team.fifaCode),
+                                      .toggleFavoriteTeam(team.teamCode),
                                 ),
                                 if (index < favoriteTeams.length - 1)
                                   const Divider(height: 1),

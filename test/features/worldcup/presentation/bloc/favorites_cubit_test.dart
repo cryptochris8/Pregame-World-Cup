@@ -36,12 +36,12 @@ void main() {
   );
 
   final testTeamUSA = TestDataFactory.createTeam(
-    fifaCode: 'USA',
+    teamCode: 'USA',
     countryName: 'United States',
   );
 
   final testTeamBRA = TestDataFactory.createTeam(
-    fifaCode: 'BRA',
+    teamCode: 'BRA',
     countryName: 'Brazil',
     confederation: Confederation.conmebol,
     isHostNation: false,
@@ -753,7 +753,7 @@ void main() {
         isA<FavoritesState>()
             .having((s) => s.favoriteTeams.length, 'favoriteTeams count', 1)
             .having(
-              (s) => s.favoriteTeams.first.fifaCode,
+              (s) => s.favoriteTeams.first.teamCode,
               'first team code',
               'USA',
             ),

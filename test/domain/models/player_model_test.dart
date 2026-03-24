@@ -206,7 +206,7 @@ void main() {
       final map = player.toFirestore();
 
       expect(map['playerId'], equals('player_001'));
-      expect(map['fifaCode'], equals('BRA'));
+      expect(map['teamCode'], equals('BRA'));
       expect(map['commonName'], equals('Neymar'));
       expect(map['jerseyNumber'], equals(10));
       expect(map['position'], equals('LW'));
@@ -534,7 +534,7 @@ Player _createPlayer({
 }) {
   return Player(
     playerId: 'test_001',
-    fifaCode: 'TST',
+    teamCode: 'TST',
     firstName: 'Test',
     lastName: 'Player',
     fullName: 'Test Player',
@@ -591,7 +591,7 @@ Player _createPlayer({
 Player _createFullPlayer() {
   return Player(
     playerId: 'player_001',
-    fifaCode: 'BRA',
+    teamCode: 'BRA',
     firstName: 'Neymar',
     lastName: 'da Silva Santos Júnior',
     fullName: 'Neymar da Silva Santos Júnior',

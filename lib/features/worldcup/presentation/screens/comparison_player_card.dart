@@ -76,7 +76,7 @@ class ComparisonPlayerCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              getFlagEmoji(player.fifaCode),
+              getFlagEmoji(player.teamCode),
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(width: 4),

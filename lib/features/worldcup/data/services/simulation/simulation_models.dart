@@ -220,7 +220,7 @@ class GroupStanding {
 
 /// Represents a third-place team's entry in the third-place ranking table.
 ///
-/// In the FIFA World Cup format, the 4 best third-place teams from the
+/// In the World Cup format, the 4 best third-place teams from the
 /// 8 groups advance to the round of 16. This class tracks the statistics
 /// used to rank third-place teams against each other.
 class ThirdPlaceEntry {

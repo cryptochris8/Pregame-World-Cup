@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 
 /// GroupTeamStanding represents a team's standing within a group
 class GroupTeamStanding extends Equatable {
-  /// Team FIFA code
+  /// Team code
   final String teamCode;
 
   /// Team name
@@ -333,14 +333,14 @@ class WorldCupGroup extends Equatable {
   }
 
   /// Calculate tiebreakers between teams with equal points
-  /// FIFA tiebreaker rules:
+  /// Tournament tiebreaker rules:
   /// 1. Goal difference
   /// 2. Goals scored
   /// 3. Points in head-to-head matches
   /// 4. Goal difference in head-to-head matches
   /// 5. Goals scored in head-to-head matches
   /// 6. Fair play points
-  /// 7. Drawing of lots by FIFA
+  /// 7. Drawing of lots
   static List<GroupTeamStanding> applyTiebreakers(
       List<GroupTeamStanding> standings) {
     // Group teams by points

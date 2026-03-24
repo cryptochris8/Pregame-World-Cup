@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 /// World Cup historical matchup intelligence service.
 /// Contains famous World Cup matches, international rivalries, tournament records,
-/// and historical context for FIFA World Cup 2026 match analysis.
+/// and historical context for World Cup 2026 match analysis.
 class ESPNHistoricalService {
 
   // Historical matchup records for major international soccer rivalries
@@ -496,7 +496,7 @@ class ESPNHistoricalService {
 
     String summary = '';
 
-    // Add FIFA ranking context
+    // Add world ranking context
     if (homeRank != null && homeRank <= 50) {
       summary += '(#$homeRank) ';
     }

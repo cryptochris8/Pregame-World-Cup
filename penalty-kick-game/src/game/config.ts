@@ -5,7 +5,7 @@ export const SOCCER_CONFIG = {
   fieldWidth: 16,
   fieldLength: 20,
 
-  // Goal (FIFA standard: 7.32m x 2.44m)
+  // Goal (regulation standard: 7.32m x 2.44m)
   goalWidth: 7.32,
   goalHeight: 2.44,
   goalDepth: 2,

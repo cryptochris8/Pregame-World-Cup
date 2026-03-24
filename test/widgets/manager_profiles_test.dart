@@ -12,7 +12,7 @@ void main() {
   // Sample manager data for testing
   final sampleManagerData1 = {
     'managerId': 'manager_001',
-    'fifaCode': 'BRA',
+    'teamCode': 'BRA',
     'firstName': 'Tite',
     'lastName': 'Adenor Leonardo Bacchi',
     'fullName': 'Adenor Leonardo Bacchi',

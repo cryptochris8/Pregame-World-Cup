@@ -48,7 +48,7 @@ class TeamSortChips extends StatelessWidget {
     switch (option) {
       case TeamsSortOption.alphabetical:
         return 'A-Z';
-      case TeamsSortOption.fifaRanking:
+      case TeamsSortOption.worldRanking:
         return 'World Ranking';
       case TeamsSortOption.confederation:
         return 'Confederation';

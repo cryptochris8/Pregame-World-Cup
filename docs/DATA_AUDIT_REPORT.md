@@ -34,7 +34,7 @@ The app has a **strong data foundation** (372 JSON files, 3.4 MB, ~3,195 Firesto
 
 ### 2. Team JSON Files Missing 19 Metadata Fields
 **Files**: `assets/data/worldcup/teams/*.json`
-- Only contain: `fifaCode`, `countryName`, `players[]`
+- Only contain: `teamCode`, `countryName`, `players[]`
 - Missing: `group`, `confederation`, `fifaRanking`, `coachName`, `primaryColor`, `secondaryColor`, `worldCupTitles`, `worldCupAppearances`, `bestFinish`, `isHostNation`, `nickname`, `captainName`, `starPlayers`, `qualificationMethod`, `isQualified`, `shortName`, `flagUrl`, `federationLogoUrl`, `homeStadium`
 - The `NationalTeam` entity expects all 22 fields
 

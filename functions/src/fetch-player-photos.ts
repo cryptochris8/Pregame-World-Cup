@@ -39,7 +39,7 @@ interface Player {
   playerId: string;
   fullName: string;
   commonName: string;
-  fifaCode: string;
+  teamCode: string;
   photoUrl: string;
 }
 
@@ -96,10 +96,10 @@ async function downloadImage(url: string): Promise<Buffer | null> {
 async function uploadToStorage(
   imageBuffer: Buffer,
   playerId: string,
-  fifaCode: string
+  teamCode: string
 ): Promise<string | null> {
   try {
-    const fileName = `players/${fifaCode.toLowerCase()}_${playerId}.png`;
+    const fileName = `players/${teamCode.toLowerCase()}_${playerId}.png`;
     const file = bucket.file(fileName);
 
     await file.save(imageBuffer, {
@@ -145,7 +145,7 @@ async function processPlayer(player: Player): Promise<{
   status: 'success' | 'not_found' | 'error';
   photoUrl?: string;
 }> {
-  console.log(`\n📸 Processing: ${player.fullName} (${player.fifaCode})`);
+  console.log(`\n📸 Processing: ${player.fullName} (${player.teamCode})`);
 
   // Skip if already has a valid Firebase Storage URL
   if (player.photoUrl && player.photoUrl.includes('storage.googleapis.com')) {
@@ -184,7 +184,7 @@ async function processPlayer(player: Player): Promise<{
   }
 
   console.log(`  ☁️ Uploading to Firebase Storage...`);
-  const storageUrl = await uploadToStorage(imageBuffer, player.playerId, player.fifaCode);
+  const storageUrl = await uploadToStorage(imageBuffer, player.playerId, player.teamCode);
 
   if (!storageUrl) {
     console.log(`  ❌ Failed to upload to Firebase Storage`);
@@ -218,7 +218,7 @@ async function main() {
     playerId: doc.id,
     fullName: doc.data().fullName || '',
     commonName: doc.data().commonName || '',
-    fifaCode: doc.data().fifaCode || '',
+    teamCode: doc.data().teamCode || '',
     photoUrl: doc.data().photoUrl || '',
   }));
 
@@ -248,11 +248,11 @@ async function main() {
         break;
       case 'not_found':
         results.not_found++;
-        notFoundPlayers.push(`${result.name} (${player.fifaCode})`);
+        notFoundPlayers.push(`${result.name} (${player.teamCode})`);
         break;
       case 'error':
         results.error++;
-        errorPlayers.push(`${result.name} (${player.fifaCode})`);
+        errorPlayers.push(`${result.name} (${player.teamCode})`);
         break;
     }
 

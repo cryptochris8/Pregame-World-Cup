@@ -5,8 +5,8 @@ import '../../domain/entities/entities.dart';
 enum TeamsSortOption {
   /// Sort alphabetically by country name
   alphabetical,
-  /// Sort by FIFA ranking
-  fifaRanking,
+  /// Sort by world ranking
+  worldRanking,
   /// Sort by confederation
   confederation,
   /// Sort by group
@@ -85,11 +85,11 @@ class TeamsState extends Equatable {
     lastUpdated,
   ];
 
-  /// Get team by FIFA code
+  /// Get team by team code
   NationalTeam? getTeamByCode(String code) {
     try {
       return teams.firstWhere(
-        (t) => t.fifaCode.toUpperCase() == code.toUpperCase(),
+        (t) => t.teamCode.toUpperCase() == code.toUpperCase(),
       );
     } catch (_) {
       return null;

@@ -69,9 +69,9 @@ Bulk replacement across all JSON files in `assets/data/worldcup/`:
 
 1. **Legal disclaimer** (`appDisclaimer` localization key): *"Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization."* — This deliberately references FIFA to disclaim affiliation and is legally required.
 
-2. **Internal code identifiers**: Variable names (`fifaCode`, `fifaRanking`), API constants (`FIFA_WORLDCUP_2026`), Firestore field names, and code comments. These are never displayed to users.
+2. **Internal code identifiers**: Variable names (`teamCode`, `fifaRanking`), API constants (`FIFA_WORLDCUP_2026`), Firestore field names, and code comments. These are never displayed to users.
 
-3. **JSON data structure keys**: `"fifaCode"`, `"fifa_code"`, `"fifaRanking"` field names used as internal data identifiers.
+3. **JSON data structure keys**: `"teamCode"`, `"fifa_code"`, `"fifaRanking"` field names used as internal data identifiers.
 
 4. **Source URLs**: Hyperlinks to fifa.com in citation/source fields (cannot be changed without breaking URLs).
 
@@ -80,12 +80,12 @@ Bulk replacement across all JSON files in `assets/data/worldcup/`:
 ```bash
 # User-visible FIFA in JSON: ZERO results
 grep -ri "FIFA" assets/data/worldcup/ --include="*.json" \
-  | grep -v "fifaCode\|fifa_code\|fifaTournamentName\|fifaConfederationCode\|fifa_ranking\|fifaRanking\|fifa_rankings_context\|fifa.com\|source_url"
+  | grep -v "teamCode\|fifa_code\|fifaTournamentName\|fifaConfederationCode\|fifa_ranking\|fifaRanking\|fifa_rankings_context\|fifa.com\|source_url"
 # Result: (empty)
 
 # User-visible FIFA in Dart: Only legal disclaimer
 grep -rn "'.*FIFA.*'" lib/ --include="*.dart" \
-  | grep -v "//\|///\|fifaCode\|fifaRanking\|_fifa\|FIFA_\|affiliated"
+  | grep -v "//\|///\|teamCode\|fifaRanking\|_fifa\|FIFA_\|affiliated"
 # Result: (empty)
 ```
 

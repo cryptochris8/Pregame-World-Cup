@@ -36,8 +36,8 @@ class PredictionFactorScorer {
   /// Factor 2: Elo rating comparison using tanh curve.
   ///
   /// Uses the World Football Elo Rating system, which is strictly superior
-  /// to FIFA rankings because it accounts for margin of victory, match
-  /// importance, and home advantage. Falls back to FIFA rankings if Elo
+  /// to world rankings because it accounts for margin of victory, match
+  /// importance, and home advantage. Falls back to world rankings if Elo
   /// data is unavailable.
   double scoreEloRating(
     String homeCode,
@@ -59,9 +59,9 @@ class PredictionFactorScorer {
       return tanh((homeRating - awayRating) / 200.0);
     }
 
-    // Fallback: use FIFA rankings if Elo data is not available
-    final homeRank = homeTeam?.fifaRanking ?? 50;
-    final awayRank = awayTeam?.fifaRanking ?? 50;
+    // Fallback: use world rankings if Elo data is not available
+    final homeRank = homeTeam?.worldRanking ?? 50;
+    final awayRank = awayTeam?.worldRanking ?? 50;
 
     // Lower rank = better. Positive diff means home is better.
     final diff = awayRank - homeRank;

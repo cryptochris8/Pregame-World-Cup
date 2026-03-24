@@ -6,6 +6,7 @@ import '../entities/watch_party.dart';
 import '../entities/watch_party_member.dart';
 import '../entities/watch_party_message.dart';
 import '../../../../core/services/logging_service.dart';
+import '../../../moderation/moderation.dart';
 
 /// Handles real-time chat messaging within watch parties.
 ///
@@ -56,13 +57,28 @@ class WatchPartyChatService {
       throw Exception('You cannot send messages (muted or unpaid virtual)');
     }
 
+    // Validate content through moderation service
+    final moderationService = ModerationService();
+    final validationResult = await moderationService.validateMessage(content);
+
+    if (!validationResult.isValid) {
+      LoggingService.warning(
+        'Watch party message blocked by moderation: ${validationResult.errorMessage}',
+        tag: _logTag,
+      );
+      throw Exception(validationResult.errorMessage ?? 'Message contains inappropriate content');
+    }
+
+    // Use filtered content if available
+    final filteredContent = validationResult.filteredContent ?? content;
+
     final message = WatchPartyMessage.text(
       watchPartyId: watchPartyId,
       senderId: user.uid,
       senderName: member.displayName,
       senderImageUrl: member.profileImageUrl,
       senderRole: member.role,
-      content: content,
+      content: filteredContent,
       replyToMessageId: replyToMessageId,
     );
 

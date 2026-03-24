@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 /// Helper class for displaying World Cup 2026 national team flags.
 ///
 /// Uses emoji flags as the primary display method. Supports lookup by
-/// FIFA country code (e.g., 'USA', 'BRA') or full country name
+/// country code (e.g., 'USA', 'BRA') or full country name
 /// (e.g., 'United States', 'Brazil').
 class TeamLogoHelper {
   // ---------------------------------------------------------------------------
   // Emoji flag mapping for all 48 World Cup 2026 qualified teams
-  // Keys are FIFA country codes.
+  // Keys are country codes.
   // ---------------------------------------------------------------------------
   static const Map<String, String> _countryCodeToFlag = {
     // AFC (Asia)
@@ -74,7 +74,7 @@ class TeamLogoHelper {
   };
 
   // ---------------------------------------------------------------------------
-  // Full country name -> FIFA code mapping (case-insensitive lookup).
+  // Full country name -> country code mapping (case-insensitive lookup).
   // Includes common aliases and alternate names.
   // ---------------------------------------------------------------------------
   static const Map<String, String> _nameToCode = {
@@ -167,7 +167,7 @@ class TeamLogoHelper {
     'wales': 'WAL',
   };
 
-  /// Resolve a team identifier (code or name) to a FIFA country code.
+  /// Resolve a team identifier (code or name) to a country code.
   /// Returns null if no match is found.
   static String? _resolveCode(String? teamIdentifier) {
     if (teamIdentifier == null || teamIdentifier.isEmpty) return null;
@@ -191,7 +191,7 @@ class TeamLogoHelper {
 
   /// Get the emoji flag string for a team.
   ///
-  /// [teamIdentifier] can be a FIFA code ('USA') or a full name ('United States').
+  /// [teamIdentifier] can be a country code ('USA') or a full name ('United States').
   /// Returns null if the team is not recognized.
   static String? getTeamFlag(String? teamIdentifier) {
     final code = _resolveCode(teamIdentifier);
@@ -270,7 +270,7 @@ class TeamLogoHelper {
     return _resolveCode(teamName) != null;
   }
 
-  /// Get all recognized FIFA country codes.
+  /// Get all recognized country codes.
   static List<String> getAvailableTeamCodes() {
     return _countryCodeToFlag.keys.toList();
   }

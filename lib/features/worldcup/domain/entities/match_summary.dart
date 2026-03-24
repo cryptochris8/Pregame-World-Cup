@@ -5,10 +5,10 @@ class MatchSummary extends Equatable {
   /// Unique ID (team1Code_team2Code, alphabetically sorted)
   final String id;
 
-  /// First team FIFA code
+  /// First team code
   final String team1Code;
 
-  /// Second team FIFA code
+  /// Second team code
   final String team2Code;
 
   /// First team name

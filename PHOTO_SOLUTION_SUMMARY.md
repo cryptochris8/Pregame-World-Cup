@@ -374,7 +374,7 @@ gs://pregame-b089e.firebasestorage.app/
 │   └── ...
 ```
 
-**Naming**: `{type}s/{fifaCode}_{entityId}.jpg`
+**Naming**: `{type}s/{teamCode}_{entityId}.jpg`
 
 ---
 

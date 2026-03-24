@@ -67,7 +67,7 @@ const bucket = admin.storage().bucket();
 interface ManagerRecord {
   id: string;
   fullName: string;
-  fifaCode?: string;
+  teamCode?: string;
   photoUrl?: string;
 }
 
@@ -136,7 +136,7 @@ async function main() {
         manager.fullName,
         'manager',
         manager.id,
-        manager.fifaCode || 'XX',
+        manager.teamCode || 'XX',
         undefined,
         manager.photoUrl
       );

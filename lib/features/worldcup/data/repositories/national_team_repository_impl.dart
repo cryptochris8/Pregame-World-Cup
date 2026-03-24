@@ -90,15 +90,15 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
   }
 
   @override
-  Future<NationalTeam?> getTeamByCode(String fifaCode) async {
+  Future<NationalTeam?> getTeamByCode(String teamCode) async {
     try {
       // Try cache first
-      final cached = await _cacheDataSource.getCachedTeam(fifaCode);
+      final cached = await _cacheDataSource.getCachedTeam(teamCode);
       if (cached != null) {
         return cached;
       }
 
-      return await _firestoreDataSource.getTeamByCode(fifaCode);
+      return await _firestoreDataSource.getTeamByCode(teamCode);
     } catch (e) {
       // Debug output removed
       return null;
@@ -120,8 +120,8 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
   Future<List<NationalTeam>> getTeamsByRanking() async {
     try {
       final allTeams = await getAllTeams();
-      final teamsWithRanking = allTeams.where((t) => t.fifaRanking != null).toList();
-      teamsWithRanking.sort((a, b) => (a.fifaRanking ?? 999).compareTo(b.fifaRanking ?? 999));
+      final teamsWithRanking = allTeams.where((t) => t.worldRanking != null).toList();
+      teamsWithRanking.sort((a, b) => (a.worldRanking ?? 999).compareTo(b.worldRanking ?? 999));
       return teamsWithRanking;
     } catch (e) {
       // Debug output removed
@@ -137,7 +137,7 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
       return allTeams.where((t) =>
         t.countryName.toLowerCase().contains(lowerQuery) ||
         t.shortName.toLowerCase().contains(lowerQuery) ||
-        t.fifaCode.toLowerCase().contains(lowerQuery) ||
+        t.teamCode.toLowerCase().contains(lowerQuery) ||
         (t.nickname?.toLowerCase().contains(lowerQuery) ?? false)
       ).toList();
     } catch (e) {
@@ -200,11 +200,11 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
   }
 
   @override
-  Stream<NationalTeam?> watchTeam(String fifaCode) {
+  Stream<NationalTeam?> watchTeam(String teamCode) {
     return watchTeams().map((teams) {
       try {
         return teams.firstWhere(
-          (t) => t.fifaCode.toUpperCase() == fifaCode.toUpperCase(),
+          (t) => t.teamCode.toUpperCase() == teamCode.toUpperCase(),
         );
       } catch (_) {
         return null;

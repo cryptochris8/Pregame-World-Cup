@@ -2,7 +2,7 @@
 ///
 /// For World Cup 2026 the favorite team names are full country names
 /// (e.g., "United States", "Brazil"). This helper handles common aliases,
-/// short FIFA codes, and case-insensitive matching so that schedule data
+/// short team codes, and case-insensitive matching so that schedule data
 /// from various sources can be reliably compared against the user's list.
 class TeamMatchingHelper {
 

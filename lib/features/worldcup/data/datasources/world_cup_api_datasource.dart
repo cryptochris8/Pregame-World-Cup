@@ -10,7 +10,7 @@ class WorldCupApiDataSource {
   // SportsData.io Soccer API base URL
   static const String _baseUrl = 'https://api.sportsdata.io/v4/soccer';
 
-  // Competition ID for FIFA World Cup 2026 (will need to be updated when available)
+  // Competition ID for World Cup 2026 (will need to be updated when available)
   static const String _worldCupCompetitionId = 'FIFA_WORLDCUP_2026';
 
   WorldCupApiDataSource({
@@ -231,12 +231,12 @@ class WorldCupApiDataSource {
   // Parse API response to NationalTeam
   NationalTeam _parseTeam(Map<String, dynamic> json) {
     return NationalTeam(
-      fifaCode: json['Key'] ?? json['TeamId']?.toString() ?? '',
+      teamCode: json['Key'] ?? json['TeamId']?.toString() ?? '',
       countryName: json['FullName'] ?? json['Name'] ?? '',
       shortName: json['ShortName'] ?? json['Name'] ?? '',
       flagUrl: json['WikipediaLogoUrl'] ?? json['FlagUrl'] ?? '',
       confederation: _parseConfederation(json['AreaName']),
-      fifaRanking: json['GlobalTeamRanking'],
+      worldRanking: json['GlobalTeamRanking'],
       coachName: json['Coach']?['Name'],
       group: json['Group'],
       isQualified: true,

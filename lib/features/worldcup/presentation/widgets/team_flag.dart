@@ -28,7 +28,7 @@ class TeamFlag extends StatelessWidget {
   }) {
     return TeamFlag(
       flagUrl: team.flagUrl,
-      teamCode: team.fifaCode,
+      teamCode: team.teamCode,
       size: size,
       showCode: showCode,
       circular: circular,

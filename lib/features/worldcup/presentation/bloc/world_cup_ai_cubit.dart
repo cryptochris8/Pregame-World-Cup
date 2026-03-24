@@ -87,8 +87,8 @@ class WorldCupAICubit extends Cubit<WorldCupAIState> {
         matchId: matchId,
         homeTeamName: match.homeTeamName,
         awayTeamName: match.awayTeamName,
-        homeRanking: homeTeam?.fifaRanking,
-        awayRanking: awayTeam?.fifaRanking,
+        homeRanking: homeTeam?.worldRanking,
+        awayRanking: awayTeam?.worldRanking,
       );
 
       // Save fallback to Hive too (but with shorter TTL via provider check on load)

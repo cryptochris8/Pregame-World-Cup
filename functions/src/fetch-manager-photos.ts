@@ -38,7 +38,7 @@ const SPORTSDB_BASE_URL = 'https://www.thesportsdb.com/api/v1/json/3';
 interface Manager {
   managerId: string;
   fullName: string;
-  fifaCode: string;
+  teamCode: string;
   photoUrl: string;
 }
 
@@ -101,10 +101,10 @@ async function downloadImage(url: string): Promise<Buffer | null> {
 async function uploadToStorage(
   imageBuffer: Buffer,
   managerId: string,
-  fifaCode: string
+  teamCode: string
 ): Promise<string | null> {
   try {
-    const fileName = `managers/${fifaCode.toLowerCase()}_${managerId}.png`;
+    const fileName = `managers/${teamCode.toLowerCase()}_${managerId}.png`;
     const file = bucket.file(fileName);
 
     await file.save(imageBuffer, {
@@ -150,7 +150,7 @@ async function processManager(manager: Manager): Promise<{
   status: 'success' | 'not_found' | 'error';
   photoUrl?: string;
 }> {
-  console.log(`\n📸 Processing: ${manager.fullName} (${manager.fifaCode})`);
+  console.log(`\n📸 Processing: ${manager.fullName} (${manager.teamCode})`);
 
   // Skip if already has a valid Firebase Storage URL
   if (manager.photoUrl && manager.photoUrl.includes('storage.googleapis.com')) {
@@ -183,7 +183,7 @@ async function processManager(manager: Manager): Promise<{
   }
 
   console.log(`  ☁️ Uploading to Firebase Storage...`);
-  const storageUrl = await uploadToStorage(imageBuffer, manager.managerId, manager.fifaCode);
+  const storageUrl = await uploadToStorage(imageBuffer, manager.managerId, manager.teamCode);
 
   if (!storageUrl) {
     console.log(`  ❌ Failed to upload to Firebase Storage`);
@@ -216,7 +216,7 @@ async function main() {
   const managers: Manager[] = managersSnapshot.docs.map(doc => ({
     managerId: doc.id,
     fullName: doc.data().fullName || '',
-    fifaCode: doc.data().fifaCode || '',
+    teamCode: doc.data().teamCode || '',
     photoUrl: doc.data().photoUrl || '',
   }));
 
@@ -245,11 +245,11 @@ async function main() {
         break;
       case 'not_found':
         results.not_found++;
-        notFoundManagers.push(`${result.name} (${manager.fifaCode})`);
+        notFoundManagers.push(`${result.name} (${manager.teamCode})`);
         break;
       case 'error':
         results.error++;
-        errorManagers.push(`${result.name} (${manager.fifaCode})`);
+        errorManagers.push(`${result.name} (${manager.teamCode})`);
         break;
     }
 

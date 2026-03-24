@@ -33,7 +33,7 @@ class PredictionNarrativeBuilder {
   }) {
     final factors = <_FactorEntry>[];
 
-    // Elo Rating (with fallback description for FIFA ranking)
+    // Elo Rating (with fallback description for world ranking)
     if (eloScore.abs() > 0.01) {
       final homeElo = _data.getEloRating(homeCode);
       final awayElo = _data.getEloRating(awayCode);
@@ -45,10 +45,10 @@ class PredictionNarrativeBuilder {
           eloScore.abs(),
           '$fav rated $favRating vs $undRating in Elo ratings',
         ));
-      } else if (homeTeam?.fifaRanking != null && awayTeam?.fifaRanking != null) {
+      } else if (homeTeam?.worldRanking != null && awayTeam?.worldRanking != null) {
         final fav = eloScore > 0 ? homeName : awayName;
-        final favRank = eloScore > 0 ? homeTeam!.fifaRanking : awayTeam!.fifaRanking;
-        final undRank = eloScore > 0 ? awayTeam!.fifaRanking : homeTeam!.fifaRanking;
+        final favRank = eloScore > 0 ? homeTeam!.worldRanking : awayTeam!.worldRanking;
+        final undRank = eloScore > 0 ? awayTeam!.worldRanking : homeTeam!.worldRanking;
         factors.add(_FactorEntry(
           eloScore.abs(),
           '$fav ranked #$favRank vs #$undRank in world rankings',

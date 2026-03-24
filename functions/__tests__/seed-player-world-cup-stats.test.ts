@@ -2,12 +2,12 @@
  * Tests for seed-player-world-cup-stats.ts
  *
  * This script is unique: it reads player stat files, queries the 'players'
- * collection to find matching players by fifaCode + lastName, then updates
+ * collection to find matching players by teamCode + lastName, then updates
  * each matching player document with World Cup stats.
  *
  * Verifies:
  * - Reads player stat files from the correct directory
- * - Filters by --team flag (fifaCode)
+ * - Filters by --team flag (teamCode)
  * - Queries Firestore for matching players
  * - Name matching logic (last name substring match)
  * - Handles not-found players
@@ -90,12 +90,12 @@ describe("seed-player-world-cup-stats", () => {
     expect(mockReadJsonDir).toHaveBeenCalledWith("../../assets/data/worldcup/player_stats");
   });
 
-  it("should filter records by --team flag using fifaCode", async () => {
+  it("should filter records by --team flag using teamCode", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: "BRA", clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([
-      { playerName: "Neymar Jr", fifaCode: "BRA", worldCupAppearances: 2 },
-      { playerName: "Lionel Messi", fifaCode: "ARG", worldCupAppearances: 5 },
-      { playerName: "Vinicius Junior", fifaCode: "BRA", worldCupAppearances: 1 },
+      { playerName: "Neymar Jr", teamCode: "BRA", worldCupAppearances: 2 },
+      { playerName: "Lionel Messi", teamCode: "ARG", worldCupAppearances: 5 },
+      { playerName: "Vinicius Junior", teamCode: "BRA", worldCupAppearances: 1 },
     ]);
 
     // Mock Firestore query for the two BRA players
@@ -112,8 +112,8 @@ describe("seed-player-world-cup-stats", () => {
 
     // Should only query for BRA players (2 calls), not ARG
     expect(mockCollection).toHaveBeenCalledWith("players");
-    expect(mockWhere).toHaveBeenCalledWith("fifaCode", "==", "BRA");
-    expect(mockWhere).not.toHaveBeenCalledWith("fifaCode", "==", "ARG");
+    expect(mockWhere).toHaveBeenCalledWith("teamCode", "==", "BRA");
+    expect(mockWhere).not.toHaveBeenCalledWith("teamCode", "==", "ARG");
   });
 
   it("should match player by last name substring in fullName", async () => {
@@ -121,7 +121,7 @@ describe("seed-player-world-cup-stats", () => {
     mockReadJsonDir.mockReturnValue([
       {
         playerName: "Lionel Messi",
-        fifaCode: "ARG",
+        teamCode: "ARG",
         worldCupAppearances: 5,
         worldCupGoals: 13,
         worldCupAssists: 8,
@@ -168,7 +168,7 @@ describe("seed-player-world-cup-stats", () => {
     const logSpy = jest.spyOn(console, "log").mockImplementation(() => {});
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([
-      { playerName: "Unknown Player", fifaCode: "XXX", worldCupAppearances: 0 },
+      { playerName: "Unknown Player", teamCode: "XXX", worldCupAppearances: 0 },
     ]);
 
     mockWhereGet.mockResolvedValueOnce({ docs: [] });
@@ -184,7 +184,7 @@ describe("seed-player-world-cup-stats", () => {
     const logSpy = jest.spyOn(console, "log").mockImplementation(() => {});
     mockParseArgs.mockReturnValue({ dryRun: true, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([
-      { playerName: "Harry Kane", fifaCode: "ENG", worldCupAppearances: 3 },
+      { playerName: "Harry Kane", teamCode: "ENG", worldCupAppearances: 3 },
     ]);
 
     mockWhereGet.mockResolvedValueOnce({
@@ -205,8 +205,8 @@ describe("seed-player-world-cup-stats", () => {
     const errorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([
-      { playerName: "Error Player", fifaCode: "ERR", worldCupAppearances: 0 },
-      { playerName: "Good Player", fifaCode: "GOD", worldCupAppearances: 1 },
+      { playerName: "Error Player", teamCode: "ERR", worldCupAppearances: 0 },
+      { playerName: "Good Player", teamCode: "GOD", worldCupAppearances: 1 },
     ]);
 
     // First player throws, second succeeds
@@ -229,8 +229,8 @@ describe("seed-player-world-cup-stats", () => {
   it("should process all records when no --team filter", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([
-      { playerName: "Player A", fifaCode: "AAA", worldCupAppearances: 1 },
-      { playerName: "Player B", fifaCode: "BBB", worldCupAppearances: 2 },
+      { playerName: "Player A", teamCode: "AAA", worldCupAppearances: 1 },
+      { playerName: "Player B", teamCode: "BBB", worldCupAppearances: 2 },
     ]);
 
     mockWhereGet
@@ -244,8 +244,8 @@ describe("seed-player-world-cup-stats", () => {
     runSeed();
     await new Promise((r) => setTimeout(r, 300));
 
-    expect(mockWhere).toHaveBeenCalledWith("fifaCode", "==", "AAA");
-    expect(mockWhere).toHaveBeenCalledWith("fifaCode", "==", "BBB");
+    expect(mockWhere).toHaveBeenCalledWith("teamCode", "==", "AAA");
+    expect(mockWhere).toHaveBeenCalledWith("teamCode", "==", "BBB");
   });
 
   it("should handle empty records array", async () => {
@@ -265,7 +265,7 @@ describe("seed-player-world-cup-stats", () => {
     mockReadJsonDir.mockReturnValue([
       {
         playerName: "Kylian Mbappe",
-        fifaCode: "FRA",
+        teamCode: "FRA",
         worldCupAppearances: 2,
         worldCupGoals: 12,
         worldCupAssists: 5,

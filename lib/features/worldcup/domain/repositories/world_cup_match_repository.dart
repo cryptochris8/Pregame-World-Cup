@@ -15,7 +15,7 @@ abstract class WorldCupMatchRepository {
   /// Fetches matches for a specific date
   Future<List<WorldCupMatch>> getMatchesByDate(DateTime date);
 
-  /// Fetches matches for a specific team (by FIFA code)
+  /// Fetches matches for a specific team (by team code)
   Future<List<WorldCupMatch>> getMatchesByTeam(String teamCode);
 
   /// Fetches matches at a specific venue

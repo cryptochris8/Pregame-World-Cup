@@ -18,7 +18,7 @@ void main() {
 
   final testTeams = TestDataFactory.createTeamList(count: 5);
   final testTeam = TestDataFactory.createTeam(
-    fifaCode: 'USA',
+    teamCode: 'USA',
     countryName: 'United States',
   );
 
@@ -166,15 +166,15 @@ void main() {
     test('filters teams by confederation', () async {
       final teams = [
         TestDataFactory.createTeam(
-          fifaCode: 'USA',
+          teamCode: 'USA',
           confederation: Confederation.concacaf,
         ),
         TestDataFactory.createTeam(
-          fifaCode: 'BRA',
+          teamCode: 'BRA',
           confederation: Confederation.conmebol,
         ),
         TestDataFactory.createTeam(
-          fifaCode: 'MEX',
+          teamCode: 'MEX',
           confederation: Confederation.concacaf,
         ),
       ];
@@ -204,10 +204,10 @@ void main() {
   group('getHostNations', () {
     test('filters host nations', () async {
       final teams = [
-        TestDataFactory.createTeam(fifaCode: 'USA', isHostNation: true),
-        TestDataFactory.createTeam(fifaCode: 'MEX', isHostNation: true),
-        TestDataFactory.createTeam(fifaCode: 'CAN', isHostNation: true),
-        TestDataFactory.createTeam(fifaCode: 'BRA', isHostNation: false),
+        TestDataFactory.createTeam(teamCode: 'USA', isHostNation: true),
+        TestDataFactory.createTeam(teamCode: 'MEX', isHostNation: true),
+        TestDataFactory.createTeam(teamCode: 'CAN', isHostNation: true),
+        TestDataFactory.createTeam(teamCode: 'BRA', isHostNation: false),
       ];
       when(() => mockCacheDataSource.getCachedTeams())
           .thenAnswer((_) async => teams);
@@ -222,9 +222,9 @@ void main() {
   group('getTeamsByRanking', () {
     test('returns teams sorted by FIFA ranking', () async {
       final teams = [
-        TestDataFactory.createTeam(fifaCode: 'USA', fifaRanking: 13),
-        TestDataFactory.createTeam(fifaCode: 'BRA', fifaRanking: 1),
-        TestDataFactory.createTeam(fifaCode: 'MEX', fifaRanking: 15),
+        TestDataFactory.createTeam(teamCode: 'USA', worldRanking: 13),
+        TestDataFactory.createTeam(teamCode: 'BRA', worldRanking: 1),
+        TestDataFactory.createTeam(teamCode: 'MEX', worldRanking: 15),
       ];
       when(() => mockCacheDataSource.getCachedTeams())
           .thenAnswer((_) async => teams);
@@ -232,18 +232,18 @@ void main() {
       final result = await repository.getTeamsByRanking();
 
       expect(result.length, 3);
-      expect(result[0].fifaRanking, 1);
-      expect(result[1].fifaRanking, 13);
-      expect(result[2].fifaRanking, 15);
+      expect(result[0].worldRanking, 1);
+      expect(result[1].worldRanking, 13);
+      expect(result[2].worldRanking, 15);
     });
   });
 
   group('searchTeams', () {
     test('searches by country name', () async {
       final teams = [
-        TestDataFactory.createTeam(fifaCode: 'USA', countryName: 'United States'),
-        TestDataFactory.createTeam(fifaCode: 'BRA', countryName: 'Brazil'),
-        TestDataFactory.createTeam(fifaCode: 'MEX', countryName: 'Mexico'),
+        TestDataFactory.createTeam(teamCode: 'USA', countryName: 'United States'),
+        TestDataFactory.createTeam(teamCode: 'BRA', countryName: 'Brazil'),
+        TestDataFactory.createTeam(teamCode: 'MEX', countryName: 'Mexico'),
       ];
       when(() => mockCacheDataSource.getCachedTeams())
           .thenAnswer((_) async => teams);
@@ -251,13 +251,13 @@ void main() {
       final result = await repository.searchTeams('united');
 
       expect(result.length, 1);
-      expect(result[0].fifaCode, 'USA');
+      expect(result[0].teamCode, 'USA');
     });
 
     test('searches by FIFA code', () async {
       final teams = [
-        TestDataFactory.createTeam(fifaCode: 'USA', countryName: 'United States'),
-        TestDataFactory.createTeam(fifaCode: 'BRA', countryName: 'Brazil'),
+        TestDataFactory.createTeam(teamCode: 'USA', countryName: 'United States'),
+        TestDataFactory.createTeam(teamCode: 'BRA', countryName: 'Brazil'),
       ];
       when(() => mockCacheDataSource.getCachedTeams())
           .thenAnswer((_) async => teams);
@@ -265,7 +265,7 @@ void main() {
       final result = await repository.searchTeams('bra');
 
       expect(result.length, 1);
-      expect(result[0].fifaCode, 'BRA');
+      expect(result[0].teamCode, 'BRA');
     });
 
     test('returns empty list on no match', () async {
@@ -281,9 +281,9 @@ void main() {
   group('getPreviousChampions', () {
     test('returns teams with world cup titles sorted descending', () async {
       final teams = [
-        TestDataFactory.createTeam(fifaCode: 'BRA'),
-        TestDataFactory.createTeam(fifaCode: 'USA'),
-        TestDataFactory.createTeam(fifaCode: 'GER'),
+        TestDataFactory.createTeam(teamCode: 'BRA'),
+        TestDataFactory.createTeam(teamCode: 'USA'),
+        TestDataFactory.createTeam(teamCode: 'GER'),
       ];
       when(() => mockCacheDataSource.getCachedTeams())
           .thenAnswer((_) async => teams);
@@ -373,7 +373,7 @@ void main() {
     test('finds matching team from stream', () async {
       final teamsWithUsa = [
         ...testTeams,
-        TestDataFactory.createTeam(fifaCode: 'USA', countryName: 'United States'),
+        TestDataFactory.createTeam(teamCode: 'USA', countryName: 'United States'),
       ];
       when(() => mockFirestoreDataSource.watchTeams())
           .thenAnswer((_) => Stream.value(teamsWithUsa));
@@ -381,7 +381,7 @@ void main() {
       final stream = repository.watchTeam('USA');
       final result = await stream.first;
 
-      expect(result?.fifaCode, 'USA');
+      expect(result?.teamCode, 'USA');
     });
 
     test('returns null when team not found in stream', () async {

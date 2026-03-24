@@ -22,7 +22,7 @@ async function main() {
 
   let records: any[] = readJsonDir(DATA_DIR);
   if (team) {
-    records = records.filter((r) => r.fifaCode === team);
+    records = records.filter((r) => r.teamCode === team);
   }
   console.log(`Found ${records.length} player stat files`);
 
@@ -32,7 +32,7 @@ async function main() {
 
   for (const p of records) {
     try {
-      const snap = await db.collection("players").where("fifaCode", "==", p.fifaCode).get();
+      const snap = await db.collection("players").where("teamCode", "==", p.teamCode).get();
       const lastName = p.playerName.split(" ").pop()?.toLowerCase() || "";
       const match = snap.docs.find((d) => {
         const data = d.data();
@@ -61,7 +61,7 @@ async function main() {
       };
 
       if (dryRun) {
-        console.log(`  [DRY RUN] Would update: ${p.playerName} (${p.fifaCode})`);
+        console.log(`  [DRY RUN] Would update: ${p.playerName} (${p.teamCode})`);
       } else {
         await match.ref.update(update);
         console.log(`  Updated: ${p.playerName}`);

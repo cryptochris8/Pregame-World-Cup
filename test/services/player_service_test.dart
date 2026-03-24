@@ -11,7 +11,7 @@ void main() {
   // Sample player data for testing
   final samplePlayerData1 = {
     'playerId': 'player_001',
-    'fifaCode': 'BRA',
+    'teamCode': 'BRA',
     'firstName': 'Neymar',
     'lastName': 'da Silva Santos Júnior',
     'fullName': 'Neymar da Silva Santos Júnior',
@@ -65,7 +65,7 @@ void main() {
 
   final samplePlayerData2 = {
     'playerId': 'player_002',
-    'fifaCode': 'ARG',
+    'teamCode': 'ARG',
     'firstName': 'Lionel',
     'lastName': 'Messi',
     'fullName': 'Lionel Andrés Messi',
@@ -119,7 +119,7 @@ void main() {
 
   final samplePlayerData3 = {
     'playerId': 'player_003',
-    'fifaCode': 'BRA',
+    'teamCode': 'BRA',
     'firstName': 'Vinicius',
     'lastName': 'Junior',
     'fullName': 'Vinicius José Paixão de Oliveira Júnior',
@@ -197,12 +197,12 @@ void main() {
 
       final snapshot = await fakeFirestore
           .collection('players')
-          .where('fifaCode', isEqualTo: 'BRA')
+          .where('teamCode', isEqualTo: 'BRA')
           .get();
       final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 
       expect(players.length, 2);
-      expect(players.every((p) => p.fifaCode == 'BRA'), true);
+      expect(players.every((p) => p.teamCode == 'BRA'), true);
       expect(players.any((p) => p.commonName == 'Neymar'), true);
       expect(players.any((p) => p.commonName == 'Vinicius Jr.'), true);
     });
@@ -216,7 +216,7 @@ void main() {
       expect(player, isNotNull);
       expect(player.playerId, 'player_001');
       expect(player.commonName, 'Neymar');
-      expect(player.fifaCode, 'BRA');
+      expect(player.teamCode, 'BRA');
     });
 
     test('filters players by position', () async {
@@ -270,7 +270,7 @@ void main() {
 
       final snapshot = await fakeFirestore
           .collection('players')
-          .where('fifaCode', isEqualTo: 'XYZ')
+          .where('teamCode', isEqualTo: 'XYZ')
           .get();
       final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
 

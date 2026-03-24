@@ -52,7 +52,7 @@ All user-facing display strings updated across English, Spanish, French, and Por
 |-----|---------|---------|--------|------------|
 | `fifaWorldCup` | "World Cup" | "Copa Mundial" | "Coupe du Monde" | "Copa do Mundo" |
 | `fifaWorldCup2026` | "World Cup 2026" | "Copa del Mundo 2026" | "Coupe du Monde 2026" | "Copa do Mundo 2026" |
-| `fifaCode` | "Country Code" | "Codigo de Pais" | "Code Pays" | "Codigo do Pais" |
+| `teamCode` | "Country Code" | "Codigo de Pais" | "Code Pays" | "Codigo do Pais" |
 | `fifaRanking` | **Unchanged** | **Unchanged** | **Unchanged** | **Unchanged** |
 
 Localization files regenerated via `flutter gen-l10n` after edits.
@@ -158,7 +158,7 @@ The following FIFA references remain in the codebase and are **not** user-facing
 
 1. **"FIFA Ranking" / "Ranking FIFA" / "Classement FIFA"** — Display text for the official FIFA ranking metric. This is the universally recognized name for the ranking system, similar to how "ATP Ranking" is used in tennis or "Elo Rating" in chess. Removing it would confuse users.
 
-2. **Internal variable names** — `fifaCode`, `fifaRanking`, `fifaToIsoCode`, etc. These are Dart field names and Firestore document keys that are never displayed to users.
+2. **Internal variable names** — `teamCode`, `fifaRanking`, `fifaToIsoCode`, etc. These are Dart field names and Firestore document keys that are never displayed to users.
 
 3. **API identifiers** — `fifa.world` (ESPN API slug), `FIFA_WORLDCUP_2026` (competition ID). These are external API parameters required for data fetching.
 

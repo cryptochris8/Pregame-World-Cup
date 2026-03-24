@@ -131,7 +131,7 @@ void main() {
     test('getTeamData loads team squad', () async {
       final team = await kb.getTeamData('usa');
       expect(team, isNotNull);
-      expect(team!['fifaCode'], 'USA');
+      expect(team!['teamCode'], 'USA');
       expect(team['players'], isA<List>());
       expect((team['players'] as List).length, 2);
     });

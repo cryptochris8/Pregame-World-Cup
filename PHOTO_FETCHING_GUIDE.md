@@ -81,8 +81,8 @@ npm install
    ```
 
 2. Verify your Firestore collections exist:
-   - `players` collection with fields: `fullName`, `commonName`, `fifaCode`, `photoUrl`
-   - `managers` collection with fields: `fullName`, `fifaCode`, `photoUrl`
+   - `players` collection with fields: `fullName`, `commonName`, `teamCode`, `photoUrl`
+   - `managers` collection with fields: `fullName`, `teamCode`, `photoUrl`
 
 ---
 
@@ -322,7 +322,7 @@ class PhotoFetcher {
     name: string,
     entityType: 'player' | 'manager',
     entityId: string,
-    fifaCode: string,
+    teamCode: string,
     alternativeNames?: string[],
     existingPhotoUrl?: string
   ): Promise<{success: boolean; photoUrl?: string; source?: string; error?: string}>
@@ -359,7 +359,7 @@ class FirebaseStorageService {
     imageBuffer: Buffer,
     entityType: 'player' | 'manager',
     entityId: string,
-    fifaCode: string,
+    teamCode: string,
     metadata?: {[key: string]: string}
   ): Promise<UploadResult>
 }
@@ -417,7 +417,7 @@ players/
   player_id/
     fullName: string
     commonName: string
-    fifaCode: string
+    teamCode: string
     photoUrl: string                          // Updated by script
     photoSource: string                       // 'TheSportsDB' | 'Wikipedia' (added by v2)
     photoUpdatedAt: timestamp                 // Server timestamp (added by v2)
@@ -430,7 +430,7 @@ players/
 managers/
   manager_id/
     fullName: string
-    fifaCode: string
+    teamCode: string
     photoUrl: string                          // Updated by script
     photoSource: string                       // 'TheSportsDB' | 'Wikipedia' (added by v2)
     photoUpdatedAt: timestamp                 // Server timestamp (added by v2)
@@ -456,7 +456,7 @@ gs://pregame-b089e.firebasestorage.app/
 │   └── ...
 ```
 
-**Naming Convention**: `{entityType}s/{fifaCode}_{entityId}.jpg`
+**Naming Convention**: `{entityType}s/{teamCode}_{entityId}.jpg`
 
 **Metadata Stored**:
 - `contentType: image/jpeg`

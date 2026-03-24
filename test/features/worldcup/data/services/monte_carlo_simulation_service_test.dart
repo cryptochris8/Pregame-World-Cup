@@ -128,10 +128,10 @@ void main() {
 
     test('Elo ratings are in reasonable range', () {
       for (final team in WorldCupMockData.teams) {
-        final elo = service.getEloRating(team.fifaCode);
-        expect(elo, isNotNull, reason: '${team.fifaCode} should have an Elo rating');
-        expect(elo!, greaterThan(1000), reason: '${team.fifaCode} Elo too low');
-        expect(elo, lessThan(2300), reason: '${team.fifaCode} Elo too high');
+        final elo = service.getEloRating(team.teamCode);
+        expect(elo, isNotNull, reason: '${team.teamCode} should have an Elo rating');
+        expect(elo!, greaterThan(1000), reason: '${team.teamCode} Elo too low');
+        expect(elo, lessThan(2300), reason: '${team.teamCode} Elo too high');
       }
     });
 
@@ -558,8 +558,8 @@ void main() {
 
       // Every team should have results
       for (final team in WorldCupMockData.teams) {
-        expect(result.teamResults.containsKey(team.fifaCode), isTrue,
-            reason: '${team.fifaCode} should appear in results');
+        expect(result.teamResults.containsKey(team.teamCode), isTrue,
+            reason: '${team.teamCode} should appear in results');
       }
     });
 
@@ -611,12 +611,12 @@ void main() {
 // ---------------------------------------------------------------------------
 NationalTeam _team(String code, String name, String group, int ranking) {
   return NationalTeam(
-    fifaCode: code,
+    teamCode: code,
     countryName: name,
     shortName: name,
     flagUrl: '',
     confederation: Confederation.uefa,
-    fifaRanking: ranking,
+    worldRanking: ranking,
     group: group,
     isQualified: true,
   );

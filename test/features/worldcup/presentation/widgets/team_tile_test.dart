@@ -8,9 +8,9 @@ void main() {
   group('TeamTile', () {
     testWidgets('renders team information', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'USA',
+        teamCode: 'USA',
         countryName: 'United States',
-        fifaRanking: 11,
+        worldRanking: 11,
       );
 
       await tester.pumpWidget(
@@ -26,9 +26,9 @@ void main() {
 
     testWidgets('shows FIFA ranking', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'BRA',
+        teamCode: 'BRA',
         countryName: 'Brazil',
-        fifaRanking: 1,
+        worldRanking: 1,
       );
 
       await tester.pumpWidget(
@@ -44,7 +44,7 @@ void main() {
 
     testWidgets('shows group assignment', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'GER',
+        teamCode: 'GER',
         countryName: 'Germany',
         group: 'C',
       );
@@ -62,7 +62,7 @@ void main() {
 
     testWidgets('shows host nation badge', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'USA',
+        teamCode: 'USA',
         countryName: 'United States',
         isHostNation: true,
       );
@@ -101,7 +101,7 @@ void main() {
 
     testWidgets('shows World Cup titles', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'BRA',
+        teamCode: 'BRA',
         countryName: 'Brazil',
         worldCupTitles: 5,
       );
@@ -180,7 +180,7 @@ void main() {
   group('TeamCard', () {
     testWidgets('renders in card format', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'ARG',
+        teamCode: 'ARG',
         countryName: 'Argentina',
         shortName: 'Argentina',
       );
@@ -272,7 +272,7 @@ void main() {
   group('TeamChip', () {
     testWidgets('renders team code', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'USA',
+        teamCode: 'USA',
         countryName: 'United States',
       );
 
@@ -289,7 +289,7 @@ void main() {
 
     testWidgets('shows selected state', (tester) async {
       final team = TestDataFactory.createTeam(
-        fifaCode: 'BRA',
+        teamCode: 'BRA',
         countryName: 'Brazil',
       );
 

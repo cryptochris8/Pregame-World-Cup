@@ -1,8 +1,8 @@
 /**
  * Fix Match Times Script
  *
- * Updates all World Cup 2026 match times to official FIFA schedule.
- * Times confirmed from FIFA press releases and ESPN.
+ * Updates all World Cup 2026 match times to official tournament schedule.
+ * Times confirmed from official press releases and ESPN.
  *
  * Time zones in June/July (Daylight Saving Time):
  * - Mexico City, Guadalajara, Monterrey, Houston, Dallas, Kansas City: CDT (UTC-5)
@@ -57,7 +57,7 @@ const TIMEZONES: Record<string, number> = {
   'Vancouver': -7,
 };
 
-// Official match times from FIFA (local times)
+// Official match times (local times)
 // Format: [matchNumber, date, localTime, city]
 const OFFICIAL_TIMES: [number, string, string, string][] = [
   // === JUNE 11 (Day 1) ===

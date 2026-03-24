@@ -341,7 +341,7 @@ void main() {
       final result = await dataSource.getCachedTeam('USA');
 
       expect(result, isNotNull);
-      expect(result!.fifaCode, 'USA');
+      expect(result!.teamCode, 'USA');
     });
 
     test('is case insensitive', () async {

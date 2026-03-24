@@ -1,5 +1,5 @@
 /// Service to map team display names to SportsData.io API keys
-/// Maps FIFA World Cup 2026 national team names to their API identifiers
+/// Maps World Cup 2026 national team names to their API identifiers
 class TeamMappingService {
   static final Map<String, String> _teamMapping = {
     // Group A

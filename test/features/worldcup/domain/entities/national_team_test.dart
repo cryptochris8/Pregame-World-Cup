@@ -42,13 +42,13 @@ void main() {
 
   group('NationalTeam', () {
     NationalTeam createTestTeam({
-      String fifaCode = 'USA',
+      String teamCode = 'USA',
       String countryName = 'United States',
       String shortName = 'USA',
       String flagUrl = 'https://example.com/flags/usa.png',
       String? federationLogoUrl,
       Confederation confederation = Confederation.concacaf,
-      int? fifaRanking = 11,
+      int? worldRanking = 11,
       String? coachName,
       String? primaryColor,
       String? secondaryColor,
@@ -66,13 +66,13 @@ void main() {
       DateTime? updatedAt,
     }) {
       return NationalTeam(
-        fifaCode: fifaCode,
+        teamCode: teamCode,
         countryName: countryName,
         shortName: shortName,
         flagUrl: flagUrl,
         federationLogoUrl: federationLogoUrl,
         confederation: confederation,
-        fifaRanking: fifaRanking,
+        worldRanking: worldRanking,
         coachName: coachName,
         primaryColor: primaryColor,
         secondaryColor: secondaryColor,
@@ -95,12 +95,12 @@ void main() {
       test('creates team with required fields', () {
         final team = createTestTeam();
 
-        expect(team.fifaCode, equals('USA'));
+        expect(team.teamCode, equals('USA'));
         expect(team.countryName, equals('United States'));
         expect(team.shortName, equals('USA'));
         expect(team.flagUrl, equals('https://example.com/flags/usa.png'));
         expect(team.confederation, equals(Confederation.concacaf));
-        expect(team.fifaRanking, equals(11));
+        expect(team.worldRanking, equals(11));
         expect(team.isHostNation, isTrue);
         expect(team.isQualified, isTrue);
       });
@@ -138,31 +138,31 @@ void main() {
 
       test('creates teams with different confederations', () {
         final uefaTeam = createTestTeam(
-          fifaCode: 'FRA',
+          teamCode: 'FRA',
           countryName: 'France',
           shortName: 'France',
           confederation: Confederation.uefa,
         );
         final conmebolTeam = createTestTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           countryName: 'Argentina',
           shortName: 'Argentina',
           confederation: Confederation.conmebol,
         );
         final afcTeam = createTestTeam(
-          fifaCode: 'JPN',
+          teamCode: 'JPN',
           countryName: 'Japan',
           shortName: 'Japan',
           confederation: Confederation.afc,
         );
         final cafTeam = createTestTeam(
-          fifaCode: 'MAR',
+          teamCode: 'MAR',
           countryName: 'Morocco',
           shortName: 'Morocco',
           confederation: Confederation.caf,
         );
         final ofcTeam = createTestTeam(
-          fifaCode: 'NZL',
+          teamCode: 'NZL',
           countryName: 'New Zealand',
           shortName: 'New Zealand',
           confederation: Confederation.ofc,
@@ -177,7 +177,7 @@ void main() {
 
       test('creates team with default values', () {
         const team = NationalTeam(
-          fifaCode: 'TST',
+          teamCode: 'TST',
           countryName: 'Test Country',
           shortName: 'Test',
           flagUrl: 'https://example.com/flag.png',
@@ -194,8 +194,8 @@ void main() {
 
     group('flagEmoji', () {
       test('returns correct emoji for standard country codes', () {
-        final brazil = createTestTeam(fifaCode: 'BRA', countryName: 'Brazil', shortName: 'Brazil');
-        final argentina = createTestTeam(fifaCode: 'ARG', countryName: 'Argentina', shortName: 'Argentina');
+        final brazil = createTestTeam(teamCode: 'BRA', countryName: 'Brazil', shortName: 'Brazil');
+        final argentina = createTestTeam(teamCode: 'ARG', countryName: 'Argentina', shortName: 'Argentina');
 
         // Brazil: BRA -> BR (standard, uses first 2 letters)
         expect(brazil.flagEmoji, equals('🇧🇷'));
@@ -204,11 +204,11 @@ void main() {
       });
 
       test('handles special FIFA code mappings', () {
-        final usa = createTestTeam(fifaCode: 'USA', countryName: 'United States', shortName: 'USA');
-        final germany = createTestTeam(fifaCode: 'GER', countryName: 'Germany', shortName: 'Germany');
-        final netherlands = createTestTeam(fifaCode: 'NED', countryName: 'Netherlands', shortName: 'Netherlands');
-        final switzerland = createTestTeam(fifaCode: 'SUI', countryName: 'Switzerland', shortName: 'Switzerland');
-        final portugal = createTestTeam(fifaCode: 'POR', countryName: 'Portugal', shortName: 'Portugal');
+        final usa = createTestTeam(teamCode: 'USA', countryName: 'United States', shortName: 'USA');
+        final germany = createTestTeam(teamCode: 'GER', countryName: 'Germany', shortName: 'Germany');
+        final netherlands = createTestTeam(teamCode: 'NED', countryName: 'Netherlands', shortName: 'Netherlands');
+        final switzerland = createTestTeam(teamCode: 'SUI', countryName: 'Switzerland', shortName: 'Switzerland');
+        final portugal = createTestTeam(teamCode: 'POR', countryName: 'Portugal', shortName: 'Portugal');
 
         expect(usa.flagEmoji, equals('🇺🇸'));
         expect(germany.flagEmoji, equals('🇩🇪'));
@@ -218,8 +218,8 @@ void main() {
       });
 
       test('returns flag for host nations', () {
-        final usa = createTestTeam(fifaCode: 'USA', countryName: 'United States', shortName: 'USA');
-        final canada = createTestTeam(fifaCode: 'CAN', countryName: 'Canada', shortName: 'Canada');
+        final usa = createTestTeam(teamCode: 'USA', countryName: 'United States', shortName: 'USA');
+        final canada = createTestTeam(teamCode: 'CAN', countryName: 'Canada', shortName: 'Canada');
 
         expect(usa.flagEmoji, equals('🇺🇸'));
         expect(canada.flagEmoji, equals('🇨🇦'));
@@ -227,10 +227,10 @@ void main() {
       });
 
       test('handles Asian countries', () {
-        final japan = createTestTeam(fifaCode: 'JPN', countryName: 'Japan', shortName: 'Japan');
-        final korea = createTestTeam(fifaCode: 'KOR', countryName: 'South Korea', shortName: 'Korea');
-        final iran = createTestTeam(fifaCode: 'IRN', countryName: 'Iran', shortName: 'Iran');
-        final saudiArabia = createTestTeam(fifaCode: 'KSA', countryName: 'Saudi Arabia', shortName: 'Saudi Arabia');
+        final japan = createTestTeam(teamCode: 'JPN', countryName: 'Japan', shortName: 'Japan');
+        final korea = createTestTeam(teamCode: 'KOR', countryName: 'South Korea', shortName: 'Korea');
+        final iran = createTestTeam(teamCode: 'IRN', countryName: 'Iran', shortName: 'Iran');
+        final saudiArabia = createTestTeam(teamCode: 'KSA', countryName: 'Saudi Arabia', shortName: 'Saudi Arabia');
 
         expect(japan.flagEmoji, equals('🇯🇵'));
         expect(korea.flagEmoji, equals('🇰🇷'));
@@ -239,9 +239,9 @@ void main() {
       });
 
       test('handles South American countries', () {
-        final uruguay = createTestTeam(fifaCode: 'URU', countryName: 'Uruguay', shortName: 'Uruguay');
-        final colombia = createTestTeam(fifaCode: 'COL', countryName: 'Colombia', shortName: 'Colombia');
-        final chile = createTestTeam(fifaCode: 'CHI', countryName: 'Chile', shortName: 'Chile');
+        final uruguay = createTestTeam(teamCode: 'URU', countryName: 'Uruguay', shortName: 'Uruguay');
+        final colombia = createTestTeam(teamCode: 'COL', countryName: 'Colombia', shortName: 'Colombia');
+        final chile = createTestTeam(teamCode: 'CHI', countryName: 'Chile', shortName: 'Chile');
 
         expect(uruguay.flagEmoji, equals('🇺🇾'));
         expect(colombia.flagEmoji, equals('🇨🇴'));
@@ -249,10 +249,10 @@ void main() {
       });
 
       test('handles African countries', () {
-        final morocco = createTestTeam(fifaCode: 'MAR', countryName: 'Morocco', shortName: 'Morocco');
-        final nigeria = createTestTeam(fifaCode: 'NGA', countryName: 'Nigeria', shortName: 'Nigeria');
-        final senegal = createTestTeam(fifaCode: 'SEN', countryName: 'Senegal', shortName: 'Senegal');
-        final cameroon = createTestTeam(fifaCode: 'CMR', countryName: 'Cameroon', shortName: 'Cameroon');
+        final morocco = createTestTeam(teamCode: 'MAR', countryName: 'Morocco', shortName: 'Morocco');
+        final nigeria = createTestTeam(teamCode: 'NGA', countryName: 'Nigeria', shortName: 'Nigeria');
+        final senegal = createTestTeam(teamCode: 'SEN', countryName: 'Senegal', shortName: 'Senegal');
+        final cameroon = createTestTeam(teamCode: 'CMR', countryName: 'Cameroon', shortName: 'Cameroon');
 
         expect(morocco.flagEmoji, equals('🇲🇦'));
         expect(nigeria.flagEmoji, equals('🇳🇬'));
@@ -265,15 +265,15 @@ void main() {
       test('copies with updated fields', () {
         final original = createTestTeam();
         final updated = original.copyWith(
-          fifaRanking: 5,
+          worldRanking: 5,
           isQualified: true,
           group: 'B',
         );
 
-        expect(updated.fifaRanking, equals(5));
+        expect(updated.worldRanking, equals(5));
         expect(updated.isQualified, isTrue);
         expect(updated.group, equals('B'));
-        expect(updated.fifaCode, equals(original.fifaCode));
+        expect(updated.teamCode, equals(original.teamCode));
       });
 
       test('preserves unchanged fields', () {
@@ -282,7 +282,7 @@ void main() {
           coachName: 'Coach Name',
           starPlayers: ['Player 1', 'Player 2'],
         );
-        final updated = original.copyWith(fifaRanking: 10);
+        final updated = original.copyWith(worldRanking: 10);
 
         expect(updated.nickname, equals('USMNT'));
         expect(updated.coachName, equals('Coach Name'));
@@ -293,13 +293,13 @@ void main() {
         final original = createTestTeam();
         final newTime = DateTime.now();
         final updated = original.copyWith(
-          fifaCode: 'NEW',
+          teamCode: 'NEW',
           countryName: 'New Country',
           shortName: 'New',
           flagUrl: 'https://new.com/flag.png',
           federationLogoUrl: 'https://new.com/logo.png',
           confederation: Confederation.uefa,
-          fifaRanking: 1,
+          worldRanking: 1,
           coachName: 'New Coach',
           primaryColor: '#FF0000',
           secondaryColor: '#0000FF',
@@ -317,7 +317,7 @@ void main() {
           updatedAt: newTime,
         );
 
-        expect(updated.fifaCode, equals('NEW'));
+        expect(updated.teamCode, equals('NEW'));
         expect(updated.countryName, equals('New Country'));
         expect(updated.worldCupTitles, equals(5));
         expect(updated.bestFinish, equals('Winner'));
@@ -334,11 +334,11 @@ void main() {
         );
         final map = team.toMap();
 
-        expect(map['fifaCode'], equals('USA'));
+        expect(map['teamCode'], equals('USA'));
         expect(map['countryName'], equals('United States'));
         expect(map['shortName'], equals('USA'));
         expect(map['confederation'], equals('concacaf'));
-        expect(map['fifaRanking'], equals(11));
+        expect(map['worldRanking'], equals(11));
         expect(map['group'], equals('A'));
         expect(map['worldCupAppearances'], equals(11));
         expect(map['worldCupTitles'], equals(0));
@@ -350,12 +350,12 @@ void main() {
 
       test('fromMap deserializes correctly', () {
         final map = {
-          'fifaCode': 'FRA',
+          'teamCode': 'FRA',
           'countryName': 'France',
           'shortName': 'France',
           'flagUrl': 'https://example.com/france.png',
           'confederation': 'uefa',
-          'fifaRanking': 2,
+          'worldRanking': 2,
           'group': 'D',
           'worldCupAppearances': 16,
           'worldCupTitles': 2,
@@ -369,10 +369,10 @@ void main() {
 
         final team = NationalTeam.fromMap(map);
 
-        expect(team.fifaCode, equals('FRA'));
+        expect(team.teamCode, equals('FRA'));
         expect(team.countryName, equals('France'));
         expect(team.confederation, equals(Confederation.uefa));
-        expect(team.fifaRanking, equals(2));
+        expect(team.worldRanking, equals(2));
         expect(team.worldCupTitles, equals(2));
         expect(team.nickname, equals('Les Bleus'));
         expect(team.starPlayers, equals(['Mbappe', 'Griezmann']));
@@ -380,7 +380,7 @@ void main() {
 
       test('fromMap handles missing optional fields', () {
         final map = {
-          'fifaCode': 'TST',
+          'teamCode': 'TST',
           'countryName': 'Test Country',
           'shortName': 'Test',
           'flagUrl': '',
@@ -394,7 +394,7 @@ void main() {
         expect(team.nickname, isNull);
         expect(team.coachName, isNull);
         expect(team.starPlayers, isEmpty);
-        expect(team.fifaRanking, isNull);
+        expect(team.worldRanking, isNull);
         expect(team.isHostNation, isFalse);
         expect(team.isQualified, isFalse);
       });
@@ -409,7 +409,7 @@ void main() {
         final map = original.toMap();
         final restored = NationalTeam.fromMap(map);
 
-        expect(restored.fifaCode, equals(original.fifaCode));
+        expect(restored.teamCode, equals(original.teamCode));
         expect(restored.countryName, equals(original.countryName));
         expect(restored.confederation, equals(original.confederation));
         expect(restored.group, equals(original.group));
@@ -427,7 +427,7 @@ void main() {
         );
         final data = team.toFirestore();
 
-        expect(data['fifaCode'], equals('USA'));
+        expect(data['teamCode'], equals('USA'));
         expect(data['countryName'], equals('United States'));
         expect(data['confederation'], equals('concacaf'));
         expect(data['isHostNation'], isTrue);
@@ -436,12 +436,12 @@ void main() {
 
       test('fromFirestore deserializes correctly', () {
         final data = {
-          'fifaCode': 'ARG',
+          'teamCode': 'ARG',
           'countryName': 'Argentina',
           'shortName': 'Argentina',
           'flagUrl': 'https://example.com/argentina.png',
           'confederation': 'conmebol',
-          'fifaRanking': 1,
+          'worldRanking': 1,
           'group': 'C',
           'worldCupAppearances': 18,
           'worldCupTitles': 3,
@@ -455,14 +455,14 @@ void main() {
 
         final team = NationalTeam.fromFirestore(data, 'ARG');
 
-        expect(team.fifaCode, equals('ARG'));
+        expect(team.teamCode, equals('ARG'));
         expect(team.countryName, equals('Argentina'));
         expect(team.confederation, equals(Confederation.conmebol));
         expect(team.worldCupTitles, equals(3));
         expect(team.nickname, equals('La Albiceleste'));
       });
 
-      test('fromFirestore uses docId as fallback fifaCode', () {
+      test('fromFirestore uses docId as fallback teamCode', () {
         final data = {
           'countryName': 'Test',
           'shortName': 'Test',
@@ -471,12 +471,12 @@ void main() {
         };
 
         final team = NationalTeam.fromFirestore(data, 'TST');
-        expect(team.fifaCode, equals('TST'));
+        expect(team.teamCode, equals('TST'));
       });
 
       test('fromFirestore handles missing optional fields', () {
         final data = {
-          'fifaCode': 'NEW',
+          'teamCode': 'NEW',
           'countryName': 'New Team',
           'shortName': 'New',
           'flagUrl': '',
@@ -506,12 +506,12 @@ void main() {
 
         final team = NationalTeam.fromApi(apiData);
 
-        expect(team.fifaCode, equals('BRA'));
+        expect(team.teamCode, equals('BRA'));
         expect(team.countryName, equals('Brazil'));
         expect(team.shortName, equals('Brazil'));
         expect(team.flagUrl, equals('https://wikipedia.org/brazil.png'));
         expect(team.confederation, equals(Confederation.conmebol));
-        expect(team.fifaRanking, equals(5));
+        expect(team.worldRanking, equals(5));
         expect(team.isQualified, isTrue);
       });
 
@@ -524,7 +524,7 @@ void main() {
 
         final team = NationalTeam.fromApi(apiData);
 
-        expect(team.fifaCode, equals('123'));
+        expect(team.teamCode, equals('123'));
         expect(team.countryName, equals('Germany'));
         expect(team.shortName, equals('Germany'));
         expect(team.confederation, equals(Confederation.uefa));
@@ -589,7 +589,7 @@ void main() {
 
         for (final entry in testCases.entries) {
           final map = {
-            'fifaCode': 'TST',
+            'teamCode': 'TST',
             'countryName': 'Test',
             'shortName': 'Test',
             'flagUrl': '',
@@ -603,7 +603,7 @@ void main() {
 
       test('defaults to uefa for unknown confederation', () {
         final map = {
-          'fifaCode': 'TST',
+          'teamCode': 'TST',
           'countryName': 'Test',
           'shortName': 'Test',
           'flagUrl': '',
@@ -615,7 +615,7 @@ void main() {
 
       test('defaults to uefa for null confederation', () {
         final map = {
-          'fifaCode': 'TST',
+          'teamCode': 'TST',
           'countryName': 'Test',
           'shortName': 'Test',
           'flagUrl': '',
@@ -634,16 +634,16 @@ void main() {
         expect(team1, equals(team2));
       });
 
-      test('two teams with different fifaCode are not equal', () {
-        final team1 = createTestTeam(fifaCode: 'USA');
-        final team2 = createTestTeam(fifaCode: 'MEX');
+      test('two teams with different teamCode are not equal', () {
+        final team1 = createTestTeam(teamCode: 'USA');
+        final team2 = createTestTeam(teamCode: 'MEX');
 
         expect(team1, isNot(equals(team2)));
       });
 
       test('two teams with different ranking are not equal', () {
-        final team1 = createTestTeam(fifaRanking: 1);
-        final team2 = createTestTeam(fifaRanking: 2);
+        final team1 = createTestTeam(worldRanking: 1);
+        final team2 = createTestTeam(worldRanking: 2);
 
         expect(team1, isNot(equals(team2)));
       });
@@ -651,11 +651,11 @@ void main() {
       test('props contains expected fields', () {
         final team = createTestTeam();
         expect(team.props, hasLength(8));
-        expect(team.props, contains(team.fifaCode));
+        expect(team.props, contains(team.teamCode));
         expect(team.props, contains(team.countryName));
         expect(team.props, contains(team.shortName));
         expect(team.props, contains(team.confederation));
-        expect(team.props, contains(team.fifaRanking));
+        expect(team.props, contains(team.worldRanking));
         expect(team.props, contains(team.group));
         expect(team.props, contains(team.isQualified));
       });
@@ -664,7 +664,7 @@ void main() {
     group('toString', () {
       test('returns formatted string', () {
         final team = createTestTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
         );
         expect(team.toString(), equals('Argentina (ARG)'));

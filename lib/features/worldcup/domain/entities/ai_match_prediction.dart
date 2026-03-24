@@ -281,7 +281,7 @@ class AIMatchPrediction extends Equatable {
     );
   }
 
-  /// Create a fallback prediction based on FIFA rankings
+  /// Create a fallback prediction based on world rankings
   factory AIMatchPrediction.fallback({
     required String matchId,
     required String homeTeamName,

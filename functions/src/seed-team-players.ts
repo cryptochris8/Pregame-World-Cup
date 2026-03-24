@@ -67,10 +67,10 @@ function buildPlayersDoc(team: any, player: any, index: number) {
   const pos = player.position;
   const age = calculateAge(player.dateOfBirth);
   return {
-    id: `${team.fifaCode.toLowerCase()}_${index + 1}`,
+    id: `${team.teamCode.toLowerCase()}_${index + 1}`,
     data: {
-      playerId: `${team.fifaCode.toLowerCase()}_${index + 1}`,
-      fifaCode: team.fifaCode,
+      playerId: `${team.teamCode.toLowerCase()}_${index + 1}`,
+      teamCode: team.teamCode,
       firstName: player.firstName,
       lastName: player.lastName,
       fullName: `${player.firstName} ${player.lastName}`,
@@ -124,10 +124,10 @@ function buildWorldcupPlayersDoc(team: any, player: any) {
   const age = calculateAge(player.dateOfBirth);
   const now = new Date().toISOString();
   return {
-    id: `${team.fifaCode.toLowerCase()}_${player.jerseyNumber}`,
+    id: `${team.teamCode.toLowerCase()}_${player.jerseyNumber}`,
     data: {
-      playerId: `${team.fifaCode.toLowerCase()}_${player.jerseyNumber}`,
-      teamCode: team.fifaCode,
+      playerId: `${team.teamCode.toLowerCase()}_${player.jerseyNumber}`,
+      teamCode: team.teamCode,
       teamName: team.countryName,
       firstName: player.firstName,
       lastName: player.lastName,
@@ -160,7 +160,7 @@ async function main() {
   const db = initFirebase();
 
   let teams: any[] = readJsonDir(TEAMS_DIR);
-  if (team) teams = teams.filter((t: any) => t.fifaCode === team);
+  if (team) teams = teams.filter((t: any) => t.teamCode === team);
 
   if (teams.length === 0) {
     console.log(`No teams found${team ? ` matching --team=${team}` : ""}`);
@@ -178,7 +178,7 @@ async function main() {
   const wcPlayersDocs: { id: string; data: Record<string, any> }[] = [];
 
   for (const t of teams) {
-    if (verbose) console.log(`  ${t.fifaCode} - ${t.countryName} (${t.players.length} players)`);
+    if (verbose) console.log(`  ${t.teamCode} - ${t.countryName} (${t.players.length} players)`);
     t.players.forEach((p: any, i: number) => {
       playersDocs.push(buildPlayersDoc(t, p, i));
       wcPlayersDocs.push(buildWorldcupPlayersDoc(t, p));

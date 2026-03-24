@@ -57,7 +57,7 @@ class PredictionFormEvaluator {
     return (totalWeighted / totalWeight) / 2.0;
   }
 
-  /// Estimate FIFA ranking for an opponent by name.
+  /// Estimate world ranking for an opponent by name.
   /// Uses a lookup of approximate rankings for all known opponents.
   /// Returns 100 as default for truly unknown opponents.
   static int estimateOpponentRank(String? opponentName) {
@@ -65,7 +65,7 @@ class PredictionFormEvaluator {
     return opponentRankings[opponentName] ?? 100;
   }
 
-  /// Compute opponent quality weight from estimated FIFA ranking.
+  /// Compute opponent quality weight from estimated world ranking.
   /// Range: 0.5 (rank 200+) to 2.0 (rank ~1).
   static double opponentQualityWeight(int rank) {
     return ((200 - rank) / 100.0).clamp(0.5, 2.0);

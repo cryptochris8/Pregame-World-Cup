@@ -32,7 +32,7 @@ class FakeWorldCupMatch extends Fake implements WorldCupMatch {
 
 class FakeNationalTeam extends Fake implements NationalTeam {
   @override
-  int? get fifaRanking => 50;
+  int? get worldRanking => 50;
 }
 
 // Test Data Helpers
@@ -94,17 +94,17 @@ void main() {
   );
 
   final testHomeTeam = TestDataFactory.createTeam(
-    fifaCode: 'USA',
+    teamCode: 'USA',
     countryName: 'United States',
     shortName: 'USA',
-    fifaRanking: 10,
+    worldRanking: 10,
   );
 
   final testAwayTeam = TestDataFactory.createTeam(
-    fifaCode: 'MEX',
+    teamCode: 'MEX',
     countryName: 'Mexico',
     shortName: 'Mexico',
-    fifaRanking: 15,
+    worldRanking: 15,
   );
 
   setUpAll(() {

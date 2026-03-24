@@ -44,7 +44,7 @@ class PlayerService {
             .map((doc) => Player.fromFirestore(doc))
             .toList();
         players.sort((a, b) {
-          final codeCompare = a.fifaCode.compareTo(b.fifaCode);
+          final codeCompare = a.teamCode.compareTo(b.teamCode);
           if (codeCompare != 0) return codeCompare;
           return a.jerseyNumber.compareTo(b.jerseyNumber);
         });
@@ -68,7 +68,7 @@ class PlayerService {
 
         // Sort locally
         players.sort((a, b) {
-          final codeCompare = a.fifaCode.compareTo(b.fifaCode);
+          final codeCompare = a.teamCode.compareTo(b.teamCode);
           if (codeCompare != 0) return codeCompare;
           return a.jerseyNumber.compareTo(b.jerseyNumber);
         });
@@ -84,9 +84,9 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
 
-      // Sort locally by fifaCode then jerseyNumber (no index required)
+      // Sort locally by teamCode then jerseyNumber (no index required)
       players.sort((a, b) {
-        final codeCompare = a.fifaCode.compareTo(b.fifaCode);
+        final codeCompare = a.teamCode.compareTo(b.teamCode);
         if (codeCompare != 0) return codeCompare;
         return a.jerseyNumber.compareTo(b.jerseyNumber);
       });
@@ -118,13 +118,13 @@ class PlayerService {
     _cacheTimestamp = null;
   }
 
-  /// Get players by team (FIFA code)
+  /// Get players by team (team code)
   /// Returns 26 players per team
-  Future<List<Player>> getPlayersByTeam(String fifaCode) async {
+  Future<List<Player>> getPlayersByTeam(String teamCode) async {
     try {
       final QuerySnapshot snapshot = await _firestore
           .collection(_collectionName)
-          .where('fifaCode', isEqualTo: fifaCode)
+          .where('teamCode', isEqualTo: teamCode)
           .get();
 
       final players = snapshot.docs
@@ -136,7 +136,7 @@ class PlayerService {
 
       return players;
     } catch (e) {
-      LoggingService.error('Failed to get players by team $fifaCode: $e', tag: _logTag);
+      LoggingService.error('Failed to get players by team $teamCode: $e', tag: _logTag);
       return [];
     }
   }
@@ -464,7 +464,7 @@ class PlayerService {
   Stream<List<Player>> streamAllPlayers() {
     return _firestore
         .collection(_collectionName)
-        .orderBy('fifaCode')
+        .orderBy('teamCode')
         .orderBy('jerseyNumber')
         .limit(500) // Cap unbounded stream; tournament has ~260 players
         .snapshots()
@@ -474,10 +474,10 @@ class PlayerService {
   }
 
   /// Stream players by team (real-time updates)
-  Stream<List<Player>> streamPlayersByTeam(String fifaCode) {
+  Stream<List<Player>> streamPlayersByTeam(String teamCode) {
     return _firestore
         .collection(_collectionName)
-        .where('fifaCode', isEqualTo: fifaCode)
+        .where('teamCode', isEqualTo: teamCode)
         .orderBy('jerseyNumber')
         .snapshots()
         .map((snapshot) => snapshot.docs

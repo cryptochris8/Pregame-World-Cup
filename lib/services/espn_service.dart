@@ -9,7 +9,7 @@ import 'espn_analysis_service.dart';
 import 'espn_team_matcher.dart';
 
 /// ESPN Soccer service for World Cup 2026 game intelligence and venue recommendations.
-/// Uses ESPN's soccer API endpoints for FIFA World Cup data.
+/// Uses ESPN's soccer API endpoints for World Cup data.
 /// Primary match data comes from SportsData.io and Firebase;
 /// this service provides supplemental intelligence and analysis.
 ///
@@ -24,10 +24,10 @@ class ESPNService {
   //   usa.1 (MLS), eng.1 (EPL), etc.
   static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports/soccer';
 
-  /// ESPN league slug for FIFA World Cup 2026
+  /// ESPN league slug for World Cup 2026
   static const String _worldCupLeague = 'fifa.world';
 
-  /// ESPN league slug for FIFA World Cup Qualifiers
+  /// ESPN league slug for World Cup Qualifiers
   static const String _worldCupQualifiersLeague = 'fifa.worldq';
 
   final Dio _dio;
@@ -93,7 +93,7 @@ class ESPNService {
   }
 
   /// Fetch raw game data from ESPN Soccer API.
-  /// Uses the FIFA World Cup league endpoint for match summaries.
+  /// Uses the World Cup league endpoint for match summaries.
   Future<Map<String, dynamic>?> _fetchESPNGameData(String gameId) async {
     try {
       // ESPN soccer match summary endpoint

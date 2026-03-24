@@ -512,7 +512,7 @@ class WorldCupMockData {
     ),
   ];
 
-  // FIFA code to ISO country code mapping for flag URLs
+  // Team code to ISO country code mapping for flag URLs
   static const Map<String, String> _fifaToIsoCode = {
     // CONCACAF
     'USA': 'us', 'MEX': 'mx', 'CAN': 'ca', 'PAN': 'pa',
@@ -535,9 +535,9 @@ class WorldCupMockData {
     'NZL': 'nz',
   };
 
-  /// Get ISO country code from FIFA code for flag URL
-  static String _getIsoCode(String fifaCode) {
-    return _fifaToIsoCode[fifaCode] ?? fifaCode.toLowerCase();
+  /// Get ISO country code from team code for flag URL
+  static String _getIsoCode(String teamCode) {
+    return _fifaToIsoCode[teamCode] ?? teamCode.toLowerCase();
   }
 
   // Helper methods
@@ -561,12 +561,12 @@ class WorldCupMockData {
   }) {
     final isoCode = _getIsoCode(code);
     return NationalTeam(
-      fifaCode: code,
+      teamCode: code,
       countryName: name,
       shortName: shortName,
       flagUrl: 'https://flagcdn.com/w80/$isoCode.png',
       confederation: conf,
-      fifaRanking: ranking,
+      worldRanking: ranking,
       group: group,
       worldCupTitles: titles,
       isHostNation: isHost,
@@ -589,7 +589,7 @@ class WorldCupMockData {
   ) {
     final matches = <WorldCupMatch>[];
     final teams = teamCodes.map((code) =>
-      WorldCupMockData.teams.firstWhere((t) => t.fifaCode == code)
+      WorldCupMockData.teams.firstWhere((t) => t.teamCode == code)
     ).toList();
 
     // Group A: June 11, 15, 19 (Host nation Mexico)
@@ -646,10 +646,10 @@ class WorldCupMockData {
       stage: MatchStage.groupStage,
       group: group,
       groupMatchDay: matchDay,
-      homeTeamCode: home.fifaCode,
+      homeTeamCode: home.teamCode,
       homeTeamName: home.countryName,
       homeTeamFlagUrl: home.flagUrl,
-      awayTeamCode: away.fifaCode,
+      awayTeamCode: away.teamCode,
       awayTeamName: away.countryName,
       awayTeamFlagUrl: away.flagUrl,
       dateTime: dateTime,

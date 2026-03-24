@@ -522,11 +522,11 @@ abstract class AppLocalizations {
   /// **'Favorites'**
   String get favorites;
 
-  /// Title for FIFA World Cup
+  /// Title for World Cup
   ///
   /// In en, this message translates to:
   /// **'World Cup'**
-  String get fifaWorldCup;
+  String get worldCup;
 
   /// Label for live matches
   ///
@@ -1992,11 +1992,11 @@ abstract class AppLocalizations {
   /// **'Schedule'**
   String get schedule;
 
-  /// FIFA World Cup 2026 badge text
+  /// World Cup 2026 badge text
   ///
   /// In en, this message translates to:
   /// **'World Cup 2026'**
-  String get fifaWorldCup2026;
+  String get worldCup2026;
 
   /// Live ESPN data badge
   ///
@@ -2760,11 +2760,11 @@ abstract class AppLocalizations {
   /// **'Host Nation'**
   String get hostNation;
 
-  /// FIFA ranking stat label
+  /// World ranking stat label
   ///
   /// In en, this message translates to:
   /// **'World Ranking'**
-  String get fifaRanking;
+  String get worldRanking;
 
   /// World Cup titles stat label
   ///
@@ -2790,11 +2790,11 @@ abstract class AppLocalizations {
   /// **'Country'**
   String get country;
 
-  /// FIFA code label
+  /// Team code label
   ///
   /// In en, this message translates to:
   /// **'Country Code'**
-  String get fifaCode;
+  String get teamCode;
 
   /// Confederation label
   ///
@@ -7689,7 +7689,7 @@ abstract class AppLocalizations {
   /// Legal disclaimer shown on login and profile screens
   ///
   /// In en, this message translates to:
-  /// **'Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization.'**
+  /// **'Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by any official tournament organization.'**
   String get appDisclaimer;
 }
 

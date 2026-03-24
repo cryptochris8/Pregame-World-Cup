@@ -74,7 +74,7 @@
   "bracket": "Chaveamento",
   "teams": "Seleções",
   "favorites": "Favoritos",
-  "fifaWorldCup": "Copa do Mundo",
+  "worldCup": "Copa do Mundo",
   "live": "Ao Vivo",
   "liveCount": "{count} Ao Vivo",
   "noMatchesScheduledToday": "Nenhum jogo programado para hoje",
@@ -340,7 +340,7 @@
 
   "liveScores": "Placar Ao Vivo",
   "schedule": "Calendário",
-  "fifaWorldCup2026": "Copa do Mundo 2026",
+  "worldCup2026": "Copa do Mundo 2026",
   "liveEspnData": "DADOS ESPN AO VIVO",
   "showAllMatches": "Mostrar Todos os Jogos",
   "showFavoriteTeamsOnly": "Mostrar Apenas Times Favoritos",
@@ -474,12 +474,12 @@
   "showAllVenues": "Mostrar todos os {count} locais",
   "aiMatchAnalysisGate": "Obtenha análises de jogos com IA, perspectivas históricas e confrontos-chave com o Passe Superfã.",
   "hostNation": "País Sede",
-  "fifaRanking": "Ranking Mundial",
+  "worldRanking": "Ranking Mundial",
   "worldCupTitles": "Títulos Mundiais",
   "group": "Grupo",
   "teamInformation": "Informações da Seleção",
   "country": "País",
-  "fifaCode": "Código do País",
+  "teamCode": "Código do País",
   "confederation": "Confederação",
   "shortName": "Nome Curto",
   "worldCupHistory": "Histórico na Copa do Mundo",
@@ -1339,5 +1339,5 @@
   "verificationCode": "Código de Verificação",
   "digitCounter": "{count}/6 dígitos",
   "verifyCode": "Verificar Código",
-  "appDisclaimer": "Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado pela FIFA ou por qualquer organização oficial do torneio."
+  "appDisclaimer": "Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado por qualquer organização oficial do torneio."
 }

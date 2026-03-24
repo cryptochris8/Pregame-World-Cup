@@ -45,22 +45,22 @@ class TestDataFactory {
   }
 
   static NationalTeam createTeam({
-    String fifaCode = 'USA',
+    String teamCode = 'USA',
     String countryName = 'United States',
     String shortName = 'USA',
     Confederation confederation = Confederation.concacaf,
-    int? fifaRanking = 10,
+    int? worldRanking = 10,
     String? group = 'A',
     int worldCupTitles = 0,
     bool isHostNation = true,
   }) {
     return NationalTeam(
-      fifaCode: fifaCode,
+      teamCode: teamCode,
       countryName: countryName,
       shortName: shortName,
       flagUrl: '',
       confederation: confederation,
-      fifaRanking: fifaRanking,
+      worldRanking: worldRanking,
       group: group,
       worldCupTitles: worldCupTitles,
       isHostNation: isHostNation,
@@ -216,9 +216,9 @@ class TestDataFactory {
     ];
 
     return List.generate(count.clamp(0, codes.length), (i) => createTeam(
-      fifaCode: codes[i],
+      teamCode: codes[i],
       countryName: codes[i],
-      fifaRanking: i + 1,
+      worldRanking: i + 1,
       group: String.fromCharCode('A'.codeUnitAt(0) + (i ~/ 4)),
     ));
   }

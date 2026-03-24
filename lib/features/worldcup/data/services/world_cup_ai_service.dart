@@ -51,8 +51,8 @@ class WorldCupAIService {
         matchId: match.matchId,
         homeTeamName: match.homeTeamName,
         awayTeamName: match.awayTeamName,
-        homeRanking: homeTeam?.fifaRanking,
-        awayRanking: awayTeam?.fifaRanking,
+        homeRanking: homeTeam?.worldRanking,
+        awayRanking: awayTeam?.worldRanking,
       );
     }
   }
@@ -112,8 +112,8 @@ class WorldCupAIService {
     NationalTeam? homeTeam,
     NationalTeam? awayTeam,
   ) {
-    final homeRank = homeTeam?.fifaRanking ?? 50;
-    final awayRank = awayTeam?.fifaRanking ?? 50;
+    final homeRank = homeTeam?.worldRanking ?? 50;
+    final awayRank = awayTeam?.worldRanking ?? 50;
 
     if (homeRank < awayRank - 10) {
       return '${homeTeam?.shortName ?? match.homeTeamName} 2-1 (60%)';
@@ -129,8 +129,8 @@ class WorldCupAIService {
     NationalTeam? homeTeam,
     NationalTeam? awayTeam,
   ) {
-    final homeRank = homeTeam?.fifaRanking ?? 50;
-    final awayRank = awayTeam?.fifaRanking ?? 50;
+    final homeRank = homeTeam?.worldRanking ?? 50;
+    final awayRank = awayTeam?.worldRanking ?? 50;
 
     if (homeRank < awayRank) {
       return {

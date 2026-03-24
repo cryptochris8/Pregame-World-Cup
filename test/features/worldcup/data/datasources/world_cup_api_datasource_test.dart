@@ -395,8 +395,8 @@ void main() {
       final result = await dataSource.fetchAllTeams();
 
       expect(result.length, 2);
-      expect(result[0].fifaCode, 'USA');
-      expect(result[1].fifaCode, 'BRA');
+      expect(result[0].teamCode, 'USA');
+      expect(result[1].teamCode, 'BRA');
       expect(result[1].confederation, Confederation.conmebol);
     });
 
@@ -921,11 +921,11 @@ void main() {
       final result = await dataSource.fetchAllTeams();
       final team = result.first;
 
-      expect(team.fifaCode, 'BRA');
+      expect(team.teamCode, 'BRA');
       expect(team.countryName, 'Brazil');
       expect(team.shortName, 'BRA');
       expect(team.confederation, Confederation.conmebol);
-      expect(team.fifaRanking, 3);
+      expect(team.worldRanking, 3);
       expect(team.group, 'C');
       expect(team.coachName, 'Dorival Junior');
       expect(team.isQualified, true);

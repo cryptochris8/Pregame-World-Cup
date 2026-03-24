@@ -30,7 +30,7 @@ class ESPNAnalysisService {
         final teamData = team['team'] ?? {};
         final isHome = team['homeAway'] == 'home';
         final teamName = teamData['displayName'] ?? '';
-        // FIFA ranking from ESPN data
+        // World ranking from ESPN data
         final rank = parseRank(team['curatedRank']?.toString());
 
         if (isHome) {
@@ -43,7 +43,7 @@ class ESPNAnalysisService {
       }
     }
 
-    // Calculate crowd factor based on FIFA rankings and match importance
+    // Calculate crowd factor based on world rankings and match importance
     final crowdFactor = calculateCrowdFactor(
       homeRank: homeRank,
       awayRank: awayRank,
@@ -89,7 +89,7 @@ class ESPNAnalysisService {
     );
   }
 
-  /// Calculate crowd factor based on FIFA rankings, rivalry status, and match stage
+  /// Calculate crowd factor based on world rankings, rivalry status, and match stage
   double calculateCrowdFactor({
     int? homeRank,
     int? awayRank,
@@ -99,7 +99,7 @@ class ESPNAnalysisService {
   }) {
     double factor = 1.0; // Base factor
 
-    // FIFA ranking impact (higher ranked = more interest)
+    // World ranking impact (higher ranked = more interest)
     // Top 10 nations draw massive crowds
     if (homeRank != null && homeRank <= 50) {
       factor += (51 - homeRank) * 0.01; // Up to +0.5 for #1 ranked team
@@ -108,7 +108,7 @@ class ESPNAnalysisService {
       factor += (51 - awayRank) * 0.01;
     }
 
-    // Both teams in top 10 FIFA rankings
+    // Both teams in top 10 world rankings
     if ((homeRank != null && homeRank <= 10) && (awayRank != null && awayRank <= 10)) {
       factor += 0.5; // Top 10 matchup bonus
     }

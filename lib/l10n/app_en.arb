@@ -294,8 +294,8 @@
   "@favorites": {
     "description": "Tab label for favorites"
   },
-  "fifaWorldCup": "World Cup",
-  "@fifaWorldCup": {
+  "worldCup": "World Cup",
+  "@worldCup": {
     "description": "Title for FIFA World Cup"
   },
   "live": "Live",
@@ -1370,8 +1370,8 @@
   "@schedule": {
     "description": "Schedule tab"
   },
-  "fifaWorldCup2026": "World Cup 2026",
-  "@fifaWorldCup2026": {
+  "worldCup2026": "World Cup 2026",
+  "@worldCup2026": {
     "description": "FIFA World Cup 2026 badge text"
   },
   "liveEspnData": "LIVE ESPN DATA",
@@ -1948,9 +1948,9 @@
   "@hostNation": {
     "description": "Host nation badge label"
   },
-  "fifaRanking": "World Ranking",
-  "@fifaRanking": {
-    "description": "FIFA ranking stat label"
+  "worldRanking": "World Ranking",
+  "@worldRanking": {
+    "description": "World ranking stat label"
   },
   "worldCupTitles": "World Cup Titles",
   "@worldCupTitles": {
@@ -1968,9 +1968,9 @@
   "@country": {
     "description": "Country label"
   },
-  "fifaCode": "Country Code",
-  "@fifaCode": {
-    "description": "FIFA code label"
+  "teamCode": "Country Code",
+  "@teamCode": {
+    "description": "Team code label"
   },
   "confederation": "Confederation",
   "@confederation": {
@@ -5385,7 +5385,7 @@
   "@verifyCode": {
     "description": "Button to verify the SMS code"
   },
-  "appDisclaimer": "Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by FIFA or any official tournament organization.",
+  "appDisclaimer": "Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by any official tournament organization.",
   "@appDisclaimer": {
     "description": "Legal disclaimer shown on login and profile screens"
   }

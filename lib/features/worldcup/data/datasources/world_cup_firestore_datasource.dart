@@ -234,7 +234,7 @@ class WorldCupFirestoreDataSource {
     try {
       final snapshot = await _firestore
           .collection(_teamsCollection)
-          .orderBy('fifaRanking')
+          .orderBy('worldRanking')
           .get();
 
       return snapshot.docs
@@ -263,12 +263,12 @@ class WorldCupFirestoreDataSource {
     }
   }
 
-  /// Fetches a team by FIFA code
-  Future<NationalTeam?> getTeamByCode(String fifaCode) async {
+  /// Fetches a team by team code
+  Future<NationalTeam?> getTeamByCode(String teamCode) async {
     try {
       final doc = await _firestore
           .collection(_teamsCollection)
-          .doc(fifaCode.toUpperCase())
+          .doc(teamCode.toUpperCase())
           .get();
 
       if (doc.exists && doc.data() != null) {
@@ -276,7 +276,7 @@ class WorldCupFirestoreDataSource {
       }
       return null;
     } catch (e) {
-      LoggingService.error('Firestore getTeamByCode failed for code=$fifaCode: $e', tag: 'WorldCupFirestore');
+      LoggingService.error('Firestore getTeamByCode failed for code=$teamCode: $e', tag: 'WorldCupFirestore');
       return null;
     }
   }
@@ -286,10 +286,10 @@ class WorldCupFirestoreDataSource {
     try {
       await _firestore
           .collection(_teamsCollection)
-          .doc(team.fifaCode)
+          .doc(team.teamCode)
           .set(team.toFirestore(), SetOptions(merge: true));
     } catch (e) {
-      LoggingService.error('Firestore saveTeam failed for code=${team.fifaCode}: $e', tag: 'WorldCupFirestore');
+      LoggingService.error('Firestore saveTeam failed for code=${team.teamCode}: $e', tag: 'WorldCupFirestore');
       throw Exception('Failed to save team: $e');
     }
   }
@@ -300,7 +300,7 @@ class WorldCupFirestoreDataSource {
       final batch = _firestore.batch();
 
       for (final team in teams) {
-        final ref = _firestore.collection(_teamsCollection).doc(team.fifaCode);
+        final ref = _firestore.collection(_teamsCollection).doc(team.teamCode);
         batch.set(ref, team.toFirestore(), SetOptions(merge: true));
       }
 
@@ -315,7 +315,7 @@ class WorldCupFirestoreDataSource {
   Stream<List<NationalTeam>> watchTeams() {
     return _firestore
         .collection(_teamsCollection)
-        .orderBy('fifaRanking')
+        .orderBy('worldRanking')
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => NationalTeam.fromFirestore(doc.data(), doc.id))

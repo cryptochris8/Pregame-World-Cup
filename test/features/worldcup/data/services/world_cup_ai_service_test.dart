@@ -38,18 +38,18 @@ WorldCupMatch _createMatch({
 }
 
 NationalTeam _createTeam({
-  String fifaCode = 'BRA',
+  String teamCode = 'BRA',
   String countryName = 'Brazil',
   String shortName = 'Brazil',
-  int? fifaRanking = 3,
+  int? worldRanking = 3,
 }) {
   return NationalTeam(
-    fifaCode: fifaCode,
+    teamCode: teamCode,
     countryName: countryName,
     shortName: shortName,
-    flagUrl: 'https://example.com/flags/$fifaCode.png',
+    flagUrl: 'https://example.com/flags/$teamCode.png',
     confederation: Confederation.conmebol,
-    fifaRanking: fifaRanking,
+    worldRanking: worldRanking,
   );
 }
 
@@ -116,9 +116,9 @@ void main() {
     group('generateMatchPrediction', () {
       test('returns prediction from local engine', () async {
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaCode: 'BRA', fifaRanking: 3);
+        final homeTeam = _createTeam(teamCode: 'BRA', worldRanking: 3);
         final awayTeam =
-            _createTeam(fifaCode: 'ARG', shortName: 'Argentina', fifaRanking: 1);
+            _createTeam(teamCode: 'ARG', shortName: 'Argentina', worldRanking: 1);
         final expectedPrediction = _createPrediction();
 
         when(() => mockEngine.generatePrediction(
@@ -143,7 +143,7 @@ void main() {
       test('calls local engine with correct parameters', () async {
         final match = _createMatch();
         final homeTeam = _createTeam();
-        final awayTeam = _createTeam(fifaCode: 'ARG', shortName: 'Argentina');
+        final awayTeam = _createTeam(teamCode: 'ARG', shortName: 'Argentina');
         final prediction = _createPrediction();
 
         when(() => mockEngine.generatePrediction(
@@ -167,11 +167,11 @@ void main() {
 
       test('returns fallback prediction when engine throws', () async {
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaRanking: 5);
+        final homeTeam = _createTeam(worldRanking: 5);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
-          fifaRanking: 1,
+          worldRanking: 1,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -197,11 +197,11 @@ void main() {
           homeTeamName: 'Lower Ranked',
           awayTeamName: 'Higher Ranked',
         );
-        final homeTeam = _createTeam(fifaRanking: 50);
+        final homeTeam = _createTeam(worldRanking: 50);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Higher Ranked',
-          fifaRanking: 5,
+          worldRanking: 5,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -267,11 +267,11 @@ void main() {
           homeTeamName: 'Brazil',
           awayTeamName: 'Mexico',
         );
-        final homeTeam = _createTeam(fifaRanking: 3, shortName: 'Brazil');
+        final homeTeam = _createTeam(worldRanking: 3, shortName: 'Brazil');
         final awayTeam = _createTeam(
-          fifaCode: 'MEX',
+          teamCode: 'MEX',
           shortName: 'Mexico',
-          fifaRanking: 15,
+          worldRanking: 15,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -294,11 +294,11 @@ void main() {
 
       test('fallback for away team favored', () async {
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaRanking: 40);
+        final homeTeam = _createTeam(worldRanking: 40);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
-          fifaRanking: 1,
+          worldRanking: 1,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -320,11 +320,11 @@ void main() {
 
       test('fallback for evenly matched teams', () async {
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaRanking: 10);
+        final homeTeam = _createTeam(worldRanking: 10);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
-          fifaRanking: 12,
+          worldRanking: 12,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -411,11 +411,11 @@ void main() {
         // and returns AIMatchPrediction.fallback(). suggestPrediction wraps
         // the fallback prediction into a map using keyFactors.first as reasoning.
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaRanking: 3);
+        final homeTeam = _createTeam(worldRanking: 3);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
-          fifaRanking: 1,
+          worldRanking: 1,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -445,11 +445,11 @@ void main() {
       test('fallback suggestion for home team favored (large diff)', () async {
         // Need a large ranking difference to get different scores
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaRanking: 3);
+        final homeTeam = _createTeam(worldRanking: 3);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
-          fifaRanking: 50,
+          worldRanking: 50,
         );
 
         when(() => mockEngine.generatePrediction(
@@ -474,11 +474,11 @@ void main() {
 
       test('fallback suggestion for evenly matched teams', () async {
         final match = _createMatch();
-        final homeTeam = _createTeam(fifaRanking: 10);
+        final homeTeam = _createTeam(worldRanking: 10);
         final awayTeam = _createTeam(
-          fifaCode: 'ARG',
+          teamCode: 'ARG',
           shortName: 'Argentina',
-          fifaRanking: 10,
+          worldRanking: 10,
         );
 
         when(() => mockEngine.generatePrediction(

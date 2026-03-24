@@ -393,7 +393,7 @@ class _TournamentLeaderboardsScreenState
                       Row(
                         children: [
                           Text(
-                            _getFlagEmoji(player.fifaCode),
+                            _getFlagEmoji(player.teamCode),
                             style: const TextStyle(fontSize: 14),
                           ),
                           const SizedBox(width: 6),
@@ -457,8 +457,8 @@ class _TournamentLeaderboardsScreenState
     }
   }
 
-  String _getFlagEmoji(String fifaCode) {
-    // Convert FIFA code to flag emoji
+  String _getFlagEmoji(String teamCode) {
+    // Convert team code to flag emoji
     final Map<String, String> codeMap = {
       'USA': 'US', 'GER': 'DE', 'ENG': 'GB', 'NED': 'NL', 'CRO': 'HR',
       'SUI': 'CH', 'POR': 'PT', 'KOR': 'KR', 'JPN': 'JP', 'IRN': 'IR',
@@ -470,7 +470,7 @@ class _TournamentLeaderboardsScreenState
       'TRI': 'TT', 'IDN': 'ID', 'NOR': 'NO', 'TUR': 'TR',
     };
 
-    final code = codeMap[fifaCode] ?? fifaCode.substring(0, 2);
+    final code = codeMap[teamCode] ?? teamCode.substring(0, 2);
     if (code.length < 2) return '';
 
     final firstChar = String.fromCharCode(0x1F1E6 + code.codeUnitAt(0) - 65);

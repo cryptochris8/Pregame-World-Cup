@@ -311,7 +311,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 const Icon(Icons.sports_soccer, color: Colors.orange, size: 24),
                 const SizedBox(width: 12),
                 Text(
-                  l10n.fifaWorldCup2026,
+                  l10n.worldCup2026,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,

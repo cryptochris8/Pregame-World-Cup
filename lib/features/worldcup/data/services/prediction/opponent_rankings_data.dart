@@ -1,5 +1,5 @@
-/// Approximate FIFA rankings for all known opponents in the recent form data.
-/// Rankings are based on the FIFA/Coca-Cola Men's World Ranking (Jan 2026).
+/// Approximate world rankings for all known opponents in the recent form data.
+/// Rankings are based on the Men's World Ranking (Jan 2026).
 /// Non-WC teams use estimated rankings from publicly available data.
 const Map<String, int> opponentRankings = {
   // WC 2026 qualified teams (48 teams)
@@ -51,7 +51,7 @@ const Map<String, int> opponentRankings = {
   'Honduras': 46,
   'New Zealand': 47,
   'Trinidad and Tobago': 48,
-  // Non-WC opponents (estimated from FIFA rankings)
+  // Non-WC opponents (estimated from world rankings)
   'Algeria': 35,
   'Andorra': 155,
   'Angola': 80,

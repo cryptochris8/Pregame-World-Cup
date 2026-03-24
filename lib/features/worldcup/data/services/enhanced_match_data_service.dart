@@ -118,7 +118,7 @@ class EnhancedMatchDataService {
 
   // --- Public Getters ---
 
-  /// Get squad value data for a team by FIFA code
+  /// Get squad value data for a team by team code
   Map<String, dynamic>? getSquadValue(String teamCode) {
     if (_squadValues == null) return null;
     final teams = _squadValues!['teams'] as List<dynamic>?;
@@ -379,7 +379,7 @@ class EnhancedMatchDataService {
     return null;
   }
 
-  /// Get Elo rating data for a team by FIFA code.
+  /// Get Elo rating data for a team by team code.
   ///
   /// Returns a map with keys: teamCode, teamName, eloRating, rank.
   /// Returns null if the team code is not found or data is not loaded.

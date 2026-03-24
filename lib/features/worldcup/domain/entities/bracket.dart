@@ -13,7 +13,7 @@ class BracketSlot extends Equatable {
   /// Match number within the stage
   final int matchNumberInStage;
 
-  /// Team FIFA code (null if TBD)
+  /// Team code (null if TBD)
   final String? teamCode;
 
   /// Team name or placeholder (e.g., "Winner Group A")

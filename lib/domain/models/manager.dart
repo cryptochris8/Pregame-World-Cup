@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 /// Corresponds to the manager data in Firestore
 class Manager {
   final String managerId;
-  final String fifaCode;
+  final String teamCode;
   final String firstName;
   final String lastName;
   final String fullName;
@@ -34,7 +34,7 @@ class Manager {
 
   Manager({
     required this.managerId,
-    required this.fifaCode,
+    required this.teamCode,
     required this.firstName,
     required this.lastName,
     required this.fullName,
@@ -69,7 +69,7 @@ class Manager {
 
     return Manager(
       managerId: data['managerId'] ?? '',
-      fifaCode: data['fifaCode'] ?? '',
+      teamCode: data['teamCode'] ?? '',
       firstName: data['firstName'] ?? '',
       lastName: data['lastName'] ?? '',
       fullName: data['fullName'] ?? '',
@@ -103,7 +103,7 @@ class Manager {
   Map<String, dynamic> toFirestore() {
     return {
       'managerId': managerId,
-      'fifaCode': fifaCode,
+      'teamCode': teamCode,
       'firstName': firstName,
       'lastName': lastName,
       'fullName': fullName,

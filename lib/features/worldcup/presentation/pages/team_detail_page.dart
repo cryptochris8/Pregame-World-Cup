@@ -61,7 +61,7 @@ class TeamDetailPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8),
                             child: TeamFlag(
                               flagUrl: team.flagUrl,
-                              teamCode: team.fifaCode,
+                              teamCode: team.teamCode,
                               size: 80,
                             ),
                           ),
@@ -79,7 +79,7 @@ class TeamDetailPage extends StatelessWidget {
                         ),
                         const SizedBox(height: 4),
 
-                        // FIFA code and confederation
+                        // Team code and confederation
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -93,7 +93,7 @@ class TeamDetailPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Text(
-                                team.fifaCode,
+                                team.teamCode,
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
@@ -191,8 +191,8 @@ class TeamDetailPage extends StatelessWidget {
         Expanded(
           child: _buildStatCard(
             icon: Icons.leaderboard,
-            label: l10n.fifaRanking,
-            value: team.fifaRanking != null ? '#${team.fifaRanking}' : 'N/A',
+            label: l10n.worldRanking,
+            value: team.worldRanking != null ? '#${team.worldRanking}' : 'N/A',
             color: Colors.blue,
           ),
         ),
@@ -282,7 +282,7 @@ class TeamDetailPage extends StatelessWidget {
             const SizedBox(height: 16),
             _buildInfoRow(Icons.flag, l10n.country, team.countryName),
             Divider(color: Colors.white.withValues(alpha:0.1)),
-            _buildInfoRow(Icons.code, l10n.fifaCode, team.fifaCode),
+            _buildInfoRow(Icons.code, l10n.teamCode, team.teamCode),
             Divider(color: Colors.white.withValues(alpha:0.1)),
             _buildInfoRow(Icons.public, l10n.confederation, team.confederation.displayName),
             Divider(color: Colors.white.withValues(alpha:0.1)),
@@ -401,7 +401,7 @@ class TeamDetailPage extends StatelessWidget {
       'ENG': '1966',
       'ESP': '2010',
     };
-    return winners[team.fifaCode] ?? '';
+    return winners[team.teamCode] ?? '';
   }
 
   Widget _buildGroupInfo(BuildContext context) {
@@ -547,7 +547,7 @@ class TeamMiniCard extends StatelessWidget {
               children: [
                 TeamFlag(
                   flagUrl: team.flagUrl,
-                  teamCode: team.fifaCode,
+                  teamCode: team.teamCode,
                   size: 40,
                 ),
                 const SizedBox(width: 12),
@@ -561,9 +561,9 @@ class TeamMiniCard extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          if (team.fifaRanking != null) ...[
+                          if (team.worldRanking != null) ...[
                             Text(
-                              '#${team.fifaRanking}',
+                              '#${team.worldRanking}',
                               style: const TextStyle(
                                 fontSize: 12,
                                 color: Colors.white60,

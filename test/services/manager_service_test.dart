@@ -11,7 +11,7 @@ void main() {
   // Sample manager data for testing
   final sampleManagerData1 = {
     'managerId': 'manager_001',
-    'fifaCode': 'BRA',
+    'teamCode': 'BRA',
     'firstName': 'Tite',
     'lastName': 'Adenor Leonardo Bacchi',
     'fullName': 'Adenor Leonardo Bacchi',
@@ -53,7 +53,7 @@ void main() {
 
   final sampleManagerData2 = {
     'managerId': 'manager_002',
-    'fifaCode': 'ARG',
+    'teamCode': 'ARG',
     'firstName': 'Lionel',
     'lastName': 'Scaloni',
     'fullName': 'Lionel Sebastián Scaloni',
@@ -95,7 +95,7 @@ void main() {
 
   final sampleManagerData3 = {
     'managerId': 'manager_003',
-    'fifaCode': 'GER',
+    'teamCode': 'GER',
     'firstName': 'Julian',
     'lastName': 'Nagelsmann',
     'fullName': 'Julian Nagelsmann',
@@ -145,13 +145,13 @@ void main() {
       await fakeFirestore.collection('managers').doc('manager_002').set(sampleManagerData2);
       await fakeFirestore.collection('managers').doc('manager_003').set(sampleManagerData3);
 
-      final snapshot = await fakeFirestore.collection('managers').orderBy('fifaCode').get();
+      final snapshot = await fakeFirestore.collection('managers').orderBy('teamCode').get();
       final managers = snapshot.docs.map((doc) => Manager.fromFirestore(doc)).toList();
 
       expect(managers.length, equals(3));
-      expect(managers.any((m) => m.fifaCode == 'ARG'), isTrue);
-      expect(managers.any((m) => m.fifaCode == 'BRA'), isTrue);
-      expect(managers.any((m) => m.fifaCode == 'GER'), isTrue);
+      expect(managers.any((m) => m.teamCode == 'ARG'), isTrue);
+      expect(managers.any((m) => m.teamCode == 'BRA'), isTrue);
+      expect(managers.any((m) => m.teamCode == 'GER'), isTrue);
     });
 
     test('parses manager data correctly from Firestore document', () async {
@@ -163,7 +163,7 @@ void main() {
       expect(manager.commonName, equals('Tite'));
       expect(manager.nationality, equals('Brazilian'));
       expect(manager.currentTeam, equals('Brazil'));
-      expect(manager.fifaCode, equals('BRA'));
+      expect(manager.teamCode, equals('BRA'));
     });
 
     test('can query managers by team', () async {
@@ -285,13 +285,13 @@ void main() {
 
       final snapshot = await fakeFirestore
           .collection('managers')
-          .orderBy('fifaCode')
+          .orderBy('teamCode')
           .get();
       final managers = snapshot.docs.map((doc) => Manager.fromFirestore(doc)).toList();
 
-      expect(managers[0].fifaCode, equals('ARG'));
-      expect(managers[1].fifaCode, equals('BRA'));
-      expect(managers[2].fifaCode, equals('GER'));
+      expect(managers[0].teamCode, equals('ARG'));
+      expect(managers[1].teamCode, equals('BRA'));
+      expect(managers[2].teamCode, equals('GER'));
     });
   });
 }

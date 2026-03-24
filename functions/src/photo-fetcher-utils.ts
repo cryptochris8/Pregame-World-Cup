@@ -7,7 +7,7 @@
  * Supported sources (in order of preference):
  * 1. TheSportsDB (primary)
  * 2. Wikipedia Commons (fallback)
- * 3. FIFA Official (fallback)
+ * 3. Official (fallback)
  */
 
 import axios, { AxiosError } from 'axios';
@@ -257,11 +257,11 @@ export class FirebaseStorageService {
     imageBuffer: Buffer,
     entityType: 'player' | 'manager',
     entityId: string,
-    fifaCode: string,
+    teamCode: string,
     metadata?: { [key: string]: string }
   ): Promise<UploadResult> {
     try {
-      const fileName = `${entityType}s/${fifaCode.toLowerCase()}_${entityId}.jpg`;
+      const fileName = `${entityType}s/${teamCode.toLowerCase()}_${entityId}.jpg`;
       const file = this.bucket.file(fileName);
 
       await file.save(imageBuffer, {
@@ -422,7 +422,7 @@ export class PhotoFetcher {
     name: string,
     entityType: 'player' | 'manager',
     entityId: string,
-    fifaCode: string,
+    teamCode: string,
     alternativeNames?: string[],
     existingPhotoUrl?: string
   ): Promise<{
@@ -459,7 +459,7 @@ export class PhotoFetcher {
       buffer,
       entityType,
       entityId,
-      fifaCode,
+      teamCode,
       fetchResult.source ? { source: fetchResult.source } : undefined
     );
 

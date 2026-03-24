@@ -1,8 +1,8 @@
-/// Utility class for handling country flags and FIFA/ISO code conversions
+/// Utility class for handling country flags and team/ISO code conversions
 class FlagUtils {
   FlagUtils._();
 
-  /// FIFA code to ISO country code mapping
+  /// Team code to ISO country code mapping
   /// Used for flagcdn.com which requires ISO codes
   static const Map<String, String> fifaToIsoCode = {
     // CONCACAF
@@ -43,27 +43,27 @@ class FlagUtils {
     'SOL': 'sb', 'VAN': 'vu', 'SAM': 'ws', 'TGA': 'to',
   };
 
-  /// Get ISO country code from FIFA code
-  static String getIsoCode(String fifaCode) {
-    return fifaToIsoCode[fifaCode.toUpperCase()] ?? fifaCode.toLowerCase();
+  /// Get ISO country code from team code
+  static String getIsoCode(String teamCode) {
+    return fifaToIsoCode[teamCode.toUpperCase()] ?? teamCode.toLowerCase();
   }
 
-  /// Get flag URL for a FIFA code using flagcdn.com
+  /// Get flag URL for a team code using flagcdn.com
   /// [width] - Width of the flag image (default 80, options: 16, 20, 24, 32, 40, 48, 64, 80, 160, 320)
-  static String getFlagUrl(String fifaCode, {int width = 80}) {
-    final isoCode = getIsoCode(fifaCode);
+  static String getFlagUrl(String teamCode, {int width = 80}) {
+    final isoCode = getIsoCode(teamCode);
     return 'https://flagcdn.com/w$width/$isoCode.png';
   }
 
   /// Get high-resolution flag URL (SVG format)
-  static String getFlagSvgUrl(String fifaCode) {
-    final isoCode = getIsoCode(fifaCode);
+  static String getFlagSvgUrl(String teamCode) {
+    final isoCode = getIsoCode(teamCode);
     return 'https://flagcdn.com/$isoCode.svg';
   }
 
-  /// Get flag emoji from FIFA code
-  static String getFlagEmoji(String fifaCode) {
-    final isoCode = getIsoCode(fifaCode).toUpperCase();
+  /// Get flag emoji from team code
+  static String getFlagEmoji(String teamCode) {
+    final isoCode = getIsoCode(teamCode).toUpperCase();
 
     // Handle special cases for GB subdivisions
     if (isoCode.startsWith('GB-')) {
@@ -94,8 +94,8 @@ class FlagUtils {
     }
   }
 
-  /// Check if a FIFA code has a known ISO mapping
-  static bool hasKnownMapping(String fifaCode) {
-    return fifaToIsoCode.containsKey(fifaCode.toUpperCase());
+  /// Check if a team code has a known ISO mapping
+  static bool hasKnownMapping(String teamCode) {
+    return fifaToIsoCode.containsKey(teamCode.toUpperCase());
   }
 }

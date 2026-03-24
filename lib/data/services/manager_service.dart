@@ -24,7 +24,7 @@ class ManagerService {
 
       Query query = _firestore
           .collection(_collectionName)
-          .orderBy('fifaCode');
+          .orderBy('teamCode');
 
       // Apply pagination if specified
       if (offset != null && offset > 0) {
@@ -73,12 +73,12 @@ class ManagerService {
     _cacheTimestamp = null;
   }
 
-  /// Get manager by team (FIFA code)
-  Future<Manager?> getManagerByTeam(String fifaCode) async {
+  /// Get manager by team (team code)
+  Future<Manager?> getManagerByTeam(String teamCode) async {
     try {
       final QuerySnapshot snapshot = await _firestore
           .collection(_collectionName)
-          .where('fifaCode', isEqualTo: fifaCode)
+          .where('teamCode', isEqualTo: teamCode)
           .limit(1)
           .get();
 
@@ -87,7 +87,7 @@ class ManagerService {
       }
       return null;
     } catch (e) {
-      LoggingService.error('Failed to get manager for team $fifaCode: $e', tag: _logTag);
+      LoggingService.error('Failed to get manager for team $teamCode: $e', tag: _logTag);
       return null;
     }
   }
@@ -264,7 +264,7 @@ class ManagerService {
   Stream<List<Manager>> streamAllManagers() {
     return _firestore
         .collection(_collectionName)
-        .orderBy('fifaCode')
+        .orderBy('teamCode')
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => Manager.fromFirestore(doc))
@@ -272,10 +272,10 @@ class ManagerService {
   }
 
   /// Stream manager by team (real-time updates)
-  Stream<Manager?> streamManagerByTeam(String fifaCode) {
+  Stream<Manager?> streamManagerByTeam(String teamCode) {
     return _firestore
         .collection(_collectionName)
-        .where('fifaCode', isEqualTo: fifaCode)
+        .where('teamCode', isEqualTo: teamCode)
         .limit(1)
         .snapshots()
         .map((snapshot) {

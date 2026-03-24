@@ -211,10 +211,10 @@ class _TeamsPageState extends State<TeamsPage> {
             return TeamTile(
               team: team,
               onTap: () => _onTeamTap(team),
-              isFavorite: favoritesState.isTeamFavorite(team.fifaCode),
+              isFavorite: favoritesState.isTeamFavorite(team.teamCode),
               onFavoriteToggle: () => context
                   .read<FavoritesCubit>()
-                  .toggleFavoriteTeam(team.fifaCode),
+                  .toggleFavoriteTeam(team.teamCode),
             );
           },
         );
@@ -239,10 +239,10 @@ class _TeamsPageState extends State<TeamsPage> {
             return TeamCard(
               team: team,
               onTap: () => _onTeamTap(team),
-              isFavorite: favoritesState.isTeamFavorite(team.fifaCode),
+              isFavorite: favoritesState.isTeamFavorite(team.teamCode),
               onFavoriteToggle: () => context
                   .read<FavoritesCubit>()
-                  .toggleFavoriteTeam(team.fifaCode),
+                  .toggleFavoriteTeam(team.teamCode),
             );
           },
         );
@@ -375,10 +375,10 @@ class TeamsByConfederationPage extends StatelessWidget {
                 .map((team) => TeamTile(
                       team: team,
                       showConfederation: false,
-                      isFavorite: favoritesState.isTeamFavorite(team.fifaCode),
+                      isFavorite: favoritesState.isTeamFavorite(team.teamCode),
                       onFavoriteToggle: () => context
                           .read<FavoritesCubit>()
-                          .toggleFavoriteTeam(team.fifaCode),
+                          .toggleFavoriteTeam(team.teamCode),
                     ))
                 .toList(),
           ),

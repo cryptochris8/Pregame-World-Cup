@@ -197,7 +197,7 @@ class WorldCupRecord extends Equatable {
 
 /// Team's World Cup history summary
 class TeamWorldCupHistory extends Equatable {
-  final String fifaCode;
+  final String teamCode;
   final String teamName;
   final int totalAppearances;
   final int titlesWon;
@@ -213,7 +213,7 @@ class TeamWorldCupHistory extends Equatable {
   final List<int> appearanceYears;
 
   const TeamWorldCupHistory({
-    required this.fifaCode,
+    required this.teamCode,
     required this.teamName,
     required this.totalAppearances,
     required this.titlesWon,
@@ -230,7 +230,7 @@ class TeamWorldCupHistory extends Equatable {
   });
 
   @override
-  List<Object?> get props => [fifaCode, totalAppearances, titlesWon];
+  List<Object?> get props => [teamCode, totalAppearances, titlesWon];
 
   /// Get win percentage
   double get winPercentage => totalMatches > 0 ? (totalWins / totalMatches) * 100 : 0;
@@ -243,7 +243,7 @@ class TeamWorldCupHistory extends Equatable {
 
   factory TeamWorldCupHistory.fromFirestore(Map<String, dynamic> data, String docId) {
     return TeamWorldCupHistory(
-      fifaCode: docId,
+      teamCode: docId,
       teamName: data['teamName'] as String,
       totalAppearances: data['totalAppearances'] as int,
       titlesWon: data['titlesWon'] as int,

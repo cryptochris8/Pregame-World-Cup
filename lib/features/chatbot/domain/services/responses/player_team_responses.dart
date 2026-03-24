@@ -30,7 +30,7 @@ class PlayerTeamResponses {
     final stats = await _kb.getPlayerStats(playerName);
     if (stats != null) {
       final name = stats['playerName'] ?? playerName;
-      final code = stats['fifaCode'] ?? '';
+      final code = stats['teamCode'] ?? '';
       final teamName = _kb.getTeamName(code) ?? code;
       final apps = stats['worldCupAppearances'] ?? 0;
       final goals = stats['worldCupGoals'] ?? 0;

@@ -62,7 +62,7 @@ class PlayerCard extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                         ),
                         Text(
-                          '${player.fifaCode} • #${player.jerseyNumber}',
+                          '${player.teamCode} • #${player.jerseyNumber}',
                           style: TextStyle(
                             fontSize: 12,
                             color: greyColor,

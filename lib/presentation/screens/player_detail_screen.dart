@@ -198,7 +198,7 @@ class _PlayerHeaderCard extends StatelessWidget {
               runSpacing: 8,
               alignment: WrapAlignment.center,
               children: [
-                _InfoChip(label: '${player.fifaCode} #${player.jerseyNumber}'),
+                _InfoChip(label: '${player.teamCode} #${player.jerseyNumber}'),
                 _InfoChip(label: player.positionDisplayName),
                 _InfoChip(label: '${player.age} years'),
                 _InfoChip(label: player.formattedMarketValue),

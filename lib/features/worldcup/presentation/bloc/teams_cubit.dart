@@ -173,7 +173,7 @@ class TeamsCubit extends Cubit<TeamsState> {
       filtered = filtered.where((t) {
         return t.countryName.toLowerCase().contains(query) ||
                t.shortName.toLowerCase().contains(query) ||
-               t.fifaCode.toLowerCase().contains(query);
+               t.teamCode.toLowerCase().contains(query);
       }).toList();
     }
 
@@ -183,12 +183,12 @@ class TeamsCubit extends Cubit<TeamsState> {
         filtered.sort((a, b) => a.countryName.compareTo(b.countryName));
         break;
 
-      case TeamsSortOption.fifaRanking:
+      case TeamsSortOption.worldRanking:
         filtered.sort((a, b) {
-          if (a.fifaRanking == null && b.fifaRanking == null) return 0;
-          if (a.fifaRanking == null) return 1;
-          if (b.fifaRanking == null) return -1;
-          return a.fifaRanking!.compareTo(b.fifaRanking!);
+          if (a.worldRanking == null && b.worldRanking == null) return 0;
+          if (a.worldRanking == null) return 1;
+          if (b.worldRanking == null) return -1;
+          return a.worldRanking!.compareTo(b.worldRanking!);
         });
         break;
 

@@ -7,7 +7,7 @@
  * - buildPlayersDoc: correct ID format, position-based strengths/weaknesses/playStyle
  * - buildWorldcupPlayersDoc: correct ID format using jersey number
  * - calculateAge: date of birth to age calculation
- * - Filters by --team flag (fifaCode)
+ * - Filters by --team flag (teamCode)
  * - Exits with code 1 when no teams found
  * - Handles --clear (clears both collections), --dryRun, --verbose
  * - POSITION_STRENGTHS, POSITION_WEAKNESSES, PLAY_STYLES mappings
@@ -33,7 +33,7 @@ describe("seed-team-players", () => {
   const mockDb = { collection: jest.fn(), batch: jest.fn() };
 
   const mockTeam = {
-    fifaCode: "USA",
+    teamCode: "USA",
     countryName: "United States",
     players: [
       {
@@ -123,7 +123,7 @@ describe("seed-team-players", () => {
     expect(mockBatchWrite).toHaveBeenCalledWith(mockDb, "worldcup_players", expect.any(Array), false);
   });
 
-  it("should generate players doc IDs as {lowercase_fifaCode}_{index+1}", async () => {
+  it("should generate players doc IDs as {lowercase_teamCode}_{index+1}", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([mockTeam]);
     mockBatchWrite.mockResolvedValue(2);
@@ -136,7 +136,7 @@ describe("seed-team-players", () => {
     expect(playersDocs[1].id).toBe("usa_2");
   });
 
-  it("should generate worldcup_players doc IDs as {lowercase_fifaCode}_{jerseyNumber}", async () => {
+  it("should generate worldcup_players doc IDs as {lowercase_teamCode}_{jerseyNumber}", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     mockReadJsonDir.mockReturnValue([mockTeam]);
     mockBatchWrite.mockResolvedValue(2);
@@ -163,7 +163,7 @@ describe("seed-team-players", () => {
     expect(pulisicDoc.lastName).toBe("Pulisic");
     expect(pulisicDoc.fullName).toBe("Christian Pulisic");
     expect(pulisicDoc.commonName).toBe("Pulisic");
-    expect(pulisicDoc.fifaCode).toBe("USA");
+    expect(pulisicDoc.teamCode).toBe("USA");
     expect(pulisicDoc.position).toBe("LW");
     expect(pulisicDoc.jerseyNumber).toBe(10);
     expect(pulisicDoc.club).toBe("AC Milan");
@@ -205,7 +205,7 @@ describe("seed-team-players", () => {
   it("should use fallback strengths/weaknesses/playStyle for unknown positions", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     const teamWithUnknownPos = {
-      fifaCode: "TST",
+      teamCode: "TST",
       countryName: "TestLand",
       players: [{
         firstName: "Test",
@@ -273,10 +273,10 @@ describe("seed-team-players", () => {
     expect(mckennieWc.commonName).toBe("Weston McKennie");
   });
 
-  it("should filter teams by --team flag (fifaCode)", async () => {
+  it("should filter teams by --team flag (teamCode)", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: "MEX", clear: false, verbose: false });
     const mexTeam = {
-      fifaCode: "MEX",
+      teamCode: "MEX",
       countryName: "Mexico",
       players: [
         { firstName: "Raul", lastName: "Jimenez", commonName: "", jerseyNumber: 9, position: "ST", dateOfBirth: "1991-05-05", height: "187cm", weight: "80kg", preferredFoot: "Right", club: "Fulham", clubLeague: "Premier League", marketValue: "10M", caps: 100, goals: 30 },
@@ -291,7 +291,7 @@ describe("seed-team-players", () => {
     // Should only include MEX players
     const playersDocs = mockBatchWrite.mock.calls[0][2];
     expect(playersDocs).toHaveLength(1);
-    expect(playersDocs[0].data.fifaCode).toBe("MEX");
+    expect(playersDocs[0].data.teamCode).toBe("MEX");
   });
 
   it("should exit with code 1 when no teams found", async () => {
@@ -374,7 +374,7 @@ describe("seed-team-players", () => {
   it("should handle team with many players", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, team: undefined, clear: false, verbose: false });
     const bigTeam = {
-      fifaCode: "BRA",
+      teamCode: "BRA",
       countryName: "Brazil",
       players: Array.from({ length: 26 }, (_, i) => ({
         firstName: `Player${i}`,

@@ -223,7 +223,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get favorites => 'Favoris';
 
   @override
-  String get fifaWorldCup => 'Coupe du Monde';
+  String get worldCup => 'Coupe du Monde';
 
   @override
   String get live => 'En Direct';
@@ -1005,7 +1005,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get schedule => 'Calendrier';
 
   @override
-  String get fifaWorldCup2026 => 'Coupe du Monde 2026';
+  String get worldCup2026 => 'Coupe du Monde 2026';
 
   @override
   String get liveEspnData => 'DONNÉES ESPN EN DIRECT';
@@ -1433,7 +1433,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get hostNation => 'Pays Hôte';
 
   @override
-  String get fifaRanking => 'Classement Mondial';
+  String get worldRanking => 'Classement Mondial';
 
   @override
   String get worldCupTitles => 'Titres en Coupe du Monde';
@@ -1448,7 +1448,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get country => 'Pays';
 
   @override
-  String get fifaCode => 'Code Pays';
+  String get teamCode => 'Code Pays';
 
   @override
   String get confederation => 'Confédération';
@@ -4257,5 +4257,5 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get appDisclaimer =>
-      'Pregame est une application indépendante pour les fans et n\'est pas affiliée, approuvée ou sponsorisée par la FIFA ou toute organisation officielle du tournoi.';
+      'Pregame est une application indépendante pour les fans et n\'est pas affiliée, approuvée ou sponsorisée par toute organisation officielle du tournoi.';
 }

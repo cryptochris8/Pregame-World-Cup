@@ -308,7 +308,14 @@ class AuthService {
         LoggingService.warning('Error deleting user favorites: $e', tag: 'AuthService');
       }
 
-      // 3. Delete user predictions (query + batch delete)
+      // 3. Delete social profile (terms acceptance, display name, etc.)
+      try {
+        await _firestore.collection('social_profiles').doc(uid).delete();
+      } catch (e) {
+        LoggingService.warning('Error deleting social profile: $e', tag: 'AuthService');
+      }
+
+      // 4. Delete user predictions (query + batch delete)
       try {
         final predictionsQuery = await _firestore
             .collection('user_predictions')
@@ -325,21 +332,21 @@ class AuthService {
         LoggingService.warning('Error deleting user predictions: $e', tag: 'AuthService');
       }
 
-      // 4. Logout from RevenueCat
+      // 5. Logout from RevenueCat
       try {
         await sl<RevenueCatService>().logoutUser();
       } catch (e) {
         LoggingService.warning('RevenueCat logout failed during deletion: $e', tag: 'AuthService');
       }
 
-      // 5. Sign out from Google if signed in via Google
+      // 6. Sign out from Google if signed in via Google
       try {
         await _googleSignIn.signOut();
       } catch (e) {
         LoggingService.warning('Google sign-out failed during deletion: $e', tag: 'AuthService');
       }
 
-      // 6. Delete Firebase Auth account
+      // 7. Delete Firebase Auth account
       await user.delete();
       LoggingService.info('Account deleted for $uid', tag: 'AuthService');
     } on FirebaseAuthException catch (e) {

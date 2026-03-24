@@ -251,12 +251,12 @@ class WorldCupCacheDataSource {
   }
 
   /// Gets cached team by code
-  Future<NationalTeam?> getCachedTeam(String fifaCode) async {
+  Future<NationalTeam?> getCachedTeam(String teamCode) async {
     final teams = await getCachedTeams();
     if (teams != null) {
       try {
         return teams.firstWhere(
-          (t) => t.fifaCode.toUpperCase() == fifaCode.toUpperCase(),
+          (t) => t.teamCode.toUpperCase() == teamCode.toUpperCase(),
         );
       } catch (_) {
         return null;

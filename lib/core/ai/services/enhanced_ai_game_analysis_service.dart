@@ -464,7 +464,7 @@ class EnhancedAIGameAnalysisService {
     return insights;
   }
 
-  /// Check if teams belong to the same FIFA confederation
+  /// Check if teams belong to the same confederation
   bool _isSameConfederation(String awayTeam, String homeTeam) {
     String? getConfederation(String team) {
       final t = team.toLowerCase();
