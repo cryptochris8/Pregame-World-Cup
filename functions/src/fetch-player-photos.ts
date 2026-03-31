@@ -256,10 +256,10 @@ async function main() {
         break;
     }
 
-    // Rate limiting: TheSportsDB free tier has limits
-    // Wait 1 second between requests to be safe
+    // Rate limiting: TheSportsDB free tier has strict limits
+    // Wait 3 seconds between requests to avoid 429 errors
     if (i < players.length - 1) {
-      await sleep(1000);
+      await sleep(3000);
     }
   }
 
