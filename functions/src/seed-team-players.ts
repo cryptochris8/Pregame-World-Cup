@@ -84,7 +84,8 @@ function buildPlayersDoc(team: any, player: any, index: number) {
       preferredFoot: player.preferredFoot,
       club: player.club,
       clubLeague: player.clubLeague,
-      photoUrl: "",
+      // photoUrl is NOT set here — it is populated by fetch-player-photos.ts
+      // and we must not overwrite it with "" during re-seeds (merge: true)
       marketValue: player.marketValue,
       caps: player.caps,
       goals: player.goals,

@@ -34,7 +34,12 @@ async function main() {
 
   if (verbose) records.forEach((r: any) => console.log(`  ${r.currentTeamCode} - ${r.firstName} ${r.lastName}`));
 
-  const docs = records.map((r: any) => ({ id: r.id, data: r }));
+  // Exclude photoUrl from seed data — it is populated by fetch-manager-photos.ts
+  // and we must not overwrite Firebase Storage URLs with local asset paths during re-seeds
+  const docs = records.map((r: any) => {
+    const { photoUrl, ...dataWithoutPhoto } = r;
+    return { id: r.id, data: dataWithoutPhoto };
+  });
   await batchWrite(db, COLLECTION, docs, dryRun);
 }
 
