@@ -128,6 +128,9 @@ class MessageValidationResult {
     this.filteredMessage,
     this.wasFiltered = false,
   });
+
+  /// Alias for [filteredMessage] used by chat services.
+  String? get filteredContent => filteredMessage;
 }
 
 /// Result of watch party validation

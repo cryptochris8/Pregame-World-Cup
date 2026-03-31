@@ -17,6 +17,7 @@ import '../widgets/profile_header_card.dart';
 import '../widgets/profile_stats_row.dart';
 import '../widgets/profile_feature_cards.dart';
 import '../widgets/profile_account_actions.dart';
+import '../widgets/friend_action_dialogs.dart';
 
 class UserProfileScreen extends StatefulWidget {
   final String? userId;
@@ -39,6 +40,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
   UserProfile? _profile;
   bool _isLoading = true;
   bool _isCurrentUser = false;
+  bool _isBlocked = false;
 
   @override
   void initState() {
@@ -69,6 +71,14 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           profile = await _socialService.getCurrentUserProfile();
         } else {
           profile = await _socialService.getUserProfile(targetUserId);
+        }
+      }
+
+      // Check block status for other users
+      if (!_isCurrentUser && profile != null) {
+        final blocked = await _socialService.hasBlockedUser(profile.userId);
+        if (mounted) {
+          setState(() => _isBlocked = blocked);
         }
       }
 
@@ -253,6 +263,70 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     }
   }
 
+  Future<void> _showBlockOptions() async {
+    final l10n = AppLocalizations.of(context);
+    final profile = _profile;
+    if (profile == null) return;
+
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser == null) return;
+
+    if (_isBlocked) {
+      // Show unblock confirmation
+      final confirm = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text(l10n.unblockUser),
+          content: Text(l10n.unblockUserConfirm),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: Text(l10n.cancel),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: Text(l10n.unblock),
+            ),
+          ],
+        ),
+      );
+
+      if (confirm == true && mounted) {
+        final success = await _socialService.unblockUser(currentUser.uid, profile.userId);
+        if (mounted) {
+          setState(() => _isBlocked = !success);
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(success ? l10n.userUnblocked : 'Failed to unblock user'),
+              backgroundColor: success ? Colors.green : Colors.red,
+            ),
+          );
+        }
+      }
+    } else {
+      // Show block confirmation
+      final confirm = await FriendActionDialogs.showBlockConfirmation(
+        context,
+        displayName: profile.displayName,
+      );
+
+      if (confirm == true && mounted) {
+        final success = await _socialService.blockUser(currentUser.uid, profile.userId);
+        if (mounted) {
+          setState(() => _isBlocked = success);
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(success
+                  ? l10n.userBlocked(profile.displayName)
+                  : l10n.failedToBlock(profile.displayName)),
+              backgroundColor: success ? Colors.orange : Colors.red,
+            ),
+          );
+        }
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -293,12 +367,21 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                         textAlign: _isCurrentUser ? TextAlign.center : TextAlign.left,
                       ),
                     ),
-                    if (!_isCurrentUser && _profile != null)
+                    if (!_isCurrentUser && _profile != null) ...[
+                      IconButton(
+                        onPressed: () => _showBlockOptions(),
+                        icon: Icon(
+                          _isBlocked ? Icons.block : Icons.block_outlined,
+                          color: _isBlocked ? Colors.red : Colors.white70,
+                        ),
+                        tooltip: _isBlocked ? l10n.unblockUser : l10n.blockUser,
+                      ),
                       ReportButton.user(
                         userId: _profile!.userId,
                         displayName: _profile!.displayName,
                         iconColor: Colors.white70,
                       ),
+                    ],
                     if (_isCurrentUser) ...[
                       IconButton(
                         onPressed: () {

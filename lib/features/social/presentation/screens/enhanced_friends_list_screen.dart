@@ -12,6 +12,7 @@ import '../widgets/friend_action_dialogs.dart';
 import '../widgets/friends_search_bar.dart';
 import 'user_search_screen.dart';
 import 'user_profile_screen.dart';
+import 'blocked_users_screen.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -230,6 +231,42 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
                     ),
               ),
             ),
+                  Container(
+                    margin: const EdgeInsets.only(right: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withValues(alpha:0.2),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: PopupMenuButton<String>(
+                      icon: const Icon(Icons.more_vert, color: Colors.white),
+                      color: AppTheme.backgroundCard,
+                      onSelected: (value) {
+                        if (value == 'blocked') {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BlockedUsersScreen(),
+                            ),
+                          );
+                        }
+                      },
+                      itemBuilder: (context) => [
+                        PopupMenuItem(
+                          value: 'blocked',
+                          child: Row(
+                            children: [
+                              const Icon(Icons.block, color: Colors.white70, size: 20),
+                              const SizedBox(width: 8),
+                              Text(
+                                AppLocalizations.of(context).blockedUsers,
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
           ],
           bottom: TabBar(
             controller: _tabController,

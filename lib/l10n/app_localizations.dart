@@ -522,7 +522,7 @@ abstract class AppLocalizations {
   /// **'Favorites'**
   String get favorites;
 
-  /// Title for World Cup
+  /// World Cup nav label
   ///
   /// In en, this message translates to:
   /// **'World Cup'**
@@ -1944,12 +1944,6 @@ abstract class AppLocalizations {
   /// **'Auto-checking verification status...'**
   String get autoCheckingVerification;
 
-  /// World Cup nav label
-  ///
-  /// In en, this message translates to:
-  /// **'World Cup'**
-  String get worldCup;
-
   /// Fan Pass button tooltip
   ///
   /// In en, this message translates to:
@@ -1992,7 +1986,7 @@ abstract class AppLocalizations {
   /// **'Schedule'**
   String get schedule;
 
-  /// World Cup 2026 badge text
+  /// FIFA World Cup 2026 badge text
   ///
   /// In en, this message translates to:
   /// **'World Cup 2026'**
@@ -7691,6 +7685,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by any official tournament organization.'**
   String get appDisclaimer;
+
+  /// Title for blocked users management screen
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked Users'**
+  String get blockedUsers;
+
+  /// Empty state when no users are blocked
+  ///
+  /// In en, this message translates to:
+  /// **'You haven\'t blocked anyone'**
+  String get noBlockedUsers;
+
+  /// Subtitle for empty blocked users state
+  ///
+  /// In en, this message translates to:
+  /// **'Users you block will appear here'**
+  String get noBlockedUsersSubtitle;
+
+  /// Success message when unblocking a user
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has been unblocked'**
+  String unblockSuccess(String name);
 }
 
 class _AppLocalizationsDelegate

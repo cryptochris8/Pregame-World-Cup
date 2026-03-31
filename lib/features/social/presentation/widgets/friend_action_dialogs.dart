@@ -58,4 +58,29 @@ class FriendActionDialogs {
       ),
     );
   }
+
+  /// Show a confirmation dialog for unblocking a user.
+  /// Returns true if the user confirmed, false or null otherwise.
+  static Future<bool?> showUnblockConfirmation(
+    BuildContext context,
+  ) {
+    final l10n = AppLocalizations.of(context);
+    return showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.unblockUser),
+        content: Text(l10n.unblockUserConfirm),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(l10n.unblock),
+          ),
+        ],
+      ),
+    );
+  }
 }

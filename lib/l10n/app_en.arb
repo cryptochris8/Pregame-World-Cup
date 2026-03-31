@@ -5388,5 +5388,26 @@
   "appDisclaimer": "Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by any official tournament organization.",
   "@appDisclaimer": {
     "description": "Legal disclaimer shown on login and profile screens"
+  },
+  "blockedUsers": "Blocked Users",
+  "@blockedUsers": {
+    "description": "Title for blocked users management screen"
+  },
+  "noBlockedUsers": "You haven't blocked anyone",
+  "@noBlockedUsers": {
+    "description": "Empty state when no users are blocked"
+  },
+  "noBlockedUsersSubtitle": "Users you block will appear here",
+  "@noBlockedUsersSubtitle": {
+    "description": "Subtitle for empty blocked users state"
+  },
+  "unblockSuccess": "{name} has been unblocked",
+  "@unblockSuccess": {
+    "description": "Success message when unblocking a user",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
   }
 }

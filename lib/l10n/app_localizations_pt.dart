@@ -977,9 +977,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Verificando status automaticamente...';
 
   @override
-  String get worldCup => 'Copa do Mundo';
-
-  @override
   String get fanPass => 'Fan Pass';
 
   @override
@@ -4225,4 +4222,18 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get appDisclaimer =>
       'Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado por qualquer organização oficial do torneio.';
+
+  @override
+  String get blockedUsers => 'Blocked Users';
+
+  @override
+  String get noBlockedUsers => 'You haven\'t blocked anyone';
+
+  @override
+  String get noBlockedUsersSubtitle => 'Users you block will appear here';
+
+  @override
+  String unblockSuccess(String name) {
+    return '$name has been unblocked';
+  }
 }

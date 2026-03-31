@@ -86,9 +86,17 @@ class SocialService {
     return _profileService.saveUserProfile(profile);
   }
 
-  /// Search users by name or team (case-insensitive)
+  /// Search users by name or team (case-insensitive).
+  /// Filters out blocked users from results.
   Future<List<UserProfile>> searchUsers(String query, {int limit = 20}) async {
-    return _profileService.searchUsers(query, limit: limit);
+    final results = await _profileService.searchUsers(query, limit: limit);
+
+    // Filter out blocked users (in either direction)
+    final blockedIds = await _friendService.getBlockedUserIds();
+    if (blockedIds.isEmpty) return results;
+
+    final blockedSet = blockedIds.toSet();
+    return results.where((u) => !blockedSet.contains(u.userId)).toList();
   }
 
   /// Get user's friends list
