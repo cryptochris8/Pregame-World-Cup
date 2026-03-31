@@ -171,11 +171,17 @@ workflows:
       - name: Clean build directory
         script: |
           flutter clean
-          cd ios && pod deintegrate && cd ..
-          
+
       - name: Install pods
         script: |
-          find . -name "Podfile" -execdir pod install --verbose \;
+          cd ios
+          pod deintegrate
+          pod repo update
+          pod install --repo-update --verbose || (
+            echo "⚠️ First pod install failed, retrying after cache clear..."
+            pod cache clean --all
+            pod install --repo-update --verbose
+          )
           
       - name: Set up code signing settings on Xcode project
         script: |
