@@ -27,9 +27,12 @@
 import { execSync } from "child_process";
 import * as path from "path";
 
-const SEEDS: { name: string; key: string; script: string }[] = [
-  { name: "Group Stage Matches", key: "matches", script: "seed-june2026-matches.ts" },
+// NOTE: Knockouts must run BEFORE group stage because both write to
+// 'worldcup_matches'. Knockouts uses --clear which wipes the collection,
+// then group stage adds its docs on top without clearing.
+const SEEDS: { name: string; key: string; script: string; noFlags?: boolean }[] = [
   { name: "Knockout Matches", key: "knockouts", script: "seed-knockout-matches.ts" },
+  { name: "Group Stage Matches", key: "matches", script: "seed-june2026-matches.ts", noFlags: true },
   { name: "Match Summaries", key: "summaries", script: "seed-match-summaries.ts" },
   { name: "Head-to-Head Records", key: "h2h", script: "seed-head-to-head.ts" },
   { name: "Managers", key: "managers", script: "seed-managers.ts" },
@@ -65,7 +68,8 @@ function main() {
 
   for (const seed of seedsToRun) {
     const scriptPath = path.join(__dirname, seed.script);
-    const flags = ["--clear"];
+    const flags: string[] = [];
+    if (!seed.noFlags) flags.push("--clear");
     if (dryRun) flags.push("--dryRun");
 
     console.log(`── ${seed.name} ──────────────────────────`);
