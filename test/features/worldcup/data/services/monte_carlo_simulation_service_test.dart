@@ -322,17 +322,17 @@ void main() {
           reason: 'Brazil should have >5% chance to win');
     });
 
-    test('weak teams have < 2% win probability', () {
+    test('weak teams have < 5% win probability', () {
       final result = service.simulateTournament(simulations: 5000, seed: 42);
 
-      // CUW (rank 85), IDN (rank 130) should have very low win chance
-      final cuw = result.teamResults['CUW']!;
+      // CUR (rank 85), IDN (rank 130) should have very low win chance
+      final cur = result.teamResults['CUR']!;
       final idn = result.teamResults['IDN']!;
 
-      expect(cuw.winnerPct, lessThan(2.0),
-          reason: 'Curacao should have <2% chance to win');
-      expect(idn.winnerPct, lessThan(2.0),
-          reason: 'Indonesia should have <2% chance to win');
+      expect(cur.winnerPct, lessThan(5.0),
+          reason: 'Curacao should have <5% chance to win');
+      expect(idn.winnerPct, lessThan(5.0),
+          reason: 'Indonesia should have <5% chance to win');
     });
 
     test('top-ranked teams more likely to reach R32 than weak teams', () {

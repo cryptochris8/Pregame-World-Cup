@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show visibleForTesting;
 
 import '../entities/report.dart';
 import '../entities/user_sanction.dart';
@@ -22,6 +23,10 @@ class ModerationService {
   final FirebaseAuth _auth;
 
   static ModerationService? _instance;
+
+  /// Reset singleton for testing. Do not use in production code.
+  @visibleForTesting
+  static void resetForTesting() => _instance = null;
 
   ModerationService._({
     FirebaseFirestore? firestore,

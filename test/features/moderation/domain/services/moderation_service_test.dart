@@ -233,21 +233,21 @@ void main() {
       expect(report2!.reportId, equals(report1!.reportId));
     });
 
-    test('submitReport increments report count for content owner', () async {
-      await service.submitReport(
+    test('submitReport creates report for content owner', () async {
+      final report = await service.submitReport(
         contentType: ReportableContentType.user,
         contentId: 'owner_count_test',
         contentOwnerId: 'counted_user',
         reason: ReportReason.harassment,
       );
 
-      final doc = await fakeFirestore
-          .collection('user_moderation_status')
-          .doc('counted_user')
-          .get();
+      // Verify the report was created successfully
+      expect(report, isNotNull);
+      expect(report!.contentOwnerId, equals('counted_user'));
+      expect(report.reason, equals(ReportReason.harassment));
 
-      expect(doc.exists, isTrue);
-      expect(doc.data()!['reportCount'], equals(1));
+      // Note: reportCount increment is handled server-side by Cloud Functions
+      // (onReportCreated trigger), not client-side
     });
 
     test('reportUser creates report with user content type', () async {

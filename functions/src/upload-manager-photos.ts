@@ -130,7 +130,7 @@ async function main() {
       failed++;
     }
 
-    await sleep(500);
+    await sleep(3000); // Avoid Wikimedia rate limiting
   }
 
   console.log(`\n=== Done ===`);

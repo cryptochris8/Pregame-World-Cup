@@ -7,6 +7,8 @@ import 'package:pregame_world_cup/features/watch_party/domain/entities/watch_par
 import 'package:pregame_world_cup/features/watch_party/domain/entities/watch_party_member.dart';
 import 'package:pregame_world_cup/features/watch_party/domain/entities/watch_party_message.dart';
 import 'package:pregame_world_cup/features/watch_party/domain/services/watch_party_chat_service.dart';
+import 'package:pregame_world_cup/features/moderation/domain/services/moderation_service.dart';
+import 'package:pregame_world_cup/features/moderation/domain/services/profanity_filter_service.dart';
 
 // -- Mocks --
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
@@ -31,6 +33,16 @@ void main() {
 
     when(() => mockAuth.currentUser).thenReturn(mockUser);
     when(() => mockUser.uid).thenReturn(testUserId);
+    when(() => mockUser.displayName).thenReturn(testUserName);
+
+    // Reset and pre-initialize ModerationService singleton with fake Firestore
+    // so WatchPartyChatService.sendMessage() can call validateMessage()
+    ModerationService.resetForTesting();
+    ModerationService(
+      firestore: fakeFirestore,
+      auth: mockAuth,
+      profanityFilter: ProfanityFilterService(),
+    );
 
     service = WatchPartyChatService(
       firestore: fakeFirestore,

@@ -36,7 +36,7 @@ void main() {
 
       // Verify all sort option chips are rendered
       expect(find.text('A-Z'), findsOneWidget);
-      expect(find.text('FIFA Ranking'), findsOneWidget);
+      expect(find.text('World Ranking'), findsOneWidget);
       expect(find.text('Confederation'), findsOneWidget);
       expect(find.text('Group'), findsOneWidget);
     });
@@ -60,7 +60,7 @@ void main() {
       expect(alphabeticalChip.selected, isTrue);
     });
 
-    testWidgets('FIFA Ranking chip is selected when selectedOption is worldRanking', (tester) async {
+    testWidgets('World Ranking chip is selected when selectedOption is worldRanking', (tester) async {
       await tester.pumpWidget(
         buildWidget(
           TeamSortChips(
@@ -72,7 +72,7 @@ void main() {
 
       final worldRankingChip = tester.widget<ChoiceChip>(
         find.ancestor(
-          of: find.text('FIFA Ranking'),
+          of: find.text('World Ranking'),
           matching: find.byType(ChoiceChip),
         ),
       );
@@ -137,7 +137,7 @@ void main() {
       expect(capturedOption, TeamsSortOption.alphabetical);
     });
 
-    testWidgets('tapping FIFA Ranking chip calls callback with worldRanking', (tester) async {
+    testWidgets('tapping World Ranking chip calls callback with worldRanking', (tester) async {
       TeamsSortOption? capturedOption;
 
       await tester.pumpWidget(
@@ -151,7 +151,7 @@ void main() {
         ),
       );
 
-      await tester.tap(find.text('FIFA Ranking'));
+      await tester.tap(find.text('World Ranking'));
       await tester.pumpAndSettle();
 
       expect(capturedOption, TeamsSortOption.worldRanking);
@@ -216,10 +216,10 @@ void main() {
       );
       expect(alphabeticalChip.selected, isFalse);
 
-      // FIFA Ranking should not be selected
+      // World Ranking should not be selected
       final worldRankingChip = tester.widget<ChoiceChip>(
         find.ancestor(
-          of: find.text('FIFA Ranking'),
+          of: find.text('World Ranking'),
           matching: find.byType(ChoiceChip),
         ),
       );
@@ -280,7 +280,7 @@ void main() {
 
         final labelMap = {
           TeamsSortOption.alphabetical: 'A-Z',
-          TeamsSortOption.worldRanking: 'FIFA Ranking',
+          TeamsSortOption.worldRanking: 'World Ranking',
           TeamsSortOption.confederation: 'Confederation',
           TeamsSortOption.group: 'Group',
         };
@@ -324,7 +324,7 @@ void main() {
         return text.data;
       }).toList();
 
-      expect(labels, ['A-Z', 'FIFA Ranking', 'Confederation', 'Group']);
+      expect(labels, ['A-Z', 'World Ranking', 'Confederation', 'Group']);
     });
   });
 }
