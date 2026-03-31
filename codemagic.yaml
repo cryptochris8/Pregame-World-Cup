@@ -168,20 +168,13 @@ workflows:
           flutter test
           echo "✅ Flutter tests complete"
 
-      - name: Clean build directory
+      - name: Clean build directory and reinstall pods
         script: |
           flutter clean
-
-      - name: Install pods
-        script: |
+          flutter pub get
           cd ios
           pod deintegrate
-          pod repo update
-          pod install --repo-update --verbose || (
-            echo "⚠️ First pod install failed, retrying after cache clear..."
-            pod cache clean --all
-            pod install --repo-update --verbose
-          )
+          pod install --repo-update
           
       - name: Set up code signing settings on Xcode project
         script: |
