@@ -1,0 +1,165 @@
+{
+  "players": {
+    "Vozinha Vozinha": {
+      "bio": "The veteran goalkeeper and emotional leader of Cabo Verde, Vozinha has been the last line of defense for the Blue Sharks for over a decade. His incredible longevity and commitment to the national team make him an iconic figure in Cabo Verdean football history.",
+      "playingStyle": "Experienced, vocal goalkeeper with excellent shot-stopping, strong command of the penalty area, and the leadership presence that comes from over 55 international caps",
+      "keyStrengths": ["Shot-stopping ability", "Leadership and vocal command", "Experience and longevity"],
+      "worldCup2026Role": "Starting goalkeeper and emotional leader whose vast experience and commitment to Cabo Verde provide the defensive foundation for their historic first World Cup campaign",
+      "notableFact": "Has been Cabo Verde's first-choice goalkeeper for over a decade, an extraordinary record of service for a nation competing against much larger footballing countries"
+    },
+    "Steven Vitória": {
+      "bio": "A tall, experienced center-back with a Portuguese football background, Vitória has been a cornerstone of Cabo Verde's defense for years. His aerial ability, organizational skills, and leadership make him crucial to the team's defensive solidity.",
+      "playingStyle": "Tall, commanding center-back with excellent aerial ability, strong organizational skills, and the experience to marshal the defensive line in high-pressure situations",
+      "keyStrengths": ["Aerial dominance", "Defensive organization and leadership", "Experience in Portuguese football"],
+      "worldCup2026Role": "Senior center-back whose aerial presence and organizational ability anchor Cabo Verde's defense, a crucial figure in their World Cup campaign",
+      "notableFact": "Has been a loyal servant to Cabo Verde football across many years, providing the defensive leadership that has underpinned the nation's historic rise"
+    },
+    "Stopira Stopira": {
+      "bio": "One of the most capped players in Cabo Verde history, Stopira is a veteran center-back whose commitment, durability, and defensive expertise have been the backbone of the national team for many years. His experience is irreplaceable.",
+      "playingStyle": "Veteran center-back with outstanding reading of the game, strong tackling, and the wisdom of over 70 international appearances to anticipate and neutralize threats",
+      "keyStrengths": ["Reading of the game", "Defensive experience and positioning", "Durability and consistency"],
+      "worldCup2026Role": "Veteran defensive stalwart whose 70+ caps and deep understanding of the team's defensive system make him indispensable to Cabo Verde's historic campaign",
+      "notableFact": "With over 70 caps, Stopira is one of the most decorated players in Cabo Verdean football history, a true legend of the national team"
+    },
+    "Roberto Lopes": {
+      "bio": "A unique story in international football, Lopes is an Irish-born center-back who plays for Shamrock Rovers in the League of Ireland and chose to represent Cabo Verde through his heritage. His passion for the Blue Sharks is evident in every match.",
+      "playingStyle": "Committed, organized center-back with good aerial ability, reliable defending, and the determination and heart of a player who chose to represent his heritage",
+      "keyStrengths": ["Defensive commitment", "Aerial ability", "Passion and determination"],
+      "worldCup2026Role": "Dedicated center-back whose unique journey from Irish football to the World Cup with Cabo Verde embodies the diaspora spirit at the heart of this team",
+      "notableFact": "Born and raised in Dublin, Ireland, Lopes chose to represent Cabo Verde through his family heritage, becoming a beloved figure for his passionate commitment to the team"
+    },
+    "Logan Costa": {
+      "bio": "The most valuable player in the Cabo Verde squad, Costa is a young center-back who has impressed at Toulouse in Ligue 1. His combination of pace, power, and composure has attracted interest from bigger European clubs, making him the face of Cabo Verde's football future.",
+      "playingStyle": "Modern, athletic center-back with excellent pace for his position, strong in the tackle, comfortable on the ball, and capable of stepping up to press or carry the ball forward",
+      "keyStrengths": ["Exceptional pace for a center-back", "Composure on the ball", "Physical strength and tackling"],
+      "worldCup2026Role": "The defensive cornerstone and most talented player in the squad, whose Ligue 1 quality elevates the entire defensive unit and represents Cabo Verde's growing footballing talent",
+      "notableFact": "His impressive performances at Toulouse have attracted attention from major European clubs, making him the highest-valued player in Cabo Verde's history"
+    },
+    "Dylan Tavares": {
+      "bio": "A dynamic right-back from the Portuguese Liga with Famalicao, Tavares provides energy and attacking thrust from the right side of defense. His Portuguese football background is shared by many Cabo Verdean players.",
+      "playingStyle": "Energetic right-back with good pace, overlapping runs, and the technical quality developed in the Portuguese league system",
+      "keyStrengths": ["Pace and energy", "Overlapping runs", "Portuguese league quality"],
+      "worldCup2026Role": "Starting right-back whose energy and attacking contributions from the flank provide width and dynamism to Cabo Verde's play",
+      "notableFact": "Part of the strong Portuguese football connection in the Cabo Verde squad, having developed his career in the Portuguese league system"
+    },
+    "Jeffry Fortes": {
+      "bio": "A reliable left-back who has built his career in Dutch football at AZ Alkmaar, Fortes provides defensive solidity and tactical discipline on the left side. His experience in the Eredivisie adds quality to Cabo Verde's defensive setup.",
+      "playingStyle": "Disciplined, steady left-back with good defensive positioning, reliable tackling, and the ability to contribute in attack with measured forward play",
+      "keyStrengths": ["Defensive discipline", "Reliable tackling", "Eredivisie experience"],
+      "worldCup2026Role": "Starting left-back whose Eredivisie experience and defensive reliability provide crucial stability in Cabo Verde's backline",
+      "notableFact": "Has developed his career at AZ Alkmaar in the Netherlands, one of several Cabo Verdean players who have found success in Dutch football"
+    },
+    "Kenny Rocha Santos": {
+      "bio": "A combative central midfielder who has played in the UAE Pro League with Al-Ain, Rocha Santos is one of Cabo Verde's most experienced and important players. His energy, leadership, and box-to-box running drive the team's engine room.",
+      "playingStyle": "Energetic, combative central midfielder with excellent stamina, good passing, and the leadership qualities to drive the team forward with his relentless running",
+      "keyStrengths": ["Stamina and energy", "Leadership in midfield", "Box-to-box running"],
+      "worldCup2026Role": "Key midfielder whose energy, experience, and leadership in the center of the park are essential to Cabo Verde's competitive structure at the World Cup",
+      "notableFact": "With 45 caps, Rocha Santos is one of Cabo Verde's most experienced players and a vital leader in the midfield engine room"
+    },
+    "Nuno Borges": {
+      "bio": "A disciplined defensive midfielder from Santa Clara in the Portuguese Liga, Borges provides the defensive screening that allows Cabo Verde's more creative players to express themselves. His positional discipline is a key tactical asset.",
+      "playingStyle": "Disciplined defensive midfielder with good positional sense, reliable ball-winning ability, and the tactical awareness to shield the defense effectively",
+      "keyStrengths": ["Positional discipline", "Ball-winning ability", "Tactical awareness"],
+      "worldCup2026Role": "Midfield anchor whose defensive discipline and positioning provide protection for the backline, a crucial role in Cabo Verde's pragmatic tactical setup",
+      "notableFact": "Has been a steady presence in Portuguese football at Santa Clara, earning regular international recognition through his consistent, reliable performances"
+    },
+    "Ryan Mendes": {
+      "bio": "One of the most iconic players in Cabo Verde history, Mendes is a veteran winger whose decades of service to the national team have made him a beloved figure. With over 60 caps and 12 goals, his commitment and quality have been central to Cabo Verde's rise.",
+      "playingStyle": "Experienced, skillful winger with excellent crossing ability, intelligent positioning, and the guile and trickery to create chances with his technical quality",
+      "keyStrengths": ["Crossing and delivery", "Experience and intelligence", "Technical skill and trickery"],
+      "worldCup2026Role": "Iconic veteran whose 60+ caps and deep connection to Cabo Verde football make him an essential presence, bringing experience and quality to the right wing",
+      "notableFact": "One of the most capped and prolific players in Cabo Verdean history, Mendes has been the face of the national team's remarkable journey from obscurity to the World Cup"
+    },
+    "Garry Rodrigues": {
+      "bio": "An electrifying winger who has starred at Galatasaray and across European football, Rodrigues is one of the most talented players Cabo Verde has ever produced. His pace, dribbling, and goal-scoring ability from the left wing make him the team's most dangerous attacker.",
+      "playingStyle": "Quick, dynamic winger with devastating pace, excellent dribbling, and the clinical finishing to score important goals from wide positions or cutting inside",
+      "keyStrengths": ["Pace and acceleration", "Dribbling and taking on defenders", "Goal-scoring from wide positions"],
+      "worldCup2026Role": "Key attacking threat whose quality and experience at European clubs make him Cabo Verde's most dangerous offensive player, capable of producing magic moments on the world stage",
+      "notableFact": "Played for Galatasaray in the Turkish Super Lig and has scored in European competition, making him the highest-profile player in Cabo Verde's football history"
+    },
+    "Jamiro Monteiro": {
+      "bio": "A creative attacking midfielder who has played in MLS with the San Jose Earthquakes after a career in European football, Monteiro brings flair, vision, and set-piece expertise to Cabo Verde's midfield. His ability to unlock defenses is a vital attacking tool.",
+      "playingStyle": "Creative, technically skilled attacking midfielder with excellent set-piece delivery, intelligent movement, and the vision to create chances for teammates",
+      "keyStrengths": ["Set-piece delivery and free kicks", "Creative vision", "Technical quality"],
+      "worldCup2026Role": "Creative playmaker whose set-piece expertise and attacking intelligence provide the invention needed to create chances against better-resourced opponents",
+      "notableFact": "Has played across Dutch, Portuguese, and American football, bringing a diverse footballing education and over 30 caps of international experience to the team"
+    },
+    "Júlio Tavares": {
+      "bio": "Cabo Verde's all-time leading scorer, Tavares is a veteran target man whose aerial ability, hold-up play, and goal-scoring instincts have been the cornerstone of the national team's attack for many years. His importance to the team cannot be overstated.",
+      "playingStyle": "Tall, powerful target man with exceptional aerial ability, strong hold-up play, and the predatory finishing of a natural goalscorer inside the penalty area",
+      "keyStrengths": ["Aerial dominance and heading", "Hold-up play and physical presence", "Goal-scoring instinct"],
+      "worldCup2026Role": "Leading striker and all-time top scorer whose physical presence and goal-scoring record make him the focal point of Cabo Verde's attack at their historic World Cup",
+      "notableFact": "Cabo Verde's all-time leading scorer with 18 international goals, a remarkable record for a player representing one of the smallest football nations in the world"
+    },
+    "Márcio Rosa": {
+      "bio": "A dependable backup goalkeeper from Portuguese second-division football, Rosa provides experienced depth in the goalkeeping department. His steady career in Portuguese football has prepared him for the demands of international competition.",
+      "playingStyle": "Reliable, experienced goalkeeper with solid fundamentals, good shot-stopping, and the composure of a seasoned professional",
+      "keyStrengths": ["Reliability and consistency", "Shot-stopping fundamentals", "Experience"],
+      "worldCup2026Role": "Backup goalkeeper providing experienced depth and professional competition within the goalkeeping group",
+      "notableFact": "Has been a reliable presence in Portuguese football, earning his place in the Cabo Verde squad through years of steady professional goalkeeping"
+    },
+    "Lisandro Semedo": {
+      "bio": "A center-back developing in Belgian football with OH Leuven, Semedo adds youthful depth to Cabo Verde's defensive options. His improving performances in the Belgian Pro League have earned him regular international recognition.",
+      "playingStyle": "Developing center-back with good physical attributes, improving positioning, and the ambition to progress his career at a higher level",
+      "keyStrengths": ["Physical attributes", "Improving positioning", "Youth and development"],
+      "worldCup2026Role": "Young defensive depth option whose development in Belgian football provides capable cover in the center-back positions",
+      "notableFact": "Has earned international recognition while developing his career in the Belgian Pro League at OH Leuven, part of the next generation of Cabo Verdean defenders"
+    },
+    "Patrick Andrade": {
+      "bio": "A versatile central midfielder with experience in Cypriot football at APOEL Nicosia, Andrade provides energy and reliability in the center of the park. His ability to contribute in both defensive and attacking phases makes him a useful squad member.",
+      "playingStyle": "Versatile, hard-working central midfielder with good passing, positional awareness, and the ability to contribute at both ends of the pitch",
+      "keyStrengths": ["Versatility in midfield", "Work rate and energy", "Passing ability"],
+      "worldCup2026Role": "Midfield option providing depth and versatility, capable of filling multiple roles in the center of the park as the tournament demands",
+      "notableFact": "Has gained international football experience through club football in Cyprus and regular appearances for Cabo Verde across qualifying campaigns"
+    },
+    "Willy Semedo": {
+      "bio": "A steady right-back from Portuguese football with Boavista, Semedo provides defensive depth and tactical flexibility on the right side. His familiarity with the Portuguese league system is shared by many of his Cabo Verdean teammates.",
+      "playingStyle": "Reliable right-back with solid defensive fundamentals, good positional play, and the consistency that comes from regular football in the Portuguese league",
+      "keyStrengths": ["Defensive reliability", "Positional play", "Consistency"],
+      "worldCup2026Role": "Backup right-back providing reliable cover on the right side of defense, his Portuguese league experience ensuring seamless integration when called upon",
+      "notableFact": "Part of the large Portuguese football contingent in the Cabo Verde squad, reflecting the strong footballing ties between the two nations"
+    },
+    "Djaniny Djaniny": {
+      "bio": "A prolific striker who has scored goals across Portuguese, Mexican, and Saudi Arabian football, Djaniny is one of Cabo Verde's most decorated and well-traveled attackers. His goal-scoring instincts and experience across diverse leagues make him a valuable asset.",
+      "playingStyle": "Clinical striker with sharp movement in the penalty area, good finishing with both feet, and the proven ability to score goals in multiple football cultures",
+      "keyStrengths": ["Clinical finishing", "Movement in the box", "Experience across diverse leagues"],
+      "worldCup2026Role": "Experienced striking option whose proven goal-scoring record across multiple leagues provides reliable depth and an alternative approach in the forward line",
+      "notableFact": "Won the Liga MX Golden Boot while playing in Mexico, one of the most impressive individual achievements by a Cabo Verdean player in club football"
+    },
+    "Bebé Bebé": {
+      "bio": "A creative winger with a talent for the unexpected, Bebe brings flair and unpredictability to Cabo Verde's attacking play. His left foot and ability to create chances from wide positions make him a useful option in the squad.",
+      "playingStyle": "Creative, left-footed winger with good dribbling ability, pace, and the willingness to try ambitious passes and shots that can catch opponents off guard",
+      "keyStrengths": ["Left-footed creativity", "Dribbling and pace", "Unpredictability"],
+      "worldCup2026Role": "Attacking option from the bench whose creativity and unpredictability can provide a different dimension when Cabo Verde need to change the dynamic of a match",
+      "notableFact": "Has built his career in Portuguese football, representing the strong pipeline of Cabo Verdean talent developed in the Portuguese league system"
+    },
+    "Jovane Cabral": {
+      "bio": "The most high-profile attacker in the Cabo Verde squad, Cabral has played at Sporting CP and Lazio in Serie A. His pace, directness, and ability to produce moments of individual brilliance make him Cabo Verde's most talented attacking player alongside Garry Rodrigues.",
+      "playingStyle": "Quick, direct winger with explosive acceleration, excellent dribbling, and a dangerous left foot that can produce goals and assists from the right wing",
+      "keyStrengths": ["Explosive pace and acceleration", "Left-footed finishing from the right", "Individual brilliance and dribbling"],
+      "worldCup2026Role": "Key attacking weapon whose Serie A experience and individual quality make him one of Cabo Verde's most dangerous players, capable of producing World Cup magic",
+      "notableFact": "Played for Lazio in Serie A and came through Sporting CP's famous academy, making him one of the most accomplished players in Cabo Verdean football history"
+    },
+    "Gilson Benchimol": {
+      "bio": "A goalkeeper from the domestic Cabo Verdean league representing Academico do Mindelo, Benchimol's inclusion in the World Cup squad is a source of immense pride for domestic football in the island nation.",
+      "playingStyle": "Domestic league goalkeeper with solid fundamentals and the passion of a player representing his country's local football on the world stage",
+      "keyStrengths": ["Passion and commitment", "Solid fundamentals", "Representation of domestic football"],
+      "worldCup2026Role": "Third-choice goalkeeper whose presence represents the domestic Cabo Verdean league on the world stage, an inspiring story for local football development",
+      "notableFact": "Plays in the Campeonato Cabo-Verdiano, the domestic league, making his inclusion in a World Cup squad one of the most remarkable stories in the tournament's history"
+    },
+    "Carlos Ponck": {
+      "bio": "An experienced center-back from Portuguese second-division football, Ponck has been a steady presence in Cabo Verde's defense over many years. His aerial ability and organizational skills have been important to the team's defensive structure.",
+      "playingStyle": "Tall, experienced center-back with good aerial ability, strong defensive instincts, and the organizational skills developed through years of professional football",
+      "keyStrengths": ["Aerial ability", "Defensive experience", "Organizational skills"],
+      "worldCup2026Role": "Experienced center-back option providing depth and aerial presence in the defensive line, particularly valuable for set-piece situations",
+      "notableFact": "Has been a loyal servant to Cabo Verde football over many years, with nearly 30 caps demonstrating his long-term commitment to the national team"
+    },
+    "Nélson Monte": {
+      "bio": "A center-back from Vitoria de Guimaraes in the Portuguese Liga, Monte brings Portuguese first-division quality to Cabo Verde's defensive options. His ability to play in a competitive European league adds valuable depth to the squad.",
+      "playingStyle": "Solid center-back with good positional play, comfortable on the ball, and the quality expected of a player competing in the Portuguese top flight",
+      "keyStrengths": ["Positional play", "Comfort on the ball", "Portuguese Liga quality"],
+      "worldCup2026Role": "Defensive depth option whose Portuguese first-division experience provides reliable cover and the quality to step in seamlessly when needed",
+      "notableFact": "Plays in the Portuguese Liga at Vitoria de Guimaraes, one of Portugal's established clubs, adding top-flight quality to Cabo Verde's defensive ranks"
+    }
+  }
+}

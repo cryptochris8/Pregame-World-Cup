@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Jindrich Stanek": {
+      "bio": "A reliable goalkeeper who emerged as Czechia's number one after strong performances with Slavia Prague in domestic and European competition. Stanek combines shot-stopping ability with commanding presence in the box.",
+      "playingStyle": "Commanding goalkeeper with strong reflexes, good distribution, and authority in organizing the defensive line",
+      "keyStrengths": ["Shot-stopping", "Commanding presence", "Distribution"],
+      "worldCup2026Role": "Starting goalkeeper and vocal leader of the defensive unit",
+      "notableFact": "Was a key figure in Czechia's penalty shootout victories over Ireland and Denmark in World Cup qualifying play-offs"
+    },
+    "Vladimir Coufal": {
+      "bio": "A tireless right-back who has been a mainstay at West Ham United since his move from Slavia Prague in 2020. Coufal is renowned for his relentless energy, defensive work rate, and overlapping runs down the right flank.",
+      "playingStyle": "Energetic, industrious right-back who combines tireless overlapping runs with disciplined defensive positioning",
+      "keyStrengths": ["Work rate", "Crossing ability", "Defensive discipline"],
+      "worldCup2026Role": "Experienced starting right-back or right wing-back bringing Premier League quality to the defense",
+      "notableFact": "Formed a celebrated partnership with Tomas Soucek at both Slavia Prague and West Ham, with the duo nicknamed the 'Czech Hammers' by fans"
+    },
+    "Tomas Holes": {
+      "bio": "A versatile defender and midfielder who became a Czech national hero at Euro 2020 with crucial goals against the Netherlands. Holes has been a pillar of consistency at Slavia Prague for years.",
+      "playingStyle": "Versatile, intelligent defender who can operate at center-back or in midfield, with a surprising knack for arriving late in the box to score",
+      "keyStrengths": ["Versatility", "Late runs into the box", "Tactical intelligence"],
+      "worldCup2026Role": "Versatile squad member capable of filling multiple defensive and midfield roles",
+      "notableFact": "Scored the opening goal against the Netherlands at Euro 2020, helping Czechia stun the Dutch and reach the quarter-finals"
+    },
+    "Ladislav Krejci": {
+      "bio": "A highly-rated young center-back who earned a move to Girona in La Liga after impressive performances with Sparta Prague. The younger Krejci (not to be confused with his retired namesake) is a ball-playing defender with composure beyond his years.",
+      "playingStyle": "Left-footed, ball-playing center-back who is comfortable stepping into midfield with the ball and building attacks from deep",
+      "keyStrengths": ["Ball-playing ability", "Left-footed passing", "Aerial strength"],
+      "worldCup2026Role": "Starting center-back and key figure in building play from the back in Hasek's system",
+      "notableFact": "Earned a move to La Liga side Girona after starring for Sparta Prague in the Champions League group stage"
+    },
+    "Robin Hranac": {
+      "bio": "A physically imposing center-back who represented Czechia at Euro 2024 in Germany. Hranac earned a move to Hoffenheim in the Bundesliga after strong showings with Viktoria Plzen.",
+      "playingStyle": "Strong, aerially dominant center-back who is aggressive in duels and comfortable in a back-three system",
+      "keyStrengths": ["Aerial dominance", "Physicality", "Aggressive defending"],
+      "worldCup2026Role": "Starting center-back providing defensive solidity and set-piece threat",
+      "notableFact": "Was one of the standout Czech performers at Euro 2024, earning his Bundesliga transfer shortly after the tournament"
+    },
+    "David Jurasek": {
+      "bio": "A dynamic, attack-minded left-back who plays for Hoffenheim in the Bundesliga. Jurasek burst onto the scene at Slavia Prague with his energetic runs and was quickly identified as one of Czech football's brightest young talents.",
+      "playingStyle": "Attack-minded left-back with pace, energy, and the ability to deliver dangerous crosses from advanced positions",
+      "keyStrengths": ["Attacking runs", "Crossing", "Pace"],
+      "worldCup2026Role": "Starting left-back or left wing-back providing width and attacking impetus",
+      "notableFact": "Was loaned to Benfica before settling at Hoffenheim, gaining valuable experience at one of Europe's top clubs"
+    },
+    "Tomas Soucek": {
+      "bio": "The captain and heartbeat of Czech football. Soucek is a box-to-box midfielder who has become one of the Premier League's most respected players at West Ham United, combining defensive duties with a remarkable goal-scoring record from midfield.",
+      "playingStyle": "Towering box-to-box midfielder with exceptional aerial ability, tireless engine, and an uncanny knack for arriving in the penalty area to score",
+      "keyStrengths": ["Aerial ability", "Box-to-box running", "Goal-scoring from midfield"],
+      "worldCup2026Role": "Captain and central figure in midfield, responsible for both defensive screening and providing a goal threat from deep",
+      "notableFact": "Has scored over 15 Premier League goals as a midfielder for West Ham, an outstanding return for a player who also excels defensively"
+    },
+    "David Doudera": {
+      "bio": "A dependable left-back from Slavia Prague who provides solid backup and competition for the left-back position. Doudera is a steady, defensively-minded full-back with good positional sense.",
+      "playingStyle": "Defensively reliable left-back who prioritizes positioning and solidity over attacking adventure",
+      "keyStrengths": ["Defensive positioning", "Consistency", "Tactical discipline"],
+      "worldCup2026Role": "Backup left-back providing defensive depth and squad rotation option",
+      "notableFact": "Has been a consistent performer in European competition with Slavia Prague, gaining experience in the Conference League and Europa League"
+    },
+    "Adam Hlozek": {
+      "bio": "One of Czech football's most exciting young talents, Hlozek made his senior debut at just 16 and moved to Bayer Leverkusen before joining Hoffenheim. A tall, technically gifted forward who can play across the front line.",
+      "playingStyle": "Tall, technically skilled forward with good movement, two-footed finishing, and the ability to play as a striker or wide forward",
+      "keyStrengths": ["Technical ability", "Versatility in attack", "Physical presence"],
+      "worldCup2026Role": "Key attacking option as a starting forward or impact substitute capable of changing games",
+      "notableFact": "Became the youngest scorer in Czech top-flight history when he scored for Sparta Prague aged 16, and was part of Leverkusen's invincible Bundesliga-winning squad in 2023-24"
+    },
+    "Patrik Schick": {
+      "bio": "Czechia's star striker and one of the most naturally gifted forwards in European football. Schick announced himself on the world stage with five goals at Euro 2020, including a stunning halfway-line strike against Scotland that won the tournament's Goal of the Tournament award.",
+      "playingStyle": "Elegant, technically refined striker with superb first touch, clinical finishing, and the vision to link play and bring others into the attack",
+      "keyStrengths": ["Clinical finishing", "Technical quality", "Long-range shooting"],
+      "worldCup2026Role": "First-choice striker and primary goal threat, the focal point of Czechia's attack",
+      "notableFact": "His spectacular goal from near the halfway line against Scotland at Euro 2020 was voted Goal of the Tournament and became one of the most iconic goals in European Championship history"
+    },
+    "Pavel Sulc": {
+      "bio": "An exciting attacking midfielder who emerged as one of Czech football's key creative forces. Sulc impressed with Viktoria Plzen in domestic competition and earned his place in the national team with consistent, eye-catching performances.",
+      "playingStyle": "Creative, agile attacking midfielder with good dribbling ability, sharp movement between the lines, and an eye for the final pass",
+      "keyStrengths": ["Creativity", "Dribbling", "Movement between lines"],
+      "worldCup2026Role": "Creative midfielder providing invention and the final-third quality needed to unlock organized defenses",
+      "notableFact": "Was one of the breakout performers in Czech football in the 2024-25 season, earning consistent national team call-ups with his dynamic displays"
+    },
+    "Lukas Provod": {
+      "bio": "A dynamic midfielder from Slavia Prague who is known for his energy, pressing intensity, and ability to score important goals. Provod's career was interrupted by a serious knee injury but he returned strongly.",
+      "playingStyle": "High-energy, pressing midfielder who covers enormous ground, wins possession, and contributes with goals from the edge of the box",
+      "keyStrengths": ["Pressing intensity", "Long-range shooting", "Work rate"],
+      "worldCup2026Role": "Starting or rotational central midfielder providing energy and goal threat from deep",
+      "notableFact": "Suffered a serious ACL injury before Euro 2020 but battled back to reclaim his place as one of Czechia's most important midfielders"
+    },
+    "Ondrej Lingr": {
+      "bio": "A hardworking midfielder who earned a move to Feyenoord in the Netherlands after impressing at Slavia Prague. Lingr is valued for his pressing, work rate, and ability to contribute goals from midfield.",
+      "playingStyle": "Industrious, pressing midfielder who excels at winning the ball back and transitioning play quickly from defense to attack",
+      "keyStrengths": ["Pressing", "Work rate", "Transition play"],
+      "worldCup2026Role": "Versatile midfield option who can press from the front and provide squad depth across multiple positions",
+      "notableFact": "Moved to Feyenoord and adapted well to Dutch football, contributing to their Eredivisie title challenge"
+    },
+    "Michal Sadilek": {
+      "bio": "A versatile midfielder who has plied his trade in the Netherlands with PSV Eindhoven and FC Twente. Sadilek can operate in multiple midfield roles and brings experience of Dutch football's technical demands.",
+      "playingStyle": "Versatile, technically sound midfielder who can play as a deep-lying playmaker or box-to-box runner depending on tactical requirements",
+      "keyStrengths": ["Versatility", "Technical quality", "Passing range"],
+      "worldCup2026Role": "Squad depth option in central midfield providing tactical flexibility",
+      "notableFact": "Spent several years in the Netherlands developing his game, coming through PSV's system before establishing himself at FC Twente"
+    },
+    "Vaclav Cerny": {
+      "bio": "A tricky, creative winger who came through the Ajax academy and has played across several European leagues. Cerny is a direct, skillful attacker who creates chances with his dribbling and movement.",
+      "playingStyle": "Direct, skillful winger who cuts inside from the right on his preferred left foot, dangerous in one-on-one situations",
+      "keyStrengths": ["Dribbling", "Cutting inside", "Chance creation"],
+      "worldCup2026Role": "Starting right winger or attacking option from the bench, providing directness and creativity in the final third",
+      "notableFact": "Came through the famous Ajax academy alongside a generation of Dutch talent before choosing to represent Czechia internationally"
+    },
+    "Mojmir Chytil": {
+      "bio": "A lively young striker with good movement and finishing instincts. Chytil has developed rapidly at Slavia Prague and offers a different dimension in attack with his pace and intelligent runs.",
+      "playingStyle": "Mobile, intelligent striker who makes sharp runs in behind defenses and finishes clinically when presented with chances",
+      "keyStrengths": ["Movement", "Pace", "Clinical finishing"],
+      "worldCup2026Role": "Backup striker and impact substitute offering pace and energy from the bench",
+      "notableFact": "Named after the sport of archery in Czech (Chytil means 'caught'), he is known for his sharp, arrow-like runs behind defensive lines"
+    },
+    "Alex Kral": {
+      "bio": "A tall, athletic defensive midfielder who has experience across multiple European leagues including the Premier League (loan at West Ham) and Bundesliga. Kral provides a physical presence in the center of midfield.",
+      "playingStyle": "Athletic, ball-carrying defensive midfielder who uses his long stride and physicality to break up play and drive forward with the ball",
+      "keyStrengths": ["Ball carrying", "Physical presence", "Defensive coverage"],
+      "worldCup2026Role": "Rotational defensive midfielder who can step in alongside or in place of Soucek in the deeper midfield role",
+      "notableFact": "Has played in four different European leagues (Czech, Russian, English, and German), gaining a breadth of tactical experience unusual for a Czech player"
+    },
+    "Jan Kuchta": {
+      "bio": "A hard-running, aggressive striker who has been a consistent goalscorer in Czech and Scandinavian football. Kuchta brings energy, pressing, and aerial threat to the forward line.",
+      "playingStyle": "Aggressive, physical striker who presses relentlessly from the front and uses his aerial ability and work rate to create opportunities",
+      "keyStrengths": ["Pressing", "Aerial ability", "Work rate"],
+      "worldCup2026Role": "Squad striker providing a physical, pressing option from the bench or in specific tactical setups",
+      "notableFact": "Won the Czech First League top scorer award and has maintained his form while playing abroad in Scandinavia"
+    },
+    "Vitezslav Jaros": {
+      "bio": "A young goalkeeper who was part of Liverpool's academy system before moving to Austria to gain regular first-team football. Jaros is a promising shot-stopper with excellent distribution.",
+      "playingStyle": "Modern goalkeeper with quick reflexes, confident with the ball at his feet, and good decision-making in one-on-one situations",
+      "keyStrengths": ["Reflexes", "Distribution", "Decision-making"],
+      "worldCup2026Role": "Second-choice goalkeeper providing quality depth behind Stanek",
+      "notableFact": "Spent time in Liverpool's academy and was part of their development pathway before seeking regular football in Austrian football"
+    },
+    "Matej Kovar": {
+      "bio": "A goalkeeper on the books at Bayer Leverkusen who serves as backup to the senior keepers. Kovar has experience in English football through Manchester United's academy and loans.",
+      "playingStyle": "Athletic goalkeeper with good handling, commanding aerial presence, and experience in high-pressure environments",
+      "keyStrengths": ["Handling", "Aerial command", "Composure"],
+      "worldCup2026Role": "Third-choice goalkeeper providing additional depth and training quality",
+      "notableFact": "Was part of Bayer Leverkusen's historic unbeaten Bundesliga title-winning squad in 2023-24"
+    },
+    "Tomas Vlcek": {
+      "bio": "A young, energetic midfielder from Sparta Prague who has emerged as one of the exciting prospects in Czech football. Vlcek offers dynamism and technical quality in the central areas.",
+      "playingStyle": "Dynamic, technically gifted central midfielder with good passing vision, comfortable under pressure, and effective in both phases of play",
+      "keyStrengths": ["Technical ability", "Passing vision", "Composure under pressure"],
+      "worldCup2026Role": "Young midfield talent providing energy and creativity as a rotation option",
+      "notableFact": "Has been a key part of Sparta Prague's resurgence in European competition, featuring in Champions League qualifiers and group stage matches"
+    },
+    "Tomas Chory": {
+      "bio": "A towering target man at 196cm who provides a completely different attacking dimension. Chory is a specialist at winning aerial duels and holding up play, making him a valuable option when chasing games.",
+      "playingStyle": "Classic target man who wins virtually every aerial duel, holds the ball up effectively, and brings teammates into play with layoffs",
+      "keyStrengths": ["Aerial dominance", "Hold-up play", "Physical presence"],
+      "worldCup2026Role": "Impact substitute and Plan B option when a direct, physical approach is needed late in games",
+      "notableFact": "At 196cm, he is the tallest outfield player in the Czech squad and one of the most effective aerial threats in the Czech First League"
+    },
+    "David Zima": {
+      "bio": "A young center-back who had a stint in Serie A with Torino before returning to Czech football with Slavia Prague. Zima is composed on the ball and has experience at the highest level.",
+      "playingStyle": "Composed, ball-playing center-back who reads the game well and is comfortable playing out from the back under pressure",
+      "keyStrengths": ["Composure on the ball", "Reading the game", "Recovery pace"],
+      "worldCup2026Role": "Backup center-back with Serie A experience providing quality depth to the defensive unit",
+      "notableFact": "Gained valuable Serie A experience with Torino, becoming one of the few Czech defenders to play in Italy's top flight in recent years"
+    },
+    "Antonin Barak": {
+      "bio": "A tall, goal-scoring midfielder who has spent the bulk of his career in Serie A with clubs like Udinese, Verona, and Fiorentina. Barak is known for his late runs into the box, heading ability, and set-piece prowess.",
+      "playingStyle": "Goal-scoring central midfielder with excellent aerial ability, times his runs into the box superbly, and is dangerous from set pieces",
+      "keyStrengths": ["Goals from midfield", "Aerial ability", "Set-piece threat"],
+      "worldCup2026Role": "Experienced attacking midfielder who provides a goal threat and set-piece quality from the bench or in a more advanced role",
+      "notableFact": "Scored a brace against Poland at Euro 2024 qualifiers, demonstrating his consistent ability to deliver important goals for his country"
+    },
+    "Jan Boril": {
+      "bio": "A veteran left-back and long-time servant of Slavia Prague and the Czech national team. Boril is a reliable, no-nonsense defender who has accumulated significant international experience over a lengthy career.",
+      "playingStyle": "Experienced, defensively solid left-back who prioritizes positional discipline and rarely gets caught out of position",
+      "keyStrengths": ["Experience", "Defensive reliability", "Positional discipline"],
+      "worldCup2026Role": "Experienced backup left-back providing veteran leadership and defensive security when called upon",
+      "notableFact": "Has been one of the most consistent performers in the Czech First League over the past decade, winning multiple titles with Slavia Prague"
+    },
+    "Martin Vitik": {
+      "bio": "One of the most exciting young defenders in Czech football, Vitik has emerged at Sparta Prague as a composed, technically gifted center-back with enormous potential. At just 22, he is seen as the future of Czech defending.",
+      "playingStyle": "Young, modern center-back with excellent passing range, composure under pressure, and the athleticism to defend in space",
+      "keyStrengths": ["Passing range", "Composure", "Athleticism"],
+      "worldCup2026Role": "Young squad member gaining World Cup experience as a center-back rotation option with a bright future ahead",
+      "notableFact": "Made his senior international debut as a teenager and is regarded as one of the most promising defensive talents in Czech football history"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "teamCode": "CZE",
+  "teamName": "Czechia",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2006,
+    "appearances": [
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goalsFor": 3,
+      "goalsAgainst": 4
+    },
+    "topScorers": [
+      { "name": "Tomas Rosicky", "goals": 1, "tournaments": "2006" },
+      { "name": "Jan Koller", "goals": 1, "tournaments": "2006" },
+      { "name": "Milan Baros", "goals": 1, "tournaments": "2006" }
+    ],
+    "notableMoments": [
+      "Qualified for the 2026 World Cup through UEFA Play-Off Path D, beating Ireland and Denmark both on penalties",
+      "Only previous World Cup appearance as Czechia was in 2006 in Germany, where they exited in the group stage despite beating the USA 3-0",
+      "As Czechoslovakia, reached the World Cup final twice: runners-up in 1934 (lost to Italy) and 1962 (lost to Brazil)",
+      "Czechoslovakia finished third at the 1962 World Cup and their 1934 team were one of the first great European sides",
+      "The Czech Republic's golden generation of the 2000s (Nedved, Rosicky, Cech, Baros, Koller) dominated European football but underachieved at World Cups",
+      "Euro 1996 runners-up as Czech Republic, losing the final to Germany via golden goal — their best result as an independent nation before the 2026 World Cup qualification",
+      "Ivan Hasek returned for a second stint as national team manager in 2024 and masterminded the play-off qualification campaign",
+      "The 2026 World Cup marks Czechia's return to the tournament for the first time in 20 years"
+    ]
+  }
+}

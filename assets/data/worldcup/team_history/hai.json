@@ -1,0 +1,36 @@
+{
+  "teamCode": "HAI",
+  "teamName": "Haiti",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1974,
+    "appearances": [
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 14
+    },
+    "topScorers": [
+      { "name": "Emmanuel Sanon", "goals": 2, "tournaments": "1974" }
+    ],
+    "notableMoments": [
+      "Haiti's first World Cup appearance came in 1974 in West Germany, where Emmanuel Sanon scored a historic goal to break Italian goalkeeper Dino Zoff's world-record unbeaten streak of 1,142 minutes",
+      "The 2026 World Cup marks Haiti's return to the tournament after 52 years, the longest gap between appearances for any nation in the tournament's history",
+      "Emmanuel Sanon's goal against Italy in 1974 is considered one of the most iconic moments in Caribbean football history",
+      "Haiti qualified for the 2026 World Cup through the CONCACAF pathway, a remarkable achievement for a nation that has overcome immense socio-economic challenges",
+      "The 1974 squad was celebrated as national heroes upon their return, despite losing all three group matches against Italy, Poland, and Argentina",
+      "Haiti's football resurgence represents one of the most inspiring stories in the 2026 World Cup, demonstrating the sport's power to unite communities through adversity",
+      "The current squad blends players from MLS, French lower divisions, and the domestic Ligue Haitienne, reflecting the Haitian diaspora's contribution to the national team",
+      "Frantzdy Pierrot and Derrick Etienne Jr. lead a new generation of Haitian footballers aiming to write a more successful chapter than the 1974 campaign"
+    ]
+  }
+}

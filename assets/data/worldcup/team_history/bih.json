@@ -1,0 +1,37 @@
+{
+  "teamCode": "BIH",
+  "teamName": "Bosnia and Herzegovina",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2014,
+    "appearances": [
+      { "year": 2014, "result": "Group Stage", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goalsFor": 4,
+      "goalsAgainst": 4
+    },
+    "topScorers": [
+      { "name": "Edin Dzeko", "goals": 1, "tournaments": "2014" },
+      { "name": "Vedad Ibisevic", "goals": 1, "tournaments": "2014" },
+      { "name": "Avdija Vrsajevic", "goals": 1, "tournaments": "2014" }
+    ],
+    "notableMoments": [
+      "First ever World Cup qualification in 2014 under coach Safet Susic, a watershed moment for the young nation",
+      "Edin Dzeko scored Bosnia's first ever World Cup goal against Argentina in their opening match at the 2014 tournament",
+      "Beat Iran 3-1 in their final group match in 2014, earning their first ever World Cup victory",
+      "Narrowly eliminated in the group stage in 2014 after losses to Argentina (1-2) and Nigeria (0-1)",
+      "Qualified for 2026 World Cup through UEFA Play-Off Path A, beating Wales in the semi-final on penalties",
+      "Eliminated four-time world champions Italy on penalties (4-1) in the playoff final to secure their place at the 2026 World Cup",
+      "Goalkeeper Nikola Vasilj emerged as a national hero with his penalty-saving performances in the playoff campaign",
+      "Haris Tabakovic scored a crucial goal in the playoff final against Italy, giving Bosnia the lead before the dramatic shootout"
+    ]
+  }
+}

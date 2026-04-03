@@ -1,0 +1,48 @@
+{
+  "teamCode": "SWE",
+  "teamName": "Sweden",
+  "worldCupHistory": {
+    "totalAppearances": 12,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Runner-up",
+    "bestFinishYear": 1958,
+    "appearances": [
+      { "year": 1934, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 1938, "result": "Fourth Place", "stage": "Fourth Place" },
+      { "year": 1950, "result": "Third Place", "stage": "Third Place" },
+      { "year": 1958, "result": "Runner-up", "stage": "Final" },
+      { "year": 1970, "result": "Group Stage", "stage": "Group Stage" },
+      { "year": 1974, "result": "Group Stage", "stage": "Group Stage" },
+      { "year": 1978, "result": "Group Stage", "stage": "Group Stage" },
+      { "year": 1990, "result": "Group Stage", "stage": "Group Stage" },
+      { "year": 1994, "result": "Third Place", "stage": "Third Place" },
+      { "year": 2002, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2018, "result": "Quarter-finals", "stage": "Quarter-finals" }
+    ],
+    "allTimeRecord": {
+      "played": 53,
+      "won": 20,
+      "drawn": 10,
+      "lost": 23,
+      "goalsFor": 80,
+      "goalsAgainst": 85
+    },
+    "topScorers": [
+      { "name": "Henrik Larsson", "goals": 5, "tournaments": "1994, 2002, 2006" },
+      { "name": "Kennet Andersson", "goals": 4, "tournaments": "1994" },
+      { "name": "Tomas Brolin", "goals": 4, "tournaments": "1990, 1994" },
+      { "name": "Agne Simonsson", "goals": 4, "tournaments": "1958" },
+      { "name": "Kurt Hamrin", "goals": 3, "tournaments": "1958" }
+    ],
+    "notableMoments": [
+      "Hosted the 1958 World Cup and reached the final, losing 5-2 to a Pelé-inspired Brazil",
+      "Finished third at the 1950 World Cup in Brazil and the 1994 World Cup in the United States",
+      "Henrik Larsson scored three goals as Sweden reached the Round of 16 at the 2002 World Cup in Japan/Korea",
+      "Reached the quarter-finals at the 2018 World Cup in Russia after a group-stage victory over Mexico and eliminating Switzerland",
+      "Tomas Brolin and Kennet Andersson led Sweden to a memorable third-place finish at USA 1994, their best modern tournament result",
+      "Viktor Gyökeres scored a hat-trick in the UEFA play-off semi-final against Albania and the decisive goal in a 3-2 victory over Poland to qualify for the 2026 World Cup"
+    ]
+  }
+}

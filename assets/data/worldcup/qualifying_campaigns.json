@@ -458,39 +458,39 @@
       "biggestWin": "3-0 vs Bermuda",
       "worstDefeat": "0-1 vs Jamaica"
     },
-    "DEN": {
-      "teamCode": "DEN",
-      "teamName": "Denmark",
+    "CZE": {
+      "teamCode": "CZE",
+      "teamName": "Czechia",
       "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group C runner-up + Playoffs (Path D)",
+      "qualificationMethod": "UEFA European Qualifiers - Play-Off Path D",
       "qualificationDate": "2026-03-31",
-      "matches": 6,
-      "wins": 3,
-      "draws": 2,
-      "losses": 1,
-      "goalsFor": 16,
-      "goalsAgainst": 7,
-      "goalDifference": 9,
-      "points": 11,
-      "groupPosition": 2,
+      "matches": 10,
+      "wins": 5,
+      "draws": 3,
+      "losses": 2,
+      "goalsFor": 15,
+      "goalsAgainst": 10,
+      "goalDifference": 5,
+      "points": 18,
+      "groupPosition": 3,
       "topScorer": {
-        "name": "Rasmus Hojlund",
+        "name": "Adam Hlozek",
         "goals": 4
       },
-      "qualifyingHighlight": "Finished 2nd behind Scotland; qualified via playoff Path D",
+      "qualifyingHighlight": "Qualified via UEFA Play-Off Path D after finishing 3rd in qualifying group; Soucek and Hlozek led the campaign",
       "homeRecord": {
-        "wins": 2,
-        "draws": 1,
+        "wins": 3,
+        "draws": 2,
         "losses": 0
       },
       "awayRecord": {
-        "wins": 1,
+        "wins": 2,
         "draws": 1,
-        "losses": 1
+        "losses": 2
       },
-      "cleanSheets": 2,
-      "biggestWin": "5-0 vs Belarus",
-      "worstDefeat": "2-4 vs Scotland"
+      "cleanSheets": 3,
+      "biggestWin": "3-0 vs Faroe Islands",
+      "worstDefeat": "0-2 vs Portugal"
     },
     "ECU": {
       "teamCode": "ECU",
@@ -764,39 +764,39 @@
       "biggestWin": "2-0 vs Nicaragua",
       "worstDefeat": "0-2 vs Honduras"
     },
-    "IDN": {
-      "teamCode": "IDN",
-      "teamName": "Indonesia",
-      "confederation": "AFC",
-      "qualificationMethod": "AFC Third Round + Intercontinental Playoff",
+    "SWE": {
+      "teamCode": "SWE",
+      "teamName": "Sweden",
+      "confederation": "UEFA",
+      "qualificationMethod": "UEFA European Qualifiers - Play-Off Path B",
       "qualificationDate": "2026-03-31",
-      "matches": 12,
-      "wins": 3,
-      "draws": 3,
-      "losses": 6,
-      "goalsFor": 11,
-      "goalsAgainst": 24,
-      "goalDifference": -13,
-      "points": 12,
-      "groupPosition": 4,
+      "matches": 10,
+      "wins": 6,
+      "draws": 2,
+      "losses": 2,
+      "goalsFor": 22,
+      "goalsAgainst": 9,
+      "goalDifference": 13,
+      "points": 20,
+      "groupPosition": 2,
       "topScorer": {
-        "name": "Rafael Struick",
-        "goals": 4
+        "name": "Viktor Gyokeres",
+        "goals": 8
       },
-      "qualifyingHighlight": "Historic first World Cup appearance for the world's 4th most populous nation; qualified via intercontinental playoff",
+      "qualifyingHighlight": "Gyokeres scored 8 goals in qualifying; qualified via UEFA Play-Off Path B after finishing 2nd in group",
       "homeRecord": {
-        "wins": 2,
-        "draws": 2,
-        "losses": 1
+        "wins": 4,
+        "draws": 1,
+        "losses": 0
       },
       "awayRecord": {
-        "wins": 1,
+        "wins": 2,
         "draws": 1,
-        "losses": 5
+        "losses": 2
       },
-      "cleanSheets": 2,
-      "biggestWin": "2-0 vs Bahrain",
-      "worstDefeat": "0-5 vs Japan"
+      "cleanSheets": 4,
+      "biggestWin": "4-0 vs Azerbaijan",
+      "worstDefeat": "1-3 vs Belgium"
     },
     "IRN": {
       "teamCode": "IRN",
@@ -866,39 +866,39 @@
       "biggestWin": "2-0 vs Vietnam",
       "worstDefeat": "0-2 vs Japan"
     },
-    "ITA": {
-      "teamCode": "ITA",
-      "teamName": "Italy",
+    "BIH": {
+      "teamCode": "BIH",
+      "teamName": "Bosnia and Herzegovina",
       "confederation": "UEFA",
-      "qualificationMethod": "UEFA European Qualifiers - Group I runner-up + Playoffs (Path A)",
+      "qualificationMethod": "UEFA European Qualifiers - Play-Off Path A",
       "qualificationDate": "2026-03-31",
-      "matches": 8,
-      "wins": 6,
-      "draws": 0,
-      "losses": 2,
-      "goalsFor": 21,
+      "matches": 10,
+      "wins": 4,
+      "draws": 3,
+      "losses": 3,
+      "goalsFor": 14,
       "goalsAgainst": 12,
-      "goalDifference": 9,
-      "points": 18,
-      "groupPosition": 2,
+      "goalDifference": 2,
+      "points": 15,
+      "groupPosition": 3,
       "topScorer": {
-        "name": "Mateo Retegui",
-        "goals": 5
+        "name": "Ermedin Demirovic",
+        "goals": 4
       },
-      "qualifyingHighlight": "Finished 2nd behind Norway's perfect record; qualified via playoff Path A",
+      "qualifyingHighlight": "Qualified via UEFA Play-Off Path A; Dzeko's experience and Demirovic's goals proved crucial in playoffs",
       "homeRecord": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 0
+        "wins": 3,
+        "draws": 1,
+        "losses": 1
       },
       "awayRecord": {
-        "wins": 2,
-        "draws": 0,
+        "wins": 1,
+        "draws": 2,
         "losses": 2
       },
       "cleanSheets": 3,
-      "biggestWin": "5-0 vs Moldova",
-      "worstDefeat": "1-3 vs Norway"
+      "biggestWin": "3-0 vs Liechtenstein",
+      "worstDefeat": "0-2 vs Hungary"
     },
     "JOR": {
       "teamCode": "JOR",

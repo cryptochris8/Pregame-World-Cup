@@ -1,0 +1,35 @@
+{
+  "team1Code": "JPN",
+  "team2Code": "SWE",
+  "team1Name": "Japan",
+  "team2Name": "Sweden",
+  "historicalAnalysis": "Japan and Sweden bring contrasting footballing philosophies to this Group F encounter. Japan have emerged as one of the most exciting teams in world football, with their performances at the 2022 World Cup — defeating both Germany and Spain in the group stage — announcing them as legitimate contenders rather than mere participants. The Samurai Blue's commitment to attacking, technically proficient football has won admirers globally, and their squad is now stacked with players from Europe's top leagues.\n\nSweden's return to the World Cup marks a welcome comeback for Scandinavian football's most successful nation. With three World Cup semifinal appearances in their history, including as runners-up in 1958 on home soil, Sweden have a rich tournament heritage. The current generation is headlined by Viktor Gyokeres and Alexander Isak, two of the most in-demand strikers in European football, giving Sweden a potent attacking punch that few teams can match.",
+  "keyStorylines": [
+    "Japan's status as giant killers after defeating Germany and Spain at the 2022 World Cup makes them a team every opponent fears",
+    "Viktor Gyokeres' sensational club form with Sporting CP has made him one of the most talked-about strikers in world football",
+    "Takefusa Kubo and Kaoru Mitoma represent Japan's new wave of technically gifted attackers thriving in European football",
+    "Sweden look to re-establish themselves as a World Cup force after missing the 2022 tournament"
+  ],
+  "playersToWatch": [
+    {"name": "Takefusa Kubo", "teamCode": "JPN", "position": "Winger", "reason": "Real Sociedad's creative genius whose dribbling and vision have made him one of La Liga's most exciting players"},
+    {"name": "Viktor Gyökeres", "teamCode": "SWE", "position": "Striker", "reason": "One of Europe's most prolific scorers whose physical power and finishing ability make him virtually unplayable on his day"},
+    {"name": "Kaoru Mitoma", "teamCode": "JPN", "position": "Winger", "reason": "Brighton's electrifying dribbler whose ability to beat defenders one-on-one creates chaos for opposing defenses"},
+    {"name": "Alexander Isak", "teamCode": "SWE", "position": "Striker", "reason": "Newcastle's elegant striker combines technical skill with clinical finishing, forming a devastating partnership with Gyokeres"}
+  ],
+  "tacticalPreview": "Japan's tactical approach under their coaching staff emphasizes high pressing, quick transitions, and technical superiority in tight spaces. Their wingers, Kubo and Mitoma, are given license to take on defenders and create chances, while the midfield works tirelessly to win the ball back high up the pitch. Japan's defensive discipline, which proved crucial in their famous victories over Germany and Spain, will be tested by Sweden's formidable strike force.\n\nSweden's system is built around getting the best out of Gyokeres and Isak, two strikers who complement each other superbly. Gyokeres' physical presence and ability to hold the ball up allows Isak to drift into space and use his technical quality in dangerous areas. Dejan Kulusevski and Anthony Elanga provide width and creativity from the flanks, giving Sweden multiple attacking avenues. The tactical battle will hinge on whether Japan's pressing can disrupt Sweden's build-up before the ball reaches their lethal front two.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "2-2",
+    "confidence": 35,
+    "reasoning": "Both teams possess exceptional attacking talent and the quality to score against any defense. Japan's tactical sophistication and Sweden's raw firepower create a matchup where goals at both ends seem inevitable. Neither side's defense is their strongest suit, making an entertaining draw the most likely outcome.",
+    "alternativeScenario": "Japan's superior tactical organization and pressing could overwhelm Sweden early, leading to a dominant 3-1 victory if Kubo and Mitoma exploit the spaces left by Sweden's attacking fullbacks."
+  },
+  "pastEncountersSummary": "Japan and Sweden have met occasionally in friendly matches but have never faced each other in a World Cup. Their encounters have been relatively evenly matched, with both teams treating these fixtures as valuable preparation for major tournaments. This World Cup group stage match represents their most significant competitive meeting.",
+  "funFacts": [
+    "Japan have won their World Cup group in two of the last three tournaments, defeating traditional powerhouses Germany, Spain, and Colombia along the way",
+    "Sweden's Viktor Gyokeres scored over 40 goals in a single season for Sporting CP, a feat that attracted interest from virtually every top club in Europe",
+    "Japan's J-League was only founded in 1993, yet the national team has qualified for every World Cup since 1998",
+    "Sweden's 1958 World Cup final on home soil remains the closest the nation has come to winning the tournament, losing 5-2 to a Pelé-inspired Brazil"
+  ],
+  "isFirstMeeting": true
+}

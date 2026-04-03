@@ -1,0 +1,45 @@
+{
+  "teamCode": "SCO",
+  "teamName": "Scotland",
+  "worldCupHistory": {
+    "totalAppearances": 8,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1974,
+    "appearances": [
+      { "year": 1954, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1958, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1978, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1982, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1990, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 23,
+      "won": 4,
+      "drawn": 7,
+      "lost": 12,
+      "goalsFor": 25,
+      "goalsAgainst": 41
+    },
+    "topScorers": [
+      { "name": "Joe Jordan", "goals": 4, "tournaments": "1974, 1978, 1982" },
+      { "name": "Archie Gemmill", "goals": 2, "tournaments": "1978" },
+      { "name": "Kenny Dalglish", "goals": 2, "tournaments": "1978, 1982" },
+      { "name": "John Collins", "goals": 1, "tournaments": "1998" }
+    ],
+    "notableMoments": [
+      "Archie Gemmill scored one of the greatest World Cup goals of all time against the Netherlands in 1978, a mesmerizing solo run and chip that remains the defining image of Scottish World Cup history",
+      "Scotland have appeared at eight World Cups but have never advanced beyond the group stage, a painful record that fuels the nation's determination to break through in 2026",
+      "The 1978 campaign in Argentina was marked by Ally MacLeod's over-confident predictions and Scotland's dramatic failure to progress despite beating the Netherlands 3-2",
+      "Scotland's last World Cup appearance was in 1998 in France, making the 2026 tournament their first in 28 years and one of the most anticipated moments in Scottish sporting history",
+      "The famous 'Tartan Army' of traveling Scottish fans is renowned as one of the most passionate and good-natured supporter groups in world football",
+      "In 1974, Scotland were the only unbeaten team to be eliminated from the World Cup, drawing with Brazil and Yugoslavia before narrowly missing out on goal difference",
+      "Andy Robertson's captaincy and the emergence of Scott McTominay, Billy Gilmour, and John McGinn have given Scotland their strongest squad in a generation",
+      "Scotland qualified for the 2026 World Cup through European qualification, ending their longest-ever absence from the tournament and sparking wild celebrations across the country"
+    ]
+  }
+}

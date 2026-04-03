@@ -1,0 +1,41 @@
+{
+  "teamCode": "GHA",
+  "teamName": "Ghana",
+  "worldCupHistory": {
+    "totalAppearances": 5,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Quarter-finals",
+    "bestFinishYear": 2010,
+    "appearances": [
+      { "year": 2006, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2010, "result": "Quarter-finals", "stage": "Quarter-finals" },
+      { "year": 2014, "result": "Group Stage", "stage": "Group Stage" },
+      { "year": 2022, "result": "Group Stage", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 13,
+      "won": 4,
+      "drawn": 3,
+      "lost": 6,
+      "goalsFor": 12,
+      "goalsAgainst": 16
+    },
+    "topScorers": [
+      { "name": "Asamoah Gyan", "goals": 6, "tournaments": "2006, 2010, 2014" },
+      { "name": "Sulley Muntari", "goals": 2, "tournaments": "2010, 2014" },
+      { "name": "Andre Ayew", "goals": 2, "tournaments": "2014, 2022" }
+    ],
+    "notableMoments": [
+      "Reached the quarter-finals at the 2010 World Cup in South Africa, the closest an African nation came to the semi-finals that year, only denied by Luis Suarez's deliberate handball on the goal line",
+      "Asamoah Gyan's missed penalty in the final minute of extra time against Uruguay in 2010 remains one of the most heartbreaking moments in World Cup history",
+      "Became only the third African nation to reach the World Cup quarter-finals in 2010, following Cameroon (1990) and Senegal (2002)",
+      "In their debut World Cup in 2006, Ghana beat the Czech Republic 2-0 and the USA 2-1 to advance from the group stage, becoming only the second African nation to win multiple group-stage matches in a single tournament",
+      "The 2014 World Cup in Brazil was marred by internal disputes over player bonuses, requiring a government-chartered plane to deliver cash to the squad in camp",
+      "Mohammed Kudus scored two goals at the 2022 World Cup in Qatar, announcing himself as the new star of Ghanaian football on the world stage",
+      "Ghana's rivalry with Uruguay was reignited at the 2022 World Cup when the two teams were drawn together again, 12 years after the infamous 2010 quarter-final",
+      "Known as the Black Stars, Ghana's national team has consistently been one of Africa's strongest footballing nations across multiple generations"
+    ]
+  }
+}

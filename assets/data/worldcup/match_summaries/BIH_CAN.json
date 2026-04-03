@@ -1,0 +1,35 @@
+{
+  "team1Code": "BIH",
+  "team2Code": "CAN",
+  "team1Name": "Bosnia and Herzegovina",
+  "team2Name": "Canada",
+  "historicalAnalysis": "Bosnia and Herzegovina and Canada represent two of the more compelling stories at this World Cup. Bosnia made their World Cup debut as recently as 2014 in Brazil, a remarkable achievement for a nation that endured devastating conflict in the 1990s. Football has served as a unifying force for the country, and qualification for this tournament reinforces the sport's importance to Bosnian national identity.\n\nCanada's footballing renaissance has been one of the most exciting developments in world football. After a 36-year absence, they returned to the World Cup in 2022 in Qatar and now, as co-hosts of the 2026 tournament, they have the opportunity to make a genuine impact. With Alphonso Davies providing world-class quality and Jonathan David supplying goals, Canada possess individual talent that can match any opponent. This Group B clash promises to be a fascinating contest between two nations writing new chapters in their footballing histories.",
+  "keyStorylines": [
+    "Canada's co-hosting opportunity means enormous home support and the chance to deliver a breakthrough tournament performance for the nation",
+    "Bosnia's veteran striker Edin Dzeko may be playing in his final major tournament, adding emotional weight to every appearance",
+    "Alphonso Davies vs Bosnia's defense represents a clash of explosive speed against rugged Eastern European defending",
+    "Both nations are relative World Cup newcomers seeking to establish themselves among football's elite on the biggest stage"
+  ],
+  "playersToWatch": [
+    {"name": "Alphonso Davies", "teamCode": "CAN", "position": "Left Back/Winger", "reason": "Real Madrid's speedster is one of the fastest players in world football and Canada's most recognizable star on the global stage"},
+    {"name": "Edin Džeko", "teamCode": "BIH", "position": "Striker", "reason": "Bosnia's all-time leading scorer and national hero whose experience and movement make him dangerous despite his advancing years"},
+    {"name": "Jonathan David", "teamCode": "CAN", "position": "Striker", "reason": "One of Europe's most prolific strikers with Lille, David's clinical finishing makes him Canada's most lethal goal threat"},
+    {"name": "Ermedin Demirović", "teamCode": "BIH", "position": "Striker", "reason": "The Stuttgart forward brings Bundesliga quality and goal-scoring instincts that complement Dzeko perfectly in Bosnia's attack"}
+  ],
+  "tacticalPreview": "Canada will look to leverage their home advantage with an energetic, front-foot approach. Davies' marauding runs from left back or wing create overloads and stretch defenses horizontally, while Jonathan David's movement in behind provides a constant threat. Canada's midfield has improved significantly in recent years, with better ball retention and more creative options to feed their dangerous forwards.\n\nBosnia and Herzegovina favor a pragmatic approach built on defensive solidity and the clinical finishing of their strikers. Dzeko's ability to hold up play and bring others into the attack allows Bosnia to be dangerous without dominating possession. Their compact midfield shape and willingness to defend deep before launching quick transitions could be the perfect antidote to Canada's attacking enthusiasm. The key tactical battle will be whether Canada's width and pace can unlock Bosnia's organized defensive structure.",
+  "prediction": {
+    "predictedOutcome": "TEAM2",
+    "predictedScore": "2-1",
+    "confidence": 45,
+    "reasoning": "Canada's home advantage, superior pace, and individual quality should give them the edge in a tight contest. Davies and David have the ability to create something from nothing, and the home crowd will provide an additional boost. However, Bosnia's experience and defensive discipline will keep it close.",
+    "alternativeScenario": "Edin Dzeko could roll back the years with a masterful performance, using his intelligence and positioning to exploit Canada's sometimes aggressive defensive line, leading to a surprise 2-1 Bosnian victory."
+  },
+  "pastEncountersSummary": "Bosnia and Herzegovina and Canada have rarely faced each other in competitive football. Their limited meetings have mostly been confined to friendly matches, with neither nation having a significant head-to-head record against the other. This World Cup group stage encounter will be their most high-profile meeting to date.",
+  "funFacts": [
+    "Bosnia and Herzegovina's 2014 World Cup qualification was voted one of the most emotional moments in the country's sporting history, with celebrations lasting for days across the nation",
+    "Alphonso Davies was born in a refugee camp in Ghana before his family emigrated to Canada, making his rise to world-class footballer one of sport's most inspiring stories",
+    "Edin Dzeko has scored over 65 international goals for Bosnia, a remarkable record for a nation with a population of just 3.2 million",
+    "Canada's men's national team was once ranked as low as 122nd in the world but has climbed into the top 40 during their recent resurgence"
+  ],
+  "isFirstMeeting": true
+}

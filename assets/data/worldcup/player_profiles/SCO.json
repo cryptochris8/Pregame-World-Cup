@@ -1,0 +1,172 @@
+{
+  "players": {
+    "Angus Gunn": {
+      "bio": "A towering goalkeeper with Premier League pedigree through his father Bryan Gunn and his own time at Southampton and Manchester City, Angus Gunn chose to represent Scotland and has established himself as the first-choice keeper. His imposing frame and shot-stopping ability make him a commanding presence.",
+      "playingStyle": "Tall, commanding goalkeeper with excellent reach, strong shot-stopping reflexes, and improving distribution from the back",
+      "keyStrengths": ["Imposing physical presence and reach", "Shot-stopping ability", "Experience in English football"],
+      "worldCup2026Role": "Starting goalkeeper whose height and shot-stopping ability provide a solid foundation for Scotland's defense; his calm demeanor helps settle the backline in high-pressure situations",
+      "notableFact": "Son of former Norwich City and Scotland goalkeeper Bryan Gunn, continuing a family legacy of goalkeeping excellence for the national team"
+    },
+    "Craig Gordon": {
+      "bio": "A true legend of Scottish football, Gordon has defied the odds throughout his career, recovering from a career-threatening knee injury to return to the international fold. At 43, his inclusion in the squad would be a remarkable testament to his longevity and dedication.",
+      "playingStyle": "Experienced goalkeeper with outstanding shot-stopping ability, brave in one-on-one situations, and exceptional command of the penalty area built over two decades of professional football",
+      "keyStrengths": ["Shot-stopping and reflexes", "Experience and big-game mentality", "Bravery and commitment"],
+      "worldCup2026Role": "Veteran backup goalkeeper whose vast experience and dressing-room presence are invaluable for tournament football; a mentor figure for the younger goalkeepers and players",
+      "notableFact": "Once the most expensive goalkeeper in British football history when he signed for Sunderland, Gordon has over 75 caps and has overcome multiple serious injuries to continue his international career"
+    },
+    "Zander Clark": {
+      "bio": "A reliable goalkeeper who has impressed at Heart of Midlothian after years of excellent service at St Johnstone. Clark's consistency and dependability have earned him a place in the Scotland squad as a trusted third-choice option.",
+      "playingStyle": "Dependable goalkeeper with good positioning, reliable handling, and the consistency to perform when called upon at short notice",
+      "keyStrengths": ["Consistency and reliability", "Good positioning", "Handling and command of the box"],
+      "worldCup2026Role": "Third-choice goalkeeper providing solid squad depth; his experience in Scottish football and calm temperament make him a dependable reserve option",
+      "notableFact": "Was a key part of St Johnstone's historic 2021 Scottish Cup and League Cup double, one of the most remarkable underdog stories in Scottish football"
+    },
+    "Andrew Robertson": {
+      "bio": "Scotland's captain and most celebrated player, Robertson has risen from humble beginnings at Queen's Park and Dundee United to become one of the world's best left-backs at Liverpool. A Champions League winner and Premier League champion, he brings elite-level experience and inspiring leadership.",
+      "playingStyle": "Marauding left-back with exceptional crossing ability, tireless stamina, fierce competitiveness, and the tactical intelligence honed under Jurgen Klopp at Liverpool",
+      "keyStrengths": ["World-class crossing and delivery", "Tireless energy and stamina", "Leadership and inspirational captaincy"],
+      "worldCup2026Role": "Captain and leader whose elite Premier League and Champions League experience sets the standard for the entire squad; his crossing and attacking thrust from left-back are central to Scotland's attacking play",
+      "notableFact": "Rose from the lower leagues of Scottish football to win the Champions League and Premier League with Liverpool, becoming one of the greatest Scottish footballers of his generation"
+    },
+    "Kieran Tierney": {
+      "bio": "A tenacious and versatile left-sided defender who came through Celtic's academy before moving to Arsenal and then Real Sociedad in La Liga. Tierney's passion for Scotland and his warrior-like mentality have made him a fan favorite despite a career plagued by injuries.",
+      "playingStyle": "Aggressive, attack-minded defender who can play left-back or left center-back, excels in overlapping runs, and defends with a fierce intensity and commitment",
+      "keyStrengths": ["Versatility across the left side of defense", "Aggressive overlapping runs and crossing", "Warrior mentality and defensive intensity"],
+      "worldCup2026Role": "Versatile left-sided defensive option who can play alongside or as an alternative to Robertson; his ability to play center-back in a back three gives Scotland tactical flexibility",
+      "notableFact": "Moved to Real Sociedad in La Liga, adding Spanish football experience to his time at Celtic and Arsenal, broadening his tactical education across three major leagues"
+    },
+    "Scott McTominay": {
+      "bio": "A towering, box-to-box midfielder who has thrived since moving from Manchester United to Napoli in Serie A. McTominay's combination of physicality, goalscoring ability, and tactical intelligence has made him Scotland's most important outfield player and one of the best midfielders in European football.",
+      "playingStyle": "Powerful box-to-box midfielder with excellent goalscoring ability from deep, strong aerial presence, aggressive pressing, and the stamina to dominate games with his energy",
+      "keyStrengths": ["Goalscoring from midfield", "Physical presence and aerial ability", "Box-to-box energy and pressing"],
+      "worldCup2026Role": "Scotland's most important outfield player whose goals from midfield and physical dominance can swing matches; his Serie A experience has elevated his tactical game to an elite level",
+      "notableFact": "Has been a revelation at Napoli after leaving Manchester United, scoring prolifically from midfield and establishing himself as one of the most effective box-to-box midfielders in Serie A"
+    },
+    "Billy Gilmour": {
+      "bio": "A technically gifted midfielder whose passing ability and composure on the ball belie his slight frame. Gilmour followed McTominay to Napoli from Brighton and has continued to develop as a cultured, controlling presence in central midfield.",
+      "playingStyle": "Elegant, technically superb midfielder who controls games with precise passing, intelligent movement, and the ability to receive the ball under pressure and create opportunities for teammates",
+      "keyStrengths": ["Technical passing ability and precision", "Composure under pressure", "Game intelligence and positional awareness"],
+      "worldCup2026Role": "Key midfield playmaker who dictates the tempo of Scotland's passing game; his partnership with McTominay at Napoli translates directly to the national team, giving Scotland a world-class midfield axis",
+      "notableFact": "His partnership with McTominay at Napoli gives Scotland a rare advantage of having two key players who play together every week at elite club level"
+    },
+    "John McGinn": {
+      "bio": "A dynamic, powerful midfielder who has been one of the Premier League's most consistent performers at Aston Villa. McGinn's energy, goalscoring threat, and relentless work rate have made him a Scotland legend, combining brute force with surprising technical quality.",
+      "playingStyle": "Powerful, dynamic midfielder who combines aggressive ball-carrying with goalscoring ability, tireless pressing, and an infectious energy that lifts the entire team",
+      "keyStrengths": ["Powerful ball-carrying and driving runs", "Goalscoring from midfield", "Relentless energy and work rate"],
+      "worldCup2026Role": "Core midfielder whose energy and goals are essential to Scotland's game plan; his ability to carry the ball and drive forward provides a crucial transition threat",
+      "notableFact": "Has been one of the most consistent performers in the Premier League with Aston Villa, scoring crucial goals and earning recognition as one of the best Scottish midfielders in a generation"
+    },
+    "Che Adams": {
+      "bio": "A versatile and hardworking striker who qualified for Scotland through his Antiguan grandfather. Adams has proven himself in Serie A with Torino after successful spells in the English Championship and Premier League, bringing pace, work rate, and intelligent movement to the attack.",
+      "playingStyle": "Mobile, hardworking striker who excels in pressing from the front, links play effectively, and provides both goalscoring threat and creative assists for teammates",
+      "keyStrengths": ["Work rate and pressing from the front", "Link-up play and movement", "Versatility and ability to play across the front line"],
+      "worldCup2026Role": "First-choice striker whose tireless pressing and intelligent movement set the tone for Scotland's attacking play; his Serie A experience adds tactical sophistication to his game",
+      "notableFact": "Chose to represent Scotland through his heritage and has become an integral part of the team, bringing quality from the Italian Serie A to the national setup"
+    },
+    "Grant Hanley": {
+      "bio": "A seasoned center-back and former Scotland captain, Hanley brings decades of experience in English football to the squad. His aerial ability and defensive nous have made him a reliable figure in the heart of the Scottish defense.",
+      "playingStyle": "Traditional, no-nonsense center-back who dominates aerial duels, makes crucial blocks, and organizes the defensive line with vocal communication",
+      "keyStrengths": ["Aerial dominance and heading", "Defensive organization and communication", "Experience and reliability"],
+      "worldCup2026Role": "Experienced defensive option who provides stability and leadership in the backline; his aerial presence is particularly valuable for defending set pieces at the World Cup",
+      "notableFact": "Has captained Scotland and brings over 45 caps of international experience, having represented his country across multiple qualifying campaigns"
+    },
+    "Jack Hendry": {
+      "bio": "A well-traveled center-back who has gained experience across multiple European leagues, including Scotland, Belgium, Italy, and now Saudi Arabia with Al Ettifaq. Hendry's varied experience has made him a composed and tactically adaptable defender.",
+      "playingStyle": "Ball-playing center-back with good passing ability from the back, composure under pressure, and the tactical awareness gained from playing in multiple European leagues",
+      "keyStrengths": ["Ball-playing ability from defense", "Composure and tactical awareness", "Experience across multiple leagues"],
+      "worldCup2026Role": "Starting center-back whose ball-playing ability helps Scotland build from the back; his international club experience across different tactical systems makes him adaptable to various opponents",
+      "notableFact": "Has played professional football in Scotland, Belgium, Italy, and Saudi Arabia, giving him one of the most diverse tactical educations in the Scotland squad"
+    },
+    "Ryan Porteous": {
+      "bio": "An aggressive, front-foot center-back who moved to England from Hibernian and has established himself at Watford. Porteous is known for his fearless defending, willingness to carry the ball forward, and aerial strength.",
+      "playingStyle": "Aggressive center-back who defends on the front foot, comfortable carrying the ball out of defense, and dominant in aerial duels",
+      "keyStrengths": ["Front-foot defending and aggression", "Ball-carrying from the back", "Aerial strength and physicality"],
+      "worldCup2026Role": "Physical defensive option who adds aggression and ball-carrying ability to the center-back positions; his willingness to step up and defend proactively suits Scotland's pressing game",
+      "notableFact": "Made the move from Hibernian to Watford in the English Championship, proving his ability to compete at a higher level and adding depth to Scotland's defensive options"
+    },
+    "Anthony Ralston": {
+      "bio": "A dependable right-back who has been a consistent performer for Celtic in both domestic and European competition. Ralston's reliability and tactical discipline have earned him a regular place in the Scotland setup.",
+      "playingStyle": "Reliable, disciplined right-back with good defensive positioning, honest overlapping runs, and the experience of competing in European competition with Celtic",
+      "keyStrengths": ["Defensive reliability and discipline", "Honest overlapping runs", "European competition experience with Celtic"],
+      "worldCup2026Role": "Starting right-back option whose consistency and tactical discipline provide balance on the right side of defense; his Celtic European experience prepares him well for World Cup football",
+      "notableFact": "Has been a loyal servant to Celtic, playing in Champions League group stages and helping the club maintain their dominance of Scottish football"
+    },
+    "Callum McGregor": {
+      "bio": "Celtic's captain and one of the most consistent midfielders in Scottish football, McGregor is a metronomic presence who controls games with his passing accuracy and positional intelligence. His leadership at club level translates seamlessly to the national team.",
+      "playingStyle": "Metronomic deep-lying midfielder with exceptional passing accuracy, excellent positional awareness, and the ability to set the tempo for the entire team",
+      "keyStrengths": ["Passing accuracy and ball retention", "Positional intelligence", "Leadership and consistency"],
+      "worldCup2026Role": "Experienced midfield option who can control possession and set the tempo; his leadership and Celtic captaincy experience make him invaluable for squad harmony and on-pitch organization",
+      "notableFact": "Has captained Celtic to multiple league titles and has been the heartbeat of their midfield for years, earning over 50 Scotland caps in the process"
+    },
+    "Kenny McLean": {
+      "bio": "A steady and experienced midfielder from Norwich City, McLean brings reliability and tactical intelligence to the Scotland squad. His ability to keep things simple and effective in the middle of the park has earned him a long international career.",
+      "playingStyle": "Reliable, workmanlike midfielder who keeps possession efficiently, contributes defensively, and provides balance and stability in the center of the pitch",
+      "keyStrengths": ["Possession retention and simple passing", "Defensive contributions and work rate", "Experience and tactical understanding"],
+      "worldCup2026Role": "Dependable midfield rotation option who can maintain Scotland's shape and composure; ideal for matches where Scotland need to be disciplined and organized",
+      "notableFact": "Has been a loyal servant to Norwich City in English football and a consistent contributor to Scotland across multiple qualifying campaigns"
+    },
+    "Ryan Christie": {
+      "bio": "A versatile attacking midfielder who has developed into a Premier League regular at Bournemouth. Christie's ability to score from distance, create chances, and contribute with tireless work rate makes him a key figure in Scotland's attacking midfield.",
+      "playingStyle": "Energetic, versatile attacking midfielder with excellent long-range shooting, good creative instincts, and the work rate to press and contribute defensively",
+      "keyStrengths": ["Long-range shooting ability", "Versatility across attacking positions", "Work rate and pressing contribution"],
+      "worldCup2026Role": "Versatile attacking midfielder who can play multiple positions behind the striker; his shooting from distance and creative ability provide an extra dimension to Scotland's attack",
+      "notableFact": "Has established himself as a Premier League regular at Bournemouth after making his name at Celtic, proving his quality at the highest level of English football"
+    },
+    "Stuart Armstrong": {
+      "bio": "An experienced midfielder who has played in both the Scottish Premiership and Premier League, Armstrong brings quality and intelligence to Scotland's midfield. His ability to find space and contribute with goals and assists makes him a useful squad member.",
+      "playingStyle": "Intelligent midfielder with good movement off the ball, ability to arrive late in the box, and the technical quality to combine with teammates in the final third",
+      "keyStrengths": ["Intelligent movement and positioning", "Late runs into the box", "Technical quality and composure"],
+      "worldCup2026Role": "Experienced midfield option who provides creative depth and goalscoring ability from the middle of the park; his intelligent movement can unlock defenses",
+      "notableFact": "Has played in the Premier League with Southampton, bringing top-flight English experience to the Scotland squad alongside his earlier success at Celtic"
+    },
+    "Lawrence Shankland": {
+      "bio": "A prolific goalscorer who has been one of the most consistent strikers in Scottish football over recent years. Shankland's natural instinct for goal and ability to score at every level have earned him a place in the national team squad.",
+      "playingStyle": "Clinical, instinctive striker with excellent movement in the box, natural finishing ability, and the knack for being in the right place at the right time",
+      "keyStrengths": ["Natural goalscoring instinct", "Movement and positioning in the box", "Clinical finishing ability"],
+      "worldCup2026Role": "Goalscoring option from the bench whose instinct in the box can provide a spark when Scotland need a goal; his domestic scoring record demonstrates his reliability in front of net",
+      "notableFact": "Has been one of the most prolific scorers in Scottish football, consistently finding the net across multiple clubs and earning the reputation as a natural goalscorer"
+    },
+    "Lyndon Dykes": {
+      "bio": "A physical, hard-working striker born in Australia who qualified for Scotland and has become a popular figure in the national team. Dykes' aerial ability, hold-up play, and willingness to lead the line make him a valuable option up front.",
+      "playingStyle": "Physical target man who excels in hold-up play, wins aerial duels, brings teammates into the game, and provides a focal point for the attack",
+      "keyStrengths": ["Hold-up play and physicality", "Aerial ability and heading", "Work rate and leading the press"],
+      "worldCup2026Role": "Physical striking option who offers a different dimension as a target man; his ability to hold the ball up and bring others into play provides an effective Plan B in attack",
+      "notableFact": "Born in Australia but chose to represent Scotland through his parents' heritage, becoming a fan favorite for his wholehearted commitment to the national team cause"
+    },
+    "Lewis Ferguson": {
+      "bio": "A talented midfielder who has thrived in Serie A with Bologna after making his name at Aberdeen. Ferguson's ability to score goals from midfield and his all-around game have made him one of the most sought-after Scottish players in European football.",
+      "playingStyle": "Complete midfielder who contributes goals and assists, makes intelligent runs into the box, and combines technical quality with physical robustness",
+      "keyStrengths": ["Goalscoring from midfield", "All-around midfield play", "Intelligent forward runs"],
+      "worldCup2026Role": "Dynamic midfield option whose goalscoring ability and Serie A experience add quality and depth; his all-around game makes him capable of filling multiple midfield roles",
+      "notableFact": "His move to Bologna and subsequent success in Serie A has established him as one of the most successful Scottish exports in recent years, following in the footsteps of McTominay and Gilmour in Italian football"
+    },
+    "Aaron Hickey": {
+      "bio": "A young, versatile full-back who has shown his ability across Europe, including spells at Hearts, Bologna in Serie A, and now Brentford in the Premier League. Hickey's composure on the ball and ability to play on either flank make him a valuable defensive asset.",
+      "playingStyle": "Two-footed, composed full-back who can play on either side of defense, contributes in build-up play, and brings tactical versatility from his experience in multiple leagues",
+      "keyStrengths": ["Two-footed ability and versatility", "Composure on the ball", "Experience across multiple European leagues"],
+      "worldCup2026Role": "Versatile defensive option who can cover both full-back positions; his ability to play on either side gives Scotland tactical flexibility and valuable depth",
+      "notableFact": "Remarkably comfortable on both feet, Hickey has played in Scotland, Italy, and England, giving him a unique tactical education for a player still in his early twenties"
+    },
+    "Liam Cooper": {
+      "bio": "A battle-hardened center-back who captained Leeds United through their return to the Premier League. Cooper's leadership, defensive toughness, and big-game experience make him a valuable senior presence in the squad.",
+      "playingStyle": "Strong, vocal center-back who leads by example, excels in physical duels, and organizes the defensive unit with commanding communication",
+      "keyStrengths": ["Leadership and captaincy experience", "Physical defending and duels", "Big-game experience and composure"],
+      "worldCup2026Role": "Experienced defensive leader who provides depth and leadership in the center of defense; his captaincy of Leeds United through their Premier League campaign demonstrates his ability to perform under pressure",
+      "notableFact": "Captained Leeds United back to the Premier League and through their top-flight campaign, proving his leadership credentials at the highest level of English football"
+    },
+    "Greg Taylor": {
+      "bio": "A reliable left-back from Celtic who provides dependable cover for Robertson and Tierney. Taylor's consistency and defensive discipline in the Scottish Premiership and European competition have earned him his place in the squad.",
+      "playingStyle": "Steady, disciplined left-back with good defensive positioning, honest attacking contributions, and the reliability that comes from regular competition at Celtic",
+      "keyStrengths": ["Defensive discipline and positioning", "Consistency and reliability", "Experience in European competition with Celtic"],
+      "worldCup2026Role": "Third-choice left-back who provides reliable depth behind Robertson and Tierney; his Celtic experience ensures he is prepared for the demands of high-level international football",
+      "notableFact": "Has been an important squad player for Celtic, contributing to their domestic dominance and European campaigns, earning his Scotland call-ups through consistent performances"
+    },
+    "Ben Doak": {
+      "bio": "The youngest and most exciting talent in the Scotland squad, Doak is a blistering winger who came through Liverpool's academy and has been developing his game on loan at Middlesbrough. His raw pace and directness have already attracted comparisons to the best Scottish wingers of the past.",
+      "playingStyle": "Explosive, pace-laden winger who beats defenders with raw speed and direct running, capable of producing match-winning moments of individual brilliance",
+      "keyStrengths": ["Devastating pace and acceleration", "Direct dribbling and beating defenders", "End product and crossing ability"],
+      "worldCup2026Role": "Exciting young wide option who can terrorize defenses with his pace; his ability to change games off the bench makes him a potent weapon in Scotland's attacking arsenal",
+      "notableFact": "A Liverpool academy product who has already shown flashes of brilliance at senior level, Doak is considered one of the most exciting young talents to emerge from Scottish football in years"
+    }
+  }
+}

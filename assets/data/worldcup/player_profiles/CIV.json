@@ -1,0 +1,172 @@
+{
+  "players": {
+    "Yahia Fofana": {
+      "bio": "A young, athletic goalkeeper who has emerged as the first-choice keeper for the Elephants, Fofana impressed at the 2023 Africa Cup of Nations. His reflexes and command of the area have matured rapidly at Angers in Ligue 1.",
+      "playingStyle": "Athletic, agile goalkeeper with excellent reflexes, growing command of the penalty area, and the shot-stopping ability to make crucial saves in big moments",
+      "keyStrengths": ["Excellent reflexes and shot-stopping", "Athletic ability and agility", "Composure in high-pressure situations"],
+      "worldCup2026Role": "Starting goalkeeper whose shot-stopping ability and composure provide the foundation for the Elephants' defensive setup at the World Cup",
+      "notableFact": "Was a key figure in the 2023 Africa Cup of Nations triumph, making crucial saves throughout the tournament on home soil"
+    },
+    "Badra Ali Sangaré": {
+      "bio": "A capable goalkeeper developing at Stade Rennais in Ligue 1, Sangaré provides quality competition in the goalkeeping department. His development in French football has given him the tools to perform at the highest level.",
+      "playingStyle": "Composed goalkeeper with good reflexes, solid positioning, and improving distribution that suits the demands of modern goalkeeping",
+      "keyStrengths": ["Solid positioning", "Good reflexes", "Developing distribution"],
+      "worldCup2026Role": "Backup goalkeeper providing reliable cover and competition for the starting spot, with the quality to step in if called upon",
+      "notableFact": "Has developed his game in the competitive environment of Ligue 1 at Stade Rennais, one of France's established clubs"
+    },
+    "Ira Eliezer Tape": {
+      "bio": "A young goalkeeper gaining experience in Austrian football with Lask Linz, Tape represents the next generation of Ivorian goalkeeping talent. His inclusion in the squad reflects the coaching staff's investment in youth development.",
+      "playingStyle": "Young, promising goalkeeper with good shot-stopping ability, athletic build, and the potential to develop into a top-level keeper with more experience",
+      "keyStrengths": ["Athletic ability", "Shot-stopping", "Youth and development potential"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience while providing depth to the squad's goalkeeping options",
+      "notableFact": "At a young age, has already earned international recognition playing in the Austrian Bundesliga at Lask Linz"
+    },
+    "Simon Adingra": {
+      "bio": "One of the brightest young stars in African football, Adingra was named Best Young Player at the 2023 Africa Cup of Nations. His electric pace, daring dribbling, and eye for goal at Brighton in the Premier League make him one of the most exciting players at the World Cup.",
+      "playingStyle": "Explosive, direct winger with searing pace, fearless dribbling at defenders, and an improving end product that makes him a constant threat from the right flank",
+      "keyStrengths": ["Explosive pace and acceleration", "Direct dribbling and willingness to take on defenders", "Improving goals and assists output"],
+      "worldCup2026Role": "Key attacking weapon whose pace and directness can terrorize any defense, expected to be one of the standout young players at the tournament",
+      "notableFact": "Won the Best Young Player award at the 2023 Africa Cup of Nations, where his electrifying performances helped the Elephants win the title on home soil"
+    },
+    "Seko Fofana": {
+      "bio": "A powerful, box-to-box midfielder who dominated Ligue 1 at Lens before moving to Al Nassr in Saudi Arabia, Fofana combines extraordinary physical power with technical quality. His driving runs and ability to carry the ball under pressure are world-class.",
+      "playingStyle": "Powerful, athletic box-to-box midfielder with exceptional ball-carrying ability, strong in the tackle, and capable of driving forward through midfield with unstoppable momentum",
+      "keyStrengths": ["Extraordinary ball-carrying power", "Physical dominance in midfield", "Driving runs from deep"],
+      "worldCup2026Role": "Engine of the midfield whose power and ball-carrying ability provide the Elephants with a dynamic force in the center of the park",
+      "notableFact": "Won the Ligue 1 Player of the Month award multiple times at Lens, where his powerful performances earned him widespread recognition as one of the league's best midfielders"
+    },
+    "Franck Kessié": {
+      "bio": "A commanding central midfielder who was a cornerstone of AC Milan's Serie A title-winning team, Kessié brings experience, physicality, and leadership to the Elephants. His ability to dominate midfield battles and score from distance makes him a complete midfielder.",
+      "playingStyle": "Physically imposing central midfielder with excellent stamina, strong tackling, goal-scoring ability from midfield, and the leadership to marshal the team's engine room",
+      "keyStrengths": ["Physical dominance and stamina", "Goal-scoring from midfield", "Leadership and experience"],
+      "worldCup2026Role": "Senior midfield leader whose experience at the highest level of European football and commanding presence provide the backbone of the team's midfield",
+      "notableFact": "Was instrumental in AC Milan's Serie A title win in 2022, scoring crucial goals and providing the midfield dominance that drove their championship campaign"
+    },
+    "Sébastien Haller": {
+      "bio": "A striker who has overcome cancer to return to top-level football, Haller is an inspiration both on and off the pitch. His aerial ability, hold-up play, and predatory instincts have been showcased at Ajax, Borussia Dortmund, and West Ham.",
+      "playingStyle": "Strong, physical target man with excellent aerial ability, intelligent hold-up play, and clinical finishing inside the penalty area, particularly effective from crosses",
+      "keyStrengths": ["Aerial ability and heading", "Hold-up play and link-up play", "Clinical finishing in the box"],
+      "worldCup2026Role": "Leading striker whose physical presence, experience, and incredible personal story of overcoming adversity make him the focal point of the Elephants' attack",
+      "notableFact": "Returned to professional football after being diagnosed with testicular cancer in 2022, scoring on his comeback to inspire teammates and fans worldwide"
+    },
+    "Nicolas Pépé": {
+      "bio": "A gifted winger who made his name with a stunning season at Lille that earned him a record transfer to Arsenal, Pépé possesses devastating pace and a deadly left foot. His experience across Ligue 1, the Premier League, and La Liga adds depth to the attack.",
+      "playingStyle": "Pacey winger who cuts inside from the right onto his favored left foot, capable of producing individual brilliance with his dribbling and finishing ability",
+      "keyStrengths": ["Pace and dribbling", "Left-footed finishing from inside positions", "Experience across top European leagues"],
+      "worldCup2026Role": "Experienced wide attacker providing depth and quality from the flanks, capable of producing match-winning moments with his individual skill",
+      "notableFact": "Joined Arsenal for a club-record fee after a sensational season at Lille, and remains one of the most talented Ivorian attackers of his generation"
+    },
+    "Odilon Kossounou": {
+      "bio": "A towering center-back who has become a mainstay at Bayer Leverkusen in the Bundesliga, Kossounou is one of the most promising young defenders in African football. His combination of pace, power, and technical ability makes him a modern defensive force.",
+      "playingStyle": "Athletic, powerful center-back with excellent pace for his size, strong in aerial duels, comfortable on the ball, and capable of stepping out to intercept or press",
+      "keyStrengths": ["Pace and athleticism for a center-back", "Aerial dominance", "Comfort on the ball"],
+      "worldCup2026Role": "Starting center-back whose pace, power, and ball-playing ability make him the cornerstone of the Elephants' defense at the World Cup",
+      "notableFact": "Was part of Bayer Leverkusen's historic unbeaten Bundesliga title-winning season, playing a key role in one of the most remarkable campaigns in German football history"
+    },
+    "Willy Boly": {
+      "bio": "An experienced center-back who has been a consistent performer in the Premier League with Wolverhampton Wanderers and Nottingham Forest, Boly brings physical presence and English football know-how to the Ivorian defense.",
+      "playingStyle": "Physical, imposing center-back with strong aerial ability, aggressive defending, and the experience gained from years in the demanding Premier League",
+      "keyStrengths": ["Physical presence and aerial ability", "Premier League experience", "Aggressive, committed defending"],
+      "worldCup2026Role": "Experienced center-back providing depth and physicality, particularly valuable in matches requiring an aerial presence and defensive solidity",
+      "notableFact": "Was a key player in Wolverhampton Wanderers' rise from the Championship to the Europa League, helping establish them in the Premier League"
+    },
+    "Evan Ndicka": {
+      "bio": "A talented young center-back who has excelled at AS Roma in Serie A after impressive seasons at Eintracht Frankfurt, Ndicka is a left-footed defender with excellent passing ability. His comfort on the ball and defensive maturity make him a highly valued asset.",
+      "playingStyle": "Left-footed center-back with excellent passing range, composure in possession, and the defensive intelligence to read the game and anticipate danger",
+      "keyStrengths": ["Left-footed passing from defense", "Composure in possession", "Defensive intelligence"],
+      "worldCup2026Role": "Starting center-back whose left foot and ball-playing ability provide balance and quality in the defensive line, enabling smooth build-up play from the back",
+      "notableFact": "Won the Europa League with Eintracht Frankfurt in 2022, playing a starring role in one of the most memorable European campaigns by a German club in recent years"
+    },
+    "Serge Aurier": {
+      "bio": "A vastly experienced right-back who has played at the highest level with Paris Saint-Germain, Tottenham Hotspur, and Galatasaray, Aurier is one of the most capped players in Ivorian football history. His attacking prowess and experience are invaluable.",
+      "playingStyle": "Attack-minded right-back with explosive pace, powerful crossing ability, and the experience to handle the biggest occasions after years at top European clubs",
+      "keyStrengths": ["Attacking runs and crossing", "Experience at the highest level", "Pace and physical power"],
+      "worldCup2026Role": "Senior right-back and squad leader whose vast experience at the top level of European football provides invaluable know-how for a World Cup campaign",
+      "notableFact": "Has played Champions League football with both PSG and Tottenham, making him one of the most experienced players in the Ivorian squad"
+    },
+    "Ghislain Konan": {
+      "bio": "A steady left-back who has been a reliable performer at Stade de Reims in Ligue 1, Konan provides defensive stability and attacking width on the left side. His consistency and tactical discipline have made him a regular in the national team setup.",
+      "playingStyle": "Disciplined left-back with good defensive positioning, reliable tackling, and the ability to provide width and crossing opportunities from the left flank",
+      "keyStrengths": ["Defensive discipline", "Reliable tackling", "Width and crossing from the left"],
+      "worldCup2026Role": "Dependable left-back option providing solid defensive cover and the tactical discipline needed to maintain the team's shape in tournament football",
+      "notableFact": "Has been a consistent performer in Ligue 1 with Reims, earning regular call-ups to the Ivorian national team through steady, reliable performances"
+    },
+    "Ibrahim Sangaré": {
+      "bio": "A commanding defensive midfielder who has become a key player at Nottingham Forest in the Premier League, Sangaré combines physical dominance with excellent passing ability. His imposing presence in midfield provides the perfect shield for the defense.",
+      "playingStyle": "Physically dominant defensive midfielder with excellent ball-winning ability, impressive passing range, and the capacity to control the tempo of matches from deep",
+      "keyStrengths": ["Physical dominance and ball-winning", "Passing range from deep", "Shield for the defense"],
+      "worldCup2026Role": "Key midfield anchor whose physical presence and passing ability provide the foundation for the team's build-up play and defensive protection",
+      "notableFact": "Made the move from PSV Eindhoven to Nottingham Forest, quickly establishing himself as one of the Premier League's most impressive holding midfielders"
+    },
+    "Jean-Philippe Krasso": {
+      "bio": "A powerful striker who has been a consistent goalscorer in Ligue 1 with Strasbourg, Krasso provides a different physical dimension to the Elephants' attacking options. His aerial ability and work rate make him a handful for any defense.",
+      "playingStyle": "Physical, hard-working striker with good aerial ability, strong hold-up play, and the willingness to press from the front and win the ball high up the pitch",
+      "keyStrengths": ["Aerial ability and physicality", "Hold-up play", "Pressing from the front"],
+      "worldCup2026Role": "Striker option providing physical presence and a different tactical approach, ideal as an impact substitute or starter when aerial threat is needed",
+      "notableFact": "Has built a strong goalscoring record in Ligue 1, consistently performing for Strasbourg and earning his place in the national team squad"
+    },
+    "Maxwel Cornet": {
+      "bio": "A versatile player who can operate as a winger or left-back, Cornet has played in the Premier League with West Ham and previously starred at Lyon in Ligue 1. His tactical flexibility and goal-scoring ability make him a unique asset.",
+      "playingStyle": "Versatile attacker who can play on either flank or at left-back, with a powerful left foot, good crossing ability, and a knack for scoring spectacular goals",
+      "keyStrengths": ["Tactical versatility", "Powerful left foot and shooting", "Goal-scoring from wide positions"],
+      "worldCup2026Role": "Versatile squad member whose ability to play multiple positions provides valuable tactical flexibility throughout the tournament",
+      "notableFact": "Scored multiple Champions League goals against Manchester City while at Lyon, demonstrating his ability to perform on the biggest stages in European football"
+    },
+    "Wilfried Zaha": {
+      "bio": "One of the most recognizable names in Ivorian football, Zaha is a supremely talented winger who spent over a decade at Crystal Palace in the Premier League. His dribbling ability, directness, and capacity to draw fouls make him one of the most dangerous wingers in the squad.",
+      "playingStyle": "Explosive, direct winger with outstanding dribbling ability, pace to burn, and the skill to beat any defender one-on-one, frequently winning free kicks in dangerous areas",
+      "keyStrengths": ["Elite dribbling and ball-carrying", "Pace and directness", "Ability to draw fouls and win free kicks"],
+      "worldCup2026Role": "Experienced attacking option whose individual brilliance and ability to create something from nothing make him a valuable weapon, particularly against tiring defenses",
+      "notableFact": "Was Crystal Palace's talisman for over a decade in the Premier League, earning a reputation as one of the most feared dribblers in English football"
+    },
+    "Jeremie Boga": {
+      "bio": "A silky dribbler who learned his trade at Chelsea's academy before starring in Serie A with Sassuolo and now playing at Nice in Ligue 1, Boga possesses outstanding close control and the ability to glide past defenders with ease.",
+      "playingStyle": "Technically gifted winger with exceptional close control, smooth dribbling ability, and the creativity to unlock defenses with his individual skill and vision",
+      "keyStrengths": ["Exceptional close control", "Smooth dribbling through tight spaces", "Creativity and vision"],
+      "worldCup2026Role": "Creative attacking option whose technical quality can break down stubborn defenses, ideal as a substitute to change the dynamic of a match",
+      "notableFact": "Product of Chelsea's famous academy, Boga showcased his talent in Serie A with Sassuolo, where his dribbling statistics were among the best in the league"
+    },
+    "Ousmane Diomandé": {
+      "bio": "One of the most exciting young center-backs in European football, Diomandé has impressed at Sporting CP in Portugal's Primeira Liga with his athleticism, composure, and ability on the ball. At just 22, he is already attracting interest from Europe's biggest clubs.",
+      "playingStyle": "Athletic, modern center-back with excellent pace, strong in aerial duels, comfortable stepping into midfield with the ball, and mature beyond his years defensively",
+      "keyStrengths": ["Athleticism and pace", "Ball-playing ability", "Maturity beyond his years"],
+      "worldCup2026Role": "Rising defensive star whose athleticism and ball-playing ability make him an increasingly important part of the Elephants' defensive plans",
+      "notableFact": "Has attracted attention from top European clubs with his outstanding performances at Sporting CP, establishing himself as one of the most sought-after young defenders in world football"
+    },
+    "Hamed Junior Traoré": {
+      "bio": "A talented attacking midfielder who has impressed at Bournemouth in the Premier League, Traoré possesses excellent technique, creative vision, and the ability to produce moments of magic in the final third. His Ivorian-Italian background enriches his diverse footballing education.",
+      "playingStyle": "Creative, technically gifted attacking midfielder with excellent vision, deft touch, and the ability to produce decisive passes and goals from advanced positions",
+      "keyStrengths": ["Creative vision and passing", "Technical skill", "Ability to score and assist from midfield"],
+      "worldCup2026Role": "Key creative midfielder who links the midfield and attack with his inventiveness, capable of producing the decisive moments that win tournament matches",
+      "notableFact": "Developed his skills in Italian football at Sassuolo before moving to the Premier League, bringing a unique blend of Italian technique and African flair"
+    },
+    "Karim Konaté": {
+      "bio": "One of the youngest and most promising strikers in African football, Konaté has been prolific at Red Bull Salzburg in the Austrian Bundesliga. His raw speed, power, and finishing ability make him a terrifying prospect for any defense.",
+      "playingStyle": "Young, explosive striker with blistering pace, powerful shooting, and the predatory instincts of a natural goalscorer who is still developing his all-round game",
+      "keyStrengths": ["Explosive pace and power", "Clinical finishing", "Natural goalscoring instinct"],
+      "worldCup2026Role": "Exciting young striker who can change games with his pace and finishing, ideal as a high-energy substitute to exploit space against tiring defenses",
+      "notableFact": "Has scored prolifically at Red Bull Salzburg, following in the footsteps of other African strikers who have used the Austrian club as a launchpad for European stardom"
+    },
+    "Sinaly Diomandé": {
+      "bio": "A promising young center-back developed at Olympique Lyonnais in Ligue 1, Diomandé offers pace, aggression, and improving technical ability. His progression at one of France's biggest clubs has been steady and impressive.",
+      "playingStyle": "Athletic, aggressive young center-back with good pace, strong in the tackle, and improving ability to play out from the back in Ligue 1's technical demands",
+      "keyStrengths": ["Pace and athleticism", "Aggressive tackling", "Developing ball-playing ability"],
+      "worldCup2026Role": "Young defensive depth option whose athleticism and aggression provide an alternative approach in the center of defense",
+      "notableFact": "Broke into the first team at Olympique Lyonnais as a teenager, earning regular minutes in one of Europe's most demanding leagues"
+    },
+    "Emmanuel Agbadou": {
+      "bio": "A tall, commanding center-back who has been a consistent performer at Reims in Ligue 1, Agbadou provides aerial dominance and physical presence. His steady development in French football has earned him regular international recognition.",
+      "playingStyle": "Tall, physical center-back with excellent aerial ability, strong in the tackle, and the commanding presence to organize defensive lines",
+      "keyStrengths": ["Aerial dominance", "Physical presence", "Defensive organization"],
+      "worldCup2026Role": "Center-back option providing additional height and aerial threat, particularly useful in set-piece situations both defensively and offensively",
+      "notableFact": "Has been one of the most consistent African defenders in Ligue 1, earning his place in the Ivorian squad through steady and reliable performances at Reims"
+    },
+    "Kévin Denkey": {
+      "bio": "A powerful young striker who has been prolific in the Belgian Pro League with Club Brugge, Denkey possesses the physical attributes and finishing ability to succeed at the highest level. His goal-scoring record in Belgium has attracted widespread attention.",
+      "playingStyle": "Strong, physical striker with good finishing ability, intelligent movement in the box, and the power to hold off defenders and bring teammates into play",
+      "keyStrengths": ["Goalscoring record", "Physical strength", "Intelligent movement"],
+      "worldCup2026Role": "Young striking option providing depth and a different physical dimension to the forward line, with the potential to make an impact as the tournament progresses",
+      "notableFact": "Has been one of the top scorers in the Belgian Pro League at Club Brugge, establishing himself as one of the most prolific young African strikers in European football"
+    }
+  }
+}

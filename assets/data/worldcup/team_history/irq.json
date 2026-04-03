@@ -1,0 +1,36 @@
+{
+  "teamCode": "IRQ",
+  "teamName": "Iraq",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1986,
+    "appearances": [
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 1,
+      "goalsAgainst": 4
+    },
+    "topScorers": [
+      { "name": "Ahmed Radhi", "goals": 1, "tournaments": "1986" }
+    ],
+    "notableMoments": [
+      "Iraq's only previous World Cup appearance was in 1986 in Mexico, where they lost all three group matches against Paraguay, Belgium, and hosts Mexico",
+      "Ahmed Radhi scored Iraq's first and only World Cup goal in 1986 against Belgium, a moment of national pride that is still celebrated in Iraqi football",
+      "Won the 2007 Asian Cup in a remarkable underdog run during a period of devastating conflict, uniting the nation in one of sport's greatest feel-good stories",
+      "The 2026 World Cup qualification marks a 40-year wait to return to football's biggest stage, making it one of the most emotionally charged qualifications in the tournament",
+      "Qualified through the intercontinental playoff pathway, demonstrating resilience and determination that mirrors the Iraqi people's spirit",
+      "Iraq's football has persevered through decades of conflict and sanctions, making every national team achievement a symbol of hope and unity for the country",
+      "The current squad features a blend of players from the Iraqi Premier League and Gulf-based leagues, led by prolific striker Aymen Hussein and talented young forward Mohanad Ali",
+      "Iraqi football fans are among the most passionate in Asia, with the national team's matches regularly drawing massive crowds and emotional celebrations across the country"
+    ]
+  }
+}

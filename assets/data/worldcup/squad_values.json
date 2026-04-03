@@ -131,20 +131,20 @@
     },
     {
       "rank": 8,
-      "teamCode": "ITA",
-      "teamName": "Italy",
+      "teamCode": "BIH",
+      "teamName": "Bosnia and Herzegovina",
       "playerCount": 26,
-      "totalValue": 1105000000,
-      "totalValueFormatted": "$1105.0M",
-      "averagePlayerValue": 42500000,
-      "averageValueFormatted": "$42.5M",
+      "totalValue": 150000000,
+      "totalValueFormatted": "$150.0M",
+      "averagePlayerValue": 5769231,
+      "averageValueFormatted": "$5.8M",
       "mostValuablePlayer": {
-        "name": "Nicolò Barella",
-        "value": "$100.0M"
+        "name": "Edin Dzeko",
+        "value": "$8.0M"
       },
       "leastValuablePlayer": {
-        "name": "Matteo Darmian",
-        "value": "$7.5M"
+        "name": "Ibrahim Sehic",
+        "value": "$500K"
       }
     },
     {
@@ -221,20 +221,20 @@
     },
     {
       "rank": 13,
-      "teamCode": "DEN",
-      "teamName": "Denmark",
+      "teamCode": "CZE",
+      "teamName": "Czechia",
       "playerCount": 26,
-      "totalValue": 573750000,
-      "totalValueFormatted": "$574.0M",
-      "averagePlayerValue": 22067308,
-      "averageValueFormatted": "$22.1M",
+      "totalValue": 250000000,
+      "totalValueFormatted": "$250.0M",
+      "averagePlayerValue": 9615385,
+      "averageValueFormatted": "$9.6M",
       "mostValuablePlayer": {
-        "name": "Rasmus Højlund",
-        "value": "$81.3M"
+        "name": "Adam Hlozek",
+        "value": "$30.0M"
       },
       "leastValuablePlayer": {
-        "name": "Jens Stryger Larsen",
-        "value": "$1.3M"
+        "name": "Tomas Vaclik",
+        "value": "$500K"
       }
     },
     {
@@ -773,26 +773,20 @@
     },
     {
       "rank": 42,
-      "teamCode": "IDN",
-      "teamName": "Indonesia",
+      "teamCode": "SWE",
+      "teamName": "Sweden",
       "playerCount": 26,
-      "totalValue": 43650000,
-      "totalValueFormatted": "43.6M EUR",
-      "averagePlayerValue": 1678846,
-      "averageValueFormatted": "1.7M EUR",
+      "totalValue": 400000000,
+      "totalValueFormatted": "$400.0M",
+      "averagePlayerValue": 15384615,
+      "averageValueFormatted": "$15.4M",
       "mostValuablePlayer": {
-        "name": "Jay Idzes",
-        "position": "CB",
-        "value": 10000000,
-        "valueFormatted": "10.0M EUR",
-        "club": "Sassuolo"
+        "name": "Viktor Gyokeres",
+        "value": "$100.0M"
       },
       "leastValuablePlayer": {
-        "name": "Ernando Ari",
-        "position": "GK",
-        "value": 200000,
-        "valueFormatted": "200K EUR",
-        "club": "Persebaya"
+        "name": "Karl-Johan Johnsson",
+        "value": "$500K"
       }
     },
     {

@@ -1,0 +1,172 @@
+{
+  "players": {
+    "Lionel Mpasi": {
+      "bio": "A young goalkeeper developing in the Belgian Pro League with Sint-Truiden, Mpasi has emerged as a promising option between the posts for DR Congo. His shot-stopping ability and growing confidence have earned him the trust of the coaching staff.",
+      "playingStyle": "Young, athletic goalkeeper with good reflexes, improving command of the penalty area, and the agility to make spectacular saves when called upon",
+      "keyStrengths": ["Shot-stopping reflexes", "Athletic agility", "Growing confidence"],
+      "worldCup2026Role": "Starting goalkeeper whose development and shot-stopping ability provide the foundation for DR Congo's defense at their historic World Cup return",
+      "notableFact": "Has developed his game in the competitive Belgian Pro League, gaining the experience needed for DR Congo's historic World Cup campaign"
+    },
+    "Chancel Mbemba": {
+      "bio": "The captain and defensive leader of DR Congo, Mbemba is a vastly experienced center-back who has played at Newcastle United, Porto, and Marseille. His leadership, aerial ability, and big-game temperament make him the cornerstone of the team's defense.",
+      "playingStyle": "Experienced, commanding center-back with excellent aerial ability, strong tackling, and the leadership qualities to organize and inspire the defensive line",
+      "keyStrengths": ["Aerial dominance and heading", "Leadership and organization", "Experience at top European clubs"],
+      "worldCup2026Role": "Captain and defensive leader whose experience at Porto, Newcastle, and Marseille provides the spine of DR Congo's backline at their historic World Cup return",
+      "notableFact": "Won the Portuguese league title with Porto and has Champions League experience, making him by far the most decorated player in the DR Congo squad"
+    },
+    "Arthur Masuaku": {
+      "bio": "A left-back with Premier League experience from his time at West Ham United, Masuaku brings technical ability and attacking flair to the left side of defense. His dribbling skills from fullback are a unique weapon in DR Congo's arsenal.",
+      "playingStyle": "Technical, attack-minded left-back with excellent dribbling ability, good crossing, and the flair to create attacking opportunities from deep positions",
+      "keyStrengths": ["Dribbling ability from fullback", "Attacking runs and crossing", "Technical skill"],
+      "worldCup2026Role": "Starting left-back whose attacking flair and Premier League experience provide width and creativity from the defensive line",
+      "notableFact": "Spent several seasons at West Ham United in the Premier League, bringing top-flight English football experience to the DR Congo squad"
+    },
+    "Christian Luyindama": {
+      "bio": "A powerful, aggressive center-back who has built his career at Galatasaray in the Turkish Super Lig, Luyindama is known for his physical dominance and uncompromising defending. His warrior spirit embodies the fighting character of the DR Congo team.",
+      "playingStyle": "Physical, aggressive center-back who dominates aerial duels, makes crunching tackles, and brings an intimidating presence to the heart of the defense",
+      "keyStrengths": ["Physical power and aerial dominance", "Aggressive tackling", "Intimidating defensive presence"],
+      "worldCup2026Role": "Experienced center-back whose physical power and aggression provide a formidable defensive partnership alongside captain Mbemba",
+      "notableFact": "Has been a fan favorite at Galatasaray for his warrior-like defending and passionate commitment on the pitch"
+    },
+    "Ngonda Muzinga": {
+      "bio": "A homegrown center-back from AS Vita Club in the Congolese league, Muzinga represents the domestic talent that has contributed to DR Congo's historic World Cup qualification. His journey from local football to the world stage is an inspiring story.",
+      "playingStyle": "Solid, dependable center-back with good aerial ability, strong in the tackle, and the determination that comes from fighting through the competitive African club football landscape",
+      "keyStrengths": ["Aerial ability", "Determined defending", "Heart and commitment"],
+      "worldCup2026Role": "Depth option at center-back who represents the domestic league contingent and whose journey from local football to the World Cup embodies the team's remarkable story",
+      "notableFact": "One of the few domestically-based players in the World Cup squad, representing the pride of Congolese club football on the world stage"
+    },
+    "Samuel Moutoussamy": {
+      "bio": "A disciplined defensive midfielder who has developed his craft in Italian football at Lecce in Serie A, Moutoussamy brings tactical intelligence and ball-winning ability to the DR Congo midfield. His Italian football education shows in his positional discipline.",
+      "playingStyle": "Disciplined defensive midfielder with good positional sense, reliable tackling, and the tactical awareness developed through Italian Serie A football",
+      "keyStrengths": ["Tactical discipline", "Ball-winning ability", "Positional intelligence"],
+      "worldCup2026Role": "Midfield anchor whose tactical discipline and defensive awareness provide protection for the backline and a platform for the team's more creative players",
+      "notableFact": "Has developed his game in Serie A's demanding tactical environment at Lecce, bringing Italian defensive discipline to the DR Congo midfield"
+    },
+    "Yoane Wissa": {
+      "bio": "One of the most exciting attackers in the Premier League, Wissa has been a revelation at Brentford with his pace, finishing, and ability to score spectacular goals. His explosive talent makes him DR Congo's most dangerous offensive weapon at the World Cup.",
+      "playingStyle": "Quick, dynamic striker with electric pace, clinical finishing, and the ability to score from anywhere with either foot, capable of producing moments of individual brilliance",
+      "keyStrengths": ["Blistering pace", "Clinical finishing with either foot", "Ability to score spectacular goals"],
+      "worldCup2026Role": "Leading attacker and main goal threat whose Premier League form and explosive ability make him the player most likely to produce match-winning moments for DR Congo",
+      "notableFact": "Has scored numerous spectacular goals in the Premier League for Brentford, establishing himself as one of the most exciting African strikers in English football"
+    },
+    "Théo Bongonda": {
+      "bio": "A tricky winger with explosive pace and dribbling ability, Bongonda has played across Belgian and Spanish football. His directness and willingness to take on defenders make him a constant threat from wide positions.",
+      "playingStyle": "Pacey, direct winger who loves to run at defenders, with good dribbling skills, a dangerous left foot when cutting inside, and the speed to get behind defensive lines",
+      "keyStrengths": ["Pace and acceleration", "Dribbling and taking on defenders", "Left-footed finishing from inside positions"],
+      "worldCup2026Role": "Wide attacking option whose pace and directness provide an alternative threat from the flanks, capable of stretching defenses and creating space for teammates",
+      "notableFact": "Was a key player at Racing Genk in Belgium before moving to Spain, showcasing his exciting attacking talent across multiple European leagues"
+    },
+    "Cédric Bakambu": {
+      "bio": "A veteran striker who has scored goals across La Liga, the Chinese Super League, and Turkey with Galatasaray, Bakambu is DR Congo's most experienced forward. His movement, finishing, and understanding of the striker's role make him a reliable goalscorer.",
+      "playingStyle": "Intelligent striker with sharp movement in the box, clinical finishing, and the experience to find space and score goals in the tightest of situations",
+      "keyStrengths": ["Intelligent movement", "Clinical finishing", "Experience across multiple leagues"],
+      "worldCup2026Role": "Experienced striker whose goal-scoring pedigree and big-game experience provide a reliable alternative or partner to Wissa in the forward line",
+      "notableFact": "Became the most expensive African player in history when he moved to Beijing Guoan in 2018, having scored prolifically at Villarreal in La Liga"
+    },
+    "Gaël Kakuta": {
+      "bio": "A gifted playmaker who was once the subject of a famous transfer battle involving Chelsea as a teenager, Kakuta has journeyed through multiple European leagues. His creative ability, vision, and technical skill remain his greatest assets.",
+      "playingStyle": "Creative, technically gifted playmaker with excellent vision, silky ball control, and the ability to thread passes through the tightest defensive lines",
+      "keyStrengths": ["Creative vision and passing", "Technical skill and ball control", "Experience across multiple leagues"],
+      "worldCup2026Role": "Experienced creative option whose vision and technical ability provide a different dimension in attack, ideal for unlocking stubborn defenses",
+      "notableFact": "Was the subject of one of football's most controversial transfers when he moved to Chelsea as a teenager, and has since built a well-traveled career across Europe"
+    },
+    "Silas Katompa Mvumpa": {
+      "bio": "An explosive winger known simply as Silas, he has dazzled in the Bundesliga with VfB Stuttgart. His electrifying pace, fearless dribbling, and ability to create chances from nothing make him one of the most exciting wide players in German football.",
+      "playingStyle": "Lightning-quick winger with devastating pace, direct dribbling, and the ability to beat defenders on either side, creating constant danger from the left flank",
+      "keyStrengths": ["Electrifying pace", "Direct, fearless dribbling", "Ability to create chances from nothing"],
+      "worldCup2026Role": "Exciting wide attacker whose pace and unpredictability can turn any match in DR Congo's favor, a constant threat on the counter-attack",
+      "notableFact": "Has been one of the standout wingers in the Bundesliga at VfB Stuttgart, known for his electric pace and crowd-pleasing style of play"
+    },
+    "Joël Kiassumbua": {
+      "bio": "A goalkeeper from TP Mazembe in the domestic Congolese league, Kiassumbua represents the homegrown talent in the squad. His experience in African club competition and the Congolese league provides a different perspective to the goalkeeping group.",
+      "playingStyle": "Experienced domestic goalkeeper with solid shot-stopping, good reflexes, and the familiarity with African football that provides valuable squad depth",
+      "keyStrengths": ["Shot-stopping", "Experience in African club football", "Squad experience"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth from the domestic league, his inclusion represents the pride of Congolese club football at the World Cup",
+      "notableFact": "Plays for TP Mazembe, one of the most storied clubs in African football history, five-time African Champions League winners"
+    },
+    "Meschack Elia": {
+      "bio": "A quick, direct winger who has impressed at BSC Young Boys in the Swiss Super League, Elia has contributed to multiple league titles. His pace on the counter-attack and ability to stretch defenses provide a useful tactical weapon.",
+      "playingStyle": "Pacey winger with good dribbling ability, excellent at running in behind defenses, and the directness to take on defenders and create goal-scoring opportunities",
+      "keyStrengths": ["Pace and counter-attacking threat", "Dribbling and directness", "Experience in European competition"],
+      "worldCup2026Role": "Wide attacking option whose pace and counter-attacking ability provide a valuable tactical weapon, particularly against stronger opponents who push forward",
+      "notableFact": "Has won multiple Swiss Super League titles with BSC Young Boys and played in the Champions League group stages, gaining valuable European experience"
+    },
+    "Merveille Bokadi": {
+      "bio": "An experienced center-back from Standard Liege in the Belgian Pro League, Bokadi provides seasoned defensive depth to the squad. His years of professional football in Belgium have made him a dependable option in the heart of defense.",
+      "playingStyle": "Experienced, reliable center-back with good aerial ability, strong marking, and the organizational skills developed through years of professional football in Belgium",
+      "keyStrengths": ["Aerial ability", "Defensive reliability", "Experience in Belgian football"],
+      "worldCup2026Role": "Experienced center-back providing defensive depth and the professionalism needed to maintain squad standards throughout the tournament",
+      "notableFact": "Has been a loyal servant at Standard Liege in Belgium, one of the country's most historic clubs, gaining years of European football experience"
+    },
+    "Edo Kayembe": {
+      "bio": "A dynamic central midfielder who has built his career in English football at Watford, Kayembe brings energy, physical presence, and competitive spirit to the DR Congo midfield. His box-to-box running and tackling ability are his main strengths.",
+      "playingStyle": "Energetic box-to-box midfielder with good physical presence, strong tackling, and the stamina to cover ground and influence matches at both ends of the pitch",
+      "keyStrengths": ["Box-to-box energy", "Tackling and ball-winning", "Physical presence"],
+      "worldCup2026Role": "Dynamic midfield option whose energy and physicality provide competition and depth in the center of the park",
+      "notableFact": "Has been a consistent performer at Watford in the English Championship, bringing competitive English football experience to the DR Congo squad"
+    },
+    "Fabrice Ngoma": {
+      "bio": "A left-back from TP Mazembe in the domestic league, Ngoma is one of the homegrown players whose journey from Congolese football to the World Cup represents the incredible story of this DR Congo squad. His defensive commitment and local knowledge are valued by the team.",
+      "playingStyle": "Committed, hard-working left-back with good defensive positioning, determination in the tackle, and the spirit of a player who has earned his place through the domestic league system",
+      "keyStrengths": ["Defensive commitment", "Determination and work rate", "Domestic league experience"],
+      "worldCup2026Role": "Backup left-back option from the domestic league, his presence in the squad represents the contribution of Congolese club football to this historic campaign",
+      "notableFact": "Plays for TP Mazembe, the legendary Congolese club that has won the African Champions League five times and is one of the continent's most successful teams"
+    },
+    "Chadrac Akolo": {
+      "bio": "A versatile wide player who has built his career in French and German football, playing at Lens in Ligue 1 after spells in the Bundesliga. Akolo's pace, work rate, and ability to play across the front line make him a useful squad member.",
+      "playingStyle": "Quick, hardworking wide attacker who presses from the front, provides width, and uses his pace to stretch defenses and create space for teammates",
+      "keyStrengths": ["Pace and work rate", "Pressing from the front", "Versatility across the forward line"],
+      "worldCup2026Role": "Versatile attacking option who can fill multiple roles in the forward line, providing energy and pace from the bench when the team needs fresh legs",
+      "notableFact": "Has played in both the Bundesliga and Ligue 1, bringing a well-rounded European football education to the DR Congo attacking options"
+    },
+    "Dieumerci Ndongala": {
+      "bio": "An experienced winger who has played across Belgian and Turkish football, Ndongala brings pace, trickery, and years of professional experience to the squad. His ability to take on defenders and create chances remains a useful asset.",
+      "playingStyle": "Tricky, experienced winger with good pace, dribbling ability, and the know-how to create chances in wide areas after years of professional football across multiple leagues",
+      "keyStrengths": ["Dribbling and trickery", "Pace and directness", "Experience across multiple leagues"],
+      "worldCup2026Role": "Experienced wide option providing squad depth and the ability to create chances with his dribbling and pace from the flanks",
+      "notableFact": "Has built a long professional career across Belgium and Turkey, providing the kind of experienced squad depth that is essential in tournament football"
+    },
+    "Neeskens Kebano": {
+      "bio": "Named after the legendary Dutch midfielder Johan Neeskens, Kebano is a talented winger who has been a creative force at Fulham in the Premier League and Championship. His set-piece delivery and ability to create chances make him a valuable attacking weapon.",
+      "playingStyle": "Creative winger with excellent set-piece delivery, good crossing ability, and the technical skill to produce moments of quality from wide areas or dead-ball situations",
+      "keyStrengths": ["Set-piece delivery", "Crossing and chance creation", "Technical quality"],
+      "worldCup2026Role": "Creative wide option whose set-piece expertise and crossing ability provide an important tactical weapon, particularly useful in tight tournament matches",
+      "notableFact": "Named after Dutch legend Johan Neeskens, Kebano has lived up to his namesake's creative flair while playing in the Premier League with Fulham"
+    },
+    "Jackson Muleka": {
+      "bio": "A young striker with raw pace and finishing ability who has played in Turkish football, Muleka represents the next generation of DR Congo attacking talent. His speed and directness make him a dangerous option from the bench.",
+      "playingStyle": "Quick, direct striker with good finishing ability, raw pace to run in behind defenses, and the youthful energy to make an impact as a substitute",
+      "keyStrengths": ["Raw pace and acceleration", "Finishing ability", "Youthful energy"],
+      "worldCup2026Role": "Young striker option whose pace and directness provide an alternative attacking approach, ideal for exploiting space when introduced as a substitute",
+      "notableFact": "Impressed at TP Mazembe before moving to European football, representing the pipeline of talent from Congolese football's famous development system"
+    },
+    "Dylan Batubinsika": {
+      "bio": "A dependable center-back who has established himself at Saint-Etienne in Ligue 1, Batubinsika provides reliable defensive cover. His consistent performances in French football have earned him a regular place in the DR Congo setup.",
+      "playingStyle": "Solid, consistent center-back with good aerial ability, reliable tackling, and the organizational skills to maintain the defensive line's shape and discipline",
+      "keyStrengths": ["Aerial ability", "Consistent defending", "Defensive organization"],
+      "worldCup2026Role": "Reliable center-back option providing depth and consistency in the defensive ranks, capable of stepping in without the team losing quality",
+      "notableFact": "Has been a steady performer at Saint-Etienne in Ligue 1, one of France's most historic clubs, earning regular recognition with the national team"
+    },
+    "Dimitri Bertaud": {
+      "bio": "A goalkeeper developing in Ligue 1 with Montpellier, Bertaud provides additional goalkeeping depth to the squad. His experience in French football and steady development make him a capable backup option.",
+      "playingStyle": "Competent goalkeeper with solid fundamentals, good shot-stopping ability, and the composure that comes from regular football in one of Europe's top leagues",
+      "keyStrengths": ["Solid fundamentals", "Shot-stopping ability", "Ligue 1 experience"],
+      "worldCup2026Role": "Backup goalkeeper providing experienced depth from Ligue 1, capable of stepping in if needed during the tournament",
+      "notableFact": "Has earned his place in the squad through consistent performances at Montpellier in Ligue 1, providing reliable goalkeeping depth"
+    },
+    "Marcel Tisserand": {
+      "bio": "A vastly experienced center-back who has played across multiple European leagues including the Bundesliga with Wolfsburg and the Turkish Super Lig with Fenerbahce, Tisserand is one of the most seasoned defenders in the squad.",
+      "playingStyle": "Experienced, physical center-back with good aerial ability, strong marking, and the composure that comes from years of playing at a high level across Europe",
+      "keyStrengths": ["Aerial ability", "European experience across multiple leagues", "Physical defending"],
+      "worldCup2026Role": "Experienced defensive option whose vast European experience provides invaluable depth and mentorship for younger defenders in the squad",
+      "notableFact": "Has played in the Bundesliga, Turkish Super Lig, and Belgian football, giving him one of the most diverse footballing CVs in the DR Congo squad"
+    },
+    "Nathan Mangala": {
+      "bio": "A dynamic young midfielder who has earned a move to Nottingham Forest in the Premier League, Mangala brings energy, technical quality, and modern midfield attributes to the DR Congo engine room. His development has been rapid and impressive.",
+      "playingStyle": "Dynamic, box-to-box midfielder with good technical ability, sharp passing, and the energy to influence matches at both ends of the pitch with his tireless running",
+      "keyStrengths": ["Box-to-box energy and running", "Technical quality", "Premier League-level intensity"],
+      "worldCup2026Role": "Emerging midfield talent whose energy and technical quality make him an increasingly important part of DR Congo's midfield, with the potential to be a standout performer",
+      "notableFact": "Earned a move to Nottingham Forest in the Premier League, reflecting his rapid development as one of the most promising young Congolese midfielders"
+    }
+  }
+}

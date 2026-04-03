@@ -1,0 +1,172 @@
+{
+  "players": {
+    "Mohammed Al-Owais": {
+      "bio": "Saudi Arabia's commanding number one, Al-Owais has been the backbone of the national team's defense for years. His performances at the 2022 World Cup, particularly his dramatic collision with teammate Yasser Al-Shahrani in the Argentina match, highlighted his bravery and commitment between the posts.",
+      "playingStyle": "Athletic goalkeeper with strong reflexes, commanding aerial presence, and improving distribution who organizes the defense with vocal authority",
+      "keyStrengths": ["Shot-stopping reflexes", "Aerial command in the box", "Brave one-on-one situations"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and defensive leader; his World Cup experience from 2022 and consistent performances in the Saudi Pro League make him the clear first choice",
+      "notableFact": "Was the starting goalkeeper when Saudi Arabia stunned Argentina 2-1 at the 2022 World Cup, one of the greatest upsets in tournament history"
+    },
+    "Mohammed Al-Rubaie": {
+      "bio": "A talented young goalkeeper who has developed well at Al Ahli, Al-Rubaie provides strong competition and reliable backup to Al-Owais. His agility and shot-stopping ability have earned him international recognition.",
+      "playingStyle": "Agile goalkeeper with quick reactions, good positional sense, and developing command of his penalty area",
+      "keyStrengths": ["Quick reflexes and agility", "Positional awareness", "Composure under pressure"],
+      "worldCup2026Role": "Capable backup goalkeeper who can step in if needed; his youth and talent ensure strong goalkeeping depth for the squad",
+      "notableFact": "Has impressed in the Saudi Pro League with Al Ahli, establishing himself as a trusted understudy to Al-Owais in the national team setup"
+    },
+    "Nawaf Al-Aqidi": {
+      "bio": "A rising goalkeeper from Al Nassr's ranks, Al-Aqidi represents the future of Saudi Arabian goalkeeping. His exposure to training alongside top professionals at Al Nassr has accelerated his development.",
+      "playingStyle": "Tall, athletic goalkeeper with good reach, developing shot-stopping skills, and confidence in collecting crosses",
+      "keyStrengths": ["Height and reach advantage", "Cross collection", "Developing distribution"],
+      "worldCup2026Role": "Third-choice goalkeeper providing squad depth; a World Cup squad inclusion would be invaluable for his development as a future national team starter",
+      "notableFact": "Training alongside international stars at Al Nassr has helped Al-Aqidi develop his game and gain exposure to elite-level football on a daily basis"
+    },
+    "Salem Al-Dawsari": {
+      "bio": "The icon of Saudi Arabian football, Salem Al-Dawsari etched his name into World Cup history with his stunning winner against Argentina in 2022. A tricky, skillful winger with an eye for the spectacular, he is the creative heartbeat of the national team and a legend at Al Hilal.",
+      "playingStyle": "Explosive left winger who loves cutting inside onto his right foot, capable of moments of individual brilliance, precise crossing, and lethal finishing from distance",
+      "keyStrengths": ["Dribbling and ball-carrying ability", "Long-range shooting and finishing", "Set-piece delivery and creativity"],
+      "worldCup2026Role": "Talisman and creative leader who will carry the hopes of the nation; his ability to produce match-winning moments makes him Saudi Arabia's most important attacking player",
+      "notableFact": "Scored the iconic winning goal against Argentina at the 2022 World Cup with a curling strike from outside the box, sparking scenes of wild celebration across the Arab world"
+    },
+    "Firas Al-Buraikan": {
+      "bio": "One of the most exciting young forwards in Saudi football, Al-Buraikan combines pace, directness, and a natural instinct for goal. His rapid rise at Al Hilal has made him a key figure in the national team's attacking plans for the 2026 World Cup cycle.",
+      "playingStyle": "Pacy, direct striker who thrives on running behind defenses, clinical in one-on-one situations, and capable of linking play with intelligent movement",
+      "keyStrengths": ["Blistering pace and acceleration", "Clinical finishing in one-on-one situations", "Intelligent movement and off-the-ball runs"],
+      "worldCup2026Role": "First-choice striker who provides the speed and goalscoring threat to lead the line; his youth and energy make him central to Saudi Arabia's counter-attacking game plan",
+      "notableFact": "Became one of the youngest players to reach double figures for Saudi Arabia, establishing himself as the natural successor to the previous generation of Saudi forwards"
+    },
+    "Saleh Al-Shehri": {
+      "bio": "A composed and intelligent striker, Al-Shehri announced himself on the world stage with his equalizer against Argentina at the 2022 World Cup. His clever movement and finishing ability have made him a consistent goalscorer for both club and country.",
+      "playingStyle": "Smart, movement-oriented striker who excels at finding space between defenders, clinical with both feet, and effective at bringing teammates into play",
+      "keyStrengths": ["Intelligent positioning and movement", "Clinical finishing with both feet", "Link-up play and hold-up ability"],
+      "worldCup2026Role": "Experienced striking partner or alternative to Al-Buraikan; his big-game pedigree from the 2022 World Cup makes him invaluable for high-pressure knockout scenarios",
+      "notableFact": "Scored the equalizing goal against Argentina at the 2022 World Cup, starting the comeback in one of the most iconic matches in World Cup history"
+    },
+    "Ali Al-Bulayhi": {
+      "bio": "A veteran center-back and Al Hilal stalwart, Al-Bulayhi is known for his aggressive defending, aerial prowess, and fiery competitiveness. He has been a mainstay of the Saudi defense for over a decade and brings invaluable experience to the squad.",
+      "playingStyle": "Physical, aggressive center-back who dominates in aerial duels, tough in the tackle, and leads the defensive line with vocal authority",
+      "keyStrengths": ["Aerial dominance and heading ability", "Aggressive tackling and physicality", "Experience and defensive leadership"],
+      "worldCup2026Role": "Senior defensive leader who marshals the backline; his vast international experience and ability to organize the defense are critical for World Cup matches",
+      "notableFact": "Was part of the legendary Saudi defense that kept Argentina at bay for most of the 2022 World Cup group-stage match, executing a stunning high defensive line"
+    },
+    "Abdulelah Al-Amri": {
+      "bio": "A composed and technically gifted center-back, Al-Amri has developed into one of Saudi Arabia's most reliable defenders at Al Nassr. His ability to play out from the back and read the game makes him a modern center-back suited to international football.",
+      "playingStyle": "Ball-playing center-back with excellent reading of the game, composed under pressure, and the ability to start attacks with accurate long passes",
+      "keyStrengths": ["Passing ability from the back", "Positional intelligence", "Composure under pressure"],
+      "worldCup2026Role": "Starting center-back partner to Al-Bulayhi, providing the composure and passing quality to complement the veteran's physicality and aggression",
+      "notableFact": "Has established himself as a key defender at Al Nassr, regularly performing against top opposition in the increasingly competitive Saudi Pro League"
+    },
+    "Yasser Al-Shahrani": {
+      "bio": "One of Saudi Arabia's most dynamic defenders, Al-Shahrani is an explosive left-back known for his tireless running and fearless commitment. His 2022 World Cup was cut short by a serious collision, but his recovery and return have been inspirational.",
+      "playingStyle": "Marauding left-back with exceptional stamina, overlapping runs, and the willingness to put his body on the line defensively",
+      "keyStrengths": ["Tireless energy and overlapping runs", "Defensive commitment and bravery", "Pace and recovery speed"],
+      "worldCup2026Role": "First-choice left-back whose attacking drive and defensive solidity make him essential; his return from serious injury adds a narrative of resilience to the squad",
+      "notableFact": "Suffered a horrific collision with goalkeeper Al-Owais during the Argentina match at the 2022 World Cup, requiring emergency surgery but making a determined recovery"
+    },
+    "Sultan Al-Ghannam": {
+      "bio": "A reliable and experienced right-back, Al-Ghannam has been a consistent performer for both Al Nassr and the national team. His defensive discipline and ability to provide width make him a trusted option in the Saudi backline.",
+      "playingStyle": "Disciplined right-back with good positional sense, steady overlapping ability, and reliable defensive contributions",
+      "keyStrengths": ["Positional discipline", "Consistent performances", "Overlapping ability and crossing"],
+      "worldCup2026Role": "Experienced right-back option who provides reliability and stability; his 50-plus caps give him the tournament pedigree needed for World Cup football",
+      "notableFact": "Has been a dependable figure at Al Nassr, maintaining his place in a squad increasingly stocked with international star signings"
+    },
+    "Mohamed Kanno": {
+      "bio": "A powerful, box-to-box midfielder who anchors the Saudi Arabia midfield with his physicality, energy, and passing range. Kanno is the heartbeat of the team, providing the link between defense and attack with his tireless running and ball-winning ability.",
+      "playingStyle": "Dynamic defensive midfielder with excellent physical presence, strong tackling, and the ability to cover enormous ground while distributing the ball effectively",
+      "keyStrengths": ["Physical presence and ball-winning ability", "Covering ground and stamina", "Long-range passing and distribution"],
+      "worldCup2026Role": "Indispensable midfield anchor who sets the platform for Saudi Arabia's attacking play; his ability to win the ball and distribute quickly is the foundation of the team's tactics",
+      "notableFact": "Was instrumental in Saudi Arabia's incredible high-pressing performance against Argentina at the 2022 World Cup, driving the team's relentless energy in midfield"
+    },
+    "Abdulellah Al-Malki": {
+      "bio": "A cultured central midfielder with vision and composure, Al-Malki has been a steady presence in the Saudi midfield for years. His ability to control the tempo and pick out passes makes him a key figure in Saudi Arabia's build-up play.",
+      "playingStyle": "Technically gifted central midfielder with excellent passing range, good game awareness, and the ability to dictate the pace of play",
+      "keyStrengths": ["Passing accuracy and vision", "Game management and composure", "Tactical intelligence"],
+      "worldCup2026Role": "Midfield conductor who controls possession and dictates the rhythm of matches; his experience and calmness are vital for navigating the pressures of World Cup group stages",
+      "notableFact": "A long-serving member of the Al Hilal dynasty that has dominated Saudi football, bringing that winning mentality to the national team"
+    },
+    "Saud Abdulhamid": {
+      "bio": "A history-making full-back who became the first Saudi player to play in Serie A after signing with AS Roma, Abdulhamid represents the new generation of Saudi talent making their mark in European football. His pace and attacking intent make him a modern wing-back.",
+      "playingStyle": "Pacy, attack-minded right-back who loves to get forward, delivers dangerous crosses, and has adapted well to the tactical demands of European football",
+      "keyStrengths": ["Explosive pace and acceleration", "Attacking runs and crossing", "Adaptability to European tactical systems"],
+      "worldCup2026Role": "Dynamic right-back option who brings European-level experience and attacking thrust; his move to Roma has elevated his game and tactical awareness significantly",
+      "notableFact": "Became the first Saudi Arabian player to play in Italy's Serie A when he joined AS Roma, a landmark moment for Saudi football's global ambitions"
+    },
+    "Hassan Tambakti": {
+      "bio": "A young, promising center-back who has established himself at Al Shabab, Tambakti is part of the new wave of Saudi defenders. His composure on the ball and reading of the game have impressed at both club and international level.",
+      "playingStyle": "Modern center-back with good anticipation, comfortable in possession, and strong in one-on-one defensive situations",
+      "keyStrengths": ["Anticipation and reading of the game", "Composure in possession", "One-on-one defending"],
+      "worldCup2026Role": "Emerging center-back option who adds depth and quality to the defensive options; his youth and development trajectory suggest an increasingly important role",
+      "notableFact": "Has risen through the Saudi youth ranks to establish himself as a regular in the senior squad, representing the exciting young talent emerging in Saudi football"
+    },
+    "Abdullah Madu": {
+      "bio": "A no-nonsense center-back with years of experience at the top of Saudi football, Madu brings physicality, aerial strength, and defensive know-how to the squad. His partnership with various defensive colleagues has been a pillar of Saudi Arabian football.",
+      "playingStyle": "Strong, physical center-back who excels in aerial duels, makes important blocks, and brings organizational skills to the defensive unit",
+      "keyStrengths": ["Aerial strength and heading", "Physical defending and blocks", "Experience and organizational ability"],
+      "worldCup2026Role": "Experienced defensive depth option who can be called upon when physicality and aerial dominance are needed, particularly against taller opposition",
+      "notableFact": "Has been a consistent performer across multiple clubs in the Saudi Pro League, earning over 40 caps through his reliable defensive performances"
+    },
+    "Nasser Al-Dawsari": {
+      "bio": "A creative and technically skilled midfielder from Al Hilal, Nasser Al-Dawsari has emerged as an exciting prospect in Saudi football. His ability to pick out passes and drive forward from midfield adds another dimension to the national team.",
+      "playingStyle": "Creative central midfielder with good vision, neat passing in tight spaces, and the ability to carry the ball forward and link the midfield to attack",
+      "keyStrengths": ["Vision and creative passing", "Ball-carrying from midfield", "Composure in tight spaces"],
+      "worldCup2026Role": "Midfield rotation option who can inject creativity and tempo; his Al Hilal pedigree means he is accustomed to high-pressure matches and winning environments",
+      "notableFact": "Part of the dominant Al Hilal midfield that has won multiple Saudi Pro League titles, developing his craft alongside elite-level teammates"
+    },
+    "Hattan Bahebri": {
+      "bio": "A versatile winger known for his trickery and ability to beat defenders, Bahebri has been a fan favorite in Saudi football for years. His experience across multiple Saudi Pro League clubs has made him a seasoned campaigner on the international stage.",
+      "playingStyle": "Skillful winger who loves to take on defenders, uses both feet effectively, and can deliver quality crosses from wide positions",
+      "keyStrengths": ["Dribbling and taking on defenders", "Two-footed ability", "Experience and game intelligence"],
+      "worldCup2026Role": "Experienced wide option who provides squad depth and can change games with his dribbling ability as a substitute; his versatility across the front line adds tactical flexibility",
+      "notableFact": "Has been a consistent source of creativity and excitement in the Saudi Pro League, known for his crowd-pleasing dribbles and willingness to take on opponents"
+    },
+    "Abdullah Al-Hamdan": {
+      "bio": "A young, dynamic striker with pace and movement, Al-Hamdan has developed into a promising goal threat for Saudi Arabia. His instinct for finding space and finishing opportunities makes him an exciting prospect for the 2026 World Cup.",
+      "playingStyle": "Mobile striker with sharp movement in the box, good heading ability for his size, and the pace to stretch defenses on the counter-attack",
+      "keyStrengths": ["Movement and positioning in the box", "Pace on the counter-attack", "Aerial ability and heading"],
+      "worldCup2026Role": "Young striking option who provides energy and a different dimension up front; his pace and directness make him an effective substitute to change the tempo of matches",
+      "notableFact": "Has scored at a strong rate for the national team relative to his appearances, marking him as one of the most efficient young strikers in Saudi football"
+    },
+    "Ayman Yahya": {
+      "bio": "One of the brightest young talents in Saudi Arabian football, Ayman Yahya has burst onto the scene with his pace, skill, and fearless attacking play. At just 24, he represents the exciting future of the Saudi national team.",
+      "playingStyle": "Explosive young winger with blistering pace, direct dribbling style, and the confidence to take on any defender in one-on-one situations",
+      "keyStrengths": ["Raw pace and acceleration", "Direct dribbling and confidence", "Youthful energy and fearlessness"],
+      "worldCup2026Role": "Exciting young wide attacker who can be a game-changer off the bench; his pace and directness can exploit tired defenses in the later stages of matches",
+      "notableFact": "Has attracted attention from European clubs with his performances in the Saudi Pro League, showcasing the kind of explosive talent that thrives on the World Cup stage"
+    },
+    "Ali Al-Hassan": {
+      "bio": "A skillful left-footed winger from Al Ahli, Al-Hassan has emerged as a useful option in the Saudi attacking ranks. His ability to play across the forward line and provide creative spark makes him a versatile squad member.",
+      "playingStyle": "Left-footed winger who can play on either flank, offers good crossing ability, and provides width to stretch opposing defenses",
+      "keyStrengths": ["Left-footed delivery and crossing", "Versatility across the front line", "Work rate and defensive contribution"],
+      "worldCup2026Role": "Versatile attacking option who adds depth to the wide positions; his ability to play on either wing gives the coaching staff tactical flexibility",
+      "notableFact": "Has developed rapidly at Al Ahli, earning international recognition for his consistent performances and versatile attacking play"
+    },
+    "Nayef Aguerd": {
+      "bio": "A dependable left-back who provides balance and defensive solidity from the Al Ittihad ranks. His steady performances in the Saudi Pro League have earned him international recognition and a role in the national team setup.",
+      "playingStyle": "Solid, left-footed full-back with good defensive positioning, reliable in one-on-one situations, and capable of contributing to build-up play",
+      "keyStrengths": ["Defensive reliability and positioning", "Left-footed balance in the back four", "Composure on the ball"],
+      "worldCup2026Role": "Backup left-back option who provides defensive depth and cover; his reliability makes him a trusted alternative when rotation or tactical changes are needed",
+      "notableFact": "Has established himself as a dependable squad member, contributing consistently for Al Ittihad in the demanding Saudi Pro League"
+    },
+    "Abdulrahman Ghareeb": {
+      "bio": "A creative and intelligent wide player, Ghareeb has been a consistent contributor for both Al Ahli and the national team. His ability to find pockets of space and deliver final-third quality makes him a valuable squad member.",
+      "playingStyle": "Clever wide attacker who drifts inside to find space, creates chances with through balls and cutbacks, and contributes with an impressive work rate off the ball",
+      "keyStrengths": ["Creativity and chance creation", "Intelligent movement and positioning", "Work rate and defensive tracking"],
+      "worldCup2026Role": "Creative midfield and wide option who can unlock stubborn defenses with his intelligent play; provides a different type of threat compared to the pacier wingers in the squad",
+      "notableFact": "Has consistently been one of the most creative Saudi-born players in the Pro League, known for his vision and ability to find teammates in dangerous positions"
+    },
+    "Nawaf Al-Abed": {
+      "bio": "One of the most experienced players in the Saudi squad, Al-Abed is a veteran midfielder whose longevity and consistency have been remarkable. His dead-ball expertise and game management skills add a calming influence to the squad.",
+      "playingStyle": "Experienced central midfielder with excellent set-piece delivery, good tactical awareness, and the ability to manage game tempo in the final stages of matches",
+      "keyStrengths": ["Set-piece expertise and delivery", "Game management and experience", "Tactical awareness and positioning"],
+      "worldCup2026Role": "Veteran squad member whose experience and set-piece quality provide invaluable depth; an ideal option to close out games and manage tempo in pressurized situations",
+      "notableFact": "One of the longest-serving members of the Saudi Arabian national team, his career has spanned multiple World Cup qualification cycles"
+    },
+    "Mohammed Al-Burayk": {
+      "bio": "A versatile and experienced right-back from Al Hilal, Al-Burayk has been a consistent performer for the national team. His understanding of the game and dependable defensive work make him a trusted option in the Saudi Arabian backline.",
+      "playingStyle": "Experienced right-back with good defensive awareness, overlapping ability on the right flank, and reliable crossing and delivery into the box",
+      "keyStrengths": ["Defensive awareness and consistency", "Overlapping runs and crossing", "Experience and reliability"],
+      "worldCup2026Role": "Experienced backup right-back who provides depth and reliability; his familiarity with multiple Al Hilal teammates in the squad ensures smooth on-pitch understanding",
+      "notableFact": "Has been a fixture at Al Hilal for years, winning multiple league titles and developing strong partnerships with many of his national team colleagues"
+    }
+  }
+}

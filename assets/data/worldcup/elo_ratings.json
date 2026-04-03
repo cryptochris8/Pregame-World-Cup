@@ -15,7 +15,7 @@
     "POR": { "teamCode": "POR", "teamName": "Portugal", "eloRating": 1760, "rank": 6 },
     "NED": { "teamCode": "NED", "teamName": "Netherlands", "eloRating": 1756, "rank": 7 },
     "BEL": { "teamCode": "BEL", "teamName": "Belgium", "eloRating": 1748, "rank": 8 },
-    "ITA": { "teamCode": "ITA", "teamName": "Italy", "eloRating": 1742, "rank": 9 },
+    "BIH": { "teamCode": "BIH", "teamName": "Bosnia and Herzegovina", "eloRating": 1600, "rank": 34 },
     "GER": { "teamCode": "GER", "teamName": "Germany", "eloRating": 1738, "rank": 10 },
     "COL": { "teamCode": "COL", "teamName": "Colombia", "eloRating": 1730, "rank": 11 },
     "MAR": { "teamCode": "MAR", "teamName": "Morocco", "eloRating": 1725, "rank": 12 },
@@ -24,7 +24,7 @@
     "SEN": { "teamCode": "SEN", "teamName": "Senegal", "eloRating": 1700, "rank": 15 },
     "JPN": { "teamCode": "JPN", "teamName": "Japan", "eloRating": 1695, "rank": 16 },
     "USA": { "teamCode": "USA", "teamName": "United States", "eloRating": 1690, "rank": 17 },
-    "DEN": { "teamCode": "DEN", "teamName": "Denmark", "eloRating": 1685, "rank": 18 },
+    "CZE": { "teamCode": "CZE", "teamName": "Czechia", "eloRating": 1700, "rank": 18 },
     "SUI": { "teamCode": "SUI", "teamName": "Switzerland", "eloRating": 1680, "rank": 19 },
     "MEX": { "teamCode": "MEX", "teamName": "Mexico", "eloRating": 1675, "rank": 20 },
     "TUR": { "teamCode": "TUR", "teamName": "Turkey", "eloRating": 1668, "rank": 21 },
@@ -53,7 +53,7 @@
     "HAI": { "teamCode": "HAI", "teamName": "Haiti", "eloRating": 1350, "rank": 90 },
     "IRQ": { "teamCode": "IRQ", "teamName": "Iraq", "eloRating": 1450, "rank": 65 },
     "NZL": { "teamCode": "NZL", "teamName": "New Zealand", "eloRating": 1505, "rank": 46 },
-    "IDN": { "teamCode": "IDN", "teamName": "Indonesia", "eloRating": 1490, "rank": 47 },
+    "SWE": { "teamCode": "SWE", "teamName": "Sweden", "eloRating": 1750, "rank": 15 },
     "GHA": { "teamCode": "GHA", "teamName": "Ghana", "eloRating": 1520, "rank": 52 }
   }
 }

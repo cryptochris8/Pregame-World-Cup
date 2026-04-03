@@ -1,0 +1,165 @@
+{
+  "players": {
+    "Josue Duverger": {
+      "bio": "A reliable goalkeeper who has developed his career in American football with Louisville City in the USL Championship. Duverger's shot-stopping ability and growing experience have made him Haiti's first-choice keeper for the 2026 World Cup cycle.",
+      "playingStyle": "Athletic, agile goalkeeper with good reflexes, developing command of the penalty area, and improving distribution skills",
+      "keyStrengths": ["Shot-stopping reflexes", "Agility and quick reactions", "Growing leadership from the back"],
+      "worldCup2026Role": "Starting goalkeeper tasked with keeping Haiti competitive in their historic return to the World Cup; his USL experience provides a solid foundation for tournament football",
+      "notableFact": "Part of a new generation of Haitian goalkeepers emerging from the American football system, bridging the gap between the Haitian diaspora and the national team"
+    },
+    "Alexandre Pierre": {
+      "bio": "A homegrown goalkeeper playing for Don Bosco in the Ligue Haitienne. Pierre represents the domestic side of Haitian football, providing backup depth behind Duverger.",
+      "playingStyle": "Solid, dependable goalkeeper with good positioning, reliable handling, and strong knowledge of the domestic football environment",
+      "keyStrengths": ["Positioning and angle play", "Reliable handling", "Domestic league experience"],
+      "worldCup2026Role": "Backup goalkeeper providing domestic league representation in the squad; his inclusion celebrates the local league's contribution to the national team program",
+      "notableFact": "One of the players in the squad who plays in Haiti's domestic Ligue Haitienne, keeping the connection between the national team and local football"
+    },
+    "Steeven Saba": {
+      "bio": "An experienced goalkeeper playing for Violette AC, one of the most prestigious clubs in Haitian football. Saba's experience and local knowledge make him a valuable member of the goalkeeping group.",
+      "playingStyle": "Experienced domestic goalkeeper with good command of the box, vocal leadership qualities, and reliable shot-stopping",
+      "keyStrengths": ["Experience and composure", "Command of the penalty area", "Vocal leadership"],
+      "worldCup2026Role": "Third-choice goalkeeper whose experience at one of Haiti's biggest clubs adds depth and leadership to the goalkeeping department",
+      "notableFact": "Plays for Violette AC, one of the most historically successful clubs in Haitian football, providing a link to the country's rich football traditions"
+    },
+    "Derrick Etienne Jr.": {
+      "bio": "One of Haiti's most talented and experienced attackers, Derrick Etienne Jr. has built a successful MLS career with Columbus Crew. His pace, trickery, and ability to create something from nothing make him a key creative force for the national team.",
+      "playingStyle": "Tricky, pacy left winger with excellent dribbling ability, good crossing, and the intelligence to find space in tight areas and create chances",
+      "keyStrengths": ["Dribbling and close control", "Pace and direct running", "MLS experience and consistency"],
+      "worldCup2026Role": "Starting left winger and primary creative outlet; his MLS experience and consistent output make him one of the first names on the team sheet and a crucial attacking catalyst",
+      "notableFact": "Born in the United States to Haitian parents, Etienne chose to represent Haiti and has become one of the most important players in their historic World Cup campaign"
+    },
+    "Frantzdy Pierrot": {
+      "bio": "A powerful, prolific striker who has proven himself in European football with spells in Turkey's Super Lig. Pierrot's physical presence, aerial ability, and clinical finishing make him Haiti's most dangerous goal threat and the spearhead of their attack.",
+      "playingStyle": "Strong, physical target striker with excellent heading ability, clinical finishing inside the box, and the power to hold off defenders and bring teammates into play",
+      "keyStrengths": ["Aerial ability and heading", "Clinical finishing in the box", "Physical strength and hold-up play"],
+      "worldCup2026Role": "Starting striker and primary goal threat; his European experience and proven scoring record make him the player Haiti rely on most to find the back of the net at the World Cup",
+      "notableFact": "His goal-scoring record in European football makes him one of the most successful Haitian strikers to play abroad, carrying the hopes of a nation on his shoulders"
+    },
+    "Carlens Arcus": {
+      "bio": "A solid right-back playing in France's Ligue 2 with Pau FC. Arcus brings tactical discipline and defensive reliability from the French football system, forming an important part of Haiti's defensive structure.",
+      "playingStyle": "Disciplined, reliable right-back with good defensive positioning, ability to support attacks with overlapping runs, and tactical awareness developed in French football",
+      "keyStrengths": ["Defensive positioning and discipline", "Overlapping runs and crossing", "Tactical awareness from French football"],
+      "worldCup2026Role": "Starting right-back who provides defensive stability and controlled attacking support; his French league experience gives him the tactical framework needed for competitive tournament matches",
+      "notableFact": "Part of a contingent of Haitian players who have developed in the French football system, leveraging the strong cultural and linguistic ties between Haiti and France"
+    },
+    "Bryan Alceus": {
+      "bio": "A combative defensive midfielder playing in France's Ligue 2 with Dunkerque. Alceus provides the hard-running, ball-winning presence that Haiti need to compete in the middle of the park at the World Cup.",
+      "playingStyle": "Energetic, combative defensive midfielder who excels at winning the ball back, covering ground quickly, and shielding the defense with intelligent positioning",
+      "keyStrengths": ["Ball-winning ability and tackling", "Energy and ground coverage", "Defensive positioning and shielding"],
+      "worldCup2026Role": "Starting defensive midfielder who provides the bite and energy in Haiti's engine room; his French football development has given him the tactical discipline to compete at a high level",
+      "notableFact": "Developed in the French football system, Alceus represents the strong pipeline of Haitian talent emerging from France's lower professional divisions"
+    },
+    "Leverton Pierre": {
+      "bio": "A center-back playing in Martinique's football league with Club Franciscain. Pierre adds defensive depth and Caribbean football experience to Haiti's backline options.",
+      "playingStyle": "Physical, commanding center-back with good aerial ability, strong tackling, and experience in Caribbean football environments",
+      "keyStrengths": ["Aerial ability and physical presence", "Tackling and defensive aggression", "Caribbean football experience"],
+      "worldCup2026Role": "Defensive depth option at center-back; his experience in Caribbean football adds a different dimension to the squad's defensive resources",
+      "notableFact": "Plays in Martinique's top division, representing the broader Caribbean connection that enriches Haiti's national team squad"
+    },
+    "Ricardo Ade": {
+      "bio": "A promising young center-back who has established himself in MLS with Nashville SC. Ade's composure on the ball, physical attributes, and growing experience in American football make him an important part of Haiti's defensive future.",
+      "playingStyle": "Modern, ball-playing center-back with good passing ability, physical presence, and the composure to play out from the back under pressure",
+      "keyStrengths": ["Ball-playing ability from the back", "Physical presence and aerial ability", "Composure under pressure"],
+      "worldCup2026Role": "Starting center-back whose MLS experience and composure on the ball allow Haiti to build from the back; his growing maturity makes him a key defensive figure",
+      "notableFact": "Has established himself as a regular starter in MLS at a young age, making him one of the highest-profile defenders in Haitian football"
+    },
+    "Danley Jean Jacques": {
+      "bio": "A technically gifted central midfielder playing in the Swiss Super League with FC Zurich. Jean Jacques brings European-level technical quality and passing ability to Haiti's midfield.",
+      "playingStyle": "Technical, creative central midfielder with good passing range, ability to dictate the tempo, and an eye for a through ball to unlock defenses",
+      "keyStrengths": ["Passing range and accuracy", "Technical quality on the ball", "Vision and creativity"],
+      "worldCup2026Role": "Key midfield creative force whose Swiss league experience provides the technical quality Haiti need to control possession and create chances at the World Cup",
+      "notableFact": "One of the few Haitian players competing in a top European league, his development at FC Zurich has been crucial for his national team role"
+    },
+    "Duckens Nazon": {
+      "bio": "A veteran striker with a strong goal-scoring record for Haiti over many years. Nazon has been one of the most consistent performers for the national team, playing across French lower divisions and bringing a clinical edge to the forward line.",
+      "playingStyle": "Clinical, experienced striker with sharp movement, a left-footed finishing touch, and the instinct to be in the right place at the right time inside the box",
+      "keyStrengths": ["Clinical finishing with the left foot", "Intelligent movement in the box", "Experience and goal-scoring instinct"],
+      "worldCup2026Role": "Veteran striking option whose vast experience and proven international goal-scoring record make him a reliable alternative to Pierrot upfront",
+      "notableFact": "One of Haiti's all-time leading scorers, Nazon has been a fixture in the national team for over a decade and carries the experience of numerous qualifying campaigns"
+    },
+    "Christiano Francois": {
+      "bio": "A versatile attacker playing in MLS with San Jose Earthquakes. Francois brings pace, directness, and MLS-level experience to Haiti's wide attacking options.",
+      "playingStyle": "Quick, direct right winger with good dribbling ability, crossing from wide positions, and the pace to stretch defenses",
+      "keyStrengths": ["Pace and directness", "Dribbling and crossing", "MLS experience and consistency"],
+      "worldCup2026Role": "Wide attacking option who provides pace and energy on the right flank; his MLS experience ensures he is comfortable in competitive, high-intensity environments",
+      "notableFact": "Part of the growing Haitian contingent in MLS, contributing to the pipeline of American-based talent available to the national team"
+    },
+    "Melchie Dumornay": {
+      "bio": "A young, creative attacking midfielder playing for Don Bosco in the domestic Ligue Haitienne. Dumornay represents the future of Haitian football, bringing technical flair and creativity to the national team's attack.",
+      "playingStyle": "Creative, technically gifted attacking midfielder with quick feet, good vision, and the ability to play defense-splitting passes in tight spaces",
+      "keyStrengths": ["Technical ability and creativity", "Vision and passing", "Quick feet and close control"],
+      "worldCup2026Role": "Young creative talent gaining World Cup experience; his technical ability provides an exciting option from the bench when Haiti need to unlock stubborn defenses",
+      "notableFact": "One of the youngest players in the Haiti squad, Dumornay's inclusion at the World Cup represents the investment in youth that is shaping Haitian football's future"
+    },
+    "Jems Geffrard": {
+      "bio": "An experienced center-back playing in MLS with Montreal Impact. Geffrard's physical presence, defensive organization, and MLS pedigree make him a cornerstone of Haiti's defensive unit.",
+      "playingStyle": "Strong, physical center-back with commanding aerial presence, good organizational skills, and the ability to marshal the defense under pressure",
+      "keyStrengths": ["Aerial dominance and physical defending", "Defensive organization and communication", "MLS experience and consistency"],
+      "worldCup2026Role": "Starting center-back whose MLS experience and defensive leadership are crucial; his partnership with Ade forms the backbone of Haiti's defensive structure",
+      "notableFact": "Has been a consistent performer in MLS and a regular in the Haiti national team, bridging the diaspora community with the national football program"
+    },
+    "Stephane Lambese": {
+      "bio": "A veteran center-back with extensive experience in French lower-division football. Lambese brings old-school defensive grit, aerial prowess, and years of international experience to Haiti's backline.",
+      "playingStyle": "Experienced, physical center-back who excels in aerial duels, aggressive marking, and using his years of experience to read the game and position himself effectively",
+      "keyStrengths": ["Aerial ability and physical defending", "Experience and game reading", "Set-piece threat from corners"],
+      "worldCup2026Role": "Veteran defensive option whose experience provides valuable depth and mentorship; his long international career means he understands what it takes to represent Haiti at the highest level",
+      "notableFact": "One of the most capped defenders in recent Haitian football history, having served the national team faithfully across multiple qualifying cycles"
+    },
+    "Alex Christian": {
+      "bio": "A young left-back playing for Violette AC in the Ligue Haitienne. Christian represents the domestic talent contributing to Haiti's World Cup squad, providing cover at left-back.",
+      "playingStyle": "Young, energetic left-back with good pace, willingness to get forward, and developing defensive skills in the domestic league",
+      "keyStrengths": ["Pace and energy", "Willingness to attack from left-back", "Youth and potential"],
+      "worldCup2026Role": "Backup left-back providing domestic squad depth; his inclusion highlights the importance of Haiti's local league in supporting the national team",
+      "notableFact": "One of the locally-based players in the World Cup squad, representing the domestic Ligue Haitienne at football's biggest stage"
+    },
+    "Kevin Lafrance": {
+      "bio": "A veteran left-back who has been a loyal servant to the Haiti national team for many years. Lafrance's experience across Central American football and his decades of international service make him one of the most capped players in the squad.",
+      "playingStyle": "Experienced, reliable left-back with good defensive positioning, consistent crossing ability, and the leadership that comes from years of international football",
+      "keyStrengths": ["Experience and reliability", "Defensive positioning", "Leadership and team spirit"],
+      "worldCup2026Role": "Veteran left-back option whose vast international experience and leadership are invaluable; his long service to the national team embodies Haiti's football journey to the World Cup",
+      "notableFact": "One of the most capped players in the current Haiti squad, having served the national team across multiple generations of players"
+    },
+    "Owayne Gordon": {
+      "bio": "A young defensive midfielder playing in the USL Championship with Birmingham Legion. Gordon's energy and ball-winning ability add depth to Haiti's midfield options.",
+      "playingStyle": "Energetic, young defensive midfielder with good tackling ability, mobility, and a willingness to do the dirty work in the middle of the park",
+      "keyStrengths": ["Tackling and ball recovery", "Energy and mobility", "Defensive discipline"],
+      "worldCup2026Role": "Young midfield depth option whose energy and defensive qualities make him a useful squad member for specific game situations",
+      "notableFact": "Part of the growing pipeline of Haitian talent developing in the American lower-division football system"
+    },
+    "Mondy Prunier": {
+      "bio": "A young, exciting winger developing in France's National division with Le Mans FC. Prunier's pace and directness give Haiti an additional attacking option from the flanks.",
+      "playingStyle": "Quick, direct winger with good dribbling ability, pace to stretch defenses, and developing end product in the French football system",
+      "keyStrengths": ["Pace and acceleration", "Dribbling and direct running", "Youth and development potential"],
+      "worldCup2026Role": "Young attacking prospect who can provide energy and pace from the bench; his development in French football gives him a strong tactical foundation",
+      "notableFact": "One of the younger members of the squad developing in the French football system, representing Haiti's growing footprint in European football"
+    },
+    "Beni Makouana": {
+      "bio": "A central midfielder playing in France's lower divisions with AS Beziers. Makouana brings competitive experience from the French football pyramid and adds midfield depth to the squad.",
+      "playingStyle": "Hardworking central midfielder with good passing, tactical awareness from the French football system, and the ability to contribute defensively and offensively",
+      "keyStrengths": ["Work rate and stamina", "Passing and ball circulation", "Tactical awareness"],
+      "worldCup2026Role": "Midfield depth option whose French football experience adds quality and tactical understanding to Haiti's squad rotation",
+      "notableFact": "Part of the French-based contingent in the Haiti squad, leveraging the cultural connection between the two nations"
+    },
+    "Zachary Herivaux": {
+      "bio": "A young central midfielder playing for Racing FC in the Ligue Haitienne. Herivaux brings local talent and youthful energy to Haiti's midfield ranks.",
+      "playingStyle": "Young, energetic midfielder with developing technical skills, good passing, and a willingness to contribute in all phases of play",
+      "keyStrengths": ["Energy and enthusiasm", "Developing technical ability", "Passing and ball movement"],
+      "worldCup2026Role": "Young domestic talent gaining invaluable World Cup experience; his inclusion represents Haiti's commitment to developing local players alongside the diaspora contingent",
+      "notableFact": "One of the youngest locally-based players in the squad, representing the next generation of Haitian football talent"
+    },
+    "Ronaldo Damus": {
+      "bio": "A promising young striker playing in the USL Championship with Orange County SC. Damus has shown impressive goalscoring instincts in American football and adds youthful attacking depth to Haiti's forward options.",
+      "playingStyle": "Mobile, instinctive striker with good movement in the box, ability to find space between defenders, and developing finishing ability",
+      "keyStrengths": ["Movement and positioning in the box", "Goal-scoring instinct", "Pace and mobility"],
+      "worldCup2026Role": "Young striker option who provides energy and goal threat from the bench; his instinctive finishing makes him a useful impact substitute in attacking situations",
+      "notableFact": "Has been one of the most prolific strikers in American lower-division football, earning recognition and a call-up to the national team at a young age"
+    },
+    "Wilde-Donald Guerrier": {
+      "bio": "The grand veteran of Haitian football, Guerrier has been a national team fixture for well over a decade. Playing for Violette AC in the domestic league, his experience, goal-scoring record, and leadership are unmatched in the squad.",
+      "playingStyle": "Experienced, intelligent wide player who uses his football brain to find space, deliver quality crosses, and contribute goals despite no longer having the pace of youth",
+      "keyStrengths": ["Experience and football intelligence", "Goal-scoring from wide areas", "Leadership and mentorship"],
+      "worldCup2026Role": "Veteran squad leader whose vast international experience and goal-scoring record make him an invaluable presence in the dressing room and a reliable option from the bench",
+      "notableFact": "One of Haiti's all-time most capped players and leading scorers, Guerrier represents the continuity and spirit of Haitian football across generations"
+    }
+  }
+}

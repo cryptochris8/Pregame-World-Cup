@@ -1,0 +1,165 @@
+{
+  "players": {
+    "Eloy Room": {
+      "bio": "A veteran goalkeeper who has been a stalwart presence for Curacao over the past decade. Room has built a successful career in Major League Soccer with Columbus Crew, where his shot-stopping ability and command of the penalty area have made him one of the most reliable keepers in the league.",
+      "playingStyle": "Experienced shot-stopper with excellent reflexes, strong command of the box, and reliable distribution to initiate build-up play from the back",
+      "keyStrengths": ["Shot-stopping and reflexes", "Aerial command of the penalty area", "Experience and composure under pressure"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and one of the most experienced players in the squad; his MLS pedigree provides crucial big-game composure for Curacao's historic first World Cup",
+      "notableFact": "Has been a key figure in Columbus Crew's MLS success and is one of the highest-profile players in Curacao's football history"
+    },
+    "Ziggy Rudolphus": {
+      "bio": "A homegrown talent plying his trade in the local Curacao league with RKSV Centro Dominguito. Rudolphus represents the domestic side of Curacao football, providing backup goalkeeping depth behind Eloy Room.",
+      "playingStyle": "Athletic goalkeeper with good positioning and developing skills, comfortable playing in the domestic league environment",
+      "keyStrengths": ["Shot-stopping agility", "Positioning and angle play", "Local league experience"],
+      "worldCup2026Role": "Third-choice goalkeeper providing depth to the squad; his inclusion celebrates the domestic league's contribution to the national team",
+      "notableFact": "One of the few players in the World Cup squad who plays in Curacao's domestic Sekshon Paga league"
+    },
+    "Jairzinho Pieter": {
+      "bio": "A young goalkeeper developing his career in the Netherlands with Jong Utrecht. Pieter represents the next generation of Curacao goalkeeping talent, gaining valuable experience in the Dutch football system.",
+      "playingStyle": "Modern goalkeeper with good footwork and distribution, developing his game in the competitive Dutch reserve league system",
+      "keyStrengths": ["Footwork and ball distribution", "Quick reactions", "Youth and potential"],
+      "worldCup2026Role": "Backup goalkeeper gaining invaluable World Cup experience; his development in the Dutch system gives him a strong foundation for future tournaments",
+      "notableFact": "Developed through the Dutch football system, following a well-worn path for many Curacao internationals who leverage their Dutch ties"
+    },
+    "Juninho Bacuna": {
+      "bio": "The crown jewel of Curacao football, Juninho Bacuna is a dynamic midfielder who has played at Rangers in the Scottish Premiership. Born in the Netherlands to Curacao-heritage parents, he chose to represent the island nation and has become their most important creative force and talisman.",
+      "playingStyle": "Box-to-box midfielder with excellent technical ability, powerful shooting from distance, and the vision to unlock defenses with incisive passing",
+      "keyStrengths": ["Long-range shooting and set pieces", "Technical quality and passing range", "Physical power and engine in midfield"],
+      "worldCup2026Role": "The creative heartbeat of the team and primary set-piece taker; his quality is the single biggest reason Curacao can compete at the highest level",
+      "notableFact": "Brother of Leandro Bacuna, making them one of the few sibling pairs to play together at a World Cup; previously played in the English Championship and Scottish Premiership"
+    },
+    "Cuco Martina": {
+      "bio": "The elder statesman of Curacao football, Cuco Martina has had a remarkable career spanning the Premier League with Southampton and Everton, and multiple European leagues. His experience at the highest level makes him an invaluable leader for this historic World Cup campaign.",
+      "playingStyle": "Versatile, experienced defender who can play across the back line, known for his tactical intelligence, aerial ability, and occasional spectacular long-range goals",
+      "keyStrengths": ["Versatility across defensive positions", "Premier League and European experience", "Leadership and tactical awareness"],
+      "worldCup2026Role": "Veteran defensive leader and squad captain figure; his years in top European leagues provide the kind of experience money cannot buy for a small island nation",
+      "notableFact": "Scored a stunning long-range goal against Arsenal while playing for Southampton in the Premier League, one of the greatest goals by a Curacao international"
+    },
+    "Rangelo Janga": {
+      "bio": "A tall, powerful striker who has been one of Curacao's most consistent goalscorers over the past several years. Janga has played across European leagues in Cyprus and previously in the Netherlands, using his physical presence and finishing ability to lead the line.",
+      "playingStyle": "Target striker with strong aerial ability, good hold-up play, and clinical finishing inside the box",
+      "keyStrengths": ["Aerial dominance and heading ability", "Hold-up play and link-up with midfield", "Finishing inside the penalty area"],
+      "worldCup2026Role": "Starting striker and primary aerial threat; his ability to hold the ball up and bring others into play will be crucial against physically dominant World Cup opponents",
+      "notableFact": "One of Curacao's all-time leading scorers, having consistently found the net across multiple qualifying campaigns"
+    },
+    "Kenji Gorre": {
+      "bio": "A tricky, pacy winger who developed in the Manchester City and Swansea City academies before establishing himself in the Eredivisie with NAC Breda. Gorre's dribbling ability and directness make him Curacao's most exciting attacking talent and a constant threat on the left flank.",
+      "playingStyle": "Explosive left winger with exceptional dribbling skills, blistering pace, and the ability to cut inside or go down the line to create chances",
+      "keyStrengths": ["Dribbling and one-on-one ability", "Pace and directness", "Creativity and chance creation"],
+      "worldCup2026Role": "Starting left winger and primary creative outlet in attack; his ability to take on defenders one-on-one gives Curacao a genuine attacking weapon at the World Cup",
+      "notableFact": "Son of former Dutch international Dean Gorre, he chose to represent Curacao and has become one of their most important attacking players"
+    },
+    "Michael Maria": {
+      "bio": "A dependable left-back who has built a solid career in Scandinavian football with Helsingborg IF in Sweden. Maria provides defensive stability and overlapping runs down the left side, forming a reliable partnership with the wingers ahead of him.",
+      "playingStyle": "Steady, reliable left-back with good crossing ability, disciplined positioning, and the stamina to contribute to both attacking and defensive phases",
+      "keyStrengths": ["Crossing and delivery from the left", "Defensive discipline and positioning", "Stamina and work rate"],
+      "worldCup2026Role": "Starting left-back who provides width and defensive solidity; his experience in Scandinavian football has given him the tactical discipline needed for tournament play",
+      "notableFact": "One of the most capped players in the current Curacao squad, having been a fixture in the national team setup for many years"
+    },
+    "Jurien Gaari": {
+      "bio": "A young center-back developing in the Dutch second division with SC Cambuur. Gaari represents the future of Curacao's defense, combining physical attributes with the technical education of the Dutch football system.",
+      "playingStyle": "Ball-playing center-back with good aerial presence, comfortable on the ball, and developing his reading of the game in competitive Dutch football",
+      "keyStrengths": ["Aerial ability and physical presence", "Comfort on the ball", "Developing tactical awareness"],
+      "worldCup2026Role": "Rotation center-back option who adds depth and future potential to the defensive unit; his Dutch football education means he is comfortable with possession-based play",
+      "notableFact": "Part of a new generation of Curacao defenders being developed through the Dutch football pyramid"
+    },
+    "Darryl Lachman": {
+      "bio": "A highly experienced center-back who has been a cornerstone of Curacao's defense for over a decade. Lachman has played extensively in the Dutch football system and brings old-school defensive grit combined with vital international experience.",
+      "playingStyle": "No-nonsense, physical center-back who excels in aerial duels, strong tackling, and organizing the defensive line with vocal communication",
+      "keyStrengths": ["Aerial dominance and physical defending", "Experience and defensive organization", "Leadership and communication"],
+      "worldCup2026Role": "Starting center-back and defensive leader; his vast international experience with Curacao makes him essential for marshaling the defense against World Cup-level attacking talent",
+      "notableFact": "One of the most capped players in Curacao history, having been an ever-present in the team's rise from Caribbean minnows to World Cup qualifiers"
+    },
+    "Shermaine Martina": {
+      "bio": "A versatile center-back playing in Curacao's domestic league with SV Robinhood. Martina provides squad depth and represents the local talent pool that has been integral to the national team's development.",
+      "playingStyle": "Solid, dependable center-back with good positioning, physical presence, and familiarity with the team's defensive system",
+      "keyStrengths": ["Physical presence in defense", "Positioning and marking", "Team-first mentality"],
+      "worldCup2026Role": "Backup center-back providing depth and local representation; his inclusion underscores Curacao's commitment to developing domestic talent alongside the European-based stars",
+      "notableFact": "One of the locally-based players who has helped Curacao build a team culture bridging the island's domestic league and the European diaspora"
+    },
+    "Leandro Bacuna": {
+      "bio": "A vastly experienced midfielder who has spent his career in English football with Aston Villa and Cardiff City. The elder Bacuna brother brings Premier League and Championship pedigree to Curacao's midfield, with his versatility allowing him to play across multiple positions.",
+      "playingStyle": "Physically powerful, versatile midfielder who can operate as a box-to-box player, right-back, or defensive midfielder, with a strong long-range shot and ability to cover ground",
+      "keyStrengths": ["Versatility across multiple positions", "Physical power and athleticism", "Premier League experience and big-game mentality"],
+      "worldCup2026Role": "Key midfield presence whose versatility allows tactical flexibility; his English football pedigree and leadership make him one of the most important players in the squad",
+      "notableFact": "Played in the Premier League for Aston Villa and made over 100 appearances in English football before committing his international future to Curacao"
+    },
+    "Gevaro Nepomuceno": {
+      "bio": "The number 10 and creative heartbeat of Curacao's domestic football, Nepomuceno is a diminutive playmaker with silky skills and vision. Despite playing in the local league, he has been a consistent performer for the national team with his technical ability.",
+      "playingStyle": "Creative attacking midfielder with excellent close control, quick feet, and the vision to find teammates with through balls in tight spaces",
+      "keyStrengths": ["Close control and dribbling", "Vision and through-ball ability", "Set-piece delivery"],
+      "worldCup2026Role": "Creative option off the bench who can change games with his technical quality; his ability to unlock defenses in tight spaces provides a different dimension to Curacao's attack",
+      "notableFact": "One of the most decorated players in Curacao's domestic league, having been the creative hub of the national team for many years"
+    },
+    "Jarchinio Antonia": {
+      "bio": "A pacy right winger plying his trade in the Dutch second division with Excelsior Rotterdam. Antonia brings directness and speed to Curacao's attack, providing an alternative option on the flanks.",
+      "playingStyle": "Quick, direct winger who uses pace and dribbling to beat defenders, delivering crosses and creating chances from wide positions",
+      "keyStrengths": ["Pace and acceleration", "Dribbling and wing play", "Crossing ability"],
+      "worldCup2026Role": "Attacking rotation option on the right wing; his pace and directness make him a useful impact substitute when Curacao need to stretch opponents",
+      "notableFact": "Developed in the Dutch football system and has represented Curacao at various youth levels before establishing himself in the senior squad"
+    },
+    "Gervane Kastaneer": {
+      "bio": "An athletic, pacy right winger playing in the Eredivisie with Go Ahead Eagles. Kastaneer has experience across Dutch and English football and brings explosive athleticism to Curacao's wide positions.",
+      "playingStyle": "Explosive, athletic winger with raw pace, physical power, and the ability to beat defenders with sheer speed and directness",
+      "keyStrengths": ["Explosive pace and power", "Direct running and crossing", "Physical presence for a winger"],
+      "worldCup2026Role": "Impact winger who can stretch defenses with his pace; his Eredivisie form makes him a key part of Curacao's plans to cause problems on the counter-attack",
+      "notableFact": "Previously played in English football with Coventry City, adding to his experience across different European leagues"
+    },
+    "Brandley Kuwas": {
+      "bio": "A skillful left-footed winger who has been a consistent performer in the Eredivisie with Heracles Almelo. Kuwas is known for his ability to cut inside from the left and create chances or score with his favored foot.",
+      "playingStyle": "Technically gifted inverted winger who likes to cut inside from the left onto his preferred foot, delivering crosses or curling shots toward goal",
+      "keyStrengths": ["Left-footed creativity and shooting", "Cutting inside from the wing", "Crossing and chance creation"],
+      "worldCup2026Role": "Experienced wide option who provides technical quality and goal threat from the flanks; his Eredivisie experience ensures he is comfortable at a high level",
+      "notableFact": "One of the most consistent performers in the Dutch top flight among Curacao internationals, known for his reliable output of goals and assists"
+    },
+    "Elson Hooi": {
+      "bio": "A veteran winger with extensive experience in Dutch football, Hooi has been one of Curacao's most prolific attackers over the years. His combination of goals and assists from wide positions has made him a national team stalwart.",
+      "playingStyle": "Experienced attacking winger with good movement, intelligent runs behind the defense, and the ability to score consistently from wide areas",
+      "keyStrengths": ["Goal-scoring from wide positions", "Intelligent movement and runs", "Experience and big-game temperament"],
+      "worldCup2026Role": "Veteran attacking option whose experience and goal threat make him a valuable squad member; his long service to the national team embodies Curacao's football journey",
+      "notableFact": "One of the highest-scoring wingers in Curacao's international history, having contributed consistently across multiple qualifying campaigns"
+    },
+    "Vurnon Anita": {
+      "bio": "One of the most decorated players in Curacao's history, Vurnon Anita enjoyed a distinguished career at Ajax, Newcastle United in the Premier League, and various European clubs. His return to the national team brings invaluable experience and tactical intelligence.",
+      "playingStyle": "Intelligent, composed defensive midfielder with excellent positional awareness, tidy passing, and the ability to read the game and break up opposition attacks",
+      "keyStrengths": ["Positional intelligence and game reading", "Composure and passing accuracy", "Premier League and Champions League experience"],
+      "worldCup2026Role": "Veteran midfield anchor whose experience at Ajax and Newcastle is unmatched in the squad; his tactical brain and composure will be vital in controlling World Cup matches",
+      "notableFact": "Played Champions League football with Ajax and spent three seasons in the Premier League with Newcastle United, making him arguably the most decorated player in Curacao history"
+    },
+    "Sheraldo Becker": {
+      "bio": "A rapid, exciting attacker who has played in the Belgian Pro League and previously made a name for himself in the Bundesliga with Union Berlin. Becker's pace and directness make him one of Curacao's most dangerous attacking weapons.",
+      "playingStyle": "Lightning-fast forward with explosive acceleration, good dribbling in space, and the ability to run in behind defenses to create and score goals",
+      "keyStrengths": ["Blistering pace and acceleration", "Running behind the defensive line", "Finishing and composure in front of goal"],
+      "worldCup2026Role": "Key attacking weapon whose pace can trouble any defense in the world; his Bundesliga and Belgian league experience means he has performed at a high European level",
+      "notableFact": "Had a breakout season at Union Berlin in the Bundesliga, scoring goals that helped the club challenge for the league title in a remarkable underdog story"
+    },
+    "Charlison Benschop": {
+      "bio": "A veteran striker who has been a reliable goalscorer for Curacao across many years. Benschop has played across Dutch football and brings physicality, aerial ability, and proven finishing to the attacking line.",
+      "playingStyle": "Strong, physical target man with good aerial ability, hold-up play, and the experience to find the net consistently at international level",
+      "keyStrengths": ["Aerial ability and hold-up play", "Physical presence and strength", "Experience and finishing"],
+      "worldCup2026Role": "Experienced backup striker who provides a physical alternative in attack; his aerial presence makes him a useful option for set pieces and late-game situations",
+      "notableFact": "One of Curacao's all-time top scorers, having consistently delivered goals in major international competitions"
+    },
+    "Shanon Carmelia": {
+      "bio": "A young, energetic midfielder developing in Dutch football with Telstar. Carmelia represents the exciting future of Curacao football, bringing youthful dynamism to the midfield ranks.",
+      "playingStyle": "Energetic, mobile central midfielder with good passing, a willingness to press, and developing all-round qualities in the Dutch football system",
+      "keyStrengths": ["Energy and work rate", "Passing and ball circulation", "Youth and eagerness to impress"],
+      "worldCup2026Role": "Young midfield prospect gaining invaluable World Cup experience; his energy and pressing ability make him a useful option when fresh legs are needed",
+      "notableFact": "One of the youngest players in the Curacao World Cup squad, representing the next generation of talent from the island"
+    },
+    "Jamilhio Ricardinho": {
+      "bio": "A disciplined defensive midfielder playing in the Dutch second division with SBV Excelsior. Ricardinho provides important defensive cover and ball-winning ability in Curacao's midfield.",
+      "playingStyle": "Combative defensive midfielder who screens the back line effectively, wins tackles, and keeps possession ticking over with simple, effective passing",
+      "keyStrengths": ["Ball-winning ability and tackling", "Defensive positioning", "Simple, effective passing"],
+      "worldCup2026Role": "Defensive midfield rotation option who adds solidity and protection for the back line; his disciplined approach is valuable in tournament scenarios requiring pragmatic play",
+      "notableFact": "Has developed steadily through the Dutch football system and represents the depth of talent available to Curacao's national team program"
+    },
+    "Roderick Miller": {
+      "bio": "A tall, commanding center-back playing in the Dutch second division with FC Emmen. Miller adds physical presence and defensive depth to Curacao's backline options.",
+      "playingStyle": "Physically imposing center-back with strong aerial ability, solid tackling, and a commanding presence in the defensive third",
+      "keyStrengths": ["Height and aerial dominance", "Physical defending and tackling", "Commanding presence"],
+      "worldCup2026Role": "Defensive depth option whose physical attributes make him useful for specific game situations; his aerial presence adds a set-piece threat at both ends",
+      "notableFact": "Part of Curacao's defensive contingent in the Dutch lower divisions, contributing to the strong pipeline of defenders available to the national team"
+    }
+  }
+}

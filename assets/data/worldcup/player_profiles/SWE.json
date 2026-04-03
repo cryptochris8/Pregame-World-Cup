@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Robin Olsen": {
+      "bio": "A towering and experienced goalkeeper who has played across Europe at Copenhagen, Roma, Everton, and Sheffield United. Olsen has been a mainstay of Swedish football for nearly a decade, providing steady shot-stopping and calm under pressure in major tournaments.",
+      "playingStyle": "Tall, commanding goalkeeper with strong reflexes, excellent shot-stopping ability, and composure in one-on-one situations",
+      "keyStrengths": ["Shot-stopping and reflexes", "Aerial command of the penalty area", "Experience in high-pressure tournament matches"],
+      "worldCup2026Role": "Starting goalkeeper and experienced voice in the dressing room; his tournament pedigree from Euro 2016, 2018 World Cup, and Euro 2020 campaigns is invaluable",
+      "notableFact": "Was Sweden's first-choice goalkeeper during their impressive run to the 2018 World Cup quarter-finals in Russia"
+    },
+    "Emil Krafth": {
+      "bio": "A reliable right-back who has spent several seasons at Newcastle United. Krafth is a solid, no-nonsense defender who provides dependable cover on the right flank with disciplined positional play.",
+      "playingStyle": "Defensively solid right-back with good positioning, composed tackling, and the ability to maintain defensive shape in a back four",
+      "keyStrengths": ["Defensive reliability and positioning", "Composed tackling", "Tactical discipline"],
+      "worldCup2026Role": "Backup right-back option providing squad depth and Premier League experience on the defensive flank",
+      "notableFact": "Part of the Newcastle United squad that qualified for the Champions League in the 2022-23 season"
+    },
+    "Victor Lindelöf": {
+      "bio": "A composed center-back who has been a regular at Manchester United since 2017. Originally from Västerås, Lindelöf developed at Benfica before his big-money move to Old Trafford. He is an excellent ball-playing defender with the ability to start attacks from deep.",
+      "playingStyle": "Elegant, ball-playing center-back with excellent passing range, calm composure on the ball, and intelligent reading of the game",
+      "keyStrengths": ["Ball distribution from defense", "Composure under pressure", "Intelligent positioning and reading of play"],
+      "worldCup2026Role": "Starting center-back and defensive leader; his experience at the highest level of club football makes him the anchor of Sweden's backline",
+      "notableFact": "Began his career as a midfielder before converting to center-back at Benfica, which explains his exceptional comfort on the ball"
+    },
+    "Joakim Nilsson": {
+      "bio": "A left-footed center-back who established himself in the Bundesliga with Arminia Bielefeld before moving to Union Berlin. Nilsson is a smart, positionally aware defender who has earned his place in the Swedish setup through consistent performances in German football.",
+      "playingStyle": "Left-footed center-back with good aerial ability, strong in the tackle, and capable of playing out from the back",
+      "keyStrengths": ["Left-footed passing from defense", "Aerial duels", "Tactical awareness"],
+      "worldCup2026Role": "Squad rotation center-back offering a left-footed option in defense; adds tactical flexibility to Tomasson's defensive selections",
+      "notableFact": "Rose through the Swedish lower divisions before earning a move to Germany, embodying the classic Swedish football development pathway"
+    },
+    "Carl Starfelt": {
+      "bio": "A physical center-back who has played in Sweden, Russia, Scotland, and Spain. Starfelt gained international recognition during his time at Celtic, where he won the Scottish Premiership, before moving to Celta Vigo in La Liga.",
+      "playingStyle": "Physical, aggressive center-back who excels in one-on-one defending, aerial challenges, and brings intensity to the defensive line",
+      "keyStrengths": ["Physical defending and aerial dominance", "One-on-one defending", "Aggression and intensity"],
+      "worldCup2026Role": "Starting center-back partner for Lindelöf, providing the physical presence and aggression to complement Lindelöf's ball-playing style",
+      "notableFact": "Won the Scottish Premiership with Celtic in 2022 before making the move to La Liga with Celta Vigo"
+    },
+    "Ludwig Augustinsson": {
+      "bio": "An experienced left-back who has played across Europe at Copenhagen, Werder Bremen, Sevilla, and Anderlecht. Augustinsson is known for his overlapping runs and dangerous crossing from the left flank, and has been a regular in the Swedish national team for many years.",
+      "playingStyle": "Attack-minded left-back with excellent crossing ability, good stamina for overlapping runs, and solid defensive fundamentals",
+      "keyStrengths": ["Crossing and delivery from the left", "Overlapping attacking runs", "Set-piece delivery"],
+      "worldCup2026Role": "Experienced left-back option providing width and crossing ability; his years of European experience across multiple leagues add valuable depth",
+      "notableFact": "Scored a memorable goal for Sweden at the 2018 World Cup against Mexico in the group stage"
+    },
+    "Alexander Isak": {
+      "bio": "One of Europe's most exciting young strikers, Isak has been sensational at Newcastle United since his move from Real Sociedad. The tall, elegant forward combines technical brilliance with devastating finishing and has drawn comparisons to Zlatan Ibrahimovic for his style of play.",
+      "playingStyle": "Tall, technically gifted striker with silky dribbling, clinical finishing with both feet, and the ability to drop deep and link play before accelerating past defenders",
+      "keyStrengths": ["Clinical finishing with both feet", "Elegant dribbling and close control", "Intelligent movement and link-up play"],
+      "worldCup2026Role": "Starting striker alongside Viktor Gyökeres in Sweden's potent front two; his technical quality and Premier League scoring form make him one of the tournament's most dangerous forwards",
+      "notableFact": "Became the youngest Swedish player to score in a competitive international when he netted at just 17 years old, and has been compared to Zlatan Ibrahimovic throughout his career"
+    },
+    "Albin Ekdal": {
+      "bio": "A veteran midfield anchor who has spent the majority of his career in Italian football with Cagliari, Hamburg, and Sampdoria. Ekdal is a calm, intelligent midfielder who reads the game well and provides a steady presence in the center of the park.",
+      "playingStyle": "Experienced, positionally disciplined midfielder who excels at breaking up play, recycling possession, and providing a defensive shield for the backline",
+      "keyStrengths": ["Positional discipline", "Breaking up opposition attacks", "Calm distribution under pressure"],
+      "worldCup2026Role": "Veteran midfield depth option bringing invaluable experience from previous tournaments; a calming influence in high-pressure situations",
+      "notableFact": "Has extensive experience in Serie A spanning over a decade across multiple Italian clubs, making him one of the most seasoned Swedish exports to Italy"
+    },
+    "Viktor Gyökeres": {
+      "bio": "The breakout star of European football in 2024-25, Gyökeres has been a goal-scoring phenomenon at Sporting CP. After a productive spell at Coventry City in the Championship, his move to Sporting unlocked a new level, with the powerful striker regularly scoring hat-tricks in the Portuguese league and Champions League. His devastating play-off performances secured Sweden's place at the 2026 World Cup.",
+      "playingStyle": "Powerful, complete center-forward who combines physical strength with explosive pace, clinical finishing from any angle, relentless pressing from the front, and the ability to hold up play and bring others into the attack",
+      "keyStrengths": ["Prolific goal-scoring from all situations", "Physical strength and hold-up play", "High pressing intensity and work rate"],
+      "worldCup2026Role": "The talisman and primary goal threat around whom Sweden's entire attacking strategy is built; his hat-trick against Albania and decisive goal against Poland in the play-offs define his importance to this team",
+      "notableFact": "Scored a hat-trick against Albania in the UEFA play-off semi-final and then scored the crucial goal in Sweden's 3-2 victory over Poland in the play-off final to send Sweden to the World Cup"
+    },
+    "Emil Forsberg": {
+      "bio": "A veteran playmaker who made his name at RB Leipzig in the Bundesliga, where he was instrumental in the club's rise to European contention. Forsberg's left foot is one of the most cultured in Swedish football history, capable of producing moments of magic from set-pieces and open play alike.",
+      "playingStyle": "Creative attacking midfielder with an exceptional left foot, superb set-piece delivery, vision for the killer pass, and the experience to manage the tempo of big matches",
+      "keyStrengths": ["Set-piece expertise and dead-ball delivery", "Creative passing and vision", "Left-footed shooting from distance"],
+      "worldCup2026Role": "Experienced creative force who can unlock defenses with his passing and set-piece delivery; likely used as an impact substitute or in specific tactical setups requiring his guile",
+      "notableFact": "Scored four goals at the 2018 World Cup in Russia, including crucial strikes in the group stage that helped Sweden reach the quarter-finals"
+    },
+    "Anthony Elanga": {
+      "bio": "A rapid, direct winger who came through Manchester United's academy before establishing himself as a key player at Nottingham Forest. Born in Sweden to a Cameroonian father, Elanga chose to represent Sweden internationally and has added explosive pace and directness to the national team's attack.",
+      "playingStyle": "Electric, pace-driven winger who loves to take on defenders, run behind the defensive line, and deliver crosses and shots from wide positions",
+      "keyStrengths": ["Blistering pace and directness", "Taking on defenders in one-on-one situations", "Running in behind the defense"],
+      "worldCup2026Role": "Starting left winger who provides the speed and width to stretch opposition defenses; his ability to beat defenders one-on-one creates space for Gyökeres and Isak in the center",
+      "notableFact": "A product of Manchester United's academy who made his senior debut under Ole Gunnar Solskjaer before thriving at Nottingham Forest in the Premier League"
+    },
+    "Karl-Johan Johnsson": {
+      "bio": "An experienced backup goalkeeper who has played in France and Denmark. Johnsson provides reliable depth behind Robin Olsen and brings a calm, professional attitude to the goalkeeping unit.",
+      "playingStyle": "Solid, dependable goalkeeper with good reflexes, calm demeanor, and consistent handling",
+      "keyStrengths": ["Consistent shot-stopping", "Calm presence in goal", "Professional backup mentality"],
+      "worldCup2026Role": "Second-choice goalkeeper providing experienced depth; a reliable option if called upon for any reason during the tournament",
+      "notableFact": "Has had extensive experience in French football, playing in Ligue 1 with Guingamp and Nantes"
+    },
+    "Gustav Svensson": {
+      "bio": "A tough-tackling defensive midfielder who had a successful spell in MLS with Seattle Sounders, winning the MLS Cup, before returning to AIK in Sweden. Svensson is a warrior in the center of the park and a veteran leader of the Swedish squad.",
+      "playingStyle": "Physical, combative defensive midfielder who wins aerial duels, breaks up play with aggressive tackling, and provides a protective screen in front of the defense",
+      "keyStrengths": ["Aerial ability in midfield", "Aggressive tackling and ball-winning", "Leadership and experience"],
+      "worldCup2026Role": "Veteran squad member providing defensive midfield depth and invaluable dressing room leadership from his years of international experience",
+      "notableFact": "Won the MLS Cup with Seattle Sounders in 2019 and was named to the MLS Best XI during his time in American football"
+    },
+    "Filip Helander": {
+      "bio": "A tall, commanding center-back who played in Serie A with Verona and Bologna before moving to Rangers in Scotland, where he scored the winning goal in a historic Old Firm derby. Now back in Sweden with Malmö, he provides experienced defensive depth.",
+      "playingStyle": "Tall, dominant center-back who excels in aerial situations, physical defending, and marshalling the defensive line with vocal communication",
+      "keyStrengths": ["Aerial dominance and heading ability", "Physical presence in defense", "Experience across multiple leagues"],
+      "worldCup2026Role": "Experienced defensive depth option; his aerial prowess makes him particularly useful in set-piece defending situations",
+      "notableFact": "Scored the winning goal in a famous Rangers victory over Celtic in 2021, a moment that cemented his hero status at Ibrox"
+    },
+    "Hugo Larsson": {
+      "bio": "One of the brightest young talents in Swedish football, Larsson earned a move from Malmö to Eintracht Frankfurt at just 18 years old and immediately became a regular in the Bundesliga. His mature performances in central midfield belie his young age, and he is considered the future of Swedish football.",
+      "playingStyle": "Dynamic, modern box-to-box midfielder with excellent technical ability, intelligent pressing, and the composure to play through midfield lines with incisive passing",
+      "keyStrengths": ["Technical quality and composure on the ball", "Intelligent pressing and ball recovery", "Progressive passing through the lines"],
+      "worldCup2026Role": "Starting central midfielder who drives Sweden's play with his energy, technique, and ability to both create and defend; the most exciting young talent in the squad",
+      "notableFact": "Made his Bundesliga debut at 18 years old for Eintracht Frankfurt and was immediately praised for his mature, composed performances in central midfield"
+    },
+    "Jens Cajuste": {
+      "bio": "A box-to-box midfielder who made his name at Midtjylland and Reims before earning a move to Napoli in Serie A. Cajuste combines physical dynamism with technical quality and has been a key part of Sweden's midfield engine.",
+      "playingStyle": "Dynamic, physically imposing midfielder who covers huge distances, wins duels in the center of the park, and drives forward with powerful ball-carrying",
+      "keyStrengths": ["Physical dynamism and ground coverage", "Ball-carrying and driving runs", "Winning duels in midfield"],
+      "worldCup2026Role": "Midfield rotation option who adds physical presence and energy; his ability to cover ground and win the ball back quickly suits Sweden's counter-attacking approach",
+      "notableFact": "Earned his move to Napoli on the back of impressive performances for Reims in Ligue 1 and strong showings in Swedish internationals"
+    },
+    "Mattias Svanberg": {
+      "bio": "A technically refined midfielder who developed at Malmö before spending several years at Bologna in Serie A and then moving to Wolfsburg in the Bundesliga. Svanberg is a composed passer who brings calm and quality to Sweden's midfield.",
+      "playingStyle": "Technically polished central midfielder with clean passing, good spatial awareness, and the ability to maintain possession under pressure",
+      "keyStrengths": ["Clean passing and distribution", "Spatial awareness and positioning", "Composure under pressure"],
+      "worldCup2026Role": "Central midfield option who adds technical quality and calm ball retention; valuable in matches where Sweden need to control possession against organized defenses",
+      "notableFact": "Spent four successful seasons in Serie A with Bologna before moving to the Bundesliga, showcasing his adaptability across different footballing cultures"
+    },
+    "Dejan Kulusevski": {
+      "bio": "A supremely talented attacker who can play across the front line, Kulusevski has been outstanding at Tottenham Hotspur since his move from Juventus. Born to North Macedonian parents in Stockholm, he represents Sweden and has become one of the team's most creative and dangerous players.",
+      "playingStyle": "Versatile, creative attacker who can play on either wing or in an advanced midfield role, combining dribbling skill, physical strength, and an eye for both goals and assists",
+      "keyStrengths": ["Versatility across attacking positions", "Dribbling skill and strength on the ball", "Goal creation through passing and shooting"],
+      "worldCup2026Role": "Starting right winger and primary creative outlet; his ability to cut inside on his left foot and create chances makes him the key link between midfield and attack",
+      "notableFact": "Was signed by Juventus as a teenager from Atalanta's academy, highlighting his early recognition as one of the most talented players to emerge from Swedish football in years"
+    },
+    "Yasin Ayari": {
+      "bio": "A young, dynamic midfielder who burst onto the scene at AIK before earning a move to Brighton in the Premier League. Ayari is a modern, all-action midfielder who combines youthful energy with surprising tactical intelligence.",
+      "playingStyle": "Energetic, press-resistant midfielder who excels at carrying the ball forward, winning back possession, and contributing to both phases of play with tireless running",
+      "keyStrengths": ["Press resistance and ball-carrying", "Tireless work rate", "Youthful energy and fearlessness"],
+      "worldCup2026Role": "Young midfield option who can change the tempo of a match with his energy and directness; an impact substitute who can inject life into the team when needed",
+      "notableFact": "Made his international debut as a teenager, becoming one of the youngest players to represent Sweden in recent years"
+    },
+    "Kristoffer Olsson": {
+      "bio": "A left-footed midfielder who has played in Sweden, Denmark, Belgium, and Russia. Olsson is a tidy, technically proficient player who can operate in central midfield or as a deeper playmaker. His career has been defined by resilience after overcoming a serious brain condition in 2023.",
+      "playingStyle": "Left-footed midfielder with neat passing, good positional sense, and the ability to keep possession ticking over in the middle of the park",
+      "keyStrengths": ["Left-footed passing quality", "Positional intelligence", "Resilience and mental strength"],
+      "worldCup2026Role": "Experienced squad player who adds left-footed quality and depth to the midfield options; an inspirational figure given his remarkable recovery",
+      "notableFact": "Made a remarkable return to football after being diagnosed with a serious brain condition in 2023, showing incredible courage and determination"
+    },
+    "Samuel Edozie": {
+      "bio": "A young, pacy winger of Nigerian descent who developed at Manchester City's academy before loan spells and a move to Strasbourg in France. Edozie represents Sweden internationally and offers raw speed and directness from wide positions.",
+      "playingStyle": "Quick, skillful winger who relies on pace to beat defenders, take on players in one-on-one situations, and deliver crosses from wide areas",
+      "keyStrengths": ["Raw pace and acceleration", "Dribbling and taking on defenders", "Youthful exuberance and unpredictability"],
+      "worldCup2026Role": "Young squad player providing attacking depth on the wings; his pace makes him a dangerous option from the bench against tiring defenses",
+      "notableFact": "Came through Manchester City's prestigious academy before choosing to pursue regular first-team football in France"
+    },
+    "Gabriel Gudmundsson": {
+      "bio": "An attacking left-back who made his name at Groningen in the Eredivisie before moving to Lille in Ligue 1. Gudmundsson is a modern full-back who contributes heavily in attack with his pace, crossing, and willingness to get forward.",
+      "playingStyle": "Attacking full-back with excellent pace, dynamic overlapping runs, and the crossing ability to create chances from the left flank",
+      "keyStrengths": ["Pace and overlapping attacking runs", "Crossing quality", "Defensive recovery speed"],
+      "worldCup2026Role": "Starting left-back who provides width and attacking thrust from the defensive line; his pace and crossing make him a key outlet in Sweden's build-up play",
+      "notableFact": "Earned his move to Lille in Ligue 1 on the back of outstanding performances at Groningen, where he was considered one of the best left-backs in the Eredivisie"
+    },
+    "Pontus Jansson": {
+      "bio": "A fiery, passionate center-back who became a cult hero at Leeds United before joining Brentford, where he captained the club into the Premier League. Jansson is one of the most charismatic defenders in Swedish football, known for his warrior mentality and fierce competitiveness.",
+      "playingStyle": "Aggressive, front-foot center-back who leads by example with ferocious tackling, commanding aerial presence, and a warrior-like mentality that inspires teammates",
+      "keyStrengths": ["Aerial dominance and heading", "Aggressive defending and tackling", "Leadership and vocal communication"],
+      "worldCup2026Role": "Veteran defensive option and squad leader; his Premier League experience and commanding personality make him an important voice in the dressing room",
+      "notableFact": "Captained Brentford to promotion to the Premier League and became a cult hero at both Leeds United and Brentford for his passionate, all-action defending"
+    },
+    "Peter Andersson": {
+      "bio": "A young goalkeeper developing at Malmö FF in the Allsvenskan. Andersson represents the next generation of Swedish goalkeeping and has been included in the squad to gain tournament experience.",
+      "playingStyle": "Young, agile goalkeeper with good reflexes and developing distribution skills",
+      "keyStrengths": ["Agility and reflexes", "Developing shot-stopping ability", "Young and eager to learn"],
+      "worldCup2026Role": "Third-choice goalkeeper included for development and emergency depth; gaining valuable experience by training alongside senior internationals",
+      "notableFact": "One of the youngest members of the squad, selected to gain experience at the highest level of international football"
+    },
+    "Viktor Claesson": {
+      "bio": "A versatile attacking midfielder who has played in Sweden, Russia, and Denmark. Claesson enjoyed a productive spell at Krasnodar in Russia before moving to Copenhagen. He is a reliable, hardworking attacker who has been a regular in the Swedish setup for many years.",
+      "playingStyle": "Versatile, intelligent attacking midfielder who combines clever movement with reliable finishing, good work rate, and the ability to play across multiple positions behind the striker",
+      "keyStrengths": ["Intelligent movement and positioning", "Reliable finishing", "Versatility across attacking positions"],
+      "worldCup2026Role": "Experienced attacking option who provides tactical flexibility; his ability to play multiple positions and score important goals makes him a valuable squad member",
+      "notableFact": "Has scored several crucial international goals for Sweden, including a memorable strike against Mexico at the 2018 World Cup"
+    },
+    "Ken Sema": {
+      "bio": "A tricky, direct winger who has spent most of his career in English football with Watford. Sema is a lively attacker who can play on either wing and provides an option with his pace and dribbling ability.",
+      "playingStyle": "Direct, pacey winger who takes on defenders with skill and speed, delivers crosses from wide areas, and adds energy to the attacking line",
+      "keyStrengths": ["Pace and dribbling", "Crossing from wide areas", "Energy and directness"],
+      "worldCup2026Role": "Experienced squad depth on the wing; provides a dependable wide option with his pace and directness when fresh legs are needed",
+      "notableFact": "Has been a loyal servant to Watford through multiple promotions and relegations in English football"
+    }
+  }
+}

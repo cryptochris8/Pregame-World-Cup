@@ -1,0 +1,21 @@
+{
+  "id": "manager_bih",
+  "firstName": "Sergej",
+  "lastName": "Barbarez",
+  "commonName": "Sergej Barbarez",
+  "dateOfBirth": "1971-09-17",
+  "nationality": "Bosnia and Herzegovina",
+  "currentTeam": "Bosnia and Herzegovina",
+  "currentTeamCode": "BIH",
+  "photoUrl": "assets/managers/barbarez.png",
+  "preferredFormation": "4-2-3-1",
+  "coachingStyle": "Counter-Attacking",
+  "yearsExperience": 3,
+  "previousTeams": ["Bosnia and Herzegovina U21"],
+  "trophies": ["UEFA Play-Off Path A Winner 2026"],
+  "careerWins": 18,
+  "careerDraws": 8,
+  "careerLosses": 10,
+  "careerWinPercentage": 50,
+  "bio": "Former Bundesliga star who scored over 100 goals in German football with Hansa Rostock, Hamburg, Bayer Leverkusen, and Borussia Dortmund. Appointed as Bosnia head coach in 2023, Barbarez transformed the national team with an aggressive, high-energy style. His crowning achievement was guiding Bosnia through the UEFA Play-Offs, beating Wales and then eliminating four-time world champions Italy on penalties (4-1) to qualify for the 2026 World Cup - only the country's second ever appearance at the tournament."
+}

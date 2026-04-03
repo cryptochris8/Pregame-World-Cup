@@ -1,0 +1,172 @@
+{
+  "players": {
+    "Aymen Dahmen": {
+      "bio": "A young and talented goalkeeper who has established himself as Tunisia's first-choice shot-stopper. His performances in Ligue 1 with Montpellier have demonstrated his ability to compete at a high level in European football.",
+      "playingStyle": "Athletic goalkeeper with sharp reflexes, good shot-stopping ability, and the composure to organize the defense in high-pressure situations",
+      "keyStrengths": ["Shot-stopping reflexes", "Composure and positioning", "Distribution and playing out from the back"],
+      "worldCup2026Role": "Starting goalkeeper whose Ligue 1 experience and athletic ability make him the clear first choice; his youth means he is approaching his peak years at the perfect time for the tournament",
+      "notableFact": "Has developed into Tunisia's number one goalkeeper while playing in the French Ligue 1 with Montpellier, one of Europe's top leagues"
+    },
+    "Mouez Hassen": {
+      "bio": "An experienced goalkeeper who also plies his trade in the French league with Montpellier. Hassen's international experience across multiple major tournaments makes him a valuable backup option and dressing-room presence.",
+      "playingStyle": "Experienced goalkeeper with good positioning, reliable handling, and the big-game experience gained from representing Tunisia at major tournaments",
+      "keyStrengths": ["International tournament experience", "Reliable handling and positioning", "Vocal communication and organization"],
+      "worldCup2026Role": "Experienced backup goalkeeper who provides quality depth and tournament know-how; his familiarity with Dahmen from their time together at Montpellier ensures a cohesive goalkeeping unit",
+      "notableFact": "Has represented Tunisia at multiple international tournaments, giving him invaluable experience in the high-pressure environment of global competitions"
+    },
+    "Béchir Ben Saïd": {
+      "bio": "A domestic-based goalkeeper from US Monastir who provides depth to Tunisia's goalkeeping ranks. His consistent performances in the Tunisian league have earned him his international recognition.",
+      "playingStyle": "Solid goalkeeper with good command of the box, dependable shot-stopping, and the consistency that comes from regular domestic football",
+      "keyStrengths": ["Consistency and reliability", "Aerial command", "Domestic league experience"],
+      "worldCup2026Role": "Third-choice goalkeeper providing squad depth; his inclusion ensures Tunisia have reliable cover across the goalkeeping position",
+      "notableFact": "Has been a consistent performer in the Tunisian Ligue Professionnelle, earning his place in the national team through steady, reliable performances"
+    },
+    "Hannibal Mejbri": {
+      "bio": "The most exciting young talent in Tunisian football, Mejbri came through Manchester United's academy and has shown his technical quality and fierce competitive edge. His passionate, combative style and creative ability make him the future of Tunisian football.",
+      "playingStyle": "Creative, combative central midfielder with excellent technical ability, fearless ball-carrying, and a fiery competitive edge that belies his young age",
+      "keyStrengths": ["Technical ability and creativity", "Combative mentality and competitive fire", "Ball-carrying and driving forward runs"],
+      "worldCup2026Role": "Key creative midfielder whose talent and passion make him central to Tunisia's attacking play; his ability to carry the ball and create chances is essential against top opposition",
+      "notableFact": "Developed at Manchester United's academy before moving to Burnley, making him one of the most prominent Tunisian players to train at one of the world's biggest clubs"
+    },
+    "Ellyes Skhiri": {
+      "bio": "Tunisia's midfield anchor and one of the most accomplished Tunisian players in European football, Skhiri has been a key figure in the Bundesliga with Eintracht Frankfurt. His composure, tactical intelligence, and ball-winning ability make him the most important player in Tunisia's engine room.",
+      "playingStyle": "Complete defensive midfielder with excellent ball-winning ability, clean passing under pressure, and the tactical intelligence to read the game and position himself perfectly",
+      "keyStrengths": ["Ball-winning ability and tackling", "Composure and passing under pressure", "Tactical intelligence and positioning"],
+      "worldCup2026Role": "Indispensable midfield anchor whose Bundesliga quality sets the standard for the entire team; his ability to win the ball and distribute cleanly is the foundation of Tunisia's play",
+      "notableFact": "Has been one of the most consistent performers in the German Bundesliga with Eintracht Frankfurt, establishing himself among the top defensive midfielders in the league"
+    },
+    "Aïssa Laïdouni": {
+      "bio": "A dynamic and energetic midfielder who became a fan favorite at the 2022 World Cup with his tireless running and passionate celebrations. Laïdouni's box-to-box energy and intensity in the Bundesliga with Union Berlin make him a crucial part of Tunisia's midfield.",
+      "playingStyle": "High-energy box-to-box midfielder with relentless pressing, excellent stamina, and the ability to cover every blade of grass while contributing in both attack and defense",
+      "keyStrengths": ["Tireless running and stamina", "Pressing intensity and ball recovery", "Box-to-box energy and drive"],
+      "worldCup2026Role": "Key midfield presence whose energy and intensity set the pressing tone for the whole team; his performances at the 2022 World Cup showed he thrives on the biggest stage",
+      "notableFact": "Became a breakout star at the 2022 World Cup in Qatar with his passionate performances and tireless running, endearing himself to Tunisian fans worldwide"
+    },
+    "Youssef Msakni": {
+      "bio": "The most talented Tunisian player of his generation, Msakni is a silky playmaker whose career has been defined by moments of brilliance and unfortunate injury timing. Missing the 2018 World Cup through injury was heartbreaking, making the 2026 tournament potentially his last chance at World Cup football.",
+      "playingStyle": "Elegant, creative playmaker with sublime technical ability, vision to unlock defenses with a single pass, and the skill to produce moments of individual magic",
+      "keyStrengths": ["Sublime technical ability and ball control", "Creative vision and passing", "Ability to produce match-winning moments"],
+      "worldCup2026Role": "Senior creative influence and national team legend whose experience and skill can unlock the tightest defenses; if fit, his quality is unmatched in the Tunisian squad",
+      "notableFact": "Missed the 2018 World Cup through injury in what was a devastating blow for both him and Tunisia, as many believe his presence could have changed their tournament fortunes"
+    },
+    "Montassar Talbi": {
+      "bio": "A tall, commanding center-back who has gained valuable experience in French football with Lorient. Talbi's aerial dominance and improving ball-playing ability have made him a key figure in Tunisia's defense.",
+      "playingStyle": "Tall, commanding center-back with excellent aerial ability, strong physical presence, and improving comfort on the ball when building from the back",
+      "keyStrengths": ["Aerial dominance and heading", "Physical presence and strength", "Improving ball-playing ability"],
+      "worldCup2026Role": "Starting center-back whose aerial ability and physical presence provide the defensive foundation; his experience in French football has prepared him well for World Cup-level attackers",
+      "notableFact": "Has been a regular in French football with Lorient, developing his game in one of Europe's most competitive leagues"
+    },
+    "Dylan Bronn": {
+      "bio": "An experienced center-back with a wealth of international experience, Bronn has been a mainstay of the Tunisian defense across multiple tournaments. His left-footed play from the back and set-piece threat from corners and free kicks add extra value.",
+      "playingStyle": "Left-footed center-back with good passing ability from defense, dangerous from set pieces, and the experience to organize the backline in high-pressure situations",
+      "keyStrengths": ["Left-footed ball-playing ability", "Set-piece threat from defensive positions", "Experience and defensive organization"],
+      "worldCup2026Role": "Experienced center-back who provides balance with his left foot and adds a set-piece goal threat; his multiple tournament appearances give him invaluable big-game experience",
+      "notableFact": "Has represented Tunisia at multiple major tournaments including the World Cup and Africa Cup of Nations, making him one of the most experienced defenders in the squad"
+    },
+    "Mohamed Ali Ben Romdhane": {
+      "bio": "A creative and technically gifted attacking midfielder who has impressed in European football with Ferencvaros in Hungary. Ben Romdhane's dribbling ability and eye for goal make him an exciting creative force in the Tunisian attack.",
+      "playingStyle": "Creative attacking midfielder with excellent dribbling ability, good vision for the final pass, and the composure to score in important moments",
+      "keyStrengths": ["Dribbling and creative play", "Vision and final-third passing", "Goalscoring ability from midfield"],
+      "worldCup2026Role": "Creative attacking option who can unlock defenses with his dribbling and passing; his European experience at Ferencvaros, including Champions League and Europa League exposure, adds pedigree",
+      "notableFact": "Has gained valuable European experience at Ferencvaros, playing in both the Champions League and Europa League qualifying rounds"
+    },
+    "Ali Abdi": {
+      "bio": "A reliable left-back who has spent his career in French football, most recently with Caen. Abdi's consistency, defensive discipline, and ability to support attacks from the left flank have made him a regular in the Tunisian setup.",
+      "playingStyle": "Consistent, disciplined left-back with good defensive positioning, reliable overlapping ability, and experience in the tactical demands of French football",
+      "keyStrengths": ["Defensive consistency and discipline", "Overlapping runs and crossing", "Experience in French football"],
+      "worldCup2026Role": "First-choice left-back whose experience and reliability provide stability on the left side of defense; his familiarity with European football prepares him for World Cup challenges",
+      "notableFact": "Has been a dependable performer in French football for several years, building the kind of consistent career that translates well to international tournament football"
+    },
+    "Mohamed Dräger": {
+      "bio": "A versatile right-back of German-Tunisian heritage who has played across several European leagues. Drager's technical ability, tactical intelligence, and experience in Swiss, German, and Greek football make him a well-rounded defender.",
+      "playingStyle": "Technical, attack-minded right-back with good crossing ability, comfortable in possession, and the tactical intelligence gained from playing in multiple European leagues",
+      "keyStrengths": ["Technical ability and crossing", "Tactical versatility from multi-league experience", "Attacking contributions from right-back"],
+      "worldCup2026Role": "Starting right-back whose European experience and attacking quality provide balance on the right flank; his diverse tactical education makes him adaptable to different opponents",
+      "notableFact": "Born and raised in Germany before choosing to represent Tunisia, Drager's dual heritage reflects the strong Tunisian diaspora in European football"
+    },
+    "Wajdi Kechrida": {
+      "bio": "A dependable right-back who has gained experience in Greek football with Aris Thessaloniki. Kechrida's defensive solidity and ability to contribute in attack make him a useful option for the Tunisian backline.",
+      "playingStyle": "Solid right-back with good defensive awareness, reliable in one-on-one situations, and capable of providing width when Tunisia push forward",
+      "keyStrengths": ["Defensive solidity and one-on-one defending", "Crossing ability", "Consistency and reliability"],
+      "worldCup2026Role": "Backup right-back who provides dependable depth; his experience in Greek football has sharpened his defensive skills against technical opposition",
+      "notableFact": "Has represented Tunisia at the 2022 World Cup in Qatar, gaining invaluable tournament experience that will serve him well at the 2026 edition"
+    },
+    "Naïm Sliti": {
+      "bio": "A veteran winger with extensive international experience who has been one of Tunisia's most consistent performers over the past decade. Sliti's trickery, crossing ability, and set-piece delivery have been weapons for the Eagles of Carthage in multiple tournaments.",
+      "playingStyle": "Experienced winger with good dribbling ability, quality crossing and set-piece delivery, and the intelligence to find space and create chances in the final third",
+      "keyStrengths": ["Dribbling and trickery on the wing", "Set-piece and crossing delivery", "International experience and game intelligence"],
+      "worldCup2026Role": "Veteran wide option whose experience and set-piece quality add depth; his calm head in pressure situations and ability to deliver quality balls into the box remain valuable",
+      "notableFact": "Has amassed nearly 70 caps for Tunisia, making him one of the most experienced players in the current squad and a vital source of tournament know-how"
+    },
+    "Wahbi Khazri": {
+      "bio": "Tunisia's all-time leading goalscorer and a player who has lit up both Ligue 1 and the international stage with his goals. Khazri's left foot, free-kick ability, and instinct for the spectacular have made him a legend of Tunisian football.",
+      "playingStyle": "Creative forward with a lethal left foot, exceptional free-kick ability, intelligent movement, and the experience to produce decisive moments in big matches",
+      "keyStrengths": ["Left-footed finishing and free kicks", "Creative intelligence and vision", "Big-game experience and composure"],
+      "worldCup2026Role": "Iconic senior figure whose goalscoring record and free-kick expertise make him a potent weapon from the bench or in specific tactical setups; his presence alone lifts the squad",
+      "notableFact": "Tunisia's all-time leading scorer with 25 international goals, Khazri's prolific career in French football included impressive spells at Bordeaux, Rennes, and Saint-Etienne"
+    },
+    "Issam Jebali": {
+      "bio": "A hardworking and intelligent striker who has scored goals consistently across multiple European leagues. Jebali's movement, work rate, and ability to hold up play make him a reliable option in the Tunisian forward line.",
+      "playingStyle": "Industrious striker with good movement, effective hold-up play, and the ability to score different types of goals through instinct and positioning",
+      "keyStrengths": ["Movement and positioning", "Work rate and hold-up play", "Goalscoring instinct"],
+      "worldCup2026Role": "Experienced striking option who provides physicality and work rate up front; his European goalscoring experience adds depth to Tunisia's attacking options",
+      "notableFact": "Has scored goals in multiple European leagues throughout his career, demonstrating his adaptability and consistent goalscoring ability across different football cultures"
+    },
+    "Seifeddine Jaziri": {
+      "bio": "A veteran striker who has found prolific form in the Qatar Stars League, Jaziri brings experience and a natural goalscoring touch to the squad. His ability to score in different competitions has kept him in the international picture.",
+      "playingStyle": "Experienced striker with clinical finishing ability, intelligent runs behind the defense, and the composure to convert chances in pressure situations",
+      "keyStrengths": ["Clinical finishing", "Intelligent movement and runs", "Experience and composure"],
+      "worldCup2026Role": "Goalscoring depth option whose experience and finishing ability provide cover in the forward positions; his prolific form in Qatar keeps him sharp for international duty",
+      "notableFact": "Has been a consistent goalscorer in the Qatar Stars League, maintaining his international relevance through prolific club form"
+    },
+    "Ghaylen Chaalali": {
+      "bio": "A experienced midfielder from Esperance de Tunis, one of Africa's biggest clubs. Chaalali's technical quality, passing ability, and experience in continental competition with Esperance make him a valuable squad member.",
+      "playingStyle": "Technical midfielder with good passing range, composure on the ball, and the experience of competing at the highest level of African club football",
+      "keyStrengths": ["Technical passing ability", "Composure and game management", "Continental competition experience"],
+      "worldCup2026Role": "Experienced midfield option who provides depth and technical quality; his familiarity with high-pressure matches from CAF Champions League football translates to the World Cup stage",
+      "notableFact": "Has been a key figure for Esperance de Tunis in the CAF Champions League, one of the most prestigious club competitions in African football"
+    },
+    "Ferjani Sassi": {
+      "bio": "A creative and experienced midfielder who has been a fixture of the Tunisian national team for years. Sassi's left foot, set-piece delivery, and ability to dictate the tempo of matches from central midfield have been invaluable to the Eagles of Carthage.",
+      "playingStyle": "Left-footed creative midfielder with excellent set-piece delivery, good passing range, and the experience to control the rhythm of important matches",
+      "keyStrengths": ["Left-footed passing and set-piece delivery", "Game management and tempo control", "International experience"],
+      "worldCup2026Role": "Senior midfield figure whose set-piece quality and experience add tactical options; his ability to control the pace of games is valuable in tournament football where composure is crucial",
+      "notableFact": "Has earned over 60 caps for Tunisia, making him one of the most capped active players in the squad and a trusted presence in the midfield"
+    },
+    "Yassine Meriah": {
+      "bio": "An experienced center-back and leader from Esperance de Tunis, Meriah has been a pillar of Tunisian defense for years. His commanding presence, aerial ability, and leadership on the pitch make him a natural organizer of the backline.",
+      "playingStyle": "Commanding center-back with strong aerial ability, physical defending, and the leadership qualities to marshal the defensive line effectively",
+      "keyStrengths": ["Aerial dominance and heading", "Leadership and defensive organization", "Physical presence and strength"],
+      "worldCup2026Role": "Experienced defensive leader who provides depth and organizational quality at center-back; his years of international experience make him invaluable in high-pressure moments",
+      "notableFact": "Has been a cornerstone of Esperance de Tunis' defense in their CAF Champions League campaigns, gaining experience against the best attackers in African football"
+    },
+    "Nader Ghandri": {
+      "bio": "A solid center-back from Club Africain who has steadily developed into a reliable option for the national team. Ghandri's composure and defensive discipline have earned him consistent call-ups to the Tunisian squad.",
+      "playingStyle": "Composed center-back with good defensive positioning, reliable tackling ability, and the discipline to maintain the team's defensive shape",
+      "keyStrengths": ["Defensive positioning and discipline", "Reliable tackling", "Composure under pressure"],
+      "worldCup2026Role": "Center-back depth option who provides defensive reliability; his domestic experience at one of Tunisia's biggest clubs ensures he is prepared for high-profile matches",
+      "notableFact": "Has been a consistent performer for Club Africain, one of the founding clubs of Tunisian football and a major force in the domestic league"
+    },
+    "Hamza Mathlouthi": {
+      "bio": "A young left-back from Esperance de Tunis who has earned his place in the national team through his consistent domestic performances. Mathlouthi provides youthful energy and defensive cover on the left side of the defense.",
+      "playingStyle": "Young, energetic left-back with good defensive positioning, developing attacking ability, and the potential to grow into a long-term national team starter",
+      "keyStrengths": ["Youthful energy and stamina", "Defensive positioning", "Developing attacking game"],
+      "worldCup2026Role": "Backup left-back who provides depth and energy on the left flank; his youth and potential make him a valuable development prospect for Tunisia's future",
+      "notableFact": "Has developed through the ranks at Esperance de Tunis, one of Africa's most successful clubs, gaining experience in both domestic and continental competition"
+    },
+    "Anis Ben Slimane": {
+      "bio": "A tall, dynamic midfielder of Tunisian-Danish heritage who chose to represent Tunisia. Ben Slimane's physical presence, technical ability, and goalscoring threat from midfield make him an exciting addition to the national team.",
+      "playingStyle": "Tall, dynamic midfielder with good technical ability, aerial presence in both boxes, and the ability to arrive late in the attacking area to score goals",
+      "keyStrengths": ["Aerial ability and physical presence", "Technical quality for his size", "Goalscoring from midfield"],
+      "worldCup2026Role": "Dynamic midfield option who adds height, physicality, and goalscoring threat; his Scandinavian football education complements the French and North African influences in the squad",
+      "notableFact": "Born and raised in Denmark before choosing to represent Tunisia, Ben Slimane adds a different tactical dimension through his experience in Scandinavian football"
+    },
+    "Saif-Eddine Khaoui": {
+      "bio": "A creative attacking midfielder who has spent his career in French football, developing his craft in the technically demanding Ligue 2. Khaoui's ability to pick a pass and create chances in the final third adds depth to Tunisia's creative options.",
+      "playingStyle": "Creative, technically gifted attacking midfielder with good vision, neat passing in tight spaces, and the ability to find teammates in dangerous positions",
+      "keyStrengths": ["Creative passing and vision", "Technical ability in tight spaces", "Experience in French football"],
+      "worldCup2026Role": "Creative depth option who can provide a spark from the bench; his French football experience and technical quality make him a useful alternative in the attacking midfield positions",
+      "notableFact": "Has spent the majority of his career in French football, developing his technical game in one of Europe's most demanding leagues for creative midfielders"
+    }
+  }
+}

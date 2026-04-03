@@ -1,0 +1,44 @@
+{
+  "teamCode": "KSA",
+  "teamName": "Saudi Arabia",
+  "worldCupHistory": {
+    "totalAppearances": 7,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 1994,
+    "appearances": [
+      { "year": 1994, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 17,
+      "won": 4,
+      "drawn": 2,
+      "lost": 11,
+      "goalsFor": 14,
+      "goalsAgainst": 37
+    },
+    "topScorers": [
+      { "name": "Sami Al-Jaber", "goals": 3, "tournaments": "1994, 1998, 2002, 2006" },
+      { "name": "Saeed Al-Owairan", "goals": 2, "tournaments": "1994" },
+      { "name": "Saleh Al-Shehri", "goals": 1, "tournaments": "2022" },
+      { "name": "Salem Al-Dawsari", "goals": 1, "tournaments": "2022" }
+    ],
+    "notableMoments": [
+      "Stunned Argentina 2-1 at the 2022 World Cup in one of the greatest upsets in tournament history, with goals from Saleh Al-Shehri and Salem Al-Dawsari",
+      "Saeed Al-Owairan scored one of the greatest World Cup goals ever in 1994, a mazy solo run against Belgium that is still celebrated as a defining moment in Saudi football",
+      "Reached the Round of 16 on their World Cup debut in 1994 in the USA, the best performance by a Saudi team at the tournament",
+      "Sami Al-Jaber became a Saudi legend by appearing in four consecutive World Cups (1994-2006), a record for the nation",
+      "The 2022 World Cup victory over Argentina was declared a national holiday in Saudi Arabia, underlining the cultural significance of the achievement",
+      "Suffered their heaviest World Cup defeat in 2002, losing 8-0 to Germany in the group stage in Japan and South Korea",
+      "Saudi Arabia's Vision 2030 project has transformed football investment in the country, attracting global stars to the Saudi Pro League and raising the national team's profile",
+      "Have qualified for the 2026 World Cup as part of the AFC contingent, marking their seventh appearance at the tournament"
+    ]
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "players": {
+    "Nikola Vasilj": {
+      "bio": "Bosnia's first-choice goalkeeper who has established himself as one of the most reliable keepers in German football at FC St. Pauli. Rose through the ranks at Zrinjski Mostar before making the move to Germany.",
+      "playingStyle": "Commanding goalkeeper with excellent shot-stopping ability, strong communication skills, and composure in high-pressure situations",
+      "keyStrengths": ["Shot-stopping", "Penalty saving", "Composure under pressure"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and penalty shootout specialist after heroic performances in qualifying play-offs",
+      "notableFact": "Was the hero of the playoff qualification campaign, saving penalties against both Wales and Italy to send Bosnia to the 2026 World Cup"
+    },
+    "Sead Kolasinac": {
+      "bio": "A powerful, marauding left-back who built his reputation at Schalke 04 and Arsenal before moving to Italy. Kolasinac is one of the most physically imposing full-backs in European football and a leader in the Bosnia squad.",
+      "playingStyle": "Physically dominant attacking left-back who bombs forward with power and delivers dangerous crosses into the box",
+      "keyStrengths": ["Physical power", "Overlapping runs", "Defensive resilience"],
+      "worldCup2026Role": "Starting left-back providing width, physicality, and crucial experience from years in the Premier League and Serie A",
+      "notableFact": "Made headlines off the pitch in 2019 when he fought off armed robbers who attacked him and Arsenal teammate Mesut Ozil in London"
+    },
+    "Anel Ahmedhodzic": {
+      "bio": "A Swedish-born Bosnian center-back who chose to represent the country of his parents. Ahmedhodzic impressed in the Championship with Sheffield United and is considered one of Bosnia's most talented young defenders.",
+      "playingStyle": "Ball-playing center-back with excellent passing range, comfortable stepping into midfield and initiating attacks from deep",
+      "keyStrengths": ["Ball distribution", "Aerial dominance", "Reading the game"],
+      "worldCup2026Role": "Starting center-back and key figure in building play from the back in Barbarez's system",
+      "notableFact": "Born and raised in Malmo, Sweden, to Bosnian parents; chose to represent Bosnia despite being eligible for Sweden"
+    },
+    "Dennis Hadzikadunic": {
+      "bio": "A reliable and versatile center-back who has been a consistent performer for Bosnia and Herzegovina. Hadzikadunic plays his club football in Sweden with Malmoe FF and brings stability to the Bosnian backline.",
+      "playingStyle": "Disciplined, no-nonsense center-back who excels in one-on-one defending and organizing the defensive line",
+      "keyStrengths": ["Defensive organization", "One-on-one defending", "Consistency"],
+      "worldCup2026Role": "Starting center-back partnering Ahmedhodzic to form a solid and complementary defensive pairing",
+      "notableFact": "Has been one of the most consistent performers in Barbarez's tenure, rarely missing a competitive match"
+    },
+    "Sasa Kalajdzic": {
+      "bio": "A towering Austrian-born striker of Bosnian descent who declared for Bosnia and Herzegovina. Known for his aerial ability and clinical finishing, Kalajdzic has been a Bundesliga striker at VfB Stuttgart despite battling serious knee injuries.",
+      "playingStyle": "Target man striker who dominates in the air, holds up play effectively, and finishes with composure inside the box",
+      "keyStrengths": ["Aerial ability", "Hold-up play", "Clinical finishing"],
+      "worldCup2026Role": "Impact substitute and aerial threat option, providing a different dimension to the attack",
+      "notableFact": "Has overcome two serious ACL injuries during his career, showing remarkable determination to return to top-level football each time"
+    },
+    "Amar Dedic": {
+      "bio": "One of Bosnia's brightest young talents, Dedic has thrived at RB Salzburg and is considered among the best right-backs in Austrian football. A product of the Salzburg academy system with an exciting attacking profile.",
+      "playingStyle": "Modern attacking right-back with pace, technical quality, and excellent delivery from wide positions",
+      "keyStrengths": ["Pace and acceleration", "Crossing quality", "Defensive recovery speed"],
+      "worldCup2026Role": "Starting right-back and a key outlet in attack, providing width and dynamism down the right flank",
+      "notableFact": "Won multiple Austrian Bundesliga titles with RB Salzburg and has featured regularly in the Champions League at a young age"
+    },
+    "Edin Dzeko": {
+      "bio": "Bosnia's all-time leading scorer and greatest ever player. Dzeko has scored over 65 international goals across a legendary career that included spells at Manchester City, Roma, and Inter Milan. The Diamond of Bosnia.",
+      "playingStyle": "Complete center-forward with exceptional movement, clinical finishing with either foot, and the ability to bring teammates into play",
+      "keyStrengths": ["Goal-scoring instinct", "Link-up play", "Big-game mentality"],
+      "worldCup2026Role": "Veteran squad leader and talisman. At 40, expected to serve as an iconic presence and potential impact substitute in the twilight of his career",
+      "notableFact": "Bosnia's all-time top scorer with over 65 goals. Won the Premier League title with Manchester City and Serie A with Inter Milan. Scored Bosnia's first-ever World Cup goal against Argentina in 2014"
+    },
+    "Rade Krunic": {
+      "bio": "An experienced midfielder who has played at the highest level in Italy with AC Milan and Empoli before moving to Turkey. Krunic is a versatile, hardworking midfielder who provides balance and composure.",
+      "playingStyle": "Intelligent box-to-box midfielder who connects play, wins possession in central areas, and provides tactical discipline",
+      "keyStrengths": ["Tactical intelligence", "Work rate", "Positional versatility"],
+      "worldCup2026Role": "Experienced midfield option providing depth and tactical flexibility in the center of the park",
+      "notableFact": "Won the Serie A title with AC Milan in the 2021-22 season, playing an important role in their first Scudetto in 11 years"
+    },
+    "Ermedin Demirovic": {
+      "bio": "A prolific striker who has become one of the Bundesliga's most consistent goal-scorers at VfB Stuttgart after impressive spells at Augsburg and Freiburg. Demirovic is the leading man of Bosnia's attack.",
+      "playingStyle": "Dynamic, mobile striker who combines pressing intensity with clinical finishing, excellent at running the channels and linking play",
+      "keyStrengths": ["Movement off the ball", "Pressing intensity", "Versatile finishing"],
+      "worldCup2026Role": "First-choice striker and the team's primary goal threat, leading the line with energy and quality",
+      "notableFact": "Has scored consistently across multiple Bundesliga clubs and was a key figure in Stuttgart's resurgent 2023-24 campaign"
+    },
+    "Haris Tabakovic": {
+      "bio": "A late bloomer who rose from Germany's lower leagues to become a Bundesliga striker at Hoffenheim. Tabakovic's prolific scoring in the 2. Bundesliga with Hertha Berlin earned him his big move and an international call-up.",
+      "playingStyle": "Poacher and penalty-box predator with sharp movement, excellent positioning, and a cool head in front of goal",
+      "keyStrengths": ["Penalty-box movement", "Finishing composure", "Heading ability"],
+      "worldCup2026Role": "Key attacking option who proved his worth with a crucial goal in the playoff final against Italy",
+      "notableFact": "Scored in the playoff final against Italy and was a pivotal figure in Bosnia's historic qualification for the 2026 World Cup"
+    },
+    "Edin Visca": {
+      "bio": "One of the most decorated Bosnian players, Visca spent over a decade at Istanbul Basaksehir where he became their all-time top scorer and won the Turkish league title. A veteran winger with vast international experience.",
+      "playingStyle": "Tricky, inverted right winger who cuts inside onto his left foot, delivers dangerous set pieces, and provides creative spark",
+      "keyStrengths": ["Dribbling and trickery", "Set-piece delivery", "Experience and game management"],
+      "worldCup2026Role": "Veteran winger providing tournament experience, creativity from wide areas, and set-piece expertise",
+      "notableFact": "Scored over 100 goals for Istanbul Basaksehir across all competitions, making him one of the most prolific wingers in Turkish football history"
+    },
+    "Benjamin Tahirovic": {
+      "bio": "A highly-rated young midfielder who came through the Roma academy and earned a move to Ajax. Tahirovic represents the exciting new generation of Bosnian midfield talent with his composure and technical ability.",
+      "playingStyle": "Technically gifted central midfielder who dictates tempo, excels in tight spaces, and has an eye for progressive passing",
+      "keyStrengths": ["Passing range", "Composure on the ball", "Press resistance"],
+      "worldCup2026Role": "Starting central midfielder tasked with controlling the tempo and linking defense to attack",
+      "notableFact": "Became one of the youngest Bosnian players to feature in a major European league when he debuted for Roma in Serie A as a teenager"
+    },
+    "Armin Gigovic": {
+      "bio": "A young and dynamic midfielder who has developed impressively at Freiburg in the Bundesliga. Gigovic brings energy, technical quality, and goal threat from midfield to the Bosnian national team.",
+      "playingStyle": "Energetic, box-to-box midfielder who drives forward with the ball, contributes goals, and presses relentlessly",
+      "keyStrengths": ["Ball carrying", "Goal threat from midfield", "High energy pressing"],
+      "worldCup2026Role": "Key midfielder providing energy and dynamism in Bosnia's engine room alongside Tahirovic",
+      "notableFact": "Moved to Freiburg from Helsingborg as a teenager and has steadily established himself in one of the Bundesliga's most well-coached sides"
+    },
+    "Ivan Basic": {
+      "bio": "A left-footed midfielder with Serie A experience at Lazio. Basic brings creativity and set-piece quality to Bosnia's midfield options with his technical ability and eye for a pass.",
+      "playingStyle": "Creative left-footed midfielder with excellent vision, capable of unlocking defenses with through balls and dangerous from dead-ball situations",
+      "keyStrengths": ["Left-footed delivery", "Creative passing", "Set-piece quality"],
+      "worldCup2026Role": "Creative midfield option off the bench, providing a different dimension with his left foot",
+      "notableFact": "Signed for Lazio from Bordeaux and has contributed to Bosnia's midfield depth with his Serie A experience"
+    },
+    "Smail Prevljak": {
+      "bio": "A hardworking and reliable striker who has been a consistent performer in Belgian football and a regular contributor for the national team. Prevljak provides important squad depth in the forward positions.",
+      "playingStyle": "Industrious forward who works tirelessly for the team, runs the channels, and creates space for others with intelligent movement",
+      "keyStrengths": ["Work rate", "Movement off the ball", "Team-first mentality"],
+      "worldCup2026Role": "Backup striker providing energy and pressing intensity as a substitute option",
+      "notableFact": "Has been a consistent goal scorer in Belgian football and a reliable contributor to Bosnia's qualifying campaigns"
+    },
+    "Stjepan Radeljic": {
+      "bio": "A dependable center-back who has gained valuable experience in Turkish football. Radeljic is a steady, no-frills defender who provides reliable backup to the starting center-back pairing.",
+      "playingStyle": "Traditional center-back who prioritizes defensive solidity, strong in the air and committed in the tackle",
+      "keyStrengths": ["Aerial defending", "Physical commitment", "Defensive reliability"],
+      "worldCup2026Role": "Squad depth center-back providing experienced cover for the starting defensive pair",
+      "notableFact": "Has been a consistent performer in Turkish football and a trusted member of the national team squad across multiple campaigns"
+    },
+    "Ermin Bicakcic": {
+      "bio": "One of the longest-serving Bosnian internationals, Bicakcic has spent the bulk of his career at Hoffenheim in the Bundesliga. A veteran defender who brings invaluable experience and leadership to the squad.",
+      "playingStyle": "Strong, experienced center-back who leads by example with his commitment, aerial ability, and positional awareness",
+      "keyStrengths": ["Leadership", "Aerial strength", "Bundesliga experience"],
+      "worldCup2026Role": "Veteran defensive leader and mentor, providing tournament experience from the 2014 World Cup squad",
+      "notableFact": "Was part of the Bosnia squad at the 2014 World Cup in Brazil, the only other time the nation qualified for the tournament"
+    },
+    "Kenan Kodro": {
+      "bio": "Son of former Bosnian international Meho Kodro, Kenan has carried on the family legacy as a striker. Born in Spain, he has played across multiple leagues including spells at Athletic Bilbao and in the Middle East.",
+      "playingStyle": "Intelligent forward with good positioning, clinical finishing ability, and the awareness to find space in crowded penalty areas",
+      "keyStrengths": ["Positioning", "Clinical finishing", "Football intelligence"],
+      "worldCup2026Role": "Experienced backup striker providing additional depth and versatility in the forward line",
+      "notableFact": "Son of legendary Bosnian striker Meho Kodro, who also represented the national team, making them one of Bosnian football's most famous father-son duos"
+    },
+    "Amer Gojak": {
+      "bio": "A creative attacking midfielder who rose to prominence at Dinamo Zagreb before moving to Turkish football. Gojak is a technically gifted playmaker with an eye for a decisive pass.",
+      "playingStyle": "Technically skilled attacking midfielder who creates chances with his vision, dribbling ability, and intelligent movement between the lines",
+      "keyStrengths": ["Creative vision", "Dribbling in tight spaces", "Through-ball delivery"],
+      "worldCup2026Role": "Attacking midfield option providing creativity and flair from the bench or in a more advanced role",
+      "notableFact": "Won multiple Croatian league titles with Dinamo Zagreb and scored a memorable goal against Italy in the Nations League"
+    },
+    "Kenan Piric": {
+      "bio": "A talented young goalkeeper who has developed his career in Portuguese football with Boavista. Piric provides strong competition for the number one shirt and is highly regarded for his potential.",
+      "playingStyle": "Agile goalkeeper with quick reflexes, good distribution with his feet, and confidence coming off the line",
+      "keyStrengths": ["Reflexes", "Distribution", "Agility"],
+      "worldCup2026Role": "Second-choice goalkeeper providing reliable backup to Nikola Vasilj",
+      "notableFact": "Has gained valuable experience playing in the competitive Portuguese Primeira Liga and is seen as Bosnia's goalkeeper of the future"
+    },
+    "Amir Hadziahmetovic": {
+      "bio": "A defensive midfielder who has established himself in Turkish football at Besiktas. Hadziahmetovic is the shield in front of Bosnia's defense, breaking up play and recycling possession efficiently.",
+      "playingStyle": "Disciplined defensive midfielder who reads the game well, intercepts passes, and keeps the ball moving simply and effectively",
+      "keyStrengths": ["Interceptions", "Passing accuracy", "Positional discipline"],
+      "worldCup2026Role": "Key defensive midfielder anchoring the midfield and protecting the backline in Bosnia's system",
+      "notableFact": "Moved from Konyaspor to Besiktas after impressive performances that caught the attention of one of Turkey's biggest clubs"
+    },
+    "Eldar Civic": {
+      "bio": "A reliable left-back who has played in Hungarian football with Ferencvaros, competing in both domestic and European competitions. Civic provides important depth at left-back behind Kolasinac.",
+      "playingStyle": "Steady, reliable left-back who defends solidly and supports the attack with well-timed overlapping runs",
+      "keyStrengths": ["Defensive solidity", "Overlapping runs", "Consistency"],
+      "worldCup2026Role": "Backup left-back providing experienced cover for Sead Kolasinac",
+      "notableFact": "Has represented Ferencvaros in the Champions League and Europa League, gaining valuable European competition experience"
+    },
+    "Josip Corluka": {
+      "bio": "A young goalkeeper from FK Sarajevo who represents the future of Bosnian goalkeeping. Corluka has been brought into the squad to gain experience alongside the more established goalkeepers.",
+      "playingStyle": "Young, athletic goalkeeper with good reflexes and a willingness to learn from more experienced teammates",
+      "keyStrengths": ["Athleticism", "Shot-stopping potential", "Youth and development"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable experience by being part of the World Cup squad",
+      "notableFact": "One of the youngest members of the squad, selected as part of Barbarez's commitment to developing the next generation of Bosnian talent"
+    },
+    "Tarik Muharemovic": {
+      "bio": "A young, left-footed center-back who came through the Juventus academy before moving to Sassuolo. Muharemovic is one of the most promising young defenders in Bosnian football with excellent technical ability.",
+      "playingStyle": "Elegant, left-footed center-back who is comfortable on the ball, capable of playing out from the back with composure and precision",
+      "keyStrengths": ["Left-footed passing", "Composure on the ball", "Tactical intelligence"],
+      "worldCup2026Role": "Young defensive talent providing left-footed center-back option and future cornerstone of Bosnia's defense",
+      "notableFact": "Developed at Juventus's academy in Italy and has been tipped as one of the most exciting young Bosnian defenders in a generation"
+    },
+    "Ajdin Hasic": {
+      "bio": "A creative young talent who has shown flashes of brilliance at Besiktas in the Turkish Super Lig. Hasic is a technically gifted attacker who can operate across the forward line.",
+      "playingStyle": "Skillful, creative attacker who takes on defenders, creates chances with his dribbling, and provides moments of individual brilliance",
+      "keyStrengths": ["Dribbling ability", "Creativity", "Flair and unpredictability"],
+      "worldCup2026Role": "Exciting young attacking option off the bench who can change games with his directness and creativity",
+      "notableFact": "Attracted attention from several top European clubs as a teenager at Besiktas due to his exceptional technical ability"
+    },
+    "Nail Omerovic": {
+      "bio": "A young right-back developing in Swiss football with Lugano. Omerovic provides additional depth at right-back and represents the next generation of Bosnian defenders.",
+      "playingStyle": "Energetic young right-back who combines solid defending with the willingness to get forward and support attacks",
+      "keyStrengths": ["Energy and stamina", "Defensive awareness", "Attacking support runs"],
+      "worldCup2026Role": "Squad depth at right-back, providing backup to Amar Dedic and gaining senior tournament experience",
+      "notableFact": "Has been part of Switzerland's competitive league system at a young age and is considered one of Bosnia's top right-back prospects"
+    }
+  }
+}

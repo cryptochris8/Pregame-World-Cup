@@ -1,0 +1,43 @@
+{
+  "teamCode": "TUN",
+  "teamName": "Tunisia",
+  "worldCupHistory": {
+    "totalAppearances": 6,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1978,
+    "appearances": [
+      { "year": 1978, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2018, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2022, "result": "First Round", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 18,
+      "won": 4,
+      "drawn": 5,
+      "lost": 9,
+      "goalsFor": 14,
+      "goalsAgainst": 23
+    },
+    "topScorers": [
+      { "name": "Wahbi Khazri", "goals": 2, "tournaments": "2018, 2022" },
+      { "name": "Nabil Maaloul", "goals": 1, "tournaments": "1978" },
+      { "name": "Ziad Jaziri", "goals": 1, "tournaments": "2006" },
+      { "name": "Fakhreddine Ben Youssef", "goals": 1, "tournaments": "2018" }
+    ],
+    "notableMoments": [
+      "Became the first African team to win a World Cup match when they beat Mexico 3-1 at the 1978 World Cup in Argentina, a landmark achievement for the continent",
+      "Beat France 1-0 at the 2022 World Cup in Qatar with a goal from Wahbi Khazri, though they were ultimately eliminated in the group stage",
+      "Known as the Eagles of Carthage, Tunisia have been one of the most consistent African qualifiers for the World Cup over the past three decades",
+      "The 1978 World Cup squad is revered in Tunisian football history as pioneers who put African football on the global map",
+      "Won the 2004 Africa Cup of Nations on home soil, the greatest achievement in Tunisian football and a source of immense national pride",
+      "Despite never advancing past the group stage, Tunisia have been competitive in every World Cup they have attended, often missing out by the smallest of margins",
+      "The Tunisian football diaspora in France has produced numerous talented players who have represented the national team, including Skhiri, Khazri, and Mejbri",
+      "Qualifying for the 2026 World Cup continues Tunisia's tradition as one of Africa's leading football nations and most reliable World Cup participants"
+    ]
+  }
+}

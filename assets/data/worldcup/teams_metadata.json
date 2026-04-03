@@ -49,55 +49,55 @@
     "isQualified": true,
     "homeStadium": "Seoul World Cup Stadium"
   },
-  "DEN": {
-    "teamCode": "DEN",
-    "countryName": "Denmark",
-    "shortName": "Denmark",
-    "nickname": "Danish Dynamite",
+  "CZE": {
+    "teamCode": "CZE",
+    "countryName": "Czechia",
+    "shortName": "Czechia",
+    "nickname": "Národní tým",
     "confederation": "UEFA",
     "group": "A",
-    "worldRanking": 21,
-    "coachName": "Kasper Hjulmand",
-    "captainName": "Simon Kjær",
-    "primaryColor": "#C8102E",
+    "worldRanking": 28,
+    "coachName": "Ivan Hašek",
+    "captainName": "Tomáš Souček",
+    "primaryColor": "#11457E",
     "secondaryColor": "#FFFFFF",
     "worldCupTitles": 0,
-    "worldCupAppearances": 6,
-    "bestFinish": "Quarter-finals (1998)",
+    "worldCupAppearances": 2,
+    "bestFinish": "Group Stage (2006)",
     "isHostNation": false,
     "starPlayers": [
-      "Christian Eriksen",
-      "Rasmus Højlund",
-      "Pierre-Emile Højbjerg"
+      "Tomáš Souček",
+      "Patrik Schick",
+      "Adam Hložek"
     ],
-    "qualificationMethod": "UEFA qualifying",
+    "qualificationMethod": "UEFA Play-Off Path D",
     "isQualified": true,
-    "homeStadium": "Parken Stadium"
+    "homeStadium": "Fortuna Arena"
   },
-  "ITA": {
-    "teamCode": "ITA",
-    "countryName": "Italy",
-    "shortName": "Italy",
-    "nickname": "Gli Azzurri",
+  "BIH": {
+    "teamCode": "BIH",
+    "countryName": "Bosnia and Herzegovina",
+    "shortName": "Bosnia & Herz.",
+    "nickname": "Zmajevi",
     "confederation": "UEFA",
     "group": "B",
-    "worldRanking": 12,
-    "coachName": "Luciano Spalletti",
-    "captainName": "Gianluigi Donnarumma",
-    "primaryColor": "#0066CC",
-    "secondaryColor": "#FFFFFF",
-    "worldCupTitles": 4,
-    "worldCupAppearances": 18,
-    "bestFinish": "Winners (1934, 1938, 1982, 2006)",
+    "worldRanking": 36,
+    "coachName": "Sergej Barbarez",
+    "captainName": "Edin Džeko",
+    "primaryColor": "#002395",
+    "secondaryColor": "#FECB00",
+    "worldCupTitles": 0,
+    "worldCupAppearances": 1,
+    "bestFinish": "Group Stage (2014)",
     "isHostNation": false,
     "starPlayers": [
-      "Gianluigi Donnarumma",
-      "Nicolò Barella",
-      "Federico Chiesa"
+      "Edin Džeko",
+      "Ermedin Demirović",
+      "Haris Tabakovic"
     ],
-    "qualificationMethod": "UEFA qualifying",
+    "qualificationMethod": "UEFA Play-Off Path A",
     "isQualified": true,
-    "homeStadium": "Stadio Olimpico"
+    "homeStadium": "Bilino Polje Stadium"
   },
   "SUI": {
     "teamCode": "SUI",
@@ -424,30 +424,30 @@
     "isQualified": true,
     "homeStadium": "Saitama Stadium 2002"
   },
-  "IDN": {
-    "teamCode": "IDN",
-    "countryName": "Indonesia",
-    "shortName": "Indonesia",
-    "nickname": "Garuda",
-    "confederation": "AFC",
+  "SWE": {
+    "teamCode": "SWE",
+    "countryName": "Sweden",
+    "shortName": "Sweden",
+    "nickname": "Blågult",
+    "confederation": "UEFA",
     "group": "F",
-    "worldRanking": 152,
-    "coachName": "John Herdman",
-    "captainName": "Asnawi Mangkualam",
-    "primaryColor": "#FF0000",
-    "secondaryColor": "#FFFFFF",
+    "worldRanking": 20,
+    "coachName": "Jon Dahl Tomasson",
+    "captainName": "Viktor Gyökeres",
+    "primaryColor": "#006AA7",
+    "secondaryColor": "#FECC02",
     "worldCupTitles": 0,
-    "worldCupAppearances": 1,
-    "bestFinish": "First appearance",
+    "worldCupAppearances": 12,
+    "bestFinish": "Runner-up (1958)",
     "isHostNation": false,
     "starPlayers": [
-      "Asnawi Mangkualam",
-      "Nathan Tjoe-A-On",
-      "Rafael Struick"
+      "Viktor Gyökeres",
+      "Alexander Isak",
+      "Dejan Kulusevski"
     ],
-    "qualificationMethod": "AFC qualifying",
+    "qualificationMethod": "UEFA Play-Off Path B",
     "isQualified": true,
-    "homeStadium": "Gelora Bung Karno Stadium"
+    "homeStadium": "Friends Arena"
   },
   "BEL": {
     "teamCode": "BEL",

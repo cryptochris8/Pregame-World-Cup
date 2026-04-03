@@ -1,0 +1,40 @@
+{
+  "teamCode": "CIV",
+  "teamName": "Côte d'Ivoire",
+  "worldCupHistory": {
+    "totalAppearances": 4,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 2006,
+    "appearances": [
+      { "year": 2006, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 9,
+      "won": 2,
+      "drawn": 2,
+      "lost": 5,
+      "goalsFor": 9,
+      "goalsAgainst": 14
+    },
+    "topScorers": [
+      { "name": "Didier Drogba", "goals": 3, "tournaments": "2006, 2010, 2014" },
+      { "name": "Aruna Dindane", "goals": 2, "tournaments": "2006, 2010" },
+      { "name": "Gervinho", "goals": 2, "tournaments": "2010, 2014" }
+    ],
+    "notableMoments": [
+      "Won the 2023 Africa Cup of Nations on home soil, an extraordinary tournament where they came from the brink of elimination to lift the trophy",
+      "The golden generation led by Didier Drogba, Yaya Touré, and Kolo Touré qualified for three consecutive World Cups (2006, 2010, 2014) but never advanced past the group stage",
+      "Drew in the 'Group of Death' at the 2006 World Cup alongside Argentina, Netherlands, and Serbia & Montenegro, earning respect despite elimination",
+      "Didier Drogba's emotional plea for peace in Côte d'Ivoire after qualifying for the 2006 World Cup is one of football's most powerful moments, credited with helping to broker a ceasefire in the civil war",
+      "Won the 2015 Africa Cup of Nations in dramatic fashion, with goalkeeper Boubacar Barry saving the decisive penalty in the final against Ghana",
+      "The 2023 Africa Cup of Nations triumph under-new-coach represented a new era, with Sébastien Haller, Franck Kessié, and Simon Adingra leading the charge",
+      "Qualified for the 2026 World Cup as reigning African champions, looking to finally break through the group stage barrier that eluded their legendary predecessors",
+      "The transition from the Drogba-Touré era to the current generation has been one of the most successful rebuilding projects in African football"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "team1Code": "CZE",
+  "team2Code": "KOR",
+  "team1Name": "Czechia",
+  "team2Name": "South Korea",
+  "historicalAnalysis": "Czechia and South Korea share a memorable World Cup history, most notably their dramatic encounter at the 2006 World Cup in Germany where South Korea stunned the Czechs with a comeback victory. That match remains etched in the memories of both sets of fans and added a chapter of genuine rivalry between two nations separated by thousands of miles but united by their passion for the game.\n\nCzechia, competing under their updated national name, bring a proud European footballing tradition to this tournament. Their golden generation of the early 2000s reached the Euro 2004 semifinal, and while the current squad may not carry the same star power, players like Tomas Soucek and Patrik Schick have proven themselves at the highest levels of club football. South Korea, meanwhile, remain the standard-bearers for Asian football, with their legendary 2002 World Cup semifinal run on home soil still inspiring generations. Under their current setup, the Taegeuk Warriors blend youthful energy with the world-class talent of Son Heung-min.",
+  "keyStorylines": [
+    "Revenge or repeat: South Korea defeated Czechia 2-0 at the 2006 World Cup, and the Czechs will be eager to settle the score on the biggest stage",
+    "Son Heung-min leads South Korea's charge as one of the most decorated Asian footballers in history, seeking to add a deep World Cup run to his legacy",
+    "Czechia's midfield engine Tomas Soucek faces his toughest test marshaling the middle of the park against Korea's dynamic movement",
+    "Both teams need a result to stay competitive in a balanced Group A that also features Mexico and South Africa"
+  ],
+  "playersToWatch": [
+    {"name": "Tomáš Souček", "teamCode": "CZE", "position": "Defensive Midfielder", "reason": "West Ham's box-to-box warrior provides goals from midfield and is the heartbeat of the Czech team"},
+    {"name": "Son Heung-min", "teamCode": "KOR", "position": "Forward", "reason": "Tottenham's captain and South Korea's all-time leading scorer, capable of deciding any match with a moment of brilliance"},
+    {"name": "Patrik Schick", "teamCode": "CZE", "position": "Striker", "reason": "Scored one of the greatest goals in European Championship history and remains Czechia's primary goal threat"},
+    {"name": "Lee Kang-in", "teamCode": "KOR", "position": "Midfielder", "reason": "Paris Saint-Germain's creative spark who has rapidly become one of Asia's most exciting talents"}
+  ],
+  "tacticalPreview": "Czechia typically deploy a disciplined 4-2-3-1 or 3-4-3 system that prioritizes defensive solidity and quick transitions. Soucek anchors the midfield alongside a partner who allows him freedom to arrive late in the box, while Schick leads the line as a target man capable of linking play and finishing chances. Their defensive organization will be key to containing South Korea's fluid attacking movement.\n\nSouth Korea favor a high-energy pressing game that can suffocate opponents. Son Heung-min drifts across the front line, creating overloads and pulling defenders out of position, while Lee Kang-in orchestrates from deeper positions with his vision and passing range. The tactical battle will likely be decided by whether Czechia can absorb Korean pressure and strike on the counter, or whether South Korea's relentless tempo breaks through the European defense.",
+  "prediction": {
+    "predictedOutcome": "DRAW",
+    "predictedScore": "1-1",
+    "confidence": 40,
+    "reasoning": "Both teams are evenly matched in terms of quality and tournament pedigree. Czechia's defensive discipline should contain South Korea for long stretches, but Son Heung-min's individual quality makes a clean sheet unlikely. Expect a tight, tactical contest that neither side can fully dominate.",
+    "alternativeScenario": "South Korea's superior pace on the counter could exploit an aging Czech defense, leading to a 2-1 Korean victory if they capitalize on transition opportunities early in the match."
+  },
+  "pastEncountersSummary": "The two nations have met a handful of times, with their most significant encounter coming at the 2006 World Cup in Germany. South Korea won that match 2-0 in a Group E clash, contributing to Czechia's early elimination from the tournament despite having entered as dark horse contenders. Their other meetings have been limited to friendlies with mixed results.",
+  "funFacts": [
+    "Czechia's 2006 World Cup squad was ranked second in the world but failed to advance past the group stage after losing to both Ghana and South Korea",
+    "Son Heung-min has scored more international goals than any other Asian player currently active, surpassing 40 goals for South Korea",
+    "The Czech Republic changed its official short-form name to Czechia in 2016, and this will be their first World Cup competing under the new name",
+    "South Korea have qualified for every World Cup since 1986, making this their 11th consecutive appearance at the tournament"
+  ],
+  "isFirstMeeting": false
+}

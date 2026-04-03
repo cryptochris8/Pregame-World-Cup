@@ -1,0 +1,44 @@
+{
+  "teamCode": "AUT",
+  "teamName": "Austria",
+  "worldCupHistory": {
+    "totalAppearances": 8,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Third Place",
+    "bestFinishYear": 1954,
+    "appearances": [
+      { "year": 1934, "result": "Fourth Place", "stage": "Semifinal" },
+      { "year": 1954, "result": "Third Place", "stage": "Third Place Match" },
+      { "year": 1958, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1978, "result": "Second Round", "stage": "Second Group Stage" },
+      { "year": 1982, "result": "Second Round", "stage": "Second Group Stage" },
+      { "year": 1990, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 29,
+      "won": 12,
+      "drawn": 4,
+      "lost": 13,
+      "goalsFor": 43,
+      "goalsAgainst": 47
+    },
+    "topScorers": [
+      { "name": "Erich Probst", "goals": 6, "tournaments": "1954" },
+      { "name": "Theodor Wagner", "goals": 4, "tournaments": "1954" },
+      { "name": "Hans Krankl", "goals": 4, "tournaments": "1978, 1982" }
+    ],
+    "notableMoments": [
+      "Achieved their best ever World Cup finish with third place in 1954 in Switzerland, beating Uruguay 3-1 in the third-place match",
+      "The legendary 'Wunderteam' of the 1930s was one of the best sides in the world, reaching the 1934 World Cup semifinal",
+      "Hans Krankl scored one of the greatest World Cup goals in 1978, a brilliant solo effort against Germany in a 3-2 Austrian victory in Córdoba",
+      "Coach Ralf Rangnick transformed the team with his high-pressing, gegenpressing style, turning Austria into one of Europe's most feared sides from 2024 onwards",
+      "Austria's involvement in the infamous 'Disgrace of Gijón' in 1982, the pre-arranged result with West Germany that eliminated Algeria",
+      "Returned to the World Cup in 2026 for the first time since 1998, ending a 28-year absence from the tournament",
+      "David Alaba became Austria's most decorated player ever, winning multiple Champions League and league titles with Bayern Munich and Real Madrid",
+      "The 2024 European Championship campaign under Rangnick, where Austria topped a group containing France, signaled the team's renaissance"
+    ]
+  }
+}

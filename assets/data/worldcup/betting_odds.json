@@ -150,18 +150,18 @@
         "bookmaker": "DraftKings",
         "date": "2025-12-08",
         "tier": "dark_horse",
-        "notes": "First World Cup since 1998. Beat Italy 4-1 in Milan to qualify. 37 goals in 8 qualifiers. Haaland leading the line."
+        "notes": "First World Cup since 1998. Perfect qualifying record with 37 goals in 8 matches. 37 goals in 8 qualifiers. Haaland leading the line."
       },
       {
-        "team": "Italy",
-        "code": "ITA",
-        "odds_american": "+3000",
-        "odds_decimal": 31.00,
-        "implied_probability_pct": 3.2,
+        "team": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "odds_american": "+30000",
+        "odds_decimal": 301.00,
+        "implied_probability_pct": 0.33,
         "bookmaker": "DraftKings",
         "date": "2025-12-08",
-        "tier": "dark_horse",
-        "notes": "Drawn in tough Group B with Switzerland and Canada."
+        "tier": "longshot",
+        "notes": "Qualified via UEFA Play-Off Path A. Drawn in Group B with Switzerland and Canada."
       },
       {
         "team": "Jordan",
@@ -394,14 +394,15 @@
         "tier": "longshot"
       },
       {
-        "team": "Denmark",
-        "code": "DEN",
+        "team": "Czechia",
+        "code": "CZE",
         "odds_american": "+20000",
         "odds_decimal": 201.00,
         "implied_probability_pct": 0.5,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "longshot"
+        "tier": "longshot",
+        "notes": "Qualified via UEFA Play-Off Path D. Solid defensive side but lack star quality."
       },
       {
         "team": "Ukraine",
@@ -653,14 +654,15 @@
         "notes": "Elo rank 52. 2010 World Cup quarter-finalists. Strong African pedigree with talented diaspora players."
       },
       {
-        "team": "Indonesia",
-        "code": "IDN",
-        "odds_american": "+200000",
-        "odds_decimal": 2001.00,
-        "implied_probability_pct": 0.05,
+        "team": "Sweden",
+        "code": "SWE",
+        "odds_american": "+8000",
+        "odds_decimal": 81.00,
+        "implied_probability_pct": 1.2,
         "bookmaker": "NBC Sports (DraftKings-sourced)",
         "date": "2025-12-05",
-        "tier": "outsider"
+        "tier": "longshot",
+        "notes": "Qualified via UEFA Play-Off Path B. Gyokeres provides genuine World Cup-level firepower."
       },
       {
         "team": "Uzbekistan",
@@ -697,7 +699,7 @@
         "teams": [
           {"team": "Mexico", "code": "MEX", "odds": "+110"},
           {"team": "South Korea", "code": "KOR", "odds": "+350"},
-          {"team": "Denmark", "code": "DEN", "odds": "+450"},
+          {"team": "Czechia", "code": "CZE", "odds": "+500"},
           {"team": "South Africa", "code": "RSA", "odds": "+1200"}
         ],
         "predicted_winner": "Mexico",
@@ -706,12 +708,12 @@
       "B": {
         "teams": [
           {"team": "Switzerland", "code": "SUI", "odds": "+140"},
-          {"team": "Italy", "code": "ITA", "odds": "+230"},
+          {"team": "Bosnia and Herzegovina", "code": "BIH", "odds": "+800"},
           {"team": "Canada", "code": "CAN", "odds": "+450"},
           {"team": "Qatar", "code": "QAT", "odds": "+2500"}
         ],
         "predicted_winner": "Switzerland",
-        "notes": "Playoff teams (Wales +1800, Bosnia & Herzegovina +1800, Northern Ireland +10000) may join. Italy not seeded as Pot 1."
+        "notes": "Bosnia and Herzegovina qualified via Play-Off Path A. Switzerland expected to top group."
       },
       "C": {
         "teams": [
@@ -748,7 +750,7 @@
           {"team": "Netherlands", "code": "NED", "odds": "-135"},
           {"team": "Japan", "code": "JPN", "odds": "+275"},
           {"team": "Tunisia", "code": "TUN", "odds": "+1200"},
-          {"team": "Indonesia", "code": "IDN", "odds": "+6500"}
+          {"team": "Sweden", "code": "SWE", "odds": "+350"}
         ],
         "predicted_winner": "Netherlands",
         "notes": "Japan a strong second seed. Tunisia bring World Cup experience."
@@ -1040,7 +1042,7 @@
         {"rank": 6, "team": "Portugal", "code": "POR", "notes": "Won Nations League beating Germany and Spain (penalties). Strong squad depth."},
         {"rank": 7, "team": "Brazil", "code": "BRA", "notes": "World-class talent but inconsistent under Ancelotti. Won just 4 of 8 recent matches."},
         {"rank": 8, "team": "Morocco", "code": "MAR", "notes": "2022 semifinalists. Won 18 matches in a row. AFCON 2025 finalists. Tournament pedigree proven."},
-        {"rank": 9, "team": "Norway", "code": "NOR", "notes": "First WC since 1998. Beat Italy 4-1 in Milan. 37 goals, 5 conceded in 8 qualifiers. Haaland plus elite supporting cast."},
+        {"rank": 9, "team": "Norway", "code": "NOR", "notes": "First WC since 1998. Perfect qualifying record. 37 goals, 5 conceded in 8 qualifiers. Haaland plus elite supporting cast."},
         {"rank": 10, "team": "Japan", "code": "JPN", "notes": "Beat Brazil recently. Only 2 defeats in last 23. Serious quality all over the pitch. Graduating from underdog to contender."}
       ]
     },
@@ -1103,7 +1105,7 @@
         "code": "NOR",
         "outright_odds": "+2800",
         "sources": ["Flashscore", "NBC Sports", "CBS Sports", "FOX Sports"],
-        "reasoning": "First World Cup since 1998. Demolished Italy 4-1 to qualify. 37 goals in 8 qualifiers. Haaland is generational. Supporting cast of elite talent."
+        "reasoning": "First World Cup since 1998. Perfect qualifying record. 37 goals in 8 qualifiers. Haaland is generational. Supporting cast of elite talent."
       },
       {
         "team": "Netherlands",
@@ -1247,13 +1249,13 @@
     "groups": {
       "A": {
         "espn_prediction": ["Mexico", "South Korea", "South Africa"],
-        "nbc_prediction": ["Mexico", "South Korea", "Denmark", "South Africa"],
+        "nbc_prediction": ["Mexico", "South Korea", "Czechia", "South Africa"],
         "notes": "Mexico benefits from gentle draw as hosts."
       },
       "B": {
         "espn_prediction": ["Switzerland", "Canada"],
         "nbc_prediction": ["Playoff A winner", "Switzerland", "Canada", "Qatar"],
-        "notes": "Italy not mentioned as favorite by NBC. Canada depends on Alphonso Davies ACL recovery."
+        "notes": "Bosnia and Herzegovina the weakest team in the group. Canada depends on Alphonso Davies ACL recovery."
       },
       "C": {
         "espn_prediction": ["Brazil", "Morocco", "Scotland", "Haiti"],

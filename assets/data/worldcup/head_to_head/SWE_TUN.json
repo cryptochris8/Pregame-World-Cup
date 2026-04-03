@@ -1,0 +1,49 @@
+{
+  "id": "SWE_TUN",
+  "team1Code": "SWE",
+  "team2Code": "TUN",
+  "totalMatches": 3,
+  "team1Wins": 1,
+  "team2Wins": 1,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 4,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2018-06-09",
+  "firstMeeting": "1991-01-16",
+  "notableMatches": [
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 1,
+      "winnerCode": "TUN",
+      "location": "Nice, France",
+      "description": "Tunisia surprised Sweden with a narrow victory in a pre-World Cup friendly in France"
+    },
+    {
+      "year": 2006,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "SWE",
+      "location": "Malmo, Sweden",
+      "description": "Sweden dominated Tunisia in a comprehensive friendly win before the 2006 World Cup"
+    },
+    {
+      "year": 1991,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 2,
+      "winnerCode": null,
+      "location": "Tunis, Tunisia",
+      "description": "The first ever meeting between the two sides ended in an entertaining draw"
+    }
+  ]
+}

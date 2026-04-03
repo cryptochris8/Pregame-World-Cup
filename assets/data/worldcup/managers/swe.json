@@ -1,0 +1,21 @@
+{
+  "id": "manager_swe",
+  "firstName": "Jon",
+  "lastName": "Dahl Tomasson",
+  "commonName": "Jon Dahl Tomasson",
+  "dateOfBirth": "1976-08-29",
+  "nationality": "Denmark",
+  "currentTeam": "Sweden",
+  "currentTeamCode": "SWE",
+  "photoUrl": "assets/managers/tomasson.png",
+  "preferredFormation": "4-4-2",
+  "coachingStyle": "Counter-Attacking",
+  "yearsExperience": 8,
+  "previousTeams": ["Roda JC (Assistant)", "Vitesse (Assistant)", "Malmö FF", "Blackburn Rovers"],
+  "trophies": ["Allsvenskan 2020", "Allsvenskan 2021"],
+  "careerWins": 95,
+  "careerDraws": 40,
+  "careerLosses": 55,
+  "careerWinPercentage": 50,
+  "bio": "Former Denmark international striker who scored at the 2002 World Cup. Appointed Sweden manager in 2024 after successful spells at Malmö FF and Blackburn Rovers. Known for disciplined defensive organization and rapid counter-attacks, Tomasson guided Sweden through a tense UEFA play-off campaign to qualify for the 2026 World Cup, built around the prolific Viktor Gyökeres."
+}

@@ -818,94 +818,58 @@
       "notes": "Has battled chronic ankle issues since 2023. Missed significant time this season. When fit, a key midfielder for Netherlands. Fitness remains the main concern for World Cup."
     },
     {
-      "playerName": "Gianluigi Donnarumma",
-      "teamCode": "ITA",
-      "country": "Italy",
-      "club": "Paris Saint-Germain",
-      "position": "Goalkeeper",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "PSG (Ligue 1)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Italy's number one goalkeeper. No significant injury concerns. Experienced in major tournaments."
-    },
-    {
-      "playerName": "Nicolo Barella",
-      "teamCode": "ITA",
-      "country": "Italy",
-      "club": "Inter Milan",
-      "position": "Midfielder",
-      "injuryType": "Mild thigh injury",
-      "injuryDate": "2026-02-10",
-      "expectedReturn": "Late February 2026",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-10",
-        "opponent": "Inter Milan (Serie A)",
-        "notes": "Missed 3 matches with thigh injury, returning to training"
-      },
-      "source": "FootItalia, ESPN - Feb 2026",
-      "notes": "Italy's most important midfielder. Mild thigh injury cost him 3 matches. Expected back for upcoming fixtures. No long-term concern for World Cup."
-    },
-    {
-      "playerName": "Sandro Tonali",
-      "teamCode": "ITA",
-      "country": "Italy",
-      "club": "Newcastle United",
-      "position": "Midfielder",
-      "injuryType": "Minor fitness concerns",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently available",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Newcastle United (Premier League)",
-        "notes": "Available for selection"
-      },
-      "source": "FootItalia, Newcastle reports - Feb 2026",
-      "notes": "Has fallen behind in Newcastle's midfield pecking order. Linked with Serie A return. Match fitness a minor concern due to limited playing time."
-    },
-    {
-      "playerName": "Federico Chiesa",
-      "teamCode": "ITA",
-      "country": "Italy",
-      "club": "Liverpool",
+      "playerName": "Edin Dzeko",
+      "teamCode": "BIH",
+      "country": "Bosnia and Herzegovina",
+      "club": "Fenerbahce",
       "position": "Forward",
-      "injuryType": "Various muscle injuries (recurring)",
-      "injuryDate": "2026-01-20",
-      "expectedReturn": "March 2026",
-      "availabilityStatus": "doubt",
+      "injuryType": "Age-related fitness management",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-01-20",
-        "opponent": "Liverpool (Premier League)",
-        "notes": "Suffered another muscle strain"
+        "date": "2026-02-22",
+        "opponent": "Fenerbahce (Super Lig)",
+        "notes": "Played 70 minutes"
       },
-      "source": "Liverpool FC, Gazzetta dello Sport - Feb 2026",
-      "notes": "Hugely talented but plagued by injuries. Has barely featured for Liverpool since his move from Juventus. Chronic muscle problems cast doubt on World Cup availability."
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Veteran striker, age 40. Still contributing at club level. Fitness management is key given his age. Bosnia's all-time top scorer and captain."
     },
     {
-      "playerName": "Alessandro Bastoni",
-      "teamCode": "ITA",
-      "country": "Italy",
-      "club": "Inter Milan",
-      "position": "Defender",
+      "playerName": "Ermedin Demirovic",
+      "teamCode": "BIH",
+      "country": "Bosnia and Herzegovina",
+      "club": "VfB Stuttgart",
+      "position": "Forward",
       "injuryType": "No current injury",
       "injuryDate": null,
       "expectedReturn": "N/A - currently fit",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
         "date": "2026-02-22",
-        "opponent": "Inter Milan (Serie A)",
+        "opponent": "VfB Stuttgart (Bundesliga)",
         "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "One of the best left-sided center-backs in the world. No injury concerns. Key defender for Italy."
+      "notes": "Key striker alongside Dzeko. No injury concerns. Important goal threat for Bosnia."
+    },
+    {
+      "playerName": "Miralem Pjanic",
+      "teamCode": "BIH",
+      "country": "Bosnia and Herzegovina",
+      "club": "CSKA Moscow",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "CSKA Moscow (Russian Premier League)",
+        "notes": "Full match played"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced midfielder. Still pulling the strings from midfield. Key creative player for Bosnia and Herzegovina."
     },
     {
       "playerName": "Luka Modric",
@@ -1880,10 +1844,10 @@
       "notes": "Has a history of serious knee injuries including two ACL tears. Currently fit and playing but always a concern given his injury history."
     },
     {
-      "playerName": "Christian Eriksen",
-      "teamCode": "DEN",
-      "country": "Denmark",
-      "club": "Manchester United",
+      "playerName": "Tomas Soucek",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "West Ham United",
       "position": "Midfielder",
       "injuryType": "No current injury",
       "injuryDate": null,
@@ -1891,17 +1855,17 @@
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
         "date": "2026-02-22",
-        "opponent": "Manchester United (Premier League)",
-        "notes": "Available for selection"
+        "opponent": "West Ham United (Premier League)",
+        "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Remarkable comeback after cardiac arrest at Euro 2020. No injury concerns. Veteran leader for Denmark."
+      "notes": "Box-to-box midfielder and captain. No injury concerns. Key player for Czechia with Premier League experience."
     },
     {
-      "playerName": "Rasmus Hojlund",
-      "teamCode": "DEN",
-      "country": "Denmark",
-      "club": "Manchester United",
+      "playerName": "Adam Hlozek",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "Bayer Leverkusen",
       "position": "Forward",
       "injuryType": "No current injury",
       "injuryDate": null,
@@ -1909,47 +1873,47 @@
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
         "date": "2026-02-22",
-        "opponent": "Manchester United (Premier League)",
+        "opponent": "Bayer Leverkusen (Bundesliga)",
         "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Young striker with great potential. No significant injury concerns. Denmark's main striker."
+      "notes": "Young versatile forward. No injury concerns. Key attacking talent for Czechia."
     },
     {
-      "playerName": "Kasper Schmeichel",
-      "teamCode": "DEN",
-      "country": "Denmark",
-      "club": "Celtic",
-      "position": "Goalkeeper",
+      "playerName": "Patrik Schick",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "Bayer Leverkusen",
+      "position": "Forward",
+      "injuryType": "Recurring calf issues",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "March 2026",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-15",
+        "opponent": "Bayer Leverkusen (Bundesliga)",
+        "notes": "Returned as substitute"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Experienced striker with Euro 2020 pedigree. Recurring calf issues a concern. Expected fit for World Cup barring setback."
+    },
+    {
+      "playerName": "Vladimir Coufal",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "West Ham United",
+      "position": "Defender",
       "injuryType": "No current injury",
       "injuryDate": null,
       "expectedReturn": "N/A - currently fit",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
         "date": "2026-02-22",
-        "opponent": "Celtic (Scottish Premiership)",
+        "opponent": "West Ham United (Premier League)",
         "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced goalkeeper with Leicester Premier League title pedigree. No injury concerns."
-    },
-    {
-      "playerName": "Pierre-Emile Hojbjerg",
-      "teamCode": "DEN",
-      "country": "Denmark",
-      "club": "Marseille",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Marseille (Ligue 1)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Tireless midfielder. No injury concerns. Key to Denmark's midfield discipline."
+      "notes": "Experienced right-back. No injury concerns. Key defensive player for Czechia."
     },
     {
       "playerName": "Mathew Ryan",
@@ -2456,46 +2420,10 @@
       "notes": "Exciting winger. No injury concerns. Key attacking player for Turkey."
     },
     {
-      "playerName": "Pratama Arhan",
-      "teamCode": "IDN",
-      "country": "Indonesia",
-      "club": "Suwon FC",
-      "position": "Defender",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Suwon FC (K League)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Dynamic left-back. No injury concerns. One of Indonesia's key players."
-    },
-    {
-      "playerName": "Thom Haye",
-      "teamCode": "IDN",
-      "country": "Indonesia",
-      "club": "ADO Den Haag",
-      "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
-      "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "ADO Den Haag (Eredivisie)",
-        "notes": "Full match played"
-      },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Dutch-Indonesian midfielder. No injury concerns. Key creative player for Indonesia's historic World Cup debut."
-    },
-    {
-      "playerName": "Rafael Struick",
-      "teamCode": "IDN",
-      "country": "Indonesia",
-      "club": "Go Ahead Eagles",
+      "playerName": "Viktor Gyokeres",
+      "teamCode": "SWE",
+      "country": "Sweden",
+      "club": "Sporting CP",
       "position": "Forward",
       "injuryType": "No current injury",
       "injuryDate": null,
@@ -2503,11 +2431,47 @@
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
         "date": "2026-02-22",
-        "opponent": "Go Ahead Eagles (Eredivisie)",
+        "opponent": "Sporting CP (Primeira Liga)",
+        "notes": "Full match played, scored twice"
+      },
+      "source": "Transfermarkt, club reports - Feb 2026",
+      "notes": "Prolific striker in outstanding form. No injury concerns. Sweden's key player and main goal threat."
+    },
+    {
+      "playerName": "Dejan Kulusevski",
+      "teamCode": "SWE",
+      "country": "Sweden",
+      "club": "Tottenham Hotspur",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Tottenham Hotspur (Premier League)",
         "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Dutch-Indonesian forward. No injury concerns. Key striker for Indonesia."
+      "notes": "Versatile attacker with Premier League quality. No injury concerns. Key creative player for Sweden."
+    },
+    {
+      "playerName": "Alexander Isak",
+      "teamCode": "SWE",
+      "country": "Sweden",
+      "club": "Newcastle United",
+      "position": "Forward",
+      "injuryType": "Minor hamstring tightness",
+      "injuryDate": "2026-02-10",
+      "expectedReturn": "Late February 2026",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-10",
+        "opponent": "Newcastle United (Premier League)",
+        "notes": "Substituted at half-time with hamstring tightness"
+      },
+      "source": "Newcastle United reports, Transfermarkt - Feb 2026",
+      "notes": "Key striker alongside Gyokeres. Minor hamstring tightness being managed. Expected fit for World Cup."
     },
     {
       "playerName": "David Alaba",

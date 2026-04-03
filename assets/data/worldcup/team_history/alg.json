@@ -1,0 +1,41 @@
+{
+  "teamCode": "ALG",
+  "teamName": "Algeria",
+  "worldCupHistory": {
+    "totalAppearances": 5,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Round of 16",
+    "bestFinishYear": 2014,
+    "appearances": [
+      { "year": 1982, "result": "First Round", "stage": "Group Stage" },
+      { "year": 1986, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2014, "result": "Round of 16", "stage": "Round of 16" },
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 13,
+      "won": 2,
+      "drawn": 4,
+      "lost": 7,
+      "goalsFor": 13,
+      "goalsAgainst": 22
+    },
+    "topScorers": [
+      { "name": "Islam Slimani", "goals": 3, "tournaments": "2014" },
+      { "name": "Rabah Madjer", "goals": 2, "tournaments": "1982, 1986" },
+      { "name": "Lakhdar Belloumi", "goals": 2, "tournaments": "1982, 1986" }
+    ],
+    "notableMoments": [
+      "Stunned the football world by beating West Germany 2-1 in the 1982 World Cup, one of the greatest upsets in tournament history",
+      "Victims of the 'Disgrace of Gijón' in 1982, when West Germany and Austria played out a mutually beneficial result to eliminate Algeria from the tournament",
+      "Won the 2019 Africa Cup of Nations in Egypt, their second continental title, with Baghdad Bounedjah scoring the winner in the final against Senegal",
+      "Reached the Round of 16 at the 2014 World Cup in Brazil, their best ever result, pushing eventual champions Germany to extra time in a thrilling 2-1 defeat",
+      "Islam Slimani's brace against South Korea at the 2014 World Cup (4-2 win) remains one of the greatest Algerian performances on the world stage",
+      "Riyad Mahrez scored a legendary last-minute free-kick against Nigeria in the 2019 Africa Cup of Nations semifinal to send Algeria to the final",
+      "Ismaël Bennacer won the Best Player award at the 2019 Africa Cup of Nations, establishing himself as one of Africa's finest midfielders",
+      "Algeria qualified for the 2026 World Cup through the African qualifiers, returning to the world stage and aiming to surpass their 2014 Round of 16 achievement"
+    ]
+  }
+}

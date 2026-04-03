@@ -1,0 +1,35 @@
+{
+  "team1Code": "CZE",
+  "team2Code": "MEX",
+  "team1Name": "Czechia",
+  "team2Name": "Mexico",
+  "historicalAnalysis": "Czechia and Mexico represent two distinct footballing cultures meeting on the World Cup stage. Mexico, co-hosting this tournament alongside the United States and Canada, will enjoy tremendous home support and carry the weight of a nation's expectations. El Tri have been perennial World Cup participants but have been haunted by the 'quinto partido' curse, failing to advance past the Round of 16 since 1986.\n\nCzechia arrive as dangerous outsiders with a squad built around Premier League and Bundesliga talent. Their qualification campaign showcased a team capable of grinding out results against top European opposition, and their blend of physical midfield presence and clinical finishing makes them a tricky opponent for any side. This Group A matchup could prove decisive in determining which team advances, adding significant pressure to what promises to be an electric atmosphere if played at a Mexican venue.",
+  "keyStorylines": [
+    "Mexico's home advantage as co-hosts creates a cauldron atmosphere that could either inspire El Tri or add unbearable pressure to perform",
+    "Czechia look to spoil the party as tournament dark horses, bringing a physical European style that has troubled CONCACAF teams historically",
+    "Santiago Gimenez's red-hot club form with Feyenoord makes him Mexico's most lethal striker in a generation",
+    "A potential group-deciding fixture that could determine which team progresses to the knockout rounds"
+  ],
+  "playersToWatch": [
+    {"name": "Santiago Giménez", "teamCode": "MEX", "position": "Striker", "reason": "Feyenoord's prolific goalscorer has been one of Europe's most clinical finishers and carries Mexico's attacking hopes"},
+    {"name": "Tomáš Souček", "teamCode": "CZE", "position": "Defensive Midfielder", "reason": "His aerial dominance and late runs into the box could exploit Mexico's historically vulnerable set-piece defending"},
+    {"name": "Hirving Lozano", "teamCode": "MEX", "position": "Winger", "reason": "The veteran winger's pace and directness on the flank remains Mexico's most dangerous attacking weapon in transition"},
+    {"name": "Adam Hložek", "teamCode": "CZE", "position": "Forward", "reason": "The young Bayer Leverkusen forward adds dynamism and versatility to Czechia's attack with his ability to play across the front line"}
+  ],
+  "tacticalPreview": "Mexico under their current system favor possession-based football with quick combinations through the middle third. Their fullbacks push high to provide width, while the front three interchange positions fluidly to create space. Santiago Gimenez acts as the focal point, with Lozano and supporting attackers feeding off his movement. However, Mexico can be vulnerable to teams that press their build-up aggressively and force turnovers in dangerous areas.\n\nCzechia will likely set up to be compact and difficult to break down, inviting Mexico to have possession in non-threatening areas before springing rapid counter-attacks through Schick and Hložek. Soucek's physical presence in midfield will be crucial for winning second balls and disrupting Mexico's rhythm. The Czechs' set-piece prowess could also be a decisive factor, as their height advantage at corners and free kicks gives them an additional route to goal.",
+  "prediction": {
+    "predictedOutcome": "TEAM2",
+    "predictedScore": "2-1",
+    "confidence": 42,
+    "reasoning": "Mexico's home advantage and superior attacking depth should give them the edge, but Czechia's defensive organization and counter-attacking quality will make this far from straightforward. Expect Mexico to eventually find a way through, but not without conceding.",
+    "alternativeScenario": "Czechia could frustrate Mexico with a deep defensive block and steal all three points through a set-piece goal from Soucek, leading to a shock 1-0 Czech victory that throws the group wide open."
+  },
+  "pastEncountersSummary": "Czechia and Mexico have limited competitive history, with most of their meetings coming in friendly matches. Their encounters have generally been closely fought affairs with neither side establishing clear dominance. This World Cup group stage match represents their most significant competitive meeting in recent memory.",
+  "funFacts": [
+    "Mexico will be appearing at their 18th World Cup, more than any other CONCACAF nation and among the most of any country worldwide",
+    "Czechia's predecessor Czechoslovakia reached the World Cup final twice, in 1934 and 1962, but have never won the tournament",
+    "Mexico's Estadio Azteca is the only stadium to have hosted two World Cup finals, in 1970 and 1986",
+    "The Czech national team's official fan group is known as the 'Hustlers' and they are famous for their creative choreographies at international tournaments"
+  ],
+  "isFirstMeeting": false
+}

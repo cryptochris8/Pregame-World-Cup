@@ -1,0 +1,172 @@
+{
+  "players": {
+    "Ronwen Williams": {
+      "bio": "The captain and undisputed number one of Bafana Bafana, Ronwen Williams has established himself as one of the best goalkeepers in African football. His heroic penalty-saving displays in the 2023 Africa Cup of Nations cemented his legendary status in South African football.",
+      "playingStyle": "Outstanding shot-stopper with exceptional penalty-saving ability, vocal leadership, and the composure to organize the defense under sustained pressure",
+      "keyStrengths": ["Penalty saving and shootout heroics", "Shot-stopping reflexes", "Vocal leadership and defensive organization"],
+      "worldCup2026Role": "Undisputed starting goalkeeper and captain whose leadership and penalty expertise could prove decisive; the emotional heart and soul of the Bafana Bafana squad",
+      "notableFact": "His penalty shootout heroics at the 2023 Africa Cup of Nations, where he saved multiple spot-kicks, earned him widespread recognition as one of the continent's elite goalkeepers"
+    },
+    "Veli Mothwa": {
+      "bio": "An experienced goalkeeper who provides solid backup to Williams, Mothwa has been a reliable figure in South African football. His performances for AmaZulu have demonstrated his capability to step in when called upon at international level.",
+      "playingStyle": "Reliable goalkeeper with good positioning, safe handling, and the experience to maintain composure in high-pressure situations",
+      "keyStrengths": ["Positional awareness", "Safe handling and reliability", "Experience and composure"],
+      "worldCup2026Role": "Dependable backup goalkeeper whose experience ensures strong depth behind Williams; capable of stepping in without a significant drop in quality",
+      "notableFact": "Has been a consistent performer in the South African Premier Division, earning his international call-ups through sustained excellence at club level"
+    },
+    "Bruce Bvuma": {
+      "bio": "A young goalkeeper who has progressed through the ranks at Kaizer Chiefs, one of South Africa's biggest clubs. Bvuma's agility and potential make him a promising part of the national team's goalkeeping future.",
+      "playingStyle": "Agile, quick-footed goalkeeper with good reflexes and the potential to develop into a long-term international starter",
+      "keyStrengths": ["Agility and quick reactions", "Shot-stopping ability", "Youth and development potential"],
+      "worldCup2026Role": "Third-choice goalkeeper providing squad depth; his inclusion represents an opportunity to gain invaluable World Cup experience for the future",
+      "notableFact": "Has been part of the Kaizer Chiefs setup since youth level, representing one of South Africa's most storied clubs at the highest level"
+    },
+    "Khuliso Mudau": {
+      "bio": "A dynamic right-back from Mamelodi Sundowns, Mudau has become a key figure for both club and country. His pace, attacking instinct, and defensive reliability have made him one of the first names on the team sheet.",
+      "playingStyle": "Attack-minded right-back with explosive pace, good crossing ability, and the stamina to contribute at both ends of the pitch",
+      "keyStrengths": ["Pace and attacking drive", "Crossing and delivery", "Defensive recovery speed"],
+      "worldCup2026Role": "Starting right-back who provides width and attacking thrust; his pace makes him effective in transitions and his improving defensive game adds balance",
+      "notableFact": "Has been a standout performer for Mamelodi Sundowns in the CAF Champions League, gaining valuable experience against top African opposition"
+    },
+    "Aubrey Modiba": {
+      "bio": "A versatile left-back who can also play further forward, Modiba brings tactical flexibility and attacking quality to the Bafana Bafana squad. His time at Mamelodi Sundowns has refined his game at both ends of the pitch.",
+      "playingStyle": "Versatile left-sided player who can operate as a full-back or winger, with good crossing ability and the technical quality to contribute in the final third",
+      "keyStrengths": ["Versatility across multiple positions", "Crossing and final-third quality", "Technical ability on the ball"],
+      "worldCup2026Role": "Starting left-back who provides both defensive solidity and attacking contributions; his versatility gives the coach tactical options to shift formation during matches",
+      "notableFact": "Has been a key part of Mamelodi Sundowns' domestic dominance, contributing to multiple league title successes"
+    },
+    "Mothobi Mvala": {
+      "bio": "A combative and disciplined defensive midfielder, Mvala is the shield in front of the Bafana Bafana defense. His ball-winning ability and tactical awareness make him essential to South Africa's defensive structure.",
+      "playingStyle": "Hard-working defensive midfielder who excels at breaking up play, winning aerial duels, and providing a platform for the more creative players ahead of him",
+      "keyStrengths": ["Ball-winning ability and tackling", "Aerial presence in midfield", "Tactical discipline and positioning"],
+      "worldCup2026Role": "Midfield enforcer who provides the defensive platform for South Africa's more attacking talents; his discipline and work rate will be critical against World Cup-level opposition",
+      "notableFact": "Has been a cornerstone of Mamelodi Sundowns' midfield, helping them maintain defensive stability across domestic and continental competitions"
+    },
+    "Teboho Mokoena": {
+      "bio": "One of the most talented midfielders in South African football, Mokoena possesses a remarkable long-range passing ability and a thunderous shot. His ability to score spectacular goals from distance has made him a star of the national team.",
+      "playingStyle": "Dynamic central midfielder with exceptional long-range shooting, excellent passing range, and the ability to dictate play from deep areas",
+      "keyStrengths": ["Long-range shooting ability", "Passing range and distribution", "Set-piece delivery"],
+      "worldCup2026Role": "Key central midfielder whose long-range shooting and passing ability provide a constant threat; his goals from distance can change the complexion of any match",
+      "notableFact": "Has scored multiple stunning long-range goals for Bafana Bafana, establishing himself as one of the most exciting midfield talents in African football"
+    },
+    "Themba Zwane": {
+      "bio": "The mercurial playmaker known as 'Mshishi' is widely regarded as one of the most gifted South African footballers of his generation. Despite playing his entire career domestically with Mamelodi Sundowns, his creativity and vision have been world-class.",
+      "playingStyle": "Elegant, creative attacking midfielder with sublime close control, exceptional vision, and the ability to unlock any defense with a single pass or dribble",
+      "keyStrengths": ["Creative vision and passing", "Close control and dribbling", "Ability to play decisive final balls"],
+      "worldCup2026Role": "Senior creative influence whose experience and genius can unlock tight World Cup defenses; a potential game-changer in matches where South Africa need to break down organized opponents",
+      "notableFact": "Known affectionately as 'Mshishi' by South African fans, Zwane has spent his entire career at Mamelodi Sundowns and is considered one of the greatest players in the club's history"
+    },
+    "Percy Tau": {
+      "bio": "South Africa's most high-profile attacker, Tau made his name in European football with spells in Belgium before moving to Egyptian giants Al Ahly. His pace, skill, and goalscoring ability make him Bafana Bafana's primary attacking threat.",
+      "playingStyle": "Pacy, skillful winger who can play across the front line, capable of beating defenders in one-on-one situations and delivering quality end product with goals and assists",
+      "keyStrengths": ["Pace and direct dribbling", "Goalscoring from wide positions", "International and continental experience"],
+      "worldCup2026Role": "Main attacking threat and creative spark in the final third; his experience at the highest level of African football with Al Ahly gives him the pedigree for World Cup football",
+      "notableFact": "Won multiple CAF Champions League titles with Al Ahly and previously played in the Belgian league, making him one of the most internationally experienced South African players"
+    },
+    "Bongokuhle Hlongwane": {
+      "bio": "A dynamic young forward who has made waves in Major League Soccer with Minnesota United, Hlongwane represents the exciting new generation of South African talent. His pace, directness, and versatility across the front line make him a potent weapon.",
+      "playingStyle": "Explosive, direct wide forward with blistering pace, the ability to cut inside and shoot, and an increasingly refined end product",
+      "keyStrengths": ["Explosive pace and directness", "Cutting inside and shooting", "Versatility across the front three"],
+      "worldCup2026Role": "Dynamic attacking option who can play across the forward line; his MLS experience and youthful energy make him an ideal impact player for World Cup matches",
+      "notableFact": "Moved to MLS at a young age with Minnesota United, gaining valuable experience in a competitive international league and developing rapidly as a professional"
+    },
+    "Lyle Foster": {
+      "bio": "A talented young striker who made history by playing in the English Premier League with Burnley, Foster is one of the most exciting South African forwards of his generation. His physical presence and goalscoring instinct make him a natural center-forward.",
+      "playingStyle": "Strong, physical striker with good hold-up play, aerial ability, and the movement to find space in the penalty area for goalscoring opportunities",
+      "keyStrengths": ["Physical presence and hold-up play", "Aerial ability and heading", "Movement in the penalty area"],
+      "worldCup2026Role": "First-choice striker whose Premier League experience and physical attributes make him the ideal focal point for the Bafana Bafana attack at the World Cup",
+      "notableFact": "Became one of the few South African players to feature in the English Premier League in recent years, raising the profile of South African football internationally"
+    },
+    "Rushwin Dortley": {
+      "bio": "A promising young center-back from Kaizer Chiefs, Dortley has emerged as one of the most exciting defensive prospects in South African football. His left-footed ball-playing ability and composure have drawn comparisons to top international defenders.",
+      "playingStyle": "Left-footed center-back with excellent composure on the ball, good passing ability from the back, and the confidence to step into midfield with the ball",
+      "keyStrengths": ["Left-footed ball-playing ability", "Composure under pressure", "Aerial presence for a young defender"],
+      "worldCup2026Role": "Exciting young center-back who adds a ball-playing dimension to the defense; his left foot provides natural balance to the backline",
+      "notableFact": "Has risen rapidly through the ranks at Kaizer Chiefs to earn international recognition, marking him as one of South Africa's most promising defensive talents"
+    },
+    "Siyanda Xulu": {
+      "bio": "A vastly experienced center-back who has played both domestically and internationally, Xulu brings invaluable know-how and leadership to the South African defense. His physical presence and organizational skills are key to the squad's defensive stability.",
+      "playingStyle": "Experienced, physical center-back who commands the defensive line, excels in aerial duels, and organizes his teammates with vocal leadership",
+      "keyStrengths": ["Aerial dominance and physical defending", "Experience and defensive organization", "Leadership and communication"],
+      "worldCup2026Role": "Senior defensive figure who provides experience and leadership in the backline; his organizational skills and calm head are invaluable for tournament football",
+      "notableFact": "Has represented South Africa at multiple major tournaments and has experience playing abroad, making him one of the most seasoned defenders in the squad"
+    },
+    "Grant Kekana": {
+      "bio": "A young, athletic center-back from Mamelodi Sundowns, Kekana has developed impressively and earned his place in the national team setup. His pace and recovery ability set him apart from traditional center-backs.",
+      "playingStyle": "Athletic center-back with excellent pace for the position, good recovery speed, and the ability to win duels against quick forwards",
+      "keyStrengths": ["Pace and recovery speed", "Athletic ability", "Improving aerial game"],
+      "worldCup2026Role": "Young defensive option who provides squad depth and can match the pace of quick opposition attackers; part of the next generation of South African defenders",
+      "notableFact": "His development at Mamelodi Sundowns, South Africa's most successful modern club, has prepared him well for the demands of international football"
+    },
+    "Terrence Mashego": {
+      "bio": "A speedy and attack-minded left-back from Cape Town City, Mashego brings dynamism and width to the Bafana Bafana left flank. His willingness to get forward and deliver crosses makes him an exciting option in the squad.",
+      "playingStyle": "Pacy, overlapping left-back who loves to attack, delivers dangerous crosses, and uses his speed to recover defensively",
+      "keyStrengths": ["Pace and overlapping runs", "Crossing and delivery", "Defensive recovery speed"],
+      "worldCup2026Role": "Alternative left-back option who provides attacking impetus from the flank; his pace and energy make him an effective option either as a starter or substitute",
+      "notableFact": "Has been one of the standout performers in the South African Premier Division, earning his international breakthrough through consistently exciting performances"
+    },
+    "Bathusi Aubaas": {
+      "bio": "A young center-back developing at Mamelodi Sundowns, Aubaas represents the promising future of South African defending. His composure and willingness to defend on the front foot have marked him as a talent to watch.",
+      "playingStyle": "Young, composed center-back who defends on the front foot, reads the game well, and is developing his ability to play out from the back",
+      "keyStrengths": ["Composure for a young defender", "Proactive defending", "Reading of the game"],
+      "worldCup2026Role": "Development prospect who provides center-back depth; his inclusion in the squad represents an investment in South Africa's defensive future",
+      "notableFact": "Has been part of Mamelodi Sundowns' highly successful academy system, which has produced numerous national team players in recent years"
+    },
+    "Sipho Mbule": {
+      "bio": "A technically gifted central midfielder who has shown flashes of brilliance at both Mamelodi Sundowns and in the national team. When fully fit and in form, Mbule possesses the talent to dominate midfield battles.",
+      "playingStyle": "Technically gifted midfielder with good dribbling ability, vision to find attacking passes, and the skill to beat opponents in tight spaces",
+      "keyStrengths": ["Technical ability and close control", "Creative passing and vision", "Dribbling through central areas"],
+      "worldCup2026Role": "Creative midfield option who can provide a spark when the team needs to unlock defenses; his technical quality adds an extra dimension to the midfield",
+      "notableFact": "Has been tipped as one of South Africa's most talented midfield prospects, with the kind of natural ability that rarely emerges in the domestic league"
+    },
+    "Luke Le Roux": {
+      "bio": "A rising star who has made the move to Crystal Palace in the English Premier League, Le Roux represents the new wave of South African talent playing at the highest level in Europe. His energy and passing ability from midfield have caught the eye.",
+      "playingStyle": "Box-to-box midfielder with good engine, neat passing ability, and the willingness to cover ground and contribute at both ends of the pitch",
+      "keyStrengths": ["Energy and box-to-box ability", "Passing accuracy and composure", "Tactical adaptability"],
+      "worldCup2026Role": "Exciting young midfield option whose Premier League experience gives him exposure to world-class opposition; brings European-level intensity to the squad",
+      "notableFact": "His move to Crystal Palace made him one of the few South African players currently plying their trade in the English Premier League, a significant milestone for Bafana Bafana"
+    },
+    "Relebohile Mofokeng": {
+      "bio": "The teenage sensation of South African football, Mofokeng has exploded onto the scene at Orlando Pirates with dazzling skill, pace, and a maturity beyond his years. He is widely considered the most exciting young talent to emerge from South Africa in a generation.",
+      "playingStyle": "Electrifying young winger with exceptional close control, rapid acceleration, the confidence to take on any defender, and an increasingly sharp end product",
+      "keyStrengths": ["Exceptional dribbling and close control", "Rapid acceleration and pace", "Maturity and confidence beyond his years"],
+      "worldCup2026Role": "The squad's most exciting young talent who can be a game-changer with his dribbling and pace; capable of producing moments of magic that can decide World Cup matches",
+      "notableFact": "At just 21, Mofokeng has already drawn comparisons to some of South Africa's greatest ever wingers and attracted interest from top European clubs"
+    },
+    "Evidence Makgopa": {
+      "bio": "A strong, physical striker from Orlando Pirates, Makgopa has developed into a reliable goalscorer for both club and country. His aerial ability and intelligent movement make him a constant threat in the penalty area.",
+      "playingStyle": "Physical target striker with good aerial ability, strong hold-up play, and the intelligence to find goalscoring positions inside the box",
+      "keyStrengths": ["Aerial ability and heading", "Physical presence and hold-up play", "Intelligent positioning in the box"],
+      "worldCup2026Role": "Alternative striking option whose physical presence provides a different dimension to Foster; ideal for matches where aerial bombardment or hold-up play is required",
+      "notableFact": "Has been one of the most consistent goalscorers in the South African Premier Division, earning his place as a regular option in the Bafana Bafana forward line"
+    },
+    "Iqraam Rayners": {
+      "bio": "A clinical finisher who has earned his international breakthrough through prolific goalscoring form in the South African Premier Division. Rayners' instinct for goal and composure in front of net have made him an important squad member.",
+      "playingStyle": "Sharp, instinctive striker with excellent finishing ability, good movement to find space, and the composure to convert chances cleanly",
+      "keyStrengths": ["Clinical finishing ability", "Movement and positioning", "Composure in front of goal"],
+      "worldCup2026Role": "Goalscoring option from the bench who can provide a clinical edge when chances are at a premium; his finishing instinct could prove decisive in tight World Cup matches",
+      "notableFact": "His prolific goalscoring in the South African league earned him a move to Mamelodi Sundowns and subsequent international recognition"
+    },
+    "Thapelo Morena": {
+      "bio": "A veteran right-back and Mamelodi Sundowns legend, Morena has been a consistent performer for both club and country for years. His experience and understanding of the game add invaluable depth to the squad.",
+      "playingStyle": "Experienced right-back with good positioning, dependable defensive work, and the ability to get forward and support attacks when the opportunity arises",
+      "keyStrengths": ["Experience and reliability", "Defensive positioning", "Attacking support play"],
+      "worldCup2026Role": "Experienced backup right-back who provides reliable depth; his long career at Mamelodi Sundowns means he has strong understanding with several national team colleagues",
+      "notableFact": "Has won numerous domestic titles with Mamelodi Sundowns, making him one of the most decorated players in the current Bafana Bafana squad"
+    },
+    "Thalente Mbatha": {
+      "bio": "A composed defensive midfielder from Orlando Pirates, Mbatha has impressed with his ability to read the game and break up opposition attacks. His calm demeanor and passing ability from deep positions make him a reliable midfield option.",
+      "playingStyle": "Composed defensive midfielder with good anticipation, clean passing from deep positions, and the discipline to hold his position and protect the defense",
+      "keyStrengths": ["Anticipation and interceptions", "Composure and clean passing", "Positional discipline"],
+      "worldCup2026Role": "Midfield depth option who can provide a calm, disciplined presence in the center of the park; his ability to recycle possession efficiently is valuable in tournament football",
+      "notableFact": "Has risen through the ranks at Orlando Pirates, one of South Africa's biggest clubs, establishing himself as a trusted midfield option for both club and country"
+    },
+    "Patrick Maswanganyi": {
+      "bio": "A creative and technically gifted attacking midfielder from Orlando Pirates, Maswanganyi has become one of the most exciting playmakers in South African football. His flair, dribbling ability, and eye for a pass make him a fan favorite.",
+      "playingStyle": "Creative attacking midfielder with excellent dribbling ability, good vision for the final pass, and the flair to produce moments of individual brilliance",
+      "keyStrengths": ["Dribbling and flair", "Creative passing and vision", "Set-piece delivery"],
+      "worldCup2026Role": "Creative attacking option who can provide the spark to unlock World Cup-level defenses; his flair and technical quality offer something different in the squad",
+      "notableFact": "Has been one of the most entertaining players in the South African Premier Division, earning widespread praise for his creative performances with Orlando Pirates"
+    }
+  }
+}

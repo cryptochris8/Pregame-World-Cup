@@ -1,0 +1,165 @@
+{
+  "players": {
+    "Yazeed Abulaila": {
+      "bio": "The experienced first-choice goalkeeper for Jordan, Abulaila has been a reliable presence between the posts for both Al-Faisaly and the national team. His shot-stopping ability and commanding presence have made him one of the most respected goalkeepers in Jordanian football.",
+      "playingStyle": "Experienced, commanding goalkeeper with strong reflexes, excellent positional sense, and vocal leadership that organizes the defense in front of him",
+      "keyStrengths": ["Shot-stopping reflexes", "Commanding presence and vocal leadership", "Positional sense and experience"],
+      "worldCup2026Role": "Starting goalkeeper and defensive leader for Jordan's historic first World Cup; his experience and composure will be tested against the world's best attackers",
+      "notableFact": "Was instrumental in Jordan's run to the 2023 Asian Cup final, producing several key saves that kept the team in knockout matches"
+    },
+    "Abdallah Nasib": {
+      "bio": "A consistent right-back who has been a regular for Al-Faisaly and the Jordanian national team. Nasib's defensive reliability and willingness to support attacks from the right flank make him an important part of the team's structure.",
+      "playingStyle": "Reliable, disciplined right-back with good defensive positioning, consistent tackling, and the ability to join attacks with overlapping runs",
+      "keyStrengths": ["Defensive reliability and positioning", "Overlapping runs and crossing", "Consistency and discipline"],
+      "worldCup2026Role": "Starting right-back who provides defensive stability and controlled attacking support; his familiarity with the national team system makes him a dependable first choice",
+      "notableFact": "Part of the Al-Faisaly contingent that forms the backbone of the Jordanian national team, reflecting the club's dominance in domestic football"
+    },
+    "Ehsan Haddad": {
+      "bio": "A steady left-back playing for Al-Wehdat, one of Jordan's most popular and successful clubs. Haddad provides defensive solidity on the left side and offers balanced support to the team's attacking play.",
+      "playingStyle": "Solid, dependable left-back with good defensive awareness, balanced attacking contributions, and tactical discipline within the team's system",
+      "keyStrengths": ["Defensive awareness and positioning", "Balanced two-way play", "Tactical discipline"],
+      "worldCup2026Role": "Starting left-back who provides defensive structure; his experience at Al-Wehdat, one of Jordan's biggest clubs, has prepared him for high-pressure matches",
+      "notableFact": "Plays for Al-Wehdat, the club that historically represents the Palestinian refugee community in Jordan, one of the most passionate fanbases in Asian football"
+    },
+    "Ahmad Ersan": {
+      "bio": "The veteran defensive leader and one of the most capped players in Jordanian football history. Ersan has been the heart of Jordan's defense for over a decade, providing aerial dominance, leadership, and the kind of experience that cannot be taught.",
+      "playingStyle": "Commanding, experienced center-back with dominant aerial presence, strong tackling, and exceptional ability to organize and marshal the defensive line",
+      "keyStrengths": ["Aerial dominance and heading ability", "Defensive organization and leadership", "Experience and composure under pressure"],
+      "worldCup2026Role": "Starting center-back and defensive captain; his vast experience and leadership are irreplaceable for Jordan's first ever World Cup campaign",
+      "notableFact": "One of the most capped players in Jordanian history with over 75 appearances, having served as the backbone of the defense through the most successful era in Jordan's football"
+    },
+    "Anas Bani Yaseen": {
+      "bio": "A strong, experienced center-back who has taken his career to the Gulf leagues with Al-Wakrah in Qatar. Bani Yaseen's aerial prowess, defensive intelligence, and regional experience make him an ideal partner for Ersan in central defense.",
+      "playingStyle": "Physical, intelligent center-back with strong aerial ability, good reading of the game, and the experience of competing in the competitive Qatar Stars League",
+      "keyStrengths": ["Aerial ability and physical presence", "Reading of the game", "Experience in Gulf football at a high level"],
+      "worldCup2026Role": "Starting center-back partner for Ersan, forming a physically dominant and experienced defensive pairing; his Gulf league experience ensures he is accustomed to facing high-quality opposition",
+      "notableFact": "Scored crucial goals in Jordan's qualifying campaign, demonstrating his aerial threat at set pieces in addition to his defensive capabilities"
+    },
+    "Salem Al-Ajalin": {
+      "bio": "A combative defensive midfielder who provides the hard-running, ball-winning presence that anchors Jordan's midfield. Al-Ajalin's energy and tactical discipline at Al-Wehdat have translated seamlessly to the national team.",
+      "playingStyle": "Energetic, combative defensive midfielder who breaks up opposition attacks, covers ground tirelessly, and provides simple, effective distribution to more creative teammates",
+      "keyStrengths": ["Ball-winning and tackling ability", "Energy and ground coverage", "Tactical discipline and positioning"],
+      "worldCup2026Role": "Starting defensive midfielder who protects the back four; his tireless work rate and ball-winning ability are essential to Jordan's defensive solidity",
+      "notableFact": "A key member of the Al-Wehdat squad and a regular in the national team, providing the midfield steel that allows Jordan's more creative players to flourish"
+    },
+    "Mousa Al-Tamari": {
+      "bio": "One of Jordan's most exciting attacking talents, Mousa Al-Tamari is a tricky right winger who has played in European football with Montpellier in Ligue 1. His pace, dribbling ability, and eye for a spectacular goal make him the player opponents fear most.",
+      "playingStyle": "Explosive, skillful right winger with electric pace, audacious dribbling skills, and the ability to cut inside onto his left foot to shoot or create chances",
+      "keyStrengths": ["Pace and dribbling ability", "Left-footed shooting from the right", "Creativity and flair"],
+      "worldCup2026Role": "Starting right winger and primary creative threat; his Ligue 1 experience and individual quality make him the player Jordan look to most for attacking inspiration",
+      "notableFact": "His performances in French football made him one of the first Jordanian players to establish himself in a top European league, inspiring a new generation of Jordanian footballers"
+    },
+    "Nizar Al-Rashdan": {
+      "bio": "A reliable central midfielder who has been a consistent performer for Al-Faisaly and the national team. Al-Rashdan's passing ability and tactical awareness provide structure to Jordan's midfield play.",
+      "playingStyle": "Composed central midfielder with good passing range, tactical intelligence, and the ability to keep the team organized and moving the ball effectively",
+      "keyStrengths": ["Passing accuracy and range", "Tactical awareness and positioning", "Composure on the ball"],
+      "worldCup2026Role": "Midfield option who adds composure and passing quality; his ability to control the tempo of play makes him valuable when Jordan need to manage games",
+      "notableFact": "Part of the Al-Faisaly contingent that provides the technical core of Jordan's midfield, reflecting the close relationship between club and country"
+    },
+    "Yazan Al-Naimat": {
+      "bio": "Jordan's most lethal striker, Yazan Al-Naimat has proven himself in European football with BSC Young Boys in Switzerland. His clinical finishing, physical presence, and ability to score at the highest level make him the spearhead of Jordan's attack and their most reliable goal threat.",
+      "playingStyle": "Clinical, intelligent striker with excellent finishing in the box, good movement to find space, and the physical strength to compete with top-level defenders",
+      "keyStrengths": ["Clinical finishing and composure in front of goal", "Intelligent movement and positioning", "Physical strength and hold-up play"],
+      "worldCup2026Role": "Starting striker and primary goal threat; his Swiss league experience and proven scoring ability make him the player Jordan rely on most to deliver at the World Cup",
+      "notableFact": "His move to BSC Young Boys made him one of the first Jordanian players to play in a top European league, and his goal-scoring record in Switzerland has been impressive"
+    },
+    "Musa Al-Taamari": {
+      "bio": "The captain and heart of Jordanian football, Musa Al-Taamari is a creative midfielder whose vision, passing, and leadership have driven Jordan's rise to World Cup qualification. A veteran of the domestic game with Al-Wehdat, his influence on the team goes far beyond statistics.",
+      "playingStyle": "Intelligent, creative attacking midfielder with exceptional vision, precise passing, excellent set-piece delivery, and the tactical brain to orchestrate the team's attacking play",
+      "keyStrengths": ["Vision and creative passing", "Set-piece delivery and dead-ball expertise", "Leadership and tactical intelligence"],
+      "worldCup2026Role": "Starting number 10 and creative conductor of Jordan's attack; his ability to find teammates with defense-splitting passes and deliver dangerous set pieces makes him the team's most important playmaker",
+      "notableFact": "Captained Jordan to the 2023 Asian Cup final, the greatest achievement in the nation's football history, cementing his status as the most important player of his generation"
+    },
+    "Baha Faisal": {
+      "bio": "A prolific domestic striker who has been one of the most consistent goalscorers in the Jordanian Pro League with Al-Wehdat. Faisal's goal-scoring instinct and physical presence provide an important alternative option in attack.",
+      "playingStyle": "Strong, instinctive striker with excellent positioning in the box, physical presence, and a natural goal-scoring touch developed through years of domestic football",
+      "keyStrengths": ["Goal-scoring instinct and positioning", "Physical presence and aerial ability", "Consistency in domestic football"],
+      "worldCup2026Role": "Key backup striker whose prolific domestic record makes him a reliable option; his aerial presence adds a set-piece threat and his goal-scoring instinct could prove decisive",
+      "notableFact": "One of the top scorers in the Jordanian Pro League in recent seasons, with a remarkable goals-to-games ratio that earns him a crucial squad place"
+    },
+    "Mohammad Al-Basha": {
+      "bio": "A young goalkeeper developing at Al-Ramtha in the Jordanian Pro League. Al-Basha provides backup goalkeeping depth and represents the future of Jordanian goalkeeping.",
+      "playingStyle": "Young, athletic goalkeeper with developing skills, good reflexes, and the ambition to challenge for a starting role in future tournaments",
+      "keyStrengths": ["Athletic ability and reflexes", "Youth and development potential", "Eagerness to learn and improve"],
+      "worldCup2026Role": "Backup goalkeeper gaining invaluable World Cup experience; his inclusion provides depth while investing in the future of Jordanian goalkeeping",
+      "notableFact": "One of the youngest goalkeepers at the World Cup, gaining once-in-a-lifetime experience that will shape his career for years to come"
+    },
+    "Tareq Khattab": {
+      "bio": "A solid center-back playing for Al-Salt in the Jordanian Pro League. Khattab provides additional defensive depth with his physical presence and reliable defending.",
+      "playingStyle": "Physical, reliable center-back with good marking ability, aerial presence, and disciplined positioning within the defensive structure",
+      "keyStrengths": ["Physical presence and aerial ability", "Marking and defensive discipline", "Reliability and consistency"],
+      "worldCup2026Role": "Defensive depth option at center-back; his familiarity with the national team setup and reliable defending make him a trusted squad member for emergency situations",
+      "notableFact": "A dependable domestic league defender who has earned his World Cup squad place through consistent performances for club and country"
+    },
+    "Hamza Al-Dardour": {
+      "bio": "One of the most prolific scorers in Jordanian football history, Hamza Al-Dardour has been banging in goals for over a decade. His predatory instinct, aerial ability, and unwavering commitment to the national team make him a living legend of Jordanian football.",
+      "playingStyle": "Veteran, predatory striker with exceptional positioning, aerial prowess, and the killer instinct to convert chances that few others would score",
+      "keyStrengths": ["Goal-scoring instinct and positioning", "Aerial ability and heading", "Experience and big-game temperament"],
+      "worldCup2026Role": "Veteran striker and all-time top scorer whose experience and goal-scoring pedigree make him invaluable; his presence alone lifts the team and terrifies opponents",
+      "notableFact": "Jordan's all-time leading scorer with over 28 international goals, Al-Dardour's career has defined an era of Jordanian football and his inclusion at the World Cup is a fitting reward"
+    },
+    "Yousef Al-Rawashdeh": {
+      "bio": "A young defensive midfielder from Al-Hussein who provides additional midfield depth and energy. Al-Rawashdeh's defensive qualities and work rate have earned him a place in the World Cup squad.",
+      "playingStyle": "Energetic, hardworking defensive midfielder with good tackling ability, willingness to cover ground, and developing positional awareness",
+      "keyStrengths": ["Energy and work rate", "Tackling and ball recovery", "Developing positional sense"],
+      "worldCup2026Role": "Midfield depth option whose energy and defensive qualities make him useful when Jordan need fresh legs or additional midfield protection",
+      "notableFact": "A product of Al-Hussein's development system, representing the breadth of talent emerging from clubs beyond Jordan's traditional powerhouses"
+    },
+    "Yazan Abu Arab": {
+      "bio": "A young, technically gifted central midfielder playing for Al-Wehdat. Abu Arab's composure on the ball and passing ability make him an exciting prospect in Jordan's midfield.",
+      "playingStyle": "Technical, composed central midfielder with good ball retention, neat passing, and the ability to keep the team playing through the middle of the park",
+      "keyStrengths": ["Technical ability and ball retention", "Passing accuracy", "Composure under pressure"],
+      "worldCup2026Role": "Young midfield talent gaining World Cup experience; his technical quality provides an option when Jordan need to control possession and play through the lines",
+      "notableFact": "Part of the Al-Wehdat academy system that has produced several Jordanian internationals, continuing the club's tradition of developing national team players"
+    },
+    "Oday Dabbagh": {
+      "bio": "An exciting young left winger who has ventured to Spanish football with Sevilla Atletico. Dabbagh's pace, dribbling ability, and willingness to take on defenders make him one of Jordan's most exciting attacking prospects.",
+      "playingStyle": "Quick, direct left winger with good dribbling skills, pace to stretch defenses, and developing end product from wide positions in the Spanish football system",
+      "keyStrengths": ["Pace and dribbling", "Directness and willingness to take on defenders", "Spanish football development"],
+      "worldCup2026Role": "Exciting wide option whose pace and directness provide an attacking spark from the bench; his experience in Spanish football adds a different dimension to Jordan's attack",
+      "notableFact": "One of the first Jordanian players to compete in Spain, joining Sevilla's reserve team and gaining experience in one of the world's most technically demanding football environments"
+    },
+    "Mohammad Abu Zuraiq": {
+      "bio": "A dependable right-back playing for Al-Faisaly in the Jordanian Pro League. Abu Zuraiq provides additional defensive depth on the right side with his solid defensive qualities.",
+      "playingStyle": "Solid, defensive-minded right-back with good positional sense, consistent tackling, and reliability in fulfilling his defensive duties",
+      "keyStrengths": ["Defensive positioning and reliability", "Tackling and one-on-one defending", "Squad depth and versatility"],
+      "worldCup2026Role": "Backup right-back providing reliable squad depth; his experience at Al-Faisaly ensures he is match-ready if called upon",
+      "notableFact": "Part of the Al-Faisaly defensive contingent that has been central to Jordan's improved results in recent years"
+    },
+    "Hussain Al-Saify": {
+      "bio": "A young, pacy left winger who has taken his talents to the UAE Pro League with Khor Fakkan. Al-Saify's speed and directness add a dynamic attacking option to Jordan's flanks.",
+      "playingStyle": "Quick, explosive left winger with raw pace, direct running, and the ability to stretch defenses and create space for teammates",
+      "keyStrengths": ["Raw pace and acceleration", "Direct running and stretching defenses", "Gulf league experience"],
+      "worldCup2026Role": "Young attacking option whose blistering pace can change games from the bench; his ability to run behind defenses provides a valuable alternative approach in attack",
+      "notableFact": "One of the younger players to have ventured to Gulf football, gaining valuable experience in the UAE that has accelerated his development"
+    },
+    "Ali Olwan": {
+      "bio": "An experienced central midfielder who has been a loyal servant to both Al-Faisaly and the Jordanian national team. Olwan's versatility, work rate, and consistent performances make him a reliable squad member.",
+      "playingStyle": "Versatile, hardworking midfielder with good passing, tactical awareness, and the ability to contribute effectively in various midfield roles",
+      "keyStrengths": ["Versatility and tactical awareness", "Work rate and consistency", "Experience and reliability"],
+      "worldCup2026Role": "Experienced midfield utility player whose versatility and reliability make him a valuable squad member for tournament football where rotation and tactical flexibility are key",
+      "notableFact": "Has served the national team faithfully for many years, contributing quietly but effectively to Jordan's rise in Asian football"
+    },
+    "Nawaf Al-Aqeel": {
+      "bio": "A young goalkeeper from Al-Wehdat who represents the future of Jordanian goalkeeping. Al-Aqeel's athletic ability and potential have earned him an early call-up to the World Cup squad.",
+      "playingStyle": "Young, athletic goalkeeper with good reflexes, developing positional sense, and the raw potential to become Jordan's long-term number one",
+      "keyStrengths": ["Athletic ability and reflexes", "Youth and long-term potential", "Eagerness and coachability"],
+      "worldCup2026Role": "Third-choice goalkeeper gaining invaluable World Cup experience at a young age; his inclusion is an investment in Jordan's goalkeeping future",
+      "notableFact": "One of the youngest players in the entire World Cup squad, his selection reflects Jordan's commitment to developing talent for future tournaments"
+    },
+    "Mohammad Al-Attar": {
+      "bio": "A center-back who has gained experience in Gulf football with Al-Arabi in the Qatar Stars League. Al-Attar's time in Qatar has exposed him to higher-level football and improved his defensive qualities.",
+      "playingStyle": "Solid, composed center-back with good aerial ability, physical presence, and the composure gained from competing in Qatar's competitive league",
+      "keyStrengths": ["Aerial ability and physical presence", "Composure from Gulf league experience", "Defensive reliability"],
+      "worldCup2026Role": "Defensive depth option whose Qatar league experience adds valuable quality; his familiarity with competing against high-level Gulf and international talent prepares him well for World Cup challenges",
+      "notableFact": "His move to Qatar represents the growing pathway for Jordanian players into Gulf football, providing higher-level experience that benefits the national team"
+    },
+    "Mahmoud Al-Mardi": {
+      "bio": "A young, exciting right winger from Al-Faisaly who brings pace and energy to Jordan's attacking options. Al-Mardi's directness and youthful exuberance provide an exciting option from the bench.",
+      "playingStyle": "Quick, energetic young winger with good pace, direct running ability, and the fearlessness of youth that allows him to take on experienced defenders",
+      "keyStrengths": ["Pace and direct running", "Youth and energy", "Fearlessness and confidence"],
+      "worldCup2026Role": "Young attacking prospect whose pace and energy make him a useful impact substitute; his World Cup experience at a young age will be invaluable for his development",
+      "notableFact": "One of the youngest members of the squad from the Al-Faisaly academy, representing the next generation of Jordanian football talent stepping onto the world stage"
+    }
+  }
+}

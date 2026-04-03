@@ -1,0 +1,39 @@
+{
+  "id": "BIH_QAT",
+  "team1Code": "BIH",
+  "team2Code": "QAT",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 3,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2020-01-15",
+  "firstMeeting": "2018-11-20",
+  "notableMatches": [
+    {
+      "year": 2020,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 1,
+      "winnerCode": "BIH",
+      "location": "Doha, Qatar",
+      "description": "Bosnia came from behind to defeat Qatar in a winter friendly in Doha"
+    },
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Zenica, Bosnia and Herzegovina",
+      "description": "The first meeting between the two nations ended in a draw"
+    }
+  ]
+}

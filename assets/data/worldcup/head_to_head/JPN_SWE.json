@@ -1,0 +1,49 @@
+{
+  "id": "JPN_SWE",
+  "team1Code": "JPN",
+  "team2Code": "SWE",
+  "totalMatches": 5,
+  "team1Wins": 0,
+  "team2Wins": 3,
+  "draws": 2,
+  "team1Goals": 4,
+  "team2Goals": 8,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "2018-01-15",
+  "firstMeeting": "1995-06-07",
+  "notableMatches": [
+    {
+      "year": 2002,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Kobe, Japan",
+      "description": "Japan and Sweden played out an entertaining group stage draw at the 2002 World Cup co-hosted by Japan"
+    },
+    {
+      "year": 2018,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "SWE",
+      "location": "Osaka, Japan",
+      "description": "Sweden showed their strength with a convincing friendly win in Japan"
+    },
+    {
+      "year": 2004,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 3,
+      "winnerCode": "SWE",
+      "location": "Saitama, Japan",
+      "description": "Sweden dominated Japan in a friendly ahead of Euro 2004"
+    }
+  ]
+}

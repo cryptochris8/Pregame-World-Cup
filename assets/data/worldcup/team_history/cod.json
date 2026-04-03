@@ -1,0 +1,36 @@
+{
+  "teamCode": "COD",
+  "teamName": "DR Congo",
+  "worldCupHistory": {
+    "totalAppearances": 2,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1974,
+    "appearances": [
+      { "year": 1974, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 0,
+      "goalsAgainst": 14
+    },
+    "topScorers": [
+      { "name": "No scorers", "goals": 0, "tournaments": "1974" }
+    ],
+    "notableMoments": [
+      "Qualified for the 2026 World Cup through the intercontinental playoff, marking their return to the world stage after 52 years — the longest gap between World Cup appearances in history",
+      "First appeared at the World Cup in 1974 as Zaire, becoming only the third sub-Saharan African nation to qualify for the tournament",
+      "The 1974 World Cup campaign is remembered for a 9-0 defeat to Yugoslavia and an infamous moment when defender Ilunga Mwepu kicked the ball away before a Brazilian free-kick",
+      "Won the Africa Cup of Nations twice, in 1968 and 1974 (as Zaire/Congo), establishing themselves as one of the continent's historic football powers",
+      "DR Congo's passionate fanbase, known for their incredible support and drumming, are one of the most vibrant in African football",
+      "The current squad features a blend of European-based professionals led by Chancel Mbemba, Yoane Wissa, and Cédric Bakambu with homegrown talent from the domestic league",
+      "Reached the semifinal of the 2023 Africa Cup of Nations, their best continental result in decades, signaling their return as a force in African football",
+      "The 2026 World Cup represents a chance for redemption after the painful memories of 1974, with a far more competitive squad assembled from top European leagues"
+    ]
+  }
+}

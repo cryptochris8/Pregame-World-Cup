@@ -1,0 +1,35 @@
+{
+  "team1Code": "SWE",
+  "team2Code": "TUN",
+  "team1Name": "Sweden",
+  "team2Name": "Tunisia",
+  "historicalAnalysis": "Sweden and Tunisia meet in a Group F contest that echoes their only previous World Cup encounter, a group stage match at the 2006 World Cup in Germany. On that occasion, Sweden edged a tight contest 1-0 in Berlin, with a late goal deciding the outcome. Both teams will remember that match as they prepare for another tense group stage battle twenty years later.\n\nSweden return to the World Cup with a squad boasting arguably the most lethal attacking talent in their history. Viktor Gyokeres and Alexander Isak have been terrorizing defenses across Europe, and their combination represents a quantum leap in Swedish attacking quality compared to recent squads. Tunisia, the Eagles of Carthage, are perennial African representatives at the World Cup and bring tactical discipline, defensive resilience, and the ability to frustrate superior opponents on paper. Their impressive 0-0 draw against Denmark and narrow 1-0 defeat to eventual finalists France at the 2022 World Cup demonstrated their competitive mettle.",
+  "keyStorylines": [
+    "A repeat of their 2006 World Cup meeting, where Sweden won 1-0 — Tunisia will be seeking revenge two decades later",
+    "Sweden's fearsome attacking trio of Gyokeres, Isak, and Kulusevski faces one of Africa's most organized defensive units",
+    "Tunisia's Youssef Msakni looks to lead the Eagles of Carthage to a famous victory against European opposition",
+    "A potential banana skin for Sweden if they underestimate Tunisia's defensive resilience and counter-attacking capability"
+  ],
+  "playersToWatch": [
+    {"name": "Alexander Isak", "teamCode": "SWE", "position": "Striker", "reason": "Newcastle's silky striker whose movement, touch, and finishing make him one of the Premier League's most complete forwards"},
+    {"name": "Youssef Msakni", "teamCode": "TUN", "position": "Forward", "reason": "Tunisia's most talented attacker whose creativity and dribbling ability can unlock defenses in moments of inspiration"},
+    {"name": "Anthony Elanga", "teamCode": "SWE", "position": "Left Winger", "reason": "The Nottingham Forest winger's pace and directness add another dimension to Sweden's already potent attack"},
+    {"name": "Aissa Laidouni", "teamCode": "TUN", "position": "Midfielder", "reason": "The tireless box-to-box midfielder whose energy and ball-winning ability are essential to Tunisia's compact defensive shape"}
+  ],
+  "tacticalPreview": "Sweden will approach this match as favorites and look to take the game to Tunisia with their attacking quality. Gyokeres and Isak will look to exploit spaces behind Tunisia's defensive line, while Kulusevski and Elanga provide width and crossing ability from the flanks. Sweden's challenge will be maintaining patience against a well-organized Tunisian defense that excels at denying space and frustrating opponents into taking low-percentage shots.\n\nTunisia's game plan will center on defensive organization and disciplined positional play. The Eagles of Carthage typically set up in a compact 4-3-3 or 4-2-3-1 that is difficult to break down, with Laidouni providing energy and ball-winning ability in central midfield. Msakni's quality on the ball gives Tunisia a genuine outlet on the counter-attack, and their ability to defend set pieces has improved significantly in recent tournaments. Tunisia will look to keep the score close and either steal a goal through a set piece or counter-attack, or take a valuable point from a 0-0 draw.",
+  "prediction": {
+    "predictedOutcome": "TEAM1",
+    "predictedScore": "2-0",
+    "confidence": 50,
+    "reasoning": "Sweden's vastly superior attacking talent should eventually break down Tunisia's defensive resistance. While Tunisia will make it difficult for the first hour, the quality of Gyokeres, Isak, and their supporting cast should prove the difference as the match wears on and Tunisia's energy levels drop.",
+    "alternativeScenario": "Tunisia could replicate their 2022 World Cup performance against Denmark with a resolute defensive display, earning a 0-0 draw or even snatching a 1-0 victory through a Msakni moment of magic on the counter-attack."
+  },
+  "pastEncountersSummary": "Sweden and Tunisia have met at the World Cup once before, at the 2006 tournament in Germany. Sweden won that encounter 1-0 in a tight Group H match in Berlin. Outside of that meeting, the two nations have had very limited competitive interactions, making their World Cup history the defining element of this head-to-head record.",
+  "funFacts": [
+    "Tunisia became the first African nation to win a match at a World Cup when they defeated Mexico 3-1 at the 1978 tournament in Argentina",
+    "Sweden's current strike partnership of Gyokeres and Isak combined for over 60 goals in European league football during the 2024-25 season",
+    "Tunisia have qualified for six World Cups, making them one of Africa's most consistent qualifiers alongside Cameroon and Nigeria",
+    "Sweden's 2018 World Cup squad reached the quarterfinals without Zlatan Ibrahimovic, proving the team's strength extends far beyond any individual star"
+  ],
+  "isFirstMeeting": false
+}

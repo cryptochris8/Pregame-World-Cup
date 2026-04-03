@@ -1,0 +1,33 @@
+{
+  "teamCode": "CUR",
+  "teamName": "Curacao",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "TBD",
+    "bestFinishYear": 2026,
+    "appearances": [
+      { "year": 2026, "result": "TBD", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0
+    },
+    "topScorers": [],
+    "notableMoments": [
+      "The 2026 World Cup marks Curacao's first ever appearance at a World Cup, a historic milestone for the island nation of approximately 150,000 people",
+      "Qualified through the CONCACAF pathway, becoming one of the smallest nations ever to reach the World Cup finals",
+      "Many of Curacao's players were born in the Netherlands to parents of Curacao heritage, leveraging the historical ties between the island and the Dutch football system",
+      "Curacao's football association was founded in 1921, making their 2026 World Cup qualification the culmination of over a century of football development",
+      "Previously competed as the Netherlands Antilles until 2010, when the country was dissolved and Curacao became a constituent country of the Kingdom of the Netherlands",
+      "The Bacuna brothers (Juninho and Leandro) and Vurnon Anita represent the highest level of talent ever assembled for a Curacao squad, with Premier League and Bundesliga experience",
+      "Cuco Martina's famous long-range goal against Arsenal while at Southampton remains one of the most iconic moments by a Curacao international in European football",
+      "The 2026 World Cup squad features players from leagues across Europe including the Eredivisie, Scottish Premiership, Belgian Pro League, and MLS, showcasing the diaspora's contribution"
+    ]
+  }
+}

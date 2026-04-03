@@ -1,0 +1,33 @@
+{
+  "teamCode": "JOR",
+  "teamName": "Jordan",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "TBD",
+    "bestFinishYear": 2026,
+    "appearances": [
+      { "year": 2026, "result": "TBD", "stage": "Group Stage" }
+    ],
+    "allTimeRecord": {
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0
+    },
+    "topScorers": [],
+    "notableMoments": [
+      "The 2026 World Cup marks Jordan's first ever appearance at a World Cup, a historic breakthrough for the nation's football program",
+      "Reached the 2023 Asian Cup final, losing to Qatar but announcing themselves as a serious force in Asian football with a series of stunning upset victories",
+      "The 2023 Asian Cup runners-up finish was the greatest achievement in Jordanian football history prior to their World Cup qualification",
+      "Jordan's football development has been driven by strong domestic institutions, with clubs like Al-Faisaly, Al-Wehdat, and Al-Ramtha forming the backbone of the national team",
+      "Mousa Al-Taamari has become the face of Jordanian football, with his performances in French football and for the national team inspiring a new generation of players",
+      "Yazan Al-Naimat's move to BSC Young Boys in Switzerland made him one of the first Jordanian players to establish himself in top European football",
+      "Jordan came agonizingly close to qualifying for the 2014 World Cup, losing an intercontinental playoff to Uruguay, making the 2026 qualification all the more meaningful",
+      "The Jordanian Football Association has invested heavily in youth development, and the 2026 World Cup squad represents the fruits of that long-term strategic planning"
+    ]
+  }
+}

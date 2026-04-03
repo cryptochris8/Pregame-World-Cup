@@ -1,0 +1,179 @@
+{
+  "players": {
+    "Raïs M'Bolhi": {
+      "bio": "A veteran goalkeeper who has been Algeria's last line of defense for over a decade, M'Bolhi was instrumental in the 2014 World Cup run and the 2019 Africa Cup of Nations triumph. His experience across multiple leagues gives him invaluable tournament know-how.",
+      "playingStyle": "Experienced shot-stopper with excellent reflexes, strong command of the penalty area, and vocal leadership to organize the defensive line",
+      "keyStrengths": ["Shot-stopping reflexes", "Experience in high-pressure tournament matches", "Penalty area command and organization"],
+      "worldCup2026Role": "Senior goalkeeper option whose vast international experience and calm demeanor in big games make him a vital presence in the squad",
+      "notableFact": "Made a string of outstanding saves in the 2014 World Cup Round of 16 against Germany, keeping Algeria competitive in one of the tournament's most thrilling matches"
+    },
+    "Aïssa Mandi": {
+      "bio": "A seasoned center-back who has plied his trade in La Liga with Villarreal and previously Real Betis, Mandi brings European top-flight experience and composure to Algeria's backline. His aerial prowess and reading of the game are key assets.",
+      "playingStyle": "Intelligent center-back who excels in positional play, aerial duels, and building from the back with composed passing under pressure",
+      "keyStrengths": ["Aerial dominance", "Positional intelligence", "Experience in La Liga"],
+      "worldCup2026Role": "Senior defensive leader who organizes the backline and provides invaluable experience in a squad mixing youth and veteran quality",
+      "notableFact": "Was part of the Algeria squad that won the 2019 Africa Cup of Nations in Egypt, a tournament where the defense was the cornerstone of their success"
+    },
+    "Ramy Bensebaini": {
+      "bio": "A powerful and versatile left-back who has excelled at Borussia Dortmund after a successful spell at Borussia Mönchengladbach, Bensebaini combines defensive solidity with a dangerous attacking threat. His ability to score crucial goals from left-back makes him unique.",
+      "playingStyle": "Athletic, attack-minded left-back with a powerful left foot, strong in the tackle, excellent at overlapping runs and delivering crosses into dangerous areas",
+      "keyStrengths": ["Powerful attacking runs from deep", "Goal threat from set pieces and open play", "Physical dominance in one-on-one duels"],
+      "worldCup2026Role": "Starting left-back and one of Algeria's most important players, capable of influencing matches at both ends of the pitch with his energy and quality",
+      "notableFact": "Scored a dramatic late winner against Bayern Munich in the Champions League while at Borussia Mönchengladbach, announcing himself on the European stage"
+    },
+    "Djamel Benlamri": {
+      "bio": "A tough, experienced center-back who has been a reliable presence in Algeria's defense across multiple tournaments. Benlamri brings old-school defensive grit and an uncompromising approach to the heart of the backline.",
+      "playingStyle": "Physical, aggressive center-back who thrives in aerial duels, last-ditch tackles, and marshaling the defensive line with vocal communication",
+      "keyStrengths": ["Aerial strength and physicality", "Aggressive tackling", "Leadership and defensive organization"],
+      "worldCup2026Role": "Experienced center-back option providing squad depth and defensive reliability, especially valuable in matches requiring a more physical approach",
+      "notableFact": "Was a key defender in Algeria's 2019 Africa Cup of Nations winning campaign, forming a solid partnership at the back throughout the tournament"
+    },
+    "Ismaël Bennacer": {
+      "bio": "One of the most technically gifted Algerian players of his generation, Bennacer is a midfield metronome at AC Milan. Named best player of the 2019 Africa Cup of Nations at just 21, he has established himself as one of Europe's finest deep-lying playmakers.",
+      "playingStyle": "Elegant deep-lying midfielder with exceptional passing range, press resistance, and the ability to dictate the tempo of a match from the base of midfield",
+      "keyStrengths": ["Press resistance and composure under pressure", "Long-range passing accuracy", "Ball retention and tempo control"],
+      "worldCup2026Role": "The creative heartbeat of Algeria's midfield, responsible for controlling possession and transitioning from defense to attack with his precise distribution",
+      "notableFact": "Won the Best Player award at the 2019 Africa Cup of Nations, where his commanding midfield performances were instrumental in Algeria's title triumph"
+    },
+    "Youcef Atal": {
+      "bio": "An explosive right-back with blistering pace and an eye for goal, Atal burst onto the scene at Nice in Ligue 1 before moving to Turkey. His ability to beat defenders in one-on-one situations makes him one of the most exciting fullbacks in African football.",
+      "playingStyle": "Pacey, dynamic right-back who loves to surge forward on the overlap, capable of playing as a winger, with excellent dribbling and finishing ability",
+      "keyStrengths": ["Explosive pace and acceleration", "Dribbling in tight spaces", "Goal-scoring ability from fullback"],
+      "worldCup2026Role": "Attacking right-back option who can change games with his pace and directness, ideal for matches where Algeria need to push forward",
+      "notableFact": "Scored a spectacular goal against Nigeria in the 2019 Africa Cup of Nations semifinal, cutting inside and curling a brilliant effort into the far corner"
+    },
+    "Riyad Mahrez": {
+      "bio": "Algeria's crown jewel and one of Africa's greatest ever players, Mahrez is a former Premier League champion with Leicester City and multiple-time winner with Manchester City. His silky left foot, dribbling wizardry, and big-game mentality make him Algeria's talisman.",
+      "playingStyle": "Sublime left-footed winger who drifts inside from the right, lethal at cutting onto his favored foot to curl shots or deliver killer passes, with mesmerizing close control",
+      "keyStrengths": ["Cutting inside onto his left foot", "World-class dribbling and close control", "Big-game experience at the highest level"],
+      "worldCup2026Role": "Captain and talismanic attacking leader whose experience, creativity, and ability to produce magic in decisive moments make him indispensable to Algeria's World Cup campaign",
+      "notableFact": "Scored a stunning free-kick in the 2019 Africa Cup of Nations semifinal against Nigeria to send Algeria to the final, one of the most iconic moments in Algerian football history"
+    },
+    "Houssem Aouar": {
+      "bio": "A stylish and creative midfielder who made his name at Olympique Lyonnais, Aouar chose to represent Algeria after being courted by France. His technical ability and vision in the final third add a new dimension to Algeria's midfield creativity.",
+      "playingStyle": "Technically gifted attacking midfielder with silky ball control, intelligent movement between the lines, and an eye for the killer pass in the final third",
+      "keyStrengths": ["Creative vision and through balls", "Technical skill in tight spaces", "Intelligent movement and positioning"],
+      "worldCup2026Role": "Key creative midfielder who links midfield and attack, capable of unlocking defenses with his passing and providing goals from advanced positions",
+      "notableFact": "Chose to represent Algeria over France at international level, and his Champions League semifinal experience with Lyon in 2020 demonstrated his ability on the biggest stages"
+    },
+    "Islam Slimani": {
+      "bio": "Algeria's all-time leading goalscorer, Slimani is a towering striker whose aerial ability and predatory instincts have terrorized defenses across Europe and beyond. His record at international level is unmatched in Algerian football history.",
+      "playingStyle": "Powerful target man with exceptional aerial ability, strong hold-up play, and clinical finishing in the penalty area, particularly effective from crosses and set pieces",
+      "keyStrengths": ["Aerial dominance and heading ability", "Clinical finishing", "Hold-up play and bringing others into the game"],
+      "worldCup2026Role": "Veteran striker and all-time top scorer whose physical presence and experience provide a crucial option, whether starting or as an impact substitute",
+      "notableFact": "Algeria's all-time leading scorer with over 40 international goals, including a memorable brace against South Korea at the 2014 World Cup in a famous 4-2 victory"
+    },
+    "Saïd Benrahma": {
+      "bio": "A flair player with dazzling technical skills, Benrahma made his name with his mesmerizing dribbling at Brentford and West Ham before moving to Lyon. Born in Algeria but raised in France, he brings Ligue 1 and Premier League experience to the attack.",
+      "playingStyle": "Tricky, inventive winger who loves to take on defenders, capable of producing moments of individual brilliance with his dribbling, quick feet, and creativity",
+      "keyStrengths": ["Exceptional dribbling and trickery", "Creativity in the final third", "Ability to beat defenders one-on-one"],
+      "worldCup2026Role": "Key attacking threat from the left wing whose unpredictability and individual quality can unlock tight defenses in tournament football",
+      "notableFact": "Scored a remarkable scorpion kick goal while at Brentford that went viral worldwide, showcasing the audacious skill that makes him such a thrilling player to watch"
+    },
+    "Amine Gouiri": {
+      "bio": "A rising star of Algerian football, Gouiri is a versatile forward who came through the Lyon academy and has impressed at Rennes with his intelligent movement and finishing. He chose Algeria over France, adding exciting young talent to the squad.",
+      "playingStyle": "Intelligent, mobile forward who can play as a striker or second striker, with excellent movement in the box, good link-up play, and a clinical left foot",
+      "keyStrengths": ["Intelligent movement and positioning", "Clinical finishing with either foot", "Versatility across the front line"],
+      "worldCup2026Role": "Dynamic forward option who provides tactical flexibility, capable of playing centrally or drifting wide to create overloads in the final third",
+      "notableFact": "A product of the famed Lyon academy, Gouiri chose to represent Algeria at international level and quickly became a key part of their attacking plans"
+    },
+    "Anthony Mandrea": {
+      "bio": "A young goalkeeper developing well in Ligue 1 with Auxerre, Mandrea represents the future of Algerian goalkeeping. His shot-stopping ability and composure with the ball at his feet have earned him a place in the national team squad.",
+      "playingStyle": "Modern goalkeeper comfortable with distribution, good reflexes, and improving command of the penalty area as he gains experience at the top level",
+      "keyStrengths": ["Shot-stopping ability", "Comfort with the ball at his feet", "Youth and potential for growth"],
+      "worldCup2026Role": "Young backup goalkeeper gaining invaluable experience by being part of a World Cup squad, providing competition and depth behind the first-choice keeper",
+      "notableFact": "Earned his place in the Algerian squad at a young age while playing regular first-team football in Ligue 1 with Auxerre"
+    },
+    "Mohamed Amine Amoura": {
+      "bio": "One of the most exciting young talents in Algerian football, Amoura has taken the Bundesliga by storm at VfL Wolfsburg with his explosive pace, directness, and eye for goal. He is rapidly becoming one of Africa's most coveted young attackers.",
+      "playingStyle": "Explosive, direct winger with searing pace, fearless willingness to take on defenders, and a growing end product in terms of goals and assists",
+      "keyStrengths": ["Blistering pace and acceleration", "Direct dribbling and willingness to take on defenders", "Improving goal-scoring record"],
+      "worldCup2026Role": "Exciting young attacking weapon whose pace and directness can terrorize defenders, ideal as a starter or game-changing substitute in the later stages",
+      "notableFact": "Made an instant impact in the Bundesliga with VfL Wolfsburg, quickly establishing himself as one of the league's most exciting wide players"
+    },
+    "Abdelkader Bedrane": {
+      "bio": "A dependable center-back with experience across North African and Tunisian football, Bedrane provides solid defensive cover and understanding of physical, attritional matches that are common in African qualifying campaigns.",
+      "playingStyle": "Reliable, no-nonsense center-back who prioritizes defensive duties, strong in the air, and disciplined in maintaining the defensive shape",
+      "keyStrengths": ["Aerial presence", "Defensive discipline", "Experience in competitive African football"],
+      "worldCup2026Role": "Squad depth option at center-back who provides reliability and composure when called upon, particularly in matches requiring a disciplined defensive approach",
+      "notableFact": "Has been a consistent presence in the Algerian defensive setup through multiple qualifying campaigns"
+    },
+    "Hicham Boudaoui": {
+      "bio": "A dynamic box-to-box midfielder who has impressed at OGC Nice in Ligue 1, Boudaoui combines energy, technical quality, and tactical intelligence. His ability to cover ground and contribute at both ends makes him vital to Algeria's engine room.",
+      "playingStyle": "Energetic box-to-box midfielder with excellent stamina, good passing ability, and the drive to support both defensive and attacking phases of play",
+      "keyStrengths": ["High energy and work rate", "Box-to-box running", "Tactical intelligence and positioning"],
+      "worldCup2026Role": "Key midfield presence whose tireless running and two-way play provide the balance and energy Algeria need in the center of the park",
+      "notableFact": "Has established himself as a regular starter at Nice in Ligue 1, earning plaudits for his consistent performances in one of Europe's top leagues"
+    },
+    "Farès Chaibi": {
+      "bio": "A young creative talent who has earned a move to Eintracht Frankfurt in the Bundesliga, Chaibi is one of the brightest prospects in Algerian football. His vision, technique, and ability to play between the lines mark him as a future star.",
+      "playingStyle": "Creative attacking midfielder with excellent vision, deft touch, and the ability to find pockets of space between opposition lines to create chances",
+      "keyStrengths": ["Creative vision and passing", "Ability to play between the lines", "Technical skill and composure on the ball"],
+      "worldCup2026Role": "Young creative talent who can change the dynamic of a match with his inventiveness, providing an alternative attacking option from midfield",
+      "notableFact": "Earned a move to Eintracht Frankfurt in the Bundesliga at a young age, reflecting his enormous potential as one of Algeria's most talented young players"
+    },
+    "Ilyes Chetti": {
+      "bio": "A solid left-back plying his trade in Ligue 1 with Montpellier, Chetti provides dependable defensive cover on the left side. His consistency and willingness to work hard make him a valuable squad member.",
+      "playingStyle": "Disciplined left-back who focuses on defensive duties, provides width when needed, and maintains good positional discipline throughout matches",
+      "keyStrengths": ["Defensive reliability", "Positional discipline", "Consistency and work ethic"],
+      "worldCup2026Role": "Backup left-back option who provides solid defensive cover and the ability to slot in seamlessly when rotation or tactical changes are needed",
+      "notableFact": "Has built a steady career in French football, earning regular minutes at Montpellier in one of Europe's most competitive leagues"
+    },
+    "Abdelhamid Sabiri": {
+      "bio": "A technically skilled central midfielder who has played in Serie A and Serie B with Sampdoria, Sabiri brings Italian tactical discipline and creative flair to Algeria's midfield options. His left foot and set-piece delivery are notable weapons.",
+      "playingStyle": "Technically adept midfielder with a cultured left foot, good set-piece delivery, and the ability to pick a pass through congested areas",
+      "keyStrengths": ["Left-footed passing quality", "Set-piece delivery", "Tactical awareness from Italian football"],
+      "worldCup2026Role": "Versatile midfield option whose technical quality and set-piece expertise provide an additional dimension from the bench or in rotation",
+      "notableFact": "Developed his craft in Italian football, known for its tactical demands, giving him a tactical education that benefits Algeria's midfield options"
+    },
+    "Baghdad Bounedjah": {
+      "bio": "A prolific goalscorer who has been a legend in Qatari football with Al-Sadd, Bounedjah scored the goal that won Algeria the 2019 Africa Cup of Nations. His poacher's instinct and big-game temperament make him a valuable asset.",
+      "playingStyle": "Clinical poacher with sharp movement in the penalty area, excellent finishing instincts, and the ability to score crucial goals in big moments",
+      "keyStrengths": ["Poacher's instinct and movement", "Clinical finishing", "Big-game mentality"],
+      "worldCup2026Role": "Experienced striker option whose scoring record at international level and proven ability in high-pressure moments make him a valuable squad member",
+      "notableFact": "Scored the only goal in the 2019 Africa Cup of Nations final against Senegal, firing Algeria to their second continental title with a spectacular long-range strike"
+    },
+    "Yacine Brahimi": {
+      "bio": "A veteran winger with silky skills honed at FC Porto and across European and Qatari football, Brahimi has been one of Algeria's most talented players for over a decade. His creativity and ability to unlock defenses remain valuable assets.",
+      "playingStyle": "Skillful, experienced winger with excellent close control, creative dribbling ability, and the vision to find teammates with precise final balls",
+      "keyStrengths": ["Dribbling and close control", "Creative passing and vision", "Experience across multiple leagues"],
+      "worldCup2026Role": "Veteran attacking option whose experience and technical quality provide a calming, creative presence, particularly useful in tight tournament matches",
+      "notableFact": "Named African Footballer of the Year in 2014 after a brilliant season with FC Porto and was part of Algeria's squad at the 2014 World Cup in Brazil"
+    },
+    "Alexandre Oukidja": {
+      "bio": "An experienced goalkeeper who has been a consistent performer in French football with Metz, Oukidja provides reliable depth in the goalkeeping department. His reflexes and shot-stopping ability have been developed over years in Ligue 1 and Ligue 2.",
+      "playingStyle": "Experienced, dependable goalkeeper with solid shot-stopping, good positioning, and the reliability that comes from years of regular football in France",
+      "keyStrengths": ["Shot-stopping consistency", "Positioning and angles", "Experience in French professional football"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced cover and a steady presence in training to push the other keepers in the squad",
+      "notableFact": "Has been a long-serving goalkeeper at Metz in French football, earning his place in the Algerian squad through consistent club performances"
+    },
+    "Adam Ounas": {
+      "bio": "A tricky winger with electric pace and superb dribbling skills, Ounas has played across Italian and French football and now plies his trade at Lille. His ability to beat defenders and create chances makes him a dangerous attacking weapon.",
+      "playingStyle": "Quick, skillful winger who loves to run at defenders with pace and trickery, capable of creating something from nothing with his dribbling and creativity",
+      "keyStrengths": ["Pace and acceleration", "Dribbling and beating defenders", "Creativity and chance creation"],
+      "worldCup2026Role": "Exciting attacking option from the bench whose pace and trickery can unsettle tired defenders in the later stages of matches",
+      "notableFact": "Scored a memorable goal against Nigeria in the Africa Cup of Nations, showcasing the kind of individual brilliance that makes him such a threat off the bench"
+    },
+    "Nabil Bentaleb": {
+      "bio": "A midfielder who made his name at Tottenham Hotspur in the Premier League before spells at Schalke and Lille, Bentaleb is one of the most experienced players in the Algerian squad. His composure and passing range make him a trusted midfield option.",
+      "playingStyle": "Composed central midfielder with an excellent passing range, tactical intelligence, and the ability to control the tempo of matches from a deep-lying position",
+      "keyStrengths": ["Passing range and distribution", "Tactical intelligence", "Premier League and top-flight European experience"],
+      "worldCup2026Role": "Experienced midfield option who can dictate the pace of play and provide a steadying influence in the center of the park when the team needs composure",
+      "notableFact": "Became Tottenham's youngest player in over a decade when he broke into their first team, and has since built a career spanning England, Germany, and France"
+    },
+    "Ramiz Zerrouki": {
+      "bio": "A powerful defensive midfielder who has developed into one of the Eredivisie's most consistent performers at Feyenoord, Zerrouki combines physical presence with technical quality. His ability to break up play and start attacks makes him a modern midfield anchor.",
+      "playingStyle": "Strong, physical defensive midfielder who excels at breaking up opposition attacks, winning aerial duels, and launching counter-attacks with incisive forward passes",
+      "keyStrengths": ["Physical presence and tackling", "Aerial ability for a midfielder", "Ball progression from deep"],
+      "worldCup2026Role": "Dynamic midfield enforcer whose physical presence and ball-winning ability provide a solid foundation for Algeria's more creative players to operate",
+      "notableFact": "Played a key role in Feyenoord's Eredivisie title-winning campaign, demonstrating his quality in one of Europe's most historic leagues"
+    },
+    "Adem Zorgane": {
+      "bio": "A young, technically gifted central midfielder who earned a move to Burnley in the Premier League, Zorgane represents the new generation of Algerian midfield talent. His composure on the ball and ability to play under pressure mark him out.",
+      "playingStyle": "Technically proficient central midfielder with good passing ability, composure under pressure, and the intelligence to find spaces and link play effectively",
+      "keyStrengths": ["Technical quality on the ball", "Composure under pressure", "Intelligent positioning and movement"],
+      "worldCup2026Role": "Promising young midfielder who adds depth and quality to the squad, with the potential to grow into a key player as the tournament progresses",
+      "notableFact": "Earned a move to the Premier League with Burnley, reflecting his rapid development as one of Algeria's most promising young midfielders"
+    }
+  }
+}

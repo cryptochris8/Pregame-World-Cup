@@ -1,0 +1,35 @@
+{
+  "team1Code": "BIH",
+  "team2Code": "SUI",
+  "team1Name": "Bosnia and Herzegovina",
+  "team2Name": "Switzerland",
+  "historicalAnalysis": "Bosnia and Herzegovina versus Switzerland carries a deeply personal significance that extends beyond football. Switzerland is home to one of the largest Bosnian diaspora communities in the world, with hundreds of thousands of Bosnians settling there during and after the 1990s conflict. Many Swiss national team players of Bosnian, Albanian, and broader Balkan heritage add layers of personal connection to this fixture, making it one of the most emotionally charged matchups in the group.\n\nOn the pitch, Switzerland have established themselves as one of Europe's most consistent performers over the past decade, regularly reaching the knockout stages of major tournaments including a remarkable run to the Euro 2020 quarterfinals where they eliminated France. Their squad depth, tactical discipline, and mental resilience make them formidable opponents. Bosnia, while less consistent at the tournament level, possess match-winners capable of beating any team on their day, led by the evergreen Edin Dzeko.",
+  "keyStorylines": [
+    "The large Bosnian diaspora in Switzerland creates split loyalties and an electric atmosphere whenever these neighbors meet",
+    "Switzerland's consistent tournament pedigree versus Bosnia's hunger to make their mark in only their second World Cup appearance",
+    "Granit Xhaka's leadership and experience in midfield will be crucial for Switzerland in controlling the tempo of this match",
+    "Anel Ahmedhodzic's defensive battle against Switzerland's fluid attacking movement could decide the outcome"
+  ],
+  "playersToWatch": [
+    {"name": "Granit Xhaka", "teamCode": "SUI", "position": "Midfielder", "reason": "Bayer Leverkusen's midfield general and Swiss captain whose passing range and tactical intelligence orchestrate everything Switzerland do"},
+    {"name": "Edin Džeko", "teamCode": "BIH", "position": "Striker", "reason": "Bosnia's all-time great whose hold-up play, finishing, and experience make him the reference point for every Bosnian attack"},
+    {"name": "Manuel Akanji", "teamCode": "SUI", "position": "Center Back", "reason": "Manchester City's ball-playing defender brings elite-level composure and distribution from the back line"},
+    {"name": "Anel Ahmedhodžić", "teamCode": "BIH", "position": "Center Back", "reason": "The Sheffield United defender's physical presence and reading of the game anchor Bosnia's defensive structure"}
+  ],
+  "tacticalPreview": "Switzerland's system is built on positional discipline and fluid attacking movements. Xhaka dictates the tempo from deep midfield, allowing fullbacks to push high and wide while the front players make intelligent runs between the lines. Their pressing is coordinated and intense, designed to win the ball high up the pitch and create chances in transition. Akanji's ability to step out from the back with the ball adds an extra dimension to their build-up play.\n\nBosnia will need to be pragmatic and disciplined to compete with Switzerland's technical quality. A compact 4-4-2 or 3-5-2 shape with Dzeko and a strike partner occupying Switzerland's center-backs could disrupt their build-up play. Bosnia's strength lies in their aerial ability at set pieces and their willingness to compete physically in midfield duels. Ahmedhodzic will need to marshal the defense expertly, particularly against Switzerland's movement between the lines that has troubled far more decorated defenses.",
+  "prediction": {
+    "predictedOutcome": "TEAM2",
+    "predictedScore": "2-1",
+    "confidence": 50,
+    "reasoning": "Switzerland's superior squad depth, tactical sophistication, and tournament experience give them the edge, but Bosnia's fighting spirit and Dzeko's quality mean this will not be comfortable. Expect Switzerland to prevail through their collective quality rather than individual brilliance.",
+    "alternativeScenario": "Bosnia could use their physical advantage at set pieces to take an early lead and then defend resolutely, frustrating Switzerland into a shock defeat as the Swiss chase the game and leave spaces for Bosnian counter-attacks."
+  },
+  "pastEncountersSummary": "Bosnia and Herzegovina and Switzerland have faced each other in competitive football on several occasions, including World Cup and European Championship qualifying campaigns. Switzerland have generally held the upper hand in these encounters, but Bosnia have proven capable of causing problems with their direct, physical approach. Their qualifying matches have typically been tense, hard-fought affairs reflective of the personal connections between the two nations.",
+  "funFacts": [
+    "An estimated 350,000 people of Bosnian origin live in Switzerland, making the Bosnian community one of the largest immigrant groups in the country",
+    "Switzerland have reached the knockout stages of four of the last five major tournaments they have participated in, establishing themselves as perennial contenders",
+    "Bosnia and Herzegovina's first-ever World Cup goal was scored by Edin Dzeko against Argentina in the 2014 tournament",
+    "Granit Xhaka's celebration gestures have sparked controversy in past tournaments due to the political sensitivities surrounding players of Balkan heritage in the Swiss squad"
+  ],
+  "isFirstMeeting": false
+}

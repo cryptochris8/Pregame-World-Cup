@@ -1,0 +1,35 @@
+{
+  "team1Code": "BIH",
+  "team2Code": "QAT",
+  "team1Name": "Bosnia and Herzegovina",
+  "team2Name": "Qatar",
+  "historicalAnalysis": "Bosnia and Herzegovina face Qatar in a Group B encounter that pits European grit against Asian ambition. Qatar's journey in international football has been remarkable, culminating in their hosting of the 2022 World Cup and their 2019 Asian Cup triumph that stunned the continent. Despite a disappointing showing as hosts in 2022, where they became the first host nation to lose all three group matches, Qatar have continued to invest heavily in their football infrastructure and development programs.\n\nBosnia bring a different pedigree to this matchup. Forged in the competitive cauldron of European qualifying, where every match is a battle, the Bosnians have developed a tough, no-nonsense style of play. Their 2014 World Cup debut in Brazil showed the world what this small Balkan nation was capable of, and with a squad still anchored by the legendary Edin Dzeko alongside emerging talent, they will fancy their chances of taking all three points from this fixture.",
+  "keyStorylines": [
+    "Qatar seek to prove their 2022 World Cup performance was an aberration and that they belong among the world's competitive nations",
+    "Edin Dzeko's vast European experience against Qatar's domestically-based squad creates an intriguing quality contrast",
+    "Akram Afif, the 2019 Asian Cup Golden Boot winner, leads Qatar's quest for their first-ever World Cup victory",
+    "A must-win match for both teams in a competitive Group B that also features Canada and Switzerland"
+  ],
+  "playersToWatch": [
+    {"name": "Edin Džeko", "teamCode": "BIH", "position": "Striker", "reason": "Bosnia's record goalscorer whose Champions League experience and intelligent movement make him the most dangerous player on the pitch"},
+    {"name": "Akram Afif", "teamCode": "QAT", "position": "Forward", "reason": "Qatar's star attacker and Asian Player of the Year whose creativity and goal-scoring ability are central to everything Qatar do offensively"},
+    {"name": "Haris Tabakovic", "teamCode": "BIH", "position": "Striker", "reason": "A prolific scorer in the Bundesliga who gives Bosnia additional firepower alongside the veteran Dzeko"},
+    {"name": "Almoez Ali", "teamCode": "QAT", "position": "Forward", "reason": "The Sudanese-born striker holds Asian Cup scoring records and brings pace and finishing to Qatar's attack"}
+  ],
+  "tacticalPreview": "Bosnia and Herzegovina will look to impose their physical superiority on this match from the outset. Their direct style of play, centered around getting the ball to Dzeko and supporting strikers as quickly as possible, can overwhelm teams that struggle with aerial duels and physical confrontations. The Bosnian midfield will aim to dominate the central areas and prevent Qatar from building their patient, possession-based attacks.\n\nQatar's approach under their coaching setup emphasizes technical football with quick passing combinations and movement off the ball. Akram Afif operates as the creative fulcrum, drifting into pockets of space to receive and distribute, while Almoez Ali makes runs in behind to stretch defenses. Qatar's challenge will be handling Bosnia's physicality in midfield transitions and defending set pieces, which has historically been a weakness for the Maroon.",
+  "prediction": {
+    "predictedOutcome": "TEAM1",
+    "predictedScore": "2-0",
+    "confidence": 55,
+    "reasoning": "Bosnia's superior individual quality, particularly in the striking department with Dzeko and Tabakovic, combined with their European competitive hardening, should prove too much for Qatar. The Qataris may struggle with Bosnia's physical approach and set-piece threat, areas that have troubled them in previous tournaments.",
+    "alternativeScenario": "Qatar could spring a surprise if they control possession effectively and exploit Bosnia's tendency to commit players forward. A disciplined defensive display followed by quick counter-attacks through Afif could result in a 1-1 draw or even a shock Qatari win."
+  },
+  "pastEncountersSummary": "Bosnia and Herzegovina and Qatar have very limited competitive history. Their few meetings have come in friendly matches and minor tournaments, with neither side having established any clear dominance. This World Cup group stage encounter represents by far their most significant meeting.",
+  "funFacts": [
+    "Qatar invested over $220 billion in infrastructure for the 2022 World Cup, making it the most expensive sporting event ever staged",
+    "Bosnia and Herzegovina's national team features players from three constituent entities, making squad unity a particular point of pride for the team",
+    "Akram Afif became the first Qatari player to win the Asian Player of the Year award, doing so in 2019 after leading Qatar to their first Asian Cup title",
+    "Bosnia's Edin Dzeko has played for some of Europe's biggest clubs including Manchester City, Roma, and Inter Milan, scoring over 300 career club goals"
+  ],
+  "isFirstMeeting": true
+}

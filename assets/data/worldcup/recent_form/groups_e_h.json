@@ -350,88 +350,88 @@
     }
   },
   "group_F": {
-    "IDN": {
-      "team_name": "Indonesia",
-      "fifa_code": "IDN",
+    "SWE": {
+      "team_name": "Sweden",
+      "fifa_code": "SWE",
       "recent_matches": [
         {
-          "date": "2024-09-05",
-          "opponent": "Saudi Arabia",
-          "score": "1-1",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "D",
-          "venue": "away"
-        },
-        {
-          "date": "2024-09-10",
-          "opponent": "Australia",
-          "score": "0-0",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "D",
-          "venue": "home"
-        },
-        {
-          "date": "2024-10-10",
-          "opponent": "Bahrain",
-          "score": "2-2",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "D",
-          "venue": "away"
-        },
-        {
-          "date": "2024-10-15",
-          "opponent": "China",
-          "score": "1-2",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "L",
-          "venue": "away"
-        },
-        {
-          "date": "2024-11-14",
-          "opponent": "Japan",
-          "score": "0-4",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "L",
-          "venue": "home"
-        },
-        {
-          "date": "2024-11-19",
-          "opponent": "Saudi Arabia",
-          "score": "2-0",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "W",
-          "venue": "home"
-        },
-        {
           "date": "2025-03-20",
-          "opponent": "Australia",
-          "score": "1-5",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
+          "opponent": "Slovakia",
+          "score": "3-1",
+          "competition": "UEFA Nations League",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-03-23",
+          "opponent": "Estonia",
+          "score": "2-0",
+          "competition": "UEFA Nations League",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-05",
+          "opponent": "Belgium",
+          "score": "1-3",
+          "competition": "UEFA World Cup Qualifier",
           "result": "L",
           "venue": "away"
         },
         {
-          "date": "2025-03-25",
-          "opponent": "Bahrain",
-          "score": "1-0",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
+          "date": "2025-09-08",
+          "opponent": "Azerbaijan",
+          "score": "4-0",
+          "competition": "UEFA World Cup Qualifier",
           "result": "W",
           "venue": "home"
         },
         {
-          "date": "2025-06-05",
-          "opponent": "China",
-          "score": "1-0",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
-          "result": "W",
+          "date": "2025-10-09",
+          "opponent": "Czechia",
+          "score": "1-1",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "D",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Belgium",
+          "score": "2-2",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "D",
           "venue": "home"
         },
         {
-          "date": "2025-06-10",
-          "opponent": "Japan",
-          "score": "0-6",
-          "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
+          "date": "2025-11-15",
+          "opponent": "Azerbaijan",
+          "score": "3-0",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Czechia",
+          "score": "1-2",
+          "competition": "UEFA World Cup Qualifier",
           "result": "L",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Serbia",
+          "score": "3-1",
+          "competition": "UEFA World Cup Play-Off Path B Semi-Final",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Austria",
+          "score": "2-1",
+          "competition": "UEFA World Cup Play-Off Path B Final",
+          "result": "W",
           "venue": "away"
         }
       ]

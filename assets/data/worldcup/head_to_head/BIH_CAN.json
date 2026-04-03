@@ -1,0 +1,39 @@
+{
+  "id": "BIH_CAN",
+  "team1Code": "BIH",
+  "team2Code": "CAN",
+  "totalMatches": 2,
+  "team1Wins": 1,
+  "team2Wins": 1,
+  "draws": 0,
+  "team1Goals": 3,
+  "team2Goals": 2,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2021-11-18",
+  "firstMeeting": "2008-05-27",
+  "notableMatches": [
+    {
+      "year": 2021,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "BIH",
+      "location": "Zenica, Bosnia and Herzegovina",
+      "description": "Bosnia edged Canada in a closely contested friendly match"
+    },
+    {
+      "year": 2008,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "CAN",
+      "location": "Toronto, Canada",
+      "description": "Canada won their first ever meeting with Bosnia and Herzegovina"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "teamCode": "RSA",
+  "teamName": "South Africa",
+  "worldCupHistory": {
+    "totalAppearances": 4,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "Group Stage",
+    "bestFinishYear": 1998,
+    "appearances": [
+      { "year": 1998, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2002, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2010, "result": "First Round", "stage": "Group Stage" },
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 9,
+      "won": 2,
+      "drawn": 3,
+      "lost": 4,
+      "goalsFor": 11,
+      "goalsAgainst": 15
+    },
+    "topScorers": [
+      { "name": "Benni McCarthy", "goals": 3, "tournaments": "1998, 2002" },
+      { "name": "Siphiwe Tshabalala", "goals": 1, "tournaments": "2010" },
+      { "name": "Shaun Bartlett", "goals": 2, "tournaments": "1998, 2002" },
+      { "name": "Lucas Radebe", "goals": 0, "tournaments": "1998, 2002" }
+    ],
+    "notableMoments": [
+      "Hosted the 2010 World Cup, becoming the first African nation to stage the tournament, an event that united the nation and captivated the world",
+      "Siphiwe Tshabalala scored the opening goal of the 2010 World Cup against Mexico, one of the most iconic moments in South African sporting history",
+      "Known as Bafana Bafana ('The Boys'), the team has been a symbol of post-apartheid South African pride and unity since readmission to international football in 1992",
+      "First World Cup appearance in 1998 in France, just four years after the end of apartheid, was a powerful symbol of South Africa's return to the global stage",
+      "Despite hosting the 2010 World Cup, South Africa became the first host nation in tournament history to be eliminated in the group stage",
+      "Won the 1996 Africa Cup of Nations on home soil, a triumph that galvanized the newly democratic nation and demonstrated football's power to unite",
+      "The vuvuzela, made famous worldwide during the 2010 World Cup, became one of the most recognizable symbols of South African football culture",
+      "Qualifying for the 2026 World Cup marks Bafana Bafana's return to the tournament for the first time since hosting in 2010, ending a 16-year absence"
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "players": {
+    "Jalal Hassan": {
+      "bio": "The veteran goalkeeper and captain of Iraq's national team, Jalal Hassan has been the last line of defense for the Lions of Mesopotamia for over a decade. His shot-stopping ability and commanding presence have made him a legend of Iraqi football.",
+      "playingStyle": "Experienced, commanding goalkeeper with excellent shot-stopping reflexes, vocal leadership, and the ability to organize the defense under pressure",
+      "keyStrengths": ["Shot-stopping ability and reflexes", "Vocal leadership and defensive organization", "Experience and big-match temperament"],
+      "worldCup2026Role": "Starting goalkeeper and squad captain; his decades of experience with the national team make him the emotional and tactical leader of Iraq's historic return to the World Cup",
+      "notableFact": "One of the most capped players in Iraqi football history, having served the national team through some of the most challenging periods in the country's sporting history"
+    },
+    "Ahmed Ibrahim": {
+      "bio": "A reliable right-back who has been a consistent performer in the Iraqi Premier League with Al-Quwa Al-Jawiya. Ibrahim's defensive discipline and experience make him a dependable figure in Iraq's backline.",
+      "playingStyle": "Disciplined, reliable right-back with good defensive positioning, consistent tackling, and the experience to manage wide areas effectively",
+      "keyStrengths": ["Defensive positioning and discipline", "Tackling and one-on-one defending", "Experience in Iraqi football"],
+      "worldCup2026Role": "Starting right-back who provides defensive solidity and organization; his familiarity with the national team system makes him an integral part of the defensive unit",
+      "notableFact": "A regular at Al-Quwa Al-Jawiya, one of Iraq's most successful clubs, and a fixture in the national team defense across multiple qualifying campaigns"
+    },
+    "Ali Adnan": {
+      "bio": "One of the most talented players Iraq has produced, Ali Adnan is a skillful left-back with experience in European football and the Gulf leagues. His overlapping runs, crossing ability, and set-piece prowess have made him one of the most decorated Iraqi players of his generation.",
+      "playingStyle": "Attack-minded left-back with exceptional crossing ability, dangerous free-kick delivery, and the technical skill to contribute significantly to Iraq's attacking play",
+      "keyStrengths": ["Crossing and set-piece delivery", "Attacking overlapping runs", "Technical ability for a defender"],
+      "worldCup2026Role": "Starting left-back and set-piece specialist; his attacking quality and experience across European and Gulf football make him one of Iraq's most important and versatile players",
+      "notableFact": "Has played in Serie A with Udinese and in MLS with Vancouver Whitecaps, making him one of the few Iraqi players to compete in major European and North American leagues"
+    },
+    "Ibrahim Bayesh": {
+      "bio": "A tenacious defensive midfielder who anchors Iraq's midfield with his ball-winning ability and tireless running. Bayesh has been a key figure at Al-Zawraa and in the national team, providing the defensive shield that allows more creative players to flourish.",
+      "playingStyle": "Combative, energetic defensive midfielder who excels at breaking up opposition attacks, covering ground quickly, and providing simple, effective distribution",
+      "keyStrengths": ["Ball-winning and tackling", "Energy and ground coverage", "Defensive screening and positioning"],
+      "worldCup2026Role": "Starting defensive midfielder who provides the crucial balance between attack and defense; his tireless work rate allows Iraq's attacking players the freedom to express themselves",
+      "notableFact": "Has been one of the most consistent performers in the Iraqi Premier League and a regular in the national team across the entire 2026 qualification campaign"
+    },
+    "Safaa Hadi": {
+      "bio": "A veteran center-back and defensive rock who has been a mainstay of the Iraqi national team for years. Hadi's aerial dominance, defensive experience, and leadership from the back make him essential to Iraq's World Cup hopes.",
+      "playingStyle": "Strong, experienced center-back who excels in aerial duels, physical defending, and organizing the defensive line through vocal leadership and positional intelligence",
+      "keyStrengths": ["Aerial dominance and heading", "Physical defending and strength", "Leadership and defensive organization"],
+      "worldCup2026Role": "Starting center-back and defensive leader; his experience and aerial prowess are vital for Iraq's defensive stability at the World Cup",
+      "notableFact": "One of the most capped defenders in recent Iraqi football history, having represented the country through its rise back to World Cup contention"
+    },
+    "Ali Faez": {
+      "bio": "A creative and experienced midfielder who has been an important playmaker for both Al-Shorta and the Iraqi national team. Faez's passing ability and set-piece expertise add a creative dimension to Iraq's midfield.",
+      "playingStyle": "Creative central midfielder with good passing range, intelligent movement, and the ability to deliver dangerous set pieces and through balls",
+      "keyStrengths": ["Passing range and creativity", "Set-piece delivery", "Experience and game intelligence"],
+      "worldCup2026Role": "Experienced midfield option whose creativity and set-piece ability provide a different dimension; his understanding of the national team system makes him a reliable rotation player",
+      "notableFact": "Has been a loyal servant to both Al-Shorta and the national team, contributing consistently with goals and assists across many years"
+    },
+    "Hussein Ali": {
+      "bio": "A technically gifted midfielder who has taken his talents to European football with Malmo FF in Sweden. Hussein Ali's time in Scandinavian football has refined his tactical understanding and given Iraq a European-educated midfielder.",
+      "playingStyle": "Technical, intelligent midfielder with good ball control, vision to find teammates with incisive passes, and developing tactical awareness from European football",
+      "keyStrengths": ["Technical ability and ball control", "Passing and vision", "European football experience"],
+      "worldCup2026Role": "Key midfield creative force whose European experience adds tactical sophistication; his ability to control the ball and find passes under pressure is crucial for Iraq's possession game",
+      "notableFact": "One of the few Iraqi players currently playing in European football, his move to Malmo FF marked an important step in Iraq's growing football connections with Europe"
+    },
+    "Mohammed Dawood": {
+      "bio": "A hardworking central midfielder who has been a consistent performer at Al-Zawraa in the Iraqi Premier League. Dawood's energy, passing ability, and defensive contribution make him a reliable option in the middle of the park.",
+      "playingStyle": "Industrious box-to-box midfielder with good stamina, reliable passing, and the willingness to contribute in both attacking and defensive phases",
+      "keyStrengths": ["Work rate and stamina", "Passing accuracy and reliability", "Defensive contribution from midfield"],
+      "worldCup2026Role": "Dependable midfield rotation option whose work ethic and reliability make him ideal for specific tactical setups requiring additional midfield industry",
+      "notableFact": "A product of Al-Zawraa's development system, Dawood represents the strong domestic foundation underpinning Iraq's national team"
+    },
+    "Aymen Hussein": {
+      "bio": "Iraq's prolific goal-scoring machine, Aymen Hussein is one of the most feared strikers in Asian football. His combination of physical power, aerial ability, and clinical finishing has produced a remarkable goal-scoring record for the national team, making him the spearhead of Iraq's World Cup attack.",
+      "playingStyle": "Powerful, predatory striker with lethal finishing inside the box, strong aerial ability, and the physical presence to hold off defenders and create space for teammates",
+      "keyStrengths": ["Clinical finishing and goal-scoring instinct", "Aerial ability and heading power", "Physical strength and hold-up play"],
+      "worldCup2026Role": "Starting striker and the most important attacking player; his prolific goal-scoring record makes him the player Iraq depend on most to find the net at the World Cup",
+      "notableFact": "One of the top scorers in Iraqi football history with over 30 international goals, Aymen Hussein has been the nation's most reliable goal threat for several years"
+    },
+    "Mohanad Ali": {
+      "bio": "The jewel of Iraqi football, Mohanad Ali burst onto the scene as a teenager with breathtaking performances at the Asian Cup. His pace, dribbling ability, and eye for goal make him one of the most exciting talents in Asian football and Iraq's biggest star on the world stage.",
+      "playingStyle": "Explosive, skillful winger with devastating pace, excellent dribbling in tight spaces, and the ability to score spectacular goals with either foot",
+      "keyStrengths": ["Blistering pace and acceleration", "Dribbling and skill in one-on-one situations", "Goal-scoring ability from wide positions"],
+      "worldCup2026Role": "Starting left winger and creative talisman; his individual brilliance and ability to create something from nothing make him the player who can change any game for Iraq",
+      "notableFact": "Burst onto the international scene as a teenager at the Asian Cup, immediately drawing comparisons to some of the greatest players in Iraqi football history"
+    },
+    "Amjad Attwan": {
+      "bio": "A pacy, exciting right winger who has been a consistent performer for Al-Quwa Al-Jawiya and the national team. Attwan's directness and goal-scoring ability from the flanks give Iraq a dangerous outlet on the right side.",
+      "playingStyle": "Quick, direct right winger who uses pace and dribbling to beat defenders, cutting inside to shoot or delivering dangerous crosses from wide areas",
+      "keyStrengths": ["Pace and directness", "Goal-scoring from wide positions", "Crossing and delivery"],
+      "worldCup2026Role": "Starting right winger who stretches defenses with his pace; his goal contributions from wide areas make him an important part of Iraq's attacking balance",
+      "notableFact": "Has been one of the most productive wingers in the Iraqi Premier League, combining goals and assists consistently for Al-Quwa Al-Jawiya"
+    },
+    "Mohammed Hameed": {
+      "bio": "A backup goalkeeper playing in the Iraqi Premier League with Al-Talaba. Hameed provides reliable goalkeeping depth behind the experienced Jalal Hassan.",
+      "playingStyle": "Dependable backup goalkeeper with good reflexes, developing game management skills, and the ambition to challenge for the starting position",
+      "keyStrengths": ["Reflexes and shot-stopping", "Developing game management", "Squad contribution and team spirit"],
+      "worldCup2026Role": "Second-choice goalkeeper providing reliable depth; his domestic league experience ensures Iraq have solid backup behind their captain in goal",
+      "notableFact": "Part of the new generation of Iraqi goalkeepers developing in the domestic league system behind the experienced Jalal Hassan"
+    },
+    "Rebin Sulaka": {
+      "bio": "An experienced center-back who has taken his career to European football with Sarpsborg 08 in Norway. Sulaka's physical presence, aerial ability, and experience across multiple leagues make him one of Iraq's most reliable defenders.",
+      "playingStyle": "Strong, physical center-back with excellent aerial ability, aggressive defending style, and the adaptability gained from playing in European football",
+      "keyStrengths": ["Aerial dominance and physical defending", "European football experience and adaptability", "Aggressive, front-foot defending"],
+      "worldCup2026Role": "Starting center-back partner for Safaa Hadi; his European experience adds an important dimension to Iraq's defense and his aerial presence is crucial for set pieces at both ends",
+      "notableFact": "One of the few Iraqi defenders playing in European football, his career at Sarpsborg 08 has given him valuable experience competing at a higher level"
+    },
+    "Saad Natiq": {
+      "bio": "A dependable center-back playing for Al-Shorta in the Iraqi Premier League. Natiq's consistent defending and physical attributes provide valuable depth to Iraq's central defensive options.",
+      "playingStyle": "Solid, reliable center-back with good marking ability, physical presence, and the discipline to hold his position within the defensive line",
+      "keyStrengths": ["Marking and defensive discipline", "Physical presence and aerial ability", "Consistency and reliability"],
+      "worldCup2026Role": "Defensive depth option at center-back; his familiarity with the national team setup and reliable defending make him a trusted squad member",
+      "notableFact": "A regular at one of Iraq's most prestigious clubs, Al-Shorta, contributing to their domestic success while serving the national team"
+    },
+    "Dhurgham Ismail": {
+      "bio": "One of the most experienced players in the Iraqi squad, Dhurgham Ismail is a veteran defensive midfielder who has served the national team with distinction for over a decade. His reading of the game and positional intelligence are second to none in Iraqi football.",
+      "playingStyle": "Highly experienced holding midfielder with exceptional positional awareness, composed distribution, and the intelligence to read the game and intercept attacks before they develop",
+      "keyStrengths": ["Positional intelligence and game reading", "Composed passing under pressure", "Experience and leadership"],
+      "worldCup2026Role": "Veteran midfield option whose vast experience brings calm and control to high-pressure situations; his ability to manage games from deep midfield is invaluable in tournament football",
+      "notableFact": "One of the most capped players in the current squad, having been a fixture in the Iraqi midfield through the country's long journey back to the World Cup"
+    },
+    "Hussein El-Saedi": {
+      "bio": "A creative attacking midfielder playing for Al-Quwa Al-Jawiya in the Iraqi Premier League. El-Saedi's technical ability and eye for a pass make him an exciting creative option behind the strikers.",
+      "playingStyle": "Creative, technically gifted attacking midfielder with good vision, clever movement between the lines, and the ability to deliver the final pass",
+      "keyStrengths": ["Creativity and vision", "Movement between defensive lines", "Technical ability and passing"],
+      "worldCup2026Role": "Creative midfield option who can change games with his passing and vision; his ability to operate between the lines gives Iraq a different attacking dimension",
+      "notableFact": "One of the most gifted young playmakers in Iraqi domestic football, representing the next generation of creative talent in the national team"
+    },
+    "Alaa Abbas": {
+      "bio": "A prolific striker who has been one of the most consistent goalscorers in the Iraqi Premier League with Al-Shorta. Abbas brings a clinical finishing touch and proven domestic scoring record to Iraq's forward options.",
+      "playingStyle": "Clinical, instinctive striker with sharp movement in the box, a keen eye for goal, and the ability to finish with composure under pressure",
+      "keyStrengths": ["Clinical finishing and goal-scoring", "Sharp movement in the penalty area", "Composure in front of goal"],
+      "worldCup2026Role": "Key backup striker whose domestic goal-scoring record makes him a reliable alternative to Aymen Hussein; his sharp finishing provides a proven option from the bench",
+      "notableFact": "One of the top scorers in the Iraqi Premier League in recent seasons, with a goal-scoring record that rivals any striker in the domestic game"
+    },
+    "Ayman Ashraf": {
+      "bio": "A steady right-back playing in the Iraqi Premier League with Al-Karkh. Ashraf provides additional depth on the right side of defense with his defensive discipline and reliable performances.",
+      "playingStyle": "Dependable, defensively focused right-back with good positioning, disciplined marking, and the ability to do the simple things well consistently",
+      "keyStrengths": ["Defensive discipline and positioning", "Reliable marking and tackling", "Consistency and dependability"],
+      "worldCup2026Role": "Backup right-back providing squad depth; his reliability and defensive focus make him a useful option when Iraq need to protect a lead",
+      "notableFact": "A product of the Iraqi domestic league who has earned his place in the national team through consistent performances at club level"
+    },
+    "Mohammed Qasim": {
+      "bio": "A young left-back playing for Al-Zawraa in the Iraqi Premier League. Qasim's pace and attacking instincts give Iraq a dynamic alternative on the left side of defense.",
+      "playingStyle": "Young, pacey left-back with good attacking instincts, ability to overlap and deliver crosses, and developing defensive awareness",
+      "keyStrengths": ["Pace and overlapping runs", "Crossing ability", "Youth and energy"],
+      "worldCup2026Role": "Left-back rotation option who provides a more attacking alternative; his pace and energy make him useful when Iraq need to push forward",
+      "notableFact": "Part of the next generation of Iraqi defenders developing at Al-Zawraa, one of the country's most successful academy programs"
+    },
+    "Yousif Amyn": {
+      "bio": "An exciting young right winger playing for Al-Quwa Al-Jawiya. Amyn's pace, dribbling ability, and left-footed shooting make him one of the most promising young attackers in Iraqi football.",
+      "playingStyle": "Quick, left-footed winger who plays on the right and likes to cut inside, with good dribbling skills and developing end product",
+      "keyStrengths": ["Pace and dribbling", "Left-footed shooting from the right", "Youth and fearlessness"],
+      "worldCup2026Role": "Young attacking prospect gaining invaluable World Cup experience; his pace and directness make him a useful impact substitute in attacking situations",
+      "notableFact": "One of the youngest players in the Iraq squad, representing the exciting future of Iraqi football on the world stage"
+    },
+    "Ahmed Yaseen Gheni": {
+      "bio": "An experienced goalkeeper providing additional depth behind Jalal Hassan and Mohammed Hameed. Gheni's years of domestic football experience make him a reliable third-choice option.",
+      "playingStyle": "Experienced, reliable goalkeeper with good positioning, safe handling, and the composure that comes from years of professional football",
+      "keyStrengths": ["Experience and composure", "Positioning and handling", "Reliability"],
+      "worldCup2026Role": "Third-choice goalkeeper providing experienced depth; his veteran presence adds stability to the goalkeeping department",
+      "notableFact": "A long-serving member of the Iraqi football community, providing continuity and experience in the national team goalkeeping group"
+    },
+    "Manaf Younis": {
+      "bio": "A young center-back playing for Erbil FC in the Iraqi Premier League. Younis represents the next generation of Iraqi defensive talent, with his physical attributes and developing skills earning him a place in the World Cup squad.",
+      "playingStyle": "Young, physically imposing center-back with good aerial ability, strong tackling, and developing positional awareness",
+      "keyStrengths": ["Physical presence and height", "Aerial ability", "Youth and development potential"],
+      "worldCup2026Role": "Young defensive prospect gaining World Cup experience; his physical attributes make him a future cornerstone of Iraq's defense",
+      "notableFact": "Hails from Erbil in Iraqi Kurdistan, representing the geographic diversity of talent that makes up the Iraqi national team"
+    },
+    "Justin Meram": {
+      "bio": "An experienced MLS veteran who has had a long and successful career in American football, most notably with Columbus Crew and Austin FC. Born in Iraq and raised in the United States, Meram brings MLS quality and a deep emotional connection to representing his birth country.",
+      "playingStyle": "Experienced, intelligent left winger with good crossing ability, clever movement, and the tactical awareness gained from over a decade of MLS experience",
+      "keyStrengths": ["MLS experience and consistency", "Crossing and delivery from the left", "Intelligence and tactical awareness"],
+      "worldCup2026Role": "Veteran wide option whose MLS experience and deep personal connection to Iraq make him an emotional and tactical asset; his ability to deliver quality from wide areas adds another dimension",
+      "notableFact": "Born in Iraq and emigrated to the United States as a child, Meram's decision to represent Iraq internationally has made him a beloved figure who bridges the Iraqi diaspora and the homeland"
+    }
+  }
+}

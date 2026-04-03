@@ -103,72 +103,88 @@
       ],
       "form_summary": "W5 D2 L2 (last 9 matches). Qualified via CAF World Cup qualifiers. Strong AFCON 2025 group stage before Round of 16 exit."
     },
-    "DEN": {
-      "team_name": "Denmark",
-      "fifa_code": "DEN",
+    "CZE": {
+      "team_name": "Czechia",
+      "fifa_code": "CZE",
       "recent_matches": [
         {
           "date": "2025-03-20",
-          "opponent": "Portugal",
-          "score": "1-0",
-          "competition": "UEFA Nations League QF 1st Leg",
-          "result": "W",
+          "opponent": "Ukraine",
+          "score": "1-1",
+          "competition": "UEFA Nations League",
+          "result": "D",
           "venue": "home"
         },
         {
           "date": "2025-03-23",
-          "opponent": "Portugal",
-          "score": "2-5",
-          "competition": "UEFA Nations League QF 2nd Leg (L 3-5 agg)",
-          "result": "L",
+          "opponent": "Georgia",
+          "score": "2-0",
+          "competition": "UEFA Nations League",
+          "result": "W",
           "venue": "away"
         },
         {
           "date": "2025-09-05",
-          "opponent": "Scotland",
-          "score": "0-0",
+          "opponent": "Portugal",
+          "score": "0-2",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Faroe Islands",
+          "score": "3-0",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Sweden",
+          "score": "1-1",
           "competition": "UEFA World Cup Qualifier",
           "result": "D",
           "venue": "home"
         },
         {
-          "date": "2025-09-08",
-          "opponent": "Greece",
-          "score": "3-0",
-          "competition": "UEFA World Cup Qualifier",
-          "result": "W",
-          "venue": "away"
-        },
-        {
-          "date": "2025-10-09",
-          "opponent": "Belarus",
-          "score": "6-0",
-          "competition": "UEFA World Cup Qualifier",
-          "result": "W",
-          "venue": "away"
-        },
-        {
           "date": "2025-10-12",
-          "opponent": "Greece",
-          "score": "3-1",
+          "opponent": "Portugal",
+          "score": "1-3",
           "competition": "UEFA World Cup Qualifier",
-          "result": "W",
+          "result": "L",
           "venue": "home"
         },
         {
           "date": "2025-11-15",
-          "opponent": "Belarus",
-          "score": "2-2",
+          "opponent": "Faroe Islands",
+          "score": "2-0",
           "competition": "UEFA World Cup Qualifier",
-          "result": "D",
-          "venue": "home"
+          "result": "W",
+          "venue": "away"
         },
         {
           "date": "2025-11-18",
-          "opponent": "Scotland",
-          "score": "2-4",
+          "opponent": "Sweden",
+          "score": "2-1",
           "competition": "UEFA World Cup Qualifier",
-          "result": "L",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Wales",
+          "score": "2-1",
+          "competition": "UEFA World Cup Play-Off Path D Semi-Final",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Iceland",
+          "score": "1-0",
+          "competition": "UEFA World Cup Play-Off Path D Final",
+          "result": "W",
           "venue": "away"
         }
       ]
@@ -430,91 +446,89 @@
       ],
       "form_summary": "W6 D1 L2 (last 9 matches). Reached highest-ever world ranking of 28th in July 2025. Strong Gold Cup group stage before QF exit."
     },
-    "ITA": {
-      "team_name": "Italy",
-      "fifa_code": "ITA",
+    "BIH": {
+      "team_name": "Bosnia and Herzegovina",
+      "fifa_code": "BIH",
       "recent_matches": [
         {
           "date": "2025-03-20",
-          "opponent": "Germany",
-          "score": "2-1",
-          "competition": "UEFA Nations League Quarterfinal (1st Leg)",
-          "result": "W",
+          "opponent": "Hungary",
+          "score": "0-2",
+          "competition": "UEFA Nations League",
+          "result": "L",
           "venue": "away"
         },
         {
           "date": "2025-03-23",
-          "opponent": "Germany",
-          "score": "3-3",
-          "competition": "UEFA Nations League Quarterfinal (2nd Leg)",
-          "result": "L",
-          "venue": "home",
-          "notes": "Germany won on away goals; aggregate 4-5"
-        },
-        {
-          "date": "2025-06-06",
-          "opponent": "Norway",
-          "score": "0-3",
-          "competition": "World Cup Qualifying - UEFA",
-          "result": "L",
-          "venue": "away"
-        },
-        {
-          "date": "2025-06-09",
-          "opponent": "Moldova",
-          "score": "2-0",
-          "competition": "World Cup Qualifying - UEFA",
+          "opponent": "Montenegro",
+          "score": "2-1",
+          "competition": "UEFA Nations League",
           "result": "W",
           "venue": "home"
         },
         {
           "date": "2025-09-05",
-          "opponent": "Estonia",
-          "score": "5-0",
-          "competition": "World Cup Qualifying - UEFA",
-          "result": "W",
+          "opponent": "Hungary",
+          "score": "1-1",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "D",
           "venue": "home"
         },
         {
           "date": "2025-09-08",
-          "opponent": "Israel",
-          "score": "5-4",
-          "competition": "World Cup Qualifying - UEFA",
-          "result": "W",
-          "venue": "away",
-          "notes": "Played in Debrecen, Hungary"
-        },
-        {
-          "date": "2025-10-11",
-          "opponent": "Estonia",
-          "score": "3-1",
-          "competition": "World Cup Qualifying - UEFA",
-          "result": "W",
-          "venue": "away"
-        },
-        {
-          "date": "2025-10-14",
-          "opponent": "Israel",
+          "opponent": "Liechtenstein",
           "score": "3-0",
-          "competition": "World Cup Qualifying - UEFA",
-          "result": "W",
-          "venue": "home"
-        },
-        {
-          "date": "2025-11-13",
-          "opponent": "Moldova",
-          "score": "2-0",
-          "competition": "World Cup Qualifying - UEFA",
+          "competition": "UEFA World Cup Qualifier",
           "result": "W",
           "venue": "away"
         },
         {
-          "date": "2025-11-16",
-          "opponent": "Norway",
-          "score": "1-4",
-          "competition": "World Cup Qualifying - UEFA",
+          "date": "2025-10-09",
+          "opponent": "Netherlands",
+          "score": "0-3",
+          "competition": "UEFA World Cup Qualifier",
           "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Liechtenstein",
+          "score": "2-0",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "W",
           "venue": "home"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Hungary",
+          "score": "0-2",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "L",
+          "venue": "away"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Netherlands",
+          "score": "1-1",
+          "competition": "UEFA World Cup Qualifier",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Slovakia",
+          "score": "2-1",
+          "competition": "UEFA World Cup Play-Off Path A Semi-Final",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Turkey",
+          "score": "1-0",
+          "competition": "UEFA World Cup Play-Off Path A Final",
+          "result": "W",
+          "venue": "away"
         }
       ]
     },

@@ -1,0 +1,21 @@
+{
+  "id": "manager_cze",
+  "firstName": "Ivan",
+  "lastName": "Hasek",
+  "commonName": "Ivan Hasek",
+  "dateOfBirth": "1963-09-06",
+  "nationality": "Czech Republic",
+  "currentTeam": "Czechia",
+  "currentTeamCode": "CZE",
+  "photoUrl": "assets/managers/hasek.png",
+  "preferredFormation": "3-5-2",
+  "coachingStyle": "Defensive",
+  "yearsExperience": 25,
+  "previousTeams": ["Sparta Prague", "Czech Republic (2009-2010)", "Al-Hilal", "Zamalek", "Olympique de Khouribga", "FK Pribram"],
+  "trophies": ["Czech First League (Sparta Prague)", "Czech Cup (Sparta Prague)"],
+  "careerWins": 140,
+  "careerDraws": 70,
+  "careerLosses": 95,
+  "careerWinPercentage": 46,
+  "bio": "Former Czech international and Sparta Prague legend who took charge of the national team for a second stint in 2024. Guided Czechia through a dramatic UEFA play-off campaign to the 2026 World Cup, beating both Ireland and Denmark on penalties. Known for his pragmatic, defensively solid approach and deep knowledge of Czech football."
+}

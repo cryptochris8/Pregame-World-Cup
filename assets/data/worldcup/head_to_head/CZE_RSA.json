@@ -1,0 +1,39 @@
+{
+  "id": "CZE_RSA",
+  "team1Code": "CZE",
+  "team2Code": "RSA",
+  "totalMatches": 3,
+  "team1Wins": 2,
+  "team2Wins": 0,
+  "draws": 1,
+  "team1Goals": 5,
+  "team2Goals": 1,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2009-11-18",
+  "firstMeeting": "1998-04-22",
+  "notableMatches": [
+    {
+      "year": 2009,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "CZE",
+      "location": "Prague, Czechia",
+      "description": "Czechia comfortably beat South Africa in their most recent meeting"
+    },
+    {
+      "year": 1998,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Johannesburg, South Africa",
+      "description": "The first ever meeting between the two nations ended in a draw"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamCode": "CPV",
+  "teamName": "Cabo Verde",
+  "worldCupHistory": {
+    "totalAppearances": 1,
+    "titles": 0,
+    "titleYears": [],
+    "bestFinish": "TBD",
+    "bestFinishYear": 2026,
+    "appearances": [
+      { "year": 2026, "result": "TBD", "stage": "TBD" }
+    ],
+    "allTimeRecord": {
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0
+    },
+    "topScorers": [],
+    "notableMoments": [
+      "Qualified for the 2026 World Cup, their first ever appearance at the tournament — one of the greatest achievements in the history of small-nation football",
+      "With a population of approximately 600,000, Cabo Verde became one of the smallest nations ever to qualify for a World Cup, an extraordinary underdog story",
+      "The island nation off the west coast of Africa has built its squad from diaspora players scattered across European leagues, particularly in Portugal, France, and the Netherlands",
+      "Reached the quarterfinal of the 2023 Africa Cup of Nations, their best ever result, putting the football world on notice",
+      "Ryan Mendes and Garry Rodrigues are the iconic figures of Cabo Verdean football, with decades of faithful service to the national team between them",
+      "The team's qualification campaign was built on defensive solidity and team spirit, proving that collective heart can overcome individual talent disparities",
+      "Cabo Verde's football development has been a source of immense national pride, uniting diaspora communities around the world behind the Blue Sharks",
+      "The 2026 World Cup is the culmination of decades of steady progress, from being ranked outside the top 150 in world rankings to competing at the highest level"
+    ]
+  }
+}

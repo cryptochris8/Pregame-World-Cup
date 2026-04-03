@@ -1,0 +1,49 @@
+{
+  "id": "CZE_KOR",
+  "team1Code": "CZE",
+  "team2Code": "KOR",
+  "totalMatches": 6,
+  "team1Wins": 3,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 10,
+  "team2Goals": 8,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2011-02-09",
+  "firstMeeting": "1981-09-20",
+  "notableMatches": [
+    {
+      "year": 2006,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "KOR",
+      "location": "Frankfurt, Germany",
+      "description": "South Korea stunned Czechia in their World Cup group stage match, ending Czech hopes of advancing"
+    },
+    {
+      "year": 2011,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 0,
+      "winnerCode": "CZE",
+      "location": "Olomouc, Czechia",
+      "description": "Czechia dominated in a comfortable friendly victory over South Korea"
+    },
+    {
+      "year": 2002,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 3,
+      "team2Score": 2,
+      "winnerCode": "CZE",
+      "location": "Seoul, South Korea",
+      "description": "A tight friendly match ahead of South Korea's home World Cup"
+    }
+  ]
+}

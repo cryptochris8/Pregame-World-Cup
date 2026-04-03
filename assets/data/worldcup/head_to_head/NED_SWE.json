@@ -1,0 +1,69 @@
+{
+  "id": "NED_SWE",
+  "team1Code": "NED",
+  "team2Code": "SWE",
+  "totalMatches": 28,
+  "team1Wins": 13,
+  "team2Wins": 8,
+  "draws": 7,
+  "team1Goals": 52,
+  "team2Goals": 39,
+  "worldCupMatches": 2,
+  "team1WorldCupWins": 1,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 1,
+  "lastMatch": "2023-10-17",
+  "firstMeeting": "1913-10-19",
+  "notableMatches": [
+    {
+      "year": 1994,
+      "tournament": "World Cup",
+      "stage": "Quarter-Final",
+      "team1Score": 3,
+      "team2Score": 1,
+      "winnerCode": "NED",
+      "location": "Dallas, USA",
+      "description": "Netherlands defeated Sweden in an exciting World Cup quarter-final, with Dennis Bergkamp scoring a memorable goal"
+    },
+    {
+      "year": 2023,
+      "tournament": "Euro Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 1,
+      "team2Score": 0,
+      "winnerCode": "NED",
+      "location": "Amsterdam, Netherlands",
+      "description": "Netherlands secured a narrow qualifying victory over Sweden in Amsterdam"
+    },
+    {
+      "year": 2017,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier Play-off",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "SWE",
+      "location": "Amsterdam, Netherlands",
+      "description": "Sweden shocked the Netherlands in Amsterdam to eliminate them from World Cup 2018 qualification"
+    },
+    {
+      "year": 1974,
+      "tournament": "World Cup",
+      "stage": "Second Round",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Dortmund, West Germany",
+      "description": "A hard-fought goalless draw in the 1974 World Cup second group stage between two strong European sides"
+    },
+    {
+      "year": 2014,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "NED",
+      "location": "Amsterdam, Netherlands",
+      "description": "Netherlands comfortably beat Sweden in a friendly at the Amsterdam Arena"
+    }
+  ]
+}

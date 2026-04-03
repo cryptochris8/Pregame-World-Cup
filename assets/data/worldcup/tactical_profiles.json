@@ -744,62 +744,62 @@
       "midfieldRating": 4,
       "overallTacticalRating": 4
     },
-    "DEN": {
-      "teamCode": "DEN",
-      "teamName": "Denmark",
-      "coach": "Kasper Hjulmand",
+    "CZE": {
+      "teamCode": "CZE",
+      "teamName": "Czechia",
+      "coach": "Ivan Hasek",
       "preferredFormation": "3-5-2",
       "alternateFormations": [
-        "4-3-3",
-        "3-4-3",
-        "3-4-2-1"
+        "4-2-3-1",
+        "4-4-2",
+        "3-4-3"
       ],
-      "playingStyle": "Adaptable and intelligent: switches formations within matches based on opposition weaknesses",
-      "tempoRating": "Medium-High",
-      "possessionStyle": "Possession-based build-up with flexibility to switch between back three and back four; Eriksen orchestrates tempo",
+      "playingStyle": "Physically disciplined, defensively organized with emphasis on collective effort and tactical structure",
+      "tempoRating": "Medium",
+      "possessionStyle": "Patient build-up through center-backs, Soucek as the box-to-box connector, direct when opportunity arises",
       "pressingIntensity": "Medium-High",
       "attackingApproach": {
-        "style": "Hojlund as the physical focal point up front, Eriksen pulling strings from midfield, Hojbjerg providing balance",
+        "style": "Hlozek and Schick as the front pair, Soucek arriving late from midfield, Coufal providing width from wing-back",
         "strengths": [
-          "Hojlund's physicality and finishing",
-          "Eriksen's creative passing",
-          "Hjulmand's tactical adaptability mid-game",
-          "Wing-back quality"
+          "Hlozek's versatility and finishing",
+          "Soucek's aerial threat and late runs into the box",
+          "Physical set piece presence",
+          "Coufal's overlapping runs"
         ],
-        "primaryThreat": "Hojlund's movement in the box combined with Eriksen's delivery from set pieces and open play",
+        "primaryThreat": "Soucek's late runs into the box and Hlozek's movement, combined with strong set piece delivery",
         "setPieceRating": "Strong"
       },
       "defensiveApproach": {
-        "style": "Three center-backs provide stability; Hojbjerg as the midfield destroyer; formation changes defensively based on opposition",
+        "style": "Compact defensive block with three center-backs; Soucek and Kral screening the defense; disciplined positional play",
         "strengths": [
-          "Defensive flexibility",
-          "Andersen and Christensen as quality center-backs",
-          "Hojbjerg's defensive screening"
+          "Defensive organization",
+          "Aerial dominance from height",
+          "Soucek's defensive work rate"
         ],
-        "weakness": "Can be too conservative at times; wing-back areas targeted by opposition with superior pace"
+        "weakness": "Lack of pace in the back line; can be exposed by quick transitions and fast wingers"
       },
       "keyTacticalFeatures": [
-        "Hjulmand changed formation at least once in every match at Euro 2020, showing remarkable in-game adaptability",
-        "Switches between back three and back four regularly, maintaining a front three in all shapes",
-        "Eriksen's experience and creativity remain the creative heartbeat despite his age",
-        "Hojlund's emergence as a genuine top-level center-forward gives Denmark a new dimension"
+        "Hasek rebuilt the team around defensive solidity after disappointing Euro 2024",
+        "Soucek remains the heartbeat of the team, contributing goals and defensive work",
+        "Physical approach makes them dangerous from set pieces",
+        "Hlozek's development at Leverkusen has given the attack more quality"
       ],
       "strengthsOverall": [
-        "Tactical flexibility and in-game adaptations",
-        "Strong defensive organization",
-        "Experienced core with young talent",
-        "Collective spirit"
+        "Defensive discipline and organization",
+        "Physical presence and aerial dominance",
+        "Strong team spirit and collective identity",
+        "Experienced core in Soucek and Coufal"
       ],
       "weaknessesOverall": [
-        "Lack of individual game-changers",
-        "Wing-back quality inconsistent",
-        "Can be neutralized by deep-sitting opponents",
-        "Historically underperform in knockout stages"
+        "Limited individual quality compared to top nations",
+        "Lack of pace in defense",
+        "Creative output can dry up against deep blocks",
+        "Reliance on set pieces for goals"
       ],
-      "attackRating": 6,
+      "attackRating": 5,
       "defenseRating": 7,
-      "midfieldRating": 7,
-      "overallTacticalRating": 7
+      "midfieldRating": 6,
+      "overallTacticalRating": 6
     },
     "ECU": {
       "teamCode": "ECU",
@@ -1249,61 +1249,61 @@
       "midfieldRating": 4,
       "overallTacticalRating": 4
     },
-    "IDN": {
-      "teamCode": "IDN",
-      "teamName": "Indonesia",
-      "coach": "Patrick Kluivert",
-      "preferredFormation": "4-3-3",
+    "SWE": {
+      "teamCode": "SWE",
+      "teamName": "Sweden",
+      "coach": "Jon Dahl Tomasson",
+      "preferredFormation": "4-4-2",
       "alternateFormations": [
-        "4-4-2",
-        "5-4-1"
+        "4-2-3-1",
+        "4-3-3"
       ],
-      "playingStyle": "Improving organization with emphasis on defensive discipline and quick transitions; Dutch coaching influence",
-      "tempoRating": "Medium",
-      "possessionStyle": "Direct and functional; build-up improving under Kluivert's Dutch influence but still developing",
-      "pressingIntensity": "Medium",
+      "playingStyle": "Direct attacking football with emphasis on getting the ball to Gyokeres quickly; physical and well-organized",
+      "tempoRating": "Medium-High",
+      "possessionStyle": "Direct and purposeful; quick transitions from defense to attack, getting the ball into dangerous areas early",
+      "pressingIntensity": "High",
       "attackingApproach": {
-        "style": "Pace and directness from Struick, creative crossing from Arhan, Asnawi providing defensive stability that frees up attackers",
+        "style": "Gyokeres as the focal point with Kulusevski providing creativity and width; Isak as the second striker; direct service from wide areas",
         "strengths": [
-          "Rafael Struick's pace and directness",
-          "Nathan Tjoe-A-On's Dutch-Indonesian quality",
-          "Improving individual quality through naturalization policy",
-          "Set piece aerial threat"
+          "Viktor Gyokeres' prolific goal-scoring ability",
+          "Dejan Kulusevski's creativity and work rate",
+          "Alexander Isak's movement and finishing",
+          "Physical aerial presence"
         ],
-        "primaryThreat": "Struick's pace on the counter and set piece situations",
-        "setPieceRating": "Average"
+        "primaryThreat": "Gyokeres' movement and finishing combined with Kulusevski's creative delivery from wide positions",
+        "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Compact defensive block; sometimes drops into a deep 5-4-1 to absorb pressure against stronger opponents",
+        "style": "Organized back four with disciplined pressing from the front; midfield battle prioritized with physical players",
         "strengths": [
-          "Improving defensive organization under Kluivert",
-          "Asnawi's defensive quality",
-          "Collective commitment"
+          "Defensive discipline and organization",
+          "Physical midfield presence",
+          "Strong pressing from the front"
         ],
-        "weakness": "Individual quality gap vs World Cup-level opposition; defensive errors under pressure; limited experience at this level"
+        "weakness": "Can be exposed by technically superior teams in midfield; full-backs occasionally caught upfield"
       },
       "keyTacticalFeatures": [
-        "Kluivert replaced Shin Tae-yong in January 2025, bringing Dutch tactical influence",
-        "First-ever World Cup appearance - the achievement itself is remarkable",
-        "Naturalization policy has added Dutch-Indonesian players who raise the quality ceiling",
-        "Must be realistic about objectives: competitive performances and experience-building"
+        "Tomasson has built the team around Gyokeres' incredible form at Sporting CP",
+        "Kulusevski's experience at Tottenham brings Premier League quality and versatility",
+        "Isak's partnership with Gyokeres gives Sweden a lethal front pairing",
+        "Traditional Scandinavian organization combined with genuine attacking firepower"
       ],
       "strengthsOverall": [
-        "Historic achievement provides massive motivation",
-        "Kluivert's tactical knowledge",
-        "Growing individual quality through naturalization",
-        "Young squad with development potential"
+        "World-class striker in Gyokeres",
+        "Strong team spirit and tactical discipline",
+        "Kulusevski and Isak provide additional quality",
+        "Physical and well-organized"
       ],
       "weaknessesOverall": [
-        "Huge quality gap vs most opponents",
-        "No international tournament experience at this level",
-        "Defensive individual quality",
-        "Very limited depth"
+        "Midfield creativity can be lacking",
+        "Defensive quality below top tier",
+        "Reliance on Gyokeres for goals",
+        "Squad depth is a concern"
       ],
-      "attackRating": 3,
-      "defenseRating": 4,
-      "midfieldRating": 4,
-      "overallTacticalRating": 4
+      "attackRating": 7,
+      "defenseRating": 6,
+      "midfieldRating": 5,
+      "overallTacticalRating": 6
     },
     "IRN": {
       "teamCode": "IRN",
@@ -1418,62 +1418,61 @@
       "midfieldRating": 5,
       "overallTacticalRating": 5
     },
-    "ITA": {
-      "teamCode": "ITA",
-      "teamName": "Italy",
-      "coach": "Luciano Spalletti",
-      "preferredFormation": "3-5-2",
+    "BIH": {
+      "teamCode": "BIH",
+      "teamName": "Bosnia and Herzegovina",
+      "coach": "Sergej Barbarez",
+      "preferredFormation": "4-2-3-1",
       "alternateFormations": [
-        "3-5-1-1",
         "4-3-3",
-        "3-4-3"
+        "5-3-2"
       ],
-      "playingStyle": "Structured positional play with compact pressing and tactical complexity",
-      "tempoRating": "Medium",
-      "possessionStyle": "Build from the back through a three-man defense, midfield domination through numerical superiority, Barella as the engine",
-      "pressingIntensity": "High",
+      "playingStyle": "Counter-attacking with defensive discipline; relies on experienced forwards to provide the cutting edge",
+      "tempoRating": "Medium-Low",
+      "possessionStyle": "Pragmatic and direct; comfortable ceding possession and striking on the counter; Dzeko as the target man",
+      "pressingIntensity": "Medium",
       "attackingApproach": {
-        "style": "Wing-backs (Dimarco and Cambiaso) provide width and crossing threat, Barella drives forward from midfield, Retegui as the focal point",
+        "style": "Dzeko as the experienced target man, Demirovic providing energy and movement, quick transitions through wide areas",
         "strengths": [
-          "Barella's box-to-box dynamism",
-          "Dimarco's crossing quality",
-          "Tactical discipline in build-up",
-          "Midfield control"
+          "Dzeko's experience and hold-up play",
+          "Ermedin Demirovic's pressing and finishing",
+          "Counter-attacking efficiency",
+          "Physical aerial threat"
         ],
-        "primaryThreat": "Barella's runs from deep midfield arriving in the box and Dimarco's deliveries from the left",
-        "setPieceRating": "Strong"
+        "primaryThreat": "Dzeko's hold-up play creating space for runners from midfield and set piece situations",
+        "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Constant pitch-squeezing: pushing the team up on every slow or backward pass; man-marking triggers in midfield",
+        "style": "Compact and organized defensive block with two holding midfielders; prepared to sit deep and absorb pressure",
         "strengths": [
-          "Three center-backs provide numerical stability",
-          "Compact defensive block",
-          "Calafiori's ability to step out and press"
+          "Defensive organization and discipline",
+          "Willingness to defend deep",
+          "Physical resilience"
         ],
-        "weakness": "Wing-back system leaves gaps if they don't recover; can be bypassed by teams that play quickly through the press"
+        "weakness": "Limited quality in defense against sustained pressure; full-backs can be exposed by pace"
       },
       "keyTacticalFeatures": [
-        "Spalletti's shadow play demands constant movement and positional rotations",
-        "Three-man defense shifts to five when both wing-backs retreat, creating a 5-4-1 out of possession",
-        "Barella pushes out of the midfield line to press opposition build-up, with cover shifting behind him",
-        "Pitch compression is central to the philosophy - the team moves as a unit up and down"
+        "Barbarez has revitalized the team after taking charge, bringing renewed energy and belief",
+        "Dzeko remains the talisman despite his age, providing experience and leadership",
+        "Counter-attacking approach suits the squad's strengths against stronger opposition",
+        "Strong team spirit built on underdog mentality from qualifying playoffs"
       ],
       "strengthsOverall": [
-        "Tactical sophistication",
-        "Midfield quality with Barella, Tonali, Ricci",
-        "Defensive organization",
-        "Wing-back options"
+        "Counter-attacking efficiency",
+        "Dzeko's experience and leadership",
+        "Strong team spirit and collective effort",
+        "Defensive organization"
       ],
       "weaknessesOverall": [
-        "Lack of a world-class striker",
-        "System complexity can lead to confusion",
-        "Recent inconsistent results",
-        "Over-reliance on structural play over individual brilliance"
+        "Limited squad depth compared to top nations",
+        "Aging key players (Dzeko)",
+        "Lack of creative midfield quality",
+        "Defensive vulnerabilities against sustained pressure"
       ],
-      "attackRating": 7,
-      "defenseRating": 8,
-      "midfieldRating": 8,
-      "overallTacticalRating": 8
+      "attackRating": 5,
+      "defenseRating": 6,
+      "midfieldRating": 5,
+      "overallTacticalRating": 5
     },
     "JOR": {
       "teamCode": "JOR",

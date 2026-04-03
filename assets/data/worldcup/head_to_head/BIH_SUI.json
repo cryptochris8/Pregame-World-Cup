@@ -1,0 +1,59 @@
+{
+  "id": "BIH_SUI",
+  "team1Code": "BIH",
+  "team2Code": "SUI",
+  "totalMatches": 8,
+  "team1Wins": 2,
+  "team2Wins": 5,
+  "draws": 1,
+  "team1Goals": 10,
+  "team2Goals": 14,
+  "worldCupMatches": 0,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 0,
+  "worldCupDraws": 0,
+  "lastMatch": "2021-11-16",
+  "firstMeeting": "2003-11-19",
+  "notableMatches": [
+    {
+      "year": 2021,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 0,
+      "team2Score": 2,
+      "winnerCode": "SUI",
+      "location": "Zenica, Bosnia and Herzegovina",
+      "description": "Switzerland clinched a crucial qualifier win in Zenica to advance to the World Cup playoffs"
+    },
+    {
+      "year": 2015,
+      "tournament": "Euro Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Zenica, Bosnia and Herzegovina",
+      "description": "An evenly contested Euro qualifier ended level in Zenica"
+    },
+    {
+      "year": 2011,
+      "tournament": "Euro Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "BIH",
+      "location": "Zenica, Bosnia and Herzegovina",
+      "description": "Bosnia earned a memorable qualifying win at home against Switzerland"
+    },
+    {
+      "year": 2004,
+      "tournament": "World Cup Qualifier",
+      "stage": "Qualifier",
+      "team1Score": 1,
+      "team2Score": 1,
+      "winnerCode": null,
+      "location": "Basel, Switzerland",
+      "description": "Bosnia held Switzerland to a draw away from home in their World Cup qualifying campaign"
+    }
+  ]
+}

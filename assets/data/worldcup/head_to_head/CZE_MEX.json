@@ -1,0 +1,49 @@
+{
+  "id": "CZE_MEX",
+  "team1Code": "CZE",
+  "team2Code": "MEX",
+  "totalMatches": 5,
+  "team1Wins": 2,
+  "team2Wins": 2,
+  "draws": 1,
+  "team1Goals": 7,
+  "team2Goals": 7,
+  "worldCupMatches": 1,
+  "team1WorldCupWins": 0,
+  "team2WorldCupWins": 1,
+  "worldCupDraws": 0,
+  "lastMatch": "2011-06-07",
+  "firstMeeting": "1958-06-08",
+  "notableMatches": [
+    {
+      "year": 1958,
+      "tournament": "World Cup",
+      "stage": "Group Stage",
+      "team1Score": 0,
+      "team2Score": 6,
+      "winnerCode": "MEX",
+      "location": "Helsingborg, Sweden",
+      "description": "Czechoslovakia suffered a heavy defeat to Mexico in the 1958 World Cup group stage"
+    },
+    {
+      "year": 2011,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 0,
+      "team2Score": 0,
+      "winnerCode": null,
+      "location": "Arlington, USA",
+      "description": "A goalless draw in a friendly played on neutral ground in the United States"
+    },
+    {
+      "year": 2004,
+      "tournament": "Friendly",
+      "stage": "Friendly",
+      "team1Score": 2,
+      "team2Score": 0,
+      "winnerCode": "CZE",
+      "location": "Teplice, Czechia",
+      "description": "Czechia earned a solid win against Mexico in pre-Euro 2004 preparations"
+    }
+  ]
+}

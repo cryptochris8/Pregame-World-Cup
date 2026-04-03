@@ -1,0 +1,35 @@
+{
+  "team1Code": "NED",
+  "team2Code": "SWE",
+  "team1Name": "Netherlands",
+  "team2Name": "Sweden",
+  "historicalAnalysis": "Netherlands versus Sweden is a classic European footballing rivalry that has produced memorable encounters over decades. Both nations have rich World Cup histories — the Netherlands as three-time finalists with their revolutionary Total Football philosophy, and Sweden as 1958 runners-up and consistent tournament participants. This Group F meeting carries the weight of that shared history and the expectation that two of Europe's most recognizable footballing nations will deliver a spectacle.\n\nThe Netherlands enter this tournament among the favorites, with a squad that blends experienced campaigners like Virgil van Dijk with exciting younger talent like Cody Gakpo. Their semifinal run at the 2022 World Cup showed they remain a force at the highest level. Sweden, meanwhile, are eager to prove their return to the World Cup stage is no fluke, with a fearsome attacking lineup led by Gyokeres and Isak that can trouble even the most organized defenses.",
+  "keyStorylines": [
+    "A rivalry renewed as two traditional European powers meet in a group stage match with potential knockout round implications",
+    "Virgil van Dijk's defensive mastery faces its sternest test against Sweden's devastating strike partnership of Gyokeres and Isak",
+    "The Netherlands' Total Football legacy meets Sweden's direct, powerful attacking style in a fascinating tactical clash",
+    "Cody Gakpo looks to continue his emergence as a World Cup star after his impressive 2022 tournament performances"
+  ],
+  "playersToWatch": [
+    {"name": "Virgil van Dijk", "teamCode": "NED", "position": "Center Back", "reason": "Liverpool's colossus and Dutch captain whose commanding presence organizes the entire defense and provides leadership in high-pressure moments"},
+    {"name": "Viktor Gyökeres", "teamCode": "SWE", "position": "Striker", "reason": "The prolific Sporting CP striker whose combination of power, pace, and finishing poses the ultimate test for Van Dijk and the Dutch defense"},
+    {"name": "Cody Gakpo", "teamCode": "NED", "position": "Forward", "reason": "Liverpool's versatile attacker who starred at the 2022 World Cup and has continued his development into one of Europe's most complete forwards"},
+    {"name": "Dejan Kulusevski", "teamCode": "SWE", "position": "Right Winger", "reason": "Tottenham's dynamic winger whose creativity and work rate provide the supply line for Sweden's lethal strikers"}
+  ],
+  "tacticalPreview": "The Netherlands typically deploy a 4-3-3 or 3-4-1-2 formation that emphasizes ball possession and positional play. Van Dijk anchors the defense while the midfield dictates tempo, and Gakpo's movement across the front line creates unpredictable attacking patterns. The Dutch fullbacks push high to provide width, and the team's technical quality in tight spaces allows them to play through pressure effectively.\n\nSweden will likely look to match the Netherlands' quality with their own attacking firepower rather than sitting deep. Gyokeres and Isak's partnership gives Sweden a dual threat that requires constant attention from Van Dijk and his defensive partner. Kulusevski's energy and quality on the right flank could be the key battleground, as he looks to exploit the space left by Dutch left-back overlaps. Sweden's direct approach and willingness to play long balls into the channels could bypass the Dutch midfield and create one-on-one situations for their pacey forwards.",
+  "prediction": {
+    "predictedOutcome": "TEAM1",
+    "predictedScore": "2-1",
+    "confidence": 47,
+    "reasoning": "The Netherlands' superior squad depth and tactical versatility should give them the edge, but Sweden's attacking quality means this will be a closely contested match. Van Dijk's experience in managing top-class strikers at club level will be crucial, and the Dutch midfield's ability to control possession should ultimately prove decisive.",
+    "alternativeScenario": "Sweden's strike duo of Gyokeres and Isak could overwhelm the Dutch defense with their movement and finishing, leading to a statement 3-2 Swedish victory that announces them as dark horse contenders for the tournament."
+  },
+  "pastEncountersSummary": "The Netherlands and Sweden have a lengthy competitive history spanning decades of European qualifying campaigns and major tournament encounters. The Dutch have generally held the upper hand, but Sweden have produced notable victories and draws against their more fancied opponents. Their meetings in World Cup and European Championship qualifiers have consistently been among the most anticipated fixtures in European football.",
+  "funFacts": [
+    "The Netherlands have reached three World Cup finals (1974, 1978, 2010) but have never won the tournament, earning them the unwanted distinction of being the best team never to win it",
+    "Sweden's Zlatan Ibrahimovic, the nation's all-time leading scorer with 62 goals, retired from international football but his legacy continues to inspire the current generation",
+    "The Netherlands pioneered 'Total Football' in the 1970s under Rinus Michels, a tactical revolution that influenced the way the game is played worldwide",
+    "Sweden have participated in 12 World Cups, finishing as runners-up in 1958 and third place in 1950 and 1994"
+  ],
+  "isFirstMeeting": false
+}
