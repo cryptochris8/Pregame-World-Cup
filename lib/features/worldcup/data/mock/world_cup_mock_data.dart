@@ -267,11 +267,11 @@ class WorldCupMockData {
     int matchNumber = 1;
 
     // Group A matches
-    matches.addAll(_generateGroupMatches('A', ['MEX', 'KOR', 'DEN', 'RSA'], matchNumber));
+    matches.addAll(_generateGroupMatches('A', ['MEX', 'KOR', 'CZE', 'RSA'], matchNumber));
     matchNumber += 6;
 
     // Group B matches
-    matches.addAll(_generateGroupMatches('B', ['SUI', 'ITA', 'CAN', 'QAT'], matchNumber));
+    matches.addAll(_generateGroupMatches('B', ['SUI', 'BIH', 'CAN', 'QAT'], matchNumber));
     matchNumber += 6;
 
     // Group C matches

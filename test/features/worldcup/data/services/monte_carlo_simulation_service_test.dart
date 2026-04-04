@@ -325,23 +325,23 @@ void main() {
     test('weak teams have < 5% win probability', () {
       final result = service.simulateTournament(simulations: 5000, seed: 42);
 
-      // CUR (rank 85), IDN (rank 130) should have very low win chance
+      // CUR (rank 85), NZL (rank 93) should have very low win chance
       final cur = result.teamResults['CUR']!;
-      final idn = result.teamResults['IDN']!;
+      final nzl = result.teamResults['NZL']!;
 
       expect(cur.winnerPct, lessThan(5.0),
           reason: 'Curacao should have <5% chance to win');
-      expect(idn.winnerPct, lessThan(5.0),
-          reason: 'Indonesia should have <5% chance to win');
+      expect(nzl.winnerPct, lessThan(5.0),
+          reason: 'New Zealand should have <5% chance to win');
     });
 
     test('top-ranked teams more likely to reach R32 than weak teams', () {
       final result = service.simulateTournament(simulations: 2000, seed: 42);
 
       final arg = result.teamResults['ARG']!;
-      final idn = result.teamResults['IDN']!;
+      final nzl = result.teamResults['NZL']!;
 
-      expect(arg.roundOf32Pct, greaterThan(idn.roundOf32Pct));
+      expect(arg.roundOf32Pct, greaterThan(nzl.roundOf32Pct));
     });
 
     test('ranked list is sorted by win percentage', () {

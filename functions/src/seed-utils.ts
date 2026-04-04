@@ -23,10 +23,18 @@ import * as path from "path";
  */
 export function initFirebase(): admin.firestore.Firestore {
   if (!admin.apps.length) {
-    try {
-      admin.initializeApp();
-    } catch {
-      admin.initializeApp({ projectId: "pregame-b089e" });
+    const serviceAccountPath = path.join(__dirname, "../../service-account-key.json");
+    if (fs.existsSync(serviceAccountPath)) {
+      const serviceAccount = require(serviceAccountPath);
+      admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount),
+      });
+    } else {
+      try {
+        admin.initializeApp();
+      } catch {
+        admin.initializeApp({ projectId: "pregame-b089e" });
+      }
     }
   }
   return admin.firestore();
