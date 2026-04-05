@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/report.dart';
 import '../../domain/services/moderation_service.dart';
@@ -124,9 +125,9 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
     final l10n = AppLocalizations.of(context);
 
     return Container(
-      decoration: BoxDecoration(
-        color: theme.colorScheme.surface,
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+      decoration: const BoxDecoration(
+        color: AppTheme.backgroundDark,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: DraggableScrollableSheet(
         initialChildSize: 0.7,
@@ -142,7 +143,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: Colors.grey[400],
+                  color: AppTheme.textTertiary,
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -152,27 +153,28 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.flag_outlined,
-                      color: theme.colorScheme.error,
+                      color: AppTheme.primaryOrange,
                     ),
                     const SizedBox(width: 12),
                     Text(
                       _getDisplayTitle(l10n),
                       style: theme.textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
+                        color: AppTheme.textWhite,
                       ),
                     ),
                     const Spacer(),
                     IconButton(
                       onPressed: () => Navigator.of(context).pop(),
-                      icon: const Icon(Icons.close),
+                      icon: const Icon(Icons.close, color: AppTheme.textSecondary),
                     ),
                   ],
                 ),
               ),
 
-              const Divider(),
+              const Divider(color: AppTheme.backgroundElevated),
 
               // Content
               Expanded(
@@ -185,20 +187,22 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                       Text(
                         l10n.reportContentBeingReported,
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: Colors.grey[600],
+                          color: AppTheme.textTertiary,
                         ),
                       ),
                       const SizedBox(height: 8),
                       Container(
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                          color: Colors.grey[100],
+                          color: AppTheme.backgroundCard,
                           borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Colors.grey[300]!),
+                          border: Border.all(color: AppTheme.backgroundElevated),
                         ),
                         child: Text(
                           widget.contentSnapshot!,
-                          style: theme.textTheme.bodyMedium,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                          ),
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -211,6 +215,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                       l10n.reportWhyReporting,
                       style: theme.textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
+                        color: AppTheme.textWhite,
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -235,6 +240,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                       l10n.reportAdditionalDetails,
                       style: theme.textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
+                        color: AppTheme.textWhite,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -242,13 +248,25 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                       controller: _detailsController,
                       maxLines: 4,
                       maxLength: 500,
+                      style: const TextStyle(color: AppTheme.textLight),
                       decoration: InputDecoration(
                         hintText: l10n.reportDetailsHint,
+                        hintStyle: const TextStyle(color: AppTheme.textTertiary),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
+                          borderSide: const BorderSide(color: AppTheme.backgroundElevated),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: const BorderSide(color: AppTheme.backgroundElevated),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: const BorderSide(color: AppTheme.primaryOrange),
                         ),
                         filled: true,
-                        fillColor: Colors.grey[50],
+                        fillColor: AppTheme.backgroundCard,
+                        counterStyle: const TextStyle(color: AppTheme.textTertiary),
                       ),
                     ),
 
@@ -291,7 +309,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                       child: ElevatedButton(
                         onPressed: _isSubmitting ? null : _submitReport,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: theme.colorScheme.error,
+                          backgroundColor: AppTheme.primaryOrange,
                           foregroundColor: Colors.white,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -322,7 +340,7 @@ class _ReportBottomSheetState extends State<ReportBottomSheet> {
                     Text(
                       l10n.reportDisclaimer,
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: Colors.grey[600],
+                        color: AppTheme.textTertiary,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -415,20 +433,20 @@ class _ReasonTile extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: isSelected ? theme.colorScheme.primary : Colors.grey[300]!,
+              color: isSelected ? AppTheme.primaryOrange : AppTheme.backgroundElevated,
               width: isSelected ? 2 : 1,
             ),
             color: isSelected
-                ? theme.colorScheme.primary.withValues(alpha: 0.05)
-                : Colors.transparent,
+                ? AppTheme.primaryOrange.withValues(alpha: 0.1)
+                : AppTheme.backgroundCard,
           ),
           child: Row(
             children: [
               Icon(
                 _reasonIcon,
                 color: isSelected
-                    ? theme.colorScheme.primary
-                    : Colors.grey[600],
+                    ? AppTheme.primaryOrange
+                    : AppTheme.textTertiary,
                 size: 24,
               ),
               const SizedBox(width: 12),
@@ -449,24 +467,24 @@ class _ReasonTile extends StatelessWidget {
                       style: theme.textTheme.bodyLarge?.copyWith(
                         fontWeight: FontWeight.w500,
                         color: isSelected
-                            ? theme.colorScheme.primary
-                            : Colors.black87,
+                            ? AppTheme.primaryOrange
+                            : AppTheme.textWhite,
                       ),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       _getLocalizedDescription(context),
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: Colors.grey[600],
+                        color: AppTheme.textTertiary,
                       ),
                     ),
                   ],
                 ),
               ),
               if (isSelected)
-                Icon(
+                const Icon(
                   Icons.check_circle,
-                  color: theme.colorScheme.primary,
+                  color: AppTheme.primaryOrange,
                 ),
             ],
           ),
