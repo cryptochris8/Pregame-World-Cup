@@ -4,11 +4,9 @@
 
 **Version:** 1.0.0 (Build 4)
 
-**Date:** April 4, 2026
+**Date:** April 5, 2026
 
 **Previous Rejection Date:** March 19, 2026
-
-**Review Device:** iPad Air 11" M3
 
 ---
 
@@ -264,5 +262,9 @@ All issues identified in the initial review have been comprehensively addressed:
 - **Full UGC moderation** implemented: EULA acceptance, content filtering, reporting, blocking, and admin notifications
 - The full test suite (**9,817+ tests**) passes without regressions
 - The app disclaimer clearly states independence from any official tournament organization
+
+Screen recordings and screenshots demonstrating EULA acceptance, licensing disclaimer, profanity filtering, content reporting, and user blocking are available at: https://pregameworldcup.com/review/
+
+Demo account credentials are provided in App Store Connect review information.
 
 We respectfully request re-review of this updated submission.
