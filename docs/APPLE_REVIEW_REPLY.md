@@ -29,6 +29,6 @@ We have implemented all five Apple-required UGC moderation precautions:
 
 5. Developer Response: The onReportCreated Cloud Function sends immediate push notifications to all admin users. Auto-moderation thresholds trigger automatically (5 reports = 24-hour mute, 10 reports = 7-day suspension). A scheduled function clears expired sanctions hourly.
 
-A screen recording demonstrating the EULA acceptance, content reporting, and user blocking flows on a physical device is attached.
+Screen recordings demonstrating the EULA acceptance, licensing disclaimer, and profanity filtering on a physical device, along with screenshots of content reporting and user blocking, can be viewed at: https://pregameworldcup.com/review/
 
 Demo account credentials are provided in App Store Connect review information.
