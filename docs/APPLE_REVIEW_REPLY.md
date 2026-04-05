@@ -6,7 +6,14 @@ We have conducted a comprehensive audit and removed all FIFA trademark reference
 
 The app includes a clear disclaimer on both the login screen and user profile: "Pregame is an independent fan app and is not affiliated with, endorsed by, or sponsored by any official tournament organization."
 
-Pregame is a fan companion app that provides publicly available sports information — similar to other fan apps covering international soccer tournaments. We do not use any FIFA logos, branding, official imagery, or proprietary content.
+Pregame's mission is to connect soccer fans to their teams and to the local venues showing their games. Our primary features include:
+
+- Using the Google Maps API to help fans locate nearby restaurants and bars close to stadiums
+- Showing which venues are broadcasting specific matches
+- Connecting fans through watch parties at local establishments
+- Highlighting food and drink specials that venues are running on game days
+
+We are a fan companion app built around the local venue and watch party experience. We do not use any FIFA logos, branding, official imagery, or proprietary content. All sports data displayed is publicly available information — similar to other fan apps covering international soccer tournaments.
 
 We want to be fully compliant. Could you please identify the specific content or elements in the app that you believe resemble or infringe upon FIFA's intellectual property? This will allow us to address the exact concern directly.
 
