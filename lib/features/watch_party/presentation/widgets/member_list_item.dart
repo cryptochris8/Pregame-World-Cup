@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/watch_party_member.dart';
 import 'member_avatar_row.dart';
@@ -52,7 +53,7 @@ class MemberListItem extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
               decoration: BoxDecoration(
-                color: Colors.grey[200],
+                color: AppTheme.backgroundElevated,
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Text(
@@ -217,7 +218,7 @@ class MemberListItem extends StatelessWidget {
       decoration: BoxDecoration(
         color: isVirtual
             ? const Color(0xFF059669).withValues(alpha:0.1)
-            : Colors.grey[100],
+            : AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -226,14 +227,14 @@ class MemberListItem extends StatelessWidget {
           Icon(
             isVirtual ? Icons.videocam : Icons.person,
             size: 10,
-            color: isVirtual ? const Color(0xFF059669) : Colors.grey[600],
+            color: isVirtual ? const Color(0xFF059669) : AppTheme.textTertiary,
           ),
           const SizedBox(width: 2),
           Text(
             isVirtual ? l10n.memberVirtual : l10n.memberInPerson,
             style: TextStyle(
               fontSize: 11,
-              color: isVirtual ? const Color(0xFF059669) : Colors.grey[600],
+              color: isVirtual ? const Color(0xFF059669) : AppTheme.textTertiary,
             ),
           ),
         ],
@@ -262,7 +263,7 @@ class MemberListSection extends StatelessWidget {
       child: Row(
         children: [
           if (icon != null) ...[
-            Icon(icon, size: 18, color: Colors.grey[600]),
+            Icon(icon, size: 18, color: AppTheme.textTertiary),
             const SizedBox(width: 8),
           ],
           Text(
@@ -270,7 +271,7 @@ class MemberListSection extends StatelessWidget {
             style: TextStyle(
               fontSize: 13,
               fontWeight: FontWeight.w600,
-              color: Colors.grey[700],
+              color: AppTheme.textSecondary,
               letterSpacing: 0.5,
             ),
           ),
@@ -278,7 +279,7 @@ class MemberListSection extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
             decoration: BoxDecoration(
-              color: Colors.grey[200],
+              color: AppTheme.backgroundElevated,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Text(
@@ -286,7 +287,7 @@ class MemberListSection extends StatelessWidget {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: Colors.grey[700],
+                color: AppTheme.textSecondary,
               ),
             ),
           ),

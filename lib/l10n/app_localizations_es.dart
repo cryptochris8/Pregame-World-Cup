@@ -929,7 +929,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get whereSportsFansConnect =>
-      'Donde los Fanáticos del Deporte se Conectan';
+      'Donde los Fanáticos del Fútbol se Conectan';
 
   @override
   String get verifyYourEmail => 'Verifica tu Correo';

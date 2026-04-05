@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/entities/chat.dart';
 import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
@@ -149,7 +150,7 @@ class MessageItemWidget extends StatelessWidget {
               '(edited)',
               style: TextStyle(
                 color: isOwnMessage 
-                    ? Colors.grey[400]
+                    ? AppTheme.textTertiary
                     : Colors.white.withValues(alpha:0.5),
                 fontSize: 11,
                 fontStyle: FontStyle.italic,
@@ -184,7 +185,7 @@ class MessageItemWidget extends StatelessWidget {
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) => Container(
                   height: 200,
-                  color: Colors.grey[300],
+                  color: AppTheme.backgroundElevated,
                   child: const Icon(Icons.error),
                 ),
               ),

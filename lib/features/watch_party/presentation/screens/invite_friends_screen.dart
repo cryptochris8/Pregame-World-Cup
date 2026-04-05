@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 import '../bloc/watch_party_bloc.dart';
@@ -111,7 +112,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   filled: true,
-                  fillColor: Colors.grey[100],
+                  fillColor: AppTheme.backgroundCard,
                 ),
                 maxLines: 2,
               ),
@@ -214,7 +215,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.people_outline, size: 80, color: Colors.grey[300]),
+          Icon(Icons.people_outline, size: 80, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(
             l10n.noFriendsToInvite,
@@ -223,7 +224,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
           const SizedBox(height: 8),
           Text(
             l10n.followPeopleToInvite,
-            style: TextStyle(color: Colors.grey[600]),
+            style: TextStyle(color: AppTheme.textTertiary),
             textAlign: TextAlign.center,
           ),
         ],
@@ -237,7 +238,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.error_outline, size: 64, color: Colors.grey[400]),
+          Icon(Icons.error_outline, size: 64, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(_error ?? l10n.error),
           const SizedBox(height: 16),

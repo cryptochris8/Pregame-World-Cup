@@ -241,45 +241,26 @@ class _LoginScreenState extends State<LoginScreen> {
                           // Logo with glow effect
                           Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(36),
                               boxShadow: [
                                 BoxShadow(
                                   color: AppTheme.primaryOrange.withValues(alpha:0.3),
-                                  blurRadius: 30,
-                                  spreadRadius: 5,
+                                  blurRadius: 40,
+                                  spreadRadius: 8,
                                 ),
                               ],
                             ),
                             child: ClipRRect(
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(36),
                               child: Image.asset(
                                 'assets/logos/pregame_logo.png',
-                                height: 120,
-                                width: 120,
+                                height: 160,
+                                width: 160,
                                 fit: BoxFit.contain,
                               ),
                             ),
                           ),
-                          const SizedBox(height: 20),
-                          // App title with gradient text effect
-                          ShaderMask(
-                            shaderCallback: (bounds) => const LinearGradient(
-                              colors: [
-                                AppTheme.accentGold,
-                                AppTheme.primaryOrange,
-                              ],
-                            ).createShader(bounds),
-                            child: const Text(
-                              'PREGAME',
-                              style: TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: 2,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: 16),
                           Text(
                             l10n.whereSportsFansConnect,
                             style: const TextStyle(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pregame_world_cup/features/auth/domain/services/auth_service.dart';
 import 'package:pregame_world_cup/injection_container.dart';
+import 'package:pregame_world_cup/config/app_theme.dart';
 import 'package:pregame_world_cup/config/theme_helper.dart';
 import 'package:pregame_world_cup/core/utils/team_logo_helper.dart';
 import 'package:pregame_world_cup/l10n/app_localizations.dart';
@@ -149,7 +150,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(AppLocalizations.of(context)!.favoriteTeamsSavedSynced),
-                backgroundColor: Colors.green,
+                backgroundColor: AppTheme.successColor,
                 duration: const Duration(seconds: 2),
               ),
             );
@@ -159,7 +160,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(AppLocalizations.of(context)!.favoriteTeamsSaved),
-                backgroundColor: Colors.green,
+                backgroundColor: AppTheme.successColor,
                 duration: const Duration(seconds: 2),
               ),
             );
@@ -301,13 +302,13 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                     padding: const EdgeInsets.all(16.0),
                     margin: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
-                      color: Colors.green.withValues(alpha:0.1),
+                      color: AppTheme.successColor.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Colors.green.withValues(alpha:0.3)),
+                      border: Border.all(color: AppTheme.successColor.withValues(alpha:0.3)),
                     ),
                     child: Row(
                       children: [
-                        const Icon(Icons.check_circle_outline, color: Colors.green),
+                        const Icon(Icons.check_circle_outline, color: AppTheme.successColor),
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(

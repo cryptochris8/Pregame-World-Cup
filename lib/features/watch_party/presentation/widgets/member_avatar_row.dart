@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/watch_party_member.dart';
 
 /// Row of member avatars with overflow indicator
@@ -138,7 +139,7 @@ class _OverflowIndicator extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.grey[300],
+        color: AppTheme.backgroundElevated,
         border: Border.all(
           color: Colors.white,
           width: 2,
@@ -148,7 +149,7 @@ class _OverflowIndicator extends StatelessWidget {
         child: Text(
           '+$count',
           style: TextStyle(
-            color: Colors.grey[700],
+            color: AppTheme.textSecondary,
             fontWeight: FontWeight.bold,
             fontSize: size * 0.35,
           ),

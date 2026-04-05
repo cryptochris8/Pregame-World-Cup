@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
@@ -141,7 +142,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
                 _visibility == WatchPartyVisibility.public
                     ? l10n.anyoneCanJoin
                     : l10n.onlyInvitedCanJoin,
-                style: TextStyle(color: Colors.grey[600], fontSize: 12),
+                style: TextStyle(color: AppTheme.textTertiary, fontSize: 12),
               ),
               const SizedBox(height: 24),
 
@@ -228,7 +229,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
                         Text(
                           l10n.virtualAttendanceDesc,
                           style: TextStyle(
-                            color: Colors.grey[600],
+                            color: AppTheme.textTertiary,
                             fontSize: 12,
                           ),
                         ),

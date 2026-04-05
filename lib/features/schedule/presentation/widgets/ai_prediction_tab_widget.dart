@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
+
 /// Widget for the Prediction tab in the Enhanced AI Insights view.
 /// Displays score prediction cards and confidence analysis.
 class AIPredictionTabWidget extends StatelessWidget {
@@ -217,7 +219,7 @@ class AIPredictionTabWidget extends StatelessWidget {
             child: const Icon(
               Icons.sports_soccer,
               size: 12,
-              color: Colors.black54,
+              color: AppTheme.textTertiary,
             ),
           ),
           const SizedBox(width: 8),

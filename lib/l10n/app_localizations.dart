@@ -1863,7 +1863,7 @@ abstract class AppLocalizations {
   /// App tagline
   ///
   /// In en, this message translates to:
-  /// **'Where Sports Fans Connect'**
+  /// **'Where Soccer Fans Connect'**
   String get whereSportsFansConnect;
 
   /// Email verification screen title

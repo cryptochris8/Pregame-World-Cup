@@ -46,7 +46,7 @@ class _ShareSheetState extends State<ShareSheet> {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: Colors.grey[400],
+                  color: AppTheme.textTertiary,
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -70,7 +70,7 @@ class _ShareSheetState extends State<ShareSheet> {
             Text(
               'Share to',
               style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                   ),
             ),
             const SizedBox(height: 12),
@@ -107,7 +107,7 @@ class _ShareSheetState extends State<ShareSheet> {
             Text(
               'More options',
               style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                   ),
             ),
             const SizedBox(height: 12),
@@ -188,7 +188,7 @@ class _ShareSheetState extends State<ShareSheet> {
                 Text(
                   widget.content.description,
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: Colors.grey[600],
+                        color: AppTheme.textTertiary,
                       ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -280,15 +280,15 @@ class _ShareSheetState extends State<ShareSheet> {
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-          color: Colors.grey[200],
+          color: AppTheme.backgroundElevated,
           borderRadius: BorderRadius.circular(10),
         ),
-        child: Icon(icon, color: Colors.grey[700]),
+        child: Icon(icon, color: AppTheme.textSecondary),
       ),
       title: Text(title),
       subtitle: Text(
         subtitle,
-        style: TextStyle(color: Colors.grey[600], fontSize: 12),
+        style: TextStyle(color: AppTheme.textTertiary, fontSize: 12),
       ),
       onTap: _isLoading ? null : onTap,
       contentPadding: EdgeInsets.zero,

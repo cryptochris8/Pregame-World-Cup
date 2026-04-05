@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/watch_party.dart';
 import 'visibility_badge.dart';
 
@@ -84,13 +85,13 @@ class WatchPartyCard extends StatelessWidget {
                   Icon(
                     Icons.calendar_today,
                     size: 16,
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                   ),
                   const SizedBox(width: 4),
                   Text(
                     '${dateFormat.format(watchParty.gameDateTime)} at ${timeFormat.format(watchParty.gameDateTime)}',
                     style: theme.textTheme.bodySmall?.copyWith(
-                      color: Colors.grey[600],
+                      color: AppTheme.textTertiary,
                     ),
                   ),
                 ],
@@ -103,14 +104,14 @@ class WatchPartyCard extends StatelessWidget {
                     Icon(
                       Icons.location_on,
                       size: 16,
-                      color: Colors.grey[600],
+                      color: AppTheme.textTertiary,
                     ),
                     const SizedBox(width: 4),
                     Expanded(
                       child: Text(
                         watchParty.venueName,
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: Colors.grey[600],
+                          color: AppTheme.textTertiary,
                         ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
@@ -197,7 +198,7 @@ class WatchPartyCard extends StatelessWidget {
                       Text(
                         '(${watchParty.virtualAttendeesCount} virtual)',
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: Colors.grey[500],
+                          color: AppTheme.textTertiary,
                         ),
                       ),
                     ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/user_profile.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -26,7 +27,7 @@ class ProfileHeader extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       margin: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
@@ -50,7 +51,7 @@ class ProfileHeader extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: const Color(0xFF8B4513),
+                        color: AppTheme.primaryOrange,
                         width: 3,
                       ),
                     ),
@@ -75,12 +76,12 @@ class ProfileHeader extends StatelessWidget {
                         height: 18,
                         decoration: BoxDecoration(
                           color: profile.isOnline
-                              ? Colors.green
+                              ? AppTheme.successColor
                               : profile.isRecentlyActive
-                                  ? Colors.orange
-                                  : Colors.grey,
+                                  ? AppTheme.primaryOrange
+                                  : AppTheme.textTertiary,
                           shape: BoxShape.circle,
-                          border: Border.all(color: Colors.white, width: 3),
+                          border: Border.all(color: AppTheme.backgroundCard, width: 3),
                         ),
                       ),
                     ),
@@ -99,7 +100,7 @@ class ProfileHeader extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF2D1810),
+                        color: AppTheme.textLight,
                       ),
                     ),
 
@@ -113,10 +114,10 @@ class ProfileHeader extends StatelessWidget {
                             height: 8,
                             decoration: BoxDecoration(
                               color: profile.isOnline
-                                  ? Colors.green
+                                  ? AppTheme.successColor
                                   : profile.isRecentlyActive
-                                      ? Colors.orange
-                                      : Colors.grey,
+                                      ? AppTheme.primaryOrange
+                                      : AppTheme.textTertiary,
                               shape: BoxShape.circle,
                             ),
                           ),
@@ -126,8 +127,8 @@ class ProfileHeader extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 13,
                               color: profile.isOnline
-                                  ? Colors.green[700]
-                                  : Colors.grey[600],
+                                  ? AppTheme.successColor
+                                  : AppTheme.textTertiary,
                               fontWeight: profile.isOnline
                                   ? FontWeight.w600
                                   : FontWeight.normal,
@@ -148,8 +149,8 @@ class ProfileHeader extends StatelessWidget {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            const Color(0xFF8B4513),
-                            Colors.orange[600]!,
+                            AppTheme.primaryOrange,
+                            AppTheme.primaryOrange.withValues(alpha: 0.8),
                           ],
                         ),
                         borderRadius: BorderRadius.circular(20),
@@ -179,17 +180,17 @@ class ProfileHeader extends StatelessWidget {
                       const SizedBox(height: 8),
                       Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.location_on,
-                            color: Colors.grey[600],
+                            color: AppTheme.textTertiary,
                             size: 16,
                           ),
                           const SizedBox(width: 4),
                           Expanded(
                             child: Text(
                               profile.homeLocation!,
-                              style: TextStyle(
-                                color: Colors.grey[600],
+                              style: const TextStyle(
+                                color: AppTheme.textTertiary,
                                 fontSize: 14,
                               ),
                               overflow: TextOverflow.ellipsis,
@@ -211,15 +212,15 @@ class ProfileHeader extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.grey[50],
+                color: AppTheme.backgroundCard,
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Colors.grey[200]!),
+                border: Border.all(color: AppTheme.backgroundElevated),
               ),
               child: Text(
                 profile.bio!,
                 style: const TextStyle(
                   fontSize: 15,
-                  color: Color(0xFF2D1810),
+                  color: AppTheme.textLight,
                   height: 1.4,
                 ),
                 textAlign: TextAlign.center,
@@ -243,8 +244,8 @@ class ProfileHeader extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFF8B4513),
-            Colors.orange[600]!,
+            AppTheme.primaryOrange,
+            AppTheme.primaryOrange.withValues(alpha: 0.8),
           ],
         ),
       ),
@@ -273,7 +274,7 @@ class ProfileHeader extends StatelessWidget {
             onEditPressed?.call();
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF8B4513),
+            backgroundColor: AppTheme.primaryOrange,
             foregroundColor: Colors.white,
             padding: const EdgeInsets.symmetric(vertical: 12),
             shape: RoundedRectangleBorder(
@@ -330,8 +331,8 @@ class ProfileHeader extends StatelessWidget {
                 onMessagePressed?.call();
               },
               style: OutlinedButton.styleFrom(
-                foregroundColor: const Color(0xFF8B4513),
-                side: const BorderSide(color: Color(0xFF8B4513)),
+                foregroundColor: AppTheme.primaryOrange,
+                side: const BorderSide(color: AppTheme.primaryOrange),
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
@@ -355,13 +356,13 @@ class ProfileHeader extends StatelessWidget {
   Color _getConnectionButtonColor() {
     switch (connectionStatus) {
       case 'friends':
-        return Colors.green;
+        return AppTheme.successColor;
       case 'pending':
-        return Colors.orange;
+        return AppTheme.primaryOrange;
       case 'following':
         return Colors.blue;
       default:
-        return const Color(0xFF8B4513);
+        return AppTheme.primaryOrange;
     }
   }
 

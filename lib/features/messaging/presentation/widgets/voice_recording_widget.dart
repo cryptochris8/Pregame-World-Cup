@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
+import '../../../../config/app_theme.dart';
 import '../../domain/services/voice_recording_service.dart';
 
 class VoiceRecordingWidget extends StatefulWidget {
@@ -192,7 +193,7 @@ class _VoiceRecordingWidgetState extends State<VoiceRecordingWidget>
             const SizedBox(width: 8),
             Text(
               _errorMessage ?? 'Initializing microphone...',
-              style: TextStyle(color: Colors.grey[600]),
+              style: const TextStyle(color: AppTheme.textTertiary),
             ),
           ],
         ),

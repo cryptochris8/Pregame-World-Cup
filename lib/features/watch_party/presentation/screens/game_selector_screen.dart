@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../worldcup/domain/entities/world_cup_match.dart';
@@ -134,7 +135,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 filled: true,
-                fillColor: Colors.grey[100],
+                fillColor: AppTheme.backgroundCard,
               ),
               onChanged: (_) => _applyFilters(),
             ),
@@ -166,7 +167,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                 Text(
                   '${_filteredMatches.length} matches',
                   style: TextStyle(
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                     fontSize: 13,
                   ),
                 ),
@@ -236,7 +237,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
-                  color: Colors.grey,
+                  color: AppTheme.textTertiary,
                 ),
               ),
             ),
@@ -291,7 +292,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                     time,
                     style: TextStyle(
                       fontSize: 12,
-                      color: Colors.grey[600],
+                      color: AppTheme.textTertiary,
                     ),
                   ),
                 ],
@@ -330,7 +331,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                     child: Text(
                       'vs',
                       style: TextStyle(
-                        color: Colors.grey[500],
+                        color: AppTheme.textTertiary,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -371,7 +372,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                     Icon(
                       Icons.stadium,
                       size: 14,
-                      color: Colors.grey[500],
+                      color: AppTheme.textTertiary,
                     ),
                     const SizedBox(width: 4),
                     Expanded(
@@ -379,7 +380,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                         '${match.venueName}${match.venueCity != null ? ', ${match.venueCity}' : ''}',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey[600],
+                          color: AppTheme.textTertiary,
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -399,7 +400,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.sports_soccer, size: 64, color: Colors.grey[300]),
+          Icon(Icons.sports_soccer, size: 64, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(
             'No matches found',
@@ -408,7 +409,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
           const SizedBox(height: 8),
           Text(
             'Try adjusting your search or filters',
-            style: TextStyle(color: Colors.grey[600]),
+            style: TextStyle(color: AppTheme.textTertiary),
           ),
         ],
       ),
@@ -420,7 +421,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.error_outline, size: 64, color: Colors.grey[400]),
+          Icon(Icons.error_outline, size: 64, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(_error ?? 'An error occurred'),
           const SizedBox(height: 16),

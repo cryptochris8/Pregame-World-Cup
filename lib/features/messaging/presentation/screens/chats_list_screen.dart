@@ -228,7 +228,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.grey[100],
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
@@ -254,7 +254,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           ],
         ),
         labelColor: Colors.white,
-        unselectedLabelColor: Colors.grey[600],
+        unselectedLabelColor: AppTheme.textTertiary,
         labelStyle: const TextStyle(
           fontWeight: FontWeight.w600,
           fontSize: 14,
@@ -279,7 +279,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                       '${_directChats.length}',
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.grey[700],
+                        color: AppTheme.textTertiary,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -307,7 +307,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                       '${_groupChats.length}',
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.grey[700],
+                        color: AppTheme.textTertiary,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -335,7 +335,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                       '${_teamChats.length}',
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.grey[700],
+                        color: AppTheme.textTertiary,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -389,7 +389,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
                 child: Container(
                   margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: AppTheme.backgroundCard,
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
@@ -421,7 +421,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           Icon(
             Icons.chat_bubble_outline,
             size: 80,
-            color: Colors.grey[300],
+            color: AppTheme.textTertiary,
           ),
           const SizedBox(height: 24),
           Text(
@@ -429,7 +429,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w600,
-              color: Colors.grey[600],
+              color: AppTheme.textTertiary,
             ),
           ),
           const SizedBox(height: 8),
@@ -438,7 +438,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 16,
-              color: Colors.grey[500],
+              color: AppTheme.textTertiary,
             ),
           ),
           const SizedBox(height: 32),
@@ -486,14 +486,14 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
           Icon(
             Icons.error_outline,
             size: 64,
-            color: Colors.grey[400],
+            color: AppTheme.textTertiary,
           ),
           const SizedBox(height: 16),
           Text(
             l10n.errorLoadingConversations,
             style: TextStyle(
               fontSize: 18,
-              color: Colors.grey[600],
+              color: AppTheme.textTertiary,
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -502,7 +502,7 @@ class _ChatsListScreenState extends State<ChatsListScreen> with TickerProviderSt
             l10n.pleaseTryAgainLater,
             style: TextStyle(
               fontSize: 14,
-              color: Colors.grey[500],
+              color: AppTheme.textTertiary,
             ),
           ),
           const SizedBox(height: 24),

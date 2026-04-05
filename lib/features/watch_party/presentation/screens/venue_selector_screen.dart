@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../features/recommendations/data/datasources/places_api_datasource.dart';
 import '../../../../features/recommendations/domain/entities/place.dart';
 import '../../../../injection_container.dart';
@@ -182,7 +183,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 filled: true,
-                fillColor: Colors.grey[100],
+                fillColor: AppTheme.backgroundCard,
               ),
               onSubmitted: _searchVenues,
             ),
@@ -273,7 +274,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
                 child: Container(
                   width: 80,
                   height: 80,
-                  color: Colors.grey[200],
+                  color: AppTheme.backgroundElevated,
                   child: Icon(
                     hasPhoto ? Icons.local_bar : Icons.sports_bar,
                     size: 32,
@@ -302,7 +303,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
                       Text(
                         address,
                         style: TextStyle(
-                          color: Colors.grey[600],
+                          color: AppTheme.textTertiary,
                           fontSize: 13,
                         ),
                         maxLines: 2,
@@ -342,7 +343,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.location_off, size: 80, color: Colors.grey[300]),
+          Icon(Icons.location_off, size: 80, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(
             'No venues found',
@@ -351,7 +352,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
           const SizedBox(height: 8),
           Text(
             'Try adjusting your search',
-            style: TextStyle(color: Colors.grey[600]),
+            style: TextStyle(color: AppTheme.textTertiary),
           ),
         ],
       ),
@@ -363,7 +364,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.error_outline, size: 64, color: Colors.grey[400]),
+          Icon(Icons.error_outline, size: 64, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(_error ?? 'An error occurred'),
           const SizedBox(height: 16),

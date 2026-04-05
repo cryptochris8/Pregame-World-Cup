@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/watch_party_message.dart';
 import '../../domain/entities/watch_party_member.dart';
 import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
@@ -41,14 +42,14 @@ class WatchPartyChatMessage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.grey[200],
+            color: AppTheme.backgroundElevated,
             borderRadius: BorderRadius.circular(16),
           ),
           child: Text(
             message.content,
             style: TextStyle(
               fontSize: 12,
-              color: Colors.grey[700],
+              color: AppTheme.textSecondary,
               fontStyle: FontStyle.italic,
             ),
             textAlign: TextAlign.center,
@@ -66,15 +67,15 @@ class WatchPartyChatMessage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.grey[100],
+            color: AppTheme.backgroundCard,
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.grey[300]!),
+            border: Border.all(color: AppTheme.backgroundElevated),
           ),
           child: Text(
             'Message deleted',
             style: TextStyle(
               fontSize: 13,
-              color: Colors.grey[500],
+              color: AppTheme.textTertiary,
               fontStyle: FontStyle.italic,
             ),
           ),
@@ -177,7 +178,7 @@ class WatchPartyChatMessage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: isCurrentUser
                           ? const Color(0xFF1E3A8A)
-                          : Colors.grey[100],
+                          : AppTheme.backgroundCard,
                       borderRadius: BorderRadius.only(
                         topLeft: const Radius.circular(16),
                         topRight: const Radius.circular(16),
@@ -202,7 +203,7 @@ class WatchPartyChatMessage extends StatelessWidget {
                             message.content,
                             style: TextStyle(
                               fontSize: 14,
-                              color: isCurrentUser ? Colors.white : Colors.black87,
+                              color: isCurrentUser ? Colors.white : AppTheme.textLight,
                             ),
                           ),
                       ],
@@ -219,7 +220,7 @@ class WatchPartyChatMessage extends StatelessWidget {
                       message.formattedTime,
                       style: TextStyle(
                         fontSize: 11,
-                        color: Colors.grey[500],
+                        color: AppTheme.textTertiary,
                       ),
                     ),
                   ),
@@ -303,7 +304,7 @@ class WatchPartyChatMessage extends StatelessWidget {
         placeholder: (context, url) => Container(
           width: 200,
           height: 150,
-          color: Colors.grey[300],
+          color: AppTheme.backgroundElevated,
           child: const Center(
             child: CircularProgressIndicator(),
           ),
@@ -311,7 +312,7 @@ class WatchPartyChatMessage extends StatelessWidget {
         errorWidget: (context, url, error) => Container(
           width: 200,
           height: 150,
-          color: Colors.grey[300],
+          color: AppTheme.backgroundElevated,
           child: const Icon(Icons.broken_image),
         ),
       ),
@@ -329,7 +330,7 @@ class WatchPartyChatMessage extends StatelessWidget {
         errorWidget: (context, url, error) => Container(
           width: 200,
           height: 150,
-          color: Colors.grey[300],
+          color: AppTheme.backgroundElevated,
           child: const Icon(Icons.gif),
         ),
       ),
@@ -348,7 +349,7 @@ class WatchPartyChatMessage extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
             decoration: BoxDecoration(
-              color: Colors.grey[200],
+              color: AppTheme.backgroundElevated,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Row(

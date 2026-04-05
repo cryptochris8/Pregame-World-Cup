@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 /// Chat input widget for watch party messaging
@@ -100,14 +101,14 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
                         : Icons.emoji_emotions_outlined),
                     color: _showEmojiPicker
                         ? const Color(0xFF1E3A8A)
-                        : Colors.grey[600],
+                        : AppTheme.textTertiary,
                   ),
 
                   // Text field
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[100],
+                        color: AppTheme.backgroundCard,
                         borderRadius: BorderRadius.circular(24),
                       ),
                       child: TextField(
@@ -140,7 +141,7 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
                         Icons.send_rounded,
                         color: _hasText
                             ? const Color(0xFF1E3A8A)
-                            : Colors.grey[400],
+                            : AppTheme.textTertiary,
                       ),
                     ),
                   ),
@@ -165,9 +166,9 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
       height: 160,
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: Colors.grey[50],
+        color: AppTheme.backgroundCard,
         border: Border(
-          bottom: BorderSide(color: Colors.grey[200]!),
+          bottom: BorderSide(color: AppTheme.backgroundElevated),
         ),
       ),
       child: GridView.builder(
@@ -208,9 +209,9 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.grey[50],
+        color: AppTheme.backgroundCard,
         border: Border(
-          bottom: BorderSide(color: Colors.grey[200]!),
+          bottom: BorderSide(color: AppTheme.backgroundElevated),
         ),
       ),
       child: Row(
@@ -240,7 +241,7 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
                   widget.replyingTo!,
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -251,7 +252,7 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
           IconButton(
             onPressed: widget.onCancelReply,
             icon: const Icon(Icons.close, size: 18),
-            color: Colors.grey[500],
+            color: AppTheme.textTertiary,
           ),
         ],
       ),
@@ -262,18 +263,18 @@ class _WatchPartyChatInputState extends State<WatchPartyChatInput> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.grey[100],
+        color: AppTheme.backgroundCard,
       ),
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.lock, size: 16, color: Colors.grey[500]),
+            Icon(Icons.lock, size: 16, color: AppTheme.textTertiary),
             const SizedBox(width: 8),
             Text(
               widget.disabledMessage ?? 'You cannot send messages',
               style: TextStyle(
-                color: Colors.grey[600],
+                color: AppTheme.textTertiary,
                 fontSize: 14,
               ),
             ),

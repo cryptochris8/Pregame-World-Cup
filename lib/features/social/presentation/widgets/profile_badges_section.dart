@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 
 class ProfileBadgesSection extends StatelessWidget {
   final List<String> badges;
@@ -25,8 +26,8 @@ class ProfileBadgesSection extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                const Color(0xFF8B4513),
-                Colors.orange[600]!,
+                AppTheme.primaryOrange,
+                AppTheme.primaryOrange.withValues(alpha: 0.8),
               ],
             ),
             borderRadius: BorderRadius.circular(12),
@@ -98,7 +99,7 @@ class ProfileBadgesSection extends StatelessWidget {
   Widget _buildBadgeCard(String badge) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
@@ -114,7 +115,7 @@ class ProfileBadgesSection extends StatelessWidget {
           Icon(
             _getBadgeIcon(badge),
             size: 32,
-            color: const Color(0xFF8B4513),
+            color: AppTheme.primaryOrange,
           ),
           const SizedBox(height: 8),
           Text(
@@ -137,10 +138,10 @@ class ProfileBadgesSection extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.emoji_events,
             size: 64,
-            color: Colors.grey[400],
+            color: AppTheme.textTertiary,
           ),
           const SizedBox(height: 16),
           const Text(
@@ -148,7 +149,7 @@ class ProfileBadgesSection extends StatelessWidget {
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,
-              color: Colors.grey,
+              color: AppTheme.textTertiary,
             ),
           ),
           const SizedBox(height: 8),
@@ -156,7 +157,7 @@ class ProfileBadgesSection extends StatelessWidget {
             'Complete activities to earn badges!',
             style: TextStyle(
               fontSize: 14,
-              color: Colors.grey,
+              color: AppTheme.textTertiary,
             ),
             textAlign: TextAlign.center,
           ),

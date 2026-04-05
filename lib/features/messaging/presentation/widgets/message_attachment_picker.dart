@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/services/file_upload_service.dart';
 import '../../domain/services/voice_recording_service.dart';
 import '../../domain/entities/file_attachment.dart';
@@ -77,7 +78,7 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
   Widget _buildAttachmentSheet() {
     return Container(
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: SafeArea(
@@ -90,7 +91,7 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
               height: 4,
               margin: const EdgeInsets.symmetric(vertical: 12),
               decoration: BoxDecoration(
-                color: Colors.grey[300],
+                color: AppTheme.backgroundElevated,
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -128,7 +129,7 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
                     const SizedBox(height: 12),
                     Text(
                       _uploadProgress ?? 'Uploading...',
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: const TextStyle(color: AppTheme.textTertiary),
                     ),
                   ],
                 ),
@@ -351,7 +352,7 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
   Widget _buildVoiceRecorderSheet() {
     return Container(
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: SafeArea(
@@ -366,7 +367,7 @@ class _MessageAttachmentPickerState extends State<MessageAttachmentPicker>
                 height: 4,
                 margin: const EdgeInsets.only(bottom: 20),
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
+                  color: AppTheme.backgroundElevated,
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),

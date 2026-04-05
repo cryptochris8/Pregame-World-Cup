@@ -930,7 +930,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get signUp => 'S\'inscrire';
 
   @override
-  String get whereSportsFansConnect => 'Là où les Fans de Sport se Connectent';
+  String get whereSportsFansConnect =>
+      'Là où les Fans de Football se Connectent';
 
   @override
   String get verifyYourEmail => 'Vérifiez Votre E-mail';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../domain/entities/place.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../core/services/venue_recommendation_service.dart';
 
 class EnhancedVenueCard extends StatelessWidget {
@@ -331,7 +332,7 @@ class VenueCategoryFilterChips extends StatelessWidget {
               label: Text(
                 'All (${venues.length})',
                 style: TextStyle(
-                  color: selectedCategory == null ? Colors.white : Colors.grey[300],
+                  color: selectedCategory == null ? Colors.white : AppTheme.backgroundElevated,
                   fontWeight: selectedCategory == null ? FontWeight.bold : FontWeight.normal,
                 ),
               ),
@@ -359,7 +360,7 @@ class VenueCategoryFilterChips extends StatelessWidget {
                     Text(
                       '${category.displayName} ($count)',
                       style: TextStyle(
-                        color: isSelected ? Colors.white : Colors.grey[300],
+                        color: isSelected ? Colors.white : AppTheme.backgroundElevated,
                         fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                       ),
                     ),

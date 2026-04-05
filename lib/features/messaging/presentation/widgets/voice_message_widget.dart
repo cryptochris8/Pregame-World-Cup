@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
+import '../../../../config/app_theme.dart';
 import '../../domain/services/voice_recording_service.dart';
 import '../../domain/entities/voice_message.dart';
 
@@ -129,7 +130,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                 size: 16,
                 color: widget.isSentByCurrentUser 
                     ? widget.primaryColor 
-                    : Colors.grey[600],
+                    : AppTheme.textTertiary,
               ),
               const SizedBox(width: 6),
               Text(
@@ -139,7 +140,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                   fontWeight: FontWeight.w500,
                   color: widget.isSentByCurrentUser 
                       ? widget.primaryColor 
-                      : Colors.grey[600],
+                      : AppTheme.textTertiary,
                 ),
               ),
               const Spacer(),
@@ -149,7 +150,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                   fontSize: 12,
                   color: widget.isSentByCurrentUser 
                       ? widget.primaryColor 
-                      : Colors.grey[600],
+                      : AppTheme.textTertiary,
                 ),
               ),
             ],
@@ -219,7 +220,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                       fontSize: 11,
                       color: widget.isSentByCurrentUser 
                           ? widget.primaryColor.withValues(alpha:0.7)
-                          : Colors.grey[500],
+                          : AppTheme.textTertiary,
                     ),
                   ),
                   const Spacer(),
@@ -229,7 +230,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget>
                       size: 12,
                       color: widget.isSentByCurrentUser 
                           ? widget.primaryColor.withValues(alpha:0.7)
-                          : Colors.grey[500],
+                          : AppTheme.textTertiary,
                     ),
                 ],
               ),

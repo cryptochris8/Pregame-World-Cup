@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 /// Screen that requires users to accept the Terms of Service and EULA
@@ -212,8 +213,8 @@ class _TermsAcceptanceScreenState extends State<TermsAcceptanceScreen> {
                               onPressed: _openTermsUrl,
                               child: Text(
                                 'Full Terms',
-                                style: TextStyle(
-                                  color: Colors.orange[400],
+                                style: const TextStyle(
+                                  color: AppTheme.primaryOrange,
                                   decoration: TextDecoration.underline,
                                 ),
                               ),
@@ -221,10 +222,10 @@ class _TermsAcceptanceScreenState extends State<TermsAcceptanceScreen> {
                             const SizedBox(width: 16),
                             TextButton(
                               onPressed: _openPrivacyUrl,
-                              child: Text(
+                              child: const Text(
                                 'Privacy Policy',
                                 style: TextStyle(
-                                  color: Colors.orange[400],
+                                  color: AppTheme.primaryOrange,
                                   decoration: TextDecoration.underline,
                                 ),
                               ),
@@ -248,9 +249,9 @@ class _TermsAcceptanceScreenState extends State<TermsAcceptanceScreen> {
                       ? _acceptTerms
                       : null,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange,
+                    backgroundColor: AppTheme.primaryOrange,
                     disabledBackgroundColor:
-                        Colors.orange.withValues(alpha: 0.3),
+                        AppTheme.primaryOrange.withValues(alpha: 0.3),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),

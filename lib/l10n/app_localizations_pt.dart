@@ -928,7 +928,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signUp => 'Cadastrar';
 
   @override
-  String get whereSportsFansConnect => 'Onde Fãs de Esporte se Conectam';
+  String get whereSportsFansConnect => 'Onde Fãs de Futebol se Conectam';
 
   @override
   String get verifyYourEmail => 'Verifique seu E-mail';

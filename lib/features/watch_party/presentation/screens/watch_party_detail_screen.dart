@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../config/app_theme.dart';
 import '../bloc/watch_party_bloc.dart';
 import '../widgets/widgets.dart';
 import '../../domain/entities/watch_party.dart';
@@ -227,7 +228,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   const SizedBox(height: 12),
                   Row(
                     children: [
-                      const Icon(Icons.calendar_today, size: 18, color: Colors.grey),
+                      Icon(Icons.calendar_today, size: 18, color: AppTheme.textTertiary),
                       const SizedBox(width: 8),
                       Text(dateFormat.format(watchParty.gameDateTime)),
                     ],
@@ -235,7 +236,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      const Icon(Icons.access_time, size: 18, color: Colors.grey),
+                      Icon(Icons.access_time, size: 18, color: AppTheme.textTertiary),
                       const SizedBox(width: 8),
                       Text(timeFormat.format(watchParty.gameDateTime)),
                     ],
@@ -272,7 +273,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                     const SizedBox(height: 8),
                     Text(
                       watchParty.venueAddress!,
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: TextStyle(color: AppTheme.textTertiary),
                     ),
                   ],
                   const SizedBox(height: 12),
@@ -368,16 +369,16 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.chat_bubble_outline, size: 64, color: Colors.grey[300]),
+          Icon(Icons.chat_bubble_outline, size: 64, color: AppTheme.textTertiary),
           const SizedBox(height: 16),
           Text(
             l10n.noMessagesYetChat,
-            style: TextStyle(color: Colors.grey[600]),
+            style: TextStyle(color: AppTheme.textTertiary),
           ),
           const SizedBox(height: 8),
           Text(
             l10n.beFirstToSayHello,
-            style: TextStyle(color: Colors.grey[500], fontSize: 12),
+            style: TextStyle(color: AppTheme.textTertiary, fontSize: 12),
           ),
         ],
       ),
@@ -415,7 +416,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
                     Text(
                       AppLocalizations.of(context).spotsLeft(watchParty.availableSpots),
                       style: TextStyle(
-                        color: Colors.grey[600],
+                        color: AppTheme.textTertiary,
                         fontSize: 12,
                       ),
                     ),

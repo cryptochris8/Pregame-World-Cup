@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/chat_message.dart';
 import 'copa_avatar.dart';
 
@@ -19,8 +20,8 @@ class ChatMessageListItem extends StatelessWidget {
         color: isUserMessage
             ? Colors.blue[200]
             : isThinking
-                ? Colors.grey[200]
-                : Colors.grey[300],
+                ? AppTheme.backgroundElevated
+                : AppTheme.backgroundElevated,
       ),
       padding: const EdgeInsets.all(16),
       child: isThinking
@@ -32,14 +33,14 @@ class ChatMessageListItem extends StatelessWidget {
                   height: 16,
                   child: CircularProgressIndicator(
                     strokeWidth: 2,
-                    color: Colors.grey[600],
+                    color: AppTheme.textTertiary,
                   ),
                 ),
                 const SizedBox(width: 10),
                 Text(
                   message.text,
-                  style: TextStyle(
-                    color: Colors.grey[600],
+                  style: const TextStyle(
+                    color: AppTheme.textTertiary,
                     fontStyle: FontStyle.italic,
                   ),
                 ),
@@ -48,7 +49,7 @@ class ChatMessageListItem extends StatelessWidget {
           : Text(
               message.text,
               style: TextStyle(
-                color: isUserMessage ? Colors.black87 : Colors.black,
+                color: isUserMessage ? AppTheme.textLight : AppTheme.textWhite,
               ),
             ),
     );

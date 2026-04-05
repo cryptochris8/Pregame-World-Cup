@@ -287,7 +287,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                             child: Icon(
                               icon,
                               key: ValueKey('nav-$index-$icon-$isSelected'),
-                              color: isSelected ? Colors.white : Colors.grey[600],
+                              color: isSelected ? Colors.white : AppTheme.textTertiary,
                               size: 20,
                             ),
                           ),
@@ -340,7 +340,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                       duration: const Duration(milliseconds: 200),
                       style: TextStyle(
                         fontSize: 11,
-                        color: isSelected ? color : Colors.grey[600],
+                        color: isSelected ? color : AppTheme.textTertiary,
                         fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                       ),
                       child: Text(

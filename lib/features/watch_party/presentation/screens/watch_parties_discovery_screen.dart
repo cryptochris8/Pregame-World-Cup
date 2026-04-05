@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 import '../bloc/watch_party_bloc.dart';
@@ -72,7 +73,7 @@ class _WatchPartiesDiscoveryScreenState
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.error_outline, size: 64, color: Colors.grey[400]),
+                  Icon(Icons.error_outline, size: 64, color: AppTheme.textTertiary),
                   const SizedBox(height: 16),
                   Text(state.message),
                   const SizedBox(height: 16),
@@ -128,7 +129,7 @@ class _WatchPartiesDiscoveryScreenState
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.celebration, size: 80, color: Colors.grey[300]),
+          Icon(Icons.celebration, size: 80, color: AppTheme.textTertiary),
           const SizedBox(height: 24),
           Text(
             l10n.noWatchPartiesFound,
@@ -139,7 +140,7 @@ class _WatchPartiesDiscoveryScreenState
             widget.gameName != null
                 ? l10n.beFirstToCreateForMatch
                 : l10n.beFirstToCreate,
-            style: TextStyle(color: Colors.grey[600]),
+            style: TextStyle(color: AppTheme.textTertiary),
           ),
           const SizedBox(height: 24),
           ElevatedButton.icon(
