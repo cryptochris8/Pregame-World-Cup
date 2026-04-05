@@ -383,7 +383,6 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
             child: FriendItemWidget(
               friend: friend,
               onTap: () => _navigateToProfile(friend.userId),
-              onMessage: () => _startMessage(friend),
               onRemove: () => _removeFriend(friend),
               onBlock: () => _blockUser(friend),
             ),

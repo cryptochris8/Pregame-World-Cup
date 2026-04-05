@@ -286,7 +286,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
 
       switch (type) {
         case 'new_message':
-          _navigateToChat(data);
+          // Messaging tab temporarily disabled
           break;
         case 'friend_request':
           _navigateToFriendRequests();

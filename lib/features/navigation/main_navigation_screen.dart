@@ -7,12 +7,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../core/services/logging_service.dart';
 import '../../l10n/app_localizations.dart';
 import '../social/presentation/screens/activity_feed_screen.dart';
-import '../messaging/presentation/screens/chats_list_screen.dart';
 import '../social/presentation/screens/notifications_screen.dart';
 import '../social/presentation/screens/enhanced_friends_list_screen.dart';
 import '../social/presentation/screens/user_profile_screen.dart';
 import '../social/domain/services/notification_service.dart';
-import '../messaging/domain/services/messaging_service.dart';
 import '../../config/app_theme.dart';
 
 // World Cup 2026
@@ -36,11 +34,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     with TickerProviderStateMixin {
   late int _selectedIndex;
   final NotificationService _notificationService = di.sl<NotificationService>();
-  final MessagingService _messagingService = di.sl<MessagingService>();
   int _unreadNotifications = 0;
-  int _unreadMessages = 0;
   StreamSubscription<int>? _notificationSubscription;
-  StreamSubscription<List<dynamic>>? _chatsSubscription;
 
   late final List<Widget> _screens;
   late AnimationController _navigationController;
@@ -51,13 +46,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
   void initState() {
     super.initState();
     // Use the initial tab index provided, clamped to valid range
-    _selectedIndex = widget.initialTabIndex.clamp(0, 5);
+    _selectedIndex = widget.initialTabIndex.clamp(0, 4);
 
     _screens = [
       // World Cup 2026 - Main feature with all match/group/bracket/team screens
       _WorldCupFeatureWrapper(),
       const ActivityFeedScreen(),
-      const ChatsListScreen(),
       const NotificationsScreen(),
       const EnhancedFriendsListScreen(),
       UserProfileScreen(userId: FirebaseAuth.instance.currentUser?.uid ?? ''),
@@ -74,7 +68,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Initialize tab controllers for individual nav items
     _tabControllers = List.generate(
-      6,
+      5,
       (index) => AnimationController(
         duration: const Duration(milliseconds: 200),
         vsync: this,
@@ -90,7 +84,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void dispose() {
     _notificationSubscription?.cancel();
-    _chatsSubscription?.cancel();
     _pageController.dispose();
     _navigationController.dispose();
     for (final controller in _tabControllers) {
@@ -105,9 +98,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       if (!mounted) return;
       
       await _notificationService.initialize();
-      if (!mounted) return; // Check again after async operation
-      
-      await _messagingService.initialize();
       if (!mounted) return; // Check again after async operation
       
       _listenToUnreadCounts();
@@ -128,17 +118,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       }
     });
 
-    _chatsSubscription = _messagingService.chatsStream.listen((chats) {
-      if (mounted) {
-        final totalUnread = chats.fold<int>(
-          0,
-          (sum, chat) => sum + chat.getUnreadCount(currentUser.uid),
-        );
-        setState(() {
-          _unreadMessages = totalUnread;
-        });
-      }
-    });
   }
 
   void _onTabSelected(int index) {
@@ -225,10 +204,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                   children: [
                     _buildNavItem(0, Icons.sports_soccer, l10n.worldCup, AppTheme.primaryOrange),
                     _buildNavItem(1, Icons.dynamic_feed, l10n.feed, AppTheme.primaryOrange),
-                    _buildNavItem(2, Icons.message, l10n.messages, AppTheme.primaryOrange, badgeCount: _unreadMessages),
-                    _buildNavItem(3, Icons.notifications, l10n.alerts, AppTheme.primaryOrange, badgeCount: _unreadNotifications),
-                    _buildNavItem(4, Icons.people, l10n.friends, AppTheme.primaryOrange),
-                    _buildNavItem(5, Icons.person, l10n.profile, AppTheme.primaryOrange),
+                    _buildNavItem(2, Icons.notifications, l10n.alerts, AppTheme.primaryOrange, badgeCount: _unreadNotifications),
+                    _buildNavItem(3, Icons.people, l10n.friends, AppTheme.primaryOrange),
+                    _buildNavItem(4, Icons.person, l10n.profile, AppTheme.primaryOrange),
                   ],
                 );
               },

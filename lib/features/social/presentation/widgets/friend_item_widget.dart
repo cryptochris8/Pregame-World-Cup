@@ -4,7 +4,7 @@ import '../../domain/entities/user_profile.dart';
 class FriendItemWidget extends StatelessWidget {
   final UserProfile friend;
   final VoidCallback onTap;
-  final VoidCallback onMessage;
+  final VoidCallback? onMessage;
   final VoidCallback onRemove;
   final VoidCallback onBlock;
 
@@ -12,7 +12,7 @@ class FriendItemWidget extends StatelessWidget {
     super.key,
     required this.friend,
     required this.onTap,
-    required this.onMessage,
+    this.onMessage,
     required this.onRemove,
     required this.onBlock,
   });
@@ -172,14 +172,15 @@ class FriendItemWidget extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Message button
-                  IconButton(
-                    onPressed: onMessage,
-                    icon: const Icon(Icons.message),
-                    color: const Color(0xFF8B4513),
-                    tooltip: 'Message',
-                  ),
-                  
+                  // Message button (hidden when messaging is disabled)
+                  if (onMessage != null)
+                    IconButton(
+                      onPressed: onMessage,
+                      icon: const Icon(Icons.message),
+                      color: const Color(0xFF8B4513),
+                      tooltip: 'Message',
+                    ),
+
                   // More options menu
                   PopupMenuButton<String>(
                     icon: Icon(
