@@ -359,7 +359,7 @@ When photos are fetched, each document is updated with:
 
 ## Firebase Storage Structure
 
-Photos organized by entity type and FIFA code:
+Photos organized by entity type and team code:
 
 ```
 gs://pregame-b089e.firebasestorage.app/

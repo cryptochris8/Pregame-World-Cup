@@ -7,7 +7,7 @@ import 'package:pregame_world_cup/core/utils/team_logo_helper.dart';
 /// TeamLogoHelper now returns emoji flags instead of PNG asset paths.
 void main() {
   group('TeamLogoHelper - getTeamFlag', () {
-    group('Lookup by FIFA code', () {
+    group('Lookup by team code', () {
       test('returns flag emoji for USA', () {
         final flag = TeamLogoHelper.getTeamFlag('USA');
         expect(flag, isNotNull);
@@ -63,7 +63,7 @@ void main() {
         expect(flag, equals('\u{1F1EF}\u{1F1F5}'));
       });
 
-      test('FIFA code lookup is case-insensitive', () {
+      test('team code lookup is case-insensitive', () {
         expect(TeamLogoHelper.getTeamFlag('usa'), equals(TeamLogoHelper.getTeamFlag('USA')));
         expect(TeamLogoHelper.getTeamFlag('bra'), equals(TeamLogoHelper.getTeamFlag('BRA')));
         expect(TeamLogoHelper.getTeamFlag('Arg'), equals(TeamLogoHelper.getTeamFlag('ARG')));
@@ -254,13 +254,13 @@ void main() {
       expect(codes, isNotEmpty);
     });
 
-    test('contains 49 FIFA codes for World Cup 2026 teams', () {
+    test('contains 49 team codes for World Cup 2026 teams', () {
       final codes = TeamLogoHelper.getAvailableTeamCodes();
       // 48 qualified teams + IRQ (Iraq) = 49
       expect(codes.length, equals(49));
     });
 
-    test('contains expected FIFA codes', () {
+    test('contains expected team codes', () {
       final codes = TeamLogoHelper.getAvailableTeamCodes();
       expect(codes, contains('USA'));
       expect(codes, contains('BRA'));

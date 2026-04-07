@@ -34,7 +34,7 @@ void main() {
       'winPercentage': 62.2,
       'titlesWon': 12,
     },
-    'honors': ['Copa America 2019', 'FIFA Confederations Cup 2013'],
+    'honors': ['Copa America 2019', 'Confederations Cup 2013'],
     'tacticalStyle': '4-3-3 with possession-based football',
     'philosophy': 'Attacking football with defensive solidity',
     'strengths': ['Man management', 'Tactical flexibility'],
@@ -160,7 +160,7 @@ void main() {
               children: [
                 Text('Honors'),
                 Chip(label: Text('Copa America 2019')),
-                Chip(label: Text('FIFA Confederations Cup 2013')),
+                Chip(label: Text('Confederations Cup 2013')),
               ],
             ),
           ),
@@ -169,7 +169,7 @@ void main() {
 
       expect(find.text('Honors'), findsOneWidget);
       expect(find.text('Copa America 2019'), findsOneWidget);
-      expect(find.text('FIFA Confederations Cup 2013'), findsOneWidget);
+      expect(find.text('Confederations Cup 2013'), findsOneWidget);
     });
   });
 }

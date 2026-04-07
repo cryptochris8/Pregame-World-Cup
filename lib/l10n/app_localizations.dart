@@ -1986,7 +1986,7 @@ abstract class AppLocalizations {
   /// **'Schedule'**
   String get schedule;
 
-  /// FIFA World Cup 2026 badge text
+  /// World Cup 2026 badge text
   ///
   /// In en, this message translates to:
   /// **'World Cup 2026'**

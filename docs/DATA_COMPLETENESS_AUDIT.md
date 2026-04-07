@@ -32,11 +32,11 @@ This document outlines the current state of data completeness for the Pregame Wo
 ### 2. Team Data - 100% Complete
 
 All 48 qualified teams are defined with:
-- FIFA code, full name, short name
+- Team code, full name, short name
 - Flag URL (via flagcdn.com)
 - Confederation (UEFA/CONMEBOL/CONCACAF/AFC/CAF/OFC)
 - Group assignment (A-L)
-- FIFA ranking
+- World ranking
 - World Cup history (titles, best finish, appearances)
 - Coach and captain names
 - Star players
@@ -270,10 +270,10 @@ npx ts-node src/seed-venue-enhancements.ts
 
 ## Data Sources
 
-- **Match Schedule:** FIFA/CONCACAF official announcements
+- **Match Schedule:** CONCACAF official announcements
 - **Player Data:** Transfermarkt, national team announcements
-- **Venue Data:** Stadium official websites, FIFA venue guide
-- **Historical Data:** FIFA archives, Wikipedia
+- **Venue Data:** Stadium official websites, official venue guide
+- **Historical Data:** Official archives, Wikipedia
 - **Live Data (during tournament):** SportsData.io API
 
 ---

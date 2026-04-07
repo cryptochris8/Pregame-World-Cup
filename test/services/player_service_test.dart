@@ -190,7 +190,7 @@ void main() {
       expect(players.any((p) => p.commonName == 'Vinicius Jr.'), true);
     });
 
-    test('filters players correctly by FIFA code', () async {
+    test('filters players correctly by team code', () async {
       await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
       await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
       await fakeFirestore.collection('players').doc('player_003').set(samplePlayerData3);

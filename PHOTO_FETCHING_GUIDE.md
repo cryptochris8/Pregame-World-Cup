@@ -446,12 +446,12 @@ Photos are organized hierarchically:
 ```
 gs://pregame-b089e.firebasestorage.app/
 ├── players/
-│   ├── ar_1.jpg        // FIFA code_player_id
+│   ├── ar_1.jpg        // team code_player_id
 │   ├── pt_2.jpg
 │   ├── fr_3.jpg
 │   └── ...
 ├── managers/
-│   ├── ar_1.jpg        // FIFA code_manager_id
+│   ├── ar_1.jpg        // team code_manager_id
 │   ├── pt_2.jpg
 │   └── ...
 ```

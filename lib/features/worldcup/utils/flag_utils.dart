@@ -4,7 +4,7 @@ class FlagUtils {
 
   /// Team code to ISO country code mapping
   /// Used for flagcdn.com which requires ISO codes
-  static const Map<String, String> fifaToIsoCode = {
+  static const Map<String, String> teamToIsoCode = {
     // CONCACAF
     'USA': 'us', 'MEX': 'mx', 'CAN': 'ca', 'CRC': 'cr', 'JAM': 'jm',
     'HON': 'hn', 'PAN': 'pa', 'SLV': 'sv', 'GTM': 'gt', 'NCA': 'ni',
@@ -45,7 +45,7 @@ class FlagUtils {
 
   /// Get ISO country code from team code
   static String getIsoCode(String teamCode) {
-    return fifaToIsoCode[teamCode.toUpperCase()] ?? teamCode.toLowerCase();
+    return teamToIsoCode[teamCode.toUpperCase()] ?? teamCode.toLowerCase();
   }
 
   /// Get flag URL for a team code using flagcdn.com
@@ -96,6 +96,6 @@ class FlagUtils {
 
   /// Check if a team code has a known ISO mapping
   static bool hasKnownMapping(String teamCode) {
-    return fifaToIsoCode.containsKey(teamCode.toUpperCase());
+    return teamToIsoCode.containsKey(teamCode.toUpperCase());
   }
 }

@@ -495,5 +495,5 @@ Since Higgsfield clips are 5 seconds, you'll need more clips:
 ## HASHTAGS (Copy/Paste)
 
 ```
-#WorldCup2026 #WC2026 #FIFA #Soccer #Football #USMNT #FutbolMexicano #SoccerTikTok #WorldCup #Copa2026
+#WorldCup2026 #WC2026 #Soccer #Football #USMNT #FutbolMexicano #SoccerTikTok #WorldCup #Copa2026
 ```

@@ -349,7 +349,7 @@ final mockManagerARG = {
   'preferredFormation': '4-3-3',
   'coachingStyle': 'Possession',
   'yearsExperience': 7,
-  'trophies': ['FIFA World Cup 2022', 'Copa America 2021'],
+  'trophies': ['World Cup 2022', 'Copa America 2021'],
   'careerWins': 55,
   'careerDraws': 12,
   'careerLosses': 6,
@@ -514,7 +514,7 @@ final mockRecentFormAD = {
   'group_B': {
     'USA': {
       'team_name': 'United States',
-      'fifa_code': 'USA',
+      'team_code': 'USA',
       'recent_matches': [
         {'date': '2026-01-15', 'opponent': 'Canada', 'score': '2-1', 'result': 'W', 'venue': 'home'},
         {'date': '2026-01-10', 'opponent': 'Mexico', 'score': '1-1', 'result': 'D', 'venue': 'away'},
@@ -523,7 +523,7 @@ final mockRecentFormAD = {
     },
     'BRA': {
       'team_name': 'Brazil',
-      'fifa_code': 'BRA',
+      'team_code': 'BRA',
       'recent_matches': [
         {'date': '2026-01-15', 'opponent': 'Chile', 'score': '2-0', 'result': 'W', 'venue': 'home'},
       ],
@@ -536,7 +536,7 @@ final mockRecentFormIL = {
   'group_J': {
     'ARG': {
       'team_name': 'Argentina',
-      'fifa_code': 'ARG',
+      'team_code': 'ARG',
       'recent_matches': [
         {'date': '2026-01-15', 'opponent': 'Uruguay', 'score': '1-0', 'result': 'W', 'venue': 'home'},
         {'date': '2026-01-10', 'opponent': 'Chile', 'score': '2-1', 'result': 'W', 'venue': 'away'},

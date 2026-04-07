@@ -1,11 +1,11 @@
 # Pregame World Cup 2026 - Brainstorm & Research
 
-## FIFA World Cup 2026 Overview
+## World Cup 2026 Overview
 
 ### Tournament Details
 | Aspect | Details |
 |--------|---------|
-| **Official Name** | FIFA World Cup 26 |
+| **Official Name** | World Cup 26 |
 | **Dates** | June 11 - July 19, 2026 |
 | **Host Countries** | USA, Canada, Mexico (first tri-nation World Cup) |
 | **Teams** | 48 (expanded from 32) |
@@ -67,9 +67,9 @@
 
 ---
 
-## FIFA Fan Festivals (Key Feature Opportunity)
+## Fan Festivals (Key Feature Opportunity)
 
-Each host city will have official FIFA Fan Festivals - free public viewing areas with:
+Each host city will have official Fan Festivals - free public viewing areas with:
 - Giant LED screens for live matches
 - Live entertainment & concerts
 - Cultural performances
@@ -104,7 +104,7 @@ Each host city will have official FIFA Fan Festivals - free public viewing areas
 
 | Feature | Details |
 |---------|---------|
-| Coverage | FIFA World Cup complete coverage |
+| Coverage | World Cup complete coverage |
 | Real-time | Live match data, scores, game clock |
 | Data Points | Player stats, HT/FT, extra time, penalties |
 | Integration | Same API structure as college football |
@@ -183,11 +183,11 @@ Each host city will have official FIFA Fan Festivals - free public viewing areas
 
 **To**: National Teams
 ```
-- FIFA Team Code (3-letter: USA, MEX, GER, etc.)
+- Team Code (3-letter: USA, MEX, GER, etc.)
 - Country Name
 - Flag URL
 - Confederation (UEFA, CONMEBOL, CONCACAF, AFC, CAF, OFC)
-- FIFA Ranking
+- World Ranking
 - Coach Name
 - Squad List (players)
 - Group Assignment (A-L)
@@ -264,7 +264,7 @@ Features to add:
 #### 3. Venue Discovery
 **From**: Bars/restaurants near college stadiums
 **To**:
-- Official FIFA Fan Festival locations
+- Official Fan Festival locations
 - Sports bars showing World Cup
 - Watch parties near user
 - Stadium visit planning (for ticket holders)
@@ -373,7 +373,7 @@ Features to add:
 
 **Assets to create**:
 - 48 national team flags (all qualified teams)
-- FIFA World Cup 2026 logo
+- World Cup 2026 logo
 - Stadium images for all 16 venues
 - Fan Festival icons
 
@@ -434,7 +434,7 @@ Rename "Venue Portal" to "Watch Party Host Portal"
 - Early access to features
 
 ### 3. Partnerships
-- Official FIFA Fan Festival integration
+- Official Fan Festival integration
 - Local tourism boards
 - Sports bars/restaurants
 - Beverage sponsors
@@ -468,7 +468,7 @@ Rename "Venue Portal" to "Watch Party Host Portal"
 ## Competitive Analysis
 
 Research similar apps:
-- FIFA Official App
+- Official World Cup App
 - OneFootball
 - FotMob
 - ESPN

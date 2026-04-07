@@ -26,7 +26,7 @@
   "group_I": {
     "FRA": {
       "team_name": "France",
-      "fifa_code": "FRA",
+      "team_code": "FRA",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -104,7 +104,7 @@
     },
     "IRQ": {
       "team_name": "Iraq",
-      "fifa_code": "IRQ",
+      "team_code": "IRQ",
       "recent_matches": [
         {
           "date": "2024-09-05",
@@ -191,7 +191,7 @@
     },
     "NOR": {
       "team_name": "Norway",
-      "fifa_code": "NOR",
+      "team_code": "NOR",
       "recent_matches": [
         {
           "date": "2024-09-06",
@@ -245,7 +245,7 @@
     },
     "SEN": {
       "team_name": "Senegal",
-      "fifa_code": "SEN",
+      "team_code": "SEN",
       "recent_matches": [
         {
           "date": "2025-06-10",
@@ -329,7 +329,7 @@
   "group_J": {
     "ARG": {
       "team_name": "Argentina",
-      "fifa_code": "ARG",
+      "team_code": "ARG",
       "recent_matches": [
         {
           "date": "2025-03-21",
@@ -407,7 +407,7 @@
     },
     "ALG": {
       "team_name": "Algeria",
-      "fifa_code": "ALG",
+      "team_code": "ALG",
       "recent_matches": [
         {
           "date": "2024-06-06",
@@ -494,7 +494,7 @@
     },
     "AUT": {
       "team_name": "Austria",
-      "fifa_code": "AUT",
+      "team_code": "AUT",
       "recent_matches": [
         {
           "date": "2024-06-17",
@@ -581,7 +581,7 @@
     },
     "JOR": {
       "team_name": "Jordan",
-      "fifa_code": "JOR",
+      "team_code": "JOR",
       "recent_matches": [
         {
           "date": "2024-02-03",
@@ -670,7 +670,7 @@
   "group_K": {
     "COD": {
       "team_name": "DR Congo",
-      "fifa_code": "COD",
+      "team_code": "COD",
       "recent_matches": [
         {
           "date": "2024-01-21",
@@ -757,7 +757,7 @@
     },
     "COL": {
       "team_name": "Colombia",
-      "fifa_code": "COL",
+      "team_code": "COL",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -843,7 +843,7 @@
     },
     "POR": {
       "team_name": "Portugal",
-      "fifa_code": "POR",
+      "team_code": "POR",
       "recent_matches": [
         {
           "date": "2025-06-08",
@@ -905,7 +905,7 @@
     },
     "UZB": {
       "team_name": "Uzbekistan",
-      "fifa_code": "UZB",
+      "team_code": "UZB",
       "recent_matches": [
         {
           "date": "2024-11-14",
@@ -994,7 +994,7 @@
   "group_L": {
     "CRO": {
       "team_name": "Croatia",
-      "fifa_code": "CRO",
+      "team_code": "CRO",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -1081,7 +1081,7 @@
     },
     "ENG": {
       "team_name": "England",
-      "fifa_code": "ENG",
+      "team_code": "ENG",
       "recent_matches": [
         {
           "date": "2025-03-21",
@@ -1159,7 +1159,7 @@
     },
     "PAN": {
       "team_name": "Panama",
-      "fifa_code": "PAN",
+      "team_code": "PAN",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -1257,7 +1257,7 @@
     },
     "GHA": {
       "team_name": "Ghana",
-      "fifa_code": "GHA",
+      "team_code": "GHA",
       "recent_matches": [
         {
           "date": "2024-06-06",

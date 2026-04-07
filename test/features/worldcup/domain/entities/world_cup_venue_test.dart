@@ -109,7 +109,7 @@ void main() {
 
       test('creates venue with all fields', () {
         final venue = createTestVenue(
-          worldCupName: 'FIFA Test Stadium',
+          worldCupName: 'World Cup Test Stadium',
           state: 'California',
           worldCupCapacity: 75000,
           yearOpened: 2020,
@@ -134,7 +134,7 @@ void main() {
           description: 'A beautiful stadium',
         );
 
-        expect(venue.worldCupName, equals('FIFA Test Stadium'));
+        expect(venue.worldCupName, equals('World Cup Test Stadium'));
         expect(venue.state, equals('California'));
         expect(venue.worldCupCapacity, equals(75000));
         expect(venue.yearOpened, equals(2020));
@@ -208,7 +208,7 @@ void main() {
       test('toMap serializes all fields', () {
         final venue = createTestVenue(
           name: 'Test Stadium',
-          worldCupName: 'FIFA Test',
+          worldCupName: 'WC Test',
           state: 'TX',
           homeTeams: ['Team A'],
           keyMatches: ['Final'],
@@ -217,7 +217,7 @@ void main() {
 
         expect(map['venueId'], equals('venue_1'));
         expect(map['name'], equals('Test Stadium'));
-        expect(map['worldCupName'], equals('FIFA Test'));
+        expect(map['worldCupName'], equals('WC Test'));
         expect(map['city'], equals('Test City'));
         expect(map['state'], equals('TX'));
         expect(map['country'], equals('usa'));

@@ -223,7 +223,7 @@ This assumes the critical security fixes and Android RevenueCat setup are comple
 1. **Fix security vulnerabilities NOW** - Rotate all exposed keys (Firebase service account, Stripe live key, Android signing key), purge from git history, fix `.gitignore`
 2. **Complete Android RevenueCat setup** - Create Play Store products, configure RevenueCat, test native IAP (~3-5 hours)
 3. **E2E payment testing** - Test complete Stripe + RevenueCat flows on both platforms
-4. **Complete 4 remaining player squads** - Source from FIFA.com/Transfermarkt
+4. **Complete 4 remaining player squads** - Source from Transfermarkt
 5. **Load testing** - Simulate World Cup match-day traffic before June 11
 
 ---

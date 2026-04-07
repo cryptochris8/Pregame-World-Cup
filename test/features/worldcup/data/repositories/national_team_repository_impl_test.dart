@@ -220,7 +220,7 @@ void main() {
   });
 
   group('getTeamsByRanking', () {
-    test('returns teams sorted by FIFA ranking', () async {
+    test('returns teams sorted by world ranking', () async {
       final teams = [
         TestDataFactory.createTeam(teamCode: 'USA', worldRanking: 13),
         TestDataFactory.createTeam(teamCode: 'BRA', worldRanking: 1),
@@ -254,7 +254,7 @@ void main() {
       expect(result[0].teamCode, 'USA');
     });
 
-    test('searches by FIFA code', () async {
+    test('searches by team code', () async {
       final teams = [
         TestDataFactory.createTeam(teamCode: 'USA', countryName: 'United States'),
         TestDataFactory.createTeam(teamCode: 'BRA', countryName: 'Brazil'),

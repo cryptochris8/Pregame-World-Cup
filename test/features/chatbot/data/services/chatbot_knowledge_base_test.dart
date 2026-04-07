@@ -30,7 +30,7 @@ void main() {
   });
 
   group('Team alias resolution', () {
-    test('resolves FIFA code', () {
+    test('resolves team code', () {
       expect(kb.resolveTeamCode('USA'), 'USA');
       expect(kb.resolveTeamCode('usa'), 'USA');
       expect(kb.resolveTeamCode('ARG'), 'ARG');

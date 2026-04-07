@@ -33,7 +33,7 @@ void main() {
       'winPercentage': 62.2,
       'titlesWon': 12,
     },
-    'honors': ['Copa America 2019', 'FIFA Confederations Cup 2013'],
+    'honors': ['Copa America 2019', 'Confederations Cup 2013'],
     'tacticalStyle': '4-3-3 with possession-based football',
     'philosophy': 'Attacking football with defensive solidity',
     'strengths': ['Man management', 'Tactical flexibility'],
@@ -278,7 +278,7 @@ void main() {
       expect(manager.controversies.first, contains('Bayern'));
     });
 
-    test('orders managers by FIFA code', () async {
+    test('orders managers by team code', () async {
       await fakeFirestore.collection('managers').doc('manager_003').set(sampleManagerData3);
       await fakeFirestore.collection('managers').doc('manager_001').set(sampleManagerData1);
       await fakeFirestore.collection('managers').doc('manager_002').set(sampleManagerData2);

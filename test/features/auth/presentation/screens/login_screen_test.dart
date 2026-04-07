@@ -76,18 +76,18 @@ void main() {
   }
 
   group('LoginScreen - Rendering', () {
-    testWidgets('renders the PREGAME title text', (tester) async {
+    testWidgets('renders the app logo', (tester) async {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
 
-      expect(find.text('PREGAME'), findsOneWidget);
+      expect(find.byType(Image), findsOneWidget);
     });
 
     testWidgets('renders the tagline text', (tester) async {
       await tester.pumpWidget(buildTestWidget());
       await tester.pumpAndSettle();
 
-      expect(find.text('Where Sports Fans Connect'), findsOneWidget);
+      expect(find.text('Where Soccer Fans Connect'), findsOneWidget);
     });
 
     testWidgets('renders email text field with label', (tester) async {

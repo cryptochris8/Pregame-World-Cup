@@ -142,7 +142,7 @@
 ### 16. Ticket Purchasing
 - [ ] StubHub integration
 - [ ] Viagogo integration
-- [ ] Official FIFA ticket links
+- [ ] Official ticket links
 - [ ] Price alerts
 - [ ] Ticket verification
 

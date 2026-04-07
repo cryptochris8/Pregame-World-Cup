@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-**Pregame World Cup 2026** is a full-stack FIFA World Cup fan engagement platform covering the June 11 - July 19, 2026 tournament (48 teams, 104 matches, 16 host cities across USA/Mexico/Canada).
+**Pregame World Cup 2026** is a full-stack World Cup fan engagement platform covering the June 11 - July 19, 2026 tournament (48 teams, 104 matches, 16 host cities across USA/Mexico/Canada).
 
 | Layer | Technology | Status |
 |-------|-----------|--------|

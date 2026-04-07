@@ -45,7 +45,7 @@ AIMatchPrediction createTestAIPrediction({
   int homeWinProbability = 55,
   int drawProbability = 25,
   int awayWinProbability = 20,
-  List<String> keyFactors = const ['FIFA Ranking', 'Home advantage'],
+  List<String> keyFactors = const ['World Ranking', 'Home advantage'],
   String analysis = 'Test analysis',
   String quickInsight = 'Home team favored 2-1',
   String provider = 'LocalEngine',

@@ -11,7 +11,7 @@ class WorldCupApiDataSource {
   static const String _baseUrl = 'https://api.sportsdata.io/v4/soccer';
 
   // Competition ID for World Cup 2026 (will need to be updated when available)
-  static const String _worldCupCompetitionId = 'FIFA_WORLDCUP_2026';
+  static const String _worldCupCompetitionId = 'WORLDCUP_2026';
 
   WorldCupApiDataSource({
     Dio? dio,

@@ -520,7 +520,7 @@ When RevenueCat is not configured, the app falls back to Stripe browser checkout
 | 7-inch tablet screenshots | Optional | NOT CREATED |
 | 10-inch tablet screenshots | Optional | NOT CREATED |
 
-**Intellectual Property Warning:** App name uses "World Cup" which FIFA holds trademarks for. Position as "fan companion app" and don't imply official affiliation.
+**Intellectual Property Warning:** App name uses "World Cup" which may be trademarked. Position as "fan companion app" and don't imply official affiliation.
 
 ### Data Safety Section Mapping
 

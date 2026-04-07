@@ -16,7 +16,7 @@ void main() {
       });
     });
 
-    group('FIFA code to full name mappings', () {
+    group('Team code to full name mappings', () {
       test('matches USA to United States', () {
         expect(TeamMatchingHelper.teamNamesMatch('usa', 'United States'), isTrue);
         expect(TeamMatchingHelper.teamNamesMatch('USA', 'united states'), isTrue);
@@ -145,7 +145,7 @@ void main() {
       });
     });
 
-    group('FIFA code to FIFA code matching', () {
+    group('Team code to team code matching', () {
       test('matches code on both sides', () {
         expect(TeamMatchingHelper.teamNamesMatch('usa', 'usa'), isTrue);
         expect(TeamMatchingHelper.teamNamesMatch('bra', 'bra'), isTrue);
@@ -179,7 +179,7 @@ void main() {
       expect(TeamMatchingHelper.isTeamInFavorites('United States', favorites), isTrue);
     });
 
-    test('returns true for flexible match via FIFA code', () {
+    test('returns true for flexible match via team code', () {
       final favorites = ['United States', 'Brazil'];
       expect(TeamMatchingHelper.isTeamInFavorites('usa', favorites), isTrue);
       expect(TeamMatchingHelper.isTeamInFavorites('bra', favorites), isTrue);
@@ -208,7 +208,7 @@ void main() {
   });
 
   group('TeamMatchingHelper - getFullTeamName', () {
-    test('returns full name for valid FIFA codes', () {
+    test('returns full name for valid team codes', () {
       expect(TeamMatchingHelper.getFullTeamName('usa'), equals('United States'));
       expect(TeamMatchingHelper.getFullTeamName('bra'), equals('Brazil'));
       expect(TeamMatchingHelper.getFullTeamName('arg'), equals('Argentina'));

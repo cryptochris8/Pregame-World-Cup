@@ -372,4 +372,4 @@ Pregame is a **production-ready, fully-featured sports fan ecosystem** with:
 - **Clean architecture**: BLoC, dependency injection, offline support
 - **Production deployment**: Firebase backend, live web app
 
-The modular architecture and clean separation of concerns make this codebase well-suited for adaptation to other sports events like the FIFA World Cup 2026.
+The modular architecture and clean separation of concerns make this codebase well-suited for adaptation to other sports events like the World Cup 2026.

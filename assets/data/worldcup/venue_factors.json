@@ -15,7 +15,7 @@
     "metlife": {
       "venueId": "metlife",
       "venueName": "MetLife Stadium",
-      "fifaTournamentName": "New York New Jersey Stadium",
+      "tournamentName": "New York New Jersey Stadium",
       "city": "East Rutherford, NJ",
       "country": "USA",
       "latitude": 40.8128,
@@ -53,7 +53,7 @@
     "azteca": {
       "venueId": "azteca",
       "venueName": "Estadio Azteca",
-      "fifaTournamentName": "Estadio Azteca Mexico City",
+      "tournamentName": "Estadio Azteca Mexico City",
       "city": "Mexico City",
       "country": "Mexico",
       "latitude": 19.3029,
@@ -98,7 +98,7 @@
     "att": {
       "venueId": "att",
       "venueName": "AT&T Stadium",
-      "fifaTournamentName": "Dallas Stadium",
+      "tournamentName": "Dallas Stadium",
       "city": "Arlington, TX",
       "country": "USA",
       "latitude": 32.7473,
@@ -136,7 +136,7 @@
     "arrowhead": {
       "venueId": "arrowhead",
       "venueName": "Arrowhead Stadium",
-      "fifaTournamentName": "Kansas City Stadium",
+      "tournamentName": "Kansas City Stadium",
       "city": "Kansas City, MO",
       "country": "USA",
       "latitude": 39.0489,
@@ -174,7 +174,7 @@
     "mercedes_benz": {
       "venueId": "mercedes_benz",
       "venueName": "Mercedes-Benz Stadium",
-      "fifaTournamentName": "Atlanta Stadium",
+      "tournamentName": "Atlanta Stadium",
       "city": "Atlanta, GA",
       "country": "USA",
       "latitude": 33.7553,
@@ -212,7 +212,7 @@
     "nrg": {
       "venueId": "nrg",
       "venueName": "NRG Stadium",
-      "fifaTournamentName": "Houston Stadium",
+      "tournamentName": "Houston Stadium",
       "city": "Houston, TX",
       "country": "USA",
       "latitude": 29.6847,
@@ -251,7 +251,7 @@
     "levis": {
       "venueId": "levis",
       "venueName": "Levi's Stadium",
-      "fifaTournamentName": "San Francisco Bay Area Stadium",
+      "tournamentName": "San Francisco Bay Area Stadium",
       "city": "Santa Clara, CA",
       "country": "USA",
       "latitude": 37.4030,
@@ -289,7 +289,7 @@
     "sofi": {
       "venueId": "sofi",
       "venueName": "SoFi Stadium",
-      "fifaTournamentName": "Los Angeles Stadium",
+      "tournamentName": "Los Angeles Stadium",
       "city": "Inglewood, CA",
       "country": "USA",
       "latitude": 33.9534,
@@ -327,7 +327,7 @@
     "gillette": {
       "venueId": "gillette",
       "venueName": "Gillette Stadium",
-      "fifaTournamentName": "Boston Stadium",
+      "tournamentName": "Boston Stadium",
       "city": "Foxborough, MA",
       "country": "USA",
       "latitude": 42.0909,
@@ -365,7 +365,7 @@
     "lincoln_financial": {
       "venueId": "lincoln_financial",
       "venueName": "Lincoln Financial Field",
-      "fifaTournamentName": "Philadelphia Stadium",
+      "tournamentName": "Philadelphia Stadium",
       "city": "Philadelphia, PA",
       "country": "USA",
       "latitude": 39.9008,
@@ -403,7 +403,7 @@
     "lumen": {
       "venueId": "lumen",
       "venueName": "Lumen Field",
-      "fifaTournamentName": "Seattle Stadium",
+      "tournamentName": "Seattle Stadium",
       "city": "Seattle, WA",
       "country": "USA",
       "latitude": 47.5952,
@@ -441,7 +441,7 @@
     "hard_rock": {
       "venueId": "hard_rock",
       "venueName": "Hard Rock Stadium",
-      "fifaTournamentName": "Miami Stadium",
+      "tournamentName": "Miami Stadium",
       "city": "Miami Gardens, FL",
       "country": "USA",
       "latitude": 25.9580,
@@ -480,7 +480,7 @@
     "bbva": {
       "venueId": "bbva",
       "venueName": "Estadio BBVA",
-      "fifaTournamentName": "Estadio Monterrey",
+      "tournamentName": "Estadio Monterrey",
       "city": "Guadalupe, Mexico (Monterrey metro)",
       "country": "Mexico",
       "latitude": 25.6702,
@@ -519,7 +519,7 @@
     "bc_place": {
       "venueId": "bc_place",
       "venueName": "BC Place",
-      "fifaTournamentName": "BC Place Vancouver",
+      "tournamentName": "BC Place Vancouver",
       "city": "Vancouver, BC",
       "country": "Canada",
       "latitude": 49.2768,
@@ -557,7 +557,7 @@
     "akron": {
       "venueId": "akron",
       "venueName": "Estadio Akron",
-      "fifaTournamentName": "Estadio Guadalajara",
+      "tournamentName": "Estadio Guadalajara",
       "city": "Zapopan, Mexico (Guadalajara metro)",
       "country": "Mexico",
       "latitude": 20.6817,
@@ -602,7 +602,7 @@
     "bmo": {
       "venueId": "bmo",
       "venueName": "BMO Field",
-      "fifaTournamentName": "Toronto Stadium",
+      "tournamentName": "Toronto Stadium",
       "city": "Toronto, ON",
       "country": "Canada",
       "latitude": 43.6332,

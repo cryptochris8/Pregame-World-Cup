@@ -203,7 +203,7 @@ void main() {
         expect(argentina.flagEmoji, equals('🇦🇷'));
       });
 
-      test('handles special FIFA code mappings', () {
+      test('handles special team code mappings', () {
         final usa = createTestTeam(teamCode: 'USA', countryName: 'United States', shortName: 'USA');
         final germany = createTestTeam(teamCode: 'GER', countryName: 'Germany', shortName: 'Germany');
         final netherlands = createTestTeam(teamCode: 'NED', countryName: 'Netherlands', shortName: 'Netherlands');

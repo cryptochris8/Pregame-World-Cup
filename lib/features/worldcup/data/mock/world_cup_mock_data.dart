@@ -513,7 +513,7 @@ class WorldCupMockData {
   ];
 
   // Team code to ISO country code mapping for flag URLs
-  static const Map<String, String> _fifaToIsoCode = {
+  static const Map<String, String> _teamToIsoCode = {
     // CONCACAF
     'USA': 'us', 'MEX': 'mx', 'CAN': 'ca', 'PAN': 'pa',
     'CUR': 'cw', 'HAI': 'ht',
@@ -537,7 +537,7 @@ class WorldCupMockData {
 
   /// Get ISO country code from team code for flag URL
   static String _getIsoCode(String teamCode) {
-    return _fifaToIsoCode[teamCode] ?? teamCode.toLowerCase();
+    return _teamToIsoCode[teamCode] ?? teamCode.toLowerCase();
   }
 
   // Helper methods

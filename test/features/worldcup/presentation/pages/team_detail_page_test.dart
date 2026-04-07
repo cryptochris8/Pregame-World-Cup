@@ -24,7 +24,7 @@ void main() {
       expect(widget.team, equals(testTeam));
     });
 
-    test('team has correct FIFA code', () {
+    test('team has correct team code', () {
       final widget = TeamDetailPage(team: testTeam);
       expect(widget.team.teamCode, 'USA');
     });

@@ -340,7 +340,7 @@ void main() {
   });
 
   // ---------------------------------------------------------------------------
-  // 4. Elo rating scoring (replaces FIFA ranking)
+  // 4. Elo rating scoring (replaces world ranking)
   // ---------------------------------------------------------------------------
   group('Elo rating scoring', () {
     test('higher Elo-rated home team produces home-favored prediction', () async {
@@ -452,7 +452,7 @@ void main() {
       expect(diff, lessThan(15));
     });
 
-    test('falls back to FIFA ranking when Elo data is null', () async {
+    test('falls back to world ranking when Elo data is null', () async {
       // Default stubs return null for getEloRating
       final match = defaultMatch();
       final home = homeTeam(worldRanking: 1, isHostNation: false);

@@ -255,7 +255,7 @@ void main() {
         userId: 'bad_user_report_test',
         userDisplayName: 'Bad User',
         reason: ReportReason.impersonation,
-        additionalDetails: 'Pretending to be FIFA official',
+        additionalDetails: 'Pretending to be tournament official',
       );
 
       expect(report, isNotNull);

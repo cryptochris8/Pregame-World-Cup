@@ -59,7 +59,7 @@ AIMatchPrediction _createPrediction({
   int awayScore = 1,
   int confidence = 65,
   String quickInsight = 'Brazil 2-1 (65%)',
-  List<String> keyFactors = const ['Home advantage', 'FIFA ranking'],
+  List<String> keyFactors = const ['Home advantage', 'World ranking'],
 }) {
   return AIMatchPrediction(
     matchId: matchId,

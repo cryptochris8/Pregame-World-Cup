@@ -167,7 +167,7 @@ const VenueSubscriptionSimple: React.FC = () => {
             {[
               {
                 q: 'Is this really a one-time fee?',
-                a: 'Yes. Pay $499 once and your venue is listed on Pregame for the entire 2026 FIFA World Cup — from the group stage through the Final in July 2026. No monthly charges, no renewals.',
+                a: 'Yes. Pay $499 once and your venue is listed on Pregame for the entire 2026 World Cup — from the group stage through the Final in July 2026. No monthly charges, no renewals.',
               },
               {
                 q: 'When does my listing go live?',

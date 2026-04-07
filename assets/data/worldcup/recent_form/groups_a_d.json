@@ -26,7 +26,7 @@
   "group_A": {
     "RSA": {
       "team_name": "South Africa",
-      "fifa_code": "RSA",
+      "team_code": "RSA",
       "recent_matches": [
         {
           "date": "2024-06-07",
@@ -105,7 +105,7 @@
     },
     "CZE": {
       "team_name": "Czechia",
-      "fifa_code": "CZE",
+      "team_code": "CZE",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -191,7 +191,7 @@
     },
     "KOR": {
       "team_name": "South Korea",
-      "fifa_code": "KOR",
+      "team_code": "KOR",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -277,7 +277,7 @@
     },
     "MEX": {
       "team_name": "Mexico",
-      "fifa_code": "MEX",
+      "team_code": "MEX",
       "recent_matches": [
         {
           "date": "2025-07-02",
@@ -365,7 +365,7 @@
   "group_B": {
     "CAN": {
       "team_name": "Canada",
-      "fifa_code": "CAN",
+      "team_code": "CAN",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -448,7 +448,7 @@
     },
     "BIH": {
       "team_name": "Bosnia and Herzegovina",
-      "fifa_code": "BIH",
+      "team_code": "BIH",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -534,7 +534,7 @@
     },
     "QAT": {
       "team_name": "Qatar",
-      "fifa_code": "QAT",
+      "team_code": "QAT",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -590,7 +590,7 @@
     },
     "SUI": {
       "team_name": "Switzerland",
-      "fifa_code": "SUI",
+      "team_code": "SUI",
       "recent_matches": [
         {
           "date": "2024-09-05",
@@ -696,7 +696,7 @@
   "group_C": {
     "BRA": {
       "team_name": "Brazil",
-      "fifa_code": "BRA",
+      "team_code": "BRA",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -782,7 +782,7 @@
     },
     "MAR": {
       "team_name": "Morocco",
-      "fifa_code": "MAR",
+      "team_code": "MAR",
       "recent_matches": [
         {
           "date": "2025-12-21",
@@ -844,7 +844,7 @@
     },
     "SCO": {
       "team_name": "Scotland",
-      "fifa_code": "SCO",
+      "team_code": "SCO",
       "recent_matches": [
         {
           "date": "2025-09-06",
@@ -917,7 +917,7 @@
     },
     "HAI": {
       "team_name": "Haiti",
-      "fifa_code": "HAI",
+      "team_code": "HAI",
       "recent_matches": [
         {
           "date": "2025-06-05",
@@ -991,7 +991,7 @@
   "group_D": {
     "AUS": {
       "team_name": "Australia",
-      "fifa_code": "AUS",
+      "team_code": "AUS",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -1077,7 +1077,7 @@
     },
     "PAR": {
       "team_name": "Paraguay",
-      "fifa_code": "PAR",
+      "team_code": "PAR",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -1139,7 +1139,7 @@
     },
     "TUR": {
       "team_name": "Turkey",
-      "fifa_code": "TUR",
+      "team_code": "TUR",
       "recent_matches": [
         {
           "date": "2024-06-18",
@@ -1225,7 +1225,7 @@
     },
     "USA": {
       "team_name": "United States",
-      "fifa_code": "USA",
+      "team_code": "USA",
       "recent_matches": [
         {
           "date": "2025-01-18",

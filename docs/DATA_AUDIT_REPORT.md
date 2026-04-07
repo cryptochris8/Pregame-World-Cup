@@ -29,13 +29,13 @@ The app has a **strong data foundation** (372 JSON files, 3.4 MB, ~3,195 Firesto
 
 ### 1. Mock Data Has Wrong Group Assignments - FIXED (March 1, 2026)
 **File**: `lib/features/worldcup/data/mock/world_cup_mock_data.dart`
-- ~~Contains pre-draw guesses, NOT the actual December 13, 2025 FIFA draw~~
+- ~~Contains pre-draw guesses, NOT the actual December 13, 2025 draw~~
 - Updated all 48 teams to match actual draw: removed 13 non-qualified teams (CHI, PER, POL, SRB, UKR, WAL, UAE, CHN, NGA, CMR, CRC, JAM, HON), added 13 qualified teams (RSA, PAR, TUR, CUW, IDN, CPV, NOR, IRQ, JOR, COD, UZB, SCO, HAI), fixed all group assignments
 
 ### 2. Team JSON Files Missing 19 Metadata Fields
 **Files**: `assets/data/worldcup/teams/*.json`
 - Only contain: `teamCode`, `countryName`, `players[]`
-- Missing: `group`, `confederation`, `fifaRanking`, `coachName`, `primaryColor`, `secondaryColor`, `worldCupTitles`, `worldCupAppearances`, `bestFinish`, `isHostNation`, `nickname`, `captainName`, `starPlayers`, `qualificationMethod`, `isQualified`, `shortName`, `flagUrl`, `federationLogoUrl`, `homeStadium`
+- Missing: `group`, `confederation`, `worldRanking`, `coachName`, `primaryColor`, `secondaryColor`, `worldCupTitles`, `worldCupAppearances`, `bestFinish`, `isHostNation`, `nickname`, `captainName`, `starPlayers`, `qualificationMethod`, `isQualified`, `shortName`, `flagUrl`, `federationLogoUrl`, `homeStadium`
 - The `NationalTeam` entity expects all 22 fields
 
 ### 3. ARG_BRA.json H2H Win Counts Swapped - FIXED (March 1, 2026)
@@ -74,8 +74,8 @@ The app has a **strong data foundation** (372 JSON files, 3.4 MB, ~3,195 Firesto
 
 ## HIGH PRIORITY ISSUES
 
-### 8. FIFA Code Inconsistency - FIXED (March 1, 2026)
-- ~~Curacao: `CUR` in team files, `CUW` in betting_odds.json (FIFA standard is `CUW`)~~
+### 8. Team Code Inconsistency - FIXED (March 1, 2026)
+- ~~Curacao: `CUR` in team files, `CUW` in betting_odds.json (standard is `CUW`)~~
 - Standardized to `CUW` across all files: renamed team/manager/player_profile/match_summary files, updated JSON content, chatbot knowledge base, match schedule
 
 ### 9. Missing Team Squad Files for Draw Teams
@@ -137,7 +137,7 @@ JSON Files (372 files, 3.4 MB)
 | Factor | Weight | Data Source | Quality |
 |--------|--------|-------------|---------|
 | Betting Odds | 25% | betting_odds.json | Good |
-| FIFA Ranking | 20% | NationalTeam entity | Good |
+| World Ranking | 20% | NationalTeam entity | Good |
 | Recent Form | 15% | recent_form/*.json | Weak (ignores opponent quality) |
 | Squad Value | 10% | squad_values.json | Good |
 | Head-to-Head | 10% | head_to_head/*.json (actual H2H) | Good (fixed March 1) |
@@ -203,7 +203,7 @@ JSON Files (372 files, 3.4 MB)
 
 ---
 
-## VERIFIED FIFA RANKINGS (Nov 2025)
+## VERIFIED WORLD RANKINGS (Nov 2025)
 
 | Rank | Team | In App? | App Ranking |
 |------|------|---------|-------------|
@@ -232,8 +232,8 @@ JSON Files (372 files, 3.4 MB)
 
 ## VENUE DATA (from research)
 
-### All 16 Stadiums with FIFA Tournament Names
-| FIFA Name | Real Name | City | Capacity |
+### All 16 Stadiums with Tournament Names
+| Tournament Name | Real Name | City | Capacity |
 |-----------|-----------|------|----------|
 | Estadio Azteca Mexico City | Estadio Azteca | Mexico City | 87,523 |
 | New York New Jersey Stadium | MetLife Stadium | East Rutherford, NJ | 87,157 |
@@ -261,7 +261,7 @@ JSON Files (372 files, 3.4 MB)
 2. ~~Remove Di Maria from ARG squad, Jesus Navas from ESP squad~~ DONE
 3. ~~Fix Garnacho club (Chelsea), Thiago Silva club (Porto)~~ DONE
 4. ~~Update mock data group assignments to match actual draw~~ DONE
-5. ~~Fix Curacao FIFA code standardization (CUR -> CUW)~~ DONE
+5. ~~Fix Curacao team code standardization (CUR -> CUW)~~ DONE
 6. ~~Fix seed script random stats (zero > wrong)~~ DONE
 7. ~~Wire actual H2H data to prediction engine Factor 5~~ DONE
 
@@ -273,7 +273,7 @@ JSON Files (372 files, 3.4 MB)
 11. Add penalty shootout records JSON file
 12. Add all-time top scorers and appearances lists
 13. Create squad files for TUR, IRQ, COD, IDN (if confirmed)
-14. Update FIFA rankings to current values
+14. Update world rankings to current values
 
 ### Phase 3: Prediction Engine Upgrades (Next Month)
 15. Implement Poisson score prediction (replace 6-bucket system)

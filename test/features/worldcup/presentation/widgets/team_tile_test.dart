@@ -24,7 +24,7 @@ void main() {
       expect(find.text('United States'), findsOneWidget);
     });
 
-    testWidgets('shows FIFA ranking', (tester) async {
+    testWidgets('shows world ranking', (tester) async {
       final team = TestDataFactory.createTeam(
         teamCode: 'BRA',
         countryName: 'Brazil',

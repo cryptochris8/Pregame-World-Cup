@@ -296,7 +296,7 @@
   },
   "worldCup": "World Cup",
   "@worldCup": {
-    "description": "Title for FIFA World Cup"
+    "description": "Title for World Cup"
   },
   "live": "Live",
   "@live": {
@@ -1372,7 +1372,7 @@
   },
   "worldCup2026": "World Cup 2026",
   "@worldCup2026": {
-    "description": "FIFA World Cup 2026 badge text"
+    "description": "World Cup 2026 badge text"
   },
   "liveEspnData": "LIVE ESPN DATA",
   "@liveEspnData": {

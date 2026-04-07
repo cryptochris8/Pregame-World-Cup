@@ -15,7 +15,7 @@ Track every match, group, team & player. Find venues, watch parties, and connect
 Download the beta now on iOS:
 https://testflight.apple.com/join/fUcZMb3y
 
-#WorldCup2026 #FIFA #WC2026
+#WorldCup2026 #Soccer #WC2026
 ```
 
 ### Option 2 (More casual)
@@ -40,7 +40,7 @@ Just launched my app on TestFlight - track matches, explore venues, find watch p
 
 Join the beta: https://testflight.apple.com/join/fUcZMb3y
 
-#WorldCup2026 #FIFA #USASoccer
+#WorldCup2026 #Soccer #USASoccer
 ```
 
 ### Option 4 (Feature list)
@@ -89,7 +89,7 @@ My World Cup 2026 app gives you the backstory before every game kicks off.
 
 iOS beta live: https://testflight.apple.com/join/fUcZMb3y 🏆
 
-#WorldCup2026 #FIFA
+#WorldCup2026 #Football
 ```
 
 ---
@@ -123,7 +123,7 @@ Who's lifting the trophy in July?
 
 iOS beta open: https://testflight.apple.com/join/fUcZMb3y
 
-#WorldCup2026 #FIFA
+#WorldCup2026 #Soccer
 ```
 
 ---
@@ -201,7 +201,7 @@ Include this link directly in posts or DM it to interested users.
 
 - #WorldCup2026
 - #WC2026
-- #FIFA
+- #Football
 - #USASoccer
 - #USMNT
 - #CopaDelMundo

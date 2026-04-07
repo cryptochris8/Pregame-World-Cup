@@ -488,7 +488,7 @@ Once you're happy with internal testing, go live.
 | Build fails | Run `flutter clean && flutter pub get` then try again |
 | Screenshots rejected | Use 1080x1920 or 1440x2560, 9:16 aspect ratio, PNG or JPEG |
 | Feature graphic rejected | Must be exactly 1024 x 500 px |
-| Rejected for FIFA trademark | Remove "FIFA" from app name/description, use "World Cup 2026" only |
+| Rejected for trademark | Remove trademarked terms from app name/description, use "World Cup 2026" only |
 | Data safety form errors | Re-check every data type matches what your app actually collects |
 
 ---

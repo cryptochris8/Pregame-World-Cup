@@ -147,7 +147,7 @@ node -e "
 
 - [ ] Create `WorldCupLocalDataService` for offline-first Flutter access (like CFB app's `SECLocalDataService`)
 - [ ] Run `seed-all` to verify Firestore output matches original seeded data
-- [ ] Data verification pass against authoritative sources (FIFA.com, Transfermarkt) before launch
+- [ ] Data verification pass against authoritative sources (official sources, Transfermarkt) before launch
 
 ## File Count Summary
 

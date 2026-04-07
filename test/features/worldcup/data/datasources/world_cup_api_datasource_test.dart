@@ -285,7 +285,7 @@ void main() {
       when(() => mockDio.get(any())).thenAnswer((_) async => _successResponse([
             {
               ..._createMatchJson(gameId: '1'),
-              'Competition': {'CompetitionId': 'FIFA_WORLDCUP_2026'},
+              'Competition': {'CompetitionId': 'WORLDCUP_2026'},
             },
             {
               ..._createMatchJson(gameId: '2'),

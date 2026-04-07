@@ -66,7 +66,7 @@ The Pregame World Cup 2026 app is positioned to capitalize on an unprecedented m
 | ESPN App | Brand recognition, live scores | AI predictions, social features, watch parties |
 | OneFootball | Comprehensive coverage | US-focused, venue discovery, local watch parties |
 | FotMob | Statistics depth | Social/community features, AI analysis |
-| FIFA+ | Official content | Deeper fan engagement, offline mode, messaging |
+| Official WC App | Official content | Deeper fan engagement, offline mode, messaging |
 
 ---
 
@@ -581,7 +581,7 @@ Highest intent users - they're actively searching for apps.
 - ESPN
 - FotMob
 - OneFootball
-- FIFA+
+- Official WC App
 
 #### Campaign Structure
 - **Discovery Campaign**: Broad match, find new keywords

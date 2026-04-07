@@ -235,7 +235,8 @@
       "Bash(git -C /c/Users/chris/Pregame-World-Cup push origin main)",
       "mcp__desktop-commander__start_process",
       "Bash(icacls:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(flutter pub add:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -21,7 +21,7 @@ This is just the beginning ⚽🔨
 
 This is the feature I'm most proud of 🤖
 
-Months of research went into the prediction model. FIFA rankings, betting odds, squad values, recent form, head-to-head history, manager tactics - all weighted and scored.
+Months of research went into the prediction model. World rankings, betting odds, squad values, recent form, head-to-head history, manager tactics - all weighted and scored.
 
 Every single match gets a predicted score, win probability, and key insights.
 

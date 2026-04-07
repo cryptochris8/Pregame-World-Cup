@@ -26,7 +26,7 @@
   "group_E": {
     "CIV": {
       "team_name": "Ivory Coast",
-      "fifa_code": "CIV",
+      "team_code": "CIV",
       "recent_matches": [
         {
           "date": "2024-01-14",
@@ -106,7 +106,7 @@
     },
     "CUR": {
       "team_name": "Curacao",
-      "fifa_code": "CUR",
+      "team_code": "CUR",
       "recent_matches": [
         {
           "date": "2024-09-06",
@@ -177,7 +177,7 @@
     },
     "ECU": {
       "team_name": "Ecuador",
-      "fifa_code": "ECU",
+      "team_code": "ECU",
       "recent_matches": [
         {
           "date": "2025-03-21",
@@ -263,7 +263,7 @@
     },
     "GER": {
       "team_name": "Germany",
-      "fifa_code": "GER",
+      "team_code": "GER",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -352,7 +352,7 @@
   "group_F": {
     "SWE": {
       "team_name": "Sweden",
-      "fifa_code": "SWE",
+      "team_code": "SWE",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -438,7 +438,7 @@
     },
     "TUN": {
       "team_name": "Tunisia",
-      "fifa_code": "TUN",
+      "team_code": "TUN",
       "recent_matches": [
         {
           "date": "2024-06-07",
@@ -517,7 +517,7 @@
     },
     "JPN": {
       "team_name": "Japan",
-      "fifa_code": "JPN",
+      "team_code": "JPN",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -603,7 +603,7 @@
     },
     "NED": {
       "team_name": "Netherlands",
-      "fifa_code": "NED",
+      "team_code": "NED",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -692,7 +692,7 @@
   "group_G": {
     "BEL": {
       "team_name": "Belgium",
-      "fifa_code": "BEL",
+      "team_code": "BEL",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -778,7 +778,7 @@
     },
     "EGY": {
       "team_name": "Egypt",
-      "fifa_code": "EGY",
+      "team_code": "EGY",
       "recent_matches": [
         {
           "date": "2025-12-22",
@@ -846,7 +846,7 @@
     },
     "IRN": {
       "team_name": "Iran",
-      "fifa_code": "IRN",
+      "team_code": "IRN",
       "recent_matches": [
         {
           "date": "2025-03-20",
@@ -904,7 +904,7 @@
     },
     "NZL": {
       "team_name": "New Zealand",
-      "fifa_code": "NZL",
+      "team_code": "NZL",
       "recent_matches": [
         {
           "date": "2025-03-21",
@@ -952,7 +952,7 @@
   "group_H": {
     "ESP": {
       "team_name": "Spain",
-      "fifa_code": "ESP",
+      "team_code": "ESP",
       "recent_matches": [
         {
           "date": "2025-06-05",
@@ -1022,7 +1022,7 @@
     },
     "KSA": {
       "team_name": "Saudi Arabia",
-      "fifa_code": "KSA",
+      "team_code": "KSA",
       "recent_matches": [
         {
           "date": "2024-09-05",
@@ -1108,7 +1108,7 @@
     },
     "CPV": {
       "team_name": "Cabo Verde",
-      "fifa_code": "CPV",
+      "team_code": "CPV",
       "recent_matches": [
         {
           "date": "2024-06-08",
@@ -1187,7 +1187,7 @@
     },
     "URU": {
       "team_name": "Uruguay",
-      "fifa_code": "URU",
+      "team_code": "URU",
       "recent_matches": [
         {
           "date": "2025-03-21",

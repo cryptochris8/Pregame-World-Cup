@@ -92,7 +92,7 @@ void main() {
       expect(teams['away']['name'], 'Spain');
     });
 
-    test('maps team names to FIFA codes', () async {
+    test('maps team names to team codes', () async {
       final game = makeGame(
         homeTeamName: 'Argentina',
         awayTeamName: 'Netherlands',

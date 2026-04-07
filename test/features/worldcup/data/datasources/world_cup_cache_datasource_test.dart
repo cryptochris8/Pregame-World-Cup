@@ -333,7 +333,7 @@ void main() {
   });
 
   group('getCachedTeam', () {
-    test('returns team by FIFA code', () async {
+    test('returns team by team code', () async {
       final cachedData = testTeams.map((t) => t.toMap()).toList();
       when(() => mockCacheService.get<List<dynamic>>('worldcup_teams'))
           .thenAnswer((_) async => cachedData);

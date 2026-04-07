@@ -4,7 +4,7 @@ import 'package:pregame_world_cup/features/worldcup/utils/flag_utils.dart';
 void main() {
   group('FlagUtils', () {
     group('getIsoCode', () {
-      test('converts CONCACAF FIFA codes to ISO codes', () {
+      test('converts CONCACAF team codes to ISO codes', () {
         expect(FlagUtils.getIsoCode('USA'), equals('us'));
         expect(FlagUtils.getIsoCode('MEX'), equals('mx'));
         expect(FlagUtils.getIsoCode('CAN'), equals('ca'));
@@ -14,7 +14,7 @@ void main() {
         expect(FlagUtils.getIsoCode('PAN'), equals('pa'));
       });
 
-      test('converts CONMEBOL FIFA codes to ISO codes', () {
+      test('converts CONMEBOL team codes to ISO codes', () {
         expect(FlagUtils.getIsoCode('BRA'), equals('br'));
         expect(FlagUtils.getIsoCode('ARG'), equals('ar'));
         expect(FlagUtils.getIsoCode('URU'), equals('uy'));
@@ -25,7 +25,7 @@ void main() {
         expect(FlagUtils.getIsoCode('PAR'), equals('py'));
       });
 
-      test('converts UEFA FIFA codes to ISO codes', () {
+      test('converts UEFA team codes to ISO codes', () {
         expect(FlagUtils.getIsoCode('FRA'), equals('fr'));
         expect(FlagUtils.getIsoCode('ENG'), equals('gb-eng'));
         expect(FlagUtils.getIsoCode('ESP'), equals('es'));
@@ -38,7 +38,7 @@ void main() {
         expect(FlagUtils.getIsoCode('SUI'), equals('ch'));
       });
 
-      test('converts AFC FIFA codes to ISO codes', () {
+      test('converts AFC team codes to ISO codes', () {
         expect(FlagUtils.getIsoCode('JPN'), equals('jp'));
         expect(FlagUtils.getIsoCode('KOR'), equals('kr'));
         expect(FlagUtils.getIsoCode('AUS'), equals('au'));
@@ -47,7 +47,7 @@ void main() {
         expect(FlagUtils.getIsoCode('QAT'), equals('qa'));
       });
 
-      test('converts CAF FIFA codes to ISO codes', () {
+      test('converts CAF team codes to ISO codes', () {
         expect(FlagUtils.getIsoCode('MAR'), equals('ma'));
         expect(FlagUtils.getIsoCode('SEN'), equals('sn'));
         expect(FlagUtils.getIsoCode('NGA'), equals('ng'));
@@ -56,7 +56,7 @@ void main() {
         expect(FlagUtils.getIsoCode('CMR'), equals('cm'));
       });
 
-      test('converts OFC FIFA codes to ISO codes', () {
+      test('converts OFC team codes to ISO codes', () {
         expect(FlagUtils.getIsoCode('NZL'), equals('nz'));
         expect(FlagUtils.getIsoCode('FIJ'), equals('fj'));
       });
@@ -73,7 +73,7 @@ void main() {
         expect(FlagUtils.getIsoCode('Ger'), equals('de'));
       });
 
-      test('returns lowercase FIFA code for unknown codes', () {
+      test('returns lowercase team code for unknown codes', () {
         expect(FlagUtils.getIsoCode('XYZ'), equals('xyz'));
         expect(FlagUtils.getIsoCode('ABC'), equals('abc'));
       });
@@ -157,7 +157,7 @@ void main() {
     });
 
     group('hasKnownMapping', () {
-      test('returns true for known FIFA codes', () {
+      test('returns true for known team codes', () {
         expect(FlagUtils.hasKnownMapping('USA'), isTrue);
         expect(FlagUtils.hasKnownMapping('BRA'), isTrue);
         expect(FlagUtils.hasKnownMapping('GER'), isTrue);
@@ -167,7 +167,7 @@ void main() {
         expect(FlagUtils.hasKnownMapping('NZL'), isTrue);
       });
 
-      test('returns false for unknown FIFA codes', () {
+      test('returns false for unknown team codes', () {
         expect(FlagUtils.hasKnownMapping('XYZ'), isFalse);
         expect(FlagUtils.hasKnownMapping('ABC'), isFalse);
         expect(FlagUtils.hasKnownMapping(''), isFalse);
@@ -179,7 +179,7 @@ void main() {
       });
     });
 
-    group('fifaToIsoCode map coverage', () {
+    group('teamToIsoCode map coverage', () {
       test('contains all 48 World Cup 2026 team codes', () {
         // Key teams that must be present
         final worldCup2026Teams = [
@@ -199,7 +199,7 @@ void main() {
       });
 
       test('map has substantial coverage (80+ entries)', () {
-        expect(FlagUtils.fifaToIsoCode.length, greaterThanOrEqualTo(80));
+        expect(FlagUtils.teamToIsoCode.length, greaterThanOrEqualTo(80));
       });
     });
   });

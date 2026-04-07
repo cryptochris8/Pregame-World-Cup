@@ -286,12 +286,12 @@ void main() {
         (tester) async {
       final chat = createTestChat(
         type: ChatType.group,
-        name: 'FIFA Finals Watch',
+        name: 'World Cup Finals Watch',
       );
 
       await pumpAndDrainErrors(tester, buildTestWidget(chat));
 
-      expect(find.text('FIFA Finals Watch'), findsOneWidget);
+      expect(find.text('World Cup Finals Watch'), findsOneWidget);
     });
   });
 }

@@ -103,7 +103,7 @@ For match previews/summaries:
 | `assets/data/worldcup/confederation_records.json` | Inter-confederation World Cup head-to-head |
 | `assets/data/worldcup/historical_patterns.json` | Historical tournament patterns |
 | `assets/data/worldcup/injury_tracker.json` | Player availability/injuries |
-| `assets/data/worldcup/teams_metadata.json` | Team metadata (confederation, FIFA codes) |
+| `assets/data/worldcup/teams_metadata.json` | Team metadata (confederation, team codes) |
 | `assets/data/worldcup/tactical_profiles.json` | Manager tactical tendencies |
 | `assets/data/worldcup/qualifying_campaigns.json` | Qualifying results |
 | `assets/data/worldcup/venue_factors.json` | Venue-specific factors for predictions |

@@ -65,7 +65,7 @@ Coverage improved from ~28% to ~55%+ across 5 waves of parallel test writing usi
 | `ai_historical_knowledge_service_test.dart` | 21 | Historical knowledge |
 | `enhanced_ai_game_analysis_service_test.dart` | 32 | Enhanced game analysis |
 | `ai_team_season_summary_service_test.dart` | 60 | Season summaries |
-| `flag_utils_test.dart` | 26 | FIFA-to-ISO flag mapping |
+| `flag_utils_test.dart` | 26 | team-to-ISO flag mapping |
 | `world_cup_match_extensions_test.dart` | 65 | Match extensions/parsing |
 | `ai_match_prediction_test.dart` | 38 | AI prediction entity |
 | `match_chat_entities_test.dart` | 34 | Match chat entities |

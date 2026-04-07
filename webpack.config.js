@@ -1,5 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const dotenv = require('dotenv');
+
+// Load .env file and build a map of process.env.* replacements for the browser bundle
+const env = dotenv.config().parsed || {};
+const envDefines = Object.keys(env).reduce((acc, key) => {
+  acc[`process.env.${key}`] = JSON.stringify(env[key]);
+  return acc;
+}, {});
 
 module.exports = {
   entry: './src/index.tsx',
@@ -51,6 +60,8 @@ module.exports = {
       template: './public/index.html',
       title: 'Pregame Venue Portal',
     }),
+    // Inject .env values as compile-time constants so process.env.* works in the browser
+    new webpack.DefinePlugin(envDefines),
   ],
   devServer: {
     static: {

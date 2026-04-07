@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-This is a **full-stack sports fan ecosystem** built for FIFA World Cup 2026, consisting of a Flutter mobile app, React web portal, and Firebase backend. The project is adapted from an original college football (NCAA) application and has been substantially modified for international football (soccer).
+This is a **full-stack sports fan ecosystem** built for World Cup 2026, consisting of a Flutter mobile app, React web portal, and Firebase backend. The project is adapted from an original college football (NCAA) application and has been substantially modified for international football (soccer).
 
 ---
 
