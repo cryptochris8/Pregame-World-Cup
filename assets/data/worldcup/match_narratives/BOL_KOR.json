@@ -1,0 +1,80 @@
+{
+  "matchKey": "BOL_KOR",
+  "team1Code": "BOL",
+  "team2Code": "KOR",
+  "team1Name": "Bolivia",
+  "team2Name": "South Korea",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Son Heung-min's Korea Face Bolivia in a Clash of Altitude and Ambition",
+  "subheadline": "South Korea's Asian powerhouse meets a Bolivian side stripped of their greatest weapon -- the thin air of La Paz",
+
+  "openingNarrative": "Football is a game of context, and no team in world football is more defined by context than Bolivia. At 3,637 meters above sea level, the Estadio Hernando Siles in La Paz is a fortress where visiting teams gasp for air while Bolivian lungs, adapted to the altitude from birth, find their most devastating rhythm. It is in La Paz that Bolivia have beaten Argentina, Brazil, and Colombia. It is in La Paz that Bolivia are world-beaters.\n\nBut the World Cup is not played in La Paz. It is played at sea level in North America, and that changes everything. Bolivia without altitude are a fundamentally different proposition -- their 1994 World Cup campaign in the United States (the last time they qualified before this tournament) produced three group stage defeats with zero goals scored. The pattern is cruel but consistent: Bolivia's football identity is inseparable from the air they breathe.\n\nSouth Korea, by contrast, carry no such caveats. Son Heung-min's 10 qualifying goals announced a team built around one of the greatest Asian players ever to grace the game. The Taegeuk Warriors went unbeaten in their AFC qualifying group -- 6 wins and 4 draws -- with a defensive record (5 goals conceded) that speaks to organizational excellence. This is a Korean side that reached the 2002 semi-finals on home soil, shocked Germany 2-0 in 2018, and arrives in 2026 with legitimate ambitions to advance deep into the tournament. Bolivia's task is not merely difficult; it is existential.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "South Korea's 4-3-3 is a modern, dynamic system built around Son Heung-min's ability to drift from the left wing into central positions. Lee Kang-in, PSG's creative midfielder, provides the through balls and clever passes that feed Son's movement, while the midfield trio offers the pressing intensity and ball-winning capability that Asian football has perfected over the past decade. Korea's fullbacks push high, providing width that stretches defenses and creates the overloads that Son exploits.\n\nBolivia face an almost impossible tactical puzzle. Without their altitude advantage, they must find a way to compete against a technically and physically superior side on level ground. A deep 5-4-1 or 4-5-1 is the most likely shape, designed to minimize damage and keep Bolivia in the match for as long as possible. Marcelo Martins, Bolivia's all-time top scorer, will serve as the lone outlet -- a physical focal point who can hold the ball and allow teammates to push up on rare counter-attacking opportunities.\n\nThe honest tactical truth: Bolivia must defend heroically for 90 minutes and hope for a set-piece goal or a counter-attack miracle. South Korea must be patient and avoid the kind of frustration that leads to defensive lapses.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "5-4-1",
+    "keyMatchup": "Son Heung-min's movement vs Bolivia's five-man defense -- world-class intelligence against sheer numbers"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "South Korea (ELO: 1655) vs Bolivia (ELO not listed among top 48) -- the gap is substantial. Korea's rating reflects years of consistent AFC performance, while Bolivia's would rank among the tournament's lowest if tracked. This translates to roughly a 75% Korean win probability.",
+    "formAnalysis": "South Korea went unbeaten in AFC qualifying: 6 wins, 4 draws, 22 goals scored and only 5 conceded. Son Heung-min led the scoring with 10 goals. Bolivia's qualifying data is limited, but historically their sea-level record is starkly different from their La Paz performances. At the 1994 World Cup in the USA, Bolivia lost all 3 matches and scored 0 goals.",
+    "squadValueComparison": "South Korea ($315M) vs Bolivia (not listed among top squads). Kim Min-jae ($87.5M) alone is worth multiples of Bolivia's entire squad. The financial gap underscores the competitive reality: South Korea draw from Bayern Munich, PSG, and top European leagues, while Bolivia's squad is primarily based in South American domestic football.",
+    "injuryImpact": "Son Heung-min's fitness is South Korea's single most important variable. With Son, they are a legitimate threat to anyone. Without him, the creative identity shifts entirely to Lee Kang-in. Bolivia's squad is thin enough that any injury to Martins removes their primary aerial target and hold-up specialist.",
+    "bettingPerspective": "South Korea are heavy favorites. Bolivia's odds for a victory will be among the longest in the group stage. The draw market is the only realistic play for Bolivia backers, but even that requires an extraordinary defensive performance.",
+    "historicalPattern": "In 3 previous meetings, South Korea have won 1 and drawn 2, with Bolivia never scoring. The most recent match (2025 friendly in Daejeon) saw Korea win 2-0, with Son scoring from a free kick. Bolivia have never beaten an Asian side at a World Cup."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "The Tottenham captain is the greatest player in Asian football history, and that is not hyperbole. His 10 qualifying goals were scored with the clinical variety that defines a complete forward -- left foot, right foot, headers, free kicks, penalties. At 33, Son has entered the phase of his career where experience and intelligence have replaced the blistering pace that once defined him, but the goals keep coming. Against Bolivia, Son will be the player around whom everything revolves. His movement between Bolivia's defenders, his ability to find shooting positions in crowded areas, and his lethal finishing make him the most dangerous player on the pitch by a considerable margin.",
+      "statline": "10 goals in AFC qualifying; over 100 Premier League goals; Asia's all-time top scorer in Europe"
+    },
+    {
+      "name": "Marcelo Martins",
+      "teamCode": "BOL",
+      "narrative": "Bolivia's all-time leading scorer carries the weight of an entire nation on his shoulders, and he has carried it longer and farther than anyone could reasonably expect. Martins is not a player who will dazzle with skill or pace -- he is a warrior who fights for every ball, holds up play with physical strength, and finishes with the instinct of a natural goalscorer. Against South Korea's organized defense, he will need to be at his most combative, winning aerial duels and creating something from nothing.",
+      "statline": "Bolivia's all-time leading international goalscorer; veteran of multiple World Cup qualifying campaigns"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "narrative": "PSG's creative midfielder is the player South Korea hope will define their football for the next decade. At 25, Lee's vision and passing range are already world-class, refined daily in training alongside Mbappe and Dembele. His ability to pick passes that unlock the tightest defenses makes him the perfect complement to Son's movement. Against Bolivia's deep block, Lee's patience and precision on the ball will be crucial to breaking down a side that will park the bus with maximum commitment.",
+      "statline": "Regular PSG starter; South Korea's primary creative outlet in midfield"
+    },
+    {
+      "name": "Carlos Lampe",
+      "teamCode": "BOL",
+      "narrative": "If Bolivia are to survive this match, their goalkeeper will need to produce the performance of a lifetime. Lampe has been Bolivia's most reliable player in recent years, producing spectacular saves in qualifying matches that kept Bolivia's World Cup dream alive. His shot-stopping ability and command of the box will be tested relentlessly against South Korea's attacking quality, and a man-of-the-match performance from Lampe is Bolivia's best-case scenario.",
+      "statline": "Bolivia's first-choice goalkeeper; key to their qualifying campaign with multiple crucial saves"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "South Korea 2-0 Bolivia",
+    "confidence": 75,
+    "narrative": "This is one of the more predictable group stage outcomes. South Korea's quality advantage is real and significant, and Bolivia's historical inability to compete at sea level on the World Cup stage makes an upset extremely unlikely.\n\nSon will score -- he always does when it matters -- and Korea's midfield control through Lee Kang-in will gradually suffocate Bolivia's limited attacking ambitions. Expect South Korea to dominate possession, create numerous chances, and win comfortably if not spectacularly.\n\nBolivia's consolation will be effort. They will fight, they will compete, and they will leave the pitch knowing they gave everything. But effort alone cannot bridge the quality gap when the thin air of La Paz is 4,000 miles away.",
+    "alternativeScenarios": [
+      {
+        "scenario": "South Korea 4-0 Bolivia",
+        "probability": 20,
+        "reasoning": "South Korea's attacking quality overwhelms a Bolivia side that cannot cope with Son and Lee's movement. The floodgates open in the second half as Bolivia's defensive structure collapses under sustained pressure."
+      },
+      {
+        "scenario": "South Korea 1-1 Bolivia",
+        "probability": 8,
+        "reasoning": "Bolivia produce a heroic defensive display and score from a set piece. Martins heads home from a corner, and Bolivia hold on for a point that would be celebrated like a World Cup victory in La Paz."
+      }
+    ]
+  },
+
+  "closingLine": "In La Paz, Bolivia can beat anyone. At sea level, they must beat the odds themselves. Against Son Heung-min's South Korea, those odds have never been longer."
+}

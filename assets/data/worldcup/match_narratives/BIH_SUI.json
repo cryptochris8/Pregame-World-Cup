@@ -1,0 +1,80 @@
+{
+  "matchKey": "BIH_SUI",
+  "team1Code": "BIH",
+  "team2Code": "SUI",
+  "team1Name": "Bosnia and Herzegovina",
+  "team2Name": "Switzerland",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Neighbors, Rivals, Family: The Most Personal Match at the World Cup",
+  "subheadline": "350,000 Bosnians call Switzerland home -- when these teams meet, the lines between us and them blur into something far more complex",
+
+  "openingNarrative": "This is not just a football match. This is a family reunion staged as sporting combat. An estimated 350,000 people of Bosnian origin live in Switzerland, making the Bosnian community one of the largest immigrant groups in the country. The Swiss squad itself tells the story of the Balkans' diaspora: Granit Xhaka's Albanian heritage, Xherdan Shaqiri's Kosovar roots, and dozens of players whose parents fled the same region that produced the Bosnian national team. When these two sides meet, the stadium will be full of people who share languages, bloodlines, and a complicated history that football both honors and transcends.\n\nOn the pitch, the gap is significant but not insurmountable. Switzerland have been one of European football's great overachievers of the past decade, reaching the knockout stages of four of their last five major tournaments. Their elimination of France at Euro 2020 on penalties remains one of the greatest upsets in European Championship history. Under Murat Yakin, the Nati have evolved into a tactically sophisticated side built around Granit Xhaka's metronome passing and Manuel Akanji's composed defending.\n\nBosnia's challenge is enormous but not unfamiliar. In 8 previous meetings, Switzerland have won 5 times to Bosnia's 2. The most recent encounter, a 2-0 Swiss victory in Zenica in 2021 World Cup qualifying, was a harsh lesson in the gap between consistent tournament sides and aspiring ones. But Bosnia qualified for this tournament through the fire of UEFA playoffs, and fire is something this nation understands better than most.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Switzerland's 3-4-3 under Yakin is one of the most distinctive systems at the tournament. The three center-backs, led by Akanji, provide a stable platform from which Xhaka orchestrates possession. The wing-backs push high, providing width and crossing options, while the front three interchange positions with the fluidity that has become Switzerland's calling card. It is a system that demands intelligence over athleticism, and Switzerland have it in abundance.\n\nBosnia must be brave and organized. Their 4-2-3-1 will compress into a defensive block designed to deny Xhaka space to dictate. The double pivot must track Swiss runners between the lines, while the wide players tuck in to form a compact 4-4-2 shape without the ball. Bosnia's best chance lies in set pieces and transitions -- their aerial threat from Dzeko, Ahmedhodzic, and Tabakovic is genuine, and Switzerland's three-man defense can be vulnerable to well-delivered dead balls.\n\nThe key tactical question: can Bosnia survive Switzerland's patient possession game long enough to land punches on the counter?",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "3-4-3",
+    "keyMatchup": "Granit Xhaka's tempo control vs Bosnia's double pivot -- Switzerland's heartbeat against Bosnian disruption"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Switzerland (ELO: 1680) vs Bosnia (ELO: 1600) -- an 80-point gap that translates to roughly a 60% Swiss win probability. Switzerland's ELO reflects their remarkable consistency at tournaments, while Bosnia's underrates their competitive spirit.",
+    "formAnalysis": "Switzerland were unbeaten in UEFA qualifying: 4 wins, 2 draws, 14 goals scored and just 2 conceded in 6 matches. Breel Embolo led with 4 goals. Bosnia's path was rockier: 4 wins, 3 draws, 3 losses in 10 matches before surviving the playoffs. The gap in defensive solidity is striking -- Switzerland conceded just 2 goals where Bosnia let in 12.",
+    "squadValueComparison": "Switzerland ($466M) vs Bosnia ($150M). A 3:1 ratio that reflects Switzerland's superior access to top European club football. Manuel Akanji ($56.3M) at Manchester City and Xhaka at Leverkusen bring Champions League quality that Bosnia's squad, aside from Dzeko, cannot match consistently.",
+    "injuryImpact": "Xhaka is Switzerland's indispensable player -- without his passing and leadership, the entire system loses its rhythm. Bosnia's reliance on Dzeko is equally acute. This match could be decided by which team's irreplaceable player has the better afternoon.",
+    "bettingPerspective": "Switzerland at +8000 for the tournament reflect their status as consistent knockout stage performers. Bosnia at +30000 are massive outsiders. The match odds will favor Switzerland, but Bosnia's upset potential keeps the markets honest.",
+    "historicalPattern": "In 8 meetings, Switzerland lead 5-2 with 1 draw. Swiss have scored 14 goals to Bosnia's 10. The most recent competitive meeting saw Switzerland win 2-0 in Zenica. However, Bosnia's 2011 Euro qualifying victory (2-0 at home) shows they can beat the Swiss when at their best."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "narrative": "Xhaka's transformation from Arsenal's most polarizing midfielder to Bundesliga champion at Leverkusen has been one of European football's great redemption arcs. At 33, he captains Switzerland with the authority of a man who has won everything at club level and brings that winning mentality to international duty. His passing range from the base of midfield is Switzerland's primary creative outlet -- diagonal balls to the wing-backs, through-passes that split defenses, and the occasional thunderbolt from distance. Against Bosnia, Xhaka will see familiar faces and hear familiar languages. The personal connections will make this match intense.",
+      "statline": "Bundesliga champion with Leverkusen; Switzerland's captain and record appearance holder"
+    },
+    {
+      "name": "Edin Dzeko",
+      "teamCode": "BIH",
+      "narrative": "For Dzeko, playing against Switzerland carries a weight that goes beyond football. Many of his teammates and their families found refuge in Switzerland during and after the Bosnian War. This match is personal in ways that outsiders cannot fully understand. At 40, Dzeko is still Bosnia's most dangerous player -- his movement in the box, his ability to bring others into play, and his sheer force of will make him a threat that Switzerland must account for every minute he is on the pitch.",
+      "statline": "65+ international goals; Bosnia's all-time leading scorer; Champions League experience with multiple clubs"
+    },
+    {
+      "name": "Manuel Akanji",
+      "teamCode": "SUI",
+      "narrative": "The Manchester City center-back brings a level of composure and quality from the back that few defenders at the tournament can match. Akanji's ability to step out from defense with the ball, find progressive passes, and remain calm under pressure is the foundation on which Switzerland's possession game is built. His partnership with the other center-backs gives the Nati a defensive stability that conceded just 2 goals in 6 qualifying matches.",
+      "statline": "Regular starter at Manchester City; key to Switzerland conceding only 2 goals in qualifying"
+    },
+    {
+      "name": "Anel Ahmedhodzic",
+      "teamCode": "BIH",
+      "narrative": "The Sheffield United defender is the physical and emotional anchor of Bosnia's backline. At 6'4\", his aerial presence gives Bosnia a genuine set-piece threat, while his reading of the game and aggression in the tackle provide the defensive steel that Barbarez's system demands. Against Switzerland's fluid attacking movement, Ahmedhodzic will need to be at his commanding best, organizing the defense and winning the aerial duels that could decide the match.",
+      "statline": "Bosnia's defensive cornerstone; key aerial threat from set pieces"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Switzerland 2-1 Bosnia and Herzegovina",
+    "confidence": 55,
+    "narrative": "Switzerland's quality should ultimately tell, but this will be a war of attrition rather than a procession. Xhaka's passing will gradually pull Bosnia out of shape, and the Swiss wing-backs will find space to deliver dangerous crosses. But Bosnia will score -- Dzeko's aerial threat guarantees at least one dangerous set-piece opportunity, and the emotional intensity of this fixture will drive Bosnia to compete at their absolute maximum.\n\nExpect a cagey first half where Bosnia frustrate Switzerland with their compact shape and physical midfield presence. The second half will see Switzerland's superior fitness and tactical adaptability take over, with Yakin's substitutions providing fresh energy against tiring Bosnian legs.\n\nThe atmosphere will be extraordinary -- a stadium divided between Swiss red and Bosnian blue, with thousands of fans who carry both identities in their hearts. This is what the World Cup is for.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Bosnia and Herzegovina 2-1 Switzerland",
+        "probability": 20,
+        "reasoning": "Bosnia's set-piece dominance produces two goals from dead balls, and their defensive discipline holds Switzerland to a single consolation. Dzeko's tournament farewell becomes a match-winning performance that echoes through Bosnian football history."
+      },
+      {
+        "scenario": "Switzerland 1-0 Bosnia and Herzegovina",
+        "probability": 25,
+        "reasoning": "A tight, tactical affair decided by a single moment of Swiss quality. Xhaka's through-ball or Embolo's clinical finish breaks the deadlock, and Switzerland's defensive organization ensures Bosnia never truly threaten to equalize."
+      }
+    ]
+  },
+
+  "closingLine": "When 350,000 Bosnians in Switzerland watch this match, they will feel every tackle in two heartbeats. This is football as family drama, played out on the world's biggest stage."
+}

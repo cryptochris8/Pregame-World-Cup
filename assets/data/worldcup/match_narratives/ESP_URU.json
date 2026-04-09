@@ -1,0 +1,80 @@
+{
+  "matchKey": "ESP_URU",
+  "team1Code": "ESP",
+  "team2Code": "URU",
+  "team1Name": "Spain",
+  "team2Name": "Uruguay",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "La Furia Roja Meets La Garra Charrua",
+  "subheadline": "Two World Cup champions separated by an ocean but united by an unshakeable belief that the trophy belongs to them",
+
+  "openingNarrative": "There is a Spanish word — 'furia' — that once defined the nation's footballing identity: raw fury, passion, an almost reckless commitment to attack. There is a Uruguayan word — 'garra' — that means claw, grip, the refusal to let go no matter how powerful the opponent. When Spain and Uruguay meet, these identities collide in a way that transcends tactical analysis.\n\nSpain arrive as the reigning European champions, their squad a symphony of technical perfection. Lamine Yamal, Pedri, Nico Williams, Rodri — the names read like a fantasy draft come to life. Under Luis de la Fuente, Spain have combined their traditional possession dominance with a terrifying new dimension of speed on the wings. They qualified with 5 wins and 1 draw, scoring 21 goals and conceding just 2, and they enter this World Cup as the bookmakers' favorites to lift the trophy.\n\nUruguay, with their 3.5 million people, have won this trophy twice. They have Federico Valverde, the complete midfielder at Real Madrid whose box-to-box dynamism makes him one of the most feared players in world football. They have Darwin Nunez, whose explosive pace and finishing at Liverpool make him a nightmare for any defensive line. And they have Marcelo Bielsa in the dugout — the tactical revolutionary whose influence on modern football is immeasurable, now channeling his obsessive genius into making Uruguay contenders.\n\nSeven previous meetings. Spain lead 3-2-2. Both World Cup encounters — in 1950 — ended in draws. History tells us these two nations cannot be separated easily. This match will test whether Spain's golden generation can impose their will on a team that simply refuses to submit.",
+
+  "tacticalBreakdown": {
+    "title": "The Professor's Puzzle",
+    "narrative": "Bielsa's Uruguay is a relentless pressing machine. The 4-3-3 demands extraordinary physical output — aggressive man-marking, vertical transitions, and an intensity that aims to overwhelm opponents before they can settle into their rhythm. Valverde is the engine that makes it work, covering every blade of grass while contributing decisive quality in both boxes. Nunez leads the press from the front with frightening energy.\n\nThis creates a fascinating problem for Spain. De la Fuente's 4-3-3 thrives on controlled possession and patient build-up, but Bielsa's sides are specifically designed to disrupt that kind of football. Uruguay will press Pedri and Rodri aggressively, looking to force turnovers in dangerous areas. If they succeed, Nunez's pace in behind Spain's high line could be devastating.\n\nSpain's counter to the press is Pedri's ability to receive and turn under pressure, and Yamal's capacity to beat his man in one-on-one situations. If Spain can play through Uruguay's initial press, they will find space in behind a defense that pushes high to support the forwards. The match could be decided by whether Uruguay can sustain their pressing intensity for 90 minutes — because if they tire, Spain have the quality to punish them mercilessly.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Federico Valverde vs Pedri — two of the world's best midfielders in a battle that will determine which team controls the match"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Spain (ELO: 1877, ranked 1st) vs Uruguay (ELO: 1718, ranked 14th) — a 159-point gap that gives Spain roughly a 65% win probability. But Uruguay's tournament pedigree — 2 World Cup titles, 4th place in 2010, quarterfinals in 2018 — means the ELO gap tells only part of the story.",
+    "formAnalysis": "Spain qualified with 5 wins and 1 draw, 21 scored and 2 conceded. Uruguay's CONMEBOL qualifying was harder: 7 wins, 7 draws, 4 losses, 22 scored and 12 conceded. But CONMEBOL qualifying is the most brutally competitive in world football — every point is earned in blood.",
+    "squadValueComparison": "Spain ($1.42B) vs Uruguay ($684M). Uruguay punch above their weight — Valverde alone ($188M) is a statement of their quality. Darwin Nunez adds further star power. The gap narrows significantly when you focus on the starting XIs rather than full squad depth.",
+    "injuryImpact": "Both teams need their midfield engines fit. Valverde and Pedri are the indispensable players — their fitness will directly determine the tactical balance. Uruguay also need Nunez at full sharpness to threaten Spain's defense on the counter.",
+    "bettingPerspective": "Spain are favorites at approximately -200, but Uruguay at +500 represents value given their World Cup pedigree and Bielsa's ability to prepare tactically for specific opponents. The draw is also viable at +280.",
+    "historicalPattern": "Spain lead the head-to-head 3-2-2 in 7 meetings. Crucially, both World Cup encounters (1950) ended in draws. The 2010 World Cup saw Spain beat Uruguay 2-1 in a group stage match en route to lifting the trophy. Uruguay will take confidence from their ability to compete with Spain across decades."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "narrative": "Against Uruguay's aggressive man-marking, Yamal faces perhaps his toughest test of the group stage. Bielsa will assign a dedicated marker to track his every movement, but Yamal has already shown at Euro 2024 that he thrives under pressure. His ability to beat defenders in tight spaces and create chances from unpromising positions makes him Spain's most dangerous attacking weapon. Uruguay's physical approach may frustrate him — or it may unleash him.",
+      "statline": "Spain's most valuable player at $188M; Euro 2024 champion and youngest-ever Euro goalscorer"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "narrative": "The heartbeat of both Real Madrid and Uruguay. Valverde is the rare midfielder who combines elite technical quality with extraordinary physical capacity — he covers more ground than almost any player in world football while delivering decisive contributions at both ends of the pitch. His long-range shooting, his pressing, his ability to arrive late in the box: against Spain, Valverde will be the player who determines whether Uruguay can compete or merely survive.",
+      "statline": "Real Madrid's engine; valued at $188M and Uruguay's most important player by any metric"
+    },
+    {
+      "name": "Rodri",
+      "teamCode": "ESP",
+      "narrative": "The anchor. While Pedri creates and Yamal dazzles, Rodri provides the platform upon which Spain's entire system is built. His positioning, his passing range, and his ability to break up counter-attacks before they develop make him indispensable. Against Bielsa's high-intensity press, Rodri's composure under pressure will be the steadying influence Spain need.",
+      "statline": "Manchester City's midfield anchor; Ballon d'Or contender and Euro 2024 champion"
+    },
+    {
+      "name": "Darwin Nunez",
+      "teamCode": "URU",
+      "narrative": "Chaos incarnate. Nunez's combination of electric pace, physical power, and unpredictability makes him a terrifying proposition for any defense. He can miss three chances and score a worldie from the fourth. Against Spain's high defensive line, his ability to run in behind creates the kind of threat that forces center-backs to play conservatively — which in turn creates space for Valverde and Uruguay's creative players.",
+      "statline": "5 goals in Uruguay's qualifying campaign; Liverpool's explosive forward"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Spain 2-1 Uruguay",
+    "confidence": 58,
+    "narrative": "This will be the most physical, most intense, and most tactically fascinating match of Spain's group campaign. Bielsa's Uruguay will press with ferocious intensity from the opening whistle, and for 30 minutes, Spain will be uncomfortable. Uruguay will create chances through Nunez's running and Valverde's surges forward.\n\nBut Spain's quality will tell. Pedri will find the passes that unlock Uruguay's aggressive man-marking. Yamal will beat his marker and create the opening goal. And when Uruguay push forward in search of an equalizer in the second half, Spain's speed on the counter will deliver the decisive second.\n\nUruguay will score — because teams with Valverde and Nunez always score — and the match will be in the balance until the final minutes. But Spain's depth, composure, and the accumulated brilliance of their midfield will prove the difference between two very good teams.\n\nThis is a match that will earn Uruguay's respect even in defeat.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Uruguay 2-1 Spain",
+        "probability": 22,
+        "reasoning": "Bielsa's pressing overwhelms Spain's build-up, forcing errors that Nunez punishes. Valverde dominates midfield, and Uruguay channel their historic garra to produce a result that would turn Group H on its head."
+      },
+      {
+        "scenario": "Spain 1-1 Uruguay",
+        "probability": 20,
+        "reasoning": "A pulsating match that neither team can win. Both sides create chances, both score brilliant goals, and neither can find the winner. The draw suits both teams' advancement prospects and provides one of the tournament's most entertaining 90 minutes."
+      }
+    ]
+  },
+
+  "closingLine": "Spain play beautiful football. Uruguay play relentless football. When beauty meets relentlessness, the result is always a spectacle — and this World Cup deserves nothing less."
+}

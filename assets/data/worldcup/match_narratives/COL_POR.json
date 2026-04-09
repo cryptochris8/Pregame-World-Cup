@@ -1,0 +1,80 @@
+{
+  "matchKey": "COL_POR",
+  "team1Code": "COL",
+  "team2Code": "POR",
+  "team1Name": "Colombia",
+  "team2Name": "Portugal",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Historic First: Two Football Nations Finally Collide on the World Cup Stage",
+  "subheadline": "Colombia and Portugal meet for only the second time ever in a Group K showdown that could determine who tops the table",
+
+  "openingNarrative": "In one of football's most surprising historical footnotes, Colombia and Portugal have met only once before -- a 2014 friendly in Geneva that Portugal won 1-0 through a Bruno Alves header. That two nations so rich in football heritage could exist in almost complete isolation from each other for the entirety of football history seems implausible, yet here we are. Their 2026 World Cup encounter is, in every meaningful sense, a first meeting.\n\nThe anticipation surrounding this match is justified by the quality on display. Portugal arrive with arguably the deepest squad at the tournament: Cristiano Ronaldo's 130+ international goals anchor an attack supplemented by Bruno Fernandes, Bernardo Silva, and Rafael Leao. Their midfield depth -- Joao Neves, Vitinha, and others competing for places -- is the envy of every other nation. Roberto Martinez's possession-dominant approach and the squad's Champions League pedigree make Portugal genuine contenders for the title.\n\nColombia counter with their own brand of magic. Luis Diaz's 7 qualifying goals established him as South America's most dangerous attacker, while James Rodriguez -- the 2014 Golden Boot winner with 6 World Cup goals -- continues to produce moments of creative genius that defy the passage of time. Nestor Lorenzo's side accumulated 28 points from 18 CONMEBOL qualifying matches, demonstrating the consistency and quality that earned them a place in a difficult group.\n\nThis is the Group K blockbuster. The match that determines whether Portugal cruise to the knockout rounds or face an unexpected battle. The match that reveals whether Colombia belong among the genuine contenders. Only one meeting in 100+ years of football history between these nations -- and now the second comes at the World Cup. The stage could not be more perfect.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Roberto Martinez's Portugal play a 4-3-3 that maximizes their extraordinary midfield talent pool. Bernardo Silva's close control and passing in tight spaces, combined with Bruno Fernandes' creative range, give Portugal multiple avenues of attack through the center. Leao's explosive dribbling on the left wing provides the direct counter-attacking option, while Ronaldo pins center-backs with his movement and aerial threat.\n\nColombia's 4-2-3-1 must be tactical rather than expansive. Lorenzo knows his team cannot match Portugal for individual quality across the pitch, so the approach will be controlled: defend with discipline, compete fiercely in midfield, and exploit transitions through Diaz's pace. James Rodriguez's set-piece delivery -- free kicks, corners, and long-range passes -- becomes even more important against a side that Portugal cannot press without leaving spaces behind.\n\nThe tactical key: Colombia's double pivot must limit Portugal's midfield's time on the ball while allowing Diaz to stay high and threaten on the counter. If Portugal's midfield has time to circulate possession, their patient probing will eventually create chances. If Colombia can disrupt and transition quickly, their pace advantage through Diaz could be devastating.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Luis Diaz's counter-attacking pace vs Portugal's possession dominance -- the match hinges on whether Colombia can survive and strike"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Portugal (ELO: 1760, rank 6) vs Colombia (ELO: 1730, rank 11) -- a surprisingly narrow 30-point gap that suggests this is one of the most evenly-matched group-stage fixtures at the tournament. Portugal's slight advantage reflects their European pedigree, but Colombia's South American qualifying record demonstrates comparable quality.",
+    "formAnalysis": "Portugal qualified with 4 wins, 1 draw, 1 loss in 6 matches, scoring 20 goals and conceding 7. Ronaldo's 5 qualifying goals led the attack. Colombia accumulated 28 points from 18 CONMEBOL matches with 7 wins, 7 draws, 4 losses. Diaz's 7 goals made him their top scorer.",
+    "squadValueComparison": "Portugal's squad ($1.25B) significantly outvalues Colombia's ($350M). The gap is primarily driven by Portugal's extraordinary depth -- they have world-class options in every position. Colombia's value is concentrated in fewer players, with Diaz ($93.8M) their standout asset.",
+    "injuryImpact": "Portugal's squad depth means injuries are absorbed without significant quality loss. Colombia are more vulnerable -- losing James or Diaz would fundamentally alter their tactical approach. Both teams carry fitness concerns around aging stars (Ronaldo, James).",
+    "bettingPerspective": "Portugal are favorites at +1000 to win the tournament outright. Colombia at +4000 represent dark horse value. This head-to-head is closer than those outright odds suggest, with Colombia's counter-attacking quality a genuine threat to Portugal's high-possession approach.",
+    "historicalPattern": "Only 1 previous meeting (Portugal 1-0 Colombia in a 2014 friendly). Both nations have reached World Cup quarter-finals (Portugal multiple times, Colombia in 2014) but neither has reached a semi-final. This match could define both teams' group-stage ambitions."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "narrative": "The all-time leading international goalscorer enters what may be his final World Cup with 130+ goals and an insatiable hunger for more. Ronaldo's mobility has declined, but his aerial ability remains elite, his positioning is instinctive, and his sheer willpower to influence big matches is undiminished. Against Colombia, his experience in high-stakes encounters gives Portugal a psychological edge that statistics cannot capture.",
+      "statline": "130+ international goals, 5 qualifying goals, all-time record holder"
+    },
+    {
+      "name": "Luis Diaz",
+      "teamCode": "COL",
+      "narrative": "If Colombia are to produce an upset, Diaz must be the catalyst. Liverpool's Colombian winger has the pace to terrify Portugal's full-backs, the dribbling to beat defenders in one-on-one situations, and the finishing to convert the chances he creates. His 7 qualifying goals were the highest by any Colombian player, and on the counter-attack -- Colombia's primary weapon -- Diaz is one of the most dangerous players at the entire World Cup.",
+      "statline": "7 goals in 18 qualifying matches, Colombia's $93.8M match-winner"
+    },
+    {
+      "name": "Bruno Fernandes",
+      "teamCode": "POR",
+      "narrative": "Manchester United's captain and Portugal's creative engine. Fernandes' passing range, set-piece quality, and goal-scoring ability from midfield make him one of the most complete attacking midfielders at the tournament. His partnership with Ronaldo -- where Fernandes creates and Ronaldo finishes -- has been one of international football's most productive combinations in recent years.",
+      "statline": "Portugal's creative driving force, Manchester United captain"
+    },
+    {
+      "name": "James Rodriguez",
+      "teamCode": "COL",
+      "narrative": "The 2014 Golden Boot winner walks into this match carrying the memories of Colombia's finest World Cup campaign. James' feet still produce passes that belong in an art gallery, and his set-piece delivery -- free kicks curled into the top corner, corners delivered with surgical precision -- gives Colombia a constant threat that Portugal must respect. This could be his last chance to add to his World Cup legacy.",
+      "statline": "2014 World Cup Golden Boot winner with 6 goals, Colombia's creative icon"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Portugal 2-1 Colombia",
+    "confidence": 55,
+    "narrative": "Portugal's superior squad depth and tactical versatility under Martinez should provide the edge in what promises to be the match of the group stage. Their ability to control possession and rotate creative options means Colombia's defense will face 90 minutes of relentless probing, and even the most disciplined defense eventually cracks under that kind of pressure.\n\nBut Colombia will score. Diaz's pace on the counter is a weapon that Portugal's high defensive line invites, and James' set-piece quality means every foul within 35 yards is a genuine scoring opportunity. This will be closer than the bookmakers expect.\n\nThe match will turn on moments of individual brilliance. Ronaldo's experience in the biggest matches, combined with Portugal's midfield superiority, gives them the edge -- but only just. This is the kind of World Cup match that could go either way, and whatever the result, both teams will emerge knowing they have been in a fight worthy of the occasion.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Colombia 2-1 Portugal",
+        "probability": 22,
+        "reasoning": "Diaz produces a masterclass performance, scoring twice on the counter-attack as Portugal's high line is repeatedly exposed. James orchestrates from deep, and Colombia pull off the result that announces them as genuine contenders."
+      },
+      {
+        "scenario": "Portugal 3-0 Colombia",
+        "probability": 15,
+        "reasoning": "Portugal's quality proves overwhelming. Ronaldo, Leao, and Fernandes all find the net in a dominant display that confirms their status as title favorites. Colombia's defense, tested beyond breaking point, cannot cope."
+      }
+    ]
+  },
+
+  "closingLine": "In over a century of football, Colombia and Portugal somehow never found each other. Now, at the World Cup, their first real meeting feels like destiny -- a match between two nations who believe their time has come."
+}

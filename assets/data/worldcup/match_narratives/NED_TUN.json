@@ -1,0 +1,80 @@
+{
+  "matchKey": "NED_TUN",
+  "team1Code": "NED",
+  "team2Code": "TUN",
+  "team1Name": "Netherlands",
+  "team2Name": "Tunisia",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Total Football Meets the Eagles of Carthage",
+  "subheadline": "The Netherlands' relentless attacking machine faces a Tunisian side that shocked France at the last World Cup",
+
+  "openingNarrative": "When the Netherlands take the pitch against Tunisia, they carry with them the most beautiful contradiction in football history: a nation that invented Total Football, reached three World Cup finals, and yet has never lifted the trophy. That burden of brilliance without silverware haunts Dutch football like a ghost that refuses to leave the attic. But this squad, under Ronald Koeman, feels different. There is a pragmatism married to the flair, a willingness to grind that previous Oranje generations would have considered beneath them.\n\nTunisia, however, are not here to admire the scenery. The Eagles of Carthage arrive on the back of one of the most remarkable results in recent World Cup history: their 1-0 victory over reigning champions France in the 2022 group stage. That night in Al Rayyan proved that Tunisian football has evolved beyond plucky underdog status into something genuinely dangerous. Faouzi Benzarti's men are tactically sophisticated, defensively resolute, and carry a counter-attacking threat that has dismantled better sides than this Dutch outfit. In their sole previous meeting, a 1978 friendly, the Netherlands romped to a 4-0 win. But that was 48 years ago, and the gap between these two footballing cultures has narrowed dramatically.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This is a collision between Dutch architectural football and Tunisian defensive craftsmanship. Koeman's Netherlands deploy a fluid 4-3-3 that channels the Total Football heritage through modern execution. Van Dijk and Ake build from the back with the composure of chess grandmasters, while Frenkie de Jong and Xavi Simons orchestrate the tempo through the middle third. The width comes from Gakpo cutting in from the left and Frimpong bombing forward on the right.\n\nTunisia's approach under Benzarti is a masterclass in disciplined counter-punching. Their 4-3-3 compresses into a 4-5-1 without possession, with Skhiri dictating the defensive shape from central midfield. The key to their strategy is patience: absorb pressure, deny space between the lines, and then release Msakni on the break with the kind of precision that embarrassed France.\n\nThe tactical crux sits in the half-spaces. If Simons and de Jong can find pockets between Tunisia's midfield and defensive lines, the Dutch will create chances. If Skhiri and his midfield partners deny those channels, this becomes the kind of frustrating evening that haunts Dutch World Cup campaigns.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Xavi Simons vs Ellyes Skhiri — the battle for control of the space between the lines"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Netherlands (ELO: 1756) vs Tunisia (ELO: 1560) — a 196-point gap that translates to roughly a 72% win probability for the Dutch. This is one of the wider Elo gaps in the group stage, but Tunisia's 2022 exploits prove that ratings only tell part of the story.",
+    "formAnalysis": "The Netherlands lost just 1 of their last 26 matches heading into the tournament, scoring freely and building genuine momentum under Koeman. Tunisia qualified comfortably from Africa, carrying the confidence of their 2022 World Cup campaign where they took 4 points from a group containing France and Denmark.",
+    "squadValueComparison": "Netherlands ($1.18B) vs Tunisia ($120M) — a nearly 10x disparity that underlines the financial gulf. Xavi Simons alone is valued at $100M, close to Tunisia's entire squad. Yet Tunisia's 2022 campaign proved money doesn't defend set pieces.",
+    "injuryImpact": "Both squads are expected to be near full strength. The Netherlands' depth across all positions gives them options that Tunisia simply cannot match, particularly in the attacking third.",
+    "bettingPerspective": "Markets have the Netherlands as heavy favorites. The draw represents interesting value for those who remember Tunisia's defensive masterclass against France. Tunisia have made a habit of keeping scorelines tight at World Cups.",
+    "historicalPattern": "In their only previous meeting, the Netherlands won 4-0 in a 1978 friendly in Tunis. But that result belongs to a different era. Tunisia's recent tournament pedigree demands respect."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "narrative": "Gakpo's 2022 World Cup was a coming-out party for the ages: three goals in three group games, each one more stunning than the last. The Liverpool winger has since cemented his status as one of European football's most devastating wide players. His ability to cut inside from the left onto his preferred right foot creates a puzzle that defenses have yet to solve. Against Tunisia's compact block, Gakpo's directness and finishing could be the skeleton key that unlocks the game.",
+      "statline": "3 goals in 3 group-stage matches at the 2022 World Cup"
+    },
+    {
+      "name": "Youssef Msakni",
+      "teamCode": "TUN",
+      "narrative": "Tunisia's captain is the heartbeat of everything the Eagles of Carthage do going forward. At 36, Msakni has lost a yard of pace but gained an acre of football intelligence. His ability to find space on the counter-attack and deliver the decisive pass or shot has made him the most important Tunisian footballer of his generation. If Tunisia are to pull off an upset, Msakni will be at the center of it.",
+      "statline": "Tunisia's most capped outfield player and all-time leading scorer in major tournaments"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "narrative": "Van Dijk's presence at the back transforms the entire Dutch setup. His aerial dominance, reading of the game, and ability to start attacks with precise long-range passes make him the fulcrum of everything the Netherlands do. At what could be his final World Cup, the Liverpool center-back will be determined to add international glory to his extraordinary career.",
+      "statline": "Won 78% of aerial duels in the 2022 World Cup"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "narrative": "The young midfielder represents Tunisia's future. Mejbri's technical quality, honed in English football, gives the Eagles of Carthage a creative dimension that previous generations lacked. His energy and passing range in midfield could be the catalyst for Tunisia's counter-attacks, and his willingness to press high disrupts opposition build-up play. Against the Netherlands' composed possession game, Mejbri's intensity will be vital.",
+      "statline": "Tunisia's most valuable player at $15M and their primary creative outlet"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Netherlands 2-0 Tunisia",
+    "confidence": 72,
+    "narrative": "The quality gap between these two squads is significant, and the Netherlands' attacking depth should eventually break through Tunisia's organized resistance. But expect this to be a game of patience. Tunisia will make the first 60 minutes deeply uncomfortable for the Dutch, keeping the score close and the tension unbearable.\n\nGakpo will find space on the left, and the second-half introduction of fresh Dutch attackers should tilt the balance decisively. Tunisia's energy will wane, and the Oranje's relentless probing will find its reward. But do not sleep on the Eagles of Carthage — they made France look ordinary just four years ago, and they are more than capable of making this a long, anxious night for Dutch supporters.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Netherlands 0-0 Tunisia",
+        "probability": 18,
+        "reasoning": "Tunisia replicate their 2022 defensive masterclass against Denmark. Compact, disciplined, and unbreakable. The Dutch grow increasingly frustrated, the crowd grows restless, and a point feels like a victory for the Eagles of Carthage."
+      },
+      {
+        "scenario": "Tunisia 1-0 Netherlands",
+        "probability": 10,
+        "reasoning": "A Msakni counter-attacking goal or a set-piece conversion gives Tunisia the lead, and Benzarti's defensive organization holds firm. It would rival their France victory as the greatest result in Tunisian football history."
+      }
+    ]
+  },
+
+  "closingLine": "The Netherlands have the talent to win this match comfortably. Tunisia have the spirit to ensure they won't. Somewhere between those two realities, a fascinating 90 minutes awaits."
+}

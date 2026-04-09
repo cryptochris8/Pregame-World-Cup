@@ -1,0 +1,80 @@
+{
+  "matchKey": "BEL_EGY",
+  "team1Code": "BEL",
+  "team2Code": "EGY",
+  "team1Name": "Belgium",
+  "team2Name": "Egypt",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Premier League Royalty Collides: De Bruyne vs Salah in a World Cup Blockbuster",
+  "subheadline": "Belgium's aging golden generation faces Egypt's Pharaohs in a match headlined by two of the Premier League's greatest ever players",
+
+  "openingNarrative": "There are World Cup matches defined by tactical intrigue, and there are World Cup matches defined by the sheer star power of the individuals on the pitch. Belgium versus Egypt is the latter. When Kevin De Bruyne and Mohamed Salah — two of the Premier League's most decorated and devastating players of the past decade — face each other on the World Cup stage, the football world will stop to watch.\n\nThis is the first World Cup meeting between Belgium and Egypt, but their three previous friendly encounters have produced a surprising narrative: Egypt lead the head-to-head 2-1. A notable 2-0 victory in Brussels in 2018, orchestrated by Salah at his blistering best, showed the world that Egypt are no respecter of reputations. More recently, a 2022 friendly in Kuwait City ended 2-1 to Egypt. Belgium, for all their ranking and resources, have struggled against the Pharaohs.\n\nBelgium arrive carrying the burden of their golden generation's unfulfilled promise. The 2022 World Cup group-stage exit — eliminated by a 0-0 draw against Croatia — was a devastating blow. But their qualifying campaign was strong: unbeaten with 5 wins and 3 draws, 29 goals scored, De Bruyne contributing 6. The $771M squad remains formidable on paper, even as questions about the aging core persist.\n\nEgypt's story is perhaps even more compelling. The Pharaohs — seven-time AFCON champions, the most decorated nation in African football history — have endured World Cup heartbreak. Their 2018 return after a 28-year absence ended in group-stage elimination despite having Salah. Now, in 2026, Salah leads a team that tore through CAF qualifying: 8 wins, 2 draws, 0 losses, 20 goals scored with Salah contributing an extraordinary 9, and only 2 goals conceded. Those numbers are remarkable — an unbeaten qualifying campaign led by a player who scored nearly half the team's goals.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Belgium's system — whether 3-4-2-1 or a more conventional 4-2-3-1 — is built to maximize De Bruyne's creativity. He operates in the spaces between defense and midfield, finding pockets from which his passing range and vision can dissect any defense. Lukaku provides the physical focal point, while the wide players look to stretch the opposition and create crossing opportunities.\n\nEgypt's 4-2-3-1 is built entirely around getting Salah into dangerous positions. The Liverpool icon operates from the right wing, cutting inside onto his lethal left foot — a movement so well-known yet so difficult to stop that it has produced over 200 Premier League goals. The double pivot in midfield provides defensive cover, and Egypt's pragmatic approach prioritizes defensive discipline before Salah's brilliance.\n\nThe key tactical battle is on Egypt's right flank (Belgium's left). Salah cutting inside against Belgium's left-sided defender will produce one of the most anticipated individual duels of the group stage. But equally fascinating is the contrasting creative visions: De Bruyne creates through passing and movement; Salah creates through dribbling and individual skill. Both can score 30 goals in a season. Both can decide a World Cup match.",
+    "team1Formation": "3-4-2-1",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Mohamed Salah vs Belgium's left-sided defense — the Premier League's most prolific forward cutting inside onto his deadly left foot"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Belgium (ELO: 1748, rank 8) vs Egypt (ELO: 1648, rank 25) — a 100-point gap that gives Belgium a statistical advantage, but Egypt's unbeaten qualifying campaign and Salah's form suggest the gap is narrower than the numbers indicate.",
+    "formAnalysis": "Belgium: 5 wins, 3 draws, 0 losses in UEFA qualifying — 18 points, +22 goal difference, De Bruyne 6 goals. Unbeaten, dominant. Egypt: 8 wins, 2 draws, 0 losses in CAF qualifying — 26 points, +18 goal difference, Salah scored 9 goals. Egypt had only 2 goals conceded in 10 matches and 7 clean sheets.",
+    "squadValueComparison": "Belgium ($771M) vs Egypt ($287M) — Belgium hold a significant financial advantage. De Bruyne ($93.8M) leads Belgium, while Salah ($125M) is actually the most valuable individual player between the two squads. The supporting casts, however, differ dramatically in depth.",
+    "injuryImpact": "Belgium's aging core presents fitness risks. De Bruyne's muscle injury history, Lukaku's fitness fluctuations, and the general wear on players in their mid-30s are concerns. Egypt need Salah fit — without him, their attacking output drops precipitously. His 9 qualifying goals represented 45% of Egypt's total.",
+    "bettingPerspective": "Belgium will be favorites based on their overall squad quality and European pedigree. But Egypt's 2-1 head-to-head advantage from friendlies introduces genuine doubt. The match could be closer than odds suggest.",
+    "historicalPattern": "Egypt lead the head-to-head 2-1 from three friendlies. Egypt won 2-0 in Brussels in 2018 and 2-1 in Kuwait City in 2022. Belgium have struggled against Egypt historically. Egypt's last World Cup knockout win came in 1934 — they seek to end a 92-year drought."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "narrative": "Belgium's greatest player carries the weight of an entire generation's legacy into what may be his final World Cup. De Bruyne's 6 qualifying goals proved his creative genius is undiminished, and his ability to produce moments of match-winning brilliance — a defense-splitting pass, a driving run from deep, a thunderous strike from distance — remains unmatched. Against Egypt, he will be the conductor of Belgium's attack, seeking to unlock a defense that conceded only 2 goals in qualifying.",
+      "statline": "6 goals in World Cup qualifying, Belgium's most valuable player ($93.8M)"
+    },
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "narrative": "The Egyptian King enters the World Cup in devastating form. His 9 qualifying goals — nearly half of Egypt's total — established him as Africa's most dangerous striker and one of the tournament's most feared attackers. Salah's ability to cut inside from the right wing and unleash his lethal left foot has produced over 200 Premier League goals, and his World Cup motivation — to deliver the tournament performance his career deserves — burns with an intensity that makes him unstoppable on his day.",
+      "statline": "9 goals in CAF qualifying (nearly half of Egypt's total), Africa's top scorer"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "narrative": "Belgium's all-time leading scorer needs a World Cup performance that matches his extraordinary club career numbers. Lukaku's physical presence, his hold-up play, and his ability to score from crosses and through-balls make him a constant threat. But the 2022 nightmare — those missed chances against Croatia — hangs in the air. Against Egypt's defense, which conceded only 2 goals in 10 qualifying matches, Lukaku must be clinical.",
+      "statline": "Belgium's all-time leading scorer, seeking World Cup redemption"
+    },
+    {
+      "name": "Mohamed Elneny",
+      "teamCode": "EGY",
+      "narrative": "The experienced midfielder's role is simple but critical: protect the defense, deny De Bruyne space, and keep Egypt organized when Belgium have the ball. Elneny's years at Arsenal taught him how the Premier League's best creative players think, and that knowledge will be invaluable against De Bruyne's scheming. If Elneny can limit De Bruyne's influence, Egypt's chances increase dramatically.",
+      "statline": "Experienced midfielder tasked with shielding Egypt's defense"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Belgium 2-1 Egypt",
+    "confidence": 58,
+    "narrative": "Belgium's overall squad quality and depth should prove the difference in a match that will be far more competitive than the uninitiated might expect. De Bruyne's creativity, Lukaku's physical presence, and the Belgian squad's collective experience at major tournaments give them an edge — but Egypt, led by Salah's devastating form, will make this deeply uncomfortable.\n\nExpect Salah to score. When a player nets 9 goals in 10 qualifying matches, stopping him is a matter of damage limitation rather than prevention. His cutting run from the right, that inevitable shift onto the left foot, and the shot that follows — Belgium's defense will see it coming and still struggle to stop it.\n\nBut Belgium's greater depth of creative options means they can create chances from multiple sources. De Bruyne's set-piece delivery, Lukaku's aerial threat, and the wide players' ability to stretch Egypt's defense will eventually produce the goals Belgium need. A hard-fought 2-1 victory that leaves Belgium relieved and Egypt proud — but ultimately, the Premier League superstars share the spoils of the narrative while Belgium take the points.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Egypt 1-0 Belgium",
+        "probability": 18,
+        "reasoning": "Salah produces a moment of individual genius — cutting inside and curling past Courtois — and Egypt's defense, which conceded only 2 goals in qualifying, holds firm for the remaining 70 minutes. A result that would shake the tournament and send Belgium's golden generation toward extinction."
+      },
+      {
+        "scenario": "Belgium 3-1 Egypt",
+        "probability": 15,
+        "reasoning": "Belgium finally click into the gear that their talent demands. De Bruyne is unplayable, Lukaku scores twice, and Belgium's quality overwhelms Egypt despite a consolation from Salah. The golden generation produces the performance it has always promised."
+      }
+    ]
+  },
+
+  "closingLine": "De Bruyne versus Salah. Manchester City versus Liverpool, transposed onto the World Cup stage. Two of the Premier League's greatest-ever players, each carrying a nation's dreams, each determined to produce the World Cup performance their extraordinary careers deserve. This is why we watch."
+}

@@ -1,0 +1,80 @@
+{
+  "matchKey": "BRA_URU",
+  "team1Code": "BRA",
+  "team2Code": "URU",
+  "team1Name": "Brazil",
+  "team2Name": "Uruguay",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Ghost of the Maracanazo: South America's Oldest Wound Reopens",
+  "subheadline": "Seventy-six years after Uruguay shattered Brazil's dreams in the most famous match ever played, the rivalry burns as fiercely as ever",
+
+  "openingNarrative": "July 16, 1950. The Maracana, Rio de Janeiro. Nearly 200,000 people packed into the world's largest stadium to watch Brazil crowned World Cup champions. The newspapers had already printed the headlines. The celebrations had already been planned. All Brazil needed was a draw against Uruguay in the final round. Alcides Ghiggia had other ideas. His goal in the 79th minute silenced the Maracana in what remains the most traumatic moment in Brazilian sporting history -- the Maracanazo. Grown men wept in the stands. The national mourning was so profound that Brazil changed their kit from white to yellow, unable to bear the sight of the jersey associated with their greatest humiliation.\n\nSeventy-six years later, the wound still bleeds. Every Brazil-Uruguay match carries the echo of 1950, and no amount of Brazilian dominance in the decades since -- five World Cup titles, generation after generation of transcendent talent -- has fully erased the psychological scar. Uruguay know this. They feed on it. A tiny nation of 3.5 million people, smaller than the city of Sao Paulo alone, with the audacity to consider themselves Brazil's equals. Two World Cup titles of their own, a warrior mentality coded into their football DNA, and the 'garra charrua' -- the fighting spirit -- that transforms Uruguay from talented underdogs into ferocious competitors.\n\nNow Marcelo Bielsa brings his maniacal pressing philosophy to a Uruguay squad featuring Federico Valverde and Darwin Nunez. Brazil counter with Vinicius Jr. and Ancelotti's tactical mastery. In 80 previous meetings, Brazil lead 38-21. But the most famous result still belongs to Uruguay, and that is all that matters when these two sides step onto the same pitch.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Bielsa's Uruguay is the most tactically distinctive team in the tournament. His 4-3-3 demands relentless pressing from every player -- attacking, midfield, and defense operating as a single aggressive unit that hunts the ball with fanatical intensity. Valverde's box-to-box energy provides the engine, while Darwin Nunez's explosive pace and movement give Uruguay a terrifying counter-attacking outlet. Under Bielsa, Uruguay play on the edge -- the pressing is either suffocating or suicidal, depending on whether the opposition can play through it.\n\nBrazil's 4-2-3-1 under Ancelotti is the antidote. Ancelotti has spent a career coaching against pressing teams, and his system emphasizes composure on the ball, intelligent positioning to create passing triangles under pressure, and the ability to exploit the spaces that aggressive pressing inevitably creates. Vinicius Jr. running at Uruguay's defense with space behind their high line is a nightmare scenario for Bielsa's system.\n\nThe midfield battle will be volcanic. Bruno Guimaraes vs. Valverde is a clash between two of the best box-to-box midfielders on the planet, both at the peak of their powers. Whoever wins this duel wins the match.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Federico Valverde vs Bruno Guimaraes -- two midfield titans in a duel that will determine the balance of the match"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Brazil (ELO: 1760) vs Uruguay (ELO: 1718) -- a 42-point gap that makes this one of the tighter fixtures at the tournament. Uruguay's ELO reflects their improved form under Bielsa and their status as perennial South American contenders.",
+    "formAnalysis": "Brazil qualified 5th in CONMEBOL: 8 wins, 4 draws, 6 losses, including a crucial defeat to Uruguay. Uruguay qualified with an identical record: 7 wins, 7 draws, 4 losses, with Darwin Nunez scoring 5 qualifying goals. Notably, Uruguay beat Argentina 2-0 at home, demonstrating their ability to defeat the continent's best. Their defensive record (12 goals conceded in 18 matches) speaks to Bielsa's organizational improvement.",
+    "squadValueComparison": "Brazil ($1.39B) vs Uruguay ($684M). The gap is significant but not insurmountable. Uruguay's most valuable player, Federico Valverde ($188M), is among the most expensive midfielders in world football and plays at Real Madrid alongside Vinicius Jr. and Rodrygo.",
+    "injuryImpact": "Valverde's fitness defines Uruguay's tournament. Without his lungs and dynamism, Bielsa's pressing system loses its primary engine. Brazil's depth means any single absence can be absorbed.",
+    "bettingPerspective": "Uruguay at +6500 for the tournament reflect their dark-horse status. Brazil at +800 are among the favorites. In this individual match, the draw market is attractive -- 21 of 80 meetings have ended level.",
+    "historicalPattern": "In 80 meetings: Brazil 38 wins, Uruguay 21 wins, 21 draws. Goals: Brazil 140, Uruguay 100. At World Cups (2 meetings): Brazil 1 win, Uruguay 1 win. The 1950 Maracanazo (Uruguay 2-1 Brazil) and the 1970 semi-final (Brazil 3-1 Uruguay) are the most famous encounters. The most recent meeting (2024 qualifier) featured in CONMEBOL's grueling South American qualifiers."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "narrative": "The Ballon d'Or winner faces one of the tournament's most intense challenges. Uruguay under Bielsa will press him relentlessly, double-teaming on the flanks and denying him the space to accelerate. But Vinicius thrives under pressure -- his Champions League performances at Real Madrid have been defined by decisive moments in the most intense environments in club football. If he can survive Uruguay's pressing storm and find space behind their high line, his pace will be devastating.",
+      "statline": "2024 Ballon d'Or winner; Brazil's $225M talisman and most dangerous attacker"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "narrative": "Valverde is the engine that makes Bielsa's Uruguay possible. His physical capabilities are almost inhuman -- he covers more ground per match than virtually any other midfielder in world football, combining the lungs of a marathon runner with the technique of a number 10. At Real Madrid, he plays alongside Vinicius Jr. and Rodrygo; against them, he brings intimate knowledge of their tendencies. Valverde's ability to press, recover, drive forward, and score from distance makes him Uruguay's single most important player.",
+      "statline": "Uruguay's $188M midfield dynamo; Real Madrid regular; Bielsa's system depends on his energy"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "narrative": "Brazil's tactical chameleon provides the unpredictability that organized defenses fear. Against Uruguay's aggressive man-marking, Rodrygo's ability to drop into midfield, drift across the front line, and find pockets of space creates confusion that pure positional defenders cannot solve. His Champions League pedigree ensures he will not wilt under the intensity that a Bielsa team brings.",
+      "statline": "12 goals in 28 Brazil appearances; Real Madrid's versatile attacking star"
+    },
+    {
+      "name": "Darwin Nunez",
+      "teamCode": "URU",
+      "narrative": "Nunez is chaos incarnate in a center-forward's body. His pace is terrifying, his heading is exceptional, and his work rate in Bielsa's pressing system is relentless. But it is his explosive unpredictability that makes him truly dangerous -- defenders never know whether Nunez will run the channel, drop deep, or sprint in behind with ball-in-behind speed that stretches the most organized defenses. His 5 qualifying goals were scored with the fury of a man who takes every match personally.",
+      "statline": "5 goals in CONMEBOL qualifying; Liverpool's explosive striker"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Brazil 2-1 Uruguay",
+    "confidence": 50,
+    "narrative": "This is South American football at its most intense, most emotional, and most unpredictable. The Maracanazo casts a shadow over every Brazil-Uruguay encounter, and both teams know that history is always watching.\n\nBielsa's pressing will cause Brazil problems in the first 30 minutes. Uruguay will be aggressive, physical, and technically excellent in their transitions. Valverde will dominate the midfield for stretches, and Nunez will create at least one moment of genuine panic for Brazil's defense. Uruguay will score.\n\nBut Ancelotti's tactical intelligence and Brazil's individual quality should ultimately prevail. The Italian coach has seen every pressing system in football and knows how to exploit the spaces they create. Vinicius Jr.'s speed in behind Uruguay's high line will produce at least one clear chance, and Brazil's second-half quality -- fresh legs from the bench, tactical adjustments that open new passing angles -- will tilt the balance.\n\nThis match will be talked about for weeks. It has the ingredients of a classic.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Uruguay 1-0 Brazil",
+        "probability": 20,
+        "reasoning": "Bielsa's pressing suffocates Brazil. Valverde scores from distance, Uruguay defend with the garra charrua that has defined their football for a century, and the ghost of the Maracanazo walks again."
+      },
+      {
+        "scenario": "Brazil 2-2 Uruguay",
+        "probability": 20,
+        "reasoning": "Neither team can put the other away in a match that swings back and forth with South American intensity. Goals from both sides, red-card tension, and a draw that leaves both teams with work to do."
+      }
+    ]
+  },
+
+  "closingLine": "In 1950, Uruguay broke Brazil's heart with a goal that echoed for generations. In 2026, Vinicius Jr. and Valverde write the next chapter of South America's most painful, most beautiful rivalry."
+}

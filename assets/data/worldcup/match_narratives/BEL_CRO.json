@@ -1,0 +1,80 @@
+{
+  "matchKey": "BEL_CRO",
+  "team1Code": "BEL",
+  "team2Code": "CRO",
+  "team1Name": "Belgium",
+  "team2Name": "Croatia",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Unfinished Business: The Golden Generation's Last Shot Against the Perennial Overachievers",
+  "subheadline": "Belgium's aging stars seek revenge for their 2022 elimination as De Bruyne faces Modric in a generational midfield duel",
+
+  "openingNarrative": "The ghost of Al Janoub Stadium hangs over this match like a specter that Belgium cannot escape. On December 1, 2022, Belgium — the number-two ranked team in the world, the side that had spent years at the summit of international football rankings — was eliminated from the World Cup by a 0-0 draw against Croatia. It was not just the result that was devastating; it was the manner. Romelu Lukaku, Belgium's all-time leading scorer, missed chance after chance after chance in the final minutes, each miss more agonizing than the last. The camera found Kevin De Bruyne's face at the final whistle: fury, disbelief, and the shattering realization that the golden generation's finest opportunity had slipped away.\n\nNow, four years later, Belgium and Croatia meet again. And the stakes, impossibly, are just as high. Belgium's golden generation — De Bruyne, Lukaku, Courtois — is aging, and the 2026 World Cup represents their final, desperate chance to win a trophy that their talent has always deserved. Their qualifying campaign was unbeaten: 5 wins, 3 draws, 29 goals scored with De Bruyne contributing 6, 18 points from 8 matches. The squad value of $771M still ranks among the tournament's highest.\n\nCroatia, by contrast, seem immune to the passage of time. Luka Modric, now 40, continues to defy biological logic. Croatia finished third at the 2022 World Cup, reached the 2018 final, and qualified for 2026 with a dominant campaign: 7 wins, 1 draw, 0 losses, 26 goals scored, only 4 conceded. Andrej Kramaric scored 6 qualifying goals. Their $464M squad features Josko Gvardiol ($106M) — one of the most expensive defenders in world football — and a new generation ready to carry the torch from Modric's extraordinary hands.\n\nThis is a match between two teams chasing immortality — Belgium before it is too late, Croatia because they refuse to accept that their window has ever closed.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "The 2022 meeting was a tactical stalemate that suited Croatia and devastated Belgium. This time, Belgium cannot afford to play with the same caution. De Bruyne will need to be unleashed as a more advanced playmaker, given the freedom to create in the final third rather than controlled from deep. Belgium's 3-4-2-1 or 4-2-3-1 will seek to maximize De Bruyne's creativity and Lukaku's aerial presence.\n\nCroatia's midfield control remains their calling card. Modric's ability to dictate tempo, Mateo Kovacic's press-resistance, and Marcelo Brozovic's defensive screening create a midfield triangle that is arguably the most technically accomplished at the tournament. They will look to control the ball in central areas and deny Belgium's counterattacking opportunities.\n\nThe key matchup is De Bruyne versus Modric — two of the greatest midfielders of their generation, both potentially playing in their final World Cup. De Bruyne's explosive passing and driving runs against Modric's metronomic control and positional intelligence. The player who imposes himself on this battle will decide the match.\n\nBelgium's Achilles' heel remains their defense. An aging backline has been exposed by pace and movement at recent tournaments. Gvardiol's presence on the Croatian side adds to the intrigue — the Man City center-back's World Cup experience from 2022 makes him one of the tournament's elite defenders.",
+    "team1Formation": "3-4-2-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Kevin De Bruyne vs Luka Modric — a generational midfield duel between two of football's greatest creative forces"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Belgium (ELO: 1748, rank 8) vs Croatia (ELO: 1720, rank 13) — a narrow 28-point gap that reflects how evenly matched these sides are. Belgium's higher ranking is inflated by their historical accumulation of points; Croatia's tournament form suggests they are the more dangerous side.",
+    "formAnalysis": "Belgium: 5 wins, 3 draws, 0 losses in UEFA qualifying — 18 points, +22 goal difference, De Bruyne scored 6 goals. Unbeaten and dominant. Croatia: 7 wins, 1 draw, 0 losses — 22 points, +22 goal difference, Kramaric scored 6. Croatia's qualifying was marginally superior with more wins from the same number of matches.",
+    "squadValueComparison": "Belgium ($771M) vs Croatia ($464M) — Belgium hold a significant financial advantage, led by De Bruyne ($93.8M). But Croatia's Gvardiol ($106M) is the single most valuable player between the two squads. The gap is less than it appears when comparing starting XIs.",
+    "injuryImpact": "Belgium's aging core means fitness is a constant concern. De Bruyne's history of muscle injuries, Lukaku's fitness fluctuations, and the general toll of age on the backline all present risks. Croatia's squad is younger overall, with Gvardiol, Gvardiol and Sucic representing the next generation.",
+    "bettingPerspective": "Belgium's outright tournament odds of +4000 reflect declining expectations. Croatia at +10000 are viewed as longer shots despite their consistent tournament performances. This specific match is likely a coin-toss in the betting markets.",
+    "historicalPattern": "The 2022 0-0 draw eliminated Belgium — Lukaku's missed chances became one of the tournament's defining images. Croatia went on to finish third. Belgium have never beaten Croatia at a World Cup. The psychological scars from 2022 will be present."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "narrative": "The greatest player in Belgian football history enters potentially his final World Cup with the weight of an entire generation's unfulfilled promise on his shoulders. De Bruyne's 6 qualifying goals showed his creative genius remains undimmed, but the 2022 devastation — the frustration visible on his face as Belgium's World Cup ended against Croatia — has left a mark. This match is personal. De Bruyne needs to produce the kind of performance that defines a career, not merely contributes to one.",
+      "statline": "6 goals in World Cup qualifying, Belgium's most valuable player ($93.8M)"
+    },
+    {
+      "name": "Luka Modric",
+      "teamCode": "CRO",
+      "narrative": "At 40 years old, Modric continues to play football as if time has no dominion over him. The 2018 Ballon d'Or winner's touch, his vision, and his ability to control the tempo of a match remain extraordinary. In 2022, his midfield mastery helped Croatia eliminate Belgium and then navigate to a third-place finish. Now, in what is surely his final World Cup, Modric wants one more moment — one more match where he reminds the world that football's most elegant midfielder has lost nothing to the years.",
+      "statline": "2018 Ballon d'Or winner, Croatia's all-time appearance leader"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "narrative": "The haunting image of Lukaku's head in his hands after missing multiple clear chances in the 2022 match against Croatia is seared into World Cup memory. Belgium's all-time leading scorer has the chance for redemption — but also the risk of repeating history. His physical presence, his finishing when in form, and his determination to rewrite his World Cup narrative make him both Belgium's greatest weapon and their biggest uncertainty.",
+      "statline": "Belgium's all-time leading scorer, missed multiple chances in the 2022 meeting"
+    },
+    {
+      "name": "Josko Gvardiol",
+      "teamCode": "CRO",
+      "narrative": "Manchester City's $106M center-back has evolved from a precocious talent at the 2022 World Cup into one of the world's elite defenders. Gvardiol's combination of pace, power, and ball-playing ability makes him a modern defender who can dominate aerial duels and still carry the ball 40 yards out of defense. His assignment against Lukaku will be one of the tournament's most anticipated individual battles.",
+      "statline": "Croatia's most valuable player ($106M), Man City's elite center-back"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Belgium 1-1 Croatia",
+    "confidence": 42,
+    "narrative": "History has a habit of repeating itself, and the ghosts of 2022 suggest another tight, tactical encounter between these two evenly matched sides. The midfield battle between De Bruyne and Modric will produce moments of breathtaking quality, but neither team will be willing to take the risks that might leave them exposed.\n\nBelgium will be more attack-minded than in 2022 — they cannot afford another goalless stalemate — and De Bruyne's driving runs will create opportunities. But Croatia's midfield control, Gvardiol's defensive excellence, and their innate tournament know-how will prevent Belgium from taking full control.\n\nExpect a De Bruyne goal — perhaps a free-kick or a driving shot from the edge of the area — balanced by a Croatian equalizer through Kramaric or a set-piece header. Both teams take a point, both teams live to fight another day, and the story of Belgium versus Croatia adds another chapter to what is becoming one of the World Cup's most compelling modern rivalries.\n\nBut this time, Lukaku must finish his chances. If he does not, the questions will become unanswerable.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Belgium 2-1 Croatia",
+        "probability": 22,
+        "reasoning": "Belgium exorcise the 2022 demons. De Bruyne produces a masterclass, Lukaku scores a redemptive goal, and Belgium's quality finally tells against Croatia. The golden generation breathes again."
+      },
+      {
+        "scenario": "Croatia 2-0 Belgium",
+        "probability": 15,
+        "reasoning": "Croatia's tournament pedigree proves decisive again. Modric controls the match, Kramaric scores twice, and Belgium's aging defense is exposed. The golden generation's World Cup story ends with another Croatian defeat."
+      }
+    ]
+  },
+
+  "closingLine": "In 2022, a 0-0 draw ended Belgium's World Cup and Lukaku's dignity. Four years later, the rematch demands a different story. Whether Belgium can write it — or whether Croatia will once again be the authors of Belgian heartbreak — is the question that makes this one of the most anticipated matches at the 2026 World Cup."
+}

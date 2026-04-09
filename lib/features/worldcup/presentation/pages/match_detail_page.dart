@@ -5,7 +5,9 @@ import '../../../../injection_container.dart' as di;
 import '../../../../l10n/app_localizations.dart';
 import '../../data/services/local_match_summary_service.dart';
 import '../../data/services/local_prediction_engine.dart';
+import '../../data/services/match_narrative_service.dart';
 import '../../domain/entities/entities.dart';
+import '../../domain/entities/match_narrative.dart';
 import '../bloc/nearby_venues_cubit.dart';
 import '../widgets/widgets.dart';
 import '../../../venue_portal/venue_portal.dart';
@@ -26,6 +28,7 @@ class MatchDetailPage extends StatefulWidget {
 class _MatchDetailPageState extends State<MatchDetailPage> {
   WorldCupVenue? _matchVenue;
   MatchSummary? _matchSummary;
+  MatchNarrative? _matchNarrative;
   AIMatchPrediction? _localPrediction;
   bool _isLoadingSummary = false;
   bool _showAllNearbyVenues = false;
@@ -36,6 +39,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     super.initState();
     _findMatchVenue();
     _loadMatchSummary();
+    _loadMatchNarrative();
     _loadLocalPrediction();
   }
 
@@ -68,6 +72,29 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       if (mounted) {
         setState(() => _isLoadingSummary = false);
       }
+    }
+  }
+
+  /// Load narrative article from locally-bundled JSON assets.
+  /// Falls back gracefully — if no narrative exists, the widget
+  /// simply won't show the "Pregame" tab.
+  Future<void> _loadMatchNarrative() async {
+    if (widget.match.homeTeamCode == null || widget.match.awayTeamCode == null) {
+      return;
+    }
+
+    try {
+      final service = di.sl<MatchNarrativeService>();
+      final narrative = await service.getNarrative(
+        widget.match.homeTeamCode!,
+        widget.match.awayTeamCode!,
+      );
+
+      if (mounted && narrative != null) {
+        setState(() => _matchNarrative = narrative);
+      }
+    } catch (_) {
+      // Non-critical — UI works fine without narrative
     }
   }
 
@@ -344,6 +371,7 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
         initiallyExpanded: false,
         homeTeamCode: match.homeTeamCode,
         localPrediction: _localPrediction,
+        narrative: _matchNarrative,
       ),
     );
   }

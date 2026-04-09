@@ -1,0 +1,80 @@
+{
+  "matchKey": "MEX_USA",
+  "team1Code": "MEX",
+  "team2Code": "USA",
+  "team1Name": "Mexico",
+  "team2Name": "United States",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Greatest Rivalry in CONCACAF Ignites the World Cup",
+  "subheadline": "Co-hosts collide as Mexico and the United States bring 76 matches of fury, politics, and football to the biggest stage on earth",
+
+  "openingNarrative": "There are football rivalries born from geography. There are rivalries born from history. And then there is Mexico versus the United States — a rivalry born from all of it, wrapped in the complexities of two nations that share a 3,145-kilometer border and a relationship that extends far beyond sport. When these two teams meet at the 2026 World Cup — a tournament they are co-hosting — the match will transcend football in a way that few fixtures in the sport's history ever have.\n\nSeventy-six previous meetings. Mexico leading 36-23 with 17 draws. A hundred and thirty-nine goals scored by El Tri, ninety-nine by the Stars and Stripes. But the numbers only tell half the story. The 2002 World Cup Round of 16 in South Korea — Brian McBride's header, Landon Donovan's strike, a 2-0 American victory that changed the power dynamic forever. 'Dos a cero' became a battle cry. Mexico's decades of dominance met American ambition, and the rivalry became a genuine two-horse race.\n\nIn 2026, both nations are co-hosts with enormous pressure to perform. The USA under Pochettino have assembled their most talented squad in history — Pulisic, McKennie, Reyna, Adams — players who star at Europe's biggest clubs. Mexico under Aguirre have the experience, the home advantage (when playing at the Azteca), and a chip on their shoulder from recent American results. This is not just a World Cup group match. This is CONCACAF's defining moment on the global stage.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "The USA under Pochettino will press aggressively from the front, using the high-intensity system that has defined his coaching career from Tottenham to PSG. Pulisic's runs from the right, cutting inside onto his left foot, provide the primary creative threat, while Tyler Adams' midfield discipline and Weston McKennie's box-to-box energy create the engine room that drives American football. Pochettino's system demands bravery on the ball — and this American generation has it.\n\nMexico's 4-3-3 under Aguirre is more measured, more patient, more built on experience than youth. Edson Alvarez controls the midfield tempo, Hirving Lozano provides the direct pace that can hurt any defense on the counter, and Santiago Gimenez's movement in the box provides the focal point. Mexico's approach will be to control possession, slow the game to their preferred tempo, and use the moments between American pressing waves to create chances.\n\nThe tactical battle will be fought in midfield. McKennie vs Alvarez is the duel that determines everything — whoever wins the physical and tactical battle in the center of the pitch controls the match. Watch the full-backs: both teams attack with width, and the spaces left behind are where the decisive chances will come.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Weston McKennie vs Edson Alvarez — Juventus' energy against West Ham's discipline in the midfield battle that decides everything"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "USA (ELO: 1690) vs Mexico (ELO: 1675) — a mere 15-point gap that makes this the closest fixture in the group on ELO. Both teams are ranked in the world's top 20, and the minimal gap reflects a rivalry that has been genuinely competitive for over two decades. Home advantage — wherever the match is played — will be the tipping point.",
+    "formAnalysis": "Both nations qualified automatically as co-hosts, meaning neither has the competitive edge of a qualifying campaign. This preparation gap is a double-edged sword: both teams lack recent high-stakes competitive matches, but both have used the preparation time to build their tactical systems through friendlies and camps. The USA have benefited from Pochettino's appointment, giving them a world-class tactical framework.",
+    "squadValueComparison": "USA ($469M) vs Mexico ($261M) — the USA's squad is significantly more valuable, reflecting the European club pedigree of Pulisic ($68.8M), McKennie, Adams, and their Premier League/Serie A contingent. Mexico's value is led by Alvarez ($43.8M). The financial gap has widened dramatically in the USA's favor over the past decade.",
+    "injuryImpact": "Pulisic's fitness is the USA's key variable — his ability to create from the right side is the foundation of their attack. Mexico's depth concerns center on Lozano and Alvarez; without either, their tactical approach changes significantly. Both teams need their talismans fit for this one.",
+    "bettingPerspective": "Markets rate this as one of the tightest matches at the tournament, with home advantage (wherever the match is hosted) being the primary differentiator. The draw is heavily backed, reflecting the view that neither team can afford to lose and both may settle for a point. In 76 previous meetings, 17 have ended in draws — a 22% draw rate.",
+    "historicalPattern": "76 all-time meetings: Mexico 36 wins, USA 23, Draws 17. Mexico 139 goals, USA 99. Their only World Cup meeting — the 2002 Round of 16 — was won 2-0 by the USA, one of the most significant results in American football history. This is their first World Cup meeting in 24 years."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "narrative": "Captain America carries the weight of a nation's footballing evolution on his shoulders. Pulisic's ability to cut inside from the right, beat defenders, and produce decisive moments in the final third has made him one of the most important attackers in American soccer history. Against Mexico, Pulisic doesn't just play — he becomes the embodiment of everything the USA have built over two decades of investment in football development. His AC Milan pedigree means he won't freeze in the spotlight.",
+      "statline": "USA's most valuable player at $68.8M, captain and creative heartbeat of American soccer"
+    },
+    {
+      "name": "Hirving Lozano",
+      "teamCode": "MEX",
+      "narrative": "El Chucky's devastating pace and directness make him Mexico's most dangerous weapon in transition. His famous goal against Germany at the 2018 World Cup — a counter-attacking strike that announced Mexico to the world — showed the kind of match-defining moment he can produce. Against the USA, Lozano's ability to exploit the space behind American full-backs who push forward aggressively could be the tactical key to Mexican victory.",
+      "statline": "Mexico's explosive winger, famous for his stunning 2018 World Cup goal against Germany"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "narrative": "Juventus' box-to-box midfielder brings the energy and athleticism that define modern American football. McKennie's ability to cover ground, win duels, and arrive in the box at the right moment makes him the engine of the US midfield. Against Alvarez, McKennie's physicality and work rate will be crucial in winning the midfield battle that determines the match's outcome.",
+      "statline": "Juventus' dynamic midfielder, providing box-to-box energy for the US national team"
+    },
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "narrative": "Mexico's captain and midfield anchor. Alvarez reads the game like a chess master, intercepting passes before they're made and recycling possession with the calm authority of a player who has competed at the highest level of European football. Against the USA's pressing, his composure under pressure will be Mexico's most important asset. If Alvarez controls the midfield, Mexico control the match.",
+      "statline": "Mexico's $43.8M captain and midfield general, El Tri's most important player"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "USA 2-1 Mexico",
+    "confidence": 55,
+    "narrative": "This prediction comes with the caveat that rivalry matches of this magnitude defy confident analysis. The USA's superior squad value, Pochettino's tactical acumen, and the momentum of a generation of players who have been building toward this moment give them the narrowest of edges. But Mexico's tournament experience, tactical intelligence, and the fire that burns in every Mexican player when they face the USA makes this a genuine coin flip.\n\nExpect an intense, emotionally charged first half with neither team willing to take risks. The match will open up in the second half as both managers push for the victory their nations demand. Pulisic's creativity and McKennie's energy will eventually create enough chances for the USA to edge it, but Lozano's pace on the counter will give Mexico at least one clear opportunity to equalize or win.\n\nThe atmosphere will be unlike anything the World Cup has seen — a divided home crowd, co-hosts with everything at stake, and a rivalry that means more than football. Whatever happens, this match will be talked about for decades.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Mexico 1-0 USA",
+        "probability": 20,
+        "reasoning": "Mexico's experience and tactical maturity prove decisive. Alvarez controls the midfield, Lozano produces a devastating counter-attacking goal, and Mexico's defense holds firm against American pressure. A result that sends shockwaves through US Soccer."
+      },
+      {
+        "scenario": "USA 2-2 Mexico",
+        "probability": 18,
+        "reasoning": "A classic rivalry match where neither team can find the knockout blow. Two goals each, drama from first minute to last, and both teams take a point that keeps the group wide open. The neutral's dream result."
+      }
+    ]
+  },
+
+  "closingLine": "In 76 previous meetings, Mexico and the United States have proven one thing above all else: when these two nations collide, the outcome is never certain, the emotions are always raw, and football becomes something larger than sport. At the 2026 World Cup — their World Cup — the rivalry reaches its ultimate stage."
+}

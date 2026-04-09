@@ -1,0 +1,80 @@
+{
+  "matchKey": "ALG_AUT",
+  "team1Code": "ALG",
+  "team2Code": "AUT",
+  "team1Name": "Algeria",
+  "team2Name": "Austria",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Gijon Reckoning: Forty-Four Years of Waiting End Here",
+  "subheadline": "Algeria and Austria meet in the World Cup for a match dripping with the weight of football's most infamous scandal",
+
+  "openingNarrative": "There are football matches, and then there are acts of historical reckoning. When Algeria face Austria at the 2026 World Cup, the ghost of Gijon will be present in every chant, every tackle, every moment of drama that unfolds. This is not just a group-stage fixture — it is the settling of a 44-year-old debt that football has never quite forgotten.\n\nOn June 25, 1982, in Gijon, Spain, West Germany and Austria played out a cynical 1-0 match that both teams knew would eliminate Algeria from the World Cup. The Algerian players watched from the stands as their World Cup dream was killed not by a superior opponent on the pitch, but by a back-room calculation between two European nations who decided the rules of fair play did not apply to them. Algerian fans burned flags, waved banknotes at the pitch, and wept. The incident — the 'Disgrace of Gijon' — led directly to the rule that final group-stage matches must kick off simultaneously.\n\nNow, in 2026, fate has placed Algeria and Austria in the same group once again. Austria have evolved dramatically since 1982, transformed by Ralf Rangnick's pressing revolution into one of Europe's most dynamic sides. They topped their Euro 2024 group ahead of France and the Netherlands, winning their qualifying campaign with 6 wins, 1 draw, and 1 loss. Christoph Baumgartner's 5 qualifying goals and the tactical intensity Rangnick demands have made Austria a genuine force.\n\nAlgeria, meanwhile, bring their own credentials: 2019 AFCON champions, CAF Group E winners with 22 points, and a squad featuring AC Milan's Bennacer and the mercurial Mahrez. Under Petkovic, they blend European structure with African passion.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This is a collision of two European-influenced tactical philosophies that could not be more different. Austria's Rangnick-inspired system is built on relentless pressing, coordinated pressing triggers, and vertical football designed to move the ball forward at pace. They press high, they press together, and they suffocate opponents in their own half.\n\nAlgeria's approach under Petkovic is more patient and possession-oriented. They build through Bennacer from deep, use Mahrez's creativity to unlock spaces, and look for moments to accelerate. Against Austria's press, Algeria's ability to play through pressure will be the defining tactical battle.\n\nThe key matchup is in transition. Austria's high line leaves space in behind — exactly the kind of space that Algeria's quick attackers can exploit. If Bennacer can beat the first wave of Austria's press, Algeria will find dangerous territory. But if Austria's pressing game works as designed, Algeria could find themselves pinned in their own half, forced into errors by the relentless Austrian energy.\n\nKonrad Laimer's tireless running from midfield against Bennacer's composure under pressure is the individual battle that may decide the match.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Konrad Laimer's pressing intensity vs Ismael Bennacer's composure under pressure — the irresistible force meets the immovable object"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Austria (ELO: 1720, rank 28) vs Algeria (ELO: 1580, rank 45) — a 140-point gap that gives Austria a roughly 60% win probability. Significant, but not insurmountable, especially given the emotional stakes.",
+    "formAnalysis": "Austria qualified with 6 wins, 1 draw, 1 loss in UEFA qualifying — 19 points from 8 matches, with Baumgartner scoring 5. Their biggest win was 4-0 vs Azerbaijan, with only a 1-2 loss to France marring the campaign. Algeria topped CAF Group E with 7 wins, 1 draw, 2 losses, scoring 19 and conceding 8 across 10 matches. Bounedjah led with 5 goals.",
+    "squadValueComparison": "Austria ($350M) vs Algeria ($150M) — Austria's squad is more than double Algeria's value, with Baumgartner ($37.5M) their most valuable asset. The gap reflects Austria's concentration of Bundesliga and top-tier European league talent.",
+    "injuryImpact": "Austria's high-pressing game demands peak physical condition. Any fitness concerns will be amplified by the intensity of their system. Algeria need Bennacer fit — without him, their ability to play through the Austrian press diminishes dramatically.",
+    "bettingPerspective": "Austria's outright tournament odds of +5000 mark them as a genuine dark horse. Their Euro 2024 performance under Rangnick shifted perceptions. Algeria will be viewed as underdogs but carry the emotional weight of the Gijon narrative.",
+    "historicalPattern": "Algeria and Austria have rarely met directly, but the Gijon incident connects them forever. Austria's best World Cup showing was third place in 1954. Algeria's best was the 2014 Round of 16. Both teams have something to prove on the biggest stage."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Christoph Baumgartner",
+      "teamCode": "AUT",
+      "narrative": "The RB Leipzig attacking midfielder has become the face of Austria's new footballing identity. His 5 qualifying goals demonstrated the kind of movement and finishing that makes him a nightmare for defenders — he arrives in the box with the timing of a striker but the vision of a midfielder. At Euro 2024, Baumgartner electrified audiences with performances that announced Austria as a serious force. Against Algeria, his runs between the lines will be Austria's primary creative threat.",
+      "statline": "5 goals in World Cup qualifying, key performer at Euro 2024"
+    },
+    {
+      "name": "Ismael Bennacer",
+      "teamCode": "ALG",
+      "narrative": "The AC Milan midfield maestro carries Algeria's creative burden with the quiet authority of a man who has competed at the highest levels of European club football. Bennacer's ability to receive the ball under pressure, turn, and play progressive passes is what gives Algeria a chance against Austria's press. If he can evade the first wave, he can hurt Austria. If Austria trap him, Algeria's hopes dim considerably.",
+      "statline": "AC Milan's midfield anchor, Algeria's most important player"
+    },
+    {
+      "name": "Konrad Laimer",
+      "teamCode": "AUT",
+      "narrative": "Rangnick's pressing system needs an engine, and Laimer is it. The Bayern Munich midfielder covers more ground than almost any player in world football, and his ability to win the ball in dangerous areas and immediately transition into attack is Austria's calling card. Against Algeria's possession-based approach, Laimer will be tasked with hunting down Bennacer and disrupting the Algerian rhythm before it can establish itself.",
+      "statline": "Bayern Munich's tireless midfielder and Austria's pressing leader"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "narrative": "On the day that Algeria seek poetic justice for the Gijon scandal, Mahrez is the man capable of delivering it. His dribbling ability, his vision, and his composure in the final third make him the player most likely to create something special for Algeria. Against Austria's high line, Mahrez's ability to pick a pass in behind could be devastating. If Algeria are to write a new chapter in their World Cup story, Mahrez's feet will hold the pen.",
+      "statline": "Algeria's most valuable player ($20M) and creative catalyst"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Austria 2-1 Algeria",
+    "confidence": 58,
+    "narrative": "Austria's tactical sophistication, physical intensity, and the momentum of their Euro 2024 breakthrough give them a narrow but clear advantage. Their pressing game will cause problems for Algeria's build-up, and Baumgartner's movement will eventually find the spaces that decide the match.\n\nBut Algeria will not go quietly. The emotional resonance of this fixture, the desire to avenge a 44-year injustice, and the quality of Bennacer and Mahrez will ensure that Algeria compete fiercely. Expect them to score — a Mahrez counter-attack or a set-piece header that sends the Algerian section of the crowd into raptures.\n\nUltimately, Austria's greater consistency at major tournaments and the physical demands of their pressing game should prove decisive. But this will be no walkover. The ghosts of Gijon demand better than that.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Algeria 1-0 Austria",
+        "probability": 18,
+        "reasoning": "Algeria produce a historic, emotionally-charged performance. A first-half counter-attack goal through Bounedjah or Mahrez gives them the lead, and their defensive discipline — honed through CAF qualifying — holds firm. The Gijon ghost is finally exorcised."
+      },
+      {
+        "scenario": "Algeria 1-1 Austria",
+        "probability": 22,
+        "reasoning": "A tense, tight match that neither team can afford to lose ends level. Algeria take the lead, Austria equalize through their sustained pressure, and both teams accept a point that keeps their group-stage hopes alive."
+      }
+    ]
+  },
+
+  "closingLine": "Forty-four years ago, a scandal in Gijon changed the rules of the World Cup. Now Algeria and Austria meet again, and this time, the only thing that will decide their fates is what happens on the pitch."
+}

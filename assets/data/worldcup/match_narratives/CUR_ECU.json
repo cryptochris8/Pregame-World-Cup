@@ -1,0 +1,80 @@
+{
+  "matchKey": "CUR_ECU",
+  "team1Code": "CUR",
+  "team2Code": "ECU",
+  "team1Name": "Curacao",
+  "team2Name": "Ecuador",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Island That Dreamed and the South American Machine",
+  "subheadline": "Curacao's historic World Cup debut meets Ecuador's Caicedo-powered South American grit in a David-versus-Goliath classic",
+
+  "openingNarrative": "Of all the stories the 2026 World Cup will tell, none may be more improbable than that of Curacao. A Caribbean island of approximately 150,000 people — smaller than most World Cup stadiums could hold twice over — qualifying for football's grandest tournament. Under the wily guidance of Dick Advocaat, a man who has coached at the highest level of European football for decades, Curacao turned their CONCACAF qualification campaign into an exercise in collective belief. Four wins, one draw, one loss. Ten goals scored, four conceded. A journey completed against all odds.\n\nEcuador represent a different kind of ambition entirely. Four World Cup appearances since their debut in 2002 have established them as South American football's most improved nation. The current squad may be their most talented ever — Moises Caicedo anchors Chelsea's midfield with a maturity beyond his years, Piero Hincapie has become a pillar at Bayer Leverkusen, and Enner Valencia remains the tireless heartbeat of the attack. Their qualifying campaign was a marathon of endurance: 8 wins, 8 draws, 2 losses through CONMEBOL's grueling 18-match qualification, with Valencia scoring 6 crucial goals.\n\nThis first-ever meeting between these nations is a celebration of football's universality. On one side, an island whose entire population could fit inside a single Premier League stadium. On the other, a South American power with elite European-based talent. The beauty of the World Cup is that both share the same stage.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Ecuador's 4-3-3 under Sebastian Beccacece is built on defensive solidity and quick transitions. Caicedo is the engine — his ability to win the ball, resist pressure, and launch attacks with progressive passing makes Ecuador dangerous in transition. Hincapie's composure at the back allows Ecuador to build from deep, while Valencia's relentless running stretches defenses.\n\nCuracao's approach under Advocaat is pragmatic and well-organized. A 4-3-3 that compresses into a deep defensive block, with Juninho Bacuna providing the creative spark from midfield. Advocaat's Dutch tactical influence is evident — Curacao are disciplined without the ball and look to play with purpose when they have it. Their challenge is that Ecuador's pressing will give them very little time on the ball.\n\nThe key tactical battle is whether Curacao can withstand Ecuador's pressing intensity in the first 20 minutes. If they survive that initial onslaught, their organization could make this more competitive than expected. If Ecuador establish early dominance, the quality gap will tell.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Juninho Bacuna vs Moises Caicedo — Curacao's creator against Ecuador's midfield destroyer"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Ecuador (ELO: 1660) vs Curacao (ELO: 1300) — a massive 360-point gap that gives Ecuador approximately an 82% win probability. This is one of the largest ELO disparities in the entire group stage.",
+    "formAnalysis": "Ecuador qualified through the most competitive qualifying format in world football — CONMEBOL. Their record of 8 wins, 8 draws, 2 losses across 18 matches, with Enner Valencia scoring 6 goals, speaks to remarkable consistency. Curacao won CONCACAF Third Round Group B: 4 wins, 1 draw, 1 loss, 10 goals for, 4 against. Bacuna top-scored with 3 goals.",
+    "squadValueComparison": "Ecuador's squad ($433M) dwarfs Curacao's ($10M) — a 43:1 ratio that is the most extreme in this group. Caicedo alone ($150M) is worth 15 times Curacao's entire roster.",
+    "injuryImpact": "Ecuador's depth is substantial — they can replace almost any player without significant quality loss. Curacao have virtually no depth; any injury to Bacuna or their key defenders would be devastating.",
+    "bettingPerspective": "Ecuador are massive favorites. The market expects a comfortable victory. However, Advocaat's tactical nous and Curacao's defensive organization could keep the scoreline respectable.",
+    "historicalPattern": "This is the first-ever meeting between Ecuador and Curacao in any competition. No historical precedent exists."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Moises Caicedo",
+      "teamCode": "ECU",
+      "narrative": "Caicedo is the heartbeat of this Ecuador side and arguably the best defensive midfielder in the Premier League. His ability to read the game, intercept passes, and transition from defense to attack in a single movement makes him the complete modern midfielder. At Chelsea, he has developed into a leader. For Ecuador, he is indispensable — the player around whom everything is built.",
+      "statline": "Ecuador's midfield anchor, valued at $150M, the most expensive player on the pitch"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "teamCode": "CUR",
+      "narrative": "Bacuna is Curacao's talisman — the most gifted player on their roster and the man who will determine whether the island nation can compete or merely participate. His 3 qualifying goals demonstrate his ability to produce in big moments, and his experience in European football provides a platform of quality that Curacao desperately need. Against Caicedo, he faces the biggest test of his career.",
+      "statline": "3 goals in CONCACAF qualifying, Curacao's most valuable player at $2.5M"
+    },
+    {
+      "name": "Enner Valencia",
+      "teamCode": "ECU",
+      "narrative": "Valencia is Ecuador's World Cup man. His goals against Qatar in the 2022 opener announced Ecuador to the world, and his 6 qualifying goals for this tournament demonstrate that his hunger has not diminished. The veteran striker leads by example — tireless, aggressive, and capable of scoring from any situation. His experience will be invaluable against a nervous Curacao defense.",
+      "statline": "6 goals in CONMEBOL qualifying, Ecuador's all-time leading scorer"
+    },
+    {
+      "name": "Eloy Room",
+      "teamCode": "CUR",
+      "narrative": "Room is the last line of defense for a team that will spend most of this match under siege. The experienced goalkeeper will need to produce the performance of his life to keep Curacao in the contest. His shot-stopping ability and command of the penalty area will be tested repeatedly, and every save he makes will feel like a small victory for the island.",
+      "statline": "Curacao's experienced goalkeeper, key to their defensive resistance"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Ecuador 3-0 Curacao",
+    "confidence": 78,
+    "narrative": "Ecuador's quality advantage is overwhelming, and they should control this match from the first whistle. Caicedo will dominate midfield, Valencia will test the defense repeatedly, and Ecuador's pressing will limit Curacao's ability to build any meaningful attacks.\n\nHowever, Curacao will not roll over. Advocaat's experience in managing underdogs means they will be well-organized and disciplined. The first goal may take longer than Ecuador expect, and if Curacao can reach halftime at 0-0 or 1-0, the pressure will shift significantly.\n\nThe most likely outcome is a professional Ecuador victory — not a demolition, but a controlled, comfortable win that reflects their superior quality in every department.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Curacao 1-1 Ecuador",
+        "probability": 8,
+        "reasoning": "Advocaat's tactical masterclass frustrates Ecuador, Bacuna scores a brilliant goal, and the island produces one of the great World Cup upsets. Football's ultimate fairy tale."
+      },
+      {
+        "scenario": "Ecuador 5-0 Curacao",
+        "probability": 12,
+        "reasoning": "Ecuador click into gear immediately, the quality gap proves too vast, and Curacao's World Cup debut becomes a painful lesson in the difference between qualifying and competing."
+      }
+    ]
+  },
+
+  "closingLine": "For Curacao, walking out onto a World Cup pitch is the victory. For Ecuador, it is just the beginning. Both truths can coexist in a tournament that celebrates football's power to unite the smallest island and the biggest ambitions."
+}

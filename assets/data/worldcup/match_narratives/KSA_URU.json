@@ -1,0 +1,80 @@
+{
+  "matchKey": "KSA_URU",
+  "team1Code": "KSA",
+  "team2Code": "URU",
+  "team1Name": "Saudi Arabia",
+  "team2Name": "Uruguay",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Giant Killers Against the Garra Charrua",
+  "subheadline": "Saudi Arabia's proven capacity for World Cup miracles faces Uruguay's two-time champions and their ferocious competitive spirit",
+
+  "openingNarrative": "On November 22, 2022, Saudi Arabia produced the single greatest upset in World Cup history. They defeated Argentina 2-1, ending a 36-match unbeaten run and sending shockwaves through global football. Salem Al-Dawsari's curling winner wasn't just a goal — it was a declaration that the old order could be broken, that tactical discipline and courage could overcome the most talented squad on the planet. The Green Falcons became overnight legends.\n\nNow they face another South American giant. Uruguay are two-time World Cup champions, the nation that invented footballing grit with their famous 'garra charrua' — the warrior spirit that has propelled a country of just 3.5 million people to 15 Copa America titles, more than any other nation. Marcelo Bielsa's side is built around Federico Valverde's extraordinary dynamism and Darwin Nunez's explosive attacking instincts. They will not be caught off guard the way Argentina were.\n\nThe 2018 World Cup provides the most relevant reference point. In Rostov-on-Don, Luis Suarez's header on his 100th cap gave Uruguay a 1-0 victory over Saudi Arabia. It was a tight, competitive match that the Green Falcons could easily have drawn. Four years of Saudi investment in football infrastructure, the Pro League's global ambitions, and the memory of what they achieved against Argentina have transformed this team's belief. Uruguay will respect them. They cannot afford not to.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Uruguay under Bielsa deploy a high-intensity 4-3-3 that demands relentless pressing and rapid transitions. Valverde's ability to cover ground — appearing in defensive positions one moment and arriving in the box the next — gives Uruguay a dynamism that few teams can match. Darwin Nunez's pace in behind stretches defenses vertically, while the midfield trio provides the ball-winning tenacity that Bielsa's system demands.\n\nSaudi Arabia face a tactical dilemma that mirrors their 2022 Argentina match: play a high line and press aggressively, or sit deep and counter? Against Argentina, the high line worked spectacularly because Argentina's buildup was slow and predictable. Against Uruguay, the calculus is different. Nunez's speed in behind would punish a high line ruthlessly. Roberto Mancini will likely adopt a more conservative approach, using a 4-3-3 that transitions into a 4-5-1 without the ball.\n\nAl-Dawsari and Al-Shehri remain Saudi Arabia's primary attacking threats, but their roles will need to be more opportunistic than creative. The midfield battle — whether Saudi Arabia can disrupt Uruguay's rhythm without committing numbers forward — will determine the match's shape.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Darwin Nunez's pace vs Saudi Arabia's high-line decision — the risk that could define the match"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Uruguay (ELO: 1718) vs Saudi Arabia (ELO: 1500) — a significant 218-point gap that makes Uruguay overwhelming favorites. Saudi Arabia's ELO ranks them 60th in the world. But their 2022 Argentina upset (beating a team with 1873 ELO) proved that no rating gap is insurmountable when the tactical plan is perfect.",
+    "formAnalysis": "Uruguay's CONMEBOL qualifying campaign was solid: 7 wins, 7 draws, 4 losses, 22 goals scored with Darwin Nunez contributing 5. Their 28 points reflect the grueling nature of South American qualification. Saudi Arabia's AFC path was harder-fought: 4 wins, 5 draws, 3 losses in the Fourth Round, scoring 10 and conceding 10. Firas Al-Buraikan led their scoring with 4 goals.",
+    "squadValueComparison": "Uruguay ($684M) vs Saudi Arabia ($97M) — a seven-fold financial gap. Valverde alone ($188M) is worth nearly double Saudi Arabia's entire squad. The disparity is stark, but football has repeatedly shown that squad value is a poor predictor of individual match outcomes.",
+    "injuryImpact": "Uruguay's strength is their depth — losing any single player doesn't fundamentally change their approach. Saudi Arabia are more fragile; Al-Dawsari and Al-Shehri are irreplaceable in terms of quality and big-match experience. Their fitness is paramount.",
+    "bettingPerspective": "Uruguay are heavy favorites. Saudi Arabia's price to win is among the longest in the group stage, but their 2022 Argentina upset makes bookmakers nervous. The draw offers value given Saudi Arabia's defensive capabilities and Uruguay's occasional struggles to break down organized defenses.",
+    "historicalPattern": "Two previous meetings: Uruguay won 1-0 at the 2018 World Cup (Suarez header), and the teams drew 0-0 in a 2014 friendly. Saudi Arabia have never scored against Uruguay in any competition. But their 2022 Argentina victory proved they can rise to any occasion."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "narrative": "The complete midfielder. Valverde combines extraordinary athleticism with technical brilliance — he can cover the entire pitch, shoot from distance with devastating power, and provide the driving runs from deep that unlock defenses. At Real Madrid, he has become indispensable. For Uruguay, he is the engine that makes everything work. Against Saudi Arabia, his ability to arrive late in the box could be the match-winning factor.",
+      "statline": "Uruguay's most valuable player at $188M, the dynamic heartbeat of Bielsa's midfield"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "KSA",
+      "narrative": "The man who scored THAT goal against Argentina. Al-Dawsari's curling winner in 2022 is one of the most replayed goals in World Cup history, and it transformed him from a respected domestic player into a global icon. His technical ability, creativity, and penchant for producing moments of magic in the biggest matches make him Saudi Arabia's most dangerous player. If the Green Falcons are to produce another upset, Al-Dawsari will be at its center.",
+      "statline": "Scorer of the iconic goal that defeated Argentina at the 2022 World Cup"
+    },
+    {
+      "name": "Darwin Nunez",
+      "teamCode": "URU",
+      "narrative": "Nunez is chaos personified — electric pace, relentless work rate, unpredictable movement, and the kind of explosive finishing that can produce a goal from nothing. His willingness to press from the front embodies Bielsa's philosophy, and his ability to stretch defenses with runs in behind creates space for Valverde and others. Against a Saudi defense that may play a high line, Nunez's pace could be devastating.",
+      "statline": "5 goals in CONMEBOL qualifying, Liverpool's explosive striker carrying Uruguay's garra charrua"
+    },
+    {
+      "name": "Saleh Al-Shehri",
+      "teamCode": "KSA",
+      "narrative": "The clinical striker scored Saudi Arabia's equalizer against Argentina, the goal that changed the complexion of the match and set the stage for Al-Dawsari's heroics. Al-Shehri's movement in the box and composure in front of goal provide the Green Falcons with a genuine goal threat. Against Uruguay's aggressive defensive line, his runs into channels could create the kind of chance that he showed the world he can convert.",
+      "statline": "Scored Saudi Arabia's equalizer against Argentina at the 2022 World Cup"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Uruguay 2-1 Saudi Arabia",
+    "confidence": 67,
+    "narrative": "Uruguay's individual quality — particularly through Valverde and Nunez — gives them a decisive advantage, but Saudi Arabia have proven at the highest level that they can compete with anyone when their tactical plan is executed perfectly. Bielsa's Uruguay won't make the mistake of underestimating the Green Falcons, and their pressing intensity will test Saudi Arabia's ability to build from the back.\n\nExpect Uruguay to control the early exchanges and take a first-half lead through either Nunez's pace or a Valverde surge from midfield. Saudi Arabia will grow into the match, their defensive organization improving as they settle into the game. A second-half Saudi goal — perhaps from Al-Dawsari's magic or Al-Shehri's movement — will create a tense final 20 minutes.\n\nBut Uruguay's famous garra charrua will hold. This is a nation that doesn't wilt under pressure, a team forged in the fire of South American qualifying. They will see out the match with the composure that two World Cup titles demand.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Saudi Arabia 2-1 Uruguay",
+        "probability": 12,
+        "reasoning": "Al-Dawsari produces another World Cup masterclass, and Saudi Arabia's defensive discipline frustrates Uruguay into errors. A second consecutive World Cup upset against a South American giant would cement Saudi Arabia's place in football folklore."
+      },
+      {
+        "scenario": "Uruguay 1-0 Saudi Arabia",
+        "probability": 22,
+        "reasoning": "A tight, tactical match where Saudi Arabia's defensive plan works for 85 minutes before a single moment of Valverde brilliance breaks the deadlock. Similar to their 2018 encounter, where Suarez's header was the only goal."
+      }
+    ]
+  },
+
+  "closingLine": "Saudi Arabia proved against Argentina that miracles happen at the World Cup. Uruguay have spent a century proving that their warrior spirit bends but never breaks. When the Green Falcons meet the Celeste, the question isn't just who wins — it's whether another chapter of World Cup legend is about to be written."
+}

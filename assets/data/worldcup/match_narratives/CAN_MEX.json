@@ -1,0 +1,80 @@
+{
+  "matchKey": "CAN_MEX",
+  "team1Code": "CAN",
+  "team2Code": "MEX",
+  "team1Name": "Canada",
+  "team2Name": "Mexico",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Battle of the Co-Hosts: CONCACAF's Power Shift on the World Stage",
+  "subheadline": "Mexico's CONCACAF dynasty faces an insurgent Canada that shattered 34 years of futility with a historic qualifying victory",
+
+  "openingNarrative": "For decades, the footballing relationship between Mexico and Canada was not a rivalry. It was a hierarchy. Mexico won. Canada lost. Repeat for 34 years. From 1985 to 2019, Canada went without a single competitive victory over Mexico -- a drought so comprehensive that it had become accepted wisdom rather than surprising statistic. El Tri's dominance was total: 23 wins in 37 all-time meetings, 75 goals scored to Canada's 26.\n\nThen came the Edmonton snowstorm. On November 16, 2021, in minus-nine-degree temperatures that turned the pitch into a frozen battlefield, Cyle Larin scored twice as Canada defeated Mexico 2-1 in World Cup qualifying. The result was not merely a victory; it was a paradigm shift. The frozen breath of Canadian players celebrating in the snow became the iconic image of CONCACAF football's new reality: Canada were no longer Mexico's afterthought. They were their rival.\n\nNow these two co-hosts meet at the World Cup itself, and the stakes could not be higher. Mexico's 17 World Cup appearances, their quarter-final heritage, and their expectation of deep tournament runs collide with Canada's youthful exuberance, their world-class individual talent, and the home advantage that playing on North American soil provides. This is not just a football match. This is a battle for CONCACAF supremacy, played out on the stage that both nations have spent decades preparing to share.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Mexico's 4-3-3 under Javier Aguirre emphasizes technical possession and positional play. Edson Alvarez anchors the midfield with the authority that comes from Premier League seasons of competitive intensity. Santiago Gimenez leads the line with the clinical finishing that has made him one of Europe's most coveted strikers. Mexico's system is built on patience -- circulating the ball, probing for openings, and striking with precision when the moment arrives.\n\nCanada's 4-3-3 under Marsch is the polar opposite. High pressing, rapid transitions, and controlled chaos. Davies' marauding runs from left-back create numerical superiority on Canada's attacking left side, while David's movement in behind stretches Mexico's back line. The midfield trio provides the energy and intensity that Marsch demands -- every loose ball contested, every passing lane closed, every transition converted into an attacking opportunity.\n\nThe tactical contrast is fascinating: Mexico want to slow the game down and control it. Canada want to speed it up and disrupt it. Whoever imposes their tempo wins.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Alphonso Davies' explosive pace vs Mexico's right-back -- the matchup that could decide CONCACAF's hierarchy"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Mexico (ELO: 1675) vs Canada (ELO: 1615) -- a 60-point gap that favors Mexico but does not reflect the closing trajectory. Canada's rise and Mexico's recent inconsistency have narrowed what was once a vast chasm.",
+    "formAnalysis": "Both teams qualified automatically as co-hosts, meaning neither has competitive qualifying data. Mexico's preparation has relied on friendlies and international windows, while Canada have similarly used warm-up matches to build cohesion. The absence of qualifying pressure could be a factor -- neither team has been tested in must-win competitive environments recently.",
+    "squadValueComparison": "Canada ($271M) vs Mexico ($261M). Remarkably, Canada's squad is now marginally more expensive than Mexico's -- a stunning reversal from even five years ago. Davies ($87.5M) is worth double Mexico's most valuable player Edson Alvarez ($43.8M). The financial balance of power in CONCACAF has shifted.",
+    "injuryImpact": "Davies for Canada and Alvarez for Mexico are both essential. Without either, their respective systems lose their defining player. The depth behind these two starters represents the real quality gap -- Mexico's Liga MX depth vs Canada's MLS/European hybrid.",
+    "bettingPerspective": "Mexico at +8000 and Canada at +25000 for the outright tournament. The match itself is a tight affair in the betting markets, with Mexico slight favorites based on historical prestige and tournament experience. But Canada's squad value edge and home advantage make them dangerous.",
+    "historicalPattern": "In 37 meetings: Mexico 23 wins, Canada 5 wins, 9 draws. Goals: Mexico 75, Canada 26. But the recent trend matters more -- Canada's 2-1 victory in 2022 qualifying ended a 34-year winless streak and signaled the power shift. This will be their first World Cup meeting."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "narrative": "If Canada are to beat Mexico at a World Cup, it will happen because Davies decides to turn this match into a personal showcase. His pace, his dribbling, his ability to cover the entire left flank in both directions -- these are the weapons that Mexico must contain. The Edmonton snowstorm victory was built on Canadian aggression and fearlessness. Davies embodied that spirit then and must channel it again on the biggest stage of his life.",
+      "statline": "Canada's $87.5M talisman; Real Madrid regular; Canada's most important player by every metric"
+    },
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "narrative": "Mexico's midfield enforcer is the player tasked with ensuring that Canada's pressing game does not overwhelm El Tri. Alvarez's physical presence, tactical intelligence, and ability to control the tempo of matches from the center of the park make him Mexico's most important player. At $43.8M, he is Mexico's most valuable asset and their primary link between defense and attack. If Alvarez dominates the midfield, Mexico control the match.",
+      "statline": "Mexico's most valuable player at $43.8M; Premier League midfield anchor"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "narrative": "Canada's goal machine operates in the shadows while Davies takes the spotlight, and that suits David perfectly. His movement in behind defenses is world-class -- intelligent, well-timed, and clinical in the finishing. David's ability to find the net with minimal fuss makes him the ideal center-forward for a Marsch system that creates chances through chaos and transition rather than sustained possession.",
+      "statline": "One of Ligue 1's top scorers; Canada's primary goal threat"
+    },
+    {
+      "name": "Santiago Gimenez",
+      "teamCode": "MEX",
+      "narrative": "The Feyenoord striker represents the new face of Mexican football in Europe. Gimenez's clinical finishing, intelligent movement, and ability to score in the biggest moments make him Mexico's most dangerous attacker. His Champions League experience with Feyenoord has hardened him for exactly this kind of occasion, and his hunger to score at a home World Cup will drive him throughout the match.",
+      "statline": "Feyenoord's leading scorer; Mexico's most clinical finisher"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Canada 2-1 Mexico",
+    "confidence": 45,
+    "narrative": "This prediction goes against historical precedent, against ELO ratings, and against the weight of 37 previous meetings dominated by Mexico. But football is not played on spreadsheets, and the factors that matter most in this specific match -- home crowd energy, individual quality, and the psychological shift that Canada's 2022 victory created -- favor Canada.\n\nDavies will terrorize Mexico's right side. David will finish with his trademark ice-cold composure. And the Canadian crowd will create an atmosphere that El Tri, for all their World Cup experience, have never faced as the away team in a CONCACAF derby on North American soil.\n\nMexico will score -- Gimenez is too good to be shut out -- and the match will be tense, physical, and emotionally exhausting for both sets of fans. But Canada's energy, Davies' brilliance, and the occasion of a home World Cup will tip the balance in what would be the defining result of Canada's footballing transformation.\n\nThe power shift that began in an Edmonton snowstorm will be confirmed under the summer sun.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Mexico 2-1 Canada",
+        "probability": 28,
+        "reasoning": "Mexico's tournament experience proves decisive. Aguirre's tactical adjustments neutralize Davies, Alvarez dominates midfield, and Gimenez's clinical finishing punishes Canadian defensive mistakes. The old order reasserts itself."
+      },
+      {
+        "scenario": "Canada 1-1 Mexico",
+        "probability": 22,
+        "reasoning": "A tense, tactical affair where neither side can establish clear dominance. Both teams score, both teams create chances, but defensive discipline and nerves prevent a decisive third goal. A draw that satisfies neither co-host."
+      }
+    ]
+  },
+
+  "closingLine": "For 34 years, Mexico did not lose to Canada. Then the snow fell in Edmonton, and everything changed. At the 2026 World Cup, Canada will try to prove that revolution was not a fluke."
+}

@@ -1,0 +1,80 @@
+{
+  "matchKey": "FRA_NOR",
+  "team1Code": "FRA",
+  "team2Code": "NOR",
+  "team1Name": "France",
+  "team2Name": "Norway",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Mbappe vs Haaland: The Duel the World Has Been Waiting For",
+  "subheadline": "Football's two greatest attacking forces collide in a group stage match with the intensity of a final — and the ghosts of 1998 hang in the air",
+
+  "openingNarrative": "There are matches that sell themselves, and then there is France vs Norway. Kylian Mbappe against Erling Haaland. Real Madrid's king against Manchester City's machine. The two most prolific goalscorers of their generation, separated by a pitch and fueled by the knowledge that this match could define their World Cup legacy.\n\nBut before we get to the present, we must acknowledge the past. June 28, 1998. Stade Velodrome, Marseille. Norway 2, France 1. The host nation, on their way to winning the World Cup, was shocked by a Norwegian team that played with fearless ambition and clinical finishing. It remains one of the most celebrated results in Norwegian football history — and one of the most painful memories of France's triumphant '98 campaign.\n\nNorway return to the World Cup for the first time since that magical 1998 summer, and they arrive with the most devastating attacking threat they have ever possessed. Haaland scored 16 goals in 8 qualifying matches — an almost incomprehensible record that carried Norway to a perfect qualifying campaign of 8 wins from 8, with 37 goals scored and just 5 conceded. Martin Odegaard, Arsenal's captain, provides the creative genius to feed Haaland's insatiable hunger for goals.\n\nFrance, meanwhile, are France. Mbappe leads. Griezmann creates. Deschamps calculates. They have reached three of the last four World Cup finals. They do not merely attend tournaments — they own them. But Norway in 1998 proved that Les Bleus are not invincible. And Haaland in 2026 is the one player in the world who can match Mbappe strike for strike.",
+
+  "tacticalBreakdown": {
+    "title": "The Irresistible Forces",
+    "narrative": "This match is defined by two players and the tactical structures built around them. France's 4-2-3-1 channels everything through Mbappe — his movement between the lines, his devastating runs in behind, his ability to create something from nothing in the final third. Griezmann drops deep to create, Tchouameni shields the defense, and the full-backs provide width. France are a team designed to hurt you in transition.\n\nNorway's 4-4-2 under Solbakken is equally direct in its intentions. Haaland and a strike partner occupy the center-backs, Odegaard conducts from the number 10 position, and the team presses high to win the ball in advanced areas. Norway's qualifying numbers — 37 goals in 8 matches — were not built on patient possession. They were built on aggressive pressing, direct service to Haaland, and ruthless finishing.\n\nThe tactical duel within the duel is in midfield. If Tchouameni can control the central areas and limit the supply to Haaland, France will dominate. If Odegaard can find pockets of space between France's lines and pick out Haaland with his precision passing, Norway's number 9 will score. He always scores.\n\nThe defensive questions sit on both sides. France's center-backs must deal with Haaland's physical presence and movement — he is the most difficult striker to mark in world football. Norway's back four must contend with Mbappe's pace, which is equally impossible to defend against. Something has to give.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Mbappe vs Norway's backline AND Haaland vs France's center-backs — two parallel battles that will decide the match simultaneously"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "France (ELO: 1870, ranked 3rd) vs Norway (ELO: 1645, ranked 26th) — a 225-point gap that gives France roughly a 68% win probability. But Norway's perfect qualifying campaign and Haaland's form suggest the ELO model may not capture their current level.",
+    "formAnalysis": "France qualified with 5 wins and 1 draw, scoring 16 and conceding 4. Norway's campaign was even more dominant: 8 wins from 8, 37 goals scored and just 5 conceded. Haaland's 16 qualifying goals is the most by any player, while Odegaard provided the creative foundation. Norway's form demands respect.",
+    "squadValueComparison": "France ($1.64B) vs Norway ($659M). The gap narrows significantly when you consider that Haaland ($225M) matches Mbappe's valuation, and Odegaard adds further star power. Norway's top two players are genuine world-class talents.",
+    "injuryImpact": "Both teams are built around their star players. Mbappe and Haaland's fitness is paramount. If either is less than 100%, the tactical balance shifts dramatically. Odegaard's creativity is equally essential to Norway's system.",
+    "bettingPerspective": "France are favorites at approximately -150, but Norway's outright tournament odds of +2800 represent genuine dark horse value. The draw at +260 is attractive given the potential for a high-scoring match where both attacking forces deliver.",
+    "historicalPattern": "In 15 previous meetings, France lead 8-4-3. Norway's famous 2-1 victory at the 1998 World Cup remains the defining fixture. France have generally dominated, but Norway have shown the ability to rise to the occasion in World Cup settings."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "narrative": "The duel with Haaland adds an extra dimension to Mbappe's World Cup. While they will not mark each other, the narrative of these two generational talents performing on the same stage is irresistible. Mbappe's hat-trick in the 2022 final proved he performs at his absolute peak when the spotlight burns brightest. Against Norway, he will seek to outshine his Manchester City rival — and in doing so, remind the world who stands at the summit of football.",
+      "statline": "4 goals at the 2022 World Cup; hat-trick in the final; France captain and Real Madrid's talisman"
+    },
+    {
+      "name": "Erling Haaland",
+      "teamCode": "NOR",
+      "narrative": "The World Cup is the one trophy that has eluded Haaland — because Norway has not been there. After 16 goals in 8 qualifying matches, he arrives with a hunger that borders on obsession. His combination of pace, power, and clinical finishing makes him the most feared striker on the planet. Against France's defense, Haaland will demand constant attention from multiple defenders — and even that may not be enough. This is the stage he was born for.",
+      "statline": "16 goals in 8 qualifying matches; $225M valuation; Norway's all-time greatest goalscoring threat"
+    },
+    {
+      "name": "Martin Odegaard",
+      "teamCode": "NOR",
+      "narrative": "Arsenal's captain is the brain behind Haaland's brawn. Odegaard's vision, his ability to find passes in spaces that do not appear to exist, and his composure under pressure make him the player who unlocks Norway's attacking potential. He signed for Real Madrid at 16 and has since become one of the world's most complete midfielders. Against France, his ability to feed Haaland will be the difference between Norway competing and Norway threatening.",
+      "statline": "Arsenal captain; signed for Real Madrid at 16; Norway's creative heartbeat"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "teamCode": "FRA",
+      "narrative": "While Mbappe and Haaland dominate the headlines, Griezmann may quietly be the most important player on the pitch. His tactical intelligence — knowing when to press, when to drop, when to make the run that creates space for Mbappe — is what makes France function as a team rather than a collection of stars. In a match this open, Griezmann's reading of the game could be the decisive tactical edge.",
+      "statline": "France's all-time joint-top scorer at major tournaments; the tactical brain behind France's system"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "France 2-1 Norway",
+    "confidence": 55,
+    "narrative": "This is the most difficult match to predict in Group I, and anyone who claims confidence is lying. Both teams have the attacking quality to overwhelm the other, and both have defensive vulnerabilities that the opposition's star players will exploit.\n\nWe see a match that lives up to the extraordinary billing. Mbappe scores first — a devastating counter-attack that showcases his speed and finishing. Haaland equalizes — a header from an Odegaard cross that is simply unstoppable. The match swings back and forth in a breathless second half before Griezmann, the quiet genius, produces the decisive moment: an intelligent run that creates the space for France's winning goal.\n\nBut this prediction comes with maximum uncertainty. Haaland could score twice and Norway could win 3-2. The draw is equally likely. This is a match where the scorers are predictable but the outcome is not.\n\nOne thing is certain: Mbappe vs Haaland will not disappoint. The World Cup has been waiting for this.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Norway 2-1 France",
+        "probability": 22,
+        "reasoning": "The ghost of 1998 returns. Haaland dominates France's defense with two goals, Odegaard controls the midfield, and Norway produce the upset of the group stage. It would be the most significant Norwegian football result in 28 years."
+      },
+      {
+        "scenario": "France 2-2 Norway",
+        "probability": 20,
+        "reasoning": "The match becomes the shootout everyone expects. Mbappe and Haaland both score, but neither team can find the defensive discipline to keep the other quiet. A pulsating draw that satisfies everyone except the two managers."
+      }
+    ]
+  },
+
+  "closingLine": "In 1998, Norway proved they could shock the world at France's expense. In 2026, with Haaland leading their line, they do not need to shock anyone — they just need to match Mbappe moment for moment. And that, impossibly, is within their reach."
+}

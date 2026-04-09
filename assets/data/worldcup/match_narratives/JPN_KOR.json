@@ -1,0 +1,80 @@
+{
+  "matchKey": "JPN_KOR",
+  "team1Code": "JPN",
+  "team2Code": "KOR",
+  "team1Name": "Japan",
+  "team2Name": "Korea Republic",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Rivalry That Defines Asian Football",
+  "subheadline": "Japan and South Korea bring 85 matches of fury, pride, and breathtaking football to the World Cup's greatest Asian derby",
+
+  "openingNarrative": "There are rivalries, and then there is Japan versus South Korea. Eighty-five matches stretching back to 1954, fueled by historical wounds that run far deeper than football, and contested with an intensity that makes European derbies look like charity matches. This is the fixture that stops traffic in Tokyo and Seoul, that divides families and friendships, that transforms mild-mannered nations into cauldrons of raw passion.\n\nRemarkably, these two giants of Asian football have never met at a World Cup. They co-hosted the tournament in 2002, each playing on their own soil, their paths never crossing on the pitch. Twenty-four years later, the football gods have finally delivered the match that Asia has been waiting for — and the timing could not be more perfect.\n\nJapan arrive as the more feared side, and with good reason. Their 2022 World Cup campaign — defeating both Germany and Spain in the group stage — announced them as a team capable of beating anyone on the planet. Takefusa Kubo and Kaoru Mitoma have since become two of the most exciting attackers in European football. South Korea, meanwhile, have Son Heung-min, a player whose individual brilliance can single-handedly decide matches, and Lee Kang-in, whose creativity at PSG has established him as one of the best young playmakers in the world. In 85 previous meetings, Korea lead 44-16 with 25 draws. But this is the World Cup, and everything changes under these lights.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Japan under Hajime Moriyasu have evolved into one of the most tactically sophisticated teams in world football. Their preferred 3-4-2-1 can morph into a 4-3-3 depending on the phase of play, with Kubo and Mitoma given freedom to interchange positions and create overloads in wide areas. Japan's pressing is ferocious and coordinated — they won the ball in the final third more than any other Asian team in qualifying, and their ability to transition from defense to attack in seconds is what destroyed Germany and Spain.\n\nSouth Korea's 4-3-3 under Hong Myung-bo is built around Son Heung-min's genius. Son operates on the left but drifts centrally, pulling defenders out of position and creating space for Lee Kang-in to exploit. Korea's midfield presses with intensity, and Kim Min-jae's presence at center-back gives them a defensive anchor who is comfortable playing out from the back.\n\nThe tactical battle will be fought in midfield. Japan's pressing intensity versus Korea's technical quality through Lee Kang-in. Whoever wins that battle controls the match. Watch Japan's wing-backs — their ability to pin Korea's full-backs deep will determine whether Kubo and Mitoma get the one-on-one situations they crave.",
+    "team1Formation": "3-4-2-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Takefusa Kubo vs Kim Min-jae — Japan's creative wizard against Korea's Bayern Munich wall"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Japan (ELO: 1695) vs Korea Republic (ELO: 1655) — a 40-point gap that gives Japan a slight edge but reflects what is essentially a coin-flip between two evenly matched sides. In a rivalry this intense, ELO ratings are footnotes. The passion coefficient is off the charts.",
+    "formAnalysis": "Japan's qualifying campaign was extraordinary: 7 wins, 2 draws, 1 loss, scoring 30 goals and conceding just 3. Ayase Ueda led their scoring with 8 goals. Korea were equally impressive: 6 wins, 4 draws, 0 losses — unbeaten throughout qualifying — with Son contributing 10 goals. Both teams qualified as group winners from AFC's toughest round.",
+    "squadValueComparison": "Japan ($432M) vs Korea Republic ($315M) — Japan hold a significant squad value advantage, driven by the European pedigree of Kubo ($62.5M), Mitoma, and their Premier League contingent. Korea's value is more concentrated, with Kim Min-jae ($87.5M) alone representing over a quarter of their total.",
+    "injuryImpact": "Both teams will want full-strength squads for this one. Son's fitness is Korea's paramount concern — his presence transforms them from a good team to a great one. Japan's depth means they can absorb absences more comfortably, but losing Kubo or Mitoma would significantly reduce their attacking threat.",
+    "bettingPerspective": "Markets rate this as one of the tightest matches at the tournament. Japan are marginal favorites based on their 2022 World Cup pedigree, but the draw is the most heavily backed outcome. In 85 previous meetings, 25 have ended level — a 29% draw rate that supports the market.",
+    "historicalPattern": "In 85 all-time meetings, Korea lead 44-16 with 25 draws. However, these two have NEVER met at a World Cup. They co-hosted in 2002 but played in different groups. The most recent meeting (March 2024) demonstrates the current competitive balance between these fierce rivals."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "narrative": "The former Barcelona academy prodigy has blossomed into one of La Liga's most devastating attackers at Real Sociedad. Kubo's dribbling is mesmerizing, his vision is extraordinary, and his ability to produce decisive moments in the biggest matches makes him Japan's most important player. Against Korea's organized defense, Kubo will be tasked with finding the key that unlocks Kim Min-jae's door — a challenge that would daunt most players, but not one who once trained alongside Messi.",
+      "statline": "Japan's most valuable player at $62.5M, Real Sociedad's creative fulcrum in La Liga"
+    },
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "Against Japan, Son doesn't just play football — he enters a different dimension of motivation. This is the rivalry that defined his youth, the fixture he grew up dreaming about. His 10 goals in qualifying showed he remains devastatingly sharp, and his experience of performing in the biggest matches at Tottenham — Champions League final, North London derbies — means he will relish, not fear, the occasion. If Korea are to win, Son must produce his masterpiece.",
+      "statline": "10 goals in World Cup qualifying, 100+ Premier League goals for Tottenham"
+    },
+    {
+      "name": "Kaoru Mitoma",
+      "teamCode": "JPN",
+      "narrative": "The Brighton winger who wrote his university thesis on dribbling techniques before becoming a professional footballer. That academic approach to the art of beating defenders has translated into one of the most exciting careers in the Premier League. Mitoma's ability to beat players one-on-one creates chaos for opposing defenses, and his decision-making in the final third has improved dramatically since his move to England. In the biggest Asian derby in football, his directness could be devastating.",
+      "statline": "Brighton's star dribbler, published academic thesis on dribbling techniques before turning professional"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "narrative": "At PSG, Lee Kang-in has earned the right to create alongside some of the world's best attackers. His vision, his passing range, and his composure on the ball give Korea a creative dimension that goes beyond Son's individual brilliance. The U-20 World Cup Golden Ball winner has matured into a player who can dictate the tempo of the biggest matches, and his set-piece delivery — precise, varied, always dangerous — adds another weapon to Korea's arsenal.",
+      "statline": "Golden Ball winner at 2019 U-20 World Cup, creative hub at Paris Saint-Germain"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Japan 1-1 Korea Republic",
+    "confidence": 48,
+    "narrative": "Some rivalries are too intense, too evenly matched, and too heavily weighted with consequence to produce a winner. Japan vs South Korea at the World Cup is one of them. Both teams will cancel each other out tactically, both will create chances through their world-class attackers, and both will show the defensive discipline that comes from knowing a loss in this fixture would be catastrophic.\n\nExpect a match played at extraordinary intensity, with moments of genuine quality from Kubo, Son, Mitoma, and Lee. The atmosphere will be electric, the challenges fierce, and the result — when it comes — will satisfy neither side. A draw is the most likely outcome, but it will be a draw that lives in the memory for its quality, not its caution.\n\nBut here is the thing about Japan vs Korea: the form book, the stats, the tactics — none of it captures the raw emotion that this fixture generates. Anything can happen.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Japan 2-1 Korea Republic",
+        "probability": 22,
+        "reasoning": "Japan's 2022 World Cup experience proves decisive. Kubo and Mitoma combine to devastating effect, and Japan's pressing forces Korean errors that Son alone cannot repair."
+      },
+      {
+        "scenario": "Korea Republic 2-1 Japan",
+        "probability": 20,
+        "reasoning": "Son produces the performance of a lifetime, scoring both goals. Korea's historical dominance in the head-to-head (44 wins to Japan's 16) reasserts itself on the biggest stage."
+      }
+    ]
+  },
+
+  "closingLine": "In 85 previous meetings, Japan and South Korea have proven that this rivalry transcends statistics. Now, at last, they meet at the World Cup — and an entire continent will hold its breath."
+}

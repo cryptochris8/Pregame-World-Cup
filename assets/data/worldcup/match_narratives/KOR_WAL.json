@@ -1,0 +1,80 @@
+{
+  "matchKey": "KOR_WAL",
+  "team1Code": "KOR",
+  "team2Code": "WAL",
+  "team1Name": "Korea Republic",
+  "team2Name": "Wales",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Rematch Nobody Expected to Matter This Much",
+  "subheadline": "Four years after their goalless stalemate in Qatar, South Korea and Wales meet again with both teams desperate for three points",
+
+  "openingNarrative": "The 2022 World Cup meeting between South Korea and Wales in Qatar ended 0-0 — a result that satisfied neither team and pleased nobody watching. It was a match defined by what didn't happen: Son didn't score, Wales didn't create, and 90 minutes produced nothing that lingered in the memory. Four years later, the rematch promises something entirely different.\n\nSouth Korea have evolved significantly since Qatar. Their unbeaten qualifying campaign — 6 wins, 4 draws, 22 goals, 5 conceded — demonstrated a team that has found the balance between Son's individual genius and collective tactical discipline. Lee Kang-in has matured from a promising talent into a PSG starter, and Kim Min-jae's move to Bayern Munich has given Korea a world-class defensive anchor. This is a better, more complete South Korea than the one that drew with Wales in the desert.\n\nWales arrive at their second consecutive World Cup with a new identity forming in the post-Gareth Bale era. Brennan Johnson has emerged as the creative force their attack needs, his pace at Tottenham giving Wales a counter-attacking threat they lacked in 2022. Aaron Ramsey, if fit, still offers the intelligence and timing that have defined Welsh football for over a decade. Wales remember the frustration of that goalless draw — and they know that another failure to beat Korea could end their tournament before it truly begins.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "South Korea's 4-3-3 will look to impose the attacking authority that was missing in their 2022 encounter. Son will operate with more freedom than he had in Qatar, given license to drift between the left wing and central positions. Lee Kang-in's ability to find the killer pass from midfield gives Korea a creative dimension that they lacked four years ago, when the midfield battle was too congested to allow any team's quality to shine.\n\nWales will likely deploy a 3-5-2 or 5-3-2, using the extra center-back to provide insurance against Son's movement. Johnson's counter-attacking pace on the right gives Wales an outlet that Korea must respect — pushing their full-back forward risks leaving space that Johnson can exploit devastatingly. Ramsey's intelligence in the midfield will be tasked with disrupting Lee Kang-in's rhythm.\n\nThe key lesson from the 2022 match: both teams were too cautious. The stakes in 2026 are likely to demand more aggression from at least one side, and that could produce the openness that the first meeting lacked. Expect this to be a far more entertaining contest than their goalless stalemate in Qatar.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "3-5-2",
+    "keyMatchup": "Son Heung-min vs Wales' back three — Korea's talisman against the extra defender Wales deploy specifically to contain him"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "South Korea (ELO: 1655) are the higher-rated side by a comfortable margin. Their unbeaten qualifying campaign has cemented their status as a top-25 team in the world. Wales lack a top-tier ELO ranking but have proven at recent major tournaments that they perform above their statistical expectations.",
+    "formAnalysis": "Korea's qualifying was imperious: 6 wins, 4 draws, 0 losses, scoring 22 goals with Son contributing 10. Wales' form is harder to assess without a traditional qualifying campaign, but their tournament track record — Euro 2016 semi-final, Euro 2020 Round of 16, World Cup 2022 — shows they consistently compete above their level.",
+    "squadValueComparison": "Korea Republic ($315M) significantly outvalue Wales. Kim Min-jae ($87.5M) is the most valuable player in either squad by a considerable margin. Wales' squad is built on collective effort rather than individual star power, though Johnson's rising stock at Tottenham is closing the gap at the top.",
+    "injuryImpact": "Son's fitness is Korea's key concern, as always. For Wales, Aaron Ramsey's availability is crucial — his experience and intelligence in midfield are irreplaceable. Johnson must also be fully fit for Wales to execute their counter-attacking plan.",
+    "bettingPerspective": "Korea are strong favorites. The draw is also well-backed, reflecting the 2022 precedent. Wales' price to win offers significant value for those who believe in their tournament pedigree and the quality of Johnson's counter-attacking threat.",
+    "historicalPattern": "One previous meeting: a 0-0 draw at the 2022 World Cup in Qatar. That match was both teams' opening group stage fixture. Neither team created enough clear chances to deserve more than a point in what was one of the tournament's least memorable matches."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "The 2022 meeting with Wales was one of Son's most frustrating World Cup performances — quiet, contained, unable to find the space to create. He will be determined to rewrite that narrative. Son is a better, more mature player than he was in Qatar, and his 10 qualifying goals prove his finishing remains as sharp as ever. Against Wales' three-man defense, his movement between defenders will be the key to unlocking a match that remained locked four years ago.",
+      "statline": "10 goals in qualifying, 100+ Premier League goals, determined to erase 2022 frustration"
+    },
+    {
+      "name": "Brennan Johnson",
+      "teamCode": "WAL",
+      "narrative": "Johnson wasn't in the 2022 World Cup squad in the role he occupies now — Wales' primary attacking threat. His development at Tottenham has transformed him from a promising talent into a genuine game-changer, a player whose pace and directness can hurt even the best teams in the world. Against Korea's high defensive line, the space in behind is where Johnson will do his damage.",
+      "statline": "Tottenham's dynamic winger, Wales' most dangerous counter-attacking weapon"
+    },
+    {
+      "name": "Kim Min-jae",
+      "teamCode": "KOR",
+      "narrative": "The Bayern Munich center-back was already good in 2022; now he's world-class. Kim's ability to read the game, win aerial duels, and distribute from the back gives Korea the defensive platform from which their attack can operate. His presence alone changes the equation for Wales' strikers — getting past Kim is a challenge that the world's best forwards struggle with.",
+      "statline": "Bayern Munich's commanding center-back, Korea's most valuable player at $87.5M"
+    },
+    {
+      "name": "Aaron Ramsey",
+      "teamCode": "WAL",
+      "narrative": "If this is Ramsey's final World Cup, he will want it to mean something. The Welsh captain's intelligence and experience are invaluable in a match where composure and timing can be the difference between a famous victory and an anonymous defeat. His ability to arrive late in the box — the ghost run that has defined his career — remains one of Welsh football's most potent weapons.",
+      "statline": "Wales' most capped midfielder, veteran of two World Cups and multiple European Championships"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Korea Republic 2-1 Wales",
+    "confidence": 60,
+    "narrative": "Unlike the 2022 stalemate, this rematch will produce goals. The stakes demand it. Korea's improved attacking setup — Son's movement combined with Lee Kang-in's creativity — will eventually break through Wales' defensive organization. But Wales' counter-attacking threat through Johnson ensures they won't go quietly.\n\nExpect a tight first half with Korea probing and Wales defending resolutely. The breakthrough will come in the second half, likely through Son's movement creating space for a supporting runner. Wales will respond through Johnson's pace, and the final 20 minutes will be a dramatic affair with both teams pushing for the result they need.\n\nKorea's depth and quality off the bench should prove decisive in the closing stages, but this will be a hard-fought, emotionally charged match that erases all memory of their forgettable first encounter.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Korea Republic 0-0 Wales",
+        "probability": 15,
+        "reasoning": "History repeats itself. Both teams are too cautious, too organized, and too afraid of losing. The ghost of 2022 haunts them, and another goalless draw leaves both teams' fates hanging on the final matchday."
+      },
+      {
+        "scenario": "Wales 2-1 Korea Republic",
+        "probability": 12,
+        "reasoning": "Johnson produces a stunning brace on the counter, and Wales' defensive discipline frustrates Son into another quiet performance. A Welsh victory would send shockwaves through the group and revive memories of their Euro 2016 magic."
+      }
+    ]
+  },
+
+  "closingLine": "Four years ago in Qatar, South Korea and Wales produced a match that neither nation wants to remember. In 2026, they have a chance to replace that memory with something worthy of the World Cup stage. The only guarantee: this time, there will be goals."
+}

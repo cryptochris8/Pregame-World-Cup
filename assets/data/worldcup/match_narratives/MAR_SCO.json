@@ -1,0 +1,80 @@
+{
+  "matchKey": "MAR_SCO",
+  "team1Code": "MAR",
+  "team2Code": "SCO",
+  "team1Name": "Morocco",
+  "team2Name": "Scotland",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Scotland's Impossible Dream Meets Morocco's Unstoppable Machine",
+  "subheadline": "Morocco seek to replicate their 1998 demolition of Scotland while the Tartan Army chases a result that has eluded them across eight World Cups",
+
+  "openingNarrative": "Scotland have appeared at eight World Cups. They have never — not once — advanced beyond the group stage. It is a record that defies comprehension for a nation of Scotland's footballing heritage, a country that gave the world the passing game, that produced Kenny Dalglish and Denis Law, that has broken its own heart so many times that heartbreak has become a national football tradition. In 2026, Morocco stand between Scotland and the knockout stage — and history suggests the Atlas Lions will be merciless.\n\nThe precedent is brutal. In their only previous World Cup meeting, at France 1998, Morocco destroyed Scotland 3-0 in Saint-Etienne. Salaheddine Bassir scored twice in a match that effectively ended Scotland's tournament before the final whistle. Twenty-eight years later, the rematch arrives with even higher stakes.\n\nMorocco are not the team they were in 1998. They are immeasurably better. Their 2022 World Cup semi-final run was the most significant achievement in African football history, and their 2026 qualifying campaign — 8 wins from 8, 22 goals scored, 2 conceded — was perfection itself. Regragui's side combine defensive solidity with devastating counter-attacking quality, a combination that destroyed Spain and Portugal. Scotland, meanwhile, have improved too. Steve Clarke's well-drilled side qualified through UEFA playoffs, with Scott McTominay — now starring at Napoli — leading the charge with 4 qualifying goals from midfield.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Morocco's 4-3-3 under Regragui is designed for exactly this kind of match. Against a team that will defend deep and compact, Morocco have the patience and variety to find solutions. Hakimi's overlapping runs from right-back, Ziyech's through balls, and En-Nesyri's movement in the box give them multiple attacking avenues. Their midfield pressing is coordinated to win the ball high and create chances in transition.\n\nScotland's 3-5-2 under Clarke is built on the collective — greater than the sum of its parts. Andy Robertson provides world-class quality at left wing-back, McTominay's runs from deep add an attacking dimension from midfield, and John McGinn's energy covers every blade of grass. Scotland will look to stay compact, frustrate Morocco, and use set pieces as their primary attacking weapon — their aerial threat in the box is genuine.\n\nThe tactical battle comes down to width. Morocco will try to stretch Scotland's back three with Hakimi's runs and Ziyech's positioning. Scotland will try to keep their shape narrow and force Morocco into crossing from deep, where their aerial advantage in the box becomes relevant. If Morocco find the space between Scotland's wing-backs and center-backs, they will create havoc.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "3-5-2",
+    "keyMatchup": "Achraf Hakimi's attacking runs vs Scotland's left-sided center-back — the world's best right-back against Scotland's defensive discipline"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Morocco (ELO: 1725) vs Scotland (ELO: 1680) — a 45-point gap that makes Morocco favorites but acknowledges Scotland's genuine quality. Scotland's ELO at 35th in the world reflects their improved standing in European football. This is closer on paper than many expect.",
+    "formAnalysis": "Morocco's qualifying was flawless: 8 wins, 0 losses, 22 goals scored, 2 conceded. En-Nesyri led their scoring with 5 goals. Scotland qualified through UEFA playoffs after finishing runner-up in Group A (5 wins, 2 draws, 1 loss). McTominay's 4 goals from midfield were crucial to their qualification. Both teams bring genuine competitive momentum.",
+    "squadValueComparison": "Morocco ($423M) vs Scotland ($200M) — Morocco's squad is more than double Scotland's value. Hakimi ($81.3M) is the most expensive player in this match, while McTominay ($50M) leads Scotland's valuation. The gap is significant but not insurmountable — Scotland's collective quality exceeds the sum of their individual market values.",
+    "injuryImpact": "Morocco's depth gives them flexibility that Scotland cannot match. For Scotland, Robertson's fitness is crucial — his quality at left wing-back is irreplaceable. McTominay must also be fully fit; his goals from midfield are Scotland's primary route to the net.",
+    "bettingPerspective": "Morocco are favorites, but the draw is heavily backed. Scotland's price to win offers genuine value for those who believe Clarke's defensive organization can frustrate Morocco. The tight nature of this fixture — reflected in betting margins — suggests bookmakers respect Scotland's chances.",
+    "historicalPattern": "One previous meeting: Morocco 3-0 Scotland at the 1998 World Cup. Salaheddine Bassir scored twice. Scotland have never beaten Morocco. But more relevantly, Scotland have never advanced past the group stage in 8 World Cup appearances — a record they are desperate to change."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "narrative": "The PSG right-back is the most complete full-back at the tournament. His acceleration, his crossing ability, and his defensive intelligence make him a dual threat that Scotland's left side must account for every second of the match. Hakimi's penalty shootout Panenka against Spain in 2022 demonstrated the ice in his veins — this is a player who doesn't just compete in big moments, he defines them.",
+      "statline": "Morocco's $81.3M world-class right-back, 2022 World Cup semi-finalist"
+    },
+    {
+      "name": "Scott McTominay",
+      "teamCode": "SCO",
+      "narrative": "From Manchester United to Napoli, McTominay's career has been a study in proving doubters wrong. His ability to score crucial goals from midfield — 4 in qualifying — makes him Scotland's most dangerous attacking weapon from an unlikely position. Against Morocco's midfield, McTominay's physical presence and timing in the box could create the chance that Scotland need. One goal could change everything.",
+      "statline": "4 goals in qualifying, Napoli's powerful midfielder carrying Scotland's hopes"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "narrative": "Against Scotland's compact defensive block, Ziyech's creativity is Morocco's skeleton key. His left-footed through balls, his ability to shift the angle of attack with a single pass, and his set-piece delivery give Morocco a constant threat that pure defensive organization cannot completely neutralize. When the match tightens and spaces compress, Ziyech's quality in tight spaces becomes invaluable.",
+      "statline": "Morocco's creative genius, providing the vision that unlocks organized defenses"
+    },
+    {
+      "name": "John McGinn",
+      "teamCode": "SCO",
+      "narrative": "Aston Villa's dynamic midfielder epitomizes everything that makes Scotland competitive beyond their resources. McGinn's work rate, his ability to drive forward with the ball, and his never-say-die attitude make him the heartbeat of Clarke's team. Against Morocco's technically superior midfield, his energy and physicality could disrupt the Atlas Lions' rhythm.",
+      "statline": "Aston Villa's tireless midfielder, Scotland's emotional leader and driving force"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Morocco 1-0 Scotland",
+    "confidence": 62,
+    "narrative": "This will be far tighter than the 3-0 demolition of 1998. Scotland are a better, more organized team than they were then, and Clarke's defensive system is designed to make life difficult for exactly the kind of attacking quality Morocco possess. Expect a tense, tactical match where Morocco dominate possession but struggle to find the breakthrough.\n\nThe goal will likely come from a Hakimi run, a Ziyech set piece, or a moment of individual quality that Scotland's collective discipline cannot prevent. Morocco's patience and quality will ultimately tell, but Scotland will push them all the way. The Tartan Army will be magnificent, and for 70 or 80 minutes, Scottish fans will dare to dream that this is the World Cup where the curse finally breaks.\n\nBut Morocco are too good, too experienced, and too well-coached to let Scotland produce the result they so desperately crave. The Atlas Lions will advance, and Scotland's agonizing World Cup record will extend to nine tournaments without a group stage escape.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Scotland 1-1 Morocco",
+        "probability": 20,
+        "reasoning": "McTominay's late run into the box produces an equalizer from a set piece, and Scotland's heroic defensive effort earns a historic point. A draw could be enough to send Scotland through depending on other results — and the Tartan Army erupts."
+      },
+      {
+        "scenario": "Scotland 1-0 Morocco",
+        "probability": 8,
+        "reasoning": "The greatest result in Scottish football history. McTominay scores from a corner, Scotland defend for their lives, and 128 years of international football finally produces a World Cup knockout stage appearance. Improbable, but not impossible."
+      }
+    ]
+  },
+
+  "closingLine": "Scotland have waited eight World Cups — and 28 years since their last encounter with Morocco — for the result that breaks the curse. Morocco have waited their entire footballing existence for the World Cup to confirm what 2022 promised. Something has to give in Saint-Etienne's spiritual successor — and the football world will be watching."
+}

@@ -1,0 +1,80 @@
+{
+  "matchKey": "AUT_JOR",
+  "team1Code": "AUT",
+  "team2Code": "JOR",
+  "team1Name": "Austria",
+  "team2Name": "Jordan",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Rangnick's Revolution Meets the Nashama's World Cup Fairy Tale",
+  "subheadline": "Austria's pressing machine faces Jordan's fearless debutants in a match that could decide Group J's second qualifying spot",
+
+  "openingNarrative": "If Argentina are expected to top Group J, then this match between Austria and Jordan may well decide who joins them in the knockout rounds. It is the fixture that does not make the front pages of the world's sports sections but could prove to be the most consequential 90 minutes in the World Cup dreams of both nations. For Austria, advancing past the group stage would end a 44-year drought. For Jordan, it would be the most extraordinary achievement in their football history.\n\nAustria arrive as the team transformed. Ralf Rangnick's tactical revolution has turned a nation of competent European campaigners into one of the continent's most dynamic and feared sides. Their Euro 2024 performance — topping a group ahead of France and the Netherlands — was a statement that reverberated across world football. Their qualifying campaign reinforced the message: 6 wins, 1 draw, 1 loss, 19 points, Christoph Baumgartner's 5 goals, and a tactical intensity that makes them exhausting opponents.\n\nJordan's story is different in every way, yet no less compelling. The Nashama's run to the 2024 Asian Cup final — defeating South Korea and Iraq — was the moment that Jordanian football believed the impossible was possible. Their World Cup qualifying campaign, finishing second in AFC Group A behind Japan with 18 points and 4 Al-Naimat goals, confirmed it. With a squad valued at just $25M — Mousa Al-Taamari ($5M) their most expensive player — Jordan prove that spirit, organization, and collective belief can compete with financial might.\n\nThe contrast is stark: Austria's $350M squad, powered by Bundesliga and Premier League talent, against Jordan's budget warriors. But World Cup history teaches us that these are precisely the matches where miracles are born.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Austria's Rangnick-influenced system will look to overwhelm Jordan from the first whistle. High pressing, coordinated pressing triggers, and vertical football designed to pin opponents in their own half — this is the Austrian way. Baumgartner's runs between the lines, Sabitzer's ball-carrying from midfield, and Laimer's relentless energy create a multi-layered attacking threat.\n\nJordan will absorb. Their 4-2-3-1 or 5-4-1 defensive block, refined through the Asian Cup and qualifying, is designed to frustrate exactly this kind of opponent. The double midfield pivot provides a defensive shield, the back line sits deep and compact, and the entire team defends as one unit. It is not pretty, but it is effective.\n\nThe key tactical battle is Austria's press versus Jordan's resilience. If Austria's pressing game works, they will create turnovers in dangerous areas and score from short transitions. If Jordan can absorb the pressure, maintain their shape, and survive the opening 30 minutes, the match becomes a different proposition. Al-Tamari's pace on the counter is Jordan's safety valve — one ball over Austria's high line could create a gilt-edged opportunity.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "5-4-1",
+    "keyMatchup": "Austria's sustained pressing intensity vs Jordan's defensive concentration — can the Nashama hold firm for 90 minutes?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Austria (ELO: 1720, rank 28) vs Jordan (ELO: 1400, rank 75) — a 320-point gap that is among the largest in the group stage. The implied probability heavily favors Austria, but Jordan's Asian Cup form suggests they are capable of performing above their ranking.",
+    "formAnalysis": "Austria: 6 wins, 1 draw, 1 loss in UEFA qualifying — 19 points, +11 goal difference, Baumgartner 5 goals. Only lost to France (1-2). Jordan: 5 wins, 3 draws, 2 losses in AFC qualifying — 18 points, +5 goal difference, Al-Naimat 4 goals. Jordan were unbeaten at home (3W, 2D).",
+    "squadValueComparison": "Austria ($350M) vs Jordan ($25M) — a 14:1 ratio. Austria's Baumgartner ($37.5M) alone exceeds Jordan's entire squad value. The financial chasm is enormous, but Jordan's Asian Cup final run proved football is not played on balance sheets.",
+    "injuryImpact": "Austria have squad depth to manage rotation. Jordan's thin squad means every player must be fit and at maximum effort. The loss of Al-Tamari would remove their primary counter-attacking weapon.",
+    "bettingPerspective": "Austria will be heavy favorites. Jordan's long odds reflect the scale of the challenge but also the romance of a potential upset. Austria have not advanced past the World Cup group stage since 1982 — pressure is on both sides.",
+    "historicalPattern": "No competitive history between these nations. Austria's last World Cup group-stage advance was 1982 — a 44-year drought. Jordan have never played at a World Cup before 2026. This is uncharted territory for both."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Christoph Baumgartner",
+      "teamCode": "AUT",
+      "narrative": "Austria's attacking heartbeat will be tasked with breaking down Jordan's organized defense. Baumgartner's 5 qualifying goals demonstrated the kind of movement and finishing that can trouble any back line, and his Euro 2024 performances proved he belongs on the biggest stages. Against Jordan's deep block, his timing and intelligence in finding space between the defensive and midfield lines will be crucial.",
+      "statline": "5 goals in World Cup qualifying, RB Leipzig's dynamic attacking midfielder"
+    },
+    {
+      "name": "Mousa Al-Tamari",
+      "teamCode": "JOR",
+      "narrative": "Jordan's most dangerous player carries the burden of an entire nation's attacking hopes. Al-Tamari's pace, his willingness to run at defenders, and his eye for a pass make him the player who can create something from nothing. Against Austria's high pressing line, one ball over the top to Al-Tamari's run could create the kind of counter-attacking opportunity that World Cup upsets are built on.",
+      "statline": "Jordan's most valuable player ($5M), electric winger with pace and creativity"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "teamCode": "AUT",
+      "narrative": "Borussia Dortmund's experienced midfielder brings Champions League pedigree and big-game composure to Austria's engine room. Sabitzer's ability to drive forward with the ball, his set-piece quality, and his leadership in high-pressure situations make him the player who can provide the clinical edge Austria need to break down Jordan's defensive wall.",
+      "statline": "Borussia Dortmund midfielder, Champions League finalist, Austria's big-game player"
+    },
+    {
+      "name": "Yazan Al-Naimat",
+      "teamCode": "JOR",
+      "narrative": "The striker whose 4 qualifying goals helped Jordan reach the World Cup is a player who lives for the dramatic moment. Al-Naimat's finishing is clinical and his positioning intelligent. If Jordan create even one clear chance from a set piece or counter-attack, Al-Naimat has the composure to convert it. A goal against Austria would write his name into Jordanian football immortality.",
+      "statline": "4 goals in World Cup qualifying, Jordan's leading striker"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Austria 2-0 Jordan",
+    "confidence": 68,
+    "narrative": "Austria's tactical sophistication, physical intensity, and greater depth of quality should prove decisive. Their pressing system, honed under Rangnick's influence and tested against Europe's best at Euro 2024, will create problems that Jordan's defense has not encountered at this level. Baumgartner's movement and Sabitzer's driving runs will eventually crack the resistance.\n\nBut Jordan will make Austria work for every inch. The Nashama's Asian Cup pedigree means they will not freeze, they will not panic, and they will defend with the collective discipline that frustrated South Korea, Iraq, and other Asian heavyweights. This will not be a comfortable evening for Austria.\n\nIf Austria advance from this group — ending their 44-year World Cup group-stage drought — this match against Jordan may be remembered as the one where they earned it through sweat and persistence rather than style.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Jordan 1-0 Austria",
+        "probability": 10,
+        "reasoning": "The World Cup's greatest upset of 2026. Jordan channel every ounce of their Asian Cup belief, score through a counter-attack, and defend with the kind of heroism that enters tournament folklore. Austria's pressing cannot break through, and the Nashama shock the world."
+      },
+      {
+        "scenario": "Austria 1-1 Jordan",
+        "probability": 18,
+        "reasoning": "Jordan take a shock lead through a set piece or Al-Tamari counter-attack. Austria equalize through sustained pressure, but cannot find a winner against a Jordan side that defends as if their lives depend on it. A draw that keeps both teams' hopes alive."
+      }
+    ]
+  },
+
+  "closingLine": "Austria have not advanced past the World Cup group stage since 1982. Jordan have never played at a World Cup before 2026. When these two narratives collide, the result is uncertain — but the drama is guaranteed."
+}

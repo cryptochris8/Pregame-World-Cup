@@ -1,0 +1,80 @@
+{
+  "matchKey": "AUS_HON",
+  "team1Code": "AUS",
+  "team2Code": "HON",
+  "team1Name": "Australia",
+  "team2Name": "Honduras",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Playoff Rematch: Socceroos and Los Catrachos Collide Once More",
+  "subheadline": "Australia and Honduras renew their intercontinental rivalry from the 2017 World Cup playoffs in a Group D contest that both teams need to win",
+
+  "openingNarrative": "The football gods have a sense of humor. In 2017, Australia and Honduras met in the intercontinental World Cup playoff, with a trip to Russia on the line. The Socceroos won the two-legged tie on aggregate — Mile Jedinak's hat-trick in the decisive second leg in Sydney sealing qualification — in a bruising, physical encounter that left scars on both sides. Now, nine years later, they meet again on the World Cup stage itself.\n\nAustralia arrive at the 2026 World Cup riding the momentum of their 2022 campaign, where they reached the Round of 16 for only the second time in their history. That Qatar run — built on defensive organization, collective spirit, and Mathew Leckie's iconic goal against Denmark — transformed Australian football's self-image. They are no longer happy just to be at the tournament. They want to progress.\n\nTheir qualifying campaign reflected this ambition: 5 wins, 4 draws, 1 loss in AFC Third Round Group C, accumulating 19 points as runners-up. Kusini Yengi's 6 goals led the attack, and 4 clean sheets demonstrated defensive resilience. The squad value of $79.3M is modest by World Cup standards — Harry Souttar ($12.5M) is their most valuable player — but the Socceroos compensate with tactical discipline and extraordinary collective effort.\n\nHonduras represent CONCACAF at its most physical and passionate. Their last World Cup appearance was 2014, and qualifying for 2026 represents a significant achievement for a program that has been rebuilding. Alberth Elis provides the attacking spark, but Honduras's strength lies in their physical intensity, their ability to make matches uncomfortable, and the fierce pride of Los Catrachos on the international stage.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Australia's 4-3-3 system under their coach prioritizes pressing intensity and collective work rate. Jackson Irvine's leadership in midfield provides the organizational spine, while the wide forwards look to stretch opponents and create crossing opportunities for aerial targets. The Socceroos' strength lies in their set-piece delivery and second-ball dominance.\n\nHonduras will match Australia's physicality with their own brand of aggressive, direct football. A 4-4-2 with compact midfield lines and quick transitions through Elis's pace on the wing is the expected approach. Honduras have historically excelled in making matches physical and disrupting more technical opponents.\n\nThe key tactical battle is in the air. Both teams possess height and physical presence, and aerial duels from set pieces and crosses could decide the match. Whichever team wins the second-ball battles and dominates the physical contest will have the advantage.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Australia's set-piece delivery and aerial prowess vs Honduras's physical midfield and defensive resilience"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Australia (ELO: 1622, rank 30) hold a clear ELO advantage over Honduras. The gap suggests Australia should be comfortable favorites, though Honduras's CONCACAF qualifying showed they are competitive.",
+    "formAnalysis": "Australia qualified with 5 wins, 4 draws, 1 loss in AFC Third Round — 19 points, +9 goal difference. Kusini Yengi led with 6 goals, and 4 clean sheets demonstrated defensive solidity. Their biggest win was 3-0 vs Bahrain, worst defeat 0-2 vs Japan.",
+    "squadValueComparison": "Australia's squad ($79.3M) vs Honduras's more limited resources — the financial gap exists but is not as extreme as other World Cup matchups. Both teams rely on collective quality rather than individual market value.",
+    "injuryImpact": "Both squads operate with limited depth. Any injury to key players like Irvine for Australia or Elis for Honduras would significantly impact their tactical approach.",
+    "bettingPerspective": "Australia will be favorites based on their 2022 World Cup experience and higher ELO rating. Honduras's odds will reflect their underdog status, but their physicality and CONCACAF pedigree make them dangerous.",
+    "historicalPattern": "Australia beat Honduras in the 2017 World Cup playoff on aggregate. Honduras have not appeared at a World Cup since 2014. The Socceroos' 2022 Round of 16 run gives them a significant experience advantage."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "narrative": "Australia's captain embodies everything the Socceroos stand for: tireless work rate, tactical intelligence, and an unshakeable determination to compete against anyone. Irvine's Bundesliga experience gives him the composure to manage high-pressure situations, and his leadership in midfield will be crucial in what promises to be a physically intense encounter. He is the player who sets the tempo, wins the important duels, and drives his team forward when others tire.",
+      "statline": "Australia's captain, Bundesliga-experienced midfielder and leadership spine"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "narrative": "Honduras's most dangerous attacking weapon, Elis brings pace, directness, and an unpredictability that can trouble any defense. His ability to run at defenders and create chances from wide positions gives Honduras an outlet when they win possession. Against Australia's organized back line, Elis's willingness to take on defenders one-on-one represents Los Catrachos' primary route to goal.",
+      "statline": "Honduras's primary attacking threat with pace and directness"
+    },
+    {
+      "name": "Kusini Yengi",
+      "teamCode": "AUS",
+      "narrative": "The striker who led Australia's qualifying campaign with 6 goals has the chance to announce himself on the World Cup stage. Yengi's combination of physical presence and finishing ability makes him a constant aerial threat, and his willingness to run the channels creates the space that Australia's midfield exploits. Against Honduras's physical defense, he will need to match their intensity while maintaining his composure in front of goal.",
+      "statline": "6 goals in AFC qualifying, Australia's leading scorer"
+    },
+    {
+      "name": "Mathew Leckie",
+      "teamCode": "AUS",
+      "narrative": "The man whose goal against Denmark at the 2022 World Cup became an iconic Australian sporting moment. Leckie's experience, his ability to produce in big moments, and his defensive work rate make him invaluable to the Socceroos. Against Honduras, his composure and knowledge of what it takes to deliver at a World Cup could be the difference.",
+      "statline": "Scored the iconic goal against Denmark at the 2022 World Cup"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Australia 2-0 Honduras",
+    "confidence": 65,
+    "narrative": "Australia's 2022 World Cup experience and superior tactical organization give them a clear advantage. The Socceroos have been hardened by the demands of AFC qualifying and the intensity of World Cup knockout football, while Honduras arrive with less recent tournament experience.\n\nExpect a physical, combative first half where Honduras match Australia's intensity. But as the match progresses, Australia's fitness, tactical discipline, and superior squad depth should tell. A set-piece goal — perhaps from Souttar's aerial dominance — and a second from Yengi's predatory finishing will seal a professional victory.\n\nHonduras will compete with everything they have. Los Catrachos never make life easy. But Australia's evolution since their 2017 playoff encounter has been significant, and the Socceroos are simply a better team now.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Australia 1-1 Honduras",
+        "probability": 20,
+        "reasoning": "Honduras's physical intensity prevents Australia from controlling the match. A second-half Elis goal cancels out an Australian opener, and neither side can find a winner in a bruising encounter."
+      },
+      {
+        "scenario": "Honduras 1-0 Australia",
+        "probability": 10,
+        "reasoning": "Honduras produce a shock result through defensive discipline and a single counter-attacking goal. Australia's attacking play is frustrated by physical defending, and Los Catrachos celebrate a famous World Cup victory."
+      }
+    ]
+  },
+
+  "closingLine": "In 2017, Australia ended Honduras's World Cup dreams in a playoff. Now they meet on the same stage. Football's sense of narrative justice is alive and well."
+}

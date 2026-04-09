@@ -1,0 +1,80 @@
+{
+  "matchKey": "BIH_CAN",
+  "team1Code": "BIH",
+  "team2Code": "CAN",
+  "team1Name": "Bosnia and Herzegovina",
+  "team2Name": "Canada",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Two Nations Writing New Chapters Collide on the World's Biggest Stage",
+  "subheadline": "Canada's co-hosting dream meets Bosnia's never-say-die spirit in a Group B clash between football's rising forces",
+
+  "openingNarrative": "There is something deeply compelling about a World Cup match between two nations for whom the tournament itself represents transformation. Canada, co-hosting for the first time, are a country whose footballing identity has been rewritten in the space of a single generation. A nation that once viewed the beautiful game as a distant curiosity now boasts Alphonso Davies at Real Madrid, Jonathan David lighting up Ligue 1, and a public that has fallen completely, irrevocably in love with the sport. Playing a World Cup on home soil is the culmination of a dream that seemed impossible just a decade ago.\n\nBosnia and Herzegovina carry an even more profound story. A nation forged in the fires of the 1990s conflict, where football served not merely as entertainment but as a lifeline of national identity and unity. Their 2014 World Cup debut in Brazil was one of the most emotionally charged qualifications in football history, with celebrations that lasted days across Sarajevo, Mostar, and Banja Luka. Now, having fought through UEFA's brutal playoff path to reach 2026, Bosnia return to the World Cup stage with the same fire that defines their national character.\n\nThese two teams have met only twice before -- a 2-0 Canadian victory in Toronto in 2008 and a 1-0 Bosnian win in Zenica in 2021. The head-to-head is perfectly balanced, and so is the intrigue heading into this Group B encounter.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Jesse Marsch's Canada play with the high-energy pressing style that defined his coaching philosophy at RB Salzburg and Leeds United. The 4-3-3 is designed to suffocate opponents in their own half, win the ball high, and attack with devastating pace. Davies' ability to surge forward from left-back creates an asymmetric overload that few teams can handle. Jonathan David's intelligent movement in behind stretches defenses vertically, while the midfield trio provides the energy to sustain Canada's pressing game for 90 minutes.\n\nBosnia under Sergej Barbarez counter with pragmatic intelligence. Their 4-2-3-1 is built around Edin Dzeko's extraordinary ability to hold the ball up, bring midfielders into play, and finish with clinical precision. The double pivot shields the back four, and Bosnia are comfortable surrendering possession to teams who press aggressively -- they have spent years in UEFA qualifying doing exactly that against technically superior opponents. The key tactical question: can Bosnia's experienced center-backs handle Davies' electric pace on the overlap?",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Alphonso Davies' marauding runs vs Bosnia's right-sided defense -- speed against structure"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Canada (ELO: 1615) vs Bosnia (ELO: 1600) -- a mere 15-point gap that makes this one of the most evenly matched fixtures in the group stage. The ELO ratings suggest an essentially 50-50 contest, with home advantage tipping the balance marginally toward Canada.",
+    "formAnalysis": "Canada qualified automatically as co-hosts and have not participated in competitive qualifying, relying on friendlies to build cohesion. Bosnia ground through UEFA qualifying (4 wins, 3 draws, 3 losses, 14 goals scored) before emerging from Play-Off Path A. Ermedin Demirovic led their scoring with 4 goals. Bosnia's competitive hardening could be an advantage over a Canada side that has lacked meaningful recent matches.",
+    "squadValueComparison": "Canada's squad ($271M) vs Bosnia's ($150M). Alphonso Davies ($87.5M) alone is worth more than half of Bosnia's entire squad. But Bosnia's Edin Dzeko brings the kind of experience and nous that no transfer fee can buy.",
+    "injuryImpact": "Davies is Canada's irreplaceable asset -- without his pace and dynamism, the tactical plan fundamentally changes. Bosnia's dependence on the 40-year-old Dzeko is both their strength and vulnerability. If Dzeko is fully fit, Bosnia have a world-class reference point. If not, their attacking identity fractures.",
+    "bettingPerspective": "Canada's co-hosting advantage makes them slight favorites. Both teams carry long outright odds (+25000 for Canada, +30000 for Bosnia), reflecting their status as group-stage-and-beyond hopefuls rather than tournament contenders. This match is genuinely unpredictable.",
+    "historicalPattern": "In 2 previous meetings, the teams have split results evenly: Bosnia won 1-0 in Zenica (2021), Canada won 2-0 in Toronto (2008). Total goals: BIH 3, CAN 2. Home advantage has been decisive in both encounters."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "narrative": "Born in a refugee camp in Ghana, raised in Edmonton, and now starring for Real Madrid -- Davies' life story is the kind of narrative that transcends sport. At 25, he enters a home World Cup as the most recognizable Canadian footballer in history, carrying the hopes of an entire nation on shoulders that seem impossibly broad for his frame. His pace is devastating, his smile is infectious, and his ability to change a game with a single surging run makes him the player every opponent fears. This is his moment.",
+      "statline": "Canada's most valuable player at $87.5M; regular starter at Real Madrid"
+    },
+    {
+      "name": "Edin Dzeko",
+      "teamCode": "BIH",
+      "narrative": "At 40, Dzeko is playing in what will almost certainly be his final World Cup -- and possibly his final major tournament. Bosnia's all-time record goalscorer, with over 65 international goals, has scored at the highest levels of European club football with Manchester City, Roma, and Inter Milan. His intelligence compensates for diminished pace, and his ability to hold the ball under pressure and bring teammates into play remains world-class. Every Bosnian child who has ever kicked a ball dreams of being Dzeko. This is his farewell tour.",
+      "statline": "Bosnia's all-time top scorer with 65+ international goals; over 300 career club goals"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "narrative": "If Davies provides the electricity, David provides the goals. The Lille striker's clinical finishing has made him one of Ligue 1's most feared forwards, and his international record for Canada is equally impressive. David's movement in behind defenses is his greatest weapon -- he finds space where none appears to exist and finishes with the cold-blooded composure of a natural scorer. Against Bosnia's experienced center-backs, David's runs in behind will be the key attacking weapon.",
+      "statline": "One of Ligue 1's top scorers; Canada's primary goal threat"
+    },
+    {
+      "name": "Ermedin Demirovic",
+      "teamCode": "BIH",
+      "narrative": "The Stuttgart forward represents Bosnia's future even as Dzeko embodies their past. Demirovic's 4 qualifying goals were crucial to Bosnia's playoff run, and his Bundesliga performances have shown he can compete at the highest level. His energy and directness complement Dzeko's cerebral approach perfectly -- where the veteran holds and links, Demirovic runs and finishes. Together, they give Bosnia a strike partnership that blends experience with hunger.",
+      "statline": "4 goals in qualifying; Bundesliga regular with VfB Stuttgart"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Canada 2-1 Bosnia and Herzegovina",
+    "confidence": 50,
+    "narrative": "This is the kind of match where home advantage tips the balance in what would otherwise be a coin flip. The data says these teams are nearly identical in quality, and the tactical matchup favors neither side decisively. What tips the scales is the crowd, the energy, and the occasion.\n\nCanada playing a World Cup on home soil will produce an atmosphere that Bosnia, for all their mental toughness, will struggle to ignore. Davies will be the difference-maker -- his pace and directness will create the chance that breaks the deadlock. David will finish it.\n\nBut Bosnia will score. Dzeko does not go quietly. Expect a tight first half, a Canadian goal around the hour mark driven by Davies' dynamism, a Bosnian equalizer from a set piece that sends the crowd into nervous silence, and then a late Canadian winner that turns the stadium into a cauldron of euphoria.\n\nThis will be one of the group stage's most absorbing contests.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Bosnia and Herzegovina 2-1 Canada",
+        "probability": 25,
+        "reasoning": "Dzeko rolls back the years with a masterclass in center-forward play. Bosnia's experience in tight European qualifiers proves more valuable than Canada's home advantage, and a Demirovic winner silences the crowd."
+      },
+      {
+        "scenario": "Canada 1-1 Bosnia and Herzegovina",
+        "probability": 25,
+        "reasoning": "Neither team can find a winner in a match where defensive organization trumps attacking flair. A fair result that leaves both teams with work to do in their remaining group games."
+      }
+    ]
+  },
+
+  "closingLine": "A refugee camp in Ghana produced Canada's greatest footballer. A war-torn Balkans produced Bosnia's greatest striker. When Davies and Dzeko share the same pitch, football's power to transform lives is on full display."
+}

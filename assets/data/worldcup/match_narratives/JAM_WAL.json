@@ -1,0 +1,80 @@
+{
+  "matchKey": "JAM_WAL",
+  "team1Code": "JAM",
+  "team2Code": "WAL",
+  "team1Name": "Jamaica",
+  "team2Name": "Wales",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Two Nations United by Hope, Divided by Ninety Minutes",
+  "subheadline": "Jamaica and Wales meet in a match where both teams know a result could change everything — for the tournament and for their footballing history",
+
+  "openingNarrative": "There is something beautifully egalitarian about this fixture. Neither Jamaica nor Wales are football superpowers. Neither nation has a cabinet full of trophies or a tradition of deep tournament runs. What they share is something more powerful: the unshakeable belief that this World Cup could be the one where they write themselves into history.\n\nJamaica's return to the World Cup after 28 years is a story of perseverance against overwhelming odds. A nation of three million people, competing in a region dominated by Mexico and the United States, with a football infrastructure that would make most European academies wince. And yet here they are, propelled by a generation of players who have made it in the Premier League and across Europe — Leon Bailey at Aston Villa, Michail Antonio at West Ham — carrying the hopes of an island that bleeds football as passionately as any nation on earth.\n\nWales, too, know what it means to dream above their station. Their Euro 2016 semi-final run under Chris Coleman remains one of the great underdog stories of modern European football. Brennan Johnson, now starring at Tottenham, represents the next chapter of Welsh football, a player whose pace and directness can trouble any defense. For both nations, this match could be the difference between going home and going through. The stakes are monumental.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This is a match between two sides who will approach it with equal urgency but contrasting styles. Wales under their system typically deploy a compact 3-5-2 or 4-2-3-1, built around defensive organization and the quality of Brennan Johnson's runs from wide areas. Johnson's pace stretching the defensive line creates space for midfield runners, while Aaron Ramsey — if fit — still possesses the intelligence to find pockets of space in the final third.\n\nJamaica will likely mirror Wales' pragmatism with a 4-4-2 that can shift into a 4-5-1 when out of possession. Bailey will be their primary outlet on the counter, with Antonio tasked with holding the ball up and bringing others into play. The midfield battle will be decisive — whoever controls the central areas will control the match.\n\nExpect a cagey first half with both teams respecting each other's quality. Set pieces could be crucial, with both sides possessing aerial threats. The match may well be decided by a single moment of individual brilliance — and both teams have players capable of producing one.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "3-5-2",
+    "keyMatchup": "Leon Bailey vs Brennan Johnson — two explosive wingers who could decide this match with a single moment of magic"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Neither team carries elite ELO credentials, making this one of the more evenly matched fixtures at the tournament. Wales have the slight edge in international pedigree, but Jamaica's Premier League contingent ensures this is genuinely competitive on paper and on the pitch.",
+    "formAnalysis": "Jamaica's qualification journey back to the World Cup was a marathon of resilience. Wales' path has been defined by moments of quality in key matches — their ability to produce results when it matters most is a hallmark of Welsh football since the Gareth Bale era, even as they enter a new chapter.",
+    "squadValueComparison": "The squads are relatively comparable in market value terms, a rarity at this World Cup. Neither team boasts a player valued above $70M, making this a contest decided by collective effort rather than individual star power.",
+    "injuryImpact": "For both teams, the fitness of their key players is paramount. Jamaica cannot afford to lose Bailey or Antonio. Wales need Brennan Johnson and their midfield orchestrators fully fit. There are no replacements of equivalent quality on either bench.",
+    "bettingPerspective": "This is one of the tournament's tightest matches on the betting market. The draw is heavily backed, reflecting the view that neither team can afford to lose and both may settle for a point.",
+    "historicalPattern": "This is the first-ever meeting between Jamaica and Wales in any competition. Jamaica's only previous World Cup was in 1998 (1 win, 2 losses). Wales appeared at the 2022 World Cup in Qatar, their first since 1958."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Leon Bailey",
+      "teamCode": "JAM",
+      "narrative": "Every Jamaican attack flows through Bailey. The Aston Villa winger's electric pace and ability to cut inside onto his left foot make him a constant threat, the kind of player who forces defenders to choose between holding their position and chasing — and either choice can be wrong. Bailey is the heartbeat of this Jamaican side, and in a match this tight, his ability to create something from nothing could be the decisive factor.",
+      "statline": "Jamaica's talisman, Aston Villa's explosive winger with double-digit goal contributions in the Premier League"
+    },
+    {
+      "name": "Brennan Johnson",
+      "teamCode": "WAL",
+      "narrative": "The Tottenham winger has emerged as the torch-bearer of Welsh football in the post-Bale era. Johnson's directness and pace are reminiscent of the best Welsh wingers of the past, and his Premier League development has added tactical intelligence to raw speed. He is the player Wales will look to in their moment of need — the one who can turn a tight match with a single run.",
+      "statline": "Tottenham's dynamic winger, leading the next generation of Welsh football talent"
+    },
+    {
+      "name": "Michail Antonio",
+      "teamCode": "JAM",
+      "narrative": "Antonio is the embodiment of Jamaica's World Cup story — a player who chose heritage over convenience, who traded the possibility of an England call-up for the chance to lead his nation on the world stage. His physical presence gives Jamaica a platform they desperately need, and his experience in Premier League battles means he won't be fazed by the occasion.",
+      "statline": "West Ham's experienced striker, Jamaica's physical leader and emotional heartbeat"
+    },
+    {
+      "name": "Aaron Ramsey",
+      "teamCode": "WAL",
+      "narrative": "The Welsh captain's career has spanned Arsenal's peak years, Juventus, and the twilight of a distinguished international career. Ramsey's intelligence, his ability to arrive late in the box, and his understanding of the big occasion make him invaluable in a match where composure will be everything. This could be his final World Cup — motivation enough for a player who has always saved his best for Wales.",
+      "statline": "Wales' most capped midfielder, scorer of Wales' first World Cup goal since 1958 at the 2022 tournament"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Jamaica 1-1 Wales",
+    "confidence": 50,
+    "narrative": "This is the World Cup match that defies confident prediction — and that's precisely what makes it compelling. Neither team can afford to lose, and both possess just enough quality to hurt the other without enough to dominate. Expect a tight, tense, tactical affair where moments of individual brilliance break through the defensive discipline.\n\nBailey will likely create Jamaica's best chance, while Johnson's pace will test Jamaica's defensive line. A draw would suit both teams' broader tournament ambitions, and there is enough mutual respect — and mutual fear — to produce exactly that result. But don't be surprised if one moment of magic from either winger tips the balance.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Jamaica 2-1 Wales",
+        "probability": 20,
+        "reasoning": "Bailey produces two moments of brilliance, and Jamaica's defensive discipline holds Wales to a consolation goal. A result that would electrify the Caribbean and rewrite Jamaica's World Cup narrative."
+      },
+      {
+        "scenario": "Wales 2-0 Jamaica",
+        "probability": 18,
+        "reasoning": "Johnson and Ramsey combine effectively, and Wales' greater tournament experience tells in the second half. Jamaica's lack of squad depth shows as fatigue sets in."
+      }
+    ]
+  },
+
+  "closingLine": "This is a match between two nations for whom the World Cup is not an entitlement but a gift. Jamaica and Wales will leave everything on the pitch, because for teams like these, every World Cup minute is precious — and may never come again."
+}

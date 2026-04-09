@@ -1,0 +1,80 @@
+{
+  "matchKey": "ARG_URU",
+  "team1Code": "ARG",
+  "team2Code": "URU",
+  "team1Name": "Argentina",
+  "team2Name": "Uruguay",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "El Clasico del Rio de la Plata: Football's Oldest Rivalry on the World Cup Stage",
+  "subheadline": "The two nations who played the first World Cup final meet again, with Messi's champions facing Bielsa's warriors",
+
+  "openingNarrative": "Before the Champions League, before the European Championship, before football became a global industry — there was Argentina versus Uruguay. This is football's oldest international rivalry, a feud that began in 1901 and has produced over 200 matches filled with passion, drama, and moments that have shaped the sport's history. The first World Cup final, in 1930, was Argentina versus Uruguay. Uruguay won. The wound has never fully healed.\n\nNow, 96 years after that inaugural final, El Clasico del Rio de la Plata returns to the World Cup. Argentina arrive as defending champions, their crown still gleaming from that unforgettable night in Lusail. Messi's 8 qualifying goals, 12 wins in 18 CONMEBOL matches, and 10 clean sheets from 38 total points speak to a team operating at the peak of its powers. The Albiceleste do not merely win — they suffocate opposition with tactical precision before delivering the killing blow.\n\nUruguay, under Marcelo Bielsa's intense tactical stewardship, are a different proposition. They qualified with 28 points from 18 matches — 7 wins, 7 draws, 4 losses — and notably beat Argentina 2-0 at home during qualifying. Darwin Nunez's 5 goals and Federico Valverde's engine room dominance provided the forward thrust, while 8 clean sheets demonstrated the defensive discipline that is embedded in Uruguayan football DNA.\n\nBetween them, these nations have won 5 World Cups. When they meet on the pitch, the tackles are harder, the passion burns brighter, and the margins between victory and defeat shrink to almost nothing. This is not just a football match. This is a cultural event that stops two nations in their tracks.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Bielsa versus Scaloni — the mentor against the inheritor. Both coaches are products of Argentine football culture, and they know each other's tactical DNA intimately. Scaloni's 4-3-3 will seek to control possession and find Messi in the spaces that only he can exploit. Bielsa's approach will be more direct, more intense — pressing high, competing physically, refusing to give Argentina a moment's peace on the ball.\n\nThe midfield battle between Enzo Fernandez and Federico Valverde will decide the match. Valverde's extraordinary engine — his ability to cover ground, win tackles, and drive forward with the ball — makes him one of the most complete midfielders in world football. Fernandez's composure and passing range are Argentina's counter to Uruguay's physical intensity.\n\nUruguay's 2-0 qualifying victory over Argentina showed the blueprint: aggressive pressing from the front, denying Argentina's build-up through the middle, and exploiting the space behind Argentina's advanced fullbacks with Nunez's pace. Argentina will need to find answers to that template.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Federico Valverde vs Enzo Fernandez — Real Madrid's engine against Chelsea's conductor in a rivalry within a rivalry"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Uruguay (ELO: 1718, rank 14) — a 155-point gap that gives Argentina a statistical advantage, but ELO cannot capture the chaos coefficient of a rivalry match. Uruguay beat Argentina 2-0 in qualifying despite the ELO gap.",
+    "formAnalysis": "Argentina: 12 wins, 2 draws, 4 losses, 38 points, +21 goal difference, 10 clean sheets in CONMEBOL qualifying. Uruguay: 7 wins, 7 draws, 4 losses, 28 points, +10 goal difference, 8 clean sheets. Uruguay beat Argentina 2-0 at home. Argentina won the reverse fixture.",
+    "squadValueComparison": "Argentina ($951M) vs Uruguay ($684M) — the gap is narrower than many of Argentina's other matchups. Uruguay's Valverde ($188M) is their most valuable player and one of the highest-valued midfielders in world football. The aggregate talent level is closer than it appears.",
+    "injuryImpact": "Both teams enter near full strength for a match of this magnitude. Argentina's Romero and Uruguay's defensive personnel will be critical. Valverde and Fernandez must both be at peak fitness for the midfield battle.",
+    "bettingPerspective": "Argentina will be favorites, but Uruguay's outright tournament odds of +6500 reflect genuine respect for their abilities. The draw at competitive odds represents real value — 3 of the last 7 meetings between these sides ended level in other contexts.",
+    "historicalPattern": "Over 200 meetings, football's oldest rivalry. Argentina lead slightly overall. Uruguay beat Argentina 2-0 in CONMEBOL qualifying. The first World Cup final (1930) was Argentina vs Uruguay, won by Uruguay 4-2. Combined, they have won 5 World Cups."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "narrative": "In what may be his final Rio de la Plata derby, Messi carries the weight of a nation's expectations and the pride of 125 years of rivalry. His 8 qualifying goals proved his genius endures, and against Uruguay — a team that knows him better than almost any other — he will need to find the pockets of space that Bielsa's aggressive system tries to eliminate. If Messi produces a moment of magic against Uruguay, it will be talked about on both sides of the river for decades.",
+      "statline": "8 goals in CONMEBOL qualifying, defending World Cup champion"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "narrative": "Real Madrid's extraordinary midfielder is the player who makes Uruguay believe they can beat anyone. Valverde's combination of physical power, technical quality, and tactical intelligence is almost unique in world football. He can win a tackle in his own box, drive 50 yards with the ball, and arrive in the opposition penalty area to score — all within the same passage of play. Against Argentina, his energy and quality will be Uruguay's greatest weapon.",
+      "statline": "Uruguay's most valuable player ($188M), Real Madrid's midfield engine"
+    },
+    {
+      "name": "Julian Alvarez",
+      "teamCode": "ARG",
+      "narrative": "The Atletico Madrid striker's role in rivalry matches is crucial — he does the running, the pressing, the selfless work that creates space for Messi. Against Uruguay's aggressive defense, Alvarez's ability to receive under pressure and create opportunities from half-chances will be vital. His 5 World Cup goals across 2022 and qualifying prove he delivers when the stakes are highest.",
+      "statline": "5 World Cup goals across 2022 and qualifying, Argentina's tireless forward"
+    },
+    {
+      "name": "Darwin Nunez",
+      "teamCode": "URU",
+      "narrative": "Liverpool's explosive striker brings the kind of unpredictable, chaotic energy that can destabilize even the most organized defense. Nunez's 5 qualifying goals demonstrated his finishing ability, and his pace and power make him a nightmare in transition. Against Argentina's high defensive line, one ball over the top to Nunez could create the kind of chance that changes everything. He is Uruguay's wildcard — capable of the sublime and the frustrating in equal measure.",
+      "statline": "5 goals in CONMEBOL qualifying, Liverpool's explosive striker"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Argentina 2-1 Uruguay",
+    "confidence": 55,
+    "narrative": "Predictions in Argentina versus Uruguay exist to be proven wrong, and this match will be no exception to the rivalry's tradition of defying expectations. Argentina's champion pedigree and superior squad depth give them an edge, but Uruguay's qualifying victory over Argentina proves this is no foregone conclusion.\n\nExpect a ferocious, intensely physical match where every ball is contested as if it were the last. Bielsa's pressing will make the first 30 minutes uncomfortable for Argentina. But Scaloni's tactical adjustments — the hallmark of their 2022 World Cup run — will gradually shift the balance. A Messi moment of quality and an Alvarez finish from a counter-attack will give Argentina the lead, but Nunez will pull one back to ensure the match goes to the wire.\n\nThe final whistle will be met with exhaustion on both sides. Rival neighbors, separated by a river, united by a love of football that transcends competition.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Uruguay 2-1 Argentina",
+        "probability": 22,
+        "reasoning": "Uruguay replicate their qualifying blueprint: aggressive pressing, early goals through Nunez and Valverde, and then defensive discipline to protect the lead. The defending champion's curse delivers another victim."
+      },
+      {
+        "scenario": "Argentina 1-1 Uruguay",
+        "probability": 20,
+        "reasoning": "A classic rivalry stalemate. Both teams score in the first half, then cancel each other out with ferocious defending and midfield battles. A draw that serves neither team perfectly but reflects the competitive reality of El Clasico."
+      }
+    ]
+  },
+
+  "closingLine": "In 1930, Uruguay beat Argentina in the first World Cup final. Ninety-six years later, the rivalry burns as fiercely as ever. When these two nations collide, the only certainty is that nothing is certain."
+}

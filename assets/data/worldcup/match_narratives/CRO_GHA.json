@@ -1,0 +1,80 @@
+{
+  "matchKey": "CRO_GHA",
+  "team1Code": "CRO",
+  "team2Code": "GHA",
+  "team1Name": "Croatia",
+  "team2Name": "Ghana",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Midfield Mastery Meets West African Fire",
+  "subheadline": "Croatia's methodical possession faces Ghana's explosive athleticism in a group match that could define both teams' knockout hopes",
+
+  "openingNarrative": "There is something irresistible about watching Croatia play football. The Vatreni do not overpower opponents — they outthink them. Patient build-up play flows through the midfield like water finding its path downhill, controlled by a footballing intelligence that has carried a nation of four million people to a World Cup final and a third-place finish in successive tournaments. Even as the golden generation ages, the philosophy endures.\n\nGhana bring something altogether different to this contest — raw, unbridled energy combined with technical quality that has made them one of Africa's most consistent World Cup performers. The Black Stars have qualified for five World Cups, reached the quarter-finals in 2010 in one of the tournament's most dramatic narratives, and continue to produce players who shine across Europe's biggest leagues. Mohammed Kudus, the West Ham maverick whose dribbling leaves defenders grasping at shadows, leads a new generation of Ghanaian talent.\n\nCroatia won their only previous meeting 1-0 at the 2014 World Cup, and their ELO rating of 1720 comfortably exceeds Ghana's 1520. But numbers never tell the full story at a World Cup, and Ghana's qualifying campaign — 6 wins, 3 draws, 3 losses with Mohammed Kudus scoring 5 goals — shows they possess the quality to compete with anyone when the stage demands it.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Croatia's 4-3-3 is a masterclass in positional play. Modric dictates the rhythm from deep, Kovacic provides the energy box-to-box, and Brozovic sits as the metronome at the base of midfield. The front three are fluid — rotating, creating overloads, and waiting for the perfect pass. Gvardiol's ball-carrying ability from center-back adds an extra dimension to their build-up.\n\nGhana's 4-2-3-1 under Otto Addo is built to counter this kind of possession dominance. Thomas Partey's ball-winning ability in the double pivot is Ghana's insurance policy — his Arsenal-honed tactical awareness makes him the ideal player to disrupt Croatia's passing patterns. Ahead of him, Kudus has the freedom to drift and create, using his extraordinary dribbling to bypass Croatia's midfield press.\n\nThe critical question: can Ghana sustain their pressing intensity for 90 minutes? Their attacking approach is dangerous, but their defensive vulnerability means any lapse in concentration could be ruthlessly punished by Croatia's midfield.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Luka Modric vs Thomas Partey — the conductor against the destroyer in a midfield chess match"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Croatia (ELO: 1720) vs Ghana (ELO: 1520) — a 200-point gap that represents a substantial quality difference, giving Croatia roughly a 68% win probability. This is one of the larger ELO gaps in Group L.",
+    "formAnalysis": "Croatia's qualifying campaign was superb: 7 wins, 1 draw, 0 losses, 26 goals scored, just 4 conceded. Kramaric led the line with 6 qualifying goals. Ghana qualified through a harder road — 6 wins, 3 draws, 3 losses — with Mohammed Kudus top-scoring with 5 goals.",
+    "squadValueComparison": "Croatia's squad ($464M) significantly outvalues Ghana's ($100M). Gvardiol alone ($106M) exceeds Ghana's entire squad value. However, Ghana's Kudus and Partey (Arsenal) represent genuine top-level quality.",
+    "injuryImpact": "Modric's fitness at 40 is the eternal concern for Croatia — his ability to complete 90 minutes at World Cup intensity is uncertain. For Ghana, Partey's fitness record has been inconsistent, and his availability transforms their midfield solidity.",
+    "bettingPerspective": "Croatia are comfortable favorites. The 2014 precedent of a narrow 1-0 victory suggests this could be tighter than odds imply. Ghana's pace in transition provides genuine upset potential.",
+    "historicalPattern": "Croatia won the only previous meeting 1-0 at the 2014 World Cup in Brazil. Ghana have never beaten Croatia in competitive football."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "narrative": "Kudus is the kind of player who makes you lean forward in your seat. His dribbling is not just effective — it is joyful, a celebration of individual skill that recalls the great African talents who have graced the World Cup stage. His two goals against South Korea at the 2022 World Cup announced him to the global audience, and his West Ham career has only enhanced his reputation. Against Croatia's defense, Kudus represents Ghana's best hope of producing the unexpected.",
+      "statline": "5 goals in Ghana's qualifying campaign, scored 2 goals vs South Korea at 2022 World Cup"
+    },
+    {
+      "name": "Luka Modric",
+      "teamCode": "CRO",
+      "narrative": "Forty years old and still the most intelligent midfielder on any pitch he graces. Modric's last World Cup is not about proving anything — it is about savoring every moment with the shirt that gave him everything. His passing range, his ability to find space where none exists, his quiet leadership — all remain at the highest level. Against Ghana's high-energy midfield, Modric's calm will be Croatia's anchor.",
+      "statline": "2018 Ballon d'Or winner, 170+ caps, oldest outfield player at the tournament"
+    },
+    {
+      "name": "Thomas Partey",
+      "teamCode": "GHA",
+      "narrative": "Partey is Ghana's bridge between African passion and European tactical discipline. His years at Arsenal have refined his game — the timing of his tackles, his ability to break up play and transition quickly, his progressive passing from deep. Against Croatia, he will be asked to do the hardest job in football: stop Modric from playing.",
+      "statline": "Arsenal's midfield anchor, 40+ caps for Ghana"
+    },
+    {
+      "name": "Josko Gvardiol",
+      "teamCode": "CRO",
+      "narrative": "Gvardiol has graduated from exciting prospect to world-class defender in the space of two years. His physical presence, reading of the game, and remarkable ability to carry the ball into midfield make him Croatia's most valuable asset. Against Kudus's trickery and Ghana's pace, Gvardiol's composure will be tested — but he has consistently risen to such challenges at Manchester City.",
+      "statline": "Croatia's most valuable player at $106M, Manchester City regular"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Croatia 2-1 Ghana",
+    "confidence": 63,
+    "narrative": "Croatia's midfield superiority and tournament experience should see them through, but Ghana's pace and Kudus's unpredictability ensure this will not be comfortable. Expect Croatia to dominate possession in the first half, probing patiently for openings, while Ghana look to strike on the counter.\n\nThe game will likely open up in the second half as both teams chase the result they need. Croatia's greater technical quality in tight spaces gives them the edge, but Ghana's athleticism means they will always carry a threat on the break.\n\nIf Partey can keep Modric quiet and Kudus produces a moment of magic, the upset is there for the taking. But betting against Croatia at a World Cup has been a losing proposition for nearly a decade.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Ghana 2-1 Croatia",
+        "probability": 18,
+        "reasoning": "Kudus produces a world-class performance, Ghana's pressing overwhelms Croatia's aging legs, and the Black Stars announce themselves as the tournament's dark horses."
+      },
+      {
+        "scenario": "Croatia 3-0 Ghana",
+        "probability": 15,
+        "reasoning": "Croatia's midfield dominance is total, Ghana cannot live with the ball movement, and the quality gap proves insurmountable."
+      }
+    ]
+  },
+
+  "closingLine": "When Croatian precision meets Ghanaian passion, the football will be beautiful. Both nations know what it means to overachieve at World Cups, and neither will settle for simply being here."
+}

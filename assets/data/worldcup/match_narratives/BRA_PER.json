@@ -1,0 +1,80 @@
+{
+  "matchKey": "BRA_PER",
+  "team1Code": "BRA",
+  "team2Code": "PER",
+  "team1Name": "Brazil",
+  "team2Name": "Peru",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "South American History Runs Deep as Brazil Face Peru Once Again",
+  "subheadline": "From the 1970 World Cup quarter-final to the 2019 Copa America final, these neighbors carry 48 matches of rivalry onto the North American stage",
+
+  "openingNarrative": "There are few rivalries in South American football as lopsided -- and yet as emotionally charged -- as Brazil against Peru. In 48 previous meetings stretching back to 1937, Brazil have won 35 times. Peru have managed just 5 victories. The numbers are brutal, and yet Peru keep coming back, keep competing, keep finding ways to make these matches memorable. It is a testament to Peruvian football's stubborn refusal to accept the hierarchy that statistics dictate.\n\nThe most resonant recent chapter was the 2019 Copa America final in Rio de Janeiro, where Brazil won 3-1 to claim the title on home soil. Peru had no business being in that final -- they had beaten Chile in the semi-final and ridden a wave of emotion that captivated South America. But against Brazil, the quality gap told its truth. Everton, Gabriel Jesus, and Richarlison scored the goals; Peru scored a consolation penalty through Paolo Guerrero that felt like a small act of defiance.\n\nNow these sides meet again, and the context has shifted. Brazil's CONMEBOL qualifying was their worst in modern history: 5th place, 6 losses, including a 4-0 humiliation of Peru in Brasilia that was one of their few dominant performances. Peru earned their World Cup place through the same grueling 18-match qualifying marathon, proving that under the right circumstances, they can compete with anyone in South America. This is a match that both teams need. For Brazil, it is about demonstrating they can dominate when it matters. For Peru, it is about proving that 2019 was a beginning, not a peak.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Brazil's 4-2-3-1 will look to control this South American derby from the opening whistle. Ancelotti's system emphasizes patient build-up through Bruno Guimaraes, with Vinicius Jr. and Raphinha providing width that stretches Peru's defensive block. The double pivot offers defensive stability while allowing both full-backs to push high and create numerical superiority in the wide areas that Peru must defend.\n\nPeru's approach will be the embodiment of South American defensive pragmatism. A compact 4-2-3-1 that compresses into a 4-4-2 without the ball, with Renato Tapia screening the defense and the wide midfielders tucking in to deny space between the lines. Peru's game plan against Brazil has been consistent for decades: absorb pressure, stay compact, and hope for moments of quality on the counter or from set pieces. Gianluca Lapadula's hold-up play and Tapia's midfield shielding are the pillars of this approach.\n\nBrazil must be wary of complacency. Peru's defensive discipline can frustrate even the most talented attacks for long stretches, and a single counter-attacking goal can transform the dynamics entirely.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Vinicius Jr.'s creativity vs Renato Tapia's defensive screening -- Brazil's flair against Peru's resilience"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Brazil (ELO: 1760) vs Peru (ELO not listed in top tier, historically ~1550-1600) -- a gap of approximately 160-200 points that reflects Brazil's historical dominance. However, at World Cups, underdogs from the same continent often perform above their ELO.",
+    "formAnalysis": "Brazil qualified 5th in CONMEBOL: 8 wins, 4 draws, 6 losses, 24 goals scored, 17 conceded. Their most recent meeting was a 4-0 Brazilian victory in Brasilia. Peru qualified through the same marathon, earning their place through consistent defensive performances. Their qualifying record was solid enough to survive South America's merciless competition.",
+    "squadValueComparison": "Brazil ($1.39B) vastly outvalues Peru's squad. Vinicius Jr. alone ($225M) is worth more than Peru's entire roster. But Peru have tournament-hardened players who have competed in Copa America finals and World Cup qualifying cycles across multiple generations.",
+    "injuryImpact": "Brazil's depth means they can rotate freely. Peru's squad is thinner, and Lapadula's fitness as the primary goal threat is essential to their game plan.",
+    "bettingPerspective": "Brazil are heavy favorites. Peru's best realistic outcome is a draw, and the under 2.5 goals market is attractive given Peru's defensive approach against superior opposition.",
+    "historicalPattern": "In 48 meetings: Brazil 35 wins, Peru 5 wins, 8 draws. Goals: Brazil 120, Peru 38. At World Cups (3 meetings), Brazil have won all 3, including a 4-2 quarter-final in 1970 en route to their famous third title. The 2019 Copa America final (3-1) and 2024 qualifier (4-0) are the most recent high-profile encounters."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "narrative": "Against Peru's compact defense, Vinicius will need patience as much as brilliance. Peru will not give him space to run into -- they will sit deep, close the passing lanes, and dare him to beat defenders in tight spaces. But Vinicius at his best does exactly that. His close control, quick feet, and ability to produce something from nothing in the final third make him the player most likely to unpick Peru's defensive lock.",
+      "statline": "2024 Ballon d'Or winner; Brazil's primary creative threat and goal scorer"
+    },
+    {
+      "name": "Gianluca Lapadula",
+      "teamCode": "PER",
+      "narrative": "The Italian-born striker who chose Peru represents the modern reality of South American football -- diaspora talent returning to serve the national team. Lapadula's physicality, aerial ability, and nose for goal make him Peru's primary attacking weapon. His hold-up play allows Peru to relieve pressure and move up the pitch, and his finishing in the box gives them a genuine threat from crosses and set pieces. Against Brazil's center-backs, Lapadula will compete in every aerial duel with the ferocity of a man playing for his country in the World Cup.",
+      "statline": "Peru's primary goal threat; dual-nationality striker with Serie A experience"
+    },
+    {
+      "name": "Endrick",
+      "teamCode": "BRA",
+      "narrative": "The teenage Real Madrid sensation could see significant minutes in this match if Ancelotti manages his squad rotation. Endrick's explosive finishing and fearless approach make him a devastating option from the bench, capable of changing the game with a single moment of brilliance. Against a tiring Peruvian defense in the second half, his fresh legs and hunger could be the decisive factor.",
+      "statline": "Brazil's youngest World Cup squad member; youngest Brazilian scorer in La Liga"
+    },
+    {
+      "name": "Renato Tapia",
+      "teamCode": "PER",
+      "narrative": "Peru's midfield shield is the unsung hero of their defensive system. Tapia's positioning, reading of the game, and ability to break up opposition attacks before they reach dangerous areas is the foundation on which Peru's compact defensive shape is built. Against Brazil's creative midfield, Tapia will need to produce 90 minutes of faultless defensive work -- intercepting through-balls, winning second balls, and providing the disciplined presence that allows Peru's back four to hold its shape.",
+      "statline": "Peru's midfield anchor; key to their defensive stability in qualifying"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Brazil 2-0 Peru",
+    "confidence": 72,
+    "narrative": "The pattern of Brazil-Peru matches is well established: Brazil dominate, Peru resist, and the goals come in the second half when Peru's energy fades and Brazil's quality in the final third becomes impossible to deny. This match will follow the same script.\n\nPeru will defend heroically in the first half, keeping the score at 0-0 through a combination of disciplined positioning, physical commitment, and Tapia's midfield screening. The Brazilian fans will grow restless, the passing will become urgent, and the half-time whistle will bring a mixture of frustration and respect.\n\nBut the second half belongs to Brazil. Vinicius Jr. will find the breakthrough -- a dribble past a tiring full-back, a shot that deflects in, a penalty won through sheer speed. The second goal will come from the bench, perhaps Endrick's introduction providing the spark. Peru will depart with their heads held high, having competed with dignity against the five-time champions.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Brazil 0-0 Peru",
+        "probability": 12,
+        "reasoning": "Peru produce the defensive performance of the tournament. Tapia is immense, the goalkeeper makes three world-class saves, and Brazil's frustration leads to wayward shooting. A famous draw that would be celebrated in Lima like a victory."
+      },
+      {
+        "scenario": "Brazil 4-0 Peru",
+        "probability": 15,
+        "reasoning": "Brazil replicate their 2024 qualifying demolition. Early goals destroy Peru's game plan, and the floodgates open. Vinicius Jr. scores twice in a performance that announces Brazil's arrival at the tournament."
+      }
+    ]
+  },
+
+  "closingLine": "In 48 meetings across 89 years, Peru have beaten Brazil just 5 times. Every time they try again, they carry the defiant spirit of a nation that refuses to accept the mathematics of South American football."
+}

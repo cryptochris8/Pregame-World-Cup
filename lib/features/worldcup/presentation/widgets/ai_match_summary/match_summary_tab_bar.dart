@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import '../../../../../config/app_theme.dart';
 
-/// Tab bar for switching between Analysis, Players, and Prediction tabs.
+/// Tab bar for switching between match summary tabs.
+/// When a narrative exists, adds a "Pregame" tab as the first tab.
 class MatchSummaryTabBar extends StatelessWidget {
   final int selectedTab;
   final ValueChanged<int> onTabSelected;
+  final bool hasNarrative;
 
   const MatchSummaryTabBar({
     super.key,
     required this.selectedTab,
     required this.onTabSelected,
+    this.hasNarrative = false,
   });
 
-  static const _tabs = ['Analysis', 'Players', 'Prediction'];
+  List<String> get _tabs => hasNarrative
+      ? const ['Pregame', 'Analysis', 'Players', 'Prediction']
+      : const ['Analysis', 'Players', 'Prediction'];
 
   @override
   Widget build(BuildContext context) {

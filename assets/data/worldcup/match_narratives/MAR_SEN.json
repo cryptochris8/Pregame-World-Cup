@@ -1,0 +1,80 @@
+{
+  "matchKey": "MAR_SEN",
+  "team1Code": "MAR",
+  "team2Code": "SEN",
+  "team1Name": "Morocco",
+  "team2Name": "Senegal",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The African Superclasico",
+  "subheadline": "Morocco's 2022 semi-finalists clash with Senegal's AFCON champions in a match between the two best teams Africa has ever sent to a World Cup",
+
+  "openingNarrative": "If you want to understand how far African football has come, look at this fixture. Morocco reached the 2022 World Cup semi-finals, defeating Belgium, Spain, and Portugal along the way. Senegal won the 2022 Africa Cup of Nations, finally lifting the continent's most coveted prize under Aliou Cisse. These are not plucky underdogs hoping for a favorable draw — these are genuine world-class teams, coached by men who understand the tactical demands of modern football and stocked with players who star at Europe's biggest clubs.\n\nThis is the African Superclasico. Two nations that have transcended the patronizing narrative of 'African football is improving' and replaced it with cold, hard proof that they can compete with — and beat — anyone. Morocco's perfect qualifying campaign (8 wins, 0 losses, 22 scored, 2 conceded) and Senegal's equally dominant path (7 wins, 3 draws, 0 losses, 22 scored, 3 conceded) speak to teams operating at the peak of their powers.\n\nThe individual quality is staggering. Hakimi, the world's best right-back. Ziyech, one of football's most creative left feet. On the other side, Sadio Mane brings the experience and clutch gene of a Champions League winner, while Nicolas Jackson's emergence at Chelsea has given Senegal a new dimension in attack. When these two sides meet, the football world will see Africa at its absolute best — and the neutral will be treated to one of the group stage's finest spectacles.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Morocco's 4-3-3 under Regragui is one of the tournament's most tactically sophisticated setups. They can dominate possession against inferior sides or sit deep and counter against stronger opponents — the flexibility that destroyed Spain and Portugal in 2022. Hakimi's forward runs from right-back create numerical advantages, while Ziyech's creativity provides the final ball that unlocks compact defenses.\n\nSenegal's 4-3-3 under Pape Thiaw is built on high-intensity pressing and explosive transitions. Sadio Mane's experience and intelligence from the left, combined with Nicolas Jackson's movement through the middle and the energy of their midfield runners, creates a team that can hurt opponents in multiple ways. Kalidou Koulibaly's defensive command ensures Senegal have the platform to take risks going forward.\n\nThis tactical matchup is a mirror image: two 4-3-3 systems, both capable of pressing high, both dangerous on the counter, both defensively organized. The battle will be won in the transitions — whoever wins the ball and releases their attackers faster will create the better chances. Watch the full-back battles: Hakimi's runs on Morocco's right vs Senegal's left-back, and Senegal's width on their right vs Morocco's defensive shape.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Achraf Hakimi vs Senegal's left side — Morocco's world-class right-back against Senegal's defensive organization"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Morocco (ELO: 1725) vs Senegal (ELO: 1700) — a narrow 25-point gap that makes this one of the closest matches at the entire tournament. Both teams are ranked in the world's top 15, a remarkable achievement for African football and a testament to the quality both nations have developed over the past decade.",
+    "formAnalysis": "Morocco's qualifying was perfect: 8 wins, 0 losses, +20 goal difference with just 2 conceded. En-Nesyri scored 5 qualifying goals. Senegal were equally dominant: 7 wins, 3 draws, 0 losses, +19 goal difference with just 3 conceded. Sadio Mane contributed 5 qualifying goals. Two immaculate campaigns meet in a match that the data says is too close to call.",
+    "squadValueComparison": "Morocco ($423M) vs Senegal ($395M) — remarkably similar squad values that reflect both nations' European-based talent pools. Hakimi ($81.3M) is the most valuable player in this match, while Nicolas Jackson ($62.5M) leads Senegal's valuation. The financial parity mirrors the competitive balance.",
+    "injuryImpact": "Both squads have genuine depth by African standards. Morocco can rotate more comfortably, but Senegal's bench options are stronger than most give them credit for. The key absences to watch are Hakimi and Mane — losing either fundamentally changes their team's tactical approach.",
+    "bettingPerspective": "This is among the tightest group stage matches on the betting market. The draw is the most backed outcome, reflecting the view that two evenly matched teams will cancel each other out. Over 1.5 goals is uncertain given both teams' defensive excellence.",
+    "historicalPattern": "Morocco and Senegal have met numerous times in AFCON qualifiers and continental tournaments. Morocco hold a slight historical edge but Senegal have won key encounters. They have never met at a World Cup, making this their first encounter on football's biggest stage — and given both teams' current quality, it could be remembered as one of the great group stage matches."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "narrative": "The PSG right-back is the most dynamic defender at the World Cup. His overlapping runs, his crossing ability, and his defensive intelligence make him Morocco's most important player — a full-back who functions as both a defensive anchor and an attacking weapon. Against Senegal's organized defense, Hakimi's ability to create overloads on the right side will be Morocco's primary route to goal.",
+      "statline": "Morocco's $81.3M talisman, world-class right-back and 2022 World Cup semi-finalist"
+    },
+    {
+      "name": "Sadio Mane",
+      "teamCode": "SEN",
+      "narrative": "The former Liverpool and Bayern Munich star is Senegal's emotional leader and most experienced tournament performer. Mane's intelligence, his movement off the ball, and his ability to produce decisive moments in the biggest matches make him irreplaceable. He led Senegal to their historic 2022 AFCON triumph, scoring the winning penalty in the final. In a match this tight, his composure could be the difference.",
+      "statline": "5 goals in World Cup qualifying, Senegal's iconic captain and AFCON-winning hero"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "narrative": "Against Senegal's pressing, Ziyech's ability to receive the ball under pressure, turn, and produce a decisive pass becomes Morocco's most valuable weapon. His left foot can unlock any defense, and his set-piece delivery — particularly from the right side — gives Morocco a constant threat from dead-ball situations. Ziyech doesn't need space to be effective; he creates his own.",
+      "statline": "Morocco's creative maestro, providing the artistic vision behind their World Cup ambitions"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "narrative": "The veteran center-back remains one of the most commanding defenders in world football. His aerial dominance, his reading of the game, and his ability to organize the defense around him give Senegal the platform to take attacking risks. Against Morocco's varied attack — Hakimi from wide, Ziyech through the middle, En-Nesyri in the air — Koulibaly's versatility and intelligence will be tested to the limit.",
+      "statline": "Senegal's defensive rock, one of the most experienced center-backs at the tournament"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Morocco 1-1 Senegal",
+    "confidence": 50,
+    "narrative": "Two quality African sides, two organized defenses, two teams too evenly matched for either to dominate. This has draw written all over it — and it will be a draw of the highest quality, not the cautious, forgettable kind.\n\nExpect a match played at extraordinary intensity, with both teams pressing high and creating chances through their world-class individuals. Morocco's Hakimi will create Morocco's best chance. Mane's composure will create Senegal's. And when the dust settles at 1-1, both teams will know they've been in a contest worthy of the fixture's billing as Africa's greatest World Cup match.\n\nThe atmosphere will be electric — Moroccan and Senegalese fans produce some of the most passionate support in world football. This is a match that the neutral should prioritize above almost any other in the group stage.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Morocco 2-1 Senegal",
+        "probability": 20,
+        "reasoning": "Hakimi's runs prove too much for Senegal's left side, and Morocco's 2022 experience in knockout-style matches gives them the edge in a tight encounter. Senegal's late push for an equalizer leaves them exposed to Morocco's counter-attack."
+      },
+      {
+        "scenario": "Senegal 2-0 Morocco",
+        "probability": 10,
+        "reasoning": "Mane produces a vintage performance, and Senegal's pressing overwhelms Morocco early. A statement win that establishes Senegal as the tournament's most dangerous African team and sends a message to every side in the competition."
+      }
+    ]
+  },
+
+  "closingLine": "This is not just Morocco vs Senegal. This is Africa vs the world's perception of African football. Two continental champions, two 2022 heroes, meeting on the World Cup stage for the first time. Whatever happens, African football wins."
+}

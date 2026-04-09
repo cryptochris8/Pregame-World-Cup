@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import '../../../../../config/app_theme.dart';
 import '../../../domain/entities/ai_match_prediction.dart';
+import '../../../domain/entities/match_narrative.dart';
 import '../../../domain/entities/match_summary.dart';
 import 'analysis_tab.dart';
 import 'firestore_prediction_tab.dart';
 import 'match_summary_header.dart';
 import 'match_summary_tab_bar.dart';
+import 'narrative_tab.dart';
 import 'players_tab.dart';
 import 'prediction_tab.dart';
 
 /// AI Match Summary Widget
 /// Displays comprehensive AI-generated match analysis including:
+/// - Pregame article (narrative, when available)
 /// - Historical analysis
 /// - Key storylines
 /// - Players to watch
@@ -30,12 +33,18 @@ class AIMatchSummaryWidget extends StatefulWidget {
   /// instead of the basic Firestore MatchPredictionSummary.
   final AIMatchPrediction? localPrediction;
 
+  /// Optional pre-generated narrative article from MatchNarrativeService.
+  /// When provided, a "Pregame" tab is shown as the first/default tab
+  /// with a beautifully formatted sports journalism article.
+  final MatchNarrative? narrative;
+
   const AIMatchSummaryWidget({
     super.key,
     required this.summary,
     this.initiallyExpanded = false,
     this.homeTeamCode,
     this.localPrediction,
+    this.narrative,
   });
 
   @override
@@ -45,6 +54,8 @@ class AIMatchSummaryWidget extends StatefulWidget {
 class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
   late bool _isExpanded;
   int _selectedTab = 0;
+
+  bool get _hasNarrative => widget.narrative != null;
 
   @override
   void initState() {
@@ -82,6 +93,7 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
             MatchSummaryTabBar(
               selectedTab: _selectedTab,
               onTabSelected: (tab) => setState(() => _selectedTab = tab),
+              hasNarrative: _hasNarrative,
             ),
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 300),
@@ -98,6 +110,17 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
   }
 
   Widget _buildTabContent() {
+    if (_hasNarrative) {
+      // With narrative: Pregame(0), Analysis(1), Players(2), Prediction(3)
+      return switch (_selectedTab) {
+        0 => NarrativeTab(narrative: widget.narrative!),
+        1 => AnalysisTab(summary: widget.summary),
+        2 => PlayersTab(summary: widget.summary),
+        3 => _buildPredictionTab(),
+        _ => const SizedBox.shrink(),
+      };
+    }
+    // Without narrative: Analysis(0), Players(1), Prediction(2)
     return switch (_selectedTab) {
       0 => AnalysisTab(summary: widget.summary),
       1 => PlayersTab(summary: widget.summary),

@@ -1,0 +1,80 @@
+{
+  "matchKey": "CAN_QAT",
+  "team1Code": "CAN",
+  "team2Code": "QAT",
+  "team1Name": "Canada",
+  "team2Name": "Qatar",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Past Host Meets Present: Qatar's Redemption Quest Faces Canada's Home Advantage",
+  "subheadline": "The 2022 World Cup hosts travel to North America desperate to erase the memory of three defeats on home soil",
+
+  "openingNarrative": "Qatar's 2022 World Cup was supposed to be the crowning achievement of a decades-long investment in football infrastructure, youth development, and national sporting ambition. The billions spent, the stadiums built, the Aspire Academy's conveyor belt of talent -- all of it was pointed toward the moment when Qatar would perform on their own World Cup stage. What happened instead was a humiliation that no amount of money could have prepared for: three matches, three defeats, zero goals from open play. Ecuador, Senegal, and the Netherlands dispatched the hosts without Qatar ever truly threatening to change the narrative.\n\nFour years later, Qatar arrive in North America seeking the redemption that only the World Cup can provide. They have rebuilt, they have learned, and they have won -- consecutive Asian Cup titles in 2019 and 2023 prove that Qatari football is capable of performing under pressure at the continental level. The question that haunts them is whether they can translate that success to the global stage.\n\nCanada present a formidable first test. As co-hosts, the Canadians will benefit from a passionate home crowd and the energy that a nation falling in love with football generates. In their 3 previous meetings, Canada have won twice and drawn once, outscoring Qatar 5-2. The most recent encounter -- a 2-0 Canadian victory in Toronto in 2024 -- provided a clear preview of what Qatar can expect: pace, pressing, and problems.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Canada's 4-3-3 is built for attacking aggression. Marsch demands high pressing, rapid transitions, and the kind of relentless energy that wears opponents down physically and psychologically. Davies as an attacking wing-back creates overloads on the left, David's runs in behind stretch defenses, and the midfield trio provides the engine room that makes the pressing game sustainable.\n\nQatar's 3-5-2 under Luis Garcia reflects the lessons of 2022. The three center-backs provide additional defensive security, the wing-backs offer width in attack, and the dual-striker partnership of Afif and Almoez Ali gives Qatar their best attacking combination. The system is conservative by design -- Garcia understands that Qatar cannot compete in open, end-to-end football against sides with superior individual talent.\n\nThe tactical key is tempo. If Canada can impose their pressing intensity from the start, Qatar will be pinned back and unable to build their patient possession game. If Qatar can survive the initial storm and establish their passing rhythms, they can create chances through Afif's creativity.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "3-5-2",
+    "keyMatchup": "Davies' explosive runs vs Qatar's right wing-back -- pace against discipline in a contest Canada must dominate"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Canada (ELO: 1615) vs Qatar (ELO: 1590) -- a 25-point gap that is negligible on paper but is amplified by Canada's home advantage and Qatar's World Cup track record. Home continent advantage in a World Cup typically adds 50-100 ELO points of effective performance.",
+    "formAnalysis": "Canada qualified automatically as co-hosts. Qatar's AFC qualifying was productive: 6 wins in 12 matches with Almoez Ali scoring an extraordinary 12 goals. However, Qatar also conceded 25 goals in qualifying -- a defensive vulnerability that Canada will target. Canada's 2-0 friendly victory in Toronto (2024) showed they can handle Qatar comfortably.",
+    "squadValueComparison": "Canada ($271M) vs Qatar ($66.9M). A 4:1 ratio that reflects Canada's growing European representation. Davies ($87.5M) alone is worth more than Qatar's entire squad ($66.9M). Akram Afif ($10M) is Qatar's most valuable player -- elite by Asian standards, modest by World Cup standards.",
+    "injuryImpact": "Canada's depth gives them more options if key players are unavailable. Qatar's squad, composed almost entirely of Qatar Stars League players plus a few from the Gulf region, is particularly thin. Afif's creative influence is irreplaceable.",
+    "bettingPerspective": "Canada are clear favorites. Qatar's odds for a victory will be generous, reflecting both their 2022 performance and the quality gap. The draw market is the most realistic scenario for Qatar backers.",
+    "historicalPattern": "In 3 meetings: Canada 2 wins, 0 Qatar wins, 1 draw. Goals: Canada 5, Qatar 2. The most recent meeting (2024 friendly in Toronto) was a comfortable 2-0 Canadian victory. Qatar have never beaten Canada."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "narrative": "Davies against Qatar's defense is the kind of mismatch that produces highlight reels. His pace and directness against a back line unaccustomed to facing world-class athleticism will create multiple dangerous situations. Davies knows it, the Canadian crowd knows it, and Qatar's defenders know it. The only question is how many times Davies breaks free, not whether he will.",
+      "statline": "Canada's $87.5M star; Real Madrid regular; one of the fastest players at the tournament"
+    },
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "narrative": "Qatar's finest footballer carries the burden of an entire nation's World Cup redemption on his creative shoulders. Afif's dribbling, vision, and set-piece delivery are genuinely world-class, and his consecutive Asian Cup titles prove he can perform under the pressure of representing his country. Against Canada's aggressive pressing, Afif's ability to find space and deliver quality under pressure will determine whether Qatar can compete or merely participate.",
+      "statline": "Asian Player of the Year; 2019 Asian Cup Golden Boot; Qatar's creative heartbeat"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "narrative": "David's clinical finishing makes him the perfect center-forward for a match where Canada will dominate possession and create numerous chances. His movement in behind Qatar's three-man defense will test their coordination, and his composure in front of goal ensures that the chances Canada create will be converted. This is a match where David could announce himself to the wider world.",
+      "statline": "One of Ligue 1's top scorers; Canada's most prolific goal threat"
+    },
+    {
+      "name": "Almoez Ali",
+      "teamCode": "QAT",
+      "narrative": "Qatar's record goalscorer arrives with 12 AFC qualifying goals -- a staggering tally that makes him one of the most prolific international scorers in any confederation. The Sudanese-born striker's pace and movement in behind defenses give Qatar a vertical attacking threat that bypasses the midfield battle. If Qatar are to score against Canada, it will likely come from Ali's runs exploiting the space that Davies' forward surges create behind Canada's defense.",
+      "statline": "12 goals in AFC qualifying; Qatar's all-time leading scorer; Asian Cup record holder"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Canada 2-0 Qatar",
+    "confidence": 70,
+    "narrative": "Canada's quality advantage, home crowd energy, and superior individual talent should make this a comfortable evening. Davies will dominate the left flank, David will finish the chances created, and Canada's pressing will deny Qatar the time and space to build their patient possession game.\n\nQatar will have moments -- Afif is too talented to be completely silenced -- but converting those moments into goals against a defensively aggressive Canadian side will prove too difficult. Their 2022 experience demonstrated that performing at the World Cup requires more than continental success, and the gap between Asian Cup excellence and World Cup competitiveness remains significant.\n\nExpect a Canadian goal before halftime, a second in the last 20 minutes as Qatar chase the game, and a professional performance that sends a message to the rest of Group B.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Canada 1-1 Qatar",
+        "probability": 15,
+        "reasoning": "Qatar's improved defensive organization (learned from 2022) frustrates Canada. Ali scores on a rare counter-attack, and Qatar hold on for a point that represents a massive improvement from their 2022 campaign."
+      },
+      {
+        "scenario": "Canada 4-0 Qatar",
+        "probability": 12,
+        "reasoning": "Canada's pressing overwhelms Qatar from the first whistle. Davies is unplayable, David scores twice, and the match becomes a procession that echoes Qatar's 2022 nightmare."
+      }
+    ]
+  },
+
+  "closingLine": "Qatar spent billions hosting the 2022 World Cup and earned nothing but heartbreak. In 2026, they arrive as guests seeking redemption against a host nation that intends to show them none."
+}

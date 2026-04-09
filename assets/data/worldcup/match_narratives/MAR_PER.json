@@ -1,0 +1,80 @@
+{
+  "matchKey": "MAR_PER",
+  "team1Code": "MAR",
+  "team2Code": "PER",
+  "team1Name": "Morocco",
+  "team2Name": "Peru",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Atlas Lions Hunt Their Prey",
+  "subheadline": "Morocco's 2022 semi-finalists face a Peruvian side desperate to prove they belong at football's top table",
+
+  "openingNarrative": "History favors Peru in this fixture, and that is one of football's great statistical curiosities. In their only World Cup meeting — the 1970 tournament in Mexico — Peru overwhelmed Morocco 3-0 in Leon, in a match that was part of a Peruvian golden generation that played some of the most beautiful football the Americas has ever produced. Fifty-six years later, the power dynamic has inverted completely.\n\nMorocco in 2026 are a different beast from the team Peru dismantled in 1970. Walid Regragui's side are the reigning World Cup semi-finalists, a team that defeated Belgium, Spain, and Portugal en route to becoming the first African nation to reach the last four. Their qualifying campaign was immaculate: 8 wins from 8, 22 goals scored, 2 conceded. This is not just the best Moroccan team ever assembled — it may be the best African team to ever contest a World Cup.\n\nPeru's return to the World Cup is a story of South American resilience. The nation that gave the world Teofilo Cubillas and the jogo bonito of the 1970s has endured decades of disappointment, punctuated by their 2018 World Cup appearance that ended in the group stage. Paolo Guerrero, their iconic striker, has aged with the dignity of a player who knows his final act on the world stage approaches. For Peru, this match is about more than points — it is about pride, about showing the world that La Blanquirroja still have something to offer.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Morocco's 4-3-3 under Regragui will look to control the match from the first whistle. Hakimi's forward runs create the overloads that opponents cannot solve, Ziyech's creativity provides the final-third quality that breaks deadlocks, and the midfield trio provides a screen of disciplined pressing that denies opponents space to breathe. Morocco conceded just 2 goals in 8 qualifying matches — that defensive record speaks for itself.\n\nPeru will set up in a compact 4-2-3-1 designed to frustrate Morocco and create counter-attacking opportunities. Their double pivot in midfield provides protection against Hakimi's runs and Ziyech's through balls, while Guerrero's hold-up play gives Peru an outlet when they win the ball. Peru's game plan will be built on patience — denying Morocco space, winning set pieces, and hoping for a moment of individual quality from their experienced attackers.\n\nThe key for Peru: discipline for 90 minutes. If they lose concentration for even five minutes, Morocco's quality will punish them ruthlessly. The key for Morocco: patience against a team that will park the bus and dare them to break through.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Achraf Hakimi's attacking runs vs Peru's compact defensive shape — can Morocco's world-class right-back find the space to create?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Morocco (ELO: 1725, ranked 12th) are heavy favorites based on every available metric. Peru lack a top-48 ELO rating, reflecting their lower standing in the current world football hierarchy. The gap is substantial, but Peru's 2018 World Cup showed they can compete at this level when their veterans are at their best.",
+    "formAnalysis": "Morocco's qualifying campaign was perfect: 8 wins, 0 losses, 22 goals scored, 2 conceded. En-Nesyri led their scoring with 5 goals. Peru's path back to the World Cup was more labored, reflecting the challenges of CONMEBOL qualification — universally regarded as the hardest qualifying tournament in world football.",
+    "squadValueComparison": "Morocco ($423M) vs Peru — Morocco's squad value reflects the European pedigree of Hakimi ($81.3M), Ziyech, and their extensive European-based contingent. Peru's squad is built around experienced veterans whose market values have declined with age but whose match intelligence remains high.",
+    "injuryImpact": "Morocco's depth means they can absorb injuries without significant tactical changes. Peru are far more dependent on key players — losing Guerrero would remove their primary attacking outlet and emotional leader. Every Peruvian starter is effectively irreplaceable.",
+    "bettingPerspective": "Morocco are overwhelming favorites, reflecting the gulf in current quality between these teams. Peru's odds to win are among the longest in the group stage, but the draw offers some value for those who believe Peru's defensive discipline can frustrate Morocco.",
+    "historicalPattern": "Two previous meetings: Peru won 3-0 at the 1970 World Cup, and they drew 0-0 in a 2023 friendly. Peru's 1970 victory remains the only World Cup meeting between these nations. Morocco have evolved dramatically since then — they are now the overwhelming favorites in a fixture that once belonged to Peru."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "narrative": "Against Peru's defensive block, Hakimi's overlapping runs will be Morocco's primary weapon. The PSG right-back's ability to deliver crosses at full speed, combine with Ziyech in tight areas, and even cut inside to shoot gives Morocco an attacking dimension that Peru's left-sided defender must constantly monitor. His Panenka penalty against Spain in 2022 showed the nerve of a player who thrives under pressure.",
+      "statline": "Morocco's $81.3M talisman, arguably the world's best right-back"
+    },
+    {
+      "name": "Paolo Guerrero",
+      "teamCode": "PER",
+      "narrative": "The aging lion of Peruvian football. Guerrero's career has been one of remarkable longevity and unwavering commitment to his nation. His hold-up play, his aerial ability, and his sheer force of will make him Peru's most important player despite his advancing years. In what may be his final World Cup, Guerrero carries the hopes of a nation — and the experience to know that one chance is all he needs.",
+      "statline": "Peru's all-time leading international presence, veteran of multiple World Cups"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "narrative": "Ziyech's left foot is the creative engine that drives Morocco's attack. Against Peru's packed defense, his ability to find the through ball, curl shots from distance, and deliver dangerous set pieces will be Morocco's most valuable asset. Ziyech doesn't need space — he creates it with the quality of his passing and the unpredictability of his movement.",
+      "statline": "Morocco's creative maestro, providing the artistic brilliance behind the tactical machine"
+    },
+    {
+      "name": "Youssef En-Nesyri",
+      "teamCode": "MAR",
+      "narrative": "Morocco's leading qualifying scorer brings the aerial threat and movement in the box that Peru's defenders must account for. En-Nesyri's ability to attack crosses, make runs across the defensive line, and finish clinically in the six-yard box gives Morocco a direct attacking threat that complements Ziyech's creativity. Against a deep-defending Peru, his movement in the box could provide the breakthrough.",
+      "statline": "5 goals in qualifying, leading Morocco's line with aerial dominance and clinical finishing"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Morocco 2-0 Peru",
+    "confidence": 70,
+    "narrative": "Morocco's quality advantage is too significant and too well-organized to be overcome by Peru's defensive discipline alone. Regragui's team have proven against Spain, Portugal, and Belgium that they can break down any defensive block — their patience, their variety of attack, and their individual quality in the final third will eventually overwhelm Peru's resistance.\n\nExpect a frustrating first half where Peru execute their defensive plan to near-perfection, limiting Morocco to half-chances and set pieces. The breakthrough will come after the hour mark, when Peru's energy levels drop and Morocco's substitutions maintain their intensity. A second goal will follow as Peru are forced to chase the game, leaving the space that Morocco's counter-attacking quality exploits ruthlessly.\n\nPeru will compete with dignity and determination, but the gap in quality — especially in the squad depth that Morocco can call upon from the bench — will ultimately be decisive.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Morocco 1-0 Peru",
+        "probability": 20,
+        "reasoning": "Peru's defensive discipline holds for 80+ minutes, and Morocco need a late goal to secure all three points. A tight, tense match that reflects Peru's tactical maturity and Morocco's occasional struggles against deep-defending opponents."
+      },
+      {
+        "scenario": "Peru 1-1 Morocco",
+        "probability": 8,
+        "reasoning": "Guerrero produces one final moment of World Cup magic, heading home from a set piece. Peru defend heroically for the remaining time, earning a point that would be celebrated as a famous result back in Lima."
+      }
+    ]
+  },
+
+  "closingLine": "In 1970, Peru overwhelmed Morocco 3-0 in a World Cup that belonged to South American football. In 2026, the roles are reversed — Morocco arrive as the continental powerhouse, and Peru come as the proud underdogs. Football's wheel has turned, but the beauty of the World Cup is that it keeps turning."
+}

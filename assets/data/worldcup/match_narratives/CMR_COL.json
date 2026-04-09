@@ -1,0 +1,80 @@
+{
+  "matchKey": "CMR_COL",
+  "team1Code": "CMR",
+  "team2Code": "COL",
+  "team1Name": "Cameroon",
+  "team2Name": "Colombia",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Flair Against Flair: South American Technique Meets African Power in a World Cup Spectacle",
+  "subheadline": "Colombia's creative brilliance collides with Cameroon's Indomitable Lions in a match that promises goals, drama, and unforgettable moments",
+
+  "openingNarrative": "If you distilled the essence of what makes the World Cup magical -- the color, the noise, the passion, the sense that anything can happen -- you would produce something very close to Colombia versus Cameroon. These are two nations that do not merely play football. They perform it. They celebrate it. They turn ninety minutes of sport into something that feels closer to art.\n\nColombia's footballing identity has been forged by generations of extravagant talent: the flowing hair and flowing passes of Carlos Valderrama, the volcanic goal celebrations that have become their trademark, and more recently, the devastating combination of James Rodriguez's vision and Luis Diaz's raw, electrifying pace. Los Cafeteros' 2014 World Cup quarter-final run, propelled by James Rodriguez's Golden Boot-winning 6 goals, remains their finest hour. They missed the 2022 tournament, a shock that has fueled a burning desire for redemption.\n\nCameroon's World Cup story is equally rich. The Indomitable Lions are Africa's most successful World Cup nation -- eight appearances, the continent's first quarter-final in 1990 under the incomparable Roger Milla, and a talent for producing results that defy expectation. At the 2022 World Cup, they beat Brazil 1-0. Let that sink in. Cameroon beat Brazil at a World Cup. These are a team who wake up on World Cup mornings and believe absolutely anything is possible.\n\nColombia's qualifying campaign saw Luis Diaz score 7 goals in 18 matches, while the team accumulated 28 points from 7 wins, 7 draws, and 4 losses. Cameroon enter with Anguissa's Napoli-refined midfield craft and the hunger of a proud footballing nation. The data says Colombia are superior. The World Cup says: watch this.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Nestor Lorenzo's Colombia deploy a 4-2-3-1 that is built around James Rodriguez's ability to orchestrate from the number 10 position. James remains one of football's most gifted passers -- his set-piece delivery is world-class, and his ability to find Luis Diaz with early, incisive balls is Colombia's primary attacking weapon. Diaz's pace on the left wing is genuinely terrifying; when he receives the ball in space and faces a defender one-on-one, the outcome is rarely in doubt.\n\nCameroon's 4-3-3 is built on the midfield axis of Andre-Frank Zambo Anguissa. The Napoli midfielder brings Serie A quality to everything he does -- his passing range, his defensive positioning, and his ability to drive forward with purpose. Around him, Cameroon have pace and power in abundance. Their wide players run at defenders with a directness that few teams can handle.\n\nThe tactical battle within the battle: Anguissa vs Colombia's double pivot. If Anguissa can bypass the screen and find space to operate, Cameroon's transitions will be devastating. If Colombia can isolate him and force Cameroon into long balls, their defensive organization should hold.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Andre-Frank Zambo Anguissa vs Colombia's double pivot -- the midfield battle that decides whether Cameroon can compete or are overwhelmed"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Colombia (ELO: 1730, rank 11) are significant favorites over Cameroon. The ELO gap translates to approximately a 63% win probability for Colombia, reflecting their superior squad depth and recent form.",
+    "formAnalysis": "Colombia qualified with 7 wins, 7 draws, 4 losses in 18 CONMEBOL matches, scoring 28 goals and conceding 18. Luis Diaz led with 7 goals. Colombia's home form was particularly impressive, and their 5-0 demolition of Argentina in qualifying was one of the results of the campaign.",
+    "squadValueComparison": "Colombia's squad ($350M) significantly outvalues Cameroon's. Luis Diaz alone ($93.8M) is worth more than Cameroon's highest-valued players combined. This financial gap reflects Colombia's presence in Europe's top leagues, particularly the Premier League.",
+    "injuryImpact": "Colombia's over-reliance on James Rodriguez, who is aging, represents a tactical vulnerability. If James is unable to influence the match, Colombia lose their creative hub. Cameroon's squad is more evenly balanced, though Anguissa's fitness is critical.",
+    "bettingPerspective": "Colombia are clear favorites. The match attracts attention for its entertainment potential rather than its competitive uncertainty. Over 2.5 goals is favored, reflecting both teams' attacking intent.",
+    "historicalPattern": "Colombia and Cameroon have no significant competitive history. This is essentially a first meeting -- a blank tactical slate that adds unpredictability to an already exciting fixture."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Luis Diaz",
+      "teamCode": "COL",
+      "narrative": "Liverpool's Colombian winger is the most explosive attacking talent on the pitch. Diaz's ability to beat defenders with pace and trickery, combined with a finishing quality that has improved dramatically at Anfield, makes him the player most likely to produce a World Cup moment that goes viral. His 7 goals in qualifying proved he can deliver consistently for his country, not just his club.",
+      "statline": "7 goals in 18 qualifying matches, Colombia's most valuable player at $93.8M"
+    },
+    {
+      "name": "Andre-Frank Zambo Anguissa",
+      "teamCode": "CMR",
+      "narrative": "Napoli's midfield general brings Champions League quality to Cameroon's engine room. Anguissa's combination of physical power and technical refinement makes him one of the most complete midfielders in African football. His ability to shield the defense, distribute with precision, and drive forward with purpose gives Cameroon a level of midfield sophistication that their predecessors rarely possessed.",
+      "statline": "Napoli's midfield maestro and Cameroon's most important player"
+    },
+    {
+      "name": "James Rodriguez",
+      "teamCode": "COL",
+      "narrative": "The 2014 Golden Boot winner walks into what may be his final World Cup still carrying the creative magic that made him one of football's most celebrated playmakers. James does not run as much as he once did, but his vision has not dimmed. His set-piece delivery remains world-class, and in a match where Colombia will have the majority of possession, his ability to find the killer pass will be central to their attacking plans.",
+      "statline": "2014 World Cup Golden Boot winner with 6 goals"
+    },
+    {
+      "name": "Eric Maxim Choupo-Moting",
+      "teamCode": "CMR",
+      "narrative": "The Cameroon captain and experienced target man provides the physical presence and leadership that the Indomitable Lions need on the biggest stage. His career has taken him from Germany to England to France to Qatar, accumulating the kind of diverse experience that proves invaluable in World Cup football. His ability to hold the ball up under pressure and bring others into play makes him the focal point of Cameroon's attack.",
+      "statline": "Cameroon captain with extensive European and World Cup experience"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Colombia 2-1 Cameroon",
+    "confidence": 62,
+    "narrative": "Colombia's superior attacking quality should ultimately prove decisive, but this will not be the comfortable victory that the ELO ratings suggest. Cameroon's physicality, Anguissa's midfield mastery, and their deep-rooted World Cup pedigree mean they will compete with genuine intensity.\n\nExpect a match of breathtaking entertainment. Both teams attack with flair and commit numbers forward, which means defensive transitions will produce heart-stopping moments. Diaz will create something magical on the left wing. Anguissa will drive Cameroon forward with characteristic power. And somewhere in the chaos, James Rodriguez will deliver a pass that reminds the world why he was once considered the most talented playmaker of his generation.\n\nColombia's depth and tactical structure should see them home, but anyone dismissing Cameroon has not been paying attention to World Cup history.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Cameroon 2-1 Colombia",
+        "probability": 18,
+        "reasoning": "Cameroon's physicality and set-piece threat overwhelms Colombia's defense. The Indomitable Lions, who beat Brazil at the last World Cup, produce another seismic upset that sends shockwaves through the tournament."
+      },
+      {
+        "scenario": "Colombia 3-0 Cameroon",
+        "probability": 15,
+        "reasoning": "Diaz runs riot, James dictates the tempo, and Colombia produce a statement performance that announces them as genuine contenders for the latter stages of the tournament."
+      }
+    ]
+  },
+
+  "closingLine": "When South American flair meets African soul, football becomes something more than a game. Colombia and Cameroon will remind us why we fell in love with the World Cup in the first place."
+}

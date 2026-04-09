@@ -1,0 +1,80 @@
+{
+  "matchKey": "ESP_FRA",
+  "team1Code": "ESP",
+  "team2Code": "FRA",
+  "team1Name": "Spain",
+  "team2Name": "France",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Summit of World Football",
+  "subheadline": "Euro 2024 champions Spain collide with two-time World Cup winners France in a group stage match that belongs in a final",
+
+  "openingNarrative": "Some matches transcend their context. On paper, this is a Group H fixture between two teams who have already qualified for the knockout rounds a dozen times over in tournament pedigree alone. In reality, this is the match every football analyst, journalist, and fan circled the moment the draw was made — the collision of the world's two best teams, the tactical battle that will set the tone for the entire tournament.\n\nSpain arrive as the reigning European champions, their Euro 2024 triumph a masterpiece of generational talent meeting tactical perfection. Lamine Yamal, who was 16 when he tore apart Europe's finest defenses, has become the most exciting young player on the planet. Pedri conducts the midfield with the quiet authority of a virtuoso. Luis de la Fuente has built something that feels destined: a team that plays with joy, precision, and devastating intent.\n\nFrance, meanwhile, are football's most complete squad. Kylian Mbappe has ascended to Real Madrid and now stands as the sport's most devastating individual force. The depth is obscene — Dembele, Griezmann, Tchouameni, Camavinga, a conveyor belt of world-class talent that Didier Deschamps deploys with the cold calculation of a chess grandmaster. France have reached three of the last four World Cup finals. They do not merely compete at tournaments. They define them.\n\nThis is not a match. This is a statement of intent from whoever emerges victorious.",
+
+  "tacticalBreakdown": {
+    "title": "The Grandmasters' Gambit",
+    "narrative": "Spain's 4-3-3 is the gold standard of modern football. Possession is not merely a strategy — it is an identity, a philosophy refined across generations from Xavi to Pedri. De la Fuente has added explosive width through Yamal and Nico Williams, transforming Spain from patient positional dominators into a team that can hurt you in transition with terrifying speed. The midfield triangle of Pedri, Rodri, and Gavi controls matches like a metronome controls music.\n\nFrance's 4-2-3-1 under Deschamps is pragmatism elevated to an art form. They can sit back and absorb pressure, then destroy you in three passes through Mbappe's devastating acceleration. Tchouameni anchors the midfield with a composure that belies his age, while Griezmann provides the tactical intelligence that links defense to attack. France do not need to dominate possession. They need one half-second of space for Mbappe.\n\nThe defining battle will be in Spain's build-up. If Pedri and Rodri can circulate the ball through France's press, Spain will control the tempo. If France's pressing disrupts Spain's rhythm and forces turnovers in dangerous areas, Mbappe will be running at a stretched defense. It is the unstoppable force meeting the immovable object — and the result may come down to who blinks first.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Pedri vs Tchouameni — whoever controls the central corridor controls the match"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Spain (ELO: 1877, ranked 1st) vs France (ELO: 1870, ranked 3rd) — a mere 7-point gap separating the world's top-ranked team from the sport's most successful recent tournament side. This translates to an almost perfectly even match, with Spain holding the slightest of statistical edges.",
+    "formAnalysis": "Spain qualified with 5 wins, 1 draw, 0 losses, scoring 21 goals and conceding just 2. France matched them stride for stride: 5 wins, 1 draw, 0 losses, 16 scored and 4 conceded. Both teams entered qualifying as European powerhouses and left no doubt about their status.",
+    "squadValueComparison": "Spain ($1.42B) vs France ($1.64B). France's squad is the second most valuable at the tournament, with Mbappe alone valued at $225M. Spain's depth across midfield and their young attacking stars — Yamal at $188M — ensure the financial comparison is merely academic.",
+    "injuryImpact": "Both squads are expected to be at full strength. The only question marks surround match fitness and tournament conditioning — both teams will treat this as a knockout match, which means Deschamps and de la Fuente will field their strongest possible XIs.",
+    "bettingPerspective": "Spain are the outright tournament favorites at +450, while France sit at +750. The draw at +240 represents significant value in a match where both managers may prioritize not losing over gambling for all three points.",
+    "historicalPattern": "France won the 2021 Nations League final against Spain. Spain eliminated France at Euro 2024 in the semifinals. These two have traded blows at the highest level for years, and neither holds a decisive psychological edge over the other."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "narrative": "He was born in 2007. Let that sink in. By the time this World Cup kicks off, Yamal will be 18 years old and already carrying the creative hopes of the world's top-ranked nation. His Euro 2024 performances were not merely impressive — they were era-defining. His ability to receive the ball on the right, cut inside, and create chaos with either a pass or a shot makes him the most unpredictable attacking force in world football. Against France, he faces the ultimate test of his young career.",
+      "statline": "Spain's most valuable player at $188M; youngest Euro goalscorer in history"
+    },
+    {
+      "name": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "narrative": "If Yamal represents the future, Mbappe is the now — and the now is a terrifying proposition for any defender on the planet. His hat-trick in the 2022 World Cup final against Argentina was one of the greatest individual performances in tournament history. At Real Madrid, he has added tactical maturity to his raw devastation. He no longer merely runs past defenders. He dismantles entire defensive structures with his movement, his timing, and his ruthlessness in front of goal.",
+      "statline": "4 goals at the 2022 World Cup including a final hat-trick; France captain at 27"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "narrative": "The quiet genius of Spanish football. Pedri does not grab headlines the way Yamal does — he does something more important. He controls time. His ability to receive the ball under pressure, turn, and find the penetrating pass is what makes Spain's entire system function. Without Pedri, Spain are a collection of talented individuals. With him, they are an orchestra. Against France's pressing, his composure will be the difference between Spain dominating and Spain struggling.",
+      "statline": "Euro 2024 champion; Barcelona's midfield heartbeat with 90%+ pass completion"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "teamCode": "FRA",
+      "narrative": "The great connector. Griezmann's role in this France team is impossible to quantify through conventional statistics. He is the link between Mbappe's explosiveness and the rest of the team, the player who makes intelligent runs that create space for others, the defensive forward who presses with intelligence rather than brute force. In a match this tactically complex, Griezmann's reading of the game could be the decisive factor.",
+      "statline": "France's all-time joint-top scorer at major tournaments; the ultimate big-game performer"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Spain 1-1 France",
+    "confidence": 45,
+    "narrative": "Predicting this match with confidence would be an act of arrogance. These are the two best teams in the world, managed by two coaches who understand tournament football at its deepest level. Both will approach this as a chess match where the first mistake is fatal.\n\nWe envision a cagey first half where neither team commits fully, followed by a second half where the quality inevitably produces moments of brilliance. A Yamal dribble that unlocks the French defense. A Mbappe counter-attack that tears through Spain's high line. Both teams score, both teams survive, and both teams walk away knowing they will likely meet again when the stakes are even higher.\n\nThe draw is not a failure for either side. It is a statement of mutual respect from two teams who know they are destined to meet in the knockout rounds — where one will fall and the other will march toward immortality.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Spain 2-1 France",
+        "probability": 25,
+        "reasoning": "Spain's possession dominance eventually cracks France's discipline. Yamal produces a moment of individual magic, and Spain's midfield control suffocates France's counter-attacking threat. De la Fuente's side announces themselves as the tournament's team to beat."
+      },
+      {
+        "scenario": "France 2-0 Spain",
+        "probability": 15,
+        "reasoning": "Deschamps deploys the perfect tactical trap. France absorb Spain's possession, strike twice on the counter through Mbappe, and demonstrate that tournament pedigree trumps recent form. A signature Deschamps masterclass."
+      }
+    ]
+  },
+
+  "closingLine": "When Spain and France take the pitch, the rest of the World Cup pauses to watch. This is not merely a football match — it is the sport's present and future colliding at full speed, and the winner will carry the tournament's narrative on their shoulders."
+}

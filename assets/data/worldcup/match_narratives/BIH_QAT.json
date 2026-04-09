@@ -1,0 +1,80 @@
+{
+  "matchKey": "BIH_QAT",
+  "team1Code": "BIH",
+  "team2Code": "QAT",
+  "team1Name": "Bosnia and Herzegovina",
+  "team2Name": "Qatar",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Qatar's Quest for Redemption Meets Bosnian Grit",
+  "subheadline": "The 2022 hosts desperate to erase their home tournament nightmare face a Balkan side with nothing to lose and everything to fight for",
+
+  "openingNarrative": "Qatar's 2022 World Cup campaign was supposed to be the moment that justified everything -- the billions invested, the infrastructure built, the years of planning that transformed a tiny Gulf state into football's center of gravity. Instead, it became a cautionary tale. Three matches, three defeats, zero goals from open play. The first host nation in World Cup history to lose all three group games. It was a humiliation that cut deep in Doha, and the 2026 tournament represents the only chance at redemption.\n\nBosnia and Herzegovina could not care less about Qatar's emotional arc. Sergej Barbarez's team fought through UEFA's playoff gauntlet to reach this tournament, beating sides that would have fancied themselves as World Cup participants. Every Bosnian cap is earned in blood, every qualifying point won through sheer force of will. They bring to this match the kind of competitive hardness that Qatar's domestically-based squad has rarely encountered.\n\nThe contrast between these two nations is stark. Qatar's Aspire Academy produced a generation of technically proficient players who won the Asian Cup in 2019 and 2023. Bosnia's talent comes from the diaspora -- players scattered across Europe's leagues who come together with the intensity of men representing something far larger than football. In their 2 previous meetings, Bosnia have been unbeaten: a 1-1 draw in Zenica and a 2-1 comeback victory in Doha.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Bosnia's 4-2-3-1 is built for exactly this type of opponent. Against a possession-oriented side like Qatar, Bosnia will sit in a compact mid-block, deny space between the lines, and look to punish the Maroon on transitions. Dzeko's ability to hold the ball and bring runners into play makes Bosnia's counter-attacks surprisingly sophisticated for a side that concedes possession willingly.\n\nQatar under Luis Garcia have refined their Spanish-influenced 3-5-2, emphasizing patient build-up play and positional rotations. Akram Afif operates as the creative hub, drifting between the lines to find space, while Almoez Ali's runs in behind provide the vertical threat. The system works beautifully against Asian opposition but faces a fundamental question at the World Cup: can Qatar's technically sound but physically limited squad compete when the intensity ratchets up to European levels?\n\nThe set-piece battle could be decisive. Bosnia's aerial threat from corners and free kicks is significant, and Qatar's 2022 campaign exposed their vulnerability in defending dead-ball situations.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "3-5-2",
+    "keyMatchup": "Edin Dzeko's aerial dominance vs Qatar's three-man defense -- Bosnia's physical edge against Qatar's tactical structure"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Bosnia (ELO: 1600) vs Qatar (ELO: 1590) -- a negligible 10-point gap. On paper, this is one of the most evenly matched fixtures at the tournament. But ELO ratings cannot capture the difference in competitive environments: Bosnia earned their 1600 in UEFA's crucible, Qatar earned their 1590 primarily in AFC competition.",
+    "formAnalysis": "Bosnia qualified via UEFA Play-Off Path A: 4 wins, 3 draws, 3 losses in 10 matches, with 14 goals scored and 12 conceded. Ermedin Demirovic led with 4 goals. Qatar's qualifying was more prolific: 6 wins in 12 matches with Almoez Ali scoring an extraordinary 12 goals across AFC rounds. However, Qatar conceded 25 goals -- a defensive vulnerability that Bosnia will target.",
+    "squadValueComparison": "Bosnia ($150M) vs Qatar ($66.9M). Neither squad is valued among the tournament's elite, but Bosnia's European-based players bring a level of weekly competitive intensity that Qatar's domestically-based squad cannot match. Dzeko's estimated $8M value vastly understates his actual contribution.",
+    "injuryImpact": "Both squads lack the depth to absorb significant injuries. Bosnia without Dzeko lose their identity; Qatar without Afif lose their creativity. The fitness of these two players may determine the match.",
+    "bettingPerspective": "Bosnia are slight favorites given their European competitive pedigree and physical advantages. Qatar's odds reflect both their 2022 disaster and the bookmakers' skepticism about domestically-based squads competing at the highest level.",
+    "historicalPattern": "In 2 previous meetings, Bosnia are unbeaten: 1 win (2-1 in Doha, 2020) and 1 draw (1-1 in Zenica, 2018). Bosnia have outscored Qatar 3-2 in the head-to-head, with their physicality causing Qatar problems in both encounters."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Edin Dzeko",
+      "teamCode": "BIH",
+      "narrative": "At 40, Dzeko approaches every international appearance as if it might be his last -- because it might be. Bosnia's record goalscorer has tormented defenders across Serie A and the Premier League, and his movement, hold-up play, and finishing remain formidable. Against Qatar's three-man defense, Dzeko's aerial presence and ability to drop deep will create the kind of problems that the Maroon struggled to solve at their own World Cup. He is the embodiment of Bosnian football: tough, proud, and impossibly determined.",
+      "statline": "65+ international goals; Bosnia's all-time record scorer across multiple European top-flight clubs"
+    },
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "narrative": "If Qatar are to succeed at this World Cup, it will be because Akram Afif decides to put the team on his back. The Asian Player of the Year winner is the most talented footballer Qatar has ever produced -- a creative force whose dribbling, vision, and set-piece delivery would grace any league in the world. His 2019 Asian Cup Golden Boot performance announced him to the global audience, and his two consecutive Asian Cup titles (2019 and 2023) prove he delivers when it matters. The question is whether he can do it against European-quality opposition.",
+      "statline": "Asian Player of the Year; 2019 Asian Cup Golden Boot winner; Qatar's creative talisman"
+    },
+    {
+      "name": "Haris Tabakovic",
+      "teamCode": "BIH",
+      "narrative": "The Bundesliga striker gives Bosnia a second genuine goal threat alongside Dzeko. Tabakovic's physicality and finishing have made him a regular scorer in one of Europe's top five leagues, and his willingness to run the channels and press defenders adds a dimension that the more stationary Dzeko cannot provide alone. Together, they form a complementary partnership that asks different questions of opposing defenses.",
+      "statline": "Regular Bundesliga scorer; key contributor to Bosnia's qualifying campaign"
+    },
+    {
+      "name": "Almoez Ali",
+      "teamCode": "QAT",
+      "narrative": "Qatar's all-time record goalscorer arrives at the 2026 World Cup with a staggering 12 goals across their qualifying campaign -- the highest tally of any AFC player. The Sudanese-born striker's pace and movement in behind defenses make him Qatar's most direct attacking threat. His Asian Cup record is extraordinary, and he will look to transfer that continental dominance to the world stage after the disappointment of 2022, where he was starved of service.",
+      "statline": "12 goals in AFC qualifying; Qatar's all-time leading scorer; Asian Cup record holder"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Bosnia and Herzegovina 2-0 Qatar",
+    "confidence": 55,
+    "narrative": "This match comes down to one fundamental question: can Qatar handle the physicality and intensity of European-forged opposition? The evidence from 2022 suggests they cannot. Qatar lost to Ecuador, Senegal, and the Netherlands without ever truly competing in those matches, and Bosnia bring a similar blend of organization, set-piece threat, and physical presence.\n\nDzeko's aerial dominance will cause problems all afternoon. Bosnia's midfield will win the physical battles that Qatar's technically proficient but lightweight central players struggle to contest. And when Bosnia win set pieces in dangerous areas -- and they will, frequently -- Qatar's three-man defense will be stretched to breaking point.\n\nQatar have the technical quality to create moments through Afif, but converting those moments into goals against a defense hardened by UEFA qualifying is a different challenge entirely. Bosnia will be clinical, organized, and ruthless in a match that confirms the gap between Asian and European competitive environments.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Qatar 1-0 Bosnia and Herzegovina",
+        "probability": 15,
+        "reasoning": "Qatar produce the performance their talent deserves. Afif orchestrates, Almoez Ali finishes, and the 2022 demons are exorcised with a famous first World Cup victory that sends shockwaves through the tournament."
+      },
+      {
+        "scenario": "Bosnia and Herzegovina 1-1 Qatar",
+        "probability": 20,
+        "reasoning": "Qatar's possession keeps Bosnia at arm's length for most of the match. A Dzeko header opens the scoring, but Almoez Ali equalizes on the counter, and both sides settle for a point that keeps their group stage hopes alive."
+      }
+    ]
+  },
+
+  "closingLine": "Qatar spent billions building stadiums for their 2022 World Cup. Bosnia built their football identity from the rubble of war. When these two philosophies collide, football reveals what money cannot buy."
+}

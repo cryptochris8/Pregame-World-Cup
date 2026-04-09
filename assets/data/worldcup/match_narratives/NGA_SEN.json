@@ -1,0 +1,80 @@
+{
+  "matchKey": "NGA_SEN",
+  "team1Code": "NGA",
+  "team2Code": "SEN",
+  "team1Name": "Nigeria",
+  "team2Name": "Senegal",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The West African Derby That Shakes the World",
+  "subheadline": "Nigeria's Super Eagles and Senegal's Lions of Teranga bring the intensity of Africa's greatest football rivalry to the global stage",
+
+  "openingNarrative": "There is no rivalry in African football quite like Nigeria versus Senegal. This is West Africa's El Clasico — a match that transcends football and touches the very identity of two nations that have shaped the continent's sporting narrative for decades. When the Super Eagles face the Lions of Teranga, the entire continent stops to watch. Families divide, friendships are tested, and the pride of over 230 million Nigerians collides with the fierce passion of 18 million Senegalese.\n\nSenegal arrive as the reigning AFCON champions, their 2022 triumph in Cameroon cementing a golden generation's legacy. Sadio Mane's winning penalty in that final remains one of the most iconic moments in African football history. Nigeria, the continent's most decorated AFCON nation with three titles, counter with the most potent attacking weapon in African football: Victor Osimhen, the Napoli striker whose combination of speed, power, and finishing has terrorized the best defenders in Serie A.\n\nThis is more than a football match. This is a cultural event, a statement of continental supremacy, and a group-stage encounter that carries the weight and intensity of a knockout final. Both teams know that the result here could define their entire tournament. Neither can afford to blink first.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Senegal's 4-3-3 under Aliou Cisse is built on athletic, direct football. They press with ferocity, transition with blistering speed, and defend with an organization that belies the stereotype of African football being all flair and no structure. Mane drifts across the front line, pulling defenders out of position, while Nicolas Jackson's pace in behind stretches backlines to breaking point.\n\nNigeria's approach mirrors Senegal's intensity but adds a different dimension through Osimhen's unique skillset. Where Senegal attack with collective movement, Nigeria funnel their creativity through their talisman. The Super Eagles' midfield, anchored by Ndidi's defensive screening, aims to win possession and launch rapid transitions that isolate Osimhen against Senegal's center-backs.\n\nThe tactical key is midfield control. Senegal's Idrissa Gueye and his partners will attempt to suffocate Nigeria's supply lines, while Nigeria's pressing will target Senegal's buildup play. Expect this to be played at a breathless tempo — neither side will allow the other to settle on the ball.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Victor Osimhen vs Kalidou Koulibaly — the unstoppable force meets the immovable object in African football's defining individual battle"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Senegal (ELO: 1700, rank 15) hold a slight edge in the global ratings, reflecting their AFCON triumph and consistent performances at the 2022 World Cup where they reached the Round of 16. Nigeria's Elo data is not in the current dataset but their form suggests a comparable level.",
+    "formAnalysis": "Senegal have been the benchmark of African football since their 2022 AFCON victory. Their 2022 World Cup campaign saw them beat Qatar and Ecuador before falling to England in the Round of 16. Nigeria's qualifying campaign was impressive, with Osimhen providing the goals that powered them through a competitive African pathway.",
+    "squadValueComparison": "Senegal's squad ($395M, led by Nicolas Jackson at $62.5M) represents significant European-based talent across all positions. Nigeria's squad, anchored by Osimhen's massive valuation, is similarly stocked with players from top European leagues.",
+    "injuryImpact": "Both squads have depth concerns in certain positions. Mane's fitness, given his move to the Saudi Pro League and reduced European intensity, is a talking point. Osimhen's physical durability through a long club season will also be monitored closely.",
+    "bettingPerspective": "This match is priced as a virtual coin flip by bookmakers, with the draw being the slight favorite. The West African derby history suggests tight, low-scoring affairs that often end in stalemate.",
+    "historicalPattern": "West African derbies at major tournaments are typically defined by defensive intensity and moments of individual brilliance. Neither team tends to open up against the other, making goals precious and tension unbearable."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "narrative": "Osimhen carries the hopes of Nigerian football on shoulders broad enough to bear the weight. His explosive acceleration, aerial dominance, and predatory instinct in the penalty box make him one of the most feared strikers in world football. In the West African derby, his duel with Koulibaly is the headline attraction — the Serie A colleagues know each other's games intimately, which adds a fascinating sub-plot of familiarity and respect to this encounter.",
+      "statline": "20+ goals in consecutive Serie A seasons with Napoli"
+    },
+    {
+      "name": "Sadio Mane",
+      "teamCode": "SEN",
+      "narrative": "Mane is more than Senegal's best player — he is the symbol of an entire nation's football identity. His penalty that won AFCON 2022 transformed him from a world-class footballer into an immortal figure in Senegalese culture. Now 34, Mane's pace has diminished but his football intelligence, leadership, and ability to produce decisive moments in big matches remain undiminished. Against Nigeria, he will draw on every ounce of that experience.",
+      "statline": "Scored the winning penalty in the 2022 AFCON final to deliver Senegal's first continental title"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "narrative": "The towering center-back is Senegal's defensive anchor and the man tasked with the unenviable job of stopping Osimhen. Having faced the Nigerian striker in Serie A during his time at Napoli, Koulibaly knows the threat intimately. His combination of physical presence, reading of the game, and recovery pace makes him one of the few defenders in world football capable of matching Osimhen stride for stride.",
+      "statline": "Senegal's defensive leader with over 70 international caps"
+    },
+    {
+      "name": "Wilfred Ndidi",
+      "teamCode": "NGA",
+      "narrative": "Ndidi is the engine that makes Nigeria's pressing game function. His ball-winning ability, tactical intelligence, and tireless running provide the platform for Osimhen's attacking brilliance. In a match where midfield control will determine the outcome, Ndidi's capacity to disrupt Senegal's passing patterns while launching quick transitions is absolutely critical.",
+      "statline": "Premier League's most prolific ball-winner across multiple seasons with Leicester City"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Nigeria 1-1 Senegal",
+    "confidence": 45,
+    "narrative": "West African derbies at the World Cup demand respect for the unpredictable. These are two sides that know each other's strengths, respect each other's quality, and fear each other's matchwinners. The result is almost always a tense, tight affair where defensive discipline trumps attacking ambition.\n\nExpect early caution from both sides, a cagey first half where neither team wants to overcommit, and then a breathless final 30 minutes as the desperation for three points overrides the fear of conceding. Osimhen and Mane will both have their moments. Both defenses will make heroic interventions. And when the final whistle sounds at 1-1, both camps will feel they could have won — and be relieved they didn't lose.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Nigeria 2-1 Senegal",
+        "probability": 20,
+        "reasoning": "Osimhen's pace overwhelms Senegal in the second half as legs tire. Nigeria's fitness advantage and Osimhen's clinical finishing produce a late winner that sends the Super Eagles soaring."
+      },
+      {
+        "scenario": "Senegal 2-0 Nigeria",
+        "probability": 15,
+        "reasoning": "Senegal's tournament experience and Mane's leadership prove decisive. They score early from a set piece, and Nigeria's pursuit of an equalizer leaves gaps that Senegal exploit ruthlessly on the counter."
+      }
+    ]
+  },
+
+  "closingLine": "When Nigeria face Senegal, Africa holds its breath. This is the continent's football soul laid bare — brilliant, intense, and utterly unpredictable."
+}

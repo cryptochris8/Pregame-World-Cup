@@ -1,0 +1,80 @@
+{
+  "matchKey": "JAM_KOR",
+  "team1Code": "JAM",
+  "team2Code": "KOR",
+  "team1Name": "Jamaica",
+  "team2Name": "Korea Republic",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Reggae Boyz Meet Asia's Finest",
+  "subheadline": "Jamaica's World Cup dreamers face Son Heung-min and a South Korean side determined to prove they belong among the elite",
+
+  "openingNarrative": "When Jamaica last graced the World Cup stage in 1998, Theodore Whitmore scored twice against Japan to give the Reggae Boyz their first and only World Cup victory. Twenty-eight years later, they return to football's grandest stage with a point to prove and a nation of three million dreamers behind them. But standing in their path is a South Korean side that has evolved from plucky Asian hopefuls into genuine contenders, armed with one of the deadliest attackers in world football.\n\nSon Heung-min has transcended the boundaries of Asian football. With over 100 Premier League goals for Tottenham, he is the continent's greatest ever export, a player whose left foot can conjure devastation from angles that shouldn't exist. For Jamaica, containing Son is not merely a tactical challenge — it is the single most important task they will face at this World Cup. Leon Bailey, Aston Villa's electrifying winger, carries Jamaica's hopes of springing an upset. If there is one Jamaican who possesses the individual brilliance to match Son's magic, it is Bailey — unpredictable, explosive, and capable of turning any game on its head with a single burst of acceleration.\n\nThis is the beauty of the expanded World Cup: football cultures that have never collided are now sharing the same pitch, the same ninety minutes, the same dreams.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "South Korea's 4-3-3 under Hong Myung-bo is built around pressing intensity and quick transitions. Son Heung-min operates as the focal point of their attack, drifting between the left wing and central areas with the freedom to find pockets of space. Behind him, Lee Kang-in orchestrates from midfield with the vision and technique he's honed at Paris Saint-Germain, while Kim Min-jae anchors the defense with the authority of a Bayern Munich center-back.\n\nJamaica will likely set up in a compact 4-4-2 or 5-4-1, looking to frustrate Korea and strike on the counter through Bailey's pace. Their Premier League contingent — Bailey, Michail Antonio — provides top-level experience that belies Jamaica's modest world ranking. The key for Jamaica is to stay organized through the first 30 minutes, deny Son space to operate between the lines, and trust that their moments will come.\n\nThe tactical battle hinges on Jamaica's discipline versus Korea's relentless probing. If Jamaica can force Korea into crossing from wide areas rather than cutting inside, they have a chance. If Son finds space centrally, it could be a long afternoon for the Reggae Boyz.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Leon Bailey vs Kim Min-jae — Jamaica's explosive winger against Korea's world-class center-back"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "South Korea (ELO: 1655) enter as clear favorites. While Jamaica lacks an official ELO rating among the top 48, their return to the World Cup after 28 years signals a genuine improvement in Caribbean football. Korea's 24th-ranked ELO suggests they should control this match, but the beauty of first meetings is that history offers no guide.",
+    "formAnalysis": "South Korea's qualifying campaign was outstanding: 6 wins, 4 draws, 0 losses in AFC Third Round Group B, scoring 22 goals and conceding just 5. Son Heung-min led the scoring charts with 10 goals in qualifying alone. Jamaica's path back to the World Cup was built on resilience and the growing influence of their European-based players.",
+    "squadValueComparison": "Korea Republic's squad ($315M) significantly outvalues Jamaica's roster, with Kim Min-jae ($87.5M) alone worth more than most of Jamaica's squad combined. But football has never been a sport decided by balance sheets — Jamaica's 1998 World Cup adventure proved that heart can bridge any financial gap.",
+    "injuryImpact": "Both squads are expected to be at or near full strength for this group stage encounter. Son's fitness is the key variable for Korea — when fully fit, he transforms their attack from dangerous to devastating.",
+    "bettingPerspective": "Markets heavily favor South Korea, reflecting the gulf in world rankings and squad depth. Jamaica are significant underdogs, but their Premier League talent means an upset cannot be dismissed entirely.",
+    "historicalPattern": "This is the first-ever meeting between Jamaica and South Korea in any competition. Jamaica's only previous World Cup ended with 1 win from 3 matches in 1998. South Korea have appeared at 11 World Cups and reached the semi-finals as co-hosts in 2002."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "Asia's greatest footballer carries the weight of an entire continent's expectations. At 33, Son remains devastatingly effective — his movement, his finishing with either foot, his ability to produce moments of individual brilliance from nothing. He scored 10 goals in qualifying, a reminder that for all the tactical planning in the world, some players simply transcend systems. Against Jamaica, Son will be the most dangerous player on the pitch, and everyone in the stadium will know it.",
+      "statline": "10 goals in World Cup qualifying, 100+ Premier League goals for Tottenham"
+    },
+    {
+      "name": "Leon Bailey",
+      "teamCode": "JAM",
+      "narrative": "If Jamaica are to produce a moment of magic at this World Cup, it will almost certainly come from Leon Bailey's boots. The Aston Villa winger possesses blistering pace, a wicked left foot, and the confidence of a player who has faced — and beaten — the best defenders in the Premier League. Bailey is Jamaica's talisman, their great hope, the player who can turn this from a footnote into a fairy tale.",
+      "statline": "Jamaica's most valuable player, starring in the Premier League with Aston Villa"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "narrative": "The PSG midfielder won the Golden Ball at the 2019 U-20 World Cup, and he has only grown since. Lee's vision and passing range give South Korea a creative dimension beyond Son's individual brilliance. His set-piece delivery is world-class, and his ability to control the tempo of a match from central midfield makes him the metronome Korea need to break down organized defenses.",
+      "statline": "Golden Ball winner at 2019 U-20 World Cup, starting midfielder at Paris Saint-Germain"
+    },
+    {
+      "name": "Michail Antonio",
+      "teamCode": "JAM",
+      "narrative": "The decision to represent Jamaica over England was one of the most romantically compelling stories in recent international football. Antonio brings Premier League physicality and know-how to a squad that desperately needs both. His ability to hold the ball up, bring others into play, and bully center-backs gives Jamaica a genuine focal point in attack. Against Korea's defense, his strength could be the key to creating chances for Bailey.",
+      "statline": "Experienced Premier League striker bringing top-flight quality to Jamaica's attack"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Korea Republic 3-1 Jamaica",
+    "confidence": 72,
+    "narrative": "South Korea's quality should prove decisive, but this won't be the walkover some might expect. Son and Lee Kang-in will eventually unlock Jamaica's defense, and Korea's pressing intensity will wear down the Caribbean side as the match progresses. But Jamaica have enough individual talent through Bailey and Antonio to find the net at least once, and their sheer determination to make their World Cup return memorable will ensure they don't go quietly.\n\nExpect Korea to dominate possession and create the better chances, with Jamaica dangerous on the counter through Bailey's pace. The second half should see Korea pull away as Jamaica's energy levels drop, but the Reggae Boyz will leave the pitch knowing they gave everything.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Korea Republic 1-0 Jamaica",
+        "probability": 20,
+        "reasoning": "Jamaica's defensive discipline holds for longer than expected, and a single Son moment of brilliance is the difference. A tight, competitive affair that exceeds expectations for the Caribbean side."
+      },
+      {
+        "scenario": "Jamaica 1-1 Korea Republic",
+        "probability": 10,
+        "reasoning": "Bailey produces a moment of individual magic to cancel out Son's opener. Jamaica's players rise to the occasion in a result that would rank among the great World Cup upsets."
+      }
+    ]
+  },
+
+  "closingLine": "Twenty-eight years after Theodore Whitmore wrote Jamaica into World Cup history, a new generation of Reggae Boyz step onto the world stage. Son Heung-min and South Korea will be heavy favorites, but if football has taught us anything, it is that the World Cup belongs to the dreamers."
+}

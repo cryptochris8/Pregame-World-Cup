@@ -1,0 +1,80 @@
+{
+  "matchKey": "HAI_SCO",
+  "team1Code": "HAI",
+  "team2Code": "SCO",
+  "team1Name": "Haiti",
+  "team2Name": "Scotland",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Two Underdogs, One Desperate Dream",
+  "subheadline": "Scotland's 50-year World Cup curse meets Haiti's 52-year return — and only one of them can survive",
+
+  "openingNarrative": "This is a match between two nations haunted by their World Cup histories for entirely different reasons. Scotland have been to eight World Cups and have never — not once — advanced beyond the group stage. Eight times they have arrived with hope. Eight times they have departed with heartbreak. In 1974, they went unbeaten but were eliminated on goal difference. In 1978, they beat the Netherlands 3-2 but had already been eliminated. In 1982 and 1986, they fell by a single goal. The Scottish footballing psyche is defined by agonizing proximity to glory and the inability to cross the finish line.\n\nHaiti's World Cup history is briefer but no less poignant. Their sole previous appearance, in 1974, produced Emmanuel Sanon's iconic goal against Italy — a strike that ended Dino Zoff's world-record unbeaten streak and gave a Caribbean nation of limited resources a permanent place in World Cup folklore. Returning after 52 years, Haiti carry not just the memories of 1974 but the hopes of a diaspora that stretches across the globe.\n\nIn a group containing Brazil and Morocco, this match represents both teams' most realistic chance of picking up points. Scotland must win to have any chance of advancing — their historical pattern of group-stage elimination demands it. Haiti must compete to prove their qualification was no accident. The stakes could not be higher for two proud footballing nations that know this opportunity may not come again.\n\nScotland are the clear favorites, with a squad featuring Premier League regulars like Scott McTominay, Andrew Robertson, and Billy Gilmour. But Haiti have something Scotland know all too well: the desperate courage of a team with nothing to lose.",
+
+  "tacticalBreakdown": {
+    "title": "The Must-Win vs The Nothing-to-Lose",
+    "narrative": "Steve Clarke's Scotland will likely abandon their usual cautious 3-5-2 and adopt a more attacking 4-3-3 or 4-2-3-1 against Haiti. McTominay will be encouraged to make late runs into the box — his goal-scoring exploits at Napoli have added a devastating attacking dimension to his game. Robertson will push forward from the left, providing crosses and width. Scotland need goals, and they will set up to get them.\n\nHaiti will sit in their familiar compact shape — a 4-4-2 or 5-4-1 — but against Scotland, they may show more attacking ambition than in their matches against Brazil and Morocco. This is Haiti's most realistic chance of competing, and their pace on the wings could trouble Scotland's defense if the Scots push too many players forward. Set pieces will be crucial for both sides.\n\nThe pressure is almost entirely on Scotland. They know their history, they know the pattern, and they know that this is the match where they simply cannot afford another World Cup failure. That psychological weight could work in Haiti's favor — if they score first, the ghosts of Scotland's past will start whispering.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Scott McTominay's box-to-box energy vs Haiti's compact midfield — can Scotland's most dangerous player find the spaces to score?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Haiti (ELO: 1350, ranked 90th) vs Scotland (ELO: 1680, ranked 35th) — a 330-point gap that gives Scotland approximately a 78% win probability. The quality differential is significant, though not as extreme as Haiti's other group matches.",
+    "formAnalysis": "Scotland qualified with 5 wins, 2 draws, and 1 loss, scoring 12 goals and conceding 5. McTominay led with 4 qualifying goals. Haiti's qualifying campaign was more modest: 2 wins, 2 draws, 2 losses, 6 scored and 7 conceded. Scotland's superior record reflects their higher competitive level.",
+    "squadValueComparison": "Scotland ($200M) vs Haiti ($8M) — a 25-to-1 financial advantage for Scotland. McTominay's Napoli value ($50M) is more than six times Haiti's entire squad. Robertson adds further Premier League-level quality.",
+    "injuryImpact": "Scotland need McTominay and Robertson fit — they are the goal-scoring threat and creative outlet respectively. Haiti's thin squad means any absence is potentially devastating.",
+    "bettingPerspective": "Scotland are strong favorites at approximately -250. The draw at +350 offers value if you believe Haiti can defend as heroically as they did in 1974. A Haiti victory would be a major upset.",
+    "historicalPattern": "This is the first-ever meeting between Haiti and Scotland. Scotland's 8 group-stage eliminations create a unique psychological burden that could affect their performance. Haiti's 1974 experience — competitive but ultimately outmatched — is their only World Cup reference point."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Scott McTominay",
+      "teamCode": "SCO",
+      "narrative": "The transformation of McTominay from Manchester United's workmanlike midfielder into Napoli's goal-scoring machine has been one of European football's most remarkable stories. His ability to arrive late in the box, his heading power, and his long-range shooting give Scotland a goal threat from midfield that they have never previously possessed. Against Haiti, McTominay will be Scotland's most important player — the man tasked with ending 50 years of World Cup heartbreak.",
+      "statline": "4 goals in qualifying; Napoli midfielder; Scotland's most important outfield player"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "narrative": "Against Scotland, Etienne has his best chance to make an impact. Unlike the matches against Brazil and Morocco, where he will be isolated and outnumbered, Scotland's more open approach may give him space to run into and chances to create. His MLS experience provides the foundation of tactical awareness and physical resilience needed to compete at this level.",
+      "statline": "Haiti's most experienced attacker; MLS veteran providing pace and directness on the counter"
+    },
+    {
+      "name": "Andrew Robertson",
+      "teamCode": "SCO",
+      "narrative": "Liverpool's captain provides Scotland with a left flank that belongs at the highest level. Robertson's crossing, his defensive solidity, and his leadership are essential to Scotland's chances. His Champions League final experience gives him the composure that Scotland desperately need in high-pressure World Cup matches — a commodity that has been conspicuously absent from their previous tournament campaigns.",
+      "statline": "Liverpool captain; Scotland's most experienced player at the highest level of club football"
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "narrative": "Haiti's most valuable player will look to use his physical presence to cause Scotland's defenders problems from set pieces. His aerial ability and penalty-box instincts give Haiti a route to goal that does not depend on winning the tactical battle. One well-delivered corner, one Pierrot header, and the entire complexion of this match changes.",
+      "statline": "Haiti's most valuable player at $2M; 2 qualifying goals; the physical presence in Haiti's attack"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Scotland 2-0 Haiti",
+    "confidence": 70,
+    "narrative": "Scotland carry the weight of eight World Cup group-stage eliminations, and that weight makes this match far more psychologically complex than the quality differential suggests. The pressure to win — to finally advance, to break the curse — will produce anxiety as much as determination.\n\nBut Clarke's Scotland are a more mature, more experienced tournament team than any of their predecessors. McTominay's Napoli form has given them a goal-scoring threat they have never had. Robertson's Liverpool pedigree provides leadership under pressure. And the presence of Gilmour in midfield ensures they can control possession against a team that will sit deep.\n\nScotland will score in the first half — probably McTominay, arriving late in the box to head home from a Robertson cross. The second goal will come after halftime as Haiti tire and Scotland's quality tells. The victory will be professional rather than spectacular, but Scotland will not care about the aesthetic. They will care about the result.\n\nBut beware the ghosts. Scotland have made a career of underperforming against supposedly weaker opponents at World Cups. If Haiti score first, the Tartan Army will feel the familiar chill of history repeating itself.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Haiti 1-1 Scotland",
+        "probability": 15,
+        "reasoning": "The Scottish curse strikes again. Haiti score from a set piece, Scotland equalize but cannot find a winner, and the pattern of World Cup heartbreak continues. It would be Scotland's most devastating result and Haiti's greatest."
+      },
+      {
+        "scenario": "Scotland 3-1 Haiti",
+        "probability": 12,
+        "reasoning": "Scotland put the pressure aside and play with freedom. McTominay scores twice, and Scotland produce a convincing victory that finally silences the doubters — though Haiti's consolation goal provides their fans with a moment to cherish."
+      }
+    ]
+  },
+
+  "closingLine": "Scotland have eight World Cup campaigns' worth of heartbreak stored in their collective memory. Haiti have 52 years of waiting. When they meet, both will play not just for three points, but for the chance to write a new story — because the old ones have caused too much pain."
+}

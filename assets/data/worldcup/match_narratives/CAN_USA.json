@@ -1,0 +1,80 @@
+{
+  "matchKey": "CAN_USA",
+  "team1Code": "CAN",
+  "team2Code": "USA",
+  "team1Name": "Canada",
+  "team2Name": "United States",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The North American Derby Arrives at the World Cup for the First Time",
+  "subheadline": "Co-hosts collide in a rivalry 141 years in the making as Pulisic's America meets Davies' Canada on football's greatest stage",
+
+  "openingNarrative": "The longest undefended border in the world has produced one of football's newest and most intense rivalries. The United States and Canada have played 74 times since their first meeting in 1885, and the Americans have won 41 of those matches. But the recent trajectory tells a very different story. Canada's 2-0 victory in World Cup qualifying in Hamilton in 2022 was not an upset -- it was a statement. The emergence of Alphonso Davies, Jonathan David, and a generation of Canadian talent raised in European academies has transformed this fixture from an American procession into a genuine rivalry.\n\nNow, for the first time in history, these neighbors meet at a World Cup. Both nations are co-hosting, both squads feature European-based stars in their prime years, and both fan bases carry the conviction that this is their moment. The USMNT under Mauricio Pochettino have the tactical sophistication and squad depth that comes from having Christian Pulisic, Weston McKennie, and Tyler Adams competing at Europe's highest level. Canada under Jesse Marsch have the raw pace, pressing intensity, and individual brilliance of Davies that can overwhelm any opponent on their day.\n\nThis is more than a football match. This is a cultural event, a celebration of North American football's extraordinary growth, and a contest that will define which co-host nation can claim continental bragging rights on the world stage. The border towns from Vancouver to Buffalo will be watching. The entire continent will be holding its breath.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Pochettino's USA deploy a 4-3-3 that balances pressing intensity with positional discipline. Pulisic operates as the primary creative threat from the right wing, cutting inside onto his left foot with the same movements that torment Serie A defenses weekly. McKennie provides box-to-box dynamism, and the defensive structure -- anchored by Adams' ball-winning ability -- gives the USA a platform to compete against any opponent.\n\nMarsch's Canada mirror the formation but invert the threat. Where the USA's danger comes from Pulisic on the right, Canada's comes from Davies on the left -- a marauding wing-back whose pace turns defensive positions into attacking ones in the blink of an eye. David's movement in behind complements Davies' width, and the midfield trio matches the American energy step for step.\n\nThe tactical battle comes down to wide areas. Can the USA's right-back contain Davies? Can Canada's right-back deal with Pulisic? The team that wins their wide matchup wins the match. This is a derby that will be decided in the full-back corridors, and both coaches know it.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Alphonso Davies vs USA's right-back -- the defining battle of the North American derby"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "USA (ELO: 1690) vs Canada (ELO: 1615) -- a 75-point gap that favors the Americans. The USA's ELO reflects their deeper squad, stronger recent results, and higher-ranked European club representation. But Canada's home advantage narrows the effective gap to approximately 25-50 points.",
+    "formAnalysis": "Both teams qualified automatically as co-hosts, meaning neither has competitive qualifying data to analyze. Both have relied on friendlies and international windows to build cohesion. The USA's squad features more players at Champions League-level clubs, providing a marginal quality advantage in depth if not in starting XI talent.",
+    "squadValueComparison": "USA ($469M) vs Canada ($271M). The Americans' nearly 2:1 advantage reflects their deeper squad and broader European representation. Pulisic ($68.8M) leads the USA, while Davies ($87.5M) is individually more valuable. The gap is real but concentrated in depth positions rather than starting quality.",
+    "injuryImpact": "The USA can absorb injuries through superior depth. Canada are more reliant on their star players -- Davies and David -- and any absence fundamentally alters their approach.",
+    "bettingPerspective": "The USA at +8000 and Canada at +25000 for the outright tournament. The individual match markets will be tight, with the USA slight favorites. This is a derby where form goes out the window and heart decides.",
+    "historicalPattern": "In 74 meetings: USA 41 wins, Canada 13 wins, 20 draws. Goals: USA 117, Canada 58. But the recent trend is Canada's -- their 2-0 qualifying win in 2022 was emphatic and transformative. This will be their first World Cup meeting. The rivalry has never had stakes this high."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "narrative": "Davies is the player who made Canadians believe that football could be their sport. His journey from a refugee camp to Real Madrid is the most inspiring story in North American football, and his ability to change games with a single surging run makes him the most dangerous player on either side. In a derby match defined by emotion and energy, Davies' pace and willingness to attack from left-back will stretch the USA's defense to its breaking point. This is the match that Davies has been dreaming about since he first kicked a ball in Edmonton.",
+      "statline": "Canada's $87.5M talisman; Real Madrid regular; the face of Canadian football"
+    },
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "narrative": "Captain America enters the North American derby as the USA's most reliable match-winner. Pulisic's ability to cut inside from the right wing, his eye for goal, and his big-game mentality make him the player Canada must stop. His Serie A season at AC Milan has added consistency to his game -- he scores regularly now, not just in flashes -- and his determination to lead the USA to their best-ever World Cup performance drives every decision on the pitch.",
+      "statline": "USA's most valuable player at $68.8M; AC Milan's key attacking contributor"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "narrative": "While Davies provides the spectacle, David provides the goals. His clinical finishing, intelligent movement, and ability to score in the biggest moments make him the ideal derby striker -- composed when the emotions are running highest, precise when the pressure is greatest. Against the USA's defense, David's runs in behind will be the primary route to scoring.",
+      "statline": "One of Ligue 1's top scorers; Canada's primary goal threat"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "narrative": "Juventus' box-to-box midfielder brings the energy, physicality, and winning mentality that derby matches demand. McKennie's ability to arrive in the box late and score from midfield gives the USA a threat that does not appear on the team sheet. His aerial ability and aggressive pressing make him a crucial component in the USA's effort to control the midfield battle that will determine which co-host comes out on top.",
+      "statline": "Juventus regular; USA's engine in midfield; key contributor of goals and assists"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Canada 2-1 United States",
+    "confidence": 42,
+    "narrative": "Derby matches resist prediction, and this one more than most. The quality gap between these two sides is narrower than it has ever been, and the occasion -- a World Cup, both teams co-hosting, the first-ever meeting at the tournament -- will produce an atmosphere of extraordinary intensity.\n\nCanada's advantage is Davies. No player on the American roster can match his combination of pace, power, and attacking intent from deep positions. When Davies gets a full head of steam, the USA's right-back faces an impossible choice: contain him and leave space inside, or commit numbers wide and let David run free through the middle.\n\nThe USA's advantage is depth and experience. Pochettino's squad has more players competing at the Champions League level, and their collective tactical intelligence -- Pulisic's movement, McKennie's energy, Adams' ball-winning -- gives them a resilience that Canada sometimes lack.\n\nThe prediction favors Canada, narrowly, because home advantage and Davies' brilliance are the kind of factors that decide derby matches. But this could go either way, and anyone who tells you they know the result is lying.",
+    "alternativeScenarios": [
+      {
+        "scenario": "United States 2-1 Canada",
+        "probability": 28,
+        "reasoning": "Pulisic produces a masterclass, scoring one and creating another. The USA's superior squad depth tells in the final 20 minutes as Pochettino's substitutions overpower a tiring Canadian side."
+      },
+      {
+        "scenario": "Canada 1-1 United States",
+        "probability": 22,
+        "reasoning": "The intensity of the derby produces a tight, physical match where neither side can establish control. A draw that satisfies neither co-host but maintains the rivalry's new equilibrium."
+      }
+    ]
+  },
+
+  "closingLine": "One hundred and forty-one years after they first played, Canada and the United States meet at a World Cup. The longest undefended border in the world is about to produce the shortest distance between glory and heartbreak."
+}

@@ -1,0 +1,80 @@
+{
+  "matchKey": "BRA_HAI",
+  "team1Code": "BRA",
+  "team2Code": "HAI",
+  "team1Name": "Brazil",
+  "team2Name": "Haiti",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Beautiful Game Meets Football's Greatest Cinderella Story",
+  "subheadline": "Five-time champions Brazil face a Haitian side returning to the World Cup after 52 years, carrying the spirit of Emmanuel Sanon's legendary 1974 goal",
+
+  "openingNarrative": "In 1974, in the sweltering heat of Munich, a Haitian forward named Emmanuel Sanon did something that no one else in international football had managed for 1,142 minutes. He beat Dino Zoff. The legendary Italian goalkeeper's record run without conceding was considered untouchable until Sanon, representing a tiny Caribbean nation at its first and only World Cup, drove a shot past him with the audacity of a man who did not know he was supposed to be outclassed. It remains one of the most iconic moments in World Cup history, and it is the ghost that walks alongside Haiti as they return to the tournament after 52 years of absence.\n\nBrazil represent everything that Haiti are not. Five World Cup titles, a squad valued at $1.39 billion, and a roster featuring Vinicius Jr., Rodrygo, and Endrick -- Real Madrid's terrifying attacking triumvirate. The Selecao are desperate to end a title drought that stretches back to 2002, their longest ever, and this generation carries the weight of a nation that considers anything less than glory a failure.\n\nAnd yet, there is something profound about this fixture. In 2004, Brazil visited Port-au-Prince for a UN-backed 'Match for Peace,' with Ronaldinho scoring twice in a 6-0 victory that was about so much more than football. Brazil's relationship with Haiti transcends competition -- it is rooted in solidarity, shared African heritage, and the universal language of the beautiful game. When these two sides meet at the 2026 World Cup, the scoreline will tell only a fraction of the story.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Brazil's 4-2-3-1 under Carlo Ancelotti is a system designed to dominate from the first whistle. Vinicius Jr. on the left wing is the primary attacking threat, cutting inside to shoot or driving to the byline to cross. Rodrygo's versatility allows him to operate across the front three, while Bruno Guimaraes and Lucas Paqueta provide the midfield control that allows Brazil's full-backs to push high and create numerical superiority in wide areas.\n\nHaiti will set up in the deepest defensive shape at the entire tournament. A 5-4-1 or even 6-3-1, with every player behind the ball, is the only realistic approach against this quality of opposition. Frantzdy Pierrot will be the lone outlet, expected to hold the ball when Haiti win possession and allow the rest of the team a brief respite from defensive duties. Haiti's game plan is simple: survive as long as possible, compete at set pieces, and hope for a counter-attacking moment that echoes Sanon's strike against Zoff.\n\nThe tactical reality is stark. This is not a match between two systems -- it is a match between one team that will have the ball and one team that will try to deny space. Brazil's challenge is not formation; it is patience.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "5-4-1",
+    "keyMatchup": "Vinicius Jr. against Haiti's right-sided defense -- the world's most dangerous dribbler against the tournament's most overmatched defenders"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Brazil (ELO: 1760) vs Haiti (ELO: 1350) -- a 410-point gap, the largest at the entire tournament. This translates to a roughly 92% win probability for Brazil. The ELO gap alone tells you everything about the magnitude of the task facing Haiti.",
+    "formAnalysis": "Brazil qualified 5th in CONMEBOL with 8 wins, 4 draws, and 6 losses from 18 matches, scoring 24 and conceding 17. It was an uncharacteristically poor qualifying campaign that raised questions about this squad. Haiti qualified through CONCACAF's expanded pathway and the intercontinental playoff, winning 2 of 6 qualifying matches with 6 goals scored and 7 conceded. Frantzdy Pierrot led with 2 goals.",
+    "squadValueComparison": "Brazil ($1.39B) vs Haiti ($8M) -- a ratio of over 170:1. This is the single largest squad value disparity at the 2026 World Cup. Vinicius Jr.'s market value ($225M) alone is 28 times Haiti's entire squad value. These numbers are not just statistics; they are a reflection of football's economic reality.",
+    "injuryImpact": "Brazil could field their entire reserve team and still be overwhelming favorites. Haiti's squad is so thin that any injury to a starter fundamentally changes their tournament. Pierrot's fitness is crucial -- without him, Haiti lose their only genuine hold-up option.",
+    "bettingPerspective": "Brazil at +800 for the outright tournament are among the favorites. Haiti at +100000 are the longest odds in the field. This individual match will see Brazil as the heaviest favorites of any fixture in the group stage.",
+    "historicalPattern": "In 2 previous meetings, Brazil have scored 13 goals and Haiti have scored 1. The 2016 Copa America Centenario match (7-1) saw Philippe Coutinho score a hat-trick. The 2004 friendly in Port-au-Prince (6-0) featured Ronaldinho at his peak. Haiti have never beaten Brazil."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "narrative": "The Ballon d'Or winner enters the 2026 World Cup as the standard-bearer for Brazilian football's new generation. His evolution from an electrifying but inconsistent teenager at Real Madrid to the most complete attacker on the planet has been one of football's great coming-of-age stories. His dribbling, finishing, and big-game mentality make him the obvious heir to the Brazilian crown that Neymar never quite claimed at a World Cup. Against Haiti, Vinicius will be expected to put on a show -- and he rarely disappoints when the stage is this grand.",
+      "statline": "2024 Ballon d'Or winner; Brazil's most valuable player at $225M"
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "narrative": "Haiti's leading striker carries the hopes of an entire nation into this match. The journeyman forward, who has plied his trade across European lower divisions and Turkish football, represents the reality of Haitian football: talented players fighting for recognition in a world that does not always look their way. Pierrot's 2 qualifying goals were scored with the hunger of a man who knows that World Cup moments are precious and few. Against Brazil's defense, he will have perhaps one or two chances. One is all Sanon needed in 1974.",
+      "statline": "2 goals in qualifying; Haiti's leading scorer and primary goal threat"
+    },
+    {
+      "name": "Endrick",
+      "teamCode": "BRA",
+      "narrative": "The teenage Real Madrid sensation could make his World Cup debut in this match, and the symbolism would be extraordinary -- a 19-year-old carrying Brazil's future against a nation that last appeared at a World Cup before his parents were born. Endrick's explosive finishing and fearless approach make him the perfect impact substitute if Ancelotti chooses to manage minutes, and his introduction would give the match a coming-of-age narrative within the larger fairy tale.",
+      "statline": "Brazil's youngest World Cup squad member; youngest Brazilian to score in La Liga"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "narrative": "The experienced MLS winger is Haiti's most tactically aware player, capable of making intelligent runs and providing the kind of service that Pierrot needs. Etienne's American upbringing and MLS career have given him the football education that most Haitian players lack -- exposure to organized tactical systems, professional training environments, and competitive intensity. His ability to transition from defense to attack quickly is Haiti's best counter-attacking weapon.",
+      "statline": "Key figure in Haiti's qualification; experienced MLS campaign winger"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Brazil 4-0 Haiti",
+    "confidence": 85,
+    "narrative": "There is no realistic scenario in which Haiti threaten Brazil. The quality gap is too vast, the squad depth too imbalanced, and Brazil's motivation to make a statement in the group stage too powerful. Vinicius Jr. will score, Rodrygo will create, and Ancelotti's side will cruise to victory.\n\nBut scorelines do not tell the whole story. Haiti will compete with a pride that comes from representing a nation that has endured more than most countries on earth. Their players will run until they cannot run anymore, they will tackle with purpose, and they will leave the pitch knowing they honored the memory of Sanon and the 1974 pioneers.\n\nIf Haiti can keep the score respectable -- a 2-0 at halftime, a spirited second half -- they will have achieved their goal. And if, in the 87th minute, a Haitian forward finds himself one-on-one with Brazil's goalkeeper, the entire neutral world will be screaming for him to score. That is the magic of the World Cup.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Brazil 2-0 Haiti",
+        "probability": 15,
+        "reasoning": "Haiti produce the defensive performance of a lifetime. Organized, disciplined, and inspired, they frustrate Brazil for long stretches before two second-half goals break the deadlock. The scoreline earns Haiti global admiration."
+      },
+      {
+        "scenario": "Brazil 6-1 Haiti",
+        "probability": 10,
+        "reasoning": "Brazil find their rhythm early and the quality gap is brutally exposed. But Haiti score a consolation -- a goal that sends their fans into raptures and echoes across social media as one of the tournament's most emotional moments."
+      }
+    ]
+  },
+
+  "closingLine": "In 1974, Emmanuel Sanon proved that the World Cup belongs to everyone, not just the powerful. Fifty-two years later, Haiti return to remind us that the beautiful game's most beautiful moments come from its most unexpected places."
+}

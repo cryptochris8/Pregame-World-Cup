@@ -1,0 +1,80 @@
+{
+  "matchKey": "BRA_NGA",
+  "team1Code": "BRA",
+  "team2Code": "NGA",
+  "team1Name": "Brazil",
+  "team2Name": "Nigeria",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Beautiful Game's Most Electrifying Rivalry Comes to the World Cup",
+  "subheadline": "Thirty years after Nigeria's unforgettable 4-3 Olympic upset, these two nations of natural footballing genius collide in Group C",
+
+  "openingNarrative": "On July 31, 1996, in Athens, Georgia, Nigeria produced one of the most extraordinary results in the history of football. Trailing Brazil 3-1 in the Olympic semi-final, the Super Eagles launched a comeback so improbable, so thrillingly chaotic, that it has been replayed millions of times in the decades since. Kanu's equalizer in stoppage time, followed by his golden goal winner in extra time, sent Brazil's superstar-studded squad home and propelled Nigeria to Olympic gold. It was the moment that announced West African football as a force of nature.\n\nThree decades later, these two nations meet at a World Cup, and the stakes could not be higher. Brazil, five-time champions but trophy-less since 2002, desperately need a statement performance in Group C. Vinicius Jr. leads a generational talent pool that should dominate any opposition but has underperformed when it matters most. Their CONMEBOL qualifying campaign -- 6 losses in 18 matches -- was the most turbulent in Brazilian football's modern history.\n\nNigeria arrive as Africa's most naturally gifted footballing nation, with a squad that blends European club pedigree with raw West African talent. Victor Osimhen is one of the deadliest strikers in world football. Ademola Lookman scored a Europa League final hat-trick. This is not a team of plucky underdogs -- this is a team of proven performers who believe they can beat anyone. In 11 previous meetings, Brazil have won 7, but the memory of 1996 ensures that Nigeria never, ever back down from this fixture.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This match will be played at a tempo that makes most group stage encounters look pedestrian. Both teams press high, attack with width, and transition with breathtaking speed. The difference is in structure: Brazil's 4-2-3-1 under Ancelotti is built on positional discipline and creative freedom in the final third. Vinicius Jr. and Rodrygo are given license to express themselves, but the double pivot of Bruno Guimaraes and Paqueta provides the defensive balance that prevents counter-attacks.\n\nNigeria's 4-3-3 is more direct and more physical. Osimhen leads the line with a combination of pace, power, and movement that no single center-back can contain. Lookman and the supporting attackers provide creativity and finishing from wide positions. Nigeria's midfield is combative and technically capable, built to compete in the physical battles that the Super Eagles have historically dominated against South American opposition.\n\nThe key tactical question is defensive transitions. When Brazil lose the ball, can they recover quickly enough to prevent Osimhen and Lookman from breaking at full speed? And when Nigeria turn it over, can their midfield handle Vinicius Jr. and Rodrygo running at them in the spaces that open up? This match could produce the most goals of any group stage fixture.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Vinicius Jr.'s dribbling vs Nigeria's aggressive defending -- a collision of styles that will produce fireworks"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Brazil (ELO: 1760) vs Nigeria (ELO not listed in top tier but historically around 1500-1600) -- a significant gap on paper, but one that vastly understates Nigeria's match-day quality. In knockout matches and high-stakes fixtures, Nigeria consistently outperform their rating.",
+    "formAnalysis": "Brazil's CONMEBOL qualifying was turbulent: 8 wins, 4 draws, 6 losses. Raphinha led scoring with just 3 goals. Nigeria's qualifying path included strong performances across CAF rounds, with Osimhen and Lookman providing the attacking firepower that makes the Super Eagles one of Africa's most feared sides.",
+    "squadValueComparison": "Brazil ($1.39B) significantly outvalues Nigeria's squad, but the Super Eagles boast genuine world-class talent. Osimhen, Lookman (Europa League final hat-trick hero), and Anguissa at Napoli bring top-tier European experience to a squad that is far from outclassed.",
+    "injuryImpact": "Both teams have depth, but the Vinicius Jr.-Osimhen battle is the match within the match. If either star is unfit, the tactical picture shifts dramatically. Nigeria's ability to replace Osimhen is particularly limited -- his combination of pace, aerial ability, and movement is unique.",
+    "bettingPerspective": "Brazil are favorites, but this match screams 'over 2.5 goals.' Both sides attack with intent, both press high, and both have defensive vulnerabilities in transition. The entertainment value is virtually guaranteed.",
+    "historicalPattern": "In 11 meetings, Brazil have won 7, drawn 2, lost 2. Goals: Brazil 19, Nigeria 11. The most recent meeting (2023 friendly) ended 1-1 in Portugal. Nigeria's Olympic triumph in 1996 (4-3) remains the most famous result between these nations. They have never met at a World Cup."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "narrative": "The Ballon d'Or winner against one of Africa's most physical and aggressive defenses -- this is the kind of matchup that produces either a masterclass or a war of attrition. Vinicius' dribbling will be tested by the pace and strength of Nigerian defenders who will not give him the space or respect that European teams sometimes do. His ability to produce decisive moments when fouled, doubled-up on, and physically targeted will determine whether Brazil cruise or struggle.",
+      "statline": "2024 Ballon d'Or winner; Brazil's $225M talisman and most dangerous attacker"
+    },
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "narrative": "Osimhen is the most complete striker in African football and one of the top five center-forwards at the entire tournament. His pace frightens center-backs who have to decide whether to play high or drop deep -- either choice has consequences. His aerial ability converts crosses into goals with frightening efficiency. And his work rate in pressing from the front gives Nigeria a defensive weapon that most attackers cannot provide. Against Brazil's defensive line, Osimhen's runs in behind could produce the match's defining moments.",
+      "statline": "African Footballer of the Year; among the world's most sought-after strikers; lethal finishing"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "narrative": "Brazil's versatile Real Madrid forward is the player who makes the Selecao's attack unpredictable. His ability to drift across the front line, pick up positions between the lines, and produce moments of Champions League-quality brilliance in decisive moments makes him the perfect complement to Vinicius Jr.'s directness. Against Nigeria's aggressive defense, Rodrygo's intelligence in finding space could unlock the game.",
+      "statline": "12 goals in 28 Brazil appearances; Champions League match-winner"
+    },
+    {
+      "name": "Ademola Lookman",
+      "teamCode": "NGA",
+      "narrative": "The Europa League final hat-trick that carried Atalanta to glory announced Lookman as a player of genuine world class. His ability to score goals in the biggest moments -- three in a European final is a performance that only a handful of players in history can claim -- makes him one of the most dangerous attackers at the tournament. His movement, finishing, and ability to produce something from nothing give Nigeria a match-winner beyond Osimhen who can punish any defensive lapse.",
+      "statline": "Hat-trick in 2024 Europa League final; Nigeria's key creative attacking threat"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Brazil 2-1 Nigeria",
+    "confidence": 55,
+    "narrative": "This will be one of the most entertaining matches of the group stage, and it will not be for the faint of heart. Both teams attack with intent, both press with intensity, and both have match-winners who can produce moments of genius in the blink of an eye.\n\nBrazil's superior squad depth and Ancelotti's tactical adjustments should prove decisive in the final 20 minutes, when Nigeria's intense pressing begins to take a physical toll. But the Super Eagles will score -- Osimhen is too good and too determined to be shut out -- and the match will be in the balance until the final whistle.\n\nExpect end-to-end football, moments of individual brilliance from both sides, and a result that is decided by the finest of margins. This is the match every neutral should watch.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Nigeria 2-2 Brazil",
+        "probability": 20,
+        "reasoning": "Neither defense can contain the other's attackers. Goals fly in from both sides in a match that echoes the 1996 Olympic classic. The draw leaves both teams' group prospects uncertain and the neutral breathless."
+      },
+      {
+        "scenario": "Nigeria 2-1 Brazil",
+        "probability": 15,
+        "reasoning": "Osimhen and Lookman produce a first-half blitz that stuns Brazil. Nigeria's defensive resilience holds under second-half pressure, and the Super Eagles record a famous victory that announces Africa's arrival at the 2026 tournament."
+      }
+    ]
+  },
+
+  "closingLine": "In 1996, Nigeria showed the world that they could match Brazil's genius and surpass their heart. Thirty years later, Osimhen and Vinicius Jr. write the next chapter of a rivalry that celebrates everything football should be: fast, fearless, and impossibly exciting."
+}

@@ -1,0 +1,80 @@
+{
+  "matchKey": "ALG_ARG",
+  "team1Code": "ALG",
+  "team2Code": "ARG",
+  "team1Name": "Algeria",
+  "team2Name": "Argentina",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Desert Foxes Face the Defending Champions in Group J's Headliner",
+  "subheadline": "Algeria's proud World Cup tradition meets Messi's Argentina in a group dripping with historical narrative",
+
+  "openingNarrative": "The 2026 World Cup draw could not have scripted Group J more dramatically if it had tried. Algeria, Argentina, Austria — the three nations whose fates were entangled in the most infamous episode in World Cup history, the 'Disgrace of Gijon' in 1982 — reunited on the same stage 44 years later. It is the kind of coincidence that makes you wonder whether football has a sense of poetic justice.\n\nIn 1982, Algeria stunned West Germany 2-1 in what remains one of the greatest World Cup upsets ever. But that triumph was cruelly negated when West Germany and Austria played out a mutually beneficial 1-0 result that eliminated Algeria on goal difference. The scandal led directly to the rule that final group-stage matches must kick off simultaneously — a regulation that will govern this very group.\n\nNow Algeria face the defending world champions. Argentina arrive with the golden aura of Lusail still gleaming — that unforgettable 2022 final against France, the penalty shootout that crowned Messi and completed football's greatest individual redemption arc. Messi, at 38, is playing in what is almost certainly his final World Cup. He scored 8 goals in qualifying, including a hat-trick in a 6-0 demolition of Bolivia, and led Argentina to 38 points atop the CONMEBOL standings. The defending champions have 10 clean sheets in 18 qualifiers, a record that speaks to the tactical discipline Scaloni has instilled.\n\nAlgeria's own qualifying campaign was impressive — 7 wins, 1 draw, 2 losses, topping CAF Group E with 22 points. Baghdad Bounedjah's 5 goals led the attack, while Ismael Bennacer's midfield mastery provided the platform. Under Vladimir Petkovic, they blend European structure with North African flair.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Argentina's 4-3-3 under Scaloni has become one of the most sophisticated systems in world football. The build-up transitions to a 3-2-5 shape, with fullbacks pushing into the attacking line and the midfield trio of Enzo Fernandez, Mac Allister, and a holding midfielder controlling the tempo. Messi drifts into half-spaces, pulling defenders into impossible decisions, while Julian Alvarez's intelligent movement creates the space that Messi exploits.\n\nAlgeria will need to be pragmatic. A compact 4-4-2 or 5-4-1, sitting deep and denying the central spaces where Messi operates, is the most logical approach. Bennacer's ball-winning ability from his AC Milan education will be critical in the midfield contest. Algeria's threat will come from transitions — using the pace of their wide players to exploit the space behind Argentina's advanced fullbacks.\n\nThe key tactical question is whether Algeria can maintain their defensive shape for 90 minutes. Argentina's relentless probing, their ability to switch the point of attack, and the sheer quality of their final ball means that even one moment of disorganization can be punished. Algeria will need the game of their lives.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Ismael Bennacer vs Enzo Fernandez — AC Milan's playmaker against Chelsea's World Cup winner in a battle for midfield supremacy"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Algeria (ELO: 1580, rank 45) — a massive 293-point gap that translates to roughly a 70% win probability for Argentina. This is one of the largest ELO differentials in the group stage.",
+    "formAnalysis": "Argentina's qualifying campaign was imperious: 12 wins, 2 draws, 4 losses, 38 points, +21 goal difference in 18 CONMEBOL matches. Messi scored 8 goals, including a hat-trick vs Bolivia. They recorded 10 clean sheets. Algeria topped CAF Group E with 22 points — 7 wins, 1 draw, 2 losses, 19 goals scored and 8 conceded. Bounedjah led with 5 goals.",
+    "squadValueComparison": "Argentina's squad ($951M) vs Algeria's ($150M) — a gap of $800M that reflects the concentration of Argentina's talent at Europe's elite clubs. Julian Alvarez alone ($113M) is nearly worth Algeria's entire squad.",
+    "injuryImpact": "Messi's fitness at 38 is the elephant in the room. Argentina's squad depth, however, means they can still field a world-class XI even with rotation. Algeria need Bennacer and Mahrez fit and firing.",
+    "bettingPerspective": "Argentina's outright tournament odds of +800 reflect their status as defending champions and genuine contenders. Algeria's qualification is admirable, but the betting markets give them little chance in this fixture.",
+    "historicalPattern": "Algeria have never beaten Argentina but have a proud World Cup history of upsetting favorites — their 1982 victory over West Germany changed the rules of the tournament. The defending champion's curse (4 of the last 5 holders eliminated in the group stage) adds intrigue."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Lionel Messi",
+      "teamCode": "ARG",
+      "narrative": "Every step at this World Cup echoes with finality. At 38, Messi has made concessions to time — he covers less ground, presses less often — but his mind remains football's most dangerous weapon. His 8 qualifying goals, including that unforgettable hat-trick against Bolivia, proved he can still produce genius on demand. Against Algeria, in a group laden with historical narrative, Messi will want to stamp his authority early. This is his farewell tour, and he intends to make it unforgettable.",
+      "statline": "8 goals in CONMEBOL qualifying, hat-trick vs Bolivia in 6-0 win"
+    },
+    {
+      "name": "Ismael Bennacer",
+      "teamCode": "ALG",
+      "narrative": "AC Milan's midfield anchor is the player upon whom Algeria's World Cup campaign rises or falls. Bennacer's ability to receive under pressure, dictate tempo, and break up play makes him the most important player on Algeria's roster. Against Argentina's midfield three, he will need to produce the performance of his life — covering every blade of grass, winning every second ball, and using his distribution to relieve pressure when Algeria win possession.",
+      "statline": "AC Milan's midfield lynchpin and Algeria's most valuable player"
+    },
+    {
+      "name": "Julian Alvarez",
+      "teamCode": "ARG",
+      "narrative": "The quiet assassin of Argentine football does the running so Messi does not have to. His three goals in the 2022 knockout rounds, including a brace against Croatia, established him as a big-game player of the highest order. Now at Atletico Madrid, Alvarez has added a physical edge to his game that makes him even more dangerous. Against Algeria's deep block, his movement will be critical in creating the space that Argentina need.",
+      "statline": "5 World Cup goals across 2022 and qualifying campaigns"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "narrative": "Algeria's most decorated player brings the kind of individual quality that can change matches in an instant. Mahrez's dribbling, his ability to beat defenders, and his eye for a pass make him Algeria's most dangerous creative outlet. If Algeria are to produce an upset, it will likely come through a moment of Mahrez brilliance — a dribble that unlocks the defense, a pass that finds Bounedjah in space. The former Manchester City man knows what winning at the highest level requires.",
+      "statline": "Algeria's most valuable player ($20M) and creative catalyst"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Argentina 2-0 Algeria",
+    "confidence": 72,
+    "narrative": "Argentina's defending champions should have too much quality for Algeria, but this will not be the stroll that the ELO gap suggests. Algeria's proud World Cup tradition, their organized defensive approach under Petkovic, and the emotional fuel of the Gijon narrative will make them stubborn opponents.\n\nExpect a cagey first half, with Algeria sitting deep and frustrating Argentina's build-up. But Argentina's patience and quality will eventually tell. Messi will find the moment, Alvarez will make the run, and the defending champions will open their campaign with a professional, if not spectacular, victory.\n\nThe scoreline will read Argentina. But the spirit will read Algeria. And in Group J, where the ghosts of 1982 lurk in every corner, that spirit may yet prove decisive when the group reaches its climax.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Argentina 1-0 Algeria",
+        "probability": 25,
+        "reasoning": "Algeria's defensive discipline holds for most of the match, and Argentina need a late goal to break through. A Messi free-kick or an Alvarez header from a corner finally cracks the resistance."
+      },
+      {
+        "scenario": "Algeria 1-1 Argentina",
+        "probability": 12,
+        "reasoning": "Algeria channel the spirit of 1982. An early goal on the counter through Mahrez or Bounedjah sends shockwaves through the stadium. Argentina equalize but cannot find a winner. The defending champion's curse inches closer."
+      }
+    ]
+  },
+
+  "closingLine": "Forty-four years after the Disgrace of Gijon, Algeria return to a World Cup group that contains Austria — and this time, they face the defending champions. History does not repeat itself, but at the World Cup, it rhymes."
+}

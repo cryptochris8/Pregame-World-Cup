@@ -1,0 +1,80 @@
+{
+  "matchKey": "BOL_MEX",
+  "team1Code": "BOL",
+  "team2Code": "MEX",
+  "team1Name": "Bolivia",
+  "team2Name": "Mexico",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Curtain Rises at the Azteca: Mexico Open Their World Cup Against Bolivia",
+  "subheadline": "The most iconic stadium in World Cup history hosts the tournament's opening match as co-hosts Mexico face a Bolivian side returning after 32 years",
+
+  "openingNarrative": "There are opening matches, and then there is this. On June 11, 2026, the Estadio Azteca -- the only stadium in the world to have hosted two World Cup finals -- will once again be the center of the footballing universe. Over 80,000 Mexican fans will transform the ancient coliseum into a cauldron of noise, passion, and expectation as El Tri take the pitch to open the 2026 World Cup against Bolivia. The weight of an entire nation's dreams will press down on every Mexican player's shoulders.\n\nMexico's World Cup history is a story of tantalizing proximity to greatness without ever quite reaching it. Seventeen World Cup appearances, two quarter-final finishes (both on home soil, in 1970 and 1986), and a 'quinto partido' curse -- the inability to advance past the Round of 16 -- that has become a national obsession. Co-hosting the 2026 tournament represents what may be the best chance in Mexican football history to finally break through that barrier. It begins here, against Bolivia, in front of their people.\n\nBolivia's story is entirely different but equally compelling. Their return to the World Cup for the first time since 1994 -- the last time the tournament was held in the United States -- is a moment of genuine joy for South American football's perennial underdog. But the 1994 experience was harsh: three matches, three defeats, zero goals. Bolivia's football identity is built on the 3,637-meter altitude of La Paz, and at 2,240 meters, Mexico City's elevation is the closest they will get to feeling at home. It is a small comfort, but it is something.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Javier Aguirre's Mexico will play an expansive 4-3-3 designed to delight the Azteca faithful. Width is the weapon -- wingers stretching Bolivia's defense to create space for the midfield trio to exploit. Edson Alvarez anchors the midfield with the authority of a man who has marshalled the center of the park in the Premier League, while Santiago Gimenez leads the line with the movement and finishing that have made him one of Europe's most coveted strikers at Feyenoord.\n\nBolivia will adopt the most defensive posture imaginable. A 5-4-1 or even a 6-3-1 shape is likely, with every outfield player tasked with defensive responsibility first. Marcelo Martins will be isolated up front, expected to compete against Mexico's center-backs while the rest of the team forms a human wall. Bolivia's only hope lies in set pieces, long-range efforts, and the slim possibility that Mexico City's altitude (2,240m) provides enough of an advantage to slow Mexico's pressing intensity.\n\nThe tactical truth is unforgiving: this match will be an extended siege. Mexico will have 70%+ possession and create chance after chance. Bolivia's challenge is not to win -- it is to survive.",
+    "team1Formation": "5-4-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Mexico's attacking width vs Bolivia's deep defensive block -- siege warfare at the Azteca"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Mexico (ELO: 1675) vs Bolivia (ELO not listed in top tier) -- a substantial gap that makes Mexico overwhelming favorites. Mexico's rating reflects their consistent CONCACAF dominance and World Cup participation, while Bolivia's would place them among the tournament's weakest sides.",
+    "formAnalysis": "Mexico qualified automatically as co-hosts. Their preparation has relied on friendlies and tournament invitations. Bolivia's qualifying details are limited, but their historical sea-level World Cup record (0 goals in 3 matches at USA 1994) is a stark warning of the challenges ahead.",
+    "squadValueComparison": "Mexico's squad ($261M) vs Bolivia's (significantly lower). Edson Alvarez ($43.8M) and Santiago Gimenez at Feyenoord represent Mexico's growing European representation. Bolivia's squad is primarily based in South American domestic leagues, with limited exposure to top European competition.",
+    "injuryImpact": "Mexico's squad depth means they can absorb injuries without fundamentally changing their approach. Bolivia cannot afford to lose Martins, their primary goal threat and hold-up specialist.",
+    "bettingPerspective": "Mexico at +8000 for the outright tournament reflects their co-hosting advantage and a favorable Group A draw. This opening match is expected to be one of the most one-sided in the group stage, with Mexico priced as heavy favorites.",
+    "historicalPattern": "In 13 meetings, Mexico have won 10, drawn 2, and lost just once -- Bolivia's famous 1997 Copa America semi-final victory in Sucre at altitude. Total goals: Mexico 28, Bolivia 8. The most recent meeting (2026 friendly) ended 1-0 to Mexico. Bolivia have never beaten Mexico at sea level."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "narrative": "The midfield enforcer carries Mexico's tactical identity on his broad shoulders. Alvarez's ability to win the ball, distribute with precision, and control the tempo of matches has made him one of the Premier League's most respected midfielders. In the opening match at the Azteca, he will be asked to set the tone -- to show the world that this Mexican side means business. His leadership and composure will be crucial in channeling the crowd's energy into controlled attacking dominance rather than frenzied excitement.",
+      "statline": "Mexico's midfield anchor; Premier League regular; most valuable Mexican player at $43.8M"
+    },
+    {
+      "name": "Marcelo Martins",
+      "teamCode": "BOL",
+      "narrative": "The weight of Bolivian football rests on the shoulders of their all-time leading scorer, and Martins wears it with the dignity of a man who has spent his entire career defying expectations. Leading the line alone against Mexico at the Azteca requires a particular kind of courage -- the courage to fight for every ball knowing you are outnumbered, outgunned, and 4,000 miles from the altitude that levels the playing field. Martins will not score a hat-trick, but he will give everything.",
+      "statline": "Bolivia's all-time top scorer; veteran leader and primary goal threat"
+    },
+    {
+      "name": "Santiago Gimenez",
+      "teamCode": "MEX",
+      "narrative": "The Feyenoord striker represents the new face of Mexican football -- a player good enough to start for a Champions League club, with the clinical finishing that turns dominance into goals. Gimenez's movement in the box and composure in front of goal make him the perfect center-forward for a match where Mexico will create numerous chances. The opening goal of the World Cup could well bear his name.",
+      "statline": "Leading scorer at Feyenoord; Mexico's most clinical finisher in the current squad"
+    },
+    {
+      "name": "Carlos Lampe",
+      "teamCode": "BOL",
+      "narrative": "Bolivia's last line of defense will need to produce a heroic performance to keep the scoreline respectable. Lampe's shot-stopping ability has kept Bolivia in matches they had no business competing in, and at the Azteca, he will face a relentless bombardment. Every save will be a small victory for Bolivian football. A man-of-the-match performance from Lampe could transform a potential rout into a proud defeat.",
+      "statline": "Bolivia's first-choice goalkeeper; key saves in qualifying kept Bolivia's World Cup dream alive"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Mexico 3-0 Bolivia",
+    "confidence": 80,
+    "narrative": "The Azteca will roar, Mexico will attack, and Bolivia will try to hold on for as long as possible. The script for this match is written before a ball is kicked: Mexico dominate possession, create chances at will, and eventually break through Bolivia's defensive wall.\n\nGimenez will open the scoring, the stadium will erupt, and the floodgates will open. Mexico's attacking depth -- Hirving Lozano's pace, Alvarez's distribution, and the energy of playing the World Cup's opening match in front of their own people -- will prove too much for Bolivia's limited resources.\n\nBolivia's consolation is that Mexico City's altitude (2,240m) is the closest to La Paz they will play at in the entire tournament. It will not be enough to change the outcome, but it might prevent a humiliation. Expect a proud Bolivian performance that earns respect if not points.\n\nFor Mexico, this is merely the beginning. The real tournament starts in the next match.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Mexico 1-0 Bolivia",
+        "probability": 15,
+        "reasoning": "Bolivia's defensive heroics keep the scoreline tight. Lampe produces save after save, Mexico grow anxious with 0-0 at halftime, and a single late goal rescues what becomes a nervous opening match for the hosts."
+      },
+      {
+        "scenario": "Mexico 5-0 Bolivia",
+        "probability": 10,
+        "reasoning": "The Azteca atmosphere inspires Mexico to their best performance in years. Bolivia's defense cracks early and repeatedly, turning the opening match into a festival of Mexican attacking football."
+      }
+    ]
+  },
+
+  "closingLine": "The Azteca has hosted Pele's coronation, Maradona's Hand of God, and two World Cup finals. On June 11, 2026, it writes another chapter. Bolivia are invited, but Mexico are the authors."
+}

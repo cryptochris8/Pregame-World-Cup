@@ -1,0 +1,80 @@
+{
+  "matchKey": "CRC_POL",
+  "team1Code": "CRC",
+  "team2Code": "POL",
+  "team1Name": "Costa Rica",
+  "team2Name": "Poland",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Fortress Keeper Against the Goal Machine",
+  "subheadline": "Keylor Navas and Costa Rica's defensive resolve face the relentless striking power of Robert Lewandowski's Poland",
+
+  "openingNarrative": "There is a particular kind of World Cup magic that belongs to nations like Costa Rica — the magic of defiance, of smaller nations refusing to accept the script written for them. When the Ticos took the field in Brazil 2014, nobody gave them a chance. They beat Uruguay. They beat Italy. They reached the quarter-finals. And at the heart of that miracle stood Keylor Navas, his gloves seemingly magnetized to every shot that came his way.\n\nNow Costa Rica face a different kind of test. Poland arrive with Robert Lewandowski, one of the most prolific strikers in football history, a man who has scored over 600 career goals and whose hunger for the World Cup stage has only intensified with age. At 37, Lewandowski knows this is almost certainly his last dance. Behind him, Piotr Zielinski pulls the strings with a craftsman's touch, making Poland far more than a one-man show.\n\nThis is a collision between Costa Rica's defensive identity — compact, disciplined, built around the brilliance of Navas in goal — and Poland's attacking intent. Poland have won both previous meetings between these nations. But data has never been able to measure the size of Costa Rican hearts at a World Cup.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Costa Rica's approach will be familiar to anyone who watched their 2014 heroics. Expect a deep defensive block, likely a 5-4-1 that compresses space in front of Navas and forces opponents to shoot from distance or work intricate combinations through congested areas. Joel Campbell will be asked to hold the ball up front and provide an outlet when the pressure breaks.\n\nPoland will deploy a 4-3-3 that channels everything through Lewandowski. The key tactical question is whether Poland's midfield — led by Zielinski's vision and creativity — can find the pockets of space between Costa Rica's defensive lines. If they can, Lewandowski's movement in the box is nearly impossible to contain. If they cannot, they will face a wall of green shirts and the finest goalkeeper Central America has ever produced.\n\nWatch Costa Rica's set-piece organization. They are exceptionally well-drilled at defending corners and free kicks, which could neutralize one of Poland's key weapons.",
+    "team1Formation": "5-4-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Keylor Navas vs Robert Lewandowski — the immovable object against the unstoppable force"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Poland are the clear favorites on paper. Historical ELO trends place Poland significantly higher, reflecting their consistent presence in European football's upper tier. Both teams qualified through competitive playoff paths, earning their place through high-pressure knockout football.",
+    "formAnalysis": "Poland qualified through the UEFA playoff pathway, demonstrating resilience in knockout situations. Costa Rica's CONCACAF qualification showcased their trademark defensive resilience. Both teams understand what it means to earn their place at the biggest tournament in football.",
+    "squadValueComparison": "Poland's squad carries substantially more market value, driven by Lewandowski's global stature and the presence of multiple Bundesliga and Serie A regulars. Costa Rica's value is concentrated in Navas, though their collective defensive organization transcends individual price tags.",
+    "injuryImpact": "Keylor Navas's fitness is paramount for Costa Rica — without him, their entire tactical blueprint shifts. For Poland, Lewandowski's physical condition will determine their ceiling in this tournament.",
+    "bettingPerspective": "Poland are comfortable favorites. However, Costa Rica's 2014 run — where they were massive underdogs in every group game — should serve as a cautionary tale for anyone dismissing them outright.",
+    "historicalPattern": "Poland have won both previous meetings against Costa Rica. However, Costa Rica's World Cup record against European opposition includes memorable victories over Italy and Uruguay in 2014."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "narrative": "Three Champions League titles with Real Madrid. A quarter-final run that shocked the world. At this stage of his career, Navas plays for legacy and for a nation that views him as something between a sporting hero and a guardian angel. His shot-stopping ability remains elite, and his experience in the biggest matches on earth gives Costa Rica a foundation that money cannot buy.",
+      "statline": "3x Champions League winner, 100+ caps for Costa Rica"
+    },
+    {
+      "name": "Robert Lewandowski",
+      "teamCode": "POL",
+      "narrative": "There is a restlessness about Lewandowski at World Cups, a sense of unfinished business. Over 600 career goals, Bundesliga records that may never be broken, yet the World Cup has never quite surrendered to his brilliance. This tournament represents his final opportunity to add the one prize that has eluded him. Against Costa Rica's deep block, his predatory instincts inside the penalty area will be tested to the limit.",
+      "statline": "600+ career goals, Poland's all-time leading scorer"
+    },
+    {
+      "name": "Piotr Zielinski",
+      "teamCode": "POL",
+      "narrative": "The conductor of Poland's midfield orchestra. Zielinski's ability to find space between the lines and deliver defense-splitting passes makes him the key to unlocking Costa Rica's bunker. His vision and technical quality are world-class, and he carries the creative burden that allows Lewandowski to focus on what he does best — scoring goals.",
+      "statline": "75+ caps for Poland, consistent creator from midfield"
+    },
+    {
+      "name": "Joel Campbell",
+      "teamCode": "CRC",
+      "narrative": "Campbell's name is etched into Costa Rican football history from that 2014 World Cup, where his performances against the world's best announced a new Central American force. Now the experienced leader of the attack, his role has shifted from electric winger to intelligent target man, holding the ball under pressure and bringing teammates into play during precious counter-attacking moments.",
+      "statline": "Costa Rica's most experienced outfield player in World Cup football"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Poland 2-0 Costa Rica",
+    "confidence": 68,
+    "narrative": "Poland should have enough quality to break down Costa Rica's defense, but it will require patience and precision. Lewandowski is unlikely to be denied twice in 90 minutes against even the most organized back line. Expect Poland to dominate possession and territory, with Costa Rica dangerous on the occasional counter.\n\nThe first goal is everything. If Poland score early, the game opens up and could become uncomfortable for Costa Rica. If Navas keeps it level into the second half, Polish nerves could become a factor — and that is precisely the kind of scenario where Costa Rica thrive.\n\nUltimately, Poland's quality in the final third should tell, but this will not be the comfortable victory some expect.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Costa Rica 1-0 Poland",
+        "probability": 15,
+        "reasoning": "Navas produces a masterclass, Costa Rica score from a rare counter-attack or set piece, and Poland's frustration builds as Lewandowski is starved of service. The 2014 playbook works once more."
+      },
+      {
+        "scenario": "Poland 3-1 Costa Rica",
+        "probability": 20,
+        "reasoning": "Poland find their rhythm early, Lewandowski scores twice, and Costa Rica's aging legs cannot sustain the defensive intensity required for 90 minutes."
+      }
+    ]
+  },
+
+  "closingLine": "Costa Rica do not come to World Cups to participate — they come to compete. Poland have the firepower to win, but they would be wise to remember what happened the last time the world underestimated the Ticos."
+}

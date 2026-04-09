@@ -1,0 +1,80 @@
+{
+  "matchKey": "NOR_SEN",
+  "team1Code": "NOR",
+  "team2Code": "SEN",
+  "team1Name": "Norway",
+  "team2Name": "Senegal",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Haaland's World Cup Baptism Against Africa's Champions",
+  "subheadline": "Norway's 28-year wait for World Cup football ends with a collision against Senegal's battle-hardened Lions of Teranga",
+
+  "openingNarrative": "The last time Norway played at a World Cup, Erling Haaland was not yet born. France 1998 feels like ancient history now — a tournament of Ronaldo's mysterious seizure, Zidane's headed glory, and a young Norwegian side that beat Brazil 2-1 in the group stage before bowing out in the Round of 16. Twenty-eight years later, Norway return to football's grandest stage carrying the most devastating striker on the planet and a generation's worth of unfulfilled promise.\n\nHaaland's World Cup debut is one of the most anticipated moments of the entire tournament. The Manchester City colossus, who rewrote the Premier League record books with 36 goals in his debut season and has maintained that terrifying standard ever since, has never experienced the unique crucible of World Cup pressure. Can the man who scores goals like other people breathe replicate his club dominance on the international stage? Norway's entire tournament hinges on the answer.\n\nSenegal, though, are the worst possible opponents for a debut. The reigning AFCON champions have Kalidou Koulibaly at the heart of their defense — a man who has spent years stopping the world's best strikers in Serie A. Their sole previous meeting, a 2006 friendly in Dakar, saw Senegal win 2-1. The Lions of Teranga are not here to provide a gentle welcome.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Norway's 4-4-2 is an Haaland delivery system. Everything is designed to maximize his goal threat. Martin Odegaard, the Arsenal captain, orchestrates from midfield with the kind of creative vision that turns half-chances into tap-ins. The pressing is aggressive, designed to win the ball high and launch vertical attacks at speed. Alexander Sorloth's partnership with Haaland creates a twin striker threat that forces defenders into impossible decisions.\n\nSenegal's 4-3-3 is built on athleticism and defensive discipline. Koulibaly marshals the backline with the authority of a man who has faced Haaland's type before — though there is only one Haaland. The midfield trio will aim to control tempo and deny Odegaard the space to thread passes into dangerous areas. Mane, operating across the front line, provides the counter-attacking threat that can punish Norway if they overcommit.\n\nThe decisive tactical question is whether Koulibaly can contain Haaland one-on-one. If Senegal double up on the Norwegian striker, space opens for Odegaard and the runners. If they leave Koulibaly isolated, Haaland will punish them. It's an impossible equation with no comfortable answer.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Erling Haaland vs Kalidou Koulibaly — the tournament's most anticipated individual duel"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Norway (ELO: 1645, rank 26) vs Senegal (ELO: 1700, rank 15) — Senegal hold a 55-point Elo advantage, suggesting a 55% win probability for the Africans. But Elo ratings don't capture the Haaland factor, a variable that distorts every statistical model.",
+    "formAnalysis": "Norway's qualifying campaign was extraordinary: a perfect record with 37 goals in 8 matches, the most prolific qualifying run in European football history. Senegal qualified comfortably from Africa, carrying the confidence of their 2022 AFCON triumph and Round of 16 finish at the 2022 World Cup.",
+    "squadValueComparison": "Norway ($659M, led by Haaland at $225M) vs Senegal ($395M, led by Nicolas Jackson at $62.5M). Haaland alone accounts for more than half of Senegal's entire squad value, an absurd concentration of talent in one player.",
+    "injuryImpact": "Haaland's fitness is paramount to Norway's entire campaign. Any concerns about the Manchester City striker's physical condition would fundamentally alter the tactical picture. Senegal's Mane, at 34, must be managed carefully through the tournament.",
+    "bettingPerspective": "Norway are dark horses for the tournament at +2800, reflecting Haaland's transformative ability. This match is priced as tight by bookmakers. The draw at around +240 offers value given the defensive quality on both sides.",
+    "historicalPattern": "Their only previous meeting was a 2006 friendly won 2-1 by Senegal in Dakar. This is effectively a fresh matchup at the highest level."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Erling Haaland",
+      "teamCode": "NOR",
+      "narrative": "Everything about Haaland defies conventional wisdom. He is 6'5\" but moves like a sprinter. He scores headers but also dribbles past defenders. He plays for the best club in England but has never appeared at a World Cup. This tournament is the final frontier for a player who has conquered everything else. Haaland's World Cup debut against Senegal will be analyzed, dissected, and remembered — whether he scores a hat-trick or spends 90 minutes being frustrated by Koulibaly's brilliance.",
+      "statline": "52 goals in his debut Premier League season; 37 goals in Norway's 8 World Cup qualifiers campaign"
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "narrative": "If anyone can stop Haaland, it's Koulibaly. The towering center-back combines physical strength with surprising agility and an almost supernatural ability to read the game. His decade in Serie A, where he became one of the world's most respected defenders, has prepared him for exactly this type of challenge. Koulibaly vs Haaland is the marquee individual battle of the group stage — and Koulibaly will relish every second of it.",
+      "statline": "Over 70 international caps for Senegal and one of Africa's most decorated defenders"
+    },
+    {
+      "name": "Martin Odegaard",
+      "teamCode": "NOR",
+      "narrative": "Odegaard's journey from teenage prodigy at Real Madrid to Arsenal's inspirational captain has been one of football's great redemption arcs. His creative intelligence is the engine that drives Norway's attacking play, and his understanding with Haaland — developed through years of international duty together — is telepathic. If Odegaard is given time on the ball, Haaland will score. It's as simple and as terrifying as that.",
+      "statline": "Arsenal captain with 10+ Premier League assists in consecutive seasons"
+    },
+    {
+      "name": "Sadio Mane",
+      "teamCode": "SEN",
+      "narrative": "Mane's AFCON-winning penalty in 2022 elevated him to god-like status in Senegal. Now 34 and playing in Saudi Arabia, questions about his sharpness persist. But Mane has always been a tournament player — a man who raises his game when the stakes are highest. His experience and leadership will be vital against a Norway side that is new to this level of pressure. If Senegal win, Mane's influence — whether through goals, assists, or pure leadership — will be central.",
+      "statline": "Scored the winning penalty in the 2022 AFCON final; Senegal's talisman for a decade"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Norway 1-1 Senegal",
+    "confidence": 50,
+    "narrative": "This is the group-stage match that neutral fans will circle on their calendars. Haaland vs Koulibaly is box office, Odegaard vs Senegal's midfield is tactically fascinating, and the stakes for both teams are enormous. The data says Senegal should edge it. The eye test says Haaland is unstoppable. The truth probably lies in a draw that satisfies neither side but thrills everyone watching.\n\nExpect Haaland to find the net — he always does — but also expect Senegal to respond through Mane or Jackson's pace on the counter. Both teams will be cautious enough to avoid defeat but ambitious enough to create genuine chances. A 1-1 scoreline feels inevitable, the kind of result that sets up a fascinating final group matchday.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Norway 3-1 Senegal",
+        "probability": 18,
+        "reasoning": "Haaland runs riot. Koulibaly can't handle his movement, Odegaard pulls the strings, and Norway announce themselves as serious tournament contenders with a statement victory."
+      },
+      {
+        "scenario": "Senegal 2-0 Norway",
+        "probability": 15,
+        "reasoning": "Koulibaly shackles Haaland completely. Senegal's collective quality overwhelms Norway's less experienced supporting cast, and the Lions of Teranga prove that defending is an art form that no striker can always overcome."
+      }
+    ]
+  },
+
+  "closingLine": "Haaland's World Cup begins against Africa's finest defense. If he can conquer Koulibaly, he can conquer anything. If he can't, the world will know that even gods have limits."
+}

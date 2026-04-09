@@ -15,6 +15,7 @@ import '../core/services/notification_preferences_service.dart';
 import '../core/services/localization_service.dart';
 import '../core/services/offline_service.dart';
 import '../core/services/widget_service.dart';
+import '../core/services/live_activity_service.dart';
 
 /// Steps 1-2: Core dependencies and essential services.
 Future<void> registerCoreDependencies(GetIt sl) async {
@@ -45,4 +46,9 @@ Future<void> registerCoreDependencies(GetIt sl) async {
 
   final widgetService = await WidgetService.getInstance();
   sl.registerSingleton<WidgetService>(widgetService);
+
+  // Live Activities (iOS Dynamic Island + Lock Screen)
+  final liveActivityService = LiveActivityService();
+  await liveActivityService.init();
+  sl.registerSingleton<LiveActivityService>(liveActivityService);
 }

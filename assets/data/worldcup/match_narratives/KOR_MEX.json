@@ -1,0 +1,80 @@
+{
+  "matchKey": "KOR_MEX",
+  "team1Code": "KOR",
+  "team2Code": "MEX",
+  "team1Name": "Korea Republic",
+  "team2Name": "Mexico",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "El Tri's Home Fortress Against Asia's Relentless Warriors",
+  "subheadline": "Mexico's co-hosting dream clashes with South Korea's World Cup ambitions in a match loaded with history and consequence",
+
+  "openingNarrative": "Mexico and South Korea have met twice at World Cups, and twice Mexico have won. In 1998, it was 3-1. In 2018, in Rostov-on-Don, it was 2-1, with Vela and Hernández guiding El Tri to a victory that was more comfortable than the scoreline suggested. History, the head-to-head, and the home advantage all point one way. But South Korea didn't come to North America to be a footnote in Mexico's co-hosting story.\n\nFor Mexico, this World Cup represents something close to a national obsession. Seventeen previous World Cup appearances, and not once — not once — have they advanced beyond the Round of 16. The curse that hangs over El Tri is one of the most maddening in World Cup history: good enough to qualify, good enough to compete, never good enough to break through. Playing at home, with the Azteca's fury behind them and a nation of 130 million willing them forward, this is Mexico's best chance to rewrite history.\n\nSouth Korea, though, know something about rewriting history at World Cups. In 2002, as co-hosts, they reached the semi-finals in a run that remains one of the greatest underdog stories the tournament has ever produced. More recently, their 2-0 destruction of Germany at the 2018 World Cup — eliminating the defending champions — proved they can produce results against anyone when the stars align. In 13 all-time meetings, Mexico lead 8-4 with 1 draw, scoring 26 goals to Korea's 14. But Son Heung-min changes every equation.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Mexico under Javier Aguirre will deploy a 4-3-3 designed to control possession and create through wide areas. Santiago Giménez's movement and finishing are the focal point, with Hirving Lozano's pace stretching defenses on the counter. Edson Álvarez anchors the midfield with the kind of destructive discipline he's honed in the Premier League — his ability to break up play and recycle possession is what gives Mexico their rhythm.\n\nSouth Korea's 4-3-3 under Hong Myung-bo emphasizes pressing intensity and rapid transitions. Son Heung-min operates from the left but drifts centrally with the freedom that only the world's best players earn. Lee Kang-in pulls the creative strings from midfield, his PSG-honed vision providing the through balls that Son's movement demands.\n\nThe tactical battle centers on Mexico's left side. Son will attack from Korea's left, directly against Mexico's right-back — whoever wins that individual duel controls the match's attacking flow. Meanwhile, Lozano's speed against Korea's full-back on the opposite flank creates a mirror-image battle. This is a match that will be won on the flanks.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Son Heung-min vs Mexico's right-back — Asia's greatest player against the co-hosts' defensive vulnerabilities"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Mexico (ELO: 1675) vs Korea Republic (ELO: 1655) — a mere 20-point gap that makes this one of the closest matches in the group on paper. Mexico's home advantage tilts the odds, but Korea's unbeaten qualifying record (6 wins, 4 draws, 0 losses) suggests they arrive in better form.",
+    "formAnalysis": "Mexico qualified automatically as co-hosts, meaning they lack the competitive edge of qualifying. Korea's AFC campaign was superb: unbeaten in 10 matches, 22 goals scored with just 5 conceded. Son Heung-min's 10 qualifying goals dwarf any single Mexican scorer. The preparation gap could be significant — Korea enter battle-hardened, Mexico enter untested.",
+    "squadValueComparison": "Mexico ($261M) vs Korea Republic ($315M) — remarkably, Korea's squad is more valuable, driven by Kim Min-jae's $87.5M valuation. Mexico's Edson Álvarez ($43.8M) leads their valuation. The financial balance favors Korea, a reflection of their players' prominence at Europe's biggest clubs.",
+    "injuryImpact": "Son's fitness is Korea's single most important variable. A fully fit Son transforms them from competitive to dangerous. Mexico's concern is their lack of competitive match fitness — automatic qualification means fewer high-stakes games in the build-up.",
+    "bettingPerspective": "Mexico are marginal favorites based on home advantage alone. The match odds are tight, reflecting the genuine competitive balance. Korea's unbeaten qualifying record and Son's goal threat make them a value selection for those backing the visitors.",
+    "historicalPattern": "In 13 all-time meetings, Mexico lead 8-4 with 1 draw. Both World Cup meetings (1998, 2018) were won by Mexico. However, Korea's 2002 semi-final run as co-hosts shows they can thrive in tournament atmospheres — and they beat Germany 2-0 in 2018, the same tournament Mexico also defeated Germany."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "Ten goals in qualifying. Over a hundred Premier League goals. Asia's greatest footballer carries the kind of individual quality that can single-handedly decide World Cup matches. Against Mexico, Son will look to exploit the space behind the attacking full-backs, cutting inside from the left onto his devastating right foot. He has never scored against Mexico — and that chip on his shoulder could be the most dangerous weapon in the stadium.",
+      "statline": "10 goals in World Cup qualifying, 100+ Premier League goals, Asia's all-time greatest"
+    },
+    {
+      "name": "Santiago Giménez",
+      "teamCode": "MEX",
+      "narrative": "Feyenoord's prolific striker has given Mexico something they've lacked for years: a world-class number nine. Giménez's movement in the box, his composure in front of goal, and his ability to create chances from nothing make him the focal point of Mexico's attack. In front of a home crowd, with 80,000 voices behind him, Giménez could be the player who finally breaks Mexico's Round of 16 curse.",
+      "statline": "Feyenoord's lethal striker, Mexico's premier goal threat at the home World Cup"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "narrative": "The PSG midfielder's set-piece delivery is world-class, his vision between the lines is extraordinary, and his competitiveness belies his elegant playing style. Against Mexico's midfield, Lee will look to receive in the pockets of space that Edson Álvarez's positioning doesn't quite cover. His through balls to Son are Korea's most potent weapon — and when those two connect, no defense in the world is safe.",
+      "statline": "PSG's creative midfielder, Golden Ball winner at the 2019 U-20 World Cup"
+    },
+    {
+      "name": "Edson Álvarez",
+      "teamCode": "MEX",
+      "narrative": "Mexico's midfield anchor and captain. Álvarez's ability to read the game, intercept passes, and provide the defensive platform from which Mexico's attackers can operate is what makes El Tri function. Against Korea's pressing, his composure on the ball and ability to play out of pressure will be tested. If Álvarez controls the midfield, Mexico control the match. If Lee Kang-in bypasses him, Korea's quality will flood forward.",
+      "statline": "Mexico's most valuable player at $43.8M, midfield general and captain of El Tri"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Mexico 2-1 Korea Republic",
+    "confidence": 58,
+    "narrative": "Mexico's home advantage and historical dominance in this fixture give them the edge, but this will be far closer than the 1998 and 2018 meetings. Korea's improved squad quality — particularly through Son, Lee Kang-in, and Kim Min-jae — means they will create genuine chances and likely find the net.\n\nExpect the Azteca to play its part. The altitude, the noise, the emotion of a co-hosting nation — these are real advantages that influence football matches in ways that statistics cannot capture. Mexico will ride the wave of home support to take an early lead, and Giménez's finishing will be the difference. But Son's quality ensures Korea will threaten until the final whistle.\n\nThe second half will be tense, with Korea pushing for an equalizer and Mexico defending with everything they have. The final 15 minutes could be agonizing for both sets of fans.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Korea Republic 2-1 Mexico",
+        "probability": 22,
+        "reasoning": "Son produces a masterclass, scoring twice against a Mexican defense rattled by the pressure of home expectations. Korea's superior match fitness — hardened by qualifying — proves decisive in the final 20 minutes."
+      },
+      {
+        "scenario": "Mexico 1-1 Korea Republic",
+        "probability": 20,
+        "reasoning": "A tight, tactical affair where both teams cancel each other out. Son's goal is answered by Giménez, and neither side can find a winner in a match that suits both in the broader context of the group."
+      }
+    ]
+  },
+
+  "closingLine": "In 13 previous meetings, Mexico have been the dominant force. But Son Heung-min, Lee Kang-in, and a South Korean generation that fears nobody are coming to rewrite that history. The Azteca awaits — and the World Cup's greatest co-hosting drama is only just beginning."
+}

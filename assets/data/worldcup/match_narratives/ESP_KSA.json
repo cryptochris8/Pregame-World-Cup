@@ -1,0 +1,80 @@
+{
+  "matchKey": "ESP_KSA",
+  "team1Code": "ESP",
+  "team2Code": "KSA",
+  "team1Name": "Spain",
+  "team2Name": "Saudi Arabia",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Giant-Killers Meet the Gold Standard",
+  "subheadline": "Saudi Arabia shocked Argentina in 2022 and changed what the world thought was possible. Now they face Spain, the team that dismantled their neighbors 7-0.",
+
+  "openingNarrative": "November 22, 2022. Lusail Stadium. Saudi Arabia trailing Argentina 1-0 at halftime after a Messi penalty, having had three goals ruled out for offside. The world expected the inevitable — a comfortable Argentine victory to open their World Cup campaign. Instead, Saleh Al-Shehri equalized within three minutes of the restart, and then Salem Al-Dawsari unleashed a strike so pure, so perfectly placed, that it tore through the fabric of football certainty itself. Saudi Arabia 2, Argentina 1. The kingdom declared a national holiday. The World Cup had its defining upset.\n\nBut the 2022 tournament also delivered a warning for Saudi Arabia. In the very same group stage, Spain demolished Costa Rica 7-0, a performance of such surgical precision that it redefined what possession football could achieve at a World Cup. Every pass found its target. Every movement created space. Costa Rica were not merely beaten — they were erased.\n\nSo when Saudi Arabia line up against Spain, they carry both the confidence of giant-killers and the knowledge that Spain are precisely the kind of team designed to neutralize their biggest weapon. The high defensive line and offside trap that caught Argentina's runners were devastating against a team that plays direct. Against Spain, who probe patiently and move the ball in triangles that can undo any pressing trap, that same approach could be suicidal.\n\nThis is the tension that makes this match fascinating: can Saudi Arabia reinvent their upset formula against an opponent specifically engineered to exploit it?",
+
+  "tacticalBreakdown": {
+    "title": "The Trap Meets the Trapmaker",
+    "narrative": "Spain's 4-3-3 under de la Fuente is the evolution of tiki-taka. Gone is the sometimes-sterile possession of the early 2010s. This Spain side combines patient build-up with explosive transitions through Yamal and Nico Williams on the wings. Pedri orchestrates from the center, and the movement of the front three creates overloads that are nearly impossible to defend against for 90 minutes.\n\nSaudi Arabia under Roberto Mancini have attempted to add Italian tactical structure to their high-energy approach. The 4-3-3 emphasizes organization and discipline, but the key tactical question remains: do they press Spain high or sit deep? Their 2022 triumph over Argentina came from a high line and aggressive pressing that caught Argentina's runners offside repeatedly. But Spain rarely play balls in behind — they come at you in waves of short passes, pulling defenders out of position until the structure collapses.\n\nIf Saudi Arabia press high against Spain, they risk being carved apart by Pedri's through balls and Yamal's dribbling. If they sit deep, they surrender possession entirely and rely on counter-attacks against one of the most disciplined defensive teams in the world. It is a tactical dilemma with no comfortable answer.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Spain's midfield triangle vs Saudi Arabia's pressing triggers — if Pedri, Rodri, and Gavi circulate freely, Spain will dominate"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Spain (ELO: 1877, ranked 1st) vs Saudi Arabia (ELO: 1500, ranked 60th) — a 377-point chasm that represents one of the largest quality gaps in any group stage match. The ELO model gives Spain approximately an 80% win probability.",
+    "formAnalysis": "Spain qualified with 5 wins and 1 draw from 6 matches, scoring 21 goals and conceding just 2. Saudi Arabia's qualifying campaign was far more turbulent: 4 wins, 5 draws, and 3 losses in AFC qualifying, with 10 goals scored and 10 conceded — a perfectly even goal record that underscores their inconsistency.",
+    "squadValueComparison": "Spain's squad ($1.42B) dwarfs Saudi Arabia's ($96.9M). Lamine Yamal alone ($188M) is worth nearly double Saudi Arabia's entire roster. The financial disparity reflects the difference in European league exposure — Spain's players compete at Barcelona, Real Madrid, and across Europe's top leagues, while Saudi Arabia's squad is largely Saudi Pro League-based.",
+    "injuryImpact": "Spain have the luxury of squad depth that allows rotation without any drop in quality. Saudi Arabia need their key players — Al-Dawsari, Al-Shehri, and goalkeeper Al-Owais — fully fit to have any chance of competing.",
+    "bettingPerspective": "Spain are heavy favorites at approximately -350. The draw represents considerable value at +400 if you believe Saudi Arabia can replicate their 2022 Argentina blueprint. A Saudi Arabia victory would be priced as one of the biggest upsets in World Cup history.",
+    "historicalPattern": "Spain have won all 4 previous meetings with Saudi Arabia. The 2022 World Cup group stage demonstrated both extremes: Spain's 7-0 demolition of Costa Rica showed their ceiling, while Saudi Arabia's 2-1 over Argentina proved their upset capability. The question is which version of each team shows up."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Lamine Yamal",
+      "teamCode": "ESP",
+      "narrative": "The teenage phenomenon leads Spain's charge into the World Cup as the most exciting young talent on the planet. His Euro 2024 performances — including becoming the youngest goalscorer in European Championship history — established him as a generational talent. Against Saudi Arabia's defense, Yamal's ability to dribble past multiple defenders and create chances from nothing should prove devastating. He is the player Saudi Arabia simply cannot afford to let loose.",
+      "statline": "Spain's most valuable player at $188M; Euro 2024 champion at age 16"
+    },
+    {
+      "name": "Salem Al-Dawsari",
+      "teamCode": "KSA",
+      "narrative": "The man who scored THAT goal against Argentina. Al-Dawsari's curling strike in Lusail will echo through World Cup history forever — a moment of individual brilliance that embodied everything beautiful about football's greatest upset. At 33, this is likely his final World Cup, and he carries the weight of a nation's expectation to produce another moment of magic. Against Spain, he will see far less of the ball. But he only needs one touch.",
+      "statline": "Scored the iconic winning goal in Saudi Arabia's 2-1 victory over Argentina at the 2022 World Cup"
+    },
+    {
+      "name": "Pedri",
+      "teamCode": "ESP",
+      "narrative": "If Spain are to break Saudi Arabia down, it will be through Pedri's genius. The Barcelona midfielder's ability to find pockets of space, to turn in tight areas, and to deliver the pass that nobody else sees is what separates Spain from every other team. Against Saudi Arabia's midfield, he will be the difference between Spain dominating possession and Spain dominating the match. There is a crucial distinction between the two.",
+      "statline": "Euro 2024 champion with 90%+ pass accuracy; Spain's midfield metronome"
+    },
+    {
+      "name": "Mohammed Al-Owais",
+      "teamCode": "KSA",
+      "narrative": "The goalkeeper who kept Saudi Arabia's dream alive against Argentina with a series of outstanding saves before Al-Dawsari's heroics. Al-Owais represents the thin green line between Saudi Arabia and annihilation against Spain's attack. If Saudi Arabia are to get anything from this match, he will need to produce the performance of his life — and then some.",
+      "statline": "Hero of the 2022 Argentina upset with crucial saves that kept Saudi Arabia in the match"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Spain 3-1 Saudi Arabia",
+    "confidence": 78,
+    "narrative": "Saudi Arabia proved in 2022 that they are capable of the impossible. But Spain are not Argentina. Where Argentina played into Saudi Arabia's hands with runs behind a high line, Spain will suffocate them with patient possession and positional play that is specifically designed to break down compact defenses.\n\nSpain's midfield will control the tempo from the opening whistle. Yamal and Williams will stretch Saudi Arabia's defense to breaking point. And when the inevitable goals come, they will come through the kind of intricate combination play that cannot be defended by bravery alone.\n\nSaudi Arabia will score — Al-Dawsari will find one moment, one counter-attack, one chance to remind the world of his genius. But Spain's quality will prove overwhelming. The giant-killers will meet a giant that does not flinch.\n\nStill, never write off a team that once turned November 22nd into a national holiday.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Spain 1-0 Saudi Arabia",
+        "probability": 15,
+        "reasoning": "Saudi Arabia produce a heroic defensive display, with Al-Owais making save after save. Spain grow frustrated but eventually break through late. A hard-fought victory that earns Saudi Arabia enormous respect."
+      },
+      {
+        "scenario": "Saudi Arabia 2-1 Spain",
+        "probability": 5,
+        "reasoning": "The ultimate shock sequel. Saudi Arabia implement a perfect game plan, pressing Spain into errors and converting on the counter. Al-Dawsari scores again, and the football world remembers that the World Cup is no place for certainties."
+      }
+    ]
+  },
+
+  "closingLine": "In 2022, Saudi Arabia proved that the World Cup belongs to the brave. In 2026, Spain will test whether bravery alone is enough against the most technically complete team on the planet."
+}

@@ -1,0 +1,80 @@
+{
+  "matchKey": "CIV_ECU",
+  "team1Code": "CIV",
+  "team2Code": "ECU",
+  "team1Name": "Ivory Coast",
+  "team2Name": "Ecuador",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Group Decider: AFCON Champions and South America's Rising Force Collide",
+  "subheadline": "Two ambitious nations with European-based talent fight for knockout round survival in what could be Group E's decisive match",
+
+  "openingNarrative": "There are matches that decide groups, and then there is Ivory Coast versus Ecuador. This is not merely a football match -- it is a referendum on which brand of emerging football power deserves a seat at the knockout round table. Both nations have spent years building toward this moment, and both arrive at the 2026 World Cup with squads that blend European league experience with a fierce continental identity.\n\nIvory Coast's transformation has been seismic. The 2024 Africa Cup of Nations triumph on home soil -- achieved after the most dramatic mid-tournament coaching change in the history of the competition -- gave this squad something that no amount of individual talent can buy: the unshakeable belief that they can win when everything is on the line. Emerse Fae took over with his team on the brink of elimination, and orchestrated victories over Senegal, Mali, DR Congo, and Nigeria to lift the trophy. That experience, that resilience, that refusal to die -- it courses through this team's veins.\n\nEcuador's rise has been quieter but no less impressive. Sebastian Beccacece inherited a squad already stocked with elite talent and added the defensive organization that turned Ecuador into the hardest team to score against in CONMEBOL qualifying. Just 5 goals conceded in 18 matches is a record that speaks to extraordinary discipline. Moises Caicedo, the most expensive signing in British football history, is the engine. Piero Hincapie is the foundation. Enner Valencia, with 6 goals in qualifying and a World Cup scoring record that spans multiple tournaments, is the guarantee of goals.\n\nThese teams met once before -- a 2-2 friendly draw in 2009. This time, the stakes could not be higher. The winner takes a massive step toward the Round of 32. The loser may be heading home.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This is a collision of two 4-3-3 systems with fundamentally different philosophies. Ivory Coast's version is built on energy, athleticism, and devastating transitions. Seko Fofana's powerful driving runs from midfield, combined with Adingra's electrifying wing play, create a team that can hurt opponents in the blink of an eye. Their pressing is aggressive in bursts -- designed to win the ball high and create chances before opponents can reset.\n\nEcuador's 4-3-3 is the mirror image: patient, disciplined, and built on a defensive foundation that borders on the obsessive. Caicedo sits at the base of the midfield triangle, intercepting everything that enters his radius and launching precise counter-attacks. The center-back pairing of Hincapie and Pacho is comfortable with the ball at their feet, allowing Ecuador to build from the back even under pressure.\n\nThe key battle is in central midfield: Caicedo's composure and reading of the game against Fofana's raw power and athleticism. Whoever wins that duel controls the match. If Fofana can drive past Caicedo, Ivory Coast's transitions will be devastating. If Caicedo can snuff out those runs and redirect play, Ecuador's patient approach will suffocate Ivory Coast's creative outlets.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Moises Caicedo vs Seko Fofana -- the midfield duel that will determine Group E's fate"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Ecuador (ELO: 1660, rank 23) vs Ivory Coast (ELO: 1620, rank 42) -- a modest 40-point gap that gives Ecuador a marginal advantage on paper. In practice, this match is as close to 50-50 as any at the tournament.",
+    "formAnalysis": "Ecuador's qualifying was built on defense: 8 wins, 8 draws, 2 losses in 18 CONMEBOL matches, with only 5 goals conceded. Enner Valencia's 6 qualifying goals provide the attacking threat. Ivory Coast were strong in CAF qualifying: 6 wins, 3 draws, 1 loss in 10 matches, with Haller's 5 goals leading the line.",
+    "squadValueComparison": "Ecuador's squad ($433M) nearly doubles Ivory Coast's ($250M), largely due to Caicedo's extraordinary individual valuation. The financial gap is significant but does not tell the full story -- Ivory Coast's squad features players from top European leagues who perform well above their market valuations.",
+    "injuryImpact": "Both teams have strong first XIs but limited depth. Ecuador's reliance on Caicedo is a potential vulnerability -- if he picks up an injury or suspension, their midfield loses its anchor. Ivory Coast similarly depend on Kessie and Fofana for midfield control.",
+    "bettingPerspective": "The draw is the most popular result among bookmakers, reflecting the even nature of this contest. Under 2.5 goals is favored, pointing to a match where both teams prioritize defensive structure over attacking abandon.",
+    "historicalPattern": "Their only previous meeting was a 2-2 friendly draw in 2009. This will be their first World Cup encounter. Ivory Coast have never advanced past the group stage in three previous World Cups. Ecuador reached the Round of 16 in 2006 but have not progressed since."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Moises Caicedo",
+      "teamCode": "ECU",
+      "narrative": "The most expensive signing in British football history is also Ecuador's most important player by an immeasurable margin. Caicedo does not just play in midfield -- he owns it. His ability to read the game, intercept passes, and launch counter-attacks with a single pass makes him the kind of player who can single-handedly control the tempo of a World Cup match. Against Ivory Coast's powerful midfield, he faces his sternest test.",
+      "statline": "Chelsea's record signing at over 115 million pounds"
+    },
+    {
+      "name": "Simon Adingra",
+      "teamCode": "CIV",
+      "narrative": "Brighton's winger is the spark that ignites Ivory Coast's attack. His pace is genuinely frightening -- the kind that turns a routine defensive situation into a goal-scoring opportunity in the space of three seconds. His 2024 AFCON Best Young Player award was earned with performances that left some of Africa's best defenders looking foolish. Against Ecuador's disciplined backline, his directness could be the key to unlocking a defense that conceded only 5 goals in qualifying.",
+      "statline": "2024 AFCON Best Young Player, Brighton's explosive attacker"
+    },
+    {
+      "name": "Enner Valencia",
+      "teamCode": "ECU",
+      "narrative": "Ecuador's World Cup king. Valencia has scored in multiple World Cups and his 6 goals in qualifying for 2026 prove that age has not diminished his predatory instincts. He is the kind of striker who may go 89 minutes without touching the ball, then produce a finish of such clinical precision that it feels inevitable in retrospect. In a tight match, his experience could be the decisive factor.",
+      "statline": "6 goals in qualifying, Ecuador's all-time World Cup leading scorer"
+    },
+    {
+      "name": "Seko Fofana",
+      "teamCode": "CIV",
+      "narrative": "If there is a more physically imposing midfielder at this World Cup, we have not found him. Fofana's combination of pace, power, and technical ability makes him almost impossible to defend when he drives forward with the ball. His runs from deep were the catalyst for Ivory Coast's AFCON triumph, and his ability to carry the ball through the lines gives the Elephants an attacking dimension that few teams can replicate.",
+      "statline": "Driving midfield force behind Ivory Coast's 2024 AFCON triumph"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Ivory Coast 1-1 Ecuador",
+    "confidence": 55,
+    "narrative": "This is the match of fine margins, the encounter where one moment of brilliance or one lapse in concentration decides everything. Ecuador's defensive excellence gives them the platform to frustrate Ivory Coast's attacking talent, but the AFCON champions possess the individual quality to break down any defense given time and space.\n\nThe draw feels inevitable. Both teams will respect each other too much to open up completely, and both midfields are too good to be dominated. Expect a first half of tactical chess, a second half where desperation introduces attacking intent, and a result that leaves both teams needing to beat Germany to guarantee progress.\n\nBut here is the thing about matches between two teams who both believe they can win a World Cup group -- they are never as dull as the scoreline suggests.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Ivory Coast 2-1 Ecuador",
+        "probability": 20,
+        "reasoning": "Ivory Coast's AFCON-winning mentality gives them a psychological edge in the tight moments. Adingra's pace exploits a rare gap in Ecuador's defense, and the Elephants show the composure of champions to hold on."
+      },
+      {
+        "scenario": "Ecuador 2-0 Ivory Coast",
+        "probability": 15,
+        "reasoning": "Ecuador's defensive masterclass stifles Ivory Coast completely. Caicedo controls the midfield, Valencia scores from a rare counter-attack, and a second goal puts the match beyond doubt."
+      }
+    ]
+  },
+
+  "closingLine": "When Africa's champions meet South America's defensive fortress, the result is football at its most cerebral and compelling. This match will not be decided by talent alone -- it will be decided by nerve."
+}

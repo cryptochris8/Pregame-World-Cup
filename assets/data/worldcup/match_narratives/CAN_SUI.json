@@ -1,0 +1,80 @@
+{
+  "matchKey": "CAN_SUI",
+  "team1Code": "CAN",
+  "team2Code": "SUI",
+  "team1Name": "Canada",
+  "team2Name": "Switzerland",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Rematch Canada Has Been Waiting For Since Qatar",
+  "subheadline": "Breel Embolo's 2022 goal haunts Canadian dreams -- now the co-hosts seek revenge against Europe's most consistent tournament performers",
+
+  "openingNarrative": "On November 24, 2022, in Al Rayyan, Qatar, Breel Embolo's second-half goal gave Switzerland a 1-0 victory over Canada in both teams' opening World Cup match. It was a result that encapsulated everything about the gap between Swiss tournament savvy and Canadian World Cup inexperience. Switzerland were efficient, organized, and clinical. Canada were enthusiastic, brave, and ultimately naive. The Canadians created chances, pressed with energy, and were the better team for stretches. But Switzerland scored, Canada did not, and the lesson was delivered with Swiss precision.\n\nFour years later, Canada have the chance for revenge on home soil. And the Canadians who watched that 2022 match -- Davies bombing forward but finding no end product, David's frustration growing as Swiss defenders read his every run -- know exactly what they need to do differently. Jesse Marsch's Canada are a more mature, more tactically sophisticated side than the one that flew to Qatar with ambition and returned with regret.\n\nSwitzerland, meanwhile, arrive as Europe's model of consistency. They have reached the knockout stages of four of their last five major tournaments, including a famous penalty shootout victory over France at Euro 2020. Murat Yakin's side conceded just 2 goals in 6 qualifying matches -- the best defensive record in UEFA -- and the combination of Xhaka's midfield control and Akanji's defensive composure gives them a tournament-proven spine that few teams can match.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "The 2022 meeting provides the tactical blueprint that both coaches will study. Switzerland's 3-4-3 stifled Canada's pressing by building patiently from the back through three center-backs, drawing the press before finding free men in midfield. Xhaka's positioning between Canada's pressing lines gave Switzerland the passing outlet they needed to control possession, and Embolo's movement in the final third created the goal.\n\nCanada must learn from that defeat. Marsch's 4-3-3 needs to press more intelligently -- closing passing lanes to Xhaka rather than simply charging at the ball. Davies' forward runs must be better timed and supported, and David's movement must find the gaps between Switzerland's center-backs rather than running into them.\n\nSwitzerland will be patient. Yakin knows that Canada's pressing intensity cannot be sustained for 90 minutes, and his team is content to absorb early pressure, control the ball, and wait for the Canadian energy to dip before turning the screw. It is a formula that has worked against teams with far more World Cup pedigree than Canada.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "3-4-3",
+    "keyMatchup": "Granit Xhaka vs Canada's pressing midfield -- the metronome against the hurricane"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Canada (ELO: 1615) vs Switzerland (ELO: 1680) -- a 65-point gap that favors Switzerland. This translates to roughly a 58% Swiss win probability, though Canada's home advantage narrows the effective gap.",
+    "formAnalysis": "Canada qualified automatically as co-hosts. Switzerland's UEFA qualifying was immaculate: 4 wins, 2 draws, 0 losses, 14 goals scored and just 2 conceded. Breel Embolo led with 4 goals. Switzerland's defensive record (2 goals conceded in 6 matches) is among the best at the tournament.",
+    "squadValueComparison": "Canada ($271M) vs Switzerland ($466M). A 1.7:1 ratio that reflects Switzerland's deeper talent pool. Manuel Akanji ($56.3M) at Manchester City is Switzerland's most valuable player, while the squad features multiple Champions League regulars across multiple positions.",
+    "injuryImpact": "Xhaka is Switzerland's irreplaceable player. Without his passing and tempo control, the entire system struggles. Davies is equally crucial for Canada. The fitness of these two players may determine the outcome.",
+    "bettingPerspective": "Switzerland at +8000 for the tournament are respected outsiders with knockout-stage pedigree. Canada at +25000 are priced as home-advantage hopefuls. The match itself is tight in the markets, with a draw considered the most likely outcome.",
+    "historicalPattern": "In 5 meetings: Switzerland 2 wins, Canada 1 win, 2 draws. Goals: Switzerland 7, Canada 5. The World Cup head-to-head shows Switzerland winning 1-0 in 2022. The overall history includes Switzerland's 3-0 friendly victory in 2002, Canada's only win, and two draws. Home advantage has been significant in their meetings."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Alphonso Davies",
+      "teamCode": "CAN",
+      "narrative": "In 2022, Davies' forward runs were impressive but ultimately fruitless against Swiss defensive organization. He learned that evening that World Cup football demands more than raw athleticism -- it demands intelligence, timing, and composure in the final third. Four years of development at Bayern Munich and Real Madrid have added those qualities to his game. Davies in 2026 is a more complete player, and against Switzerland's three-man defense, his ability to combine with teammates rather than simply outrun opponents will be the key difference.",
+      "statline": "Canada's $87.5M star; matured significantly since the 2022 World Cup"
+    },
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "narrative": "Switzerland's captain is the metronome that makes the entire system function. His passing range from the base of midfield dictates the tempo, and his tactical intelligence ensures Switzerland always have an out-ball when pressed. Xhaka's Bundesliga title with Leverkusen proved he can perform at the highest level, and his World Cup experience -- three tournaments and counting -- gives him the composure that Canada's midfield will struggle to match.",
+      "statline": "Switzerland's captain and record appearance holder; Bundesliga champion with Leverkusen"
+    },
+    {
+      "name": "Jonathan David",
+      "teamCode": "CAN",
+      "narrative": "David's frustration in 2022 -- chances created but not converted, movement neutralized by Swiss positional discipline -- drives his preparation for this match. The Lille striker has added consistency to his finishing since Qatar, becoming one of Europe's most reliable scorers. Against Switzerland's three center-backs, David must find the spaces between them and finish when the rare clear chance arrives.",
+      "statline": "One of Ligue 1's top scorers; Canada's most clinical finisher"
+    },
+    {
+      "name": "Manuel Akanji",
+      "teamCode": "SUI",
+      "narrative": "The Manchester City center-back is the defensive cornerstone of Switzerland's system. His composure on the ball, ability to step out from the back line to win the ball, and reading of the game make him one of the best defenders at the tournament. Against Canada's pressing, Akanji's ability to play out under pressure -- a skill refined daily at City's training ground -- will be crucial to Switzerland's ability to build from the back.",
+      "statline": "Manchester City regular; Switzerland's $56.3M defensive leader; key to conceding just 2 goals in qualifying"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Canada 1-1 Switzerland",
+    "confidence": 45,
+    "narrative": "This has draw written all over it. Two well-organized teams, both with clear tactical identities and the discipline to execute them, will cancel each other out in a match that is decided by moments rather than dominance.\n\nCanada will have the better of the early exchanges, driven by the home crowd and Davies' attacking intent. But Switzerland's defensive shape -- three center-backs providing security, Xhaka screening in front -- will absorb the pressure. A Canadian goal from a set piece or a Davies-driven counter-attack will send the stadium into raptures.\n\nSwitzerland will equalize. They always do. Embolo's movement, Xhaka's passing, and the collective tactical intelligence that has carried the Nati through four consecutive knockout stages will find a way to score. The second half will be a chess match, with both teams probing for a winner but neither willing to risk the point they have.\n\nA draw that both teams can live with, and one that sets up a decisive final group match.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Canada 2-1 Switzerland",
+        "probability": 22,
+        "reasoning": "Davies produces the performance of his life, overwhelming Switzerland's right side repeatedly. David finishes with clinical precision, and Canada secure the revenge they have craved since Qatar."
+      },
+      {
+        "scenario": "Switzerland 2-0 Canada",
+        "probability": 18,
+        "reasoning": "Switzerland's tournament experience overwhelms Canada's enthusiasm. Xhaka controls the tempo, Embolo scores again, and the 2022 script repeats itself despite the change of scenery."
+      }
+    ]
+  },
+
+  "closingLine": "In 2022, Switzerland taught Canada a lesson in World Cup football. In 2026, Canada intend to show they have learned it."
+}

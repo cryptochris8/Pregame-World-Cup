@@ -1,0 +1,80 @@
+{
+  "matchKey": "SWE_TUN",
+  "team1Code": "SWE",
+  "team2Code": "TUN",
+  "team1Name": "Sweden",
+  "team2Name": "Tunisia",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Sweden's Striking Revolution Faces Tunisian Defiance",
+  "subheadline": "Viktor Gyokeres and Alexander Isak lead the most potent Swedish attack in a generation against Tunisia's defensive wall",
+
+  "openingNarrative": "Twenty years ago, in a Berlin evening that neither nation has forgotten, Sweden edged Tunisia 1-0 in the 2006 World Cup group stage. It was the kind of result that defined both teams at that tournament — Sweden efficient and clinical, Tunisia resilient but ultimately outgunned. Two decades later, they meet again, and the landscape has transformed beyond recognition.\n\nSweden arrive at the 2026 World Cup with arguably the most lethal attacking partnership in the tournament. Viktor Gyokeres and Alexander Isak combined for over 60 goals in European league football during the 2024-25 season — a strike pairing that makes defenders wake up in cold sweats. Add Dejan Kulusevski's creative intelligence and Anthony Elanga's pace, and Jon Dahl Tomasson has assembled a front four that can rival any team in the competition for pure attacking menace.\n\nTunisia, the Eagles of Carthage, arrive with a different currency: defensive resilience and the memory of beating France 1-0 at the 2022 World Cup. Their 3 meetings with Sweden tell a story of competitiveness — Sweden lead 1-0 in wins at the World Cup, but Tunisia won their most recent friendly encounter 1-0 in 2018, and their first-ever meeting in 1991 ended 2-2. The head-to-head across 3 matches reads: 1 Sweden win, 1 Tunisia win, 1 draw, with 5 Swedish goals to 4 Tunisian. This is no walkover.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Sweden's 4-4-2 under Tomasson is direct, aggressive, and designed to get the ball to Gyokeres and Isak as quickly as possible. The pressing is high, the transitions are rapid, and the crossing from wide areas feeds Gyokeres' aerial ability and Isak's movement in the box. Kulusevski's intelligence and Elanga's pace provide width that stretches defenses to breaking point.\n\nTunisia's 4-3-3 compresses into a defensive 4-5-1 without the ball, denying space between the lines and inviting Sweden onto them. Skhiri dictates the defensive shape from midfield, while Msakni provides the counter-attacking outlet that can punish overcommitting opponents. Laidouni's energy in midfield gives Tunisia the ball-winning ability to disrupt Sweden's buildup.\n\nThe tactical question is patience versus power. If Sweden can break through Tunisia's first line of defense with quick passing combinations, the space behind opens up for Gyokeres and Isak to exploit. If Tunisia can force Sweden into crossing from deep positions and winning aerial duels, the Eagles of Carthage's defensive structure should hold. The first goal will be decisive — the team that scores it controls the match.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Viktor Gyokeres and Alexander Isak vs Tunisia's center-back pairing — Europe's most lethal strike duo against Africa's most organized defense"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Sweden (ELO: 1750, rank 15) vs Tunisia (ELO: 1560, rank 50) — a 190-point gap that gives Sweden roughly a 72% win probability. This is a significant Elo disparity, but Tunisia's 2022 World Cup performances proved they can overperform their rating against elite opposition.",
+    "formAnalysis": "Sweden qualified through the European playoff pathway, with Gyokeres and Isak providing the goals that powered their campaign. Tunisia qualified from Africa, carrying the confidence of their 2022 World Cup performances against France and Denmark. Both teams enter in solid form.",
+    "squadValueComparison": "Sweden ($400M, led by Viktor Gyokeres at $100M) vs Tunisia ($120M, led by Hannibal Mejbri at $15M). Sweden's attack alone — Gyokeres ($100M), Isak ($87.5M from Newcastle), Kulusevski — is worth more than Tunisia's entire squad. The financial gulf is real but not insurmountable.",
+    "injuryImpact": "Sweden's attacking depth means they can afford one injury to their front four. Losing both Gyokeres and Isak would be catastrophic. Tunisia's thin squad means any injury to key defensive players would compromise their entire tactical approach.",
+    "bettingPerspective": "Sweden are comfortable favorites. Tunisia's best value lies in the clean sheet and draw markets — their 2022 0-0 against Denmark proves they can frustrate superior opponents for 90 minutes. The under 2.5 goals market also offers value.",
+    "historicalPattern": "3 meetings: 1 Sweden win, 1 Tunisia win, 1 draw. Goals: Sweden 5, Tunisia 4. The series is remarkably balanced given the perceived quality gap. Tunisia won their last meeting 1-0 in a 2018 friendly."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Viktor Gyokeres",
+      "teamCode": "SWE",
+      "narrative": "Gyokeres' rise from Coventry City curiosity to one of European football's most prolific strikers has been one of the great modern football stories. His combination of aerial ability, hold-up play, and finishing has made him Sporting CP's most important player and Sweden's primary goal threat. At the World Cup, Gyokeres has the platform to announce himself to a global audience that has been hearing his name but hasn't yet fully appreciated his quality.",
+      "statline": "Sweden's most valuable player at $100M; 30+ goals across consecutive seasons"
+    },
+    {
+      "name": "Youssef Msakni",
+      "teamCode": "TUN",
+      "narrative": "Msakni is Tunisia's eternal captain and creative soul — the player who makes the Eagles of Carthage more than just a defensive unit. His dribbling, vision, and ability to produce moments of individual brilliance from counter-attacking positions give Tunisia a threat that cannot be completely neutralized by any defense. Against Sweden, Msakni's quality on the ball will be Tunisia's most valuable weapon.",
+      "statline": "Tunisia's most capped outfield player and their creative talisman for over a decade"
+    },
+    {
+      "name": "Alexander Isak",
+      "teamCode": "SWE",
+      "narrative": "Isak's silky elegance is the perfect complement to Gyokeres' power. The Newcastle striker's movement, first touch, and finishing with both feet make him one of the most technically gifted strikers in the Premier League. His ability to drop deep, turn, and accelerate past defenders adds a different dimension to Sweden's attack that Tunisia must account for.",
+      "statline": "Newcastle's first-choice striker and Sweden's second-most dangerous attacking threat"
+    },
+    {
+      "name": "Aissa Laidouni",
+      "teamCode": "TUN",
+      "narrative": "Laidouni is the engine that powers Tunisia's midfield — a tireless ball-winner whose energy, pressing, and ability to disrupt opponents' buildup play are essential to the Eagles' defensive structure. Against Sweden's direct attacking approach, Laidouni's work rate and tactical intelligence will determine whether Tunisia can maintain their defensive shape for 90 minutes.",
+      "statline": "Tunisia's midfield enforcer bringing relentless energy and ball-winning ability"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Sweden 2-0 Tunisia",
+    "confidence": 55,
+    "narrative": "Sweden's attacking quality should ultimately prove decisive, but this will be a far more challenging encounter than the squad valuations suggest. Tunisia have made a career out of frustrating superior opponents, and their defensive organization will test Sweden's patience and composure.\n\nExpect a tight first half where Tunisia's compact shape denies Gyokeres and Isak the space they crave. Sweden will dominate possession but create few clear-cut chances as Tunisia's disciplined lines hold firm. The breakthrough will come through a moment of individual quality — perhaps Isak's movement or Gyokeres' aerial power — that Tunisia's defense cannot prevent.\n\nThe second goal will arrive late, when Tunisia's energy levels drop and their defensive discipline begins to fray. Sweden's fresh legs from the bench will exploit the space that 80 minutes of disciplined defending can no longer close. The final scoreline will be comfortable, but the match itself will be anything but.\n\nTunisia will leave with heads held high. Their 2018 friendly victory over Sweden proved they can compete. But in a World Cup group stage, Sweden's superior firepower should tell.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Sweden 0-0 Tunisia",
+        "probability": 18,
+        "reasoning": "Tunisia produce their finest defensive performance of the tournament. Gyokeres and Isak are frustrated by organized defending and a goalkeeper having the game of his life. A point that Tunisia celebrate and Sweden rue."
+      },
+      {
+        "scenario": "Tunisia 1-0 Sweden",
+        "probability": 10,
+        "reasoning": "Msakni produces a moment of magic on the counter-attack — exactly as Tunisia did in their 2018 friendly victory. Sweden's frustration grows, and Tunisia defend their lead with the kind of disciplined resilience that shocked France in 2022."
+      }
+    ]
+  },
+
+  "closingLine": "Sweden have the goals. Tunisia have the wall. Twenty years after their last World Cup meeting, the rematch promises a familiar dynamic: irresistible force against immovable object."
+}

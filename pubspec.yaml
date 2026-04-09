@@ -71,6 +71,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   uuid: ^4.2.2 # For generating unique IDs
   home_widget: ^0.7.0 # For iOS and Android home screen widgets
+  live_activities: ^2.4.2 # For iOS Live Activities and Dynamic Island
 
   # Ads
   google_mobile_ads: ^5.1.0
@@ -114,6 +115,7 @@ flutter:
     - assets/data/worldcup/matches/
     - assets/data/worldcup/head_to_head/
     - assets/data/worldcup/match_summaries/
+    - assets/data/worldcup/match_narratives/
     - assets/data/worldcup/history/
     - assets/data/worldcup/team_history/
     - assets/data/worldcup/player_stats/

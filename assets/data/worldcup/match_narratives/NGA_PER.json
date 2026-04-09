@@ -1,0 +1,80 @@
+{
+  "matchKey": "NGA_PER",
+  "team1Code": "NGA",
+  "team2Code": "PER",
+  "team1Name": "Nigeria",
+  "team2Name": "Peru",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Super Eagles' Firepower Against Peru's Eternal Resilience",
+  "subheadline": "Victor Osimhen leads Nigeria's fearsome attack into a first-ever World Cup meeting with South America's great survivors",
+
+  "openingNarrative": "Nigeria and Peru have met three times in history, and in each encounter the result has been decided by a single goal. There is something fitting about that: two nations that understand the fine margins of football, that know what it means to compete from the shadows of more celebrated neighbors, are about to collide on the biggest stage of all.\n\nNigeria arrive at this World Cup with one of the most electrifying attacking units in the tournament. Victor Osimhen, the explosive Napoli striker who helped fire the club to their first Serie A title in over three decades, is the spearhead of a Super Eagles team that blends raw pace with tactical intelligence. The Nigerian football renaissance of recent years has produced a squad that no longer relies on individual moments of brilliance — this is a team, organized and purposeful, that can hurt anyone.\n\nPeru's World Cup story is one of romantic resilience. Their 2018 return to the tournament after 36 years was a national catharsis, and their passionate fans — the Hinchada Blanquirroja — are among the most beloved traveling supporters in world football. But Peru's challenge in 2026 is significant: an aging squad must find one more run in them, one more tournament where heart and craft can overcome the pure athleticism that Nigeria bring to the table. In their last head-to-head, Nigeria won 1-0 in a 2018 friendly at Wembley. Peru lead the all-time series 2-1 across 3 matches.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Nigeria's attacking approach centers on getting Osimhen isolated against center-backs in transition. The Super Eagles' pressing triggers are aggressive, designed to force turnovers in dangerous areas and launch rapid vertical attacks. The wide players provide pace and crossing ability, while the midfield screen protects a back four that has improved significantly in recent years.\n\nPeru's tactical identity is built on patience and technical quality in possession. They recycle the ball through midfield, looking for moments to accelerate through the final third. Their defensive shape is compact, with the midfield lines sitting close together to deny space between the lines. The challenge for Peru is that Nigeria's athleticism can overwhelm their pressing resistance.\n\nThe critical battle is in the transition moments. When Nigeria win the ball, their pace in behind is devastating. When Peru have possession, their ability to control tempo and find pockets of space can neutralize Nigeria's physical advantages. Whoever controls the game's rhythm controls the outcome.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Victor Osimhen vs Peru's central defensive partnership — pace and power against experience and positioning"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Nigeria and Peru are not currently listed in the top-48 Elo rankings with dedicated profiles, but Nigeria's continental performances and Osimhen's club form make them clear favorites. Peru's aging squad and difficult qualifying campaign suggest they enter as underdogs.",
+    "formAnalysis": "Nigeria qualified impressively from the African confederation, with Osimhen leading the scoring charts. Peru's CONMEBOL qualifying route was arduous, as it always is, and they scraped through in the final stages. Form suggests Nigeria are peaking at the right time.",
+    "squadValueComparison": "Nigeria's squad, anchored by Osimhen's estimated $100M+ valuation, significantly outvalues Peru's roster. The financial gap reflects the generational shift — Nigeria's squad is younger, more European-based, and more valuable on the transfer market.",
+    "injuryImpact": "Both teams will be monitoring key players through the preparation period. Nigeria's depth in attack gives them a safety net that Peru, reliant on a smaller core of experienced players, cannot match.",
+    "bettingPerspective": "Nigeria are favored by bookmakers, reflecting their superior squad depth and Osimhen's world-class finishing. Peru's draw price offers value for those who believe in their tactical discipline and tournament experience.",
+    "historicalPattern": "All 3 previous meetings between these sides have been decided by a single goal. Peru lead the series 2-1, but Nigeria won the most recent encounter in 2018."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "narrative": "Osimhen is the kind of striker that keeps defenders awake at night. His combination of explosive pace, aerial ability, and predatory instinct in the box makes him one of the most complete forwards in world football. His Serie A exploits with Napoli have proven he can deliver on the biggest stages, and the World Cup represents the ultimate canvas for a player who thrives on high-stakes moments. Against Peru's experienced but aging defense, Osimhen's relentless movement will be the decisive factor.",
+      "statline": "Led Napoli's attack with 20+ goals in consecutive Serie A seasons"
+    },
+    {
+      "name": "Paolo Guerrero",
+      "teamCode": "PER",
+      "narrative": "At 42, Guerrero defies every biological convention about what a professional footballer should be able to do. Peru's all-time leading scorer and eternal captain is the soul of this team. His hold-up play, heading ability, and sheer force of will have dragged Peru through qualifying campaigns that seemed impossible. This is almost certainly his final World Cup — and history shows that Guerrero saves his finest moments for the grandest occasions. He scored against Nigeria in their 2012 meeting.",
+      "statline": "Peru's all-time leading scorer and scored in the 2012 head-to-head victory over Nigeria"
+    },
+    {
+      "name": "Wilfred Ndidi",
+      "teamCode": "NGA",
+      "narrative": "Every great attack needs a great shield, and Ndidi is Nigeria's. The combative midfielder's ability to break up play, win aerial duels, and recycle possession gives the Super Eagles the defensive platform from which Osimhen and the forwards can operate with freedom. His reading of the game and positional intelligence are among the best in African football.",
+      "statline": "Among the Premier League's top ball-winners across multiple seasons"
+    },
+    {
+      "name": "Renato Tapia",
+      "teamCode": "PER",
+      "narrative": "Tapia is the metronome of Peru's midfield — the player who sets the tempo and dictates the passing patterns that give Peru their identity. His European experience has sharpened his game, and his ability to screen the defense while distributing accurately is essential to Peru's game plan. Against Nigeria's pressing, Tapia's composure under pressure will be tested to its absolute limit.",
+      "statline": "Peru's midfield anchor with over 80 international appearances"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Nigeria 2-1 Peru",
+    "confidence": 62,
+    "narrative": "Nigeria's attacking quality and physical superiority should prove decisive, but Peru will not go quietly. Expect the South Americans to make this uncomfortable, to slow the game down and frustrate Nigeria's desire to play at pace. But Osimhen is the difference-maker — his ability to punish defensive lapses is unmatched, and Peru's aging backline will struggle to contain his movement for 90 minutes.\n\nPeru will likely score, because they always do in these situations. Guerrero's experience and the team's set-piece quality give them routes to goal. But Nigeria's depth of attacking talent means they can come at Peru from multiple angles, and the second-half fitness advantage will tell.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Nigeria 1-0 Peru",
+        "probability": 22,
+        "reasoning": "A tight, tense affair where Peru's defensive organization limits Nigeria to a single goal. The Super Eagles have to be patient and clinical, winning it late through a moment of Osimhen brilliance."
+      },
+      {
+        "scenario": "Peru 1-0 Nigeria",
+        "probability": 15,
+        "reasoning": "Peru's tournament experience proves decisive. They absorb Nigeria's pressure, score from a set piece through Guerrero, and defend the lead with the stubbornness that has defined Peruvian football for generations."
+      }
+    ]
+  },
+
+  "closingLine": "Three meetings, three one-goal margins. History demands another razor-thin encounter between two proud footballing nations who refuse to give an inch."
+}

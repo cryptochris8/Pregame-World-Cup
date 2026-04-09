@@ -1,0 +1,80 @@
+{
+  "matchKey": "MAR_NGA",
+  "team1Code": "MAR",
+  "team2Code": "NGA",
+  "team1Name": "Morocco",
+  "team2Name": "Nigeria",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Africa's Titans Collide on the World Stage",
+  "subheadline": "Morocco's 2022 semi-finalists face Nigeria's raw attacking power in a match that could determine African football's standard-bearer",
+
+  "openingNarrative": "African football has never been as strong as it is in 2026, and this match is the proof. Morocco — the nation that reached the 2022 World Cup semi-finals, that defeated Belgium, Spain, and Portugal, that made an entire continent believe that an African World Cup champion was not just possible but inevitable — face Nigeria, the most talented football nation on the continent, a country whose raw attacking quality has produced some of the World Cup's most electrifying moments across decades of competition.\n\nIn 12 previous meetings, Morocco lead 6-3 with 3 draws, but those numbers mask a rivalry of extraordinary intensity. Their most recent encounter — a 2026 AFCON semi-final that ended 0-0 before Morocco prevailed 4-2 on penalties — demonstrated that these two teams are as closely matched as the numbers suggest. Scoring 14 goals to Nigeria's 10 across those 12 matches, Morocco's defensive excellence has typically been the difference. But Nigeria have never brought a striker quite like Victor Osimhen to this fixture before.\n\nThis is more than a football match. It is a statement about the direction of African football — whether Morocco's organized, European-influenced tactical approach or Nigeria's explosive, individually brilliant attacking philosophy will carry the continent's flag deepest into the tournament.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Morocco under Walid Regragui play a 4-3-3 that is among the most tactically flexible in world football. They can dominate possession against weaker sides or sit deep and counter with devastating efficiency against stronger ones — the approach that destroyed Spain and Portugal in 2022. Achraf Hakimi's overlapping runs from right-back create overloads, while Hakim Ziyech's left foot provides the creative spark that unlocks compact defenses.\n\nNigeria's challenge is simple and terrifying: get the ball to Osimhen. The Super Eagles will likely deploy a 4-3-3 that provides a platform for their attackers to express themselves. Samuel Chukwueze's pace on the wing, Osimhen's movement in the box, and the creative quality of their midfield runners give Nigeria multiple attacking avenues. But Nigeria's defensive organization — historically their weakness — must hold against Morocco's precise counter-attacking.\n\nThe tactical battle is a fascinating study in contrasts: Morocco's collective discipline against Nigeria's individual brilliance. Regragui will look to control the tempo and frustrate Nigeria into errors. Nigeria will look to create the kind of chaos where their superior individual talent can thrive. The key: can Nigeria's defense handle Hakimi's forward runs while simultaneously providing Osimhen with service?",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Victor Osimhen vs Morocco's center-backs — Africa's most lethal striker against the continent's most organized defense"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Morocco (ELO: 1725) carry a significantly higher rating, reflecting their 2022 World Cup heroics and dominant qualifying campaign. Nigeria lack a current ELO in the top-48 dataset, but their talent pool — headlined by Osimhen — ensures they are competitive regardless of ratings. Morocco's 12th-place ELO ranking makes them one of the highest-rated African teams in World Cup history.",
+    "formAnalysis": "Morocco's qualifying was perfect: 8 wins, 0 draws, 0 losses, 22 goals scored and just 2 conceded. That's a 100% win rate with the best defensive record in CAF qualifying. Youssef En-Nesyri led their scoring with 5 goals. Nigeria's path to the World Cup featured their own challenges, but their talent pool ensures they arrive with genuine aspirations.",
+    "squadValueComparison": "Morocco ($423M) vs Nigeria — Morocco's squad value reflects the European pedigree of Hakimi ($81.3M), Ziyech, and their Ligue 1 and La Liga contingent. Nigeria's squad, led by Osimhen's enormous market value, represents some of Africa's most sought-after talent. The financial comparison reflects two nations investing heavily in football excellence.",
+    "injuryImpact": "Morocco's squad depth is exceptional by African standards — they can rotate without significant quality loss. Nigeria are more dependent on Osimhen; without him, their attacking threat drops dramatically. His fitness is the single most important variable in this match.",
+    "bettingPerspective": "Morocco are favorites, backed by their 2022 pedigree and perfect qualifying campaign. Nigeria's price offers value for those who believe Osimhen's quality can breach Morocco's defense. The draw is also well-backed, reflecting the recent AFCON semi-final that went to penalties after 0-0.",
+    "historicalPattern": "Twelve meetings: Morocco 6, Nigeria 3, Draws 3. Morocco 14 goals, Nigeria 10. Their 2026 AFCON semi-final ended 0-0 before Morocco won 4-2 on penalties. Despite Morocco's head-to-head advantage, they have never met at a World Cup — this is the first time these African giants collide on football's biggest stage."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "narrative": "The PSG right-back is arguably the best in the world at his position. Hakimi's explosive forward runs create a second attacking dimension that most teams cannot handle — he is simultaneously a defender and a winger, and his ability to deliver crosses at full speed gives Morocco an attacking threat from an unexpected position. His penalty against Spain in the 2022 World Cup shootout — a Panenka that defined an era — showed the nerve that makes him exceptional.",
+      "statline": "Morocco's most valuable player at $81.3M, PSG's world-class right-back"
+    },
+    {
+      "name": "Victor Osimhen",
+      "teamCode": "NGA",
+      "narrative": "Osimhen is the most dangerous striker in African football history — a statement that covers considerable ground. His combination of pace, aerial ability, and clinical finishing makes him virtually unplayable on his day. Against Morocco's organized defense, Osimhen represents the ultimate test: can collective discipline contain individual genius? He will be determined to prove that it cannot.",
+      "statline": "One of the world's most valuable strikers, Nigeria's primary goal threat and focal point"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "narrative": "Ziyech's left foot is one of the great creative weapons in world football. His ability to bend passes into spaces that defenders didn't know existed, combined with his eye for spectacular goals from distance, gives Morocco a dimension that pure tactical coaching cannot replicate. Against Nigeria's defense, Ziyech's set-piece delivery and long-range shooting add constant danger.",
+      "statline": "Morocco's creative maestro, providing the artistic vision behind their tactical machine"
+    },
+    {
+      "name": "Samuel Chukwueze",
+      "teamCode": "NGA",
+      "narrative": "The winger's pace and direct running give Nigeria a counter-attacking outlet that complements Osimhen's central presence. Chukwueze's ability to take on defenders and deliver crosses from wide areas creates the kind of chances that Osimhen thrives on. Against Morocco's full-backs, who push forward aggressively, the space in behind is where Chukwueze can do his most damaging work.",
+      "statline": "Nigeria's explosive winger providing pace and creativity on the flanks"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Morocco 2-1 Nigeria",
+    "confidence": 55,
+    "narrative": "Morocco's superior organization and 2022 World Cup experience give them the edge in a match that will be tight, tactical, and decided by fine margins. Regragui's game plan — absorb Nigeria's attacking pressure and strike on the counter through Hakimi and Ziyech — is proven against far more expensive opposition than Nigeria.\n\nBut Nigeria have Osimhen, and Osimhen changes everything. Expect him to score — Morocco's defense is world-class, but no defense in the world completely neutralizes a striker of his quality over 90 minutes. The difference will be Morocco's ability to score twice through their varied attacking threats, while Nigeria's defensive vulnerabilities limit them to Osimhen's individual brilliance.\n\nThis will be one of the great group stage matches — two proud African footballing nations giving everything on the World Cup stage. The atmosphere will be extraordinary, the quality high, and the result in doubt until the final whistle.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Morocco 1-1 Nigeria",
+        "probability": 22,
+        "reasoning": "Echoing their AFCON semi-final, neither team can find a way to win. Morocco's defense holds for the most part, but Osimhen's quality earns a deserved equalizer. A draw that suits neither team but reflects the competitive reality."
+      },
+      {
+        "scenario": "Nigeria 2-1 Morocco",
+        "probability": 15,
+        "reasoning": "Osimhen scores twice and Nigeria's pressing disrupts Morocco's buildup. The Super Eagles produce the performance that their talent deserves, and African football's balance of power shifts decisively."
+      }
+    ]
+  },
+
+  "closingLine": "Morocco and Nigeria have never met at a World Cup — an astonishing gap in the tournament's history given the quality both nations have produced. When they finally collide in 2026, African football's greatest match will write its first World Cup chapter."
+}

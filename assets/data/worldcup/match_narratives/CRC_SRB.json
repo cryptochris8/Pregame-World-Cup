@@ -1,0 +1,80 @@
+{
+  "matchKey": "CRC_SRB",
+  "team1Code": "CRC",
+  "team2Code": "SRB",
+  "team1Name": "Costa Rica",
+  "team2Name": "Serbia",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Balkan Firepower Meets Central American Defiance",
+  "subheadline": "Serbia's twin striking threat of Mitrovic and Vlahovic takes on Costa Rica's organized resistance in a 2018 World Cup rematch",
+
+  "openingNarrative": "Memory is a powerful thing in football. When Serbia and Costa Rica last met at the 2018 World Cup in Russia, a curling free kick from Aleksandar Kolarov settled a tight encounter 1-0 in Serbia's favor. That single goal represented the fine margins that define World Cup football — Costa Rica's defensive wall stood firm for most of the match, but one moment of quality was enough to decide it.\n\nEight years later, the stakes are identical but the cast has evolved. Serbia arrive with arguably their most potent attacking lineup in a generation. Aleksandar Mitrovic, who plunders goals with the reliability of a metronome, partners with Juventus striker Dusan Vlahovic to form a twin threat that keeps defenders awake at night. Behind them, Dusan Tadic and Sergej Milinkovic-Savic provide creativity and power from midfield.\n\nCosta Rica, as always, build from the back. Keylor Navas remains their talisman and spiritual leader, the man around whom their entire defensive philosophy orbits. The question for Costa Rica is not whether they can defend — they always can — but whether they can find the attacking moments to hurt a Serbian side that has vulnerabilities of its own at the back.\n\nThis is a match where Serbia's ambition collides with Costa Rica's pragmatism, and the winner may well be determined by which team better manages the critical moments that define World Cup football.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Serbia's 3-4-1-2 system is built to unleash Mitrovic and Vlahovic together, with Tadic operating as the creative link between midfield and attack. This formation provides width through wing-backs and central overloads through the striker partnership. The danger for Serbia is that the system can leave space behind the wing-backs when they push forward.\n\nCosta Rica will exploit exactly that vulnerability. Expect a compact 5-4-1 that invites Serbia forward, then looks to spring Joel Campbell and supporting runners into the channels vacated by Serbia's advanced wing-backs. The Ticos' discipline in holding shape will be the foundation, with Navas the last line of a defense designed to frustrate and absorb.\n\nThe midfield battle is crucial. If Serbia's Milinkovic-Savic can dominate the physical duels and Tadic finds pockets of space, the supply line to Mitrovic and Vlahovic will flow. If Costa Rica's midfield compact denies those spaces, Serbia will be reduced to long-range efforts and crosses into a crowded box.",
+    "team1Formation": "5-4-1",
+    "team2Formation": "3-4-1-2",
+    "keyMatchup": "Mitrovic and Vlahovic vs Costa Rica's back five — can twin strikers crack the Tico wall?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Serbia are the higher-rated side historically. Both teams qualified through playoff routes, but Serbia's European pedigree and squad depth place them as clear favorites in this encounter.",
+    "formAnalysis": "Serbia qualified through a competitive UEFA playoff path, showcasing their ability to deliver in knockout scenarios. Their attacking output was impressive, driven by the Mitrovic-Vlahovic partnership. Costa Rica's CONCACAF qualification demonstrated trademark defensive resilience.",
+    "squadValueComparison": "Serbia's squad value is significantly higher, with Vlahovic alone worth more than most of Costa Rica's roster combined. However, Costa Rica's 2014 World Cup run proved that squad value means little when tactical organization and goalkeeping brilliance combine.",
+    "injuryImpact": "Serbia's depth allows them to absorb injuries better than Costa Rica, for whom Navas's fitness is existential. Any knock to either Mitrovic or Vlahovic would significantly reduce Serbia's attacking threat.",
+    "bettingPerspective": "Serbia are clear favorites, and the 2018 precedent of a 1-0 victory reinforces that view. However, value exists in the draw market given Costa Rica's ability to make matches tight and tense.",
+    "historicalPattern": "Serbia won the only previous World Cup meeting 1-0 in 2018. Kolarov's free kick was the difference in a match Costa Rica could easily have drawn."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Aleksandar Mitrovic",
+      "teamCode": "SRB",
+      "narrative": "Mitrovic is a throwback — a center-forward who lives for the physical duel, who thrives on crosses and set pieces, and who has scored goals wherever he has played. His record for Serbia is phenomenal, and his partnership with Vlahovic gives this team a dual threat that most nations would envy. Against Costa Rica's deep defense, his aerial presence and penalty-box instincts will be crucial.",
+      "statline": "Serbia's all-time leading scorer with 50+ international goals"
+    },
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "narrative": "Navas is more than a goalkeeper for Costa Rica — he is the embodiment of their footballing philosophy. His reflexes, his positioning, his ability to make saves that defy physics — all of it elevates Costa Rica from plucky underdogs to genuine competitors. The 2018 match against Serbia tested him, and this rematch will demand another heroic performance.",
+      "statline": "3x Champions League winner with Real Madrid"
+    },
+    {
+      "name": "Dusan Vlahovic",
+      "teamCode": "SRB",
+      "narrative": "Vlahovic represents Serbia's present and future. The Juventus striker combines technical quality with physical power, capable of scoring from range, in the air, or through incisive movement in the box. His partnership with Mitrovic is complementary — where Mitrovic is the battering ram, Vlahovic is the scalpel.",
+      "statline": "Juventus's leading scorer, key to Serbia's attacking system"
+    },
+    {
+      "name": "Joel Campbell",
+      "teamCode": "CRC",
+      "narrative": "The veteran of Costa Rica's greatest World Cup chapter in 2014, Campbell now carries the experience and tactical intelligence that comes from hundreds of matches. His ability to hold the ball up front under pressure and bring teammates into play is essential to Costa Rica's counter-attacking game plan. When the Ticos win the ball and look up, Campbell is their first option.",
+      "statline": "Costa Rica's most experienced World Cup attacker"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Serbia 2-1 Costa Rica",
+    "confidence": 62,
+    "narrative": "Serbia's attacking quality should ultimately prove decisive, but this will not be straightforward. Costa Rica have the defensive tools to make this uncomfortable, and Navas is capable of keeping them in any match. Expect a first half of Serbian pressure meeting Costa Rican resistance, with the breakthrough coming in the second half when the Ticos' energy levels begin to drop.\n\nThe wildcard is set pieces. Serbia's height advantage makes them dangerous from dead-ball situations, and this could be the avenue through which they break the deadlock. Costa Rica's best chance is to catch Serbia on the counter — if Campbell can create one clear opportunity, the Ticos have the quality to take it.\n\nThis is a match that could hinge on a single moment of brilliance or a defensive error under pressure.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Costa Rica 1-0 Serbia",
+        "probability": 15,
+        "reasoning": "Navas produces a masterclass, Costa Rica nick a goal from a counter-attack, and Serbia's frustration leads to tactical chaos in the final 20 minutes."
+      },
+      {
+        "scenario": "Serbia 3-0 Costa Rica",
+        "probability": 18,
+        "reasoning": "Serbia click into gear early, the Mitrovic-Vlahovic partnership overwhelms Costa Rica's defense, and the game is effectively over by halftime."
+      }
+    ]
+  },
+
+  "closingLine": "The 2018 meeting was decided by a single strike of genius. This rematch promises more goals but the same underlying tension — Serbia's firepower against Costa Rica's fortress mentality."
+}

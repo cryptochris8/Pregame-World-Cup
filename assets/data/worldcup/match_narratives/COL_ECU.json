@@ -1,0 +1,80 @@
+{
+  "matchKey": "COL_ECU",
+  "team1Code": "COL",
+  "team2Code": "ECU",
+  "team1Name": "Colombia",
+  "team2Name": "Ecuador",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Andean Derby Goes Global: South American Neighbors Bring Their Rivalry to the World Cup Stage",
+  "subheadline": "Colombia's creative flair against Ecuador's defensive discipline in a match between border rivals who know each other better than anyone",
+
+  "openingNarrative": "Some rivalries are born from proximity. Colombia and Ecuador share a 590-kilometer border, a linguistic heritage, and a footballing antagonism that has been forged through decades of CONMEBOL qualifying campaigns where every point feels like a matter of national survival. In over 30 meetings, Colombia have held the upper hand, but Ecuador's current generation has narrowed that gap to the point where historical dominance counts for very little.\n\nThis World Cup encounter brings their rivalry to the biggest stage in football for the first time in years, and the contrasting styles could not be more compelling. Colombia play with the flair and creative expression that defines South American football at its best -- James Rodriguez's vision, Luis Diaz's electric pace, and the rhythmic passing that makes Los Cafeteros one of the most watchable teams in the world. Their qualifying campaign produced 28 goals in 18 matches, with Diaz scoring 7 to lead the attack.\n\nEcuador are the antithesis: disciplined, organized, and built on a defensive foundation that borders on the obsessive. Sebastian Beccacece's side conceded just 5 goals in 18 CONMEBOL qualifying matches -- a record that speaks to extraordinary tactical discipline. Moises Caicedo, the most expensive signing in British football history, is the midfield anchor around whom everything revolves. Piero Hincapie provides defensive composure. Enner Valencia, with 6 qualifying goals, guarantees that Ecuador's defensive approach does not come at the expense of attacking threat.\n\nIn the group stage, this match could determine which South American side progresses and which must look for results elsewhere. The neighbors have never needed each other less -- or wanted to beat each other more.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Colombia's 4-2-3-1 is designed to funnel the ball to James Rodriguez in the number 10 position, from where his vision and passing range can unlock any defense. Luis Diaz's pace on the left wing stretches the pitch horizontally, creating space in the center for James to operate. The double pivot provides defensive balance, but Colombia's full-backs push high, which can leave them vulnerable on transitions.\n\nEcuador's 4-3-3 is the defensive mirror: Caicedo sits at the base of midfield, reading the game with preternatural awareness and snuffing out attacks before they develop. Hincapie and Pacho are comfortable under pressure, allowing Ecuador to build from the back even when Colombia press high. The counter-attack is Ecuador's primary offensive weapon -- quick, precise, and devastating when Caicedo launches the ball forward into the channels.\n\nThe key battle: James Rodriguez's creativity vs Caicedo's defensive intelligence. If James finds time and space to dictate, Colombia will create chances. If Caicedo can press James early and deny him the ball in dangerous areas, Ecuador's defensive structure will suffocate Colombia's attacking intent.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "James Rodriguez's creative genius vs Moises Caicedo's defensive mastery -- the battle of South American midfield philosophies"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Colombia (ELO: 1730, rank 11) vs Ecuador (ELO: 1660, rank 23) -- a 70-point gap that gives Colombia a marginal advantage, roughly translating to a 58% win probability. But Ecuador's defensive record suggests the ELO gap overstates Colombia's likely dominance.",
+    "formAnalysis": "Colombia qualified with 7 wins, 7 draws, 4 losses in 18 CONMEBOL matches, scoring 28 and conceding 18. Ecuador's defensive mastery produced 8 wins, 8 draws, 2 losses with just 5 goals conceded -- the best defensive record in CONMEBOL qualifying. Ecuador's 14 goals scored suggest they can struggle for creativity.",
+    "squadValueComparison": "Colombia's squad ($350M) vs Ecuador's ($433M) -- Ecuador actually outvalue Colombia on paper, largely due to Caicedo's extraordinary individual valuation ($150M). This financial dynamic reflects the shift in South American football's power structure.",
+    "injuryImpact": "Colombia's over-reliance on James Rodriguez is a concern -- without his creativity, their attack loses its conductor. Ecuador's dependence on Caicedo is similarly acute, though their defensive structure provides insurance even without their star midfielder.",
+    "bettingPerspective": "Colombia are slight favorites, but Ecuador represent excellent value for the draw or outright win. Their qualifying record -- specifically those 5 goals conceded -- suggests they will be extremely difficult for Colombia to break down.",
+    "historicalPattern": "Colombia lead the all-time head-to-head with over 30 meetings. The rivalry is intense but familiar -- both teams know each other's strengths and weaknesses intimately from years of CONMEBOL qualifying."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Luis Diaz",
+      "teamCode": "COL",
+      "narrative": "Liverpool's Colombian winger is the player most likely to break the deadlock in a match that could be decided by a single moment of brilliance. Diaz's pace and dribbling ability are terrifying in one-on-one situations, and his 7 qualifying goals prove he can deliver on the international stage. Against Ecuador's disciplined defense, he needs to create space through movement and timing rather than relying on his trademark runs from deep.",
+      "statline": "7 goals in 18 qualifying matches, Liverpool's $93.8M match-winner"
+    },
+    {
+      "name": "Moises Caicedo",
+      "teamCode": "ECU",
+      "narrative": "The most expensive signing in British football history is also the most important player in this match. Caicedo's defensive reading of the game, his interceptions, and his ability to launch counter-attacks with a single pass make him the player who will determine whether this match is played on Colombia's terms or Ecuador's. His battle with James Rodriguez is the match within the match.",
+      "statline": "Chelsea's record $150M signing, Ecuador's midfield general"
+    },
+    {
+      "name": "James Rodriguez",
+      "teamCode": "COL",
+      "narrative": "The 2014 Golden Boot winner brings set-piece mastery and creative vision that remain world-class even as his legs slow. Against Ecuador's low block, his ability to find the killer pass -- the one that unpicks organized defenses -- is Colombia's greatest weapon. His free kicks and corners are a constant threat that Ecuador's aerial defense must be prepared for.",
+      "statline": "2014 World Cup Golden Boot winner, Colombia's creative maestro"
+    },
+    {
+      "name": "Enner Valencia",
+      "teamCode": "ECU",
+      "narrative": "Ecuador's World Cup specialist has scored in multiple tournaments and his 6 qualifying goals prove the predatory instincts remain sharp. In a match where Ecuador will have limited possession, Valencia's ability to convert the few chances that arise is absolutely critical. He is the kind of striker who can spend 85 minutes anonymous and then produce a finish that wins a World Cup match.",
+      "statline": "6 goals in qualifying, Ecuador's all-time World Cup top scorer"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Colombia 2-1 Ecuador",
+    "confidence": 55,
+    "narrative": "Colombia's superior attacking quality should provide just enough firepower to overcome Ecuador's defensive fortress, but this will be a match of fine margins and high tension. The Andean derby dynamic -- where both teams know each other intimately -- means there will be few surprises tactically. Instead, individual moments will decide the outcome.\n\nDiaz's pace will eventually find a gap in Ecuador's otherwise impregnable defense. James' set-piece delivery will create at least one clear-cut chance from a dead ball. But Ecuador will score too -- Valencia's World Cup instincts are too sharp to be denied -- and the final 20 minutes will be played at a fever pitch of anxiety.\n\nColombia's depth and home-continent advantage should see them through, but nobody who has watched Ecuador's defensive masterclasses in qualifying would be surprised if the scoreline tells a different story.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Ecuador 1-0 Colombia",
+        "probability": 22,
+        "reasoning": "Ecuador's defensive discipline produces a masterclass. Caicedo controls the midfield, Colombia's creativity is stifled, and a Valencia counter-attack goal proves the difference in a match defined by Ecuador's tactical superiority."
+      },
+      {
+        "scenario": "Colombia 1-1 Ecuador",
+        "probability": 25,
+        "reasoning": "The familiar rivals cancel each other out. Colombia's possession dominance is neutralized by Ecuador's defensive wall, and both teams take a point from a contest that reflects the narrowing gap between South American neighbors."
+      }
+    ]
+  },
+
+  "closingLine": "In the Andes, the border between Colombia and Ecuador is marked by rivers and mountains. On the World Cup pitch, it is marked by something more fundamental: two visions of South American football, one built on creativity and the other on resilience, colliding in a match that only one can win."
+}

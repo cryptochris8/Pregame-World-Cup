@@ -1,0 +1,80 @@
+{
+  "matchKey": "CRC_UKR",
+  "team1Code": "CRC",
+  "team2Code": "UKR",
+  "team1Name": "Costa Rica",
+  "team2Name": "Ukraine",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Playing for More Than Football",
+  "subheadline": "Ukraine carry a nation's spirit onto the World Cup stage against Costa Rica's battle-hardened underdogs",
+
+  "openingNarrative": "There are matches that transcend the ninety minutes. When Ukraine take the field at the 2026 World Cup, every pass, every tackle, every goal carries a weight that no tactical analysis can adequately capture. This is a team representing a country at war, a squad drawn from players scattered across Europe's leagues, united by something far more powerful than football. Their very presence at this tournament is a statement of resilience that resonates far beyond sport.\n\nMykhailo Mudryk leads the charge — the Chelsea winger whose explosive pace and directness make him Ukraine's most dangerous attacking weapon. Behind him, Oleksandr Zinchenko brings Arsenal's tactical sophistication and the emotional gravity of a man who has used his platform to advocate tirelessly for his homeland. This is a squad fueled by purpose.\n\nCosta Rica, no strangers to adversity themselves, bring their own brand of determination. A nation of five million that has produced World Cup quarter-finalists, Champions League winners, and a footballing culture that punches relentlessly above its weight. Keylor Navas remains the heartbeat, Joel Campbell the experienced campaigner.\n\nThis first-ever meeting between these nations could be a defining moment for both teams' tournament hopes — a match where group-stage destiny begins to take shape.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Ukraine's approach blends European tactical discipline with the individual brilliance of their attacking players. Expect a 4-3-3 that gives Mudryk license to run at defenders on the left flank, with Zinchenko providing the creative link from midfield. Ukraine's pressing intensity is notable — they hunt the ball in packs and look to transition quickly from defense to attack.\n\nCosta Rica will deploy their familiar deep, compact, and disciplined shape. Their 5-4-1 is designed to deny space in the channels that Mudryk loves to exploit. The key question is whether Costa Rica can contain Mudryk's pace without committing too many defenders, leaving themselves exposed to Ukraine's supporting runners.\n\nThe midfield contest between Zinchenko's composure and Costa Rica's collective pressing will determine the game's tempo. If Ukraine can establish control and build patiently, gaps will eventually appear. If Costa Rica disrupt and frustrate, they can turn this into the kind of scrappy, tactical battle they love.",
+    "team1Formation": "5-4-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Mykhailo Mudryk vs Costa Rica's right-sided defense — raw pace against organized resistance"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Ukraine are the stronger-rated side historically. Their recent tournament performances — Euro 2020 quarter-finals — demonstrate they can compete at the highest level when motivated. Both teams qualified through playoff routes.",
+    "formAnalysis": "Ukraine qualified through a demanding UEFA playoff route that tested their mental fortitude. Costa Rica earned their place through CONCACAF qualifying, demonstrating the defensive organization that has been their hallmark for over a decade.",
+    "squadValueComparison": "Ukraine's squad carries significantly more market value, with Mudryk (Chelsea) and Zinchenko (Arsenal) representing hundreds of millions in transfer fees. Costa Rica's value lies in experience and system rather than individual price tags.",
+    "injuryImpact": "Mudryk's fitness is crucial to Ukraine's attacking plans — without his pace, their system loses its primary weapon in transition. For Costa Rica, Navas remains irreplaceable between the posts.",
+    "bettingPerspective": "Ukraine are moderate favorites, but Costa Rica's ability to make matches tight and competitive means value exists in the draw and low-scoring outcomes.",
+    "historicalPattern": "This is the first-ever meeting between Costa Rica and Ukraine in any competition. No precedent exists to guide expectations."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Mykhailo Mudryk",
+      "teamCode": "UKR",
+      "narrative": "Mudryk's pace is terrifying in open space — a blur of movement that can turn a defensive situation into a goal-scoring opportunity in seconds. His Chelsea career has been a work in progress, but on the international stage, freed from club constraints, Mudryk becomes Ukraine's most devastating weapon. Against Costa Rica's deep defense, his ability to receive in tight spaces, turn, and accelerate will be the key to unlocking the door.",
+      "statline": "Ukraine's most dangerous attacker with double-digit goal involvements for club and country"
+    },
+    {
+      "name": "Keylor Navas",
+      "teamCode": "CRC",
+      "narrative": "At what may be his final World Cup, Navas carries the weight of an entire nation's footballing identity on his shoulders. His three Champions League titles with Real Madrid made him a legend in European football, but it is his performances in Costa Rican colors that define his place in Central American sporting history. Against Ukraine, he will need every ounce of that experience.",
+      "statline": "3x Champions League winner, 100+ international caps"
+    },
+    {
+      "name": "Oleksandr Zinchenko",
+      "teamCode": "UKR",
+      "narrative": "Zinchenko is more than Ukraine's best passer — he is their emotional leader, the player who wept tears of joy and pain when Ukraine qualified, the man who has kept his country's struggle in the global spotlight. His Arsenal education under Arteta has refined his tactical intelligence, making him the ideal player to dictate Ukraine's tempo and find the passes that create chances.",
+      "statline": "Arsenal regular, Ukraine's captain and creative heartbeat"
+    },
+    {
+      "name": "Joel Campbell",
+      "teamCode": "CRC",
+      "narrative": "Campbell has been here before — the pressure, the expectation, the need to produce something from nothing against superior opponents. His 2014 World Cup performances announced him to the world, and while the years have changed his game, his intelligence and ability to hold the ball under pressure remain invaluable for a Costa Rica side that will spend long periods without possession.",
+      "statline": "Costa Rica's key attacking outlet in World Cup football"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Ukraine 2-1 Costa Rica",
+    "confidence": 60,
+    "narrative": "Ukraine's motivation and individual quality should see them through, but Costa Rica will make this extraordinarily difficult. Expect a tense first half with few clear chances, as Costa Rica's defensive wall holds firm. The breakthrough will likely come from a moment of individual brilliance — Mudryk beating his man, Zinchenko threading a pass through the eye of a needle.\n\nCosta Rica's threat lies in transition. If they can win the ball and release Campbell quickly, they possess the know-how to punish any defensive lapse. A set-piece goal is their most likely route to scoring.\n\nThis is the kind of match where the emotional dimension matters as much as the tactical. Ukraine play for more than three points, and that inner fire could prove the decisive factor.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Costa Rica 0-0 Ukraine",
+        "probability": 20,
+        "reasoning": "Navas produces a heroic display, Costa Rica's defensive wall holds, and Ukraine's attacking quality is blunted by the Ticos' organization. A point each satisfies nobody but hurts neither."
+      },
+      {
+        "scenario": "Ukraine 3-0 Costa Rica",
+        "probability": 15,
+        "reasoning": "Mudryk runs riot against Costa Rica's aging full-backs, scoring twice as Ukraine's pace and power overwhelm Central American resistance."
+      }
+    ]
+  },
+
+  "closingLine": "When Ukraine play, football becomes something larger than sport. Costa Rica understand that feeling better than most — and this meeting of two nations who refuse to accept limitations promises to be one of the group stage's most emotionally charged encounters."
+}

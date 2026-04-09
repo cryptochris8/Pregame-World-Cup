@@ -1,0 +1,80 @@
+{
+  "matchKey": "CZE_KOR",
+  "team1Code": "CZE",
+  "team2Code": "KOR",
+  "team1Name": "Czechia",
+  "team2Name": "South Korea",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Last Dance of Two Tournament Dark Horses",
+  "subheadline": "Son Heung-min's South Korea face Czechia's disciplined collective in a contest between Asian ambition and European resolve",
+
+  "openingNarrative": "There is a rich, underappreciated history between these two nations on football's biggest stage. In 6 previous meetings, the record reads 3 wins for Czechia, 2 for South Korea, and 1 draw — a competitive balance that tells the story of two nations who consistently exceed expectations at major tournaments. Czechia's run to the Euro 2004 semi-finals and South Korea's extraordinary 2002 World Cup campaign on home soil remain among the most memorable underdog stories in football history.\n\nSouth Korea arrive powered by Son Heung-min, the Tottenham captain whose 10 qualifying goals made him the AFC's most prolific marksman on the road to 2026. Son's combination of pace, finishing, and tactical intelligence makes him one of the most complete attackers in world football, and at this stage of his career, the World Cup represents his final opportunity to lead South Korea to the heights their 2002 generation achieved. Kim Min-jae, the Bayern Munich center-back, provides the defensive steel.\n\nCzechia's path to the World Cup was harder — earned through the UEFA playoff system — but their squad is built on collective strength rather than individual stardom. Ivan Hasek's 3-5-2 system prioritizes defensive organization and physical discipline, with Adam Hlozek providing the attacking spark. Their qualifying record — 5 wins, 3 draws, 2 losses, 15 goals scored — reflects a team that wins ugly but wins consistently.\n\nThis is a match that could determine which of these teams advances from the group — and which goes home wishing for one more chance.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "The tactical contrast is fascinating. South Korea's 4-3-3 under Hong Myung-bo is built around Son's ability to devastate from the left flank, cutting inside onto his right foot with a movement that has tormented defenders across Europe for a decade. Lee Kang-in provides the creative link from midfield, while Son Heung-min's off-the-ball runs create chaos in defensive structures.\n\nCzechia's 3-5-2 is designed to absorb exactly this kind of threat. The back three provides security against Son's movement — when he drifts centrally, a third center-back is always covering. The wing-backs can drop to form a back five, creating the kind of compact shape that makes it extraordinarily difficult for opponents to find space. Hlozek's 4 qualifying goals show he can punish from the front.\n\nThe key tactical question is whether South Korea's pressing can disrupt Czechia's build-up. If Czechia are allowed to play through midfield and use their physicality to dominate aerial duels, they can make this match deeply uncomfortable for South Korea. But if Son and Lee can receive in space between the lines, Czechia's back three will be tested to the limit.",
+    "team1Formation": "3-5-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Son Heung-min vs Czechia's back three — can one man break a system designed to stop him?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Czechia (ELO: 1700) vs South Korea (ELO: 1655) — a narrow 45-point gap that makes this one of the closest matches in the group on paper. The ELO suggests a near coin-flip, with Czechia holding a marginal advantage.",
+    "formAnalysis": "South Korea dominated AFC qualifying: 6 wins, 4 draws, 0 losses, 22 goals scored, just 5 conceded. Son Heung-min's 10 goals were remarkable. Czechia qualified via UEFA playoffs: 5 wins, 3 draws, 2 losses, 15 goals scored. Hlozek led with 4 goals.",
+    "squadValueComparison": "South Korea's squad ($315M) outvalues Czechia's ($250M). Kim Min-jae ($87.5M) is the most valuable player in this matchup. However, Czechia's Hlozek ($30M) represents genuine quality in the final third.",
+    "injuryImpact": "Son's fitness is everything for South Korea — without him, their attacking system loses its primary weapon. For Czechia, the system matters more than any individual, making them more resilient to injuries.",
+    "bettingPerspective": "This is genuinely hard to call. Markets will be tight, with South Korea likely slight favorites due to Son's presence. Value may exist on the draw given both teams' tactical discipline.",
+    "historicalPattern": "The 6 previous meetings show a slight Czechia advantage (3-1-2). These teams know each other, and the tight historical record suggests another closely contested match."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "Son is South Korea's greatest ever footballer — a statement that requires no qualification. His 10 qualifying goals were not just numbers; they were moments of brilliance that carried an entire nation's hopes through AFC qualifying. At the World Cup, Son plays with an intensity and purpose that elevates his already world-class game. Against Czechia's disciplined defense, he will need every ounce of that quality to find the spaces that break the deadlock.",
+      "statline": "10 goals in AFC qualifying, Tottenham captain, South Korea's all-time great"
+    },
+    {
+      "name": "Adam Hlozek",
+      "teamCode": "CZE",
+      "narrative": "Hlozek is the sharp end of Czechia's collective approach — a striker whose 4 qualifying goals demonstrate the clinical finishing that makes him dangerous whenever the ball arrives in the box. His combination of physicality and technical quality makes him the ideal target man in Hasek's system, capable of holding the ball up, bringing others into play, and punishing with lethal efficiency when chances arrive.",
+      "statline": "4 goals in UEFA qualifying, Czechia's most valuable player at $30M"
+    },
+    {
+      "name": "Kim Min-jae",
+      "teamCode": "KOR",
+      "narrative": "The Bayern Munich center-back is South Korea's defensive rock — a player whose reading of the game, physical presence, and composure under pressure have made him one of the best defenders in the Bundesliga. Against Czechia's physical approach, Kim's ability to win aerial duels and organize the defense will be crucial. He is the foundation upon which South Korea's World Cup ambitions are built.",
+      "statline": "Bayern Munich starter, valued at $87.5M, the most expensive player in this matchup"
+    },
+    {
+      "name": "Tomas Soucek",
+      "teamCode": "CZE",
+      "narrative": "Soucek's box-to-box energy and aerial dominance make him one of the most underrated midfielders in world football. His Premier League experience with West Ham has given him the tools to compete against anyone, and his ability to arrive late in the box and score from set pieces adds a potent attacking dimension to Czechia's game plan. Against South Korea, his physical presence in midfield will be a significant factor.",
+      "statline": "West Ham's midfield powerhouse, dangerous from set pieces"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "South Korea 2-1 Czechia",
+    "confidence": 52,
+    "narrative": "This is one of the hardest matches in the group stage to predict, and the low confidence reflects genuine uncertainty. South Korea's individual quality — particularly Son's genius — gives them a marginal edge, but Czechia's defensive organization and physical approach mean nothing will come easily.\n\nExpect a tight, tactical first half with few clear chances. The game will open up in the second half as both teams push for the result they need. Son is the player most likely to produce the decisive moment — a darting run, a precise finish, a pass that unlocks the defense.\n\nBut Czechia are built to frustrate exactly this kind of opponent. Their set-piece threat and Soucek's aerial presence give them a route to goal that does not depend on outplaying South Korea in open play. This match could easily go either way.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Czechia 1-0 South Korea",
+        "probability": 25,
+        "reasoning": "Czechia's defensive organization nullifies Son, they score from a Soucek header at a set piece, and South Korea cannot break down the disciplined back three."
+      },
+      {
+        "scenario": "South Korea 3-0 Czechia",
+        "probability": 12,
+        "reasoning": "Son produces a masterclass performance, Lee Kang-in controls midfield, and Czechia's system is overwhelmed by the quality and pace of South Korea's attack."
+      }
+    ]
+  },
+
+  "closingLine": "When Son Heung-min faces Czechia's wall of defenders, it will be the latest chapter in a rivalry between two nations who have made a habit of exceeding expectations. The World Cup belongs to teams like these — dark horses with nothing to lose and everything to prove."
+}

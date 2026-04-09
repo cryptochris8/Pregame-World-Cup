@@ -1,0 +1,80 @@
+{
+  "matchKey": "AUS_USA",
+  "team1Code": "AUS",
+  "team2Code": "USA",
+  "team1Name": "Australia",
+  "team2Name": "United States",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Hosts Face the Socceroos in a Historic First World Cup Meeting",
+  "subheadline": "America's home World Cup dream meets Australia's fighting spirit in a Group D showdown between two rising football nations",
+
+  "openingNarrative": "The United States have waited a generation for this moment. As co-hosts of the 2026 World Cup, they carry the expectation of a nation that has transformed its relationship with football from casual curiosity to genuine passion. When they face Australia in Group D, they do so in front of a home crowd that will create an atmosphere unlike anything either team has experienced.\n\nRemarkably, this is the first-ever World Cup meeting between the USA and Australia, despite both nations having played in multiple tournaments. Their nine previous encounters — all friendlies — have been dominated by the Americans (5-1-3), including a 4-0 victory in Melbourne in 2015 and a 2-1 win in a 2025 pre-World Cup friendly. But World Cup football is a different animal entirely.\n\nThe USA's squad value of $469M — led by Christian Pulisic ($68.8M) — represents the most talented American generation in history. Pulisic's performances for AC Milan, Weston McKennie's Champions League experience with Juventus, and a young core of European-based players give the hosts genuine quality across the pitch. As co-hosts, they qualified automatically, meaning their competitive fitness will be tested immediately.\n\nAustralia arrive as World Cup veterans, having qualified for their fifth consecutive tournament. Their 2022 Round of 16 run proved they can upset hierarchies, and their AFC qualifying campaign — 19 points, Yengi's 6 goals, 4 clean sheets — demonstrated continued growth. The Socceroos' $79.3M squad value is dwarfed by the Americans, but their collective discipline and big-game experience give them weapons that money cannot buy.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "The USA will look to impose themselves on this match with pressing intensity, individual quality, and the energy of the home crowd. Their system prioritizes quick transitions and direct attacking play, with Pulisic as the primary creative force cutting in from the right wing and McKennie providing box-to-box dynamism. The Americans' athleticism and pace make them dangerous in transition.\n\nAustralia will counter with their characteristic organizational discipline. A compact 4-3-3 or 4-4-2 designed to limit space for Pulisic's dribbling and the Americans' pace in behind. Jackson Irvine's midfield leadership will be crucial in managing the game tempo and preventing the USA from playing at the frantic pace they prefer.\n\nThe key tactical battle is tempo control. The USA want a fast, open match where their athleticism and individual quality tell. Australia want a controlled, disciplined affair where their tactical structure limits opportunities. Whichever team imposes their preferred tempo will likely prevail.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Christian Pulisic's creative dribbling vs Australia's organized defensive structure — can the AC Milan star unlock the Socceroo wall?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "USA (ELO: 1690, rank 17) vs Australia (ELO: 1622, rank 30) — a 68-point gap that gives the USA a clear but not overwhelming advantage. Home advantage for the co-hosts adds a significant psychological and environmental edge.",
+    "formAnalysis": "The USA qualified automatically as co-hosts and did not participate in qualifying. Their competitive form comes from friendlies and the CONCACAF Nations League. Australia: 5 wins, 4 draws, 1 loss in AFC qualifying — 19 points, +9 goal difference, Yengi scored 6. Australia's qualifying experience gives them a competitive fitness advantage.",
+    "squadValueComparison": "USA ($469M) vs Australia ($79.3M) — a 6:1 ratio heavily in America's favor. Pulisic ($68.8M) alone is worth nearly Australia's entire squad. But the Socceroos' 2022 World Cup experience suggests they can compete above their financial weight class.",
+    "injuryImpact": "The USA's squad depth means they can absorb injuries without significant tactical disruption. Australia's thinner squad makes any absence critical. Pulisic's fitness is key for the Americans — without him, their creative output diminishes.",
+    "bettingPerspective": "The USA at +8000 for the tournament reflect moderate expectations despite home advantage. Australia will be underdogs in this specific match, but their 2022 experience makes them credible opponents. Home advantage is a significant factor.",
+    "historicalPattern": "First-ever World Cup meeting. USA lead the overall series 5-1-3 from friendlies. The 2022 World Cup saw the USA advance from a group containing England, Iran, and Wales, while Australia reached the Round of 16. Both teams have recent tournament experience."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Christian Pulisic",
+      "teamCode": "USA",
+      "narrative": "The face of American soccer carries the weight of a nation's World Cup dreams on his shoulders — and he has the quality to bear it. Pulisic's dribbling, his ability to create in tight spaces, and his goal-scoring instinct from wide positions make him the USA's most dangerous weapon. At AC Milan, he has competed against the best defenders in Serie A. Against Australia's organized defense, his ability to unlock doors with individual skill will be the Americans' primary creative outlet.",
+      "statline": "USA's most valuable player ($68.8M), AC Milan's creative winger"
+    },
+    {
+      "name": "Jackson Irvine",
+      "teamCode": "AUS",
+      "narrative": "Against the hostile environment of an American home crowd, Irvine's composure and leadership will be Australia's most valuable asset. The captain's experience in European football, his organizational intelligence, and his ability to keep his teammates focused under immense pressure make him the player Australia cannot do without. This is the kind of match where captaincy earns its worth.",
+      "statline": "Australia's captain, Bundesliga-experienced midfielder and squad leader"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "narrative": "Juventus's box-to-box midfielder provides the American engine room with Champions League experience and tireless energy. McKennie's ability to cover ground, win tackles, and arrive in the box for headed goals makes him a constant threat. Against Australia's disciplined midfield, his late runs into the box could create the numerical overloads the USA need to break through.",
+      "statline": "Juventus's experienced midfielder, Champions League-tested"
+    },
+    {
+      "name": "Mathew Ryan",
+      "teamCode": "AUS",
+      "narrative": "The experienced goalkeeper has been Australia's last line of defense through multiple World Cup campaigns. Ryan's shot-stopping ability, his command of the penalty area, and his composure under pressure make him the foundation upon which Australia's defensive organization is built. Against the USA's attacking quality, he will need to produce his finest performance.",
+      "statline": "Australia's experienced shot-stopper across multiple World Cup campaigns"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "USA 3-1 Australia",
+    "confidence": 65,
+    "narrative": "The combination of home advantage, superior individual quality, and the energy of an American crowd that has waited decades for this moment should prove too much for Australia. The USA's athletic, pressing style will test Australia's defensive organization, and over 90 minutes, the hosts' quality in the final third should tell.\n\nBut Australia will not go quietly. The Socceroos' 2022 World Cup experience means they know how to compete at this level, and they will create chances of their own. A Yengi goal — perhaps from a set piece — will give Australia hope, but the USA's depth of attacking options and the crowd's energy will drive them to a comfortable, if not straightforward, victory.\n\nFor the USA, this is the start of something special. For Australia, it is a test that will reveal whether their 2022 progress was a peak or a platform.",
+    "alternativeScenarios": [
+      {
+        "scenario": "USA 1-1 Australia",
+        "probability": 18,
+        "reasoning": "Australia frustrate the hosts with their trademark defensive discipline. The American crowd grows anxious, and the pressure weighs on the home team. A draw that leaves the USA needing results elsewhere."
+      },
+      {
+        "scenario": "USA 2-0 Australia",
+        "probability": 20,
+        "reasoning": "A more controlled American performance. Pulisic provides the creative edge, and two goals — one from open play, one from a set piece — seal a professional victory without the anxiety of conceding."
+      }
+    ]
+  },
+
+  "closingLine": "The first-ever World Cup meeting between the United States and Australia brings together two nations that have grown into football powers through sheer determination. On home soil, America expects. But Australia has made a career of defying expectations."
+}

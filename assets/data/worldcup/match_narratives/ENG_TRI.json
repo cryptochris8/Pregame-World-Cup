@@ -1,0 +1,80 @@
+{
+  "matchKey": "ENG_TRI",
+  "team1Code": "ENG",
+  "team2Code": "TRI",
+  "team1Name": "England",
+  "team2Name": "Trinidad and Tobago",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Soca Warriors Return to Haunt England's Dreams",
+  "subheadline": "Twenty years after holding the Three Lions scoreless for 82 agonizing minutes, Trinidad and Tobago seek to write an even greater chapter",
+
+  "openingNarrative": "June 15, 2006. Franken-Stadion, Nuremberg. For 82 minutes, a tiny twin-island nation of 1.4 million people held mighty England at bay while the footballing world watched in disbelief. Shaka Hislop threw his body at everything. Defenders flung themselves into blocks like men fighting for something far greater than three points. Only the late interventions of Peter Crouch's towering header and Steven Gerrard's thunderbolt preserved England's blushes — but by then, Trinidad and Tobago had already written themselves into World Cup folklore.\n\nNow they return. Different players, different era, but the same impossible dream. This England side is not the flawed collection of egos that stumbled through Germany in 2006. Thomas Tuchel has forged a machine — 8 wins from 8 qualifiers, 22 goals scored, zero conceded. Jude Bellingham has ascended to the pantheon of global superstars. Harry Kane continues his relentless pursuit of tournament glory. Phil Foden and Bukayo Saka provide the kind of wing play that can dismantle any defense on the planet.\n\nBut the World Cup has always been a place where logic bends. Trinidad and Tobago know they cannot match England for quality, depth, or resources. What they can match them for is heart. And at the World Cup, sometimes heart is enough to rewrite the script entirely.",
+
+  "tacticalBreakdown": {
+    "title": "David's Blueprint Against Goliath",
+    "narrative": "Tuchel's England is a 4-2-3-1 of surgical precision. Bellingham operates as the creative fulcrum behind Kane, with Foden and Saka providing devastating width. The double pivot of Declan Rice and a rotating cast protects a defense that did not concede a single goal in qualifying. This is a team built to suffocate opponents through relentless possession and positional superiority.\n\nTrinidad and Tobago have one viable path to survival: replicate 2006. A 5-4-1 or even 6-3-1 formation that turns their penalty area into a fortress. Every player behind the ball, every challenge a statement of defiance. Levi Garcia, their most gifted attacker, will be asked to sit deep and sprint into the rare spaces that open on the counter. The goalkeeper will need to produce the performance of his life.\n\nThe critical question is whether England have learned from 2006. Tuchel's sides are patient but relentless — they move the ball laterally until space appears, then strike with venom. Trinidad must defend for 90 minutes without a single lapse. England need just one moment of quality. The arithmetic is cruel but honest.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "5-4-1",
+    "keyMatchup": "Bukayo Saka vs Trinidad's left-sided defense — England's most creative dribbler against the deepest block in the tournament"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "England (ELO: 1834, ranked 4th) face a Trinidad and Tobago side that sits outside the top 100 in world rankings. The ELO gap of over 400 points translates to roughly an 85% win probability for England — one of the most lopsided matchups of the group stage.",
+    "formAnalysis": "England's qualifying campaign was perfect: 8 wins from 8, 22 goals scored, none conceded. Harry Kane led the way with 8 goals. Trinidad and Tobago qualified through the CONCACAF pathway with significantly more modest numbers, reflecting the vast gulf in resources between these programs.",
+    "squadValueComparison": "England's squad ($1.87B) is the most valuable at the tournament. Trinidad and Tobago's entire squad is worth less than Jude Bellingham alone. The financial disparity is staggering, but the World Cup has never been a game decided solely by accountants.",
+    "injuryImpact": "England enter with a fully fit squad and the luxury of rotation. Trinidad and Tobago need every available player at peak fitness — any key absence could prove catastrophic against this level of opposition.",
+    "bettingPerspective": "England are among the heaviest favorites in any group stage match at the tournament. The draw would represent one of the greatest World Cup upsets in modern history, while a Trinidad victory would arguably surpass any shock result the tournament has ever produced.",
+    "historicalPattern": "In their 2 previous meetings, England have won both. The 2006 World Cup encounter, however, proved that Trinidad and Tobago are capable of competing at the highest level for extended periods. The question is whether they can sustain that effort for a full 90 minutes against a far more clinical England side."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "narrative": "The complete midfielder. At Real Madrid, Bellingham has evolved from a precocious teenage talent into a player who dictates the rhythm of Champions League matches. His ability to arrive late in the box, his vision in tight spaces, and his leadership at just 22 years old make him the heartbeat of this England side. Against Trinidad, he will be the conductor of an orchestra — and the orchestra intends to play a symphony.",
+      "statline": "Part of England's perfect qualifying campaign: 8 wins, 22 goals scored, 0 conceded"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "narrative": "England's all-time leading scorer enters what may be his last realistic shot at a World Cup trophy. After years of near-misses — the 2018 semi-final, the Euro 2020 final, the Euro 2024 final — Kane carries the weight of a nation's expectation with the composure of a man who has learned to channel pressure into performance. His 8 qualifying goals prove the hunger remains insatiable.",
+      "statline": "8 goals in 8 qualifying matches — a goal per game in England's perfect campaign"
+    },
+    {
+      "name": "Levi Garcia",
+      "teamCode": "TRI",
+      "narrative": "If Trinidad and Tobago are to produce a moment of magic, it will likely come from Garcia's boots. The winger carries the creative burden for his nation — part outlet, part inspiration, entirely indispensable. In a side built to defend, Garcia is the pressure valve, the one player trusted to carry the ball forward and create something from nothing. His willingness to take on defenders gives Trinidad their only attacking identity.",
+      "statline": "Trinidad and Tobago's most capped active player and primary creative threat"
+    },
+    {
+      "name": "Marvin Phillip",
+      "teamCode": "TRI",
+      "narrative": "Every great underdog story needs a goalkeeper who transcends his ability for one magical night. Shaka Hislop did it in 2006. Now Phillip steps into the same gloves with the same impossible task: deny England's $1.87 billion attack for 90 minutes. The 2006 match proved that a World Cup goalkeeping performance can echo through decades. Phillip has the chance to write his own chapter.",
+      "statline": "Inherits the legacy of Shaka Hislop's legendary 2006 performance against England"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "England 3-0 Trinidad and Tobago",
+    "confidence": 88,
+    "narrative": "The romantic in every football fan wants to believe Trinidad and Tobago can hold out again, can conjure another 82 minutes of glorious defiance. But this is not the England of 2006 — disjointed, over-reliant on individuals, tactically naive. Tuchel's machine is designed precisely for matches like this: patient build-up, relentless pressure, clinical finishing.\n\nEngland should open the scoring before halftime and add to their tally in the second half as Trinidad's energy inevitably fades. Bellingham will pull the strings, Kane will find the net, and the Three Lions will begin their World Cup campaign with a professional, comprehensive victory.\n\nBut if the first half ends 0-0, every neutral in the stadium will start to believe. Because football has taught us that when a tiny Caribbean nation decides to fight with everything they have, the impossible becomes merely improbable.",
+    "alternativeScenarios": [
+      {
+        "scenario": "England 1-0 Trinidad and Tobago",
+        "probability": 20,
+        "reasoning": "Trinidad channel the spirit of 2006 and produce a heroic defensive performance. England grow frustrated, miss chances, and only break through late. A Crouch-Gerrard moment for the modern era — clinical but far more stressful than it should have been."
+      },
+      {
+        "scenario": "England 1-1 Trinidad and Tobago",
+        "probability": 3,
+        "reasoning": "The ultimate shock. Trinidad score on a rare counter-attack through Garcia and defend with superhuman effort. England equalize but cannot find a winner. It would be the biggest story of the group stage and send shockwaves through the tournament."
+      }
+    ]
+  },
+
+  "closingLine": "In 2006, Trinidad and Tobago proved that the World Cup is the one place where 1.4 million people can hold 56 million hostage for 82 minutes. Twenty years later, the Soca Warriors return with the same audacious dream — and the whole world will be watching to see if lightning strikes twice."
+}

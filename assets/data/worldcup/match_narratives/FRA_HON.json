@@ -1,0 +1,80 @@
+{
+  "matchKey": "FRA_HON",
+  "team1Code": "FRA",
+  "team2Code": "HON",
+  "team1Name": "France",
+  "team2Name": "Honduras",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Mbappe and the Mountain",
+  "subheadline": "France's devastating attack meets Honduras' CONCACAF steel in a rematch of their 2014 World Cup encounter",
+
+  "openingNarrative": "June 15, 2014. Estadio Beira-Rio, Porto Alegre. France opened their World Cup campaign against Honduras with a 3-0 victory that was notable not just for Karim Benzema's brace, but for a moment of technological history — the first goal ever confirmed by goal-line technology at a World Cup. Honduras competed physically that day, as they always do, but the gulf in quality was undeniable.\n\nTwelve years later, the gulf has widened. France's squad is arguably the deepest in the history of international football. Kylian Mbappe, now established as the world's most complete attacking player after his move to Real Madrid, leads a front line that reads like a greatest hits collection of European football. Behind him, Tchouameni and Camavinga provide midfield dynamism from the Santiago Bernabeu, while Griezmann's tactical intelligence connects every phase of play.\n\nHonduras arrive at this World Cup with the same identity they have carried through every qualifying campaign: physical intensity, collective spirit, and an absolute refusal to be intimidated. They have never won a World Cup match in their history — four appearances, zero victories — but that record tells you nothing about the heart they bring to every contest. CONCACAF qualifying is a war of attrition played in scorching heat, on difficult pitches, against opponents who kick you as hard as they play. Honduras have survived that crucible. They will not cower.\n\nBut surviving Mbappe is a different proposition entirely.",
+
+  "tacticalBreakdown": {
+    "title": "The Storm Against the Breakwater",
+    "narrative": "France's 4-2-3-1 under Deschamps is designed to maximize the devastating quality of their attacking players while maintaining the pragmatic defensive structure that has carried them to three World Cup finals in four attempts. Mbappe operates with freedom — drifting across the front line, dropping deep to receive, or making the runs in behind that make him unplayable at full speed. Griezmann provides the glue, connecting midfield to attack with his tireless running and intelligent positioning.\n\nHonduras have no choice but to defend deep. A 5-4-1 or 5-3-2 formation will pack the area in front of their goal, with Alberth Elis isolated as the lone outlet for counter-attacks. The game plan is simple: deny space behind the defense, force France to play in front of them, and pray that the central defenders can win the aerial duels when crosses come in.\n\nThe danger for Honduras is Mbappe in space. Their deep block denies him room to run, but Griezmann's dropping movement and France's midfield rotations will create pockets that Mbappe can exploit with a single burst. Honduras must defend with discipline and composure for 90 minutes. One moment of ball-watching, one defender drawn out of position, and Mbappe will punish them.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "5-4-1",
+    "keyMatchup": "Mbappe vs Honduras' back line — can five defenders contain the world's fastest and most clinical attacker?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "France (ELO: 1870, ranked 3rd) face a Honduras side that sits outside the recognized ELO rankings. The quality gap is enormous, with France among the three or four best teams in the world and Honduras among the tournament's lowest-ranked participants. France's win probability exceeds 85%.",
+    "formAnalysis": "France qualified with 5 wins and 1 draw from 6 matches, scoring 16 goals and conceding 4. Mbappe led the scoring with 4 qualifying goals. Honduras qualified through the CONCACAF pathway, a physical and demanding route that builds resilience but does not prepare teams for the technical quality of sides like France.",
+    "squadValueComparison": "France ($1.64B) vs Honduras — the financial comparison is stark. Mbappe alone ($225M) is worth multiples of Honduras' entire squad. France's bench would be competitive against most national teams' first XIs. The depth advantage is overwhelming.",
+    "injuryImpact": "France's squad depth means even significant absences barely diminish their quality. Honduras need every player fit and firing — any key absence against this level of opponent could be the difference between a competitive match and a rout.",
+    "bettingPerspective": "France are among the tournament's heaviest favorites in any individual match. Honduras' best realistic outcome is keeping the scoreline respectable, though their physical approach gives them a puncher's chance of frustrating France longer than expected.",
+    "historicalPattern": "France won the only previous meeting 3-0 at the 2014 World Cup. Honduras have never won a World Cup match in 4 appearances. The pattern strongly favors France, though Honduras' CONCACAF toughness ensures this will not be a walkover."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "narrative": "The most dangerous footballer on the planet. Mbappe's acceleration is otherworldly — he goes from standing to full sprint faster than any player in world football, and once he is running at your defense, the mathematics of the situation become impossible. His hat-trick in the 2022 World Cup final against Argentina demonstrated that he performs at his absolute peak when the lights burn brightest. Against Honduras, the question is not whether he will score, but how many.",
+      "statline": "4 goals at the 2022 World Cup including a hat-trick in the final; France captain at 27"
+    },
+    {
+      "name": "Alberth Elis",
+      "teamCode": "HON",
+      "narrative": "Honduras' most talented attacker carries an impossible burden: provide an offensive outlet while his entire team defends. Elis has the pace to worry any defense and the experience of European football to know what it takes to compete at this level. He will see precious little of the ball, but his ability to make something from nothing on the rare counter-attack represents Honduras' best hope of causing France discomfort.",
+      "statline": "Honduras' leading attacking threat with European club experience and electrifying pace"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "teamCode": "FRA",
+      "narrative": "The most intelligent player in international football. Griezmann's movement creates the spaces that Mbappe exploits — his understanding of when to drop deep, when to drift wide, when to make the run that pulls a defender out of the defensive line, is unmatched. He is the reason France's attack functions as a unit rather than a collection of individuals. Against Honduras' deep block, his ability to find pockets of space will be essential.",
+      "statline": "France's all-time joint-top scorer at major tournaments; the tactical linchpin of Deschamps' system"
+    },
+    {
+      "name": "Luis Palma",
+      "teamCode": "HON",
+      "narrative": "Celtic's tricky winger represents Honduras' other dimension in attack. Palma's dribbling ability and willingness to run at defenders gives Honduras an outlet on the rare occasions they win the ball in advanced positions. His experience in Scottish football — where physicality meets technical demand — has prepared him for the intensity of a World Cup match, even if the quality gap against France is significant.",
+      "statline": "Celtic's creative winger providing Honduras with dribbling threat and pace on the counter"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "France 3-0 Honduras",
+    "confidence": 85,
+    "narrative": "The 2014 scoreline repeats itself because the fundamental dynamics have not changed: France have world-class quality in every position, and Honduras have courage but not the technical level to live with that quality for 90 minutes.\n\nFrance will dominate possession from the opening whistle. Honduras will defend deep, make it uncomfortable, and frustrate France for a period. But Mbappe's pace, Griezmann's intelligence, and the relentless probing of France's midfield will eventually find the cracks. Once the first goal goes in, Honduras' task becomes nearly impossible.\n\nExpect a patient first half from France — perhaps a single goal from a moment of Mbappe brilliance — followed by a more comfortable second half as Honduras tire and spaces open up. The scoreline will be comprehensive but Honduras will compete with honor throughout.\n\nThat said, Honduras have proven across multiple World Cups that they are nobody's pushovers. If they keep it tight into the hour mark, this could be more nervy than France would like.",
+    "alternativeScenarios": [
+      {
+        "scenario": "France 1-0 Honduras",
+        "probability": 15,
+        "reasoning": "Honduras produce a heroic defensive performance, defending in numbers with incredible discipline and physicality. France grow frustrated, and only a late goal separates the teams. It would be Honduras' most celebrated World Cup loss."
+      },
+      {
+        "scenario": "France 5-0 Honduras",
+        "probability": 8,
+        "reasoning": "France find their devastating best early, Mbappe scores a hat-trick, and Honduras' defensive structure collapses. A statement victory that sends a message to every other team in the tournament."
+      }
+    ]
+  },
+
+  "closingLine": "Honduras know what awaits them. They cannot match France's talent, France's depth, or France's pedigree. But they can match their effort, their desire, and their refusal to surrender. In the World Cup, that is always worth something."
+}

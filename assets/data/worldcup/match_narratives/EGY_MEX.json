@@ -1,0 +1,80 @@
+{
+  "matchKey": "EGY_MEX",
+  "team1Code": "EGY",
+  "team2Code": "MEX",
+  "team1Name": "Egypt",
+  "team2Name": "Mexico",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Salah's Egypt Against the Weight of Mexican Expectation",
+  "subheadline": "Two nations haunted by World Cup near-misses collide in a first competitive meeting where breaking through the group stage would feel like winning the trophy itself",
+
+  "openingNarrative": "There is a particular kind of pain that only tournament football can inflict, and both Egypt and Mexico know it intimately. Mexico have been eliminated in the Round of 16 in seven consecutive World Cups — a record so consistent it has become a national obsession. The 'quinto partido' is not just a football term in Mexico; it is a cultural wound. Egypt carry an even heavier burden: seven Africa Cup of Nations titles, continental dominance that borders on the imperial, yet just three World Cup appearances and no advancement past the group stage since 1934.\n\nThis first competitive meeting between these football cultures feels like a meeting of shared frustrations. Mexico, as co-hosts, carry the expectation of a nation that believes this time — on home soil — the cycle must break. Javier Aguirre's team is built on the Premier League-hardened spine of Edson Alvarez and a supporting cast drawn from Liga MX's best. As automatic qualifiers, Mexico enter without the competitive sharpness of qualifying.\n\nEgypt are battle-hardened from a different kind of fire. Their CAF qualifying campaign was a masterclass: 8 wins, 2 draws, zero losses, 20 goals scored, just 2 conceded. Mohamed Salah scored 9 of them — a one-man demolition crew whose Liverpool brilliance translates seamlessly to the international stage. Behind Salah, Omar Marmoush provides the emerging threat that makes Egypt more than a one-man team.\n\nThis is a match where both teams need a result, where both carry the ghosts of World Cup disappointments past, and where the first goal could change the psychological dynamics of an entire group.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Mexico's 4-3-3 under Aguirre will try to dominate possession against Egypt's more conservative approach. Alvarez controls the midfield tempo, the wingers provide width, and the striker — likely Jimenez — offers the focal point. Mexico's passing game is patient and technical, designed to move opponents out of position before striking through the final third.\n\nEgypt's 4-2-3-1 is built around Salah. Everything flows through the right channel, where Salah cuts inside onto his devastating left foot. The double pivot provides the defensive platform, and Egypt are comfortable conceding possession and defending in a narrow, compact shape. Their counter-attacking speed — Salah's acceleration, Marmoush's directness — is their primary weapon.\n\nThe tactical key is Mexico's left-back. Whoever occupies that position will face the most uncomfortable 90 minutes of their career against Salah's combination of pace, skill, and finishing. If Mexico double up, they create space elsewhere. If they don't, Salah will punish them. There is no good answer.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Mohamed Salah vs Mexico's left-back — an assignment that would make any defender in the world nervous"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Mexico (ELO: 1675) vs Egypt (ELO: 1648) — a tight 27-point gap that makes this essentially a 50-50 match. Mexico's home advantage may not be reflected in the raw ELO, but it adds a significant psychological dimension.",
+    "formAnalysis": "Egypt's CAF qualifying was exceptional: 8 wins, 2 draws, 0 losses, 20 goals scored, 2 conceded. Salah's 9 goals were dominant. Mexico qualified automatically as co-hosts and lack recent competitive form, though their preparation program has been extensive.",
+    "squadValueComparison": "Egypt's squad ($287M) slightly outvalues Mexico's ($261M), driven primarily by Salah's $125M valuation. Alvarez ($43.8M) leads Mexico's individual valuations. The squad values are remarkably close, reinforcing the competitive balance of this fixture.",
+    "injuryImpact": "Salah's fitness is Egypt's World Cup. Without him, their attacking threat diminishes dramatically. Mexico's more balanced squad means they are less dependent on any single individual.",
+    "bettingPerspective": "Mexico's home advantage makes them marginal favorites despite the tight ELO gap. Egypt's Salah-driven counter-attacking threat makes them live underdogs with genuine upset potential.",
+    "historicalPattern": "Just two friendlies in the historical record with no competitive meetings. This is uncharted territory for both nations."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "narrative": "Salah's 9 qualifying goals were not just a numerical achievement — they were a statement of intent from a player who has won everything at club level and now craves the one prize that has eluded him: World Cup glory for Egypt. His left foot is one of football's most lethal weapons, his finishing is ice-cold, and his ability to produce magic in the tightest spaces makes him the player Mexico fear most. This is Salah's stage.",
+      "statline": "9 goals in CAF qualifying, valued at $125M, 200+ Liverpool goals"
+    },
+    {
+      "name": "Edson Alvarez",
+      "teamCode": "MEX",
+      "narrative": "Alvarez is the spine of this Mexican team — the player who makes everything function. His defensive awareness, his ability to break up play, and his leadership on the pitch give Mexico the foundation upon which their attacking ambitions are built. Against Egypt's counter-attacking threat, Alvarez's reading of the game will be crucial in intercepting the passes that feed Salah's runs.",
+      "statline": "Mexico's captain and defensive anchor, valued at $43.8M"
+    },
+    {
+      "name": "Omar Marmoush",
+      "teamCode": "EGY",
+      "narrative": "Marmoush has emerged as the player who ensures Egypt are not solely dependent on Salah. His pace, directness, and improving finishing have made him one of the Bundesliga's most exciting attackers, and his ability to stretch defenses creates the space that Salah exploits. Against Mexico, his runs in behind could be devastating.",
+      "statline": "Egypt's emerging star, Bundesliga proven attacker"
+    },
+    {
+      "name": "Raul Jimenez",
+      "teamCode": "MEX",
+      "narrative": "Jimenez brings the experience and composure that Mexico need at a home World Cup. His ability to hold the ball up, create chances for teammates, and score decisive goals makes him Mexico's most reliable attacking option. In front of a passionate Mexican crowd, Jimenez will feed off the energy and channel it into the kind of performance that defines careers.",
+      "statline": "Mexico's experienced striker with Premier League pedigree"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Mexico 2-1 Egypt",
+    "confidence": 52,
+    "narrative": "Home advantage tips the balance in what should be a fascinating, tightly contested encounter. Mexico's crowd will create an atmosphere that elevates their performance, and Aguirre's team has the tactical sophistication to manage a match against a counter-attacking opponent.\n\nBut Salah is the X-factor that no home advantage can neutralize. His ability to produce a goal from nothing means Egypt always carry a threat, regardless of the match state. Expect Mexico to dominate possession and create chances through patient build-up, while Egypt look dangerous every time they win the ball and spring Salah forward.\n\nThe match will likely be decided by a moment of individual quality on either side. In a contest this close, the details matter — who takes their chances, who makes the crucial defensive play, and whose composure holds under pressure.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Egypt 2-0 Mexico",
+        "probability": 18,
+        "reasoning": "Salah produces two devastating counter-attacking goals, Egypt's defense holds firm against Mexico's possession, and the host nation's worst nightmare unfolds in front of their own fans."
+      },
+      {
+        "scenario": "Mexico 3-0 Egypt",
+        "probability": 15,
+        "reasoning": "The home crowd lifts Mexico to an inspired performance, Alvarez dominates midfield, and Egypt's conservative approach is punished by the quality and intensity of a team playing for national pride."
+      }
+    ]
+  },
+
+  "closingLine": "Mexico and Egypt both arrived at this World Cup carrying the same question: can this be the tournament where everything finally changes? By the final whistle, one of them will be closer to an answer."
+}

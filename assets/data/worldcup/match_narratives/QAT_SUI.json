@@ -1,0 +1,80 @@
+{
+  "matchKey": "QAT_SUI",
+  "team1Code": "QAT",
+  "team2Code": "SUI",
+  "team1Name": "Qatar",
+  "team2Name": "Switzerland",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Swiss Machine Against Qatar's Redemption Quest",
+  "subheadline": "Switzerland's tournament-hardened squad faces a Qatar team desperate to erase the painful memory of their home World Cup",
+
+  "openingNarrative": "Qatar's 2022 World Cup was supposed to be the moment that announced their football to the world. Billions spent on infrastructure, a generation of players developed through the Aspire Academy, and the home advantage that is supposed to propel host nations to their greatest achievements. Instead, Qatar became the first host nation in World Cup history to lose all three group-stage matches. Zero goals scored. Zero points earned. The nation's footballing reputation, so carefully cultivated over two decades, was shattered in three devastating evenings.\n\nNow they face Switzerland — a team that represents everything Qatar aspires to be on the football pitch. The Swiss are the ultimate tournament performers: organized, disciplined, tactically sophisticated, and ruthlessly efficient. They have reached the knockout rounds in 4 of their last 5 major tournaments, eliminated France on penalties at Euro 2020, and carried the same Murat Yakin system that makes them one of the hardest teams in the world to beat.\n\nThe sole previous meeting between these sides offers Qatar a sliver of hope: they won 1-0 in a 2018 friendly in Lugano. But a friendly in Switzerland and a World Cup match are different planets. Qatar need this victory to prove their 2022 was an aberration, not an identity. Switzerland need it to confirm their status as genuine dark horses. Something has to give.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Switzerland's 3-4-3 is one of the most distinctive tactical setups in international football. Three center-backs, including Akanji, build from the back with composure. Wing-backs provide width and crossing ability. Xhaka sits deep as the metronome, dictating tempo and launching attacks with surgical passing. The front three interchange with fluidity, creating overloads that are nearly impossible to defend against.\n\nQatar's 3-5-2 under Luis Garcia mirrors the three-at-the-back structure but with a more defensive emphasis. Five midfielders provide a numerical advantage in the central zones, while Afif and Ali operate as a strike partnership that can punish defensive lapses. Qatar's Spanish-influenced possession play means they won't simply park the bus — they will attempt to compete for the ball.\n\nThe tactical battle centers on midfield control. Xhaka's ability to dictate tempo will be tested by Qatar's numerical midfield superiority. If Switzerland can bypass Qatar's pressing with quick passing combinations, their attacking quality will create chances. If Qatar can match Switzerland's intensity and maintain their shape, this becomes a genuine contest.",
+    "team1Formation": "3-5-2",
+    "team2Formation": "3-4-3",
+    "keyMatchup": "Granit Xhaka vs Qatar's midfield five — Switzerland's orchestrator against Qatar's numerical advantage in the center"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Switzerland (ELO: 1680, rank 19) vs Qatar (ELO: 1590, rank 35) — a 90-point gap that gives Switzerland roughly a 62% win probability. The gap reflects their vastly different tournament pedigrees.",
+    "formAnalysis": "Switzerland have reached the knockout rounds in 4 of their last 5 major tournaments. Qatar's contrasting record is stark: three defeats and zero goals at the 2022 World Cup, offset by two Asian Cup triumphs (2019 and 2023). Qatar dominate Asia; they have struggled against European opposition.",
+    "squadValueComparison": "Switzerland ($466M, led by Manuel Akanji at $56.3M) vs Qatar ($66.9M, led by Akram Afif at $10M). Switzerland's squad is nearly 7x more valuable. The gap reflects the concentration of Swiss players at top European clubs versus Qatar's domestically-based squad.",
+    "injuryImpact": "Switzerland's depth across all positions gives them resilience against injuries. Qatar's squad is thinner, and any absence of Afif — their primary creative force — would be particularly damaging.",
+    "bettingPerspective": "Switzerland are comfortable favorites. Qatar's only previous meeting — a 1-0 win in a 2018 friendly — offers scant reassurance. The Swiss defensive record at tournaments makes the under 2.5 goals market attractive.",
+    "historicalPattern": "1 meeting: Qatar won 1-0 in a 2018 friendly in Lugano, Switzerland. Qatar's sole victory over the Swiss provides a psychological footnote, but the competitive context is entirely different."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Granit Xhaka",
+      "teamCode": "SUI",
+      "narrative": "Xhaka has been reborn at Bayer Leverkusen, transforming from a polarizing figure at Arsenal into the heartbeat of Germany's first unbeaten Bundesliga champions. His passing range, tactical intelligence, and leadership make him the most important player in Yakin's system. Against Qatar's five-man midfield, Xhaka's ability to find space and dictate tempo will determine whether Switzerland control the match.",
+      "statline": "Led Bayer Leverkusen to an unbeaten Bundesliga season; Switzerland's record appearance-maker among outfield players"
+    },
+    {
+      "name": "Akram Afif",
+      "teamCode": "QAT",
+      "narrative": "Afif is Qatar football's crown jewel — the Asian Player of the Year whose creativity, vision, and technical ability have made him the focal point of everything Qatar do in attack. His performance at the 2022 World Cup was, like his teammates', below his best. This tournament represents redemption. Against Switzerland's organized defense, Afif's ability to find space and create chances from nothing is Qatar's most valuable asset.",
+      "statline": "Asian Player of the Year; Qatar's creative heartbeat valued at $10M"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "narrative": "Embolo brings the physical presence and goal threat that Yakin's system demands from the center-forward position. His ability to hold the ball up, bring others into play, and finish with power gives Switzerland multiple attacking angles. His emotional winner against Cameroon at the 2022 World Cup proved he can deliver in the most high-pressure moments.",
+      "statline": "Scored the match-winner against Cameroon at the 2022 World Cup"
+    },
+    {
+      "name": "Almoez Ali",
+      "teamCode": "QAT",
+      "narrative": "Ali's nine-goal haul at the 2019 Asian Cup announced him as one of Asian football's most lethal finishers. But the World Cup has been unkind — zero goals in three matches as host in 2022. Redemption drives Ali in 2026, and his pace and movement give Qatar a genuine goal threat that was painfully absent four years ago.",
+      "statline": "9 goals at the 2019 Asian Cup; Qatar's all-time leading scorer seeking World Cup redemption"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Switzerland 2-0 Qatar",
+    "confidence": 70,
+    "narrative": "Switzerland's tournament DNA makes them supremely difficult to beat at major championships, and their tactical sophistication under Yakin is perfectly suited to controlling matches against technically inferior opponents. Qatar will compete — their 2018 friendly victory proves they can — but the leap from Asian Cup dominance to World Cup competitiveness remains their fundamental challenge.\n\nExpect Switzerland to control possession and territory from the start, patiently probing for openings while denying Qatar any counter-attacking opportunities. The first goal will likely come from a set-piece or a moment of individual quality from Embolo or one of the attacking midfielders. The second will arrive when Qatar push forward in search of an equalizer and leave space for Switzerland to exploit.\n\nQatar will have their moments — Afif will produce at least one moment of genuine quality, and Ali's pace will test Switzerland's center-backs. But the Swiss defensive record at tournaments is outstanding, and their collective discipline should prove too much for Qatar's attack.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Qatar 1-1 Switzerland",
+        "probability": 15,
+        "reasoning": "Afif produces individual brilliance to give Qatar the lead, and they defend with the discipline that won them two Asian Cups. Switzerland equalize but cannot find a winner, and Qatar earn a famous point that surpasses anything they achieved in 2022."
+      },
+      {
+        "scenario": "Switzerland 4-0 Qatar",
+        "probability": 10,
+        "reasoning": "Switzerland are clinical from the start. Qatar's confidence crumbles after an early goal, and the Swiss attack runs riot. A humiliation that echoes Qatar's 2022 World Cup experience."
+      }
+    ]
+  },
+
+  "closingLine": "Qatar spent billions to host a World Cup and walked away without a point. Now, far from home, they must prove that their football — not just their stadiums — belongs on the world stage."
+}

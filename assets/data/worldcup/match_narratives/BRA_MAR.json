@@ -1,0 +1,80 @@
+{
+  "matchKey": "BRA_MAR",
+  "team1Code": "BRA",
+  "team2Code": "MAR",
+  "team1Name": "Brazil",
+  "team2Name": "Morocco",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Africa's New Superpower Meets South America's Fallen Giant",
+  "subheadline": "Morocco's 2022 semi-final heroics rewrote football history -- now they face a Brazil desperate to reclaim their throne",
+
+  "openingNarrative": "When Morocco walked off the pitch at the 2022 World Cup as semi-finalists -- the first African nation in history to reach the last four -- they did not merely make history. They shattered a paradigm. For decades, African teams had been cast as colorful underdogs, capable of stirring group stage upsets but ultimately incapable of competing with football's established elite in the knockout rounds. Morocco destroyed that narrative by eliminating Belgium, Spain, and Portugal, playing football that was tactically immaculate, physically fearsome, and emotionally irresistible. The Atlas Lions did not sneak through. They marched.\n\nNow, four years later, Morocco face the five-time champions who have not lifted the trophy since 2002. Brazil's 24-year drought is the longest in their history, and it gnaws at the soul of a nation that considers the World Cup their birthright. Carlo Ancelotti's appointment as coach was supposed to bring the gravitas and tactical intelligence that the Selecao needed. But Brazil's qualifying campaign -- 5th in CONMEBOL with 6 losses -- raised more questions than it answered.\n\nThese two sides met in March 2023, just months after Morocco's historic run, and Morocco won 2-1 in Tangier. It was not a fluke. Morocco were the better team, pressing with intelligence, defending with resolve, and counter-attacking with the same devastating efficiency that had undone Spain and Portugal. The head-to-head record now stands at 1-1-1 across 3 meetings, with Brazil's only victory coming 28 years ago at the 1998 World Cup. The power dynamic has shifted, and both teams know it.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This is one of the most fascinating tactical matchups at the entire tournament. Brazil's 4-2-3-1 under Ancelotti emphasizes control -- patient build-up through Bruno Guimaraes, creative freedom for Vinicius Jr. and Rodrygo, and a structured defensive shape that Ancelotti has refined over decades at Europe's biggest clubs.\n\nMorocco's 4-3-3 under Walid Regragui is a mirror of their 2022 approach: defensively elite, tactically disciplined, and devastatingly efficient in transition. Achraf Hakimi's overlapping runs from right-back give Morocco an attacking dimension that few defenses can handle, while the midfield trio provides the pressing intensity and ball-winning capability that suffocated Spain's tiki-taka at the 2022 World Cup.\n\nThe key tactical battle is Brazil's patience against Morocco's discipline. Morocco will concede possession willingly, compressing space in front of their goal and waiting for Brazil to commit numbers forward. When the ball turns over, Morocco's transition speed -- Hakimi bursting down the right, the forwards sprinting into space -- is lethal. Brazil must resist the temptation to over-commit. If they do, Morocco will punish them exactly as they punished Spain.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Vinicius Jr. vs Achraf Hakimi -- two Real Madrid teammates who know each other's game inside out, on opposite sides of the ball"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Brazil (ELO: 1760) vs Morocco (ELO: 1725) -- a mere 35-point gap that barely qualifies as a margin. This is functionally a 50-50 match by ELO standards, reflecting Morocco's extraordinary rise over the past four years.",
+    "formAnalysis": "Brazil's CONMEBOL qualifying was uncharacteristically poor: 8 wins, 4 draws, 6 losses, 24 goals scored and 17 conceded in 18 matches. They finished 5th. Morocco were perfect in CAF qualifying: 8 wins from 8, 22 goals scored and 3 conceded. The contrast is stark -- Brazil are searching for form, Morocco have found it.",
+    "squadValueComparison": "Brazil ($1.39B) vs Morocco ($423M). Brazil's financial advantage is clear, but Morocco's squad is no longer a collection of mid-table European players. Achraf Hakimi ($81.3M) at PSG, Youssef En-Nesyri at multiple top clubs, and a defensive core tested at the highest level give Morocco genuine quality throughout.",
+    "injuryImpact": "Vinicius Jr.'s fitness is Brazil's primary concern -- without him, their attacking identity loses its most dangerous element. Morocco's defensive system is less dependent on individuals, but Hakimi's absence would remove their primary counter-attacking outlet.",
+    "bettingPerspective": "Both teams carry +8000 outright tournament odds, reflecting the market's assessment that they are of comparable quality. The match odds will be tight, with Brazil slight favorites purely on historical prestige.",
+    "historicalPattern": "In 3 meetings: Brazil won 3-0 (1998 World Cup), drew 1-1 (friendly), and Morocco won 2-1 (2023 friendly in Tangier). The trend is unmistakable -- Morocco have closed the gap entirely. Goals: Brazil 5, Morocco 4 across all meetings."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Vinicius Jr.",
+      "teamCode": "BRA",
+      "narrative": "The Ballon d'Or winner faces a unique challenge: playing against his Real Madrid teammate Achraf Hakimi, a defender who knows his game better than perhaps any other opponent on the planet. Their daily training battles at Valdebebas have given Hakimi insight into Vinicius' tendencies -- the step-overs, the bursts of acceleration, the preferred cutting angles. But Vinicius has evolved beyond predictability. His finishing, once his weakness, is now world-class, and his ability to produce decisive moments in the biggest matches makes him the player Brazil need when the pressure is at its most intense.",
+      "statline": "2024 Ballon d'Or winner; $225M market value; Brazil's most dangerous attacker"
+    },
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "narrative": "The Panenka penalty that eliminated Spain at the 2022 World Cup told the world everything about Hakimi's mentality: ice in his veins, a flair for the dramatic, and the audacity to seize the biggest moments. The PSG right-back is far more than a defender -- his overlapping runs, crossing ability, and blistering pace make him Morocco's primary attacking weapon in transition. Against Brazil's left side, Hakimi will be given license to attack, knowing that Morocco's defensive discipline behind him can cover the space he vacates.",
+      "statline": "Morocco's most valuable player at $81.3M; scored winning Panenka vs Spain in 2022 World Cup"
+    },
+    {
+      "name": "Rodrygo",
+      "teamCode": "BRA",
+      "narrative": "Brazil's x-factor operates in the spaces between Morocco's defensive lines, finding pockets of room that others cannot see. Rodrygo's Champions League pedigree -- including that legendary double against Manchester City -- means he thrives in high-pressure moments. His ability to play across the front three gives Ancelotti tactical flexibility, and his understanding with Vinicius Jr., forged over years at Real Madrid, creates the kind of telepathic combinations that organized defenses fear.",
+      "statline": "12 goals in 28 appearances for Brazil; Champions League-proven performer"
+    },
+    {
+      "name": "Yassine Bounou",
+      "teamCode": "MAR",
+      "narrative": "The goalkeeper who became Morocco's 2022 World Cup hero through a series of miraculous saves and penalty heroics returns as the last line of a defense that is genuinely world-class. Bounou's shot-stopping ability and command of his area give Morocco's outfield players the confidence to push forward, knowing that any balls played in behind or shots from distance will be dealt with. His penalty-saving record is extraordinary and could prove decisive if this match goes to the wire.",
+      "statline": "Hero of Morocco's 2022 World Cup run; exceptional penalty-saving record"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Brazil 2-1 Morocco",
+    "confidence": 45,
+    "narrative": "This is a genuine toss-up, and the low confidence reflects the reality that either team could win on any given day. The prediction edges toward Brazil purely on the basis of individual attacking quality -- Vinicius Jr. and Rodrygo operating together is a problem that even Morocco's exceptional defense will struggle to contain for 90 minutes.\n\nBut Morocco will score. Hakimi's counter-attacking runs will create at least one clear chance, and the Atlas Lions are too well-organized and too battle-tested to be shut out. Expect a tense, tactical match that is decided by moments of brilliance rather than sustained dominance.\n\nThe atmosphere will be electric -- Morocco's diaspora support in North America is enormous, and they will make their presence felt. This match has the feel of a potential classic, the kind of group stage encounter that is rewatched for decades.\n\nDo not bet your house on either team. This one could go anywhere.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Morocco 1-0 Brazil",
+        "probability": 25,
+        "reasoning": "Morocco replicate their 2022 tournament blueprint: defend brilliantly, counter-attack ruthlessly, and score the decisive goal through Hakimi or En-Nesyri. Brazil's qualifying struggles continue into the tournament proper."
+      },
+      {
+        "scenario": "Brazil 1-1 Morocco",
+        "probability": 20,
+        "reasoning": "Neither side can establish dominance in a match where tactical discipline trumps attacking ambition. A draw that satisfies neither team but keeps both in contention for the knockout rounds."
+      }
+    ]
+  },
+
+  "closingLine": "In 1998, Brazil swatted Morocco aside 3-0 and nobody blinked. In 2026, every neutral on earth will tune in to see whether the Atlas Lions can complete their transformation from underdog to genuine rival. The beautiful game has rarely produced a more compelling evolution."
+}

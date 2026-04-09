@@ -1,0 +1,80 @@
+{
+  "matchKey": "HAI_MAR",
+  "team1Code": "HAI",
+  "team2Code": "MAR",
+  "team1Name": "Haiti",
+  "team2Name": "Morocco",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Pioneers Meet the Trailblazers",
+  "subheadline": "Haiti return to the World Cup after 52 years and face a Morocco side that rewrote African football history in 2022",
+
+  "openingNarrative": "Two nations. Two stories of defiance. Two very different chapters in football's unfinished book.\n\nHaiti last appeared at a World Cup in 1974 in West Germany. That team, Les Grenadiers, produced one of the most celebrated moments in Caribbean football history when Emmanuel Sanon scored against Italy — ending Dino Zoff's legendary unbeaten streak at 1,142 minutes. It was a goal that transcended sport, a moment when a small Caribbean nation announced to the world that it existed, that its people had talent, and that its dreams were valid. Fifty-two years later, Haiti return to the global stage carrying the memory of Sanon and the hopes of 11 million people.\n\nMorocco, meanwhile, arrive as the team that changed what the football world thought was possible. Their 2022 World Cup run to the semifinals — beating Belgium, Spain, and Portugal along the way — was not merely a great tournament performance. It was a seismic shift. Morocco became the first African and first Arab nation to reach the last four, and they did it with a defensive discipline so exquisite that they conceded just one goal from open play in the entire tournament before the semifinal against France.\n\nAchraf Hakimi's Panenka penalty against Spain. The tears of joy after beating Portugal. Walid Regragui's tactical masterclass. These are not merely memories — they are the foundation of a footballing identity that Morocco now carry into 2026 with supreme confidence.\n\nThis is Haiti's first-ever meeting with Morocco. The quality gap is enormous. Morocco's squad ($423M) is worth 50 times Haiti's ($8M). But Haiti did not travel to America to be statistics. They came to play football, to honor Sanon's legacy, and to show the world that the World Cup still belongs to dreamers.",
+
+  "tacticalBreakdown": {
+    "title": "The Fortress and the Dream",
+    "narrative": "Morocco's 4-3-3 under Regragui is a masterpiece of tactical balance. Defensively, they are almost impenetrable — organized, disciplined, and aggressive in their pressing. Offensively, they are devastating on the counter through Hakimi's overlapping runs from right-back and Hakim Ziyech's creative vision. The midfield presses with intelligence, and every player understands their defensive responsibilities.\n\nHaiti will deploy the deepest, most compact defensive shape possible — a 5-4-1 that becomes a 6-3-1 when Morocco have the ball. Every Haitian player will sit behind the ball, filling spaces and making Morocco work for every inch of territory. Derrick Etienne Jr., stationed as the lone forward, will be asked to hold up the ball and provide an outlet for the rare counter-attacks.\n\nThe tactical reality is stark: Morocco will have 70-75% possession and will camp in Haiti's half for most of the match. Haiti's only hope is to remain concentrated for 90 minutes, limit Morocco to long-range efforts and crosses into a crowded box, and hope for a set-piece opportunity or a defensive error to create a chance. It is the ultimate exercise in footballing survival.",
+    "team1Formation": "5-4-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Haiti's collective defensive effort vs Achraf Hakimi's overlapping runs — can ten defenders behind the ball contain Morocco's most dynamic attacker?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Haiti (ELO: 1350, ranked 90th) vs Morocco (ELO: 1725, ranked 12th) — a 375-point chasm that is one of the largest in the tournament. Morocco's win probability exceeds 85% by any statistical model. This is a match where the data provides little room for Haitian optimism.",
+    "formAnalysis": "Morocco's qualifying campaign was perfect: 8 wins from 8, 22 goals scored and just 2 conceded, with Youssef En-Nesyri leading with 5 goals. Haiti qualified with 2 wins, 2 draws, and 2 losses, scoring 6 goals and conceding 7. The contrast in quality is reflected in every statistical category.",
+    "squadValueComparison": "Morocco ($423M) vs Haiti ($8M) — Morocco's squad is worth more than 50 times Haiti's entire roster. Hakimi alone ($81.3M) is worth 10 times the Haitian squad. The financial disparity is the most extreme of any match at the tournament.",
+    "injuryImpact": "Morocco's depth allows rotation without any drop in quality. Haiti need every available player at maximum fitness — any absence against this level of opposition reduces their already slim chances of competing.",
+    "bettingPerspective": "Morocco are overwhelming favorites. Haiti's realistic objective is damage limitation — keeping the scoreline respectable would be considered a success. The over/under market at 2.5 goals represents the most interesting betting angle.",
+    "historicalPattern": "This is the first-ever meeting between Haiti and Morocco. Haiti's only previous World Cup (1974) saw them lose all three group matches. Morocco's 2022 semifinal run established them as a global force. History provides no precedent for a competitive encounter between these two nations."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "narrative": "The man who defined Morocco's 2022 World Cup with a Panenka penalty against Spain that was as audacious as it was decisive. Hakimi's pace, his overlapping runs, and his ability to deliver crosses from the right flank make him the most dynamic full-back in world football. Against Haiti's deep defense, his forward surges will provide Morocco's primary attacking width — and his quality in the final third means every cross is a genuine threat.",
+      "statline": "PSG's star right-back; scored the decisive penalty against Spain at the 2022 World Cup"
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "teamCode": "HAI",
+      "narrative": "Haiti's most experienced attacking player faces the loneliest assignment in the World Cup: operating as the sole forward against one of the best-organized defenses in international football. Etienne's MLS experience has given him the tactical awareness and physical resilience to compete at this level. He will be isolated for long periods, running into dead ends against multiple Moroccan defenders, but his pace and directness mean that one counter-attack, one moment of space, could produce a goal that would echo through Haitian football history.",
+      "statline": "Haiti's leading attacker and most experienced forward; MLS veteran providing pace and directness"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "teamCode": "MAR",
+      "narrative": "Morocco's creative conductor. Ziyech's ability to deliver set pieces with pinpoint accuracy, to find through balls that dissect defenses, and to produce moments of individual magic from wide positions makes him the player most likely to unlock Haiti's deep block. His experience at Chelsea and in the Champions League ensures he will not be frustrated by Haiti's defensive approach — he has broken down stubborn defenses his entire career.",
+      "statline": "Morocco's creative playmaker; key figure in the 2022 World Cup semifinal run"
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "narrative": "Haiti's most valuable player at $2M carries the goal-scoring burden for a team that will create precious few chances. Pierrot's physical presence and aerial ability give Haiti their best option from set pieces — corners and free kicks may represent their most realistic route to goal. His 2 qualifying goals demonstrate a clinical streak that could, with fortune's favor, produce the most celebrated Haitian goal since Sanon's strike against Italy in 1974.",
+      "statline": "Haiti's most valuable player; 2 goals in qualifying; the physical focal point of Haiti's rare attacks"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Morocco 3-0 Haiti",
+    "confidence": 82,
+    "narrative": "The cold arithmetic of this match leaves little room for sentiment. Morocco's defensive organization, attacking quality, and tournament experience place them in a different category to Haiti. Hakimi's runs, Ziyech's creativity, and En-Nesyri's finishing will create and convert chances that Haiti's defense — brave as it will be — cannot withstand for 90 minutes.\n\nMorocco will control possession, territory, and tempo from the first whistle. Haiti will defend with everything they have, and for a period — perhaps 30, perhaps 45 minutes — they will hold. But the quality differential is too vast to resist indefinitely, and once Morocco score the first goal, the defensive dam is likely to break.\n\nBut this match is not about the scoreline. It is about what it means for Haiti to be here — on the World Cup stage, 52 years after Sanon's goal against Italy, representing a nation that has endured more hardship than any footballing narrative can capture. If Pierrot or Etienne can find one moment, one goal, one celebration that makes 11 million Haitians erupt with joy, then the scoreline becomes irrelevant.\n\nSome teams come to the World Cup to win. Haiti come to the World Cup to exist. And that is a victory in itself.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Morocco 1-0 Haiti",
+        "probability": 12,
+        "reasoning": "Haiti produce a defensive masterclass, blocking everything Morocco throw at them for 85 minutes before conceding late. The narrow defeat earns Haiti enormous respect and gives them belief heading into their remaining group matches."
+      },
+      {
+        "scenario": "Morocco 2-1 Haiti",
+        "probability": 8,
+        "reasoning": "Haiti score from a set piece — Pierrot heading home from a corner — and the football world stops to celebrate. Morocco ultimately prevail, but Haiti's goal becomes the story of the day and Sanon's legacy is honored in the most fitting way possible."
+      }
+    ]
+  },
+
+  "closingLine": "In 1974, Emmanuel Sanon proved that Haiti could score against anyone. In 2026, a new generation carries his legacy onto the World Cup stage — not with the expectation of victory, but with the certainty that representing Haiti at a World Cup is itself a triumph that no scoreline can diminish."
+}

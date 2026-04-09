@@ -1,0 +1,80 @@
+{
+  "matchKey": "ENG_FRA",
+  "team1Code": "ENG",
+  "team2Code": "FRA",
+  "team1Name": "England",
+  "team2Name": "France",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Le Crunch: Unfinished Business From Al Bayt",
+  "subheadline": "Kane's missed penalty, Mbappe's brilliance, and centuries of rivalry collide in the Group of Death's defining fixture",
+
+  "openingNarrative": "Harry Kane's penalty soars over the crossbar. The ball disappears into the Qatari night, and with it, England's 2022 World Cup. France advance. England go home. And a rivalry that has burned for centuries adds another chapter written in heartbreak.\n\nThat moment — Kane's second penalty against Hugo Lloris, struck with power but without precision — has haunted English football for four years. It was not just a missed penalty. It was a missed opportunity to beat the defending world champions, to reach a semi-final, to prove that this golden generation could deliver when it mattered most. The image of Kane's face afterwards — the thousand-yard stare of a man processing the cruelest possible outcome — became the defining picture of England's 2022 campaign.\n\nFrance arrive in 2026 as two-time world champions and 2022 runners-up, a team that has reached the final in four of the last seven World Cups. Kylian Mbappe, who scored a hat-trick in the 2022 final against Argentina, has ascended to the status of the world's most feared footballer. His pace is physics-defying, his finishing is clinical, and his ability to produce in the biggest moments sets him apart from every other player on the planet.\n\nThe head-to-head record spanning 31 meetings reads 17-5-9 in England's favor, but recent competitive history tells a different story. England have not beaten France at a World Cup since 1982. Deschamps' France — pragmatic, adaptive, devastating in transition — have been the nemesis England cannot slay. Mbappe scored 4 qualifying goals. Kane scored 8. The stage is set for the individual duel that could define the tournament.\n\nThis is Le Crunch. This is the Group of Death's masterpiece. And somewhere in the back of Harry Kane's mind, a penalty is still flying over the bar.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "France's 4-2-3-1 under Deschamps is a masterwork of pragmatic brilliance. The system can absorb pressure — defending deep with Tchouameni and Camavinga shielding the back four — then transition with devastating speed through Mbappe, Dembele, and Griezmann. This is a team that does not need possession to win. They need one counter-attack, one moment of Mbappe acceleration, one pass into space.\n\nEngland's 4-2-3-1 under Tuchel is built to control games — high pressing, quick ball circulation, and the creative brilliance of Bellingham in the number 10 role. Saka provides the width and one-on-one threat from the right, while Kane drops deep to link play. England want to dominate, to impose their tempo, to suffocate France's transition game by keeping the ball.\n\nThe tactical chess match centers on France's transition moments. If England lose the ball in advanced positions, Mbappe's acceleration in the channel behind the full-back is lethal. England must balance their desire to press high with the risk of leaving space for France's devastating counter. Tuchel's management of this risk will define the match.\n\nThe Bellingham-Griezmann matchup is the hidden battle. Griezmann's intelligence in finding space between the lines mirrors Bellingham's own movement. Whoever wins this battle of positioning and creativity could tip the balance.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Harry Kane vs Kylian Mbappe — the English captain's redemption against the French superstar's coronation"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "France (ELO: 1870) vs England (ELO: 1834) — a 36-point gap that translates to approximately a 55% French win probability. Among the tightest elite matchups at this tournament, reflecting two of the top four teams in the world.",
+    "formAnalysis": "England's qualifying was perfect: 8 wins, 0 losses, 22 goals scored, 0 conceded. Kane led with 8 goals. France qualified through UEFA Group D: 5 wins, 1 draw, 16 goals scored, 4 conceded. Mbappe top-scored with 4 goals. Both teams are in outstanding form.",
+    "squadValueComparison": "England's squad ($1.87B) narrowly exceeds France's ($1.64B). Bellingham ($225M) and Mbappe ($225M) are valued identically — the most expensive players on the planet facing off in the same match. This is the most valuable fixture at the entire World Cup.",
+    "injuryImpact": "Both squads boast extraordinary depth. France's ability to bring on Dembele, Coman, or Thuram from the bench gives them a second-half advantage. England's bench is similarly loaded with Foden, Sterling, and Rashford. Neither team suffers significantly from any single absence.",
+    "bettingPerspective": "France are slight favorites, reflecting their tournament pedigree (4 finals in 7 World Cups) and Mbappe's x-factor. England's qualifying form makes this closer than historical precedent suggests. This is the match bookmakers find hardest to price.",
+    "historicalPattern": "England lead the all-time record 17-5-9 across 31 meetings. But France have won the matches that matter — including the 2022 World Cup quarter-final. England have not beaten France at a World Cup since 1982."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "narrative": "Mbappe's World Cup record is already legendary. His 2018 tournament at 19 years old announced a generational talent. His 2022 hat-trick in the final cemented his status as the tournament's modern icon. Now as France's captain and the world's most expensive player, Mbappe approaches 2026 with the hunger of a man who has tasted World Cup glory and wants more. His pace is terrifying, his finishing is ruthless, and his big-game mentality is unmatched.",
+      "statline": "4 goals in qualifying, hat-trick in 2022 World Cup final, France's captain and talisman"
+    },
+    {
+      "name": "Jude Bellingham",
+      "teamCode": "ENG",
+      "narrative": "Bellingham is the player England need to match Mbappe's brilliance. His Real Madrid career has established him as a player who thrives on the biggest stage — Champions League finals, El Clasicos, and now the World Cup. Against France, Bellingham will be asked to be both creator and goal-scorer, driving England forward with the intensity and quality that have made him a Ballon d'Or contender.",
+      "statline": "England's most important player, valued at $225M, consistent match-winner"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "narrative": "The missed penalty in 2022 burns. It burns so hot that it has become fuel rather than scar — Kane's subsequent performances for club and country have been driven by a determination to ensure that moment does not define his career. His 8 qualifying goals demonstrate that his finishing remains elite, and against France, he will have opportunities. The question is whether he can take them when the weight of history presses down upon him.",
+      "statline": "8 goals in qualifying, England's all-time leading scorer, seeking World Cup redemption"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "teamCode": "FRA",
+      "narrative": "Griezmann is France's quiet genius — the player who makes everything work without always receiving the credit. His movement between the lines, his defensive work rate, and his ability to produce assists and goals in crucial moments make him indispensable to Deschamps' system. While the world watches Mbappe, Griezmann operates in the shadows, pulling strings that create the chances France convert.",
+      "statline": "France's all-time top scorer at major tournaments, the creative glue of the team"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "France 2-1 England",
+    "confidence": 52,
+    "narrative": "France's tournament DNA — four finals in seven World Cups, a serial winning mentality under Deschamps — gives them the slightest of edges in a match that genuinely could go either way. Mbappe's ability to produce in the decisive moments, combined with France's counter-attacking excellence, makes them marginally the more likely winners.\n\nBut this England side is different from 2022. Tuchel has added tactical flexibility, defensive solidity, and a pressing intensity that Southgate's teams lacked. Bellingham has elevated the squad's ceiling to a level that can compete with anyone. Kane has channeled his 2022 pain into performances of extraordinary consistency.\n\nExpect a match that lives up to every ounce of its billing. Tight in the first half, dramatic in the second, with moments of individual brilliance from Mbappe and Bellingham that make this one of the great World Cup fixtures. The margin will be a single goal, a single moment, a single heartbeat.\n\nAnd somewhere in that match, the ghost of Al Bayt will whisper in Harry Kane's ear. This time, he must silence it.",
+    "alternativeScenarios": [
+      {
+        "scenario": "England 2-1 France",
+        "probability": 25,
+        "reasoning": "Kane scores twice — including from the penalty spot — Bellingham controls midfield, and England finally beat France when it matters. The 2022 demon is exorcised."
+      },
+      {
+        "scenario": "France 3-0 England",
+        "probability": 10,
+        "reasoning": "Mbappe is unplayable, France's counter-attacks are devastating, and England suffer their worst World Cup defeat to France. The Group of Death claims its first victim."
+      }
+    ]
+  },
+
+  "closingLine": "England versus France is not just football — it is history, it is rivalry, it is the sound of two nations who have been fighting each other for a thousand years finding another battlefield. This time, the battlefield is a football pitch, and the weapon is a ball. May the best nation win."
+}

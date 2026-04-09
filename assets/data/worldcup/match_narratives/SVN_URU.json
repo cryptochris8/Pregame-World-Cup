@@ -1,0 +1,80 @@
+{
+  "matchKey": "SVN_URU",
+  "team1Code": "SVN",
+  "team2Code": "URU",
+  "team1Name": "Slovenia",
+  "team2Name": "Uruguay",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Bielsa's Warriors Return to the Scene of a Rout",
+  "subheadline": "Uruguay and Slovenia meet again 16 years after their 2010 World Cup encounter, but this time the underdog has claws",
+
+  "openingNarrative": "The last time Uruguay faced Slovenia at a World Cup, Diego Forlan scored twice in a 3-0 demolition that was one of the most complete performances of the 2010 tournament in South Africa. Forlan went on to win the Golden Ball as the tournament's best player, Uruguay reached the semifinals, and Slovenia went home. It was a chastening experience for the small Alpine nation — a reminder that World Cup pedigree counts for everything when the pressure is at its highest.\n\nBut sixteen years is a long time in football, and Slovenia have transformed. Their Euro 2024 campaign, where they reached the knockout rounds for the first time in their history, announced the arrival of a generation capable of competing with Europe's best. Jan Oblak, arguably the world's finest goalkeeper, provides a safety net of almost supernatural quality. Benjamin Sesko, the RB Leipzig striker, offers physical power and finishing ability that can trouble any defense. This is not the Slovenia of 2010.\n\nUruguay, though, remain Uruguay. Two-time World Cup champions, eternal overachievers, and now operating under the intensity of Marcelo Bielsa's revolutionary coaching. Bielsa's Uruguay press like demons, attack with abandon, and play with a ferocity that has transformed the team from South American competitors into genuine tournament dark horses. Darwin Nunez's explosive pace and Federico Valverde's box-to-box dynamism are the twin engines of a team that plays every match like it's their last. Their sole previous meeting beyond 2010 was a 2014 friendly won 2-0 by Uruguay, with Cavani and Stuani scoring.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Bielsa's Uruguay play a relentless 4-3-3 that demands extraordinary fitness and commitment from every player. The pressing is aggressive and man-oriented, with Nunez leading the line with pace and power that terrifies center-backs. Valverde's box-to-box runs from midfield create overloads in the final third, while the full-backs push high to provide width. Uruguay under Bielsa don't just want to win — they want to overwhelm.\n\nSlovenia's defensive 4-4-2 is built around Oblak's goalkeeping and the team's collective discipline. Sesko provides an outlet on the counter-attack, his physical presence and pace creating problems for even the best defenders. The midfield four work tirelessly to deny space, with the understanding that Oblak behind them provides a margin for error that no other goalkeeper in the tournament can offer.\n\nThe tactical question is whether Slovenia can absorb Uruguay's initial onslaught and remain competitive. If they survive the first 20 minutes without conceding, Oblak's presence and Sesko's counter-attacking threat could make this genuinely uncomfortable for Bielsa's side. If Uruguay score early, their intensity will only increase, and Slovenia's resistance could crumble.",
+    "team1Formation": "4-4-2",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Darwin Nunez vs Jan Oblak — Liverpool's explosive striker against the world's best goalkeeper in the tournament's most compelling individual duel"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Uruguay (ELO: 1718, rank 14) vs Slovenia (not in current Elo dataset). Uruguay's ranking reflects their consistent continental performance and Bielsa's transformative impact. Slovenia's Euro 2024 breakthrough suggests they are in the 1600-1650 range, making Uruguay clear favorites but not overwhelmingly so.",
+    "formAnalysis": "Uruguay reached the 2024 Copa America semifinals under Bielsa, confirming their competitiveness against South America's elite. Slovenia's Euro 2024 knockout round appearance was their greatest achievement, proving their development pathway is producing genuine tournament competitors.",
+    "squadValueComparison": "Uruguay ($684M, led by Federico Valverde at $188M) significantly outvalue Slovenia's roster. Valverde alone is worth more than most teams' entire squads. Uruguay's attacking depth — Nunez, Valverde, Araujo — represents extraordinary quality concentrated in a squad of just 3.5 million people.",
+    "injuryImpact": "Uruguay's squad depth gives them resilience, though Nunez's fitness is always a concern given his explosive playing style. For Slovenia, Oblak's availability is non-negotiable — without him, the entire defensive strategy collapses.",
+    "bettingPerspective": "Uruguay are comfortable favorites. Slovenia's best value lies in the draw market, where Oblak's ability to keep clean sheets makes a 0-0 or 1-1 a realistic outcome despite Uruguay's attacking quality.",
+    "historicalPattern": "2 meetings: Uruguay won both. 3-0 at the 2010 World Cup (Forlan 2x, Perez); 2-0 in a 2014 friendly (Cavani, Stuani). Uruguay's dominance in this fixture is comprehensive, but Slovenia's recent evolution changes the dynamic considerably."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Darwin Nunez",
+      "teamCode": "URU",
+      "narrative": "Nunez is the embodiment of Bielsa's Uruguay — explosive, relentless, and capable of moments that defy physics. The Liverpool striker's combination of pace, power, and aerial ability makes him one of the most complete forwards in world football. His finishing can be inconsistent, but when Nunez is on song, he is virtually unplayable. Against Oblak, he faces the one goalkeeper in the tournament who might be able to stop him.",
+      "statline": "Liverpool's first-choice striker; Uruguay's primary goal threat under Bielsa"
+    },
+    {
+      "name": "Jan Oblak",
+      "teamCode": "SVN",
+      "narrative": "Oblak is Slovenia's fortress — the world's best goalkeeper and the one player who transforms a good defensive team into an elite one. His shot-stopping, positioning, and command of the penalty area are without equal in the tournament. At Euro 2024, his performances kept Slovenia competitive against superior opponents. Against Uruguay's relentless attack, Oblak will need to produce a masterclass of goalkeeping to keep his team in the match.",
+      "statline": "Considered the world's best goalkeeper; Atletico Madrid's all-time great"
+    },
+    {
+      "name": "Federico Valverde",
+      "teamCode": "URU",
+      "narrative": "Valverde is the most valuable player in Uruguay's history — a Real Madrid midfielder whose combination of goalscoring, creativity, and defensive work makes him one of the most complete players in world football. His box-to-box runs are a weapon that few teams can neutralize, and his ability to arrive late in the box and score from distance adds an unpredictable dimension to Uruguay's attack. Valued at $188M, he is the tournament's most expensive Uruguayan player ever.",
+      "statline": "Uruguay's most valuable player at $188M; Real Madrid's dynamic midfielder"
+    },
+    {
+      "name": "Benjamin Sesko",
+      "teamCode": "SVN",
+      "narrative": "Sesko is Slovenia's hope personified — a young striker whose physical presence, pace, and improving finishing ability have made him one of European football's most coveted talents. The RB Leipzig forward's ability to hold the ball up and run in behind gives Slovenia a genuine counter-attacking threat that even the best defenses must respect. If Slovenia are to cause an upset, Sesko's movement and finishing will be central to it.",
+      "statline": "RB Leipzig's young striker and Slovenia's primary goal threat"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Uruguay 2-1 Slovenia",
+    "confidence": 58,
+    "narrative": "Uruguay's intensity under Bielsa will set the tempo from the first whistle, and Slovenia's challenge is to survive the initial onslaught without conceding. If they can reach halftime at 0-0 or 1-1, the match becomes genuinely competitive. If Uruguay score early, their pressing will intensify and Slovenia's resistance will be tested to its absolute limit.\n\nOblak will be magnificent — he always is in these situations. His shot-stopping will deny Nunez at least twice, and his command of the box will neutralize Uruguay's set-piece threat. But Bielsa's relentless attacking approach means Uruguay will create enough chances to score, and Nunez's explosive finishing will eventually find a way past even the world's best goalkeeper.\n\nSesko will score on the counter — his pace and power are too much for any defense to completely contain. But Uruguay's response will be immediate and emphatic. Valverde's late run into the box or a Nunez header from a corner will restore the lead, and Uruguay's championship pedigree will see them home.\n\nThis will be closer than 2010's 3-0 rout. Much closer. But Uruguay's quality and Bielsa's tactical intensity should prove decisive.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Slovenia 1-0 Uruguay",
+        "probability": 12,
+        "reasoning": "Oblak produces the goalkeeping performance of the tournament. Sesko scores on the counter, and Slovenia defend with the discipline and organization that characterized their Euro 2024 campaign. A shock result that echoes the greatest upsets in World Cup history."
+      },
+      {
+        "scenario": "Uruguay 3-0 Slovenia",
+        "probability": 15,
+        "reasoning": "Bielsa's Uruguay are at their devastating best. Nunez scores twice, Valverde adds a third, and the 2010 scoreline is repeated. Slovenia's defensive discipline crumbles under relentless pressure."
+      }
+    ]
+  },
+
+  "closingLine": "In 2010, Uruguay overwhelmed Slovenia. In 2026, Slovenia have Oblak, Sesko, and the hard-earned belief that they belong. The rematch will be much closer than the first chapter — and infinitely more compelling."
+}

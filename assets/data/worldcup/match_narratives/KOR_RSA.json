@@ -1,0 +1,80 @@
+{
+  "matchKey": "KOR_RSA",
+  "team1Code": "KOR",
+  "team2Code": "RSA",
+  "team1Name": "Korea Republic",
+  "team2Name": "South Africa",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Two Former Hosts, One Fight for Survival",
+  "subheadline": "South Korea and South Africa — the nations that transformed their football by hosting the World Cup — meet in a match that could determine knockout round fate",
+
+  "openingNarrative": "There is something poetically beautiful about this fixture. South Korea and South Africa are the two nations that understand, more than almost any other, how hosting a World Cup can transform a country's relationship with football. Korea's 2002 co-hosting produced the most astonishing underdog run in World Cup history — a semi-final reached on home soil, fueled by the thunderous red wave of supporters that shook the world. South Africa's 2010 hosting united the Rainbow Nation through football, Siphiwe Tshabalala's opening-match thunderbolt against Mexico becoming one of the most replayed goals in World Cup history.\n\nNow, on neutral soil, these two former hosts meet in a match that could determine which of them advances from Group A. The stakes are immense. This is almost certainly a must-win for at least one of these teams, and possibly both. There are no second chances on matchday three — only the cold mathematics of goal difference, head-to-head records, and the unforgiving tournament format.\n\nSouth Korea arrive as the clear favorites. Son Heung-min's genius, Lee Kang-in's creativity, and Kim Min-jae's defensive excellence give them a squad that can compete with anyone. South Africa, led by CAF Goalkeeper of the Year Ronwen Williams and the attacking threat of Percy Tau, are the team with everything to prove and nothing to lose. This has never been a competitive meeting before — their history starts here.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "South Korea's 4-3-3 pressing system will look to impose their technical superiority from the opening whistle. Son's movement between the left wing and central areas creates the kind of positional confusion that teams struggle to handle, while Lee Kang-in's passing from deep unlocks defenses that compact formations are designed to protect. Kim Min-jae's comfort on the ball means Korea can build from the back even under pressure.\n\nSouth Africa under Hugo Broos will set up pragmatically, likely in a 4-4-2 with quick transitions. Bafana Bafana's strength lies in their pace on the flanks and their aerial presence at set pieces. Ronwen Williams is the backbone — his shot-stopping and command of the box will need to be at its absolute best. South Africa's game plan will revolve around denying Son space, frustrating Korea's buildup, and striking on the counter through Percy Tau's pace.\n\nThe key tactical question: can South Africa's midfield match Korea's pressing intensity? If they can, this becomes a genuine contest. If they can't, Korea's technical quality will overwhelm them.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Son Heung-min vs Ronwen Williams — Korea's lethal attacker against Africa's best goalkeeper"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "South Korea (ELO: 1655) vs South Africa (ELO: 1550) — a 105-point gap that makes Korea clear favorites. The ELO difference translates to roughly a 60-65% win probability for Korea, but South Africa's AFCON form and their history of rising to tournament occasions suggest the gap may be narrower than the numbers imply.",
+    "formAnalysis": "Korea's qualifying campaign was outstanding: unbeaten in 10 matches (6 wins, 4 draws), 22 goals scored, 5 conceded. Son scored 10 goals. South Africa topped CAF Group C with 7 wins, 2 draws, 1 loss, with Percy Tau contributing 4 goals. Both teams enter with genuine momentum and confidence.",
+    "squadValueComparison": "Korea Republic ($315M) vs South Africa ($80M) — Korea's squad is nearly four times more valuable. Kim Min-jae ($87.5M) alone exceeds South Africa's entire squad value. Percy Tau ($12M) leads South Africa's valuation. The financial gap is significant but South Africa's collective spirit has always been their equalizer.",
+    "injuryImpact": "Son's fitness is Korea's paramount concern — his presence transforms their attack from good to world-class. South Africa cannot afford to lose Williams, whose goalkeeping will be their primary shield against Korea's quality.",
+    "bettingPerspective": "Korea are comfortable favorites. South Africa's odds offer value for those who believe Broos' well-organized side can produce an upset. The draw is also heavily backed — a result that could suit both teams depending on the group's other results.",
+    "historicalPattern": "These two teams have NEVER met in any competition. This is a historic first meeting between two former World Cup hosts. Korea have appeared at 11 World Cups; South Africa at 3. Korea's 2002 semi-final as co-hosts remains the greatest achievement in Asian football history."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Son Heung-min",
+      "teamCode": "KOR",
+      "narrative": "In a match Korea are expected to win, the pressure falls squarely on Son's shoulders. His 10 qualifying goals demonstrate a player in devastating form, but the World Cup demands a different kind of performance — patience, decision-making, and the composure to create something from the tight spaces that organized defenses provide. Against Ronwen Williams, Son faces perhaps the best goalkeeper he'll encounter in the group stage.",
+      "statline": "10 goals in World Cup qualifying, 100+ Premier League goals for Tottenham"
+    },
+    {
+      "name": "Ronwen Williams",
+      "teamCode": "RSA",
+      "narrative": "The 2024 CAF Goalkeeper of the Year is South Africa's most important player by a distance. Williams combines exceptional shot-stopping with commanding presence and distribution that allows South Africa to build from the back. Against Korea's talented attack, he will need the performance of his career — but Williams has shown repeatedly that he is capable of producing exactly that when the stakes are highest.",
+      "statline": "2024 CAF Goalkeeper of the Year, Bafana Bafana's captain and last line of defense"
+    },
+    {
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "narrative": "Against South Africa's compact midfield, Lee's ability to find the pass that others can't see becomes Korea's most valuable asset. His set-piece delivery is world-class, and from dead-ball situations, Korea's aerial threat — particularly Kim Min-jae — makes every corner and free kick a genuine scoring opportunity. Lee's composure on the ball will set the tempo that Korea need.",
+      "statline": "PSG's creative force, 2019 U-20 World Cup Golden Ball winner"
+    },
+    {
+      "name": "Percy Tau",
+      "teamCode": "RSA",
+      "narrative": "South Africa's most dangerous attacker carries the experience of European football and the hunger of a player representing his country at the World Cup. Tau's pace and directness give South Africa a counter-attacking outlet that Korea must respect. If Bafana Bafana can win the ball and release Tau in space, his finishing and decision-making in the final third can trouble any defense — including Korea's.",
+      "statline": "4 goals in World Cup qualifying, South Africa's highest-valued player at $12M, leading Bafana Bafana's attack"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Korea Republic 1-0 South Africa",
+    "confidence": 60,
+    "narrative": "This will be tighter than the quality gap suggests. South Africa's defensive organization under Broos, anchored by the outstanding Ronwen Williams, will frustrate Korea for long periods. Expect a cagey first half where South Africa execute their defensive plan to perfection, limiting Korea to half-chances and set pieces.\n\nThe breakthrough will come from either Son's individual brilliance or a set piece delivered by Lee Kang-in. Korea's superior fitness and bench options will prove decisive in the final 20 minutes, when South Africa's resistance begins to crack. But don't expect a floodgate — this is a match where every goal is earned, not gifted.\n\nSouth Africa will leave the pitch with heads held high, knowing they gave everything. But Korea's quality — specifically, Son's capacity to produce the decisive moment — is the difference between two proud former World Cup hosts.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Korea Republic 2-1 South Africa",
+        "probability": 20,
+        "reasoning": "A more open affair where South Africa score through Tau on the counter, but Korea's superior attacking quality tells. Son and Lee Kang-in combine to create enough chances for a two-goal return."
+      },
+      {
+        "scenario": "South Africa 1-0 Korea Republic",
+        "probability": 10,
+        "reasoning": "Williams produces a man-of-the-match performance, denying Son and Lee repeatedly. A Percy Tau counter-attack goal proves decisive in the biggest upset of the group stage, echoing South Africa's famous 2010 World Cup moments."
+      }
+    ]
+  },
+
+  "closingLine": "Two nations transformed by hosting the World Cup. Two football cultures built on passion, resilience, and the belief that the impossible is merely the untried. When South Korea meet South Africa for the first time, history will be written — no matter the result."
+}

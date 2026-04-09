@@ -1,0 +1,80 @@
+{
+  "matchKey": "NED_SWE",
+  "team1Code": "NED",
+  "team2Code": "SWE",
+  "team1Name": "Netherlands",
+  "team2Name": "Sweden",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Total Football Meets the Scandinavian Storm",
+  "subheadline": "The Netherlands' three-time finalists face Sweden's fearsome strike partnership in a Group F showdown that could determine both nations' fates",
+
+  "openingNarrative": "The Netherlands and Sweden have been doing this for over a century. Twenty-eight meetings stretching back to 1913, spanning two world wars, the invention of Total Football, Sweden's golden 1958 World Cup, and the Netherlands' agonizing trilogy of final defeats. This is one of European football's great recurring fixtures — familiar enough to breed respect, competitive enough to produce drama, and loaded with enough quality in 2026 to be one of the tournament's defining group stage encounters.\n\nTheir most significant World Cup meeting came in the 1994 quarter-finals in Dallas, where Dennis Bergkamp's brilliant goal helped the Netherlands to a 3-1 victory. That match was played in scorching Texas heat — appropriate, given both teams are capable of producing scorching football. In 28 all-time meetings, the Netherlands lead 13-8 with 7 draws, scoring 52 goals to Sweden's 39. But those historical numbers don't account for what Sweden have become in 2026.\n\nViktor Gyokeres and Alexander Isak form arguably the most devastating strike partnership at the entire tournament. Gyokeres, who scored over 40 goals in a single season at Sporting CP and 8 in qualifying, combines physical power with clinical finishing. Isak, Newcastle's elegant striker, adds movement and technical quality that complement Gyokeres' directness. Together, they represent the most potent dual-striker threat that Virgil van Dijk will face at this World Cup. The Dutch captain's ability to contain them — while simultaneously launching attacks through Gakpo and Simons — will define whether the Netherlands emerge from Group F as contenders or cautionary tales.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "The Netherlands' 4-3-3 under Koeman represents the latest evolution of Dutch Total Football. Van Dijk anchors the defense and launches attacks with his distribution. The midfield circulates possession with the technical quality that has defined Dutch football for decades, and Gakpo's movement across the front three creates the unpredictability that organized defenses struggle to contain. The Dutch approach is patient and methodical — they will look to draw Sweden's defense out of shape through positional play.\n\nSweden's 4-4-2 under Jon Dahl Tomasson is built around getting the ball to Gyokeres and Isak as quickly and effectively as possible. Dejan Kulusevski's creativity from the right provides the supply line, while Anthony Elanga's pace offers width on the left. Sweden's willingness to play direct — bypassing the midfield press with long balls into channels — could be their most effective weapon against a Dutch team that controls the middle of the pitch.\n\nThe critical battle: Van Dijk vs the Gyokeres-Isak partnership. Can one center-back — even the world's best — contain two strikers who feed off each other's movement? The Dutch will need their midfield to provide extra coverage, which could weaken their attacking intent. It's a tactical dilemma with no easy solution.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Virgil van Dijk vs Viktor Gyokeres and Alexander Isak — the world's best center-back against the tournament's most fearsome strike partnership"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Netherlands (ELO: 1756) vs Sweden (ELO: 1750) — a mere 6-point gap that makes this one of the closest fixtures at the entire tournament. Sweden's ELO is boosted by their strong European campaign and places them 15th globally, just behind the Netherlands at 7th. The data says this is essentially a coin flip.",
+    "formAnalysis": "The Netherlands were unbeaten in UEFA qualifying: 6 wins, 2 draws, 27 goals scored, 4 conceded. Memphis Depay led their scoring with 8. Sweden qualified via Play-Off Path B after 6 wins, 2 draws, 2 losses in their qualifying group. Gyokeres scored 8 goals in qualifying. Both teams bring attacking firepower that guarantees goals in this match.",
+    "squadValueComparison": "Netherlands ($1.18B) vs Sweden ($400M) — the Dutch squad is nearly three times more valuable. Xavi Simons ($100M) leads the Dutch, while Gyokeres ($100M) matches him at the top of Sweden's valuation. The financial gap is significant, but Sweden's concentrated firepower in the forward positions bridges the quality gap where it matters most.",
+    "injuryImpact": "The Netherlands' superior depth means they can absorb injuries more comfortably. Sweden's system is built around the Gyokeres-Isak partnership — losing either striker would fundamentally alter their tactical approach and significantly reduce their goal threat. Kulusevski's fitness is also key to Sweden's creative output.",
+    "bettingPerspective": "The Netherlands are marginal favorites based on squad depth and greater consistency, but over 2.5 goals is one of the most confidently backed markets in the group stage. Both teams' attacking quality and the tactical matchup suggest a high-scoring encounter that could go either way.",
+    "historicalPattern": "In 28 all-time meetings, the Netherlands lead 13-8 with 7 draws. Their 2 World Cup meetings: Netherlands won the 1994 quarter-final 3-1 in Dallas (Bergkamp scored), and they drew at the 1978 World Cup. In Euro qualifiers (2023), the Netherlands held the upper hand. But Sweden's current strike partnership is unlike anything the Dutch have faced in this fixture before."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Virgil van Dijk",
+      "teamCode": "NED",
+      "narrative": "This is the match that will test Van Dijk's credentials as the world's best defender. Gyokeres' power and Isak's movement create a two-pronged threat that even the most experienced center-backs struggle to contain simultaneously. Van Dijk's reading of the game, his aerial dominance, and his communication with his defensive partner will need to be perfect. One mistake against these strikers, and the consequences are immediate and ruthless.",
+      "statline": "Dutch captain, defending a qualifying record of just 4 goals conceded in 8 matches"
+    },
+    {
+      "name": "Viktor Gyokeres",
+      "teamCode": "SWE",
+      "narrative": "The Sporting CP phenomenon has been the most prolific striker in European football over the past season. Over 40 goals, scored with the kind of ruthless efficiency that has attracted every major club on the continent. Against Van Dijk, Gyokeres faces the ultimate test — but his physical power, his movement in the box, and his finishing from any angle make him a problem that no single defender can solve alone.",
+      "statline": "8 goals in qualifying, over 40-goal season at Sporting CP, Sweden's most valuable player at $100M"
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamCode": "NED",
+      "narrative": "The Liverpool forward's World Cup pedigree — 3 goals in the 2022 group stage — marks him as a tournament player of the highest order. Against Sweden, Gakpo's versatility will be crucial. His ability to drift from left to center to right forces Sweden's defense into constant readjustments, and his direct running with the ball creates the kind of individual chances that decide tight matches.",
+      "statline": "3 goals at the 2022 World Cup, Liverpool's versatile forward"
+    },
+    {
+      "name": "Alexander Isak",
+      "teamCode": "SWE",
+      "narrative": "If Gyokeres is the battering ram, Isak is the rapier. Newcastle's elegant striker operates in the spaces between defenders, making runs that go untracked until it's too late. His first touch is sublime, his finishing clinical, and his understanding with Gyokeres borders on telepathic. When one drops deep, the other stretches the line. When one goes wide, the other attacks the box. Together, they are the most dangerous partnership at the World Cup.",
+      "statline": "Newcastle United's star striker, forming the tournament's most feared partnership with Gyokeres"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Netherlands 2-1 Sweden",
+    "confidence": 47,
+    "narrative": "This match has goals written all over it, and the Netherlands' superior squad depth and tactical versatility should give them the slimmest of edges. Van Dijk will contain Gyokeres and Isak for most of the match, but he cannot prevent them from creating at least one genuine scoring opportunity — and against strikers of this quality, one chance is often enough.\n\nThe Dutch will look to control possession and create through Gakpo's movement and Simons' creativity. Sweden will be happy to concede territory and attack in transition, using Kulusevski's service to find Gyokeres and Isak in dangerous positions. The match will be open, attacking, and decided by which team's finishing is more clinical on the day.\n\nThe Netherlands' bench — their ability to bring on fresh quality in the final 20 minutes — may prove decisive. Sweden's starting XI can compete with anyone, but their depth doesn't match the Dutch. If the match is level after 70 minutes, the Netherlands' substitutions could tilt the balance.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Sweden 3-2 Netherlands",
+        "probability": 18,
+        "reasoning": "Gyokeres and Isak run riot, overwhelming the Dutch defense with their movement and finishing. Sweden announce themselves as dark horse contenders with a stunning victory that echoes the drama of the 1994 quarter-final."
+      },
+      {
+        "scenario": "Netherlands 2-2 Sweden",
+        "probability": 22,
+        "reasoning": "The quality is too evenly matched for either team to pull away. Four goals, two for each side, in a match that will be remembered as one of the group stage's greatest encounters. A draw that leaves Group F deliciously poised for the final matchday."
+      }
+    ]
+  },
+
+  "closingLine": "Since 1913, the Netherlands and Sweden have been producing football matches of genuine quality. In Group F, with the tournament's best strike partnership facing the world's best center-back, their 29th meeting promises to be the most spectacular yet. Total Football meets the Scandinavian Storm — and the winner takes control of the group."
+}

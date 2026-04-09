@@ -1,0 +1,80 @@
+{
+  "matchKey": "BEL_NZL",
+  "team1Code": "BEL",
+  "team2Code": "NZL",
+  "team1Name": "Belgium",
+  "team2Name": "New Zealand",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The All Whites' Unbeaten Record Faces Its Sternest Test",
+  "subheadline": "New Zealand's fairy-tale World Cup history collides with Belgium's desperate need for a commanding group stage victory",
+
+  "openingNarrative": "Here is a statistic that will make you do a double take: New Zealand are unbeaten in World Cup history. Three matches at the 2010 tournament in South Africa produced three draws -- against Slovakia, Italy, and Paraguay -- and the All Whites went home with their heads held impossibly high, the only unbeaten team at that entire World Cup. It is one of football's most charming records, and it walks into this match against Belgium like a beloved underdog entering the final round of a boxing match against a heavyweight champion.\n\nBelgium, ranked 8th in the world by ELO with a squad valued at $771 million, represent everything that New Zealand's plucky, part-time professionals are not. Kevin De Bruyne earns more in a month than New Zealand's entire squad value combined. Jeremy Doku's transfer fee alone could fund New Zealand Football's operations for years. The gap, on paper, is a chasm.\n\nBut this is the World Cup, where paper means nothing and heart means everything. New Zealand's qualification was emphatic -- 5 wins from 5 in OFC qualifying, 29 goals scored and just 1 conceded, with Chris Wood netting 9 times. The Nottingham Forest striker is the focal point of a team that knows exactly what it is and embraces its identity with ferocious pride. Belgium should win this match. But if New Zealand can channel the spirit of 2010, when they held the mighty Azzurri to a draw, this could be the group stage's most romantic story.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This is a classic David vs Goliath tactical puzzle. Belgium's 4-2-3-1 will look to dominate possession and create through De Bruyne's vision and Doku's dribbling. They will push their fullbacks high, stretch the pitch, and attempt to overwhelm New Zealand with movement and quality in the final third.\n\nNew Zealand under Darren Bazeley will set up in a pragmatic 4-4-2 that compresses into a deep 4-4-1-1 without the ball. Chris Wood will serve as the lone aerial outlet, while the midfield four will be asked to cover enormous amounts of ground. New Zealand's game plan is clear: stay compact, deny space between the lines, and make Belgium beat them with crosses into a crowded box rather than through balls into space.\n\nThe danger for Belgium is impatience. If New Zealand survive the first 30 minutes, the Belgian crowd will grow anxious, the passing will become more speculative, and suddenly Wood is winning headers in the opposition half with runners flooding behind. It is an old formula, but it works.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Jeremy Doku vs New Zealand's right-back -- Belgium's dribbling wizard against the All Whites' defensive resolve"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Belgium (ELO: 1748) vs New Zealand (ELO: 1505) -- a 243-point gap, one of the largest in the group stage. This translates to roughly a 75% win probability for Belgium. New Zealand's ELO reflects their Oceania competition level more than their actual tournament capability.",
+    "formAnalysis": "Belgium were unbeaten in UEFA qualifying with 5 wins and 3 draws, scoring 29 goals. New Zealand were perfect in OFC qualifying: 5 wins from 5, with a remarkable 29-1 goal record. Chris Wood alone scored 9 goals, making him OFC qualifying's top scorer by a distance.",
+    "squadValueComparison": "Belgium's squad ($771M) vs New Zealand's ($76.8M) -- a 10:1 ratio. New Zealand's most valuable player, Chris Wood ($25M), would rank among Belgium's least expensive outfield starters. This is the financial reality of Oceania football meeting European elite.",
+    "injuryImpact": "New Zealand's squad is thin enough that any injury to a key player fundamentally changes their tournament. Chris Wood is irreplaceable -- there is no like-for-like alternative. Belgium's depth means they could field two entirely different XI's of comparable quality.",
+    "bettingPerspective": "Belgium are overwhelming favorites. New Zealand will be among the longest odds for any team to win a group match at this tournament. But the draw market offers intrigue -- New Zealand's entire World Cup history is draws, and at generous odds, the 0-0 or 1-1 represent genuine value.",
+    "historicalPattern": "These teams have never met at any level. Belgium have no World Cup loss to an Oceania nation, while New Zealand have never lost at a World Cup at all -- an extraordinary record they will defend with everything they have."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "narrative": "De Bruyne against a deep-sitting defense is one of football's most fascinating tactical problems. New Zealand will pack the area between their midfield and defense, daring Belgium to find a way through. De Bruyne's response will be surgical: diagonal balls over the top, disguised through-passes into the channels, and set-piece deliveries that turn dead balls into live threats. His 6 qualifying goals suggest he is in the mood to score himself, not just create.",
+      "statline": "6 goals in 8 UEFA qualifying matches; Belgium's creative heartbeat"
+    },
+    {
+      "name": "Chris Wood",
+      "teamCode": "NZL",
+      "narrative": "Everything New Zealand do goes through Chris Wood. The Nottingham Forest striker is not just their best player -- he is their identity. His 9 goals in OFC qualifying were scored with the clinical efficiency of a man who knows that every chance might be his last. At the World Cup, against defenders who tower over Oceania's best, Wood's intelligence and timing in the box will be tested like never before. But this is a man who scores Premier League goals for a living. He belongs on this stage.",
+      "statline": "9 goals in 5 OFC qualifying matches; New Zealand's all-time leading World Cup qualifying scorer"
+    },
+    {
+      "name": "Jeremy Doku",
+      "teamCode": "BEL",
+      "narrative": "Doku is the player New Zealand will fear most in open play. His dribbling is almost impossible to contain one-on-one, which is why most Premier League sides double up on him. New Zealand will need to assign a fullback and a winger to his flank, which creates space elsewhere. Doku's challenge is end product -- converting his dribbling dominance into goals and assists when it matters most.",
+      "statline": "Premier League leader in successful dribbles; key attacking outlet in Belgium's qualifying campaign"
+    },
+    {
+      "name": "Liberato Cacace",
+      "teamCode": "NZL",
+      "narrative": "The Empoli left-back represents New Zealand's new breed -- a player good enough to compete in Serie A who brings European tactical intelligence to a team that needs every ounce of quality it can find. Cacace's attacking runs from left-back provide New Zealand's best chance of creating something from open play. His ability to overlap, deliver crosses, and combine with midfielders gives the All Whites a dimension that pure defensive solidity alone cannot provide.",
+      "statline": "Regular Serie A starter with Empoli; New Zealand's most important outfield player after Wood"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Belgium 2-0 New Zealand",
+    "confidence": 70,
+    "narrative": "The quality gap is real, and Belgium should have too much for New Zealand over 90 minutes. De Bruyne will find the key, Doku will provide the chaos, and the Belgian machine will grind out a professional victory.\n\nBut this scoreline comes with a caveat: New Zealand will make this hard. They will defend heroically, waste time intelligently, and frustrate Belgium for longer than anyone expects. If the first goal does not come before halftime, Belgian nerves will jangle and the narrative shifts from routine win to potential upset.\n\nExpect Belgium to break through in the second half as New Zealand's energy fades and the quality gap becomes impossible to mask with effort alone. A late second goal will make the result look comfortable. It will have been anything but.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Belgium 0-0 New Zealand",
+        "probability": 15,
+        "reasoning": "New Zealand's unbeaten World Cup record survives another chapter. Wood wins every aerial duel, the All Whites' goalkeeper has the game of his life, and Belgium's frustration produces a scoreless draw that delights Kiwi fans and devastates Belgian hopes."
+      },
+      {
+        "scenario": "Belgium 4-0 New Zealand",
+        "probability": 15,
+        "reasoning": "Belgium click from the opening whistle. De Bruyne is in conductor mode, Doku destroys New Zealand's right side repeatedly, and the floodgates open. This is the scenario where the quality gap manifests in its full, unforgiving reality."
+      }
+    ]
+  },
+
+  "closingLine": "New Zealand arrive at this match with the most unlikely unbeaten record in World Cup history. Belgium arrive with the talent to end it. Whether romance or reality prevails, this is the kind of mismatch that makes the World Cup magical."
+}

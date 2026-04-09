@@ -1,0 +1,80 @@
+{
+  "matchKey": "POR_UZB",
+  "team1Code": "POR",
+  "team2Code": "UZB",
+  "team1Name": "Portugal",
+  "team2Name": "Uzbekistan",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Ronaldo's Farewell Tour Meets Central Asia's Dream",
+  "subheadline": "Portugal's attacking aristocracy faces Uzbekistan's historic World Cup debutants in a clash of footballing worlds",
+
+  "openingNarrative": "Cristiano Ronaldo has scored 130 international goals, won the European Championship, the Champions League five times, and accumulated individual honors that fill a museum in his native Funchal. He has played in five World Cups, spanning 20 years of footballing evolution, from the skinny winger who wept after the 2006 semifinal to the chiseled monument of athletic achievement who stands before us in 2026. At 41, this is his farewell. The last dance. And it begins against a team that has never played a World Cup match in its history.\n\nUzbekistan's qualification for the 2026 World Cup is the culmination of decades of Central Asian football development. A nation of 36 million people, landlocked between Kazakhstan and Afghanistan, has produced a team capable of competing at the highest level. Srecko Katanec's side play a disciplined, structured 4-2-3-1 that reflects their Slovenian coach's European tactical education. Eldor Shomurodov, the Roma striker, leads a squad that has no intention of merely making up the numbers.\n\nThis is their first-ever meeting. The gulf in squad valuation is enormous — Portugal's $1.25 billion roster versus Uzbekistan's $46.9 million. But Uzbekistan haven't traveled 10,000 kilometers to be extras in Ronaldo's farewell film. They've come to write their own story.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Portugal's 4-3-3 under Roberto Martinez is a symphony of attacking talent. Rafael Leao's pace on the left, Bernardo Silva's intelligence through the center, Bruno Fernandes' creative passing, and Ronaldo's predatory positioning create an attacking unit that can overwhelm any defense. The buildup is patient and possession-heavy, with Vitinha controlling tempo from midfield.\n\nUzbekistan's 4-2-3-1 is built on defensive discipline and structured transitions. Two holding midfielders screen the back four, denying Portugal's creative players the space between the lines that they crave. Masharipov provides the creative outlet, while Shomurodov's hold-up play gives Uzbekistan a focal point when they win possession.\n\nThe tactical reality is stark: Portugal will have 70%+ possession and create numerous chances. Uzbekistan's challenge is not to match Portugal but to survive — to keep the score close, to remain organized, and to take any counter-attacking opportunity that arises. If they can reach halftime at 0-0, belief will grow. If Portugal score early, the floodgates could open.",
+    "team1Formation": "4-3-3",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Rafael Leao's pace vs Uzbekistan's right-back — Portugal's most explosive attacker ($113M) against the most exposed defender on the pitch"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Portugal (ELO: 1760, rank 6) vs Uzbekistan (ELO: 1535, rank 43) — a 225-point gap that is among the widest in the group stage. Portugal's win probability based on Elo alone exceeds 78%.",
+    "formAnalysis": "Portugal's qualifying campaign was imperious, with Ronaldo continuing to score and a new generation of attackers — Leao, Joao Neves, Goncalo Ramos — emerging alongside the veterans. Uzbekistan qualified through the Asian pathway with disciplined performances that belied their underdog status.",
+    "squadValueComparison": "Portugal ($1.25B) vs Uzbekistan ($46.9M) — a 27x difference. This is the most financially lopsided match in the group stage. Portugal's most valuable player, Rafael Leao ($113M), is worth more than double Uzbekistan's entire squad. Uzbekistan's most valuable player, Abbos Fayzullayev, is valued at just $9.4M.",
+    "injuryImpact": "Portugal's depth is extraordinary — they can lose any player and still field a world-class replacement. Uzbekistan have no such luxury. An injury to Shomurodov would remove their primary attacking threat and fundamentally alter their tactical approach.",
+    "bettingPerspective": "Portugal are the heaviest favorites in the group stage. The Asian handicap and over/under goals markets offer more intrigue than the match result. Portugal -2.5 and over 3.5 goals are both popular selections.",
+    "historicalPattern": "First-ever meeting at any level. Uzbekistan have no reference point for facing a team of Portugal's quality, which is both a disadvantage (no experience) and an advantage (no fear)."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Cristiano Ronaldo",
+      "teamCode": "POR",
+      "narrative": "Ronaldo at 41 is not the player who tormented defenses with pace and power in his prime. He is something different now — a statue in the penalty area, a header of extraordinary precision, a penalty-taker of clinical reliability. His movement in the box remains elite, his desire to score is undiminished, and the World Cup stage has always brought out his competitive fire. Against Uzbekistan, Ronaldo will want to mark his final tournament debut with the goals that have defined his extraordinary career.",
+      "statline": "130+ international goals — the all-time record holder in men's football"
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "teamCode": "UZB",
+      "narrative": "Shomurodov is Uzbekistan's bridge between dreams and reality. The Roma striker has competed in Serie A, knows what it takes to perform at the highest level, and carries the hopes of an entire Central Asian nation on his broad shoulders. His hold-up play, physical presence, and finishing ability give Uzbekistan a genuine attacking threat — the one player on their team who has consistently performed against top-level defenders.",
+      "statline": "Roma striker leading Uzbekistan's historic World Cup campaign"
+    },
+    {
+      "name": "Rafael Leao",
+      "teamCode": "POR",
+      "narrative": "Leao is the most terrifying wide player in world football when in full flight. The AC Milan winger's combination of pace, dribbling ability, and end product makes him virtually undefendable one-on-one. Against Uzbekistan's right-back, Leao will have the space and the license to express himself — and when Leao expresses himself, defenses crumble.",
+      "statline": "Portugal's most valuable player at $113M; AC Milan's primary attacking threat"
+    },
+    {
+      "name": "Abbos Fayzullayev",
+      "teamCode": "UZB",
+      "narrative": "The young midfielder is Uzbekistan's brightest talent and most valuable player at $9.4M. His technical quality and eye for a pass give Uzbekistan moments of genuine creativity in a team that is primarily built around defensive discipline. Against Portugal's midfield, Fayzullayev will have precious little time on the ball — but the moments he does find could define Uzbekistan's World Cup debut.",
+      "statline": "Uzbekistan's most valuable player at $9.4M and their brightest young talent"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Portugal 3-0 Uzbekistan",
+    "confidence": 75,
+    "narrative": "The quality gap is simply too large for Uzbekistan to bridge, no matter how organized and committed they are. Portugal's attacking depth — Ronaldo, Leao, Bruno Fernandes, Bernardo Silva — presents a rotating cast of threats that Uzbekistan's defense will struggle to contain for 90 minutes.\n\nExpect Uzbekistan to compete bravely in the first half, potentially keeping the score at 0-0 or 1-0. But Portugal's patient possession and the introduction of fresh attackers from the bench will break down the resistance. Ronaldo will score — whether from a penalty, a header, or a tap-in, he will mark his final World Cup with a goal. Leao's pace will be decisive on at least one occasion.\n\nBut here is the thing about World Cup debutants: they have nothing to lose and everything to gain. Uzbekistan will earn respect regardless of the scoreline. They will have their moments — a Shomurodov effort that tests the goalkeeper, a Fayzullayev pass that draws gasps from the crowd. The World Cup is richer for their presence.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Portugal 1-0 Uzbekistan",
+        "probability": 15,
+        "reasoning": "Uzbekistan produce the defensive performance of a lifetime. Organized, disciplined, and utterly committed, they limit Portugal to a single goal — perhaps a Ronaldo penalty. It would rank as one of the most impressive defensive displays in World Cup history."
+      },
+      {
+        "scenario": "Portugal 5-0 Uzbekistan",
+        "probability": 8,
+        "reasoning": "Portugal are ruthless from the opening whistle. Leao, Ronaldo, and Bruno Fernandes all score in a first-half blitz, and Uzbekistan's World Cup debut becomes a painful lesson in the gulf between qualification and competition."
+      }
+    ]
+  },
+
+  "closingLine": "Ronaldo's final World Cup begins against a nation experiencing its first. Two journeys, separated by decades and continents, intersecting for 90 minutes of football that both will remember forever — for very different reasons."
+}

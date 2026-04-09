@@ -1,0 +1,80 @@
+{
+  "matchKey": "EGY_IRN",
+  "team1Code": "EGY",
+  "team2Code": "IRN",
+  "team1Name": "Egypt",
+  "team2Name": "Iran",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "The Pharaoh King Against Team Melli's Tactical Fortress",
+  "subheadline": "Mohamed Salah's Egypt and Mehdi Taremi's Iran meet in a battle between Africa's record champions and Asia's most disciplined side",
+
+  "openingNarrative": "This is a match between two nations who share a common thread — they are defined by the greatness of one player each, yet built on the foundations of collective resilience. Egypt have Mohamed Salah, the Liverpool phenomenon whose 9 qualifying goals dragged an entire nation to the World Cup with a brutality that bordered on the casual. Iran have Mehdi Taremi, the clever, selfless striker whose 10 qualifying goals anchored Team Melli's AFC campaign with a veteran's poise.\n\nEgypt's qualifying campaign was dominant: 8 wins, 2 draws, zero losses, 20 goals scored, just 2 conceded. Under Hossam Hassan, the Pharaohs have married Salah's world-class attacking threat with a defensive discipline that has made them nearly impenetrable. Seven-time Africa Cup of Nations champions, Egypt carry the weight of continental royalty — yet their World Cup record tells a humbler story. Advancing past the group stage has eluded them since 1934.\n\nIran's path was equally impressive within the AFC: 7 wins, 2 draws, 1 loss, 19 goals scored, 8 conceded. Amir Ghalenoei's side is built on defensive organization and tactical flexibility, with Taremi's intelligence as the attacking fulcrum. Team Melli have qualified for six World Cups but have never advanced beyond the group stage — a parallel to Egypt's own frustrations.\n\nThe head-to-head stands at 1-0-1 across 2 meetings. This is a true 50-50 encounter between two proud footballing nations desperate to finally write a new chapter in their World Cup stories.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "Egypt's 4-2-3-1 under Hassan is built around Salah's destructive cutting inside from the right wing. The double pivot provides defensive security, allowing Salah and the supporting attackers freedom to express themselves. Egypt defend with a narrow, compact shape that forces opponents wide, then look to spring Salah in transition with quick, direct passes.\n\nIran's 4-2-3-1 mirrors Egypt's structure but with a different emphasis. Ghalenoei's approach is defensively disciplined — Iran will happily concede possession and territory, focusing on maintaining their shape and hitting on the counter. Taremi's ability to hold the ball up and bring teammates into play is essential, while the wide players look to exploit any space left by Egypt's attacking full-backs.\n\nThe tactical chess match will be fascinating — two teams who understand defensive football, both looking to exploit the other's vulnerabilities in transition. The team that wins the midfield battle and controls the tempo of counter-attacks will likely prevail.",
+    "team1Formation": "4-2-3-1",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Mohamed Salah vs Iran's left-back — the Premier League's most devastating attacker against Team Melli's defensive structure"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Egypt (ELO: 1648) vs Iran (ELO: 1628) — a mere 20-point gap that makes this one of the closest matches in the entire group stage. The ELO difference is negligible, confirming what the eye test suggests: these teams are remarkably evenly matched.",
+    "formAnalysis": "Egypt's CAF qualifying was outstanding: 8 wins, 2 draws, 0 losses, 20 goals scored, 2 conceded. Salah's 9 goals were extraordinary. Iran's AFC qualifying was equally impressive: 7 wins, 2 draws, 1 loss, 19 goals scored, 8 conceded. Taremi's 10 goals led the confederation.",
+    "squadValueComparison": "Egypt's squad ($287M) significantly outvalues Iran's ($82.3M), primarily due to Salah's $125M valuation. Remove Salah, and the gap narrows considerably. Taremi ($10M) represents value that belies his quality.",
+    "injuryImpact": "Salah's fitness is Egypt's entire World Cup in one ankle. Without him, they lose not only their primary goal threat but the gravitational pull that creates space for everyone else. Iran's squad is more balanced — losing Taremi hurts, but Ghalenoei's system can compensate.",
+    "bettingPerspective": "A genuine coin-flip in the markets. Egypt are marginal favorites due to Salah's X-factor, but Iran's defensive discipline and Taremi's efficiency make them live underdogs. The draw is the value play.",
+    "historicalPattern": "The head-to-head is split: 1 win each across 2 meetings. Neither team has established any psychological advantage."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Mohamed Salah",
+      "teamCode": "EGY",
+      "narrative": "Salah is Egypt — the player who transcends football to become a symbol of national pride and possibility. His 9 qualifying goals were not merely statistics; they were lifelines for a nation's World Cup dream. At Liverpool, he has scored over 200 goals. For Egypt, every single one carries the weight of 100 million people's expectations. Against Iran's disciplined defense, Salah will need to find the spaces that their tactical structure is designed to eliminate.",
+      "statline": "9 goals in CAF qualifying, 200+ goals for Liverpool, Egypt's greatest ever player"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "narrative": "Taremi is the complete striker — a player whose intelligence, work rate, and finishing ability make him one of the most underrated forwards in world football. His 10 qualifying goals led all scorers in the AFC, and his experience in European football provides the quality that Iran need to compete at the highest level. Against Egypt, his hold-up play and ability to bring others into the game will be as important as his finishing.",
+      "statline": "10 goals in AFC qualifying, Iran's most important player"
+    },
+    {
+      "name": "Omar Marmoush",
+      "teamCode": "EGY",
+      "narrative": "Marmoush has emerged as the perfect complement to Salah — a forward whose pace, directness, and goal-scoring ability provide Egypt with a second dimension that prevents opponents from simply doubling up on their talisman. His Bundesliga performances have marked him as a genuine European-level talent, and his energy in pressing from the front sets the tone for Egypt's defensive work.",
+      "statline": "Egypt's emerging attacking talent, Bundesliga proven"
+    },
+    {
+      "name": "Alireza Jahanbakhsh",
+      "teamCode": "IRN",
+      "narrative": "Jahanbakhsh brings Premier League experience and the kind of creative quality that Iran need in the attacking third. His ability to deliver crosses, take on defenders, and produce moments of individual brilliance from wide positions gives Iran an attacking outlet beyond Taremi. Against Egypt's narrow defensive shape, his width could create the spaces that Iran exploit.",
+      "statline": "Iran's experienced wide attacker with Premier League pedigree"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Egypt 1-0 Iran",
+    "confidence": 48,
+    "narrative": "This is a match that defies confident prediction. Both teams are defensive by nature, both have a world-class individual capable of deciding the match, and both have qualifying campaigns that demonstrate their ability to grind out results.\n\nThe marginally higher confidence in Egypt reflects Salah's ability to produce magic from nothing — a trait that has defined his career. In a tight, tactical match where chances are scarce, having the player most likely to create something from nothing is a decisive advantage.\n\nIran will be content to sit deep and frustrate, backing their defensive organization and hoping that Taremi can create a chance on the counter. Egypt will have more of the ball but must be patient — Iran's defensive shape is difficult to penetrate through open play.\n\nDo not expect goals. Expect tension, tactical discipline, and one moment of quality that separates two evenly matched teams.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Iran 1-0 Egypt",
+        "probability": 22,
+        "reasoning": "Iran's counter-attacking plan works to perfection, Taremi produces a clinical finish, and Egypt's frustration at being unable to break down Team Melli's defense costs them dearly."
+      },
+      {
+        "scenario": "Egypt 2-0 Iran",
+        "probability": 18,
+        "reasoning": "Salah produces two moments of individual brilliance, Egypt's defense holds firm, and Iran's conservative approach is punished by the quality gap at the sharp end."
+      }
+    ]
+  },
+
+  "closingLine": "Two proud nations, two world-class strikers, two qualifying campaigns that demand respect. Egypt versus Iran is the World Cup match that the wider world may overlook — but those who watch will witness a tactical battle of the highest order."
+}

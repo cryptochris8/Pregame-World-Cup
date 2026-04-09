@@ -1,0 +1,80 @@
+{
+  "matchKey": "JPN_SWE",
+  "team1Code": "JPN",
+  "team2Code": "SWE",
+  "team1Name": "Japan",
+  "team2Name": "Sweden",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Precision Versus Power in the Group of Quality",
+  "subheadline": "Japan's tactical masterclass meets Sweden's devastating strike force in a Group F clash that could define both nations' tournament fates",
+
+  "openingNarrative": "Group F is the group that tournament analysts circle with a mixture of excitement and dread. Netherlands, Japan, Sweden, Tunisia — four teams with genuine quality, two of whom must go home early. When Japan and Sweden meet, it won't just be a football match. It will be a philosophical collision between two of the game's most compelling approaches to the beautiful game.\n\nJapan are precision. Every press is coordinated. Every transition is rehearsed. Every movement has a purpose. Their 2022 World Cup victories over Germany and Spain weren't flukes — they were the product of years of tactical evolution under Hajime Moriyasu, a coach who has transformed the Samurai Blue from an entertaining sideshow into a team that the world's best fear drawing. Thirty goals scored and three conceded in qualifying. Those numbers don't lie.\n\nSweden are power. Viktor Gyokeres, who scored over 40 goals in a single season for Sporting CP, is one of Europe's most devastating strikers — a player who combines the physicality of a center-forward with the movement and finishing of a modern number nine. Alongside him, Alexander Isak has become one of Newcastle's most important players, a striker of elegance and lethal efficiency. Together, Gyokeres and Isak form perhaps the most fearsome strike partnership at the entire tournament. In their 5 previous meetings, Japan have never beaten Sweden (0 wins, 2 draws, 3 losses). Their only World Cup meeting, at the 2002 tournament Japan co-hosted, ended 1-1.",
+
+  "tacticalBreakdown": {
+    "title": "The Chess Match",
+    "narrative": "This match will be decided by whether Japan can control the supply line to Gyokeres and Isak. Japan's 3-4-2-1 pressing system is designed to suffocate opponents in midfield, but Sweden's 4-4-2 can bypass that press entirely with direct balls into the channels where their strikers thrive. If Gyokeres can hold the ball up and bring Isak into play, Japan's three-center-back system will be stretched in ways their qualifying opponents never managed.\n\nJon Dahl Tomasson's Sweden don't just rely on their front two. Dejan Kulusevski's energy and creativity from the right flank provides the supply line, while Anthony Elanga offers pace and directness on the left. Sweden's willingness to play long and exploit aerial duels means Japan's pressing may win the midfield but lose the final third.\n\nJapan's counter-weapon is the space Sweden leave when committing to attack. Kubo and Mitoma in transition against stretched Swedish full-backs is a mouth-watering prospect. The match may come down to which team's attacking philosophy proves more effective: Japan's collective pressing or Sweden's dual-striker power.",
+    "team1Formation": "3-4-2-1",
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Viktor Gyokeres and Alexander Isak vs Japan's three center-backs — the tournament's most potent strike duo against Japan's organized defensive system"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Sweden (ELO: 1750) vs Japan (ELO: 1695) — Sweden's ELO is marginally higher, reflecting their strong European qualifying performance. But ELO doesn't account for Japan's proven ability to outperform their rating at World Cups. The 55-point gap makes this essentially a 50-50 match on paper.",
+    "formAnalysis": "Japan's qualifying was extraordinary: 7 wins, 2 draws, 1 loss, +27 goal difference with just 3 goals conceded. Sweden qualified via UEFA's Play-Off Path B after a qualifying campaign of 6 wins, 2 draws, 2 losses. Viktor Gyokeres scored 8 goals in qualifying, matching Memphis Depay for the top Dutch scorer. Japan's Ayase Ueda also netted 8 in qualifying.",
+    "squadValueComparison": "Japan ($432M) vs Sweden ($400M) — remarkably similar squad values. Gyokeres ($100M) is Sweden's most valuable player and the most expensive individual in this match, slightly above Kubo ($62.5M). The financial parity reflects the competitive balance on the pitch.",
+    "injuryImpact": "Both teams are expected to be at full strength. For Sweden, losing either Gyokeres or Isak would fundamentally alter their tactical approach — their system is built around the partnership. Japan's depth in wide areas provides more flexibility, but Kubo and Mitoma are irreplaceable in their roles.",
+    "bettingPerspective": "One of the tightest matches on the market. The draw is heavily backed, reflecting both teams' attacking quality and the likelihood that this match produces goals at both ends. Over 2.5 goals is strongly favored given both teams' offensive pedigree.",
+    "historicalPattern": "Five previous meetings: Sweden lead 3-0-2 (wins-draws-losses). Their 2002 World Cup meeting in Kobe ended 1-1 in the group stage. Japan have never beaten Sweden in any competition — a record they will be desperate to change on football's biggest stage."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Viktor Gyokeres",
+      "teamCode": "SWE",
+      "narrative": "The Sporting CP striker has become one of European football's most unstoppable forces. Over 40 goals in a single season, scored with the kind of ruthless efficiency that has attracted every major club on the continent. Gyokeres combines raw physical power with intelligent movement and clinical finishing. Against Japan's organized but physically smaller defense, his aerial presence and ability to hold the ball under pressure could be the deciding factor.",
+      "statline": "8 goals in World Cup qualifying, over 40-goal season at Sporting CP"
+    },
+    {
+      "name": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "narrative": "Japan's creative heartbeat operates in the spaces between the lines where magic happens. Against Sweden's direct approach, Kubo's role becomes even more important — he must create the chances that Japan's collective pressing generates. His close control in tight spaces and his ability to pick the right pass under pressure make him the player most likely to exploit any gaps Sweden leave when committing bodies forward.",
+      "statline": "Japan's most valuable player at $62.5M, creative architect of their 30-goal qualifying campaign"
+    },
+    {
+      "name": "Alexander Isak",
+      "teamCode": "SWE",
+      "narrative": "If Gyokeres is the battering ram, Isak is the rapier. Newcastle's elegant striker offers something different — intelligent movement, silky first touch, and the ability to drift into spaces that defenders haven't anticipated. His understanding with Gyokeres is almost telepathic; when one drops deep, the other stretches the defensive line. Against Japan's back three, Isak's movement could create the overloads that unlock the most organized defense in Asian football.",
+      "statline": "Newcastle United's star striker forming one of the tournament's most feared partnerships with Gyokeres"
+    },
+    {
+      "name": "Kaoru Mitoma",
+      "teamCode": "JPN",
+      "narrative": "In the spaces behind Sweden's attacking full-backs, Mitoma will find the room to do what he does best: run at defenders with the ball at his feet. His directness is Japan's most potent counter-attacking weapon, and against a Sweden team that commits numbers forward, those spaces will appear regularly. The question isn't whether Mitoma will create chances — it's whether Japan can convert them against a team with two of Europe's most lethal finishers at the other end.",
+      "statline": "Brighton's electrifying dribbler, university thesis on dribbling turned into Premier League artistry"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Japan 2-2 Sweden",
+    "confidence": 35,
+    "narrative": "This has goals written all over it. Japan's pressing will create chances. Sweden's strike partnership will create chances. Neither defense is equipped to completely neutralize the other's attacking quality. The result is a match that should delight neutrals and terrify both managers.\n\nExpect Japan to take the lead through their superior organization, only for Gyokeres to equalize with the kind of unstoppable finish that has terrorized Liga Portugal defenses all season. The second half will be an open, breathtaking affair where both teams push for the win they need in this competitive group. Goals from both sides, drama in abundance, and a shared point that leaves Group F deliciously poised for the final matchday.\n\nA draw might suit both teams in the context of the group, but neither side's pride will allow them to settle for it. This match will be remembered long after the group stage is over.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Japan 3-1 Sweden",
+        "probability": 20,
+        "reasoning": "Japan's pressing overwhelms Sweden early, and Kubo and Mitoma run riot before Sweden can adjust. Sweden's direct approach plays into Japan's hands as their pressing wins the ball in dangerous positions repeatedly."
+      },
+      {
+        "scenario": "Sweden 3-2 Japan",
+        "probability": 18,
+        "reasoning": "Gyokeres and Isak prove too powerful for Japan's back three. Sweden's aerial dominance and physical superiority in the box create chances that Japan's technical quality can't fully compensate for."
+      }
+    ]
+  },
+
+  "closingLine": "When Japanese precision meets Swedish power, football produces its most compelling theater. In Group F, there is no room for caution — and this match promises to deliver the kind of spectacle that makes the World Cup the greatest show on earth."
+}

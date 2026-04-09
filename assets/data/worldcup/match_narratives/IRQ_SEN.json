@@ -1,0 +1,80 @@
+{
+  "matchKey": "IRQ_SEN",
+  "team1Code": "IRQ",
+  "team2Code": "SEN",
+  "team1Name": "Iraq",
+  "team2Name": "Senegal",
+  "generatedAt": "2026-04-09T00:00:00Z",
+  "dataVersion": 1,
+
+  "headline": "Continental Champions Collide",
+  "subheadline": "Iraq, the 2007 Asian Cup winners, face Senegal, the 2022 African champions, in a battle of continental pedigree and fighting spirit",
+
+  "openingNarrative": "There is a quiet poetry in this matchup that the casual observer might miss. Iraq won the 2007 Asian Cup in one of sport's most extraordinary stories — a team from a war-torn nation, whose players could not even train at home, who united 30 million Iraqis in a celebration that transcended football and touched something fundamental about the human capacity for hope. Senegal won the 2022 Africa Cup of Nations, with Sadio Mane scoring the decisive penalty in the final to deliver a continent's most prestigious trophy to a nation that had pursued it for decades.\n\nBoth teams know what it means to win when the world expects you to lose. Both teams know what it means to represent something larger than football. And both teams arrive at this World Cup carrying the hopes of their respective continents — Iraq for Asia's developing football nations, Senegal for an African continent that continues to close the gap on the traditional powers.\n\nThe quality balance tilts heavily toward Senegal. Their squad ($395M), built on players competing in Europe's top leagues, dwarfs Iraq's ($30M). Mane, Koulibaly, Nicolas Jackson — these are players who perform on Champions League nights. Iraq's squad is largely based in Asian leagues, with Mohanad Ali ($5M) their most valuable player.\n\nBut Iraq have never been a team measured by market values. Their 2007 Asian Cup triumph came against teams with vastly superior resources. Their qualification for 2026, after a 40-year World Cup absence, was achieved through the same indomitable spirit. Against Senegal, Iraq will be outgunned. But being outgunned has never stopped them before.",
+
+  "tacticalBreakdown": {
+    "title": "The Lions vs The Lions",
+    "narrative": "Senegal's 4-3-3 under Aliou Cisse is a machine of pace and power. The front three press aggressively, the midfield wins second balls through physical superiority, and the defense — marshaled by Koulibaly — is rarely breached. Senegal's transitions from defense to attack are devastatingly fast, with Ismaila Sarr's explosive pace and Mane's intelligent movement creating chances that appear from nowhere.\n\nIraq will need to be the most disciplined version of themselves. A 4-5-1 is the most likely formation, with a packed midfield designed to deny Senegal space in the central corridor. Iraq's technical midfielders — particularly Bayesh and Ammar Yaser — will try to retain possession in safe areas and slow the tempo to prevent Senegal from playing their high-intensity game.\n\nThe tactical imperative for Iraq is clear: frustrate Senegal. Force them to play against a deep block, deny them the transitions they thrive on, and make them break down a stubborn defense through patient build-up rather than explosive counters. If Iraq can keep this match tight into the second half, the pressure shifts to Senegal — and pressure is not something that Senegal always handle with composure.",
+    "team1Formation": "4-5-1",
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Iraq's midfield discipline vs Senegal's pressing intensity — can Iraq slow the game to their tempo?"
+  },
+
+  "dataInsights": {
+    "title": "By The Numbers",
+    "eloAnalysis": "Senegal (ELO: 1700, ranked 15th) vs Iraq (ELO: 1450, ranked 65th) — a 250-point gap that gives Senegal approximately a 72% win probability. The gulf in competitive level is significant, with Senegal regularly competing against Africa's best while Iraq navigate the less consistent Asian qualifying landscape.",
+    "formAnalysis": "Senegal's qualifying was imperious: 7 wins, 3 draws, 0 losses, 22 scored and 3 conceded. Mane led with 5 goals. Iraq's AFC qualifying was more turbulent: 3 wins, 4 draws, 3 losses, 9 scored and 10 conceded. The contrast in attacking output and defensive solidity is stark.",
+    "squadValueComparison": "Senegal ($395M) vs Iraq ($30M) — a 13-to-1 financial advantage for Senegal. Nicolas Jackson ($62.5M) alone is worth more than double Iraq's entire squad. The gap reflects the difference in European league representation between the two squads.",
+    "injuryImpact": "Senegal need Mane fit as their talisman. Koulibaly's defensive leadership is equally important. Iraq need every player available — their thin squad means any absence further widens an already significant quality gap.",
+    "bettingPerspective": "Senegal are strong favorites at approximately -220. Iraq at +550 represents a true long shot. The draw at +320 is Iraq's most realistic positive outcome.",
+    "historicalPattern": "This is the first-ever meeting between Iraq and Senegal. Both teams have won continental championships (Iraq 2007, Senegal 2022), giving this match a symbolic significance as a clash of continental champions."
+  },
+
+  "playerSpotlights": [
+    {
+      "name": "Sadio Mane",
+      "teamCode": "SEN",
+      "narrative": "Senegal's all-time leading scorer leads the charge against a team that represents everything he has fought against in his career — the assumption that African and developing football nations cannot compete with the best. Mane's intelligence, his goal-scoring instinct, and his ability to produce decisive moments under pressure make him the most dangerous player on the pitch. His experience at Liverpool and Bayern Munich ensures he will not be complacent against a team he is expected to dominate.",
+      "statline": "5 qualifying goals; Senegal's all-time leading scorer; 2022 AFCON champion"
+    },
+    {
+      "name": "Aymen Hussein",
+      "teamCode": "IRQ",
+      "narrative": "Iraq's leading qualifier scorer embodies the fighting spirit that has defined Iraqi football through its darkest decades. Hussein will be isolated for long periods against Senegal's physical defense, but his clinical instincts mean that any chance — a set piece, a defensive error, a rare counter-attack — could produce a goal that would mean more to his nation than most people will ever understand.",
+      "statline": "3 goals in qualifying; Iraq's most clinical finisher and the focal point of their rare attacks"
+    },
+    {
+      "name": "Nicolas Jackson",
+      "teamCode": "SEN",
+      "narrative": "Chelsea's striker provides Senegal with a secondary attacking threat that complements Mane's intelligence with raw pace and directness. Jackson's ability to run in behind defenses creates space for Mane and pulls Iraq's center-backs into uncomfortable positions. His Premier League experience ensures he has the composure to convert the chances that Senegal's midfield will create.",
+      "statline": "Chelsea striker valued at $62.5M; Senegal's secondary attacking threat with Premier League quality"
+    },
+    {
+      "name": "Mohanad Ali",
+      "teamCode": "IRQ",
+      "narrative": "Iraq's most talented player faces the toughest defensive assignment of his career in Koulibaly. Ali's pace and directness give Iraq a counter-attacking outlet, but against Senegal's disciplined defense, he will need to pick his moments carefully. Named Asian Young Footballer of the Year in 2018, Ali carries the technical quality to compete at this level — the question is whether he can do so consistently against opposition of Senegal's caliber.",
+      "statline": "Iraq's most valuable player at $5M; 2018 Asian Young Player of the Year; 3 qualifying goals"
+    }
+  ],
+
+  "theVerdict": {
+    "title": "The Verdict",
+    "prediction": "Senegal 2-0 Iraq",
+    "confidence": 70,
+    "narrative": "Senegal's combination of pace, power, and European-level quality should prove too much for Iraq's brave but outmatched squad. Mane's intelligence and Jackson's directness will create chances that Iraq's defense — courageous as it will be — cannot repel for 90 minutes.\n\nThe first half will be tight and tense. Iraq will defend with the discipline and concentration that their 2007 Asian Cup triumph proved they possess. Senegal will probe patiently, moving the ball from side to side, looking for the opening that Iraq's deep block is designed to deny.\n\nThe breakthrough will come from a set piece — Senegal's aerial superiority in the box will eventually tell from a corner or free kick. The second goal will arrive on the counter in the final 15 minutes, when Iraq's push for an equalizer leaves space behind for Senegal's rapid transitions.\n\nIraq will compete with honor and earn the respect of every neutral. Their defensive effort will be heroic, and their fans will sing throughout — because for Iraq, being at the World Cup is a victory that transcends any scoreline.\n\nBut this is Senegal's to win, and they will take it.",
+    "alternativeScenarios": [
+      {
+        "scenario": "Iraq 1-0 Senegal",
+        "probability": 8,
+        "reasoning": "The spirit of 2007 returns. Iraq score from a set piece, defend with 11 men behind the ball, and produce the most emotional upset of the tournament. It would be Iraq's first World Cup victory and one of the greatest stories in football history."
+      },
+      {
+        "scenario": "Senegal 1-1 Iraq",
+        "probability": 15,
+        "reasoning": "Iraq's defensive discipline limits Senegal to a single goal, and Hussein converts a rare chance to earn a point that keeps Iraq's slim knockout hopes alive. The draw would be celebrated by Iraq as one of their greatest results."
+      }
+    ]
+  },
+
+  "closingLine": "Iraq won the 2007 Asian Cup to unite a broken nation. Senegal won the 2022 AFCON to fulfill a continent's dream. When these two continental champions meet, they carry more than football on their backs — they carry the weight of nations who believe that sport can heal, inspire, and transform."
+}
