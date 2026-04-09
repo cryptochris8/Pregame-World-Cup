@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/worldcup/domain/entities/match_narrative.dart';
@@ -165,6 +167,51 @@ void main() {
       );
 
       expect(find.textContaining('remember it forever'), findsOneWidget);
+    });
+  });
+
+  group('NarrativeTab accessibility', () {
+    testWidgets('headline is marked as a Semantics header', (tester) async {
+      await tester.pumpWidget(buildWidget(sampleNarrative));
+
+      final headlineFinder = find.text(
+        'The Eternal Rivalry Meets Its Greatest Chapter',
+      );
+      expect(headlineFinder, findsOneWidget);
+
+      final semantics = tester.getSemantics(headlineFinder);
+      expect(semantics.hasFlag(SemanticsFlag.isHeader), isTrue);
+    });
+
+    testWidgets('formation chips have descriptive Semantics labels',
+        (tester) async {
+      await tester.pumpWidget(buildWidget(sampleNarrative));
+
+      final formationFinder = find.text('4-3-3');
+      expect(formationFinder, findsOneWidget);
+
+      final semantics = tester.getSemantics(formationFinder);
+      expect(semantics.label, contains('Formation'));
+    });
+
+    testWidgets('player spotlight cards have combined Semantics labels',
+        (tester) async {
+      await tester.pumpWidget(buildWidget(sampleNarrative));
+      await tester.scrollUntilVisible(
+        find.text('Lionel Messi'),
+        200,
+        scrollable: find.byType(Scrollable).first,
+      );
+
+      final playerCard = find.ancestor(
+        of: find.text('Lionel Messi'),
+        matching: find.byWidgetPredicate(
+          (w) => w is Semantics && w.properties.label != null &&
+              w.properties.label!.contains('Lionel Messi') &&
+              w.properties.label!.contains('ARG'),
+        ),
+      );
+      expect(playerCard, findsOneWidget);
     });
   });
 }

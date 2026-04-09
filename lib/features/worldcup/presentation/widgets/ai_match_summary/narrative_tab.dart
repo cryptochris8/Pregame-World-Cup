@@ -65,14 +65,17 @@ class _HeadlineSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          narrative.headline,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-            height: 1.3,
-            letterSpacing: -0.3,
+        Semantics(
+          header: true,
+          child: Text(
+            narrative.headline,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              height: 1.3,
+              letterSpacing: -0.3,
+            ),
           ),
         ),
         const SizedBox(height: 8),
@@ -87,15 +90,17 @@ class _HeadlineSection extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 12),
-        Container(
-          height: 2,
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                AppTheme.primaryPurple,
-                AppTheme.primaryBlue,
-                Colors.transparent,
-              ],
+        ExcludeSemantics(
+          child: Container(
+            height: 2,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  AppTheme.primaryPurple,
+                  AppTheme.primaryBlue,
+                  Colors.transparent,
+                ],
+              ),
             ),
           ),
         ),
@@ -197,10 +202,12 @@ class _TacticalSection extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(
-                        Icons.bolt,
-                        color: AppTheme.accentGold,
-                        size: 18,
+                      const ExcludeSemantics(
+                        child: Icon(
+                          Icons.bolt,
+                          color: AppTheme.accentGold,
+                          size: 18,
+                        ),
                       ),
                       const SizedBox(width: 8),
                       Expanded(
@@ -247,21 +254,24 @@ class _FormationChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: AppTheme.primaryBlue.withValues(alpha: 0.15),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: AppTheme.primaryBlue.withValues(alpha: 0.3),
+    return Semantics(
+      label: 'Formation $formation',
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        decoration: BoxDecoration(
+          color: AppTheme.primaryBlue.withValues(alpha: 0.15),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: AppTheme.primaryBlue.withValues(alpha: 0.3),
+          ),
         ),
-      ),
-      child: Text(
-        formation,
-        style: const TextStyle(
-          color: AppTheme.primaryBlue,
-          fontSize: 13,
-          fontWeight: FontWeight.bold,
+        child: Text(
+          formation,
+          style: const TextStyle(
+            color: AppTheme.primaryBlue,
+            fontSize: 13,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
@@ -295,20 +305,24 @@ class _DataInsightsSection extends StatelessWidget {
         children: insights.entries.map((entry) {
           return Padding(
             padding: const EdgeInsets.only(bottom: 12),
-            child: Row(
+            child: Semantics(
+              label: '${entry.key}: ${entry.value}',
+              child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 2),
-                  padding: const EdgeInsets.all(4),
-                  decoration: BoxDecoration(
-                    color: AppTheme.primaryBlue.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  child: Icon(
-                    _icons[entry.key] ?? Icons.info_outline,
-                    color: AppTheme.primaryBlue,
-                    size: 14,
+                ExcludeSemantics(
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 2),
+                    padding: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      color: AppTheme.primaryBlue.withValues(alpha: 0.1),
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Icon(
+                      _icons[entry.key] ?? Icons.info_outline,
+                      color: AppTheme.primaryBlue,
+                      size: 14,
+                    ),
                   ),
                 ),
                 const SizedBox(width: 10),
@@ -339,6 +353,7 @@ class _DataInsightsSection extends StatelessWidget {
                 ),
               ],
             ),
+            ),
           );
         }).toList(),
       ),
@@ -365,9 +380,16 @@ class _PlayerSpotlightsSection extends StatelessWidget {
           final player = entry.value;
           final isLast = entry.key == players.length - 1;
 
+          final semanticParts = [
+            '${player.name}, ${player.teamCode}',
+            player.narrative,
+            if (player.statline != null) 'Stats: ${player.statline}',
+          ];
           return Padding(
             padding: EdgeInsets.only(bottom: isLast ? 0 : 16),
-            child: Container(
+            child: Semantics(
+              label: semanticParts.join('. '),
+              child: Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.03),
@@ -425,10 +447,12 @@ class _PlayerSpotlightsSection extends StatelessWidget {
                     const SizedBox(height: 8),
                     Row(
                       children: [
-                        const Icon(
-                          Icons.bar_chart,
-                          color: AppTheme.secondaryEmerald,
-                          size: 14,
+                        const ExcludeSemantics(
+                          child: Icon(
+                            Icons.bar_chart,
+                            color: AppTheme.secondaryEmerald,
+                            size: 14,
+                          ),
                         ),
                         const SizedBox(width: 4),
                         Expanded(
@@ -446,6 +470,7 @@ class _PlayerSpotlightsSection extends StatelessWidget {
                   ],
                 ],
               ),
+            ),
             ),
           );
         }).toList(),
@@ -499,7 +524,10 @@ class _VerdictSection extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 8),
-                ConfidenceMeter(confidence: verdict.confidence),
+                Semantics(
+                  label: 'Confidence: ${verdict.confidence}%',
+                  child: ConfidenceMeter(confidence: verdict.confidence),
+                ),
               ],
             ),
           ),
