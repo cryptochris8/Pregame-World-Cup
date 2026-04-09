@@ -4,6 +4,7 @@ import '../features/worldcup/worldcup.dart';
 import '../features/worldcup/data/services/enhanced_match_data_service.dart';
 import '../features/worldcup/data/services/local_match_summary_service.dart';
 import '../features/worldcup/data/services/match_narrative_service.dart';
+import '../features/worldcup/data/services/fan_zone_guide_service.dart';
 import '../features/worldcup/data/services/local_prediction_engine.dart';
 import '../features/worldcup/data/services/world_cup_ai_service.dart';
 import '../features/worldcup/data/services/nearby_venues_service.dart';
@@ -122,6 +123,11 @@ void registerWorldCupServices(GetIt sl) {
   // Enhanced AI-generated pregame articles from bundled JSON assets.
   // Falls back to LocalMatchSummaryService when no narrative exists.
   sl.registerLazySingleton(() => MatchNarrativeService());
+
+  // Fan Zone Guide Service
+  // Cross-border travel intelligence for all 16 host cities across 3 countries.
+  // Reads from bundled JSON assets — no network calls.
+  sl.registerLazySingleton(() => FanZoneGuideService());
 
   // Local Prediction Engine
   sl.registerLazySingleton(() => LocalPredictionEngine(

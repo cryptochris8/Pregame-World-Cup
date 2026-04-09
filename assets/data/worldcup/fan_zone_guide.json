@@ -1,0 +1,853 @@
+{
+  "metadata": {
+    "title": "World Cup 2026 Cross-Border Fan Zone & Travel Guide",
+    "description": "Comprehensive travel intelligence for all 16 host cities across USA, Mexico, and Canada",
+    "lastUpdated": "2026-04-09",
+    "dataVersion": 1,
+    "tournamentDates": "June 11 – July 19, 2026"
+  },
+  "cities": [
+    {
+      "cityId": "new_york_nj",
+      "cityName": "New York / New Jersey",
+      "country": "USA",
+      "stateOrProvince": "New Jersey",
+      "venueStadium": {
+        "name": "MetLife Stadium",
+        "capacity": 87157,
+        "tournamentName": "New York New Jersey Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Times Square Fan Festival",
+          "location": "Times Square, Manhattan, New York",
+          "description": "The main fan gathering point in the heart of Manhattan with giant screens, live entertainment, and food vendors representing all 48 nations.",
+          "features": ["Giant LED screens", "Live music stages", "International food village", "Official merchandise shop", "Meet-and-greet zones"]
+        },
+        {
+          "name": "Liberty State Park Fan Zone",
+          "location": "Liberty State Park, Jersey City, NJ",
+          "description": "A waterfront fan zone with views of the Statue of Liberty and Lower Manhattan skyline, offering a festival atmosphere on match days.",
+          "features": ["Waterfront viewing areas", "Family-friendly activities", "Shuttle service to MetLife Stadium", "Cultural pavilions"]
+        }
+      ],
+      "transit": {
+        "airports": ["Newark Liberty International (EWR)", "John F. Kennedy International (JFK)", "LaGuardia (LGA)"],
+        "publicTransit": "NJ Transit trains and buses connect to MetLife Stadium via Meadowlands Rail Line on event days. NYC Subway (MTA) covers all five boroughs. PATH trains connect Manhattan to New Jersey. Dedicated shuttle buses run from Secaucus Junction to the stadium.",
+        "tips": ["Use the Meadowlands Rail Line from Secaucus Junction — it runs express on match days", "Buy a MetroCard or use OMNY tap-to-pay for subway and buses", "Allow 2+ hours for travel from Manhattan to the stadium on match days", "Ride-share drop-off points are limited near the stadium — transit is strongly recommended"]
+      },
+      "timezone": "America/New_York",
+      "utcOffset": -4,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 27,
+        "juneAvgLow": 17,
+        "julyAvgHigh": 30,
+        "julyAvgLow": 21,
+        "rainySeasonNote": "Summer thunderstorms possible, especially in the afternoon. Stadium is open-air so bring rain gear."
+      },
+      "localTips": [
+        "MetLife Stadium is in East Rutherford, NJ — not in New York City itself. Plan your transit accordingly.",
+        "The NYC subway runs 24/7, making late-night returns from celebrations easy.",
+        "Book hotels in Manhattan or Jersey City for the best stadium access; Secaucus is also a good budget option.",
+        "Tipping 18-20% is standard at restaurants. Budget extra for NYC's high food and drink prices.",
+        "Download the MTA app or Google Maps for real-time transit updates."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "los_angeles",
+      "cityName": "Los Angeles",
+      "country": "USA",
+      "stateOrProvince": "California",
+      "venueStadium": {
+        "name": "SoFi Stadium",
+        "capacity": 70240,
+        "tournamentName": "Los Angeles Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "LA Live Fan Fest",
+          "location": "L.A. LIVE, Downtown Los Angeles",
+          "description": "A massive entertainment district adjacent to Crypto.com Arena, transformed into a World Cup celebration hub with screens, concerts, and cultural showcases.",
+          "features": ["Outdoor big screens", "Live concerts", "International food court", "VR football experiences", "Photo ops with World Cup trophy replica"]
+        },
+        {
+          "name": "Santa Monica Beach Fan Zone",
+          "location": "Santa Monica Pier and Beach, Santa Monica",
+          "description": "Beachside viewing parties with the Pacific Ocean as a backdrop. A laid-back California fan experience.",
+          "features": ["Beach screenings", "Volleyball tournaments", "Surf culture experiences", "Beachfront food stalls"]
+        }
+      ],
+      "transit": {
+        "airports": ["Los Angeles International (LAX)", "Hollywood Burbank (BUR)", "John Wayne/Orange County (SNA)", "Long Beach (LGB)"],
+        "publicTransit": "LA Metro rail and bus system connects key areas. The C Line (Green) and shuttle buses serve the Inglewood/SoFi Stadium area. Metro K Line connects LAX to Inglewood. Ride-share and taxis widely available but expect surge pricing on match days.",
+        "tips": ["Take the Metro K Line from LAX to Inglewood/Westchester station, then shuttle to SoFi", "LA traffic is notoriously bad — leave 3+ hours before kickoff if driving", "Parking at SoFi requires a pre-purchased pass; lots fill early", "Consider staying in Inglewood or near a Metro station to avoid driving"]
+      },
+      "timezone": "America/Los_Angeles",
+      "utcOffset": -7,
+      "currency": "USD",
+      "language": "English (Spanish widely spoken)",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 24,
+        "juneAvgLow": 16,
+        "julyAvgHigh": 28,
+        "julyAvgLow": 18,
+        "rainySeasonNote": "Rain is extremely rare in June-July. Expect sunny skies and dry heat. SoFi has a canopy roof but open sides."
+      },
+      "localTips": [
+        "SoFi Stadium is in Inglewood, about 5 miles from LAX. It is NOT in downtown LA.",
+        "Sunscreen is essential — even cloudy LA days have strong UV.",
+        "Taco trucks and street food are a huge part of LA culture — explore neighborhoods like Boyle Heights and East LA for authentic Mexican food.",
+        "Download the Metro app for trip planning. A day pass is $3.50.",
+        "Beach cities (Santa Monica, Venice, Manhattan Beach) are great bases with a festive atmosphere."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "dallas",
+      "cityName": "Dallas",
+      "country": "USA",
+      "stateOrProvince": "Texas",
+      "venueStadium": {
+        "name": "AT&T Stadium",
+        "capacity": 80000,
+        "tournamentName": "Dallas Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "AT&T Discovery District Fan Zone",
+          "location": "AT&T Discovery District, Downtown Dallas",
+          "description": "A tech-forward outdoor entertainment space in downtown Dallas with massive media walls, immersive World Cup content, and live viewing parties.",
+          "features": ["100-foot media wall", "Interactive football experiences", "Live DJ sets", "Food trucks", "Official tournament store"]
+        },
+        {
+          "name": "Arlington Entertainment District",
+          "location": "Entertainment District near AT&T Stadium, Arlington, TX",
+          "description": "The area surrounding the stadium transforms into a pre-match festival zone with bars, restaurants, and outdoor viewing areas.",
+          "features": ["Pre-match concerts", "Tailgate zones", "Sports bars with big screens", "Family activity areas"]
+        }
+      ],
+      "transit": {
+        "airports": ["Dallas/Fort Worth International (DFW)", "Dallas Love Field (DAL)"],
+        "publicTransit": "DART (Dallas Area Rapid Transit) light rail serves Dallas proper. However, AT&T Stadium is in Arlington, which has no rail service. Shuttle buses operate from DART stations on match days. TRE commuter rail connects Dallas and Fort Worth via CentrePort station.",
+        "tips": ["There is NO direct rail to AT&T Stadium — plan for shuttle buses or ride-shares from DART stations", "Arlington is between Dallas and Fort Worth, about 20 miles from downtown Dallas", "Pre-book parking passes online — stadium lots fill fast and cost $40-75", "Texas heat is intense in summer — hydrate heavily and arrive early for shade"]
+      },
+      "timezone": "America/Chicago",
+      "utcOffset": -5,
+      "currency": "USD",
+      "language": "English (Spanish widely spoken)",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 35,
+        "juneAvgLow": 23,
+        "julyAvgHigh": 37,
+        "julyAvgLow": 25,
+        "rainySeasonNote": "Hot and humid with occasional afternoon thunderstorms. AT&T Stadium has a retractable roof and air conditioning."
+      },
+      "localTips": [
+        "AT&T Stadium has a retractable roof and AC — one of the most comfortable venues in extreme heat.",
+        "BBQ is king in Texas. Visit Pecan Lodge or Terry Black's for world-class brisket.",
+        "Uber and Lyft surge pricing can be extreme after events — consider pre-arranged rides.",
+        "The Stockyards in Fort Worth (30 min away) offer an authentic Texas experience.",
+        "Bring a light jacket — the AC inside AT&T Stadium can be surprisingly cold."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "houston",
+      "cityName": "Houston",
+      "country": "USA",
+      "stateOrProvince": "Texas",
+      "venueStadium": {
+        "name": "NRG Stadium",
+        "capacity": 72220,
+        "tournamentName": "Houston Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Discovery Green Fan Festival",
+          "location": "Discovery Green Park, Downtown Houston",
+          "description": "Houston's premier downtown park becomes a World Cup village with outdoor screenings, cultural performances, and food from around the world.",
+          "features": ["Outdoor screenings", "Cultural performances", "International food vendors", "Kids zone", "Misting stations for cooling"]
+        }
+      ],
+      "transit": {
+        "airports": ["George Bush Intercontinental (IAH)", "William P. Hobby (HOU)"],
+        "publicTransit": "METRO light rail (METRORail) runs through downtown and the Medical Center area. The Purple and Green lines connect to NRG Park. Bus routes supplement rail coverage. Houston is very car-dependent overall.",
+        "tips": ["Take METRORail Purple or Green line directly to NRG Park/Fannin South station", "Houston is sprawling — distances between attractions are large", "Ride-share is reliable but expect surge pricing on match days", "Park-and-ride lots with shuttle service are the best driving option"]
+      },
+      "timezone": "America/Chicago",
+      "utcOffset": -5,
+      "currency": "USD",
+      "language": "English (Spanish widely spoken)",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 34,
+        "juneAvgLow": 24,
+        "julyAvgHigh": 36,
+        "julyAvgLow": 25,
+        "rainySeasonNote": "Very hot and humid. Afternoon thunderstorms common. NRG Stadium has a retractable roof and full AC."
+      },
+      "localTips": [
+        "Houston is the most ethnically diverse city in the US — the food scene is incredible and global.",
+        "NRG Stadium's retractable roof means you escape the brutal summer heat.",
+        "Visit the Space Center Houston for a unique day trip between matches.",
+        "The Montrose and Heights neighborhoods have the best nightlife and restaurant scenes.",
+        "Carry water everywhere — heat and humidity in Houston summers are no joke."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "atlanta",
+      "cityName": "Atlanta",
+      "country": "USA",
+      "stateOrProvince": "Georgia",
+      "venueStadium": {
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 71000,
+        "tournamentName": "Atlanta Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Centennial Olympic Park Fan Zone",
+          "location": "Centennial Olympic Park, Downtown Atlanta",
+          "description": "The iconic Olympic park, adjacent to Mercedes-Benz Stadium, becomes the main fan gathering area with screens, music, and activities.",
+          "features": ["Giant screens", "Fountain of Rings water feature", "Live entertainment", "Food and beverage pavilions", "Heritage wall installations"]
+        }
+      ],
+      "transit": {
+        "airports": ["Hartsfield-Jackson Atlanta International (ATL)"],
+        "publicTransit": "MARTA rail system connects the airport to downtown in about 20 minutes. The Dome/GWCC/Philips Arena/CNN Center station is steps from Mercedes-Benz Stadium. MARTA buses supplement rail coverage across the metro area.",
+        "tips": ["MARTA is excellent for getting to the stadium — take the Blue or Green line to GWCC/CNN Center station", "Hartsfield-Jackson is the world's busiest airport, so allow extra time for connections", "The stadium is in downtown Atlanta, walking distance from many hotels", "Atlanta's Breeze Card (MARTA) costs $2.50 per ride — buy at any station"]
+      },
+      "timezone": "America/New_York",
+      "utcOffset": -4,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 32,
+        "juneAvgLow": 21,
+        "julyAvgHigh": 33,
+        "julyAvgLow": 22,
+        "rainySeasonNote": "Hot and humid with frequent afternoon thunderstorms. Mercedes-Benz Stadium has a retractable roof."
+      },
+      "localTips": [
+        "Mercedes-Benz Stadium is famous for affordable concessions — $2 hot dogs and $5 beers.",
+        "The stadium's retractable roof and AC make it comfortable regardless of weather.",
+        "Visit the Martin Luther King Jr. National Historic Site and the National Center for Civil and Human Rights.",
+        "The BeltLine is a great urban trail for walking/biking between neighborhoods.",
+        "Midtown and Buckhead have the best nightlife; Little Five Points for indie culture."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "philadelphia",
+      "cityName": "Philadelphia",
+      "country": "USA",
+      "stateOrProvince": "Pennsylvania",
+      "venueStadium": {
+        "name": "Lincoln Financial Field",
+        "capacity": 69176,
+        "tournamentName": "Philadelphia Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Benjamin Franklin Parkway Fan Fest",
+          "location": "Benjamin Franklin Parkway, Center City Philadelphia",
+          "description": "The grand boulevard stretching from City Hall to the Philadelphia Museum of Art hosts an outdoor festival with giant screens and cultural events.",
+          "features": ["Parkway screenings", "Rocky Steps viewing area", "Philadelphia food vendors", "Live music", "Cultural exhibitions"]
+        }
+      ],
+      "transit": {
+        "airports": ["Philadelphia International (PHL)"],
+        "publicTransit": "SEPTA (Southeastern Pennsylvania Transportation Authority) operates subway, trolley, regional rail, and buses. The Broad Street Line (BSL) subway runs to NRG station (AT&T Station) near the sports complex. SEPTA Regional Rail airport line connects PHL to Center City in 25 minutes.",
+        "tips": ["Take the Broad Street Line (BSL) southbound to NRG station — it's the fastest way to Lincoln Financial Field", "SEPTA Key card works on all transit modes — load it at any station", "Philadelphia is very walkable in Center City — many attractions are within walking distance", "The sports complex (Lincoln Financial Field, Citizens Bank Park, Wells Fargo Center) is in South Philadelphia"]
+      },
+      "timezone": "America/New_York",
+      "utcOffset": -4,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 28,
+        "juneAvgLow": 18,
+        "julyAvgHigh": 31,
+        "julyAvgLow": 22,
+        "rainySeasonNote": "Warm and humid summers with occasional thunderstorms. Lincoln Financial Field is open-air."
+      },
+      "localTips": [
+        "Philly cheesesteaks are a must — Pat's and Geno's are famous, but locals prefer Jim's on South Street or John's Roast Pork.",
+        "The city is compact and walkable — Center City to the sports complex is about 4 miles.",
+        "Reading Terminal Market is one of America's best food halls — visit for breakfast or lunch.",
+        "Philadelphia is 90 minutes by train from New York City (Amtrak) — easy to combine both host cities.",
+        "Lincoln Financial Field is open-air with no roof — bring sunscreen and rain gear depending on forecast."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "miami",
+      "cityName": "Miami",
+      "country": "USA",
+      "stateOrProvince": "Florida",
+      "venueStadium": {
+        "name": "Hard Rock Stadium",
+        "capacity": 65326,
+        "tournamentName": "Miami Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Bayfront Park Fan Festival",
+          "location": "Bayfront Park, Downtown Miami",
+          "description": "Waterfront festival area on Biscayne Bay with Latin music, tropical atmosphere, and huge screens for match viewing.",
+          "features": ["Bayfront big screens", "Latin music stages", "Tropical food and cocktails", "Beach volleyball", "Art installations"]
+        },
+        {
+          "name": "South Beach Fan Zone",
+          "location": "Lummus Park, South Beach, Miami Beach",
+          "description": "The iconic South Beach becomes a round-the-clock celebration hub with beach screenings and parties.",
+          "features": ["Beach screenings", "DJ sets", "Ocean-side bars", "Cultural pop-ups"]
+        }
+      ],
+      "transit": {
+        "airports": ["Miami International (MIA)", "Fort Lauderdale-Hollywood International (FLL)"],
+        "publicTransit": "Metrorail and Metromover serve downtown Miami. Hard Rock Stadium in Miami Gardens is not directly rail-accessible. Express shuttle buses run from multiple park-and-ride locations on match days. Tri-Rail connects Miami, Fort Lauderdale, and West Palm Beach.",
+        "tips": ["Hard Rock Stadium is in Miami Gardens, about 16 miles north of downtown — there is no direct rail", "Match-day express buses from downtown and key park-and-ride lots are the best option", "Miami traffic is heavy — leave at least 2 hours before kickoff if driving", "Fort Lauderdale airport (FLL) is often cheaper to fly into and is only 30 miles from the stadium"]
+      },
+      "timezone": "America/New_York",
+      "utcOffset": -4,
+      "currency": "USD",
+      "language": "English (Spanish very widely spoken)",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 32,
+        "juneAvgLow": 25,
+        "julyAvgHigh": 33,
+        "julyAvgLow": 26,
+        "rainySeasonNote": "Peak of rainy season. Expect daily afternoon thunderstorms, high humidity, and intense heat. Hard Rock Stadium has a partial canopy but is mostly open-air."
+      },
+      "localTips": [
+        "Miami is essentially bilingual — Spanish is spoken everywhere and many businesses operate in both languages.",
+        "Little Havana's Calle Ocho is a must-visit for Cuban coffee, food, and football culture.",
+        "Stay in Brickell, Wynwood, or Miami Beach for the best nightlife and restaurant access.",
+        "Hurricane season overlaps with the tournament — monitor weather forecasts.",
+        "Hard Rock Stadium's canopy provides some shade but bring sunscreen and stay hydrated."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "seattle",
+      "cityName": "Seattle",
+      "country": "USA",
+      "stateOrProvince": "Washington",
+      "venueStadium": {
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "tournamentName": "Seattle Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Seattle Center Fan Zone",
+          "location": "Seattle Center (Space Needle area), Seattle",
+          "description": "The cultural heart of Seattle beneath the Space Needle hosts a fan festival with Pacific Northwest flair, craft beer gardens, and live entertainment.",
+          "features": ["Space Needle backdrop screenings", "Craft beer garden", "Pacific NW food vendors", "Live music", "Family activities at International Fountain"]
+        }
+      ],
+      "transit": {
+        "airports": ["Seattle-Tacoma International (SEA)"],
+        "publicTransit": "Sound Transit Link Light Rail connects SEA airport to downtown Seattle in about 40 minutes. Lumen Field is at Stadium station on the 1 Line. King County Metro buses supplement rail coverage. Seattle Streetcar serves downtown neighborhoods.",
+        "tips": ["Take the 1 Line (Link Light Rail) to Stadium station — it's right next to Lumen Field", "An ORCA card works on all regional transit (light rail, buses, ferries, streetcar)", "The light rail from SEA airport to downtown is $3.25 and runs every 8-15 minutes", "Seattle is hilly — wear comfortable walking shoes"]
+      },
+      "timezone": "America/Los_Angeles",
+      "utcOffset": -7,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 21,
+        "juneAvgLow": 12,
+        "julyAvgHigh": 25,
+        "julyAvgLow": 14,
+        "rainySeasonNote": "June-July is actually Seattle's driest season. Expect pleasant, mild weather. Lumen Field is open-air."
+      },
+      "localTips": [
+        "June-July is the best weather Seattle gets — sunny and mild, perfect for football.",
+        "Pike Place Market is a must-visit for food, crafts, and the original Starbucks.",
+        "Seattle has a passionate football culture — the Sounders fan base (ECS) is one of the best in MLS.",
+        "The city is only 140 miles from Vancouver (another host city) — easy to combine both.",
+        "Layers are key — mornings can be cool even in summer."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "san_francisco",
+      "cityName": "San Francisco / Bay Area",
+      "country": "USA",
+      "stateOrProvince": "California",
+      "venueStadium": {
+        "name": "Levi's Stadium",
+        "capacity": 71091,
+        "tournamentName": "San Francisco Bay Area Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Embarcadero Fan Zone",
+          "location": "The Embarcadero / Ferry Building area, San Francisco",
+          "description": "San Francisco's iconic waterfront becomes a fan hub with Bay Bridge views, local food vendors, and giant screens.",
+          "features": ["Waterfront big screens", "Ferry Building food hall access", "Craft beer and wine gardens", "Bay cruise excursions", "Cultural performances"]
+        }
+      ],
+      "transit": {
+        "airports": ["San Francisco International (SFO)", "Oakland International (OAK)", "San Jose International (SJC)"],
+        "publicTransit": "BART (Bay Area Rapid Transit) connects SF, Oakland, and the East Bay. Caltrain runs from SF to Santa Clara (near Levi's Stadium). VTA light rail connects to Levi's Stadium from the Caltrain station. Muni operates buses and streetcars within SF.",
+        "tips": ["Levi's Stadium is in Santa Clara (45 miles south of SF) — NOT in San Francisco", "Take Caltrain from SF to Santa Clara, then VTA light rail or shuttle to the stadium", "BART does not go directly to Santa Clara — use Caltrain instead", "Book accommodations in SF or San Jose and use Caltrain to commute to matches", "Clipper Card works on BART, Caltrain, Muni, and VTA — get one at any station"]
+      },
+      "timezone": "America/Los_Angeles",
+      "utcOffset": -7,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 20,
+        "juneAvgLow": 13,
+        "julyAvgHigh": 21,
+        "julyAvgLow": 13,
+        "rainySeasonNote": "SF is cool and foggy in summer (Mark Twain's famous quote applies). Santa Clara is significantly warmer (28-32°C). Levi's is open-air."
+      },
+      "localTips": [
+        "San Francisco summer fog is real — bring layers even though Santa Clara will be warm.",
+        "Levi's Stadium is in Santa Clara, Silicon Valley — plan for a 45-60 minute Caltrain ride from SF.",
+        "The Golden Gate Bridge, Alcatraz, and Fisherman's Wharf are must-sees between matches.",
+        "San Francisco's food scene is world-class — the Mission District has the best burritos.",
+        "If staying in SF, the Caltrain from 4th & King is your lifeline to the stadium."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "kansas_city",
+      "cityName": "Kansas City",
+      "country": "USA",
+      "stateOrProvince": "Missouri / Kansas",
+      "venueStadium": {
+        "name": "Arrowhead Stadium",
+        "capacity": 76416,
+        "tournamentName": "Kansas City Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Power & Light District Fan Zone",
+          "location": "Power & Light District, Downtown Kansas City, MO",
+          "description": "Kansas City's premier entertainment district transforms into a football festival with BBQ, live music, and big-screen viewing.",
+          "features": ["Big screen viewing", "Live music stages", "World-famous KC BBQ vendors", "Beer gardens", "Interactive football activities"]
+        }
+      ],
+      "transit": {
+        "airports": ["Kansas City International (MCI)"],
+        "publicTransit": "KC Streetcar runs through downtown (free to ride). RideKC buses serve the metro area. Arrowhead Stadium is in the Truman Sports Complex, about 10 miles east of downtown. No direct rail to the stadium — shuttle buses and park-and-ride lots operate on match days.",
+        "tips": ["There is no rail to Arrowhead Stadium — use match-day shuttle buses from downtown", "The KC Streetcar is free and great for getting around downtown", "Kansas City straddles Missouri and Kansas — the stadium is on the Missouri side", "Tailgating culture is huge at Arrowhead — arrive early for the BBQ scene", "Kansas City International airport is 20 miles northwest of downtown"]
+      },
+      "timezone": "America/Chicago",
+      "utcOffset": -5,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 31,
+        "juneAvgLow": 20,
+        "julyAvgHigh": 33,
+        "julyAvgLow": 22,
+        "rainySeasonNote": "Hot and humid summers with thunderstorm potential. Arrowhead Stadium is open-air."
+      },
+      "localTips": [
+        "Kansas City BBQ is legendary — Joe's KC, Q39, and Gates are top picks.",
+        "Arrowhead Stadium holds the Guinness World Record for loudest stadium — the atmosphere will be electric.",
+        "The National World War I Museum and Liberty Memorial offer great views and history.",
+        "KC is affordable compared to coastal cities — hotels and food are a great value.",
+        "The 18th & Vine District is the birthplace of Kansas City jazz — visit for live music."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "boston",
+      "cityName": "Boston",
+      "country": "USA",
+      "stateOrProvince": "Massachusetts",
+      "venueStadium": {
+        "name": "Gillette Stadium",
+        "capacity": 65878,
+        "tournamentName": "Boston Stadium"
+      },
+      "fanZones": [
+        {
+          "name": "Boston Common Fan Festival",
+          "location": "Boston Common, Downtown Boston",
+          "description": "America's oldest public park becomes a World Cup gathering spot with New England charm, seafood vendors, and live entertainment.",
+          "features": ["Historic park screenings", "New England seafood vendors", "Live music", "Youth football clinics", "Cultural exhibits"]
+        }
+      ],
+      "transit": {
+        "airports": ["Boston Logan International (BOS)"],
+        "publicTransit": "The MBTA (the 'T') operates subway, bus, and commuter rail throughout Boston. Gillette Stadium is in Foxborough, about 30 miles south of Boston. MBTA Commuter Rail (Franklin/Foxboro line) runs special event service to Foxborough on match days. Express buses also operate from South Station.",
+        "tips": ["Gillette Stadium is in Foxborough, MA — NOT in Boston. It's a 30-mile trip south.", "MBTA Commuter Rail runs special match-day service from South Station and Back Bay to Foxborough", "Book commuter rail tickets in advance — trains fill up quickly on event days", "If driving, I-95 south gets extremely congested on match days — leave very early", "Boston's subway (the 'T') is great for getting around the city itself"]
+      },
+      "timezone": "America/New_York",
+      "utcOffset": -4,
+      "currency": "USD",
+      "language": "English",
+      "visaRequirements": {
+        "forUS": "No visa needed (domestic)",
+        "forCanada": "ESTA or B1/B2 visa required",
+        "forMexico": "ESTA or B1/B2 visa required",
+        "forEU": "ESTA required for Visa Waiver Program countries; B1/B2 visa for others",
+        "general": "Most visitors need an approved ESTA ($21) or valid US visa. Apply at least 72 hours before travel."
+      },
+      "weather": {
+        "juneAvgHigh": 25,
+        "juneAvgLow": 15,
+        "julyAvgHigh": 28,
+        "julyAvgLow": 19,
+        "rainySeasonNote": "Pleasant summer weather with occasional rain. Gillette Stadium is open-air."
+      },
+      "localTips": [
+        "Gillette Stadium is 30 miles from downtown Boston — do not underestimate the travel time.",
+        "The Freedom Trail is a 2.5-mile walk through historic Boston — perfect for a non-match day.",
+        "Boston's seafood is world-class — get clam chowder at Legal Sea Foods or the Union Oyster House.",
+        "The city is very walkable and the T is easy to navigate with a Charlie Card.",
+        "Boston is 4 hours by train (Amtrak) from New York City — combine both host cities easily."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "mexico_city",
+      "cityName": "Mexico City",
+      "country": "Mexico",
+      "stateOrProvince": "Ciudad de Mexico",
+      "venueStadium": {
+        "name": "Estadio Azteca",
+        "capacity": 87523,
+        "tournamentName": "Estadio Azteca Mexico City"
+      },
+      "fanZones": [
+        {
+          "name": "Zocalo Fan Festival",
+          "location": "Plaza de la Constitucion (Zocalo), Centro Historico, Mexico City",
+          "description": "The massive central square of Mexico City — one of the largest public plazas in the world — becomes the heart of the World Cup celebration with screens, music, and Mexican culture.",
+          "features": ["Massive plaza screenings", "Mariachi and live music", "Traditional Mexican food stalls", "Cultural exhibitions", "Historic backdrop of National Palace and Cathedral"]
+        },
+        {
+          "name": "Chapultepec Park Fan Zone",
+          "location": "Bosque de Chapultepec, Mexico City",
+          "description": "The sprawling urban forest hosts family-friendly football activities and screenings near the iconic Chapultepec Castle.",
+          "features": ["Park screenings", "Family activities", "Food courts", "Historic castle tours", "Nature walks"]
+        }
+      ],
+      "transit": {
+        "airports": ["Mexico City International (MEX)", "Felipe Angeles International (NLU)"],
+        "publicTransit": "CDMX Metro is one of the world's busiest and most affordable transit systems (5 pesos per ride). Line 2 (Blue) to Tasquena, then transfer to Tren Ligero (light rail) to Estadio Azteca station. Metrobus (BRT) lines cover major corridors. Uber and DiDi are widely available.",
+        "tips": ["Take Metro Line 2 to Tasquena, then Tren Ligero to Estadio Azteca — it's the cheapest and often fastest route", "The Metro costs only 5 pesos (~$0.25 USD) but gets extremely crowded on match days", "Altitude is 2,200 meters (7,200 feet) — drink lots of water and take it easy the first day", "Uber and DiDi work well throughout the city and are very affordable", "Avoid the AICM (MEX) airport taxi scams — use authorized taxi stands or ride-share apps"]
+      },
+      "timezone": "America/Mexico_City",
+      "utcOffset": -6,
+      "currency": "MXN (Mexican Peso)",
+      "language": "Spanish",
+      "visaRequirements": {
+        "forUS": "No visa needed for stays under 180 days (FMM tourist card required, often provided on flight)",
+        "forCanada": "No visa needed for stays under 180 days (FMM tourist card required)",
+        "forMexico": "No visa needed (domestic)",
+        "forEU": "No visa needed for most EU citizens for stays under 180 days",
+        "general": "Many nationalities can enter Mexico visa-free for tourism. Fill out the FMM form (Forma Migratoria Multiple) online before arrival or receive it on your flight."
+      },
+      "weather": {
+        "juneAvgHigh": 24,
+        "juneAvgLow": 13,
+        "julyAvgHigh": 23,
+        "julyAvgLow": 12,
+        "rainySeasonNote": "Heavy rainy season June-September. Expect strong afternoon/evening showers almost daily. Mornings are usually clear. Estadio Azteca is open-air — bring rain gear."
+      },
+      "localTips": [
+        "The altitude (2,200m) is significant — players and fans alike need time to acclimatize. Stay hydrated.",
+        "Street tacos are an essential experience — try tacos al pastor, suadero, and campechanos.",
+        "Mexico City is one of the world's great cultural capitals — visit the Frida Kahlo Museum, Teotihuacan pyramids, and UNAM campus.",
+        "The city is enormous — use the Metro and ride-share apps, not taxis hailed on the street.",
+        "Estadio Azteca has hosted two World Cup finals (1970, 1986) — this is hallowed football ground."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "guadalajara",
+      "cityName": "Guadalajara",
+      "country": "Mexico",
+      "stateOrProvince": "Jalisco",
+      "venueStadium": {
+        "name": "Estadio Akron",
+        "capacity": 49850,
+        "tournamentName": "Estadio Akron Guadalajara"
+      },
+      "fanZones": [
+        {
+          "name": "Plaza Liberacion Fan Zone",
+          "location": "Plaza Liberacion, Centro Historico, Guadalajara",
+          "description": "The historic plaza behind Guadalajara Cathedral becomes a vibrant fan gathering spot with tequila tastings, mariachi, and World Cup screenings.",
+          "features": ["Plaza screenings", "Tequila and mezcal tastings", "Mariachi performances", "Jalisco cuisine vendors", "Artisan markets"]
+        }
+      ],
+      "transit": {
+        "airports": ["Guadalajara International (GDL)"],
+        "publicTransit": "Guadalajara has two Metro lines (Line 1 and Line 2) and a BRT system (Macrobus). Taxis and ride-share (Uber, DiDi) are affordable and reliable. Estadio Akron is in the Zapopan suburb, about 15 km northwest of downtown.",
+        "tips": ["Estadio Akron is in Zapopan — take a taxi or ride-share from downtown (about 30 minutes)", "Uber and DiDi are the easiest way to get around the city", "The Guadalajara Metro is limited but useful for the city center", "GDL airport is about 20 km south of the city — taxis are metered and affordable"]
+      },
+      "timezone": "America/Mexico_City",
+      "utcOffset": -6,
+      "currency": "MXN (Mexican Peso)",
+      "language": "Spanish",
+      "visaRequirements": {
+        "forUS": "No visa needed for stays under 180 days (FMM tourist card required)",
+        "forCanada": "No visa needed for stays under 180 days (FMM tourist card required)",
+        "forMexico": "No visa needed (domestic)",
+        "forEU": "No visa needed for most EU citizens for stays under 180 days",
+        "general": "Many nationalities can enter Mexico visa-free for tourism. Fill out the FMM form online before arrival."
+      },
+      "weather": {
+        "juneAvgHigh": 31,
+        "juneAvgLow": 18,
+        "julyAvgHigh": 28,
+        "julyAvgLow": 17,
+        "rainySeasonNote": "Rainy season June-September. Afternoon/evening storms are common but mornings tend to be clear. Estadio Akron is open-air."
+      },
+      "localTips": [
+        "Guadalajara is the birthplace of mariachi and tequila — this is where Mexican culture runs deepest.",
+        "Visit the town of Tequila (1 hour away) for distillery tours — the Tequila Express train is a great day trip.",
+        "Tlaquepaque is a charming arts-and-crafts village within the metro area — perfect for souvenirs.",
+        "The city is known as the 'Silicon Valley of Mexico' — it's modern and well-connected.",
+        "Try birria (slow-cooked stew) and tortas ahogadas (drowned sandwiches) — Guadalajara's signature dishes."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "monterrey",
+      "cityName": "Monterrey",
+      "country": "Mexico",
+      "stateOrProvince": "Nuevo Leon",
+      "venueStadium": {
+        "name": "Estadio BBVA",
+        "capacity": 53500,
+        "tournamentName": "Estadio BBVA Monterrey"
+      },
+      "fanZones": [
+        {
+          "name": "Macroplaza Fan Festival",
+          "location": "Macroplaza (Gran Plaza), Downtown Monterrey",
+          "description": "One of the largest public squares in the world hosts a desert-mountain-backdrop fan zone with northern Mexican culture and cuisine.",
+          "features": ["Giant plaza screenings", "Norteño music performances", "Carne asada grills", "Craft beer gardens", "Mountain views"]
+        }
+      ],
+      "transit": {
+        "airports": ["Monterrey International (MTY)"],
+        "publicTransit": "Monterrey has two Metrorrey subway lines and an Ecovia BRT line. Taxis and ride-share (Uber, DiDi) are widely available and affordable. Estadio BBVA is in Guadalupe, a suburb east of downtown.",
+        "tips": ["Estadio BBVA is in Guadalupe — take Metrorrey Line 2 towards Exposicion or use ride-share apps", "Monterrey is very hot in summer — stay hydrated and use sun protection", "The airport is about 24 km northeast of downtown — taxis and ride-share are the best options", "Monterrey is Mexico's wealthiest and most industrial city — it's safe and well-organized for visitors"]
+      },
+      "timezone": "America/Monterrey",
+      "utcOffset": -6,
+      "currency": "MXN (Mexican Peso)",
+      "language": "Spanish",
+      "visaRequirements": {
+        "forUS": "No visa needed for stays under 180 days (FMM tourist card required)",
+        "forCanada": "No visa needed for stays under 180 days (FMM tourist card required)",
+        "forMexico": "No visa needed (domestic)",
+        "forEU": "No visa needed for most EU citizens for stays under 180 days",
+        "general": "Many nationalities can enter Mexico visa-free for tourism. Fill out the FMM form online before arrival."
+      },
+      "weather": {
+        "juneAvgHigh": 35,
+        "juneAvgLow": 24,
+        "julyAvgHigh": 36,
+        "julyAvgLow": 24,
+        "rainySeasonNote": "Very hot summers with occasional thunderstorms. Estadio BBVA is open-air — extreme heat is the primary concern."
+      },
+      "localTips": [
+        "Monterrey is famous for carne asada (grilled meat) — it's a way of life here. Try it at any local restaurant.",
+        "Cerro de la Silla (Saddle Mountain) is the city's iconic landmark — visible from most of the city.",
+        "The Fundidora Park (a converted steel foundry) is a great place to walk and explore.",
+        "Monterrey is only 140 miles from the US border (Laredo, TX) — some fans may drive across.",
+        "English is less commonly spoken here than in tourist-heavy Mexican cities — learn basic Spanish phrases."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "toronto",
+      "cityName": "Toronto",
+      "country": "Canada",
+      "stateOrProvince": "Ontario",
+      "venueStadium": {
+        "name": "BMO Field",
+        "capacity": 45736,
+        "tournamentName": "BMO Field Toronto"
+      },
+      "fanZones": [
+        {
+          "name": "Nathan Phillips Square Fan Zone",
+          "location": "Nathan Phillips Square, City Hall, Downtown Toronto",
+          "description": "Toronto's civic heart in front of City Hall becomes a multicultural fan festival reflecting the world's most diverse city.",
+          "features": ["City Hall backdrop screenings", "Multicultural food village", "Live music from 50+ cultures", "Interactive football activities", "CN Tower views"]
+        },
+        {
+          "name": "Harbourfront Centre Fan Zone",
+          "location": "Harbourfront Centre, Queens Quay, Toronto",
+          "description": "Lakefront fan area on Lake Ontario with a relaxed atmosphere, patios, and waterfront views.",
+          "features": ["Lakefront screenings", "Waterfront patios", "Music stages", "Food trucks", "Ferry to Toronto Islands"]
+        }
+      ],
+      "transit": {
+        "airports": ["Toronto Pearson International (YYZ)", "Billy Bishop Toronto City Airport (YTZ)"],
+        "publicTransit": "TTC (Toronto Transit Commission) operates subway, streetcars, and buses throughout the city. BMO Field is at Exhibition Place, accessible via the 509 and 511 streetcar routes or Exhibition GO station. UP Express connects Pearson Airport to Union Station in 25 minutes. GO Transit commuter rail serves the Greater Toronto Area.",
+        "tips": ["Take the 509 streetcar from Union Station to Exhibition Place — BMO Field is right there", "UP Express from Pearson Airport to Union Station is fast (25 min) and costs $12.35 CAD", "Billy Bishop Airport is downtown on Toronto Islands — convenient for short flights from US cities", "PRESTO card works on TTC, GO Transit, and UP Express — load it at any station", "Toronto is very multicultural — you can find authentic food from virtually any country"]
+      },
+      "timezone": "America/Toronto",
+      "utcOffset": -4,
+      "currency": "CAD (Canadian Dollar)",
+      "language": "English (French is also an official language of Canada)",
+      "visaRequirements": {
+        "forUS": "No visa needed for US citizens. Passport required. NEXUS card holders get expedited crossing.",
+        "forCanada": "No visa needed (domestic)",
+        "forMexico": "eTA (Electronic Travel Authorization) required for Mexican citizens flying to Canada ($7 CAD)",
+        "forEU": "eTA required for most EU citizens flying to Canada ($7 CAD). No visa needed for short stays.",
+        "general": "Many nationalities need only an eTA ($7 CAD) to fly to Canada. If arriving by land from the US, no eTA is needed but a valid passport is required."
+      },
+      "weather": {
+        "juneAvgHigh": 25,
+        "juneAvgLow": 14,
+        "julyAvgHigh": 28,
+        "julyAvgLow": 18,
+        "rainySeasonNote": "Pleasant summer weather with occasional thunderstorms. BMO Field is open-air."
+      },
+      "localTips": [
+        "Toronto is one of the most multicultural cities on Earth — over 200 ethnic groups and 140+ languages spoken.",
+        "BMO Field is relatively small (45,736) — expect an intimate, intense atmosphere.",
+        "The CN Tower and Ripley's Aquarium are walking distance from Union Station.",
+        "Kensington Market and St. Lawrence Market are must-visits for food lovers.",
+        "If crossing from the US by land (e.g., from Buffalo/Niagara Falls), bring your passport and expect border wait times of 30-90 minutes."
+      ],
+      "emergencyNumber": "911"
+    },
+    {
+      "cityId": "vancouver",
+      "cityName": "Vancouver",
+      "country": "Canada",
+      "stateOrProvince": "British Columbia",
+      "venueStadium": {
+        "name": "BC Place",
+        "capacity": 54500,
+        "tournamentName": "BC Place Vancouver"
+      },
+      "fanZones": [
+        {
+          "name": "Canada Place Fan Zone",
+          "location": "Canada Place and Convention Centre, Vancouver Waterfront",
+          "description": "Vancouver's iconic waterfront venue with mountain and harbour views becomes a spectacular fan gathering point.",
+          "features": ["Harbour-view screenings", "Mountain backdrop", "Pacific NW seafood vendors", "Indigenous art exhibitions", "Live entertainment"]
+        },
+        {
+          "name": "Stanley Park Fan Festival",
+          "location": "Stanley Park, Vancouver",
+          "description": "The world-famous urban park hosts casual viewing parties and outdoor activities with ocean and forest surroundings.",
+          "features": ["Park screenings", "Seawall walks", "Nature activities", "Food trucks", "Totem pole exhibits"]
+        }
+      ],
+      "transit": {
+        "airports": ["Vancouver International (YVR)"],
+        "publicTransit": "TransLink operates SkyTrain (automated light metro), buses, and SeaBus ferry. Canada Line connects YVR airport to downtown in 25 minutes. BC Place is at Stadium-Chinatown SkyTrain station. The Expo and Millennium lines also serve downtown.",
+        "tips": ["Take the Canada Line from YVR airport to downtown (25 min, $4.30-$9.25 CAD depending on time)", "BC Place is at Stadium-Chinatown station — one stop from Waterfront and Commercial-Broadway", "Compass Card works on all TransLink services (SkyTrain, bus, SeaBus)", "Vancouver is very walkable downtown — BC Place, Gastown, and Chinatown are all within walking distance", "BC Place has a retractable roof — weather is not a concern inside the stadium"]
+      },
+      "timezone": "America/Vancouver",
+      "utcOffset": -7,
+      "currency": "CAD (Canadian Dollar)",
+      "language": "English (French is also an official language of Canada)",
+      "visaRequirements": {
+        "forUS": "No visa needed for US citizens. Passport required. NEXUS card holders get expedited crossing.",
+        "forCanada": "No visa needed (domestic)",
+        "forMexico": "eTA (Electronic Travel Authorization) required for Mexican citizens flying to Canada ($7 CAD)",
+        "forEU": "eTA required for most EU citizens flying to Canada ($7 CAD). No visa needed for short stays.",
+        "general": "Many nationalities need only an eTA ($7 CAD) to fly to Canada. If arriving by land from the US, no eTA is needed but a valid passport is required."
+      },
+      "weather": {
+        "juneAvgHigh": 20,
+        "juneAvgLow": 13,
+        "julyAvgHigh": 23,
+        "julyAvgLow": 15,
+        "rainySeasonNote": "June-July is Vancouver's driest and warmest period. Expect pleasant, mild weather. BC Place has a retractable roof."
+      },
+      "localTips": [
+        "Vancouver is only 140 miles from Seattle (another host city) — easy to combine both by car, bus, or train.",
+        "BC Place's retractable roof means you're covered regardless of weather.",
+        "Stanley Park's Seawall is a must-do — a 10 km scenic loop along the waterfront.",
+        "Granville Island Public Market is one of North America's best food markets.",
+        "If crossing the US-Canada border by land (from Seattle), bring your passport and expect 30-60 minute waits at peak times."
+      ],
+      "emergencyNumber": "911"
+    }
+  ]
+}
