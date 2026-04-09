@@ -44,6 +44,41 @@ struct MatchData: Codable, Identifiable {
         }
         return "vs"
     }
+
+    var compactScoreDisplay: String {
+        if let home = homeScore, let away = awayScore {
+            return "\(home)-\(away)"
+        }
+        return "vs"
+    }
+
+    var matchDate: Date? {
+        let formatter = ISO8601DateFormatter()
+        return formatter.date(from: matchTime)
+    }
+
+    var countdownText: String {
+        guard let date = matchDate else { return "TBD" }
+        let interval = date.timeIntervalSince(Date())
+        if interval <= 0 { return "NOW" }
+        let hours = Int(interval) / 3600
+        let minutes = (Int(interval) % 3600) / 60
+        if hours >= 24 {
+            let days = hours / 24
+            return "\(days)d"
+        }
+        if hours > 0 {
+            return "\(hours)h \(minutes)m"
+        }
+        return "\(minutes)m"
+    }
+
+    var inlineSummary: String {
+        if isLive, let home = homeScore, let away = awayScore {
+            return "\(homeTeamCode) \(home)-\(away) \(awayTeamCode)"
+        }
+        return "\(homeTeamCode) vs \(awayTeamCode) \u{2022} \(displayTime)"
+    }
 }
 
 struct WidgetConfig: Codable {
@@ -155,15 +190,34 @@ struct WorldCupWidgetEntryView: View {
     @Environment(\.widgetFamily) var family
 
     var body: some View {
-        switch family {
-        case .systemSmall:
-            SmallWidgetView(entry: entry)
-        case .systemMedium:
-            MediumWidgetView(entry: entry)
-        case .systemLarge:
-            LargeWidgetView(entry: entry)
-        default:
-            SmallWidgetView(entry: entry)
+        if #available(iOSApplicationExtension 16.0, *) {
+            switch family {
+            case .systemSmall:
+                SmallWidgetView(entry: entry)
+            case .systemMedium:
+                MediumWidgetView(entry: entry)
+            case .systemLarge:
+                LargeWidgetView(entry: entry)
+            case .accessoryCircular:
+                AccessoryCircularView(entry: entry)
+            case .accessoryRectangular:
+                AccessoryRectangularView(entry: entry)
+            case .accessoryInline:
+                AccessoryInlineView(entry: entry)
+            default:
+                SmallWidgetView(entry: entry)
+            }
+        } else {
+            switch family {
+            case .systemSmall:
+                SmallWidgetView(entry: entry)
+            case .systemMedium:
+                MediumWidgetView(entry: entry)
+            case .systemLarge:
+                LargeWidgetView(entry: entry)
+            default:
+                SmallWidgetView(entry: entry)
+            }
         }
     }
 }
@@ -402,10 +456,158 @@ struct LiveBadge: View {
     }
 }
 
+// MARK: - Lock Screen Widget Views (iOS 16+)
+
+/// Circular Lock Screen widget — shows countdown or live score in a gauge-like circle
+@available(iOSApplicationExtension 16.0, *)
+struct AccessoryCircularView: View {
+    let entry: WorldCupEntry
+
+    private var primaryMatch: MatchData? {
+        entry.liveMatches.first ?? entry.upcomingMatches.first
+    }
+
+    var body: some View {
+        if let match = primaryMatch {
+            if match.isLive {
+                // Live: show score in a circle
+                ZStack {
+                    AccessoryWidgetBackground()
+                    VStack(spacing: 0) {
+                        Text(match.compactScoreDisplay)
+                            .font(.system(.title3, design: .rounded))
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.6)
+                        Text("\(match.homeTeamCode)-\(match.awayTeamCode)")
+                            .font(.system(.caption2))
+                            .minimumScaleFactor(0.5)
+                    }
+                }
+                .widgetLabel {
+                    Text(match.status.uppercased())
+                }
+            } else {
+                // Upcoming: show countdown
+                ZStack {
+                    AccessoryWidgetBackground()
+                    VStack(spacing: 1) {
+                        Image(systemName: "sportscourt")
+                            .font(.caption)
+                        Text(match.countdownText)
+                            .font(.system(.body, design: .rounded))
+                            .fontWeight(.semibold)
+                            .minimumScaleFactor(0.6)
+                    }
+                }
+                .widgetLabel {
+                    Text("\(match.homeTeamCode) vs \(match.awayTeamCode)")
+                }
+            }
+        } else {
+            ZStack {
+                AccessoryWidgetBackground()
+                Image(systemName: "sportscourt")
+                    .font(.title3)
+            }
+        }
+    }
+}
+
+/// Rectangular Lock Screen widget — shows next match with team codes and time/score
+@available(iOSApplicationExtension 16.0, *)
+struct AccessoryRectangularView: View {
+    let entry: WorldCupEntry
+
+    private var primaryMatch: MatchData? {
+        entry.liveMatches.first ?? entry.upcomingMatches.first
+    }
+
+    var body: some View {
+        if let match = primaryMatch {
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 4) {
+                    Image(systemName: "sportscourt")
+                        .font(.caption2)
+                    Text("World Cup")
+                        .font(.caption2)
+                        .fontWeight(.semibold)
+                    if match.isLive {
+                        Text("LIVE")
+                            .font(.system(.caption2, design: .rounded))
+                            .fontWeight(.bold)
+                    }
+                }
+
+                HStack(spacing: 0) {
+                    Text(match.homeTeamCode)
+                        .font(.system(.headline, design: .rounded))
+                        .fontWeight(.bold)
+                    Text("  \(match.isLive ? match.compactScoreDisplay : "vs")  ")
+                        .font(.system(.headline, design: .rounded))
+                        .fontWeight(match.isLive ? .bold : .regular)
+                    Text(match.awayTeamCode)
+                        .font(.system(.headline, design: .rounded))
+                        .fontWeight(.bold)
+                }
+
+                Text(match.isLive ? match.status.uppercased() : match.displayTime)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        } else {
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 4) {
+                    Image(systemName: "sportscourt")
+                        .font(.caption2)
+                    Text("World Cup")
+                        .font(.caption2)
+                        .fontWeight(.semibold)
+                }
+                Text("No upcoming matches")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+}
+
+/// Inline Lock Screen widget — single line summary
+@available(iOSApplicationExtension 16.0, *)
+struct AccessoryInlineView: View {
+    let entry: WorldCupEntry
+
+    private var primaryMatch: MatchData? {
+        entry.liveMatches.first ?? entry.upcomingMatches.first
+    }
+
+    var body: some View {
+        if let match = primaryMatch {
+            ViewThatFits {
+                Label(match.inlineSummary, systemImage: "sportscourt")
+                Text(match.inlineSummary)
+            }
+        } else {
+            Label("World Cup 2026", systemImage: "sportscourt")
+        }
+    }
+}
+
 // MARK: - Home Screen Widget Definition
 
 struct WorldCupWidget: Widget {
     let kind: String = "WorldCupWidget"
+
+    private var allSupportedFamilies: [WidgetFamily] {
+        var families: [WidgetFamily] = [.systemSmall, .systemMedium, .systemLarge]
+        if #available(iOSApplicationExtension 16.0, *) {
+            families.append(contentsOf: [
+                .accessoryCircular,
+                .accessoryRectangular,
+                .accessoryInline
+            ])
+        }
+        return families
+    }
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
@@ -413,7 +615,7 @@ struct WorldCupWidget: Widget {
         }
         .configurationDisplayName("World Cup 2026")
         .description("Stay updated with live scores and upcoming matches.")
-        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+        .supportedFamilies(allSupportedFamilies)
     }
 }
 
