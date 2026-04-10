@@ -21,23 +21,28 @@ class SectionWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Icon(
-              icon,
-              color: AppTheme.primaryPurple,
-              size: 18,
-            ),
-            const SizedBox(width: 8),
-            Text(
-              title,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
+        Semantics(
+          header: true,
+          child: Row(
+            children: [
+              ExcludeSemantics(
+                child: Icon(
+                  icon,
+                  color: AppTheme.primaryPurple,
+                  size: 18,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(width: 8),
+              Text(
+                title,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 12),
         child,
