@@ -11,6 +11,7 @@ export 'teams_page.dart';
 export 'team_detail_page.dart';
 export 'world_cup_home_page.dart';
 export 'world_cup_home_screen.dart';
+export 'penalty_kick_game_page.dart';
 export 'predictions_page.dart';
 export 'matches_tab.dart';
 export 'groups_tab.dart';

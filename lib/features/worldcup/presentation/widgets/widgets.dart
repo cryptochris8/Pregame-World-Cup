@@ -25,3 +25,4 @@ export 'match_extra_time_card.dart';
 export 'match_venue_card.dart';
 export 'match_stats_widget.dart';
 export 'match_watch_parties_card.dart';
+export 'penalty_kick_promo_card.dart';

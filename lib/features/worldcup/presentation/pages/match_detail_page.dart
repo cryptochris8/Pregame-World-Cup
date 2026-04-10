@@ -241,6 +241,15 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
                   const SizedBox(height: 16),
                   _buildAIMatchSummarySection(),
 
+                  // Penalty Kick Challenge promo (upcoming matches only)
+                  if (match.status == MatchStatus.scheduled) ...[
+                    const SizedBox(height: 16),
+                    PenaltyKickPromoCard(
+                      homeTeamName: match.homeTeamName,
+                      awayTeamName: match.awayTeamName,
+                    ),
+                  ],
+
                   // Match stats
                   if (match.status == MatchStatus.completed ||
                       match.status == MatchStatus.inProgress) ...[
