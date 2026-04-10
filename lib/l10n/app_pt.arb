@@ -1339,5 +1339,9 @@
   "verificationCode": "Código de Verificação",
   "digitCounter": "{count}/6 dígitos",
   "verifyCode": "Verificar Código",
-  "appDisclaimer": "Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado por qualquer organização oficial do torneio."
+  "appDisclaimer": "Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado por qualquer organização oficial do torneio.",
+  "blockedUsers": "Usuários Bloqueados",
+  "noBlockedUsers": "Você não bloqueou ninguém",
+  "noBlockedUsersSubtitle": "Os usuários que você bloquear aparecerão aqui",
+  "unblockSuccess": "{name} foi desbloqueado"
 }

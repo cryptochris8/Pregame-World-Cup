@@ -4224,16 +4224,17 @@ class AppLocalizationsPt extends AppLocalizations {
       'Pregame é um aplicativo independente para fãs e não é afiliado, endossado ou patrocinado por qualquer organização oficial do torneio.';
 
   @override
-  String get blockedUsers => 'Blocked Users';
+  String get blockedUsers => 'Usuários Bloqueados';
 
   @override
-  String get noBlockedUsers => 'You haven\'t blocked anyone';
+  String get noBlockedUsers => 'Você não bloqueou ninguém';
 
   @override
-  String get noBlockedUsersSubtitle => 'Users you block will appear here';
+  String get noBlockedUsersSubtitle =>
+      'Os usuários que você bloquear aparecerão aqui';
 
   @override
   String unblockSuccess(String name) {
-    return '$name has been unblocked';
+    return '$name foi desbloqueado';
   }
 }
