@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../injection_container.dart' as di;
+import '../../data/services/fan_zone_guide_service.dart';
+import '../pages/city_guide_page.dart';
 
 /// Displays the match venue (stadium) in a tappable card.
+/// Tapping navigates to the full City Guide for that venue's host city.
 class MatchVenueCard extends StatelessWidget {
   final String venueName;
   final String? venueCity;
@@ -11,6 +15,25 @@ class MatchVenueCard extends StatelessWidget {
     required this.venueName,
     this.venueCity,
   });
+
+  Future<void> _openCityGuide(BuildContext context) async {
+    final service = di.sl<FanZoneGuideService>();
+    final guide = await service.getCityByVenueName(venueName);
+
+    if (guide != null && context.mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => CityGuidePage(guide: guide)),
+      );
+    } else if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('City guide coming soon'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +46,7 @@ class MatchVenueCard extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {
-            // Navigate to venue detail
-          },
+          onTap: () => _openCityGuide(context),
           borderRadius: BorderRadius.circular(12),
           child: Padding(
             padding: const EdgeInsets.all(16),
@@ -57,11 +78,24 @@ class MatchVenueCard extends StatelessWidget {
                         ),
                       ),
                       if (venueCity != null)
-                        Text(
-                          venueCity!,
-                          style: const TextStyle(
-                            color: Colors.white60,
-                          ),
+                        Row(
+                          children: [
+                            Text(
+                              venueCity!,
+                              style: const TextStyle(
+                                color: Colors.white60,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Text(
+                              'City Guide',
+                              style: TextStyle(
+                                color: AppTheme.primaryBlue.withValues(alpha: 0.8),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
                         ),
                     ],
                   ),

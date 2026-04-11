@@ -87,6 +87,39 @@ class FanZoneGuideService {
     return guides.length;
   }
 
+  /// Finds a city guide by matching a venue/stadium name (fuzzy match).
+  ///
+  /// Matches against the stadium name in the fan zone data using
+  /// case-insensitive partial matching. Used when tapping a venue
+  /// card on the match detail page.
+  Future<FanZoneGuide?> getCityByVenueName(String venueName) async {
+    final guides = await getAllCityGuides();
+    final lower = venueName.toLowerCase();
+    try {
+      return guides.firstWhere((g) {
+        final stadiumName = g.venueStadium.name.toLowerCase();
+        final tournamentName =
+            g.venueStadium.tournamentName?.toLowerCase() ?? '';
+        return stadiumName.contains(lower) ||
+            lower.contains(stadiumName) ||
+            tournamentName.contains(lower) ||
+            lower.contains(tournamentName);
+      });
+    } on StateError {
+      // Try matching by city name as fallback
+      try {
+        return guides.firstWhere(
+            (g) => lower.contains(g.cityName.toLowerCase()));
+      } on StateError {
+        LoggingService.debug(
+          'No city guide found for venue: $venueName',
+          tag: _logTag,
+        );
+        return null;
+      }
+    }
+  }
+
   /// Clears the in-memory cache.
   void clearCache() => _cache = null;
 }
