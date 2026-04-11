@@ -178,15 +178,22 @@ workflows:
           
       - name: Fetch signing files for app and widget extension
         script: |
+          echo "📦 Fetching main app signing files..."
           app-store-connect fetch-signing-files "com.christophercampbell.pregameworldcup" \
-            --type IOS_APP_STORE --create
+            --type IOS_APP_STORE --create --verbose
+          echo "📦 Fetching widget extension signing files..."
           app-store-connect fetch-signing-files "com.christophercampbell.pregameworldcup.WorldCupWidget" \
-            --type IOS_APP_STORE --create
-          keychain add-certificates
+            --type IOS_APP_STORE --create --verbose
+          echo "🔑 Adding certificates to keychain..."
+          keychain add-certificates --verbose
+          echo "📋 Available provisioning profiles:"
+          ls -la ~/Library/MobileDevice/Provisioning\ Profiles/ || echo "No profiles directory"
 
       - name: Set up code signing settings on Xcode project
         script: |
-          xcode-project use-profiles --export-options-plist=$HOME/export_options.plist
+          xcode-project use-profiles --export-options-plist=$HOME/export_options.plist --verbose
+          echo "📋 Generated export_options.plist:"
+          cat $HOME/export_options.plist || echo "No export_options.plist generated"
 
       - name: Flutter build ipa
         script: |
