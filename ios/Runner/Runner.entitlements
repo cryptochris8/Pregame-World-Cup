@@ -18,12 +18,6 @@
 		<string>Default</string>
 	</array>
 
-	<!-- App Groups (shared data with WorldCupWidget extension) -->
-	<key>com.apple.security.application-groups</key>
-	<array>
-		<string>group.com.christophercampbell.pregameworldcup</string>
-	</array>
-
 	<!-- Associated Domains for Universal Links and Firebase Dynamic Links -->
 	<key>com.apple.developer.associated-domains</key>
 	<array>
