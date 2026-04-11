@@ -5,7 +5,13 @@
   # No build command needed for static HTML
   command = ""
 
-# Redirect rules
+# Redirect rules — penalty-kick-game has its own index.html, so exclude it
+[[redirects]]
+  from = "/penalty-kick-game/*"
+  to = "/penalty-kick-game/:splat"
+  status = 200
+  force = false
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
