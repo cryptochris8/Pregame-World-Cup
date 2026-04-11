@@ -244,6 +244,8 @@
 					};
 					WC0001005000000000000001 = {
 						CreatedOnToolsVersion = 15.1;
+						DevelopmentTeam = Q3UH3Y4QUU;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};

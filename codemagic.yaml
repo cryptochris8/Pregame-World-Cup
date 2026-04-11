@@ -176,10 +176,18 @@ workflows:
           pod deintegrate
           pod install --repo-update
           
+      - name: Fetch signing files for app and widget extension
+        script: |
+          app-store-connect fetch-signing-files "com.christophercampbell.pregameworldcup" \
+            --type IOS_APP_STORE --create
+          app-store-connect fetch-signing-files "com.christophercampbell.pregameworldcup.WorldCupWidget" \
+            --type IOS_APP_STORE --create
+          keychain add-certificates
+
       - name: Set up code signing settings on Xcode project
         script: |
-          xcode-project use-profiles
-          
+          xcode-project use-profiles --export-options-plist=$HOME/export_options.plist
+
       - name: Flutter build ipa
         script: |
           flutter build ipa --release \
