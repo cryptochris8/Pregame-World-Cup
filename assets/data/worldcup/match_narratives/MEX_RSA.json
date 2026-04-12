@@ -14,7 +14,7 @@
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Mexico under Javier Aguirre will deploy an expansive 4-3-3 designed to electrify the home crowd from the opening whistle. Hirving Lozano's pace on the wing, Santiago Gimenez's movement in the box, and Edson Alvarez's midfield authority provide the framework for a team that will push forward aggressively. The Azteca crowd will be Mexico's 12th man, and Aguirre will want early goals to settle the nerves of a nation watching its team open a World Cup on home soil.\n\nSouth Africa will set up in a disciplined 4-4-2, sitting deep and looking to absorb pressure before countering with pace through their wide players. Bafana Bafana's game plan will revolve around frustrating Mexico, winning set pieces, and hoping Ronwen Williams can produce the kind of heroic performance that earns him the CAF Goalkeeper of the Year award. Mexico City's altitude of 2,240 meters is a real factor — South African players unaccustomed to elevation will feel the thin air, particularly in the second half.\n\nThe tactical key is tempo. Mexico want to play fast, using their home crowd's energy to create a frantic pace that South Africa cannot sustain. South Africa want to slow the game down, break up play with tactical fouls, and turn a football match into a chess match. Whoever controls the tempo controls the outcome.",
+    "narrative": "Mexico under Javier Aguirre will deploy an expansive 4-3-3 designed to electrify the home crowd from the opening whistle. Alexis Vega's creativity on the wing, Santiago Gimenez's movement in the box, and Edson Alvarez's midfield authority provide the framework for a team that will push forward aggressively. The Azteca crowd will be Mexico's 12th man, and Aguirre will want early goals to settle the nerves of a nation watching its team open a World Cup on home soil.\n\nSouth Africa will set up in a disciplined 4-4-2, sitting deep and looking to absorb pressure before countering with pace through their wide players. Bafana Bafana's game plan will revolve around frustrating Mexico, winning set pieces, and hoping Ronwen Williams can produce the kind of heroic performance that earns him the CAF Goalkeeper of the Year award. Mexico City's altitude of 2,240 meters is a real factor — South African players unaccustomed to elevation will feel the thin air, particularly in the second half.\n\nThe tactical key is tempo. Mexico want to play fast, using their home crowd's energy to create a frantic pace that South Africa cannot sustain. South Africa want to slow the game down, break up play with tactical fouls, and turn a football match into a chess match. Whoever controls the tempo controls the outcome.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-4-2",
     "keyMatchup": "Mexico's attacking fury vs Ronwen Williams' goalkeeping heroics — can Africa's best keeper hold the Azteca at bay?"
@@ -32,10 +32,10 @@
 
   "playerSpotlights": [
     {
-      "name": "Hirving Lozano",
+      "name": "Santiago Gimenez",
       "teamCode": "MEX",
-      "narrative": "El Chucky brings the kind of pace and unpredictability that can terrorize any defense. His ability to cut inside from the right, take on defenders, and deliver decisive moments makes him Mexico's most dangerous attacker. In front of the Azteca crowd, with an entire nation willing him forward, Lozano will be fueled by an energy that money cannot buy. His famous goal against Germany at the 2018 World Cup showed he thrives on the biggest stages.",
-      "statline": "Mexico's most dangerous attacker, famous for his stunning 2018 World Cup goal against Germany"
+      "narrative": "Feyenoord's prolific striker has established himself as Mexico's most clinical finisher in a generation. His intelligent movement in the box, composure in front of goal, and ability to create chances from nothing make him the focal point of Mexico's attack. In front of the Azteca crowd, with an entire nation willing him forward, Gimenez will be fueled by an energy that money cannot buy. His Champions League pedigree and consistent goal record at Feyenoord show he thrives on the biggest stages.",
+      "statline": "Mexico's most lethal striker, Feyenoord's leading scorer with Champions League pedigree"
     },
     {
       "name": "Ronwen Williams",
@@ -61,7 +61,7 @@
     "title": "The Verdict",
     "prediction": "Mexico 2-1 South Africa",
     "confidence": 72,
-    "narrative": "The Azteca, the opening match, and 87,000 voices will carry Mexico to victory — but not without a fight. Lozano's pace and Gimenez's finishing will eventually breach South Africa's defense, but Williams' heroics in goal will keep Bafana Bafana competitive far longer than the quality gap suggests.\n\nExpect a nervous first 20 minutes as Mexico adjust to the weight of expectation. The crowd will be electric but also anxious, and Mexico's players will feel both the adrenaline and the pressure. South Africa's best chance comes early, when nerves are highest and the match is still balanced. A Tau counter-attack in the first half could stun the Azteca into silence — and if South Africa score first, the dynamics change completely.\n\nBut Mexico's quality and the crowd's energy will prove decisive. Two goals — one before and one after halftime — should be enough, with South Africa's consolation coming late to ensure a tense final ten minutes. The 2010 script won't quite repeat itself, but it will come closer than Mexico would like.",
+    "narrative": "The Azteca, the opening match, and 87,000 voices will carry Mexico to victory — but not without a fight. Gimenez's clinical finishing and Vega's creativity will eventually breach South Africa's defense, but Williams' heroics in goal will keep Bafana Bafana competitive far longer than the quality gap suggests.\n\nExpect a nervous first 20 minutes as Mexico adjust to the weight of expectation. The crowd will be electric but also anxious, and Mexico's players will feel both the adrenaline and the pressure. South Africa's best chance comes early, when nerves are highest and the match is still balanced. A Tau counter-attack in the first half could stun the Azteca into silence — and if South Africa score first, the dynamics change completely.\n\nBut Mexico's quality and the crowd's energy will prove decisive. Two goals — one before and one after halftime — should be enough, with South Africa's consolation coming late to ensure a tense final ten minutes. The 2010 script won't quite repeat itself, but it will come closer than Mexico would like.",
     "alternativeScenarios": [
       {
         "scenario": "Mexico 1-1 South Africa",
@@ -71,7 +71,7 @@
       {
         "scenario": "Mexico 3-0 South Africa",
         "probability": 15,
-        "reasoning": "The Azteca erupts early, and Mexico's quality overwhelms South Africa's defense. Lozano, Gimenez, and a midfield scorer combine for a dominant opening statement that silences any pre-tournament doubts about Mexico's credentials."
+        "reasoning": "The Azteca erupts early, and Mexico's quality overwhelms South Africa's defense. Gimenez, Vega, and a midfield scorer combine for a dominant opening statement that silences any pre-tournament doubts about Mexico's credentials."
       }
     ]
   },
