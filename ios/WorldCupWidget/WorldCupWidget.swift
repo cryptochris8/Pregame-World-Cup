@@ -248,13 +248,13 @@ struct SmallWidgetView: View {
             Spacer()
         }
         .padding()
-        .containerBackground(for: .widget) {
+        .background(
             LinearGradient(
                 colors: [Color.green.opacity(0.1), Color.blue.opacity(0.1)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
-        }
+        )
     }
 }
 
@@ -295,13 +295,13 @@ struct MediumWidgetView: View {
             }
         }
         .padding()
-        .containerBackground(for: .widget) {
+        .background(
             LinearGradient(
                 colors: [Color.green.opacity(0.1), Color.blue.opacity(0.1)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
-        }
+        )
     }
 }
 
@@ -351,13 +351,13 @@ struct LargeWidgetView: View {
             Spacer()
         }
         .padding()
-        .containerBackground(for: .widget) {
+        .background(
             LinearGradient(
                 colors: [Color.green.opacity(0.1), Color.blue.opacity(0.1)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
-        }
+        )
     }
 }
 
@@ -643,6 +643,7 @@ extension LiveActivitiesAppAttributes {
 
 /// Reads Live Activity data from App Group UserDefaults.
 /// The live_activities plugin writes each field as "{activityUUID}_{key}".
+@available(iOSApplicationExtension 16.1, *)
 struct LiveActivityData {
     let sharedDefault: UserDefaults
     let context: ActivityViewContext<LiveActivitiesAppAttributes>
@@ -679,6 +680,7 @@ struct LiveActivityData {
 
 // MARK: - Lock Screen Live Activity View
 
+@available(iOSApplicationExtension 16.1, *)
 struct MatchLockScreenView: View {
     let data: LiveActivityData
 
@@ -754,6 +756,7 @@ struct MatchLockScreenView: View {
 
 // MARK: - Live Activity Widget
 
+@available(iOSApplicationExtension 16.1, *)
 struct MatchLiveActivity: Widget {
     let sharedDefault = UserDefaults(suiteName: appGroupId)!
 
@@ -867,41 +870,10 @@ struct WorldCupWidgetBundle: WidgetBundle {
         // Home Screen Widgets
         WorldCupWidget()
         // Live Activity (Dynamic Island + Lock Screen)
-        MatchLiveActivity()
+        if #available(iOSApplicationExtension 16.1, *) {
+            MatchLiveActivity()
+        }
     }
 }
 
-// MARK: - Preview
-
-#Preview(as: .systemSmall) {
-    WorldCupWidget()
-} timeline: {
-    WorldCupEntry(
-        date: Date(),
-        upcomingMatches: [
-            MatchData(
-                matchId: "1",
-                homeTeam: "United States",
-                awayTeam: "Mexico",
-                homeTeamCode: "USA",
-                awayTeamCode: "MEX",
-                homeFlag: "🇺🇸",
-                awayFlag: "🇲🇽",
-                homeScore: nil,
-                awayScore: nil,
-                matchTime: ISO8601DateFormatter().string(from: Date().addingTimeInterval(3600)),
-                status: "upcoming",
-                venue: "MetLife Stadium",
-                stage: "Group Stage"
-            )
-        ],
-        liveMatches: [],
-        config: WidgetConfig(
-            showLiveScores: true,
-            showUpcomingMatches: true,
-            upcomingMatchCount: 3,
-            favoriteTeamCode: nil,
-            compactMode: false
-        )
-    )
-}
+// Preview removed — requires iOS 17+ #Preview macro
