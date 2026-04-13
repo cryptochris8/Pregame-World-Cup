@@ -769,7 +769,7 @@ struct MatchLiveActivity: Widget {
         } dynamicIsland: { context in
             let data = LiveActivityData(sharedDefault: sharedDefault, context: context)
 
-            DynamicIsland {
+            return DynamicIsland {
                 // EXPANDED view (long press on Dynamic Island)
                 DynamicIslandExpandedRegion(.leading) {
                     VStack(spacing: 2) {
