@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/services/widget_service.dart';
+import '../../../../injection_container.dart' as di;
 import '../../domain/entities/entities.dart';
 import '../../domain/repositories/world_cup_match_repository.dart';
 import 'match_list_state.dart';
@@ -45,6 +47,9 @@ class MatchListCubit extends Cubit<MatchListState> {
 
       // Apply current filter
       _applyFilter();
+
+      // Sync match data to home screen and lock screen widgets
+      _syncWidgetData(matches, liveMatches);
     } catch (e) {
       // Debug output removed
       emit(state.copyWith(
@@ -75,6 +80,9 @@ class MatchListCubit extends Cubit<MatchListState> {
       ));
 
       _applyFilter();
+
+      // Sync refreshed data to widgets
+      _syncWidgetData(matches, state.liveMatches);
     } catch (e) {
       // Debug output removed
       emit(state.copyWith(
@@ -90,6 +98,9 @@ class MatchListCubit extends Cubit<MatchListState> {
     _liveMatchesSubscription = _matchRepository.watchLiveMatches().listen(
       (liveMatches) {
         emit(state.copyWith(liveMatches: liveMatches));
+
+        // Sync live data to widgets
+        _syncWidgetData(state.matches, liveMatches);
 
         // Update matches list with live data
         if (liveMatches.isNotEmpty) {
@@ -290,6 +301,26 @@ class MatchListCubit extends Cubit<MatchListState> {
 
     upcoming.sort((a, b) => a.dateTime!.compareTo(b.dateTime!));
     return upcoming.take(limit).toList();
+  }
+
+  /// Push match data to home screen and lock screen widgets
+  void _syncWidgetData(List<WorldCupMatch> matches, List<WorldCupMatch> liveMatches) {
+    try {
+      final widgetService = di.sl<WidgetService>();
+
+      // Get upcoming scheduled matches sorted by date
+      final upcoming = matches
+          .where((m) => m.status == MatchStatus.scheduled && m.dateTime != null)
+          .toList()
+        ..sort((a, b) => a.dateTime!.compareTo(b.dateTime!));
+
+      widgetService.updateMatches(
+        upcoming: upcoming.take(3).toList(),
+        live: liveMatches,
+      );
+    } catch (_) {
+      // Non-critical — widget update failure shouldn't affect the app
+    }
   }
 
   @override
