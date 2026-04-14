@@ -230,7 +230,7 @@ struct SmallWidgetView: View {
             HStack {
                 Image(systemName: "sportscourt")
                     .foregroundColor(.green)
-                Text("World Cup")
+                Text("Pregame")
                     .font(.caption)
                     .fontWeight(.bold)
             }
@@ -266,7 +266,7 @@ struct MediumWidgetView: View {
             HStack {
                 Image(systemName: "sportscourt")
                     .foregroundColor(.green)
-                Text("World Cup 2026")
+                Text("Pregame")
                     .font(.subheadline)
                     .fontWeight(.bold)
                 Spacer()
@@ -313,7 +313,7 @@ struct LargeWidgetView: View {
             HStack {
                 Image(systemName: "sportscourt")
                     .foregroundColor(.green)
-                Text("World Cup 2026")
+                Text("Pregame")
                     .font(.headline)
                     .fontWeight(.bold)
                 Spacer()
@@ -528,7 +528,7 @@ struct AccessoryRectangularView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "sportscourt")
                         .font(.caption2)
-                    Text("World Cup")
+                    Text("Pregame")
                         .font(.caption2)
                         .fontWeight(.semibold)
                     if match.isLive {
@@ -559,7 +559,7 @@ struct AccessoryRectangularView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "sportscourt")
                         .font(.caption2)
-                    Text("World Cup")
+                    Text("Pregame")
                         .font(.caption2)
                         .fontWeight(.semibold)
                 }
@@ -587,7 +587,7 @@ struct AccessoryInlineView: View {
                 Text(match.inlineSummary)
             }
         } else {
-            Label("World Cup 2026", systemImage: "sportscourt")
+            Label("Pregame", systemImage: "sportscourt")
         }
     }
 }
@@ -613,7 +613,7 @@ struct WorldCupWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             WorldCupWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("World Cup 2026")
+        .configurationDisplayName("Pregame")
         .description("Stay updated with live scores and upcoming matches.")
         .supportedFamilies(allSupportedFamilies)
     }
