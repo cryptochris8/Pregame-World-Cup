@@ -46,6 +46,7 @@ Future<void> registerCoreDependencies(GetIt sl) async {
   sl.registerSingleton<OfflineService>(offlineService);
 
   final widgetService = await WidgetService.getInstance();
+  await widgetService.initialize();
   sl.registerSingleton<WidgetService>(widgetService);
 
   // Haptic Match Experience
