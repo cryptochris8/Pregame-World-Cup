@@ -82,6 +82,23 @@ class _CityHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.2),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: const Text(
+              'CITY GUIDE',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.5,
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
           Text(
             '$_countryFlag ${guide.cityName}',
             style: const TextStyle(
@@ -143,11 +160,12 @@ class _InfoChip extends StatelessWidget {
   }
 }
 
-class _SectionTitle extends StatelessWidget {
+// Gradient section header matching the Pregame article style
+class _GradientSectionTitle extends StatelessWidget {
   final String title;
   final IconData icon;
 
-  const _SectionTitle({required this.title, required this.icon});
+  const _GradientSectionTitle({required this.title, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -155,8 +173,17 @@ class _SectionTitle extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 12),
       child: Row(
         children: [
-          Icon(icon, color: AppTheme.primaryPurple, size: 20),
-          const SizedBox(width: 8),
+          Container(
+            padding: const EdgeInsets.all(6),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
+              ),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: Icon(icon, color: Colors.white, size: 16),
+          ),
+          const SizedBox(width: 10),
           Text(
             title,
             style: const TextStyle(
@@ -171,6 +198,35 @@ class _SectionTitle extends StatelessWidget {
   }
 }
 
+// Gradient-bordered card used throughout the page
+class _GradientCard extends StatelessWidget {
+  final Widget child;
+
+  const _GradientCard({required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            AppTheme.primaryPurple.withValues(alpha: 0.08),
+            AppTheme.primaryBlue.withValues(alpha: 0.04),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: AppTheme.primaryPurple.withValues(alpha: 0.15),
+        ),
+      ),
+      child: child,
+    );
+  }
+}
+
 class _StadiumSection extends StatelessWidget {
   final VenueStadium stadium;
 
@@ -181,20 +237,20 @@ class _StadiumSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const _SectionTitle(title: 'Stadium', icon: Icons.stadium),
-        Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: AppTheme.backgroundElevated,
-            borderRadius: BorderRadius.circular(12),
-          ),
+        const _GradientSectionTitle(title: 'Stadium', icon: Icons.stadium),
+        _GradientCard(
           child: Row(
             children: [
               Container(
                 width: 56,
                 height: 56,
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryBlue.withValues(alpha: 0.2),
+                  gradient: LinearGradient(
+                    colors: [
+                      AppTheme.primaryPurple.withValues(alpha: 0.2),
+                      AppTheme.primaryBlue.withValues(alpha: 0.15),
+                    ],
+                  ),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Icon(Icons.stadium, color: AppTheme.primaryBlue, size: 28),
@@ -245,15 +301,10 @@ class _FanZonesSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const _SectionTitle(title: 'Fan Zones', icon: Icons.celebration),
+        const _GradientSectionTitle(title: 'Fan Zones', icon: Icons.celebration),
         ...fanZones.map((zone) => Padding(
               padding: const EdgeInsets.only(bottom: 8),
-              child: Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: AppTheme.backgroundElevated,
-                  borderRadius: BorderRadius.circular(12),
-                ),
+              child: _GradientCard(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -315,21 +366,24 @@ class _TransitSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const _SectionTitle(title: 'Getting Around', icon: Icons.directions_transit),
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: AppTheme.backgroundElevated,
-            borderRadius: BorderRadius.circular(12),
-          ),
+        const _GradientSectionTitle(title: 'Getting Around', icon: Icons.directions_transit),
+        _GradientCard(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Airports
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.flight, color: AppTheme.accentGold, size: 16),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [AppTheme.primaryOrange, AppTheme.accentGold],
+                      ),
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: const Icon(Icons.flight, color: Colors.white, size: 14),
+                  ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
@@ -340,7 +394,6 @@ class _TransitSection extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 12),
-              // Public transit
               Text(
                 transit.publicTransit,
                 style: const TextStyle(color: Colors.white60, fontSize: 13, height: 1.5),
@@ -352,7 +405,15 @@ class _TransitSection extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('💡 ', style: TextStyle(fontSize: 12)),
+                          Container(
+                            padding: const EdgeInsets.all(2),
+                            decoration: BoxDecoration(
+                              color: AppTheme.accentGold.withValues(alpha: 0.15),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Icon(Icons.lightbulb, color: AppTheme.accentGold, size: 12),
+                          ),
+                          const SizedBox(width: 8),
                           Expanded(
                             child: Text(
                               tip,
@@ -381,13 +442,8 @@ class _WeatherSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const _SectionTitle(title: 'Weather', icon: Icons.thermostat),
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: AppTheme.backgroundElevated,
-            borderRadius: BorderRadius.circular(12),
-          ),
+        const _GradientSectionTitle(title: 'Weather', icon: Icons.thermostat),
+        _GradientCard(
           child: Column(
             children: [
               Row(
@@ -399,7 +455,21 @@ class _WeatherSection extends StatelessWidget {
                       low: weather.juneAvgLow,
                     ),
                   ),
-                  Container(width: 1, height: 40, color: Colors.white12),
+                  Container(
+                    width: 1,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.transparent,
+                          AppTheme.primaryPurple.withValues(alpha: 0.3),
+                          Colors.transparent,
+                        ],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
+                    ),
+                  ),
                   Expanded(
                     child: _WeatherMonth(
                       month: 'July',
@@ -436,7 +506,7 @@ class _WeatherMonth extends StatelessWidget {
         Text(month, style: const TextStyle(color: Colors.white70, fontSize: 13, fontWeight: FontWeight.w600)),
         const SizedBox(height: 4),
         Text(
-          '${high}°F / ${low}°F',
+          '$high°F / $low°F',
           style: const TextStyle(color: AppTheme.primaryOrange, fontSize: 15, fontWeight: FontWeight.bold),
         ),
       ],
@@ -454,13 +524,8 @@ class _VisaSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const _SectionTitle(title: 'Visa & Entry', icon: Icons.card_travel),
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: AppTheme.backgroundElevated,
-            borderRadius: BorderRadius.circular(12),
-          ),
+        const _GradientSectionTitle(title: 'Visa & Entry', icon: Icons.card_travel),
+        _GradientCard(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -522,15 +587,10 @@ class _LocalTipsSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const _SectionTitle(title: 'Local Tips', icon: Icons.lightbulb_outline),
+        const _GradientSectionTitle(title: 'Local Tips', icon: Icons.lightbulb_outline),
         ...tips.asMap().entries.map((entry) => Padding(
               padding: const EdgeInsets.only(bottom: 8),
-              child: Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: AppTheme.backgroundElevated,
-                  borderRadius: BorderRadius.circular(10),
-                ),
+              child: _GradientCard(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -538,14 +598,16 @@ class _LocalTipsSection extends StatelessWidget {
                       width: 24,
                       height: 24,
                       decoration: BoxDecoration(
-                        color: AppTheme.accentGold.withValues(alpha: 0.15),
+                        gradient: const LinearGradient(
+                          colors: [AppTheme.primaryOrange, AppTheme.accentGold],
+                        ),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Center(
                         child: Text(
                           '${entry.key + 1}',
                           style: const TextStyle(
-                            color: AppTheme.accentGold,
+                            color: Colors.white,
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
                           ),
@@ -578,13 +640,25 @@ class _QuickInfoSection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: AppTheme.primaryRed.withValues(alpha: 0.1),
+        gradient: LinearGradient(
+          colors: [
+            AppTheme.primaryRed.withValues(alpha: 0.12),
+            AppTheme.primaryOrange.withValues(alpha: 0.08),
+          ],
+        ),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: AppTheme.primaryRed.withValues(alpha: 0.3)),
       ),
       child: Row(
         children: [
-          const Icon(Icons.emergency, color: AppTheme.primaryRed, size: 20),
+          Container(
+            padding: const EdgeInsets.all(6),
+            decoration: BoxDecoration(
+              color: AppTheme.primaryRed.withValues(alpha: 0.2),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: const Icon(Icons.emergency, color: AppTheme.primaryRed, size: 18),
+          ),
           const SizedBox(width: 10),
           Expanded(
             child: Text(
