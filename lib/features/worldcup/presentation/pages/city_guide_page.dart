@@ -211,15 +211,15 @@ class _GradientCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            AppTheme.primaryPurple.withValues(alpha: 0.08),
-            AppTheme.primaryBlue.withValues(alpha: 0.04),
+            AppTheme.primaryPurple.withValues(alpha: 0.18),
+            AppTheme.primaryBlue.withValues(alpha: 0.10),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: AppTheme.primaryPurple.withValues(alpha: 0.15),
+          color: AppTheme.primaryPurple.withValues(alpha: 0.4),
         ),
       ),
       child: child,
@@ -245,15 +245,12 @@ class _StadiumSection extends StatelessWidget {
                 width: 56,
                 height: 56,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      AppTheme.primaryPurple.withValues(alpha: 0.2),
-                      AppTheme.primaryBlue.withValues(alpha: 0.15),
-                    ],
+                  gradient: const LinearGradient(
+                    colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
                   ),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: const Icon(Icons.stadium, color: AppTheme.primaryBlue, size: 28),
+                child: const Icon(Icons.stadium, color: Colors.white, size: 28),
               ),
               const SizedBox(width: 16),
               Expanded(
@@ -334,13 +331,21 @@ class _FanZonesSection extends StatelessWidget {
                         children: zone.features.map((f) => Container(
                               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                               decoration: BoxDecoration(
-                                color: AppTheme.secondaryEmerald.withValues(alpha: 0.15),
+                                gradient: LinearGradient(
+                                  colors: [
+                                    AppTheme.primaryPurple.withValues(alpha: 0.25),
+                                    AppTheme.primaryBlue.withValues(alpha: 0.15),
+                                  ],
+                                ),
                                 borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: AppTheme.primaryBlue.withValues(alpha: 0.3),
+                                ),
                               ),
                               child: Text(
                                 f,
                                 style: const TextStyle(
-                                  color: AppTheme.secondaryEmerald,
+                                  color: AppTheme.primaryBlue,
                                   fontSize: 11,
                                 ),
                               ),
@@ -408,10 +413,12 @@ class _TransitSection extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.all(2),
                             decoration: BoxDecoration(
-                              color: AppTheme.accentGold.withValues(alpha: 0.15),
+                              gradient: const LinearGradient(
+                                colors: [AppTheme.primaryOrange, AppTheme.accentGold],
+                              ),
                               borderRadius: BorderRadius.circular(4),
                             ),
-                            child: const Icon(Icons.lightbulb, color: AppTheme.accentGold, size: 12),
+                            child: const Icon(Icons.lightbulb, color: Colors.white, size: 12),
                           ),
                           const SizedBox(width: 8),
                           Expanded(
@@ -642,12 +649,12 @@ class _QuickInfoSection extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            AppTheme.primaryRed.withValues(alpha: 0.12),
-            AppTheme.primaryOrange.withValues(alpha: 0.08),
+            AppTheme.primaryRed.withValues(alpha: 0.20),
+            AppTheme.primaryOrange.withValues(alpha: 0.12),
           ],
         ),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppTheme.primaryRed.withValues(alpha: 0.3)),
+        border: Border.all(color: AppTheme.primaryRed.withValues(alpha: 0.5)),
       ),
       child: Row(
         children: [
