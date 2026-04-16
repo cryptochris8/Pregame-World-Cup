@@ -913,17 +913,17 @@
       "country": "Croatia",
       "club": "Manchester City",
       "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Fitness hurdles post-injury",
+      "injuryDate": "2026-02-01",
+      "expectedReturn": "Nearing return - targeting May 2026",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Manchester City (Premier League)",
-        "notes": "Full match played"
+        "notes": "Limited minutes"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced midfielder. No significant injury concerns. Important part of Croatia's golden generation midfield."
+      "source": "Transfermarkt, Manchester City reports - Apr 2026",
+      "notes": "Dealing with fitness hurdles but nearing full return. Important part of Croatia's golden generation midfield. Expected available for World Cup."
     },
     {
       "playerName": "Josko Gvardiol",
@@ -931,17 +931,17 @@
       "country": "Croatia",
       "club": "Manchester City",
       "position": "Defender",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Tibial fracture",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "Targeting mid-May 2026",
+      "availabilityStatus": "major_doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-01-12",
         "opponent": "Manchester City (Premier League)",
-        "notes": "Full match played"
+        "notes": "Last match before tibial fracture"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "One of the most talented young defenders in world football. No injury concerns. Key player for Croatia's future."
+      "source": "Manchester City, Transfermarkt - Apr 2026",
+      "notes": "Suffered a tibial fracture in January 2026. Targeting mid-May return which would leave minimal preparation time before the World Cup. Major doubt. Croatia's most important defender alongside Modric as the team's key player."
     },
     {
       "playerName": "Dominik Livakovic",
@@ -1480,8 +1480,8 @@
         "opponent": "Rayo Vallecano (La Liga)",
         "notes": "Available for selection"
       },
-      "source": "ESPN, FourFourTwo - Feb 2026",
-      "notes": "Age 34. Golden Boot winner 2014 World Cup. 122 caps. No specific injury but workload management needed. Veteran leader for Colombia."
+      "source": "ESPN, FourFourTwo - Apr 2026",
+      "notes": "Age 34. Golden Boot winner 2014 World Cup. 122 caps. Hospitalized for dehydration in Apr 2026 but recovered; expected fit for World Cup. Workload management needed. Veteran leader for Colombia."
     },
     {
       "playerName": "Jhon Duran",
@@ -1489,17 +1489,17 @@
       "country": "Colombia",
       "club": "Aston Villa",
       "position": "Forward",
-      "injuryType": "No current injury",
+      "injuryType": "Off-field issues / federation relationship strained",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "Availability uncertain",
+      "availabilityStatus": "major_doubt",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Aston Villa (Premier League)",
         "notes": "Played full match"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Young striker in excellent form. No injury concerns. Exciting prospect for Colombia's attack."
+      "source": "Transfermarkt, Colombian media - Apr 2026",
+      "notes": "No physical injury but federation relationship strained due to off-field issues. Major doubt for World Cup selection despite talent. Situation being monitored."
     },
     {
       "playerName": "Jefferson Lerma",
@@ -1894,26 +1894,26 @@
         "opponent": "West Ham United (Premier League)",
         "notes": "Full match played"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Box-to-box midfielder and captain. No injury concerns. Key player for Czechia with Premier League experience."
+      "source": "Transfermarkt, club reports - Apr 2026",
+      "notes": "Box-to-box midfielder. No injury concerns. Key player for Czechia with Premier League experience. Stripped of captaincy under new coach Koubek; Ladislav Krejci named new captain."
     },
     {
       "playerName": "Adam Hlozek",
       "teamCode": "CZE",
       "country": "Czechia",
-      "club": "Bayer Leverkusen",
+      "club": "Hoffenheim",
       "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Recurring calf injury",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "May 2026 - fitness being monitored",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Bayer Leverkusen (Bundesliga)",
-        "notes": "Full match played"
+        "date": "2026-03-15",
+        "opponent": "Hoffenheim (Bundesliga)",
+        "notes": "Limited minutes due to calf issue"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Young versatile forward. No injury concerns. Key attacking talent for Czechia."
+      "source": "Transfermarkt, Hoffenheim reports - Apr 2026",
+      "notes": "Recurring calf injury is a concern. Key attacking talent for Czechia. Fitness being closely monitored ahead of World Cup."
     },
     {
       "playerName": "Patrik Schick",
@@ -3208,8 +3208,8 @@
         "opponent": "Al-Ahli Doha (league match)",
         "notes": "Full match played"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced forward. No injury concerns. Key attacking option for Cabo Verde."
+      "source": "Transfermarkt, club reports - Apr 2026",
+      "notes": "Experienced forward at age 36. No current injury but age-related fitness management required. One of Cabo Verde's most iconic players with 60+ caps. Key veteran presence."
     },
     {
       "playerName": "Vozinha",
@@ -3244,8 +3244,8 @@
         "opponent": "Olympique de Marseille (league match)",
         "notes": "Full match played"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced defender. No injury concerns. DR Congo's key center-back."
+      "source": "Transfermarkt, club reports - Apr 2026",
+      "notes": "Experienced defender. No injury concerns. DR Congo's captain and key center-back. Was briefly detained for political reasons in DR Congo (resolved). Fully available for World Cup."
     },
     {
       "playerName": "Cedric Bakambu",
@@ -3280,8 +3280,8 @@
         "opponent": "Brentford (league match)",
         "notes": "Full match played"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Premier League forward in good form. No injury concerns. DR Congo's main attacking threat."
+      "source": "Transfermarkt, club reports - Apr 2026",
+      "notes": "Premier League forward in good form. Returned from AFCON injury absence and is fully fit. DR Congo's main attacking threat at their historic World Cup return."
     },
     {
       "playerName": "Mohammed Kudus",

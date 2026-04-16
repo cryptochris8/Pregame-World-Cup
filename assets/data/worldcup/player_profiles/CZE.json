@@ -1,11 +1,11 @@
 {
   "players": {
     "Jindrich Stanek": {
-      "bio": "A reliable goalkeeper who emerged as Czechia's number one after strong performances with Slavia Prague in domestic and European competition. Stanek combines shot-stopping ability with commanding presence in the box.",
+      "bio": "A reliable goalkeeper who emerged as Czechia's number one after strong performances with Slavia Prague in domestic and European competition. Stanek combines shot-stopping ability with commanding presence in the box. Was instrumental in the penalty shootout victories over Ireland and Denmark that secured Czechia's first World Cup berth since 2006.",
       "playingStyle": "Commanding goalkeeper with strong reflexes, good distribution, and authority in organizing the defensive line",
       "keyStrengths": ["Shot-stopping", "Commanding presence", "Distribution"],
-      "worldCup2026Role": "Starting goalkeeper and vocal leader of the defensive unit",
-      "notableFact": "Was a key figure in Czechia's penalty shootout victories over Ireland and Denmark in World Cup qualifying play-offs"
+      "worldCup2026Role": "Starting goalkeeper and vocal leader of the defensive unit at Czechia's first World Cup since 2006, under new coach Miroslav Koubek",
+      "notableFact": "Was a key figure in Czechia's penalty shootout victories over Ireland and Denmark in the World Cup qualifying play-offs under Koubek, securing the nation's return to the World Cup after a 20-year absence"
     },
     "Vladimir Coufal": {
       "bio": "A tireless right-back who has been a mainstay at West Ham United since his move from Slavia Prague in 2020. Coufal is renowned for his relentless energy, defensive work rate, and overlapping runs down the right flank.",
@@ -22,11 +22,11 @@
       "notableFact": "Scored the opening goal against the Netherlands at Euro 2020, helping Czechia stun the Dutch and reach the quarter-finals"
     },
     "Ladislav Krejci": {
-      "bio": "A highly-rated young center-back who earned a move to Girona in La Liga after impressive performances with Sparta Prague. The younger Krejci (not to be confused with his retired namesake) is a ball-playing defender with composure beyond his years.",
+      "bio": "A highly-rated young center-back who earned a move to Girona in La Liga after impressive performances with Sparta Prague. The younger Krejci (not to be confused with his retired namesake) is a ball-playing defender with composure beyond his years. Named new captain by coach Miroslav Koubek, replacing Soucek.",
       "playingStyle": "Left-footed, ball-playing center-back who is comfortable stepping into midfield with the ball and building attacks from deep",
       "keyStrengths": ["Ball-playing ability", "Left-footed passing", "Aerial strength"],
-      "worldCup2026Role": "Starting center-back and key figure in building play from the back in Hasek's system",
-      "notableFact": "Earned a move to La Liga side Girona after starring for Sparta Prague in the Champions League group stage"
+      "worldCup2026Role": "New captain under Koubek. Starting center-back and key figure in building play from the back at Czechia's first World Cup since 2006.",
+      "notableFact": "Earned a move to La Liga side Girona after starring for Sparta Prague in the Champions League group stage. Named Czechia's new captain by Koubek."
     },
     "Robin Hranac": {
       "bio": "A physically imposing center-back who represented Czechia at Euro 2024 in Germany. Hranac earned a move to Hoffenheim in the Bundesliga after strong showings with Viktoria Plzen.",
@@ -43,11 +43,11 @@
       "notableFact": "Was loaned to Benfica before settling at Hoffenheim, gaining valuable experience at one of Europe's top clubs"
     },
     "Tomas Soucek": {
-      "bio": "The captain and heartbeat of Czech football. Soucek is a box-to-box midfielder who has become one of the Premier League's most respected players at West Ham United, combining defensive duties with a remarkable goal-scoring record from midfield.",
+      "bio": "A longtime heartbeat of Czech football, Soucek is a box-to-box midfielder who has become one of the Premier League's most respected players at West Ham United, combining defensive duties with a remarkable goal-scoring record from midfield. Was stripped of the captaincy by new coach Miroslav Koubek, with Ladislav Krejci named as the new captain.",
       "playingStyle": "Towering box-to-box midfielder with exceptional aerial ability, tireless engine, and an uncanny knack for arriving in the penalty area to score",
       "keyStrengths": ["Aerial ability", "Box-to-box running", "Goal-scoring from midfield"],
-      "worldCup2026Role": "Captain and central figure in midfield, responsible for both defensive screening and providing a goal threat from deep",
-      "notableFact": "Has scored over 15 Premier League goals as a midfielder for West Ham, an outstanding return for a player who also excels defensively"
+      "worldCup2026Role": "Central figure in midfield despite losing the captaincy under Koubek. Responsible for both defensive screening and providing a goal threat from deep at Czechia's first World Cup since 2006.",
+      "notableFact": "Has scored over 15 Premier League goals as a midfielder for West Ham. Stripped of captaincy under new coach Koubek, with Krejci named new skipper."
     },
     "David Doudera": {
       "bio": "A dependable left-back from Slavia Prague who provides solid backup and competition for the left-back position. Doudera is a steady, defensively-minded full-back with good positional sense.",
@@ -57,10 +57,10 @@
       "notableFact": "Has been a consistent performer in European competition with Slavia Prague, gaining experience in the Conference League and Europa League"
     },
     "Adam Hlozek": {
-      "bio": "One of Czech football's most exciting young talents, Hlozek made his senior debut at just 16 and moved to Bayer Leverkusen before joining Hoffenheim. A tall, technically gifted forward who can play across the front line.",
+      "bio": "One of Czech football's most exciting young talents, Hlozek made his senior debut at just 16 and moved to Bayer Leverkusen before joining Hoffenheim. A tall, technically gifted forward who can play across the front line. A recurring calf injury is a concern heading into the World Cup.",
       "playingStyle": "Tall, technically skilled forward with good movement, two-footed finishing, and the ability to play as a striker or wide forward",
       "keyStrengths": ["Technical ability", "Versatility in attack", "Physical presence"],
-      "worldCup2026Role": "Key attacking option as a starting forward or impact substitute capable of changing games",
+      "worldCup2026Role": "Key attacking option if fit, but recurring calf injury makes him a doubt. Capable of starting or changing games from the bench at Czechia's first World Cup since 2006.",
       "notableFact": "Became the youngest scorer in Czech top-flight history when he scored for Sparta Prague aged 16, and was part of Leverkusen's invincible Bundesliga-winning squad in 2023-24"
     },
     "Patrik Schick": {

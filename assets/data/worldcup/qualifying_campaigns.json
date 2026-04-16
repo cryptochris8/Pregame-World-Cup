@@ -2,7 +2,7 @@
   "metadata": {
     "title": "World Cup 2026 Qualifying Campaign Statistics",
     "description": "Complete qualifying records for all 48 qualified teams across all confederations",
-    "last_updated": "2026-03-08",
+    "last_updated": "2026-04-16",
     "sources": [
       "official records",
       "UEFA.com",
@@ -320,7 +320,18 @@
       },
       "cleanSheets": 3,
       "biggestWin": "3-0 vs Lesotho",
-      "worstDefeat": "0-2 vs South Africa"
+      "worstDefeat": "0-2 vs South Africa",
+      "recentForm": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Jamaica",
+          "result": "W",
+          "score": "1-0",
+          "venue": "neutral",
+          "competition": "Intercontinental Playoff",
+          "notes": "Tuanzebe scored in extra time to seal historic qualification. DR Congo's first World Cup in 52 years (since 1974 as Zaire)."
+        }
+      ]
     },
     "COL": {
       "teamCode": "COL",
@@ -354,7 +365,27 @@
       },
       "cleanSheets": 6,
       "biggestWin": "4-0 vs Chile",
-      "worstDefeat": "0-1 vs Ecuador"
+      "worstDefeat": "0-1 vs Ecuador",
+      "recentForm": [
+        {
+          "date": "2026-03-26",
+          "opponent": "Croatia",
+          "result": "L",
+          "score": "1-2",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Concerning loss to Croatia. First defeat after 28-match unbeaten run ended."
+        },
+        {
+          "date": "2026-03-29",
+          "opponent": "France",
+          "result": "L",
+          "score": "1-3",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Second consecutive loss. Form dip after long unbeaten streak raises concerns heading into World Cup."
+        }
+      ]
     },
     "CPV": {
       "teamCode": "CPV",
@@ -422,7 +453,18 @@
       },
       "cleanSheets": 5,
       "biggestWin": "6-0 vs Gibraltar",
-      "worstDefeat": "N/A (unbeaten)"
+      "worstDefeat": "N/A (unbeaten)",
+      "recentForm": [
+        {
+          "date": "2026-03-26",
+          "opponent": "Colombia",
+          "result": "W",
+          "score": "2-1",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Strong friendly win over Colombia. Extending excellent recent form heading into the World Cup."
+        }
+      ]
     },
     "CUR": {
       "teamCode": "CUR",
@@ -477,7 +519,7 @@
         "name": "Adam Hlozek",
         "goals": 4
       },
-      "qualifyingHighlight": "Qualified via UEFA Play-Off Path D after finishing 3rd in qualifying group; Soucek and Hlozek led the campaign",
+      "qualifyingHighlight": "Qualified via UEFA Play-Off Path D after finishing 3rd in qualifying group. Beat Ireland and Denmark on penalties in playoffs under new coach Koubek. First World Cup since 2006.",
       "homeRecord": {
         "wins": 3,
         "draws": 2,

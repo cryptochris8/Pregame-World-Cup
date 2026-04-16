@@ -2,7 +2,7 @@
   "metadata": {
     "title": "World Cup 2026 Team Tactical Profiles",
     "description": "Tactical analysis profiles for all 48 qualified teams",
-    "last_updated": "2026-03-01",
+    "last_updated": "2026-04-16",
     "sources": [
       "ESPN",
       "The Athletic",
@@ -690,15 +690,15 @@
     "CUR": {
       "teamCode": "CUR",
       "teamName": "Curaçao",
-      "coach": "Dick Advocaat",
+      "coach": "Fred Rutten",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-5-1",
         "5-3-2"
       ],
-      "playingStyle": "Defensively organized with Dutch tactical influence under Advocaat; relies on counter-attacking and set pieces",
+      "playingStyle": "Defensively organized with Dutch tactical influence under Rutten; relies on counter-attacking and set pieces. Rutten replaced Advocaat who resigned in Feb 2026 for family reasons",
       "tempoRating": "Medium-Low",
-      "possessionStyle": "Patient and conservative; Advocaat's Dutch coaching brings structure but limited individual quality means possession is often yielded",
+      "possessionStyle": "Patient and conservative; Rutten's Dutch coaching brings structure but limited individual quality means possession is often yielded",
       "pressingIntensity": "Low-Medium",
       "attackingApproach": {
         "style": "Counter-attacking through quick transitions; reliance on set pieces and dual-national quality from Netherlands",
@@ -706,29 +706,29 @@
           "Bacuna brothers' European experience and quality",
           "Set piece aerial threat",
           "Counter-attacking pace from wide areas",
-          "Advocaat's tactical preparation for specific opponents"
+          "Rutten's tactical preparation for specific opponents"
         ],
         "primaryThreat": "Counter-attacking transitions and set piece situations; Bacuna's creativity from midfield",
         "setPieceRating": "Average"
       },
       "defensiveApproach": {
-        "style": "Deep, compact defensive block with two banks of four; Advocaat prioritizes defensive solidity above all",
+        "style": "Deep, compact defensive block with two banks of four; Rutten prioritizes defensive solidity above all",
         "strengths": [
-          "Defensive organization under experienced coach Advocaat",
+          "Defensive organization under experienced Dutch coach Rutten",
           "Compact shape limiting space through the middle",
           "Collective commitment and work rate",
           "Physical presence in aerial duels"
         ],
-        "weakness": "Significant quality gap against World Cup-level attackers; limited depth; can be overwhelmed by sustained pressure"
+        "weakness": "Significant quality gap against World Cup-level attackers; limited depth; can be overwhelmed by sustained pressure; coaching change mid-cycle adds instability"
       },
       "keyTacticalFeatures": [
-        "Advocaat's appointment brought elite European coaching experience to a small-island nation",
+        "Fred Rutten took over in Feb 2026 after Dick Advocaat resigned for family reasons, maintaining Dutch coaching continuity",
         "The Dutch connection provides a pipeline of dual-national players from the Netherlands",
         "Defensive organization is the primary weapon; Curaçao aim to frustrate and hit on the break",
         "Historic first World Cup qualification provides extraordinary motivation"
       ],
       "strengthsOverall": [
-        "Advocaat's elite coaching experience",
+        "Continuity of Dutch coaching philosophy under Rutten",
         "Dutch dual-national player pipeline",
         "Historic motivation from first World Cup appearance",
         "Strong team spirit and collective identity"
@@ -737,7 +737,7 @@
         "Massive individual quality gap against most opponents",
         "Very small player pool and limited depth",
         "No World Cup experience whatsoever",
-        "Domestic league provides low competitive standard"
+        "Late coaching change could disrupt preparation"
       ],
       "attackRating": 3,
       "defenseRating": 4,
@@ -747,14 +747,14 @@
     "CZE": {
       "teamCode": "CZE",
       "teamName": "Czechia",
-      "coach": "Ivan Hasek",
+      "coach": "Miroslav Koubek",
       "preferredFormation": "3-5-2",
       "alternateFormations": [
         "4-2-3-1",
         "4-4-2",
         "3-4-3"
       ],
-      "playingStyle": "Physically disciplined, defensively organized with emphasis on collective effort and tactical structure",
+      "playingStyle": "Physically disciplined, defensively organized with emphasis on collective effort and tactical structure. Koubek appointed Oct 2025 after Hasek was sacked",
       "tempoRating": "Medium",
       "possessionStyle": "Patient build-up through center-backs, Soucek as the box-to-box connector, direct when opportunity arises",
       "pressingIntensity": "Medium-High",
@@ -779,10 +779,10 @@
         "weakness": "Lack of pace in the back line; can be exposed by quick transitions and fast wingers"
       },
       "keyTacticalFeatures": [
-        "Hasek rebuilt the team around defensive solidity after disappointing Euro 2024",
-        "Soucek remains the heartbeat of the team, contributing goals and defensive work",
+        "Koubek took over in Oct 2025 after Hasek was sacked; guided Czechia through playoff qualification beating Ireland and Denmark on penalties",
+        "Soucek remains key but stripped of captaincy; Ladislav Krejci named new captain under Koubek",
         "Physical approach makes them dangerous from set pieces",
-        "Hlozek's development at Leverkusen has given the attack more quality"
+        "Hlozek's development in the Bundesliga has given the attack more quality"
       ],
       "strengthsOverall": [
         "Defensive discipline and organization",
@@ -794,7 +794,7 @@
         "Limited individual quality compared to top nations",
         "Lack of pace in defense",
         "Creative output can dry up against deep blocks",
-        "Reliance on set pieces for goals"
+        "Coaching change mid-cycle and captaincy upheaval"
       ],
       "attackRating": 5,
       "defenseRating": 7,

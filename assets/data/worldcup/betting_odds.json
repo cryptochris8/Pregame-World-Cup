@@ -201,13 +201,13 @@
       {
         "team": "Colombia",
         "code": "COL",
-        "odds_american": "+5000",
-        "odds_decimal": 51.00,
-        "implied_probability_pct": 1.9,
+        "odds_american": "+4000",
+        "odds_decimal": 41.00,
+        "implied_probability_pct": 2.4,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "tier": "dark_horse",
-        "notes": "Strong qualifying campaign. Drawn with Portugal in Group K."
+        "notes": "Odds shortened from +5000 despite concerning form dip (losses to Croatia and France in March 2026 ended 28-match unbeaten run). Drawn with Portugal in Group K."
       },
       {
         "team": "Scotland",
