@@ -4,17 +4,17 @@
   "team2Code": "CRC",
   "team1Name": "Argentina",
   "team2Name": "Costa Rica",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
   "headline": "The Champions Close Their Group Against Costa Rica's Ghosts of 2014",
   "subheadline": "Argentina aim to seal their knockout round passage against a Costa Rica side dreaming of recapturing their legendary World Cup magic",
 
-  "openingNarrative": "Costa Rica's 2014 World Cup run remains one of the greatest underdog stories in tournament history. Topping a group containing Uruguay, Italy, and England, then defeating Greece on penalties in the Round of 16, Los Ticos proved that tactical discipline and collective spirit could overcome the most prohibitive quality gaps. Now, twelve years later, they face the defending world champions — and the question hangs in the air like humidity before a tropical storm: can they do it again?\n\nArgentina arrive at this match as the most formidable force in world football. Their CONMEBOL qualifying campaign was a masterclass in consistency: 12 wins, 2 draws, 4 losses, 38 points, Messi's 8 goals, and 10 clean sheets across 18 matches. The defending champions' biggest win — a 6-0 demolition of Bolivia featuring a Messi hat-trick — demonstrated the devastating attacking power at Scaloni's disposal. Julian Alvarez, with 5 World Cup goals across the 2022 tournament and qualifying, has established himself as a player built for the biggest occasions.\n\nCosta Rica, by contrast, arrive as one of the tournament's more modest participants. Their 2022 World Cup campaign was a sobering experience — a group-stage exit that lacked the magic of 2014. But Keylor Navas, the legendary goalkeeper whose heroics defined that 2014 run, may still be between the posts, and young talents like Jewison Bennette represent the next generation of Tico football. The DNA of Costa Rican football — defensive discipline, collective sacrifice, and an unshakeable belief that the impossible is merely improbable — remains intact.",
+  "openingNarrative": "Costa Rica's 2014 World Cup run remains one of the greatest underdog stories in tournament history. Topping a group containing Uruguay, Italy, and England, then defeating Greece on penalties in the Round of 16, Los Ticos proved that tactical discipline and collective spirit could overcome the most prohibitive quality gaps. Now, twelve years later, they face the defending world champions — and the question hangs in the air like humidity before a tropical storm: can they do it again?\n\nArgentina arrive at this match as the most formidable force in world football, their March form providing final confirmation of their readiness. A ruthless 5-0 demolition of Zambia — Messi contributing a goal and an assist in a display of clinical efficiency — was followed by a 2-1 victory over Mauritania. Those results extended a remarkable run to 10 wins in their last 11 matches. The CONMEBOL qualifying campaign was a masterclass in consistency: 12 wins, 38 points, 10 clean sheets across 18 matches. At 8/1 to retain their crown, the bookmakers consider Argentina genuine title contenders.\n\nBut Argentina carry a burden that even their formidable squad depth cannot fully compensate for. Cristian Romero's cruciate ligament tear on April 12 has robbed Scaloni of his most important defender — the aggressive, front-foot center-back whose intensity set the tone for Argentina's entire press. By this stage of the group, Scaloni will have had two matches to adjust, but the absence will still be felt. The question is whether Argentina's defensive reshuffling has cost them any of the solidity that defined their qualifying campaign.\n\nCosta Rica, by contrast, arrive as one of the tournament's more modest participants. Their 2022 World Cup campaign was a sobering experience — a group-stage exit that lacked the magic of 2014. But young talents like Jewison Bennette represent the next generation of Tico football. The DNA of Costa Rican football — defensive discipline, collective sacrifice, and an unshakeable belief that the impossible is merely improbable — remains intact.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Argentina's 4-3-3 system is designed to overwhelm opponents through positional superiority, relentless movement, and the individual genius of Messi. Against Costa Rica's expected 5-4-1 defensive block, the challenge will be finding spaces in a congested penalty area. Argentina's fullbacks will push high to create overloads, while Messi drifts into pockets of space that the Costa Rican system will try to deny.\n\nCosta Rica's blueprint is clear: the same defensive framework that stunned the world in 2014. Five defenders, a compact midfield four, and a lone striker tasked with holding the ball and bringing others into play. The spaces between Costa Rica's defensive and midfield lines will be compressed to a minimum, forcing Argentina to play around rather than through them.\n\nThe tactical key is patience. Argentina must resist the temptation to force passes into crowded areas. Instead, switching the point of attack, using fullback overlaps, and exploiting set pieces will be the routes to goal. Costa Rica, meanwhile, will hope that their defensive shape holds long enough to force Argentina into frustration — and then, perhaps, steal a moment on the counter.",
+    "narrative": "Argentina's 4-3-3 system is designed to overwhelm opponents through positional superiority, relentless movement, and the individual genius of Messi. Against Costa Rica's expected 5-4-1 defensive block, the challenge will be finding spaces in a congested penalty area. Argentina's fullbacks will push high to create overloads, while Messi drifts into pockets of space that the Costa Rican system will try to deny.\n\nBy this stage of the group, Scaloni will know whether his post-Romero defensive structure is holding. Lisandro Martinez, with his ferocious tackling and left-footed ball progression, will have established himself as the anchor. The question is whether the partnership alongside him — likely Otamendi or Pezzella — has developed the understanding necessary to handle quick transitions.\n\nCosta Rica's blueprint is clear: the same defensive framework that stunned the world in 2014. Five defenders, a compact midfield four, and a lone striker tasked with holding the ball and bringing others into play. The spaces between Costa Rica's defensive and midfield lines will be compressed to a minimum, forcing Argentina to play around rather than through them.\n\nThe tactical key is patience. Argentina must resist the temptation to force passes into crowded areas. Instead, switching the point of attack, using fullback overlaps, and exploiting set pieces will be the routes to goal. Costa Rica, meanwhile, will hope that their defensive shape holds long enough to force Argentina into frustration — and then, perhaps, steal a moment on the counter through Bennette's pace.",
     "team1Formation": "4-3-3",
     "team2Formation": "5-4-1",
     "keyMatchup": "Argentina's attacking movement vs Costa Rica's packed defense — can the champions find a way through the wall?"
@@ -23,10 +23,10 @@
   "dataInsights": {
     "title": "By The Numbers",
     "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Costa Rica (unranked among qualified teams) — the ELO gap is massive, suggesting Argentina should win comfortably. But Costa Rica's 2014 group stage proved that ELO ratings cannot measure the power of collective belief.",
-    "formAnalysis": "Argentina's CONMEBOL qualifying numbers are staggering: 12 wins, 38 points, +21 goal difference, 10 clean sheets in 18 matches. Messi's 8 goals and Alvarez's movement provided the attacking edge. Costa Rica's qualification path was more modest, reflecting the competitive challenges of CONCACAF qualifying.",
+    "formAnalysis": "Argentina's recent form is extraordinary: 10 wins in their last 11 matches. The March friendlies — 5-0 over Zambia with Messi scoring and assisting, 2-1 over Mauritania — demonstrated a squad operating at peak efficiency. Their CONMEBOL qualifying numbers remain staggering: 12 wins, 38 points, +21 goal difference, 10 clean sheets in 18 matches. Costa Rica's qualification path was more modest, reflecting the competitive challenges of CONCACAF qualifying.",
     "squadValueComparison": "Argentina's squad ($951M) dwarfs Costa Rica's limited resources. The gap in individual quality is enormous — Alvarez alone ($113M) exceeds Costa Rica's entire squad value. This is the kind of mismatch the World Cup format inevitably produces.",
-    "injuryImpact": "Argentina may rotate for this match depending on their group standings. Scaloni's squad depth means even a second-string XI would be favored. Costa Rica need everyone available and at peak condition.",
-    "bettingPerspective": "Argentina should be among the heaviest favorites of any group-stage match. The main question for bettors is the margin of victory rather than the outcome. Costa Rica's odds reflect their underdog status.",
+    "injuryImpact": "Romero's absence will be into its third match by this point. Argentina may rotate for this fixture depending on their group standings. Scaloni's squad depth means even a second-string XI would be heavily favored. Messi's involvement will depend on what Argentina need mathematically — if qualification is secured, the 38-year-old may be rested with an eye on the knockout rounds.",
+    "bettingPerspective": "Argentina at 8/1 to win the tournament and -340 to top Group J should be among the heaviest favorites of any group-stage match. The main question for bettors is the margin of victory rather than the outcome. Costa Rica's odds reflect their underdog status.",
     "historicalPattern": "Argentina have dominated most encounters with CONCACAF opponents at World Cups. Costa Rica's 2014 heroics remain the exception rather than the rule for Central American teams at the tournament."
   },
 
@@ -34,25 +34,25 @@
     {
       "name": "Julian Alvarez",
       "teamCode": "ARG",
-      "narrative": "If Messi is rested or used as a substitute, Alvarez becomes the focal point of Argentina's attack. The Atletico Madrid striker's relentless pressing and intelligent movement make him the perfect weapon against a deep-sitting defense. His three goals in the 2022 knockout rounds proved he thrives when the stakes are highest, and his ability to create goals from half-chances makes him a nightmare for defenders who allow even a moment's lapse in concentration.",
+      "narrative": "If Messi is rested or used as a substitute — a real possibility if Argentina have already secured qualification — Alvarez becomes the focal point of Argentina's attack. The Atletico Madrid striker's relentless pressing and intelligent movement make him the perfect weapon against a deep-sitting defense. His three goals in the 2022 knockout rounds proved he thrives when the stakes are highest, and his ability to create goals from half-chances makes him a nightmare for defenders who allow even a moment's lapse in concentration.",
       "statline": "5 World Cup goals across 2022 and qualifying, $113M market value"
     },
     {
       "name": "Keylor Navas",
       "teamCode": "CRC",
-      "narrative": "If the legendary goalkeeper is between the posts for this match, it adds an emotional dimension that transcends tactical analysis. Navas's three penalty saves at the 2014 World Cup, his Champions League heroics with Real Madrid, and his status as the greatest goalkeeper Central America has ever produced make him a figure who can inspire an entire nation to believe the impossible is possible.",
+      "narrative": "If the legendary goalkeeper is between the posts for this match, it adds an emotional dimension that transcends tactical analysis. Navas's three penalty saves at the 2014 World Cup, his Champions League heroics with Real Madrid, and his status as the greatest goalkeeper Central America has ever produced make him a figure who can inspire an entire nation to believe the impossible is possible. At his age, this is almost certainly his last World Cup too — mirroring Messi's own farewell narrative on the other side.",
       "statline": "3 penalty saves at the 2014 World Cup, Champions League winner with Real Madrid"
     },
     {
       "name": "Alexis Mac Allister",
       "teamCode": "ARG",
-      "narrative": "Liverpool's World Cup-winning midfielder provides the engine that drives Argentina's possession game. Mac Allister's ability to receive in tight spaces, play quick one-twos, and arrive late in the box makes him a constant threat. Against Costa Rica's congested defense, his movement between the lines could be crucial in finding the spaces that conventional wide play cannot reach.",
+      "narrative": "Liverpool's World Cup-winning midfielder provides the engine that drives Argentina's possession game. Mac Allister's ability to receive in tight spaces, play quick one-twos, and arrive late in the box makes him a constant threat. Against Costa Rica's congested defense, his movement between the lines could be crucial in finding the spaces that conventional wide play cannot reach. With Romero gone and the defensive structure adjusted, Mac Allister's role in controlling tempo and reducing defensive transitions becomes even more important.",
       "statline": "Liverpool's World Cup-winning midfielder, key component of Argentina's midfield trio"
     },
     {
       "name": "Jewison Bennette",
       "teamCode": "CRC",
-      "narrative": "The young winger represents the future of Costa Rican football. Bennette's pace and directness give Los Ticos a counter-attacking outlet that can trouble even the best defenses when given space. Against Argentina's high defensive line, one run in behind could create the kind of moment that becomes a World Cup memory. Every young player dreams of a stage like this.",
+      "narrative": "The young winger represents the future of Costa Rican football. Bennette's pace and directness give Los Ticos a counter-attacking outlet that can trouble even the best defenses when given space. Against Argentina's high defensive line — now potentially less aggressive without Romero's presence — one run in behind could create the kind of moment that becomes a World Cup memory. Every young player dreams of a stage like this.",
       "statline": "Young talent representing the next generation of Costa Rican football"
     }
   ],
@@ -60,21 +60,21 @@
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Argentina 3-0 Costa Rica",
-    "confidence": 80,
-    "narrative": "Argentina's quality, depth, and World Cup-winning pedigree should prove too much for Costa Rica. Even if Scaloni rotates his squad — a likely scenario depending on Group J's standings — Argentina's second-string XI contains players who would start for most teams at this tournament.\n\nCosta Rica will fight. They will defend with discipline, they will throw their bodies in front of shots, and they will play with the passion that has always defined Tico football. But the quality gap is simply too large. Argentina will find the spaces, convert their chances, and close their group-stage campaign with a professional victory.\n\nThe real story of this match may be Messi. If he plays, every touch could be his last at a World Cup. If he is rested, the world will wonder if it has already seen the final chapter. Either way, MetLife Stadium will remember.",
+    "confidence": 78,
+    "narrative": "Argentina's quality, depth, and World Cup-winning pedigree should prove too much for Costa Rica. Even if Scaloni rotates his squad — a likely scenario depending on Group J's standings — Argentina's second-string XI contains players who would start for most teams at this tournament. Their March form, culminating in that 5-0 demolition of Zambia, showed a squad where even the fringe players are performing at an elite level.\n\nCosta Rica will fight. They will defend with discipline, they will throw their bodies in front of shots, and they will play with the passion that has always defined Tico football. But the quality gap is simply too large. Argentina will find the spaces, convert their chances, and close their group-stage campaign with a professional victory.\n\nThe real story of this match may be Messi. If he plays, every touch could be his last at a World Cup — the final group-stage appearance of football's greatest career. If he is rested, the world will wonder if it has already seen the final chapter. Either way, MetLife Stadium will remember.",
     "alternativeScenarios": [
       {
         "scenario": "Argentina 1-0 Costa Rica",
-        "probability": 20,
-        "reasoning": "Costa Rica produce a 2014-style defensive masterclass, keeping Argentina at bay until a single goal — perhaps a set piece or a moment of individual brilliance — finally breaks through. A proud performance that earns Costa Rica worldwide respect."
+        "probability": 18,
+        "reasoning": "Costa Rica produce a 2014-style defensive masterclass, keeping Argentina's rotated XI at bay until a single goal — perhaps a set piece or a moment of individual brilliance from a substitute Messi — finally breaks through."
       },
       {
         "scenario": "Argentina 2-1 Costa Rica",
         "probability": 10,
-        "reasoning": "Costa Rica score a shock goal through a counter-attack, creating a moment of genuine drama. Argentina recover and win comfortably, but the Tico goal becomes a highlight reel moment that captures the romance of World Cup football."
+        "reasoning": "Costa Rica score a shock goal through a Bennette counter-attack, creating a moment of genuine drama. Argentina recover and win comfortably, but the Tico goal becomes a highlight reel moment that captures the romance of World Cup football."
       }
     ]
   },
 
-  "closingLine": "In 2014, Costa Rica showed the world that the impossible is merely improbable. Against the defending world champions, they will need that belief more than ever."
+  "closingLine": "In 2014, Costa Rica showed the world that the impossible is merely improbable. Against the defending world champions — a side that has won 10 of its last 11 matches and carries the aura of Messi's farewell — they will need that belief more than ever."
 }

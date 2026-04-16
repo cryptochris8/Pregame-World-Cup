@@ -4,29 +4,29 @@
   "team2Code": "POL",
   "team1Name": "Argentina",
   "team2Name": "Poland",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
   "headline": "The Rematch: Messi's Champions vs Lewandowski's Last Stand",
-  "subheadline": "Four years after their Qatar confrontation, Argentina and Poland collide again with two legends chasing their final World Cup glory",
+  "subheadline": "Four years after their Qatar confrontation, Argentina and Poland collide again with two legends chasing their final World Cup glory — and Argentina missing the defender who made them fearsome",
 
-  "openingNarrative": "Football has a way of writing sequels that improve on the original. In 2022, Argentina met Poland in the group stage of the Qatar World Cup, and the match produced one of the tournament's most enduring images: Wojciech Szczesny diving to his right to save a Lionel Messi penalty. It did not matter. Argentina won 2-0 through goals from Mac Allister and Alvarez, and both teams advanced — but the dynamic between these sides was set. Argentina were the alpha, Poland the stubborn resistance.\n\nNow, four years later, the stage is set for a rematch that carries even greater weight. Messi, at 38, is playing what is almost certainly his final World Cup, having led Argentina to 38 points atop the CONMEBOL qualifying table with 8 goals. Robert Lewandowski, at 37, faces the same farewell narrative — one of the greatest strikers in football history, a player who has scored over 600 career goals, yet whose World Cup record remains maddeningly modest. His first-ever World Cup goal came in the 2022 tournament. He needs more.\n\nArgentina's qualifying campaign was dominant: 12 wins, 10 clean sheets, and a +21 goal difference that speaks to both attacking brilliance and defensive organization. Poland's path to the tournament was solid if unspectacular. The gap in quality between these squads is real — Argentina's $951M roster versus Poland's more modest assembly — but Poland have shown, most notably through Szczesny's penalty save, that they can compete with the very best for stretches of a match.\n\nThe question is whether they can compete for 90 minutes.",
+  "openingNarrative": "Football has a way of writing sequels that improve on the original. In 2022, Argentina met Poland in the group stage of the Qatar World Cup, and the match produced one of the tournament's most enduring images: Wojciech Szczesny diving to his right to save a Lionel Messi penalty. It did not matter. Argentina won 2-0 through goals from Mac Allister and Alvarez, and both teams advanced — but the dynamic between these sides was set. Argentina were the alpha, Poland the stubborn resistance.\n\nNow, four years later, the stage is set for a rematch that carries even greater weight. Messi, at 38 and turning 39 mid-tournament, is playing what is almost certainly his final World Cup. He is fully fit — the January hamstring strain a distant memory, his sharpness confirmed by a goal and an assist in the 5-0 demolition of Zambia in March, followed by a composed performance in the 2-1 win over Mauritania. Ten wins in their last 11 matches. A squad operating at peak efficiency. But Cristian Romero's devastating cruciate ligament tear on April 12 has altered the equation — Argentina's most aggressive defender, the man whose front-foot style defined their press, is a major doubt for the entire tournament.\n\nRobert Lewandowski, at 37, faces the same farewell narrative — one of the greatest strikers in football history, a player who has scored over 600 career goals, yet whose World Cup record remains maddeningly modest. His first-ever World Cup goal came in the 2022 tournament. He needs more. And he senses opportunity: Argentina's reshuffled backline, missing the defender who would have been tasked with handling his physical presence, is more vulnerable than any defense Scaloni has fielded in four years.\n\nArgentina's qualifying campaign was dominant: 12 wins, 10 clean sheets, and a +21 goal difference. At 8/1 with the bookmakers to retain their crown, they remain serious contenders. But the gap between serious contender and vulnerable champion is thinner than most realize — and Romero's knee has pushed them closer to that edge.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The tactical template was set in 2022, and neither team has dramatically altered their approach since. Argentina's 4-3-3 remains one of the most balanced systems in world football — Enzo Fernandez (who won the Best Young Player award in 2022 and has since become world-class) pulls the strings, Mac Allister provides the engine, and Messi floats into the spaces that his movement creates.\n\nPoland will again deploy a pragmatic 4-4-2, with Lewandowski as the focal point and Nicola Zalewski providing energy and creativity from the wing. The key tactical question is the same as 2022: can Poland's midfield compete with Argentina's technically superior engine room? If the answer is no — and in 2022 it was emphatically no — then Argentina will control the match.\n\nThe subtext is Szczesny versus Messi: the goalkeeper who saved the penalty versus the striker who missed it. Messi will want revenge. Szczesny will want to prove it was not a fluke. The World Cup, at its core, is built on these personal duels.",
+    "narrative": "The tactical template was set in 2022, but Romero's absence rewrites the script. Argentina's 4-3-3 remains one of the most balanced systems in world football — Enzo Fernandez pulls the strings, Mac Allister provides the engine, and Messi floats into the spaces that his movement creates. But the defensive foundation that allowed this creative freedom to flourish has been shaken.\n\nRomero's role was not merely defensive — he was the aggressive presser who stepped out to engage midfielders 35 yards from goal, the ball-carrier who could drive forward and bypass the first line of press, the insurance policy whose recovery speed allowed Argentina to play a high line with confidence. Without him, Scaloni must choose between a more conservative defensive approach and trusting less experienced center-backs to replicate Romero's audacity.\n\nPoland will again deploy a pragmatic 4-4-2, with Lewandowski as the focal point and Nicola Zalewski providing energy and creativity from the wing. The key tactical question has changed since 2022: can Poland exploit the physical contest against a center-back pairing that lacks Romero's aggression? If Lewandowski can bully his way to winning aerial duels and hold-up play, Poland's midfield can push higher than they managed in Qatar.\n\nThe subtext remains Szczesny versus Messi: the goalkeeper who saved the penalty versus the striker who missed it. But now there is a new subplot — Lewandowski versus Argentina's replacement center-back. That matchup could be the one that decides everything.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-4-2",
-    "keyMatchup": "Messi vs Szczesny — the penalty rematch that hangs over this fixture like an unfinished symphony"
+    "keyMatchup": "Lewandowski vs Argentina's reshuffled center-backs — can Poland's aging striker exploit the gap left by Romero's cruciate tear?"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Poland (ELO: not in provided top 48 — estimated ~1640) — the ELO gap gives Argentina a commanding advantage. Poland's ranking reflects their inconsistency at major tournaments despite possessing elite individual talent.",
-    "formAnalysis": "Argentina: 12 wins, 2 draws, 4 losses in 18 CONMEBOL qualifiers — 38 points, +21 goal difference, 10 clean sheets. Messi scored 8 goals. Poland qualified through UEFA but face the challenge of matching Argentina's tournament pedigree.",
-    "squadValueComparison": "Argentina ($951M) vs Poland — the financial gap is significant. Alvarez ($113M) and Fernandez's market values alone exceed much of Poland's squad. But Lewandowski's intangible value — his experience, his positioning, his instinct — cannot be measured in dollars.",
-    "injuryImpact": "Lewandowski's fitness at 37 is critical to Poland's hopes. Argentina's squad depth means they can absorb any absence, while Poland are heavily dependent on their talisman's availability and sharpness.",
-    "bettingPerspective": "Argentina will be strong favorites based on their 2022 head-to-head result and superior qualifying form. The 2-0 scoreline in 2022 set the benchmark. Poland's best hope is to keep the match tight and hope Lewandowski finds his World Cup scoring boots.",
+    "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Poland (ELO: estimated ~1640) — the ELO gap gives Argentina a commanding advantage. Poland's ranking reflects their inconsistency at major tournaments despite possessing elite individual talent.",
+    "formAnalysis": "Argentina's recent form is extraordinary: 10 wins in their last 11, including the 5-0 Zambia rout (Messi goal and assist) and 2-1 over Mauritania in March. Their CONMEBOL campaign: 12 wins, 38 points, +21 goal difference, 10 clean sheets. Poland qualified through UEFA but face the challenge of matching Argentina's tournament pedigree and relentless consistency.",
+    "squadValueComparison": "Argentina ($951M) vs Poland — the financial gap is significant. Alvarez ($113M) and Fernandez's market values alone exceed much of Poland's squad. But Lewandowski's intangible value — his experience, his positioning, his instinct — cannot be measured in dollars. And against a reshuffled defense, those intangibles become even more valuable.",
+    "injuryImpact": "Romero's cruciate ligament tear is the story that reframes this entire fixture. In 2022, Argentina's defense was impregnable — 2-0 with complete control. Without Romero, Poland's physical attack through Lewandowski has a route to goal that did not exist four years ago. Messi is fully fit after recovering from his January hamstring strain, his sharpness confirmed in March. Lewandowski's fitness at 37 remains critical to Poland's hopes.",
+    "bettingPerspective": "Argentina at 8/1 for the tournament will be strong favorites based on their 2022 head-to-head and superior form. The 2-0 scoreline in 2022 set the benchmark. But Romero's absence has shortened the effective gap. Poland's best hope is to keep the match tight and hope Lewandowski finds his World Cup scoring boots against a less formidable backline.",
     "historicalPattern": "Argentina have beaten Poland 2-0 at their last two World Cup meetings (1978 and 2022). Poland's best World Cup finishes (3rd in 1974 and 1982) are increasingly distant memories. The defending champions have won 3 of their last 4 World Cup opening matches."
   },
 
@@ -34,25 +34,25 @@
     {
       "name": "Lionel Messi",
       "teamCode": "ARG",
-      "narrative": "The penalty miss in 2022 was the kind of moment that would haunt a lesser player. But Messi responded by winning the World Cup — and in doing so, rendered Szczesny's save a footnote in a greater story. Now, facing Poland again, Messi carries no bitterness, only the serene confidence of a champion who has conquered every mountain. If Argentina win a penalty, the stadium will hold its collective breath. The rematch demands it.",
-      "statline": "8 goals in CONMEBOL qualifying, World Cup champion"
+      "narrative": "The penalty miss in 2022 was the kind of moment that would haunt a lesser player. But Messi responded by winning the World Cup — and in doing so, rendered Szczesny's save a footnote in a greater story. Now, facing Poland again at 38, Messi carries no bitterness, only the serene confidence of a champion who has conquered every mountain. His March form — that goal and assist in the 5-0 Zambia destruction — proved the fire still burns. If Argentina win a penalty, the stadium will hold its collective breath. The rematch demands it.",
+      "statline": "Fully fit. 1 goal, 1 assist vs Zambia (5-0). 10 wins in last 11 with Argentina."
     },
     {
       "name": "Robert Lewandowski",
       "teamCode": "POL",
-      "narrative": "One of the greatest strikers in football history has a World Cup record that reads like a misprint: just 2 goals in his career. At 37, this is almost certainly his last chance to add to that tally and leave a World Cup legacy worthy of his extraordinary career. Against Argentina's defense — which recorded 10 clean sheets in qualifying — Lewandowski will need to produce the kind of predatory finishing that made him a Bundesliga legend.",
+      "narrative": "One of the greatest strikers in football history has a World Cup record that reads like a misprint: just 2 goals in his career. At 37, this is almost certainly his last chance to add to that tally and leave a World Cup legacy worthy of his extraordinary career. But for the first time, Lewandowski faces an Argentina defense without Cristian Romero — the aggressive center-back who would have matched his physicality stride for stride. Against a reshuffled backline, Lewandowski's aerial ability, his hold-up play, and his predatory finishing have a route to goal that Qatar never provided.",
       "statline": "2 World Cup goals in his career, 600+ club career goals"
     },
     {
       "name": "Enzo Fernandez",
       "teamCode": "ARG",
-      "narrative": "The 2022 Best Young Player has evolved from a promising talent into the complete midfielder. Fernandez's growth since Qatar has been staggering — he now dictates matches for Chelsea in the Premier League with the same composure he showed on football's biggest stage. Against Poland's midfield, his ability to control tempo and break lines with progressive passes will determine whether Argentina dominate or are drawn into a battle.",
+      "narrative": "The 2022 Best Young Player has evolved from a promising talent into the complete midfielder. Fernandez's growth since Qatar has been staggering — he now dictates matches for Chelsea in the Premier League with the same composure he showed on football's biggest stage. With Romero's absence placing greater demands on Argentina's midfield to control the game and limit transitions, Fernandez's ability to dictate tempo and break lines with progressive passes becomes even more critical against Poland's organized midfield block.",
       "statline": "2022 World Cup Best Young Player, Argentina's midfield heartbeat"
     },
     {
       "name": "Wojciech Szczesny",
       "teamCode": "POL",
-      "narrative": "The goalkeeper who saved Messi's penalty in 2022 — a feat that cemented his place in World Cup folklore. Szczesny's experience, his shot-stopping ability, and his commanding presence in the box give Poland a foundation upon which to build their defensive resistance. He knows he can deny Messi. The question is whether he can deny an entire Argentina team that has improved since 2022.",
+      "narrative": "The goalkeeper who saved Messi's penalty in 2022 — a feat that cemented his place in World Cup folklore. Szczesny's experience, his shot-stopping ability, and his commanding presence in the box give Poland a foundation upon which to build their defensive resistance. He knows he can deny Messi. And now he faces an Argentina team that, for all its attacking brilliance, arrives without the defensive anchor that made them feel invincible.",
       "statline": "Saved a Messi penalty at the 2022 World Cup, Poland's first-choice goalkeeper"
     }
   ],
@@ -60,21 +60,21 @@
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Argentina 2-0 Poland",
-    "confidence": 72,
-    "narrative": "The 2022 script will likely repeat itself, albeit with different actors and a more refined Argentine performance. Argentina's 12 qualifying wins, their 10 clean sheets, and the continued evolution of their system under Scaloni suggest they have only gotten better since Qatar. Poland's challenge remains the same — they lack the midfield quality to compete with Argentina for sustained periods, and their defensive approach leaves Lewandowski isolated.\n\nExpect Argentina to control possession, probe patiently, and eventually break through. A first-half goal from a set piece or a piece of Messi magic, followed by a second in the second half when Poland are forced to push forward, feels like the most likely pathway.\n\nLewandowski will fight. He will hold the ball up, he will create moments. But his legs are no longer those of the devastating striker who terrorized the Bundesliga. The clock ticks for both Messi and Lewandowski — but Messi's runs out on his own terms.",
+    "confidence": 68,
+    "narrative": "The 2022 script will likely repeat itself, though the path will be more treacherous. Argentina's 10 wins in 11, their March demolition of Zambia, and the continued evolution of their system under Scaloni suggest they remain the superior side. But Romero's absence introduces a variable that did not exist in Qatar — a physical vulnerability that Lewandowski, for all his aging legs, is perfectly equipped to exploit.\n\nExpect a more competitive first half than 2022, with Poland's physical approach creating problems for Argentina's reshuffled center-backs. Lewandowski will win aerial duels, he will hold the ball up, he will create moments of panic. But Argentina's midfield superiority — Fernandez and Mac Allister controlling the tempo, Messi finding the pockets — will eventually tell.\n\nA first-half goal from a set piece or a piece of Messi magic, followed by a second in the second half when Poland are forced to push forward, feels like the most likely pathway. But the margin of control that Argentina enjoyed in 2022 will be thinner, and Lewandowski may yet write one final World Cup chapter.\n\nThe clock ticks for both Messi and Lewandowski — but Messi's runs out on his own terms.",
     "alternativeScenarios": [
       {
         "scenario": "Argentina 1-1 Poland",
-        "probability": 18,
-        "reasoning": "Lewandowski finally finds his World Cup scoring form, heading in from a Zalewski cross. Argentina equalize but cannot find a winner against a Poland side that defends for their lives. A draw that suits both teams' group mathematics."
+        "probability": 20,
+        "reasoning": "Lewandowski finally exploits the Romero-less defense, heading in from a Zalewski cross against a center-back who cannot match his aerial dominance. Argentina equalize but cannot find a winner against a Poland side defending for their lives."
       },
       {
         "scenario": "Argentina 3-1 Poland",
         "probability": 15,
-        "reasoning": "Poland score first through Lewandowski, but Argentina's response is devastating. Three unanswered goals, including a Messi goal that settles the personal rivalry with Szczesny, seal a comprehensive victory."
+        "reasoning": "Poland score first through Lewandowski, but Argentina's response is devastating. Three unanswered goals, including a Messi goal that settles the personal rivalry with Szczesny once and for all."
       }
     ]
   },
 
-  "closingLine": "In 2022, Szczesny saved Messi's penalty and still lost 2-0. The arithmetic of Argentina versus Poland is rarely kind to the Poles. But as long as Lewandowski walks onto the pitch, Poland will believe."
+  "closingLine": "In 2022, Szczesny saved Messi's penalty and still lost 2-0. This time, Argentina arrive without Romero, and Lewandowski arrives with one last chance to write a World Cup legacy worthy of his name. The arithmetic may be the same. The drama will be greater."
 }

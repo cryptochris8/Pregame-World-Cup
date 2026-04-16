@@ -4,55 +4,55 @@
   "team2Code": "BRA",
   "team1Name": "Argentina",
   "team2Name": "Brazil",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
   "headline": "The Eternal Rivalry Meets Its Greatest Chapter",
-  "subheadline": "Messi's defending champions face a desperate Brazil in what could be the defining match of the group stage",
+  "subheadline": "Messi's defending champions face a desperate Brazil in what could be the defining match of the group stage — with Argentina's defensive crisis adding fuel to the fire",
 
-  "openingNarrative": "There are football matches, and then there is Argentina versus Brazil. This is not merely a game — it is a 111-chapter novel written in sweat, tears, and moments of pure genius that have defined South American football for over a century. When these two sides meet at MetLife Stadium, they carry with them the weight of 8 World Cup trophies, generations of rivalry, and a storyline so compelling that Hollywood screenwriters would reject it as too dramatic.\n\nArgentina arrive as defending world champions, their crown burnished by that unforgettable night in Lusail. Lionel Messi, at 38, walks into what is almost certainly his final World Cup — not as a man chasing immortality, but as one defending it. Brazil, meanwhile, haven't lifted the trophy since 2002. Twenty-four years of hurt for a nation that considers anything less than glory a national crisis. Dorival Júnior's rebuilt squad is young, hungry, and carrying the burden of a country that demands nothing less than redemption.",
+  "openingNarrative": "There are football matches, and then there is Argentina versus Brazil. This is not merely a game — it is a 111-chapter novel written in sweat, tears, and moments of pure genius that have defined South American football for over a century. When these two sides meet at MetLife Stadium, they carry with them the weight of 8 World Cup trophies, generations of rivalry, and a storyline so compelling that Hollywood screenwriters would reject it as too dramatic.\n\nArgentina arrive as defending world champions in devastating recent form — 10 wins in their last 11 matches, including a 5-0 destruction of Zambia in March where Messi contributed a goal and an assist, and a professional 2-1 victory over Mauritania. But the champions carry a wound that Brazil will smell from across the pitch: Cristian Romero's cruciate ligament tear on April 12 has ripped the heart out of Argentina's defense. The aggressive, ball-carrying center-back who set the tone for Scaloni's high press is almost certainly gone for the tournament. It is the kind of loss that reshapes a campaign.\n\nMessi, at 38 and turning 39 mid-tournament, walks into what is almost certainly his final World Cup — not as a man chasing immortality, but as one defending it. He is fully fit after recovering from a January hamstring strain, and his sharpness in the March friendlies silenced any doubts about his readiness. Brazil, meanwhile, haven't lifted the trophy since 2002. Twenty-four years of hurt for a nation that considers anything less than glory a national crisis. Dorival Junior's rebuilt squad is young, hungry, and carrying the burden of a country that demands nothing less than redemption.\n\nThe betting markets tell a fascinating story: Argentina at 8/1 to win the tournament outright, heavy favorites in Group J at -340, but facing a Brazil side with the individual talent to tear apart any defense — let alone one missing its most important defender.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a collision of philosophies refined over decades. Argentina under Scaloni have perfected the art of controlled chaos — a 4-3-3 that can compress into a defensive 4-4-2 without missing a beat, then explode into devastating counterattacks through the channels Messi still commands like a general.\n\nBrazil's evolution under Dorival has been fascinating. Gone is the heavy possession dependency of the Tite era. This Brazil presses with purpose — a 4-2-3-1 that asks Vinícius Jr. and Rodrygo to be both destroyers and creators. The key tactical battle sits in midfield: Enzo Fernández's ability to receive under pressure against Bruno Guimarães' relentless ball-winning will determine who controls the tempo.\n\nWatch Argentina's left side. Messi drifts there, pulling defenders into impossible decisions — follow him and leave space for Julián Álvarez's runs, hold position and give the greatest player of all time room to operate. Brazil's right-back will have the hardest 90 minutes of his career.",
+    "narrative": "This is a collision of philosophies refined over decades — with a new variable that changes everything. Argentina under Scaloni have perfected the art of controlled chaos — a 4-3-3 that can compress into a defensive 4-4-2 without missing a beat, then explode into devastating counterattacks through the channels Messi still commands like a general.\n\nBut the loss of Romero fundamentally alters Argentina's defensive equation. His aggressive, front-foot style allowed Scaloni to play a high line with confidence — Romero's recovery speed and willingness to engage attackers 30 yards from goal was the safety net that made Argentina's bold pressing possible. Without him, the backline must be more conservative, which in turn compresses the spaces in which Messi and Fernandez operate.\n\nBrazil's evolution under Dorival has been fascinating. Gone is the heavy possession dependency of the Tite era. This Brazil presses with purpose — a 4-2-3-1 that asks Vinicius Jr. and Rodrygo to be both destroyers and creators. The key tactical battle sits in midfield: Enzo Fernandez's ability to receive under pressure against Bruno Guimaraes' relentless ball-winning will determine who controls the tempo.\n\nWatch Argentina's reshuffled backline. Vinicius Jr.'s pace against a center-back pairing that lacks Romero's speed is the matchup that could decide this game. If Brazil can isolate their Real Madrid star against slower defenders in transition, the consequences could be devastating.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Enzo Fernández vs Bruno Guimarães — the midfield battle that decides everything"
+    "keyMatchup": "Vinicius Jr. vs Argentina's reshuffled defense — can the world's most explosive attacker exploit the gap Romero's absence leaves?"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
     "eloAnalysis": "Argentina (ELO: 1873) vs Brazil (ELO: 1820) — a 53-point gap that translates to roughly a 57% win probability for Argentina. But ELO doesn't capture the chaos coefficient of a rivalry match. In their last 10 meetings, the lower-rated team has won 4 times.",
-    "formAnalysis": "Argentina's qualifying campaign was imperious: 12 wins, 2 draws, 4 losses, +21 goal difference. They haven't lost consecutive matches in over 3 years. Brazil qualified with 9 wins but showed vulnerability — 4 losses in qualifying, including a shocking home defeat to Uruguay that sent shockwaves through Brazilian football.",
+    "formAnalysis": "Argentina's form is imperious: 10 wins in their last 11 matches, including the 4-1 demolition of Brazil in qualifying, the 5-0 thrashing of Zambia, and the 2-1 over Mauritania. Messi scored and assisted in the Zambia rout. Their CONMEBOL campaign yielded 12 wins, +21 goal difference, and 10 clean sheets. Brazil qualified with 9 wins but showed vulnerability — 4 losses in qualifying, including that 4-1 hammering by Argentina in Buenos Aires and a shocking home defeat to Uruguay.",
     "squadValueComparison": "Argentina's squad ($1.42B) vs Brazil's ($1.58B) — Brazil actually outspend Argentina on paper, but Argentina's value is concentrated in proven tournament performers. Eight of Argentina's starting XI were in the 2022 final.",
-    "injuryImpact": "Both squads enter at near full strength. Argentina's Cristian Romero carries a minor calf concern that bears monitoring. Brazil's Neymar remains a wild card — his inclusion would transform the tactical picture entirely.",
-    "bettingPerspective": "Markets have Argentina as slight favorites at -130, reflecting their champion pedigree. The draw at +240 represents genuine value — 3 of the last 7 meetings ended level.",
-    "historicalPattern": "The defending champion's curse looms large: 4 of the last 5 World Cup holders were eliminated in the group stage. Argentina's greatest challenge may not be Brazil — it may be history itself."
+    "injuryImpact": "Romero's cruciate ligament tear is the defining injury story of the tournament. Against Brazil's blistering pace — Vinicius Jr., Rodrygo, Raphinha — the loss of Argentina's fastest and most aggressive center-back could be catastrophic. Messi is fully fit, confirmed by his sharp March displays. Brazil's squad is near full strength.",
+    "bettingPerspective": "Argentina are 8/1 to win the tournament outright and -340 to top Group J. The last qualifying meeting between these sides — Argentina's 4-1 demolition in Buenos Aires — set the benchmark, but that was with Romero anchoring the defense. Without him, the dynamics shift. Markets have Argentina as slight favorites in this fixture, but the draw represents genuine value.",
+    "historicalPattern": "The defending champion's curse looms large: 4 of the last 5 World Cup holders were eliminated in the group stage. Argentina's greatest challenge may not be Brazil — it may be history itself. And Romero's absence gives history a door to walk through."
   },
 
   "playerSpotlights": [
     {
       "name": "Lionel Messi",
       "teamCode": "ARG",
-      "narrative": "Every step Messi takes at this World Cup echoes with finality. At 38, his body has made concessions — he covers less ground, presses less often — but his mind remains football's most dangerous weapon. In the 2022 final, when everything was falling apart against France, it was Messi who stood tallest. He doesn't need to dominate anymore. He needs one moment. Against Brazil, he has historically saved his best.",
-      "statline": "8 goals and 6 assists in his last 15 Argentina appearances"
+      "narrative": "Every step Messi takes at this World Cup echoes with finality. At 38, turning 39 mid-tournament, his body has made concessions — he covers less ground, presses less often — but his mind remains football's most dangerous weapon. His March form was emphatic: a goal and an assist in the 5-0 Zambia demolition proved the genius remains undimmed. In the 2022 final, when everything was falling apart against France, it was Messi who stood tallest. He doesn't need to dominate anymore. He needs one moment. Against Brazil, he has historically saved his best — and in what may be his last match against the eternal rival, the stage is set for one final masterpiece.",
+      "statline": "Fully fit. 1 goal, 1 assist vs Zambia (5-0). 10 wins in last 11 with Argentina."
     },
     {
-      "name": "Vinícius Jr.",
+      "name": "Vinicius Jr.",
       "teamCode": "BRA",
-      "narrative": "If this is Messi's farewell tour, it is Vinícius Jr.'s coronation. The Real Madrid winger has evolved from an electric but frustrating talent into the most feared attacker on the planet. His 2025-26 season — 29 goals, 14 assists — has established him as the heir to the Brazilian throne that Neymar never quite secured at a World Cup. Against Argentina, Vinícius doesn't just want to win. He wants to announce a new era.",
+      "narrative": "If this is Messi's farewell tour, it is Vinicius Jr.'s coronation. The Real Madrid winger has evolved from an electric but frustrating talent into the most feared attacker on the planet. His 2025-26 season — 29 goals, 14 assists — has established him as the heir to the Brazilian throne that Neymar never quite secured at a World Cup. Against Argentina's reshuffled defense, missing the one center-back with the pace and aggression to contain him, Vinicius senses blood. This is the matchup that could define the entire group stage.",
       "statline": "29 goals and 14 assists in 2025-26 club season"
     },
     {
-      "name": "Julián Álvarez",
+      "name": "Julian Alvarez",
       "teamCode": "ARG",
-      "narrative": "The quiet assassin of Argentine football. While the world watches Messi, Álvarez does the damage. Three goals in the 2022 knockout rounds, including a brace against Croatia, proved this is a player built for tournament football. His relentless pressing and intelligent movement make him the perfect foil for Messi's declining mobility — he runs so Messi doesn't have to.",
+      "narrative": "The quiet assassin of Argentine football. While the world watches Messi, Alvarez does the damage. Three goals in the 2022 knockout rounds, including a brace against Croatia, proved this is a player built for tournament football. His relentless pressing and intelligent movement make him the perfect foil for Messi's declining mobility — he runs so Messi doesn't have to. Against Brazil, with Argentina potentially needing to be more pragmatic without Romero, Alvarez's ability to lead the counter-attack becomes even more critical.",
       "statline": "5 World Cup goals across 2022 and qualifying"
     },
     {
       "name": "Rodrygo",
       "teamCode": "BRA",
-      "narrative": "Brazil's x-factor. Rodrygo's ability to play across the front three gives Dorival tactical flexibility that could unlock Argentina's defense. His Champions League pedigree — including that legendary double against Manchester City — means he won't freeze under the pressure of a rivalry match. If Brazil are to win, Rodrygo may need to produce another moment of magic.",
+      "narrative": "Brazil's x-factor. Rodrygo's ability to play across the front three gives Dorival tactical flexibility that could unlock Argentina's defense. His Champions League pedigree — including that legendary double against Manchester City — means he won't freeze under the pressure of a rivalry match. With Argentina's center-back pairing lacking Romero's commanding presence, Rodrygo's movement between the lines could find spaces that a fully-fit Argentine defense would have closed down.",
       "statline": "12 goals in 28 appearances for Brazil"
     }
   ],
@@ -60,21 +60,21 @@
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Argentina 2-2 Brazil",
-    "confidence": 45,
-    "narrative": "This match defies confident prediction — and that's what makes it magnificent. Argentina's champion mentality and Messi's genius collide with Brazil's desperation and generational talent. The data says Argentina should edge it. The history says expect the unexpected. The heart says neither team can afford to lose.\n\nWe see goals from both sides in a match that will be talked about for decades. Messi will create something magical. Vinícius will produce a moment of breathtaking skill. And when the final whistle blows at 2-2, both teams will know they've been in a fight worthy of football's greatest rivalry.\n\nBut here's the thing about predictions in Argentina vs Brazil — they exist only to be proven wrong.",
+    "confidence": 42,
+    "narrative": "This match defies confident prediction — and that's what makes it magnificent. Argentina's champion mentality and Messi's genius collide with Brazil's desperation and generational talent. The data says Argentina should edge it — 10 wins in 11, that 4-1 qualifying demolition still fresh in the memory. But Romero's absence changes the arithmetic in ways that numbers cannot fully capture.\n\nBrazil will target the gap. Vinicius Jr. against slower center-backs, Rodrygo drifting into the spaces that Romero would have patrolled, quick transitions designed to punish a defense still finding its shape. Argentina's response will be what it always is: Messi, Fernandez, Alvarez — the holy trinity of creativity that can outscore anyone.\n\nWe see goals from both sides in a match that will be talked about for decades. Messi will create something magical. Vinicius will produce a moment of breathtaking skill. And when the final whistle blows, both teams will know they've been in a fight worthy of football's greatest rivalry.\n\nBut here's the thing about predictions in Argentina vs Brazil — they exist only to be proven wrong.",
     "alternativeScenarios": [
       {
         "scenario": "Argentina 2-1 Brazil",
-        "probability": 25,
-        "reasoning": "Argentina's big-game experience proves decisive. They absorb early Brazilian pressure, then punish on the counter through Messi and Álvarez. Scaloni's tactical adjustments in the second half suffocate Brazil's creativity."
+        "probability": 22,
+        "reasoning": "Argentina's big-game experience proves decisive despite the defensive disruption. They absorb early Brazilian pressure, then punish on the counter through Messi and Alvarez. Scaloni's tactical adjustments compensate for Romero's absence."
       },
       {
         "scenario": "Brazil 3-1 Argentina",
-        "probability": 15,
-        "reasoning": "Brazil's pace overwhelms Argentina's aging backline. Vinícius and Rodrygo run riot, and the defending champion's curse claims another victim. This is the scenario every neutral dreams of."
+        "probability": 18,
+        "reasoning": "Brazil's pace overwhelms Argentina's weakened backline. Vinicius and Rodrygo exploit the spaces Romero's absence creates, and the defending champion's curse claims another victim. This is the scenario every neutral dreams of — and the one every Argentine fears."
       }
     ]
   },
 
-  "closingLine": "In 111 previous meetings, Argentina and Brazil have proven one thing above all else: when these two nations collide, football transcends sport. Whatever happens at MetLife Stadium, we will remember it forever."
+  "closingLine": "In 111 previous meetings, Argentina and Brazil have proven one thing above all else: when these two nations collide, football transcends sport. This time, Argentina bring the champion's crown but not their champion defender. Whatever happens at MetLife Stadium, we will remember it forever."
 }
