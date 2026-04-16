@@ -1195,13 +1195,13 @@
     "HAI": {
       "teamCode": "HAI",
       "teamName": "Haiti",
-      "coach": "TBD",
+      "coach": "Sébastien Migné",
       "preferredFormation": "4-4-2",
       "alternateFormations": [
         "4-5-1",
         "5-4-1"
       ],
-      "playingStyle": "Pragmatic and defensively compact; relies on collective organization, physical athleticism, and counter-attacking transitions",
+      "playingStyle": "Pragmatic and defensively compact; relies on collective organization, physical athleticism, and counter-attacking transitions under Migné's experienced guidance",
       "tempoRating": "Medium-Low",
       "possessionStyle": "Direct and functional; limited possession with quick transitions forward through pace and directness",
       "pressingIntensity": "Low-Medium",
@@ -1242,7 +1242,7 @@
         "Massive quality gap against most World Cup opponents",
         "Very limited squad depth and individual talent",
         "No World Cup experience since 1974",
-        "Coaching uncertainty"
+        "Migné's experience managing African nations adapting to CONCACAF style"
       ],
       "attackRating": 3,
       "defenseRating": 4,
@@ -1252,7 +1252,7 @@
     "SWE": {
       "teamCode": "SWE",
       "teamName": "Sweden",
-      "coach": "Jon Dahl Tomasson",
+      "coach": "Graham Potter",
       "preferredFormation": "4-4-2",
       "alternateFormations": [
         "4-2-3-1",
@@ -1283,10 +1283,10 @@
         "weakness": "Can be exposed by technically superior teams in midfield; full-backs occasionally caught upfield"
       },
       "keyTacticalFeatures": [
-        "Tomasson has built the team around Gyokeres' incredible form at Sporting CP",
+        "Potter has built the team around Gyokeres' incredible form at Sporting CP since taking charge in Oct 2025 (contract extended to 2030)",
         "Kulusevski's experience at Tottenham brings Premier League quality and versatility",
         "Isak's partnership with Gyokeres gives Sweden a lethal front pairing",
-        "Traditional Scandinavian organization combined with genuine attacking firepower"
+        "Potter's Premier League tactical experience combined with Scandinavian organization and genuine attacking firepower"
       ],
       "strengthsOverall": [
         "World-class striker in Gyokeres",
@@ -1364,7 +1364,7 @@
     "IRQ": {
       "teamCode": "IRQ",
       "teamName": "Iraq",
-      "coach": "Jesús Casas",
+      "coach": "Graham Arnold",
       "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-3-3",
@@ -1396,7 +1396,7 @@
         "weakness": "Limited exposure to elite European-level attackers; defensive depth is thin; can be overwhelmed by high-intensity pressing"
       },
       "keyTacticalFeatures": [
-        "Casas brings Spanish coaching methodology to a technically gifted Iraqi squad",
+        "Arnold brings Australian pragmatism and AFC tournament experience to a technically gifted Iraqi squad",
         "Iraq qualified through AFC play-offs, showing resilience and competitive spirit",
         "The 2007 Asian Cup triumph remains a source of national inspiration and belief",
         "Domestic league core supplemented by Gulf-based players provides squad cohesion"
@@ -1405,7 +1405,7 @@
         "Technical quality in midfield",
         "Strong national team identity and passionate support",
         "AFC playoff-hardened competitive mentality",
-        "Casas' structured Spanish coaching approach"
+        "Arnold's structured coaching approach and AFC experience"
       ],
       "weaknessesOverall": [
         "Limited squad depth and individual quality at the highest level",
@@ -1477,7 +1477,7 @@
     "JOR": {
       "teamCode": "JOR",
       "teamName": "Jordan",
-      "coach": "Hussein Ammouta",
+      "coach": "Jamal Sellami",
       "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-4-2",
@@ -1509,14 +1509,14 @@
         "weakness": "Limited individual quality against world-class attackers; can be too passive; depth beyond the starting XI drops significantly"
       },
       "keyTacticalFeatures": [
-        "Ammouta builds on the momentum from Jordan's historic 2024 Asian Cup final appearance",
+        "Sellami builds on the momentum from Jordan's historic 2024 Asian Cup final appearance",
         "The team's strength is collective organization rather than individual star power",
         "Al-Tamari provides the creative spark that makes counter-attacks effective",
         "Asian Cup 2024 run proved Jordan can compete with and beat highly-ranked teams"
       ],
       "strengthsOverall": [
         "2024 Asian Cup finalists - proven tournament pedigree",
-        "Strong defensive organization under Ammouta",
+        "Strong defensive organization under Sellami",
         "Collective team spirit and national identity",
         "Al-Tamari as a creative difference-maker"
       ],

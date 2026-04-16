@@ -714,7 +714,7 @@
       "B": {
         "teams": [
           {"team": "Switzerland", "code": "SUI", "odds": "+140"},
-          {"team": "Bosnia and Herzegovina", "code": "BIH", "odds": "+800"},
+          {"team": "Bosnia and Herzegovina", "code": "BIH", "odds": "+260"},
           {"team": "Canada", "code": "CAN", "odds": "+450"},
           {"team": "Qatar", "code": "QAT", "odds": "+2500"}
         ],

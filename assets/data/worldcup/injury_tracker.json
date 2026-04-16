@@ -913,17 +913,17 @@
       "country": "Bosnia and Herzegovina",
       "club": "Fenerbahce",
       "position": "Forward",
-      "injuryType": "Age-related fitness management",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "minor_concern",
+      "injuryType": "Shoulder injury (sustained vs Italy playoff, March 31)",
+      "injuryDate": "2026-03-31",
+      "expectedReturn": "Mid-May 2026 (~5-6 week recovery, no surgery required)",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Fenerbahce (Super Lig)",
-        "notes": "Played 70 minutes"
+        "date": "2026-03-31",
+        "opponent": "Italy (UEFA Play-Off Path A Final)",
+        "notes": "Sustained shoulder injury during match; Bosnia won on penalties"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Veteran striker, age 40. Still contributing at club level. Fitness management is key given his age. Bosnia's all-time top scorer and captain."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Veteran striker, age 40. Shoulder injury sustained in playoff final vs Italy on March 31. No surgery required, estimated 5-6 week recovery. Bosnia's all-time top scorer and captain. Age compounds recovery concerns."
     },
     {
       "playerName": "Ermedin Demirovic",
@@ -949,17 +949,17 @@
       "country": "Bosnia and Herzegovina",
       "club": "CSKA Moscow",
       "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Retired from international football",
+      "injuryDate": "2025-12-01",
+      "expectedReturn": "N/A - retired from international duty",
+      "availabilityStatus": "retired_international",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "CSKA Moscow (Russian Premier League)",
-        "notes": "Full match played"
+        "date": "2025-11-20",
+        "opponent": "Bosnia and Herzegovina (last international)",
+        "notes": "Final international appearance before retirement announcement"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced midfielder. Still pulling the strings from midfield. Key creative player for Bosnia and Herzegovina."
+      "source": "Multiple sources - December 2025",
+      "notes": "Announced retirement from international football in December 2025. Significant creative loss for Bosnia's midfield. Still playing at club level with CSKA Moscow."
     },
     {
       "playerName": "Luka Modric",
@@ -2137,17 +2137,17 @@
       "country": "Iran",
       "club": "AS Roma",
       "position": "Forward",
-      "injuryType": "Recurring calf/Achilles issues",
+      "injuryType": "Expelled from national team (political, not injury-related)",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit but managed",
-      "availabilityStatus": "minor_concern",
+      "expectedReturn": "N/A - removed from national team program",
+      "availabilityStatus": "removed",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "AS Roma (Serie A)",
-        "notes": "Available for selection"
+        "date": null,
+        "opponent": "N/A",
+        "notes": "Expelled by Iranian government from national team"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Has had recurring calf and Achilles problems. Currently available but fitness needs monitoring. Important striker for Iran."
+      "source": "Multiple international sources - 2026",
+      "notes": "EXPELLED by Iranian government from national team (political reasons, not injury). Massive loss: 57 goals in 91 caps. Iran loses their second-highest scorer and key attacking partner to Taremi. Still playing at club level with AS Roma."
     },
     {
       "playerName": "Akram Afif",
@@ -2551,17 +2551,17 @@
       "country": "Sweden",
       "club": "Sporting CP",
       "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Muscular issues (returned and fit)",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Returned - currently fit",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Sporting CP (Primeira Liga)",
-        "notes": "Full match played, scored twice"
+        "date": "2026-03-31",
+        "opponent": "Poland (UEFA Play-Off Path B Final)",
+        "notes": "Scored hat-trick vs Ukraine (3-1 W semi), scored winner vs Poland (3-2 W final)"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Prolific striker in outstanding form. No injury concerns. Sweden's key player and main goal threat."
+      "source": "Transfermarkt, club reports - March 2026",
+      "notes": "Had muscular issues but returned and scored vs Poland in playoff final. Hat-trick vs Ukraine in semifinal. Outstanding form. Sweden's key player and main goal threat. Monitor workload."
     },
     {
       "playerName": "Dejan Kulusevski",
@@ -2587,17 +2587,17 @@
       "country": "Sweden",
       "club": "Newcastle United",
       "position": "Forward",
-      "injuryType": "Minor hamstring tightness",
-      "injuryDate": "2026-02-10",
-      "expectedReturn": "Late February 2026",
-      "availabilityStatus": "minor_concern",
+      "injuryType": "Fractured fibula (December 2025)",
+      "injuryDate": "2025-12-15",
+      "expectedReturn": "Expected back before World Cup - recovery ongoing",
+      "availabilityStatus": "major_doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-10",
+        "date": "2025-12-15",
         "opponent": "Newcastle United (Premier League)",
-        "notes": "Substituted at half-time with hamstring tightness"
+        "notes": "Sustained fractured fibula"
       },
-      "source": "Newcastle United reports, Transfermarkt - Feb 2026",
-      "notes": "Key striker alongside Gyokeres. Minor hamstring tightness being managed. Expected fit for World Cup."
+      "source": "Newcastle United reports, Transfermarkt - April 2026",
+      "notes": "Fractured fibula in December 2025. Expected to return before the World Cup but remains a major doubt. Key striker alongside Gyokeres. Kulusevski fit and available."
     },
     {
       "playerName": "David Alaba",
@@ -2945,7 +2945,7 @@
       "playerName": "Frantzdy Pierrot",
       "teamCode": "HAI",
       "country": "Haiti",
-      "club": "Goztepe",
+      "club": "AEK Athens",
       "position": "Forward",
       "injuryType": "No current injury",
       "injuryDate": null,
@@ -2957,7 +2957,7 @@
         "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Haiti's main striker. No injury concerns."
+      "notes": "Haiti's main striker with 33 international goals. Plays for AEK Athens (updated from Goztepe). No injury concerns. Key goal threat."
     },
     {
       "playerName": "Duckens Nazon",
@@ -2975,7 +2975,7 @@
         "notes": "Full match played"
       },
       "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced forward. No injury concerns. Haiti's all-time top scorer."
+      "notes": "Experienced forward with 44 international goals, Haiti's all-time top scorer. Currently plays in Iran. No injury concerns."
     },
     {
       "playerName": "Josue Duverger",
