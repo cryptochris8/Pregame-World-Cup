@@ -254,6 +254,7 @@ class TeamLogoHelper {
         'assets/logos/pregame_logo.png',
         height: height,
         fit: BoxFit.contain,
+        semanticLabel: 'Pregame logo',
         errorBuilder: (context, error, stackTrace) {
           return Icon(
             Icons.sports_soccer,

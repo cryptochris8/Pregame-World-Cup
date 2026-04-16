@@ -257,6 +257,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 height: 160,
                                 width: 160,
                                 fit: BoxFit.contain,
+                                semanticLabel: 'Pregame logo',
                               ),
                             ),
                           ),

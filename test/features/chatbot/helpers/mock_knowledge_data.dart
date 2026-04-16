@@ -33,6 +33,7 @@ final Map<String, String> _mockAssets = {
   'assets/data/worldcup/player_name_index.json': jsonEncode(mockPlayerNameIndex),
   'assets/data/worldcup/player_profiles/usa.json': jsonEncode(mockPlayerProfilesUSA),
   'assets/data/worldcup/player_profiles/arg.json': jsonEncode(mockPlayerProfilesARG),
+  'assets/data/worldcup/elo_ratings.json': jsonEncode(mockEloRatings),
 };
 
 /// Sets up a mock binary messenger handler that serves test JSON files
@@ -623,5 +624,14 @@ final mockPlayerProfilesARG = {
       'worldCup2026Role': 'Expected to lead the line as Argentina defends their title',
       'notableFact': 'Scored 4 goals at the 2022 World Cup as a 22-year-old',
     },
+  },
+};
+
+final mockEloRatings = {
+  'metadata': {'lastUpdated': '2026-02-21'},
+  'ratings': {
+    'ARG': {'teamCode': 'ARG', 'teamName': 'Argentina', 'eloRating': 2073, 'rank': 1},
+    'FRA': {'teamCode': 'FRA', 'teamName': 'France', 'eloRating': 2048, 'rank': 2},
+    'USA': {'teamCode': 'USA', 'teamName': 'United States', 'eloRating': 1820, 'rank': 15},
   },
 };

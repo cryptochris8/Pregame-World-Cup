@@ -74,6 +74,7 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
                 height: 32,
                 width: 32,
                 fit: BoxFit.contain,
+                semanticLabel: 'Pregame logo',
               ),
             ),
             const SizedBox(width: 8),

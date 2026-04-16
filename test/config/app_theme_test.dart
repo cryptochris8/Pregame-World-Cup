@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/config/app_theme.dart';
@@ -103,7 +105,38 @@ void main() {
       });
 
       test('textTertiary is correct', () {
-        expect(AppTheme.textTertiary, const Color(0xFF94A3B8));
+        expect(AppTheme.textTertiary, const Color(0xFFA8B5C4));
+      });
+
+      test(
+          'textTertiary on backgroundDark meets WCAG AA contrast ratio >= 4.5',
+          () {
+        // WCAG 2.1 relative luminance: linearize each sRGB channel then
+        // combine with L = 0.2126*R + 0.7152*G + 0.0722*B.
+        double linearizeSrgb(int channel) {
+          final s = channel / 255.0;
+          if (s <= 0.04045) return s / 12.92;
+          return math.pow((s + 0.055) / 1.055, 2.4).toDouble();
+        }
+
+        double relativeLuminance(Color c) {
+          final r = linearizeSrgb(c.red.toInt());
+          final g = linearizeSrgb(c.green.toInt());
+          final b = linearizeSrgb(c.blue.toInt());
+          return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        }
+
+        final lumFg = relativeLuminance(AppTheme.textTertiary);
+        final lumBg = relativeLuminance(AppTheme.backgroundDark);
+
+        final lighter = lumFg > lumBg ? lumFg : lumBg;
+        final darker = lumFg > lumBg ? lumBg : lumFg;
+        final contrastRatio = (lighter + 0.05) / (darker + 0.05);
+
+        expect(contrastRatio, greaterThanOrEqualTo(4.5),
+            reason:
+                'textTertiary on backgroundDark contrast ratio ($contrastRatio) '
+                'must be >= 4.5 for WCAG AA compliance');
       });
     });
 

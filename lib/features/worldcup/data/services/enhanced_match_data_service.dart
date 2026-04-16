@@ -1,6 +1,15 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/services/logging_service.dart';
+
+/// Top-level JSON decode function for use with [compute].
+///
+/// Must be top-level (not a closure or instance method) so it can be
+/// sent to a separate isolate.
+Map<String, dynamic> parseJsonMap(String jsonString) {
+  return json.decode(jsonString) as Map<String, dynamic>;
+}
 
 /// Service that loads and provides enhanced match analysis data
 /// from local JSON asset files.
@@ -106,9 +115,16 @@ class EnhancedMatchDataService {
     _eloRatings = await _loadJsonAsset('assets/data/worldcup/elo_ratings.json');
   }
 
+  /// Threshold in bytes above which JSON parsing is offloaded to a
+  /// background isolate via [compute] to avoid main-thread jank.
+  static const int _computeThreshold = 30 * 1024; // 30 KB
+
   Future<Map<String, dynamic>?> _loadJsonAsset(String path) async {
     try {
       final jsonString = await rootBundle.loadString(path);
+      if (jsonString.length > _computeThreshold) {
+        return await compute(parseJsonMap, jsonString);
+      }
       return json.decode(jsonString) as Map<String, dynamic>;
     } catch (e) {
       LoggingService.warning('Could not load $path: $e', tag: _logTag);

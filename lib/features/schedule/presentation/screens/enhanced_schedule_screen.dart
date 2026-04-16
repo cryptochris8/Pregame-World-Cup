@@ -177,6 +177,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
                 'assets/logos/pregame_logo.png',
                 height: 40,
                 fit: BoxFit.contain,
+                semanticLabel: 'Pregame logo',
                 errorBuilder: (context, error, stackTrace) {
                   return Icon(Icons.sports_soccer, color: ThemeHelper.favoriteColor, size: 40);
                 },

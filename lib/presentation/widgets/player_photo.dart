@@ -52,7 +52,11 @@ class PlayerPhoto extends StatelessWidget {
       child: _buildImage(),
     );
 
-    return container;
+    return Semantics(
+      label: playerName != null ? 'Photo of $playerName' : 'Player photo',
+      image: true,
+      child: container,
+    );
   }
 
   Widget _buildImage() {

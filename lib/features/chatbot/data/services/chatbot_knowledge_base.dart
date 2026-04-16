@@ -1,7 +1,18 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../worldcup/data/services/enhanced_match_data_service.dart';
+
+/// Top-level JSON decode functions for use with [compute].
+/// Must be top-level (not closures) so they can run on a separate isolate.
+Map<String, dynamic> _parseJsonMap(String jsonString) {
+  return json.decode(jsonString) as Map<String, dynamic>;
+}
+
+List<dynamic> _parseJsonList(String jsonString) {
+  return json.decode(jsonString) as List<dynamic>;
+}
 
 /// Loads and indexes all World Cup JSON data files for the chatbot.
 ///
@@ -89,7 +100,9 @@ class ChatbotKnowledgeBase {
   Future<void> _discoverPlayerStatsFiles() async {
     try {
       final manifest = await rootBundle.loadString('AssetManifest.json');
-      final Map<String, dynamic> manifestMap = json.decode(manifest);
+      final Map<String, dynamic> manifestMap = manifest.length > _computeThreshold
+          ? await compute(_parseJsonMap, manifest)
+          : json.decode(manifest) as Map<String, dynamic>;
       _playerStatsFiles = manifestMap.keys
           .where((k) => k.startsWith('assets/data/worldcup/player_stats/') && k.endsWith('.json'))
           .toList();
@@ -120,10 +133,18 @@ class ChatbotKnowledgeBase {
     }
   }
 
+  /// Threshold in bytes above which JSON parsing is offloaded via [compute].
+  static const int _computeThreshold = 30 * 1024; // 30 KB
+
   Future<List<Map<String, dynamic>>> _loadJsonList(String path) async {
     try {
       final jsonString = await rootBundle.loadString(path);
-      final decoded = json.decode(jsonString);
+      final dynamic decoded;
+      if (jsonString.length > _computeThreshold) {
+        decoded = await compute(_parseJsonList, jsonString);
+      } else {
+        decoded = json.decode(jsonString);
+      }
       if (decoded is List) {
         return decoded.cast<Map<String, dynamic>>();
       }
@@ -137,6 +158,9 @@ class ChatbotKnowledgeBase {
   Future<Map<String, dynamic>?> _loadJsonMap(String path) async {
     try {
       final jsonString = await rootBundle.loadString(path);
+      if (jsonString.length > _computeThreshold) {
+        return await compute(_parseJsonMap, jsonString);
+      }
       return json.decode(jsonString) as Map<String, dynamic>;
     } catch (e) {
       LoggingService.warning('Could not load $path: $e', tag: _logTag);

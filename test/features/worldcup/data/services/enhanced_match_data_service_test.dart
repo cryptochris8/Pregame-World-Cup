@@ -9,6 +9,32 @@ void main() {
     service = EnhancedMatchDataService.instance;
   });
 
+  group('parseJsonMap (top-level compute helper)', () {
+    test('decodes a JSON object string into a Map', () {
+      const input = '{"key": "value", "number": 42}';
+      final result = parseJsonMap(input);
+      expect(result, isA<Map<String, dynamic>>());
+      expect(result['key'], 'value');
+      expect(result['number'], 42);
+    });
+
+    test('decodes a nested JSON object', () {
+      const input = '{"outer": {"inner": [1, 2, 3]}}';
+      final result = parseJsonMap(input);
+      expect(result['outer'], isA<Map<String, dynamic>>());
+      expect((result['outer'] as Map)['inner'], [1, 2, 3]);
+    });
+
+    test('throws FormatException on invalid JSON', () {
+      expect(() => parseJsonMap('not json'), throwsFormatException);
+    });
+
+    test('throws TypeError on non-map JSON', () {
+      // A JSON array is valid JSON but not a Map — should throw a cast error.
+      expect(() => parseJsonMap('[1, 2, 3]'), throwsA(isA<TypeError>()));
+    });
+  });
+
   group('getSquadValue', () {
     test('returns null when not initialized', () {
       expect(service.getSquadValue('USA'), isNull);

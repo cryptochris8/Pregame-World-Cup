@@ -39,7 +39,7 @@ class AppTheme {
   static const Color textWhite = Color(0xFFFFFFFF); // Pure white text
   static const Color textLight = Color(0xFFF1F5F9); // Light text
   static const Color textSecondary = Color(0xFFCBD5E1); // Secondary text
-  static const Color textTertiary = Color(0xFF94A3B8); // Tertiary text
+  static const Color textTertiary = Color(0xFFA8B5C4); // Tertiary text (WCAG AA 4.5:1 on backgroundDark)
   
   // Semantic colors
   static const Color successColor = Color(0xFF059669); // Green success

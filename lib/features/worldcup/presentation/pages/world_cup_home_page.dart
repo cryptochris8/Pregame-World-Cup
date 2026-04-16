@@ -121,6 +121,7 @@ class WorldCupDashboardPage extends StatelessWidget {
               Image.asset(
                 'assets/images/worldcup_logo.png',
                 height: 32,
+                semanticLabel: 'World Cup 2026 logo',
                 errorBuilder: (_, __, ___) => const Icon(Icons.sports_soccer),
               ),
               const SizedBox(width: 8),

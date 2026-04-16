@@ -1,7 +1,13 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:pregame_world_cup/core/services/logging_service.dart';
 import '../../domain/entities/fan_zone_guide.dart';
+
+/// Top-level JSON decode function for use with [compute].
+Map<String, dynamic> _parseJsonMap(String jsonString) {
+  return json.decode(jsonString) as Map<String, dynamic>;
+}
 
 /// Service for loading cross-border travel intelligence from locally-bundled JSON.
 ///
@@ -28,7 +34,10 @@ class FanZoneGuideService {
 
     try {
       final jsonString = await rootBundle.loadString(_assetPath);
-      final data = json.decode(jsonString) as Map<String, dynamic>;
+      // fan_zone_guide.json is ~50 KB; decode off the main isolate.
+      final data = jsonString.length > 30 * 1024
+          ? await compute(_parseJsonMap, jsonString)
+          : json.decode(jsonString) as Map<String, dynamic>;
       final cities = data['cities'] as List<dynamic>;
       _cache = cities
           .map((c) => FanZoneGuide.fromJson(c as Map<String, dynamic>))

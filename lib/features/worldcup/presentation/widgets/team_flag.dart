@@ -75,12 +75,20 @@ class TeamFlag extends StatelessWidget {
 
   Widget _buildFlagImage() {
     if (flagUrl != null && flagUrl!.isNotEmpty) {
-      return CachedNetworkImage(
+      final image = CachedNetworkImage(
         imageUrl: flagUrl!,
         fit: BoxFit.cover,
         placeholder: (context, url) => _buildPlaceholder(),
         errorWidget: (context, url, error) => _buildPlaceholder(),
       );
+      if (teamCode != null) {
+        return Semantics(
+          label: '$teamCode flag',
+          image: true,
+          child: image,
+        );
+      }
+      return image;
     }
 
     return _buildPlaceholder();

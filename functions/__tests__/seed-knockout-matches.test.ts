@@ -105,7 +105,7 @@ describe("seed-knockout-matches", () => {
     expect(docs[2].id).toBe("F-01");
   });
 
-  it("should pass entire match object as document data", async () => {
+  it("should pass match object with synthesized dateTime as document data", async () => {
     mockParseArgs.mockReturnValue({ dryRun: false, clear: false, verbose: false });
     const match = {
       matchId: "R32-01",
@@ -113,6 +113,7 @@ describe("seed-knockout-matches", () => {
       homeTeam: "1A",
       awayTeam: "2B",
       date: "2026-07-05",
+      time: "18:00",
       venue: "SoFi Stadium",
     };
     mockReadJsonFile.mockReturnValue([match]);
@@ -122,7 +123,10 @@ describe("seed-knockout-matches", () => {
     await new Promise((r) => setTimeout(r, 100));
 
     const docs = mockBatchWrite.mock.calls[0][2];
-    expect(docs[0].data).toEqual(match);
+    expect(docs[0].data).toEqual({
+      ...match,
+      dateTime: "2026-07-05T18:00:00",
+    });
   });
 
   it("should clear worldcup_matches when --clear is set", async () => {
@@ -170,6 +174,50 @@ describe("seed-knockout-matches", () => {
     await new Promise((r) => setTimeout(r, 100));
 
     expect(mockBatchWrite).toHaveBeenCalledWith(mockDb, "worldcup_matches", [], false);
+  });
+
+  it("should synthesize dateTime from date and time fields", async () => {
+    mockParseArgs.mockReturnValue({ dryRun: false, clear: false, verbose: false });
+    mockReadJsonFile.mockReturnValue([
+      { matchId: "R32-01", date: "2026-06-28", time: "15:00", venue: "SoFi Stadium" },
+      { matchId: "R32-02", date: "2026-06-29", time: "16:30", venue: "Gillette Stadium" },
+    ]);
+    mockBatchWrite.mockResolvedValue(2);
+
+    runSeed();
+    await new Promise((r) => setTimeout(r, 100));
+
+    const docs = mockBatchWrite.mock.calls[0][2];
+    expect(docs[0].data.dateTime).toBe("2026-06-28T15:00:00");
+    expect(docs[1].data.dateTime).toBe("2026-06-29T16:30:00");
+  });
+
+  it("should synthesize dateTime with midnight when only date is provided", async () => {
+    mockParseArgs.mockReturnValue({ dryRun: false, clear: false, verbose: false });
+    mockReadJsonFile.mockReturnValue([
+      { matchId: "QF-01", date: "2026-07-04" },
+    ]);
+    mockBatchWrite.mockResolvedValue(1);
+
+    runSeed();
+    await new Promise((r) => setTimeout(r, 100));
+
+    const docs = mockBatchWrite.mock.calls[0][2];
+    expect(docs[0].data.dateTime).toBe("2026-07-04T00:00:00");
+  });
+
+  it("should not add dateTime when date is missing", async () => {
+    mockParseArgs.mockReturnValue({ dryRun: false, clear: false, verbose: false });
+    mockReadJsonFile.mockReturnValue([
+      { matchId: "TBD-01", time: "15:00" },
+    ]);
+    mockBatchWrite.mockResolvedValue(1);
+
+    runSeed();
+    await new Promise((r) => setTimeout(r, 100));
+
+    const docs = mockBatchWrite.mock.calls[0][2];
+    expect(docs[0].data.dateTime).toBeUndefined();
   });
 
   it("should handle all knockout rounds", async () => {

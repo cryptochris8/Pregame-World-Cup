@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
@@ -8,13 +9,27 @@ import '../widgets/widgets.dart';
 
 /// Matches tab content for the World Cup home screen.
 /// Displays a date picker, filter chips, and a scrollable list of matches.
-class MatchesTab extends StatelessWidget {
+class MatchesTab extends StatefulWidget {
   final void Function(WorldCupMatch) onMatchTap;
 
   const MatchesTab({super.key, required this.onMatchTap});
 
-  /// Calculate match counts per date for the date picker
+  @override
+  State<MatchesTab> createState() => _MatchesTabState();
+}
+
+class _MatchesTabState extends State<MatchesTab> {
+  /// Cached match counts per date for the date picker.
+  /// Only recalculated when the matches list reference changes.
+  Map<DateTime, int>? _cachedMatchCounts;
+  List<WorldCupMatch>? _cachedMatchesRef;
+
+  /// Calculate match counts per date for the date picker, with caching.
   Map<DateTime, int> _calculateMatchCounts(List<WorldCupMatch> matches) {
+    // Return cached result if the matches list is the same reference
+    if (identical(matches, _cachedMatchesRef) && _cachedMatchCounts != null) {
+      return _cachedMatchCounts!;
+    }
     final Map<DateTime, int> counts = {};
     for (final match in matches) {
       if (match.dateTime != null) {
@@ -28,6 +43,8 @@ class MatchesTab extends StatelessWidget {
         counts[dateOnly] = (counts[dateOnly] ?? 0) + 1;
       }
     }
+    _cachedMatchesRef = matches;
+    _cachedMatchCounts = counts;
     return counts;
   }
 
@@ -35,6 +52,16 @@ class MatchesTab extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return BlocBuilder<MatchListCubit, MatchListState>(
+      buildWhen: (previous, current) =>
+          previous.matches != current.matches ||
+          previous.filteredMatches != current.filteredMatches ||
+          previous.filter != current.filter ||
+          previous.selectedDate != current.selectedDate ||
+          previous.isLoading != current.isLoading ||
+          previous.errorMessage != current.errorMessage ||
+          previous.liveCount != current.liveCount ||
+          previous.upcomingCount != current.upcomingCount ||
+          previous.completedCount != current.completedCount,
       builder: (context, matchState) {
         if (matchState.isLoading) {
           return const Center(
@@ -70,12 +97,19 @@ class MatchesTab extends StatelessWidget {
           );
         }
 
-        // Calculate match counts for date picker
+        // Calculate match counts for date picker (cached)
         final matchCounts = _calculateMatchCounts(matchState.matches);
 
         return BlocBuilder<FavoritesCubit, FavoritesState>(
+          buildWhen: (previous, current) =>
+              !listEquals(
+                previous.preferences.favoriteMatchIds,
+                current.preferences.favoriteMatchIds,
+              ),
           builder: (context, favoritesState) {
             return BlocBuilder<PredictionsCubit, PredictionsState>(
+              buildWhen: (previous, current) =>
+                  previous.predictions != current.predictions,
               builder: (context, predictionsState) {
                 // Get favorite match count
                 final favoriteMatchIds = favoritesState.preferences.favoriteMatchIds;
@@ -161,7 +195,7 @@ class MatchesTab extends StatelessWidget {
                                   final match = displayMatches[index];
                                   return MatchCard(
                                     match: match,
-                                    onTap: () => onMatchTap(match),
+                                    onTap: () => widget.onMatchTap(match),
                                     isFavorite: favoritesState.isMatchFavorite(match.matchId),
                                     onFavoriteToggle: () => context
                                         .read<FavoritesCubit>()

@@ -39,16 +39,20 @@ class ManagerPhoto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: circular ? BoxShape.circle : BoxShape.rectangle,
-        borderRadius: circular ? null : BorderRadius.circular(8),
-        color: Colors.grey[200],
+    return Semantics(
+      label: managerName != null ? 'Photo of $managerName' : 'Manager photo',
+      image: true,
+      child: Container(
+        width: size,
+        height: size,
+        decoration: BoxDecoration(
+          shape: circular ? BoxShape.circle : BoxShape.rectangle,
+          borderRadius: circular ? null : BorderRadius.circular(8),
+          color: Colors.grey[200],
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: _buildImage(),
       ),
-      clipBehavior: Clip.antiAlias,
-      child: _buildImage(),
     );
   }
 

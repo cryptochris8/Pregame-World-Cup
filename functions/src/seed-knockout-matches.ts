@@ -27,10 +27,17 @@ async function seedKnockoutMatches() {
     await clearCollection(db, COLLECTION, dryRun);
   }
 
-  const docs = matches.map((m) => ({
-    id: m.matchId,
-    data: m,
-  }));
+  const docs = matches.map((m) => {
+    // Combine separate "date" and "time" fields into a "dateTime" ISO string
+    // so the Flutter app's WorldCupMatch.fromFirestore() can parse it.
+    const data = { ...m };
+    if (data.date && data.time) {
+      data.dateTime = `${data.date}T${data.time}:00`;
+    } else if (data.date) {
+      data.dateTime = `${data.date}T00:00:00`;
+    }
+    return { id: m.matchId, data };
+  });
 
   const count = await batchWrite(db, COLLECTION, docs, dryRun);
 
