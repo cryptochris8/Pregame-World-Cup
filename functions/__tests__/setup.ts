@@ -14,6 +14,7 @@ process.env.SPORTSDATA_KEY = 'test-sportsdata-key';
 process.env.PLACES_API_KEY = 'test-places-key';
 process.env.STRIPE_SECRET_KEY = 'sk_test_mock_key';
 process.env.STRIPE_WC_WEBHOOK_SECRET = 'whsec_test_mock_secret';
+process.env.ZAPIER_MCP_URL = 'https://zapier.test/webhook';
 process.env.STRIPE_FAN_PASS_PRICE_ID = 'price_test_fan_pass';
 process.env.STRIPE_SUPERFAN_PASS_PRICE_ID = 'price_test_superfan_pass';
 process.env.STRIPE_VENUE_PREMIUM_PRICE_ID = 'price_test_venue_premium';

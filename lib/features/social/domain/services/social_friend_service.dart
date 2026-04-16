@@ -203,8 +203,14 @@ class SocialFriendService {
           connectionId: doc.id,
           fromUserId: data['fromUserId'],
           toUserId: data['toUserId'],
-          type: ConnectionType.values.firstWhere((e) => e.name == data['type']),
-          status: ConnectionStatus.values.firstWhere((e) => e.name == data['status']),
+          type: ConnectionType.values.firstWhere(
+            (e) => e.name == data['type'],
+            orElse: () => ConnectionType.friend,
+          ),
+          status: ConnectionStatus.values.firstWhere(
+            (e) => e.name == data['status'],
+            orElse: () => ConnectionStatus.pending,
+          ),
           createdAt: (data['createdAt'] as Timestamp).toDate(),
           acceptedAt: data['acceptedAt'] != null
               ? (data['acceptedAt'] as Timestamp).toDate()
@@ -516,8 +522,14 @@ class SocialFriendService {
         connectionId: doc.id,
         fromUserId: data['fromUserId'],
         toUserId: data['toUserId'],
-        type: ConnectionType.values.firstWhere((e) => e.name == data['type']),
-        status: ConnectionStatus.values.firstWhere((e) => e.name == data['status']),
+        type: ConnectionType.values.firstWhere(
+          (e) => e.name == data['type'],
+          orElse: () => ConnectionType.friend,
+        ),
+        status: ConnectionStatus.values.firstWhere(
+          (e) => e.name == data['status'],
+          orElse: () => ConnectionStatus.pending,
+        ),
         createdAt: (data['createdAt'] as Timestamp).toDate(),
         acceptedAt: data['acceptedAt'] != null
             ? (data['acceptedAt'] as Timestamp).toDate()

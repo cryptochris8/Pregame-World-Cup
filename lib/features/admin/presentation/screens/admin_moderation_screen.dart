@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../injection_container.dart';
 
@@ -28,12 +29,21 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
   Future<void> _loadReports() async {
     setState(() => _isLoading = true);
 
-    final reports = await _adminService.getPendingReports();
+    try {
+      final reports = await _adminService.getPendingReports();
 
-    setState(() {
-      _reports = reports;
-      _isLoading = false;
-    });
+      if (!mounted) return;
+      setState(() {
+        _reports = reports;
+        _isLoading = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to load reports: $e')),
+      );
+    }
   }
 
   @override
@@ -53,7 +63,7 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
         ],
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
           : _reports.isEmpty
               ? Center(
                   child: Column(
@@ -328,18 +338,25 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
   }
 
   Future<void> _dismissReport(Report report) async {
-    final success = await _adminService.resolveReport(
-      report.reportId,
-      ModerationAction.none,
-      'Report dismissed - no violation found',
-    );
+    try {
+      final success = await _adminService.resolveReport(
+        report.reportId,
+        ModerationAction.none,
+        'Report dismissed - no violation found',
+      );
 
-    if (success && mounted) {
-      setState(() {
-        _reports.removeWhere((r) => r.reportId == report.reportId);
-      });
+      if (success && mounted) {
+        setState(() {
+          _reports.removeWhere((r) => r.reportId == report.reportId);
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context).reportDismissed)),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context).reportDismissed)),
+        SnackBar(content: Text('Failed to dismiss report: $e')),
       );
     }
   }
@@ -347,18 +364,25 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
   Future<void> _warnUser(Report report) async {
     if (report.contentOwnerId == null) return;
 
-    final success = await _adminService.resolveReport(
-      report.reportId,
-      ModerationAction.warning,
-      'Warning issued to user',
-    );
+    try {
+      final success = await _adminService.resolveReport(
+        report.reportId,
+        ModerationAction.warning,
+        'Warning issued to user',
+      );
 
-    if (success && mounted) {
-      setState(() {
-        _reports.removeWhere((r) => r.reportId == report.reportId);
-      });
+      if (success && mounted) {
+        setState(() {
+          _reports.removeWhere((r) => r.reportId == report.reportId);
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context).warningIssued)),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context).warningIssued)),
+        SnackBar(content: Text('Failed to warn user: $e')),
       );
     }
   }
@@ -426,18 +450,25 @@ class _AdminModerationScreenState extends State<AdminModerationScreen> {
   }
 
   Future<void> _takeAction(Report report, ModerationAction action) async {
-    final success = await _adminService.resolveReport(
-      report.reportId,
-      action,
-      'Action taken: ${action.name}',
-    );
+    try {
+      final success = await _adminService.resolveReport(
+        report.reportId,
+        action,
+        'Action taken: ${action.name}',
+      );
 
-    if (success && mounted) {
-      setState(() {
-        _reports.removeWhere((r) => r.reportId == report.reportId);
-      });
+      if (success && mounted) {
+        setState(() {
+          _reports.removeWhere((r) => r.reportId == report.reportId);
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context).actionTaken(action.name))),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context).actionTaken(action.name))),
+        SnackBar(content: Text('Failed to take action: $e')),
       );
     }
   }

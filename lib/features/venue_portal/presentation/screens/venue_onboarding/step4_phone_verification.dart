@@ -1,3 +1,4 @@
+import '../../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../l10n/app_localizations.dart';
@@ -90,7 +91,7 @@ class _Step4PhoneVerificationState extends State<Step4PhoneVerification> {
             ),
             child: Row(
               children: [
-                const Icon(Icons.phone, color: Color(0xFFFF6B35), size: 24),
+                const Icon(Icons.phone, color: AppTheme.primaryOrange, size: 24),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
@@ -125,7 +126,7 @@ class _Step4PhoneVerificationState extends State<Step4PhoneVerification> {
                 icon: const Icon(Icons.send, size: 18),
                 label: Text(l10n.submitClaimAndSendCode),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFFF6B35),
+                  backgroundColor: AppTheme.primaryOrange,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
@@ -138,7 +139,7 @@ class _Step4PhoneVerificationState extends State<Step4PhoneVerification> {
             const Center(
               child: Padding(
                 padding: EdgeInsets.all(16),
-                child: CircularProgressIndicator(color: Color(0xFFFF6B35)),
+                child: CircularProgressIndicator(color: AppTheme.primaryOrange),
               ),
             ),
           if (isPending) ...[
@@ -159,7 +160,7 @@ class _Step4PhoneVerificationState extends State<Step4PhoneVerification> {
                 label: Text(isSending ? l10n.sendingEllipsis : l10n.sendVerificationCode),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: Colors.white70,
-                  side: const BorderSide(color: Color(0xFFFF6B35)),
+                  side: const BorderSide(color: AppTheme.primaryOrange),
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),

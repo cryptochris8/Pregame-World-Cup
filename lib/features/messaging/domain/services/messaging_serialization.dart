@@ -28,13 +28,18 @@ extension ChatJson on Chat {
   static Chat fromJson(Map<String, dynamic> json) {
     return Chat(
       chatId: json['chatId'],
-      type: ChatType.values.firstWhere((e) => e.name == json['type']),
+      type: ChatType.values.firstWhere(
+        (e) => e.name == json['type'],
+        orElse: () => ChatType.direct,
+      ),
       name: json['name'],
       description: json['description'],
       imageUrl: json['imageUrl'],
       participantIds: List<String>.from(json['participantIds'] ?? []),
       adminIds: List<String>.from(json['adminIds'] ?? []),
-      createdAt: DateTime.parse(json['createdAt']),
+      createdAt: json['createdAt'] != null
+          ? DateTime.parse(json['createdAt'])
+          : DateTime.now(),
       updatedAt: json['updatedAt'] != null ? DateTime.parse(json['updatedAt']) : null,
       lastMessageId: json['lastMessageId'],
       lastMessageContent: json['lastMessageContent'],
@@ -77,10 +82,18 @@ extension MessageJson on Message {
       senderName: json['senderName'],
       senderImageUrl: json['senderImageUrl'],
       content: json['content'],
-      type: MessageType.values.firstWhere((e) => e.name == json['type']),
-      createdAt: DateTime.parse(json['createdAt']),
+      type: MessageType.values.firstWhere(
+        (e) => e.name == json['type'],
+        orElse: () => MessageType.text,
+      ),
+      createdAt: json['createdAt'] != null
+          ? DateTime.parse(json['createdAt'])
+          : DateTime.now(),
       updatedAt: json['updatedAt'] != null ? DateTime.parse(json['updatedAt']) : null,
-      status: MessageStatus.values.firstWhere((e) => e.name == json['status']),
+      status: MessageStatus.values.firstWhere(
+        (e) => e.name == json['status'],
+        orElse: () => MessageStatus.sent,
+      ),
       replyToMessageId: json['replyToMessageId'],
       reactions: (json['reactions'] as List? ?? [])
           .map((r) => MessageReaction.fromJson(r))

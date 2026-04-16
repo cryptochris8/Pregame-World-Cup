@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../domain/services/messaging_chat_settings_service.dart';
@@ -153,7 +154,7 @@ class ChatInfoBottomSheet extends StatelessWidget {
                                           .toUpperCase()
                                       : '?',
                                   style:
-                                      TextStyle(color: Colors.brown[800]),
+                                      TextStyle(color: AppTheme.backgroundCard),
                                 )
                               : null,
                         ),
@@ -230,7 +231,7 @@ class ChatInfoBottomSheet extends StatelessWidget {
 
     return PopupMenuButton<String>(
       icon: const Icon(Icons.more_vert, color: Colors.white70),
-      color: Colors.brown[800],
+      color: AppTheme.backgroundCard,
       onSelected: (value) async {
         Navigator.pop(context);
 
@@ -330,7 +331,7 @@ class ChatInfoBottomSheet extends StatelessWidget {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Colors.brown[800],
+        backgroundColor: AppTheme.backgroundCard,
         title: const Text('Remove Member',
             style: TextStyle(color: Colors.white)),
         content: Text(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 
 import '../../../../core/services/localization_service.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -38,7 +39,7 @@ class _LanguageSelectorScreenState extends State<LanguageSelectorScreen> {
         title: Text(l10n.selectLanguage),
       ),
       body: _selectedLanguage == null
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
           : ListView(
               children: [
                 // Info banner
@@ -223,7 +224,7 @@ class LanguageSelectorTile extends StatelessWidget {
           return ListTile(
             leading: const Icon(Icons.language),
             title: Text(l10n.language),
-            trailing: const CircularProgressIndicator(),
+            trailing: const CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
           );
         }
 
@@ -270,7 +271,7 @@ class QuickLanguagePicker extends StatelessWidget {
         if (!snapshot.hasData) {
           return const SizedBox(
             height: 200,
-            child: Center(child: CircularProgressIndicator()),
+            child: Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange))),
           );
         }
 

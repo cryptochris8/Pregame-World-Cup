@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../../../config/app_theme.dart';
 
 import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -145,7 +146,7 @@ class _CalendarOptionsSheetState extends State<CalendarOptionsSheet> {
             if (_isLoading)
               const Padding(
                 padding: EdgeInsets.all(24),
-                child: CircularProgressIndicator(),
+                child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
               )
             else ...[
               _buildOption(

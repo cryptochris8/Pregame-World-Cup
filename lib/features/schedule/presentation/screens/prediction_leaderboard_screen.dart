@@ -52,12 +52,14 @@ class _PredictionLeaderboardScreenState extends State<PredictionLeaderboardScree
         userStats = await _predictionService.getUserStats(user.uid);
       }
       
+      if (!mounted) return;
       setState(() {
         _leaderboard = leaderboard;
         _userStats = userStats;
         _isLoading = false;
       });
     } catch (e) {
+      if (!mounted) return;
       setState(() => _isLoading = false);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -188,7 +189,7 @@ class _EnhancedVenueCardState extends State<EnhancedVenueCard> {
           _buildActionButton(
             icon: Icons.info,
             label: l10n.venueActionDetails,
-            color: const Color(0xFF8B4513),
+            color: AppTheme.primaryOrange,
             onTap: () => _navigateToDetails(),
           ),
           _buildActionButton(

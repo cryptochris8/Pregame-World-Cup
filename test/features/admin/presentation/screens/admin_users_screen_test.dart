@@ -493,6 +493,49 @@ void main() {
   });
 
   // ---------------------------------------------------------------------------
+  // Disposal safety
+  // ---------------------------------------------------------------------------
+
+  group('AdminUsersScreen - Disposal safety', () {
+    testWidgets('can be disposed during async user load without crashing',
+        (tester) async {
+      await seedAdmin();
+
+      // Seed a slow-loading user list by adding users that will take time
+      // The key is disposing the widget before _loadUsers completes
+      await tester.pumpWidget(buildTestWidget());
+      // Widget is now in loading state (awaiting searchUsers)
+
+      // Dispose the widget before the async operation completes
+      await tester.pumpWidget(const MaterialApp(home: Scaffold()));
+      await tester.pumpAndSettle();
+
+      // If mounted guard is missing, this would throw
+      // "setState() called after dispose()"
+    });
+
+    testWidgets('can be disposed during async search without crashing',
+        (tester) async {
+      await seedAdmin();
+
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      // Start a search
+      final textField = find.byType(TextField);
+      await tester.enterText(textField, 'test query');
+      await tester.testTextInput.receiveAction(TextInputAction.done);
+      await tester.pump();
+
+      // Dispose while search is in progress
+      await tester.pumpWidget(const MaterialApp(home: Scaffold()));
+      await tester.pumpAndSettle();
+
+      // No crash = mounted guard is working
+    });
+  });
+
+  // ---------------------------------------------------------------------------
   // Non-admin access
   // ---------------------------------------------------------------------------
 

@@ -1,3 +1,4 @@
+import '../../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../../../l10n/app_localizations.dart';
 
@@ -70,7 +71,7 @@ class OnboardingTextField extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFFFF6B35)),
+          borderSide: const BorderSide(color: AppTheme.primaryOrange),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -143,7 +144,7 @@ class NextButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: enabled ? onPressed : null,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFFFF6B35),
+          backgroundColor: AppTheme.primaryOrange,
           foregroundColor: Colors.white,
           disabledBackgroundColor: Colors.white12,
           padding: const EdgeInsets.symmetric(vertical: 16),

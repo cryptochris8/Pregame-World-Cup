@@ -322,7 +322,7 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
           // Managers list
           Expanded(
             child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
                 : _displayedManagers.isEmpty
                     ? const Center(child: Text('No managers found'))
                     : ListView.builder(
@@ -335,7 +335,7 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
                             return const Center(
                               child: Padding(
                                 padding: EdgeInsets.all(16.0),
-                                child: CircularProgressIndicator(),
+                                child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                               ),
                             );
                           }

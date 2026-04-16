@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -50,7 +51,7 @@ class VenueActionButtons extends StatelessWidget {
             context,
             icon: Icons.language,
             label: l10n.venueActionWebsite,
-            color: const Color(0xFF8B4513),
+            color: AppTheme.primaryOrange,
             onTap: () => _openWebsite(context),
           ),
           _buildActionButton(
@@ -187,7 +188,7 @@ class VenueActionButtons extends StatelessWidget {
       title: l10n.venueWebsiteTitle(venue.name),
       content: l10n.venueWebsiteComingSoon,
       icon: Icons.language,
-      iconColor: const Color(0xFF8B4513),
+      iconColor: AppTheme.primaryOrange,
     );
   }
 
@@ -360,7 +361,7 @@ class VenueActionButtons extends StatelessWidget {
             child: const Text(
               'OK',
               style: TextStyle(
-                color: Color(0xFF8B4513),
+                color: AppTheme.primaryOrange,
                 fontWeight: FontWeight.w600,
               ),
             ),

@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 
 part 'video_message.g.dart';
 
-@HiveType(typeId: 22)
+@HiveType(typeId: 56)
 class VideoMessage extends Equatable {
   @HiveField(0)
   final String messageId;

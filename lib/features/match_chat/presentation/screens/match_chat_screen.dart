@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../injection_container.dart';
 
@@ -128,7 +129,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
           },
           builder: (context, state) {
             if (state is MatchChatLoading) {
-              return const Center(child: CircularProgressIndicator());
+              return const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)));
             }
 
             if (state is MatchChatJoining) {
@@ -136,7 +137,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const CircularProgressIndicator(),
+                    const CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                     const SizedBox(height: 16),
                     Text(l10n.joiningChat),
                   ],

@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class FriendsListScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _FriendsListScreenState extends State<FriendsListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Friends'),
-        backgroundColor: const Color(0xFF2D1810),
+        backgroundColor: AppTheme.backgroundDark,
         foregroundColor: Colors.white,
       ),
       body: const Center(

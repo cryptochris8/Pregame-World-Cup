@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/user_profile.dart';
 
@@ -39,7 +40,7 @@ class FriendItemWidget extends StatelessWidget {
                     backgroundImage: friend.profileImageUrl != null
                         ? NetworkImage(friend.profileImageUrl!)
                         : null,
-                    backgroundColor: const Color(0xFF8B4513),
+                    backgroundColor: AppTheme.primaryOrange,
                     child: friend.profileImageUrl == null
                         ? Text(
                             friend.displayName.isNotEmpty
@@ -177,7 +178,7 @@ class FriendItemWidget extends StatelessWidget {
                     IconButton(
                       onPressed: onMessage,
                       icon: const Icon(Icons.message),
-                      color: const Color(0xFF8B4513),
+                      color: AppTheme.primaryOrange,
                       tooltip: 'Message',
                     ),
 

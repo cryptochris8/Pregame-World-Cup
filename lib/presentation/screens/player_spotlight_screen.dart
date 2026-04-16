@@ -421,7 +421,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
           // Players grid
           Expanded(
             child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
                 : _displayedPlayers.isEmpty
                     ? Center(child: Text(l10n.noPlayersFound))
                     : GridView.builder(
@@ -440,7 +440,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
                             return const Center(
                               child: Padding(
                                 padding: EdgeInsets.all(16.0),
-                                child: CircularProgressIndicator(),
+                                child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                               ),
                             );
                           }

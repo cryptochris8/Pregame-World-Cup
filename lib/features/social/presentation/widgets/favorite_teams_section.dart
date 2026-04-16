@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class FavoriteTeamsSection extends StatelessWidget {
@@ -71,7 +72,7 @@ class FavoriteTeamsSection extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              const Color(0xFF8B4513),
+              AppTheme.primaryOrange,
               Colors.orange[600]!,
             ],
           ),
@@ -142,7 +143,7 @@ class FavoriteTeamsSection extends StatelessWidget {
             ElevatedButton(
               onPressed: onEditTeams,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF8B4513),
+                backgroundColor: AppTheme.primaryOrange,
                 foregroundColor: Colors.white,
               ),
               child: const Text('Add Teams'),

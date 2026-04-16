@@ -900,7 +900,7 @@ void main() {
 
       test('props list contains expected fields', () {
         final match = createTestMatch();
-        expect(match.props, hasLength(8));
+        expect(match.props, hasLength(44));
         expect(match.props, contains(match.matchId));
         expect(match.props, contains(match.matchNumber));
         expect(match.props, contains(match.stage));
@@ -932,6 +932,123 @@ void main() {
       expect(MatchTimeFilter.values, contains(MatchTimeFilter.groupStage));
       expect(MatchTimeFilter.values, contains(MatchTimeFilter.knockout));
       expect(MatchTimeFilter.values, contains(MatchTimeFilter.all));
+    });
+  });
+
+  group('WorldCupMatch Equatable props', () {
+    WorldCupMatch createBaseMatch() {
+      return const WorldCupMatch(
+        matchId: 'match_1',
+        matchNumber: 1,
+        stage: MatchStage.groupStage,
+        homeTeamName: 'United States',
+        homeTeamCode: 'USA',
+        awayTeamName: 'Mexico',
+        awayTeamCode: 'MEX',
+        status: MatchStatus.inProgress,
+        homeScore: 0,
+        awayScore: 0,
+        minute: 10,
+      );
+    }
+
+    test('two identical matches are equal', () {
+      final match1 = createBaseMatch();
+      final match2 = createBaseMatch();
+
+      expect(match1, equals(match2));
+      expect(match1.hashCode, equals(match2.hashCode));
+    });
+
+    test('matches differing only in homeScore are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(homeScore: 1);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in awayScore are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(awayScore: 2);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in minute are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(minute: 45);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in addedTime are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(addedTime: 3);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in homeGoalScorers are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(homeGoalScorers: ["Pulisic 23'"]);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in awayGoalScorers are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(awayGoalScorers: ["Lozano 55'"]);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in homePenaltyScore are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(homePenaltyScore: 4);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in awayPenaltyScore are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(awayPenaltyScore: 3);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in homeExtraTimeScore are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(homeExtraTimeScore: 1);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in awayExtraTimeScore are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(awayExtraTimeScore: 2);
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in winnerTeamCode are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(winnerTeamCode: 'USA');
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in updatedAt are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(updatedAt: DateTime(2026, 6, 15));
+
+      expect(match1, isNot(equals(match2)));
+    });
+
+    test('matches differing only in status are NOT equal', () {
+      final match1 = createBaseMatch();
+      final match2 = match1.copyWith(status: MatchStatus.completed);
+
+      expect(match1, isNot(equals(match2)));
     });
   });
 }

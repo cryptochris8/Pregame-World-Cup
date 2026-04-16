@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
 import '../../../social/domain/services/social_service.dart';
@@ -174,7 +175,7 @@ class _AddMemberBottomSheetState extends State<AddMemberBottomSheet> {
                                               .toUpperCase()
                                           : '?',
                                       style: TextStyle(
-                                          color: Colors.brown[800]),
+                                          color: AppTheme.backgroundCard),
                                     )
                                   : null,
                             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../../../injection_container.dart';
@@ -36,7 +37,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
     return Container(
       height: MediaQuery.of(context).size.height * 0.8,
       decoration: BoxDecoration(
-        color: Colors.brown[900],
+        color: AppTheme.backgroundDark,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
       ),
       child: Column(
@@ -45,7 +46,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.brown[800],
+              color: AppTheme.backgroundCard,
               borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
             ),
             child: Row(
@@ -93,7 +94,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
                       )
                     : null,
                 filled: true,
-                fillColor: Colors.brown[800],
+                fillColor: AppTheme.backgroundCard,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide.none,
@@ -199,7 +200,7 @@ class _MessageSearchWidgetState extends State<MessageSearchWidget> {
         child: message.senderImageUrl == null
             ? Icon(
                 Icons.person,
-                color: Colors.brown[800],
+                color: AppTheme.backgroundCard,
               )
             : null,
       ),

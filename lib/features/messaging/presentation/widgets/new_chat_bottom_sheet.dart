@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/services/messaging_service.dart';
 import '../../../social/domain/entities/user_profile.dart';
@@ -119,7 +120,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
     return Container(
       height: MediaQuery.of(context).size.height * 0.8,
       decoration: BoxDecoration(
-        color: Colors.brown[900],
+        color: AppTheme.backgroundDark,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
       ),
       child: Column(
@@ -128,7 +129,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.brown[800],
+              color: AppTheme.backgroundCard,
               borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
             ),
             child: Row(
@@ -155,7 +156,7 @@ class _NewChatBottomSheetState extends State<NewChatBottomSheet>
 
           // Tab bar
           Container(
-            color: Colors.brown[800],
+            color: AppTheme.backgroundCard,
             child: TabBar(
               controller: _tabController,
               indicatorColor: Colors.orange[300],

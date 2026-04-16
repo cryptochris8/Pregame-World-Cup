@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/social_connection.dart';
 
@@ -41,7 +42,7 @@ class FriendRequestItemWidget extends StatelessWidget {
                 // Avatar
                 CircleAvatar(
                   radius: 20,
-                  backgroundColor: const Color(0xFF8B4513),
+                  backgroundColor: AppTheme.primaryOrange,
                   child: Text(
                     request.connectedUserName?.isNotEmpty == true
                         ? request.connectedUserName![0].toUpperCase()

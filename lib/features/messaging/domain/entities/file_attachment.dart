@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 
 part 'file_attachment.g.dart';
 
-@HiveType(typeId: 21)
+@HiveType(typeId: 55)
 class FileAttachment extends Equatable {
   @HiveField(0)
   final String fileName;

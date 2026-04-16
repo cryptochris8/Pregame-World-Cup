@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import 'venue_route_models.dart';
@@ -63,12 +64,12 @@ class VenueRouteOptionChips extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 12),
           decoration: BoxDecoration(
             color: isSelected
-                ? const Color(0xFF8B4513)
+                ? AppTheme.primaryOrange
                 : Colors.grey[100],
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
               color: isSelected
-                  ? const Color(0xFF8B4513)
+                  ? AppTheme.primaryOrange
                   : Colors.grey.withValues(alpha: 0.3),
             ),
           ),

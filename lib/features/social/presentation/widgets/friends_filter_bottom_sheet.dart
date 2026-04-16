@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 /// Enum for friend list filtering options.
@@ -60,7 +61,7 @@ class FriendsFilterBottomSheet extends StatelessWidget {
                 onFilterChanged(value!);
                 Navigator.pop(context);
               },
-              activeColor: const Color(0xFF8B4513),
+              activeColor: AppTheme.primaryOrange,
             ),
             title: Text(_getFilterTitle(filter)),
             subtitle: Text(_getFilterDescription(filter)),

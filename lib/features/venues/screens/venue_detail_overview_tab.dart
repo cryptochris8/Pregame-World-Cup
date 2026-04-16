@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../widgets/venue_operating_hours_card.dart';
@@ -82,7 +83,7 @@ class VenueDetailOverviewTab extends StatelessWidget {
       children: [
         Icon(
           icon,
-          color: const Color(0xFFFF6B35),
+          color: AppTheme.primaryOrange,
           size: 20,
         ),
         const SizedBox(width: 12),

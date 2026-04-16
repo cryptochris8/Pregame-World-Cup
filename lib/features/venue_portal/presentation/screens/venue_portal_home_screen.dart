@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
@@ -68,7 +69,7 @@ class VenuePortalHomeScreen extends StatelessWidget {
             ],
           ),
           body: state.isLoading && !state.hasEnhancement
-              ? const Center(child: CircularProgressIndicator())
+              ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
               : state.hasError
                   ? _buildErrorState(context, state)
                   : _buildDashboard(context, state),

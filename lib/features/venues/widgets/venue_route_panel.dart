@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -196,7 +197,7 @@ class _VenueRoutePanelState extends State<VenueRoutePanel>
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF2D1810),
+                        color: AppTheme.backgroundDark,
                       ),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
@@ -273,7 +274,7 @@ class _RoutePanelLoadingState extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircularProgressIndicator(),
+          CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
           SizedBox(height: 16),
           Text(
             'Calculating route...',

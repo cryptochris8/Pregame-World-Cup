@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/services/smart_venue_recommendation_service.dart';
@@ -189,13 +190,13 @@ class VenueRecommendationCard extends StatelessWidget {
         Expanded(
           child: OutlinedButton.icon(
             onPressed: () => _handleVenueSelection(context),
-            icon: const Icon(Icons.info_outline, size: 16, color: Color(0xFFFF6B35)),
+            icon: const Icon(Icons.info_outline, size: 16, color: AppTheme.primaryOrange),
             label: const Text(
               'View Details',
-              style: TextStyle(color: Color(0xFFFF6B35)),
+              style: TextStyle(color: AppTheme.primaryOrange),
             ),
             style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Color(0xFFFF6B35)),
+              side: const BorderSide(color: AppTheme.primaryOrange),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
             ),
           ),

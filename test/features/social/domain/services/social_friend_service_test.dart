@@ -905,4 +905,89 @@ void main() {
       // No assertion needed - just verifying no exception is thrown
     });
   });
+
+  // ===========================================================================
+  // firstWhere orElse fallback tests
+  // ===========================================================================
+  group('Unknown enum value fallbacks in getUserConnections', () {
+    test('defaults to ConnectionType.friend for unknown type', () async {
+      await fakeFirestore
+          .collection('social_connections')
+          .doc('conn_unknown_type')
+          .set({
+        'fromUserId': testUserId,
+        'toUserId': 'other_user',
+        'type': 'nonexistent_type',
+        'status': 'accepted',
+        'createdAt': Timestamp.fromDate(DateTime.now()),
+        'connectionSource': 'test',
+        'metadata': <String, dynamic>{},
+      });
+
+      final result = await service.getUserConnections(testUserId);
+
+      expect(result.length, equals(1));
+      expect(result.first.type, equals(ConnectionType.friend));
+    });
+
+    test('defaults to ConnectionStatus.pending for unknown status', () async {
+      await fakeFirestore
+          .collection('social_connections')
+          .doc('conn_unknown_status')
+          .set({
+        'fromUserId': testUserId,
+        'toUserId': 'other_user',
+        'type': 'friend',
+        'status': 'nonexistent_status',
+        'createdAt': Timestamp.fromDate(DateTime.now()),
+        'connectionSource': 'test',
+        'metadata': <String, dynamic>{},
+      });
+
+      final result = await service.getUserConnections(testUserId);
+
+      expect(result.length, equals(1));
+      expect(result.first.status, equals(ConnectionStatus.pending));
+    });
+
+    test('defaults to ConnectionType.friend for null type', () async {
+      await fakeFirestore
+          .collection('social_connections')
+          .doc('conn_null_type')
+          .set({
+        'fromUserId': testUserId,
+        'toUserId': 'other_user',
+        'type': null,
+        'status': 'accepted',
+        'createdAt': Timestamp.fromDate(DateTime.now()),
+        'connectionSource': 'test',
+        'metadata': <String, dynamic>{},
+      });
+
+      final result = await service.getUserConnections(testUserId);
+
+      expect(result.length, equals(1));
+      expect(result.first.type, equals(ConnectionType.friend));
+    });
+
+    test('defaults to ConnectionStatus.pending for null status', () async {
+      await fakeFirestore
+          .collection('social_connections')
+          .doc('conn_null_status')
+          .set({
+        'fromUserId': testUserId,
+        'toUserId': 'other_user',
+        'type': 'friend',
+        'status': null,
+        'createdAt': Timestamp.fromDate(DateTime.now()),
+        'connectionSource': 'test',
+        'metadata': <String, dynamic>{},
+      });
+
+      final result = await service.getUserConnections(testUserId);
+
+      expect(result.length, equals(1));
+      expect(result.first.status, equals(ConnectionStatus.pending));
+    });
+  });
 }

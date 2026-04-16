@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -543,6 +545,65 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('5/3/2026 9:05'), findsOneWidget);
+    });
+  });
+
+  group('AdminModerationScreen - Disposal safety', () {
+    testWidgets('can be disposed during async load without crashing',
+        (tester) async {
+      await seedAdmin();
+
+      // Override the mock AFTER seedAdmin to use a Completer that never completes
+      final completer = Completer<List<Report>>();
+      when(() => mockModerationService.getPendingReports(limit: any(named: 'limit')))
+          .thenAnswer((_) => completer.future);
+
+      await tester.pumpWidget(buildTestWidget());
+      // Widget is now loading (awaiting getPendingReports)
+
+      // Dispose the widget before the async operation completes
+      await tester.pumpWidget(const MaterialApp(home: Scaffold()));
+      await tester.pumpAndSettle();
+
+      // Complete the future after disposal to trigger the mounted guard
+      completer.complete(<Report>[]);
+      await tester.pumpAndSettle();
+
+      // If mounted guard is missing, this would throw
+      // "setState() called after dispose()"
+    });
+
+    testWidgets('can be disposed during report resolution without crashing',
+        (tester) async {
+      // Use a Completer that never completes to simulate a long-running operation
+      final completer = Completer<bool>();
+
+      when(() => mockModerationService.resolveReport(
+            reportId: 'report-dispose-1',
+            action: ModerationAction.none,
+            moderatorNotes: any(named: 'moderatorNotes'),
+          )).thenAnswer((_) => completer.future);
+
+      await seedAdmin(reports: [
+        createTestReport(reportId: 'report-dispose-1'),
+      ]);
+
+      await tester.pumpWidget(buildTestWidget());
+      await tester.pumpAndSettle();
+
+      // Tap Dismiss to start async resolution
+      await tester.tap(find.text('Dismiss'));
+      await tester.pump();
+
+      // Dispose while resolution is in progress
+      await tester.pumpWidget(const MaterialApp(home: Scaffold()));
+      await tester.pumpAndSettle();
+
+      // Complete the future after disposal to trigger the mounted guard
+      completer.complete(true);
+      await tester.pumpAndSettle();
+
+      // No crash = mounted guard is working
     });
   });
 

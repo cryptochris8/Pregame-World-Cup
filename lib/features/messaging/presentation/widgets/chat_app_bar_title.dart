@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/chat.dart';
 
 /// Displays the app bar title for a chat screen with avatar and member count.
@@ -28,7 +29,7 @@ class ChatAppBarTitle extends StatelessWidget {
                       : chat.type == ChatType.team
                           ? Icons.groups
                           : Icons.group,
-                  color: Colors.brown[800],
+                  color: AppTheme.backgroundCard,
                   size: 20,
                 )
               : null,

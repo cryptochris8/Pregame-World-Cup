@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
 
@@ -35,14 +36,23 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
   Future<void> _loadUsers() async {
     setState(() => _isLoading = true);
 
-    final users = await _adminService.searchUsers(
-      query: _searchController.text.isNotEmpty ? _searchController.text : null,
-    );
+    try {
+      final users = await _adminService.searchUsers(
+        query: _searchController.text.isNotEmpty ? _searchController.text : null,
+      );
 
-    setState(() {
-      _users = users;
-      _isLoading = false;
-    });
+      if (!mounted) return;
+      setState(() {
+        _users = users;
+        _isLoading = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to load users: $e')),
+      );
+    }
   }
 
   Future<void> _searchUsers(String query) async {
@@ -50,14 +60,23 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
 
     setState(() => _isLoading = true);
 
-    final users = await _adminService.searchUsers(
-      query: query.isNotEmpty ? query : null,
-    );
+    try {
+      final users = await _adminService.searchUsers(
+        query: query.isNotEmpty ? query : null,
+      );
 
-    setState(() {
-      _users = users;
-      _isLoading = false;
-    });
+      if (!mounted) return;
+      setState(() {
+        _users = users;
+        _isLoading = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to search users: $e')),
+      );
+    }
   }
 
   @override
@@ -99,7 +118,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
           // User list
           Expanded(
             child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
                 : _users.isEmpty
                     ? Center(
                         child: Text(

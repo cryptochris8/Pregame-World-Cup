@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import 'venue_route_models.dart';
@@ -31,7 +32,7 @@ class VenueRouteDetailsSection extends StatelessWidget {
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF2D1810),
+              color: AppTheme.backgroundDark,
             ),
           ),
           const SizedBox(height: 12),
@@ -58,15 +59,15 @@ class VenueRouteDetailsSection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF8B4513).withValues(alpha: 0.05),
+        color: AppTheme.primaryOrange.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFF8B4513).withValues(alpha: 0.1)),
+        border: Border.all(color: AppTheme.primaryOrange.withValues(alpha: 0.1)),
       ),
       child: Row(
         children: [
           Icon(
             _getRouteIcon(),
-            color: const Color(0xFF8B4513),
+            color: AppTheme.primaryOrange,
             size: 24,
           ),
           const SizedBox(width: 12),
@@ -79,7 +80,7 @@ class VenueRouteDetailsSection extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
                 Text(
@@ -204,7 +205,7 @@ class _RouteStepTile extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
                 if (step.distance != null) ...[

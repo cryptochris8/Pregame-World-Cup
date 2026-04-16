@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../core/ai/entities/ai_recommendation.dart';
@@ -495,7 +496,7 @@ class _EnhancedAIVenueRecommendationsWidgetState
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
               ),

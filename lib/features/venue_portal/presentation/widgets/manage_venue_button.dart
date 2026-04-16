@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -91,7 +92,7 @@ class ManageVenueButton extends StatelessWidget {
           child: Ink(
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFFFF6B35), Color(0xFFFFA726)],
+                colors: [AppTheme.primaryOrange, Color(0xFFFFA726)],
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
               ),
@@ -348,7 +349,7 @@ class ManageVenueButton extends StatelessWidget {
                           selectedReason = selected ? reason : null;
                         });
                       },
-                      selectedColor: const Color(0xFFFF6B35),
+                      selectedColor: AppTheme.primaryOrange,
                       labelStyle: TextStyle(
                         color: selectedReason == reason ? Colors.white : Colors.white70,
                       ),
@@ -408,7 +409,7 @@ class ManageVenueButton extends StatelessWidget {
                           }
                         },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFFF6B35),
+                    backgroundColor: AppTheme.primaryOrange,
                     foregroundColor: Colors.white,
                     disabledBackgroundColor: Colors.white12,
                     padding: const EdgeInsets.symmetric(vertical: 16),

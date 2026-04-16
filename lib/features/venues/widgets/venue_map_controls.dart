@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../l10n/app_localizations.dart';
@@ -79,7 +80,7 @@ class VenueMapBottomControls extends StatelessWidget {
           children: [
             Icon(
               icon,
-              color: isActive ? Colors.white : const Color(0xFF2D1810),
+              color: isActive ? Colors.white : AppTheme.backgroundDark,
               size: 20,
             ),
             const SizedBox(width: 8),
@@ -88,7 +89,7 @@ class VenueMapBottomControls extends StatelessWidget {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
-                color: isActive ? Colors.white : const Color(0xFF2D1810),
+                color: isActive ? Colors.white : AppTheme.backgroundDark,
               ),
             ),
           ],
@@ -120,7 +121,7 @@ class VenueMapFloatingButtons extends StatelessWidget {
             heroTag: "venue_map_zoom_fab",
             mini: true,
             backgroundColor: Colors.white,
-            foregroundColor: const Color(0xFF2D1810),
+            foregroundColor: AppTheme.backgroundDark,
             onPressed: onZoomToFit,
             child: const Icon(Icons.center_focus_strong),
           ),
@@ -129,7 +130,7 @@ class VenueMapFloatingButtons extends StatelessWidget {
             heroTag: "venue_map_stadium_fab",
             mini: true,
             backgroundColor: Colors.white,
-            foregroundColor: const Color(0xFF2D1810),
+            foregroundColor: AppTheme.backgroundDark,
             onPressed: onFocusStadium,
             child: const Icon(Icons.stadium),
           ),

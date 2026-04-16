@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 
 import '../../domain/entities/user_sanction.dart';
 import '../../domain/services/moderation_service.dart';
@@ -206,7 +207,7 @@ class _ModerationStatusCardState extends State<ModerationStatusCard> {
   Widget build(BuildContext context) {
     if (_isLoading) {
       return const Center(
-        child: CircularProgressIndicator(),
+        child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
       );
     }
 

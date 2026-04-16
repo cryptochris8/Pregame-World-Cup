@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../injection_container.dart';
 
@@ -79,7 +80,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       return Scaffold(
         appBar: AppBar(title: Text(AppLocalizations.of(context).admin)),
         body: const Center(
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
         ),
       );
     }
@@ -108,7 +109,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
 
             // Stats
             if (_isLoading)
-              const Center(child: CircularProgressIndicator())
+              const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
             else if (_error != null)
               _buildErrorCard(theme)
             else

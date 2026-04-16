@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
@@ -81,7 +82,7 @@ class VenueMapCategoryFilter extends StatelessWidget {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: isSelected ? Colors.white : const Color(0xFF2D1810),
+                color: isSelected ? Colors.white : AppTheme.backgroundDark,
               ),
             ),
           ],

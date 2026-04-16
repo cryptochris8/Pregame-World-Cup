@@ -8,7 +8,7 @@ part of 'game_intelligence.dart';
 
 class GameIntelligenceAdapter extends TypeAdapter<GameIntelligence> {
   @override
-  final int typeId = 21;
+  final int typeId = 53;
 
   @override
   GameIntelligence read(BinaryReader reader) {
@@ -84,7 +84,7 @@ class GameIntelligenceAdapter extends TypeAdapter<GameIntelligence> {
 
 class VenueRecommendationsAdapter extends TypeAdapter<VenueRecommendations> {
   @override
-  final int typeId = 22;
+  final int typeId = 54;
 
   @override
   VenueRecommendations read(BinaryReader reader) {

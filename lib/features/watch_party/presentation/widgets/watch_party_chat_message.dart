@@ -306,7 +306,7 @@ class WatchPartyChatMessage extends StatelessWidget {
           height: 150,
           color: AppTheme.backgroundElevated,
           child: const Center(
-            child: CircularProgressIndicator(),
+            child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
           ),
         ),
         errorWidget: (context, url, error) => Container(

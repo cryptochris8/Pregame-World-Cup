@@ -1,3 +1,4 @@
+import '../../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../l10n/app_localizations.dart';
@@ -39,7 +40,7 @@ class Step2VenueConfirmation extends StatelessWidget {
             decoration: BoxDecoration(
               color: const Color(0xFF334155),
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: const Color(0xFFFF6B35), width: 1),
+              border: Border.all(color: AppTheme.primaryOrange, width: 1),
             ),
             child: Row(
               children: [
@@ -47,12 +48,12 @@ class Step2VenueConfirmation extends StatelessWidget {
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFFF6B35).withValues(alpha: 0.2),
+                    color: AppTheme.primaryOrange.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(
                     Icons.store,
-                    color: Color(0xFFFF6B35),
+                    color: AppTheme.primaryOrange,
                     size: 24,
                   ),
                 ),
@@ -116,7 +117,7 @@ class Step2VenueConfirmation extends StatelessWidget {
                       state.claimInfo.copyWith(authorizedConfirmed: v ?? false),
                     );
                   },
-                  activeColor: const Color(0xFFFF6B35),
+                  activeColor: AppTheme.primaryOrange,
                 ),
                 Expanded(
                   child: Padding(

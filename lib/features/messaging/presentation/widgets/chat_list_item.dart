@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/chat.dart';
 
 class ChatListItem extends StatelessWidget {
@@ -30,7 +31,7 @@ class ChatListItem extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.brown[800]?.withValues(alpha:0.3),
+              color: AppTheme.backgroundCard.withValues(alpha:0.3),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: Colors.orange[300]?.withValues(alpha:0.2) ?? Colors.transparent,
@@ -104,7 +105,7 @@ class ChatListItem extends StatelessWidget {
                               child: Text(
                                 unreadCount > 99 ? '99+' : unreadCount.toString(),
                                 style: TextStyle(
-                                  color: Colors.brown[800],
+                                  color: AppTheme.backgroundCard,
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -134,7 +135,7 @@ class ChatListItem extends StatelessWidget {
         child: chat.imageUrl == null
             ? Icon(
                 Icons.person,
-                color: Colors.brown[800],
+                color: AppTheme.backgroundCard,
                 size: 24,
               )
             : null,
@@ -148,7 +149,7 @@ class ChatListItem extends StatelessWidget {
         child: chat.imageUrl == null
             ? Icon(
                 chat.type == ChatType.team ? Icons.groups : Icons.group,
-                color: Colors.brown[800],
+                color: AppTheme.backgroundCard,
                 size: 24,
               )
             : null,

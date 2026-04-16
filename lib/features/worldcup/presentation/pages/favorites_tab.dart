@@ -98,7 +98,7 @@ class FavoritesTab extends StatelessWidget {
                             return const Center(
                               child: Padding(
                                 padding: EdgeInsets.all(32),
-                                child: CircularProgressIndicator(),
+                                child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                               ),
                             );
                           }
@@ -146,7 +146,7 @@ class FavoritesTab extends StatelessWidget {
                         return const Center(
                           child: Padding(
                             padding: EdgeInsets.all(32),
-                            child: CircularProgressIndicator(),
+                            child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                           ),
                         );
                       }

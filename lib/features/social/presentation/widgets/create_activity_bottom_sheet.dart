@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -189,7 +190,7 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
                 ElevatedButton(
                   onPressed: _createActivity,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF8B4513),
+                    backgroundColor: AppTheme.primaryOrange,
                     foregroundColor: Colors.white,
                   ),
                   child: Text(AppLocalizations.of(context).postButton),
@@ -201,9 +202,9 @@ class _CreateActivityBottomSheetState extends State<CreateActivityBottomSheet>
           // Activity type tabs
           TabBar(
             controller: _tabController,
-            labelColor: const Color(0xFF8B4513),
+            labelColor: AppTheme.primaryOrange,
             unselectedLabelColor: Colors.grey,
-            indicatorColor: const Color(0xFF8B4513),
+            indicatorColor: AppTheme.primaryOrange,
             onTap: (index) {
               setState(() {
                 switch (index) {

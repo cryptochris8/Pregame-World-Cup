@@ -8,7 +8,7 @@ part of 'video_message.dart';
 
 class VideoMessageAdapter extends TypeAdapter<VideoMessage> {
   @override
-  final int typeId = 22;
+  final int typeId = 56;
 
   @override
   VideoMessage read(BinaryReader reader) {

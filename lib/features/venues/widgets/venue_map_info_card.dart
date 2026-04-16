@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
@@ -85,7 +86,7 @@ class VenueMapInfoCard extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
-                          color: const Color(0xFFFF6B35).withValues(alpha:0.1),
+                          color: AppTheme.primaryOrange.withValues(alpha:0.1),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: const Row(
@@ -96,7 +97,7 @@ class VenueMapInfoCard extends StatelessWidget {
                             Text(
                               'Popular',
                               style: TextStyle(
-                                color: Color(0xFFFF6B35),
+                                color: AppTheme.primaryOrange,
                                 fontSize: 11,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -138,7 +139,7 @@ class VenueMapInfoCard extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
@@ -172,7 +173,7 @@ class VenueMapInfoCard extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
-                              color: Color(0xFF2D1810),
+                              color: AppTheme.backgroundDark,
                             ),
                           ),
                           if (venue.userRatingsTotal != null) ...[
@@ -277,7 +278,7 @@ class VenueMapInfoCard extends StatelessWidget {
                   child: _buildActionButton(
                     icon: Icons.info,
                     label: l10n.venueActionDetails,
-                    color: const Color(0xFF8B4513),
+                    color: AppTheme.primaryOrange,
                     onPressed: onDetailsPressed,
                   ),
                 ),
@@ -390,7 +391,7 @@ class VenueMapInfoChip extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xFF2D1810),
+                  color: AppTheme.backgroundDark,
                 ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -411,7 +412,7 @@ class VenueMapInfoChip extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFF2D1810),
+                  color: AppTheme.backgroundDark,
                 ),
               ),
             ],

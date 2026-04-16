@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 
@@ -35,7 +36,7 @@ class VenueOperatingHoursCard extends StatelessWidget {
             children: [
               const Icon(
                 Icons.access_time,
-                color: Color(0xFFFF6B35), // Vibrant orange
+                color: AppTheme.primaryOrange, // Vibrant orange
                 size: 20,
               ),
               const SizedBox(width: 8),
@@ -70,7 +71,7 @@ class VenueOperatingHoursCard extends StatelessWidget {
               child:               const Text(
                 'View full schedule',
                 style: TextStyle(
-                  color: Color(0xFFFF6B35), // Vibrant orange
+                  color: AppTheme.primaryOrange, // Vibrant orange
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
                   decoration: TextDecoration.underline,
@@ -203,7 +204,7 @@ class VenueOperatingHoursCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: isToday ? FontWeight.w600 : FontWeight.w500,
-                      color: isToday ? const Color(0xFFFF6B35) : Colors.white, // Orange for today, white for others
+                      color: isToday ? AppTheme.primaryOrange : Colors.white, // Orange for today, white for others
                     ),
                   ),
                 ),
@@ -349,7 +350,7 @@ class VenueOperatingHoursCard extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.schedule,
-                    color: Color(0xFFFF6B35), // Vibrant orange
+                    color: AppTheme.primaryOrange, // Vibrant orange
                     size: 24,
                   ),
                   const SizedBox(width: 12),
@@ -388,7 +389,7 @@ class VenueOperatingHoursCard extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.info_outline,
-                      color: Color(0xFFFF6B35), // Vibrant orange
+                      color: AppTheme.primaryOrange, // Vibrant orange
                       size: 20,
                     ),
                     SizedBox(width: 12),

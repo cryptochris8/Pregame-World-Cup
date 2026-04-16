@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../features/recommendations/data/datasources/places_api_datasource.dart';
@@ -188,7 +189,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
                   ? Container(
                       color: Colors.grey[200],
                       child: const Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                       ),
                     )
                   : _venuePhotos.isNotEmpty
@@ -251,7 +252,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
           child: TabBar(
             controller: _tabController,
             indicator: BoxDecoration(
-              color: const Color(0xFFFF6B35),
+              color: AppTheme.primaryOrange,
               borderRadius: BorderRadius.circular(8),
             ),
             labelColor: Colors.white,

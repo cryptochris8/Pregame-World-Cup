@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 /// Empty state widget displayed when the user has no friends or no search results.
@@ -47,7 +48,7 @@ class EmptyFriendsState extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: onAddFriends,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF8B4513),
+                backgroundColor: AppTheme.primaryOrange,
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               ),

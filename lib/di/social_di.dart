@@ -22,7 +22,7 @@ void registerSocialServices(GetIt sl) {
     ),
   );
 
-  sl.registerLazySingleton(() => ZapierService(dio: sl()));
+  sl.registerLazySingleton(() => ZapierService());
 
   sl.registerLazySingleton<LiveScoresDataSource>(
     () => LiveScoresDataSourceImpl(

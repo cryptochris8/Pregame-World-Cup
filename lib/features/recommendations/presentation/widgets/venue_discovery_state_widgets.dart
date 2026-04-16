@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 
 /// Loading indicator shown while smart venue recommendations are being loaded.
@@ -16,7 +17,7 @@ class VenueDiscoveryLoadingWidget extends StatelessWidget {
             width: 40,
             height: 40,
             child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFF6B35)),
+              valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
               strokeWidth: 3,
             ),
           ),
@@ -94,7 +95,7 @@ class VenueDiscoveryErrorWidget extends StatelessWidget {
             icon: const Icon(Icons.refresh),
             label: const Text('Try Again'),
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFFFF6B35),
+              backgroundColor: AppTheme.primaryOrange,
               foregroundColor: Colors.white,
             ),
           ),

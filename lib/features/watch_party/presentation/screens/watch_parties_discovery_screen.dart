@@ -65,7 +65,7 @@ class _WatchPartiesDiscoveryScreenState
       body: BlocBuilder<WatchPartyBloc, WatchPartyState>(
         builder: (context, state) {
           if (state is WatchPartyLoading) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)));
           }
 
           if (state is WatchPartyError) {

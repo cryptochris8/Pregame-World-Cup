@@ -568,4 +568,141 @@ void main() {
       }
     });
   });
+
+  // =========================================================================
+  // firstWhere orElse fallback tests
+  // =========================================================================
+  group('Unknown enum value fallbacks', () {
+    test('ChatJson.fromJson defaults to ChatType.direct for unknown type', () {
+      final json = <String, dynamic>{
+        'chatId': 'chat_unknown_type',
+        'type': 'nonexistent_type',
+        'createdAt': '2026-01-01T00:00:00.000',
+      };
+
+      final chat = ChatJson.fromJson(json);
+
+      expect(chat.type, equals(ChatType.direct));
+    });
+
+    test('MessageJson.fromJson defaults to MessageType.text for unknown type', () {
+      final json = <String, dynamic>{
+        'messageId': 'msg_unknown_type',
+        'chatId': 'chat_1',
+        'senderId': 'user_1',
+        'senderName': 'User',
+        'content': 'Test',
+        'type': 'nonexistent_type',
+        'createdAt': '2026-01-01T00:00:00.000',
+        'status': 'sent',
+      };
+
+      final message = MessageJson.fromJson(json);
+
+      expect(message.type, equals(MessageType.text));
+    });
+
+    test('MessageJson.fromJson defaults to MessageStatus.sent for unknown status', () {
+      final json = <String, dynamic>{
+        'messageId': 'msg_unknown_status',
+        'chatId': 'chat_1',
+        'senderId': 'user_1',
+        'senderName': 'User',
+        'content': 'Test',
+        'type': 'text',
+        'createdAt': '2026-01-01T00:00:00.000',
+        'status': 'nonexistent_status',
+      };
+
+      final message = MessageJson.fromJson(json);
+
+      expect(message.status, equals(MessageStatus.sent));
+    });
+
+    test('ChatJson.fromJson defaults to ChatType.direct for null type', () {
+      final json = <String, dynamic>{
+        'chatId': 'chat_null_type',
+        'type': null,
+        'createdAt': '2026-01-01T00:00:00.000',
+      };
+
+      final chat = ChatJson.fromJson(json);
+
+      expect(chat.type, equals(ChatType.direct));
+    });
+
+    test('MessageJson.fromJson defaults to MessageType.text for null type', () {
+      final json = <String, dynamic>{
+        'messageId': 'msg_null_type',
+        'chatId': 'chat_1',
+        'senderId': 'user_1',
+        'senderName': 'User',
+        'content': 'Test',
+        'type': null,
+        'createdAt': '2026-01-01T00:00:00.000',
+        'status': 'sent',
+      };
+
+      final message = MessageJson.fromJson(json);
+
+      expect(message.type, equals(MessageType.text));
+    });
+
+    test('MessageJson.fromJson defaults to MessageStatus.sent for null status', () {
+      final json = <String, dynamic>{
+        'messageId': 'msg_null_status',
+        'chatId': 'chat_1',
+        'senderId': 'user_1',
+        'senderName': 'User',
+        'content': 'Test',
+        'type': 'text',
+        'createdAt': '2026-01-01T00:00:00.000',
+        'status': null,
+      };
+
+      final message = MessageJson.fromJson(json);
+
+      expect(message.status, equals(MessageStatus.sent));
+    });
+  });
+
+  // =========================================================================
+  // DateTime null guard tests
+  // =========================================================================
+  group('DateTime null guard fallbacks', () {
+    test('ChatJson.fromJson uses DateTime.now() for null createdAt', () {
+      final before = DateTime.now();
+      final json = <String, dynamic>{
+        'chatId': 'chat_null_date',
+        'type': 'direct',
+        'createdAt': null,
+      };
+
+      final chat = ChatJson.fromJson(json);
+      final after = DateTime.now();
+
+      expect(chat.createdAt.isAfter(before.subtract(const Duration(seconds: 1))), isTrue);
+      expect(chat.createdAt.isBefore(after.add(const Duration(seconds: 1))), isTrue);
+    });
+
+    test('MessageJson.fromJson uses DateTime.now() for null createdAt', () {
+      final before = DateTime.now();
+      final json = <String, dynamic>{
+        'messageId': 'msg_null_date',
+        'chatId': 'chat_1',
+        'senderId': 'user_1',
+        'senderName': 'User',
+        'content': 'Test',
+        'type': 'text',
+        'createdAt': null,
+        'status': 'sent',
+      };
+
+      final message = MessageJson.fromJson(json);
+      final after = DateTime.now();
+
+      expect(message.createdAt.isAfter(before.subtract(const Duration(seconds: 1))), isTrue);
+      expect(message.createdAt.isBefore(after.add(const Duration(seconds: 1))), isTrue);
+    });
+  });
 }

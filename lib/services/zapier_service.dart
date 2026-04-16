@@ -1,22 +1,19 @@
-import 'package:dio/dio.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 import '../core/services/logging_service.dart';
 
-/// Zapier MCP integration service for automating workflows
-/// This service triggers external automations without affecting core app functionality
+/// Zapier integration service that proxies all workflow triggers through
+/// a Firebase Cloud Function. No secrets or webhook URLs are stored in
+/// the client binary.
 class ZapierService {
-  final Dio _dio;
-  
-  // TODO(SECURITY): This URL contains embedded auth credentials.
-  // Move Zapier triggers to a Cloud Function so this endpoint is never in the client binary.
-  // Rotate/revoke this endpoint URL immediately.
-  static const String _mcpUrl = 'https://mcp.zapier.com/api/mcp/s/OTFlMzY0OTAtODAzMS00NzQ3LTgwZTQtMWJiNDAzYjE2N2JlOjc0NWI0MWUyLTI2OGQtNGU0Zi05NmVhLWE4OTA1YWM4OTI2MQ==/sse';
-  
+  final FirebaseFunctions _functions;
+
   // Feature flag for gradual rollout
   static const bool _enabledInProduction = true;
   static const bool _enabledInDebug = true;
-  
-  ZapierService({Dio? dio}) : _dio = dio ?? Dio();
+
+  ZapierService({FirebaseFunctions? functions})
+      : _functions = functions ?? FirebaseFunctions.instance;
 
   /// Check if Zapier integration is enabled
   bool get isEnabled {
@@ -24,11 +21,12 @@ class ZapierService {
     return _enabledInProduction;
   }
 
-  /// Trigger a Zapier workflow with the given data
-  /// This is a fire-and-forget operation that won't block app functionality
+  /// Trigger a Zapier workflow via the Cloud Function proxy.
+  /// This is a fire-and-forget operation that won't block app functionality.
   Future<void> triggerZap(String zapName, Map<String, dynamic> data) async {
     if (!isEnabled) {
-      LoggingService.info('Zapier disabled - would trigger: $zapName', tag: 'Zapier');
+      LoggingService.info('Zapier disabled - would trigger: $zapName',
+          tag: 'Zapier');
       return;
     }
 
@@ -45,36 +43,43 @@ class ZapierService {
     _executeZapierCall(zapName, enrichedData);
   }
 
-  /// Execute the actual Zapier call asynchronously
-  void _executeZapierCall(String zapName, Map<String, dynamic> data) async {
+  /// Execute the actual Zapier call via the Cloud Function.
+  void _executeZapierCall(
+      String zapName, Map<String, dynamic> data) async {
     try {
-      LoggingService.info('🔄 Triggering Zapier workflow: $zapName', tag: 'Zapier');
-      
-      final response = await _dio.post(
-        _mcpUrl,
-        data: {
-          'zap_name': zapName,
-          'payload': data,
-        },
-        options: Options(
-          headers: {
-            'Content-Type': 'application/json',
-            'User-Agent': 'Pregame-App/1.0.0',
-          },
-          // Don't wait too long - this is non-critical
-          sendTimeout: const Duration(seconds: 10),
-          receiveTimeout: const Duration(seconds: 10),
+      LoggingService.info('Triggering Zapier workflow: $zapName',
+          tag: 'Zapier');
+
+      final callable = _functions.httpsCallable(
+        'triggerZapierWorkflow',
+        options: HttpsCallableOptions(
+          timeout: const Duration(seconds: 15),
         ),
       );
 
-      if (response.statusCode == 200 || response.statusCode == 201) {
-        LoggingService.info('✅ Zapier workflow triggered successfully: $zapName', tag: 'Zapier');
+      final result = await callable.call<Map<String, dynamic>>({
+        'zapName': zapName,
+        'payload': data,
+      });
+
+      final success = result.data['success'] == true;
+      if (success) {
+        LoggingService.info(
+            'Zapier workflow triggered successfully: $zapName',
+            tag: 'Zapier');
       } else {
-        LoggingService.warning('⚠️ Zapier returned status ${response.statusCode} for $zapName', tag: 'Zapier');
+        LoggingService.warning(
+            'Zapier workflow returned non-success for $zapName',
+            tag: 'Zapier');
       }
+    } on FirebaseFunctionsException catch (e) {
+      LoggingService.error(
+          'Zapier workflow failed: $zapName - ${e.code}: ${e.message}',
+          tag: 'Zapier');
     } catch (e) {
       // Log error but don't throw - app should continue working
-      LoggingService.error('❌ Zapier workflow failed: $zapName - $e', tag: 'Zapier');
+      LoggingService.error('Zapier workflow failed: $zapName - $e',
+          tag: 'Zapier');
     }
   }
 
@@ -172,7 +177,7 @@ class ZapierService {
 
   /// Payment and subscription events
   Future<void> triggerPaymentEvent({
-    required String eventType, // 'subscription_created', 'payment_failed', etc.
+    required String eventType,
     required String customerId,
     String? amount,
     String? planName,
@@ -221,7 +226,7 @@ class ZapierService {
 
   /// Disable Zapier integration (for testing or emergency situations)
   static void disable() {
-    // This would require a const change and rebuild, but provides safety
-    LoggingService.warning('Zapier integration disabled via code', tag: 'Zapier');
+    LoggingService.warning('Zapier integration disabled via code',
+        tag: 'Zapier');
   }
-} 
+}

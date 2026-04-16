@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../social/domain/entities/user_profile.dart';
 
 /// Reusable widget for selecting members for group or team chats.
@@ -56,7 +57,7 @@ class ChatMemberSelector extends StatelessWidget {
                   labelText: nameLabel,
                   labelStyle: TextStyle(color: Colors.orange[300]),
                   filled: true,
-                  fillColor: Colors.brown[800],
+                  fillColor: AppTheme.backgroundCard,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide.none,
@@ -72,7 +73,7 @@ class ChatMemberSelector extends StatelessWidget {
                   labelText: descriptionLabel,
                   labelStyle: TextStyle(color: Colors.orange[300]),
                   filled: true,
-                  fillColor: Colors.brown[800],
+                  fillColor: AppTheme.backgroundCard,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide.none,
@@ -88,7 +89,7 @@ class ChatMemberSelector extends StatelessWidget {
                   hintStyle: const TextStyle(color: Colors.white54),
                   prefixIcon: Icon(Icons.search, color: Colors.orange[300]),
                   filled: true,
-                  fillColor: Colors.brown[800],
+                  fillColor: AppTheme.backgroundCard,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide.none,
@@ -104,20 +105,24 @@ class ChatMemberSelector extends StatelessWidget {
           Container(
             height: 60,
             padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: ListView.builder(
+            child: Builder(builder: (context) {
+              final validSelectedIds = selectedFriendIds
+                  .where((id) => friends.any((f) => f.userId == id))
+                  .toList();
+              return ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: selectedFriendIds.length,
+              itemCount: validSelectedIds.length,
               itemBuilder: (context, index) {
-                final friendId = selectedFriendIds.elementAt(index);
+                final friendId = validSelectedIds[index];
                 final friend = friends.firstWhere((f) => f.userId == friendId);
 
                 return Container(
                   margin: const EdgeInsets.only(right: 8),
                   child: Chip(
                     backgroundColor: Colors.orange[300],
-                    deleteIconColor: Colors.brown[800],
+                    deleteIconColor: AppTheme.backgroundCard,
                     avatar: CircleAvatar(
-                      backgroundColor: Colors.brown[800],
+                      backgroundColor: AppTheme.backgroundCard,
                       child: Text(
                         friend.displayName.isNotEmpty ? friend.displayName[0] : '?',
                         style: const TextStyle(color: Colors.white, fontSize: 12),
@@ -125,13 +130,14 @@ class ChatMemberSelector extends StatelessWidget {
                     ),
                     label: Text(
                       friend.displayName,
-                      style: TextStyle(color: Colors.brown[800]),
+                      style: TextStyle(color: AppTheme.backgroundCard),
                     ),
                     onDeleted: () => onFriendRemoved(friendId),
                   ),
                 );
               },
-            ),
+            );
+            }),
           ),
         ],
 
@@ -148,7 +154,7 @@ class ChatMemberSelector extends StatelessWidget {
             onPressed: onCreatePressed,
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.orange[300],
-              foregroundColor: Colors.brown[800],
+              foregroundColor: AppTheme.backgroundCard,
               padding: const EdgeInsets.symmetric(vertical: 16),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -160,7 +166,7 @@ class ChatMemberSelector extends StatelessWidget {
                     width: 20,
                     child: CircularProgressIndicator(
                       strokeWidth: 2,
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.brown),
+                      valueColor: AlwaysStoppedAnimation<Color>(AppTheme.backgroundCard),
                     ),
                   )
                 : Text(
@@ -221,7 +227,7 @@ class ChatMemberSelector extends StatelessWidget {
                       child: friend.profileImageUrl == null
                           ? Icon(
                               Icons.person,
-                              color: Colors.brown[800],
+                              color: AppTheme.backgroundCard,
                             )
                           : null,
                     ),
@@ -239,7 +245,7 @@ class ChatMemberSelector extends StatelessWidget {
                         onFriendToggled(friend.userId);
                       },
                       activeColor: Colors.orange[300],
-                      checkColor: Colors.brown[800],
+                      checkColor: AppTheme.backgroundCard,
                     ),
                     onTap: () {
                       onFriendToggled(friend.userId);

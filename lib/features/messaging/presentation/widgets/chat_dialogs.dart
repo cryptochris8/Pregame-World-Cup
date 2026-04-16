@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 /// Static helper class providing reusable chat-related dialogs.
@@ -11,7 +12,7 @@ class ChatDialogs {
     return showDialog<Duration?>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Colors.brown[800],
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.muteNotifications,
             style: const TextStyle(color: Colors.white)),
         content: Column(
@@ -65,7 +66,7 @@ class ChatDialogs {
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Colors.brown[800],
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(
           l10n.clearChatHistory,
           style: const TextStyle(color: Colors.white),
@@ -97,7 +98,7 @@ class ChatDialogs {
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Colors.brown[800],
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(
           l10n.leaveChat,
           style: const TextStyle(color: Colors.white),
@@ -129,7 +130,7 @@ class ChatDialogs {
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Colors.brown[800],
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(
           l10n.unblockUser,
           style: const TextStyle(color: Colors.white),

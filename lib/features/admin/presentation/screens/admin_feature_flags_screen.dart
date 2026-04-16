@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../injection_container.dart';
 
@@ -28,12 +29,21 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
   Future<void> _loadFlags() async {
     setState(() => _isLoading = true);
 
-    final flags = await _adminService.getFeatureFlags();
+    try {
+      final flags = await _adminService.getFeatureFlags();
 
-    setState(() {
-      _flags = flags;
-      _isLoading = false;
-    });
+      if (!mounted) return;
+      setState(() {
+        _flags = flags;
+        _isLoading = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to load feature flags: $e')),
+      );
+    }
   }
 
   @override
@@ -58,7 +68,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
         ],
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
           : _flags.isEmpty
               ? Center(
                   child: Column(
@@ -186,10 +196,30 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
       }
     });
 
-    final success = await _adminService.updateFeatureFlag(flag.id, value);
+    try {
+      final success = await _adminService.updateFeatureFlag(flag.id, value);
 
-    if (!success && mounted) {
-      // Revert on failure
+      if (!success && mounted) {
+        // Revert on failure
+        setState(() {
+          final index = _flags.indexWhere((f) => f.id == flag.id);
+          if (index != -1) {
+            _flags[index] = flag.copyWith(isEnabled: !value);
+          }
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context).failedToUpdateFlag)),
+        );
+      } else if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context).flagToggled(flag.name, value ? AppLocalizations.of(context).enabled.toLowerCase() : AppLocalizations.of(context).disabled.toLowerCase())),
+          ),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
+      // Revert on error
       setState(() {
         final index = _flags.indexWhere((f) => f.id == flag.id);
         if (index != -1) {
@@ -197,13 +227,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
         }
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context).failedToUpdateFlag)),
-      );
-    } else if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context).flagToggled(flag.name, value ? AppLocalizations.of(context).enabled.toLowerCase() : AppLocalizations.of(context).disabled.toLowerCase())),
-        ),
+        SnackBar(content: Text('Failed to toggle flag: $e')),
       );
     }
   }

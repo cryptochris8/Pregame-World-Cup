@@ -339,7 +339,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF8B4513)),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange),
           ),
           const SizedBox(height: 16),
           Text(
@@ -372,7 +372,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
     return RefreshIndicator(
       onRefresh: _loadAllData,
-      color: const Color(0xFF8B4513),
+      color: AppTheme.primaryOrange,
       child: ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: _filteredFriends.length,
@@ -399,7 +399,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
     return RefreshIndicator(
       onRefresh: _loadAllData,
-      color: const Color(0xFF8B4513),
+      color: AppTheme.primaryOrange,
       child: ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: _pendingRequests.length,
@@ -426,7 +426,7 @@ class _EnhancedFriendsListScreenState extends State<EnhancedFriendsListScreen>
 
     return RefreshIndicator(
       onRefresh: _loadAllData,
-      color: const Color(0xFF8B4513),
+      color: AppTheme.primaryOrange,
       child: ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: _sentRequests.length,

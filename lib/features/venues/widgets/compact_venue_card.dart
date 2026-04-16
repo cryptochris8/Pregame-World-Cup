@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
@@ -73,7 +74,7 @@ class CompactVenueCard extends StatelessWidget {
                               style: const TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
-                                color: Color(0xFF2D1810),
+                                color: AppTheme.backgroundDark,
                               ),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
@@ -86,7 +87,7 @@ class CompactVenueCard extends StatelessWidget {
                                   horizontal: 6, vertical: 2),
                               decoration: BoxDecoration(
                                 color:
-                                    const Color(0xFFFF6B35).withValues(alpha: 0.1),
+                                    AppTheme.primaryOrange.withValues(alpha: 0.1),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: const Text(
@@ -114,7 +115,7 @@ class CompactVenueCard extends StatelessWidget {
                               style: const TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w500,
-                                color: Color(0xFF2D1810),
+                                color: AppTheme.backgroundDark,
                               ),
                             ),
                             const SizedBox(width: 8),

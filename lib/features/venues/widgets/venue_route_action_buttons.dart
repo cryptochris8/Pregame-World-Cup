@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'venue_route_models.dart';
 
@@ -32,7 +33,7 @@ class VenueRouteActionButtons extends StatelessWidget {
             child: ElevatedButton(
               onPressed: onStartNavigation,
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF8B4513),
+                backgroundColor: AppTheme.primaryOrange,
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
@@ -62,8 +63,8 @@ class VenueRouteActionButtons extends StatelessWidget {
           OutlinedButton(
             onPressed: onShare,
             style: OutlinedButton.styleFrom(
-              foregroundColor: const Color(0xFF8B4513),
-              side: const BorderSide(color: Color(0xFF8B4513)),
+              foregroundColor: AppTheme.primaryOrange,
+              side: const BorderSide(color: AppTheme.primaryOrange),
               padding: const EdgeInsets.all(16),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),

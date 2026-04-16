@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../../l10n/app_localizations.dart';
@@ -124,7 +125,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -161,7 +162,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
                 style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xFF2D1810),
+                  color: AppTheme.backgroundDark,
                 ),
               ),
               Text(
@@ -188,7 +189,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
             color: widget.isVisible 
-                ? const Color(0xFF8B4513) 
+                ? AppTheme.primaryOrange 
                 : Colors.white,
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
@@ -201,7 +202,7 @@ class _VenueDistanceRingsState extends State<VenueDistanceRings>
           ),
           child: Icon(
             Icons.layers,
-            color: widget.isVisible ? Colors.white : const Color(0xFF2D1810),
+            color: widget.isVisible ? Colors.white : AppTheme.backgroundDark,
             size: 20,
           ),
         ),
@@ -364,7 +365,7 @@ class VenueDistanceOrganizer extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,

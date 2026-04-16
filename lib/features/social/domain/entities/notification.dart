@@ -347,7 +347,7 @@ class SocialNotification extends Equatable {
       ];
 }
 
-@HiveType(typeId: 17)
+@HiveType(typeId: 50)
 enum NotificationType {
   @HiveField(0)
   friendRequest,
@@ -389,7 +389,7 @@ enum NotificationType {
   favoriteTeamMatch,
 }
 
-@HiveType(typeId: 18)
+@HiveType(typeId: 51)
 enum NotificationPriority {
   @HiveField(0)
   low,
@@ -405,7 +405,7 @@ enum NotificationPriority {
 }
 
 // Notification preferences
-@HiveType(typeId: 19)
+@HiveType(typeId: 52)
 class NotificationPreferences extends Equatable {
   @HiveField(0)
   final bool friendRequests;

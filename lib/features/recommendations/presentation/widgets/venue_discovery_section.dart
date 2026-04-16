@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/place.dart';
 import '../../../../config/theme_helper.dart';
@@ -154,7 +155,7 @@ class VenueDiscoverySection extends StatelessWidget {
       return const Center(
         child: Padding(
           padding: EdgeInsets.all(16.0),
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
         ),
       );
     }
@@ -259,13 +260,13 @@ class VenueDiscoverySection extends StatelessWidget {
           decoration: BoxDecoration(
             color: const Color(0xFF334155),
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: const Color(0xFFFF6B35)),
+            border: Border.all(color: AppTheme.primaryOrange),
           ),
           child: Column(
             children: [
               const Icon(
                 Icons.info_outline,
-                color: Color(0xFFFF6B35),
+                color: AppTheme.primaryOrange,
                 size: 48,
               ),
               const SizedBox(height: 8),

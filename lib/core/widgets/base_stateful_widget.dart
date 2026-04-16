@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../config/app_theme.dart';
 import '../services/logging_service.dart';
 
 /// Base StatefulWidget that provides common patterns and error handling
@@ -205,7 +206,7 @@ abstract class BaseStatefulWidgetState<T extends BaseStatefulWidget> extends Sta
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CircularProgressIndicator(),
+            CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
             SizedBox(height: 16),
             Text(
               'Loading...',

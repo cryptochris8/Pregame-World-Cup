@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/notification.dart';
 
@@ -26,14 +27,14 @@ class NotificationItemWidget extends StatelessWidget {
         side: notification.isRead
             ? BorderSide.none
             : const BorderSide(
-                color: Color(0xFF8B4513),
+                color: AppTheme.primaryOrange,
                 width: 1,
               ),
       ),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          color: notification.isRead ? Colors.white : const Color(0xFF8B4513).withValues(alpha:0.05),
+          color: notification.isRead ? Colors.white : AppTheme.primaryOrange.withValues(alpha:0.05),
         ),
         child: InkWell(
           onTap: onTap,

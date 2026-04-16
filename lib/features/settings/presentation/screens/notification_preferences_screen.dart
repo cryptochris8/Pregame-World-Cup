@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 
 import '../../../../core/services/notification_preferences_service.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -44,7 +45,7 @@ class _NotificationPreferencesScreenState extends State<NotificationPreferencesS
     if (_isLoading) {
       return Scaffold(
         appBar: AppBar(title: Text(l10n.notifications)),
-        body: const Center(child: CircularProgressIndicator()),
+        body: const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange))),
       );
     }
 

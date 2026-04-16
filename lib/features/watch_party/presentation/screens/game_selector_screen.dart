@@ -178,7 +178,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
           // Content
           Expanded(
             child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
                 : _error != null
                     ? _buildErrorState()
                     : _filteredMatches.isEmpty

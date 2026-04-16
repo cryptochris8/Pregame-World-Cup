@@ -85,7 +85,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
         if (state is WatchPartyLoading) {
           return Scaffold(
             appBar: AppBar(),
-            body: const Center(child: CircularProgressIndicator()),
+            body: const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange))),
           );
         }
 

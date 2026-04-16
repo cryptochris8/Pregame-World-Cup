@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/user_profile.dart';
 import '../../domain/services/social_service.dart';
@@ -104,7 +105,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(l10n.findFriends),
-        backgroundColor: const Color(0xFF355E3B),
+        backgroundColor: AppTheme.secondaryEmerald,
         foregroundColor: Colors.white,
       ),
       body: Column(
@@ -116,18 +117,18 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
               controller: _searchController,
               decoration: InputDecoration(
                 hintText: l10n.searchByNameOrTeam,
-                prefixIcon: const Icon(Icons.search, color: Color(0xFF355E3B)),
+                prefixIcon: const Icon(Icons.search, color: AppTheme.secondaryEmerald),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: const BorderSide(color: Color(0xFF355E3B)),
+                  borderSide: const BorderSide(color: AppTheme.secondaryEmerald),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: const BorderSide(color: Color(0xFF355E3B)),
+                  borderSide: const BorderSide(color: AppTheme.secondaryEmerald),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: const BorderSide(color: Color(0xFF355E3B), width: 2),
+                  borderSide: const BorderSide(color: AppTheme.secondaryEmerald, width: 2),
                 ),
               ),
               onChanged: (value) {
@@ -180,7 +181,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
     if (_isLoading) {
       return const Center(
         child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF355E3B)),
+          valueColor: AlwaysStoppedAnimation<Color>(AppTheme.secondaryEmerald),
         ),
       );
     }
@@ -243,7 +244,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
             // Profile picture
             CircleAvatar(
               radius: 30,
-              backgroundColor: const Color(0xFF355E3B),
+              backgroundColor: AppTheme.secondaryEmerald,
               backgroundImage: user.profileImageUrl != null
                   ? NetworkImage(user.profileImageUrl!)
                   : null,
@@ -294,8 +295,8 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
                             team,
                             style: const TextStyle(fontSize: 12),
                           ),
-                          backgroundColor: const Color(0xFF355E3B).withValues(alpha:0.1),
-                          side: const BorderSide(color: Color(0xFF355E3B)),
+                          backgroundColor: AppTheme.secondaryEmerald.withValues(alpha:0.1),
+                          side: const BorderSide(color: AppTheme.secondaryEmerald),
                         );
                       }).toList(),
                     ),
@@ -310,7 +311,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
               icon: const Icon(Icons.person_add, size: 18),
               label: Text(AppLocalizations.of(context).add),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF355E3B),
+                backgroundColor: AppTheme.secondaryEmerald,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),

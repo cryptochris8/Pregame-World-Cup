@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/chat.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/entities/typing_indicator.dart';
@@ -162,9 +163,9 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[900],
+      backgroundColor: AppTheme.backgroundDark,
       appBar: AppBar(
-        backgroundColor: Colors.brown[800],
+        backgroundColor: AppTheme.backgroundCard,
         foregroundColor: Colors.white,
         title: ChatAppBarTitle(
           chat: widget.chat,
@@ -402,7 +403,7 @@ class _ChatScreenState extends State<ChatScreen> {
   void _showChatInfo() {
     showModalBottomSheet(
       context: context,
-      backgroundColor: Colors.brown[900],
+      backgroundColor: AppTheme.backgroundDark,
       isScrollControlled: true,
       builder: (context) => ChatInfoBottomSheet(
         chat: widget.chat,
@@ -415,7 +416,7 @@ class _ChatScreenState extends State<ChatScreen> {
   void _showAddMemberDialog() {
     showModalBottomSheet(
       context: context,
-      backgroundColor: Colors.brown[900],
+      backgroundColor: AppTheme.backgroundDark,
       isScrollControlled: true,
       builder: (context) => AddMemberBottomSheet(
         chatId: widget.chat.chatId,

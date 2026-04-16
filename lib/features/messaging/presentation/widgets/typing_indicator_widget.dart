@@ -1,5 +1,6 @@
 import 'dart:math' show sin, pi;
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/typing_indicator.dart';
 
 class TypingIndicatorWidget extends StatefulWidget {
@@ -65,14 +66,14 @@ class _TypingIndicatorWidgetState extends State<TypingIndicatorWidget>
             child: Icon(
               Icons.person,
               size: 14,
-              color: Colors.brown[800],
+              color: AppTheme.backgroundCard,
             ),
           ),
           const SizedBox(width: 8),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.brown[800]?.withValues(alpha:0.8),
+              color: AppTheme.backgroundCard.withValues(alpha:0.8),
               borderRadius: BorderRadius.circular(18),
             ),
             child: Row(

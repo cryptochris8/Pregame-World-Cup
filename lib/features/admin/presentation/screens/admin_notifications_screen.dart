@@ -454,16 +454,17 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
 
     setState(() => _isSending = true);
 
-    final success = await _adminService.sendBroadcastNotification(
-      title: _titleController.text,
-      body: _bodyController.text,
-      audience: _selectedAudience,
-      teamCode: _selectedTeam,
-    );
+    try {
+      final success = await _adminService.sendBroadcastNotification(
+        title: _titleController.text,
+        body: _bodyController.text,
+        audience: _selectedAudience,
+        teamCode: _selectedTeam,
+      );
 
-    setState(() => _isSending = false);
+      if (!mounted) return;
+      setState(() => _isSending = false);
 
-    if (mounted) {
       if (success) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -486,6 +487,15 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
           ),
         );
       }
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isSending = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to send notification: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 

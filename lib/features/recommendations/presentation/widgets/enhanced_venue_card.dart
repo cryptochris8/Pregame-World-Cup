@@ -1,6 +1,6 @@
+import '../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/place.dart';
-import '../../../../config/app_theme.dart';
 import '../../../../core/services/venue_recommendation_service.dart';
 
 class EnhancedVenueCard extends StatelessWidget {
@@ -113,13 +113,13 @@ class EnhancedVenueCard extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           const Icon(Icons.directions_walk, 
-                               color: Color(0xFFFF6B35), size: 16),
+                               color: AppTheme.primaryOrange, size: 16),
                           const SizedBox(width: 4),
                           Flexible(
                             child: Text(
                               walkingInfo,
                               style: const TextStyle(
-                                color: Color(0xFFFF6B35),
+                                color: AppTheme.primaryOrange,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                               ),

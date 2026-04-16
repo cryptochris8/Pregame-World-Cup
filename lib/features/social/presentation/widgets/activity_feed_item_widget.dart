@@ -1,3 +1,4 @@
+import '../../../../config/app_theme.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -148,7 +149,7 @@ class _ActivityFeedItemWidgetState extends State<ActivityFeedItemWidget>
           // User avatar
           CircleAvatar(
             radius: 20,
-            backgroundColor: const Color(0xFF8B4513),
+            backgroundColor: AppTheme.primaryOrange,
             backgroundImage: widget.activity.userProfileImage != null
                 ? CachedNetworkImageProvider(widget.activity.userProfileImage!)
                 : null,

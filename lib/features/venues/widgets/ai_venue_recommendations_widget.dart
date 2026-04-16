@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../core/ai/entities/ai_recommendation.dart';
 import '../../../core/services/unified_venue_service.dart';
@@ -142,7 +143,7 @@ class _AIVenueRecommendationsWidgetState extends State<AIVenueRecommendationsWid
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
               ),
@@ -260,7 +261,7 @@ class _AIVenueRecommendationsWidgetState extends State<AIVenueRecommendationsWid
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
               ),

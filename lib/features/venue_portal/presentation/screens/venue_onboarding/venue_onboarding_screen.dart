@@ -1,3 +1,4 @@
+import '../../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -80,7 +81,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
                   value: (state.currentStep + 1) / 4,
                   backgroundColor: Colors.white12,
                   valueColor: const AlwaysStoppedAnimation<Color>(
-                    Color(0xFFFF6B35),
+                    AppTheme.primaryOrange,
                   ),
                 ),
               ),
@@ -95,7 +96,7 @@ class _VenueOnboardingScreenState extends State<VenueOnboardingScreen> {
   Widget _buildBody(BuildContext context, VenueOnboardingState state) {
     if (state.isChecking) {
       return const Center(
-        child: CircularProgressIndicator(color: Color(0xFFFF6B35)),
+        child: CircularProgressIndicator(color: AppTheme.primaryOrange),
       );
     }
 

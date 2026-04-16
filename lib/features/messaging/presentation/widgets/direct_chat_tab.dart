@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../social/domain/entities/user_profile.dart';
 
 /// Tab for searching and selecting a friend to start a direct chat
@@ -33,7 +34,7 @@ class DirectChatTab extends StatelessWidget {
               hintStyle: const TextStyle(color: Colors.white54),
               prefixIcon: Icon(Icons.search, color: Colors.orange[300]),
               filled: true,
-              fillColor: Colors.brown[800],
+              fillColor: AppTheme.backgroundCard,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide.none,
@@ -86,7 +87,7 @@ class DirectChatTab extends StatelessWidget {
                             child: friend.profileImageUrl == null
                                 ? Icon(
                                     Icons.person,
-                                    color: Colors.brown[800],
+                                    color: AppTheme.backgroundCard,
                                   )
                                 : null,
                           ),

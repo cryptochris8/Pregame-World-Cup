@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart';
 
 import '../../../watch_party/domain/entities/watch_party.dart';
@@ -28,14 +29,23 @@ class _AdminWatchPartiesScreenState extends State<AdminWatchPartiesScreen> {
   Future<void> _loadParties() async {
     setState(() => _isLoading = true);
 
-    final parties = await _adminService.getWatchParties(
-      isActive: _showActiveOnly,
-    );
+    try {
+      final parties = await _adminService.getWatchParties(
+        isActive: _showActiveOnly,
+      );
 
-    setState(() {
-      _parties = parties;
-      _isLoading = false;
-    });
+      if (!mounted) return;
+      setState(() {
+        _parties = parties;
+        _isLoading = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to load watch parties: $e')),
+      );
+    }
   }
 
   @override
@@ -79,7 +89,7 @@ class _AdminWatchPartiesScreenState extends State<AdminWatchPartiesScreen> {
           // List
           Expanded(
             child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)))
                 : _parties.isEmpty
                     ? Center(
                         child: Text(

@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 
 part 'game_intelligence.g.dart';
 
-@HiveType(typeId: 21)
+@HiveType(typeId: 53)
 // ignore: must_be_immutable
 class GameIntelligence extends HiveObject with EquatableMixin {
   @HiveField(0)
@@ -165,7 +165,7 @@ class GameIntelligence extends HiveObject with EquatableMixin {
   }
 }
 
-@HiveType(typeId: 22)
+@HiveType(typeId: 54)
 // ignore: must_be_immutable
 class VenueRecommendations extends HiveObject with EquatableMixin {
   @HiveField(0)

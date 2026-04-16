@@ -79,7 +79,7 @@ class SocialNotificationAdapter extends TypeAdapter<SocialNotification> {
 class NotificationPreferencesAdapter
     extends TypeAdapter<NotificationPreferences> {
   @override
-  final int typeId = 19;
+  final int typeId = 52;
 
   @override
   NotificationPreferences read(BinaryReader reader) {
@@ -149,7 +149,7 @@ class NotificationPreferencesAdapter
 
 class NotificationTypeAdapter extends TypeAdapter<NotificationType> {
   @override
-  final int typeId = 17;
+  final int typeId = 50;
 
   @override
   NotificationType read(BinaryReader reader) {
@@ -243,7 +243,7 @@ class NotificationTypeAdapter extends TypeAdapter<NotificationType> {
 
 class NotificationPriorityAdapter extends TypeAdapter<NotificationPriority> {
   @override
-  final int typeId = 18;
+  final int typeId = 51;
 
   @override
   NotificationPriority read(BinaryReader reader) {

@@ -1,3 +1,4 @@
+import '../../../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../l10n/app_localizations.dart';
@@ -107,7 +108,7 @@ class Step3Review extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () => cubit.nextStep(),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFFF6B35),
+                    backgroundColor: AppTheme.primaryOrange,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(

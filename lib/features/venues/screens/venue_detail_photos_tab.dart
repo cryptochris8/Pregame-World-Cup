@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../config/app_theme.dart';
 import '../widgets/venue_photo_gallery.dart';
 
 /// Photos tab content for the venue detail screen.
@@ -18,7 +19,7 @@ class VenueDetailPhotosTab extends StatelessWidget {
   Widget build(BuildContext context) {
     if (isLoading) {
       return const Center(
-        child: CircularProgressIndicator(),
+        child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
       );
     }
 

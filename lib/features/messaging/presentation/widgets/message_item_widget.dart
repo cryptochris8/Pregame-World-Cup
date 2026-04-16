@@ -118,7 +118,7 @@ class MessageItemWidget extends StatelessWidget {
           ? Icon(
               Icons.person,
               size: 16,
-              color: Colors.brown[800],
+              color: AppTheme.backgroundCard,
             )
           : null,
     );
@@ -131,7 +131,7 @@ class MessageItemWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: isOwnMessage 
             ? Colors.orange[300]
-            : Colors.brown[800]?.withValues(alpha:0.8),
+            : AppTheme.backgroundCard.withValues(alpha:0.8),
         borderRadius: BorderRadius.only(
           topLeft: const Radius.circular(18),
           topRight: const Radius.circular(18),
@@ -168,7 +168,7 @@ class MessageItemWidget extends StatelessWidget {
         return Text(
           message.content,
           style: TextStyle(
-            color: isOwnMessage ? Colors.brown[800] : Colors.white,
+            color: isOwnMessage ? AppTheme.backgroundCard : Colors.white,
             fontSize: 16,
           ),
         );
@@ -195,7 +195,7 @@ class MessageItemWidget extends StatelessWidget {
               Text(
                 message.metadata['caption'],
                 style: TextStyle(
-                  color: isOwnMessage ? Colors.brown[800] : Colors.white,
+                  color: isOwnMessage ? AppTheme.backgroundCard : Colors.white,
                   fontSize: 14,
                 ),
               ),
@@ -214,14 +214,14 @@ class MessageItemWidget extends StatelessWidget {
             children: [
               Icon(
                 Icons.location_on,
-                color: isOwnMessage ? Colors.brown[800] : Colors.white,
+                color: isOwnMessage ? AppTheme.backgroundCard : Colors.white,
               ),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
                   'Location shared',
                   style: TextStyle(
-                    color: isOwnMessage ? Colors.brown[800] : Colors.white,
+                    color: isOwnMessage ? AppTheme.backgroundCard : Colors.white,
                     fontSize: 14,
                   ),
                 ),
@@ -245,7 +245,7 @@ class MessageItemWidget extends StatelessWidget {
         return Text(
           message.content,
           style: TextStyle(
-            color: isOwnMessage ? Colors.brown[800] : Colors.white,
+            color: isOwnMessage ? AppTheme.backgroundCard : Colors.white,
             fontSize: 16,
           ),
         );
@@ -273,7 +273,7 @@ class MessageItemWidget extends StatelessWidget {
             'Replying to message',
             style: TextStyle(
               color: isOwnMessage 
-                  ? Colors.brown[800]?.withValues(alpha:0.7)
+                  ? AppTheme.backgroundCard.withValues(alpha:0.7)
                   : Colors.white.withValues(alpha:0.7),
               fontSize: 12,
             ),
@@ -283,7 +283,7 @@ class MessageItemWidget extends StatelessWidget {
             'Original message...', // In real app, fetch the original message
             style: TextStyle(
               color: isOwnMessage 
-                  ? Colors.brown[800]?.withValues(alpha:0.8)
+                  ? AppTheme.backgroundCard.withValues(alpha:0.8)
                   : Colors.white.withValues(alpha:0.8),
               fontSize: 14,
             ),
@@ -302,7 +302,7 @@ class MessageItemWidget extends StatelessWidget {
           margin: const EdgeInsets.only(right: 4, bottom: 2),
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
-            color: Colors.brown[700]?.withValues(alpha:0.8),
+            color: AppTheme.primaryPurple.withValues(alpha:0.8),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Row(
@@ -336,7 +336,7 @@ class MessageItemWidget extends StatelessWidget {
           style: TextStyle(
             fontSize: 11,
             color: isOwnMessage
-                ? Colors.brown[600]
+                ? AppTheme.primaryPurple
                 : Colors.white.withValues(alpha:0.7),
           ),
         ),
@@ -456,7 +456,7 @@ class MessageItemWidget extends StatelessWidget {
 
     showModalBottomSheet(
       context: context,
-      backgroundColor: Colors.brown[900],
+      backgroundColor: AppTheme.backgroundDark,
       builder: (context) => Container(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -520,7 +520,7 @@ class MessageItemWidget extends StatelessWidget {
     
     showModalBottomSheet(
       context: context,
-      backgroundColor: Colors.brown[900],
+      backgroundColor: AppTheme.backgroundDark,
       builder: (context) => Container(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -546,7 +546,7 @@ class MessageItemWidget extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: Colors.brown[800],
+                      color: AppTheme.backgroundCard,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(

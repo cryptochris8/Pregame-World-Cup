@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 
 import '../../../../core/services/widget_service.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -90,7 +91,7 @@ class _WidgetSettingsScreenState extends State<WidgetSettingsScreen> {
     if (_isLoading) {
       return Scaffold(
         appBar: AppBar(title: Text(l10n.widgetSettings)),
-        body: const Center(child: CircularProgressIndicator()),
+        body: const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange))),
       );
     }
 

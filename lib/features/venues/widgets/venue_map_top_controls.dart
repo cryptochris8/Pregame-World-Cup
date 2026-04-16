@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
@@ -46,7 +47,7 @@ class VenueMapTopControls extends StatelessWidget {
                   child: IconButton(
                     onPressed: () => Navigator.of(context).pop(),
                     icon: const Icon(Icons.arrow_back),
-                    color: const Color(0xFF2D1810),
+                    color: AppTheme.backgroundDark,
                   ),
                 ),
 
@@ -74,7 +75,7 @@ class VenueMapTopControls extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xFF2D1810),
+                            color: AppTheme.backgroundDark,
                           ),
                         ),
                         Text(

@@ -313,3 +313,6 @@ export {
   reviewVenueClaim,
   submitVenueDispute
 } from './venue-claiming';
+
+// Export Zapier proxy function
+export { triggerZapierWorkflow } from './zapier-proxy';

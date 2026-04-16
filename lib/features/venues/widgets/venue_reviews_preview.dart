@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 
@@ -72,7 +73,7 @@ class VenueReviewsPreview extends StatelessWidget {
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF2D1810),
+              color: AppTheme.backgroundDark,
             ),
           ),
           
@@ -85,7 +86,7 @@ class VenueReviewsPreview extends StatelessWidget {
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF8B4513).withValues(alpha:0.1),
+                  color: AppTheme.primaryOrange.withValues(alpha:0.1),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Column(
@@ -96,7 +97,7 @@ class VenueReviewsPreview extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF8B4513),
+                        color: AppTheme.primaryOrange,
                       ),
                     ),
                     Row(
@@ -129,7 +130,7 @@ class VenueReviewsPreview extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
-                        color: Color(0xFF2D1810),
+                        color: AppTheme.backgroundDark,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -187,7 +188,7 @@ class VenueReviewsPreview extends StatelessWidget {
                     widthFactor: rating['percentage'] as double,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const Color(0xFF8B4513),
+                        color: AppTheme.primaryOrange,
                         borderRadius: BorderRadius.circular(3),
                       ),
                     ),
@@ -227,7 +228,7 @@ class VenueReviewsPreview extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF8B4513).withValues(alpha:0.1),
+                  color: AppTheme.primaryOrange.withValues(alpha:0.1),
                   shape: BoxShape.circle,
                 ),
                 child: Center(
@@ -236,7 +237,7 @@ class VenueReviewsPreview extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF8B4513),
+                      color: AppTheme.primaryOrange,
                     ),
                   ),
                 ),
@@ -251,7 +252,7 @@ class VenueReviewsPreview extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Color(0xFF2D1810),
+                        color: AppTheme.backgroundDark,
                       ),
                     ),
                     Text(
@@ -301,14 +302,14 @@ class VenueReviewsPreview extends StatelessWidget {
                 return Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF8B4513).withValues(alpha:0.1),
+                    color: AppTheme.primaryOrange.withValues(alpha:0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
                     highlight,
                     style: const TextStyle(
                       fontSize: 12,
-                      color: Color(0xFF8B4513),
+                      color: AppTheme.primaryOrange,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -375,7 +376,7 @@ class VenueReviewsPreview extends StatelessWidget {
             ElevatedButton(
               onPressed: () => _writeReview(),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF8B4513),
+                backgroundColor: AppTheme.primaryOrange,
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 shape: RoundedRectangleBorder(
@@ -395,8 +396,8 @@ class VenueReviewsPreview extends StatelessWidget {
       child: OutlinedButton(
         onPressed: () => _viewAllReviews(context),
         style: OutlinedButton.styleFrom(
-          foregroundColor: const Color(0xFF8B4513),
-          side: const BorderSide(color: Color(0xFF8B4513)),
+          foregroundColor: AppTheme.primaryOrange,
+          side: const BorderSide(color: AppTheme.primaryOrange),
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
@@ -495,7 +496,7 @@ class VenueReviewsSummary extends StatelessWidget {
           style: const TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w600,
-            color: Color(0xFF2D1810),
+            color: AppTheme.backgroundDark,
           ),
         ),
         if (showReviewCount && venue.userRatingsTotal != null) ...[

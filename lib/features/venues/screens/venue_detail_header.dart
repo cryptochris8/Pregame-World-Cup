@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
@@ -71,9 +72,9 @@ class VenueDetailHeader extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             decoration: BoxDecoration(
-              color: const Color(0xFFFF6B35).withValues(alpha: 0.1),
+              color: AppTheme.primaryOrange.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: const Color(0xFFFF6B35).withValues(alpha: 0.3)),
+              border: Border.all(color: AppTheme.primaryOrange.withValues(alpha: 0.3)),
             ),
             child: const Row(
               mainAxisSize: MainAxisSize.min,
@@ -83,7 +84,7 @@ class VenueDetailHeader extends StatelessWidget {
                 Text(
                   'Popular',
                   style: TextStyle(
-                    color: Color(0xFFFF6B35),
+                    color: AppTheme.primaryOrange,
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
                   ),
@@ -123,7 +124,7 @@ class VenueDetailHeader extends StatelessWidget {
                         : index < rating
                             ? Icons.star_half
                             : Icons.star_border,
-                    color: const Color(0xFFFFD700),
+                    color: AppTheme.accentGold,
                     size: 20,
                   );
                 }),
@@ -160,7 +161,7 @@ class VenueDetailHeader extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF2D6A4F),
+                  color: AppTheme.secondaryEmerald,
                 ),
               ),
               Text(
@@ -183,7 +184,7 @@ class VenueDetailHeader extends StatelessWidget {
       children: [
         const Icon(
           Icons.location_on,
-          color: Color(0xFFFF6B35),
+          color: AppTheme.primaryOrange,
           size: 20,
         ),
         const SizedBox(width: 8),

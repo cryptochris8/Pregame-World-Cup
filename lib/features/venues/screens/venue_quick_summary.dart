@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../features/recommendations/domain/entities/place.dart';
 import '../../../core/services/venue_recommendation_service.dart';
@@ -66,7 +67,7 @@ class VenueQuickSummary extends StatelessWidget {
                     children: [
                       const Icon(
                         Icons.star,
-                        color: Color(0xFFFFD700),
+                        color: AppTheme.accentGold,
                         size: 16,
                       ),
                       const SizedBox(width: 4),
@@ -100,19 +101,19 @@ class VenueQuickSummary extends StatelessWidget {
                 onPressed: () => _callVenue(),
                 icon: const Icon(Icons.phone),
                 iconSize: 20,
-                color: const Color(0xFF2E7D32),
+                color: AppTheme.successColor,
               ),
               IconButton(
                 onPressed: () => _getDirections(),
                 icon: const Icon(Icons.directions),
                 iconSize: 20,
-                color: const Color(0xFF1976D2),
+                color: AppTheme.infoColor,
               ),
               IconButton(
                 onPressed: () => _openDetails(context),
                 icon: const Icon(Icons.info),
                 iconSize: 20,
-                color: const Color(0xFFFF6B35),
+                color: AppTheme.primaryOrange,
               ),
             ],
           ),

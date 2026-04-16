@@ -1,3 +1,4 @@
+import '../../../config/app_theme.dart';
 import 'package:flutter/material.dart';
 import '../../../core/services/venue_recommendation_service.dart';
 import 'venue_photo_gallery.dart';
@@ -40,7 +41,7 @@ class VenueCardPhotoSection extends StatelessWidget {
                   ? Container(
                       color: Colors.grey[100],
                       child: const Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)),
                       ),
                     )
                   : photoUrls.isNotEmpty
@@ -169,7 +170,7 @@ class VenueCardPhotoSection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: const Color(0xFFFF6B35),
+        color: AppTheme.primaryOrange,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
