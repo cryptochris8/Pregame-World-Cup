@@ -66,6 +66,7 @@ import {
   verifyVenueCode,
   reviewVenueClaim,
   submitVenueDispute,
+  resolveVenueDispute,
 } from '../src/venue-claiming';
 
 // ---------------------------------------------------------------------------
@@ -1111,6 +1112,144 @@ describe('Venue Claiming', () => {
 
       const disputesSnapshot = await mockFirestore.collection('venue_disputes').get();
       expect(disputesSnapshot.size).toBe(2);
+    });
+  });
+
+  // =========================================================================
+  // resolveVenueDispute
+  // =========================================================================
+
+  describe('resolveVenueDispute', () => {
+    const seedDispute = (
+      disputeId: string,
+      venueId: string,
+      currentOwnerId: string,
+      disputerId: string,
+      status = 'pending',
+    ) => {
+      const disputes = new Map<string, any>();
+      disputes.set(disputeId, {
+        venueId,
+        currentOwnerId,
+        disputerId,
+        reason: 'Fraudulent claim',
+        details: 'I am the real owner',
+        status,
+        createdAt: MockTimestamp.fromDate(new Date()),
+      });
+      mockFirestore.setTestData('venue_disputes', disputes);
+    };
+
+    const seedVenueForDispute = (venueId: string, ownerId: string) => {
+      const venues = new Map<string, any>();
+      venues.set(venueId, {
+        ownerId,
+        claimStatus: 'approved',
+        isVerified: true,
+        businessName: 'Disputed Bar',
+      });
+      mockFirestore.setTestData('venue_enhancements', venues);
+    };
+
+    it('should reject unauthenticated requests', async () => {
+      await expect(
+        callFunction(resolveVenueDispute, { disputeId: 'd-1', resolution: 'dismissed' }, unauthContext()),
+      ).rejects.toThrow(/Must be logged in/);
+    });
+
+    it('should reject non-admin users', async () => {
+      await expect(
+        callFunction(resolveVenueDispute, { disputeId: 'd-1', resolution: 'dismissed' }, authedContext()),
+      ).rejects.toThrow(/Admin access required/);
+    });
+
+    it('should reject when disputeId is missing', async () => {
+      await expect(
+        callFunction(resolveVenueDispute, { resolution: 'dismissed' }, adminContext()),
+      ).rejects.toThrow(/Missing disputeId or invalid resolution/);
+    });
+
+    it('should reject when resolution is invalid', async () => {
+      await expect(
+        callFunction(resolveVenueDispute, { disputeId: 'd-1', resolution: 'invalid' }, adminContext()),
+      ).rejects.toThrow(/Missing disputeId or invalid resolution/);
+    });
+
+    it('should reject when dispute does not exist', async () => {
+      mockFirestore.setTestData('venue_disputes', new Map());
+
+      await expect(
+        callFunction(resolveVenueDispute, { disputeId: 'nonexistent', resolution: 'dismissed' }, adminContext()),
+      ).rejects.toThrow(/Dispute not found/);
+    });
+
+    it('should dismiss a dispute without revoking the venue claim', async () => {
+      seedDispute('d-dismiss', 'venue-d', 'owner-d', 'disputer-d');
+      seedVenueForDispute('venue-d', 'owner-d');
+      mockFirestore.setTestData('admin_logs', new Map());
+
+      const result = await callFunction(
+        resolveVenueDispute,
+        { disputeId: 'd-dismiss', resolution: 'dismissed', adminNotes: 'No evidence' },
+        adminContext(),
+      );
+
+      expect(result).toEqual({ success: true, resolution: 'dismissed' });
+
+      // Dispute should be updated
+      const disputeDoc = await mockFirestore.collection('venue_disputes').doc('d-dismiss').get();
+      expect(disputeDoc.data().status).toBe('dismissed');
+
+      // Venue should remain claimed by the original owner
+      const venueDoc = await mockFirestore.collection('venue_enhancements').doc('venue-d').get();
+      expect(venueDoc.data().ownerId).toBe('owner-d');
+      expect(venueDoc.data().claimStatus).toBe('approved');
+    });
+
+    it('should uphold a dispute and revoke the venue claim', async () => {
+      seedDispute('d-uphold', 'venue-u', 'owner-u', 'disputer-u');
+      seedVenueForDispute('venue-u', 'owner-u');
+      // Seed claim count for the owner
+      const counts = new Map<string, any>();
+      counts.set('owner-u', { count: 2, userId: 'owner-u' });
+      mockFirestore.setTestData('user_venue_claim_counts', counts);
+      mockFirestore.setTestData('admin_logs', new Map());
+
+      const result = await callFunction(
+        resolveVenueDispute,
+        { disputeId: 'd-uphold', resolution: 'upheld', adminNotes: 'Verified real owner' },
+        adminContext(),
+      );
+
+      expect(result).toEqual({ success: true, resolution: 'upheld' });
+
+      // Dispute should be updated
+      const disputeDoc = await mockFirestore.collection('venue_disputes').doc('d-uphold').get();
+      expect(disputeDoc.data().status).toBe('upheld');
+
+      // Venue claim should be revoked
+      const venueDoc = await mockFirestore.collection('venue_enhancements').doc('venue-u').get();
+      expect(venueDoc.data().ownerId).toBe('');
+      expect(venueDoc.data().claimStatus).toBe('rejected');
+
+      // Admin log should be created
+      const logsSnapshot = await mockFirestore.collection('admin_logs').get();
+      expect(logsSnapshot.size).toBeGreaterThanOrEqual(1);
+    });
+
+    it('should be exported from index.ts', () => {
+      // Verify resolveVenueDispute is listed in the venue-claiming re-exports in index.ts.
+      // We read the source text instead of require()-ing index.ts because the full
+      // module graph pulls in many Firebase-admin calls that are not mocked here.
+      const fs = require('fs');
+      const path = require('path');
+      const indexSource: string = fs.readFileSync(
+        path.resolve(__dirname, '..', 'src', 'index.ts'),
+        'utf-8',
+      );
+      expect(indexSource).toContain('resolveVenueDispute');
+      // Confirm it appears in an export block from venue-claiming
+      expect(indexSource).toMatch(/export\s*\{[^}]*resolveVenueDispute[^}]*\}\s*from\s*['"]\.\/venue-claiming['"]/s);
     });
   });
 });

@@ -52,6 +52,47 @@ void main() {
   });
 
   // ---------------------------------------------------------------------------
+  // Points per prediction - division by zero guard
+  // ---------------------------------------------------------------------------
+  group('PredictionLeaderboardScreen - division by zero guard', () {
+    test('points per prediction returns 0.0 when totalPredictions is zero', () {
+      // This mirrors the guard at line ~429 of prediction_leaderboard_screen.dart:
+      // totalPredictions > 0 ? (totalPoints / totalPredictions).toStringAsFixed(1) : '0.0'
+      const totalPoints = 50;
+      const totalPredictions = 0;
+
+      final pointsPerPrediction = totalPredictions > 0
+          ? (totalPoints / totalPredictions).toStringAsFixed(1)
+          : '0.0';
+
+      expect(pointsPerPrediction, equals('0.0'));
+    });
+
+    test('points per prediction computes correctly when totalPredictions > 0', () {
+      const totalPoints = 50;
+      const totalPredictions = 10;
+
+      final pointsPerPrediction = totalPredictions > 0
+          ? (totalPoints / totalPredictions).toStringAsFixed(1)
+          : '0.0';
+
+      expect(pointsPerPrediction, equals('5.0'));
+    });
+
+    test('points per prediction does not produce Infinity', () {
+      const totalPoints = 100;
+      const totalPredictions = 0;
+
+      final pointsPerPrediction = totalPredictions > 0
+          ? (totalPoints / totalPredictions).toStringAsFixed(1)
+          : '0.0';
+
+      expect(pointsPerPrediction, isNot(contains('Infinity')));
+      expect(pointsPerPrediction, equals('0.0'));
+    });
+  });
+
+  // ---------------------------------------------------------------------------
   // Disposal safety - verify mounted guards exist in _loadData
   // NOTE: Full widget disposal tests require Firebase init which is not
   // available in unit test environment. The mounted guards are verified

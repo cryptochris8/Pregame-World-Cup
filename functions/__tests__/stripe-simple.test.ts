@@ -69,6 +69,11 @@ const authedContext = (uid = 'test-user-id', email = 'test@example.com') =>
 
 const unauthContext = () => createMockCallableContext({ auth: null });
 
+// These must match the env vars set in setup.ts (STRIPE_*_PRICE_ID)
+const VALID_FAN_PRICE_ID = 'price_test_fan_pass';
+const VALID_SUPERFAN_PRICE_ID = 'price_test_superfan_pass';
+const VALID_VENUE_PRICE_ID = 'price_test_venue_premium';
+
 // ---------------------------------------------------------------------------
 // Tests
 // ---------------------------------------------------------------------------
@@ -204,7 +209,7 @@ describe('Stripe Simple', () => {
 
       const result = await callFunction(
         createFanCheckoutSession,
-        { priceId: 'price_fan_premium', fanId: 'fan-checkout', mode: 'subscription' },
+        { priceId: VALID_FAN_PRICE_ID, fanId: 'fan-checkout', mode: 'subscription' },
         authedContext(),
       );
 
@@ -222,7 +227,7 @@ describe('Stripe Simple', () => {
       await expect(
         callFunction(
           createFanCheckoutSession,
-          { priceId: 'price_x', fanId: 'fan-x' },
+          { priceId: VALID_FAN_PRICE_ID, fanId: 'fan-x' },
           unauthContext(),
         ),
       ).rejects.toThrow(/Unable to create fan checkout session/);
@@ -232,7 +237,7 @@ describe('Stripe Simple', () => {
       await expect(
         callFunction(
           createFanCheckoutSession,
-          { priceId: 'price_x' /* fanId missing */ },
+          { priceId: VALID_FAN_PRICE_ID /* fanId missing */ },
           authedContext(),
         ),
       ).rejects.toThrow(/Unable to create fan checkout session/);
@@ -246,7 +251,7 @@ describe('Stripe Simple', () => {
 
       await callFunction(
         createFanCheckoutSession,
-        { priceId: 'price_fan_pass', fanId: 'fan-no-stripe' },
+        { priceId: VALID_FAN_PRICE_ID, fanId: 'fan-no-stripe' },
         authedContext(),
       );
 
@@ -264,7 +269,7 @@ describe('Stripe Simple', () => {
 
       await callFunction(
         createFanCheckoutSession,
-        { priceId: 'price_x', fanId: 'new-fan' },
+        { priceId: VALID_FAN_PRICE_ID, fanId: 'new-fan' },
         authedContext(),
       );
 
@@ -280,12 +285,54 @@ describe('Stripe Simple', () => {
 
       await callFunction(
         createFanCheckoutSession,
-        { priceId: 'price_x', fanId: 'fan-mode' },
+        { priceId: VALID_FAN_PRICE_ID, fanId: 'fan-mode' },
         authedContext(),
       );
 
       const sessionArgs = mockStripe.checkout.sessions.create.mock.calls[0][0];
       expect(sessionArgs.mode).toBe('subscription');
+    });
+
+    it('should reject an invalid priceId not in the whitelist', async () => {
+      const fans = new Map<string, any>();
+      fans.set('fan-invalid', { id: 'fan-invalid', stripeCustomerId: 'cus_x' });
+      mockFirestore.setTestData('fans', fans);
+
+      // The function's catch-all re-throws as generic internal error
+      await expect(
+        callFunction(
+          createFanCheckoutSession,
+          { priceId: 'price_MALICIOUS_arbitrary_id', fanId: 'fan-invalid' },
+          authedContext(),
+        ),
+      ).rejects.toThrow(/Unable to create fan checkout session/);
+
+      // Key assertion: Stripe checkout should never have been called with the bad priceId
+      expect(mockStripe.checkout.sessions.create).not.toHaveBeenCalled();
+    });
+
+    it('should accept all valid fan and venue price IDs', async () => {
+      const fans = new Map<string, any>();
+      fans.set('fan-valid', { id: 'fan-valid', stripeCustomerId: 'cus_v' });
+      mockFirestore.setTestData('fans', fans);
+
+      // Fan pass price
+      await callFunction(
+        createFanCheckoutSession,
+        { priceId: VALID_FAN_PRICE_ID, fanId: 'fan-valid' },
+        authedContext(),
+      );
+      expect(mockStripe.checkout.sessions.create).toHaveBeenCalledTimes(1);
+
+      mockStripe.checkout.sessions.create.mockClear();
+
+      // Superfan pass price
+      await callFunction(
+        createFanCheckoutSession,
+        { priceId: VALID_SUPERFAN_PRICE_ID, fanId: 'fan-valid' },
+        authedContext(),
+      );
+      expect(mockStripe.checkout.sessions.create).toHaveBeenCalledTimes(1);
     });
   });
 
@@ -374,7 +421,7 @@ describe('Stripe Simple', () => {
 
       const result = await callFunction(
         createCheckoutSession,
-        { priceId: 'price_venue_premium', venueId: 'venue-co', mode: 'subscription' },
+        { priceId: VALID_VENUE_PRICE_ID, venueId: 'venue-co', mode: 'subscription' },
         authedContext(),
       );
 
@@ -388,7 +435,7 @@ describe('Stripe Simple', () => {
       await expect(
         callFunction(
           createCheckoutSession,
-          { priceId: 'price_x', venueId: 'v-1' },
+          { priceId: VALID_VENUE_PRICE_ID, venueId: 'v-1' },
           unauthContext(),
         ),
       ).rejects.toThrow(/Unable to create checkout session/);
@@ -398,7 +445,7 @@ describe('Stripe Simple', () => {
       await expect(
         callFunction(
           createCheckoutSession,
-          { priceId: 'price_x' /* venueId missing */ },
+          { priceId: VALID_VENUE_PRICE_ID /* venueId missing */ },
           authedContext(),
         ),
       ).rejects.toThrow(/Unable to create checkout session/);
@@ -411,7 +458,7 @@ describe('Stripe Simple', () => {
 
       await callFunction(
         createCheckoutSession,
-        { priceId: 'price_x', venueId: 'venue-no-cus' },
+        { priceId: VALID_VENUE_PRICE_ID, venueId: 'venue-no-cus' },
         authedContext(),
       );
 
@@ -428,12 +475,44 @@ describe('Stripe Simple', () => {
 
       await callFunction(
         createCheckoutSession,
-        { priceId: 'price_x', venueId: 'new-venue' },
+        { priceId: VALID_VENUE_PRICE_ID, venueId: 'new-venue' },
         authedContext(),
       );
 
       const venueDoc = await mockFirestore.collection('venues').doc('new-venue').get();
       expect(venueDoc.exists).toBe(true);
+    });
+
+    it('should reject an invalid priceId not in the whitelist', async () => {
+      const venues = new Map<string, any>();
+      venues.set('venue-invalid', { id: 'venue-invalid', stripeCustomerId: 'cus_x' });
+      mockFirestore.setTestData('venues', venues);
+
+      // The function's catch-all re-throws as generic internal error
+      await expect(
+        callFunction(
+          createCheckoutSession,
+          { priceId: 'price_MALICIOUS_arbitrary_id', venueId: 'venue-invalid' },
+          authedContext(),
+        ),
+      ).rejects.toThrow(/Unable to create checkout session/);
+
+      // Key assertion: Stripe checkout should never have been called with the bad priceId
+      expect(mockStripe.checkout.sessions.create).not.toHaveBeenCalled();
+    });
+
+    it('should accept the valid venue premium price ID', async () => {
+      const venues = new Map<string, any>();
+      venues.set('venue-valid', { id: 'venue-valid', stripeCustomerId: 'cus_v' });
+      mockFirestore.setTestData('venues', venues);
+
+      await callFunction(
+        createCheckoutSession,
+        { priceId: VALID_VENUE_PRICE_ID, venueId: 'venue-valid' },
+        authedContext(),
+      );
+
+      expect(mockStripe.checkout.sessions.create).toHaveBeenCalledTimes(1);
     });
   });
 

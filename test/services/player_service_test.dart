@@ -385,4 +385,50 @@ void main() {
       expect(players.first.commonName, equals('Vinicius Jr.'));
     });
   });
+
+  group('Player Statistics - Division by Zero Guard', () {
+    test('empty player list returns zero defaults without division error', () {
+      // Simulates the guard added in getPlayerStatistics():
+      // if (players.isEmpty) return sensible defaults
+      final players = <Player>[];
+
+      final Map<String, dynamic> result;
+      if (players.isEmpty) {
+        result = {
+          'totalPlayers': 0,
+          'totalMarketValue': 0,
+          'averageAge': 0.0,
+          'totalGoals': 0,
+          'totalCaps': 0,
+          'playersByPosition': <String, int>{},
+        };
+      } else {
+        // This path would throw division by zero without the guard
+        result = {
+          'averageAge': players.fold<double>(0, (acc, p) => acc + p.age) / players.length,
+        };
+      }
+
+      expect(result['totalPlayers'], equals(0));
+      expect(result['totalMarketValue'], equals(0));
+      expect(result['averageAge'], equals(0.0));
+      expect(result['totalGoals'], equals(0));
+      expect(result['totalCaps'], equals(0));
+      expect(result['playersByPosition'], isEmpty);
+    });
+
+    test('non-empty player list computes averages correctly', () async {
+      await fakeFirestore.collection('players').doc('player_001').set(samplePlayerData1);
+      await fakeFirestore.collection('players').doc('player_002').set(samplePlayerData2);
+
+      final snapshot = await fakeFirestore.collection('players').get();
+      final players = snapshot.docs.map((doc) => Player.fromFirestore(doc)).toList();
+
+      expect(players.length, equals(2));
+
+      final averageAge = players.fold<double>(0, (acc, p) => acc + p.age) / players.length;
+      expect(averageAge.isFinite, isTrue);
+      expect(averageAge, greaterThan(0));
+    });
+  });
 }

@@ -490,6 +490,17 @@ class PlayerService {
     try {
       final players = await getAllPlayers();
 
+      if (players.isEmpty) {
+        return {
+          'totalPlayers': 0,
+          'totalMarketValue': 0,
+          'averageAge': 0.0,
+          'totalGoals': 0,
+          'totalCaps': 0,
+          'playersByPosition': <String, int>{},
+        };
+      }
+
       return {
         'totalPlayers': players.length,
         'totalMarketValue': players.fold<int>(

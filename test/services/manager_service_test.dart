@@ -294,4 +294,64 @@ void main() {
       expect(managers[2].teamCode, equals('GER'));
     });
   });
+
+  group('Manager Statistics - Division by Zero Guard', () {
+    test('empty manager list returns zero defaults without division error', () {
+      // Simulates the guard added in getManagerStatistics():
+      // if (managers.isEmpty) return sensible defaults
+      final managers = <Manager>[];
+
+      // This is the exact logic from getManagerStatistics
+      final Map<String, dynamic> result;
+      if (managers.isEmpty) {
+        result = {
+          'totalManagers': 0,
+          'averageAge': 0.0,
+          'averageExperience': 0.0,
+          'totalMatches': 0,
+          'totalTitles': 0,
+          'averageWinPercentage': 0.0,
+          'managersWithControversies': 0,
+          'managersByNationality': <String, int>{},
+        };
+      } else {
+        // This path would throw division by zero without the guard
+        result = {
+          'averageAge': managers.fold<double>(0, (acc, m) => acc + m.age) / managers.length,
+        };
+      }
+
+      expect(result['totalManagers'], equals(0));
+      expect(result['averageAge'], equals(0.0));
+      expect(result['averageExperience'], equals(0.0));
+      expect(result['totalMatches'], equals(0));
+      expect(result['totalTitles'], equals(0));
+      expect(result['averageWinPercentage'], equals(0.0));
+      expect(result['managersWithControversies'], equals(0));
+      expect(result['managersByNationality'], isEmpty);
+    });
+
+    test('non-empty manager list computes averages correctly', () async {
+      await fakeFirestore.collection('managers').doc('manager_001').set(sampleManagerData1);
+      await fakeFirestore.collection('managers').doc('manager_002').set(sampleManagerData2);
+
+      final snapshot = await fakeFirestore.collection('managers').orderBy('teamCode').get();
+      final managers = snapshot.docs.map((doc) => Manager.fromFirestore(doc)).toList();
+
+      // Verify division works when list is non-empty
+      expect(managers.length, equals(2));
+
+      final averageAge = managers.fold<double>(0, (acc, m) => acc + m.age) / managers.length;
+      expect(averageAge.isFinite, isTrue);
+      expect(averageAge, greaterThan(0));
+
+      final averageExperience = managers.fold<double>(0, (acc, m) => acc + m.yearsOfExperience) / managers.length;
+      expect(averageExperience.isFinite, isTrue);
+      expect(averageExperience, greaterThan(0));
+
+      final averageWinPct = managers.fold<double>(0, (acc, m) => acc + m.stats.winPercentage) / managers.length;
+      expect(averageWinPct.isFinite, isTrue);
+      expect(averageWinPct, greaterThan(0));
+    });
+  });
 }

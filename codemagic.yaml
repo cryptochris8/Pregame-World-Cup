@@ -23,7 +23,7 @@ workflows:
           source: false
       cancel_previous_builds: true
     environment:
-      node: 18
+      node: 22
       flutter: stable
     scripts:
       - name: Install Node.js dependencies for Functions
@@ -102,51 +102,58 @@ workflows:
     scripts:
       - name: Test Environment Variables
         script: |
-          echo "🧪 Testing Environment Variables..."
+          echo "Testing Environment Variables..."
           echo "----------------------------------------"
-          echo "GOOGLE_PLACES_API_KEY: ${GOOGLE_PLACES_API_KEY:0:15}..."
-          echo "OPENAI_API_KEY: ${OPENAI_API_KEY:0:15}..."
-          echo "CLAUDE_API_KEY: ${CLAUDE_API_KEY:0:15}..."
-          echo "STRIPE_PUBLISHABLE_KEY: ${STRIPE_PUBLISHABLE_KEY:0:15}..."
-          echo "REVENUECAT_IOS_API_KEY: ${REVENUECAT_IOS_API_KEY:0:15}..."
-          echo "REVENUECAT_ANDROID_API_KEY: ${REVENUECAT_ANDROID_API_KEY:0:15}..."
+          echo "GOOGLE_PLACES_API_KEY: $([ -n "$GOOGLE_PLACES_API_KEY" ] && echo 'SET' || echo 'MISSING')"
+          echo "OPENAI_API_KEY: $([ -n "$OPENAI_API_KEY" ] && echo 'SET' || echo 'MISSING')"
+          echo "CLAUDE_API_KEY: $([ -n "$CLAUDE_API_KEY" ] && echo 'SET' || echo 'MISSING')"
+          echo "STRIPE_PUBLISHABLE_KEY: $([ -n "$STRIPE_PUBLISHABLE_KEY" ] && echo 'SET' || echo 'MISSING')"
+          echo "REVENUECAT_IOS_API_KEY: $([ -n "$REVENUECAT_IOS_API_KEY" ] && echo 'SET' || echo 'MISSING')"
+          echo "REVENUECAT_ANDROID_API_KEY: $([ -n "$REVENUECAT_ANDROID_API_KEY" ] && echo 'SET' || echo 'MISSING')"
+          echo "SPORTSDATA_API_KEY: $([ -n "$SPORTSDATA_API_KEY" ] && echo 'SET' || echo 'MISSING')"
           echo "BUNDLE_ID: $BUNDLE_ID"
           echo "----------------------------------------"
           if [ -z "$GOOGLE_PLACES_API_KEY" ]; then
-              echo "❌ GOOGLE_PLACES_API_KEY is missing!"
+              echo "GOOGLE_PLACES_API_KEY is missing!"
               exit 1
           else
-              echo "✅ GOOGLE_PLACES_API_KEY is loaded"
+              echo "GOOGLE_PLACES_API_KEY is loaded"
           fi
           if [ -z "$OPENAI_API_KEY" ]; then
-              echo "❌ OPENAI_API_KEY is missing!"
+              echo "OPENAI_API_KEY is missing!"
               exit 1
           else
-              echo "✅ OPENAI_API_KEY is loaded"
+              echo "OPENAI_API_KEY is loaded"
           fi
           if [ -z "$CLAUDE_API_KEY" ]; then
-              echo "❌ CLAUDE_API_KEY is missing!"
+              echo "CLAUDE_API_KEY is missing!"
               exit 1
           else
-              echo "✅ CLAUDE_API_KEY is loaded"
+              echo "CLAUDE_API_KEY is loaded"
           fi
           if [ -z "$STRIPE_PUBLISHABLE_KEY" ]; then
-              echo "❌ STRIPE_PUBLISHABLE_KEY is missing!"
+              echo "STRIPE_PUBLISHABLE_KEY is missing!"
               exit 1
           else
-              echo "✅ STRIPE_PUBLISHABLE_KEY is loaded"
+              echo "STRIPE_PUBLISHABLE_KEY is loaded"
+          fi
+          if [ -z "$SPORTSDATA_API_KEY" ]; then
+              echo "SPORTSDATA_API_KEY is missing!"
+              exit 1
+          else
+              echo "SPORTSDATA_API_KEY is loaded"
           fi
           if [ -z "$REVENUECAT_IOS_API_KEY" ]; then
-              echo "⚠️ REVENUECAT_IOS_API_KEY is missing (native IAP will use fallback)"
+              echo "REVENUECAT_IOS_API_KEY is missing (native IAP will use fallback)"
           else
-              echo "✅ REVENUECAT_IOS_API_KEY is loaded"
+              echo "REVENUECAT_IOS_API_KEY is loaded"
           fi
           if [ -z "$REVENUECAT_ANDROID_API_KEY" ]; then
-              echo "⚠️ REVENUECAT_ANDROID_API_KEY is missing (native IAP will use fallback)"
+              echo "REVENUECAT_ANDROID_API_KEY is missing (native IAP will use fallback)"
           else
-              echo "✅ REVENUECAT_ANDROID_API_KEY is loaded"
+              echo "REVENUECAT_ANDROID_API_KEY is loaded"
           fi
-          echo "🎉 All environment variables are loaded correctly!"
+          echo "All environment variables are loaded correctly!"
           
       - name: Set up local.properties
         script: |
@@ -248,8 +255,8 @@ workflows:
       - name: Install Node.js for Functions Tests
         script: |
           echo "📦 Setting up Node.js..."
-          nvm install 18
-          nvm use 18
+          nvm install 22
+          nvm use 22
           echo "✅ Node.js $(node --version) ready"
 
       - name: Run Firebase Functions Tests

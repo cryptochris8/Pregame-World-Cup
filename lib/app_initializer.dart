@@ -75,10 +75,6 @@ Future<void> initializeApp() async {
     // Register background message handler for FCM
     FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
-    // PRODUCTION FIX: Disable Firestore offline persistence to prevent old cached schedule data
-    // This ensures the app doesn't fall back to cached 2024 data when offline
-    await _disableFirestoreOfflinePersistence();
-
     debugLog('INIT STEP 2: Firebase Core - SUCCESS');
   } catch (e) {
     debugLog('INIT STEP 2: Firebase Core - FAILED: $e');
@@ -197,7 +193,7 @@ Future<void> initializeApp() async {
 // ---------------------------------------------------------------------------
 
 /// Initialize Firebase App Check in the background to avoid blocking startup
-void _initializeAppCheckBackground() async {
+Future<void> _initializeAppCheckBackground() async {
   try {
     debugLog('APP CHECK: Starting background initialization');
 
@@ -214,7 +210,7 @@ void _initializeAppCheckBackground() async {
 }
 
 /// Initialize AI Services (OpenAI & Claude) in the background
-void _initializeAIServicesBackground() async {
+Future<void> _initializeAIServicesBackground() async {
   try {
     debugLog('AI SERVICES: Starting background initialization');
 
@@ -235,7 +231,7 @@ void _initializeAIServicesBackground() async {
 
 /// Initialize AdMob in the background.
 /// On iOS, requests App Tracking Transparency permission first (Apple requirement).
-void _initializeAdMobBackground() async {
+Future<void> _initializeAdMobBackground() async {
   if (kIsWeb) {
     debugLog('ADMOB: Skipping - not supported on web');
     return;
@@ -278,7 +274,7 @@ void _initializeAdMobBackground() async {
 }
 
 /// Initialize RevenueCat in the background for native in-app purchases
-void _initializeRevenueCatBackground() async {
+Future<void> _initializeRevenueCatBackground() async {
   try {
     debugLog('REVENUECAT: Starting background initialization');
 
@@ -303,7 +299,7 @@ void _initializeRevenueCatBackground() async {
 }
 
 /// Initialize Stripe SDK in the background for Payment Sheet flows
-void _initializeStripeBackground() async {
+Future<void> _initializeStripeBackground() async {
   try {
     debugLog('STRIPE: Starting background initialization');
 
@@ -327,7 +323,7 @@ void _initializeStripeBackground() async {
 }
 
 /// Initialize Analytics and Crashlytics in the background
-void _initializeAnalyticsBackground() async {
+Future<void> _initializeAnalyticsBackground() async {
   try {
     debugLog('ANALYTICS: Starting background initialization');
 
@@ -345,7 +341,7 @@ void _initializeAnalyticsBackground() async {
 }
 
 /// Initialize Deep Link Service in the background
-void _initializeDeepLinkServiceBackground() async {
+Future<void> _initializeDeepLinkServiceBackground() async {
   try {
     debugLog('DEEP LINKS: Starting background initialization');
 
@@ -371,7 +367,7 @@ void _initializeDeepLinkServiceBackground() async {
 }
 
 /// Initialize Social Service (friends, profiles, connections) in the background
-void _initializeSocialServiceBackground() async {
+Future<void> _initializeSocialServiceBackground() async {
   try {
     debugLog('SOCIAL: Starting background initialization');
 
@@ -456,18 +452,3 @@ Future<void> _clearOld2024CacheData() async {
   }
 }
 
-/// PRODUCTION FIX: Disable Firestore offline persistence to prevent old cached data
-Future<void> _disableFirestoreOfflinePersistence() async {
-  try {
-    debugLog('FIRESTORE: Skipping offline persistence disable - needed for World Cup data');
-
-    // DISABLED: This was preventing players/managers from loading from Firestore
-    // The disableNetwork() call was making Firestore unavailable
-
-    debugLog('FIRESTORE: Network enabled - World Cup data can now be fetched');
-  } catch (e) {
-    debugLog('FIRESTORE: Error disabling offline persistence: $e');
-    // Continue anyway - this is not critical for app functionality
-    // The app doesn't actually store schedule data in Firestore anyway
-  }
-}

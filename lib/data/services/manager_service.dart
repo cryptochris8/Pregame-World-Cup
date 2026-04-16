@@ -291,6 +291,19 @@ class ManagerService {
     try {
       final managers = await getAllManagers();
 
+      if (managers.isEmpty) {
+        return {
+          'totalManagers': 0,
+          'averageAge': 0.0,
+          'averageExperience': 0.0,
+          'totalMatches': 0,
+          'totalTitles': 0,
+          'averageWinPercentage': 0.0,
+          'managersWithControversies': 0,
+          'managersByNationality': <String, int>{},
+        };
+      }
+
       return {
         'totalManagers': managers.length,
         'averageAge': managers.fold<double>(

@@ -311,7 +311,8 @@ export {
   sendVenueVerificationCode,
   verifyVenueCode,
   reviewVenueClaim,
-  submitVenueDispute
+  submitVenueDispute,
+  resolveVenueDispute
 } from './venue-claiming';
 
 // Export Zapier proxy function

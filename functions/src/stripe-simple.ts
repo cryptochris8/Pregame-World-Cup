@@ -7,6 +7,34 @@ import { withRetry } from './retry-utils';
 
 const db = admin.firestore();
 
+// ============================================================================
+// ALLOWED PRICE IDS - Server-side whitelist for checkout session validation
+// Only these Stripe price IDs may be used in checkout sessions.
+// Values come from environment variables (matching world-cup-payments.ts config)
+// with hardcoded fallback defaults for the production Stripe price IDs.
+// ============================================================================
+
+const ALLOWED_PRICE_IDS: Set<string> = new Set([
+  // Fan passes
+  process.env.STRIPE_FAN_PASS_PRICE_ID || 'price_1SnYT9LmA106gMF6SK1oDaWE',
+  process.env.STRIPE_SUPERFAN_PASS_PRICE_ID || 'price_1SnYi4LmA106gMF6h5yRgzLL',
+  // Venue premium
+  process.env.STRIPE_VENUE_PREMIUM_PRICE_ID || 'price_1SnYm5LmA106gMF63sYAuEB5',
+]);
+
+/**
+ * Validate that a client-provided priceId is in the server-side whitelist.
+ * Throws HttpsError('invalid-argument') if the priceId is not allowed.
+ */
+function validatePriceId(priceId: string): void {
+  if (!ALLOWED_PRICE_IDS.has(priceId)) {
+    throw new functions.https.HttpsError(
+      'invalid-argument',
+      `Invalid price ID. Must be one of the allowed product prices.`
+    );
+  }
+}
+
 // New function to set up free fan accounts (no Stripe needed)
 export const setupFreeFanAccount = functions.https.onCall(async (data: any, context: any) => {
   try {
@@ -96,6 +124,10 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
     if (!priceId || !fanId) {
       throw new functions.https.HttpsError('invalid-argument', 'Missing required parameters');
     }
+
+    // SECURITY: Validate the client-provided priceId against the server-side whitelist.
+    // This prevents a malicious client from substituting an arbitrary Stripe price ID.
+    validatePriceId(priceId);
 
     // Get fan data from Firestore
     const fanDoc = await db.collection('fans').doc(fanId).get();
@@ -251,6 +283,10 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
     if (!priceId || !venueId) {
       throw new functions.https.HttpsError('invalid-argument', 'Missing required parameters');
     }
+
+    // SECURITY: Validate the client-provided priceId against the server-side whitelist.
+    // This prevents a malicious client from substituting an arbitrary Stripe price ID.
+    validatePriceId(priceId);
 
     // Get venue data from Firestore
     const venueDoc = await db.collection('venues').doc(venueId).get();
