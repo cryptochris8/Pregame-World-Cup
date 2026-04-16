@@ -21,6 +21,9 @@ class TeamTile extends StatelessWidget {
   /// Whether to show the favorite button
   final bool showFavoriteButton;
 
+  /// Whether to show a confirmation dialog before unfavoriting
+  final bool confirmBeforeUnfavorite;
+
   const TeamTile({
     super.key,
     required this.team,
@@ -31,6 +34,7 @@ class TeamTile extends StatelessWidget {
     this.isFavorite = false,
     this.onFavoriteToggle,
     this.showFavoriteButton = true,
+    this.confirmBeforeUnfavorite = true,
   });
 
   @override
@@ -145,6 +149,7 @@ class TeamTile extends StatelessWidget {
                 isFavorite: isFavorite,
                 onPressed: onFavoriteToggle,
                 size: 20,
+                confirmBeforeUnfavorite: confirmBeforeUnfavorite,
               ),
             const SizedBox(width: 4),
             const Icon(Icons.chevron_right, color: Colors.white38),
@@ -169,6 +174,9 @@ class TeamCard extends StatelessWidget {
   /// Whether to show the favorite button
   final bool showFavoriteButton;
 
+  /// Whether to show a confirmation dialog before unfavoriting
+  final bool confirmBeforeUnfavorite;
+
   const TeamCard({
     super.key,
     required this.team,
@@ -176,6 +184,7 @@ class TeamCard extends StatelessWidget {
     this.isFavorite = false,
     this.onFavoriteToggle,
     this.showFavoriteButton = true,
+    this.confirmBeforeUnfavorite = true,
   });
 
   @override
@@ -279,6 +288,7 @@ class TeamCard extends StatelessWidget {
                     isFavorite: isFavorite,
                     onPressed: onFavoriteToggle,
                     size: 18,
+                    confirmBeforeUnfavorite: confirmBeforeUnfavorite,
                   ),
                 ),
             ],

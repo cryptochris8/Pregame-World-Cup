@@ -13,6 +13,26 @@ class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
 class MockUser extends Mock implements User {}
 
+/// A test subclass that forces getAllPredictions to throw,
+/// simulating an unexpected error in the Future chain.
+class FailingPredictionsRepository extends PredictionsRepositoryImpl {
+  FailingPredictionsRepository({
+    required super.sharedPreferences,
+    required super.firestore,
+    required super.firebaseAuth,
+  });
+
+  @override
+  Future<List<MatchPrediction>> getAllPredictions() {
+    return Future.error(Exception('simulated storage failure'));
+  }
+
+  @override
+  Future<PredictionStats> getPredictionStats() {
+    return Future.error(Exception('simulated stats failure'));
+  }
+}
+
 void main() {
   late SharedPreferences sharedPreferences;
   late FakeFirebaseFirestore fakeFirestore;
@@ -685,6 +705,19 @@ void main() {
       final first = await stream.first;
       expect(first.length, 1);
     });
+
+    test('emits empty list when underlying Future fails', () async {
+      final failingRepo = FailingPredictionsRepository(
+        sharedPreferences: sharedPreferences,
+        firestore: fakeFirestore,
+        firebaseAuth: mockAuth,
+      );
+      addTearDown(() => failingRepo.dispose());
+
+      final stream = failingRepo.watchPredictions();
+      final first = await stream.first;
+      expect(first, isEmpty);
+    });
   });
 
   group('watchPredictionStats', () {
@@ -692,6 +725,21 @@ void main() {
       final stream = repository.watchPredictionStats();
       final first = await stream.first;
       expect(first.totalPredictions, 0);
+    });
+
+    test('emits empty stats when underlying Future fails', () async {
+      final failingRepo = FailingPredictionsRepository(
+        sharedPreferences: sharedPreferences,
+        firestore: fakeFirestore,
+        firebaseAuth: mockAuth,
+      );
+      addTearDown(() => failingRepo.dispose());
+
+      final stream = failingRepo.watchPredictionStats();
+      final first = await stream.first;
+      expect(first.totalPredictions, 0);
+      expect(first.correctResults, 0);
+      expect(first.totalPoints, 0);
     });
   });
 

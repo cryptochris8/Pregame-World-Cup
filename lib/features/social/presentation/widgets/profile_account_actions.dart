@@ -47,7 +47,7 @@ class ProfileAccountActions extends StatelessWidget {
               Text(
                 '|',
                 style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.textTheme.bodyMedium?.color?.withOpacity(0.5),
+                  color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.5),
                 ),
               ),
               const SizedBox(width: 16),
@@ -76,7 +76,7 @@ class ProfileAccountActions extends StatelessWidget {
             l10n.appDisclaimer,
             textAlign: TextAlign.center,
             style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+              color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
               fontSize: 11,
             ),
           ),

@@ -237,6 +237,14 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
                   const SizedBox(height: 16),
                   _buildHeadToHeadSection(),
 
+                  // Probability bar (visual win/draw/loss gauge)
+                  if (_localPrediction != null &&
+                      match.homeTeamCode != null &&
+                      match.awayTeamCode != null) ...[
+                    const SizedBox(height: 16),
+                    _buildProbabilityBar(),
+                  ],
+
                   // AI Match Summary
                   const SizedBox(height: 16),
                   _buildAIMatchSummarySection(),
@@ -347,6 +355,48 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
       team2Name: match.awayTeamName,
       team1FlagUrl: match.homeTeamFlagUrl,
       team2FlagUrl: match.awayTeamFlagUrl,
+    );
+  }
+
+  Widget _buildProbabilityBar() {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppTheme.backgroundElevated,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: AppTheme.primaryPurple.withValues(alpha: 0.3),
+        ),
+      ),
+      child: Column(
+        children: [
+          const Row(
+            children: [
+              Icon(
+                Icons.bar_chart_rounded,
+                color: AppTheme.primaryPurple,
+                size: 18,
+              ),
+              SizedBox(width: 8),
+              Text(
+                'WIN PROBABILITY',
+                style: TextStyle(
+                  color: Colors.white54,
+                  fontSize: 11,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.5,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          ProbabilityBar(
+            prediction: _localPrediction!,
+            homeTeamName: match.homeTeamName,
+            awayTeamName: match.awayTeamName,
+          ),
+        ],
+      ),
     );
   }
 

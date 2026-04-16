@@ -31,6 +31,9 @@ class MatchRow extends StatelessWidget {
   /// Whether to show the prediction button
   final bool showPredictionButton;
 
+  /// Whether to show a confirmation dialog before unfavoriting
+  final bool confirmBeforeUnfavorite;
+
   const MatchRow({
     super.key,
     required this.match,
@@ -41,6 +44,7 @@ class MatchRow extends StatelessWidget {
     this.prediction,
     this.onPrediction,
     this.showPredictionButton = false,
+    this.confirmBeforeUnfavorite = true,
   });
 
   @override
@@ -109,6 +113,7 @@ class MatchRow extends StatelessWidget {
                 isFavorite: isFavorite,
                 onPressed: onFavoriteToggle,
                 size: 20,
+                confirmBeforeUnfavorite: confirmBeforeUnfavorite,
               )
             : null,
       ),

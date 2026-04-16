@@ -90,12 +90,12 @@ class ProfileFeatureCards extends StatelessWidget {
         color: theme.cardColor,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: color.withOpacity(0.3),
+          color: color.withValues(alpha:0.3),
           width: 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha:0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -106,7 +106,7 @@ class ProfileFeatureCards extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
+              color: color.withValues(alpha:0.1),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
@@ -130,7 +130,7 @@ class ProfileFeatureCards extends StatelessWidget {
                 Text(
                   description,
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+                    color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
                   ),
                 ),
               ],
@@ -139,7 +139,7 @@ class ProfileFeatureCards extends StatelessWidget {
           Icon(
             Icons.arrow_forward_ios,
             size: 16,
-            color: theme.textTheme.bodyMedium?.color?.withOpacity(0.5),
+            color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.5),
           ),
         ],
       ),
@@ -165,12 +165,12 @@ class ProfileFeatureCards extends StatelessWidget {
           color: theme.cardColor,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: color.withOpacity(0.3),
+            color: color.withValues(alpha:0.3),
             width: 1,
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha:0.05),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
@@ -181,7 +181,7 @@ class ProfileFeatureCards extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.1),
+                color: color.withValues(alpha:0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(
@@ -206,7 +206,7 @@ class ProfileFeatureCards extends StatelessWidget {
                     description,
                     style: theme.textTheme.bodySmall?.copyWith(
                       color:
-                          theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+                          theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
                     ),
                   ),
                 ],
@@ -215,7 +215,7 @@ class ProfileFeatureCards extends StatelessWidget {
             Icon(
               Icons.arrow_forward_ios,
               size: 16,
-              color: theme.textTheme.bodyMedium?.color?.withOpacity(0.5),
+              color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.5),
             ),
           ],
         ),

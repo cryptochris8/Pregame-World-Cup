@@ -1,5 +1,6 @@
 import 'dart:async';
 import '../../../../core/constants/firestore_collections.dart';
+import '../../../../core/services/logging_service.dart';
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -13,6 +14,7 @@ import '../../domain/repositories/predictions_repository.dart';
 class PredictionsRepositoryImpl implements PredictionsRepository {
   static const String _predictionsKey = 'world_cup_predictions';
   static const String _statsKey = 'world_cup_prediction_stats';
+  static const String _logTag = 'PredictionsRepo';
   static const String _firestorePredictionsCollection = 'user_predictions';
   static const String _firestoreLeaderboardCollection = 'prediction_leaderboard';
 
@@ -183,6 +185,12 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
     // Emit current value immediately
     getAllPredictions().then((predictions) {
       _predictionsController.add(predictions);
+    }).catchError((Object error) {
+      LoggingService.error(
+        'Error loading predictions for stream: $error',
+        tag: _logTag,
+      );
+      _predictionsController.add([]);
     });
     return _predictionsController.stream;
   }
@@ -192,6 +200,12 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
     // Emit current value immediately
     getPredictionStats().then((stats) {
       _statsController.add(stats);
+    }).catchError((Object error) {
+      LoggingService.error(
+        'Error loading prediction stats for stream: $error',
+        tag: _logTag,
+      );
+      _statsController.add(const PredictionStats());
     });
     return _statsController.stream;
   }

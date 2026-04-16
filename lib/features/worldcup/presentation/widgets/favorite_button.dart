@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 
 /// A button to toggle favorite status for teams or matches
 class FavoriteButton extends StatelessWidget {
@@ -23,6 +25,9 @@ class FavoriteButton extends StatelessWidget {
   /// Tooltip text
   final String? tooltip;
 
+  /// Whether to show a confirmation dialog before unfavoriting
+  final bool confirmBeforeUnfavorite;
+
   const FavoriteButton({
     super.key,
     required this.isFavorite,
@@ -32,7 +37,44 @@ class FavoriteButton extends StatelessWidget {
     this.unfavoriteColor,
     this.animate = true,
     this.tooltip,
+    this.confirmBeforeUnfavorite = false,
   });
+
+  Future<void> _handlePress(BuildContext context) async {
+    if (isFavorite && confirmBeforeUnfavorite) {
+      final confirmed = await showUnfavoriteConfirmation(context);
+      if (confirmed == true) {
+        onPressed?.call();
+      }
+    } else {
+      onPressed?.call();
+    }
+  }
+
+  /// Show a confirmation dialog before removing from favorites.
+  /// Returns true if confirmed, false or null otherwise.
+  static Future<bool?> showUnfavoriteConfirmation(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
+        title: Text(l10n.removeFromFavorites),
+        content: Text(l10n.removeFromFavoritesConfirm),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: Text(l10n.remove),
+          ),
+        ],
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +105,7 @@ class FavoriteButton extends StatelessWidget {
 
     return IconButton(
       icon: icon,
-      onPressed: onPressed,
+      onPressed: onPressed != null ? () => _handlePress(context) : null,
       tooltip: tooltip ?? (isFavorite ? 'Remove from favorites' : 'Add to favorites'),
       splashRadius: size * 0.8,
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/worldcup/presentation/widgets/widgets.dart';
+import '../../../../test_helpers/l10n_test_helper.dart';
 
 void main() {
   setUp(() {
@@ -202,6 +203,160 @@ void main() {
 
       // Should have AnimatedSwitcher when animate is true
       expect(find.byType(AnimatedSwitcher), findsOneWidget);
+    });
+  });
+
+  group('FavoriteButton confirmation dialog', () {
+    testWidgets(
+        'does not show dialog when confirmBeforeUnfavorite is false',
+        (tester) async {
+      bool wasPressed = false;
+
+      await tester.pumpWidget(
+        MaterialApp(
+          localizationsDelegates: testLocalizationsDelegates,
+          supportedLocales: testSupportedLocales,
+          home: Scaffold(
+            body: FavoriteButton(
+              isFavorite: true,
+              onPressed: () => wasPressed = true,
+              confirmBeforeUnfavorite: false,
+            ),
+          ),
+        ),
+      );
+
+      await tester.tap(find.byType(IconButton));
+      await tester.pumpAndSettle();
+
+      // No dialog should appear
+      expect(find.byType(AlertDialog), findsNothing);
+      // Callback should fire immediately
+      expect(wasPressed, isTrue);
+    });
+
+    testWidgets(
+        'shows confirmation dialog when unfavoriting with confirmBeforeUnfavorite true',
+        (tester) async {
+      bool wasPressed = false;
+
+      await tester.pumpWidget(
+        MaterialApp(
+          localizationsDelegates: testLocalizationsDelegates,
+          supportedLocales: testSupportedLocales,
+          home: Scaffold(
+            body: FavoriteButton(
+              isFavorite: true,
+              onPressed: () => wasPressed = true,
+              confirmBeforeUnfavorite: true,
+            ),
+          ),
+        ),
+      );
+
+      await tester.tap(find.byType(IconButton));
+      await tester.pumpAndSettle();
+
+      // Dialog should appear
+      expect(find.byType(AlertDialog), findsOneWidget);
+      expect(find.text('Remove from favorites?'), findsOneWidget);
+      expect(find.text('Are you sure you want to remove this from your favorites?'),
+          findsOneWidget);
+      // Callback should NOT have fired yet
+      expect(wasPressed, isFalse);
+    });
+
+    testWidgets(
+        'does not show dialog when favoriting (isFavorite is false)',
+        (tester) async {
+      bool wasPressed = false;
+
+      await tester.pumpWidget(
+        MaterialApp(
+          localizationsDelegates: testLocalizationsDelegates,
+          supportedLocales: testSupportedLocales,
+          home: Scaffold(
+            body: FavoriteButton(
+              isFavorite: false,
+              onPressed: () => wasPressed = true,
+              confirmBeforeUnfavorite: true,
+            ),
+          ),
+        ),
+      );
+
+      await tester.tap(find.byType(IconButton));
+      await tester.pumpAndSettle();
+
+      // No dialog — adding to favorites should be immediate
+      expect(find.byType(AlertDialog), findsNothing);
+      expect(wasPressed, isTrue);
+    });
+
+    testWidgets('confirmation dialog cancel does not call onPressed',
+        (tester) async {
+      bool wasPressed = false;
+
+      await tester.pumpWidget(
+        MaterialApp(
+          localizationsDelegates: testLocalizationsDelegates,
+          supportedLocales: testSupportedLocales,
+          home: Scaffold(
+            body: FavoriteButton(
+              isFavorite: true,
+              onPressed: () => wasPressed = true,
+              confirmBeforeUnfavorite: true,
+            ),
+          ),
+        ),
+      );
+
+      await tester.tap(find.byType(IconButton));
+      await tester.pumpAndSettle();
+
+      // Dialog is shown
+      expect(find.byType(AlertDialog), findsOneWidget);
+
+      // Tap Cancel
+      await tester.tap(find.text('Cancel'));
+      await tester.pumpAndSettle();
+
+      // Dialog dismissed, callback NOT called
+      expect(find.byType(AlertDialog), findsNothing);
+      expect(wasPressed, isFalse);
+    });
+
+    testWidgets('confirmation dialog confirm calls onPressed',
+        (tester) async {
+      bool wasPressed = false;
+
+      await tester.pumpWidget(
+        MaterialApp(
+          localizationsDelegates: testLocalizationsDelegates,
+          supportedLocales: testSupportedLocales,
+          home: Scaffold(
+            body: FavoriteButton(
+              isFavorite: true,
+              onPressed: () => wasPressed = true,
+              confirmBeforeUnfavorite: true,
+            ),
+          ),
+        ),
+      );
+
+      await tester.tap(find.byType(IconButton));
+      await tester.pumpAndSettle();
+
+      // Dialog is shown
+      expect(find.byType(AlertDialog), findsOneWidget);
+
+      // Tap Remove (confirm button)
+      await tester.tap(find.text('Remove'));
+      await tester.pumpAndSettle();
+
+      // Dialog dismissed, callback IS called
+      expect(find.byType(AlertDialog), findsNothing);
+      expect(wasPressed, isTrue);
     });
   });
 

@@ -4284,4 +4284,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get copaTitle => 'Copa';
+
+  @override
+  String get removeFromFavorites => 'Remove from favorites?';
+
+  @override
+  String get removeFromFavoritesConfirm =>
+      'Are you sure you want to remove this from your favorites?';
 }

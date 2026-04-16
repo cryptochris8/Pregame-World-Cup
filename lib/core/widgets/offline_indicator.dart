@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../config/app_theme.dart';
 import '../services/offline_service.dart';
 
-/// A banner that shows when the app is offline
+/// A branded banner that shows when the app is offline.
+///
+/// Displays a thin, non-intrusive bar with AppTheme styling and a gradient
+/// accent border. Automatically hides when the device regains connectivity.
 class OfflineBanner extends StatelessWidget {
   final VoidCallback? onRetry;
 
@@ -22,99 +26,156 @@ class OfflineBanner extends StatelessWidget {
           return const SizedBox.shrink();
         }
 
-        return Material(
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 300),
-            color: _getBannerColor(service.state),
-            child: SafeArea(
-              bottom: false,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: Row(
-                  children: [
-                    _getIcon(service.state),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            _getTitle(service.state),
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 14,
-                            ),
-                          ),
-                          if (service.hasPendingActions)
-                            Text(
-                              '${service.pendingActionsCount} pending actions',
-                              style: TextStyle(
-                                color: Colors.white.withValues(alpha: 0.8),
-                                fontSize: 12,
-                              ),
-                            ),
-                        ],
-                      ),
-                    ),
-                    if (service.isOffline && onRetry != null)
-                      TextButton(
-                        onPressed: onRetry,
-                        style: TextButton.styleFrom(
-                          foregroundColor: Colors.white,
-                        ),
-                        child: const Text('Retry'),
-                      ),
-                    if (service.isSyncing)
-                      const SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-            ),
-          ),
+        return _BrandedBannerContent(
+          state: service.state,
+          hasPendingActions: service.hasPendingActions,
+          pendingActionsCount: service.pendingActionsCount,
+          isSyncing: service.isSyncing,
+          isOffline: service.isOffline,
+          onRetry: onRetry,
         );
       },
     );
   }
+}
 
-  Color _getBannerColor(ConnectivityState state) {
-    switch (state) {
-      case ConnectivityState.online:
-        return Colors.green;
-      case ConnectivityState.offline:
-        return Colors.red.shade700;
-      case ConnectivityState.syncing:
-        return Colors.orange;
-    }
+/// The visual content of the offline banner, extracted so it can be tested
+/// without needing a live [OfflineService] singleton.
+class _BrandedBannerContent extends StatelessWidget {
+  final ConnectivityState state;
+  final bool hasPendingActions;
+  final int pendingActionsCount;
+  final bool isSyncing;
+  final bool isOffline;
+  final VoidCallback? onRetry;
+
+  const _BrandedBannerContent({
+    required this.state,
+    required this.hasPendingActions,
+    required this.pendingActionsCount,
+    required this.isSyncing,
+    required this.isOffline,
+    this.onRetry,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: Container(
+        decoration: const BoxDecoration(
+          color: AppTheme.backgroundCard,
+          border: Border(
+            bottom: BorderSide(
+              color: AppTheme.primaryOrange,
+              width: 2,
+            ),
+          ),
+        ),
+        child: SafeArea(
+          bottom: false,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Row(
+              children: [
+                _buildIcon(),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        _getTitle(),
+                        style: const TextStyle(
+                          color: AppTheme.textWhite,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 13,
+                        ),
+                      ),
+                      Text(
+                        _getSubtitle(),
+                        style: const TextStyle(
+                          color: AppTheme.textTertiary,
+                          fontSize: 11,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                if (isOffline && onRetry != null)
+                  TextButton(
+                    onPressed: onRetry,
+                    style: TextButton.styleFrom(
+                      foregroundColor: AppTheme.primaryOrange,
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      minimumSize: const Size(0, 32),
+                    ),
+                    child: const Text('Retry'),
+                  ),
+                if (isSyncing)
+                  const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      valueColor: AlwaysStoppedAnimation<Color>(
+                        AppTheme.primaryOrange,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
-  Widget _getIcon(ConnectivityState state) {
+  Widget _buildIcon() {
+    final IconData iconData;
+    final Color iconColor;
+
     switch (state) {
       case ConnectivityState.online:
-        return const Icon(Icons.cloud_done, color: Colors.white);
+        iconData = Icons.cloud_done;
+        iconColor = AppTheme.secondaryEmerald;
       case ConnectivityState.offline:
-        return const Icon(Icons.cloud_off, color: Colors.white);
+        iconData = Icons.cloud_off;
+        iconColor = AppTheme.primaryOrange;
       case ConnectivityState.syncing:
-        return const Icon(Icons.sync, color: Colors.white);
+        iconData = Icons.sync;
+        iconColor = AppTheme.accentGold;
     }
+
+    return Icon(iconData, color: iconColor, size: 20);
   }
 
-  String _getTitle(ConnectivityState state) {
+  String _getTitle() {
     switch (state) {
       case ConnectivityState.online:
         return 'Back Online';
       case ConnectivityState.offline:
-        return 'You\'re Offline';
+        return "You're offline";
       case ConnectivityState.syncing:
         return 'Syncing...';
+    }
+  }
+
+  String _getSubtitle() {
+    switch (state) {
+      case ConnectivityState.online:
+        if (hasPendingActions) {
+          return '$pendingActionsCount pending actions';
+        }
+        return 'Connection restored';
+      case ConnectivityState.offline:
+        return 'Showing cached content';
+      case ConnectivityState.syncing:
+        if (hasPendingActions) {
+          return '$pendingActionsCount actions remaining';
+        }
+        return 'Updating content...';
     }
   }
 }

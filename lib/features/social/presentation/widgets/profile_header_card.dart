@@ -31,13 +31,13 @@ class ProfileHeaderCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppTheme.accentGold.withOpacity(0.1),
-            AppTheme.primaryBlue.withOpacity(0.1),
+            AppTheme.accentGold.withValues(alpha:0.1),
+            AppTheme.primaryBlue.withValues(alpha:0.1),
           ],
         ),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: AppTheme.accentGold.withOpacity(0.3),
+          color: AppTheme.accentGold.withValues(alpha:0.3),
           width: 1,
         ),
       ),
@@ -55,7 +55,7 @@ class ProfileHeaderCard extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: AppTheme.accentGold.withOpacity(0.3),
+                      color: AppTheme.accentGold.withValues(alpha:0.3),
                       blurRadius: 15,
                       spreadRadius: 2,
                     ),
@@ -63,7 +63,7 @@ class ProfileHeaderCard extends StatelessWidget {
                 ),
                 child: CircleAvatar(
                   radius: 50,
-                  backgroundColor: AppTheme.primaryBlue.withOpacity(0.2),
+                  backgroundColor: AppTheme.primaryBlue.withValues(alpha:0.2),
                   backgroundImage: profile?.profileImageUrl != null
                       ? NetworkImage(profile!.profileImageUrl!)
                       : null,
@@ -116,7 +116,7 @@ class ProfileHeaderCard extends StatelessWidget {
                 vertical: 6,
               ),
               decoration: BoxDecoration(
-                color: Colors.green.withOpacity(0.2),
+                color: Colors.green.withValues(alpha:0.2),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
                   color: Colors.green,
@@ -155,13 +155,13 @@ class ProfileHeaderCard extends StatelessWidget {
                 Icon(
                   Icons.email_outlined,
                   size: 16,
-                  color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+                  color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   currentUser!.email!,
                   style: theme.textTheme.bodyMedium?.copyWith(
-                    color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+                    color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
                   ),
                 ),
               ],
@@ -177,13 +177,13 @@ class ProfileHeaderCard extends StatelessWidget {
                 Icon(
                   Icons.calendar_today,
                   size: 16,
-                  color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+                  color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   'Joined ${_formatJoinDate(profile!.createdAt)}',
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
+                    color: theme.textTheme.bodyMedium?.color?.withValues(alpha:0.7),
                   ),
                 ),
               ],

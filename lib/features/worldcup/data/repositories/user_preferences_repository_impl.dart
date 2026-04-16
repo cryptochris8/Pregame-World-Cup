@@ -94,6 +94,12 @@ class UserPreferencesRepositoryImpl implements UserPreferencesRepository {
     // Emit current value immediately
     getPreferences().then((prefs) {
       _preferencesController.add(prefs);
+    }).catchError((Object error) {
+      LoggingService.error(
+        'Error loading preferences for stream: $error',
+        tag: _logTag,
+      );
+      _preferencesController.add(UserPreferences.empty());
     });
     return _preferencesController.stream;
   }

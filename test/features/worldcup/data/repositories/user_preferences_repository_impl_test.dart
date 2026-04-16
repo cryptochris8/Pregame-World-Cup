@@ -11,6 +11,21 @@ import '../../../worldcup/presentation/bloc/mock_repositories.dart';
 
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
+/// A test subclass that forces getPreferences to throw,
+/// simulating an unexpected error in the Future chain.
+class FailingUserPreferencesRepository extends UserPreferencesRepositoryImpl {
+  FailingUserPreferencesRepository({
+    required super.sharedPreferences,
+    super.firestore,
+    super.auth,
+  });
+
+  @override
+  Future<UserPreferences> getPreferences() {
+    return Future.error(Exception('simulated preferences failure'));
+  }
+}
+
 void main() {
   const preferencesKey = 'world_cup_user_preferences';
 
@@ -556,6 +571,22 @@ void main() {
       // Should have initial emission + one from addFavoriteTeam
       expect(emissions.length, greaterThanOrEqualTo(2));
       expect(emissions.last.favoriteTeamCodes, contains('BRA'));
+    });
+
+    test('emits empty preferences when underlying Future fails', () async {
+      final failingRepo = FailingUserPreferencesRepository(
+        sharedPreferences: sharedPreferences,
+        firestore: fakeFirestore,
+        auth: mockAuth,
+      );
+      addTearDown(() => failingRepo.dispose());
+
+      final stream = failingRepo.watchPreferences();
+      final first = await stream.first;
+
+      expect(first.favoriteTeamCodes, isEmpty);
+      expect(first.favoriteMatchIds, isEmpty);
+      expect(first.notifyFavoriteTeamMatches, isTrue);
     });
   });
 

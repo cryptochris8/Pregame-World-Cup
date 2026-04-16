@@ -19,6 +19,7 @@ import '../../injection_container.dart' as di;
 
 import '../../core/animations/animated_button.dart';
 import '../../core/animations/swipe_gestures.dart';
+import '../../core/widgets/offline_indicator.dart';
 import '../chatbot/presentation/widgets/chatbot_fab.dart';
 
 class MainNavigationScreen extends StatefulWidget {
@@ -173,11 +174,18 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,
-        child: SwipeablePageView(
-        controller: _pageController,
-        onPageChanged: _onPageChanged,
-        enableSwipe: true,
-        children: _screens,
+        child: Column(
+          children: [
+            const OfflineBanner(),
+            Expanded(
+              child: SwipeablePageView(
+                controller: _pageController,
+                onPageChanged: _onPageChanged,
+                enableSwipe: true,
+                children: _screens,
+              ),
+            ),
+          ],
         ),
       ),
       floatingActionButton: const ChatbotFab(),

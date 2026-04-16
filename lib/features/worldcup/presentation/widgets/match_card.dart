@@ -53,6 +53,9 @@ class MatchCard extends StatelessWidget {
   /// Away team details (for AI context)
   final NationalTeam? awayTeam;
 
+  /// Whether to show a confirmation dialog before unfavoriting
+  final bool confirmBeforeUnfavorite;
+
   const MatchCard({
     super.key,
     required this.match,
@@ -69,6 +72,7 @@ class MatchCard extends StatelessWidget {
     this.showAIInsight = true,
     this.homeTeam,
     this.awayTeam,
+    this.confirmBeforeUnfavorite = true,
   });
 
   @override
@@ -205,6 +209,7 @@ class MatchCard extends StatelessWidget {
             isFavorite: isFavorite,
             onPressed: onFavoriteToggle,
             size: compact ? 18 : 20,
+            confirmBeforeUnfavorite: confirmBeforeUnfavorite,
           ),
         ],
       ],

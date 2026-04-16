@@ -5473,5 +5473,14 @@
   "copaTitle": "Copa",
   "@copaTitle": {
     "description": "Title for Copa AI chatbot"
+  },
+
+  "removeFromFavorites": "Remove from favorites?",
+  "@removeFromFavorites": {
+    "description": "Title for unfavorite confirmation dialog"
+  },
+  "removeFromFavoritesConfirm": "Are you sure you want to remove this from your favorites?",
+  "@removeFromFavoritesConfirm": {
+    "description": "Body text for unfavorite confirmation dialog"
   }
 }

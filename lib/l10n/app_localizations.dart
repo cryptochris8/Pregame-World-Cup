@@ -7797,6 +7797,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Copa'**
   String get copaTitle;
+
+  /// Title for unfavorite confirmation dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from favorites?'**
+  String get removeFromFavorites;
+
+  /// Body text for unfavorite confirmation dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to remove this from your favorites?'**
+  String get removeFromFavoritesConfirm;
 }
 
 class _AppLocalizationsDelegate
