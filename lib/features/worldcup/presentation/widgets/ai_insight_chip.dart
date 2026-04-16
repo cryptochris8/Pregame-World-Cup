@@ -125,11 +125,15 @@ class AIInsightChip extends StatelessWidget {
             color: Colors.white,
           ),
           const SizedBox(width: 4),
-          Text(
-            prediction.quickInsight,
-            style: theme.textTheme.labelSmall?.copyWith(
-              color: Colors.white,
-              fontWeight: FontWeight.w600,
+          Flexible(
+            child: Text(
+              prediction.quickInsight,
+              style: theme.textTheme.labelSmall?.copyWith(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+              ),
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
             ),
           ),
         ],

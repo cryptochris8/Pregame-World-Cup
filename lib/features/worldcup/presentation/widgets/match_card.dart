@@ -279,13 +279,15 @@ class MatchCard extends StatelessWidget {
             children: [
               // AI Insight chip
               if (showAIInsight && match.status == MatchStatus.scheduled) ...[
-                AIInsightChip(
-                  match: match,
-                  aiPrediction: aiPrediction,
-                  homeTeam: homeTeam,
-                  awayTeam: awayTeam,
+                Flexible(
+                  child: AIInsightChip(
+                    match: match,
+                    aiPrediction: aiPrediction,
+                    homeTeam: homeTeam,
+                    awayTeam: awayTeam,
+                  ),
                 ),
-                const Spacer(),
+                const SizedBox(width: 8),
               ],
 
               // Prediction button
