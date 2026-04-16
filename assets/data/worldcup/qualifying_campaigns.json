@@ -1212,7 +1212,18 @@
       },
       "cleanSheets": 4,
       "biggestWin": "8-0 vs Moldova",
-      "worstDefeat": "N/A (unbeaten)"
+      "worstDefeat": "N/A (unbeaten)",
+      "recentForm": [
+        {
+          "date": "2026-03-27",
+          "opponent": "Netherlands",
+          "result": "L",
+          "score": "1-2",
+          "venue": "away",
+          "competition": "Friendly",
+          "notes": "Defeat away to the Netherlands. Odegaard missed with knee issue."
+        }
+      ]
     },
     "NZL": {
       "teamCode": "NZL",
@@ -1314,7 +1325,27 @@
       },
       "cleanSheets": 8,
       "biggestWin": "2-0 vs Venezuela",
-      "worstDefeat": "0-2 vs Argentina"
+      "worstDefeat": "0-2 vs Argentina",
+      "recentForm": [
+        {
+          "date": "2026-03-28",
+          "opponent": "Greece",
+          "result": "W",
+          "score": "1-0",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Narrow win over Greece. Disciplined defensive performance."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Morocco",
+          "result": "L",
+          "score": "1-2",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Loss to Morocco. Concerning defensive display."
+        }
+      ]
     },
     "POR": {
       "teamCode": "POR",
@@ -1348,7 +1379,27 @@
       },
       "cleanSheets": 2,
       "biggestWin": "5-0 vs Armenia",
-      "worstDefeat": "1-2 vs Republic of Ireland"
+      "worstDefeat": "1-2 vs Republic of Ireland",
+      "recentForm": [
+        {
+          "date": "2026-03-28",
+          "opponent": "Mexico",
+          "result": "D",
+          "score": "0-0",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Goalless draw vs Mexico. Solid defensive showing."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "USA",
+          "result": "W",
+          "score": "2-0",
+          "venue": "away",
+          "competition": "Friendly",
+          "notes": "Impressive 2-0 win over co-hosts USA. Statement result."
+        }
+      ]
     },
     "QAT": {
       "teamCode": "QAT",
@@ -1416,7 +1467,27 @@
       },
       "cleanSheets": 6,
       "biggestWin": "3-0 vs Lesotho",
-      "worstDefeat": "0-1 vs Nigeria"
+      "worstDefeat": "0-1 vs Nigeria",
+      "recentForm": [
+        {
+          "date": "2026-03-01",
+          "opponent": "Panama",
+          "result": "D",
+          "score": "1-1",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Draw with Panama in March friendly window."
+        },
+        {
+          "date": "2026-03-01",
+          "opponent": "Panama",
+          "result": "L",
+          "score": "1-2",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Second loss to Panama in the same window. Concerning results."
+        }
+      ]
     },
     "SCO": {
       "teamCode": "SCO",
@@ -1450,7 +1521,18 @@
       },
       "cleanSheets": 4,
       "biggestWin": "3-0 vs Gibraltar",
-      "worstDefeat": "0-1 vs Spain"
+      "worstDefeat": "0-1 vs Spain",
+      "recentForm": [
+        {
+          "date": "2026-03-28",
+          "opponent": "Japan",
+          "result": "L",
+          "score": "0-1",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Narrow loss to Japan. Competitive performance but ultimately beaten."
+        }
+      ]
     },
     "SEN": {
       "teamCode": "SEN",
@@ -1518,7 +1600,27 @@
       },
       "cleanSheets": 4,
       "biggestWin": "4-0 vs Sweden",
-      "worstDefeat": "N/A (unbeaten)"
+      "worstDefeat": "N/A (unbeaten)",
+      "recentForm": [
+        {
+          "date": "2026-03-27",
+          "opponent": "Germany",
+          "result": "L",
+          "score": "3-4",
+          "venue": "away",
+          "competition": "Friendly",
+          "notes": "Thrilling 3-4 loss away to Germany. Competitive and impressive despite defeat."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Norway",
+          "result": "D",
+          "score": "0-0",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Goalless draw with Norway. Solid defensive display."
+        }
+      ]
     },
     "TUN": {
       "teamCode": "TUN",
@@ -1552,7 +1654,27 @@
       },
       "cleanSheets": 5,
       "biggestWin": "2-0 vs Mali",
-      "worstDefeat": "0-1 vs Senegal"
+      "worstDefeat": "0-1 vs Senegal",
+      "recentForm": [
+        {
+          "date": "2026-03-01",
+          "opponent": "Haiti",
+          "result": "W",
+          "score": "1-0",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Narrow win over Haiti."
+        },
+        {
+          "date": "2026-03-01",
+          "opponent": "Canada",
+          "result": "D",
+          "score": "0-0",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Goalless draw with Canada."
+        }
+      ]
     },
     "TUR": {
       "teamCode": "TUR",
@@ -1586,7 +1708,27 @@
       },
       "cleanSheets": 1,
       "biggestWin": "5-1 vs Bulgaria",
-      "worstDefeat": "0-3 vs Spain"
+      "worstDefeat": "0-3 vs Spain",
+      "recentForm": [
+        {
+          "date": "2026-03-26",
+          "opponent": "Romania",
+          "result": "W",
+          "score": null,
+          "venue": "neutral",
+          "competition": "UEFA Playoff Path C Semi-Final",
+          "notes": "Won playoff semi-final vs Romania. Calhanoglu picked up calf problem."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Kosovo",
+          "result": "W",
+          "score": "1-0",
+          "venue": "neutral",
+          "competition": "UEFA Playoff Path C Final",
+          "notes": "Won playoff final 1-0 to qualify for World Cup. Calhanoglu played through calf issue."
+        }
+      ]
     },
     "URU": {
       "teamCode": "URU",
@@ -1620,7 +1762,18 @@
       },
       "cleanSheets": 8,
       "biggestWin": "3-0 vs Chile",
-      "worstDefeat": "0-2 vs Ecuador"
+      "worstDefeat": "0-2 vs Ecuador",
+      "recentForm": [
+        {
+          "date": "2025-11-01",
+          "opponent": "USA",
+          "result": "L",
+          "score": "1-5",
+          "venue": "away",
+          "competition": "Friendly",
+          "notes": "Alarming 1-5 loss to the USA. Serious concerns about defensive fragility."
+        }
+      ]
     },
     "USA": {
       "teamCode": "USA",
@@ -1654,7 +1807,27 @@
       },
       "cleanSheets": 0,
       "biggestWin": "N/A",
-      "worstDefeat": "N/A"
+      "worstDefeat": "N/A",
+      "recentForm": [
+        {
+          "date": "2026-03-28",
+          "opponent": "Belgium",
+          "result": "L",
+          "score": "2-5",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Humiliating 2-5 loss to Belgium. Defensive shambles."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Portugal",
+          "result": "L",
+          "score": "0-2",
+          "venue": "neutral",
+          "competition": "Friendly",
+          "notes": "Another defeat, 0-2 to Portugal. Alarming March window — two heavy losses."
+        }
+      ]
     },
     "UZB": {
       "teamCode": "UZB",
@@ -1688,7 +1861,18 @@
       },
       "cleanSheets": 4,
       "biggestWin": "3-0 vs Kyrgyzstan",
-      "worstDefeat": "0-1 vs Iran"
+      "worstDefeat": "0-1 vs Iran",
+      "recentForm": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Venezuela",
+          "result": "W",
+          "score": null,
+          "venue": "neutral",
+          "competition": "Friendly Tournament",
+          "notes": "Won on penalties in friendly tournament vs Venezuela."
+        }
+      ]
     }
   }
 }

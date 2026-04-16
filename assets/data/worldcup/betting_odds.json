@@ -118,10 +118,10 @@
         "odds_decimal": 11.00,
         "implied_probability_pct": 9.1,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "betmgm_odds": "+1100",
         "tier": "contender",
-        "notes": "Won Nations League beating Germany and Spain in penalty shootout. Ronaldo still in squad."
+        "notes": "Won Nations League beating Germany and Spain in penalty shootout. Ronaldo fit (scored brace Apr 3). Beat USA 2-0 in March. Leao and Diogo Costa doubts."
       },
       {
         "team": "Germany",
@@ -236,14 +236,14 @@
       {
         "team": "United States",
         "code": "USA",
-        "odds_american": "+8000",
-        "odds_decimal": 81.00,
-        "implied_probability_pct": 1.2,
+        "odds_american": "+4000",
+        "odds_decimal": 41.00,
+        "implied_probability_pct": 2.4,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "betmgm_odds": "+5000",
         "tier": "longshot",
-        "notes": "Co-hosts. Favorable Group D draw. Never advanced past quarterfinals. Home advantage significant."
+        "notes": "Co-hosts. Odds drifted from +1800 to +4000 after disastrous March: Belgium 2-5 L, Portugal 0-2 L. Pulisic goalless in 16. Adams, Reyna, Carter-Vickers injury concerns."
       },
       {
         "team": "Switzerland",

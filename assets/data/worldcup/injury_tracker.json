@@ -643,17 +643,17 @@
       "country": "Portugal",
       "club": "Al Nassr (Saudi Pro League)",
       "position": "Forward",
-      "injuryType": "Hamstring concern (muscle fatigue/possible strain)",
-      "injuryDate": "2026-02-28",
-      "expectedReturn": "1-3 weeks (pending medical tests)",
-      "availabilityStatus": "minor_concern",
+      "injuryType": "Recovered from hamstring concern",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fully fit",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-28",
-        "opponent": "Al-Fayha (Saudi Pro League)",
-        "notes": "Limped off 81st minute with muscle discomfort, missed penalty earlier"
+        "date": "2026-04-03",
+        "opponent": "Al Nassr (Saudi Pro League)",
+        "notes": "Scored brace, fully recovered from hamstring issue"
       },
-      "source": "SportBible, Tribuna.com, GB News, Goal.com - Mar 1, 2026",
-      "notes": "Age 41. Forced off with hamstring concern during 3-1 win. Al Nassr boss Jorge Jesus said it was precautionary. Medical tests ongoing. Expected fit for World Cup even in worst case (3-5 weeks). Would be record 6th World Cup."
+      "source": "Country Scout intel, Al Nassr reports - April 2026",
+      "notes": "Age 41. Fully recovered from February hamstring concern. Scored brace on April 3, confirming fitness. Would be record 6th World Cup."
     },
     {
       "playerName": "Bruno Fernandes",
@@ -697,17 +697,17 @@
       "country": "Portugal",
       "club": "AC Milan",
       "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Withdrew from March squad",
+      "injuryDate": "2026-03-20",
+      "expectedReturn": "Uncertain — monitoring fitness",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-03-15",
         "opponent": "AC Milan (Serie A)",
-        "notes": "Full match played"
+        "notes": "Withdrew from Portugal's March international squad"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Explosive winger. No injury concerns. Important attacking option for Portugal."
+      "source": "Country Scout intel, AC Milan reports - April 2026",
+      "notes": "Explosive winger withdrew from Portugal's March squad. A doubt heading into the World Cup. Important attacking option for Portugal when fit."
     },
     {
       "playerName": "Ruben Dias",
@@ -726,6 +726,24 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "World-class center-back. No current injury concerns. Defensive leader for Portugal."
+    },
+    {
+      "playerName": "Diogo Costa",
+      "teamCode": "POR",
+      "country": "Portugal",
+      "club": "FC Porto",
+      "position": "Goalkeeper",
+      "injuryType": "Withdrew from March squad",
+      "injuryDate": "2026-03-20",
+      "expectedReturn": "Uncertain — monitoring fitness",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "FC Porto (Primeira Liga)",
+        "notes": "Withdrew from Portugal's March international squad"
+      },
+      "source": "Country Scout intel, FC Porto reports - April 2026",
+      "notes": "Portugal's first-choice goalkeeper withdrew from the March squad. A doubt heading into the World Cup. Key player for Portugal's defense."
     },
     {
       "playerName": "Kevin De Bruyne",
@@ -1057,17 +1075,17 @@
       "country": "United States",
       "club": "AC Milan",
       "position": "Forward/Winger",
-      "injuryType": "Recurring hamstring/bursitis issues",
-      "injuryDate": "2026-01-15",
-      "expectedReturn": "Currently playing through fitness management",
+      "injuryType": "Form crisis — goalless in 16 matches",
+      "injuryDate": null,
+      "expectedReturn": "N/A - playing but severe form crisis",
       "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-15",
-        "opponent": "AC Milan Serie A match",
-        "notes": "Third injury of 2025-26 season. Currently dealing with bursitis near hip."
+        "date": "2026-03-31",
+        "opponent": "Portugal (International Friendly)",
+        "notes": "Goalless in 16 consecutive matches. Alarming form crisis."
       },
-      "source": "ESPN, World Soccer Talk, SI.com - Feb 2026",
-      "notes": "Zero goals in 2026. Bursitis near hip. Pochettino concerned about availability. When fit, 'undroppable' for USMNT. USA are co-hosts, opening June 11."
+      "source": "Country Scout intel, ESPN, AC Milan - April 2026",
+      "notes": "Goalless in 16 consecutive matches — a severe form crisis. Not physically injured but confidence is shattered. When fit and firing, 'undroppable' for USMNT. USA are co-hosts, opening June 11."
     },
     {
       "playerName": "Weston McKennie",
@@ -1093,17 +1111,17 @@
       "country": "United States",
       "club": "AFC Bournemouth",
       "position": "Midfielder",
-      "injuryType": "Recurring back/hamstring issues",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit but managed",
-      "availabilityStatus": "minor_concern",
+      "injuryType": "Quad injury Mar 3 — returned Apr 11 as sub",
+      "injuryDate": "2026-03-03",
+      "expectedReturn": "Returned April 11 — building fitness",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-04-11",
         "opponent": "Bournemouth (Premier League)",
-        "notes": "Playing regularly"
+        "notes": "Returned as substitute after quad injury on March 3"
       },
-      "source": "ESPN, Pro Football Network - Feb 2026",
-      "notes": "USMNT captain candidate. Has a history of back and hamstring injuries. Currently fit but workload carefully managed. Key leader for the home World Cup."
+      "source": "Country Scout intel, ESPN, Bournemouth reports - April 2026",
+      "notes": "USMNT captain candidate. Suffered quad injury March 3, returned as substitute April 11. A doubt regarding full fitness. Key leader for the home World Cup. History of back and hamstring injuries compounds the concern."
     },
     {
       "playerName": "Gio Reyna",
@@ -1111,17 +1129,17 @@
       "country": "United States",
       "club": "Borussia Dortmund",
       "position": "Midfielder/Forward",
-      "injuryType": "History of muscle injuries (currently fit)",
+      "injuryType": "Only 26 Bundesliga minutes since January — minimal playing time",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "minor_concern",
+      "expectedReturn": "N/A - available but severely lacking minutes",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-04-05",
         "opponent": "Borussia Dortmund (Bundesliga)",
-        "notes": "Playing regularly"
+        "notes": "Only 26 Bundesliga minutes since January. Barely featuring."
       },
-      "source": "ESPN, Bundesliga - Feb 2026",
-      "notes": "Son of USMNT legend Claudio Reyna. Hugely talented but injury-prone. Currently fit and building confidence. Could be key creative spark for USMNT."
+      "source": "Country Scout intel, ESPN, Bundesliga - April 2026",
+      "notes": "Son of USMNT legend Claudio Reyna. Only 26 Bundesliga minutes since January — essentially frozen out. A doubt for the World Cup squad given severe lack of match fitness and rhythm."
     },
     {
       "playerName": "Antonee Robinson",
@@ -1140,6 +1158,24 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "Dynamic left-back nicknamed 'Jedi'. No injury concerns. One of the Premier League's most dynamic fullbacks."
+    },
+    {
+      "playerName": "Cameron Carter-Vickers",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Celtic",
+      "position": "Defender",
+      "injuryType": "Achilles injury",
+      "injuryDate": "2026-02-15",
+      "expectedReturn": "Uncertain — long-term absence expected",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-02-10",
+        "opponent": "Celtic (Scottish Premiership)",
+        "notes": "Suffered Achilles injury, facing long-term absence"
+      },
+      "source": "Country Scout intel, Celtic reports - April 2026",
+      "notes": "Achilles injury rules him out as a long-term absentee. Major blow to USMNT's center-back options for the home World Cup. Was a key part of the defensive plans."
     },
     {
       "playerName": "Santiago Gimenez",
@@ -1543,17 +1579,17 @@
       "country": "Norway",
       "club": "Manchester City",
       "position": "Forward",
-      "injuryType": "Minor niggles/fitness management",
-      "injuryDate": "2026-02-11",
-      "expectedReturn": "Available as of Feb 21, 2026",
-      "availabilityStatus": "fit",
+      "injuryType": "Rested, form dip",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available but form concern",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-11",
-        "opponent": "Fulham (Premier League)",
-        "notes": "Came off at half-time with niggles, rested vs Salford"
+        "date": "2026-03-27",
+        "opponent": "Netherlands (International Friendly)",
+        "notes": "Rested for recent matches, experiencing a form dip"
       },
-      "source": "SI.com, Sports Mole, Manchester City - Feb 2026",
-      "notes": "Norway qualified for first WC since 1998 with perfect 8-0 record. Haaland scored 16 goals in qualifying. 'Fully fit' per Guardiola."
+      "source": "Country Scout intel, Manchester City - April 2026",
+      "notes": "Norway qualified for first WC since 1998 with perfect 8-0 record. Haaland scored 16 goals in qualifying. Currently being rested and experiencing a form dip. Not injured but minor concern regarding sharpness."
     },
     {
       "playerName": "Martin Odegaard",
@@ -1561,17 +1597,17 @@
       "country": "Norway",
       "club": "Arsenal",
       "position": "Midfielder",
-      "injuryType": "Previous ankle injury (2024, fully recovered)",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Knee injury — missed March internationals",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Uncertain — targeting return before World Cup",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Arsenal (Premier League)",
-        "notes": "Full match played, captain"
+        "notes": "Missed March international window due to knee issue"
       },
-      "source": "Arsenal.com - Feb 2026",
-      "notes": "Arsenal captain and Norway's creative star. Fully recovered from 2024 ankle injury. In excellent form. Key partnership with Haaland for Norway."
+      "source": "Country Scout intel, Arsenal.com - April 2026",
+      "notes": "Arsenal captain missed March internationals with knee problem. A doubt for Norway heading into the World Cup. Key creative link with Haaland."
     },
     {
       "playerName": "Alexander Sorloth",
@@ -1685,19 +1721,19 @@
       "playerName": "Darwin Nunez",
       "teamCode": "URU",
       "country": "Uruguay",
-      "club": "Liverpool",
+      "club": "Al Hilal (Saudi Pro League)",
       "position": "Forward",
-      "injuryType": "No current injury",
+      "injuryType": "De-registered at Al Hilal — severely lacking match minutes",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "N/A - not injured but lacking match fitness",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
         "date": "2026-02-22",
-        "opponent": "Liverpool (Premier League)",
-        "notes": "Full match played, scored"
+        "opponent": "Al Hilal (Saudi Pro League)",
+        "notes": "De-registered, severely lacking match minutes"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Explosive striker. No injury concerns. Key goal threat for Uruguay."
+      "source": "Country Scout intel, Al Hilal reports - April 2026",
+      "notes": "Not injured but de-registered at Al Hilal, severely lacking match minutes. Major concern regarding match fitness and sharpness heading into the World Cup. Key goal threat for Uruguay when sharp."
     },
     {
       "playerName": "Ronald Araujo",
@@ -1705,17 +1741,17 @@
       "country": "Uruguay",
       "club": "Barcelona",
       "position": "Defender",
-      "injuryType": "Hamstring tear (previous), returning",
-      "injuryDate": "2025-11-01",
-      "expectedReturn": "February-March 2026",
-      "availabilityStatus": "minor_concern",
+      "injuryType": "Returned from mental health break — fully fit",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fully fit",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-15",
+        "date": "2026-04-05",
         "opponent": "Barcelona (La Liga)",
-        "notes": "Returned to action, played 70 minutes"
+        "notes": "Returned from mental health break, fully fit and playing regularly"
       },
-      "source": "Barcelona, ESPN - Feb 2026",
-      "notes": "Had a serious hamstring tear earlier in the season. Has returned to action. Being managed carefully. Uruguay's best defender when fit."
+      "source": "Country Scout intel, Barcelona reports - April 2026",
+      "notes": "Returned from a mental health break and is now fully fit. Playing regularly at Barcelona. Uruguay's best defender."
     },
     {
       "playerName": "Luis Suarez",
@@ -1921,17 +1957,17 @@
       "country": "Senegal",
       "club": "Al-Nassr",
       "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Ankle injury early March — returned April",
+      "injuryDate": "2026-03-05",
+      "expectedReturn": "Returned to action April 2026",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-04-10",
         "opponent": "Al-Nassr (Saudi Pro League)",
-        "notes": "Full match played"
+        "notes": "Returned to action after ankle injury in early March"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Senegal's star player. No injury concerns. Key to Senegal's World Cup campaign."
+      "source": "Country Scout intel, Al-Nassr reports - April 2026",
+      "notes": "Senegal's star player suffered an ankle injury in early March but returned in April. Minor concern regarding match fitness and sharpness. Key to Senegal's World Cup campaign."
     },
     {
       "playerName": "Kalidou Koulibaly",
@@ -2002,8 +2038,8 @@
         "opponent": "Bayer Leverkusen (Bundesliga)",
         "notes": "Full match played, captain"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Switzerland captain and leader. No injury concerns. Consistently one of the best midfielders in the Bundesliga."
+      "source": "Country Scout intel, Bayer Leverkusen - April 2026",
+      "notes": "Switzerland captain and leader. Ankle managed but not a concern. Confirmed fit. Consistently one of the best midfielders in the Bundesliga."
     },
     {
       "playerName": "Yann Sommer",
@@ -2551,17 +2587,17 @@
       "country": "New Zealand",
       "club": "Nottingham Forest",
       "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Knee surgery Dec 2025 — scored in reserves Mar 22, deliberately rested for April",
+      "injuryDate": "2025-12-01",
+      "expectedReturn": "Targeting return to full fitness before World Cup",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Nottingham Forest (Premier League)",
-        "notes": "Full match played, scored"
+        "date": "2026-03-22",
+        "opponent": "Nottingham Forest Reserves",
+        "notes": "Scored in reserves match during comeback from knee surgery. Deliberately rested for April."
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Premier League striker in excellent form. No injury concerns. New Zealand's main goal threat. Having his best ever season."
+      "source": "Country Scout intel, Nottingham Forest - April 2026",
+      "notes": "Underwent knee surgery in December 2025. Scored in reserves March 22 showing progress. Deliberately rested for April to manage workload. New Zealand's main goal threat — 9 goals in qualifying. A doubt but trending positively."
     },
     {
       "playerName": "Liberato Cacace",
@@ -2605,17 +2641,17 @@
       "country": "Turkey",
       "club": "Inter Milan",
       "position": "Midfielder",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Calf problem after Romania playoff — played through vs Kosovo",
+      "injuryDate": "2026-03-26",
+      "expectedReturn": "Available — managing calf issue",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Inter Milan (Serie A)",
-        "notes": "Full match played"
+        "date": "2026-03-31",
+        "opponent": "Kosovo (UEFA Playoff Path C Final)",
+        "notes": "Played through calf problem to help Turkey qualify. Won 1-0."
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "World-class midfielder at Inter. No injury concerns. Turkey's star player and penalty specialist."
+      "source": "Country Scout intel, Inter Milan reports - April 2026",
+      "notes": "World-class midfielder at Inter. Developed calf problem after Romania playoff semi, played through it vs Kosovo in the final. Minor concern regarding calf management. Turkey's star player and penalty specialist."
     },
     {
       "playerName": "Arda Guler",
@@ -2978,6 +3014,42 @@
       "notes": "Scotland's main striker. No injury concerns. Performing well in Serie A."
     },
     {
+      "playerName": "Ben Doak",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Liverpool",
+      "position": "Forward/Winger",
+      "injuryType": "Injury since November 2025",
+      "injuryDate": "2025-11-01",
+      "expectedReturn": "Uncertain — long-term absence",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2025-10-28",
+        "opponent": "Liverpool (Premier League)",
+        "notes": "Has been injured since November 2025"
+      },
+      "source": "Country Scout intel, Liverpool reports - April 2026",
+      "notes": "Exciting young winger has been injured since November 2025. A doubt for Scotland's World Cup squad. Major loss if unavailable given his pace and direct running."
+    },
+    {
+      "playerName": "Aaron Hickey",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Brentford",
+      "position": "Defender",
+      "injuryType": "Missed March internationals",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Monitoring — targeting World Cup fitness",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Brentford (Premier League)",
+        "notes": "Missed Scotland's March international window"
+      },
+      "source": "Country Scout intel, Brentford reports - April 2026",
+      "notes": "Versatile defender missed Scotland's March camp. A minor concern. Important squad player who can cover multiple defensive positions."
+    },
+    {
       "playerName": "Sebastien Haller",
       "teamCode": "CIV",
       "country": "Ivory Coast",
@@ -3318,6 +3390,24 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "Creative midfielder. Key playmaker for Bafana Bafana. No injury concerns."
+    },
+    {
+      "playerName": "Lyle Foster",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Burnley",
+      "position": "Forward",
+      "injuryType": "Recurring injuries",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available but fitness managed",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "Burnley (Championship)",
+        "notes": "Has dealt with recurring injuries throughout the season"
+      },
+      "source": "Country Scout intel, Burnley reports - April 2026",
+      "notes": "Talented young striker with recurring injury issues. A minor concern for South Africa due to fitness management. Important attacking option for Bafana Bafana."
     },
     {
       "playerName": "Saud Abdulhamid",

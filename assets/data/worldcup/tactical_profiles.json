@@ -2149,7 +2149,7 @@
     "QAT": {
       "teamCode": "QAT",
       "teamName": "Qatar",
-      "coach": "Luis Garcia",
+      "coach": "Julen Lopetegui",
       "preferredFormation": "3-5-2",
       "alternateFormations": [
         "4-3-3",
@@ -2180,7 +2180,7 @@
         "weakness": "Quality gap vs European and South American opponents; 2022 World Cup home performance was disappointing"
       },
       "keyTacticalFeatures": [
-        "Luis Garcia brings Spanish tactical influence to a squad that has been together for years",
+        "Lopetegui brings elite Spanish tactical influence and top-level European management experience to a squad that has been together for years",
         "Two-time Asian Cup champions (2019, 2023) provide tournament pedigree within the continent",
         "Most players play in the Qatar Stars League, providing squad chemistry but limiting competitive exposure",
         "Must overcome 2022 World Cup disappointment where they lost all three group games"
@@ -2319,7 +2319,7 @@
     "SEN": {
       "teamCode": "SEN",
       "teamName": "Senegal",
-      "coach": "Aliou Cisse",
+      "coach": "Pape Thiaw",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "3-4-3",
@@ -2354,7 +2354,7 @@
         "AFCON 2021 champions with a core that has been together for years",
         "Reached AFCON 2025 final, showing continued competitiveness at the highest level in Africa",
         "Koulibaly-Mendy-Mane spine provides a world-class core to build around",
-        "Cisse emphasizes collective effort and defensive discipline as the foundation"
+        "Thiaw emphasizes collective effort and defensive discipline as the foundation"
       ],
       "strengthsOverall": [
         "Physical dominance",
@@ -2432,7 +2432,7 @@
     "TUN": {
       "teamCode": "TUN",
       "teamName": "Tunisia",
-      "coach": "Faouzi Benzarti",
+      "coach": "Sabri Lamouchi",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
@@ -2464,7 +2464,7 @@
         "weakness": "Limited attacking creativity against deep blocks; aging core in some positions; can struggle to score when opponents sit back"
       },
       "keyTacticalFeatures": [
-        "Benzarti brings decades of North African and Tunisian football knowledge",
+        "Lamouchi brings international management experience and a structured tactical approach",
         "Tunisia's defensive discipline is their trademark; they are extremely difficult to break down",
         "Skhiri is the heartbeat of the team, controlling tempo and providing the link",
         "World Cup experience from 2018 and 2022 gives the squad tournament know-how"
@@ -2657,13 +2657,13 @@
     "UZB": {
       "teamCode": "UZB",
       "teamName": "Uzbekistan",
-      "coach": "Srecko Katanec",
+      "coach": "Fabio Cannavaro",
       "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-3-3",
         "4-4-2"
       ],
-      "playingStyle": "Disciplined and structured with Slovenian tactical influence; direct attacking play through Shomurodov",
+      "playingStyle": "Disciplined and structured with Italian tactical influence under Cannavaro; direct attacking play through Shomurodov",
       "tempoRating": "Medium",
       "possessionStyle": "Structured and controlled; emphasis on disciplined positional play and efficient ball progression",
       "pressingIntensity": "Medium",
@@ -2679,7 +2679,7 @@
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Compact defensive block with European-influenced organization under Katanec",
+        "style": "Compact defensive block with European-influenced organization under Cannavaro",
         "strengths": [
           "Defensive organization",
           "Shukurov's midfield screening",
@@ -2688,14 +2688,15 @@
         "weakness": "Quality gap against top opposition; limited pace in the defensive line; can be overrun in midfield by elite teams"
       },
       "keyTacticalFeatures": [
-        "Katanec's European tactical education provides solid organizational foundation",
+        "Cannavaro's World Cup-winning experience and Italian tactical education provides solid organizational foundation",
         "First-ever World Cup appearance for the White Wolves - massive national achievement",
         "Fayzullaev represents one of the most exciting young talents in Asian football",
         "Strong qualifying campaign shows the system works against Asian-level opposition"
       ],
       "strengthsOverall": [
-        "European tactical coaching",
+        "Cannavaro's World Cup-winning pedigree and Italian tactical coaching",
         "Shomurodov's experience in Italian football",
+        "Khusanov's emergence at Manchester City adds Premier League quality",
         "Fayzullaev's exciting young talent",
         "First-ever World Cup motivation"
       ],
