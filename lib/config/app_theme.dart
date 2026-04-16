@@ -550,42 +550,36 @@ class AppTheme {
   // HELPER METHODS
   // ====================
   
-  /// Get the main gradient decoration
-  static BoxDecoration get mainGradientDecoration {
-    return const BoxDecoration(
-      gradient: mainGradient,
+  /// Main gradient decoration (allocated once)
+  static const BoxDecoration mainGradientDecoration = BoxDecoration(
+    gradient: mainGradient,
   );
-  }
-  
-  /// Get card gradient decoration
-  static BoxDecoration get cardGradientDecoration {
-    return BoxDecoration(
-      gradient: cardGradient,
+
+  /// Card gradient decoration (allocated once)
+  static final BoxDecoration cardGradientDecoration = BoxDecoration(
+    gradient: cardGradient,
     borderRadius: BorderRadius.circular(20),
     boxShadow: [
       BoxShadow(
-          color: primaryPurple.withValues(alpha: 0.3),
+        color: primaryPurple.withValues(alpha: 0.3),
         blurRadius: 20,
-          offset: const Offset(0, 10),
+        offset: const Offset(0, 10),
       ),
     ],
   );
-  }
-  
-  /// Get button gradient decoration
-  static BoxDecoration get buttonGradientDecoration {
-    return BoxDecoration(
-      gradient: buttonGradient,
-      borderRadius: BorderRadius.circular(25),
+
+  /// Button gradient decoration (allocated once)
+  static final BoxDecoration buttonGradientDecoration = BoxDecoration(
+    gradient: buttonGradient,
+    borderRadius: BorderRadius.circular(25),
     boxShadow: [
       BoxShadow(
-          color: primaryOrange.withValues(alpha: 0.4),
-          blurRadius: 15,
-          offset: const Offset(0, 5),
+        color: primaryOrange.withValues(alpha: 0.4),
+        blurRadius: 15,
+        offset: const Offset(0, 5),
       ),
     ],
   );
-  }
   
   /// Get text style with gradient (for special cases)
   static TextStyle get gradientTextStyle {
@@ -596,9 +590,9 @@ class AppTheme {
     );
   }
   
-  // Legacy decoration methods for backward compatibility
-  static BoxDecoration get premiumCardDecoration => cardGradientDecoration;
-  static BoxDecoration get accentCardDecoration => buttonGradientDecoration;
+  // Legacy decoration aliases for backward compatibility
+  static final BoxDecoration premiumCardDecoration = cardGradientDecoration;
+  static final BoxDecoration accentCardDecoration = buttonGradientDecoration;
   
   // Legacy utility methods for backward compatibility
   static Color getStatusColor(String status) {

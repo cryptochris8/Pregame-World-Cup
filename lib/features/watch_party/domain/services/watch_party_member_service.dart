@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 
@@ -56,9 +57,9 @@ class WatchPartyMemberService {
     );
 
     await _firestore
-        .collection('watch_parties')
+        .collection(FirestoreCollections.watchParties)
         .doc(watchPartyId)
-        .collection('members')
+        .collection(FirestoreCollections.members)
         .doc(userId)
         .set(member.toFirestore());
 
@@ -73,9 +74,9 @@ class WatchPartyMemberService {
       if (cached != null) return cached;
 
       final doc = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(userId)
           .get();
 
@@ -140,7 +141,7 @@ class WatchPartyMemberService {
           ? 'virtualAttendeesCount'
           : 'currentAttendeesCount';
 
-      await _firestore.collection('watch_parties').doc(watchPartyId).update({
+      await _firestore.collection(FirestoreCollections.watchParties).doc(watchPartyId).update({
         countField: FieldValue.increment(1),
         'updatedAt': Timestamp.now(),
       });
@@ -189,9 +190,9 @@ class WatchPartyMemberService {
 
       // Remove member document
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(user.uid)
           .delete();
 
@@ -200,7 +201,7 @@ class WatchPartyMemberService {
           ? 'virtualAttendeesCount'
           : 'currentAttendeesCount';
 
-      await _firestore.collection('watch_parties').doc(watchPartyId).update({
+      await _firestore.collection(FirestoreCollections.watchParties).doc(watchPartyId).update({
         countField: FieldValue.increment(-1),
         'updatedAt': Timestamp.now(),
       });
@@ -236,9 +237,9 @@ class WatchPartyMemberService {
       PerformanceMonitor.startApiCall('get_watch_party_members');
 
       final snapshot = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .orderBy('joinedAt')
           .get();
 
@@ -313,9 +314,9 @@ class WatchPartyMemberService {
       PerformanceMonitor.startApiCall('remove_member');
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(userId)
           .delete();
 
@@ -324,7 +325,7 @@ class WatchPartyMemberService {
           ? 'virtualAttendeesCount'
           : 'currentAttendeesCount';
 
-      await _firestore.collection('watch_parties').doc(watchPartyId).update({
+      await _firestore.collection(FirestoreCollections.watchParties).doc(watchPartyId).update({
         countField: FieldValue.increment(-1),
         'updatedAt': Timestamp.now(),
       });
@@ -359,9 +360,9 @@ class WatchPartyMemberService {
       }
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(userId)
           .update({'role': WatchPartyMemberRole.coHost.name});
 
@@ -385,9 +386,9 @@ class WatchPartyMemberService {
       }
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(userId)
           .update({'role': WatchPartyMemberRole.member.name});
 
@@ -407,9 +408,9 @@ class WatchPartyMemberService {
   ) async {
     try {
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(userId)
           .update({
         'hasPaid': true,
@@ -440,9 +441,9 @@ class WatchPartyMemberService {
       if (isMuted != null) updates['isMuted'] = isMuted;
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(userId)
           .update(updates);
 
@@ -456,7 +457,7 @@ class WatchPartyMemberService {
 
   Future<UserProfile?> _getUserProfile(String userId) async {
     try {
-      final doc = await _firestore.collection('user_profiles').doc(userId).get();
+      final doc = await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).get();
       if (!doc.exists) return null;
       return UserProfile.fromFirestore(doc.data()!, doc.id);
     } catch (e) {

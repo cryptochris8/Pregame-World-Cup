@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../entities/message.dart';
@@ -39,7 +40,7 @@ class MessagingStreamService {
   void listenToUserChats(String userId) {
     _chatsSubscription?.cancel();
     _chatsSubscription = _firestore
-        .collection('chats')
+        .collection(FirestoreCollections.chats)
         .where('participantIds', arrayContains: userId)
         .where('isActive', isEqualTo: true)
         .orderBy('lastMessageTime', descending: true)
@@ -66,7 +67,7 @@ class MessagingStreamService {
 
       _firestoreSubscriptions['messages_$chatId']?.cancel();
       _firestoreSubscriptions['messages_$chatId'] = _firestore
-          .collection('messages')
+          .collection(FirestoreCollections.messages)
           .where('chatId', isEqualTo: chatId)
           .where('isDeleted', isEqualTo: false)
           .orderBy('createdAt', descending: false)
@@ -112,7 +113,7 @@ class MessagingStreamService {
       );
 
       await _firestore
-          .collection('typing_indicators')
+          .collection(FirestoreCollections.typingIndicators)
           .doc('${chatId}_${currentUser.uid}')
           .set(indicator.toJson());
 
@@ -156,7 +157,7 @@ class MessagingStreamService {
   void _listenToTypingIndicators(String chatId) {
     _firestoreSubscriptions['typing_$chatId']?.cancel();
     _firestoreSubscriptions['typing_$chatId'] = _firestore
-        .collection('typing_indicators')
+        .collection(FirestoreCollections.typingIndicators)
         .where('chatId', isEqualTo: chatId)
         .where('isTyping', isEqualTo: true)
         .snapshots()

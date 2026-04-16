@@ -1,4 +1,5 @@
 import 'dart:io' show Platform;
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart' hide Card;
@@ -28,7 +29,7 @@ class WatchPartyPaymentService {
 
   // Collection reference for tracking virtual payments
   CollectionReference get _virtualPaymentsCollection =>
-      _firestore.collection('watch_party_virtual_payments');
+      _firestore.collection(FirestoreCollections.watchPartyVirtualPayments);
 
   /// Purchase virtual attendance for a watch party
   /// Returns true if payment was successful and user was added as virtual member
@@ -191,9 +192,9 @@ class WatchPartyPaymentService {
 
     // Mark as paid (update member record)
     final membersRef = _firestore
-        .collection('watch_parties')
+        .collection(FirestoreCollections.watchParties)
         .doc(watchPartyId)
-        .collection('members');
+        .collection(FirestoreCollections.members);
 
     await membersRef.doc(user.uid).update({
       'hasPaid': true,
@@ -281,9 +282,9 @@ class WatchPartyPaymentService {
       if (user == null) return false;
 
       final memberDoc = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('members')
+          .collection(FirestoreCollections.members)
           .doc(user.uid)
           .get();
 

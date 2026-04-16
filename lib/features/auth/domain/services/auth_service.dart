@@ -1,4 +1,5 @@
 import 'dart:convert';
+import '../../../../core/constants/firestore_collections.dart';
 import 'dart:math';
 import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -310,21 +311,21 @@ class AuthService {
     try {
       // 1. Delete user profile
       try {
-        await _firestore.collection('users').doc(uid).delete();
+        await _firestore.collection(FirestoreCollections.users).doc(uid).delete();
       } catch (e) {
         LoggingService.warning('Error deleting user profile: $e', tag: 'AuthService');
       }
 
       // 2. Delete user favorites
       try {
-        await _firestore.collection('userFavorites').doc(uid).delete();
+        await _firestore.collection(FirestoreCollections.userFavorites).doc(uid).delete();
       } catch (e) {
         LoggingService.warning('Error deleting user favorites: $e', tag: 'AuthService');
       }
 
       // 3. Delete social profile (terms acceptance, display name, etc.)
       try {
-        await _firestore.collection('social_profiles').doc(uid).delete();
+        await _firestore.collection(FirestoreCollections.socialProfiles).doc(uid).delete();
       } catch (e) {
         LoggingService.warning('Error deleting social profile: $e', tag: 'AuthService');
       }
@@ -332,7 +333,7 @@ class AuthService {
       // 4. Delete user predictions (query + batch delete)
       try {
         final predictionsQuery = await _firestore
-            .collection('user_predictions')
+            .collection(FirestoreCollections.userPredictions)
             .where('userId', isEqualTo: uid)
             .get();
         if (predictionsQuery.docs.isNotEmpty) {
@@ -376,7 +377,7 @@ class AuthService {
   // Get user's favorite teams
   Future<List<String>> getFavoriteTeams(String userId) async {
     try {
-      final docSnapshot = await _firestore.collection('userFavorites').doc(userId).get();
+      final docSnapshot = await _firestore.collection(FirestoreCollections.userFavorites).doc(userId).get();
       if (docSnapshot.exists && docSnapshot.data() != null) {
         final data = docSnapshot.data()!;
         // Ensure 'favoriteTeamNames' exists and is a list of strings
@@ -394,7 +395,7 @@ class AuthService {
   // Update user's favorite teams
   Future<void> updateFavoriteTeams(String userId, List<String> teamNames) async {
     try {
-      await _firestore.collection('userFavorites').doc(userId).set({
+      await _firestore.collection(FirestoreCollections.userFavorites).doc(userId).set({
         'favoriteTeamNames': teamNames,
         'lastUpdated': FieldValue.serverTimestamp(), // Optional: track last update
       }, SetOptions(merge: true)); // Use merge to avoid overwriting other potential fields

@@ -80,16 +80,22 @@ class WorldCupFirestoreDataSource {
   /// Fetches matches by team
   Future<List<WorldCupMatch>> getMatchesByTeam(String teamCode) async {
     try {
-      // Need to query both home and away
-      final homeSnapshot = await _firestore
-          .collection(_matchesCollection)
-          .where('homeTeamCode', isEqualTo: teamCode.toUpperCase())
-          .get();
+      final code = teamCode.toUpperCase();
 
-      final awaySnapshot = await _firestore
-          .collection(_matchesCollection)
-          .where('awayTeamCode', isEqualTo: teamCode.toUpperCase())
-          .get();
+      // Fire both queries in parallel
+      final results = await Future.wait([
+        _firestore
+            .collection(_matchesCollection)
+            .where('homeTeamCode', isEqualTo: code)
+            .get(),
+        _firestore
+            .collection(_matchesCollection)
+            .where('awayTeamCode', isEqualTo: code)
+            .get(),
+      ]);
+
+      final homeSnapshot = results[0];
+      final awaySnapshot = results[1];
 
       final matches = <WorldCupMatch>[];
       matches.addAll(homeSnapshot.docs
@@ -563,24 +569,25 @@ class WorldCupFirestoreDataSource {
     try {
       final code = teamCode.toUpperCase();
 
-      // Query both team1Code and team2Code
-      final team1Query = await _firestore
-          .collection(_headToHeadCollection)
-          .where('team1Code', isEqualTo: code)
-          .get();
-
-      final team2Query = await _firestore
-          .collection(_headToHeadCollection)
-          .where('team2Code', isEqualTo: code)
-          .get();
+      // Fire both queries in parallel
+      final snapshots = await Future.wait([
+        _firestore
+            .collection(_headToHeadCollection)
+            .where('team1Code', isEqualTo: code)
+            .get(),
+        _firestore
+            .collection(_headToHeadCollection)
+            .where('team2Code', isEqualTo: code)
+            .get(),
+      ]);
 
       final results = <HeadToHead>[];
-      for (final doc in team1Query.docs) {
+      for (final doc in snapshots[0].docs) {
         results.add(HeadToHead.fromMap(doc.data()));
-            }
-      for (final doc in team2Query.docs) {
+      }
+      for (final doc in snapshots[1].docs) {
         results.add(HeadToHead.fromMap(doc.data()));
-            }
+      }
 
       return results;
     } catch (e) {

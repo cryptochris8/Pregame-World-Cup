@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/match_chat.dart';
 import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
 import '../../../moderation/domain/entities/report.dart';
@@ -271,6 +272,7 @@ class MatchChatMessageItem extends StatelessWidget {
   }
 
   void _showMessageOptions(BuildContext context, ThemeData theme) {
+    final l10n = AppLocalizations.of(context);
     showModalBottomSheet(
       context: context,
       builder: (sheetContext) => SafeArea(
@@ -280,7 +282,7 @@ class MatchChatMessageItem extends StatelessWidget {
             if (onReaction != null)
               ListTile(
                 leading: const Icon(Icons.add_reaction_outlined),
-                title: const Text('Add Reaction'),
+                title: Text(l10n.addReaction),
                 onTap: () {
                   Navigator.pop(sheetContext);
                   _showReactionPicker(sheetContext);
@@ -289,7 +291,7 @@ class MatchChatMessageItem extends StatelessWidget {
             if (isOwnMessage && onDelete != null)
               ListTile(
                 leading: const Icon(Icons.delete_outline, color: Colors.red),
-                title: const Text('Delete Message'),
+                title: Text(l10n.deleteMessage),
                 onTap: () {
                   Navigator.pop(sheetContext);
                   onDelete!();
@@ -298,7 +300,7 @@ class MatchChatMessageItem extends StatelessWidget {
             if (!isOwnMessage)
               ListTile(
                 leading: Icon(Icons.flag_outlined, color: Colors.red[400]),
-                title: const Text('Report Message'),
+                title: Text(l10n.reportMessage),
                 onTap: () {
                   Navigator.pop(sheetContext);
                   ReportBottomSheet.show(
@@ -308,14 +310,14 @@ class MatchChatMessageItem extends StatelessWidget {
                     contentOwnerId: message.senderId,
                     contentOwnerDisplayName: message.senderName,
                     contentSnapshot: message.content,
-                    title: 'Report Message',
+                    title: l10n.reportMessage,
                   );
                 },
               ),
             if (!isOwnMessage)
               ListTile(
                 leading: Icon(Icons.block, color: Colors.orange[400]),
-                title: const Text('Block User'),
+                title: Text(l10n.blockUser),
                 onTap: () {
                   Navigator.pop(sheetContext);
                   _showBlockConfirmation(context);
@@ -328,18 +330,19 @@ class MatchChatMessageItem extends StatelessWidget {
   }
 
   void _showBlockConfirmation(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppTheme.backgroundCard,
-        title: const Text('Block User'),
+        title: Text(l10n.blockUser),
         content: Text(
-          'Are you sure you want to block ${message.senderName}? You will no longer see their messages.',
+          l10n.blockUserChatConfirm(message.senderName),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () {
@@ -347,7 +350,7 @@ class MatchChatMessageItem extends StatelessWidget {
               // Block action will be handled by the parent
             },
             style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text('Block'),
+            child: Text(l10n.block),
           ),
         ],
       ),

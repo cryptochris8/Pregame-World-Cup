@@ -9,13 +9,23 @@ import '../widgets/widgets.dart';
 /// Teams tab content for the World Cup home screen.
 /// Displays all 48 teams with favorites filtering, sort options,
 /// and confederation filters.
-class TeamsTab extends StatelessWidget {
+class TeamsTab extends StatefulWidget {
   final void Function(NationalTeam) onTeamTap;
 
   const TeamsTab({super.key, required this.onTeamTap});
 
   @override
+  State<TeamsTab> createState() => _TeamsTabState();
+}
+
+class _TeamsTabState extends State<TeamsTab>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     final l10n = AppLocalizations.of(context);
     return BlocBuilder<TeamsCubit, TeamsState>(
       builder: (context, state) {
@@ -208,7 +218,7 @@ class TeamsTab extends StatelessWidget {
                               final team = displayTeams[index];
                               return TeamTile(
                                 team: team,
-                                onTap: () => onTeamTap(team),
+                                onTap: () => widget.onTeamTap(team),
                                 isFavorite: favoritesState.isTeamFavorite(team.teamCode),
                                 onFavoriteToggle: () => context
                                     .read<FavoritesCubit>()

@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
@@ -204,7 +205,7 @@ class WatchPartyService {
 
       // Save to Firestore
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchParty.watchPartyId)
           .set(watchParty.toFirestore());
 
@@ -269,7 +270,7 @@ class WatchPartyService {
       // Level 3: Fetch from Firestore
       PerformanceMonitor.startApiCall('fetch_watch_party_$watchPartyId');
       final doc = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
           .get();
 
@@ -327,7 +328,7 @@ class WatchPartyService {
       if (virtualAttendanceFee != null) updates['virtualAttendanceFee'] = virtualAttendanceFee;
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
           .update(updates);
 
@@ -364,7 +365,7 @@ class WatchPartyService {
       );
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
           .update(cancelledParty.toFirestore());
 
@@ -397,7 +398,7 @@ class WatchPartyService {
       PerformanceMonitor.startApiCall('get_public_watch_parties');
 
       Query<Map<String, dynamic>> query = _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .where('visibility', isEqualTo: WatchPartyVisibility.public.name)
           .where('status', isEqualTo: WatchPartyStatus.upcoming.name);
 
@@ -444,7 +445,7 @@ class WatchPartyService {
       PerformanceMonitor.startApiCall('get_user_watch_parties');
 
       final hostQuery = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .where('hostId', isEqualTo: user.uid)
           .get();
 
@@ -635,7 +636,7 @@ class WatchPartyService {
       }
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
           .update({
         'status': WatchPartyStatus.live.name,
@@ -667,7 +668,7 @@ class WatchPartyService {
       }
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
           .update({
         'status': WatchPartyStatus.ended.name,
@@ -690,7 +691,7 @@ class WatchPartyService {
 
   Future<UserProfile?> _getUserProfile(String userId) async {
     try {
-      final doc = await _firestore.collection('user_profiles').doc(userId).get();
+      final doc = await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).get();
       if (!doc.exists) return null;
       return UserProfile.fromFirestore(doc.data()!, doc.id);
     } catch (e) {

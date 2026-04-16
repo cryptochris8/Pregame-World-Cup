@@ -15,7 +15,10 @@ class ManagerProfilesScreen extends StatefulWidget {
   State<ManagerProfilesScreen> createState() => _ManagerProfilesScreenState();
 }
 
-class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
+class _ManagerProfilesScreenState extends State<ManagerProfilesScreen>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
   final ManagerService _managerService = ManagerService();
   final ScrollController _scrollController = ScrollController();
 
@@ -232,6 +235,7 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Manager Profiles'),

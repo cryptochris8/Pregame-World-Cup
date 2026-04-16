@@ -1,4 +1,5 @@
 import 'dart:ui';
+import '../../../../core/constants/firestore_collections.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
@@ -83,7 +84,7 @@ class PaymentHistoryService {
 
   Stream<FanPassStatus> listenToFanPassStatus(String userId) {
     return _firestore
-        .collection('world_cup_fan_passes')
+        .collection(FirestoreCollections.worldCupFanPasses)
         .doc(userId)
         .snapshots()
         .map((snapshot) {
@@ -128,7 +129,7 @@ class PaymentHistoryService {
 
   Stream<VenuePremiumStatus> listenToVenuePremiumStatus(String venueId) {
     return _firestore
-        .collection('venue_enhancements')
+        .collection(FirestoreCollections.venueEnhancements)
         .doc(venueId)
         .snapshots()
         .map((snapshot) {
@@ -179,7 +180,7 @@ class PaymentHistoryService {
 
       // Get fan pass purchases
       final fanPassDoc = await _firestore
-          .collection('world_cup_fan_passes')
+          .collection(FirestoreCollections.worldCupFanPasses)
           .doc(user.uid)
           .get();
 
@@ -207,7 +208,7 @@ class PaymentHistoryService {
 
       // Get venue premium purchases
       final venuePurchases = await _firestore
-          .collection('world_cup_venue_purchases')
+          .collection(FirestoreCollections.worldCupVenuePurchases)
           .where('userId', isEqualTo: user.uid)
           .orderBy('purchasedAt', descending: true)
           .get();
@@ -233,7 +234,7 @@ class PaymentHistoryService {
 
       // Get virtual attendance payments
       final virtualPayments = await _firestore
-          .collection('watch_party_virtual_payments')
+          .collection(FirestoreCollections.watchPartyVirtualPayments)
           .where('userId', isEqualTo: user.uid)
           .orderBy('createdAt', descending: true)
           .limit(50)

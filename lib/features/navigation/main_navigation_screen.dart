@@ -274,6 +274,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                           Positioned(
                             right: -1,
                             top: -1,
+                            child: RepaintBoundary(
                             child: AnimatedScale(
                               scale: badgeCount > 0 ? 1.0 : 0.0,
                               duration: const Duration(milliseconds: 200),
@@ -309,6 +310,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                                   textAlign: TextAlign.center,
                                 ),
                               ),
+                            ),
                             ),
                           ),
                       ],

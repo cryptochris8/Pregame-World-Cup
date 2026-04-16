@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:hive/hive.dart';
 import '../entities/notification.dart';
 import '../../../../core/services/performance_monitor.dart';
@@ -65,7 +66,7 @@ class NotificationService {
       // Save to Firestore
       final data = _notificationToFirestore(notification);
       await _firestore
-          .collection('notifications')
+          .collection(FirestoreCollections.notifications)
           .doc(notification.notificationId)
           .set(data);
       
@@ -97,7 +98,7 @@ class NotificationService {
       PerformanceMonitor.startApiCall('get_user_notifications');
       
       var query = _firestore
-          .collection('notifications')
+          .collection(FirestoreCollections.notifications)
           .where('userId', isEqualTo: userId)
           .orderBy('createdAt', descending: true);
       
@@ -137,7 +138,7 @@ class NotificationService {
       
       // Update in Firestore
       await _firestore
-          .collection('notifications')
+          .collection(FirestoreCollections.notifications)
           .doc(notificationId)
           .update({'isRead': true});
       
@@ -173,7 +174,7 @@ class NotificationService {
       // Batch update in Firestore
       final batch = _firestore.batch();
       final querySnapshot = await _firestore
-          .collection('notifications')
+          .collection(FirestoreCollections.notifications)
           .where('userId', isEqualTo: userId)
           .where('isRead', isEqualTo: false)
           .get();
@@ -203,7 +204,7 @@ class NotificationService {
   Future<int> getUnreadNotificationCount(String userId) async {
     try {
       final countQuery = await _firestore
-          .collection('notifications')
+          .collection(FirestoreCollections.notifications)
           .where('userId', isEqualTo: userId)
           .where('isRead', isEqualTo: false)
           .count()
@@ -234,7 +235,7 @@ class NotificationService {
       
       // Fetch from Firestore
       final doc = await _firestore
-          .collection('notification_preferences')
+          .collection(FirestoreCollections.notificationPreferences)
           .doc(userId)
           .get();
       
@@ -266,7 +267,7 @@ class NotificationService {
       
       final data = _preferencesToFirestore(preferences);
       await _firestore
-          .collection('notification_preferences')
+          .collection(FirestoreCollections.notificationPreferences)
           .doc(userId)
           .set(data);
       
@@ -289,7 +290,7 @@ class NotificationService {
     try {
       // Delete from Firestore
       await _firestore
-          .collection('notifications')
+          .collection(FirestoreCollections.notifications)
           .doc(notificationId)
           .delete();
       
@@ -315,7 +316,7 @@ class NotificationService {
   /// Listen to real-time notifications for user
   Stream<List<SocialNotification>> listenToUserNotifications(String userId) {
     return _firestore
-        .collection('notifications')
+        .collection(FirestoreCollections.notifications)
         .where('userId', isEqualTo: userId)
         .orderBy('createdAt', descending: true)
         .limit(20)
@@ -528,7 +529,7 @@ class NotificationService {
   // Get unread notification count stream
   Stream<int> getUnreadCount(String userId) {
     return _firestore
-        .collection('notifications')
+        .collection(FirestoreCollections.notifications)
         .where('userId', isEqualTo: userId)
         .where('isRead', isEqualTo: false)
         .snapshots()

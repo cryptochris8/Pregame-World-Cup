@@ -9,7 +9,7 @@ import 'predictions_page.dart';
 
 /// Favorites tab content for the World Cup home screen.
 /// Shows favorite matches, favorite teams, and prediction stats.
-class FavoritesTab extends StatelessWidget {
+class FavoritesTab extends StatefulWidget {
   final void Function(WorldCupMatch) onMatchTap;
   final void Function(NationalTeam) onTeamTap;
 
@@ -20,7 +20,17 @@ class FavoritesTab extends StatelessWidget {
   });
 
   @override
+  State<FavoritesTab> createState() => _FavoritesTabState();
+}
+
+class _FavoritesTabState extends State<FavoritesTab>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return BlocBuilder<FavoritesCubit, FavoritesState>(
       buildWhen: (prev, curr) =>
           prev.preferences.favoriteMatchIds != curr.preferences.favoriteMatchIds ||
@@ -106,7 +116,7 @@ class FavoritesTab extends StatelessWidget {
                           return Column(
                             children: favoriteMatches.map((match) => MatchCard(
                               match: match,
-                              onTap: () => onMatchTap(match),
+                              onTap: () => widget.onMatchTap(match),
                               isFavorite: true,
                               onFavoriteToggle: () => context
                                   .read<FavoritesCubit>()
@@ -160,7 +170,7 @@ class FavoritesTab extends StatelessWidget {
                               children: [
                                 TeamTile(
                                   team: team,
-                                  onTap: () => onTeamTap(team),
+                                  onTap: () => widget.onTeamTap(team),
                                   isFavorite: true,
                                   onFavoriteToggle: () => context
                                       .read<FavoritesCubit>()

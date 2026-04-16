@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -32,9 +33,9 @@ class WatchPartyChatService {
   /// Get messages stream for real-time updates
   Stream<List<WatchPartyMessage>> getMessagesStream(String watchPartyId) {
     return _firestore
-        .collection('watch_parties')
+        .collection(FirestoreCollections.watchParties)
         .doc(watchPartyId)
-        .collection('messages')
+        .collection(FirestoreCollections.messages)
         .orderBy('createdAt', descending: false)
         .limit(100)
         .snapshots()
@@ -83,9 +84,9 @@ class WatchPartyChatService {
     );
 
     await _firestore
-        .collection('watch_parties')
+        .collection(FirestoreCollections.watchParties)
         .doc(watchPartyId)
-        .collection('messages')
+        .collection(FirestoreCollections.messages)
         .doc(message.messageId)
         .set(message.toFirestore());
 
@@ -101,9 +102,9 @@ class WatchPartyChatService {
       );
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('messages')
+          .collection(FirestoreCollections.messages)
           .doc(message.messageId)
           .set(message.toFirestore());
 
@@ -125,9 +126,9 @@ class WatchPartyChatService {
 
     try {
       final doc = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('messages')
+          .collection(FirestoreCollections.messages)
           .doc(messageId)
           .get();
 
@@ -141,9 +142,9 @@ class WatchPartyChatService {
       }
 
       await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .doc(watchPartyId)
-          .collection('messages')
+          .collection(FirestoreCollections.messages)
           .doc(messageId)
           .update({
         'isDeleted': true,

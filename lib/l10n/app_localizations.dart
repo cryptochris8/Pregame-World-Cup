@@ -7713,6 +7713,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{name} has been unblocked'**
   String unblockSuccess(String name);
+
+  /// Title when user has no friends
+  ///
+  /// In en, this message translates to:
+  /// **'No friends yet'**
+  String get noFriendsYet;
+
+  /// Title when friend search returns no results
+  ///
+  /// In en, this message translates to:
+  /// **'No friends found'**
+  String get noFriendsFound;
+
+  /// Hint when search returns no results
+  ///
+  /// In en, this message translates to:
+  /// **'Try adjusting your search terms'**
+  String get tryAdjustingSearch;
+
+  /// Subtitle encouraging user to add friends
+  ///
+  /// In en, this message translates to:
+  /// **'Start connecting with other sports fans!'**
+  String get startConnectingWithFans;
+
+  /// Button label to add friends
+  ///
+  /// In en, this message translates to:
+  /// **'Add Friends'**
+  String get addFriends;
+
+  /// Title when there are no pending friend requests
+  ///
+  /// In en, this message translates to:
+  /// **'No friend requests'**
+  String get noFriendRequests;
+
+  /// Subtitle for empty friend requests state
+  ///
+  /// In en, this message translates to:
+  /// **'When people send you friend requests,\nthey\'ll appear here.'**
+  String get friendRequestsAppearHere;
+
+  /// Title when user has no sent friend requests
+  ///
+  /// In en, this message translates to:
+  /// **'No sent requests'**
+  String get noSentRequests;
+
+  /// Subtitle for empty sent requests state
+  ///
+  /// In en, this message translates to:
+  /// **'Friend requests you send\nwill appear here.'**
+  String get sentRequestsAppearHere;
+
+  /// Label for add reaction action in chat
+  ///
+  /// In en, this message translates to:
+  /// **'Add Reaction'**
+  String get addReaction;
+
+  /// Label for delete message action in chat
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Message'**
+  String get deleteMessage;
+
+  /// Label for report message action in chat
+  ///
+  /// In en, this message translates to:
+  /// **'Report Message'**
+  String get reportMessage;
+
+  /// Confirmation message when blocking a user in chat
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to block {name}? You will no longer see their messages.'**
+  String blockUserChatConfirm(String name);
+
+  /// Title for Copa AI chatbot
+  ///
+  /// In en, this message translates to:
+  /// **'Copa'**
+  String get copaTitle;
 }
 
 class _AppLocalizationsDelegate

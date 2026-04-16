@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 import '../entities/social_connection.dart';
@@ -54,7 +55,7 @@ class SocialFriendService {
         source: source,
       );
 
-      await _firestore.collection('social_connections').doc(connection.connectionId).set({
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(connection.connectionId).set({
         'fromUserId': connection.fromUserId,
         'toUserId': connection.toUserId,
         'type': connection.type.name,
@@ -93,7 +94,7 @@ class SocialFriendService {
     try {
       final senderProfile = await _profileService.getUserProfile(currentUser.uid);
 
-      await _firestore.collection('friend_request_notifications').add({
+      await _firestore.collection(FirestoreCollections.friendRequestNotifications).add({
         'connectionId': connectionId,
         'fromUserId': currentUser.uid,
         'fromUserName': senderProfile?.displayName ?? currentUser.displayName ?? 'Someone',
@@ -120,7 +121,7 @@ class SocialFriendService {
 
       final acceptedConnection = connection.accept();
 
-      await _firestore.collection('social_connections').doc(connectionId).update({
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(connectionId).update({
         'status': acceptedConnection.status.name,
         'acceptedAt': Timestamp.fromDate(acceptedConnection.acceptedAt!),
       });
@@ -158,7 +159,7 @@ class SocialFriendService {
     try {
       final acceptorProfile = await _profileService.getUserProfile(currentUser.uid);
 
-      await _firestore.collection('friend_request_notifications').add({
+      await _firestore.collection(FirestoreCollections.friendRequestNotifications).add({
         'connectionId': connectionId,
         'fromUserId': currentUser.uid,
         'fromUserName': acceptorProfile?.displayName ?? currentUser.displayName ?? 'Someone',
@@ -186,12 +187,12 @@ class SocialFriendService {
       PerformanceMonitor.startApiCall('get_user_connections');
 
       final query = await _firestore
-          .collection('social_connections')
+          .collection(FirestoreCollections.socialConnections)
           .where('fromUserId', isEqualTo: userId)
           .get();
 
       final query2 = await _firestore
-          .collection('social_connections')
+          .collection(FirestoreCollections.socialConnections)
           .where('toUserId', isEqualTo: userId)
           .get();
 
@@ -254,7 +255,7 @@ class SocialFriendService {
       // Query users with shared favorite teams
       for (final team in currentProfile.favoriteTeams) {
         final query = await _firestore
-            .collection('user_profiles')
+            .collection(FirestoreCollections.userProfiles)
             .where('favoriteTeams', arrayContains: team)
             .limit(20)
             .get();
@@ -296,7 +297,7 @@ class SocialFriendService {
     try {
       PerformanceMonitor.startApiCall('decline_friend_request');
 
-      await _firestore.collection('social_connections').doc(connectionId).delete();
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(connectionId).delete();
       await connectionsBox.delete(connectionId);
       connectionMemoryCache.clear();
 
@@ -314,7 +315,7 @@ class SocialFriendService {
     try {
       PerformanceMonitor.startApiCall('cancel_friend_request');
 
-      await _firestore.collection('social_connections').doc(connectionId).delete();
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(connectionId).delete();
       await connectionsBox.delete(connectionId);
       connectionMemoryCache.clear();
 
@@ -338,7 +339,7 @@ class SocialFriendService {
         orElse: () => throw Exception('Friendship not found'),
       );
 
-      await _firestore.collection('social_connections').doc(friendshipConnection.connectionId).delete();
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(friendshipConnection.connectionId).delete();
       await connectionsBox.delete(friendshipConnection.connectionId);
 
       // Update social stats for both users
@@ -377,7 +378,7 @@ class SocialFriendService {
         createdAt: DateTime.now(),
       );
 
-      await _firestore.collection('social_connections').doc(blockConnection.connectionId).set({
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(blockConnection.connectionId).set({
         'fromUserId': blockConnection.fromUserId,
         'toUserId': blockConnection.toUserId,
         'type': blockConnection.type.name,
@@ -392,7 +393,7 @@ class SocialFriendService {
 
       // Notify admins of block action (triggers onReportCreated Cloud Function)
       try {
-        await _firestore.collection('reports').add({
+        await _firestore.collection(FirestoreCollections.reports).add({
           'reporterId': userId,
           'reportedUserId': blockedUserId,
           'contentType': 'user',
@@ -421,7 +422,7 @@ class SocialFriendService {
   Future<bool> unblockUser(String userId, String blockedUserId) async {
     try {
       final blockConnectionId = '${userId}_blocks_$blockedUserId';
-      await _firestore.collection('social_connections').doc(blockConnectionId).delete();
+      await _firestore.collection(FirestoreCollections.socialConnections).doc(blockConnectionId).delete();
       await connectionsBox.delete(blockConnectionId);
       connectionMemoryCache.clear();
       LoggingService.info('User $userId unblocked $blockedUserId', tag: _logTag);
@@ -436,14 +437,14 @@ class SocialFriendService {
   Future<bool> isUserBlocked(String userId1, String userId2) async {
     try {
       final block1Id = '${userId1}_blocks_$userId2';
-      final block1Doc = await _firestore.collection('social_connections').doc(block1Id).get();
+      final block1Doc = await _firestore.collection(FirestoreCollections.socialConnections).doc(block1Id).get();
       if (block1Doc.exists) {
         final data = block1Doc.data();
         if (data?['type'] == 'block') return true;
       }
 
       final block2Id = '${userId2}_blocks_$userId1';
-      final block2Doc = await _firestore.collection('social_connections').doc(block2Id).get();
+      final block2Doc = await _firestore.collection(FirestoreCollections.socialConnections).doc(block2Id).get();
       if (block2Doc.exists) {
         final data = block2Doc.data();
         if (data?['type'] == 'block') return true;
@@ -463,7 +464,7 @@ class SocialFriendService {
 
     try {
       final blockId = '${currentUser.uid}_blocks_$blockedUserId';
-      final doc = await _firestore.collection('social_connections').doc(blockId).get();
+      final doc = await _firestore.collection(FirestoreCollections.socialConnections).doc(blockId).get();
       return doc.exists && doc.data()?['type'] == 'block';
     } catch (e) {
       LoggingService.error('Error checking if user is blocked: $e', tag: _logTag);
@@ -478,7 +479,7 @@ class SocialFriendService {
 
     try {
       final blockId = '${userId}_blocks_${currentUser.uid}';
-      final doc = await _firestore.collection('social_connections').doc(blockId).get();
+      final doc = await _firestore.collection(FirestoreCollections.socialConnections).doc(blockId).get();
       return doc.exists && doc.data()?['type'] == 'block';
     } catch (e) {
       LoggingService.error('Error checking if blocked by user: $e', tag: _logTag);
@@ -493,7 +494,7 @@ class SocialFriendService {
 
     try {
       final snapshot = await _firestore
-          .collection('social_connections')
+          .collection(FirestoreCollections.socialConnections)
           .where('fromUserId', isEqualTo: currentUser.uid)
           .where('type', isEqualTo: 'block')
           .get();
@@ -514,7 +515,7 @@ class SocialFriendService {
       final cached = connectionsBox.get(connectionId);
       if (cached != null) return cached;
 
-      final doc = await _firestore.collection('social_connections').doc(connectionId).get();
+      final doc = await _firestore.collection(FirestoreCollections.socialConnections).doc(connectionId).get();
       if (!doc.exists) return null;
 
       final data = doc.data()!;

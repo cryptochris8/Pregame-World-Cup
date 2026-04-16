@@ -176,9 +176,9 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
               children: [
                 const CopaAvatar(size: 28),
                 const SizedBox(width: 8),
-                const Expanded(
-                  child: Text('Copa',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                Expanded(
+                  child: Text(AppLocalizations.of(context).copaTitle,
+                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                 ),
                 IconButton(
                   icon: const Icon(Icons.delete_outline),
@@ -196,7 +196,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Copa'),
+        title: Text(AppLocalizations.of(context).copaTitle),
         backgroundColor: Theme.of(context).colorScheme.primary,
         titleTextStyle: TextStyle(
           color: Theme.of(context).colorScheme.onPrimary,

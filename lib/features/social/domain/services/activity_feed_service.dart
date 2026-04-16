@@ -1,4 +1,5 @@
 import 'dart:developer' as developer;
+import '../../../../core/constants/firestore_collections.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:hive/hive.dart';
@@ -95,7 +96,7 @@ class ActivityFeedService {
       }
 
       final data = _activityToFirestore(activity);
-      await _firestore.collection('activities').doc(activity.activityId).set(data);
+      await _firestore.collection(FirestoreCollections.activities).doc(activity.activityId).set(data);
 
       // Cache locally
       await _activitiesBox.put(activity.activityId, activity);
@@ -131,14 +132,14 @@ class ActivityFeedService {
 
       try {
         final friendsQuery = await _firestore
-            .collection('social_connections')
+            .collection(FirestoreCollections.socialConnections)
             .where('fromUserId', isEqualTo: userId)
             .where('status', isEqualTo: 'accepted')
             .where('type', isEqualTo: 'friend')
             .get();
 
         final friendsQuery2 = await _firestore
-            .collection('social_connections')
+            .collection(FirestoreCollections.socialConnections)
             .where('toUserId', isEqualTo: userId)
             .where('status', isEqualTo: 'accepted')
             .where('type', isEqualTo: 'friend')
@@ -158,12 +159,12 @@ class ActivityFeedService {
       final blockedIds = <String>{};
       try {
         final blockedByMe = await _firestore
-            .collection('social_connections')
+            .collection(FirestoreCollections.socialConnections)
             .where('fromUserId', isEqualTo: userId)
             .where('type', isEqualTo: 'block')
             .get();
         final blockedMe = await _firestore
-            .collection('social_connections')
+            .collection(FirestoreCollections.socialConnections)
             .where('toUserId', isEqualTo: userId)
             .where('type', isEqualTo: 'block')
             .get();
@@ -195,7 +196,7 @@ class ActivityFeedService {
 
           for (final chunk in chunks) {
             var query = _firestore
-                .collection('activities')
+                .collection(FirestoreCollections.activities)
                 .where('userId', whereIn: chunk)
                 .where('isPublic', isEqualTo: true)
                 .orderBy('createdAt', descending: true);
@@ -280,7 +281,7 @@ class ActivityFeedService {
       PerformanceMonitor.startApiCall('get_user_activities');
 
       final query = await _firestore
-          .collection('activities')
+          .collection(FirestoreCollections.activities)
           .where('userId', isEqualTo: userId)
           .orderBy('createdAt', descending: true)
           .limit(limit)
@@ -338,8 +339,8 @@ class ActivityFeedService {
       PerformanceMonitor.startApiCall('like_activity');
 
       final likeId = '${activityId}_$userId';
-      final likeRef = _firestore.collection('activity_likes').doc(likeId);
-      final activityRef = _firestore.collection('activities').doc(activityId);
+      final likeRef = _firestore.collection(FirestoreCollections.activityLikes).doc(likeId);
+      final activityRef = _firestore.collection(FirestoreCollections.activities).doc(activityId);
 
       // Fix 2: wrap like write + likesCount increment in a transaction to make it atomic
       // The transaction also prevents duplicate likes via an existence check.
@@ -391,8 +392,8 @@ class ActivityFeedService {
       PerformanceMonitor.startApiCall('unlike_activity');
 
       final likeId = '${activityId}_$userId';
-      final likeRef = _firestore.collection('activity_likes').doc(likeId);
-      final activityRef = _firestore.collection('activities').doc(activityId);
+      final likeRef = _firestore.collection(FirestoreCollections.activityLikes).doc(likeId);
+      final activityRef = _firestore.collection(FirestoreCollections.activities).doc(activityId);
 
       // Fix 2: wrap like deletion + likesCount decrement in a transaction
       await _firestore.runTransaction((transaction) async {
@@ -438,7 +439,7 @@ class ActivityFeedService {
       }
 
       // Check Firestore
-      final doc = await _firestore.collection('activity_likes').doc(likeId).get();
+      final doc = await _firestore.collection(FirestoreCollections.activityLikes).doc(likeId).get();
       return doc.exists;
 
     } catch (e) {
@@ -473,8 +474,8 @@ class ActivityFeedService {
         createdAt: DateTime.now(),
       );
 
-      final commentRef = _firestore.collection('activity_comments').doc(activityComment.commentId);
-      final activityRef = _firestore.collection('activities').doc(activityId);
+      final commentRef = _firestore.collection(FirestoreCollections.activityComments).doc(activityComment.commentId);
+      final activityRef = _firestore.collection(FirestoreCollections.activities).doc(activityId);
 
       // Fix 3: wrap comment write + commentsCount increment in a transaction
       await _firestore.runTransaction((transaction) async {
@@ -523,7 +524,7 @@ class ActivityFeedService {
       PerformanceMonitor.startApiCall('get_activity_comments');
 
       final query = await _firestore
-          .collection('activity_comments')
+          .collection(FirestoreCollections.activityComments)
           .where('activityId', isEqualTo: activityId)
           .orderBy('createdAt', descending: false)
           .limit(limit)
@@ -572,7 +573,7 @@ class ActivityFeedService {
       PerformanceMonitor.startApiCall('delete_activity');
 
       // Verify the activity belongs to the user
-      final activityRef = _firestore.collection('activities').doc(activityId);
+      final activityRef = _firestore.collection(FirestoreCollections.activities).doc(activityId);
       final activityDoc = await activityRef.get();
 
       if (!activityDoc.exists) {
@@ -589,12 +590,12 @@ class ActivityFeedService {
 
       // Fetch all related sub-documents before batching
       final likesQuery = await _firestore
-          .collection('activity_likes')
+          .collection(FirestoreCollections.activityLikes)
           .where('activityId', isEqualTo: activityId)
           .get();
 
       final commentsQuery = await _firestore
-          .collection('activity_comments')
+          .collection(FirestoreCollections.activityComments)
           .where('activityId', isEqualTo: activityId)
           .get();
 

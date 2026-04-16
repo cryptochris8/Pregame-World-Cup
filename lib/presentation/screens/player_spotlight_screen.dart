@@ -16,7 +16,10 @@ class PlayerSpotlightScreen extends StatefulWidget {
   State<PlayerSpotlightScreen> createState() => _PlayerSpotlightScreenState();
 }
 
-class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
+class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
   final PlayerService _playerService = PlayerService();
   final ScrollController _scrollController = ScrollController();
 
@@ -329,6 +332,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     final l10n = AppLocalizations.of(context);
 
     return Scaffold(

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../entities/chat.dart';
 import '../../../../core/services/cache_service.dart';
@@ -30,7 +31,7 @@ class MessagingChatSettingsService {
           : 'forever';
 
       await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .set({
         'userId': currentUser.uid,
@@ -55,7 +56,7 @@ class MessagingChatSettingsService {
 
     try {
       await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .set({
         'userId': currentUser.uid,
@@ -80,7 +81,7 @@ class MessagingChatSettingsService {
 
     try {
       final doc = await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .get();
 
@@ -115,7 +116,7 @@ class MessagingChatSettingsService {
 
     try {
       await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .set({
         'userId': currentUser.uid,
@@ -142,7 +143,7 @@ class MessagingChatSettingsService {
 
     try {
       await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .set({
         'userId': currentUser.uid,
@@ -169,7 +170,7 @@ class MessagingChatSettingsService {
 
     try {
       final doc = await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .get();
 
@@ -190,7 +191,7 @@ class MessagingChatSettingsService {
 
     try {
       final doc = await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .get();
 
@@ -217,7 +218,7 @@ class MessagingChatSettingsService {
 
     try {
       await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .set({
         'userId': currentUser.uid,
@@ -244,7 +245,7 @@ class MessagingChatSettingsService {
 
     try {
       await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .set({
         'userId': currentUser.uid,
@@ -270,7 +271,7 @@ class MessagingChatSettingsService {
 
     try {
       final doc = await _firestore
-          .collection('user_chat_settings')
+          .collection(FirestoreCollections.userChatSettings)
           .doc('${currentUser.uid}_$chatId')
           .get();
 

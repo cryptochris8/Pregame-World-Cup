@@ -493,17 +493,36 @@ void main() {
       expect(decoration.boxShadow!.length, 1);
     });
 
-    test('premiumCardDecoration aliases cardGradientDecoration', () {
-      // Both should produce equivalent BoxDecoration
-      final premium = AppTheme.premiumCardDecoration;
-      final card = AppTheme.cardGradientDecoration;
-      expect(premium.gradient, card.gradient);
+    test('premiumCardDecoration is identical to cardGradientDecoration', () {
+      expect(
+        identical(AppTheme.premiumCardDecoration, AppTheme.cardGradientDecoration),
+        isTrue,
+      );
     });
 
-    test('accentCardDecoration aliases buttonGradientDecoration', () {
-      final accent = AppTheme.accentCardDecoration;
-      final button = AppTheme.buttonGradientDecoration;
-      expect(accent.gradient, button.gradient);
+    test('accentCardDecoration is identical to buttonGradientDecoration', () {
+      expect(
+        identical(AppTheme.accentCardDecoration, AppTheme.buttonGradientDecoration),
+        isTrue,
+      );
+    });
+
+    test('buttonGradientDecoration returns the same instance on every access', () {
+      final first = AppTheme.buttonGradientDecoration;
+      final second = AppTheme.buttonGradientDecoration;
+      expect(identical(first, second), isTrue);
+    });
+
+    test('cardGradientDecoration returns the same instance on every access', () {
+      final first = AppTheme.cardGradientDecoration;
+      final second = AppTheme.cardGradientDecoration;
+      expect(identical(first, second), isTrue);
+    });
+
+    test('mainGradientDecoration returns the same instance on every access', () {
+      final first = AppTheme.mainGradientDecoration;
+      final second = AppTheme.mainGradientDecoration;
+      expect(identical(first, second), isTrue);
     });
 
     test('gradientTextStyle has correct properties', () {

@@ -4188,4 +4188,51 @@ class AppLocalizationsEn extends AppLocalizations {
   String unblockSuccess(String name) {
     return '$name has been unblocked';
   }
+
+  @override
+  String get noFriendsYet => 'No friends yet';
+
+  @override
+  String get noFriendsFound => 'No friends found';
+
+  @override
+  String get tryAdjustingSearch => 'Try adjusting your search terms';
+
+  @override
+  String get startConnectingWithFans =>
+      'Start connecting with other sports fans!';
+
+  @override
+  String get addFriends => 'Add Friends';
+
+  @override
+  String get noFriendRequests => 'No friend requests';
+
+  @override
+  String get friendRequestsAppearHere =>
+      'When people send you friend requests,\nthey\'ll appear here.';
+
+  @override
+  String get noSentRequests => 'No sent requests';
+
+  @override
+  String get sentRequestsAppearHere =>
+      'Friend requests you send\nwill appear here.';
+
+  @override
+  String get addReaction => 'Add Reaction';
+
+  @override
+  String get deleteMessage => 'Delete Message';
+
+  @override
+  String get reportMessage => 'Report Message';
+
+  @override
+  String blockUserChatConfirm(String name) {
+    return 'Are you sure you want to block $name? You will no longer see their messages.';
+  }
+
+  @override
+  String get copaTitle => 'Copa';
 }

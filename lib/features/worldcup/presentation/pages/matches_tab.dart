@@ -18,7 +18,10 @@ class MatchesTab extends StatefulWidget {
   State<MatchesTab> createState() => _MatchesTabState();
 }
 
-class _MatchesTabState extends State<MatchesTab> {
+class _MatchesTabState extends State<MatchesTab>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
   /// Cached match counts per date for the date picker.
   /// Only recalculated when the matches list reference changes.
   Map<DateTime, int>? _cachedMatchCounts;
@@ -50,6 +53,7 @@ class _MatchesTabState extends State<MatchesTab> {
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     final l10n = AppLocalizations.of(context);
     return BlocBuilder<MatchListCubit, MatchListState>(
       buildWhen: (previous, current) =>

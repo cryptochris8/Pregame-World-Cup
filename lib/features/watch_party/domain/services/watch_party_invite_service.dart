@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 
@@ -62,7 +63,7 @@ class WatchPartyInviteService {
       );
 
       await _firestore
-          .collection('watch_party_invites')
+          .collection(FirestoreCollections.watchPartyInvites)
           .doc(invite.inviteId)
           .set(invite.toFirestore());
 
@@ -95,7 +96,7 @@ class WatchPartyInviteService {
       PerformanceMonitor.startApiCall('get_pending_invites');
 
       final snapshot = await _firestore
-          .collection('watch_party_invites')
+          .collection(FirestoreCollections.watchPartyInvites)
           .where('inviteeId', isEqualTo: user.uid)
           .where('status', isEqualTo: WatchPartyInviteStatus.pending.name)
           .orderBy('createdAt', descending: true)
@@ -131,7 +132,7 @@ class WatchPartyInviteService {
           : WatchPartyInviteStatus.declined.name;
 
       await _firestore
-          .collection('watch_party_invites')
+          .collection(FirestoreCollections.watchPartyInvites)
           .doc(inviteId)
           .update({'status': status});
 
@@ -158,7 +159,7 @@ class WatchPartyInviteService {
   /// Create an in-app notification for an invite
   Future<void> createInviteNotification(WatchPartyInvite invite) async {
     try {
-      await _firestore.collection('notifications').add({
+      await _firestore.collection(FirestoreCollections.notifications).add({
         'userId': invite.inviteeId,
         'type': 'groupInvite',
         'title': 'Watch Party Invite',
@@ -183,7 +184,7 @@ class WatchPartyInviteService {
       if (cached != null) return cached;
 
       final doc = await _firestore
-          .collection('watch_party_invites')
+          .collection(FirestoreCollections.watchPartyInvites)
           .doc(inviteId)
           .get();
 
@@ -198,7 +199,7 @@ class WatchPartyInviteService {
 
   Future<UserProfile?> _getUserProfile(String userId) async {
     try {
-      final doc = await _firestore.collection('user_profiles').doc(userId).get();
+      final doc = await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).get();
       if (!doc.exists) return null;
       return UserProfile.fromFirestore(doc.data()!, doc.id);
     } catch (e) {

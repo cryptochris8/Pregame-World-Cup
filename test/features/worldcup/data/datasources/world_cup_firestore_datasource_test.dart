@@ -1157,4 +1157,127 @@ void main() {
       expect(result, hasLength(2));
     });
   });
+
+  // ==================== PARALLEL QUERY TESTS ====================
+
+  group('Parallel queries', () {
+    test('getMatchesByTeam fires both home and away queries and combines results',
+        () async {
+      // Seed home match
+      final homeMatch = TestDataFactory.createMatch(
+        matchId: 'par_home',
+        matchNumber: 2,
+        homeTeamCode: 'ARG',
+        awayTeamCode: 'BRA',
+      );
+      // Seed away match
+      final awayMatch = TestDataFactory.createMatch(
+        matchId: 'par_away',
+        matchNumber: 1,
+        homeTeamCode: 'GER',
+        awayTeamCode: 'ARG',
+      );
+      // Seed unrelated match
+      final otherMatch = TestDataFactory.createMatch(
+        matchId: 'par_other',
+        matchNumber: 3,
+        homeTeamCode: 'FRA',
+        awayTeamCode: 'ESP',
+      );
+
+      await fakeFirestore
+          .collection('worldcup_matches')
+          .doc('par_home')
+          .set(homeMatch.toFirestore());
+      await fakeFirestore
+          .collection('worldcup_matches')
+          .doc('par_away')
+          .set(awayMatch.toFirestore());
+      await fakeFirestore
+          .collection('worldcup_matches')
+          .doc('par_other')
+          .set(otherMatch.toFirestore());
+
+      final result = await dataSource.getMatchesByTeam('ARG');
+
+      // Should include both home and away matches, not the unrelated one
+      expect(result, hasLength(2));
+      // Should be sorted by matchNumber
+      expect(result[0].matchNumber, 1);
+      expect(result[1].matchNumber, 2);
+      // Verify the correct matches were returned
+      expect(result[0].matchId, 'par_away');
+      expect(result[1].matchId, 'par_home');
+    });
+
+    test('getMatchesByTeam handles lowercase team code', () async {
+      final match = TestDataFactory.createMatch(
+        matchId: 'par_lower',
+        matchNumber: 1,
+        homeTeamCode: 'JPN',
+        awayTeamCode: 'KOR',
+      );
+
+      await fakeFirestore
+          .collection('worldcup_matches')
+          .doc('par_lower')
+          .set(match.toFirestore());
+
+      final result = await dataSource.getMatchesByTeam('jpn');
+      expect(result, hasLength(1));
+      expect(result.first.matchId, 'par_lower');
+    });
+
+    test('getHeadToHeadForTeam fires both team1 and team2 queries and combines results',
+        () async {
+      // Seed h2h where USA is team1
+      await fakeFirestore.collection('headToHead').doc('MEX_USA').set(
+        const HeadToHead(
+          team1Code: 'MEX',
+          team2Code: 'USA',
+          totalMatches: 5,
+          team1Wins: 2,
+          team2Wins: 2,
+          draws: 1,
+        ).toMap(),
+      );
+      // Seed h2h where USA is team2 (different pair)
+      await fakeFirestore.collection('headToHead').doc('USA_BRA').set(
+        const HeadToHead(
+          team1Code: 'USA',
+          team2Code: 'BRA',
+          totalMatches: 3,
+          team1Wins: 0,
+          team2Wins: 3,
+          draws: 0,
+        ).toMap(),
+      );
+      // Seed unrelated h2h
+      await fakeFirestore.collection('headToHead').doc('ARG_FRA').set(
+        const HeadToHead(
+          team1Code: 'ARG',
+          team2Code: 'FRA',
+          totalMatches: 4,
+          team1Wins: 2,
+          team2Wins: 1,
+          draws: 1,
+        ).toMap(),
+      );
+
+      final result = await dataSource.getHeadToHeadForTeam('USA');
+
+      // Should include both records where USA appears, not the unrelated one
+      expect(result, hasLength(2));
+      final teamCodes = result
+          .expand((h) => [h.team1Code, h.team2Code])
+          .toSet();
+      expect(teamCodes, contains('USA'));
+      expect(teamCodes, isNot(contains('ARG')));
+    });
+
+    test('getHeadToHeadForTeam returns empty list for unknown team', () async {
+      final result = await dataSource.getHeadToHeadForTeam('ZZZ');
+      expect(result, isEmpty);
+    });
+  });
 }

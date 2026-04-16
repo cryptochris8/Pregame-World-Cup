@@ -43,7 +43,8 @@ class _LiveIndicatorState extends State<LiveIndicator>
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return RepaintBoundary(
+      child: Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         AnimatedBuilder(
@@ -78,6 +79,7 @@ class _LiveIndicatorState extends State<LiveIndicator>
           ),
         ],
       ],
+    ),
     );
   }
 }
@@ -88,13 +90,14 @@ class LiveBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(4),
-      ),
-      child: const Row(
+    return RepaintBoundary(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        decoration: BoxDecoration(
+          color: Colors.red,
+          borderRadius: BorderRadius.circular(4),
+        ),
+        child: const Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           LiveIndicator(size: 6, color: Colors.white),
@@ -110,6 +113,7 @@ class LiveBadge extends StatelessWidget {
           ),
         ],
       ),
+    ),
     );
   }
 }

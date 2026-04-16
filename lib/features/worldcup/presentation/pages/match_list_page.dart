@@ -150,7 +150,8 @@ class _MatchListPageState extends State<MatchListPage> {
                                   itemCount: displayMatches.length,
                                   itemBuilder: (context, index) {
                                     final match = displayMatches[index];
-                                    return MatchCard(
+                                    return RepaintBoundary(
+                                      child: MatchCard(
                                       match: match,
                                       onTap: () => _onMatchTap(match),
                                       isFavorite: favoritesState.isMatchFavorite(match.matchId),
@@ -161,6 +162,7 @@ class _MatchListPageState extends State<MatchListPage> {
                                       onPrediction: (homeScore, awayScore) => context
                                           .read<PredictionsCubit>()
                                           .savePredictionForMatch(match, homeScore: homeScore, awayScore: awayScore),
+                                    ),
                                     );
                                   },
                                 ),
@@ -190,7 +192,7 @@ class _MatchListPageState extends State<MatchListPage> {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
         children: [
-          const LiveIndicator(size: 10, label: 'LIVE NOW'),
+          const RepaintBoundary(child: LiveIndicator(size: 10, label: 'LIVE NOW')),
           const SizedBox(width: 12),
           Expanded(
             child: SingleChildScrollView(

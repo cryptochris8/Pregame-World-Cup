@@ -1,4 +1,5 @@
 import '../../../../config/app_theme.dart';
+import '../../../../l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 /// Empty state widget displayed when the user has no friends or no search results.
@@ -14,6 +15,7 @@ class EmptyFriendsState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -25,7 +27,7 @@ class EmptyFriendsState extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           Text(
-            searchQuery.isNotEmpty ? 'No friends found' : 'No friends yet',
+            searchQuery.isNotEmpty ? l10n.noFriendsFound : l10n.noFriendsYet,
             style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -35,8 +37,8 @@ class EmptyFriendsState extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             searchQuery.isNotEmpty
-                ? 'Try adjusting your search terms'
-                : 'Start connecting with other sports fans!',
+                ? l10n.tryAdjustingSearch
+                : l10n.startConnectingWithFans,
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 16,
@@ -53,7 +55,7 @@ class EmptyFriendsState extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               ),
               icon: const Icon(Icons.person_add),
-              label: const Text('Add Friends'),
+              label: Text(l10n.addFriends),
             ),
           ],
         ],
@@ -68,29 +70,30 @@ class EmptyRequestsState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    final l10n = AppLocalizations.of(context);
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.inbox_outlined,
             size: 80,
             color: Colors.grey,
           ),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           Text(
-            'No friend requests',
-            style: TextStyle(
+            l10n.noFriendRequests,
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: Colors.grey,
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
-            'When people send you friend requests,\nthey\'ll appear here.',
+            l10n.friendRequestsAppearHere,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               color: Colors.grey,
             ),
@@ -107,29 +110,30 @@ class EmptySentRequestsState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    final l10n = AppLocalizations.of(context);
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.send_outlined,
             size: 80,
             color: Colors.grey,
           ),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           Text(
-            'No sent requests',
-            style: TextStyle(
+            l10n.noSentRequests,
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: Colors.grey,
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
-            'Friend requests you send\nwill appear here.',
+            l10n.sentRequestsAppearHere,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               color: Colors.grey,
             ),

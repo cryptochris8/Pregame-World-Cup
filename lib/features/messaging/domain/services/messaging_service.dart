@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../entities/message.dart';
@@ -92,7 +93,7 @@ class MessagingService {
 
   Future<Chat?> getChatById(String chatId) async {
     try {
-      final doc = await _firestore.collection('chats').doc(chatId).get();
+      final doc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (doc.exists) {
         return _chatFromFirestore(doc);
       }
@@ -111,7 +112,7 @@ class MessagingService {
       }
 
       final snapshot = await _firestore
-          .collection('chats')
+          .collection(FirestoreCollections.chats)
           .where('participantIds', arrayContains: userId)
           .where('isActive', isEqualTo: true)
           .orderBy('lastMessageTime', descending: true)
@@ -152,7 +153,7 @@ class MessagingService {
         participantUserId: otherUserId,
       );
 
-      await _firestore.collection('chats').doc(chat.chatId).set(chat.toJson());
+      await _firestore.collection(FirestoreCollections.chats).doc(chat.chatId).set(chat.toJson());
       await CacheService.instance.remove(_chatsKey);
 
       return chat;
@@ -180,7 +181,7 @@ class MessagingService {
         imageUrl: imageUrl,
       );
 
-      await _firestore.collection('chats').doc(chat.chatId).set(chat.toJson());
+      await _firestore.collection(FirestoreCollections.chats).doc(chat.chatId).set(chat.toJson());
 
       await sendSystemMessage(
         chatId: chat.chatId,
@@ -214,7 +215,7 @@ class MessagingService {
         imageUrl: imageUrl,
       );
 
-      await _firestore.collection('chats').doc(chat.chatId).set(chat.toJson());
+      await _firestore.collection(FirestoreCollections.chats).doc(chat.chatId).set(chat.toJson());
 
       await sendSystemMessage(
         chatId: chat.chatId,
@@ -232,7 +233,7 @@ class MessagingService {
 
   Future<bool> createChat(Chat chat) async {
     try {
-      await _firestore.collection('chats').doc(chat.chatId).set(chat.toJson());
+      await _firestore.collection(FirestoreCollections.chats).doc(chat.chatId).set(chat.toJson());
       await CacheService.instance.set('chat_${chat.chatId}', chat.toJson(), duration: const Duration(minutes: 10));
       return true;
     } catch (e) {
@@ -357,7 +358,7 @@ class MessagingService {
       final sortedIds = [userId1, userId2]..sort();
       final chatId = 'dm_${sortedIds[0]}_${sortedIds[1]}';
 
-      final doc = await _firestore.collection('chats').doc(chatId).get();
+      final doc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (doc.exists) {
         return _chatFromFirestore(doc);
       }

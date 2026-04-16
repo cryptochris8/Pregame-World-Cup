@@ -1,4 +1,5 @@
 import 'dart:io';
+import '../constants/firestore_collections.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -120,16 +121,16 @@ class PushNotificationService {
 
     try {
       // Save to users collection (for Cloud Functions to read)
-      await _firestore.collection('users').doc(user.uid).set({
+      await _firestore.collection(FirestoreCollections.users).doc(user.uid).set({
         'fcmToken': token,
         'fcmTokenUpdatedAt': FieldValue.serverTimestamp(),
         'platform': _getPlatform(),
       }, SetOptions(merge: true));
 
       // Also update user_profiles if it exists
-      final profileDoc = await _firestore.collection('user_profiles').doc(user.uid).get();
+      final profileDoc = await _firestore.collection(FirestoreCollections.userProfiles).doc(user.uid).get();
       if (profileDoc.exists) {
-        await _firestore.collection('user_profiles').doc(user.uid).update({
+        await _firestore.collection(FirestoreCollections.userProfiles).doc(user.uid).update({
           'fcmToken': token,
           'fcmTokenUpdatedAt': FieldValue.serverTimestamp(),
         });
@@ -290,15 +291,15 @@ class PushNotificationService {
 
     try {
       // Remove from users collection
-      await _firestore.collection('users').doc(user.uid).update({
+      await _firestore.collection(FirestoreCollections.users).doc(user.uid).update({
         'fcmToken': FieldValue.delete(),
         'fcmTokenUpdatedAt': FieldValue.delete(),
       });
 
       // Remove from user_profiles if it exists
-      final profileDoc = await _firestore.collection('user_profiles').doc(user.uid).get();
+      final profileDoc = await _firestore.collection(FirestoreCollections.userProfiles).doc(user.uid).get();
       if (profileDoc.exists) {
-        await _firestore.collection('user_profiles').doc(user.uid).update({
+        await _firestore.collection(FirestoreCollections.userProfiles).doc(user.uid).update({
           'fcmToken': FieldValue.delete(),
           'fcmTokenUpdatedAt': FieldValue.delete(),
         });

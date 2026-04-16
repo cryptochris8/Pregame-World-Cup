@@ -5409,5 +5409,69 @@
         "type": "String"
       }
     }
+  },
+
+  "noFriendsYet": "No friends yet",
+  "@noFriendsYet": {
+    "description": "Title when user has no friends"
+  },
+  "noFriendsFound": "No friends found",
+  "@noFriendsFound": {
+    "description": "Title when friend search returns no results"
+  },
+  "tryAdjustingSearch": "Try adjusting your search terms",
+  "@tryAdjustingSearch": {
+    "description": "Hint when search returns no results"
+  },
+  "startConnectingWithFans": "Start connecting with other sports fans!",
+  "@startConnectingWithFans": {
+    "description": "Subtitle encouraging user to add friends"
+  },
+  "addFriends": "Add Friends",
+  "@addFriends": {
+    "description": "Button label to add friends"
+  },
+  "noFriendRequests": "No friend requests",
+  "@noFriendRequests": {
+    "description": "Title when there are no pending friend requests"
+  },
+  "friendRequestsAppearHere": "When people send you friend requests,\nthey'll appear here.",
+  "@friendRequestsAppearHere": {
+    "description": "Subtitle for empty friend requests state"
+  },
+  "noSentRequests": "No sent requests",
+  "@noSentRequests": {
+    "description": "Title when user has no sent friend requests"
+  },
+  "sentRequestsAppearHere": "Friend requests you send\nwill appear here.",
+  "@sentRequestsAppearHere": {
+    "description": "Subtitle for empty sent requests state"
+  },
+
+  "addReaction": "Add Reaction",
+  "@addReaction": {
+    "description": "Label for add reaction action in chat"
+  },
+  "deleteMessage": "Delete Message",
+  "@deleteMessage": {
+    "description": "Label for delete message action in chat"
+  },
+  "reportMessage": "Report Message",
+  "@reportMessage": {
+    "description": "Label for report message action in chat"
+  },
+  "blockUserChatConfirm": "Are you sure you want to block {name}? You will no longer see their messages.",
+  "@blockUserChatConfirm": {
+    "description": "Confirmation message when blocking a user in chat",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "copaTitle": "Copa",
+  "@copaTitle": {
+    "description": "Title for Copa AI chatbot"
   }
 }

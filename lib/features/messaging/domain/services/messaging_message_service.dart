@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../entities/message.dart';
@@ -38,7 +39,7 @@ class MessagingMessageService {
       }
 
       final snapshot = await _firestore
-          .collection('messages')
+          .collection(FirestoreCollections.messages)
           .where('chatId', isEqualTo: chatId)
           .where('isDeleted', isEqualTo: false)
           .orderBy('createdAt', descending: true)
@@ -90,7 +91,7 @@ class MessagingMessageService {
       final filteredContent = validationResult.filteredMessage ?? content;
 
       // Check for blocks in direct chats
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (chatDoc.exists) {
         final chatData = chatDoc.data()!;
         final chatType = chatData['type'] as String?;
@@ -127,7 +128,7 @@ class MessagingMessageService {
         metadata: metadata ?? {},
       );
 
-      await _firestore.collection('messages').doc(message.messageId).set(message.toJson());
+      await _firestore.collection(FirestoreCollections.messages).doc(message.messageId).set(message.toJson());
       await _updateChatLastMessage(chatId, message);
       await _triggerMessageNotifications(chatId, message);
 
@@ -154,7 +155,7 @@ class MessagingMessageService {
         metadata: metadata,
       );
 
-      await _firestore.collection('messages').doc(message.messageId).set(message.toJson());
+      await _firestore.collection(FirestoreCollections.messages).doc(message.messageId).set(message.toJson());
       await _updateChatLastMessage(chatId, message);
 
       await CacheService.instance.remove('$messagesKeyPrefix$chatId');
@@ -173,7 +174,7 @@ class MessagingMessageService {
     if (currentUser == null) return false;
 
     try {
-      final messageRef = _firestore.collection('messages').doc(messageId);
+      final messageRef = _firestore.collection(FirestoreCollections.messages).doc(messageId);
       final messageDoc = await messageRef.get();
 
       if (!messageDoc.exists) return false;
@@ -198,7 +199,7 @@ class MessagingMessageService {
     if (currentUser == null) return false;
 
     try {
-      final chatRef = _firestore.collection('chats').doc(chatId);
+      final chatRef = _firestore.collection(FirestoreCollections.chats).doc(chatId);
       final chatDoc = await chatRef.get();
 
       if (!chatDoc.exists) return false;
@@ -224,7 +225,7 @@ class MessagingMessageService {
 
     try {
       final snapshot = await _firestore
-          .collection('messages')
+          .collection(FirestoreCollections.messages)
           .where('chatId', isEqualTo: chatId)
           .where('senderId', isNotEqualTo: currentUser.uid)
           .get();
@@ -270,7 +271,7 @@ class MessagingMessageService {
 
   Future<void> _updateChatLastMessage(String chatId, Message message) async {
     try {
-      final chatRef = _firestore.collection('chats').doc(chatId);
+      final chatRef = _firestore.collection(FirestoreCollections.chats).doc(chatId);
       final chatDoc = await chatRef.get();
 
       if (chatDoc.exists) {
@@ -286,7 +287,7 @@ class MessagingMessageService {
 
   Future<void> _triggerMessageNotifications(String chatId, Message message) async {
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return;
 
       final chat = chatFromFirestore(chatDoc);
@@ -297,7 +298,7 @@ class MessagingMessageService {
 
       if (recipients.isEmpty) return;
 
-      await _firestore.collection('message_notifications').add({
+      await _firestore.collection(FirestoreCollections.messageNotifications).add({
         'chatId': chatId,
         'messageId': message.messageId,
         'senderId': message.senderId,

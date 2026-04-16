@@ -7,13 +7,23 @@ import '../widgets/widgets.dart';
 
 /// Groups tab content for the World Cup home screen.
 /// Displays all 12 group standings tables in a scrollable list.
-class GroupsTab extends StatelessWidget {
+class GroupsTab extends StatefulWidget {
   final void Function(String) onTeamTap;
 
   const GroupsTab({super.key, required this.onTeamTap});
 
   @override
+  State<GroupsTab> createState() => _GroupsTabState();
+}
+
+class _GroupsTabState extends State<GroupsTab>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     final l10n = AppLocalizations.of(context);
     return BlocBuilder<GroupStandingsCubit, GroupStandingsState>(
       builder: (context, state) {
@@ -71,7 +81,7 @@ class GroupsTab extends StatelessWidget {
               return StandingsTable(
                 group: group,
                 compact: true,
-                onTeamTap: (teamCode) => () => onTeamTap(teamCode),
+                onTeamTap: (teamCode) => () => widget.onTeamTap(teamCode),
               );
             },
           ),

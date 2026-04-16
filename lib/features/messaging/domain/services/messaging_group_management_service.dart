@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../entities/chat.dart';
 import '../../../../core/services/cache_service.dart';
@@ -34,7 +35,7 @@ class MessagingGroupManagementService {
     if (currentUser == null) return false;
 
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return false;
 
       final chat = chatFromFirestore(chatDoc);
@@ -53,7 +54,7 @@ class MessagingGroupManagementService {
       final updatedUnreadCounts = Map<String, int>.from(chat.unreadCounts);
       updatedUnreadCounts[userId] = 0;
 
-      await _firestore.collection('chats').doc(chatId).update({
+      await _firestore.collection(FirestoreCollections.chats).doc(chatId).update({
         'participantIds': updatedParticipants,
         'unreadCounts': updatedUnreadCounts,
         'updatedAt': DateTime.now().toIso8601String(),
@@ -80,7 +81,7 @@ class MessagingGroupManagementService {
     if (currentUser == null) return false;
 
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return false;
 
       final chat = chatFromFirestore(chatDoc);
@@ -95,7 +96,7 @@ class MessagingGroupManagementService {
         return false;
       }
 
-      final userDoc = await _firestore.collection('users').doc(userId).get();
+      final userDoc = await _firestore.collection(FirestoreCollections.users).doc(userId).get();
       final userName = userDoc.exists ? (userDoc.data()?['displayName'] ?? 'A member') : 'A member';
 
       final updatedParticipants = List<String>.from(chat.participantIds)..remove(userId);
@@ -103,7 +104,7 @@ class MessagingGroupManagementService {
       final updatedUnreadCounts = Map<String, int>.from(chat.unreadCounts);
       updatedUnreadCounts.remove(userId);
 
-      await _firestore.collection('chats').doc(chatId).update({
+      await _firestore.collection(FirestoreCollections.chats).doc(chatId).update({
         'participantIds': updatedParticipants,
         'adminIds': updatedAdmins,
         'unreadCounts': updatedUnreadCounts,
@@ -131,7 +132,7 @@ class MessagingGroupManagementService {
     if (currentUser == null) return false;
 
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return false;
 
       final chat = chatFromFirestore(chatDoc);
@@ -152,12 +153,12 @@ class MessagingGroupManagementService {
       updatedUnreadCounts.remove(currentUser.uid);
 
       if (updatedParticipants.isEmpty) {
-        await _firestore.collection('chats').doc(chatId).update({
+        await _firestore.collection(FirestoreCollections.chats).doc(chatId).update({
           'isActive': false,
           'updatedAt': DateTime.now().toIso8601String(),
         });
       } else {
-        await _firestore.collection('chats').doc(chatId).update({
+        await _firestore.collection(FirestoreCollections.chats).doc(chatId).update({
           'participantIds': updatedParticipants,
           'adminIds': updatedAdmins,
           'unreadCounts': updatedUnreadCounts,
@@ -186,7 +187,7 @@ class MessagingGroupManagementService {
     if (currentUser == null) return false;
 
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return false;
 
       final chat = chatFromFirestore(chatDoc);
@@ -206,12 +207,12 @@ class MessagingGroupManagementService {
         return false;
       }
 
-      final userDoc = await _firestore.collection('users').doc(userId).get();
+      final userDoc = await _firestore.collection(FirestoreCollections.users).doc(userId).get();
       final userName = userDoc.exists ? (userDoc.data()?['displayName'] ?? 'A member') : 'A member';
 
       final updatedAdmins = List<String>.from(chat.adminIds)..add(userId);
 
-      await _firestore.collection('chats').doc(chatId).update({
+      await _firestore.collection(FirestoreCollections.chats).doc(chatId).update({
         'adminIds': updatedAdmins,
         'updatedAt': DateTime.now().toIso8601String(),
       });
@@ -237,7 +238,7 @@ class MessagingGroupManagementService {
     if (currentUser == null) return false;
 
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return false;
 
       final chat = chatFromFirestore(chatDoc);
@@ -257,12 +258,12 @@ class MessagingGroupManagementService {
         return false;
       }
 
-      final userDoc = await _firestore.collection('users').doc(userId).get();
+      final userDoc = await _firestore.collection(FirestoreCollections.users).doc(userId).get();
       final userName = userDoc.exists ? (userDoc.data()?['displayName'] ?? 'A member') : 'A member';
 
       final updatedAdmins = List<String>.from(chat.adminIds)..remove(userId);
 
-      await _firestore.collection('chats').doc(chatId).update({
+      await _firestore.collection(FirestoreCollections.chats).doc(chatId).update({
         'adminIds': updatedAdmins,
         'updatedAt': DateTime.now().toIso8601String(),
       });
@@ -285,14 +286,14 @@ class MessagingGroupManagementService {
   /// Get member profiles for a chat
   Future<List<ChatMemberInfo>> getChatMembers(String chatId) async {
     try {
-      final chatDoc = await _firestore.collection('chats').doc(chatId).get();
+      final chatDoc = await _firestore.collection(FirestoreCollections.chats).doc(chatId).get();
       if (!chatDoc.exists) return [];
 
       final chat = chatFromFirestore(chatDoc);
       final members = <ChatMemberInfo>[];
 
       for (final participantId in chat.participantIds) {
-        final userDoc = await _firestore.collection('users').doc(participantId).get();
+        final userDoc = await _firestore.collection(FirestoreCollections.users).doc(participantId).get();
         if (userDoc.exists) {
           final userData = userDoc.data()!;
           members.add(ChatMemberInfo(

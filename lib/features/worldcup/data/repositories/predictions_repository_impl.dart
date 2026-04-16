@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../../../../core/constants/firestore_collections.dart';
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -320,7 +321,7 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
       final predictionsRef = _firestore
           .collection(_firestorePredictionsCollection)
           .doc(userId)
-          .collection('predictions');
+          .collection(FirestoreCollections.predictions);
 
       for (final prediction in predictions) {
         final docRef = predictionsRef.doc(prediction.matchId);
@@ -345,7 +346,7 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
       final snapshot = await _firestore
           .collection(_firestorePredictionsCollection)
           .doc(userId)
-          .collection('predictions')
+          .collection(FirestoreCollections.predictions)
           .get();
 
       if (snapshot.docs.isEmpty) return;
@@ -399,7 +400,7 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
       await _firestore
           .collection(_firestorePredictionsCollection)
           .doc(userId)
-          .collection('predictions')
+          .collection(FirestoreCollections.predictions)
           .doc(prediction.matchId)
           .set(_predictionToFirestoreMap(prediction, userId));
 
@@ -420,7 +421,7 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
       await _firestore
           .collection(_firestorePredictionsCollection)
           .doc(userId)
-          .collection('predictions')
+          .collection(FirestoreCollections.predictions)
           .doc(matchId)
           .delete();
     } catch (e) {
@@ -437,7 +438,7 @@ class PredictionsRepositoryImpl implements PredictionsRepository {
       final snapshot = await _firestore
           .collection(_firestorePredictionsCollection)
           .doc(userId)
-          .collection('predictions')
+          .collection(FirestoreCollections.predictions)
           .get();
 
       final batch = _firestore.batch();

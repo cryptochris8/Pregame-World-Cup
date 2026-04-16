@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
@@ -141,38 +142,38 @@ class AdminService {
       final todayStart = DateTime(now.year, now.month, now.day);
 
       // Get counts (using aggregation where possible)
-      final usersCount = await _firestore.collection('user_profiles').count().get();
-      final watchPartiesCount = await _firestore.collection('watch_parties').count().get();
+      final usersCount = await _firestore.collection(FirestoreCollections.userProfiles).count().get();
+      final watchPartiesCount = await _firestore.collection(FirestoreCollections.watchParties).count().get();
       final pendingReportsCount = await _firestore
-          .collection('reports')
+          .collection(FirestoreCollections.reports)
           .where('status', isEqualTo: 'pending')
           .count()
           .get();
 
       // Active users (users who logged in within 24h)
       final activeUsersCount = await _firestore
-          .collection('user_profiles')
+          .collection(FirestoreCollections.userProfiles)
           .where('lastSeenAt', isGreaterThan: Timestamp.fromDate(yesterday))
           .count()
           .get();
 
       // New users today
       final newUsersCount = await _firestore
-          .collection('user_profiles')
+          .collection(FirestoreCollections.userProfiles)
           .where('createdAt', isGreaterThan: Timestamp.fromDate(todayStart))
           .count()
           .get();
 
       // Active watch parties (with upcoming matches)
       final activeWatchPartiesCount = await _firestore
-          .collection('watch_parties')
+          .collection(FirestoreCollections.watchParties)
           .where('matchDate', isGreaterThan: Timestamp.fromDate(now))
           .count()
           .get();
 
       // Get predictions and messages counts
-      final predictionsCount = await _firestore.collection('predictions').count().get();
-      final messagesCount = await _firestore.collection('messages').count().get();
+      final predictionsCount = await _firestore.collection(FirestoreCollections.predictions).count().get();
+      final messagesCount = await _firestore.collection(FirestoreCollections.messages).count().get();
 
       final stats = AdminDashboardStats(
         totalUsers: usersCount.count ?? 0,
@@ -212,7 +213,7 @@ class AdminService {
     }
 
     try {
-      Query<Map<String, dynamic>> queryRef = _firestore.collection('user_profiles');
+      Query<Map<String, dynamic>> queryRef = _firestore.collection(FirestoreCollections.userProfiles);
 
       if (query != null && query.isNotEmpty) {
         // Search by display name or email
@@ -243,7 +244,7 @@ class AdminService {
     if (!isAdmin) return null;
 
     try {
-      final doc = await _firestore.collection('user_profiles').doc(userId).get();
+      final doc = await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).get();
       if (!doc.exists) return null;
       return UserProfile.fromFirestore(doc.data()!, doc.id);
     } catch (e) {
@@ -351,7 +352,7 @@ class AdminService {
     if (!isAdmin || user == null || user.role != AdminRole.superAdmin) return false;
 
     try {
-      await _firestore.collection('user_profiles').doc(userId).update({
+      await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).update({
         'isDeleted': true,
         'deletedAt': FieldValue.serverTimestamp(),
         'deletedBy': user.userId,
@@ -384,7 +385,7 @@ class AdminService {
     }
 
     try {
-      Query<Map<String, dynamic>> queryRef = _firestore.collection('watch_parties');
+      Query<Map<String, dynamic>> queryRef = _firestore.collection(FirestoreCollections.watchParties);
 
       if (isActive == true) {
         queryRef = queryRef.where('matchDate', isGreaterThan: Timestamp.now());
@@ -411,7 +412,7 @@ class AdminService {
     if (!isAdmin || user == null || !user.role.canManageWatchParties()) return false;
 
     try {
-      await _firestore.collection('watch_parties').doc(partyId).update({
+      await _firestore.collection(FirestoreCollections.watchParties).doc(partyId).update({
         'isDeleted': true,
         'deletedAt': FieldValue.serverTimestamp(),
         'deletedBy': user.userId,
@@ -568,7 +569,7 @@ class AdminService {
       }
 
       // Store the notification for Cloud Functions to send
-      await _firestore.collection('broadcast_notifications').add({
+      await _firestore.collection(FirestoreCollections.broadcastNotifications).add({
         'title': title,
         'body': body,
         'topic': targetTopic,

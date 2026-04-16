@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../services/logging_service.dart';
 import '../ai/services/ai_service.dart';
@@ -38,7 +39,7 @@ class UserLearningService {
       };
 
       await _firestore
-          .collection('user_interactions')
+          .collection(FirestoreCollections.userInteractions)
           .add(interaction);
 
       // Update user behavior summary asynchronously
@@ -76,7 +77,7 @@ class UserLearningService {
       };
 
       await _firestore
-          .collection('venue_interactions')
+          .collection(FirestoreCollections.venueInteractions)
           .add(interaction);
 
       LoggingService.info(
@@ -107,7 +108,7 @@ class UserLearningService {
       };
 
       await _firestore
-          .collection('team_preferences')
+          .collection(FirestoreCollections.teamPreferences)
           .add(preference);
 
       LoggingService.info(
@@ -126,19 +127,19 @@ class UserLearningService {
       final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
       
       final interactions = await _firestore
-          .collection('user_interactions')
+          .collection(FirestoreCollections.userInteractions)
           .where('userId', isEqualTo: userId)
           .where('timestamp', isGreaterThan: Timestamp.fromDate(thirtyDaysAgo))
           .get();
 
       final venueInteractions = await _firestore
-          .collection('venue_interactions')
+          .collection(FirestoreCollections.venueInteractions)
           .where('userId', isEqualTo: userId)
           .where('timestamp', isGreaterThan: Timestamp.fromDate(thirtyDaysAgo))
           .get();
 
       final teamPreferences = await _firestore
-          .collection('team_preferences')
+          .collection(FirestoreCollections.teamPreferences)
           .where('userId', isEqualTo: userId)
           .where('timestamp', isGreaterThan: Timestamp.fromDate(thirtyDaysAgo))
           .get();
@@ -193,7 +194,7 @@ class UserLearningService {
   ) async {
     try {
       final summaryRef = _firestore
-          .collection('user_behavior_summary')
+          .collection(FirestoreCollections.userBehaviorSummary)
           .doc(userId);
 
       await _firestore.runTransaction((transaction) async {
@@ -236,7 +237,7 @@ class UserLearningService {
   Future<List<String>> getMostEngagedTeams(String userId, {int limit = 5}) async {
     try {
       final summaryDoc = await _firestore
-          .collection('user_behavior_summary')
+          .collection(FirestoreCollections.userBehaviorSummary)
           .doc(userId)
           .get();
 

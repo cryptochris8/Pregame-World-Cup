@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/firestore_collections.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 import '../entities/user_profile.dart';
@@ -96,7 +97,7 @@ class SocialProfileService {
 
       // Fetch from Firestore
       PerformanceMonitor.startApiCall('fetch_profile_$userId');
-      final doc = await _firestore.collection('user_profiles').doc(userId).get();
+      final doc = await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).get();
 
       if (!doc.exists) {
         PerformanceMonitor.endApiCall('fetch_profile_$userId', success: false);
@@ -130,7 +131,7 @@ class SocialProfileService {
       final updatedProfile = profile.copyWith(updatedAt: DateTime.now());
       final data = _mappers.profileToMap(updatedProfile);
 
-      await _firestore.collection('user_profiles').doc(profile.userId).set(data);
+      await _firestore.collection(FirestoreCollections.userProfiles).doc(profile.userId).set(data);
 
       // Update caches
       await profilesBox.put(profile.userId, updatedProfile);
@@ -157,7 +158,7 @@ class SocialProfileService {
 
       // Search by displayNameLowercase (case-insensitive, for profiles saved with this field)
       final lowercaseQuery = await _firestore
-          .collection('user_profiles')
+          .collection(FirestoreCollections.userProfiles)
           .where('displayNameLowercase', isGreaterThanOrEqualTo: lowerQuery)
           .where('displayNameLowercase', isLessThanOrEqualTo: '$lowerQuery\uf8ff')
           .limit(limit)
@@ -171,7 +172,7 @@ class SocialProfileService {
       // Fallback: search by displayName with original casing (for legacy profiles)
       if (results.length < limit) {
         final nameQuery = await _firestore
-            .collection('user_profiles')
+            .collection(FirestoreCollections.userProfiles)
             .where('displayName', isGreaterThanOrEqualTo: query.trim())
             .where('displayName', isLessThanOrEqualTo: '${query.trim()}\uf8ff')
             .limit(limit - results.length)
@@ -195,7 +196,7 @@ class SocialProfileService {
   /// Increment a social stat for a user and invalidate cache
   Future<void> incrementSocialStat(String userId, String statName) async {
     try {
-      await _firestore.collection('user_profiles').doc(userId).update({
+      await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).update({
         'socialStats.$statName': FieldValue.increment(1),
         'updatedAt': Timestamp.now(),
       });
@@ -211,7 +212,7 @@ class SocialProfileService {
   /// Decrement a social stat for a user and invalidate cache
   Future<void> decrementSocialStat(String userId, String statName) async {
     try {
-      await _firestore.collection('user_profiles').doc(userId).update({
+      await _firestore.collection(FirestoreCollections.userProfiles).doc(userId).update({
         'socialStats.$statName': FieldValue.increment(-1),
         'updatedAt': Timestamp.now(),
       });
@@ -233,7 +234,7 @@ class SocialProfileService {
       LoggingService.info('Getting user friends for ${currentUser.uid}', tag: _logTag);
 
       final snapshot = await _firestore
-          .collection('friendships')
+          .collection(FirestoreCollections.friendships)
           .where('userId', isEqualTo: currentUser.uid)
           .where('status', isEqualTo: 'accepted')
           .get();
@@ -248,7 +249,7 @@ class SocialProfileService {
       final friendProfiles = <UserProfile>[];
       for (final friendId in friendIds) {
         final userDoc = await _firestore
-            .collection('users')
+            .collection(FirestoreCollections.users)
             .doc(friendId)
             .get();
 
