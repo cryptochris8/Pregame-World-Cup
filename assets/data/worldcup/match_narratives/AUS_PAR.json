@@ -4,77 +4,77 @@
   "team2Code": "PAR",
   "team1Name": "Australia",
   "team2Name": "Paraguay",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
   "headline": "South American Grit Meets Socceroo Spirit in a World Cup Reunion",
-  "subheadline": "Sixteen years after their 2010 encounter, Australia and Paraguay face off with both teams fighting for knockout round survival",
+  "subheadline": "Sixteen years after their 2010 encounter, a tactically transformed Australia under Popovic faces Paraguay with every player fit and firing",
 
-  "openingNarrative": "The last time Australia and Paraguay met at a World Cup, it was 2010 in South Africa, and Paraguay emerged 2-1 victors in a Group F encounter that saw Oscar Cardozo's penalty decide the contest. That tournament saw Paraguay march all the way to the quarter-finals — their best-ever World Cup performance — while Australia were eliminated in the group stage. Sixteen years later, both nations return to the World Cup stage with something to prove.\n\nParaguay's World Cup return is a story of redemption. Having missed the 2018 and 2022 tournaments — an unprecedented drought for a nation that had qualified for five consecutive World Cups from 1998 to 2010 — their return in 2026 represents a new beginning. They qualified through CONMEBOL's brutal marathon with 28 points from 18 matches: 7 wins, 7 draws, 4 losses, finishing sixth. Antonio Sanabria's 4 goals led the attack, while 8 clean sheets spoke to the defensive discipline that has always been Paraguay's trademark. Their squad value of $166M is modest but features genuine quality in Miguel Almiron ($31.3M) from Newcastle and Julio Enciso from Brighton.\n\nAustralia's trajectory has been the opposite of Paraguay's. The Socceroos have grown in stature, their 2022 Round of 16 appearance marking a watershed moment. Qualifying with 19 points from AFC Third Round Group C — 5 wins, 4 draws, 1 loss, Kusini Yengi's 6 goals — they arrive with genuine belief that knockout football is achievable again.",
+  "openingNarrative": "The last time Australia and Paraguay met at a World Cup, it was 2010 in South Africa, and Paraguay emerged 2-1 victors in a Group F encounter that saw Oscar Cardozo's penalty decide the contest. That tournament saw Paraguay march all the way to the quarter-finals — their best-ever World Cup performance — while Australia were eliminated in the group stage. Sixteen years later, both nations return with something to prove — but it is Australia who arrive in transformed shape.\n\nTony Popovic's appointment has revolutionized the Socceroos. His 3-4-2-1 system — a departure from the flat 4-3-3 that Australian teams have relied on for years — has produced stunning results in its infancy: a disciplined 1-0 win over Cameroon followed by a breathtaking 5-1 demolition of Curacao. Every player in the squad is fit. Nestory Irankunda, the teenage winger whose pace has drawn comparisons to Alphonso Davies, has emerged as a potential game-changer. The Socceroos are no longer the dogged, organized underdogs who survive on set pieces and second balls. Under Popovic, they create chances in open play from multiple angles.\n\nParaguay's World Cup return is a story of redemption. Having missed the 2018 and 2022 tournaments — an unprecedented drought for a nation that had qualified for five consecutive World Cups from 1998 to 2010 — their return in 2026 represents a new beginning. They qualified through CONMEBOL's brutal marathon with 28 points from 18 matches. Their squad value of $166M features genuine quality in Miguel Almiron and Julio Enciso from Brighton.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Paraguay's 4-4-2 is a system that prioritizes defensive organization and quick transitions. Almiron's creativity and pace on the right provides the spark, while Enciso's flair adds unpredictability in central areas. Sanabria's physical presence up front gives Paraguay an outlet and a focal point. The system is designed to be hard to beat first, threatening second.\n\nAustralia's 4-3-3 mirrors their AFC qualifying approach — organized pressing, collective effort, and efficient use of set pieces. Jackson Irvine's midfield leadership and Yengi's aerial presence in attack provide the platform.\n\nThe key tactical battle is in wide areas. Almiron's pace against Australia's right-back will be a recurring theme, while Australia's wide forwards will look to exploit the space behind Paraguay's full-backs. In a match between two disciplined, organized teams, the first goal will be psychologically decisive.",
-    "team1Formation": "4-3-3",
+    "narrative": "The tactical intrigue lies in how Paraguay's 4-4-2 matches up against Popovic's 3-4-2-1. Australia's three center-backs provide defensive security against Paraguay's twin strikers, while the wing-backs create numerical overloads in wide areas that Paraguay's flat midfield four may struggle to contain. The two number tens behind the striker — the most creative innovation of Popovic's system — will look to operate between Paraguay's midfield and defensive lines.\n\nParaguay's 4-4-2 is a system that prioritizes defensive organization and quick transitions. Almiron's creativity and pace on the right provides the spark, while Enciso's flair adds unpredictability. Sanabria's physical presence up front gives Paraguay an outlet. The system is designed to be hard to beat first, threatening second.\n\nThe key tactical question is width. Australia's wing-backs in Popovic's 3-4-2-1 will stretch Paraguay's shape horizontally, creating spaces in the center for the two number tens to exploit. If Paraguay cannot adjust their 4-4-2 to deal with the overloads, Australia's improved attacking fluency — showcased in the 5-1 win over Curacao — will create chances consistently.\n\nIrankunda's pace against Paraguay's aging fullbacks is the individual matchup that could define the contest.",
+    "team1Formation": "3-4-2-1",
     "team2Formation": "4-4-2",
-    "keyMatchup": "Miguel Almiron's pace and creativity vs Australia's defensive organization — can Newcastle's star break through the Socceroo wall?"
+    "keyMatchup": "Australia's wing-back overloads vs Paraguay's flat midfield four — Popovic's tactical innovation against South American defensive discipline"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Australia (ELO: 1622, rank 30) vs Paraguay (ELO: 1605, rank 33) — a 17-point gap that is statistically negligible. This is one of the most evenly matched fixtures at the tournament on paper.",
-    "formAnalysis": "Australia: 5 wins, 4 draws, 1 loss in AFC qualifying — 19 points, +9 goal difference, Yengi scored 6. Paraguay: 7 wins, 7 draws, 4 losses in CONMEBOL qualifying — 28 points, +4 goal difference, Sanabria scored 4. Paraguay's campaign was longer and in a tougher confederation, but their goal difference suggests they struggled to score freely.",
-    "squadValueComparison": "Paraguay ($166M) vs Australia ($79.3M) — Paraguay hold a 2:1 financial advantage, with Almiron ($31.3M) their most valuable player. But Australia's collective quality and 2022 World Cup experience arguably compensate for the individual talent gap.",
-    "injuryImpact": "Paraguay's reliance on Almiron and Enciso for creativity means any injury to either would significantly limit their attacking output. Australia need Irvine and Yengi fit and at peak performance.",
-    "bettingPerspective": "A genuine toss-up. Both teams are ranked similarly, both have defensive strengths, and both will view this as a must-win match. The draw at competitive odds represents excellent value.",
-    "historicalPattern": "Paraguay won their 2010 World Cup meeting 2-1. Paraguay reached the 2010 quarter-finals, their best result. Australia reached the 2022 Round of 16. Both teams have improved and regressed in cycles."
+    "eloAnalysis": "Australia (ELO: 1622, rank 30) vs Paraguay (ELO: 1605, rank 33) — a 17-point gap that is statistically negligible. But Australia's March form under Popovic suggests they may have moved beyond what this ELO reflects.",
+    "formAnalysis": "Australia are in outstanding form: beat Cameroon 1-0 and Curacao 5-1 in March under Popovic's new system. All players fully fit. Qualified with 5 wins, 4 draws, 1 loss — 19 points, Yengi scored 6. Paraguay qualified through CONMEBOL with 28 points from 18 matches — 7 wins, 7 draws, 4 losses, +4 goal difference, Sanabria scored 4.",
+    "squadValueComparison": "Paraguay ($166M) vs Australia ($79.3M) — Paraguay hold a 2:1 financial advantage, with Almiron ($31.3M) their most valuable player. But Australia's tactical transformation and collective quality under Popovic may compensate for the individual talent gap.",
+    "injuryImpact": "Australia's fully fit squad is a significant advantage, giving Popovic every tactical option available. Paraguay's reliance on Almiron and Enciso for creativity means any injury to either would significantly limit their attacking output.",
+    "bettingPerspective": "Australia's March form has shifted the markets. What was a genuine toss-up now leans toward Australia, with the 5-1 demolition of Curacao proving that Popovic's system can be devastating in attack. The draw remains possible but Australia's attacking improvements make them marginal favorites.",
+    "historicalPattern": "Paraguay won their 2010 World Cup meeting 2-1. Paraguay reached the 2010 quarter-finals, their best result. Australia's tactical transformation under Popovic represents a fundamentally different opponent than Paraguay faced 16 years ago."
   },
 
   "playerSpotlights": [
     {
       "name": "Miguel Almiron",
       "teamCode": "PAR",
-      "narrative": "Newcastle's creative spark is the player who can elevate Paraguay from organized competitors to genuine threats. Almiron's pace, his ability to beat defenders in one-on-one situations, and his eye for a pass make him the most dangerous individual on either team. His 2022-23 Premier League season, where he was named Newcastle's Player of the Season, demonstrated world-class quality. Against Australia's disciplined defense, one moment of Almiron brilliance could decide everything.",
-      "statline": "Newcastle's Player of the Season 2022-23, Paraguay's most valuable player ($31.3M)"
+      "narrative": "Newcastle's creative spark is the player who can elevate Paraguay from organized competitors to genuine threats. Almiron's pace, his ability to beat defenders in one-on-one situations, and his eye for a pass make him the most individually talented player on either team. Against Australia's three-man defense, he may find fewer spaces to exploit than against a conventional back four — but his ability to drift inside and find pockets of space remains a constant danger.",
+      "statline": "Newcastle's creative catalyst, Paraguay's most valuable player ($31.3M)"
     },
     {
-      "name": "Jackson Irvine",
+      "name": "Nestory Irankunda",
       "teamCode": "AUS",
-      "narrative": "Australia's captain will need to produce a complete midfield performance against Paraguay's technically gifted central players. Irvine's ability to win second balls, organize his defensive shape, and drive forward when opportunities arise makes him the most important player for the Socceroos. Against Paraguay's 4-4-2, his positioning between defense and attack will determine whether Australia control the match or chase it.",
-      "statline": "Australia's captain and midfield general, Bundesliga-experienced leader"
+      "narrative": "The teenager who has transformed Australia's attacking profile. Irankunda's emergence in Popovic's system has given the Socceroos a dimension they have never had — genuine pace and directness from wide positions. Against Paraguay's experienced South American fullbacks, his willingness to run at defenders and create chances could be the difference. The 5-1 win over Curacao showcased his potential; this match is the stage to confirm it against sterner opposition.",
+      "statline": "Australia's teenage sensation, electric pace, a new weapon in Popovic's system"
     },
     {
       "name": "Julio Enciso",
       "teamCode": "PAR",
-      "narrative": "Brighton's exciting young talent represents the future of Paraguayan football. Enciso's flair, his willingness to try the unexpected, and his ability to score spectacular goals make him a wildcard that Australia must account for. In a tight match, his ability to produce a moment of magic — a long-range strike, a clever dribble — could be the difference between Paraguay's World Cup campaign continuing or ending.",
+      "narrative": "Brighton's exciting young talent represents the future of Paraguayan football. Enciso's flair, his willingness to try the unexpected, and his ability to score spectacular goals make him a wildcard that Australia must account for. In a match where Paraguay need moments of individual brilliance to overcome Australia's tactical superiority, Enciso is the player most likely to produce them.",
       "statline": "Brighton's exciting young talent, Paraguay's creative x-factor"
     },
     {
       "name": "Kusini Yengi",
       "teamCode": "AUS",
-      "narrative": "The striker who led Australia's qualifying campaign with 6 goals brings physical presence and aerial threat to the Socceroos' attack. Against Paraguay's experienced South American defenders, Yengi's willingness to compete physically and his composure in front of goal will be tested. His qualifying form suggests he is ready for the World Cup stage.",
-      "statline": "6 goals in AFC qualifying, Australia's leading scorer"
+      "narrative": "Australia's qualifying top scorer is the focal point of Popovic's 3-4-2-1 — the target man who holds the ball up, wins aerial duels, and finishes the chances created by the system around him. The 5-1 win over Curacao showed how many chances Popovic's system generates for the center-forward. Against Paraguay's experienced South American defenders, Yengi's physical presence and composure will be tested at a higher level.",
+      "statline": "6 goals in AFC qualifying, Australia's leading scorer, focal point of Popovic's attack"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Australia 1-1 Paraguay",
-    "confidence": 48,
-    "narrative": "This is a match between two evenly matched, defensively disciplined teams, and the most likely outcome is a draw. Neither team has the individual firepower to blow the other away, and both will prioritize defensive organization above all else.\n\nExpect a cagey first half with few clear chances. The match will open up in the second half as both teams recognize they need all three points for their knockout round ambitions. A set-piece goal for Australia — Souttar heading in from a corner — and an Almiron counter-attack goal for Paraguay produce a draw that ultimately satisfies neither team.\n\nBut in a World Cup group where every point matters, a draw keeps both teams in the conversation. And sometimes, that is enough.",
+    "prediction": "Australia 2-1 Paraguay",
+    "confidence": 55,
+    "narrative": "Australia's tactical transformation under Popovic, combined with their full fitness and the devastating form shown in March, tips what was once a coin-flip in the Socceroos' favor. The 3-4-2-1 system creates chances consistently, and the emergence of Irankunda adds a dimension that Paraguay's defense has not encountered in preparation.\n\nParaguay's CONMEBOL qualifying experience — 18 matches in the world's toughest qualification — gives them a resilience that should not be underestimated. Almiron and Enciso provide the individual quality to hurt any defense, and Paraguay's trademark defensive discipline means they will not concede easily.\n\nExpect a cagey first half where both teams feel each other out, followed by a second half where Popovic's tactical superiority begins to tell. An Irankunda-created chance and a set-piece header will give Australia a 2-0 lead before Almiron pulls one back to set up a nervous finale. Australia hold on — and the 2010 result is avenged.",
     "alternativeScenarios": [
       {
         "scenario": "Paraguay 2-1 Australia",
-        "probability": 22,
-        "reasoning": "Almiron and Enciso combine to devastating effect, producing two goals that Australia cannot match. Paraguay's CONMEBOL qualifying experience — 18 matches in the world's toughest qualification — proves the difference in a competitive match."
+        "probability": 18,
+        "reasoning": "Almiron and Enciso combine to devastating effect, exposing the spaces that Popovic's wing-backs leave when they push forward. Paraguay's CONMEBOL qualifying battle-hardening proves the difference."
       },
       {
-        "scenario": "Australia 2-0 Paraguay",
-        "probability": 15,
-        "reasoning": "Australia's 2022 World Cup experience gives them a composure advantage. Two goals from set pieces — the Socceroos' strongest weapon — seal a victory that announces them as serious Group D contenders."
+        "scenario": "Australia 1-1 Paraguay",
+        "probability": 22,
+        "reasoning": "Paraguay's defensive discipline holds firm against Popovic's system. Both teams score once, and neither can find a winner in a match where South American grit matches Australian evolution."
       }
     ]
   },
 
-  "closingLine": "In 2010, Paraguay beat Australia at the World Cup and marched to the quarter-finals. Sixteen years later, both teams return with new faces but the same ambitions. The World Cup has a way of bringing old stories back to life."
+  "closingLine": "In 2010, Paraguay beat Australia at the World Cup. Sixteen years later, the Socceroos arrive transformed — Popovic's tactical revolution, full fitness, and Irankunda's emergence make this a fundamentally different Australia. Paraguay's grit against Australia's evolution: the World Cup's eternal question."
 }

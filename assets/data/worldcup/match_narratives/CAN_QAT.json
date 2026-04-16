@@ -4,77 +4,77 @@
   "team2Code": "QAT",
   "team1Name": "Canada",
   "team2Name": "Qatar",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "Past Host Meets Present: Qatar's Redemption Quest Faces Canada's Home Advantage",
-  "subheadline": "The 2022 World Cup hosts travel to North America desperate to erase the memory of three defeats on home soil",
+  "headline": "Past Host Meets Present: Qatar's Redemption Quest Faces Canada's Flawed but Dangerous Attack",
+  "subheadline": "The 2022 World Cup hosts travel to North America seeking to erase three home defeats, while Canada manage Davies' hamstring and David's Juventus brilliance",
 
-  "openingNarrative": "Qatar's 2022 World Cup was supposed to be the crowning achievement of a decades-long investment in football infrastructure, youth development, and national sporting ambition. The billions spent, the stadiums built, the Aspire Academy's conveyor belt of talent -- all of it was pointed toward the moment when Qatar would perform on their own World Cup stage. What happened instead was a humiliation that no amount of money could have prepared for: three matches, three defeats, zero goals from open play. Ecuador, Senegal, and the Netherlands dispatched the hosts without Qatar ever truly threatening to change the narrative.\n\nFour years later, Qatar arrive in North America seeking the redemption that only the World Cup can provide. They have rebuilt, they have learned, and they have won -- consecutive Asian Cup titles in 2019 and 2023 prove that Qatari football is capable of performing under pressure at the continental level. The question that haunts them is whether they can translate that success to the global stage.\n\nCanada present a formidable first test. As co-hosts, the Canadians will benefit from a passionate home crowd and the energy that a nation falling in love with football generates. In their 3 previous meetings, Canada have won twice and drawn once, outscoring Qatar 5-2. The most recent encounter -- a 2-0 Canadian victory in Toronto in 2024 -- provided a clear preview of what Qatar can expect: pace, pressing, and problems.",
+  "openingNarrative": "Qatar's 2022 World Cup was supposed to be a crowning achievement. The billions spent, the stadiums built, the Aspire Academy's conveyor belt of talent — all pointed toward the moment when Qatar would perform on their own stage. What happened instead was a humiliation: three matches, three defeats, zero goals from open play.\n\nFour years later, Qatar arrive in North America seeking redemption. Consecutive Asian Cup titles in 2019 and 2023 prove Qatari football can perform under continental pressure. The question is whether they can translate that success to the global stage.\n\nCanada present a formidable test despite their injury concerns. Jonathan David is in career-best form at Juventus, where Serie A's tactical demands have refined his movement and finishing into something genuinely world-class. Tajon Buchanan is back in the squad, providing width and depth. The co-hosting crowd will generate an atmosphere that few visiting teams can resist.\n\nBut the concerns are real. Alphonso Davies' hamstring recovery is being carefully managed — his explosiveness may be compromised. Ismael Bombito's fractured tibia has removed a defensive starter. Canada's depth, always their Achilles' heel, is being tested.\n\nAgainst Qatar, however, even a diminished Canada should have enough. The squad value gap ($271M to $66.9M), the individual quality of David and a partially fit Davies, and the home crowd advantage make Canada clear favorites. Qatar must prove 2022 was the aberration, not the rule.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Canada's 4-3-3 is built for attacking aggression. Marsch demands high pressing, rapid transitions, and the kind of relentless energy that wears opponents down physically and psychologically. Davies as an attacking wing-back creates overloads on the left, David's runs in behind stretch defenses, and the midfield trio provides the engine room that makes the pressing game sustainable.\n\nQatar's 3-5-2 under Luis Garcia reflects the lessons of 2022. The three center-backs provide additional defensive security, the wing-backs offer width in attack, and the dual-striker partnership of Afif and Almoez Ali gives Qatar their best attacking combination. The system is conservative by design -- Garcia understands that Qatar cannot compete in open, end-to-end football against sides with superior individual talent.\n\nThe tactical key is tempo. If Canada can impose their pressing intensity from the start, Qatar will be pinned back and unable to build their patient possession game. If Qatar can survive the initial storm and establish their passing rhythms, they can create chances through Afif's creativity.",
+    "narrative": "Canada's 4-3-3 under Marsch demands high pressing, rapid transitions, and relentless energy. Even with Davies at less than full fitness, the system creates numerical overloads and pressing traps that Qatar's build-up play will struggle to navigate. David's Juventus movement provides the clinical finishing, and Buchanan's return offers an alternative attacking outlet from the wing.\n\nThe Davies question is less critical against Qatar than against stronger opponents. Even at 80%, his pace and directness will trouble a defense that was overwhelmed by Ecuador, Senegal, and the Netherlands in 2022. Marsch may use this match to manage Davies' minutes, giving him 60-70 minutes before introducing Buchanan.\n\nQatar's 3-5-2 under Luis Garcia reflects the lessons of 2022. Three center-backs provide additional security, and the dual-striker partnership of Afif and Almoez Ali gives them their best attacking combination. But the system is conservative by design — Garcia understands Qatar cannot compete in open football against superior individual talent.\n\nWith Bombito out, Canada's reorganized defense is the one area Qatar may target. But their attacking quality may not be sharp enough to exploit it consistently.",
     "team1Formation": "4-3-3",
     "team2Formation": "3-5-2",
-    "keyMatchup": "Davies' explosive runs vs Qatar's right wing-back -- pace against discipline in a contest Canada must dominate"
+    "keyMatchup": "Jonathan David's Juventus-refined movement vs Qatar's three center-backs — the clinical finisher against massed defense"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Canada (ELO: 1615) vs Qatar (ELO: 1590) -- a 25-point gap that is negligible on paper but is amplified by Canada's home advantage and Qatar's World Cup track record. Home continent advantage in a World Cup typically adds 50-100 ELO points of effective performance.",
-    "formAnalysis": "Canada qualified automatically as co-hosts. Qatar's AFC qualifying was productive: 6 wins in 12 matches with Almoez Ali scoring an extraordinary 12 goals. However, Qatar also conceded 25 goals in qualifying -- a defensive vulnerability that Canada will target. Canada's 2-0 friendly victory in Toronto (2024) showed they can handle Qatar comfortably.",
-    "squadValueComparison": "Canada ($271M) vs Qatar ($66.9M). A 4:1 ratio that reflects Canada's growing European representation. Davies ($87.5M) alone is worth more than Qatar's entire squad ($66.9M). Akram Afif ($10M) is Qatar's most valuable player -- elite by Asian standards, modest by World Cup standards.",
-    "injuryImpact": "Canada's depth gives them more options if key players are unavailable. Qatar's squad, composed almost entirely of Qatar Stars League players plus a few from the Gulf region, is particularly thin. Afif's creative influence is irreplaceable.",
-    "bettingPerspective": "Canada are clear favorites. Qatar's odds for a victory will be generous, reflecting both their 2022 performance and the quality gap. The draw market is the most realistic scenario for Qatar backers.",
-    "historicalPattern": "In 3 meetings: Canada 2 wins, 0 Qatar wins, 1 draw. Goals: Canada 5, Qatar 2. The most recent meeting (2024 friendly in Toronto) was a comfortable 2-0 Canadian victory. Qatar have never beaten Canada."
+    "eloAnalysis": "Canada (ELO: 1615) vs Qatar (ELO: 1590) — a 25-point gap that is negligible on paper but is amplified by Canada's home advantage, David's form, and Qatar's World Cup track record.",
+    "formAnalysis": "Canada's preparation has been mixed: Davies recovering from hamstring, Bombito out, but David in brilliant Juventus form and Buchanan back. Qatar's AFC qualifying produced 6 wins in 12 matches with Almoez Ali scoring 12 goals, but they conceded 25 — a defensive vulnerability.",
+    "squadValueComparison": "Canada ($271M) vs Qatar ($66.9M). A 4:1 ratio. David's Juventus form has elevated his value and impact. Davies ($87.5M) alone exceeds Qatar's entire squad value even at compromised fitness.",
+    "injuryImpact": "Davies' hamstring is being managed — this match may see limited minutes to preserve him for more important fixtures. Bombito's absence forces defensive reorganization. David's form compensates significantly on the attacking end. Qatar's squad is thin and any injury is devastating.",
+    "bettingPerspective": "Canada are clear favorites despite their injury concerns. Qatar's 2022 performance and defensive vulnerability (25 goals conceded in qualifying) make them poor value even at longer odds.",
+    "historicalPattern": "Canada lead the head-to-head 2-0-1. The most recent meeting (2024 friendly) was a comfortable 2-0 Canadian victory. Qatar have never beaten Canada."
   },
 
   "playerSpotlights": [
     {
-      "name": "Alphonso Davies",
+      "name": "Jonathan David",
       "teamCode": "CAN",
-      "narrative": "Davies against Qatar's defense is the kind of mismatch that produces highlight reels. His pace and directness against a back line unaccustomed to facing world-class athleticism will create multiple dangerous situations. Davies knows it, the Canadian crowd knows it, and Qatar's defenders know it. The only question is how many times Davies breaks free, not whether he will.",
-      "statline": "Canada's $87.5M star; Real Madrid regular; one of the fastest players at the tournament"
+      "narrative": "David's move to Juventus has transformed him into the most clinical striker Canada has ever produced. Against Qatar's three-man defense, his intelligent movement — the diagonal runs, the dropping deep to receive, the explosive sprints in behind — will create chances consistently. This is the match where David can fill the statistical column that announces him to the global audience. His Juventus composure against a defense that conceded 25 goals in qualifying is a mismatch of quality.",
+      "statline": "Juventus striker in career-best form, Canada's primary goal threat against massed defenses"
     },
     {
       "name": "Akram Afif",
       "teamCode": "QAT",
-      "narrative": "Qatar's finest footballer carries the burden of an entire nation's World Cup redemption on his creative shoulders. Afif's dribbling, vision, and set-piece delivery are genuinely world-class, and his consecutive Asian Cup titles prove he can perform under the pressure of representing his country. Against Canada's aggressive pressing, Afif's ability to find space and deliver quality under pressure will determine whether Qatar can compete or merely participate.",
+      "narrative": "Qatar's finest footballer carries the burden of redemption. Afif's dribbling, vision, and set-piece delivery are genuinely world-class, proven across consecutive Asian Cup triumphs. Against Canada's pressing — even without Bombito at the back — Afif's ability to find space and deliver quality under pressure will determine whether Qatar compete or merely participate.",
       "statline": "Asian Player of the Year; 2019 Asian Cup Golden Boot; Qatar's creative heartbeat"
     },
     {
-      "name": "Jonathan David",
+      "name": "Alphonso Davies",
       "teamCode": "CAN",
-      "narrative": "David's clinical finishing makes him the perfect center-forward for a match where Canada will dominate possession and create numerous chances. His movement in behind Qatar's three-man defense will test their coordination, and his composure in front of goal ensures that the chances Canada create will be converted. This is a match where David could announce himself to the wider world.",
-      "statline": "One of Ligue 1's top scorers; Canada's most prolific goal threat"
+      "narrative": "Marsch faces a management decision: how many minutes for Davies against Qatar? The hamstring concern suggests limited involvement may be prudent, preserving his explosiveness for higher-stakes matches against Mexico and other Group B opponents. Even 60 minutes of Davies at 80% would trouble Qatar's defense. But the temptation to rest him — with David in such brilliant form — is real.",
+      "statline": "Canada's $87.5M star; hamstring being managed, may see limited minutes"
     },
     {
       "name": "Almoez Ali",
       "teamCode": "QAT",
-      "narrative": "Qatar's record goalscorer arrives with 12 AFC qualifying goals -- a staggering tally that makes him one of the most prolific international scorers in any confederation. The Sudanese-born striker's pace and movement in behind defenses give Qatar a vertical attacking threat that bypasses the midfield battle. If Qatar are to score against Canada, it will likely come from Ali's runs exploiting the space that Davies' forward surges create behind Canada's defense.",
-      "statline": "12 goals in AFC qualifying; Qatar's all-time leading scorer; Asian Cup record holder"
+      "narrative": "Qatar's record goalscorer with 12 AFC qualifying goals. Against a Canadian defense missing Bombito, Ali's pace and movement in behind could create rare but dangerous opportunities. If Qatar are to score against Canada, Ali's exploitation of the defensive reorganization is the most likely route.",
+      "statline": "12 goals in AFC qualifying; Qatar's all-time leading scorer"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Canada 2-0 Qatar",
-    "confidence": 70,
-    "narrative": "Canada's quality advantage, home crowd energy, and superior individual talent should make this a comfortable evening. Davies will dominate the left flank, David will finish the chances created, and Canada's pressing will deny Qatar the time and space to build their patient possession game.\n\nQatar will have moments -- Afif is too talented to be completely silenced -- but converting those moments into goals against a defensively aggressive Canadian side will prove too difficult. Their 2022 experience demonstrated that performing at the World Cup requires more than continental success, and the gap between Asian Cup excellence and World Cup competitiveness remains significant.\n\nExpect a Canadian goal before halftime, a second in the last 20 minutes as Qatar chase the game, and a professional performance that sends a message to the rest of Group B.",
+    "confidence": 68,
+    "narrative": "David's Juventus form, home crowd energy, and Canada's superior individual quality should make this a comfortable evening despite the injury concerns. David's movement against Qatar's defense — which conceded 25 goals in qualifying — is a quality mismatch that even Bombito's absence and Davies' hamstring cannot neutralize.\n\nMarsch may use this match to manage Davies' minutes, giving him 60 minutes before introducing Buchanan. The co-hosting crowd will provide the energy that compensates for any tactical disruptions caused by injuries.\n\nQatar will have moments — Afif is too talented to be completely silent — but converting those moments against Canada's pressing intensity will prove too difficult. Their 2022 experience demonstrated that the gap between Asian Cup excellence and World Cup competitiveness remains significant.\n\nExpect a David goal before halftime — clinical, composed, Juventus-trained — and a second in the final 20 minutes. A professional performance that sends a message to the rest of Group B.",
     "alternativeScenarios": [
       {
         "scenario": "Canada 1-1 Qatar",
-        "probability": 15,
-        "reasoning": "Qatar's improved defensive organization (learned from 2022) frustrates Canada. Ali scores on a rare counter-attack, and Qatar hold on for a point that represents a massive improvement from their 2022 campaign."
+        "probability": 12,
+        "reasoning": "Qatar's improved defensive organization frustrates Canada. Ali scores against the reshuffled Canadian defense, and Qatar hold on for a point that represents massive improvement from 2022."
       },
       {
-        "scenario": "Canada 4-0 Qatar",
-        "probability": 12,
-        "reasoning": "Canada's pressing overwhelms Qatar from the first whistle. Davies is unplayable, David scores twice, and the match becomes a procession that echoes Qatar's 2022 nightmare."
+        "scenario": "Canada 3-0 Qatar",
+        "probability": 18,
+        "reasoning": "David scores twice with Juventus composure, and Buchanan adds a third. Canada's quality overwhelms Qatar despite the injuries, echoing the 2024 friendly result."
       }
     ]
   },
 
-  "closingLine": "Qatar spent billions hosting the 2022 World Cup and earned nothing but heartbreak. In 2026, they arrive as guests seeking redemption against a host nation that intends to show them none."
+  "closingLine": "Qatar spent billions hosting the 2022 World Cup and earned nothing but heartbreak. In 2026, they face a Canada side managing injuries but powered by David's Juventus brilliance. Redemption must be earned against quality — not hoped for."
 }

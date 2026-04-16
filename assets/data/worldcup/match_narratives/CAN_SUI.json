@@ -4,56 +4,56 @@
   "team2Code": "SUI",
   "team1Name": "Canada",
   "team2Name": "Switzerland",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "The Rematch Canada Has Been Waiting For Since Qatar",
-  "subheadline": "Breel Embolo's 2022 goal haunts Canadian dreams -- now the co-hosts seek revenge against Europe's most consistent tournament performers",
+  "headline": "The Rematch Canada Has Been Waiting For — With David Transformed and Davies Managing",
+  "subheadline": "Embolo's 2022 goal haunts Canadian dreams, but David's Juventus evolution and Buchanan's return rewrite the attacking script for the rematch",
 
-  "openingNarrative": "On November 24, 2022, in Al Rayyan, Qatar, Breel Embolo's second-half goal gave Switzerland a 1-0 victory over Canada in both teams' opening World Cup match. It was a result that encapsulated everything about the gap between Swiss tournament savvy and Canadian World Cup inexperience. Switzerland were efficient, organized, and clinical. Canada were enthusiastic, brave, and ultimately naive. The Canadians created chances, pressed with energy, and were the better team for stretches. But Switzerland scored, Canada did not, and the lesson was delivered with Swiss precision.\n\nFour years later, Canada have the chance for revenge on home soil. And the Canadians who watched that 2022 match -- Davies bombing forward but finding no end product, David's frustration growing as Swiss defenders read his every run -- know exactly what they need to do differently. Jesse Marsch's Canada are a more mature, more tactically sophisticated side than the one that flew to Qatar with ambition and returned with regret.\n\nSwitzerland, meanwhile, arrive as Europe's model of consistency. They have reached the knockout stages of four of their last five major tournaments, including a famous penalty shootout victory over France at Euro 2020. Murat Yakin's side conceded just 2 goals in 6 qualifying matches -- the best defensive record in UEFA -- and the combination of Xhaka's midfield control and Akanji's defensive composure gives them a tournament-proven spine that few teams can match.",
+  "openingNarrative": "On November 24, 2022, in Al Rayyan, Qatar, Breel Embolo's second-half goal gave Switzerland a 1-0 victory over Canada. It was a result that encapsulated the gap between Swiss tournament savvy and Canadian inexperience. Switzerland were efficient, organized, and clinical. Canada were enthusiastic, brave, and ultimately naive.\n\nFour years later, Canada have the chance for revenge on home soil. But the path to redemption carries complications. Alphonso Davies is recovering from a hamstring concern that has limited his training — the explosive pace that terrifies defenders may be compromised. Ismael Bombito's fractured tibia has removed a key defensive figure. The Canadian dream has acquired battle scars before the first whistle.\n\nThe story is not all adversity. Jonathan David's move to Juventus has been transformative. The striker who was frustrated by Swiss defensive discipline in 2022 has spent a year learning from Serie A's finest defenders. His movement is smarter, his finishing more clinical, his tactical awareness elevated to a level that Swiss center-backs will immediately recognize and respect. Tajon Buchanan is back in the squad, providing the attacking width that compensates for any limitation in Davies' fitness.\n\nSwitzerland arrive as Europe's model of consistency. Murat Yakin's side conceded just 2 goals in 6 qualifying matches — the best defensive record in UEFA. Xhaka's midfield control, Akanji's defensive composure, and Embolo's movement give them a tournament-proven spine that few teams can match. They have reached the knockout stages of four of their last five major tournaments.\n\nCanada have grown since 2022. The question is whether injuries will prevent them from showing it.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The 2022 meeting provides the tactical blueprint that both coaches will study. Switzerland's 3-4-3 stifled Canada's pressing by building patiently from the back through three center-backs, drawing the press before finding free men in midfield. Xhaka's positioning between Canada's pressing lines gave Switzerland the passing outlet they needed to control possession, and Embolo's movement in the final third created the goal.\n\nCanada must learn from that defeat. Marsch's 4-3-3 needs to press more intelligently -- closing passing lanes to Xhaka rather than simply charging at the ball. Davies' forward runs must be better timed and supported, and David's movement must find the gaps between Switzerland's center-backs rather than running into them.\n\nSwitzerland will be patient. Yakin knows that Canada's pressing intensity cannot be sustained for 90 minutes, and his team is content to absorb early pressure, control the ball, and wait for the Canadian energy to dip before turning the screw. It is a formula that has worked against teams with far more World Cup pedigree than Canada.",
+    "narrative": "The 2022 meeting provides the blueprint both coaches will study. Switzerland's 3-4-3 stifled Canada's pressing by building patiently through three center-backs. Xhaka's positioning between Canada's pressing lines gave Switzerland the outlet they needed.\n\nCanada must learn from that defeat. Marsch's 4-3-3 needs to press more intelligently — but Davies' hamstring introduces a tactical dilemma. If Davies cannot sustain the high-intensity pressing that the system demands, Canada may need to sit deeper and rely on transitions rather than sustained pressure.\n\nDavid's Juventus education is the tactical game-changer. In 2022, his movement was neutralized by Swiss positional discipline. In 2026, he has learned to operate in exactly the kind of tight spaces that Swiss defenses create. His runs between the lines, his ability to drop deep and combine, and his finishing in congested areas have all been sharpened by months of Serie A competition.\n\nBuchanan's return provides an alternative to Davies' width. If the hamstring limits Davies' forward runs, Buchanan on the opposite flank can provide the stretching that Canada's attack requires.\n\nWith Bombito absent, Canada's defense faces Embolo's movement with an unfamiliar center-back partnership — a vulnerability Switzerland will identify and exploit.",
     "team1Formation": "4-3-3",
     "team2Formation": "3-4-3",
-    "keyMatchup": "Granit Xhaka vs Canada's pressing midfield -- the metronome against the hurricane"
+    "keyMatchup": "Jonathan David's Juventus-evolved movement vs Akanji's defensive reading — the 2022 rematch of striker vs center-back, with David transformed"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Canada (ELO: 1615) vs Switzerland (ELO: 1680) -- a 65-point gap that favors Switzerland. This translates to roughly a 58% Swiss win probability, though Canada's home advantage narrows the effective gap.",
-    "formAnalysis": "Canada qualified automatically as co-hosts. Switzerland's UEFA qualifying was immaculate: 4 wins, 2 draws, 0 losses, 14 goals scored and just 2 conceded. Breel Embolo led with 4 goals. Switzerland's defensive record (2 goals conceded in 6 matches) is among the best at the tournament.",
-    "squadValueComparison": "Canada ($271M) vs Switzerland ($466M). A 1.7:1 ratio that reflects Switzerland's deeper talent pool. Manuel Akanji ($56.3M) at Manchester City is Switzerland's most valuable player, while the squad features multiple Champions League regulars across multiple positions.",
-    "injuryImpact": "Xhaka is Switzerland's irreplaceable player. Without his passing and tempo control, the entire system struggles. Davies is equally crucial for Canada. The fitness of these two players may determine the outcome.",
-    "bettingPerspective": "Switzerland at +8000 for the tournament are respected outsiders with knockout-stage pedigree. Canada at +25000 are priced as home-advantage hopefuls. The match itself is tight in the markets, with a draw considered the most likely outcome.",
-    "historicalPattern": "In 5 meetings: Switzerland 2 wins, Canada 1 win, 2 draws. Goals: Switzerland 7, Canada 5. The World Cup head-to-head shows Switzerland winning 1-0 in 2022. The overall history includes Switzerland's 3-0 friendly victory in 2002, Canada's only win, and two draws. Home advantage has been significant in their meetings."
+    "eloAnalysis": "Canada (ELO: 1615) vs Switzerland (ELO: 1680) — a 65-point gap that favors Switzerland. Canada's home advantage narrows the effective gap, but their injuries widen it again.",
+    "formAnalysis": "Canada's preparation: Davies recovering from hamstring, Bombito out with fractured tibia, David in brilliant Juventus form, Buchanan back. Switzerland's qualifying was immaculate: 4 wins, 2 draws, 0 losses, 14 goals scored, 2 conceded. Embolo led with 4 goals.",
+    "squadValueComparison": "Canada ($271M) vs Switzerland ($466M). A 1.7:1 ratio that reflects Switzerland's deeper talent pool. David's Juventus move has elevated his value, but the overall gap in squad depth remains significant — especially with Canada's injury concerns.",
+    "injuryImpact": "Canada's injury list is the story: Davies' hamstring limits explosiveness, Bombito's fractured tibia removes a defensive anchor. David's Juventus form and Buchanan's return provide attacking consolation. Switzerland's Xhaka remains their irreplaceable player — his fitness is the Swiss equivalent of Davies' for Canada.",
+    "bettingPerspective": "Switzerland remain favorites, and Canada's injuries have lengthened the co-hosts' odds. But David's Juventus form and home advantage ensure the markets remain competitive. A draw is the most popular prediction.",
+    "historicalPattern": "Switzerland won 1-0 in 2022 — Embolo's goal. Canada must adapt their approach, and David's Juventus transformation gives them a new tactical weapon."
   },
 
   "playerSpotlights": [
     {
-      "name": "Alphonso Davies",
+      "name": "Jonathan David",
       "teamCode": "CAN",
-      "narrative": "In 2022, Davies' forward runs were impressive but ultimately fruitless against Swiss defensive organization. He learned that evening that World Cup football demands more than raw athleticism -- it demands intelligence, timing, and composure in the final third. Four years of development at Bayern Munich and Real Madrid have added those qualities to his game. Davies in 2026 is a more complete player, and against Switzerland's three-man defense, his ability to combine with teammates rather than simply outrun opponents will be the key difference.",
-      "statline": "Canada's $87.5M star; matured significantly since the 2022 World Cup"
+      "narrative": "The 2022 meeting against Switzerland haunted David — chances created but not converted, movement neutralized by Swiss positional discipline. The Juventus move was his response. A year of competing against Bremer, Bastoni, and the finest center-backs in Serie A has transformed his game. His movement is now designed to exploit exactly the kind of tight, organized defensive structures that Switzerland deploy. The 2022 David was frustrated by Swiss discipline. The 2026 David has been trained to destroy it.",
+      "statline": "Juventus striker, career-best form, transformed since the 2022 Swiss defeat"
     },
     {
       "name": "Granit Xhaka",
       "teamCode": "SUI",
-      "narrative": "Switzerland's captain is the metronome that makes the entire system function. His passing range from the base of midfield dictates the tempo, and his tactical intelligence ensures Switzerland always have an out-ball when pressed. Xhaka's Bundesliga title with Leverkusen proved he can perform at the highest level, and his World Cup experience -- three tournaments and counting -- gives him the composure that Canada's midfield will struggle to match.",
-      "statline": "Switzerland's captain and record appearance holder; Bundesliga champion with Leverkusen"
+      "narrative": "Switzerland's captain is the metronome that makes everything function. His passing range dictates tempo, his intelligence ensures Switzerland always have an out-ball when pressed. Xhaka's Bundesliga title with Leverkusen proved he can perform at the highest level, and three World Cups of experience give him composure that Canada's midfield will struggle to match — especially if Davies' hamstring limits Canada's pressing intensity.",
+      "statline": "Switzerland's captain, Bundesliga champion, three World Cups of experience"
     },
     {
-      "name": "Jonathan David",
+      "name": "Alphonso Davies",
       "teamCode": "CAN",
-      "narrative": "David's frustration in 2022 -- chances created but not converted, movement neutralized by Swiss positional discipline -- drives his preparation for this match. The Lille striker has added consistency to his finishing since Qatar, becoming one of Europe's most reliable scorers. Against Switzerland's three center-backs, David must find the spaces between them and finish when the rare clear chance arrives.",
-      "statline": "One of Ligue 1's top scorers; Canada's most clinical finisher"
+      "narrative": "In 2022, Davies' forward runs were impressive but fruitless against Swiss defensive organization. Four years of development at Bayern Munich and Real Madrid added intelligence and composure. But the hamstring introduces cruel uncertainty — at full fitness, Davies in 2026 is a more complete player who could devastate Switzerland's right side. At 80%, he is still Canada's best player but a different proposition. The rematch he craved may be compromised by his own body.",
+      "statline": "Canada's $87.5M star; hamstring recovery ongoing — the 2022 rematch complicated by fitness"
     },
     {
       "name": "Manuel Akanji",
       "teamCode": "SUI",
-      "narrative": "The Manchester City center-back is the defensive cornerstone of Switzerland's system. His composure on the ball, ability to step out from the back line to win the ball, and reading of the game make him one of the best defenders at the tournament. Against Canada's pressing, Akanji's ability to play out under pressure -- a skill refined daily at City's training ground -- will be crucial to Switzerland's ability to build from the back.",
-      "statline": "Manchester City regular; Switzerland's $56.3M defensive leader; key to conceding just 2 goals in qualifying"
+      "narrative": "Manchester City's center-back is the defensive cornerstone of Switzerland's system. In 2022, he helped nullify Canada's attack. In 2026, he faces a transformed David — a striker refined by Juventus who now understands how to exploit the spaces that Swiss defensive structures create. The rematch of Akanji vs David is one of the tournament's most intriguing individual battles.",
+      "statline": "Manchester City regular; Switzerland's $56.3M defensive leader"
     }
   ],
 
@@ -61,20 +61,20 @@
     "title": "The Verdict",
     "prediction": "Canada 1-1 Switzerland",
     "confidence": 45,
-    "narrative": "This has draw written all over it. Two well-organized teams, both with clear tactical identities and the discipline to execute them, will cancel each other out in a match that is decided by moments rather than dominance.\n\nCanada will have the better of the early exchanges, driven by the home crowd and Davies' attacking intent. But Switzerland's defensive shape -- three center-backs providing security, Xhaka screening in front -- will absorb the pressure. A Canadian goal from a set piece or a Davies-driven counter-attack will send the stadium into raptures.\n\nSwitzerland will equalize. They always do. Embolo's movement, Xhaka's passing, and the collective tactical intelligence that has carried the Nati through four consecutive knockout stages will find a way to score. The second half will be a chess match, with both teams probing for a winner but neither willing to risk the point they have.\n\nA draw that both teams can live with, and one that sets up a decisive final group match.",
+    "narrative": "This has draw written all over it — again. But the dynamics have shifted. David's Juventus transformation gives Canada a genuine goal-scoring threat that they lacked in 2022. His refined movement and clinical finishing mean Switzerland cannot simply rely on the 2022 defensive template.\n\nCanada will have the better of the early exchanges, driven by the home crowd and whatever Davies can provide. But Switzerland's defensive shape — Xhaka screening, Akanji defending, three center-backs providing security — will absorb the initial pressure.\n\nA David goal — the product of his Juventus education, a clever run between Swiss center-backs and a composed finish — will send the stadium into raptures. Switzerland will equalize through Embolo or a set piece. The second half will be chess, with both teams probing but neither willing to risk the point they have.\n\nDavies' hamstring and Bombito's absence prevent Canada from pushing for the winner they deserve. A draw that both teams can live with — but one that tastes different for Canada, because David's transformation has shown them a future where Swiss defensive discipline is no longer insurmountable.",
     "alternativeScenarios": [
       {
         "scenario": "Canada 2-1 Switzerland",
-        "probability": 22,
-        "reasoning": "Davies produces the performance of his life, overwhelming Switzerland's right side repeatedly. David finishes with clinical precision, and Canada secure the revenge they have craved since Qatar."
+        "probability": 20,
+        "reasoning": "Davies declares himself fully fit and produces the performance of his life. David scores with Juventus composure, Buchanan adds a second, and Canada secure the 2022 revenge."
       },
       {
         "scenario": "Switzerland 2-0 Canada",
         "probability": 18,
-        "reasoning": "Switzerland's tournament experience overwhelms Canada's enthusiasm. Xhaka controls the tempo, Embolo scores again, and the 2022 script repeats itself despite the change of scenery."
+        "reasoning": "Canada's injuries prove too much. Without a fit Davies and Bombito, the defensive structure crumbles. Xhaka controls tempo, Embolo scores again, and the 2022 script repeats despite the change of scenery."
       }
     ]
   },
 
-  "closingLine": "In 2022, Switzerland taught Canada a lesson in World Cup football. In 2026, Canada intend to show they have learned it."
+  "closingLine": "In 2022, Switzerland taught Canada a lesson in World Cup football. In 2026, David arrives with a Juventus education that changes the equation. But Davies' hamstring and Bombito's absence mean Canada must learn a new lesson: winning with what you have, not what you wish you had."
 }

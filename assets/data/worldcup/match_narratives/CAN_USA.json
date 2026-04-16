@@ -4,77 +4,77 @@
   "team2Code": "USA",
   "team1Name": "Canada",
   "team2Name": "United States",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "The North American Derby Arrives at the World Cup for the First Time",
-  "subheadline": "Co-hosts collide in a rivalry 141 years in the making as Pulisic's America meets Davies' Canada on football's greatest stage",
+  "headline": "The North American Derby Arrives at the World Cup — With Davies Nursing and David Thriving",
+  "subheadline": "Co-hosts collide in a rivalry 141 years in the making, but Canada's hamstring worries and defensive absences add drama to the continent's biggest match",
 
-  "openingNarrative": "The longest undefended border in the world has produced one of football's newest and most intense rivalries. The United States and Canada have played 74 times since their first meeting in 1885, and the Americans have won 41 of those matches. But the recent trajectory tells a very different story. Canada's 2-0 victory in World Cup qualifying in Hamilton in 2022 was not an upset -- it was a statement. The emergence of Alphonso Davies, Jonathan David, and a generation of Canadian talent raised in European academies has transformed this fixture from an American procession into a genuine rivalry.\n\nNow, for the first time in history, these neighbors meet at a World Cup. Both nations are co-hosting, both squads feature European-based stars in their prime years, and both fan bases carry the conviction that this is their moment. The USMNT under Mauricio Pochettino have the tactical sophistication and squad depth that comes from having Christian Pulisic, Weston McKennie, and Tyler Adams competing at Europe's highest level. Canada under Jesse Marsch have the raw pace, pressing intensity, and individual brilliance of Davies that can overwhelm any opponent on their day.\n\nThis is more than a football match. This is a cultural event, a celebration of North American football's extraordinary growth, and a contest that will define which co-host nation can claim continental bragging rights on the world stage. The border towns from Vancouver to Buffalo will be watching. The entire continent will be holding its breath.",
+  "openingNarrative": "The longest undefended border in the world has produced one of football's newest and most intense rivalries. The United States and Canada have played 74 times since 1885, and the Americans have won 41. But the recent trajectory tells a different story. Canada's 2-0 victory in World Cup qualifying in Hamilton in 2022 was not an upset — it was a statement.\n\nNow, for the first time in history, these neighbors meet at a World Cup. Both nations are co-hosting, both squads feature European-based stars, and both fan bases carry the conviction that this is their moment. But the two sides arrive in strikingly different conditions.\n\nThe USA carry momentum from their March results, with Pochettino's squad building cohesion. Canada carry injuries. Alphonso Davies is recovering from a hamstring concern that has limited his explosiveness — the very quality that made him uncontainable in the Edmonton snowstorm. Ismael Bombito's fractured tibia removes a defensive anchor. The dream of a home World Cup triumph has been shadowed by the injury ward.\n\nBut Canada are not without weapons. Jonathan David's move to Juventus has elevated him into one of Europe's most complete strikers. His tactical intelligence, refined by the demands of Serie A, gives Canada a clinical finishing threat that the USA must respect regardless of Davies' status. Tajon Buchanan is back in the squad, providing width and attacking depth. And the Canadian crowd — desperate, passionate, believing — will create an atmosphere that compensates for any physical limitations.\n\nThe USA's squad depth under Pochettino gives them options Canada cannot match. Christian Pulisic, Weston McKennie, Tyler Adams — Champions League experience runs through the American spine. But this is a derby. And in derbies, the team with more heart often beats the team with more depth.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Pochettino's USA deploy a 4-3-3 that balances pressing intensity with positional discipline. Pulisic operates as the primary creative threat from the right wing, cutting inside onto his left foot with the same movements that torment Serie A defenses weekly. McKennie provides box-to-box dynamism, and the defensive structure -- anchored by Adams' ball-winning ability -- gives the USA a platform to compete against any opponent.\n\nMarsch's Canada mirror the formation but invert the threat. Where the USA's danger comes from Pulisic on the right, Canada's comes from Davies on the left -- a marauding wing-back whose pace turns defensive positions into attacking ones in the blink of an eye. David's movement in behind complements Davies' width, and the midfield trio matches the American energy step for step.\n\nThe tactical battle comes down to wide areas. Can the USA's right-back contain Davies? Can Canada's right-back deal with Pulisic? The team that wins their wide matchup wins the match. This is a derby that will be decided in the full-back corridors, and both coaches know it.",
+    "narrative": "Pochettino's USA deploy a 4-3-3 that balances pressing intensity with positional discipline. Pulisic operates as the primary creative threat from the right wing, cutting inside onto his left foot. McKennie provides box-to-box dynamism, and the defensive structure gives the USA a resilient platform.\n\nMarsch's Canada face a tactical dilemma dictated by Davies' hamstring. At full fitness, the 4-3-3 with Davies as a marauding wing-back creates the asymmetric overload that overwhelmed Mexico in Edmonton. But if the hamstring limits his burst, Canada must adjust — potentially asking Buchanan to provide the width from the opposite side, with David operating as the primary attacking focal point.\n\nDavid's Juventus education has prepared him for exactly this kind of match: high-pressure, tactically demanding, where composure in the box is the difference. His movement between the American center-backs, his dropping deep to combine, and his finishing — all refined by Serie A — make him dangerous regardless of what Davies can provide.\n\nWith Bombito out, Canada's defensive reorganization is a genuine concern. The USA will target the unfamiliar center-back pairing with Pulisic's movement and set-piece delivery. But Canada's pressing intensity — even without Davies at full throttle — will make life uncomfortable for America's build-up play.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Alphonso Davies vs USA's right-back -- the defining battle of the North American derby"
+    "keyMatchup": "Alphonso Davies' hamstring vs the USA's right-back — and whether David's Juventus composure can compensate for any limitation in Canadian width"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "USA (ELO: 1690) vs Canada (ELO: 1615) -- a 75-point gap that favors the Americans. The USA's ELO reflects their deeper squad, stronger recent results, and higher-ranked European club representation. But Canada's home advantage narrows the effective gap to approximately 25-50 points.",
-    "formAnalysis": "Both teams qualified automatically as co-hosts, meaning neither has competitive qualifying data to analyze. Both have relied on friendlies and international windows to build cohesion. The USA's squad features more players at Champions League-level clubs, providing a marginal quality advantage in depth if not in starting XI talent.",
-    "squadValueComparison": "USA ($469M) vs Canada ($271M). The Americans' nearly 2:1 advantage reflects their deeper squad and broader European representation. Pulisic ($68.8M) leads the USA, while Davies ($87.5M) is individually more valuable. The gap is real but concentrated in depth positions rather than starting quality.",
-    "injuryImpact": "The USA can absorb injuries through superior depth. Canada are more reliant on their star players -- Davies and David -- and any absence fundamentally alters their approach.",
-    "bettingPerspective": "The USA at +8000 and Canada at +25000 for the outright tournament. The individual match markets will be tight, with the USA slight favorites. This is a derby where form goes out the window and heart decides.",
-    "historicalPattern": "In 74 meetings: USA 41 wins, Canada 13 wins, 20 draws. Goals: USA 117, Canada 58. But the recent trend is Canada's -- their 2-0 qualifying win in 2022 was emphatic and transformative. This will be their first World Cup meeting. The rivalry has never had stakes this high."
+    "eloAnalysis": "USA (ELO: 1690) vs Canada (ELO: 1615) — a 75-point gap that favors the Americans. Canada's home advantage narrows the gap, but Davies' hamstring and Bombito's absence widen it again.",
+    "formAnalysis": "Canada's preparation has been disrupted: Davies recovering from hamstring, Bombito out with fractured tibia. But David is in brilliant Juventus form and Buchanan is back. The USA have benefited from a cleaner preparation window under Pochettino.",
+    "squadValueComparison": "USA ($469M) vs Canada ($271M). The Americans' advantage reflects their deeper squad. Pulisic ($68.8M) leads the USA, while Davies ($87.5M) is individually more valuable but potentially limited by injury. David's Juventus emergence has narrowed the effective attacking quality gap.",
+    "injuryImpact": "Davies' hamstring is the defining variable. At full fitness, Canada's attack is transformed. At 80%, the tactical plan must adjust. Bombito's fractured tibia forces defensive reorganization against America's clinical attack. David's Juventus form and Buchanan's return provide crucial attacking compensation.",
+    "bettingPerspective": "The USA are favorites, and Canada's injuries have widened the gap in the betting markets. But this is a derby where form goes out the window. David's Juventus brilliance and the Canadian crowd ensure this remains a genuine contest.",
+    "historicalPattern": "In 74 meetings: USA 41 wins, Canada 13, 20 draws. Canada's 2-0 qualifying win in 2022 was transformative. This will be their first World Cup meeting — and Canada's injuries add a cruel twist to the narrative."
   },
 
   "playerSpotlights": [
     {
-      "name": "Alphonso Davies",
+      "name": "Jonathan David",
       "teamCode": "CAN",
-      "narrative": "Davies is the player who made Canadians believe that football could be their sport. His journey from a refugee camp to Real Madrid is the most inspiring story in North American football, and his ability to change games with a single surging run makes him the most dangerous player on either side. In a derby match defined by emotion and energy, Davies' pace and willingness to attack from left-back will stretch the USA's defense to its breaking point. This is the match that Davies has been dreaming about since he first kicked a ball in Edmonton.",
-      "statline": "Canada's $87.5M talisman; Real Madrid regular; the face of Canadian football"
+      "narrative": "With Davies potentially limited, David becomes the player upon whom Canada's World Cup destiny rests. His Juventus transformation has been remarkable — the tactical intelligence, the refined movement, the composure in front of goal. David no longer needs Davies' width to be effective; he has learned to create his own chances in the tightest spaces against the best defenders in Serie A. Against the USA, his intelligence and finishing could be the difference between co-host triumph and heartbreak.",
+      "statline": "Juventus striker in career-best form, Canada's most important player if Davies is limited"
     },
     {
       "name": "Christian Pulisic",
       "teamCode": "USA",
-      "narrative": "Captain America enters the North American derby as the USA's most reliable match-winner. Pulisic's ability to cut inside from the right wing, his eye for goal, and his big-game mentality make him the player Canada must stop. His Serie A season at AC Milan has added consistency to his game -- he scores regularly now, not just in flashes -- and his determination to lead the USA to their best-ever World Cup performance drives every decision on the pitch.",
+      "narrative": "Captain America enters the North American derby as the USA's most reliable match-winner. Against a Canadian defense missing Bombito, Pulisic's ability to cut inside from the right wing and find the net becomes even more dangerous. His Serie A experience with AC Milan means he knows David's game intimately — a subplot that adds tactical intrigue to the wider narrative.",
       "statline": "USA's most valuable player at $68.8M; AC Milan's key attacking contributor"
     },
     {
-      "name": "Jonathan David",
+      "name": "Alphonso Davies",
       "teamCode": "CAN",
-      "narrative": "While Davies provides the spectacle, David provides the goals. His clinical finishing, intelligent movement, and ability to score in the biggest moments make him the ideal derby striker -- composed when the emotions are running highest, precise when the pressure is greatest. Against the USA's defense, David's runs in behind will be the primary route to scoring.",
-      "statline": "One of Ligue 1's top scorers; Canada's primary goal threat"
+      "narrative": "The Edmonton snowstorm victory was built on Davies' fearless aggression. His pace, his dribbling, his ability to change games with a single run — this is what made Canada believe. But the hamstring introduces agonizing uncertainty. If Davies is fully fit, everything changes: the USA's right-back faces the impossible assignment. If the hamstring limits him, Canada lose the weapon around which their entire identity is built. The biggest question of the North American derby.",
+      "statline": "Canada's $87.5M talisman; hamstring recovery ongoing — fitness determines the match"
     },
     {
       "name": "Weston McKennie",
       "teamCode": "USA",
-      "narrative": "Juventus' box-to-box midfielder brings the energy, physicality, and winning mentality that derby matches demand. McKennie's ability to arrive in the box late and score from midfield gives the USA a threat that does not appear on the team sheet. His aerial ability and aggressive pressing make him a crucial component in the USA's effort to control the midfield battle that will determine which co-host comes out on top.",
-      "statline": "Juventus regular; USA's engine in midfield; key contributor of goals and assists"
+      "narrative": "Juventus' box-to-box midfielder brings the energy and physicality that derby matches demand. McKennie's ability to arrive late in the box and his aggressive pressing make him a constant threat. He shares a Juventus dressing room with David — the familiarity cuts both ways in a derby that could not be more personal.",
+      "statline": "Juventus regular; USA's midfield engine; David's club teammate"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Canada 2-1 United States",
-    "confidence": 42,
-    "narrative": "Derby matches resist prediction, and this one more than most. The quality gap between these two sides is narrower than it has ever been, and the occasion -- a World Cup, both teams co-hosting, the first-ever meeting at the tournament -- will produce an atmosphere of extraordinary intensity.\n\nCanada's advantage is Davies. No player on the American roster can match his combination of pace, power, and attacking intent from deep positions. When Davies gets a full head of steam, the USA's right-back faces an impossible choice: contain him and leave space inside, or commit numbers wide and let David run free through the middle.\n\nThe USA's advantage is depth and experience. Pochettino's squad has more players competing at the Champions League level, and their collective tactical intelligence -- Pulisic's movement, McKennie's energy, Adams' ball-winning -- gives them a resilience that Canada sometimes lack.\n\nThe prediction favors Canada, narrowly, because home advantage and Davies' brilliance are the kind of factors that decide derby matches. But this could go either way, and anyone who tells you they know the result is lying.",
+    "prediction": "Canada 1-1 United States",
+    "confidence": 40,
+    "narrative": "The original prediction of a Canadian victory is tempered by Davies' hamstring and Bombito's absence. What was a narrow edge built on home advantage and Davies' brilliance has become a genuine coin flip complicated by Canada's fitness concerns.\n\nDavid's Juventus form gives Canada a legitimate goal-scoring threat — his intelligence and composure ensure the USA cannot simply sit back and exploit Canada's defensive concerns. And the Canadian crowd will produce an atmosphere of extraordinary intensity that compensates for tactical disruptions.\n\nBut the USA's deeper squad, Pulisic's quality, and Canada's defensive reorganization without Bombito make a clean Canadian victory less likely than it was before the injury news.\n\nA David goal — clinical, composed, born of Juventus education — gives Canada the lead. A Pulisic equalizer, cutting inside against Canada's reshuffled defense, levels the match. Neither side finds a winner in a derby where emotion matches quality at every turn.\n\nIf Davies is fully fit, throw this prediction out and back Canada. But hamstrings do not lie, and the margin between these two teams may come down to whether one player's muscle holds for 90 minutes.",
     "alternativeScenarios": [
       {
-        "scenario": "United States 2-1 Canada",
-        "probability": 28,
-        "reasoning": "Pulisic produces a masterclass, scoring one and creating another. The USA's superior squad depth tells in the final 20 minutes as Pochettino's substitutions overpower a tiring Canadian side."
+        "scenario": "Canada 2-1 United States",
+        "probability": 22,
+        "reasoning": "Davies declares himself fit and produces Edmonton energy. David scores twice with Juventus composure, and Canada complete the power shift despite defensive concerns."
       },
       {
-        "scenario": "Canada 1-1 United States",
-        "probability": 22,
-        "reasoning": "The intensity of the derby produces a tight, physical match where neither side can establish control. A draw that satisfies neither co-host but maintains the rivalry's new equilibrium."
+        "scenario": "United States 2-0 Canada",
+        "probability": 20,
+        "reasoning": "Canada's injuries prove decisive. Without a fit Davies and Bombito, the co-host dream cracks. Pulisic and McKennie exploit the defensive weakness for a comfortable derby victory."
       }
     ]
   },
 
-  "closingLine": "One hundred and forty-one years after they first played, Canada and the United States meet at a World Cup. The longest undefended border in the world is about to produce the shortest distance between glory and heartbreak."
+  "closingLine": "One hundred and forty-one years after they first played, Canada and the United States meet at a World Cup. Davies' hamstring, David's Juventus brilliance, Bombito's fractured tibia — the story has twists that no scriptwriter could have invented. The border has never felt shorter, and the stakes have never felt higher."
 }

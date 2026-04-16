@@ -4,77 +4,77 @@
   "team2Code": "GER",
   "team1Name": "Ivory Coast",
   "team2Name": "Germany",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "The Curse Breakers: Germany's Redemption Quest Meets Africa's Champions",
-  "subheadline": "Four-time World Cup winners fighting to avoid a third consecutive group-stage exit face an Ivory Coast side that knows how to win tournaments",
+  "headline": "The Curse Breakers: Germany's Redemption Quest Meets Africa's Fearless Champions",
+  "subheadline": "Four-time World Cup winners fighting to avoid a third consecutive group-stage exit face an Ivory Coast side in devastating form — 4-0 winners against South Korea, with Amad Diallo as their new star",
 
-  "openingNarrative": "This is a match between two teams haunted by their own histories at the World Cup -- and both have chosen the same tournament to exorcise their demons. Germany, four-time champions, carry the unprecedented shame of consecutive group-stage eliminations in 2018 and 2022. Never before in the history of German football has the national team been so ordinary on the grandest stage. The Mannschaft's rebuild around Jamal Musiala and Florian Wirtz is the most exciting thing to happen to German football in a decade, but until these players perform when it matters, the curse remains.\n\nIvory Coast's World Cup ghost is different but equally persistent. In three tournament appearances -- 2006, 2010, and 2014 -- the Elephants never escaped the group stage. Each time, they were drawn into a group of death. Each time, their golden generation of Drogba and Toure fell just short. But this is a new Ivory Coast. The 2024 Africa Cup of Nations champions, forged in the fire of a mid-tournament coaching crisis, arrived at the World Cup with something their predecessors never had: proof that they can win when it matters most.\n\nTheir only previous meeting was a 2-2 friendly draw in Gelsenkirchen in 2009, where Lukas Podolski scored a 90th-minute penalty to rescue Germany. This time, the stakes are infinitely higher. Germany (ELO: 1738) are favorites, but Ivory Coast (ELO: 1620) have the counter-attacking weapons to expose the one weakness that has defined Germany's recent World Cup failures: vulnerability to pace on the break.\n\nThe parallels are striking. Both teams need to break a curse. Both teams have the talent to do it. Only one can take the full three points.",
+  "openingNarrative": "This is a match between two teams haunted by their own World Cup histories — and both have chosen the same tournament to exorcise their demons. Germany, four-time champions, carry the unprecedented shame of consecutive group-stage eliminations in 2018 and 2022. Never before in the history of German football has the national team been so ordinary on the grandest stage.\n\nIvory Coast's World Cup ghost is different but equally persistent. In three tournament appearances — 2006, 2010, and 2014 — the Elephants never escaped the group stage. Each time, drawn into a group of death. Each time, falling just short. But this is a new Ivory Coast — one that has been transformed since the 2024 Africa Cup of Nations triumph.\n\nAnd the transformation has accelerated. Their March results sent shockwaves through the tournament: a 4-0 demolition of South Korea that showcased devastating attacking depth, followed by a gritty 1-0 victory over Scotland. Amad Diallo — the Manchester United winger whose pace and directness have electrified the Premier League — has emerged as the star who elevates Ivory Coast from AFCON champions to genuine World Cup dark horses. Alongside Adingra's established brilliance, Ivory Coast now possess arguably the most dangerous wing pairing at the tournament.\n\nEmerse Fae's fearless approach is the thread connecting everything. The manager who was appointed mid-crisis at the AFCON and won the tournament has instilled a mentality in this squad that refuses to accept limits. They pressed South Korea into submission. They ground out results against Scotland. This is Ivory Coast's first World Cup since 2014, and they arrive not merely hoping to compete — they arrive believing they can win their group.\n\nGermany's rebuild around Jamal Musiala and Florian Wirtz is the most exciting thing to happen to German football in a decade. But until these players perform when it matters at a World Cup, the curse remains. Against an Ivory Coast side that just destroyed a team ranked in the top 25, the pressure is enormous.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Julian Nagelsmann's 4-2-3-1 is a system designed to control matches through possession and quick vertical transitions. Musiala and Wirtz occupy the half-spaces with an almost telepathic understanding, creating chances through rapid combination play that leaves defenders scrambling. Kimmich anchors the midfield with metronome passing, and the full-backs push high to provide width.\n\nBut Germany's system has a flaw, and Ivory Coast are perfectly equipped to exploit it. When Germany commit numbers forward, they leave space behind their full-backs and between their center-backs. At the 2022 World Cup, Japan exploited this vulnerability ruthlessly. Ivory Coast's counter-attacking weapons -- Adingra's blistering pace, Fofana's driving runs from deep -- are tailor-made for this exact scenario.\n\nEmerse Fae will set up his 4-3-3 to absorb pressure and strike on the counter. The midfield trio of Fofana, Kessie, and a third runner will be tasked with winning the ball in central areas and transitioning at speed. Set pieces are another avenue -- Ivory Coast's physical superiority in the air gives them a genuine threat from corners and free kicks.\n\nThe tactical question: can Germany break Ivory Coast's defensive discipline before Ivory Coast break Germany's nerve?",
+    "narrative": "Julian Nagelsmann's 4-2-3-1 is designed to control matches through possession and quick vertical transitions. Musiala and Wirtz occupy the half-spaces with telepathic understanding. Kimmich anchors the midfield. The full-backs push high.\n\nBut Germany's system has a flaw, and Ivory Coast's March form proves they are perfectly equipped to exploit it. When Germany commit numbers forward, they leave space behind their full-backs and between their center-backs. At the 2022 World Cup, Japan exploited this vulnerability ruthlessly. The 4-0 against South Korea showed Ivory Coast can do the same — Amad Diallo's blistering pace on the right, Adingra's electrifying runs on the left, and Fofana's driving runs from deep are tailor-made for counter-attacking against Germany's high line.\n\nFae's 4-3-3 is designed to absorb pressure and strike with devastating speed. The midfield trio of Fofana, Kessie, and a third runner win the ball in central areas and transition at pace. The dual-wing threat of Amad Diallo and Adingra creates an impossible choice for Germany's full-backs: tuck in to deny central penetration, and the wingers have space; stay wide, and Fofana drives through the middle.\n\nThe tactical question: can Germany break Ivory Coast's defensive discipline before Ivory Coast break Germany's nerve? The 4-0 against South Korea suggests Fae's side can score at will when the system fires.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Adingra's counter-attacking pace vs Germany's high defensive line -- the vulnerability that ended Germany's 2022 campaign"
+    "keyMatchup": "Amad Diallo and Adingra's dual-wing threat vs Germany's high defensive line — the vulnerability that ended Germany's 2022 campaign, targeted by the tournament's most dangerous wing pairing"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Germany (ELO: 1738, rank 10) vs Ivory Coast (ELO: 1620, rank 42) -- a 118-point gap that gives Germany approximately a 62% win probability. However, Germany's ELO has been inflated by strong qualifying results and may not reflect their tournament-specific weaknesses.",
-    "formAnalysis": "Germany qualified with authority: 5 wins, 0 draws, 1 loss in 6 matches, scoring 16 goals and conceding just 3. Musiala's 4 qualifying goals led the attack. Ivory Coast were equally impressive in CAF qualifying: 6 wins, 3 draws, 1 loss in 10 matches, with Haller's 5 goals and a solid defensive record of 8 conceded.",
-    "squadValueComparison": "Germany's squad ($1.21B) is nearly five times the value of Ivory Coast's ($250M). Musiala alone ($163M) is worth more than half of Ivory Coast's entire squad. But the AFCON champions have repeatedly demonstrated that heart and tactical intelligence can overcome financial disparity.",
-    "injuryImpact": "Germany's unsettled defensive partnerships remain their biggest concern. Nagelsmann has experimented throughout qualifying without finding a settled center-back pairing. Ivory Coast's reliance on Kessie's fitness in midfield is their primary worry.",
-    "bettingPerspective": "Germany are favored at +1200 to win the tournament outright, but their group-stage record at recent World Cups makes them one of the most unreliable favorites in recent memory. Ivory Coast represent genuine dark horse value.",
-    "historicalPattern": "Their only meeting -- a 2-2 draw in Gelsenkirchen in 2009 -- hints at the competitive balance between these sides. Germany's golden generation era of Drogba-era Ivory Coast never met at a World Cup. This first World Cup meeting feels overdue."
+    "eloAnalysis": "Germany (ELO: 1738, rank 10) vs Ivory Coast (ELO: 1620, rank 42) — a 118-point gap that gives Germany approximately a 62% win probability. However, Ivory Coast's March form — particularly the 4-0 against South Korea — suggests their true level is significantly higher than their ELO reflects.",
+    "formAnalysis": "Ivory Coast are surging: beat South Korea 4-0 and Scotland 1-0 in March, with Amad Diallo emerging as a star. AFCON champions. Qualified from CAF with 6 wins, 3 draws, 1 loss, Haller's 5 goals leading. Germany qualified with authority: 5 wins, 0 draws, 1 loss, Musiala's 4 goals leading. But Germany's qualifying form has not translated to World Cup performance in recent tournaments.",
+    "squadValueComparison": "Germany ($1.21B) is nearly five times Ivory Coast's ($250M). Musiala alone ($163M) exceeds half of Ivory Coast's squad. But the 4-0 against South Korea — and the AFCON triumph — proved that Fae's side consistently outperform their financial valuation.",
+    "injuryImpact": "Germany's unsettled defensive partnerships remain their biggest concern. Ivory Coast are fully committed to Fae's fearless approach — the question is fitness and stamina, not tactics. Amad Diallo's fitness for a full 90 minutes at World Cup intensity is the key individual concern.",
+    "bettingPerspective": "Germany are favored at +1200 outright, but their group-stage record at recent World Cups makes them unreliable favorites. Ivory Coast's March form has dramatically shortened their odds. A genuine upset is priced as a realistic possibility.",
+    "historicalPattern": "Their only meeting — a 2-2 draw in 2009 — hints at competitive balance. Ivory Coast's AFCON-winning mentality, combined with Amad Diallo's emergence and devastating March form, makes them the most dangerous 'underdog' Germany have faced at a World Cup since Japan in 2022."
   },
 
   "playerSpotlights": [
     {
+      "name": "Amad Diallo",
+      "teamCode": "CIV",
+      "narrative": "The player who has changed Ivory Coast's World Cup trajectory. Amad Diallo's Manchester United form — explosive pace, devastating dribbling, composed finishing — has translated seamlessly into international football. The 4-0 against South Korea was his showcase: direct, fearless, and decisive in the final third. Against Germany's high defensive line, his ability to sprint into the spaces left by overlapping full-backs could produce the kind of counter-attacking moments that ended Germany's 2022 campaign. If Ivory Coast are to produce the upset, Amad Diallo's feet will write the script.",
+      "statline": "Manchester United star, Ivory Coast's breakout talent, devastating in the 4-0 against South Korea"
+    },
+    {
       "name": "Jamal Musiala",
       "teamCode": "GER",
-      "narrative": "The most important German footballer of his generation carries the burden of ending a curse. Musiala's dribbling is mesmerizing, his finishing clinical, and his movement between the lines almost impossible to track. With 4 goals in 6 qualifying matches, he has proven he can deliver consistently. But World Cup football is different -- the pressure is suffocating, the margins are razor-thin, and Germany need Musiala to be extraordinary, not merely excellent.",
-      "statline": "4 goals in 6 qualifying matches, Germany's creative heartbeat valued at $163M"
+      "narrative": "The most important German footballer of his generation carries the burden of ending a curse. Musiala's dribbling is mesmerizing, his finishing clinical, and his movement between the lines almost impossible to track. With 4 qualifying goals, he has proven consistency. But World Cup football is different — the pressure is suffocating — and Germany need Musiala to be extraordinary against a side that just put four past South Korea.",
+      "statline": "4 goals in qualifying, Germany's creative heartbeat valued at $163M"
     },
     {
       "name": "Simon Adingra",
       "teamCode": "CIV",
-      "narrative": "If there is one player who can destroy Germany's World Cup hopes in a single counter-attack, it is Adingra. Brighton's winger combines pace that frightens defenders with the composure to finish when chances arrive. His 2024 AFCON Best Young Player award was earned against Africa's best -- now he faces Europe's most decorated nation. Germany's high defensive line is an invitation that Adingra has been training his entire career to accept.",
+      "narrative": "If Amad Diallo is the new star, Adingra is the established force. Brighton's winger and 2024 AFCON Best Young Player now operates as one half of the tournament's most dangerous wing pairing. With Amad Diallo drawing attention on the right, Adingra finds more space on the left — and against Germany's high line, his pace in behind is a nightmare scenario for any full-back. The dual-wing threat is Ivory Coast's tactical trump card.",
       "statline": "2024 AFCON Best Young Player, one of the fastest wingers at the tournament"
     },
     {
       "name": "Florian Wirtz",
       "teamCode": "GER",
-      "narrative": "Leverkusen's prodigy brings the composure of a veteran and the imagination of an artist. His vision and passing range complement Musiala's dribbling perfectly, creating a dual creative threat that few defenses can handle. Against Ivory Coast's physical midfield, Wirtz's ability to find space in tight areas will be crucial. One moment of genius could be the difference.",
+      "narrative": "Leverkusen's prodigy brings composure and imagination. His vision and passing range complement Musiala's dribbling perfectly. Against Ivory Coast's physical midfield, Wirtz's ability to find space in tight areas will be crucial. One moment of genius could be the difference — but Ivory Coast's March form suggests they will not give him many moments.",
       "statline": "Architect of Leverkusen's historic unbeaten Bundesliga title"
-    },
-    {
-      "name": "Seko Fofana",
-      "teamCode": "CIV",
-      "narrative": "Fofana is a force of nature. His combination of pace, power, and technical ability on the ball makes him one of the most complete box-to-box midfielders at the World Cup. When he drives forward from deep, he is virtually unstoppable -- his runs were the catalyst for several crucial goals during Ivory Coast's AFCON triumph. Against Germany, his ability to transition from defense to attack in seconds could be the tactical key.",
-      "statline": "Midfield powerhouse and driving force behind Ivory Coast's 2024 AFCON title"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Germany 2-1 Ivory Coast",
-    "confidence": 58,
-    "narrative": "This is the match that will tell us whether Germany have truly changed or whether the curse is terminal. Musiala and Wirtz have the quality to find solutions against Ivory Coast's organized defense, but the Elephants' counter-attacking threat means Germany cannot afford a single lapse in concentration.\n\nWe see Germany edging this through superior creative quality in the final third, but it will be a match of breathtaking tension. Ivory Coast will score -- their combination of pace, power, and set-piece threat guarantees at least one goal. The question is whether Germany can score twice before their nerves start to fray.\n\nIf Germany fall behind, the ghosts of 2018 and 2022 will scream from the stands. If they go ahead, the relief will be palpable. This is not just a football match for Germany. It is therapy.",
+    "prediction": "Germany 2-2 Ivory Coast",
+    "confidence": 42,
+    "narrative": "The original prediction of a 2-1 German victory no longer reflects the balance of evidence. Ivory Coast's March form — the 4-0 demolition of South Korea, the emergence of Amad Diallo, the growing confidence under Fae's fearless leadership — has elevated them from plucky underdogs to genuine equals in this contest.\n\nMusiala and Wirtz have the creative quality to find solutions against Ivory Coast's organized defense. But the Elephants' counter-attacking threat — Amad Diallo and Adingra sprinting into the spaces behind Germany's high line, Fofana driving forward with unstoppable power — ensures that every German attacking commitment carries risk.\n\nExpect a breathtaking, open match. Germany score first through Musiala's movement. Ivory Coast equalize through a devastating counter-attack featuring Amad Diallo. Germany retake the lead through Wirtz's quality. Then, in the final 15 minutes, Fofana drives forward, Adingra finishes, and the AFCON champions earn a draw that sends a message to the entire tournament: Ivory Coast are here, and they are not afraid.\n\nFor Germany, a draw against Ivory Coast would trigger familiar alarm bells. For Ivory Coast, it would be proof that the group-stage curse is finally lifting.",
     "alternativeScenarios": [
       {
         "scenario": "Ivory Coast 2-1 Germany",
-        "probability": 22,
-        "reasoning": "Ivory Coast's counter-attacking pace proves too much for Germany's high line. Adingra tears the German defense apart, and the AFCON champions produce a result that would rank among the great World Cup upsets of the 21st century."
+        "probability": 25,
+        "reasoning": "Ivory Coast's counter-attacking pace proves too much for Germany's high line — the same vulnerability that ended their 2022 campaign. Amad Diallo and Adingra produce goals that would rank among the great World Cup upsets of the 21st century."
       },
       {
         "scenario": "Germany 3-1 Ivory Coast",
-        "probability": 18,
-        "reasoning": "Germany's creative firepower overwhelms Ivory Coast. Musiala and Wirtz produce a masterclass performance that exorcises the ghosts and announces Germany as genuine title contenders."
+        "probability": 15,
+        "reasoning": "Germany's creative firepower overwhelms Ivory Coast. Musiala and Wirtz produce a masterclass that exorcises the ghosts, and Ivory Coast's March form proves to be friendly-inflated."
       }
     ]
   },
 
-  "closingLine": "Germany's curse and Ivory Coast's dream share a common truth: the World Cup belongs to those brave enough to seize it. This match will reward courage and punish fear."
+  "closingLine": "Germany's curse and Ivory Coast's dream share a common truth: the World Cup belongs to those brave enough to seize it. But after a 4-0 demolition of South Korea and Amad Diallo's emergence, the Elephants are no longer merely brave. They are dangerous."
 }

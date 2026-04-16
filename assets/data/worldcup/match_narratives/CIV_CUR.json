@@ -4,55 +4,55 @@
   "team2Code": "CUR",
   "team1Name": "Ivory Coast",
   "team2Name": "Curacao",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "The Elephants and the Island: AFCON Champions Meet the World Cup's Most Unlikely Debutants",
-  "subheadline": "Ivory Coast's battle-hardened winners face Curacao's historic first World Cup match in a clash that embodies football's beautiful inequality",
+  "headline": "The Elephants and the Island: AFCON Champions — Now With Amad Diallo — Meet the World Cup's Most Unlikely Debutants",
+  "subheadline": "Ivory Coast arrive in devastating March form, having beaten South Korea 4-0 and Scotland 1-0, with Amad Diallo emerging as a genuine star",
 
-  "openingNarrative": "There are moments when the World Cup reveals itself not as a sporting tournament but as a story about the human condition. Ivory Coast versus Curacao is one of those moments. On one side stand the reigning Africa Cup of Nations champions, a team that pulled off one of the most dramatic AFCON runs in history -- sacking their coach mid-tournament, appointing Emerse Fae as an emergency replacement, and then winning the whole thing on home soil with a series of breathtaking knockout performances against Senegal, Mali, DR Congo, and Nigeria.\n\nOn the other side stand Curacao, a Caribbean island of approximately 150,000 people -- smaller than many World Cup stadiums could hold. Their qualification for the 2026 World Cup, achieved by topping their CONCACAF group with 4 wins, 1 draw, and 1 loss under the experienced guidance of Dick Advocaat, is one of the most remarkable underdog stories in the history of the tournament. They are the smallest nation by population at this World Cup, and their very presence on this stage is a triumph that transcends football.\n\nThese two teams have never met. Not in a competitive match, not in a friendly, not ever. Their first encounter will be on the biggest stage in world football, under lights that will illuminate the vast chasm between their resources, their histories, and their expectations. And yet, as the World Cup has proven time and again, the pitch is a great equalizer.\n\nIvory Coast's squad ($250M) is 25 times more valuable than Curacao's ($10M). Their ELO rating gap of 320 points is one of the largest at this tournament. But Curacao did not come to the World Cup to be a footnote. They came to compete.",
+  "openingNarrative": "There are moments when the World Cup reveals itself not as a sporting tournament but as a story about the human condition. Ivory Coast versus Curacao is one of those moments. On one side stand the reigning Africa Cup of Nations champions — a team that has somehow grown even more dangerous since their dramatic AFCON triumph. Their March results were a statement of intent: a 4-0 demolition of South Korea that showcased devastating attacking depth, followed by a gritty 1-0 victory over Scotland that proved they can win in different ways.\n\nThe AFCON champions have found a new star. Amad Diallo, the Manchester United winger whose pace and directness have terrorized Premier League defenses, has emerged as the focal point of Emerse Fae's fearless approach. Fae — the emergency appointment who turned a mid-tournament crisis into an AFCON triumph — has instilled a fearlessness in this squad that borders on arrogance. They do not just expect to win. They expect to dominate.\n\nThis is Ivory Coast's first World Cup since 2014, and the waiting has only sharpened their hunger.\n\nOn the other side stand Curacao, a Caribbean island of approximately 150,000 people. Their qualification for the 2026 World Cup is one of the most remarkable underdog stories in tournament history. They are the smallest nation by population at this World Cup, and their very presence is a triumph that transcends football.\n\nIvory Coast's squad ($250M) is 25 times more valuable than Curacao's ($10M). Their ELO gap of 320 points is one of the largest at the tournament. But Curacao did not come to the World Cup to be a footnote.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Emerse Fae's Ivory Coast play an energetic 4-3-3 built on elite individual talent and devastating transitions. Simon Adingra's pace on the wing is electrifying, Franck Kessie's midfield engine provides both defensive screening and box-to-box dynamism, and Sebastian Haller -- who remarkably returned to professional football after testicular cancer treatment -- leads the line with intelligence and finishing quality.\n\nCuracao under Dick Advocaat will be organized, disciplined, and pragmatic. A deep 4-4-2 or 5-4-1 is the most likely shape, designed to pack the defensive third and limit the spaces available to Ivory Coast's creative players. Juninho Bacuna, their most high-profile player with Rangers and Premier League experience, will be tasked with both shielding the defense and providing an outlet on rare counter-attacks.\n\nThe tactical challenge for Ivory Coast is patience. Against a deep block, they must move the ball quickly, find angles through the crowd of Curacao defenders, and avoid the frustration that comes from prolonged territorial dominance without goals. For Curacao, every minute at 0-0 builds belief.",
+    "narrative": "Emerse Fae's Ivory Coast play an energetic 4-3-3 built on elite individual talent and devastating transitions. The 4-0 demolition of South Korea showed the system at full throttle: relentless pressing, quick combinations, and finishing of the highest order. Amad Diallo's emergence has added a new dimension — his pace from wide positions, his willingness to take on defenders, and his end product create a threat that opponents must account for alongside the established weapons of Adingra, Kessie, and Fofana.\n\nFae's approach since the AFCON has been fearless. He demands his team press aggressively, attack with width, and treat every match as an opportunity to score prolifically. The 4-0 against South Korea — a team of genuine quality — was the perfect expression of this philosophy. The 1-0 against Scotland showed tactical adaptability.\n\nCuracao under Dick Advocaat will be organized, disciplined, and pragmatic. A deep 5-4-1 designed to pack the defensive third and limit spaces. Juninho Bacuna provides the outlet on rare counter-attacks.\n\nThe tactical challenge for Ivory Coast is patience. Against a deep block, they must move the ball quickly and avoid frustration. But with Amad Diallo's directness, Adingra's pace, and Fofana's driving runs, the Elephants have more tools than ever to break down deep defenses.",
     "team1Formation": "4-3-3",
     "team2Formation": "5-4-1",
-    "keyMatchup": "Ivory Coast's patience against Curacao's defensive wall -- the Elephants must break down a team that has nothing to lose and everything to gain from staying in the fight"
+    "keyMatchup": "Ivory Coast's attacking arsenal — Amad Diallo, Adingra, Fofana — against Curacao's massed defense"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Ivory Coast (ELO: 1620, rank 42) vs Curacao (ELO: 1300, rank 100) -- a 320-point gap that translates to roughly an 80% win probability for Ivory Coast. This is one of the most lopsided fixtures at the 2026 World Cup by ELO differential.",
-    "formAnalysis": "Ivory Coast's qualifying was dominant: 6 wins, 3 draws, 1 loss in 10 CAF matches, scoring 18 goals and conceding 8. Sebastian Haller led with 5 goals. Curacao impressed in CONCACAF: 4 wins, 1 draw, 1 loss in 6 matches under Advocaat, with Juninho Bacuna contributing 3 goals.",
-    "squadValueComparison": "Ivory Coast's squad ($250M) vs Curacao's squad ($10M) -- a 25:1 ratio that starkly illustrates the resource gap. Ivory Coast's most valuable player (Sebastian Haller, $25M) is worth more than Curacao's entire squad combined.",
-    "injuryImpact": "Ivory Coast have depth that Curacao simply cannot match. An injury to any Curacao starter is essentially irreplaceable, while Ivory Coast can rotate without significant quality drop-off.",
-    "bettingPerspective": "Ivory Coast are overwhelming favorites. The market interest lies in the margin -- over/under 2.5 goals is the primary betting line. Curacao to score at any point would be a significant payout.",
-    "historicalPattern": "These nations have never met. Ivory Coast have appeared at three previous World Cups (2006, 2010, 2014) without ever advancing past the group stage -- a record they are desperate to change. Curacao are making their World Cup debut."
+    "eloAnalysis": "Ivory Coast (ELO: 1620, rank 42) vs Curacao (ELO: 1300, rank 100) — a 320-point gap that translates to roughly an 80% win probability. Ivory Coast's March form suggests the gap may be even larger in practice.",
+    "formAnalysis": "Ivory Coast are in devastating form: beat South Korea 4-0 and Scotland 1-0 in March friendlies. AFCON champions. Qualified from CAF with 6 wins, 3 draws, 1 loss, scoring 18 and conceding 8. Haller led with 5 qualifying goals. Curacao qualified from CONCACAF with 4 wins, 1 draw, 1 loss under Advocaat, Bacuna contributing 3 goals.",
+    "squadValueComparison": "Ivory Coast ($250M) vs Curacao ($10M) — a 25:1 ratio. Amad Diallo's emergence adds another high-value attacking option that was not part of the qualifying equation.",
+    "injuryImpact": "Ivory Coast have depth that Curacao cannot match. Fae can rotate freely without significant quality drop-off. An injury to any Curacao starter is essentially irreplaceable.",
+    "bettingPerspective": "Ivory Coast are overwhelming favorites, and their March results have shortened the odds further. The 4-0 demolition of South Korea proves they can score at will. The market interest lies in the margin.",
+    "historicalPattern": "These nations have never met. Ivory Coast have appeared at three previous World Cups without advancing past the group stage — but this is their strongest squad and most confident team. Fae's fearless approach, combined with the AFCON triumph and March results, make them genuine group-stage favorites."
   },
 
   "playerSpotlights": [
     {
-      "name": "Simon Adingra",
+      "name": "Amad Diallo",
       "teamCode": "CIV",
-      "narrative": "Brighton's explosive winger was the breakout star of the 2024 AFCON, winning the Best Young Player award as Ivory Coast lifted the trophy on home soil. His pace is terrifying -- defenders know he is going to try to beat them, and they still cannot stop him. Against Curacao's deep defense, his ability to carry the ball at speed and create chances in tight spaces will be Ivory Coast's most potent weapon.",
-      "statline": "2024 AFCON Best Young Player, Brighton's explosive winger"
+      "narrative": "The star who has elevated Ivory Coast from AFCON champions to genuine World Cup dark horses. Amad Diallo's Manchester United form — his pace, his dribbling, his ability to score and create in equal measure — has been electric. The 4-0 win over South Korea showcased his talents against a quality opponent: direct, fearless, and decisive. Against Curacao's deep defense, his willingness to take on defenders one-on-one and his quality in the final third make him the most likely source of goals.",
+      "statline": "Manchester United star, Ivory Coast's breakout talent, devastating in March friendlies"
     },
     {
       "name": "Juninho Bacuna",
       "teamCode": "CUR",
-      "narrative": "The heartbeat of Curacao's historic campaign. Bacuna's Premier League and Scottish Premiership experience makes him the most seasoned player in the Curacao squad, and his 3 goals in qualifying were crucial to their remarkable run. At $2.5M, he is Curacao's most valuable player -- a title that carries enormous responsibility on the biggest stage of all. He must be everywhere: defending, creating, leading, inspiring.",
+      "narrative": "The heartbeat of Curacao's historic campaign. Bacuna's experience makes him the most seasoned player in the squad, and his 3 qualifying goals were crucial. At $2.5M, he is Curacao's most valuable player — a title that carries enormous responsibility. He must be everywhere: defending, creating, leading, inspiring against opponents who individually outclass every player in his squad.",
       "statline": "3 goals in qualifying, Curacao's most valuable player at $2.5M"
     },
     {
-      "name": "Franck Kessie",
+      "name": "Simon Adingra",
       "teamCode": "CIV",
-      "narrative": "The former AC Milan captain brings Serie A and La Liga experience to Ivory Coast's midfield. Kessie's physical presence and tactical intelligence make him the perfect complement to the creative talents around him. His ability to win the ball back and launch attacks with a single pass gives Ivory Coast the midfield dominance they need to control matches.",
-      "statline": "Former AC Milan captain with Serie A and La Liga experience"
+      "narrative": "Brighton's explosive winger was the breakout star of the 2024 AFCON, and his pace remains terrifying. With Amad Diallo now providing an equally dangerous threat on the opposite flank, Adingra operates with more space and fewer defensive shadows. Against Curacao's deep defense, the dual threat of Adingra and Amad Diallo from both wings creates an impossible choice for Curacao's fullbacks.",
+      "statline": "2024 AFCON Best Young Player, Brighton's explosive winger"
     },
     {
       "name": "Rangelo Janga",
       "teamCode": "CUR",
-      "narrative": "Curacao's all-time leading goalscorer carries the weight of a nation's dreams on the World Cup stage. Janga's clinical finishing has been the catalyst for Curacao's rise through Caribbean and CONCACAF football, and his ability to take the few chances that come his way will be essential. Against Ivory Coast, he may touch the ball five times in the opposition box. He needs to make at least one of them count.",
+      "narrative": "Curacao's all-time leading goalscorer carries the weight of a nation's dreams. Against Ivory Coast, he may touch the ball five times in the opposition box. He needs to make at least one of them count. A goal against the AFCON champions, on the World Cup stage, would be the moment of a lifetime for a player from an island of 150,000 people.",
       "statline": "Curacao's all-time leading goalscorer, crucial throughout qualifying"
     }
   ],
@@ -60,21 +60,21 @@
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Ivory Coast 3-0 Curacao",
-    "confidence": 75,
-    "narrative": "The quality gap is too vast. Ivory Coast's attacking talent -- Adingra's pace, Haller's finishing, the midfield drive of Kessie and Fofana -- will create too many chances for even the most disciplined defense to repel. Curacao will fight valiantly, and their organization under Advocaat will earn respect, but the dam will eventually break.\n\nThe first goal is key. If Ivory Coast score early, Curacao's gameplan unravels and the Elephants could run up a significant margin. If Curacao hold out until halftime, the pressure mounts on Ivory Coast and the possibility of a shock result -- however remote -- begins to feel real.\n\nBut in the end, talent tells. And Ivory Coast have too much of it.",
+    "confidence": 80,
+    "narrative": "The quality gap is vast, and Ivory Coast's March form makes it vaster. The 4-0 demolition of South Korea — a team with infinitely more resources than Curacao — showed that Fae's side can score at will when the system is functioning. With Amad Diallo's emergence adding yet another attacking weapon, Ivory Coast's front line is the most dangerous Curacao will have ever faced.\n\nThe first goal is key. If Ivory Coast score early — through Amad Diallo's directness, Adingra's pace, or a Fofana driving run — Curacao's gameplan unravels and the margin could be significant. The 4-0 against South Korea suggests the Elephants will not ease off when ahead.\n\nBut Curacao will fight. Under Advocaat's experienced guidance, they will defend with organization and pride. Every minute at 0-0 builds belief. The question is whether that belief survives the first 20 minutes against a team that just destroyed a higher-ranked Asian opponent.\n\nIvory Coast's fearless approach — Fae demands attack, always — means this will be relentless. Three goals is the floor rather than the ceiling.",
     "alternativeScenarios": [
       {
-        "scenario": "Ivory Coast 1-0 Curacao",
-        "probability": 15,
-        "reasoning": "Curacao produce the defensive performance of their lives, frustrating Ivory Coast for 80 minutes before a late goal finally breaks their resistance. The 1-0 scoreline would be a moral victory for the island nation."
+        "scenario": "Ivory Coast 5-0 Curacao",
+        "probability": 18,
+        "reasoning": "Ivory Coast's March momentum — 4-0 against South Korea — carries into the tournament. Amad Diallo and Adingra terrorize from both flanks, and the AFCON champions make a devastating opening statement."
       },
       {
-        "scenario": "Ivory Coast 1-1 Curacao",
-        "probability": 5,
-        "reasoning": "The greatest shock of the group stage. Curacao score from a set piece, Ivory Coast's frustration mounts, and the smallest nation at the tournament earns a point that would echo through football history."
+        "scenario": "Ivory Coast 1-0 Curacao",
+        "probability": 10,
+        "reasoning": "Curacao produce the defensive performance of their lives under Advocaat's guidance. One Ivory Coast goal breaks through in the 75th minute, and the 1-0 is a moral victory for the island nation."
       }
     ]
   },
 
-  "closingLine": "When 150,000 people dream big enough, the whole world watches. Curacao may not win this match, but they have already won something that no scoreline can diminish: a place on football's grandest stage."
+  "closingLine": "When 150,000 people dream big enough, the whole world watches. But the AFCON champions — with Amad Diallo adding his star power to an already dangerous squad — have dreams of their own. Ivory Coast's first World Cup since 2014 begins with a statement."
 }

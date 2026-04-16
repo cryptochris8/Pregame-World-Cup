@@ -4,77 +4,77 @@
   "team2Code": "IRN",
   "team1Name": "Belgium",
   "team2Name": "Iran",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "The Red Devils Meet Team Melli in a Battle of Redemption",
-  "subheadline": "Belgium's retooled golden generation faces Iran's battle-hardened qualifiers in a group stage clash dripping with unfinished business",
+  "headline": "The Red Devils Meet Team Melli — De Bruyne Fit, Lukaku Doubtful, and History Repeating",
+  "subheadline": "Belgium's recharged golden generation, fresh from a 5-2 USA demolition, faces Iran's battle-hardened qualifiers in a match dripping with unfinished business",
 
-  "openingNarrative": "Belgium and Iran have unfinished business. When these two sides last met at a World Cup, in Russia in 2018, Iran came agonizingly close to taking a point off the group favorites before Romelu Lukaku's intervention settled matters late. That 1-0 scoreline flattered Belgium and haunted Iran. Now, eight years on, both nations arrive at the 2026 tournament carrying the weight of recent disappointment and the hunger that comes with it.\n\nBelgium's 2022 World Cup was a catastrophe disguised as underperformance. A squad dripping with Premier League pedigree crashed out in the group stage, with reports of dressing room discord and a team that had lost its way. The golden generation that promised so much -- that unforgettable third-place finish in 2018, the years spent near the top of the world rankings -- had seemingly imploded. But under Rudi Garcia, Belgium have rebuilt with purpose. Kevin De Bruyne remains the orchestrator, now surrounded by a new wave featuring the electrifying Jeremy Doku and the prolific Lois Openda.\n\nIran, meanwhile, are Asia's most relentless World Cup qualifiers. Mehdi Taremi's 10 goals in qualifying were the performance of a man who refuses to accept his country's ceiling. Team Melli topped their AFC group with 7 wins from 10 matches, and their 2022 campaign -- that glorious 2-0 victory over Wales, played amid extraordinary political pressure -- proved that Iran can deliver when the world is watching.",
+  "openingNarrative": "Belgium and Iran have unfinished business. When these two sides last met at a World Cup, in Russia in 2018, Iran came agonizingly close to taking a point off the group favorites before Romelu Lukaku's intervention settled matters late. That 1-0 scoreline flattered Belgium and haunted Iran. Now, eight years on, both nations arrive carrying the weight of recent disappointment and the hunger that comes with it.\n\nBelgium's transformation in March was dramatic. Kevin De Bruyne — the subject of weeks of anxious fitness speculation — was declared fit, and immediately proved it with a masterclass in a 5-2 demolition of the United States. Five goals, fluid movement, De Bruyne orchestrating everything. A 1-1 draw against Mexico followed, demonstrating tactical versatility. Youri Tielemans has assumed the captaincy with quiet authority, bringing stability to a squad that fractured in 2022.\n\nBut the picture is not entirely rosy. Romelu Lukaku and Leandro Trossard are both doubtful with fitness concerns. The irony is thick: in 2018, Lukaku scored the goal that beat Iran. In 2026, he may not be fit to face them. Belgium must plan for the possibility of deploying their attack without two of their most experienced forwards.\n\nIran, meanwhile, are Asia's most relentless World Cup qualifiers. Mehdi Taremi's 10 goals in qualifying were the performance of a man who refuses to accept his country's ceiling. Team Melli topped their AFC group with 7 wins from 10 matches.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Belgium under Rudi Garcia have transitioned to a 4-2-3-1 that places De Bruyne at the heart of everything. The system is built around quick transitions: win the ball, find De Bruyne, and let the magician decide. Doku's dribbling on the wing provides the chaos that structured defenses fear, while Openda's movement in behind gives Belgium a different dimension to the Lukaku-dependent side of old.\n\nIran's approach under Amir Ghalenoei is a masterclass in pragmatic tournament football. Their 4-2-3-1 is defensively disciplined, with two banks of four compressing space in the midfield and the front two -- Taremi and Azmoun -- waiting to spring on the counter. Iran's defensive shape in 2022 was among the best of any non-European side, and Ghalenoei has refined it further. The key tactical battle will be Belgium's ability to break through Iran's compact block. If Iran can force Belgium into crosses from deep, they will fancy their chances. If De Bruyne finds pockets between the lines, Iran are in trouble.",
+    "narrative": "Belgium under Tielemans' captaincy and De Bruyne's creative direction have evolved into a more fluid attacking unit. The 5-2 win over the USA showed Belgium at their best — quick transitions, multiple creative outlets, and De Bruyne dictating everything. If Lukaku is unavailable, Belgium may deploy Openda's pace or a more mobile front line that actually improves their ability to play through Iran's compact block.\n\nThe 1-1 draw against Mexico showed Belgium can also be pragmatic — sitting deeper, absorbing pressure, and striking on the counter when needed. This dual identity gives them tactical flexibility that the 2022 team lacked.\n\nIran's approach is a masterclass in pragmatic tournament football. Their 4-2-3-1 is defensively disciplined, with two banks of four compressing space. Taremi and Azmoun wait to spring on the counter. The key tactical battle remains Belgium's ability to break through Iran's compact block — but the 5-2 USA result suggests they now have the tools to do it.\n\nTielemans' deep-lying passing provides the platform for De Bruyne to operate higher up the pitch, and the absence of Lukaku's static presence may paradoxically create more movement and space for Belgium's other attackers.",
     "team1Formation": "4-2-3-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Kevin De Bruyne vs Iran's disciplined double pivot -- Belgium's creator against Team Melli's midfield shield"
+    "keyMatchup": "Kevin De Bruyne vs Iran's disciplined double pivot — Belgium's fit-again creator against Team Melli's midfield shield"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Belgium (ELO: 1748) vs Iran (ELO: 1628) -- a 120-point gap that translates to roughly a 65% win probability for Belgium. However, Iran's recent tournament performances consistently outperform their ELO rating, making them one of the most dangerous 'underdogs' in world football.",
-    "formAnalysis": "Belgium sailed through UEFA qualifying unbeaten: 5 wins, 3 draws, 29 goals scored and just 7 conceded. De Bruyne led the scoring charts with 6 goals. Iran were equally impressive in AFC qualifying, winning 7 of 10 matches with Taremi scoring an extraordinary 10 goals to top the Asian charts.",
-    "squadValueComparison": "Belgium's squad ($771M) dwarfs Iran's ($82.3M) -- nearly a 10:1 ratio. But Iran have consistently proven that squad value is a poor predictor of World Cup results. Their most valuable player, Mehdi Taremi ($10M), plays at the highest level with Inter Milan.",
-    "injuryImpact": "Belgium's depth allows them to absorb injuries better than most. De Bruyne's fitness is the critical variable -- without him, Belgium lose their creative identity. Iran rely heavily on the Taremi-Azmoun partnership; losing either would fundamentally alter their attacking approach.",
-    "bettingPerspective": "Belgium's outright tournament odds of +4000 reflect a squad in transition. Iran, at significantly longer odds, are a classic value play in the group stage. The 2018 meeting was a one-goal game, and the smart money says this will be tight again.",
-    "historicalPattern": "In 3 previous meetings, Belgium have won 2 and drawn 1, scoring 5 goals to Iran's 2. Both World Cup meetings (2014 and 2018) were closer than the scorelines suggested, with Iran hitting the woodwork multiple times in 2018."
+    "eloAnalysis": "Belgium (ELO: 1748) vs Iran (ELO: 1628) — a 120-point gap that translates to roughly a 65% win probability for Belgium. De Bruyne's fitness declaration strengthens that probability further.",
+    "formAnalysis": "Belgium's March was emphatic: beat USA 5-2 with De Bruyne fit, drew Mexico 1-1. Tielemans captaining. Qualified unbeaten: 5 wins, 3 draws, 29 goals. Iran qualified dominantly: 7 wins, 2 draws, 1 loss, Taremi scoring 10. Both teams arrive with confidence, but Belgium's March form represents a significant gear-shift.",
+    "squadValueComparison": "Belgium's squad ($771M) dwarfs Iran's ($82.3M) — nearly a 10:1 ratio. But Iran have consistently proven that squad value is a poor predictor of World Cup results.",
+    "injuryImpact": "De Bruyne FIT transforms Belgium's World Cup. But Lukaku and Trossard both doubtful introduces attacking uncertainty. The man who scored the 2018 winner against Iran may not be available for the rematch. Iran rely heavily on the Taremi-Azmoun partnership; losing either would fundamentally alter their approach.",
+    "bettingPerspective": "Belgium's 5-2 USA win has shortened their odds significantly. De Bruyne's fitness was the critical variable, and it has been resolved. But the Lukaku/Trossard doubts keep the door open for an Iran upset at longer odds.",
+    "historicalPattern": "In 3 previous meetings, Belgium have won 2 and drawn 1. Both World Cup meetings (2014 and 2018) were closer than the scorelines suggested. Iran hitting the woodwork multiple times in 2018 remains a haunting near-miss."
   },
 
   "playerSpotlights": [
     {
       "name": "Kevin De Bruyne",
       "teamCode": "BEL",
-      "narrative": "At 34, De Bruyne enters what could be his final World Cup with a point to prove. The 2022 disaster, where he was captured on camera questioning the quality of his teammates, left scars. But the Manchester City maestro has spent two years rebuilding Belgium's identity around his vision. Six goals in qualifying were merely the statistical expression of total creative dominance. Against Iran's disciplined block, De Bruyne's ability to find the pass that nobody else sees will be the difference between a frustrating afternoon and a commanding victory.",
-      "statline": "6 goals in 8 qualifying matches; unbeaten qualifying campaign"
+      "narrative": "The most important three letters in Belgian football: FIT. After weeks of doubt, De Bruyne rewarded the nation's anxiety with a masterclass against the USA — the kind of performance that reminded everyone why he is considered among the greatest playmakers of his generation. Six qualifying goals, a 5-2 demolition, and the armband passed to Tielemans so De Bruyne can focus purely on creation. Against Iran's disciplined block, De Bruyne's ability to find the pass that nobody else sees will be the difference between frustration and victory.",
+      "statline": "6 goals in qualifying; FIT and firing after a 5-2 demolition of the USA"
     },
     {
       "name": "Mehdi Taremi",
       "teamCode": "IRN",
-      "narrative": "Taremi's journey from the Iranian Pro League to Inter Milan's starting eleven is one of modern football's great late-bloomer stories. At 33, he has arrived at his peak at exactly the right moment. Ten goals in qualifying were not scored against minnows -- they came against genuine AFC competition, including strikes against Uzbekistan and Qatar. His movement, hold-up play, and finishing are world-class. Against Belgium's defense, Taremi will carry Iran's hopes not just as a goal threat, but as the link man who makes Team Melli's counter-attacks function.",
-      "statline": "10 goals in qualifying; Iran's all-time leading scorer in World Cup qualifying cycles"
+      "narrative": "Taremi's journey from the Iranian Pro League to Inter Milan's starting eleven is one of modern football's great late-bloomer stories. Ten goals in qualifying were scored against genuine AFC competition, and his movement, hold-up play, and finishing are world-class. Against Belgium's defense — potentially without Lukaku drawing attention at the other end — Taremi carries Iran's hopes as both goal threat and link man.",
+      "statline": "10 goals in qualifying; Inter Milan's experienced striker"
     },
     {
-      "name": "Jeremy Doku",
+      "name": "Youri Tielemans",
       "teamCode": "BEL",
-      "narrative": "If De Bruyne is Belgium's brain, Doku is their electricity. The Manchester City winger's dribbling numbers are absurd -- he completes more take-ons per 90 minutes than virtually any player in European football. At 24, this is his first World Cup as a genuine starter rather than a super-sub, and the transition from explosive talent to decisive match-winner is the challenge that defines his career. Iran's right-back will face the most demanding 90 minutes of his tournament.",
-      "statline": "Led Belgium's qualifying campaign in dribbles completed; key contributor to 29-goal qualifying haul"
+      "narrative": "The new captain has brought calm to Belgian football. Tielemans' deep-lying passing and tactical intelligence provide the platform from which De Bruyne can orchestrate. His leadership during the March matches — composed under pressure, authoritative in communication — suggests Belgium have finally found the captain their dressing room needed after the 2022 dysfunction.",
+      "statline": "Belgium's new captain, midfield anchor, provider of stability"
     },
     {
       "name": "Sardar Azmoun",
       "teamCode": "IRN",
-      "narrative": "The 'Iranian Messi' tag has followed Azmoun since his teenage years, and while the comparison is hyperbolic, the talent is not. His partnership with Taremi gives Iran one of the most complementary strike partnerships at the tournament. Where Taremi holds and links, Azmoun runs in behind with pace and intelligence that has troubled defenders across the Russian and German leagues. If Iran are to spring an upset, Azmoun's movement will be the catalyst.",
-      "statline": "Over 50 international goals; key contributor in Iran's unbeaten home qualifying record"
+      "narrative": "The 'Iranian Messi' tag has followed Azmoun since his teenage years. His partnership with Taremi gives Iran one of the most complementary strike partnerships at the tournament. Where Taremi holds and links, Azmoun runs in behind with pace and intelligence. If Belgium push forward chasing a breakthrough, Azmoun's movement will be the counter-attacking catalyst.",
+      "statline": "Over 50 international goals; key partner in Iran's twin-striker system"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Belgium 2-1 Iran",
-    "confidence": 60,
-    "narrative": "This will be closer than Belgium want and tighter than the neutral expects. Iran do not come to World Cups to be beaten easily -- their 2018 and 2022 campaigns proved that emphatically. They will frustrate, they will compete, and Taremi will create at least one moment of genuine danger.\n\nBut Belgium, for all the questions about their golden generation's decline, still possess De Bruyne. And in a tight match that needs unlocking, one De Bruyne pass can change everything. Expect Belgium to struggle in the first half against Iran's disciplined block before the dam breaks after the hour mark. Doku's dribbling and De Bruyne's vision will eventually find the cracks.\n\nIran will score -- they always do when it matters -- but Belgium's quality in the final third should prove decisive in a match that will be more competitive than the 2-1 scoreline suggests.",
+    "confidence": 62,
+    "narrative": "Belgium with a fit De Bruyne are a fundamentally different proposition than the side that limped through 2022. The 5-2 demolition of the USA was not a one-off; it was the announcement of a team whose creative engine is running at full capacity. Tielemans' captaincy has brought stability, and the system functions with purpose.\n\nIran will make this tighter than the neutral expects. Taremi's quality is undeniable, the disciplined block will frustrate Belgium for periods, and Team Melli's ability to score in World Cup matches — they always find a way — ensures they will not be shut out.\n\nBut De Bruyne fit and firing is the X-factor that Iran cannot counter. One vision pass, one set-piece delivery, one driving run — the 5-2 against the USA showed all three in abundance. Belgium will struggle in the first half against Iran's block before the dam breaks after the hour mark.\n\nThe Lukaku/Trossard doubts add tactical intrigue — Belgium without their traditional target man may be more mobile and harder to defend against. Iran will score, but Belgium's quality in the final third should prove decisive.",
     "alternativeScenarios": [
       {
         "scenario": "Belgium 3-0 Iran",
-        "probability": 20,
-        "reasoning": "If Belgium score early, Iran's low-block discipline could crumble. De Bruyne in space against a side chasing the game is a nightmare scenario for any team, and Belgium's depth off the bench can punish tired legs."
+        "probability": 18,
+        "reasoning": "De Bruyne in space against a team chasing the game is devastating. If Belgium score early, Iran's low-block discipline crumbles and the 5-2 USA form carries over."
       },
       {
         "scenario": "Iran 1-0 Belgium",
-        "probability": 12,
-        "reasoning": "Iran's counter-attacking blueprint is perfectly suited for an upset. If Taremi scores early and Iran lock down defensively, Belgium's frustration could echo their 2022 implosion. This is the scenario that keeps Belgium fans up at night."
+        "probability": 10,
+        "reasoning": "Iran's counter-attacking blueprint produces the perfect upset. Taremi scores early, Iran lock down defensively, and Belgium — without Lukaku's physical presence — cannot find a way through."
       }
     ]
   },
 
-  "closingLine": "Belgium have the talent to win comfortably. Iran have the mentality to make it anything but comfortable. When these two meet, the beautiful game reminds us that football is played on grass, not on spreadsheets."
+  "closingLine": "De Bruyne is fit. Tielemans wears the armband. Belgium just demolished the USA 5-2. But Lukaku — the man who scored the 2018 winner against Iran — may not be there for the sequel. Football's sense of irony is alive and well."
 }

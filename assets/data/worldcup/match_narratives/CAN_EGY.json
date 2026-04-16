@@ -4,77 +4,77 @@
   "team2Code": "EGY",
   "team1Name": "Canada",
   "team2Name": "Egypt",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "Davies vs Salah: Two of Football's Fastest Collide in a Historic First Meeting",
-  "subheadline": "Canada's co-hosting dream faces its sternest test against an Egyptian side built around the most decorated African player of his generation",
+  "headline": "Davies vs Salah: Two of Football's Fastest Collide — But One Is Nursing a Hamstring",
+  "subheadline": "Canada's co-hosting dream faces its sternest test against Egypt, with Davies recovering, David thriving at Juventus, and Bombito ruled out",
 
-  "openingNarrative": "This match has never happened before. Not at a World Cup, not in a friendly, not in any competition at any level. Canada and Egypt have zero history, and that absence of precedent only deepens the intrigue. What happens when a Canadian side built around pace, pressing, and the electricity of Alphonso Davies meets an Egyptian team whose entire identity flows through the extraordinary talent of Mohamed Salah?\n\nCanada enter as co-hosts riding a wave of unprecedented football enthusiasm. The sport has captured the nation's imagination in ways that would have seemed absurd a decade ago, when the men's national team languished outside the world's top 100. Davies at Real Madrid and Jonathan David at Lille have become genuine global stars, and Jesse Marsch's high-energy system gives Canada an identity that suits the occasion -- aggressive, fearless, and built for the kind of emotional occasion that a home World Cup provides.\n\nEgypt are Africa's most decorated footballing nation -- seven-time African champions -- but their World Cup history is one of agonizing underperformance. Their 2018 campaign, with an injured Salah limping through the group stage, produced three defeats. This time, Salah arrives fit, motivated, and surrounded by a supporting cast led by the explosive Omar Marmoush. Egypt's qualifying was dominant: 8 wins from 10 matches, 26 points, and Salah scoring 9 goals to lead Africa's charts. This is not a team relying on one man. This is a team elevated by one man.",
+  "openingNarrative": "This match has never happened before. Not at a World Cup, not in a friendly, not in any competition at any level. Canada and Egypt have zero history, and that absence of precedent only deepens the intrigue. What happens when a Canadian side built around pace, pressing, and the electricity of Alphonso Davies meets an Egyptian team whose entire identity flows through the extraordinary talent of Mohamed Salah?\n\nCanada enter as co-hosts, but the dream carries complications. Davies is recovering from a hamstring concern that has limited his explosiveness in training. Ismael Bombito's fractured tibia has removed a defensive anchor. The good news: Jonathan David is in career-best form at Juventus, where the tactical demands of Serie A have transformed him into a more complete striker, and Tajon Buchanan is back in the squad to provide depth and attacking width.\n\nThe emotional energy of playing a World Cup on home soil will be enormous. But emotion alone does not stop Mohamed Salah.\n\nEgypt are Africa's most decorated footballing nation — seven-time African champions — and their World Cup qualifying campaign was a masterclass: 8 wins from 10, 26 points, Salah scoring 9 goals, and only 2 goals conceded. This is not a team relying on one man. This is a team elevated by one man. With Omar Marmoush providing explosive support, Egypt's attacking profile is genuinely frightening.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Jesse Marsch's Canada will deploy a high-intensity 4-3-3 that presses from the front and transitions at blistering speed. Davies' role is unique -- nominally a left-back, he functions as a wing-back in attack, surging forward with the pace that makes him virtually uncontainable when he builds a full head of steam. David leads the line with intelligent movement, while the midfield trio provides the energy to sustain the pressing game.\n\nEgypt's 4-2-3-1 under Hossam Hassan is built around Salah's ability to cut inside from the right wing onto his devastating left foot. The system is defense-first in structure but explosive in transition, with Salah and Marmoush capable of turning defensive situations into attacking opportunities with a single pass or run. Egypt's double pivot screens the defense and provides the platform from which their attackers can operate.\n\nThe key tactical question: can Egypt's midfield handle Canada's pressing intensity while still finding the time and space to deliver the ball to Salah in dangerous positions? If Canada can press Egypt into mistakes in their own half, they win. If Egypt can absorb the press and release Salah on the counter, the match shifts dramatically.",
+    "narrative": "Jesse Marsch's Canada will deploy a high-intensity 4-3-3 that presses from the front and transitions at blistering speed. But the system's effectiveness depends on Davies' fitness. At full health, his role as a marauding wing-back creates an asymmetric overload that few teams can handle. If the hamstring limits his explosiveness, Canada must find alternative width — potentially through Buchanan on the opposite flank.\n\nDavid's Juventus-refined movement becomes even more critical if Davies is limited. The striker's ability to create his own chances in tight spaces, developed through months of Serie A education, gives Canada a goal-scoring threat that does not depend on Davies' pace.\n\nEgypt's 4-2-3-1 is built around Salah's ability to cut inside from the right onto his devastating left foot. The double pivot screens the defense, and Egypt's defensive record — 2 goals conceded in 10 qualifying matches — is remarkable. Against a Canadian defense missing Bombito, Egypt's attack may find more space than expected.\n\nThe key tactical question: can Canada's reshuffled defense, without Bombito, handle both Salah and Marmoush? If Salah receives the ball in the positions he wants, against unfamiliar defensive pairings, the results could be catastrophic.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Alphonso Davies' overlapping runs vs Egypt's right-sided defense -- speed against discipline in a match-defining duel"
+    "keyMatchup": "Mohamed Salah vs Canada's reshuffled defense — with Bombito out, can the co-hosts contain Africa's most dangerous attacker?"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Canada (ELO: 1615) vs Egypt (ELO: 1648) -- a 33-point gap that marginally favors Egypt. However, Canada's home continent advantage and the energy of playing in front of their own fans could offset this narrow ELO disadvantage.",
-    "formAnalysis": "Canada qualified automatically as co-hosts. Egypt's CAF qualifying was exceptional: 8 wins, 2 draws, 0 losses, 20 goals scored, just 2 conceded. Salah scored 9 goals to lead Africa's scoring charts. Egypt's defensive record -- only 2 goals conceded in 10 matches -- is one of the best in any confederation.",
-    "squadValueComparison": "Canada ($271M) vs Egypt ($287M). Remarkably similar squad values. Canada's most valuable player is Davies ($87.5M); Egypt's is Salah ($125M). The individual quality is concentrated at the top of both squads, with support casts that are competent but not world-class.",
-    "injuryImpact": "Salah's fitness defines Egypt's tournament. In 2018, his shoulder injury from the Champions League final robbed Egypt of their greatest weapon. A fully fit Salah transforms Egypt from competitive underdogs into genuine group stage contenders. Davies' fitness is equally crucial for Canada's tactical system.",
-    "bettingPerspective": "Both teams carry +25000 outright odds, reflecting the market's view that they are of comparable quality. This individual match is a genuine coin flip, with Canada's home advantage marginally tilting the odds.",
-    "historicalPattern": "No previous meetings at any level. This is a completely blank canvas."
+    "eloAnalysis": "Canada (ELO: 1615) vs Egypt (ELO: 1648) — a 33-point gap that marginally favors Egypt. Canada's home advantage offsets this, but Davies' hamstring and Bombito's absence narrow the effective edge.",
+    "formAnalysis": "Canada's preparation has been clouded by injury: Davies recovering from hamstring, Bombito out with fractured tibia, but David in brilliant Juventus form and Buchanan back. Egypt's CAF qualifying was exceptional: 8 wins, 2 draws, 0 losses, 20 goals scored, just 2 conceded, Salah scored 9.",
+    "squadValueComparison": "Canada ($271M) vs Egypt ($287M). Remarkably similar. Davies ($87.5M) vs Salah ($125M). David's Juventus move has enhanced his value and form. The individual quality is concentrated at the top of both squads.",
+    "injuryImpact": "Canada's injury concerns are significant: Davies' hamstring limits the explosive pace that defines their system, and Bombito's fractured tibia removes a defensive starter. David's brilliant Juventus form and Buchanan's return provide attacking consolation. Egypt need Salah fit — his 9 qualifying goals were 45% of their total.",
+    "bettingPerspective": "Canada's home advantage is offset by their injury concerns. Egypt's Salah-powered qualifying form makes them dangerous. This is genuinely a coin flip, with the markets reflecting the uncertainty.",
+    "historicalPattern": "No previous meetings at any level. A completely blank canvas — one that Canada's injuries have made harder to draw on."
   },
 
   "playerSpotlights": [
     {
-      "name": "Alphonso Davies",
+      "name": "Jonathan David",
       "teamCode": "CAN",
-      "narrative": "Playing a World Cup on home soil is the moment that Davies' entire career has been building toward. The refugee camp in Ghana, the childhood in Edmonton, the breakthrough at Vancouver Whitecaps, the move to Bayern Munich, and now Real Madrid -- every chapter has led to this. Davies' pace is his primary weapon, but his development as a complete player means he is now equally dangerous in tight spaces, capable of delivering quality crosses, and defensively reliable against the counter-attacks that his forward runs inevitably invite.",
-      "statline": "Canada's $87.5M talisman; Real Madrid regular; one of the fastest players in world football"
+      "narrative": "With Davies' fitness uncertain and Bombito ruled out, David becomes the player Canada's entire World Cup revolves around. His move to Juventus has been transformative — the tactical intelligence demanded by Serie A has elevated his positioning, his hold-up play, and his finishing in tight spaces. He arrives in career-best form, and against Egypt's organized defense, his ability to find space where none exists and finish with cold-blooded composure will be Canada's primary weapon.",
+      "statline": "Juventus striker in career-best form, Canada's most important attacking player"
     },
     {
       "name": "Mohamed Salah",
       "teamCode": "EGY",
-      "narrative": "The Liverpool legend enters what may be his final World Cup at the peak of his powers. Nine qualifying goals demonstrated that Salah's appetite for international goals is undiminished, and his combination of pace, finishing, and tactical intelligence makes him one of the most complete attackers at the entire tournament. At 34, Salah has added the experience and game management that his younger self sometimes lacked. Against Canada's aggressive pressing, his ability to find space and finish with either foot will be the decisive factor.",
+      "narrative": "The Liverpool legend enters what may be his final World Cup at the peak of his powers. Nine qualifying goals, Africa's top scorer, and a team built around his genius. Against a Canadian defense missing Bombito, Salah may find more space and more favorable matchups than he would normally expect at a World Cup. The cut inside, the left foot, the finish — it is the most well-known move in football. And it is still unstoppable.",
       "statline": "9 goals in qualifying; Egypt's talisman; Liverpool's all-time leading Premier League scorer"
     },
     {
-      "name": "Jonathan David",
+      "name": "Alphonso Davies",
       "teamCode": "CAN",
-      "narrative": "Canada's clinical finisher provides the goals that Davies' creativity demands. David's movement in behind defenses -- intelligent, purposeful, and timed to perfection -- makes him one of the most efficient strikers in European football. Against Egypt's organized defense, David's runs into the channels and his composure in front of goal will be Canada's primary route to scoring.",
-      "statline": "One of Ligue 1's top scorers; Canada's most prolific striker"
+      "narrative": "Playing a World Cup on home soil should be the moment that Davies' career has been building toward. But the hamstring concern has introduced a question that no Canadian fan wants to ask: how fit is he? At full health, his pace is devastating. At 80%, he remains Canada's best player but a different tactical proposition. The biggest decision of Canada's World Cup may be how Marsch manages Davies' minutes — push him too hard and risk a breakdown, hold him back and lose the explosive quality that makes Canada dangerous.",
+      "statline": "Canada's $87.5M talisman; hamstring recovery ongoing, fitness being managed"
     },
     {
       "name": "Omar Marmoush",
       "teamCode": "EGY",
-      "narrative": "The rising star who has emerged as Salah's most dangerous supporting act. Marmoush's pace, directness, and willingness to run at defenders give Egypt a second genuine attacking threat that prevents opponents from double-marking Salah. His European club form has been excellent, and his ability to play across the forward line provides Hossam Hassan with tactical flexibility in how he deploys his attacking talent.",
-      "statline": "Egypt's rising attacking star; key contributor alongside Salah in qualifying"
+      "narrative": "The rising star who has emerged as Salah's most dangerous supporting act. Against a Canadian defense reorganized after Bombito's injury, Marmoush's pace and directness become even more dangerous. His ability to exploit defensive uncertainty — new partnerships, unfamiliar communication — makes him the secondary threat that could cause as much damage as Salah himself.",
+      "statline": "Egypt's explosive secondary attacking threat alongside Salah"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Canada 2-1 Egypt",
-    "confidence": 48,
-    "narrative": "This is one of the most genuinely unpredictable matches in the group stage, and the low confidence reflects the razor-thin margins between these two sides. Canada's home advantage is the tipping point -- the energy of a Canadian crowd willing their team forward will create an atmosphere that Egypt's players have never experienced at this level.\n\nDavies will produce a moment of devastating pace that creates Canada's opening goal. Salah will equalize with the clinical precision that has defined his career -- a cut inside, a curling left-footed shot, the net rippling before anyone can react. And then, in the final 20 minutes, with the crowd urging them forward, Canada will find a winner through David's intelligent movement.\n\nBut flip the script: Salah in inspired form can single-handedly win this match. If Egypt defend their lead, their qualifying record (2 goals conceded in 10 matches) suggests they know how to protect an advantage. This match could genuinely go either way.",
+    "confidence": 42,
+    "narrative": "The low confidence reflects genuine uncertainty. Canada's home advantage is significant — the energy of a Canadian crowd willing their team forward creates an atmosphere that Egypt have never experienced. But Davies' hamstring, Bombito's absence, and Salah's devastating form introduce variables that make this deeply unpredictable.\n\nDavid's Juventus form is the factor that tips the balance. His refined movement and clinical finishing give Canada a goal-scoring threat that does not depend on Davies' fitness. Even if Davies starts at 80%, David can carry the attacking burden.\n\nSalah will equalize with the clinical precision that has defined his career — the cut inside, the curling left-footed shot. But in the final 20 minutes, with Buchanan providing fresh legs and width from the bench, Canada will find a winner through David's intelligence.\n\nFlip the script: Salah in inspired form, against a defense missing Bombito, could single-handedly win this match. The margin is razor-thin.",
     "alternativeScenarios": [
       {
-        "scenario": "Egypt 1-0 Canada",
-        "probability": 22,
-        "reasoning": "Salah produces a moment of genius that silences the Canadian crowd. Egypt's defensive discipline, refined across 10 virtually flawless qualifying matches, holds firm against Canada's pressing. A famous Egyptian victory that reshapes Group A."
+        "scenario": "Egypt 2-1 Canada",
+        "probability": 25,
+        "reasoning": "Salah exploits Bombito's absence, scoring twice against an unfamiliar defensive pairing. Davies' hamstring limits Canada's counter-attacking threat, and Egypt's defensive discipline holds firm."
       },
       {
         "scenario": "Canada 1-1 Egypt",
         "probability": 22,
-        "reasoning": "Neither side can find a winner in a match where defensive quality matches attacking intent. Davies and Salah both produce moments of brilliance, but the opposing defenses hold firm. A fair result that keeps both teams in the group stage mix."
+        "reasoning": "Davies starts but cannot complete the match. David scores but Egypt equalize through Salah. A fair result that reflects the genuine equality between these sides."
       }
     ]
   },
 
-  "closingLine": "Davies was born in a refugee camp and became a Real Madrid star. Salah grew up in a small Egyptian village and became a Liverpool legend. When they share the pitch for the first time, football's power to transform lives will never be more visible."
+  "closingLine": "Davies was born in a refugee camp. Salah grew up in a small Egyptian village. When they share the pitch for the first time — Davies' hamstring and all — football's power to transform lives will never be more visible. David's Juventus brilliance may be what decides the contest."
 }

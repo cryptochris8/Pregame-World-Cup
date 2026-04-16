@@ -4,77 +4,77 @@
   "team2Code": "IRN",
   "team1Name": "Australia",
   "team2Name": "Iran",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
-  "headline": "AFC Rivalry Renewed: The Socceroos Face Team Melli on the World Stage",
-  "subheadline": "Two of Asia's strongest football nations bring their continental rivalry to the World Cup, with Taremi's clinical finishing against Australian grit",
+  "headline": "AFC Rivalry Renewed: Popovic's Transformed Socceroos Face Team Melli",
+  "subheadline": "Australia's tactical revolution under Popovic and a fully fit squad clash with Taremi's clinical finishing in Asia's heavyweight bout",
 
-  "openingNarrative": "Since Australia joined the Asian Football Confederation in 2006, their matches against Iran have carried the weight of a continental superpower rivalry. These are the AFC's heavyweight bouts — two proud footballing nations who have competed fiercely for Asian supremacy in World Cup qualifying, Asian Cup knockout rounds, and international friendlies that feel anything but friendly.\n\nAustralia arrive fresh from their 2022 World Cup Round of 16 appearance, their best result since 2006. That campaign — built on the defensive intelligence of Graham Arnold's system and the collective spirit that has always defined the Socceroos — proved Australia can compete against the world's best. Their qualifying numbers back the confidence: 5 wins, 4 draws, 1 loss in AFC Third Round Group C, 19 points, 4 clean sheets, and Kusini Yengi's 6 qualifying goals providing the attacking edge.\n\nIran, under their coaching staff, represent Asia's most consistently competitive World Cup participant. This is their sixth World Cup appearance — a remarkable record for an Asian nation — and their qualifying campaign was dominant: 7 wins, 2 draws, 1 loss in AFC Third Round Group A, 23 points as group winners. Mehdi Taremi, the Inter Milan striker, was devastating with 10 qualifying goals, establishing himself as one of the tournament's most potent forwards. Iran's only loss was 0-1 to Uzbekistan.\n\nThe squad value gap ($82.3M for Iran vs $79.3M for Australia) is negligible — this is as close to an even matchup as the World Cup produces. What separates these teams is style: Australia's collective discipline against Iran's individual attacking quality, spearheaded by Taremi's world-class finishing.",
+  "openingNarrative": "Since Australia joined the Asian Football Confederation in 2006, their matches against Iran have carried the weight of a continental superpower rivalry. These are the AFC's heavyweight bouts — two proud footballing nations who have competed fiercely for Asian supremacy across World Cup qualifying cycles, Asian Cup knockout rounds, and international windows that feel like anything but friendlies.\n\nAustralia arrive at this World Cup as a team reborn. Tony Popovic's appointment has catalyzed a tactical revolution that has produced immediate results: a 1-0 win over Cameroon built on defensive discipline, followed by a breathtaking 5-1 demolition of Curacao that announced a new attacking identity. Popovic's 3-4-2-1 system is a departure from everything the Socceroos have been — more fluid, more creative, more dangerous. Every player in the squad is fully fit, and the emergence of Nestory Irankunda — a teenager whose pace terrifies defenders — has given Australia a weapon they have never possessed at this level.\n\nIran, under their coaching staff, represent Asia's most consistently competitive World Cup participant. This is their sixth World Cup appearance — a remarkable record for an Asian nation — and their qualifying campaign was dominant: 7 wins, 2 draws, 1 loss in AFC Third Round Group A, 23 points as group winners. Mehdi Taremi, the Inter Milan striker, was devastating with 10 qualifying goals, establishing himself as one of the tournament's most potent forwards.\n\nThe squad value gap ($82.3M for Iran vs $79.3M for Australia) is negligible — this is as close to an even matchup as the World Cup produces. But Australia's tactical transformation under Popovic may have shifted the calculus in ways the raw numbers cannot capture.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a match built on mutual respect and tactical caution. Both teams know each other's strengths from years of AFC competition, and neither will take unnecessary risks early in the match.\n\nAustralia's 4-3-3 emphasizes pressing, defensive organization, and controlled build-up play. Jackson Irvine's midfield leadership provides the structure, while the wide forwards look to create overloads and deliver crosses for Yengi's aerial ability.\n\nIran's system revolves around getting the ball to Taremi in dangerous positions. The Inter Milan striker's movement, hold-up play, and finishing give Iran a genuine goal-scoring threat that few AFC opponents can match. The question is whether Australia's center-backs can handle Taremi's physicality and intelligence. Iran's wide players look to create crossing situations for Taremi's aerial prowess.\n\nThe key battle is Australia's defensive organization against Taremi's movement. If Australia can keep the Iranian striker quiet, they have the collective quality to edge the match. If Taremi finds space, his 10 qualifying goals suggest he will not waste it.",
-    "team1Formation": "4-3-3",
+    "narrative": "The fascination of this match lies in Popovic's 3-4-2-1 against Iran's deep-lying defensive structure. Australia's new system creates overloads in wide areas through attacking wing-backs, while the two players behind the striker occupy the half-spaces that Iran's double pivot must protect. The 5-1 win over Curacao showed how fluid and dangerous this system can be when firing on all cylinders.\n\nIran's system revolves around getting the ball to Taremi in dangerous positions. The Inter Milan striker's movement, hold-up play, and finishing give Iran a genuine goal-scoring threat that few AFC opponents can match. Against Australia's three center-backs, Iran may find the extra defensive body makes it harder to isolate Taremi in the one-on-one situations he thrives in.\n\nThe key battle is Irankunda's emergence against Iran's defensive discipline. The teenager's directness adds a dimension Australia have never had — genuine pace and willingness to take on defenders in wide positions. But Iran are experienced enough to adapt, and their pragmatic tournament approach means they will not be drawn into an open game that suits Australia's new style.\n\nAustralia's full fitness is a significant advantage. Every player available, every tactical option open — Popovic can select his strongest XI and rotate without compromise.",
+    "team1Formation": "3-4-2-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Harry Souttar vs Mehdi Taremi — Australia's towering center-back against Inter Milan's clinical striker"
+    "keyMatchup": "Harry Souttar vs Mehdi Taremi — Australia's towering center-back against Inter Milan's clinical striker, with Popovic's three-man defense providing extra cover"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Australia (ELO: 1622, rank 30) vs Iran (ELO: 1628, rank 29) — virtually identical ELO ratings that confirm this as one of the most evenly matched fixtures at the tournament. The 6-point gap is statistically insignificant.",
-    "formAnalysis": "Australia: 5 wins, 4 draws, 1 loss in AFC qualifying — 19 points, +9 goal difference, Yengi scored 6. Iran: 7 wins, 2 draws, 1 loss — 23 points, +11 goal difference, Taremi scored 10. Iran's qualifying numbers are superior, particularly Taremi's extraordinary goal record.",
-    "squadValueComparison": "Iran ($82.3M) vs Australia ($79.3M) — almost identical squad values. Taremi ($10M) is Iran's most expensive player, while Souttar ($12.5M) leads Australia's valuations. This is a genuine battle of equals.",
-    "injuryImpact": "Both teams rely heavily on key individuals. Taremi's fitness is critical for Iran — without his 10-goal qualifying form, their attacking threat diminishes significantly. Australia need Irvine's leadership and organizational presence in midfield.",
-    "bettingPerspective": "This match should be priced as close to a pick'em as any at the tournament. The draw is a genuine possibility and may represent the best value bet. Both teams are evenly matched and cautious against familiar opponents.",
-    "historicalPattern": "AFC rivals since 2006. Both are experienced World Cup participants. Australia reached the 2022 Round of 16; Iran have qualified for their sixth World Cup. Their head-to-head in recent years has been tight and competitive."
+    "eloAnalysis": "Australia (ELO: 1622, rank 30) vs Iran (ELO: 1628, rank 29) — virtually identical ELO ratings that confirm this as one of the most evenly matched fixtures at the tournament. Australia's March form may have shifted the true balance.",
+    "formAnalysis": "Australia are flying: beat Cameroon 1-0 and Curacao 5-1 in March under Popovic, all players fit. Qualified with 5 wins, 4 draws, 1 loss — 19 points, Yengi scored 6. Iran qualified dominantly: 7 wins, 2 draws, 1 loss — 23 points, Taremi scored 10. Iran's qualifying numbers are superior, but Australia's March transformation adds context.",
+    "squadValueComparison": "Iran ($82.3M) vs Australia ($79.3M) — almost identical squad values. Taremi ($10M) is Iran's most expensive player, while Souttar ($12.5M) leads Australia's valuations. This is a genuine battle of equals on paper, though Australia's tactical evolution may have created an edge that market valuations cannot measure.",
+    "injuryImpact": "Australia's clean bill of health is a major advantage — every player fully fit, giving Popovic maximum tactical flexibility. Iran's reliance on Taremi's fitness is their primary concern. Without his 10-goal qualifying form, their attacking threat diminishes significantly.",
+    "bettingPerspective": "Australia's March results under Popovic have shortened their odds, while the match remains close to a pick'em. The draw is a genuine possibility against two well-organized sides, but Australia's improved attacking output may make them marginal favorites.",
+    "historicalPattern": "AFC rivals since 2006. Both are experienced World Cup participants. Australia's tactical transformation under Popovic and full fitness give them a confidence advantage heading into this fixture."
   },
 
   "playerSpotlights": [
     {
       "name": "Mehdi Taremi",
       "teamCode": "IRN",
-      "narrative": "Inter Milan's striker was the most prolific scorer in AFC qualifying with 10 goals in 10 matches — a record that demands attention and respect. Taremi's combination of aerial prowess, intelligent movement, and clinical finishing makes him one of the most dangerous strikers at the entire World Cup. His experience in Serie A and the Champions League means the World Cup stage will not overwhelm him. Against Australia's defense, one moment of Taremi brilliance could decide the match.",
+      "narrative": "Inter Milan's striker was the most prolific scorer in AFC qualifying with 10 goals in 10 matches — a record that demands attention and respect. Taremi's combination of aerial prowess, intelligent movement, and clinical finishing makes him one of the most dangerous strikers at the entire World Cup. Against Australia's three center-backs in Popovic's system, he faces a different challenge than usual — the extra defender means fewer one-on-one opportunities, but Taremi's intelligence means he will find ways to create space.",
       "statline": "10 goals in 10 AFC qualifying matches, Inter Milan's experienced striker"
+    },
+    {
+      "name": "Nestory Irankunda",
+      "teamCode": "AUS",
+      "narrative": "The teenager whose emergence has electrified Australian football. Irankunda's blistering pace and directness have given Popovic's 3-4-2-1 an attacking edge that Australia have never possessed. His performances in the March friendlies — fearless, dynamic, always looking to attack — suggest a player who is ready for the World Cup stage despite his age. Against Iran's experienced but aging fullbacks, Irankunda's speed could be devastating.",
+      "statline": "Australia's emerging teenage sensation, explosive pace and directness"
     },
     {
       "name": "Jackson Irvine",
       "teamCode": "AUS",
-      "narrative": "Australia's captain is the heartbeat of the Socceroos' collective spirit. Irvine's organizational skills, his ability to read the game, and his tireless running make him indispensable. In a match against Iran — an opponent he has faced multiple times in AFC competition — his experience and knowledge of the opposition's patterns will be crucial. He knows Taremi's runs, he knows Iran's set-piece routines, and he will organize Australia's response.",
-      "statline": "Australia's captain, Bundesliga experience, and tactical leader"
-    },
-    {
-      "name": "Kusini Yengi",
-      "teamCode": "AUS",
-      "narrative": "The striker who led Australia's qualifying campaign with 6 goals will need to match Taremi's output if Australia are to prevail. Yengi's physical presence gives Australia an aerial outlet and a focal point for their attacks. Against Iran's defense, his ability to hold the ball up and bring midfield runners into play will be as important as his goal-scoring.",
-      "statline": "6 goals in AFC qualifying, Australia's leading scorer"
+      "narrative": "Australia's captain has adapted seamlessly to Popovic's new system, providing the midfield anchor that allows the attacking players to express themselves. Irvine's organizational skills, his ability to read the game, and his tireless running make him indispensable. In a match against Iran — an opponent he has faced multiple times in AFC competition — his experience and knowledge of the opposition's patterns will be crucial.",
+      "statline": "Australia's captain, Bundesliga experience, tactical leader in Popovic's new system"
     },
     {
       "name": "Harry Souttar",
       "teamCode": "AUS",
-      "narrative": "The towering center-back is Australia's most valuable player and the man tasked with keeping Taremi quiet. Souttar's aerial dominance, his ability to defend crosses, and his composure on the ball make him the ideal defender for this assignment. But Taremi is no ordinary striker — his movement and intelligence test even the best center-backs in Serie A weekly.",
-      "statline": "Australia's most valuable player ($12.5M), towering center-back"
+      "narrative": "The towering center-back is Australia's most valuable player and the man tasked with keeping Taremi quiet. In Popovic's three-man defense, Souttar has additional support, allowing him to be more aggressive in his duels with Taremi. His aerial dominance, his ability to defend crosses, and his composure on the ball make him well-suited to the assignment — but Taremi is no ordinary striker.",
+      "statline": "Australia's most valuable player ($12.5M), key to Popovic's three-man defense"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Australia 1-1 Iran",
-    "confidence": 48,
-    "narrative": "This is one of the most genuinely unpredictable matches at the 2026 World Cup. Two evenly matched teams, virtually identical ELO ratings, similar squad values, and years of mutual tactical knowledge create a fixture that defies confident prediction.\n\nExpect a cautious, tactical match where both teams prioritize not losing over trying to win. The first goal will be crucial — but finding it may prove extraordinarily difficult against two well-organized defenses. A draw, with both teams scoring once, feels like the most honest prediction.\n\nTaremi will test Souttar, Yengi will test Iran's defense, and the midfield battle between Irvine and Iran's engine room will determine who has more of the ball. When two AFC heavyweights collide, the margins are razor-thin.",
+    "confidence": 45,
+    "narrative": "Despite Australia's tactical transformation and full fitness, Iran's tournament experience and Taremi's world-class quality make this a match that resists confident prediction. The 3-4-2-1 system gives Australia new attacking options — Irankunda's pace, wing-back overloads, fluid positional play — but Iran are experienced enough to adapt and contain.\n\nExpect a cautious, tactical match where both teams prioritize defensive organization. Australia's new system will create chances — the 5-1 over Curacao proved its attacking potential — but Iran's pragmatic approach and Taremi's clinical finishing ensure they will punish any defensive lapses.\n\nThe draw feels like the most honest prediction. Taremi will test Souttar, Irankunda will test Iran's fullbacks, and the midfield battle between Irvine and Iran's engine room will determine who has more of the ball. When two AFC heavyweights collide, the margins remain razor-thin — even when one of them has undergone a tactical revolution.",
     "alternativeScenarios": [
       {
-        "scenario": "Iran 2-1 Australia",
+        "scenario": "Australia 2-1 Iran",
         "probability": 22,
-        "reasoning": "Taremi's world-class finishing proves the difference. Two goals from Iran's talisman — one from a header, one from a counter — give Iran a lead that Australia's late push cannot fully overcome."
+        "reasoning": "Popovic's system proves its superiority. Irankunda's pace creates a goal, Yengi adds a second, and Australia's three-man defense contains Taremi. The tactical transformation delivers its first World Cup dividend."
       },
       {
-        "scenario": "Australia 2-0 Iran",
-        "probability": 15,
-        "reasoning": "Australia's 2022 World Cup experience gives them a composure advantage. Two set-piece goals — Souttar heading in from corners — seal a victory that announces the Socceroos as Group D contenders."
+        "scenario": "Iran 2-1 Australia",
+        "probability": 18,
+        "reasoning": "Taremi's world-class finishing proves the difference. Two goals from Iran's talisman expose the gaps that Australia's new system has not yet fully ironed out. Experience trumps evolution."
       }
     ]
   },
 
-  "closingLine": "When Asia's two strongest World Cup performers meet in North America, the continental rivalry takes on a global audience. Australia and Iran have traded blows for two decades. This chapter will be no less compelling."
+  "closingLine": "When Asia's two strongest World Cup performers meet, the continental rivalry takes on a global audience. But this time, Australia arrive transformed — Popovic's tactical revolution, full fitness, and Irankunda's emergence make this a different kind of Socceroo team. Iran will need all of Taremi's brilliance to match them."
 }

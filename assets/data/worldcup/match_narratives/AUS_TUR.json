@@ -4,77 +4,77 @@
   "team2Code": "TUR",
   "team1Name": "Australia",
   "team2Name": "Turkey",
-  "generatedAt": "2026-04-09T00:00:00Z",
-  "dataVersion": 1,
+  "generatedAt": "2026-04-16T00:00:00Z",
+  "dataVersion": 2,
 
   "headline": "The Gallipoli Connection: A Bond Beyond Football Shapes This World Cup Encounter",
-  "subheadline": "History's shadow falls on a Group D match where Turkey's Arda Guler faces Australia's collective spirit",
+  "subheadline": "History's shadow falls on a Group D match where Turkey's Arda Guler faces Popovic's transformed Socceroos and their teenage weapon Irankunda",
 
-  "openingNarrative": "Some football matches carry a weight that transcends the sport itself. When Australia face Turkey at the 2026 World Cup, the Battle of Gallipoli — the 1915 campaign that forged a bond of mutual respect between these two nations — will be present in every handshake, every anthem, every moment of shared history that connects the Anzac spirit with the Turkish defenders of the Dardanelles.\n\nBut this is also a football match with enormous consequences. In Group D, alongside the co-host United States, both Australia and Turkey harbor serious ambitions of advancing to the knockout rounds. Turkey's return to the World Cup after missing the 2022 tournament represents a redemption story built on the foundation of their impressive Euro 2024 campaign, where young talents like Arda Guler — Real Madrid's Turkish prodigy — electrified audiences.\n\nTurkey qualified through UEFA with 4 wins, 1 draw, 1 loss in their qualifying group (finishing second behind Spain), then won their playoff path. Kenan Yildiz scored 4 qualifying goals, and the squad value of $483.7M reflects the concentration of talent at Europe's elite clubs. Hakan Calhanoglu's Inter Milan midfield mastery and Guler's creative genius give Turkey weapons that few teams can match.\n\nAustralia counter with their trademark collective spirit. The 2022 Round of 16 run proved the Socceroos can compete against Europe's best, and their AFC qualifying campaign — 19 points from 10 matches, Yengi's 6 goals — demonstrated continued improvement. The squad value gap ($79.3M vs $483.7M) is significant, but the Socceroos have built a career from confounding financial odds.",
+  "openingNarrative": "Some football matches carry a weight that transcends the sport itself. When Australia face Turkey at the 2026 World Cup, the Battle of Gallipoli — the 1915 campaign that forged a bond of mutual respect between these two nations — will be present in every handshake, every anthem, every moment of shared history that connects the Anzac spirit with the Turkish defenders of the Dardanelles.\n\nBut this is also a football match with enormous consequences. In Group D, alongside the co-host United States, both Australia and Turkey harbor serious ambitions of advancing to the knockout rounds — and both arrive in genuinely excellent form.\n\nTurkey's return to the World Cup after missing 2022 represents a redemption story built on the foundation of their impressive Euro 2024 campaign, where Arda Guler electrified audiences. Their squad value of $483.7M reflects elite talent across Europe's top leagues.\n\nAustralia, however, are no longer the plucky underdogs content to compete on spirit alone. Tony Popovic's tactical revolution has produced a 3-4-2-1 system that yielded a 1-0 win over Cameroon and a stunning 5-1 demolition of Curacao in March. Every player is fully fit. And the emergence of Nestory Irankunda — a teenager whose blistering pace has drawn headlines across the football world — has given the Socceroos an attacking weapon they have never possessed. The 5-1 win was not a fluke; it was a statement of intent from a team that has fundamentally changed its identity.\n\nTurkey will still be favorites — Guler's genius, Calhanoglu's mastery, and Yildiz's finishing give them a squad that would trouble anyone. But they now face a very different Australia than the one most pundits expected.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Turkey's 4-2-3-1 is built to unleash Arda Guler's creativity. The Real Madrid youngster operates behind the striker with the freedom to roam, find pockets of space, and deliver the kind of passes that only the most gifted playmakers can envision. Calhanoglu provides the defensive shield and world-class set-piece delivery from deep, while the full-backs push high to create width.\n\nAustralia's response will be their characteristic high-energy 4-3-3, pressing Turkey's build-up and making the match as physically demanding as possible. The Socceroos know they cannot match Turkey's technical quality, so they will try to outwork and outfight them. Jackson Irvine's midfield organization will be crucial in limiting Guler's space.\n\nThe key tactical question is whether Australia can sustain their pressing intensity for 90 minutes against Turkey's superior technical quality. If they tire, Guler and Calhanoglu will exploit the spaces that open up. If Australia maintain their energy, they can make this deeply uncomfortable for Turkey.",
-    "team1Formation": "4-3-3",
+    "narrative": "Turkey's 4-2-3-1 is built to unleash Arda Guler's creativity. The Real Madrid youngster operates behind the striker with the freedom to roam and deliver passes that only the most gifted playmakers can envision. Calhanoglu provides the defensive shield and world-class set-piece delivery from deep, while the full-backs push high to create width.\n\nPopovic's 3-4-2-1 creates an interesting tactical puzzle for Turkey. The three center-backs give Australia extra defensive security against Guler's creativity, while the wing-backs provide width that Turkey's 4-2-3-1 must account for. The two number tens in Australia's system — operating between Turkey's midfield and defensive lines — create overloads in the zones where Guler himself likes to receive the ball.\n\nThe emergence of Irankunda adds a dimension that Turkey's scouting dossier may not have fully accounted for. His pace on the wing, combined with Popovic's tactical structure, creates a genuine two-way threat that prevents Turkey from committing numbers forward as freely as they would like.\n\nThe key tactical question is whether Australia can sustain their system's intensity for 90 minutes against Turkey's superior technical quality. If they tire, Guler and Calhanoglu will exploit the spaces. If Popovic's system holds, Australia's tactical evolution makes this far more competitive than the squad value gap suggests.",
+    "team1Formation": "3-4-2-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Australia's collective pressing vs Arda Guler's individual genius — industry against artistry"
+    "keyMatchup": "Australia's 3-4-2-1 system vs Arda Guler's individual genius — Popovic's tactical innovation against Turkey's creative brilliance"
   },
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Turkey (ELO: 1668, rank 21) vs Australia (ELO: 1622, rank 30) — a 46-point gap that gives Turkey a slight but not decisive advantage. Turkey's Euro 2024 experience and squad quality suggest their ELO may understate their true level.",
-    "formAnalysis": "Turkey: 4 wins, 1 draw, 1 loss in UEFA qualifying — scoring 17 and conceding 12 with Yildiz scoring 4. Their only loss was 0-3 to Spain. Biggest win: 5-1 vs Bulgaria. Australia: 5 wins, 4 draws, 1 loss in AFC — 19 points, Yengi scored 6. Turkey's qualifying was in a tougher confederation but showed defensive vulnerabilities (12 goals conceded in 6 matches).",
-    "squadValueComparison": "Turkey ($483.7M) vs Australia ($79.3M) — a 6:1 ratio that represents one of the larger financial gaps in the group stage. Arda Guler's market value alone dwarfs much of Australia's squad. But the Socceroos have repeatedly shown that value is not determined by market price.",
-    "injuryImpact": "Turkey's depth means they can absorb individual absences, but losing Guler or Calhanoglu would fundamentally alter their tactical approach. Australia's thin squad makes any injury devastating.",
-    "bettingPerspective": "Turkey will be slight favorites based on their UEFA pedigree and individual talent. Australia's 2022 World Cup experience gives them credibility as potential giant-killers. This could go either way.",
-    "historicalPattern": "Limited competitive history between these nations on the football field. Turkey finished third at the 2002 World Cup, their finest hour. Australia's best World Cup runs were the 2006 and 2022 Round of 16 appearances. The Gallipoli connection adds emotional resonance."
+    "eloAnalysis": "Turkey (ELO: 1668, rank 21) vs Australia (ELO: 1622, rank 30) — a 46-point gap that gives Turkey a slight advantage. But Australia's March form under Popovic suggests the effective gap has narrowed significantly.",
+    "formAnalysis": "Australia are in outstanding March form: beat Cameroon 1-0 and Curacao 5-1 under Popovic's new system, all players fully fit. Turkey qualified with 4 wins, 1 draw, 1 loss in UEFA — scoring 17 and conceding 12 with Yildiz scoring 4. Turkey's only loss was 0-3 to Spain. Both teams arrive with genuine confidence.",
+    "squadValueComparison": "Turkey ($483.7M) vs Australia ($79.3M) — a 6:1 ratio that represents one of the larger financial gaps. But Australia's 5-1 win over Curacao proved that Popovic's tactical system can produce results that exceed the sum of individual parts.",
+    "injuryImpact": "Australia's fully fit squad is a significant advantage — Popovic has every tactical option available. Turkey's depth means they can absorb individual absences, but losing Guler or Calhanoglu would fundamentally alter their approach.",
+    "bettingPerspective": "Turkey will be favorites based on their UEFA pedigree and individual talent. But Australia's March form under Popovic, full fitness, and Irankunda's emergence have shortened the odds. This is no longer viewed as a formality for Turkey.",
+    "historicalPattern": "Limited competitive history. Turkey finished third at the 2002 World Cup. Australia's best runs were the 2006 and 2022 Round of 16. The Gallipoli connection adds emotional resonance that transcends football."
   },
 
   "playerSpotlights": [
     {
       "name": "Arda Guler",
       "teamCode": "TUR",
-      "narrative": "Real Madrid's Turkish prodigy electrified Euro 2024 as a teenager, announcing himself to the world with performances that combined technical brilliance with a maturity beyond his years. Guler's ability to create chances from nothing — a dribble past two defenders, a through-ball that splits a defense — makes him the player Australia's midfield must track constantly. At the World Cup, on the biggest stage of all, Guler has the chance to cement his status as one of football's next superstars.",
+      "narrative": "Real Madrid's Turkish prodigy electrified Euro 2024 as a teenager, announcing himself with performances that combined technical brilliance with maturity beyond his years. Guler's ability to create chances from nothing makes him the player Australia's defense must track constantly. Against Popovic's three-man defense, Guler may find less space between the lines than he typically exploits — but his talent is the kind that finds solutions to any tactical puzzle.",
       "statline": "Real Madrid's youngest La Liga goalscorer, Euro 2024 breakout star"
     },
     {
-      "name": "Jackson Irvine",
+      "name": "Nestory Irankunda",
       "teamCode": "AUS",
-      "narrative": "The Socceroos' captain knows that his team's chances depend on limiting Turkey's creative outlets. Irvine's tactical intelligence and organizational skills will be crucial in the battle to deny Guler space. His experience in the Bundesliga, competing against the best midfielders in Germany week after week, has prepared him for exactly this kind of assignment.",
-      "statline": "Australia's captain, Bundesliga-experienced midfielder and tactical organizer"
+      "narrative": "The teenager who has transformed Australia's World Cup prospects. Irankunda's emergence in Popovic's 3-4-2-1 gives the Socceroos a genuine counter-attacking weapon against Turkey's high line — something previous Australian sides never possessed. His pace is devastating, his directness is fearless, and his willingness to take on experienced defenders speaks to a confidence that belies his age. In a match where Australia will have less of the ball, Irankunda's ability to convert transitions into chances becomes crucial.",
+      "statline": "Australia's emerging teenage sensation, pace and directness that could trouble Turkey's defense"
     },
     {
       "name": "Hakan Calhanoglu",
       "teamCode": "TUR",
-      "narrative": "Inter Milan's midfield metronome provides the foundation upon which Turkey's attacking play is built. Calhanoglu's passing range, his ability to dictate tempo from deep, and his world-class set-piece delivery make him the most complete midfielder on the pitch. Against Australia's physical pressing, his composure under pressure will be tested — but this is a player who has thrived in Serie A's tactical intensity for years.",
+      "narrative": "Inter Milan's midfield metronome provides the foundation upon which Turkey's attacking play is built. Calhanoglu's passing range, his ability to dictate tempo from deep, and his world-class set-piece delivery make him the most complete midfielder on the pitch. Against Popovic's system, his ability to find Guler between the lines will be the key creative channel.",
       "statline": "Inter Milan's midfield conductor, world-class set-piece specialist"
     },
     {
-      "name": "Kusini Yengi",
+      "name": "Jackson Irvine",
       "teamCode": "AUS",
-      "narrative": "Australia's qualifying top scorer with 6 goals, Yengi provides the aerial threat and physical presence that the Socceroos' system requires. Against Turkey's defense, his ability to compete in aerial duels and create chances from set pieces could be Australia's primary route to goal. In a match where Australia will have less of the ball, Yengi's efficiency in front of goal becomes paramount.",
-      "statline": "6 goals in AFC qualifying, Australia's aerial threat"
+      "narrative": "Australia's captain faces the assignment of a lifetime: organizing Popovic's system against Turkey's extraordinary creative talent. Irvine's tactical intelligence and organizational skills have never been more important — he must ensure the three-man defense communicates, the wing-backs track back, and the pressing triggers are activated at the right moments. Under Popovic, Irvine has been given new responsibilities, and his adaptation to the 3-4-2-1 has been seamless.",
+      "statline": "Australia's captain, tactical leader, the organizer of Popovic's system"
     }
   ],
 
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Turkey 2-1 Australia",
-    "confidence": 55,
-    "narrative": "Turkey's individual quality, particularly through Guler and Calhanoglu, gives them an edge that Australia will find difficult to negate over 90 minutes. The financial gap is real, the technical gap is real, and Turkey's Euro 2024 experience means they are accustomed to performing on the biggest stage.\n\nBut Australia will make this incredibly competitive. Their pressing will disrupt Turkey's rhythm for long stretches, and the Socceroos' never-say-die attitude means they will fight until the final whistle. A set-piece goal — Souttar heading in from a corner — will give Australia hope, but Guler's moment of magic and Calhanoglu's dead-ball delivery will ultimately tilt the match in Turkey's favor.\n\nThe handshake at the end will be warm, genuine, and laden with a respect that runs deeper than football.",
+    "confidence": 52,
+    "narrative": "Turkey's individual quality, particularly through Guler and Calhanoglu, gives them an edge — but a narrower one than before Popovic's revolution. The Socceroos' tactical transformation, full fitness, and Irankunda's emergence have turned what might have been a comfortable Turkish victory into a genuine contest.\n\nPopovic's 3-4-2-1 will cause Turkey problems they did not expect. The extra center-back limits Guler's space between the lines, while the wing-backs create overloads that Turkey's fullbacks must deal with. But over 90 minutes, Guler's genius and Calhanoglu's delivery will find the moments that decide the match.\n\nExpect Australia to compete fiercely for 70 minutes, with Irankunda causing genuine concern down Turkey's left. A set-piece goal gives Australia hope. But Guler produces a moment of individual brilliance — a dribble past two defenders, a curling shot into the far corner — that tilts the match. Turkey add a second from a Calhanoglu free kick, and Australia's late push produces a consolation through Yengi.\n\nThe handshake at the end will be warm, genuine, and laden with a respect that runs deeper than football.",
     "alternativeScenarios": [
       {
         "scenario": "Australia 1-0 Turkey",
-        "probability": 18,
-        "reasoning": "Australia's pressing intensity overwhelms Turkey early, and a first-half goal from Yengi gives the Socceroos a lead they defend with their lives. Turkey's possession dominance cannot find a way through Australia's organized block. A famous Australian victory."
+        "probability": 20,
+        "reasoning": "Popovic's system proves its worth against elite opposition. Australia's three-man defense stifles Guler, Irankunda scores on the counter, and the Socceroos produce the upset of the group stage. A famous Australian victory built on tactical evolution."
       },
       {
         "scenario": "Turkey 3-0 Australia",
-        "probability": 12,
-        "reasoning": "Guler produces a masterclass, Turkey's superior quality clicks from the start, and Australia are overwhelmed. The technical gap proves too large on the day."
+        "probability": 10,
+        "reasoning": "Guler produces a masterclass that overwhelms even Popovic's tactical innovations. The quality gap proves too large, and Australia learn that tactical systems alone cannot close a 6:1 squad value disparity."
       }
     ]
   },
 
-  "closingLine": "At Gallipoli in 1915, Australia and Turkey forged a bond of mutual respect that has endured for over a century. On the football pitch in 2026, that respect will endure even as both teams fight for everything."
+  "closingLine": "At Gallipoli in 1915, Australia and Turkey forged a bond of mutual respect that has endured for over a century. On the football pitch in 2026, that respect will endure even as Popovic's Socceroos — transformed, fully fit, and armed with Irankunda — push Turkey harder than anyone expected."
 }
