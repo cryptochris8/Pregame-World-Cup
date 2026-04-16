@@ -99,6 +99,22 @@
           "competition": "UEFA World Cup Qualifier",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Brazil",
+          "score": "2-1",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-29",
+          "opponent": "Colombia",
+          "score": "3-1",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
         }
       ]
     },
@@ -402,6 +418,22 @@
           "competition": "International Friendly",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Mauritania",
+          "score": "2-1",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Zambia",
+          "score": "5-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
         }
       ]
     },

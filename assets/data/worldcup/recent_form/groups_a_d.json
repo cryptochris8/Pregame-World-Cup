@@ -777,6 +777,14 @@
           "competition": "International Friendly",
           "result": "D",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "France",
+          "score": "1-2",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "neutral"
         }
       ]
     },

@@ -73,14 +73,14 @@
       {
         "team": "France",
         "code": "FRA",
-        "odds_american": "+750",
-        "odds_decimal": 8.50,
-        "implied_probability_pct": 11.8,
+        "odds_american": "+550",
+        "odds_decimal": 6.50,
+        "implied_probability_pct": 15.4,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
-        "betmgm_odds": "+700",
+        "date": "2026-04-16",
+        "betmgm_odds": "+550",
         "tier": "favorite",
-        "notes": "Reached final in 4 of last 7 World Cups. Mbappe and Dembele provide elite attacking quality."
+        "notes": "Market position 2nd behind Spain. Reached final in 4 of last 7 World Cups. Mbappe fully fit, Olise emergence adds depth. Deschamps' farewell tournament."
       },
       {
         "team": "Brazil",
@@ -98,14 +98,16 @@
         "team": "Argentina",
         "code": "ARG",
         "odds_american": "+800",
+        "odds_fractional": "8/1",
         "odds_decimal": 9.00,
         "implied_probability_pct": 11.1,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "prediction_market_pct": 11.3,
         "betmgm_odds": "+800",
         "tier": "favorite",
-        "notes": "Defending World Cup champions. Won 2022 World Cup and Copa America. Messi's final World Cup."
+        "market_position": 5,
+        "notes": "Defending World Cup champions. Messi fully fit after hamstring scare. Romero cruciate tear is a concern. 5th in market behind ESP, ENG, FRA, BRA."
       },
       {
         "team": "Portugal",

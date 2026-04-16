@@ -13,35 +13,17 @@
       "country": "France",
       "club": "Real Madrid",
       "position": "Forward",
-      "injuryType": "Recurring left knee discomfort/sprain",
+      "injuryType": "Recovered from left knee sprain",
       "injuryDate": "2025-12-31",
-      "expectedReturn": "Currently playing through management",
-      "availabilityStatus": "minor_concern",
-      "lastMatchPlayed": {
-        "date": "2026-02-14",
-        "opponent": "Real Sociedad (La Liga)",
-        "notes": "Returned to team training Feb 13, declared available"
-      },
-      "source": "beIN Sports, Managing Madrid, FOX Sports, SI.com - Feb 2026",
-      "notes": "Sprained left knee Dec 2025, returned early for Supercopa final. Recurring knee discomfort being managed. Expected fit for World Cup barring setback."
-    },
-    {
-      "playerName": "Antoine Griezmann",
-      "teamCode": "FRA",
-      "country": "France",
-      "club": "Atletico Madrid",
-      "position": "Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
+      "expectedReturn": "Fully fit",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Atletico Madrid (La Liga)",
-        "notes": "Played full 90 minutes"
+        "date": "2026-03-26",
+        "opponent": "Brazil (International Friendly)",
+        "notes": "Scored 56th international goal in 2-1 win"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Age 35. Experienced campaigner, no significant injury concerns. Key creative player for France."
+      "source": "FOX Sports, World Soccer Talk - March 2026",
+      "notes": "Knee injury declared 'all gone' on March 24. One goal from France all-time record."
     },
     {
       "playerName": "Aurelien Tchouameni",
@@ -67,17 +49,17 @@
       "country": "France",
       "club": "Arsenal",
       "position": "Defender",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Left ankle injury (Carabao Cup final)",
+      "injuryDate": "2026-03-28",
+      "expectedReturn": "April 2026 - expected fit for World Cup",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Arsenal (Premier League)",
         "notes": "Full match played"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Key center-back for both Arsenal and France. No injury concerns. Consistently available."
+      "source": "ESPN, Football Fan Cast - March 2026",
+      "notes": "Left ankle injury sustained in Carabao Cup final. Expected to recover in time for World Cup."
     },
     {
       "playerName": "Mike Maignan",
@@ -400,8 +382,8 @@
         "opponent": "Santos league match (before surgery)",
         "notes": "Underwent knee surgery December 2025"
       },
-      "source": "FOX Sports, ESPN, Goal.com, official records - Feb 2026",
-      "notes": "Age 34. Underwent knee surgery Dec 2025 following previous ACL tear. Ancelotti said he must be '100%, not 80%' to make squad. Race against time."
+      "source": "Sports Illustrated - April 2026",
+      "notes": "Age 34. Underwent knee surgery Dec 2025 following previous ACL tear. Fresh disciplinary setback (Apr 5), Santos recovery plan announced (Apr 7), manager Ancelotti cautiously optimistic about progress (Apr 11), reported to be in advanced MLS talks with FC Cincinnati post-World Cup (Apr 12). Has not played for Brazil since October 2023. Ancelotti said he must be '100%, not 80%' to make squad. Race against time."
     },
     {
       "playerName": "Rodrygo",
@@ -463,17 +445,17 @@
       "country": "Argentina",
       "club": "Inter Miami (MLS)",
       "position": "Forward",
-      "injuryType": "Left hamstring muscle strain",
+      "injuryType": "Recovered from left hamstring strain",
       "injuryDate": "2026-01-15",
-      "expectedReturn": "Early March 2026 (MLS season start)",
-      "availabilityStatus": "doubt",
+      "expectedReturn": "Fully fit",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-01-15",
-        "opponent": "Barcelona SC (preseason friendly)",
-        "notes": "Scored first goal of 2026 but exited 57th minute with hamstring strain"
+        "date": "2026-03-31",
+        "opponent": "Zambia (International Friendly)",
+        "notes": "Scored 1 goal, 1 assist in 5-0 win"
       },
-      "source": "Goal.com, SI.com, Al Jazeera, official records - Feb 2026",
-      "notes": "Age 38. Said 'the most logical thing is that I won't make it' due to age but remains 'excited and motivated'. Likely final World Cup if he plays."
+      "source": "Sports Illustrated, Sports Mole - April 2026",
+      "notes": "Age 38, turning 39 mid-tournament. Fully recovered from hamstring strain. World Cup participation still his personal decision per Scaloni. Likely final World Cup."
     },
     {
       "playerName": "Emiliano Martinez",
@@ -564,6 +546,24 @@
       },
       "source": "World Soccer Talk, Goal.com - Feb 2026",
       "notes": "Ruled out of World Cup with ruptured Achilles tendon. Devastating blow for Argentina's defensive options."
+    },
+    {
+      "playerName": "Cristian Romero",
+      "teamCode": "ARG",
+      "country": "Argentina",
+      "club": "Tottenham",
+      "position": "Defender",
+      "injuryType": "Cruciate ligament tear",
+      "injuryDate": "2026-04-12",
+      "expectedReturn": "Uncertain - race against time for World Cup",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-12",
+        "opponent": "Tottenham (Premier League)",
+        "notes": "Suffered cruciate ligament tear during match"
+      },
+      "source": "Sports Mole - April 2026",
+      "notes": "Starting center-back and defensive enforcer. Cruciate ligament tear is a devastating blow. Race against time to be fit for World Cup. Major doubt for Argentina's backline."
     },
     {
       "playerName": "Cristiano Ronaldo",
