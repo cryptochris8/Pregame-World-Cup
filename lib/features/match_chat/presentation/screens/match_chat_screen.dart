@@ -369,6 +369,7 @@ class _MatchChatScreenState extends State<MatchChatScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.leaveChatQuestion),
         content: Text(l10n.canRejoinAnytime),
         actions: [

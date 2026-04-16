@@ -148,8 +148,9 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
     final isPopular = VenueRecommendationService.isPopular(widget.venue);
 
     return Scaffold(
-      backgroundColor: const Color(0xFF1E293B),
-      body: CustomScrollView(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: CustomScrollView(
         slivers: [
           _buildSliverAppBar(category),
           SliverToBoxAdapter(
@@ -168,6 +169,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
           ),
         ],
       ),
+      ),
     );
   }
 
@@ -175,7 +177,7 @@ class _VenueDetailScreenState extends State<VenueDetailScreen>
     return SliverAppBar(
       expandedHeight: 300,
       pinned: true,
-      backgroundColor: const Color(0xFF1E293B),
+      backgroundColor: AppTheme.backgroundDark,
       foregroundColor: Colors.white,
       flexibleSpace: FlexibleSpaceBar(
         background: Stack(

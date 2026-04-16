@@ -240,6 +240,7 @@ class _AdminFeatureFlagsScreenState extends State<AdminFeatureFlagsScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.createFeatureFlag),
         content: Column(
           mainAxisSize: MainAxisSize.min,

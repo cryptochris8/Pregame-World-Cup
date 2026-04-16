@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../core/services/performance_monitor.dart';
 
 /// Dialog displaying performance statistics dashboard.
@@ -20,7 +21,7 @@ class PerformanceStatsDialog extends StatelessWidget {
     final stats = PerformanceMonitor.getStats();
 
     return AlertDialog(
-      backgroundColor: const Color(0xFF1E293B),
+      backgroundColor: AppTheme.backgroundCard,
       title: Text(
         '📊 Performance Dashboard',
         style: TextStyle(color: Colors.orange[300]),

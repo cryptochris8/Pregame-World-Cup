@@ -3,6 +3,8 @@ import { useGameStore } from '../stores/useGameStore'
 import { SOCCER_CONFIG, getTotalKicks } from '../game/config'
 import { PowerMeter } from '../components/PowerMeter'
 
+const isTouchDevice = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+
 export function SoccerHUD() {
   const phase = useSoccer((s) => s.phase)
   const currentKick = useSoccer((s) => s.currentKick)
@@ -62,7 +64,9 @@ export function SoccerHUD() {
           zIndex: 50,
           textShadow: '0 2px 8px rgba(0,0,0,0.8)',
         }}>
-          Move mouse to aim | Click or Space to charge
+          {isTouchDevice
+            ? 'Drag to aim | Tap & hold to charge | Release to kick'
+            : 'Move mouse to aim | Click or Space to charge'}
         </div>
       )}
 

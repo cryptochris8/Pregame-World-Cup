@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
 
@@ -61,10 +62,19 @@ class EditProfilePhotoSection extends StatelessWidget {
                         fit: BoxFit.cover,
                       )
                     : profileImageUrl != null
-                        ? Image.network(
-                            profileImageUrl!,
+                        ? CachedNetworkImage(
+                            imageUrl: profileImageUrl!,
                             fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) =>
+                            memCacheWidth: 240,
+                            memCacheHeight: 240,
+                            placeholder: (context, url) => const Center(
+                              child: SizedBox(
+                                width: 24,
+                                height: 24,
+                                child: CircularProgressIndicator(strokeWidth: 2),
+                              ),
+                            ),
+                            errorWidget: (context, url, error) =>
                                 _buildDefaultAvatar(),
                           )
                         : _buildDefaultAvatar(),

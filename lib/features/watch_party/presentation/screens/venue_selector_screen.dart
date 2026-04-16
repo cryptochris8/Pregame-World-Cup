@@ -169,7 +169,9 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
         title: const Text('Select Venue'),
         actions: const [],
       ),
-      body: Column(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: Column(
         children: [
           // Search bar
           Padding(
@@ -216,6 +218,7 @@ class _VenueSelectorScreenState extends State<VenueSelectorScreen> {
                     : _buildListView(),
           ),
         ],
+      ),
       ),
     );
   }

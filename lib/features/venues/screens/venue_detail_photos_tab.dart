@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../config/app_theme.dart';
 import '../widgets/venue_photo_gallery.dart';
@@ -60,10 +61,20 @@ class VenueDetailPhotosTab extends StatelessWidget {
           onTap: () => _showPhotoGallery(context, index),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: Image.network(
-              venuePhotos[index],
+            child: CachedNetworkImage(
+              imageUrl: venuePhotos[index],
               fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
+              placeholder: (context, url) => Container(
+                color: Colors.grey[200],
+                child: const Center(
+                  child: SizedBox(
+                    width: 24,
+                    height: 24,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  ),
+                ),
+              ),
+              errorWidget: (context, url, error) {
                 return Container(
                   color: Colors.grey[200],
                   child: Icon(

@@ -3,6 +3,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/services/logging_service.dart';
@@ -376,6 +377,7 @@ class PaymentCheckoutService {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: const Text('Error'),
         content: Text(message),
         actions: [

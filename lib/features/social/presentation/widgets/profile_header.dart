@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../config/app_theme.dart';
@@ -57,10 +58,19 @@ class ProfileHeader extends StatelessWidget {
                     ),
                     child: ClipOval(
                       child: profile.profileImageUrl != null
-                          ? Image.network(
-                              profile.profileImageUrl!,
+                          ? CachedNetworkImage(
+                              imageUrl: profile.profileImageUrl!,
                               fit: BoxFit.cover,
-                              errorBuilder: (context, error, stackTrace) =>
+                              memCacheWidth: 160,
+                              memCacheHeight: 160,
+                              placeholder: (context, url) => const Center(
+                                child: SizedBox(
+                                  width: 24,
+                                  height: 24,
+                                  child: CircularProgressIndicator(strokeWidth: 2),
+                                ),
+                              ),
+                              errorWidget: (context, url, error) =>
                                   _buildDefaultAvatar(),
                             )
                           : _buildDefaultAvatar(),

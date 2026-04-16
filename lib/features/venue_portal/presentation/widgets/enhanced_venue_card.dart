@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../domain/entities/entities.dart';
 
@@ -56,10 +57,17 @@ class EnhancedVenueCard extends StatelessWidget {
                   width: double.infinity,
                   color: colorScheme.surfaceContainerHighest,
                   child: photoUrl != null
-                      ? Image.network(
-                          photoUrl!,
+                      ? CachedNetworkImage(
+                          imageUrl: photoUrl!,
                           fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => _buildPlaceholderImage(),
+                          placeholder: (context, url) => const Center(
+                            child: SizedBox(
+                              width: 24,
+                              height: 24,
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            ),
+                          ),
+                          errorWidget: (_, __, ___) => _buildPlaceholderImage(),
                         )
                       : _buildPlaceholderImage(),
                 ),
@@ -421,7 +429,20 @@ class EnhancedVenueListTile extends StatelessWidget {
             height: 56,
             color: colorScheme.surfaceContainerHighest,
             child: photoUrl != null
-                ? Image.network(photoUrl!, fit: BoxFit.cover)
+                ? CachedNetworkImage(
+                    imageUrl: photoUrl!,
+                    fit: BoxFit.cover,
+                    memCacheWidth: 112,
+                    memCacheHeight: 112,
+                    placeholder: (context, url) => const Center(
+                      child: SizedBox(
+                        width: 16,
+                        height: 16,
+                        child: CircularProgressIndicator(strokeWidth: 2),
+                      ),
+                    ),
+                    errorWidget: (_, __, ___) => const Icon(Icons.restaurant),
+                  )
                 : const Icon(Icons.restaurant),
           ),
         ),

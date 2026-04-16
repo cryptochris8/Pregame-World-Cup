@@ -85,7 +85,10 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
         if (state is WatchPartyLoading) {
           return Scaffold(
             appBar: AppBar(),
-            body: const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange))),
+            body: Container(
+              decoration: AppTheme.mainGradientDecoration,
+              child: const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange))),
+            ),
           );
         }
 
@@ -95,10 +98,13 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
 
         return Scaffold(
           appBar: AppBar(),
-          body: Center(
-            child: ElevatedButton(
-              onPressed: _loadWatchParty,
-              child: Text(AppLocalizations.of(context).reload),
+          body: Container(
+            decoration: AppTheme.mainGradientDecoration,
+            child: Center(
+              child: ElevatedButton(
+                onPressed: _loadWatchParty,
+                child: Text(AppLocalizations.of(context).reload),
+              ),
             ),
           ),
         );
@@ -159,12 +165,15 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
           ],
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          _buildDetailsTab(state, dateFormat, timeFormat),
-          _buildChatTab(state),
-        ],
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: TabBarView(
+          controller: _tabController,
+          children: [
+            _buildDetailsTab(state, dateFormat, timeFormat),
+            _buildChatTab(state),
+          ],
+        ),
       ),
       bottomNavigationBar: !state.isMember
           ? _buildJoinBar(state)
@@ -534,6 +543,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.cancelWatchParty),
         content: Text(l10n.cancelWatchPartyConfirm),
         actions: [
@@ -588,6 +598,7 @@ class _WatchPartyDetailScreenState extends State<WatchPartyDetailScreen>
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.removeMember),
         content: Text(l10n.removeMemberConfirm(member.displayName)),
         actions: [

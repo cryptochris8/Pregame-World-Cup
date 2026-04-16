@@ -23,6 +23,7 @@ import '../../../../config/theme_helper.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/utils/team_logo_helper.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../core/animations/page_transitions.dart';
 
 /// Enhanced game details screen with venue discovery
 ///
@@ -428,24 +429,20 @@ class _GameDetailsScreenState extends State<GameDetailsScreen> {
 
     // Navigate to map screen
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => VenueMapScreen(
-          venues: _nearbyPlaces!,
-          stadiumLocation: stadiumLocation,
-          gameLocation: gameLocation,
-        ),
-      ),
+      AppPageTransitions.slideFromBottom(VenueMapScreen(
+        venues: _nearbyPlaces!,
+        stadiumLocation: stadiumLocation,
+        gameLocation: gameLocation,
+      )),
     );
   }
 
   void _navigateToVenueDetail(Place venue) {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => VenueDetailScreen(
-          venue: venue,
-          gameLocation: widget.game.stadium?.name ?? widget.game.stadium?.city,
-        ),
-      ),
+      AppPageTransitions.slideFromRight(VenueDetailScreen(
+        venue: venue,
+        gameLocation: widget.game.stadium?.name ?? widget.game.stadium?.city,
+      )),
     );
   }
 }

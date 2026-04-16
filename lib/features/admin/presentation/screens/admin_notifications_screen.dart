@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart';
 
 import '../../../../l10n/app_localizations.dart';
@@ -424,6 +425,7 @@ class _AdminNotificationsScreenState extends State<AdminNotificationsScreen> {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(AppLocalizations.of(context).confirmSend),
         content: Column(
           mainAxisSize: MainAxisSize.min,

@@ -7,6 +7,7 @@ import 'game_prediction_widget.dart';
 import '../../../../config/theme_helper.dart';
 import '../../../../core/utils/team_matching_helper.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../../core/animations/page_transitions.dart';
 
 /// A card widget displaying a game in the schedule.
 /// Shows team logos, names, scores/time, venue info,
@@ -42,9 +43,7 @@ class ScheduleGameCard extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (context) => GameDetailsScreen(game: game),
-            ),
+            AppPageTransitions.slideFromRight(GameDetailsScreen(game: game)),
           );
         },
         child: Padding(
@@ -239,9 +238,7 @@ class ScheduleGameCard extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (context) => GameDetailsScreen(game: game),
-              ),
+              AppPageTransitions.slideFromRight(GameDetailsScreen(game: game)),
             );
           },
           child: Container(

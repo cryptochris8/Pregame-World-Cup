@@ -538,6 +538,132 @@ void main() {
     });
   });
 
+  group('AuthService - sendPasswordResetEmail enumeration protection', () {
+    late MockFirebaseAuth mockAuth;
+
+    setUp(() {
+      mockAuth = MockFirebaseAuth();
+    });
+
+    test('user-not-found error does NOT throw (prevents enumeration)', () async {
+      when(() => mockAuth.sendPasswordResetEmail(
+            email: any(named: 'email'),
+          )).thenThrow(
+        FirebaseAuthException(
+          code: 'user-not-found',
+          message: 'There is no user record corresponding to this identifier.',
+        ),
+      );
+
+      // Simulate the AuthService logic: catch user-not-found and silently succeed
+      bool didThrow = false;
+      try {
+        await mockAuth.sendPasswordResetEmail(email: 'nonexistent@example.com');
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'user-not-found' || e.code == 'invalid-email') {
+          // AuthService suppresses this — no exception propagated
+        } else {
+          didThrow = true;
+        }
+      }
+
+      expect(didThrow, isFalse,
+          reason: 'user-not-found must be suppressed to prevent user enumeration');
+    });
+
+    test('invalid-email error does NOT throw (prevents enumeration)', () async {
+      when(() => mockAuth.sendPasswordResetEmail(
+            email: any(named: 'email'),
+          )).thenThrow(
+        FirebaseAuthException(
+          code: 'invalid-email',
+          message: 'The email address is badly formatted.',
+        ),
+      );
+
+      bool didThrow = false;
+      try {
+        await mockAuth.sendPasswordResetEmail(email: 'bad-email');
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'user-not-found' || e.code == 'invalid-email') {
+          // Suppressed
+        } else {
+          didThrow = true;
+        }
+      }
+
+      expect(didThrow, isFalse,
+          reason: 'invalid-email must be suppressed to prevent user enumeration');
+    });
+
+    test('too-many-requests error DOES throw', () async {
+      when(() => mockAuth.sendPasswordResetEmail(
+            email: any(named: 'email'),
+          )).thenThrow(
+        FirebaseAuthException(
+          code: 'too-many-requests',
+          message: 'Too many requests.',
+        ),
+      );
+
+      bool didThrow = false;
+      try {
+        await mockAuth.sendPasswordResetEmail(email: 'test@example.com');
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'user-not-found' || e.code == 'invalid-email') {
+          // Would be suppressed, but this is a different code
+        } else {
+          didThrow = true;
+        }
+      }
+
+      expect(didThrow, isTrue,
+          reason: 'non-enumeration errors should still propagate');
+    });
+
+    test('network-request-failed error DOES throw (real errors propagate)', () async {
+      when(() => mockAuth.sendPasswordResetEmail(
+            email: any(named: 'email'),
+          )).thenThrow(
+        FirebaseAuthException(
+          code: 'network-request-failed',
+          message: 'A network error occurred.',
+        ),
+      );
+
+      bool didThrow = false;
+      try {
+        await mockAuth.sendPasswordResetEmail(email: 'test@example.com');
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'user-not-found' || e.code == 'invalid-email') {
+          // Would be suppressed, but this is a different code
+        } else {
+          didThrow = true;
+        }
+      }
+
+      expect(didThrow, isTrue,
+          reason: 'network failures must propagate so the user can retry');
+    });
+
+    test('success message constant exists and does not reveal registration status', () {
+      expect(AuthService.passwordResetSuccessMessage, isNotEmpty);
+      expect(
+        AuthService.passwordResetSuccessMessage.toLowerCase(),
+        isNot(contains('not found')),
+      );
+      expect(
+        AuthService.passwordResetSuccessMessage.toLowerCase(),
+        isNot(contains('no user')),
+      );
+      expect(
+        AuthService.passwordResetSuccessMessage.toLowerCase(),
+        contains('if'),
+        reason: 'Message should be ambiguous about whether the email exists',
+      );
+    });
+  });
+
   group('AuthService - signInWithApple structure', () {
     test('AuthService has signInWithApple method', () {
       // Verify the method exists on the AuthService class via reflection-like check

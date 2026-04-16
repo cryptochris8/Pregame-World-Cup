@@ -13,6 +13,7 @@ import '../../../worldcup/presentation/screens/timezone_settings_screen.dart';
 import '../../../settings/presentation/screens/accessibility_preferences_screen.dart';
 import 'edit_profile_screen.dart';
 import '../../../moderation/presentation/widgets/report_button.dart';
+import '../../../../core/animations/page_transitions.dart';
 import '../widgets/profile_header_card.dart';
 import '../widgets/profile_stats_row.dart';
 import '../widgets/profile_feature_cards.dart';
@@ -276,6 +277,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       final confirm = await showDialog<bool>(
         context: context,
         builder: (context) => AlertDialog(
+          backgroundColor: AppTheme.backgroundCard,
           title: Text(l10n.unblockUser),
           content: Text(l10n.unblockUserConfirm),
           actions: [
@@ -387,9 +389,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (context) => const AccessibilityPreferencesScreen(),
-                            ),
+                            AppPageTransitions.slideFromBottom(const AccessibilityPreferencesScreen()),
                           );
                         },
                         icon: const Icon(Icons.accessibility_new, color: Colors.white),
@@ -399,9 +399,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (context) => const TimezoneSettingsScreen(),
-                            ),
+                            AppPageTransitions.slideFromBottom(const TimezoneSettingsScreen()),
                           );
                         },
                         icon: const Icon(Icons.schedule, color: Colors.white),
@@ -462,9 +460,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             onAccessibilityTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const AccessibilityPreferencesScreen(),
-                ),
+                AppPageTransitions.slideFromBottom(const AccessibilityPreferencesScreen()),
               );
             },
             onProfileCustomizeTap: () async {

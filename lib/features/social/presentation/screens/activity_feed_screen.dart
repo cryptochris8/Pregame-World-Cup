@@ -486,7 +486,7 @@ class _ActivityFeedScreenState extends State<ActivityFeedScreen>
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: const Color(0xFF1E293B),
+        backgroundColor: AppTheme.backgroundCard,
         title: const Text(
           'Delete Activity?',
           style: TextStyle(color: Colors.white),

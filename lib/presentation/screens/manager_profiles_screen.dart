@@ -4,6 +4,7 @@ import '../../domain/models/manager.dart';
 import '../../data/services/manager_service.dart';
 import '../widgets/manager_card.dart';
 import 'manager_detail_screen.dart';
+import '../../core/animations/page_transitions.dart';
 
 /// Manager Profiles Screen
 /// Displays all 48 World Cup 2026 managers with filtering and search
@@ -357,9 +358,7 @@ class _ManagerProfilesScreenState extends State<ManagerProfilesScreen> {
   void _showManagerDetails(Manager manager) {
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (context) => ManagerDetailScreen(manager: manager),
-      ),
+      AppPageTransitions.slideFromRight(ManagerDetailScreen(manager: manager)),
     );
   }
 }

@@ -1,6 +1,8 @@
 import { useGameStore } from '../stores/useGameStore'
 import type { Difficulty } from '../types'
 
+const isTouchDevice = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+
 const DIFFICULTIES: { value: Difficulty; label: string; desc: string }[] = [
   { value: 'easy', label: 'Easy', desc: '7 kicks, slower keeper' },
   { value: 'medium', label: 'Medium', desc: '5 kicks, balanced' },
@@ -49,6 +51,8 @@ export function StartScreen() {
 
       <div style={{
         display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
         gap: '16px',
         marginBottom: '2rem',
       }}>
@@ -118,7 +122,9 @@ export function StartScreen() {
         color: 'rgba(255,255,255,0.3)',
         fontSize: '0.8rem',
       }}>
-        Mouse to aim | Click/Space to charge & release to kick
+        {isTouchDevice
+          ? 'Drag to aim | Tap & hold to charge | Release to kick'
+          : 'Mouse to aim | Click/Space to charge & release to kick'}
       </div>
     </div>
   )

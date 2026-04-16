@@ -116,27 +116,45 @@ function SoccerBall() {
     camera.lookAt(camLookAtTarget.current)
   })
 
-  // Mouse + keyboard controls
+  // Pointer Events (unified mouse + touch) + keyboard controls
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (phase === 'aiming') {
+    // Track whether the current pointer interaction is touch-based
+    let isTouchPointer = false
+
+    const handlePointerMove = (e: PointerEvent) => {
+      const currentPhase = useSoccer.getState().phase
+      // For mouse: only aim during 'aiming' phase
+      // For touch: allow aim adjustment during both 'aiming' and 'charging'
+      if (currentPhase === 'aiming' || (isTouchPointer && currentPhase === 'charging')) {
         const x = (e.clientX / window.innerWidth - 0.5) * SOCCER_CONFIG.maxAimAngleX * 2
         const y = (1 - e.clientY / window.innerHeight) * SOCCER_CONFIG.maxAimAngleY
         setAim(x, Math.max(0.3, y))
       }
     }
 
-    const handleMouseDown = () => {
+    const handlePointerDown = (e: PointerEvent) => {
       if (useGameStore.getState().gamePhase !== 'playing') return
-      if (phase === 'aiming') startCharging()
+      isTouchPointer = e.pointerType === 'touch'
+      const currentPhase = useSoccer.getState().phase
+      if (currentPhase === 'aiming') {
+        // For touch, update aim position on tap before charging
+        if (e.pointerType === 'touch') {
+          const x = (e.clientX / window.innerWidth - 0.5) * SOCCER_CONFIG.maxAimAngleX * 2
+          const y = (1 - e.clientY / window.innerHeight) * SOCCER_CONFIG.maxAimAngleY
+          setAim(x, Math.max(0.3, y))
+        }
+        startCharging()
+      }
     }
 
-    const handleMouseUp = () => {
+    const handlePointerUp = (_e: PointerEvent) => {
       if (useGameStore.getState().gamePhase !== 'playing') return
-      if (phase === 'charging') {
+      const currentPhase = useSoccer.getState().phase
+      if (currentPhase === 'charging') {
         const { power: p, aimX: ax, aimY: ay } = kick()
         launchBall(p, ax, ay)
       }
+      isTouchPointer = false
     }
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -163,17 +181,29 @@ function SoccerBall() {
       }
     }
 
-    window.addEventListener('mousemove', handleMouseMove)
-    window.addEventListener('mousedown', handleMouseDown)
-    window.addEventListener('mouseup', handleMouseUp)
+    // Prevent default touch behaviors (scroll, zoom) so pointer events fire reliably
+    const preventTouchDefault = (e: TouchEvent) => {
+      if (useGameStore.getState().gamePhase === 'playing') {
+        e.preventDefault()
+      }
+    }
+
+    window.addEventListener('pointermove', handlePointerMove)
+    window.addEventListener('pointerdown', handlePointerDown)
+    window.addEventListener('pointerup', handlePointerUp)
     window.addEventListener('keydown', handleKeyDown)
     window.addEventListener('keyup', handleKeyUp)
+    // Passive: false is required to allow preventDefault on touch events
+    window.addEventListener('touchstart', preventTouchDefault, { passive: false })
+    window.addEventListener('touchmove', preventTouchDefault, { passive: false })
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove)
-      window.removeEventListener('mousedown', handleMouseDown)
-      window.removeEventListener('mouseup', handleMouseUp)
+      window.removeEventListener('pointermove', handlePointerMove)
+      window.removeEventListener('pointerdown', handlePointerDown)
+      window.removeEventListener('pointerup', handlePointerUp)
       window.removeEventListener('keydown', handleKeyDown)
       window.removeEventListener('keyup', handleKeyUp)
+      window.removeEventListener('touchstart', preventTouchDefault)
+      window.removeEventListener('touchmove', preventTouchDefault)
     }
   }, [phase, setAim, startCharging, kick])
 

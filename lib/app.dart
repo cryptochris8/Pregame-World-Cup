@@ -14,6 +14,7 @@ import 'features/navigation/main_navigation_screen.dart';
 import 'features/auth/presentation/screens/login_screen.dart';
 import 'features/auth/presentation/screens/email_verification_screen.dart';
 import 'features/auth/presentation/screens/terms_acceptance_screen.dart';
+import 'features/auth/presentation/screens/onboarding_screen.dart';
 import 'features/messaging/domain/services/messaging_service.dart';
 import 'features/messaging/presentation/screens/chat_screen.dart';
 import 'services/revenuecat_service.dart';
@@ -146,6 +147,7 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
   bool _presenceInitialized = false;
   bool _profileCreationInProgress = false;
   bool? _termsAccepted; // null = not yet checked, true/false = checked
+  bool? _hasSeenOnboarding; // null = not yet checked, true/false = checked
 
   @override
   void initState() {
@@ -252,6 +254,22 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
       // Default to not accepted so user sees the terms screen
       if (mounted) {
         setState(() => _termsAccepted = false);
+      }
+    }
+  }
+
+  /// Check if user has seen onboarding
+  Future<void> _checkOnboardingSeen() async {
+    try {
+      final seen = await OnboardingScreen.hasBeenSeen();
+      if (mounted) {
+        setState(() => _hasSeenOnboarding = seen);
+      }
+    } catch (e) {
+      debugLog('ONBOARDING: Error checking onboarding status: $e');
+      // Default to seen so we don't block users
+      if (mounted) {
+        setState(() => _hasSeenOnboarding = true);
       }
     }
   }
@@ -439,6 +457,25 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
               );
             }
 
+            // Check onboarding status (after terms accepted)
+            if (_hasSeenOnboarding == null) {
+              _checkOnboardingSeen();
+              return const Scaffold(
+                backgroundColor: Color(0xFF0F172A),
+                body: Center(
+                  child: CircularProgressIndicator(color: Colors.orange),
+                ),
+              );
+            }
+
+            if (_hasSeenOnboarding == false) {
+              return OnboardingScreen(
+                onComplete: () {
+                  setState(() => _hasSeenOnboarding = true);
+                },
+              );
+            }
+
             return const MainNavigationScreen();
           } else {
             // Email not verified - show verification screen
@@ -446,8 +483,9 @@ class _AuthenticationWrapperState extends State<AuthenticationWrapper> with Widg
           }
         }
 
-        // Reset terms state for next login
+        // Reset terms and onboarding state for next login
         _termsAccepted = null;
+        _hasSeenOnboarding = null;
         _pushNotificationsInitialized = false;
         // Show login screen if user is not authenticated
         return const LoginScreen();

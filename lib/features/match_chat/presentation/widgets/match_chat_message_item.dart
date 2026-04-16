@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/match_chat.dart';
 import '../../../moderation/presentation/widgets/report_bottom_sheet.dart';
 import '../../../moderation/domain/entities/report.dart';
@@ -330,6 +331,7 @@ class MatchChatMessageItem extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: const Text('Block User'),
         content: Text(
           'Are you sure you want to block ${message.senderName}? You will no longer see their messages.',

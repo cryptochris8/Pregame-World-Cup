@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 /// Helper class providing confirmation dialogs for friend actions.
@@ -15,6 +16,7 @@ class FriendActionDialogs {
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.removeFriend),
         content: Text(l10n.removeFriendConfirm(displayName)),
         actions: [
@@ -42,6 +44,7 @@ class FriendActionDialogs {
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.blockUser),
         content: Text(l10n.blockUserConfirm(displayName)),
         actions: [
@@ -68,6 +71,7 @@ class FriendActionDialogs {
     return showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.unblockUser),
         content: Text(l10n.unblockUserConfirm),
         actions: [

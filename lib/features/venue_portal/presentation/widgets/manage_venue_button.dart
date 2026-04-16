@@ -197,6 +197,7 @@ class ManageVenueButton extends StatelessWidget {
             showDialog(
               context: context,
               builder: (ctx) => AlertDialog(
+                backgroundColor: AppTheme.backgroundCard,
                 title: Text(l10n.venuePortalClaimStatus),
                 content: Column(
                   mainAxisSize: MainAxisSize.min,

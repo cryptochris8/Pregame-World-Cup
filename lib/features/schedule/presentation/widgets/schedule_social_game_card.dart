@@ -5,6 +5,7 @@ import '../../../recommendations/presentation/screens/game_details_screen.dart';
 import 'game_prediction_widget.dart';
 import '../../../../config/theme_helper.dart';
 import '../../../../core/utils/team_logo_helper.dart';
+import '../../../../core/animations/page_transitions.dart';
 
 /// A card widget displaying a game with social features.
 /// Shows team logos, names, game time, social stats
@@ -31,9 +32,7 @@ class ScheduleSocialGameCard extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (context) => GameDetailsScreen(game: game),
-            ),
+            AppPageTransitions.slideFromRight(GameDetailsScreen(game: game)),
           );
         },
         child: Padding(

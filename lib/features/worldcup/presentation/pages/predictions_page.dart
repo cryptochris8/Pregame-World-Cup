@@ -396,6 +396,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.deletePrediction),
         content: Text(
           l10n.deletePredictionConfirm(
@@ -428,6 +429,7 @@ class _PredictionsPageState extends State<PredictionsPage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.clearAllPredictions),
         content: Text(l10n.clearAllPredictionsConfirm),
         actions: [

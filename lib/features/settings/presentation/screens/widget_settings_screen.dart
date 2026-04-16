@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
 
 import '../../../../core/services/widget_service.dart';
+import '../../../../core/animations/page_transitions.dart';
 import '../../../../l10n/app_localizations.dart';
 
 /// Screen for configuring home screen widget settings
@@ -577,9 +578,7 @@ class WidgetSettingsTile extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
-            builder: (context) => const WidgetSettingsScreen(),
-          ),
+          AppPageTransitions.slideFromBottom(const WidgetSettingsScreen()),
         );
       },
     );

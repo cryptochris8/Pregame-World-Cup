@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/chat_message.dart';
@@ -69,6 +70,7 @@ class _ChatScreenBodyState extends State<_ChatScreenBody> {
     showDialog(
       context: context,
       builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.copaClearChat),
         content: Text(
           l10n.copaClearChatConfirm,

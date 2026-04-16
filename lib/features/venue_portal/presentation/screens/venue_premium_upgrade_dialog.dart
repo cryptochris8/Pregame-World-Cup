@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 
 import '../../../worldcup/domain/services/world_cup_payment_service.dart';
@@ -161,6 +162,7 @@ class _VenuePremiumUpgradeDialogState
     final price = _pricing?.venuePremium.displayPrice ?? '\$499.00';
 
     return AlertDialog(
+      backgroundColor: AppTheme.backgroundCard,
       title: Row(
         children: [
           Container(

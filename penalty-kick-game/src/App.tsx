@@ -28,6 +28,7 @@ export function App() {
           width: '100%',
           height: '100%',
           display: gamePhase === 'start' ? 'none' : 'block',
+          touchAction: 'none',
         }}
       >
         <Suspense fallback={null}>

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class VenuePhotoGallery extends StatefulWidget {
@@ -204,30 +205,22 @@ class _VenuePhotoGalleryState extends State<VenuePhotoGallery> {
   Widget _buildPhotoItem(String photoUrl, int index) {
     return GestureDetector(
       onTap: () => _onPhotoTap(index),
-      child: Image.network(
-        photoUrl,
+      child: CachedNetworkImage(
+        imageUrl: photoUrl,
         fit: BoxFit.cover,
         width: double.infinity,
         height: double.infinity,
-        loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) return child;
-          
-          return Container(
-            color: Colors.grey[200],
-            child: Center(
-              child: CircularProgressIndicator(
-                value: loadingProgress.expectedTotalBytes != null
-                    ? loadingProgress.cumulativeBytesLoaded / 
-                      loadingProgress.expectedTotalBytes!
-                    : null,
-                valueColor: AlwaysStoppedAnimation<Color>(
-                  Theme.of(context).primaryColor,
-                ),
+        placeholder: (context, url) => Container(
+          color: Colors.grey[200],
+          child: Center(
+            child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(
+                Theme.of(context).primaryColor,
               ),
             ),
-          );
-        },
-        errorBuilder: (context, error, stackTrace) {
+          ),
+        ),
+        errorWidget: (context, url, error) {
           return Container(
             color: Colors.grey[200],
             child: Column(
@@ -372,23 +365,22 @@ class VenuePhotoThumbnail extends StatelessWidget {
         child: ClipRRect(
           borderRadius: borderRadius,
           child: photoUrl != null && photoUrl!.isNotEmpty
-              ? Image.network(
-                  photoUrl!,
+              ? CachedNetworkImage(
+                  imageUrl: photoUrl!,
                   fit: BoxFit.cover,
-                  loadingBuilder: (context, child, loadingProgress) {
-                    if (loadingProgress == null) return child;
-                    return Container(
-                      color: Colors.grey[200],
-                      child: const Center(
-                        child: SizedBox(
-                          width: 20,
-                          height: 20,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        ),
+                  memCacheWidth: 160,
+                  memCacheHeight: 160,
+                  placeholder: (context, url) => Container(
+                    color: Colors.grey[200],
+                    child: const Center(
+                      child: SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(strokeWidth: 2),
                       ),
-                    );
-                  },
-                  errorBuilder: (context, error, stackTrace) {
+                    ),
+                  ),
+                  errorWidget: (context, url, error) {
                     return Container(
                       color: Colors.grey[200],
                       child: Icon(

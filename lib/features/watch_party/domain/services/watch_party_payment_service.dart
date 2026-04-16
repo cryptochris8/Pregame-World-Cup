@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart' hide Card;
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../../config/app_theme.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -342,6 +343,7 @@ class WatchPartyPaymentService {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.paymentErrorTitle),
         content: Text(message),
         actions: [
@@ -360,6 +362,7 @@ class WatchPartyPaymentService {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.paymentSuccessTitle),
         content: Text(message),
         actions: [

@@ -62,7 +62,9 @@ class _WatchPartiesDiscoveryScreenState
           ),
         ],
       ),
-      body: BlocBuilder<WatchPartyBloc, WatchPartyState>(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: BlocBuilder<WatchPartyBloc, WatchPartyState>(
         builder: (context, state) {
           if (state is WatchPartyLoading) {
             return const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)));
@@ -92,6 +94,7 @@ class _WatchPartiesDiscoveryScreenState
 
           return Center(child: Text(l10n.discoverWatchParties));
         },
+      ),
       ),
     );
   }

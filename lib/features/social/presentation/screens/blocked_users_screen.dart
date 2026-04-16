@@ -62,6 +62,7 @@ class _BlockedUsersScreenState extends State<BlockedUsersScreen> {
     final confirm = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.unblockUser),
         content: Text(l10n.unblockUserConfirm),
         actions: [

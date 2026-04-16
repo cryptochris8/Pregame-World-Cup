@@ -275,6 +275,7 @@ class _AdminVenueClaimsScreenState extends State<AdminVenueClaimsScreen>
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(AppLocalizations.of(context).rejectVenueConfirm(businessName)),
         content: TextField(
           controller: notesController,

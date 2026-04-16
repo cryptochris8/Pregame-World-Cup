@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/venue_enhancement_cubit.dart';
@@ -265,6 +266,7 @@ class GameDaySpecialsScreen extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(AppLocalizations.of(context).venuePortalDeleteSpecial),
         content: Text(AppLocalizations.of(context).venuePortalDeleteSpecialConfirm(special.title)),
         actions: [

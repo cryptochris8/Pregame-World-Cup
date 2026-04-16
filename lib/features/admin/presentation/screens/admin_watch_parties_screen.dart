@@ -283,6 +283,7 @@ class _AdminWatchPartiesScreenState extends State<AdminWatchPartiesScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: const Text('Delete Watch Party'),
         content: Column(
           mainAxisSize: MainAxisSize.min,

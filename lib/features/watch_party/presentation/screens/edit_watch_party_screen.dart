@@ -122,7 +122,9 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
                 ),
             ],
           ),
-          body: Form(
+          body: Container(
+            decoration: AppTheme.mainGradientDecoration,
+            child: Form(
             key: _formKey,
             child: ListView(
               padding: const EdgeInsets.all(16),
@@ -329,6 +331,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
               ],
             ),
           ),
+          ),
           bottomNavigationBar: _buildBottomBar(),
         ),
       ),
@@ -412,6 +415,7 @@ class _EditWatchPartyScreenState extends State<EditWatchPartyScreen> {
     final result = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.discardChangesTitle),
         content: Text(l10n.discardChangesMessage),
         actions: [

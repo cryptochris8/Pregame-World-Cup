@@ -12,4 +12,10 @@ html, body, #root {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #fff;
   -webkit-font-smoothing: antialiased;
+  /* Prevent browser default touch gestures (scroll, zoom, etc.)
+     so that touch events reach our game handlers on mobile */
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }

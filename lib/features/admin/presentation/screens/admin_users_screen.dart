@@ -268,6 +268,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.adminWarnUser(user.displayName)),
         content: TextField(
           controller: reasonController,
@@ -315,6 +316,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
+          backgroundColor: AppTheme.backgroundCard,
           title: Text(l10n.adminMuteUser(user.displayName)),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -385,6 +387,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
+          backgroundColor: AppTheme.backgroundCard,
           title: Text(l10n.adminSuspendUser(user.displayName)),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -454,6 +457,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backgroundCard,
         title: Text(l10n.adminBanUser(user.displayName)),
         content: Column(
           mainAxisSize: MainAxisSize.min,

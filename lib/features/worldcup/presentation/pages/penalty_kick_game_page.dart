@@ -244,12 +244,12 @@ class PenaltyKickGamePage extends StatelessWidget {
           const SizedBox(height: 12),
           _buildHowToPlayStep(
             icon: Icons.touch_app,
-            text: 'Aim by dragging on the screen',
+            text: 'Touch and drag to aim at the goal',
           ),
           const SizedBox(height: 8),
           _buildHowToPlayStep(
-            icon: Icons.swipe_up,
-            text: 'Swipe to kick the ball',
+            icon: Icons.front_hand,
+            text: 'Hold to charge power, release to kick',
           ),
           const SizedBox(height: 8),
           _buildHowToPlayStep(

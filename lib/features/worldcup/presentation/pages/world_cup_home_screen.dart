@@ -18,6 +18,7 @@ import '../../../watch_party/presentation/bloc/watch_party_bloc.dart';
 import '../../../watch_party/presentation/screens/screens.dart';
 import 'matches_tab.dart';
 import 'groups_tab.dart';
+import '../../../../core/animations/page_transitions.dart';
 import 'teams_tab.dart';
 import 'favorites_tab.dart';
 
@@ -255,17 +256,13 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
 
   void _navigateToMatchDetail(BuildContext context, WorldCupMatch match) {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => MatchDetailPage(match: match),
-      ),
+      AppPageTransitions.slideFromRight(MatchDetailPage(match: match)),
     );
   }
 
   void _navigateToTeamDetail(BuildContext context, NationalTeam team) {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => TeamDetailPage(team: team),
-      ),
+      AppPageTransitions.slideFromRight(TeamDetailPage(team: team)),
     );
   }
 

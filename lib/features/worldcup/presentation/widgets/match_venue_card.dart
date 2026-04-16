@@ -3,6 +3,7 @@ import '../../../../config/app_theme.dart';
 import '../../../../injection_container.dart' as di;
 import '../../data/services/fan_zone_guide_service.dart';
 import '../pages/city_guide_page.dart';
+import '../../../../core/animations/page_transitions.dart';
 
 /// Displays the match venue (stadium) in a tappable card.
 /// Tapping navigates to the full City Guide for that venue's host city.
@@ -23,7 +24,7 @@ class MatchVenueCard extends StatelessWidget {
     if (guide != null && context.mounted) {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (_) => CityGuidePage(guide: guide)),
+        AppPageTransitions.slideFromBottom(CityGuidePage(guide: guide)),
       );
     } else if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(

@@ -5,6 +5,7 @@ import '../../domain/models/player.dart';
 import '../../data/services/player_service.dart';
 import '../widgets/player_card.dart';
 import 'player_detail_screen.dart';
+import '../../core/animations/page_transitions.dart';
 
 /// Player Spotlight Screen
 /// Displays all 260 World Cup 2026 players with filtering and search
@@ -462,9 +463,7 @@ class _PlayerSpotlightScreenState extends State<PlayerSpotlightScreen> {
   void _showPlayerDetails(Player player) {
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (context) => PlayerDetailScreen(player: player),
-      ),
+      AppPageTransitions.slideFromRight(PlayerDetailScreen(player: player)),
     );
   }
 }

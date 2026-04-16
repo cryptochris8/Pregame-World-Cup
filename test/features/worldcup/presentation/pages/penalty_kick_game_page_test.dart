@@ -56,8 +56,8 @@ void main() {
 
     testWidgets('displays how-to-play steps', (tester) async {
       await tester.pumpWidget(buildSubject());
-      expect(find.text('Aim by dragging on the screen'), findsOneWidget);
-      expect(find.text('Swipe to kick the ball'), findsOneWidget);
+      expect(find.text('Touch and drag to aim at the goal'), findsOneWidget);
+      expect(find.text('Hold to charge power, release to kick'), findsOneWidget);
       expect(find.text('Score as many goals as you can!'), findsOneWidget);
     });
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../config/app_theme.dart';
 import '../../domain/entities/entities.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../bloc/bloc.dart';
@@ -117,6 +118,7 @@ class _PredictionDialogState extends State<PredictionDialog> {
     final l10n = AppLocalizations.of(context);
 
     return AlertDialog(
+      backgroundColor: AppTheme.backgroundCard,
       title: Text(
         widget.existingPrediction != null ? l10n.editPrediction : l10n.makeYourPrediction,
         textAlign: TextAlign.center,

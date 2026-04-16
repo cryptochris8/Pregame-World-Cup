@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../config/app_theme.dart';
@@ -83,10 +84,13 @@ class _MemberAvatar extends StatelessWidget {
       ),
       child: ClipOval(
         child: member.profileImageUrl != null
-            ? Image.network(
-                member.profileImageUrl!,
+            ? CachedNetworkImage(
+                imageUrl: member.profileImageUrl!,
                 fit: BoxFit.cover,
-                errorBuilder: (_, __, ___) => _buildPlaceholder(),
+                memCacheWidth: 100,
+                memCacheHeight: 100,
+                placeholder: (_, __) => _buildPlaceholder(),
+                errorWidget: (_, __, ___) => _buildPlaceholder(),
               )
             : _buildPlaceholder(),
       ),
@@ -192,10 +196,13 @@ class MemberAvatar extends StatelessWidget {
           ),
           child: ClipOval(
             child: member.profileImageUrl != null
-                ? Image.network(
-                    member.profileImageUrl!,
+                ? CachedNetworkImage(
+                    imageUrl: member.profileImageUrl!,
                     fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => _buildPlaceholder(),
+                    memCacheWidth: 100,
+                    memCacheHeight: 100,
+                    placeholder: (_, __) => _buildPlaceholder(),
+                    errorWidget: (_, __, ___) => _buildPlaceholder(),
                   )
                 : _buildPlaceholder(),
           ),

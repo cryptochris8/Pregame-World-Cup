@@ -99,7 +99,9 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
               ),
           ],
         ),
-        body: Column(
+        body: Container(
+          decoration: AppTheme.mainGradientDecoration,
+          child: Column(
           children: [
             // Optional message field
             Padding(
@@ -150,6 +152,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                           : _buildFriendsList(),
             ),
           ],
+        ),
         ),
         bottomNavigationBar: _selectedFriendIds.isNotEmpty
             ? _buildBottomBar()

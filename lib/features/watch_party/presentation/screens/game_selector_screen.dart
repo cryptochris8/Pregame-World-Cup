@@ -121,7 +121,9 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
       appBar: AppBar(
         title: const Text('Select Match'),
       ),
-      body: Column(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: Column(
         children: [
           // Search bar
           Padding(
@@ -186,6 +188,7 @@ class _GameSelectorScreenState extends State<GameSelectorScreen> {
                         : _buildMatchList(),
           ),
         ],
+      ),
       ),
     );
   }

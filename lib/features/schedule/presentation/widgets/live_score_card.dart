@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../../domain/entities/game_schedule.dart';
 import '../../../recommendations/presentation/screens/game_details_screen.dart';
+import '../../../../core/animations/page_transitions.dart';
 
 /// Widget to display live game scores with real-time updates
 class LiveScoreCard extends StatelessWidget {
@@ -29,9 +30,7 @@ class LiveScoreCard extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (context) => GameDetailsScreen(game: game),
-              ),
+              AppPageTransitions.slideFromRight(GameDetailsScreen(game: game)),
             );
           },
           borderRadius: BorderRadius.circular(12),

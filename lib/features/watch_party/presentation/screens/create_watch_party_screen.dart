@@ -93,7 +93,9 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
         appBar: AppBar(
           title: Text(l10n.createWatchParty),
         ),
-        body: Form(
+        body: Container(
+          decoration: AppTheme.mainGradientDecoration,
+          child: Form(
           key: _formKey,
           child: ListView(
             padding: const EdgeInsets.all(16),
@@ -252,6 +254,7 @@ class _CreateWatchPartyScreenState extends State<CreateWatchPartyScreen> {
               const SizedBox(height: 32),
             ],
           ),
+        ),
         ),
         bottomNavigationBar: _buildBottomBar(),
       ),

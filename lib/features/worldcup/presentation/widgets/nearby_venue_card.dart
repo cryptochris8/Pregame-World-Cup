@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
 import '../../data/services/nearby_venues_service.dart';
@@ -192,29 +193,24 @@ class _NearbyVenueCardState extends State<NearbyVenueCard> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: _photoUrl != null
-            ? Image.network(
-                _photoUrl!,
+            ? CachedNetworkImage(
+                imageUrl: _photoUrl!,
                 fit: BoxFit.cover,
                 width: 72,
                 height: 72,
-                loadingBuilder: (context, child, loadingProgress) {
-                  if (loadingProgress == null) return child;
-                  return Center(
-                    child: SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppTheme.primaryPurple.withValues(alpha: 0.5),
-                        value: loadingProgress.expectedTotalBytes != null
-                            ? loadingProgress.cumulativeBytesLoaded /
-                                loadingProgress.expectedTotalBytes!
-                            : null,
-                      ),
+                memCacheWidth: 144,
+                memCacheHeight: 144,
+                placeholder: (context, url) => Center(
+                  child: SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: AppTheme.primaryPurple.withValues(alpha: 0.5),
                     ),
-                  );
-                },
-                errorBuilder: (_, __, ___) => _buildFallbackIcon(),
+                  ),
+                ),
+                errorWidget: (_, __, ___) => _buildFallbackIcon(),
               )
             : _buildFallbackIcon(),
       ),

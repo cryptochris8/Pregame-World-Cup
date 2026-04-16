@@ -53,7 +53,9 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
           ],
         ),
       ),
-      body: BlocBuilder<WatchPartyBloc, WatchPartyState>(
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: BlocBuilder<WatchPartyBloc, WatchPartyState>(
         builder: (context, state) {
           if (state is WatchPartyLoading) {
             return const Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryOrange)));
@@ -90,6 +92,7 @@ class _MyWatchPartiesScreenState extends State<MyWatchPartiesScreen>
 
           return Center(child: Text(l10n.loadingYourWatchParties));
         },
+      ),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {

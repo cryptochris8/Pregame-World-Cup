@@ -269,14 +269,28 @@ class AuthService {
     }
   }
 
+  /// Generic message returned for password reset requests regardless of whether
+  /// the email exists. This prevents user-enumeration attacks.
+  static const passwordResetSuccessMessage =
+      'If this email is registered, you will receive a password reset link.';
+
   // Send password reset email
   Future<void> sendPasswordResetEmail(String email) async {
     try {
       await _firebaseAuth.sendPasswordResetEmail(email: email);
       LoggingService.info('Password reset email sent to $email', tag: 'AuthService');
     } on FirebaseAuthException catch (e) {
-      LoggingService.error('Error sending password reset email: ${e.message}', tag: 'AuthService');
-      throw Exception(e.message);
+      // Suppress user-not-found and invalid-email to prevent user enumeration.
+      // The caller should always show the generic success message.
+      if (e.code == 'user-not-found' || e.code == 'invalid-email') {
+        LoggingService.info(
+          'Password reset requested for unknown or invalid email (suppressed)',
+          tag: 'AuthService',
+        );
+        return; // silently succeed
+      }
+      LoggingService.error('Error sending password reset email: ${e.code}', tag: 'AuthService');
+      throw Exception(_mapAuthError(e));
     } catch (e) {
       LoggingService.error('Error sending password reset email: $e', tag: 'AuthService');
       throw Exception('Failed to send password reset email.');
