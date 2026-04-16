@@ -520,9 +520,25 @@
           "competition": "AFCON 2025 Quarterfinal",
           "result": "L",
           "venue": "neutral"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Guatemala",
+          "score": "7-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Uruguay",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "neutral"
         }
       ],
-      "form_summary": "W7 D2 L1 (last 10 matches). Qualified via CAF qualifiers. Strong AFCON 2025 group stage before quarterfinal exit."
+      "form_summary": "W8 D3 L1 (last 12 matches). Qualified via CAF qualifiers. Strong AFCON 2025 group stage before quarterfinal exit. Impressive 7-0 friendly win vs Guatemala, credible draw vs Uruguay."
     },
     "AUT": {
       "team_name": "Austria",
@@ -607,9 +623,25 @@
           "competition": "UEFA Nations League B",
           "result": "D",
           "venue": "home"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Ghana",
+          "score": "5-1",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "South Korea",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
         }
       ],
-      "form_summary": "W5 D2 L3 (last 10 matches). Strong Euro 2024 group stage (topped Group D). Nations League B promotion. Qualified for WC via UEFA play-off."
+      "form_summary": "W7 D2 L3 (last 12 matches). Strong Euro 2024 group stage (topped Group D). Nations League B promotion. Qualified for WC via UEFA play-off. Impressive March 2026 friendly wins vs Ghana (5-1) and South Korea (1-0). Alaba returned from injury."
     },
     "JOR": {
       "team_name": "Jordan",

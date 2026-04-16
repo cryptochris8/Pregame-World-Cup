@@ -1080,6 +1080,22 @@
           "competition": "International Friendly",
           "result": "L",
           "venue": "neutral"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Cameroon",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Curaçao",
+          "score": "5-1",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
         }
       ]
     },

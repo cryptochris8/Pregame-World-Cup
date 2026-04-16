@@ -792,7 +792,7 @@
           {"team": "Argentina", "code": "ARG", "odds": "-340"},
           {"team": "Jordan", "code": "JOR", "odds": "+1200"},
           {"team": "Austria", "code": "AUT", "odds": "+400"},
-          {"team": "Algeria", "code": "ALG", "odds": "+600"}
+          {"team": "Algeria", "code": "ALG", "odds": "+650"}
         ],
         "predicted_winner": "Argentina",
         "notes": "Argentina heavy favorite. Austria and Algeria provide strong opposition. Polymarket gives Argentina 75% chance to win group."

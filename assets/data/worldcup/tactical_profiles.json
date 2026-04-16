@@ -129,7 +129,7 @@
       "teamCode": "AUS",
       "teamName": "Australia",
       "coach": "Tony Popovic",
-      "preferredFormation": "5-3-2",
+      "preferredFormation": "3-4-2-1",
       "alternateFormations": [
         "3-5-2",
         "4-4-2"
@@ -150,9 +150,9 @@
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
-        "style": "Five-man defensive line creating a solid back structure; disciplined and attritional; designed to frustrate technically superior opponents",
+        "style": "Three-at-the-back system creating a solid defensive foundation; disciplined and attritional; designed to frustrate technically superior opponents",
         "strengths": [
-          "Five-man defense provides numbers and cover",
+          "Three center-backs provide defensive security and cover",
           "Souttar's aerial dominance",
           "Structured and disciplined shape"
         ],
@@ -160,7 +160,7 @@
       },
       "keyTacticalFeatures": [
         "Popovic's defensive, attritional style worked against technically strong sides Japan and Saudi Arabia in qualifying",
-        "Five-man defensive line is the tactical foundation - everything else is built around defensive security",
+        "3-4-2-1 system is the tactical foundation - everything is built around defensive security with wing-back width",
         "Mental toughness and discipline were key to qualifying campaign success",
         "Reactive side that performs best when the opposition has the ball and they can counter"
       ],

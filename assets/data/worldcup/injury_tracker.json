@@ -661,17 +661,17 @@
       "country": "Belgium",
       "club": "Napoli",
       "position": "Midfielder",
-      "injuryType": "High-grade right thigh tear (femoral bicep)",
+      "injuryType": "Recovered from thigh tear",
       "injuryDate": "2025-10-25",
-      "expectedReturn": "March 2026 (light training)",
-      "availabilityStatus": "major_doubt",
+      "expectedReturn": "N/A - returned to action",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2025-10-25",
-        "opponent": "Inter Milan (Serie A)",
-        "notes": "Injured while scoring from penalty spot. 116+ days sidelined."
+        "date": "2026-03-28",
+        "opponent": "USA (International Friendly)",
+        "notes": "Returned to full action. Multiple starts for Napoli since March 6."
       },
-      "source": "FOX Sports, TSN, GB News, Yahoo Sports - Feb 2026",
-      "notes": "Age 34. Joined Napoli from Man City. High-grade lesion in same area as previous surgery. Only 8 Serie A appearances before injury. Could return March but narrow window to regain match fitness."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Age 34. Returned to Napoli action March 6 after thigh tear. Multiple starts since. Back to full fitness and available for Belgium. Captain and creative fulcrum."
     },
     {
       "playerName": "Romelu Lukaku",
@@ -679,17 +679,35 @@
       "country": "Belgium",
       "club": "Napoli",
       "position": "Forward",
-      "injuryType": "No current injury",
+      "injuryType": "Fitness issues",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "TBD",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-03-15",
         "opponent": "Napoli (Serie A)",
-        "notes": "Full match played, scored"
+        "notes": "Absent from March international camp due to fitness issues"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Belgium's all-time top scorer. No current injury concerns. Enjoying good form at Napoli under Conte."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Belgium's all-time top scorer. Absent from March international camp with fitness issues. Availability for World Cup to be monitored."
+    },
+    {
+      "playerName": "Leandro Trossard",
+      "teamCode": "BEL",
+      "country": "Belgium",
+      "club": "Arsenal",
+      "position": "Forward",
+      "injuryType": "Hip injury",
+      "injuryDate": "2026-03-15",
+      "expectedReturn": "TBD",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-12",
+        "opponent": "Arsenal (Premier League)",
+        "notes": "Hip injury sustained"
+      },
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Hip injury keeping him out. Doubt for World Cup. Versatile attacker who provides depth across the frontline for Belgium."
     },
     {
       "playerName": "Jeremy Doku",
@@ -1129,35 +1147,35 @@
       "country": "Canada",
       "club": "Bayern Munich",
       "position": "Defender/Left-back",
-      "injuryType": "Right hamstring torn muscle fibre (new), previous ACL tear",
-      "injuryDate": "2026-02-21",
-      "expectedReturn": "TBD (3-6 weeks typical for muscle fibre tear)",
-      "availabilityStatus": "injured",
+      "injuryType": "Hamstring strain (recovering)",
+      "injuryDate": "2026-03-11",
+      "expectedReturn": "Expected fit for June",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-21",
-        "opponent": "Eintracht Frankfurt (Bundesliga)",
-        "notes": "Forced off at 47th minute with new hamstring injury"
+        "date": "2026-03-08",
+        "opponent": "Bayern Munich (Bundesliga)",
+        "notes": "Hamstring strain March 11, returned to training"
       },
-      "source": "Tribuna.com, TSN, Yahoo Sports, SI.com - Feb 21, 2026",
-      "notes": "JUST INJURED. Tore right ACL March 2025 (vs USA). Returned January 2026. Now new hamstring tear. 111 days until World Cup. Canada are co-hosts. Very concerning timing."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Hamstring strain March 11 but has returned to training. Expected fit for World Cup in June. Canada's superstar and most important player. Co-hosts need him healthy."
     },
     {
       "playerName": "Jonathan David",
       "teamCode": "CAN",
       "country": "Canada",
-      "club": "Lille",
+      "club": "Juventus",
       "position": "Forward",
-      "injuryType": "Ruptured hip tendon (surgery required)",
-      "injuryDate": "2026-02-01",
-      "expectedReturn": "May-July 2026 (3-5 months rehab)",
-      "availabilityStatus": "major_doubt",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-01",
-        "opponent": "Lille (Ligue 1)",
-        "notes": "Underwent surgery for ruptured hip tendon"
+        "date": "2026-04-05",
+        "opponent": "Juventus (Serie A)",
+        "notes": "Full match played, scoring regularly"
       },
-      "source": "Sports Interaction, TSN - Feb 2026",
-      "notes": "Key striker for Canada. Surgery to repair ruptured hip tendon. 3-5 month rehab puts World Cup return in jeopardy. Massive blow for Canada's attacking threat."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Fully recovered and now scoring for Juventus in Serie A. Canada's all-time leading scorer and talisman. Fit and in form ahead of World Cup."
     },
     {
       "playerName": "Moise Bombito",
@@ -1199,19 +1217,37 @@
       "playerName": "Stephen Eustaquio",
       "teamCode": "CAN",
       "country": "Canada",
-      "club": "FC Porto",
+      "club": "LAFC",
       "position": "Midfielder",
-      "injuryType": "No current injury",
+      "injuryType": "Blood clot recovery",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "TBD - being monitored",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-01-10",
+        "opponent": "LAFC (MLS)",
+        "notes": "Recovering from blood clot"
+      },
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Blood clot recovery at LAFC. Availability uncertain. Key creative midfielder for Canada."
+    },
+    {
+      "playerName": "Tajon Buchanan",
+      "teamCode": "CAN",
+      "country": "Canada",
+      "club": "Villarreal",
+      "position": "Forward/Winger",
+      "injuryType": "Recovered from broken leg",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
+      "expectedReturn": "N/A - fully recovered",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "FC Porto (Primeira Liga)",
-        "notes": "Full match played"
+        "date": "2026-04-06",
+        "opponent": "Villarreal (La Liga)",
+        "notes": "Starting regularly, fully recovered from broken tibia"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Creative midfielder and one of Canada's best players. Currently fit. Key to Canada's World Cup campaign."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Fully recovered from broken leg suffered during Copa America 2024. Starting for Villarreal in La Liga. Key attacking weapon for Canada."
     },
     {
       "playerName": "Son Heung-min",
@@ -2479,17 +2515,17 @@
       "country": "Austria",
       "club": "Real Madrid",
       "position": "Defender",
-      "injuryType": "Anterior cruciate ligament tear (left knee)",
+      "injuryType": "ACL recovery (calf resolving)",
       "injuryDate": "2024-12-17",
-      "expectedReturn": "Racing against time for World Cup",
-      "availabilityStatus": "major_doubt",
+      "expectedReturn": "Expected fit for World Cup",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Real Madrid (league match)",
-        "notes": "Available for selection"
+        "date": "2026-03-31",
+        "opponent": "South Korea (International Friendly)",
+        "notes": "Played 29 minutes as substitute. Calf issue resolving."
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Suffered second ACL tear in December 2024. Undergoing rehabilitation. Austria's captain and leader. World Cup fitness is uncertain."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Returned to international action March 31 vs South Korea (29 min). Calf issue resolving. Austria's captain and leader. On track for World Cup."
     },
     {
       "playerName": "Christoph Baumgartner",
@@ -2747,19 +2783,37 @@
       "playerName": "Sebastien Haller",
       "teamCode": "CIV",
       "country": "Ivory Coast",
-      "club": "Borussia Dortmund",
+      "club": "FC Utrecht",
       "position": "Forward",
-      "injuryType": "History of testicular cancer (recovered)",
+      "injuryType": "Limited playing time, missed 3 international windows",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available but concerns",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "FC Utrecht (Eredivisie)",
+        "notes": "Limited playing time"
+      },
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Moved to FC Utrecht. Missed 3 international windows. Limited playing time raises fitness concerns for World Cup. History of cancer recovery."
+    },
+    {
+      "playerName": "Amad Diallo",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Manchester United",
+      "position": "Forward/Winger",
+      "injuryType": "No current injury",
       "injuryDate": null,
       "expectedReturn": "N/A - currently fit",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Borussia Dortmund (league match)",
-        "notes": "Full match played"
+        "date": "2026-04-06",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "Full match played, in excellent form"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Fully recovered from cancer treatment. Back to form. Key striker for Ivory Coast."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Emerging star for Ivory Coast. Scored in qualifier. Excellent form at Manchester United. Key attacking threat."
     },
     {
       "playerName": "Franck Kessie",
@@ -2965,35 +3019,35 @@
       "country": "Algeria",
       "club": "Al-Ahli",
       "position": "Forward",
-      "injuryType": "No current injury",
+      "injuryType": "Age-related fitness management",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "N/A - available",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-03-25",
         "opponent": "Al-Ahli (league match)",
-        "notes": "Full match played"
+        "notes": "Available for selection"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Algeria's star player. Former Man City and Leicester winger. No injury concerns."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Age 35. Algeria's star player. Former Man City and Leicester winger. Workload management needed at this stage of career."
     },
     {
       "playerName": "Ismael Bennacer",
       "teamCode": "ALG",
       "country": "Algeria",
-      "club": "AC Milan",
+      "club": "Dinamo Zagreb",
       "position": "Midfielder",
-      "injuryType": "Knee injury (recovered)",
-      "injuryDate": "2025-06-15",
-      "expectedReturn": "Fully recovered",
-      "availabilityStatus": "fit",
+      "injuryType": "Thigh muscle strain",
+      "injuryDate": "2026-03-10",
+      "expectedReturn": "Late April - May 2026",
+      "availabilityStatus": "major_doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "AC Milan (league match)",
-        "notes": "Full match played"
+        "date": "2026-03-08",
+        "opponent": "Dinamo Zagreb (league match)",
+        "notes": "Last match before thigh strain"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Key midfielder at AC Milan. Recovered from previous knee issue. Fit and playing regularly."
+      "source": "Transfermarkt, club reports - April 2026",
+      "notes": "Thigh muscle strain sustained at Dinamo Zagreb. Missed March international window. Major doubt for World Cup fitness. Key midfielder for Algeria."
     },
     {
       "playerName": "Islam Slimani",

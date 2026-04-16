@@ -100,9 +100,25 @@
           "competition": "AFCON 2025 Quarterfinal",
           "result": "L",
           "venue": "neutral"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "South Korea",
+          "score": "4-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Scotland",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
         }
       ],
-      "form_summary": "W6 D2 L2 (last 10 matches). AFCON 2024 champions on home soil. Qualified via CAF qualifiers. AFCON 2025 quarterfinal exit."
+      "form_summary": "W8 D2 L2 (last 12 matches). AFCON 2024 champions on home soil. Qualified via CAF qualifiers. AFCON 2025 quarterfinal exit. Strong March 2026 friendly results including 4-0 vs South Korea."
     },
     "CUR": {
       "team_name": "Curacao",
@@ -773,6 +789,22 @@
           "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "home"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "USA",
+          "score": "5-2",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Mexico",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "neutral"
         }
       ]
     },
