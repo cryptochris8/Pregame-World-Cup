@@ -141,9 +141,9 @@
         "odds_decimal": 21.00,
         "implied_probability_pct": 4.8,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "tier": "contender",
-        "notes": "Lost just 1 of last 26 matches (on penalties). Scoring freely. Strong midfield and backline."
+        "notes": "Lost just 1 of last 26 matches (on penalties). Scoring freely. Strong midfield and backline. Group F favorites at -125."
       },
       {
         "team": "Norway",
@@ -259,13 +259,13 @@
       {
         "team": "Morocco",
         "code": "MAR",
-        "odds_american": "+8000",
-        "odds_decimal": 81.00,
-        "implied_probability_pct": 1.2,
+        "odds_american": "+6000",
+        "odds_decimal": 61.00,
+        "implied_probability_pct": 1.6,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
-        "tier": "longshot",
-        "notes": "2022 World Cup semifinalists. Won 16 straight matches. Added Brahim Diaz (switched from Spain). AFCON 2025 runners-up."
+        "date": "2026-04-16",
+        "tier": "dark_horse",
+        "notes": "2022 World Cup semifinalists. AFCON 2025 finalists. Dark horse with proven tournament pedigree. Mazraoui injury and Ziyech sharpness are concerns."
       },
       {
         "team": "Ecuador",
@@ -753,13 +753,13 @@
       },
       "F": {
         "teams": [
-          {"team": "Netherlands", "code": "NED", "odds": "-135"},
+          {"team": "Netherlands", "code": "NED", "odds": "-125"},
           {"team": "Japan", "code": "JPN", "odds": "+275"},
           {"team": "Tunisia", "code": "TUN", "odds": "+1200"},
           {"team": "Sweden", "code": "SWE", "odds": "+350"}
         ],
         "predicted_winner": "Netherlands",
-        "notes": "Japan a strong second seed. Tunisia bring World Cup experience."
+        "notes": "Netherlands clear Group F favorites at -125. Japan surging with historic wins over Scotland and England. Dangerous group."
       },
       "G": {
         "teams": [
@@ -1123,9 +1123,9 @@
       {
         "team": "Morocco",
         "code": "MAR",
-        "outright_odds": "+8000",
+        "outright_odds": "+6000",
         "sources": ["ESPN", "NBC Sports", "RotoWire", "CBS Sports"],
-        "reasoning": "2022 semifinal was no fluke. Won 18 straight matches. AFCON 2025 finalists. Added Brahim Diaz. First African nation to reach WC semis."
+        "reasoning": "2022 semifinal was no fluke. AFCON 2025 finalists. Dark horse at +6000. Mazraoui injury and Ziyech sharpness are concerns but tournament pedigree proven."
       },
       {
         "team": "Senegal",

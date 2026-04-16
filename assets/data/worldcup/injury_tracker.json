@@ -890,6 +890,24 @@
       "notes": "Starting center-back alongside Van Dijk. No current injury concerns. Experienced at the highest level."
     },
     {
+      "playerName": "Jurrien Timber",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Manchester United",
+      "position": "Defender",
+      "injuryType": "Withdrew from March squad — injury-hit season",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Expected available but fitness a concern",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-10",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "Withdrew from Netherlands March squad"
+      },
+      "source": "Country Scout intel, club reports - April 2026",
+      "notes": "Withdrew from Netherlands' March 2026 squad. Has had an injury-hit season at Manchester United. Should be available for World Cup but fitness needs monitoring."
+    },
+    {
       "playerName": "Frenkie de Jong",
       "teamCode": "NED",
       "country": "Netherlands",
@@ -1129,17 +1147,17 @@
       "country": "Mexico",
       "club": "Feyenoord",
       "position": "Forward",
-      "injuryType": "Ankle surgery",
+      "injuryType": "Ankle surgery recovery — absent from recent matches",
       "injuryDate": "2025-10-01",
-      "expectedReturn": "March 2026 (6-8 weeks post-surgery)",
-      "availabilityStatus": "injured",
+      "expectedReturn": "TBD - absent from recent international squads",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2025-10-01",
+        "date": "2026-02-15",
         "opponent": "Feyenoord (Eredivisie)",
-        "notes": "Sidelined with ankle injury since October"
+        "notes": "Has returned to club duty but absent from recent Mexico squads"
       },
-      "source": "Gazzetta dello Sport, SI.com, vivaligamx.com - Feb 2026",
-      "notes": "Mexico's star striker. Nightmare season with persistent ankle issues. Underwent surgery, expected back next month. Critical for Mexico's home World Cup campaign."
+      "source": "Country Scout intel, SI.com, vivaligamx.com - April 2026",
+      "notes": "Mexico's star striker. Returned from ankle surgery but absent from recent international squads. Fitness for World Cup uncertain. Critical player if available."
     },
     {
       "playerName": "Edson Alvarez",
@@ -1147,35 +1165,89 @@
       "country": "Mexico",
       "club": "Fenerbahce",
       "position": "Midfielder",
-      "injuryType": "Ankle discomfort (possible surgery needed)",
+      "injuryType": "Ankle discomfort — fitness uncertain",
       "injuryDate": "2025-12-01",
-      "expectedReturn": "TBD - surgery could sideline for months",
-      "availabilityStatus": "injured",
+      "expectedReturn": "TBD - fitness for World Cup uncertain",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
         "date": "2026-02-15",
         "opponent": "Fenerbahce (Super Lig)",
-        "notes": "Only 4 matches played in 2026 due to ankle issues"
+        "notes": "Limited appearances in 2026 due to ankle issues"
       },
-      "source": "SI.com, vivaligamx.com, Turkish media - Feb 2026",
-      "notes": "Mexico captain. Battling ankle discomfort since December. Only 4 Fenerbahce matches in 2026. Rumors of potential surgery that could rule him out for months. Major concern for Mexico."
+      "source": "Country Scout intel, SI.com, vivaligamx.com, Turkish media - April 2026",
+      "notes": "Mexico captain. Battling ankle discomfort since December. Fitness for World Cup uncertain. If unavailable, it would be a massive blow to Mexico's midfield structure."
     },
     {
       "playerName": "Hirving Lozano",
       "teamCode": "MEX",
       "country": "Mexico",
-      "club": "PSV Eindhoven",
+      "club": "San Diego FC (MLS)",
       "position": "Forward",
-      "injuryType": "Hamstring injury",
-      "injuryDate": "2026-01-20",
-      "expectedReturn": "March 2026",
-      "availabilityStatus": "injured",
+      "injuryType": "No current injury — reportedly choosing MLS over World Cup",
+      "injuryDate": null,
+      "expectedReturn": "N/A - squad availability uncertain (personal decision)",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-01-20",
-        "opponent": "PSV (Eredivisie)",
-        "notes": "Suffered hamstring injury, sidelined"
+        "date": "2026-03-15",
+        "opponent": "San Diego FC (MLS)",
+        "notes": "Playing regularly in MLS"
       },
-      "source": "ESPN, Mexican media - Feb 2026",
-      "notes": "Known as 'Chucky'. Key winger for Mexico. Hamstring injury has been a recurring theme. Expected to recover in time for World Cup."
+      "source": "Country Scout intel, ESPN, Mexican media - April 2026",
+      "notes": "Known as 'Chucky'. Reports indicate Lozano is CHOOSING MLS COMMITMENTS OVER WORLD CUP. If true, a shocking loss for Mexico. Moved to San Diego FC as marquee signing."
+    },
+    {
+      "playerName": "Luis Malagón",
+      "teamCode": "MEX",
+      "country": "Mexico",
+      "club": "Club America",
+      "position": "Goalkeeper",
+      "injuryType": "Ruptured Achilles tendon",
+      "injuryDate": "2026-02-01",
+      "expectedReturn": "OUT - ruled out of World Cup",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-01-28",
+        "opponent": "Club America (Liga MX)",
+        "notes": "Suffered ruptured Achilles"
+      },
+      "source": "Country Scout intel, Mexican media - April 2026",
+      "notes": "Ruptured Achilles rules him out of the 2026 World Cup. Was Mexico's first-choice goalkeeper. Devastating blow to Mexico's goalkeeping depth."
+    },
+    {
+      "playerName": "Marcel Ruiz",
+      "teamCode": "MEX",
+      "country": "Mexico",
+      "club": "Club Leon",
+      "position": "Midfielder",
+      "injuryType": "Torn ACL",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "OUT - ruled out of World Cup",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-01-10",
+        "opponent": "Club Leon (Liga MX)",
+        "notes": "Suffered torn ACL"
+      },
+      "source": "Country Scout intel, Mexican media - April 2026",
+      "notes": "Torn ACL rules him out of the 2026 World Cup. Was an emerging midfield talent for Mexico. Significant loss to squad depth."
+    },
+    {
+      "playerName": "Luis Orozco",
+      "teamCode": "MEX",
+      "country": "Mexico",
+      "club": "Tigres UANL",
+      "position": "Midfielder",
+      "injuryType": "Fractured ankle",
+      "injuryDate": "2026-02-10",
+      "expectedReturn": "OUT - ruled out of World Cup",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-02-08",
+        "opponent": "Tigres (Liga MX)",
+        "notes": "Suffered fractured ankle"
+      },
+      "source": "Country Scout intel, Mexican media - April 2026",
+      "notes": "Fractured ankle rules him out of the 2026 World Cup. Another blow to Mexico's already depleted midfield options."
     },
     {
       "playerName": "Guillermo Ochoa",
@@ -1336,8 +1408,8 @@
         "opponent": "LAFC MLS match",
         "notes": "MLS season in progress"
       },
-      "source": "Korea Herald, Korea Times - 2025/2026",
-      "notes": "Age 33. Moved to LAFC from Tottenham. Missed WC qualifying matches with hamstring and foot injuries. Coach managing captain's workload carefully."
+      "source": "Korea Herald, Korea Times, Country Scout intel - April 2026",
+      "notes": "Age 33. Moved to LAFC from Tottenham ($26.5M MLS record transfer, Aug 2025). Foot issue being managed. Coach managing captain's workload carefully ahead of what is likely his final World Cup."
     },
     {
       "playerName": "Kim Min-jae",
@@ -1363,17 +1435,17 @@
       "country": "South Korea",
       "club": "Paris Saint-Germain",
       "position": "Midfielder/Forward",
-      "injuryType": "No current injury",
+      "injuryType": "Reduced playing time at club",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "Available but match sharpness a concern",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-03-15",
         "opponent": "PSG (Ligue 1)",
-        "notes": "Full match played"
+        "notes": "Reduced club playing time — rotation and competition for places"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Exciting young talent at PSG. No injury concerns. Key creative player for South Korea."
+      "source": "Country Scout intel, Transfermarkt - April 2026",
+      "notes": "Not injured but reduced playing time at PSG is a concern for match sharpness heading into the World Cup. Still South Korea's most technically gifted player."
     },
     {
       "playerName": "Hwang Hee-chan",
@@ -1669,17 +1741,35 @@
       "country": "Japan",
       "club": "Brighton",
       "position": "Forward/Winger",
-      "injuryType": "Recurring leg pain",
-      "injuryDate": "2025-10-01",
-      "expectedReturn": "Currently playing but managed",
-      "availabilityStatus": "minor_concern",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Brighton (Premier League)",
-        "notes": "Played full match"
+        "date": "2026-03-31",
+        "opponent": "England (International Friendly)",
+        "notes": "Scored the winner in historic 1-0 victory at Wembley"
       },
-      "source": "besoccer.com, official records - 2025/2026",
-      "notes": "Was left out of Japan's October 2025 squad due to leg pain after Brighton match. Has returned and playing regularly but being monitored."
+      "source": "Country Scout intel, official records - April 2026",
+      "notes": "Fully fit and in outstanding form. Scored the winner in Japan's historic first-ever victory over England at Wembley (March 2026). Key attacking threat."
+    },
+    {
+      "playerName": "Takumi Minamino",
+      "teamCode": "JPN",
+      "country": "Japan",
+      "club": "Monaco",
+      "position": "Forward/Midfielder",
+      "injuryType": "Torn ACL",
+      "injuryDate": "2026-02-01",
+      "expectedReturn": "OUT - ruled out of World Cup",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-01-28",
+        "opponent": "Monaco (Ligue 1)",
+        "notes": "Suffered torn ACL"
+      },
+      "source": "Country Scout intel, club reports - April 2026",
+      "notes": "Torn ACL rules him out of the 2026 World Cup entirely. Significant loss to Japan's attacking depth and versatility."
     },
     {
       "playerName": "Takefusa Kubo",
@@ -1687,17 +1777,17 @@
       "country": "Japan",
       "club": "Real Sociedad",
       "position": "Forward",
-      "injuryType": "Ankle issue (minor)",
+      "injuryType": "Absent from March squad",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "TBD - availability uncertain",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Real Sociedad (La Liga)",
-        "notes": "Playing regularly"
+        "notes": "Playing at club but absent from March international squad"
       },
-      "source": "Goal.com, official records - Feb 2026",
-      "notes": "Exciting young winger. Had minor ankle issue in Oct 2025 but was still called up. No current concerns."
+      "source": "Country Scout intel, Japan FA reports - April 2026",
+      "notes": "Absent from Japan's March 2026 squad. Reasons unclear — could be tactical or fitness-related. Availability for World Cup uncertain."
     },
     {
       "playerName": "Wataru Endo",
@@ -1705,17 +1795,17 @@
       "country": "Japan",
       "club": "Liverpool",
       "position": "Midfielder",
-      "injuryType": "No current injury",
+      "injuryType": "Fitness concern",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "Expected to be available but managed",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-03-15",
         "opponent": "Liverpool (Premier League)",
-        "notes": "Full match played"
+        "notes": "Limited minutes recently"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Experienced midfielder at Liverpool. No injury concerns. Japan's midfield captain."
+      "source": "Country Scout intel, club reports - April 2026",
+      "notes": "Fitness concern flagged. Japan's midfield captain but workload being managed at Liverpool. Should be available but needs monitoring."
     },
     {
       "playerName": "Daichi Kamada",
@@ -1754,22 +1844,40 @@
       "notes": "World-class right-back. No injury concerns. Morocco's most valuable player after 2022 World Cup semifinal run."
     },
     {
+      "playerName": "Noussair Mazraoui",
+      "teamCode": "MAR",
+      "country": "Morocco",
+      "club": "Manchester United",
+      "position": "Defender",
+      "injuryType": "Injury during preparations",
+      "injuryDate": "2026-03-15",
+      "expectedReturn": "TBD - availability uncertain for World Cup",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-10",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "Picked up injury during preparations"
+      },
+      "source": "Country Scout intel, club reports - April 2026",
+      "notes": "Suffered injury during March preparations. Availability for World Cup uncertain. A significant concern given his importance to Morocco's attacking fullback system."
+    },
+    {
       "playerName": "Hakim Ziyech",
       "teamCode": "MAR",
       "country": "Morocco",
       "club": "Galatasaray",
       "position": "Midfielder/Forward",
-      "injuryType": "No current injury",
+      "injuryType": "No current injury - dropped for lack of match sharpness",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
+      "expectedReturn": "N/A - not injured but squad inclusion uncertain",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Galatasaray (Super Lig)",
-        "notes": "Full match played"
+        "notes": "Playing at club level"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Creative playmaker. No injury concerns. Key to Morocco's attack."
+      "source": "Country Scout intel, Transfermarkt - April 2026",
+      "notes": "Not injured but dropped from recent squads due to lack of match sharpness. Squad inclusion for World Cup is not guaranteed despite his quality."
     },
     {
       "playerName": "Yassine Bounou",
@@ -1795,17 +1903,17 @@
       "country": "Morocco",
       "club": "Fenerbahce",
       "position": "Midfielder",
-      "injuryType": "No current injury",
+      "injuryType": "Injury-hit season",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "expectedReturn": "Expected available but fitness a concern",
+      "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
+        "date": "2026-03-15",
         "opponent": "Fenerbahce (Super Lig)",
-        "notes": "Full match played"
+        "notes": "Has had an injury-hit season with limited appearances"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Tireless midfielder who starred at 2022 World Cup. No injury concerns."
+      "source": "Country Scout intel, Transfermarkt - April 2026",
+      "notes": "Injury-hit season at Fenerbahce. The 2022 World Cup midfield star's fitness is a concern heading into the tournament. Should be available but not at peak sharpness."
     },
     {
       "playerName": "Sadio Mane",

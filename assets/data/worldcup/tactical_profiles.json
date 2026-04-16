@@ -1646,15 +1646,15 @@
     "KSA": {
       "teamCode": "KSA",
       "teamName": "Saudi Arabia",
-      "coach": "Roberto Mancini",
+      "coach": "Herve Renard",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
         "4-4-2"
       ],
-      "playingStyle": "Structured Italian-influenced possession play with emphasis on tactical discipline; transitioning from counter-attacking to a more proactive system under Mancini",
+      "playingStyle": "Pragmatic and defensively organized system under Renard (reappointed after Mancini's departure in Oct 2024); emphasis on discipline, quick transitions, and maximizing collective effort over individual quality",
       "tempoRating": "Medium",
-      "possessionStyle": "Mancini has implemented a more possession-oriented approach; build-up through Kanno and Al-Faraj in midfield with Saud Abdulhamid providing European-level quality at right-back",
+      "possessionStyle": "Renard favors a more pragmatic approach than Mancini; build-up through Kanno and Al-Faraj in midfield with Saud Abdulhamid providing European-level quality at right-back",
       "pressingIntensity": "Medium",
       "attackingApproach": {
         "style": "Salem Al-Dawsari's creativity and dribbling from the left, Al-Buraikan's pace centrally, with overlapping runs from fullbacks",
@@ -1668,23 +1668,23 @@
         "setPieceRating": "Average"
       },
       "defensiveApproach": {
-        "style": "Mancini's Italian defensive discipline with a compact mid-block; Kanno shielding as the holding midfielder",
+        "style": "Renard's pragmatic defensive discipline with a compact mid-block; Kanno shielding as the holding midfielder",
         "strengths": [
-          "Tactical discipline instilled by Mancini",
+          "Tactical discipline instilled by Renard (who previously led Saudi Arabia to the 2022 Argentina upset)",
           "Compact defensive shape",
           "Kanno's ball-winning ability in midfield",
           "Al-Owais's shot-stopping"
         ],
-        "weakness": "Domestic-only defensive squad lacks exposure to elite attackers; individual errors under high pressure; pace deficit against world-class wingers"
+        "weakness": "Domestic-only defensive squad lacks exposure to elite attackers; individual errors under high pressure; pace deficit against world-class wingers; alarming 0-4 loss to Egypt in March 2026"
       },
       "keyTacticalFeatures": [
-        "Mancini brought Italian tactical structure but has struggled to fully implement his vision with a domestically-based squad",
+        "Renard reappointed after Mancini's departure (Oct 2024) — the coach who masterminded the 2022 Argentina upset returns",
         "Saudi Pro League's investment in foreign stars means domestic players train alongside elite company",
         "Saud Abdulhamid at Roma is the only European-based outfield player, providing crucial tactical education",
         "The 2022 World Cup victory over Argentina provides massive psychological confidence and belief"
       ],
       "strengthsOverall": [
-        "Mancini's elite coaching pedigree",
+        "Renard's proven track record with Saudi Arabia (2022 Argentina upset)",
         "2022 World Cup giant-killing mentality",
         "Strong team chemistry from domestic league cohesion",
         "Home confederation advantage from Asian Cup experience"
@@ -1692,7 +1692,7 @@
       "weaknessesOverall": [
         "Almost entirely domestic league-based squad",
         "Quality gap against European and South American opposition",
-        "Mancini's coaching tenure has had mixed results",
+        "Recent form alarming (0-4 loss to Egypt in March 2026)",
         "Aging core players from 2022 cycle"
       ],
       "attackRating": 5,

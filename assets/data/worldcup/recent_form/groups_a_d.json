@@ -272,6 +272,22 @@
           "competition": "International Friendly",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Ivory Coast",
+          "score": "0-4",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Austria",
+          "score": "0-1",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "neutral"
         }
       ]
     },
@@ -358,6 +374,14 @@
           "competition": "International Friendly",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Portugal",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home"
         }
       ]
     }
@@ -847,6 +871,14 @@
           "competition": "AFCON 2025 Final",
           "result": "L",
           "venue": "home"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Ecuador",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "neutral"
         }
       ]
     },

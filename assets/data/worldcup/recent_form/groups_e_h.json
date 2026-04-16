@@ -647,6 +647,23 @@
           "competition": "International Friendly",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Scotland",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "England",
+          "score": "1-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away",
+          "notes": "Historic first-ever victory over England at Wembley"
         }
       ]
     },
@@ -1203,6 +1220,15 @@
           "competition": "World Cup 2026 Qualifier - AFC 3rd Round",
           "result": "L",
           "venue": "home"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Egypt",
+          "score": "0-4",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "neutral",
+          "notes": "Alarming defeat — major concerns about form heading into World Cup"
         }
       ]
     },
