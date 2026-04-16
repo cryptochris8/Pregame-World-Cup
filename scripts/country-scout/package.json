@@ -1,0 +1,21 @@
+{
+  "name": "country-scout",
+  "version": "1.0.0",
+  "description": "Country Scout pipeline — orchestrates scouting, merging, seeding, and narrative regeneration",
+  "private": true,
+  "scripts": {
+    "scout": "ts-node run.ts",
+    "scout:dry": "ts-node run.ts --dryRun",
+    "test": "jest --config jest.config.js"
+  },
+  "dependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.0"
+  }
+}
