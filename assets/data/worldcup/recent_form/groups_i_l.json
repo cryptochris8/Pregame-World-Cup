@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-02-21",
+    "generated": "2026-04-16",
     "description": "Recent international match results (2024-2026) for World Cup 2026 Groups A-D teams",
     "sources": [
       "ESPN",
@@ -1218,6 +1218,24 @@
           "competition": "UEFA World Cup Qualifier",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Uruguay",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "home",
+          "notes": "Foden injured during match. Kane minor knock."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Japan",
+          "score": "0-1",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "home",
+          "notes": "Concerning home defeat. Kane rested. Foden absent injured."
         }
       ]
     },
@@ -1402,9 +1420,27 @@
           "competition": "AFCON 2025 Round of 16",
           "result": "L",
           "venue": "neutral"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Austria",
+          "score": "1-5",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away",
+          "notes": "Alarming defeat. Kudus played but struggled."
+        },
+        {
+          "date": "2026-03-30",
+          "opponent": "Germany",
+          "score": "1-2",
+          "competition": "International Friendly",
+          "result": "L",
+          "venue": "away",
+          "notes": "Kudus and Inaki Williams both absent injured."
         }
       ],
-      "form_summary": "W4 D4 L2 (last 10 matches). Qualified via CAF qualifiers. Solid AFCON 2025 group stage before Round of 16 exit."
+      "form_summary": "W4 D4 L4 (last 12 matches). Alarming 1-5 loss to Austria. Key players Kudus and Inaki Williams injured. Concerning form heading into World Cup."
     }
   }
 }

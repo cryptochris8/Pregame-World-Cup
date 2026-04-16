@@ -50,25 +50,27 @@
         "odds_decimal": 5.50,
         "implied_probability_pct": 18.2,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "prediction_market_pct": 16.3,
         "betmgm_odds": "+400",
         "fanduel_odds": "+410",
         "tier": "favorite",
-        "notes": "Reigning European champions. Won Euro 2024. Top of world rankings. Favored across all bookmakers."
+        "market_position": 1,
+        "notes": "#1 FAVORITE. Reigning European champions. Rodri BACK from ACL (started vs Serbia 3-0 W). Beat Serbia 3-0, drew Egypt 0-0. Dominant squad depth."
       },
       {
         "team": "England",
         "code": "ENG",
-        "odds_american": "+550",
-        "odds_decimal": 6.50,
-        "implied_probability_pct": 15.4,
+        "odds_american": "+650",
+        "odds_decimal": 7.50,
+        "implied_probability_pct": 13.3,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "prediction_market_pct": 13.4,
-        "betmgm_odds": "+600",
+        "betmgm_odds": "+700",
         "tier": "favorite",
-        "notes": "8 wins from 8 qualifiers, 22 goals scored, 0 conceded under Thomas Tuchel."
+        "market_position": 3,
+        "notes": "3rd favorite. Perfect qualifying (8W 0D 0L) but concerning March results: 1-1 D vs Uruguay, 0-1 L vs Japan at home. Injury concerns (Foden, Bellingham)."
       },
       {
         "team": "France",
@@ -128,9 +130,9 @@
         "odds_decimal": 13.00,
         "implied_probability_pct": 7.7,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "tier": "contender",
-        "notes": "4-time World Cup champions. Strong qualifying campaign."
+        "notes": "4-time World Cup champions. 7 consecutive wins. Beat Switzerland 4-3 (Wirtz 2G 2A) and Ghana 2-1. Musiala fitness is the key question."
       },
       {
         "team": "Netherlands",
@@ -268,13 +270,15 @@
       {
         "team": "Ecuador",
         "code": "ECU",
-        "odds_american": "+8000",
-        "odds_decimal": 81.00,
-        "implied_probability_pct": 1.2,
+        "odds_american": "+6600",
+        "odds_decimal": 67.00,
+        "implied_probability_pct": 1.5,
         "bookmaker": "DraftKings",
-        "date": "2025-12-08",
+        "date": "2026-04-16",
         "tier": "longshot",
-        "notes": "Quietly dangerous side built around Moises Caicedo. Resilient defensive structure."
+        "group_odds": "+350",
+        "group_notes": "Group E favorites",
+        "notes": "Quietly dangerous side built around Moises Caicedo. Resilient defensive structure. Group E favorites at +350."
       },
       {
         "team": "Mexico",
@@ -1140,9 +1144,9 @@
       {
         "team": "Ecuador",
         "code": "ECU",
-        "outright_odds": "+8000",
+        "outright_odds": "+6600",
         "sources": ["CBS Sports", "SportsBettingDime"],
-        "reasoning": "Quietly dangerous. Built around Moises Caicedo. Resilient defensive structure. Consistent CONMEBOL qualifier."
+        "reasoning": "Quietly dangerous. Built around Moises Caicedo. Resilient defensive structure. Group E favorites (+350). Recent draws vs Morocco and Netherlands show they can compete."
       },
       {
         "team": "Scotland",

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-01",
+    "lastUpdated": "2026-04-16",
     "description": "Key player injury and availability tracker for World Cup 2026",
     "totalPlayers": 184,
     "totalTeams": 48,
@@ -121,17 +121,17 @@
       "country": "England",
       "club": "Bayern Munich",
       "position": "Forward",
-      "injuryType": "Various minor issues (calf, ankle, illness)",
-      "injuryDate": "2026-02-04",
-      "expectedReturn": "Currently available",
+      "injuryType": "Minor knock",
+      "injuryDate": "2026-03-27",
+      "expectedReturn": "Expected fine for World Cup",
       "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-14",
-        "opponent": "Bayern Munich Bundesliga match",
-        "notes": "Missed training Feb 4 due to illness, also previous calf/facial injuries"
+        "date": "2026-03-27",
+        "opponent": "Uruguay (International Friendly)",
+        "notes": "Played vs Uruguay (1-1 D), sat out Japan friendly as precaution"
       },
-      "source": "Bundesliga.com, SI.com, Goal.com - Feb 2026",
-      "notes": "Multiple minor injuries throughout 2025-26 season. None appear to be long-term concerns. Pattern of minor niggles but consistently returns."
+      "source": "England Football, BBC Sport - Mar 2026",
+      "notes": "Minor knock from Uruguay friendly. Sat out Japan match (0-1 L) as precaution. Expected fully fit for World Cup. Pattern of minor niggles but consistently returns."
     },
     {
       "playerName": "Phil Foden",
@@ -139,17 +139,53 @@
       "country": "England",
       "club": "Manchester City",
       "position": "Midfielder/Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Significant muscle strain (vs Uruguay, Mar 27)",
+      "injuryDate": "2026-03-27",
+      "expectedReturn": "TBD - race against time for World Cup",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Manchester City (Premier League)",
-        "notes": "Played 90 minutes"
+        "date": "2026-03-27",
+        "opponent": "Uruguay (International Friendly)",
+        "notes": "Suffered significant muscle strain during match"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Key creative force for England. Has had minor fitness concerns but currently fit. 2023 Ballon d'Or nominee."
+      "source": "England Football, BBC Sport, Sky Sports - Mar 2026",
+      "notes": "Significant muscle strain suffered vs Uruguay Mar 27. Missed Japan friendly. Timeline uncertain. Key creative force for England whose absence would be a major blow."
+    },
+    {
+      "playerName": "Reece James",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Chelsea",
+      "position": "Defender",
+      "injuryType": "Hamstring injury (10th career hamstring)",
+      "injuryDate": "2026-03-20",
+      "expectedReturn": "Uncertain - long injury history",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "Chelsea (Premier League)",
+        "notes": "Last match before 10th career hamstring injury"
+      },
+      "source": "Chelsea FC, Sky Sports - Mar 2026",
+      "notes": "10th career hamstring injury. Chronic recurring issue that has plagued his career. Major doubt for World Cup selection given the pattern of re-injury."
+    },
+    {
+      "playerName": "Noni Madueke",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Chelsea",
+      "position": "Forward/Winger",
+      "injuryType": "Knee injury",
+      "injuryDate": "2026-03-22",
+      "expectedReturn": "TBD - under assessment",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-18",
+        "opponent": "Chelsea (Premier League)",
+        "notes": "Last match before knee issue emerged"
+      },
+      "source": "Chelsea FC, Sky Sports - Mar 2026",
+      "notes": "Knee injury sustained in training. Under assessment. Adds to England's attacking injury concerns alongside Foden."
     },
     {
       "playerName": "Declan Rice",
@@ -211,17 +247,17 @@
       "country": "Spain",
       "club": "Arsenal",
       "position": "Midfielder",
-      "injuryType": "Stress fracture in right foot (rare bone injury)",
+      "injuryType": "Fractured foot (surgery Feb 9)",
       "injuryDate": "2026-01-25",
       "expectedReturn": "June 2026 (4 months post-surgery)",
-      "availabilityStatus": "major_doubt",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
         "date": "2026-01-25",
         "opponent": "Manchester United (Premier League)",
         "notes": "Suffered injury at end of match"
       },
-      "source": "Sky Sports, Arsenal.com, Daily Cannon, Tribuna.com - Feb 2026",
-      "notes": "Surgery on Feb 9, 2026. Out for remainder of domestic season. Slim chances of recovery in time for WC. Would need to be fit by late May for squad selection."
+      "source": "Sky Sports, Arsenal.com, Daily Cannon, Tribuna.com - Mar 2026",
+      "notes": "Fractured foot surgery Feb 9, 2026. Recovery ongoing. Would need to be fit by late May for squad selection. Still a doubt but progressing."
     },
     {
       "playerName": "Gavi",
@@ -247,17 +283,53 @@
       "country": "Spain",
       "club": "Manchester City",
       "position": "Midfielder",
-      "injuryType": "ACL tear (right knee)",
+      "injuryType": "Recovered from ACL tear (right knee)",
       "injuryDate": "2025-09-22",
-      "expectedReturn": "May-June 2026",
-      "availabilityStatus": "major_doubt",
+      "expectedReturn": "Returned - started vs Serbia Mar 27",
+      "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2025-09-22",
-        "opponent": "Arsenal (Premier League)",
-        "notes": "Suffered ACL tear, season-ending injury"
+        "date": "2026-03-27",
+        "opponent": "Serbia (International Friendly)",
+        "notes": "STARTED match - back from ACL! Spain won 3-0."
       },
-      "source": "Manchester City, ESPN, BBC Sport - 2025/2026",
-      "notes": "2024 Ballon d'Or winner. Suffered ACL tear in Sept 2025. Targeting May/June return. Race against time for World Cup. Spain's most important midfielder."
+      "source": "Manchester City, ESPN, BBC Sport - Mar 2026",
+      "notes": "2024 Ballon d'Or winner. Returned from ACL tear ahead of schedule. Started vs Serbia (3-0 W) on Mar 27. Massive boost for Spain's World Cup campaign."
+    },
+    {
+      "playerName": "Dani Carvajal",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Real Madrid",
+      "position": "Defender",
+      "injuryType": "Fitness concern (returning from long-term injury)",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Under assessment",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-27",
+        "opponent": "Serbia (International Friendly)",
+        "notes": "Available but fitness being managed"
+      },
+      "source": "Real Madrid, Marca - Mar 2026",
+      "notes": "Returning from long-term injury. Fitness still being managed carefully. A doubt for full World Cup involvement."
+    },
+    {
+      "playerName": "Samu Omorodion",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Porto",
+      "position": "Forward",
+      "injuryType": "ACL tear - OUT of World Cup",
+      "injuryDate": "2026-03-10",
+      "expectedReturn": "Not before World Cup",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-03-08",
+        "opponent": "Porto (Liga Portugal)",
+        "notes": "Last match before ACL tear"
+      },
+      "source": "Porto FC, Marca, AS - Mar 2026",
+      "notes": "ACL tear rules him out of the World Cup entirely. Was emerging as a genuine squad option for Spain. Devastating blow for the young striker."
     },
     {
       "playerName": "Jamal Musiala",
@@ -265,17 +337,17 @@
       "country": "Germany",
       "club": "Bayern Munich",
       "position": "Midfielder/Forward",
-      "injuryType": "Broken left leg and dislocated ankle (returning)",
+      "injuryType": "Fractured fibula + dislocated ankle (Club World Cup 2025)",
       "injuryDate": "2025-07-05",
-      "expectedReturn": "Returned Jan 2026, rebuilding match fitness",
-      "availabilityStatus": "minor_concern",
+      "expectedReturn": "Race against time for World Cup",
+      "availabilityStatus": "major_doubt",
       "lastMatchPlayed": {
         "date": "2026-02-22",
         "opponent": "Bayern Munich Bundesliga match",
-        "notes": "Getting regular minutes, still finding rhythm after 196 days out"
+        "notes": "Getting minutes but still not at full match fitness after devastating injury"
       },
-      "source": "Bundesliga.com, ESPN, fcbayern.com - Feb 2026",
-      "notes": "Broke left leg in Club World Cup QF vs PSG July 2025. Returned Jan 2026 after 196 days. Still finding rhythm, admits struggling with match sharpness. Planning national team return for March camp."
+      "source": "Bundesliga.com, ESPN, fcbayern.com - Mar 2026",
+      "notes": "Fractured fibula and dislocated ankle in Club World Cup 2025 QF vs PSG. Returned Jan 2026 but still racing against time to regain full match sharpness. Germany's World Cup hopes hinge on his fitness. Not yet back to his best."
     },
     {
       "playerName": "Florian Wirtz",
@@ -288,12 +360,12 @@
       "expectedReturn": "N/A - currently fit",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Bayer Leverkusen (Bundesliga)",
-        "notes": "Played full 90 minutes, strong form"
+        "date": "2026-03-27",
+        "opponent": "Switzerland (International Friendly)",
+        "notes": "Sensational performance: 2 goals, 2 assists in 4-3 win"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Germany's most exciting talent. No injury concerns. Key player alongside Musiala for World Cup. Reportedly subject of interest from Real Madrid and Barcelona."
+      "source": "DFB, Transfermarkt, club reports - Mar 2026",
+      "notes": "In sensational form. 2 goals and 2 assists vs Switzerland (4-3 W). Germany's talisman and key creative force. No injury concerns whatsoever."
     },
     {
       "playerName": "Joshua Kimmich",
@@ -1327,17 +1399,17 @@
       "country": "Egypt",
       "club": "Liverpool",
       "position": "Forward",
-      "injuryType": "Hamstring injury",
-      "injuryDate": "2026-01-10",
-      "expectedReturn": "Early February 2026",
+      "injuryType": "Muscle strain (vs Galatasaray, Mar 18)",
+      "injuryDate": "2026-03-18",
+      "expectedReturn": "Expected fit for World Cup",
       "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-10",
-        "opponent": "Liverpool Premier League match",
-        "notes": "Returned from AFCON hamstring injury"
+        "date": "2026-03-18",
+        "opponent": "Galatasaray (Champions League)",
+        "notes": "Suffered muscle strain, missed March international friendlies"
       },
-      "source": "Liverpool FC, ESPN, FourFourTwo - Jan/Feb 2026",
-      "notes": "Age 33. Egypt qualified unbeaten. Salah scored 9 goals in qualifying. Hamstring injury during AFCON 2026 was more serious than first thought. Reports of possible Liverpool departure."
+      "source": "Liverpool FC, ESPN, FourFourTwo - Mar 2026",
+      "notes": "Age 33. Muscle strain vs Galatasaray Mar 18 forced him to miss both March friendlies (Saudi Arabia 4-0 W, Spain 0-0 D). Egypt won both WITHOUT Salah. Expected fit for World Cup."
     },
     {
       "playerName": "Omar Marmoush",
@@ -1350,12 +1422,12 @@
       "expectedReturn": "N/A - currently fit",
       "availabilityStatus": "fit",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Manchester City (Premier League)",
-        "notes": "Full match played"
+        "date": "2026-03-31",
+        "opponent": "Spain (International Friendly)",
+        "notes": "Played full match in impressive 0-0 draw"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Breakout star who earned a move to Manchester City. No injury concerns. Key attacking option alongside Salah."
+      "source": "Transfermarkt, club reports - Mar 2026",
+      "notes": "Emerged as Egypt's co-star alongside Salah. Manchester City forward in superb form. Led the line in both March friendlies without Salah, proving Egypt can compete at the highest level."
     },
     {
       "playerName": "Mohamed Elneny",
@@ -2130,6 +2202,24 @@
       },
       "source": "Transfermarkt, club reports - Feb 2026",
       "notes": "Age 35. Qatar's most capped player and captain. Fitness management needed. Veteran leader."
+    },
+    {
+      "playerName": "Pervis Estupinan",
+      "teamCode": "ECU",
+      "country": "Ecuador",
+      "club": "Brighton",
+      "position": "Defender",
+      "injuryType": "Recurring muscle fatigue",
+      "injuryDate": "2026-03-15",
+      "expectedReturn": "Currently available (managed condition)",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Netherlands (International Friendly)",
+        "notes": "Played but managed minutes due to recurring muscle fatigue"
+      },
+      "source": "Brighton reports, Transfermarkt - Mar 2026",
+      "notes": "Recurring muscle fatigue throughout Brighton season. Being carefully managed. Expected fit for World Cup but workload needs monitoring."
     },
     {
       "playerName": "Moises Caicedo",
@@ -3289,17 +3379,35 @@
       "country": "Ghana",
       "club": "West Ham United",
       "position": "Midfielder/Forward",
-      "injuryType": "No current injury",
-      "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
-      "availabilityStatus": "fit",
+      "injuryType": "Hamstring injury",
+      "injuryDate": "2026-03-20",
+      "expectedReturn": "TBD - missed Germany friendly",
+      "availabilityStatus": "doubt",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "West Ham United (league match)",
-        "notes": "Full match played"
+        "date": "2026-03-27",
+        "opponent": "Austria (International Friendly)",
+        "notes": "Missed Germany friendly (Mar 30) due to hamstring"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Ghana's star player at West Ham. No injury concerns. Dynamic and creative."
+      "source": "West Ham United, GFA - Mar 2026",
+      "notes": "Hamstring injury. Missed the Germany friendly (1-2 L). Ghana's most important player. His fitness is critical for their World Cup campaign."
+    },
+    {
+      "playerName": "Inaki Williams",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Athletic Bilbao",
+      "position": "Forward",
+      "injuryType": "Undisclosed (missed both March friendlies)",
+      "injuryDate": "2026-03-20",
+      "expectedReturn": "TBD",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "Athletic Bilbao (La Liga)",
+        "notes": "Missed both March international friendlies"
+      },
+      "source": "Athletic Bilbao, GFA - Mar 2026",
+      "notes": "Missed both March friendlies (Austria 1-5 L, Germany 1-2 L). Concerning absence for a key attacker ahead of the World Cup."
     },
     {
       "playerName": "Thomas Partey",
@@ -3307,17 +3415,17 @@
       "country": "Ghana",
       "club": "Arsenal",
       "position": "Midfielder",
-      "injuryType": "History of recurring muscle injuries",
+      "injuryType": "Mobility/fitness decline",
       "injuryDate": null,
-      "expectedReturn": "N/A - currently fit",
+      "expectedReturn": "N/A - currently available",
       "availabilityStatus": "minor_concern",
       "lastMatchPlayed": {
-        "date": "2026-02-22",
-        "opponent": "Arsenal (league match)",
-        "notes": "Available for selection"
+        "date": "2026-03-30",
+        "opponent": "Germany (International Friendly)",
+        "notes": "Played but showed signs of declining mobility"
       },
-      "source": "Transfermarkt, club reports - Feb 2026",
-      "notes": "Key midfielder at Arsenal. History of muscle injuries but currently fit. Ghana's midfield anchor."
+      "source": "Arsenal, GFA - Mar 2026",
+      "notes": "Age 32. Noticeable decline in mobility and fitness. History of recurring muscle injuries. Still Ghana's midfield anchor but physical concerns mounting."
     },
     {
       "playerName": "Jordan Ayew",

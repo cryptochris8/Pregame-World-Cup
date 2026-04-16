@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-02-21",
+    "generated": "2026-04-16",
     "description": "Recent international match results (2024-2026) for World Cup 2026 Groups A-D teams",
     "sources": [
       "ESPN",
@@ -274,6 +274,22 @@
           "competition": "International Friendly",
           "result": "W",
           "venue": "home"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Morocco",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "neutral"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Netherlands",
+          "score": "1-1",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away"
         }
       ]
     },
@@ -361,6 +377,23 @@
           "competition": "World Cup Qualifying - UEFA",
           "result": "W",
           "venue": "away"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Switzerland",
+          "score": "4-3",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "away",
+          "notes": "Wirtz 2 goals, 2 assists. 7 consecutive wins."
+        },
+        {
+          "date": "2026-03-30",
+          "opponent": "Ghana",
+          "score": "2-1",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home"
         }
       ]
     }
@@ -872,9 +905,27 @@
           "result": "L",
           "venue": "neutral",
           "notes": "Lost 2-4 on penalties. Finished 4th."
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Saudi Arabia",
+          "score": "4-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "neutral",
+          "notes": "Dominant win WITHOUT Salah (injured)"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Spain",
+          "score": "0-0",
+          "competition": "International Friendly",
+          "result": "D",
+          "venue": "away",
+          "notes": "Impressive 0-0 draw vs #1 ranked Spain WITHOUT Salah"
         }
       ],
-      "form_summary": "W4 D1 L2 (last 7 AFCON matches). Topped group stage. Impressive run to semifinals before falling to eventual champions Senegal."
+      "form_summary": "W5 D2 L2 (last 9 matches). Beat Saudi Arabia 4-0, drew Spain 0-0 — both WITHOUT Salah. Proving they can compete without their star."
     },
     "IRN": {
       "team_name": "Iran",
@@ -1047,6 +1098,23 @@
           "opponent": "Turkey",
           "score": "2-2",
           "competition": "UEFA World Cup Qualifier",
+          "result": "D",
+          "venue": "home"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Serbia",
+          "score": "3-0",
+          "competition": "International Friendly",
+          "result": "W",
+          "venue": "home",
+          "notes": "Rodri started! Back from ACL tear."
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Egypt",
+          "score": "0-0",
+          "competition": "International Friendly",
           "result": "D",
           "venue": "home"
         }
