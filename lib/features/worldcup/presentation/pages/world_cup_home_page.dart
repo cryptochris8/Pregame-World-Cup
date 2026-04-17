@@ -121,11 +121,11 @@ class WorldCupDashboardPage extends StatelessWidget {
               Image.asset(
                 'assets/images/worldcup_logo.png',
                 height: 32,
-                semanticLabel: 'World Cup 2026 logo',
+                semanticLabel: 'Pregame logo',
                 errorBuilder: (_, __, ___) => const Icon(Icons.sports_soccer),
               ),
               const SizedBox(width: 8),
-              Text(l10n.worldCup2026Title),
+              const Text('Pregame 2026'),
             ],
           ),
           centerTitle: true,

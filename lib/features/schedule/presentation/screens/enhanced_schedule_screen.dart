@@ -185,7 +185,7 @@ class _EnhancedScheduleScreenState extends State<EnhancedScheduleScreen>
             ),
             const SizedBox(width: 12),
             Text(
-              l10n.worldCup2026Title,
+              'Pregame 2026',
               style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

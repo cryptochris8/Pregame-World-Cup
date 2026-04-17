@@ -104,11 +104,13 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
               ),
             ),
             const SizedBox(width: 8),
-            Text(
-              l10n.worldCup,
-              style: const TextStyle(
+            const Text(
+              'Pregame',
+              style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w700,
+                fontSize: 20,
+                letterSpacing: -0.3,
               ),
             ),
           ],

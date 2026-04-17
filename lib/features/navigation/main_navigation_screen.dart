@@ -210,7 +210,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                 return Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    _buildNavItem(0, Icons.sports_soccer, l10n.worldCup, AppTheme.primaryOrange),
+                    _buildNavItem(0, Icons.sports_soccer, 'Pregame', AppTheme.primaryOrange),
                     _buildNavItem(1, Icons.dynamic_feed, l10n.feed, AppTheme.primaryOrange),
                     _buildNavItem(2, Icons.notifications, l10n.alerts, AppTheme.primaryOrange, badgeCount: _unreadNotifications),
                     _buildNavItem(3, Icons.people, l10n.friends, AppTheme.primaryOrange),
