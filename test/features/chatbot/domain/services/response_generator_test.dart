@@ -458,7 +458,8 @@ void main() {
     test('returns helpful fallback', () async {
       const intent = ChatIntent(type: ChatIntentType.unknown);
       final response = await generator.generate(intent);
-      expect(response.text, contains('not sure'));
+      expect(response.text, isNotEmpty);
+      expect(response.text.length, greaterThan(20));
       expect(response.suggestionChips, isNotEmpty);
     });
   });

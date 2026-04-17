@@ -19,8 +19,9 @@ class MatchResponses {
     final teamCode = intent.team;
     if (teamCode == null) {
       return ChatResponse(
-        text: "Which team's schedule would you like to see? The tournament runs "
-            "June 11 - July 19, 2026, with 104 matches across 16 host cities.",
+        text: "Big question — whose schedule are we pulling up? The tournament runs "
+            "June 11 to July 19, 2026 — 104 matches across 16 host cities. "
+            "Pick a team and let's see what's on the card.",
         suggestionChips: ['USA schedule', 'Mexico schedule', 'England schedule', 'Brazil schedule'],
         resolvedIntent: intent,
       );
@@ -31,16 +32,16 @@ class MatchResponses {
 
     if (matches.isEmpty) {
       return ChatResponse(
-        text: "I couldn't find any matches for $teamName. Make sure you're using a valid team name.",
+        text: "Hmm, I'm not finding any matches for $teamName. Double-check the team name and try again — I've got all 48 squads loaded.",
         suggestionChips: ['Tournament schedule', 'Group stage', 'Help'],
         resolvedIntent: intent,
       );
     }
 
     final group = _kb.getTeamGroup(teamCode);
-    final buf = StringBuffer('$teamName\'s World Cup 2026 schedule');
-    if (group != null) buf.write(' (Group $group)');
-    buf.writeln(':');
+    final buf = StringBuffer('Here\'s what\'s on the card for $teamName');
+    if (group != null) buf.write(' in Group $group');
+    buf.writeln(' — circle these dates:');
     buf.writeln();
 
     for (final m in matches) {
@@ -85,8 +86,8 @@ class MatchResponses {
     final code2 = intent.team2;
     if (code1 == null || code2 == null) {
       return ChatResponse(
-        text: "I need two teams for a head-to-head comparison. Try something like "
-            "\"Argentina vs Brazil\" or \"USA vs Mexico\".",
+        text: "Give me two teams and I'll dig into the rivalry. Try something like "
+            "\"Argentina vs Brazil\" or \"USA vs Mexico\" — the good stuff.",
         suggestionChips: ['Argentina vs Brazil', 'USA vs Mexico', 'England vs France'],
         resolvedIntent: intent,
       );
@@ -98,8 +99,8 @@ class MatchResponses {
 
     if (h2h == null) {
       return ChatResponse(
-        text: "I don't have detailed head-to-head data for $name1 vs $name2, "
-            "but I can help with their schedules or team info!",
+        text: "I don't have the full head-to-head breakdown for $name1 vs $name2 just yet, "
+            "but I can pull up their schedules or squad info if that helps.",
         suggestionChips: ['$name1 schedule', '$name2 schedule', '$name1 vs $name2 preview'],
         resolvedIntent: intent,
       );
@@ -116,20 +117,20 @@ class MatchResponses {
     final wcMatches = h2h['worldCupMatches'] ?? 0;
     final lastMatch = h2h['lastMatch'] as String? ?? '';
 
-    final buf = StringBuffer('$t1Name vs $t2Name — Head-to-Head:\n\n');
-    buf.writeln('All-time: $total matches — $t1Name $t1Wins wins, $t2Name $t2Wins wins, $draws draws');
+    final buf = StringBuffer('$t1Name vs $t2Name — these two have history.\n\n');
+    buf.writeln('Across $total meetings: $t1Name have won $t1Wins, $t2Name have won $t2Wins, with $draws draws.');
     if (wcMatches > 0) {
-      buf.writeln('World Cup: $wcMatches meetings');
+      buf.writeln('They\'ve crossed paths $wcMatches times on the World Cup stage.');
     }
     if (lastMatch.isNotEmpty) {
-      buf.writeln('Last meeting: ${formatDate(lastMatch)}');
+      buf.writeln('Last time they met: ${formatDate(lastMatch)}');
     }
 
     // Notable matches
     final notable = h2h['notableMatches'] as List<dynamic>?;
     if (notable != null && notable.isNotEmpty) {
       buf.writeln();
-      buf.writeln('Notable World Cup encounters:');
+      buf.writeln('Matches that live in the memory:');
       for (final nm in notable.take(3)) {
         final n = nm as Map<String, dynamic>;
         final year = n['year'];
@@ -152,7 +153,8 @@ class MatchResponses {
     final code2 = intent.team2;
     if (code1 == null || code2 == null) {
       return ChatResponse(
-        text: "I need two teams for a match preview. Try \"Argentina vs Brazil preview\".",
+        text: "I need two teams to break down a match preview. Try \"Argentina vs Brazil preview\" "
+            "and I'll give you Copa's honest take.",
         suggestionChips: ['Brazil vs Argentina preview', 'USA vs Mexico preview'],
         resolvedIntent: intent,
       );
@@ -164,13 +166,14 @@ class MatchResponses {
 
     if (summary == null) {
       return ChatResponse(
-        text: "I don't have a detailed preview for $name1 vs $name2 yet.",
+        text: "I haven't got a full preview ready for $name1 vs $name2 just yet — but I can "
+            "pull up their squads or head-to-head if you want the background.",
         suggestionChips: ['$name1 squad', '$name2 squad', '$name1 vs $name2 h2h'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('$name1 vs $name2 — Match Preview:\n\n');
+    final buf = StringBuffer('$name1 vs $name2 — here\'s Copa\'s honest take:\n\n');
 
     final analysis = summary['historicalAnalysis'] as String?;
     if (analysis != null) {
@@ -181,7 +184,7 @@ class MatchResponses {
 
     final storylines = summary['keyStorylines'] as List<dynamic>?;
     if (storylines != null && storylines.isNotEmpty) {
-      buf.writeln('Key storylines:');
+      buf.writeln('What to watch for:');
       for (final s in storylines.take(3)) {
         buf.writeln('- $s');
       }
@@ -193,13 +196,13 @@ class MatchResponses {
       final outcome = prediction['predictedOutcome'] ?? '';
       final score = prediction['predictedScore'] ?? '';
       final confidence = prediction['confidence'] ?? '';
-      buf.writeln('Prediction: $outcome ($score) — $confidence% confidence');
+      buf.writeln('Copa\'s call: $outcome ($score) — I\'m $confidence% on this one.');
     }
 
     final ptw = summary['playersToWatch'] as List<dynamic>?;
     if (ptw != null && ptw.isNotEmpty) {
       buf.writeln();
-      buf.writeln('Players to watch:');
+      buf.writeln('Keep your eyes on:');
       for (final p in ptw.take(3)) {
         final pm = p as Map<String, dynamic>;
         buf.writeln('- ${pm['name']} (${pm['teamCode']}) — ${pm['reason']}');
@@ -218,19 +221,20 @@ class MatchResponses {
     final favorites = _kb.getTopFavorites(limit: 10);
     if (favorites.isEmpty) {
       return ChatResponse(
-        text: "Betting odds data is not available right now.",
+        text: "Odds data isn't loaded right now — check back soon.",
         suggestionChips: ['Tournament favorites', 'Help'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('World Cup 2026 — Betting Odds:\n\n');
+    final buf = StringBuffer('World Cup 2026 — here\'s where the smart money is:\n\n');
     for (var i = 0; i < favorites.length; i++) {
       final t = favorites[i];
       buf.writeln('${i + 1}. ${t['team']} — ${t['odds_american']} '
           '(${t['implied_probability_pct']}% implied probability)');
     }
     buf.writeln();
+    buf.writeln('The market has spoken — whether you agree is another story.');
     buf.writeln('Source: Consensus from major bookmakers (DraftKings, BetMGM, FanDuel)');
 
     return ChatResponse(
@@ -250,13 +254,13 @@ class MatchResponses {
 
       if (teams.isEmpty) {
         return ChatResponse(
-          text: "I couldn't find Group $groupLetter. Groups are labeled A through L.",
+          text: "Can't find Group $groupLetter — groups run A through L this time around.",
           suggestionChips: ['Group A', 'Group B', 'Group C'],
           resolvedIntent: intent,
         );
       }
 
-      final buf = StringBuffer('Group $groupLetter:\n\n');
+      final buf = StringBuffer('Group $groupLetter — let\'s see who\'s in the mix:\n\n');
       buf.writeln('Teams: ${teams.map((c) => _kb.getTeamName(c) ?? c).join(', ')}');
       buf.writeln();
       buf.writeln('Matches:');
@@ -280,7 +284,7 @@ class MatchResponses {
     }
 
     // Overview of all groups
-    final buf = StringBuffer('World Cup 2026 Groups (48 teams, 12 groups):\n\n');
+    final buf = StringBuffer('World Cup 2026 — all 48 teams, 12 groups. Here\'s the full draw:\n\n');
     for (final letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L']) {
       final teams = _kb.getTeamsInGroup(letter);
       if (teams.isNotEmpty) {

@@ -160,6 +160,58 @@ class IntentClassifier {
       return ChatIntent(type: ChatIntentType.team, confidence: 0.6, entities: entities);
     }
 
+    // ── Casual conversation intents (after all football-specific intents) ──
+
+    // 21. Small talk
+    if (_isSmallTalk(lower)) {
+      return ChatIntent(type: ChatIntentType.smallTalk, entities: entities);
+    }
+
+    // 22. Joke
+    if (_isJoke(lower)) {
+      return ChatIntent(type: ChatIntentType.joke, entities: entities);
+    }
+
+    // 23. Who are you
+    if (_isWhoAreYou(lower)) {
+      return ChatIntent(type: ChatIntentType.whoAreYou, entities: entities);
+    }
+
+    // 24. GOAT debate
+    if (_isGoat(lower)) {
+      return ChatIntent(type: ChatIntentType.goat, entities: entities);
+    }
+
+    // 25. Bored
+    if (_isBored(lower)) {
+      return ChatIntent(type: ChatIntentType.bored, entities: entities);
+    }
+
+    // 26. Opinion
+    if (_isOpinion(lower)) {
+      return ChatIntent(type: ChatIntentType.opinion, entities: entities);
+    }
+
+    // 27. Compliment
+    if (_isCompliment(lower)) {
+      return ChatIntent(type: ChatIntentType.compliment, entities: entities);
+    }
+
+    // 28. Insult
+    if (_isInsult(lower)) {
+      return ChatIntent(type: ChatIntentType.insult, entities: entities);
+    }
+
+    // 29. Trivia
+    if (_isTrivia(lower)) {
+      return ChatIntent(type: ChatIntentType.trivia, entities: entities);
+    }
+
+    // 30. Off-topic (broad catch — before unknown)
+    if (_isOffTopic(lower)) {
+      return ChatIntent(type: ChatIntentType.offTopic, entities: entities);
+    }
+
     return ChatIntent(type: ChatIntentType.unknown, confidence: 0.0, entities: entities);
   }
 
@@ -307,8 +359,82 @@ class IntentClassifier {
         s.contains('how many stadiums') || (s.contains('format') && !s.contains('formation')) ||
         s.contains('tournament structure') || s.contains('where is the final') ||
         s.contains('host countries') || s.contains('prize money') ||
-        s.contains('fun fact') || s.contains('did you know') ||
         s.contains('tournament facts');
+  }
+
+  bool _isSmallTalk(String s) {
+    return s.contains('how are you') || s.contains("what's up") ||
+        s.contains('how\'s it going') || s.contains('you good') ||
+        s.contains('how you doing') || s.contains('what\'s going on') ||
+        s.contains('how do you do') || s.contains('hows it going');
+  }
+
+  bool _isJoke(String s) {
+    return s.contains('tell me a joke') || s.contains('make me laugh') ||
+        s.contains('say something funny') || s.contains('know any jokes') ||
+        s.contains('got a joke') || s.contains('be funny');
+  }
+
+  bool _isWhoAreYou(String s) {
+    return s.contains('who are you') || s.contains('what are you') ||
+        s.contains('are you real') || s.contains('are you a robot') ||
+        s.contains('are you ai') || s.contains('are you a bot') ||
+        s.contains('are you human') || s.contains('what is copa');
+  }
+
+  bool _isGoat(String s) {
+    return s.contains('goat') || s.contains('greatest of all time') ||
+        s.contains('best player ever') || s.contains('messi or ronaldo') ||
+        s.contains('messi vs ronaldo') || s.contains('ronaldo vs messi') ||
+        s.contains('messi vs pele') || s.contains('pele vs maradona') ||
+        s.contains('best ever');
+  }
+
+  bool _isBored(String s) {
+    return s.contains('i\'m bored') || s.contains('im bored') ||
+        s.contains('entertain me') || s.contains('nothing to do') ||
+        s.contains('i am bored') || s.contains('bore me');
+  }
+
+  bool _isOffTopic(String s) {
+    return s.contains('weather') || s.contains('homework') ||
+        s.contains('book a flight') || s.contains('order food') ||
+        s.contains('recipe') || s.contains('math') ||
+        s.contains('calculate') || s.contains('translate') ||
+        s.contains('meaning of life');
+  }
+
+  bool _isOpinion(String s) {
+    return s.contains('who do you support') || s.contains('your favorite team') ||
+        s.contains('your favourite team') || s.contains('who are you rooting') ||
+        s.contains('who do you root') || s.contains('which team do you') ||
+        s.contains('pick a team') || s.contains('who do you want to win');
+  }
+
+  bool _isCompliment(String s) {
+    return s.contains('you\'re great') || s.contains('youre great') ||
+        s.contains('good job') || s.contains('well done') ||
+        s.contains('love this app') || s.contains('you\'re awesome') ||
+        s.contains('youre awesome') || s.contains('great app') ||
+        s.contains('nice work') || s.contains('impressive') ||
+        (s == 'nice') || (s == 'awesome') || (s == 'amazing') ||
+        (s == 'cool') || (s == 'great');
+  }
+
+  bool _isInsult(String s) {
+    return s.contains('you suck') || s.contains('this is bad') ||
+        s.contains('you\'re wrong') || s.contains('youre wrong') ||
+        s.contains('terrible') || s.contains('useless') ||
+        s.contains('worst') || s.contains('you\'re bad') ||
+        s.contains('youre bad') || s.contains('not helpful') ||
+        s.contains('you stink');
+  }
+
+  bool _isTrivia(String s) {
+    return s.contains('tell me a fact') || s.contains('random fact') ||
+        s.contains('something cool') || s.contains('fun fact') ||
+        s.contains('did you know') || s.contains('trivia') ||
+        s.contains('interesting fact') || s.contains('cool fact');
   }
 
   bool _hasPronoun(String s) {

@@ -19,12 +19,12 @@ class VenueHistoryResponses {
 
     if (venueName != null) {
       final matches = _kb.getVenueMatches(venueName);
-      final buf = StringBuffer('$venueName\n\n');
+      final buf = StringBuffer('$venueName — this is going to be electric.\n\n');
 
       if (matches.isNotEmpty) {
         final city = matches.first['venueCity'] as String? ?? '';
         if (city.isNotEmpty) buf.writeln('Location: $city');
-        buf.writeln('Matches scheduled: ${matches.length}');
+        buf.writeln('Hosting ${matches.length} matches — plenty of football to soak in.');
         buf.writeln();
 
         for (final m in matches.take(5)) {
@@ -39,7 +39,7 @@ class VenueHistoryResponses {
           buf.writeln('...and ${matches.length - 5} more');
         }
       } else {
-        buf.writeln('No match data found for this venue.');
+        buf.writeln('No match schedule for this venue just yet.');
       }
 
       return ChatResponse(
@@ -51,7 +51,7 @@ class VenueHistoryResponses {
 
     // List all venues
     final venues = _kb.getAllVenues();
-    final buf = StringBuffer('World Cup 2026 — 16 Host Venues:\n\n');
+    final buf = StringBuffer('World Cup 2026 — 16 iconic venues across North America. Here\'s the full list:\n\n');
     for (final v in venues) {
       // Get city from first match at this venue
       final matches = _kb.getVenueMatches(v);
@@ -75,20 +75,20 @@ class VenueHistoryResponses {
       if (year != null) {
         final tournament = _kb.getTournamentByYear(year);
         if (tournament != null) {
-          final buf = StringBuffer('World Cup $year — ${tournament['hostCountries']}\n\n');
-          buf.writeln('Winner: ${tournament['winner']}');
-          buf.writeln('Runner-up: ${tournament['runnerUp']}');
+          final buf = StringBuffer('World Cup $year — hosted by ${tournament['hostCountries']}. Here\'s the story:\n\n');
+          buf.writeln('Champions: ${tournament['winner']} lifted the trophy.');
+          buf.writeln('Runner-up: ${tournament['runnerUp']} came agonizingly close.');
           if (tournament['thirdPlace'] != null) {
             buf.writeln('Third place: ${tournament['thirdPlace']}');
           }
-          buf.writeln('Final: ${tournament['finalScore']} at ${tournament['finalVenue']}, ${tournament['finalCity']}');
-          buf.writeln('Top scorer: ${tournament['topScorer']} (${tournament['topScorerGoals']} goals)');
-          buf.writeln('Total matches: ${tournament['totalMatches']} | Goals: ${tournament['totalGoals']}');
+          buf.writeln('The final: ${tournament['finalScore']} at ${tournament['finalVenue']}, ${tournament['finalCity']}');
+          buf.writeln('Golden Boot: ${tournament['topScorer']} found the back of the net ${tournament['topScorerGoals']} times.');
+          buf.writeln('${tournament['totalMatches']} matches played, ${tournament['totalGoals']} goals scored.');
 
           final highlights = tournament['highlights'] as List<dynamic>?;
           if (highlights != null && highlights.isNotEmpty) {
             buf.writeln();
-            buf.writeln('Highlights:');
+            buf.writeln('The moments that defined it:');
             for (final h in highlights.take(3)) {
               buf.writeln('- $h');
             }
@@ -113,14 +113,14 @@ class VenueHistoryResponses {
     final records = _kb.getRecords();
     if (records.isEmpty) {
       return ChatResponse(
-        text: "I have World Cup history from 1930 to 2022. Ask about a specific year "
-            "(e.g. \"World Cup 2022\") or World Cup records!",
+        text: "Nearly a century of World Cup football, from 1930 to 2022. "
+            "Give me a year — \"World Cup 2022\" or \"World Cup 1970\" — and I'll tell you the story.",
         suggestionChips: ['World Cup 2022', 'World Cup 2018', 'World Cup records'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('World Cup Records & History:\n\n');
+    final buf = StringBuffer('World Cup Records — numbers that tell the greatest stories in football:\n\n');
     for (final r in records.take(8)) {
       buf.writeln('${r['category']}: ${r['holder']} (${r['value']})');
       if (r['details'] != null) buf.writeln('  ${r['details']}');
@@ -130,7 +130,7 @@ class VenueHistoryResponses {
     final recentTournaments = _kb.getAllTournaments();
     if (recentTournaments.isNotEmpty) {
       buf.writeln();
-      buf.writeln('Recent winners:');
+      buf.writeln('The trophy\'s recent homes:');
       final recent = recentTournaments.reversed.take(5).toList();
       for (final t in recent) {
         buf.writeln('  ${t['year']}: ${t['winner']}');

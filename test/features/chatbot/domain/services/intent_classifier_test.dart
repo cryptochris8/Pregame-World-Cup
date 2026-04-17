@@ -460,8 +460,13 @@ void main() {
       expect(result.confidence, 0.0);
     });
 
-    test('classifies unrelated question as unknown', () {
+    test('classifies unrelated question as offTopic or unknown', () {
       final result = classifier.classify('what is the meaning of life');
+      expect(result.type, ChatIntentType.offTopic);
+    });
+
+    test('classifies pure gibberish as unknown', () {
+      final result = classifier.classify('xyzzy plugh frobozz');
       expect(result.type, ChatIntentType.unknown);
     });
   });

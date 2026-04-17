@@ -25,26 +25,27 @@ class PredictionResponses {
       final sv = _kb.getSquadValue(teamCode);
       final injuries = _kb.getInjuryConcerns(teamCode);
 
-      final buf = StringBuffer('$teamName — World Cup 2026 Outlook:\n\n');
+      final buf = StringBuffer('$teamName — Copa\'s World Cup 2026 Outlook:\n\n');
 
       if (odds != null) {
         final tier = odds['tier'] ?? '';
         final prob = odds['implied_probability_pct'] ?? '';
         final american = odds['odds_american'] ?? '';
-        buf.writeln('Odds: $american ($prob% implied probability) — Tier: $tier');
+        buf.writeln('The bookmakers have them at $american ($prob% implied) — classified as a $tier.');
       }
       if (sv != null) {
-        buf.writeln('Squad value: ${sv['totalValueFormatted']} (ranked #${sv['rank']})');
+        buf.writeln('Squad value: ${sv['totalValueFormatted']} (ranked #${sv['rank']} in the tournament).');
         final mvp = sv['mostValuablePlayer'] as Map<String, dynamic>?;
         if (mvp != null) {
-          buf.writeln('Most valuable: ${mvp['name']} (${mvp['value']})');
+          buf.writeln('The crown jewel: ${mvp['name']} (${mvp['value']}).');
         }
       }
       if (form != null) {
-        buf.writeln('Recent form: $form');
+        buf.writeln('Coming in with this form: $form');
       }
       if (injuries.isNotEmpty) {
-        buf.writeln('Injury concerns: ${injuries.map((i) => i['playerName']).join(', ')}');
+        buf.writeln('Fitness watch: ${injuries.map((i) => i['playerName']).join(', ')} — '
+            'could be a factor when the final whistle matters most.');
       }
 
       return ChatResponse(
@@ -58,32 +59,33 @@ class PredictionResponses {
     final favorites = _kb.getTopFavorites(limit: 8);
     if (favorites.isEmpty) {
       return ChatResponse(
-        text: "I don't have odds data loaded yet. Try asking about a specific team!",
+        text: "I haven't got the odds loaded just yet. Give me a specific team and I'll "
+            "tell you what I think of their chances.",
         suggestionChips: ['Brazil chances', 'France chances', 'England chances'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('World Cup 2026 — Tournament Favorites:\n\n');
+    final buf = StringBuffer('World Cup 2026 — the usual suspects, with a few worth keeping an eye on:\n\n');
 
     final topTier = favorites.where((o) => o['tier'] == 'favorite').toList();
     final contenders = favorites.where((o) => o['tier'] == 'contender').toList();
     final darkHorses = favorites.where((o) => o['tier'] == 'dark_horse' || o['tier'] == 'dark horse').toList();
 
     if (topTier.isNotEmpty) {
-      buf.writeln('Favorites:');
+      buf.writeln('The heavy hitters:');
       for (final t in topTier) {
         buf.writeln('  ${t['team']} (${t['odds_american']}, ${t['implied_probability_pct']}%)');
       }
     }
     if (contenders.isNotEmpty) {
-      buf.writeln('Contenders:');
+      buf.writeln('Serious contenders — don\'t sleep on them:');
       for (final t in contenders.take(4)) {
         buf.writeln('  ${t['team']} (${t['odds_american']}, ${t['implied_probability_pct']}%)');
       }
     }
     if (darkHorses.isNotEmpty) {
-      buf.writeln('Dark horses:');
+      buf.writeln('Dark horses — there\'s value here:');
       for (final t in darkHorses.take(3)) {
         buf.writeln('  ${t['team']} (${t['odds_american']}, ${t['implied_probability_pct']}%)');
       }
@@ -103,7 +105,7 @@ class PredictionResponses {
 
     if (teamCode == null) {
       return ChatResponse(
-        text: "Which team's recent form would you like to see?",
+        text: "Momentum is everything heading into a tournament. Whose form are we looking at?",
         suggestionChips: ['USA form', 'Argentina form', 'France form', 'Brazil form'],
         resolvedIntent: intent,
       );
@@ -115,13 +117,13 @@ class PredictionResponses {
 
     if (formData == null && formSummary == null) {
       return ChatResponse(
-        text: "I don't have recent form data for $teamName.",
+        text: "I haven't got the recent form data for $teamName just yet. Check back closer to kickoff.",
         suggestionChips: ['$teamName schedule', '$teamName squad'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('$teamName — Recent Form:\n\n');
+    final buf = StringBuffer('$teamName — here\'s how they\'re coming into the tournament:\n\n');
     if (formSummary != null) {
       buf.writeln(formSummary);
       buf.writeln();
@@ -130,7 +132,7 @@ class PredictionResponses {
     if (formData != null) {
       final matches = (formData['recent_matches'] ?? formData['matches']) as List<dynamic>?;
       if (matches != null && matches.isNotEmpty) {
-        buf.writeln('Recent results:');
+        buf.writeln('The recent results tell the story:');
         for (final m in matches.take(5)) {
           final match = m as Map<String, dynamic>;
           final date = formatDate(match['date'] as String? ?? '');

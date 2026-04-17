@@ -19,8 +19,8 @@ class PlayerTeamResponses {
     final playerName = intent.player;
     if (playerName == null) {
       return ChatResponse(
-        text: "Which player would you like to know about? I have profiles "
-            "for all 1,248 World Cup squad players across 48 teams!",
+        text: "Who are we scouting? I've got the full rundown on all 1,248 players "
+            "across 48 squads — pick a name and let's dive in.",
         suggestionChips: ['Messi stats', 'Mbappe stats', 'Kane stats', 'Pulisic stats'],
         resolvedIntent: intent,
       );
@@ -41,16 +41,16 @@ class PlayerTeamResponses {
       final prediction = stats['worldCup2026Prediction'] as String?;
 
       final buf = StringBuffer('$name — $teamName\n\n');
-      buf.writeln('World Cup career: $apps appearances, $goals goals, $assists assists');
-      if (wcs.isNotEmpty) buf.writeln('Tournaments: $wcs');
-      if (awards.isNotEmpty) buf.writeln('Awards: ${awards.join(', ')}');
-      if (legacy != null) buf.writeln('Legacy rating: $legacy/10');
+      buf.writeln('On the World Cup stage: $apps appearances, $goals goals, $assists assists.');
+      if (wcs.isNotEmpty) buf.writeln('Tournament pedigree: $wcs');
+      if (awards.isNotEmpty) buf.writeln('Honors: ${awards.join(', ')}');
+      if (legacy != null) buf.writeln('Copa\'s legacy rating: $legacy/10');
 
       // Tournament breakdown
       final tourneyStats = stats['tournamentStats'] as List<dynamic>?;
       if (tourneyStats != null && tourneyStats.isNotEmpty) {
         buf.writeln();
-        buf.writeln('Tournament breakdown:');
+        buf.writeln('How the story unfolded, tournament by tournament:');
         for (final ts in tourneyStats) {
           final t = ts as Map<String, dynamic>;
           buf.writeln('  ${t['year']}: ${t['matches']} matches, ${t['goals']} goals '
@@ -60,7 +60,7 @@ class PlayerTeamResponses {
 
       if (prediction != null) {
         buf.writeln();
-        buf.writeln('2026 outlook: ${prediction.length > 150 ? '${prediction.substring(0, 147)}...' : prediction}');
+        buf.writeln('What to expect in 2026: ${prediction.length > 150 ? '${prediction.substring(0, 147)}...' : prediction}');
       }
 
       return ChatResponse(
@@ -84,12 +84,12 @@ class PlayerTeamResponses {
 
       final buf = StringBuffer('$name — $teamName\n\n');
       if (bio.isNotEmpty) buf.writeln(bio);
-      if (style.isNotEmpty) buf.writeln('\nPlaying style: $style');
+      if (style.isNotEmpty) buf.writeln('\nHow they play: $style');
       if (strengths.isNotEmpty) {
-        buf.writeln('Key strengths: ${strengths.join(', ')}');
+        buf.writeln('What makes them dangerous: ${strengths.join(', ')}');
       }
-      if (role.isNotEmpty) buf.writeln('\n2026 role: $role');
-      if (fact.isNotEmpty) buf.writeln('\nFun fact: $fact');
+      if (role.isNotEmpty) buf.writeln('\nTheir 2026 role: $role');
+      if (fact.isNotEmpty) buf.writeln('\nOne more thing: $fact');
 
       // Also pull basic squad data if available
       final teamCode2 = _kb.resolveTeamCode(code) ?? code;
@@ -119,10 +119,9 @@ class PlayerTeamResponses {
           final teamName = squadResult['teamName'] ?? teamCode;
           return ChatResponse(
             text: '${p['firstName']} ${p['lastName']} — $teamName\n\n'
-                'Position: ${p['position']}\n'
+                'Lines up at ${p['position']} | Wears the #${p['jerseyNumber']}\n'
                 'Club: ${p['club']} (${p['clubLeague']})\n'
-                'Jersey: #${p['jerseyNumber']}\n'
-                'Caps: ${p['caps']}, Goals: ${p['goals']}\n'
+                'International record: ${p['caps']} caps, ${p['goals']} goals\n'
                 'Market value: \$${formatNumber(p['marketValue'])}',
             suggestionChips: ['$teamName squad', '$teamName schedule'],
             resolvedIntent: intent,
@@ -132,8 +131,8 @@ class PlayerTeamResponses {
     }
 
     return ChatResponse(
-      text: "I couldn't find detailed info for \"$playerName\". "
-          "Try a player's full name or a well-known name like Messi, Mbappe, or Pulisic.",
+      text: "I couldn't track down \"$playerName\" in my database. "
+          "Try their full name — or go with a well-known one like Messi, Mbappe, or Pulisic.",
       suggestionChips: ['Messi stats', 'Mbappe stats', 'Pulisic stats'],
       resolvedIntent: intent,
     );
@@ -149,20 +148,21 @@ class PlayerTeamResponses {
 
       if (injuries.isEmpty) {
         return ChatResponse(
-          text: "No injury concerns reported for $teamName heading into the tournament.",
+          text: "Good news — $teamName look to have a clean bill of health heading into the tournament. "
+              "That's a massive advantage when the pressure ramps up.",
           suggestionChips: ['$teamName squad', '$teamName schedule'],
           resolvedIntent: intent,
         );
       }
 
-      final buf = StringBuffer('$teamName — Injury Report:\n\n');
+      final buf = StringBuffer('$teamName — Injury Watch:\n\n');
       for (final inj in injuries) {
         final status = (inj['availabilityStatus'] as String? ?? '').replaceAll('_', ' ');
-        buf.writeln('${inj['playerName']} (${inj['position']})');
+        buf.writeln('${inj['playerName']} (${inj['position']}) — a blow for the squad.');
         buf.writeln('  Status: $status');
         buf.writeln('  Issue: ${inj['injuryType']}');
         if (inj['expectedReturn'] != null) {
-          buf.writeln('  Expected return: ${inj['expectedReturn']}');
+          buf.writeln('  Racing against time — expected back: ${inj['expectedReturn']}');
         }
         buf.writeln();
       }
@@ -176,8 +176,8 @@ class PlayerTeamResponses {
 
     // General injury overview — show notable ones
     return ChatResponse(
-      text: "Ask about a specific team's injury report, e.g. \"France injuries\" "
-          "or \"Is Mbappe fit?\"",
+      text: "Injuries can make or break a World Cup campaign. Ask about a specific team — "
+          "\"France injuries\" or \"Is Mbappe fit?\" — and I'll give you the latest.",
       suggestionChips: ['France injuries', 'England injuries', 'Brazil injuries'],
       resolvedIntent: intent,
     );
@@ -188,7 +188,7 @@ class PlayerTeamResponses {
     final teamCode = intent.team;
     if (teamCode == null) {
       return ChatResponse(
-        text: "Which team's manager would you like to know about?",
+        text: "The manager can be the difference between a group exit and a deep run. Whose gaffer are we looking at?",
         suggestionChips: ['Argentina coach', 'France coach', 'Brazil coach', 'USA coach'],
         resolvedIntent: intent,
       );
@@ -199,7 +199,7 @@ class PlayerTeamResponses {
 
     if (mgr == null) {
       return ChatResponse(
-        text: "I don't have manager data for $teamName yet.",
+        text: "I haven't got the full coaching profile for $teamName loaded yet — check back soon.",
         suggestionChips: ['$teamName squad', '$teamName schedule'],
         resolvedIntent: intent,
       );
@@ -212,13 +212,13 @@ class PlayerTeamResponses {
     final trophies = (mgr['trophies'] as List<dynamic>?) ?? [];
     final bio = mgr['bio'] as String?;
 
-    final buf = StringBuffer('$name — $teamName Manager\n\n');
-    buf.writeln('Formation: $formation | Style: $style');
-    buf.writeln('Career win rate: $winRate%');
+    final buf = StringBuffer('$name — the mind behind $teamName\n\n');
+    buf.writeln('Tactically, lines up in a $formation | Style: $style');
+    buf.writeln('Win rate of $winRate% across his career — the numbers speak.');
     buf.writeln('Record: ${mgr['careerWins']}W ${mgr['careerDraws']}D ${mgr['careerLosses']}L');
 
     if (trophies.isNotEmpty) {
-      buf.writeln('Trophies: ${trophies.take(5).join(', ')}');
+      buf.writeln('Silverware: ${trophies.take(5).join(', ')}');
     }
 
     if (bio != null) {
@@ -238,7 +238,7 @@ class PlayerTeamResponses {
     final teamCode = intent.team;
     if (teamCode == null) {
       return ChatResponse(
-        text: "Which team would you like to know about? There are 48 teams in the 2026 World Cup.",
+        text: "48 nations, one dream. Which squad are we breaking down?",
         suggestionChips: ['USA', 'Brazil', 'France', 'Argentina'],
         resolvedIntent: intent,
       );
@@ -252,23 +252,23 @@ class PlayerTeamResponses {
     final teamData = await _kb.getTeamData(teamCode);
 
     final buf = StringBuffer(teamName);
-    if (group != null) buf.write(' (Group $group)');
+    if (group != null) buf.write(' — drawn into Group $group');
     buf.writeln('\n');
 
     if (sv != null) {
-      buf.writeln('Squad value: ${sv['totalValueFormatted']} (ranked #${sv['rank']})');
+      buf.writeln('This squad is valued at ${sv['totalValueFormatted']} (ranked #${sv['rank']} in the tournament).');
     }
     if (odds != null) {
-      buf.writeln('Odds: ${odds['odds_american']} (${odds['tier']})');
+      buf.writeln('The market has them at ${odds['odds_american']} — classified as a ${odds['tier']}.');
     }
     if (form != null) {
-      buf.writeln('Form: $form');
+      buf.writeln('Coming in with: $form');
     }
 
     if (teamData != null) {
       final players = teamData['players'] as List<dynamic>?;
       if (players != null) {
-        buf.writeln('Squad size: ${players.length} players');
+        buf.writeln('${players.length} players selected — built for tournament football.');
 
         // Key players by position
         final fwd = players.where((p) => (p as Map<String, dynamic>)['position'] == 'FW').toList();
@@ -279,14 +279,14 @@ class PlayerTeamResponses {
             final pm = p as Map<String, dynamic>;
             return '${pm['firstName']} ${pm['lastName']}';
           }).join(', ');
-          buf.writeln('Key forwards: $topFwd');
+          buf.writeln('Up front: $topFwd — that\'s where the goals come from.');
         }
         if (mid.isNotEmpty) {
           final topMid = mid.take(3).map((p) {
             final pm = p as Map<String, dynamic>;
             return '${pm['firstName']} ${pm['lastName']}';
           }).join(', ');
-          buf.writeln('Key midfielders: $topMid');
+          buf.writeln('Pulling the strings in midfield: $topMid');
         }
       }
     }
@@ -308,24 +308,23 @@ class PlayerTeamResponses {
 
       if (sv == null) {
         return ChatResponse(
-          text: "I don't have squad value data for $teamName.",
+          text: "I haven't got squad value data for $teamName loaded up yet.",
           suggestionChips: ['Most valuable squads', '$teamName squad'],
           resolvedIntent: intent,
         );
       }
 
-      final buf = StringBuffer('$teamName — Squad Value:\n\n');
-      buf.writeln('Total: ${sv['totalValueFormatted']} (ranked #${sv['rank']} in the tournament)');
-      buf.writeln('Squad size: ${sv['playerCount']} players');
-      buf.writeln('Average value: \$${formatNumber(sv['averagePlayerValue'])}');
+      final buf = StringBuffer('$teamName — Squad Value Breakdown:\n\n');
+      buf.writeln('Combined worth: ${sv['totalValueFormatted']} (ranked #${sv['rank']} in the tournament).');
+      buf.writeln('${sv['playerCount']} players, averaging \$${formatNumber(sv['averagePlayerValue'])} each.');
 
       final mvp = sv['mostValuablePlayer'] as Map<String, dynamic>?;
       if (mvp != null) {
-        buf.writeln('Most valuable: ${mvp['name']} (${mvp['value']})');
+        buf.writeln('The headline act: ${mvp['name']} (${mvp['value']})');
       }
       final lvp = sv['leastValuablePlayer'] as Map<String, dynamic>?;
       if (lvp != null) {
-        buf.writeln('Lowest valued: ${lvp['name']} (${lvp['value']})');
+        buf.writeln('Value pick: ${lvp['name']} (${lvp['value']}) — don\'t let the price fool you.');
       }
 
       return ChatResponse(
@@ -347,13 +346,13 @@ class PlayerTeamResponses {
 
     if (withValues.isEmpty) {
       return ChatResponse(
-        text: "Squad value data is not available right now.",
+        text: "Squad value data isn't loaded right now — check back soon.",
         suggestionChips: ['Tournament favorites', 'Help'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('World Cup 2026 — Most Valuable Squads:\n\n');
+    final buf = StringBuffer('World Cup 2026 — the richest squads in the tournament. Money doesn\'t guarantee the trophy, but it sure doesn\'t hurt:\n\n');
     for (var i = 0; i < withValues.length && i < 10; i++) {
       final t = withValues[i];
       final mvp = t['mostValuablePlayer'] as Map<String, dynamic>?;
@@ -376,8 +375,8 @@ class PlayerTeamResponses {
 
     if (player1Name == null || player2Name == null) {
       return ChatResponse(
-        text: "I need two player names to compare. Try \"Compare Messi and Mbappe\" "
-            "or \"Bellingham vs Kane\".",
+        text: "Now we're talking — give me two names and I'll break it down. "
+            "Try \"Compare Messi and Mbappe\" or \"Bellingham vs Kane.\"",
         suggestionChips: ['Compare Messi and Mbappe', 'Compare Kane and Haaland'],
         resolvedIntent: intent,
       );
@@ -393,18 +392,18 @@ class PlayerTeamResponses {
 
     if (stats1 == null && squad1 == null && stats2 == null && squad2 == null) {
       return ChatResponse(
-        text: "I couldn't find detailed data for both players. "
-            "Try well-known names like Messi, Mbappe, Kane, or Bellingham.",
+        text: "I couldn't pull up enough data on both of them for a fair comparison. "
+            "Try household names — Messi, Mbappe, Kane, Bellingham.",
         suggestionChips: ['Messi stats', 'Mbappe stats'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('$name1 vs $name2 — Player Comparison:\n\n');
+    final buf = StringBuffer('$name1 vs $name2 — let\'s settle this.\n\n');
 
     // WC career stats if available
     if (stats1 != null || stats2 != null) {
-      buf.writeln('World Cup Career:');
+      buf.writeln('On the World Cup stage:');
       if (stats1 != null) {
         buf.writeln('  $name1: ${stats1['worldCupAppearances'] ?? 0} apps, '
             '${stats1['worldCupGoals'] ?? 0} goals, ${stats1['worldCupAssists'] ?? 0} assists'
@@ -420,7 +419,7 @@ class PlayerTeamResponses {
 
     // Club/squad info
     if (squad1 != null || squad2 != null) {
-      buf.writeln('Current:');
+      buf.writeln('Where they stand today:');
       if (squad1 != null) {
         final p = squad1['player'] as Map<String, dynamic>;
         buf.writeln('  $name1: ${p['club']} (${p['position']}) — '

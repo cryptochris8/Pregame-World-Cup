@@ -20,6 +20,16 @@ enum ChatIntentType {
   playerComparison,
   countdown,
   tournamentFacts,
+  smallTalk,
+  joke,
+  whoAreYou,
+  goat,
+  bored,
+  offTopic,
+  opinion,
+  compliment,
+  insult,
+  trivia,
   unknown,
 }
 

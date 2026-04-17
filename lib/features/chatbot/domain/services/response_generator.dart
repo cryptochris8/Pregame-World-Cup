@@ -23,7 +23,7 @@ class ResponseGenerator {
 
   ResponseGenerator({required ChatbotKnowledgeBase knowledgeBase})
       : _kb = knowledgeBase {
-    _commonResponses = const CommonResponses();
+    _commonResponses = CommonResponses();
     _matchResponses = MatchResponses(_kb);
     _predictionResponses = PredictionResponses(_kb);
     _playerTeamResponses = PlayerTeamResponses(_kb);
@@ -73,6 +73,26 @@ class ResponseGenerator {
         return _commonResponses.countdown(intent);
       case ChatIntentType.tournamentFacts:
         return _commonResponses.tournamentFacts(intent);
+      case ChatIntentType.smallTalk:
+        return _commonResponses.smallTalk(intent);
+      case ChatIntentType.joke:
+        return _commonResponses.joke(intent);
+      case ChatIntentType.whoAreYou:
+        return _commonResponses.whoAreYou(intent);
+      case ChatIntentType.goat:
+        return _commonResponses.goat(intent);
+      case ChatIntentType.bored:
+        return _commonResponses.bored(intent);
+      case ChatIntentType.offTopic:
+        return _commonResponses.offTopic(intent);
+      case ChatIntentType.opinion:
+        return _commonResponses.opinion(intent);
+      case ChatIntentType.compliment:
+        return _commonResponses.compliment(intent);
+      case ChatIntentType.insult:
+        return _commonResponses.insult(intent);
+      case ChatIntentType.trivia:
+        return _commonResponses.trivia(intent);
       case ChatIntentType.unknown:
         return _commonResponses.unknown(intent);
     }
