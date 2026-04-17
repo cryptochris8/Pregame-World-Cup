@@ -14,15 +14,18 @@ interface GoalkeeperProps {
   ballAimY: number
   isBallKicked: boolean
   isSlowed: boolean
+  /** Whether the keeper just made a save — triggers celebration bounce */
+  isCelebrating?: boolean
 }
 
-export function Goalkeeper({ difficulty, ballAimX, ballAimY, isBallKicked, isSlowed }: GoalkeeperProps) {
+export function Goalkeeper({ difficulty, ballAimX, ballAimY, isBallKicked, isSlowed, isCelebrating = false }: GoalkeeperProps) {
   const bodyRef = useRef<RapierRigidBody>(null)
   const meshGroupRef = useRef<THREE.Group>(null!)
   const targetX = useRef(0)
   const targetY = useRef(SOCCER_CONFIG.keeperStartPosition[1])
   const hasDived = useRef(false)
   const diveTimer = useRef<number | null>(null)
+  const celebrateStart = useRef(-1)
 
   const keeperSettings = KEEPER_DIFFICULTY[difficulty]
   const effectiveSpeed = isSlowed ? keeperSettings.diveSpeed * 0.5 : keeperSettings.diveSpeed
@@ -65,9 +68,34 @@ export function Goalkeeper({ difficulty, ballAimX, ballAimY, isBallKicked, isSlo
     }
   }, [isBallKicked, ballAimX, ballAimY, keeperSettings, isSlowed])
 
+  // Reset celebration timer when not celebrating
+  useEffect(() => {
+    if (!isCelebrating) {
+      celebrateStart.current = -1
+    }
+  }, [isCelebrating])
+
   useFrame((state, delta) => {
     if (!bodyRef.current) return
     const pos = bodyRef.current.translation()
+
+    // Celebration bounce on save
+    if (isCelebrating && meshGroupRef.current) {
+      if (celebrateStart.current < 0) celebrateStart.current = state.clock.elapsedTime
+      const celElapsed = state.clock.elapsedTime - celebrateStart.current
+      const celDuration = 0.8
+      if (celElapsed < celDuration) {
+        const progress = celElapsed / celDuration
+        // Bouncy scale effect: quick scale up then settle
+        const bounce = 1 + Math.sin(progress * Math.PI * 3) * 0.15 * (1 - progress)
+        meshGroupRef.current.scale.set(bounce, bounce, bounce)
+      } else {
+        meshGroupRef.current.scale.set(1, 1, 1)
+      }
+    } else if (meshGroupRef.current) {
+      // Ensure scale is reset when not celebrating
+      meshGroupRef.current.scale.lerp(new THREE.Vector3(1, 1, 1), 0.1)
+    }
 
     if (isBallKicked && hasDived.current) {
       // Move towards target using setNextKinematicTranslation for proper collision

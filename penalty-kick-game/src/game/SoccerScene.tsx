@@ -12,6 +12,9 @@ import { useSoccer } from './useSoccer'
 import { SOCCER_CONFIG, getTotalKicks } from './config'
 import { ScorePopup } from '../components/ScorePopup'
 import { Confetti } from '../components/Confetti'
+import { GoalFlash } from '../components/GoalFlash'
+import { NetRipple } from '../components/NetRipple'
+import { useScreenShake } from '../components/ScreenShake'
 import { audioManager } from '../core/AudioManager'
 import { BallTrail } from '../components/BallTrail'
 import { HytopiaAvatar } from '../components/HytopiaAvatar'
@@ -276,9 +279,15 @@ export function SoccerScene() {
     resetGame,
   } = useSoccer()
 
+  // Screen shake
+  const { triggerShake } = useScreenShake()
+
   // Popup & confetti state (inlined from useGameScene)
   const [popups, setPopups] = useState<PopupData[]>([])
   const [showConfetti, setShowConfetti] = useState(false)
+  const [showGoalFlash, setShowGoalFlash] = useState(false)
+  const [showNetRipple, setShowNetRipple] = useState(false)
+  const [keeperCelebrating, setKeeperCelebrating] = useState(false)
   const popupIdRef = useRef(0)
 
   const addPopup = useCallback((text: string, position: [number, number, number], color: string) => {
@@ -355,20 +364,32 @@ export function SoccerScene() {
         text = 'GOAL!'
         color = '#2ECC71'
         audioManager.play('goalCheer')
-        audioManager.play('goalReaction')
-        const goalVoices = ['whatAGoal', 'whatABeauty', 'crowdGoesWild'] as const
+        audioManager.play('crowdCheer')
+        const goalVoices = ['whatAGoal', 'whatABeauty', 'crowdGoesWild', 'goalStrike', 'goalNoChance', 'goalTopCorner', 'goalBackOfNet', 'goalClinical'] as const
         audioManager.playVoice(goalVoices[Math.floor(Math.random() * goalVoices.length)])
         triggerConfetti()
+        // Visual effects: strong shake, flash, net ripple
+        triggerShake(0.3, 300)
+        setShowGoalFlash(true)
+        setTimeout(() => setShowGoalFlash(false), 200)
+        setShowNetRipple(true)
+        setTimeout(() => setShowNetRipple(false), 600)
       } else if (lastResult === 'saved') {
         text = 'Saved! GK +1'
         color = '#E74C3C'
-        const saveVoices = ['beautifulSave', 'greatSave'] as const
+        const saveVoices = ['beautifulSave', 'greatSave', 'saveIncredible', 'saveDenied', 'saveKeeperNo', 'saveWhatAStop', 'saveAcrobatic'] as const
         audioManager.playVoice(saveVoices[Math.floor(Math.random() * saveVoices.length)])
+        audioManager.play('crowdGroan')
+        // Visual effects: medium shake, keeper celebration
+        triggerShake(0.15, 200)
+        setKeeperCelebrating(true)
+        setTimeout(() => setKeeperCelebrating(false), 1000)
       } else {
         text = 'Wide!'
         color = '#888'
         audioManager.play('whistle')
-        const missVoices = ['nearMiss', 'soClose'] as const
+        audioManager.play('crowdGroan')
+        const missVoices = ['nearMiss', 'soClose', 'missJustWide', 'missOverBar', 'missKicking', 'missSoClose'] as const
         audioManager.playVoice(missVoices[Math.floor(Math.random() * missVoices.length)])
       }
 
@@ -382,7 +403,7 @@ export function SoccerScene() {
     if (soccerPhase !== 'result') {
       resultHandled.current = false
     }
-  }, [soccerPhase, lastResult, currentKick, triggerConfetti, addPopup, nextKick])
+  }, [soccerPhase, lastResult, currentKick, triggerConfetti, triggerShake, addPopup, nextKick])
 
   // Game over
   useEffect(() => {
@@ -414,6 +435,7 @@ export function SoccerScene() {
           ballAimY={aimY}
           isBallKicked={soccerPhase === 'flying'}
           isSlowed={keeperSlowed}
+          isCelebrating={keeperCelebrating}
         />
         <SoccerBall />
 
@@ -435,7 +457,10 @@ export function SoccerScene() {
         />
       ))}
 
-      {showConfetti && <Confetti position={[0, 2, -8]} />}
+      {showConfetti && <Confetti position={[0, 2, -8]} count={100} />}
+
+      <GoalFlash active={showGoalFlash} duration={0.15} />
+      <NetRipple active={showNetRipple} />
 
       {soccerPhase === 'aiming' && (
         <mesh position={[aimX, aimY, SOCCER_CONFIG.goalPosition[2] + 0.5]}>

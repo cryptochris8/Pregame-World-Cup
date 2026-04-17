@@ -60,3 +60,14 @@ const DIFFICULTY_KICKS: Record<Difficulty, number> = {
 export function getTotalKicks(difficulty: Difficulty): number {
   return DIFFICULTY_KICKS[difficulty]
 }
+
+// Scoring constants
+export const SCORING = {
+  /** Number of top scores to keep in the leaderboard */
+  maxHighScores: 5,
+  /** localStorage key for persisted high scores */
+  highScoreKey: 'pregame-pk-highscores',
+  /** Combo thresholds for badge display */
+  comboFireThreshold: 2,
+  comboUnstoppableThreshold: 3,
+} as const

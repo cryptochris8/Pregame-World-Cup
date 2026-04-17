@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { SOCCER_CONFIG } from './config'
+import { useGameStore } from '../stores/useGameStore'
 
 type SoccerPhase = 'aiming' | 'charging' | 'flying' | 'result' | 'done'
 type KickResult = 'goal' | 'saved' | 'miss'
@@ -15,6 +16,7 @@ interface SoccerState {
   power: number
   lastResult: KickResult | null
   keeperSlowed: boolean
+  isSuddenDeath: boolean
 
   setAim: (x: number, y: number) => void
   startCharging: () => void
@@ -39,6 +41,7 @@ export const useSoccer = create<SoccerState>((set, get) => ({
   power: 0,
   lastResult: null,
   keeperSlowed: false,
+  isSuddenDeath: false,
 
   setAim: (x, y) => set({ aimX: x, aimY: y }),
 
@@ -54,6 +57,9 @@ export const useSoccer = create<SoccerState>((set, get) => ({
 
   registerGoal: () => {
     if (get().phase !== 'flying') return
+    const gameStore = useGameStore.getState()
+    gameStore.incrementCombo()
+    gameStore.recordShot(true)
     set((s) => ({
       phase: 'result',
       lastResult: 'goal',
@@ -63,6 +69,10 @@ export const useSoccer = create<SoccerState>((set, get) => ({
 
   registerSaved: () => {
     if (get().phase !== 'flying') return
+    const gameStore = useGameStore.getState()
+    gameStore.resetCombo()
+    gameStore.incrementKeeperScore()
+    gameStore.recordShot(true) // on target but saved
     set((s) => ({
       phase: 'result',
       lastResult: 'saved',
@@ -72,13 +82,34 @@ export const useSoccer = create<SoccerState>((set, get) => ({
 
   registerMiss: () => {
     if (get().phase !== 'flying') return
+    const gameStore = useGameStore.getState()
+    gameStore.resetCombo()
+    gameStore.recordShot(false) // off target
     set({ phase: 'result', lastResult: 'miss' })
   },
 
   nextKick: () => {
-    const { currentKick, effectiveTotalKicks } = get()
+    const { currentKick, effectiveTotalKicks, playerGoals, opponentGoals } = get()
+
     if (currentKick >= effectiveTotalKicks) {
-      set({ phase: 'done' })
+      // Check for sudden death: tied after all kicks
+      if (playerGoals === opponentGoals) {
+        // Enter or continue sudden death — add one more kick
+        set((s) => ({
+          isSuddenDeath: true,
+          effectiveTotalKicks: s.effectiveTotalKicks + 1,
+          currentKick: currentKick + 1,
+          phase: 'aiming',
+          aimX: 0,
+          aimY: 1.2,
+          power: 0,
+          lastResult: null,
+          keeperSlowed: false,
+        }))
+      } else {
+        // Someone leads — game is over
+        set({ phase: 'done' })
+      }
     } else {
       set({
         currentKick: currentKick + 1,
@@ -105,5 +136,6 @@ export const useSoccer = create<SoccerState>((set, get) => ({
     power: 0,
     lastResult: null,
     keeperSlowed: false,
+    isSuddenDeath: false,
   }),
 }))
