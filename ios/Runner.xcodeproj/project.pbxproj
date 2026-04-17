@@ -17,6 +17,7 @@
 		WC0001001000000000000001 /* WorldCupWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = WC0001002000000000000001 /* WorldCupWidget.swift */; };
 		WC0001001000000000000002 /* WidgetInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = WC0001002000000000000002 /* Info.plist */; };
 		WC0001001000000000000003 /* WorldCupWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = WC0001003000000000000001 /* WorldCupWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		WC0001001000000000000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = WC0001002000000000000003 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		A1B2C3D4E5F6A7B8C9D0E1F2 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		WC0001002000000000000001 /* WorldCupWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupWidget.swift; sourceTree = "<group>"; };
 		WC0001002000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		WC0001002000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		WC0001003000000000000001 /* WorldCupWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WorldCupWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 			children = (
 				WC0001002000000000000001 /* WorldCupWidget.swift */,
 				WC0001002000000000000002 /* Info.plist */,
+				WC0001002000000000000003 /* Assets.xcassets */,
 			);
 			path = WorldCupWidget;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				WC0001001000000000000004 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
