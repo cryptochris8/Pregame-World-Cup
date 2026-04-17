@@ -35,7 +35,7 @@ export function GameOverScreen() {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'rgba(0,0,0,0.85)',
+      background: 'linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(76,29,149,0.9) 50%, rgba(15,23,42,0.95) 100%)',
       zIndex: 100,
       overflow: 'auto',
     }}>
@@ -112,12 +112,12 @@ export function GameOverScreen() {
       {/* Mini leaderboard */}
       {highScores.length > 0 && (
         <div style={{
-          background: 'rgba(255,255,255,0.05)',
+          background: 'rgba(59, 130, 246, 0.1)',
           borderRadius: '12px',
           padding: '12px 24px',
           marginBottom: '1.5rem',
           minWidth: '260px',
-          border: '1px solid rgba(255,255,255,0.08)',
+          border: '1px solid rgba(59, 130, 246, 0.2)',
         }}>
           <div style={{
             fontSize: '0.75rem',
@@ -158,23 +158,23 @@ export function GameOverScreen() {
           padding: '16px 64px',
           borderRadius: '12px',
           border: 'none',
-          background: 'linear-gradient(135deg, #4CAF50, #388E3C)',
+          background: 'linear-gradient(135deg, #EA580C, #FBBF24)',
           color: '#fff',
           fontSize: '1.2rem',
           fontWeight: 700,
           cursor: 'pointer',
           letterSpacing: '2px',
           textTransform: 'uppercase',
-          boxShadow: '0 4px 20px rgba(76, 175, 80, 0.4)',
+          boxShadow: '0 4px 20px rgba(234, 88, 12, 0.4)',
           transition: 'transform 0.15s, box-shadow 0.15s',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'scale(1.05)'
-          e.currentTarget.style.boxShadow = '0 6px 30px rgba(76, 175, 80, 0.6)'
+          e.currentTarget.style.boxShadow = '0 6px 30px rgba(234, 88, 12, 0.6)'
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = 'scale(1)'
-          e.currentTarget.style.boxShadow = '0 4px 20px rgba(76, 175, 80, 0.4)'
+          e.currentTarget.style.boxShadow = '0 4px 20px rgba(234, 88, 12, 0.4)'
         }}
       >
         Play Again
@@ -186,11 +186,11 @@ export function GameOverScreen() {
 function StatBadge({ label, value }: { label: string; value: string }) {
   return (
     <div style={{
-      background: 'rgba(255,255,255,0.06)',
+      background: 'rgba(124, 58, 237, 0.15)',
       borderRadius: '10px',
       padding: '8px 16px',
       textAlign: 'center',
-      border: '1px solid rgba(255,255,255,0.08)',
+      border: '1px solid rgba(124, 58, 237, 0.3)',
     }}>
       <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#fff' }}>{value}</div>
       <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1px' }}>{label}</div>

@@ -60,11 +60,11 @@ export function SoccerHUD() {
         display: 'flex',
         gap: '24px',
         alignItems: 'center',
-        background: 'rgba(0,0,0,0.6)',
+        background: 'linear-gradient(135deg, rgba(76,29,149,0.6), rgba(59,130,246,0.4))',
         padding: '12px 32px',
         borderRadius: '16px',
         backdropFilter: 'blur(10px)',
-        border: '1px solid rgba(255,255,255,0.1)',
+        border: '1px solid rgba(124,58,237,0.3)',
         zIndex: 50,
         pointerEvents: 'none',
       }}>

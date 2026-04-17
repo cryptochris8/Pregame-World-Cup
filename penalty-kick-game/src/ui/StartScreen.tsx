@@ -26,14 +26,14 @@ export function StartScreen() {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'linear-gradient(135deg, #0a1628 0%, #1a3a5c 50%, #0d2137 100%)',
+      background: 'linear-gradient(135deg, #0F172A 0%, #4C1D95 30%, #3B82F6 60%, #0F172A 100%)',
       zIndex: 100,
     }}>
       <h1 style={{
         fontSize: '3.5rem',
         fontWeight: 900,
         marginBottom: '0.5rem',
-        background: 'linear-gradient(135deg, #4CAF50, #81C784)',
+        background: 'linear-gradient(135deg, #7C3AED, #3B82F6, #EA580C)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         textShadow: 'none',
@@ -63,9 +63,9 @@ export function StartScreen() {
             style={{
               padding: '16px 28px',
               borderRadius: '12px',
-              border: difficulty === d.value ? '2px solid #4CAF50' : '2px solid rgba(255,255,255,0.15)',
+              border: difficulty === d.value ? '2px solid #7C3AED' : '2px solid rgba(255,255,255,0.15)',
               background: difficulty === d.value
-                ? 'rgba(76, 175, 80, 0.2)'
+                ? 'rgba(124, 58, 237, 0.25)'
                 : 'rgba(255,255,255,0.05)',
               color: '#fff',
               cursor: 'pointer',
@@ -94,23 +94,23 @@ export function StartScreen() {
           padding: '16px 64px',
           borderRadius: '12px',
           border: 'none',
-          background: 'linear-gradient(135deg, #4CAF50, #388E3C)',
+          background: 'linear-gradient(135deg, #EA580C, #FBBF24)',
           color: '#fff',
           fontSize: '1.2rem',
           fontWeight: 700,
           cursor: 'pointer',
           letterSpacing: '2px',
           textTransform: 'uppercase',
-          boxShadow: '0 4px 20px rgba(76, 175, 80, 0.4)',
+          boxShadow: '0 4px 20px rgba(234, 88, 12, 0.4)',
           transition: 'transform 0.15s, box-shadow 0.15s',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'scale(1.05)'
-          e.currentTarget.style.boxShadow = '0 6px 30px rgba(76, 175, 80, 0.6)'
+          e.currentTarget.style.boxShadow = '0 6px 30px rgba(234, 88, 12, 0.6)'
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = 'scale(1)'
-          e.currentTarget.style.boxShadow = '0 4px 20px rgba(76, 175, 80, 0.4)'
+          e.currentTarget.style.boxShadow = '0 4px 20px rgba(234, 88, 12, 0.4)'
         }}
       >
         Play
