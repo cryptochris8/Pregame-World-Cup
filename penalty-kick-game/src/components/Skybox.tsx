@@ -1,7 +1,12 @@
 import { useThree } from '@react-three/fiber'
 import { useTexture, Environment } from '@react-three/drei'
 import { useEffect, Component, type ReactNode } from 'react'
-import { EquirectangularReflectionMapping } from 'three'
+import { EquirectangularReflectionMapping, Euler } from 'three'
+
+// Rotate the skybox so the pitch/field is the backdrop behind the goal,
+// not the stands. Adjust this Y-rotation value to fine-tune the view.
+// 0 = default, Math.PI = 180°, Math.PI/2 = 90° etc.
+const SKYBOX_Y_ROTATION = Math.PI * 0.5  // 90° rotation
 
 const SKYBOX_IMAGE = `${import.meta.env.BASE_URL}skyboxes/soccer.jpg`
 
@@ -15,6 +20,8 @@ function SkyboxLoader() {
     threeScene.environment = texture
     threeScene.backgroundBlurriness = 0
     threeScene.backgroundIntensity = 1
+    threeScene.backgroundRotation = new Euler(0, SKYBOX_Y_ROTATION, 0)
+    threeScene.environmentRotation = new Euler(0, SKYBOX_Y_ROTATION, 0)
 
     return () => {
       threeScene.background = null
