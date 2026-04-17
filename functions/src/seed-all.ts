@@ -30,13 +30,18 @@ import * as path from "path";
 // NOTE: Knockouts must run BEFORE group stage because both write to
 // 'worldcup_matches'. Knockouts uses --clear which wipes the collection,
 // then group stage adds its docs on top without clearing.
+//
+// CRITICAL: Team Players uses noFlags (no --clear) because photoUrl fields
+// are populated separately by fetch-player-photos.ts and stored only in
+// Firestore. Clearing the players collection wipes all photo URLs.
+// After any player seed, run relink-photos-from-storage.ts to restore URLs.
 const SEEDS: { name: string; key: string; script: string; noFlags?: boolean }[] = [
   { name: "Knockout Matches", key: "knockouts", script: "seed-knockout-matches.ts" },
   { name: "Group Stage Matches", key: "matches", script: "seed-june2026-matches.ts", noFlags: true },
   { name: "Match Summaries", key: "summaries", script: "seed-match-summaries.ts" },
   { name: "Head-to-Head Records", key: "h2h", script: "seed-head-to-head.ts" },
   { name: "Managers", key: "managers", script: "seed-managers.ts" },
-  { name: "Team Players", key: "players", script: "seed-team-players.ts" },
+  { name: "Team Players", key: "players", script: "seed-team-players.ts", noFlags: true },
   { name: "World Cup History", key: "history", script: "seed-world-cup-history.ts" },
   { name: "Venue Enhancements", key: "venues", script: "seed-venue-enhancements.ts" },
   { name: "Player World Cup Stats", key: "playerstats", script: "seed-player-world-cup-stats.ts" },
