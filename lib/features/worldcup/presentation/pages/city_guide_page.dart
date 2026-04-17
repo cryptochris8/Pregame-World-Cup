@@ -116,12 +116,12 @@ class _CityHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          Row(
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
             children: [
               _InfoChip(icon: Icons.access_time, label: guide.timezone),
-              const SizedBox(width: 8),
               _InfoChip(icon: Icons.attach_money, label: guide.currency),
-              const SizedBox(width: 8),
               _InfoChip(icon: Icons.language, label: guide.language),
             ],
           ),
@@ -150,9 +150,13 @@ class _InfoChip extends StatelessWidget {
         children: [
           Icon(icon, color: Colors.white, size: 14),
           const SizedBox(width: 4),
-          Text(
-            label,
-            style: const TextStyle(color: Colors.white, fontSize: 12),
+          Flexible(
+            child: Text(
+              label,
+              style: const TextStyle(color: Colors.white, fontSize: 12),
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+            ),
           ),
         ],
       ),
