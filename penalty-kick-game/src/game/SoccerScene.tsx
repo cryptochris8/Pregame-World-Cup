@@ -109,10 +109,23 @@ function SoccerBall() {
       const speed = Math.sqrt(vel.x * vel.x + vel.y * vel.y + vel.z * vel.z)
       const pos = ballRef.current.translation()
 
-      if (speed < 0.3 || pos.z < -12 || pos.y < -2) {
-        if (pos.z < -12 || pos.y < -2 || pos.y > SOCCER_CONFIG.goalHeight + 1) {
-          registerMiss()
-        } else if (pos.x > -SOCCER_CONFIG.goalWidth / 2 && pos.x < SOCCER_CONFIG.goalWidth / 2 && pos.z < -7) {
+      // Track if the ball was deflected (bounced back toward player = keeper block)
+      const ballMovingBack = vel.z > 0.5 && pos.z > -6
+      // Ball clearly missed (went past goal or out of bounds)
+      const ballMissed = pos.z < -12 || pos.y < -2 || pos.y > SOCCER_CONFIG.goalHeight + 2
+      // Ball stopped or slowed down enough to judge
+      const ballStopped = speed < 0.3
+      // Ball bounced back significantly (keeper deflection)
+      const ballDeflected = pos.z > 0 && speed < 1.5
+
+      if (ballMissed) {
+        registerMiss()
+      } else if (ballDeflected || (ballMovingBack && ballStopped)) {
+        // Ball was knocked back by the keeper — it's a save
+        registerSaved()
+      } else if (ballStopped) {
+        // Ball stopped near the goal area
+        if (pos.x > -SOCCER_CONFIG.goalWidth / 2 && pos.x < SOCCER_CONFIG.goalWidth / 2 && pos.z < -7) {
           registerSaved()
         } else {
           registerMiss()
