@@ -20,14 +20,33 @@ import { BallTrail } from '../components/BallTrail'
 import { HytopiaAvatar } from '../components/HytopiaAvatar'
 import type { AnimationState } from '../types'
 import { Suspense } from 'react'
+import { useGLTF } from '@react-three/drei'
 
 const PLAYER_SKIN = `${import.meta.env.BASE_URL}skins/avatars/1.png`
+const SOCCER_BALL_MODEL = `${import.meta.env.BASE_URL}models/soccer-ball/scene.gltf`
 
 interface PopupData {
   id: number
   text: string
   position: [number, number, number]
   color: string
+}
+
+/** 3D soccer ball model from Gnarly Nutmeg — textured with black/white panels */
+function SoccerBallModel() {
+  const { scene } = useGLTF(SOCCER_BALL_MODEL)
+  const cloned = useMemo(() => scene.clone(), [scene])
+  // Model is ~1 unit radius, scale to match SOCCER_CONFIG.ballRadius (0.11)
+  const scale = SOCCER_CONFIG.ballRadius / 1.03
+  useEffect(() => {
+    cloned.traverse((child: any) => {
+      if (child.isMesh) {
+        child.castShadow = true
+        child.receiveShadow = false
+      }
+    })
+  }, [cloned])
+  return <primitive object={cloned} scale={[scale, scale, scale]} />
 }
 
 function SoccerBall() {
@@ -247,10 +266,7 @@ function SoccerBall() {
         position={SOCCER_CONFIG.ballStartPosition}
         name="soccerball"
       >
-        <mesh castShadow>
-          <icosahedronGeometry args={[SOCCER_CONFIG.ballRadius, 1]} />
-          <meshStandardMaterial color="#fff" roughness={0.5} />
-        </mesh>
+        <SoccerBallModel />
       </RigidBody>
 
       <BallTrail
