@@ -121,24 +121,26 @@ export const audioManager = new AudioManager()
 
 /** Load all soccer audio at startup */
 export function loadSoccerAudio() {
+  const base = import.meta.env.BASE_URL
+
   // SFX
-  audioManager.loadSound('kick', '/audio/sfx/kick.mp3')
-  audioManager.loadSound('goalCheer', '/audio/sfx/goalCheer.mp3')
-  audioManager.loadSound('whistle', '/audio/sfx/whistle.mp3')
-  audioManager.loadSound('confetti', '/audio/sfx/confetti.mp3')
-  audioManager.loadSound('goalReaction', '/audio/sfx/crowd/goal-reaction.wav')
+  audioManager.loadSound('kick', `${base}audio/sfx/kick.mp3`)
+  audioManager.loadSound('goalCheer', `${base}audio/sfx/goalCheer.mp3`)
+  audioManager.loadSound('whistle', `${base}audio/sfx/whistle.mp3`)
+  audioManager.loadSound('confetti', `${base}audio/sfx/confetti.mp3`)
+  audioManager.loadSound('goalReaction', `${base}audio/sfx/crowd/goal-reaction.wav`)
 
   // Voices
-  audioManager.loadVoice('whatAGoal', '/audio/voice/announcer/what-a-goal.wav')
-  audioManager.loadVoice('beautifulSave', '/audio/voice/announcer/beautiful-save.wav')
-  audioManager.loadVoice('nearMiss', '/audio/voice/announcer/near-miss.wav')
-  audioManager.loadVoice('crowdGoesWild', '/audio/voice/announcer/crowd-goes-wild.wav')
-  audioManager.loadVoice('soClose', '/audio/voice/announcer/so-close.wav')
-  audioManager.loadVoice('whatABeauty', '/audio/voice/announcer/what-a-beauty.wav')
-  audioManager.loadVoice('greatSave', '/audio/voice/great-save.mp3')
-  audioManager.loadVoice('gameStart', '/audio/voice/announcer/game-start.wav')
-  audioManager.loadVoice('itsAllOver', '/audio/voice/announcer/its-all-over.wav')
+  audioManager.loadVoice('whatAGoal', `${base}audio/voice/announcer/what-a-goal.wav`)
+  audioManager.loadVoice('beautifulSave', `${base}audio/voice/announcer/beautiful-save.wav`)
+  audioManager.loadVoice('nearMiss', `${base}audio/voice/announcer/near-miss.wav`)
+  audioManager.loadVoice('crowdGoesWild', `${base}audio/voice/announcer/crowd-goes-wild.wav`)
+  audioManager.loadVoice('soClose', `${base}audio/voice/announcer/so-close.wav`)
+  audioManager.loadVoice('whatABeauty', `${base}audio/voice/announcer/what-a-beauty.wav`)
+  audioManager.loadVoice('greatSave', `${base}audio/voice/great-save.mp3`)
+  audioManager.loadVoice('gameStart', `${base}audio/voice/announcer/game-start.wav`)
+  audioManager.loadVoice('itsAllOver', `${base}audio/voice/announcer/its-all-over.wav`)
 
   // Music
-  audioManager.loadMusic('soccer', '/audio/music/soccer.wav')
+  audioManager.loadMusic('soccer', `${base}audio/music/soccer.wav`)
 }

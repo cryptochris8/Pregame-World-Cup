@@ -6,7 +6,7 @@ import { SOCCER_CONFIG, KEEPER_DIFFICULTY } from './config'
 import { HytopiaAvatar } from '../components/HytopiaAvatar'
 import type { Difficulty } from '../types'
 
-const GOALKEEPER_SKIN = '/skins/goalkeeper.png'
+const GOALKEEPER_SKIN = `${import.meta.env.BASE_URL}skins/goalkeeper.png`
 
 interface GoalkeeperProps {
   difficulty: Difficulty

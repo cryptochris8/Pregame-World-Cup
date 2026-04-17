@@ -18,7 +18,7 @@ import { HytopiaAvatar } from '../components/HytopiaAvatar'
 import type { AnimationState } from '../types'
 import { Suspense } from 'react'
 
-const PLAYER_SKIN = '/skins/avatars/1.png'
+const PLAYER_SKIN = `${import.meta.env.BASE_URL}skins/avatars/1.png`
 
 interface PopupData {
   id: number

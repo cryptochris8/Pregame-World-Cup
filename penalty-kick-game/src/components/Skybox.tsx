@@ -3,7 +3,7 @@ import { useTexture, Environment } from '@react-three/drei'
 import { useEffect, Component, type ReactNode } from 'react'
 import { EquirectangularReflectionMapping } from 'three'
 
-const SKYBOX_IMAGE = '/skyboxes/soccer.jpg'
+const SKYBOX_IMAGE = `${import.meta.env.BASE_URL}skyboxes/soccer.jpg`
 
 function SkyboxLoader() {
   const { scene: threeScene } = useThree()

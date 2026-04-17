@@ -4,8 +4,8 @@ import * as THREE from 'three'
 import { SkeletonUtils } from 'three-stdlib'
 import type { AnimationState } from '../types'
 
-const MODEL_PATH = '/models/player.gltf'
-const DEFAULT_SKIN = '/skins/avatars/1.png'
+const MODEL_PATH = `${import.meta.env.BASE_URL}models/player.gltf`
+const DEFAULT_SKIN = `${import.meta.env.BASE_URL}skins/avatars/1.png`
 
 const ANIMATION_MAP: Record<AnimationState, {
   upper: string; lower: string; loop: boolean; fullBody: boolean
