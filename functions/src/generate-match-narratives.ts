@@ -46,63 +46,72 @@ function loadJson(filePath: string): any {
   }
 }
 
+/**
+ * Normalize a container to an iterable array. The Country Scout sweep
+ * (2026-04-16) reshaped several data files from array-of-objects to
+ * team-keyed objects, so every loader now has to handle both forms.
+ *
+ * Returns [] for null/undefined/primitives so callers don't have to null-check.
+ */
+export function toIterable<T = any>(container: any): T[] {
+  if (container == null) return [];
+  if (Array.isArray(container)) return container as T[];
+  if (typeof container === "object") return Object.values(container) as T[];
+  return [];
+}
+
 function loadMatchSummary(matchKey: string): any {
   return loadJson(path.join(SUMMARIES_DIR, `${matchKey}.json`));
 }
 
-function loadEloRatings(): Map<string, any> {
-  const data = loadJson(path.join(DATA_DIR, "elo_ratings.json"));
+export function loadEloRatings(dataDir = DATA_DIR): Map<string, any> {
+  const data = loadJson(path.join(dataDir, "elo_ratings.json"));
   const map = new Map<string, any>();
-  if (data?.ratings) {
-    for (const r of data.ratings) {
-      map.set(r.teamCode, r);
-    }
+  for (const r of toIterable(data?.ratings)) {
+    if (r?.teamCode) map.set(r.teamCode, r);
   }
   return map;
 }
 
-function loadTacticalProfiles(): Map<string, any> {
-  const data = loadJson(path.join(DATA_DIR, "tactical_profiles.json"));
+export function loadTacticalProfiles(dataDir = DATA_DIR): Map<string, any> {
+  const data = loadJson(path.join(dataDir, "tactical_profiles.json"));
   const map = new Map<string, any>();
-  if (data?.teams) {
-    for (const t of data.teams) {
-      map.set(t.teamCode, t);
-    }
+  // Post-scout schema uses `profiles` (object keyed by team code);
+  // legacy schema used `teams` (array of objects). Accept either.
+  for (const t of toIterable(data?.profiles ?? data?.teams)) {
+    if (t?.teamCode) map.set(t.teamCode, t);
   }
   return map;
 }
 
-function loadInjuryTracker(): Map<string, any[]> {
-  const data = loadJson(path.join(DATA_DIR, "injury_tracker.json"));
+export function loadInjuryTracker(dataDir = DATA_DIR): Map<string, any[]> {
+  const data = loadJson(path.join(dataDir, "injury_tracker.json"));
   const map = new Map<string, any[]>();
-  if (data?.players) {
-    for (const p of data.players) {
-      const list = map.get(p.teamCode) || [];
-      list.push(p);
-      map.set(p.teamCode, list);
-    }
+  for (const p of toIterable<any>(data?.players)) {
+    if (!p?.teamCode) continue;
+    const list = map.get(p.teamCode) || [];
+    list.push(p);
+    map.set(p.teamCode, list);
   }
   return map;
 }
 
-function loadSquadValues(): Map<string, any> {
-  const data = loadJson(path.join(DATA_DIR, "squad_values.json"));
+export function loadSquadValues(dataDir = DATA_DIR): Map<string, any> {
+  const data = loadJson(path.join(dataDir, "squad_values.json"));
   const map = new Map<string, any>();
-  if (data?.teams) {
-    for (const t of data.teams) {
-      map.set(t.teamCode, t);
-    }
+  for (const t of toIterable<any>(data?.teams)) {
+    if (t?.teamCode) map.set(t.teamCode, t);
   }
   return map;
 }
 
-function loadBettingOdds(): Map<string, any> {
-  const data = loadJson(path.join(DATA_DIR, "betting_odds.json"));
+export function loadBettingOdds(dataDir = DATA_DIR): Map<string, any> {
+  const data = loadJson(path.join(dataDir, "betting_odds.json"));
   const map = new Map<string, any>();
-  if (data?.outright_winner_odds?.teams) {
-    for (const t of data.outright_winner_odds.teams) {
-      map.set(t.teamCode, t);
-    }
+  for (const t of toIterable<any>(data?.outright_winner_odds?.teams)) {
+    // betting_odds uses `code` rather than `teamCode`; tolerate both.
+    const key = t?.teamCode ?? t?.code;
+    if (key) map.set(key, t);
   }
   return map;
 }
@@ -115,38 +124,60 @@ function loadConfederationRecords(): any {
   return loadJson(path.join(DATA_DIR, "confederation_records.json"));
 }
 
-function loadQualifyingCampaigns(): Map<string, any> {
-  const data = loadJson(path.join(DATA_DIR, "qualifying_campaigns.json"));
+export function loadQualifyingCampaigns(dataDir = DATA_DIR): Map<string, any> {
+  const data = loadJson(path.join(dataDir, "qualifying_campaigns.json"));
   const map = new Map<string, any>();
-  if (data?.teams) {
-    for (const t of data.teams) {
-      map.set(t.teamCode, t);
-    }
+  // Post-scout schema: `campaigns` (team-keyed object). Legacy: `teams` (array).
+  for (const t of toIterable<any>(data?.campaigns ?? data?.teams)) {
+    if (t?.teamCode) map.set(t.teamCode, t);
   }
   return map;
 }
 
-function loadVenueFactors(): any[] {
-  const data = loadJson(path.join(DATA_DIR, "venue_factors.json"));
-  return data?.venues || [];
+export function loadVenueFactors(dataDir = DATA_DIR): any[] {
+  const data = loadJson(path.join(dataDir, "venue_factors.json"));
+  // Post-scout schema: `venues` object keyed by venue slug. Legacy: array.
+  return toIterable(data?.venues);
 }
 
-function loadRecentForm(): Map<string, any> {
+export function loadRecentForm(dataDir = DATA_DIR): Map<string, any> {
   const map = new Map<string, any>();
-  const formFiles = ["recent_form/groups_a_d.json", "recent_form/groups_e_h.json", "recent_form/groups_i_l.json"];
+  const formFiles = [
+    "recent_form/groups_a_d.json",
+    "recent_form/groups_e_h.json",
+    "recent_form/groups_i_l.json",
+  ];
   for (const file of formFiles) {
-    const data = loadJson(path.join(DATA_DIR, file));
-    if (data?.groups) {
-      for (const group of Object.values(data.groups) as any[]) {
-        if (group.teams) {
-          for (const team of group.teams) {
-            map.set(team.teamCode, team);
-          }
-        }
+    const data = loadJson(path.join(dataDir, file));
+    if (!data) continue;
+    // Post-scout schema: group entries at root level (group_A, group_B, ...),
+    // each containing team entries keyed by team code (values have `team_code`).
+    // Legacy schema: data.groups wrapper with teams: [...] arrays.
+    const groupContainers: any[] = [];
+    if (data.groups) {
+      groupContainers.push(...toIterable(data.groups));
+    }
+    for (const k of Object.keys(data)) {
+      if (k.startsWith("group_")) groupContainers.push(data[k]);
+    }
+    for (const group of groupContainers) {
+      // Legacy: group.teams is an array; new: team entries are direct children
+      // of the group, or inside `teams` as an object/array.
+      const teamContainer = group?.teams ?? group;
+      for (const [k, v] of Object.entries(teamContainer ?? {})) {
+        const team: any = v;
+        if (!team || typeof team !== "object") continue;
+        // Skip non-team keys on the group node (e.g. metadata, groupName).
+        const code = team.teamCode ?? team.team_code ?? (looksLikeTeamCode(k) ? k : null);
+        if (code) map.set(code, team);
       }
     }
   }
   return map;
+}
+
+function looksLikeTeamCode(s: string): boolean {
+  return /^[A-Z]{3}$/.test(s);
 }
 
 function loadHeadToHead(matchKey: string): any {
@@ -162,12 +193,22 @@ function loadPlayerProfiles(teamCode: string): any {
   return loadJson(path.join(DATA_DIR, `player_profiles/${teamCode}.json`));
 }
 
-function loadTeamsMetadata(): Map<string, any> {
-  const data = loadJson(path.join(DATA_DIR, "teams_metadata.json"));
+export function loadTeamsMetadata(dataDir = DATA_DIR): Map<string, any> {
+  const data = loadJson(path.join(dataDir, "teams_metadata.json"));
   const map = new Map<string, any>();
-  if (data?.teams) {
+  if (!data) return map;
+  // Post-scout schema: team entries live at the ROOT of the file, keyed by
+  // team code. Legacy schema: wrapped in a `teams` array.
+  if (Array.isArray(data.teams)) {
     for (const t of data.teams) {
-      map.set(t.teamCode, t);
+      if (t?.teamCode) map.set(t.teamCode, t);
+    }
+  } else {
+    for (const [k, v] of Object.entries(data)) {
+      const entry: any = v;
+      if (!entry || typeof entry !== "object") continue;
+      const code = entry.teamCode ?? (looksLikeTeamCode(k) ? k : null);
+      if (code) map.set(code, entry);
     }
   }
   return map;
@@ -324,24 +365,57 @@ ${relevant.map((p: any) => `- ${p.title || p.id}: ${p.description || ""}`).join(
   }
 
   // 12. Player profiles
-  const players1 = loadPlayerProfiles(team1);
-  const players2 = loadPlayerProfiles(team2);
-  if (players1?.players) {
-    const stars = players1.players.filter((p: any) => p.isKeyStar || p.marketValue > 50000000).slice(0, 3);
-    if (stars.length) {
-      sections.push(`=== ${team1} STAR PLAYERS ===
-${stars.map((p: any) => `${p.name} (${p.position}): ${p.bio || p.description || ""}`).join("\n")}`);
-    }
-  }
-  if (players2?.players) {
-    const stars = players2.players.filter((p: any) => p.isKeyStar || p.marketValue > 50000000).slice(0, 3);
-    if (stars.length) {
-      sections.push(`=== ${team2} STAR PLAYERS ===
-${stars.map((p: any) => `${p.name} (${p.position}): ${p.bio || p.description || ""}`).join("\n")}`);
-    }
-  }
+  const renderStars = (teamCode: string): string | null => {
+    const profile = loadPlayerProfiles(teamCode);
+    const stars = pickStarPlayers(profile);
+    if (!stars.length) return null;
+    const lines = stars.map((p) => {
+      const descParts = [p.bio, p.worldCup2026Role, p.notableFact, p.description]
+        .filter(Boolean);
+      const positionPart = p.position ? ` (${p.position})` : "";
+      return `${p.name}${positionPart}: ${descParts.join(" — ") || ""}`;
+    });
+    return `=== ${teamCode} STAR PLAYERS ===\n${lines.join("\n")}`;
+  };
+  const stars1 = renderStars(team1);
+  if (stars1) sections.push(stars1);
+  const stars2 = renderStars(team2);
+  if (stars2) sections.push(stars2);
 
   return sections.join("\n\n");
+}
+
+/**
+ * Normalize the `players` container of a player_profiles/{TEAM}.json file
+ * into a list of up to 3 "star" profiles.
+ *
+ * Post-scout schema: `players` is an object keyed by player display name
+ * (values have bio/playingStyle/keyStrengths/worldCup2026Role/notableFact
+ * but no explicit `name` or `isKeyStar` field — the file is already
+ * curated so order reflects importance).
+ *
+ * Legacy schema: `players` is an array of objects that may include
+ * `name`, `position`, `isKeyStar`, and `marketValue` fields.
+ */
+export function pickStarPlayers(profile: any): any[] {
+  if (!profile?.players) return [];
+  const container = profile.players;
+
+  if (Array.isArray(container)) {
+    const byFlag = container.filter(
+      (p: any) => p?.isKeyStar || (p?.marketValue ?? 0) > 50000000
+    );
+    return (byFlag.length ? byFlag : container).slice(0, 3);
+  }
+  if (typeof container === "object") {
+    return Object.entries(container)
+      .slice(0, 3)
+      .map(([name, value]: [string, any]) => ({
+        name: value?.name ?? name,
+        ...value,
+      }));
+  }
+  return [];
 }
 
 function buildPrompt(matchKey: string, context: string): string {
@@ -592,7 +666,11 @@ async function main() {
   console.log(`📁 Output: assets/data/worldcup/match_narratives/`);
 }
 
-main().catch((err) => {
-  console.error("Fatal error:", err);
-  process.exit(1);
-});
+// Only run main() when this file is executed directly (e.g., `npx ts-node ...`).
+// When imported from tests or other modules, main() must not auto-run.
+if (require.main === module) {
+  main().catch((err) => {
+    console.error("Fatal error:", err);
+    process.exit(1);
+  });
+}
