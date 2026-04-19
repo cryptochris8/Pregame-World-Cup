@@ -144,7 +144,7 @@ export const createFanPassCheckout = functions.https.onCall(async (data: any, co
   }
 
   // Rate limit: prevent checkout abuse
-  await checkCallableRateLimit(context.auth.uid, 'createFanPassCheckout', RATE_LIMITS.PAYMENT_CHECKOUT);
+  await checkCallableRateLimit(context.auth.uid, 'createFanPassCheckout', RATE_LIMITS.PAYMENT_CHECKOUT, { failClosed: true });
 
   const passType = data.passType; // 'fan_pass' or 'superfan_pass'
 
@@ -294,7 +294,7 @@ export const createVenuePremiumCheckout = functions.https.onCall(async (data: an
   }
 
   // Rate limit: prevent checkout abuse
-  await checkCallableRateLimit(context.auth.uid, 'createVenuePremiumCheckout', RATE_LIMITS.PAYMENT_CHECKOUT);
+  await checkCallableRateLimit(context.auth.uid, 'createVenuePremiumCheckout', RATE_LIMITS.PAYMENT_CHECKOUT, { failClosed: true });
 
   const venueId = data.venueId;
   const venueName = data.venueName || 'Venue';

@@ -115,7 +115,7 @@ export const createFanCheckoutSession = functions.https.onCall(async (data: any,
     }
 
     // Rate limit: prevent checkout abuse
-    await checkCallableRateLimit(context.auth.uid, 'createFanCheckoutSession', RATE_LIMITS.PAYMENT_CHECKOUT);
+    await checkCallableRateLimit(context.auth.uid, 'createFanCheckoutSession', RATE_LIMITS.PAYMENT_CHECKOUT, { failClosed: true });
 
     const priceId = data.priceId;
     const fanId = data.fanId;
@@ -274,7 +274,7 @@ export const createCheckoutSession = functions.https.onCall(async (data: any, co
     }
 
     // Rate limit: prevent checkout abuse
-    await checkCallableRateLimit(context.auth.uid, 'createCheckoutSession', RATE_LIMITS.PAYMENT_CHECKOUT);
+    await checkCallableRateLimit(context.auth.uid, 'createCheckoutSession', RATE_LIMITS.PAYMENT_CHECKOUT, { failClosed: true });
 
     const priceId = data.priceId;
     const venueId = data.venueId;
@@ -405,7 +405,7 @@ export const createPaymentIntent = functions.https.onCall(async (data: any, cont
     }
 
     // Rate limit: prevent payment abuse
-    await checkCallableRateLimit(context.auth.uid, 'createPaymentIntent', RATE_LIMITS.PAYMENT_CHECKOUT);
+    await checkCallableRateLimit(context.auth.uid, 'createPaymentIntent', RATE_LIMITS.PAYMENT_CHECKOUT, { failClosed: true });
 
     const productType = data.productType;
     const currency = data.currency || 'usd';

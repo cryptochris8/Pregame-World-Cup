@@ -112,15 +112,34 @@ export async function checkRateLimit(
 }
 
 /**
+ * Options for the callable rate limiter.
+ */
+export interface CallableRateLimitOptions {
+  /**
+   * When true, a Firestore failure inside the limiter causes the request
+   * to be rejected with HttpsError('resource-exhausted') rather than
+   * letting it pass through. Use for revenue- or cost-sensitive endpoints
+   * (payments, SMS) where a burst during a Firestore hiccup is worse than
+   * a transient 429.
+   *
+   * Defaults to false (fail-open) to preserve backward compatibility for
+   * low-risk endpoints.
+   */
+  failClosed?: boolean;
+}
+
+/**
  * Rate limit check for onCall Cloud Functions (authenticated users).
  *
  * Uses the authenticated user's UID as the key instead of IP address.
- * Throws an HttpsError with 'resource-exhausted' if the limit is exceeded.
+ * Throws an HttpsError with 'resource-exhausted' if the limit is exceeded
+ * (or, when `options.failClosed` is true, if the limiter itself errors).
  */
 export async function checkCallableRateLimit(
   userId: string,
   endpointName: string,
-  config: RateLimitConfig
+  config: RateLimitConfig,
+  options: CallableRateLimitOptions = {}
 ): Promise<void> {
   const db = admin.firestore();
   const now = Date.now();
@@ -163,7 +182,17 @@ export async function checkCallableRateLimit(
     if (error instanceof functions.https.HttpsError) {
       throw error;
     }
-    // If the rate limiter itself fails, allow the request through.
+    // If the rate limiter itself fails, decide based on endpoint sensitivity.
+    if (options.failClosed) {
+      functions.logger.error(
+        `Rate limiter error on fail-closed endpoint ${endpointName} (rejecting request):`,
+        error.message
+      );
+      throw new functions.https.HttpsError(
+        'resource-exhausted',
+        'Service temporarily unavailable. Please try again later.'
+      );
+    }
     functions.logger.error('Rate limiter error (allowing request):', error.message);
   }
 }

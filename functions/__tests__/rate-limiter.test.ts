@@ -1157,5 +1157,111 @@ describe('Rate Limiter', () => {
         ).resolves.toBeUndefined();
       });
     });
+
+    // ---------------------------------------------------------------------
+    // Fail-closed option (payment/SMS endpoints — audit F6)
+    // ---------------------------------------------------------------------
+    describe('failClosed option', () => {
+      /**
+       * Swap in a collection mock that makes the count().get() query reject,
+       * simulating a transient Firestore outage inside the limiter.
+       */
+      function forceFirestoreCountError(): void {
+        const originalCollection = mockFirestore.collection.bind(mockFirestore);
+        jest.spyOn(mockFirestore, 'collection').mockImplementation((path: string) => {
+          if (path === 'rate_limits') {
+            const ref = originalCollection(path);
+            ref.where = jest.fn().mockReturnValue({
+              where: jest.fn().mockReturnValue({
+                where: jest.fn().mockReturnValue({
+                  count: jest.fn().mockReturnValue({
+                    get: jest.fn().mockRejectedValue(new Error('Firestore unavailable')),
+                  }),
+                }),
+              }),
+            });
+            return ref;
+          }
+          return originalCollection(path);
+        });
+      }
+
+      it('throws resource-exhausted when failClosed=true and Firestore errors', async () => {
+        forceFirestoreCountError();
+
+        try {
+          await checkCallableRateLimit('user-fc', 'payments', testConfig, {
+            failClosed: true,
+          });
+          fail('Expected HttpsError("resource-exhausted") to be thrown');
+        } catch (error: any) {
+          expect(error.code).toBe('resource-exhausted');
+          expect(error.message).toMatch(/temporarily unavailable|try again later/i);
+        }
+      });
+
+      it('logs the endpoint name and "rejecting" when fail-closed engages', async () => {
+        forceFirestoreCountError();
+
+        try {
+          await checkCallableRateLimit('user-fc-log', 'createPaymentIntent', testConfig, {
+            failClosed: true,
+          });
+        } catch {
+          // expected
+        }
+
+        expect(functions.logger.error).toHaveBeenCalledWith(
+          expect.stringContaining('createPaymentIntent'),
+          expect.any(String)
+        );
+        expect(functions.logger.error).toHaveBeenCalledWith(
+          expect.stringContaining('rejecting'),
+          expect.any(String)
+        );
+      });
+
+      it('preserves fail-open behavior when failClosed=false', async () => {
+        forceFirestoreCountError();
+
+        await expect(
+          checkCallableRateLimit('user-fo', 'ep', testConfig, { failClosed: false })
+        ).resolves.toBeUndefined();
+      });
+
+      it('preserves fail-open behavior when options are omitted (backward compatible)', async () => {
+        forceFirestoreCountError();
+
+        await expect(
+          checkCallableRateLimit('user-default', 'ep', testConfig)
+        ).resolves.toBeUndefined();
+      });
+
+      it('still enforces the actual quota when Firestore is healthy and failClosed=true', async () => {
+        // With a healthy Firestore, being at the limit should throw the
+        // normal rate-limit HttpsError, not the fail-closed one.
+        seedCallableRateLimitDocs(5, { userId: 'user-healthy', endpoint: 'payments' });
+
+        try {
+          await checkCallableRateLimit('user-healthy', 'payments', testConfig, {
+            failClosed: true,
+          });
+          fail('Expected HttpsError to be thrown for rate limit');
+        } catch (error: any) {
+          expect(error.code).toBe('resource-exhausted');
+          expect(error.message).toContain('Too many requests');
+        }
+      });
+
+      it('allows under-limit requests through even when failClosed=true', async () => {
+        seedCallableRateLimitDocs(2, { userId: 'user-under', endpoint: 'payments' });
+
+        await expect(
+          checkCallableRateLimit('user-under', 'payments', testConfig, {
+            failClosed: true,
+          })
+        ).resolves.toBeUndefined();
+      });
+    });
   });
 });

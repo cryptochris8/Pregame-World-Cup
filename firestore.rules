@@ -342,11 +342,17 @@ service cloud.firestore {
     }
 
     // Direct messages - only participants of the parent chat can read/write
+    // Update/delete: in addition to being a participant, the caller must own
+    // the message (senderId match). Without this, any chat participant could
+    // tamper with or erase another member's messages — flagged F3 in the
+    // 2026-04-18 security audit.
     match /messages/{messageId} {
       allow read: if isAuth() && isChatParticipant(resource.data.chatId);
       allow create: if isAuth() && isChatParticipant(request.resource.data.chatId)
         && request.auth.uid == request.resource.data.senderId;
-      allow update, delete: if isAuth() && isChatParticipant(resource.data.chatId);
+      allow update, delete: if isAuth()
+        && isChatParticipant(resource.data.chatId)
+        && request.auth.uid == resource.data.senderId;
     }
 
     // Match chats with subcollections (public per-match chat rooms)

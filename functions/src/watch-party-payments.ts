@@ -21,7 +21,7 @@ export const createVirtualAttendancePayment = functions.https.onCall(async (data
     }
 
     // Rate limit: prevent payment abuse
-    await checkCallableRateLimit(context.auth.uid, 'createVirtualAttendancePayment', RATE_LIMITS.PAYMENT_CHECKOUT);
+    await checkCallableRateLimit(context.auth.uid, 'createVirtualAttendancePayment', RATE_LIMITS.PAYMENT_CHECKOUT, { failClosed: true });
 
     const watchPartyId = data.watchPartyId;
     const watchPartyName = data.watchPartyName;
