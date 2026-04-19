@@ -4,77 +4,70 @@
   "team2Code": "TUN",
   "team1Name": "Japan",
   "team2Name": "Tunisia",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2024-12-19T14:30:00Z",
   "dataVersion": 1,
-
-  "headline": "Two Giant Killers, One Group Stage Collision",
-  "subheadline": "Japan and Tunisia both stunned the world at the 2022 World Cup — now they must fight each other for survival in the group of death",
-
-  "openingNarrative": "At the 2022 World Cup, Japan defeated Germany and Spain. Tunisia defeated France. Three of the four most recent World Cup champions were beaten by teams from outside Europe's traditional elite, and two of those giant-killing nations now find themselves in the same group, fighting for what could be the same knockout stage spot. The irony is exquisite.\n\nJapan and Tunisia represent the very best of AFC and CAF football — tactically sophisticated, mentally hardened, and utterly unafraid of reputations. Their previous World Cup meeting came in 2002 in Osaka, where Japan won 2-0 through goals from Morishima and Nakata to advance from Group H. That match was a coming-of-age moment for Japanese football on home soil. Twenty-four years later, both nations have evolved dramatically.\n\nJapan's transformation under Moriyasu has been extraordinary. Their pressing system, honed over years, is now one of the most effective in world football — a coordinated, relentless machine that suffocated Germany and Spain in 2022. Tunisia's evolution has been no less impressive. The Eagles of Carthage conceded just two goals from open play across three 2022 World Cup matches, and their famous 1-0 victory over reigning champions France demonstrated a defensive organization that rivals Europe's best. In 3 previous meetings, Japan lead 2-1, but the gap between these teams has never been smaller.",
-
+  "headline": "Giant Killers Collide: Japan and Tunisia Meet With History Beckoning",
+  "subheadline": "Two nations who shocked the world in Qatar 2022 now face each other with newfound confidence and tactical maturity.",
+  "openingNarrative": "In the pantheon of World Cup upsets, few moments shine as brightly as Japan's stunning dismantling of Germany and Spain in Qatar 2022, or Tunisia's defiant 1-0 victory over defending champions France. Four years later, these two nations—separated by continents but united by their capacity to humble European giants—meet with the weight of expectation and the promise of progression hanging in the desert air.\n\nThe Samurai Blue arrive at this tournament carrying momentum that borders on the mystical. Their recent 1-0 victory over England at Wembley—Japan's first-ever triumph on English soil—announced to the world that Qatar was no fluke. Hajime Moriyasu's side has evolved from tournament dark horses into genuine contenders, their 3-4-2-1 formation a tactical symphony that maximizes the European pedigree of Kaoru Mitoma and the creative genius of Takefusa Kubo, should he overcome fitness concerns. The Eagles of Carthage, meanwhile, bring their own brand of organized defiance under Sabri Lamouchi, having navigated qualifying with characteristic defensive discipline while showing flashes of the counter-attacking brilliance that stunned Les Bleus.\n\nThis is more than a clash between AFC and CAF representatives; it's a meeting of philosophies, a tactical chess match between Japan's high-tempo possession game and Tunisia's compact, resilient structure. Both teams have tasted victory over former world champions, both carry the scars and wisdom of deep World Cup runs, and both understand that in a tournament where only UEFA and CONMEBOL nations have ever lifted the trophy, they represent something bigger than themselves—the relentless march of global football's evolution.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a match between two teams who excel at making life miserable for opponents. Japan's 3-4-2-1 pressing system will attempt to suffocate Tunisia in midfield, winning the ball high and transitioning rapidly through Kubo and Mitoma. The Samurai Blue's qualifying numbers — 30 goals, 3 conceded — speak to a team that has found the ideal balance between aggression and control.\n\nTunisia under Jalel Kadri will deploy a compact 4-3-3 designed to deny Japan space between the lines. The Eagles of Carthage proved in 2022 that they are among the most disciplined defensive units in world football, and their game plan will revolve around frustrating Japan's attacking players before striking on the counter through Youssef Msakni and Hannibal Mejbri.\n\nThe tactical chess match hinges on patience. Japan must resist the urge to force openings that aren't there — Tunisia will happily let them have possession in non-threatening areas. The key for Japan is movement off the ball, rotating positions to create the half-second of confusion in Tunisia's defensive structure that Kubo can exploit. For Tunisia, the midfield work of Ellyes Skhiri will be vital in screening the defense.",
+    "narrative": "Moriyasu's 3-4-2-1 system represents the perfect marriage of Japanese tactical sophistication and European influences, with Mitoma's wing-back role the key to unlocking Tunisia's defensive solidity. The Brighton winger's ability to provide width in attack while tracking back defensively will be crucial against Tunisia's patient 4-3-3, where Hannibal Mejbri and Aissa Laidouni look to control the midfield tempo. Japan's approach will be to press high and force Tunisia into hurried decisions, using their superior technical quality to create overloads in the final third.\n\nLamouchi's tactical blueprint is built around defensive compactness and clinical counter-attacks, with Ellyes Skhiri's Bundesliga experience providing the pivot between Tunisia's defensive discipline and their attacking ambitions. The key battle will unfold in the half-spaces, where Japan's attacking midfielders will probe for weaknesses against Tunisia's compact midfield block. If Tunisia can frustrate Japan's rhythm and exploit the spaces left by their aggressive wing-backs, Youssef Msakni's pace could prove decisive on the counter.",
     "team1Formation": "3-4-2-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Japan's pressing intensity vs Tunisia's defensive organization — an irresistible force meets an immovable object"
+    "keyMatchup": "Mitoma's attacking runs from wing-back against Tunisia's disciplined defensive structure"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Japan (ELO: 1695) vs Tunisia (ELO: 1560) — a 135-point gap that makes Japan clear favorites. But Tunisia's World Cup record against higher-rated opponents should make Japan wary: they beat France (ELO: 1870) just four years ago, and held Denmark and Australia to a single-goal margin.",
-    "formAnalysis": "Japan's qualifying campaign was dominant: 7 wins, 2 draws, 1 loss, scoring 30 goals and conceding 3 — the best goal difference (+27) in AFC qualifying. Tunisia's CAF qualifying was equally impressive: 6 wins, 3 draws, 1 loss, 14 goals scored with a solid +9 goal difference. Ellyes Skhiri was Tunisia's top qualifier scorer with 3 goals from midfield.",
-    "squadValueComparison": "Japan ($432M) vs Tunisia ($120M) — Japan's squad is more than three times Tunisia's value. Kubo ($62.5M) alone is worth more than half of Tunisia's entire roster. Hannibal Mejbri ($15M) leads Tunisia's valuation. But Tunisia proved in 2022 that organized collective defending can neutralize far more expensive attacks.",
-    "injuryImpact": "Japan's squad depth gives them the edge in player availability — they can absorb injuries more comfortably than Tunisia, whose starting XI represents a significant quality drop-off from their bench options.",
-    "bettingPerspective": "Japan are comfortable favorites, but Tunisia's history of punching above their weight at World Cups means the market offers value on the underdog. Tunisia's price to win or draw represents genuine opportunity for those who watched them frustrate France in 2022.",
-    "historicalPattern": "Three previous meetings: Japan 2, Tunisia 1. Their 2002 World Cup match (2-0 to Japan in Osaka) remains the most significant competitive encounter. The most recent meeting was the 2022 Kirin Cup, where Japan won on home soil. Tunisia have never beaten Japan but have never faced them with their current defensive identity."
+    "eloAnalysis": "Japan's ELO rating of 1695 (16th globally) compared to Tunisia's 1560 (50th) reflects the gulf in current form and squad depth, but Tunisia have historically punched above their statistical weight in major tournaments.",
+    "formAnalysis": "Japan's qualifying dominance (7W-2D-1L, +27 goal difference) contrasts with Tunisia's more modest campaign (6W-3D-1L, +9), yet both teams arrive with recent competitive experience from AFCON and high-level friendlies.",
+    "squadValueComparison": "The €431.9 million valuation of Japan's squad dwarfs Tunisia's €120 million, highlighting the investment in European-based talent versus Tunisia's blend of domestic and overseas professionals.",
+    "injuryImpact": "Takumi Minamino's ACL injury and Takefusa Kubo's uncertain availability could force Japan into tactical adjustments, while Tunisia's squad remains largely intact with only veteran Wahbi Khazri requiring workload management.",
+    "bettingPerspective": "Markets reflect Japan's superior depth and recent form, though Tunisia's proven ability to frustrate superior opponents makes this a potentially closer contest than numbers suggest.",
+    "historicalPattern": "As host nations historically outperform expectations—with 13 of 22 hosts reaching the semi-finals—the tournament atmosphere could provide an additional edge that transcends pure squad quality."
   },
-
   "playerSpotlights": [
     {
-      "name": "Takefusa Kubo",
+      "name": "Kaoru Mitoma",
       "teamCode": "JPN",
-      "narrative": "Against Tunisia's compact defense, Kubo faces the kind of challenge that separates good players from great ones. There will be no space to run into, no gaps between the lines to exploit easily. He will need to create from nothing — and that is precisely what the Real Sociedad star does best. His ability to receive the ball in tight spaces, turn, and produce a decisive action will be Japan's primary weapon against Tunisian discipline.",
-      "statline": "Japan's most valuable player at $62.5M, creative engine of their record-breaking qualifying campaign"
+      "narrative": "The Brighton sensation arrives at this World Cup carrying the weight of Japan's attacking hopes on his shoulders. His match-winning performance against England at Wembley in March—Japan's first-ever victory over the Three Lions—announced his readiness for the global stage. Operating from the left wing-back position in Moriyasu's system, Mitoma's unique blend of pace, technical skill, and tactical intelligence makes him a nightmare for any defense. His academic background, having written his university thesis on dribbling techniques, speaks to the cerebral approach that has made him one of the Premier League's most feared wingers.",
+      "statline": "Scored the historic winner in Japan's first-ever victory over England at Wembley (March 2026)"
     },
     {
       "name": "Hannibal Mejbri",
       "teamCode": "TUN",
-      "narrative": "The former Manchester United academy product has become Tunisia's creative heartbeat. Mejbri combines technical quality with a competitive edge that makes him perfectly suited to the intensity of World Cup football. His ability to drive forward with the ball, link play between midfield and attack, and produce moments of individual quality gives Tunisia an attacking dimension beyond their defensive solidity.",
-      "statline": "Tunisia's most valuable player at $15M, driving creative force in midfield"
+      "narrative": "The former Manchester United academy graduate has blossomed into Tunisia's creative heartbeat, his performances for Burnley showcasing the technical quality and vision that make him the Eagles of Carthage's most potent attacking threat. At just 23, Mejbri represents the new generation of Tunisian football—technically gifted, tactically astute, and fearless on the biggest stages. His ability to find space between the lines and thread passes through compact defenses will be crucial if Tunisia are to unlock Japan's high-pressing system. The youngster's journey from Old Trafford's youth ranks to World Cup stardom embodies the global pathways of modern football.",
+      "statline": "Most valuable player in Tunisia's squad at €15 million, representing the new generation of African talent"
     },
     {
-      "name": "Kaoru Mitoma",
-      "teamCode": "JPN",
-      "narrative": "Tunisia's right-back will have nightmares about Mitoma. The Brighton winger's ability to receive the ball and immediately attack the defensive line creates the kind of one-on-one situations that organized defenses dread. If Japan can work the ball to Mitoma in space, Tunisia's compact shape will be forced to stretch — and in those moments of stretching, chances will appear for Japan's supporting runners.",
-      "statline": "Brighton's star dribbler, key component of Japan's devastating transition game"
+      "name": "Ellyes Skhiri",
+      "teamCode": "TUN",
+      "narrative": "The FC Köln midfielder has become the metronome of Tunisia's midfield, his Bundesliga experience providing the tactical discipline and passing range that anchor Lamouchi's system. Skhiri's three goals in qualifying may not grab headlines, but his ability to control tempo, break up play, and launch counter-attacks makes him indispensable to Tunisia's tactical blueprint. His dual role as destroyer and creator will be pivotal against Japan's technical midfield, where his physicality and positional intelligence could prove the difference between containing the Samurai Blue's attack and being overrun by their superior numbers.",
+      "statline": "Led Tunisia's qualifying campaign with 3 goals from midfield, showcasing his box-to-box capabilities"
     },
     {
       "name": "Youssef Msakni",
       "teamCode": "TUN",
-      "narrative": "Tunisia's iconic forward and longtime talisman brings the experience and composure that tournament football demands. Msakni has the quality to produce moments of magic in the biggest matches — the kind of individual brilliance that can turn a disciplined defensive performance into a famous victory. If Tunisia create even two or three genuine chances, Msakni's finishing and composure in the box could prove decisive.",
-      "statline": "Tunisia's all-time leading talisman with decades of experience at the highest level of African football"
+      "narrative": "Tunisia's veteran forward carries the hopes of a nation that remembers his contributions to their most memorable World Cup moments. Now in his thirties, Msakni remains the focal point of Tunisia's counter-attacking strategy, his pace and direct running style perfectly suited to exploiting the spaces that Japan's aggressive tactics inevitably leave behind. His experience across multiple World Cups gives him an almost mystical understanding of tournament football—when to conserve energy, when to make the decisive run, when to drop deep and link play. Against Japan's high defensive line, Msakni's timing and movement could unlock the match.",
+      "statline": "Tunisia's longtime talisman and experienced tournament performer across multiple World Cups"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Japan 2-1 Tunisia",
     "confidence": 65,
-    "narrative": "Japan's superior squad depth and the quality of their European-based attackers should ultimately prove decisive, but this will be far from straightforward. Expect Tunisia to frustrate Japan for the first 45 minutes, sitting deep and denying space with the same discipline that stifled France. The first goal will be crucial — if Japan score first, Tunisia will be forced to open up, and the match will tilt decisively in Japan's favor.\n\nKubo and Mitoma will create enough chances to win the match, and Japan's second-half substitutions will maintain the intensity that Tunisia's squad depth cannot match. But expect Tunisia to score — Mejbri's quality and Msakni's experience ensure they won't go quietly. This is a match Japan should win, but one they must earn.",
+    "narrative": "Japan's superior squad depth and the individual quality of players like Mitoma operating in Europe's top leagues should eventually tell against Tunisia's disciplined but limited attacking options. The absence of Minamino and uncertainty around Kubo forces Moriyasu into tactical adjustments, but Japan's systematic approach and pressing intensity should create enough chances to overcome Tunisia's defensive resilience. The Eagles of Carthage will make this uncomfortable—they always do—but Japan's evolution from Qatar 2022 giant-killers to genuine contenders appears complete.\n\nExpect a cagey first half where Tunisia's defensive discipline frustrates Japan's rhythm, before the Samurai Blue's superior fitness and tactical flexibility begins to show in the final third. Mitoma's pace down the left flank will be the key, with his ability to stretch Tunisia's compact shape creating the spaces for Japan's technical players to exploit. Tunisia will have their moments—Msakni's experience and Skhiri's distribution could carve out crucial counter-attacking opportunities—but Japan's 3-4-2-1 system provides both the attacking thrust and defensive stability to edge what promises to be a tactical masterclass.",
     "alternativeScenarios": [
       {
-        "scenario": "Japan 0-0 Tunisia",
-        "probability": 18,
-        "reasoning": "Tunisia's defensive masterclass frustrates Japan completely. The Eagles of Carthage replicate their 2022 formula of organized defending and time-wasting, and Japan's pressing runs out of steam against a team that simply refuses to play into their hands."
+        "scenario": "Tunisia 1-0 Japan",
+        "probability": 25,
+        "reasoning": "Tunisia's defensive discipline and tournament experience could frustrate Japan into errors. If Msakni can exploit spaces left by Japan's wing-backs and Skhiri controls the midfield battle, a narrow victory is achievable—just as they proved against France in 2022."
       },
       {
-        "scenario": "Tunisia 1-0 Japan",
-        "probability": 12,
-        "reasoning": "A moment of Msakni magic or a Mejbri set-piece creates the only goal. Tunisia's 2022 victory over France proves it was no fluke — they are genuine giant killers when the defensive plan works perfectly."
+        "scenario": "Draw 1-1",
+        "probability": 15,
+        "reasoning": "Both teams' tactical sophistication and recent tournament experience could produce a stalemate, with Japan's attacking quality balanced by Tunisia's defensive organization and counter-attacking threat."
       }
     ]
   },
-
-  "closingLine": "Japan and Tunisia both proved at the 2022 World Cup that they can beat the best in the world. Now they must prove it against each other — and in Group F, there is no margin for error."
+  "closingLine": "In a World Cup where history belongs to UEFA and CONMEBOL, these proven giant-killers meet with the audacity to dream of rewriting football's oldest script."
 }

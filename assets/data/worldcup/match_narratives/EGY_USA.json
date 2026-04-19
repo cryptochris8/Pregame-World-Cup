@@ -4,77 +4,70 @@
   "team2Code": "USA",
   "team1Name": "Egypt",
   "team2Name": "United States",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-11T15:00:00Z",
   "dataVersion": 1,
-
-  "headline": "Salah in the Lion's Den",
-  "subheadline": "Egypt's world-class talisman takes on the host nation's home crowd, Pochettino's pressing machine, and the biggest test of the group stage",
-
-  "openingNarrative": "There is no advantage in football quite like hosting a World Cup. The roar of 80,000 voices singing your anthem, the energy that courses through a stadium when the home team attacks, the intangible sense that destiny is on your side. The United States, co-hosting the 2026 World Cup, will feel all of this when they take the field against Egypt in what promises to be one of the group stage's most compelling fixtures.\n\nMauricio Pochettino has built an American squad that combines European tactical sophistication with CONCACAF physicality. Christian Pulisic remains the creative heartbeat — the AC Milan winger whose dribbling and vision make him one of the most dangerous attacking midfielders in Serie A. Tyler Adams provides the defensive steel, and the emergence of a new generation of American talent means this squad has depth that previous US teams could only dream of. At $469M in squad value, this is the most expensive American team ever assembled.\n\nBut Egypt have a weapon that no tactical system can fully contain: Mohamed Salah. His 9 CAF qualifying goals were a masterclass in sustained excellence, and his Liverpool career — 200+ goals and counting — places him among the greatest players of his generation. Egypt's qualifying campaign was nearly flawless: 8 wins, 2 draws, zero losses, 20 goals scored, just 2 conceded. Hossam Hassan has built a team around Salah that is both disciplined and devastating.\n\nThis first-ever World Cup meeting between these nations is a clash of contexts. America's World Cup dream against Egypt's World Cup agony. Home advantage against individual genius. The crowd against the Pharaoh King.",
-
+  "headline": "Pharaohs and Eagles: When Salah Meets American Dreams",
+  "subheadline": "Egypt's talisman faces a resurgent USA in their first-ever World Cup meeting on home soil.",
+  "openingNarrative": "In the grand theater of World Cup football, some matches transcend the mere accumulation of points. This is one of them. When Egypt takes the field against the United States in their first-ever World Cup encounter, it will represent more than a clash of tactics or talent—it will be a collision of football cultures, each carrying the weight of their own unique journey to this moment.\n\nThe Pharaohs arrive with Mohamed Salah shouldering the expectations of a nation that has waited since 1934 to advance past the group stage. Their recent AFCON campaign told a fascinating story: reaching the semi-finals before falling to Senegal, then proving their resilience without their injured talisman by holding world number one Spain to a goalless draw and dismantling Saudi Arabia 4-0. It's a team that has discovered its identity beyond one man, even as that one man remains their greatest asset.\n\nAcross the field, Mauricio Pochettino's revolution continues to gather momentum. The Americans enter as co-hosts with a squad valued at nearly $470 million, their European-based stars carrying the dreams of a nation that sees this World Cup as a statement of intent. Yet shadows loom: Christian Pulisic's alarming 16-match goal drought, Tyler Adams' fitness concerns, and the pressure that comes with playing at home. History whispers encouragement—thirteen of twenty-two World Cup hosts have reached the semi-finals—but it also warns of the unique burden that comes with an entire country watching.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The USA's 4-3-3 under Pochettino is built on high-intensity pressing and rapid transitions. The front three, led by Pulisic, are expected to press from the front, forcing Egypt's defenders into hurried decisions. The midfield trio provides the engine — Adams disrupts, McKennie drives, and the creative outlet provides the final pass. The full-backs push high to create width and pin back Egypt's wide players.\n\nEgypt will absorb this pressure with a 4-2-3-1 that narrows the pitch and forces the USA to play through congested central areas. The double pivot is key — their ability to shield the defense while also feeding Salah in transition will determine Egypt's chances. Salah's role is simple: wait for the moment, then strike with lethal precision.\n\nThe critical tactical decision for the USA is how to handle Salah. Assigning a man-marker risks leaving gaps elsewhere. Zonal marking relies on team discipline. Neither solution is perfect against a player of Salah's caliber. The USA's left-back will need the game of his life.",
+    "narrative": "This match will be decided by how effectively each team can impose their preferred tempo. Pochettino's 4-3-3 system demands relentless intensity—a very high pressing game that transitions into a 2-3-5 attacking shape with overlapping fullbacks. It's designed to suffocate opponents and create controlled chaos, the kind of environment where Pulisic thrives when his confidence is intact. Egypt's 4-2-3-1 under Hossam Hassan represents the antithesis: narrow defensive lines, compact spacing, and patience waiting for the moment to release Salah or Omar Marmoush into space.\n\nThe decisive battle will unfold on Egypt's right flank, where Salah's tendency to drift inside onto his lethal left foot will clash with America's aggressive defensive positioning. If Tyler Adams is fully fit, his screening presence becomes crucial in preventing Salah from finding those pockets of space between lines. Meanwhile, Egypt's narrow defensive shape—a strength in maintaining compactness—could become a vulnerability against America's width-focused attack, particularly if both American fullbacks push high simultaneously as Pochettino demands.",
     "team1Formation": "4-2-3-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Mohamed Salah vs USA's left-back — the match-defining individual contest"
+    "keyMatchup": "Salah's inside cuts versus America's high defensive line and pressing triggers"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "USA (ELO: 1690) vs Egypt (ELO: 1648) — a 42-point gap that gives the USA a slight edge, approximately a 56% win probability. Home advantage adds another dimension that ELO cannot fully capture.",
-    "formAnalysis": "USA qualified automatically as co-hosts and lack recent competitive qualifying form, though Pochettino's preparation program has been extensive. Egypt's CAF qualifying was outstanding: 8 wins, 2 draws, 0 losses, 20 goals scored, 2 conceded. Salah scored 9 of those goals.",
-    "squadValueComparison": "USA's squad ($469M) outvalues Egypt's ($287M). Pulisic ($68.8M) leads the US valuations. Salah ($125M) is the most valuable player on either team by a significant margin.",
-    "injuryImpact": "Salah's fitness is Egypt's World Cup. The USA's deeper squad means they can absorb injuries more effectively. Pulisic's fitness — historically inconsistent — is a concern for the Americans.",
-    "bettingPerspective": "The USA's home advantage makes them favorites, but Egypt with Salah are dangerous opponents for anyone. Smart money considers the draw as genuine value.",
-    "historicalPattern": "No previous World Cup meetings. Limited history overall, mostly friendlies. This is a fresh rivalry born on football's biggest stage."
+    "eloAnalysis": "The ELO ratings tell a story of marginal superiority for the hosts—USA's 1690 rating ranks them 17th globally, while Egypt's 1648 places them 25th, a gap that reflects depth and consistency rather than peak talent.",
+    "formAnalysis": "Recent form favors the Americans dramatically: 10 wins in their last 13 matches compared to Egypt's more modest 5 wins, 2 draws, and 2 losses in nine games, though the Pharaohs' ability to function without Salah adds intrigue.",
+    "squadValueComparison": "The squad valuations paint a stark picture—America's $468.75 million roster dwarfs Egypt's $286.6 million, yet Mohamed Salah's $125 million valuation alone represents more than a quarter of Egypt's total investment.",
+    "injuryImpact": "Key availability concerns could reshape the match: Salah appears recovered from his March muscle strain, but Pulisic's confidence crisis and Adams' quad injury recovery create tactical headaches for Pochettino.",
+    "bettingPerspective": "While specific tournament winner odds aren't available, the underlying metrics suggest a closely contested affair with home advantage providing the Americans a crucial edge.",
+    "historicalPattern": "Host nation momentum runs deep in World Cup history—only South Africa and Qatar have failed to escape the group stage as hosts in the modern era, a statistic that should embolden American confidence."
   },
-
   "playerSpotlights": [
     {
       "name": "Mohamed Salah",
       "teamCode": "EGY",
-      "narrative": "Salah arrives in America as the man every neutral wants to see succeed — and every American defender dreads facing. His 9 qualifying goals, his 200+ Liverpool goals, his ability to score from positions that other players cannot even imagine shooting from — all of it makes him the most dangerous individual threat in this group. Against the USA's high defensive line, Salah's pace in behind could be devastating. The question is not whether Salah will have chances, but whether he will take them.",
-      "statline": "9 goals in CAF qualifying, valued at $125M, 200+ goals for Liverpool"
+      "narrative": "At 33, the Liverpool legend carries not just Egypt's hopes but the weight of an entire continent's World Cup dreams. His March muscle strain forced him to miss both international friendlies, watching from afar as his teammates proved they could compete without him—a development that might paradoxically liberate rather than pressure him. Every time he cuts inside from the right wing, 100 million Egyptians hold their breath. His nine goals in World Cup qualifying weren't just statistics; they were statements of intent from a player determined to rewrite his nation's history.",
+      "statline": "Egypt's all-time leading scorer with over 50 international goals"
     },
     {
       "name": "Christian Pulisic",
       "teamCode": "USA",
-      "narrative": "Pulisic is America's football ambassador — the player who has proven that US-developed talent can thrive at the highest level of European football. His AC Milan career has added goals and consistency to a game already rich in technique and creativity. At a home World Cup, Pulisic carries not just America's attacking hopes but the aspiration of an entire sporting culture. Against Egypt, his directness and ability to beat defenders one-on-one will be crucial.",
-      "statline": "USA's most valuable player at $68.8M, AC Milan's creative threat"
+      "narrative": "The golden boy of American soccer arrives at his home World Cup in the midst of an existential crisis. Goalless in 16 consecutive matches, the AC Milan winger's drought represents more than just poor finishing—it's a test of character that will define his legacy. When confident, he's undroppable for club and country, a player capable of ghosting past defenders and creating magic from nothing. But football is a game of fine margins, and right now, those margins are working against the man who was supposed to lead America's charge.",
+      "statline": "First American to score a hat-trick in the Champions League"
     },
     {
       "name": "Omar Marmoush",
       "teamCode": "EGY",
-      "narrative": "Marmoush has emerged as the second blade in Egypt's attacking sword. His pace, physicality, and goal-scoring instincts provide the complement to Salah that makes Egypt genuinely threatening from multiple angles. His Bundesliga performances have earned respect across Europe, and his ability to run the channels and stretch defenses will test the USA's backline.",
-      "statline": "Egypt's emerging attacking star, Bundesliga-proven"
+      "narrative": "While the world obsesses over Salah, Manchester City's rising star has quietly emerged as Egypt's secret weapon. His performances during Salah's absence—most notably in that stunning 0-0 draw against Spain—announced him as a player ready for the biggest stage. Playing alongside Erling Haaland at club level has sharpened his understanding of space and movement, making him the perfect foil for Salah's creativity. At 25, this is his moment to step from the shadows and into World Cup folklore.",
+      "statline": "Scored in Egypt's quarterfinal victory over defending AFCON champions Ivory Coast"
     },
     {
       "name": "Tyler Adams",
       "teamCode": "USA",
-      "narrative": "Adams is the player Pochettino trusts to hold everything together. His defensive intelligence, his ability to read passing lanes, and his leadership on the pitch make him the USA's most important player defensively. Against Egypt's counter-attacking threat — primarily Salah's runs in behind — Adams' positioning and awareness will be the USA's first line of defense.",
-      "statline": "USA's defensive midfield anchor, key to Pochettino's pressing system"
+      "narrative": "The Bournemouth midfielder embodies everything this American generation represents—grit, intelligence, and an unwavering belief in their collective destiny. His quadriceps injury in March has turned him into a doubt for the opener, but if fit, he remains the metronome around which Pochettino's pressing system revolves. Adams doesn't just break up play; he initiates the chaos that creates opportunities. His leadership qualities make him a captain candidate, and against Egypt's narrow midfield, his screening presence becomes absolutely vital.",
+      "statline": "Youngest American captain in World Cup history at 2022 Qatar"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "USA 2-1 Egypt",
-    "confidence": 58,
-    "narrative": "Home advantage is the deciding factor in a match between two closely matched teams. The US crowd will create an atmosphere that lifts Pochettino's players and adds pressure to Egypt's defensive discipline. Pulisic and the American attack will create chances through their pressing intensity, and the front-foot approach should yield goals.\n\nBut Salah guarantees that Egypt always have a chance. His ability to produce something from nothing — a burst of pace, a curling finish, a pass that splits the defense — means the USA can never feel comfortable. Expect Egypt to sit deep, absorb pressure, and look for the moment to release their talisman.\n\nThis is a match that could swing on a single moment of Salah brilliance. The USA's task is to ensure they score enough goals before that moment arrives.",
+    "prediction": "USA 2-0 Egypt",
+    "confidence": 70,
+    "narrative": "Home advantage in World Cup football isn't just about crowd noise—it's about rhythm, familiarity, and the intangible weight of an entire nation's expectations pushing you forward. The Americans possess superior squad depth, a tactical system that has shown consistent improvement under Pochettino, and the kind of relentless energy that can overwhelm teams built around individual brilliance. Egypt's over-reliance on Salah, despite their recent proof of life without him, becomes problematic against a team designed to press and harry every touch.\n\nThe match will likely be decided in those crucial moments when Egypt tries to feed Salah in space—if Adams is fit and the American pressing triggers work correctly, they can force Egypt into hurried decisions and capitalize on the transitions. Pulisic's goal drought becomes less relevant in a system where multiple players can contribute, and Egypt's narrow defensive shape plays directly into America's hands. It won't be beautiful, but it will be effective.",
     "alternativeScenarios": [
       {
         "scenario": "Egypt 1-0 USA",
-        "probability": 18,
-        "reasoning": "Salah produces a moment of magic against a nervous American defense, Egypt's organization holds firm, and the host nation's World Cup campaign suffers a devastating blow."
+        "probability": 20,
+        "reasoning": "If Salah produces one of his signature moments of brilliance—a trademark cut inside and left-footed finish—Egypt's defensive discipline could frustrate the hosts into desperation."
       },
       {
-        "scenario": "USA 3-0 Egypt",
-        "probability": 15,
-        "reasoning": "The home crowd lifts the USA to their best performance, Pochettino's pressing suffocates Egypt, and Salah is isolated from the team's supply lines."
+        "scenario": "USA 1-1 Egypt",
+        "probability": 10,
+        "reasoning": "A cagey affair where both teams' defensive strengths neutralize their opponents' attacks, leading to a point that neither side particularly wants but both can live with."
       }
     ]
   },
-
-  "closingLine": "When 80,000 Americans rise to their feet and Mohamed Salah picks up the ball on the right wing, the World Cup will hold its breath. That moment — anticipation meeting genius — is why we watch."
+  "closingLine": "In the end, World Cups are won by teams, not individuals—and on American soil, the stars and stripes have more constellations to call upon."
 }

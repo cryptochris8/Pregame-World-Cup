@@ -4,77 +4,70 @@
   "team2Code": "NZL",
   "team1Name": "Iran",
   "team2Name": "New Zealand",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T10:30:00Z",
   "dataVersion": 1,
-
-  "headline": "Asia's Lions vs Oceania's All Whites",
-  "subheadline": "Iran's tournament experience and clinical attack face New Zealand's organization and the Premier League finishing of Chris Wood",
-
-  "openingNarrative": "This is a match between two teams who know exactly what they are. Iran are Asia's most consistent World Cup qualifiers — 6 appearances in the last 7 tournaments, a proud tradition of competing fiercely against the world's best, and a knack for producing results that shake the established order. Their 2-0 victory over Wales at the 2022 World Cup — two injury-time goals in a match charged with emotional and political intensity — was a reminder that Iran at their best can beat anyone.\n\nNew Zealand are the perennial guests at football's grandest party. The All Whites have qualified for two World Cups, and their 2010 campaign in South Africa produced a remarkable statistic: they were the only unbeaten team at the tournament. Three draws — against Slovakia, Italy, and Paraguay — saw them exit at the group stage but with their heads held high. The fact that New Zealand held Italy, the reigning world champions, to a 1-1 draw remains one of the most quietly impressive results in World Cup history.\n\nIran's attacking quality is clear. Mehdi Taremi, Inter Milan's clinical striker, scored 10 goals in qualifying — the most by any player for a qualified team. His partnership with Sardar Azmoun gives Iran a one-two punch that few teams outside Europe's elite can match. New Zealand counter with Chris Wood, Nottingham Forest's experienced Premier League striker, who netted 9 goals in Oceania qualifying and brings the kind of physicality and aerial threat that can trouble any defense.\n\nIn 2 previous meetings, Iran won 1 with 1 draw. But World Cup encounters carry a different weight, and New Zealand's record of never losing a World Cup match (3 draws in 2010) suggests they are capable of rising to the occasion when it matters most.",
-
+  "headline": "When David Dreams: All Whites Face Iran Without Their Persian Talisman",
+  "subheadline": "Azmoun's political exile leaves Iran incomplete as New Zealand seeks World Cup miracle in historic clash.",
+  "openingNarrative": "In the corridors of power in Tehran, politics has always cast long shadows over football. But rarely has the cost been so painfully visible as it will be when Iran takes the field against New Zealand, missing the man they call 'the Iranian Messi.' Sardar Azmoun, with 57 goals in 91 caps, has been expelled from the national team by the Iranian government for political reasons, leaving a gaping wound in Team Melli's attacking soul that no tactical adjustment can truly heal.\n\nThis is Iran's burden as they face New Zealand in what represents a collision of World Cup dreams deferred and expectations defied. The Persians arrive as Asia's most consistent World Cup qualifiers, having reached six of the last seven tournaments, their qualifying campaign yielding seven wins and just one defeat. Yet without Azmoun's intelligent movement and clinical finishing, Mehdi Taremi must now shoulder the creative and scoring burden alone, his Inter Milan pedigree suddenly feeling heavier.\n\nFor New Zealand, this represents the purest expression of World Cup romance. The All Whites, with Chris Wood potentially hobbled by December knee surgery, embody the tournament's capacity for the impossible. They dominated OFC qualifying with five straight wins and a remarkable plus-28 goal difference, but now face the brutal reality check that only the World Cup can provide. In a sport where ELO ratings suggest Iran (1628, ranked 29th) should comfortably dispatch New Zealand (1505, ranked 46th), the beauty lies in football's stubborn refusal to respect mathematics.",
   "tacticalBreakdown": {
-    "title": "The Clinical vs The Compact",
-    "narrative": "Iran's 4-2-3-1 is built on defensive discipline and devastating counter-attacks. The double pivot screens the back four, while Taremi and Azmoun create chances from minimal possession. Iran's approach is pragmatic — they are comfortable allowing opponents the ball and striking when transitions occur. Their pressing is intelligent rather than intensive, looking to force errors in specific areas of the pitch.\n\nNew Zealand's 4-4-2 under Darren Bazeley is pragmatic and physical. Chris Wood operates as the target man, holding up play and bringing others into the attack. The midfield works in pairs, covering ground and competing for second balls. New Zealand's set-piece delivery is a weapon — Wood's aerial ability in the box makes every corner and free kick a genuine threat.\n\nThe tactical battle will be fought in the midfield trenches. Iran's technical superiority should give them the edge in ball circulation, but New Zealand's industry and physicality could disrupt their rhythm. The key is whether Iran can find Taremi with quality service — if they can, his movement and finishing will be too much. If New Zealand can limit the supply, their organization could frustrate Iran into errors.",
+    "title": "The Chess Match",
+    "narrative": "Iran's 4-2-3-1 under Amir Ghalenoei has always been built around the Taremi-Azmoun axis, but without his partner, Taremi becomes isolated in Ghalenoei's defensively disciplined system. The formation may remain unchanged, but the dynamics are fundamentally altered. Alireza Jahanbakhsh must drift inward more frequently from the right wing, while the midfield trio will need to provide more creative support than their structured, counter-attacking blueprint typically demands. Iran's weakness in midfield creativity, already their Achilles heel, becomes magnified without Azmoun's ability to drop deep and link play.\n\nDarren Bazeley's 4-4-2 is perfectly designed to exploit this Iranian vulnerability. Chris Wood, if fit, becomes the focal point for everything New Zealand attempts, his Premier League-proven aerial dominance potentially overwhelming Iran's compact defensive block. Liberato Cacace's attacking runs from left-back and the energy of Marko Stamenic in midfield must provide the service, while the All Whites' superior organization in defensive phases could frustrate an Iranian attack now overly dependent on individual brilliance from Taremi.",
     "team1Formation": "4-2-3-1",
     "team2Formation": "4-4-2",
-    "keyMatchup": "Mehdi Taremi vs New Zealand's center-backs — Inter Milan's clinical finisher against Premier League-level defensive resilience"
+    "keyMatchup": "Mehdi Taremi's isolated brilliance vs New Zealand's collective defensive discipline"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Iran (ELO: 1628, ranked 29th) vs New Zealand (ELO: 1505, ranked 46th) — a 123-point gap that gives Iran approximately a 60% win probability. The gap is meaningful but not overwhelming, suggesting this should be a competitive match.",
-    "formAnalysis": "Iran qualified with 7 wins, 2 draws, and 1 loss, scoring 19 and conceding 8 in AFC qualifying. Taremi's 10 goals was extraordinary. New Zealand dominated Oceania qualifying with 5 wins from 5, 29 goals scored and just 1 conceded — though the level of opposition was significantly lower than Iran's. Wood scored 9.",
-    "squadValueComparison": "Iran ($82.3M) vs New Zealand ($76.8M) — surprisingly close in squad valuation. Wood ($25M) is New Zealand's most valuable player, while Taremi ($10M) leads Iran. The financial comparison suggests a more competitive match than many would expect.",
-    "injuryImpact": "Both teams are built around their star strikers. Taremi's fitness is critical for Iran's attacking output, while Wood's physical presence gives New Zealand their most reliable route to goal. Both teams' prospects diminish significantly without their number 9.",
-    "bettingPerspective": "Iran are moderate favorites at approximately -120. New Zealand at +300 represent genuine value given their never-lost-at-a-World-Cup record (albeit from a tiny sample). The draw at +240 is the most likely upset scenario.",
-    "historicalPattern": "Iran lead the head-to-head 1-0-1 in 2 meetings. New Zealand have never lost a World Cup match (3 draws in 2010). Iran's 2022 victory over Wales demonstrated their ability to deliver decisive results in World Cup settings."
+    "eloAnalysis": "The 123-point ELO gap between Iran (1628) and New Zealand (1505) represents the difference between a regional powerhouse and an ambitious underdog, but World Cup history is littered with such gaps being bridged by tactical discipline and individual moments.",
+    "formAnalysis": "Iran's mixed recent form (one win, three draws, two losses in their last six) contrasts sharply with their dominant qualifying campaign, while New Zealand's perfect OFC record followed by losses to Australia suggests they're finding their true level.",
+    "squadValueComparison": "Despite similar squad valuations (Iran €82.25m vs New Zealand €76.75m), the distributions tell different stories—Iran's depth versus New Zealand's reliance on Chris Wood's €25m valuation.",
+    "injuryImpact": "Wood's knee surgery recovery and Azmoun's political exile represent parallel crises of different origins but similar tactical impact, forcing both teams to reinvent their attacking approaches.",
+    "bettingPerspective": "The markets' reluctance to provide tournament winner odds for either team speaks to their realistic chances, with both nations viewing quarter-final qualification as a tournament victory.",
+    "historicalPattern": "Only UEFA and CONMEBOL nations have ever won the World Cup, but both Iran and New Zealand embody the tournament's capacity to create heroes from the margins."
   },
-
   "playerSpotlights": [
     {
       "name": "Mehdi Taremi",
       "teamCode": "IRN",
-      "narrative": "Inter Milan's striker brings Serie A quality to Iran's attack. Taremi's movement in the box, his aerial ability, and his clinical finishing make him one of the most dangerous strikers outside Europe's traditional powers. His 10 qualifying goals were scored with the efficiency of a player who knows exactly where the goal is at all times. Against New Zealand's defense, his intelligence and positioning will be the primary threat.",
-      "statline": "10 goals in qualifying; Inter Milan striker; Iran's most prolific player"
+      "narrative": "The Inter Milan striker now carries the weight of a nation's expectations on shoulders that previously shared the burden with Azmoun. Taremi's Champions League and Europa League final goals in consecutive seasons prove his ability to rise to the biggest stages, but leading Iran's line alone presents a different challenge entirely. His hold-up play and clinical finishing must now compensate for the creativity Azmoun provided, making every touch precious.",
+      "statline": "10 goals in World Cup qualifying, Iran's leading scorer"
     },
     {
       "name": "Chris Wood",
       "teamCode": "NZL",
-      "narrative": "New Zealand's talisman brings a decade of Premier League experience to football's biggest stage. Wood's aerial dominance, his hold-up play, and his penalty-box instincts give New Zealand a genuine goal threat against any defense. His 9 goals in Oceania qualifying were expected, but his consistency at Nottingham Forest — scoring against the best defenses in English football — proves he can compete at the highest level.",
-      "statline": "9 goals in Oceania qualifying; 50+ Premier League goals; New Zealand's all-time leading scorer"
+      "narrative": "The Nottingham Forest striker's December knee surgery has cast doubt over his World Cup participation, but his March reserves appearance and subsequent goal suggest the recovery is progressing. With nine goals in qualifying and over 50 Premier League strikes to his name, Wood represents New Zealand's most realistic path to goals. His aerial dominance could be the key that unlocks Iran's compact defensive structure.",
+      "statline": "9 goals in OFC qualifying, New Zealand's primary threat"
     },
     {
-      "name": "Sardar Azmoun",
+      "name": "Alireza Beiranvand",
       "teamCode": "IRN",
-      "narrative": "The Iranian Messi provides the creative flair that complements Taremi's clinical finishing. Azmoun's dribbling, his ability to play between the lines, and his link-up play give Iran a secondary attacking dimension that can unlock organized defenses. His partnership with Taremi is the best in Asian football.",
-      "statline": "Iran's creative forward; the flair and skill that complements Taremi's finishing"
+      "narrative": "The goalkeeper whose journey from walking hundreds of kilometers to Tehran as a teenager to saving Cristiano Ronaldo's penalty at the 2018 World Cup embodies Iran's World Cup spirit. Now Team Melli's last line of defense in a tournament where every save could mean the difference between progress and elimination, Beiranvand's shot-stopping ability and distribution will be crucial in launching Iran's counter-attacks.",
+      "statline": "Saved Cristiano Ronaldo's penalty at 2018 World Cup"
     },
     {
       "name": "Liberato Cacace",
       "teamCode": "NZL",
-      "narrative": "Empoli's attacking left-back provides New Zealand with their most technically gifted player. Cacace's ability to push forward, deliver crosses, and compete in Serie A gives New Zealand a quality outlet on the left flank. His European experience at the highest level of Italian football means he will not be overawed by the occasion or the opposition.",
-      "statline": "Empoli's attacking left-back; New Zealand's most technically gifted player with Serie A experience"
+      "narrative": "The Empoli left-back represents New Zealand's new generation—technically gifted players earning their stripes in Europe's top leagues. His attacking runs and crossing ability from the left flank could provide the service Chris Wood needs, while his Serie A experience brings a level of tactical sophistication that previous All Whites generations lacked. At 24, he's perfectly positioned to announce himself on the world stage.",
+      "statline": "Serie A experience with Empoli, key attacking outlet"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Iran 2-1 New Zealand",
-    "confidence": 55,
-    "narrative": "This is a genuine contest between two well-matched teams, and the prediction comes with significant uncertainty. Iran's attacking quality — particularly the Taremi-Azmoun partnership — gives them the edge, but New Zealand's organization and Wood's physical presence ensure this will be competitive throughout.\n\nIran will control the first half through patient build-up and probing attacks. Taremi will score first — a clinical finish from a half-chance that demonstrates the difference between Serie A and Oceania qualifying. New Zealand will equalize before halftime through Wood's aerial ability from a set piece, sending a reminder that they are nobody's pushovers.\n\nThe decisive moment will come in the second half, when Iran's technical superiority in midfield begins to tell. Azmoun's creativity will produce the chance, and Iran's composure in front of goal will deliver the winner. But this will be a tight, tense affair decided by margins — exactly the kind of match that makes the World Cup group stage so compelling.\n\nNew Zealand's record of never losing at a World Cup adds a fascinating psychological dimension. They know how to compete at this level, and their mental resilience should not be underestimated.",
+    "confidence": 62,
+    "narrative": "Iran's superior individual talent, led by Taremi's world-class finishing, should ultimately prove decisive against New Zealand's organized but limited setup. However, Azmoun's absence removes the tactical fluidity that made Iran genuinely dangerous, forcing them into a more labored approach that New Zealand can exploit for long periods. Wood's fitness concerns add another layer of uncertainty to a match that feels more evenly balanced than the ELO ratings suggest.\n\nThe deciding factor will likely be Iran's ability to create chances without Azmoun's movement, and Ghalenoei's tactical adjustments may take time to click. If Wood starts and New Zealand can frustrate Iran early, a famous upset becomes possible. But class eventually tells, and Taremi's individual brilliance should provide the crucial difference in a match that will be tighter than many expect.",
     "alternativeScenarios": [
       {
-        "scenario": "New Zealand 1-0 Iran",
-        "probability": 18,
-        "reasoning": "Wood dominates aerially, New Zealand score from a corner, and their defensive discipline holds Iran's attack at bay. The All Whites continue their unbeaten World Cup record and produce one of the tournament's biggest upsets."
+        "scenario": "New Zealand 1-1 Iran",
+        "probability": 25,
+        "reasoning": "If Wood dominates aerially and Iran struggle to create without Azmoun, New Zealand's defensive organization could earn them a precious point in their first World Cup match since 2010."
       },
       {
-        "scenario": "Iran 1-1 New Zealand",
-        "probability": 22,
-        "reasoning": "A tight, evenly matched encounter that neither team can win. The draw continues New Zealand's remarkable unbeaten World Cup record while leaving Iran frustrated but still in contention for the knockout rounds."
+        "scenario": "Iran 3-0 New Zealand",
+        "probability": 13,
+        "reasoning": "Should Iran's attacking adjustments click early and Wood's fitness issues manifest, the quality gap could produce a comfortable victory despite tactical complications."
       }
     ]
   },
-
-  "closingLine": "New Zealand have never lost at a World Cup. Iran have rarely lost at home in Asia. When these two meet, something has to give — and the answer will tell us whether this World Cup belongs to the favorites or the fighters."
+  "closingLine": "In a World Cup where dreams collide with reality, both nations understand that sometimes the beautiful game's greatest victories come not from what you have, but from what you do with what remains."
 }

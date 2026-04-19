@@ -4,77 +4,70 @@
   "team2Code": "IRN",
   "team1Name": "Honduras",
   "team2Name": "Iran",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T10:00:00Z",
   "dataVersion": 1,
-
-  "headline": "CONCACAF Grit Meets Persian Precision",
-  "subheadline": "In a Group I where France dominate the headlines, Honduras and Iran know this match could decide who survives the group stage",
-
-  "openingNarrative": "Strip away the glamour of France versus Norway, the narrative of Mbappe versus Haaland, and the romanticism of Iraq's return — and you find the match that will actually decide the fate of Group I. Honduras versus Iran is football at its most raw: two teams who know they cannot compete with France, who suspect Norway's Haaland will be too much to handle, and who therefore understand that this fixture is their World Cup.\n\nIran arrive as Asia's most experienced World Cup campaigners, having appeared in 6 of the last 7 tournaments. Their 2022 World Cup produced one of the tournament's most emotionally charged campaigns — played against the backdrop of political protests at home, Iran rallied from a 6-2 defeat to England to beat Wales 2-0 in one of the most passionate performances in recent World Cup memory. Mehdi Taremi, now starring for Inter Milan, and Sardar Azmoun form one of Asia's most feared striking partnerships.\n\nHonduras bring the CONCACAF identity: physical intensity, collective commitment, and a stubbornness that can frustrate any opponent. They have appeared at four World Cups without winning a single match — a record that obscures the competitive spirit they bring to every encounter. CONCACAF qualifying is a survival test played in extreme heat, on difficult surfaces, against opponents who fight for every ball. Honduras are hardened by that experience.\n\nIran's qualifying was strong: 7 wins, 2 draws, 1 loss, with Taremi scoring a remarkable 10 goals. Honduras' qualifying path through CONCACAF was more modest. But World Cup group matches are not decided by qualifying form. They are decided by the 90 minutes on the pitch — and both teams will treat this match as a final.",
-
+  "headline": "When David Faces Goliath: Honduras Meet Iran in Historic Clash",
+  "subheadline": "Two nations separated by continents collide in their first-ever World Cup encounter as Iran seek early momentum.",
+  "openingNarrative": "In the grand theater of World Cup football, first meetings carry a particular magic—the weight of the unknown, the absence of tactical blueprints etched in shared history, the pure possibility that anything might unfold. When Honduras and Iran step onto North American soil for their inaugural World Cup encounter, they will be writing the opening chapter of what could become a compelling rivalry between two nations whose football journeys have traveled remarkably different paths.\n\nIran arrive as the established force, ranked 29th globally with an ELO rating of 1628 and the confidence that comes from qualifying campaigns where expectation meets delivery. Under Amir Ghalenoei's methodical guidance, Team Melli have built their identity around defensive discipline and the clinical partnership of Mehdi Taremi—now plying his trade at Inter Milan—and what was once a feared attacking alliance. Yet beneath this composed exterior lies a team carrying invisible scars, most notably the politically-motivated expulsion of Sardar Azmoun, whose 57 goals in 91 appearances have been erased from their tactical calculations not through injury or form, but through forces beyond the beautiful game.\n\nHonduras enter as the quintessential underdogs, their presence here a testament to the unpredictable alchemy of tournament football. While statistical profiles may be sparse and squad valuations modest compared to Iran's €82.25 million collective worth, World Cup history whispers of David's capacity to topple Goliath when the stage is brightest and stakes highest.",
   "tacticalBreakdown": {
-    "title": "The Calculated vs The Combative",
-    "narrative": "Iran's 4-2-3-1 under Amir Ghalenoei is built on defensive discipline and clinical counter-attacks. The double pivot screens the back four with positional intelligence, while Taremi and Azmoun provide a devastating one-two punch in attack. Iran's approach is meticulous: absorb pressure, defend in numbers, then unleash their forwards with quick vertical passes. This system has proven effective against superior opponents — their 2-0 win over Wales in 2022 was a masterclass of pragmatic football.\n\nHonduras' 4-4-2 is physical and direct. Alberth Elis provides pace on the counter, while the midfield works tirelessly to close spaces and compete for second balls. Honduras are at their most dangerous from set pieces and when they can engage opponents in physical duels. Their challenge against Iran is technical — Iran's players are comfortable on the ball and can play through CONCACAF-style pressing.\n\nThe key tactical question is whether Honduras can match Iran's technical quality in midfield. If they can, this becomes a physical battle that suits Honduras. If Iran's midfield imposes itself, their superior passing and movement will create the openings for Taremi to exploit.",
-    "team1Formation": "4-4-2",
+    "title": "The Chess Match",
+    "narrative": "Ghalenoei's Iran will deploy their trusted 4-2-3-1 formation, a system designed to provide the defensive stability that has become their calling card while maximizing Taremi's influence as the focal point of their attacking ambitions. Without Azmoun's intelligent movement to complement Taremi's hold-up play, Iran's attacking patterns may become more predictable, forcing players like Alireza Jahanbakhsh to drift inside from wide positions and create the secondary threats that once came naturally from their striker partnership.\n\nHonduras, understanding their role as underdogs, are expected to sit deep and compact, likely employing a defensive block designed to frustrate Iran's possession-based approach and force them into areas where creativity becomes paramount—precisely where Iran's tactical profile identifies their primary weakness. The key battle will unfold in the spaces between Honduras's defensive lines, where Iran's midfield must find ways to unlock stubborn resistance without the luxury of Azmoun's movement to create gaps. Honduras will look to Alberth Elis to provide the pace and directness needed to trouble Iran's defense on the counter-attack.",
+    "team1Formation": "5-4-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Mehdi Taremi's movement vs Honduras' center-backs — can CONCACAF physicality contain Inter Milan's clinical striker?"
+    "keyMatchup": "Taremi's hold-up play against Honduras's compact defensive block"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Iran (ELO: 1628, ranked 29th) hold a significant advantage over Honduras, who sit outside the ELO top 60. The gap translates to roughly a 62% win probability for Iran, reflecting their superior recent form and higher competitive level in Asian qualifying.",
-    "formAnalysis": "Iran qualified with 7 wins, 2 draws, and 1 loss, scoring 19 goals and conceding 8. Taremi's 10 goals was the standout individual contribution. Honduras qualified through CONCACAF with a more modest record. Iran's qualifying form is considerably stronger by every measure.",
-    "squadValueComparison": "Iran ($82.3M) vs Honduras — Iran hold a financial advantage, driven primarily by Taremi's Inter Milan value ($10M) and the presence of several European-based players. Honduras' squad is largely domestically based with limited European exposure.",
-    "injuryImpact": "Iran's attacking partnership of Taremi and Azmoun is their primary weapon — both must be fit for Iran to threaten. Honduras need Elis's pace as their counter-attacking outlet and Palma's creativity from midfield.",
-    "bettingPerspective": "Iran are favorites at approximately -130, with the draw at +230 and Honduras at +350. The tight odds reflect the genuine uncertainty of a match between two teams from different confederations with limited prior interaction.",
-    "historicalPattern": "This is the first World Cup meeting between Honduras and Iran. Honduras have never won a World Cup match in 4 appearances. Iran's 2022 win over Wales demonstrated they can deliver decisive results under pressure."
+    "eloAnalysis": "Iran's ELO rating of 1628 places them comfortably in the global top 30, reflecting their status as Asian football royalty and tournament regulars who understand the rhythms of major competitions.",
+    "formAnalysis": "Iran qualified with authority, collecting 20 points from 8 AFC third-round matches with a 7W-2D-1L record, though recent friendlies have shown vulnerability with mixed results including a 4-3 loss to Uzbekistan.",
+    "squadValueComparison": "Iran's €82.25 million squad valuation, led by Taremi's €10 million market value, represents significant investment in experienced professionals competing at Europe's highest levels.",
+    "injuryImpact": "While Taremi and Jahanbakhsh arrive fully fit, the absence of Azmoun due to political expulsion removes Iran's second-highest scorer and fundamentally alters their attacking dynamic.",
+    "bettingPerspective": "Markets reflect Iran's clear favoritism in this matchup, though tournament football's propensity for upsets keeps this from being considered a foregone conclusion.",
+    "historicalPattern": "Honduras face the stark reality that no team from outside UEFA and CONMEBOL has ever won the World Cup, making every point precious in their quest to challenge football's established order."
   },
-
   "playerSpotlights": [
     {
       "name": "Mehdi Taremi",
       "teamCode": "IRN",
-      "narrative": "Inter Milan's clinical striker is the player who elevates Iran from plucky outsiders to genuine contenders. Taremi's movement in the box, his aerial ability, and his nose for goals in big moments make him one of Asia's all-time great strikers. His 10 qualifying goals were scored with the ruthless efficiency of a player who has competed at the highest levels of European club football. Against Honduras' physical defenders, his intelligence will be tested — but intelligence is his greatest weapon.",
-      "statline": "10 goals in qualifying; Inter Milan striker; Iran's all-time leading scorer at major tournaments"
+      "narrative": "The Inter Milan striker carries the weight of Iranian hopes on shoulders that have grown accustomed to such responsibility. Taremi's journey from the dusty pitches of Bushehr to the hallowed grounds of San Siro represents everything beautiful about football's capacity for transformation. His hold-up play and clinical finishing made him the leading scorer in Iran's qualifying campaign with 10 goals, but perhaps more importantly, he must now shoulder the creative burden once shared with the exiled Azmoun. Against Honduras, Taremi faces the challenge of being both target man and playmaker.",
+      "statline": "10 goals in World Cup qualifying, Iran's leading scorer"
     },
     {
       "name": "Alberth Elis",
       "teamCode": "HON",
-      "narrative": "Honduras' most dangerous player brings European experience and electrifying pace to a team built on collective effort. Elis's ability to run at defenders, to create chances from nothing, and to provide an outlet for long clearances gives Honduras their primary attacking dimension. Against Iran's disciplined defense, his directness and willingness to take risks could produce the moment that changes the match.",
-      "statline": "Honduras' leading attacker with European club experience; pace and directness as primary weapons"
+      "narrative": "In a team of underdogs, Elis stands as Honduras's brightest star and most dangerous weapon. The forward's pace and directness offer Honduras their clearest path to troubling Iran's experienced but potentially slow defensive line. His ability to stretch the game and create something from nothing will be crucial if Honduras are to find the breakthrough moments that separate World Cup dreams from harsh reality. Elis represents the hope that individual brilliance can overcome collective disadvantage.",
+      "statline": "Honduras's primary attacking threat and pace outlet"
     },
     {
-      "name": "Sardar Azmoun",
+      "name": "Alireza Beiranvand",
       "teamCode": "IRN",
-      "narrative": "The 'Iranian Messi' — a nickname that speaks to his flair, creativity, and ability to produce moments of individual brilliance. Azmoun's partnership with Taremi is the best in Asian football, combining Taremi's positional intelligence with Azmoun's dribbling and link-up play. Together, they give Iran a two-pronged attacking threat that few group-stage opponents can match.",
-      "statline": "Iran's creative forward; deadly partnership with Taremi and the team's primary chance creator"
+      "narrative": "The goalkeeper whose penalty save against Cristiano Ronaldo in 2018 made him a global sensation overnight embodies Iran's capacity for World Cup heroics. Beiranvand's remarkable journey from walking hundreds of kilometers to Tehran as a teenager to becoming Iran's undisputed number one reads like football folklore. Against Honduras, his experience and shot-stopping ability provide Iran with the defensive foundation upon which their tactical discipline is built. His presence alone serves as a reminder that Iran have been here before and thrived.",
+      "statline": "Saved Cristiano Ronaldo penalty at 2018 World Cup"
     },
     {
-      "name": "Luis Palma",
-      "teamCode": "HON",
-      "narrative": "Celtic's tricky winger provides Honduras with the creative spark they need to compete at this level. Palma's dribbling ability, his willingness to run at defenders, and his experience in European competition give Honduras a quality outlet when they win the ball. In a match where Honduras will defend for long periods, Palma's ability to turn defense into attack with a single run could be decisive.",
-      "statline": "Celtic winger providing creativity and pace; Honduras' key player in transitional moments"
+      "name": "Ehsan Hajsafi",
+      "teamCode": "IRN",
+      "narrative": "With over 130 caps for Iran, Hajsafi represents institutional memory in cleats. The veteran left-back and captain has witnessed Iran's evolution into Asian powerhouses and brings leadership that transcends tactics. His experience across European leagues provides Iran with the calm authority needed in tournament football's pressure-cooker environment. Against Honduras, Hajsafi's ability to organize defensive shape while contributing to attacking phases could prove decisive in controlling the game's tempo and emotional rhythm.",
+      "statline": "Over 130 caps for Iran, captain and defensive leader"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Iran 2-0 Honduras",
-    "confidence": 62,
-    "narrative": "Iran's technical superiority and the Taremi-Azmoun partnership give them the edge in a match that both teams will approach with caution. This will not be an open, flowing contest — it will be a chess match played at walking pace for long periods, punctuated by bursts of attacking intent.\n\nIran will control possession and probe Honduras' defense with patient build-up. The first goal will come from a Taremi movement in the box — a half-turn and finish that exemplifies his Inter Milan quality. The second will arrive on the counter after Honduras push forward in search of an equalizer, with Azmoun exploiting the space behind the advancing defenders.\n\nHonduras will compete physically and make this uncomfortable for Iran, but their lack of creative quality in midfield will limit their ability to create genuine scoring opportunities. Elis will have one or two half-chances on the counter, and if he converts, the dynamic changes entirely. But Iran's defensive discipline should hold.\n\nThis is the match that Iran need to win to give themselves a realistic chance of reaching the knockout rounds. They have the quality. They have the experience. They should deliver.",
+    "confidence": 68,
+    "narrative": "Iran's superior experience, tactical organization, and individual quality should prove decisive against valiant but limited opposition. Taremi's presence provides a reliable goal threat, while Iran's defensive discipline—anchored by the experienced Beiranvand and captained by the veteran Hajsafi—offers the foundation needed to control this encounter. Honduras will make life difficult with their defensive approach and occasional counter-attacks through Elis, but Iran possess too many weapons and too much tournament experience to be denied.\n\nYet football's beauty lies in its unpredictability, and Honduras arrive with nothing to lose and everything to gain. If they can frustrate Iran's possession game and force them into the kind of creative deficit their tactical profile identifies as a weakness, this first meeting could produce the kind of surprise that makes World Cup folklore. Still, class tends to tell at this level, and Iran have simply too much of it.",
     "alternativeScenarios": [
       {
-        "scenario": "Honduras 1-0 Iran",
-        "probability": 15,
-        "reasoning": "Honduras' physical approach overwhelms Iran, Elis scores on a breakaway counter-attack, and the CONCACAF fighters produce the most significant result in their World Cup history. It would be Honduras' first-ever World Cup victory."
+        "scenario": "Iran 1-0 Honduras",
+        "probability": 25,
+        "reasoning": "A cagey encounter where Honduras's defensive discipline keeps the score tight, but Iran's quality eventually tells through a single moment of brilliance from Taremi or set-piece execution."
       },
       {
-        "scenario": "Iran 1-1 Honduras",
-        "probability": 20,
-        "reasoning": "A tight, tense encounter where neither team can establish dominance. Taremi scores but Honduras equalize through a set piece, and both teams leave with a point that may not be enough for either to advance."
+        "scenario": "Honduras 1-1 Iran",
+        "probability": 15,
+        "reasoning": "Honduras spring a surprise by taking an early lead through Elis on the counter-attack, forcing Iran to chase the game and eventually equalizing but struggling to find the winner against stubborn resistance."
       }
     ]
   },
-
-  "closingLine": "In the shadow of Mbappe and Haaland, Honduras and Iran will fight a quieter battle — but one that means everything to both nations. This is where World Cups are decided: not in the glamour matches, but in the fights for survival."
+  "closingLine": "In this theater of first meetings, Iran hold the script, but Honduras possess the defiance to rewrite the ending."
 }

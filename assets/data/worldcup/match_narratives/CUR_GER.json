@@ -2,79 +2,72 @@
   "matchKey": "CUR_GER",
   "team1Code": "CUR",
   "team2Code": "GER",
-  "team1Name": "Curacao",
+  "team1Name": "Curaçao",
   "team2Name": "Germany",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T10:00:00Z",
   "dataVersion": 1,
-
-  "headline": "The Impossible Dream Meets the Inevitable Giant",
-  "subheadline": "Curacao's 150,000 souls face four-time world champions Germany in the most extreme mismatch the group stage has to offer",
-
-  "openingNarrative": "There is something profoundly beautiful about the moment Curacao's players will walk onto the pitch to face Germany. Forget the tactical analysis, the ELO ratings, the squad valuations. For one glorious afternoon, an island of 150,000 people will stand across from four-time world champions, and the world will watch. That is the World Cup's promise — not that the small will conquer the mighty, but that they will share the same stage.\n\nGermany arrive in 2026 with a point to prove. Julian Nagelsmann has rebuilt Die Mannschaft after the humiliation of consecutive group-stage exits at the 2018 and 2022 World Cups, performances that shook German football to its core. The response has been emphatic: 5 wins, 0 draws, 1 loss in qualifying, 16 goals scored, just 3 conceded. Jamal Musiala has emerged as one of the world's most exciting talents, while Florian Wirtz provides the creative spark from midfield. This is a Germany team rebuilt in Nagelsmann's image — dynamic, pressing, and relentlessly attacking.\n\nCuracao, guided by Dick Advocaat's vast experience, will approach this match with the pragmatism of a side that knows its limitations but refuses to accept defeat before the whistle blows. Their CONCACAF qualifying campaign — 4 wins, 1 draw, 1 loss — proved they can be organized, competitive, and dangerous when the moment is right. Against Germany, the moment may never arrive. But they will try.",
-
+  "headline": "Dreams Meet Reality: Curaçao's Historic World Cup Moment",
+  "subheadline": "A Caribbean island of 150,000 faces four-time champions Germany in football's ultimate David vs Goliath story.",
+  "openingNarrative": "In the annals of World Cup history, there have been many David versus Goliath encounters, but none quite like this. When Curaçao takes the field against Germany, it will represent the purest distillation of football's democratic spirit – a small Caribbean island with a population smaller than most major stadiums facing the accumulated might of Die Mannschaft, four-time world champions whose very DNA is encoded with tournament success.\n\nThe numbers tell a story of impossible odds: Curaçao's entire squad is valued at €10 million, less than what Germany might spend on a promising youth prospect. Their ELO rating of 1300 sits a staggering 438 points below Germany's 1738, a gulf that in chess terms would be equivalent to a club player facing a grandmaster. Yet here they stand, on football's grandest stage, having achieved what was once unthinkable through sheer determination and the guidance of Dutch tactical expertise under Fred Rutten.\n\nFor Germany, this match represents both opportunity and burden. After consecutive group-stage eliminations in 2018 and 2022 – disasters that shook the foundations of German football – Julian Nagelsmann's rebuilt side comes to this World Cup carrying the weight of restoration. With Florian Wirtz in scintillating form after his masterful display against Switzerland and the race-against-time fitness of Jamal Musiala dominating headlines, Germany knows that anything less than dominance here would be viewed as another alarming sign of decline.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Germany's 4-2-3-1 under Nagelsmann is built for total dominance. Musiala operates in the spaces between opposition midfield and defense, drifting with an intelligence that makes him impossible to mark. Wirtz provides creativity from the left channel, while the double pivot provides both security and progressive passing. The full-backs push high to create width and overloads.\n\nCuracao will set up in the deepest possible defensive block — a 5-4-1 that sacrifices all attacking ambition in exchange for defensive survival. Advocaat knows that Germany will have 70%+ possession and the only question is whether Curacao can limit the damage. Every defender will have a zone, every midfielder will track a runner, and the collective discipline required is immense.\n\nThe tactical reality is stark: Germany will probe, Curacao will resist, and the match will be determined by Germany's ability to break down a packed defense and Curacao's ability to maintain concentration across 90 minutes of relentless pressure.",
-    "team1Formation": "5-4-1",
+    "narrative": "This will be a tactical exercise in damage limitation meeting overwhelming force. Germany's 4-2-3-1 formation is designed to create overloads in every area of the pitch, with Wirtz and the potentially available Musiala operating between the lines while Joshua Kimmich orchestrates from deep. Nagelsmann's side will look to establish territorial dominance early, pushing their fullbacks high to create a virtual siege around Curaçao's penalty area.\n\nCuraçao's response under Fred Rutten will be pragmatic survival. Expect a defensive metamorphosis from their usual 4-3-3 into a deep 5-4-1 block, with every outfield player positioned no more than 30 meters from their own goal. The key battle will be in the central corridors, where Juninho Bacuna – their most accomplished midfielder with European experience – must somehow stem the creative tide flowing from Germany's midfield constellation. Set pieces may represent Curaçao's only realistic avenue to goal, exploiting any momentary German complacency.",
+    "team1Formation": "4-5-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Jamal Musiala vs Curacao's defensive block — genius against the wall"
+    "keyMatchup": "Juninho Bacuna's midfield resistance versus the Wirtz-Musiala creative axis"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Germany (ELO: 1738) vs Curacao (ELO: 1300) — a 438-point gap that is one of the largest in World Cup group-stage history. Germany's win probability approaches 90%. The ELO disparity alone tells the story of this mismatch.",
-    "formAnalysis": "Germany qualified by winning UEFA Group A: 5 wins, 0 draws, 1 loss, 16 goals scored, 3 conceded. Musiala led scoring with 4 goals. Curacao qualified through CONCACAF: 4 wins, 1 draw, 1 loss, 10 goals for, 4 against. Bacuna topped their scoring chart with 3 goals.",
-    "squadValueComparison": "Germany's squad ($1.21B) vs Curacao's ($10M) — a 121:1 ratio that is the most extreme in the entire tournament. Musiala alone ($163M) is worth more than 16 times Curacao's entire squad.",
-    "injuryImpact": "Germany's depth is staggering — they could field two competitive starting XIs. Curacao have no meaningful depth. This asymmetry means Germany can rotate freely while Curacao must hope their best XI stays fit.",
-    "bettingPerspective": "Germany are the heaviest favorites of any group-stage match. Markets offer virtually no return on a German victory. The only betting interest lies in the margin of victory and over/under goals.",
-    "historicalPattern": "This is the first-ever meeting between Germany and Curacao. The Dutch colonial connection adds an interesting dimension — Curacao is a constituent country of the Kingdom of the Netherlands, Germany's traditional rivals."
+    "eloAnalysis": "The 438-point ELO gap between Germany (1738, ranked 10th) and Curaçao (1300, ranked 100th) represents one of the largest rating differentials in World Cup history.",
+    "formAnalysis": "Germany arrives with momentum from eight consecutive wins, including that thrilling 4-3 victory over Switzerland where Wirtz delivered two goals and two assists, while Curaçao's qualifying campaign was built on defensive solidity with five wins in eight matches.",
+    "squadValueComparison": "The €1.21 billion gulf in squad values – Germany's total versus Curaçao's €10 million – illustrates the vast infrastructure and development chasm between European powerhouses and emerging CONCACAF nations.",
+    "injuryImpact": "Musiala's availability remains the defining question for Germany, with the Bayern star still racing against time to reach full match sharpness following his devastating fibula fracture and ankle dislocation from the 2025 Club World Cup.",
+    "bettingPerspective": "While specific World Cup winner odds weren't available, the market expectation is clear – this represents Germany's opportunity to build crucial goal difference in what could be a competitive Group E.",
+    "historicalPattern": "History shows that only UEFA and CONMEBOL nations have ever won the World Cup, but the tournament's magic lies in moments like these where dreams briefly intersect with destiny on the same pristine pitch."
   },
-
   "playerSpotlights": [
     {
-      "name": "Jamal Musiala",
+      "name": "Florian Wirtz",
       "teamCode": "GER",
-      "narrative": "Musiala is the player Germany have been waiting for since the decline of Mesut Ozil — a creative genius who combines dribbling, passing, and scoring with an elegance that makes football look simple. His 4 qualifying goals were a statement of intent, and at this World Cup, he carries Germany's hopes of restoring their status as world football's preeminent force. Against Curacao, he will be given freedom to create and destroy.",
-      "statline": "4 goals in qualifying, valued at $163M, Germany's creative heartbeat"
+      "narrative": "The Bayer Leverkusen magician arrives at this World Cup as Germany's brightest star, his confidence sky-high after that sensational Switzerland performance where he scored twice and assisted twice more. At just 23, Wirtz has already helped deliver Leverkusen's first-ever Bundesliga title in an unbeaten season, showcasing the kind of match-winning ability that Germany has craved since their recent tournament disappointments. Against Curaçao's compact defensive block, his ability to find space between the lines and deliver that killer pass will be crucial to unlocking what promises to be a stubborn resistance.",
+      "statline": "2 goals, 2 assists vs Switzerland in Germany's most recent friendly"
     },
     {
       "name": "Juninho Bacuna",
       "teamCode": "CUR",
-      "narrative": "Bacuna is Curacao's everything — their most talented player, their captain in spirit, and the one man capable of producing a moment that the island will remember forever. His 3 qualifying goals proved he can score on the biggest stage available to him. Against Germany, the stage is incomparably bigger. One goal, one assist, one moment of quality — that is all Curacao need to make this match a triumph.",
-      "statline": "3 goals in CONCACAF qualifying, Curacao's talisman"
+      "narrative": "The Rangers midfielder carries the hopes of an entire island on his shoulders, representing Curaçao's most accomplished player with genuine European pedigree. As their top scorer in qualifying with three goals, Bacuna has been the driving force behind their historic World Cup qualification, bringing Premier League and Scottish Premiership experience to a squad largely composed of Dutch league players. Against Germany's star-studded midfield, he faces the ultimate test of his international career – not just to compete, but to inspire his teammates to believe they belong on this stage.",
+      "statline": "Led Curaçao's qualifying campaign with 3 goals from midfield"
     },
     {
-      "name": "Florian Wirtz",
+      "name": "Jamal Musiala",
       "teamCode": "GER",
-      "narrative": "Wirtz is the other half of Germany's generational midfield pairing. His Bayer Leverkusen performances have marked him as one of Europe's most complete young players — creative, goal-scoring, and tactically intelligent beyond his years. Together with Musiala, he forms an attacking partnership that few defenses in world football can contain, let alone one from a nation of 150,000 people.",
-      "statline": "Bayer Leverkusen's star, key to Germany's attacking system alongside Musiala"
+      "narrative": "The Bayern Munich playmaker's World Cup participation remains the tournament's most compelling subplot. After suffering a fractured fibula and dislocated ankle during the 2025 Club World Cup, Musiala has been racing against time to regain full match fitness, and Germany's hopes may well hinge on his availability. His unique ability to glide between defensive lines and create chances from nothing has made him indispensable to Nagelsmann's tactical vision. If he can overcome his injury concerns, this match against limited opposition could provide the perfect platform for him to rediscover his rhythm.",
+      "statline": "Germany's top scorer in qualifying with 4 goals despite injury setback"
     },
     {
       "name": "Eloy Room",
       "teamCode": "CUR",
-      "narrative": "Room will face more shots in this single match than most goalkeepers face in a month. His performance will determine whether Curacao leave the pitch with their heads held high or with a scoreline that haunts them. The experienced goalkeeper has been Curacao's rock throughout qualifying, and his bravery and reflexes will be tested to the absolute limit.",
-      "statline": "Curacao's experienced goalkeeper, the last line of an island's defense"
+      "narrative": "The Columbus Crew goalkeeper stands as Curaçao's last line of defense and perhaps their most crucial player in this impossible matchup. Room's decade-long career in Major League Soccer has prepared him for high-pressure situations, and his shot-stopping ability will be tested like never before against Germany's attacking arsenal. More than just a goalkeeper, Room represents the embodiment of Curaçao's World Cup dream – a player who has built his career far from home but carries the pride of his island nation into the biggest match of his life.",
+      "statline": "Undisputed number one with over a decade of MLS experience"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Germany 4-0 Curacao",
+    "prediction": "Germany 4-0 Curaçao",
     "confidence": 85,
-    "narrative": "Germany will dominate this match in every conceivable way — possession, chances, territory, and ultimately the scoreline. Musiala and Wirtz will find spaces that Curacao's defense simply cannot cover, and Germany's relentless pressing will ensure that any Curacao possession is fleeting and fraught with danger.\n\nBut four goals, not six or seven, reflects the reality that Advocaat's defensive organization will impose some structure on the match. Curacao will frustrate Germany for periods, force them to be patient, and compete with a dignity that their qualification demands. The scoreline will be heavy, but the performance may be proud.\n\nThis is not a match about who wins. It is a match about the margins of football's greatest tournament, and about an island that dared to dream big enough to be here.",
+    "narrative": "The romantic in every football fan hopes for a miracle, but the realist must acknowledge the vast chasm in quality, resources, and experience. Germany possess world-class talents in virtually every position, and even their recent tournament struggles have never extended to matches against opponents of this caliber. Expect Nagelsmann's side to establish control early, with Wirtz pulling the strings and the returning Musiala – assuming fitness – adding extra creative thrust.\n\nCuraçao will defend valiantly and with tremendous heart, but the relentless pressure over 90 minutes will eventually tell. The question isn't whether Germany will win, but by how much, and whether Curaçao can produce that one magical moment – a goal, a stunning save, a passage of play – that will live forever in their football folklore. Sometimes the beautiful game is about more than results; it's about a small island proving they belong among the giants.",
     "alternativeScenarios": [
       {
-        "scenario": "Germany 2-0 Curacao",
-        "probability": 12,
-        "reasoning": "Curacao produce a heroic defensive performance, Advocaat's tactical plan works perfectly for 70 minutes, and Germany only break through late in a tighter-than-expected contest."
+        "scenario": "Germany 2-1 Curaçao",
+        "probability": 10,
+        "reasoning": "If Curaçao show incredible defensive discipline and Germany are wasteful in front of goal, with Room producing the performance of his life between the posts."
       },
       {
-        "scenario": "Germany 7-0 Curacao",
-        "probability": 10,
-        "reasoning": "Germany are ruthless from the start, the quality gap is exposed immediately, and Curacao's World Cup debut becomes a painful introduction to the very highest level."
+        "scenario": "Germany 6-0 Curaçao",
+        "probability": 20,
+        "reasoning": "Should Germany hit their stride early and Curaçao's defensive structure collapse under sustained pressure, the scoreline could become embarrassing."
       }
     ]
   },
-
-  "closingLine": "When Curacao's players walk off the pitch after facing Germany, they will have played against one of the greatest football nations in history. No scoreline can diminish that. Some dreams are measured not in trophies, but in simply being there."
+  "closingLine": "In football's grandest theater, David rarely slays Goliath, but sometimes the courage to face him is victory enough."
 }

@@ -4,77 +4,70 @@
   "team2Code": "ESP",
   "team1Name": "England",
   "team2Name": "Spain",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T14:30:00Z",
   "dataVersion": 1,
-
-  "headline": "The Euro 2024 Final Rematch — Redemption or Coronation?",
-  "subheadline": "England seek revenge for the Euro 2024 final defeat as Bellingham's generation faces Yamal's Spain in what could be the match of the group stage",
-
-  "openingNarrative": "Some matches announce themselves the moment the draw is made. When England and Spain were placed in the same group, the footballing world collectively understood: this is the one. The Euro 2024 final in Berlin — where Spain defeated England to claim their record fourth European Championship — cast a shadow over both nations that only this rematch can resolve.\n\nFor England, that Berlin night was the latest in a sequence of agonizing near-misses. Euro 2020 final, lost on penalties to Italy. Euro 2024 final, beaten by Spain's brilliant young team. The pattern is maddening — always the bridesmaid, never the bride. Thomas Tuchel was brought in to break the cycle, and his impact has been immediate: 8 wins from 8 qualifiers, 22 goals scored, zero conceded. England have never been more dominant in qualifying. Now the question is whether they can translate that dominance to the tournament itself.\n\nSpain are the reigning European champions and the world's number-one ranked team (ELO: 1877). Luis de la Fuente has assembled a squad that blends the possession mastery of Spain's golden era with a devastating counter-attacking threat through Lamine Yamal — who, at just 18, has already become one of the most exciting players on the planet. Rodri provides the midfield anchor, Pedri the creative intelligence, and the squad depth is frightening.\n\nThis is not just a football match. This is a statement game for both nations, a fixture that could determine who tops the group and who faces the harder path through the knockout rounds.",
-
+  "headline": "Euro 2024 Final Rematch: England's Golden Generation Seeks Redemption",
+  "subheadline": "Spain's world No.1 rating meets England's $1.8bn squad in tournament football's ultimate grudge match.",
+  "openingNarrative": "The ghosts of Berlin haunt every England training session. July 14, 2024 — the night La Roja broke English hearts in the Euro 2024 final — remains etched in memory, a cruel reminder of how close this golden generation came to ending 58 years of tournament drought. Now, less than two years later, fate has conspired to reunite these two European heavyweights on football's grandest stage.\n\nThomas Tuchel's England arrive as the world's fourth-ranked team, their $1.86 billion squad representing the most expensive collection of talent ever assembled by the Three Lions. Yet for all their individual brilliance — Jude Bellingham's Real Madrid stardom, Harry Kane's record-breaking goalscoring exploits, Bukayo Saka's Premier League wizardry — they carry the weight of expectation like a millstone. Their flawless qualifying campaign (8 wins from 8, 25 goals scored, 3 conceded) papered over concerning cracks exposed in recent friendlies: a labored 1-1 draw with Uruguay and a shocking home defeat to Japan that sent alarm bells ringing across the nation.\n\nSpain, meanwhile, stand atop the world rankings with the quiet confidence of champions who have already proven themselves when it mattered most. Luis de la Fuente's evolution of tiki-taka — marrying traditional possession mastery with the explosive directness of Lamine Yamal and Nico Williams — has created something magnificent. The teenage Yamal, now 19, has matured into football's most devastating wide player, while Rodri's miraculous recovery from ACL injury restores the Ballon d'Or winner to his role as La Roja's metronome. Their qualifying campaign may have been shorter (5 wins, 1 draw), but every performance carried the hallmarks of champions comfortable in their own skin.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Spain's 4-3-3 under de la Fuente is the most complete tactical system in world football. Possession phases are controlled by Pedri and Rodri — the Ballon d'Or winner whose reading of the game and passing precision set the standard for modern midfielders. But Spain have added a devastating counter-attacking dimension through Yamal's pace on the right and Nico Williams' explosiveness on the left.\n\nEngland's 4-2-3-1 under Tuchel matches Spain's tactical sophistication with a different emphasis. Where Spain build, England press. Where Spain circulate, England transition. Bellingham's box-to-box dynamism is the key — his ability to press Spain's midfield trio and then drive forward into attacking positions gives England a vertical threat that Spain must respect.\n\nThe defining tactical duel is Bellingham versus Rodri. If Bellingham can bypass Rodri's midfield screen and receive in the spaces behind, England can hurt Spain in the areas they are most vulnerable. If Rodri controls the central corridor and recycles possession, Spain will slowly strangle England's attacking ambitions.\n\nWatch Yamal against England's left-back. The teenager's dribbling, acceleration, and end product have terrorized defenders across Europe. Containing him is a task that has defeated some of the best defenders in the world.",
+    "narrative": "This is possession football's past meeting its future. Tuchel's England will deploy their favored 4-2-3-1, with Bellingham — if fit enough to start — operating in the free role that terrorized La Liga before his hamstring injury. The German coach faces an agonizing decision: risk his most gifted player at less than full fitness, or trust alternatives against the world's best midfield. England's high-tempo pressing and rapid transitions through their wing-backs represent their best hope of unsettling Spain's rhythm, particularly targeting the spaces behind Dani Carvajal's attacking runs.\n\nDe la Fuente's 4-3-3 remains the template for modern international football — Rodri anchoring, Pedri creating, and those devastating wingers stretching play. The key battle will unfold in the half-spaces, where England's compact midfield block must somehow contain Yamal and Williams' pace while preventing Pedri from threading passes between the lines. Spain's evolved tiki-taka thrives on drawing opponents into their web before exploding forward — exactly the kind of patient build-up that can expose England's occasional defensive lapses. The match will likely be decided by whether England's pressing intensity can disrupt Spain's tempo, or if La Roja's technical superiority eventually breaks down their opponents' structure.",
     "team1Formation": "4-2-3-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Jude Bellingham vs Rodri — the Ballon d'Or race played out on the World Cup stage"
+    "keyMatchup": "Bellingham vs Rodri — Real Madrid teammates, generational talents, contrasting styles"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Spain (ELO: 1877) vs England (ELO: 1834) — a 43-point gap that gives Spain approximately a 56% win probability. This is a narrow margin between the world's top-ranked team and the fourth-ranked. The match is effectively a coin-flip between two elite sides.",
-    "formAnalysis": "England's qualifying was historically dominant: 8 wins, 0 losses, 22 goals scored, 0 conceded. Harry Kane scored 8 goals. Spain won their group too: 5 wins, 1 draw, 21 goals scored, 2 conceded. Mikel Oyarzabal led with 6 qualifying goals. Both teams are in exceptional form.",
-    "squadValueComparison": "England's squad ($1.87B) leads all World Cup teams in total value. Spain ($1.42B) rank third. Bellingham ($225M) matches Yamal ($188M) as the most valuable players in the fixture. This is the richest match in the group stage.",
-    "injuryImpact": "Both squads have extraordinary depth. Spain could lose any single player and remain elite. England's depth under Tuchel is similarly impressive. The injury question is less about who is available and more about who is at peak sharpness.",
-    "bettingPerspective": "Spain are slight favorites at +450 to win the tournament versus England's +550. However, England's qualifying form and Tuchel's tactical acumen make this genuinely close. The draw at around +240 is the bookmakers' expected outcome.",
-    "historicalPattern": "Spain have had the upper hand in recent competitive meetings. England have not beaten Spain in a competitive match since 1996. That 30-year drought adds psychological weight to an already pressurized encounter."
+    "eloAnalysis": "Spain's world No.1 ranking (1877) reflects their Euro 2024 triumph and tactical evolution, while England's fourth-place rating (1834) underscores their consistent tournament performances despite their trophy drought.",
+    "formAnalysis": "England's perfect qualifying record (8-0-0, goal difference +22) contrasts sharply with recent friendly struggles, while Spain's return to form after their Nations League final penalty defeat to Portugal suggests championship mentality intact.",
+    "squadValueComparison": "England's $1.86 billion squad valuation dwarfs Spain's $1.43 billion, reflecting the Premier League's financial muscle, but La Roja's blend of proven winners and generational talents like the $188m-rated Yamal offers different kinds of riches.",
+    "injuryImpact": "Bellingham's hamstring issues and Foden's muscle strain rob England of creative firepower, while Rodri's miraculous ACL recovery gives Spain their most crucial player back when it matters most.",
+    "bettingPerspective": "The narrow margins reflect how evenly matched these sides are, with Spain's slight favoritism based more on recent head-to-head success than overwhelming superiority.",
+    "historicalPattern": "European nations have won 12 of 22 World Cups, and both teams carry the continental pedigree to lift the trophy — but only one can exorcise the demons of Berlin."
   },
-
   "playerSpotlights": [
-    {
-      "name": "Jude Bellingham",
-      "teamCode": "ENG",
-      "narrative": "Bellingham was on the losing side in the Euro 2024 final, and that experience burns. The Real Madrid midfielder has channeled that pain into performances of extraordinary quality — his combination of goals, assists, pressing, and leadership makes him the most complete midfielder in world football. This is the match where Bellingham can announce himself as the best player at the World Cup. Against Rodri, he faces the one midfielder capable of matching him.",
-      "statline": "England's talisman, valued at $225M, consistent double-digit goals from midfield"
-    },
     {
       "name": "Lamine Yamal",
       "teamCode": "ESP",
-      "narrative": "At 18, Yamal plays with a fearlessness that makes experienced defenders look ordinary. His Euro 2024 performances — including that stunning goal against France in the semi-final — announced a generational talent. His dribbling is instinctive, his finishing is improving rapidly, and his ability to create chances from nothing makes him Spain's most unpredictable threat. Against England, Yamal has the chance to confirm that Euro 2024 was just the beginning.",
-      "statline": "Euro 2024 star at just 16, valued at $188M, Barcelona's youngest ever goalscorer"
+      "narrative": "At just 19, Yamal has evolved from teenage sensation into Spain's most dangerous weapon. His chronic pubalgia issues are 'practically gone' according to medical reports, freeing him to terrorize defenses with the kind of directness Spanish football rarely possessed. The Barcelona wizard's ability to drift inside from the right wing, combining with Pedri's through balls, represents Spain's most potent attacking threat. Against England's high defensive line, his pace and vision could prove decisive in the kind of transition moments that define knockout football.",
+      "statline": "Barcelona's youngest ever La Liga scorer at 15 years, 290 days"
     },
     {
-      "name": "Harry Kane",
+      "name": "Jude Bellingham",
       "teamCode": "ENG",
-      "narrative": "Kane's quest for a major trophy has become one of football's most compelling narratives. The 2018 Golden Boot winner, the man who missed the penalty against France in 2022, the captain who was on the losing side in three tournament finals — all of it fuels a hunger that shows no sign of diminishing. His 8 qualifying goals demonstrate that his finishing remains world-class. Against Spain, Kane's movement and clinical instincts could be the difference.",
-      "statline": "8 goals in qualifying, England's all-time leading scorer, 2018 World Cup Golden Boot"
+      "narrative": "England's crown prince arrives under the darkest of clouds. The $225 million Real Madrid midfielder's hamstring injury — described by Tuchel as 'a race against time' — threatens to derail his nation's World Cup dreams before they truly begin. His tears as he limped off against Rayo Vallecano in February told the story of a player who knows his importance to England's hopes. If declared fit, Bellingham's box-to-box brilliance and big-game temperament could be the difference between glory and heartbreak. If not, England's creative burden falls on lesser shoulders.",
+      "statline": "Youngest English player to score in a Champions League final at 20 years, 76 days"
     },
     {
       "name": "Rodri",
       "teamCode": "ESP",
-      "narrative": "The 2024 Ballon d'Or winner is the metronome around which everything Spanish revolves. His ability to dictate tempo, his positioning, his tackling, and his rare ability to score decisive goals in finals make him the most important midfielder in world football. At Manchester City, he has won everything. For Spain, he has won the Euros. The World Cup is the remaining prize, and Rodri's influence in this match will be decisive.",
-      "statline": "2024 Ballon d'Or winner, Euro 2024 champion, Manchester City's midfield anchor"
+      "narrative": "The 2024 Ballon d'Or winner's return from ACL injury reads like sporting fiction. Manchester City's metronome wasn't expected back until next season, yet here he stands, having started Spain's 3-0 victory over Serbia in March. His presence transforms La Roja from talented entertainers into genuine contenders — no player in world football reads the game quite like Rodri. Against England's high-energy pressing, his ability to dictate tempo and pick the perfect pass will be crucial to Spain's hopes of controlling this heavyweight bout.",
+      "statline": "Completed 91% of passes in Euro 2024 final victory over England"
+    },
+    {
+      "name": "Harry Kane",
+      "teamCode": "ENG",
+      "narrative": "England's record goalscorer carries the hopes of a nation into his third World Cup. At 32, Kane's Bayern Munich move has reinvigorated his club career, but the international stage remains where legends are truly made. His 8 goals in qualifying demonstrated his enduring hunger, while his tactical intelligence in dropping deep to create space for runners fits perfectly with Tuchel's system. Against Spain's possession-heavy approach, Kane's pressing trigger and clinical finishing in transition moments could prove the difference between redemption and another tournament 'what if.'",
+      "statline": "England's all-time leading scorer with 66 goals in 98 appearances"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Spain 2-1 England",
-    "confidence": 52,
-    "narrative": "Spain's marginal ELO advantage, their Euro 2024 triumph, and the psychological weight of England's 30-year competitive drought against them combine to make La Roja very slight favorites. But this is as close to a coin-flip as elite football gets.\n\nExpect a tactical masterclass from both coaches. Tuchel will set up England to press Spain's build-up and exploit transitions. De la Fuente will trust his team's possession quality to suffocate England's pressing energy. The match will ebb and flow, with periods of Spanish dominance followed by English surges.\n\nYamal and Bellingham will produce moments of brilliance that make this one of the matches of the tournament. Kane and Rodri will demonstrate why they are their nations' irreplaceable anchors. And when the final whistle blows, the margin between these two teams will be measured in inches, not miles.\n\nSpain edge it because history says they do against England. But this England team under Tuchel looks ready to finally rewrite that history.",
+    "confidence": 58,
+    "narrative": "This match will be decided by the finest of margins, just as their Euro 2024 final was. Spain's technical superiority and world No.1 ranking provide a slight edge, but England's individual talent and desperate hunger for redemption make this impossibly close to call. The key difference may be Rodri's presence in midfield — his return from injury gives Spain the kind of game-controlling influence that England, potentially without a fully fit Bellingham, will struggle to match.\n\nExpect a cagey opening as both sides probe for weaknesses, before Spain's patient build-up eventually creates the clearer chances. Yamal's directness against England's high line could provide the breakthrough, with Kane's response keeping the Three Lions in contention throughout. In tournament football, fine margins separate glory from heartbreak — and Spain's championship experience may just tip the scales in their favor once again.",
     "alternativeScenarios": [
       {
         "scenario": "England 2-1 Spain",
-        "probability": 25,
-        "reasoning": "Bellingham produces a Player of the Match performance, Kane converts a crucial chance, and England finally beat Spain in a competitive match for the first time since 1996. The monkey is off the back."
+        "probability": 35,
+        "reasoning": "If Bellingham starts and England's pressing disrupts Spain's rhythm early, their transition game and Kane's clinical finishing could deliver the redemption story English football craves."
       },
       {
-        "scenario": "Spain 3-0 England",
-        "probability": 10,
-        "reasoning": "Spain's possession dominance is total, Yamal and Williams tear England's fullbacks apart, and Rodri controls the match from start to finish. The Euro 2024 final result is emphatically confirmed."
+        "scenario": "1-1 (Spain win on penalties)",
+        "probability": 20,
+        "reasoning": "Two defensively solid sides with elite goalkeepers could produce a stalemate, where Spain's tournament experience proves decisive from the spot."
       }
     ]
   },
-
-  "closingLine": "Euro 2024 gave us the prologue. The 2026 World Cup gives us the sequel. When England and Spain meet again, with the world watching and both nations dreaming of glory, football will deliver what it always delivers when these two meet: drama worthy of the occasion."
+  "closingLine": "In the theater of dreams, some stories demand sequels — and football's cruelest stage awaits another chapter in this tale of Spanish artistry versus English ambition."
 }

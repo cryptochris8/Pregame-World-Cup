@@ -4,77 +4,70 @@
   "team2Code": "USA",
   "team1Name": "Paraguay",
   "team2Name": "United States",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-12T10:00:00Z",
   "dataVersion": 1,
-
-  "headline": "The Hosts Meet History's Echo",
-  "subheadline": "The United States carry the weight of a nation's expectations against a Paraguay side determined to rewrite their own World Cup story",
-
-  "openingNarrative": "In Montevideo, on July 17, 1930, a young American striker named Bert Patenaude did something no one had ever done before: he scored a hat-trick at a World Cup. The United States beat Paraguay 3-0 that day in the inaugural tournament, and Patenaude's achievement — though it took 76 years for it to be officially recognized — remains one of the most remarkable footnotes in football history. Nearly a century later, these two nations meet again on the World Cup stage, and the echoes of that foundational moment reverberate through time.\n\nThe United States enter this tournament as co-hosts with expectations that would have seemed absurd a generation ago. Mauricio Pochettino's squad is stocked with players from Europe's biggest clubs: Pulisic at AC Milan, McKennie at Juventus, Reyna at Borussia Dortmund, Musah at AC Milan. The home advantage at packed American stadiums will be enormous — a 12th man that transforms good teams into great ones.\n\nParaguay, though, are nobody's easy out. Their CONMEBOL qualifying campaign — the toughest pathway in world football — hardened them for exactly this kind of challenge. Gustavo Alfaro's side combines the defensive stubbornness that has defined Paraguayan football for decades with the counter-attacking sharpness of Almiron and the youthful energy of Julio Enciso. In 9 all-time meetings, the USA lead 5-2 with 2 draws, and won their most recent encounter 2-1 in a 2025 friendly. But World Cup pressure changes everything.",
-
+  "headline": "Ghost of 1930: USA Seeks History on Home Soil Against Paraguay",
+  "subheadline": "Ninety-six years after Bert Patenaude's inaugural World Cup hat-trick, America aims to recapture magic against La Albirroja.",
+  "openingNarrative": "The ghosts of Montevideo whisper through MetLife Stadium this afternoon. On July 17, 1930, in a modest ground overlooking the Rio de la Plata, American striker Bert Patenaude carved his name into immortality with the World Cup's first hat-trick, leading the United States to a commanding 3-0 victory over Paraguay. Ninety-six years later, these two nations reconvene on American soil, where the weight of history mingles with the intoxicating possibility of the present.\n\nFor the United States, this is their moment of reckoning. Co-hosting the world's greatest sporting spectacle, they carry the expectations of a nation that has invested billions in soccer infrastructure and dreams. The Stars and Stripes haven't reached a World Cup knockout stage since 2014, haven't won a knockout match since 2002. Paraguay, meanwhile, return to this stage after missing the 2018 and 2022 tournaments, seeking to prove that CONMEBOL's depth extends beyond Brazil and Argentina. Their 2010 quarter-final run remains a testament to La Albirroja's capacity for tournament magic.\n\nThe tactical chess match promises intrigue: Mauricio Pochettino's high-octane pressing philosophy meeting Gustavo Alfaro's pragmatic defensive structure. With Christian Pulisic enduring a goalless streak of 16 matches and Tyler Adams nursing fitness concerns, the Americans must navigate not just Paraguay's compact 4-4-2, but their own psychological demons. Yet home advantage in World Cup history is no mere platitude—13 of 22 host nations have reached the semi-finals, six have claimed the ultimate prize.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Pochettino's USA play an aggressive 4-3-3 that demands intensity from every player. The pressing triggers are relentless, designed to suffocate opponents in their own half and create turnover opportunities in dangerous areas. Pulisic's dribbling from the right, Reyna's creativity through the center, and the energy of the McKennie-Adams-Musah midfield trio create a high-octane attacking approach that feeds off the home crowd's energy.\n\nParaguay will deploy their trademark 4-4-2 low block — two banks of four, minimal space between the lines, and the patience of saints. Alfaro's tactical discipline means Paraguay will be content to defend for 70 minutes if necessary, absorbing pressure and waiting for moments to release Almiron's devastating pace on the counter. Their midfield is combative and organized, designed to deny the creative freedom that Pulisic and Reyna crave.\n\nThe tactical battle hinges on tempo. If the USA can maintain their high-energy pressing for 90 minutes, Paraguay's resistance will eventually crack under the weight of constant attacking. If Paraguay slow the game down — through tactical fouls, set-piece delays, and controlled possession in safe areas — the crowd will grow anxious and the hosts will become vulnerable to the kind of counter-attacking sucker punch that South American teams deliver with surgical precision.",
+    "narrative": "Pochettino's 4-3-3 formation will morph into a 2-3-5 attacking structure when the USA build play, with both fullbacks pushing high and creating numerical overloads in wide areas. The Argentine coach demands his midfield trio of Tyler Adams (fitness permitting), Weston McKennie, and Yunus Musah to press with relentless intensity, forcing Paraguay into hasty clearances. Against this, Alfaro's compact 4-4-2 will sit deep, with Miguel Almirón and Julio Enciso flanking the front two, ready to exploit the spaces behind the American fullbacks when transitions arise.\n\nThe decisive battle will unfold in the middle third, where Paraguay's experience in slowing tempo meets America's urgent need to impose rhythm. If the USA can win the ball high through their pressing and create chaos, the pace of Tim Weah and a potentially resurgent Pulisic could be devastating. However, if Paraguay weather the early storm and frustrate the 80,000-strong crowd into anxiety, Almirón's Premier League-honed pace on the counter could punish an overly aggressive American defense. Gustavo Gómez's aerial dominance will be crucial in snuffing out McKennie's trademark box arrivals.",
     "team1Formation": "4-4-2",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Christian Pulisic vs Gustavo Gomez — the USA's creative talisman against Paraguay's defensive rock"
+    "keyMatchup": "Miguel Almirón's pace versus Antonee Robinson's recovery speed in transition moments"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "USA (ELO: 1690, rank 17) vs Paraguay (ELO: 1605, rank 33) — an 85-point gap that, combined with home advantage, gives the USA roughly a 65% win probability. The home boost at a World Cup typically adds 100+ Elo points to the effective rating.",
-    "formAnalysis": "The USA's most recent result against Paraguay was a 2-1 friendly victory in November 2025, with Reyna and Balogun scoring. Paraguay's CONMEBOL qualifying, where every match is a war of attrition, has battle-hardened Alfaro's squad for the intense atmosphere of a World Cup group stage.",
-    "squadValueComparison": "USA ($469M, led by Christian Pulisic at $68.8M) vs Paraguay ($166M, led by Miguel Almiron at $31.3M). The USA's squad is nearly three times more valuable, reflecting the generation of American players who have established themselves at Europe's top clubs.",
-    "injuryImpact": "Gio Reyna's fitness is the USA's perennial concern — when healthy, he transforms the team's attacking output. Paraguay's reliance on Almiron for counter-attacking quality makes his fitness equally important.",
-    "bettingPerspective": "The USA are clear favorites with home advantage. The market reflects Pochettino's impact and the expectation that American soccer has arrived at the highest level. Paraguay's draw price offers value for those who respect South American tournament craft.",
-    "historicalPattern": "9 meetings: USA 5 wins, Paraguay 2 wins, 2 draws. USA goals: 12, Paraguay goals: 7. The 1930 World Cup match (USA 3-0) remains their only competitive encounter. The USA's 2025 friendly win (2-1) provided a dress rehearsal, with Reyna and Balogun scoring."
+    "eloAnalysis": "The USA's ELO rating of 1690 (17th globally) versus Paraguay's 1605 (33rd) reflects the gap in current quality, though knockout football often renders rankings meaningless.",
+    "formAnalysis": "America's recent form sparkles with ten wins in thirteen matches, including a 2-1 victory over Paraguay in November, while La Albirroja's qualification campaign showed classic pragmatism with seven wins and seven draws from eighteen CONMEBOL fixtures.",
+    "squadValueComparison": "The $468.8 million USA squad dwarfs Paraguay's $165.5 million valuation, reflecting American soccer's investment in European-based talent versus South American domestic development.",
+    "injuryImpact": "Pulisic's form crisis and Adams' quad concerns could force Pochettino into tactical adjustments, while Paraguay arrive with their key trio of Almirón, Gómez, and Enciso fully fit.",
+    "bettingPerspective": "The absence of clear odds reflects tournament football's unpredictability, though home advantage historically carries enormous psychological weight.",
+    "historicalPattern": "Host nation momentum cannot be understated—only South Africa (2010) and Qatar (2022) have failed to escape the group stage when hosting, while six nations have claimed the trophy on home soil."
   },
-
   "playerSpotlights": [
     {
       "name": "Christian Pulisic",
       "teamCode": "USA",
-      "narrative": "Captain America carries his nation's dreams with a mixture of AC Milan swagger and genuine love for the shirt. Pulisic's dribbling, movement between the lines, and ability to produce decisive moments in big matches make him the most important American footballer of his generation. At a home World Cup, with 70,000 fans screaming his name, Pulisic has the platform to announce himself as a genuine global star. Against Paraguay's compact defense, his ability to find space in tight areas will be absolutely critical.",
-      "statline": "USA's most valuable player at $68.8M; consistent performer at AC Milan"
+      "narrative": "Captain America carries the hopes of a nation, but also the burden of a devastating form crisis. Sixteen matches without a goal would shatter most players, yet Pulisic's AC Milan performances suggest the talent remains intact. In World Cup moments, when adrenaline surges through packed stadiums, form books often become irrelevant. His left-footed cut-ins from wide positions remain the USA's most potent weapon, and breaking this drought on home soil would complete one of tournament football's great redemption arcs.",
+      "statline": "Valued at $68.8M, the USMNT's most expensive player"
     },
     {
-      "name": "Miguel Almiron",
+      "name": "Miguel Almirón",
       "teamCode": "PAR",
-      "narrative": "Almiron is the counter-attacking weapon that keeps every opponent honest. His blistering pace, honed through years in the Premier League with Newcastle, means Paraguay are never truly under siege — one long ball in behind and Almiron transforms defense into attack in three seconds. If the USA push too many players forward, Almiron will make them pay. His understanding with the other attackers in transition is Paraguay's most dangerous asset.",
-      "statline": "Paraguay's most valuable player at $31.3M; Premier League pacemaker"
+      "narrative": "Newcastle's Paraguayan wizard represents his nation's brightest hope of tournament progression. The 30-year-old's Premier League experience against the world's elite defenders has honed his already considerable pace into a weapon of precision. Alfaro's tactical setup is designed to release Almirón into spaces behind aggressive fullbacks, and his ability to carry the ball at speed in transition moments could unlock the USA's high defensive line. For Paraguay, everything flows through his electric left foot.",
+      "statline": "Paraguay's most valuable player at $31.3M"
     },
     {
-      "name": "Gio Reyna",
+      "name": "Tyler Adams",
       "teamCode": "USA",
-      "narrative": "When Reyna is fit, the USA are a different team. His technical quality — the close control, the vision, the ability to play the pass no one else sees — gives Pochettino's side a creative edge that elevates them from good to potentially great. His father, Claudio, captained the USA at the 2002 World Cup. Now the son has the chance to write his own chapter in American football history. The 2025 friendly goal against Paraguay showed his appetite for this fixture.",
-      "statline": "Scored in the USA's 2-1 friendly victory over Paraguay in November 2025"
+      "narrative": "The Bournemouth midfielder's leadership transcends statistics—he is the beating heart of American soccer's golden generation. His March quad injury and April return as a substitute raises questions about match fitness, yet Adams' presence transforms the USA's midfield structure. His ability to screen the defense allows McKennie and Musah to press higher, creating the tactical foundation for Pochettino's system. At 27, this World Cup represents his prime years converging with his nation's greatest opportunity.",
+      "statline": "USMNT captain candidate returning from quad injury"
     },
     {
-      "name": "Julio Enciso",
+      "name": "Gustavo Gómez",
       "teamCode": "PAR",
-      "narrative": "The young Brighton midfielder represents Paraguay's future. Enciso's energy, technical quality, and willingness to drive forward with the ball give Alfaro's team a dynamism that complements Almiron's pace. His Premier League education has taught him the intensity required at the highest level, and his understanding of pressing resistance makes him invaluable against Pochettino's high-pressing system.",
-      "statline": "Brighton midfielder bringing Premier League intensity to Paraguay's midfield"
+      "narrative": "Palmeiras' defensive colossus embodies Paraguay's tournament philosophy—organization, discipline, and tactical intelligence over individual brilliance. At 31, the captain brings invaluable South American tournament experience to a squad eager to prove their continental qualifying campaign wasn't merely about surviving CONMEBOL's brutality. His aerial dominance will be crucial against American set-pieces, while his leadership could prove decisive if Paraguay can frustrate the hosts into desperate attacking phases.",
+      "statline": "Paraguay's captain and defensive anchor with extensive Copa América experience"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "USA 2-0 Paraguay",
-    "confidence": 62,
-    "narrative": "Home advantage is the ultimate trump card at a World Cup. When 70,000 Americans are roaring their team forward, even the most disciplined defensive setups begin to waver. The USA's pressing intensity, amplified by crowd energy, will test Paraguay's resolve from the first whistle to the last.\n\nExpect Paraguay to hold firm through a tense first half, keeping the score at 0-0 and growing in confidence with every passing minute. But Pochettino's halftime adjustments and the introduction of fresh attacking legs will shift the balance. Pulisic will find the breakthrough — either through a moment of individual brilliance or by exploiting a momentary lapse in Paraguay's concentration.\n\nThe second goal will come late, when Paraguay push forward in desperation and leave the space that Pochettino's system is designed to exploit. The scoreline will reflect American dominance, but the match will be closer than 2-0 suggests. Paraguay will have their moments. Almiron will terrify the US defense at least twice. But home is where the heart is, and the heart of American soccer beats loudest on nights like this.",
+    "confidence": 68,
+    "narrative": "Home advantage in World Cup football carries psychological weight that transcends tactical analysis. The USA possess superior individual quality, greater squad depth, and the intangible energy of 80,000 supporters willing their golden generation toward glory. Pochettino's tactical revolution has instilled belief, while Paraguay's defensive approach may prove too passive against opponents desperate to justify years of hype. The Americans should control territory and create enough quality chances to break down Alfaro's compact structure.\n\nYet tournament football rewards experience and composure, qualities Paraguay possess in abundance. If they can weather the early storm and maintain their defensive discipline, La Albirroja have proven capable of frustrating superior opponents. The ghost of 1930 suggests American attacking prowess, but modern Paraguay won't surrender meekly. This match will likely be decided by fine margins—a set-piece, a moment of individual brilliance, or a tactical substitution that shifts momentum irrevocably.",
     "alternativeScenarios": [
       {
-        "scenario": "USA 1-1 Paraguay",
-        "probability": 20,
-        "reasoning": "Paraguay's defensive discipline frustrates the hosts. Almiron's counter-attacking goal silences the stadium, and though the USA equalize, they cannot find a winner. South American resilience earns a precious point."
+        "scenario": "Paraguay 1-1 USA",
+        "probability": 25,
+        "reasoning": "If Paraguay score early through an Almirón counter-attack, their defensive experience could frustrate the Americans into a nervous draw that would represent a psychological victory for the visitors."
       },
       {
-        "scenario": "Paraguay 1-0 USA",
-        "probability": 10,
-        "reasoning": "The nightmare scenario for the hosts. Paraguay score early on the counter through Almiron, and the crowd's energy turns to anxiety. The USA press desperately but cannot break through, and Paraguay execute the kind of tactical smash-and-grab that has defined their World Cup history."
+        "scenario": "USA 3-1 Paraguay",
+        "probability": 15,
+        "reasoning": "Should Pulisic break his goal drought early, the floodgates could open as Paraguay are forced to abandon their defensive structure, exposing themselves to American pace."
       }
     ]
   },
-
-  "closingLine": "In 1930, Bert Patenaude wrote the first chapter of this story with the first hat-trick in World Cup history. Nearly a century later, Pulisic and his generation have the chance to write the next one — in front of their own people, on their own soil."
+  "closingLine": "In 1930, American dreams were born in Montevideo; in 2026, they seek resurrection in New Jersey's summer heat."
 }

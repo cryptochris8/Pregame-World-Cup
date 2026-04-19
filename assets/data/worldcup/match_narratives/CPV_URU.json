@@ -4,77 +4,70 @@
   "team2Code": "URU",
   "team1Name": "Cabo Verde",
   "team2Name": "Uruguay",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T10:00:00Z",
   "dataVersion": 1,
-
-  "headline": "Small Nations, Vastly Different Histories: Uruguay's Two World Cup Trophies Against Cabo Verde's Zero World Cup Minutes",
-  "subheadline": "The smallest population match at the tournament pits two-time champions Uruguay against World Cup debutants Cabo Verde in a clash of football's haves and have-nots",
-
-  "openingNarrative": "There is a beautiful irony at the heart of this match. Uruguay, with a population of just 3.5 million people, have always been football's greatest overachievers -- two World Cup titles, including the legendary 1950 Maracanazo when they stunned Brazil in their own stadium, and a consistent ability to compete with nations many times their size. Cabo Verde, with 600,000 people, are attempting to do what Uruguay have done for a century: prove that population is no barrier to footballing greatness.\n\nBut that is where the parallels end. Uruguay are two-time World Cup champions with a squad that includes Federico Valverde (Real Madrid), Darwin Nunez (Liverpool), and Ronald Araujo (Barcelona) -- players who compete at the absolute pinnacle of European club football every week. Marcelo Bielsa's demanding tactical system -- aggressive pressing, intense man-marking, vertical attacking play -- transforms Uruguay from a collection of talented individuals into a relentless, unified force.\n\nUruguay's qualifying campaign was solid: 7 wins, 7 draws, 4 losses in 18 CONMEBOL matches, with Darwin Nunez scoring 5 goals. Their 2-0 home victory over Argentina was the defining result -- a statement of intent that demonstrated this squad's ability to compete with the very best.\n\nCabo Verde's path to the World Cup was less glamorous but no less remarkable. Topping their CAF qualifying group ahead of Cameroon, with 6 wins, 2 draws, 2 losses, and Ryan Mendes scoring 4 goals, was an achievement that resonated across African and global football. Bubista's organized, disciplined approach maximized every ounce of talent in a squad valued at just $15M.\n\nFor Cabo Verde, facing Uruguay is the ultimate test. For Uruguay, it is an opportunity they must seize without mercy. In Bielsa's football, there is no room for sentiment.",
-
+  "headline": "David meets Goliath: Cabo Verde's Historic Debut vs Uruguay Giants",
+  "subheadline": "The smallest nation ever to qualify meets two-time champions in ultimate World Cup contrast.",
+  "openingNarrative": "In the annals of World Cup history, certain encounters transcend mere football. They become stories of human possibility, of dreams realized against impossible odds, of the beautiful game's capacity to unite nations separated by oceans, populations, and footballing pedigree. When Cabo Verde takes the field for their historic World Cup debut, they will face not just eleven Uruguayan players, but the weight of a footballing giant whose trophy cabinet gleams with two World Cup victories and whose very DNA courses with the legendary 'garra charrúa' fighting spirit.\n\nThe numbers tell one story: Uruguay's squad is valued at $683.75 million compared to Cabo Verde's $15 million — a staggering 45-to-1 ratio that underscores the gulf between these nations. The Blue Sharks, representing just 600,000 islanders scattered across the Atlantic, have achieved something miraculous simply by being here. Their ELO rating of 1350 places them 88th in the world, while Uruguay sits 14th at 1718 — yet both nations share something profound: the ability to punch far above their weight on football's grandest stage.\n\nUruguay, with 3.5 million citizens, has proven for nearly a century that population means nothing when the soul burns bright. From the inaugural World Cup triumph in 1930 to the stunning Maracanazo of 1950, La Celeste has written some of football's most romantic chapters. Now, under Marcelo Bielsa's intense philosophy, they carry the hopes of a continent while facing the most heartwarming debutants this tournament has ever seen.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Marcelo Bielsa's Uruguay play a 4-3-3 that demands total commitment from every player. The pressing is relentless -- every player attacks, every player defends, and the intensity does not relent for 90 minutes. Valverde's box-to-box engine is the system's foundation, covering every blade of grass and arriving in the box to score and create. Nunez's pace and physicality as the central striker give Uruguay a devastating outlet on the counter, while the wide attackers pin defenders back.\n\nCabo Verde have no choice but to defend deep. A 5-4-1 or 5-3-2 formation, with every player behind the ball when Uruguay have possession, is the only viable approach. Their gameplan will be simple: deny Uruguay space, stay compact in the defensive third, compete physically in aerial duels, and hope that Uruguay's high-intensity approach creates opportunities on the counter-attack.\n\nBielsa's system has a known vulnerability: the extreme physical demands lead to performance drops in the later stages of matches. If Cabo Verde can survive the opening 30 minutes -- when Uruguay's intensity is at its peak -- and remain organized, the match could become more competitive as legs tire. Set pieces also offer Cabo Verde a route to goal that bypasses Uruguay's man-marking press.",
-    "team1Formation": "5-4-1",
+    "narrative": "Bielsa's Uruguay will deploy their trademark 4-3-3 formation with characteristic intensity — a system built on relentless pressing, vertical play, and Federico Valverde's box-to-box dynamism driving everything forward. The Real Madrid midfielder becomes the fulcrum around which Uruguay's entire tactical identity revolves, his endless energy allowing Bielsa's demanding system to function at the required tempo. Darwin Núñez, despite his concerning lack of match minutes at Al Hilal, will spearhead the attack with his explosive movement and unpredictable style that has terrorized Premier League defenses.\n\nCabo Verde, under Bubista's pragmatic guidance, will likely shift to a defensive 5-3-2 or 5-4-1 formation, abandoning their usual 4-4-2 in favor of maximum defensive solidity. The Blue Sharks' survival depends on maintaining compact lines, with Steven Vitória and Stopira marshaling the center while the wing-backs tuck in to create a wall of bodies. Set pieces represent their most realistic path to goal, where their Portuguese league-based players can capitalize on height and delivery quality. The key tactical battle will unfold in midfield, where Uruguay's pressing intensity meets Cabo Verde's disciplined compactness — if the islanders can survive the first 20 minutes without conceding, their confidence will grow exponentially.",
+    "team1Formation": "5-3-2",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Cabo Verde's survival instinct vs Bielsa's relentless pressing machine -- can the island nation weather the storm long enough for the intensity to fade?"
+    "keyMatchup": "Valverde's driving runs vs Cabo Verde's midfield block discipline"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Uruguay (ELO: 1718, rank 14) vs Cabo Verde (ELO: 1350, rank 88) -- a 368-point gap that makes Uruguay overwhelming favorites. The ELO differential suggests approximately an 85% win probability for Uruguay.",
-    "formAnalysis": "Uruguay qualified with 7 wins, 7 draws, 4 losses in 18 CONMEBOL matches, scoring 22 goals and conceding 12 under Bielsa. Nunez's 5 goals and a solid defensive record highlight a balanced team. Cabo Verde qualified through CAF with 6 wins, 2 draws, 2 losses in 10 matches -- an impressive record in its own right.",
-    "squadValueComparison": "Uruguay's squad ($684M) is 45 times the value of Cabo Verde's ($15M). Valverde alone ($188M) is worth 12.5 times Cabo Verde's entire roster. Nunez ($75M+), Araujo ($80M+), and the squad's depth represent a financial and quality gulf that is almost impossible to bridge.",
-    "injuryImpact": "Uruguay's squad has depth issues in certain positions, and Bielsa's demanding system increases injury risk. Cabo Verde's squad is paper-thin -- any injury to a key defender could be catastrophic against Uruguay's attacking firepower.",
-    "bettingPerspective": "Uruguay are among the heaviest group-stage favorites. The betting interest is in the margin and whether Cabo Verde can score. The over/under line and Cabo Verde to score at any point provide the main markets for this fixture.",
-    "historicalPattern": "These nations have never met. Uruguay's two World Cup titles (1930, 1950) and consistent presence at the tournament stand in stark contrast to Cabo Verde's debut appearance. Both nations are small by population -- Uruguay at 3.5 million are one of the smallest World Cup regulars."
+    "eloAnalysis": "The 368-point ELO gap between Uruguay (1718) and Cabo Verde (1350) represents one of the largest disparities in this World Cup, underlining just how extraordinary the Blue Sharks' qualification truly was.",
+    "formAnalysis": "Uruguay's recent qualifying form shows vulnerability with inconsistent results (2W-2D-2L in their last six), while Cabo Verde arrive with momentum from their AFCON campaign and CAF qualifying heroics that saw them top a group ahead of Cameroon.",
+    "squadValueComparison": "The $668 million gap in squad values tells its own story — Federico Valverde alone ($188 million) is worth more than Cabo Verde's entire squad twelve times over, yet football's beauty lies in its unpredictability.",
+    "injuryImpact": "Darwin Núñez's lack of match fitness due to being de-registered at Al Hilal creates a major concern for Uruguay's attacking potency, while Cabo Verde arrive with a fully fit squad led by veterans like 36-year-old Ryan Mendes.",
+    "bettingPerspective": "The markets heavily favor Uruguay, but World Cup history teaches us that debut nations often channel extraordinary energy into their opening matches, creating value in the upset scenarios.",
+    "historicalPattern": "Only UEFA and CONMEBOL nations have ever won the World Cup, giving Uruguay historical precedent, but Morocco's 2022 semi-final run proved African nations can shock the establishment when everything aligns."
   },
-
   "playerSpotlights": [
     {
       "name": "Federico Valverde",
       "teamCode": "URU",
-      "narrative": "One of the most complete midfielders in world football, Valverde is the engine that powers Bielsa's demanding system. His ability to cover enormous distances, arrive in the box to score, defend with intensity, and dictate play with quality passing makes him Uruguay's most important player. At Real Madrid, he has won multiple Champions League titles. At the World Cup, he is the player around whom Uruguay's entire campaign revolves.",
-      "statline": "Uruguay's midfield engine, valued at $188M, multiple Champions League winner"
+      "narrative": "The Real Madrid maestro enters this World Cup as Uruguay's most indispensable player, the engine that powers Bielsa's demanding tactical system. His box-to-box brilliance has made him one of European football's most complete midfielders, combining relentless work rate with technical excellence and devastating long-range shooting. Against Cabo Verde's compact defensive block, Valverde's ability to drive forward from deep positions and arrive late in the box could prove decisive. His fitness levels are extraordinary, perfectly suited to Bielsa's intense demands when others begin to fade.",
+      "statline": "Named Best Young Player at 2023 Club World Cup"
     },
     {
       "name": "Ryan Mendes",
       "teamCode": "CPV",
-      "narrative": "Cabo Verde's leading scorer in qualifying with 4 goals, Mendes represents his team's best hope of producing a moment that will be remembered forever in island football. Against Uruguay's aggressive pressing, his ability to hold the ball under pressure and create something in transition will be tested to its absolute limits. If Cabo Verde are to score against Uruguay, Mendes will likely be involved.",
-      "statline": "4 qualifying goals, Cabo Verde's most experienced and important attacker"
+      "narrative": "At 36, the Al-Ahli Doha forward represents the dreams of an entire archipelago. One of Cabo Verde's most iconic players with over 60 caps, Mendes was their top scorer in qualifying with 4 goals and remains the focal point of their attacking hopes. His experience across multiple leagues gives him the composure needed for this stage, and his movement in the box could be crucial if Cabo Verde can create set-piece opportunities. This World Cup represents the pinnacle of a career dedicated to elevating his tiny nation onto football's biggest stage.",
+      "statline": "Top scorer in CAF qualifying with 4 goals"
     },
     {
-      "name": "Darwin Nunez",
+      "name": "Darwin Núñez",
       "teamCode": "URU",
-      "narrative": "Liverpool's explosive striker combines blistering pace with aerial power and an unpredictable, chaotic style that makes him one of the most difficult forwards to defend against in world football. His 5 qualifying goals and relentless work rate embody Uruguay's famous garra charrua -- the fighting spirit that has defined the nation's football for over a century. Against Cabo Verde's deep defense, his movement and physical presence in the box will be a constant threat.",
-      "statline": "5 goals in 18 qualifying matches, Liverpool's explosive frontman"
+      "narrative": "Uruguay's explosive striker arrives under a cloud of concern, having been de-registered at Al Hilal and severely lacking match minutes. When sharp, his unpredictable movement and blistering pace make him one of world football's most dangerous forwards, but questions linger about his match fitness heading into this crucial opener. His ability to stretch defensive lines perfectly complements Valverde's driving runs from midfield, and if he can rediscover his rhythm, Cabo Verde's compact defense could be exposed repeatedly. The Al Hilal situation adds an element of uncertainty to Uruguay's primary goal threat.",
+      "statline": "5 goals in CONMEBOL qualifying despite limited club minutes"
     },
     {
-      "name": "Ronald Araujo",
-      "teamCode": "URU",
-      "narrative": "Barcelona's powerful center-back brings pace, physicality, and aerial dominance to Uruguay's defense. His ability to recover and win duels makes him one of La Liga's most dominant defenders, and his partnership with other Uruguayan center-backs provides the defensive platform that allows Bielsa's aggressive system to function. Against Cabo Verde's limited attacking threat, Araujo should be a commanding presence.",
-      "statline": "Barcelona's commanding center-back, Uruguay's defensive anchor"
+      "name": "Vozinha",
+      "teamCode": "CPV",
+      "narrative": "The veteran goalkeeper will lead Cabo Verde onto the World Cup stage as captain, representing over a decade of service to his nation's football dreams. His emotional leadership and shot-stopping ability have been instrumental in the Blue Sharks' historic qualification, providing the defensive foundation that allowed their miracle run through CAF qualifying. Against Uruguay's attacking quality, Vozinha knows he'll face the challenge of his career, but his experience and composure could be crucial in keeping Cabo Verde's dreams alive. His journey from obscure island goalkeeper to World Cup captain epitomizes everything beautiful about this sport.",
+      "statline": "Over a decade as Cabo Verde's first-choice goalkeeper"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Uruguay 3-0 Cabo Verde",
-    "confidence": 80,
-    "narrative": "Uruguay's quality across the pitch is vastly superior, and Bielsa's relentless pressing system will subject Cabo Verde to 90 minutes of the most intense footballing experience they have ever encountered. Valverde's driving runs, Nunez's explosive attacks, and the constant pressure from all areas of the pitch will create an avalanche of chances.\n\nCabo Verde will fight with everything they have. Their defensive organization and collective spirit will earn respect, and there will be moments -- particularly set pieces -- where they threaten Uruguay's goal. But the quality gap is too vast to sustain resistance for 90 minutes under Bielsa's system.\n\nThe three-goal margin reflects Uruguay's likely dominance but also acknowledges that Cabo Verde's discipline will prevent this from becoming a rout. For the islanders, keeping the scoreline respectable while experiencing the World Cup for the first time is an achievement that transcends the result.",
+    "prediction": "Uruguay 2-0 Cabo Verde",
+    "confidence": 75,
+    "narrative": "Uruguay's individual quality should ultimately prove decisive, but this won't be the comfortable victory many expect. Cabo Verde's defensive organization and the emotional energy of their World Cup debut will make them incredibly difficult to break down, particularly in the opening 30 minutes when adrenaline peaks. Bielsa's intense pressing system will eventually wear down the Blue Sharks' resistance, with Valverde's driving runs from midfield and Uruguay's set-piece prowess providing the breakthrough moments. Núñez's lack of match fitness is a genuine concern, but Uruguay's squad depth and tactical experience should see them through.\n\nThe beauty of this prediction lies not in Uruguay's victory, but in how hard Cabo Verde will make them work for it. This is a team that qualified ahead of Cameroon, that has shown remarkable resilience throughout their qualifying campaign, and that will be playing with absolutely nothing to lose on the sport's biggest stage. If they can keep it tight for an hour, who knows what magic might unfold?",
     "alternativeScenarios": [
       {
         "scenario": "Uruguay 1-0 Cabo Verde",
-        "probability": 10,
-        "reasoning": "Cabo Verde produce a heroic defensive display that frustrates Uruguay for 80 minutes before a late goal breaks their resistance. The narrow scoreline would be a moral victory for the island nation."
+        "probability": 20,
+        "reasoning": "A cagey, nervy affair where Cabo Verde's defensive discipline frustrates Uruguay until a late breakthrough. The Blue Sharks' World Cup debut energy could make this a genuine battle."
       },
       {
-        "scenario": "Uruguay 5-0 Cabo Verde",
-        "probability": 12,
-        "reasoning": "Bielsa's system overwhelms Cabo Verde from the first whistle. Nunez scores a hat-trick, Valverde drives from midfield to add another, and Uruguay make a statement about their World Cup intentions."
+        "scenario": "Cabo Verde 0-0 Uruguay",
+        "probability": 5,
+        "reasoning": "The ultimate World Cup shock — Cabo Verde's defensive masterclass combining with Uruguay's attacking rustiness to produce a miraculous point that would send shockwaves through football."
       }
     ]
   },
-
-  "closingLine": "Uruguay and Cabo Verde share something rare in football: they are both small nations that have dared to dream beyond their size. The difference is that Uruguay's dreams have been realized, while Cabo Verde's are only just beginning. Whatever the scoreline, this match is a testament to what football means to the places it touches."
+  "closingLine": "In a tournament defined by impossible dreams, the smallest nation ever to qualify gets their chance to remind us why we fell in love with football in the first place."
 }

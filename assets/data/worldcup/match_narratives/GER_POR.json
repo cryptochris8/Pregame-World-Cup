@@ -4,77 +4,70 @@
   "team2Code": "POR",
   "team1Name": "Germany",
   "team2Name": "Portugal",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2024-12-19T20:30:00Z",
   "dataVersion": 1,
-
-  "headline": "Ronaldo's Last Dance Meets Germany's New Dawn",
-  "subheadline": "Cristiano Ronaldo walks into what is almost certainly his final World Cup — and Germany's reborn attack stands in his path",
-
-  "openingNarrative": "June 16, 2014. Arena Fonte Nova, Salvador. Germany destroyed Portugal 4-0 in a performance of such devastating completeness that it has haunted Portuguese football ever since. Thomas Muller scored a hat-trick. Pepe was sent off. Cristiano Ronaldo — the best player in the world that year — was rendered utterly impotent by a German machine that pressed, passed, and punished with mechanical precision.\n\nThat humiliation still burns. And now, twelve years later, Ronaldo returns to face Germany once more — but this time, everything is different. At 41, Ronaldo is playing in the twilight of the most remarkable career in football history. Five World Cup appearances. Goals in every one. Records that may never be broken. His body has slowed, his game has evolved from explosive to opportunistic, but his desire — that ferocious, all-consuming need to prove he is the greatest — remains undiminished.\n\nGermany, meanwhile, have undergone their own transformation. The pragmatic efficiency that defined their 2014 triumph has given way to something more exciting under Julian Nagelsmann. Jamal Musiala, just 23, plays with the creativity and audacity of a young Zidane. Florian Wirtz complements him with vision and a lethal left foot. Together, they represent Germany's most thrilling attacking midfield since the days of Matthaus and Voller.\n\nPortugal are not merely Ronaldo, of course. Rafael Leao, their most valuable player at $113M, provides the explosive pace and dribbling that Ronaldo can no longer offer. Bruno Fernandes orchestrates from midfield. Under Roberto Martinez, Portugal won the Nations League and play with a fluidity that belies their star's advancing years.\n\nBut make no mistake: this match will be remembered through the lens of Ronaldo. His last stand against the nation that once humiliated him. His final chance to rewrite a rivalry that has caused him so much pain.",
-
+  "headline": "Wirtz vs Ronaldo: Germany's Renaissance Meets Portugal's Last Dance",
+  "subheadline": "A resurgent Die Mannschaft faces A Seleção in a clash that could define both nations' World Cup destiny.",
+  "openingNarrative": "In the grand theater of World Cup football, few narratives possess the emotional complexity of this encounter between Germany and Portugal. It is a match where time bends—where the future collides with history, where redemption seeks to overcome legacy. For Germany, this represents the culmination of Julian Nagelsmann's tactical revolution, a team rebuilt from the ashes of their 2018 group stage humiliation and powered by the generational talents of Florian Wirtz and a potentially fit Jamal Musiala. Die Mannschaft arrives on American soil with seven consecutive victories, their confidence restored by a 6-0 demolition of Slovakia and Wirtz's virtuoso performance against Switzerland—two goals, two assists, a statement of intent.\n\nYet across the pitch stands Portugal's ageless talisman, Cristiano Ronaldo, at 41, chasing immortality in what could be his sixth and final World Cup. The mathematical poetry of it all is staggering—Ronaldo, who has scored in five different World Cups, facing a German side he last met memorably in that 4-0 defeat twelve years ago in Brazil. Roberto Martinez's Portugal, crowned Nations League champions just months ago, possesses perhaps the tournament's deepest midfield pool, with Bruno Fernandes, Bernardo Silva, and Vitinha orchestrating from deep. But shadows loom: Rafael Leão's withdrawal from March's squad, Diogo Costa's fitness concerns, and the weight of a nation's expectations resting on aging shoulders.\n\nThis is more than a Round of 16 clash—it is a referendum on two footballing philosophies, two generations, two nations desperate to prove they remain among the world's elite. Germany seeks validation that their tactical renaissance can deliver on the biggest stage. Portugal hunts for the World Cup that has eluded them, perhaps their last chance with their greatest ever player leading the charge.",
   "tacticalBreakdown": {
-    "title": "Youth Against Experience",
-    "narrative": "Nagelsmann's 4-2-3-1 is built for attacking fluidity. Musiala drifts between the lines with a spatial awareness that makes him almost impossible to track. Wirtz provides the secondary creative threat, while the wide players stretch defenses and create overloads. Germany press with intelligence rather than brute force, looking to win the ball in the final third and create chances from turnovers.\n\nMartinez's Portugal play a 4-3-3 that maximizes the individual quality of their attacking stars. Leao on the left provides devastating pace and dribbling, Bruno Fernandes conducts from midfield, and Ronaldo operates as the focal point — a target man whose positional intelligence and finishing ability compensate for his diminished mobility. Portugal's defensive structure has improved under Martinez, with a more organized press and better transitional balance.\n\nThe key battle is in midfield. If Musiala and Wirtz can dominate the creative spaces, Germany will control the match. If Bruno Fernandes can dictate the tempo and find Leao and Ronaldo with his vision, Portugal's star power could prove decisive. Germany's pressing against Portugal's build-up will determine which team plays on the front foot.",
+    "title": "The Chess Match",
+    "narrative": "This match will be decided in the space between the lines, where Nagelsmann's 4-2-3-1 formation creates pockets for Wirtz and potentially Musiala to exploit Portugal's structured 4-3-3 shape. Germany's high pressing intensity will test Portugal's patient possession-based approach, with Joshua Kimmich's positioning crucial as he shields the defense while launching vertical passes to the creative duo ahead. The key battleground lies in midfield, where Bruno Fernandes must match Wirtz's creativity while Bernardo Silva's tireless pressing disrupts Germany's rhythm.\n\nPortugal's tactical response hinges on Ronaldo's gravitational pull—his movement will pin Antonio Rüdiger and his defensive partner, creating space for runners like Bruno Fernandes to exploit. Roberto Martinez's medium pressing intensity may struggle against Germany's quick ball circulation, but if Portugal can weather the early storm and find their possession rhythm, their superior squad depth in midfield could prove decisive. The left flank battle between David Raum's attacking runs and Portugal's right side will be particularly crucial, especially with Rafael Leão's availability in doubt.",
     "team1Formation": "4-2-3-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Germany's high press vs Portugal's build-up — can Martinez's side play through the pressure, or will Nagelsmann's pressing trap force errors?"
+    "keyMatchup": "Florian Wirtz vs Bruno Fernandes in the creative midfield battle"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Germany (ELO: 1738, ranked 10th) vs Portugal (ELO: 1760, ranked 6th) — a mere 22-point advantage for Portugal that makes this statistically a toss-up. Both teams are firmly in the tier of genuine contenders, and the ELO model sees no clear favorite.",
-    "formAnalysis": "Germany qualified with 5 wins and 1 loss, scoring 16 goals and conceding 3. Musiala contributed 4 goals. Portugal qualified with 4 wins, 1 draw, and 1 loss, scoring 20 goals and conceding 7 — a more attacking but also more vulnerable record. Ronaldo led with 5 qualifying goals, proving his scoring instinct remains intact.",
-    "squadValueComparison": "Germany ($1.21B) vs Portugal ($1.25B) — virtually identical squad values. Musiala ($163M) leads Germany while Leao ($113M) leads Portugal. The depth is comparable, though Germany's Bundesliga core provides slightly more tactical cohesion.",
-    "injuryImpact": "Ronaldo's fitness management at 41 is critical — Portugal need him sharp for 90 minutes, not merely present. Musiala and Wirtz must be fully fit for Germany's system to function at its creative peak.",
-    "bettingPerspective": "Germany at +180 and Portugal at +200 are closely matched, with the draw at +230 attracting significant interest. Portugal's outright tournament odds (+1000) reflect their contender status, while Germany at +1200 are considered slight outsiders in the title race.",
-    "historicalPattern": "Germany have dominated this fixture at World Cups, most notably the 4-0 demolition in 2014. They also beat Portugal 4-2 at Euro 2020 group stage. Portugal have struggled historically against German pressing and tactical discipline."
+    "eloAnalysis": "Portugal enters as slight favorites with an ELO rating of 1760 (ranked 6th globally) compared to Germany's 1738 (10th), reflecting their Nations League triumph and consistent qualifying form.",
+    "formAnalysis": "Germany's recent momentum is undeniable—seven consecutive wins including that dominant 6-0 victory over Slovakia, while Portugal's qualifying campaign was more turbulent with a shock 2-0 loss to Ireland before the 9-1 Armenia demolition.",
+    "squadValueComparison": "The market values tell a story of investment and potential—Portugal's squad worth $1.25 billion to Germany's $1.21 billion, though Germany's Jamal Musiala ($163 million) remains the most valuable player on either side.",
+    "injuryImpact": "Germany's World Cup hopes rest on Musiala's fitness after his devastating fibula fracture and ankle dislocation, while Portugal sweats over Rafael Leão and Diogo Costa's availability after both withdrew from March's squad.",
+    "bettingPerspective": "The 58% confidence in Germany's predicted 2-1 victory reflects the tactical matchup favoring their collective strength over Portugal's individual brilliance, though the margins remain razor-thin.",
+    "historicalPattern": "History suggests this encounter carries extra weight—defending champions consistently struggle at subsequent tournaments, and while Portugal aren't holders, the psychological pressure of expectation mirrors past disappointments."
   },
-
   "playerSpotlights": [
     {
-      "name": "Jamal Musiala",
+      "name": "Florian Wirtz",
       "teamCode": "GER",
-      "narrative": "The player tasked with carrying Germany's creative burden into the world's biggest tournament. Musiala's close control in tight spaces, his ability to dribble past multiple defenders, and his increasingly clinical finishing make him the most exciting midfielder at the World Cup. Against Portugal's defense, his movement between the lines will be the primary creative threat — and his ability to produce moments of magic in the biggest matches has already been proven at Euro 2024.",
-      "statline": "4 qualifying goals; Germany's most valuable player at $163M; the Bundesliga's supreme creative talent"
+      "narrative": "At just 23, Wirtz has emerged as Germany's tactical centerpiece under Nagelsmann, a player whose vision and technical ability recalls the golden generation's peak years. His recent performance against Switzerland—two goals and two assists in a thrilling 4-3 victory—announced his readiness for football's biggest stage. Where Musiala's fitness remains questionable, Wirtz carries the creative burden with the confidence of someone who has already conquered the Bundesliga. His positioning between the lines will be crucial in unlocking Portugal's defensive structure, and his set-piece delivery adds another dimension to Germany's attacking threat.",
+      "statline": "2 goals, 2 assists vs Switzerland in Germany's most recent match"
     },
     {
       "name": "Cristiano Ronaldo",
       "teamCode": "POR",
-      "narrative": "The numbers defy logic. At 41, Ronaldo should not still be relevant at this level. But 5 qualifying goals say otherwise. His positional intelligence — knowing where to stand, when to move, when to attack the ball — has replaced the explosive athleticism that once made him the world's most complete player. Against Germany, Ronaldo carries the memory of 2014's humiliation and the knowledge that this is his last chance to exorcise that ghost. His career has been defined by responding to adversity. This may be his greatest response yet.",
-      "statline": "5 goals in qualifying; goals in 5 different World Cups; 41 years old and still scoring"
+      "narrative": "At 41, Ronaldo chases a piece of history that even his extraordinary career hasn't delivered—a World Cup trophy to complete the ultimate collection. Having scored in five different World Cups and netted five goals in qualifying, his recent brace for Al Nassr confirms his fitness despite February's hamstring scare. But his impact transcends statistics; Ronaldo's movement creates space for teammates, his aerial threat from set pieces remains elite, and his psychological presence can lift Portugal or burden them with expectation. This could be his final World Cup dance, and everything in his legendary career has led to this moment.",
+      "statline": "Top scorer in Portugal's qualifying campaign with 5 goals"
     },
     {
-      "name": "Florian Wirtz",
+      "name": "Jamal Musiala",
       "teamCode": "GER",
-      "narrative": "Germany's other young genius provides the perfect complement to Musiala. Where Musiala glides and dribbles, Wirtz drives and shoots. His left foot is a weapon — capable of producing curling shots from distance, precise through balls, and crosses that find teammates in the most dangerous positions. Against Portugal's high line, his ability to play balls in behind could unlock chances for Germany's forwards.",
-      "statline": "Bayer Leverkusen's creative engine; integral to Germany's new attacking identity under Nagelsmann"
+      "narrative": "The injury that shattered Musiala's fibula and dislocated his ankle during the 2025 Club World Cup remains the defining subplot of Germany's World Cup preparation. At $163 million, he's the tournament's most valuable player, a creative force whose dribbling and final ball have become integral to Nagelsmann's system. His return to action in February sparked hope, but match fitness remains the question mark. If Musiala can rediscover his pre-injury magic alongside Wirtz, Germany transforms from contenders to favorites. If not, they may lack the individual brilliance to match Portugal's star quality in crucial moments.",
+      "statline": "Most valuable player at the tournament ($163 million market value)"
     },
     {
-      "name": "Rafael Leao",
+      "name": "Bruno Fernandes",
       "teamCode": "POR",
-      "narrative": "Portugal's future is here, whether Ronaldo accepts it or not. Leao's explosive pace, his ability to beat defenders one-on-one, and his improving end product make him the most dangerous attacking player Portugal possess in open play. His role is to do what Ronaldo once did — terrify defenders with speed and skill. Against Germany's adventurous full-backs, Leao will find space to run into on the counter.",
-      "statline": "Portugal's most valuable player at $113M; AC Milan's explosive winger and Portugal's future star"
+      "narrative": "While Ronaldo commands headlines, Bruno Fernandes remains Portugal's creative heartbeat, the player whose vision and passing range dictates their tempo from midfield. His durability—consistently one of the Premier League's most resilient players—contrasts with the injury concerns surrounding other key figures. As Manchester United's captain, he understands pressure and has delivered consistently at international level. His battle with Wirtz for creative supremacy could determine which team's midfield gains ascendancy, and his set-piece delivery offers another route to goal against Germany's occasionally vulnerable defense.",
+      "statline": "Consistently one of Premier League's most durable players with zero injury concerns"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Germany 2-1 Portugal",
-    "confidence": 52,
-    "narrative": "This prediction is held together by the thinnest of threads, because these two teams are so evenly matched that any result is plausible. But Germany's tactical cohesion under Nagelsmann, their pressing intensity, and the creative partnership of Musiala and Wirtz gives them a marginal edge.\n\nGermany will look to press Portugal high, forcing errors in their build-up. Musiala will find the spaces between Portugal's midfield and defense, creating the chances that Germany's forwards will look to convert. Ronaldo will score — because he always scores against the odds — but Germany's collective quality will prove too much for Portugal to contain over 90 minutes.\n\nThe emotional weight of this match cannot be overstated. Ronaldo's final World Cup appearance against the team that humiliated him in 2014 will fuel a performance of desperate intensity. If that intensity translates into disciplined football, Portugal can win. If it becomes chaotic, Germany's system will exploit it.\n\nThis match deserves a final. It has been given a group stage.",
+    "confidence": 58,
+    "narrative": "This match will be decided by the finest of margins, with Germany's collective strength edging Portugal's individual brilliance. Nagelsmann's tactical flexibility and the explosive form of Wirtz provide the foundation for victory, while Musiala's potential return—even at 80% fitness—adds another dimension Portugal will struggle to contain. The high pressing approach should disrupt Portugal's possession rhythm early, creating opportunities for Germany's clinical finishing through Havertz and the supporting cast.\n\nYet football's beauty lies in its unpredictability, and Ronaldo's presence alone warrants caution in any prediction. Portugal's deeper midfield pool and Martinez's tactical acumen could exploit Germany's still-experimental defensive partnerships. The match may hinge on individual moments of brilliance—a Wirtz through-ball, a Ronaldo header, a Bruno Fernandes long-range strike. Germany edges this on tactical coherence and momentum, but Portugal possesses the star quality to rewrite any script. In a tournament where legends are made and broken, expect nothing less than poetry in motion.",
     "alternativeScenarios": [
       {
         "scenario": "Portugal 2-1 Germany",
-        "probability": 25,
-        "reasoning": "Ronaldo's big-game mentality delivers one last masterpiece. Leao runs riot on the counter, and Portugal's experience in knockout-style matches gives them the edge in a tight game. Germany's consecutive World Cup group stage exits in 2018 and 2022 weigh on their psyche."
+        "probability": 35,
+        "reasoning": "Ronaldo's experience in crucial moments combines with Bruno Fernandes' creativity to exploit Germany's defensive uncertainties, particularly if Musiala isn't fully fit."
       },
       {
-        "scenario": "Germany 2-2 Portugal",
-        "probability": 18,
-        "reasoning": "Neither team can establish dominance. Goals from Musiala and Ronaldo are cancelled out in a breathless match that ends with both teams satisfied they can compete but frustrated they could not win."
+        "scenario": "Germany 1-0 Portugal",
+        "probability": 25,
+        "reasoning": "A tight, tactical affair where Germany's pressing forces an error and Wirtz's set-piece delivery or individual brilliance provides the decisive moment."
       }
     ]
   },
-
-  "closingLine": "In 2014, Germany broke Ronaldo. In 2026, Ronaldo returns not for revenge but for redemption — the chance to prove that his greatest moments are not behind him, but waiting for him on the biggest stage of all."
+  "closingLine": "When the final whistle sounds, either Germany's renaissance will be confirmed or Portugal's golden generation will have authored one last chapter of magic—either way, football will be the winner."
 }

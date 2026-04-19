@@ -4,77 +4,70 @@
   "team2Code": "UKR",
   "team1Name": "Serbia",
   "team2Name": "Ukraine",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2024-12-19T10:30:00Z",
   "dataVersion": 1,
-
-  "headline": "Eastern European Fire Meets Ukrainian Resolve",
-  "subheadline": "Serbia's twin striking threat takes on a Ukraine side playing for far more than football",
-
-  "openingNarrative": "Ukraine's World Cup journey carries a significance that no other team at this tournament can match. While their opponents prepare for football matches, Ukraine's players prepare for football matches while their families shelter from conflict. The squad's qualification through the playoff pathway was achieved against a backdrop of unimaginable adversity — players training in exile, travelling from scattered European clubs, united only by the blue and yellow shirt and the burning desire to give their nation something to celebrate.\n\nSerbia bring their own brand of intensity. This is a nation that treats football with a passion bordering on obsession, where Aleksandar Mitrovic and Dusan Vlahovic are worshipped like deities and where the expectation is always maximum effort, maximum commitment, and maximum goals. Serbia's twin-striker system is one of the most distinctive and dangerous attacking setups at this World Cup — Mitrovic's aerial dominance complemented by Vlahovic's technical finishing creates a dual threat that demands constant defensive attention.\n\nBoth nations carry the weight of Eastern European football's proud traditions. Both have something to prove on the World Cup stage. Both have the individual quality to beat anyone on their day. This match is a cauldron of emotion, talent, and tactical intrigue that promises to be one of the group stage's most compelling encounters.",
-
+  "headline": "Eastern Promise: Serbia and Ukraine Battle for More Than Just Points",
+  "subheadline": "Two nations carrying the weight of history meet in a clash where football transcends sport.",
+  "openingNarrative": "In the grand theater of World Cup football, some matches carry weight beyond the scoreline. When Serbia and Ukraine meet on North American soil, they bring with them the collective dreams, struggles, and unwavering spirit of two nations that understand the power of sport to unite, inspire, and heal. This is Eastern European football at its most raw and passionate—where every touch matters, every tackle resonates, and every goal becomes a moment of national catharsis.\n\nBoth teams arrive with squads brimming with talent and stories worth telling. Serbia boast a fearsome attacking arsenal led by the prolific Aleksandar Mitrović and the rising star Dušan Vlahović, two strikers who have terrorized defenses across Europe's elite leagues. Their presence alone transforms Serbia from dark horses into genuine threats, capable of dismantling any defense on their day. Meanwhile, Ukraine carry more than just tactical preparation—they carry the hopes of a nation that has shown the world what resilience truly means.\n\nThis is not merely a football match; it's a collision of cultures that have both experienced triumph and adversity, nations where football serves as both escape and expression. The passionate supporters of both teams understand that some victories matter more than others, and in the crucible of World Cup competition, this Eastern European battle promises to deliver intensity that transcends the beautiful game itself.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Serbia's 3-5-2 is built around the devastating partnership of Mitrovic and Vlahovic. Mitrovic wins aerial duels and holds the ball up, creating space for Vlahovic to drift and find shooting positions. Sergej Milinkovic-Savic's quality in midfield provides the creative supply, while the wing-backs offer width and crossing opportunities for Mitrovic's aerial threat.\n\nUkraine's 4-3-3 is more dynamic and transition-focused. Mudryk's explosive pace on the left wing is their primary weapon in behind, while Dovbyk leads the line with the clinical finishing that won him the La Liga Golden Boot. Zinchenko's Arsenal-trained intelligence in midfield provides tactical structure and creative passing.\n\nThe tactical battle is fascinating: Serbia's twin strikers versus Ukraine's three-man midfield. If Serbia can find Mitrovic and Vlahovic with direct service, their physical presence will cause problems. If Ukraine's midfield trio can control possession and deny Serbia's supply lines, their transition speed through Mudryk will punish Serbian defenders pushing forward.",
-    "team1Formation": "3-5-2",
+    "narrative": "The tactical battle will be won and lost in the middle third, where both teams possess the technical ability and physical presence to dominate proceedings. Serbia's approach likely centers around feeding their dangerous strike partnership, with service coming from wide areas and through incisive passing from deep. Their attacking quality demands respect, but it also requires defensive solidity behind them—a balance that has defined their qualifying campaign.\n\nUkraine's tactical setup will need to neutralize Serbia's twin threat while unleashing the pace and creativity of Mykhailo Mudryk down the flanks. With Artem Dovbyk leading the line after his La Liga Golden Boot triumph, Ukraine possess their own attacking weapon capable of punishing defensive lapses. The team that controls the tempo and manages the transition moments—when possession changes hands—will likely emerge victorious in what promises to be a tactically sophisticated encounter.",
+    "team1Formation": "4-2-3-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Mitrovic and Vlahovic vs Ukraine's center-back pairing — Serbia's twin-striker battering ram against Ukraine's defensive resolve"
+    "keyMatchup": "Serbia's strike partnership versus Ukraine's defensive organization"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Neither Serbia nor Ukraine appear in the current Elo dataset with dedicated profiles, but both teams are estimated in the 1650-1680 range based on recent qualifying performances. This is a genuine 50-50 match by the numbers.",
-    "formAnalysis": "Serbia qualified through European qualifying with Mitrovic leading the goalscoring charts. Ukraine's playoff pathway was achieved under extraordinary circumstances, with Dovbyk's goals and the team's collective resilience proving decisive in high-pressure situations.",
-    "squadValueComparison": "Both teams field squads with significant European league representation. Serbia's key assets include Vlahovic (Juventus) and Milinkovic-Savic. Ukraine counter with Mudryk (Chelsea), Zinchenko (Arsenal), and Dovbyk (La Liga Golden Boot winner). The financial balance reflects the competitive balance.",
-    "injuryImpact": "Serbia's strength lies in their twin-striker system — if either Mitrovic or Vlahovic is unavailable, the tactical setup must change fundamentally. Ukraine's reliance on Mudryk's pace for their transition game makes his fitness paramount.",
-    "bettingPerspective": "This match is priced as one of the tightest in the group stage. Both teams to score looks like strong value given the attacking quality on display. The draw is the marginal favorite in an exceptionally balanced fixture.",
-    "historicalPattern": "Serbia and Ukraine have met in European qualifying campaigns, producing closely fought encounters. Their mutual respect as Eastern European football nations adds intensity to every meeting."
+    "eloAnalysis": "While specific ELO ratings aren't available, both teams earned their World Cup spots through competitive qualifying campaigns that demonstrated their quality.",
+    "formAnalysis": "Both nations navigated challenging qualifying paths, with each team showing the resilience and tactical flexibility that defines Eastern European football.",
+    "squadValueComparison": "The attacking talent on display represents significant investment from Europe's top leagues, with proven goalscorers on both sides.",
+    "injuryImpact": "Squad availability will be crucial given the physical demands of the qualifying campaign and the intensity expected in this matchup.",
+    "bettingPerspective": "The lack of clear tournament winner odds suggests both teams are viewed as competitive outsiders with genuine potential.",
+    "historicalPattern": "This match fits the World Cup pattern where passionate supporters and attacking quality often produce memorable encounters that exceed expectations."
   },
-
   "playerSpotlights": [
     {
-      "name": "Aleksandar Mitrovic",
+      "name": "Aleksandar Mitrović",
       "teamCode": "SRB",
-      "narrative": "Mitrovic is one of football's great survivors — a striker who has been prolific at every level, in every league, against every style of defense. His aerial ability is among the best in world football, his positioning is instinctive, and his desire to score is relentless. Serbia's all-time leading scorer carries his nation's attacking hopes with the swagger of a man who has been doing this for a decade and shows no signs of slowing down.",
-      "statline": "Serbia's all-time leading goalscorer with 50+ international goals"
+      "narrative": "The physical embodiment of Serbian attacking intent, Mitrović brings Premier League experience and an uncompromising style that has terrorized defenders across Europe. His ability to hold up play, bring teammates into the game, and finish clinical chances makes him the fulcrum around which Serbia's attacking hopes revolve. Against Ukraine's organized defense, his battles in the box will likely determine the outcome. Watch for his movement in the penalty area—few strikers in world football are more dangerous from crosses and set pieces.",
+      "statline": "Prolific striker with proven European pedigree"
     },
     {
       "name": "Mykhailo Mudryk",
       "teamCode": "UKR",
-      "narrative": "Mudryk is Ukraine's answer to the question every defense asks: how do you stop pure pace? The Chelsea winger's explosive acceleration, dribbling ability, and directness make him one of the most frightening one-on-one attackers in world football. His club career has been a rollercoaster, but the international stage has consistently brought out his best — and Ukraine needs him at his best more than ever.",
-      "statline": "Chelsea's $100M winger and Ukraine's primary transition threat"
+      "narrative": "The electric winger represents Ukraine's future and present in equal measure. His pace and directness on the flanks provide the kind of game-changing ability that can unlock any defense, no matter how well-organized. Having captured attention across Europe's elite clubs, Mudryk carries the hopes of a nation on his shoulders while maintaining the fearless approach that defines his play. His ability to stretch Serbia's defense and create space for teammates could prove decisive in what promises to be a tight encounter.",
+      "statline": "Electric talent with match-winning pace and creativity"
     },
     {
-      "name": "Dusan Vlahovic",
+      "name": "Dušan Vlahović",
       "teamCode": "SRB",
-      "narrative": "Vlahovic's left foot is a weapon of precision and power. The Juventus striker can score from distance, in tight spaces, and in the air, making him one of the most versatile finishers at this World Cup. Alongside Mitrovic, he forms a partnership that offers Serbia two completely different but equally dangerous attacking profiles.",
-      "statline": "Juventus' first-choice striker with 50+ Serie A goals"
+      "narrative": "The young star striker brings a different dimension to Serbia's attack alongside Mitrović. His movement, finishing ability, and tactical intelligence have made him one of Europe's most sought-after talents. Vlahović represents the new generation of Serbian football—technically gifted, tactically aware, and ruthlessly effective in front of goal. His partnership with Mitrović gives Serbia one of the most formidable attacking duos in the tournament, capable of exploiting any defensive vulnerability.",
+      "statline": "Young star with elite European experience"
     },
     {
       "name": "Artem Dovbyk",
       "teamCode": "UKR",
-      "narrative": "Dovbyk's journey from Ukrainian domestic football to La Liga Golden Boot winner is one of the great underdog stories in recent European football. His finishing is clinical, his movement intelligent, and his ability to score goals at the highest level is now beyond question. Leading Ukraine's line at the World Cup, Dovbyk carries the hopes of a nation that needs its footballers to be heroes.",
-      "statline": "La Liga Golden Boot winner; Ukraine's most prolific striker"
+      "narrative": "The La Liga Golden Boot winner arrives at this World Cup with confidence sky-high and finishing touch finely tuned. Dovbyk's success in Spain's top flight proves his ability to score against elite opposition, and his physical presence gives Ukraine a focal point that can match Serbia's attacking threats. His story embodies Ukraine's broader narrative—overcoming adversity through determination and skill. Watch for his intelligent runs and clinical finishing when opportunities arise.",
+      "statline": "La Liga Golden Boot winner with proven finishing ability"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Serbia 2-2 Ukraine",
-    "confidence": 40,
-    "narrative": "When the attacking quality is this high on both sides, defense becomes the variable that determines the outcome — and neither team's defense inspires absolute confidence. This has the ingredients for a classic: four world-class strikers, emotional intensity, and the desperation that comes from knowing every point matters.\n\nExpect an open, breathless match where both teams back their attackers to outscore the opposition. Mitrovic will win an aerial duel and head home from a corner. Mudryk will burn Serbia's right side and set up Dovbyk for an equalizer. Vlahovic will restore Serbia's lead with a thunderbolt from the edge of the box. And Ukraine — because this is what Ukraine does — will find a way back, equalizing late through sheer force of will.\n\nA 2-2 draw would be fitting for a match between two teams that refuse to accept defeat. Both will feel they should have won. Both will be grateful they didn't lose. And the neutral viewer will feel privileged to have witnessed one of the group stage's most exciting matches.",
+    "confidence": 48,
+    "narrative": "This match has all the ingredients for a classic encounter—attacking talent on both sides, passionate support, and stakes that extend beyond football itself. Serbia's strike partnership gives them a consistent goal threat, but Ukraine's resilience and quality in wide areas should prevent any comfortable victory. Both teams possess the attacking quality to find the net, but also the defensive vulnerabilities that suggest goals will flow.\n\nThe emotional weight both teams carry could prove decisive in the final moments, but it's equally likely to produce a spirited draw that does justice to the quality on display. In a tournament where margins are razor-thin, this feels like a match where both teams will earn respect even if only one can claim the points.",
     "alternativeScenarios": [
       {
-        "scenario": "Ukraine 3-1 Serbia",
-        "probability": 18,
-        "reasoning": "Mudryk produces a Man of the Match performance, destroying Serbia's right flank repeatedly. Dovbyk scores twice, and Ukraine's counter-attacking quality overwhelms Serbia's defensive structure."
+        "scenario": "Serbia 3-1 Ukraine",
+        "probability": 25,
+        "reasoning": "If Mitrović and Vlahović find their rhythm early, Serbia's attacking quality could overwhelm Ukraine's defense in a more decisive fashion."
       },
       {
-        "scenario": "Serbia 3-1 Ukraine",
-        "probability": 18,
-        "reasoning": "Serbia's twin strikers dominate. Mitrovic and Vlahovic score a goal each, and Serbia's aerial superiority from set pieces proves decisive. A statement victory that announces Serbia as dark horses."
+        "scenario": "Ukraine 2-1 Serbia",
+        "probability": 27,
+        "reasoning": "Mudryk's pace and Dovbyk's finishing could exploit Serbian defensive gaps, especially if Ukraine can maintain defensive discipline throughout."
       }
     ]
   },
-
-  "closingLine": "Four strikers, two proud nations, and 90 minutes of Eastern European football at its most raw and compelling. This match will not disappoint."
+  "closingLine": "When two nations who understand football's power to inspire meet on the world's biggest stage, expect nothing less than passion, quality, and a reminder of why this beautiful game matters so much."
 }

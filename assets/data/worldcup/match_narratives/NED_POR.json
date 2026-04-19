@@ -4,77 +4,70 @@
   "team2Code": "POR",
   "team1Name": "Netherlands",
   "team2Name": "Portugal",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T14:30:00Z",
   "dataVersion": 1,
-
-  "headline": "The Battle of Nuremberg's Heirs Meet in Peace — For Now",
-  "subheadline": "Twenty years after their infamous World Cup brawl, the Netherlands and Portugal bring beauty instead of brutality to a rematch loaded with narrative",
-
-  "openingNarrative": "June 25, 2006. Nuremberg. A World Cup Round of 16 match that descended into the most violent encounter in tournament history. Sixteen yellow cards. Four red cards. A Portuguese victory, 1-0, in a match remembered not for the football but for the fury. Referee Valentin Ivanov became infamous, but the real story was two supremely talented teams who chose war over football. It remains the single most-carded match in World Cup history, a stain on both nations' records that neither has forgotten.\n\nTwenty years later, the Netherlands and Portugal meet again — and the landscape could not be more different. These are two of the most talented squads at the tournament, stacked with players who operate at the absolute peak of European club football. The Netherlands bring Virgil van Dijk's defensive command, Cody Gakpo's attacking dynamism, and Xavi Simons' creative genius. Portugal counter with Cristiano Ronaldo's relentless ambition at 41, Bruno Fernandes' midfield orchestration, and Rafael Leao's explosive pace.\n\nBoth teams are perennial nearly-men of the World Cup. The Netherlands have reached three finals (1974, 1978, 2010) without winning. Portugal's sole major title is Euro 2016, and they have never progressed beyond the semi-finals at a World Cup (third place in 1966). This match carries the weight of decades of unfulfilled promise for both nations — and the football world hopes they choose artistry over aggression this time around.",
-
+  "headline": "Battle of Nuremberg Redux: Dutch Steel Meets Portuguese Silk",
+  "subheadline": "Twenty years after their infamous 16-card clash, Netherlands and Portugal write a new chapter in their volatile rivalry.",
+  "openingNarrative": "The ghosts of Nuremberg still whisper through the corridors of football folklore. Twenty years have passed since Valentin Ivanov's whistle became a metronome of chaos, sixteen yellow cards and four red ones painting the 2006 World Cup's most notorious canvas. Portugal escaped that brutal masterpiece with a 1-0 victory, but both nations bore scars that transcended the scoreline. Today, on North American soil, these old adversaries meet again with the wisdom of age tempering their fire, yet the intensity burning just as bright.\n\nThe Netherlands arrive with their qualifying credentials impeccable—six wins, two draws, Memphis Depay's eight goals leading their charge through UEFA's gauntlet. Ronald Koeman's Oranje embody the modern evolution of Total Football, their 4-3-3 framework allowing Xavi Simons and Cody Gakpo to weave patterns of possibility around Virgil van Dijk's commanding presence. They are ranked seventh in the world, their ELO rating of 1756 reflecting a team that has found its identity after years of searching.\n\nPortugal, meanwhile, come bearing the crown of Nations League champions, Roberto Martínez's side having conquered Spain on penalties just months ago. Their midfield embarrassment of riches—Bruno Fernandes, Bernardo Silva, Vitinha all vying for spaces in a tactical puzzle that could overwhelm any opponent—supports a front line where 41-year-old Cristiano Ronaldo continues to defy time itself. At ELO 1760, they edge their opponents by the slimmest of margins, but in football's grand theater, such mathematical precision means nothing when the lights dim and the drama begins.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The Netherlands' 4-3-3 under Koeman is the purest expression of Dutch footballing philosophy — build from the back, dominate possession through midfield technical quality, and trust the movement of the front three to create chances. Van Dijk's distribution from center-back launches attacks, while Gakpo's movement across the front line creates the unpredictability that organized defenses struggle to handle. Xavi Simons ($100M) adds a creative dimension from midfield that can unlock even the most compact defenses.\n\nPortugal under Roberto Martinez deploy a 4-3-3 that seeks to maximize their extraordinary individual quality. Ronaldo's presence, even at 41, demands defensive attention that creates space for others. Bruno Fernandes dictates tempo from midfield, and Rafael Leao ($113M — the most valuable player in this match) provides the electric pace that stretches defenses. Martinez's system asks Portugal to control possession and create through the quality of their individual players rather than complex tactical patterns.\n\nThe match will be decided in the wide areas. Gakpo vs Portugal's right-back, and Leao vs the Dutch right-back — whoever wins these individual duels creates the chances that decide the match. The central midfield battle between the Netherlands' technical quality and Portugal's Fernandes-led creativity is the secondary front that determines possession and tempo.",
+    "narrative": "Koeman's 4-3-3 represents Dutch orthodoxy refined for the modern age, with van Dijk's presence allowing the full-backs to push high and Frenkie de Jong—if fit—to dictate tempo from deep. Xavi Simons becomes the wild card, his movement between the lines designed to exploit the half-spaces that Portugal's compact midfield might leave exposed. The key battle will be whether the Netherlands can maintain their high defensive line against Portugal's counter-attacking threat, particularly with Rafael Leão's pace potentially exploiting any gaps behind Nathan Aké.\n\nMartínez's Portugal present a fascinating tactical paradox: a team with perhaps the tournament's deepest midfield talent yet anchored by a 41-year-old striker whose mobility limitations force creative solutions. Ronaldo's gravitational pull on defenders creates space for Bruno Fernandes and Bernardo Silva to operate, while the width provided by Leão and Francisco Conceição stretches Dutch lines horizontally. The decisive area may well be Portugal's left flank, where Leão's direct running could test Lutsharel Geertruida's defensive discipline and create the kind of transition moments that decide tight matches.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Virgil van Dijk vs Cristiano Ronaldo — the world's best center-back against the greatest goal-scorer in football history"
+    "keyMatchup": "Virgil van Dijk's aerial dominance versus Cristiano Ronaldo's box movement and finishing instinct"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Netherlands (ELO: 1756) vs Portugal (ELO: 1760) — separated by just 4 ELO points. This is as close to a statistical dead heat as you can find at the World Cup. Both teams are ranked in the world's top 7, making this one of the highest-quality group stage matches at the entire tournament.",
-    "formAnalysis": "The Netherlands were unbeaten in UEFA qualifying: 6 wins, 2 draws, 27 goals scored with Memphis Depay leading the scoring with 8. Portugal won UEFA Group F: 4 wins, 1 draw, 1 loss, scoring 20 goals with Cristiano Ronaldo contributing 5. Both teams come in with momentum and confidence from dominant qualifying campaigns.",
-    "squadValueComparison": "Netherlands ($1.18B) vs Portugal ($1.25B) — two of the most valuable squads at the tournament. Rafael Leao ($113M) leads Portugal's valuation, while Xavi Simons ($100M) tops the Dutch. The combined squad value of nearly $2.5 billion makes this one of the most expensive fixtures in World Cup history.",
-    "injuryImpact": "Both teams have exceptional squad depth, meaning injuries to any single player are unlikely to fundamentally change the tactical approach. The exception is Ronaldo — his presence (even at 41) transforms Portugal's attack and demands specific defensive planning from every opponent.",
-    "bettingPerspective": "Markets rate this as the tightest fixture in the group on odds. The draw is the most backed outcome, reflecting both teams' quality and the mutual respect that will define the tactical approach. Neither team will want to lose a match that could determine who tops the group.",
-    "historicalPattern": "The 2006 World Cup meeting (Portugal 1-0 Netherlands, 16 yellow cards, 4 reds) remains the most notorious encounter. The Netherlands have reached 3 World Cup finals without winning; Portugal's best is third place in 1966. Both nations are desperate to add the one trophy that has always eluded them."
+    "eloAnalysis": "Portugal's four-point ELO advantage (1760 vs 1756) places them as the slightest of favorites, both teams sitting in the tournament's elite tier at ranks six and seven respectively.",
+    "formAnalysis": "The Dutch's perfect qualifying campaign (6W-2D-0L, +23 goal difference) contrasts with Portugal's more modest record (4W-1D-1L, +13), though their Nations League triumph over Spain demonstrates big-game pedigree.",
+    "squadValueComparison": "Portugal's £1.25 billion squad valuation edges the Netherlands' £1.18 billion, with Rafael Leão (£113m) and Xavi Simons (£100m) representing their respective crown jewels of investment.",
+    "injuryImpact": "Frenkie de Jong's ankle concerns could rob the Netherlands of their midfield metronome, while Portugal sweat over Rafael Leão and Diogo Costa's March withdrawals from international duty.",
+    "bettingPerspective": "The markets' reluctance to separate these sides reflects the mathematical precision of their ELO ratings and the historical volatility of their encounters.",
+    "historicalPattern": "With both nations still seeking their maiden World Cup triumph, the weight of expectation mirrors the broader trend that only UEFA and CONMEBOL nations have ever lifted this trophy."
   },
-
   "playerSpotlights": [
     {
       "name": "Virgil van Dijk",
       "teamCode": "NED",
-      "narrative": "The matchup that the football world has been waiting for: Van Dijk vs Ronaldo. The Dutch captain is arguably the best center-back of his generation — his reading of the game, his aerial dominance, and his ability to nullify the world's best strikers make him the ultimate defensive weapon. Against Ronaldo, Van Dijk faces a player whose movement and finishing have defied age and expectation for two decades. This could be the duel that defines the match.",
-      "statline": "Dutch captain, anchoring a defense that conceded just 4 goals in qualifying"
+      "narrative": "At 35, the Liverpool colossus remains the cornerstone upon which Dutch dreams are built. His organizational genius and aerial supremacy will be tested against Ronaldo's movement and Portugal's set-piece delivery. Having never won a major tournament with his country, van Dijk knows this might represent his final chance to add international glory to his remarkable trophy cabinet. Watch for his distribution from deep, often the catalyst for Dutch attacks down the flanks.",
+      "statline": "Netherlands captain with over 60 international caps"
     },
     {
       "name": "Cristiano Ronaldo",
       "teamCode": "POR",
-      "narrative": "At 41, Ronaldo walks into what is almost certainly his final World Cup. His body has made concessions — the explosive pace is gone, the range of movement more limited — but his positioning, his heading ability, and his sheer force of will remain extraordinary. Five goals in qualifying proved the goals haven't dried up. Against Van Dijk, Ronaldo faces the ultimate examination. But this is a man who has spent his entire career being told what he can't do — and doing it anyway.",
-      "statline": "5 goals in qualifying, football's all-time leading international scorer"
+      "narrative": "The eternal question mark becomes an exclamation point yet again. At 41, CR7 approaches his sixth World Cup—a record that may never be matched. His recent brace for Al Nassr confirmed his fitness after hamstring concerns, but his true value now transcends mere goals. His movement in the box creates space for others, his leadership galvanizes teammates, and his sheer presence warps defensive shapes. Against van Dijk's physicality, expect chess not checkers.",
+      "statline": "Record-setting sixth World Cup appearance at age 41"
     },
     {
-      "name": "Cody Gakpo",
+      "name": "Xavi Simons",
       "teamCode": "NED",
-      "narrative": "The Liverpool forward announced himself at the 2022 World Cup with 3 group stage goals, and he has continued to develop into one of Europe's most complete attackers. Gakpo's ability to play across the front line — left, right, or centrally — gives Koeman tactical flexibility. His direct running and eye for goal make him the Dutch player most likely to produce a decisive moment against Portugal's defense.",
-      "statline": "3 goals at the 2022 World Cup, Liverpool's versatile and dynamic attacker"
+      "narrative": "The £100 million Tottenham sensation represents Dutch football's present and future. His move from PSG Paris has unlocked new dimensions to his game, the Premier League's intensity honing his decision-making in tight spaces. Against Portugal's midfield constellation, Simons must find pockets of space to drive forward and link with Gakpo's runs from wide positions. His ability to arrive late in the box could prove decisive in what promises to be a cagey affair.",
+      "statline": "Netherlands' most expensive player at £100 million valuation"
     },
     {
       "name": "Bruno Fernandes",
       "teamCode": "POR",
-      "narrative": "Portugal's creative heartbeat operates from midfield with the authority of a player who has been the focal point of Manchester United's attack for years. Fernandes' passing range, his set-piece delivery, and his ability to arrive in the box at the right moment give Portugal a multidimensional threat. Against the Dutch midfield, his technical quality and vision will be crucial in finding Ronaldo and Leao with the service they need.",
-      "statline": "Portugal's midfield orchestrator, providing the creative vision behind their World Cup campaign"
+      "narrative": "Manchester United's captain brings his club form into Portugal's midfield engine room, where his range of passing and late runs into the box provide the creative ammunition for Portugal's front three. His relationship with Ronaldo, forged in Manchester's red, could unlock defensive doors that pure possession cannot. Against the Dutch press, his first touch and vision under pressure will determine whether Portugal can play through or around Koeman's compact defensive shape.",
+      "statline": "Portugal's creative hub with no current injury concerns"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Netherlands 1-1 Portugal",
     "confidence": 50,
-    "narrative": "When two teams of this quality meet, with so much at stake and so much mutual respect, the result is almost always tight. Neither the Netherlands nor Portugal can afford to lose a group stage match that determines positioning for the knockout rounds. Both teams will approach the match with tactical caution, respecting the other's ability to punish mistakes.\n\nExpect a chess match in the first half, with both teams probing for weaknesses without overcommitting. The quality of both defenses — Van Dijk for the Dutch, the collective for Portugal — will limit clear chances. A moment of individual brilliance from Gakpo or Ronaldo will break the deadlock, and the response from the other side will be swift and deserved.\n\nA 1-1 draw serves both teams' broader tournament ambitions and reflects the genuine competitive balance between two of Europe's most talented squads. But don't mistake a draw for a lack of drama — this match will be played at an intensity that 2006's violence could never match.",
+    "narrative": "Twenty years after their Nuremberg nightmare, these sides have evolved into mirror images of tactical sophistication. The Netherlands' structural discipline will neutralize Portugal's individual brilliance, while Portugal's midfield depth will frustrate Dutch attempts to dominate possession. Van Dijk and Ronaldo will cancel each other out in their personal duel, leaving space for others to write the headlines. Expect goals from unexpected sources—perhaps Xavi Simons' late run or Bruno Fernandes' trademark arrival from deep.\n\nThe stalemate feels inevitable not through lack of quality, but because of its abundance. Both teams possess the defensive organization to frustrate and the attacking talent to threaten, creating the perfect conditions for a tactical chess match that neither side can definitively win. In a tournament where margins are measured in millimeters and moments, this draw could prove more valuable than any victory.",
     "alternativeScenarios": [
       {
-        "scenario": "Netherlands 2-1 Portugal",
-        "probability": 20,
-        "reasoning": "Gakpo produces a masterclass, and the Dutch midfield's pressing overwhelms Portugal's buildup. Van Dijk contains Ronaldo effectively, and the Netherlands' greater collective quality proves decisive."
+        "scenario": "Portugal 2-1",
+        "probability": 25,
+        "reasoning": "Ronaldo's movement creates space for a Bruno Fernandes special, while Leão's pace catches the Dutch high line sleeping on a transition."
       },
       {
-        "scenario": "Portugal 2-0 Netherlands",
-        "probability": 15,
-        "reasoning": "Ronaldo defies time with a vintage performance, and Leao's pace destroys the Dutch right side. Portugal produce their most complete World Cup performance in decades, sending a message to the rest of the tournament."
+        "scenario": "Netherlands 2-0",
+        "probability": 25,
+        "reasoning": "Van Dijk's leadership inspires a clean sheet while Gakpo and Simons combine to expose Portugal's defensive transitions."
       }
     ]
   },
-
-  "closingLine": "Twenty years after the Battle of Nuremberg produced football's ugliest World Cup moment, the Netherlands and Portugal return to prove that their rivalry can produce the beautiful game's finest art. The talent demands it. The stage deserves it. And the football world will be watching."
+  "closingLine": "In football's grand theater, some matches are remembered for their beauty, others for their brutality—this one will be cherished for its chess-like brilliance."
 }

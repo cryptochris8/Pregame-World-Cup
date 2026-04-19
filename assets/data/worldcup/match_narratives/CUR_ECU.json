@@ -2,79 +2,72 @@
   "matchKey": "CUR_ECU",
   "team1Code": "CUR",
   "team2Code": "ECU",
-  "team1Name": "Curacao",
+  "team1Name": "Curaçao",
   "team2Name": "Ecuador",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T14:30:00Z",
   "dataVersion": 1,
-
-  "headline": "The Island That Dreamed and the South American Machine",
-  "subheadline": "Curacao's historic World Cup debut meets Ecuador's Caicedo-powered South American grit in a David-versus-Goliath classic",
-
-  "openingNarrative": "Of all the stories the 2026 World Cup will tell, none may be more improbable than that of Curacao. A Caribbean island of approximately 150,000 people — smaller than most World Cup stadiums could hold twice over — qualifying for football's grandest tournament. Under the wily guidance of Dick Advocaat, a man who has coached at the highest level of European football for decades, Curacao turned their CONCACAF qualification campaign into an exercise in collective belief. Four wins, one draw, one loss. Ten goals scored, four conceded. A journey completed against all odds.\n\nEcuador represent a different kind of ambition entirely. Four World Cup appearances since their debut in 2002 have established them as South American football's most improved nation. The current squad may be their most talented ever — Moises Caicedo anchors Chelsea's midfield with a maturity beyond his years, Piero Hincapie has become a pillar at Bayer Leverkusen, and Enner Valencia remains the tireless heartbeat of the attack. Their qualifying campaign was a marathon of endurance: 8 wins, 8 draws, 2 losses through CONMEBOL's grueling 18-match qualification, with Valencia scoring 6 crucial goals.\n\nThis first-ever meeting between these nations is a celebration of football's universality. On one side, an island whose entire population could fit inside a single Premier League stadium. On the other, a South American power with elite European-based talent. The beauty of the World Cup is that both share the same stage.",
-
+  "headline": "Caribbean Dreams Meet Andean Reality",
+  "subheadline": "Curaçao's fairy tale World Cup debut faces Ecuador's seasoned ambition.",
+  "openingNarrative": "In the annals of World Cup history, few stories will capture the imagination quite like Curaçao's arrival at the 2026 tournament. A Caribbean island nation of just 150,000 souls — smaller than the capacity of many football stadiums — stands on the precipice of their greatest sporting moment. Their journey from the Netherlands Antilles' dissolution in 2010 to this stage represents not just qualification, but validation of dreams that seemed impossible just a generation ago.\n\nAcross the pitch stands Ecuador, a nation that has methodically built itself into South America's most reliable World Cup qualifier behind the continental giants. La Tri have graced four of the last seven tournaments, their evolution from plucky underdogs to established contenders complete. With Moisés Caicedo pulling strings in midfield and a defensive foundation that conceded just five goals in CONMEBOL qualifying, Ecuador embodies the modern football state: technically proficient, physically imposing, and tactically sophisticated.\n\nYet this contrast — between Caribbean romanticism and South American pragmatism — tells only part of the story. Both nations carry the weight of expectation in different forms. For Curaçao, every moment at this tournament is borrowed time, a celebration of what football can achieve when passion transcends resources. For Ecuador, this represents their most talented generation ever, with teenage sensation Kendry Páez symbolizing a golden future that demands immediate validation. When they meet, it will be football's eternal tension: the dream versus the plan, the heart versus the head.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Ecuador's 4-3-3 under Sebastian Beccacece is built on defensive solidity and quick transitions. Caicedo is the engine — his ability to win the ball, resist pressure, and launch attacks with progressive passing makes Ecuador dangerous in transition. Hincapie's composure at the back allows Ecuador to build from deep, while Valencia's relentless running stretches defenses.\n\nCuracao's approach under Advocaat is pragmatic and well-organized. A 4-3-3 that compresses into a deep defensive block, with Juninho Bacuna providing the creative spark from midfield. Advocaat's Dutch tactical influence is evident — Curacao are disciplined without the ball and look to play with purpose when they have it. Their challenge is that Ecuador's pressing will give them very little time on the ball.\n\nThe key tactical battle is whether Curacao can withstand Ecuador's pressing intensity in the first 20 minutes. If they survive that initial onslaught, their organization could make this more competitive than expected. If Ecuador establish early dominance, the quality gap will tell.",
-    "team1Formation": "4-3-3",
+    "narrative": "Fred Rutten's tactical acumen will be tested to its absolute limit as Curaçao deploys their expected 4-5-1 defensive block against Ecuador's fluid 4-3-3 system. The Dutch coach, who took over after Dick Advocaat's February resignation, understands that survival depends on suffocating Ecuador's creative outlets while remaining alert to counter-attacking opportunities. Juninho Bacuna will drop deep from his midfield position to help compress space, while the wide midfielders must track Ecuador's overlapping fullbacks religiously.\n\nEcuador's approach under Sebastian Beccacece will center on patient possession phases, using Caicedo's press resistance to progress the ball through midfield congestion. The key tactical battle lies in Ecuador's ability to create overloads in wide areas — with Pervis Estupiñán's attacking runs from left-back potentially crucial if his recurring muscle fatigue doesn't limit his influence. Piero Hincapié and Willian Pacho's pace allows Ecuador to hold a higher defensive line, compressing the pitch and limiting Curaçao's transitional space. If Ecuador can establish territorial dominance early, Curaçao's disciplined structure may begin to crack under sustained pressure.",
+    "team1Formation": "4-5-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Juninho Bacuna vs Moises Caicedo — Curacao's creator against Ecuador's midfield destroyer"
+    "keyMatchup": "Juninho Bacuna vs Moisés Caicedo — experience versus world-class quality in midfield"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Ecuador (ELO: 1660) vs Curacao (ELO: 1300) — a massive 360-point gap that gives Ecuador approximately an 82% win probability. This is one of the largest ELO disparities in the entire group stage.",
-    "formAnalysis": "Ecuador qualified through the most competitive qualifying format in world football — CONMEBOL. Their record of 8 wins, 8 draws, 2 losses across 18 matches, with Enner Valencia scoring 6 goals, speaks to remarkable consistency. Curacao won CONCACAF Third Round Group B: 4 wins, 1 draw, 1 loss, 10 goals for, 4 against. Bacuna top-scored with 3 goals.",
-    "squadValueComparison": "Ecuador's squad ($433M) dwarfs Curacao's ($10M) — a 43:1 ratio that is the most extreme in this group. Caicedo alone ($150M) is worth 15 times Curacao's entire roster.",
-    "injuryImpact": "Ecuador's depth is substantial — they can replace almost any player without significant quality loss. Curacao have virtually no depth; any injury to Bacuna or their key defenders would be devastating.",
-    "bettingPerspective": "Ecuador are massive favorites. The market expects a comfortable victory. However, Advocaat's tactical nous and Curacao's defensive organization could keep the scoreline respectable.",
-    "historicalPattern": "This is the first-ever meeting between Ecuador and Curacao in any competition. No historical precedent exists."
+    "eloAnalysis": "The ELO ratings tell the stark tale: Ecuador's 1660 rating places them 23rd globally, while Curaçao's 1300 rating at 100th in the world represents one of the largest quality gaps in World Cup history.",
+    "formAnalysis": "Ecuador's recent form shows defensive solidity with seven draws in their last nine matches, while Curaçao rode excellent qualifying momentum with five wins in their final seven matches to secure historic qualification.",
+    "squadValueComparison": "The €433.125 million valuation of Ecuador's squad dwarfs Curaçao's €10 million, with Caicedo's €150 million value alone exceeding Curaçao's entire team six times over.",
+    "injuryImpact": "Estupiñán's muscle fatigue management could limit Ecuador's attacking width, while Curaçao enters with their key players including Juninho Bacuna and Eloy Room fully fit.",
+    "bettingPerspective": "While specific odds aren't available, Ecuador's overwhelming favorite status reflects both their individual quality advantage and World Cup experience dating back to 2002.",
+    "historicalPattern": "Only UEFA and CONMEBOL nations have won World Cups, giving Ecuador historical precedent that Curaçao, as CONCACAF representatives, cannot match."
   },
-
   "playerSpotlights": [
     {
-      "name": "Moises Caicedo",
+      "name": "Moisés Caicedo",
       "teamCode": "ECU",
-      "narrative": "Caicedo is the heartbeat of this Ecuador side and arguably the best defensive midfielder in the Premier League. His ability to read the game, intercept passes, and transition from defense to attack in a single movement makes him the complete modern midfielder. At Chelsea, he has developed into a leader. For Ecuador, he is indispensable — the player around whom everything is built.",
-      "statline": "Ecuador's midfield anchor, valued at $150M, the most expensive player on the pitch"
+      "narrative": "Chelsea's record signing carries Ecuador's hopes on his shoulders, having evolved from a teenage prospect in Independiente del Valle to one of Europe's premier defensive midfielders. His ball-winning ability and progressive passing from deep positions make him Ecuador's metronome, dictating tempo and launching attacks. Against Curaçao's compact defensive block, Caicedo's press resistance and ability to find space between the lines will be crucial. At 24, he represents the perfect fusion of experience and peak physical condition.",
+      "statline": "€150 million transfer value — Ecuador's most expensive player ever"
     },
     {
       "name": "Juninho Bacuna",
       "teamCode": "CUR",
-      "narrative": "Bacuna is Curacao's talisman — the most gifted player on their roster and the man who will determine whether the island nation can compete or merely participate. His 3 qualifying goals demonstrate his ability to produce in big moments, and his experience in European football provides a platform of quality that Curacao desperately need. Against Caicedo, he faces the biggest test of his career.",
-      "statline": "3 goals in CONCACAF qualifying, Curacao's most valuable player at $2.5M"
+      "narrative": "The Rangers midfielder embodies Curaçao's Dutch connection, bringing Premier League and Championship experience to their World Cup debut. As their most valuable player at €2.5 million and top scorer in qualifying with three goals, Bacuna must shoulder creative responsibility while maintaining defensive discipline. His set-piece delivery and ability to pick passes in transition represent Curaçao's best hope of creating chances against Ecuador's organized defense. The 31-year-old's leadership will be vital in managing the occasion.",
+      "statline": "Three goals in qualifying — Curaçao's leading scorer on their path to history"
     },
     {
-      "name": "Enner Valencia",
+      "name": "Kendry Páez",
       "teamCode": "ECU",
-      "narrative": "Valencia is Ecuador's World Cup man. His goals against Qatar in the 2022 opener announced Ecuador to the world, and his 6 qualifying goals for this tournament demonstrate that his hunger has not diminished. The veteran striker leads by example — tireless, aggressive, and capable of scoring from any situation. His experience will be invaluable against a nervous Curacao defense.",
-      "statline": "6 goals in CONMEBOL qualifying, Ecuador's all-time leading scorer"
+      "narrative": "At just 18, Páez represents Ecuador's golden future while contributing to their present ambitions. The teenage midfielder has already shown remarkable composure in CONMEBOL qualifying, providing the assist for Félix Torres's winner against Uruguay. His technical ability and vision offer Ecuador a creative spark that could unlock stubborn defenses, while his fearless approach to the big occasion suggests the World Cup stage won't overwhelm him. Against Curaçao's experienced midfield, his pace and unpredictability could be decisive.",
+      "statline": "Youngest player in Ecuador's World Cup squad at 18 years old"
     },
     {
       "name": "Eloy Room",
       "teamCode": "CUR",
-      "narrative": "Room is the last line of defense for a team that will spend most of this match under siege. The experienced goalkeeper will need to produce the performance of his life to keep Curacao in the contest. His shot-stopping ability and command of the penalty area will be tested repeatedly, and every save he makes will feel like a small victory for the island.",
-      "statline": "Curacao's experienced goalkeeper, key to their defensive resistance"
+      "narrative": "The Columbus Crew goalkeeper stands as Curaçao's last line of defense and perhaps their most crucial player in keeping dreams alive. Room's MLS experience provides big-game composure that few in the squad can match, while his shot-stopping ability offers hope of frustrating Ecuador's attacking threats. Having been instrumental in Curaçao's qualifying campaign, the 35-year-old veteran understands that heroic performances between the posts have defined World Cup upsets throughout history. His distribution will also be key to launching counter-attacks.",
+      "statline": "Over 150 MLS appearances — Curaçao's most experienced professional"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Ecuador 3-0 Curacao",
-    "confidence": 78,
-    "narrative": "Ecuador's quality advantage is overwhelming, and they should control this match from the first whistle. Caicedo will dominate midfield, Valencia will test the defense repeatedly, and Ecuador's pressing will limit Curacao's ability to build any meaningful attacks.\n\nHowever, Curacao will not roll over. Advocaat's experience in managing underdogs means they will be well-organized and disciplined. The first goal may take longer than Ecuador expect, and if Curacao can reach halftime at 0-0 or 1-0, the pressure will shift significantly.\n\nThe most likely outcome is a professional Ecuador victory — not a demolition, but a controlled, comfortable win that reflects their superior quality in every department.",
+    "prediction": "Ecuador 3-0 Curaçao",
+    "confidence": 82,
+    "narrative": "The romantic in every football fan hopes for a miracle, but the quality gulf is simply too vast. Ecuador's superior technical ability, World Cup experience, and individual brilliance should overwhelm Curaçao's valiant but limited resources. Caicedo's dominance in midfield will gradually break down Curaçao's defensive structure, while their lack of attacking threat means Ecuador can commit numbers forward without fear. The pace of Páez and the experience of Valencia should create multiple scoring opportunities against a defense that has never faced this level of opposition.\n\nYet football's beauty lies in its unpredictability, and Curaçao's historic achievement in reaching this stage proves that dreams sometimes transcend logic. If they can weather Ecuador's early storm and reach halftime within touching distance, the pressure and occasion might affect La Tri's composure. But ultimately, the combination of Ecuador's defensive solidity — just five goals conceded in qualifying — and attacking quality should prove decisive in a comfortable victory that launches their World Cup campaign.",
     "alternativeScenarios": [
       {
-        "scenario": "Curacao 1-1 Ecuador",
-        "probability": 8,
-        "reasoning": "Advocaat's tactical masterclass frustrates Ecuador, Bacuna scores a brilliant goal, and the island produces one of the great World Cup upsets. Football's ultimate fairy tale."
+        "scenario": "Ecuador 2-0 Curaçao",
+        "probability": 25,
+        "reasoning": "If Curaçao's defensive organization frustrates Ecuador in the opening half hour and Room produces several crucial saves, nerves could limit Ecuador to a narrower but still comfortable victory."
       },
       {
-        "scenario": "Ecuador 5-0 Curacao",
-        "probability": 12,
-        "reasoning": "Ecuador click into gear immediately, the quality gap proves too vast, and Curacao's World Cup debut becomes a painful lesson in the difference between qualifying and competing."
+        "scenario": "Ecuador 1-0 Curaçao",
+        "probability": 15,
+        "reasoning": "Curaçao's Dutch tactical discipline under Rutten, combined with World Cup debut adrenaline, could create the perfect storm for a backs-to-the-wall defensive masterclass."
       }
     ]
   },
-
-  "closingLine": "For Curacao, walking out onto a World Cup pitch is the victory. For Ecuador, it is just the beginning. Both truths can coexist in a tournament that celebrates football's power to unite the smallest island and the biggest ambitions."
+  "closingLine": "In football's grandest theater, every David needs their Goliath — and sometimes, just being on the same pitch is victory enough."
 }

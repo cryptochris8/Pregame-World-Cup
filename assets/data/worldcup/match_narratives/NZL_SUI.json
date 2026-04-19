@@ -4,77 +4,70 @@
   "team2Code": "SUI",
   "team1Name": "New Zealand",
   "team2Name": "Switzerland",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T10:00:00Z",
   "dataVersion": 1,
-
-  "headline": "The All Whites' Impossible Dream Meets Swiss Precision",
-  "subheadline": "New Zealand's Chris Wood leads the charge against Xhaka's Switzerland in a David vs Goliath encounter",
-
-  "openingNarrative": "New Zealand's relationship with the World Cup is a love letter written in heartbreak and hope. The All Whites' most famous footballing achievement remains their three draws at the 2010 World Cup in South Africa — the only unbeaten team in the entire tournament, yet eliminated in the group stage without a single victory. It was peak New Zealand: defiant, resilient, and ultimately undone by the margins that separate good from great.\n\nSixteen years later, they return to football's biggest stage with Chris Wood leading the line. The Nottingham Forest striker, valued at $25M and the most expensive player in New Zealand's history by a country mile, is the focal point of an All Whites team that knows exactly what it is and refuses to apologize for it. They are direct, physical, organized, and they will fight for every blade of grass.\n\nSwitzerland represent everything New Zealand are not: a squad worth $466M, filled with players from Europe's top leagues, and blessed with the tactical sophistication that comes from Murat Yakin's innovative 3-4-3 system. Granit Xhaka, fresh from leading Bayer Leverkusen to their historic unbeaten Bundesliga title, orchestrates from midfield with the authority of a man who has seen it all. This is their first-ever meeting, and the gulf in resources is staggering. But resources don't play football. Players do.",
-
+  "headline": "When David Meets Goliath: New Zealand's World Cup Return",
+  "subheadline": "The All Whites face their biggest test in 16 years as Switzerland look to make a statement in their opening fixture.",
+  "openingNarrative": "There's something beautifully romantic about New Zealand's return to football's grandest stage. Sixteen years have passed since the All Whites last graced a World Cup, their spirited showing in South Africa 2010 now a distant memory. In those intervening years, Swiss football has evolved into a model of tactical discipline and tournament reliability, reaching the knockout stages of three consecutive major tournaments. Tonight, these vastly different footballing philosophies collide in what represents the ultimate David versus Goliath encounter.\n\nThe numbers tell a stark story. Switzerland's squad, valued at $465 million, dwarfs New Zealand's $76 million collection of journeymen and dreamers by a factor of six. The ELO ratings paint an even clearer picture: Switzerland sit 19th globally with a rating of 1680, while New Zealand languish at 46th with 1505. Yet football's greatest gift is its capacity for the impossible, and few teams embody that spirit quite like the All Whites.\n\nFor New Zealand, this match represents validation of a journey that began with comprehensive victories over Fiji and New Caledonia in OFC qualifying, where Chris Wood's nine goals fired them to a perfect record. Their subsequent reality checks against Australia and Colombia served as brutal reminders of the chasm they must bridge. Switzerland, meanwhile, arrive with questions hanging over their recent form despite qualification success. A relegation from Nations League A after winning just two of twelve matches against elite opposition suggests vulnerability beneath their tactical veneer.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Switzerland's 3-4-3 under Yakin is one of the tournament's most distinctive tactical setups. Three center-backs build from the back with composure, wing-backs provide width and crossing ability, and Xhaka sits deep as the quarterback who dictates tempo. The front three interchange fluidly, with Embolo's physical presence complemented by runners from deeper positions.\n\nNew Zealand's 4-4-2 is a fortress built around Wood's aerial presence and the team's collective defensive discipline. They will sit deep, deny space between the lines, and look to win set-piece situations where Wood's heading ability makes them genuinely dangerous. The pressing will be selective — they cannot match Switzerland's fitness levels across 90 minutes, so energy management is critical.\n\nThe tactical question is simple: can Switzerland's possession and movement break down a team content to defend with ten men behind the ball? History suggests yes, but New Zealand's 2010 World Cup proved that organization and spirit can frustrate teams of far greater quality.",
+    "narrative": "Darren Bazeley's 4-4-2 system will face its ultimate examination against Murat Yakin's sophisticated 3-4-3 structure. Switzerland's approach centers on their aggressive man-marking system, where each player is assigned a direct opponent to eliminate passing lanes. This will test New Zealand's direct, functional build-up play that relies heavily on getting the ball to Chris Wood through route-one football and wide areas. The All Whites' medium pressing intensity will struggle against Switzerland's patient build-up from their three center-backs, orchestrated by Granit Xhaka's metronomic distribution.\n\nThe decisive battle will unfold in the middle third, where Xhaka's progressive passing meets New Zealand's compact defensive block. Bazeley may be tempted to switch to his alternate 5-3-2 formation to absorb Swiss pressure, but this could further isolate Wood from service. Switzerland's wing-backs will provide the width to stretch New Zealand's disciplined but limited defensive structure, while Breel Embolo's movement in the final third poses problems for center-backs more accustomed to OFC's physical but less technical strikers.",
     "team1Formation": "4-4-2",
     "team2Formation": "3-4-3",
-    "keyMatchup": "Chris Wood's aerial threat vs Manuel Akanji — New Zealand's primary weapon against Switzerland's most valuable defender ($56.3M)"
+    "keyMatchup": "Chris Wood's hold-up play versus Switzerland's three-man defensive line"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Switzerland (ELO: 1680, rank 19) vs New Zealand (ELO: 1505, rank 46) — a 175-point gap that gives Switzerland roughly a 71% win probability. This is among the most lopsided Elo matchups in the group stage.",
-    "formAnalysis": "Switzerland have reached the knockout rounds in 4 of their last 5 major tournaments, establishing themselves as one of European football's most reliable performers. New Zealand's path to qualification was long and difficult, coming through the Oceanian confederation before navigating an intercontinental playoff.",
-    "squadValueComparison": "Switzerland ($466M) vs New Zealand ($76.8M) — a 6x difference. Switzerland's most valuable player, Manuel Akanji ($56.3M), is worth nearly as much as New Zealand's entire most expensive quartet combined. Wood at $25M is New Zealand's standout.",
-    "injuryImpact": "Switzerland's depth means they can rotate without significant quality drops. New Zealand's squad is thin beyond their starting eleven, making injuries to key players potentially catastrophic.",
-    "bettingPerspective": "Switzerland are heavy favorites. New Zealand's best value lies in the first-half draw market — they will be competitive early before Swiss quality and fitness tells.",
-    "historicalPattern": "This is the first ever meeting between these two nations at any level. New Zealand's 2010 World Cup draws against Italy, Slovakia, and Paraguay provide the template for what they will attempt here."
+    "eloAnalysis": "The 175-point ELO gap between Switzerland (1680) and New Zealand (1505) represents one of the largest in this opening round, reflecting the chasm between UEFA's tactical sophistication and OFC's developmental stage.",
+    "formAnalysis": "While New Zealand's perfect 5-0 OFC qualifying record masks their struggles against higher-level opposition, Switzerland's mixed recent form (W3 D5 L4) in competitive matches suggests they're beatable despite topping their World Cup qualifying group unbeaten.",
+    "squadValueComparison": "Switzerland's $465 million squad investment tells the story of a nation that has systematically developed talent across Europe's top leagues, while New Zealand's $76 million reflects the challenge of nurturing footballers from a rugby-obsessed nation.",
+    "injuryImpact": "Chris Wood's knee surgery recovery remains the All Whites' primary concern, though his March reserves appearance offers hope; Switzerland's relatively clean injury list, with only Embolo's ACL history a minor worry, underscores their preparation advantage.",
+    "bettingPerspective": "The absence of tournament winner odds for both teams reflects their realistic prospects, though Switzerland's path to the knockout stages appears far more achievable given their recent tournament pedigree.",
+    "historicalPattern": "New Zealand faces the harsh reality that no team outside UEFA or CONMEBOL has ever won the World Cup, with only Morocco's 2022 semi-final run offering hope for smaller football nations."
   },
-
   "playerSpotlights": [
-    {
-      "name": "Granit Xhaka",
-      "teamCode": "SUI",
-      "narrative": "Xhaka's transformation under Xabi Alonso at Bayer Leverkusen has been one of European football's great late-career renaissances. The Swiss captain, once maligned for his time at Arsenal, has become one of the most complete midfielders in world football — a deep-lying playmaker who controls tempo, breaks up play, and launches attacks with metronomic passing. Against New Zealand's deep block, Xhaka's ability to find the pass that unlocks the defense will be essential.",
-      "statline": "Led Bayer Leverkusen to an unbeaten Bundesliga season; Switzerland's most capped outfield player"
-    },
     {
       "name": "Chris Wood",
       "teamCode": "NZL",
-      "narrative": "Wood is New Zealand football. The Nottingham Forest striker carries the weight of an entire nation's World Cup hopes with a quiet determination that belies the enormity of the occasion. His aerial ability is world-class — few strikers in the Premier League win more headers or score more goals from crosses. Against Switzerland's three-center-back system, Wood's presence in the box from set pieces represents New Zealand's most realistic path to a goal.",
-      "statline": "New Zealand's most valuable player at $25M; consistent Premier League goalscorer with Nottingham Forest"
+      "narrative": "The Nottingham Forest striker carries the hopes of a nation on his surgically-repaired knee. Wood's nine goals in qualifying represent more than individual brilliance—they're the foundation upon which New Zealand's World Cup dream was built. His recovery from December knee surgery has been carefully managed, with that March reserves goal offering a glimpse of his readiness. Against Switzerland's organized defensive structure, Wood's Premier League-honed hold-up play and aerial threat become New Zealand's primary weapons. If he's truly fit, he gives the All Whites a puncher's chance.",
+      "statline": "9 goals in 5 OFC qualifying matches"
     },
     {
-      "name": "Breel Embolo",
+      "name": "Granit Xhaka",
       "teamCode": "SUI",
-      "narrative": "Embolo's power, pace, and willingness to run the channels make him the ideal striker for Yakin's system. His ability to hold the ball up and bring others into play creates space for Switzerland's attacking midfielders to exploit. The Monaco forward scored the winner against Cameroon at the 2022 World Cup — a goal complicated by his Cameroonian heritage — and he will be hungry to add more World Cup memories.",
-      "statline": "Scored the winning goal against Cameroon at the 2022 World Cup"
+      "narrative": "The former Arsenal captain has found his perfect role as Switzerland's conductor, orchestrating play from his deep-lying position with the precision of a Swiss timepiece. Xhaka's transformation at Bayer Leverkusen has coincided with Switzerland's most cohesive period under Yakin. His ability to dictate tempo and find progressive passes through New Zealand's compact defensive block will likely determine the match's rhythm. At 31, he brings the experience of three World Cups and the leadership that makes Switzerland more than the sum of their parts.",
+      "statline": "Captain and key distributor in Switzerland's unbeaten qualifying campaign"
     },
     {
       "name": "Liberato Cacace",
       "teamCode": "NZL",
-      "narrative": "The young defender represents New Zealand's evolving football identity. With experience in European football, Cacace brings a tactical awareness and technical quality that previous All Whites generations lacked. His ability to defend one-on-one against Switzerland's wing-backs and contribute to counter-attacks will be crucial to New Zealand's chances of causing an upset.",
-      "statline": "One of New Zealand's most technically gifted defenders with European league experience"
+      "narrative": "The young Empoli defender represents New Zealand's future, a Serie A-developed talent who brings European tactical awareness to the All Whites' backline. Cacace's pace and positioning will be crucial in containing Switzerland's wing-back threats, while his ability to contribute in attack could provide an unexpected outlet. His experience in Italy's technical environment gives him unique insight into the type of systematic approach Switzerland will deploy.",
+      "statline": "Serie A defender providing New Zealand's left-back solidity"
+    },
+    {
+      "name": "Breel Embolo",
+      "teamCode": "SUI",
+      "narrative": "The Monaco forward's career has been defined by talent interrupted—two ACL injuries that could have derailed a player of lesser mental strength. Now 27 and finally enjoying sustained fitness, Embolo brings the directness and physicality that can trouble New Zealand's defensive organization. His four goals in qualifying may not seem prolific, but his movement and ability to create space for others make him Switzerland's most unpredictable attacking threat. Against a deep defensive block, his pace and power could prove decisive.",
+      "statline": "4 goals in World Cup qualifying despite injury-disrupted career"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Switzerland 2-0 New Zealand",
-    "confidence": 72,
-    "narrative": "The quality gap is real, and Switzerland's tournament know-how should ultimately prove decisive. But this will not be the walkover that the squad valuations suggest. New Zealand will defend with the kind of organized ferocity that makes the first 60 minutes deeply uncomfortable for the Swiss.\n\nExpect Switzerland to grow increasingly frustrated as New Zealand's defensive wall holds firm. But Xhaka's patience and Yakin's tactical adjustments will eventually find the breakthrough — likely through a piece of individual quality or a set-piece delivery that beats Wood to the header rather than the ball.\n\nThe second goal will come late, when New Zealand push forward in search of an equalizer and leave space for Switzerland to exploit on the counter. The scoreline will flatter the Swiss. The performance will flatter the All Whites.",
+    "prediction": "Switzerland 3-0 New Zealand",
+    "confidence": 80,
+    "narrative": "The romantic in every football fan wants to believe in New Zealand's capacity for an upset, but the harsh mathematics of international football suggest otherwise. Switzerland's tactical discipline, superior technical quality, and tournament experience should overwhelm a New Zealand side whose perfect OFC record masks significant limitations. Yakin's man-marking system will likely neutralize Chris Wood's service, while the Swiss possess enough attacking variety to eventually break down the All Whites' organized but limited defensive structure.\n\nYet football's beauty lies in its unpredictability. If Wood finds his sharpness and New Zealand's defensive organization holds for longer than expected, this could become a more intriguing contest. The All Whites' nothing-to-lose mentality and 16-year wait for this moment might inspire something special. But class typically tells at this level, and Switzerland possess too much quality across too many positions to stumble against OFC opposition, regardless of their recent inconsistent form.",
     "alternativeScenarios": [
       {
-        "scenario": "Switzerland 0-0 New Zealand",
-        "probability": 15,
-        "reasoning": "New Zealand produce their finest defensive performance since the 2010 World Cup. Wood wins everything in the air, the defensive line holds firm, and Switzerland fail to find the creative spark to break through. A famous draw that echoes the All Whites' greatest footballing achievement."
+        "scenario": "Switzerland 2-0 New Zealand",
+        "probability": 25,
+        "reasoning": "A more cautious Swiss approach or improved New Zealand defensive resilience could limit the scoring, though the result remains predictable given the quality gap."
       },
       {
-        "scenario": "New Zealand 1-0 Switzerland",
-        "probability": 5,
-        "reasoning": "The ultimate World Cup shock. A Chris Wood header from a corner gives New Zealand the lead, and 90 minutes of desperate, heroic defending follows. It would rank alongside the greatest upsets in tournament history."
+        "scenario": "Switzerland 2-1 New Zealand",
+        "probability": 15,
+        "reasoning": "Chris Wood's quality could produce a consolation goal, possibly from a set piece or counter-attack, but Switzerland's superiority would still shine through."
       }
     ]
   },
-
-  "closingLine": "Switzerland have the talent, the tactics, and the tournament pedigree. New Zealand have Chris Wood, collective spirit, and the knowledge that the World Cup has always been a stage where the improbable becomes possible."
+  "closingLine": "In a tournament where dreams are made and broken, New Zealand's return represents pure romance—but Switzerland's ruthless efficiency suggests this fairy tale will have to wait another chapter."
 }

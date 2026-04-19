@@ -4,77 +4,70 @@
   "team2Code": "ESP",
   "team1Name": "Cabo Verde",
   "team2Name": "Spain",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T10:30:00Z",
   "dataVersion": 1,
-
-  "headline": "The Dream and the Dynasty: Cabo Verde's Fairy Tale Faces Spain's New Golden Generation",
-  "subheadline": "A nation of 600,000 people meets the Euro 2024 champions in the ultimate World Cup David vs Goliath story",
-
-  "openingNarrative": "There are moments when the World Cup transcends sport entirely and becomes a story about the indomitable human spirit. Cabo Verde versus Spain is one of those moments. On one side stands a tiny Atlantic archipelago -- ten volcanic islands, 600,000 people, a football federation founded only in 1982 -- that has achieved the seemingly impossible by qualifying for the World Cup. On the other stands Spain, the reigning European champions, 2010 World Cup winners, and possessors of arguably the most exciting young squad in world football.\n\nCabo Verde's journey to this point defies rational explanation. They topped their CAF qualifying group ahead of Cameroon -- a nation with eight World Cup appearances -- with 6 wins, 2 draws, and 2 losses in 10 matches. Ryan Mendes scored 4 goals to lead their attack, and coach Bubista's organized, pragmatic approach turned a collection of Portuguese diaspora players and domestic league stalwarts into a team capable of competing with Africa's established powers.\n\nSpain arrive with the swagger of Euro 2024 champions and the knowledge that their squad may be the most talented they have assembled since the tiki-taka dynasty of 2008-2012. Lamine Yamal, the teenage sensation from Barcelona, has already established himself as one of the most exciting players on the planet. Pedri orchestrates from midfield with a maturity that belies his age. Gavi brings a ferocity and technical precision that completes a midfield triumvirate of extraordinary quality. Their qualifying campaign was dominant: 5 wins, 1 draw in 6 matches, 21 goals scored, just 2 conceded.\n\nThe gulf in quality is vast. Spain's squad ($1.42B) is nearly 95 times the value of Cabo Verde's ($15M). But the World Cup has always been a place where the impossible can happen, if only for 90 minutes.",
-
+  "headline": "Islands of Dreams: Cabo Verde's Historic Moment Arrives",
+  "subheadline": "The Blue Sharks face La Roja in football's ultimate David vs Goliath story at the 2026 World Cup.",
+  "openingNarrative": "In the annals of World Cup history, few stories capture the imagination quite like the one that will unfold when Cabo Verde takes the field for their first-ever World Cup match. Here is a nation of just 600,000 souls scattered across ten volcanic islands off the coast of West Africa, having somehow navigated the treacherous waters of African qualifying to reach football's promised land. Their opponents? Spain — the 2010 World Champions, Euro 2024 victors, and current holders of the world's number one ELO ranking at 1877.\n\nThe Blue Sharks' journey to this moment reads like a fever dream. Under coach Bubista, they topped their CAF qualifying group ahead of Cameroon, then survived the playoff pathway with a blend of Portuguese diaspora talent and unshakeable island determination. Ryan Mendes, now 36, scored four goals in qualifying — the veteran forward who has carried Cabo Verdean hopes for over a decade finally getting his World Cup stage. Meanwhile, Spain arrives with Lamine Yamal leading a golden generation that has revolutionized La Roja's approach, blending traditional tiki-taka with explosive directness.\n\nThis is more than a football match; it's a collision of footballing universes. Spain's squad is valued at €1.426 billion, with Yamal alone worth €188 million — more than Cabo Verde's entire squad combined at €15 million. Yet in the beautiful game's greatest theater, where Morocco stunned Spain on penalties just four years ago, dreams have a habit of defying logic.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Spain's 4-3-3 under Luis de la Fuente represents the evolution of Spanish football -- the trademark possession game now married with a directness and counter-attacking pace that previous generations lacked. Yamal's explosive dribbling from the right wing, combined with the width provided by Nico Williams on the left, gives Spain a dimension of directness that tiki-taka never had. Pedri controls the tempo from central midfield, while Rodri provides the defensive platform as the anchor.\n\nCabo Verde will deploy the most defensive formation they can muster -- likely a 5-4-1 or 5-3-2 designed to pack the defensive third and limit the spaces available to Spain's creative players. Every player will have a defensive assignment. Every blade of grass in their own half will be covered. The gameplan is simple: survive as long as possible, frustrate Spain's rhythm, and hope that set pieces or a rare counter-attack produces something miraculous.\n\nThe tactical reality: Spain will have 70%+ possession. They will create 15+ chances. Cabo Verde's only hope is that their goalkeeper has the game of his life, that Spain's finishing is wasteful, and that one moment of counter-attacking quality produces a goal that sends 600,000 people into ecstasy.",
-    "team1Formation": "5-4-1",
+    "narrative": "Spain will deploy their fluid 4-3-3 system with Rodri anchoring the midfield like a metronome, having remarkably returned from his ACL tear to start against Serbia in March. Pedri and Gavi (if fit) will orchestrate the tempo, while Lamine Yamal and Nico Williams provide the explosive width that has transformed Luis de la Fuente's approach from patient possession to devastating counter-attacks through the half-spaces. Their high pressing intensity and possession dominance will aim to suffocate Cabo Verde early.\n\nBubista will counter with his pragmatic 4-4-2 that can shift to a 5-3-2 defensive block, packing the penalty area and limiting the spaces Spain's creators thrive in. Vozinha's vast experience will be crucial in organizing the defensive line, while Stopira and Steven Vitória must use their aerial presence to combat Spain's movement in the box. The Blue Sharks' best hope lies in disciplined shape, set-piece opportunities, and the pace of Garry Rodrigues on the counter — their €3 million star who represents 20% of their squad value.",
+    "team1Formation": "4-4-2",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Cabo Verde's entire defensive structure vs Spain's relentless possession -- the question is not whether Spain will dominate but whether Cabo Verde can survive the onslaught"
+    "keyMatchup": "Cabo Verde's compact defensive block vs Spain's creative midfield trio"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Spain (ELO: 1877, rank 1) vs Cabo Verde (ELO: 1350, rank 88) -- a 527-point gap that is the largest at the entire 2026 World Cup. Spain's win probability approaches 95%. This is, by the numbers, the most lopsided fixture of the tournament.",
-    "formAnalysis": "Spain's qualifying was dominant: 5 wins, 1 draw in 6 matches, scoring 21 goals and conceding just 2 -- the best goal difference in UEFA qualifying. Mikel Oyarzabal led with 6 goals. Cabo Verde topped their CAF group with 6 wins, 2 draws, 2 losses in 10 matches, with Mendes' 4 goals -- an impressive record that earned genuine respect.",
-    "squadValueComparison": "Spain's squad ($1.42B) vs Cabo Verde's ($15M) -- a 95:1 ratio that is the largest disparity at the tournament. Lamine Yamal alone ($188M) is worth 12.5 times Cabo Verde's entire squad. The gap is almost incomprehensible.",
-    "injuryImpact": "Spain's depth means injuries are irrelevant -- they could field two competitive XIs. Cabo Verde's thin squad means any injury to a key player is a catastrophe. Their most valuable player, Garry Rodrigues ($3M), must be wrapped in cotton wool.",
-    "bettingPerspective": "Spain are the heaviest favorites in any group-stage match. The betting interest lies entirely in the margin -- over/under 3.5 goals is the primary market. Cabo Verde to score at any point offers significant value for romantics.",
-    "historicalPattern": "These nations have never met. Spain's 7-0 demolition of Costa Rica at the 2022 World Cup provides a precedent for how they approach matches against significantly weaker opponents. Cabo Verde have never played at a World Cup."
+    "eloAnalysis": "The ELO gap is staggering — Spain's 1877 rating versus Cabo Verde's 1350 represents one of the largest differentials in World Cup history, with La Roja ranked #1 globally against the Blue Sharks at #88.",
+    "formAnalysis": "Spain's recent form shows their evolution under de la Fuente, going unbeaten in World Cup qualifying with a +19 goal difference, while Cabo Verde's W4-D2-L3 record includes crucial wins over Botswana and a solid AFCON 2025 group stage performance.",
+    "squadValueComparison": "The financial chasm is almost incomprehensible — Spain's €1.426 billion squad value is nearly 100 times greater than Cabo Verde's €15 million, with Yamal's individual worth surpassing the entire Blue Sharks roster.",
+    "injuryImpact": "Spain's midfield depth faces scrutiny with Gavi still recovering from meniscus surgery and Pedri managing his return from hamstring issues, though Rodri's miraculous return from ACL injury provides stability.",
+    "bettingPerspective": "The markets reflect the gulf in quality, though World Cup history teaches us that group stage upsets occur when smaller nations find their perfect tactical storm.",
+    "historicalPattern": "Since 2002, defending champions have struggled in subsequent tournaments, though Spain's Euro 2024 triumph suggests this golden generation has learned from past Spanish disappointments."
   },
-
   "playerSpotlights": [
     {
       "name": "Lamine Yamal",
       "teamCode": "ESP",
-      "narrative": "The teenage phenomenon who has taken world football by storm. Yamal's dribbling, creativity, and maturity beyond his years make him the most exciting young player at the tournament. His Euro 2024 performances -- where he became one of the youngest players to appear at a European Championship at just 16 -- announced him as a generational talent. Against Cabo Verde, the only question is how many times he will leave defenders bewildered.",
-      "statline": "Spain's $188M teenage sensation, Euro 2024 breakout star"
+      "narrative": "At just 18, Yamal has already redefined what Spanish football can be. His dribbling through tight spaces and ability to create from nothing gives La Roja a directness they've never possessed. Having overcome his pubalgia issues through radiofrequency treatment, he arrives at this World Cup as both Spain's primary creative threat and the symbol of their tactical evolution. Against Cabo Verde's compact defensive block, his ability to find pockets of space and deliver incisive final balls will be crucial to breaking down what promises to be a disciplined island fortress.",
+      "statline": "Valued at €188 million, more than Cabo Verde's entire squad"
     },
     {
       "name": "Ryan Mendes",
       "teamCode": "CPV",
-      "narrative": "Cabo Verde's most experienced international carries the hopes of an island nation. Mendes' 4 qualifying goals were crucial to their historic qualification, and his ability to create something from nothing in transition gives Cabo Verde their most realistic -- if slender -- route to a World Cup goal against Spain. Every touch he takes on the World Cup pitch will be remembered in Cabo Verde for generations.",
-      "statline": "4 goals in qualifying, Cabo Verde's experienced attacking talisman"
+      "narrative": "The 36-year-old veteran forward embodies everything about Cabo Verde's remarkable journey to this World Cup. With over 60 caps and four crucial goals in qualifying, Mendes has been the steady heartbeat of the Blue Sharks for more than a decade. Now playing for Al-Ahli Doha, he represents the Portuguese diaspora connection that has fueled Cabo Verde's rise. This World Cup debut is the culmination of a lifetime's work for a player who has carried his nation's dreams on his shoulders through every step of their incredible ascent.",
+      "statline": "Top scorer in World Cup qualifying with 4 goals"
     },
     {
-      "name": "Pedri",
+      "name": "Rodri",
       "teamCode": "ESP",
-      "narrative": "The elegant midfielder is the metronome of Spain's possession-based system. Pedri's ability to control tempo, find pockets of space, and deliver incisive passes makes him one of the world's best midfielders. Against Cabo Verde's deep block, his patience and creativity will be essential in unlocking a defense that will have every player behind the ball.",
-      "statline": "Barcelona's midfield maestro and Spain's tempo controller"
+      "narrative": "The 2024 Ballon d'Or winner's return from ACL injury reads like a Hollywood script. Ahead of schedule and starting against Serbia in March, Rodri's presence transforms Spain from talented to truly elite. His tempo control and defensive screening allow Pedri and the attacking midfielders to focus on creativity, while his distribution range can unlock even the most compact defensive blocks. Against Cabo Verde's disciplined shape, his ability to switch play and find gaps will be essential to Spain's dominance.",
+      "statline": "Started first match back from ACL tear in March 2026"
     },
     {
-      "name": "Garry Rodrigues",
+      "name": "Vozinha",
       "teamCode": "CPV",
-      "narrative": "Cabo Verde's most valuable player at $3M, Rodrigues brings pace and directness that could cause Spain problems on the rare occasions Cabo Verde win possession. His experience in European and Middle Eastern leagues gives him a level of professionalism that will be essential in managing the psychological pressure of facing the world's number-one-ranked team.",
-      "statline": "Cabo Verde's most valuable player at $3M, pacy winger with European experience"
+      "narrative": "The veteran goalkeeper whose real name is as simple as his commitment is profound, Vozinha has been Cabo Verde's last line of defense for over a decade. He will have the honor of leading out the smallest nation by population ever to qualify for a World Cup, a moment that transcends sport for the 600,000 people of the Blue Sharks. His experience and shot-stopping ability will be tested like never before against Spain's creative forces, but if anyone can organize a defensive masterclass from the islands, it's this loyal servant of Cabo Verdean football.",
+      "statline": "Over 10 years as Cabo Verde's first-choice goalkeeper"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Spain 4-0 Cabo Verde",
-    "confidence": 82,
-    "narrative": "The quality gap is simply too vast. Spain's attacking talent -- Yamal, Pedri, Williams, Oyarzabal -- will create an avalanche of chances that even the most heroic defensive performance cannot fully repel. De la Fuente's side will be patient, precise, and eventually ruthless.\n\nThe first goal is key. If Spain score early, Cabo Verde's defensive plan unravels and the floodgates open. If the islanders hold out until halftime, the second half becomes a test of Spanish patience and Cabo Verdean endurance. Spain's 7-0 demolition of Costa Rica at the 2022 World Cup provides the blueprint for how they approach these matches.\n\nBut this is not just about the scoreline. Cabo Verde's presence at the World Cup, sharing a pitch with the European champions, is a victory in itself. Every minute they spend on the biggest stage in football is a gift to a nation that has earned the right to dream.",
+    "confidence": 85,
+    "narrative": "The gulf in quality is simply too vast to bridge, even with Cabo Verde's admirable organization and fighting spirit. Spain's midfield dominance through Rodri and Pedri, combined with Yamal's creativity and the pace of their wingers, should systematically break down the Blue Sharks' defensive block. The experience gap at this level of football will tell, particularly as the match progresses and Cabo Verde's legs tire under Spain's relentless possession and pressing.\n\nYet football's beauty lies in its unpredictability, and Cabo Verde's journey to this point has already defied every statistical model. If they can frustrate Spain in the opening 30 minutes, keep the scoreline respectable, and perhaps find a moment of magic from Rodrigues or Mendes, they will have achieved something approaching a moral victory. For a nation of 600,000 people, simply sharing the pitch with the world's best is already triumph enough.",
     "alternativeScenarios": [
       {
         "scenario": "Spain 2-0 Cabo Verde",
-        "probability": 12,
-        "reasoning": "Cabo Verde produce a heroic defensive display, frustrating Spain for long stretches. The islanders' organization and determination limit Spain to just two goals in what would be a moral victory for the smallest nation at the tournament."
+        "probability": 25,
+        "reasoning": "Cabo Verde's ultra-defensive approach frustrates Spain longer than expected, with Vozinha making several key saves and the Blue Sharks holding firm until late goals."
       },
       {
-        "scenario": "Spain 6-0 Cabo Verde",
+        "scenario": "Spain 1-0 Cabo Verde",
         "probability": 10,
-        "reasoning": "Spain produce a performance reminiscent of their 7-0 demolition of Costa Rica in 2022. Yamal, Pedri, and Williams run riot, and Cabo Verde's defense simply cannot cope with the volume and quality of chances."
+        "reasoning": "A true miracle defensive performance combined with Spanish complacency produces the shock of the tournament, giving Cabo Verde a heroic defeat to be proud of forever."
       }
     ]
   },
-
-  "closingLine": "When 600,000 people dream big enough to reach the World Cup, and 47 million people bring the European championship to the same stadium, football becomes a story about the extraordinary range of human ambition. Cabo Verde may lose this match. They have already won something far more enduring."
+  "closingLine": "In a tournament where dreams collide with reality, sometimes the smallest islands cast the longest shadows."
 }

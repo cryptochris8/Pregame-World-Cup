@@ -4,77 +4,70 @@
   "team2Code": "RSA",
   "team1Name": "Mexico",
   "team2Name": "South Africa",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2024-06-15T12:00:00Z",
   "dataVersion": 1,
-
-  "headline": "History Rhymes at the Azteca",
-  "subheadline": "Mexico and South Africa open the 2026 World Cup in a rematch of the 2010 tournament opener — this time in Mexico City's legendary fortress",
-
-  "openingNarrative": "The symmetry is almost too perfect for fiction. On June 11, 2010, Mexico and South Africa opened the World Cup in Johannesburg, and Siphiwe Tshabalala's thunderous goal into the top corner became one of the most iconic moments in tournament history. Rafael Marquez equalized, and the 1-1 draw set the tone for a World Cup that captured the world's imagination. Sixteen years later, these same two nations open the 2026 World Cup — this time at the Estadio Azteca, Mexico City, in front of 87,000 people and a global television audience of billions.\n\nThe Azteca is not merely a stadium. It is a cathedral of football, the only venue to have hosted two World Cup finals (1970 and 1986), the ground where Maradona scored the Goal of the Century, where Pele lifted his third World Cup. When Mexico take the field as co-hosts, they carry the weight of 130 million people's expectations, seventeen previous World Cup appearances, and one maddening, soul-crushing statistic: they have never, in all those tournaments, advanced beyond the Round of 16.\n\nSouth Africa arrive as qualified participants rather than automatic hosts — a significant distinction. Hugo Broos' side topped CAF Group C with 7 wins, 2 draws, and 1 loss, with Percy Tau contributing 4 goals. Ronwen Williams, the 2024 CAF Goalkeeper of the Year, provides the backbone of a team that plays above its resources. Bafana Bafana know what it means to open a World Cup — and they know that history can repeat itself.",
-
+  "headline": "History Echoes as Mexico Opens 2026 World Cup Against South Africa",
+  "subheadline": "Sixteen years after their iconic 2010 opener, El Tri host Bafana Bafana at the legendary Azteca in pursuit of redemption.",
+  "openingNarrative": "There is poetry in the symmetry, a cosmic coincidence that feels almost too perfect to be real. On June 11, 2010, in the cacophonous atmosphere of Soccer City, Johannesburg, Siphiwe Tshabalala unleashed a thunderbolt that announced Africa's first World Cup to the world. Rafael Marquez answered for Mexico, and a 1-1 draw opened a tournament that would captivate the globe. Now, 16 years later, at 7,350 feet above sea level in the thin air of Mexico City, these two nations meet again to open football's greatest spectacle.\n\nThe venue change tells its own story. Where South Africa hosted alone in 2010, the 2026 World Cup sprawls across three nations, a continental celebration of the beautiful game. But it is Mexico who have been granted the honor of the opening ceremony, and there could be no more fitting stage than the Estadio Azteca—the cathedral of world football, the only stadium to witness two World Cup finals, the concrete colosseum where Diego Maradona danced with destiny and Pelé painted his masterpiece.\n\nFor Mexico, the stakes transcend sport. El Tri arrive as hosts carrying the weight of a nation's expectations and the burden of their own history. The dreaded 'quinto partido'—the fifth game curse—has haunted Mexican dreams for decades, seven consecutive Round of 16 exits a cruel reminder that being close to greatness is not the same as achieving it. But home soil has always been different. The Azteca pulses with 80,000 heartbeats in unison, and in this crucible, ordinary players become immortal.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Mexico under Javier Aguirre will deploy an expansive 4-3-3 designed to electrify the home crowd from the opening whistle. Alexis Vega's creativity on the wing, Santiago Gimenez's movement in the box, and Edson Alvarez's midfield authority provide the framework for a team that will push forward aggressively. The Azteca crowd will be Mexico's 12th man, and Aguirre will want early goals to settle the nerves of a nation watching its team open a World Cup on home soil.\n\nSouth Africa will set up in a disciplined 4-4-2, sitting deep and looking to absorb pressure before countering with pace through their wide players. Bafana Bafana's game plan will revolve around frustrating Mexico, winning set pieces, and hoping Ronwen Williams can produce the kind of heroic performance that earns him the CAF Goalkeeper of the Year award. Mexico City's altitude of 2,240 meters is a real factor — South African players unaccustomed to elevation will feel the thin air, particularly in the second half.\n\nThe tactical key is tempo. Mexico want to play fast, using their home crowd's energy to create a frantic pace that South Africa cannot sustain. South Africa want to slow the game down, break up play with tactical fouls, and turn a football match into a chess match. Whoever controls the tempo controls the outcome.",
+    "narrative": "Javier Aguirre's 4-3-3 system is designed to harness the Azteca's electricity, with Edson Alvarez—if fit—acting as the deep-lying orchestrator who can drop between the center-backs to create a three-man build-up or surge forward to support the attack. Santiago Gimenez's availability remains the tactical wildcard; his clinical finishing and intelligent movement in the penalty area would provide Mexico the focal point to unlock a stubborn South African defense. The full-backs will push high and wide, stretching the field and creating space for the central midfielders to operate.\n\nHugo Broos will counter with his energetic 4-3-3 pressing system, the same tactical blueprint that earned South Africa third place at the 2024 AFCON. The key battle will unfold in the middle third, where South Africa's high-tempo pressing meets Mexico's patient possession play. Percy Tau's movement between the lines and Themba Zwane's direct running will test Mexico's defensive discipline, while Ronwen Williams—the 2024 CAF Goalkeeper of the Year—must be prepared for early bombardment as Mexico seek to settle their nerves with an opening goal. The altitude factor cannot be understated; at 2,240 meters, the ball travels faster and farther, potentially favoring Mexico's more accustomed players.",
     "team1Formation": "4-3-3",
-    "team2Formation": "4-4-2",
-    "keyMatchup": "Mexico's attacking fury vs Ronwen Williams' goalkeeping heroics — can Africa's best keeper hold the Azteca at bay?"
+    "team2Formation": "4-3-3",
+    "keyMatchup": "Edson Alvarez's midfield dominance versus Percy Tau's creative freedom"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Mexico (ELO: 1675) vs South Africa (ELO: 1550) — a 125-point gap that makes Mexico clear favorites, amplified by home advantage. Mexico's ELO ranks them 20th globally, while South Africa sit at 55th. The gap is significant but manageable — and the 2010 opening match proved South Africa can compete with Mexico.",
-    "formAnalysis": "Mexico qualified automatically as co-hosts and lack the competitive edge of a qualifying campaign. South Africa's qualifying was excellent: 7 wins, 2 draws, 1 loss in CAF Group C, with Percy Tau scoring 4 goals and a +11 goal difference. South Africa arrive battle-hardened; Mexico arrive untested. That preparation gap could be significant.",
-    "squadValueComparison": "Mexico ($261M) vs South Africa ($80M) — Mexico's squad is more than three times South Africa's value. Edson Alvarez ($43.8M) leads Mexico's valuation, while Percy Tau ($12M) tops South Africa's. The financial advantage reflects Mexico's access to European football's transfer market.",
-    "injuryImpact": "For Mexico, having their full squad available for the opening match is essential — the crowd expects the best XI. South Africa's dependence on Williams in goal means his fitness is paramount. If Williams is unavailable, South Africa's chances diminish dramatically.",
-    "bettingPerspective": "Mexico are strong favorites, backed by home advantage, squad quality, and the emotional surge of opening the tournament. South Africa's odds to win are long, but their 2010 precedent — drawing this exact fixture in the opening match — offers hope. The 1-1 draw carries romantic appeal and genuine probability.",
-    "historicalPattern": "Four previous meetings: Mexico 2 wins, South Africa 1 win, 1 draw. Their 2010 World Cup opener ended 1-1 with Tshabalala's iconic goal. In that match, South Africa's back was against the wall with a nation watching — and they delivered. The same scenario awaits in 2026, but this time Mexico hold home advantage."
+    "eloAnalysis": "Mexico enter as clear favorites with an ELO rating of 1675 (20th globally) against South Africa's 1550 (55th), a 125-point gap that reflects their superior recent performances and squad depth.",
+    "formAnalysis": "Mexico's recent form tells a concerning story—winless in their last five matches with heavy defeats to Colombia (0-4) and Paraguay (1-2), while South Africa impressed during AFCON 2025 before a narrow Round of 16 exit to Cameroon.",
+    "squadValueComparison": "The financial disparity is stark: Mexico's squad is valued at $261.25 million compared to South Africa's $80 million, with Edson Alvarez alone worth $43.8 million—more than half of Percy Tau's entire team.",
+    "injuryImpact": "Mexico's injury crisis could prove decisive—Santiago Gimenez remains doubtful after ankle surgery, Edson Alvarez is battling ankle discomfort, and goalkeeper Luis Malagón is ruled out with a ruptured Achilles, while South Africa arrive essentially at full strength.",
+    "bettingPerspective": "While tournament winner odds aren't available, the 72% confidence prediction favoring Mexico reflects their home advantage and superior individual quality despite recent struggles.",
+    "historicalPattern": "Host nations historically outperform expectations—13 of 22 World Cup hosts have reached the semi-finals, providing hope for Mexico's quest to break their Round of 16 curse on home soil."
   },
-
   "playerSpotlights": [
     {
       "name": "Santiago Gimenez",
       "teamCode": "MEX",
-      "narrative": "Feyenoord's prolific striker has established himself as Mexico's most clinical finisher in a generation. His intelligent movement in the box, composure in front of goal, and ability to create chances from nothing make him the focal point of Mexico's attack. In front of the Azteca crowd, with an entire nation willing him forward, Gimenez will be fueled by an energy that money cannot buy. His Champions League pedigree and consistent goal record at Feyenoord show he thrives on the biggest stages.",
-      "statline": "Mexico's most lethal striker, Feyenoord's leading scorer with Champions League pedigree"
+      "narrative": "The Feyenoord striker embodies Mexico's World Cup hopes, but his availability remains shrouded in uncertainty after ankle surgery. Absent from recent international squads despite returning to club duty, Gimenez's clinical finishing and intelligent movement have made him El Tri's most potent attacking weapon. His ability to find space in crowded penalty areas and convert half-chances into goals could prove the difference in a tight encounter. If he takes the field at the Azteca, expect him to thrive on the energy of 80,000 Mexican voices.",
+      "statline": "Clinical finisher who led Feyenoord's European campaign before injury setback"
     },
     {
       "name": "Ronwen Williams",
       "teamCode": "RSA",
-      "narrative": "The 2024 CAF Goalkeeper of the Year is the foundation upon which South Africa's entire defensive strategy is built. Williams' shot-stopping, his command of the box, and his ability to produce match-defining saves under the most intense pressure make him Bafana Bafana's most important player. Against Mexico at the Azteca, he will face an onslaught — and how he handles it will determine whether South Africa compete or collapse.",
-      "statline": "2024 CAF Goalkeeper of the Year, Bafana Bafana's captain and last line of defense"
+      "narrative": "The Mamelodi Sundowns captain arrives in Mexico City as African football royalty, his penalty-saving heroics at the 2023 AFCON earning him legendary status among Bafana Bafana faithful. Named CAF Goalkeeper of the Year in 2024, Williams possesses the shot-stopping ability and leadership presence to single-handedly keep South Africa in the match. His distribution and command of the penalty area will be crucial in dealing with Mexico's aerial threat and set-piece delivery. If South Africa are to repeat their 2010 opening match heroics, it will likely be built on Williams' brilliance between the posts.",
+      "statline": "2024 CAF Goalkeeper of the Year with legendary penalty-saving record"
     },
     {
       "name": "Edson Alvarez",
       "teamCode": "MEX",
-      "narrative": "Mexico's captain and midfield general. Alvarez's ability to read the game, break up opposition attacks, and set the tempo for Mexico's buildup gives El Tri the foundation they need. His Premier League experience means he won't be fazed by the occasion — and opening the World Cup at the Azteca as captain is the kind of moment that defines careers. Alvarez will be tasked with controlling the midfield and ensuring Mexico's quality tells.",
-      "statline": "Mexico's most valuable player at $43.8M, captain and midfield anchor of El Tri"
+      "narrative": "The Fenerbahce midfielder is Mexico's tactical heartbeat, a versatile operator capable of dropping between center-backs or surging forward to support attacks. His ankle discomfort creates genuine concern for Aguirre's tactical setup, as no other Mexican player possesses Alvarez's unique combination of defensive solidity and progressive passing. Worth $43.8 million, he represents Mexico's most valuable asset and their key to controlling the tempo against South Africa's high-energy pressing. His fitness could determine whether Mexico dominates possession or struggles to impose their tactical identity.",
+      "statline": "Mexico's most valuable player at $43.8 million with unmatched tactical versatility"
     },
     {
       "name": "Percy Tau",
       "teamCode": "RSA",
-      "narrative": "South Africa's most dangerous attacker carries the weight of a nation's hopes. Tau's pace, directness, and 4 qualifying goals mark him as a genuine threat, even against Mexico's defense. His experience in European football provides the composure needed to perform at the World Cup. If Bafana Bafana are to score, Tau is the most likely source — and one goal could change the entire complexion of the match.",
-      "statline": "4 goals in CAF qualifying, South Africa's highest-valued player at $12M"
+      "narrative": "Al Ahly's star forward carries South African hopes on his shoulders, the most experienced and technically gifted player in Broos' youthful squad. Tau's ability to drift between the lines, create chances for teammates, and provide the clinical edge in front of goal makes him Bafana Bafana's primary threat. His movement and decision-making in the final third will be crucial in exploiting any gaps in Mexico's defensive structure. Having scored four goals in South Africa's World Cup qualifying campaign, he arrives with confidence and the knowledge that one moment of brilliance could echo Tshabalala's 2010 thunderbolt.",
+      "statline": "Top scorer in South Africa's World Cup qualification with 4 goals"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Mexico 2-1 South Africa",
     "confidence": 72,
-    "narrative": "The Azteca, the opening match, and 87,000 voices will carry Mexico to victory — but not without a fight. Gimenez's clinical finishing and Vega's creativity will eventually breach South Africa's defense, but Williams' heroics in goal will keep Bafana Bafana competitive far longer than the quality gap suggests.\n\nExpect a nervous first 20 minutes as Mexico adjust to the weight of expectation. The crowd will be electric but also anxious, and Mexico's players will feel both the adrenaline and the pressure. South Africa's best chance comes early, when nerves are highest and the match is still balanced. A Tau counter-attack in the first half could stun the Azteca into silence — and if South Africa score first, the dynamics change completely.\n\nBut Mexico's quality and the crowd's energy will prove decisive. Two goals — one before and one after halftime — should be enough, with South Africa's consolation coming late to ensure a tense final ten minutes. The 2010 script won't quite repeat itself, but it will come closer than Mexico would like.",
+    "narrative": "The Azteca factor cannot be overstated. Despite Mexico's concerning recent form and injury concerns, home advantage in World Cup openers has proven historically decisive. The emotional surge of opening their co-hosted tournament, combined with superior squad depth and individual quality, should see El Tri through a nervy encounter. South Africa's tactical discipline and Ronwen Williams' goalkeeping excellence will keep them competitive, but Mexico's class should eventually tell in the final third.\n\nThe match will likely mirror their 2010 encounter—tight, tactical, and decided by individual moments of brilliance. Expect South Africa to frustrate Mexico for long periods, possibly even taking a shock lead, before the home side's relentless pressure and crowd support tip the balance. The victory will provide temporary relief for Mexican fans, but the real test of their World Cup credentials lies ahead in the knockout rounds where their demons await.",
     "alternativeScenarios": [
       {
         "scenario": "Mexico 1-1 South Africa",
-        "probability": 18,
-        "reasoning": "History repeats itself with poetic symmetry. Williams produces a heroic performance, Tau scores on the counter, and South Africa earn a draw that echoes their 2010 opener. Mexico's nerves get the better of them in front of a crowd expecting perfection."
+        "probability": 25,
+        "reasoning": "History has a way of repeating itself, and another 1-1 draw would be poetic justice. If Gimenez and Alvarez remain absent, Mexico's attacking potency diminishes significantly, while Williams produces a goalkeeping masterclass to frustrate the hosts."
       },
       {
-        "scenario": "Mexico 3-0 South Africa",
+        "scenario": "South Africa 1-0 Mexico",
         "probability": 15,
-        "reasoning": "The Azteca erupts early, and Mexico's quality overwhelms South Africa's defense. Gimenez, Vega, and a midfield scorer combine for a dominant opening statement that silences any pre-tournament doubts about Mexico's credentials."
+        "reasoning": "The ultimate shock would mirror South Africa's 2005 Gold Cup upset over Mexico. If El Tri's nerves get the better of them and their injury crisis proves decisive, Percy Tau could deliver a moment of magic worthy of Tshabalala's legacy."
       }
     ]
   },
-
-  "closingLine": "In 2010, Mexico and South Africa opened the World Cup and gave the world Tshabalala's thunder. In 2026, at the Azteca, they open the greatest World Cup in history. The symmetry demands a spectacle — and football rarely disappoints when the stage is this grand."
+  "closingLine": "In the thin air of Mexico City, where legends are born and dreams take flight, football's greatest story prepares to unfold once more."
 }

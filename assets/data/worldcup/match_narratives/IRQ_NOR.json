@@ -4,77 +4,70 @@
   "team2Code": "NOR",
   "team1Name": "Iraq",
   "team2Name": "Norway",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T14:30:00Z",
   "dataVersion": 1,
-
-  "headline": "Forty Years of Waiting Meets Twenty-Eight Years of Longing",
-  "subheadline": "Iraq's emotional return to the World Cup collides with Haaland's Norway in a match that could define second place in Group I",
-
-  "openingNarrative": "Both of these teams know what it means to wait. Iraq have not played at a World Cup since 1986, a 40-year absence that spans wars, sanctions, and a footballing journey that has tested the limits of human resilience. Norway's wait has been shorter but no less painful — 28 years since that magical 1998 tournament where they beat Brazil 2-1 and announced themselves as a nation that belonged on football's grandest stage.\n\nNow they meet in what could be the pivotal match of Group I. With France expected to win the group, the battle for second place — and a potential route to the knockout rounds — may well come down to Iraq versus Norway. For Iraq, simply being here is a triumph. For Norway, anything less than progression would be a failure given the weapons at their disposal.\n\nThose weapons are formidable. Erling Haaland scored 16 goals in 8 qualifying matches — a record that reduces qualifying campaigns to a highlight reel of unstoppable finishing. Martin Odegaard, Arsenal's captain, provides the creative supply line that keeps Haaland fed. Together, they have transformed Norway from chronic underachievers into a team that can hurt anyone.\n\nIraq's strength lies not in individual quality but in collective spirit. The memory of the 2007 Asian Cup triumph — won while bombs fell on Baghdad, won against every conceivable odd — runs through the DNA of Iraqi football. The current squad carries that legacy with pride, and their qualification for 2026 was achieved through the same qualities: resilience, technical skill, and an unshakeable belief that representing Iraq at a World Cup is a privilege worth fighting for.\n\nThe quality gap is significant. Haaland and Odegaard operate at a level that Iraq's players rarely encounter. But Iraq have been defying probability their entire footballing existence.",
-
+  "headline": "Dreams Collide as Iraq and Norway Return from the Wilderness",
+  "subheadline": "Two nations end decades of World Cup exile in a match that could define their tournament fate.",
+  "openingNarrative": "Forty years separate these two nations from their last World Cup moments, yet here they stand on football's grandest stage, carrying the dreams of millions who never stopped believing. Iraq, absent since the sun-soaked stadiums of Mexico 1986, arrive as the Lions of Mesopotamia with hearts full of hope and a story written in defiance. Their qualifying campaign—six wins, two draws, and the steely determination of a people who found joy in the 2007 Asian Cup triumph amid unimaginable adversity—speaks to something deeper than football.\n\nAcross the pitch stands Norway, ending a 28-year exile that began when they departed France 1998 as giant-killers who had stunned Brazil. Now they return with Erling Haaland, the generational striker whose 16 goals in a perfect 8-0 qualifying campaign represents one of the most dominant individual performances in World Cup qualifying history. Martin Ødegaard, Arsenal's captain and Norway's creative heartbeat, orchestrated that flawless run with seven assists, transforming the dreams of a nation that had watched from afar as Denmark reached the Euros semi-finals and Sweden made World Cup quarter-finals.\n\nThis is more than Group I's potential decider for second place behind France. It's a collision between Iraq's technical poetry and passionate belief against Norway's tactical precision and world-class talent. In American stadiums where dreams are manufactured, two footballing nations attempt to write new chapters in their storied histories.",
   "tacticalBreakdown": {
-    "title": "The Phenomenon vs The Collective",
-    "narrative": "Norway's 4-4-2 is built around one simple, devastating concept: get the ball to Haaland. Odegaard orchestrates from the number 10 position, the wide players deliver crosses, and the full-backs provide overlapping runs. The entire system exists to create opportunities for the world's most clinical finisher. Norway's pressing is aggressive — they look to win the ball high and transition quickly into Haaland's area of maximum danger.\n\nIraq must find a way to limit the supply to Haaland without leaving themselves exposed elsewhere. A compact 4-5-1 or 5-4-1 is the most likely approach, with two center-backs assigned to Haaland and a third covering behind. Iraq's midfielders will sit deep, denying Odegaard the space to pick his devastating passes. On the counter, Aymen Hussein and Mohanad Ali will look to exploit the spaces that Norway's attacking full-backs leave behind.\n\nThe tactical key for Iraq is discipline. They must resist the temptation to press Norway high — Haaland's runs in behind a stretched defense would be fatal. Instead, they must sit deep, stay compact, and make Norway work for every opportunity. The longer the match stays goalless, the more pressure falls on Norway. And pressure, for a team that has not played at a World Cup in 28 years, can be a heavy burden.",
-    "team1Formation": "5-4-1",
+    "title": "The Chess Match",
+    "narrative": "Graham Arnold's Iraq will deploy their preferred 4-2-3-1, building a compact fortress designed to strangle the supply lines to Haaland while looking to exploit Norway's defensive vulnerabilities through Mohanad Ali's pace and technical midfield play. The double pivot will be crucial, screening a defense that showed resilience in qualifying but has never faced a striker of Haaland's caliber. Iraq's success hinges on winning the midfield battle, where Ibrahim Bayesh must control tempo and distribution against Norway's high-pressing system.\n\nStåle Solbakken's transformation of Norway into a possession-dominant, high-pressing machine culminates in their 4-4-2, with the Haaland-Sørloth partnership supported by Ødegaard's creativity from deeper positions. Norway's approach is devastatingly direct—win possession high, feed the strikers quickly, and let their individual quality decide matches. The key tactical battle will be in the half-spaces, where Iraq's disciplined defensive shape meets Norway's vertical passing combinations. If Ødegaard finds space between Iraq's lines, Haaland becomes unstoppable.",
+    "team1Formation": "4-2-3-1",
     "team2Formation": "4-4-2",
-    "keyMatchup": "Iraq's defensive shape vs Erling Haaland — can collective discipline contain individual brilliance?"
+    "keyMatchup": "Ibrahim Bayesh vs Martin Ødegaard—the creative fulcrums who will dictate their teams' attacking rhythm"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Norway (ELO: 1645, ranked 26th) vs Iraq (ELO: 1450, ranked 65th) — a 195-point gap that gives Norway approximately a 67% win probability. The gap is significant but not insurmountable, particularly if Iraq can limit Haaland's involvement.",
-    "formAnalysis": "Norway qualified with a perfect 8 wins from 8, scoring 37 goals and conceding just 5. Haaland's 16 goals is the tournament's most remarkable individual stat. Iraq's qualifying was a battle: 3 wins, 4 draws, 3 losses, 9 scored and 10 conceded in AFC qualifying. The contrast is stark.",
-    "squadValueComparison": "Norway ($659M) vs Iraq ($30M) — Norway's squad is worth 22 times Iraq's. Haaland alone ($225M) is worth 7.5 times Iraq's entire roster. Odegaard adds further financial weight. The disparity reflects the gulf in European club exposure.",
-    "injuryImpact": "If Haaland is fit, Norway are overwhelming favorites. Without him, the match becomes far more competitive. Iraq need Aymen Hussein and Mohanad Ali at peak fitness to have any offensive threat.",
-    "bettingPerspective": "Norway are strong favorites at -200. Iraq at +500 represents long-shot value for those who believe their defensive discipline and tournament spirit can produce a shock. The draw at +300 is the realistic best-case scenario for Iraq.",
-    "historicalPattern": "This is the first-ever meeting between Iraq and Norway. Neither team has recent World Cup experience to draw on — Iraq last appeared in 1986, Norway in 1998. The unfamiliarity adds uncertainty to an already unpredictable fixture."
+    "eloAnalysis": "Norway's ELO rating of 1645 (rank #26) significantly outweighs Iraq's 1450 (#65), reflecting nearly 200 points of difference that historically suggests a comfortable Norwegian victory.",
+    "formAnalysis": "Iraq's solid qualifying form (6W-2D-2L) shows resilience and organization, while Norway's recent Nations League inconsistency—including a shocking 1-5 loss to Austria—raises questions about their tournament readiness.",
+    "squadValueComparison": "The €658.5M gulf in squad values tells the story—Norway's investment in elite European talent dwarfs Iraq's €30M collective worth, with Haaland alone (€225M) worth more than eight Iraqi squads combined.",
+    "injuryImpact": "Ødegaard's knee injury that sidelined him from March internationals remains a major doubt, potentially disrupting Norway's creative axis, while Iraq's key players Mohanad Ali and Aymen Hussein are fully fit.",
+    "bettingPerspective": "Market confidence clearly favors Norway given their individual quality and recent World Cup pedigree, though Iraq's qualifying resilience suggests they won't be easily dismissed.",
+    "historicalPattern": "Norway's 28-year World Cup absence mirrors the pattern where returning nations often struggle with tournament pressure—only established powers typically perform immediately upon return to football's biggest stage."
   },
-
   "playerSpotlights": [
     {
       "name": "Erling Haaland",
       "teamCode": "NOR",
-      "narrative": "Against Iraq's deep defensive block, Haaland faces a different challenge than against teams who play a high line. He will need to find space in a crowded penalty area, compete physically with multiple markers, and demonstrate the patience and movement intelligence that separates truly great strikers from merely prolific ones. His 16 qualifying goals were scored against teams who could not live with his pace. Iraq will take pace out of the equation by sitting deep — forcing Haaland to beat them with positioning and timing instead.",
-      "statline": "16 goals in 8 qualifying matches; $225M valuation; the world's most clinical striker"
+      "narrative": "The Manchester City phenomenon arrives at his first World Cup carrying the weight of a nation's dreams and the burden of extraordinary expectations. His qualifying record—16 goals in eight matches—represents the most dominant individual qualifying campaign in modern World Cup history. Yet recent form concerns and the pressure of tournament football create fascinating tension around the world's most feared striker. Can the player who scored 52 goals in his debut City season translate that ruthless efficiency to football's grandest stage?",
+      "statline": "16 goals in 8 World Cup qualifiers—two goals per game average"
     },
     {
-      "name": "Aymen Hussein",
+      "name": "Mohanad Ali",
       "teamCode": "IRQ",
-      "narrative": "Iraq's top qualifier scorer carries the hopes of a nation on his shoulders. Hussein's clinical finishing and aerial ability give Iraq their primary goal threat, but against Norway he will see precious few opportunities. Each one will need to be treated as a chance that may not come again. His composure in front of goal — demonstrated in the pressure cooker of AFC qualifying — suggests he has the temperament for the occasion.",
-      "statline": "Iraq's leading qualifier scorer with 3 goals; clinical finisher and national team talisman"
+      "narrative": "Iraq's Al-Duhail striker embodies the technical excellence and fighting spirit that defines the Lions of Mesopotamia. His three goals in qualifying may pale beside Haaland's haul, but his pace, movement, and ability to create something from nothing make him Iraq's most dangerous weapon. Playing in Qatar's Stars League has sharpened his game against international opposition, and his partnership with the creative midfield axis will be crucial in unlocking Norway's defensive vulnerabilities.",
+      "statline": "Leading scorer in Iraq's World Cup qualifying campaign with 3 goals"
     },
     {
-      "name": "Martin Odegaard",
+      "name": "Martin Ødegaard",
       "teamCode": "NOR",
-      "narrative": "If Iraq's plan is to deny Haaland service, then Odegaard becomes Norway's most important player. His ability to find space in congested areas, to deliver the final ball that creates a chance from nothing, and to orchestrate Norway's attacking play is what separates them from being a one-man team. Arsenal's captain has the intelligence to unlock Iraq's deep block — the question is whether he can do it consistently enough to create the chances Norway need.",
-      "statline": "Arsenal captain; Norway's creative heartbeat and the key to unlocking deep defenses"
+      "narrative": "Arsenal's captain transformed Norway's qualifying campaign into a masterpiece of creative football, his seven assists providing the ammunition for Haaland's goal spree. The former Real Madrid wonderkid has matured into one of Europe's finest playmakers, but the knee injury that kept him out of March's internationals casts doubt over his participation. If fit, his ability to find space between lines and deliver precise passes makes him the key to unlocking Iraq's defensive discipline.",
+      "statline": "7 assists in Norway's perfect 8-0 qualifying campaign"
     },
     {
-      "name": "Ibrahim Bayesh",
+      "name": "Ali Adnan",
       "teamCode": "IRQ",
-      "narrative": "Iraq's midfield general is tasked with the most important job in his team's World Cup campaign: controlling the tempo in the middle third of the pitch. If Bayesh can dictate when Iraq press and when they retreat, if he can slow the game down when Norway build momentum and speed it up when counter-attacking opportunities arise, Iraq have a chance. His tactical intelligence is Iraq's primary defensive weapon.",
-      "statline": "Iraq's midfield general; the tactical brain tasked with organizing Iraq's resistance"
+      "narrative": "The most internationally experienced player in Iraq's squad, Adnan brings rare pedigree from spells in Serie A and MLS to a team built primarily around domestic talent. His attacking instincts from left-back, combined with set-piece expertise, provide Iraq with a crucial weapon against Norway's compact defensive shape. At 30, this represents his World Cup swansong, and his leadership will be vital in managing the emotional intensity of Iraq's first World Cup match in four decades.",
+      "statline": "Iraq's most capped outfield player with extensive European and MLS experience"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Norway 2-1 Iraq",
-    "confidence": 58,
-    "narrative": "Norway's quality should prevail, but Iraq will make this far more competitive than the raw data suggests. This is not a match where Haaland will score a hat-trick — Iraq's deep defensive block will deny him the space he thrives in, and their center-backs will relish the physical confrontation.\n\nThe first half will be tense and tight. Iraq will defend with discipline and concentration, limiting Norway to half-chances and long-range efforts. The breakthrough will come around the 55-60 minute mark — an Odegaard pass that finds Haaland in a pocket of space for a controlled finish.\n\nIraq will not collapse. They will continue to fight, and around the 75th minute, Hussein or Ali will find a moment — a set piece, a counter-attack, a deflection — that produces an equalizer. The stadium will erupt, and for a glorious few minutes, Iraq will believe.\n\nBut Norway's quality will tell in the final 15 minutes. Haaland's physical superiority becomes more pronounced as Iraq's defenders tire, and a second goal — probably from a cross that Haaland attacks with devastating timing — will secure the three points that Norway need to advance.\n\nIraq will lose, but they will leave the pitch to a standing ovation. Because this is a team that has overcome more than football to be here.",
+    "confidence": 62,
+    "narrative": "Individual quality should ultimately prevail in a match that promises to be far closer than the 200-point ELO gap suggests. Haaland's movement and finishing ability, combined with Norway's superior depth of talent, provides the decisive edge in key moments. However, Iraq's defensive organization and technical midfield play will ensure this isn't the comfortable victory Norway might expect.\n\nThe outcome likely hinges on Ødegaard's fitness and whether Iraq can execute their game plan of limiting space for Norway's front two. If the Arsenal captain plays and finds his rhythm, Norway's superior individual talent should shine through. But football has taught us that World Cup debuts are unpredictable, and Iraq's passionate belief could yet author another chapter in football's greatest underdog stories.",
     "alternativeScenarios": [
       {
         "scenario": "Iraq 1-0 Norway",
-        "probability": 12,
-        "reasoning": "The upset of the group stage. Iraq score from a set piece, defend with the spirit of 2007, and Norway's World Cup inexperience leads to a frustrating defeat. It would be among the most emotional results in World Cup history."
+        "probability": 25,
+        "reasoning": "If Iraq score early through a set piece or quick counter-attack, their defensive discipline and passionate support could help them hold on for a famous victory that would shake Group I."
       },
       {
         "scenario": "Norway 3-0 Iraq",
         "probability": 15,
-        "reasoning": "Haaland scores twice, Odegaard adds a third, and Norway's quality overwhelms Iraq's defense. A comprehensive victory that announces Norway as genuine dark horses for the tournament."
+        "reasoning": "Should Haaland find his scoring touch early and Iraq's defensive shape collapse under pressure, Norway's attacking quality could produce a comprehensive victory."
       }
     ]
   },
-
-  "closingLine": "Iraq and Norway have waited a combined 68 years for this World Cup. When they meet, both teams will play with the desperate intensity of nations who know how precious this opportunity is — because they have spent decades watching others enjoy it."
+  "closingLine": "In the theater of dreams, sometimes the greatest stories are written by those who were never supposed to be there at all."
 }

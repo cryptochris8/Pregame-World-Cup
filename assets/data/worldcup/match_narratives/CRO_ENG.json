@@ -4,77 +4,70 @@
   "team2Code": "ENG",
   "team1Name": "Croatia",
   "team2Name": "England",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-16T18:00:00Z",
   "dataVersion": 1,
-
-  "headline": "Ghosts of Moscow, Dreams of New York",
-  "subheadline": "England seek to exorcise the demons of 2018 as Bellingham's generation faces Modric's last stand",
-
-  "openingNarrative": "The image is seared into English football's collective memory: Mario Mandzukic wheeling away in celebration, arms outstretched, as 30 million English viewers felt their World Cup dream die in extra time at the Luzhniki Stadium. Croatia 2, England 1. Semi-final, 2018. It was supposed to be coming home. It came home to Zagreb instead.\n\nEight years later, the wound has healed but the scar remains. England arrive at this tournament with their most talented squad in generations — Jude Bellingham has become a Ballon d'Or contender at Real Madrid, Harry Kane continues to break goal-scoring records, and Bukayo Saka has evolved into one of the world's most complete attackers. Under Thomas Tuchel, they have been transformed into a genuine tournament machine: 8 wins from 8 qualifiers, 22 goals scored, zero conceded.\n\nCroatia, though, are the team who refuse to age gracefully. Luka Modric, at 40, defies every law of athletic decline. His passes still arrive with the precision of a Swiss watchmaker, and his ability to control the tempo of a match remains unmatched. The Vatreni finished third at the 2022 World Cup, proving that their 2018 final run was no fluke. Josko Gvardiol has emerged as one of the world's finest defenders at Manchester City.\n\nIn 10 previous meetings, these teams are deadlocked at 4 wins apiece with 2 draws. The stage is set for the tiebreaker that both nations crave.",
-
+  "headline": "Ghost of Moscow: England Face Their 2018 Tormentors",
+  "subheadline": "Eight years after that devastating semi-final, the Three Lions confront Croatia with redemption burning in their hearts.",
+  "openingNarrative": "There are ghosts in football that never truly die, wounds that time cannot fully heal. For England, one such specter carries the name Mario Mandžukić and wears the red-and-white checkerboard of Croatia. On a sweltering Moscow night in July 2018, the Vatreni shattered English dreams with an extra-time winner that sent a nation of 4 million to their first-ever World Cup final, while 55 million Three Lions supporters could only watch their golden generation slip through their fingers once more.\n\nEight years later, as the sun sets over North American stadiums, that same psychological burden weighs heavily on both nations as they prepare for their first World Cup meeting since that fateful semi-final. England arrive as the fourth-ranked team in the world with an ELO rating of 1834, their squad valued at an astronomical $1.87 billion, carrying the expectations of a nation that has waited 60 years for another World Cup triumph. Croatia, ranked 13th with an ELO of 1720, possess a squad worth $464 million but something far more precious: the knowledge that they have been here before, that they have broken English hearts when it mattered most.\n\nThe narrative threads are irresistible. Luka Modrić, now 40 and playing for AC Milan, seeks one final moment of World Cup glory in what will surely be his swansong on football's greatest stage. England's Jude Bellingham, just 23 and worth $225 million, represents the future that the Three Lions hope can finally exorcise the ghosts of tournaments past. It is old magic against new ambition, craft versus athleticism, the dying embers of a golden generation facing the rising flames of another.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a meeting of two fundamentally different footballing philosophies. England under Tuchel deploy a 4-2-3-1 built on relentless pressing intensity and rapid transitions. Bellingham operates as the creative engine, driving forward from midfield with power and purpose that few players in world football can match. The width comes from Saka and Foden, with Kane dropping deep to link play before surging into the box.\n\nCroatia's 4-3-3 is the antithesis — patient, possession-based, and built around Modric's ability to slow the game down or accelerate it at will. Kovacic provides the tireless running alongside Modric, while Brozovic sits deeper, recycling possession and reading danger. Gvardiol's ability to carry the ball from defense adds a modern dimension.\n\nThe key battle is in midfield. If England's press can disrupt Croatia's build-up and force Modric into hurried decisions, the game will be played at England's tempo. If Modric evades that press and finds spaces between England's lines, Croatia can control the match as they did in 2018. Bellingham versus Modric is not just a tactical matchup — it is a generational passing of the guard.",
+    "narrative": "Thomas Tuchel's England will deploy their preferred 4-2-3-1 formation, built around high pressing intensity and rapid transitions through Bellingham's creative genius and Bukayo Saka's wing wizardry. Croatia under Zlatko Dalić will counter with their classic 4-3-3, designed to suffocate through possession and midfield mastery, with the 40-year-old Modrić now operating as a number 10 to reduce his physical workload while maximizing his creative influence.\n\nThe decisive battle will be waged in the middle third, where England's athletic superiority and pressing intensity must overcome Croatia's technical supremacy and ball retention mastery. If Modrić, Kovačić, and Brozović can dictate tempo as they did in 2018, Croatia's patient build-up will frustrate England's high-energy approach. However, England's counter-press immediately after losing possession could overwhelm Croatia's aging midfield if the game opens up. The key tactical adjustment may come from Joško Gvardiol's availability – his absence would force Croatia into a more conservative defensive shape, potentially playing into England's hands.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Jude Bellingham vs Luka Modric — the present and future of midfield excellence"
+    "keyMatchup": "Modrić's midfield orchestration versus Bellingham's box-to-box dynamism"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "England (ELO: 1834) vs Croatia (ELO: 1720) — a 114-point gap that gives England approximately a 62% win probability. However, Croatia's tournament pedigree — finalist in 2018, third in 2022 — suggests they consistently outperform their rating in high-stakes matches.",
-    "formAnalysis": "England's qualifying campaign was historically dominant: 8 wins from 8, 22 goals scored, zero conceded under Tuchel. Croatia were equally impressive: 7 wins, 1 draw, 0 losses, 26 goals scored, just 4 conceded. Top scorer Andrej Kramaric contributed 6 goals.",
-    "squadValueComparison": "England's squad ($1.87B) dwarfs Croatia's ($464M) — a four-to-one ratio that reflects the Premier League's financial muscle. Bellingham ($225M) alone is worth nearly half of Croatia's entire squad. Yet Croatia's value lies in their system and collective intelligence.",
-    "injuryImpact": "Both squads appear close to full strength. Modric's physical durability at 40 is remarkable but carries inherent risk over the course of a tournament. England's depth means they can absorb injuries better than almost any team in the competition.",
-    "bettingPerspective": "England are favorites at +550 to win the tournament outright, reflecting widespread confidence in their quality. Croatia represent intriguing value for those who believe tournament experience trumps individual talent.",
-    "historicalPattern": "The head-to-head record is perfectly balanced: 4 wins each with 2 draws across 10 meetings. Croatia's 2018 semi-final victory and England's Euro 2020 group-stage revenge create a narrative of alternating blows."
+    "eloAnalysis": "England's 114-point ELO advantage over Croatia (1834 vs 1720) represents the largest rating gap between these sides since their rivalry began, suggesting the Three Lions have evolved significantly since 2018.",
+    "formAnalysis": "England's perfect qualifying campaign (8 wins, 22 goal difference) contrasts sharply with their concerning pre-tournament form, including a worrying 1-0 home defeat to Japan, while Croatia's 7-1-0 qualifying record masks late stumbles.",
+    "squadValueComparison": "England's $1.87 billion squad valuation dwarfs Croatia's $464 million, reflecting a four-fold investment gap that underscores the generational transition both nations face in opposite directions.",
+    "injuryImpact": "Croatia's potential loss of Gvardiol to a tibial fracture could be devastating, while England's Bellingham faces a race against time with his hamstring injury, potentially robbing both teams of their most influential players.",
+    "bettingPerspective": "The absence of clear betting favorites suggests markets recognize this as a genuine 50-50 encounter, despite England's superior individual talent and squad depth.",
+    "historicalPattern": "As co-hosts alongside Mexico and Canada, England benefits from the historical trend of host nations overperforming – 13 of 22 World Cup hosts have reached the semi-finals."
   },
-
   "playerSpotlights": [
+    {
+      "name": "Luka Modrić",
+      "teamCode": "CRO",
+      "narrative": "At 40, the AC Milan maestro embarks on his fifth and final World Cup, carrying the dreams of a nation that knows this may be their last dance with football immortality. Modrić's transformation from deep-lying playmaker to attacking number 10 represents Croatia's tactical evolution to maximize his diminishing physical resources while preserving his unmatched creative genius. Against England, he seeks to author one final chapter in a rivalry he has dominated, knowing that lifting the World Cup would complete a career that has already redefined what's possible for a player from a nation of 4 million souls. His every pass will carry the weight of legacy, his every through ball a potential dagger to English hearts.",
+      "statline": "Man of the match in Croatia's 2018 World Cup semi-final victory over England"
+    },
     {
       "name": "Jude Bellingham",
       "teamCode": "ENG",
-      "narrative": "Bellingham has become the player England have waited decades to produce — a complete midfielder who scores, creates, defends, and leads with a maturity that belies his age. His first season at Real Madrid was sensational, and he has only improved since. Against Croatia, he will be asked to do what he does best: drive through midfield, find pockets of space, and deliver in the decisive moments.",
-      "statline": "England's talisman valued at $225M, consistent double-digit goals and assists from midfield"
-    },
-    {
-      "name": "Luka Modric",
-      "teamCode": "CRO",
-      "narrative": "At 40, Modric plays football as if time has made a special exception for him. His passing range, his ability to control tempo, his vision — all remain at the highest level. This will almost certainly be his final World Cup, and the prospect of Modric departing the international stage adds a poignant dimension to every match. The 2018 Ballon d'Or winner has nothing left to prove, but everything left to give.",
-      "statline": "2018 Ballon d'Or winner, 170+ caps for Croatia, still starting at Real Madrid"
+      "narrative": "The $225 million Real Madrid sensation arrives at his first World Cup as England's creative heartbeat, but a hamstring injury suffered in February has made his participation a genuine race against time. If fit, Bellingham's box-to-box dynamism and late runs into the penalty area represent England's most potent weapon against Croatia's possession-based approach. At just 23, he carries the hopes of a generation that has known only near-misses and penalty heartbreak, his every touch scrutinized for signs of the magic that could finally deliver World Cup glory. Thomas Tuchel has described his fitness as crucial to England's tournament ambitions, making him perhaps the most important player on either side.",
+      "statline": "Ballon d'Or contender worth $225 million, England's most valuable player"
     },
     {
       "name": "Harry Kane",
       "teamCode": "ENG",
-      "narrative": "Kane's World Cup story is one of brilliance tinged with near-misses. The 2018 Golden Boot winner missed the penalty that would have equalized against France in the 2022 quarter-final. That pain fuels him still. England's all-time leading scorer brings a complete forward's game — dropping deep, linking play, finishing with ruthless efficiency. Against Gvardiol, his battle will be one of the match's defining contests.",
-      "statline": "England's all-time leading scorer, 2018 World Cup Golden Boot winner with 6 goals, 8 goals in qualifying"
+      "narrative": "England's all-time leading scorer arrives at his fourth major tournament carrying the dual burden of individual brilliance and collective disappointment. Kane's eight goals in qualifying showcased his enduring potency, but at 33, this may represent his final realistic chance at World Cup glory. His hold-up play and movement in the penalty area will be crucial against Croatia's experienced defense, particularly with question marks surrounding Gvardiol's availability. Kane knows better than anyone the pain of tournament near-misses – the Golden Boot at Russia 2018 provided little consolation for semi-final defeat, and this encounter offers a chance at redemption that may not come again.",
+      "statline": "England's all-time leading scorer with 8 goals in World Cup qualifying"
     },
     {
-      "name": "Josko Gvardiol",
+      "name": "Joško Gvardiol",
       "teamCode": "CRO",
-      "narrative": "Gvardiol represents Croatia's future — a defender of extraordinary quality who combines physicality with ball-playing ability. His performances at Manchester City have established him as one of the world's best center-backs, and his World Cup experience from 2022 means he will not be overawed. Tasked with neutralizing Kane and Bellingham's runs, Gvardiol faces one of the most demanding assignments in the tournament.",
-      "statline": "Manchester City regular valued at $106M, Croatia's most valuable player"
+      "narrative": "The Manchester City defender's potential absence due to a tibial fracture could prove catastrophic for Croatia's World Cup hopes. At just 24, Gvardiol represents the bridge between Croatia's golden generation and their future, combining world-class defensive solidity with the modern center-back's ability to drive forward and create from deep. His partnership with the aging Croatian defense has been crucial to their recent success, and facing England's pace and pressing without him would force tactical compromises that could prove decisive. Every Croatian supporter holds their breath for news of his fitness, knowing that their World Cup dreams may depend on his healing.",
+      "statline": "Croatia's most valuable player at $106 million, major doubt with tibial fracture"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "England 2-1 Croatia",
-    "confidence": 58,
-    "narrative": "The quality gap suggests England should win, but the margin will be razor-thin. Croatia's midfield intelligence and tournament experience make them dangerous opponents in any scenario. Expect a cagey first half where both teams respect each other's quality, followed by an increasingly open second half where England's superior depth and athleticism begin to tell.\n\nBellingham's ability to arrive in the box at the right moment will likely produce a crucial goal, while Kane's clinical finishing should create at least one clear chance. Croatia's response will come through Modric's genius — a trademark through ball or a perfectly weighted pass that unlocks the English defense.\n\nBut this is not a match where England should feel comfortable. Croatia have made a habit of slaying English giants on the biggest stage, and Modric has one more masterclass left in him.",
+    "confidence": 62,
+    "narrative": "This match will be decided by the collision between England's athletic superiority and Croatia's technical mastery, with the decisive factor likely being the fitness of key players. If Bellingham can overcome his hamstring concerns and Gvardiol remains sidelined, England's high-pressing intensity and squad depth should prove overwhelming over 90 minutes. The psychological burden of 2018 will weigh heavily in the opening stages, but England's evolution under Tuchel and their perfect qualifying campaign suggests a team finally ready to exorcise their tournament demons.\n\nCroatia's aging golden generation will produce moments of magic – they always do – but the physical demands of World Cup football may finally catch up with Modrić and company. England's superior squad value and home continent advantage provide additional edges in what promises to be a cagey, emotionally charged encounter. The Three Lions will need to weather Croatia's inevitable periods of control, but their greater depth and athleticism should tell in the decisive moments.",
     "alternativeScenarios": [
       {
-        "scenario": "Croatia 2-1 England",
-        "probability": 22,
-        "reasoning": "Modric produces one final World Cup masterclass, Croatia control the midfield battle, and England's 2018 nightmares return in vivid color. The Vatreni prove once again that pedigree trumps price tags."
+        "scenario": "Croatia 1-0 England",
+        "probability": 25,
+        "reasoning": "If Gvardiol recovers and Croatia can control the tempo through midfield mastery, their big-game experience and England's historical tournament struggles could produce another crushing disappointment for the Three Lions."
       },
       {
-        "scenario": "England 3-0 Croatia",
+        "scenario": "1-1 Draw (England win on penalties)",
         "probability": 15,
-        "reasoning": "England's pressing overwhelms Croatia's aging legs, Bellingham and Saka run riot, and the revenge for 2018 is served emphatically."
+        "reasoning": "A tactical stalemate decided by spot-kicks would favor England, given Jordan Pickford's outstanding penalty-saving record and Croatia's aging legs struggling in extra time."
       }
     ]
   },
-
-  "closingLine": "In the end, this match is about more than tactics and statistics — it is about the passing of an era. When Bellingham and Modric shake hands before kickoff, past will meet future, and football will be richer for it."
+  "closingLine": "In the theater of World Cup football, some scripts demand rewriting – and England's time has finally come to flip the pages of history."
 }

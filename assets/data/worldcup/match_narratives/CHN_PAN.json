@@ -2,79 +2,72 @@
   "matchKey": "CHN_PAN",
   "team1Code": "CHN",
   "team2Code": "PAN",
-  "team1Name": "China PR",
+  "team1Name": "China",
   "team2Name": "Panama",
-  "generatedAt": "2026-04-09T00:00:00Z",
+  "generatedAt": "2026-06-15T14:30:00Z",
   "dataVersion": 1,
-
-  "headline": "The Dreamers' Derby: Two Nations Writing Their World Cup Stories",
-  "subheadline": "China return to the World Cup after 24 years of hurt while Panama bring CONCACAF grit to a match neither can afford to lose",
-
-  "openingNarrative": "Some matches at the World Cup are about legacy and greatness. Others are about hope and survival. China versus Panama is the latter -- and that makes it no less compelling. When these two nations walk onto the pitch, they carry the dreams of combined populations numbering over 1.4 billion people, most of whom have spent lifetimes waiting for moments exactly like this one.\n\nChina's World Cup history can be told in a single sentence: they qualified once before, in 2002, lost all three group matches without scoring a goal, and spent the next 24 years trying to get back. That drought has been a source of national anguish in a country where football is the most popular sport but the national team has been a perpetual disappointment. Their return to the World Cup in 2026 is nothing short of a sporting miracle, achieved through a grueling Asian qualifying campaign that tested every ounce of the nation's resolve.\n\nPanama's World Cup story is younger but no less emotional. Their first appearance at the 2018 tournament in Russia was a moment of pure joy -- the entire nation stopped to celebrate qualification. They lost all three matches but scored their first-ever World Cup goal, a moment that brought tears to an entire country. Now they return with more experience and unbeaten in their final qualifying round, having won their group with 3 wins and 3 draws in 6 matches.\n\nThis is a match between two teams fighting for the same thing: a World Cup point that would mean everything.",
-
+  "headline": "Strangers in Paradise: China and Panama Write New World Cup Chapter",
+  "subheadline": "Two nations separated by oceans meet for the first time on football's grandest stage.",
+  "openingNarrative": "In the grand theater of World Cup football, where legends are born and dreams are shattered, some stories transcend tactics and statistics. When China and Panama take the field in their first-ever encounter, they carry the hopes of nations that have traveled vastly different paths to reach this moment. For China, this represents a return to the world's biggest stage after a 24-year odyssey through disappointment and rebuilding. Their last World Cup appearance in 2002 feels like ancient history, a distant memory that haunts a football-mad nation of 1.4 billion people who have watched from the sidelines as their neighbors celebrated on the global stage.\n\nPanama's journey tells a different tale entirely. Los Canaleros arrived at their maiden World Cup in 2018 with wonder in their eyes and fire in their hearts, their qualification sparking wild celebrations across the narrow isthmus that connects two continents. Now, eight years later, they return as seasoned campaigners, no longer wide-eyed debutants but a team shaped by experience and molded by Thomas Christiansen's Barcelona-influenced philosophy. Their recent form speaks of confidence earned through adversity – a Nations League final appearance, despite defeat to Mexico, and a qualification campaign that saw them navigate CONCACAF's treacherous waters with authority, going unbeaten in the second group stage with three wins and three draws.\n\nThis is more than a football match; it's a collision of ambitions, where two nations seeking to establish their credentials will discover that in the World Cup's unforgiving arithmetic, every point carries the weight of history.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Panama play a 4-3-3 that blends Barcelona-influenced possession play with CONCACAF physicality and tactical discipline. They are organized, hard to break down, and dangerous from set pieces. Their qualifying campaign showed a team comfortable holding the ball but also willing to be pragmatic when necessary -- 3 wins and 3 draws in 6 matches, with 9 goals scored and only 4 conceded.\n\nChina will look to be competitive through organization and collective effort rather than individual brilliance. Wu Lei remains their most creative attacking outlet, but this is fundamentally a team that must outwork rather than outplay opponents. Their build-up will be patient, sometimes cautiously so, and they will look to avoid the kind of defensive errors that plagued their 2002 campaign.\n\nThe tactical battleground is in midfield. Panama's Adalberto Carrasquilla brings technical quality and intelligence, while China must find a way to compete in central areas without being overrun. Set pieces could be decisive -- both teams carry aerial threat, and in tight matches between evenly-matched sides, a corner or free kick often decides everything.",
-    "team1Formation": "4-4-2",
+    "narrative": "Christiansen's tactical blueprint for Panama reflects his Barcelona DNA, favoring a 4-3-3 formation built on short passing combinations and patient possession play – unusual sophistication for a CONCACAF nation. The key to their approach lies in midfield orchestration, where Adalberto Carrasquilla pulls the strings with the kind of technical ability that elevates Panama above their regional peers. This patient build-up play, combined with CONCACAF's traditional physicality and set-piece prowess, creates a fascinating tactical hybrid that has proven difficult for opponents to decode.\n\nWith limited tactical intelligence on China's approach, Panama will likely implement their tried-and-tested mid-block defensive structure, compact and organized, designed to frustrate opponents before striking through Carrasquilla's creative passing. The decisive battle may well be fought in the middle third, where Panama's experienced core – hardened by their 2018 World Cup baptism – will look to impose their rhythm on a Chinese side returning to this level after more than two decades away. Set pieces could prove crucial, an area where Panama's aerial threat and tactical discipline have consistently delivered results throughout their qualification campaign.",
+    "team1Formation": "Unknown",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Panama's midfield organization vs China's desire to control tempo in a match neither team can afford to lose"
+    "keyMatchup": "China's midfield structure versus Carrasquilla's creative influence"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Panama (ELO: 1585, rank 36) hold a marginal advantage over China on paper. Both teams sit in the lower tier of World Cup participants, making this one of the most evenly-matched fixtures of the group stage.",
-    "formAnalysis": "Panama were unbeaten in their final CONCACAF qualifying round: 3 wins, 3 draws, 9 goals scored, 4 conceded in 6 matches. Jose Fajardo led their attack with 3 goals. China's qualifying journey through the AFC was considerably more turbulent, reflecting the challenges of competing in a confederation where the gap between tiers is enormous.",
-    "squadValueComparison": "Panama's squad ($39.6M) is modest but features players with MLS and European lower-division experience. China's squad similarly relies on domestic league players supplemented by a handful of overseas-based athletes. Neither team can claim significant financial advantage.",
-    "injuryImpact": "Both squads are relatively healthy, though the intensity of a World Cup campaign will test depth that is thin on both sides. Panama's Michael Murillo, their most valuable player at $4.4M, must stay fit as their defensive anchor.",
-    "bettingPerspective": "This match is close to a coin flip in the betting markets. The draw is the most popular selection among casual bettors, reflecting the widely-held view that neither team has the quality to dominate.",
-    "historicalPattern": "These two nations have never met in any competition. This is their first-ever encounter -- a genuine blank slate with no historical baggage to influence the tactical approach."
+    "eloAnalysis": "Panama's ELO rating of 1585 places them 36th in world rankings, providing a baseline of respectability built through consistent performances in CONCACAF competition.",
+    "formAnalysis": "Panama's recent trajectory is impressive – seven wins, two draws, and just two defeats in their last eleven matches, including that breakthrough victory over the United States in the Nations League semifinals where Waterman's stoppage-time heroics announced their continued evolution.",
+    "squadValueComparison": "Panama's squad valuation of €39.6 million, led by Michael Murillo's €4.4 million market value, reflects a team built on collective organization rather than individual brilliance, typical of nations that maximize limited resources through tactical discipline.",
+    "injuryImpact": "Panama enters this encounter with clean health reports on their key assets – Jose Fajardo, their CONCACAF qualifying top scorer with three goals, and Carrasquilla, their creative fulcrum, both confirmed fit and ready.",
+    "bettingPerspective": "With limited data available on China's capabilities, markets appear uncertain about this matchup's direction, reflecting the genuine unpredictability when footballing unknowns collide.",
+    "historicalPattern": "History suggests this match carries extra significance – only UEFA and CONMEBOL nations have ever won the World Cup, making every point precious for teams from other confederations seeking to challenge established hierarchies."
   },
-
   "playerSpotlights": [
     {
       "name": "Wu Lei",
       "teamCode": "CHN",
-      "narrative": "The face of Chinese football for the better part of a decade, Wu Lei carries a nation's hopes on shoulders that have borne that burden since he became the youngest Chinese Super League goalscorer at just 14 years old. His brief spell at Espanyol in La Liga made him one of the very few Chinese players to compete in a top European league. Now, at the World Cup, he has the chance to give 1.4 billion people a moment they have waited 24 years to experience -- a Chinese World Cup goal.",
-      "statline": "China's leading scorer, former La Liga player with Espanyol"
+      "narrative": "China's attacking talisman carries the hopes of a billion supporters on his shoulders, a burden that would crush lesser mortals but one he has embraced throughout his career. As China's star forward, Wu Lei represents the bridge between their painful 24-year absence from World Cup football and their dreams of establishing themselves among the global elite. His movement in the box and ability to find space in crowded penalty areas will be crucial against Panama's organized defensive block. Every touch will be scrutinized, every chance a potential moment of national euphoria.",
+      "statline": "China's leading attacking threat"
     },
     {
       "name": "Adalberto Carrasquilla",
       "teamCode": "PAN",
-      "narrative": "The midfield metronome who makes Panama tick. Carrasquilla's ability to receive under pressure, turn, and find the right pass gives Panama a level of technical sophistication that belies their world ranking. His performances in MLS have shown he can compete against quality opposition, and his intelligence in reading the game makes him the player most likely to control the tempo of this crucial encounter.",
-      "statline": "Panama's midfield general with MLS experience"
+      "narrative": "The Houston Dynamo midfielder embodies Panama's evolution from plucky underdogs to tactical sophisticates. Carrasquilla's technical ability and vision set him apart in CONCACAF, where such refined skills are precious commodities. His passing range and set-piece delivery provide Panama with a creative dimension that transforms them from merely competitive to genuinely dangerous. Trained in the technical traditions that Christiansen has imported from European football, he represents the future of Central American football – skillful, intelligent, and tactically aware.",
+      "statline": "Panama's primary creative force and set-piece specialist"
+    },
+    {
+      "name": "Luis Mejía",
+      "teamCode": "PAN",
+      "narrative": "Between the posts for Los Canaleros stands a goalkeeper who has earned his spurs in La Liga with Leganes, making him one of Panama's highest-profile European exports. Mejía's 30 caps represent more than just appearances – they chronicle Panama's journey from World Cup newcomers to established international competitors. His reflexes and shot-stopping ability, honed against some of the world's finest attackers in Spanish football, give Panama a last line of defense capable of keeping them in any match. Against China's attacking threat, his experience at the highest level could prove the difference.",
+      "statline": "30 caps and La Liga experience"
     },
     {
       "name": "Jose Fajardo",
       "teamCode": "PAN",
-      "narrative": "Three goals in Panama's qualifying campaign made Fajardo their top scorer and most important attacking threat. He brings the kind of CONCACAF striker's instinct -- physical, willing to run the channels, and clinical when chances arrive -- that can be the difference in tight World Cup matches. His ability to hold the ball up and bring teammates into play gives Panama an attacking focal point they desperately need.",
-      "statline": "3 goals in 6 qualifying matches, Panama's leading scorer"
-    },
-    {
-      "name": "Michael Murillo",
-      "teamCode": "PAN",
-      "narrative": "Panama's most valuable player at $4.4M, Murillo represents the CONCACAF defender's archetype -- quick, powerful, and unafraid of physical confrontation. His experience in competitive leagues means he brings a professionalism and composure to Panama's backline that will be essential in the pressure cooker of a World Cup match where every defensive error could be fatal.",
-      "statline": "Panama's most valuable player ($4.4M) and defensive leader"
+      "narrative": "Panama's striker arrives at this World Cup with the confidence of a man who led his nation's qualification charge, his three goals in the final round making him CONCACAF's joint-top scorer in their path to the tournament. Playing for Saprissa, Fajardo combines physical presence with an instinct for crucial goals – exactly the profile needed for World Cup football where chances are precious and margins razor-thin. His partnership with Carrasquilla, who provides the creative ammunition, forms the spine of Panama's attacking ambitions. Fully fit and firing, he represents Panama's best hope of troubling a Chinese defense stepping back onto this stage after 24 years.",
+      "statline": "3 goals as CONCACAF qualifying top scorer"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "China 1-1 Panama",
     "confidence": 50,
-    "narrative": "This is the kind of World Cup match that defies confident prediction because both teams are operating at the limits of their ability. Panama's superior tactical organization and qualifying form give them a slight edge, but China's desperation and the emotional energy of returning to the World Cup after 24 years should not be underestimated.\n\nWe expect a tight, tense affair decided by moments rather than patterns. A set piece, a counter-attack, a goalkeeper error -- any of these could swing the result. The draw feels right because neither team has the quality to dominate, but both have enough fight to avoid defeat.",
+    "narrative": "This encounter has all the hallmarks of a cagey affair between two teams acutely aware of the stakes involved. Panama's tactical organization under Christiansen, combined with their World Cup experience and recent form, gives them a slight structural advantage. However, China's 24-year wait and the pressure of expectation from their massive support base could either inspire or paralyze – the great unknown that makes this fixture so compelling. Panama's patient possession play will likely dominate extended periods, but China's desperation for a result may create the kind of chaotic moments where World Cup dreams are realized.\n\nExpect a match decided by fine margins – a set piece, a moment of individual brilliance from Carrasquilla, or a defensive lapse under pressure. Both teams will approach this with extreme caution, knowing that a point gained could prove more valuable than three points risked and lost. In the end, the weight of expectation and the fear of defeat may prove too heavy for either side to overcome completely, leading to a result that keeps both nations' World Cup dreams alive but leaves them needing more in subsequent fixtures.",
     "alternativeScenarios": [
       {
-        "scenario": "Panama 2-0 China",
-        "probability": 25,
-        "reasoning": "Panama's CONCACAF experience and tactical discipline prove too much for China. Fajardo scores early, China chase the game, and Panama pick them off on the counter."
+        "scenario": "Panama 1-0 China",
+        "probability": 30,
+        "reasoning": "Carrasquilla's creative ability unlocks China's defense through a perfectly weighted pass or set piece, while Panama's organized defensive structure frustrates China's return to World Cup football."
       },
       {
         "scenario": "China 2-1 Panama",
-        "probability": 15,
-        "reasoning": "The emotional energy of China's return to the World Cup carries them to a famous victory. Wu Lei produces a moment of magic, and 1.4 billion people celebrate a result 24 years in the making."
+        "probability": 20,
+        "reasoning": "The emotion and pressure of China's return to the World Cup stage, combined with Wu Lei finding his moment of glory, overcomes Panama's tactical discipline in a thrilling encounter."
       }
     ]
   },
-
-  "closingLine": "For China and Panama, the World Cup is not about lifting the trophy -- it is about moments that define generations. This match will produce at least one."
+  "closingLine": "When the final whistle sounds, two nations will have written the first chapter of their shared football story, but both will know their World Cup fate remains unwritten."
 }
