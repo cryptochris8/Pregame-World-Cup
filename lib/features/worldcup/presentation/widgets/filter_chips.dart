@@ -1,4 +1,4 @@
-/// Filter chips for World Cup match filtering
+/// Filter chips for tournament match filtering
 ///
 /// This barrel file re-exports all filter chip widgets that were
 /// previously in a single file. Each widget is now in its own file

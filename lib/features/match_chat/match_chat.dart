@@ -1,6 +1,6 @@
 // Match Chat feature barrel file
 //
-// Provides live chat functionality for World Cup matches.
+// Provides live chat functionality for tournament matches.
 
 // Domain
 export 'domain/entities/match_chat.dart';

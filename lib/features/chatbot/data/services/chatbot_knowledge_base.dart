@@ -511,7 +511,7 @@ class ChatbotKnowledgeBase {
     return null;
   }
 
-  /// Get all World Cup history records.
+  /// Get all tournament history records.
   List<Map<String, dynamic>> getRecords() => _historyRecords;
 
   /// Get tournament data for a specific year.

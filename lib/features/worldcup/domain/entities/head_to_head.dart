@@ -5,7 +5,7 @@ class HistoricalMatch extends Equatable {
   /// Year the match was played
   final int year;
 
-  /// Tournament name (e.g., "World Cup", "World Cup Qualifier")
+  /// Tournament name (e.g., "Tournament", "Tournament Qualifier")
   final String tournament;
 
   /// Stage of the tournament (e.g., "Final", "Group Stage", "Semi-Final")
@@ -180,13 +180,13 @@ class HeadToHead extends Equatable {
 
   /// Get World Cup specific summary
   String getWorldCupSummary(String team1Name, String team2Name) {
-    if (worldCupMatches == 0) return 'No World Cup meetings';
+    if (worldCupMatches == 0) return 'No tournament meetings';
     if (team1WorldCupWins > team2WorldCupWins) {
-      return '$team1Name leads $team1WorldCupWins-$team2WorldCupWins-$worldCupDraws in World Cups';
+      return '$team1Name leads $team1WorldCupWins-$team2WorldCupWins-$worldCupDraws in tournaments';
     } else if (team2WorldCupWins > team1WorldCupWins) {
-      return '$team2Name leads $team2WorldCupWins-$team1WorldCupWins-$worldCupDraws in World Cups';
+      return '$team2Name leads $team2WorldCupWins-$team1WorldCupWins-$worldCupDraws in tournaments';
     } else {
-      return 'Tied $team1WorldCupWins-$team2WorldCupWins-$worldCupDraws in World Cups';
+      return 'Tied $team1WorldCupWins-$team2WorldCupWins-$worldCupDraws in tournaments';
     }
   }
 

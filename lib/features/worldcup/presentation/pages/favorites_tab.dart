@@ -7,7 +7,7 @@ import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 import 'predictions_page.dart';
 
-/// Favorites tab content for the World Cup home screen.
+/// Favorites tab content for the tournament home screen.
 /// Shows favorite matches, favorite teams, and prediction stats.
 class FavoritesTab extends StatefulWidget {
   final void Function(WorldCupMatch) onMatchTap;

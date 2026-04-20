@@ -1,6 +1,6 @@
-/// World Cup 2026 Feature Module
+/// 2026 tournament Feature Module
 ///
-/// This barrel file exports all World Cup 2026 components:
+/// This barrel file exports all 2026 tournament components:
 /// - Domain entities (NationalTeam, WorldCupMatch, Group, Bracket, Venue)
 /// - Repository interfaces
 /// - Repository implementations

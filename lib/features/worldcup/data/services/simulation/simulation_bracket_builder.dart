@@ -26,7 +26,7 @@ class SimulationBracketBuilder {
 
   /// Builds the round of 32 bracket based on group stage results.
   ///
-  /// The World Cup round of 32 bracket follows a specific structure:
+  /// The tournament round of 32 bracket follows a specific structure:
   /// - Group winners play third-place teams or runners-up from other groups
   /// - Teams from the same group cannot meet until later rounds
   /// - The bracket structure is predetermined by tournament rules
@@ -71,7 +71,7 @@ class SimulationBracketBuilder {
 
     final qualifiedThird = thirdPlace.take(8).toList();
 
-    // World Cup 2026 bracket structure (simplified version)
+    // 2026 tournament bracket structure (simplified version)
     // The actual structure is complex and depends on which third-place teams qualify
     // This is a simplified model that creates valid matchups
     final bracket = <List<String>>[];

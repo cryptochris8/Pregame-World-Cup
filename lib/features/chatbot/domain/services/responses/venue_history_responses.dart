@@ -51,7 +51,7 @@ class VenueHistoryResponses {
 
     // List all venues
     final venues = _kb.getAllVenues();
-    final buf = StringBuffer('World Cup 2026 — 16 iconic venues across North America. Here\'s the full list:\n\n');
+    final buf = StringBuffer('2026 tournament — 16 iconic venues across North America. Here\'s the full list:\n\n');
     for (final v in venues) {
       // Get city from first match at this venue
       final matches = _kb.getVenueMatches(v);
@@ -75,7 +75,7 @@ class VenueHistoryResponses {
       if (year != null) {
         final tournament = _kb.getTournamentByYear(year);
         if (tournament != null) {
-          final buf = StringBuffer('World Cup $year — hosted by ${tournament['hostCountries']}. Here\'s the story:\n\n');
+          final buf = StringBuffer('tournament $year — hosted by ${tournament['hostCountries']}. Here\'s the story:\n\n');
           buf.writeln('Champions: ${tournament['winner']} lifted the trophy.');
           buf.writeln('Runner-up: ${tournament['runnerUp']} came agonizingly close.');
           if (tournament['thirdPlace'] != null) {
@@ -96,9 +96,9 @@ class VenueHistoryResponses {
 
           // Suggest adjacent tournaments
           final chips = <String>[];
-          if (year > 1930) chips.add('World Cup ${year - 4}');
-          if (year < 2022) chips.add('World Cup ${year + 4}');
-          chips.add('World Cup records');
+          if (year > 1930) chips.add('tournament ${year - 4}');
+          if (year < 2022) chips.add('tournament ${year + 4}');
+          chips.add('tournament records');
 
           return ChatResponse(
             text: buf.toString().trim(),
@@ -113,14 +113,14 @@ class VenueHistoryResponses {
     final records = _kb.getRecords();
     if (records.isEmpty) {
       return ChatResponse(
-        text: "Nearly a century of World Cup football, from 1930 to 2022. "
-            "Give me a year — \"World Cup 2022\" or \"World Cup 1970\" — and I'll tell you the story.",
-        suggestionChips: ['World Cup 2022', 'World Cup 2018', 'World Cup records'],
+        text: "Nearly a century of tournament football, from 1930 to 2022. "
+            "Give me a year — \"2022 tournament\" or \"1970 tournament\" — and I'll tell you the story.",
+        suggestionChips: ['2022 tournament', '2018 tournament', 'tournament records'],
         resolvedIntent: intent,
       );
     }
 
-    final buf = StringBuffer('World Cup Records — numbers that tell the greatest stories in football:\n\n');
+    final buf = StringBuffer('Tournament Records — numbers that tell the greatest stories in football:\n\n');
     for (final r in records.take(8)) {
       buf.writeln('${r['category']}: ${r['holder']} (${r['value']})');
       if (r['details'] != null) buf.writeln('  ${r['details']}');
@@ -139,7 +139,7 @@ class VenueHistoryResponses {
 
     return ChatResponse(
       text: buf.toString().trim(),
-      suggestionChips: ['World Cup 2022', 'World Cup 2018', 'Most goals all time'],
+      suggestionChips: ['2022 tournament', '2018 tournament', 'Most goals all time'],
       resolvedIntent: intent,
     );
   }

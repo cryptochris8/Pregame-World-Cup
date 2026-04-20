@@ -5,7 +5,7 @@ import '../../../../l10n/app_localizations.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
-/// Groups tab content for the World Cup home screen.
+/// Groups tab content for the tournament home screen.
 /// Displays all 12 group standings tables in a scrollable list.
 class GroupsTab extends StatefulWidget {
   final void Function(String) onTeamTap;

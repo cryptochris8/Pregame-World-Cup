@@ -8,8 +8,8 @@ import 'espn_schedule_parser.dart';
 import 'espn_analysis_service.dart';
 import 'espn_team_matcher.dart';
 
-/// ESPN Soccer service for World Cup 2026 game intelligence and venue recommendations.
-/// Uses ESPN's soccer API endpoints for World Cup data.
+/// ESPN Soccer service for 2026 tournament game intelligence and venue recommendations.
+/// Uses ESPN's soccer API endpoints for tournament data.
 /// Primary match data comes from SportsData.io and Firebase;
 /// this service provides supplemental intelligence and analysis.
 ///
@@ -24,10 +24,10 @@ class ESPNService {
   //   usa.1 (MLS), eng.1 (EPL), etc.
   static const String _baseUrl = 'https://site.api.espn.com/apis/site/v2/sports/soccer';
 
-  /// ESPN league slug for World Cup 2026
+  /// ESPN league slug for 2026 tournament
   static const String _worldCupLeague = 'fifa.world';
 
-  /// ESPN league slug for World Cup Qualifiers
+  /// ESPN league slug for Tournament Qualifiers
   static const String _worldCupQualifiersLeague = 'fifa.worldq';
 
   final Dio _dio;
@@ -93,7 +93,7 @@ class ESPNService {
   }
 
   /// Fetch raw game data from ESPN Soccer API.
-  /// Uses the World Cup league endpoint for match summaries.
+  /// Uses the tournament league endpoint for match summaries.
   Future<Map<String, dynamic>?> _fetchESPNGameData(String gameId) async {
     try {
       // ESPN soccer match summary endpoint
@@ -114,7 +114,7 @@ class ESPNService {
     }
   }
 
-  /// Fetch current World Cup matches from ESPN soccer scoreboard
+  /// Fetch current tournament matches from ESPN soccer scoreboard
   Future<List<Map<String, dynamic>>> getCurrentGames() async {
     try {
       final response = await _dio.get(
@@ -133,13 +133,13 @@ class ESPNService {
     }
   }
 
-  /// Fetch World Cup 2026 schedule from ESPN Soccer API.
+  /// Fetch 2026 tournament schedule from ESPN Soccer API.
   /// The tournament runs June 11 - July 19, 2026.
   Future<List<GameSchedule>> get2025Schedule({int limit = 100}) async {
     try {
       final scheduleGames = <GameSchedule>[];
 
-      // World Cup 2026 dates: June 11 - July 19, 2026
+      // 2026 tournament dates: June 11 - July 19, 2026
       final startDate = DateTime(2026, 6, 1);
       final endDate = DateTime(2026, 7, 31);
 
@@ -187,7 +187,7 @@ class ESPNService {
     }
   }
 
-  /// Get upcoming World Cup matches from ESPN Soccer API (next 2 weeks)
+  /// Get upcoming tournament matches from ESPN Soccer API (next 2 weeks)
   Future<List<GameSchedule>> getUpcomingGames({int limit = 10}) async {
     try {
       final now = DateTime.now();
@@ -243,7 +243,7 @@ class ESPNService {
     }
   }
 
-  /// Get World Cup schedule for a specific year from ESPN Soccer API.
+  /// Get tournament schedule for a specific year from ESPN Soccer API.
   /// Supports 2022 (Qatar), 2018 (Russia), and 2026 (USA/Mexico/Canada).
   Future<List<GameSchedule>> getScheduleForYear(int year, {int limit = 2000}) async {
     try {
@@ -264,7 +264,7 @@ class ESPNService {
         startDate = DateTime(2026, 6, 1);
         endDate = DateTime(2026, 7, 31);
       } else if (year == 2025) {
-        // 2025 = World Cup Qualifiers
+        // 2025 = Tournament Qualifiers
         startDate = DateTime(2025, 1, 1);
         endDate = DateTime(2025, 12, 31);
         league = _worldCupQualifiersLeague;

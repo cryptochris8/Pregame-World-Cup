@@ -6,7 +6,7 @@ import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
-/// Page displaying the World Cup knockout bracket
+/// Page displaying the tournament knockout bracket
 class BracketPage extends StatefulWidget {
   const BracketPage({super.key});
 

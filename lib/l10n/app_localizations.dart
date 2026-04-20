@@ -109,7 +109,7 @@ abstract class AppLocalizations {
   /// App title
   ///
   /// In en, this message translates to:
-  /// **'Pregame World Cup'**
+  /// **'Pregame'**
   String get appTitle;
 
   /// Title for Player Spotlight screen
@@ -229,19 +229,19 @@ abstract class AppLocalizations {
   /// Label for World Cup appearances
   ///
   /// In en, this message translates to:
-  /// **'World Cup Appearances'**
+  /// **'Tournament Appearances'**
   String get worldCupAppearances;
 
   /// Label for World Cup goals
   ///
   /// In en, this message translates to:
-  /// **'World Cup Goals'**
+  /// **'Tournament Goals'**
   String get worldCupGoals;
 
   /// Label for previous World Cups
   ///
   /// In en, this message translates to:
-  /// **'Previous World Cups'**
+  /// **'Previous Tournaments'**
   String get previousWorldCups;
 
   /// Section title for honors
@@ -289,7 +289,7 @@ abstract class AppLocalizations {
   /// Section title for World Cup 2026 prediction
   ///
   /// In en, this message translates to:
-  /// **'World Cup 2026 Prediction'**
+  /// **'2026 Tournament Prediction'**
   String get worldCup2026Prediction;
 
   /// Section title for fun facts
@@ -469,7 +469,7 @@ abstract class AppLocalizations {
   /// Section title for World Cup 2026 outlook
   ///
   /// In en, this message translates to:
-  /// **'World Cup 2026 Outlook'**
+  /// **'2026 Tournament Outlook'**
   String get worldCup2026Outlook;
 
   /// Section title for previous clubs
@@ -529,7 +529,7 @@ abstract class AppLocalizations {
   /// World Cup nav label
   ///
   /// In en, this message translates to:
-  /// **'World Cup'**
+  /// **'Tournament'**
   String get worldCup;
 
   /// Label for live matches
@@ -1501,7 +1501,7 @@ abstract class AppLocalizations {
   /// Instructions for adding widget
   ///
   /// In en, this message translates to:
-  /// **'Long press on your home screen, tap the + button, search for \'Pregame World Cup\', and select a widget size.'**
+  /// **'Long press on your home screen, tap the + button, search for \'Pregame\', and select a widget size.'**
   String get widgetInstructions;
 
   /// Display settings section title
@@ -1609,7 +1609,7 @@ abstract class AppLocalizations {
   /// Fan pass screen title
   ///
   /// In en, this message translates to:
-  /// **'World Cup 2026 Pass'**
+  /// **'Tournament Pass'**
   String get worldCup2026Pass;
 
   /// Transaction history tooltip
@@ -1993,7 +1993,7 @@ abstract class AppLocalizations {
   /// World Cup 2026 badge text
   ///
   /// In en, this message translates to:
-  /// **'World Cup 2026'**
+  /// **'2026 Tournament'**
   String get worldCup2026;
 
   /// Live ESPN data badge
@@ -2029,7 +2029,7 @@ abstract class AppLocalizations {
   /// Info text when no live games
   ///
   /// In en, this message translates to:
-  /// **'World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!'**
+  /// **'Tournament matches are played daily throughout the summer.\nCheck back during match time for live scores!'**
   String get worldCupMatchesDaily;
 
   /// Error title when games fail to load
@@ -2695,7 +2695,7 @@ abstract class AppLocalizations {
   /// World Cup 2026 app bar title
   ///
   /// In en, this message translates to:
-  /// **'World Cup 2026'**
+  /// **'2026 Tournament'**
   String get worldCup2026Title;
 
   /// Message when no live games but tournament coming
@@ -2725,7 +2725,7 @@ abstract class AppLocalizations {
   /// Share text footer
   ///
   /// In en, this message translates to:
-  /// **'Shared from Pregame World Cup 2026'**
+  /// **'Shared from Pregame'**
   String get sharedFromPregame;
 
   /// Live match indicator with minute
@@ -2767,7 +2767,7 @@ abstract class AppLocalizations {
   /// World Cup titles stat label
   ///
   /// In en, this message translates to:
-  /// **'World Cup Titles'**
+  /// **'Tournament Titles'**
   String get worldCupTitles;
 
   /// Group label
@@ -2809,7 +2809,7 @@ abstract class AppLocalizations {
   /// World Cup history section title
   ///
   /// In en, this message translates to:
-  /// **'World Cup History'**
+  /// **'Tournament History'**
   String get worldCupHistory;
 
   /// Number of titles
@@ -2821,7 +2821,7 @@ abstract class AppLocalizations {
   /// Message when team has no WC titles
   ///
   /// In en, this message translates to:
-  /// **'No World Cup titles yet'**
+  /// **'No tournament titles yet'**
   String get noWorldCupTitlesYet;
 
   /// Group with letter
@@ -3517,7 +3517,7 @@ abstract class AppLocalizations {
   /// Accessibility settings intro text
   ///
   /// In en, this message translates to:
-  /// **'Customize your experience to make Pregame World Cup easier to use.'**
+  /// **'Customize your experience to make Pregame easier to use.'**
   String get accessibilitySettingsIntro;
 
   /// Vision section title
@@ -4471,7 +4471,7 @@ abstract class AppLocalizations {
   /// Subtitle for venue premium price
   ///
   /// In en, this message translates to:
-  /// **'One-time payment for World Cup 2026'**
+  /// **'One-time payment for the 2026 tournament'**
   String get oneTimePaymentForWorldCup;
 
   /// Header for venue premium features list
@@ -7555,7 +7555,7 @@ abstract class AppLocalizations {
   /// Toggle title for showing matches at venue
   ///
   /// In en, this message translates to:
-  /// **'Show World Cup Matches'**
+  /// **'Show Tournament Matches'**
   String get showWorldCupMatches;
 
   /// Description when matches toggle is on

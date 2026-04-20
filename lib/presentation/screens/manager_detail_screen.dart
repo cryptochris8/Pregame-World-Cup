@@ -98,9 +98,9 @@ class ManagerDetailScreen extends StatelessWidget {
             if (manager.famousQuote.isNotEmpty)
               _FamousQuoteCard(quote: manager.famousQuote),
 
-            // World Cup 2026 prediction
+            // 2026 tournament prediction
             _SectionCard(
-              title: 'World Cup 2026 Outlook',
+              title: '2026 tournament Outlook',
               child: Text(manager.worldCup2026Prediction),
             ),
 

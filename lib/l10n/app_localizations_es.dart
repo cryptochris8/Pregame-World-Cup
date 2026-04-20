@@ -9,7 +9,7 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get appTitle => 'Pregame Copa del Mundo';
+  String get appTitle => 'Pregame';
 
   @override
   String get playerSpotlight => 'Destacados de Jugadores';
@@ -71,13 +71,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get internationalAssists => 'Asistencias Internacionales';
 
   @override
-  String get worldCupAppearances => 'Apariciones en Copa del Mundo';
+  String get worldCupAppearances => 'Apariciones en Torneo';
 
   @override
-  String get worldCupGoals => 'Goles en Copa del Mundo';
+  String get worldCupGoals => 'Goles en Torneo';
 
   @override
-  String get previousWorldCups => 'Copas del Mundo Anteriores';
+  String get previousWorldCups => 'Torneos Anteriores';
 
   @override
   String get honors => 'Honores';
@@ -101,7 +101,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get comparisonToLegend => 'Comparación con Leyenda';
 
   @override
-  String get worldCup2026Prediction => 'Predicción Copa del Mundo 2026';
+  String get worldCup2026Prediction => 'Predicción Torneo 2026';
 
   @override
   String get funFacts => 'Datos Curiosos';
@@ -193,7 +193,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get famousQuote => 'Frase Célebre';
 
   @override
-  String get worldCup2026Outlook => 'Perspectiva Copa del Mundo 2026';
+  String get worldCup2026Outlook => 'Perspectiva Torneo 2026';
 
   @override
   String get previousClubs => 'Clubes Anteriores';
@@ -223,7 +223,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get favorites => 'Favoritos';
 
   @override
-  String get worldCup => 'Copa del Mundo';
+  String get worldCup => 'Torneo';
 
   @override
   String get live => 'En Vivo';
@@ -732,7 +732,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get widgetInstructions =>
-      'Mantén presionada la pantalla de inicio, toca el botón +, busca \'Pregame World Cup\' y selecciona un tamaño de widget.';
+      'Mantén presionada la pantalla de inicio, toca el botón +, busca \'Pregame\' y selecciona un tamaño de widget.';
 
   @override
   String get displaySettings => 'Configuración de Pantalla';
@@ -791,7 +791,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get refreshWidget => 'Actualizar Widget';
 
   @override
-  String get worldCup2026Pass => 'Pase Copa del Mundo 2026';
+  String get worldCup2026Pass => 'Pase Torneo 2026';
 
   @override
   String get transactionHistory => 'Historial de Transacciones';
@@ -1000,7 +1000,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get schedule => 'Calendario';
 
   @override
-  String get worldCup2026 => 'Copa del Mundo 2026';
+  String get worldCup2026 => 'Torneo 2026';
 
   @override
   String get liveEspnData => 'DATOS EN VIVO ESPN';
@@ -1019,7 +1019,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get worldCupMatchesDaily =>
-      'Los partidos de la Copa del Mundo se juegan diariamente durante el torneo.\n¡Vuelve durante la hora del partido para ver marcadores en vivo!';
+      'Los partidos de la Torneo se juegan diariamente durante el torneo.\n¡Vuelve durante la hora del partido para ver marcadores en vivo!';
 
   @override
   String get failedToLoadGames => 'Error al Cargar Juegos';
@@ -1385,7 +1385,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get worldCup2026Title => 'Copa del Mundo 2026';
+  String get worldCup2026Title => 'Torneo 2026';
 
   @override
   String get gameDayComingSoon => 'El dia del partido se acerca!';
@@ -1404,8 +1404,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get sharedFromPregame =>
-      'Compartido desde Pregame Copa del Mundo 2026';
+  String get sharedFromPregame => 'Compartido desde Pregame';
 
   @override
   String matchInProgressWithMinute(String minute) {
@@ -1431,7 +1430,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get worldRanking => 'Ranking Mundial';
 
   @override
-  String get worldCupTitles => 'Títulos Mundiales';
+  String get worldCupTitles => 'Títulos de Torneo';
 
   @override
   String get group => 'Grupo';
@@ -1452,7 +1451,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get shortName => 'Nombre Corto';
 
   @override
-  String get worldCupHistory => 'Historia en la Copa del Mundo';
+  String get worldCupHistory => 'Historia en la Torneo';
 
   @override
   String titleCount(int count) {
@@ -1871,7 +1870,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get accessibilitySettingsIntro =>
-      'Personaliza tu experiencia para que Pregame Copa del Mundo sea más fácil de usar.';
+      'Personaliza tu experiencia para que Pregame sea más fácil de usar.';
 
   @override
   String get vision => 'Visión';
@@ -2415,8 +2414,7 @@ class AppLocalizationsEs extends AppLocalizations {
       '¡Venue Premium activado exitosamente!';
 
   @override
-  String get oneTimePaymentForWorldCup =>
-      'Pago único para la Copa del Mundo 2026';
+  String get oneTimePaymentForWorldCup => 'Pago único para la Torneo 2026';
 
   @override
   String get premiumFeaturesInclude => 'Las funciones Premium incluyen:';
@@ -4164,7 +4162,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get doneButton => 'Listo';
 
   @override
-  String get showWorldCupMatches => 'Mostrar Partidos del Mundial';
+  String get showWorldCupMatches => 'Mostrar Partidos del Torneo';
 
   @override
   String get showsMatchesOnDesc =>

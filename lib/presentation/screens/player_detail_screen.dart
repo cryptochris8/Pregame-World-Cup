@@ -5,7 +5,7 @@ import '../../domain/models/player.dart';
 import '../widgets/player_photo.dart';
 
 /// Player Detail Screen - displays full profile for a single player.
-/// Includes header card, career stats, World Cup history, honors,
+/// Includes header card, career stats, tournament history, honors,
 /// strengths/weaknesses, play style, and trivia.
 class PlayerDetailScreen extends StatelessWidget {
   final Player player;
@@ -40,7 +40,7 @@ class PlayerDetailScreen extends StatelessWidget {
                   _StatRow(label: l10n.worldCupAppearances, value: '${player.worldCupAppearances}'),
                   _StatRow(label: l10n.worldCupGoals, value: '${player.worldCupGoals}'),
                   if (player.worldCupAssists > 0)
-                    _StatRow(label: 'World Cup Assists', value: '${player.worldCupAssists}'),
+                    _StatRow(label: 'Tournament Assists', value: '${player.worldCupAssists}'),
                   if (player.previousWorldCups.isNotEmpty)
                     _StatRow(
                       label: l10n.previousWorldCups,
@@ -50,7 +50,7 @@ class PlayerDetailScreen extends StatelessWidget {
               ),
             ),
 
-            // World Cup History section
+            // Tournament History section
             if (player.worldCupTournamentStats.isNotEmpty ||
                 player.worldCupAwards.isNotEmpty ||
                 player.memorableMoments.isNotEmpty)
@@ -98,7 +98,7 @@ class PlayerDetailScreen extends StatelessWidget {
               child: Text(player.comparisonToLegend),
             ),
 
-            // World Cup 2026 prediction
+            // 2026 tournament prediction
             _SectionCard(
               title: l10n.worldCup2026Prediction,
               child: Text(player.worldCup2026Prediction),
@@ -283,7 +283,7 @@ class _PlayerProfileSection extends StatelessWidget {
   }
 }
 
-/// World Cup History Section - displays tournament stats, awards, and memorable moments
+/// Tournament History Section - displays tournament stats, awards, and memorable moments
 class _WorldCupHistorySection extends StatelessWidget {
   final Player player;
 
@@ -304,7 +304,7 @@ class _WorldCupHistorySection extends StatelessWidget {
                 const Icon(Icons.emoji_events, color: Colors.amber, size: 24),
                 const SizedBox(width: 8),
                 const Text(
-                  'World Cup History',
+                  'Tournament History',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -344,10 +344,10 @@ class _WorldCupHistorySection extends StatelessWidget {
               const SizedBox(height: 12),
             ],
 
-            // World Cup Awards
+            // Tournament Awards
             if (player.worldCupAwards.isNotEmpty) ...[
               const Text(
-                'World Cup Awards',
+                'Tournament Awards',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
               ),
               const SizedBox(height: 8),
@@ -424,7 +424,7 @@ class _WorldCupHistorySection extends StatelessWidget {
   }
 }
 
-/// Tournament Stats Card - shows individual World Cup performance
+/// Tournament Stats Card - shows individual tournament performance
 class _TournamentStatsCard extends StatelessWidget {
   final WorldCupTournamentStats stats;
 
@@ -448,7 +448,7 @@ class _TournamentStatsCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'World Cup ${stats.year}',
+                'tournament ${stats.year}',
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 14,

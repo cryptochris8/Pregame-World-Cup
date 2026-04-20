@@ -120,7 +120,7 @@ class PredictionNarrativeBuilder {
         final count = math.max(homeTitles, awayTitles);
         factors.add(_FactorEntry(
           0.2,
-          '$more bring $count World Cup title${count == 1 ? '' : 's'} of pedigree',
+          '$more bring $count tournament title${count == 1 ? '' : 's'} of pedigree',
         ));
       }
     }

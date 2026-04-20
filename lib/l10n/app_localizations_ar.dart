@@ -9,7 +9,7 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get appTitle => 'بريقيم كأس العالم';
+  String get appTitle => 'بريقيم';
 
   @override
   String get playerSpotlight => 'أبرز اللاعبين';
@@ -71,10 +71,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get internationalAssists => 'التمريرات الحاسمة الدولية';
 
   @override
-  String get worldCupAppearances => 'مشاركات كأس العالم';
+  String get worldCupAppearances => 'مشاركات البطولة';
 
   @override
-  String get worldCupGoals => 'أهداف كأس العالم';
+  String get worldCupGoals => 'أهداف البطولة';
 
   @override
   String get previousWorldCups => 'كؤوس العالم السابقة';
@@ -101,7 +101,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get comparisonToLegend => 'مقارنة بأسطورة';
 
   @override
-  String get worldCup2026Prediction => 'توقعات كأس العالم 2026';
+  String get worldCup2026Prediction => 'توقعات البطولة 2026';
 
   @override
   String get funFacts => 'حقائق ممتعة';
@@ -134,7 +134,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get mostTitles => 'أكثر الألقاب';
 
   @override
-  String get wcWinners => 'أبطال كأس العالم';
+  String get wcWinners => 'أبطال البطولة';
 
   @override
   String get controversial => 'مثيرون للجدل';
@@ -193,7 +193,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get famousQuote => 'مقولة شهيرة';
 
   @override
-  String get worldCup2026Outlook => 'آفاق كأس العالم 2026';
+  String get worldCup2026Outlook => 'آفاق البطولة 2026';
 
   @override
   String get previousClubs => 'الأندية السابقة';
@@ -223,7 +223,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get favorites => 'المفضلة';
 
   @override
-  String get worldCup => 'كأس العالم';
+  String get worldCup => 'البطولة';
 
   @override
   String get live => 'مباشر';
@@ -731,7 +731,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get widgetInstructions =>
-      'اضغط مطولاً على الشاشة الرئيسية، اضغط على زر +، ابحث عن \'Pregame World Cup\'، واختر حجم الودجت.';
+      'اضغط مطولاً على الشاشة الرئيسية، اضغط على زر +، ابحث عن \'Pregame\'، واختر حجم الودجت.';
 
   @override
   String get displaySettings => 'إعدادات العرض';
@@ -789,7 +789,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get refreshWidget => 'تحديث الودجت';
 
   @override
-  String get worldCup2026Pass => 'بطاقة كأس العالم 2026';
+  String get worldCup2026Pass => 'بطاقة البطولة 2026';
 
   @override
   String get transactionHistory => 'سجل المعاملات';
@@ -996,7 +996,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get schedule => 'الجدول';
 
   @override
-  String get worldCup2026 => 'كأس العالم 2026';
+  String get worldCup2026 => 'البطولة 2026';
 
   @override
   String get liveEspnData => 'بيانات ESPN المباشرة';
@@ -1015,7 +1015,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get worldCupMatchesDaily =>
-      'تُلعب مباريات كأس العالم يومياً خلال البطولة.\nعُد أثناء وقت المباراة للنتائج المباشرة!';
+      'تُلعب مباريات البطولة يومياً خلال البطولة.\nعُد أثناء وقت المباراة للنتائج المباشرة!';
 
   @override
   String get failedToLoadGames => 'فشل في تحميل المباريات';
@@ -1367,7 +1367,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get worldCup2026Title => 'كأس العالم 2026';
+  String get worldCup2026Title => 'البطولة 2026';
 
   @override
   String get gameDayComingSoon => 'يوم المباراة قادم قريباً!';
@@ -1386,7 +1386,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get sharedFromPregame => 'مشترك من بريقيم كأس العالم 2026';
+  String get sharedFromPregame => 'مشترك من بريقيم';
 
   @override
   String matchInProgressWithMinute(String minute) {
@@ -1412,7 +1412,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get worldRanking => 'التصنيف العالمي';
 
   @override
-  String get worldCupTitles => 'ألقاب كأس العالم';
+  String get worldCupTitles => 'ألقاب البطولة';
 
   @override
   String get group => 'المجموعة';
@@ -1433,7 +1433,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shortName => 'الاسم المختصر';
 
   @override
-  String get worldCupHistory => 'تاريخ كأس العالم';
+  String get worldCupHistory => 'تاريخ البطولة';
 
   @override
   String titleCount(int count) {
@@ -1447,7 +1447,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get noWorldCupTitlesYet => 'لا ألقاب كأس العالم بعد';
+  String get noWorldCupTitlesYet => 'لا ألقاب البطولة بعد';
 
   @override
   String groupLabel(String letter) {
@@ -1848,7 +1848,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get accessibilitySettingsIntro =>
-      'خصّص تجربتك لجعل استخدام بريقيم كأس العالم أسهل.';
+      'خصّص تجربتك لجعل استخدام بريقيم أسهل.';
 
   @override
   String get vision => 'الرؤية';
@@ -2382,7 +2382,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'تم تفعيل بريميوم المكان بنجاح!';
 
   @override
-  String get oneTimePaymentForWorldCup => 'دفعة واحدة لكأس العالم 2026';
+  String get oneTimePaymentForWorldCup => 'دفعة واحدة لالبطولة 2026';
 
   @override
   String get premiumFeaturesInclude => 'تشمل ميزات بريميوم:';
@@ -4077,7 +4077,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get doneButton => 'تم';
 
   @override
-  String get showWorldCupMatches => 'عرض مباريات كأس العالم';
+  String get showWorldCupMatches => 'عرض مباريات البطولة';
 
   @override
   String get showsMatchesOnDesc => 'مكانك مدرج كمكان لعرض المباريات';

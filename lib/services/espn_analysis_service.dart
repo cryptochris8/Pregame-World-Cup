@@ -115,7 +115,7 @@ class ESPNAnalysisService {
 
     // International rivalry/derby bonus
     if (_teamMatcher.isRivalryGame(homeTeam, awayTeam)) {
-      factor += 0.7; // Major rivalry bonus (World Cup rivalries draw huge interest)
+      factor += 0.7; // Major rivalry bonus (tournament rivalries draw huge interest)
     }
 
     // Knockout round / championship implications
@@ -168,9 +168,9 @@ class ESPNAnalysisService {
     return {'network': 'TBD', 'type': 'TV'};
   }
 
-  /// Estimate TV audience for a World Cup match based on various factors
+  /// Estimate TV audience for a tournament match based on various factors
   double estimateTvAudience(double crowdFactor, bool isRivalry, String? network) {
-    // World Cup matches draw massive global audiences
+    // tournament matches draw massive global audiences
     double baseAudience = 10.0; // Million US viewers baseline for World Cup
 
     // Network influence for US broadcast
@@ -224,7 +224,7 @@ class ESPNAnalysisService {
       storylines.add('Group Stage - Fight for Qualification');
     }
     if (notes.contains('final')) {
-      storylines.add('World Cup Final - The Biggest Match in Football');
+      storylines.add('Tournament Final - The Biggest Match in Football');
     }
 
     return storylines;

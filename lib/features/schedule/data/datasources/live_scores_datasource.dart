@@ -3,7 +3,7 @@ import '../../domain/entities/game_schedule.dart';
 import '../../../../core/services/logging_service.dart';
 
 /// Data source for fetching live soccer scores and match updates
-/// for World Cup 2026 matches via SportsData.io Soccer v4 API.
+/// for 2026 tournament matches via SportsData.io Soccer v4 API.
 abstract class LiveScoresDataSource {
   /// Fetch live scores for all current matches
   Future<List<GameSchedule>> getLiveScores();

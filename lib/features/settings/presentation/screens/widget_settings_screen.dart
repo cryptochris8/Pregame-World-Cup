@@ -352,7 +352,7 @@ class _WidgetSettingsScreenState extends State<WidgetSettingsScreen> {
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  'World Cup 2026',
+                  '2026 tournament',
                   style: theme.textTheme.titleSmall?.copyWith(
                     color: theme.colorScheme.onPrimaryContainer,
                     fontWeight: FontWeight.bold,

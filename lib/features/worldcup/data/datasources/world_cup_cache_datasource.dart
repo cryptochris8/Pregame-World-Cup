@@ -1,7 +1,7 @@
 import '../../../../core/services/cache_service.dart';
 import '../../domain/entities/entities.dart';
 
-/// Local cache data source for World Cup 2026 data
+/// Local cache data source for 2026 tournament data
 /// Uses Hive for fast local storage
 class WorldCupCacheDataSource {
   final CacheService _cacheService;

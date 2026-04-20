@@ -1,6 +1,6 @@
 /// Utility class for matching team names between API responses and user favorites.
 ///
-/// For World Cup 2026 the favorite team names are full country names
+/// For 2026 tournament the favorite team names are full country names
 /// (e.g., "United States", "Brazil"). This helper handles common aliases,
 /// short team codes, and case-insensitive matching so that schedule data
 /// from various sources can be reliably compared against the user's list.

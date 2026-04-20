@@ -1,4 +1,4 @@
-/// World Cup 2026 Repository Implementations
+/// 2026 tournament Repository Implementations
 ///
 /// This barrel file exports all World Cup repository implementations.
 library;

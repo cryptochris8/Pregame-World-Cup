@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-/// A beautifully written, expert-level pregame article for a World Cup match.
+/// A beautifully written, expert-level pregame article for a tournament match.
 ///
 /// Generated offline by the AI Sports Journalism Engine and bundled as local
 /// JSON in assets/data/worldcup/match_narratives/{TEAM1}_{TEAM2}.json.

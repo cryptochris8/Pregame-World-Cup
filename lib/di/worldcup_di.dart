@@ -17,7 +17,7 @@ import '../core/services/venue_photo_service.dart';
 import '../services/revenuecat_service.dart';
 import '../config/api_keys.dart';
 
-/// Step 9: World Cup 2026 data sources, repositories, cubits, and services.
+/// Step 9: 2026 tournament data sources, repositories, cubits, and services.
 void registerWorldCupServices(GetIt sl) {
   // Data Sources
   sl.registerLazySingleton<WorldCupApiDataSource>(

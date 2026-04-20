@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
 
-/// Displays the World Cup-specific head-to-head record between two teams.
+/// Displays the tournament-specific head-to-head record between two teams.
 class MatchupWorldCupRecord extends StatelessWidget {
   final int team1Wins;
   final int team2Wins;
@@ -37,7 +37,7 @@ class MatchupWorldCupRecord extends StatelessWidget {
               Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 16),
               SizedBox(width: 6),
               Text(
-                'World Cup Meetings',
+                'Tournament Meetings',
                 style: TextStyle(
                   color: AppTheme.accentGold,
                   fontWeight: FontWeight.bold,

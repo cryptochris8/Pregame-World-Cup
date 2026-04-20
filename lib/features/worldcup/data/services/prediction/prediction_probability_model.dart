@@ -58,7 +58,7 @@ class PredictionProbabilityModel {
   /// positional squad market values. Finally, evaluates all scorelines from
   /// 0-0 through 5-5 and returns the most probable one.
   ///
-  /// The base expected goals use the World Cup average of ~2.5 goals per
+  /// The base expected goals use the tournament average of ~2.5 goals per
   /// match, distributed according to each team's share of the outcome
   /// probabilities.
   static Map<String, int> predictScore(

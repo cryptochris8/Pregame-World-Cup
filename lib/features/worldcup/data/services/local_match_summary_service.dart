@@ -9,7 +9,7 @@ import '../../domain/entities/match_summary.dart';
 /// tactical previews, key storylines, player spotlights, predictions) is
 /// sourced from local JSON files bundled with the app. There are NO live API
 /// calls for this content. Research is conducted offline, written into JSON,
-/// and shipped with app updates as we approach World Cup 2026.
+/// and shipped with app updates as we approach 2026 tournament.
 ///
 /// Asset path: assets/data/worldcup/match_summaries/{TEAM1}_{TEAM2}.json
 /// File naming: team codes are sorted alphabetically (e.g. ARG_BRA, not BRA_ARG).

@@ -249,8 +249,8 @@ Key factors include possession control, set-piece quality, and goalkeeping form.
       'Spain': 'NRG Stadium',
     };
 
-    final venue = venueNames[homeTeam] ?? 'the designated World Cup venue';
+    final venue = venueNames[homeTeam] ?? 'the designated tournament venue';
 
-    return 'Playing at $venue provides a significant boost with passionate fan support, world-class facilities, and optimal match conditions. The atmosphere at World Cup venues can influence player performance and create an electrifying environment that elevates the intensity of every contest.';
+    return 'Playing at $venue provides a significant boost with passionate fan support, world-class facilities, and optimal match conditions. The atmosphere at tournament venues can influence player performance and create an electrifying environment that elevates the intensity of every contest.';
   }
 }

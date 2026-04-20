@@ -33,7 +33,7 @@ extension PredictionOutcomeExtension on PredictionOutcome {
       this == PredictionOutcome.correct || this == PredictionOutcome.incorrect;
 }
 
-/// User prediction for a World Cup match
+/// User prediction for a tournament match
 class MatchPrediction extends Equatable {
   /// Unique prediction ID
   final String predictionId;

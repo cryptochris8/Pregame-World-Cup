@@ -15,7 +15,7 @@ Map<String, dynamic> _parseJsonMap(String jsonString) {
 /// and bundled with the app. There are NO live API calls for this content.
 ///
 /// Covers all 16 host cities across USA (11), Mexico (3), and Canada (2) —
-/// the first World Cup spanning 3 countries.
+/// the first tournament spanning 3 countries.
 class FanZoneGuideService {
   static const String _assetPath =
       'assets/data/worldcup/fan_zone_guide.json';

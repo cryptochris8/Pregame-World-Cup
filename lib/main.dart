@@ -8,7 +8,7 @@ import 'app_initializer.dart';
 import 'app.dart';
 import 'core/services/logging_service.dart';
 
-/// Entry point for the Pregame World Cup app.
+/// Entry point for the Pregame app.
 ///
 /// All initialization logic lives in [initializeApp] (see `app_initializer.dart`).
 /// The widget tree is defined in [PregameApp] (see `app.dart`).

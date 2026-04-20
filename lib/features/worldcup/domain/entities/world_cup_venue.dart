@@ -7,7 +7,7 @@ import 'world_cup_venue_enums.dart';
 export 'world_cup_venue_enums.dart';
 export 'world_cup_venues_data.dart';
 
-/// WorldCupVenue entity representing a World Cup 2026 stadium
+/// WorldCupVenue entity representing a 2026 tournament stadium
 class WorldCupVenue extends Equatable {
   /// Unique venue ID
   final String venueId;

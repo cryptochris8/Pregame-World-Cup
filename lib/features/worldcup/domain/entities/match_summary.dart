@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-/// AI-generated match summary for a World Cup 2026 matchup
+/// AI-generated match summary for a 2026 tournament matchup
 class MatchSummary extends Equatable {
   /// Unique ID (team1Code_team2Code, alphabetically sorted)
   final String id;

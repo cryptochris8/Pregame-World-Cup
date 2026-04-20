@@ -11,7 +11,7 @@ class NearbyVenuesService {
   NearbyVenuesService({required PlacesApiDataSource placesDataSource})
       : _placesDataSource = placesDataSource;
 
-  /// Fetch nearby places around a World Cup venue
+  /// Fetch nearby places around a tournament venue
   /// Returns places sorted by distance from the stadium
   Future<List<NearbyVenueResult>> getNearbyVenues({
     required WorldCupVenue stadium,

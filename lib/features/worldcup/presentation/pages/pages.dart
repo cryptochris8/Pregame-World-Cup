@@ -1,4 +1,4 @@
-/// World Cup 2026 Pages
+/// 2026 tournament Pages
 ///
 /// This barrel file exports all World Cup page screens.
 library;

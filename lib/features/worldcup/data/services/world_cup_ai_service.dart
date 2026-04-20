@@ -2,7 +2,7 @@ import '../../../../core/services/logging_service.dart';
 import '../../domain/entities/entities.dart';
 import 'local_prediction_engine.dart';
 
-/// AI Service for World Cup match predictions and analysis
+/// AI Service for tournament match predictions and analysis
 ///
 /// Routes all prediction requests through [LocalPredictionEngine],
 /// which generates rich, data-driven predictions entirely from

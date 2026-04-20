@@ -1,4 +1,4 @@
-/// Enums and extensions for World Cup venue entities.
+/// Enums and extensions for tournament venue entities.
 library;
 
 /// Host country enum

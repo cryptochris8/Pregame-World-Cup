@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Pregame WC26</string>
+	<string>Pregame</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Pregame WC26</string>
+	<string>Pregame</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -42,20 +42,20 @@
 	
 	<!-- Location Services -->
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for World Cup 2026.</string>
+	<string>Pregame needs location access to find nearby watch parties, fan zones, and venues for the 2026 tournament.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Pregame World Cup needs location access to find nearby watch parties, fan zones, and venues for World Cup 2026.</string>
+	<string>Pregame needs location access to find nearby watch parties, fan zones, and venues for the 2026 tournament.</string>
 	<!-- Camera and Photo Library -->
 	<key>NSCameraUsageDescription</key>
-	<string>Pregame World Cup needs camera access to let you share photos from World Cup matches and fan zones.</string>
+	<string>Pregame needs camera access to let you share photos from tournament matches and fan zones.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Pregame World Cup needs photo library access to let you share photos from World Cup matches and fan zones.</string>
+	<string>Pregame needs photo library access to let you share photos from tournament matches and fan zones.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Pregame World Cup needs photo library access to save photos from World Cup matches and fan zones.</string>
+	<string>Pregame needs photo library access to save photos from tournament matches and fan zones.</string>
 	
 	<!-- Microphone for voice messages -->
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Pregame World Cup needs microphone access to record voice messages for your fellow fans.</string>
+	<string>Pregame needs microphone access to record voice messages for your fellow fans.</string>
 	
 	<!-- Network Usage - HTTPS only for App Store compliance -->
 	<key>NSAppTransportSecurity</key>
@@ -97,7 +97,7 @@
 
 	<!-- App Tracking Transparency (required for AdMob) -->
 	<key>NSUserTrackingUsageDescription</key>
-	<string>Pregame World Cup uses this identifier to provide personalized ads. You can choose to allow or deny tracking.</string>
+	<string>Pregame uses this identifier to provide personalized ads. You can choose to allow or deny tracking.</string>
 
 	<!-- Export Compliance -->
 	<key>ITSAppUsesNonExemptEncryption</key>

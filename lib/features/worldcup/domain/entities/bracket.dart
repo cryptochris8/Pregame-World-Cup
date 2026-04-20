@@ -580,7 +580,7 @@ class WorldCupBracket extends Equatable {
       'WorldCupBracket(R32: ${roundOf32.length}, R16: ${roundOf16.length}, QF: ${quarterFinals.length}, SF: ${semiFinals.length})';
 }
 
-/// Constants for World Cup 2026 knockout structure
+/// Constants for 2026 tournament knockout structure
 class BracketConstants {
   /// Number of Round of 32 matches
   static const int roundOf32Matches = 16;

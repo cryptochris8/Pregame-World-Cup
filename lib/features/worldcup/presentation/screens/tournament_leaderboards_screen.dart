@@ -132,7 +132,7 @@ class _TournamentLeaderboardsScreenState
                   ),
                 ),
                 Text(
-                  'World Cup 2026 Statistics',
+                  '2026 tournament Statistics',
                   style: TextStyle(
                     color: Colors.white60,
                     fontSize: 13,
@@ -492,13 +492,13 @@ extension LeaderboardTypeExtension on LeaderboardType {
   String get displayName {
     switch (this) {
       case LeaderboardType.wcGoals:
-        return 'World Cup Goals';
+        return 'Tournament Goals';
       case LeaderboardType.wcAssists:
-        return 'World Cup Assists';
+        return 'Tournament Assists';
       case LeaderboardType.caps:
         return 'International Caps';
       case LeaderboardType.wcAppearances:
-        return 'World Cup Appearances';
+        return 'Tournament Appearances';
       case LeaderboardType.marketValue:
         return 'Market Value';
     }

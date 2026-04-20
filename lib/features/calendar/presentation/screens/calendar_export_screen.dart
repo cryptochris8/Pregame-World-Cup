@@ -313,7 +313,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
     final result = await _calendarService.shareICalFile(
       widget.events,
       filename: 'world_cup_matches.ics',
-      calendarName: widget.title ?? 'World Cup 2026',
+      calendarName: widget.title ?? '2026 tournament',
     );
 
     if (!context.mounted) return;
@@ -327,7 +327,7 @@ class _CalendarExportScreenState extends State<CalendarExportScreen> {
     final result = await _calendarService.shareICalFile(
       widget.events,
       filename: 'world_cup_matches.ics',
-      calendarName: widget.title ?? 'World Cup 2026',
+      calendarName: widget.title ?? '2026 tournament',
     );
 
     if (!context.mounted) return;

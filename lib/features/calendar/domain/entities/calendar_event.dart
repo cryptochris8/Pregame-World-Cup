@@ -24,7 +24,7 @@ class CalendarEvent extends Equatable {
     this.metadata = const {},
   });
 
-  /// Create from a World Cup match
+  /// Create from a tournament match
   factory CalendarEvent.fromMatch({
     required String matchId,
     required String homeTeam,
@@ -113,7 +113,7 @@ class CalendarEvent extends Equatable {
     String? venue,
   }) {
     final buffer = StringBuffer();
-    buffer.writeln('World Cup 2026');
+    buffer.writeln('2026 tournament');
     buffer.writeln('$homeTeam vs $awayTeam');
     if (stage != null) buffer.writeln('Stage: $stage');
     if (venue != null) buffer.writeln('Venue: $venue');

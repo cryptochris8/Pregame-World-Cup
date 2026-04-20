@@ -77,7 +77,7 @@ Keep it concise and engaging for casual fans.
 
   Map<String, dynamic> _buildGameStats() {
     final stats = <String, dynamic>{
-      'gameType': 'World Cup',
+      'gameType': 'Tournament',
       'venue': 'Home game for ${widget.game.homeTeamName}',
     };
 
@@ -112,9 +112,9 @@ Keep it concise and engaging for casual fans.
 
   String _buildInsightsPrompt() {
     return '''
-Analyze this World Cup matchup: ${widget.game.awayTeamName} vs ${widget.game.homeTeamName}
+Analyze this tournament matchup: ${widget.game.awayTeamName} vs ${widget.game.homeTeamName}
 
-Game context: Match day ${widget.game.week ?? 'TBD'} of World Cup 2026
+Game context: Match day ${widget.game.week ?? 'TBD'} of 2026 tournament
 
 Provide 2-3 key factors that could determine the outcome:
 - What should fans watch for?

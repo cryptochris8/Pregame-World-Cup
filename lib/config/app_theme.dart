@@ -637,7 +637,7 @@ class AppTheme {
     }
   }
   
-  /// Get color for a World Cup 2026 national team (all 48 teams)
+  /// Get color for a 2026 tournament national team (all 48 teams)
   static Color getTeamColor(String teamName) {
     switch (teamName.toLowerCase()) {
       // CONMEBOL

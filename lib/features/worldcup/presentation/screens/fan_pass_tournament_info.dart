@@ -29,7 +29,7 @@ class FanPassTournamentInfo extends StatelessWidget {
           ),
           SizedBox(height: 8),
           Text(
-            'Your pass is valid for the entire World Cup 2026 tournament. No recurring charges or subscriptions.',
+            'Your pass is valid for the entire 2026 tournament tournament. No recurring charges or subscriptions.',
             style: TextStyle(
               color: AppTheme.textSecondary,
               fontSize: 14,

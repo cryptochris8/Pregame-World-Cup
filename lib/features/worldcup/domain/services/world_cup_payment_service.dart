@@ -11,7 +11,7 @@ import 'payment_models.dart';
 // Re-export all models so existing importers continue to work unchanged.
 export 'payment_models.dart';
 
-/// World Cup 2026 Payment Service
+/// 2026 tournament Payment Service
 /// Handles one-time purchases for Fan Passes and Venue Premium
 ///
 /// Consumer purchases (Fan Pass, Superfan Pass) now use RevenueCat for native IAP

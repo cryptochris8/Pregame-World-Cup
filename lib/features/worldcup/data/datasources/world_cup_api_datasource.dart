@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import '../../domain/entities/entities.dart';
 
-/// API Data Source for World Cup 2026 data
+/// API Data Source for 2026 tournament data
 /// Fetches data from SportsData.io Soccer API
 class WorldCupApiDataSource {
   final Dio _dio;
@@ -10,7 +10,7 @@ class WorldCupApiDataSource {
   // SportsData.io Soccer API base URL
   static const String _baseUrl = 'https://api.sportsdata.io/v4/soccer';
 
-  // Competition ID for World Cup 2026 (will need to be updated when available)
+  // Competition ID for 2026 tournament (will need to be updated when available)
   static const String _worldCupCompetitionId = 'WORLDCUP_2026';
 
   WorldCupApiDataSource({
@@ -24,7 +24,7 @@ class WorldCupApiDataSource {
     _dio.options.receiveTimeout = const Duration(seconds: 30);
   }
 
-  /// Fetches all World Cup 2026 matches
+  /// Fetches all 2026 tournament matches
   /// Returns empty list if API doesn't have WC2026 data yet (expected before tournament)
   Future<List<WorldCupMatch>> fetchAllMatches() async {
     try {
@@ -61,7 +61,7 @@ class WorldCupApiDataSource {
 
       if (response.statusCode == 200 && response.data != null) {
         final List<dynamic> data = response.data as List<dynamic>;
-        // Filter for World Cup matches only
+        // Filter for tournament matches only
         final matches = data
             .where((json) => json['Competition']?['CompetitionId'] == _worldCupCompetitionId)
             .map((json) => _parseMatch(json))
@@ -96,7 +96,7 @@ class WorldCupApiDataSource {
     }
   }
 
-  /// Fetches all national teams for World Cup 2026
+  /// Fetches all national teams for 2026 tournament
   /// Returns empty list if API doesn't have WC2026 data yet
   Future<List<NationalTeam>> fetchAllTeams() async {
     try {
@@ -170,7 +170,7 @@ class WorldCupApiDataSource {
 
       if (response.statusCode == 200 && response.data != null) {
         final List<dynamic> data = response.data as List<dynamic>;
-        // Filter for World Cup venues
+        // Filter for tournament venues
         final venues = data
             .where((json) => _isWorldCupVenue(json))
             .map((json) => _parseVenue(json))
@@ -295,7 +295,7 @@ class WorldCupApiDataSource {
     );
   }
 
-  // Check if venue is a World Cup venue
+  // Check if venue is a tournament venue
   bool _isWorldCupVenue(Map<String, dynamic> json) {
     final country = (json['Country'] as String?)?.toLowerCase() ?? '';
     return country.contains('united states') ||

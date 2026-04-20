@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-/// Cross-border travel intelligence for a World Cup 2026 host city.
+/// Cross-border travel intelligence for a 2026 tournament host city.
 ///
 /// Covers fan zones, transit, visa requirements, weather, and local tips
 /// for all 16 host cities across USA, Mexico, and Canada. This is the first

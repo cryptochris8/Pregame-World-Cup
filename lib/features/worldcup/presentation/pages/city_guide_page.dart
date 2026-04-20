@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
 import '../../domain/entities/fan_zone_guide.dart';
 
-/// Full-screen city guide for a World Cup 2026 host city.
+/// Full-screen city guide for a 2026 tournament host city.
 /// Shows stadium info, fan zones, transit, visa, weather, and local tips.
 class CityGuidePage extends StatelessWidget {
   final FanZoneGuide guide;

@@ -120,7 +120,7 @@ class MatchResponses {
     final buf = StringBuffer('$t1Name vs $t2Name — these two have history.\n\n');
     buf.writeln('Across $total meetings: $t1Name have won $t1Wins, $t2Name have won $t2Wins, with $draws draws.');
     if (wcMatches > 0) {
-      buf.writeln('They\'ve crossed paths $wcMatches times on the World Cup stage.');
+      buf.writeln('They\'ve crossed paths $wcMatches times on the tournament stage.');
     }
     if (lastMatch.isNotEmpty) {
       buf.writeln('Last time they met: ${formatDate(lastMatch)}');
@@ -227,7 +227,7 @@ class MatchResponses {
       );
     }
 
-    final buf = StringBuffer('World Cup 2026 — here\'s where the smart money is:\n\n');
+    final buf = StringBuffer('2026 tournament — here\'s where the smart money is:\n\n');
     for (var i = 0; i < favorites.length; i++) {
       final t = favorites[i];
       buf.writeln('${i + 1}. ${t['team']} — ${t['odds_american']} '
@@ -239,7 +239,7 @@ class MatchResponses {
 
     return ChatResponse(
       text: buf.toString().trim(),
-      suggestionChips: ['Top favorite outlook', 'Dark horses', 'World Cup history'],
+      suggestionChips: ['Top favorite outlook', 'Dark horses', 'tournament history'],
       resolvedIntent: intent,
     );
   }
@@ -284,7 +284,7 @@ class MatchResponses {
     }
 
     // Overview of all groups
-    final buf = StringBuffer('World Cup 2026 — all 48 teams, 12 groups. Here\'s the full draw:\n\n');
+    final buf = StringBuffer('2026 tournament — all 48 teams, 12 groups. Here\'s the full draw:\n\n');
     for (final letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L']) {
       final teams = _kb.getTeamsInGroup(letter);
       if (teams.isNotEmpty) {

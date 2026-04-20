@@ -12,7 +12,7 @@ import '../bloc/nearby_venues_cubit.dart';
 import '../widgets/widgets.dart';
 import '../../../venue_portal/venue_portal.dart';
 
-/// Detailed view of a World Cup match
+/// Detailed view of a tournament match
 class MatchDetailPage extends StatefulWidget {
   final WorldCupMatch match;
 

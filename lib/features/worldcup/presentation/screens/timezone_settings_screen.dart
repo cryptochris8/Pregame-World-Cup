@@ -144,7 +144,7 @@ class _TimezoneSettingsScreenState extends State<TimezoneSettingsScreen> {
                                   const SizedBox(width: 12),
                                   Expanded(
                                     child: Text(
-                                      'World Cup 2026 matches are played across 3 countries and 6 timezones. Choose how you want match times displayed.',
+                                      '2026 tournament matches are played across 3 countries and 6 timezones. Choose how you want match times displayed.',
                                       style: TextStyle(
                                         color: Colors.white.withValues(alpha:0.9),
                                         fontSize: 13,

@@ -1,6 +1,6 @@
-/// World Cup 2026 Data Sources
+/// 2026 tournament Data Sources
 ///
-/// This barrel file exports all World Cup data sources.
+/// This barrel file exports all tournament data sources.
 library;
 
 export 'world_cup_api_datasource.dart';

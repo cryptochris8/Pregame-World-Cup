@@ -14,7 +14,7 @@ import 'ai_insight_chip.dart';
 export 'match_row.dart';
 export 'ai_insight_chip.dart';
 
-/// Card displaying a World Cup match
+/// Card displaying a tournament match
 class MatchCard extends StatelessWidget {
   final WorldCupMatch match;
   final VoidCallback? onTap;

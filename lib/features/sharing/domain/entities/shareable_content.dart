@@ -82,7 +82,7 @@ class ShareablePrediction extends ShareableContent {
   String getShareText({bool includeUrl = true}) {
     final buffer = StringBuffer();
 
-    buffer.writeln('My World Cup 2026 Prediction');
+    buffer.writeln('My 2026 tournament Prediction');
     buffer.writeln('$homeTeam $predictedHomeScore - $predictedAwayScore $awayTeam');
 
     if (predictedWinner != null) {
@@ -169,7 +169,7 @@ class ShareableMatchResult extends ShareableContent {
     }
 
     buffer.writeln();
-    buffer.writeln('Follow the World Cup on Pregame!');
+    buffer.writeln('Follow the tournament on Pregame!');
 
     if (includeUrl) {
       buffer.writeln(shareUrl);
@@ -286,7 +286,7 @@ class ShareableBracket extends ShareableContent {
     super.imageUrl,
   }) : super(
           type: ShareableContentType.bracket,
-          title: "$userName's World Cup Bracket",
+          title: "$userName's Tournament Bracket",
           description: '$correctPredictions/$totalPredictions correct predictions',
         );
 
@@ -294,7 +294,7 @@ class ShareableBracket extends ShareableContent {
   String getShareText({bool includeUrl = true}) {
     final buffer = StringBuffer();
 
-    buffer.writeln('My World Cup 2026 Bracket');
+    buffer.writeln('My 2026 tournament Bracket');
     buffer.writeln();
     buffer.writeln('$correctPredictions/$totalPredictions predictions correct');
     buffer.writeln('Current Rank: #$rank');
@@ -338,7 +338,7 @@ class ShareableInvite extends ShareableContent {
   }) : super(
           type: ShareableContentType.invite,
           title: 'Join me on Pregame!',
-          description: 'The ultimate World Cup 2026 companion app',
+          description: 'The ultimate 2026 tournament companion app',
         );
 
   @override
@@ -347,7 +347,7 @@ class ShareableInvite extends ShareableContent {
 
     buffer.writeln('Join me on Pregame!');
     buffer.writeln();
-    buffer.writeln('The ultimate World Cup 2026 companion app:');
+    buffer.writeln('The ultimate 2026 tournament companion app:');
     buffer.writeln('- Live scores & match updates');
     buffer.writeln('- Create watch parties');
     buffer.writeln('- Make predictions');

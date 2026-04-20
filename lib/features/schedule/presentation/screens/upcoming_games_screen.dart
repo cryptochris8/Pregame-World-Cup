@@ -325,7 +325,7 @@ class _UpcomingGamesScreenState extends State<UpcomingGamesScreen>
           Icon(Icons.sports_soccer, size: 64, color: ThemeHelper.favoriteColor),
           const SizedBox(height: 16),
           const Text(
-            'Welcome to Pregame World Cup!',
+            'Welcome to Pregame!',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           ),
         ],

@@ -43,7 +43,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   bool _isPrivateProfile = false;
   bool _showOnlineStatus = true;
 
-  // World Cup 2026 qualified national teams (48 teams, alphabetical)
+  // 2026 tournament qualified national teams (48 teams, alphabetical)
   final List<String> _availableTeams = [
     'Argentina', 'Australia', 'Austria', 'Belgium', 'Bolivia', 'Brazil',
     'Cameroon', 'Canada', 'Chile', 'Colombia', 'Costa Rica', 'Croatia',

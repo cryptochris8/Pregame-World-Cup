@@ -141,7 +141,7 @@ class WorldCupTournament extends Equatable {
   }
 }
 
-/// Represents an all-time World Cup record
+/// Represents an all-time tournament record
 class WorldCupRecord extends Equatable {
   final String id;
   final String category;
@@ -195,7 +195,7 @@ class WorldCupRecord extends Equatable {
   }
 }
 
-/// Team's World Cup history summary
+/// Team's tournament history summary
 class TeamWorldCupHistory extends Equatable {
   final String teamCode;
   final String teamName;

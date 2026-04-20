@@ -1,7 +1,7 @@
 import '../entities/bracket.dart';
 import '../entities/world_cup_match.dart';
 
-/// Repository interface for World Cup Bracket (knockout stage) data
+/// Repository interface for Tournament Bracket (knockout stage) data
 abstract class BracketRepository {
   /// Fetches the complete knockout bracket
   Future<WorldCupBracket> getBracket();

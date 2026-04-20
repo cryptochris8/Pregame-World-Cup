@@ -23,7 +23,7 @@ class DatePickerStrip extends StatefulWidget {
 }
 
 class _DatePickerStripState extends State<DatePickerStrip> {
-  // World Cup 2026 dates: June 11, 2026 - July 19, 2026
+  // 2026 tournament dates: June 11, 2026 - July 19, 2026
   static final DateTime _tournamentStart = DateTime(2026, 6, 11);
   static final DateTime _tournamentEnd = DateTime(2026, 7, 19);
 

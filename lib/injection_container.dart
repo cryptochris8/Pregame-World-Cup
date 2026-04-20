@@ -65,13 +65,13 @@ Future<void> setupLocator() async {
       _diLog('DI STEP 8: Social & External Services - FAILED: $e');
     }
 
-    // Step 9: World Cup 2026 services
-    _diLog('DI STEP 9: World Cup 2026 Services');
+    // Step 9: 2026 tournament services
+    _diLog('DI STEP 9: 2026 tournament Services');
     try {
       registerWorldCupServices(sl);
-      _diLog('DI STEP 9: World Cup 2026 Services - SUCCESS');
+      _diLog('DI STEP 9: 2026 tournament Services - SUCCESS');
     } catch (e) {
-      _diLog('DI STEP 9: World Cup 2026 Services - FAILED: $e');
+      _diLog('DI STEP 9: 2026 tournament Services - FAILED: $e');
     }
 
     // Step 10: Watch Party services

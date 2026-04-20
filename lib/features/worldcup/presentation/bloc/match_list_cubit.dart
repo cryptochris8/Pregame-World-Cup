@@ -6,7 +6,7 @@ import '../../domain/entities/entities.dart';
 import '../../domain/repositories/world_cup_match_repository.dart';
 import 'match_list_state.dart';
 
-/// Cubit for managing World Cup match list state
+/// Cubit for managing tournament match list state
 class MatchListCubit extends Cubit<MatchListState> {
   final WorldCupMatchRepository _matchRepository;
   StreamSubscription<List<WorldCupMatch>>? _liveMatchesSubscription;

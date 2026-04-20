@@ -21,9 +21,9 @@ class CommonResponses {
   /// Generates a greeting response.
   ChatResponse greeting(ChatIntent intent) {
     return ChatResponse(
-      text: "Hey there! I'm Copa, your World Cup 2026 sidekick. I know all about "
+      text: "Hey there! I'm Copa, your 2026 tournament sidekick. I know all about "
           "the 48 teams, 104 matches, and 16 host cities. What would you like to know?",
-      suggestionChips: ['USA schedule', 'Who are the favorites?', 'World Cup history', 'Help'],
+      suggestionChips: ['USA schedule', 'Who are the favorites?', 'tournament history', 'Help'],
       resolvedIntent: intent,
     );
   }
@@ -31,7 +31,7 @@ class CommonResponses {
   /// Generates a thank you acknowledgment response.
   ChatResponse thanks(ChatIntent intent) {
     return ChatResponse(
-      text: "You're welcome! Let me know if you have any other World Cup questions.",
+      text: "You're welcome! Let me know if you have any other tournament questions.",
       suggestionChips: ['Tournament favorites', 'Match schedule', 'Team info'],
       resolvedIntent: intent,
     );
@@ -43,17 +43,17 @@ class CommonResponses {
       text: "I'm Copa, and I can help you with:\n"
           "- Match schedules and kickoff times\n"
           "- Team squads, managers, and tactics\n"
-          "- Player stats, comparisons, and World Cup records\n"
+          "- Player stats, comparisons, and tournament records\n"
           "- Head-to-head history between teams\n"
           "- Match previews and predictions\n"
           "- Squad market values and rankings\n"
           "- Recent form and momentum\n"
           "- Betting odds and tournament favorites\n"
           "- Injury updates\n"
-          "- World Cup 2026 countdown and tournament facts\n"
-          "- World Cup history (1930-2022)\n"
+          "- 2026 tournament countdown and tournament facts\n"
+          "- tournament history (1930-2022)\n"
           "- Host city and stadium info\n\n"
-          "Try asking \"Compare Messi and Mbappe\" or \"Countdown to World Cup\"!",
+          "Try asking \"Compare Messi and Mbappe\" or \"Countdown to Kickoff\"!",
       suggestionChips: ['Countdown', 'Most valuable squads', 'Compare Messi and Mbappe', 'Tournament facts'],
       resolvedIntent: intent,
     );
@@ -80,7 +80,7 @@ class CommonResponses {
     );
   }
 
-  /// Generates a countdown message to the World Cup.
+  /// Generates a countdown message to the tournament.
   ChatResponse countdown(ChatIntent intent) {
     final now = DateTime.now();
     final openingDay = DateTime(2026, 6, 11);
@@ -88,9 +88,9 @@ class CommonResponses {
 
     if (now.isAfter(finalDay)) {
       return ChatResponse(
-        text: "The 2026 World Cup has concluded! The final was held on July 19, 2026 "
+        text: "The 2026 tournament has concluded! The final was held on July 19, 2026 "
             "at MetLife Stadium in East Rutherford, New Jersey.",
-        suggestionChips: ['World Cup history', 'Tournament records'],
+        suggestionChips: ['tournament history', 'Tournament records'],
         resolvedIntent: intent,
       );
     }
@@ -98,7 +98,7 @@ class CommonResponses {
     if (now.isAfter(openingDay)) {
       final matchDay = now.difference(openingDay).inDays + 1;
       return ChatResponse(
-        text: "The World Cup is underway! We are on day $matchDay of the tournament. "
+        text: "The tournament is underway! We are on day $matchDay of the tournament. "
             "The final is on July 19 at MetLife Stadium.",
         suggestionChips: ["Today's matches", 'Tournament standings', 'Group results'],
         resolvedIntent: intent,
@@ -109,7 +109,7 @@ class CommonResponses {
     final weeksLeft = daysLeft ~/ 7;
     final remainingDays = daysLeft % 7;
 
-    final buf = StringBuffer('World Cup 2026 Countdown:\n\n');
+    final buf = StringBuffer('2026 tournament Countdown:\n\n');
     buf.writeln('$daysLeft days to go! ($weeksLeft weeks and $remainingDays days)');
     buf.writeln();
     buf.writeln('Opening match: June 11, 2026');
@@ -129,11 +129,11 @@ class CommonResponses {
 
   /// Generates interesting tournament facts.
   ChatResponse tournamentFacts(ChatIntent intent) {
-    final buf = StringBuffer('World Cup 2026 — Tournament Facts:\n\n');
+    final buf = StringBuffer('2026 tournament — Tournament Facts:\n\n');
     buf.writeln('Teams: 48 (expanded from 32 for the first time)');
     buf.writeln('Groups: 12 groups of 4 teams');
     buf.writeln('Matches: 104 total');
-    buf.writeln('Host countries: USA, Mexico, Canada (first tri-nation World Cup)');
+    buf.writeln('Host countries: USA, Mexico, Canada (first tri-nation tournament)');
     buf.writeln('Host cities: 16 across 3 countries');
     buf.writeln('Dates: June 11 - July 19, 2026');
     buf.writeln('Opening match: Mexico vs South Africa, Estadio Azteca');
@@ -147,7 +147,7 @@ class CommonResponses {
 
     return ChatResponse(
       text: buf.toString().trim(),
-      suggestionChips: ['Host cities', 'Group A', 'Tournament favorites', 'World Cup history'],
+      suggestionChips: ['Host cities', 'Group A', 'Tournament favorites', 'tournament history'],
       resolvedIntent: intent,
     );
   }
@@ -328,7 +328,7 @@ class CommonResponses {
     ];
     return ChatResponse(
       text: _pick(facts),
-      suggestionChips: ['Another fact', 'Tournament favorites', 'Countdown', 'World Cup history'],
+      suggestionChips: ['Another fact', 'Tournament favorites', 'Countdown', 'tournament history'],
       resolvedIntent: intent,
     );
   }

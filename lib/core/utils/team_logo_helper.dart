@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-/// Helper class for displaying World Cup 2026 national team flags.
+/// Helper class for displaying 2026 tournament national team flags.
 ///
 /// Uses emoji flags as the primary display method. Supports lookup by
 /// country code (e.g., 'USA', 'BRA') or full country name
 /// (e.g., 'United States', 'Brazil').
 class TeamLogoHelper {
   // ---------------------------------------------------------------------------
-  // Emoji flag mapping for all 48 World Cup 2026 qualified teams
+  // Emoji flag mapping for all 48 2026 tournament qualified teams
   // Keys are country codes.
   // ---------------------------------------------------------------------------
   static const Map<String, String> _countryCodeToFlag = {

@@ -1,6 +1,6 @@
 // Calendar Integration feature barrel file
 //
-// Provides calendar export and integration for World Cup matches.
+// Provides calendar export and integration for tournament matches.
 
 // Domain
 export 'domain/entities/calendar_event.dart';

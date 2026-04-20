@@ -375,7 +375,7 @@ class ManagerService {
               !honor.toLowerCase().contains('place')))
           .toList();
     } catch (e) {
-      LoggingService.error('Failed to get World Cup winning managers: $e', tag: _logTag);
+      LoggingService.error('Failed to get tournament winning managers: $e', tag: _logTag);
       return [];
     }
   }

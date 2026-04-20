@@ -41,7 +41,7 @@ class PlayerTeamResponses {
       final prediction = stats['worldCup2026Prediction'] as String?;
 
       final buf = StringBuffer('$name — $teamName\n\n');
-      buf.writeln('On the World Cup stage: $apps appearances, $goals goals, $assists assists.');
+      buf.writeln('On the tournament stage: $apps appearances, $goals goals, $assists assists.');
       if (wcs.isNotEmpty) buf.writeln('Tournament pedigree: $wcs');
       if (awards.isNotEmpty) buf.writeln('Honors: ${awards.join(', ')}');
       if (legacy != null) buf.writeln('Copa\'s legacy rating: $legacy/10');
@@ -65,7 +65,7 @@ class PlayerTeamResponses {
 
       return ChatResponse(
         text: buf.toString().trim(),
-        suggestionChips: ['$teamName schedule', '$teamName squad', 'World Cup records'],
+        suggestionChips: ['$teamName schedule', '$teamName squad', 'tournament records'],
         resolvedIntent: intent,
       );
     }
@@ -176,7 +176,7 @@ class PlayerTeamResponses {
 
     // General injury overview — show notable ones
     return ChatResponse(
-      text: "Injuries can make or break a World Cup campaign. Ask about a specific team — "
+      text: "Injuries can make or break a tournament campaign. Ask about a specific team — "
           "\"France injuries\" or \"Is Mbappe fit?\" — and I'll give you the latest.",
       suggestionChips: ['France injuries', 'England injuries', 'Brazil injuries'],
       resolvedIntent: intent,
@@ -352,7 +352,7 @@ class PlayerTeamResponses {
       );
     }
 
-    final buf = StringBuffer('World Cup 2026 — the richest squads in the tournament. Money doesn\'t guarantee the trophy, but it sure doesn\'t hurt:\n\n');
+    final buf = StringBuffer('2026 tournament — the richest squads in the tournament. Money doesn\'t guarantee the trophy, but it sure doesn\'t hurt:\n\n');
     for (var i = 0; i < withValues.length && i < 10; i++) {
       final t = withValues[i];
       final mvp = t['mostValuablePlayer'] as Map<String, dynamic>?;
@@ -403,7 +403,7 @@ class PlayerTeamResponses {
 
     // WC career stats if available
     if (stats1 != null || stats2 != null) {
-      buf.writeln('On the World Cup stage:');
+      buf.writeln('On the tournament stage:');
       if (stats1 != null) {
         buf.writeln('  $name1: ${stats1['worldCupAppearances'] ?? 0} apps, '
             '${stats1['worldCupGoals'] ?? 0} goals, ${stats1['worldCupAssists'] ?? 0} assists'

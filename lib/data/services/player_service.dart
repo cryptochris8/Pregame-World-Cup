@@ -338,7 +338,7 @@ class PlayerService {
     }
   }
 
-  /// Get World Cup veterans (players with most World Cup appearances)
+  /// Get World Cup veterans (players with most tournament appearances)
   Future<List<Player>> getWorldCupVeterans({int limit = 20}) async {
     try {
       final QuerySnapshot snapshot = await _firestore
@@ -351,7 +351,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      LoggingService.error('Failed to get World Cup veterans: $e', tag: _logTag);
+      LoggingService.error('Failed to get tournament veterans: $e', tag: _logTag);
       return [];
     }
   }
@@ -369,7 +369,7 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      LoggingService.error('Failed to get World Cup top scorers: $e', tag: _logTag);
+      LoggingService.error('Failed to get tournament top scorers: $e', tag: _logTag);
       return [];
     }
   }
@@ -387,18 +387,18 @@ class PlayerService {
           .map((doc) => Player.fromFirestore(doc))
           .toList();
     } catch (e) {
-      LoggingService.error('Failed to get World Cup top assists: $e', tag: _logTag);
+      LoggingService.error('Failed to get tournament top assists: $e', tag: _logTag);
       return [];
     }
   }
 
-  /// Get top players by goals per World Cup appearance ratio
+  /// Get top players by goals per tournament appearance ratio
   Future<List<Player>> getWorldCupBestRatios({int limit = 20}) async {
     try {
       // Fetch players with World Cup experience
       final allPlayers = await getAllPlayers();
 
-      // Filter to players with at least 3 World Cup appearances
+      // Filter to players with at least 3 tournament appearances
       final wcPlayers = allPlayers
           .where((p) => p.worldCupAppearances >= 3 && p.worldCupGoals > 0)
           .toList();
@@ -412,7 +412,7 @@ class PlayerService {
 
       return wcPlayers.take(limit).toList();
     } catch (e) {
-      LoggingService.error('Failed to get World Cup best ratios: $e', tag: _logTag);
+      LoggingService.error('Failed to get tournament best ratios: $e', tag: _logTag);
       return [];
     }
   }

@@ -8,7 +8,7 @@ import 'world_cup_match_extensions.dart';
 export 'world_cup_match_enums.dart';
 export 'world_cup_match_extensions.dart';
 
-/// WorldCupMatch entity representing a World Cup 2026 match
+/// WorldCupMatch entity representing a 2026 tournament match
 class WorldCupMatch extends Equatable {
   /// Unique match ID
   final String matchId;

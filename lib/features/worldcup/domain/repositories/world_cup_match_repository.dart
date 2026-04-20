@@ -1,8 +1,8 @@
 import '../entities/world_cup_match.dart';
 
-/// Repository interface for World Cup match data
+/// Repository interface for tournament match data
 abstract class WorldCupMatchRepository {
-  /// Fetches all matches for the World Cup 2026 tournament
+  /// Fetches all matches for the 2026 tournament tournament
   /// Returns a list of all 104 matches
   Future<List<WorldCupMatch>> getAllMatches();
 

@@ -49,8 +49,8 @@ class ShareButton extends StatelessWidget {
       contentId: matchId,
       title: '$homeTeam vs $awayTeam',
       description: matchDate != null
-          ? 'World Cup 2026 match on $matchDate'
-          : 'World Cup 2026 match',
+          ? '2026 tournament match on $matchDate'
+          : '2026 tournament match',
       imageUrl: imageUrl,
       showLabel: showLabel,
       iconColor: iconColor,
@@ -100,8 +100,8 @@ class ShareButton extends StatelessWidget {
       contentId: teamId,
       title: teamName,
       description: group != null
-          ? '$teamName - Group $group, World Cup 2026'
-          : '$teamName - World Cup 2026',
+          ? '$teamName - Group $group, 2026 tournament'
+          : '$teamName - 2026 tournament',
       imageUrl: imageUrl,
       showLabel: showLabel,
       iconColor: iconColor,
@@ -124,7 +124,7 @@ class ShareButton extends StatelessWidget {
       contentType: DeepLinkType.userProfile,
       contentId: usualId,
       title: displayName,
-      description: 'Check out $displayName on Pregame World Cup',
+      description: 'Check out $displayName on Pregame',
       imageUrl: imageUrl,
       showLabel: showLabel,
       iconColor: iconColor,

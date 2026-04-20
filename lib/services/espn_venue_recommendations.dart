@@ -1,7 +1,7 @@
 import 'package:pregame_world_cup/core/entities/game_intelligence.dart';
 
 /// Generates venue recommendations for watch parties and sports bars
-/// based on World Cup match analysis data.
+/// based on tournament match analysis data.
 class ESPNVenueRecommendationGenerator {
   /// Generate venue recommendations for watch parties and sports bars
   VenueRecommendations generateVenueRecommendations({
@@ -41,7 +41,7 @@ class ESPNVenueRecommendationGenerator {
 
   String _generateStaffingRecommendation(double crowdFactor) {
     if (crowdFactor >= 2.5) {
-      return 'Schedule 3x normal staff - expect exceptional crowds for this World Cup match';
+      return 'Schedule 3x normal staff - expect exceptional crowds for this tournament match';
     } else if (crowdFactor >= 2.0) {
       return 'Schedule 2x normal staff - high crowd expected for this match';
     } else if (crowdFactor >= 1.5) {
@@ -61,7 +61,7 @@ class ESPNVenueRecommendationGenerator {
 
     if (hasChampImplications) {
       specials.add('Knockout Round Special: Premium beer buckets & shareables');
-      specials.add('World Cup Final Watch Party Package');
+      specials.add('Tournament Final Watch Party Package');
     }
 
     specials.add('Match Day Brunch - catch morning kickoffs with breakfast specials');
@@ -95,9 +95,9 @@ class ESPNVenueRecommendationGenerator {
     } else if (isRivalry) {
       return 'Major international rivalry - promote as THE place to watch, themed decorations with both countries\' flags, fan contests';
     } else if (hasChampImplications) {
-      return 'Knockout stage drama - position as "the place to watch World Cup history unfold"';
+      return 'Knockout stage drama - position as "the place to watch tournament history unfold"';
     } else {
-      return 'Group stage match - promote World Cup atmosphere with international food & drink specials';
+      return 'Group stage match - promote tournament atmosphere with international food & drink specials';
     }
   }
 }

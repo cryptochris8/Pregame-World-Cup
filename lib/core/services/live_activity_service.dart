@@ -9,7 +9,7 @@ import '../../features/worldcup/domain/entities/world_cup_match.dart';
 import 'logging_service.dart';
 
 /// Service for managing iOS Live Activities and Dynamic Island
-/// for real-time World Cup match score tracking.
+/// for real-time tournament match score tracking.
 ///
 /// Live Activities appear on the Lock Screen and Dynamic Island,
 /// providing at-a-glance match information without opening the app.

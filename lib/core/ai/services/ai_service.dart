@@ -182,7 +182,7 @@ class AIService {
     required List<String> nearbyVenues,
   }) async {
     const systemMessage = '''
-You are a helpful assistant that recommends sports venues for World Cup fans.
+You are a helpful assistant that recommends sports venues for tournament fans.
 Consider the user's preferences, the game context, and nearby venues to provide personalized recommendations.
 Keep responses concise and focused on 1-2 top recommendations with brief explanations.
 ''';
@@ -236,7 +236,7 @@ Provide a brief prediction with key factors:
   /// Analyze user behavior patterns using AI
   Future<Map<String, dynamic>> analyzeUserBehavior(Map<String, dynamic> behaviorData) async {
     const systemMessage = '''
-You are an AI analytics expert that analyzes user behavior patterns for a World Cup fan app.
+You are an AI analytics expert that analyzes user behavior patterns for a tournament fan app.
 Analyze the provided user interaction data and generate insights about their preferences.
 Return a JSON response with team affinity scores, interaction patterns, preferred game types, and engagement metrics.
 ''';
@@ -290,7 +290,7 @@ Generate insights in this JSON format:
     int limit = 10,
   }) async {
     const systemMessage = '''
-You are an AI recommendation engine for World Cup matches.
+You are an AI recommendation engine for tournament matches.
 Rank upcoming games based on user preferences and behavior patterns.
 Consider team affinity, interaction patterns, and user engagement history.
 ''';
@@ -397,7 +397,7 @@ Provide prediction in JSON format:
     required Map<String, dynamic> context,
   }) async {
     const systemMessage = '''
-You are a venue recommendation expert helping World Cup fans find the best spots.
+You are a venue recommendation expert helping tournament fans find the best spots.
 Analyze venue data, user behavior, and game context to provide personalized recommendations.
 Consider factors like venue type, location, ratings, user preferences, and game predictions.
 ''';

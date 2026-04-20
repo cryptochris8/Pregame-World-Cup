@@ -120,7 +120,7 @@ class CalendarService {
     // iCal header
     buffer.writeln('BEGIN:VCALENDAR');
     buffer.writeln('VERSION:2.0');
-    buffer.writeln('PRODID:-//Pregame//World Cup 2026//EN');
+    buffer.writeln('PRODID:-//Pregame//2026 tournament//EN');
     buffer.writeln('CALSCALE:GREGORIAN');
     buffer.writeln('METHOD:PUBLISH');
     if (calendarName != null) {
@@ -196,7 +196,7 @@ class CalendarService {
 
       await Share.shareXFiles(
         [XFile(file.path)],
-        subject: calendarName ?? 'World Cup 2026 Calendar',
+        subject: calendarName ?? '2026 tournament Calendar',
       );
 
       return CalendarResult.success();
@@ -245,7 +245,7 @@ class CalendarService {
   ) async {
     try {
       final filename = '${teamCode.toLowerCase()}_matches.ics';
-      final calendarName = '$teamCode - World Cup 2026 Matches';
+      final calendarName = '$teamCode - 2026 tournament Matches';
 
       return await shareICalFile(
         matches,
@@ -266,7 +266,7 @@ class CalendarService {
       return await shareICalFile(
         matches,
         filename: 'my_team_matches.ics',
-        calendarName: 'My World Cup 2026 Matches',
+        calendarName: 'My 2026 tournament Matches',
       );
     } catch (e) {
       LoggingService.error('Error adding favorite matches: $e', tag: _logTag);
@@ -280,7 +280,7 @@ class CalendarService {
       return await shareICalFile(
         allMatches,
         filename: 'world_cup_2026_full.ics',
-        calendarName: 'World Cup 2026',
+        calendarName: '2026 tournament',
       );
     } catch (e) {
       LoggingService.error('Error exporting full calendar: $e', tag: _logTag);

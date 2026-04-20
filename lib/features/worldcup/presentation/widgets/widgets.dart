@@ -1,4 +1,4 @@
-/// World Cup 2026 Widgets
+/// 2026 tournament Widgets
 ///
 /// This barrel file exports all World Cup UI widgets.
 library;

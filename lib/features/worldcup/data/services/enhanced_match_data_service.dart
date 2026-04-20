@@ -17,7 +17,7 @@ Map<String, dynamic> parseJsonMap(String jsonString) {
 /// Provides:
 /// - Squad market values and rankings
 /// - Recent international form (last 5-10 matches per team)
-/// - Historical World Cup patterns and records
+/// - Historical tournament patterns and records
 /// - Confederation head-to-head records
 /// - Betting odds and predictions
 /// - Player injury/availability tracker

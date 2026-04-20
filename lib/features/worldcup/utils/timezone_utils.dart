@@ -13,7 +13,7 @@ enum TimezoneDisplayMode {
   both,
 }
 
-/// Utility class for handling timezone conversions for World Cup matches
+/// Utility class for handling timezone conversions for tournament matches
 class TimezoneUtils {
   TimezoneUtils._();
 
@@ -151,7 +151,7 @@ class TimezoneUtils {
 
   /// Get timezone abbreviation from IANA timezone name
   static String _getTimezoneAbbreviationFromName(String timezoneName) {
-    // Map common World Cup venue timezones to abbreviations
+    // Map common tournament venue timezones to abbreviations
     // Use the timezone abbreviation from the TZDateTime
     final now = DateTime.now();
     final location = getLocation(timezoneName);
@@ -190,7 +190,7 @@ class TimezoneUtils {
     final hours = offset.inHours;
 
     // Map common offsets to timezone names
-    // This is US-centric for World Cup 2026
+    // This is US-centric for 2026 tournament
     switch (hours) {
       case -5:
         return 'America/New_York';
@@ -320,7 +320,7 @@ class TimezoneUtils {
     }
   }
 
-  /// List of all World Cup 2026 venue timezones for settings UI
+  /// List of all 2026 tournament venue timezones for settings UI
   static const List<Map<String, String>> worldCupTimezones = [
     {'name': 'America/New_York', 'label': 'Eastern Time (New York, Miami, Philadelphia)'},
     {'name': 'America/Chicago', 'label': 'Central Time (Houston, Dallas, Kansas City)'},

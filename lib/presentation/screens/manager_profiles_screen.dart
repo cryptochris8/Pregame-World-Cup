@@ -7,7 +7,7 @@ import 'manager_detail_screen.dart';
 import '../../core/animations/page_transitions.dart';
 
 /// Manager Profiles Screen
-/// Displays all 48 World Cup 2026 managers with filtering and search
+/// Displays all 48 2026 tournament managers with filtering and search
 class ManagerProfilesScreen extends StatefulWidget {
   const ManagerProfilesScreen({super.key});
 

@@ -9,7 +9,7 @@ import 'group_standings_page.dart';
 import 'bracket_page.dart';
 import 'teams_page.dart';
 
-/// Main home page for World Cup 2026 feature
+/// Main home page for 2026 tournament feature
 class WorldCupHomePage extends StatefulWidget {
   const WorldCupHomePage({super.key});
 
@@ -375,7 +375,7 @@ class WorldCupDashboardPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'World Cup 2026',
+              '2026 tournament',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

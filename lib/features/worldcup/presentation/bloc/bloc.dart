@@ -1,4 +1,4 @@
-/// World Cup 2026 BLoC/Cubit Exports
+/// 2026 tournament BLoC/Cubit Exports
 ///
 /// This barrel file exports all World Cup state management components.
 library;

@@ -1,11 +1,11 @@
-/// Pre-defined World Cup 2026 venue data.
+/// Pre-defined 2026 tournament venue data.
 ///
 /// Contains static venue definitions for all 16 host stadiums.
 library;
 
 import 'world_cup_venue.dart';
 
-/// Pre-defined World Cup 2026 venues
+/// Pre-defined 2026 tournament venues
 class WorldCupVenues {
   static const List<WorldCupVenue> all = [
     // United States venues
@@ -224,7 +224,7 @@ class WorldCupVenues {
       hasRoof: false,
       keyMatches: ['Opening Match'],
       matchCount: 6,
-      description: 'Only stadium to host 3 World Cup tournaments (1970, 1986, 2026)',
+      description: 'Only stadium to host 3 tournament hostings (1970, 1986, 2026)',
     ),
     WorldCupVenue(
       venueId: 'akron',

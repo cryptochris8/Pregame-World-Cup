@@ -5,7 +5,7 @@ import '../../data/services/chatbot_knowledge_base.dart';
 import 'intent_classifier.dart';
 import 'response_generator.dart';
 
-/// Local knowledge-powered chatbot service for the Pregame World Cup assistant.
+/// Local knowledge-powered chatbot service for the Pregame assistant.
 ///
 /// Uses [ChatbotKnowledgeBase] to answer questions from 318 JSON data files.
 /// Zero API calls, sub-50ms response times.
@@ -88,15 +88,15 @@ class ChatbotService {
 
   /// The welcome message shown when the chat first opens.
   static const String welcomeMessage =
-      "Hey! I'm Copa, your World Cup 2026 sidekick. I know all about "
-      "the 48 teams, 104 matches, players, odds, and World Cup history. "
+      "Hey! I'm Copa, your 2026 tournament sidekick. I know all about "
+      "the 48 teams, 104 matches, players, odds, and tournament history. "
       "What would you like to know?";
 
   /// Suggestion chips shown with the welcome message.
   static const List<String> welcomeSuggestions = [
     'USA schedule',
     'Who are the favorites?',
-    'Countdown to World Cup',
+    'Countdown to Kickoff',
     'Help',
   ];
 }

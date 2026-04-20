@@ -5,7 +5,7 @@ import '../../services/logging_service.dart';
 /// AI Historical Knowledge Service
 ///
 /// This service builds a comprehensive knowledge base of historical sports
-/// data for AI analysis. Used for World Cup 2026 match predictions.
+/// data for AI analysis. Used for 2026 tournament match predictions.
 class AIHistoricalKnowledgeService {
   static AIHistoricalKnowledgeService? _instance;
   static AIHistoricalKnowledgeService get instance => _instance ??= AIHistoricalKnowledgeService._();
@@ -14,7 +14,7 @@ class AIHistoricalKnowledgeService {
 
   final CacheService _cacheService = CacheService.instance;
 
-  // Historical seasons for World Cup data
+  // Historical seasons for tournament data
   static const List<int> _allHistoricalSeasons = [2022, 2023, 2024, 2025, 2026];
 
   // Cache duration for historical data (never expires since historical data doesn't change)

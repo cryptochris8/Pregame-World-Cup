@@ -6,7 +6,7 @@ import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
-/// Bracket tab content for the World Cup home screen.
+/// Bracket tab content for the tournament home screen.
 /// Displays the knockout stage bracket with round-by-round sections.
 class BracketTab extends StatelessWidget {
   const BracketTab({super.key});

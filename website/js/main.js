@@ -1,4 +1,4 @@
-// World Cup 2026 Teams Data (using ISO country codes for flag images)
+// Tournament Teams Data (using ISO country codes for flag images)
 const worldCupTeams = [
     // CONCACAF
     { name: 'USA', code: 'us', confederation: 'CONCACAF' },

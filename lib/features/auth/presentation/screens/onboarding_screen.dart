@@ -191,7 +191,7 @@ class _WelcomePage extends StatelessWidget {
 
           // Description
           const Text(
-            'Your ultimate companion for the 2026 World Cup.',
+            'Your ultimate companion for soccer\'s biggest summer.',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: AppTheme.textLight,

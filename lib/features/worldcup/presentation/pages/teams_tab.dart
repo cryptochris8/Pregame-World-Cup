@@ -6,7 +6,7 @@ import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
-/// Teams tab content for the World Cup home screen.
+/// Teams tab content for the tournament home screen.
 /// Displays all 48 teams with favorites filtering, sort options,
 /// and confederation filters.
 class TeamsTab extends StatefulWidget {

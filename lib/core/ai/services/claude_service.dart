@@ -92,7 +92,7 @@ class ClaudeService {
     required Map<String, dynamic> gameContext,
   }) async {
     const systemMessage = '''
-You are an expert international soccer analyst with decades of experience covering World Cup and major tournaments.
+You are an expert international soccer analyst with decades of experience covering major international tournaments.
 Provide comprehensive match analysis that goes beyond surface statistics to examine:
 
 1. Strategic matchups and tactical considerations

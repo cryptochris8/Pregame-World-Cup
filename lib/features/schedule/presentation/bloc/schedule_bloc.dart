@@ -203,12 +203,12 @@ class ScheduleBloc extends Bloc<ScheduleEvent, ScheduleState> {
     final hour = now.hour;
     final month = now.month;
     
-    // World Cup 2026: June 11 through July 19
+    // 2026 tournament: June 11 through July 19
     final isWorldCupSeason = (month == 6 && now.day >= 11) || month == 7 && now.day <= 19;
     if (!isWorldCupSeason) return false;
 
-    // World Cup matches can be any day of the week
-    // Game hours: 11 AM - 11 PM ET (typical World Cup match times in US)
+    // tournament matches can be any day of the week
+    // Game hours: 11 AM - 11 PM ET (typical tournament match times in US)
     final isGameTime = hour >= 11 && hour <= 23;
 
     return isGameTime;

@@ -8,7 +8,7 @@ import '../../../worldcup/domain/entities/world_cup_match.dart';
 import '../../../worldcup/domain/repositories/world_cup_match_repository.dart';
 import '../../../worldcup/presentation/widgets/team_flag.dart';
 
-/// Screen for selecting a World Cup match for a watch party
+/// Screen for selecting a tournament match for a watch party
 class GameSelectorScreen extends StatefulWidget {
   const GameSelectorScreen({super.key});
 

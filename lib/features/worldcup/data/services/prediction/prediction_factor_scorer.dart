@@ -238,7 +238,7 @@ class PredictionFactorScorer {
     return tanh((awayImpact - homeImpact) / 3.0);
   }
 
-  /// Factor 10: Confederation historical record at World Cups
+  /// Factor 10: Confederation historical record at tournaments
   ///
   /// Looks up the head-to-head record between the two teams' confederations
   /// from `confederation_records.json` and scores based on historical win

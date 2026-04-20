@@ -3,9 +3,9 @@ import 'package:pregame_world_cup/core/services/logging_service.dart';
 import 'package:pregame_world_cup/features/schedule/domain/entities/game_schedule.dart';
 import 'package:pregame_world_cup/services/espn_service.dart';
 
-/// ESPN Schedule Data Source for World Cup 2026
+/// ESPN Schedule Data Source for 2026 tournament
 /// Wraps ESPNService (soccer endpoints) for supplemental match data and analysis.
-/// Primary World Cup 2026 match data comes from SportsData.io and Firebase.
+/// Primary 2026 tournament match data comes from SportsData.io and Firebase.
 /// This data source provides ESPN soccer data for AI analysis and historical context.
 class ESPNScheduleDataSource {
   final ESPNService _espnService;
@@ -21,7 +21,7 @@ class ESPNScheduleDataSource {
   }) : _espnService = espnService ?? ESPNService(),
        _cacheService = cacheService ?? CacheService.instance;
 
-  /// Fetch upcoming World Cup matches from ESPN Soccer API with caching
+  /// Fetch upcoming tournament matches from ESPN Soccer API with caching
   Future<List<GameSchedule>> fetchUpcomingGames({int limit = 10}) async {
     final cacheKey = 'espn_upcoming_games_$limit';
 
@@ -40,7 +40,7 @@ class ESPNScheduleDataSource {
         final gamesMaps = games.map((game) => game.toMap()).toList();
         await _cacheService.set(cacheKey, gamesMaps, duration: _upcomingGamesCacheDuration);
 
-        LoggingService.info('ESPN DataSource: Fetched ${games.length} upcoming World Cup matches');
+        LoggingService.info('ESPN DataSource: Fetched ${games.length} upcoming tournament matches');
 
         return games;
       } else {
@@ -52,7 +52,7 @@ class ESPNScheduleDataSource {
     }
   }
 
-  /// Fetch World Cup 2026 full schedule from ESPN Soccer API with caching
+  /// Fetch 2026 tournament full schedule from ESPN Soccer API with caching
   /// The tournament runs June 11 - July 19, 2026 with 104 matches
   Future<List<GameSchedule>> fetch2025SeasonSchedule({int limit = 100}) async {
     final cacheKey = 'espn_2025_season_schedule_$limit';
@@ -64,7 +64,7 @@ class ESPNScheduleDataSource {
         return cachedGames.map((e) => GameSchedule.fromMap(e as Map<String, dynamic>)).toList();
       }
 
-      // Fetch from ESPN Soccer API (World Cup 2026 schedule)
+      // Fetch from ESPN Soccer API (2026 tournament schedule)
       final games = await _espnService.get2025Schedule(limit: limit);
 
       if (games.isNotEmpty) {
@@ -72,19 +72,19 @@ class ESPNScheduleDataSource {
         final gamesMaps = games.map((game) => game.toMap()).toList();
         await _cacheService.set(cacheKey, gamesMaps, duration: _fullScheduleCacheDuration);
 
-        LoggingService.info('ESPN DataSource: Fetched ${games.length} World Cup 2026 matches');
+        LoggingService.info('ESPN DataSource: Fetched ${games.length} 2026 tournament matches');
 
         return games;
       } else {
         return [];
       }
     } catch (e) {
-      LoggingService.error('ESPN DataSource error fetching World Cup schedule: $e');
+      LoggingService.error('ESPN DataSource error fetching tournament schedule: $e');
       return [];
     }
   }
 
-  /// Fetch historical World Cup schedule from ESPN Soccer API with caching
+  /// Fetch historical tournament schedule from ESPN Soccer API with caching
   /// Supports previous World Cup years (2018, 2022) and qualifiers (2025)
   /// Returns complete tournament data including scores and match results
   Future<List<GameSchedule>> fetchHistoricalSeasonSchedule(int year, {int limit = 500}) async {
@@ -97,7 +97,7 @@ class ESPNScheduleDataSource {
         return cachedGames.map((e) => GameSchedule.fromMap(e as Map<String, dynamic>)).toList();
       }
 
-      // Fetch from ESPN Soccer API using historical World Cup data
+      // Fetch from ESPN Soccer API using historical tournament data
       final games = await _espnService.getScheduleForYear(year, limit: limit);
 
       if (games.isNotEmpty) {
@@ -109,14 +109,14 @@ class ESPNScheduleDataSource {
         final completedGames = games.where((game) =>
           game.awayScore != null && game.homeScore != null).length;
 
-        LoggingService.info('ESPN DataSource: Fetched ${games.length} matches for $year World Cup ($completedGames with scores)');
+        LoggingService.info('ESPN DataSource: Fetched ${games.length} matches for $year tournament ($completedGames with scores)');
 
         return games;
       } else {
         return [];
       }
     } catch (e) {
-      LoggingService.error('ESPN DataSource error fetching $year World Cup data: $e');
+      LoggingService.error('ESPN DataSource error fetching $year tournament data: $e');
       return [];
     }
   }

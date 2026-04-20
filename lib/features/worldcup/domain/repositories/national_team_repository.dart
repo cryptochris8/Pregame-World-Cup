@@ -2,7 +2,7 @@ import '../entities/national_team.dart';
 
 /// Repository interface for National Team data
 abstract class NationalTeamRepository {
-  /// Fetches all qualified teams for World Cup 2026 (48 teams)
+  /// Fetches all qualified teams for 2026 tournament (48 teams)
   Future<List<NationalTeam>> getAllTeams();
 
   /// Fetches teams by confederation (UEFA, CONMEBOL, etc.)
@@ -23,7 +23,7 @@ abstract class NationalTeamRepository {
   /// Searches teams by name or code
   Future<List<NationalTeam>> searchTeams(String query);
 
-  /// Fetches teams that have won World Cups before
+  /// Fetches teams that have won tournaments before
   Future<List<NationalTeam>> getPreviousChampions();
 
   /// Updates a team's information

@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-/// Manager model representing a World Cup 2026 manager/coach
+/// Manager model representing a 2026 tournament manager/coach
 /// Corresponds to the manager data in Firestore
 class Manager {
   final String managerId;

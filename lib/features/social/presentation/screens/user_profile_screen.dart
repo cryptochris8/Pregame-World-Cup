@@ -243,7 +243,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
 
     final jsonString = const JsonEncoder.withIndent('  ').convert(data);
 
-    await Share.share(jsonString, subject: 'Pregame World Cup - My Data Export');
+    await Share.share(jsonString, subject: 'Pregame - My Data Export');
   }
 
   Future<void> _signOut() async {

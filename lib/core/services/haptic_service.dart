@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../../features/match_chat/domain/entities/match_chat.dart';
 import 'logging_service.dart';
 
-/// Service for providing haptic feedback during World Cup match events.
+/// Service for providing haptic feedback during tournament match events.
 ///
 /// Creates distinct vibration patterns for different match moments:
 /// goals, cards, penalties, whistles, etc. Only triggers on iOS/Android.

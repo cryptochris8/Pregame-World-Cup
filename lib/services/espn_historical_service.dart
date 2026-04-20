@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 
 /// World Cup historical matchup intelligence service.
-/// Contains famous World Cup matches, international rivalries, tournament records,
-/// and historical context for World Cup 2026 match analysis.
+/// Contains famous tournament matches, international rivalries, tournament records,
+/// and historical context for 2026 tournament match analysis.
 class ESPNHistoricalService {
 
   // Historical matchup records for major international soccer rivalries
@@ -19,8 +19,8 @@ class ESPNHistoricalService {
       'significance': 'The greatest rivalry in international football',
       'key_facts': [
         'Most passionate fan bases in world football',
-        'World Cup meetings always draw 1B+ global viewers',
-        'Argentina won 2022 World Cup; Brazil has 5 titles',
+        'tournament meetings always draw 1B+ global viewers',
+        'Argentina won 2022 tournament; Brazil has 5 titles',
         'Historic 1990 WC Round of 16: Argentina stunned Brazil'
       ]
     },
@@ -33,7 +33,7 @@ class ESPNHistoricalService {
         'significance': 'England exorcised decades of tournament heartbreak vs Germany'
       },
       'rivalry_name': 'Football\'s Greatest Rivalry',
-      'significance': 'Decades of World Cup drama between two powerhouses',
+      'significance': 'Decades of tournament drama between two powerhouses',
       'key_facts': [
         '1966 WC Final: England 4-2 Germany (Geoff Hurst hat-trick)',
         '1990 WC Semi: Germany won on penalties (Gazza\'s tears)',
@@ -55,7 +55,7 @@ class ESPNHistoricalService {
         '1974 WC Final: Germany 2-1 Netherlands (Cruyff denied)',
         '1988 Euro Semi: Netherlands 2-1 Germany (Van Basten magic)',
         'Political and cultural dimensions beyond football',
-        'Always produces memorable World Cup encounters'
+        'Always produces memorable tournament encounters'
       ]
     },
     'Argentina_England': {
@@ -67,12 +67,12 @@ class ESPNHistoricalService {
         'significance': 'Beckham redeemed himself with penalty winner'
       },
       'rivalry_name': 'The Hand of God Rivalry',
-      'significance': 'Historic World Cup rivalry with political undertones',
+      'significance': 'Historic tournament rivalry with political undertones',
       'key_facts': [
         '1986 WC QF: Maradona\'s "Hand of God" and "Goal of the Century"',
         '1998 WC R16: Argentina won on penalties (Beckham red card)',
         'Falklands War added geopolitical dimension to rivalry',
-        'Every World Cup meeting becomes an instant classic'
+        'Every tournament meeting becomes an instant classic'
       ]
     },
     'Brazil_Germany': {
@@ -84,11 +84,11 @@ class ESPNHistoricalService {
         'significance': 'Brazil seeking partial redemption after 7-1'
       },
       'rivalry_name': 'The 7-1 Rivals',
-      'significance': 'Defined by the most shocking World Cup result ever',
+      'significance': 'Defined by the most shocking tournament result ever',
       'key_facts': [
         '2002 WC Final: Brazil 2-0 Germany (Ronaldo brace)',
         '2014 WC Semi: Germany 7-1 Brazil (Mineirazo - greatest WC shock)',
-        'Combined 14 World Cup titles between them',
+        'Combined 14 tournament titles between them',
         'Two of the most successful football nations in history'
       ]
     },
@@ -101,12 +101,12 @@ class ESPNHistoricalService {
         'significance': 'Henry\'s goal ended Brazil\'s title defense'
       },
       'rivalry_name': 'Le Classique Mondial',
-      'significance': 'World Cup giants with dramatic tournament history',
+      'significance': 'tournament giants with dramatic tournament history',
       'key_facts': [
         '1998 WC Final: France 3-0 Brazil (Zidane masterclass)',
         '2006 WC QF: France 1-0 Brazil (end of the Ronaldinho era)',
         '1986 WC QF: France 1-1 Brazil, France won on penalties',
-        'Combined 8 World Cup titles'
+        'Combined 8 tournament titles'
       ]
     },
     'France_Italy': {
@@ -118,7 +118,7 @@ class ESPNHistoricalService {
         'significance': 'Italy failed to qualify for 2018 WC'
       },
       'rivalry_name': 'The Mediterranean Derby',
-      'significance': 'European neighbors with World Cup Final drama',
+      'significance': 'European neighbors with Tournament Final drama',
       'key_facts': [
         '2006 WC Final: Italy beat France on penalties (Zidane headbutt)',
         '2000 Euro Final: France 2-1 Italy (golden goal drama)',
@@ -135,7 +135,7 @@ class ESPNHistoricalService {
         'significance': 'Hummels own goal decided a tight contest'
       },
       'rivalry_name': 'Le Classique Europeen',
-      'significance': 'European powerhouses with deep World Cup history',
+      'significance': 'European powerhouses with deep tournament history',
       'key_facts': [
         '1982 WC Semi: Germany 3-3 France, Germany won on penalties',
         '1986 WC Semi: France 2-0 Germany',
@@ -155,7 +155,7 @@ class ESPNHistoricalService {
       'significance': 'North America\'s fiercest football rivalry, amplified by 2026 co-hosting',
       'key_facts': [
         '2002 WC R16: USA 2-0 Mexico (the original "Dos a Cero")',
-        'Both nations co-hosting World Cup 2026',
+        'Both nations co-hosting 2026 tournament',
         'Rivalry has intensified since 2000s',
         'Matches draw massive TV audiences across North America'
       ]
@@ -186,12 +186,12 @@ class ESPNHistoricalService {
         'significance': 'Japan asserting recent dominance'
       },
       'rivalry_name': 'The East Asian Derby',
-      'significance': 'Asia\'s biggest football rivalry, co-hosted 2002 World Cup',
+      'significance': 'Asia\'s biggest football rivalry, co-hosted 2002 tournament',
       'key_facts': [
-        'Co-hosted 2002 World Cup together',
+        'Co-hosted 2002 tournament together',
         'Both reached knockout rounds in 2022 WC',
         'Historical and cultural rivalry beyond football',
-        'Both emerging as consistent World Cup contenders'
+        'Both emerging as consistent tournament contenders'
       ]
     },
     'Ghana_Uruguay': {
@@ -203,7 +203,7 @@ class ESPNHistoricalService {
         'significance': 'Both eliminated despite Uruguay win; Ghana denied revenge'
       },
       'rivalry_name': 'The Suarez Handball Rivalry',
-      'significance': 'Born from one of the most infamous moments in World Cup history',
+      'significance': 'Born from one of the most infamous moments in tournament history',
       'key_facts': [
         '2010 WC QF: Uruguay beat Ghana on penalties after Suarez handball',
         'Suarez deliberately blocked a goal-bound header on the line',
@@ -219,13 +219,13 @@ class ESPNHistoricalService {
         'location': 'Lusail, Qatar region',
         'significance': 'Messi-era Argentina showing their class'
       },
-      'rivalry_name': 'World Cup Final Rivals',
-      'significance': 'Met in three World Cup Finals (1986, 1990, 2014)',
+      'rivalry_name': 'Tournament Final Rivals',
+      'significance': 'Met in three Tournament Finals (1986, 1990, 2014)',
       'key_facts': [
         '1986 WC Final: Argentina 3-2 Germany (Maradona\'s tournament)',
         '1990 WC Final: Germany 1-0 Argentina (Brehme penalty)',
         '2014 WC Final: Germany 1-0 Argentina AET (Gotze winner)',
-        'Three World Cup Final meetings - more than any other pairing'
+        'Three Tournament Final meetings - more than any other pairing'
       ]
     },
     'Belgium_Netherlands': {
@@ -271,11 +271,11 @@ class ESPNHistoricalService {
         'significance': 'Germany broke Italy\'s long unbeaten record in this fixture'
       },
       'rivalry_name': 'The Classic European Rivalry',
-      'significance': 'Seven World Cup titles between them',
+      'significance': 'Seven tournament titles between them',
       'key_facts': [
         '1970 WC Semi: Italy 4-3 Germany AET (Game of the Century)',
         '2006 WC Semi: Italy 2-0 Germany (Grosso & Del Piero in ET)',
-        'Combined 8 World Cup titles (Italy 4, Germany 4)',
+        'Combined 8 tournament titles (Italy 4, Germany 4)',
         'Italy historically had the upper hand in tournaments'
       ]
     },
@@ -293,7 +293,7 @@ class ESPNHistoricalService {
         '2010 WC: Spain 1-0 elimination of a stubborn Italian side',
         '2012 Euro Final: Spain 4-0 Italy (total domination)',
         'Both play possession-based football philosophies',
-        'Combined 5 World Cup titles'
+        'Combined 5 tournament titles'
       ]
     },
     'Argentina_Uruguay': {
@@ -308,9 +308,9 @@ class ESPNHistoricalService {
       'significance': 'The oldest international football rivalry in the world',
       'key_facts': [
         'First played in 1902 - oldest international rivalry',
-        'Uruguay won first ever World Cup in 1930 (beat Argentina in Final)',
+        'Uruguay won first tournament in 1930 (beat Argentina in Final)',
         '1930 WC Final: Uruguay 4-2 Argentina in Montevideo',
-        'Combined 4 World Cup titles'
+        'Combined 4 tournament titles'
       ]
     },
     'Brazil_Uruguay': {
@@ -322,23 +322,23 @@ class ESPNHistoricalService {
         'significance': 'Uruguay shocked Brazil in qualifying'
       },
       'rivalry_name': 'The Maracanazo Rivalry',
-      'significance': 'Defined by the greatest upset in World Cup history',
+      'significance': 'Defined by the greatest upset in tournament history',
       'key_facts': [
         '1950 WC Final: Uruguay 2-1 Brazil (the Maracanazo)',
         'Uruguay stunned 200,000 fans at the Maracana',
         'Brazil\'s greatest football trauma',
-        'Both South American giants with storied World Cup pasts'
+        'Both South American giants with storied tournament pasts'
       ]
     },
   };
 
-  // World Cup 2026 team storylines and narratives
+  // 2026 tournament team storylines and narratives
   static const Map<String, List<String>> _currentSeasonStorylines = {
     'Argentina': [
-      'Defending World Cup champions led by Messi\'s legacy',
+      'Defending tournament champions led by Messi\'s legacy',
       'Can they become first back-to-back champions since Brazil 1962?',
       'Scaloni has built the most complete Argentina squad in decades',
-      'Messi\'s potential farewell World Cup appearance'
+      'Messi\'s potential farewell tournament appearance'
     ],
     'France': [
       '2022 runners-up seeking redemption after penalty shootout loss',
@@ -347,7 +347,7 @@ class ESPNHistoricalService {
       'Strongest squad depth in the tournament'
     ],
     'Brazil': [
-      'Seeking 6th World Cup title - most by any nation',
+      'Seeking 6th tournament title - most by any nation',
       'New generation after 2022 QF disappointment',
       'Hungry to avenge 2014 home humiliation',
       'Technical brilliance meets tactical evolution'
@@ -359,7 +359,7 @@ class ESPNHistoricalService {
       'Young squad blending experience with fresh talent'
     ],
     'England': [
-      'Perennial contenders seeking first World Cup since 1966',
+      'Perennial contenders seeking first tournament since 1966',
       'Golden generation: can they finally deliver?',
       '2018 semi-finalists, 2022 quarter-finalists',
       'Premier League talent pool is world-class'
@@ -371,7 +371,7 @@ class ESPNHistoricalService {
       'La Roja\'s pressing game suits tournament football'
     ],
     'United States': [
-      'Co-hosting the World Cup on home soil',
+      'Co-hosting the tournament on home soil',
       'Best USMNT squad in history with European-based stars',
       'Pulisic, McKennie, Reyna, Musah - MLS and European blend',
       'Home crowd advantage across 11 US host cities'
@@ -379,26 +379,26 @@ class ESPNHistoricalService {
     'Mexico': [
       'Co-hosts with massive home support',
       'Looking to break the "quinto partido" curse (Round of 16 exit)',
-      'Liga MX passion meets World Cup stage',
+      'Liga MX passion meets tournament stage',
       'Historic opportunity on home turf'
     ],
     'Canada': [
-      'Co-hosts making only their 3rd World Cup appearance',
+      'Co-hosts making only their 3rd tournament appearance',
       'Alphonso Davies and Jonathan David lead a talented squad',
-      'First World Cup since 1986',
+      'First tournament since 1986',
       'Growing football culture boosted by hosting duties'
     ],
     'Netherlands': [
       'Total Football heritage seeking another WC Final',
-      '3 World Cup Finals but never champions',
+      '3 Tournament Finals but never champions',
       'Tactical versatility under Dutch coaching philosophy',
       'Strong Eredivisie and international talent pipeline'
     ],
     'Portugal': [
-      'Cristiano Ronaldo\'s possible last World Cup',
+      'Cristiano Ronaldo\'s possible last tournament',
       'Beyond Ronaldo: deep squad with Bernardo Silva, Bruno Fernandes',
       '2022 QF exit to Morocco still stings',
-      'Seeking first World Cup title in history'
+      'Seeking first tournament title in history'
     ],
     'Japan': [
       'Asia\'s top contender with European-based stars',
@@ -425,8 +425,8 @@ class ESPNHistoricalService {
       'Small nation with a giant tournament pedigree'
     ],
     'Uruguay': [
-      '2-time World Cup champions with pride and history',
-      'Won the first ever World Cup in 1930',
+      '2-time tournament champions with pride and history',
+      'Won the first tournament in 1930',
       'Garra Charrua fighting spirit defines their play',
       'South American dark horse in every tournament'
     ],
@@ -467,17 +467,17 @@ class ESPNHistoricalService {
       return _generateGenericVenueInsights(homeTeam, awayTeam);
     }
 
-    final rivalryName = historicalData['rivalry_name'] ?? 'World Cup Match';
+    final rivalryName = historicalData['rivalry_name'] ?? 'Tournament Match';
     final seriesRecord = historicalData['series_record'] ?? 'Series tied';
     final lastMeeting = historicalData['last_meeting'] ?? {};
 
     return {
       'crowd_appeal': _calculateHistoricalCrowdAppeal(historicalData),
       'marketing_hooks': [
-        'Historic $rivalryName returns to the World Cup stage!',
+        'Historic $rivalryName returns to the tournament stage!',
         'All-time record: $seriesRecord',
         'Last meeting: ${lastMeeting['result'] ?? 'Great match expected'}',
-        'World Cup rivalry atmosphere guaranteed'
+        'tournament rivalry atmosphere guaranteed'
       ],
       'venue_preparation': _generateHistoricalVenuePrep(historicalData),
       'social_media_content': [
@@ -526,13 +526,13 @@ class ESPNHistoricalService {
         }
       }
     } else {
-      summary += ' in a World Cup 2026 clash.';
+      summary += ' in a 2026 tournament clash.';
     }
 
     return summary;
   }
 
-  /// Get World Cup records and milestones for trivia and engagement
+  /// Get tournament records and milestones for trivia and engagement
   static Map<String, dynamic> getWorldCupRecords() {
     return {
       'most_titles': {'team': 'Brazil', 'count': 5, 'years': '1958, 1962, 1970, 1994, 2002'},
@@ -555,7 +555,7 @@ class ESPNHistoricalService {
     };
   }
 
-  /// Get famous World Cup matches for content and trivia
+  /// Get famous tournament matches for content and trivia
   static List<Map<String, dynamic>> getFamousWorldCupMatches() {
     return [
       {
@@ -568,7 +568,7 @@ class ESPNHistoricalService {
         'match': 'England 4-2 West Germany (aet)',
         'year': 1966,
         'stage': 'Final',
-        'significance': 'England\'s only World Cup, Geoff Hurst hat-trick',
+        'significance': 'England\'s only tournament win, Geoff Hurst hat-trick',
       },
       {
         'match': 'Italy 4-3 West Germany',
@@ -598,7 +598,7 @@ class ESPNHistoricalService {
         'match': 'Germany 7-1 Brazil',
         'year': 2014,
         'stage': 'Semi-Final',
-        'significance': 'The Mineirazo - most shocking World Cup result in history',
+        'significance': 'The Mineirazo - most shocking tournament result in history',
       },
       {
         'match': 'Argentina 3-3 France (4-2 pens)',
@@ -651,23 +651,23 @@ class ESPNHistoricalService {
     return {
       'historical_data': {
         'series_record': 'Head-to-head history not available',
-        'rivalry_name': 'World Cup 2026 Match',
-        'significance': 'Every World Cup match matters'
+        'rivalry_name': '2026 tournament Match',
+        'significance': 'Every tournament match matters'
       },
       'current_context': {
-        'home_storylines': _currentSeasonStorylines[homeCountry] ?? ['Fighting for World Cup glory'],
+        'home_storylines': _currentSeasonStorylines[homeCountry] ?? ['Fighting for tournament glory'],
         'away_storylines': _currentSeasonStorylines[awayCountry] ?? ['Representing their nation on the world stage'],
       },
       'matchup_intelligence': {
         'crowd_factor_boost': 0.2,
         'tv_appeal': 'Moderate',
-        'global_interest': 'World Cup atmosphere guarantees interest'
+        'global_interest': 'tournament atmosphere guarantees interest'
       }
     };
   }
 
   Map<String, dynamic> _generateMatchupIntelligence(Map<String, dynamic> historicalData, String homeTeam, String awayTeam) {
-    double crowdBoost = 0.4; // Base World Cup rivalry boost
+    double crowdBoost = 0.4; // Base tournament rivalry boost
     String tvAppeal = 'High';
 
     // Analyze historical significance for crowd boost
@@ -686,7 +686,7 @@ class ESPNHistoricalService {
     return {
       'crowd_factor_boost': crowdBoost,
       'tv_appeal': tvAppeal,
-      'global_interest': 'World Cup rivalries attract billions of viewers worldwide',
+      'global_interest': 'tournament rivalries attract billions of viewers worldwide',
       'social_media_buzz': 'Expect massive engagement from fans of both nations',
       'economic_impact': 'Significant tourism and local spending for host city'
     };
@@ -695,7 +695,7 @@ class ESPNHistoricalService {
   double _calculateHistoricalCrowdAppeal(Map<String, dynamic> historicalData) {
     final keyFacts = historicalData['key_facts'] as List<String>? ?? [];
 
-    double appeal = 1.8; // Base World Cup rivalry appeal (higher than generic)
+    double appeal = 1.8; // Base tournament rivalry appeal (higher than generic)
 
     for (String fact in keyFacts) {
       if (fact.toLowerCase().contains('billion') || fact.toLowerCase().contains('viewers')) {
@@ -717,7 +717,7 @@ class ESPNHistoricalService {
 
   Map<String, dynamic> _generateHistoricalVenuePrep(Map<String, dynamic> historicalData) {
     final keyFacts = historicalData['key_facts'] as List<String>? ?? [];
-    final rivalryName = historicalData['rivalry_name'] ?? 'World Cup Match';
+    final rivalryName = historicalData['rivalry_name'] ?? 'Tournament Match';
 
     List<String> prepTips = [
       'Expect packed house - promote early reservations',
@@ -744,10 +744,10 @@ class ESPNHistoricalService {
         'Country flag decorations for both nations',
         'International beer and cocktails',
         'Match-themed food specials',
-        'World Cup merchandise',
+        'tournament merchandise',
       ],
       'preparation_tips': prepTips,
-      'marketing_emphasis': 'Historic $rivalryName at World Cup 2026 - unmissable atmosphere'
+      'marketing_emphasis': 'Historic $rivalryName at 2026 tournament - unmissable atmosphere'
     };
   }
 
@@ -755,20 +755,20 @@ class ESPNHistoricalService {
     return {
       'crowd_appeal': 1.5, // World Cup baseline is higher than regular matches
       'marketing_hooks': [
-        'World Cup 2026 Match Day!',
+        '2026 tournament Match Day!',
         '$homeTeam vs $awayTeam - live on the big screen',
         'Join the global celebration of football',
-        'World Cup watch party atmosphere'
+        'tournament watch party atmosphere'
       ],
       'venue_preparation': {
         'staffing_multiplier': 1.5,
-        'inventory_focus': ['World Cup decorations', 'International food & drinks'],
+        'inventory_focus': ['tournament decorations', 'International food & drinks'],
         'preparation_tips': [
-          'Prepare for increased World Cup interest crowd',
+          'Prepare for increased tournament interest crowd',
           'Set up multiple viewing screens',
           'Promote on social media with #WorldCup2026',
         ],
-        'marketing_emphasis': 'World Cup 2026 live viewing experience'
+        'marketing_emphasis': '2026 tournament live viewing experience'
       }
     };
   }

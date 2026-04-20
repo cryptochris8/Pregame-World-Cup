@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:pregame_world_cup/core/services/logging_service.dart';
 import '../../domain/entities/entities.dart';
 
-/// Firestore Data Source for World Cup 2026 data
+/// Firestore Data Source for 2026 tournament data
 /// Handles reading and writing to Firebase Firestore
 class WorldCupFirestoreDataSource {
   final FirebaseFirestore _firestore;
@@ -24,7 +24,7 @@ class WorldCupFirestoreDataSource {
 
   // ==================== MATCHES ====================
 
-  /// Fetches all World Cup matches
+  /// Fetches all tournament matches
   Future<List<WorldCupMatch>> getAllMatches() async {
     try {
       final snapshot = await _firestore
@@ -513,7 +513,7 @@ class WorldCupFirestoreDataSource {
 
   // ==================== UTILITIES ====================
 
-  /// Deletes all World Cup data (for testing/reset)
+  /// Deletes all tournament data (for testing/reset)
   Future<void> clearAllData() async {
     try {
       final collections = [
@@ -649,7 +649,7 @@ class WorldCupFirestoreDataSource {
     }
   }
 
-  /// Fetches World Cups won by a specific team
+  /// Fetches tournaments won by a specific team
   Future<List<WorldCupTournament>> getWorldCupsByWinner(String teamCode) async {
     try {
       final snapshot = await _firestore
@@ -669,7 +669,7 @@ class WorldCupFirestoreDataSource {
 
   // ==================== WORLD CUP RECORDS ====================
 
-  /// Fetches all World Cup records
+  /// Fetches all tournament records
   Future<List<WorldCupRecord>> getAllWorldCupRecords() async {
     try {
       final snapshot = await _firestore
@@ -685,7 +685,7 @@ class WorldCupFirestoreDataSource {
     }
   }
 
-  /// Fetches World Cup records by holder type
+  /// Fetches tournament records by holder type
   Future<List<WorldCupRecord>> getWorldCupRecordsByType(String holderType) async {
     try {
       final snapshot = await _firestore
@@ -702,7 +702,7 @@ class WorldCupFirestoreDataSource {
     }
   }
 
-  /// Fetches a specific World Cup record by category
+  /// Fetches a specific tournament record by category
   Future<WorldCupRecord?> getWorldCupRecordByCategory(String category) async {
     try {
       final docId = category.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '_');

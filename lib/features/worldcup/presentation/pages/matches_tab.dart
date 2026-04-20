@@ -7,7 +7,7 @@ import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
-/// Matches tab content for the World Cup home screen.
+/// Matches tab content for the tournament home screen.
 /// Displays a date picker, filter chips, and a scrollable list of matches.
 class MatchesTab extends StatefulWidget {
   final void Function(WorldCupMatch) onMatchTap;

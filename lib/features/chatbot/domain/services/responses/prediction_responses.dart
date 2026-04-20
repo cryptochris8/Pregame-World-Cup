@@ -25,7 +25,7 @@ class PredictionResponses {
       final sv = _kb.getSquadValue(teamCode);
       final injuries = _kb.getInjuryConcerns(teamCode);
 
-      final buf = StringBuffer('$teamName — Copa\'s World Cup 2026 Outlook:\n\n');
+      final buf = StringBuffer('$teamName — Copa\'s 2026 tournament Outlook:\n\n');
 
       if (odds != null) {
         final tier = odds['tier'] ?? '';
@@ -66,7 +66,7 @@ class PredictionResponses {
       );
     }
 
-    final buf = StringBuffer('World Cup 2026 — the usual suspects, with a few worth keeping an eye on:\n\n');
+    final buf = StringBuffer('2026 tournament — the usual suspects, with a few worth keeping an eye on:\n\n');
 
     final topTier = favorites.where((o) => o['tier'] == 'favorite').toList();
     final contenders = favorites.where((o) => o['tier'] == 'contender').toList();
@@ -94,7 +94,7 @@ class PredictionResponses {
     final chipNames = favorites.take(3).map((t) => '${t['team']} outlook').toList();
     return ChatResponse(
       text: buf.toString().trim(),
-      suggestionChips: [...chipNames, 'World Cup history'],
+      suggestionChips: [...chipNames, 'tournament history'],
       resolvedIntent: intent,
     );
   }

@@ -1,5 +1,5 @@
 name: pregame_world_cup
-description: "Pregame World Cup 2026 - Connect with fans and venues for World Cup 2026"
+description: "Pregame - Connect with fans and venues for soccer's biggest summer"
 publish_to: 'none' # Prevent accidental publishing
 
 version: 1.0.0+4

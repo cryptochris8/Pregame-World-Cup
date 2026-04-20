@@ -339,8 +339,8 @@ class PaymentTransaction {
     }
     if (type == TransactionType.fanPass) {
       final passType = metadata['passType'] as String?;
-      if (passType == 'superfan_pass') return 'World Cup 2026';
-      return 'World Cup 2026';
+      if (passType == 'superfan_pass') return '2026 tournament';
+      return '2026 tournament';
     }
     return null;
   }

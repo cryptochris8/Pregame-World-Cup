@@ -6,7 +6,7 @@ import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
 
-/// Page displaying the World Cup match schedule
+/// Page displaying the tournament match schedule
 class MatchListPage extends StatefulWidget {
   const MatchListPage({super.key});
 

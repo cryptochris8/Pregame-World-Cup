@@ -21,7 +21,7 @@ extension AIPredictedOutcomeExtension on AIPredictedOutcome {
   }
 }
 
-/// AI-generated match prediction for World Cup matches
+/// AI-generated match prediction for tournament matches
 ///
 /// Contains predicted scores, win probability, confidence level,
 /// key factors, and detailed analysis from AI providers (Claude/OpenAI).
@@ -341,7 +341,7 @@ class AIMatchPrediction extends Equatable {
       awayWinProbability: awayProb,
       keyFactors: const [
         'World Rankings comparison',
-        'Historical World Cup performance',
+        'Historical tournament performance',
         'Tournament stage dynamics',
       ],
       analysis: 'Based on world rankings and historical data.',

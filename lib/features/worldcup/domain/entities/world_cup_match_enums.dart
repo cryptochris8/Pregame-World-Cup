@@ -1,10 +1,10 @@
-/// Enums and their extensions for World Cup match entities.
+/// Enums and their extensions for tournament match entities.
 ///
 /// Includes [MatchStage], [MatchStatus], and [MatchTimeFilter]
 /// along with display name extensions.
 library;
 
-/// Match stage in the World Cup tournament
+/// Match stage in the tournament tournament
 enum MatchStage {
   groupStage,
   roundOf32,

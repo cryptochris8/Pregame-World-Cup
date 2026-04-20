@@ -162,7 +162,7 @@ class TeamDetailPage extends StatelessWidget {
                   _buildInfoCard(context),
                   const SizedBox(height: 16),
 
-                  // World Cup history
+                  // tournament history
                   _buildWorldCupHistory(context),
                   const SizedBox(height: 16),
 
@@ -390,7 +390,7 @@ class TeamDetailPage extends StatelessWidget {
   }
 
   String _getWorldCupWinYears() {
-    // Historical World Cup winners
+    // Historical tournament winners
     final winners = {
       'BRA': '1958, 1962, 1970, 1994, 2002',
       'GER': '1954, 1974, 1990, 2014',

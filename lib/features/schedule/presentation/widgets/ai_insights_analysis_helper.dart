@@ -44,7 +44,7 @@ class AIInsightsAnalysisHelper {
 
   Map<String, dynamic> buildGameStats() {
     final stats = <String, dynamic>{
-      'gameType': 'World Cup',
+      'gameType': 'Tournament',
       'venue': 'Match at ${game.stadium?.name ?? 'TBD'}',
       'season': '2026',
     };
@@ -357,35 +357,35 @@ class AIInsightsAnalysisHelper {
     final Map<String, Map<String, String>> knownSeries = {
       'Brazil': {
         'Argentina': 'Historic rivalry - closely contested',
-        'Germany': 'Brazil leads in World Cup meetings',
-        'France': 'Competitive World Cup history',
+        'Germany': 'Brazil leads in tournament meetings',
+        'France': 'Competitive tournament history',
         'Uruguay': 'South American classic rivalry',
       },
       'Argentina': {
         'Brazil': 'Historic rivalry - closely contested',
-        'Germany': 'Multiple World Cup finals between them',
-        'England': 'Heated rivalry with iconic World Cup moments',
-        'France': 'Met in 2022 World Cup final',
-        'Netherlands': 'Dramatic World Cup encounters',
+        'Germany': 'Multiple tournament finals between them',
+        'England': 'Heated rivalry with iconic tournament moments',
+        'France': 'Met in 2022 tournament final',
+        'Netherlands': 'Dramatic tournament encounters',
       },
       'Germany': {
         'Brazil': 'Germany won memorable 7-1 in 2014',
-        'Argentina': 'Multiple World Cup finals between them',
-        'Italy': 'European rivals with long World Cup history',
+        'Argentina': 'Multiple tournament finals between them',
+        'Italy': 'European rivals with long tournament history',
         'France': 'European powerhouse rivalry',
         'Netherlands': 'Intense European derby',
-        'England': 'Historic World Cup rivalry',
+        'England': 'Historic tournament rivalry',
       },
       'France': {
-        'Argentina': 'Met in 2022 World Cup final',
+        'Argentina': 'Met in 2022 tournament final',
         'Germany': 'European powerhouse rivalry',
-        'Brazil': 'Competitive World Cup history',
-        'Italy': 'Multiple World Cup encounters',
+        'Brazil': 'Competitive tournament history',
+        'Italy': 'Multiple tournament encounters',
         'Spain': 'European neighbors rivalry',
       },
       'England': {
-        'Argentina': 'Heated rivalry with iconic World Cup moments',
-        'Germany': 'Historic World Cup rivalry',
+        'Argentina': 'Heated rivalry with iconic tournament moments',
+        'Germany': 'Historic tournament rivalry',
         'Scotland': 'Oldest international rivalry in football',
       },
       'Spain': {
@@ -398,7 +398,7 @@ class AIInsightsAnalysisHelper {
       },
       'United States': {
         'Mexico': 'CONCACAF rivals - Dos a Cero',
-        'England': 'Notable World Cup encounters',
+        'England': 'Notable tournament encounters',
       },
     };
 

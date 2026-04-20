@@ -13,7 +13,7 @@ import '../social/presentation/screens/user_profile_screen.dart';
 import '../social/domain/services/notification_service.dart';
 import '../../config/app_theme.dart';
 
-// World Cup 2026
+// 2026 tournament
 import '../worldcup/worldcup.dart';
 import '../../injection_container.dart' as di;
 
@@ -50,7 +50,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     _selectedIndex = widget.initialTabIndex.clamp(0, 4);
 
     _screens = [
-      // World Cup 2026 - Main feature with all match/group/bracket/team screens
+      // 2026 tournament - Main feature with all match/group/bracket/team screens
       _WorldCupFeatureWrapper(),
       const ActivityFeedScreen(),
       const NotificationsScreen(),

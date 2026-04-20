@@ -197,7 +197,7 @@ class _PlayerComparisonScreenState extends State<PlayerComparisonScreen> {
             ComparisonStatRow(label: 'Assists/Game', value1: _player1!.assistsPerGame, value2: _player2!.assistsPerGame, unit: '', decimals: 2),
 
             const SizedBox(height: 16),
-            const ComparisonSectionHeader(title: 'World Cup Stats'),
+            const ComparisonSectionHeader(title: 'Tournament Stats'),
             ComparisonStatRow(label: 'WC Appearances', value1: _player1!.worldCupAppearances.toDouble(), value2: _player2!.worldCupAppearances.toDouble(), unit: ''),
             ComparisonStatRow(label: 'WC Goals', value1: _player1!.worldCupGoals.toDouble(), value2: _player2!.worldCupGoals.toDouble(), unit: ''),
             ComparisonStatRow(label: 'WC Assists', value1: _player1!.worldCupAssists.toDouble(), value2: _player2!.worldCupAssists.toDouble(), unit: ''),

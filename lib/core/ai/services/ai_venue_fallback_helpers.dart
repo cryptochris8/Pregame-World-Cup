@@ -348,7 +348,7 @@ class AIVenueFallbackHelpers {
       keywords.addAll(['spain', 'spanish', 'roja']);
     }
 
-    // Add general World Cup fan terms
+    // Add general tournament fan terms
     keywords.addAll(['sports', 'soccer', 'football', 'fan', 'match']);
 
     return keywords;

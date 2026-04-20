@@ -22,7 +22,7 @@ import 'injection_container.dart' as di;
 import 'app_initializer.dart' show debugLog;
 import 'app_providers.dart';
 
-/// Root widget for the Pregame World Cup app.
+/// Root widget for the Pregame app.
 ///
 /// Sets up the provider tree and delegates to [_PregameAppContent] for the
 /// MaterialApp configuration.

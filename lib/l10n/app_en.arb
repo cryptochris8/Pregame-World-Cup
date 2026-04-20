@@ -1,7 +1,7 @@
 {
   "@@locale": "en",
 
-  "appTitle": "Pregame World Cup",
+  "appTitle": "Pregame",
   "@appTitle": {
     "description": "App title"
   },
@@ -87,15 +87,15 @@
   "@internationalAssists": {
     "description": "Label for international assists"
   },
-  "worldCupAppearances": "World Cup Appearances",
+  "worldCupAppearances": "Tournament Appearances",
   "@worldCupAppearances": {
     "description": "Label for World Cup appearances"
   },
-  "worldCupGoals": "World Cup Goals",
+  "worldCupGoals": "Tournament Goals",
   "@worldCupGoals": {
     "description": "Label for World Cup goals"
   },
-  "previousWorldCups": "Previous World Cups",
+  "previousWorldCups": "Previous Tournaments",
   "@previousWorldCups": {
     "description": "Label for previous World Cups"
   },
@@ -127,7 +127,7 @@
   "@comparisonToLegend": {
     "description": "Section title for comparison to legend"
   },
-  "worldCup2026Prediction": "World Cup 2026 Prediction",
+  "worldCup2026Prediction": "2026 Tournament Prediction",
   "@worldCup2026Prediction": {
     "description": "Section title for World Cup 2026 prediction"
   },
@@ -253,7 +253,7 @@
   "@famousQuote": {
     "description": "Section title for famous quote"
   },
-  "worldCup2026Outlook": "World Cup 2026 Outlook",
+  "worldCup2026Outlook": "2026 Tournament Outlook",
   "@worldCup2026Outlook": {
     "description": "Section title for World Cup 2026 outlook"
   },
@@ -294,7 +294,7 @@
   "@favorites": {
     "description": "Tab label for favorites"
   },
-  "worldCup": "World Cup",
+  "worldCup": "Tournament",
   "@worldCup": {
     "description": "Title for World Cup"
   },
@@ -1002,7 +1002,7 @@
   "@addWidgetToHomeScreen": {
     "description": "Add widget instruction title"
   },
-  "widgetInstructions": "Long press on your home screen, tap the + button, search for 'Pregame World Cup', and select a widget size.",
+  "widgetInstructions": "Long press on your home screen, tap the + button, search for 'Pregame', and select a widget size.",
   "@widgetInstructions": {
     "description": "Instructions for adding widget"
   },
@@ -1080,7 +1080,7 @@
     "description": "Refresh widget button"
   },
 
-  "worldCup2026Pass": "World Cup 2026 Pass",
+  "worldCup2026Pass": "Tournament Pass",
   "@worldCup2026Pass": {
     "description": "Fan pass screen title"
   },
@@ -1336,7 +1336,7 @@
     "description": "Auto-check indicator text"
   },
 
-  "worldCup": "World Cup",
+  "worldCup": "Tournament",
   "@worldCup": {
     "description": "World Cup nav label"
   },
@@ -1370,7 +1370,7 @@
   "@schedule": {
     "description": "Schedule tab"
   },
-  "worldCup2026": "World Cup 2026",
+  "worldCup2026": "2026 Tournament",
   "@worldCup2026": {
     "description": "World Cup 2026 badge text"
   },
@@ -1394,7 +1394,7 @@
   "@noLiveGamesAvailable": {
     "description": "Empty state for live scores tab"
   },
-  "worldCupMatchesDaily": "World Cup matches are played daily during the tournament.\nCheck back during match time for live scores!",
+  "worldCupMatchesDaily": "Tournament matches are played daily throughout the summer.\nCheck back during match time for live scores!",
   "@worldCupMatchesDaily": {
     "description": "Info text when no live games"
   },
@@ -1881,7 +1881,7 @@
     }
   },
 
-  "worldCup2026Title": "World Cup 2026",
+  "worldCup2026Title": "2026 Tournament",
   "@worldCup2026Title": {
     "description": "World Cup 2026 app bar title"
   },
@@ -1917,7 +1917,7 @@
       }
     }
   },
-  "sharedFromPregame": "Shared from Pregame World Cup 2026",
+  "sharedFromPregame": "Shared from Pregame",
   "@sharedFromPregame": {
     "description": "Share text footer"
   },
@@ -1952,7 +1952,7 @@
   "@worldRanking": {
     "description": "World ranking stat label"
   },
-  "worldCupTitles": "World Cup Titles",
+  "worldCupTitles": "Tournament Titles",
   "@worldCupTitles": {
     "description": "World Cup titles stat label"
   },
@@ -1980,7 +1980,7 @@
   "@shortName": {
     "description": "Short name label"
   },
-  "worldCupHistory": "World Cup History",
+  "worldCupHistory": "Tournament History",
   "@worldCupHistory": {
     "description": "World Cup history section title"
   },
@@ -1991,7 +1991,7 @@
       "count": {"type": "int"}
     }
   },
-  "noWorldCupTitlesYet": "No World Cup titles yet",
+  "noWorldCupTitlesYet": "No tournament titles yet",
   "@noWorldCupTitlesYet": {
     "description": "Message when team has no WC titles"
   },
@@ -2507,7 +2507,7 @@
   "@accessibilitySettingsTitle": {
     "description": "Accessibility settings card title"
   },
-  "accessibilitySettingsIntro": "Customize your experience to make Pregame World Cup easier to use.",
+  "accessibilitySettingsIntro": "Customize your experience to make Pregame easier to use.",
   "@accessibilitySettingsIntro": {
     "description": "Accessibility settings intro text"
   },
@@ -3195,7 +3195,7 @@
   "@venuePremiumActivatedSuccessfully": {
     "description": "Snackbar message when venue premium is activated"
   },
-  "oneTimePaymentForWorldCup": "One-time payment for World Cup 2026",
+  "oneTimePaymentForWorldCup": "One-time payment for the 2026 tournament",
   "@oneTimePaymentForWorldCup": {
     "description": "Subtitle for venue premium price"
   },
@@ -5288,7 +5288,7 @@
   "@doneButton": {
     "description": "Done button label"
   },
-  "showWorldCupMatches": "Show World Cup Matches",
+  "showWorldCupMatches": "Show Tournament Matches",
   "@showWorldCupMatches": {
     "description": "Toggle title for showing matches at venue"
   },

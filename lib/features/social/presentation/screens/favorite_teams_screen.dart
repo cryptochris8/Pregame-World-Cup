@@ -13,7 +13,7 @@ class FavoriteTeamsScreen extends StatefulWidget {
 }
 
 class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
-  /// All 48 World Cup 2026 qualified national teams, grouped by confederation.
+  /// All 48 2026 tournament qualified national teams, grouped by confederation.
   static const List<String> _worldCupTeams = [
     // CONCACAF (Host nations first)
     'United States', 'Mexico', 'Canada', 'Costa Rica', 'Honduras',
@@ -241,7 +241,7 @@ class _FavoriteTeamsScreenState extends State<FavoriteTeamsScreen> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Choose your favorite World Cup 2026 teams to get personalized game recommendations and highlights.',
+                  'Choose your favorite 2026 tournament teams to get personalized game recommendations and highlights.',
                   style: TextStyle(
                     color: Colors.white70,
                     fontSize: 14,

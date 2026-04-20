@@ -277,7 +277,7 @@ class WinnerDisplay extends StatelessWidget {
               Icon(Icons.emoji_events, size: 48, color: Colors.white.withValues(alpha:0.3)),
               const SizedBox(height: 8),
               const Text(
-                'World Cup Champion',
+                'Tournament Champion',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white38,
@@ -317,7 +317,7 @@ class WinnerDisplay extends StatelessWidget {
             const Icon(Icons.emoji_events, size: 48, color: AppTheme.accentGold),
             const SizedBox(height: 8),
             const Text(
-              '2026 World Cup Champion',
+              '2026 tournament Champion',
               style: TextStyle(fontSize: 14, color: AppTheme.accentGold),
             ),
             const SizedBox(height: 8),

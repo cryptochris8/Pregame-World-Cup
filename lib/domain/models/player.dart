@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-/// Player model representing a World Cup 2026 player
+/// Player model representing a 2026 tournament player
 /// Corresponds to the player data in Firestore
 class Player {
   final String playerId;

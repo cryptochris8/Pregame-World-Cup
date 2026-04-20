@@ -56,7 +56,7 @@ class ESPNScheduleParser {
         }
       }
 
-      // Parse venue information (stadium for World Cup matches)
+      // Parse venue information (stadium for tournament matches)
       final venue = competition['venue'] as Map<String, dynamic>? ?? {};
       final venueName = venue['fullName'] ?? venue['name'] ?? '';
       final venueCity = venue['address']?['city'] ?? '';

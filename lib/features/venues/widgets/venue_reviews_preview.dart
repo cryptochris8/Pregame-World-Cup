@@ -439,7 +439,7 @@ class VenueReviewsPreview extends StatelessWidget {
         'initials': 'JL',
         'rating': 5,
         'date': '3 weeks ago',
-        'text': 'Perfect spot for pre-match drinks! Walking distance to the stadium and has that authentic World Cup fan zone vibe. The outdoor seating is a plus when weather is nice.',
+        'text': 'Perfect spot for pre-match drinks! Walking distance to the stadium and has that authentic tournament fan zone vibe. The outdoor seating is a plus when weather is nice.',
         'highlights': ['Pre-Match Spot', 'Walking Distance', 'Outdoor Seating'],
         'helpful': 15,
       },

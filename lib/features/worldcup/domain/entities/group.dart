@@ -160,7 +160,7 @@ class GroupTeamStanding extends Equatable {
       '$position. $teamName - P:$played W:$won D:$drawn L:$lost GD:$goalDifference Pts:$points';
 }
 
-/// WorldCupGroup represents a group in the World Cup 2026
+/// WorldCupGroup represents a group in the 2026 tournament
 /// There are 12 groups (A-L) with 4 teams each
 class WorldCupGroup extends Equatable {
   /// Group letter (A-L)
@@ -387,7 +387,7 @@ class WorldCupGroup extends Equatable {
 
 /// Helper class for group-related utilities
 class GroupUtils {
-  /// All group letters for World Cup 2026 (12 groups)
+  /// All group letters for 2026 tournament (12 groups)
   static const List<String> allGroupLetters = [
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'
   ];

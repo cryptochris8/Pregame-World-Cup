@@ -113,7 +113,7 @@ class TeamsState extends Equatable {
     return teams.where((t) => t.isHostNation).toList();
   }
 
-  /// Get teams with most World Cup titles
+  /// Get teams with most tournament titles
   List<NationalTeam> get topTitleHolders {
     final sorted = List<NationalTeam>.from(teams);
     sorted.sort((a, b) => b.worldCupTitles.compareTo(a.worldCupTitles));

@@ -445,7 +445,7 @@ class EnhancedAIGameAnalysisService {
     if (sameConfederation) {
       return 'This $tournamentPhase clash between $awayTeam and $homeTeam features two sides from the same confederation who know each other well. Their familiarity could produce a tactically tight encounter with fine margins deciding the outcome.';
     } else {
-      return 'This $tournamentPhase match pits $awayTeam against $homeTeam in an intercontinental contest. Clashing footballing philosophies and unfamiliar styles can produce thrilling encounters at the World Cup.';
+      return 'This $tournamentPhase match pits $awayTeam against $homeTeam in an intercontinental contest. Clashing footballing philosophies and unfamiliar styles can produce thrilling encounters at the tournament.';
     }
   }
 
@@ -520,9 +520,9 @@ class EnhancedAIGameAnalysisService {
 
   /// Get context about the tournament phase based on date
   String _getTournamentPhase(DateTime? gameDate) {
-    if (gameDate == null) return 'World Cup';
+    if (gameDate == null) return 'Tournament';
 
-    // World Cup 2026: June 11 - July 19
+    // 2026 tournament: June 11 - July 19
     final month = gameDate.month;
     final day = gameDate.day;
 
@@ -534,6 +534,6 @@ class EnhancedAIGameAnalysisService {
     if (month == 7 && day <= 16) return 'semi-final';
     if (month == 7) return 'final stage';
 
-    return 'World Cup';
+    return 'Tournament';
   }
 } 

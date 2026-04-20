@@ -8,7 +8,7 @@ import 'player_detail_screen.dart';
 import '../../core/animations/page_transitions.dart';
 
 /// Player Spotlight Screen
-/// Displays all 260 World Cup 2026 players with filtering and search
+/// Displays all 260 2026 tournament players with filtering and search
 class PlayerSpotlightScreen extends StatefulWidget {
   const PlayerSpotlightScreen({super.key});
 

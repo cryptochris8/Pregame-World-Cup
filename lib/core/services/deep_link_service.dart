@@ -297,7 +297,7 @@ class DeepLinkService {
     return generateLink(
       type: DeepLinkType.match,
       id: matchId,
-      title: '$homeTeam vs $awayTeam - World Cup 2026',
+      title: '$homeTeam vs $awayTeam - 2026 tournament',
       description: matchDate != null
           ? 'Watch the match on $matchDate! Get predictions, stats, and find watch parties.'
           : 'Get match predictions, live scores, and find nearby watch parties!',
@@ -334,10 +334,10 @@ class DeepLinkService {
     return generateLink(
       type: DeepLinkType.team,
       id: teamId,
-      title: '$teamName - World Cup 2026',
+      title: '$teamName - 2026 tournament',
       description: group != null
           ? 'Follow $teamName in Group $group! Get updates, predictions, and find watch parties.'
-          : 'Follow $teamName at World Cup 2026! Get updates, predictions, and find watch parties.',
+          : 'Follow $teamName at 2026 tournament! Get updates, predictions, and find watch parties.',
       imageUrl: imageUrl,
       campaign: 'team_share',
     );
@@ -371,7 +371,7 @@ class DeepLinkService {
       type: DeepLinkType.userProfile,
       id: usualId,
       title: '$displayName on Pregame',
-      description: 'Connect with $displayName and follow their World Cup 2026 journey!',
+      description: 'Connect with $displayName and follow their 2026 tournament journey!',
       imageUrl: imageUrl,
       campaign: 'profile_share',
     );
@@ -457,7 +457,7 @@ class DeepLinkService {
     );
 
     final message = '''
-$homeTeam vs $awayTeam - World Cup 2026
+$homeTeam vs $awayTeam - 2026 tournament
 
 ${matchDate != null ? 'Match Date: $matchDate\n\n' : ''}Check out this match on Pregame! Get predictions, live scores, and find watch parties nearby.
 
@@ -466,7 +466,7 @@ $link
 
     await Share.share(
       message,
-      subject: '$homeTeam vs $awayTeam - World Cup 2026',
+      subject: '$homeTeam vs $awayTeam - 2026 tournament',
       sharePositionOrigin: sharePositionOrigin,
     );
 
@@ -509,7 +509,7 @@ $link
 
     await Share.share(
       message,
-      subject: 'Join $partyName - World Cup 2026',
+      subject: 'Join $partyName - 2026 tournament',
       sharePositionOrigin: sharePositionOrigin,
     );
 
@@ -536,7 +536,7 @@ $link
     );
 
     final message = '''
-$teamName - World Cup 2026${group != null ? ' (Group $group)' : ''}
+$teamName - 2026 tournament${group != null ? ' (Group $group)' : ''}
 
 Follow $teamName on Pregame! Get match updates, predictions, and find watch parties.
 
@@ -545,7 +545,7 @@ $link
 
     await Share.share(
       message,
-      subject: '$teamName - World Cup 2026',
+      subject: '$teamName - 2026 tournament',
       sharePositionOrigin: sharePositionOrigin,
     );
 

@@ -49,7 +49,7 @@ extension ConfederationExtension on Confederation {
 }
 
 /// NationalTeam entity representing a country's national football team
-/// for the World Cup 2026
+/// for the 2026 tournament
 class NationalTeam extends Equatable {
   /// 3-letter country code (e.g., USA, MEX, GER, BRA)
   final String teamCode;
@@ -84,13 +84,13 @@ class NationalTeam extends Equatable {
   /// World Cup group assignment (A-L, null if not yet assigned)
   final String? group;
 
-  /// Number of World Cup titles won
+  /// Number of tournament titles won
   final int worldCupTitles;
 
   /// Best World Cup finish (e.g., "Winner", "Runner-up", "Semi-finals")
   final String? bestFinish;
 
-  /// Number of World Cup appearances
+  /// Number of tournament appearances
   final int worldCupAppearances;
 
   /// Whether this is a host nation (USA, Mexico, Canada)
@@ -111,7 +111,7 @@ class NationalTeam extends Equatable {
   /// Qualification method (e.g., "Host", "UEFA Qualifier", "Playoff winner")
   final String? qualificationMethod;
 
-  /// Whether the team has qualified for World Cup 2026
+  /// Whether the team has qualified for 2026 tournament
   final bool isQualified;
 
   /// Last updated timestamp
