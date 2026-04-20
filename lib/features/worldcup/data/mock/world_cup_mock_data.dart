@@ -1,10 +1,10 @@
 import '../../domain/entities/entities.dart';
 
-/// Provides mock data for World Cup 2026 development and testing
+/// Provides mock data for 2026 tournament development and testing
 class WorldCupMockData {
   WorldCupMockData._();
 
-  /// All 48 qualified teams for World Cup 2026
+  /// All 48 qualified teams for 2026 tournament
   static final List<NationalTeam> teams = [
     // Host Nations
     _team('USA', 'United States', 'USA', Confederation.concacaf, 11, 'D', 0, true,
@@ -346,6 +346,54 @@ class WorldCupMockData {
         _standing('PAR', 'Paraguay', 3, 3, 1, 0, 2, 4, 5),
         _standing('AUS', 'Australia', 4, 3, 0, 0, 3, 1, 8),
       ]),
+      _createGroup('E', [
+        _standing('GER', 'Germany', 1, 3, 3, 0, 0, 6, 1),
+        _standing('ECU', 'Ecuador', 2, 3, 1, 2, 0, 3, 2),
+        _standing('CIV', 'Ivory Coast', 3, 3, 1, 0, 2, 2, 3),
+        _standing('CUR', 'Curaçao', 4, 3, 0, 1, 2, 1, 6),
+      ]),
+      _createGroup('F', [
+        _standing('NED', 'Netherlands', 1, 3, 2, 1, 0, 5, 2),
+        _standing('JPN', 'Japan', 2, 3, 2, 0, 1, 4, 3),
+        _standing('SWE', 'Sweden', 3, 3, 1, 0, 2, 3, 4),
+        _standing('TUN', 'Tunisia', 4, 3, 0, 1, 2, 1, 4),
+      ]),
+      _createGroup('G', [
+        _standing('BEL', 'Belgium', 1, 3, 2, 1, 0, 4, 1),
+        _standing('EGY', 'Egypt', 2, 3, 2, 0, 1, 3, 2),
+        _standing('IRN', 'Iran', 3, 3, 1, 0, 2, 2, 3),
+        _standing('NZL', 'New Zealand', 4, 3, 0, 1, 2, 1, 4),
+      ]),
+      _createGroup('H', [
+        _standing('ESP', 'Spain', 1, 3, 3, 0, 0, 6, 1),
+        _standing('URU', 'Uruguay', 2, 3, 2, 0, 1, 5, 3),
+        _standing('KSA', 'Saudi Arabia', 3, 3, 0, 2, 1, 2, 3),
+        _standing('CPV', 'Cape Verde', 4, 3, 0, 1, 2, 1, 7),
+      ]),
+      _createGroup('I', [
+        _standing('FRA', 'France', 1, 3, 3, 0, 0, 7, 1),
+        _standing('NOR', 'Norway', 2, 3, 2, 0, 1, 5, 3),
+        _standing('SEN', 'Senegal', 3, 3, 1, 0, 2, 3, 4),
+        _standing('IRQ', 'Iraq', 4, 3, 0, 0, 3, 1, 8),
+      ]),
+      _createGroup('J', [
+        _standing('ARG', 'Argentina', 1, 3, 3, 0, 0, 5, 1),
+        _standing('AUT', 'Austria', 2, 3, 2, 0, 1, 4, 3),
+        _standing('ALG', 'Algeria', 3, 3, 1, 0, 2, 3, 4),
+        _standing('JOR', 'Jordan', 4, 3, 0, 0, 3, 1, 5),
+      ]),
+      _createGroup('K', [
+        _standing('POR', 'Portugal', 1, 3, 2, 1, 0, 5, 2),
+        _standing('COL', 'Colombia', 2, 3, 2, 0, 1, 4, 3),
+        _standing('COD', 'DR Congo', 3, 3, 1, 0, 2, 2, 4),
+        _standing('UZB', 'Uzbekistan', 4, 3, 0, 1, 2, 1, 3),
+      ]),
+      _createGroup('L', [
+        _standing('CRO', 'Croatia', 1, 3, 2, 1, 0, 4, 2),
+        _standing('ENG', 'England', 2, 3, 2, 0, 1, 5, 3),
+        _standing('GHA', 'Ghana', 3, 3, 1, 0, 2, 2, 4),
+        _standing('PAN', 'Panama', 4, 3, 0, 1, 2, 1, 3),
+      ]),
     ];
   }
 
@@ -361,7 +409,7 @@ class WorldCupMockData {
     );
   }
 
-  /// All 16 official World Cup 2026 venues
+  /// All 16 official 2026 tournament venues
   static List<WorldCupVenue> get venues => [
     // USA Venues (12)
     const WorldCupVenue(
@@ -884,7 +932,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 1990,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Round of 16',
           team1Score: 1,
           team2Score: 0,
@@ -894,7 +942,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1982,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Second Round',
           team1Score: 1,
           team2Score: 3,
@@ -904,16 +952,16 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1978,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Second Round',
           team1Score: 0,
           team2Score: 0,
           location: 'Rosario, Argentina',
-          description: 'Tense draw in Argentina\'s World Cup run',
+          description: 'Tense draw in Argentina\'s tournament run',
         ),
         HistoricalMatch(
           year: 1974,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Second Round',
           team1Score: 1,
           team2Score: 2,
@@ -953,7 +1001,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2010,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Round of 16',
           team1Score: 1,
           team2Score: 4,
@@ -973,7 +1021,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1990,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Semi-Final',
           team1Score: 1,
           team2Score: 1,
@@ -983,7 +1031,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1966,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 4,
           team2Score: 2,
@@ -1013,7 +1061,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 2022,
-          tournament: 'World Cup Qualifier',
+          tournament: 'Tournament Qualifier',
           team1Score: 0,
           team2Score: 0,
           location: 'Mexico City, Mexico',
@@ -1030,17 +1078,17 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2002,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Round of 16',
           team1Score: 0,
           team2Score: 2,
           winnerCode: 'USA',
           location: 'Jeonju, South Korea',
-          description: 'Dos a Cero - USA\'s famous World Cup upset',
+          description: 'Dos a Cero - USA\'s famous tournament upset',
         ),
         HistoricalMatch(
           year: 1997,
-          tournament: 'World Cup Qualifier',
+          tournament: 'Tournament Qualifier',
           team1Score: 0,
           team2Score: 0,
           location: 'Mexico City, Mexico',
@@ -1048,12 +1096,12 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1934,
-          tournament: 'World Cup Qualifier',
+          tournament: 'Tournament Qualifier',
           team1Score: 4,
           team2Score: 2,
           winnerCode: 'MEX',
           location: 'Rome, Italy',
-          description: 'First ever World Cup meeting',
+          description: 'First ever tournament meeting',
         ),
       ],
     ),
@@ -1077,7 +1125,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 2014,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Semi-Final',
           team1Score: 1,
           team2Score: 7,
@@ -1087,7 +1135,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2002,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 2,
           team2Score: 0,
@@ -1135,7 +1183,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 1986,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 2,
           team2Score: 1,
@@ -1145,7 +1193,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1998,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Round of 16',
           team1Score: 2,
           team2Score: 2,
@@ -1155,7 +1203,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2002,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Group Stage',
           team1Score: 0,
           team2Score: 1,
@@ -1165,7 +1213,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1966,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 0,
           team2Score: 1,
@@ -1195,7 +1243,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 2014,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 0,
           team2Score: 1,
@@ -1205,7 +1253,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1982,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Semi-Final',
           team1Score: 3,
           team2Score: 3,
@@ -1215,7 +1263,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1986,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Semi-Final',
           team1Score: 2,
           team2Score: 0,
@@ -1255,7 +1303,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 1974,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 2,
           team2Score: 1,
@@ -1275,7 +1323,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1978,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Group Stage',
           team1Score: 2,
           team2Score: 2,
@@ -1284,7 +1332,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1990,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Round of 16',
           team1Score: 2,
           team2Score: 1,
@@ -1314,7 +1362,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 2006,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 1,
           team2Score: 1,
@@ -1334,7 +1382,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1998,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 0,
           team2Score: 0,
@@ -1344,7 +1392,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1938,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 1,
           team2Score: 3,
@@ -1374,7 +1422,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 2014,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 0,
           team2Score: 1,
@@ -1384,7 +1432,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2010,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 0,
           team2Score: 4,
@@ -1394,7 +1442,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1986,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 3,
           team2Score: 2,
@@ -1404,7 +1452,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1990,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 0,
           team2Score: 1,
@@ -1414,7 +1462,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2006,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 1,
           team2Score: 1,
@@ -1444,7 +1492,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 2018,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Group Stage',
           team1Score: 3,
           team2Score: 3,
@@ -1463,7 +1511,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2010,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Round of 16',
           team1Score: 1,
           team2Score: 0,
@@ -1503,7 +1551,7 @@ class WorldCupMockData {
       notableMatches: const [
         HistoricalMatch(
           year: 1998,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Final',
           team1Score: 0,
           team2Score: 3,
@@ -1513,7 +1561,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 2006,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 0,
           team2Score: 1,
@@ -1523,7 +1571,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1986,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Quarter-Final',
           team1Score: 1,
           team2Score: 1,
@@ -1533,7 +1581,7 @@ class WorldCupMockData {
         ),
         HistoricalMatch(
           year: 1958,
-          tournament: 'World Cup',
+          tournament: 'Tournament',
           stage: 'Semi-Final',
           team1Score: 5,
           team2Score: 2,
