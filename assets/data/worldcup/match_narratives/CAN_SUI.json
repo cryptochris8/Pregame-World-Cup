@@ -40,8 +40,8 @@
     {
       "name": "Granit Xhaka",
       "teamCode": "SUI",
-      "narrative": "Switzerland's captain is the metronome that makes everything function. His passing range dictates tempo, his intelligence ensures Switzerland always have an out-ball when pressed. Xhaka's Bundesliga title with Leverkusen proved he can perform at the highest level, and three World Cups of experience give him composure that Canada's midfield will struggle to match — especially if Davies' hamstring limits Canada's pressing intensity.",
-      "statline": "Switzerland's captain, Bundesliga champion, three World Cups of experience"
+      "narrative": "Switzerland's captain is the metronome that makes everything function. His passing range dictates tempo, his intelligence ensures Switzerland always have an out-ball when pressed. Xhaka's Bundesliga title with Leverkusen proved he can perform at the highest level, and three tournaments of experience give him composure that Canada's midfield will struggle to match — especially if Davies' hamstring limits Canada's pressing intensity.",
+      "statline": "Switzerland's captain, Bundesliga champion, three tournaments of experience"
     },
     {
       "name": "Alphonso Davies",
@@ -76,5 +76,5 @@
     ]
   },
 
-  "closingLine": "In 2022, Switzerland taught Canada a lesson in World Cup football. In 2026, David arrives with a Juventus education that changes the equation. But Davies' hamstring and Bombito's absence mean Canada must learn a new lesson: winning with what you have, not what you wish you had."
+  "closingLine": "In 2022, Switzerland taught Canada a lesson in tournament football. In 2026, David arrives with a Juventus education that changes the equation. But Davies' hamstring and Bombito's absence mean Canada must learn a new lesson: winning with what you have, not what you wish you had."
 }

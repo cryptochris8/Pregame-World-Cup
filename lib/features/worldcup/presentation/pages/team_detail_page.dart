@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/animations/page_transitions.dart';
+import '../../../../injection_container.dart' as di;
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
@@ -484,8 +485,14 @@ class TeamDetailPage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 12),
-            BlocBuilder<MatchListCubit, MatchListState>(
-              builder: (context, state) {
+            // TeamDetailPage is pushed as a new route, so the MatchListCubit
+            // provided by MainNavigationScreen's BlocProvider isn't in this
+            // subtree. Pull the singleton from DI and scope a local provider
+            // to the BlocBuilder below so the matches list actually renders.
+            BlocProvider<MatchListCubit>.value(
+              value: di.sl<MatchListCubit>(),
+              child: BlocBuilder<MatchListCubit, MatchListState>(
+                builder: (context, state) {
                 if (state.isLoading && state.matches.isEmpty) {
                   return const Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
@@ -525,6 +532,7 @@ class TeamDetailPage extends StatelessWidget {
                   ],
                 );
               },
+              ),
             ),
           ],
         ),

@@ -10,7 +10,7 @@
   "headline": "AFC Rivalry Renewed: Popovic's Transformed Socceroos Face Team Melli",
   "subheadline": "Australia's tactical revolution under Popovic and a fully fit squad clash with Taremi's clinical finishing in Asia's heavyweight bout",
 
-  "openingNarrative": "Since Australia joined the Asian Football Confederation in 2006, their matches against Iran have carried the weight of a continental superpower rivalry. These are the AFC's heavyweight bouts — two proud footballing nations who have competed fiercely for Asian supremacy across World Cup qualifying cycles, Asian Cup knockout rounds, and international windows that feel like anything but friendlies.\n\nAustralia arrive at this World Cup as a team reborn. Tony Popovic's appointment has catalyzed a tactical revolution that has produced immediate results: a 1-0 win over Cameroon built on defensive discipline, followed by a breathtaking 5-1 demolition of Curacao that announced a new attacking identity. Popovic's 3-4-2-1 system is a departure from everything the Socceroos have been — more fluid, more creative, more dangerous. Every player in the squad is fully fit, and the emergence of Nestory Irankunda — a teenager whose pace terrifies defenders — has given Australia a weapon they have never possessed at this level.\n\nIran, under their coaching staff, represent Asia's most consistently competitive World Cup participant. This is their sixth World Cup appearance — a remarkable record for an Asian nation — and their qualifying campaign was dominant: 7 wins, 2 draws, 1 loss in AFC Third Round Group A, 23 points as group winners. Mehdi Taremi, the Inter Milan striker, was devastating with 10 qualifying goals, establishing himself as one of the tournament's most potent forwards.\n\nThe squad value gap ($82.3M for Iran vs $79.3M for Australia) is negligible — this is as close to an even matchup as the World Cup produces. But Australia's tactical transformation under Popovic may have shifted the calculus in ways the raw numbers cannot capture.",
+  "openingNarrative": "Since Australia joined the Asian Football Confederation in 2006, their matches against Iran have carried the weight of a continental superpower rivalry. These are the AFC's heavyweight bouts — two proud footballing nations who have competed fiercely for Asian supremacy across tournament qualifying cycles, Asian Cup knockout rounds, and international windows that feel like anything but friendlies.\n\nAustralia arrive at this tournament as a team reborn. Tony Popovic's appointment has catalyzed a tactical revolution that has produced immediate results: a 1-0 win over Cameroon built on defensive discipline, followed by a breathtaking 5-1 demolition of Curacao that announced a new attacking identity. Popovic's 3-4-2-1 system is a departure from everything the Socceroos have been — more fluid, more creative, more dangerous. Every player in the squad is fully fit, and the emergence of Nestory Irankunda — a teenager whose pace terrifies defenders — has given Australia a weapon they have never possessed at this level.\n\nIran, under their coaching staff, represent Asia's most consistently competitive tournament participant. This is their sixth tournament appearance — a remarkable record for an Asian nation — and their qualifying campaign was dominant: 7 wins, 2 draws, 1 loss in AFC Third Round Group A, 23 points as group winners. Mehdi Taremi, the Inter Milan striker, was devastating with 10 qualifying goals, establishing himself as one of the tournament's most potent forwards.\n\nThe squad value gap ($82.3M for Iran vs $79.3M for Australia) is negligible — this is as close to an even matchup as the tournament produces. But Australia's tactical transformation under Popovic may have shifted the calculus in ways the raw numbers cannot capture.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
@@ -27,20 +27,20 @@
     "squadValueComparison": "Iran ($82.3M) vs Australia ($79.3M) — almost identical squad values. Taremi ($10M) is Iran's most expensive player, while Souttar ($12.5M) leads Australia's valuations. This is a genuine battle of equals on paper, though Australia's tactical evolution may have created an edge that market valuations cannot measure.",
     "injuryImpact": "Australia's clean bill of health is a major advantage — every player fully fit, giving Popovic maximum tactical flexibility. Iran's reliance on Taremi's fitness is their primary concern. Without his 10-goal qualifying form, their attacking threat diminishes significantly.",
     "bettingPerspective": "Australia's March results under Popovic have shortened their odds, while the match remains close to a pick'em. The draw is a genuine possibility against two well-organized sides, but Australia's improved attacking output may make them marginal favorites.",
-    "historicalPattern": "AFC rivals since 2006. Both are experienced World Cup participants. Australia's tactical transformation under Popovic and full fitness give them a confidence advantage heading into this fixture."
+    "historicalPattern": "AFC rivals since 2006. Both are experienced tournament participants. Australia's tactical transformation under Popovic and full fitness give them a confidence advantage heading into this fixture."
   },
 
   "playerSpotlights": [
     {
       "name": "Mehdi Taremi",
       "teamCode": "IRN",
-      "narrative": "Inter Milan's striker was the most prolific scorer in AFC qualifying with 10 goals in 10 matches — a record that demands attention and respect. Taremi's combination of aerial prowess, intelligent movement, and clinical finishing makes him one of the most dangerous strikers at the entire World Cup. Against Australia's three center-backs in Popovic's system, he faces a different challenge than usual — the extra defender means fewer one-on-one opportunities, but Taremi's intelligence means he will find ways to create space.",
+      "narrative": "Inter Milan's striker was the most prolific scorer in AFC qualifying with 10 goals in 10 matches — a record that demands attention and respect. Taremi's combination of aerial prowess, intelligent movement, and clinical finishing makes him one of the most dangerous strikers at the entire tournament. Against Australia's three center-backs in Popovic's system, he faces a different challenge than usual — the extra defender means fewer one-on-one opportunities, but Taremi's intelligence means he will find ways to create space.",
       "statline": "10 goals in 10 AFC qualifying matches, Inter Milan's experienced striker"
     },
     {
       "name": "Nestory Irankunda",
       "teamCode": "AUS",
-      "narrative": "The teenager whose emergence has electrified Australian football. Irankunda's blistering pace and directness have given Popovic's 3-4-2-1 an attacking edge that Australia have never possessed. His performances in the March friendlies — fearless, dynamic, always looking to attack — suggest a player who is ready for the World Cup stage despite his age. Against Iran's experienced but aging fullbacks, Irankunda's speed could be devastating.",
+      "narrative": "The teenager whose emergence has electrified Australian football. Irankunda's blistering pace and directness have given Popovic's 3-4-2-1 an attacking edge that Australia have never possessed. His performances in the March friendlies — fearless, dynamic, always looking to attack — suggest a player who is ready for the tournament stage despite his age. Against Iran's experienced but aging fullbacks, Irankunda's speed could be devastating.",
       "statline": "Australia's emerging teenage sensation, explosive pace and directness"
     },
     {
@@ -66,7 +66,7 @@
       {
         "scenario": "Australia 2-1 Iran",
         "probability": 22,
-        "reasoning": "Popovic's system proves its superiority. Irankunda's pace creates a goal, Yengi adds a second, and Australia's three-man defense contains Taremi. The tactical transformation delivers its first World Cup dividend."
+        "reasoning": "Popovic's system proves its superiority. Irankunda's pace creates a goal, Yengi adds a second, and Australia's three-man defense contains Taremi. The tactical transformation delivers its first tournament dividend."
       },
       {
         "scenario": "Iran 2-1 Australia",
@@ -76,5 +76,5 @@
     ]
   },
 
-  "closingLine": "When Asia's two strongest World Cup performers meet, the continental rivalry takes on a global audience. But this time, Australia arrive transformed — Popovic's tactical revolution, full fitness, and Irankunda's emergence make this a different kind of Socceroo team. Iran will need all of Taremi's brilliance to match them."
+  "closingLine": "When Asia's two strongest tournament performers meet, the continental rivalry takes on a global audience. But this time, Australia arrive transformed — Popovic's tactical revolution, full fitness, and Irankunda's emergence make this a different kind of Socceroo team. Iran will need all of Taremi's brilliance to match them."
 }

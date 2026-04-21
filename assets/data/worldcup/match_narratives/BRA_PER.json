@@ -8,7 +8,7 @@
   "dataVersion": 1,
 
   "headline": "South American History Runs Deep as Brazil Face Peru Once Again",
-  "subheadline": "From the 1970 World Cup quarter-final to the 2019 Copa America final, these neighbors carry 48 matches of rivalry onto the North American stage",
+  "subheadline": "From the 1970 tournament quarter-final to the 2019 Copa America final, these neighbors carry 48 matches of rivalry onto the North American stage",
 
   "openingNarrative": "There are few rivalries in South American football as lopsided -- and yet as emotionally charged -- as Brazil against Peru. In 48 previous meetings stretching back to 1937, Brazil have won 35 times. Peru have managed just 5 victories. The numbers are brutal, and yet Peru keep coming back, keep competing, keep finding ways to make these matches memorable. It is a testament to Peruvian football's stubborn refusal to accept the hierarchy that statistics dictate.\n\nThe most resonant recent chapter was the 2019 Copa America final in Rio de Janeiro, where Brazil won 3-1 to claim the title on home soil. Peru had no business being in that final -- they had beaten Chile in the semi-final and ridden a wave of emotion that captivated South America. But against Brazil, the quality gap told its truth. Everton, Gabriel Jesus, and Richarlison scored the goals; Peru scored a consolation penalty through Paolo Guerrero that felt like a small act of defiance.\n\nNow these sides meet again, and the context has shifted in ways that might give Peru quiet hope. Brazil under Ancelotti are not the imperious force that their history suggests. The CONMEBOL qualifying campaign was their worst in modern memory -- 5th place, 6 losses, including a 4-0 demolition of Peru in Brasilia that was one of their few dominant performances. A 1-2 loss to France in March 2026 extended a troubling pattern: against quality opposition, Brazil's defensive transitions break down, and the goals arrive with alarming frequency. Losses to Argentina (1-4) and Japan (2-3) tell the same story.\n\nThe Neymar question adds complexity. At 34, recovering from knee surgery, battling fresh disciplinary issues, and reportedly in advanced MLS talks with FC Cincinnati, the former poster boy of Brazilian football has not worn the yellow shirt since October 2023. Ancelotti has been clear: '100 percent, not 80 percent.' The squad may need to move on without him -- and against Peru, they should have the quality to do so. But Peru have spent 89 years making Brazil work harder than the odds suggest they should.",
 
@@ -22,12 +22,12 @@
 
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Brazil (ELO: 1760) vs Peru (ELO not listed in top tier, historically around 1550-1600) -- a gap of approximately 160-200 points that reflects Brazil's historical dominance. However, at World Cups, underdogs from the same continent often perform above their ELO.",
-    "formAnalysis": "Brazil qualified 5th in CONMEBOL: 8 wins, 4 draws, 6 losses, 24 goals scored, 17 conceded. Since qualifying, their March 2026 loss to France (1-2) continued a pattern of inconsistency against quality opponents. Their most recent head-to-head meeting was a 4-0 Brazilian victory in Brasilia during qualifying. Peru earned their World Cup place through the same grueling 18-match qualifying marathon, proving that under the right circumstances, they can compete with anyone in South America.",
-    "squadValueComparison": "Brazil ($1.39B) vastly outvalues Peru's squad. Vinicius Jr. alone ($225M) is worth more than Peru's entire roster. But Peru have tournament-hardened players who have competed in Copa America finals and World Cup qualifying cycles across multiple generations.",
+    "eloAnalysis": "Brazil (ELO: 1760) vs Peru (ELO not listed in top tier, historically around 1550-1600) -- a gap of approximately 160-200 points that reflects Brazil's historical dominance. However, at tournaments, underdogs from the same continent often perform above their ELO.",
+    "formAnalysis": "Brazil qualified 5th in CONMEBOL: 8 wins, 4 draws, 6 losses, 24 goals scored, 17 conceded. Since qualifying, their March 2026 loss to France (1-2) continued a pattern of inconsistency against quality opponents. Their most recent head-to-head meeting was a 4-0 Brazilian victory in Brasilia during qualifying. Peru earned their tournament place through the same grueling 18-match qualifying marathon, proving that under the right circumstances, they can compete with anyone in South America.",
+    "squadValueComparison": "Brazil ($1.39B) vastly outvalues Peru's squad. Vinicius Jr. alone ($225M) is worth more than Peru's entire roster. But Peru have tournament-hardened players who have competed in Copa America finals and tournament qualifying cycles across multiple generations.",
     "injuryImpact": "Neymar's status as a major doubt has no bearing on this match -- even if he were available, Ancelotti would be unlikely to risk him against Peru when Vinicius Jr. and Rodrygo are fully fit. Alisson is a minor concern with recurring hamstring issues but expected to start. Brazil's depth means they can rotate freely. Peru's squad is thinner, and Lapadula's fitness as the primary goal threat is essential to their game plan.",
     "bettingPerspective": "Brazil are heavy favorites. Peru's best realistic outcome is a draw, and the under 2.5 goals market is attractive given Peru's defensive approach against superior opposition.",
-    "historicalPattern": "In 48 meetings: Brazil 35 wins, Peru 5 wins, 8 draws. Goals: Brazil 120, Peru 38. At World Cups (3 meetings), Brazil have won all 3, including a 4-2 quarter-final in 1970 en route to their famous third title. The 2019 Copa America final (3-1) and 2024 qualifier (4-0) are the most recent high-profile encounters."
+    "historicalPattern": "In 48 meetings: Brazil 35 wins, Peru 5 wins, 8 draws. Goals: Brazil 120, Peru 38. At tournaments (3 meetings), Brazil have won all 3, including a 4-2 quarter-final in 1970 en route to their famous third title. The 2019 Copa America final (3-1) and 2024 qualifier (4-0) are the most recent high-profile encounters."
   },
 
   "playerSpotlights": [
@@ -40,14 +40,14 @@
     {
       "name": "Gianluca Lapadula",
       "teamCode": "PER",
-      "narrative": "The Italian-born striker who chose Peru represents the modern reality of South American football -- diaspora talent returning to serve the national team. Lapadula's physicality, aerial ability, and nose for goal make him Peru's primary attacking weapon. His hold-up play allows Peru to relieve pressure and move up the pitch, and his finishing in the box gives them a genuine threat from crosses and set pieces. Against Brazil's center-backs, Lapadula will compete in every aerial duel with the ferocity of a man playing for his country in the World Cup.",
+      "narrative": "The Italian-born striker who chose Peru represents the modern reality of South American football -- diaspora talent returning to serve the national team. Lapadula's physicality, aerial ability, and nose for goal make him Peru's primary attacking weapon. His hold-up play allows Peru to relieve pressure and move up the pitch, and his finishing in the box gives them a genuine threat from crosses and set pieces. Against Brazil's center-backs, Lapadula will compete in every aerial duel with the ferocity of a man playing for his country in the tournament.",
       "statline": "Peru's primary goal threat; dual-nationality striker with Serie A experience"
     },
     {
       "name": "Endrick",
       "teamCode": "BRA",
       "narrative": "The teenage Real Madrid sensation could see significant minutes in this match if Ancelotti manages his squad rotation -- and given the need to keep Vinicius and Rodrygo fresh for tougher tests against Morocco and potential knockout opponents, rotation seems likely. Endrick's explosive finishing and fearless approach make him a devastating option from the bench, capable of changing the game with a single moment of brilliance. Ancelotti has used him judiciously at Real Madrid, deploying him as a second-half weapon, and that pattern should continue here. Against a tiring Peruvian defense in the second half, his fresh legs and hunger could be the decisive factor.",
-      "statline": "Brazil's youngest World Cup squad member; youngest Brazilian scorer in La Liga"
+      "statline": "Brazil's youngest tournament squad member; youngest Brazilian scorer in La Liga"
     },
     {
       "name": "Renato Tapia",

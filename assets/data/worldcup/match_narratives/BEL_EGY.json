@@ -7,10 +7,10 @@
   "generatedAt": "2026-04-16T00:00:00Z",
   "dataVersion": 2,
 
-  "headline": "Premier League Royalty Collides: A Fit De Bruyne vs Salah in a World Cup Blockbuster",
+  "headline": "Premier League Royalty Collides: A Fit De Bruyne vs Salah in a tournament Blockbuster",
   "subheadline": "Belgium's golden generation, recharged by De Bruyne's fitness and a 5-2 USA demolition, faces Egypt's Pharaohs in a clash of continental titans",
 
-  "openingNarrative": "There are World Cup matches defined by tactical intrigue, and there are World Cup matches defined by the sheer star power of the individuals on the pitch. Belgium versus Egypt is the latter. When Kevin De Bruyne and Mohamed Salah — two of the Premier League's most decorated and devastating players of the past decade — face each other on the World Cup stage, the football world will stop to watch.\n\nBelgium arrive riding the wave of De Bruyne's fitness declaration — the news that transformed their World Cup outlook from anxious uncertainty to genuine ambition. The 5-2 demolition of the United States in March was a performance that silenced the doubters: five goals, fluid movement, De Bruyne orchestrating everything with the precision of a man who knows this is his last dance. Youri Tielemans has assumed the captaincy with authority, and the system is clicking. The shadows of 2022 are receding.\n\nBut Belgium are not without concerns. Romelu Lukaku and Leandro Trossard are both doubtful with fitness issues, meaning Belgium may need to reconfigure their attacking options against one of the most defensively disciplined teams at the tournament.\n\nEgypt's qualifying campaign was a masterclass in efficiency: 8 wins, 2 draws, 0 losses, 20 goals scored with Salah contributing an extraordinary 9, and only 2 goals conceded. Those numbers are remarkable — an unbeaten qualifying campaign led by a player who scored nearly half the team's goals. The Pharaohs are seven-time African champions, the most decorated nation in African football history, and they arrive in 2026 determined to erase the 2018 group-stage humiliation.",
+  "openingNarrative": "There are tournament matches defined by tactical intrigue, and there are tournament matches defined by the sheer star power of the individuals on the pitch. Belgium versus Egypt is the latter. When Kevin De Bruyne and Mohamed Salah — two of the Premier League's most decorated and devastating players of the past decade — face each other on the tournament stage, the football world will stop to watch.\n\nBelgium arrive riding the wave of De Bruyne's fitness declaration — the news that transformed their tournament outlook from anxious uncertainty to genuine ambition. The 5-2 demolition of the United States in March was a performance that silenced the doubters: five goals, fluid movement, De Bruyne orchestrating everything with the precision of a man who knows this is his last dance. Youri Tielemans has assumed the captaincy with authority, and the system is clicking. The shadows of 2022 are receding.\n\nBut Belgium are not without concerns. Romelu Lukaku and Leandro Trossard are both doubtful with fitness issues, meaning Belgium may need to reconfigure their attacking options against one of the most defensively disciplined teams at the tournament.\n\nEgypt's qualifying campaign was a masterclass in efficiency: 8 wins, 2 draws, 0 losses, 20 goals scored with Salah contributing an extraordinary 9, and only 2 goals conceded. Those numbers are remarkable — an unbeaten qualifying campaign led by a player who scored nearly half the team's goals. The Pharaohs are seven-time African champions, the most decorated nation in African football history, and they arrive in 2026 determined to erase the 2018 group-stage humiliation.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
@@ -25,7 +25,7 @@
     "eloAnalysis": "Belgium (ELO: 1748, rank 8) vs Egypt (ELO: 1648, rank 25) — a 100-point gap that gives Belgium a statistical advantage, but Egypt's unbeaten qualifying campaign and Salah's form suggest the gap is narrower than the numbers indicate.",
     "formAnalysis": "Belgium's March was emphatic: beat USA 5-2 with De Bruyne fit and firing, drew Mexico 1-1. Tielemans captaining. Qualified unbeaten: 5 wins, 3 draws, 29 goals, De Bruyne 6. Egypt were unbeaten in qualifying: 8 wins, 2 draws, 20 goals scored, only 2 conceded, Salah scored 9.",
     "squadValueComparison": "Belgium ($771M) vs Egypt ($287M). De Bruyne ($93.8M) leads Belgium, while Salah ($125M) is actually the most valuable individual between both squads. The supporting casts differ dramatically in depth — though Belgium's Lukaku/Trossard doubts narrow the effective quality gap.",
-    "injuryImpact": "De Bruyne FIT is the headline — Belgium's World Cup was in doubt without him. But Lukaku and Trossard both doubtful means Belgium's attacking configuration is uncertain. Egypt need Salah fit — without him, their attacking output drops precipitously. His 9 qualifying goals represented 45% of Egypt's total.",
+    "injuryImpact": "De Bruyne FIT is the headline — Belgium's tournament was in doubt without him. But Lukaku and Trossard both doubtful means Belgium's attacking configuration is uncertain. Egypt need Salah fit — without him, their attacking output drops precipitously. His 9 qualifying goals represented 45% of Egypt's total.",
     "bettingPerspective": "Belgium's 5-2 USA win has boosted their profile, but the Lukaku/Trossard doubts introduce uncertainty. Egypt's unbeaten qualifying and Salah's form make them dangerous opponents. Closer than the uninitiated might expect.",
     "historicalPattern": "Egypt lead the head-to-head 2-1 from three friendlies. Egypt won 2-0 in Brussels in 2018 and 2-1 in Kuwait City in 2022. Belgium have struggled against Egypt historically."
   },
@@ -40,7 +40,7 @@
     {
       "name": "Mohamed Salah",
       "teamCode": "EGY",
-      "narrative": "The Egyptian King enters the World Cup in devastating form. His 9 qualifying goals — nearly half of Egypt's total — established him as Africa's most dangerous striker and one of the tournament's most feared attackers. Salah's ability to cut inside from the right wing and unleash his lethal left foot has produced over 200 Premier League goals. This is the World Cup performance his extraordinary career deserves.",
+      "narrative": "The Egyptian King enters the tournament in devastating form. His 9 qualifying goals — nearly half of Egypt's total — established him as Africa's most dangerous striker and one of the tournament's most feared attackers. Salah's ability to cut inside from the right wing and unleash his lethal left foot has produced over 200 Premier League goals. This is the tournament performance his extraordinary career deserves.",
       "statline": "9 goals in CAF qualifying (nearly half of Egypt's total), Africa's top scorer"
     },
     {
@@ -76,5 +76,5 @@
     ]
   },
 
-  "closingLine": "De Bruyne versus Salah. Manchester City versus Liverpool, transposed onto the World Cup stage. De Bruyne arrives fit and firing after demolishing the USA 5-2. Salah arrives with 9 qualifying goals and Africa's hopes on his shoulders. This is why we watch."
+  "closingLine": "De Bruyne versus Salah. Manchester City versus Liverpool, transposed onto the tournament stage. De Bruyne arrives fit and firing after demolishing the USA 5-2. Salah arrives with 9 qualifying goals and Africa's hopes on his shoulders. This is why we watch."
 }

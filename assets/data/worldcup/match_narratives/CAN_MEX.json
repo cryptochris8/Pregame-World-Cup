@@ -10,7 +10,7 @@
   "headline": "The Battle of the Co-Hosts: CONCACAF's Power Shift Continues",
   "subheadline": "Mexico's dynasty faces an insurgent Canada powered by David's Juventus form — but Davies' hamstring and Bombito's absence raise questions",
 
-  "openingNarrative": "For decades, the footballing relationship between Mexico and Canada was not a rivalry. It was a hierarchy. Mexico won. Canada lost. Repeat for 34 years. Then came the Edmonton snowstorm in 2021, and everything changed.\n\nNow these two co-hosts meet at the World Cup itself, and the dynamics have shifted again — in both directions. Canada's attacking quality has never been higher: Jonathan David's move to Juventus has elevated him into one of Europe's most clinical strikers, his tactical intelligence refined by the demands of Serie A. Tajon Buchanan is back in the squad after his own injury ordeal, providing the width and pace that Marsch's system demands.\n\nBut the shadow side is real. Alphonso Davies — the player who embodies Canada's footballing revolution — is recovering from a hamstring concern. Ismael Bombito has suffered a fractured tibia that ends his World Cup before it begins. Canada's depth, always their weakness relative to their star quality, is being tested at the worst possible moment.\n\nMexico's 17 World Cup appearances, their quarter-final heritage, and their expectation of deep tournament runs collide with Canada's youthful exuberance and injury-disrupted preparation. Edson Alvarez anchors the midfield with Premier League authority. Santiago Gimenez leads the line with clinical European finishing. Mexico have problems of their own, but none as destabilizing as Canada's fitness concerns.\n\nThis is not just a football match. This is a battle for CONCACAF supremacy — and Canada must fight it with one arm behind their back.",
+  "openingNarrative": "For decades, the footballing relationship between Mexico and Canada was not a rivalry. It was a hierarchy. Mexico won. Canada lost. Repeat for 34 years. Then came the Edmonton snowstorm in 2021, and everything changed.\n\nNow these two co-hosts meet at the tournament itself, and the dynamics have shifted again — in both directions. Canada's attacking quality has never been higher: Jonathan David's move to Juventus has elevated him into one of Europe's most clinical strikers, his tactical intelligence refined by the demands of Serie A. Tajon Buchanan is back in the squad after his own injury ordeal, providing the width and pace that Marsch's system demands.\n\nBut the shadow side is real. Alphonso Davies — the player who embodies Canada's footballing revolution — is recovering from a hamstring concern. Ismael Bombito has suffered a fractured tibia that ends his tournament before it begins. Canada's depth, always their weakness relative to their star quality, is being tested at the worst possible moment.\n\nMexico's 17 tournament appearances, their quarter-final heritage, and their expectation of deep tournament runs collide with Canada's youthful exuberance and injury-disrupted preparation. Edson Alvarez anchors the midfield with Premier League authority. Santiago Gimenez leads the line with clinical European finishing. Mexico have problems of their own, but none as destabilizing as Canada's fitness concerns.\n\nThis is not just a football match. This is a battle for CONCACAF supremacy — and Canada must fight it with one arm behind their back.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
@@ -27,14 +27,14 @@
     "squadValueComparison": "Canada ($271M) vs Mexico ($261M). Canada's squad is marginally more expensive — a stunning reversal from five years ago. Davies ($87.5M) is worth double Mexico's most valuable player Alvarez ($43.8M). But Canada's injuries erode their effective squad quality.",
     "injuryImpact": "Davies' hamstring is the critical variable. At full fitness, he transforms the match. At 80% or less, Canada lose their defining weapon and must reinvent their approach. Bombito's fractured tibia forces defensive reorganization against Mexico's clinical attack. David's Juventus form and Buchanan's return provide attacking consolation.",
     "bettingPerspective": "Canada's injury concerns have shifted the markets toward Mexico. What was a tight affair now leans toward El Tri, with Davies' hamstring doubt the primary factor. Mexico's tournament experience and depth become more significant advantages.",
-    "historicalPattern": "In 37 meetings: Mexico 23 wins, Canada 5 wins, 9 draws. Canada's 2-1 victory in 2022 qualifying ended a 34-year winless streak. This will be their first World Cup meeting."
+    "historicalPattern": "In 37 meetings: Mexico 23 wins, Canada 5 wins, 9 draws. Canada's 2-1 victory in 2022 qualifying ended a 34-year winless streak. This will be their first tournament meeting."
   },
 
   "playerSpotlights": [
     {
       "name": "Jonathan David",
       "teamCode": "CAN",
-      "narrative": "With Davies potentially limited and Bombito out, David must carry Canada's World Cup hopes in this defining match. His Juventus education has prepared him for exactly this kind of occasion — high-pressure, tactically demanding, where composure in front of goal is the difference between progress and elimination. David's movement through the center, his ability to finish with either foot, and his tactical awareness have all been elevated by Serie A. If Canada are to beat Mexico at a World Cup, David's goals will make it happen.",
+      "narrative": "With Davies potentially limited and Bombito out, David must carry Canada's tournament hopes in this defining match. His Juventus education has prepared him for exactly this kind of occasion — high-pressure, tactically demanding, where composure in front of goal is the difference between progress and elimination. David's movement through the center, his ability to finish with either foot, and his tactical awareness have all been elevated by Serie A. If Canada are to beat Mexico at a tournament, David's goals will make it happen.",
       "statline": "Juventus striker in career-best form, Canada's essential attacking weapon"
     },
     {
@@ -46,13 +46,13 @@
     {
       "name": "Alphonso Davies",
       "teamCode": "CAN",
-      "narrative": "The hamstring makes this agonizing. The Edmonton snowstorm victory was built on Davies' fearless aggression. Canada's entire identity is built around his pace. If he starts and his hamstring holds, everything changes — Mexico's right-back faces the impossible assignment that every CONCACAF defender fears. If the hamstring limits him, Canada must find another way. The biggest decision Marsch makes at this World Cup is how he manages Davies' fitness in this match.",
-      "statline": "Canada's $87.5M talisman; hamstring recovery ongoing — the question that defines Canada's World Cup"
+      "narrative": "The hamstring makes this agonizing. The Edmonton snowstorm victory was built on Davies' fearless aggression. Canada's entire identity is built around his pace. If he starts and his hamstring holds, everything changes — Mexico's right-back faces the impossible assignment that every CONCACAF defender fears. If the hamstring limits him, Canada must find another way. The biggest decision Marsch makes at this tournament is how he manages Davies' fitness in this match.",
+      "statline": "Canada's $87.5M talisman; hamstring recovery ongoing — the question that defines Canada's tournament"
     },
     {
       "name": "Santiago Gimenez",
       "teamCode": "MEX",
-      "narrative": "Feyenoord's striker represents the new face of Mexican football in Europe. Clinical finishing, intelligent movement, and a hunger to score at a home World Cup. Against a Canadian defense missing Bombito, Gimenez's ability to exploit unfamiliar defensive pairings becomes Mexico's primary route to goal.",
+      "narrative": "Feyenoord's striker represents the new face of Mexican football in Europe. Clinical finishing, intelligent movement, and a hunger to score at a home tournament. Against a Canadian defense missing Bombito, Gimenez's ability to exploit unfamiliar defensive pairings becomes Mexico's primary route to goal.",
       "statline": "Feyenoord's leading scorer; Mexico's most clinical finisher"
     }
   ],
@@ -76,5 +76,5 @@
     ]
   },
 
-  "closingLine": "For 34 years, Mexico did not lose to Canada. Then the snow fell in Edmonton and everything changed. At the 2026 World Cup, Canada's revolution faces its hardest test — not from Mexican talent, but from a hamstring and a fractured tibia."
+  "closingLine": "For 34 years, Mexico did not lose to Canada. Then the snow fell in Edmonton and everything changed. At the 2026 tournament, Canada's revolution faces its hardest test — not from Mexican talent, but from a hamstring and a fractured tibia."
 }

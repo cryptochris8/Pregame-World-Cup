@@ -7,10 +7,10 @@
   "generatedAt": "2026-04-16T00:00:00Z",
   "dataVersion": 2,
 
-  "headline": "The Hosts Face a Transformed Socceroo Side in a Historic First World Cup Meeting",
-  "subheadline": "America's home World Cup dream meets Popovic's tactical revolution — this is not the Australia that anyone expected",
+  "headline": "The Hosts Face a Transformed Socceroo Side in a Historic First tournament Meeting",
+  "subheadline": "America's home tournament dream meets Popovic's tactical revolution — this is not the Australia that anyone expected",
 
-  "openingNarrative": "The United States have waited a generation for this moment. As co-hosts of the 2026 World Cup, they carry the expectation of a nation that has transformed its relationship with football from casual curiosity to genuine passion. When they face Australia in Group D, they do so in front of a home crowd that will create an atmosphere unlike anything either team has experienced.\n\nRemarkably, this is the first-ever World Cup meeting between the USA and Australia. Their previous encounters have been dominated by the Americans, including a 2-1 win in a 2025 pre-World Cup friendly. But the Australia that arrives in 2026 is a fundamentally different team from the one the USA scouted.\n\nTony Popovic's tactical revolution has transformed the Socceroos. His 3-4-2-1 system produced a 1-0 win over Cameroon and a stunning 5-1 demolition of Curacao in March — results that announced Australia as a team with genuine attacking ambition rather than mere organized resistance. Every player is fully fit. And the emergence of Nestory Irankunda — a teenager whose pace and directness have electrified Australian football — has given the Socceroos a weapon they have never possessed at this level.\n\nThe USA's squad value of $469M — led by Christian Pulisic ($68.8M) — represents the most talented American generation in history. But they now face an Australia that has outgrown the 'plucky underdog' label. Popovic's system, full fitness, and Irankunda's emergence have created a team that believes it can beat anyone — including the hosts.",
+  "openingNarrative": "The United States have waited a generation for this moment. As co-hosts of the 2026 tournament, they carry the expectation of a nation that has transformed its relationship with football from casual curiosity to genuine passion. When they face Australia in Group D, they do so in front of a home crowd that will create an atmosphere unlike anything either team has experienced.\n\nRemarkably, this is the first-ever tournament meeting between the USA and Australia. Their previous encounters have been dominated by the Americans, including a 2-1 win in a 2025 pre-tournament friendly. But the Australia that arrives in 2026 is a fundamentally different team from the one the USA scouted.\n\nTony Popovic's tactical revolution has transformed the Socceroos. His 3-4-2-1 system produced a 1-0 win over Cameroon and a stunning 5-1 demolition of Curacao in March — results that announced Australia as a team with genuine attacking ambition rather than mere organized resistance. Every player is fully fit. And the emergence of Nestory Irankunda — a teenager whose pace and directness have electrified Australian football — has given the Socceroos a weapon they have never possessed at this level.\n\nThe USA's squad value of $469M — led by Christian Pulisic ($68.8M) — represents the most talented American generation in history. But they now face an Australia that has outgrown the 'plucky underdog' label. Popovic's system, full fitness, and Irankunda's emergence have created a team that believes it can beat anyone — including the hosts.",
 
   "tacticalBreakdown": {
     "title": "The Chess Match",
@@ -27,14 +27,14 @@
     "squadValueComparison": "USA ($469M) vs Australia ($79.3M) — a 6:1 ratio heavily in America's favor. But Australia's 5-1 demolition of Curacao proved that Popovic's tactical system generates results that exceed the sum of individual parts.",
     "injuryImpact": "Australia's fully fit squad gives Popovic maximum tactical flexibility — a significant advantage over a USA squad that must manage a packed schedule. Pulisic's fitness is key for the Americans — without him, their creative output diminishes.",
     "bettingPerspective": "The USA remain favorites based on home advantage and squad quality. But Australia's odds have shortened significantly following the March results and Popovic's tactical transformation. The upset is no longer a fantasy — it is a genuine possibility.",
-    "historicalPattern": "First-ever World Cup meeting. USA lead the overall series from friendlies. But the Australia that arrives in 2026 is a fundamentally different team — Popovic's system, full fitness, and Irankunda's emergence have changed the calculus."
+    "historicalPattern": "First-ever tournament meeting. USA lead the overall series from friendlies. But the Australia that arrives in 2026 is a fundamentally different team — Popovic's system, full fitness, and Irankunda's emergence have changed the calculus."
   },
 
   "playerSpotlights": [
     {
       "name": "Christian Pulisic",
       "teamCode": "USA",
-      "narrative": "The face of American soccer carries the weight of a nation's World Cup dreams. Pulisic's dribbling, his eye for goal, and his big-game mentality make him the USA's most dangerous weapon. Against Popovic's three-man defense, Pulisic may find less space to exploit than against a conventional back four. But his quality is the kind that finds solutions to any tactical puzzle, and the home crowd will amplify his every touch.",
+      "narrative": "The face of American soccer carries the weight of a nation's tournament dreams. Pulisic's dribbling, his eye for goal, and his big-game mentality make him the USA's most dangerous weapon. Against Popovic's three-man defense, Pulisic may find less space to exploit than against a conventional back four. But his quality is the kind that finds solutions to any tactical puzzle, and the home crowd will amplify his every touch.",
       "statline": "USA's most valuable player ($68.8M), AC Milan's creative winger"
     },
     {
@@ -66,7 +66,7 @@
       {
         "scenario": "Australia 1-0 USA",
         "probability": 18,
-        "reasoning": "Popovic's system neutralizes the home advantage. Irankunda scores on the counter, Australia's three-man defense holds firm against Pulisic, and the Socceroos produce the upset that announces their World Cup credentials."
+        "reasoning": "Popovic's system neutralizes the home advantage. Irankunda scores on the counter, Australia's three-man defense holds firm against Pulisic, and the Socceroos produce the upset that announces their tournament credentials."
       },
       {
         "scenario": "USA 1-1 Australia",
@@ -76,5 +76,5 @@
     ]
   },
 
-  "closingLine": "The first-ever World Cup meeting between the United States and Australia was supposed to be a home banker. But Popovic's tactical revolution, Irankunda's emergence, and a fully fit squad have rewritten the script. The hosts will still be favored. They should no longer be comfortable."
+  "closingLine": "The first-ever tournament meeting between the United States and Australia was supposed to be a home banker. But Popovic's tactical revolution, Irankunda's emergence, and a fully fit squad have rewritten the script. The hosts will still be favored. They should no longer be comfortable."
 }
